@@ -14,6 +14,9 @@
 # Ignore uploaded files in development
 /storage/*
 
+# Ignore local databases
+/db/*.sqlite*
+
 /public/assets
 .byebug_history
 
