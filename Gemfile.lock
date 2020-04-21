@@ -83,6 +83,8 @@ GEM
     dotenv-rails (2.7.5)
       dotenv (= 2.7.5)
       railties (>= 3.2, < 6.1)
+    emd (0.5.0)
+      redcarpet (= 3.4.0)
     erubi (1.9.0)
     ffi (1.12.2)
     foreman (0.87.1)
@@ -158,6 +160,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redcarpet (3.4.0)
     regexp_parser (1.7.0)
     rexml (3.2.4)
     rspec-core (3.9.1)
@@ -260,11 +263,13 @@ DEPENDENCIES
   canonical-rails
   capybara (~> 3.31)
   dotenv-rails
+  emd
   foreman
   listen (>= 3.0.5, < 3.3)
   pry-byebug
   puma (~> 4.3)
   rails (~> 6.0.2)
+  redcarpet
   rspec-rails (~> 4.0.0)
   rubocop-govuk
   scss_lint-govuk
