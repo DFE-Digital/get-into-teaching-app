@@ -1,0 +1,7 @@
+<h1>Components</h1>
+
+<ul>
+<% @components.each do |component| %>
+  <li><%= link_to(component, component_path(component)) %></li>
+<% end %>
+</ul>

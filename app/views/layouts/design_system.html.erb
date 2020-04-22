@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GiT Design System</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= canonical_tag %>
+    <%= tag :meta, name: 'viewport', content: 'width=device-width, initial-scale=1' %>
+    <%= stylesheet_pack_tag 'design_system', 'data-turbolinks-track': 'reload', media: 'all' %>
+    <%= javascript_pack_tag 'design_system', 'data-turbolinks-track': 'reload', defer: true %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
