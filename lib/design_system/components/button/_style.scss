@@ -1,0 +1,20 @@
+.git-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  color: white;
+  padding: 0.5rem 1rem;
+
+  &.git-button--primary {
+    background: green;
+  }
+
+  &.git-button--secondary {
+    background: blue;
+  }
+
+  &:disabled {
+    background: gray;
+  }
+}
