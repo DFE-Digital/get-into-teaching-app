@@ -71,10 +71,13 @@ function toggleStepPanel (el) {
   }
 }
 
-var mainNav = document.getElementById( 'mainNav' );
-document.getElementById( 'mainNavToggle' ).addEventListener( 'click', toggleMainNav( mainNav ), false );
+document.addEventListener("turbolinks:load", function() {
+  var mainNav = document.getElementById( 'mainNav' );
+  document.getElementById( 'mainNavToggle' ).addEventListener( 'click', toggleMainNav( mainNav ), false );
 
-var toggles = document.getElementsByClassName('step-by-step-toggle');
-for (i = 0; i < toggles.length; i++) {
-    toggles[i].addEventListener('click', toggleStepPanel(toggles[i]), false);
-}
+  var toggles = document.getElementsByClassName('step-by-step-toggle');
+  for (var i = 0; i < toggles.length; i++) {
+      toggles[i].addEventListener('click', toggleStepPanel(toggles[i]), false);
+  }
+}) ;
+
