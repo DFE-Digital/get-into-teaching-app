@@ -31,3 +31,4 @@ yarn-debug.log*
 
 .env
 *.log
+app/views/content/**/*
