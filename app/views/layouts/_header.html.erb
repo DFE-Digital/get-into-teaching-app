@@ -1,0 +1,28 @@
+<header role="header" class="container">
+    <div class="navbar navbar-expand-md navbar-light">
+        <a class="brand" href="<%= root_path %>">
+            <img src="<%= asset_pack_path 'media/images/get-into-teaching-logo-green.png' %>" height="80" alt="Get into Teaching">
+        </a>
+        <button id="mainNavToggle" class="nav-toggle" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle menu"><span class="icon"></span><span class="icon"></span><span class="icon"></span></button>
+
+        <nav id="mainNav" class="hidden inactive">
+            <ul class="nav-fill">
+            <li class="nav-item">
+                <a class="nav-link" href="<%= page_path 'life-as-a-teacher' %>">Life as a teacher</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<%= page_path 'steps-to-become-a-teacher' %>">Steps to become a teacher</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<%= page_path 'funding-your-training' %>">Funding your training</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<%= page_path 'how-to-apply' %>">How to apply</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="<%= page_path 'find-an-event-near-you' %>">Find an event near you</a>
+            </li>
+            </ul>
+        </nav>
+    </div>
+</header>
