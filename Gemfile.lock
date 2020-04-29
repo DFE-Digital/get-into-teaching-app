@@ -83,8 +83,6 @@ GEM
     dotenv-rails (2.7.5)
       dotenv (= 2.7.5)
       railties (>= 3.2, < 6.1)
-    emd (0.5.0)
-      redcarpet (= 3.4.0)
     erubi (1.9.0)
     ffi (1.12.2)
     foreman (0.87.1)
@@ -263,7 +261,6 @@ DEPENDENCIES
   canonical-rails
   capybara (~> 3.31)
   dotenv-rails
-  emd
   foreman
   listen (>= 3.0.5, < 3.3)
   pry-byebug
