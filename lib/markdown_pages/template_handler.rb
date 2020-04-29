@@ -1,12 +1,15 @@
 module MarkdownPages
   class TemplateHandler
-    attr_reader :options
+    attr_reader :template, :source, :options
 
     def self.call(template, source = nil)
-      new.call(template, source)
+      new(template, source).call
     end
 
-    def initialize(options = {})
+    def initialize(template, source = nil, **options)
+      @template = template
+      @source = source.to_s
+
       @options = options.reverse_merge(
         no_intra_emphasis:            true,
         fenced_code_blocks:           true,
@@ -20,17 +23,35 @@ module MarkdownPages
       )
     end
 
-    def call(_template, source = nil)
+    def call
       # inspect is so we return Ruby code instead of a string
-      render(source).inspect
+      render.inspect
     end
+
+  private
 
     def renderer
       Redcarpet::Render::HTML.new(filter_html: false, hard_wrap: true)
     end
 
-    def render(source)
-      Redcarpet::Markdown.new(renderer, options).render(source.to_s)
+    def render
+      Redcarpet::Markdown.new(renderer, options).render(markdown)
+    end
+
+    def markdown
+      parsed.content
+    end
+
+    def front_matter
+      parsed.front_matter
+    end
+
+    def parsed
+      @parsed ||= parser.call(source)
+    end
+
+    def parser
+      FrontMatterParser::Parser.new(:md)
     end
   end
 end

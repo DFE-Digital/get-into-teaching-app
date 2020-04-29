@@ -26,10 +26,40 @@ describe MarkdownPages::TemplateHandler, type: :view do
     it { is_expected.to have_css("p", count: 3) }
     it { is_expected.to have_css('a[href="https://www.gov.uk"]', text: "link") }
 
-    it do
+    it "will autolink urls" do
       is_expected.to have_css \
         'a[href="https://www.gov.uk/autolink"]',
         text: "https://www.gov.uk/autolink"
+    end
+  end
+
+  context "with front matter" do
+    let :markdown do
+      <<~MARKDOWN
+        ---
+        title: My frontmatter page
+        other: some value
+        ---
+        # Page with frontmatter
+
+        This is a page with frontmatter in
+      MARKDOWN
+    end
+
+    before do
+      stub_template "frontmatter.md" => markdown
+      render template: "frontmatter.md"
+    end
+
+    it { is_expected.to have_css "h1", text: "Page with frontmatter" }
+
+    it "will strip out the frontmatter from the rendered page" do
+      is_expected.not_to match(/My frontmatter page/)
+      is_expected.not_to match(/---/)
+    end
+
+    xit "will assign frontmatter to @page variables" do
+      expect(assigns[:page]).to have_attribute(title: "My frontmatter page")
     end
   end
 end
