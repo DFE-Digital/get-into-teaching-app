@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").chomp
 gem "rails", "~> 6.0.2"
 
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+gem "sqlite3", "~> 1.4"
 
 # Use Puma as the app server
 gem "puma", "~> 4.3"
@@ -27,8 +27,8 @@ gem "foreman"
 # Canonical meta tag
 gem "canonical-rails"
 
-gem 'redcarpet'
-gem 'emd'
+gem "redcarpet"
+gem "emd"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
