@@ -46,6 +46,8 @@ describe MarkdownPages::TemplateHandler, type: :view do
       MARKDOWN
     end
 
+    let(:frontmatter) { view.instance_variable_get("@frontmatter") }
+
     before do
       stub_template "frontmatter.md" => markdown
       render template: "frontmatter.md"
@@ -58,8 +60,9 @@ describe MarkdownPages::TemplateHandler, type: :view do
       is_expected.not_to match(/---/)
     end
 
-    xit "will assign frontmatter to @page variables" do
-      expect(assigns[:page]).to have_attribute(title: "My frontmatter page")
+    it "will assign frontmatter to @frontmatter variable" do
+      expect(frontmatter).to include "title" => "My frontmatter page"
+      expect(frontmatter).to include "other" => "some value"
     end
   end
 end

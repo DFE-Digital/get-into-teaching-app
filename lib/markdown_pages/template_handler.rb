@@ -24,8 +24,8 @@ module MarkdownPages
     end
 
     def call
-      # inspect is so we return Ruby code instead of a string
-      render.inspect
+      # inspect objects to Ruby strings which can be eval'd
+      %(@frontmatter = #{front_matter.inspect}; #{render.inspect}.html_safe)
     end
 
   private
