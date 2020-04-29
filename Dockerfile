@@ -1,4 +1,4 @@
-FROM ruby:2.7.1-alpine3.11
+FROM ruby:2.6.6-alpine3.11
 
 ENV RAILS_ENV=production \
     NODE_ENV=production \
@@ -20,6 +20,9 @@ RUN apk add --no-cache build-base tzdata libxml2 libxml2-dev sqlite sqlite-dev \
 # install NPM packages removign artifacts
 COPY package.json yarn.lock ./
 RUN yarn install && yarn cache clean
+
+# Install bundler
+RUN gem install bundler --version=2.1.4
 
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./
