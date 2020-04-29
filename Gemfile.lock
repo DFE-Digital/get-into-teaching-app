@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/waiting-for-dev/front_matter_parser.git
+  revision: 71d1d61c4feeb2c73de7d986a7f97e9ab931917e
+  specs:
+    front_matter_parser (0.2.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -262,6 +268,7 @@ DEPENDENCIES
   capybara (~> 3.31)
   dotenv-rails
   foreman
+  front_matter_parser!
   listen (>= 3.0.5, < 3.3)
   pry-byebug
   puma (~> 4.3)

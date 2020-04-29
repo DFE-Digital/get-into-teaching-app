@@ -27,6 +27,7 @@ gem "foreman"
 # Canonical meta tag
 gem "canonical-rails"
 
+gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "redcarpet"
 
 group :development, :test do
