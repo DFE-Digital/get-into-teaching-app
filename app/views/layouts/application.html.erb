@@ -15,21 +15,15 @@
 
   <body>
 
-    <%= render "layouts/header" %>
+    <div class="container">
 
-    <main role="main" class="container">
-      <% unless page_title.nil? %>
-      <div class="header-image">
-        <img src="<%= asset_pack_path header_image %>" class="header-image" alt="" />
-      </div>
-
-      <h1><%= page_title %></h1>
-      <% end %>
+      <%= render "layouts/header" %>
 
       <%= yield %>
-    </main>
 
-    <%= render "layouts/footer" %>
+      <%= render "layouts/footer" %>
+
+    </div>
   
   </body>
 </html>
