@@ -3,5 +3,11 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;  
+    position: relative;
+    overflow: hidden;
+}
+
+.home-hero-banner {
+    margin-top: 260px;
+    margin-left: -10px;
 }
