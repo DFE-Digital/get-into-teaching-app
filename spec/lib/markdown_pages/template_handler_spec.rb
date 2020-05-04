@@ -39,6 +39,7 @@ describe MarkdownPages::TemplateHandler, type: :view do
         ---
         title: My frontmatter page
         other: some value
+        front: true
         ---
         # Page with frontmatter
 
@@ -63,6 +64,10 @@ describe MarkdownPages::TemplateHandler, type: :view do
     it "will assign frontmatter to @frontmatter variable" do
       expect(frontmatter).to include "title" => "My frontmatter page"
       expect(frontmatter).to include "other" => "some value"
+    end
+
+    it "will parse booleans" do
+      expect(frontmatter).to include "front" => true
     end
   end
 end
