@@ -1,12 +1,11 @@
 module ApplicationHelper
-  def page_title
-    # FIXME needs to parse front matter
-    @page_title || params[:page].to_s.humanize
+  def page_title(title, frontmatter)
+    title || frontmatter["title"] || params[:page].to_s.humanize
   end
 
-  def prefixed_page_title
-    if page_title.present?
-      "Get into teaching: #{page_title}"
+  def prefix_title(title)
+    if title
+      "Get into teaching: #{title}"
     else
       "Get into teaching"
     end
@@ -14,6 +13,6 @@ module ApplicationHelper
 
   def header_image
     # FIXME needs to parse frontpatter
-    'media/images/main-header.jpg'
+    "media/images/main-header.jpg"
   end
 end

@@ -47,7 +47,7 @@ describe MarkdownPages::TemplateHandler, type: :view do
       MARKDOWN
     end
 
-    let(:frontmatter) { view.instance_variable_get("@frontmatter") }
+    let(:frontmatter) { view.instance_variable_get("@front_matter") }
 
     before do
       stub_template "frontmatter.md" => markdown

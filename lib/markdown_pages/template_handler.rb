@@ -25,7 +25,7 @@ module MarkdownPages
 
     def call
       # inspect objects to Ruby strings which can be eval'd
-      %(@frontmatter = #{front_matter.inspect}; #{render.inspect}.html_safe)
+      %(@front_matter = #{front_matter.inspect}; #{render.inspect}.html_safe)
     end
 
   private
