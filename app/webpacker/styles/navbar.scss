@@ -36,6 +36,48 @@
     }
 }
 
+.navbar-mobile-right {
+    display:none;
+    float:right;
+    margin-right: 40px;
+    margin-top:40px;
+
+    a {
+        text-decoration: none;
+    }
+
+    .navbar-hamburger {
+        color: #1D1D1B;
+    }
+}
+
+.navbar-mobile-links {
+
+    position: absolute;
+    top: 112px;
+    right: 0;
+    background-color: white;
+    z-index: 500;
+    width: 100%;
+    padding-bottom: 10px;
+    display:none;
+
+    a {
+        display: block;
+        text-align: center;
+        padding: 16px;
+        text-decoration: none;
+        font-family: 'Akzidenz Grotesk';
+        text-align: right;
+        font-weight: bold;
+        letter-spacing: 0px;
+        text-decoration: underline;
+        color: #1D1D1B;
+        margin-right: 40px;
+        padding-right: 0px;
+    }
+}
+
 .logo-container {
     height: 130px;
     margin:0 auto;
@@ -53,6 +95,7 @@
     position: relative;
     top:10px;
     left:-10px;
+    z-index: 1000;
 
     img {
         transform: rotate(3deg);
@@ -73,4 +116,17 @@
         letter-spacing: -0.17px;
         color: #1D1D1B;
     }
+}
+
+/* mobile css */
+@media only screen and (max-width: 800px) {
+    
+    .navbar-right {
+        display: none;
+    }
+
+    .navbar-mobile-right {
+        display: block;
+    }
+    
 }

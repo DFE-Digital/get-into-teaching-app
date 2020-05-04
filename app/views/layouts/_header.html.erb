@@ -8,6 +8,20 @@
             <li><a href="/">Find an event near you</a></li>
         </ul>
     </div>
+    <div class="navbar-mobile-right">
+        <a href="javascript:void(0);" class="icon" onclick="navToggle()">
+            <span class="navbar-hamburger">
+                <i id="navbar-hamburger-icon" class="fa fa-bars fa-2x"></i>
+            </span>
+        </a>
+        <div id="navbar-mobile-links" class="navbar-mobile-links">
+            <a href="/">Life as a teacher</a>
+            <a href="/">Steps to become a teacher</a>
+            <a href="/">Funding your training</a>
+            <a href="/">How to apply</a>
+            <a href="/">Find an event near you</a>
+        </div>
+    </div>
 </nav>
 
 <div class="logo-container">
@@ -17,5 +31,16 @@
     </div>
 </div>
 
-<%# <img src="" height="80" alt="Get into Teaching"> %>
-<%# <%= asset_pack_path 'media/images/get-into-teaching-logo-green.png' %>
+<script>
+    function navToggle() {
+        var links = document.getElementById("navbar-mobile-links");
+        var icon = document.getElementById("navbar-hamburger-icon");
+        if (links.style.display === "block") {
+            links.style.display = "none";
+            icon.className = 'fa fa-bars fa-2x';
+        } else {
+            links.style.display = "block";
+            icon.className = 'fa fa-times fa-2x';
+        }
+    }
+</script>
