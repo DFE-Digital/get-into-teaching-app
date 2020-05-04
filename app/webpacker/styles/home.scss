@@ -70,6 +70,48 @@
     }
 }
 
+.steps-section {
+    min-height: 250px;
+    background-color: white;
+    padding: 100px;
+}
+
+.steps-section-table {
+    display: table;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.steps-section-table-row {
+    display: table-row;
+    width: 100%;
+}
+
+.steps-section-table-cell {
+    display: table-cell;
+    padding: 10px;
+}
+
+.steps-section-number {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    padding-top: 16px;
+    box-sizing: border-box;
+    background-color: #FBBA20;
+    text-align: center;
+    font-weight: bold;
+    transform: rotate(3deg);
+}
+
+.steps-section-text {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
 @media only screen and (max-width: 1130px) {
 
     .pic-links {
@@ -82,8 +124,42 @@
     }
 }
 
+@media only screen and (max-width: 880px) {
+
+    .steps-section-table {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .steps-section-table-cell {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
 /* mobile css */
 @media only screen and (max-width: 800px) {
+
+    .steps-section {
+        padding: 0;
+        padding-top:40px;
+
+        .strap-header{
+            font-size: 24px;
+            width: 300px;
+            line-height: 1.4;
+        }
+
+        .git-link {
+            padding-left: 40px;
+        }
+    }
+
+    .steps-section-table-cell {
+        padding-left:40px;
+    }
 
     .pic-links-content {
         text-align:center;

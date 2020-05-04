@@ -149,6 +149,19 @@ body {
     }
 }
 
+.git-link {
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+
+    i {
+        margin-left: 4px;
+        vertical-align: middle;
+    }
+}
+
 /* mobile css */
 @media only screen and (max-width: 800px) {
     
