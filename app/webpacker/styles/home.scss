@@ -11,3 +11,28 @@
     margin-top: 260px;
     margin-left: -10px;
 }
+
+.why-header-mobile {
+    display: none;
+
+    h1 {
+        font-size: 24px;
+        line-height: 0.5;
+    }
+}
+
+/* mobile css */
+@media only screen and (max-width: 800px) {
+    .why-header {
+        display: none;
+    }
+
+    .why-header-mobile{
+        display: block;
+        font-size: 24px;
+        position: relative;
+        left: -10px;
+        width: 70%;
+        padding: 1px 80px 1px 30px;
+    }
+}
