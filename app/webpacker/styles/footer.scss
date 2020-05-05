@@ -1,4 +1,46 @@
 footer {
     background-color: #202020;
-    height: 220px;
+
+    .footer-strip-one {
+        height: 180px;
+    }
+
+    .footer-strip-two {
+        height: 140px;
+        width: 100%;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        display: table;
+
+        .footer-logo-container {
+            display: table-cell;
+            vertical-align: top;
+            width: 124px;
+            height: 73px;
+
+            img {
+                width: 124px;
+                height: 73px;
+            }
+        }
+
+        .footer-links-container {
+            display: table-cell;
+            text-align: right;
+            vertical-align: top;
+            color: #B7B9BB;
+            font-size: 16px;
+            letter-spacing: 0px;
+
+            a {
+                color: #B7B9BB;
+                margin-left: 5px;
+                margin-right: 5px;
+                text-decoration: underline;
+            }
+        }
+    }
 }
