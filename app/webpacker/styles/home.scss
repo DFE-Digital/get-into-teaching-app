@@ -3,5 +3,358 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;  
+    position: relative;
+    overflow: hidden;
+}
+
+.home-hero-banner {
+    margin-top: 260px;
+    margin-left: -10px;
+}
+
+.why-header-mobile {
+    display: none;
+
+    h1 {
+        font-size: 24px;
+        line-height: 0.5;
+    }
+}
+
+.pic-links {
+    min-height: 250px;
+    background-color: #F0F0F0;
+    padding-left: 128px;
+    padding-right: 128px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.pic-links-content {
+    display: table;
+    width: 100%;
+
+    .call-to-action {
+        position: relative;
+        top: 200px;
+        left:210px;
+    }
+}
+
+.pic-link {
+    text-align: center;
+    display: table-cell;
+    padding: 50px 20px 85px 20px;
+}
+
+.pic-link-pic {
+    display: inline-block;
+    width: 450px;
+    height: 240px;
+    a {
+        text-decoration: none;
+    }
+}
+
+.steps-section {
+    min-height: 250px;
+    background-color: white;
+    padding: 100px;
+}
+
+.steps-section-table {
+    display: table;
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.steps-section-table-row {
+    display: table-row;
+    width: 100%;
+}
+
+.steps-section-table-cell {
+    display: table-cell;
+    padding: 10px;
+}
+
+.steps-section-number {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    padding-top: 16px;
+    box-sizing: border-box;
+    background-color: #FBBA20;
+    text-align: center;
+    font-weight: bold;
+    transform: rotate(3deg);
+}
+
+.steps-section-text {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.quote-section {
+    display: table;
+    width: 100%;
+    min-height: 250px;
+    white-space: nowrap;
+}
+
+.quote-graphic {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .9);
+    padding-top: 5px;
+    box-sizing: border-box;
+    transform: rotate(3deg);
+    margin-top: 65px;
+    text-align: center;
+
+    i {
+        transform: rotate(-3deg);
+    }
+}
+
+.quote-quote {
+    display: inline-block;
+    width: 60%;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 80px;
+    margin-left: 20px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+}
+
+.quote-section-left {
+    display: table-cell;
+    background-color: #FBBA20;
+    width: 60%;
+    height: 385px;
+    white-space: normal;
+    text-align: center;
+    vertical-align: top;
+}
+
+.quote-section-right {
+    display: table-cell;
+    background-color:lightgray;
+    width: 50%;
+    height: 385px;
+    white-space: normal;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quote-section-angle {
+    background-color: #FBBA20;
+    height: 110%;
+    width: 60px;
+    transform: rotate(-6deg);
+    margin-left: -20px;
+}
+
+.quote-quotee {
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.quote-section-mobile {
+    display: none;
+}
+
+.quote-section-mobile-top {
+    height: 365px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .quote-section-angle {
+        height: 80px;
+        width: 120%;
+        transform: rotate(6deg);
+        margin-left: -10px;
+        position: relative;
+        top: 335px;
+    }
+}
+
+.quote-section-mobile-bottom {
+    height: 300px;
+    background-color: #FBBA20;
+
+    .quote-graphic {
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .quote-quote {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 90%;
+    }
+}
+
+.talk-to-someone {
+    height: 320px;
+    background-color: #F0F0F0;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    .inner-container {
+        position: relative;
+        top: -50px;
+    }
+
+    .talk-to-someone-label {
+        margin-top: 20px;
+    }
+
+    .talk-to-someone-table {
+        width: 100%;
+        display: table;
+    }
+
+    .talk-to-someone-column {
+        display: table-cell;
+        padding: 10px;
+
+        h2 {
+            margin-top: 20px;
+            margin-bottom: 40px;
+        }
+
+        a{
+            text-decoration: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+
+    .pic-links {
+        padding-bottom: 30px;
+    }
+
+    .pic-link {
+        display: block;
+        padding: 40px 0px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .talk-to-someone{
+        height: 500px;
+    }
+
+    .talk-to-someone-column:last-child {
+        display: table-row;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+
+    .steps-section-table {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    .steps-section-table-cell {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+/* mobile css */
+@media only screen and (max-width: 800px) {
+
+    .talk-to-someone {
+        height: 670px;
+        padding: 0;
+
+        .strap-header {
+            font-size: 24px;
+        }
+
+        .talk-to-someone-label {
+            margin-left: 10px;
+            margin-right:40px;
+        }
+
+        .talk-to-someone-column {
+            display: block;
+        }
+    }
+
+    .find-an-event {
+        padding-bottom: 50px;
+    }
+
+    .quote-section-mobile {
+        display: block;
+    }
+
+    .quote-section {
+        display: none;
+    }
+
+    .steps-section {
+        padding: 0;
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        .strap-header{
+            font-size: 24px;
+            width: 300px;
+            line-height: 1.4;
+        }
+
+        .git-link {
+            padding-left: 40px;
+        }
+    }
+
+    .steps-section-table-cell {
+        padding-left:40px;
+    }
+
+    .pic-links-content {
+        text-align:center;
+        padding-bottom: 30px;
+    }
+
+    .pic-links {
+        padding: 0;
+    }
+
+    .pic-link {
+        display: inline-block;
+    }
+
+    .why-header {
+        display: none;
+    }
+
+    .why-header-mobile{
+        display: block;
+        font-size: 24px;
+        position: relative;
+        left: -10px;
+        width: 300px;
+        padding: 1px 80px 1px 30px;
+    }
 }

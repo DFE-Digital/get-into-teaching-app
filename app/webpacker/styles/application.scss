@@ -14,7 +14,9 @@
     font-style: normal;
 }
 
+@import './git.scss';
 @import './navbar.scss';
+@import './footer.scss';
 @import './home.scss';
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';

@@ -1,0 +1,221 @@
+body {
+    font-family: 'Akzidenz Grotesk';
+}
+
+h2 {
+    font-size: 18px;
+}
+
+.hero-banner {
+    
+    width: 680px;
+    height: 190px;
+    background-color: rgba(251, 186, 32, .9);
+    padding: 40px;
+    box-sizing: border-box;
+    transform: rotate(-3deg);
+    padding-left:50px;
+    display: inline-block;
+    
+    h1 {
+        font-family: 'Akzidenz Grotesk';
+        font-weight: bold;
+        font-size: 42px;
+        letter-spacing: 0px;
+        color: #000000;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    p {
+        font-family: 'Akzidenz Grotesk';
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        margin-top: 14px;
+        font-size: 26px;
+        width: 475px;
+    }
+}
+
+.hero-banner-mobile {
+    display: none;
+    width: 340px;
+    height: 190px;
+    background-color: rgba(251, 186, 32, .9);
+    padding: 40px;
+    box-sizing: border-box;
+    transform: rotate(-3deg);
+    padding-left:50px;
+
+    h1 {
+        font-family: 'Akzidenz Grotesk';
+        font-weight: bold;
+        font-size: 28px;
+        letter-spacing: 0px;
+        color: #000000;
+        border-bottom: 4px solid black;
+        margin: 0;
+        padding: 0;
+        display: inline-block;
+    }
+
+    p {
+        font-family: 'Akzidenz Grotesk';
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        margin-top: 14px;
+        font-size: 16px;
+        width: 275px;
+    }
+}
+
+.content-white {
+    background-color: white;
+    min-height: 250px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 128px;
+    padding-right: 128px;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+}
+
+.content-white-left {
+    display: table-cell;
+    width: 370px;
+    height: 240px;
+    max-width: 370px;
+    max-height: 240px;
+    background-color: lightgrey;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    div {
+        margin-top:70px;
+    }
+}
+
+.content-white-right {
+    
+    vertical-align: top;
+    display: table-cell;
+
+    p {
+        padding-left: 40px;
+        box-sizing: border-box;
+
+        a {
+            font-weight: bold;
+            color: #000;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 30px;
+
+            i {
+                margin-left: 4px;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.strap-header {
+    color: white;
+    font-size: 36px;
+    background-color: #8967AA;
+    display: inline-block;
+    padding: 10px 50px 10px 50px;
+    margin-left: -10px; 
+}
+
+.strap-header-blue {
+    background-color: #2781BE;
+}
+
+.play-overlay {
+    background-color: rgba(219, 83, 147, .9);
+    height: 60px;
+    width: 80px;
+    transform: rotate(3deg);
+
+    span {
+        color: white;
+        margin-left: 26px;
+        display: inline-block;
+        margin-top: 12px;
+    }
+}
+
+.git-link {
+    font-weight: bold;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+
+    i {
+        margin-left: 4px;
+        vertical-align: middle;
+    }
+}
+
+.call-to-action {
+    background-color: #19A373;
+    color: #1D1D1B;
+    font-size: 18px;
+    letter-spacing: 0px;
+    width: 260px;
+    height: 70px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 24px;
+    box-sizing: border-box;
+
+    i {
+        color: white;
+    }
+}
+
+/* mobile css */
+@media only screen and (max-width: 800px) {
+    
+    .content-white {
+        padding: 20px;
+    }
+
+    .content-white-left {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        margin-top: -10px;
+    }
+
+    .content-white-right {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+
+        p {
+            padding: 0;
+
+            a {
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .hero-banner {
+        display: none;
+    }
+
+    .hero-banner-mobile {
+        display: inline-block;
+    }
+}
