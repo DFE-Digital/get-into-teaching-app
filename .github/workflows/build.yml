@@ -1,5 +1,7 @@
 name: Build and Deploy
 on: [ push ]
+env:
+  CONTENT_REPO: DFE-Digital/get-into-teaching-content
 jobs:
   build_and_push:
     name: Build and push to DockerHub
@@ -18,3 +20,18 @@ jobs:
           tag_with_ref: true
           tag_with_sha: true
           push: true
+  trigger_content_build:
+    name: Trigger build of Content repo
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    needs:
+      - build_and_push
+    steps:
+      - name: Trigger build in Content repo
+        run: |-
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.BUILD_CONTENT_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Content-Type: application/json" \
+            https://api.github.com/repos/${{ env.CONTENT_REPO }}/dispatches \
+            --data '{"event_type": "Build triggered from App repo"}'
