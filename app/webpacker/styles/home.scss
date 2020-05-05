@@ -120,6 +120,35 @@
     white-space: nowrap;
 }
 
+.quote-graphic {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, .9);
+    padding-top: 5px;
+    box-sizing: border-box;
+    transform: rotate(3deg);
+    margin-top: 65px;
+    text-align: center;
+
+    i {
+        transform: rotate(-3deg);
+    }
+}
+
+.quote-quote {
+    display: inline-block;
+    width: 60%;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+    vertical-align: top;
+    margin-top: 80px;
+    margin-left: 20px;
+    letter-spacing: 0px;
+    line-height: 1.2;
+}
+
 .quote-section-left {
     display: table-cell;
     background-color: #FBBA20;
@@ -128,34 +157,6 @@
     white-space: normal;
     text-align: center;
     vertical-align: top;
-
-    .quote-graphic {
-        display: inline-block;
-        width: 50px;
-        height: 50px;
-        background-color: rgba(255, 255, 255, .9);
-        padding-top: 5px;
-        box-sizing: border-box;
-        transform: rotate(3deg);
-        margin-top: 80px;
-
-        i {
-            transform: rotate(-3deg);
-        }
-    }
-
-    .quote-quote {
-        display: inline-block;
-        width: 60%;
-        font-size: 26px;
-        font-weight: bold;
-        text-align: left;
-        vertical-align: top;
-        margin-top: 105px;
-        margin-left: 20px;
-        letter-spacing: 0px;
-        line-height: 1.2;
-    }
 }
 
 .quote-section-right {
@@ -176,6 +177,47 @@
     width: 60px;
     transform: rotate(-6deg);
     margin-left: -20px;
+}
+
+.quote-quotee {
+    font-weight: normal;
+    margin-top: 30px;
+}
+
+.quote-section-mobile {
+    display: none;
+}
+
+.quote-section-mobile-top {
+    height: 365px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .quote-section-angle {
+        height: 80px;
+        width: 120%;
+        transform: rotate(6deg);
+        margin-left: -10px;
+        position: relative;
+        top: 335px;
+    }
+}
+
+.quote-section-mobile-bottom {
+    height: 300px;
+    background-color: #FBBA20;
+
+    .quote-graphic {
+        margin-top: 0px;
+        margin-left: 20px;
+    }
+
+    .quote-quote {
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width: 1130px) {
@@ -208,9 +250,18 @@
 /* mobile css */
 @media only screen and (max-width: 800px) {
 
+    .quote-section-mobile {
+        display: block;
+    }
+
+    .quote-section {
+        display: none;
+    }
+
     .steps-section {
         padding: 0;
-        padding-top:40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
 
         .strap-header{
             font-size: 24px;
