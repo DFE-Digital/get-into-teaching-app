@@ -35,6 +35,11 @@ footer {
             font-size: 16px;
             letter-spacing: 0px;
 
+            .footer-links-block {
+                padding-top:8px;
+                padding-bottom: 8px;
+            }
+
             a {
                 color: #B7B9BB;
                 margin-left: 5px;
@@ -42,5 +47,40 @@ footer {
                 text-decoration: underline;
             }
         }
+    }
+}
+
+/* mobile css */
+@media only screen and (max-width: 800px) {
+
+    footer {
+        .footer-strip-two {
+            display: block;
+            height:300px;
+            padding-left:20px;
+            padding-right:20px;
+
+            .footer-logo-container {
+                display: block;
+            }
+
+            .footer-links-container {
+                display: block;
+                text-align: left;
+                padding-top: 20px;
+
+                a {
+                    display: block;
+                    margin-left: 0px;
+                    margin-right: 0px;
+                    margin-bottom:6px;
+                }
+
+                span {
+                    display: none;
+                }
+            }
+        }
+
     }
 }
