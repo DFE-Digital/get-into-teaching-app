@@ -41,13 +41,13 @@ h2 {
 
 .hero-banner-mobile {
     display: none;
-    width: 340px;
-    height: 190px;
+    width: 310px;
+    height: 160px;
     background-color: rgba(251, 186, 32, .9);
-    padding: 40px;
+    padding: 30px;
+    padding-left:40px;
     box-sizing: border-box;
     transform: rotate(-3deg);
-    padding-left:50px;
 
     h1 {
         font-family: 'Akzidenz Grotesk';
@@ -67,7 +67,7 @@ h2 {
         padding: 0;
         margin-top: 14px;
         font-size: 16px;
-        width: 275px;
+        width: 215px;
     }
 }
 
