@@ -5,7 +5,7 @@
 }
 
 .navbar-right {
-    max-width: 500px;
+    max-width: 630px;
     float:right;
     margin-top:20px;
     margin-right: 20px;
@@ -48,6 +48,18 @@
     .navbar-hamburger {
         color: #1D1D1B;
     }
+
+    .navbar-label {
+        color: #1D1D1B;
+        font-weight: bold;
+        font-size: 18px;
+        letter-spacing: 0px;
+    }
+}
+
+.navbar-mobile-right-label {
+    margin-right : 10px;
+    margin-top :47px;
 }
 
 .navbar-mobile-links {
