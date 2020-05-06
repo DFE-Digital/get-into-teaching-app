@@ -13,14 +13,21 @@
 4. Run `bundle exec rails server` to launch the app on http://localhost:3000
 5. Run `./bin/webpack-dev-server` in a separate shell for faster compilation of assets
 
-## Whats included in this website?
+## Whats included in this website
 
 - Rails 6.0 with Webpacker
 - RSpec
 - Dotenv (managing environment variables)
 - Dockerbuild file
 - GitHub Actions based CI
-- Deployment through to GovUK PAAS utilising Docker
+
+## Content for this website
+
+The static content for this website is held in a separate [Content repository](https://github.com/DFE-Digital/get-into-teaching-content)
+
+When the application in this repository is deployed, it builds a Docker Image,
+then triggers a build of the Content Repo which builds its own Docker Image 
+layered on top of this one.
 
 ## Running specs, linter(without auto correct) and annotate models and serializers
 ```
