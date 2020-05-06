@@ -1,9 +1,10 @@
 name: Build and Deploy
 on: [ push ]
 env:
-  CONTENT_REPO: DFE-Digital/get-into-teaching-content
+  APP_REPOSITORY: dfedigital/get-into-teaching-web
+  CONTENT_REPOSITORY: DFE-Digital/get-into-teaching-content
 jobs:
-  build_and_push:
+  build_and_test:
     name: Build and push to DockerHub
     runs-on: ubuntu-latest
     steps:
@@ -14,18 +15,24 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PERSONAL_ACCESS_TOKEN }}
-          repository: dfedigital/get-into-teaching-web
+          repository: ${{ env.APP_REPOSITORY }}
           always_pull: true
           add_git_labels: true
           tag_with_ref: true
           tag_with_sha: true
           push: true
+      - name: Set DOCKER_IMAGE environment variable
+        run: |-
+          echo ::set-env name=DOCKER_IMAGE::${{ env.APP_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
+      - name: Lint Ruby
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE bundle exec rake lint:ruby
   trigger_content_build:
     name: Trigger build of Content repo
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     needs:
-      - build_and_push
+      - build_and_test
     steps:
       - name: Trigger build in Content repo
         run: |-
@@ -33,5 +40,5 @@ jobs:
             -H "Authorization: token ${{ secrets.BUILD_CONTENT_TOKEN }}" \
             -H "Accept: application/vnd.github.v3+json" \
             -H "Content-Type: application/json" \
-            https://api.github.com/repos/${{ env.CONTENT_REPO }}/dispatches \
+            https://api.github.com/repos/${{ env.CONTENT_REPOSITORY }}/dispatches \
             --data '{"event_type": "Build triggered from App repo"}'
