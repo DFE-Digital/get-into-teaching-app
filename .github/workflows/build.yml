@@ -24,6 +24,9 @@ jobs:
       - name: Set DOCKER_IMAGE environment variable
         run: |-
           echo ::set-env name=DOCKER_IMAGE::${{ env.APP_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
+      - name: Run Specs
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE bundle exec rspec
       - name: Lint Ruby
         run: |-
           docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE bundle exec rake lint:ruby
