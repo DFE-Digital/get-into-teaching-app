@@ -8,8 +8,9 @@
 }
 
 .home-hero-banner {
-    margin-top: 260px;
+    margin-top: 250px;
     margin-left: -10px;
+    line-height: 1.3;
 }
 
 .why-header-mobile {
@@ -37,7 +38,7 @@
     .call-to-action {
         position: relative;
         top: 200px;
-        left:210px;
+        left:100px;
     }
 }
 
@@ -79,7 +80,7 @@
 
 .steps-section-table-cell {
     display: inline-block;
-    width: 200px;
+    width: 270px;
     padding: 10px;
 }
 
@@ -100,7 +101,7 @@
     height: 100%;
     vertical-align: middle;
     margin-left: 10px;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 .quote-section {
@@ -211,7 +212,6 @@
 }
 
 .talk-to-someone {
-    height: 320px;
     background-color: #F0F0F0;
     padding-left: 100px;
     padding-right: 100px;
@@ -233,6 +233,7 @@
     .talk-to-someone-column {
         display: table-cell;
         padding: 10px;
+        width:33%;
 
         h2 {
             margin-top: 20px;
@@ -259,7 +260,7 @@
 
 @media only screen and (max-width: 1000px) {
 
-    .talk-to-someone{
+    .talk-to-someone {
         height: 500px;
     }
 
@@ -287,7 +288,7 @@
 @media only screen and (max-width: 800px) {
 
     .talk-to-someone {
-        height: 670px;
+        height: 850px;
         padding: 0;
 
         .strap-header {
@@ -301,6 +302,7 @@
 
         .talk-to-someone-column {
             display: block;
+            width: 90%;
         }
     }
 
@@ -358,7 +360,7 @@
         font-size: 24px;
         position: relative;
         left: -10px;
-        width: 300px;
-        padding: 1px 80px 1px 30px;
+        width: 290px;
+        padding: 4px 0px 4px 20px;
     }
 }
