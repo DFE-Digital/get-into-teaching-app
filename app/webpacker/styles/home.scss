@@ -176,6 +176,47 @@
     }
 }
 
+.my-story {
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    
+    .my-story-left {
+        
+        display: table-cell;
+        vertical-align: top;
+        width: 370px;
+        min-width: 370px;
+        height: 240px;
+        background-color: sandybrown;
+        
+        .my-story-left-video {
+            width: 370px;
+            min-width: 370px;
+            height: 240px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .my-story-right {
+        display: table-cell;
+        vertical-align: top;
+        min-height: 240px;
+        background-color: sienna;
+        text-align: left;
+
+        p {
+            margin-left: 20px;
+            margin-right: 20px;;
+        }
+    }
+}
+
 .talk-to-someone {
     background-color: #F0F0F0;
     padding-left: 100px;
@@ -260,6 +301,8 @@
         }
     }
 }
+
+
 
 @media only screen and (max-width: 880px) {
 

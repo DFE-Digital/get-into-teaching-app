@@ -15,6 +15,20 @@ a {
     line-height: 1.4;
 }
 
+.container {
+    background-color: white;
+    min-height: 100vh;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.container-1200 {
+    min-height: 25px;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
+
 .hero-banner {
     
     width: 680px;
