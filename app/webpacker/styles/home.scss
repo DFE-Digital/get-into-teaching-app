@@ -215,6 +215,7 @@
     background-color: #F0F0F0;
     padding-left: 100px;
     padding-right: 100px;
+    
 
     .inner-container {
         position: relative;
@@ -227,13 +228,16 @@
 
     .talk-to-someone-table {
         width: 100%;
-        display: table;
     }
 
     .talk-to-someone-column {
-        display: table-cell;
-        padding: 10px;
+        display: inline-block;
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
         width:33%;
+        min-width: 245px;
+        vertical-align: top;
 
         h2 {
             margin-top: 20px;
@@ -258,17 +262,6 @@
     }
 }
 
-@media only screen and (max-width: 1000px) {
-
-    .talk-to-someone {
-        height: 500px;
-    }
-
-    .talk-to-someone-column:last-child {
-        display: table-row;
-    }
-}
-
 @media only screen and (max-width: 880px) {
 
     .steps-section-table {
@@ -288,7 +281,6 @@
 @media only screen and (max-width: 800px) {
 
     .talk-to-someone {
-        height: 850px;
         padding: 0;
 
         .strap-header {
@@ -296,7 +288,7 @@
         }
 
         .talk-to-someone-label {
-            margin-left: 10px;
+            margin-left: 20px;
             margin-right:40px;
         }
 
