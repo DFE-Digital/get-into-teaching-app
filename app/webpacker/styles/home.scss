@@ -22,41 +22,6 @@
     }
 }
 
-.pic-links {
-    min-height: 250px;
-    background-color: #F0F0F0;
-    padding-left: 128px;
-    padding-right: 128px;
-    box-sizing: border-box;
-    text-align: center;
-}
-
-.pic-links-content {
-    display: table;
-    width: 100%;
-
-    .call-to-action {
-        position: relative;
-        top: 200px;
-        left:100px;
-    }
-}
-
-.pic-link {
-    text-align: center;
-    display: table-cell;
-    padding: 50px 20px 85px 20px;
-}
-
-.pic-link-pic {
-    display: inline-block;
-    width: 450px;
-    height: 240px;
-    a {
-        text-decoration: none;
-    }
-}
-
 .steps-section {
     min-height: 250px;
     background-color: white;
@@ -196,7 +161,7 @@
 }
 
 .quote-section-mobile-bottom {
-    height: 300px;
+    height: 360px;
     background-color: #FBBA20;
 
     .quote-graphic {
@@ -250,15 +215,49 @@
     }
 }
 
-@media only screen and (max-width: 1130px) {
+.pic-links {
 
-    .pic-links {
-        padding-bottom: 30px;
-    }
+    white-space: nowrap;
+    
+    .pic-link-pic {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 50%;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: top;
 
-    .pic-link {
-        display: block;
-        padding: 40px 0px;
+        .angled-separator {
+            display: inline-block;
+            background-color: white;
+            width: 26px;
+            height: 110%;
+            vertical-align: top;
+            transform: rotate(3deg);
+            position: relative;
+            top: -10px;
+            left: -16px;
+        }
+
+        .after-angled-separator {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            left: -30px;
+        }
+
+        .call-to-action {
+            background-color: white;
+            color: black;
+            margin-top: 300px;
+            display: inline-block;
+
+            .fa-chevron-right {
+                color: black;
+            }
+        }
     }
 }
 
@@ -279,6 +278,32 @@
 
 /* mobile css */
 @media only screen and (max-width: 800px) {
+
+    .pic-links {
+
+        .pic-link-pic {
+            width: 100%;
+            height: 260px;
+            display: block;
+
+            .call-to-action {
+                margin-top: 150px;
+            }
+
+            .angled-separator {
+                height: 30px;
+                width: 120%;
+            }
+
+            .after-angled-separator {
+                position: relative;
+                left: 0px;
+                top: -10px;
+                display: block;
+            }
+        }
+        
+    }
 
     .talk-to-someone {
         padding: 0;
@@ -328,19 +353,6 @@
 
     .steps-section-table-cell {
         padding-left:40px;
-    }
-
-    .pic-links-content {
-        text-align:center;
-        padding-bottom: 30px;
-    }
-
-    .pic-links {
-        padding: 0;
-    }
-
-    .pic-link {
-        display: inline-block;
     }
 
     .why-header {
