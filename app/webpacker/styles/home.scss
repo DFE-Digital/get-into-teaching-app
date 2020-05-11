@@ -306,7 +306,7 @@
     display: table;
     width: 100%;
     
-    .find-an-event-left {
+    .find-an-event__left {
         
         display: table-cell;
         vertical-align: top;
@@ -314,7 +314,7 @@
         min-width: 370px;
         height: 240px;
         
-        .find-an-event-left-map {
+        .find-an-event__left__map {
             width: 370px;
             min-width: 370px;
             height: 240px;
@@ -322,7 +322,7 @@
             background-repeat: no-repeat;
             background-size: cover;
 
-            .find-an-event-left-map-pin-overlay {
+            .find-an-event__left__map__pin {
                 position: relative;
                 top: 60px;
             
@@ -336,13 +336,13 @@
         }
     }
 
-    .find-an-event-right {
+    .find-an-event__right {
         display: table-cell;
         vertical-align: top;
         min-height: 240px;
         text-align: left;
 
-        .find-an-event-right-header {
+        .find-an-event__right__header {
             position: relative;
             left: -10px;
 
@@ -529,20 +529,20 @@
         padding-top: 100px;
         padding-bottom: 20px;
         
-        .find-an-event-left {
+        .find-an-event__left {
             display: block;
 
-            .find-an-event-left-map {
+            .find-an-event__left__map {
                 margin-left: 20px;
                 margin-right: 20px;
             }
         }
 
-        .find-an-event-right {
+        .find-an-event__right {
             display: block;
             min-height: 0;
 
-            .find-an-event-right-header {
+            .find-an-event__right__header {
                 height: 0px;
                 top:-305px;
 
