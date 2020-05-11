@@ -199,6 +199,24 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            overflow: hidden;;
+
+            .my-story-left-play-overlay {
+                background-color: $pink-90;
+                height: 60px;
+                width: 70px;
+                transform: rotate(3deg);
+                position: relative;
+                top: 80px;
+                left: -5px;
+            
+                span {
+                    color: $white;
+                    margin-left: 10px;
+                    display: inline-block;
+                    margin-top: 20px;
+                }
+            }
         }
     }
 

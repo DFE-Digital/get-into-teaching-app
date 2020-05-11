@@ -162,20 +162,6 @@ a {
     background-color: $blue;
 }
 
-.play-overlay {
-    background-color: $pink-90;
-    height: 60px;
-    width: 80px;
-    transform: rotate(3deg);
-
-    span {
-        color: $white;
-        margin-left: 26px;
-        display: inline-block;
-        margin-top: 12px;
-    }
-}
-
 .git-link {
     font-weight: bold;
     font-size: 19px;
