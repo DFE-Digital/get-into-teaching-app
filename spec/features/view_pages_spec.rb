@@ -2,8 +2,8 @@ require "rails_helper"
 
 RSpec.feature "View pages", type: :feature do
   scenario "Navigate to home" do
-    visit "/"
+    visit root_path
 
-    expect(page).to have_css('p', text: "Lorem")
+    expect(page).to have_text(/teacher/i)
   end
 end

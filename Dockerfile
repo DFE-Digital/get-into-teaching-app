@@ -14,8 +14,7 @@ EXPOSE 3000
 ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server" ]
 
-RUN apk add --no-cache build-base git tzdata libxml2 libxml2-dev sqlite \
-                        sqlite-dev nodejs yarn
+RUN apk add --no-cache build-base git tzdata nodejs yarn
 
 # install NPM packages removign artifacts
 COPY package.json yarn.lock ./
@@ -32,4 +31,4 @@ RUN bundle install --without development --jobs=$(nproc --all) && \
 
 # Add code and compile assets
 COPY . .
-RUN bundle exec rake assets:precompile SECRET_KEY_BASE=stubbed
+RUN bundle exec rake assets:precompile

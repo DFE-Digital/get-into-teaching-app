@@ -1,5 +1,6 @@
 module ApplicationHelper
   def page_title(title, frontmatter)
+    frontmatter ||= {}
     title || frontmatter["title"] || params[:page].to_s.humanize
   end
 

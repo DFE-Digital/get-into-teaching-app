@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <meta charset="utf-8">
     <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
@@ -11,68 +12,18 @@
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
+
   <body>
-    <header role="header" class="container">
-      <div class="navbar navbar-expand-md navbar-light">
-        <a class="brand" href="<%= root_path %>">
-          <img src="<%= asset_pack_path 'media/images/get-into-teaching-logo-green.png' %>" height="80" alt="Get into Teaching">
-        </a>
-        <button id="mainNavToggle" class="nav-toggle" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle menu"><span class="icon"></span><span class="icon"></span><span class="icon"></span></button>
 
-        <nav id="mainNav" class="hidden inactive">
-          <ul class="nav-fill">
-            <li class="nav-item">
-              <a class="nav-link" href="<%= page_path 'life-as-a-teacher' %>">Life as a teacher</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<%= page_path 'steps-to-become-a-teacher' %>">Steps to become a teacher</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<%= page_path 'funding-your-training' %>">Funding your training</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<%= page_path 'how-to-apply' %>">How to apply</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="<%= page_path 'find-an-event-near-you' %>">Find an event near you</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+    <div class="container">
 
-    <main role="main" class="container">
-      <% unless page_title(nil, {}).nil? %>
-      <div class="header-image">
-        <img src="<%= asset_pack_path header_image %>" class="header-image" alt="" />
-      </div>
-
-      <h1><%= page_title @page_title, @front_matter %></h1>
-      <% end %>
+      <%= render "layouts/header" %>
 
       <%= yield %>
-    </main>
 
-    <footer>
-      <ul class="social-media-links">
-        <li><a href="https://www.facebook.com/getintoteaching" class="link facebook-link"><span class="label">Facebook</span></a></li>
-        <li><a href="https://www.instagram.com/get_into_teaching" class="link instagram-link"><span class="label">Instagram</span></a></li>
-        <li><a href="https://www.linkedin.com/company/get-into-teaching" class="link linkedin-link"><span class="label">LinkedIn</span></a></li>
-        <li><a href="https://twitter.com/getintoteaching" class="link twitter-link"><span class="label">Twitter</span></a></li>
-        <li><a href="https://www.youtube.com/getintoteaching" class="link youtube-link"><span class="label">YouTube</span></a></li>
-      </ul>
+      <%= render "layouts/footer" %>
 
-      <div class="department">
-        <div class="department-logo">
-          <span class="department-name">Department <br>for Education</span>
-        </div>
-      </div>
+    </div>
 
-      <div class="copyright">
-        <a class="copyright-link" href="https://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/crown-copyright/">
-           &copy; Crown copyright
-        </a>
-      </div>
-    </footer>
   </body>
 </html>

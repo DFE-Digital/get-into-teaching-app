@@ -1,0 +1,68 @@
+<nav class="navbar">
+    <div class="navbar-right">
+        <div>
+            <ul>
+                <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/steps-to-become-a-teacher/">Steps to become a teacher</a></li>
+                <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/funding-your-training/">Funding your training</a></li>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><a href="/">Talk to us</a></li>
+                <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/find-an-event-near-you/">Find an event near you</a></li>
+                <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/life-as-a-teacher/teachers-salaries-and-benefits/">Salaries and Benefits</a></li>
+                <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/life-as-a-teacher/">Teaching as a career</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar-mobile-right">
+        <a href="javascript:void(0);" class="icon" onclick="navToggle()">
+            <span class="navbar-hamburger">
+                <i id="navbar-hamburger-icon" class="fa fa-bars fa-2x"></i>
+            </span>
+        </a>
+        <div id="navbar-mobile-links" class="navbar-mobile-links">
+            <li><a href="/">Home</a></li>
+            <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/steps-to-become-a-teacher/">Steps to become a teacher</a></li>
+            <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/funding-your-training/">Funding your training</a></li>
+            <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/life-as-a-teacher/">Teaching as a career</a></li>
+            <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/life-as-a-teacher/teachers-salaries-and-benefits/">Salaries and Benefits</a></li>
+            <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/find-an-event-near-you/">Find an event near you</a></li>
+            <li><a href="/">Talk to us</a></li>
+        </div>
+    </div>
+    <div class="navbar-mobile-right navbar-mobile-right-label">
+        <a href="javascript:void(0);" class="icon" onclick="navToggle()">
+            <span id="navbar-label" class="navbar-label">
+                Menu
+            </span>
+        </a>
+    </div>
+</nav>
+
+<div class="logo-container">
+    <a href="/">
+        <div class="logo">
+            <img src="<%= asset_pack_path 'media/images/getintoteachinglogo.svg' %>" />
+            <div class="tagline">Every Lesson shapes a life.</div>
+        </div>
+    </a>
+</div>
+
+<script>
+    function navToggle() {
+        var links = document.getElementById("navbar-mobile-links");
+        var icon = document.getElementById("navbar-hamburger-icon");
+        var label = document.getElementById("navbar-label");
+        if (links.style.display === "block") {
+            links.style.display = "none";
+            icon.className = 'fa fa-bars fa-2x';
+            label.innerHTML = "Menu";
+        } else {
+            links.style.display = "block";
+            icon.className = 'fa fa-times fa-2x';
+            label.innerHTML = "Close";
+        }
+    }
+</script>

@@ -1,29 +1,33 @@
-[![Build Status](https://travis-ci.org/DFE-Digital/govuk-rails-boilerplate.svg?branch=master)](https://travis-ci.com/DFE-Digital/govuk-rails-boilerplate)
-
-# GOV.UK Rails Boilerplate
+#  DFE-Digital Get into Teaching website
 
 ## Prerequisites
 
-- Ruby 2.6.5
-- PostgreSQL
-- NodeJS 12.13.x
+- Ruby 2.6.6
+- NodeJS 12.15.x
 - Yarn 1.12.x
 
 ## Setting up the app in development
 
 1. Run `bundle install` to install the gem dependencies
 2. Run `yarn` to install node dependencies
-3. Run `bin/rails db:setup` to set up the database development and test schemas, and seed with test data
 4. Run `bundle exec rails server` to launch the app on http://localhost:3000
 5. Run `./bin/webpack-dev-server` in a separate shell for faster compilation of assets
 
-## Whats included in this boilerplate?
+## Whats included in this website
 
 - Rails 6.0 with Webpacker
-- [GOV.UK Frontend](https://github.com/alphagov/govuk-frontend)
 - RSpec
 - Dotenv (managing environment variables)
-- Travis with Heroku deployment
+- Dockerbuild file
+- GitHub Actions based CI
+
+## Content for this website
+
+The static content for this website is held in a separate [Content repository](https://github.com/DFE-Digital/get-into-teaching-content)
+
+When the application in this repository is deployed, it builds a Docker Image,
+then triggers a build of the Content Repo which builds its own Docker Image 
+layered on top of this one.
 
 ## Running specs, linter(without auto correct) and annotate models and serializers
 ```
@@ -47,22 +51,17 @@ or
 bundle exec scss-lint app/webpacker/styles
 ```
 
-## Deploying on GOV.UK PaaS
+You can automatically run the Ruby linter on commit for any changed files with 
+the following pre-commit hook `.git/hooks/pre-commit`.
 
-### Prerequisites
+```bash
+#!/bin/sh
+if [ "x$SKIPLINT" == "x" ]; then
+    exec bundle exec rubocop $(git diff --cached --name-only --diff-filter=ACM | egrep '\.rb|\.feature|\.rake' | grep -v 'db/schema.rb') Gemfile
+fi
+```
 
-- Your department, agency or team has a GOV.UK PaaS account
-- You have a personal account granted by your organisation manager
-- You have downloaded and installed the [Cloud Foundry CLI](https://github.com/cloudfoundry/cli#downloads) for your platform
+### Configuration
 
-### Deploy
+`HTTPAUTH_USERNAME` and `HTTPAUTH_PASSWORD` - setting both enables site wide password protection
 
-1. Run `cf login -a api.london.cloud.service.gov.uk -u USERNAME`, `USERNAME` is your personal GOV.UK PaaS account email address
-2. Run `bundle package --all` to vendor ruby dependencies
-3. Run `yarn` to vendor node dependencies
-4. Run `bundle exec rails webpacker:compile` to compile assets
-5. Run `cf push` to push the app to Cloud Foundry Application Runtime
-
-Check the file `manifest.yml` for customisation of name (you may need to change it as there could be a conflict on that name), buildpacks and eventual services (PostgreSQL needs to be [set up](https://docs.cloud.service.gov.uk/deploying_services/postgresql/)).
-
-The app should be available at https://govuk-rails-boilerplate.london.cloudapps.digital
