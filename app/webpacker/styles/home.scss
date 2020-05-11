@@ -364,41 +364,42 @@
     }
 }
 
-.talk-to-someone {
+.talk-to-us {
+    text-align: left;
     background-color: $grey;
     padding-left: 100px;
     padding-right: 100px;
     
 
-    .inner-container {
+    &__inner {
         position: relative;
         top: -50px;
-    }
 
-    .talk-to-someone-label {
-        margin-top: 20px;
-    }
-
-    .talk-to-someone-table {
-        width: 100%;
-    }
-
-    .talk-to-someone-column {
-        display: inline-block;
-        box-sizing: border-box;
-        padding-left: 20px;
-        padding-right: 20px;
-        width:33%;
-        min-width: 245px;
-        vertical-align: top;
-
-        h2 {
+        &__label {
             margin-top: 20px;
-            margin-bottom: 40px;
         }
 
-        a{
-            text-decoration: none;
+        &__table {
+            width: 100%;
+
+            &__column {
+                display: inline-block;
+                box-sizing: border-box;
+                padding-left: 20px;
+                padding-right: 20px;
+                width:33%;
+                min-width: 245px;
+                vertical-align: top;
+
+                h2 {
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+                }
+
+                a{
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
@@ -580,22 +581,28 @@
         
     }
 
-    .talk-to-someone {
+    .talk-to-us {
         padding: 0;
 
-        .strapline {
-            font-size: 24px;
-        }
+        &__inner {
 
-        .talk-to-someone-label {
-            margin-left: 20px;
-            margin-right:40px;
-        }
+            .strapline {
+                font-size: 24px;
+            }
 
-        .talk-to-someone-column {
-            display: block;
-            width: 90%;
+            &__label {
+                margin-left: 20px;
+                margin-right:40px;
+            }
+    
+            &__table {
+                &__column {
+                    display: block;
+                    width: 90%;
+                }
+            }
         }
+        
     }
 
     .find-an-event {
