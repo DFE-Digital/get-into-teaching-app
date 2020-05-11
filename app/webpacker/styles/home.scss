@@ -13,7 +13,7 @@
     line-height: 1.3;
 }
 
-.steps-section {
+.steps {
     min-height: 250px;
     background-color: $white;
     padding-left: 100px;
@@ -21,23 +21,23 @@
     padding-top: 60px;
     padding-bottom: 60px;
 
-    .steps-section-table {
+    .steps__table {
         display: table;
         width: 100%;
         margin-top: 40px;
         margin-bottom: 40px;
 
-        .steps-section-table-row {
+        .steps__table__row {
             display: table-row;
             width: 100%;
         }
         
-        .steps-section-table-cell {
+        .steps__table__row__cell {
             display: inline-block;
             width: 270px;
             padding: 10px;
 
-            .steps-section-number {
+            .steps__table__row__cell--number {
                 display: inline-block;
                 width: 45px;
                 height: 45px;
@@ -49,7 +49,7 @@
                 transform: rotate(3deg);
             }
 
-            .steps-section-text {
+            .steps__table__row__cell--text {
                 display: inline-block;
                 height: 100%;
                 vertical-align: middle;
@@ -392,18 +392,20 @@
 
 @media only screen and (max-width: 880px) {
 
-    .steps-section { 
+    .steps { 
 
-        .steps-section-table {
+        .steps__table {
             margin-top: 0px;
             margin-bottom: 0px;
         }
 
-        .steps-section-table-cell {
-            display: block;
-            width: 100%;
-            margin-top: 10px;
-            margin-bottom: 10px;
+        .steps__table__row {
+            .steps__table__row__cell {
+                display: block;
+                width: 100%;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
         }
     
     }
@@ -529,7 +531,7 @@
         display: none;
     }
 
-    .steps-section {
+    .steps {
         padding: 0;
         padding-top: 40px;
         padding-bottom: 40px;
@@ -544,9 +546,9 @@
             padding-left: 40px;
         }
 
-        .steps-section-table {
-            .steps-section-table-row {
-                .steps-section-table-cell {
+        .steps__table {
+            .steps__table__row {
+                .steps__table__row__cell {
                     padding-left:40px;
                 }
             }
