@@ -407,7 +407,7 @@
 
     white-space: nowrap;
     
-    .pic-link-pic {
+    &__pic {
         display: inline-block;
         box-sizing: border-box;
         width: 50%;
@@ -417,7 +417,7 @@
         background-size: cover;
         vertical-align: top;
 
-        .angled-separator {
+        &__mask {
             display: inline-block;
             background-color: $white;
             width: 26px;
@@ -429,7 +429,7 @@
             left: -16px;
         }
 
-        .after-angled-separator {
+        &__salaries {
             display: inline-block;
             vertical-align: top;
             position: relative;
@@ -556,7 +556,7 @@
 
     .pic-links {
 
-        .pic-link-pic {
+        &__pic {
             width: 100%;
             height: 260px;
             display: block;
@@ -565,12 +565,12 @@
                 margin-top: 150px;
             }
 
-            .angled-separator {
+            &__mask {
                 height: 30px;
                 width: 120%;
             }
 
-            .after-angled-separator {
+            &__salaries {
                 position: relative;
                 left: 0px;
                 top: -10px;
