@@ -267,6 +267,18 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+
+            .find-an-event-left-map-pin-overlay {
+                position: relative;
+                top: 60px;
+            
+                span {
+                    color: $pink-90;
+                    margin-left: 10px;
+                    display: inline-block;
+                    margin-top: 20px;
+                }
+            }
         }
     }
 
