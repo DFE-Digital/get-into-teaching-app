@@ -208,10 +208,62 @@
         min-height: 240px;
         text-align: left;
 
-        .my-story-header {
+        .my-story-right-header {
+            position: relative;
+            left: -10px;
+        }
 
-            h1 {
-                font-size: 36px;
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+
+            a {
+                color: $black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.find-an-event {
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    
+    .find-an-event-left {
+        
+        display: table-cell;
+        vertical-align: top;
+        width: 370px;
+        min-width: 370px;
+        height: 240px;
+        
+        .find-an-event-left-map {
+            width: 370px;
+            min-width: 370px;
+            height: 240px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+
+    .find-an-event-right {
+        display: table-cell;
+        vertical-align: top;
+        min-height: 240px;
+        text-align: left;
+
+        .find-an-event-right-header {
+            position: relative;
+            left: -10px;
+
+            .strapline {
+                background-color: $blue;
             }
         }
 
@@ -220,7 +272,7 @@
             margin-right: 20px;
 
             a {
-                color: black;
+                color: $black;
                 text-decoration: none;
                 font-weight: bold;
             }
@@ -332,6 +384,66 @@
 
 /* mobile css */
 @media only screen and (max-width: 800px) {
+
+    .my-story {
+        
+        padding-top: 100px;
+        padding-bottom: 20px;
+        
+        .my-story-left {
+            display: block;
+
+            .my-story-left-video {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        .my-story-right {
+            display: block;
+            min-height: 0;
+
+            .my-story-right-header {
+                height: 0px;
+                top:-305px;
+
+                .strapline {
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
+
+    .find-an-event {
+        
+        padding-top: 100px;
+        padding-bottom: 20px;
+        
+        .find-an-event-left {
+            display: block;
+
+            .find-an-event-left-map {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        .find-an-event-right {
+            display: block;
+            min-height: 0;
+
+            .find-an-event-right-header {
+                height: 0px;
+                top:-305px;
+
+                .strapline {
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
 
     .pic-links {
 
