@@ -209,7 +209,7 @@
     display: table;
     width: 100%;
     
-    .my-story-left {
+    .my-story__left {
         
         display: table-cell;
         vertical-align: top;
@@ -217,16 +217,16 @@
         min-width: 370px;
         height: 240px;
         
-        .my-story-left-video {
+        .my-story__left__video {
             width: 370px;
             min-width: 370px;
             height: 240px;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            overflow: hidden;;
+            overflow: hidden;
 
-            .my-story-left-play-overlay {
+            .my-story__left__video__overlay {
                 background-color: $pink-90;
                 height: 60px;
                 width: 70px;
@@ -245,13 +245,13 @@
         }
     }
 
-    .my-story-right {
+    .my-story__right {
         display: table-cell;
         vertical-align: top;
         min-height: 240px;
         text-align: left;
 
-        .my-story-right-header {
+        .my-story__right__header {
             position: relative;
             left: -10px;
         }
@@ -450,20 +450,20 @@
         padding-top: 100px;
         padding-bottom: 20px;
         
-        .my-story-left {
+        .my-story__left {
             display: block;
 
-            .my-story-left-video {
+            .my-story__left__video {
                 margin-left: 20px;
                 margin-right: 20px;
             }
         }
 
-        .my-story-right {
+        .my-story__right {
             display: block;
             min-height: 0;
 
-            .my-story-right-header {
+            .my-story__right__header {
                 height: 0px;
                 top:-305px;
 
