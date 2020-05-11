@@ -20,44 +20,48 @@
     padding-right: 100px;
     padding-top: 60px;
     padding-bottom: 60px;
+    text-align: left;
 
-    .steps__table {
+    &__table {
         display: table;
         width: 100%;
         margin-top: 40px;
         margin-bottom: 40px;
 
-        .steps__table__row {
+        &__row {
             display: table-row;
             width: 100%;
+
+            &__cell {
+                display: inline-block;
+                width: 270px;
+                padding: 10px;
+    
+                &--number {
+                    display: inline-block;
+                    width: 45px;
+                    height: 45px;
+                    padding-top: 16px;
+                    box-sizing: border-box;
+                    background-color: $yellow;
+                    text-align: center;
+                    font-weight: bold;
+                    transform: rotate(3deg);
+                }
+    
+                &--text {
+                    display: inline-block;
+                    height: 100%;
+                    vertical-align: middle;
+                    margin-left: 10px;
+                    font-size: 19px;
+                }
+    
+            }
+
         }
         
-        .steps__table__row__cell {
-            display: inline-block;
-            width: 270px;
-            padding: 10px;
-
-            .steps__table__row__cell--number {
-                display: inline-block;
-                width: 45px;
-                height: 45px;
-                padding-top: 16px;
-                box-sizing: border-box;
-                background-color: $yellow;
-                text-align: center;
-                font-weight: bold;
-                transform: rotate(3deg);
-            }
-
-            .steps__table__row__cell--text {
-                display: inline-block;
-                height: 100%;
-                vertical-align: middle;
-                margin-left: 10px;
-                font-size: 19px;
-            }
-
-        }
+        
 
     }
 }
@@ -394,13 +398,13 @@
 
     .steps { 
 
-        .steps__table {
+        &__table {
             margin-top: 0px;
             margin-bottom: 0px;
         }
 
-        .steps__table__row {
-            .steps__table__row__cell {
+        &__row {
+            &__cell {
                 display: block;
                 width: 100%;
                 margin-top: 10px;
@@ -546,9 +550,9 @@
             padding-left: 40px;
         }
 
-        .steps__table {
-            .steps__table__row {
-                .steps__table__row__cell {
+        &__table {
+            &__row {
+                &__cell {
                     padding-left:40px;
                 }
             }
