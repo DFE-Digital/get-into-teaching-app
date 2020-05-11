@@ -24,7 +24,7 @@
 
 .steps-section {
     min-height: 250px;
-    background-color: white;
+    background-color: $white;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 60px;
@@ -55,7 +55,7 @@
     height: 45px;
     padding-top: 16px;
     box-sizing: border-box;
-    background-color: #FBBA20;
+    background-color: $yellow;
     text-align: center;
     font-weight: bold;
     transform: rotate(3deg);
@@ -107,7 +107,7 @@
 
 .quote-section-left {
     display: table-cell;
-    background-color: #FBBA20;
+    background-color: $yellow;
     width: 60%;
     height: 385px;
     white-space: normal;
@@ -128,7 +128,7 @@
 }
 
 .quote-section-angle {
-    background-color: #FBBA20;
+    background-color: $yellow;
     height: 110%;
     width: 60px;
     transform: rotate(-6deg);
@@ -162,7 +162,7 @@
 
 .quote-section-mobile-bottom {
     height: 360px;
-    background-color: #FBBA20;
+    background-color: $yellow;
 
     .quote-graphic {
         margin-top: 0px;
@@ -229,7 +229,7 @@
 }
 
 .talk-to-someone {
-    background-color: #F0F0F0;
+    background-color: $grey;
     padding-left: 100px;
     padding-right: 100px;
     
@@ -283,7 +283,7 @@
 
         .angled-separator {
             display: inline-block;
-            background-color: white;
+            background-color: $white;
             width: 26px;
             height: 110%;
             vertical-align: top;
@@ -301,13 +301,13 @@
         }
 
         .call-to-action {
-            background-color: white;
-            color: black;
+            background-color: $white;
+            color: $black;
             margin-top: 300px;
             display: inline-block;
 
             .fa-chevron-right {
-                color: black;
+                color: $black;
             }
         }
     }
