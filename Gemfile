@@ -24,7 +24,6 @@ gem "foreman"
 # Canonical meta tag
 gem "canonical-rails"
 
-gem "emd"
 gem "redcarpet"
 
 group :development, :test do
