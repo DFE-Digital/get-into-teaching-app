@@ -9,14 +9,14 @@ RSpec.feature "Password protection", type: :feature do
 
   subject { visit root_path; page }
 
-  context 'when password protection is not set' do
+  context "when password protection is not set" do
     let(:username) { "" }
     let(:password) { "" }
 
     it { is_expected.to have_http_status :success }
   end
 
-  context 'when password protection set' do
+  context "when password protection set" do
     let(:username) { "username" }
     let(:password) { "password" }
 

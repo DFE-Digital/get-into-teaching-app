@@ -1,7 +1,7 @@
 module ApplicationHelper
   def page_title
     # FIXME needs to parse front matter
-    @page_title || params[:page].to_s.humanize
+    params[:page].to_s.humanize
   end
 
   def prefixed_page_title
@@ -14,6 +14,6 @@ module ApplicationHelper
 
   def header_image
     # FIXME needs to parse frontpatter
-    'media/images/main-header.jpg'
+    "media/images/main-header.jpg"
   end
 end
