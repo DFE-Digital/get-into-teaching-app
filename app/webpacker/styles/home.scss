@@ -209,7 +209,7 @@
     display: table;
     width: 100%;
     
-    .my-story__left {
+    &__left {
         
         display: table-cell;
         vertical-align: top;
@@ -217,7 +217,7 @@
         min-width: 370px;
         height: 240px;
         
-        .my-story__left__video {
+        &__video {
             width: 370px;
             min-width: 370px;
             height: 240px;
@@ -226,7 +226,7 @@
             background-size: cover;
             overflow: hidden;
 
-            .my-story__left__video__overlay {
+            &__overlay {
                 background-color: $pink-90;
                 height: 60px;
                 width: 70px;
@@ -245,13 +245,13 @@
         }
     }
 
-    .my-story__right {
+    &__right {
         display: table-cell;
         vertical-align: top;
         min-height: 240px;
         text-align: left;
 
-        .my-story__right__header {
+        &__header {
             position: relative;
             left: -10px;
         }
@@ -450,20 +450,20 @@
         padding-top: 100px;
         padding-bottom: 20px;
         
-        .my-story__left {
+        &__left {
             display: block;
 
-            .my-story__left__video {
+            &__video {
                 margin-left: 20px;
                 margin-right: 20px;
             }
         }
 
-        .my-story__right {
+        &__right {
             display: block;
             min-height: 0;
 
-            .my-story__right__header {
+            &__header {
                 height: 0px;
                 top:-305px;
 
