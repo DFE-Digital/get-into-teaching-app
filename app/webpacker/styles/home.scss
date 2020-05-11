@@ -24,7 +24,7 @@
 
 .steps-section {
     min-height: 250px;
-    background-color: white;
+    background-color: $white;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 60px;
@@ -55,7 +55,7 @@
     height: 45px;
     padding-top: 16px;
     box-sizing: border-box;
-    background-color: #FBBA20;
+    background-color: $yellow;
     text-align: center;
     font-weight: bold;
     transform: rotate(3deg);
@@ -107,7 +107,7 @@
 
 .quote-section-left {
     display: table-cell;
-    background-color: #FBBA20;
+    background-color: $yellow;
     width: 60%;
     height: 385px;
     white-space: normal;
@@ -128,7 +128,7 @@
 }
 
 .quote-section-angle {
-    background-color: #FBBA20;
+    background-color: $yellow;
     height: 110%;
     width: 60px;
     transform: rotate(-6deg);
@@ -162,7 +162,7 @@
 
 .quote-section-mobile-bottom {
     height: 360px;
-    background-color: #FBBA20;
+    background-color: $yellow;
 
     .quote-graphic {
         margin-top: 0px;
@@ -176,8 +176,142 @@
     }
 }
 
+.my-story {
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    
+    .my-story-left {
+        
+        display: table-cell;
+        vertical-align: top;
+        width: 370px;
+        min-width: 370px;
+        height: 240px;
+        
+        .my-story-left-video {
+            width: 370px;
+            min-width: 370px;
+            height: 240px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;;
+
+            .my-story-left-play-overlay {
+                background-color: $pink-90;
+                height: 60px;
+                width: 70px;
+                transform: rotate(3deg);
+                position: relative;
+                top: 80px;
+                left: -5px;
+            
+                span {
+                    color: $white;
+                    margin-left: 10px;
+                    display: inline-block;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .my-story-right {
+        display: table-cell;
+        vertical-align: top;
+        min-height: 240px;
+        text-align: left;
+
+        .my-story-right-header {
+            position: relative;
+            left: -10px;
+        }
+
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+
+            a {
+                color: $black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.find-an-event {
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    
+    .find-an-event-left {
+        
+        display: table-cell;
+        vertical-align: top;
+        width: 370px;
+        min-width: 370px;
+        height: 240px;
+        
+        .find-an-event-left-map {
+            width: 370px;
+            min-width: 370px;
+            height: 240px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            .find-an-event-left-map-pin-overlay {
+                position: relative;
+                top: 60px;
+            
+                span {
+                    color: $pink-90;
+                    margin-left: 10px;
+                    display: inline-block;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .find-an-event-right {
+        display: table-cell;
+        vertical-align: top;
+        min-height: 240px;
+        text-align: left;
+
+        .find-an-event-right-header {
+            position: relative;
+            left: -10px;
+
+            .strapline {
+                background-color: $blue;
+            }
+        }
+
+        p {
+            margin-left: 20px;
+            margin-right: 20px;
+
+            a {
+                color: $black;
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
 .talk-to-someone {
-    background-color: #F0F0F0;
+    background-color: $grey;
     padding-left: 100px;
     padding-right: 100px;
     
@@ -231,7 +365,7 @@
 
         .angled-separator {
             display: inline-block;
-            background-color: white;
+            background-color: $white;
             width: 26px;
             height: 110%;
             vertical-align: top;
@@ -249,17 +383,19 @@
         }
 
         .call-to-action {
-            background-color: white;
-            color: black;
+            background-color: $white;
+            color: $black;
             margin-top: 300px;
             display: inline-block;
 
             .fa-chevron-right {
-                color: black;
+                color: $black;
             }
         }
     }
 }
+
+
 
 @media only screen and (max-width: 880px) {
 
@@ -278,6 +414,66 @@
 
 /* mobile css */
 @media only screen and (max-width: 800px) {
+
+    .my-story {
+        
+        padding-top: 100px;
+        padding-bottom: 20px;
+        
+        .my-story-left {
+            display: block;
+
+            .my-story-left-video {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        .my-story-right {
+            display: block;
+            min-height: 0;
+
+            .my-story-right-header {
+                height: 0px;
+                top:-305px;
+
+                .strapline {
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
+
+    .find-an-event {
+        
+        padding-top: 100px;
+        padding-bottom: 20px;
+        
+        .find-an-event-left {
+            display: block;
+
+            .find-an-event-left-map {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        .find-an-event-right {
+            display: block;
+            min-height: 0;
+
+            .find-an-event-right-header {
+                height: 0px;
+                top:-305px;
+
+                .strapline {
+                    font-size: 24px;
+                }
+            }
+        }
+
+    }
 
     .pic-links {
 
