@@ -1,69 +1,8 @@
-body {
-    font-family: 'Akzidenz Grotesk';
-}
+@import './layout.scss';
+@import './colours.scss';
+@import './text.scss';
+@import './button.scss';
+@import './header.scss';
+@import './footer.scss';
 
-h2 {
-    font-size: 19px;
-}
-
-p {
-    font-size: 19px;
-    line-height: 1.6;
-}
-
-a {
-    line-height: 1.4;
-}
-
-.container {
-    background-color:$white;
-    min-height: 100vh;
-    margin:0 auto;
-    overflow: hidden;
-}
-
-.container-1200 {
-    min-height: 25px;
-    max-width: 1200px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.git-link {
-    font-weight: bold;
-    font-size: 19px;
-    color: $black;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 30px;
-
-    i {
-        margin-left: 4px;
-        vertical-align: middle;
-    }
-}
-
-.telephone-number {
-    color: $blue;
-    text-decoration: underline;
-}
-
-.call-to-action {
-    background-color: $green;
-    color: $white;
-    font-size: 19px;
-    letter-spacing: 0px;
-    min-height: 70px;
-    font-weight: bold;
-    text-align: center;
-    box-sizing: border-box;
-    display: inline-block;
-    padding-top: 24px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-
-    i {
-        color: $white;
-    }
-}
+@import './home.scss';
