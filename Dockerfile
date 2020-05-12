@@ -14,7 +14,7 @@ EXPOSE 3000
 ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server" ]
 
-RUN apk add --no-cache build-base tzdata nodejs yarn
+RUN apk add --no-cache build-base git tzdata nodejs yarn
 
 # install NPM packages removign artifacts
 COPY package.json yarn.lock ./
