@@ -1,5 +1,5 @@
 <nav class="navbar">
-    <div class="navbar-right">
+    <div class="navbar__desktop">
         <div>
             <ul>
                 <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
@@ -16,13 +16,13 @@
             </ul>
         </div>
     </div>
-    <div class="navbar-mobile-right">
+    <div class="navbar__mobile">
         <a href="javascript:void(0);" class="icon" onclick="navToggle()">
-            <span class="navbar-hamburger">
+            <span class="navbar__mobile__hamburger">
                 <i id="navbar-hamburger-icon" class="fa fa-bars fa-2x"></i>
             </span>
         </a>
-        <div id="navbar-mobile-links" class="navbar-mobile-links">
+        <div id="navbar-mobile-links" class="navbar__mobile__links">
             <li><a href="/">Home</a></li>
             <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
             <li><a href="/funding-your-training/index">Funding your training</a></li>
@@ -32,20 +32,20 @@
             <li><a href="/">Talk to us</a></li>
         </div>
     </div>
-    <div class="navbar-mobile-right navbar-mobile-right-label">
+    <div class="navbar__mobile navbar__mobile__container">
         <a href="javascript:void(0);" class="icon" onclick="navToggle()">
-            <span id="navbar-label" class="navbar-label">
+            <span id="navbar-label" class="navbar__mobile__label">
                 Menu
             </span>
         </a>
     </div>
 </nav>
 
-<div class="logo-container">
+<div class="logo">
     <a href="/">
-        <div class="logo">
+        <div class="logo__image">
             <img src="<%= asset_pack_path 'media/images/getintoteachinglogo.svg' %>" />
-            <div class="tagline">Every Lesson shapes a life.</div>
+            <div class="logo__image__tagline">Every Lesson shapes a life.</div>
         </div>
     </a>
 </div>
