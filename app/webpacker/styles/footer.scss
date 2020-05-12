@@ -1,13 +1,13 @@
 footer {
-    background-color: #202020;
+    background-color: $black;
 
-    .footer-strip-one {
+    .footer-top {
         height: 170px;
         width: 100%;
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 30px;
-        border-bottom: 1px solid #B7B9BB;
+        border-bottom: 1px solid $grey;
         box-sizing: border-box;
         display: table;
         
@@ -15,33 +15,16 @@ footer {
             text-decoration: none;
         }
 
-        .footer-logo-container {
-            display: table-cell;
-            vertical-align: top;
-            width: 124px;
-            height: 73px;
-
-            img {
-                width: 124px;
-                height: 73px;
-            }
-        }
-
-        .footer-links-container {
+        &__links-container {
             display: table-cell;
             text-align: right;
             vertical-align: top;
-            color: #B7B9BB;
+            color: $grey;
             font-size: 16px;
             letter-spacing: 0px;
 
-            .footer-links-block {
-                padding-top:8px;
-                padding-bottom: 8px;
-            }
-
             a {
-                color: #B7B9BB;
+                color: $grey;
                 margin-left: 5px;
                 margin-right: 5px;
                 text-decoration: underline;
@@ -49,7 +32,7 @@ footer {
         }
     }
 
-    .footer-strip-two {
+    .footer-bottom {
         height: 140px;
         width: 100%;
         padding-left: 40px;
@@ -59,7 +42,7 @@ footer {
         box-sizing: border-box;
         display: table;
 
-        .footer-logo-container {
+        &__logo-container {
             display: table-cell;
             vertical-align: top;
             width: 124px;
@@ -71,22 +54,17 @@ footer {
             }
         }
 
-        .footer-links-container {
+        &__links-container {
             display: table-cell;
             text-align: right;
             vertical-align: top;
-            color: #B7B9BB;
+            color: $grey;
             font-size: 16px;
             letter-spacing: 0px;
             padding-left: 40px;
 
-            .footer-links-block {
-                padding-top:8px;
-                padding-bottom: 8px;
-            }
-
             a {
-                color: #B7B9BB;
+                color: $grey;
                 margin-left: 5px;
                 margin-right: 5px;
                 text-decoration: underline;
@@ -105,22 +83,18 @@ footer {
 
     footer {
 
-        .footer-strip-one {
+        .footer-top {
             display: block;
             height:360px;
             padding-left:20px;
             padding-right:20px;
 
-            .footer-logo-container {
-                display: block;
-            }
-
-            .footer-links-container {
+            &__links-container {
                 display: block;
                 text-align: left;
                 padding-top: 30px;
 
-                .footer-license {
+                &__license {
                     padding-right:30px;
                     padding-top:20px;
                     a {
@@ -141,23 +115,23 @@ footer {
             }
         }
 
-        .footer-strip-two {
+        .footer-bottom {
             display: block;
             height:340px;
             padding-left:20px;
             padding-right:20px;
 
-            .footer-logo-container {
+            &__logo-container {
                 display: block;
             }
 
-            .footer-links-container {
+            &__links-container {
                 display: block;
                 text-align: left;
                 padding-top: 30px;
                 padding-left: 0px;
 
-                .footer-license {
+                &__license {
                     padding-right:30px;
                     padding-top:20px;
                     a {
