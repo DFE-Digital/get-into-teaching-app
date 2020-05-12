@@ -21,19 +21,13 @@
         display: inline-block;
     
         h1 {
-            font-weight: bold;
             font-size: 42px;
-            letter-spacing: 0px;
-            color: $black;
             margin: 0;
             padding: 0;
-            display: inline-block;
         }
 
         p {
             font-weight: bold;
-            margin: 0;
-            padding: 0;
             margin-top: 5px;
             font-size: 26px;
             width: 475px;
@@ -44,7 +38,6 @@
 
 .steps {
     min-height: 250px;
-    background-color: $white;
     padding-left: 100px;
     padding-right: 100px;
     padding-top: 60px;
@@ -83,11 +76,11 @@
                 }
     
                 &--text {
+                    font-size: 19px;
                     display: inline-block;
                     height: 100%;
                     vertical-align: middle;
                     margin-left: 10px;
-                    font-size: 19px;
                 }
     
             }
@@ -189,7 +182,7 @@
     }
 
     &__bottom {
-        height: 360px;
+        height: 330px;
         background-color: $yellow;
 
         &__graphic {
@@ -247,6 +240,7 @@
         height: 240px;
         
         &__video {
+            margin-left: 20px;
             width: 370px;
             min-width: 370px;
             height: 240px;
@@ -290,7 +284,6 @@
             margin-right: 20px;
 
             a {
-                color: $black;
                 text-decoration: none;
                 font-weight: bold;
             }
@@ -306,7 +299,7 @@
     display: table;
     width: 100%;
     
-    .find-an-event__left {
+    &__left {
         
         display: table-cell;
         vertical-align: top;
@@ -314,7 +307,8 @@
         min-width: 370px;
         height: 240px;
         
-        .find-an-event__left__map {
+        &__map {
+            margin-left: 20px;
             width: 370px;
             min-width: 370px;
             height: 240px;
@@ -322,7 +316,7 @@
             background-repeat: no-repeat;
             background-size: cover;
 
-            .find-an-event__left__map__pin {
+            &__pin {
                 position: relative;
                 top: 60px;
             
@@ -336,13 +330,13 @@
         }
     }
 
-    .find-an-event__right {
+    &__right {
         display: table-cell;
         vertical-align: top;
         min-height: 240px;
         text-align: left;
 
-        .find-an-event__right__header {
+        &__header {
             position: relative;
             left: -10px;
 
@@ -356,7 +350,6 @@
             margin-right: 20px;
 
             a {
-                color: $black;
                 text-decoration: none;
                 font-weight: bold;
             }
@@ -437,7 +430,7 @@
             left: -30px;
         }
 
-        .call-to-action {
+        .call-to-action-button {
             background-color: $white;
             color: $black;
             margin-top: 300px;
@@ -504,6 +497,9 @@
             display: block;
 
             &__video {
+                width: 335px;
+                height: 217px;
+                min-width: 0;
                 margin-left: 20px;
                 margin-right: 20px;
             }
@@ -534,6 +530,9 @@
             display: block;
 
             .find-an-event__left__map {
+                width: 335px;
+                height: 217px;
+                min-width: 0;
                 margin-left: 20px;
                 margin-right: 20px;
             }
@@ -562,7 +561,7 @@
             height: 260px;
             display: block;
 
-            .call-to-action {
+            .call-to-action-button {
                 margin-top: 150px;
             }
 
@@ -611,6 +610,12 @@
 
     .quote-mobile {
         display: block;
+
+        &__bottom {
+            &__graphic {
+                margin-top: 0px;
+            }
+        }
     }
 
     .quote {
@@ -629,6 +634,7 @@
 
         .git-link {
             padding-left: 40px;
+            padding-right: 20px;
         }
 
         &__table {
