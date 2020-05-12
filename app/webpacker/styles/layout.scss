@@ -1,0 +1,18 @@
+body {
+    font-family: 'Akzidenz Grotesk';
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh;
+    margin:0 auto;
+    overflow: hidden;
+}
+
+.container-1200 {
+    min-height: 25px;
+    max-width: 1200px;
+    text-align: center;
+    margin: 0 auto;
+}
