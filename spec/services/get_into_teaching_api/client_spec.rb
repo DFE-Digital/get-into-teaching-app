@@ -37,7 +37,29 @@ describe GetIntoTeachingApi::Client do
   end
 
   describe "error handling" do
-    it "Will iterate the various error codes and check appropriate response"
+    subject { client.output }
+
+    {
+      400 => Faraday::ClientError,
+      404 => Faraday::ResourceNotFound,
+      405 => Faraday::ClientError,
+      500 => Faraday::ServerError,
+      502 => Faraday::ServerError,
+      503 => Faraday::ServerError
+    }.each do |code, error|
+      context code.to_s do
+        before do
+          stub_request(:get, endpoint).to_return \
+            status: code,
+            body: "",
+            headers: {}
+        end
+
+        it "should raise a #{error} error" do
+          expect { subject }.to raise_error(error)
+        end
+      end
+    end
   end
 
   describe "retry handling" do
