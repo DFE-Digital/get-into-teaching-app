@@ -60,6 +60,7 @@ end
 
 group :test do
   gem "webdrivers", "~> 4.3"
+  gem "webmock"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
