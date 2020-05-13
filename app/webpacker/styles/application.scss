@@ -14,19 +14,9 @@
     font-style: normal;
 }
 
-@import './colours.scss';
-@import './text.scss';
-
 @import './git.scss';
-@import './navbar.scss';
-@import './footer.scss';
-@import './home.scss';
+
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
-
-body {
-  margin: 0;
-  padding: 0;
-}
