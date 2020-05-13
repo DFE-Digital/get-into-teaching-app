@@ -116,7 +116,8 @@
             margin-top: 65px;
             text-align: center;
         
-            i {
+            div {
+                margin-top:5px;
                 transform: rotate(-3deg);
             }
         }
@@ -198,7 +199,8 @@
             margin-top: 65px;
             text-align: center;
         
-            i {
+            div {
+                margin-top:5px;
                 transform: rotate(-3deg);
             }
         }
@@ -252,17 +254,16 @@
             &__overlay {
                 background-color: $pink-90;
                 height: 60px;
-                width: 70px;
+                width: 80px;
                 transform: rotate(3deg);
                 position: relative;
                 top: 80px;
                 left: -5px;
             
-                span {
-                    color: $white;
-                    margin-left: 10px;
-                    display: inline-block;
-                    margin-top: 20px;
+                div {
+                    transform: rotate(-3deg);
+                    margin-top: 16px;
+                    margin-left: 5px; 
                 }
             }
         }
@@ -320,11 +321,8 @@
                 position: relative;
                 top: 60px;
             
-                span {
-                    color: $pink-90;
-                    margin-left: 10px;
-                    display: inline-block;
-                    margin-top: 20px;
+                div {
+                    margin-top: 10px;
                 }
             }
         }
