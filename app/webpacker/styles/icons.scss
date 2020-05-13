@@ -1,0 +1,27 @@
+@mixin icon {
+    display: inline-block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.icon-pin-large {
+    @include icon;
+    background-image: url('../images/location-icon.svg');
+    width: 50px;
+    height: 60px;
+}
+
+.icon-play {
+    @include icon;
+    background-image: url('../images/play-icon.svg');
+    width: 24px;
+    height: 24px;
+}
+
+.icon-quote {
+    @include icon;
+    background-image: url('../images/quote-icon.svg');
+    width: 24px;
+    height: 24px;
+}
