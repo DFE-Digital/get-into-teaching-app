@@ -1,6 +1,7 @@
 module GetIntoTeachingApi
-
   class Client
+    JSON_CONTENT_TYPES = %w(application/vnd.api+json application/json text/json).freeze
+
     def initialize(token:, host:, basepath: nil)
       @token = token.presence || raise(MissingApiToken)
       @host = host.presence || raise(MissingHost)
@@ -22,6 +23,7 @@ module GetIntoTeachingApi
       Faraday.new do |f|
         f.use Faraday::Response::RaiseError
         f.adapter Faraday.default_adapter
+        f.response :json, content_type: /\bjson$/
       end
     end
 

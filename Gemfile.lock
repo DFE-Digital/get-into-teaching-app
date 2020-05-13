@@ -94,6 +94,8 @@ GEM
     erubi (1.9.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
+    faraday_middleware (1.0.0)
+      faraday (~> 1.0)
     ffi (1.12.2)
     foreman (0.87.1)
     globalid (0.4.2)
@@ -278,6 +280,7 @@ DEPENDENCIES
   capybara (~> 3.31)
   dotenv-rails
   faraday
+  faraday_middleware
   foreman
   front_matter_parser!
   listen (>= 3.0.5, < 3.3)

@@ -30,8 +30,7 @@ describe GetIntoTeachingApi::Client do
 
     subject { client.output }
 
-    it { is_expected.to eql '["James","Jennie","John"]' }
-    it "Will check JSON is parsed"
+    it { is_expected.to eql testdata }
   end
 
   describe "error handling" do
@@ -40,5 +39,9 @@ describe GetIntoTeachingApi::Client do
 
   describe "retry handling" do
     it "will handle a failed connection and automatically retry"
+  end
+
+  describe "authentication" do
+    it "included the designated Bearer token in API requests"
   end
 end
