@@ -34,3 +34,6 @@ yarn-debug.log*
 .env
 *.log
 app/views/content/**/*
+/config/credentials/development.key
+
+/config/credentials/production.key
