@@ -1,5 +1,15 @@
 module GetIntoTeachingApi
   class Client
+    MAX_RETRIES = 2
+    TIMEOUT_SECS = 10
+    RETRY_EXCEPTIONS = [::Faraday::ConnectionFailed].freeze
+    RETRY_OPTIONS = {
+      max: MAX_RETRIES,
+      methods: %i{get},
+      exceptions:
+        ::Faraday::Request::Retry::DEFAULT_EXCEPTIONS + RETRY_EXCEPTIONS
+    }.freeze
+
     def initialize(token:, host:, basepath: nil)
       @token = token.presence || raise(MissingApiToken)
       @host = host.presence || raise(MissingHost)
@@ -22,6 +32,7 @@ module GetIntoTeachingApi
         f.use Faraday::Response::RaiseError
         f.adapter Faraday.default_adapter
         f.request :oauth2, @token, token_type: :bearer
+        f.request :retry, RETRY_OPTIONS
         f.response :json, content_type: /\bjson$/
       end
     end

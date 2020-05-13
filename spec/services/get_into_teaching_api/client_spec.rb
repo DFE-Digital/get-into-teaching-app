@@ -52,7 +52,7 @@ describe GetIntoTeachingApi::Client do
           stub_request(:get, endpoint).to_return \
             status: code,
             body: "",
-            headers: {}
+            headers: response_headers
         end
 
         it "should raise a #{error} error" do
@@ -63,7 +63,32 @@ describe GetIntoTeachingApi::Client do
   end
 
   describe "retry handling" do
-    it "will handle a failed connection and automatically retry"
+    subject { client.output }
+
+    context 'first timeout' do
+      before do
+        stub_request(:get, endpoint)
+          .to_timeout.then
+          .to_return \
+            status: 200,
+            body: testdata.to_json,
+            headers: response_headers
+      end
+
+      it { is_expected.to eql testdata }
+    end
+
+    context 'second timeout' do
+      before do
+        stub_request(:get, endpoint)
+          .to_timeout.then
+          .to_timeout
+      end
+
+      it 'will raise an error' do
+        expect { subject }.to raise_exception Faraday::ConnectionFailed
+      end
+    end
   end
 
   describe "authentication" do
