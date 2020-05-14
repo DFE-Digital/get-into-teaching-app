@@ -1,0 +1,131 @@
+.types-of-event {
+
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 30px;
+
+    &__header {
+        background-color: $blue;
+    }
+
+    &__content {
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &__nested {
+            padding-left:20px;
+
+            ul {
+                list-style-type: square;
+            }
+
+            li {
+                font-size: 19px;
+                line-height: 1.6;
+            }
+        }
+    }
+
+}
+
+.types-of-event-quote {
+
+    &__left {
+        background-color: $yellow;
+        text-align: center;
+        vertical-align: top;
+        padding-bottom: 40px;
+
+        &__graphic {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, .9);
+            padding-top: 5px;
+            box-sizing: border-box;
+            transform: rotate(3deg);
+            margin-top: 30px;
+            text-align: center;
+        
+            i {
+                transform: rotate(-3deg);
+            }
+        }
+
+        &__quote {
+            display: inline-block;
+            width: 80%;
+            font-size: 26px;
+            font-weight: bold;
+            text-align: left;
+            vertical-align: top;
+            margin-top: 40px;
+            margin-left: 20px;
+            letter-spacing: 0px;
+            line-height: 1.2;
+
+            &--quotee {
+                font-weight: normal;
+                margin-top: 30px;
+            }
+        }
+    }
+    
+    &__right {
+        display: table-cell;
+        background-color:lightgray;
+        width: 50%;
+        height: 385px;
+        white-space: normal;
+        overflow: hidden;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        &__mask {
+            background-color: $yellow;
+            height: 110%;
+            width: 60px;
+            transform: rotate(-6deg);
+            margin-left: -20px;
+        }
+    }
+}
+
+.types-of-event-types {
+    text-align: left;
+
+    &__content {
+        padding-top: 20px;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-bottom: 20px;
+
+        li {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+    }
+}
+
+.search-for-events {
+    background-color: $grey;
+
+    &__header {
+        background-color: $blue;
+        position: relative;
+        top: -60px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    
+    .types-of-event {
+
+        &__content {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    
+    }
+}

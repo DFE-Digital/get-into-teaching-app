@@ -1,3 +1,7 @@
+h1 {
+    font-size: 28px;
+}
+
 h2 {
     font-size: 19px;
 }
@@ -20,6 +24,15 @@ a {
     padding: 16px 50px 12px 50px;
 }
 
+.strapline-prominent {
+    background-color: $pink;
+    text-decoration: underline;
+    font-size: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
 .git-link {
     font-weight: bold;
     font-size: 19px;
@@ -37,4 +50,16 @@ a {
 .telephone-number {
     color: $blue;
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .strapline {
+        font-size: 24px;
+    }
+
+    .strapline-prominent {
+        font-size: 20px;
+    }
+
 }

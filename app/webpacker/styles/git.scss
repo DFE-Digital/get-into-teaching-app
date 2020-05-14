@@ -6,4 +6,8 @@
 @import 'header';
 @import 'footer';
 
-@import 'home';
+@import './sections/hero';
+@import './sections/talk-to-us';
+
+@import './home.scss';
+@import 'events';
