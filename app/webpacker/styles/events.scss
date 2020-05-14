@@ -22,6 +22,11 @@
             li {
                 font-size: 19px;
                 line-height: 1.6;
+                color: $purple;
+
+                span {
+                    color: $black;
+                }
             }
         }
     }
@@ -94,6 +99,7 @@
 
 .types-of-event-types {
     text-align: left;
+    padding-bottom:60px;
 
     &__content {
         padding-top: 20px;
@@ -101,21 +107,48 @@
         padding-right: 60px;
         padding-bottom: 20px;
 
+        ul {
+            list-style-type: square;
+        }
+
         li {
             font-size: 19px;
             line-height: 1.6;
+            color: $purple;
+
+            span {
+                color: $black;
+            }
         }
     }
 }
 
 .search-for-events {
+    text-align: left;
     background-color: $grey;
+    padding-bottom: 60px;
 
     &__header {
         background-color: $blue;
         position: relative;
         top: -60px;
+        left: 40px;
     }
+
+    &__content {
+        margin-top: -50px;
+        padding-left: 40px;
+        padding-right: 40px;
+        font-size: 19px;
+
+        &__update {
+            margin-top: 30px;
+        }
+    }
+}
+
+.search-for-events-results {
+    height: 200px;
 }
 
 @media only screen and (max-width: 800px) {
