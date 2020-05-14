@@ -1,5 +1,5 @@
-<div class="hero" style="background-image: url('<%= asset_pack_path 'media/images/homehero.png' %>')">
-    <div class="hero__banner">
+<div class="home-hero" style="background-image: url('<%= asset_pack_path 'media/images/hero-home.png' %>')">
+    <div class="home-hero__banner">
         <h1>Inspire the next generation</h1>
         <p>Get information and support to help you become a teacher</p>
     </div>
@@ -135,49 +135,11 @@
         </div>
         <p>Come to a free teaching event and find out how you can train to become a teacher</p>
         <p>
-            <a href='/find-an-event-near-you/'>
+            <a href='./events'>
                 Find events <i class="fas fa-chevron-right"></i>
             </a>
         </p>
     </div>
 </section>
 
-<section class="talk-to-us container-1200">
-    <div class="talk-to-us__inner">
-        <h1 class="strapline">Talk to us</h1>    
-        <p class="talk-to-us__inner__label">
-            How can we help you take your next step towards teacher training?
-        </p>
-        <div class="talk-to-us__inner__table">
-            <div class="talk-to-us__inner__table__column">
-                <p>
-                    <b>Chat online</b> <br/>
-                    Chat online If you have questions about getting into teaching,
-                    we can help you get the answers you need with our one-to-one live webchat service.
-                    <br/><br/>
-                    Chat online between 8.30am and 5pm.
-                </p>
-                <a href="/">
-                    <div class="call-to-action-button">Chat online  <i class="fas fa-chevron-right"></i></div>
-                </a>
-            </div>
-            <div class="talk-to-us__inner__table__column">
-                <p>
-                    <b>Get help from a teacher training adviser</b> <br/>
-                    If you’re ready to get into teaching and want the support of a dedicated and experienced
-                    teaching professional - who can guide you through each step of the process,
-                    then sign up to speak to one here:
-                </p>
-                <a href="https://register.getintoteaching.education.gov.uk/register">
-                    <div class="call-to-action-button">Sign up for an adviser  <i class="fas fa-chevron-right"></i></div>
-                </a>
-            </div>
-            <div class="talk-to-us__inner__table__column">
-                <p>
-                    If you’d prefer, you can call us about teaching or teacher training on Freephone <br/>
-                    <span class="telephone-number">0800 389 2500</span>.
-                </p>
-            </div>
-        </div>
-    </div>
-</section>
+<%= render "sections/talk-to-us" %>

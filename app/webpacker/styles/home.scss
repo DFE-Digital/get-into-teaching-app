@@ -1,4 +1,4 @@
-.hero {
+.home-hero {
     height: 500px;
     background-position: center;
     background-repeat: no-repeat;
@@ -355,46 +355,6 @@
     }
 }
 
-.talk-to-us {
-    text-align: left;
-    background-color: $grey;
-    padding-left: 100px;
-    padding-right: 100px;
-    
-
-    &__inner {
-        position: relative;
-        top: -50px;
-
-        &__label {
-            margin-top: 20px;
-        }
-
-        &__table {
-            width: 100%;
-
-            &__column {
-                display: inline-block;
-                box-sizing: border-box;
-                padding-left: 20px;
-                padding-right: 20px;
-                width:33%;
-                min-width: 245px;
-                vertical-align: top;
-
-                h2 {
-                    margin-top: 20px;
-                    margin-bottom: 40px;
-                }
-
-                a{
-                    text-decoration: none;
-                }
-            }
-        }
-    }
-}
-
 .pic-links {
 
     white-space: nowrap;
@@ -466,8 +426,11 @@
 /* mobile css */
 @media only screen and (max-width: 800px) {
 
-    .hero{
-        .hero__banner {
+    .home-hero{
+        height:300px;
+
+        &__banner {
+            margin-top:110px;
             width: 310px;
             height: 160px;
             padding: 24px;
@@ -573,30 +536,6 @@
                 left: 0px;
                 top: -10px;
                 display: block;
-            }
-        }
-        
-    }
-
-    .talk-to-us {
-        padding: 0;
-
-        &__inner {
-
-            .strapline {
-                font-size: 24px;
-            }
-
-            &__label {
-                margin-left: 20px;
-                margin-right:40px;
-            }
-    
-            &__table {
-                &__column {
-                    display: block;
-                    width: 90%;
-                }
             }
         }
         
