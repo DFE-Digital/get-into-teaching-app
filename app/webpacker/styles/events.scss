@@ -5,12 +5,25 @@
     padding-bottom: 30px;
 
     &__header {
+        margin-top: 40px;
         background-color: $blue;
     }
 
     &__content {
         padding-left: 40px;
         padding-right: 40px;
+
+        .strapline-prominent {
+            float: right;
+            margin-top: 40px;
+        }
+
+        &__prompt {
+            float: right;
+            margin-top: 40px;
+            margin-right:40px;
+            width: calc(100% - 450px);
+        }
 
         &__nested {
             padding-left:20px;
@@ -141,6 +154,12 @@
         padding-right: 40px;
         font-size: 19px;
 
+        &__input {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            display: inline-block;
+        }
+
         &__update {
             margin-top: 30px;
         }
@@ -148,16 +167,91 @@
 }
 
 .search-for-events-results {
-    height: 200px;
+    padding-top:60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 80px;
+
+    &__resultbox {
+        box-sizing: border-box;
+        padding: 20px;
+        display: inline-block;
+        border: 2px solid $black;
+        height: 420px;
+        width: 290px;
+        overflow: hidden;
+        margin: 18px;
+        text-align: left;
+
+        &__header {
+            height: 55px;
+            width: 100%;
+            overflow: hidden;
+
+            h2 {
+                margin: 0;
+            }
+        }
+
+        &__datetime {
+            height: 20px;
+            overflow: hidden;
+            margin-top: 4px;
+        }
+
+        &__greenstripe {
+            height: 8px;
+            background-color: $green;
+            margin-top: 6px;
+        }
+
+        &__bluestripe {
+            height: 8px;
+            background-color: $blue;
+            margin-top: 6px;
+        }
+
+        &__content {
+            h3 {
+                margin: 0;
+                margin-top: 12px;
+            }
+            p {
+                margin: 0;
+                margin-top: 20px;
+                font-size: 17px;
+            }
+        }
+
+
+
+        
+    }
+
 }
 
 @media only screen and (max-width: 800px) {
     
     .types-of-event {
 
+        &__header {
+            margin-top: 0px;
+        }
+
         &__content {
             padding-left: 20px;
             padding-right: 20px;
+
+            .strapline-prominent {
+                float: none;
+                display: block;
+            }
+
+            &__prompt {
+                float: none;
+                display: block;
+                width: 100%;
+            }
         }
     
     }

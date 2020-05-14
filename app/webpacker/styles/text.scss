@@ -4,6 +4,7 @@ h1 {
 
 h2 {
     font-size: 19px;
+    line-height: 1.4;
 }
 
 p {
@@ -21,16 +22,16 @@ a {
     font-size: 36px;
     background-color: $purple;
     display: inline-block;
-    padding: 16px 50px 12px 50px;
+    padding: 16px 40px 12px 40px;
 }
 
 .strapline-prominent {
     background-color: $pink;
     text-decoration: underline;
-    font-size: 30px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 20px;
+    font-size: 24px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 18px;
 }
 
 .git-link {
