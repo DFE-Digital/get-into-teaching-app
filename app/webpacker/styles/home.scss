@@ -88,7 +88,7 @@
 
         &__header {
             position: relative;
-            left: -10px;
+            left: -20px;
         }
 
         p {
@@ -379,7 +379,7 @@
 
         &__header {
             position: relative;
-            left: -10px;
+            left: -20px;
 
             .strapline-image {
                 background-color: $blue;
@@ -419,7 +419,7 @@
 @media only screen and (max-width: 800px) {
 
     .home-hero{
-        height:300px;
+        height:470px;
 
         &__banner {
             margin-top:110px;
@@ -570,7 +570,7 @@
         &__table {
             &__row {
                 &__cell {
-                    padding-left:40px;
+                    padding-left:20px;
                 }
             }
         }

@@ -42,9 +42,10 @@
 
     .talk-to-us {
         padding: 0;
-
+        
         &__inner {
-
+            top: -50px;
+            
             .strapline {
                 font-size: 24px;
             }
