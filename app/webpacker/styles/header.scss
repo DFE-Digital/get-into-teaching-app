@@ -38,6 +38,10 @@
             margin-bottom: -20px;
             line-height: 1;
         }
+
+        li a:hover {
+            text-decoration: none;
+        }
     }
 
     &__mobile {
