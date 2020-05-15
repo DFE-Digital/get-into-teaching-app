@@ -119,7 +119,7 @@
             width: 26px;
             height: 110%;
             vertical-align: top;
-            transform: rotate(3deg);
+            transform: rotate(-3deg);
             position: relative;
             top: -10px;
             left: -16px;
@@ -160,8 +160,8 @@
     &__table {
         display: table;
         width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 30px;
+        margin-bottom: 60px;
 
         &__row {
             display: table-row;
@@ -234,7 +234,7 @@
         &__quote {
             display: inline-block;
             width: 60%;
-            font-size: 26px;
+            font-size: 28px;
             font-weight: bold;
             text-align: left;
             vertical-align: top;
@@ -244,8 +244,9 @@
             line-height: 1.2;
 
             &--quotee {
+                font-size: 18px;
                 font-weight: normal;
-                margin-top: 30px;
+                margin-top: 10px;
             }
         }
     }
