@@ -17,12 +17,20 @@ a {
     line-height: 1.4;
 }
 
+.strapline-image {
+    color: $white;
+    font-size: 36px;
+    background-color: $purple;
+    display: inline-block;
+    padding: 20px 40px 16px 40px;
+}
+
 .strapline {
     color: $white;
     font-size: 36px;
     background-color: $purple;
     display: inline-block;
-    padding: 16px 40px 12px 40px;
+    padding: 20px 20px 16px 20px;
 }
 
 .strapline-prominent {
@@ -40,12 +48,15 @@ a {
     color: $black;
     text-decoration: none;
     display: inline-block;
-    margin-top: 30px;
 
     i {
         margin-left: 4px;
         vertical-align: middle;
     }
+}
+
+.git-link:hover {
+    text-decoration: underline;
 }
 
 .telephone-number {
@@ -56,6 +67,10 @@ a {
 @media only screen and (max-width: 800px) {
 
     .strapline {
+        font-size: 24px;
+    }
+
+    .strapline-image {
         font-size: 24px;
     }
 

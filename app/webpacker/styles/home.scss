@@ -1,5 +1,5 @@
 .home-hero {
-    height: 500px;
+    height: 540px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -36,11 +36,120 @@
     }
 }
 
+.my-story {
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    
+    &__left {
+        
+        display: table-cell;
+        vertical-align: top;
+        width: 370px;
+        min-width: 370px;
+        height: 240px;
+        
+        &__video {
+            margin-left: 20px;
+            width: 370px;
+            min-width: 370px;
+            height: 240px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+
+            &__overlay {
+                background-color: $pink-90;
+                height: 60px;
+                width: 80px;
+                transform: rotate(3deg);
+                position: relative;
+                top: 80px;
+                left: -5px;
+            
+                div {
+                    transform: rotate(-3deg);
+                    margin-top: 16px;
+                    margin-left: 5px; 
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: table-cell;
+        vertical-align: top;
+        min-height: 240px;
+        text-align: left;
+
+        &__header {
+            position: relative;
+            left: -20px;
+        }
+
+        p {
+            margin-top: 0px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    }
+}
+
+.pic-links {
+
+    white-space: nowrap;
+    
+    &__pic {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 50%;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: top;
+
+        &__mask {
+            display: inline-block;
+            background-color: $white;
+            width: 26px;
+            height: 110%;
+            vertical-align: top;
+            transform: rotate(-3deg);
+            position: relative;
+            top: -10px;
+            left: -16px;
+        }
+
+        &__salaries {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            left: -30px;
+        }
+
+        .call-to-action-button {
+            background-color: $white;
+            color: $black;
+            margin-top: 300px;
+            display: inline-block;
+
+            .fa-chevron-right {
+                color: $black;
+            }
+        }
+    }
+}
+
 .steps {
     min-height: 250px;
     padding-left: 100px;
     padding-right: 100px;
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 60px;
     text-align: left;
 
@@ -51,8 +160,8 @@
     &__table {
         display: table;
         width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin-top: 30px;
+        margin-bottom: 60px;
 
         &__row {
             display: table-row;
@@ -125,7 +234,7 @@
         &__quote {
             display: inline-block;
             width: 60%;
-            font-size: 26px;
+            font-size: 28px;
             font-weight: bold;
             text-align: left;
             vertical-align: top;
@@ -135,8 +244,9 @@
             line-height: 1.2;
 
             &--quotee {
+                font-size: 18px;
                 font-weight: normal;
-                margin-top: 30px;
+                margin-top: 10px;
             }
         }
     }
@@ -225,73 +335,6 @@
     }
 }
 
-.my-story {
-
-    padding-top: 70px;
-    padding-bottom: 70px;
-    box-sizing: border-box;
-    display: table;
-    width: 100%;
-    
-    &__left {
-        
-        display: table-cell;
-        vertical-align: top;
-        width: 370px;
-        min-width: 370px;
-        height: 240px;
-        
-        &__video {
-            margin-left: 20px;
-            width: 370px;
-            min-width: 370px;
-            height: 240px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
-
-            &__overlay {
-                background-color: $pink-90;
-                height: 60px;
-                width: 80px;
-                transform: rotate(3deg);
-                position: relative;
-                top: 80px;
-                left: -5px;
-            
-                div {
-                    transform: rotate(-3deg);
-                    margin-top: 16px;
-                    margin-left: 5px; 
-                }
-            }
-        }
-    }
-
-    &__right {
-        display: table-cell;
-        vertical-align: top;
-        min-height: 240px;
-        text-align: left;
-
-        &__header {
-            position: relative;
-            left: -10px;
-        }
-
-        p {
-            margin-left: 20px;
-            margin-right: 20px;
-
-            a {
-                text-decoration: none;
-                font-weight: bold;
-            }
-        }
-    }
-}
-
 .find-an-event {
 
     padding-top: 70px;
@@ -336,67 +379,17 @@
 
         &__header {
             position: relative;
-            left: -10px;
+            left: -20px;
 
-            .strapline {
+            .strapline-image {
                 background-color: $blue;
             }
         }
 
         p {
+            margin-top: 0px;
             margin-left: 20px;
             margin-right: 20px;
-
-            a {
-                text-decoration: none;
-                font-weight: bold;
-            }
-        }
-    }
-}
-
-.pic-links {
-
-    white-space: nowrap;
-    
-    &__pic {
-        display: inline-block;
-        box-sizing: border-box;
-        width: 50%;
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        vertical-align: top;
-
-        &__mask {
-            display: inline-block;
-            background-color: $white;
-            width: 26px;
-            height: 110%;
-            vertical-align: top;
-            transform: rotate(3deg);
-            position: relative;
-            top: -10px;
-            left: -16px;
-        }
-
-        &__salaries {
-            display: inline-block;
-            vertical-align: top;
-            position: relative;
-            left: -30px;
-        }
-
-        .call-to-action-button {
-            background-color: $white;
-            color: $black;
-            margin-top: 300px;
-            display: inline-block;
-
-            .fa-chevron-right {
-                color: $black;
-            }
         }
     }
 }
@@ -423,14 +416,13 @@
 
 }
 
-/* mobile css */
 @media only screen and (max-width: 800px) {
 
     .home-hero{
-        height:300px;
+        height:470px;
 
         &__banner {
-            margin-top:110px;
+            margin-top:280px;
             width: 310px;
             height: 160px;
             padding: 24px;
@@ -451,7 +443,7 @@
 
     .my-story {
         
-        padding-top: 100px;
+        padding-top: 70px;
         padding-bottom: 20px;
         
         &__left {
@@ -472,7 +464,7 @@
 
             &__header {
                 height: 0px;
-                top:-305px;
+                top:-290px;
 
                 .strapline {
                     font-size: 24px;
@@ -484,13 +476,13 @@
 
     .find-an-event {
         
-        padding-top: 100px;
+        padding-top: 70px;
         padding-bottom: 20px;
         
-        .find-an-event__left {
+        &__left {
             display: block;
 
-            .find-an-event__left__map {
+            &__map {
                 width: 335px;
                 height: 217px;
                 min-width: 0;
@@ -499,13 +491,13 @@
             }
         }
 
-        .find-an-event__right {
+        &__right {
             display: block;
             min-height: 0;
 
-            .find-an-event__right__header {
+            &__header {
                 height: 0px;
-                top:-305px;
+                top:-290px;
 
                 .strapline {
                     font-size: 24px;
@@ -561,7 +553,7 @@
 
     .steps {
         padding: 0;
-        padding-top: 40px;
+        padding-top: 20px;
         padding-bottom: 40px;
 
         .strapline {
@@ -572,12 +564,13 @@
         .git-link {
             padding-left: 40px;
             padding-right: 20px;
+            margin-top: 20px;
         }
 
         &__table {
             &__row {
                 &__cell {
-                    padding-left:40px;
+                    padding-left:20px;
                 }
             }
         }

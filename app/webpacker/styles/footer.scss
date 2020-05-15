@@ -7,7 +7,6 @@ footer {
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 30px;
-        border-bottom: 1px solid $grey;
         box-sizing: border-box;
         display: table;
         
@@ -15,19 +14,24 @@ footer {
             text-decoration: none;
         }
 
+
         &__links-container {
             display: table-cell;
             text-align: right;
             vertical-align: top;
-            color: $grey;
+            color: $grey-mid;
             font-size: 16px;
             letter-spacing: 0px;
 
             a {
-                color: $grey;
+                color: $grey-mid;
                 margin-left: 5px;
                 margin-right: 5px;
                 text-decoration: underline;
+            }
+
+            a:hover {
+                text-decoration: none;
             }
         }
     }
@@ -58,16 +62,20 @@ footer {
             display: table-cell;
             text-align: right;
             vertical-align: top;
-            color: $grey;
+            color: $grey-mid;
             font-size: 16px;
             letter-spacing: 0px;
             padding-left: 40px;
 
             a {
-                color: $grey;
+                color: $grey-mid;
                 margin-left: 5px;
                 margin-right: 5px;
                 text-decoration: underline;
+            }
+
+            a:hover {
+                text-decoration: none;
             }
         }
     }
@@ -78,7 +86,6 @@ footer {
     }
 }
 
-/* mobile css */
 @media only screen and (max-width: 800px) {
 
     footer {

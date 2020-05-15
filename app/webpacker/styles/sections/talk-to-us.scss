@@ -7,7 +7,7 @@
 
     &__inner {
         position: relative;
-        top: -50px;
+        top: -65px;
 
         &__label {
             margin-top: 20px;
@@ -42,9 +42,10 @@
 
     .talk-to-us {
         padding: 0;
-
+        
         &__inner {
-
+            top: -50px;
+            
             .strapline {
                 font-size: 24px;
             }

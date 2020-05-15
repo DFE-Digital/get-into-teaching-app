@@ -1,13 +1,14 @@
-@import './layout.scss';
-@import './colours.scss';
-@import './text.scss';
-@import './button.scss';
-@import 'forms.scss';
-@import './header.scss';
-@import './footer.scss';
+@import 'layout';
+@import 'colours';
+@import 'text';
+@import 'button';
+@import 'forms';
+@import 'icons';
+@import 'header';
+@import 'footer';
 
 @import './sections/hero';
 @import './sections/talk-to-us';
 
-@import './home.scss';
+@import 'home';
 @import 'events';
