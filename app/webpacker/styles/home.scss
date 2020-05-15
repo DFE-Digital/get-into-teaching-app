@@ -36,6 +36,120 @@
     }
 }
 
+.my-story {
+
+    padding-top: 70px;
+    padding-bottom: 70px;
+    box-sizing: border-box;
+    display: table;
+    width: 100%;
+    
+    &__left {
+        
+        display: table-cell;
+        vertical-align: top;
+        width: 370px;
+        min-width: 370px;
+        height: 240px;
+        
+        &__video {
+            margin-left: 20px;
+            width: 370px;
+            min-width: 370px;
+            height: 240px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+
+            &__overlay {
+                background-color: $pink-90;
+                height: 60px;
+                width: 80px;
+                transform: rotate(3deg);
+                position: relative;
+                top: 80px;
+                left: -5px;
+            
+                div {
+                    transform: rotate(-3deg);
+                    margin-top: 16px;
+                    margin-left: 5px; 
+                }
+            }
+        }
+    }
+
+    &__right {
+        display: table-cell;
+        vertical-align: top;
+        min-height: 240px;
+        text-align: left;
+
+        &__header {
+            position: relative;
+            left: -10px;
+        }
+
+        p {
+            margin-top: 0px;
+            margin-left: 20px;
+            margin-right: 20px;
+
+            a {
+                text-decoration: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.pic-links {
+
+    white-space: nowrap;
+    
+    &__pic {
+        display: inline-block;
+        box-sizing: border-box;
+        width: 50%;
+        height: 400px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        vertical-align: top;
+
+        &__mask {
+            display: inline-block;
+            background-color: $white;
+            width: 26px;
+            height: 110%;
+            vertical-align: top;
+            transform: rotate(3deg);
+            position: relative;
+            top: -10px;
+            left: -16px;
+        }
+
+        &__salaries {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            left: -30px;
+        }
+
+        .call-to-action-button {
+            background-color: $white;
+            color: $black;
+            margin-top: 300px;
+            display: inline-block;
+
+            .fa-chevron-right {
+                color: $black;
+            }
+        }
+    }
+}
+
 .steps {
     min-height: 250px;
     padding-left: 100px;
@@ -225,74 +339,6 @@
     }
 }
 
-.my-story {
-
-    padding-top: 70px;
-    padding-bottom: 70px;
-    box-sizing: border-box;
-    display: table;
-    width: 100%;
-    
-    &__left {
-        
-        display: table-cell;
-        vertical-align: top;
-        width: 370px;
-        min-width: 370px;
-        height: 240px;
-        
-        &__video {
-            margin-left: 20px;
-            width: 370px;
-            min-width: 370px;
-            height: 240px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            overflow: hidden;
-
-            &__overlay {
-                background-color: $pink-90;
-                height: 60px;
-                width: 80px;
-                transform: rotate(3deg);
-                position: relative;
-                top: 80px;
-                left: -5px;
-            
-                div {
-                    transform: rotate(-3deg);
-                    margin-top: 16px;
-                    margin-left: 5px; 
-                }
-            }
-        }
-    }
-
-    &__right {
-        display: table-cell;
-        vertical-align: top;
-        min-height: 240px;
-        text-align: left;
-
-        &__header {
-            position: relative;
-            left: -10px;
-        }
-
-        p {
-            margin-top: 0px;
-            margin-left: 20px;
-            margin-right: 20px;
-
-            a {
-                text-decoration: none;
-                font-weight: bold;
-            }
-        }
-    }
-}
-
 .find-an-event {
 
     padding-top: 70px;
@@ -339,64 +385,19 @@
             position: relative;
             left: -10px;
 
-            .strapline {
+            .strapline-image {
                 background-color: $blue;
             }
         }
 
         p {
+            margin-top: 0px;
             margin-left: 20px;
             margin-right: 20px;
 
             a {
                 text-decoration: none;
                 font-weight: bold;
-            }
-        }
-    }
-}
-
-.pic-links {
-
-    white-space: nowrap;
-    
-    &__pic {
-        display: inline-block;
-        box-sizing: border-box;
-        width: 50%;
-        height: 400px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        vertical-align: top;
-
-        &__mask {
-            display: inline-block;
-            background-color: $white;
-            width: 26px;
-            height: 110%;
-            vertical-align: top;
-            transform: rotate(3deg);
-            position: relative;
-            top: -10px;
-            left: -16px;
-        }
-
-        &__salaries {
-            display: inline-block;
-            vertical-align: top;
-            position: relative;
-            left: -30px;
-        }
-
-        .call-to-action-button {
-            background-color: $white;
-            color: $black;
-            margin-top: 300px;
-            display: inline-block;
-
-            .fa-chevron-right {
-                color: $black;
             }
         }
     }
@@ -424,7 +425,6 @@
 
 }
 
-/* mobile css */
 @media only screen and (max-width: 800px) {
 
     .home-hero{
