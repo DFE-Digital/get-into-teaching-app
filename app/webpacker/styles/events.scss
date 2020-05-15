@@ -2,10 +2,11 @@
 
     text-align: left;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 
     &__header {
-        margin-top: 40px;
+        margin-top: 30px;
+        margin-bottom: 0px;
         background-color: $blue;
     }
 
@@ -22,7 +23,7 @@
             float: right;
             margin-top: 40px;
             margin-right:40px;
-            width: calc(100% - 450px);
+            width: calc(100% - 340px);
         }
 
         &__nested {
