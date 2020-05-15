@@ -464,7 +464,7 @@
 
             &__header {
                 height: 0px;
-                top:-305px;
+                top:-290px;
 
                 .strapline {
                     font-size: 24px;
@@ -476,13 +476,13 @@
 
     .find-an-event {
         
-        padding-top: 100px;
+        padding-top: 70px;
         padding-bottom: 20px;
         
-        .find-an-event__left {
+        &__left {
             display: block;
 
-            .find-an-event__left__map {
+            &__map {
                 width: 335px;
                 height: 217px;
                 min-width: 0;
@@ -491,13 +491,13 @@
             }
         }
 
-        .find-an-event__right {
+        &__right {
             display: block;
             min-height: 0;
 
-            .find-an-event__right__header {
+            &__header {
                 height: 0px;
-                top:-305px;
+                top:-290px;
 
                 .strapline {
                     font-size: 24px;
@@ -553,7 +553,7 @@
 
     .steps {
         padding: 0;
-        padding-top: 40px;
+        padding-top: 20px;
         padding-bottom: 40px;
 
         .strapline {
@@ -564,6 +564,7 @@
         .git-link {
             padding-left: 40px;
             padding-right: 20px;
+            margin-top: 20px;
         }
 
         &__table {
