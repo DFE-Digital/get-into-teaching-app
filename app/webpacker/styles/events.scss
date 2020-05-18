@@ -28,6 +28,7 @@
 
         &__nested {
             padding-left:20px;
+            padding-right: 20px;;
 
             ul {
                 list-style-type: square;
@@ -51,9 +52,17 @@
 
     &__left {
         background-color: $yellow;
-        text-align: center;
+        text-align: left;
         vertical-align: top;
         padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &__graphic__container {
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
         &__graphic {
             display: inline-block;
@@ -73,12 +82,11 @@
 
         &__quote {
             display: inline-block;
-            width: 80%;
             font-size: 26px;
             font-weight: bold;
             text-align: left;
             vertical-align: top;
-            margin-top: 40px;
+            margin-top: 30px;
             margin-left: 20px;
             letter-spacing: 0px;
             line-height: 1.2;
