@@ -1,5 +1,5 @@
 module GetIntoTeachingApi
-  class Client
+  class Base
     MAX_RETRIES = 2
     TIMEOUT_SECS = 10
     RETRY_EXCEPTIONS = [::Faraday::ConnectionFailed].freeze
