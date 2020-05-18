@@ -71,18 +71,23 @@ describe GetIntoTeachingApi::UpcomingEvents do
 
     context "event details" do
       subject { client.events.first }
+      it { is_expected.to be_kind_of GetIntoTeachingApi::Types::Event }
       it { is_expected.to have_attributes eventId: event_id }
       it { is_expected.to have_attributes eventName: "Become a teacher" }
+      it { is_expected.to have_attributes startDate: Date.parse("2020-05-18") }
+      it { is_expected.to have_attributes endDate: Date.parse("2020-05-18") }
     end
 
     context "event building" do
       subject { client.events.first.building }
+      it { is_expected.to be_kind_of GetIntoTeachingApi::Types::EventBuilding }
       it { is_expected.to have_attributes id: building_id }
       it { is_expected.to have_attributes addressComposite: "Line 1, Line 2"}
     end
 
     context "event room" do
       subject { client.events.first.room }
+      it { is_expected.to be_kind_of GetIntoTeachingApi::Types::EventRoom }
       it { is_expected.to have_attributes id: room_id }
       it { is_expected.to have_attributes description: "Lecture Hall 1" }
     end

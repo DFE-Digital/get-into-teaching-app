@@ -6,9 +6,7 @@ module GetIntoTeachingApi
 
     def events
       data.map do |event_data|
-        building = OpenStruct.new(event_data["building"])
-        room = OpenStruct.new(event_data["room"])
-        OpenStruct.new event_data.merge("building" => building, "room" => room)
+        Types::Event.new event_data
       end
     end
   end
