@@ -178,7 +178,7 @@
         padding: 20px;
         display: inline-block;
         border: 2px solid $black;
-        height: 420px;
+        height: 440px;
         width: 290px;
         overflow: hidden;
         margin: 18px;
@@ -213,9 +213,17 @@
         }
 
         &__content {
+            
+            &__icon {
+                vertical-align: middle;
+                margin-right: 2px;
+            }
+
             h3 {
                 margin: 0;
                 margin-top: 12px;
+
+                
             }
             p {
                 margin: 0;

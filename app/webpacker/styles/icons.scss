@@ -5,6 +5,34 @@
     background-size: contain;
 }
 
+.icon-close {
+    @include icon;
+    background-image: url('../images/icon-hamburger-close.svg');
+    width: 23px;
+    height: 23px;
+}
+
+.icon-hamburger {
+    @include icon;
+    background-image: url('../images/icon-hamburger.svg');
+    width: 30px;
+    height: 20px;
+}
+
+.icon-online {
+    @include icon;
+    background-image: url('../images/icon-online.svg');
+    width: 27px;
+    height: 20px;
+}
+
+.icon-pin {
+    @include icon;
+    background-image: url('../images/icon-location-small.svg');
+    width: 25px;
+    height: 30px;
+}
+
 .icon-pin-large {
     @include icon;
     background-image: url('../images/location-icon.svg');
@@ -19,23 +47,16 @@
     height: 24px;
 }
 
+.icon-train-to-teach {
+    @include icon;
+    background-image: url('../images/icon-ttt.svg');
+    width: 34px;
+    height: 34px;
+}
+
 .icon-quote {
     @include icon;
     background-image: url('../images/quote-icon.svg');
     width: 24px;
     height: 24px;
-}
-
-.icon-hamburger {
-    @include icon;
-    background-image: url('../images/icon-hamburger.svg');
-    width: 30px;
-    height: 20px;
-}
-
-.icon-close {
-    @include icon;
-    background-image: url('../images/icon-hamburger-close.svg');
-    width: 23px;
-    height: 23px;
 }
