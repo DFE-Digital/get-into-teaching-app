@@ -10,10 +10,11 @@ module GetIntoTeachingApi
         ::Faraday::Request::Retry::DEFAULT_EXCEPTIONS + RETRY_EXCEPTIONS
     }.freeze
 
-    def initialize(token:, host:, basepath: nil)
+    def initialize(token:, endpoint:)
       @token = token.presence || raise(MissingApiToken)
-      @host = host.presence || raise(MissingHost)
-      @basepath = basepath.presence
+
+      raise MissingHost if endpoint.blank?
+      @baseuri = URI.parse(endpoint)
     end
 
     class MissingApiToken < RuntimeError; end
@@ -22,9 +23,9 @@ module GetIntoTeachingApi
   private
 
     def endpoint
-      URI::HTTPS.build \
-        host: @host,
-        path: [@basepath, '/', path].compact.join
+      @baseuri.dup.tap do |uri|
+        uri.path = [uri.path, path].join('/')
+      end
     end
 
     def faraday

@@ -2,10 +2,10 @@ require 'rails_helper'
 
 describe GetIntoTeachingApi::Base do
   let(:apitoken) { "123456" }
-  let(:apihost) { "test.api" }
+  let(:apihost) { "https://test.api" }
   let(:testdata) { %w(James Jennie John) }
-  let(:client) { TestEndpoint.new(token: apitoken, host: apihost) }
-  let(:endpoint) { "https://#{apihost}/test/path" }
+  let(:client) { TestEndpoint.new(token: apitoken, endpoint: apihost) }
+  let(:endpoint) { "#{apihost}/test/path" }
   let(:response_headers) { { "Content-Type" => "application/json" } }
 
   class TestEndpoint < GetIntoTeachingApi::Base
