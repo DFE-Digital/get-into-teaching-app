@@ -25,3 +25,17 @@
     width: 24px;
     height: 24px;
 }
+
+.icon-hamburger {
+    @include icon;
+    background-image: url('../images/icon-hamburger.svg');
+    width: 30px;
+    height: 20px;
+}
+
+.icon-close {
+    @include icon;
+    background-image: url('../images/icon-hamburger-close.svg');
+    width: 23px;
+    height: 23px;
+}
