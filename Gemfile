@@ -61,6 +61,7 @@ group :development do
 end
 
 group :test do
+  gem "rails-controller-testing"
   gem "webdrivers", "~> 4.3"
   gem "webmock"
 end
