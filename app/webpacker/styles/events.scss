@@ -2,11 +2,12 @@
 
     text-align: left;
     padding-top: 20px;
-    padding-bottom: 30px;
+    padding-bottom: 10px;
 
     &__header {
-        margin-top: 40px;
-        background-color: $blue;
+        margin-top: 30px;
+        margin-bottom: 0px;
+        margin-left:20px;
     }
 
     &__content {
@@ -22,11 +23,12 @@
             float: right;
             margin-top: 40px;
             margin-right:40px;
-            width: calc(100% - 450px);
+            width: calc(100% - 340px);
         }
 
         &__nested {
             padding-left:20px;
+            padding-right: 20px;;
 
             ul {
                 list-style-type: square;
@@ -50,9 +52,17 @@
 
     &__left {
         background-color: $yellow;
-        text-align: center;
+        text-align: left;
         vertical-align: top;
         padding-bottom: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+
+        &__graphic__container {
+            text-align: left;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
         &__graphic {
             display: inline-block;
@@ -72,12 +82,11 @@
 
         &__quote {
             display: inline-block;
-            width: 80%;
             font-size: 26px;
             font-weight: bold;
             text-align: left;
             vertical-align: top;
-            margin-top: 40px;
+            margin-top: 30px;
             margin-left: 20px;
             letter-spacing: 0px;
             line-height: 1.2;
@@ -168,8 +177,6 @@
 
 .search-for-events-results {
     padding-top:60px;
-    padding-left: 60px;
-    padding-right: 60px;
     padding-bottom: 80px;
 
     &__resultbox {
@@ -177,7 +184,7 @@
         padding: 20px;
         display: inline-block;
         border: 2px solid $black;
-        height: 420px;
+        height: 440px;
         width: 290px;
         overflow: hidden;
         margin: 18px;
@@ -212,9 +219,17 @@
         }
 
         &__content {
+            
+            &__icon {
+                vertical-align: middle;
+                margin-right: 2px;
+            }
+
             h3 {
                 margin: 0;
                 margin-top: 12px;
+
+                
             }
             p {
                 margin: 0;
