@@ -5,11 +5,7 @@ class PagesController < ApplicationController
   def events
     render template: "pages/events"
   end
-
-  def content
-    render template: "pages/content"
-  end
-
+  
   def show
     render template: "content/#{params[:page]}", layout: 'layouts/content'
   end
