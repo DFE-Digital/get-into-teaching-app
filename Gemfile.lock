@@ -94,9 +94,16 @@ GEM
     foreman (0.87.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    govspeak (3.5.0)
+      htmlentities (~> 4)
+      kramdown (~> 1.5.0)
+      nokogiri (~> 1.5)
+      sanitize (~> 2.1.0)
+    htmlentities (4.3.4)
     i18n (1.8.2)
       concurrent-ruby (~> 1.0)
     jaro_winkler (1.5.4)
+    kramdown (1.5.0)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -164,7 +171,6 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
-    redcarpet (3.4.0)
     regexp_parser (1.7.0)
     rexml (3.2.4)
     rspec-core (3.9.1)
@@ -207,6 +213,8 @@ GEM
       rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)
     rubyzip (2.3.0)
+    sanitize (2.1.1)
+      nokogiri (>= 1.4.4)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
@@ -268,11 +276,11 @@ DEPENDENCIES
   dotenv-rails
   foreman
   front_matter_parser!
+  govspeak
   listen (>= 3.0.5, < 3.3)
   pry-byebug
   puma (~> 4.3)
   rails (~> 6.0.2)
-  redcarpet
   rspec-rails (~> 4.0.0)
   rubocop-govuk
   scss_lint-govuk
