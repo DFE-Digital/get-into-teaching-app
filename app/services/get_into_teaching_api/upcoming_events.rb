@@ -4,7 +4,7 @@ module GetIntoTeachingApi
       "teaching_events/upcoming"
     end
 
-    def events
+    def call
       data.map do |event_data|
         Types::Event.new event_data
       end
