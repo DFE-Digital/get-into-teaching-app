@@ -29,3 +29,6 @@ yarn-debug.log*
 
 # Ignore git repo
 .git
+
+# Ignore apistubs - intended only for local development
+*apistubs*
