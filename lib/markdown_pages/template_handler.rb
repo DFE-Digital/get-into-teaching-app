@@ -2,6 +2,8 @@ module MarkdownPages
   class TemplateHandler
     attr_reader :template, :source, :options
 
+    DEFAULTS = {}.freeze
+
     def self.call(template, source = nil)
       new(template, source).call
     end
@@ -10,17 +12,7 @@ module MarkdownPages
       @template = template
       @source = source.to_s
 
-      @options = options.reverse_merge(
-        no_intra_emphasis:            true,
-        fenced_code_blocks:           true,
-        space_after_headers:          true,
-        smartypants:                  true,
-        disable_indented_code_blocks: true,
-        prettify:                     true,
-        tables:                       true,
-        with_toc_data:                true,
-        autolink:                     true,
-      )
+      @options = DEFAULTS.merge(options)
     end
 
     def call
@@ -30,12 +22,16 @@ module MarkdownPages
 
   private
 
-    def renderer
-      Redcarpet::Render::HTML.new(filter_html: false, hard_wrap: true)
+    def render_markdown
+      Govspeak::Document.new(markdown).to_html
+    end
+
+    def autolink_html(content)
+      Rinku.auto_link content
     end
 
     def render
-      Redcarpet::Markdown.new(renderer, options).render(markdown)
+      autolink_html render_markdown
     end
 
     def markdown
