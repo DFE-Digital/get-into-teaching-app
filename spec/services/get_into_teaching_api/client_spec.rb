@@ -6,11 +6,6 @@ describe GetIntoTeachingApi::Client do
     let(:upcoming) { double apiclass, call: [] }
 
     before do
-      allow(Rails.application.credentials).to \
-        receive(:api_token).and_return("test")
-      allow(Rails.application.config.x.api).to \
-        receive(:endpoint).and_return("http://test.api/")
-
       allow(apiclass).to receive(:new).and_return(upcoming)
     end
 
@@ -18,7 +13,7 @@ describe GetIntoTeachingApi::Client do
 
     it "should instantiate an api call object" do
       expect(apiclass).to have_received(:new).
-        with(token: "test", endpoint: "http://test.api/")
+        with(token: ENV["GIT_API_TOKEN"], endpoint: ENV["GIT_API_ENDPOINT"])
     end
 
     it "should call #call on instantiated class" do

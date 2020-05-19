@@ -1,3 +1,5 @@
 class EventsController < ApplicationController
-  def index; end
+  def index
+    @events = GetIntoTeachingApi::Client.upcoming_events
+  end
 end
