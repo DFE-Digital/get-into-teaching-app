@@ -22,8 +22,16 @@ module MarkdownPages
 
   private
 
-    def render
+    def render_markdown
       Govspeak::Document.new(markdown).to_html
+    end
+
+    def autolink_html(content)
+      Rinku.auto_link content
+    end
+
+    def render
+      autolink_html render_markdown
     end
 
     def markdown

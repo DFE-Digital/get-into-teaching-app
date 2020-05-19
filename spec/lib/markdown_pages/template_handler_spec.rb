@@ -27,7 +27,6 @@ describe MarkdownPages::TemplateHandler, type: :view do
     it { is_expected.to have_css('a[href="https://www.gov.uk"]', text: "link") }
 
     it "will autolink urls" do
-    debugger
       is_expected.to have_css \
         'a[href="https://www.gov.uk/autolink"]',
         text: "https://www.gov.uk/autolink"

@@ -26,6 +26,7 @@ gem "canonical-rails"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "govspeak"
+gem "rinku"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
