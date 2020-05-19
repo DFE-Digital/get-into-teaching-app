@@ -19,7 +19,7 @@
 
         <%= render "layouts/header" %>
         <%= render "sections/hero",  :header => @front_matter["title"], :image => @front_matter["image"] %>
-        <section class='content'>
+        <section class='content container-1000'>
             <p>
                 <%= yield %>
             </p>
