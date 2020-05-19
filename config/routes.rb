@@ -7,5 +7,6 @@ Rails.application.routes.draw do
 
   get "/events", to: "pages#events", via: :all
 
+  #get "*page", to: "pages#content", as: :page
   get "*page", to: "pages#show", as: :page
 end
