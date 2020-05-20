@@ -10,8 +10,6 @@
         <p>
             <%= description %>
         </p>
-
-        
         <div style="<%=  traintoteach ? '' : 'display:none'%>"><h3><div class="event-resultbox__content__icon icon-train-to-teach " ></div> Train to teach event</h3></div>
         <div style="<%=  online ? '' : 'display:none'%>"><h3><div class='event-resultbox__content__icon icon-online'></div> Online event</h3></div>
         <div style="<%=  (defined? location) ? '' : 'display:none'%>"><h3><div class='event-resultbox__content__icon icon-pin'></div> <%= (defined? location) ? location : '' %></h3></div>
