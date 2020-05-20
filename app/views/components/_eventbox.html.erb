@@ -5,7 +5,7 @@
     <div class="event-resultbox__datetime">
         <%= datetime %>
     </div>
-    <div class="event-resultbox__greenstripe"></div>
+    <div class="<%=  traintoteach ? 'event-resultbox__greenstripe' : 'event-resultbox__bluestripe' %>"></div>
     <div class="event-resultbox__content">
         <p>
             <%= description %>

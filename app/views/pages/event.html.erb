@@ -1,7 +1,14 @@
 <%= render "sections/hero",  :header => "Aspire - School Direct Information morning and application advice", :image => "media/images/hero-events.png" %>
 
 <section class="event-info container-1000">
-    event info
+    <%= render "components/eventbox", 
+        :title => "Train to teach Coventry Online event",
+        :datetime => "11 May 2020 at 17:00 - 18:30",
+        :description => "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
+        :traintoteach => false,
+        :online => true,
+        :location => "Coventry"
+    %>
 </section>
 
 <%= render "sections/talk-to-us" %>

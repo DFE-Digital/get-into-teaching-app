@@ -112,7 +112,8 @@
         :title => "Secondary School teaching",
         :datetime => "11 May 2020 at 17:00 - 18:30",
         :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
-        :traintoteach => true,
+        :schooloruni => false,
+        :traintoteach => false,
         :online => true
     %>
 
@@ -120,7 +121,8 @@
         :title => "Train to teach Coventry Online event",
         :datetime => "11 May 2020 at 17:00 - 18:30",
         :description => "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
-        :traintoteach => false,
+        :schooloruni => false,
+        :traintoteach => true,
         :online => true,
         :location => "Coventry"
     %>
@@ -129,8 +131,38 @@
         :title => "Heart TSA - Zoom train to teach information event",
         :datetime => "11 May 2020 at 17:00 - 18:30",
         :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
-        :traintoteach => true,
+        :schooloruni => true,
+        :traintoteach => false,
         :online => true
+    %>
+
+    <%= render "components/eventbox", 
+        :title => "Train to teach Bournmouth Online event",
+        :datetime => "11 May 2020 at 17:00 - 18:30",
+        :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
+        :schooloruni => false,
+        :traintoteach => true,
+        :online => true,
+        :location => "Bournemouth"
+    %>
+
+    <%= render "components/eventbox", 
+        :title => "Primary School teaching",
+        :datetime => "11 May 2020 at 17:00 - 18:30",
+        :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
+        :schooloruni => false,
+        :traintoteach => false,
+        :online => true
+    %>
+
+    <%= render "components/eventbox", 
+        :title => "Train to teach Bristol Online event",
+        :datetime => "11 May 2020 at 17:00 - 18:30",
+        :description => "This online event specifically for anybody looking to train to teach in Bristol will give you the opportunity to ask our experts questions about teacher training.",
+        :schooloruni => false,
+        :traintoteach => true,
+        :online => true,
+        :location => "Bristol"
     %>
 
 </section>
