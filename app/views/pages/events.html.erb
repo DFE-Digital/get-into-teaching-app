@@ -1,4 +1,7 @@
-<%= render "sections/hero",  :header => "Find an event near you", :image => "media/images/hero-events.png" %>
+<%= render "sections/hero",  
+    :header => "Find an event near you", 
+    :image => "media/images/hero-events.png" 
+%>
 
 <section class="types-of-event container-1000"> 
     <div class="types-of-event__content">
@@ -105,7 +108,14 @@
 
 <section class="search-for-events-results container-1000">
 
-    <%= render "components/eventbox" %>
+    <%= render "components/eventbox", 
+        :title => "Secondary School teaching",
+        :datetime => "11 May 2020 at 17:00 - 18:30",
+        :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
+        :traintoteach => true,
+        :online => true,
+        :location => "Coventry"
+    %>
 
     <div class="search-for-events-results__resultbox">
         <div class="search-for-events-results__resultbox__header">
