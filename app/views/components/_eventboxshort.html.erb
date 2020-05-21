@@ -4,8 +4,8 @@
     </div>
     <div class="<%=  traintoteach ? 'event-resultboxshort__greenstripe' : 'event-resultboxshort__bluestripe' %>"></div>
     <div class="event-resultboxshort__content">
-        <div style="<%=  traintoteach ? '' : 'display:none'%>"><h3><div class="event-resultboxshort__content__icon icon-train-to-teach " ></div> Train to teach event</h3></div>
-        <div style="<%=  online ? '' : 'display:none'%>"><h3><div class='event-resultboxshort__content__icon icon-online'></div> Online event</h3></div>
-        <div style="<%=  (defined? location) ? '' : 'display:none'%>"><h3><div class='event-resultboxshort__content__icon icon-pin'></div> <%= (defined? location) ? location : '' %></h3></div>
+        <div style="<%= 'display:none' unless traintoteach %>"><h3><div class="event-resultboxshort__content__icon icon-train-to-teach " ></div> Train to teach event</h3></div>
+        <div style="<%= 'display:none' unless online %>"><h3><div class='event-resultboxshort__content__icon icon-online'></div> Online event</h3></div>
+        <div style="<%= 'display:none' unless (defined? location)%>"><h3><div class='event-resultboxshort__content__icon icon-pin'></div> <%= location if defined?(location) %></h3></div>
     </div>
 </div>
