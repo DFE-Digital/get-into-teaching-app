@@ -1,0 +1,15 @@
+<div class="event-resultbox">
+    <div class="event-resultbox__header">
+        <h2><%= title %></h2>
+    </div>
+    <div class="event-resultbox__datetime">
+        <%= datetime %>
+    </div>
+    <div class="<%=  traintoteach ? 'event-resultbox__greenstripe' : 'event-resultbox__bluestripe' %>"></div>
+    <div class="event-resultbox__content">
+        <p><%= description %></p>
+        <div style="<%= 'display:none' unless traintoteach %>"><h3><div class="event-resultbox__content__icon icon-train-to-teach " ></div> Train to teach event</h3></div>
+        <div style="<%= 'display:none' unless online %>"><h3><div class='event-resultbox__content__icon icon-online'></div> Online event</h3></div>
+        <div style="<%= 'display:none' unless (defined? location)%>"><h3><div class='event-resultbox__content__icon icon-pin'></div><%= location if defined?(location) %></h3></div>
+    </div>
+</div>

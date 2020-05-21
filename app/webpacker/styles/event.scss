@@ -1,0 +1,46 @@
+.event-info {
+
+    min-height: 250px;
+    text-align: left;
+    padding-top:20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 100px;
+    overflow: hidden; 
+    height:auto;
+
+    &__eventbox {
+        float:left;
+        width: 330px;
+        text-align: left;
+    }
+
+    &__detail {
+        float:right;
+        text-align: left;
+        width: calc(100% - 360px);
+        padding-top: 20px;
+
+        h1 {
+            margin: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .event-info {
+        
+        &__eventbox {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        &__detail {
+            display: block;
+            width: 100%;
+        }
+    
+    }
+}
