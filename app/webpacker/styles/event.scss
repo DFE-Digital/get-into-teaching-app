@@ -10,13 +10,13 @@
     height:auto;
 
     &__eventbox {
-        float:left;
+        float:right;
         width: 330px;
         text-align: left;
     }
 
     &__detail {
-        float:right;
+        float:left;
         text-align: left;
         width: calc(100% - 360px);
         padding-top: 20px;
