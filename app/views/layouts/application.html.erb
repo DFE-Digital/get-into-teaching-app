@@ -2,6 +2,16 @@
 <html lang="en">
 
   <head>
+  <% if Rails.env.production? %>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159214613-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-159214613-2');
+    </script>
+  <% end %>
     <meta charset="utf-8">
     <title><%= prefixed_page_title %></title>
     <%= csrf_meta_tags %>
@@ -11,6 +21,7 @@
     <%= tag :link, rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' %>
     <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    <%= javascript_pack_tag 'google_analytics' %>
   </head>
 
   <body>
