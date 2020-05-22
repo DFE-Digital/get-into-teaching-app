@@ -13,7 +13,7 @@
     </script>
   <% end %>
     <meta charset="utf-8">
-    <title><%= prefixed_page_title %></title>
+    <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
     <%= canonical_tag %>
@@ -35,6 +35,6 @@
       <%= render "layouts/footer" %>
 
     </div>
-  
+
   </body>
 </html>

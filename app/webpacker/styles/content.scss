@@ -1,0 +1,68 @@
+.content {
+    min-height: 250px;
+    padding: 40px;
+    text-align: left;
+
+    .jumbotron {
+        font-size: 18px;
+        color: $black;
+        font-weight: bold;
+        line-height: 1.6;
+    }
+
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+        border-bottom: 8px solid $blue;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 28px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+        font-weight: bold;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        margin-top: 20px;
+    }
+
+    p {
+        line-height: 1;
+    }
+
+    ul {
+        list-style-type: square;
+    }
+
+    li {
+        font-size: 19px;
+        line-height: 1.6;
+    }
+
+    a {
+        font-weight: bold;
+        font-size: 19px;
+        color: $black;
+        text-decoration: none;
+        display: inline-block;
+        
+        
+    }
+    
+    a:hover {
+        text-decoration: underline;
+    }
+
+}

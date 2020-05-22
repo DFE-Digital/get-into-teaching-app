@@ -1,51 +1,51 @@
 <nav class="navbar">
-    <div class="navbar-right">
+    <div class="navbar__desktop">
         <div>
             <ul>
-                <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/steps-to-become-a-teacher/">Steps to become a teacher</a></li>
-                <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/funding-your-training/">Funding your training</a></li>
+                <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
+                <li><a href="/funding-your-training/index">Funding your training</a></li>
                 <li><a href="/">Home</a></li>
             </ul>
         </div>
         <div>
             <ul>
                 <li><a href="/">Talk to us</a></li>
-                <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/find-an-event-near-you/">Find an event near you</a></li>
-                <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/life-as-a-teacher/teachers-salaries-and-benefits/">Salaries and Benefits</a></li>
-                <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/life-as-a-teacher/">Teaching as a career</a></li>
+                <li><a href="/events">Find an event near you</a></li>
+                <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
+                <li><a href="/life-as-a-teacher/index">Teaching as a career</a></li>
             </ul>
         </div>
     </div>
-    <div class="navbar-mobile-right">
+    <div class="navbar__mobile">
         <a href="javascript:void(0);" class="icon" onclick="navToggle()">
-            <span class="navbar-hamburger">
-                <i id="navbar-hamburger-icon" class="fa fa-bars fa-2x"></i>
-            </span>
+            <div id='hamburger' class="icon-hamburger"></div>
         </a>
-        <div id="navbar-mobile-links" class="navbar-mobile-links">
-            <li><a href="/">Home</a></li>
-            <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/steps-to-become-a-teacher/">Steps to become a teacher</a></li>
-            <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/funding-your-training/">Funding your training</a></li>
-            <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/life-as-a-teacher/">Teaching as a career</a></li>
-            <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/life-as-a-teacher/teachers-salaries-and-benefits/">Salaries and Benefits</a></li>
-            <li><a href="https://dfe-digital.github.io/get-into-teaching-prototype/find-an-event-near-you/">Find an event near you</a></li>
-            <li><a href="/">Talk to us</a></li>
+        <div id="navbar-mobile-links" class="navbar__mobile__links">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
+                <li><a href="/funding-your-training/index">Funding your training</a></li>
+                <li><a href="/life-as-a-teacher/index">Teaching as a career</a></li>
+                <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
+                <li><a href="/events">Find an event near you</a></li>
+                <li><a href="/">Talk to us</a></li>
+            </ul>
         </div>
     </div>
-    <div class="navbar-mobile-right navbar-mobile-right-label">
+    <div class="navbar__mobile navbar__mobile__container">
         <a href="javascript:void(0);" class="icon" onclick="navToggle()">
-            <span id="navbar-label" class="navbar-label">
+            <span id="navbar-label" class="navbar__mobile__label">
                 Menu
             </span>
         </a>
     </div>
 </nav>
 
-<div class="logo-container">
+<div class="logo">
     <a href="/">
-        <div class="logo">
+        <div class="logo__image">
             <img src="<%= asset_pack_path 'media/images/getintoteachinglogo.svg' %>" />
-            <div class="tagline">Every Lesson shapes a life.</div>
+            <div class="logo__image__tagline">Every Lesson shapes a life.</div>
         </div>
     </a>
 </div>
@@ -53,15 +53,15 @@
 <script>
     function navToggle() {
         var links = document.getElementById("navbar-mobile-links");
-        var icon = document.getElementById("navbar-hamburger-icon");
+        var icon = document.getElementById("hamburger");
         var label = document.getElementById("navbar-label");
         if (links.style.display === "block") {
             links.style.display = "none";
-            icon.className = 'fa fa-bars fa-2x';
+            icon.className = 'icon-hamburger';
             label.innerHTML = "Menu";
         } else {
             links.style.display = "block";
-            icon.className = 'fa fa-times fa-2x';
+            icon.className = 'icon-close';
             label.innerHTML = "Close";
         }
     }

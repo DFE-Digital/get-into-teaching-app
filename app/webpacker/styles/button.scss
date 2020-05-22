@@ -1,0 +1,27 @@
+@mixin button {
+    color: $white;
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 20px;
+
+    i {
+        color: $white;
+        margin-left: 10px;
+        position: relative;
+        top: 1px;
+    }
+}
+
+.call-to-action-button {
+    @include button;
+    background-color: $green;
+}
+
+.request-button {
+    @include button;
+    background-color: $pink;
+}
