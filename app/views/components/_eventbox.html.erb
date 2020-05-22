@@ -9,7 +9,8 @@
     <div class="event-resultbox__content">
         <p><%= description %></p>
         <div style="<%= 'display:none' unless traintoteach %>"><h3><div class="event-resultbox__content__icon icon-train-to-teach " ></div> Train to teach event</h3></div>
+        <div style="<%= 'display:none' unless schooloruni %>"><h3><div class='event-resultbox__content__icon icon-school'></div> School or uni event</h3></div>
         <div style="<%= 'display:none' unless online %>"><h3><div class='event-resultbox__content__icon icon-online'></div> Online event</h3></div>
-        <div style="<%= 'display:none' unless (defined? location)%>"><h3><div class='event-resultbox__content__icon icon-pin'></div><%= location if defined?(location) %></h3></div>
+        <div style="<%= 'display:none' unless (defined? location)%>"><h3><div class='event-resultbox__content__icon icon-pin'></div> <%= location if defined?(location) %></h3></div>
     </div>
 </div>
