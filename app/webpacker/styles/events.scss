@@ -179,6 +179,10 @@
     padding-top:60px;
     padding-bottom: 80px;
 
+    a {
+        text-decoration: none;
+    }
+
     &__resultbox {
         box-sizing: border-box;
         padding: 20px;
