@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "/500", to: "errors#internal_server_error", via: :all
   get "/events", to: "pages#events", via: :all
   get "/event", to: "pages#event", via: :all
+  get "/eventschool", to: "pages#eventschool", via: :all
 
   get "*page", to: "pages#show", as: :page
 end
