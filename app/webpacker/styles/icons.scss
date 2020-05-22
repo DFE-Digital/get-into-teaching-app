@@ -47,6 +47,13 @@
     height: 24px;
 }
 
+.icon-school {
+    @include icon;
+    background-image: url('../images/icon-school.svg');
+    width: 24px;
+    height: 24px;
+}
+
 .icon-train-to-teach {
     @include icon;
     background-image: url('../images/icon-ttt.svg');
