@@ -18,9 +18,7 @@
     </div>
     <div class="navbar__mobile">
         <a href="javascript:void(0);" class="icon" onclick="navToggle()">
-            <span class="navbar__mobile__hamburger">
-                <i id="navbar-hamburger-icon" class="fa fa-bars fa-2x"></i>
-            </span>
+            <div id='hamburger' class="icon-hamburger"></div>
         </a>
         <div id="navbar-mobile-links" class="navbar__mobile__links">
             <ul>
@@ -55,15 +53,15 @@
 <script>
     function navToggle() {
         var links = document.getElementById("navbar-mobile-links");
-        var icon = document.getElementById("navbar-hamburger-icon");
+        var icon = document.getElementById("hamburger");
         var label = document.getElementById("navbar-label");
         if (links.style.display === "block") {
             links.style.display = "none";
-            icon.className = 'fa fa-bars fa-2x';
+            icon.className = 'icon-hamburger';
             label.innerHTML = "Menu";
         } else {
             links.style.display = "block";
-            icon.className = 'fa fa-times fa-2x';
+            icon.className = 'icon-close';
             label.innerHTML = "Close";
         }
     }

@@ -1,0 +1,60 @@
+
+.event-resultboxshort {
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+    border: 2px solid $black;
+    height: 220px;
+    width: 290px;
+    overflow: hidden;
+    margin: 18px;
+    text-align: left;
+
+    &__header {
+        height: 35px;
+        width: 100%;
+        overflow: hidden;
+
+        h3 {
+            margin: 0;
+        }
+    }
+
+    &__datetime {
+        height: 20px;
+        overflow: hidden;
+        margin-top: 4px;
+    }
+
+    &__greenstripe {
+        height: 8px;
+        background-color: $green;
+        margin-bottom: 20px;
+    }
+
+    &__bluestripe {
+        height: 8px;
+        background-color: $blue;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        
+        &__icon {
+            vertical-align: middle;
+            margin-right: 2px;
+        }
+
+        h3 {
+            margin: 0;
+            margin-top: 12px;
+
+            
+        }
+        p {
+            margin: 0;
+            margin-top: 20px;
+            font-size: 17px;
+        }
+    } 
+}

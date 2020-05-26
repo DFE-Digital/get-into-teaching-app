@@ -54,8 +54,15 @@
             text-decoration: none;
         }
     
-        &__hamburger {
+        .icon-hamburger {
             color: $black;
+            margin-top: 8px;
+        }
+
+        .icon-close {
+            color: $black;
+            margin-top: 6px;
+            margin-left:5px;
         }
 
         &__links {
