@@ -8,5 +8,9 @@ Rails.application.routes.draw do
   get "/event", to: "pages#event", via: :all
   get "/eventschool", to: "pages#eventschool", via: :all
 
+  if Rails.env.development?
+    get "/apistubs/*stub", to: "apistubs#show"
+  end
+
   get "*page", to: "pages#show", as: :page
 end
