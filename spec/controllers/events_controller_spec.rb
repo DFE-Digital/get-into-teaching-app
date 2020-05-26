@@ -17,4 +17,24 @@ describe EventsController, type: :request do
     it { is_expected.to have_http_status :success }
     it { is_expected.to have_rendered "index" }
   end
+
+  describe "#search" do
+    let(:search_key) { Events::Search.model_name.param_key }
+    let(:search_path) { search_events_path(search_key: search_params) }
+    subject { get(search_path); response }
+
+    context "with valid search params" do
+      let(:search_params) { attributes_for :events_search }
+
+      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_rendered "index" }
+    end
+
+    context "with invalid search params" do
+      let(:search_params) { {} }
+
+      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_rendered "index" }
+    end
+  end
 end

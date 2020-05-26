@@ -69,4 +69,21 @@ describe Events::Search do
       it { is_expected.not_to allow_value(nil).for :month }
     end
   end
+
+  describe "#query_events" do
+    subject { build :events_search }
+    before { allow(subject).to receive(:query_events_api).and_return [] }
+    before { allow(subject).to receive(:valid?).and_return is_valid }
+    before { subject.query_events }
+
+    context "when valid" do
+      let(:is_valid) { true }
+      it { is_expected.to have_received(:query_events_api) }
+    end
+
+    context "when invalid" do
+      let(:is_valid) { false }
+      it { is_expected.not_to have_received(:query_events_api) }
+    end
+  end
 end

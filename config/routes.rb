@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   get "/eventschool", to: "pages#eventschool", via: :all, as: nil
 
   get "/apievents", to: "events#index", as: :events
+  get "/apievents/search", to: "events#search", as: :search_events
 
   if Rails.env.development?
     get "/apistubs/*stub", to: "apistubs#show"

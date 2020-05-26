@@ -19,5 +19,15 @@ module Events
     validates :month, presence: true, format: { with: MONTH_FORMAT }
 
     before_validation(unless: :distance) { self.location = nil }
+
+    def query_events
+      valid? ? query_events_api : []
+    end
+
+  private
+
+    def query_events_api
+      []
+    end
   end
 end
