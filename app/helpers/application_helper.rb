@@ -19,10 +19,9 @@ module ApplicationHelper
 
   def hero_image_path(imgpath)
     if imgpath =~ %r(^/assets/)
-        imgpath
+      imgpath
     else
-        asset_pack_path(imgpath)
+      asset_pack_path(imgpath)
     end
   end
-  
 end
