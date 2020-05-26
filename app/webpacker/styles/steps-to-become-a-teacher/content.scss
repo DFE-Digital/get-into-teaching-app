@@ -1,0 +1,32 @@
+.content {
+
+    .steps-header {
+        background-color: $yellow;
+
+        h1 {
+            padding: 25px;
+        }
+
+        i {
+            float: right;
+        }
+
+        &__number {
+            float: left;
+            background-color: $white-90;
+            width: 50px;
+            height: 50px;
+            transform: rotate(3deg);
+            text-align: center;
+            box-sizing: border-box;
+            padding-top: 12px;
+            position: relative;
+            top: -10px;
+            margin-right: 20px;
+
+            span {
+                transform: rotate(-3deg);
+            }
+        }
+    }
+}
