@@ -13,18 +13,18 @@ describe Events::Search do
   end
 
   context "attributes" do
-    it { is_expected.to respond_to :event_type }
+    it { is_expected.to respond_to :type }
     it { is_expected.to respond_to :distance }
-    it { is_expected.to respond_to :location }
+    it { is_expected.to respond_to :postcode }
     it { is_expected.to respond_to :month }
   end
 
   context "validation" do
     context "for event type" do
-      it { is_expected.to allow_value(0).for :event_type }
-      it { is_expected.to allow_value("1").for :event_type }
-      it { is_expected.not_to allow_value("2").for :event_type }
-      it { is_expected.not_to allow_value("").for :event_type }
+      it { is_expected.to allow_value(0).for :type }
+      it { is_expected.to allow_value("1").for :type }
+      it { is_expected.not_to allow_value("2").for :type }
+      it { is_expected.not_to allow_value("").for :type }
     end
 
     context "for distance" do
@@ -37,13 +37,13 @@ describe Events::Search do
       it { is_expected.not_to allow_value(1000).for :distance }
     end
 
-    context "for location" do
+    context "for postcode" do
       context "with blank distance" do
         subject { described_class.new distance: nil }
 
-        it { is_expected.to allow_value(nil).for :location }
-        it { is_expected.to allow_value("").for :location }
-        it { is_expected.to allow_value("random").for :location }
+        it { is_expected.to allow_value(nil).for :postcode }
+        it { is_expected.to allow_value("").for :postcode }
+        it { is_expected.to allow_value("random").for :postcode }
       end
 
       context "with assigned distance" do
@@ -51,10 +51,10 @@ describe Events::Search do
           described_class.new distance: described_class::DISTANCES.first
         end
 
-        it { is_expected.not_to allow_value("").for :location }
-        it { is_expected.not_to allow_value(nil).for :location }
-        it { is_expected.not_to allow_value("random").for :location }
-        it { is_expected.to allow_value("MA1 2WD").for :location }
+        it { is_expected.not_to allow_value("").for :postcode }
+        it { is_expected.not_to allow_value(nil).for :postcode }
+        it { is_expected.not_to allow_value("random").for :postcode }
+        it { is_expected.to allow_value("MA1 2WD").for :postcode }
       end
     end
 

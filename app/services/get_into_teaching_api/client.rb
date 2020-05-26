@@ -10,6 +10,10 @@ module GetIntoTeachingApi
       UpcomingEvents.new(**api_args).call
     end
 
+    def search_events(**args)
+      SearchEvents.new(**api_args.merge(args)).call
+    end
+
   private
 
     def api_args

@@ -8,17 +8,17 @@ module Events
     MONTH_FORMAT = %r{\A20[234]\d-(0[1-9]|1[012])\z}.freeze
     EVENT_TYPES = [0, 1].freeze
 
-    attribute :event_type, :integer
+    attribute :type, :integer
     attribute :distance, :integer
-    attribute :location, :string
+    attribute :postcode, :string
     attribute :month, :string
 
-    validates :event_type, presence: true, inclusion: { in: EVENT_TYPES }
+    validates :type, presence: true, inclusion: { in: EVENT_TYPES }
     validates :distance, inclusion: { in: DISTANCES }, allow_nil: true
-    validates :location, presence: true, postcode: true, if: :distance
+    validates :postcode, presence: true, postcode: true, if: :distance
     validates :month, presence: true, format: { with: MONTH_FORMAT }
 
-    before_validation(unless: :distance) { self.location = nil }
+    before_validation(unless: :distance) { self.postcode = nil }
 
     def query_events
       valid? ? query_events_api : []
@@ -27,7 +27,7 @@ module Events
   private
 
     def query_events_api
-      []
+      GetIntoTeachingApi::Client.search_events(**attributes.symbolize_keys)
     end
   end
 end

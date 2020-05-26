@@ -40,7 +40,15 @@ module GetIntoTeachingApi
     end
 
     def response
-      @response ||= faraday.get(endpoint)
+      @response ||= faraday.get(endpoint, params, headers)
+    end
+
+    def params
+      {}
+    end
+
+    def headers
+      { "Accept" => "appilcation/json" }
     end
 
     def data

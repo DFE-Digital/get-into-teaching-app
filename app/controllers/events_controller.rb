@@ -13,6 +13,6 @@ class EventsController < ApplicationController
 private
 
   def event_search_params
-    params.permit(:event_type, :distance, :location, :month)
+    params.permit(:type, :distance, :postcode, :month)
   end
 end
