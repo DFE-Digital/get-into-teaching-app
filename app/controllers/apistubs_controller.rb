@@ -3,4 +3,3 @@ class ApistubsController < ApplicationController
     render template: "apistubs/#{params[:stub]}"
   end
 end
-

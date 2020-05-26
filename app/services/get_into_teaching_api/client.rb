@@ -27,4 +27,3 @@ module GetIntoTeachingApi
     end
   end
 end
-

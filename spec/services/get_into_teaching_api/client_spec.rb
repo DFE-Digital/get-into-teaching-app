@@ -1,7 +1,6 @@
 require "rails_helper"
 
 describe GetIntoTeachingApi::Client do
-
   context ".upcoming_events" do
     let(:apiclass) { GetIntoTeachingApi::UpcomingEvents }
     let(:upcoming) { double apiclass, call: [] }
@@ -26,5 +25,4 @@ describe GetIntoTeachingApi::Client do
       expect(upcoming).to have_received(:call)
     end
   end
-
 end

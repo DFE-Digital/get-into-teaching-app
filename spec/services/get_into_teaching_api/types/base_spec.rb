@@ -1,22 +1,22 @@
 require "rails_helper"
 
 describe GetIntoTeachingApi::Types::Base do
-
   class Address < GetIntoTeachingApi::Types::Base
     self.type_cast_rules = {
-      "postcode" => :normalize_postcode
+      "postcode" => :normalize_postcode,
     }.freeze
 
   private
+
     def normalize_postcode(postcode)
-      postcode.to_s.gsub(/\s+/, '').downcase
+      postcode.to_s.gsub(/\s+/, "").downcase
     end
   end
 
   class Person < GetIntoTeachingApi::Types::Base
     self.type_cast_rules = {
       "date_of_birth" => :date,
-      "address" => Address
+      "address" => Address,
     }.freeze
   end
 
@@ -27,8 +27,8 @@ describe GetIntoTeachingApi::Types::Base do
         "date_of_birth" => "1990-01-01",
         "address" => {
           "housenumber" => 23,
-          "postcode" => "MA1 1AM"
-        }
+          "postcode" => "MA1 1AM",
+        },
       }
     end
 
@@ -49,5 +49,4 @@ describe GetIntoTeachingApi::Types::Base do
       it { is_expected.to have_attributes postcode: "ma11am" }
     end
   end
-
 end

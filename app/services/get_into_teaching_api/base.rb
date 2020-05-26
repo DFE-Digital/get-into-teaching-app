@@ -7,13 +7,14 @@ module GetIntoTeachingApi
       max: MAX_RETRIES,
       methods: %i{get},
       exceptions:
-        ::Faraday::Request::Retry::DEFAULT_EXCEPTIONS + RETRY_EXCEPTIONS
+        ::Faraday::Request::Retry::DEFAULT_EXCEPTIONS + RETRY_EXCEPTIONS,
     }.freeze
 
     def initialize(token:, endpoint:)
       @token = token.presence || raise(MissingApiToken)
 
       raise MissingHost if endpoint.blank?
+
       @baseuri = URI.parse(endpoint)
     end
 
@@ -24,7 +25,7 @@ module GetIntoTeachingApi
 
     def endpoint
       @baseuri.dup.tap do |uri|
-        uri.path = [uri.path, path].join('/')
+        uri.path = [uri.path, path].join("/")
       end
     end
 

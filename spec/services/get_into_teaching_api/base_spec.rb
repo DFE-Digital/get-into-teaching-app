@@ -1,4 +1,4 @@
-require 'rails_helper'
+require "rails_helper"
 
 describe GetIntoTeachingApi::Base do
   let(:apitoken) { "123456" }
@@ -20,11 +20,11 @@ describe GetIntoTeachingApi::Base do
   private
 
     def path
-      'test/path'
+      "test/path"
     end
   end
 
-  describe 'output parsing' do
+  describe "output parsing" do
     before do
       stub_request(:get, endpoint).to_return \
         status: 200,
@@ -45,7 +45,7 @@ describe GetIntoTeachingApi::Base do
       405 => Faraday::ClientError,
       500 => Faraday::ServerError,
       502 => Faraday::ServerError,
-      503 => Faraday::ServerError
+      503 => Faraday::ServerError,
     }.each do |code, error|
       context code.to_s do
         before do
@@ -65,7 +65,7 @@ describe GetIntoTeachingApi::Base do
   describe "retry handling" do
     subject { client.output }
 
-    context 'first timeout' do
+    context "first timeout" do
       before do
         stub_request(:get, endpoint)
           .to_timeout.then
@@ -78,14 +78,14 @@ describe GetIntoTeachingApi::Base do
       it { is_expected.to eql testdata }
     end
 
-    context 'second timeout' do
+    context "second timeout" do
       before do
         stub_request(:get, endpoint)
           .to_timeout.then
           .to_timeout
       end
 
-      it 'will raise an error' do
+      it "will raise an error" do
         expect { subject }.to raise_exception Faraday::ConnectionFailed
       end
     end

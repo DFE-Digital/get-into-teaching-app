@@ -5,9 +5,8 @@ module GetIntoTeachingApi
         "startDate" => :date,
         "endDate" => :date,
         "building" => EventBuilding,
-        "room" => EventRoom
+        "room" => EventRoom,
       }.freeze
     end
   end
 end
-

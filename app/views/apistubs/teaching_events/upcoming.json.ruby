@@ -1,4 +1,4 @@
- [
+[
     {
       "eventId": (event_id = SecureRandom.uuid),
       "readableEventId": event_id,
@@ -31,13 +31,13 @@
         "telephone2": nil,
         "telephone3": nil,
         "website": nil,
-        "wifiAvailable": true
+        "wifiAvailable": true,
       },
       "room": {
         "id": SecureRandom.uuid,
         "description": "Lecture Hall 1",
         "name": "Lecture Hall 1",
-        "disabledAccess": true
-      }
-    }
+        "disabledAccess": true,
+      },
+    },
   ].to_json

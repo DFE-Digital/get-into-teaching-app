@@ -42,15 +42,15 @@ describe GetIntoTeachingApi::UpcomingEvents do
           "telephone2": nil,
           "telephone3": nil,
           "website": nil,
-          "wifiAvailable": true
+          "wifiAvailable": true,
         },
         "room": {
           "id": room_id,
           "description": "Lecture Hall 1",
           "name": "Lecture Hall 1",
-          "disabledAccess": true
-        }
-      }
+          "disabledAccess": true,
+        },
+      },
     ]
   end
 
@@ -82,7 +82,7 @@ describe GetIntoTeachingApi::UpcomingEvents do
       subject { client.call.first.building }
       it { is_expected.to be_kind_of GetIntoTeachingApi::Types::EventBuilding }
       it { is_expected.to have_attributes id: building_id }
-      it { is_expected.to have_attributes addressComposite: "Line 1, Line 2"}
+      it { is_expected.to have_attributes addressComposite: "Line 1, Line 2" }
     end
 
     context "event room" do
