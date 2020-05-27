@@ -25,7 +25,7 @@ gem "foreman"
 gem "canonical-rails"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
-gem "govspeak"
+gem "kramdown"
 gem "rinku"
 
 gem "faraday"
