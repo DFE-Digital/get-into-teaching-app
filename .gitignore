@@ -32,6 +32,7 @@ yarn-debug.log*
 .yarn-integrity
 
 .env
+.env*.local
 *.log
 app/views/content/**/*
 /config/credentials/development.key
