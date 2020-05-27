@@ -5,7 +5,7 @@ module GetIntoTeachingApi
     RETRY_EXCEPTIONS = [::Faraday::ConnectionFailed].freeze
     RETRY_OPTIONS = {
       max: MAX_RETRIES,
-      methods: %i{get},
+      methods: %i[get],
       exceptions:
         ::Faraday::Request::Retry::DEFAULT_EXCEPTIONS + RETRY_EXCEPTIONS,
     }.freeze

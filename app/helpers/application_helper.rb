@@ -13,12 +13,12 @@ module ApplicationHelper
   end
 
   def header_image
-    # FIXME needs to parse frontpatter
+    # FIXME: needs to parse frontpatter
     "media/images/main-header.jpg"
   end
 
   def hero_image_path(imgpath)
-    if imgpath =~ %r(^/assets/)
+    if imgpath =~ %r{^/assets/}
       imgpath
     else
       asset_pack_path(imgpath)
