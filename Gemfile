@@ -31,6 +31,8 @@ gem "rinku"
 gem "faraday"
 gem "faraday_middleware"
 
+gem "dotenv-rails"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: %i[mri mingw x64_mingw]
@@ -46,8 +48,6 @@ group :development, :test do
   gem "rspec-rails", "~> 4.0.0"
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.31"
-
-  gem "dotenv-rails"
 end
 
 group :development do
