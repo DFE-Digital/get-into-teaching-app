@@ -38,7 +38,7 @@ describe MarkdownPages::TemplateHandler, type: :view do
       <<~MARKDOWN
         # Heading
 
-        Lorem <strong>ipsum</strong>
+        Lorem <strong class="testclass">ipsum</strong>
       MARKDOWN
     end
 
@@ -49,7 +49,7 @@ describe MarkdownPages::TemplateHandler, type: :view do
 
     it { is_expected.to have_css("p", text: /Lorem/) }
     it { is_expected.to have_css("h1", text: "Heading") }
-    it { is_expected.to have_css("p strong", text: "ipsum") }
+    it { is_expected.to have_css("p strong.testclass", text: "ipsum") }
   end
 
   context "with front matter" do
