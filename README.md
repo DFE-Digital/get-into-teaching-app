@@ -93,6 +93,18 @@ files for each environment
 2. `/.env.rolling`
 3. `/.env.preprod`
 
+### Private Configuration - ie secrets
+
+These can be recorded in the relevant environments encrypted credentials file
+
+```bash
+bundle exec rails credentials:edit --environment <environment-name>
+```
+
+You will either need to have `RAILS_MASTER_KEY` set within your environment or
+have have the appropriate `/config/credentials/<env-name>.key` file with the
+environments master key in.
+
 ### Variables
 
 `HTTPAUTH_USERNAME` and `HTTPAUTH_PASSWORD` - setting both enables site wide 
