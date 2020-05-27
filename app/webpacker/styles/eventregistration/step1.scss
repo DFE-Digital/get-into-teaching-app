@@ -1,7 +1,7 @@
 .event-reg-main {
     border-top: 1px solid $black;
     padding-top: 70px;
-    padding-bottom: 120px;
+    padding-bottom: 70px;
     
     &__content {
 
@@ -9,6 +9,7 @@
         width: 100%;
 
         &__left {
+            padding-left: 40px;
             display: table-cell;
             text-align: left;
             vertical-align: top;
@@ -34,4 +35,27 @@
         }   
     }
 
+}
+
+@media only screen and (max-width: 800px) {
+
+    .event-reg-main { 
+
+        &__content {
+        
+            display: block;
+
+            &__left {
+                display: block;
+                margin-right: 40px;
+            }
+
+            &__right {
+                display: block;
+                margin-top: 40px;
+            }
+
+        }
+
+    }
 }
