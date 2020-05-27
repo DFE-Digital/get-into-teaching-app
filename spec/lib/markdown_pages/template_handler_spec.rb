@@ -33,6 +33,25 @@ describe MarkdownPages::TemplateHandler, type: :view do
     end
   end
 
+  context "with html" do
+    let(:markdown) do
+      <<~MARKDOWN
+        # Heading
+
+        Lorem <strong>ipsum</strong>
+      MARKDOWN
+    end
+
+    before do
+      stub_template "test.md" => markdown
+      render template: "test.md"
+    end
+
+    it { is_expected.to have_css("p", text: /Lorem/) }
+    it { is_expected.to have_css("h1", text: "Heading") }
+    it { is_expected.to have_css("p strong", text: "ipsum") }
+  end
+
   context "with front matter" do
     let :markdown do
       <<~MARKDOWN
