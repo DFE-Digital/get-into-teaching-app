@@ -6,3 +6,21 @@ select {
     background-color: $white;
     height: 42px;
 }
+
+input {
+    min-width: 375px;
+    height: 40px;
+    margin-bottom: 30px;
+    border: 2px solid $black;
+    margin-top: 5px;
+    font-size: 19px;
+    box-sizing: border-box;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.fieldlabel {
+    font-size: 19px;
+    color: $black;
+    font-weight: bold;
+}
