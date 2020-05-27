@@ -3,7 +3,7 @@ require "rails_helper"
 describe GetIntoTeachingApi::Base do
   let(:apitoken) { "123456" }
   let(:apihost) { "https://test.api" }
-  let(:testdata) { %w(James Jennie John) }
+  let(:testdata) { %w[James Jennie John] }
   let(:client) { TestEndpoint.new(token: apitoken, endpoint: apihost) }
   let(:endpoint) { "#{apihost}/test/path" }
   let(:response_headers) { { "Content-Type" => "application/json" } }
@@ -13,9 +13,7 @@ describe GetIntoTeachingApi::Base do
       data
     end
 
-    def status
-      response.status
-    end
+    delegate :status, to: :response
 
   private
 
