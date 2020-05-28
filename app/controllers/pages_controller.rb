@@ -31,10 +31,6 @@ class PagesController < ApplicationController
     render template: "pages/events/registration/step4"
   end
 
-  def eventregistration5
-    render template: "pages/events/registration/step5"
-  end
-
   def show
     render template: "content/#{params[:page]}", layout: "layouts/content"
   end
