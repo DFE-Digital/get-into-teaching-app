@@ -3,8 +3,20 @@ class PagesController < ApplicationController
     render template: "pages/home"
   end
 
+  def event
+    render template: "pages/events/event"
+  end
+
+  def eventschool
+    render template: "pages/events/eventschool"
+  end
+
   def events
-    render template: "pages/events"
+    render template: "pages/events/events"
+  end
+
+  def eventregistration
+    render template: "pages/events/registration/step1"
   end
 
   def show

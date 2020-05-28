@@ -1,0 +1,61 @@
+.event-reg-main {
+    border-top: 1px solid $black;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    
+    &__content {
+
+        display: table;
+        width: 100%;
+
+        &__left {
+            padding-left: 40px;
+            display: table-cell;
+            text-align: left;
+            vertical-align: top;
+
+            h1 {
+                font-size: 42px;
+                margin: 0;
+                padding: 0;
+            }
+
+            h2 {
+                font-size: 28px;
+                margin: 0;
+                padding: 0;
+            }
+        }
+
+        &__right {
+            display: table-cell;
+            width: 350px;
+            text-align: right;
+            vertical-align: top;
+        }   
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .event-reg-main { 
+
+        &__content {
+        
+            display: block;
+
+            &__left {
+                display: block;
+                margin-right: 40px;
+            }
+
+            &__right {
+                display: block;
+                margin-top: 40px;
+            }
+
+        }
+
+    }
+}
