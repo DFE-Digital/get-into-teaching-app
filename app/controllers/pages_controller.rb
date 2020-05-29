@@ -16,19 +16,7 @@ class PagesController < ApplicationController
   end
 
   def eventregistration
-    render template: "pages/events/registration/step1"
-  end
-
-  def eventregistration2
-    render template: "pages/events/registration/step2"
-  end
-
-  def eventregistration3
-    render template: "pages/events/registration/step3"
-  end
-
-  def eventregistration4
-    render template: "pages/events/registration/step4"
+    render template: "pages/events/registration/step#{params[:step_number]}"
   end
 
   def show
