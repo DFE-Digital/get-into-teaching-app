@@ -27,6 +27,11 @@
                 font-size: 28px;
                 margin: 0;
             }
+
+            .govuk-input {
+                max-width: 375px;
+                margin-bottom: 30px;
+            }
         }
 
         &__right {

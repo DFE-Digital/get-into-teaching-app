@@ -25,6 +25,8 @@
         }
     
         li a {
+            @include font;
+            font-size: 16px;
             display: block;
             text-align: center;
             padding: 16px;
