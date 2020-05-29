@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   get "/events", to: "pages#events", via: :all
   get "/eventschool", to: "pages#eventschool", via: :all
   get "/event", to: "pages#event", via: :all
-  get "/event/register/1", to: "pages#eventregistration", via: :all
+  get "/event/register/:step_number", to: "pages#eventregistration", via: :all
 
   if Rails.env.development?
     get "/apistubs/*stub", to: "apistubs#show"

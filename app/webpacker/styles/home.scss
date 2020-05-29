@@ -185,6 +185,7 @@
                 }
     
                 &--text {
+                    @include font;
                     font-size: 19px;
                     display: inline-block;
                     height: 100%;

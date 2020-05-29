@@ -1,0 +1,57 @@
+<section class="event-reg-main">
+    <div class="event-reg-main__content container-1000">
+        <div class="event-reg-main__content__left">
+            
+            <h1>Sign up for this event:</h1>
+            <h2>Train to Teach Coventry online event</h2>
+            <p></p>
+            
+            <div class="govuk-form-group">
+                <div class="fieldlabel">Are you over 16 and have agreed to our privacy policy?</div>
+                <p class="fieldhelp">
+                    <div class="govuk-checkboxes">
+                        <div class="govuk-checkboxes__item">
+                            <input class="govuk-checkboxes__input" id="privacy-policy" name="privacy-policy" type="checkbox" value="yes">
+                            <label class="govuk-label govuk-checkboxes__label" for="privacy-policy">
+                            Yes
+                            </label>
+                        </div>
+                    </div>
+                </p>
+                
+                <div class="fieldlabel">Join our mailing list and receive information about future events (optional)</div>
+                <p>
+                    <div class="govuk-radios govuk-radios--inline">
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="mailing-list" name="mailing-list" type="radio" value="yes">
+                            <label class="govuk-label govuk-radios__label" for="mailing-list">
+                            Yes
+                            </label>
+                        </div>
+                        <div class="govuk-radios__item">
+                            <input class="govuk-radios__input" id="mailing-list-2" name="mailing-list" type="radio" value="no">
+                            <label class="govuk-label govuk-radios__label" for="mailing-list-2">
+                            No
+                            </label>
+                        </div>
+                    </div>
+                </p>
+                
+                <div class="fieldlabel">Postcode (optional)</div>
+                <p class="fieldhelp">Enter your postcode so that we can send you event information specificities to your area</p>
+                <input class="govuk-input" id="postcode" name="postcode" type="text">
+            </div>
+
+            <div>
+                <a href="/event/register/4">
+                    <div class="call-to-action-button">Complete sign up <i class="fas fa-chevron-right"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="event-reg-main__content__right">
+            
+        </div>
+    </div>
+</section>
+
+<%= render "sections/talk-to-us" %>

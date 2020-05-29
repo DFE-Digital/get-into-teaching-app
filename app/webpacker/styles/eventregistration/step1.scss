@@ -1,7 +1,7 @@
 .event-reg-main {
     border-top: 1px solid $black;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 100px;
     
     &__content {
 
@@ -14,16 +14,23 @@
             text-align: left;
             vertical-align: top;
 
+            .strapline {
+                background-color: $green;
+            }
+
             h1 {
                 font-size: 42px;
                 margin: 0;
-                padding: 0;
             }
 
             h2 {
                 font-size: 28px;
                 margin: 0;
-                padding: 0;
+            }
+
+            .govuk-input {
+                max-width: 375px;
+                margin-bottom: 30px;
             }
         }
 
