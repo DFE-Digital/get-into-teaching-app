@@ -12,8 +12,8 @@ describe GetIntoTeachingApi::Client do
     subject! { described_class.upcoming_events }
 
     it "should instantiate an api call object" do
-      expect(apiclass).to have_received(:new).
-        with(token: ENV["GIT_API_TOKEN"], endpoint: ENV["GIT_API_ENDPOINT"])
+      expect(apiclass).to have_received(:new)
+        .with(token: ENV["GIT_API_TOKEN"], endpoint: ENV["GIT_API_ENDPOINT"])
     end
 
     it "should call #call on instantiated class" do

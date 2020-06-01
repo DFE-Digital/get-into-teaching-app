@@ -23,7 +23,7 @@ module MarkdownPages
   private
 
     def render_markdown
-      Govspeak::Document.new(markdown).to_html
+      Kramdown::Document.new(markdown).to_html
     end
 
     def autolink_html(content)

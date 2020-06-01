@@ -25,13 +25,15 @@ gem "foreman"
 gem "canonical-rails"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
-gem "govspeak"
+gem "kramdown"
 gem "rinku"
 
 gem "faraday"
 gem "faraday_middleware"
 
 gem "uk_postcode"
+
+gem "dotenv-rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -49,8 +51,6 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.31"
   gem "factory_bot_rails"
-
-  gem "dotenv-rails"
 end
 
 group :development do

@@ -1,23 +1,44 @@
+@mixin font {
+    font-family: 'Akzidenz Grotesk';
+    font-style: normal;
+}
+
 h1 {
+    @include font;
     font-size: 28px;
 }
 
 h2 {
+    @include font;
     font-size: 19px;
     line-height: 1.4;
 }
 
+h3 {
+    @include font;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+h4 {
+    @include font;
+    font-size: 18px;
+}
+
 p {
+    @include font;
     font-size: 19px;
     line-height: 1.6;
 }
 
 a {
+    @include font;
     color: $black;
     line-height: 1.4;
 }
 
 .strapline-image {
+    @include font;
     color: $white;
     font-size: 36px;
     background-color: $purple;
@@ -26,6 +47,7 @@ a {
 }
 
 .strapline {
+    @include font;
     color: $white;
     font-size: 36px;
     background-color: $purple;
@@ -34,6 +56,7 @@ a {
 }
 
 .strapline-article {
+    @include font;
     color: $black;
     font-size: 36px;
     background-color: transparent;
@@ -43,6 +66,7 @@ a {
 }
 
 .strapline-prominent {
+    @include font;
     background-color: $pink;
     text-decoration: underline;
     font-size: 24px;
@@ -52,6 +76,7 @@ a {
 }
 
 .git-link {
+    @include font;
     font-weight: bold;
     font-size: 19px;
     color: $black;
@@ -69,6 +94,7 @@ a {
 }
 
 .telephone-number {
+    @include font;
     color: $blue;
     text-decoration: underline;
 }
