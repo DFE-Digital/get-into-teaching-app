@@ -69,10 +69,11 @@ a {
     @include font;
     background-color: $pink;
     text-decoration: underline;
-    font-size: 24px;
+    font-size: 18px;
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 18px;
+    min-width: 288px;
 }
 
 .git-link {
