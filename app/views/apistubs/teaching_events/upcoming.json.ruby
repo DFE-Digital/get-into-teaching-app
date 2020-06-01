@@ -1,7 +1,7 @@
 [
   {
-    "eventId": (event_id = SecureRandom.uuid),
-    "readableEventId": event_id,
+    "eventId": "86262bdc-07d7-4f40-b368-9c46cdd354b8",
+    "readableEventId": "86262bdc-07d7-4f40-b368-9c46cdd354b8",
     "eventName": "Become a teacher",
     "description": "Become a teacher",
     "startDate": "2020-05-18",
@@ -41,8 +41,8 @@
     },
   },
   {
-    "eventId": (event_id = SecureRandom.uuid),
-    "readableEventId": event_id,
+    "eventId": "c4c4ecc1-19d4-41f2-b9dc-f8c882886f3c",
+    "readableEventId": "c4c4ecc1-19d4-41f2-b9dc-f8c882886f3c",
     "eventName": "Secondary School teaching",
     "description": "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
     "startDate": "2020-05-11",

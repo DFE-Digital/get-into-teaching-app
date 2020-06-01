@@ -10,6 +10,10 @@ class EventsController < ApplicationController
     render :index
   end
 
+  def show
+    @event = GetIntoTeachingApi::Client.event(params[:id])
+  end
+
 private
 
   def event_search_params

@@ -1,4 +1,4 @@
-<a href="/event">
+<%= link_to event_path(event.eventId) do %>
     <%= render "components/eventbox",
         :title => event.eventName,
         :datetime => "#{event.startDate} at 17:00 - 18:30",
@@ -8,4 +8,4 @@
         :online => true,
         :location => "Bristol"
     %>
-</a>
+<% end %>

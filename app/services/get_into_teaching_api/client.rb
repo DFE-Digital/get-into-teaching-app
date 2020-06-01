@@ -3,7 +3,7 @@ module GetIntoTeachingApi
     include Singleton
 
     class << self
-      delegate :upcoming_events, to: :instance
+      delegate :upcoming_events, :search_events, :event, to: :instance
     end
 
     def upcoming_events
@@ -12,6 +12,10 @@ module GetIntoTeachingApi
 
     def search_events(**args)
       SearchEvents.new(**api_args.merge(args)).call
+    end
+
+    def event(event_id)
+      Event.new(event_id: event_id, **api_args).call
     end
 
   private

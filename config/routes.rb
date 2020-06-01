@@ -9,8 +9,9 @@ Rails.application.routes.draw do
   get "/event", to: "pages#event", via: :all, as: nil
   get "/event/register/:step_number", to: "pages#eventregistration", via: :all
 
-  get "/apievents", to: "events#index", as: :events
-  get "/apievents/search", to: "events#search", as: :search_events
+  resources "events", path: "/apievents", only: %i[index show search] do
+    collection { get "search" }
+  end
 
   if Rails.env.development?
     get "/apistubs/*stub", to: "apistubs#show"
