@@ -1,6 +1,5 @@
 .content {
 
-    display: table;
     vertical-align: top;
     text-align: left;
     width: 100%;
@@ -8,7 +7,6 @@
     &__left {
 
         min-height: 250px;
-        display: table-cell;
         box-sizing: border-box;
         padding-left: 40px;
         padding-right:20px;
@@ -16,6 +14,7 @@
         padding-bottom: 20px;
         text-align: left;
         vertical-align: top;
+        width: calc(100% - 370px);
 
         .jumbotron {
             font-size: 18px;
@@ -97,6 +96,7 @@
     }
 
     &__right {
+        margin-right: 40px;
         min-height: 250px;
         padding-left: 40px;
         padding-right:20px;
@@ -104,7 +104,7 @@
         padding-bottom: 20px;
         text-align: left;
         vertical-align: top;
-        display: table-cell;
+        float: right;
         width: 288px;
     }
 
@@ -118,9 +118,12 @@
         &__left {
             display: block;
             width: 100%;
+            margin-right: 40px;
         }
 
         &__right {
+            margin: 0;
+            padding: 0;
             display: block;
             width: 100%;
         }
