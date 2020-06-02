@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe GetIntoTeachingApi::SearchEvents do
+  include_context "stub types api"
+
   let(:token) { "test123" }
   let(:endpoint) { "http://my.api/api" }
   let(:response_headers) { { "Content-Type" => "application/json" } }
@@ -58,9 +60,9 @@ describe GetIntoTeachingApi::SearchEvents do
 
   describe "#events" do
     before do
-      stub_request(:get, "#{endpoint}/teaching_events/search").
-        with(query: search_params).
-        to_return \
+      stub_request(:get, "#{endpoint}/teaching_events/search")
+        .with(query: search_params)
+        .to_return \
           status: 200,
           headers: response_headers,
           body: testdata.to_json

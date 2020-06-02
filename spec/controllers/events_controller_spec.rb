@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe EventsController, type: :request do
+  include_context "stub types api"
+
   describe "#index" do
     let(:first_id) { SecureRandom.uuid }
     let(:second_id) { SecureRandom.uuid }
@@ -40,7 +42,7 @@ describe EventsController, type: :request do
 
   describe "#search" do
     let(:search_key) { Events::Search.model_name.param_key }
-    let(:search_path) { search_events_path(search_key: search_params) }
+    let(:search_path) { search_events_path(search_key => search_params) }
 
     subject do
       get(search_path)
@@ -52,13 +54,15 @@ describe EventsController, type: :request do
 
       it { is_expected.to have_http_status :success }
       it { is_expected.to have_rendered "index" }
+      it { is_expected.to have_attributes media_type: "text/html" }
     end
 
     context "with invalid search params" do
-      let(:search_params) { {} }
+      let(:search_params) { { "distance" => "" } }
 
       it { is_expected.to have_http_status :success }
       it { is_expected.to have_rendered "index" }
+      it { is_expected.to have_attributes media_type: "text/html" }
     end
   end
 

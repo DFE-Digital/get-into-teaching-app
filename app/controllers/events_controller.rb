@@ -8,7 +8,7 @@ class EventsController < ApplicationController
     @event_search = Events::Search.new(event_search_params)
     @events = @event_search.query_events
 
-    render :index
+    render "index"
   end
 
   def show

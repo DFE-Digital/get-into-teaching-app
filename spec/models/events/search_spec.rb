@@ -1,17 +1,7 @@
 require "rails_helper"
 
 describe Events::Search do
-  let(:event_types) do
-    [
-      { "id" => 0, "value" => "first" },
-      { "id" => 1, "value" => "second" },
-    ]
-  end
-
-  before do
-    allow_any_instance_of(GetIntoTeachingApi::EventTypes).to \
-      receive(:data).and_return(event_types)
-  end
+  include_context "stub types api"
 
   context "attributes" do
     it { is_expected.to respond_to :type }

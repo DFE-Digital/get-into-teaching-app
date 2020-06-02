@@ -1,8 +1,8 @@
 FactoryBot.define do
   factory :events_search, class: Events::Search do
-    type { Events::Search::EVENT_TYPES.first }
-    distance { Events::Search::DISTANCES.first }
+    type { Events::Search.new.available_event_types.first.id }
+    distance { Events::Search.new.available_distances.first[0] }
     postcode { "TE57 1NG" }
-    month { 1.month.from_now.to_date.to_formatted_s :yearmonth }
+    month { Events::Search.new.available_months.first[0] }
   end
 end
