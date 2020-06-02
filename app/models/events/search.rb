@@ -22,11 +22,7 @@ module Events
     before_validation(unless: :distance) { self.postcode = nil }
 
     def available_event_types
-      [
-        ["All events", 0],
-        ["Some events", 1],
-        ["Other events", 2],
-      ]
+      @available_event_types ||= query_event_types
     end
 
     def available_distances
@@ -54,6 +50,10 @@ module Events
 
     def query_events_api
       GetIntoTeachingApi::Client.search_events(**attributes.symbolize_keys)
+    end
+
+    def query_event_types
+      GetIntoTeachingApi::Client.event_types
     end
   end
 end

@@ -2,14 +2,15 @@ require "rails_helper"
 
 describe Events::Search do
   let(:event_types) do
-    {
-      0 => "first",
-      1 => "second",
-    }
+    [
+      { "id" => 0, "value" => "first" },
+      { "id" => 1, "value" => "second" },
+    ]
   end
 
   before do
-   # allow(GetIntoTeachingApi::Client).to receive(:event_types) { event_types }
+    allow_any_instance_of(GetIntoTeachingApi::EventTypes).to \
+      receive(:data).and_return(event_types)
   end
 
   context "attributes" do

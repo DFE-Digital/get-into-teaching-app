@@ -2,7 +2,7 @@
   <div>
     <div class="search-for-events__content__input">
         Showing
-        <%= f.select :type, f.object.available_event_types %>
+        <%= f.collection_select :type, f.object.available_event_types, :id, :value %>
     </div>
     <div class="search-for-events__content__input">
         happening
