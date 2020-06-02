@@ -8,13 +8,13 @@
 
         a {
             @include font;
+            line-height: 1.2;
             background-color: $pink;
             color: $white;
             text-decoration: underline;
             font-size: 18px;
             font-weight: 800;
-            padding-top: 9px;
-            padding-bottom: 9px;
+            padding-top: 20px;
             padding-left: 18px;
             min-width: 288px;
             display: block;
@@ -24,17 +24,13 @@
             text-decoration: none;
         }
 
-        a:first-child {
-            padding-top: 18px;
-        }
+    }
 
-        a:last-child {
-            padding-bottom: 18px;
-        }
-
+    li:last-child a {
+        padding-bottom: 20px;
     }
     
-}
+} 
 
 @media only screen and (max-width: 800px) {
 
