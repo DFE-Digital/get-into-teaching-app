@@ -7,6 +7,7 @@
     "rails-ujs": "^5.2.4",
     "serialize-javascript": "^3.0.0",
     "set-value": "^3.0.2",
+    "stimulus": "^1.1.1",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
