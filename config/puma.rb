@@ -28,9 +28,9 @@ environment ENV.fetch("RAILS_ENV") { "development" }
 #
 
 # Needed to allow app to query itself for API response in development
-if Rails.env.development?
-  workers ENV.fetch("WEB_CONCURRENCY") { 2 }
-end
+# if Rails.env.development?
+#   workers ENV.fetch("WEB_CONCURRENCY") { 2 }
+# end
 
 # Use the `preload_app!` method when specifying a `workers` number.
 # This directive tells Puma to first boot the application and load code

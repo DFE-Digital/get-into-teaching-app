@@ -13,9 +13,5 @@ Rails.application.routes.draw do
     collection { get "search" }
   end
 
-  if Rails.env.development?
-    get "/apistubs/*stub", to: "apistubs#show"
-  end
-
   get "*page", to: "pages#show", as: :page
 end
