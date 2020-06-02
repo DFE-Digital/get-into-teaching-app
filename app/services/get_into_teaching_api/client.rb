@@ -4,6 +4,7 @@ module GetIntoTeachingApi
 
     class << self
       delegate :upcoming_events, :search_events, :event, to: :instance
+      delegate :event_types, to: :instance
     end
 
     def upcoming_events
@@ -16,6 +17,10 @@ module GetIntoTeachingApi
 
     def event(event_id)
       Event.new(event_id: event_id, **api_args).call
+    end
+
+    def event_types
+      EventTypes.new(**api_args).call
     end
 
   private

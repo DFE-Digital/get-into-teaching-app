@@ -1,6 +1,14 @@
 require "rails_helper"
 
 describe GetIntoTeachingApi::Client do
+  context "apicalls" do
+    subject { described_class }
+    it { is_expected.to respond_to :upcoming_events }
+    it { is_expected.to respond_to :search_events }
+    it { is_expected.to respond_to :event }
+    it { is_expected.to respond_to :event_types }
+  end
+
   context ".upcoming_events" do
     let(:apiclass) { GetIntoTeachingApi::UpcomingEvents }
     let(:upcoming) { double apiclass, call: [] }

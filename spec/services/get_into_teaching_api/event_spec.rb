@@ -1,15 +1,15 @@
 require "rails_helper"
 
 describe GetIntoTeachingApi::Event do
-  let(:token) { "test123" }
-  let(:endpoint) { "http://my.api/api" }
-  let(:response_headers) { { "Content-Type" => "application/json" } }
+  include_examples "api support"
+
   let(:client) do
     described_class.new event_id: event_id, token: token, endpoint: endpoint
   end
   let(:event_id) { SecureRandom.uuid }
   let(:building_id) { SecureRandom.uuid }
   let(:room_id) { SecureRandom.uuid }
+  let(:apicall) { "teaching_events/#{event_id}" }
   let(:testdata) do
     {
       "eventId": event_id,
@@ -55,15 +55,6 @@ describe GetIntoTeachingApi::Event do
   end
 
   describe "#event" do
-    before do
-      stub_request(:get, "#{endpoint}/teaching_events/#{event_id}").to_return \
-        status: 200,
-        headers: response_headers,
-        body: testdata.to_json
-    end
-
-    subject { client.call }
-
     it { is_expected.to be_kind_of GetIntoTeachingApi::Types::Event }
     it { is_expected.to respond_to :eventId }
     it { is_expected.to respond_to :eventName }
