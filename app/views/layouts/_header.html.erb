@@ -65,4 +65,30 @@
             label.innerHTML = "Close";
         }
     }
+
+    function toggleCollapsable(item) {
+
+        //toggle icon
+        var iconName = 'collapsable-icon-' + item; 
+        var icon = document.getElementById(iconName);
+        var currentIconClass = icon.getAttribute('class');
+        if(currentIconClass === 'fas fa-chevron-up') {
+            icon.setAttribute('class','fas fa-chevron-down');
+        } else {
+            icon.setAttribute('class','fas fa-chevron-up');
+        }
+
+        //toggle content
+        var contentName = 'collapsable-content-' + item;
+        var content = document.getElementById(contentName);
+        var contentStyle = window.getComputedStyle(content);
+        var contentDisplay = contentStyle.getPropertyValue('display');
+        if(contentDisplay === 'block') {
+            content.style.display = 'none';
+        } else {
+            content.style.display = 'block';
+        }
+    }
+
+
 </script>
