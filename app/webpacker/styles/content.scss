@@ -77,27 +77,19 @@
             text-decoration: underline;
         }
 
-        &__header {
-
-            &__icon {
-                display: inline-block;
-                width: 30px;
-                vertical-align: top;
-                padding-top: 20px;
-            }
-
-            &__text {
-                display: inline-block;
-                margin-left: 10px;
-                width: calc(100% - 50px);
-                vertical-align: top;
-            }
-        }
+        p.content-alert {
+            background-color: $purple;
+            color: $white;
+            box-sizing: border-box;
+            padding: 20px;
+            font-weight: bold;
+            line-height: 1.5;
+            display: inline-block;
+        }   
     }
 
     &__right {
         margin-right: 40px;
-        min-height: 250px;
         padding-left: 40px;
         padding-right:20px;
         padding-top: 20px;
@@ -119,6 +111,11 @@
             display: block;
             width: 100%;
             margin-right: 40px;
+
+            p.content-alert {
+                margin-top: -10px;
+                margin-right: 20px;
+            }
         }
 
         &__right {
