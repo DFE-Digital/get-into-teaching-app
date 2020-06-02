@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   def index
     @events = GetIntoTeachingApi::Client.upcoming_events
+    @event_search = Events::Search.new
   end
 
   def search
@@ -17,6 +18,8 @@ class EventsController < ApplicationController
 private
 
   def event_search_params
-    params.permit(:type, :distance, :postcode, :month)
+    params
+      .require(Events::Search.model_name.param_key)
+      .permit(:type, :distance, :postcode, :month)
   end
 end

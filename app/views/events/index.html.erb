@@ -72,37 +72,7 @@
 <section class="search-for-events container-1000">
     <h1 id="searchforevents" class="strapline search-for-events__header">Search for events</h1>
     <div class="search-for-events__content">
-        <div>
-            <form>
-                <div class="search-for-events__content__input">
-                    Showing 
-                    <select>
-                        <option>All events</option>
-                        <option>Some events</option>
-                        <option>Other events</option>
-                    </select>
-                </div>
-                <div class="search-for-events__content__input">
-                    happening 
-                    <select>
-                        <option>Nationwide</option>
-                        <option>the North</option>
-                        <option>the South</option>
-                    </select>
-                </div>
-                <div class="search-for-events__content__input">
-                    in 
-                    <select>
-                        <option>March 2020</option>
-                        <option>April 2020</option>
-                        <option>May 2020</option>
-                    </select> 
-                </div>
-            </form>
-        </div>
-        <div class="search-for-events__content__update">
-            <div class="request-button">Update results <i class="fas fa-sync"></i></div>
-        </div>
+      <%= render 'search_form', event_search: @event_search %>
     </div>
 </section>
 

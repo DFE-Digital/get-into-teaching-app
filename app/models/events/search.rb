@@ -18,7 +18,33 @@ module Events
     validates :postcode, presence: true, postcode: true, if: :distance
     validates :month, presence: true, format: { with: MONTH_FORMAT }
 
+    before_validation { self.distance = nil if distance.blank? }
     before_validation(unless: :distance) { self.postcode = nil }
+
+    def available_event_types
+      [
+        ["All events", 0],
+        ["Some events", 1],
+        ["Other events", 2],
+      ]
+    end
+
+    def available_distances
+      [["Nationwide", nil]] + DISTANCES.map do |d|
+        ["Within #{d} miles", d]
+      end
+    end
+
+    def available_months
+      (0..5).map do |i|
+        month = i.months.from_now.to_date
+
+        [
+          month.to_formatted_s(:humanmonthyear),
+          month.to_formatted_s(:yearmonth),
+        ]
+      end
+    end
 
     def query_events
       valid? ? query_events_api : []
