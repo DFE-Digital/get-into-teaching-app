@@ -176,12 +176,16 @@
                     display: inline-block;
                     width: 45px;
                     height: 45px;
-                    padding-top: 16px;
+                    padding-top: 9px;
                     box-sizing: border-box;
                     background-color: $yellow;
                     text-align: center;
                     font-weight: bold;
                     transform: rotate(3deg);
+
+                    span {
+                        transform: rotate(-3deg);
+                    }
                 }
     
                 &--text {
