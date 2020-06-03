@@ -25,8 +25,13 @@ gem "foreman"
 gem "canonical-rails"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
-gem "govspeak"
+gem "kramdown"
 gem "rinku"
+
+gem "faraday"
+gem "faraday_middleware"
+
+gem "dotenv-rails"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -43,8 +48,6 @@ group :development, :test do
   gem "rspec-rails", "~> 4.0.0"
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.31"
-
-  gem "dotenv-rails"
 end
 
 group :development do
@@ -59,6 +62,7 @@ end
 
 group :test do
   gem "webdrivers", "~> 4.3"
+  gem "webmock"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

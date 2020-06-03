@@ -1,68 +1,140 @@
 .content {
-    min-height: 250px;
-    padding: 40px;
+
+    vertical-align: top;
     text-align: left;
+    width: 100%;
 
-    .jumbotron {
-        font-size: 18px;
-        color: $black;
-        font-weight: bold;
-        line-height: 1.6;
-    }
+    &__left {
 
-    h2 {
-        font-size: 36px;
-        font-weight: bold;
-        border-bottom: 8px solid $blue;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        margin-top: 20px;
-    }
+        min-height: 250px;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right:20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        vertical-align: top;
+        width: calc(100% - 370px);
 
-    h3 {
-        font-size: 28px;
-        font-weight: bold;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        margin-top: 20px;
-    }
+        .jumbotron {
+            font-size: 18px;
+            color: $black;
+            font-weight: bold;
+            line-height: 1.6;
+        }
 
-    h4 {
-        font-size: 18px;
-        font-weight: bold;
-        display: inline-block;
-        margin: 0;
-        padding: 0;
-        margin-top: 20px;
-    }
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            border-bottom: 8px solid $blue;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+        }
 
-    p {
-        line-height: 1;
-    }
+        h3 {
+            font-size: 28px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+        }
 
-    ul {
-        list-style-type: square;
-    }
+        h4 {
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            margin-top: 20px;
+        }
 
-    li {
-        font-size: 19px;
-        line-height: 1.6;
-    }
+        p {
+            padding-bottom: 10px;
+            padding-top: 10px;
+            line-height: 1;
+        }
 
-    a {
-        font-weight: bold;
-        font-size: 19px;
-        color: $black;
-        text-decoration: none;
-        display: inline-block;
+        ul {
+            list-style-type: square;
+        }
+
+        li {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        a {
+            font-weight: regular;
+            font-size: 19px;
+            color: $blue;
+            text-decoration: underline;      
+        }
         
+        a:hover {
+            text-decoration: underline;
+        }
+
+        p.content-alert {
+            background-color: $purple;
+            color: $white;
+            box-sizing: border-box;
+            padding: 20px;
+            font-weight: bold;
+            line-height: 1.5;
+            display: inline-block;
+        }
         
-    }
-    
-    a:hover {
-        text-decoration: underline;
+        div.content-video {
+            margin-top: 20px;    
+            width: 100%;
+            text-align: left;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 
+    &__right {
+        margin-right: 40px;
+        padding-left: 40px;
+        padding-right:20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        vertical-align: top;
+        float: right;
+        width: 288px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .content {
+        padding-top: 20px;
+
+        &__left {
+
+            display: block;
+            width: 100%;
+            margin-right: 40px;
+
+            p.content-alert {
+                margin-top: -10px;
+                margin-right: 20px;
+            }
+
+        }
+
+        &__right {
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 100%;
+        }
+    }
 }

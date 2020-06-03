@@ -1,5 +1,8 @@
 #  DFE-Digital Get into Teaching website
 
+
+
+
 ## Prerequisites
 
 - Ruby 2.6.6
@@ -61,7 +64,54 @@ if [ "x$SKIPLINT" == "x" ]; then
 fi
 ```
 
-### Configuration
+## Configuration
 
-`HTTPAUTH_USERNAME` and `HTTPAUTH_PASSWORD` - setting both enables site wide password protection
+### Environments
+
+The application has 2 extra Rails environments, in addition to the default 3.
+
+1. `development` - used for local development
+2. `test` - used for running the test suites in an isolated manner
+3. `production` - the 'live' production copy of the application
+4. `rolling` - 'production-like' - continuously delivered, reflects current master
+5. `preprod` - 'production-like' - stage before release to final production
+
+**NOTE:** It is **important** if checking for the production environment to also 
+check for other 'production-like' environments unless you really intend to only
+check for production, ie.
+
+```ruby
+if Rails.env.rolling? || Rails.env.preprod? || Rails
+```
+
+### Public Configuration
+
+First its worth mentioning that all config from `production.rb` is inherited by
+both `rolling.rb` and `preprod.rb` so separate configuration may not be required
+
+Publicly visible Environment Variables can be added to the relevant `.env` 
+files for each environment
+
+1. `/.env.production`
+2. `/.env.rolling`
+3. `/.env.preprod`
+
+### Private Configuration - ie secrets
+
+These can be recorded in the relevant environments encrypted credentials file
+
+```bash
+bundle exec rails credentials:edit --environment <environment-name>
+```
+
+You will either need to have `RAILS_MASTER_KEY` set within your environment or
+have have the appropriate `/config/credentials/<env-name>.key` file with the
+environments master key in.
+
+### Variables
+
+`HTTPAUTH_USERNAME` and `HTTPAUTH_PASSWORD` - setting both enables site wide 
+password protection
+
+
 

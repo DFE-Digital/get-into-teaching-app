@@ -3,12 +3,13 @@
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@rails/webpacker": "^5.1.1",
+    "govuk-frontend": "^3.6.0",
     "rails-ujs": "^5.2.4",
     "serialize-javascript": "^3.0.0",
     "set-value": "^3.0.2",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "^3.10.3"
+    "webpack-dev-server": "^3.11.0"
   }
 }
