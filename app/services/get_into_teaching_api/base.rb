@@ -56,3 +56,7 @@ module GetIntoTeachingApi
     end
   end
 end
+
+if Rails.env.development?
+  GetIntoTeachingApi::Base.prepend GetIntoTeachingApi::FakeEndpoints
+end
