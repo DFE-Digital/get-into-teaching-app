@@ -1,6 +1,5 @@
 .content {
 
-    display: table;
     vertical-align: top;
     text-align: left;
     width: 100%;
@@ -8,7 +7,6 @@
     &__left {
 
         min-height: 250px;
-        display: table-cell;
         box-sizing: border-box;
         padding-left: 40px;
         padding-right:20px;
@@ -16,6 +14,7 @@
         padding-bottom: 20px;
         text-align: left;
         vertical-align: top;
+        width: calc(100% - 370px);
 
         .jumbotron {
             font-size: 18px;
@@ -78,33 +77,36 @@
             text-decoration: underline;
         }
 
-        &__header {
+        p.content-alert {
+            background-color: $purple;
+            color: $white;
+            box-sizing: border-box;
+            padding: 20px;
+            font-weight: bold;
+            line-height: 1.5;
+            display: inline-block;
+        }
+        
+        div.content-video {
+            margin-top: 20px;    
+            width: 100%;
+            text-align: left;
 
-            &__icon {
-                display: inline-block;
-                width: 30px;
-                vertical-align: top;
-                padding-top: 20px;
-            }
-
-            &__text {
-                display: inline-block;
-                margin-left: 10px;
-                width: calc(100% - 50px);
-                vertical-align: top;
+            img {
+                width: 100%;
             }
         }
     }
 
     &__right {
-        min-height: 250px;
+        margin-right: 40px;
         padding-left: 40px;
         padding-right:20px;
         padding-top: 20px;
         padding-bottom: 20px;
         text-align: left;
         vertical-align: top;
-        display: table-cell;
+        float: right;
         width: 288px;
     }
 
@@ -116,11 +118,21 @@
         padding-top: 20px;
 
         &__left {
+
             display: block;
             width: 100%;
+            margin-right: 40px;
+
+            p.content-alert {
+                margin-top: -10px;
+                margin-right: 20px;
+            }
+
         }
 
         &__right {
+            margin: 0;
+            padding: 0;
             display: block;
             width: 100%;
         }
