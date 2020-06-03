@@ -13,10 +13,10 @@ module Events
     attribute :postcode, :string
     attribute :month, :string
 
-    validates :type, presence: true, inclusion: { in: EVENT_TYPES }
+    validates :type, presence: true, inclusion: { in: EVENT_TYPES, allow_blank: true }
     validates :distance, inclusion: { in: DISTANCES }, allow_nil: true
-    validates :postcode, presence: true, postcode: true, if: :distance
-    validates :month, presence: true, format: { with: MONTH_FORMAT }
+    validates :postcode, presence: true, postcode: { allow_blank: true }, if: :distance
+    validates :month, presence: true, format: { with: MONTH_FORMAT, allow_blank: true }
 
     before_validation { self.distance = nil if distance.blank? }
     before_validation(unless: :distance) { self.postcode = nil }
