@@ -1,14 +1,19 @@
 <%= form_for event_search, method: :get, url: search_events_path do |f| %>
-  <div>
+  <div data-controller="conditional-field"
+    data-conditional-field-mode="hide" data-conditional-field-expected="">
+
     <div class="search-for-events__content__input">
         Showing
         <%= f.collection_select :type, f.object.available_event_types, :id, :value %>
     </div>
     <div class="search-for-events__content__input">
         happening
-        <%= f.select :distance, f.object.available_distances %>
+        <%= f.select :distance, f.object.available_distances, {},
+              data: { action: "conditional-field#toggle", target: "conditional-field.source" } %>
     </div>
-    <div class="search-for-events__content__input">
+    <div class="search-for-events__content__input"
+      data-target="conditional-field.showhide">
+
       your postcode
       <%= f.text_field :postcode %>
     </div>
