@@ -7,7 +7,9 @@
     overflow: hidden;
 
     &__banner {
-        margin-top: 250px;
+
+        position: absolute;
+        bottom: 40px;
         margin-left: -10px;
         line-height: 1.3;
 
