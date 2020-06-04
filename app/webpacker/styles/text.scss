@@ -28,13 +28,13 @@ h4 {
 p {
     @include font;
     font-size: 19px;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 a {
     @include font;
     color: $black;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
 .strapline-image {
