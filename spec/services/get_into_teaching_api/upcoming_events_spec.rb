@@ -6,7 +6,7 @@ describe GetIntoTeachingApi::UpcomingEvents do
   let(:building_id) { SecureRandom.uuid }
   let(:room_id) { SecureRandom.uuid }
   let(:apicall) { "teaching_events/upcoming" }
-  let(:testdata) { build_list :event_api, 1, startDate: "2020-05-18" }
+  let(:testdata) { build_list :event_api, 1 }
 
   describe "#events" do
     it { is_expected.to be_kind_of Array }
@@ -15,12 +15,13 @@ describe GetIntoTeachingApi::UpcomingEvents do
     it { is_expected.to all respond_to :eventName }
 
     context "event details" do
+      let(:startdate) { Date.parse testdata[0]["startDate"] }
       subject { client.call.first }
       it { is_expected.to be_kind_of GetIntoTeachingApi::Types::Event }
       it { is_expected.to have_attributes eventId: testdata[0]["eventId"] }
       it { is_expected.to have_attributes eventName: testdata[0]["eventName"] }
-      it { is_expected.to have_attributes startDate: Date.parse("2020-05-18") }
-      it { is_expected.to have_attributes endDate: Date.parse("2020-05-18") }
+      it { is_expected.to have_attributes startDate: startdate }
+      it { is_expected.to have_attributes endDate: startdate }
     end
 
     context "event building" do
