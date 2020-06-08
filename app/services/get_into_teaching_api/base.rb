@@ -48,7 +48,7 @@ module GetIntoTeachingApi
     end
 
     def headers
-      { "Accept" => "appilcation/json" }
+      { "Accept" => "application/json" }
     end
 
     def data
