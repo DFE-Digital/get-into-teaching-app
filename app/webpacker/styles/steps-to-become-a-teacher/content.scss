@@ -31,3 +31,21 @@
         }
     }
 }
+
+@media only screen and (max-width: 800px) {
+
+    .content {
+    
+        .steps-header {
+            h1 {
+                font-size: 19px;
+            }
+
+            &__number {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
+    }
+}

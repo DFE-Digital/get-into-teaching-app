@@ -34,7 +34,6 @@
             text-align: right;
             font-weight: bold;
             letter-spacing: 0px;
-            text-decoration: underline;
             color: #1D1D1B;
             margin-left: -10px;
             margin-bottom: -20px;
@@ -42,7 +41,7 @@
         }
 
         li a:hover {
-            text-decoration: none;
+            text-decoration: underline;
         }
     }
 
@@ -81,19 +80,22 @@
                 display: block;
                 text-align: center;
                 padding: 2px;
-                text-decoration: none;
                 text-align: right;
                 font-weight: bold;
                 letter-spacing: 0px;
-                text-decoration: underline;
                 color: #1D1D1B;
                 margin-right: 40px;
                 padding-right: 0px;
             }
 
+            a:hover {
+                text-decoration: underline;
+            }
+
             ul {
                 list-style-type:none;
             }
+
         }
 
         &__container {
