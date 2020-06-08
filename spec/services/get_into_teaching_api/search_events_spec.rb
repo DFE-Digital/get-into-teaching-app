@@ -9,9 +9,7 @@ describe GetIntoTeachingApi::SearchEvents do
   let(:api_params) { { token: token, endpoint: endpoint } }
   let(:search_params) { attributes_for :events_search }
   let(:client) { described_class.new(**api_params.merge(search_params)) }
-  let(:testdata) do
-    build_list :event_api, 1, eventName: "Become a teacher", startDate: "2020-05-18"
-  end
+  let(:testdata) { build_list :event_api, 1 }
 
   describe "#events" do
     before do
@@ -31,12 +29,13 @@ describe GetIntoTeachingApi::SearchEvents do
     it { is_expected.to all respond_to :eventName }
 
     context "event details" do
+      let(:startdate) { Date.parse testdata[0]["startDate"] }
       subject { client.call.first }
       it { is_expected.to be_kind_of GetIntoTeachingApi::Types::Event }
       it { is_expected.to have_attributes eventId: testdata[0]["eventId"] }
-      it { is_expected.to have_attributes eventName: "Become a teacher" }
-      it { is_expected.to have_attributes startDate: Date.parse("2020-05-18") }
-      it { is_expected.to have_attributes endDate: Date.parse("2020-05-18") }
+      it { is_expected.to have_attributes eventName: testdata[0]["eventName"] }
+      it { is_expected.to have_attributes startDate: startdate }
+      it { is_expected.to have_attributes endDate: startdate }
     end
 
     context "event building" do
