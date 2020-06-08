@@ -3,55 +3,15 @@ require "rails_helper"
 describe GetIntoTeachingApi::Event do
   include_examples "api support"
 
+  let(:testdata) do
+    build :event_api, eventName: "Become a teacher", startDate: "2020-05-18"
+  end
+
+  let(:event_id) { testdata["eventId"] }
+  let(:apicall) { "teaching_events/#{event_id}" }
+
   let(:client) do
     described_class.new event_id: event_id, token: token, endpoint: endpoint
-  end
-  let(:event_id) { SecureRandom.uuid }
-  let(:building_id) { SecureRandom.uuid }
-  let(:room_id) { SecureRandom.uuid }
-  let(:apicall) { "teaching_events/#{event_id}" }
-  let(:testdata) do
-    {
-      "eventId": event_id,
-      "readableEventId": event_id,
-      "eventName": "Become a teacher",
-      "description": "Become a teacher",
-      "startDate": "2020-05-18",
-      "endDate": "2020-05-18",
-      "eventType": 0,
-      "maxCapacity": 10,
-      "publicEventUrl": "https://event.url",
-      "building": {
-        "id": building_id,
-        "accessibleToilets": true,
-        "additionalFacilities": "string",
-        "addressComposite": "Line 1, Line 2",
-        "addressLine1": "Line 1",
-        "addressLine2": "Line 2",
-        "addressLine3": nil,
-        "city": "Manchestr",
-        "stateProvince": "Greater Manchester",
-        "country": "United Kingdom",
-        "postalCode": "MA1 1AM",
-        "description": "Main Lecture Halls Building",
-        "disabledAccess": true,
-        "disabledParking": true,
-        "publicTelephoneAvailable": true,
-        "email": "first@someone.com",
-        "name": "First Contact",
-        "telephone1": "01234567890",
-        "telephone2": nil,
-        "telephone3": nil,
-        "website": nil,
-        "wifiAvailable": true,
-      },
-      "room": {
-        "id": room_id,
-        "description": "Lecture Hall 1",
-        "name": "Lecture Hall 1",
-        "disabledAccess": true,
-      },
-    }
   end
 
   describe "#event" do
