@@ -24,4 +24,10 @@ module ApplicationHelper
       asset_pack_path(imgpath)
     end
   end
+
+  def fa_icon(icon_name, *additional_classes)
+    classes = ["fas", "fa-#{icon_name}"] + additional_classes
+    content_tag :i, "", class: classes.join(" ")
+  end
+  alias_method :fas, :fa_icon
 end
