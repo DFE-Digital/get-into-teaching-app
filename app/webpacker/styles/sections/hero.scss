@@ -11,7 +11,7 @@
     &__banner {
         width: 100%;
         position: absolute;
-        bottom: 40px;
+        bottom: 56px;
         
         &__text {
             margin-left: -10px;
@@ -52,6 +52,8 @@
 
         &__banner {
             
+            bottom: 40px;
+
             &__text {
                 
                 max-width: 90%;
