@@ -1,49 +1,44 @@
 .types-of-event {
 
+    vertical-align: top;
     text-align: left;
-    padding-top: 20px;
-    padding-bottom: 10px;
+    width: 100%;
 
-    &__header {
-        margin-top: 30px;
-        margin-bottom: 0px;
-        margin-left:20px;
+    &__left {
+
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right:20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        vertical-align: top;
+        width: calc(100% - 370px);
+
+        p.content-alert {
+            background-color: $purple;
+            color: $white;
+            box-sizing: border-box;
+            padding: 20px;
+            font-weight: bold;
+            line-height: 1.5;
+            display: inline-block;
+        }
+
     }
 
-    &__content {
+    &__right {
+
+        margin-right: 40px;
         padding-left: 40px;
-        padding-right: 40px;
+        padding-right:20px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        text-align: left;
+        vertical-align: top;
+        float: right;
+        width: 288px;
 
-        .strapline-prominent {
-            float: right;
-            margin-top: 40px;
-        }
-
-        &__prompt {
-            float: right;
-            margin-top: 40px;
-            margin-right:40px;
-            width: calc(100% - 370px);
-        }
-
-        &__nested {
-            padding-left:20px;
-            padding-right: 20px;;
-
-            ul {
-                list-style-type: square;
-            }
-
-            li {
-                font-size: 19px;
-                line-height: 1.6;
-                color: $purple;
-
-                span {
-                    color: $black;
-                }
-            }
-        }
     }
 
 }
@@ -120,14 +115,21 @@
 }
 
 .types-of-event-types {
+
+    vertical-align: top;
     text-align: left;
-    padding-bottom:60px;
+    width: 100%;
 
     &__content {
+
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right:20px;
         padding-top: 20px;
-        padding-left: 60px;
-        padding-right: 60px;
-        padding-bottom: 20px;
+        padding-bottom: 60px;
+        text-align: left;
+        vertical-align: top;
+        width: calc(100% - 370px);
 
         ul {
             list-style-type: square;
@@ -252,26 +254,39 @@
 @media only screen and (max-width: 800px) {
     
     .types-of-event {
+        padding-top: 20px;
 
-        &__header {
-            margin-top: 0px;
+        &__left {
+
+            display: block;
+            width: 100%;
+            margin-right: 40px;
+
+            p.content-alert {
+                margin-top: -10px;
+                margin-right: 20px;
+            }
+
         }
+
+        &__right {
+            margin: 0;
+            padding: 0;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .types-of-event-types {
+    
+        padding-top: 20px;
 
         &__content {
-            padding-left: 20px;
-            padding-right: 20px;
-
-            .strapline-prominent {
-                float: none;
-                display: block;
-            }
-
-            &__prompt {
-                float: none;
-                display: block;
-                width: 100%;
-            }
+            display: block;
+            width: 100%;
+            margin-right: 40px;
         }
-    
+
     }
+
 }
