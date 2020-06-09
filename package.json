@@ -11,6 +11,15 @@
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
+    "jest": "^26.0.1",
     "webpack-dev-server": "^3.11.0"
+  },
+  "jest": {
+    "roots": [
+      "spec/javascript"
+    ]
+  },
+  "scripts": {
+    "spec": "jest"
   }
 }
