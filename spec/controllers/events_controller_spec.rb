@@ -37,7 +37,6 @@ describe EventsController, type: :request do
     end
 
     it { is_expected.to have_http_status :success }
-    it { is_expected.to have_rendered "index" }
   end
 
   describe "#search" do
@@ -53,7 +52,6 @@ describe EventsController, type: :request do
       let(:search_params) { attributes_for :events_search }
 
       it { is_expected.to have_http_status :success }
-      it { is_expected.to have_rendered "index" }
       it { is_expected.to have_attributes media_type: "text/html" }
     end
 
@@ -61,7 +59,6 @@ describe EventsController, type: :request do
       let(:search_params) { { "distance" => "" } }
 
       it { is_expected.to have_http_status :success }
-      it { is_expected.to have_rendered "index" }
       it { is_expected.to have_attributes media_type: "text/html" }
     end
   end
@@ -91,7 +88,6 @@ describe EventsController, type: :request do
       end
 
       it { is_expected.to have_http_status :success }
-      it { is_expected.to have_rendered "show" }
     end
 
     xcontext "for unknown event" do
