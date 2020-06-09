@@ -1268,6 +1268,11 @@
   dependencies:
     "@stimulus/multimap" "^1.1.1"
 
+"@stimulus/test@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@stimulus/test/-/test-1.1.1.tgz#118d7f4be1d0d6b5e16900c344ab503f765f1d68"
+  integrity sha512-XNSYbnz1MZMqK0GkPTZknUrnbPxhDTGz06/hFEUICMgEO6RaUxPM8VHsEKmkwHqcAqNyTSPJI34J40NRWPUEKQ==
+
 "@stimulus/webpack-helpers@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@stimulus/webpack-helpers/-/webpack-helpers-1.1.1.tgz#eff60cd4e58b921d1a2764dc5215f5141510f2c2"

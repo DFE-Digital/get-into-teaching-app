@@ -11,12 +11,21 @@
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
+    "@stimulus/test": "^1.1.1",
     "jest": "^26.0.1",
     "webpack-dev-server": "^3.11.0"
   },
   "jest": {
+    "setupFiles": [
+      "./spec/javascript/setup.js"
+    ],
+    "testRegex": ".*_spec.js",
     "roots": [
       "spec/javascript"
+    ],
+    "moduleDirectories": [
+      "node_modules",
+      "app/webpacker/controllers"
     ]
   },
   "scripts": {
