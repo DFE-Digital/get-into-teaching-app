@@ -16,3 +16,12 @@ body {
     text-align: center;
     margin: 0 auto;
 }
+
+@media only screen and (max-width: 800px) {
+    
+    .container-1000 {
+        box-sizing: border-box;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
