@@ -10,7 +10,13 @@ module Wizard
     end
 
     def fetch(*keys)
-      data.slice(*Array.wrap(keys))
+      data.slice(*Array.wrap(keys).flatten)
+    end
+
+    def persist(attributes)
+      data.merge! attributes.symbolize_keys
+
+      true
     end
 
     class InvalidBackingStore < RuntimeError; end

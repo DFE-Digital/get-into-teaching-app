@@ -42,9 +42,18 @@ describe Wizard::Store do
   end
 
   describe "#fetch" do
-    subject { instance.fetch :name, :region }
-    it "will return hash of requested keys" do
-      is_expected.to eql({ name: "Joe", region: "North West" })
+    context "with multiple keys" do
+      subject { instance.fetch :name, :region }
+      it "will return hash of requested keys" do
+        is_expected.to eql({ name: "Joe", region: "North West" })
+      end
+    end
+
+    context "with array of keys" do
+      subject { instance.fetch %i[name region] }
+      it "will return hash of requested keys" do
+        is_expected.to eql({ name: "Joe", region: "North West" })
+      end
     end
   end
 end
