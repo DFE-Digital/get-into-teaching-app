@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe Wizard::Base do
+  include_context "wizard store"
+
   class Name < Wizard::Step
     attribute :name
   end
@@ -9,22 +11,20 @@ describe Wizard::Base do
     attribute :age, :integer
   end
 
-  class Address < Wizard::Step
+  class Postcode < Wizard::Step
     attribute :postcode
   end
 
   class TestWizard < Wizard::Base
-    self.steps = [Name, Age, Address].freeze
+    self.steps = [Name, Age, Postcode].freeze
   end
 
   let(:wizardclass) { TestWizard }
-  let(:backingstore) { { name: "Joe", age: 35 } }
-  let(:store) { Wizard::Store.new backingstore }
-  let(:wizard) { wizardclass.new store }
+  let(:wizard) { wizardclass.new wizardstore }
 
   describe ".indexed_steps" do
     subject { wizardclass.indexed_steps }
-    it { is_expected.to eql("name" => Name, "age" => Age, "address" => Address) }
+    it { is_expected.to eql("name" => Name, "age" => Age, "postcode" => Postcode) }
   end
 
   describe ".step" do
@@ -70,11 +70,11 @@ describe Wizard::Base do
   describe "#next_step" do
     context "when there are more steps" do
       subject { wizard.next_step("age") }
-      it { is_expected.to eql "address" }
+      it { is_expected.to eql "postcode" }
     end
 
     context "when there are no more steps" do
-      subject { wizard.next_step("address") }
+      subject { wizard.next_step("postcode") }
       it { is_expected.to be_nil }
     end
   end
