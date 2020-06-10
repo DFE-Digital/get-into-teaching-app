@@ -1,4 +1,6 @@
-<%= form_for event_search, method: :get, url: search_events_path do |f| %>
+<%= form_for event_search, method: :get,
+      url: search_events_path(anchor: "searchforevents") do |f| %>
+
   <div data-controller="conditional-field"
     data-conditional-field-mode="hide" data-conditional-field-expected="">
 
