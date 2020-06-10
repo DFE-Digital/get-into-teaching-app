@@ -258,13 +258,15 @@
 
         &__left {
 
+            padding-left: 0px;
+            padding-right: 0px;
             display: block;
             width: 100%;
             margin-right: 40px;
 
             p.content-alert {
                 margin-top: -10px;
-                margin-right: 20px;
+                margin-right: 0px;
             }
 
         }
