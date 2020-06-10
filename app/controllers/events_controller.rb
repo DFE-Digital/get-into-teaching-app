@@ -13,6 +13,8 @@ class EventsController < ApplicationController
 
   def show
     @event = GetIntoTeachingApi::Client.event(params[:id])
+  rescue Faraday::ResourceNotFound
+    render template: "errors/not_found", status: :not_found
   end
 
 private

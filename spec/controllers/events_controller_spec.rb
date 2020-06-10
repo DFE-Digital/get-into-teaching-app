@@ -90,13 +90,14 @@ describe EventsController, type: :request do
       it { is_expected.to have_http_status :success }
     end
 
-    xcontext "for unknown event" do
+    context "for unknown event" do
       before do
         allow_any_instance_of(GetIntoTeachingApi::Event).to \
           receive(:data).and_raise Faraday::ResourceNotFound.new(nil)
       end
 
       it { is_expected.to have_http_status :not_found }
+      it { is_expected.to have_attributes body: %r{page.+exist} }
     end
   end
 end
