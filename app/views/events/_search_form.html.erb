@@ -1,0 +1,39 @@
+<%= form_for event_search, method: :get,
+      url: search_events_path(anchor: "searchforevents") do |f| %>
+
+  <div data-controller="conditional-field"
+    data-conditional-field-mode="hide" data-conditional-field-expected="">
+
+    <div class="search-for-events__content__input">
+        Showing
+        <%= f.collection_select :type, f.object.available_event_types, :id, :value %>
+    </div>
+    <div class="search-for-events__content__input">
+        happening
+        <%= f.select :distance, f.object.available_distances, {},
+              data: { action: "conditional-field#toggle", target: "conditional-field.source" } %>
+    </div>
+    <div class="search-for-events__content__input"
+      data-target="conditional-field.showhide">
+
+      your postcode
+      <%= f.text_field :postcode %>
+    </div>
+    <div class="search-for-events__content__input">
+        in
+        <%= f.select :month, f.object.available_months %>
+    </div>
+  </div>
+
+  <% if f.object.errors.any? %>
+  <ol class="search-for-events__content__errors">
+    <% f.object.errors.full_messages.each do |error_message| %>
+    <li><%= error_message %></li>
+    <% end %>
+  </ol>
+  <% end %>
+
+  <div class="search-for-events__content__update">
+    <button class="request-button">Update results <%= fas "sync" %></button>
+  </div>
+<% end %>
