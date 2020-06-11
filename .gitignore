@@ -37,3 +37,7 @@ yarn-debug.log*
 /config/credentials/*.key
 /coverage
 .idea
+.terraform/
+tokens
+terraform.tfstate
+terraform.tfstate.backup
