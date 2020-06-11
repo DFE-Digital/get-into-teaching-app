@@ -1,4 +1,5 @@
 .navbar {
+
     height: 112px;
     width: 100%;
     background-color: $white;
@@ -47,7 +48,7 @@
 
     &__mobile {
         
-        float:right;
+        display:none;
     
         a {
             text-decoration: none;
@@ -185,6 +186,9 @@
     }
     
     .navbar {
+
+        height: auto;
+        
         &__desktop {
             display: none;
         }
