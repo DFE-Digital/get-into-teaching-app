@@ -17,9 +17,12 @@
         </div>
     </div>
     <div class="navbar__mobile">
-        <a href="javascript:void(0);" class="icon" onclick="navToggle()">
-            <div id='hamburger' class="icon-hamburger"></div>
-        </a>
+        <div class="navbar__mobile__buttons">
+            <a href="javascript:void(0);" class="icon" onclick="navToggle()">
+                <div id='hamburger' class="icon-close"></div>
+                <div id="navbar-label" class="icon-hamburger-label">Close</div>
+            </a>
+        </div>
         <div id="navbar-mobile-links" class="navbar__mobile__links">
             <ul>
                 <li><a href="/">Home</a></li>
@@ -32,13 +35,13 @@
             </ul>
         </div>
     </div>
-    <div class="navbar__mobile navbar__mobile__container">
+    <%# <div class="navbar__mobile navbar__mobile__container">
         <a href="javascript:void(0);" class="icon" onclick="navToggle()">
             <span id="navbar-label" class="navbar__mobile__label">
                 Menu
             </span>
         </a>
-    </div>
+    </div> %>
 </nav>
 
 <div class="logo">
@@ -107,8 +110,5 @@
             }
         }
     );
-
-
-
 
 </script>
