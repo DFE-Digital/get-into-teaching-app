@@ -16,9 +16,9 @@
             </ul>
         </div>
     </div>
-    <div class="navbar__mobile">
+    <div class="navbar__mobile" data-controller="navigation">
         <div class="navbar__mobile__buttons">
-            <a href="javascript:void(0);" class="icon" onclick="navToggle()">
+            <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
                 <div id='hamburger' class="icon-close"></div>
                 <div id="navbar-label" class="icon-hamburger-label">Close</div>
             </a>
@@ -35,13 +35,6 @@
             </ul>
         </div>
     </div>
-    <%# <div class="navbar__mobile navbar__mobile__container">
-        <a href="javascript:void(0);" class="icon" onclick="navToggle()">
-            <span id="navbar-label" class="navbar__mobile__label">
-                Menu
-            </span>
-        </a>
-    </div> %>
 </nav>
 
 <div class="logo">
@@ -54,21 +47,6 @@
 </div>
 
 <script>
-    function navToggle() {
-        var links = document.getElementById("navbar-mobile-links");
-        var icon = document.getElementById("hamburger");
-        var label = document.getElementById("navbar-label");
-        if (links.style.display === "block") {
-            links.style.display = "none";
-            icon.className = 'icon-hamburger';
-            label.innerHTML = "Menu";
-        } else {
-            links.style.display = "block";
-            icon.className = 'icon-close';
-            label.innerHTML = "Close";
-        }
-    }
-
     function toggleCollapsable(item) {
 
         //toggle icon
@@ -97,18 +75,16 @@
         }
     }
 
-    document.addEventListener('DOMContentLoaded', function(event) {
-
-            var collapsableElements = document.getElementsByClassName('collapsable');
-            for(var i=0; i< collapsableElements.length; i+=1) {
-                var elementId = collapsableElements[i].getAttribute('id');
-                if(elementId) {
-                    var frags = elementId.split('-');
-                    var last = frags[frags.length-1];
-                    toggleCollapsable(last);
-                }
+    window.addEventListener('DOMContentLoaded', function(event) {
+        var collapsableElements = document.getElementsByClassName('collapsable');
+        for(var i=0; i< collapsableElements.length; i+=1) {
+            var elementId = collapsableElements[i].getAttribute('id');
+            if(elementId) {
+                var frags = elementId.split('-');
+                var last = frags[frags.length-1];
+                toggleCollapsable(last);
             }
         }
-    );
+    });
 
 </script>
