@@ -2,22 +2,21 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
 
+    static targets = [ "hamburger", "label", "links" ]
+
     connect() {
         this.navToggle();
     }
 
     navToggle() {
-        var links = document.getElementById("navbar-mobile-links");
-        var icon = document.getElementById("hamburger");
-        var label = document.getElementById("navbar-label");
-        if (links.style.display === "block" || links.style.display === "") {
-            links.style.display = "none";
-            icon.className = 'icon-hamburger';
-            label.innerHTML = "Menu";
+        if (this.linksTarget.style.display === "block" || this.linksTarget.style.display === "") {
+            this.linksTarget.style.display = "none";
+            this.hamburgerTarget.className = 'icon-hamburger';
+            this.labelTarget.innerHTML = "Menu";
         } else {
-            links.style.display = "block";
-            icon.className = 'icon-close';
-            label.innerHTML = "Close";
+            this.linksTarget.style.display = "block";
+            this.hamburgerTarget.className = 'icon-close';
+            this.labelTarget.innerHTML = "Close";
         }
     }
 
