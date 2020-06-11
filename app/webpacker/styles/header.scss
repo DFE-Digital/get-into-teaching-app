@@ -166,14 +166,17 @@
 @media only screen and (max-width: 900px) {
 
     .logo {
+
+        top: 15px;
+
         &__image {
 
-            width: 200px;
-            height: 100px;
+            width: 193px;
+            height: 85px;
 
             img {
-                margin-top: 26px;
-                margin-left: 28px;
+                margin-top: 20px;
+                margin-left: 24px;
                 width: 138;
                 height: 30px;
             }
@@ -181,7 +184,8 @@
             &__tagline {
                 font-size: 12px;
                 letter-spacing: -0.7;
-                margin-left: 34px;
+                margin-left: 31px;
+                margin-top: -5px;
             }
         }
     }
