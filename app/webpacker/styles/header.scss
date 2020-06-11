@@ -84,6 +84,7 @@
 
         &__links {
 
+            font-size: 16px;
             padding: 1px;
             background-color: $grey;
             width: 100%;
@@ -188,7 +189,7 @@
     .navbar {
 
         height: auto;
-        
+
         &__desktop {
             display: none;
         }
