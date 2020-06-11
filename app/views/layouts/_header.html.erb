@@ -16,11 +16,14 @@
             </ul>
         </div>
     </div>
-    <div class="navbar__mobile">
-        <a href="javascript:void(0);" class="icon" onclick="navToggle()">
-            <div id='hamburger' class="icon-hamburger"></div>
-        </a>
-        <div id="navbar-mobile-links" class="navbar__mobile__links">
+    <div class="navbar__mobile" data-controller="navigation">
+        <div class="navbar__mobile__buttons">
+            <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
+                <div data-target="navigation.hamburger" id='hamburger' class="icon-close"></div>
+                <div data-target="navigation.label" id="navbar-label" class="icon-hamburger-label">Close</div>
+            </a>
+        </div>
+        <div data-target="navigation.links" id="navbar-mobile-links" class="navbar__mobile__links">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
@@ -31,13 +34,6 @@
                 <li><a href="/">Talk to us</a></li>
             </ul>
         </div>
-    </div>
-    <div class="navbar__mobile navbar__mobile__container">
-        <a href="javascript:void(0);" class="icon" onclick="navToggle()">
-            <span id="navbar-label" class="navbar__mobile__label">
-                Menu
-            </span>
-        </a>
     </div>
 </nav>
 
@@ -51,21 +47,6 @@
 </div>
 
 <script>
-    function navToggle() {
-        var links = document.getElementById("navbar-mobile-links");
-        var icon = document.getElementById("hamburger");
-        var label = document.getElementById("navbar-label");
-        if (links.style.display === "block") {
-            links.style.display = "none";
-            icon.className = 'icon-hamburger';
-            label.innerHTML = "Menu";
-        } else {
-            links.style.display = "block";
-            icon.className = 'icon-close';
-            label.innerHTML = "Close";
-        }
-    }
-
     function toggleCollapsable(item) {
 
         //toggle icon
@@ -94,21 +75,16 @@
         }
     }
 
-    document.addEventListener('DOMContentLoaded', function(event) {
-
-            var collapsableElements = document.getElementsByClassName('collapsable');
-            for(var i=0; i< collapsableElements.length; i+=1) {
-                var elementId = collapsableElements[i].getAttribute('id');
-                if(elementId) {
-                    var frags = elementId.split('-');
-                    var last = frags[frags.length-1];
-                    toggleCollapsable(last);
-                }
+    window.addEventListener('DOMContentLoaded', function(event) {
+        var collapsableElements = document.getElementsByClassName('collapsable');
+        for(var i=0; i< collapsableElements.length; i+=1) {
+            var elementId = collapsableElements[i].getAttribute('id');
+            if(elementId) {
+                var frags = elementId.split('-');
+                var last = frags[frags.length-1];
+                toggleCollapsable(last);
             }
         }
-    );
-
-
-
+    });
 
 </script>

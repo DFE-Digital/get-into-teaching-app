@@ -1,4 +1,5 @@
 .navbar {
+
     height: 112px;
     width: 100%;
     background-color: $white;
@@ -46,35 +47,47 @@
     }
 
     &__mobile {
+        
         display:none;
-        float:right;
-        margin-right: 40px;
-        margin-top:40px;
     
         a {
             text-decoration: none;
         }
-    
+
+        &__buttons {
+            height: 85px;
+        }
+
         .icon-hamburger {
+            float: right;
             color: $black;
-            margin-top: 8px;
+            margin-top: 30px;
+            margin-right: 15px;
         }
 
         .icon-close {
+            float: right;
             color: $black;
-            margin-top: 6px;
-            margin-left:5px;
+            margin-top: 28px;
+            margin-right: 15px;
+        }
+
+        .icon-hamburger-label {
+            float: right;
+            color: $black;
+            margin-top: 29px;
+            margin-right: 10px;
+            font-weight: bold;
+            font-size: 16px;
+            letter-spacing: 0px;
         }
 
         &__links {
 
-            position: absolute;
-            top: 112px;
-            right: 0;
+            font-size: 16px;
+            padding: 1px;
             background-color: $grey;
-            z-index: 500;
             width: 100%;
-            display:none;
         
             a {
                 display: block;
@@ -101,13 +114,6 @@
         &__container {
             margin-right : 10px;
             margin-top :47px; 
-        }
-    
-        &__label {
-            color: $black;
-            font-weight: bold;
-            font-size: 19px;
-            letter-spacing: 0px;
         }
     }
 
@@ -160,14 +166,17 @@
 @media only screen and (max-width: 900px) {
 
     .logo {
+
+        top: 15px;
+
         &__image {
 
-            width: 200px;
-            height: 100px;
+            width: 193px;
+            height: 85px;
 
             img {
-                margin-top: 26px;
-                margin-left: 28px;
+                margin-top: 20px;
+                margin-left: 24px;
                 width: 138;
                 height: 30px;
             }
@@ -175,12 +184,16 @@
             &__tagline {
                 font-size: 12px;
                 letter-spacing: -0.7;
-                margin-left: 34px;
+                margin-left: 31px;
+                margin-top: -5px;
             }
         }
     }
     
     .navbar {
+
+        height: auto;
+
         &__desktop {
             display: none;
         }
@@ -188,6 +201,7 @@
 
     .navbar__mobile {
         display: block;
+        width: 100%;
     }
     
 }
