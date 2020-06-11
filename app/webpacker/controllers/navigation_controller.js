@@ -9,15 +9,10 @@ export default class extends Controller {
     }
 
     navToggle() {
-        if (this.linksTarget.style.display === "block" || this.linksTarget.style.display === "") {
-            this.linksTarget.style.display = "none";
-            this.hamburgerTarget.className = 'icon-hamburger';
-            this.labelTarget.innerHTML = "Menu";
-        } else {
-            this.linksTarget.style.display = "block";
-            this.hamburgerTarget.className = 'icon-close';
-            this.labelTarget.innerHTML = "Close";
-        }
+        const hide = this.linksTarget.style.display === "block" || this.linksTarget.style.display === "";
+        this.linksTarget.style.display = hide ? "none" : "block";
+        this.hamburgerTarget.className = hide ? "icon-hamburger" : "icon-close";
+        this.labelTarget.innerHTML = hide ? "Menu" : "Close";
     }
 
 }
