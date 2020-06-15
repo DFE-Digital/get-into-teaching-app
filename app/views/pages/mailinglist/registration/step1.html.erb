@@ -1,0 +1,50 @@
+<section class="mailing-reg-main">
+    <div class="mailing-reg-main__content container-1000">
+        <div class="mailing-reg-main__content__left">
+            <h1>Stay up-to-date with personalised information to help you get into teaching</h1>
+            <p>
+                We’ll use the data you provide here to ensure we send information that’s relevant to you and helps you to take your next steps into teaching. 
+            </p>    
+            <p>    
+                If your circumstances change, you can update your details so you can stay informed about the things that matter to you.
+            </p>
+
+            <div class="govuk-form-group">
+                <div class="fieldlabel">First name</div>
+                <input class="govuk-input" id="first-name" name="first-name" type="text">
+
+                <div class="fieldlabel">Last name</div>
+                <input class="govuk-input" id="last-name" name="last-name" type="text">
+                
+                <div class="fieldlabel">Email address</div>
+                <input class="govuk-input" id="email-address" name="email-address" type="text">
+            </div>
+
+            <div>
+                <h3>How would you describe yourself?</h3>
+                <p>    
+                    Tell us where you are on your teacher training journey and we will send you personalised information to help you understand your potential next steps in finding out more about teaching
+                </p>
+                <select class="govuk-select" id="sort" name="sort">
+                    <option value="idea">It's just an idea</option>
+                    <option value="unsure">I'm not sure and finding out more</option>
+                    <option value="exploring">I'm fairly sure and exploring my options</option>
+                    <option value="sure">I'm very sure and think I'll apply</option>
+                    <option value="applied">I've applied for teacher training</option>
+                    <option value="accepted">I've been accepted on teacher training</option>
+                </select>
+            </div>
+
+            <div>
+                <a href="/mailinglist/register/2">
+                    <div class="call-to-action-button">Next Step  <i class="fas fa-chevron-right"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="mailing-reg-main__content__right">
+            
+        </div>
+    </div>
+</section>
+
+<%= render "sections/talk-to-us" %>
