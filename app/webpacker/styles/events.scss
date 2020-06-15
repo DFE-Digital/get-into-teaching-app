@@ -243,9 +243,6 @@
                 font-size: 17px;
             }
         }
-
-
-
         
     }
 
@@ -289,6 +286,31 @@
             margin-right: 40px;
         }
 
+    }
+
+    .search-for-events {
+        &__content {
+            &__input {
+                
+                display: block;
+
+                &__label {
+                    display: block;
+                }
+
+                &__select {
+                    display: block;
+                    
+                    select {
+                        margin-top: 10px;
+                        margin-left: 0px;
+                        margin-right: 0px;
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
     }
 
 }
