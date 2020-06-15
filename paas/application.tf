@@ -4,6 +4,7 @@ resource "cloudfoundry_app" "app_application" {
     docker_image = var.paas_app_docker_image
     stopped      = var.application_stopped
     strategy     = "blue-green-v2"
+    memory       = 1024
     dynamic "service_binding" {
       for_each = cloudfoundry_user_provided_service.logging
       content {
@@ -18,7 +19,6 @@ resource "cloudfoundry_app" "app_application" {
           HTTPAUTH_USERNAME = var.HTTPAUTH_USERNAME
           RAILS_ENV = var.RAILS_ENV
           RAILS_MASTER_KEY = var.RAILS_MASTER_KEY
-          SECRET_KEY_BASE = var.SECRET_KEY_BASE
     }    
 }
 
