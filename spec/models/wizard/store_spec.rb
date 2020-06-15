@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Wizard::Store do
-  let(:backingstore) { { name: "Joe", age: 20, region: "North West" } }
+  let(:backingstore) { { name: "Joe", age: 20, region: "Manchester" } }
   let(:instance) { described_class.new backingstore }
   subject { instance }
 
@@ -45,14 +45,14 @@ describe Wizard::Store do
     context "with multiple keys" do
       subject { instance.fetch :name, :region }
       it "will return hash of requested keys" do
-        is_expected.to eql({ name: "Joe", region: "North West" })
+        is_expected.to eql({ name: "Joe", region: "Manchester" })
       end
     end
 
     context "with array of keys" do
       subject { instance.fetch %i[name region] }
       it "will return hash of requested keys" do
-        is_expected.to eql({ name: "Joe", region: "North West" })
+        is_expected.to eql({ name: "Joe", region: "Manchester" })
       end
     end
   end

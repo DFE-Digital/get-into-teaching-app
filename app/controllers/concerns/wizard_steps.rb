@@ -6,6 +6,7 @@ module WizardSteps
     before_action :load_current_step
   end
 
+  # current_step loaded via before_action
   def show; end
 
   def update
