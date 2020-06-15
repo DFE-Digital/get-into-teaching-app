@@ -105,8 +105,12 @@ GEM
     foreman (0.87.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    govuk_design_system_formbuilder (1.2.0)
+      actionview (>= 5.2)
+      activemodel (>= 5.2)
+      activesupport (>= 5.2)
     hashdiff (1.0.1)
-    i18n (1.8.2)
+    i18n (1.8.3)
       concurrent-ruby (~> 1.0)
     kramdown (2.2.1)
       rexml
@@ -292,6 +296,7 @@ DEPENDENCIES
   faraday_middleware
   foreman
   front_matter_parser!
+  govuk_design_system_formbuilder
   kramdown
   listen (>= 3.0.5, < 3.3)
   pry-byebug
