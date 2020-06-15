@@ -75,10 +75,15 @@
                 padding-bottom: 6px;
             }
 
+            a {
+                text-decoration: none;
+            }
+
             p {
                 padding: 0px;
                 margin: 0px;
                 font-weight: bold;
+                text-decoration: none;
 
                 i {
                     position: relative;
@@ -86,6 +91,7 @@
                     left: 10px;
                 }
             }
+
             
         }
     }
