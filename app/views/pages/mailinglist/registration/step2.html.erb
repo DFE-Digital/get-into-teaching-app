@@ -1,0 +1,43 @@
+<section class="mailing-reg-main">
+    <div class="mailing-reg-main__content container-1000">
+        <div class="mailing-reg-main__content__left">
+            <h1>Stay up-to-date with personalised information to help you get into teaching</h1>
+
+            <h3>What year are you currently in?</h3>
+            <p>    
+                Depending on what year you are in we can send relevant content to support you as you study.
+            </p>
+            <select class="govuk-select" id="uniyear" name="uniyear">
+                <option value="first">I'm in my first year at University</option>
+                <option value="second">I'm in my second year at University</option>
+                <option value="placement">I'm in my placement year at University</option>
+                <option value="final">I'm in my final year at University</option>
+            </select>
+            
+            <h3>How strongly have you considered teaching as a career so far?</h3>
+            <p>    
+                This helps us tailor our updates to match the your circumstances.
+            </p>
+            <select class="govuk-select" id="stage" name="stage">
+                <option value="idea">It's just an idea</option>
+                <option value="unsure">I'm not sure and finding out more</option>
+                <option value="exploring">I'm fairly sure and exploring my options</option>
+                <option value="sure">I'm very sure and think I'll apply</option>
+                <option value="applied">I've applied for teacher training</option>
+                <option value="accepted">I've been accepted on teacher training</option>
+            </select>
+
+
+            <div>
+                <a href="/mailinglist/register/3">
+                    <div class="call-to-action-button">Next Step  <i class="fas fa-chevron-right"></i></div>
+                </a>
+            </div>
+        </div>
+        <div class="mailing-reg-main__content__right">
+            
+        </div>
+    </div>
+</section>
+
+<%= render "sections/talk-to-us" %>

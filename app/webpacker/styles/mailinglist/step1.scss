@@ -1,4 +1,4 @@
-.event-reg-main {
+.mailing-reg-main {
     border-top: 1px solid $black;
     padding-top: 70px;
     padding-bottom: 100px;
@@ -28,12 +28,15 @@
                 margin: 0;
             }
 
-            .govuk-input {
+            .govuk-input, .govuk-select {
                 max-width: 375px;
                 margin-bottom: 30px;
+                margin-left: 0px;
             }
 
-            
+            .call-to-action-button {
+                margin-top: 30px;
+            }
         }
 
         &__right {
