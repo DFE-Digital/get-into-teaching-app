@@ -20,6 +20,10 @@ module Wizard
       def step_keys
         indexed_steps.keys
       end
+
+      def first_step
+        step_keys.first
+      end
     end
 
     delegate :steps, :step, :step_index, :indexed_steps, :step_keys, to: :class

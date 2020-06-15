@@ -54,6 +54,11 @@ describe Wizard::Base do
     it { is_expected.to eql %w[name age postcode] }
   end
 
+  describe ".first_step" do
+    subject { wizardclass.first_step }
+    it { is_expected.to eql "name" }
+  end
+
   describe ".new" do
     it "should return instance for known step" do
       expect(wizardclass.new(wizardstore, "name")).to be_instance_of wizardclass

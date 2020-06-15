@@ -3,7 +3,11 @@ module WizardSteps
 
   included do
     class_attribute :wizard_class
-    before_action :load_current_step
+    before_action :load_current_step, except: %i[index]
+  end
+
+  def index
+    redirect_to step_path(wizard_class.first_step)
   end
 
   # current_step loaded via before_action
@@ -29,7 +33,7 @@ private
 
   def next_step_path
     next_step = wizard.next_step
-    next_step ? event_step_path(next_step) : root_path
+    next_step ? step_path(next_step) : root_path
   end
 
   def step_params

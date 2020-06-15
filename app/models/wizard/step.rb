@@ -9,6 +9,9 @@ module Wizard
       end
     end
 
+    delegate :key, to: :class
+    alias_method :id, :key
+
     def initialize(store, attributes = {}, *args)
       @store = store
       super(*args)
@@ -20,6 +23,10 @@ module Wizard
       return false unless valid?
 
       persist_to_store
+    end
+
+    def persisted?
+      !id.nil?
     end
 
   private
