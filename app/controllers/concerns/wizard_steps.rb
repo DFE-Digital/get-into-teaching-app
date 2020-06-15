@@ -19,15 +19,15 @@ module WizardSteps
 private
 
   def wizard
-    wizard_class.new(wizard_store)
+    wizard_class.new(wizard_store, params[:id])
   end
 
   def load_current_step
-    @current_step = wizard.find(params[:id])
+    @current_step = wizard.find_current_step
   end
 
   def next_step_path
-    next_step = wizard.next_step(params[:id])
+    next_step = wizard.next_step
     next_step ? event_step_path(next_step) : root_path
   end
 

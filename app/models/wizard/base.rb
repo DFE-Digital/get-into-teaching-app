@@ -14,24 +14,37 @@ module Wizard
       def step_index(key)
         steps.index step(key)
       end
+
+      def step_keys
+        indexed_steps.keys
+      end
     end
 
-    delegate :steps, :step, :step_index, :indexed_steps, to: :class
+    delegate :steps, :step, :step_index, :indexed_steps, :step_keys, to: :class
+    attr_reader :current_step
 
-    def initialize(store)
+    def initialize(store, current_step)
       @store = store
+
+      raise(UnknownStep) unless step_keys.include?(current_step)
+
+      @current_step = current_step
     end
 
     def find(key)
       step(key).new @store
     end
 
-    def previous_step(key)
+    def find_current_step
+      find current_step
+    end
+
+    def previous_step(key = current_step)
       index = step_index(key)
       index.positive? ? steps[index - 1]&.key : nil
     end
 
-    def next_step(key)
+    def next_step(key = current_step)
       steps[step_index(key) + 1]&.key
     end
 
