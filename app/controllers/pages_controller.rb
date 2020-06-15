@@ -19,6 +19,10 @@ class PagesController < ApplicationController
     render template: "pages/events/registration/step#{params[:step_number]}"
   end
 
+  def mailingregistration
+    render template: "pages/mailinglist/registration/step#{params[:step_number]}"
+  end
+
   def show
     render template: "content/#{params[:page]}", layout: "layouts/content"
   end
