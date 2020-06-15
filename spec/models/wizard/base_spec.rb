@@ -34,7 +34,7 @@ describe Wizard::Base do
 
     it "will raise exception for unknown step" do
       expect { wizardclass.step("unknown") }.to \
-        raise_exception(Wizard::Base::UnknownStep)
+        raise_exception(Wizard::UnknownStep)
     end
   end
 
@@ -45,7 +45,7 @@ describe Wizard::Base do
 
     it "will raise exception for unknown step" do
       expect { wizardclass.step_index("unknown") }.to \
-        raise_exception(Wizard::Base::UnknownStep)
+        raise_exception(Wizard::UnknownStep)
     end
   end
 
@@ -61,7 +61,7 @@ describe Wizard::Base do
 
     it "should raise exception for unknown step" do
       expect { wizardclass.new wizardstore, "unknown" }.to \
-        raise_exception Wizard::Base::UnknownStep
+        raise_exception Wizard::UnknownStep
     end
   end
 

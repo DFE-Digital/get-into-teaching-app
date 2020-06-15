@@ -1,4 +1,6 @@
 module Wizard
+  class UnknownStep < RuntimeError; end
+
   class Base
     class_attribute :steps
 
@@ -47,7 +49,5 @@ module Wizard
     def next_step(key = current_step)
       steps[step_index(key) + 1]&.key
     end
-
-    class UnknownStep < RuntimeError; end
   end
 end
