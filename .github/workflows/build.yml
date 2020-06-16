@@ -37,9 +37,9 @@ jobs:
     needs:
       - build_and_test
     steps:
-       - name: Get Short SHA
-         id: sha
-         run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
+      - name: Get Short SHA
+        id: sha
+        run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
       - name: Trigger build in Content repo
         run: |-
           curl -X POST \
