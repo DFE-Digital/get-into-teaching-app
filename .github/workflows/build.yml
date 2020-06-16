@@ -37,6 +37,9 @@ jobs:
     needs:
       - build_and_test
     steps:
+       - name: Get Short SHA
+         id: sha
+         run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
       - name: Trigger build in Content repo
         run: |-
           curl -X POST \
@@ -44,4 +47,5 @@ jobs:
             -H "Accept: application/vnd.github.v3+json" \
             -H "Content-Type: application/json" \
             https://api.github.com/repos/${{ env.CONTENT_REPOSITORY }}/dispatches \
-            --data '{"event_type": "Build triggered from App repo"}'
+            --data '{"event_type": "Build triggered from App repo" \
+                     "parent_sha": ${{ steps.sha.outputs.short}}  }'
