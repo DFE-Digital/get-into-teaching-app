@@ -41,9 +41,20 @@ en:
               blank: Enter your last name
             email_address:
               blank: Enter your full email address
+        events/steps/contact_details:
+          attributes:
+            phone_number:
+              invalid_format: Enter a valid phone number
   helpers:
     label:
       events_steps_personal_details:
         first_name: First name
         last_name: Last name
         email_address: Email address
+      events_steps_contact_details:
+        phone_number: Phone number (optional)
+    hint:
+      events_steps_contact_details:
+        phone_number: |-
+          This helps us contact you with updates to this event and other
+          important information.
