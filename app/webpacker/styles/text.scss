@@ -22,7 +22,7 @@ h3 {
 
 h4 {
     @include font;
-    font-size: 18px;
+    font-size: 19px;
 }
 
 p {
@@ -68,7 +68,7 @@ a {
     @include font;
     background-color: $pink;
     text-decoration: underline;
-    font-size: 18px;
+    font-size: 19px;
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 18px;
@@ -97,6 +97,7 @@ a {
     @include font;
     color: $blue;
     text-decoration: underline;
+    font-weight: bold;
 }
 
 @media only screen and (max-width: 800px) {
