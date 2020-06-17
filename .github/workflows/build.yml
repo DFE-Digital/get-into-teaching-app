@@ -33,8 +33,7 @@ jobs:
   trigger_content_build:
     name: Trigger build of Content repo
     runs-on: ubuntu-latest
-#   UNCOMMENT ONCE TESTED
-#   if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master'
     needs:
       - build_and_test
     steps:
