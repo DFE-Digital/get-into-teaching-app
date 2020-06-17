@@ -32,7 +32,9 @@ variable "additional_routes" {
   default = 1
 }
 
-variable "paas_additional_route_name" {}
+variable "paas_additional_route_name" {
+   default = ""
+}
 
 variable "paas_app_route_name" {}
 
@@ -49,7 +51,7 @@ variable "paas_app_docker_image" {
 }
 
 variable "strategy" {
-   default = "standard"
+   default = "blue-green"
 }
 
 variable "HTTPAUTH_PASSWORD" {}
