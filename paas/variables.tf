@@ -28,6 +28,14 @@ variable "logging" {
   default = 1
 }
 
+variable "additional_routes" {
+  default = 1
+}
+
+variable "paas_additional_route_name" {}
+
+variable "paas_app_route_name" {}
+
 variable "paas_logging_name" {
    default = "logit-ssl-drain"
 }
@@ -44,8 +52,8 @@ variable "paas_app_docker_image" {
    default = "dfedigital/get-into-teaching-frontend:latest"
 }
 
-variable "paas_app_route_name" {
-   default = "dfe-teacher-services-sb-app"
+variable "strategy" {
+   default = "standard"
 }
 
 variable "HTTPAUTH_PASSWORD" {}
