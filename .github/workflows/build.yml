@@ -37,6 +37,8 @@ jobs:
     needs:
       - build_and_test
     steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
       - name: Get Short SHA
         id: sha
         run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
