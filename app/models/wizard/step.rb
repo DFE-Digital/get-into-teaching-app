@@ -33,7 +33,7 @@ module Wizard
   private
 
     def attributes_from_store
-      @store.fetch attributes.keys.map(&:to_sym)
+      @store.fetch attributes.keys
     end
 
     def persist_to_store

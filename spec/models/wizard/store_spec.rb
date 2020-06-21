@@ -1,7 +1,9 @@
 require "rails_helper"
 
 describe Wizard::Store do
-  let(:backingstore) { { name: "Joe", age: 20, region: "Manchester" } }
+  let(:backingstore) do
+    { "name" => "Joe", "age" => 20, "region" => "Manchester" }
+  end
   let(:instance) { described_class.new backingstore }
   subject { instance }
 
@@ -24,20 +26,20 @@ describe Wizard::Store do
 
   describe "#[]" do
     context "name" do
-      subject { instance[:name] }
+      subject { instance["name"] }
       it { is_expected.to eql "Joe" }
     end
 
     context "age" do
-      subject { instance[:age] }
+      subject { instance["age"] }
       it { is_expected.to eql 20 }
     end
   end
 
   describe "#[]=" do
     it "will update stored value" do
-      expect { subject[:name] = "Jane" }.to \
-        change { subject[:name] }.from("Joe").to("Jane")
+      expect { subject["name"] = "Jane" }.to \
+        change { subject["name"] }.from("Joe").to("Jane")
     end
   end
 
@@ -45,14 +47,14 @@ describe Wizard::Store do
     context "with multiple keys" do
       subject { instance.fetch :name, :region }
       it "will return hash of requested keys" do
-        is_expected.to eql({ name: "Joe", region: "Manchester" })
+        is_expected.to eql({ "name" => "Joe", "region" => "Manchester" })
       end
     end
 
     context "with array of keys" do
-      subject { instance.fetch %i[name region] }
+      subject { instance.fetch %w[name region] }
       it "will return hash of requested keys" do
-        is_expected.to eql({ name: "Joe", region: "Manchester" })
+        is_expected.to eql({ "name" => "Joe", "region" => "Manchester" })
       end
     end
   end
