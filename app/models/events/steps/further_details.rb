@@ -1,7 +1,6 @@
 module Events
   module Steps
     class FurtherDetails < ::Wizard::Step
-      include ActiveModel::Validations::Callbacks
       FUTURE_EVENT_OPTIONS = [["Yes", true], ["No", false]].freeze
 
       attribute :privacy_policy, :boolean

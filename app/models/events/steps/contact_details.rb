@@ -1,7 +1,6 @@
 module Events
   module Steps
     class ContactDetails < ::Wizard::Step
-      include ActiveModel::Validations::Callbacks
       PHONE_NUMBER_FORMAT = %r{\A[0-9 ]+\z}.freeze
 
       attribute :phone_number

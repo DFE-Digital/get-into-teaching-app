@@ -2,6 +2,7 @@ module Wizard
   class Step
     include ActiveModel::Model
     include ActiveModel::Attributes
+    include ActiveModel::Validations::Callbacks
 
     class << self
       def key

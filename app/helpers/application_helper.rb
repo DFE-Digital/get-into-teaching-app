@@ -32,11 +32,12 @@ module ApplicationHelper
   alias_method :fas, :fa_icon
 
   def govuk_form_for(*args, **options, &block)
-    form_for(
-      *args,
-      **(options.merge builder: GOVUKDesignSystemFormBuilder::FormBuilder),
-      &block
-    )
+    merged = options.dup
+    merged[:builder] = GOVUKDesignSystemFormBuilder::FormBuilder
+    merged[:html] ||= {}
+    merged[:html][:novalidate] = true
+
+    form_for(*args, **merged, &block)
   end
 
   def back_link(path = :back, text: "Back", **options)

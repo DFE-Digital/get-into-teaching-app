@@ -41,6 +41,7 @@ en:
               blank: Enter your last name
             email_address:
               blank: Enter your full email address
+              invalid: Enter a valid email address
         events/steps/contact_details:
           attributes:
             phone_number:
