@@ -10,6 +10,10 @@ body {
     overflow: hidden;
 }
 
+.container-plain {
+    border-top: 1px solid $black;
+}
+
 .container-1000 {
     min-height: 25px;
     max-width: 1000px;
