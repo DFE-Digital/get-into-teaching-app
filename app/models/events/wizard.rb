@@ -5,5 +5,11 @@ module Events
       Steps::ContactDetails,
       Steps::FurtherDetails,
     ].freeze
+
+    def complete!
+      super.tap do |result|
+        result && @store.purge!
+      end
+    end
   end
 end

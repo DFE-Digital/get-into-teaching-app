@@ -18,6 +18,9 @@ module WizardSteps
 
     if @current_step.save
       redirect_to next_step_path
+
+      # Needs to occur after redirect because it purges data after submission
+      @wizard.complete!
     end
   end
 
@@ -32,8 +35,13 @@ private
   end
 
   def next_step_path
-    next_step = @wizard.next_step
-    next_step ? step_path(next_step) : root_path
+    if (next_step = @wizard.next_step)
+      step_path next_step
+    elsif (invalid_step = @wizard.first_invalid_step)
+      step_path invalid_step
+    else # all steps valid so completed
+      root_path
+    end
   end
 
   def step_params

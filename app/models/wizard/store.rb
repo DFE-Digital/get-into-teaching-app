@@ -1,12 +1,20 @@
 module Wizard
   class Store
     attr_reader :data
-    delegate :[], :[]=, to: :data
+    delegate :keys, to: :data
 
     def initialize(data)
       raise InvalidBackingStore unless data.respond_to?(:[]=)
 
-      @data = data.with_indifferent_access
+      @data = data
+    end
+
+    def [](key)
+      data[key.to_s]
+    end
+
+    def []=(key, value)
+      data[key.to_s] = value
     end
 
     def fetch(*keys)
@@ -17,6 +25,10 @@ module Wizard
       data.merge! attributes.stringify_keys
 
       true
+    end
+
+    def purge!
+      data.clear
     end
 
     class InvalidBackingStore < RuntimeError; end

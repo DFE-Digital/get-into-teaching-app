@@ -58,4 +58,13 @@ describe Wizard::Store do
       end
     end
   end
+
+  describe "#purge!" do
+    before { instance.purge! }
+    subject { instance.keys }
+
+    it "will remove all keys" do
+      is_expected.to have_attributes empty?: true
+    end
+  end
 end

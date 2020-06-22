@@ -3,33 +3,23 @@ require "rails_helper"
 describe Wizard::Base do
   include_context "wizard store"
 
-  class Name < Wizard::Step
-    attribute :name
-  end
-
-  class Age < Wizard::Step
-    attribute :age, :integer
-  end
-
-  class Postcode < Wizard::Step
-    attribute :postcode
-  end
-
-  class TestWizard < Wizard::Base
-    self.steps = [Name, Age, Postcode].freeze
-  end
-
   let(:wizardclass) { TestWizard }
   let(:wizard) { wizardclass.new wizardstore, "age" }
 
   describe ".indexed_steps" do
     subject { wizardclass.indexed_steps }
-    it { is_expected.to eql("name" => Name, "age" => Age, "postcode" => Postcode) }
+
+    it do
+      is_expected.to eql \
+        "name" => TestWizard::Name,
+        "age" => TestWizard::Age,
+        "postcode" => TestWizard::Postcode
+    end
   end
 
   describe ".step" do
     it "will return steps class for valid step" do
-      expect(wizardclass.step("age")).to eql Age
+      expect(wizardclass.step("age")).to eql TestWizard::Age
     end
 
     it "will raise exception for unknown step" do
@@ -77,13 +67,13 @@ describe Wizard::Base do
 
   describe "#find" do
     subject { wizard.find("age") }
-    it { is_expected.to be_instance_of Age }
+    it { is_expected.to be_instance_of TestWizard::Age }
     it { is_expected.to have_attributes age: 35 }
   end
 
   describe "#find_current_step" do
     subject { wizard.find_current_step }
-    it { is_expected.to be_instance_of Age }
+    it { is_expected.to be_instance_of TestWizard::Age }
   end
 
   describe "#previous_step" do
@@ -118,5 +108,53 @@ describe Wizard::Base do
       subject { wizard.next_step }
       it { is_expected.to eql "postcode" }
     end
+  end
+
+  describe "#valid?" do
+    let(:backingstore) { { "age" => 30, "postcode" => "TE571NG" } }
+
+    before do
+      allow_any_instance_of(TestWizard::Name).to \
+        receive(:valid?).and_return name_is_valid
+    end
+
+    subject { wizard.valid? }
+
+    context "with all steps completed" do
+      let(:name_is_valid) { true }
+      it { is_expected.to be true }
+    end
+
+    context "with missing step" do
+      let(:name_is_valid) { false }
+      it { is_expected.to be false }
+    end
+  end
+
+  describe "complete!" do
+    subject { wizardclass.new wizardstore, "postcode" }
+    before { allow(subject).to receive(:valid?).and_return steps_valid }
+
+    context "when valid" do
+      let(:steps_valid) { true }
+      it { is_expected.to have_attributes complete!: true }
+    end
+
+    context "when invalid" do
+      let(:steps_valid) { false }
+      it { is_expected.to have_attributes complete!: false }
+    end
+  end
+
+  describe "invalid_steps" do
+    let(:backingstore) { { "age" => 30 } }
+    subject { wizard.invalid_steps.map(&:key) }
+    it { is_expected.to eql %w[name postcode] }
+  end
+
+  describe "first_invalid_step" do
+    let(:backingstore) { { "name" => "test" } }
+    subject { wizard.first_invalid_step }
+    it { is_expected.to have_attributes key: "age" }
   end
 end
