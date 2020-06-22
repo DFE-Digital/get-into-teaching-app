@@ -160,12 +160,35 @@
     }
 }
 
+.covid {
+    @include font;
+    background-color: $black;
+    color: $white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 35px;
+    padding-right: 35px;
+
+    h3 {
+        padding: 0;
+        margin: 0;
+    }
+
+    a {
+        color: $white;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+}
+
 /* mobile css */
 @media only screen and (max-width: 900px) {
 
     .logo {
 
-        top: 15px;
+        position: absolute;
 
         &__image {
 
@@ -190,6 +213,7 @@
     
     .navbar {
 
+        position: relative;
         height: auto;
 
         &__desktop {
