@@ -19,12 +19,14 @@
 
         <%= render "layouts/header" %>
 
-        <section class='content container-1000'>
-            <p>
-                <%= yield %>
-            </p>
-        </section>
-        
+        <div class="container-plain">
+            <section class='content container-1000'>
+                <p>
+                    <%= yield %>
+                </p>
+            </section>
+        </div>
+
         <%= render "layouts/footer" %>
 
     </div>
