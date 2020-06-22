@@ -28,7 +28,6 @@ class PagesController < ApplicationController
       render template: "content/#{params[:page]}", layout: "layouts/plain"
     else
       render template: "content/#{params[:page]}", layout: "layouts/content"
-    end
-    
+    end  
   end
 end
