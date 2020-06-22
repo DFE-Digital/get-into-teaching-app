@@ -24,6 +24,11 @@ class PagesController < ApplicationController
   end
 
   def show
-    render template: "content/#{params[:page]}", layout: "layouts/content"
+    if params[:page] == "covid-19/index"
+      render template: "content/#{params[:page]}", layout: "layouts/plain"
+    else
+      render template: "content/#{params[:page]}", layout: "layouts/content"
+    end
+    
   end
 end
