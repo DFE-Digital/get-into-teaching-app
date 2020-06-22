@@ -120,12 +120,10 @@
 }
 
 .logo {
-    height: 130px;
-    margin:0 auto;
-    position: absolute;
-    left:0;
-    top: 25px;
-    overflow: hidden;
+
+    display: inline-block;
+    position: relative;
+    top: 8px;
 
     a {
         text-decoration: none;
