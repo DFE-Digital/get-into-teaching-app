@@ -81,3 +81,16 @@ jobs:
             -H "Content-Type: application/json" \
             https://api.github.com/repos/${{ env.CONTENT_REPOSITORY }}/dispatches \
             --data '{"event_type": "Build triggered from App repo", "client_payload": { "parent_sha": "'"${{ steps.sha.outputs.short}}"'"  }}'
+  warn_of_release:
+    name: Inform Sentry.io 
+    if: ${{ always() }}
+    runs-on: ubuntu-latest
+       - name:  Send Message to Sentry.io
+         if: ${{ always() }}
+         uses: sfawcett123/sentry-event@v1
+         with: 
+              MESSAGE: format('Release Event:{0} Sha:{1}', ${{github.event_name}} , ${{github.sha}} )
+              STATE:  ${{job.status}}
+              ENVIRON: "Development"
+         env:
+             SENTRY_DSN: ${{secrets.SENTRY_DSN}}
