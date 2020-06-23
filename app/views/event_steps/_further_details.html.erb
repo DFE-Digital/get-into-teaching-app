@@ -1,0 +1,12 @@
+<%= f.govuk_check_boxes_fieldset :privacy_policy do %>
+  <%= f.hidden_field :privacy_policy, value: false %>
+  <%= f.govuk_check_box :privacy_policy, true,
+        multiple: false, link_errors: true,
+        label: { text: "Yes" } %>
+<% end %>
+
+<%= f.govuk_collection_radio_buttons :future_events,
+      f.object.future_event_options, :last, :first,
+      inline: true %>
+
+<%= f.govuk_text_field :postcode %>

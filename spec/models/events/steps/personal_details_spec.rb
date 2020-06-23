@@ -19,4 +19,10 @@ describe Events::Steps::PersonalDetails do
     it { is_expected.to include(:last_name) }
     it { is_expected.to include(:email_address) }
   end
+
+  context "email address" do
+    it { is_expected.to allow_value("me@you.com").for :email_address }
+    it { is_expected.to allow_value(" me@you.com ").for :email_address }
+    it { is_expected.not_to allow_value("me@you").for :email_address }
+  end
 end

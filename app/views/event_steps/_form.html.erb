@@ -1,1 +1,35 @@
-<h1>FIXME: TBD</h1>
+<section class="event-reg-main">
+    <div class="event-reg-main__content container-1000">
+        <div class="event-reg-main__content__left">
+            <p>
+              <%= back_link step_path(wizard.previous_step) if wizard.previous_step %>
+            </p>
+
+            <h1>Sign up for this event:</h1>
+            <h2><%= event.eventName %></h2>
+
+            <p>
+              <%= event.description if wizard.first_step? %>
+            </p>
+
+
+            <%= govuk_form_for current_step, url: step_path do |f| %>
+              <%= f.govuk_error_summary %>
+
+              <%= render current_step.key, current_step: current_step, f: f %>
+
+              <%= f.button class: "call-to-action-button" do %>
+                <%= wizard.last_step? ? "Complete sign up" : "Next Step" %>
+                <%= fas "chevron-right" %>
+              <% end %>
+            <% end %>
+        </div>
+
+        <div class="event-reg-main__content__right">
+            <%= render "events/event", event: event if wizard.first_step? %>
+        </div>
+        </div>
+    </div>
+</section>
+
+<%= render "sections/talk-to-us" %>

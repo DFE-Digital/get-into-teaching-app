@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe EventsController, type: :request do
+describe EventsController do
   include_context "stub types api"
 
   describe "#index" do
@@ -9,20 +9,8 @@ describe EventsController, type: :request do
 
     let(:events) do
       [
-        {
-          eventId: first_id,
-          readableEventId: first_id,
-          eventName: "First",
-          description: "first",
-          startDate: "2020-05-20",
-        },
-        {
-          eventId: second_id,
-          readableEventId: second_id,
-          eventName: "Second",
-          description: "second",
-          startDate: "2020-05-21",
-        },
+        build(:event_api, eventId: first_id, eventName: "First"),
+        build(:event_api, eventId: second_id, eventName: "Second"),
       ]
     end
 

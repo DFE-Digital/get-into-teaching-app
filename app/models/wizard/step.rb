@@ -2,12 +2,16 @@ module Wizard
   class Step
     include ActiveModel::Model
     include ActiveModel::Attributes
+    include ActiveModel::Validations::Callbacks
 
     class << self
       def key
         name.split("::").last.underscore
       end
     end
+
+    delegate :key, to: :class
+    alias_method :id, :key
 
     def initialize(store, attributes = {}, *args)
       @store = store
@@ -22,10 +26,14 @@ module Wizard
       persist_to_store
     end
 
+    def persisted?
+      !id.nil?
+    end
+
   private
 
     def attributes_from_store
-      @store.fetch attributes.keys.map(&:to_sym)
+      @store.fetch attributes.keys
     end
 
     def persist_to_store

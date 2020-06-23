@@ -17,6 +17,9 @@ describe Wizard::Step do
   describe ".new" do
     subject { FirstStep.new wizardstore, age: "20" }
     it { is_expected.to be_instance_of FirstStep }
+    it { is_expected.to have_attributes key: "first_step" }
+    it { is_expected.to have_attributes id: "first_step" }
+    it { is_expected.to have_attributes persisted?: true }
     it { is_expected.to have_attributes name: "Joe" }
     it { is_expected.to have_attributes age: 20 }
   end

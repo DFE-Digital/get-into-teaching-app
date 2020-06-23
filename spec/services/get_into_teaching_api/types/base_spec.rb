@@ -21,10 +21,11 @@ describe GetIntoTeachingApi::Types::Base do
   end
 
   describe "Type casting" do
+    let(:dob) { "1990-01-01" }
     let(:data) do
       {
         "firstname" => "Joe",
-        "date_of_birth" => "1990-01-01",
+        "date_of_birth" => dob,
         "address" => {
           "housenumber" => 23,
           "postcode" => "MA1 1AM",
@@ -35,10 +36,9 @@ describe GetIntoTeachingApi::Types::Base do
     let(:person) { Person.new data }
 
     subject { person }
-
     it { is_expected.to be_kind_of Person }
     it { is_expected.to have_attributes firstname: "Joe" }
-    it { is_expected.to have_attributes date_of_birth: Date.parse("1990-01-01") }
+    it { is_expected.to have_attributes date_of_birth: Date.parse(dob) }
     it { is_expected.to have_attributes address: kind_of(Address) }
 
     context "nested types" do
@@ -47,6 +47,12 @@ describe GetIntoTeachingApi::Types::Base do
       it { is_expected.to be_kind_of Address }
       it { is_expected.to have_attributes housenumber: 23 }
       it { is_expected.to have_attributes postcode: "ma11am" }
+    end
+
+    context "symbolized keys" do
+      let(:data) { { firstname: "Joe", date_of_birth: dob } }
+      it { is_expected.to have_attributes firstname: "Joe" }
+      it { is_expected.to have_attributes date_of_birth: Date.parse(dob) }
     end
   end
 end

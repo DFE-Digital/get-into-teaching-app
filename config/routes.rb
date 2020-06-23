@@ -12,7 +12,12 @@ Rails.application.routes.draw do
 
   resources "events", path: "/apievents", only: %i[index show search] do
     collection { get "search" }
-    resources "steps", path: "/apply", controller: "event_steps", only: %i[show update]
+    resources "steps",
+              path: "/apply",
+              controller: "event_steps",
+              only: %i[index show update] do
+      collection { get :completed }
+    end
   end
 
   get "*page", to: "pages#show", as: :page
