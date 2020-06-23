@@ -1,4 +1,6 @@
 class EventStepsController < ApplicationController
+  before_action :load_event
+
   include WizardSteps
   self.wizard_class = Events::Wizard
 
@@ -16,5 +18,9 @@ private
   def session_store
     session[:events] ||= {}
     session[:events][params[:event_id]] ||= {}
+  end
+
+  def load_event
+    @event = GetIntoTeachingApi::Client.event(params[:event_id])
   end
 end

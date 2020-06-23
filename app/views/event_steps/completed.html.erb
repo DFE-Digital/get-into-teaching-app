@@ -4,8 +4,9 @@
             <h1 class="strapline">Sign up complete</h1>
             <p>You are signed up for the following event:</p>
             <p>
-                <h3>Train to Teach Coventry online event</h3>
-                13th May 2020 at 17:00 - 18:30
+                <h3><%= @event.eventName %></h3>
+
+                <%= format_event_date @event %>
             </p>
             <h2>What happens next?</h2>
             <p>
