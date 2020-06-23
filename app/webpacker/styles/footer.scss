@@ -2,11 +2,11 @@ footer {
     background-color: $black;
 
     .footer-top {
-        height: 170px;
         width: 100%;
         padding-left: 40px;
         padding-right: 40px;
         padding-top: 30px;
+        padding-bottom: 30px;
         box-sizing: border-box;
         display: table;
         
@@ -92,7 +92,6 @@ footer {
 
         .footer-top {
             display: block;
-            height:360px;
             padding-left:20px;
             padding-right:20px;
 
