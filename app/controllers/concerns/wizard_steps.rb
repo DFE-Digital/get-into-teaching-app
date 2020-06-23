@@ -10,8 +10,9 @@ module WizardSteps
     redirect_to step_path(wizard_class.first_step)
   end
 
-  # current_step loaded via before_action
-  def show; end
+  def show
+    # current_step loaded via before_action
+  end
 
   def update
     @current_step.assign_attributes step_params
@@ -24,7 +25,9 @@ module WizardSteps
     end
   end
 
-  def completed; end
+  def completed
+    # current_step is loaded via before_action
+  end
 
 private
 
