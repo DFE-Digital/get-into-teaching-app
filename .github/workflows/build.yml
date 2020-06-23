@@ -40,6 +40,7 @@ jobs:
           tag_with_ref: true
           tag_with_sha: true
           push: true
+          build_args: SHA=${{ steps.sha.outputs.short}}
       - name: Build Only
         if: github.ref != 'refs/heads/master'
         uses: docker/build-push-action@v1
@@ -51,7 +52,7 @@ jobs:
           add_git_labels: true
           tag_with_ref: true
           tag_with_sha: true
-          build_arg: SHA=${{ steps.sha.outputs.short}}
+          build_args: SHA=${{ steps.sha.outputs.short}}
   test_ruby:
     name: Test Ruby
     needs: build
