@@ -83,14 +83,14 @@ jobs:
             --data '{"event_type": "Build triggered from App repo", "client_payload": { "parent_sha": "'"${{ steps.sha.outputs.short}}"'"  }}'
   warn_of_release:
     name: Inform Sentry.io 
-    if: ${{ always() }}
     runs-on: ubuntu-latest
+    needs: trigger_content_build
     steps:
        - name:  Send Message to Sentry.io
-         if: ${{ always() }}
+         if: always() 
          uses: sfawcett123/sentry-event@v1
          with: 
-              MESSAGE: format('Release Event:{0} Sha:{1}', ${{github.event_name}} , ${{github.sha}} )
+              MESSAGE: format('Release Event {0} Sha {1}', ${{github.event_name}} , ${{github.sha}} )
               STATE:  ${{job.status}}
               ENVIRON: "Development"
          env:
