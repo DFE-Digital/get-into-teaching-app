@@ -153,6 +153,10 @@
     background-color: $grey;
     padding-bottom: 60px;
 
+    .container-1000 {
+        text-align: left;
+    }
+
     &__header {
         background-color: $blue;
         position: relative;
