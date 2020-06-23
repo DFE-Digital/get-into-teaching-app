@@ -56,12 +56,18 @@
         }
 
         ul {
+            padding-left: 20px;
             list-style-type: square;
         }
 
         li {
             font-size: 19px;
             line-height: 1.6;
+            color: $purple;
+
+            span {
+                color: $black;
+            }
         }
 
         a {
