@@ -9,7 +9,7 @@ env:
   CONTENT_REPOSITORY: DFE-Digital/get-into-teaching-content
 jobs:
   test_docker:
-    name: Test Dockerfile 
+    name: Test Dockerfile
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
@@ -19,12 +19,15 @@ jobs:
         with:
              dockerfile: "Dockerfile"
   build:
-    name: Build 
+    name: Build
     runs-on: ubuntu-latest
     needs: test_docker
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
+      - name: Get Short SHA
+        id: sha
+        run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
       - name: Build and push to Docker Hub
         if: github.ref == 'refs/heads/master'
         uses: docker/build-push-action@v1
@@ -37,7 +40,7 @@ jobs:
           tag_with_ref: true
           tag_with_sha: true
           push: true
-      - name: Build Only 
+      - name: Build Only
         if: github.ref != 'refs/heads/master'
         uses: docker/build-push-action@v1
         with:
@@ -48,8 +51,9 @@ jobs:
           add_git_labels: true
           tag_with_ref: true
           tag_with_sha: true
+          build_arg: SHA=${{ steps.sha.outputs.short}}
   test_ruby:
-    name: Test Ruby 
+    name: Test Ruby
     needs: build
     runs-on: ubuntu-latest
     steps:
