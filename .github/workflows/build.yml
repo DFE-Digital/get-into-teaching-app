@@ -55,6 +55,15 @@ jobs:
       - name: Lint Ruby
         run: |-
           docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE bundle exec rubocop app config db lib spec Gemfile --format clang
+      - name:  Send Message to Sentry.io
+        if: ${{ always() }}
+        uses: sfawcett123/sentry-event@v1
+        with: 
+             MESSAGE: "Build Application"
+             STATE:  ${{job.status}}
+             ENVIRON: "Test"
+        env:
+            SENTRY_DSN: ${{secrets.SENTRY_DSN}}
   trigger_content_build:
     name: Trigger build of Content repo
     runs-on: ubuntu-latest
