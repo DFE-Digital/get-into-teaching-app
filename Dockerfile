@@ -34,3 +34,6 @@ RUN bundle install --without development --jobs=$(nproc --all) && \
 # Add code and compile assets
 COPY . .
 RUN bundle exec rake assets:precompile
+
+ARG SHA
+RUN echo "${SHA}" > /etc/get-into-teaching-app-sha
