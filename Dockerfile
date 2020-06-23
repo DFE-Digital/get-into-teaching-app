@@ -36,4 +36,4 @@ COPY . .
 RUN bundle exec rake assets:precompile
 
 ARG SHA
-RUN echo "${SHA}" > /etc/get-into-teaching-app-sha
+RUN echo "sha-${SHA}" > /etc/get-into-teaching-app-sha
