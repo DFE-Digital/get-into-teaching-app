@@ -1,35 +1,12 @@
-<section class="event-reg-main">
-    <div class="event-reg-main__content container-1000">
-        <div class="event-reg-main__content__left">
-            <h1>Sign up for this event:</h1>
-            <h2>Train to Teach Coventry online event</h2>
-            <p></p>
+<%= f.govuk_check_boxes_fieldset :privacy_policy do %>
+  <%= f.hidden_field :privacy_policy, value: false %>
+  <%= f.govuk_check_box :privacy_policy, true,
+        multiple: false, link_errors: true,
+        label: { text: "Yes" } %>
+<% end %>
 
-            <%= govuk_form_for current_step, url: step_path do |f| %>
-              <%= f.govuk_error_summary %>
+<%= f.govuk_collection_radio_buttons :future_events,
+      f.object.future_event_options, :last, :first,
+      inline: true %>
 
-              <%= f.govuk_check_boxes_fieldset :privacy_policy do %>
-                <%= f.hidden_field :privacy_policy, value: false %>
-                <%= f.govuk_check_box :privacy_policy, true,
-                      multiple: false, link_errors: true,
-                      label: { text: "Yes" } %>
-              <% end %>
-
-              <%= f.govuk_collection_radio_buttons :future_events,
-                    f.object.future_event_options, :last, :first,
-                    inline: true %>
-
-              <%= f.govuk_text_field :postcode %>
-
-              <%= f.button class: "call-to-action-button" do %>
-                Complete sign up <%= fas "chevron-right" %>
-              <% end %>
-            <% end %>
-        </div>
-        <div class="event-reg-main__content__right">
-
-        </div>
-    </div>
-</section>
-
-<%= render "sections/talk-to-us" %>
+<%= f.govuk_text_field :postcode %>

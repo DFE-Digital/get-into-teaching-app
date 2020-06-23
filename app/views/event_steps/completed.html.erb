@@ -3,11 +3,10 @@
         <div class="event-reg-main__content__left">
             <h1 class="strapline">Sign up complete</h1>
             <p>You are signed up for the following event:</p>
-            <p>
-                <h3><%= @event.eventName %></h3>
 
-                <%= format_event_date @event %>
-            </p>
+            <h3><%= @event.eventName %></h3>
+            <p><%= format_event_date @event %></p>
+
             <h2>What happens next?</h2>
             <p>
                 You will receive a confirmation email with details of the event. If there is an issue with the event we will contact you via phone.

@@ -1,7 +1,7 @@
 <%= link_to event_path(event.eventId) do %>
     <%= render "components/eventbox",
         :title => event.eventName,
-        :datetime => "#{event.startDate} at 17:00 - 18:30",
+        :datetime => format_event_date(event),
         :description => event.description,
         :schooloruni => false,
         :traintoteach => true,

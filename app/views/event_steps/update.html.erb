@@ -1,3 +1,1 @@
-<%= back_link step_path(@wizard.previous_step) if @wizard.previous_step %>
-
-<%= render @current_step.key, current_step: @current_step %>
+<%= render "form", current_step: @current_step, wizard: @wizard, event: @event %>
