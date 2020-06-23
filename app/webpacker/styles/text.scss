@@ -100,6 +100,10 @@ a {
     font-weight: bold;
 }
 
+.telephone-number:hover {
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 800px) {
 
     .strapline {
