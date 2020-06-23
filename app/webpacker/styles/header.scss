@@ -162,6 +162,8 @@
 
 .covid {
     @include font;
+    font-size: 16px;
+    line-height: 1.25;
     background-color: $black;
     color: $white;
     padding-top: 20px;
