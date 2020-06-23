@@ -14,6 +14,7 @@ EXPOSE 3000
 ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server" ]
 
+# hadolint ignore=DL3018
 RUN apk add --no-cache build-base git tzdata nodejs yarn
 
 # install NPM packages removign artifacts
@@ -25,6 +26,7 @@ RUN gem install bundler --version=2.1.4
 
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./
+# hadolint ignore=SC2046
 RUN bundle install --without development --jobs=$(nproc --all) && \
     rm -rf /root/.bundle/cache && \
     rm -rf /usr/local/bundle/cache
