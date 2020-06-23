@@ -8,8 +8,8 @@ env:
   APP_REPOSITORY: dfedigital/get-into-teaching-web
   CONTENT_REPOSITORY: DFE-Digital/get-into-teaching-content
 jobs:
-  test_docker:
-    name: Test Dockerfile
+  build:
+    name: Build and Deploy 
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
@@ -18,13 +18,6 @@ jobs:
         uses: brpaz/hadolint-action@master
         with:
              dockerfile: "Dockerfile"
-  build:
-    name: Build
-    runs-on: ubuntu-latest
-    needs: test_docker
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2
       - name: Get Short SHA
         id: sha
         run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
@@ -53,11 +46,6 @@ jobs:
           tag_with_ref: true
           tag_with_sha: true
           build_args: SHA=${{ steps.sha.outputs.short}}
-  test_ruby:
-    name: Test Ruby
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
       - name: Set DOCKER_IMAGE environment variable
         run: |-
           echo ::set-env name=DOCKER_IMAGE::${{ env.APP_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
@@ -71,7 +59,7 @@ jobs:
     name: Trigger build of Content repo
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
-    needs: test_ruby
+    needs: build
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
