@@ -40,7 +40,7 @@ describe EventStepsController, type: :request do
         end
         let(:model) { Events::Steps::FurtherDetails }
         let(:details_params) { attributes_for(:events_further_details) }
-        it { is_expected.to redirect_to root_path }
+        it { is_expected.to redirect_to completed_event_steps_path(event_id) }
       end
 
       context "when invalid steps" do
@@ -52,5 +52,13 @@ describe EventStepsController, type: :request do
         end
       end
     end
+  end
+
+  describe "#completed" do
+    subject do
+      get completed_event_steps_path(event_id)
+      response
+    end
+    it { is_expected.to have_http_status :success }
   end
 end

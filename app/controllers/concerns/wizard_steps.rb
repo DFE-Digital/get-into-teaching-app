@@ -3,7 +3,7 @@ module WizardSteps
 
   included do
     class_attribute :wizard_class
-    before_action :load_wizard, :load_current_step, except: %i[index]
+    before_action :load_wizard, :load_current_step, except: %i[index completed]
   end
 
   def index
@@ -24,6 +24,8 @@ module WizardSteps
     end
   end
 
+  def completed; end
+
 private
 
   def load_wizard
@@ -40,7 +42,7 @@ private
     elsif (invalid_step = @wizard.first_invalid_step)
       step_path invalid_step
     else # all steps valid so completed
-      root_path
+      step_path :completed
     end
   end
 

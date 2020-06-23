@@ -14,7 +14,9 @@ Rails.application.routes.draw do
     resources "steps",
               path: "/apply",
               controller: "event_steps",
-              only: %i[index show update]
+              only: %i[index show update] do
+      collection { get :completed }
+    end
   end
 
   get "*page", to: "pages#show", as: :page
