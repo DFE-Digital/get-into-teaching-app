@@ -39,7 +39,7 @@
             </div>
 
             <div>
-                <a href="/mailinglist/register/2">
+                <a id="submit-button" href="/mailinglist/register/10">
                     <div class="call-to-action-button">Next Step  <i class="fas fa-chevron-right"></i></div>
                 </a>
             </div>
@@ -49,3 +49,15 @@
         </div>
     </div>
 </section>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script>
+  $(document).ready(function(){
+  $("#describe-yourself").change(function () {
+    if (this.value == "student") {
+      $("#submit-button").attr('href', "/mailinglist/register/10");
+    } else {
+      $("#submit-button").attr('href', "/mailinglist/register/2");
+    }
+  });
+});  
+</script>
