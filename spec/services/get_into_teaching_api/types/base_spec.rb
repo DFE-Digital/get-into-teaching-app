@@ -48,5 +48,11 @@ describe GetIntoTeachingApi::Types::Base do
       it { is_expected.to have_attributes housenumber: 23 }
       it { is_expected.to have_attributes postcode: "ma11am" }
     end
+
+    context "symbolized keys" do
+      let(:data) { { firstname: "Joe", date_of_birth: "1990-01-01" } }
+      it { is_expected.to have_attributes firstname: "Joe" }
+      it { is_expected.to have_attributes date_of_birth: Date.parse("1990-01-01") }
+    end
   end
 end

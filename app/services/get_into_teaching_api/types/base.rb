@@ -11,7 +11,7 @@ module GetIntoTeachingApi
     private
 
       def type_cast_data(data)
-        data.dup.tap do |duped|
+        data.stringify_keys.tap do |duped|
           type_cast_rules.each do |key, cast_to|
             duped[key] = type_cast_value(cast_to, duped[key])
           end
