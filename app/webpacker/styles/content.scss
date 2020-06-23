@@ -17,7 +17,7 @@
         width: calc(100% - 370px);
 
         .jumbotron {
-            font-size: 18px;
+            font-size: 19px;
             color: $black;
             font-weight: bold;
             line-height: 1.6;
@@ -27,49 +27,53 @@
             font-size: 36px;
             font-weight: bold;
             border-bottom: 8px solid $blue;
-            display: inline-block;
             margin: 0;
             padding: 0;
             margin-top: 20px;
+            margin-bottom: 10px;
         }
 
         h3 {
             font-size: 28px;
             font-weight: bold;
-            display: inline-block;
             margin: 0;
             padding: 0;
             margin-top: 20px;
         }
 
         h4 {
-            font-size: 18px;
+            font-size: 19px;
             font-weight: bold;
-            display: inline-block;
             margin: 0;
             padding: 0;
             margin-top: 20px;
         }
 
         p {
-            padding-bottom: 10px;
-            padding-top: 10px;
-            line-height: 1;
+            line-height: 1.4;
+            margin: 0 0 30px;
+            padding: 0;
         }
 
         ul {
+            padding-left: 20px;
             list-style-type: square;
         }
 
         li {
             font-size: 19px;
             line-height: 1.6;
+            color: $purple;
+
+            span {
+                color: $black;
+            }
         }
 
         a {
             font-weight: regular;
             font-size: 19px;
-            color: $blue;
+            color: $blue-dark;
             text-decoration: underline;      
         }
         
@@ -119,13 +123,14 @@
 
         &__left {
 
+            padding-left: 0px;
+            padding-right: 0px;
             display: block;
             width: 100%;
             margin-right: 40px;
 
             p.content-alert {
                 margin-top: -10px;
-                margin-right: 20px;
             }
 
         }

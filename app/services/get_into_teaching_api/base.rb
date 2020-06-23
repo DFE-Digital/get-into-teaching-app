@@ -40,11 +40,23 @@ module GetIntoTeachingApi
     end
 
     def response
-      @response ||= faraday.get(endpoint)
+      @response ||= faraday.get(endpoint, params, headers)
+    end
+
+    def params
+      {}
+    end
+
+    def headers
+      { "Accept" => "application/json" }
     end
 
     def data
       response.body
     end
   end
+end
+
+if Rails.env.development?
+  GetIntoTeachingApi::Base.prepend GetIntoTeachingApi::FakeEndpoints
 end

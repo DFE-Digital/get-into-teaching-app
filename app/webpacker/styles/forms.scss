@@ -1,10 +1,15 @@
-select {
+select, input {
     font-size: 19px;
     margin-left: 20px;
     margin-right: 20px;
     border: 2px solid $black;
     background-color: $white;
     height: 42px;
+}
+
+input {
+  padding-left: 0.4em ;
+  padding-right: 0.4em ;
 }
 
 .fieldlabel {
@@ -15,4 +20,21 @@ select {
 
 .fieldhelp {
     margin-top: 0;
+}
+
+
+.field_with_errors {
+  display: inline;
+
+  select {
+    border-color: $pink;
+  }
+}
+
+.search-for-events__content__errors {
+  color: $pink;
+}
+
+form div.hidden {
+  display: none;
 }

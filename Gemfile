@@ -31,6 +31,8 @@ gem "rinku"
 gem "faraday"
 gem "faraday_middleware"
 
+gem "uk_postcode"
+
 gem "dotenv-rails"
 
 group :development, :test do
@@ -48,6 +50,7 @@ group :development, :test do
   gem "rspec-rails", "~> 4.0.0"
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.31"
+  gem "factory_bot_rails"
 end
 
 group :development do
@@ -61,6 +64,7 @@ group :development do
 end
 
 group :test do
+  gem "shoulda-matchers"
   gem "webdrivers", "~> 4.3"
   gem "webmock"
 end

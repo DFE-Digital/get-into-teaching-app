@@ -3,36 +3,41 @@
     :image => "media/images/hero-events.png" 
 %>
 
-<section class="types-of-event container-1000"> 
-    <div class="types-of-event__content">
-    <div>
-        <div>
-            <a href="#searchforevents"><h2 class="strapline strapline-prominent">Jump to the event finder</h2></a>
-            <h2 class="types-of-event__content__prompt">Our nationwide events are informal opportunities for you to get free expert advice about your next steps into teaching.</h2>
-        </div>
-        <div>
-            <h1 class="strapline-article types-of-event__header">Types of event</h1>
-        </div>
-        <div class="types-of-event__content__nested">
-            <h1>Train to teach</h1>
-            <p>
-                At our Train to Teach events, you can meet experienced teaching professionals who can answer all of your questions.
-            </p> 
-            <h2>You’ll get the chance to:</h2>
-            <ul>
-                <li><span>Speak to experts about ways into teacher training and available funding</span></li>
-                <li><span>Talk one-to-one with experienced and newly qualified teachers to find out what Teaching is really like</span></li>
-                <li><span>Get advice on your teacher training application</span></li>
-                <li><span>Talk to schools and universities in your area to help you decide on the best place for you to train and how to apply</span></li>
-            </ul>
-            <p>
-                You can drop in at any time. Allow at least two hours to make the most of your visit. Train to Teach presentations run hourly throughout the event. 
-            </p>
-            <p>
-                Check event timetables to make sure you don’t miss anything.
-            </p>
-        </div>
+<section class="types-of-event container-1000">
+
+    <div class="types-of-event__right">
+        <ul class="content-nav">
+            <li><a href="#searchforevents">Jump to the event finder</a></li>
+        </ul>
     </div>
+
+    <div class="types-of-event__left">
+        <p class="content-alert">
+            Our nationwide events are informal opportunities for you to get free expert advice about your next steps into teaching.
+        </p>
+
+        <h1 class="strapline-article types-of-event__header">Types of event</h1>
+        
+        <h1>Train to teach</h1>
+        <p>
+            At our Train to Teach events, you can meet experienced teaching professionals who can answer all of your questions.
+        </p> 
+        <h2>You’ll get the chance to:</h2>
+        <ul>
+            <li><span>Speak to experts about ways into teacher training and available funding</span></li>
+            <li><span>Talk one-to-one with experienced and newly qualified teachers to find out what Teaching is really like</span></li>
+            <li><span>Get advice on your teacher training application</span></li>
+            <li><span>Talk to schools and universities in your area to help you decide on the best place for you to train and how to apply</span></li>
+        </ul>
+        <p>
+            You can drop in at any time. Allow at least two hours to make the most of your visit. Train to Teach presentations run hourly throughout the event. 
+        </p>
+        <p>
+            Check event timetables to make sure you don’t miss anything.
+        </p>
+
+    </div>
+
 </section>
 
 <section class="types-of-event-quote container-1000">
@@ -69,39 +74,53 @@
     </div>
 </section>
 
-<section class="search-for-events container-1000">
-    <h1 id="searchforevents" class="strapline search-for-events__header">Search for events</h1>
-    <div class="search-for-events__content">
-        <div>
-            <form>
-                <div class="search-for-events__content__input">
-                    Showing 
-                    <select>
-                        <option>All events</option>
-                        <option>Some events</option>
-                        <option>Other events</option>
-                    </select>
-                </div>
-                <div class="search-for-events__content__input">
-                    happening 
-                    <select>
-                        <option>Nationwide</option>
-                        <option>the North</option>
-                        <option>the South</option>
-                    </select>
-                </div>
-                <div class="search-for-events__content__input">
-                    in 
-                    <select>
-                        <option>March 2020</option>
-                        <option>April 2020</option>
-                        <option>May 2020</option>
-                    </select> 
-                </div>
-            </form>
-        </div>
-        <div class="search-for-events__content__update">
-            <div class="request-button">Update results <i class="fas fa-sync"></i></div>
+<section class="search-for-events">
+    <div class="container-1000">
+        <h1 id="searchforevents" class="strapline search-for-events__header">Search for events</h1>
+        <div class="search-for-events__content">
+            <div>
+                <form>
+                    <div class="search-for-events__content__input">
+                        <label for="event-type" class="search-for-events__content__input__label">
+                            Event type
+                        </label>
+                        <span class="search-for-events__content__input__select">
+                            <select id="event-type">
+                                <option>Train to teach events</option>
+                                <option>School or uni event</option>
+                                <option>Online events</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="search-for-events__content__input">
+                        <label for="event-location" class="search-for-events__content__input__label">
+                            Location
+                        </label>
+                        <span class="search-for-events__content__input__select">
+                            <select id="event-location" >
+                                <option>Nationwide</option>
+                                <option>the North</option>
+                                <option>the South</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="search-for-events__content__input">
+                        <label for="event-date" class="search-for-events__content__input__label">
+                            Month
+                        </label>
+                        <span class="search-for-events__content__input__select">
+                            <select id="event-date">
+                                <option>March 2020</option>
+                                <option>April 2020</option>
+                                <option>May 2020</option>
+                            </select>
+                        </span>
+                    </div>
+                </form>
+            </div>
+            <div class="search-for-events__content__update">
+                <div class="request-button">Update results <i class="fas fa-sync"></i></div>
+            </div>
         </div>
     </div>
 </section>
@@ -178,5 +197,3 @@
     </a>
 
 </section>
-
-<%= render "sections/talk-to-us" %>

@@ -7,3 +7,5 @@ import Turbolinks from 'turbolinks';
 
 Rails.start();
 Turbolinks.start();
+
+import "controllers";

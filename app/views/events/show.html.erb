@@ -1,0 +1,34 @@
+<%= render "sections/hero",  :header => "Aspire - School Direct Information morning and application advice", :image => "media/images/hero-events.png" %>
+
+<section class="event-info container-1000">
+    <div class="event-info__eventbox">
+        <%= render "components/eventboxshort",
+            :title => @event.eventName,
+            :datetime => "#{@event.startDate} at 17:00 - 18:30",
+            :schooloruni => false,
+            :description => @event.description,
+            :traintoteach => false,
+            :online => true,
+            :location => "Coventry"
+        %>
+    </div>
+    <div class="event-info__detail">
+        <h1 class="strapline-article">Event information</h1>
+        <p>
+            Our local Train to Teach events have gone online and will now take the format of online question and answer sessions.
+        </p>
+        <p>
+            This event is specifically for those who are looking to train to teach in Coventry and will give you the opportunity to ask our teaching experts questions on eligibility, the application process and funding.
+        </p>
+        <p>
+            When you sign up we will send you links to the Train to Teach presentations which give an overview of teacher training, the different options available, financial support and the application process.
+        </p>
+        <h1 class="strapline-article">How to attend</h1>
+        <p>
+            To access this event, please sign up on this page and watch out for the reminder email we will send the day before the event. It will contain an access link to the live online event and a directory of some of the local training providers.
+        </p>
+        <a href="/event/register/1">
+            <div class="call-to-action-button">Sign up for this event <%= fas "chevron-right" %></div>
+        </a>
+    </div>
+</section>

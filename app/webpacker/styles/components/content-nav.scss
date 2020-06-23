@@ -12,7 +12,7 @@
             background-color: $pink;
             color: $white;
             text-decoration: underline;
-            font-size: 18px;
+            font-size: 19px;
             font-weight: 800;
             padding-top: 20px;
             padding-left: 18px;
@@ -35,8 +35,8 @@
 @media only screen and (max-width: 800px) {
 
     .content-nav {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 0px;
+        padding-right: 0px;
         margin-bottom: 40px;
     }
 

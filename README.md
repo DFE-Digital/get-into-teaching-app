@@ -38,8 +38,17 @@ bundle exec rake
 ```
 
 ## Running specs
+
+To run the Ruby specs
+
 ```
 bundle exec rspec
+```
+
+To run the Javascript specs
+
+```
+bundle exec yarn spec
 ```
 
 ## Linting

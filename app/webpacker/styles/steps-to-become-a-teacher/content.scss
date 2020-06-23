@@ -1,11 +1,13 @@
 .content {
 
     .steps-header {
-        background-color: $yellow;
+        background-color: $pink;
+        margin-right: -160px;
         cursor: pointer;
 
         h1 {
             padding: 25px;
+            color: $white;
         }
 
         i {
@@ -14,7 +16,7 @@
 
         &__number {
             float: left;
-            background-color: $white-90;
+            background-color: $white;
             width: 50px;
             height: 50px;
             transform: rotate(3deg);
@@ -27,7 +29,32 @@
 
             span {
                 transform: rotate(-3deg);
+                color: $black;
             }
         }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .content {
+    
+        .steps-header {
+
+            margin-left: -30px;
+            margin-right: -30px;
+
+            h1 {
+                margin-left: 10px;
+                margin-right: 10px;
+                font-size: 19px;
+            }
+
+            &__number {
+                width: 40px;
+                height: 40px;
+            }
+        }
+
     }
 }

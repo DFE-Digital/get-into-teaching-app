@@ -1,13 +1,28 @@
-<div class="home-hero" style="background-image: url('<%= asset_pack_path 'media/images/hero-home.png' %>')">
-    <div class="home-hero__banner">
-        <h1>Inspire the next generation</h1>
-        <p>Get information and support to help you become a teacher</p>
+<section>
+    <div class="home-hero" style="background-image: url('<%= asset_pack_path 'media/images/hero-home.png' %>')">
+        <div class="home-hero__banner">
+            <h1>Inspire the next generation</h1>
+            <p>Get information and support to help you become a teacher</p>
+        </div>
+        
     </div>
-</div>
+    <div class="home-hero__mailing-strip">
+        <div class="home-hero__mailing-strip__text">
+            <p>Stay up-to-date with personalised information to help you get into teaching</p>  
+        </div>
+        <div class="home-hero__mailing-strip__button">
+            <a href="/mailinglist/register/1">
+                <div class="home-hero__mailing-strip__button__inner">
+                    <p>Learn more <i class="fas fa-chevron-right"></i></p>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
 
 <section class="my-story container-1000">
     <div class="my-story__left">
-        <a href='/life-as-a-teacher/real-stories/'>
+        <a href='/life-as-a-teacher/real-stories/' aria-label="Life as a teacher">
             <div class="my-story__left__video" style="background-image: url('<%= asset_pack_path 'media/images/paulsstory.png' %>')">
                 <div class="my-story__left__video__overlay">
                     <div class="icon-play"></div>
@@ -78,7 +93,7 @@
         </div>
     </div>
     <div>
-        <a class="git-link" href='/steps-to-become-a-teacher/'>
+        <a class="git-link" href='/steps-to-become-a-teacher/index'>
             Use our step by step guide to help you become a teacher <i class="fas fa-chevron-right"></i>
         </a>
     </div>
@@ -86,12 +101,17 @@
 
 <section class="quote">
     <div class="quote__left">
-        <div class="quote__left__graphic">
-            <div class="icon-quote"></div>
-        </div>
         <div class="quote__left__quote">
-            <q>The best part of teaching for me is seeing that lightbulb moment when a child suddenly understands something they didn’t before</q>
-            <div class="quote__left__quote--quotee">Simon, teacher</div>
+            <div></div>
+            <div class="quote__left__quote__text">
+                <span class="quote__left__quote__text">
+                    <div class="quote__left__quote__text__leftquote"></div>
+                    The best part of teaching for me is seeing that lightbulb moment when a child suddenly understands something they didn’t before
+                    <div class="quote__left__quote__text__rightquote"></div>
+                    <span class="quote__left__quote__text__quotee">Simon, teacher</span>
+                </span>
+            </div>
+            <div></div>
         </div>
     </div>
     <div class="quote__right" style="background-image: url('<%= asset_pack_path 'media/images/simonsquote.png' %>')">
@@ -104,13 +124,17 @@
         <div class="quote-mobile__top__mask"></div>
     </div>
     <div class="quote-mobile__bottom">
-        
-        <div class="quote-mobile__bottom__graphic">
-            <div class="icon-quote"></div>
-        </div>
-        <div class="quote-mobile__bottom__quote">
-            <q>The best part of teaching for me is seeing that lightbulb moment when a child suddenly understands something they didn’t before</q>
-            <div class="quote-mobile__bottom__quote--quotee">Simon, teacher</div>
+        <div class="quote-mobile__bottom__table">
+            <div class="quote-mobile__bottom__table__top-space"></div>
+            <div class="quote-mobile__bottom__table__center">
+                <div class="quote-mobile__bottom__table__center__cell">
+                    <div class="quote-mobile__bottom__table__center__cell__leftquote"></div>
+                    The best part of teaching for me is seeing that lightbulb moment when a child suddenly understands something they didn’t before
+                    <div class="quote-mobile__bottom__table__center__cell__rightquote"></div>
+                    <span class="quote-mobile__bottom__table__center__cell__quotee">Simon, teacher</span>
+                </div>
+            </div>
+            <div></div>
         </div>
     </div>
 </section>
@@ -135,5 +159,3 @@
         </p>
     </div>
 </section>
-
-<%= render "sections/talk-to-us" %>

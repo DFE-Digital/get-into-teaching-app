@@ -19,7 +19,15 @@ class PagesController < ApplicationController
     render template: "pages/events/registration/step#{params[:step_number]}"
   end
 
+  def mailingregistration
+    render template: "pages/mailinglist/registration/step#{params[:step_number]}"
+  end
+
   def show
-    render template: "content/#{params[:page]}", layout: "layouts/content"
+    if params[:page] == "covid-19/index"
+      render template: "content/#{params[:page]}", layout: "layouts/plain"
+    else
+      render template: "content/#{params[:page]}", layout: "layouts/content"
+    end
   end
 end
