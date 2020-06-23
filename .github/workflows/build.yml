@@ -85,6 +85,7 @@ jobs:
     name: Inform Sentry.io 
     if: ${{ always() }}
     runs-on: ubuntu-latest
+    steps:
        - name:  Send Message to Sentry.io
          if: ${{ always() }}
          uses: sfawcett123/sentry-event@v1
