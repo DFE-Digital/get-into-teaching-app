@@ -46,12 +46,15 @@ module Wizard
     end
 
     def previous_step(key = current_step)
-      index = step_index(key)
-      index.positive? ? steps[index - 1]&.key : nil
+      earlier_steps(key).reverse.find do |step|
+        !find(step).skipped?
+      end
     end
 
     def next_step(key = current_step)
-      steps[step_index(key) + 1]&.key
+      later_steps(key).find do |step|
+        !find(step).skipped?
+      end
     end
 
     def first_step?
@@ -63,7 +66,7 @@ module Wizard
     end
 
     def valid?
-      all_steps.all?(&:valid?)
+      active_step_instances.all?(&:valid?)
     end
 
     def complete!
@@ -71,17 +74,32 @@ module Wizard
     end
 
     def invalid_steps
-      all_steps.select(&:invalid?)
+      active_step_instances.select(&:invalid?)
     end
 
     def first_invalid_step
-      all_steps.find(&:invalid?)
+      active_step_instances.find(&:invalid?)
+    end
+
+    def later_steps(key = current_step)
+      steps[(step_index(key) + 1)..].to_a.map(&:key)
+    end
+
+    def earlier_steps(key = current_step)
+      index = step_index(key)
+      return [] unless index.positive?
+
+      steps[0..(index - 1)].map(&:key)
     end
 
   private
 
-    def all_steps
+    def all_step_instances
       step_keys.map(&method(:find))
+    end
+
+    def active_step_instances
+      all_step_instances.reject(&:skipped?)
     end
   end
 end

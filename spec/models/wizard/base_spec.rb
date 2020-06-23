@@ -65,6 +65,16 @@ describe Wizard::Base do
     it { is_expected.to eql "name" }
   end
 
+  describe "#later_steps" do
+    subject { wizardclass.new(wizardstore, "name").later_steps }
+    it { is_expected.to eql %w[age postcode] }
+  end
+
+  describe "#earlier_steps" do
+    subject { wizardclass.new(wizardstore, "postcode").earlier_steps }
+    it { is_expected.to eql %w[name age] }
+  end
+
   describe "#find" do
     subject { wizard.find("age") }
     it { is_expected.to be_instance_of TestWizard::Age }
@@ -77,12 +87,12 @@ describe Wizard::Base do
   end
 
   describe "#previous_step" do
-    context "when there are more steps" do
+    context "when there are earlier steps" do
       subject { wizard.previous_step("age") }
       it { is_expected.to eql "name" }
     end
 
-    context "when there are no more steps" do
+    context "when there are no earlier steps" do
       subject { wizard.previous_step("name") }
       it { is_expected.to be_nil }
     end
@@ -156,5 +166,42 @@ describe Wizard::Base do
     let(:backingstore) { { "name" => "test" } }
     subject { wizard.first_invalid_step }
     it { is_expected.to have_attributes key: "age" }
+  end
+
+  describe "skipped steps" do
+    before do
+      allow_any_instance_of(TestWizard::Age).to \
+        receive(:skipped?).and_return true
+    end
+
+    let(:current_step) { "name" }
+    subject { wizardclass.new wizardstore, current_step }
+
+    context "for the first step" do
+      it { is_expected.to have_attributes first_step?: true }
+      it { is_expected.to have_attributes next_step: "postcode" }
+    end
+
+    context "for the last step" do
+      let(:current_step) { "postcode" }
+      it { is_expected.to have_attributes last_step?: true }
+      it { is_expected.to have_attributes previous_step: "name" }
+    end
+
+    context "when last step skipped" do
+      before do
+        allow_any_instance_of(TestWizard::Postcode).to \
+          receive(:skipped?).and_return true
+      end
+      it { is_expected.to have_attributes next_step: nil }
+      it { is_expected.to have_attributes last_step?: true }
+      it { is_expected.to have_attributes first_step?: true }
+    end
+
+    context "with invalid steps" do
+      let(:backingstore) { { "name" => "test" } }
+      subject { wizard.invalid_steps.map(&:key) }
+      it { is_expected.to eql %w[postcode] }
+    end
   end
 end

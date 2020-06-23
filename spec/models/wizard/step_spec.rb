@@ -22,6 +22,7 @@ describe Wizard::Step do
     it { is_expected.to have_attributes persisted?: true }
     it { is_expected.to have_attributes name: "Joe" }
     it { is_expected.to have_attributes age: 20 }
+    it { is_expected.to have_attributes skipped?: false }
   end
 
   describe "#save" do

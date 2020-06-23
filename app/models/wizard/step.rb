@@ -30,6 +30,10 @@ module Wizard
       !id.nil?
     end
 
+    def skipped?
+      false
+    end
+
   private
 
     def attributes_from_store
