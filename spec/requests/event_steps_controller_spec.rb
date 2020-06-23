@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe EventStepsController, type: :request do
+describe EventStepsController do
   include_context "stub types api"
 
   let(:event_id) { SecureRandom.uuid }

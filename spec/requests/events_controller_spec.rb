@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe EventsController, type: :request do
+describe EventsController do
   include_context "stub types api"
 
   describe "#index" do
