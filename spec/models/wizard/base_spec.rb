@@ -28,13 +28,13 @@ describe Wizard::Base do
     end
   end
 
-  describe ".step_index" do
+  describe ".key_index" do
     it "will return index for known step" do
-      expect(wizardclass.step_index("age")).to eql 1
+      expect(wizardclass.key_index("age")).to eql 1
     end
 
     it "will raise exception for unknown step" do
-      expect { wizardclass.step_index("unknown") }.to \
+      expect { wizardclass.key_index("unknown") }.to \
         raise_exception(Wizard::UnknownStep)
     end
   end
@@ -44,8 +44,8 @@ describe Wizard::Base do
     it { is_expected.to eql %w[name age postcode] }
   end
 
-  describe ".first_step" do
-    subject { wizardclass.first_step }
+  describe ".first_key" do
+    subject { wizardclass.first_key }
     it { is_expected.to eql "name" }
   end
 
@@ -60,18 +60,18 @@ describe Wizard::Base do
     end
   end
 
-  describe "#current_step" do
-    subject { wizardclass.new(wizardstore, "name").current_step }
+  describe "#current_key" do
+    subject { wizardclass.new(wizardstore, "name").current_key }
     it { is_expected.to eql "name" }
   end
 
-  describe "#later_steps" do
-    subject { wizardclass.new(wizardstore, "name").later_steps }
+  describe "#later_keys" do
+    subject { wizardclass.new(wizardstore, "name").later_keys }
     it { is_expected.to eql %w[age postcode] }
   end
 
-  describe "#earlier_steps" do
-    subject { wizardclass.new(wizardstore, "postcode").earlier_steps }
+  describe "#earlier_keys" do
+    subject { wizardclass.new(wizardstore, "postcode").earlier_keys }
     it { is_expected.to eql %w[name age] }
   end
 
@@ -86,36 +86,36 @@ describe Wizard::Base do
     it { is_expected.to be_instance_of TestWizard::Age }
   end
 
-  describe "#previous_step" do
+  describe "#previous_key" do
     context "when there are earlier steps" do
-      subject { wizard.previous_step("age") }
+      subject { wizard.previous_key("age") }
       it { is_expected.to eql "name" }
     end
 
     context "when there are no earlier steps" do
-      subject { wizard.previous_step("name") }
+      subject { wizard.previous_key("name") }
       it { is_expected.to be_nil }
     end
 
-    context "when no step supplied" do
-      subject { wizard.previous_step }
+    context "when no key supplied" do
+      subject { wizard.previous_key }
       it { is_expected.to eql "name" }
     end
   end
 
-  describe "#next_step" do
+  describe "#next_key" do
     context "when there are more steps" do
-      subject { wizard.next_step("age") }
+      subject { wizard.next_key("age") }
       it { is_expected.to eql "postcode" }
     end
 
     context "when there are no more steps" do
-      subject { wizard.next_step("postcode") }
+      subject { wizard.next_key("postcode") }
       it { is_expected.to be_nil }
     end
 
-    context "when no step supplied" do
-      subject { wizard.next_step }
+    context "when no key supplied" do
+      subject { wizard.next_key }
       it { is_expected.to eql "postcode" }
     end
   end
@@ -179,13 +179,13 @@ describe Wizard::Base do
 
     context "for the first step" do
       it { is_expected.to have_attributes first_step?: true }
-      it { is_expected.to have_attributes next_step: "postcode" }
+      it { is_expected.to have_attributes next_key: "postcode" }
     end
 
     context "for the last step" do
       let(:current_step) { "postcode" }
       it { is_expected.to have_attributes last_step?: true }
-      it { is_expected.to have_attributes previous_step: "name" }
+      it { is_expected.to have_attributes previous_key: "name" }
     end
 
     context "when last step skipped" do
@@ -193,7 +193,7 @@ describe Wizard::Base do
         allow_any_instance_of(TestWizard::Postcode).to \
           receive(:skipped?).and_return true
       end
-      it { is_expected.to have_attributes next_step: nil }
+      it { is_expected.to have_attributes next_key: nil }
       it { is_expected.to have_attributes last_step?: true }
       it { is_expected.to have_attributes first_step?: true }
     end
