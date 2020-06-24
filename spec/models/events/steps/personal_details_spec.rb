@@ -1,11 +1,7 @@
 require "rails_helper"
 
 describe Events::Steps::PersonalDetails do
-  include_context "wizard store"
-
-  let(:instance) { described_class.new wizardstore }
-  subject { instance }
-
+  include_context "wizard step"
   it_behaves_like "a wizard step"
 
   it { is_expected.to respond_to :first_name }

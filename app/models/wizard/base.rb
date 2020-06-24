@@ -38,7 +38,7 @@ module Wizard
     end
 
     def find(key)
-      step(key).new @store
+      step(key).new self, @store
     end
 
     def find_current_step
