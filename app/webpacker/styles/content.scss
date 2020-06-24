@@ -103,7 +103,7 @@
 
         div.media-cta {
 
-            width: 90%;
+            width: 100%;
             height: 270px;
             overflow: hidden;
             position: relative;
@@ -154,21 +154,25 @@
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
 
     .content {
         padding-top: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        box-sizing: border-box;
 
         &__left {
-
-            padding-left: 0px;
-            padding-right: 0px;
+            padding: 0px;    
             display: block;
             width: 100%;
-            margin-right: 40px;
 
             p.content-alert {
                 margin-top: -10px;
+            }
+
+            div.media-cta {
+                max-width: 700px;
             }
 
         }
