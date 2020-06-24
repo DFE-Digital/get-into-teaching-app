@@ -104,7 +104,6 @@
         div.media-cta {
 
             width: 100%;
-            height: 270px;
             overflow: hidden;
             position: relative;
             @include font;
@@ -115,19 +114,21 @@
 
             img {
                 width: 100%;
+                display: block;
             }
 
             div {
                 display: inline-block;
+                max-width: 90%;
                 background-color: $green-dark-90;
-                height: 70px;
                 position: absolute;
                 bottom: 30px;
                 left: -5px;
                 transform: rotate(-3deg);
                 overflow: hidden;
                 box-sizing: border-box;
-                padding: 20px;
+                padding: 20px 20px 20px 40px;
+                line-height: 1.25;
             }
 
             i {
