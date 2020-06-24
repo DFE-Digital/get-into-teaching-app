@@ -100,6 +100,44 @@
                 width: 100%;
             }
         }
+
+        div.media-cta {
+
+            width: 90%;
+            height: 270px;
+            overflow: hidden;
+            position: relative;
+            @include font;
+            font-weight: bold;
+            color: $white;
+            text-decoration: none;
+            margin-bottom: 30px;
+
+            img {
+                width: 100%;
+            }
+
+            div {
+                display: inline-block;
+                background-color: $green-dark-90;
+                height: 70px;
+                position: absolute;
+                bottom: 30px;
+                left: -5px;
+                transform: rotate(-3deg);
+                overflow: hidden;
+                box-sizing: border-box;
+                padding: 20px;
+            }
+
+            i {
+                position: relative;
+                left: 3px;
+                top: 2px;
+            }
+        }
+
+
     }
 
     &__right {
