@@ -49,16 +49,15 @@
         </div>
     </div>
 </section>
-
+<script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script>
-document.addEventListener("DOMContentLoaded", function(){
-  // Handler when the DOM is fully loaded
-  document.getElementById("describe-yourself").onchange = function(){
+  $(document).ready(function(){
+  $("#describe-yourself").change(function () {
     if (this.value == "student") {
-      document.getElementById("submit-button").setAttribute('href', "/mailinglist/register/10");
+      $("#submit-button").attr('href', "/mailinglist/register/10");
     } else {
-      document.getElementById("submit-button").setAttribute('href', "/mailinglist/register/2");
+      $("#submit-button").attr('href', "/mailinglist/register/2");
     }
-  }
-});
+  });
+});  
 </script>
