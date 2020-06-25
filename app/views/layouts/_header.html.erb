@@ -56,6 +56,14 @@
 
 
 <script>
+
+    function closeVideoPlayer() {
+        var player = document.getElementById('video-player');
+        if(player) {
+            player.style.display = "none";
+        }
+    }
+
     function toggleCollapsable(item) {
 
         //toggle icon
@@ -85,6 +93,7 @@
     }
 
     window.addEventListener('DOMContentLoaded', function(event) {
+        
         var collapsableElements = document.getElementsByClassName('collapsable');
         for(var i=0; i< collapsableElements.length; i+=1) {
             var elementId = collapsableElements[i].getAttribute('id');
@@ -94,6 +103,7 @@
                 toggleCollapsable(last);
             }
         }
+
     });
 
 </script>
