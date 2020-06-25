@@ -115,10 +115,10 @@
         for(var i=0; i< contentVideos.length; i+=1) {
             var video = contentVideos[i];
             var videolink = video.parentElement;
+            var videourl = videolink.getAttribute('href');
             videolink.setAttribute('href','javascript:void(0)');
-            videolink.setAttribute('onClick','openVideoPlayer(\'xxxx\')');
+            videolink.setAttribute('onClick','openVideoPlayer(\'' + videourl + '\')');
             videolink.removeAttribute('target');
-            console.log(videolink);
         }
 
     });
