@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
-
     <head>
         <meta charset="utf-8">
         <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
@@ -12,23 +11,39 @@
         <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
         <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     </head>
+    <body class="govuk-template__body govuk-body" id="body">
+        <div class="container">
+            <%= render "layouts/header" %>
+            <%= render "sections/hero",  :header => @front_matter["title"], :image => @front_matter["image"] %>
+            <section class='content container-1000'>
+                <p>
+                    <%= yield %>
+                </p>
+            </section>
+            <%= render "layouts/footer" %>
 
-<body class="govuk-template__body govuk-body">
-
-    <div class="container">
-
-        <%= render "layouts/header" %>
-        <%= render "sections/hero",  :header => @front_matter["title"], :image => @front_matter["image"] %>
-        <section class='content container-1000'>
-            <p>
-                <%= yield %>
-            </p>
-        </section>
-        
-        <%= render "layouts/footer" %>
-
-    </div>
-
-</body>
+            
+        </div>
+        <div class="video-overlay" id="video-player">
+            <div class="video-player-background">   
+            </div>
+            <div class="video-player-container">
+                <div class="video-player">
+                    <iframe 
+                        width="100%" 
+                        height="100%"
+                        src="https://www.youtube.com/embed/aGd_Rrs-qNY" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                    <div class="video-dismiss">
+                        <div class="icon-video-close" onClick="closeVideoPlayer()"></div>
+                    </div>
+                </div>  
+            </div>
+            
+        </div>
+    </body>
 </html>
 
