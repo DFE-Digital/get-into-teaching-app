@@ -95,9 +95,26 @@
             margin-top: 20px;    
             width: 100%;
             text-align: left;
+            overflow: hidden;
 
             img {
                 width: 100%;
+            }
+
+            &__play {
+                background-color: $pink-90;
+                height: 60px;
+                width: 80px;
+                transform: rotate(3deg);
+                position: relative;
+                top: -250px;
+                left: -5px;
+            
+                div {
+                    transform: rotate(-3deg);
+                    margin-top: 16px;
+                    margin-left: 25px; 
+                }
             }
         }
 
