@@ -7,6 +7,8 @@
     width: 100%;
     min-height: 100vh;
     z-index: 1000;
+    justify-content: center;
+    align-items: center;
     
     .video-player-background {
         opacity: 0.4;
@@ -15,53 +17,50 @@
         min-height: 100vh;
         box-sizing: border-box;
         padding: 20px;
+        position: absolute;
     }
 
-    .video-player-container {
-        
+    .vidContainer {
         width: 100%;
-        min-height: 100vh;
+        max-width: 800px;
+        background-color: $white;
+        padding: 20px;
         box-sizing: border-box;
+        position: relative;
+        margin: 40px;
+
+        .video-dismiss {
+            position: absolute;
+            top: -25px;
+            right: -25px;
+            width: 60px;
+            height: 60px;
+            transform: rotate(3deg);
+            z-index: 1001;
+            display: block;
+            background-color: $pink-dark-90;
+            overflow: hidden;
+            cursor: pointer;
+
+            .icon-video-close {
+                transform: rotate(-3deg);
+                margin-top: 15px;
+                margin-left: 15px;
+            }
+        }
+    }
+
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        height: 0;
+    }
+    .videoWrapper iframe {
         position: absolute;
         top: 0;
         left: 0;
-        padding: 40px;
-        padding-top: 80px;
-        text-align: center;
-
-        .video-player {
-            display: inline-block;
-            background-color: $white;
-            width: 100%;
-            height: 100vh;
-            max-width: 800px;
-            max-height: 450px;
-            box-sizing: border-box;
-            padding: 20px;
-            position: relative;
-            
-            .video-dismiss {
-                position: absolute;
-                top: -25px;
-                right: -25px;
-                width: 60px;
-                height: 60px;
-                transform: rotate(3deg);
-                z-index: 1001;
-                display: block;
-                background-color: $pink-dark-90;
-                overflow: hidden;
-                cursor: pointer;
-
-                .icon-video-close {
-                    transform: rotate(-3deg);
-                    margin-top: 15px;
-                }
-            }
-        }
-        
-        
-        
+        width: 100%;
+        height: 100%;
     }
     
     
