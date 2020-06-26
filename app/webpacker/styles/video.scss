@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     
-    .video-player-background {
+    &__background {
         opacity: 0.4;
         background-color: $black;
         width: 100%;
@@ -20,7 +20,7 @@
         position: absolute;
     }
 
-    .vidContainer {
+    &__video-container {
         width: 100%;
         max-width: 800px;
         background-color: $white;
@@ -29,7 +29,7 @@
         position: relative;
         margin: 40px;
 
-        .video-dismiss {
+        &__dismiss {
             position: absolute;
             top: -25px;
             right: -25px;
@@ -48,20 +48,21 @@
                 margin-left: 15px;
             }
         }
-    }
 
-    .videoWrapper {
-        position: relative;
-        padding-bottom: 56.25%; /* 16:9 */
-        height: 0;
+        &__wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 */
+            height: 0;
+
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
     }
-    .videoWrapper iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-    
     
 }
