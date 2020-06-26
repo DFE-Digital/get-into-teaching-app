@@ -57,21 +57,6 @@
 
 <script>
 
-    function openVideoPlayer(videourl) {
-        var player = document.getElementById('video-player');
-        var videoiframe = document.getElementById('video-player-frame');
-        if(player && videoiframe) {
-            videoiframe.src = videourl.replace('https://www.youtube.com/watch?v=','https://www.youtube.com/embed/');
-            player.style.display = "flex";
-        }
-    }
-
-    function closeVideoPlayer() {
-        var player = document.getElementById('video-player');
-        if(player) {
-            player.style.display = "none";
-        }
-    }
 
     function toggleCollapsable(item) {
 
@@ -101,8 +86,7 @@
         }
     }
 
-    window.addEventListener('DOMContentLoaded', function(event) {
-        
+    window.addEventListener('DOMContentLoaded', function(event) {    
         var collapsableElements = document.getElementsByClassName('collapsable');
         for(var i=0; i< collapsableElements.length; i+=1) {
             var elementId = collapsableElements[i].getAttribute('id');
@@ -112,17 +96,6 @@
                 toggleCollapsable(last);
             }
         }
-
-        var contentVideos = document.getElementsByClassName('content-video');
-        for(var i=0; i< contentVideos.length; i+=1) {
-            var video = contentVideos[i];
-            var videolink = video.parentElement;
-            var videourl = videolink.getAttribute('href');
-            videolink.setAttribute('href','javascript:void(0)');
-            videolink.setAttribute('onClick','openVideoPlayer(\'' + videourl + '\')');
-            videolink.removeAttribute('target');
-        }
-
     });
 
 </script>

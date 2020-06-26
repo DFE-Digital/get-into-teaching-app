@@ -11,7 +11,7 @@
         <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
         <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     </head>
-    <body class="govuk-template__body govuk-body" id="body">
+    <body data-controller="video" class="govuk-template__body govuk-body" id="body">
         <div class="container">
             <%= render "layouts/header" %>
             <%= render "sections/hero",  :header => @front_matter["title"], :image => @front_matter["image"] %>
@@ -23,12 +23,12 @@
             <%= render "layouts/footer" %>     
         </div>
 
-        <div class="video-overlay" id="video-player">
+        <div class="video-overlay" data-target="video.player">
             <div class="video-overlay__background">   
             </div>
             <div class='video-overlay__video-container'>
                 <div class="video-overlay__video-container__wrapper">
-                    <iframe id="video-player-frame" 
+                    <iframe data-target="video.iframe"
                         width="800" 
                         height="450"
                         src="https://www.youtube.com/embed/aGd_Rrs-qNY" 
@@ -38,7 +38,7 @@
                     </iframe>
                 </div>
                 <div class="video-overlay__video-container__dismiss">
-                    <div class="icon-video-close" onClick="closeVideoPlayer()"></div>
+                    <div class="icon-video-close" data-action="click->video#close"></div>
                 </div>
             </div>
         </div>
