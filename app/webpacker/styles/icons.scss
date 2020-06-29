@@ -68,3 +68,10 @@
     width: 24px;
     height: 24px;
 }
+
+.icon-video-close {
+    @include icon;
+    background-image: url('../images/icon-close.svg');
+    width: 30px;
+    height: 30px;
+}

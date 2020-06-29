@@ -56,6 +56,8 @@
 
 
 <script>
+
+
     function toggleCollapsable(item) {
 
         //toggle icon
@@ -84,7 +86,7 @@
         }
     }
 
-    window.addEventListener('DOMContentLoaded', function(event) {
+    window.addEventListener('DOMContentLoaded', function(event) {    
         var collapsableElements = document.getElementsByClassName('collapsable');
         for(var i=0; i< collapsableElements.length; i+=1) {
             var elementId = collapsableElements[i].getAttribute('id');
@@ -95,5 +97,23 @@
             }
         }
     });
+
+    if (!Element.prototype.matches) {
+        Element.prototype.matches = Element.prototype.msMatchesSelector || 
+        Element.prototype.webkitMatchesSelector;
+    }
+
+    if (!Element.prototype.closest) {
+        Element.prototype.closest = function(s) {
+        var el = this;
+
+        do {
+            if (Element.prototype.matches.call(el, s)) return el;
+            el = el.parentElement || el.parentNode;
+        } while (el !== null && el.nodeType === 1);
+        return null;
+    };
+    
+}
 
 </script>
