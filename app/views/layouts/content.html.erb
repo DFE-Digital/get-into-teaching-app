@@ -14,8 +14,8 @@
     <body data-controller="video" class="govuk-template__body govuk-body" id="body">
         <div class="container">
             <%= render "layouts/header" %>
-            <%= render "sections/hero",  :header => @front_matter["title"], :image => @front_matter["image"] %>
-            <section class='content container-1000'>
+            <%= render "sections/hero", :header => @front_matter["title"], :image => @front_matter["image"] %>
+            <section class="content container-1000">
                 <p>
                     <%= yield %>
                 </p>
@@ -42,7 +42,6 @@
                 </div>
             </div>
         </div>
-
     </body>
 </html>
 
