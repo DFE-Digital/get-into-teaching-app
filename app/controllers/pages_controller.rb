@@ -24,17 +24,12 @@ class PagesController < ApplicationController
   end
 
   def show
-    if params[:page] == "covid-19/index" || params[:page] == "privacy-policy/index"
-      render template: "content/#{params[:page]}", layout: "layouts/plain"
-    else
-      render template: "content/#{params[:page]}", layout: "layouts/content"
-    end
+    render template: "content/#{params[:page]}", layout: "layouts/content"
   rescue ActionView::MissingTemplate
     respond_to do |format|
       format.html do
         render \
           template: "errors/not_found",
-          layout: "plain",
           status: :not_found
       end
 
