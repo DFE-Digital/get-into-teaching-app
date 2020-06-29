@@ -8,6 +8,8 @@ Rails.application.routes.draw do
     get "/assets/*missing", to: "errors#not_found", via: :all
   end
 
+  get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
+
   get "/events", to: "pages#events", via: :all, as: nil
   get "/eventschool", to: "pages#eventschool", via: :all
   get "/event", to: "pages#event", via: :all, as: nil
