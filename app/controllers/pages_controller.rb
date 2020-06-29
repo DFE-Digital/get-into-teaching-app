@@ -29,5 +29,18 @@ class PagesController < ApplicationController
     else
       render template: "content/#{params[:page]}", layout: "layouts/content"
     end
+  rescue ActionView::MissingTemplate
+    respond_to do |format|
+      format.html do
+        render \
+          template: "errors/not_found",
+          layout: "plain",
+          status: :not_found
+      end
+
+      format.all do
+        render status: :not_found, body: nil
+      end
+    end
   end
 end
