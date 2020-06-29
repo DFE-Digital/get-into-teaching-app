@@ -63,7 +63,7 @@ jobs:
              STATE:  ${{job.status}}
              ENVIRON: "Test"
         env:
-            SENTRY_DSN: ${{secrets.SENTRY_DSN}}
+            SENTRY_DSN: ${{secrets.DEV_OPS_SENTRY_DSN}}
   trigger_content_build:
     name: Trigger build of Content repo
     runs-on: ubuntu-latest
