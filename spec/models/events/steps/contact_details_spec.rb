@@ -1,10 +1,7 @@
 require "rails_helper"
 
 describe Events::Steps::ContactDetails do
-  include_context "wizard store"
-
-  let(:instance) { described_class.new wizardstore }
-  subject { instance }
+  include_context "wizard step"
 
   it_behaves_like "a wizard step"
 
@@ -19,7 +16,7 @@ describe Events::Steps::ContactDetails do
   end
 
   context "data cleaning" do
-    subject { described_class.new wizardstore, phone_number: "  01234567890 " }
+    let(:attributes) { { phone_number: "  01234567890 " } }
     before { subject.valid? }
     it { is_expected.to have_attributes phone_number: "01234567890" }
   end

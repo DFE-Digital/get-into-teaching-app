@@ -13,7 +13,8 @@ module Wizard
     delegate :key, to: :class
     alias_method :id, :key
 
-    def initialize(store, attributes = {}, *args)
+    def initialize(wizard, store, attributes = {}, *args)
+      @wizard = wizard
       @store = store
       super(*args)
       assign_attributes attributes_from_store
@@ -28,6 +29,10 @@ module Wizard
 
     def persisted?
       !id.nil?
+    end
+
+    def skipped?
+      false
     end
 
   private

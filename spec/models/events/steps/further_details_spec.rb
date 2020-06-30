@@ -1,10 +1,7 @@
 require "rails_helper"
 
 describe Events::Steps::FurtherDetails do
-  include_context "wizard store"
-
-  let(:instance) { described_class.new wizardstore }
-  subject { instance }
+  include_context "wizard step"
 
   it_behaves_like "a wizard step"
 
@@ -31,7 +28,7 @@ describe Events::Steps::FurtherDetails do
   end
 
   context "data cleaning" do
-    subject { described_class.new wizardstore, postcode: "  TE57 1NG " }
+    let(:attributes) { { postcode: "  TE57 1NG " } }
     before { subject.valid? }
     it { is_expected.to have_attributes postcode: "TE57 1NG" }
   end

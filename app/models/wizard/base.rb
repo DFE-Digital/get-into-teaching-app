@@ -13,7 +13,7 @@ module Wizard
         indexed_steps[key] || raise(UnknownStep)
       end
 
-      def step_index(key)
+      def key_index(key)
         steps.index step(key)
       end
 
@@ -21,49 +21,52 @@ module Wizard
         indexed_steps.keys
       end
 
-      def first_step
+      def first_key
         step_keys.first
       end
     end
 
-    delegate :step, :step_index, :indexed_steps, :step_keys, to: :class
-    attr_reader :current_step
+    delegate :step, :key_index, :indexed_steps, :step_keys, to: :class
+    attr_reader :current_key
 
-    def initialize(store, current_step)
+    def initialize(store, current_key)
       @store = store
 
-      raise(UnknownStep) unless step_keys.include?(current_step)
+      raise(UnknownStep) unless step_keys.include?(current_key)
 
-      @current_step = current_step
+      @current_key = current_key
     end
 
     def find(key)
-      step(key).new @store
+      step(key).new self, @store
     end
 
     def find_current_step
-      find current_step
+      find current_key
     end
 
-    def previous_step(key = current_step)
-      index = step_index(key)
-      index.positive? ? steps[index - 1]&.key : nil
+    def previous_key(key = current_key)
+      earlier_keys(key).reverse.find do |k|
+        !find(k).skipped?
+      end
     end
 
-    def next_step(key = current_step)
-      steps[step_index(key) + 1]&.key
+    def next_key(key = current_key)
+      later_keys(key).find do |k|
+        !find(k).skipped?
+      end
     end
 
     def first_step?
-      previous_step.nil?
+      previous_key.nil?
     end
 
     def last_step?
-      next_step.nil?
+      next_key.nil?
     end
 
     def valid?
-      all_steps.all?(&:valid?)
+      active_steps.all?(&:valid?)
     end
 
     def complete!
@@ -71,17 +74,32 @@ module Wizard
     end
 
     def invalid_steps
-      all_steps.select(&:invalid?)
+      active_steps.select(&:invalid?)
     end
 
     def first_invalid_step
-      all_steps.find(&:invalid?)
+      active_steps.find(&:invalid?)
+    end
+
+    def later_keys(key = current_key)
+      steps[(key_index(key) + 1)..].to_a.map(&:key)
+    end
+
+    def earlier_keys(key = current_key)
+      index = key_index(key)
+      return [] unless index.positive?
+
+      steps[0..(index - 1)].map(&:key)
     end
 
   private
 
     def all_steps
       step_keys.map(&method(:find))
+    end
+
+    def active_steps
+      all_steps.reject(&:skipped?)
     end
   end
 end
