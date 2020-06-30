@@ -18,6 +18,8 @@ jobs:
         uses: brpaz/hadolint-action@master
         with:
              dockerfile: "Dockerfile"
+      - name: Setup sonarqube
+        uses: warchant/setup-sonar-scanner@v1 
       - name: Get Short SHA
         id: sha
         run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
