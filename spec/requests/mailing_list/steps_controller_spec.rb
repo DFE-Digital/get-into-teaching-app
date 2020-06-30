@@ -1,0 +1,62 @@
+require "rails_helper"
+
+describe MailingList::StepsController do
+  include_context "stub types api"
+
+  let(:model) { MailingList::Steps::Name }
+  let(:step_path) { mailing_list_step_path model.key }
+
+  describe "#show" do
+    before { get step_path }
+    subject { response }
+    it { is_expected.to have_http_status :success }
+  end
+
+  describe "#update" do
+    let(:key) { model.model_name.param_key }
+
+    subject do
+      patch step_path, params: { key => details_params }
+      response
+    end
+
+    context "with valid data" do
+      let(:details_params) { attributes_for(:mailing_list_name) }
+      it { is_expected.to redirect_to completed_mailing_list_steps_path }
+    end
+
+    context "with invalid data" do
+      let(:details_params) { { "first_name" => "test" } }
+      it { is_expected.to have_http_status :success }
+    end
+
+    context "for last step" do
+      let(:steps) { MailingList::Wizard.steps }
+      let(:model) { steps.last }
+      let(:details_params) { attributes_for :"mailing_list_#{model.key}" }
+
+      context "when all valid" do
+        before do
+          steps.each do |step|
+            allow_any_instance_of(step).to receive(:valid?).and_return true
+          end
+        end
+
+        it { is_expected.to redirect_to completed_mailing_list_steps_path }
+      end
+
+      context "when invalid steps" do
+        let(:details_params) { attributes_for :"mailing_list_#{model.key}" }
+        xit { is_expected.to redirect_to mailing_list_step_path steps.first.key }
+      end
+    end
+  end
+
+  describe "#completed" do
+    subject do
+      get completed_mailing_list_steps_path
+      response
+    end
+    it { is_expected.to have_http_status :success }
+  end
+end

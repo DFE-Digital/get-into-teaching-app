@@ -1,0 +1,38 @@
+<section class="mailing-reg-main">
+    <div class="mailing-reg-main__content container-1000">
+        <div class="event-reg-main__content__left">
+            <p>
+              <%= back_link step_path(wizard.previous_key) if wizard.previous_key %>
+            </p>
+
+            <h1>Sign up for personalised updates to help you get into teaching</h1>
+
+            <p>
+              We know you’ll only want to receive updates that help you to
+              take your next steps into teaching. That’s why we’ll only use your
+              information to make sure the updates we send are relevant to you.
+            </p>
+
+            <p>
+              If your circumstances change, you can call us to update your
+              details and stay informed about the things that matter to you.
+            </p>
+
+            <%= govuk_form_for current_step, url: step_path do |f| %>
+              <%= f.govuk_error_summary %>
+
+              <%= render current_step.key, current_step: current_step, f: f %>
+
+              <%= f.button class: "call-to-action-button" do %>
+                <%= wizard.last_step? ? "Complete sign up" : "Next Step" %>
+                <%= fas "chevron-right" %>
+              <% end %>
+            <% end %>
+        </div>
+
+        <div class="mailing-reg-main__content__right">
+
+        </div>
+    </div>
+</section>
+
