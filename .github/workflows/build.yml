@@ -64,11 +64,9 @@ jobs:
            -Dsonar.organization=dfe-digital
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
-#          -Dsonar.testExecutionReportPaths=${PWD}/out/test-report.xml
            -Dsonar.sources='app,lib,db,config' 
            -Dsonar.tests='./spec' 
            -Dsonar.exclusions='app/assets/**/*'
-#          -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/.resultset.json
 
       - name:  Send Message to Sentry.io
         if: ${{ always() }}
