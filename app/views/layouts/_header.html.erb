@@ -57,47 +57,7 @@
 
 <script>
 
-
-    function toggleCollapsable(item) {
-
-        //toggle icon
-        var iconName = 'collapsable-icon-' + item; 
-        var icon = document.getElementById(iconName);
-        if(icon) {
-            var currentIconClass = icon.getAttribute('class');
-            if(currentIconClass === 'fas fa-chevron-up') {
-                icon.setAttribute('class','fas fa-chevron-down');
-            } else {
-                icon.setAttribute('class','fas fa-chevron-up');
-            }
-        }
-
-        //toggle content
-        var contentName = 'collapsable-content-' + item;
-        var content = document.getElementById(contentName);
-        if(content) {
-            var contentStyle = window.getComputedStyle(content);
-            var contentDisplay = contentStyle.getPropertyValue('display');
-            if(contentDisplay === 'block') {
-                content.style.display = 'none';
-            } else {
-                content.style.display = 'block';
-            }
-        }
-    }
-
-    window.addEventListener('DOMContentLoaded', function(event) {    
-        var collapsableElements = document.getElementsByClassName('collapsable');
-        for(var i=0; i< collapsableElements.length; i+=1) {
-            var elementId = collapsableElements[i].getAttribute('id');
-            if(elementId) {
-                var frags = elementId.split('-');
-                var last = frags[frags.length-1];
-                toggleCollapsable(last);
-            }
-        }
-    });
-
+    //polyfill for ie8
     if (!Element.prototype.matches) {
         Element.prototype.matches = Element.prototype.msMatchesSelector || 
         Element.prototype.webkitMatchesSelector;
