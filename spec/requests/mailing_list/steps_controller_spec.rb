@@ -46,6 +46,9 @@ describe MailingList::StepsController do
       end
 
       context "when invalid steps" do
+        before do
+          allow_any_instance_of(model).to receive(:valid?).and_return true
+        end
         let(:details_params) { attributes_for :"mailing_list_#{model.key}" }
         it { is_expected.to redirect_to mailing_list_step_path steps.first.key }
       end
