@@ -15,10 +15,10 @@
         <div class="container">
             <%= render "layouts/header" %>
             <%= render "sections/hero", :header => @front_matter["title"], :image => @front_matter["image"] %>
-            <section class="content container-1000">
-                <p>
+            <section class="content content--<%= @front_matter["direction"] %> container-1000"> 
+                
                     <%= yield %>
-                </p>
+                
             </section>
             <%= render "layouts/footer" %>     
         </div>

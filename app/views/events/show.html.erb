@@ -1,7 +1,7 @@
 <%= render "sections/hero",  :header => "Aspire - School Direct Information morning and application advice", :image => "media/images/hero-events.png" %>
 
-<section class="event-info container-1000">
-    <div class="event-info__eventbox">
+<section class="event-info content container-1000">
+    <div class="content__right">
         <%= render "components/eventboxshort",
             :title => @event.eventName,
             :datetime => "#{@event.startDate} at 17:00 - 18:30",
@@ -12,7 +12,7 @@
             :location => "Coventry"
         %>
     </div>
-    <div class="event-info__detail">
+    <div class="content__left">
         <h1 class="strapline-article">Event information</h1>
         <p>
             Our local Train to Teach events have gone online and will now take the format of online question and answer sessions.

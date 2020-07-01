@@ -1,21 +1,21 @@
 .content {
-
-    vertical-align: top;
     text-align: left;
     width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 70px;
+    overflow: auto;
+    &--reverse {
+        flex-direction: row-reverse;
+    }
 
     &__left {
-
         min-height: 250px;
         box-sizing: border-box;
-        padding-left: 40px;
-        padding-right:20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px;
         text-align: left;
         vertical-align: top;
-        width: calc(100% - 370px);
-
+        width: 66.6666%;
+        float: left;
         .jumbotron {
             font-size: 19px;
             color: $black;
@@ -89,6 +89,8 @@
             font-weight: bold;
             line-height: 1.5;
             display: inline-block;
+            margin-left: -20px;
+            margin-right: -20px;
         }
         
         div.content-video {
@@ -159,26 +161,24 @@
     }
 
     &__right {
-        margin-right: 40px;
-        padding-left: 40px;
-        padding-right:20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
+        padding: 20px;
         text-align: left;
         vertical-align: top;
+        width: 33.3333%;
         float: right;
-        width: 288px;
+        box-sizing: border-box;
     }
 
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
 
     .content {
         padding-top: 20px;
         padding-left: 20px;
         padding-right: 20px;
         box-sizing: border-box;
+        margin-bottom: 50px;
 
         &__left {
             padding: 0px;    
@@ -186,7 +186,9 @@
             width: 100%;
 
             p.content-alert {
-                margin-top: -10px;
+                margin-top: 0px;
+                margin-left: 0px;
+                margin-right: 0px;
             }
 
             div.media-cta {

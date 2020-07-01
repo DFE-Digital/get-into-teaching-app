@@ -1,29 +1,7 @@
 .event-info {
 
-    min-height: 250px;
-    text-align: left;
-    padding-top:20px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 100px;
-    overflow: hidden; 
-    height:auto;
-
-    &__eventbox {
-        float:right;
-        width: 330px;
-        text-align: left;
-    }
-
-    &__detail {
-        float:left;
-        text-align: left;
-        width: calc(100% - 360px);
-        padding-top: 20px;
-
-        h1 {
-            margin: 0;
-        }
+    h1 {
+        margin-top: 0;
     }
 
     &__venue {
