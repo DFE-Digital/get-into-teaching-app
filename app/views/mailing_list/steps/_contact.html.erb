@@ -8,7 +8,7 @@
 <%= f.govuk_error_summary %>
 
 <%= f.govuk_text_field :phone_number %>
-<%= f.govuk_text_area :more_info %>
+<%= f.govuk_text_area :more_info, max_words: 200 %>
 
 <%= f.govuk_check_boxes_fieldset :accept_privacy_policy do %>
   <%= f.hidden_field :accept_privacy_policy, value: 0 %>
