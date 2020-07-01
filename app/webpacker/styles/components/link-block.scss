@@ -1,0 +1,68 @@
+.link-block, .link-block * {
+    box-sizing: border-box;
+}
+
+.link-block {
+    &__header {
+        background-color: $pink;
+        color: #FFFFFF;
+        font-weight: bold;
+        font-size: 19px;
+        padding: 20px 20px 20px 50px;
+        margin: 0;
+        position: relative;
+        &:before {
+            content: "";
+            display: block;
+            background-image: url('../images/icon-page.svg');
+            width: 21px;
+            height: 27px;
+            position: absolute;
+            top: 16px;
+            left: 16px;
+        }
+        .link-block--related & {
+            background-color: $green;
+            &:before {
+                content: "";
+                display: block;
+                background-image: url('../images/icon-related.svg');
+                width: 26px;
+                height: 33px;
+                position: absolute;
+                top: 16px;
+                left: 13px;
+            }
+        }
+    }
+    &__list {
+        list-style: none;
+        padding: 10px 0;
+        margin: 0 0 30px;
+        background-color: $grey;
+        a {
+            display: block;
+            position: relative;
+            font-weight: bold;
+            line-height: 1.25;
+            text-decoration: none;
+            margin-bottom: 10px;
+            padding: 5px 20px 5px 50px;
+            &:hover, &:focus, &:active {
+                text-decoration: underline;
+            }
+            .link-block--jump & {
+                &:before {
+                    content: "";
+                    display: block;
+                    background-image: url('../images/icon-down.svg');
+                    width: 21px;
+                    height: 19px;
+                    position: absolute;
+                    top: 6px;
+                    left: 15px;
+                }
+            }
+        }
+    }
+}
