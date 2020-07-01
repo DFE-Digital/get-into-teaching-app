@@ -1,0 +1,9 @@
+<%= f.govuk_text_field :phone_number %>
+<%= f.govuk_text_area :more_info %>
+
+<%= f.govuk_check_boxes_fieldset :accept_privacy_policy do %>
+  <%= f.hidden_field :accept_privacy_policy, value: 0 %>
+  <%= f.govuk_check_box :accept_privacy_policy, 1,
+        multiple: false, link_errors: true,
+        label: { text: "Yes" } %>
+<% end %>

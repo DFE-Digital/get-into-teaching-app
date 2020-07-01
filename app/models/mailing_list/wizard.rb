@@ -6,6 +6,7 @@ module MailingList
       Steps::TeacherTraining,
       Steps::Subject,
       Steps::Postcode,
+      Steps::Contact,
     ].freeze
   end
 end

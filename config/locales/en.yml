@@ -87,6 +87,13 @@ en:
             postcode:
               blank: Enter your postcode
               invalid: Enter a valid postcode
+        mailing_list/steps/contact:
+          attributes:
+            phone_number:
+              invalid: Enter a valid phone number
+            accept_privacy_policy:
+              blank: Accept the privacy policy to continue
+              accepted: Accept the privacy policy to continue
 
   helpers:
     label:
@@ -111,6 +118,9 @@ en:
         subject: Which subject do you want to teach?
       mailing_list_steps_postcode:
         postcode: Your postcode
+      mailing_list_steps_contact:
+        phone_number: Your phone number (optional)
+        more_info: What would you like more information about when we call you?
 
     hint:
       events_steps_contact_details:
@@ -136,3 +146,6 @@ en:
           Are you over 16 and have agreed to our privacy policy?
         future_events: |-
           Sign up and receive information about future events (optional)
+      mailing_list_steps_contact:
+        accept_privacy_policy: |-
+          Are you over 16 and do you agree to our privacy policy?

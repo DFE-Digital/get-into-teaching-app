@@ -11,6 +11,7 @@ describe MailingList::Wizard do
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,
         MailingList::Steps::Postcode,
+        MailingList::Steps::Contact,
       ]
     end
   end
