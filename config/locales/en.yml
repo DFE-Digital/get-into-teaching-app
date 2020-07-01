@@ -67,6 +67,11 @@ en:
             current_status:
               blank: Select how you would describe yourself
               inclusion: Select how you would describe yourself
+        mailing_list/steps/degree_stage:
+          attributes:
+            degree_stage:
+              blank: Select your degree stage
+              inclusion: Select your degree stage from the list
 
   helpers:
     label:
@@ -83,6 +88,8 @@ en:
         last_name: Last name
         email_address: Email address
         current_status: How would you describe yourself?
+      mailing_list_steps_degree_stage:
+        degree_stage: What stage are you at with your degree?
 
     hint:
       events_steps_contact_details:

@@ -22,7 +22,7 @@ describe MailingList::StepsController do
 
     context "with valid data" do
       let(:details_params) { attributes_for(:mailing_list_name) }
-      it { is_expected.to redirect_to completed_mailing_list_steps_path }
+      it { is_expected.to redirect_to mailing_list_step_path("degree_stage") }
     end
 
     context "with invalid data" do
@@ -47,7 +47,7 @@ describe MailingList::StepsController do
 
       context "when invalid steps" do
         let(:details_params) { attributes_for :"mailing_list_#{model.key}" }
-        xit { is_expected.to redirect_to mailing_list_step_path steps.first.key }
+        it { is_expected.to redirect_to mailing_list_step_path steps.first.key }
       end
     end
   end

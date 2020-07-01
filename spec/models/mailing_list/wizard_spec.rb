@@ -7,6 +7,7 @@ describe MailingList::Wizard do
     it do
       is_expected.to eql [
         MailingList::Steps::Name,
+        MailingList::Steps::DegreeStage,
       ]
     end
   end
