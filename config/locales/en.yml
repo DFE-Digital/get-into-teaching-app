@@ -117,9 +117,9 @@ en:
       mailing_list_steps_subject:
         subject: Which subject do you want to teach?
       mailing_list_steps_postcode:
-        postcode: Your postcode
+        postcode: What's your postcode?
       mailing_list_steps_contact:
-        phone_number: Your phone number (optional)
+        phone_number: What's your phone number (optional)
         more_info: What would you like more information about when we call you?
 
     hint:
@@ -131,14 +131,6 @@ en:
         postcode: |-
           Enter your postcode so that we can send you event information
           specificities to your area.
-      mailing_list_steps_subject:
-        subject: |-
-          Tell us which subject you're interested in teaching and we'll send you
-          relevant content about it.
-      mailing_list_steps_postcode:
-        postcode: |-
-          Tell us your postcode and we can send your information about events in
-          your area.
 
     legend:
       events_steps_further_details:

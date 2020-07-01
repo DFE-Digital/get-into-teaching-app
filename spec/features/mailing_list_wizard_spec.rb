@@ -11,7 +11,7 @@ RSpec.feature "View pages", type: :feature do
     select "Student"
     click_on "Next Step"
 
-    expect(page).to have_text "What stage are you at with your degree"
+    expect(page).to have_text "Your degree stage"
     select "Graduate or postgraduate"
     click_on "Next Step"
 
@@ -23,16 +23,16 @@ RSpec.feature "View pages", type: :feature do
     select "Maths"
     click_on "Next Step"
 
-    expect(page).to have_text "Your postcode"
-    fill_in "Your postcode", with: "TE57 1NG"
+    expect(page).to have_text "Events in your area"
+    fill_in "What's your postcode", with: "TE57 1NG"
     click_on "Next Step"
 
-    expect(page).to have_text "Your phone number"
-    fill_in "Your phone number", with: "01234567890"
+    expect(page).to have_text "If you need more information"
+    fill_in "What's your phone number", with: "01234567890"
     fill_in "What would you like more information about", with: "Lorem ipsum"
     click_on "Complete sign up"
 
-    expect(page).to have_text "Your phone number"
+    expect(page).to have_text "If you need more information"
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
     check "Yes"
@@ -60,16 +60,16 @@ RSpec.feature "View pages", type: :feature do
     select "Maths"
     click_on "Next Step"
 
-    expect(page).to have_text "Your postcode"
-    fill_in "Your postcode", with: "TE57 1NG"
+    expect(page).to have_text "Events in your area"
+    fill_in "What's your postcode", with: "TE57 1NG"
     click_on "Next Step"
 
-    expect(page).to have_text "Your phone number"
-    fill_in "Your phone number", with: "01234567890"
+    expect(page).to have_text "If you need more information"
+    fill_in "What's your phone number", with: "01234567890"
     fill_in "What would you like more information about", with: "Lorem ipsum"
     click_on "Complete sign up"
 
-    expect(page).to have_text "Your phone number"
+    expect(page).to have_text "If you need more information"
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
     check "Yes"
