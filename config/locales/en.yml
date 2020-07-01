@@ -91,6 +91,9 @@ en:
           attributes:
             phone_number:
               invalid: Enter a valid phone number
+            more_info:
+              blank: Enter the additional information you would like
+              use_fewer_words: Use 200 words or less
             accept_privacy_policy:
               blank: Accept the privacy policy to continue
               accepted: Accept the privacy policy to continue

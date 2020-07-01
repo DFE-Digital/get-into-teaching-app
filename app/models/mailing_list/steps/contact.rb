@@ -6,6 +6,8 @@ module MailingList
       attribute :accept_privacy_policy, :boolean
 
       validates :phone_number, phone_number: true
+      validates :more_info, presence: true, if: -> { phone_number.present? }
+      validates :more_info, number_of_words: { less_than: 200 }
       validates :accept_privacy_policy, acceptance: true, allow_nil: false
 
       before_validation if: :phone_number do

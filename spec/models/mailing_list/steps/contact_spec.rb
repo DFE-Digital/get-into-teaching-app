@@ -25,7 +25,18 @@ describe MailingList::Steps::Contact do
     it { is_expected.to allow_value(nil).for :more_info }
     it { is_expected.to allow_value("").for :more_info }
     it { is_expected.to allow_value("Lorem ipsum").for :more_info }
-    it "should validate an appropriate length or maximum words"
+
+    context "with phone number present" do
+      let(:attributes) { { phone_number: "0123456890" } }
+      it { is_expected.not_to allow_value(nil).for :more_info }
+      it { is_expected.not_to allow_value("").for :more_info }
+      it { is_expected.to allow_value("Lorem ipsum").for :more_info }
+    end
+
+    context "with too many words" do
+      it { is_expected.to allow_value("word " * 200).for :more_info }
+      it { is_expected.not_to allow_value("word " * 201).for :more_info }
+    end
   end
 
   context "accept_privacy_policy" do
