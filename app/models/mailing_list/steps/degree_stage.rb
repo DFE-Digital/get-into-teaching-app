@@ -18,6 +18,10 @@ module MailingList
           STAGES
         end
       end
+
+      def skipped?
+        @store["current_status"] != "Student"
+      end
     end
   end
 end

@@ -14,4 +14,23 @@ describe MailingList::Steps::DegreeStage do
     it { is_expected.not_to allow_value("").for :degree_stage }
     it { is_expected.not_to allow_value("random").for :degree_stage }
   end
+
+  context "skipped?" do
+    subject { described_class.new nil, Wizard::Store.new(store), {} }
+
+    context "when current_status equals 'Student'" do
+      let(:store) { { "current_status" => "Student" } }
+      it { is_expected.to have_attributes skipped?: false }
+    end
+
+    context "when current_status does not equal student" do
+      let(:store) { { "current_status" => "Looking to change career" } }
+      it { is_expected.to have_attributes skipped?: true }
+    end
+
+    context "when current_status is not set" do
+      let(:store) { {} }
+      it { is_expected.to have_attributes skipped?: true }
+    end
+  end
 end
