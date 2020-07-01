@@ -3,6 +3,7 @@ module MailingList
     self.steps = [
       Steps::Name,
       Steps::DegreeStage,
+      Steps::TeacherTraining,
     ].freeze
   end
 end

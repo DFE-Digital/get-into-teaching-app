@@ -72,6 +72,11 @@ en:
             degree_stage:
               blank: Select your degree stage
               inclusion: Select your degree stage from the list
+        mailing_list/steps/teacher_training:
+          attributes:
+            teacher_training:
+              blank: Select an option from the list
+              inclusion: Select an option from the list
 
   helpers:
     label:
@@ -90,6 +95,8 @@ en:
         current_status: How would you describe yourself?
       mailing_list_steps_degree_stage:
         degree_stage: What stage are you at with your degree?
+      mailing_list_steps_teacher_training:
+        teacher_training: How close are you to applying for teacher training?
 
     hint:
       events_steps_contact_details:
