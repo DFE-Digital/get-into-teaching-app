@@ -82,6 +82,11 @@ en:
             subject:
               blank: Choose a subject from the list
               inclusion: Choose a subject from the list
+        mailing_list/steps/postcode:
+          attributes:
+            postcode:
+              blank: Enter your postcode
+              invalid: Enter a valid postcode
 
   helpers:
     label:
@@ -104,6 +109,8 @@ en:
         teacher_training: How close are you to applying for teacher training?
       mailing_list_steps_subject:
         subject: Which subject do you want to teach?
+      mailing_list_steps_postcode:
+        postcode: Your postcode
 
     hint:
       events_steps_contact_details:
@@ -113,7 +120,15 @@ en:
       events_steps_further_details:
         postcode: |-
           Enter your postcode so that we can send you event information
-          specificities to your area
+          specificities to your area.
+      mailing_list_steps_subject:
+        subject: |-
+          Tell us which subject you're interested in teaching and we'll send you
+          relevant content about it.
+      mailing_list_steps_postcode:
+        postcode: |-
+          Tell us your postcode and we can send your information about events in
+          your area.
 
     legend:
       events_steps_further_details:

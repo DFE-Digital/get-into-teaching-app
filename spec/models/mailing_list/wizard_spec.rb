@@ -10,6 +10,7 @@ describe MailingList::Wizard do
         MailingList::Steps::DegreeStage,
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,
+        MailingList::Steps::Postcode,
       ]
     end
   end
