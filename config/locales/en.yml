@@ -45,7 +45,7 @@ en:
         events/steps/contact_details:
           attributes:
             phone_number:
-              invalid_format: Enter a valid phone number
+              invalid: Enter a valid phone number
         events/steps/further_details:
           attributes:
             privacy_policy:
