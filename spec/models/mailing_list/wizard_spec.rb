@@ -9,6 +9,7 @@ describe MailingList::Wizard do
         MailingList::Steps::Name,
         MailingList::Steps::DegreeStage,
         MailingList::Steps::TeacherTraining,
+        MailingList::Steps::Subject,
       ]
     end
   end

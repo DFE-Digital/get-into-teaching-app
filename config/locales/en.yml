@@ -75,8 +75,13 @@ en:
         mailing_list/steps/teacher_training:
           attributes:
             teacher_training:
-              blank: Select an option from the list
-              inclusion: Select an option from the list
+              blank: Choose an option from the list
+              inclusion: Choose an option from the list
+        mailing_list/steps/subject:
+          attributes:
+            subject:
+              blank: Choose a subject from the list
+              inclusion: Choose a subject from the list
 
   helpers:
     label:
@@ -97,6 +102,8 @@ en:
         degree_stage: What stage are you at with your degree?
       mailing_list_steps_teacher_training:
         teacher_training: How close are you to applying for teacher training?
+      mailing_list_steps_subject:
+        subject: Which subject do you want to teach?
 
     hint:
       events_steps_contact_details:
