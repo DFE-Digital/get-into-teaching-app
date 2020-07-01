@@ -4,12 +4,15 @@
     padding: 20px;
     display: inline-block;
     border: 2px solid $black;
-    height: 220px;
-    width: 290px;
+    height: auto;
+    width: 100%;
+    max-width: 290px;
     overflow: hidden;
     margin: 18px;
     text-align: left;
-
+    .content__right & {
+        margin: 0;
+    }
     &__header {
         width: 100%;
         overflow: hidden;
@@ -56,4 +59,14 @@
             font-size: 17px;
         }
     } 
+}
+
+@media only screen and (max-width: 800px) {
+
+    .event-resultboxshort {
+        .content__right & {
+            margin: 0 auto 30px;
+            display: block;
+        }
+    }
 }
