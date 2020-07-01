@@ -1,158 +1,160 @@
-<section>
-    <div class="home-hero" style="background-image: url('<%= asset_pack_path 'media/images/hero-home.png' %>')">
-        <div class="home-hero__banner">
-            <h1>Inspire the next generation</h1>
-            <p>Get information and support to help you become a teacher</p>
+<div role="main">
+    <section>
+        <div class="home-hero" style="background-image: url('<%= asset_pack_path 'media/images/hero-home.png' %>')">
+            <div class="home-hero__banner">
+                <h1>Inspire the next generation</h1>
+                <p>Get information and support to help you become a teacher</p>
+            </div>
+            
         </div>
-        
-    </div>
-    <div class="home-hero__mailing-strip">
-        <div class="home-hero__mailing-strip__text">
-            <p>Stay up-to-date with personalised information to help you get into teaching</p>  
+        <div class="home-hero__mailing-strip">
+            <div class="home-hero__mailing-strip__text">
+                <p>Stay up-to-date with personalised information to help you get into teaching</p>  
+            </div>
+            <div class="home-hero__mailing-strip__button">
+                <a href="/mailinglist/register/1">
+                    <div class="home-hero__mailing-strip__button__inner">
+                        <p>Learn more <i class="fas fa-chevron-right"></i></p>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="home-hero__mailing-strip__button">
-            <a href="/mailinglist/register/1">
-                <div class="home-hero__mailing-strip__button__inner">
-                    <p>Learn more <i class="fas fa-chevron-right"></i></p>
+    </section>
+
+    <section class="my-story container-1000">
+        <div class="my-story__left">
+            <a href='/life-as-a-teacher/real-stories/' aria-label="Life as a teacher">
+                <div class="my-story__left__video" style="background-image: url('<%= asset_pack_path 'media/images/paulsstory.png' %>')">
+                    <div class="my-story__left__video__overlay">
+                        <div class="icon-play"></div>
+                    </div>
                 </div>
             </a>
         </div>
-    </div>
-</section>
+        <div class="my-story__right">
+            <div class="my-story__right__header">
+                <h1 class="strapline-image">My story into teaching</h1>
+            </div>
+            <p>As a newly qualified teacher, Paul was keen to move up the teaching career ladder</p>
+            <p>
+                <a class="git-link" href='/life-as-a-teacher/real-stories/'>
+                    Read Paul's story and others <i class="fas fa-chevron-right"></i>
+                </a>
+            </p>
+        </div>
+    </section>
 
-<section class="my-story container-1000">
-    <div class="my-story__left">
-        <a href='/life-as-a-teacher/real-stories/' aria-label="Life as a teacher">
-            <div class="my-story__left__video" style="background-image: url('<%= asset_pack_path 'media/images/paulsstory.png' %>')">
-                <div class="my-story__left__video__overlay">
-                    <div class="icon-play"></div>
+    <section class="pic-links">
+        <div class="pic-links__pic" style="background-image: url('<%= asset_pack_path 'media/images/piclink1.png' %>')">
+            <a href="/life-as-a-teacher/index">
+                <div class="call-to-action-button">Teaching as a career  <i class="fas fa-chevron-right"></i></div>
+            </a>
+        </div>
+
+        <div class="pic-links__pic" style="background-image: url('<%= asset_pack_path 'media/images/piclink2.png' %>')">
+            <div class="pic-links__pic__mask"></div>
+            <div class="pic-links__pic__salaries">
+                <a href="/life-as-a-teacher/teachers-salaries-and-benefits/">
+                    <div class="call-to-action-button">Salaries and benefits  <i class="fas fa-chevron-right"></i></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="steps container-1000">
+        <div>
+            <h1 class="strapline">Discover the steps to become a teacher</h1>
+        </div>
+        <div class="steps__wrapper">
+            <div class="steps__step">
+                    <div class="steps__number"><span>1</span></div>
+                    <a href="/steps-to-become-a-teacher/index#step-1" class="steps__link">
+                        <span>Check your</span>
+                        <span>qualifications</span>
+                    </a>
+                </div>
+                <div class="steps__step">
+                    <div class="steps__number"><span>2</span></div>
+                    <a href="/steps-to-become-a-teacher/index#step-2" class="steps__link">
+                        <span>Find out</span>
+                        <span>about funding</span>
+                    </a>
+                </div>
+                <div class="steps__step">
+                    <div class="steps__number"><span>3</span></div>
+                    <a href="/steps-to-become-a-teacher/index#step-3" class="steps__link">
+                        <span> Decide</span>
+                        <span>how to train</span>
+                    </a>
+                </div>
+                <div class="steps__step">
+                    <div class="steps__number"><span>4</span></div>
+                    <a href="/steps-to-become-a-teacher/index#step-4" class="steps__link">
+                        <span>Application</span>
+                        <span>process</span>
+                    </a>
+                </div>
+        </div>
+    </section>
+
+    <section class="quote">
+        <div class="quote__left">
+            <div class="quote__left__quote">
+                <div></div>
+                <div class="quote__left__quote__text">
+                    <span class="quote__left__quote__text">
+                        <div class="quote__left__quote__text__leftquote"></div>
+                        The best part of teaching for me is seeing that lightbulb moment when a child suddenly understands something they didn’t before
+                        <div class="quote__left__quote__text__rightquote"></div>
+                        <span class="quote__left__quote__text__quotee">Simon, teacher</span>
+                    </span>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div class="quote__right" style="background-image: url('<%= asset_pack_path 'media/images/simonsquote.png' %>')">
+            <div class="quote__right__mask"></div>
+        </div>
+    </section>
+
+    <section class="quote-mobile">
+        <div class="quote-mobile__top" style="background-image: url('<%= asset_pack_path 'media/images/simonsquote.png' %>')">
+            <div class="quote-mobile__top__mask"></div>
+        </div>
+        <div class="quote-mobile__bottom">
+            <div class="quote-mobile__bottom__table">
+                <div class="quote-mobile__bottom__table__top-space"></div>
+                <div class="quote-mobile__bottom__table__center">
+                    <div class="quote-mobile__bottom__table__center__cell">
+                        <div class="quote-mobile__bottom__table__center__cell__leftquote"></div>
+                        The best part of teaching for me is seeing that lightbulb moment when a child suddenly understands something they didn’t before
+                        <div class="quote-mobile__bottom__table__center__cell__rightquote"></div>
+                        <span class="quote-mobile__bottom__table__center__cell__quotee">Simon, teacher</span>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="find-an-event container-1000">
+        <div class="find-an-event__left">
+            <div class="find-an-event__left__map" style="background-image: url('<%= asset_pack_path 'media/images/map.png' %>')">
+                <div class="find-an-event__left__map__pin">
+                    <div class="icon-pin-large"></div>
                 </div>
             </div>
-        </a>
-    </div>
-    <div class="my-story__right">
-        <div class="my-story__right__header">
-            <h1 class="strapline-image">My story into teaching</h1>
         </div>
-        <p>As a newly qualified teacher, Paul was keen to move up the teaching career ladder</p>
-        <p>
-            <a class="git-link" href='/life-as-a-teacher/real-stories/'>
-                Read Paul's story and others <i class="fas fa-chevron-right"></i>
-            </a>
-        </p>
-    </div>
-</section>
-
-<section class="pic-links">
-    <div class="pic-links__pic" style="background-image: url('<%= asset_pack_path 'media/images/piclink1.png' %>')">
-        <a href="/life-as-a-teacher/index">
-            <div class="call-to-action-button">Teaching as a career  <i class="fas fa-chevron-right"></i></div>
-        </a>
-    </div>
-
-    <div class="pic-links__pic" style="background-image: url('<%= asset_pack_path 'media/images/piclink2.png' %>')">
-        <div class="pic-links__pic__mask"></div>
-        <div class="pic-links__pic__salaries">
-            <a href="/life-as-a-teacher/teachers-salaries-and-benefits/">
-                <div class="call-to-action-button">Salaries and benefits  <i class="fas fa-chevron-right"></i></div>
-            </a>
-        </div>
-    </div>
-</section>
-
-<section class="steps container-1000">
-    <div>
-        <h1 class="strapline">Discover the steps to become a teacher</h1>
-    </div>
-    <div class="steps__wrapper">
-        <div class="steps__step">
-                <div class="steps__number"><span>1</span></div>
-                <a href="/steps-to-become-a-teacher/index#step-1" class="steps__link">
-                    <span>Check your</span>
-                    <span>qualifications</span>
+        <div class="find-an-event__right">
+            <div class="find-an-event__right__header">
+                <h1 class="strapline-image">Find an event near you</h1>
+            </div>
+            <p>Come to a free teaching event and find out how you can train to become a teacher</p>
+            <p>
+                <a class="git-link" href='./events'>
+                    Find events <i class="fas fa-chevron-right"></i>
                 </a>
-            </div>
-            <div class="steps__step">
-                <div class="steps__number"><span>2</span></div>
-                <a href="/steps-to-become-a-teacher/index#step-2" class="steps__link">
-                    <span>Find out</span>
-                    <span>about funding</span>
-                </a>
-            </div>
-            <div class="steps__step">
-                <div class="steps__number"><span>3</span></div>
-                <a href="/steps-to-become-a-teacher/index#step-3" class="steps__link">
-                   <span> Decide</span>
-                   <span>how to train</span>
-                </a>
-            </div>
-            <div class="steps__step">
-                <div class="steps__number"><span>4</span></div>
-                <a href="/steps-to-become-a-teacher/index#step-4" class="steps__link">
-                    <span>Application</span>
-                    <span>process</span>
-                </a>
-            </div>
-    </div>
-</section>
-
-<section class="quote">
-    <div class="quote__left">
-        <div class="quote__left__quote">
-            <div></div>
-            <div class="quote__left__quote__text">
-                <span class="quote__left__quote__text">
-                    <div class="quote__left__quote__text__leftquote"></div>
-                    The best part of teaching for me is seeing that lightbulb moment when a child suddenly understands something they didn’t before
-                    <div class="quote__left__quote__text__rightquote"></div>
-                    <span class="quote__left__quote__text__quotee">Simon, teacher</span>
-                </span>
-            </div>
-            <div></div>
+            </p>
         </div>
-    </div>
-    <div class="quote__right" style="background-image: url('<%= asset_pack_path 'media/images/simonsquote.png' %>')">
-        <div class="quote__right__mask"></div>
-    </div>
-</section>
-
-<section class="quote-mobile">
-    <div class="quote-mobile__top" style="background-image: url('<%= asset_pack_path 'media/images/simonsquote.png' %>')">
-        <div class="quote-mobile__top__mask"></div>
-    </div>
-    <div class="quote-mobile__bottom">
-        <div class="quote-mobile__bottom__table">
-            <div class="quote-mobile__bottom__table__top-space"></div>
-            <div class="quote-mobile__bottom__table__center">
-                <div class="quote-mobile__bottom__table__center__cell">
-                    <div class="quote-mobile__bottom__table__center__cell__leftquote"></div>
-                    The best part of teaching for me is seeing that lightbulb moment when a child suddenly understands something they didn’t before
-                    <div class="quote-mobile__bottom__table__center__cell__rightquote"></div>
-                    <span class="quote-mobile__bottom__table__center__cell__quotee">Simon, teacher</span>
-                </div>
-            </div>
-            <div></div>
-        </div>
-    </div>
-</section>
-
-<section class="find-an-event container-1000">
-    <div class="find-an-event__left">
-        <div class="find-an-event__left__map" style="background-image: url('<%= asset_pack_path 'media/images/map.png' %>')">
-            <div class="find-an-event__left__map__pin">
-                <div class="icon-pin-large"></div>
-            </div>
-        </div>
-    </div>
-    <div class="find-an-event__right">
-        <div class="find-an-event__right__header">
-            <h1 class="strapline-image">Find an event near you</h1>
-        </div>
-        <p>Come to a free teaching event and find out how you can train to become a teacher</p>
-        <p>
-            <a class="git-link" href='./events'>
-                Find events <i class="fas fa-chevron-right"></i>
-            </a>
-        </p>
-    </div>
-</section>
+    </section>
+</div>
