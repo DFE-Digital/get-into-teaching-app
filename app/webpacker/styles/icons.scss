@@ -22,16 +22,22 @@
 
 .icon-online {
     @include icon;
-    background-image: url('../images/icon-online.svg');
-    width: 27px;
-    height: 20px;
+    background-image: url('../images/icon-online-blue.svg');
+    width: 38px;
+    height: 25px;
+   .event-resultbox--traintoteach & {
+       background-image: url('../images/icon-online-green.svg');
+   }
 }
 
 .icon-pin {
     @include icon;
-    background-image: url('../images/icon-location-small.svg');
-    width: 25px;
-    height: 30px;
+    background-image: url('../images/icon-pin-blue.svg');
+    width: 23px;
+    height: 36px;
+   .event-resultbox--traintoteach & {
+       background-image: url('../images/icon-pin-green.svg');
+   }
 }
 
 .icon-pin-large {
@@ -50,9 +56,9 @@
 
 .icon-school {
     @include icon;
-    background-image: url('../images/icon-school.svg');
-    width: 24px;
-    height: 24px;
+    background-image: url('../images/icon-school-blue.svg');
+    width: 33px;
+    height: 22px;
 }
 
 .icon-train-to-teach {

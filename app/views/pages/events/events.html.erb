@@ -3,121 +3,67 @@
     :image => "media/images/hero-events.png" 
 %>
 
-<section class="types-of-event container-1000">
+<section class="types-of-event content container-1000">
 
-    <div class="types-of-event__right">
-        <ul class="content-nav">
-            <li><a href="#searchforevents">Jump to the event finder</a></li>
-        </ul>
+    <div class="content__left">
+        <p>
+            <strong>Our nationwide events are informal opportunities for you to get free expert advice about your next steps into teaching.</strong>
+        </p>
     </div>
 
-    <div class="types-of-event__left">
-        <p class="content-alert">
-            Our nationwide events are informal opportunities for you to get free expert advice about your next steps into teaching.
-        </p>
-
-        <h1 class="strapline-article types-of-event__header">Types of event</h1>
-        
-        <h1>Train to teach</h1>
-        <p>
-            At our Train to Teach events, you can meet experienced teaching professionals who can answer all of your questions.
-        </p> 
-        <h2>You’ll get the chance to:</h2>
-        <ul>
-            <li><span>Speak to experts about ways into teacher training and available funding</span></li>
-            <li><span>Talk one-to-one with experienced and newly qualified teachers to find out what Teaching is really like</span></li>
-            <li><span>Get advice on your teacher training application</span></li>
-            <li><span>Talk to schools and universities in your area to help you decide on the best place for you to train and how to apply</span></li>
-        </ul>
-        <p>
-            You can drop in at any time. Allow at least two hours to make the most of your visit. Train to Teach presentations run hourly throughout the event. 
-        </p>
-        <p>
-            Check event timetables to make sure you don’t miss anything.
-        </p>
-
-    </div>
-
-</section>
-
-<section class="types-of-event-quote container-1000">
-    <div class="types-of-event-quote__left">
-        <div class="types-of-event-quote__left__graphic__container">
-            <div class="types-of-event-quote__left__graphic">
-                <i class="fas fa-quote-left fa-2x"></i>
-            </div>
-        </div>
-        <div class="types-of-event-quote__left__quote">
-            <q>The best part of teaching for me is seeing that lightbulb moment when a child suddenly understands something they didn’t before</q>
-            <div class="types-of-event-quote__left__quote--quotee">Simon, teacher</div>
-        </div>
-    </div>
-</section>
-
-<section class="types-of-event-types container-1000">
-    <div class="types-of-event-types__content">
-        <h1>Online</h1>
-        <p>
-            These interactive sessions let you talk with a panel of specialist advisers and get questions answered within minutes. See what matters to other potential trainee teachers too. Joining a conversation is easy – check in regularly to see what discussions we’ve got lined up.
-        </p>
-
-        <h1>School and university events</h1>
-        <p>
-            Schools and universities that run teacher training courses often hold their own events. Typically they cover areas such as:
-        </p>
-        <ul>
-            <li><span>Course information</span></li>
-            <li><span>Application advice</span></li>
-            <li><span>School experience</span></li>
-            <li><span>Opportunities to talk to current trainees or staff</span></li>
-        </ul>
-    </div>
 </section>
 
 <section class="search-for-events">
     <div class="container-1000">
         <h1 id="searchforevents" class="strapline search-for-events__header">Search for events</h1>
         <div class="search-for-events__content">
-            <div>
-                <form>
-                    <div class="search-for-events__content__input">
-                        <label for="event-type" class="search-for-events__content__input__label">
-                            Event type
-                        </label>
-                        <span class="search-for-events__content__input__select">
-                            <select id="event-type">
-                                <option>Train to teach events</option>
-                                <option>School or uni event</option>
-                                <option>Online events</option>
-                            </select>
-                        </span>
-                    </div>
-                    <div class="search-for-events__content__input">
-                        <label for="event-location" class="search-for-events__content__input__label">
-                            Location
-                        </label>
-                        <span class="search-for-events__content__input__select">
-                            <select id="event-location" >
-                                <option>Nationwide</option>
-                                <option>the North</option>
-                                <option>the South</option>
-                            </select>
-                        </span>
-                    </div>
-                    <div class="search-for-events__content__input">
-                        <label for="event-date" class="search-for-events__content__input__label">
-                            Month
-                        </label>
-                        <span class="search-for-events__content__input__select">
-                            <select id="event-date">
-                                <option>March 2020</option>
-                                <option>April 2020</option>
-                                <option>May 2020</option>
-                            </select>
-                        </span>
-                    </div>
-                </form>
-            </div>
+            <form>
+                <div class="search-for-events__content__input">
+                    <label for="event-type" class="search-for-events__content__input__label">
+                        Event type
+                    </label>
+                    <span class="search-for-events__content__input__select">
+                        <select id="event-type">
+                            <option>Train to teach events</option>
+                            <option>School or uni event</option>
+                            <option>Online events</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="search-for-events__content__input">
+                    <label for="event-location" class="search-for-events__content__input__label">
+                        Location
+                    </label>
+                    <span class="search-for-events__content__input__select">
+                        <select id="event-location" >
+                            <option>Nationwide</option>
+                            <option>Within 30 miles</option>
+                            <option>Within 50 miles</option>
+                            <option>Within 100 miles</option>
+                        </select>
+                    </span>
+                </div>
+                <div class="search-for-events__content__input search-for-events__content__input--hidden">
+                    <label for="event-location" class="search-for-events__content__input__label">
+                        Postcode
+                    </label>
+                    <span class="search-for-events__content__input__select">
+                        <input type="text" id="event-postcode" />
+                    </span>
+                </div>
+                <div class="search-for-events__content__input">
+                    <label for="event-date" class="search-for-events__content__input__label">
+                        Month
+                    </label>
+                    <span class="search-for-events__content__input__select">
+                        <select id="event-date">
+                            <option>March 2020</option>
+                            <option>April 2020</option>
+                            <option>May 2020</option>
+                        </select>
+                    </span>
+                </div>
+            </form>
             <div class="search-for-events__content__update">
                 <div class="request-button">Update results <i class="fas fa-sync"></i></div>
             </div>
@@ -125,8 +71,147 @@
     </div>
 </section>
 
-<section class="search-for-events-results container-1000">
+<section class="types-of-event content container-1000">
+    <div class="content__left">
+        <h2 class="types-of-event__header types-of-event__header--ttt">Organised by Get into Teaching</h2>
+    </div>
+    <div class="events-featured">
+        <h3>Train to Teach events</h3>
+        <p>Meet experienced teaching professionals who can answer questions about your application, ways to train, funding and more. Talk one-to-one with newly qualified teachers and find out what teaching is really like. </p>
+        <div class="events-featured__items">
+            <a href="/event">
+                <%= render "components/eventbox", 
+                    :title => "Secondary School teaching",
+                    :datetime => "11 May 2020 at 17:00 - 18:30",
+                    :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
+                    :schooloruni => false,
+                    :traintoteach => false,
+                    :online => true
+                %>
+            </a>
 
+            <a href="/event">
+                <%= render "components/eventbox", 
+                    :title => "Train to teach Coventry Online event",
+                    :datetime => "11 May 2020 at 17:00 - 18:30",
+                    :description => "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
+                    :schooloruni => false,
+                    :traintoteach => true,
+                    :online => true,
+                    :location => "Coventry"
+                %>
+            </a>
+
+            <a href="/eventschool">
+                <%= render "components/eventbox", 
+                    :title => "Heart TSA - Zoom train to teach information event",
+                    :datetime => "11 May 2020 at 17:00 - 18:30",
+                    :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
+                    :schooloruni => true,
+                    :traintoteach => false,
+                    :online => true
+                %>
+            </a>
+        </div>
+        <a href="/">
+            <div class="call-to-action-button">See all train to teach events  <i class="fas fa-chevron-right"></i></div>
+        </a>
+    </div>
+    <div class="events-featured">
+        <h3>Online events</h3>
+        <p>Online teaching events are interactive sessions that offer a convenient way to engage directly with a panel of specialist advisers across a range of topics. </p>
+        <div class="events-featured__items">
+            <a href="/event">
+                <%= render "components/eventbox", 
+                    :title => "Secondary School teaching",
+                    :datetime => "11 May 2020 at 17:00 - 18:30",
+                    :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
+                    :schooloruni => false,
+                    :traintoteach => false,
+                    :online => true
+                %>
+            </a>
+
+            <a href="/event">
+                <%= render "components/eventbox", 
+                    :title => "Train to teach Coventry Online event",
+                    :datetime => "11 May 2020 at 17:00 - 18:30",
+                    :description => "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
+                    :schooloruni => false,
+                    :traintoteach => true,
+                    :online => true,
+                    :location => "Coventry"
+                %>
+            </a>
+
+            <a href="/eventschool">
+                <%= render "components/eventbox", 
+                    :title => "Heart TSA - Zoom train to teach information event",
+                    :datetime => "11 May 2020 at 17:00 - 18:30",
+                    :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
+                    :schooloruni => true,
+                    :traintoteach => false,
+                    :online => true
+                %>
+            </a>
+        </div>
+        <a href="/">
+            <div class="call-to-action-button">See all train to teach events  <i class="fas fa-chevron-right"></i></div>
+        </a>
+    </div>
+    <div class="content__left">
+        <h2 class="types-of-event__header types-of-event__header--ttt">Organised by Schools and universities</h2>
+    </div>
+    <div class="events-featured">
+        <h3>Schools and university events</h3>
+        <p>Universities and schools often hold their own events to help you get into teaching. These can range from general open days to events about teaching certain subjects, school experience days and the application process.</p>
+        <div class="events-featured__items">
+            <a href="/event">
+                <%= render "components/eventbox", 
+                    :title => "Secondary School teaching",
+                    :datetime => "11 May 2020 at 17:00 - 18:30",
+                    :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
+                    :schooloruni => false,
+                    :traintoteach => false,
+                    :online => true
+                %>
+            </a>
+
+            <a href="/event">
+                <%= render "components/eventbox", 
+                    :title => "Train to teach Coventry Online event",
+                    :datetime => "11 May 2020 at 17:00 - 18:30",
+                    :description => "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
+                    :schooloruni => false,
+                    :traintoteach => true,
+                    :online => true,
+                    :location => "Coventry"
+                %>
+            </a>
+
+            <a href="/eventschool">
+                <%= render "components/eventbox", 
+                    :title => "Heart TSA - Zoom train to teach information event",
+                    :datetime => "11 May 2020 at 17:00 - 18:30",
+                    :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
+                    :schooloruni => true,
+                    :traintoteach => false,
+                    :online => true
+                %>
+            </a>
+        </div>
+        <a href="/">
+            <div class="call-to-action-button">See all train to teach events  <i class="fas fa-chevron-right"></i></div>
+        </a>
+    </div>
+</section>
+
+<section class="search-for-events-results content container-1000">
+    <div class="content__left">
+        <h2 class="types-of-event__header types-of-event__header--ttt">All events</h2>
+    </div>
+    <div class="content__right">
+    </div>
     <a href="/event">
         <%= render "components/eventbox", 
             :title => "Secondary School teaching",
@@ -197,3 +282,4 @@
     </a>
 
 </section>
+
