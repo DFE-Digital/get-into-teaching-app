@@ -4,38 +4,47 @@
     padding: 20px;
     display: inline-block;
     border: 2px solid $black;
-    height: 440px;
-    width: 290px;
     overflow: hidden;
-    margin: 18px;
     text-align: left;
+    margin: 0;
+    width: 100%;
+    background-color: $white;
+    a:hover &, a:focus, a:active {
+       background-color: $grey;
+    }
+
 
     &__header {
-        height: 55px;
+        min-height: 46px;
         width: 100%;
         overflow: hidden;
 
         h2 {
             margin: 0;
+            a:hover &, a:focus, a:active {
+                text-decoration: underline;
+            }
         }
     }
 
     &__datetime {
         height: 20px;
         overflow: hidden;
-        margin-top: 4px;
+        margin-bottom: 4px;
     }
 
     &__greenstripe {
         height: 8px;
         background-color: $green;
         margin-top: 6px;
+        margin-bottom: 20px;
     }
 
     &__bluestripe {
         height: 8px;
         background-color: $blue;
         margin-top: 6px;
+        margin-bottom: 20px;
     }
 
     &__content {
@@ -43,6 +52,7 @@
         &__icon {
             vertical-align: middle;
             margin-right: 2px;
+            width: 40px;
         }
 
         h3 {
@@ -53,7 +63,6 @@
         }
         p {
             margin: 0;
-            margin-top: 20px;
             font-size: 17px;
         }
     } 
