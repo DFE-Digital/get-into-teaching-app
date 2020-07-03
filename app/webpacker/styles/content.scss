@@ -81,6 +81,25 @@
             text-decoration: underline;
         }
 
+        a.content-link-secondary {
+            @include font;
+            font-weight: bold;
+            font-size: 19px;
+            color: $green;
+            text-decoration: none;
+            display: inline-block;
+
+            i {
+                position: relative;
+                left: 4px;
+                top: 1px;
+            }
+        }
+
+        a.content-link-secondary:hover {
+            text-decoration: underline;
+        }
+
         p.content-alert {
             background-color: $purple;
             color: $white;
