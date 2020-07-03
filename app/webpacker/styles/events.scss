@@ -152,6 +152,7 @@
     text-align: left;
     background-color: $grey;
     padding-bottom: 60px;
+    margin-bottom: 50px;
 
     .container-1000 {
         text-align: left;
@@ -161,96 +162,90 @@
         background-color: $blue;
         position: relative;
         top: -60px;
-        left: 40px;
     }
 
     &__content {
         margin-top: -50px;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
         font-size: 19px;
 
-        &__input {
-            margin-top: 10px;
-            margin-bottom: 10px;
-            display: inline-block;
+        form {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0 -10px;
         }
 
-        &__update {
-            margin-top: 30px;
+        &__input {
+            margin-bottom: 30px;
+            display: block;
+            width: 25%;
+            padding: 0 10px;
+            box-sizing: border-box;
+            &--hidden {
+                display: none;
+            }
         }
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input,select {
+        margin: 0;
+        width: 100%;
+        box-sizing: border-box;
     }
 }
 
 .search-for-events-results {
-    padding-top:60px;
-    padding-bottom: 80px;
+    display: flex;
+    flex-wrap: wrap;
 
-    a {
+    > a {
+        width: 33.333%;
+        margin-bottom: 30px;
+        padding: 0 15px;
+        box-sizing: border-box;
         text-decoration: none;
     }
 
-    &__resultbox {
-        box-sizing: border-box;
-        padding: 20px;
-        display: inline-block;
-        border: 2px solid $black;
-        height: 440px;
-        width: 290px;
-        overflow: hidden;
-        margin: 19px;
-        text-align: left;
-
-        &__header {
-            height: 55px;
-            width: 100%;
-            overflow: hidden;
-
-            h2 {
-                margin: 0;
-            }
-        }
-
-        &__datetime {
-            height: 20px;
-            overflow: hidden;
-            margin-top: 4px;
-        }
-
-        &__greenstripe {
-            height: 8px;
-            background-color: $green;
-            margin-top: 6px;
-        }
-
-        &__bluestripe {
-            height: 8px;
-            background-color: $blue;
-            margin-top: 6px;
-        }
-
-        &__content {
-            
-            &__icon {
-                vertical-align: middle;
-                margin-right: 2px;
-            }
-
-            h3 {
-                margin: 0;
-                margin-top: 12px;
-
-                
-            }
-            p {
-                margin: 0;
-                margin-top: 20px;
-                font-size: 17px;
-            }
-        }
-        
+    .event-resultbox {
+        height: 100%;
     }
 
+}
+
+.events-featured {
+    background: #F0F0F0;
+    float: left;
+    padding: 20px;
+    + .events-featured {
+        margin-top: 30px;
+    }
+    > h3 {
+        font-size: 28px;
+        margin: 0;
+        line-height: 1.25;
+    }
+
+    p {
+        margin: 0 0 30px;
+    }
+
+    &__items {
+        display: flex;
+        margin-left: -10px;
+        margin-right: -10px;
+        margin-bottom: 30px;
+        a {
+            width: 33.3333%;
+            padding: 0 10px;
+            .event-resultbox {
+                height: 100%;
+            }
+        }
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -294,9 +289,14 @@
     }
 
     .search-for-events {
+        margin-top: 55px;
+        margin-bottom: 30px;
+        &__header {
+            top: -45px
+        }
         &__content {
             &__input {
-                
+                width: 100%;
                 display: block;
 
                 &__label {
@@ -318,4 +318,33 @@
         }
     }
 
+    .search-for-events-results {
+
+        > a {
+            width: 50%;
+        }
+
+    }
+
+    .events-featured {
+        &__items {
+            flex-wrap: wrap;
+            a {
+                width: 100%;
+            margin-bottom: 20px;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    .search-for-events-results {
+
+        > a {
+            width: 100%;
+            padding: 0;
+        }
+
+    }
 }

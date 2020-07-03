@@ -1,0 +1,22 @@
+.backlink {
+    display: block;
+    margin-bottom: 30px;
+    color: #0b0c0c!important;
+    position: relative;
+    padding-left: 15px;
+    &:before {
+        content: "";
+        display: block;
+        width: 7px;
+        height: 7px;
+        border: 2px solid #0b0c0c;
+        border-width: 2px 0px 0px 2px;
+        position: absolute;
+        top: 7px;
+        left: 0;
+        transform: rotate(-45deg);
+    }
+    &:hover,&:focus,&:active {
+        text-decoration: none!important;
+    }
+}

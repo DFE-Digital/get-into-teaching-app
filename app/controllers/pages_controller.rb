@@ -15,6 +15,18 @@ class PagesController < ApplicationController
     render template: "pages/events/events"
   end
 
+  def events_ttt
+    render template: "pages/events/events_ttt"
+  end
+
+  def events_online
+    render template: "pages/events/events_online"
+  end
+
+  def events_school
+    render template: "pages/events/events_school"
+  end
+
   def eventregistration
     render template: "pages/events/registration/step#{params[:step_number]}"
   end

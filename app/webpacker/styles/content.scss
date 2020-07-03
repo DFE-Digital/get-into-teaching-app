@@ -4,12 +4,14 @@
     box-sizing: border-box;
     margin-bottom: 70px;
     overflow: auto;
+    + .content {
+        margin-top: -40px;
+    }
     &--reverse {
         flex-direction: row-reverse;
     }
 
     &__left {
-        min-height: 250px;
         box-sizing: border-box;
         padding: 20px;
         text-align: left;
@@ -29,7 +31,6 @@
             border-bottom: 8px solid $blue;
             margin: 0;
             padding: 0;
-            margin-top: 20px;
             margin-bottom: 10px;
         }
 
@@ -53,6 +54,9 @@
             line-height: 1.4;
             margin: 0 0 30px;
             padding: 0;
+            &:last-child {
+                margin-bottom: 0;
+            }
         }
 
         ul {
@@ -185,7 +189,7 @@
         margin-bottom: 50px;
 
         &__left {
-            padding: 0px;    
+            padding: 20px 0px;    
             display: block;
             width: 100%;
 
@@ -203,7 +207,7 @@
 
         &__right {
             margin: 0;
-            padding: 0;
+            padding: 20px 0;
             display: block;
             width: 100%;
         }
