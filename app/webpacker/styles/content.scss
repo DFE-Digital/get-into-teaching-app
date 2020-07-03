@@ -74,7 +74,11 @@
             font-weight: regular;
             font-size: 19px;
             color: $blue-dark;
-            text-decoration: underline;      
+            text-decoration: underline;
+            &.call-to-action-button {
+                color: $white;
+                text-decoration: none;
+            }
         }
         
         a:hover {

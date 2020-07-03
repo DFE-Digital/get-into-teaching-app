@@ -6,7 +6,7 @@
     text-align: center;
     box-sizing: border-box;
     display: inline-block;
-    padding: 20px;
+    padding: 18px 20px 16px 20px;
     border: none;
 
     i {
@@ -20,6 +20,20 @@
 .call-to-action-button {
     @include button;
     background-color: $green;
+    span:last-child {
+        white-space: nowrap;
+        &:after {
+            content: "";
+            display: inline-block;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border: 4px solid $white;
+            border-width: 3px 3px 0px 0px;
+            transform: rotate(45deg);
+            top: 1px;
+        }
+    }
 }
 
 .request-button {
