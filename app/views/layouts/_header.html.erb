@@ -1,58 +1,59 @@
-<section class="covid">
-    <h3>Coronavirus (COVID-19)</h3>
-    Whether you're currently training to be a teacher, ready to apply for teacher training or exploring teaching as a potential career, you may have questions about the impact of COVID-19.
-    <a href="/covid-19/index">Please check here for updates</a>
-</section>
+<nav role="navigation">
+    <section class="covid">
+        <h3>Coronavirus (COVID-19)</h3>
+        Whether you're currently training to be a teacher, ready to apply for teacher training or exploring teaching as a potential career, you may have questions about the impact of COVID-19.
+        <a href="/covid-19/index">Please check here for updates</a>
+    </section>
 
-<nav class="navbar">
-    <div class="navbar__desktop">
-        <div>
-            <ul>
-                <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
-                <li><a href="/funding-your-training/index">Funding your training</a></li>
-                <li><a href="/">Home</a></li>
-            </ul>
+    <div class="navbar">
+        <div class="navbar__desktop">
+            <div>
+                <ul>
+                    <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
+                    <li><a href="/funding-your-training/index">Funding your training</a></li>
+                    <li><a href="/">Home</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="/">Talk to us</a></li>
+                    <li><a href="/events">Find an event near you</a></li>
+                    <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
+                    <li><a href="/life-as-a-teacher/index">Teaching as a career</a></li>
+                </ul>
+            </div>
         </div>
-        <div>
-            <ul>
-                <li><a href="/">Talk to us</a></li>
-                <li><a href="/events">Find an event near you</a></li>
-                <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
-                <li><a href="/life-as-a-teacher/index">Teaching as a career</a></li>
-            </ul>
+        <div class="navbar__mobile" data-controller="navigation">
+            <div class="navbar__mobile__buttons">
+                <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
+                    <div data-target="navigation.hamburger" id='hamburger' class="icon-close"></div>
+                    <div data-target="navigation.label" id="navbar-label" class="icon-hamburger-label">Close</div>
+                </a>
+            </div>
+            <div data-target="navigation.links" id="navbar-mobile-links" class="navbar__mobile__links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
+                    <li><a href="/funding-your-training/index">Funding your training</a></li>
+                    <li><a href="/life-as-a-teacher/index">Teaching as a career</a></li>
+                    <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
+                    <li><a href="/events">Find an event near you</a></li>
+                    <li><a href="/">Talk to us</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
-    <div class="navbar__mobile" data-controller="navigation">
-        <div class="navbar__mobile__buttons">
-            <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
-                <div data-target="navigation.hamburger" id='hamburger' class="icon-close"></div>
-                <div data-target="navigation.label" id="navbar-label" class="icon-hamburger-label">Close</div>
-            </a>
+        <div class="logo">
+            
+            <div class="logo__image">
+                <a href="/">
+                    <img src="<%= asset_pack_path 'media/images/getintoteachinglogo.svg'%>" alt="Get into teaching" />
+                    <div class="logo__image__tagline">Every Lesson shapes a life.</div>
+                </a>
+            </div>
+            
         </div>
-        <div data-target="navigation.links" id="navbar-mobile-links" class="navbar__mobile__links">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
-                <li><a href="/funding-your-training/index">Funding your training</a></li>
-                <li><a href="/life-as-a-teacher/index">Teaching as a career</a></li>
-                <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
-                <li><a href="/events">Find an event near you</a></li>
-                <li><a href="/">Talk to us</a></li>
-            </ul>
-        </div>
-    </div>
-    <div class="logo">
-        
-        <div class="logo__image">
-            <a href="/">
-                <img src="<%= asset_pack_path 'media/images/getintoteachinglogo.svg'%>" alt="Get into teaching" />
-                <div class="logo__image__tagline">Every Lesson shapes a life.</div>
-            </a>
-        </div>
-        
     </div>
 </nav>
-
 
 
 <script>
