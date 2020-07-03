@@ -15,7 +15,7 @@
 
 
     &__header {
-        min-height: 55px;
+        min-height: 46px;
         width: 100%;
         overflow: hidden;
 
@@ -30,19 +30,21 @@
     &__datetime {
         height: 20px;
         overflow: hidden;
-        margin-top: 4px;
+        margin-bottom: 4px;
     }
 
     &__greenstripe {
         height: 8px;
         background-color: $green;
         margin-top: 6px;
+        margin-bottom: 20px;
     }
 
     &__bluestripe {
         height: 8px;
         background-color: $blue;
         margin-top: 6px;
+        margin-bottom: 20px;
     }
 
     &__content {
@@ -61,7 +63,6 @@
         }
         p {
             margin: 0;
-            margin-top: 20px;
             font-size: 17px;
         }
     } 
