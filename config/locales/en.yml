@@ -33,6 +33,19 @@ en:
   activemodel:
     errors:
       models:
+        events/search:
+          attributes:
+            type:
+              blank: Select the type of event
+              inclusion: Select the event type from the list
+            month:
+              blank: Select the month
+              invalid: Select the month from the list
+            distance:
+              inclusion: Select a distance from the list
+            postcode:
+              blank: Enter your postcode
+              invalid: Enter a valid postcode
         events/steps/personal_details:
           attributes:
             first_name:
