@@ -48,15 +48,35 @@ jobs:
           tag_with_ref: true
           tag_with_sha: true
           build_args: SHA=${{ steps.sha.outputs.short}}
+
       - name: Set DOCKER_IMAGE environment variable
         run: |-
           echo ::set-env name=DOCKER_IMAGE::${{ env.APP_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
+
       - name: Run Specs
         run: |-
-          docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE bundle exec rspec
+          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test $DOCKER_IMAGE \
+            rspec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
+
+      - name: Fixup report file paths
+        run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/.resultset.json
+
+      - name:  Keep Code Coverage Report
+        uses: actions/upload-artifact@v2
+        with:
+          name: Code_Coverage
+          path: ${{ github.workspace }}/coverage/*
+
+      - name:  Keep Unit Tests Results
+        uses: actions/upload-artifact@v2
+        with:
+          name: unit_tests
+          path: ${{ github.workspace }}/out/*
+
       - name: Lint Ruby
         run: |-
-          docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE bundle exec rubocop app config db lib spec Gemfile --format clang 
+          docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE \
+            bundle exec rubocop app config db lib spec Gemfile --format clang
 
       - name: Run sonarqube
         env:
@@ -69,6 +89,8 @@ jobs:
            -Dsonar.sources='app,lib,db,config' 
            -Dsonar.tests='./spec' 
            -Dsonar.exclusions='app/assets/**/*'
+           -Dsonar.testExecutionReportPaths=out/test-report.xml
+           -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/.resultset.json
 
       - name:  Send Message to Sentry.io
         if: ${{ always() }}
