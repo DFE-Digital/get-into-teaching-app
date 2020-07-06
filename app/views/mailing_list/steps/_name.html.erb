@@ -1,0 +1,23 @@
+<h1>Sign up for personalised updates to help you get into teaching</h1>
+
+<p>
+  We know you’ll only want to receive updates that help you to
+  take your next steps into teaching. That’s why we’ll only use your
+  information to make sure the updates we send are relevant to you.
+</p>
+
+<p>
+  If your circumstances change, you can call us to update your
+  details and stay informed about the things that matter to you.
+</p>
+
+<%= f.govuk_error_summary %>
+
+<%= f.govuk_text_field :first_name %>
+<%= f.govuk_text_field :last_name %>
+<%= f.govuk_email_field :email_address %>
+
+<%= f.govuk_collection_select :current_status,
+      f.object.class.current_statuses,
+      :to_s,
+      :to_s %>

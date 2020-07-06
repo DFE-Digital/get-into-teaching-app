@@ -29,5 +29,13 @@ Rails.application.routes.draw do
     end
   end
 
+  namespace :mailing_list, path: "/mailinglist" do
+    resources :steps,
+              path: "/signup",
+              only: %i[index show update] do
+      collection { get :completed }
+    end
+  end
+
   get "*page", to: "pages#show", as: :page
 end

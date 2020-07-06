@@ -1,0 +1,13 @@
+<h1>Your degree stage</h1>
+
+<p>
+  We want to send you information relevant to the stage you're at with your
+  degree.
+</p>
+
+<%= f.govuk_error_summary %>
+
+<%= f.govuk_collection_select :degree_stage,
+      f.object.class.stages,
+      :to_s,
+      :to_s %>

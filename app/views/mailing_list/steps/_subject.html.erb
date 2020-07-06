@@ -1,0 +1,13 @@
+<h1>Choose your subject</h1>
+
+<p>
+  We want to send you relevant information about the subject you're most
+  interested in.
+</p>
+
+<%= f.govuk_error_summary %>
+
+<%= f.govuk_collection_select :subject,
+      f.object.class.subjects,
+      :to_s,
+      :to_s %>

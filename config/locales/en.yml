@@ -45,7 +45,7 @@ en:
         events/steps/contact_details:
           attributes:
             phone_number:
-              invalid_format: Enter a valid phone number
+              invalid: Enter a valid phone number
         events/steps/further_details:
           attributes:
             privacy_policy:
@@ -54,6 +54,49 @@ en:
               inclusion: Choose yes or no
             postcode:
               invalid: Enter a valid postcode, or leave blank
+
+        mailing_list/steps/name:
+          attributes:
+            first_name:
+              blank: Enter your first name
+            last_name:
+              blank: Enter your last name
+            email_address:
+              blank: Enter your full email address
+              invalid: Enter a valid email address
+            current_status:
+              blank: Select how you would describe yourself
+              inclusion: Select how you would describe yourself
+        mailing_list/steps/degree_stage:
+          attributes:
+            degree_stage:
+              blank: Select your degree stage
+              inclusion: Select your degree stage from the list
+        mailing_list/steps/teacher_training:
+          attributes:
+            teacher_training:
+              blank: Choose an option from the list
+              inclusion: Choose an option from the list
+        mailing_list/steps/subject:
+          attributes:
+            subject:
+              blank: Choose a subject from the list
+              inclusion: Choose a subject from the list
+        mailing_list/steps/postcode:
+          attributes:
+            postcode:
+              blank: Enter your postcode
+              invalid: Enter a valid postcode
+        mailing_list/steps/contact:
+          attributes:
+            phone_number:
+              invalid: Enter a valid phone number
+            more_info:
+              blank: Enter the additional information you would like
+              use_fewer_words: Use 200 words or less
+            accept_privacy_policy:
+              blank: Accept the privacy policy to continue
+              accepted: Accept the privacy policy to continue
 
   helpers:
     label:
@@ -65,6 +108,23 @@ en:
         phone_number: Phone number (optional)
       events_steps_further_details:
         postcode: Postcode (optional)
+      mailing_list_steps_name:
+        first_name: First name
+        last_name: Last name
+        email_address: Email address
+        current_status: How would you describe yourself?
+      mailing_list_steps_degree_stage:
+        degree_stage: What stage are you at with your degree?
+      mailing_list_steps_teacher_training:
+        teacher_training: How close are you to applying for teacher training?
+      mailing_list_steps_subject:
+        subject: Which subject do you want to teach?
+      mailing_list_steps_postcode:
+        postcode: What's your postcode?
+      mailing_list_steps_contact:
+        phone_number: What's your phone number (optional)
+        more_info: What would you like more information about when we call you?
+
     hint:
       events_steps_contact_details:
         phone_number: |-
@@ -73,10 +133,14 @@ en:
       events_steps_further_details:
         postcode: |-
           Enter your postcode so that we can send you event information
-          specificities to your area
+          specificities to your area.
+
     legend:
       events_steps_further_details:
         privacy_policy: |-
           Are you over 16 and have agreed to our privacy policy?
         future_events: |-
           Sign up and receive information about future events (optional)
+      mailing_list_steps_contact:
+        accept_privacy_policy: |-
+          Are you over 16 and do you agree to our privacy policy?

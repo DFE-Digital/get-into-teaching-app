@@ -1,0 +1,13 @@
+<h1>We need some more details</h1>
+
+<p>
+  The following answers will only be used to make sure we send relevant
+  information to support you at this time.
+</p>
+
+<%= f.govuk_error_summary %>
+
+<%= f.govuk_collection_select :teacher_training,
+      f.object.class.statuses,
+      :to_s,
+      :to_s %>
