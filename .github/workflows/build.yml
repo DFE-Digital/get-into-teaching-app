@@ -86,9 +86,9 @@ jobs:
            -Dsonar.organization=dfe-digital
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
-           -Dsonar.sources='app,lib,db,config' 
+           -Dsonar.sources='app,lib,config'
            -Dsonar.tests='./spec' 
-           -Dsonar.exclusions='app/assets/**/*'
+           -Dsonar.exclusions='app/assets/**/*','app/webpacker/**/*','**/fake_endpoints.rb'
            -Dsonar.testExecutionReportPaths=out/test-report.xml
            -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/.resultset.json
 
