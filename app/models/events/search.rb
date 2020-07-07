@@ -6,15 +6,14 @@ module Events
 
     DISTANCES = [30, 50, 100].freeze
     MONTH_FORMAT = %r{\A20[234]\d-(0[1-9]|1[012])\z}.freeze
-    EVENT_TYPES = [0, 1].freeze
 
     attribute :type, :integer
     attribute :distance, :integer
     attribute :postcode, :string
     attribute :month, :string
 
-    validates :type, presence: true, inclusion: { in: EVENT_TYPES, allow_blank: true }
-    validates :distance, inclusion: { in: DISTANCES }, allow_nil: true
+    validates :type, presence: true, inclusion: { in: :available_event_type_values, allow_blank: true }
+    validates :distance, inclusion: { in: :available_distance_values }, allow_nil: true
     validates :postcode, presence: true, postcode: { allow_blank: true }, if: :distance
     validates :month, presence: true, format: { with: MONTH_FORMAT, allow_blank: true }
 
@@ -25,10 +24,18 @@ module Events
       @available_event_types ||= query_event_types
     end
 
+    def available_event_type_values
+      available_event_types.map(&:id).map(&:to_i)
+    end
+
     def available_distances
       [["Nationwide", nil]] + DISTANCES.map do |d|
         ["Within #{d} miles", d]
       end
+    end
+
+    def available_distance_values
+      available_distances.map(&:last)
     end
 
     def available_months

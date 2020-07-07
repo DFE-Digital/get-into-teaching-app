@@ -17,6 +17,7 @@ describe GetIntoTeachingApi::Types::Base do
     self.type_cast_rules = {
       "date_of_birth" => :date,
       "datetime" => :datetime,
+      "id" => :integer,
       "address" => Address,
     }.freeze
   end
@@ -26,6 +27,7 @@ describe GetIntoTeachingApi::Types::Base do
     let(:datetime) { DateTime.now }
     let(:data) do
       {
+        "id" => "123",
         "firstname" => "Joe",
         "date_of_birth" => dob,
         "datetime" => datetime.xmlschema,
@@ -40,6 +42,7 @@ describe GetIntoTeachingApi::Types::Base do
 
     subject { person }
     it { is_expected.to be_kind_of Person }
+    it { is_expected.to have_attributes id: 123 }
     it { is_expected.to have_attributes firstname: "Joe" }
     it { is_expected.to have_attributes date_of_birth: Date.parse(dob) }
     it { is_expected.to have_attributes address: kind_of(Address) }
