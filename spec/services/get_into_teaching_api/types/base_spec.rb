@@ -16,16 +16,19 @@ describe GetIntoTeachingApi::Types::Base do
   class Person < GetIntoTeachingApi::Types::Base
     self.type_cast_rules = {
       "date_of_birth" => :date,
+      "datetime" => :datetime,
       "address" => Address,
     }.freeze
   end
 
   describe "Type casting" do
     let(:dob) { "1990-01-01" }
+    let(:datetime) { DateTime.now }
     let(:data) do
       {
         "firstname" => "Joe",
         "date_of_birth" => dob,
+        "datetime" => datetime.xmlschema,
         "address" => {
           "housenumber" => 23,
           "postcode" => "MA1 1AM",
@@ -40,6 +43,7 @@ describe GetIntoTeachingApi::Types::Base do
     it { is_expected.to have_attributes firstname: "Joe" }
     it { is_expected.to have_attributes date_of_birth: Date.parse(dob) }
     it { is_expected.to have_attributes address: kind_of(Address) }
+    it { expect(subject.datetime.to_s).to eql datetime.to_s }
 
     context "nested types" do
       subject { person.address }

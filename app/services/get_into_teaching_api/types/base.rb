@@ -33,6 +33,7 @@ module GetIntoTeachingApi
       def internal_type_cast(cast_to, value)
         case cast_to
         when :date then date_type_cast(value)
+        when :datetime then date_time_type_cast(value)
         else send(cast_to, value)
         end
       end
@@ -43,6 +44,10 @@ module GetIntoTeachingApi
 
       def date_type_cast(value)
         Date.parse(value)
+      end
+
+      def date_time_type_cast(value)
+        DateTime.parse(value)
       end
     end
   end
