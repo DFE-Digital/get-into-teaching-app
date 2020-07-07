@@ -127,16 +127,16 @@
 
             &__overlay {
                 background-color: $pink-90;
-                height: 60px;
-                width: 80px;
-                transform: rotate(3deg);
+                height: 72px;
+                width: 72px;
+                transform: rotate(-3deg);
                 position: relative;
-                top: 80px;
-                left: -5px;
+                top: 84px;
+                left: -1px;
             
                 div {
-                    transform: rotate(-3deg);
-                    margin-top: 16px;
+                    transform: rotate(3deg);
+                    margin-top: 22px;
                     margin-left: 5px; 
                 }
             }
