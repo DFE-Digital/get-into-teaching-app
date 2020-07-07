@@ -1,6 +1,6 @@
-<%= link_to event_path(event.eventId) do %>
+<%= link_to event_path(event.id) do %>
     <%= render "components/eventbox",
-        :title => event.eventName,
+        :title => event.name,
         :datetime => format_event_date(event),
         :description => event.description,
         :schooloruni => false,

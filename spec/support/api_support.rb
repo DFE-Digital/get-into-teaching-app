@@ -25,13 +25,13 @@ end
 
 shared_examples "event details" do
   describe "top level event details" do
-    let(:startdate) { Date.parse eventdata["startDate"] }
+    let(:startat) { DateTime.parse eventdata["startAt"] }
     subject { event }
     it { is_expected.to be_kind_of GetIntoTeachingApi::Types::Event }
-    it { is_expected.to have_attributes eventId: eventdata["eventId"] }
-    it { is_expected.to have_attributes eventName: eventdata["eventName"] }
-    it { is_expected.to have_attributes startDate: startdate }
-    it { is_expected.to have_attributes endDate: startdate }
+    it { is_expected.to have_attributes id: eventdata["id"] }
+    it { is_expected.to have_attributes name: eventdata["name"] }
+    it { is_expected.to have_attributes startAt: startat }
+    it { is_expected.to have_attributes endAt: startat }
   end
 end
 
@@ -63,6 +63,6 @@ shared_examples "array of event entities" do |length|
   subject { client.call }
   it { is_expected.to be_kind_of Array }
   it { is_expected.to have_attributes length: length }
-  it { is_expected.to all respond_to :eventId }
-  it { is_expected.to all respond_to :eventName }
+  it { is_expected.to all respond_to :id }
+  it { is_expected.to all respond_to :name }
 end

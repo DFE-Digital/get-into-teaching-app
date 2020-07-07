@@ -3,8 +3,8 @@
 <section class="event-info content container-1000">
     <div class="content__right">
         <%= render "components/eventboxshort",
-            :title => @event.eventName,
-            :datetime => "#{@event.startDate} at 17:00 - 18:30",
+            :title => @event.name,
+            :datetime => format_event_date(@event),
             :schooloruni => false,
             :description => @event.description,
             :traintoteach => false,

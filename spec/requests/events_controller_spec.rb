@@ -60,7 +60,8 @@ describe EventsController do
         readableEventId: event_id,
         eventName: "First",
         description: "first",
-        startDate: "2020-05-20",
+        startAt: "2020-05-20T10:00:00",
+        endAt: "2020-05-20T11:30:00",
       }
     end
 

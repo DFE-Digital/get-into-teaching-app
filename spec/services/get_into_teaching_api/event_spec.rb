@@ -4,7 +4,7 @@ describe GetIntoTeachingApi::Event do
   include_examples "api support"
 
   let(:testdata) do
-    build :event_api, eventName: "Become a teacher", startDate: "2020-05-18"
+    build :event_api, eventName: "Become a teacher", startAt: "2020-05-18T10:00"
   end
 
   let(:event_id) { testdata["eventId"] }
@@ -16,8 +16,8 @@ describe GetIntoTeachingApi::Event do
 
   describe "#event" do
     it { is_expected.to be_kind_of GetIntoTeachingApi::Types::Event }
-    it { is_expected.to respond_to :eventId }
-    it { is_expected.to respond_to :eventName }
+    it { is_expected.to respond_to :id }
+    it { is_expected.to respond_to :name }
     it { is_expected.to respond_to :building }
     it { is_expected.to respond_to :room }
   end

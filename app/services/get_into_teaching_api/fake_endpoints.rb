@@ -37,14 +37,14 @@ module GetIntoTeachingApi
       ]
     end
 
-    def fake_event(id = SecureRandom.uuid, startdate = "2020-05-18")
+    def fake_event(id = SecureRandom.uuid, startat = "2020-05-18T10:00:00+01:00")
       {
-        "eventId": id,
-        "readableEventId": id,
-        "eventName": "Event #{id.slice(0, 8)}",
+        "id": id,
+        "typeId": 222_750_001,
+        "name": "Event #{id.slice(0, 8)}",
         "description": "Description for event #{id}",
-        "startDate": startdate,
-        "endDate": startdate,
+        "startAt": startat,
+        "endAt": startat,
         "eventType": 0,
         "maxCapacity": 10,
         "publicEventUrl": "https://event.url",
