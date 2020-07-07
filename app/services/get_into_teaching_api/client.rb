@@ -31,12 +31,12 @@ module GetIntoTeachingApi
 
     def token
       ENV["GIT_API_TOKEN"].presence || \
-        Rails.application.credentials.api_token
+        Rails.application.credentials.git_api_token
     end
 
     def endpoint
       ENV["GIT_API_ENDPOINT"].presence || \
-        Rails.application.config.x.api.endpoint.presence
+        Rails.application.config.x.git_api_endpoint.presence
     end
   end
 end
