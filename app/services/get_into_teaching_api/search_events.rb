@@ -1,10 +1,11 @@
 module GetIntoTeachingApi
   class SearchEvents < Base
-    def initialize(type:, distance:, postcode:, month:, **base_args)
-      @type = type
-      @distance = distance
+    def initialize(type_id:, radius_in_km:, postcode:, start_before:, start_after:, **base_args)
+      @type_id = type_id
+      @radius_in_km = radius_in_km
       @postcode = postcode
-      @month = month
+      @start_after = start_after
+      @start_before = start_before
       super(**base_args)
     end
 
@@ -14,10 +15,11 @@ module GetIntoTeachingApi
 
     def params
       {
-        type: @type,
-        distance: @distance,
-        postcode: @postcode,
-        month: @month,
+        "TypeId" => @type_id,
+        "RadiusInKm" => @radius_in_km,
+        "Postcode" => @postcode,
+        "StartAfter" => @start_after.xmlschema,
+        "StartBefore" => @start_before.xmlschema,
       }
     end
 

@@ -29,7 +29,8 @@ module Events
     end
 
     def available_distances
-      [["Nationwide", nil]] + DISTANCES.map do |d|
+      # [["Nationwide", nil]] + # Commented out for now because the API requires a postcode for now
+      DISTANCES.map do |d|
         ["Within #{d} miles", d]
       end
     end
@@ -56,11 +57,24 @@ module Events
   private
 
     def query_events_api
-      GetIntoTeachingApi::Client.search_events(**attributes.symbolize_keys)
+      GetIntoTeachingApi::Client.search_events \
+        type_id: type,
+        radius_in_km: distance,
+        postcode: postcode,
+        start_after: start_of_month,
+        start_before: end_of_month
     end
 
     def query_event_types
       GetIntoTeachingApi::Client.event_types
+    end
+
+    def start_of_month
+      DateTime.parse("#{month}-01 00:00:00").beginning_of_month
+    end
+
+    def end_of_month
+      start_of_month.end_of_month
     end
   end
 end
