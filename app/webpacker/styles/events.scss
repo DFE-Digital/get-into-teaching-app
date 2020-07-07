@@ -170,7 +170,7 @@
         padding-right: 20px;
         font-size: 19px;
 
-        form {
+        &__inputs {
             display: flex;
             flex-wrap: wrap;
             margin: 0 -10px;
@@ -187,11 +187,13 @@
             }
         }
     }
+
     label {
         display: block;
         margin-bottom: 5px;
     }
-    input,select {
+
+    input, select {
         margin: 0;
         width: 100%;
         box-sizing: border-box;
