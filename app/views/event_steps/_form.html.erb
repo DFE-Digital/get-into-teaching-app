@@ -1,6 +1,6 @@
 <section class="event-reg-main">
-    <div class="event-reg-main__content container-1000">
-        <div class="event-reg-main__content__left">
+    <div class="content container-1000">
+        <div class="content__left">
             <p>
               <%= back_link step_path(wizard.previous_key) if wizard.previous_key %>
             </p>
@@ -24,7 +24,7 @@
             <% end %>
         </div>
 
-        <div class="event-reg-main__content__right">
+        <div class="content__right">
             <%= render "events/event", event: event if wizard.first_step? %>
         </div>
         </div>
