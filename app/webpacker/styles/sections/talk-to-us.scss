@@ -68,8 +68,10 @@
             &__table {
                 &__column {
                     display: block;
-                    width: 90%;
+                    width: 100%;
                     padding-bottom: 10px;
+                    padding-left: 0px;
+                    padding-right: 0px;
                 }
             }
         }
