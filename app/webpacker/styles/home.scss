@@ -15,7 +15,7 @@
 
         width: 680px;
         height: 190px;
-        background-color: $yellow-90;
+        background-color: $yellow-dark-90;
         padding: 40px;
         box-sizing: border-box;
         transform: rotate(-3deg);
@@ -128,7 +128,7 @@
             overflow: hidden;
 
             &__overlay {
-                background-color: $pink-90;
+                background-color: $pink-dark-90;
                 height: 72px;
                 width: 72px;
                 transform: rotate(-3deg);
