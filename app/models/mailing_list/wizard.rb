@@ -8,5 +8,11 @@ module MailingList
       Steps::Postcode,
       Steps::Contact,
     ].freeze
+
+    def complete!
+      super.tap do |result|
+        result && @store.purge!
+      end
+    end
   end
 end
