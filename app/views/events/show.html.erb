@@ -27,8 +27,9 @@
         <p>
             To access this event, please sign up on this page and watch out for the reminder email we will send the day before the event. It will contain an access link to the live online event and a directory of some of the local training providers.
         </p>
-        <a href="/event/register/1" class="call-to-action-button">
+
+        <%= link_to event_steps_path(@event.id), class: "call-to-action-button" do %>
             Sign up for this <span>event</span>
-        </a>
+        <% end %>
     </div>
 </section>
