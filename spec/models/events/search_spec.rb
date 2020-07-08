@@ -10,9 +10,14 @@ describe Events::Search do
     it { is_expected.to respond_to :month }
   end
 
+  context "available_distance_keys" do
+    subject { described_class.new.available_distance_keys }
+    it { is_expected.to eql [30, 50, 100] }
+  end
+
   context "validation" do
     context "for event type" do
-      it { is_expected.to allow_value(0).for :type }
+      it { is_expected.to allow_value(1).for :type }
       it { is_expected.to allow_value("1").for :type }
       it { is_expected.not_to allow_value("2").for :type }
       it { is_expected.not_to allow_value("").for :type }

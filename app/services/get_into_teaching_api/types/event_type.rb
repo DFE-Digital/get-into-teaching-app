@@ -1,5 +1,5 @@
 module GetIntoTeachingApi
   module Types
-    class EventType < Types::Base; end
+    class EventType < Types::KeyValue; end
   end
 end

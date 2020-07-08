@@ -1,3 +1,4 @@
+
 select, input {
     font-size: 19px;
     margin-left: 20px;
@@ -33,6 +34,11 @@ input {
 
 .search-for-events__content__errors {
   color: $pink;
+  margin: 0 0 0.6em;
+
+  div {
+    margin: 0.2em 0 ;
+  }
 }
 
 form div.hidden {

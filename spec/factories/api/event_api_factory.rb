@@ -3,12 +3,12 @@ FactoryBot.define do
     skip_create
     initialize_with { attributes.stringify_keys }
 
-    eventId { SecureRandom.uuid }
-    readableEventId { eventId }
-    sequence(:eventName) { |i| "Become a Teacher #{i}" }
+    id { SecureRandom.uuid }
+    typeId { 222_750_001 }
+    sequence(:name) { |i| "Become a Teacher #{i}" }
     sequence(:description) { |i| "Become a Teacher #{i} event description" }
-    sequence(:startDate) { |i| i.weeks.from_now.to_date.to_formatted_s(:db) }
-    endDate { startDate }
+    sequence(:startAt) { |i| i.weeks.from_now.xmlschema }
+    endAt { startAt }
     eventType { 0 }
     maxCapacity { 10 }
     publicEventUrl { "https://event.url" }

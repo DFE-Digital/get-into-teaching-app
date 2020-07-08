@@ -57,6 +57,6 @@ module GetIntoTeachingApi
   end
 end
 
-if Rails.env.development?
+if ENV["GIT_API_FAKE_DATA"].to_s.in? %w[true 1 yes]
   GetIntoTeachingApi::Base.prepend GetIntoTeachingApi::FakeEndpoints
 end

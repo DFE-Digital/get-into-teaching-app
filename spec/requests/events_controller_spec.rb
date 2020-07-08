@@ -9,8 +9,8 @@ describe EventsController do
 
     let(:events) do
       [
-        build(:event_api, eventId: first_id, eventName: "First"),
-        build(:event_api, eventId: second_id, eventName: "Second"),
+        build(:event_api, id: first_id, name: "First"),
+        build(:event_api, id: second_id, name: "Second"),
       ]
     end
 
@@ -55,13 +55,7 @@ describe EventsController do
     let(:event_id) { SecureRandom.uuid }
 
     let(:event) do
-      {
-        eventId: event_id,
-        readableEventId: event_id,
-        eventName: "First",
-        description: "first",
-        startDate: "2020-05-20",
-      }
+      build(:event_api, id: event_id)
     end
 
     subject do
