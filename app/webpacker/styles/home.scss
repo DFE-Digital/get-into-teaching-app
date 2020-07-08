@@ -40,28 +40,30 @@
     &__mailing-strip {
         background-color: $purple;
         box-sizing: border-box;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding-top: 20px;
+        padding-bottom: 20px;
         padding-left: 40px;
         padding-right: 40px;
-        display: table;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         width: 100%;
 
         &__text {
             color: $white;
-            display: table-cell;
             margin-right: 20px;
             padding: 0px;
             font-weight: bold;
+            width: 66.6666%;
 
-            p {
+            p { 
                 padding: 0px;
                 margin: 0px;
+                line-height: 1.25;
             }
         }
 
         &__button {
-            display: table-cell;
             width: 166px;
             height: 44px;
             text-align: top;
@@ -551,22 +553,7 @@
             }
         }
 
-        &__mailing-strip {
-            
-            padding-left:20px;
-            padding-right:20px;
-            display:block;
 
-            &__text {
-                display:block;
-            }
-
-            &__button {
-                width: 166px;
-                margin-top:10px;
-                display:block;
-            }
-        }
     }
 
     .my-story {
@@ -731,4 +718,21 @@
         display: inline;
         white-space: normal;
     }
+    .home-hero__mailing-strip {
+            
+            padding-left:20px;
+            padding-right:20px;
+            display:block;
+
+            &__text {
+                display:block;
+                width: 100%;
+            }
+
+            &__button {
+                width: 166px;
+                margin-top:10px;
+                display:block;
+            }
+        }
 }
