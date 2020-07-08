@@ -1,9 +1,13 @@
 shared_context "stub types api" do
+  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
   let(:event_types) { [{ "id" => 1, "value" => "First type" }] }
 
   before do
-    allow_any_instance_of(GetIntoTeachingApi::EventTypes).to \
-      receive(:data).and_return event_types
+    stub_request(:get, "#{git_api_endpoint}/api/types/teaching_event/types")
+      .to_return \
+        status: 200,
+        headers: { "Content-type" => "application/json" },
+        body: event_types.to_json
   end
 end
 

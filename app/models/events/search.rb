@@ -66,7 +66,8 @@ module Events
     end
 
     def query_event_types
-      GetIntoTeachingApi::Client.event_types
+      # GetIntoTeachingApi::Client.event_types
+      GetIntoTeachingApiClient::TypesApi.new.get_teaching_event_types
     end
 
     def start_of_month
