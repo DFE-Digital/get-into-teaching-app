@@ -1,4 +1,12 @@
 GIT
+  remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
+  revision: 9a2e7399c45eb635475aaffb6b60618e085c0470
+  specs:
+    get_into_teaching_api_client (1.0.0)
+      json (~> 2.1, >= 2.1.0)
+      typhoeus (~> 1.0, >= 1.0.1)
+
+GIT
   remote: https://github.com/waiting-for-dev/front_matter_parser.git
   revision: 71d1d61c4feeb2c73de7d986a7f97e9ab931917e
   specs:
@@ -93,6 +101,8 @@ GEM
       dotenv (= 2.7.5)
       railties (>= 3.2, < 6.1)
     erubi (1.9.0)
+    ethon (0.12.0)
+      ffi (>= 1.3.0)
     factory_bot (5.2.0)
       activesupport (>= 4.2.0)
     factory_bot_rails (5.2.0)
@@ -270,6 +280,8 @@ GEM
       sprockets (>= 3.0.0)
     thor (1.0.1)
     thread_safe (0.3.6)
+    typhoeus (1.4.0)
+      ethon (>= 0.9.0)
     tzinfo (1.2.7)
       thread_safe (~> 0.1)
     uk_postcode (2.1.5)
@@ -313,6 +325,7 @@ DEPENDENCIES
   faraday_middleware
   foreman
   front_matter_parser!
+  get_into_teaching_api_client!
   govuk_design_system_formbuilder
   kramdown
   listen (>= 3.0.5, < 3.3)
