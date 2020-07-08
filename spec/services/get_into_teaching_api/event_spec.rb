@@ -4,10 +4,10 @@ describe GetIntoTeachingApi::Event do
   include_examples "api support"
 
   let(:testdata) do
-    build :event_api, eventName: "Become a teacher", startAt: "2020-05-18T10:00"
+    build :event_api, name: "Become a teacher", startAt: "2020-05-18T10:00"
   end
 
-  let(:event_id) { testdata["eventId"] }
+  let(:event_id) { testdata["id"] }
   let(:apicall) { "teaching_events/#{event_id}" }
 
   let(:client) do

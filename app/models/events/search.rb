@@ -12,8 +12,8 @@ module Events
     attribute :postcode, :string
     attribute :month, :string
 
-    validates :type, presence: true, inclusion: { in: :available_event_type_values, allow_blank: true }
-    validates :distance, inclusion: { in: :available_distance_values }, allow_nil: true
+    validates :type, presence: true, inclusion: { in: :available_event_type_ids, allow_blank: true }
+    validates :distance, inclusion: { in: :available_distance_keys }, allow_nil: true
     validates :postcode, presence: true, postcode: { allow_blank: true }, if: :distance
     validates :month, presence: true, format: { with: MONTH_FORMAT, allow_blank: true }
 
@@ -24,7 +24,7 @@ module Events
       @available_event_types ||= query_event_types
     end
 
-    def available_event_type_values
+    def available_event_type_ids
       available_event_types.map(&:id).map(&:to_i)
     end
 
@@ -35,7 +35,7 @@ module Events
       end
     end
 
-    def available_distance_values
+    def available_distance_keys
       available_distances.map(&:last)
     end
 

@@ -7,8 +7,8 @@ describe EventStepsController do
   let(:model) { Events::Steps::PersonalDetails }
   let(:step_path) { event_step_path event_id, model.key }
   let(:contact_details_path) { event_step_path(event_id, "contact_details") }
+  let(:event) { build :event_api, id: event_id }
 
-  let(:event) { build :event_api, eventId: event_id }
   before do
     allow_any_instance_of(GetIntoTeachingApi::Event).to \
       receive(:data).and_return event
