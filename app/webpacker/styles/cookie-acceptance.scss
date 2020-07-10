@@ -1,0 +1,94 @@
+.cookie-acceptance {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+
+    &__background {
+        opacity: 0.4;
+        background-color: $black;
+        width: 100%;
+        min-height: 100vh;
+        box-sizing: border-box;
+        padding: 20px;
+        position: absolute;
+    }
+
+    &__dialog {
+        width: 100%;
+        max-width: 700px;
+        background-color: $grey;
+        padding: 40px;
+        box-sizing: border-box;
+        position: relative;
+        margin: 40px;
+        overflow: hidden;
+
+        &__header {
+            margin-bottom: 40px;
+        }
+
+        .logo__image {
+            display: inline-block;
+            top: 0px;
+            left: -45px;
+            width: 240px;
+
+            a {
+                margin-left: 8px;
+            }
+
+            div {
+                margin-left: 48px;
+            }
+        }
+
+        h1 {
+            float: right;
+            font-size: 36px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .git-link {
+            margin-top: 20px;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .cookie-acceptance {
+        &__dialog {
+
+            .logo__image {
+                width: 220px;
+                div {
+                    margin-left: 39px;
+                    margin-top: -3px;
+                    
+                }
+            }
+
+            h1 {
+                display: block;
+                float: none;
+                margin-top: 30px;
+                margin-bottom: -20px;
+            }
+        }
+    }
+
+}
