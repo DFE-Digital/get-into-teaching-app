@@ -1,28 +1,30 @@
-<div class="cookie-acceptance">
-    <div class="cookie-acceptance__background"></div>
-    <div class="cookie-acceptance__dialog">
-        <div class="cookie-acceptance__dialog__header">
-            <div class="logo__image">
-                <a href="/">
-                    <img src="<%= asset_pack_path 'media/images/getintoteachinglogo.svg'%>" alt="Get into teaching" />
-                    <div class="logo__image__tagline">Every Lesson shapes a life.</div>
-                </a>
+<div data-controller="cookie-acceptance">
+    <div class="cookie-acceptance" data-target="cookie-acceptance.overlay">
+        <div class="cookie-acceptance__background"></div>
+        <div class="cookie-acceptance__dialog">
+            <div class="cookie-acceptance__dialog__header">
+                <div class="logo__image">
+                    <a href="/">
+                        <img src="<%= asset_pack_path 'media/images/getintoteachinglogo.svg'%>" alt="Get into teaching" />
+                        <div class="logo__image__tagline">Every Lesson shapes a life.</div>
+                    </a>
+                </div>
+                <h1>Help us improve</h1>
             </div>
-            <h1>Help us improve</h1>
+            <p>
+                Welcome to the new Get Into Teaching website. We invite you to try the latest beta version of the site and 
+                help us improve the services we offer.
+            </p>
+            <p>
+                To use the new website, we need you to agree to our cookie policy. This means we can use your data to understand how to improve the 
+                website for all of our users.
+            </p>
+            <a href="#" class="call-to-action-button" data-action="click->cookie-acceptance#accept">
+                Yes, I agree. Continue to the new <span>website</span>
+            </a>
+            <a class="git-link" href='https://getintoteaching.education.gov.uk/'>
+                No, I want to go to the current website <i class="fas fa-chevron-right"></i>
+            </a>
         </div>
-        <p>
-            Welcome to the new Get Into Teaching website. We invite you to try the latest beta version of the site and 
-            help us improve the services we offer.
-        </p>
-        <p>
-            To use the new website, we need you to agree to our cookie policy. This means we can use your data to understand how to improve the 
-            website for all of our users.
-        </p>
-        <a href="https://getintoteaching.education.gov.uk/" class="call-to-action-button">
-            Yes, I agree. Continue to the new <span>website</span>
-        </a>
-        <a class="git-link" href='https://getintoteaching.education.gov.uk/'>
-            No, I want to go to the current website <i class="fas fa-chevron-right"></i>
-        </a>
     </div>
 </div>
