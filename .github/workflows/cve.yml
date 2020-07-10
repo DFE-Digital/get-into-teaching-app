@@ -1,0 +1,34 @@
+name: Run CVE scanner 
+on:
+  pull_request:
+    types: [assigned, opened, synchronize, reopened]
+  push:
+    branches: [ master ]
+
+jobs:
+  cve:
+    name: CVE scanner 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build the Docker image
+        run: docker build . --file Dockerfile --tag localbuild/testimage:latest
+
+      - name: Scan image
+        uses: anchore/scan-action@v1
+        with:
+             dockerfile-path: "Dockerfile"
+             image-reference:  localbuild/testimage:latest
+             fail-build: true
+
+      - name:  Send Message to Sentry.io
+        if: always()
+        uses: sfawcett123/sentry-event@v1
+        with:
+             MESSAGE: "Test (CVE) Application - get-into-teaching-app"
+             STATE:  ${{job.status}}
+             ENVIRON: "Development"
+        env:
+            SENTRY_DSN: ${{secrets.DEV_OPS_SENTRY_DSN}}
