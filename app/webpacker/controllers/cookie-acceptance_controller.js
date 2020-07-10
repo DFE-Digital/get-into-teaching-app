@@ -10,11 +10,8 @@ export default class extends Controller {
 
     checkforCookie() {
         var cookie = document.cookie;
-        var cookieFrags = cookie.split(';');
-        for(var i=0;i<cookieFrags.length;i+=1) {
-            if(cookieFrags[i].indexOf('GiTBetaCookie=Accepted') > -1) {
-                return;
-            }
+        if(cookie.indexOf('GiTBetaCookie=Accepted') > -1) {
+            return;
         }
         this.showDialog();
     }
