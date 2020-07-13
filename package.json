@@ -16,9 +16,6 @@
     "webpack-dev-server": "^3.11.0"
   },
   "jest": {
-    "setupFiles": [
-      "./spec/javascript/setup.js"
-    ],
     "testRegex": ".*_spec.js",
     "roots": [
       "spec/javascript"
