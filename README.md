@@ -45,7 +45,6 @@ You will need to do this manually to have the content available on your local de
 
 1. Clone the following repo: https://github.com/DFE-Digital/get-into-teaching-content
 2. Copy the `content` folder from this repo and merge it into `app/views/content`
-3. 
 
 ## Whats included in this website
 
