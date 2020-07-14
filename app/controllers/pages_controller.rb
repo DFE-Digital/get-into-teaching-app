@@ -3,6 +3,10 @@ class PagesController < ApplicationController
     render template: "pages/home"
   end
 
+  def scribble
+    render template: "pages/scribble"
+  end
+
   def event
     render template: "pages/events/event"
   end
