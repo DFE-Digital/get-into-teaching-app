@@ -10,6 +10,7 @@ Rails.application.routes.draw do
 
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
 
+  get "/scribble", to: "pages#scribble", via: :all, as: nil
   get "/events", to: "pages#events", via: :all, as: nil
   get "/eventschool", to: "pages#eventschool", via: :all
   get "/events_ttt", to: "pages#events_ttt", via: :all
