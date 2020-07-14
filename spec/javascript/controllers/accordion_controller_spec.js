@@ -69,5 +69,36 @@ describe('AccordionController', () => {
         });
     });
 
+    describe("when closed header is toggled", () => {
+        it("should open", () => {
+            let headers = document.getElementsByClassName('steps-header');
+            let icon = headers[0].getElementsByTagName('i')[0];
+            expect(icon.className).toContain('fa-chevron-down');
+            headers[0].click();
+            expect(icon.className).toContain('fa-chevron-up');
+        });
+    });
+
+    describe("when header is closed", () => {
+        it("should have none visible content and no block style", () => {
+            let header = document.getElementById('step-1');
+            let icon = header.getElementsByTagName('i')[0];
+            expect(icon.className).toContain('fa-chevron-up');
+            let content = document.getElementById('collapsable-content-1');
+            expect(content.style.display).toBe('none');
+        });
+    });
+
+    describe("when header is open", () => {
+        it("should have visible content and display style of block", () => {
+            let header = document.getElementById('step-1');
+            header.click();
+            let icon = header.getElementsByTagName('i')[0];
+            expect(icon.className).toContain('fa-chevron-down');
+            let content = document.getElementById('collapsable-content-1');
+            expect(content.style.display).toBe('block');
+        });
+    });
+
 });
 
