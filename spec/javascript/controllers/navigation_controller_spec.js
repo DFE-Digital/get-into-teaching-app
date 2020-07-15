@@ -28,7 +28,46 @@ describe('NavigationController', () => {
     application.register('navigation', NavigationController) ;
 
     describe("when first loaded", () => {
-        it("does something", () => {
+        it("hides the mobile navigation", () => {
+            let themobilenav = document.getElementById('navbar-mobile-links');
+            expect(themobilenav.style.display).toBe("none");
+        });
+    });
+
+    describe("when first loaded", () => {
+        it("sets the icon to a hamburger", () => {
+            let theicon = document.getElementById('hamburger');
+            expect(theicon.className).toBe("icon-hamburger");
+        });
+    });
+
+    describe("when first loaded", () => {
+        it("sets the label to read 'Menu'", () => {
+            let thelabel = document.getElementById('navbar-label');
+            expect(thelabel.innerHTML).toBe("Menu");
+        });
+    });
+
+    describe("once clicked", () => {
+        it("shows the mobile navigation", () => {
+            let theicon = document.getElementById('hamburger');
+            theicon.click();
+            let themobilenav = document.getElementById('navbar-mobile-links');
+            expect(themobilenav.style.display).toBe("block");
+        });
+    });
+
+    describe("once clicked", () => {
+        it("sets the icon to a cross", () => {
+            let theicon = document.getElementById('hamburger');
+            expect(theicon.className).toBe("icon-close");
+        });
+    });
+
+    describe("once clicked", () => {
+        it("sets the label to read 'Close'", () => {
+            let thelabel = document.getElementById('navbar-label');
+            expect(thelabel.innerHTML).toBe("Close");
         });
     });
 
