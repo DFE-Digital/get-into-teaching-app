@@ -29,10 +29,7 @@ module Events
     end
 
     def available_distances
-      # [["Nationwide", nil]] + # Commented out for now because the API requires a postcode for now
-      DISTANCES.map do |d|
-        ["Within #{d} miles", d]
-      end
+      [["Nationwide", nil]] + DISTANCES.map { |d| ["Within #{d} miles", d] }
     end
 
     def available_distance_keys
