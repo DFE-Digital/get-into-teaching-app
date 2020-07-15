@@ -2,11 +2,12 @@ require "rails_helper"
 
 describe EventStepsController do
   include_context "stub types api"
+  include_context "stub candidate create access token api"
 
   let(:event_id) { SecureRandom.uuid }
   let(:model) { Events::Steps::PersonalDetails }
   let(:step_path) { event_step_path event_id, model.key }
-  let(:contact_details_path) { event_step_path(event_id, "contact_details") }
+  let(:authenticate_path) { event_step_path(event_id, "authenticate") }
   let(:event) { build :event_api, id: event_id }
 
   before do
@@ -29,7 +30,7 @@ describe EventStepsController do
 
     context "with valid data" do
       let(:details_params) { attributes_for(:events_personal_details) }
-      it { is_expected.to redirect_to contact_details_path }
+      it { is_expected.to redirect_to authenticate_path }
     end
 
     context "with invalid data" do
@@ -41,6 +42,9 @@ describe EventStepsController do
       context "when all valid" do
         before do
           allow_any_instance_of(Events::Steps::PersonalDetails).to \
+            receive(:valid?).and_return true
+
+          allow_any_instance_of(Events::Steps::Authenticate).to \
             receive(:valid?).and_return true
 
           allow_any_instance_of(Events::Steps::ContactDetails).to \

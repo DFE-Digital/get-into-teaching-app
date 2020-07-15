@@ -52,7 +52,7 @@ en:
               blank: Enter your first name
             last_name:
               blank: Enter your last name
-            email_address:
+            email:
               blank: Enter your full email address
               invalid: Enter a valid email address
         events/steps/contact_details:
@@ -74,7 +74,7 @@ en:
               blank: Enter your first name
             last_name:
               blank: Enter your last name
-            email_address:
+            email:
               blank: Enter your full email address
               invalid: Enter a valid email address
             current_status:
@@ -116,15 +116,17 @@ en:
       events_steps_personal_details:
         first_name: First name
         last_name: Last name
-        email_address: Email address
+        email: Email address
       events_steps_contact_details:
         phone_number: Phone number (optional)
+      events_steps_authenticate:
+        timed_one_time_password: Enter the verification code sent to %{email}
       events_steps_further_details:
         postcode: Postcode (optional)
       mailing_list_steps_name:
         first_name: First name
         last_name: Last name
-        email_address: Email address
+        email: Email address
         current_status: How would you describe yourself?
       mailing_list_steps_degree_stage:
         degree_stage: What stage are you at with your degree?
@@ -143,6 +145,10 @@ en:
         phone_number: |-
           This helps us contact you with updates to this event and other
           important information.
+      events_steps_authenticate:
+        timed_one_time_password:
+          text: Check your junk mail folder or %{link}.
+          link: resend verification
       events_steps_further_details:
         postcode: |-
           Enter your postcode so that we can send you event information

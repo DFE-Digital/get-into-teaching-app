@@ -10,18 +10,18 @@ module MailingList
 
       attribute :first_name
       attribute :last_name
-      attribute :email_address
+      attribute :email
       attribute :current_status
 
-      validates :email_address, presence: true, email_format: true
+      validates :email, presence: true, email_format: true
       validates :first_name, presence: true
       validates :last_name, presence: true
       validates :current_status,
                 presence: true,
                 inclusion: { in: CURRENT_STATUSES, allow_nil: true }
 
-      before_validation if: :email_address do
-        self.email_address = email_address.to_s.strip
+      before_validation if: :email do
+        self.email = email.to_s.strip
       end
 
       before_validation if: :first_name do
