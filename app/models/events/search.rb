@@ -29,10 +29,7 @@ module Events
     end
 
     def available_distances
-      # [["Nationwide", nil]] + # Commented out for now because the API requires a postcode for now
-      DISTANCES.map do |d|
-        ["Within #{d} miles", d]
-      end
+      [["Nationwide", nil]] + DISTANCES.map { |d| ["Within #{d} miles", d] }
     end
 
     def available_distance_keys
@@ -59,7 +56,7 @@ module Events
     def query_events_api
       GetIntoTeachingApi::Client.search_events \
         type_id: type,
-        radius_in_km: distance,
+        radius: distance,
         postcode: postcode,
         start_after: start_of_month,
         start_before: end_of_month
