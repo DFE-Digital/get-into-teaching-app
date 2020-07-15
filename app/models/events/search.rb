@@ -56,7 +56,7 @@ module Events
     def query_events_api
       GetIntoTeachingApi::Client.search_events \
         type_id: type,
-        radius_in_km: distance,
+        radius: distance,
         postcode: postcode,
         start_after: start_of_month,
         start_before: end_of_month
