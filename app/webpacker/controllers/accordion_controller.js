@@ -34,9 +34,7 @@ export default class extends Controller {
         var contentName = 'collapsable-content-' + item;
         var content = document.getElementById(contentName);
         if(content) {
-            var contentStyle = window.getComputedStyle(content);
-            var contentDisplay = contentStyle.getPropertyValue('display');
-            if(contentDisplay === 'block') {
+            if(content.style.display === 'block') {
                 content.style.display = 'none';
             } else {
                 content.style.display = 'block';
@@ -45,7 +43,6 @@ export default class extends Controller {
     }
 
     foldUp() {
-
         var stepnumber;
         var dontScroll = false;
         if(window.location.hash) {
@@ -68,7 +65,7 @@ export default class extends Controller {
         }
 
         if(!dontScroll) {
-            document.getElementById('step-' + stepnumber).scrollIntoView(true,{smooth:true});
+            this.element.getElementById('step-' + stepnumber).scrollIntoView(true,{smooth:true});
         }
     }
 
