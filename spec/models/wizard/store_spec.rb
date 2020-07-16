@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe Wizard::Store do
   let(:backingstore) do
-    { "name" => "Joe", "age" => 20, "region" => "Manchester" }
+    { "first_name" => "Joe", "age" => 20, "region" => "Manchester" }
   end
   let(:instance) { described_class.new backingstore }
   subject { instance }
@@ -25,8 +25,8 @@ describe Wizard::Store do
   end
 
   describe "#[]" do
-    context "name" do
-      subject { instance["name"] }
+    context "first_name" do
+      subject { instance["first_name"] }
       it { is_expected.to eql "Joe" }
     end
 
@@ -38,23 +38,23 @@ describe Wizard::Store do
 
   describe "#[]=" do
     it "will update stored value" do
-      expect { subject["name"] = "Jane" }.to \
-        change { subject["name"] }.from("Joe").to("Jane")
+      expect { subject["first_name"] = "Jane" }.to \
+        change { subject["first_name"] }.from("Joe").to("Jane")
     end
   end
 
   describe "#fetch" do
     context "with multiple keys" do
-      subject { instance.fetch :name, :region }
+      subject { instance.fetch :first_name, :region }
       it "will return hash of requested keys" do
-        is_expected.to eql({ "name" => "Joe", "region" => "Manchester" })
+        is_expected.to eql({ "first_name" => "Joe", "region" => "Manchester" })
       end
     end
 
     context "with array of keys" do
-      subject { instance.fetch %w[name region] }
+      subject { instance.fetch %w[first_name region] }
       it "will return hash of requested keys" do
-        is_expected.to eql({ "name" => "Joe", "region" => "Manchester" })
+        is_expected.to eql({ "first_name" => "Joe", "region" => "Manchester" })
       end
     end
   end
@@ -65,6 +65,13 @@ describe Wizard::Store do
 
     it "will remove all keys" do
       is_expected.to have_attributes empty?: true
+    end
+  end
+
+  describe "#to_hash" do
+    subject { instance.to_hash }
+    it "returns returns a hash with camelCase keys" do
+      is_expected.to eq(firstName: "Joe", age: 20, region: "Manchester")
     end
   end
 end

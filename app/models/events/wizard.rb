@@ -9,8 +9,17 @@ module Events
 
     def complete!
       super.tap do |result|
-        result && @store.purge!
+        break unless result
+
+        add_attendee_to_event
+        @store.purge!
       end
+    end
+
+    def add_attendee_to_event
+      request = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(@store.to_hash)
+      api = GetIntoTeachingApiClient::TeachingEventsApi.new
+      api.add_teaching_event_attendee(request)
     end
   end
 end

@@ -31,6 +31,10 @@ module Wizard
       data.clear
     end
 
+    def to_hash
+      data.transform_keys { |k| k.camelize(:lower).to_sym }
+    end
+
     class InvalidBackingStore < RuntimeError; end
   end
 end
