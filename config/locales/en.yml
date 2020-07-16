@@ -57,7 +57,7 @@ en:
               invalid: Enter a valid email address
         events/steps/contact_details:
           attributes:
-            phone_number:
+            telephone:
               invalid: Enter a valid phone number
         events/steps/further_details:
           attributes:
@@ -102,7 +102,7 @@ en:
               invalid: Enter a valid postcode
         mailing_list/steps/contact:
           attributes:
-            phone_number:
+            telephone:
               invalid: Enter a valid phone number
             more_info:
               blank: Enter the additional information you would like
@@ -118,7 +118,7 @@ en:
         last_name: Last name
         email: Email address
       events_steps_contact_details:
-        phone_number: Phone number (optional)
+        telephone: Phone number (optional)
       events_steps_authenticate:
         timed_one_time_password: Enter the verification code sent to %{email}
       events_steps_further_details:
@@ -137,12 +137,12 @@ en:
       mailing_list_steps_postcode:
         postcode: What's your postcode?
       mailing_list_steps_contact:
-        phone_number: What's your phone number (optional)
+        telephone: What's your phone number (optional)
         more_info: What would you like more information about when we call you?
 
     hint:
       events_steps_contact_details:
-        phone_number: |-
+        telephone: |-
           This helps us contact you with updates to this event and other
           important information.
       events_steps_authenticate:
