@@ -75,4 +75,12 @@ describe EventStepsController do
     end
     it { is_expected.to have_http_status :success }
   end
+
+  describe "#resend_verification" do
+    subject do
+      get resend_verification_event_steps_path(event_id, redirect_path: "redirect/path")
+      response
+    end
+    it { is_expected.to redirect_to("redirect/path") }
+  end
 end

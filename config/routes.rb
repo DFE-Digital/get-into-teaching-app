@@ -26,7 +26,10 @@ Rails.application.routes.draw do
               path: "/apply",
               controller: "event_steps",
               only: %i[index show update] do
-      collection { get :completed }
+      collection do
+        get :completed
+        get :resend_verification
+      end
     end
   end
 
