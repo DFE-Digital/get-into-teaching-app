@@ -3,6 +3,8 @@ require "rails_helper"
 describe EventStepsController do
   include_context "stub types api"
   include_context "stub candidate create access token api"
+  include_context "stub latest privacy policy api"
+  include_context "stub event add attendee api"
 
   let(:event_id) { SecureRandom.uuid }
   let(:model) { Events::Steps::PersonalDetails }

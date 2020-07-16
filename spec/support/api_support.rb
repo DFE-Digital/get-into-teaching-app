@@ -19,6 +19,23 @@ shared_context "stub candidate create access token api" do
   end
 end
 
+shared_context "stub latest privacy policy api" do
+  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
+  let(:policy) { [{ "id" => "abc123" }] }
+
+  before do
+    stub_request(:get, "#{git_api_endpoint}/api/privacy_policies/latest").to_return(status: 200, body: policy.to_json, headers: {})
+  end
+end
+
+shared_context "stub event add attendee api" do
+  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
+
+  before do
+    stub_request(:post, "#{git_api_endpoint}/api/teaching_events/attendees").to_return(status: 200, body: "", headers: {})
+  end
+end
+
 shared_examples "api support" do
   let(:token) { "test123" }
   let(:endpoint) { "http://my.api/api" }
