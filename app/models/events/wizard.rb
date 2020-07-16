@@ -2,6 +2,7 @@ module Events
   class Wizard < ::Wizard::Base
     self.steps = [
       Steps::PersonalDetails,
+      Steps::Authenticate,
       Steps::ContactDetails,
       Steps::FurtherDetails,
     ].freeze

@@ -7,6 +7,7 @@ describe Events::Wizard do
     it do
       is_expected.to eql [
         Events::Steps::PersonalDetails,
+        Events::Steps::Authenticate,
         Events::Steps::ContactDetails,
         Events::Steps::FurtherDetails,
       ]

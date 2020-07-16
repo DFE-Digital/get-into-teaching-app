@@ -1,0 +1,5 @@
+<%= f.govuk_text_field :timed_one_time_password, 
+label: { text: t('helpers.label.events_steps_authenticate.timed_one_time_password', email: event_session["email"]) }, 
+hint_text: t("helpers.hint.events_steps_authenticate.timed_one_time_password.text", 
+link: link_to(t("helpers.hint.events_steps_authenticate.timed_one_time_password.link"), root_path)).html_safe %>
+

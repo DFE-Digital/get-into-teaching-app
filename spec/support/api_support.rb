@@ -11,6 +11,14 @@ shared_context "stub types api" do
   end
 end
 
+shared_context "stub candidate create access token api" do
+  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
+
+  before do
+    stub_request(:post, "#{git_api_endpoint}/api/candidates/access_tokens").to_return(status: 200, body: "", headers: {})
+  end
+end
+
 shared_examples "api support" do
   let(:token) { "test123" }
   let(:endpoint) { "http://my.api/api" }

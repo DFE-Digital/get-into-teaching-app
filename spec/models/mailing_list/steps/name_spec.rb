@@ -6,21 +6,21 @@ describe MailingList::Steps::Name do
 
   it { is_expected.to respond_to :first_name }
   it { is_expected.to respond_to :last_name }
-  it { is_expected.to respond_to :email_address }
+  it { is_expected.to respond_to :email }
   it { is_expected.to respond_to :current_status }
 
   context "validations" do
     subject { instance.tap(&:valid?).errors.messages }
     it { is_expected.to include(:first_name) }
     it { is_expected.to include(:last_name) }
-    it { is_expected.to include(:email_address) }
+    it { is_expected.to include(:email) }
     it { is_expected.to include(:current_status) }
   end
 
   context "email address" do
-    it { is_expected.to allow_value("me@you.com").for :email_address }
-    it { is_expected.to allow_value(" me@you.com ").for :email_address }
-    it { is_expected.not_to allow_value("me@you").for :email_address }
+    it { is_expected.to allow_value("me@you.com").for :email }
+    it { is_expected.to allow_value(" me@you.com ").for :email }
+    it { is_expected.not_to allow_value("me@you").for :email }
   end
 
   context "current_status" do
