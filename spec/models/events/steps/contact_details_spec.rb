@@ -5,19 +5,19 @@ describe Events::Steps::ContactDetails do
 
   it_behaves_like "a wizard step"
 
-  it { is_expected.to respond_to :phone_number }
+  it { is_expected.to respond_to :telephone }
 
   context "validations" do
-    it { is_expected.to allow_value("").for :phone_number }
-    it { is_expected.to allow_value("01234567890").for :phone_number }
-    it { is_expected.to allow_value("01234 567890").for :phone_number }
-    it { is_expected.not_to allow_value("invalid").for :phone_number }
-    it { is_expected.not_to allow_value("01234").for :phone_number }
+    it { is_expected.to allow_value("").for :telephone }
+    it { is_expected.to allow_value("01234567890").for :telephone }
+    it { is_expected.to allow_value("01234 567890").for :telephone }
+    it { is_expected.not_to allow_value("invalid").for :telephone }
+    it { is_expected.not_to allow_value("01234").for :telephone }
   end
 
   context "data cleaning" do
-    let(:attributes) { { phone_number: "  01234567890 " } }
+    let(:attributes) { { telephone: "  01234567890 " } }
     before { subject.valid? }
-    it { is_expected.to have_attributes phone_number: "01234567890" }
+    it { is_expected.to have_attributes telephone: "01234567890" }
   end
 end

@@ -8,7 +8,7 @@ describe Events::Steps::FurtherDetails do
   context "attributes" do
     it { is_expected.to respond_to :privacy_policy }
     it { is_expected.to respond_to :future_events }
-    it { is_expected.to respond_to :postcode }
+    it { is_expected.to respond_to :address_postcode }
   end
 
   context "validations" do
@@ -20,16 +20,16 @@ describe Events::Steps::FurtherDetails do
     it { is_expected.to allow_value("0").for :future_events }
     it { is_expected.not_to allow_value("").for :future_events }
 
-    it { is_expected.to allow_value("TE571NG").for :postcode }
-    it { is_expected.to allow_value("TE57 1NG").for :postcode }
-    it { is_expected.to allow_value(" TE57 1NG ").for :postcode }
-    it { is_expected.to allow_value("").for :postcode }
-    it { is_expected.not_to allow_value("unknown").for :postcode }
+    it { is_expected.to allow_value("TE571NG").for :address_postcode }
+    it { is_expected.to allow_value("TE57 1NG").for :address_postcode }
+    it { is_expected.to allow_value(" TE57 1NG ").for :address_postcode }
+    it { is_expected.to allow_value("").for :address_postcode }
+    it { is_expected.not_to allow_value("unknown").for :address_postcode }
   end
 
   context "data cleaning" do
-    let(:attributes) { { postcode: "  TE57 1NG " } }
+    let(:attributes) { { address_postcode: "  TE57 1NG " } }
     before { subject.valid? }
-    it { is_expected.to have_attributes postcode: "TE57 1NG" }
+    it { is_expected.to have_attributes address_postcode: "TE57 1NG" }
   end
 end

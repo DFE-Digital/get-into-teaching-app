@@ -40,9 +40,7 @@ module Events
     private
 
       def request_attributes
-        attributes.slice("email", "first_name", "last_name").transform_keys do |k|
-          GetIntoTeachingApiClient::ExistingCandidateRequest.attribute_map[k.to_sym]
-        end
+        attributes.slice("email", "first_name", "last_name").transform_keys { |k| k.camelize(:lower).to_sym }
       end
     end
   end
