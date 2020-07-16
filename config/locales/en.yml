@@ -65,7 +65,7 @@ en:
               blank: Accept the privacy policy to continue
             future_events:
               inclusion: Choose yes or no
-            postcode:
+            address_postcode:
               invalid: Enter a valid postcode, or leave blank
 
         mailing_list/steps/name:
@@ -97,7 +97,7 @@ en:
               inclusion: Choose a subject from the list
         mailing_list/steps/postcode:
           attributes:
-            postcode:
+            address_postcode:
               blank: Enter your postcode
               invalid: Enter a valid postcode
         mailing_list/steps/contact:
@@ -122,7 +122,7 @@ en:
       events_steps_authenticate:
         timed_one_time_password: Enter the verification code sent to %{email}
       events_steps_further_details:
-        postcode: Postcode (optional)
+        address_postcode: Postcode (optional)
       mailing_list_steps_name:
         first_name: First name
         last_name: Last name
@@ -135,7 +135,7 @@ en:
       mailing_list_steps_subject:
         subject: Which subject do you want to teach?
       mailing_list_steps_postcode:
-        postcode: What's your postcode?
+        address_postcode: What's your postcode?
       mailing_list_steps_contact:
         telephone: What's your phone number (optional)
         more_info: What would you like more information about when we call you?
@@ -150,7 +150,7 @@ en:
           text: Check your junk mail folder or %{link}.
           link: resend verification
       events_steps_further_details:
-        postcode: |-
+        address_postcode: |-
           Enter your postcode so that we can send you event information
           specificities to your area.
 
