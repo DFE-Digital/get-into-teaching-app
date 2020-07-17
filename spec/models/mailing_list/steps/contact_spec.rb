@@ -5,7 +5,7 @@ describe MailingList::Steps::Contact do
   it_behaves_like "a wizard step"
 
   it { is_expected.to respond_to :telephone }
-  it { is_expected.to respond_to :more_info }
+  it { is_expected.to respond_to :callback_information }
   it { is_expected.to respond_to :accept_privacy_policy }
 
   context "validations" do
@@ -21,21 +21,21 @@ describe MailingList::Steps::Contact do
     it { is_expected.not_to allow_value("1234").for :telephone }
   end
 
-  context "more_info" do
-    it { is_expected.to allow_value(nil).for :more_info }
-    it { is_expected.to allow_value("").for :more_info }
-    it { is_expected.to allow_value("Lorem ipsum").for :more_info }
+  context "callback_information" do
+    it { is_expected.to allow_value(nil).for :callback_information }
+    it { is_expected.to allow_value("").for :callback_information }
+    it { is_expected.to allow_value("Lorem ipsum").for :callback_information }
 
     context "with phone number present" do
       let(:attributes) { { telephone: "0123456890" } }
-      it { is_expected.not_to allow_value(nil).for :more_info }
-      it { is_expected.not_to allow_value("").for :more_info }
-      it { is_expected.to allow_value("Lorem ipsum").for :more_info }
+      it { is_expected.not_to allow_value(nil).for :callback_information }
+      it { is_expected.not_to allow_value("").for :callback_information }
+      it { is_expected.to allow_value("Lorem ipsum").for :callback_information }
     end
 
     context "with too many words" do
-      it { is_expected.to allow_value("word " * 200).for :more_info }
-      it { is_expected.not_to allow_value("word " * 201).for :more_info }
+      it { is_expected.to allow_value("word " * 200).for :callback_information }
+      it { is_expected.not_to allow_value("word " * 201).for :callback_information }
     end
   end
 
