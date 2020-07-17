@@ -25,6 +25,8 @@ RSpec.feature "View pages", type: :feature do
     end
   end
 
+  let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
@@ -36,6 +38,10 @@ RSpec.feature "View pages", type: :feature do
       receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
     allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
       receive(:get_teaching_subjects).and_return(teaching_subject_types)
+    allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
+      receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
+    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+      receive(:add_mailing_list_member)
   end
 
   scenario "Full journey as Student" do

@@ -1,8 +1,6 @@
 module Events
   module Steps
     class FurtherDetails < ::Wizard::Step
-      FUTURE_EVENT_OPTIONS = [["Yes", true], ["No", false]].freeze
-
       attribute :event_id
       attribute :privacy_policy, :boolean
       attribute :future_events, :boolean
@@ -26,10 +24,6 @@ module Events
         end
 
         super
-      end
-
-      def future_event_options
-        FUTURE_EVENT_OPTIONS
       end
     end
   end

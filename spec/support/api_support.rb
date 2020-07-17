@@ -60,6 +60,14 @@ shared_context "stub event add attendee api" do
   end
 end
 
+shared_context "stub mailing list add member api" do
+  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
+
+  before do
+    stub_request(:post, "#{git_api_endpoint}/api/mailing_list/members").to_return(status: 200, body: "", headers: {})
+  end
+end
+
 shared_examples "api support" do
   let(:token) { "test123" }
   let(:endpoint) { "http://my.api/api" }

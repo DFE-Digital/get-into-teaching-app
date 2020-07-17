@@ -18,13 +18,31 @@ describe MailingList::Wizard do
   end
 
   describe "#complete!" do
-    let(:store) { { "first_name" => "Joe", "last_name" => "Joeseph" } }
-    let(:wizardstore) { Wizard::Store.new store }
+    let(:uuid) { SecureRandom.uuid }
+    let(:store) do
+      { uuid => {
+        "email" => "email@address.com",
+        "first_name" => "Joe",
+        "last_name" => "Joseph",
+      } }
+    end
+    let(:wizardstore) { Wizard::Store.new store[uuid] }
+    let(:request) do
+      GetIntoTeachingApiClient::MailingListAddMember.new(
+        { email: "email@address.com", firstName: "Joe", lastName: "Joseph" },
+      )
+    end
+
     subject { described_class.new wizardstore, "contact" }
+
     before { allow(subject).to receive(:valid?).and_return true }
+    before do
+      expect_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+        receive(:add_mailing_list_member).with(request).once
+    end
     before { subject.complete! }
 
     it { is_expected.to have_received(:valid?) }
-    it { expect(store).to eql({}) }
+    it { expect(store[uuid]).to eql({}) }
   end
 end
