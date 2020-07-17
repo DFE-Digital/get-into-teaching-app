@@ -158,7 +158,7 @@ en:
     legend:
       events_steps_further_details:
         privacy_policy: |-
-          Are you over 16 and have agreed to our privacy policy?
+          Are you over 16 and do you agree to our privacy policy?
         future_events: |-
           Sign up and receive information about future events (optional)
       mailing_list_steps_contact:
