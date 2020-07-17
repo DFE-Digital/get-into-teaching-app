@@ -1,10 +1,11 @@
 module Events
   module Steps
     class PersonalDetails < ::Wizard::Step
+      include ::Wizard::IssueVerificationCode
+
       attribute :email
       attribute :first_name
       attribute :last_name
-      attribute :authenticate
 
       validates :email, presence: true, email_format: true
       validates :first_name, presence: true
@@ -20,27 +21,6 @@ module Events
 
       before_validation if: :last_name do
         self.last_name = last_name.to_s.strip
-      end
-
-      def save
-        if valid?
-          begin
-            request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(request_attributes)
-            GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request)
-            self.authenticate = true
-          rescue GetIntoTeachingApiClient::ApiError
-            # Existing candidate not found or CRM is currently unavailable.
-            self.authenticate = false
-          end
-        end
-
-        super
-      end
-
-    private
-
-      def request_attributes
-        attributes.slice("email", "first_name", "last_name").transform_keys { |k| k.camelize(:lower).to_sym }
       end
     end
   end

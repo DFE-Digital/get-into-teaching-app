@@ -42,4 +42,14 @@ describe MailingList::Steps::Name do
     it { is_expected.not_to allow_value("").for :describe_yourself_option_id }
     it { is_expected.not_to allow_value("random").for :describe_yourself_option_id }
   end
+
+  context "when the step is valid" do
+    subject do
+      instance.tap do |step|
+        step.describe_yourself_option_id = describe_yourself_option_types.first.id
+      end
+    end
+
+    it_behaves_like "an issue verification code wizard step"
+  end
 end
