@@ -1,6 +1,17 @@
 require "rails_helper"
 
 RSpec.feature "View pages", type: :feature do
+  let(:describe_yourself_option_types) do
+    GetIntoTeachingApi::Constants::DESCRIBE_YOURSELF_OPTIONS.map do |k, v|
+      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+    end
+  end
+
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+      receive(:get_candidate_describe_yourself_options).and_return(describe_yourself_option_types)
+  end
+
   scenario "Full journey as Student" do
     visit mailing_list_steps_path
 

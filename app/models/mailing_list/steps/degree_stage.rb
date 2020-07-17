@@ -20,7 +20,7 @@ module MailingList
       end
 
       def skipped?
-        @store["current_status"] != "Student"
+        @store["describe_yourself_option_id"] != GetIntoTeachingApi::Constants::DESCRIBE_YOURSELF_OPTIONS["Student"]
       end
     end
   end

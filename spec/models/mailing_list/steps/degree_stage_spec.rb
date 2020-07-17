@@ -18,17 +18,17 @@ describe MailingList::Steps::DegreeStage do
   context "skipped?" do
     subject { described_class.new nil, Wizard::Store.new(store), {} }
 
-    context "when current_status equals 'Student'" do
-      let(:store) { { "current_status" => "Student" } }
+    context "when describe_yourself_option_id equals 'Student'" do
+      let(:store) { { "describe_yourself_option_id" => GetIntoTeachingApi::Constants::DESCRIBE_YOURSELF_OPTIONS["Student"] } }
       it { is_expected.to have_attributes skipped?: false }
     end
 
-    context "when current_status does not equal student" do
-      let(:store) { { "current_status" => "Looking to change career" } }
+    context "when describe_yourself_option_id does not equal student" do
+      let(:store) { { "describe_yourself_option_id" => GetIntoTeachingApi::Constants::DESCRIBE_YOURSELF_OPTIONS["Looking to change career"] } }
       it { is_expected.to have_attributes skipped?: true }
     end
 
-    context "when current_status is not set" do
+    context "when describe_yourself_option_id is not set" do
       let(:store) { {} }
       it { is_expected.to have_attributes skipped?: true }
     end
