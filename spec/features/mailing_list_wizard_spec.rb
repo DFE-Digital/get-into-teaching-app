@@ -26,6 +26,8 @@ RSpec.feature "View pages", type: :feature do
   end
 
   before do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
     allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
       receive(:get_candidate_describe_yourself_options).and_return(describe_yourself_option_types)
     allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
