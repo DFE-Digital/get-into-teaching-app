@@ -37,7 +37,10 @@ Rails.application.routes.draw do
     resources :steps,
               path: "/signup",
               only: %i[index show update] do
-      collection { get :completed }
+      collection do
+        get :completed
+        get :resend_verification
+      end
     end
   end
 

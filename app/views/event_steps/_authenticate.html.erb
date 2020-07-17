@@ -1,13 +1,4 @@
-<%
-  hint_text = t("helpers.hint.events_steps_authenticate.timed_one_time_password.text", 
-    link: link_to(t("helpers.hint.events_steps_authenticate.timed_one_time_password.link"), 
-    resend_verification_event_steps_path(
-      redirect_path: event_step_path(@event.id, Events::Steps::Authenticate.key, 
-      verification_resent: true
-    ))))
-  hint_text += "<br /><b>#{t("helpers.hint.events_steps_authenticate.timed_one_time_password.resent")}</b>" if params[:verification_resent]
-%>
-
-<%= f.govuk_text_field :timed_one_time_password, 
-label: { text: t('helpers.label.events_steps_authenticate.timed_one_time_password', email: event_session["email"]) }, 
-hint_text: hint_text.html_safe %>
+<%= render "wizard/steps/authenticate", f: f, email: event_session["email"], resend_verification_path: resend_verification_event_steps_path(
+  redirect_path: event_step_path(@event.id, Events::Steps::Authenticate.key, 
+  verification_resent: true
+)) %>

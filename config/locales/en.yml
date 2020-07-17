@@ -119,7 +119,7 @@ en:
         email: Email address
       events_steps_contact_details:
         telephone: Phone number (optional)
-      events_steps_authenticate:
+      wizard_steps_authenticate:
         timed_one_time_password: Enter the verification code sent to %{email}
       events_steps_further_details:
         address_postcode: Postcode (optional)
@@ -145,7 +145,7 @@ en:
         telephone: |-
           This helps us contact you with updates to this event and other
           important information.
-      events_steps_authenticate:
+      wizard_steps_authenticate:
         timed_one_time_password:
           text: Check your junk mail folder or %{link}.
           resent: We've sent you another email.
