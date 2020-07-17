@@ -13,7 +13,7 @@ shared_context "stub types api" do
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApi::Constants::DESCRIBE_YOURSELF_OPTIONS.map { |k, v| { id: v, value: k} }.to_json
+        body: GetIntoTeachingApi::Constants::DESCRIBE_YOURSELF_OPTIONS.map { |k, v| { id: v, value: k } }.to_json
   end
 end
 

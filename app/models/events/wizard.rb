@@ -17,7 +17,7 @@ module Events
     end
 
     def add_attendee_to_event
-      request = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(@store.to_hash)
+      request = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(@store.to_camelized_hash)
       api = GetIntoTeachingApiClient::TeachingEventsApi.new
       api.add_teaching_event_attendee(request)
     end
