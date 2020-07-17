@@ -7,9 +7,17 @@ RSpec.feature "View pages", type: :feature do
     end
   end
 
+  let(:degree_status_option_types) do
+    GetIntoTeachingApi::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
+      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+    end
+  end
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
       receive(:get_candidate_describe_yourself_options).and_return(describe_yourself_option_types)
+    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+      receive(:get_qualification_degree_status).and_return(degree_status_option_types)
   end
 
   scenario "Full journey as Student" do

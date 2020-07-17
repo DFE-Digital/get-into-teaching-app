@@ -82,7 +82,7 @@ en:
               inclusion: Select how you would describe yourself
         mailing_list/steps/degree_stage:
           attributes:
-            degree_stage:
+            degree_status_id:
               blank: Select your degree stage
               inclusion: Select your degree stage from the list
         mailing_list/steps/teacher_training:
@@ -129,7 +129,7 @@ en:
         email: Email address
         describe_yourself_option_id: How would you describe yourself?
       mailing_list_steps_degree_stage:
-        degree_stage: What stage are you at with your degree?
+        degree_status_id: What stage are you at with your degree?
       mailing_list_steps_teacher_training:
         teacher_training: How close are you to applying for teacher training?
       mailing_list_steps_subject:

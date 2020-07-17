@@ -14,6 +14,12 @@ shared_context "stub types api" do
         status: 200,
         headers: { "Content-type" => "application/json" },
         body: GetIntoTeachingApi::Constants::DESCRIBE_YOURSELF_OPTIONS.map { |k, v| { id: v, value: k } }.to_json
+
+    stub_request(:get, "#{git_api_endpoint}/api/types/qualification/degree_status")
+      .to_return \
+        status: 200,
+        headers: { "Content-type" => "application/json" },
+        body: GetIntoTeachingApi::Constants::DEGREE_STATUS_OPTIONS.map { |k, v| { id: v, value: k } }.to_json
   end
 end
 

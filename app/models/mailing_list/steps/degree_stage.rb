@@ -1,26 +1,27 @@
 module MailingList
   module Steps
     class DegreeStage < ::Wizard::Step
-      STAGES = [
-        "Graduate or postgraduate",
-        "First year at university",
-        "Second year at university",
-        "Final year at university",
-      ].freeze
-
-      attribute :degree_stage
-      validates :degree_stage,
+      attribute :degree_status_id
+      validates :degree_status_id,
                 presence: true,
-                inclusion: { in: STAGES, allow_nil: true }
-
-      class << self
-        def stages
-          STAGES
-        end
-      end
+                inclusion: { in: :degree_status_option_ids, allow_nil: true }
 
       def skipped?
         @store["describe_yourself_option_id"] != GetIntoTeachingApi::Constants::DESCRIBE_YOURSELF_OPTIONS["Student"]
+      end
+
+      def degree_status_options
+        @degree_status_options ||= query_degree_status
+      end
+
+      def degree_status_option_ids
+        degree_status_options.map(&:id)
+      end
+
+    private
+
+      def query_degree_status
+        GetIntoTeachingApiClient::TypesApi.new.get_qualification_degree_status
       end
     end
   end

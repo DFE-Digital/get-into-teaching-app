@@ -4,15 +4,26 @@ describe MailingList::Steps::DegreeStage do
   include_context "wizard step"
   it_behaves_like "a wizard step"
 
-  it { is_expected.to respond_to :degree_stage }
+  let(:degree_status_option_types) do
+    GetIntoTeachingApi::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
+      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+    end
+  end
 
-  context "degree_stage" do
-    let(:stages) { described_class.stages }
-    it { is_expected.to allow_value(stages.first).for :degree_stage }
-    it { is_expected.to allow_value(stages.last).for :degree_stage }
-    it { is_expected.not_to allow_value(nil).for :degree_stage }
-    it { is_expected.not_to allow_value("").for :degree_stage }
-    it { is_expected.not_to allow_value("random").for :degree_stage }
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+      receive(:get_qualification_degree_status).and_return(degree_status_option_types)
+  end
+
+  it { is_expected.to respond_to :degree_status_id }
+
+  context "degree_status_id" do
+    let(:options) { degree_status_option_types.map(&:id) }
+    it { is_expected.to allow_value(options.first).for :degree_status_id }
+    it { is_expected.to allow_value(options.last).for :degree_status_id }
+    it { is_expected.not_to allow_value(nil).for :degree_status_id }
+    it { is_expected.not_to allow_value("").for :degree_status_id }
+    it { is_expected.not_to allow_value("random").for :degree_status_id }
   end
 
   context "skipped?" do
