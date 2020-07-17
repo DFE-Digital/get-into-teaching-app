@@ -115,7 +115,7 @@ en:
     label:
       events_steps_personal_details:
         first_name: First name
-        last_name: Last name
+        last_name: Surname
         email: Email address
       events_steps_contact_details:
         telephone: Phone number (optional)
@@ -125,7 +125,7 @@ en:
         address_postcode: Postcode (optional)
       mailing_list_steps_name:
         first_name: First name
-        last_name: Last name
+        last_name: Surname
         email: Email address
         describe_yourself_option_id: How would you describe yourself?
       mailing_list_steps_degree_stage:

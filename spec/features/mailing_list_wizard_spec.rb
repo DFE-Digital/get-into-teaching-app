@@ -33,7 +33,7 @@ RSpec.feature "View pages", type: :feature do
 
     expect(page).to have_text "Sign up for personalised updates"
     fill_in "First name", with: "Test"
-    fill_in "Last name", with: "User"
+    fill_in "Surname", with: "User"
     fill_in "Email address", with: "test@testuser.com"
     select "Student"
     click_on "Next Step"
@@ -74,7 +74,7 @@ RSpec.feature "View pages", type: :feature do
 
     expect(page).to have_text "Sign up for personalised updates"
     fill_in "First name", with: "Test"
-    fill_in "Last name", with: "User"
+    fill_in "Surname", with: "User"
     fill_in "Email address", with: "test@testuser.com"
     select "Looking to change career"
     click_on "Next Step"
