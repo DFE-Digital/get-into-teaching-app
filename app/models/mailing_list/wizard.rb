@@ -2,6 +2,7 @@ module MailingList
   class Wizard < ::Wizard::Base
     self.steps = [
       Steps::Name,
+      Steps::Authenticate,
       Steps::DegreeStage,
       Steps::TeacherTraining,
       Steps::Subject,

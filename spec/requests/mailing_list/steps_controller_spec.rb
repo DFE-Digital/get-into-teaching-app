@@ -23,7 +23,7 @@ describe MailingList::StepsController do
 
     context "with valid data" do
       let(:details_params) { attributes_for(:mailing_list_name) }
-      it { is_expected.to redirect_to mailing_list_step_path("degree_stage") }
+      it { is_expected.to redirect_to mailing_list_step_path("authenticate") }
     end
 
     context "with invalid data" do

@@ -13,4 +13,16 @@ describe SessionHelper, type: :helper do
       expect(event_session).to eq(event_session_data)
     end
   end
+
+  describe "#mailing_list_session" do
+    it "defaults to an empty hash" do
+      expect(mailing_list_session).to eq({})
+    end
+
+    it "returns the session mailing list data" do
+      mailing_list_session_data = { email: "email@address.com" }
+      session[:mailinglist] = mailing_list_session_data
+      expect(mailing_list_session).to eq(mailing_list_session_data)
+    end
+  end
 end

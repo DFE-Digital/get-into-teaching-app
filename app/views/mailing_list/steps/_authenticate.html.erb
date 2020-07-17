@@ -1,0 +1,9 @@
+<h1>Verify your account</h1>
+
+<p>
+  We need you to check your email and enter the verification code to continue.
+</p>
+
+<%= render "wizard/steps/authenticate", f: f, email: mailing_list_session["email"], resend_verification_path: resend_verification_mailing_list_steps_path(
+  redirect_path: mailing_list_step_path(Events::Steps::Authenticate.key, verification_resent: true)
+) %>
