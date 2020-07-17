@@ -20,6 +20,12 @@ shared_context "stub types api" do
         status: 200,
         headers: { "Content-type" => "application/json" },
         body: GetIntoTeachingApi::Constants::DEGREE_STATUS_OPTIONS.map { |k, v| { id: v, value: k } }.to_json
+
+    stub_request(:get, "#{git_api_endpoint}/api/types/candidate/consideration_journey_stages")
+      .to_return \
+        status: 200,
+        headers: { "Content-type" => "application/json" },
+        body: GetIntoTeachingApi::Constants::CONSIDERATION_JOURNEY_STAGES.map { |k, v| { id: v, value: k } }.to_json
   end
 end
 

@@ -9,13 +9,21 @@ module GetIntoTeachingApi
       }.freeze
 
     DEGREE_STATUS_OPTIONS =
-    {
-      "Graduate or postgraduate" => "222750000",
-      "Final year" => "222750001",
-      "Second year" => "222750002",
-      "First year" => "222750003",
-      "I don't have a degree and am not studying for one" => "222750004",
-      "Other" => "222750005",
-    }.freeze
+      {
+        "Graduate or postgraduate" => "222750000",
+        "Final year" => "222750001",
+        "Second year" => "222750002",
+        "First year" => "222750003",
+        "I don't have a degree and am not studying for one" => "222750004",
+        "Other" => "222750005",
+      }.freeze
+
+    CONSIDERATION_JOURNEY_STAGES =
+      {
+        "It’s just an idea" => "222750000",
+        "I’m not sure and finding out more" => "222750001",
+        "I’m fairly sure and exploring my options" => "222750002",
+        "I’m very sure and think I’ll apply" => "222750003",
+      }.freeze
   end
 end

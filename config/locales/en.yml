@@ -87,7 +87,7 @@ en:
               inclusion: Select your degree stage from the list
         mailing_list/steps/teacher_training:
           attributes:
-            teacher_training:
+            consideration_journey_stage_id:
               blank: Choose an option from the list
               inclusion: Choose an option from the list
         mailing_list/steps/subject:
@@ -131,7 +131,7 @@ en:
       mailing_list_steps_degree_stage:
         degree_status_id: What stage are you at with your degree?
       mailing_list_steps_teacher_training:
-        teacher_training: How close are you to applying for teacher training?
+        consideration_journey_stage_id: How close are you to applying for teacher training?
       mailing_list_steps_subject:
         subject: Which subject do you want to teach?
       mailing_list_steps_postcode:

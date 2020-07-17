@@ -13,11 +13,19 @@ RSpec.feature "View pages", type: :feature do
     end
   end
 
+  let(:consideration_journey_stage_types) do
+    GetIntoTeachingApi::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
+      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+    end
+  end
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
       receive(:get_candidate_describe_yourself_options).and_return(describe_yourself_option_types)
     allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
       receive(:get_qualification_degree_status).and_return(degree_status_option_types)
+    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+      receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
   end
 
   scenario "Full journey as Student" do
@@ -35,7 +43,7 @@ RSpec.feature "View pages", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "How close are you to applying"
-    select "I'm not sure and finding out more"
+    select "I’m not sure and finding out more"
     click_on "Next Step"
 
     expect(page).to have_text "Which subject do you want to teach"
@@ -72,7 +80,7 @@ RSpec.feature "View pages", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "How close are you to applying"
-    select "I'm not sure and finding out more"
+    select "I’m not sure and finding out more"
     click_on "Next Step"
 
     expect(page).to have_text "Which subject do you want to teach"
