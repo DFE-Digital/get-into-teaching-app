@@ -30,7 +30,7 @@ module WizardSteps
   end
 
   def resend_verification
-    request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(wizard_store.to_hash)
+    request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(wizard_store.to_camelized_hash)
     GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request)
     redirect_to params[:redirect_path]
   end

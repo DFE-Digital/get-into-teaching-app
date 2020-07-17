@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :mailing_list_teacher_training, class: MailingList::Steps::TeacherTraining do
-    teacher_training { MailingList::Steps::TeacherTraining.statuses.first }
+    consideration_journey_stage_id { GetIntoTeachingApi::Constants::CONSIDERATION_JOURNEY_STAGES["It’s just an idea"] }
   end
 end

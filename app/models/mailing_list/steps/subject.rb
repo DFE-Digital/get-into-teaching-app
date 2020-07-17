@@ -1,49 +1,23 @@
 module MailingList
   module Steps
     class Subject < ::Wizard::Step
-      SUBJECTS = [
-        "Art and Design",
-        "Biology",
-        "Business Studies",
-        "Chemistry",
-        "Citizenship",
-        "Classics",
-        "Computing",
-        "Dance",
-        "Design",
-        "Economics",
-        "English",
-        "French",
-        "Geography",
-        "German",
-        "Health and social care",
-        "History",
-        "Languages (other)",
-        "Maths",
-        "Media studies",
-        "French",
-        "Music",
-        "Physical education",
-        "Physics",
-        "Physics with maths",
-        "Primary psycology",
-        "Religious education",
-        "Social sciences",
-        "Spanish",
-        "Vocational health",
-        "Primary",
-        "I don't know",
-      ].freeze
-
-      attribute :subject
-      validates :subject,
+      attribute :preferred_teaching_subject_id
+      validates :preferred_teaching_subject_id,
                 presence: true,
-                inclusion: { in: SUBJECTS, allow_nil: true }
+                inclusion: { in: :teaching_subject_ids, allow_nil: true }
 
-      class << self
-        def subjects
-          SUBJECTS
-        end
+      def teaching_subjects
+        @teaching_subjects ||= query_teaching_subjects
+      end
+
+      def teaching_subject_ids
+        teaching_subjects.map(&:id)
+      end
+
+    private
+
+      def query_teaching_subjects
+        GetIntoTeachingApiClient::TypesApi.new.get_teaching_subjects
       end
     end
   end

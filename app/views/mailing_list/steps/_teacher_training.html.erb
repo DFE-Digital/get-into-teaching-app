@@ -7,7 +7,7 @@
 
 <%= f.govuk_error_summary %>
 
-<%= f.govuk_collection_select :teacher_training,
-      f.object.class.statuses,
-      :to_s,
-      :to_s %>
+<%= f.govuk_collection_select :consideration_journey_stage_id,
+      f.object.consideration_journey_stages,
+      :id,
+      :value %>

@@ -36,7 +36,7 @@ module Events
       end
 
       def timed_one_time_password_is_correct
-        request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(@store.to_hash)
+        request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(@store.to_camelized_hash)
         @api ||= GetIntoTeachingApiClient::TeachingEventsApi.new
         @totp_response ||= @api.get_pre_filled_teaching_event_add_attendee(timed_one_time_password, request)
       rescue GetIntoTeachingApiClient::ApiError

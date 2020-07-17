@@ -17,7 +17,7 @@
 <%= f.govuk_text_field :last_name %>
 <%= f.govuk_email_field :email %>
 
-<%= f.govuk_collection_select :current_status,
-      f.object.class.current_statuses,
-      :to_s,
-      :to_s %>
+<%= f.govuk_collection_select :describe_yourself_option_id,
+      f.object.describe_yourself_options,
+      :id,
+      :value %>

@@ -1,5 +1,5 @@
 FactoryBot.define do
   factory :mailing_list_subject, class: MailingList::Steps::Subject do
-    subject { MailingList::Steps::Subject.subjects.first }
+    preferred_teaching_subject_id { GetIntoTeachingApi::Constants::TEACHING_SUBJECTS["Physics"] }
   end
 end

@@ -77,17 +77,17 @@ en:
             email:
               blank: Enter your full email address
               invalid: Enter a valid email address
-            current_status:
+            describe_yourself_option_id:
               blank: Select how you would describe yourself
               inclusion: Select how you would describe yourself
         mailing_list/steps/degree_stage:
           attributes:
-            degree_stage:
+            degree_status_id:
               blank: Select your degree stage
               inclusion: Select your degree stage from the list
         mailing_list/steps/teacher_training:
           attributes:
-            teacher_training:
+            consideration_journey_stage_id:
               blank: Choose an option from the list
               inclusion: Choose an option from the list
         mailing_list/steps/subject:
@@ -115,7 +115,7 @@ en:
     label:
       events_steps_personal_details:
         first_name: First name
-        last_name: Last name
+        last_name: Surname
         email: Email address
       events_steps_contact_details:
         telephone: Phone number (optional)
@@ -125,15 +125,15 @@ en:
         address_postcode: Postcode (optional)
       mailing_list_steps_name:
         first_name: First name
-        last_name: Last name
+        last_name: Surname
         email: Email address
-        current_status: How would you describe yourself?
+        describe_yourself_option_id: How would you describe yourself?
       mailing_list_steps_degree_stage:
-        degree_stage: What stage are you at with your degree?
+        degree_status_id: What stage are you at with your degree?
       mailing_list_steps_teacher_training:
-        teacher_training: How close are you to applying for teacher training?
+        consideration_journey_stage_id: How close are you to applying for teacher training?
       mailing_list_steps_subject:
-        subject: Which subject do you want to teach?
+        preferred_teaching_subject_id: Which subject do you want to teach?
       mailing_list_steps_postcode:
         address_postcode: What's your postcode?
       mailing_list_steps_contact:
@@ -158,7 +158,7 @@ en:
     legend:
       events_steps_further_details:
         privacy_policy: |-
-          Are you over 16 and have agreed to our privacy policy?
+          Are you over 16 and do you agree to our privacy policy?
         future_events: |-
           Sign up and receive information about future events (optional)
       mailing_list_steps_contact:

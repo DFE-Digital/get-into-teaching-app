@@ -1,22 +1,23 @@
 module MailingList
   module Steps
     class TeacherTraining < ::Wizard::Step
-      STATUSES = [
-        "It's just an idea",
-        "I'm not sure and finding out more",
-        "I'm fairly sure and exploring my options",
-        "I'm very sure and think I'll apply",
-      ].freeze
-
-      attribute :teacher_training
-      validates :teacher_training,
+      attribute :consideration_journey_stage_id
+      validates :consideration_journey_stage_id,
                 presence: true,
-                inclusion: { in: STATUSES, allow_nil: true }
+                inclusion: { in: :consideration_journey_stage_ids, allow_nil: true }
 
-      class << self
-        def statuses
-          STATUSES
-        end
+      def consideration_journey_stages
+        @consideration_journey_stages ||= query_consideration_journey_stages
+      end
+
+      def consideration_journey_stage_ids
+        consideration_journey_stages.map(&:id)
+      end
+
+    private
+
+      def query_consideration_journey_stages
+        GetIntoTeachingApiClient::TypesApi.new.get_candidate_journey_stages
       end
     end
   end

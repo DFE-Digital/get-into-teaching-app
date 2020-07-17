@@ -31,7 +31,7 @@ module Wizard
       data.clear
     end
 
-    def to_hash
+    def to_camelized_hash
       data.transform_keys { |k| k.camelize(:lower).to_sym }
     end
 
