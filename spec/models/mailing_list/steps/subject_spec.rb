@@ -4,14 +4,25 @@ describe MailingList::Steps::Subject do
   include_context "wizard step"
   it_behaves_like "a wizard step"
 
-  it { is_expected.to respond_to :subject }
+  let(:teaching_subject_types) do
+    GetIntoTeachingApi::Constants::TEACHING_SUBJECTS.map do |k, v|
+      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+    end
+  end
 
-  context "subject" do
-    let(:subjects) { described_class.subjects }
-    it { is_expected.to allow_value(subjects.first).for :subject }
-    it { is_expected.to allow_value(subjects.last).for :subject }
-    it { is_expected.not_to allow_value(nil).for :subject }
-    it { is_expected.not_to allow_value("").for :subject }
-    it { is_expected.not_to allow_value("random").for :subject }
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+      receive(:get_teaching_subjects).and_return(teaching_subject_types)
+  end
+
+  it { is_expected.to respond_to :preferred_teaching_subject_id }
+
+  context "preferred_teaching_subject_id" do
+    let(:options) { teaching_subject_types.map(&:id) }
+    it { is_expected.to allow_value(options.first).for :preferred_teaching_subject_id }
+    it { is_expected.to allow_value(options.last).for :preferred_teaching_subject_id }
+    it { is_expected.not_to allow_value(nil).for :preferred_teaching_subject_id }
+    it { is_expected.not_to allow_value("").for :preferred_teaching_subject_id }
+    it { is_expected.not_to allow_value("random").for :preferred_teaching_subject_id }
   end
 end

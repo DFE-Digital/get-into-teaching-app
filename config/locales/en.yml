@@ -133,7 +133,7 @@ en:
       mailing_list_steps_teacher_training:
         consideration_journey_stage_id: How close are you to applying for teacher training?
       mailing_list_steps_subject:
-        subject: Which subject do you want to teach?
+        preferred_teaching_subject_id: Which subject do you want to teach?
       mailing_list_steps_postcode:
         address_postcode: What's your postcode?
       mailing_list_steps_contact:

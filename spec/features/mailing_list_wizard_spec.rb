@@ -19,6 +19,12 @@ RSpec.feature "View pages", type: :feature do
     end
   end
 
+  let(:teaching_subject_types) do
+    GetIntoTeachingApi::Constants::TEACHING_SUBJECTS.map do |k, v|
+      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+    end
+  end
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
       receive(:get_candidate_describe_yourself_options).and_return(describe_yourself_option_types)
@@ -26,6 +32,8 @@ RSpec.feature "View pages", type: :feature do
       receive(:get_qualification_degree_status).and_return(degree_status_option_types)
     allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
       receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
+    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+      receive(:get_teaching_subjects).and_return(teaching_subject_types)
   end
 
   scenario "Full journey as Student" do
