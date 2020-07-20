@@ -12,8 +12,17 @@ module MailingList
 
     def complete!
       super.tap do |result|
-        result && @store.purge!
+        break unless result
+
+        add_member_to_mailing_list
+        @store.purge!
       end
+    end
+
+    def add_member_to_mailing_list
+      request = GetIntoTeachingApiClient::MailingListAddMember.new(@store.to_camelized_hash)
+      api = GetIntoTeachingApiClient::MailingListApi.new
+      api.add_mailing_list_member(request)
     end
   end
 end

@@ -81,6 +81,14 @@ describe Wizard::Steps::Authenticate do
         subject.save
         expect(wizardstore["candidate_id"]).to eq(response.candidate_id)
       end
+
+      it "does not overwrite data already in the store" do
+        response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidateId: "abc123", firstName: "Jim")
+        expect(subject).to receive(:perform_existing_candidate_request).with(request) { response }
+        subject.save
+        expect(wizardstore["candidate_id"]).to eq(response.candidate_id)
+        expect(wizardstore["first_name"]).to eq("First")
+      end
     end
 
     context "when TOTP is incorrect" do

@@ -6,7 +6,7 @@ module MailingList
       attribute :first_name
       attribute :last_name
       attribute :email
-      attribute :describe_yourself_option_id
+      attribute :describe_yourself_option_id, :integer
 
       validates :email, presence: true, email_format: true
       validates :first_name, presence: true
@@ -32,7 +32,7 @@ module MailingList
       end
 
       def describe_yourself_option_ids
-        describe_yourself_options.map(&:id)
+        describe_yourself_options.map { |option| option.id.to_i }
       end
 
     private

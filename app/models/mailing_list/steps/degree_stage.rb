@@ -1,7 +1,7 @@
 module MailingList
   module Steps
     class DegreeStage < ::Wizard::Step
-      attribute :degree_status_id
+      attribute :degree_status_id, :integer
       validates :degree_status_id,
                 presence: true,
                 inclusion: { in: :degree_status_option_ids, allow_nil: true }
@@ -15,7 +15,7 @@ module MailingList
       end
 
       def degree_status_option_ids
-        degree_status_options.map(&:id)
+        degree_status_options.map { |option| option.id.to_i }
       end
 
     private

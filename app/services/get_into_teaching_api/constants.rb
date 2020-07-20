@@ -2,28 +2,28 @@ module GetIntoTeachingApi
   module Constants
     DESCRIBE_YOURSELF_OPTIONS =
       {
-        "Student" => "222750000",
-        "Exploring my career options" => "222750001",
-        "Looking to change career" => "222750002",
-        "Not studying and no plans to" => "222750003",
+        "Student" => 222_750_000,
+        "Exploring my career options" => 222_750_001,
+        "Looking to change career" => 222_750_002,
+        "Not studying and no plans to" => 222_750_003,
       }.freeze
 
     DEGREE_STATUS_OPTIONS =
       {
-        "Graduate or postgraduate" => "222750000",
-        "Final year" => "222750001",
-        "Second year" => "222750002",
-        "First year" => "222750003",
-        "I don't have a degree and am not studying for one" => "222750004",
-        "Other" => "222750005",
+        "Graduate or postgraduate" => 222_750_000,
+        "Final year" => 222_750_001,
+        "Second year" => 222_750_002,
+        "First year" => 222_750_003,
+        "I don't have a degree and am not studying for one" => 222_750_004,
+        "Other" => 222_750_005,
       }.freeze
 
     CONSIDERATION_JOURNEY_STAGES =
       {
-        "It’s just an idea" => "222750000",
-        "I’m not sure and finding out more" => "222750001",
-        "I’m fairly sure and exploring my options" => "222750002",
-        "I’m very sure and think I’ll apply" => "222750003",
+        "It’s just an idea" => 222_750_000,
+        "I’m not sure and finding out more" => 222_750_001,
+        "I’m fairly sure and exploring my options" => 222_750_002,
+        "I’m very sure and think I’ll apply" => 222_750_003,
       }.freeze
 
     # This is not a complete list.

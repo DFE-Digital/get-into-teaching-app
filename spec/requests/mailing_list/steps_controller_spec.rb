@@ -3,6 +3,8 @@ require "rails_helper"
 describe MailingList::StepsController do
   include_context "stub types api"
   include_context "stub candidate create access token api"
+  include_context "stub latest privacy policy api"
+  include_context "stub mailing list add member api"
 
   let(:model) { MailingList::Steps::Name }
   let(:step_path) { mailing_list_step_path model.key }
@@ -62,5 +64,13 @@ describe MailingList::StepsController do
       response
     end
     it { is_expected.to have_http_status :success }
+  end
+
+  describe "#resend_verification" do
+    subject do
+      get resend_verification_mailing_list_steps_path(redirect_path: "redirect/path")
+      response
+    end
+    it { is_expected.to redirect_to("redirect/path") }
   end
 end

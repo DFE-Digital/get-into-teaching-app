@@ -50,7 +50,7 @@ module Wizard
 
       def prepopulate_store
         hash = @totp_response.to_hash.transform_keys { |k| k.to_s.underscore }
-        @store.persist(hash.except("email", "first_name", "last_name"))
+        @store.persist(hash.except(*@store.keys))
       end
     end
   end

@@ -1,7 +1,7 @@
 module MailingList
   module Steps
     class TeacherTraining < ::Wizard::Step
-      attribute :consideration_journey_stage_id
+      attribute :consideration_journey_stage_id, :integer
       validates :consideration_journey_stage_id,
                 presence: true,
                 inclusion: { in: :consideration_journey_stage_ids, allow_nil: true }
@@ -11,7 +11,7 @@ module MailingList
       end
 
       def consideration_journey_stage_ids
-        consideration_journey_stages.map(&:id)
+        consideration_journey_stages.map { |option| option.id.to_i }
       end
 
     private
