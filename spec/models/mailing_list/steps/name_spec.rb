@@ -40,7 +40,7 @@ describe MailingList::Steps::Name do
     it { is_expected.to allow_value(options.last).for :describe_yourself_option_id }
     it { is_expected.not_to allow_value(nil).for :describe_yourself_option_id }
     it { is_expected.not_to allow_value("").for :describe_yourself_option_id }
-    it { is_expected.not_to allow_value("random").for :describe_yourself_option_id }
+    it { is_expected.not_to allow_value(12_345).for :describe_yourself_option_id }
   end
 
   context "when the step is valid" do

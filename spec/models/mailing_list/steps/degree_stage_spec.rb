@@ -23,7 +23,7 @@ describe MailingList::Steps::DegreeStage do
     it { is_expected.to allow_value(options.last).for :degree_status_id }
     it { is_expected.not_to allow_value(nil).for :degree_status_id }
     it { is_expected.not_to allow_value("").for :degree_status_id }
-    it { is_expected.not_to allow_value("random").for :degree_status_id }
+    it { is_expected.not_to allow_value(12_345).for :degree_status_id }
   end
 
   context "skipped?" do

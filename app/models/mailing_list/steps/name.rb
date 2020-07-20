@@ -13,7 +13,7 @@ module MailingList
       validates :last_name, presence: true
       validates :describe_yourself_option_id,
                 presence: true,
-                inclusion: { in: :describe_yourself_option_ids, allow_nil: true }
+                inclusion: { in: :describe_yourself_option_ids }
 
       before_validation if: :email do
         self.email = email.to_s.strip
@@ -28,7 +28,7 @@ module MailingList
       end
 
       def describe_yourself_options
-        @describe_yourself_options ||= query_decribe_yourself_options
+        @describe_yourself_options ||= [OpenStruct.new(id: nil, value: "Please select")] + query_decribe_yourself_options
       end
 
       def describe_yourself_option_ids

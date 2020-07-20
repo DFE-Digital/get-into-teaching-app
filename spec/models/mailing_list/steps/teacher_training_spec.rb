@@ -23,6 +23,6 @@ describe MailingList::Steps::TeacherTraining do
     it { is_expected.to allow_value(options.last).for :consideration_journey_stage_id }
     it { is_expected.not_to allow_value(nil).for :consideration_journey_stage_id }
     it { is_expected.not_to allow_value("").for :consideration_journey_stage_id }
-    it { is_expected.not_to allow_value("random").for :consideration_journey_stage_id }
+    it { is_expected.not_to allow_value(12_345).for :consideration_journey_stage_id }
   end
 end
