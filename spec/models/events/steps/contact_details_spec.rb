@@ -16,8 +16,13 @@ describe Events::Steps::ContactDetails do
   end
 
   context "data cleaning" do
-    let(:attributes) { { telephone: "  01234567890 " } }
-    before { subject.valid? }
-    it { is_expected.to have_attributes telephone: "01234567890" }
+    it "cleans the telephone" do
+      subject.telephone = "  01234567890 "
+      subject.valid?
+      expect(subject.telephone).to eq("01234567890")
+      subject.telephone = "  "
+      subject.valid?
+      expect(subject.telephone).to be_nil
+    end
   end
 end

@@ -11,11 +11,11 @@ module MailingList
       validates :accept_privacy_policy, acceptance: true, allow_nil: false
 
       before_validation if: :telephone do
-        self.telephone = telephone.to_s.strip
+        self.telephone = telephone.to_s.strip.presence
       end
 
       before_validation if: :callback_information do
-        self.callback_information = callback_information.to_s.strip
+        self.callback_information = callback_information.to_s.strip.presence
       end
 
       def save

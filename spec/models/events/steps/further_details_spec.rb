@@ -32,9 +32,14 @@ describe Events::Steps::FurtherDetails do
   end
 
   context "data cleaning" do
-    let(:attributes) { { address_postcode: "  TE57 1NG " } }
-    before { subject.valid? }
-    it { is_expected.to have_attributes address_postcode: "TE57 1NG" }
+    it "cleans the postcode" do
+      subject.address_postcode = "  TE57 1NG "
+      subject.valid?
+      expect(subject.address_postcode).to eq("TE57 1NG")
+      subject.address_postcode = "  "
+      subject.valid?
+      expect(subject.address_postcode).to be_nil
+    end
   end
 
   describe "#save" do
