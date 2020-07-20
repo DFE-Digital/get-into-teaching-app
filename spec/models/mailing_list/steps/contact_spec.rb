@@ -39,6 +39,26 @@ describe MailingList::Steps::Contact do
     end
   end
 
+  context "data cleaning" do
+    it "cleans the telephone" do
+      subject.telephone = "  01234567890 "
+      subject.valid?
+      expect(subject.telephone).to eq("01234567890")
+      subject.telephone = "  "
+      subject.valid?
+      expect(subject.telephone).to be_nil
+    end
+
+    it "cleans the callback information" do
+      subject.callback_information = "  please call me back "
+      subject.valid?
+      expect(subject.callback_information).to eq("please call me back")
+      subject.callback_information = "  "
+      subject.valid?
+      expect(subject.callback_information).to be_nil
+    end
+  end
+
   context "accept_privacy_policy" do
     it { is_expected.to validate_acceptance_of :accept_privacy_policy }
   end
