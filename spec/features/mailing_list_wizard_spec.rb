@@ -163,7 +163,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Enter the verification code sent to test@user.com", with: "654321"
     click_on "Next Step"
 
-    expect(page).to have_text "is not correct"
+    expect(page).to have_text "Please enter the correct code"
 
     click_link "resend verification"
     expect(page).to have_text "We've sent you another email."
