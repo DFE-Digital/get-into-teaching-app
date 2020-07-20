@@ -45,7 +45,7 @@ module Wizard
         request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(@store.to_camelized_hash)
         @totp_response ||= perform_existing_candidate_request(request)
       rescue GetIntoTeachingApiClient::ApiError
-        errors.add(:timed_one_time_password, "is not correct")
+        errors.add(:timed_one_time_password, "Please enter the correct code")
       end
 
       def prepopulate_store
