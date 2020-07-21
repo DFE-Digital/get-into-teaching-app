@@ -18,8 +18,10 @@
 
               <%= render current_step.key, current_step: current_step, f: f %>
 
-              <%= f.button class: "call-to-action-button" do %>
-                <%= wizard.last_step? ? "Complete sign up" : "Next Step" %>
+              <% if wizard.can_proceed? %>
+                <%= f.button class: "call-to-action-button" do %>
+                  <%= wizard.last_step? ? "Complete sign up" : "Next Step" %>
+                <% end %>
               <% end %>
             <% end %>
         </div>

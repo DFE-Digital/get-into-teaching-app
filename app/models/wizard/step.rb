@@ -27,6 +27,10 @@ module Wizard
       persist_to_store
     end
 
+    def can_proceed?
+      true
+    end
+
     def persisted?
       !id.nil?
     end

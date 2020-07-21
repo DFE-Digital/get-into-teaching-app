@@ -8,6 +8,7 @@ describe MailingList::Wizard do
       is_expected.to eql [
         MailingList::Steps::Name,
         MailingList::Steps::Authenticate,
+        MailingList::Steps::AlreadySubscribed,
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,
         MailingList::Steps::Postcode,

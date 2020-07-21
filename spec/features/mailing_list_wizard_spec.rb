@@ -91,7 +91,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step(degree_status: "Other")
     click_on "Next Step"
 
-    expect(page).to have_text "Verify your account"
+    expect(page).to have_text "Verify your email address"
     fill_in "Enter the verification code sent to test@user.com", with: "123456"
     click_on "Next Step"
 
@@ -147,7 +147,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step(degree_status: "Final year")
     click_on "Next Step"
 
-    expect(page).to have_text "Verify your account"
+    expect(page).to have_text "Verify your email address"
     fill_in "Enter the verification code sent to test@user.com", with: "654321"
     click_on "Next Step"
 
@@ -160,6 +160,30 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "How close are you to applying"
+  end
+
+  scenario "Full journey as an existing candidate that has already subscribed" do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token)
+
+    response = GetIntoTeachingApiClient::MailingListAddMember.new(
+      alreadySubscribedToMailingList: true,
+    )
+    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+      receive(:get_pre_filled_mailing_list_add_member).with("123456", anything).and_return(response)
+
+    visit mailing_list_steps_path
+
+    expect(page).to have_text "Sign up for personalised updates"
+    fill_in_name_step(degree_status: "Final year")
+    click_on "Next Step"
+
+    expect(page).to have_text "Verify your email address"
+    fill_in "Enter the verification code sent to test@user.com", with: "123456"
+    click_on "Next Step"
+
+    expect(page).to have_text "You’ve already signed up"
+    expect(page).to_not have_button("Next Step")
   end
 
   def fill_in_name_step(

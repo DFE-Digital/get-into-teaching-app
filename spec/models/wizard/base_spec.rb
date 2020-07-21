@@ -60,6 +60,11 @@ describe Wizard::Base do
     end
   end
 
+  describe "#can_proceed?" do
+    subject { wizardclass.new(wizardstore, "name") }
+    it { is_expected.to be_can_proceed }
+  end
+
   describe "#current_key" do
     subject { wizardclass.new(wizardstore, "name").current_key }
     it { is_expected.to eql "name" }

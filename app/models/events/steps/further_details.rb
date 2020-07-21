@@ -27,13 +27,13 @@ module Events
         self.mailing_list = true
       end
 
-      def save        
+      def save
         if valid?
           # TODO: ensure this is the policy we display to the user
           accepted_policy = GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
           @store["accepted_policy_id"] = accepted_policy.id
-          @store["subscribe_to_events"] = self.future_events == true
-          @store["subscribe_to_mailing_list"] = self.mailing_list == true
+          @store["subscribe_to_events"] = future_events == true
+          @store["subscribe_to_mailing_list"] = mailing_list == true
         end
 
         super
