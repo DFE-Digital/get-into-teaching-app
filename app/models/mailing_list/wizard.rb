@@ -3,7 +3,6 @@ module MailingList
     self.steps = [
       Steps::Name,
       Steps::Authenticate,
-      Steps::DegreeStage,
       Steps::TeacherTraining,
       Steps::Subject,
       Steps::Postcode,

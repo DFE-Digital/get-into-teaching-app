@@ -1,13 +1,5 @@
 module GetIntoTeachingApi
   module Constants
-    DESCRIBE_YOURSELF_OPTIONS =
-      {
-        "Student" => 222_750_000,
-        "Exploring my career options" => 222_750_001,
-        "Looking to change career" => 222_750_002,
-        "Not studying and no plans to" => 222_750_003,
-      }.freeze
-
     DEGREE_STATUS_OPTIONS =
       {
         "Graduate or postgraduate" => 222_750_000,
