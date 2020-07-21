@@ -80,7 +80,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
       degreeStatusId: GetIntoTeachingApi::Constants::DEGREE_STATUS_OPTIONS["Final year"],
       addressPostcode: "TE57 1NG",
       telephone: "1234567890",
-      callbackInformation: "Please call me back!",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:get_pre_filled_mailing_list_add_member).with("123456", anything).and_return(response)
@@ -115,10 +114,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you need more information"
     expect(page).to have_field("What's your phone number (optional)", with: response.telephone)
-    expect(page).to have_field(
-      "What would you like more information about when we call you?",
-      with: response.callback_information,
-    )
     click_on "Complete sign up"
 
     expect(page).to have_text "If you need more information"
@@ -199,10 +194,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
   end
 
   def fill_in_contact_step(
-    telephone: "01234567890",
-    callback_information: "Lorem ipsum"
+    telephone: "01234567890"
   )
     fill_in "What's your phone number", with: telephone
-    fill_in "What would you like more information about", with: callback_information
   end
 end

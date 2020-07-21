@@ -101,9 +101,6 @@ en:
           attributes:
             telephone:
               invalid: Enter a valid phone number
-              callback_information:
-              blank: Enter the additional information you would like
-              use_fewer_words: Use 200 words or less
             accept_privacy_policy:
               blank: Accept the privacy policy to continue
               accepted: Accept the privacy policy to continue
@@ -133,7 +130,6 @@ en:
         address_postcode: What's your postcode?
       mailing_list_steps_contact:
         telephone: What's your phone number (optional)
-        callback_information: What would you like more information about when we call you?
 
     hint:
       events_steps_contact_details:
