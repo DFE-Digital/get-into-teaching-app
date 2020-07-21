@@ -23,7 +23,7 @@ module MailingList
           # TODO: ensure this is the policy we display to the user
           accepted_policy = GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
           @store["accepted_policy_id"] = accepted_policy.id
-          @store["subscribe_to_mailing_list"] = true
+          @store["subscribe_to_events"] = true
         end
 
         super

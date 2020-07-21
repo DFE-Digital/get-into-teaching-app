@@ -3,6 +3,6 @@ FactoryBot.define do
     first_name { "Test" }
     sequence(:last_name) { |n| "User #{n}" }
     sequence(:email) { |n| "testuser#{n}@testing.education.gov.uk" }
-    describe_yourself_option_id { GetIntoTeachingApi::Constants::DESCRIBE_YOURSELF_OPTIONS["Student"] }
+    degree_status_id { GetIntoTeachingApi::Constants::DEGREE_STATUS_OPTIONS["First year"] }
   end
 end

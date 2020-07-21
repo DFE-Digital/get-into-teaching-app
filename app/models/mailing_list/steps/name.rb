@@ -6,14 +6,14 @@ module MailingList
       attribute :first_name
       attribute :last_name
       attribute :email
-      attribute :describe_yourself_option_id, :integer
+      attribute :degree_status_id, :integer
 
       validates :email, presence: true, email_format: true
       validates :first_name, presence: true
       validates :last_name, presence: true
-      validates :describe_yourself_option_id,
+      validates :degree_status_id,
                 presence: true,
-                inclusion: { in: :describe_yourself_option_ids }
+                inclusion: { in: :degree_status_option_ids }
 
       before_validation if: :email do
         self.email = email.to_s.strip
@@ -27,18 +27,18 @@ module MailingList
         self.last_name = last_name.to_s.strip
       end
 
-      def describe_yourself_options
-        @describe_yourself_options ||= [OpenStruct.new(id: nil, value: "Please select")] + query_decribe_yourself_options
+      def degree_status_options
+        @degree_status_options ||= [OpenStruct.new(id: nil, value: "Please select")] + query_degree_status
       end
 
-      def describe_yourself_option_ids
-        describe_yourself_options.map { |option| option.id.to_i }
+      def degree_status_option_ids
+        degree_status_options.map { |option| option.id.to_i }
       end
 
     private
 
-      def query_decribe_yourself_options
-        GetIntoTeachingApiClient::TypesApi.new.get_candidate_describe_yourself_options
+      def query_degree_status
+        GetIntoTeachingApiClient::TypesApi.new.get_qualification_degree_status
       end
     end
   end

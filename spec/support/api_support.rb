@@ -9,12 +9,6 @@ shared_context "stub types api" do
         headers: { "Content-type" => "application/json" },
         body: stub_types.to_json
 
-    stub_request(:get, "#{git_api_endpoint}/api/types/candidate/describe_yourself")
-      .to_return \
-        status: 200,
-        headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApi::Constants::DESCRIBE_YOURSELF_OPTIONS.map { |k, v| { id: v, value: k } }.to_json
-
     stub_request(:get, "#{git_api_endpoint}/api/types/qualification/degree_status")
       .to_return \
         status: 200,
