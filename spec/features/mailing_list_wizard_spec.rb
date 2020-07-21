@@ -186,6 +186,42 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to_not have_button("Next Step")
   end
 
+  scenario "Start as an existing candidate then switch to new candidate" do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token)
+
+    response = GetIntoTeachingApiClient::MailingListAddMember.new(
+      alreadySubscribedToMailingList: true,
+    )
+    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+      receive(:get_pre_filled_mailing_list_add_member).with("123456", anything).and_return(response)
+
+    visit mailing_list_steps_path
+
+    expect(page).to have_text "Sign up for personalised updates"
+    fill_in_name_step(degree_status: "Final year")
+    click_on "Next Step"
+
+    expect(page).to have_text "Verify your email address"
+    fill_in "Enter the verification code sent to test@user.com", with: "123456"
+    click_on "Next Step"
+
+    expect(page).to have_text "You’ve already signed up"
+    click_link("Back")
+
+    expect(page).to have_text "Verify your email address"
+    click_link("Back")
+
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+
+    expect(page).to have_text "Sign up for personalised updates"
+    fill_in_name_step(email: "test2@user.com")
+    click_on "Next Step"
+
+    expect(page).to have_text "We need some more details"
+  end
+
   def fill_in_name_step(
     first_name: "Test",
     last_name: "User",
