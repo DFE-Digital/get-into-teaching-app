@@ -75,7 +75,7 @@ describe MailingList::Steps::Contact do
         expect(subject).to_not be_valid
         subject.save
         expect(wizardstore["accepted_policy_id"]).to be_nil
-        expect(wizardstore["subscribe_to_mailing_list"]).to be_nil
+        expect(wizardstore["subscribe_to_events"]).to be_nil
       end
     end
 
@@ -93,7 +93,7 @@ describe MailingList::Steps::Contact do
         expect(subject).to be_valid
         subject.save
         expect(wizardstore["accepted_policy_id"]).to be(response.id)
-        expect(wizardstore["subscribe_to_mailing_list"]).to be_truthy
+        expect(wizardstore["subscribe_to_events"]).to be_truthy
       end
     end
   end
