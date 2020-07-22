@@ -11,6 +11,7 @@ describe Events::Steps::FurtherDetails do
     it { is_expected.to respond_to :future_events }
     it { is_expected.to respond_to :mailing_list }
     it { is_expected.to respond_to :address_postcode }
+    it { is_expected.to respond_to :accepted_policy_id }
   end
 
   context "validations" do
@@ -70,7 +71,6 @@ describe Events::Steps::FurtherDetails do
       it "does not update the store" do
         expect(subject).to_not be_valid
         subject.save
-        expect(wizardstore["accepted_policy_id"]).to be_nil
         expect(wizardstore["subscribe_to_events"]).to be_nil
       end
     end
@@ -91,7 +91,6 @@ describe Events::Steps::FurtherDetails do
         subject.mailing_list = true
         expect(subject).to be_valid
         subject.save
-        expect(wizardstore["accepted_policy_id"]).to be(response.id)
         expect(wizardstore["subscribe_to_events"]).to be_truthy
         expect(wizardstore["subscribe_to_mailing_list"]).to be_truthy
       end
@@ -101,7 +100,6 @@ describe Events::Steps::FurtherDetails do
         subject.mailing_list = false
         expect(subject).to be_valid
         subject.save
-        expect(wizardstore["accepted_policy_id"]).to be(response.id)
         expect(wizardstore["subscribe_to_events"]).to be_falsy
         expect(wizardstore["subscribe_to_mailing_list"]).to be_falsy
       end

@@ -3,6 +3,7 @@ module MailingList
     class Contact < ::Wizard::Step
       attribute :telephone
       attribute :accept_privacy_policy, :boolean
+      attribute :accepted_policy_id
 
       validates :telephone, telephone: true
       validates :accept_privacy_policy, acceptance: true, allow_nil: false
@@ -13,13 +14,14 @@ module MailingList
 
       def save
         if valid?
-          # TODO: ensure this is the policy we display to the user
-          accepted_policy = GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
-          @store["accepted_policy_id"] = accepted_policy.id
           @store["subscribe_to_events"] = true
         end
 
         super
+      end
+
+      def latest_privacy_policy
+        @latest_privacy_policy ||= GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
       end
     end
   end
