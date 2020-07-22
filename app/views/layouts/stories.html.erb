@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+    <head>
+        <meta charset="utf-8">
+        <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
+        <%= csrf_meta_tags %>
+        <%= csp_meta_tag %>
+        <%= canonical_tag %>
+        <%= tag :meta, name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' %>
+        <%= tag :link, rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' %>
+        <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
+        <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+    </head>
+    <body data-controller="video" class="govuk-template__body govuk-body" id="body">
+        <div class="container">
+            <%= render "layouts/header" %>
+            <section class="content container-1000" role="main"> 
+                <%= yield %>
+            </section>
+            <%= render "layouts/footer" %>     
+        </div>
+
+        <div class="video-overlay" data-target="video.player" data-action="click->video#close">
+            <div class="video-overlay__background">   
+            </div>
+            <div class='video-overlay__video-container'>
+                <div class="video-overlay__video-container__wrapper">
+                    <iframe data-target="video.iframe"
+                        width="800" 
+                        height="450"
+                        src="https://www.youtube.com/embed/aGd_Rrs-qNY" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-overlay__video-container__dismiss">
+                    <div class="icon-video-close" data-action="click->video#close"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
