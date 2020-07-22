@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get "/events_school", to: "pages#events_school", via: :all
   get "/event", to: "pages#event", via: :all, as: nil
   get "/event/register/:step_number", to: "pages#eventregistration", via: :all
+  get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
 
   resources "events", path: "/events", only: %i[index show search] do
     collection { get "search" }
