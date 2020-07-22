@@ -48,7 +48,7 @@
             text-decoration: none;
             margin-bottom: 10px;
             padding: 5px 20px 5px 50px;
-            &:hover, &:focus, &:active {
+            &:hover {
                 text-decoration: underline;
             }
             .link-block--jump & {

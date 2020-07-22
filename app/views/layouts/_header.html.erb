@@ -6,23 +6,25 @@
     </section>
 
     <div class="navbar">
-        <div class="navbar__desktop">
-            <div>
-                <ul>
-                    <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
-                    <li><a href="/funding-your-training/index">Funding your training</a></li>
-                    <li><a href="/">Home</a></li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><a href="/">Talk to us</a></li>
-                    <li><%= link_to "Find an event near you", events_path %></li>
-                    <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
-                    <li><a href="/life-as-a-teacher/index">Teaching as a career</a></li>
-                </ul>
+        <div class="logo"> 
+            <div class="logo__image">
+                <a href="/">
+                    <img src="<%= asset_pack_path 'media/images/getintoteachinglogo.svg'%>" alt="Get into teaching" />
+                    <div class="logo__image__tagline">Every Lesson shapes a life.</div>
+                </a>
             </div>
         </div>
+        <div class="navbar__desktop">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/funding-your-training/index">Funding your training</a></li>
+                <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
+                <li><a href="/life-as-a-teacher/index">Teaching as a career</a></li>
+                <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
+                <li><%= link_to "Find an event near you", events_path %></li>
+            </ul>
+        </div>
+        
         <div class="navbar__mobile" data-controller="navigation">
             <div class="navbar__mobile__buttons">
                 <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
@@ -42,16 +44,7 @@
                 </ul>
             </div>
         </div>
-        <div class="logo">
-            
-            <div class="logo__image">
-                <a href="/">
-                    <img src="<%= asset_pack_path 'media/images/getintoteachinglogo.svg'%>" alt="Get into teaching" />
-                    <div class="logo__image__tagline">Every Lesson shapes a life.</div>
-                </a>
-            </div>
-            
-        </div>
+
     </div>
 </nav>
 

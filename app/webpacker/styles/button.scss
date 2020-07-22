@@ -20,6 +20,7 @@
 .call-to-action-button {
     @include button;
     background-color: $green;
+    text-decoration: none;
     span:last-child {
         white-space: nowrap;
         &:after {
@@ -33,6 +34,9 @@
             transform: rotate(45deg);
             top: 1px;
         }
+    }
+    &:hover {
+        background-color: $green-dark;
     }
 }
 

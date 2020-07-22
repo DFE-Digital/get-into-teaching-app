@@ -1,4 +1,12 @@
 
+.event-link {
+    &:focus {
+        outline: none;
+        border: none;
+        background: transparent;
+        box-shadow: none;
+    }
+}
 .event-resultbox {
     box-sizing: border-box;
     padding: 20px;
@@ -9,8 +17,15 @@
     margin: 0;
     width: 100%;
     background-color: $white;
-    a:hover &, a:focus, a:active {
-       background-color: $grey;
+    a:hover &{
+        background-color: $grey;
+    }
+
+    a:focus & {
+        outline: 3px solid $yellow;
+        outline-offset: 0;
+        -webkit-box-shadow: inset 0 0 0 2px;
+        box-shadow: inset 0 0 0 2px;
     }
 
 
