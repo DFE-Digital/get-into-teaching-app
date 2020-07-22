@@ -44,5 +44,6 @@ Rails.application.routes.draw do
     end
   end
 
+  get "/life-as-a-teacher/my-story-into-teaching/*story", to: "stories#show"
   get "*page", to: "pages#show", as: :page
 end
