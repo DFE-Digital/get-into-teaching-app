@@ -2,7 +2,7 @@
     :header => "Find an event near you", 
     :image => "media/images/hero-events.png" 
 %>
-<section role="main">
+<section role="main" id="main-content">
     <div class="types-of-event content container-1000">
 
         <div class="content__left">
@@ -79,7 +79,7 @@
             <h3>Train to Teach events</h3>
             <p>Meet experienced teaching professionals who can answer questions about your application, ways to train, funding and more. Talk one-to-one with newly qualified teachers and find out what teaching is really like. </p>
             <div class="events-featured__items">
-                <a href="/event">
+                <a class="event-link" href="/event">
                 <%= render "components/eventbox", 
                         :title => "Train to teach Coventry Online event",
                         :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -91,7 +91,7 @@
                     %>
                 </a>
 
-                <a href="/event">
+                <a class="event-link" href="/event">
                     <%= render "components/eventbox", 
                         :title => "Train to teach Coventry Online event",
                         :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -103,7 +103,7 @@
                     %>
                 </a>
 
-                <a href="/event">
+                <a class="event-link" href="/event">
                     <%= render "components/eventbox", 
                         :title => "Train to teach Coventry Online event",
                         :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -115,15 +115,15 @@
                     %>
                 </a>
             </div>
-            <a href="/events_ttt">
-                <div class="call-to-action-button">See all train to teach events  <i class="fas fa-chevron-right"></i></div>
+            <a class="call-to-action-button" href="/events_ttt">
+                See all train to teach <span>events</span>
             </a>
         </div>
         <div class="events-featured">
             <h3>Online events</h3>
             <p>Online teaching events are interactive sessions that offer a convenient way to engage directly with a panel of specialist advisers across a range of topics. </p>
             <div class="events-featured__items">
-                <a href="/event">
+                <a class="event-link" href="/event">
                     <%= render "components/eventbox", 
                         :title => "Secondary School teaching",
                         :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -134,7 +134,7 @@
                     %>
                 </a>
 
-                <a href="/event">
+                <a class="event-link" href="/event">
                     <%= render "components/eventbox", 
                         :title => "Secondary School teaching",
                         :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -145,7 +145,7 @@
                     %>
                 </a>
 
-                <a href="/event">
+                <a class="event-link" href="/event">
                     <%= render "components/eventbox", 
                         :title => "Secondary School teaching",
                         :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -156,8 +156,8 @@
                     %>
                 </a>
             </div>
-            <a href="/events_online">
-                <div class="call-to-action-button">See all online events  <i class="fas fa-chevron-right"></i></div>
+            <a class="call-to-action-button" href="/events_online">
+                See all online <span>events</span>
             </a>
         </div>
         <div class="content__left">
@@ -167,7 +167,7 @@
             <h3>Schools and university events</h3>
             <p>Universities and schools often hold their own events to help you get into teaching. These can range from general open days to events about teaching certain subjects, school experience days and the application process.</p>
             <div class="events-featured__items">
-                <a href="/eventschool">
+                <a class="event-link" href="/eventschool">
                     <%= render "components/eventbox", 
                         :title => "Heart TSA - Zoom train to teach information event",
                         :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -178,7 +178,7 @@
                     %>
                 </a>
 
-                <a href="/eventschool">
+                <a class="event-link" href="/eventschool">
                     <%= render "components/eventbox", 
                         :title => "Heart TSA - Zoom train to teach information event",
                         :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -189,7 +189,7 @@
                     %>
                 </a>
 
-                <a href="/eventschool">
+                <a class="event-link" href="/eventschool">
                     <%= render "components/eventbox", 
                         :title => "Heart TSA - Zoom train to teach information event",
                         :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -200,8 +200,8 @@
                     %>
                 </a>
             </div>
-            <a href="/events_school">
-                <div class="call-to-action-button">See all schools and university events  <i class="fas fa-chevron-right"></i></div>
+            <a class="call-to-action-button" href="/events_school">
+                See all schools and university <span>events</span>
             </a>
         </div>
     </section>
@@ -212,7 +212,7 @@
         </div>
         <div class="content__right">
         </div>
-        <a href="/event">
+        <a class="event-link" href="/event">
             <%= render "components/eventbox", 
                 :title => "Secondary School teaching",
                 :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -223,7 +223,7 @@
             %>
         </a>
 
-        <a href="/event">
+        <a class="event-link" href="/event">
             <%= render "components/eventbox", 
                 :title => "Train to teach Coventry Online event",
                 :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -235,7 +235,7 @@
             %>
         </a>
 
-        <a href="/eventschool">
+        <a class="event-link" href="/eventschool">
             <%= render "components/eventbox", 
                 :title => "Heart TSA - Zoom train to teach information event",
                 :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -246,7 +246,7 @@
             %>
         </a>
 
-        <a href="/event">
+        <a class="event-link" href="/event">
             <%= render "components/eventbox", 
                 :title => "Train to teach Bournmouth Online event",
                 :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -258,7 +258,7 @@
             %>
         </a>
 
-        <a href="/event">
+        <a class="event-link" href="/event">
             <%= render "components/eventbox", 
                 :title => "Primary School teaching",
                 :datetime => "11 May 2020 at 17:00 - 18:30",
@@ -269,7 +269,7 @@
             %>
         </a>
 
-        <a href="/event">
+        <a class="event-link" href="/event">
             <%= render "components/eventbox", 
                 :title => "Train to teach Bristol Online event",
                 :datetime => "11 May 2020 at 17:00 - 18:30",

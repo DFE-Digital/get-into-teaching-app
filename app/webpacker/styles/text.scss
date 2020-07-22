@@ -35,6 +35,13 @@ a {
     @include font;
     color: $black;
     line-height: 1.5;
+    &:focus {
+        outline: 3px solid transparent;
+        color: $black;
+        background-color: $yellow;
+        box-shadow: 0 -2px $yellow, 0 4px $black;
+        text-decoration: none;
+    }
 }
 
 .strapline-image {

@@ -28,11 +28,17 @@ footer {
                 margin-left: 5px;
                 margin-right: 5px;
                 text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+                &:focus {
+                    color: $black;
+                    text-decoration: none;
+                }
             }
 
-            a:hover {
-                text-decoration: none;
-            }
+
         }
     }
 
@@ -72,10 +78,13 @@ footer {
                 margin-left: 5px;
                 margin-right: 5px;
                 text-decoration: underline;
-            }
-
-            a:hover {
-                text-decoration: none;
+                &:hover {
+                    text-decoration: none;
+                }
+                &:focus {
+                    color: $black;
+                    text-decoration: none;
+                }
             }
         }
     }
