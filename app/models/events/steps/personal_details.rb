@@ -8,8 +8,8 @@ module Events
       attribute :last_name
 
       validates :email, presence: true, email_format: true
-      validates :first_name, presence: true
-      validates :last_name, presence: true
+      validates :first_name, presence: true, length: { maximum: 256 }
+      validates :last_name, presence: true, length: { maximum: 256 }
 
       before_validation if: :email do
         self.email = email.to_s.strip

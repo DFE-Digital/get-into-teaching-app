@@ -9,8 +9,8 @@ module MailingList
       attribute :degree_status_id, :integer
 
       validates :email, presence: true, email_format: true
-      validates :first_name, presence: true
-      validates :last_name, presence: true
+      validates :first_name, presence: true, length: { maximum: 256 }
+      validates :last_name, presence: true, length: { maximum: 256 }
       validates :degree_status_id,
                 presence: true,
                 inclusion: { in: :degree_status_option_ids }

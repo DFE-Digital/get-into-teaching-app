@@ -18,6 +18,14 @@ describe EmailFormatValidator do
         is_expected.to include email: "is invalid"
       end
     end
+
+    context "when over 100 characters" do
+      let(:instance) { TestModel.new(email: "#{'a' * 100}@test.com") }
+
+      it "is not be valid" do
+        is_expected.to include email: "is invalid"
+      end
+    end
   end
 
   context "valid addresses" do
