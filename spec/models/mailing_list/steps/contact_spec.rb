@@ -5,7 +5,6 @@ describe MailingList::Steps::Contact do
   it_behaves_like "a wizard step"
 
   it { is_expected.to respond_to :telephone }
-  it { is_expected.to respond_to :callback_information }
   it { is_expected.to respond_to :accept_privacy_policy }
 
   context "validations" do
@@ -21,24 +20,6 @@ describe MailingList::Steps::Contact do
     it { is_expected.not_to allow_value("1234").for :telephone }
   end
 
-  context "callback_information" do
-    it { is_expected.to allow_value(nil).for :callback_information }
-    it { is_expected.to allow_value("").for :callback_information }
-    it { is_expected.to allow_value("Lorem ipsum").for :callback_information }
-
-    context "with phone number present" do
-      let(:attributes) { { telephone: "0123456890" } }
-      it { is_expected.not_to allow_value(nil).for :callback_information }
-      it { is_expected.not_to allow_value("").for :callback_information }
-      it { is_expected.to allow_value("Lorem ipsum").for :callback_information }
-    end
-
-    context "with too many words" do
-      it { is_expected.to allow_value("word " * 200).for :callback_information }
-      it { is_expected.not_to allow_value("word " * 201).for :callback_information }
-    end
-  end
-
   context "data cleaning" do
     it "cleans the telephone" do
       subject.telephone = "  01234567890 "
@@ -47,15 +28,6 @@ describe MailingList::Steps::Contact do
       subject.telephone = "  "
       subject.valid?
       expect(subject.telephone).to be_nil
-    end
-
-    it "cleans the callback information" do
-      subject.callback_information = "  please call me back "
-      subject.valid?
-      expect(subject.callback_information).to eq("please call me back")
-      subject.callback_information = "  "
-      subject.valid?
-      expect(subject.callback_information).to be_nil
     end
   end
 
@@ -75,7 +47,7 @@ describe MailingList::Steps::Contact do
         expect(subject).to_not be_valid
         subject.save
         expect(wizardstore["accepted_policy_id"]).to be_nil
-        expect(wizardstore["subscribe_to_mailing_list"]).to be_nil
+        expect(wizardstore["subscribe_to_events"]).to be_nil
       end
     end
 
@@ -93,7 +65,7 @@ describe MailingList::Steps::Contact do
         expect(subject).to be_valid
         subject.save
         expect(wizardstore["accepted_policy_id"]).to be(response.id)
-        expect(wizardstore["subscribe_to_mailing_list"]).to be_truthy
+        expect(wizardstore["subscribe_to_events"]).to be_truthy
       end
     end
   end

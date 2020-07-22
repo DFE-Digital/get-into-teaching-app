@@ -3,6 +3,8 @@ module Wizard
     extend ActiveSupport::Concern
 
     def save
+      @store.purge! if previously_authenticated?
+
       if valid?
         begin
           request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(request_attributes)
@@ -18,6 +20,10 @@ module Wizard
     end
 
   private
+
+    def previously_authenticated?
+      @store["authenticate"]
+    end
 
     def request_attributes
       attributes.slice("email", "first_name", "last_name").transform_keys { |k| k.camelize(:lower).to_sym }

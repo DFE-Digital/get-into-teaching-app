@@ -28,6 +28,10 @@ describe Wizard::Step do
     it { is_expected.to have_attributes skipped?: false }
   end
 
+  describe "#can_proceed" do
+    it { expect(subject).to be_can_proceed }
+  end
+
   describe "#save" do
     let(:backingstore) { {} }
 

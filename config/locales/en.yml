@@ -65,6 +65,8 @@ en:
               blank: Accept the privacy policy to continue
             future_events:
               inclusion: Choose yes or no
+            mailing_list:
+              inclusion: Choose yes or no
             address_postcode:
               invalid: Enter a valid postcode, or leave blank
 
@@ -77,11 +79,6 @@ en:
             email:
               blank: Enter your full email address
               invalid: Enter a valid email address
-            describe_yourself_option_id:
-              blank: Select how you would describe yourself
-              inclusion: Select how you would describe yourself
-        mailing_list/steps/degree_stage:
-          attributes:
             degree_status_id:
               blank: Select your degree stage
               inclusion: Select your degree stage from the list
@@ -104,9 +101,6 @@ en:
           attributes:
             telephone:
               invalid: Enter a valid phone number
-              callback_information:
-              blank: Enter the additional information you would like
-              use_fewer_words: Use 200 words or less
             accept_privacy_policy:
               blank: Accept the privacy policy to continue
               accepted: Accept the privacy policy to continue
@@ -127,8 +121,6 @@ en:
         first_name: First name
         last_name: Surname
         email: Email address
-        describe_yourself_option_id: How would you describe yourself?
-      mailing_list_steps_degree_stage:
         degree_status_id: What stage are you at with your degree?
       mailing_list_steps_teacher_training:
         consideration_journey_stage_id: How close are you to applying for teacher training?
@@ -138,7 +130,6 @@ en:
         address_postcode: What's your postcode?
       mailing_list_steps_contact:
         telephone: What's your phone number (optional)
-        callback_information: What would you like more information about when we call you?
 
     hint:
       events_steps_contact_details:
@@ -160,7 +151,9 @@ en:
         privacy_policy: |-
           Are you over 16 and do you agree to our privacy policy?
         future_events: |-
-          Sign up and receive information about future events (optional)
+          Would you like to receive information about future events in your area?
+        mailing_list: |-
+          Would you like to receive personalised information to help you get into teaching?
       mailing_list_steps_contact:
         accept_privacy_policy: |-
           Are you over 16 and do you agree to our privacy policy?
