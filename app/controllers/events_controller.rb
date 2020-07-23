@@ -1,6 +1,7 @@
 class EventsController < ApplicationController
   def index
-    @events = GetIntoTeachingApiClient::TeachingEventsApi.new.get_upcoming_teaching_events
+    api = GetIntoTeachingApiClient::TeachingEventsApi.new
+    @events = api.get_upcoming_teaching_events
     @event_search = Events::Search.new
     @show_categorised_events = true
   end

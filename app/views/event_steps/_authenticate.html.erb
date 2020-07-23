@@ -1,4 +1,4 @@
 <%= render "wizard/steps/authenticate", f: f, email: event_session["email"], resend_verification_path: resend_verification_event_steps_path(
-  redirect_path: event_step_path(@event.id, Events::Steps::Authenticate.key, 
+  redirect_path: event_step_path(@event.readable_id, Events::Steps::Authenticate.key, 
   verification_resent: true
 )) %>

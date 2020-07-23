@@ -6,11 +6,11 @@ describe EventStepsController do
   include_context "stub latest privacy policy api"
   include_context "stub event add attendee api"
 
-  let(:event_id) { SecureRandom.uuid }
+  let(:readable_event_id) { "123" }
   let(:model) { Events::Steps::PersonalDetails }
-  let(:step_path) { event_step_path event_id, model.key }
-  let(:authenticate_path) { event_step_path(event_id, "authenticate") }
-  let(:event) { build :event_api, id: event_id }
+  let(:step_path) { event_step_path readable_event_id, model.key }
+  let(:authenticate_path) { event_step_path(readable_event_id, "authenticate") }
+  let(:event) { build :event_api, readable_id: readable_event_id }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -54,7 +54,7 @@ describe EventStepsController do
         end
         let(:model) { Events::Steps::FurtherDetails }
         let(:details_params) { attributes_for(:events_further_details) }
-        it { is_expected.to redirect_to completed_event_steps_path(event_id) }
+        it { is_expected.to redirect_to completed_event_steps_path(readable_event_id) }
       end
 
       context "when invalid steps" do
@@ -62,7 +62,7 @@ describe EventStepsController do
         let(:details_params) { attributes_for(:events_further_details) }
         it do
           is_expected.to redirect_to \
-            event_step_path(event_id, "personal_details")
+            event_step_path(readable_event_id, "personal_details")
         end
       end
     end
@@ -70,7 +70,7 @@ describe EventStepsController do
 
   describe "#completed" do
     subject do
-      get completed_event_steps_path(event_id)
+      get completed_event_steps_path(readable_event_id)
       response
     end
     it { is_expected.to have_http_status :success }
@@ -78,7 +78,7 @@ describe EventStepsController do
 
   describe "#resend_verification" do
     subject do
-      get resend_verification_event_steps_path(event_id, redirect_path: "redirect/path")
+      get resend_verification_event_steps_path(readable_event_id, redirect_path: "redirect/path")
       response
     end
     it { is_expected.to redirect_to("redirect/path") }
