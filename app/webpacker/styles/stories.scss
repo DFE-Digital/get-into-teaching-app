@@ -101,6 +101,7 @@
             height: 345px;
             border: 2px solid $black;
             box-sizing: border-box;
+            margin-bottom: 40px;
 
             &__img
             {
@@ -115,6 +116,22 @@
                 box-sizing: border-box;
                 padding: 20px;
             }
+
+            &__play {
+                background-color: $pink-dark-90;
+                height: 72px;
+                width: 72px;
+                transform: rotate(-3deg);
+                position: relative;
+                top: -250px;
+                left: -1px;
+            
+                div {
+                    transform: rotate(3deg);
+                    margin-top: 22px;
+                    margin-left: 24px; 
+                }
+            }
             
         }
     }
@@ -126,10 +143,10 @@
 
         &__thumbs {
             flex-wrap: wrap;
+            margin-bottom: 20px;
 
             &__thumb {
                 width: 100%;
-                margin-bottom: 20px;
             }
 
         }
