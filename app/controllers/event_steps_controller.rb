@@ -21,6 +21,6 @@ private
   end
 
   def load_event
-    @event = GetIntoTeachingApi::Client.event(params[:event_id])
+    @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:event_id])
   end
 end

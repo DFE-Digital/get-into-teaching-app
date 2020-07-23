@@ -1,12 +1,9 @@
 require "rails_helper"
 
 describe EventsHelper, type: "helper" do
-  let(:startdate) { "2020-06-01T10:00:00" }
-  let(:enddate) { "2020-06-01T12:00:00" }
-  let(:eventdata) do
-    build(:event_api).merge("startAt" => startdate, "endAt" => enddate)
-  end
-  let(:event) { GetIntoTeachingApi::Types::Event.new eventdata }
+  let(:startdate) { DateTime.new(2020, 6, 1, 10) }
+  let(:enddate) { DateTime.new(2020, 6, 1, 12) }
+  let(:event) { build(:event_api, start_at: startdate, end_at: enddate) }
 
   describe "#format_event_date" do
     subject { format_event_date event }
@@ -16,7 +13,7 @@ describe EventsHelper, type: "helper" do
     end
 
     context "for multi day event" do
-      let(:enddate) { "2020-06-04T14:00:00" }
+      let(:enddate) { DateTime.new(2020, 6, 4, 14) }
       it { is_expected.to eql "1 June 2020 10:00 to 4 June 2020 14:00" }
     end
   end

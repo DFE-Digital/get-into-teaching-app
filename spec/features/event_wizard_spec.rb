@@ -5,15 +5,11 @@ RSpec.feature "Event wizard", type: :feature do
   let(:event_id) { "21849bfb-0cba-ea11-a812-000d3a44afcc" }
   let(:event_name) { "Event Name" }
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
-  let(:event) { GetIntoTeachingApiClient::TeachingEvent.new }
+  let(:event) { build(:event_api, id: event_id, name: event_name) }
 
   before do
-    stub_request(:get, "#{git_api_endpoint}/teaching_events/#{event_id}")
-      .to_return \
-        status: 200,
-        headers: { "Content-type" => "application/json" },
-        body: { id: event_id, name: event_name }.to_json
-
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      receive(:get_teaching_event).with(event_id).and_return(event)
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \

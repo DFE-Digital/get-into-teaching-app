@@ -1,18 +1,18 @@
 module EventsHelper
   def format_event_date(event)
-    return if event.startAt.blank?
+    return if event.start_at.blank?
 
-    if event.startAt.to_date == event.endAt.to_date
+    if event.start_at.to_date == event.end_at.to_date
       sprintf \
         "%{startdate} at %{starttime} - %{endtime}",
-        startdate: event.startAt.to_date.to_formatted_s(:long),
-        starttime: event.startAt.to_formatted_s(:time),
-        endtime: event.endAt.to_formatted_s(:time)
+        startdate: event.start_at.to_date.to_formatted_s(:long),
+        starttime: event.start_at.to_formatted_s(:time),
+        endtime: event.end_at.to_formatted_s(:time)
     else
       sprintf \
         "%{startdate} to %{enddate}",
-        startdate: event.startAt.to_formatted_s(:full),
-        enddate: event.endAt.to_formatted_s(:full)
+        startdate: event.start_at.to_formatted_s(:full),
+        enddate: event.end_at.to_formatted_s(:full)
     end
   end
 end

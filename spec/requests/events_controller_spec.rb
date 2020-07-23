@@ -15,8 +15,8 @@ describe EventsController do
     end
 
     before do
-      allow_any_instance_of(GetIntoTeachingApi::UpcomingEvents).to \
-        receive(:data).and_return events
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:get_upcoming_teaching_events).and_return events
     end
 
     subject do
@@ -65,8 +65,8 @@ describe EventsController do
 
     context "for known event" do
       before do
-        allow_any_instance_of(GetIntoTeachingApi::Event).to \
-          receive(:data).and_return event
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+          receive(:get_teaching_event).and_return event
       end
 
       it { is_expected.to have_http_status :success }
@@ -74,8 +74,8 @@ describe EventsController do
 
     context "for unknown event" do
       before do
-        allow_any_instance_of(GetIntoTeachingApi::Event).to \
-          receive(:data).and_raise Faraday::ResourceNotFound.new(nil)
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+          receive(:get_teaching_event).and_raise GetIntoTeachingApiClient::ApiError
       end
 
       it { is_expected.to have_http_status :not_found }
