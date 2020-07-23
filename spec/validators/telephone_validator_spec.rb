@@ -10,7 +10,7 @@ describe TelephoneValidator do
   before { instance.valid? }
   subject { instance.errors.to_h }
 
-  %w[1234 random].each do |number|
+  %w[1234 123456789123456789123 random].each do |number|
     context "checking '#{number}'" do
       let(:instance) { TelephoneTestModel.new(telephone: number) }
       it { is_expected.to include telephone: "is invalid" }
