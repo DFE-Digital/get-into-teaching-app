@@ -54,16 +54,16 @@ module Events
   private
 
     def query_events_api
-      GetIntoTeachingApi::Client.search_events \
+      GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
         type_id: type,
         radius: distance,
         postcode: postcode,
         start_after: start_of_month,
-        start_before: end_of_month
+        start_before: end_of_month,
+      )
     end
 
     def query_event_types
-      # GetIntoTeachingApi::Client.event_types
       GetIntoTeachingApiClient::TypesApi.new.get_teaching_event_types
     end
 

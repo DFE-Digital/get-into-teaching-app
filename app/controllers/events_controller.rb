@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   def index
-    @events = GetIntoTeachingApi::Client.upcoming_events
+    @events = GetIntoTeachingApiClient::TeachingEventsApi.new.get_upcoming_teaching_events
     @event_search = Events::Search.new
     @show_categorised_events = true
   end
@@ -13,8 +13,8 @@ class EventsController < ApplicationController
   end
 
   def show
-    @event = GetIntoTeachingApi::Client.event(params[:id])
-  rescue Faraday::ResourceNotFound
+    @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+  rescue GetIntoTeachingApiClient::ApiError
     render template: "errors/not_found", status: :not_found
   end
 

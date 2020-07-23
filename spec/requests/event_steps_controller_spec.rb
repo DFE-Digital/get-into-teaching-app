@@ -13,8 +13,8 @@ describe EventStepsController do
   let(:event) { build :event_api, id: event_id }
 
   before do
-    allow_any_instance_of(GetIntoTeachingApi::Event).to \
-      receive(:data).and_return event
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      receive(:get_teaching_event).and_return event
   end
 
   describe "#show" do

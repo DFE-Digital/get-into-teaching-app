@@ -68,18 +68,32 @@ describe Events::Search do
 
   describe "#query_events" do
     subject { build :events_search }
-    before { allow(subject).to receive(:query_events_api).and_return [] }
     before { allow(subject).to receive(:valid?).and_return is_valid }
-    before { subject.query_events }
 
     context "when valid" do
       let(:is_valid) { true }
-      it { is_expected.to have_received(:query_events_api) }
+
+      it "calls the API" do
+        expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+          receive(:search_teaching_events).with(
+            type_id: subject.type,
+            radius: subject.distance,
+            postcode: subject.postcode,
+            start_after: Date.new(2020, 7, 1),
+            start_before: Date.new(2020, 7, 31),
+          )
+        subject.query_events
+      end
     end
 
     context "when invalid" do
       let(:is_valid) { false }
-      it { is_expected.not_to have_received(:query_events_api) }
+
+      it "does not call the API" do
+        expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).not_to \
+          receive(:search_teaching_events)
+        subject.query_events
+      end
     end
   end
 end
