@@ -4,13 +4,13 @@ describe EventsController do
   include_context "stub types api"
 
   describe "#index" do
-    let(:first_id) { SecureRandom.uuid }
-    let(:second_id) { SecureRandom.uuid }
+    let(:first_readable_id) { "123" }
+    let(:second_readable_id) { "456" }
 
     let(:events) do
       [
-        build(:event_api, id: first_id, name: "First"),
-        build(:event_api, id: second_id, name: "Second"),
+        build(:event_api, readable_id: first_readable_id, name: "First"),
+        build(:event_api, readable_id: second_readable_id, name: "Second"),
       ]
     end
 
@@ -52,14 +52,14 @@ describe EventsController do
   end
 
   describe "#show" do
-    let(:event_id) { SecureRandom.uuid }
+    let(:event_readable_id) { "123" }
 
     let(:event) do
-      build(:event_api, id: event_id)
+      build(:event_api, readable_id: event_readable_id)
     end
 
     subject do
-      get(event_path(event_id))
+      get(event_path(id: event_readable_id))
       response
     end
 

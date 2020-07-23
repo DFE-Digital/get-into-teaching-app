@@ -1,4 +1,4 @@
-<%= link_to event_path(event.id), class: "event-link" do %>
+<%= link_to event_path(id: event.readable_id), class: "event-link" do %>
     <%= render "components/eventbox",
         :title => event.name,
         :datetime => format_event_date(event),

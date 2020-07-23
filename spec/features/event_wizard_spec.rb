@@ -2,14 +2,14 @@ require "rails_helper"
 
 RSpec.feature "Event wizard", type: :feature do
   let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
-  let(:event_id) { "21849bfb-0cba-ea11-a812-000d3a44afcc" }
+  let(:event_readable_id) { "123" }
   let(:event_name) { "Event Name" }
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
-  let(:event) { build(:event_api, id: event_id, name: event_name) }
+  let(:event) { build(:event_api, readable_id: event_readable_id, name: event_name) }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:get_teaching_event).with(event_id).and_return(event)
+      receive(:get_teaching_event).with(event_readable_id).and_return(event)
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -20,7 +20,7 @@ RSpec.feature "Event wizard", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
-    visit event_steps_path(event_id: event_id)
+    visit event_steps_path(event_id: event_readable_id)
 
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
@@ -50,14 +50,14 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-      eventId: event_id,
+      eventId: "abc-123",
       addressPostcode: "TE57 1NG",
       telephone: "1234567890",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_pre_filled_teaching_event_add_attendee).with("123456", anything).and_return(response)
 
-    visit event_steps_path(event_id: event_id)
+    visit event_steps_path(event_id: event_readable_id)
 
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
@@ -95,7 +95,7 @@ RSpec.feature "Event wizard", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_pre_filled_teaching_event_add_attendee).with("123456", anything).and_return(response)
 
-    visit event_steps_path(event_id: event_id)
+    visit event_steps_path(event_id: event_readable_id)
 
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
@@ -122,14 +122,14 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-      eventId: event_id,
+      eventId: "abc-123",
       alreadySubscribedToMailingList: true,
       alreadySubscribedToEvents: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_pre_filled_teaching_event_add_attendee).with("123456", anything).and_return(response)
 
-    visit event_steps_path(event_id: event_id)
+    visit event_steps_path(event_id: event_readable_id)
 
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
