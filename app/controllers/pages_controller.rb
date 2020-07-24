@@ -31,6 +31,18 @@ class PagesController < ApplicationController
     render template: "pages/mailinglist/registration/step#{params[:step_number]}"
   end
 
+  def privacy_policy
+    policy_id = params[:id]
+
+    @privacy_policy = if policy_id
+                        GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_privacy_policy(policy_id)
+                      else
+                        GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
+                      end
+
+    render template: "pages/privacy_policy"
+  end
+
   def show
     render template: "content/#{params[:page]}", layout: "layouts/content"
   rescue ActionView::MissingTemplate

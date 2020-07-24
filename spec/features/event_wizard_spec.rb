@@ -30,7 +30,6 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Phone number (optional)", with: "01234567890"
     click_on "Next Step"
 
-    expect(page).to have_text "agree to our privacy policy?"
     fill_in "Postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 

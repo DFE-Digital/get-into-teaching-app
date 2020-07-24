@@ -148,12 +148,14 @@ en:
 
     legend:
       events_steps_further_details:
-        privacy_policy: |-
-          Are you over 16 and do you agree to our privacy policy?
+        privacy_policy:
+          text: Are you over 16 and do you agree to our %{link}?
+          link: privacy policy
         future_events: |-
           Would you like to receive information about future events in your area?
         mailing_list: |-
           Would you like to receive personalised information to help you get into teaching?
       mailing_list_steps_contact:
-        accept_privacy_policy: |-
-          Are you over 16 and do you agree to our privacy policy?
+        accept_privacy_policy:
+          text: Are you over 16 and do you agree to our %{link}?
+          link: privacy policy

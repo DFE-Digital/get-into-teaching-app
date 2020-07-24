@@ -8,6 +8,7 @@ module Events
       attribute :future_events, :boolean
       attribute :mailing_list, :boolean
       attribute :address_postcode
+      attribute :accepted_policy_id
 
       validates :event_id, presence: true
       validates :privacy_policy, presence: true, acceptance: true
@@ -29,14 +30,15 @@ module Events
 
       def save
         if valid?
-          # TODO: ensure this is the policy we display to the user
-          accepted_policy = GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
-          @store["accepted_policy_id"] = accepted_policy.id
           @store["subscribe_to_events"] = future_events == true
           @store["subscribe_to_mailing_list"] = mailing_list == true
         end
 
         super
+      end
+
+      def latest_privacy_policy
+        @latest_privacy_policy ||= GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
       end
 
       def subscribe_options

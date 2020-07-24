@@ -6,6 +6,7 @@ describe MailingList::Steps::Contact do
 
   it { is_expected.to respond_to :telephone }
   it { is_expected.to respond_to :accept_privacy_policy }
+  it { is_expected.to respond_to :accepted_policy_id }
 
   context "validations" do
     subject { instance.tap(&:valid?).errors.messages }
@@ -46,7 +47,6 @@ describe MailingList::Steps::Contact do
       it "does not update the store" do
         expect(subject).to_not be_valid
         subject.save
-        expect(wizardstore["accepted_policy_id"]).to be_nil
         expect(wizardstore["subscribe_to_events"]).to be_nil
       end
     end
@@ -64,7 +64,6 @@ describe MailingList::Steps::Contact do
       it "updates the store" do
         expect(subject).to be_valid
         subject.save
-        expect(wizardstore["accepted_policy_id"]).to be(response.id)
         expect(wizardstore["subscribe_to_events"]).to be_truthy
       end
     end
