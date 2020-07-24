@@ -1,3 +1,46 @@
+.stories-feature {
+
+    display: table;
+    width: 100%;
+    margin-bottom: 40px;
+
+    &__image {
+        display: table-cell;
+        width: 38%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__content {
+        display: table-cell;
+        background-color: $purple;
+        vertical-align: top;
+        box-sizing: border-box;
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        color: $white;
+
+        h2 {
+            padding: 0;
+            margin: 0;
+        }
+
+        p {
+            padding-top: 0;
+            margin-top: 0;
+        }
+
+        .git-link {
+            color: $white;
+            cursor: pointer;
+        }
+
+    }
+}
+
 .content-wrapper {
     overflow: auto;
 }
@@ -137,6 +180,28 @@
                 }
             }
             
+        }
+    }
+}
+
+.content-wrapper {
+    .content__left {
+        .stories-call-to-action {
+            margin-top: -20px;
+            background-color: $grey;
+            color: $black;
+            span:after {
+                border-color: $black;
+                margin-left: 10px;
+            }
+        }
+        .stories-call-to-action:hover {
+            background-color: $grey-mid;
+            color: $black;
+            span:after {
+                border-color: $black;
+                margin-left: 10px;
+            }
         }
     }
 }
