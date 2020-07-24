@@ -1,5 +1,12 @@
 module GetIntoTeachingApi
   module Constants
+    EVENT_TYPES =
+      {
+        "Train to Teach Event" => 222_750_001,
+        "School and University Event" => 0o000000000,
+        "Webcast" => 222_750_006,
+      }.freeze
+
     DEGREE_STATUS_OPTIONS =
       {
         "Graduate or postgraduate" => 222_750_000,

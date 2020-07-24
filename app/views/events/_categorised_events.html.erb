@@ -6,41 +6,18 @@
         <h3>Train to Teach events</h3>
         <p>Meet experienced teaching professionals who can answer questions about your application, ways to train, funding and more. Talk one-to-one with newly qualified teachers and find out what teaching is really like. </p>
         <div class="events-featured__items">
+          <% 3.times do %>
             <a class="event-link" href="/event">
             <%= render "components/eventbox",
                     :title => "Train to teach Coventry Online event",
                     :datetime => "11 May 2020 at 17:00 - 18:30",
                     :description => "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
-                    :schooloruni => false,
-                    :traintoteach => true,
+                    :type => GetIntoTeachingApi::Constants::EVENT_TYPES["Train to Teach Event"],
                     :online => true,
                     :location => "Coventry"
                 %>
             </a>
-
-            <a class="event-link" href="/event">
-                <%= render "components/eventbox",
-                    :title => "Train to teach Coventry Online event",
-                    :datetime => "11 May 2020 at 17:00 - 18:30",
-                    :description => "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
-                    :schooloruni => false,
-                    :traintoteach => true,
-                    :online => true,
-                    :location => "Coventry"
-                %>
-            </a>
-
-            <a class="event-link" href="/event">
-                <%= render "components/eventbox",
-                    :title => "Train to teach Coventry Online event",
-                    :datetime => "11 May 2020 at 17:00 - 18:30",
-                    :description => "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
-                    :schooloruni => false,
-                    :traintoteach => true,
-                    :online => true,
-                    :location => "Coventry"
-                %>
-            </a>
+          <% end %>
         </div>
         <a class="call-to-action-button" href="/events_ttt">
             See all train to teach <span>events</span>
@@ -50,38 +27,17 @@
         <h3>Online events</h3>
         <p>Online teaching events are interactive sessions that offer a convenient way to engage directly with a panel of specialist advisers across a range of topics. </p>
         <div class="events-featured__items">
+          <% 3.times do %>
             <a class="event-link" href="/event">
                 <%= render "components/eventbox",
                     :title => "Secondary School teaching",
                     :datetime => "11 May 2020 at 17:00 - 18:30",
                     :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
-                    :schooloruni => false,
-                    :traintoteach => false,
+                    :type => GetIntoTeachingApi::Constants::EVENT_TYPES["Webcast"],
                     :online => true
                 %>
             </a>
-
-            <a class="event-link" href="/event">
-                <%= render "components/eventbox",
-                    :title => "Secondary School teaching",
-                    :datetime => "11 May 2020 at 17:00 - 18:30",
-                    :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
-                    :schooloruni => false,
-                    :traintoteach => false,
-                    :online => true
-                %>
-            </a>
-
-            <a class="event-link" href="/event">
-                <%= render "components/eventbox",
-                    :title => "Secondary School teaching",
-                    :datetime => "11 May 2020 at 17:00 - 18:30",
-                    :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
-                    :schooloruni => false,
-                    :traintoteach => false,
-                    :online => true
-                %>
-            </a>
+          <% end %>
         </div>
         <a class="call-to-action-button" href="/events_online">
             See all online <span>events</span>
@@ -94,38 +50,17 @@
         <h3>Schools and university events</h3>
         <p>Universities and schools often hold their own events to help you get into teaching. These can range from general open days to events about teaching certain subjects, school experience days and the application process.</p>
         <div class="events-featured__items">
+          <% 3.times do %>
             <a class="event-link" href="/eventschool">
                 <%= render "components/eventbox",
                     :title => "Heart TSA - Zoom train to teach information event",
                     :datetime => "11 May 2020 at 17:00 - 18:30",
                     :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
-                    :schooloruni => true,
-                    :traintoteach => false,
+                    :type => GetIntoTeachingApi::Constants::EVENT_TYPES["School and University Event"],
                     :online => true
                 %>
             </a>
-
-            <a class="event-link" href="/eventschool">
-                <%= render "components/eventbox",
-                    :title => "Heart TSA - Zoom train to teach information event",
-                    :datetime => "11 May 2020 at 17:00 - 18:30",
-                    :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
-                    :schooloruni => true,
-                    :traintoteach => false,
-                    :online => true
-                %>
-            </a>
-
-            <a class="event-link" href="/eventschool">
-                <%= render "components/eventbox",
-                    :title => "Heart TSA - Zoom train to teach information event",
-                    :datetime => "11 May 2020 at 17:00 - 18:30",
-                    :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
-                    :schooloruni => true,
-                    :traintoteach => false,
-                    :online => true
-                %>
-            </a>
+          <% end %>
         </div>
         <a class="call-to-action-button" href="/events_school">
             See all schools and university <span>events</span>

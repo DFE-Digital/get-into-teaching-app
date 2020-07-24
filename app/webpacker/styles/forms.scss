@@ -19,10 +19,12 @@ input {
   padding-right: 0.4em ;
 }
 
-.fieldlabel, .govuk-label, h3.govuk-fieldset__heading {
-    font-size: 19px;
-    color: $black;
-    font-weight: bold;
+form {
+  .fieldlabel, .govuk-label, h3.govuk-fieldset__heading {
+      font-size: 19px;
+      color: $black;
+      font-weight: bold;
+  }
 }
 
 .fieldhelp, .govuk-hint {
@@ -35,6 +37,12 @@ input {
 
   select {
     border-color: $pink;
+  }
+}
+
+.govuk-checkboxes__item, .govuk-radios__item {
+  label {
+    font-weight: normal;
   }
 }
 

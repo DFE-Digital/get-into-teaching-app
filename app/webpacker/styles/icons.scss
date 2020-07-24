@@ -25,9 +25,6 @@
     background-image: url('../images/icon-online-blue.svg');
     width: 38px;
     height: 25px;
-   .event-resultbox--traintoteach & {
-       background-image: url('../images/icon-online-green.svg');
-   }
 }
 
 .icon-pin {
@@ -35,9 +32,6 @@
     background-image: url('../images/icon-pin-blue.svg');
     width: 23px;
     height: 36px;
-   .event-resultbox--traintoteach & {
-       background-image: url('../images/icon-pin-green.svg');
-   }
 }
 
 .icon-pin-large {
@@ -61,7 +55,7 @@
     height: 22px;
 }
 
-.icon-train-to-teach {
+.icon-train-to-teach-event {
     @include icon;
     background-image: url('../images/icon-ttt.svg');
     width: 34px;

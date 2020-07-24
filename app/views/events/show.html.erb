@@ -5,9 +5,7 @@
         <%= render "components/eventboxshort",
             :title => @event.name,
             :datetime => format_event_date(@event),
-            :schooloruni => false,
-            :description => @event.description,
-            :traintoteach => false,
+            :type => GetIntoTeachingApi::Constants::EVENT_TYPES["Webcast"],
             :online => true,
             :location => "Coventry"
         %>

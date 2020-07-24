@@ -5,9 +5,7 @@
         <%= render "components/eventboxshort", 
             :title => "Train to teach Coventry Online event",
             :datetime => "11 May 2020 at 17:00 - 18:30",
-            :schooloruni => false,
-            :description => "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
-            :traintoteach => false,
+            :type => GetIntoTeachingApi::Constants::EVENT_TYPES["Webcast"],
             :online => true,
             :location => "Overton"
         %>

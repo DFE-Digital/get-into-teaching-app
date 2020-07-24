@@ -21,6 +21,7 @@
               <% if wizard.can_proceed? %>
                 <%= f.button class: "call-to-action-button" do %>
                   <%= wizard.last_step? ? "Complete sign up" : "Next Step" %>
+                  <span></span>
                 <% end %>
               <% end %>
             <% end %>
@@ -32,5 +33,3 @@
         </div>
     </div>
 </section>
-
-<%= render "sections/talk-to-us" %>
