@@ -1,0 +1,68 @@
+.event-reg-main,
+.mailing-reg-main {
+  border-top: 1px solid $grey-light;
+  padding-top: 70px;
+
+  .strapline {
+      background-color: $green;
+      margin-bottom: 30px;
+      margin-left: -20px;
+  }
+
+  .govuk-checkboxes__item, .govuk-form-group 
+  {
+      margin-bottom: 10px;
+  }
+
+  .govuk-input {
+      margin-left: 0px;
+  }
+
+  .content__left {
+      h1 {
+          font-size: 42px;
+          margin: 0;
+      }
+  }
+
+  h2 {
+      font-size: 28px;
+      margin: 0;
+      border: 0;
+  }
+
+  .govuk-input, .govuk-select {
+      max-width: 375px;
+      margin-bottom: 15px;
+      margin-left: 0;
+  }  
+  
+  button.call-to-action-button {
+    margin-top: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+
+  .event-reg-main,
+  .mailing-reg-main { 
+
+      &__content {
+      
+          display: block;
+
+          &__left {
+              display: block;
+              margin-right: 40px;
+          }
+
+          &__right {
+              display: block;
+              margin-top: 40px;
+          }
+
+      }
+
+  }
+}

@@ -15,66 +15,16 @@
 </section>
 
 <section class="search-for-events-results content container-1000">
+  <% 6.times.do %>
     <a class="event-link" href="/eventschool">
         <%= render "components/eventbox", 
             :title => "Heart TSA - Zoom train to teach information event",
             :datetime => "11 May 2020 at 17:00 - 18:30",
             :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
-            :schooloruni => true,
-            :traintoteach => false,
+            :type => GetIntoTeachingApi::Constants::EVENT_TYPES["School and University Event"],
             :online => true
         %>
     </a>
-    <a class="event-link" href="/eventschool">
-        <%= render "components/eventbox", 
-            :title => "Heart TSA - Zoom train to teach information event",
-            :datetime => "11 May 2020 at 17:00 - 18:30",
-            :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
-            :schooloruni => true,
-            :traintoteach => false,
-            :online => true
-        %>
-    </a>
-    <a class="event-link" href="/eventschool">
-        <%= render "components/eventbox", 
-            :title => "Heart TSA - Zoom train to teach information event",
-            :datetime => "11 May 2020 at 17:00 - 18:30",
-            :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
-            :schooloruni => true,
-            :traintoteach => false,
-            :online => true
-        %>
-    </a>
-    <a class="event-link" href="/eventschool">
-        <%= render "components/eventbox", 
-            :title => "Heart TSA - Zoom train to teach information event",
-            :datetime => "11 May 2020 at 17:00 - 18:30",
-            :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
-            :schooloruni => true,
-            :traintoteach => false,
-            :online => true
-        %>
-    </a>
-    <a class="event-link" href="/eventschool">
-        <%= render "components/eventbox", 
-            :title => "Heart TSA - Zoom train to teach information event",
-            :datetime => "11 May 2020 at 17:00 - 18:30",
-            :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
-            :schooloruni => true,
-            :traintoteach => false,
-            :online => true
-        %>
-    </a>
-    <a class="event-link" href="/eventschool">
-        <%= render "components/eventbox", 
-            :title => "Heart TSA - Zoom train to teach information event",
-            :datetime => "11 May 2020 at 17:00 - 18:30",
-            :description => "Find out more about how you can #inspireageneration by training to teach with Heart TSA.",
-            :schooloruni => true,
-            :traintoteach => false,
-            :online => true
-        %>
-    </a>
-
+  <% end %>
 </section>
 

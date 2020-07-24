@@ -1,11 +1,12 @@
-<section class="event-reg-main">
+<section class="event-reg-main" role="main">	
     <div class="content container-1000">
         <div class="content__left">
             <h1 class="strapline">Sign up complete</h1>
+            <br/><br/>	
             <p>You are signed up for the following event:</p>
 
-            <h3><%= @event.name %></h3>
-            <p><%= format_event_date @event %></p>
+            <b><%= @event.name %></b>
+            <p><%= format_event_date @event, stacked: false %></p>
 
             <h2>What happens next?</h2>
             <p>
@@ -17,5 +18,3 @@
         </div>
     </div>
 </section>
-
-<%= render "sections/talk-to-us" %>

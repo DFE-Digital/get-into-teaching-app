@@ -15,66 +15,16 @@
 </section>
 
 <section class="search-for-events-results content container-1000">
+  <% 6.times.do %>
     <a class="event-link" href="/event">
         <%= render "components/eventbox", 
             :title => "Secondary School teaching",
             :datetime => "11 May 2020 at 17:00 - 18:30",
             :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
-            :schooloruni => false,
-            :traintoteach => false,
+            :type => GetIntoTeachingApi::Constants::EVENT_TYPES["Webcast"],
             :online => true
         %>
     </a>
-    <a class="event-link" href="/event">
-        <%= render "components/eventbox", 
-            :title => "Secondary School teaching",
-            :datetime => "11 May 2020 at 17:00 - 18:30",
-            :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
-            :schooloruni => false,
-            :traintoteach => false,
-            :online => true
-        %>
-    </a>
-    <a class="event-link" href="/event">
-        <%= render "components/eventbox", 
-            :title => "Secondary School teaching",
-            :datetime => "11 May 2020 at 17:00 - 18:30",
-            :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
-            :schooloruni => false,
-            :traintoteach => false,
-            :online => true
-        %>
-    </a>
-    <a class="event-link" href="/event">
-        <%= render "components/eventbox", 
-            :title => "Secondary School teaching",
-            :datetime => "11 May 2020 at 17:00 - 18:30",
-            :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
-            :schooloruni => false,
-            :traintoteach => false,
-            :online => true
-        %>
-    </a>
-    <a class="event-link" href="/event">
-        <%= render "components/eventbox", 
-            :title => "Secondary School teaching",
-            :datetime => "11 May 2020 at 17:00 - 18:30",
-            :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
-            :schooloruni => false,
-            :traintoteach => false,
-            :online => true
-        %>
-    </a>
-    <a class="event-link" href="/event">
-        <%= render "components/eventbox", 
-            :title => "Secondary School teaching",
-            :datetime => "11 May 2020 at 17:00 - 18:30",
-            :description => "This online event will provide advice on all things secondary teaching. It will offer helpful hints and tips on the different training options available and how to choose the right option for you.",
-            :schooloruni => false,
-            :traintoteach => false,
-            :online => true
-        %>
-    </a>
-
+  <% end %>
 </section>
 
