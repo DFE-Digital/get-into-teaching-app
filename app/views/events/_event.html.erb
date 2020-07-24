@@ -1,7 +1,8 @@
 <%= link_to event_path(id: event.readable_id), class: "event-link" do %>
-    <%= render "components/eventboxshort",
+    <%= render "components/eventbox",
         :title => event.name,
         :datetime => format_event_date(event),
+        :description => event.description,
         :type => event.type_id,
         :online => event.building.nil?,
         :location => event.building&.address_city
