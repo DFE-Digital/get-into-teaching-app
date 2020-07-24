@@ -94,15 +94,19 @@
         padding-right: 20px;
         box-sizing: border-box;
         display: flex;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: flex-start;
 
         &__thumb {
-            width: calc(33% - 20px);
+            width: calc(33% - 25px);
             height: 345px;
             border: 2px solid $black;
             box-sizing: border-box;
             margin-bottom: 40px;
-
+            margin-right: 40px;
+            &:nth-child(3n + 3) {
+                margin-right: 0;
+            }
             &__img
             {
                 width: 100%;
@@ -144,6 +148,7 @@
         &__thumbs {
             flex-wrap: wrap;
             margin-bottom: 20px;
+            margin-right: 0;
 
             &__thumb {
                 width: 100%;
