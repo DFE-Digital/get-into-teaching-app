@@ -19,4 +19,8 @@
     &:hover,&:focus,&:active {
         text-decoration: none!important;
     }
+    p & {
+        display: inline-block;
+        margin-bottom: 0;
+    }
 }
