@@ -8,7 +8,7 @@ describe SitemapHelper, type: :helper do
           { title: "Page 1", front_matter: { "navigation" => 10 } },
           { title: "Page 2", front_matter: { "navigation" => 30 } },
           { title: "Page 3", front_matter: { "navigation" => 20 } },
-        ]
+        ],
       }
     end
 
