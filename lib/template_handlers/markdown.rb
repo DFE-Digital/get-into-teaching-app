@@ -1,5 +1,5 @@
-module MarkdownPages
-  class TemplateHandler
+module TemplateHandlers
+  class Markdown
     attr_reader :template, :source, :options
 
     DEFAULTS = {}.freeze

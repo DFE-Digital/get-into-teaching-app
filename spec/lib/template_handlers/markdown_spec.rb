@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe MarkdownPages::TemplateHandler, type: :view do
+describe TemplateHandlers::Markdown, type: :view do
   subject { rendered }
 
   context "generic markdown page" do
