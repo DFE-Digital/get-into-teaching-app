@@ -46,11 +46,11 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/life-as-a-teacher/my-story-into-teaching/index", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/index"
-  get "/life-as-a-teacher/my-story-into-teaching/career-changers/index", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/career-changers/index"
-  get "/life-as-a-teacher/my-story-into-teaching/international-career-changers/index", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/international-career-changers/index"
-  get "/life-as-a-teacher/my-story-into-teaching/making-a-difference/index", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/making-a-difference/index"
-  get "/life-as-a-teacher/my-story-into-teaching/teacher-training-stories/index", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/teacher-training-stories/index"
+  get "/life-as-a-teacher/my-story-into-teaching", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching"
+  get "/life-as-a-teacher/my-story-into-teaching/career-changers", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/career-changers"
+  get "/life-as-a-teacher/my-story-into-teaching/international-career-changers", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/international-career-changers"
+  get "/life-as-a-teacher/my-story-into-teaching/making-a-difference", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/making-a-difference"
+  get "/life-as-a-teacher/my-story-into-teaching/teacher-training-stories", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/teacher-training-stories"
   get "/life-as-a-teacher/my-story-into-teaching/*story", to: "stories#show"
   get "*page", to: "pages#show", as: :page
 end

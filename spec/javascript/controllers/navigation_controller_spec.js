@@ -14,9 +14,9 @@ describe('NavigationController', () => {
         <div data-target="navigation.links" id="navbar-mobile-links" class="navbar__mobile__links">
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a></li>
-                <li><a href="/funding-your-training/index">Funding your training</a></li>
-                <li><a href="/life-as-a-teacher/index">Teaching as a career</a></li>
+                <li><a href="/steps-to-become-a-teacher">Steps to become a teacher</a></li>
+                <li><a href="/funding-your-training">Funding your training</a></li>
+                <li><a href="/life-as-a-teacher">Teaching as a career</a></li>
                 <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
                 <li><%= link_to "Find an event near you", events_path %></li>
                 <li><a href="/">Talk to us</a></li>
