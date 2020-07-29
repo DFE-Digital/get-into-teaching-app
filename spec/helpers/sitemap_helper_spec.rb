@@ -4,7 +4,7 @@ describe SitemapHelper, type: :helper do
   describe "#navigation_resources" do
     let(:sitemap) do
       {
-        resources: [
+        markdown_content: [
           { title: "Page 1", front_matter: { "navigation" => 10 } },
           { title: "Page 2", front_matter: { "navigation" => 30 } },
           { title: "Page 3", front_matter: { "navigation" => 20 } },

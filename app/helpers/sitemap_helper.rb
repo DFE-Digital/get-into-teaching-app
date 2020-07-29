@@ -1,8 +1,8 @@
 module SitemapHelper
   def navigation_resources(sitemap)
-    resources = sitemap[:resources].select do |resource|
-      resource.dig(:front_matter, "navigation")
+    navigation_content = sitemap[:markdown_content].select do |content|
+      content.dig(:front_matter, "navigation")
     end
-    resources.sort_by { |resource| resource.dig(:front_matter, "navigation") }
+    navigation_content.sort_by { |resource| resource.dig(:front_matter, "navigation") }
   end
 end
