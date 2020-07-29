@@ -33,8 +33,9 @@ export default class extends Controller {
         //toggle content
         var contentName = 'collapsable-content-' + item;
         var content = document.getElementById(contentName);
+        console.log(content);
         if(content) {
-            if(content.style.display === 'block') {
+            if(content.style.display === 'block' || content.style.display === '') {
                 content.style.display = 'none';
             } else {
                 content.style.display = 'block';
