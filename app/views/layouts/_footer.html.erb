@@ -4,8 +4,12 @@
     <div class="footer-top">
         <div class="footer-top__links-container">
             <a href="/">Home</a>
-            <% navigation_resources(@sitemap).each do |resource| %>
-              <span> | </span>
+            <% navigation_resources(@sitemap).each_with_index do |resource, index| %>
+              <% if index == 2 %>
+                <span><br /><br /></span>
+              <% else %>
+                <span> | </span>
+              <% end %>
               <a href="<%= resource[:path] %>"><%= resource[:front_matter]["title"] %></a>
             <% end %>
             <span> | </span>
