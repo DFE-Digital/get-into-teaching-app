@@ -8,7 +8,7 @@
         </div>
         <div class="home-hero__mailing-strip">
             <div class="home-hero__mailing-strip__text">
-                <p>Alternatively, you can sign up to receive information via email that could help you make your decision to get into teaching.</p>  
+                <p>You can sign up to receive information via email that could help you make your decision to get into teaching.</p>  
             </div>
             <%= link_to(mailing_list_steps_path, class: "home-hero__mailing-strip__button") do %>
                     <span>Sign up here</span>
@@ -16,26 +16,33 @@
         </div>
     </section>
 
-    <section class="my-story container-1000">
-        <div class="my-story__left">
-            <a href='/life-as-a-teacher/real-stories/' aria-label="Life as a teacher">
-                <div class="my-story__left__video" style="background-image: url('<%= asset_pack_path 'media/images/paulsstory.png' %>')">
-                    <div class="my-story__left__video__overlay">
-                        <div class="icon-play"></div>
-                    </div>
+    <section class="featured-content container-1000">
+        <div class="featured-content__items">
+            <div class="featured-content__item">
+                <span class="featured-content__title">Returning to teaching</span>
+                <div class="featured-content__image" style="background-image: url('<%= asset_pack_path 'media/images/featured-1.jpg' %>')"></div>
+                <div class="featured-content__content">
+                    <span>Thousands of former teachers return to the profession each year, so the transition may be easier than you expect.</span>
+                    <a class="featured-content__link" href="/returning-to-teaching">Find out more</a>
                 </div>
-            </a>
-        </div>
-        <div class="my-story__right">
-            <div class="my-story__right__header">
-                <h1 class="strapline-image">My story into teaching</h1>
             </div>
-            <p>As a newly qualified teacher, Paul was keen to move up the teaching career ladder</p>
-            <p>
-                <a class="git-link" href='/life-as-a-teacher/my-story-into-teaching'>
-                    Read Paul's story and others <i class="fas fa-chevron-right"></i>
-                </a>
-            </p>
+            <div class="featured-content__item">
+                <span class="featured-content__title">Real-life experiences</span>
+                <div class="featured-content__image" style="background-image: url('<%= asset_pack_path 'media/images/paulsstory.png' %>')"></div>
+                <div class="featured-content__content">
+                    <span>Read current teachers' and trainees' experiences of school life, training, supporting students, and more.</span>
+                    <a class="featured-content__link" href="/life-as-a-teacher/my-story-into-teaching/">See real stories</a>
+                </div>
+            </div>
+            <div class="featured-content__item">
+                <span class="featured-content__title">International candidates</span>
+                <div class="featured-content__image" style="background-image: url('<%= asset_pack_path 'media/images/featured-2.jpg' %>')"></div>
+                <div class="featured-content__content">
+                    <span>Teaching in England offers a wealth of opportunities and rewards that helps you to build a stimulating and successful career. 
+</span>
+                    <a class="featured-content__link" href="/international-candidates">Find out more</a>
+                </div>
+            </div>
         </div>
     </section>
 

@@ -167,6 +167,7 @@
 .pic-links {
 
     white-space: nowrap;
+    overflow: hidden;
     
     &__pic {
         display: inline-block;
@@ -218,8 +219,6 @@
 
 .steps {
     min-height: 250px;
-    padding-left: 100px;
-    padding-right: 100px;
     padding-top: 40px;
     padding-bottom: 60px;
     text-align: left;
