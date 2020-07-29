@@ -4,14 +4,10 @@
     <div class="footer-top">
         <div class="footer-top__links-container">
             <a href="/">Home</a>
-            <span> | </span>
-            <a href="/steps-to-become-a-teacher/index">Steps to become a teacher</a>
-            <span> | </span>
-            <a href="/funding-your-training/index">Funding your training</a>
-            <span><br/><br/></span>
-            <a href="/life-as-a-teacher/index">Teaching as a career</a>
-            <span> | </span>
-            <a href="/life-as-a-teacher/teachers-salaries-and-benefits/">Salaries and Benefits</a>
+            <% navigation_resources(@sitemap).each do |resource| %>
+              <span> | </span>
+              <a href="<%= resource[:path] %>"><%= resource[:front_matter]["title"] %></a>
+            <% end %>
             <span> | </span>
             <%= link_to "Find an event near you", events_path %>
             <span> | </span>
