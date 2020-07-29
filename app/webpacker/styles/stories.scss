@@ -226,6 +226,53 @@
     }
 }
 
+.stories-inline {
+    display: flex;
+    justify-content: space-between;
+
+    &__block {
+        background-color: grey;
+        height: 320px;
+        width: 50%;
+
+        &__thumb {
+            height: 190px;
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        &__content {
+            background-color: $purple;
+            height: 130px;
+            color: $white;
+            box-sizing: border-box;
+            padding: 15px;
+
+            p {
+                margin-bottom: 10px;
+            }
+
+            .git-link {
+                color: $white;
+            }
+
+            .git-link:hover {
+                color: $white;
+            }
+        }
+    }
+
+    &__block:first-child {
+        margin-right: 10px;
+    }
+
+    &__block:last-child {
+        margin-left: 10px;
+    }
+}
+
 @media only screen and (max-width: 700px) {
 
     .more-stories {
