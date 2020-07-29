@@ -6,15 +6,15 @@ describe TemplateHandlers::ERB, type: :view do
   context "generic ERB page accessing the @sitemap" do
     let(:erb) do
       <<~ERB
-        <%= pluralize(@sitemap[:resources].count, "resource") %>
-        <%= @sitemap[:resources].map { |r| r[:path] } %>
-        <%= @sitemap[:resources].map { |r| r[:front_matter] } %>
+        <%= pluralize(@sitemap[:markdown_content].count, "resource") %>
+        <%= @sitemap[:markdown_content].map { |r| r[:path] } %>
+        <%= @sitemap[:markdown_content].map { |r| r[:front_matter] } %>
       ERB
     end
 
     before do
       TemplateHandlers::ERB.sitemap = nil # clear cache
-      stub_const("TemplateHandlers::ERB::CONTENT_DIR", "#{file_fixture_path}/content")
+      stub_const("TemplateHandlers::ERB::MARKDOWN_CONTENT_DIR", "#{file_fixture_path}/markdown_content")
       stub_template "test.erb" => erb
       render template: "test.erb"
     end
