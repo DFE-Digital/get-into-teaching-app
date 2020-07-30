@@ -43,6 +43,10 @@ class PagesController < ApplicationController
     render template: "pages/privacy_policy"
   end
 
+  def accessibility
+    render template: "pages/accessibility"
+  end
+
   def show
     render template: "content/#{params[:page]}", layout: "layouts/content"
   rescue ActionView::MissingTemplate
