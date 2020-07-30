@@ -3,7 +3,22 @@ class EventsController < ApplicationController
     api = GetIntoTeachingApiClient::TeachingEventsApi.new
     @events = api.get_upcoming_teaching_events
     @event_search = Events::Search.new
-    @show_categorised_events = true
+    categories = ["Train to Teach events", "Online events"]
+    @events_by_category = categories.map do |category|
+      events = 5.times.collect do
+      {
+        :category => category,
+        :title => "Train to teach Coventry Online event",
+        :datetime => "11 May 2020 at 17:00 - 18:30",
+        :description => "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
+        :type => GetIntoTeachingApi::Constants::EVENT_TYPES["Train to Teach Event"],
+        :online => true,
+        :location => "Coventry",
+        :readable_id => "ttc-online-event"
+      }
+      end
+      { category_name: category, events: events}
+    end
   end
 
   def search
