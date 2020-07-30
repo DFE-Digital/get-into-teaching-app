@@ -280,170 +280,58 @@
     }
 }
 
-.quote {
-    display: table;
-    width: 100%;
-    min-height: 250px;
-    white-space: nowrap;
-
-    &__left {
-        display: table-cell;
-        background-color: $yellow;
-        width: 60%;
-        height: 385px;
-        white-space: normal;
-        text-align: center;
-        vertical-align: top;
-
-        &__quote {
-            display: table;
-            width: 100%;
-            height: 100%;
-
-            div {
-                display: table-cell;
-            }
-
-            &__text {
-
-                position: relative;    
-                width: 70%;
-                font-size: 28px;
-                font-weight: bold;
-                text-align: left;
-                vertical-align: middle;
-                line-height: 1.2;            
-                
-                &__leftquote {
-                    position: absolute;
-                    top: 4px;
-                    left: -30px;
-                    width: 22px;
-                    height: 21px;
-                    background-image: url('../images/white-quote.svg');
-                }
-
-                &__rightquote {
-                    display: inline-block;
-                    position: relative;
-                    top:-20px;
-                    transform: rotate(-180deg);
-                    width: 22px;
-                    height: 21px;
-                    background-image: url('../images/white-quote.svg');
-                }
-
-                &__quotee {
-                    display: block;
-                    font-size: 22px;
-                    margin-top: 10px;
-                }
-            }
-        }
-
-    }
-    
-    &__right {
-        display: table-cell;
-        background-color:lightgray;
+.home-quote {
+    background: $yellow;
+    position: relative;
+    padding: 80px 0;
+    &__text {
         width: 50%;
-        height: 385px;
-        white-space: normal;
-        overflow: hidden;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        &__mask {
-            background-color: $yellow;
-            height: 110%;
-            width: 60px;
-            transform: rotate(-6deg);
-            margin-left: -20px;
-        }
+        margin-left: 50px;
+        text-align: left;
+        position: relative;
     }
-}
 
-.quote-mobile {
-    display: none;
+    &__quote {
+        margin: 0 0 20px;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 1.25;
+        display: block;
+        &:before {
+            position: absolute;
+            top: 4px;
+            left: -30px;
+            width: 22px;
+            height: 21px;
+            background-image: url('../images/white-quote.svg');
+            content: "";
+            display: block;
+        }
 
-    &__top {
-        height: 365px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        &__mask {
-            background-color: $yellow;
-            height: 80px;
-            width: 120%;
-            transform: rotate(6deg);
-            margin-left: -10px;
+        &:after {
+            display: inline-block;
             position: relative;
-            top: 335px;
+            transform: rotate(-180deg);
+            width: 22px;
+            height: 21px;
+            background-image: url('../images/white-quote.svg');
+            content: "";
+            margin-left: 8px;
         }
     }
 
-    &__bottom {
-        height: 330px;
-        background-color: $yellow;
-        
-        &__table {
-            display: table;
-            height :100%;
+    &__citation {
+        font-weight: bold;
+    }
 
-            div {
-                display: table-row;
-            }
-
-            &__top-space {
-                height:30px;
-            }
-
-            &__center {
-                height: 70%;
-
-                &__cell {
-                    position: relative;
-                    display: table-cell !important;
-                    padding-top: 0px;
-                    padding-left: 60px;
-                    padding-right: 60px;
-                    font-size: 28px;
-                    font-weight: bold;
-                    text-align: left;
-                    vertical-align: middle;
-                    line-height: 1.2;
-
-                    &__leftquote {
-                        display: inline-block !important;
-                        position: absolute;
-                        left:30px;
-                        width: 22px;
-                        height: 21px;
-                        background-image: url('../images/white-quote.svg');
-                    }
-    
-                    &__rightquote {
-                        display: inline-block !important;
-                        position: relative;
-                        top:0px;
-                        transform: rotate(-180deg);
-                        width: 22px;
-                        height: 21px;
-                        background-image: url('../images/white-quote.svg');
-                    }
-                    
-                    &__quotee {
-                        display: block;
-                        font-size: 22px;
-                        margin-top: 10px;
-                    }
-                }
-                
-            }
-        }
-
+    &__img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40%;
+        height: 100%;
+        background-position: 50%;
+        background-size: cover;
     }
 }
 
@@ -669,18 +557,21 @@
         }
     }
 
-    .quote-mobile {
-        display: block;
 
-        &__bottom {
-            &__graphic {
-                margin-top: 0px;
-            }
+
+    .home-quote {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0;
+        &__img {
+            position: static;
+            width: 100%;
+            height: 200px;
         }
-    }
-
-    .quote {
-        display: none;
+        &__text {
+            width: calc(100% - 60px);
+            margin: 30px;
+        }
     }
 
     .steps {
