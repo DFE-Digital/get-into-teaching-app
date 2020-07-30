@@ -8,7 +8,7 @@
     </div>
 
     <% event_category[:events].each do |event| %>
-        <a href="#" class="event-link">
+        <a href="/event" class="event-link">
             <%= render "components/eventbox",
                 :title => event[:title],
                 :datetime => event[:datetime],
