@@ -11,7 +11,7 @@ class EventsController < ApplicationController
           title: "Train to teach Coventry Online event",
           datetime: "11 May 2020 at 17:00 - 18:30",
           description: "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
-          type: GetIntoTeachingApi::Constants::EVENT_TYPES["Train to Teach Event"],
+          type: GetIntoTeachingApi::Constants::EVENT_TYPES[category.singularize],
           online: true,
           location: "Coventry",
           readable_id: "ttc-online-event",
