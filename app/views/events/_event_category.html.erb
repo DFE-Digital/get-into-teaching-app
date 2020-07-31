@@ -1,0 +1,24 @@
+<section class="search-for-events-results content container-1000">
+    <div class="content__left">
+        <h2 class="types-of-event__header types-of-event__header--ttt">
+            <%= event_category[:category_name] %>
+        </h2>
+    </div>
+    <div class="content__right">
+    </div>
+
+    <% event_category[:events].each do |event| %>
+        <a href="/event" class="event-link">
+            <%= render "components/eventbox",
+                :title => event[:title],
+                :datetime => event[:datetime],
+                :description => event[:description],
+                :type => event[:type],
+                :online => event[:online],
+                :location => event[:location]
+            %>
+        </a>
+    <% end %>
+
+    
+</section>

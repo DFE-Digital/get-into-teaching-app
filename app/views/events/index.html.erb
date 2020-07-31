@@ -22,7 +22,7 @@
         </div>
     </section>
 
-    <%= render "categorised_events" if @show_categorised_events %>
+    <%= render partial: "event_category", collection: @events_by_category %>
 
     <section class="search-for-events-results content container-1000">
         <div class="content__left">
