@@ -3,6 +3,6 @@ FactoryBot.define do
     type { Events::Search.new.available_event_types.first.id }
     distance { Events::Search.new.available_distances.first[0] }
     postcode { "TE57 1NG" }
-    month { Events::Search.new.available_months.first[0] }
+    month { "2020-07" }
   end
 end
