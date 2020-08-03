@@ -19,4 +19,14 @@
             </div>
         </div>
     <% end %>
+    <% if mailinglist %>
+        <div class="home-hero__mailing-strip">
+            <div class="home-hero__mailing-strip__text">
+                <p>You can sign up to receive information via email that could help you make your decision to get into teaching.</p>  
+            </div>
+            <%= link_to(mailing_list_steps_path, class: "home-hero__mailing-strip__button") do %>
+                <span>Sign up here</span>
+            <% end %>
+        </div>
+    <% end %>
 <% end %>
