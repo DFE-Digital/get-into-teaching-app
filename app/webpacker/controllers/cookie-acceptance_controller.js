@@ -20,6 +20,9 @@ export default class extends Controller {
         event.preventDefault();
         this.overlayTarget.style.display = "none";
         document.cookie = "GiTBetaCookie=Accepted; expires=Fri, 31 Dec 2021 12:00:00 UTC";
+
+        let acceptedCookies = new Event("cookies:accepted") ;
+        document.dispatchEvent(acceptedCookies) ;
     }
 
     showDialog() {
