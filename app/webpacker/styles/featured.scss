@@ -1,9 +1,8 @@
 .featured-content {
-    margin-top: 90px;
+    
     &__items {
+        margin-top: 90px;
         display: flex;
-        margin-left: -20px;
-        margin-right: -20px;
     }
 
     &__item {
