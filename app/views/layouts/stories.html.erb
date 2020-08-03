@@ -2,7 +2,7 @@
 <html lang="en" class="govuk-template">
     <%= render "layouts/head" %>
 
-    <body data-controller="video" class="govuk-template__body govuk-body" id="body">
+    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video" }, id: "body" do %>
         <div class="container">
             <%= render "layouts/header" %>
             <section class="content container-1000" role="main"> 
@@ -30,6 +30,6 @@
                 </div>
             </div>
         </div>
-    </body>
+    <% end %>
 </html>
 

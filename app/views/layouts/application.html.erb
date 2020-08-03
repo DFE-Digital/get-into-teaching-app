@@ -2,7 +2,7 @@
 <html lang="en" class="govuk-template">
   <%= render "layouts/head" %>
 
-  <body class="govuk-template__body govuk-body">
+  <%= analytics_body_tag class: "govuk-template__body govuk-body" do %>
     <div id="skiplink-container">
       <div>
         <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
@@ -12,6 +12,6 @@
     <%= yield %>
     <%= render "layouts/footer" %>
     <%= render "layouts/cookie-acceptance" %>
-  </body>
+  <% end %>
 
 </html>
