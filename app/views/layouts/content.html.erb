@@ -24,7 +24,7 @@
                 :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"], 
                 :mailinglist => @front_matter["mailinglist"] 
             %>
-            <section class="content content--<%= @front_matter["direction"] %> container-1000" role="main" id="main-content"> 
+            <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %> role="main" id="main-content"> 
                 <%= yield %>
             </section>
             <%= render "layouts/footer" %>     
