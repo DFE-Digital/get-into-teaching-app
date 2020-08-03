@@ -1,4 +1,9 @@
-<%= render "sections/hero",  :header => @event.name, :image => "media/images/hero-events.png" %>
+<%= render "sections/hero",  
+    :header => @event.name, 
+    :image => "media/images/hero-events.png",
+    :deep => false,
+    :mailinglist => false 
+%>
 
 <section class="event-info content container-1000">
     <div class="content__right">
