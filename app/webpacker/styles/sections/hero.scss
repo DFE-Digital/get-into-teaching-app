@@ -10,6 +10,7 @@
     margin-bottom: 50px;
 
     &__banner {
+
         width: 100%;
         position: absolute;
         bottom: 56px;
@@ -40,9 +41,15 @@
                 font-size: 26px;
                 width: 475px;
                 line-height: 1.3;
+                margin: 0;
+                padding: 0;
             }
         }
     }
+}
+
+.hero--deep {
+    height: 540px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -67,6 +74,25 @@
                 }
             }
             
+        }
+    }
+
+    .hero--deep {
+        height: 470px;
+
+        .hero__banner {
+
+            h1 {
+                font-size: 28px;
+            }
+
+            p {
+                margin-top: 2px;
+                font-size: 16px;
+                width: 215px;
+                line-height: 1.4;
+            }
+
         }
     }
 }
