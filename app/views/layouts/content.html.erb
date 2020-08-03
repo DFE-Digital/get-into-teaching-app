@@ -21,7 +21,9 @@
             <%= render "layouts/header" %>
             <%= render "sections/hero", 
                 :header => @front_matter["title"], :image => @front_matter["image"], 
-                :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"] %>
+                :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"], 
+                :mailinglist => @front_matter["mailinglist"] 
+            %>
             <section class="content content--<%= @front_matter["direction"] %> container-1000" role="main" id="main-content"> 
                 <%= yield %>
             </section>
