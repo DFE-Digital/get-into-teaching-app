@@ -9,11 +9,8 @@ Rails.application.routes.draw do
   end
 
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
-
   get "/scribble", to: "pages#scribble", via: :all, as: nil
-
   get "/mailinglist/register/:step_number", to: "pages#mailingregistration", via: :all
-
   get "/eventschool", to: "pages#eventschool", via: :all
   get "/events_ttt", to: "pages#events_ttt", via: :all
   get "/events_online", to: "pages#events_online", via: :all
