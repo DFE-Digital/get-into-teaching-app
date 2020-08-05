@@ -33,6 +33,13 @@ en:
   activemodel:
     errors:
       models:
+        wizard/steps/authenticate:
+          attributes:
+            timed_one_time_password:
+              blank: Enter the verification code sent to your email address
+              invalid: The verification code should be 6 digits
+              wrong_code: Please enter the latest verification code sent to your email address
+
         events/search:
           attributes:
             type:
@@ -89,7 +96,7 @@ en:
               inclusion: Choose an option from the list
         mailing_list/steps/subject:
           attributes:
-            subject:
+            preferred_teaching_subject_id:
               blank: Choose a subject from the list
               inclusion: Choose a subject from the list
         mailing_list/steps/postcode:
