@@ -7,12 +7,7 @@
 
     <div class="navbar">
         <div class="logo"> 
-            <div class="logo__image">
-                <a href="/">
-                    <img src="<%= asset_pack_path 'media/images/getintoteachinglogo.svg'%>" alt="Get into teaching" />
-                    <div class="logo__image__tagline">Every Lesson shapes a life.</div>
-                </a>
-            </div>
+            <%= render "components/logo" %>
         </div>
         <div class="navbar__desktop">
             <ul>
@@ -38,7 +33,6 @@
                         <li><a href="<%= resource[:path] %>"><%= resource[:front_matter]["title"] %></a></li>
                     <% end %>
                     <li><%= link_to "Find an event near you", events_path %></li>
-                    <li><a href="/">Talk to us</a></li>
                 </ul>
             </div>
         </div>
