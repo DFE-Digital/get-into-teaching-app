@@ -17,8 +17,8 @@ describe Events::Search do
 
   context "validation" do
     context "for event type" do
-      it { is_expected.to allow_value(1).for :type }
-      it { is_expected.to allow_value("1").for :type }
+      it { is_expected.to allow_value(GetIntoTeachingApi::Constants::EVENT_TYPES["Teain to Teach event"]).for :type }
+      it { is_expected.to allow_value(GetIntoTeachingApi::Constants::EVENT_TYPES["Teain to Teach event"].to_s).for :type }
       it { is_expected.to allow_value(nil).for :type }
       it { is_expected.to allow_value("").for :type }
       it { is_expected.not_to allow_value("2").for :type }
