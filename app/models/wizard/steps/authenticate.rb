@@ -3,8 +3,8 @@ module Wizard
     class Authenticate < ::Wizard::Step
       attribute :timed_one_time_password
 
-      validates :timed_one_time_password, presence: true, length: { is: 6 },
-                                          format: { with: /\A[0-9]*\z/, message: "can only contain numbers" }
+      validates :timed_one_time_password, presence: true, length: { is: 6, message: :invalid },
+                                          format: { with: /\A[0-9]*\z/, message: :invalid }
       validate :timed_one_time_password_is_correct, if: :timed_one_time_password_valid?
 
       before_validation if: :timed_one_time_password do
@@ -45,7 +45,7 @@ module Wizard
         request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(@store.to_camelized_hash)
         @totp_response ||= perform_existing_candidate_request(request)
       rescue GetIntoTeachingApiClient::ApiError
-        errors.add(:timed_one_time_password, "Please enter the correct code")
+        errors.add(:timed_one_time_password, :wrong_code)
       end
 
       def prepopulate_store
