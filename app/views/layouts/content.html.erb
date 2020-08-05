@@ -9,7 +9,7 @@
         </div>
     </div>
         <div class="container">
-            <%= render "layouts/header" %>
+            <%= render "sections/header" %>
             <%= render "sections/hero", 
                 :header => @front_matter["title"], :image => @front_matter["image"], 
                 :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"], 
@@ -18,7 +18,7 @@
             <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %> role="main" id="main-content"> 
                 <%= yield %>
             </section>
-            <%= render "layouts/footer" %>     
+            <%= render "sections/footer" %>     
         </div>
 
         <div class="video-overlay" data-target="video.player" data-action="click->video#close">

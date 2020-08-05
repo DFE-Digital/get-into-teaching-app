@@ -4,11 +4,11 @@
 
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video" }, id: "body" do %>
         <div class="container">
-            <%= render "layouts/header" %>
+            <%= render "sections/header" %>
             <section class="content container-1000" role="main"> 
                 <%= yield %>
             </section>
-            <%= render "layouts/footer" %>     
+            <%= render "sections/footer" %>     
         </div>
 
         <div class="video-overlay" data-target="video.player" data-action="click->video#close">
