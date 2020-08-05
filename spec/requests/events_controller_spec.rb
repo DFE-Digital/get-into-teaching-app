@@ -79,7 +79,6 @@ describe EventsController do
       end
 
       it { is_expected.to have_http_status :not_found }
-      it { is_expected.to have_attributes body: %r{Page not found} }
     end
   end
 end
