@@ -8,7 +8,7 @@
 
     <div class="search-for-events__content__input">
         <%= f.label :type, "Event type", class: "search-for-events__content__input__label" %>
-        <%= f.collection_select :type, f.object.available_event_types, :id, :value %>
+        <%= f.collection_select :type, f.object.available_event_types, :id, :value, { include_blank: "All events" } %>
     </div>
 
     <div class="search-for-events__content__input">
