@@ -10,15 +10,15 @@
     </div>
 
     <% events.each do |event| %>
-        <a href="/event" class="event-link">
-            <%= render "components/eventbox",
-                title: event.name,
-                datetime: format_event_date(event),
-                description: event.description,
-                type: event.type_id,
-                online: event.building.nil?,
-                location: event.building&.address_city
-            %>
-        </a>
+      <%= link_to event_path(id: event.readable_id), class: "event-link" do %>
+        <%= render "components/eventbox",
+            title: event.name,
+            datetime: format_event_date(event),
+            description: event.description,
+            type: event.type_id,
+            online: event.building.nil?,
+            location: event.building&.address_city
+        %>
+      <% end %>
     <% end %>
 </section>
