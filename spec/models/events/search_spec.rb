@@ -19,8 +19,9 @@ describe Events::Search do
     context "for event type" do
       it { is_expected.to allow_value(1).for :type }
       it { is_expected.to allow_value("1").for :type }
+      it { is_expected.to allow_value(nil).for :type }
+      it { is_expected.to allow_value("").for :type }
       it { is_expected.not_to allow_value("2").for :type }
-      it { is_expected.not_to allow_value("").for :type }
     end
 
     context "for distance" do
