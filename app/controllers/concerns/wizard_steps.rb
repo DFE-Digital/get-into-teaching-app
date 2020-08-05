@@ -3,7 +3,7 @@ module WizardSteps
 
   included do
     class_attribute :wizard_class
-    before_action :load_wizard, :load_current_step, except: %i[index completed resend_verification]
+    before_action :load_wizard, :load_current_step, only: %i[show update]
   end
 
   def index
@@ -30,7 +30,7 @@ module WizardSteps
   end
 
   def resend_verification
-    request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(wizard_store.to_camelized_hash)
+    request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(camelized_identity_data)
     GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request)
     redirect_to params[:redirect_path]
   end
@@ -61,5 +61,10 @@ private
 
   def step_param_key
     @current_step.class.model_name.param_key
+  end
+
+  def camelized_identity_data
+    Wizard::Steps::Authenticate.new(nil, wizard_store)
+      .candidate_identity_data
   end
 end

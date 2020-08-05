@@ -1,7 +1,7 @@
 module Wizard
   class Store
     attr_reader :data
-    delegate :keys, to: :data
+    delegate :keys, :to_h, :to_hash, to: :data
 
     def initialize(data)
       raise InvalidBackingStore unless data.respond_to?(:[]=)
@@ -29,10 +29,6 @@ module Wizard
 
     def purge!
       data.clear
-    end
-
-    def to_camelized_hash
-      data.transform_keys { |k| k.camelize(:lower).to_sym }
     end
 
     class InvalidBackingStore < RuntimeError; end

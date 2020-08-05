@@ -51,6 +51,9 @@ describe EventStepsController do
 
           allow_any_instance_of(Events::Steps::ContactDetails).to \
             receive(:valid?).and_return true
+
+          allow_any_instance_of(Events::Wizard).to \
+            receive(:add_attendee_to_event).and_return true
         end
         let(:model) { Events::Steps::FurtherDetails }
         let(:details_params) { attributes_for(:events_further_details) }

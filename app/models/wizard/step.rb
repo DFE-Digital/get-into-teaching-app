@@ -39,6 +39,12 @@ module Wizard
       false
     end
 
+    def export
+      return {} if skipped?
+
+      Hash[attributes.keys.zip([])].merge attributes_from_store
+    end
+
   private
 
     def attributes_from_store
