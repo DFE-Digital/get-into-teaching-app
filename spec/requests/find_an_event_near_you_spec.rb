@@ -3,6 +3,8 @@ require "rails_helper"
 describe "Find an event near you" do
   include_context "stub types api"
 
+  NO_EVENTS_REGEX = /no events that match your search criteria/.freeze
+
   let(:events) do
     5.times.collect do |index|
       start_at = Time.zone.today.at_beginning_of_month + index.days
@@ -28,6 +30,14 @@ describe "Find an event near you" do
     it "displays >3 events only under 'all events'" do
       expect(response.body.scan(/Event [4-5]/).count).to eq(2)
     end
+
+    context "when there are no results" do
+      let(:events) { [] }
+
+      it "displays the no results message" do
+        expect(response.body).to match(NO_EVENTS_REGEX)
+      end
+    end
   end
 
   context "when searching for an event by type" do
@@ -36,6 +46,14 @@ describe "Find an event near you" do
 
     it "displays all events of that type" do
       expect(response.body.scan(/Event \d/).count).to eq(events.count)
+    end
+
+    context "when there are no results" do
+      let(:events) { [] }
+
+      it "displays the no results message" do
+        expect(response.body).to match(NO_EVENTS_REGEX)
+      end
     end
   end
 end

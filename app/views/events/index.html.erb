@@ -26,7 +26,7 @@
 
     <%= render partial: "event_category", collection: @events_by_type %>
 
-    <% if @display_all_events_section %>
+    <% if @display_all_events_section && !@events.empty? %>
     <section class="search-for-events-results content container-1000">
         <div class="content__left">
             <h2 class="types-of-event__header types-of-event__header--ttt">All events</h2>
@@ -36,5 +36,15 @@
 
         <%= render partial: "event", collection: @events %>
     </section>
+    <% end %>
+
+    <% if @events.empty? %>
+      <section class="content container-1000">
+        <div class="content__left">
+          <div class="search-for-events-no-results">
+            There are no events that match your search criteria. Try widening your search and updating your results.
+          </div>
+        </div>
+      </section>
     <% end %>
 </section>

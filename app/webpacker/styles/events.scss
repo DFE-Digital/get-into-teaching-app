@@ -250,6 +250,14 @@
     }
 }
 
+.search-for-events-no-results {
+  background: $purple;
+  color: $white;
+  padding: 20px;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
 @media only screen and (max-width: 800px) {
     
     .types-of-event {
