@@ -1,4 +1,4 @@
-module GetIntoTeachingApi
+module GetIntoTeachingApiClient
   module Constants
     EVENT_TYPES =
       {

@@ -5,7 +5,7 @@ describe MailingList::Steps::TeacherTraining do
   it_behaves_like "a wizard step"
 
   let(:consideration_journey_stage_types) do
-    GetIntoTeachingApi::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
+    GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
       GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
     end
   end

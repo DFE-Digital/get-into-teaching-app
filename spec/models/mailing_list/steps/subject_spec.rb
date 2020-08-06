@@ -5,7 +5,7 @@ describe MailingList::Steps::Subject do
   it_behaves_like "a wizard step"
 
   let(:teaching_subject_types) do
-    GetIntoTeachingApi::Constants::TEACHING_SUBJECTS.map do |k, v|
+    GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map do |k, v|
       GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
     end
   end

@@ -24,6 +24,6 @@ module EventsHelper
   end
 
   def train_to_teach_event_type?(type_id)
-    GetIntoTeachingApi::Constants::EVENT_TYPES["Train to Teach event"] == type_id
+    GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] == type_id
   end
 end

@@ -5,7 +5,7 @@ describe MailingList::Steps::Name do
   it_behaves_like "a wizard step"
 
   let(:degree_status_option_types) do
-    GetIntoTeachingApi::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
+    GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
       GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
     end
   end

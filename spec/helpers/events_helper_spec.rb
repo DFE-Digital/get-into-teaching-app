@@ -29,7 +29,7 @@ describe EventsHelper, type: "helper" do
     include_context "stub types api"
 
     it "returns the name of the given event type id" do
-      type_id = GetIntoTeachingApi::Constants::EVENT_TYPES["Train to Teach event"]
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
       expect(name_of_event_type(type_id)).to eq("Train to Teach event")
     end
 
@@ -42,7 +42,7 @@ describe EventsHelper, type: "helper" do
     include_context "stub types api"
 
     it "returns true for train to teach events" do
-      type_id = GetIntoTeachingApi::Constants::EVENT_TYPES["Train to Teach event"]
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
       expect(train_to_teach_event_type?(type_id)).to be_truthy
     end
 

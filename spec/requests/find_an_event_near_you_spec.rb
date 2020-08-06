@@ -31,7 +31,7 @@ describe "Find an event near you" do
   end
 
   context "when searching for an event by type" do
-    let(:type_id) { GetIntoTeachingApi::Constants::EVENT_TYPES["Train to Teach event"] }
+    let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
     before { get search_events_path(events_search: { type: type_id, month: "2020-07" }) }
 
     it "displays all events of that type" do
