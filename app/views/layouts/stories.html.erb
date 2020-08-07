@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
-    <%= render "layouts/head" %>
-
+    <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video" }, id: "body" do %>
         <div class="container">
             <%= render "sections/header" %>
@@ -10,26 +9,7 @@
             </section>
             <%= render "sections/footer" %>     
         </div>
-
-        <div class="video-overlay" data-target="video.player" data-action="click->video#close">
-            <div class="video-overlay__background">   
-            </div>
-            <div class='video-overlay__video-container'>
-                <div class="video-overlay__video-container__wrapper">
-                    <iframe data-target="video.iframe"
-                        width="800" 
-                        height="450"
-                        src="https://www.youtube.com/embed/aGd_Rrs-qNY" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen>
-                    </iframe>
-                </div>
-                <div class="video-overlay__video-container__dismiss">
-                    <div class="icon-video-close" data-action="click->video#close"></div>
-                </div>
-            </div>
-        </div>
+        <%= render "components/videoplayer" %>
     <% end %>
 </html>
 
