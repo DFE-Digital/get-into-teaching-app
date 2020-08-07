@@ -27,10 +27,6 @@ class PagesController < ApplicationController
     render template: "pages/events/events_school"
   end
 
-  def mailingregistration
-    render template: "pages/mailinglist/registration/step#{params[:step_number]}"
-  end
-
   def privacy_policy
     policy_id = params[:id]
 
