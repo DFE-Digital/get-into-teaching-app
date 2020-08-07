@@ -288,6 +288,23 @@
 
         }
     }
+
+    .stories-feature {
+        display: block;
+        width: auto;
+        margin-bottom: 0px;
+
+        &__image {
+            display: block;
+            width: 100%;
+            height:400px;
+        }
+
+        &__content {
+            display: block;
+        }
+
+    }
 }
 @media only screen and (max-width: 500px) {
     .stories {
