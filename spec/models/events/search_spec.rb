@@ -58,12 +58,12 @@ describe Events::Search do
     context "for month" do
       it { is_expected.to allow_value("2020-01").for :month }
       it { is_expected.to allow_value("2020-12").for :month }
+      it { is_expected.to allow_value(nil).for :month }
       it { is_expected.not_to allow_value("2020-00").for :month }
       it { is_expected.not_to allow_value("2020-13").for :month }
       it { is_expected.not_to allow_value("1900-01").for :month }
       it { is_expected.not_to allow_value("foo").for :month }
       it { is_expected.not_to allow_value("").for :month }
-      it { is_expected.not_to allow_value(nil).for :month }
     end
   end
 

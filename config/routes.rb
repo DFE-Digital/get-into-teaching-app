@@ -13,7 +13,7 @@ Rails.application.routes.draw do
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
 
   resources "events", path: "/events", only: %i[index show seaqqrch] do
-    collection do 
+    collection do
       get "search"
       get "category/:category", to: "events#show_category", as: :event_category
     end

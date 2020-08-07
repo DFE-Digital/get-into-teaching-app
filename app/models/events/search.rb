@@ -15,7 +15,7 @@ module Events
     validates :type, presence: false, inclusion: { in: :available_event_type_ids, allow_nil: true }
     validates :distance, inclusion: { in: :available_distance_keys }, allow_nil: true
     validates :postcode, presence: true, postcode: { allow_blank: true }, if: :distance
-    validates :month, presence: true, format: { with: MONTH_FORMAT, allow_blank: true }
+    validates :month, format: { with: MONTH_FORMAT, allow_nil: true }
 
     before_validation { self.distance = nil if distance.blank? }
     before_validation(unless: :distance) { self.postcode = nil }

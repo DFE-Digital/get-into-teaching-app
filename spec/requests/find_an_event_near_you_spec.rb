@@ -11,6 +11,7 @@ describe "Find an event near you" do
       build(:event_api, name: "Event #{index + 1}", start_at: start_at)
     end
   end
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:search_teaching_events) { events }
@@ -23,7 +24,7 @@ describe "Find an event near you" do
 
     it { is_expected.to have_http_status :success }
 
-    it "displays the first 3 events categorised and under 'all events'" do
+    it "displays the first 3 events categorised as well as under 'all events'" do
       expect(response.body.scan(/Event [1-3]/).count).to eq(6)
     end
 

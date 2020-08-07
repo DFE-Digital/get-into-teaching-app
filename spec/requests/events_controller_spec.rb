@@ -3,22 +3,21 @@ require "rails_helper"
 describe EventsController do
   include_context "stub types api"
 
+  let(:first_readable_id) { "123" }
+  let(:second_readable_id) { "456" }
+  let(:events) do
+    [
+      build(:event_api, readable_id: first_readable_id, name: "First"),
+      build(:event_api, readable_id: second_readable_id, name: "Second"),
+    ]
+  end
+
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      receive(:search_teaching_events).and_return events
+  end
+
   describe "#index" do
-    let(:first_readable_id) { "123" }
-    let(:second_readable_id) { "456" }
-
-    let(:events) do
-      [
-        build(:event_api, readable_id: first_readable_id, name: "First"),
-        build(:event_api, readable_id: second_readable_id, name: "Second"),
-      ]
-    end
-
-    before do
-      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events).and_return events
-    end
-
     subject do
       get(events_path)
       response
