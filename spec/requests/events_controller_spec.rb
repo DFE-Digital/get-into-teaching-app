@@ -16,7 +16,7 @@ describe EventsController do
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:get_upcoming_teaching_events).and_return events
+        receive(:search_teaching_events).and_return events
     end
 
     subject do

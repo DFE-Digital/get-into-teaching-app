@@ -1,30 +1,13 @@
 class EventsController < ApplicationController
+  before_action :load_events, :categorise_events, only: %i[index search]
+
+  CATEGORISED_EVENTS_TO_DISPLAY = 3
+
   def index
-    api = GetIntoTeachingApiClient::TeachingEventsApi.new
-    @events = api.get_upcoming_teaching_events
-    @event_search = Events::Search.new
-    categories = ["Train to Teach events", "Online events"]
-    @events_by_category = categories.map do |category|
-      events = 5.times.collect do
-        {
-          category: category,
-          title: "Train to teach Coventry Online event",
-          datetime: "11 May 2020 at 17:00 - 18:30",
-          description: "This online event specifically for anybody looking to train to teach in Coventry will give you the opportunity to ask our experts questions about teacher training.",
-          type: GetIntoTeachingApi::Constants::EVENT_TYPES[category.singularize],
-          online: true,
-          location: "Coventry",
-          readable_id: "ttc-online-event",
-        }
-      end
-      { category_name: category, events: events }
-    end
+    # Events are loaded in a before_action
   end
 
   def search
-    @event_search = Events::Search.new(event_search_params)
-    @events = @event_search.query_events
-
     render "index"
   end
 
@@ -36,9 +19,28 @@ class EventsController < ApplicationController
 
 private
 
+  def load_events
+    @event_search = Events::Search.new(event_search_params)
+    @events = @event_search.query_events
+    @display_all_events_section = event_search_params[:type].blank?
+  end
+
+  def categorise_events
+    hash_default_value_is_array = Hash.new { |h, k| h[k] = [] }
+
+    @events_by_type = @events.each_with_object(hash_default_value_is_array) do |event, hash|
+      hash[event.type_id] << event
+    end
+
+    return unless @display_all_events_section
+
+    @events_by_type.transform_values! { |events| events.first(CATEGORISED_EVENTS_TO_DISPLAY) }
+  end
+
   def event_search_params
-    params
-      .require(Events::Search.model_name.param_key)
+    defaults = ActionController::Parameters.new(month: Time.zone.today.to_formatted_s(:yearmonth), type: "")
+
+    (params[Events::Search.model_name.param_key] || defaults)
       .permit(:type, :distance, :postcode, :month)
   end
 end

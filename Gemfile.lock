@@ -110,6 +110,10 @@ GEM
       railties (>= 4.2.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
+    faraday-encoding (0.0.5)
+      faraday
+    faraday-http-cache (2.2.0)
+      faraday (>= 0.8)
     faraday_middleware (1.0.0)
       faraday (~> 1.0)
     ffi (1.13.1)
@@ -322,6 +326,8 @@ DEPENDENCIES
   dotenv-rails
   factory_bot_rails
   faraday
+  faraday-encoding
+  faraday-http-cache
   faraday_middleware
   foreman
   front_matter_parser!

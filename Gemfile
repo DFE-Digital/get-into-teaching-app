@@ -29,6 +29,8 @@ gem "kramdown"
 gem "rinku"
 
 gem "faraday"
+gem "faraday-encoding"
+gem "faraday-http-cache"
 gem "faraday_middleware"
 
 gem "uk_postcode"

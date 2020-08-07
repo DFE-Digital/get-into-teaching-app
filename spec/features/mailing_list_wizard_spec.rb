@@ -2,19 +2,19 @@ require "rails_helper"
 
 RSpec.feature "Mailing list wizard", type: :feature do
   let(:degree_status_option_types) do
-    GetIntoTeachingApi::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
+    GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
       GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
     end
   end
 
   let(:consideration_journey_stage_types) do
-    GetIntoTeachingApi::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
+    GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
       GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
     end
   end
 
   let(:teaching_subject_types) do
-    GetIntoTeachingApi::Constants::TEACHING_SUBJECTS.map do |k, v|
+    GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map do |k, v|
       GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
     end
   end
@@ -75,9 +75,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      preferredTeachingSubjectId: GetIntoTeachingApi::Constants::TEACHING_SUBJECTS["Maths"],
-      considerationJourneyStageId: GetIntoTeachingApi::Constants::CONSIDERATION_JOURNEY_STAGES["I’m very sure and think I’ll apply"],
-      degreeStatusId: GetIntoTeachingApi::Constants::DEGREE_STATUS_OPTIONS["Final year"],
+      preferredTeachingSubjectId: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["Maths"],
+      considerationJourneyStageId: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m very sure and think I’ll apply"],
+      degreeStatusId: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"],
       addressPostcode: "TE57 1NG",
       telephone: "1234567890",
     )
@@ -97,14 +97,14 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "How close are you to applying"
     expect(page).to have_select(
       "How close are you to applying for teacher training?",
-      selected: GetIntoTeachingApi::Constants::CONSIDERATION_JOURNEY_STAGES.key(response.consideration_journey_stage_id),
+      selected: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.key(response.consideration_journey_stage_id),
     )
     click_on "Next Step"
 
     expect(page).to have_text "Which subject do you want to teach"
     expect(page).to have_select(
       "Which subject do you want to teach?",
-      selected: GetIntoTeachingApi::Constants::TEACHING_SUBJECTS.key(response.preferred_teaching_subject_id),
+      selected: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.key(response.preferred_teaching_subject_id),
     )
     click_on "Next Step"
 
