@@ -17,6 +17,17 @@ class EventsController < ApplicationController
     render template: "errors/not_found", status: :not_found
   end
 
+  def show_category
+    @type = GetIntoTeachingApiClient::TypesApi.new.get_teaching_event_types.find do |type|
+      type.value.parameterize == params[:category]
+    end
+
+    render template: "errors/not_found", status: :not_found if @type.nil?
+
+    @event_search = Events::Search.new(event_search_params.merge({ type: @type.id }))
+    @events = @event_search.query_events
+  end
+
 private
 
   def load_events
@@ -38,7 +49,10 @@ private
   end
 
   def event_search_params
-    defaults = ActionController::Parameters.new(month: Time.zone.today.to_formatted_s(:yearmonth), type: "")
+    defaults = ActionController::Parameters.new(
+      month: Time.zone.today.to_formatted_s(:yearmonth), 
+      type: ""
+    )
 
     (params[Events::Search.model_name.param_key] || defaults)
       .permit(:type, :distance, :postcode, :month)
