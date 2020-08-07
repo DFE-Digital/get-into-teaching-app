@@ -10,11 +10,6 @@ Rails.application.routes.draw do
 
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
   get "/scribble", to: "pages#scribble", via: :all, as: nil
-  get "/eventschool", to: "pages#eventschool", via: :all
-  get "/events_ttt", to: "pages#events_ttt", via: :all
-  get "/events_online", to: "pages#events_online", via: :all
-  get "/events_school", to: "pages#events_school", via: :all
-  get "/event", to: "pages#event", via: :all, as: nil
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
 
   resources "events", path: "/events", only: %i[index show search] do
