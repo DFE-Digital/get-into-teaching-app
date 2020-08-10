@@ -1,19 +1,17 @@
 .stories-feature {
-
-    display: table;
+    display: flex;
     width: 100%;
     margin-bottom: 40px;
 
     &__image {
-        display: table-cell;
-        width: 38%;
+        width: 33.3333%;
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
     }
 
     &__content {
-        display: table-cell;
+        width: 66.6666%;
         background-color: $purple;
         vertical-align: top;
         box-sizing: border-box;
@@ -151,6 +149,7 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        text-align: left;
 
         &__thumb {
             width: calc(33% - 25px);
@@ -273,7 +272,35 @@
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .more-stories {
+
+        &__thumbs {
+            padding: 0;
+
+        }
+    }
+}
 @media only screen and (max-width: 700px) {
+    .stories-feature {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+
+        &__image {
+            width: 100%;
+            height: 260px;
+        }
+
+        &__content {
+            width: 100%;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+
+        }
+    }
 
     .more-stories {
 
@@ -281,9 +308,11 @@
             flex-wrap: wrap;
             margin-bottom: 20px;
             margin-right: 0;
+            padding: 0;
 
             &__thumb {
                 width: 100%;
+                margin-right: 0;
             }
 
         }
