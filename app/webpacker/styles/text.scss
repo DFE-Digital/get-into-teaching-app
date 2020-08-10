@@ -82,21 +82,21 @@ a {
     min-width: 288px;
 }
 
-.git-link {
+.git-link, .content__left a.git-link {
     @include font;
     font-weight: bold;
     font-size: 19px;
     color: $black;
     text-decoration: none;
     display: inline-block;
-
+    
     i {
         margin-left: 4px;
         vertical-align: middle;
     }
 }
 
-.git-link:hover {
+.git-link:hover, .content__left a.git-link:hover {
     text-decoration: underline;
 }
 
