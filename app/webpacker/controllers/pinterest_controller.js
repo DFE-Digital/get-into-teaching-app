@@ -18,7 +18,7 @@ export default class extends AnalyticsBaseController {
     r=document.getElementsByTagName("script")[0];
     r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
 
-    pintrk('load', this.pinterestId);
+    pintrk('load', this.serviceId);
   }
 
 }
