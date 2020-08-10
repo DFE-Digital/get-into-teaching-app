@@ -23,5 +23,19 @@ export default class extends AnalyticsBaseController {
     window.gtag('config', this.serviceId);
   }
 
+  get isEnabled() {
+    return !!this.serviceId ;
+  }
+
+  sendEvent() {
+    window.gtag({
+      'event':'virtualPageView',
+      'page':{
+        'title': document.title,
+        'url': window.location.href
+      }
+    }) ;
+  }
+
 }
 
