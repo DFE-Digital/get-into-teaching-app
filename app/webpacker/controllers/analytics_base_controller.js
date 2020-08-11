@@ -17,9 +17,15 @@ export default class extends Controller {
     }
   }
 
+  get isEnabled() {
+    return (this.serviceId && this.data.has('action') && this.data.has('event')) ;
+  }
+
   triggerEvent() {
-    if (!this.serviceId || !this.data.has('action') || !this.data.has('event'))
-      return
+    if (document.documentElement.hasAttribute("data-turbolinks-preview"))
+      return ;
+
+    if (!this.isEnabled) return ;
 
     if (!this.serviceFunction)
       this.initService() ;
