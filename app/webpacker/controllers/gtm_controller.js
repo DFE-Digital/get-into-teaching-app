@@ -29,13 +29,7 @@ export default class extends AnalyticsBaseController {
   }
 
   sendEvent() {
-    window.gtag({
-      'event':'virtualPageView',
-      'page':{
-        'title': document.title,
-        'url': window.location.href
-      }
-    }) ;
+    /* No-op GTM notices the page history update */
   }
 
 }
