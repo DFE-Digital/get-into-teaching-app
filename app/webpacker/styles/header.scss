@@ -52,7 +52,7 @@
     }
 
     &__desktop {
-        max-width: calc(100% - 270px);
+        max-width: calc(100% - 350px);
         float:right;
         margin-top: 0px;
         margin-right: 20px;
@@ -175,6 +175,7 @@
 
     a {
         text-decoration: none;
+        display: block;
         &:focus {
             &:before {
                 content: "";
@@ -190,32 +191,21 @@
 
     &__image {
         background-color: $green-dark-90;
-        width: 227px;
-        height: 113px;
+        width: 258px;
+        height: 116px;
         transform: rotate(-3deg);
         position: relative;
-        top:10px;
+        top: 11px;
         left:-10px;
         z-index: 1000;
+
     
         img {
             transform: rotate(3deg);
             margin-left: 40px;
-            margin-top:30px;
-            width: 154px;
-            height: 34px;
-            position: relative;
-        }
-    
-        &__tagline {
-            transform: rotate(3deg);
-            margin-left: 40px;
-            margin-top: 2px;
-            font-size: 13px;
-            font-weight: bold;
-            text-align: left;
-            letter-spacing: -0.17px;
-            color: #1D1D1B;
+            margin-top: 30px;
+            width: 180px;
+            height: 57px;
             position: relative;
         }
     }
@@ -251,6 +241,13 @@
 }
 
 /* mobile css */
+@media only screen and (max-width: 1150px) {
+    .navbar {
+        &__desktop {
+                max-width: calc(100% - 300px);
+        }
+    }
+}
 @media only screen and (max-width: 900px) {
 
     .logo {
@@ -259,21 +256,15 @@
 
         &__image {
 
-            width: 193px;
-            height: 85px;
+            width: 196px;
+            height: 87px;
+            top: 4px;
 
             img {
                 margin-top: 20px;
                 margin-left: 24px;
-                width: 138;
-                height: 30px;
-            }
-
-            &__tagline {
-                font-size: 12px;
-                letter-spacing: -0.7;
-                margin-left: 31px;
-                margin-top: -5px;
+                width: 142px;
+                height: 48px;
             }
         }
     }
