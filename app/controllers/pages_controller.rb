@@ -1,4 +1,7 @@
 class PagesController < ApplicationController
+  include StaticPages
+  around_action :cache_static_page, only: %i[show]
+
   def home
     render template: "pages/home"
   end
@@ -24,7 +27,7 @@ class PagesController < ApplicationController
   end
 
   def show
-    render template: "content/#{params[:page]}", layout: "layouts/content"
+    render template: "content/#{params[:page]}", layout: "layouts/application"
   rescue ActionView::MissingTemplate
     respond_to do |format|
       format.html do
