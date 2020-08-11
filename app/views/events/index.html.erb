@@ -26,17 +26,17 @@
 
     <%= render partial: "event_category", collection: @events_by_type %>
 
-    <% if @display_all_events_section && !@events.empty? %>
     <section class="search-for-events-results content container-1000">
         <div class="content__left">
-            <h2 class="types-of-event__header types-of-event__header--ttt">All events</h2>
+        <% if @events_by_type.present? %>
+          <h2 class="types-of-event__header types-of-event__header--ttt">All events</h2>
+        <% end %>
         </div>
         <div class="content__right">
         </div>
 
         <%= render partial: "event", collection: @events %>
     </section>
-    <% end %>
 
     <% if @events.empty? %>
       <section class="content container-1000">
