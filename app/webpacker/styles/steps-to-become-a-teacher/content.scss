@@ -21,7 +21,7 @@
             transform: rotate(3deg);
             text-align: center;
             box-sizing: border-box;
-            padding-top: 12px;
+            padding-top: 6px;
             position: relative;
             top: -10px;
             margin-right: 20px;
@@ -52,6 +52,7 @@
             &__number {
                 width: 40px;
                 height: 40px;
+                padding-top: 8px;
             }
         }
 

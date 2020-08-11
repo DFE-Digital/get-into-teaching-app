@@ -1,19 +1,5 @@
 @charset 'UTF-8';
 
-@font-face {
-    font-family: 'Akzidenz Grotesk';
-    src:url('../fonts/akzidnezgrotesk-roman/AkzidenzGrotesk-Roman.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Akzidenz Grotesk';
-    src: url('../fonts/akzidnezgrotesk-bold/AkzidenzGrotesk-Bold.ttf') format('truetype');
-    font-weight: bold;
-    font-style: normal;
-}
-
 @import "~govuk-frontend/govuk/all";
 @import './git.scss';
 
