@@ -4,8 +4,78 @@
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video" }, id: "body" do %>
         <div class="container">
             <%= render "sections/header" %>
-            <section class="content container-1000" role="main"> 
-                <%= yield %>
+            <section class="content container-1000" role="main">
+                <div class="content-wrapper">
+                    <div class="content__right">
+                    </div>
+                    <div class="content__left">
+                        <div class="stories">
+                            <h1><%= @front_matter["title"] %></h1>
+                            <div class="story-header">
+                                <div class="story-header__thumb" style="background-image:url(<%= @front_matter["teacher_image"] %>)"></div>
+                                <div class="story-header__label">
+                                    <h2><%= @front_matter["teacher_name"] %>, <br/><%= @front_matter["teacher_jobtitle"] %></h2>
+                                    
+                                </div>
+                            </div>
+                            <p class="prominent">
+                                <%= @front_matter["tagline"] %>
+                            </p>
+                            <p>
+                                <%= @front_matter["opener"] %>
+                            </p>
+                            <div>
+                                <div class="quote-block">
+                                    <span class="icon-quote"></span>
+                                    <h1><%= @front_matter["quote"] %><span class="icon-quote quote-close"></span></h1>
+                                </div>
+                                <p>
+                                    <%= @front_matter["quote_parralel_paragraph"] %>
+                                </p>
+                            </div>
+                            <%= yield %>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="more-stories">
+                    <h1 class="more-stories_header strapline">More stories</h1>
+                    <div class="more-stories__thumbs">
+
+                        <div class="more-stories__thumbs__thumb">
+                            <a href="<%= @front_matter["more_stories"][0]["url"] %>">
+                                <div class="more-stories__thumbs__thumb__img" style="background-image:url('<%= @front_matter["more_stories"][0]["image"] %>')"></div>
+                            </a>
+                            <div class="more-stories__thumbs__thumb__content">
+                                <p><%= @front_matter["more_stories"][0]["title"] %></p>
+                                <a class="git-link" href="<%= @front_matter["more_stories"][0]["url"] %>"><%= @front_matter["more_stories"][0]["cta"] %>  <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="more-stories__thumbs__thumb">
+                            <a href="<%= @front_matter["more_stories"][1]["url"] %>">
+                                <div class="more-stories__thumbs__thumb__img" style="background-image:url('<%= @front_matter["more_stories"][1]["image"] %>')"></div>
+                            </a>
+                            <div class="more-stories__thumbs__thumb__content">
+                                <p><%= @front_matter["more_stories"][1]["title"] %></p>
+                                <a class="git-link" href="<%= @front_matter["more_stories"][1]["url"] %>"><%= @front_matter["more_stories"][1]["cta"] %>  <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+
+                        <div class="more-stories__thumbs__thumb">
+                            <a href="<%= @front_matter["more_stories"][2]["url"] %>">
+                                <div class="more-stories__thumbs__thumb__img" style="background-image:url('<%= @front_matter["more_stories"][2]["image"] %>')"></div>
+                            </a>
+                            <div class="more-stories__thumbs__thumb__content">
+                                <p><%= @front_matter["more_stories"][2]["title"] %></p>
+                                <a class="git-link" href="<%= @front_matter["more_stories"][2]["url"] %>"><%= @front_matter["more_stories"][2]["cta"] %> <i class="fas fa-chevron-right"></i></a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
             </section>
             <%= render "sections/footer" %>     
         </div>
