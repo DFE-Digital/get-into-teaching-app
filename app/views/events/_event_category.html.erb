@@ -29,7 +29,7 @@
         <% end %>
       <% end %>
       </div>
-      <%= link_to("#") do %>
+      <%= link_to(event_category_events_path(category_name.parameterize)) do %>
           <div class="call-to-action-button">See all <%= category_name %> <i class="fas fa-chevron-right"></i></div>
       <% end %>
   </div>

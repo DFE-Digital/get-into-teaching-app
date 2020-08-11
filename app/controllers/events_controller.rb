@@ -18,6 +18,17 @@ class EventsController < ApplicationController
     render template: "errors/not_found", status: :not_found
   end
 
+  def show_category
+    @type = GetIntoTeachingApiClient::TypesApi.new.get_teaching_event_types.find do |type|
+      type.value.parameterize == params[:category]
+    end
+
+    render(template: "errors/not_found", status: :not_found) && return if @type.nil?
+
+    api = GetIntoTeachingApiClient::TeachingEventsApi.new
+    @events = api.search_teaching_events(type_id: @type.id)
+  end
+
 private
 
   def load_events
