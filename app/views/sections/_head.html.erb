@@ -1,14 +1,4 @@
 <head>
-  <% if Rails.env.production? %>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159214613-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-159214613-2');
-    </script>
-  <% end %>
   <meta charset="utf-8">
   <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
   <%= csrf_meta_tags %>
