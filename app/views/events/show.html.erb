@@ -11,7 +11,7 @@
             :title => @event.name,
             :datetime => format_event_date(@event),
             :type => @event.type_id,
-            :online => @event.building.nil?,
+            :online => @event.is_online,
             :location => @event.building&.address_city
         %>
     </div>
