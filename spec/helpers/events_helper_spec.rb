@@ -50,4 +50,16 @@ describe EventsHelper, type: "helper" do
       expect(train_to_teach_event_type?(-1)).to be_falsy
     end
   end
+
+  describe "#event_address" do
+    it "returns nil if the event has no building" do
+      event.building = nil
+      expect(event_address(event)).to be_nil
+    end
+
+    it "returns the address, comma separated with line breaks between parts" do
+      expect(event.building).to_not be_nil
+      expect(event_address(event)).to eq("Line 1,\nLine 2,\nManchester,\nMA1 1AM")
+    end
+  end
 end

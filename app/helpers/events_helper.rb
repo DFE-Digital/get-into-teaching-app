@@ -17,6 +17,19 @@ module EventsHelper
     end
   end
 
+  def event_address(event)
+    building = event.building
+    return nil unless building
+
+    [
+      building.address_line1,
+      building.address_line2,
+      building.address_line3,
+      building.address_city,
+      building.address_postcode
+    ].compact!.join(",\n")
+  end
+
   def name_of_event_type(type_id)
     api = GetIntoTeachingApiClient::TypesApi.new
     type = api.get_teaching_event_types.find { |t| t.id == type_id.to_s }

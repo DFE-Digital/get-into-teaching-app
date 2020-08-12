@@ -7,6 +7,11 @@
         box-shadow: none;
     }
 }
+
+.events-listing p {
+  font-size: 300px;
+}
+
 .event-resultbox {
     box-sizing: border-box;
     padding: 20px;
@@ -43,21 +48,20 @@
     }
 
     &__datetime {
-        height: 20px;
-        overflow: hidden;
         margin-bottom: 4px;
+        font-size: 0.8em;
     }
 
-    &__greenstripe {
+    &__divider {
+      height: 8px;
+      background-color: $blue;
+      margin-top: 6px;
+      margin-bottom: 20px;
+    }
+
+    &__divider--train-to-teach-event {
         height: 8px;
         background-color: $green;
-        margin-top: 6px;
-        margin-bottom: 20px;
-    }
-
-    &__bluestripe {
-        height: 8px;
-        background-color: $blue;
         margin-top: 6px;
         margin-bottom: 20px;
     }
@@ -70,15 +74,29 @@
             width: 40px;
         }
 
-        h3 {
-            margin: 0;
-            margin-top: 12px;
-
-            
+        &__location {
+          display: flex;
+        
+          p {
+            margin: 7px 0 0 0;
+          }
         }
+
+        h5 {
+          margin: 15px 0 0 0;
+        }
+
         p {
             margin: 0;
             font-size: 17px;
         }
-    } 
+
+        &__location {
+          display: flex;
+
+          p {
+            margin: 7px 0 0 0;
+          }
+        }
+    }
 }

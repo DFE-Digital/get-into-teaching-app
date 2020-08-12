@@ -8,24 +8,25 @@
 <section class="event-info content container-1000">
     <div class="content__right">
         <%= render "components/eventboxshort",
-            :title => @event.name,
-            :datetime => format_event_date(@event),
-            :type => @event.type_id,
-            :online => @event.is_online,
-            :location => @event.building&.address_city
+            title: @event.name,
+            datetime: format_event_date(@event),
+            type: @event.type_id,
+            online: @event.is_online,
+            location: event_address(@event)
         %>
     </div>
     <div class="content__left">
         <h1 class="strapline-article">Event information</h1>
         <p>
-            Our local Train to Teach events have gone online and will now take the format of online question and answer sessions.
+            Our local Train to Teach events have gone online and will now take the format of online question and answer sessions.	
+        </p>	
+        <p>	
+            This event is specifically for those who are looking to train to teach in Coventry and will give you the opportunity to ask our teaching experts questions on eligibility, the application process and funding.	
+        </p>	
+        <p>	
+            When you sign up we will send you links to the Train to Teach presentations which give an overview of teacher training, the different options available, financial support and the application process.	
         </p>
-        <p>
-            This event is specifically for those who are looking to train to teach in Coventry and will give you the opportunity to ask our teaching experts questions on eligibility, the application process and funding.
-        </p>
-        <p>
-            When you sign up we will send you links to the Train to Teach presentations which give an overview of teacher training, the different options available, financial support and the application process.
-        </p>
+
         <h1 class="strapline-article">How to attend</h1>
         <p>
             To access this event, please sign up on this page and watch out for the reminder email we will send the day before the event. It will contain an access link to the live online event and a directory of some of the local training providers.

@@ -4,7 +4,7 @@ FactoryBot.define do
     address_line1 { "Line 1" }
     address_line2 { "Line 2" }
     address_line3 { nil }
-    address_city { "Manchestr" }
+    address_city { "Manchester" }
     address_postcode { "MA1 1AM" }
   end
 end
