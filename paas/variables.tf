@@ -24,6 +24,10 @@ variable "paas_org_name" {
    default = "dfe-teacher-services"
 }
 
+variable "instances" {
+  default = 1
+}
+
 variable "logging" {
   default = 1
 }
@@ -40,6 +44,10 @@ variable "paas_app_route_name" {}
 
 variable "paas_logging_name" {
    default = "logit-ssl-drain"
+}
+
+variable "paas_redis_1_name" {
+   default = "dfe-teacher-services-dev-red-svc"
 }
 
 variable "paas_app_application_name" {

@@ -5,12 +5,18 @@ resource "cloudfoundry_app" "app_application" {
     stopped      = var.application_stopped
     strategy     = var.strategy
     memory       = 1024
+    instances    = var.instances
     dynamic "service_binding" {
       for_each = data.cloudfoundry_user_provided_service.logging
       content {
         service_instance = service_binding.value["id"]
       }
     }
+
+    service_binding  {
+            service_instance = cloudfoundry_service_instance.redis.id
+    }
+
     routes { route = cloudfoundry_route.app_route_internal.id }
     dynamic "routes" {
       for_each = data.cloudfoundry_route.app_route_internet
