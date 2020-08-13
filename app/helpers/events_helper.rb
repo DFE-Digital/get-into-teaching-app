@@ -48,6 +48,10 @@ module EventsHelper
   end
 
   def train_to_teach_event_type?(type_id)
-    GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] == type_id
+    train_to_teach_types = [
+      GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"],
+      GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"],
+    ]
+    train_to_teach_types.include?(type_id)
   end
 end
