@@ -17,6 +17,17 @@ module EventsHelper
     end
   end
 
+  def embed_event_video_url(video_url)
+    video_url&.sub("watch?v=", "embed/")
+  end
+
+  def event_has_provider_info?(event)
+    event.provider_website_url ||
+      event.provider_target_audience ||
+      event.provider_organiser ||
+      event.provider_contact_email
+  end
+
   def event_address(event)
     building = event.building
     return nil unless building
@@ -26,7 +37,7 @@ module EventsHelper
       building.address_line2,
       building.address_line3,
       building.address_city,
-      building.address_postcode
+      building.address_postcode,
     ].compact!.join(",\n")
   end
 

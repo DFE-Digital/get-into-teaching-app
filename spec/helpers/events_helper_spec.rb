@@ -62,4 +62,33 @@ describe EventsHelper, type: "helper" do
       expect(event_address(event)).to eq("Line 1,\nLine 2,\nManchester,\nMA1 1AM")
     end
   end
+
+  describe "#event_has_provider_info?" do
+    it "returns true if the event has provider information" do
+      event = build(:event_api, :with_provider_info)
+      expect(event_has_provider_info?(event)).to be_truthy
+    end
+
+    it "returns false if the event has no provider information" do
+      event = build(:event_api)
+      expect(event_has_provider_info?(event)).to be_falsy
+    end
+  end
+
+  describe "#embed_event_video_url" do
+    it "returns nil if the event video is nil" do
+      expect(embed_event_video_url(nil)).to be_nil
+    end
+
+    it "returns an embedded url when given an embedded url" do
+      standard_url = "https://www.youtube.com/watch?v=BelJ2AjtHoQ"
+      embed_url = "https://www.youtube.com/embed/BelJ2AjtHoQ"
+      expect(embed_event_video_url(standard_url)).to eq(embed_url)
+    end
+
+    it "returns an embedded url when given a standard url" do
+      embed_url = "https://www.youtube.com/embed/BelJ2AjtHoQ"
+      expect(embed_event_video_url(embed_url)).to eq(embed_url)
+    end
+  end
 end

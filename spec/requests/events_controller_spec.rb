@@ -55,27 +55,42 @@ describe EventsController do
     let(:event_readable_id) { "123" }
 
     let(:event) do
-      build(:event_api, readable_id: event_readable_id)
+      build(:event_api, :with_provider_info, readable_id: event_readable_id)
     end
 
-    subject do
-      get(event_path(id: event_readable_id))
-      response
-    end
+    subject { response }
 
     context "for known event" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
           receive(:get_teaching_event).and_return event
+
+        get(event_path(id: event_readable_id))
       end
 
       it { is_expected.to have_http_status :success }
+
+      context "event information" do
+        subject { response.body }
+
+        it { is_expected.to include(event.name) }
+        it { is_expected.to include(event.description) }
+        it { is_expected.to include(event.message) }
+        it { is_expected.to include(event.building.venue) }
+        it { is_expected.to match(/iframe.+src="#{event.video_url}"/) }
+        it { is_expected.to include(event.provider_website_url) }
+        it { is_expected.to include(event.provider_target_audience) }
+        it { is_expected.to include(event.provider_organiser) }
+        it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
+      end
     end
 
     context "for unknown event" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
           receive(:get_teaching_event).and_raise GetIntoTeachingApiClient::ApiError
+
+        get(event_path(id: event_readable_id))
       end
 
       it { is_expected.to have_http_status :not_found }

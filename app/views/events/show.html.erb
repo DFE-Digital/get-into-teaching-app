@@ -16,16 +16,45 @@
         %>
     </div>
     <div class="content__left">
+        <% if @event.message %>
+          <p class="content-alert"><%= @event.message %></p>
+        <% end %>
+
         <h1 class="strapline-article">Event information</h1>
-        <p>
-            Our local Train to Teach events have gone online and will now take the format of online question and answer sessions.	
-        </p>	
-        <p>	
-            This event is specifically for those who are looking to train to teach in Coventry and will give you the opportunity to ask our teaching experts questions on eligibility, the application process and funding.	
-        </p>	
-        <p>	
-            When you sign up we will send you links to the Train to Teach presentations which give an overview of teacher training, the different options available, financial support and the application process.	
-        </p>
+        <p><%= @event.description %></p>
+
+        <% if @event.building %>
+        <h1 class="strapline-article">Venue information</h1>
+        <p><%= @event.building.venue %>, <%= event_address(@event) %>.</p>
+        <% if @event.provider_website_url %>
+          <p><%= link_to("Visit venue website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
+        <%end %>
+        <div class="event-info__venue__map"></div>	        
+        <% end %>
+
+        <% if event_has_provider_info?(@event) %>
+          <h1 class="strapline-article">Provider information</h1>
+          <% if @event.provider_website_url %>
+            <p><strong>Event website</strong><br /><%= link_to(@event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
+          <% end %>
+          <% if @event.provider_target_audience %>
+            <p><strong>Target audience</strong><br /><%= @event.provider_target_audience %></p>
+          <% end %>
+          <% if @event.provider_organiser %>
+            <p><strong>Organiser</strong><br /><%= @event.provider_organiser %></p>
+          <% end %>
+          <% if @event.provider_contact_email %>
+            <p><strong>Contact email</strong><br /><%= mail_to(@event.provider_contact_email) %></p>
+          <% end %>
+        <% end %>
+
+        <% if @event.video_url %>
+        <h1 class="strapline-article">Video</h1>
+        <div class="responsive-video">
+          <iframe class="responsive-video__iframe" src="<%= embed_event_video_url(@event.video_url) %>"></iframe>
+        </div>
+        <br />
+        <% end %>
 
         <h1 class="strapline-article">How to attend</h1>
         <p>

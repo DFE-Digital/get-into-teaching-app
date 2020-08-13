@@ -14,10 +14,18 @@
 }
 
 .icon-hamburger {
-    @include icon;
-    background-image: url('../images/icon-hamburger.svg');
-    width: 30px;
-    height: 20px;
+  @include icon;
+  background-image: url('../images/icon-hamburger.svg');
+  width: 30px;
+  height: 20px;
+}
+
+.icon-external {
+  @include icon;
+  background-image: url('../images/icon-external.svg');
+  width: 20px;
+  height: 15px;
+  margin: 0 0 5px 5px;
 }
 
 .icon-online-event {
