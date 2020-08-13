@@ -17,6 +17,30 @@ module EventsHelper
     end
   end
 
+  def embed_event_video_url(video_url)
+    video_url&.sub("watch?v=", "embed/")
+  end
+
+  def event_has_provider_info?(event)
+    event.provider_website_url ||
+      event.provider_target_audience ||
+      event.provider_organiser ||
+      event.provider_contact_email
+  end
+
+  def event_address(event)
+    building = event.building
+    return nil unless building
+
+    [
+      building.address_line1,
+      building.address_line2,
+      building.address_line3,
+      building.address_city,
+      building.address_postcode,
+    ].compact!.join(",\n")
+  end
+
   def name_of_event_type(type_id)
     api = GetIntoTeachingApiClient::TypesApi.new
     type = api.get_teaching_event_types.find { |t| t.id == type_id.to_s }
@@ -24,6 +48,6 @@ module EventsHelper
   end
 
   def train_to_teach_event_type?(type_id)
-    GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] == type_id
+    GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] == type_id
   end
 end
