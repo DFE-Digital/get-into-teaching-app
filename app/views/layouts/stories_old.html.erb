@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+    <%= render "sections/head" %>
+    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video" }, id: "body" do %>
+        <div class="container">
+            <%= render "sections/header" %>
+            <section class="content container-1000" role="main"> 
+                <%= yield %>
+            </section>
+            <%= render "sections/footer" %>     
+        </div>
+        <%= render "components/videoplayer" %>
+        <%= render "sections/cookie-acceptance" %>
+    <% end %>
+</html>
+
