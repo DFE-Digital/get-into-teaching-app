@@ -46,6 +46,11 @@ describe EventsHelper, type: "helper" do
       expect(train_to_teach_event_type?(type_id)).to be_truthy
     end
 
+    it "returns true for online events" do
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"]
+      expect(train_to_teach_event_type?(type_id)).to be_truthy
+    end
+
     it "returns false for other event types" do
       expect(train_to_teach_event_type?(-1)).to be_falsy
     end

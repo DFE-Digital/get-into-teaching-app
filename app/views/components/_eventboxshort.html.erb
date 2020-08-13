@@ -14,10 +14,10 @@
       <% end %>
 
       <% if online %>
-        <h5><div class='event-resultbox__content__icon icon-online-event'></div> Online Event</h5>
+        <h5><div class='event-resultbox__content__icon icon-online-event <%= "icon-online-event--green" if train_to_teach_event_type?(type) %>'></div> Online Event</h5>
       <% end %>
       <% if location %>
-        <h5 class="event-resultboxshort__content__location"><div class='event-resultbox__content__icon icon-pin'></div> <%= safe_format(location) %></h5>
+        <h5 class="event-resultboxshort__content__location"><div class='event-resultbox__content__icon icon-pin <%= "icon-pin--green" if train_to_teach_event_type?(type) %>'></div> <%= safe_format(location) %></h5>
       <% end %>
     </div>
 </div>
