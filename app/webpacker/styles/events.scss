@@ -237,6 +237,11 @@
         line-height: 1.25;
     }
 
+    &__text {
+      max-width: 70%;
+      margin-bottom: 30px;
+    }
+
     &__items {
         display: flex;
         margin-left: -10px;
@@ -346,6 +351,10 @@
             margin-bottom: 20px;
             }
         }
+
+        &__text {
+          max-width: 100%;
+        }    
     }
 
 }

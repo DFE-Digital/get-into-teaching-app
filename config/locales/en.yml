@@ -30,6 +30,21 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  find_an_event:
+    types:
+      train_to_teach_event: |-
+        Meet experienced teaching professionals who can answer questions about your application, 
+        ways to train, funding and more. Talk one-to-one with newly qualified teachers and find 
+        out what teaching is really like.
+      online_event: |-
+        Online teaching events are interactive sessions that offer a convenient way to engage directly 
+        with a panel of specialist advisers across a range of topics.
+      school_or_university_event: |-
+        Universities and schools often hold their own events to help you get into teaching. 
+        These can range from general open days to events about teaching certain subjects, school experience days and the application process.
+      application_workshop: |-
+        Our Train to Teach events and application workshops offer you the chance to speak to teaching experts face-to-face. 
+        Get bespoke advice, help with your application, and meet training providers in your area – all completely free.
   activemodel:
     errors:
       models:
