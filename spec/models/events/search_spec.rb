@@ -1,8 +1,6 @@
 require "rails_helper"
 
 describe Events::Search do
-  include_context "stub types api"
-
   context "attributes" do
     it { is_expected.to respond_to :type }
     it { is_expected.to respond_to :distance }
@@ -13,6 +11,11 @@ describe Events::Search do
   context "available_distance_keys" do
     subject { described_class.new.available_distance_keys }
     it { is_expected.to eql [nil, 30, 50, 100] }
+  end
+
+  context "available_event_type_ids" do
+    subject { described_class.new.available_event_type_ids }
+    it { is_expected.to eql GetIntoTeachingApiClient::Constants::EVENT_TYPES.values }
   end
 
   context "validation" do
