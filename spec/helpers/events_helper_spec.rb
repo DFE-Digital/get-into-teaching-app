@@ -38,21 +38,25 @@ describe EventsHelper, type: "helper" do
     end
   end
 
-  describe "#train_to_teach_event_type?" do
-    include_context "stub types api"
-
-    it "returns true for train to teach events" do
+  describe "#event_type_color" do
+    it "returns green for train to teach events" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]
-      expect(train_to_teach_event_type?(type_id)).to be_truthy
+      expect(event_type_color(type_id)).to eq("green")
     end
 
-    it "returns true for online events" do
+    it "returns purple for online events" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"]
-      expect(train_to_teach_event_type?(type_id)).to be_truthy
+      expect(event_type_color(type_id)).to eq("purple")
     end
 
-    it "returns false for other event types" do
-      expect(train_to_teach_event_type?(-1)).to be_falsy
+    it "returns yellow for application workshop" do
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Application Workshop"]
+      expect(event_type_color(type_id)).to eq("yellow")
+    end
+
+    it "returns blue for schools or university events" do
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Schools or University Events"]
+      expect(event_type_color(type_id)).to eq("blue")
     end
   end
 

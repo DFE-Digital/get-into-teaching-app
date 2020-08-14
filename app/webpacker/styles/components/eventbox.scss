@@ -59,11 +59,16 @@
       margin-bottom: 20px;
     }
 
-    &__divider--train-to-teach-event, &__divider--online-event {
-        height: 8px;
+    &__divider--online-event {
+      background-color: $purple;
+    }
+
+    &__divider--train-to-teach-event {
         background-color: $green;
-        margin-top: 6px;
-        margin-bottom: 20px;
+    }
+
+    &__divider--application-workshop {
+      background-color: $yellow;
     }
 
     &__content {

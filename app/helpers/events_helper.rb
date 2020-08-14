@@ -47,11 +47,16 @@ module EventsHelper
     type&.value || ""
   end
 
-  def train_to_teach_event_type?(type_id)
-    train_to_teach_types = [
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"],
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"],
-    ]
-    train_to_teach_types.include?(type_id)
+  def event_type_color(type_id)
+    case type_id
+    when GetIntoTeachingApiClient::Constants::EVENT_TYPES["Application Workshop"]
+      "yellow"
+    when GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]
+      "green"
+    when GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"]
+      "purple"
+    else
+      "blue"
+    end
   end
 end
