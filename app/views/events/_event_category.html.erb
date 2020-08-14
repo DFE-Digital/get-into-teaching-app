@@ -1,25 +1,24 @@
-<% type_id, events = event_category %>
-<% category_name = name_of_event_type(type_id) %>
+<% category_name, events_by_type = event_category %>
 
 <section class="types-of-event content container-1000">
   <div class="content__left">
       <h2>
-        <% if type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] %>
-          <div class="types-of-event__header__icon icon-train-to-teach-event"></div>
-          Organised by Get into Teaching
-        <% else %>
-          Organised by <%= category_name %>
+        <% if category_name == "Get into Teaching" %>
+        <div class="types-of-event__header__icon icon-train-to-teach-event"></div>
         <% end %>
+        Organised by <%= category_name %>
       </h2>
   </div>
-  <div class="events-featured">
-      <h3><%= name_of_event_type(type_id) %></h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non augue a mauris efficitur ullamcorper id sed nisi. Fusce maximus, magna vel volutpat sollicitudin, nisl lectus maximus nibh, ut aliquam nunc ipsum eu ante.</p>
-      <div class="events-featured__items">
-      <%= render partial: "events/event", collection: events %>
-      </div>
-      <%= link_to(event_category_events_path(category_name.parameterize)) do %>
-          <div class="call-to-action-button">See all <%= category_name %> <i class="fas fa-chevron-right"></i></div>
-      <% end %>
-  </div>
+  <% events_by_type.each do |type_name, events| %>
+    <div class="events-featured">
+        <h3><%= type_name %></h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non augue a mauris efficitur ullamcorper id sed nisi. Fusce maximus, magna vel volutpat sollicitudin, nisl lectus maximus nibh, ut aliquam nunc ipsum eu ante.</p>
+        <div class="events-featured__items">
+        <%= render partial: "events/event", collection: events %>
+        </div>
+        <%= link_to(event_category_events_path(type_name.parameterize)) do %>
+            <div class="call-to-action-button">See all <%= type_name %> <i class="fas fa-chevron-right"></i></div>
+        <% end %>
+    </div>
+  <% end %>
 </section>

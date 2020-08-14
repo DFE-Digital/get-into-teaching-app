@@ -37,13 +37,31 @@ private
   end
 
   def categorise_events
-    accumulator = Hash.new { |h, k| h[k] = [] }
+    @events_by_category = @events.each_with_object({}) do |event, hash|
+      type_id = event.type_id
+      category_name = event_category_name(type_id)
+      type_name = event_type_name(type_id)
 
-    @events_by_type = @events.each_with_object(accumulator) do |event, hash|
-      hash[event.type_id] << event
+      hash[category_name] ||= {}
+      hash[category_name][type_name] ||= []
+
+      next if hash[category_name][type_name].count == EVENTS_PER_CATEGORY
+
+      hash[category_name][type_name] << event
     end
+  end
 
-    @events_by_type.transform_values! { |events| events.first(EVENTS_PER_CATEGORY) }
+  def event_category_name(type_id)
+    get_into_teaching_type_ids = GetIntoTeachingApiClient::Constants::GET_INTO_TEACHING_EVENT_TYPES.values
+    return "Get into Teaching" if get_into_teaching_type_ids.include?(type_id)
+
+    event_type_name(type_id)
+  end
+
+  def event_type_name(type_id)
+    api = GetIntoTeachingApiClient::TypesApi.new
+    type = api.get_teaching_event_types.find { |t| t.id == type_id.to_s }
+    type&.value || ""
   end
 
   def event_search_params
