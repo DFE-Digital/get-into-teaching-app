@@ -30,6 +30,63 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  find_an_event:
+    types:
+      train_to_teach_event: |-
+        Meet experienced teaching professionals who can answer questions about your application, 
+        ways to train, funding and more. Talk one-to-one with newly qualified teachers and find 
+        out what teaching is really like.
+      online_event: |-
+        Online teaching events are interactive sessions that offer a convenient way to engage directly 
+        with a panel of specialist advisers across a range of topics.
+      school_or_university_event: |-
+        Universities and schools often hold their own events to help you get into teaching. 
+        These can range from general open days to events about teaching certain subjects, school experience days and the application process.
+      application_workshop: |-
+        Our Train to Teach events and application workshops offer you the chance to speak to teaching experts face-to-face. 
+        Get bespoke advice, help with your application, and meet training providers in your area – all completely free.
+  event_categories:
+    train_to_teach_event: |-
+      <p>
+          At our Train to Teach events, you can meet experienced teaching professionals who can answer all of your questions. 
+      </p>
+      <h4>You’ll get the chance to:</h4>
+      <ul>
+          <li><span>Speak to experts about ways into teacher training and available funding</span></li>
+          <li><span>Talk one-to-one with experienced and newly qualified teachers to find out what Teaching is really like</span></li>
+          <li><span>Get advice on your teacher training application</span></li>
+          <li><span>Talk to schools and universities in your area to help you decide on the best place for you to train and how to apply</span></li>
+      </ul>
+      <p>
+          You can drop in at any time. Allow at least two hours to make the most of your visit. Train to Teach presentations run hourly throughout the event. 
+      </p>
+      <p>
+          Check event timetables to make sure you don’t miss anything.
+      </p>
+    online_event: |-
+      <p>Online teaching events are interactive sessions that offer a convenient way to engage directly with a panel of specialist advisers 
+      across a range of topics.</p><p>You can get your questions answered within minutes – and see what matters to other potential trainee 
+      teachers too. Joining a conversation is easy – remember to check in regularly to see what discussions we’ve got lined up.</p>
+    school_or_university_event: |-
+      <p>The schools and universities that run teacher training courses often hold their own events. These give you a valuable opportunity 
+      to get a feel for what different teacher training courses might be like.</p><p>Each event is different, but typically they’ll cover areas 
+      such as course information, application advice, school experience and the chance to talk to current trainees or staff.</p>
+    application_workshop: |-
+      <p>
+        If you’re ready to apply for teacher training, we’re here to help. Our free application workshops are the perfect way to get expert 
+        advice and information that will help you create the strongest teacher training application possible. Workshops tend to fill up fast – 
+        find an event near you and reserve your place.
+      </p>
+
+      <h4>When you attend a workshop you’ll get the chance to:</h4>
+
+      <ul>
+        <li><span>Attend a presentation to get handy hints and helpful tips on how to make your application stand out</span></li>
+        <li><span>Receive one-to-one feedback from our teaching experts when you bring along your draft personal statement</span></li>
+        <li><span>Talk to current teachers about their experiences</span></li>
+      </ul>
+
+      <p>Make your application count – join us at a workshop and give yourself the best chance of success.</p>
   activemodel:
     errors:
       models:

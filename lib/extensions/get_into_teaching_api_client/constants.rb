@@ -4,7 +4,12 @@ module GetIntoTeachingApiClient
       {
         "Train to Teach Event" => 222_750_001,
         "Online Event" => 222_750_008,
+        "Application Workshop" => 222_750_000,
       }.freeze
+
+    GET_INTO_TEACHING_EVENT_TYPES = EVENT_TYPES.select { |key|
+      ["Train to Teach Event", "Online Event", "Application Workshop"].include?(key)
+    }.freeze
 
     DEGREE_STATUS_OPTIONS =
       {

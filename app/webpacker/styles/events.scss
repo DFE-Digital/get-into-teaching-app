@@ -226,6 +226,8 @@
     background: #F0F0F0;
     float: left;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
     + .events-featured {
         margin-top: 30px;
     }
@@ -233,6 +235,11 @@
         font-size: 28px;
         margin: 0;
         line-height: 1.25;
+    }
+
+    &__text {
+      max-width: 70%;
+      margin-bottom: 30px;
     }
 
     &__items {
@@ -344,6 +351,10 @@
             margin-bottom: 20px;
             }
         }
+
+        &__text {
+          max-width: 100%;
+        }    
     }
 
 }
