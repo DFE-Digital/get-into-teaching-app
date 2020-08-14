@@ -21,11 +21,13 @@ module Events
     before_validation(unless: :distance) { self.postcode = nil }
 
     def available_event_types
-      @available_event_types ||= query_event_types
+      @available_event_types ||= GetIntoTeachingApiClient::Constants::EVENT_TYPES.map do |key, value|
+        GetIntoTeachingApiClient::TypeEntity.new(id: value, value: key)
+      end
     end
 
     def available_event_type_ids
-      available_event_types.map(&:id).map(&:to_i)
+      available_event_types.map(&:id)
     end
 
     def available_distances
@@ -61,10 +63,6 @@ module Events
         start_after: start_of_month,
         start_before: end_of_month,
       )
-    end
-
-    def query_event_types
-      GetIntoTeachingApiClient::TypesApi.new.get_teaching_event_types
     end
 
     def start_of_month
