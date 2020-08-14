@@ -226,6 +226,8 @@
     background: #F0F0F0;
     float: left;
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
     + .events-featured {
         margin-top: 30px;
     }
