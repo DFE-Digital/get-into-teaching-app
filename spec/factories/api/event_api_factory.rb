@@ -3,6 +3,7 @@ FactoryBot.define do
     id { SecureRandom.uuid }
     sequence(:readable_id, &:to_s)
     type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
+    web_feed_id { "123" }
     sequence(:name) { |i| "Become a Teacher #{i}" }
     sequence(:description) { |i| "Become a Teacher #{i} event description" }
     message { "An important message" }

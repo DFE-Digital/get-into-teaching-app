@@ -70,18 +70,38 @@ describe EventsController do
 
       it { is_expected.to have_http_status :success }
 
-      context "event information" do
+      context "within the response body" do
         subject { response.body }
 
-        it { is_expected.to include(event.name) }
-        it { is_expected.to include(event.description) }
-        it { is_expected.to include(event.message) }
-        it { is_expected.to include(event.building.venue) }
-        it { is_expected.to match(/iframe.+src="#{event.video_url}"/) }
-        it { is_expected.to include(event.provider_website_url) }
-        it { is_expected.to include(event.provider_target_audience) }
-        it { is_expected.to include(event.provider_organiser) }
-        it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
+        context "event information" do
+          it { is_expected.to include(event.name) }
+          it { is_expected.to include(event.description) }
+          it { is_expected.to include(event.message) }
+          it { is_expected.to include(event.building.venue) }
+          it { is_expected.to match(/iframe.+src="#{event.video_url}"/) }
+          it { is_expected.to include(event.provider_website_url) }
+          it { is_expected.to include(event.provider_target_audience) }
+          it { is_expected.to include(event.provider_organiser) }
+          it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
+        end
+
+        context "when the event can be registered for online" do
+          let(:event) { build(:event_api, web_feed_id: "123", readable_id: event_readable_id) }
+
+          it { is_expected.to match(/Sign up for this <span>event<\/span>/) }
+        end
+
+        context "when the event can be registered for by email" do
+          let(:event) { build(:event_api, web_feed_id: nil, provider_contact_email: "test@email.com", readable_id: event_readable_id) }
+
+          it { is_expected.to match(/To attend this event, please <a.*mailto.*email us.*a>/) }
+        end
+
+        context "when the event can be registered for via an external website" do
+          let(:event) { build(:event_api, web_feed_id: nil, provider_website_url: "http://event.com", readable_id: event_readable_id) }
+
+          it { is_expected.to match(/To attend this event, please <a.*visit this website.*a>/) }
+        end
       end
     end
 
