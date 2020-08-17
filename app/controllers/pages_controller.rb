@@ -1,10 +1,4 @@
 class PagesController < ApplicationController
-  include StaticPages
-  around_action :cache_static_page, only: %i[show]
-
-  def home
-    render template: "pages/home"
-  end
 
   def scribble
     render template: "pages/scribble"
@@ -20,10 +14,6 @@ class PagesController < ApplicationController
                       end
 
     render template: "pages/privacy_policy"
-  end
-
-  def accessibility
-    render template: "pages/accessibility"
   end
 
   def show
