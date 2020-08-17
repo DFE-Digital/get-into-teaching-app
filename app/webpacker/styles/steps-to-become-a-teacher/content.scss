@@ -9,8 +9,18 @@
             color: $white;
         }
 
-        i {
+        button {
             float: right;
+            background: transparent;
+            border: none;
+            color: $white;
+            font-size: 28px;
+        }
+
+        button:focus { 
+            outline-color: $yellow;
+            background-color: $yellow;
+            color: $black;
         }
 
         &__number {
