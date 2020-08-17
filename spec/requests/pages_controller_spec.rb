@@ -3,7 +3,7 @@ require "rails_helper"
 describe PagesController do
   before do
     allow_any_instance_of(described_class).to \
-      receive(:content_template).and_return "errors/not_found"
+      receive(:content_template).and_return "testing/markdown_test"
   end
 
   context "#show" do

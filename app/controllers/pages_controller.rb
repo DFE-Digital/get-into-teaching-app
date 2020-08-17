@@ -27,7 +27,7 @@ class PagesController < ApplicationController
   end
 
   def show
-    render template: content_template(params[:page]), layout: "layouts/application"
+    render template: content_template(params[:page]), layout: "layouts/content"
   rescue ActionView::MissingTemplate
     respond_to do |format|
       format.html do
