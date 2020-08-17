@@ -37,7 +37,7 @@ private
   end
 
   def categorise_events
-    @events_by_category = @events.each_with_object({}) do |event, hash|
+    @events_by_category = events_sorted_by_type.each_with_object({}) do |event, hash|
       type_id = event.type_id
       category_name = event_category_name(type_id)
       type_name = event_type_name(type_id)
@@ -48,6 +48,12 @@ private
       next if hash[category_name][type_name].count == EVENTS_PER_CATEGORY
 
       hash[category_name][type_name] << event
+    end
+  end
+
+  def events_sorted_by_type
+    @events.sort_by do |event|
+      GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.index(event.type_id)
     end
   end
 
