@@ -3,6 +3,8 @@ module MailingList
     include WizardSteps
     self.wizard_class = MailingList::Wizard
 
+    before_action :set_page_title
+
   private
 
     def step_path(step = params[:id])
@@ -16,6 +18,10 @@ module MailingList
 
     def session_store
       session[:mailinglist] ||= {}
+    end
+
+    def set_page_title
+      @page_title = "Sign up for personalised updates, #{@current_step.title.downcase} step"
     end
   end
 end
