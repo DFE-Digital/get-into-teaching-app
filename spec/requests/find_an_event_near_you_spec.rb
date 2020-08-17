@@ -38,6 +38,26 @@ describe "Find an event near you" do
         expect(response.body).to match(NO_EVENTS_REGEX)
       end
     end
+
+    context "when there are events of different types" do
+      let(:events) do
+        GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.map do |type_id|
+          build(:event_api, start_at: DateTime.now, type_id: type_id)
+        end
+      end
+
+      it "presents the types in the correct order" do
+        headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
+        expected_headings = [
+          "Train to Teach Events",
+          "Online Events",
+          "Application Workshops",
+          "School or University Events",
+        ]
+
+        expect(headings & expected_headings).to eq(expected_headings)
+      end
+    end
   end
 
   context "when searching for an event by type" do
