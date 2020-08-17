@@ -10,7 +10,7 @@ describe('AccordionController', () => {
             <h1>
                 <div class="steps-header__number"><span>1</span></div>
                 Header 1
-                <i id="collapsable-icon-1" class="fas fa-chevron-up"></i>
+                <button><i id="collapsable-icon-1" class="fas fa-chevron-up"></i></button>
             </h1>
         </div>
         <div id="collapsable-content-1" class="collapsable" data-target="accordion.content">
@@ -20,7 +20,7 @@ describe('AccordionController', () => {
             <h1>
                 <div class="steps-header__number"><span>2</span></div>
                 Header 2
-                <i id="collapsable-icon-2" class="fas fa-chevron-up"></i>
+                <button><i id="collapsable-icon-2" class="fas fa-chevron-up"></i></button>
             </h1>
         </div>
         <div id="collapsable-content-2" class="collapsable" data-target="accordion.content">
@@ -30,7 +30,7 @@ describe('AccordionController', () => {
             <h1>
                 <div class="steps-header__number"><span>2</span></div>
                 Header 3
-                <i id="collapsable-icon-3" class="fas fa-chevron-up"></i>
+                <button><i id="collapsable-icon-3" class="fas fa-chevron-up"></i></button>
             </h1>
         </div>
         <div id="collapsable-content-3" class="collapsable" data-target="accordion.content">
@@ -76,27 +76,6 @@ describe('AccordionController', () => {
             expect(icon.className).toContain('fa-chevron-down');
             headers[0].click();
             expect(icon.className).toContain('fa-chevron-up');
-        });
-    });
-
-    describe("when header is closed", () => {
-        it("should have none visible content and no block style", () => {
-            let header = document.getElementById('step-1');
-            let icon = header.getElementsByTagName('i')[0];
-            expect(icon.className).toContain('fa-chevron-up');
-            let content = document.getElementById('collapsable-content-1');
-            expect(content.style.display).toBe('none');
-        });
-    });
-
-    describe("when header is open", () => {
-        it("should have visible content and display style of block", () => {
-            let header = document.getElementById('step-1');
-            header.click();
-            let icon = header.getElementsByTagName('i')[0];
-            expect(icon.className).toContain('fa-chevron-down');
-            let content = document.getElementById('collapsable-content-1');
-            expect(content.style.display).toBe('block');
         });
     });
 
