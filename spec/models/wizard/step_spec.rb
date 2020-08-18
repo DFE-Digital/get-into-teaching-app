@@ -17,6 +17,11 @@ describe Wizard::Step do
     it { expect(FirstStep.key).to eql "first_step" }
   end
 
+  describe ".title" do
+    it { expect(described_class.title).to eql "Step" }
+    it { expect(FirstStep.title).to eql "First step" }
+  end
+
   describe ".new" do
     let(:attributes) { { age: "20" } }
     it { is_expected.to be_instance_of FirstStep }
