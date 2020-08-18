@@ -25,7 +25,7 @@ class EventsController < ApplicationController
     end
 
     render(template: "errors/not_found", status: :not_found) && return if @type.nil?
-    
+
     @page_title = event_category_name(@type.id).pluralize
 
     api = GetIntoTeachingApiClient::TeachingEventsApi.new

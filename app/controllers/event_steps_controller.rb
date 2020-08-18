@@ -4,8 +4,6 @@ class EventStepsController < ApplicationController
   include WizardSteps
   self.wizard_class = Events::Wizard
 
-  before_action :set_page_title, except: %i[index completed resend_verification]
-
 private
 
   def step_path(step = params[:id])
@@ -27,6 +25,8 @@ private
   end
 
   def set_page_title
-    @page_title = "Sign up for #{@event.name}, #{@current_step.title.downcase} step"
+    unless @current_step.nil?
+      @page_title = "Sign up for #{@event.name}, #{@current_step.title.downcase} step"
+    end
   end
 end
