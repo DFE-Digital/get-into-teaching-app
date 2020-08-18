@@ -5,7 +5,7 @@ class EventsController < ApplicationController
   EVENTS_PER_CATEGORY = 3
 
   def index
-    @page_title = 'Find an event near you'
+    @page_title = "Find an event near you"
   end
 
   def search
@@ -23,9 +23,10 @@ class EventsController < ApplicationController
     @type = GetIntoTeachingApiClient::TypesApi.new.get_teaching_event_types.find do |type|
       type.value.parameterize == params[:category]
     end
-    @page_title = event_category_name(@type.id).pluralize
 
     render(template: "errors/not_found", status: :not_found) && return if @type.nil?
+    
+    @page_title = event_category_name(@type.id).pluralize
 
     api = GetIntoTeachingApiClient::TeachingEventsApi.new
     @events = api.search_teaching_events(type_id: @type.id)

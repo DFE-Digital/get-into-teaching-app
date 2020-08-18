@@ -1,5 +1,5 @@
 class EventStepsController < ApplicationController
-  before_action :load_event 
+  before_action :load_event
 
   include WizardSteps
   self.wizard_class = Events::Wizard
@@ -27,6 +27,7 @@ private
   end
 
   def set_page_title
-    @page_title = "Sign up for #{@event.name}, #{@current_step.title.downcase} step"
+    @page_title = "Sign up for #{@event.name}"
+    @page_title += ", #{@current_step.title.downcase} step" if @current_step
   end
 end

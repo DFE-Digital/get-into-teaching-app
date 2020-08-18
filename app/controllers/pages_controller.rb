@@ -1,12 +1,11 @@
 class PagesController < ApplicationController
-
   def scribble
-    @page_title = 'Scribble Test'
+    @page_title = "Scribble Test"
     render template: "pages/scribble"
   end
 
   def privacy_policy
-    @page_title = 'Privacy Policy'
+    @page_title = "Privacy Policy"
     policy_id = params[:id]
 
     @privacy_policy = if policy_id

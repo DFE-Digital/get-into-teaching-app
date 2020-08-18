@@ -21,7 +21,8 @@ module MailingList
     end
 
     def set_page_title
-      @page_title = "Sign up for personalised updates, #{@current_step.title.downcase} step"
+      @page_title = "Sign up for personalised updates "
+      @page_title = ", #{@current_step.title.downcase} step" if @current_step
     end
   end
 end
