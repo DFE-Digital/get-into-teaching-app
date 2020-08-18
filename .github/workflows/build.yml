@@ -104,7 +104,6 @@ jobs:
            SLACK_TITLE: 'Failure: ${{ github.workflow }}'
            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
-
   trigger_content_build:
     name: Trigger build of Content repo
     runs-on: ubuntu-latest
