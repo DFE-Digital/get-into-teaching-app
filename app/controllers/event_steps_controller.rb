@@ -25,8 +25,9 @@ private
   end
 
   def set_page_title
+    @page_title = "Sign up for #{@event.name}"
     unless @current_step.nil?
-      @page_title = "Sign up for #{@event.name}, #{@current_step.title.downcase} step"
+      @page_title += ", #{@current_step.title.downcase} step"
     end
   end
 end
