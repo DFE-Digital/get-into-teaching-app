@@ -89,15 +89,6 @@ jobs:
            -Dsonar.testExecutionReportPaths=out/test-report.xml
            -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/.resultset.json
 
-      - name:  Send Message to Sentry.io
-        if: ${{ always() }}
-        uses: sfawcett123/sentry-event@v1
-        with: 
-             MESSAGE: "Build Application"
-             STATE:  ${{job.status}}
-             ENVIRON: "Test"
-        env:
-            SENTRY_DSN: ${{secrets.DEV_OPS_SENTRY_DSN}}
   trigger_content_build:
     name: Trigger build of Content repo
     runs-on: ubuntu-latest
