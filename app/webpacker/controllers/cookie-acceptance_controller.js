@@ -2,7 +2,7 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
 
-    static targets = ["overlay"]
+    static targets = ["modal","overlay","agree","disagree"];
 
     connect() {
         this.checkforCookie();
@@ -27,6 +27,17 @@ export default class extends Controller {
 
     showDialog() {
         this.overlayTarget.style.display = "flex";
+        document.getElementById('cookies-agree').focus();
+
+        this.disagreeTarget.addEventListener('blur', function (e) {
+            e.preventDefault();
+            document.getElementById('cookies-agree').focus();
+        });
+
+        this.agreeTarget.addEventListener('blur', function (e) {
+            e.preventDefault();
+            document.getElementById('cookies-disagree').focus();
+        });
     }
 
 }
