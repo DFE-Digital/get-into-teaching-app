@@ -1,16 +1,11 @@
 class PagesController < ApplicationController
-  include StaticPages
-  around_action :cache_static_page, only: %i[show]
-
-  def home
-    render template: "pages/home"
-  end
-
   def scribble
+    @page_title = "Scribble Test"
     render template: "pages/scribble"
   end
 
   def privacy_policy
+    @page_title = "Privacy Policy"
     policy_id = params[:id]
 
     @privacy_policy = if policy_id
@@ -20,10 +15,6 @@ class PagesController < ApplicationController
                       end
 
     render template: "pages/privacy_policy"
-  end
-
-  def accessibility
-    render template: "pages/accessibility"
   end
 
   def show

@@ -8,9 +8,14 @@ module Wizard
       def key
         name.split("::").last.underscore
       end
+
+      def title
+        key.humanize
+      end
     end
 
     delegate :key, to: :class
+    delegate :title, to: :class
     alias_method :id, :key
 
     def initialize(wizard, store, attributes = {}, *args)

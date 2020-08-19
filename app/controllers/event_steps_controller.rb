@@ -23,4 +23,11 @@ private
   def load_event
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:event_id])
   end
+
+  def set_page_title
+    @page_title = "Sign up for #{@event.name}"
+    unless @current_step.nil?
+      @page_title += ", #{@current_step.title.downcase} step"
+    end
+  end
 end
