@@ -67,11 +67,4 @@ describe Wizard::Store do
       is_expected.to have_attributes empty?: true
     end
   end
-
-  describe "#to_camelized_hash" do
-    subject { instance.to_camelized_hash }
-    it "returns returns a hash with camelCase keys" do
-      is_expected.to eq(firstName: "Joe", age: 20, region: "Manchester")
-    end
-  end
 end

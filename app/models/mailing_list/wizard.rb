@@ -1,5 +1,7 @@
 module MailingList
   class Wizard < ::Wizard::Base
+    include ::Wizard::ApiClientSupport
+
     self.steps = [
       Steps::Name,
       Steps::Authenticate,
@@ -19,8 +21,10 @@ module MailingList
       end
     end
 
+  private
+
     def add_member_to_mailing_list
-      request = GetIntoTeachingApiClient::MailingListAddMember.new(@store.to_camelized_hash)
+      request = GetIntoTeachingApiClient::MailingListAddMember.new(export_camelized_hash)
       api = GetIntoTeachingApiClient::MailingListApi.new
       api.add_mailing_list_member(request)
     end

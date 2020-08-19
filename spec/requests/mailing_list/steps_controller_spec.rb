@@ -41,6 +41,9 @@ describe MailingList::StepsController do
       context "when all valid" do
         before do
           steps.each do |step|
+            allow_any_instance_of(MailingList::Wizard).to \
+              receive(:add_member_to_mailing_list).and_return true
+
             allow_any_instance_of(step).to receive(:valid?).and_return true
           end
         end

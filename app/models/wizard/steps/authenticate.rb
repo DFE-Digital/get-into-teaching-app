@@ -1,6 +1,8 @@
 module Wizard
   module Steps
     class Authenticate < ::Wizard::Step
+      IDENTITY_ATTRS = %i[email first_name last_name date_of_birth].freeze
+
       attribute :timed_one_time_password
 
       validates :timed_one_time_password, presence: true, length: { is: 6, message: :invalid },
@@ -26,6 +28,12 @@ module Wizard
         super(value)
       end
 
+      def candidate_identity_data
+        @store.fetch(IDENTITY_ATTRS).transform_keys do |k|
+          k.camelize(:lower).to_sym
+        end
+      end
+
     protected
 
       def perform_existing_candidate_request(_request)
@@ -42,7 +50,7 @@ module Wizard
       end
 
       def timed_one_time_password_is_correct
-        request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(@store.to_camelized_hash)
+        request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(candidate_identity_data)
         @totp_response ||= perform_existing_candidate_request(request)
       rescue GetIntoTeachingApiClient::ApiError
         errors.add(:timed_one_time_password, :wrong_code)

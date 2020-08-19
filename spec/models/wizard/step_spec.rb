@@ -56,4 +56,12 @@ describe Wizard::Step do
       it { is_expected.to have_attributes errors: hash_including(:name) }
     end
   end
+
+  describe "#export" do
+    let(:backingstore) { { "name" => "Joe" } }
+    let(:instance) { FirstStep.new nil, wizardstore, age: 35 }
+    subject { instance.export }
+    it { is_expected.to include "name" => "Joe" }
+    it { is_expected.to include "age" => nil } # should only export persisted data
+  end
 end
