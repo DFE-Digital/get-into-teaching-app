@@ -47,13 +47,13 @@ describe('AccordionController', () => {
         it("only first step should be opened", () => {
             const headers = document.getElementsByClassName('steps-header');
             for(let i=0;i<headers.length;i+=1){
-                let icons = headers[i].getElementsByTagName('i');
-                if(!icons.length) break;
-                let icon = icons[0];
+                let stepHeaders = headers[i];
+                if (!stepHeaders.length) break;
+                let stepHeader = stepHeaders[0];
                 if(i === 0) {
-                    expect(icon.className).toContain('fa-chevron-up');
+                    expect(stepHeader.className).not.toContain('inactive');
                 } else {
-                    expect(icon.className).toContain('fa-chevron-down');
+                    expect(stepHeader.className).toContain('inactive');
                 }
             }
         });
@@ -62,20 +62,20 @@ describe('AccordionController', () => {
     describe("when open header is toggled", () => {
         it("should close", () => {
             let headers = document.getElementsByClassName('steps-header');
-            let icon = headers[0].getElementsByTagName('i')[0];
-            expect(icon.className).toContain('fa-chevron-up');
+            let stepHeader = headers[0];
+            expect(stepHeader.className).not.toContain('inactive');
             headers[0].click();
-            expect(icon.className).toContain('fa-chevron-down');
+            expect(stepHeader.className).toContain('inactive');
         });
     });
 
     describe("when closed header is toggled", () => {
         it("should open", () => {
             let headers = document.getElementsByClassName('steps-header');
-            let icon = headers[0].getElementsByTagName('i')[0];
-            expect(icon.className).toContain('fa-chevron-down');
+            let stepHeader = headers[0];
+            expect(stepHeader.className).toContain('inactive');
             headers[0].click();
-            expect(icon.className).toContain('fa-chevron-up');
+            expect(stepHeader.className).not.toContain('inactive');
         });
     });
 
