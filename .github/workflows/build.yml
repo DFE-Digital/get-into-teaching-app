@@ -14,15 +14,18 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
+
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@master
         with:
              dockerfile: "Dockerfile"
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v1 
+
       - name: Get Short SHA
         id: sha
         run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
+
       - name: Build and push to Docker Hub
         if: github.ref == 'refs/heads/master'
         uses: docker/build-push-action@v1
@@ -36,6 +39,7 @@ jobs:
           tag_with_sha: true
           push: true
           build_args: SHA=${{ steps.sha.outputs.short}}
+
       - name: Build Only
         if: github.ref != 'refs/heads/master'
         uses: docker/build-push-action@v1
@@ -89,6 +93,17 @@ jobs:
            -Dsonar.testExecutionReportPaths=out/test-report.xml
            -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/.resultset.json
 
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+           SLACK_CHANNEL: getintoteaching_tech
+           SLACK_COLOR: '#3278BD'
+           SLACK_ICON: https://github.com/rtCamp.png?size=48
+           SLACK_MESSAGE: ':disappointed_relieved: Pipeline Failure :disappointed_relieved:'
+           SLACK_TITLE: 'Failure: ${{ github.workflow }}'
+           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
   trigger_content_build:
     name: Trigger build of Content repo
     runs-on: ubuntu-latest
@@ -97,9 +112,11 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
+
       - name: Get Short SHA
         id: sha
         run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
+
       - name: Trigger build in Content repo
         run: |-
           curl -X POST \
@@ -108,3 +125,15 @@ jobs:
             -H "Content-Type: application/json" \
             https://api.github.com/repos/${{ env.CONTENT_REPOSITORY }}/dispatches \
             --data '{"event_type": "Build triggered from App repo", "client_payload": { "parent_sha": "'"${{ steps.sha.outputs.short}}"'"  }}'
+
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+           SLACK_CHANNEL: getintoteaching_tech
+           SLACK_COLOR: '#3278BD'
+           SLACK_ICON: https://github.com/rtCamp.png?size=48
+           SLACK_MESSAGE: ':disappointed_relieved: Pipeline Failure :disappointed_relieved:'
+           SLACK_TITLE: 'Failure: ${{ github.workflow }}'
+           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
