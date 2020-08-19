@@ -19,14 +19,14 @@ export default class extends Controller {
     toggleCollapsable(item) {
 
         //toggle icon
-        var iconName = 'collapsable-icon-' + item; 
-        var icon = document.getElementById(iconName);
-        if(icon) {
-            var currentIconClass = icon.getAttribute('class');
-            if(currentIconClass === 'fas fa-chevron-up') {
-                icon.setAttribute('class','fas fa-chevron-down');
+        var stepHeaderName = 'step-' + item;
+        var stepHeader = document.getElementById(stepHeaderName);
+        if (stepHeader) {
+            // stepHeader.classList.toggle('inactive');
+            if (stepHeader.classList.contains('inactive')) {
+                stepHeader.classList.remove('inactive');
             } else {
-                icon.setAttribute('class','fas fa-chevron-up');
+                stepHeader.classList.add('inactive');
             }
         }
 
