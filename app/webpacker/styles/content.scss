@@ -244,3 +244,17 @@
         }
     }
 }
+
+.hero.hero--mobile {
+  display: none
+}
+
+@media (max-width:550px) {
+  .hero.hero--mobile {
+    display: block;
+  }
+
+  .hero.hero--desktop {
+    display: none
+  }
+}

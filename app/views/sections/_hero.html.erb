@@ -1,8 +1,8 @@
 <% if image === false %>
     <div class="no-hero" role="complementary"></div>
 <% else %>
-    <% if deep %> 
-        <div class="hero hero--deep" style="background-image: url('<%= hero_image_path image %>')" role="complementary">
+    <% if deep %>
+        <div class="hero hero--deep<%= " hero--desktop" if mobileimage.present? %>" style="background-image: url('<%= hero_image_path image %>')" role="complementary">
             <div class="hero__banner">
                 <div class="hero__banner__text">
                     <h1><%= header %></h1>
@@ -10,21 +10,46 @@
                 </div>
             </div>
         </div>
+
+        <%- if mobileimage.present? -%>
+        <div class="hero hero--deep hero--mobile" style="background-image: url('<%= hero_image_path mobileimage %>')" role="complementary">
+            <div class="hero__banner">
+                <div class="hero__banner__text">
+                    <h1><%= header %></h1>
+                    <p><%= subtitle %></p>
+                </div>
+            </div>
+        </div>
+        <%- end -%>
     <% else %>
-        <div class="hero" style="background-image: url('<%= hero_image_path image %>')" role="complementary">
+        <div class="hero<%= " hero--desktop" if mobileimage.present? %>" style="background-image: url('<%= hero_image_path image %>')" role="complementary">
             <div class="hero__banner">
                 <div class="hero__banner__text">
                     <h1><%= header %></h1>
                 </div>
             </div>
         </div>
+
+        <%- if mobileimage.present? %>
+        <div class="hero hero--mobile" style="background-image: url('<%= hero_image_path mobileimage %>')" role="complementary">
+            <div class="hero__banner">
+                <div class="hero__banner__text">
+                    <h1><%= header %></h1>
+                </div>
+            </div>
+        </div>
+        <%- end -%>
     <% end %>
     <% if mailinglist %>
         <div class="hero__mailing-strip">
             <div class="hero__mailing-strip__text">
-                <p>Alternatively, you can sign up to receive information via email that could help you make your decision to get into teaching.</p>  
+                <p>
+                  Alternatively, you can sign up to receive information via
+                  email that could help you make your decision to get into
+                  teaching.
+                </p>
             </div>
-            <%= link_to(mailing_list_steps_path, class: "hero__mailing-strip__button") do %>
+            <%= link_to mailing_list_steps_path, class: "hero__mailing-strip__button" do %>
                 <span>Sign up here</span>
             <% end %>
         </div>
