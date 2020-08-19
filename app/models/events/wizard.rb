@@ -1,5 +1,7 @@
 module Events
   class Wizard < ::Wizard::Base
+    include ::Wizard::ApiClientSupport
+
     self.steps = [
       Steps::PersonalDetails,
       Steps::Authenticate,
@@ -16,8 +18,10 @@ module Events
       end
     end
 
+  private
+
     def add_attendee_to_event
-      request = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(@store.to_camelized_hash)
+      request = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(export_camelized_hash)
       api = GetIntoTeachingApiClient::TeachingEventsApi.new
       api.add_teaching_event_attendee(request)
     end

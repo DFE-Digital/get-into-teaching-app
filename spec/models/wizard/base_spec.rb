@@ -209,4 +209,23 @@ describe Wizard::Base do
       it { is_expected.to eql %w[postcode] }
     end
   end
+
+  describe "#export_data" do
+    subject { wizard.export_data }
+
+    it { is_expected.to include "name" => "Joe" }
+    it { is_expected.to include "age" => 35 }
+    it { is_expected.to include "postcode" => nil }
+
+    context "with skipped step" do
+      before do
+        allow_any_instance_of(TestWizard::Age).to \
+          receive(:skipped?).and_return true
+      end
+
+      it { is_expected.to include "name" => "Joe" }
+      it { is_expected.not_to include "age" }
+      it { is_expected.to include "postcode" => nil }
+    end
+  end
 end

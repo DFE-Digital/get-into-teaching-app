@@ -93,6 +93,10 @@ module Wizard
       steps[0..(index - 1)].map(&:key)
     end
 
+    def export_data
+      all_steps.map(&:export).reduce({}, :merge)
+    end
+
   private
 
     def all_steps
