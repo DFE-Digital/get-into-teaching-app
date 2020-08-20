@@ -134,6 +134,16 @@
             }
             
         }
+        &__mailing-strip {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 20px;
+
+            &__text {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
 
     }
 

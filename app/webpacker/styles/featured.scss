@@ -23,7 +23,7 @@
         color: white;
         padding: 10px 20px;
         font-weight: bold;
-        max-width: 100%;
+        max-width: calc(100% - 80px);
     }
 
     &__image {
@@ -73,6 +73,7 @@
         &__items {
             margin-left: -20px;
             margin-right: -20px;
+            margin-top: 40px;
             flex-wrap: wrap;
         }
 
