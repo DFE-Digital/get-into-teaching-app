@@ -17,6 +17,8 @@
         box-sizing: border-box;
         padding: 20px;
         position: absolute;
+        top: 0;
+        left: 0;
     }
 
     &__dialog {
@@ -26,7 +28,7 @@
         padding: 40px;
         box-sizing: border-box;
         position: relative;
-        margin: 40px;
+        margin: 20px;
         overflow: hidden;
 
         &__header {
@@ -75,6 +77,7 @@
 
         .git-link {
             margin-top: 20px;
+            padding: 0 20px;
         }
     }
 }
@@ -83,9 +86,13 @@
 
     .cookie-acceptance {
         &__dialog {
-
+            padding: 20px;
+            &__header {
+                margin-bottom: 25px;
+            }
             .logo__image {
                 width: 220px;
+                margin-left: 20px;
                 div {
                     margin-left: 39px;
                     margin-top: -3px;
@@ -96,8 +103,21 @@
             h1 {
                 display: block;
                 float: none;
-                margin-top: 30px;
+                margin-top: 20px;
                 margin-bottom: -20px;
+                font-size: 24px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 1.25;
+            }
+            a {
+                font-size: 16px;
+                padding: 8px 12px;
+                &.git-link {
+                    margin: 0;
+                    padding-bottom: 0;
+                }
             }
         }
     }
