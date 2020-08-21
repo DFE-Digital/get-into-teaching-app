@@ -28,9 +28,12 @@ describe('AccordionController', () => {
                         allowfullscreen>
                     </iframe>
                 </div>
-                <div class="video-overlay__video-container__dismiss">
-                    <div id="close-button" class="icon-video-close" data-action="click->video#close"></div>
-                </div>
+                <button id="close-button" class="video-overlay__video-container__dismiss" data-target="video.close" data-action="click->video#close">
+                    <div class="icon-video-close"><span class="visually-hidden">Close video</span></div>
+                </button>
+                <a class="visually-hidden" href="#">
+                    Close
+                </a>
             </div>
         </div>
     </div>

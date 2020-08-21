@@ -57,12 +57,17 @@
             display: block;
             background-color: $pink-dark-90;
             overflow: hidden;
-            cursor: pointer;
-
+            border: none;
             .icon-video-close {
                 transform: rotate(-3deg);
-                margin-top: 15px;
-                margin-left: 15px;
+            }
+            &:hover {
+                background-color: $pink;
+            }
+            &:focus {
+                background-color: $yellow;
+                outline: none;
+
             }
         }
 
