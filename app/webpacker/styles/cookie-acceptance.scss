@@ -87,6 +87,8 @@
     .cookie-acceptance {
         &__dialog {
             padding: 20px;
+            max-height: calc(100vh - 40px);
+            overflow: auto;
             &__header {
                 margin-bottom: 25px;
             }
@@ -115,8 +117,11 @@
                 font-size: 16px;
                 padding: 8px 12px;
                 &.git-link {
-                    margin: 0;
-                    padding-bottom: 0;
+                    margin: 8px 0 0 0;
+                    padding: 0 12px;
+                }
+                &.visually-hidden {
+                    padding: 0;
                 }
             }
         }
