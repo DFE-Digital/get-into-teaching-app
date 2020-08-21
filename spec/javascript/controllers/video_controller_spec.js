@@ -5,26 +5,36 @@ describe('AccordionController', () => {
 
     document.body.innerHTML = 
     `
-    <div class="video-overlay" data-target="video.player" data-action="click->video#close">
-        <div class="video-overlay__background">   
-        </div>
-        <div class='video-overlay__video-container'>
-            <div class="video-overlay__video-container__wrapper">
-                <iframe data-target="video.iframe"
-                    width="800" 
-                    height="450"
-                    src="https://www.youtube.com/embed/aGd_Rrs-qNY" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
+    <div data-controller="video">
+        <a href="https://www.youtube.com/watch?v=MLdrZJpK5rU" target="_blank" data-action="click->video#play" data-target="video.link">
+            <div class="content-video">
+                <img src="/assets/images/case-study-helen.png" alt="Helen's story">
+                <div class="content-video__play">
+                    <div class="icon-play"></div>
+                </div>
             </div>
-            <button class="video-overlay__video-container__dismiss" data-target="video.close" data-action="click->video#close">
-                <div class="icon-video-close"><span class="visually-hidden">Close video</span></div>
-            </button>
-            <a class="visually-hidden" href="#">
-                Close
-            </a>
+        </a>
+        <div id="the-video-player" class="video-overlay" data-target="video.player" data-action="click->video#close">
+            <div class="video-overlay__background">   
+            </div>
+            <div class='video-overlay__video-container'>
+                <div class="video-overlay__video-container__wrapper">
+                    <iframe data-target="video.iframe"
+                        width="800" 
+                        height="450"
+                        src="https://www.youtube.com/embed/aGd_Rrs-qNY" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <button id="close-button" class="video-overlay__video-container__dismiss" data-target="video.close" data-action="click->video#close">
+                    <div class="icon-video-close"><span class="visually-hidden">Close video</span></div>
+                </button>
+                <a class="visually-hidden" href="#">
+                    Close
+                </a>
+            </div>
         </div>
     </div>
     `
