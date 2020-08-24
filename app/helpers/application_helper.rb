@@ -69,4 +69,10 @@ module ApplicationHelper
 
     link_to text, path, **options
   end
+
+  def tta_service_link(opts = nil, &block)
+    return nil if ENV["TTA_SERVICE_URL"].blank?
+
+    link_to ENV["TTA_SERVICE_URL"], opts, &block
+  end
 end
