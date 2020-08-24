@@ -9,14 +9,16 @@
     </div>
         <div class="container">
             <%= render "sections/header" %>
-            <%= render "sections/hero", 
-                :header => @front_matter["title"], :image => @front_matter["image"], 
-                :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"], 
-                :mailinglist => @front_matter["mailinglist"] 
-            %>
-            <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %> role="main" id="main-content"> 
-                <%= yield %>
-            </section>
+            <div  role="main" id="main-content">
+                <%= render "sections/hero", 
+                    :header => @front_matter["title"], :image => @front_matter["image"], 
+                    :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"], 
+                    :mailinglist => @front_matter["mailinglist"] 
+                %>
+                <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>"> 
+                    <%= yield %>
+                </section>
+            </div>
             <%= render "sections/footer" %>     
         </div>
         <%= render "components/videoplayer" %>
