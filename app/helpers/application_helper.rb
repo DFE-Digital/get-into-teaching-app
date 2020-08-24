@@ -7,6 +7,7 @@ module ApplicationHelper
       "analytics-pinterest-id" => ENV["PINTEREST_ID"],
       "analytics-snapchat-id" => ENV["SNAPCHAT_ID"],
       "analytics-facebook-id" => ENV["FACEBOOK_ID"],
+      "analytics-hotjar-id" => ENV["HOTJAR_ID"],
       "snapchat-action" => "track",
       "snapchat-event" => "PAGE_VIEW",
       "facebook-action" => "track",
@@ -17,7 +18,7 @@ module ApplicationHelper
     attributes[:data] = attributes[:data].merge(analytics)
 
     attributes[:data][:controller] =
-      "gtm pinterest snapchat facebook #{attributes[:data][:controller]}"
+      "gtm pinterest snapchat facebook hotjar #{attributes[:data][:controller]}"
 
     content_tag :body, attributes, &block
   end
