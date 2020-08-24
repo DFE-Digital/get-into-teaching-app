@@ -27,7 +27,7 @@
                             <div>
                                 <div class="quote-block">
                                     <span class="icon-quote"></span>
-                                    <h1><%= @front_matter["quote"] %><span class="icon-quote quote-close"></span></h1>
+                                    <strong class="quote-block__content"><%= @front_matter["quote"] %><span class="icon-quote quote-close"></span></strong>
                                 </div>
                                 <p>
                                     <%= @front_matter["quote_parralel_paragraph"] %>
@@ -40,7 +40,7 @@
                 </div>
 
                 <div class="more-stories">
-                    <h1 class="more-stories_header strapline">More stories</h1>
+                    <h2 class="more-stories_header strapline">More stories</h2>
                     <div class="more-stories__thumbs">
                         <% if @front_matter["more_stories"].count > 0 %>
                             <div class="more-stories__thumbs__thumb">
