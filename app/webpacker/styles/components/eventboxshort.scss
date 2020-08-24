@@ -17,7 +17,7 @@
         width: 100%;
         overflow: hidden;
 
-        h1 {
+        h2 {
             font-size: 19px;
             margin: 0;
         }
@@ -36,8 +36,11 @@
             margin-right: 2px;
         }
 
-        h5 {
+        &__label {
           margin: 15px 0 0 0;
+          font-size: 16px;
+          font-weight: bold;
+          display: block;
         }
         
         p {

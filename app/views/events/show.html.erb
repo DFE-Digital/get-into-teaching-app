@@ -20,11 +20,11 @@
           <p class="content-alert"><%= @event.message %></p>
         <% end %>
 
-        <h1 class="strapline-article">Event information</h1>
+        <h2 class="strapline-article">Event information</h2>
         <p><%= @event.description %></p>
 
         <% if @event.building %>
-        <h1 class="strapline-article">Venue information</h1>
+        <h2 class="strapline-article">Venue information</h2>
         <p><%= @event.building.venue %>, <%= event_address(@event) %>.</p>
         <% if @event.provider_website_url %>
           <p><%= link_to("Visit venue website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
@@ -33,7 +33,7 @@
         <% end %>
 
         <% if event_has_provider_info?(@event) %>
-          <h1 class="strapline-article">Provider information</h1>
+          <h2 class="strapline-article">Provider information</h2>
           <% if @event.provider_website_url %>
             <p><strong>Event website</strong><br /><%= link_to(@event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
           <% end %>
@@ -49,7 +49,7 @@
         <% end %>
 
         <% if @event.video_url %>
-        <h1 class="strapline-article">Video</h1>
+        <h2 class="strapline-article">Video</h2>
         <div class="responsive-video">
           <iframe class="responsive-video__iframe" src="<%= embed_event_video_url(@event.video_url) %>"></iframe>
         </div>
@@ -57,7 +57,7 @@
         <% end %>
 
         <% if @event.web_feed_id %>
-          <h1 class="strapline-article">How to attend</h1>
+          <h2 class="strapline-article">How to attend</h2>
           <p>
               To access this event, please sign up on this page and watch out for the reminder email we will send the day before the event. It will contain an access link to the live online event and a directory of some of the local training providers.
           </p>
@@ -66,10 +66,10 @@
               Sign up for this <span>event</span>
           <% end %>
         <% elsif @event.provider_website_url %>
-          <h1 class="strapline-article">How to attend</h1>
+          <h2 class="strapline-article">How to attend</h2>
           <p>To attend this event, please <%= link_to(@event.provider_website_url, "visit this website", { target: "blank" }) %><i class="icon icon-external"></i>.<p>
         <% elsif @event.provider_contact_email %>
-          <h1 class="strapline-article">How to attend</h1>
+          <h2 class="strapline-article">How to attend</h2>
           <p>To attend this event, please <%= mail_to(@event.provider_contact_email, "email us") %>.<p>
         <% end %>
       </div>
