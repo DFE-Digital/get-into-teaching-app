@@ -5,4 +5,6 @@ Rails.application.configure do
   # Override any production defaults here
   config.x.git_api_endpoint = \
     "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
+
+  config.x.static_pages.disable_caching = true
 end
