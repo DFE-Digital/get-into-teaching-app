@@ -4,7 +4,9 @@ module StaticPages
   def cache_static_page
     config = Rails.application.config.x.static_pages
 
-    if config.etag && Rails.application.config.action_controller.perform_caching
+    if config.etag && !config.disable_caching && \
+        Rails.application.config.action_controller.perform_caching
+
       @cacheable_static_page = true
       expires_in config.expires_in, public: true
 

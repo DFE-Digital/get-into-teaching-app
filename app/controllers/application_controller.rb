@@ -1,5 +1,8 @@
 class ApplicationController < ActionController::Base
+  include UtmCodes
+
   before_action :http_basic_authenticate
+  before_action :record_utm_codes
 
 private
 

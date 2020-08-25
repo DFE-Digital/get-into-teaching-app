@@ -69,4 +69,15 @@ module ApplicationHelper
 
     link_to text, path, **options
   end
+
+  def tta_service_link(opts = nil, &block)
+    return nil if ENV["TTA_SERVICE_URL"].blank?
+
+    url = ENV["TTA_SERVICE_URL"]
+    if Rails.application.config.x.utm_codes && session[:utm]
+      url += "?" + session[:utm].to_param
+    end
+
+    link_to url, opts, &block
+  end
 end
