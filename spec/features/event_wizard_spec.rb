@@ -144,7 +144,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text("Phone number (optional)")
     click_on "Next Step"
 
-    expect(page).to have_text("Postcode (optional)")
+    expect(page).to_not have_text("Postcode (optional)")
     expect(page).to_not have_text("Would you like to receive information about future events")
     expect(page).to_not have_text("Would you like to receive personalised information")
     click_on "Complete sign up"

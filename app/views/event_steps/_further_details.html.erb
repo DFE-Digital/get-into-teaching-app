@@ -18,12 +18,13 @@
 <% end %>
 
 <% unless f.object.already_subscribed_to_mailing_list? %>
-<%= f.govuk_collection_radio_buttons :mailing_list,
-      f.object.subscribe_options, :last, :first,
-      inline: true %>
+  <%= f.govuk_radio_buttons_fieldset :mailing_list do %>
+    <%= f.govuk_radio_button :mailing_list, true, label: { text: 'Yes' }, link_errors: true do %>
+      <%= f.govuk_text_field :address_postcode %>
+    <% end %>
+    <%= f.govuk_radio_button :mailing_list, false, label: { text: 'No' } %>
+  <% end %>
 <% end %>
-
-<%= f.govuk_text_field :address_postcode %>
 
 <%= f.hidden_field :event_id, value: @event.id %>
 <%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>
