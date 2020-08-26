@@ -11,12 +11,6 @@
         label: { text: "Yes" } %>
 <% end %>
 
-<% unless f.object.already_subscribed_to_events? %>
-<%= f.govuk_collection_radio_buttons :future_events,
-      f.object.subscribe_options, :last, :first,
-      inline: true %>
-<% end %>
-
 <% unless f.object.already_subscribed_to_mailing_list? %>
 <%= f.govuk_collection_radio_buttons :mailing_list,
       f.object.subscribe_options, :last, :first,

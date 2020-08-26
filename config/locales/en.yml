@@ -127,8 +127,6 @@ en:
           attributes:
             privacy_policy:
               blank: Accept the privacy policy to continue
-            future_events:
-              inclusion: Choose yes or no
             mailing_list:
               inclusion: Choose yes or no
             address_postcode:
@@ -215,8 +213,6 @@ en:
         privacy_policy:
           text: Are you over 16 and do you agree to our %{link}?
           link: privacy policy
-        future_events: |-
-          Would you like to receive information about future events in your area?
         mailing_list: |-
           Would you like to receive personalised information to help you get into teaching?
       mailing_list_steps_contact:
