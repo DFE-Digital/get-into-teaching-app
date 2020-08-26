@@ -1,4 +1,6 @@
 class PagesController < ApplicationController
+  include StaticPages
+  around_action :cache_static_page, only: %i[show]
   rescue_from ActionView::MissingTemplate, with: :rescue_missing_template
 
   def scribble
