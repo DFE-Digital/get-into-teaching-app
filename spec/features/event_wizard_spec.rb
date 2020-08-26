@@ -39,7 +39,6 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Accept the privacy policy to continue"
     expect(page).to have_text "Choose yes or no"
     check "Yes"
-    choose "events-steps-further-details-future-events-field-error"
     choose "events-steps-further-details-mailing-list-field"
     click_on "Complete sign up"
 
@@ -79,7 +78,6 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Accept the privacy policy to continue"
     expect(page).to have_text "Choose yes or no"
     check "Yes"
-    choose "events-steps-further-details-future-events-field"
     choose "events-steps-further-details-mailing-list-field-error"
     click_on "Complete sign up"
 
