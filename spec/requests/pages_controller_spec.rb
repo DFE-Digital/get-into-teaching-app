@@ -56,4 +56,24 @@ describe PagesController do
       it { is_expected.to have_attributes body: %r{Page not found} }
     end
   end
+
+  describe "redirect to TTA site" do
+    include_context "stub env vars", "TTA_SERVICE_URL" => "https://tta-service/"
+    subject { response }
+
+    context "with /tta-service url" do
+      before { get "/tta-service" }
+      it { is_expected.to redirect_to "https://tta-service/" }
+    end
+
+    context "with /tta url" do
+      before { get "/tta" }
+      it { is_expected.to redirect_to "https://tta-service/" }
+    end
+
+    context "with utm params" do
+      before { get "/tta-service?utm_test=abc&test=def" }
+      it { is_expected.to redirect_to "https://tta-service/?utm_test=abc" }
+    end
+  end
 end
