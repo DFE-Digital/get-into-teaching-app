@@ -3,6 +3,8 @@
   <%= render "sections/head" %>
 
   <%= analytics_body_tag class: "govuk-template__body govuk-body" do %>
+    <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
     <div id="skiplink-container">
       <div>
         <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
