@@ -15,9 +15,11 @@
         <div class="events-featured__text">
           <p><%= t("find_an_event.types.#{type_name.parameterize(separator: "_")}") %></p>
         </div>
-        <div class="events-featured__items">
-        <%= render partial: "events/event", collection: events %>
-        </div>
+        <% events.in_groups_of(3, false) do |events_on_row| %>
+          <div class="events-featured__items">
+          <%= render partial: "events/event", collection: events_on_row %>
+          </div>
+        <% end %>
         <%= link_to(event_category_events_path(type_name.parameterize)) do %>
             <div class="call-to-action-button">See all <%= type_name.pluralize %> <i class="fas fa-chevron-right"></i></div>
         <% end %>
