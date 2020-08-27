@@ -66,6 +66,11 @@ describe EventsHelper, type: "helper" do
       expect(event_address(event)).to be_nil
     end
 
+    it "returns only the address_city if the event is online" do
+      event.is_online = true
+      expect(event_address(event)).to be(event.building.address_city)
+    end
+
     it "returns the address, comma separated with line breaks between parts" do
       expect(event.building).to_not be_nil
       expect(event_address(event)).to eq("Line 1,\nLine 2,\nManchester,\nMA1 1AM")
