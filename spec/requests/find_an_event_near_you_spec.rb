@@ -23,12 +23,8 @@ describe "Find an event near you" do
 
     it { is_expected.to have_http_status :success }
 
-    it "displays the first 3 events categorised and under 'all events'" do
-      expect(response.body.scan(/Event [1-3]/).count).to eq(6)
-    end
-
-    it "displays >3 events only under 'all events'" do
-      expect(response.body.scan(/Event [4-5]/).count).to eq(2)
+    it "displays all events" do
+      expect(response.body.scan(/Event [1-5]/).count).to eq(5)
     end
 
     context "when there are no results" do
@@ -66,6 +62,15 @@ describe "Find an event near you" do
 
     it "displays all events of that type" do
       expect(response.body.scan(/Event \d/).count).to eq(events.count)
+    end
+
+    it "categorises the results" do
+      headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
+      expected_headings = [
+        "Train to Teach Events",
+      ]
+
+      expect(headings & expected_headings).to eq(expected_headings)
     end
 
     context "when there are no results" do

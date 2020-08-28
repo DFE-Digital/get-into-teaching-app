@@ -1,8 +1,6 @@
 class EventsController < ApplicationController
   before_action :load_events, only: %i[index search]
-  before_action :categorise_events, only: %i[index]
-
-  EVENTS_PER_CATEGORY = 3
+  before_action :categorise_events, only: %i[index search]
 
   def index
     @page_title = "Find an event near you"
@@ -47,8 +45,6 @@ private
 
       hash[category_name] ||= {}
       hash[category_name][type_name] ||= []
-
-      next if hash[category_name][type_name].count == EVENTS_PER_CATEGORY
 
       hash[category_name][type_name] << event
     end

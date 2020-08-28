@@ -23,7 +23,6 @@ RSpec.feature "Finding an event", type: :feature do
 
     expect(page).to have_text "Search for events"
     expect(page).to have_css "h2", text: "Organised by Get into Teaching"
-    expect(page).to have_css "h2", text: "All events"
 
     click_on(event.name)
 
@@ -40,7 +39,6 @@ RSpec.feature "Finding an event", type: :feature do
     click_on "Update results"
 
     expect(page).not_to have_css "h2", text: "Organized by Get into Teaching"
-    expect(page).not_to have_css "h2", text: "All events"
 
     click_on(event.name)
 
