@@ -78,6 +78,9 @@ describe EventsController do
           it { is_expected.to include(event.description) }
           it { is_expected.to include(event.message) }
           it { is_expected.to include(event.building.venue) }
+          it { is_expected.to match(/#{event.building.address_line1}/) }
+          it { is_expected.to match(/#{event.building.address_line2}/) }
+          it { is_expected.to match(/#{event.building.address_postcode}/) }
           it { is_expected.to match(/iframe.+src="#{event.video_url}"/) }
           it { is_expected.to include(event.provider_website_url) }
           it { is_expected.to include(event.provider_target_audience) }
@@ -101,6 +104,15 @@ describe EventsController do
           let(:event) { build(:event_api, web_feed_id: nil, provider_website_url: "http://event.com", readable_id: event_readable_id) }
 
           it { is_expected.to match(/To attend this event, please <a.*visit this website.*a>/) }
+        end
+
+        context "when the event is online" do
+          let(:event) { build(:event_api, is_online: true) }
+
+          it { is_expected.to_not match(/#{event.building.venue}/) }
+          it { is_expected.to_not match(/#{event.building.address_line1}/) }
+          it { is_expected.to_not match(/#{event.building.address_line2}/) }
+          it { is_expected.to_not match(/#{event.building.address_postcode}/) }
         end
       end
     end

@@ -10,6 +10,7 @@ FactoryBot.define do
     video_url { "https://video.com" }
     sequence(:start_at) { |i| i.weeks.from_now }
     end_at { start_at }
+    is_online { false }
     building { build :event_building_api }
 
     trait :with_provider_info do

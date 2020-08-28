@@ -31,6 +31,7 @@ module EventsHelper
   def event_address(event)
     building = event.building
     return nil unless building
+    return building.address_city if event.is_online
 
     [
       building.address_line1,
