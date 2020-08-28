@@ -1,7 +1,8 @@
 @charset 'UTF-8';
 
-@import "~govuk-frontend/govuk/all";
 @import './git.scss';
+@import "~govuk-frontend/govuk/all";
+@import './govuk-reset.scss';
 
 $fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
