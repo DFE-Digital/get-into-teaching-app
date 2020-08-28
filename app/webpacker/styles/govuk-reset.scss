@@ -1,0 +1,21 @@
+/**
+ * As well as our own stylesheet, we also import the GOV.UK design system styles.
+ *
+ * There are a number of generic selectors used in our stylesheets (anchor
+ * tags, lists, etc) that end up adding attributes to some of the GOV.UK styles. 
+ * We need to undo these style changes when they occur, which is what this set of
+ * styles is for.
+ */
+
+.govuk-error-summary__list a:link, .govuk-error-summary__list a:visited, .govuk-error-summary__list a:hover, .govuk-error-summary__list a:active {
+  text-decoration: underline;
+}
+
+.govuk-error-summary__body ul.govuk-error-summary__list {
+  padding-left: 0;
+  list-style-type: none;
+}
+
+h2.govuk-error-summary__title {
+  margin-bottom: 20px;
+}
