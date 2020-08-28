@@ -38,6 +38,14 @@
                     text-decoration: none;
                 }
             }
+
+            &__column:first-child {
+                display: none;
+            }
+
+            &__column:last-child {
+                width: 100%;
+            }
         }
 
         &__freephone {

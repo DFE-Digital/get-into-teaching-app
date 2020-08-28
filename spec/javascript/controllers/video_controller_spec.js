@@ -6,7 +6,7 @@ describe('AccordionController', () => {
     document.body.innerHTML = 
     `
     <div data-controller="video">
-        <a href="https://www.youtube.com/watch?v=MLdrZJpK5rU" target="_blank" data-action="click->video#play" data-target="video.link">
+        <a href="https://www.youtube.com/watch?v=MLdrZJpK5rU" target="_blank rel="noopener"" data-action="click->video#play" data-target="video.link">
             <div class="content-video">
                 <img src="/assets/images/case-study-helen.png" alt="Helen's story">
                 <div class="content-video__play">
