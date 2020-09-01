@@ -39,6 +39,8 @@ describe PagesController do
         etag = response.headers["ETag"]
         lastmod = response.headers["Last-Modified"]
 
+        expect(lastmod).not_to be_nil
+
         get "/test", headers: {
           "If-None-Match" => etag,
           "If-Modified-Since" => lastmod,
