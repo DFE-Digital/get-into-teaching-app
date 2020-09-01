@@ -1,9 +1,11 @@
 require "rails_helper"
 
 describe PagesController do
+  let(:template) { "testing/markdown_test" }
+
   before do
     allow_any_instance_of(described_class).to \
-      receive(:content_template).and_return "testing/markdown_test"
+      receive(:content_template).and_return template
   end
 
   context "#show" do
@@ -44,6 +46,34 @@ describe PagesController do
 
         expect(response).to have_http_status 304
       end
+    end
+
+    context "for unknown page" do
+      let(:template) { "testing/unknown" }
+      before { get "/test" }
+      subject { response }
+      it { is_expected.to have_http_status :not_found }
+      it { is_expected.to have_attributes body: %r{Page not found} }
+    end
+  end
+
+  describe "redirect to TTA site" do
+    include_context "stub env vars", "TTA_SERVICE_URL" => "https://tta-service/"
+    subject { response }
+
+    context "with /tta-service url" do
+      before { get "/tta-service" }
+      it { is_expected.to redirect_to "https://tta-service/" }
+    end
+
+    context "with /tta url" do
+      before { get "/tta" }
+      it { is_expected.to redirect_to "https://tta-service/" }
+    end
+
+    context "with utm params" do
+      before { get "/tta-service?utm_test=abc&test=def" }
+      it { is_expected.to redirect_to "https://tta-service/?utm_test=abc" }
     end
   end
 end

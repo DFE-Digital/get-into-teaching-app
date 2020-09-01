@@ -78,21 +78,4 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body.homepage" }
     end
   end
-
-  describe "#tta_service_link" do
-    before { allow(ENV).to receive(:[]).with("TTA_SERVICE_URL") { tta_url } }
-    subject { tta_service_link(class: "test") { "Testing" } }
-
-    context "with link set" do
-      let(:tta_url) { "https://tta-service/" }
-      it { is_expected.to have_css "a[href=\"https://tta-service/\"]" }
-      it { is_expected.to have_css "a.test" }
-      it { is_expected.to have_css "a", text: "Testing" }
-    end
-
-    context "without link set" do
-      let(:tta_url) { nil }
-      it { is_expected.to be_nil }
-    end
-  end
 end
