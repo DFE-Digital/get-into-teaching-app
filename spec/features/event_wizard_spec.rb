@@ -35,7 +35,7 @@ RSpec.feature "Event wizard", type: :feature do
     within_fieldset "Would you like to receive personalised information" do
       choose "Yes"
     end
-    click_on "Next Step"
+    click_on "Complete sign up"
 
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
@@ -43,9 +43,38 @@ RSpec.feature "Event wizard", type: :feature do
       check "Yes"
     end
 
-    click_on "Next Step"
+    click_on "Complete sign up"
 
     fill_in "Postcode (optional)", with: "TE57 1NG"
+    click_on "Complete sign up"
+
+    expect(page).to have_text "What happens next"
+  end
+
+  scenario "Full journey as a new candidate declining the mailing list option" do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+
+    visit event_steps_path(event_id: event_readable_id)
+
+    expect(page).to have_text "Sign up for this event"
+    expect(page).to have_text event_name
+    fill_in_personal_details_step
+    click_on "Next Step"
+
+    fill_in "Phone number (optional)", with: "01234567890"
+    click_on "Next Step"
+
+    within_fieldset "Would you like to receive personalised information" do
+      choose "No"
+    end
+    click_on "Complete sign up"
+
+    expect(page).to have_text "There is a problem"
+    expect(page).to have_text "Accept the privacy policy to continue"
+    within_fieldset "Are you over 16 and do you agree" do
+      check "Yes"
+    end
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
@@ -78,7 +107,8 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "Are you over 16 and do you agree"
-    click_on "Next Step"
+    expect(page).to have_text "Would you like to receive personalised information"
+    click_on "Complete sign up"
 
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
@@ -90,10 +120,10 @@ RSpec.feature "Event wizard", type: :feature do
     within_fieldset "Would you like to receive personalised information" do
       choose "Yes"
     end
-    choose "events-steps-further-details-mailing-list-field-error"
-    click_on "Next Step"
+    choose "events-steps-further-details-subscribe-to-mailing-list-field-error"
+    click_on "Complete sign up"
 
-    expect(page).to have_field("Postcode (optional)", with: response.address_postcode)
+    fill_in "Postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
@@ -159,7 +189,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     expect(page).to have_text("Are you over 16 and do you agree")
     expect(page).to_not have_text("Would you like to receive personalised information")
-    click_on "Next Step"
+    click_on "Complete sign up"
 
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
@@ -168,9 +198,6 @@ RSpec.feature "Event wizard", type: :feature do
     within_fieldset "Are you over 16 and do you agree" do
       check "Yes"
     end
-    click_on "Next Step"
-
-    expect(page).to have_text("Postcode (optional)")
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"

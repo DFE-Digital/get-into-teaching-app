@@ -127,7 +127,7 @@ en:
           attributes:
             privacy_policy:
               blank: Accept the privacy policy to continue
-            mailing_list:
+            subscribe_to_mailing_list:
               inclusion: Choose yes or no
         events/steps/personalised_updates:
             address_postcode:
@@ -214,7 +214,7 @@ en:
         privacy_policy:
           text: Are you over 16 and do you agree to our %{link}?
           link: privacy policy
-        mailing_list: |-
+        subscribe_to_mailing_list: |-
           Would you like to receive personalised information to help you get into teaching?
       mailing_list_steps_contact:
         accept_privacy_policy:

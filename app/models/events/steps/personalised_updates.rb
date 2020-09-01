@@ -8,6 +8,10 @@ module Events
       before_validation if: :address_postcode do
         self.address_postcode = address_postcode.to_s.strip.presence
       end
+
+      def skipped?
+        !@store["subscribe_to_mailing_list"]
+      end
     end
   end
 end

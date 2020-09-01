@@ -8,7 +8,7 @@ describe Events::Steps::FurtherDetails do
   context "attributes" do
     it { is_expected.to respond_to :event_id }
     it { is_expected.to respond_to :privacy_policy }
-    it { is_expected.to respond_to :mailing_list }
+    it { is_expected.to respond_to :subscribe_to_mailing_list }
     it { is_expected.to respond_to :accepted_policy_id }
   end
 
@@ -20,16 +20,15 @@ describe Events::Steps::FurtherDetails do
     it { is_expected.not_to allow_value("0").for :privacy_policy }
     it { is_expected.not_to allow_value("").for :privacy_policy }
 
-    it { is_expected.to allow_value("1").for :mailing_list }
-    it { is_expected.to allow_value("0").for :mailing_list }
-    it { is_expected.not_to allow_value("").for :mailing_list }
-  end
+    it { is_expected.to allow_value("1").for :subscribe_to_mailing_list }
+    it { is_expected.to allow_value("0").for :subscribe_to_mailing_list }
+    it { is_expected.not_to allow_value("").for :subscribe_to_mailing_list }
 
-  context "data cleaning" do
-    it "defaults mailing_list if already subscribed" do
-      wizardstore["already_subscribed_to_mailing_list"] = true
-      subject.valid?
-      expect(subject.mailing_list).to be_truthy
+    context "already_subscribed" do
+      let(:backingstore) { { "already_subscribed_to_mailing_list" => true } }
+      it { is_expected.to allow_value("1").for :subscribe_to_mailing_list }
+      it { is_expected.to allow_value("0").for :subscribe_to_mailing_list }
+      it { is_expected.to allow_value("").for :subscribe_to_mailing_list }
     end
   end
 
@@ -44,7 +43,7 @@ describe Events::Steps::FurtherDetails do
       it "does not update the store" do
         expect(subject).to_not be_valid
         subject.save
-        expect(wizardstore["subscribe_to_events"]).to be_nil
+        expect(wizardstore["subscribe_to_mailing_list"]).to be_nil
       end
     end
 
@@ -60,14 +59,14 @@ describe Events::Steps::FurtherDetails do
       end
 
       it "updates the store if the candidate subscribes" do
-        subject.mailing_list = true
+        subject.subscribe_to_mailing_list = true
         expect(subject).to be_valid
         subject.save
         expect(wizardstore["subscribe_to_mailing_list"]).to be_truthy
       end
 
       it "updates the store if the candidate does not subscribe" do
-        subject.mailing_list = false
+        subject.subscribe_to_mailing_list = false
         expect(subject).to be_valid
         subject.save
         expect(wizardstore["subscribe_to_mailing_list"]).to be_falsy
