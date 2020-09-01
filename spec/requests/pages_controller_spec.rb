@@ -1,9 +1,11 @@
 require "rails_helper"
 
 describe PagesController do
+  let(:template) { "testing/markdown_test" }
+
   before do
     allow_any_instance_of(described_class).to \
-      receive(:content_template).and_return "testing/markdown_test"
+      receive(:content_template).and_return template
   end
 
   context "#show" do
@@ -44,6 +46,14 @@ describe PagesController do
 
         expect(response).to have_http_status 304
       end
+    end
+
+    context "for unknown page" do
+      let(:template) { "testing/unknown" }
+      before { get "/test" }
+      subject { response }
+      it { is_expected.to have_http_status :not_found }
+      it { is_expected.to have_attributes body: %r{Page not found} }
     end
   end
 end
