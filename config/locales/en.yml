@@ -129,6 +129,7 @@ en:
               blank: Accept the privacy policy to continue
             mailing_list:
               inclusion: Choose yes or no
+        events/steps/personalised_updates:
             address_postcode:
               invalid: Enter a valid postcode, or leave blank
 
@@ -177,7 +178,7 @@ en:
         telephone: Phone number (optional)
       wizard_steps_authenticate:
         timed_one_time_password: Enter the verification code sent to %{email}
-      events_steps_further_details:
+      events_steps_personalised_updates:
         address_postcode: Postcode (optional)
       mailing_list_steps_name:
         first_name: First name
@@ -203,7 +204,7 @@ en:
           text: Check your junk mail folder or %{link}.
           resent: We've sent you another email.
           link: resend verification
-      events_steps_further_details:
+      events_steps_personalised_updates:
         address_postcode: |-
           Enter your postcode so that we can send you event information
           specificities to your area.

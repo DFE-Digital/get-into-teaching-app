@@ -32,14 +32,20 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Phone number (optional)", with: "01234567890"
     click_on "Next Step"
 
-    fill_in "Postcode (optional)", with: "TE57 1NG"
-    click_on "Complete sign up"
+    within_fieldset "Would you like to receive personalised information" do
+      choose "Yes"
+    end
+    click_on "Next Step"
 
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
-    expect(page).to have_text "Choose yes or no"
-    check "Yes"
-    choose "events-steps-further-details-mailing-list-field"
+    within_fieldset "Are you over 16 and do you agree" do
+      check "Yes"
+    end
+
+    click_on "Next Step"
+
+    fill_in "Postcode (optional)", with: "TE57 1NG"
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
@@ -71,14 +77,23 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_field("Phone number (optional)", with: response.telephone)
     click_on "Next Step"
 
-    expect(page).to have_field("Postcode (optional)", with: response.address_postcode)
-    click_on "Complete sign up"
+    expect(page).to have_text "Are you over 16 and do you agree"
+    click_on "Next Step"
 
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
     expect(page).to have_text "Choose yes or no"
-    check "Yes"
+
+    within_fieldset "Are you over 16 and do you agree" do
+      check "Yes"
+    end
+    within_fieldset "Would you like to receive personalised information" do
+      choose "Yes"
+    end
     choose "events-steps-further-details-mailing-list-field-error"
+    click_on "Next Step"
+
+    expect(page).to have_field("Postcode (optional)", with: response.address_postcode)
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
@@ -142,15 +157,20 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text("Phone number (optional)")
     click_on "Next Step"
 
-    expect(page).to have_text("Postcode (optional)")
-    expect(page).to_not have_text("Would you like to receive information about future events")
+    expect(page).to have_text("Are you over 16 and do you agree")
     expect(page).to_not have_text("Would you like to receive personalised information")
-    click_on "Complete sign up"
+    click_on "Next Step"
 
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
     expect(page).to_not have_text "Choose yes or no"
-    check "Yes"
+
+    within_fieldset "Are you over 16 and do you agree" do
+      check "Yes"
+    end
+    click_on "Next Step"
+
+    expect(page).to have_text("Postcode (optional)")
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"

@@ -17,7 +17,5 @@
       inline: true %>
 <% end %>
 
-<%= f.govuk_text_field :address_postcode %>
-
 <%= f.hidden_field :event_id, value: @event.id %>
 <%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>
