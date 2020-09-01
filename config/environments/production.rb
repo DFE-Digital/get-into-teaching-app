@@ -37,6 +37,9 @@ Rails.application.configure do
 
   # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
   # config.force_ssl = true
+  unless ENV["SKIPSSL"].in? %w[1 true yes]
+    config.force_ssl = true
+  end
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
