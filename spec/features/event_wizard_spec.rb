@@ -45,7 +45,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     click_on "Complete sign up"
 
-    fill_in "Postcode (optional)", with: "TE57 1NG"
+    fill_in_personalised_updates
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
@@ -123,7 +123,7 @@ RSpec.feature "Event wizard", type: :feature do
     choose "events-steps-further-details-subscribe-to-mailing-list-field-error"
     click_on "Complete sign up"
 
-    fill_in "Postcode (optional)", with: "TE57 1NG"
+    fill_in_personalised_updates
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
@@ -211,5 +211,26 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "First name", with: first_name if first_name
     fill_in "Surname", with: last_name if last_name
     fill_in "Email address", with: email if email
+  end
+
+  def fill_in_personalised_updates(
+    degree_status: nil,
+    consideration_journey_stage: nil,
+    postcode: "TE57 1NG",
+    preferred_teaching_subject: nil
+  )
+    select_value_or_default "What stage are you at with your degree?", degree_status
+    select_value_or_default "How close are you to applying for teacher training?", consideration_journey_stage
+    fill_in "What is your postcode? (optional)", with: postcode
+    select_value_or_default "What subject do you want to teach?", preferred_teaching_subject
+  end
+
+  def select_value_or_default(label, value = nil)
+    if value
+      select(value, from: label)
+    else
+      # choosing second option because first is 'Please select'
+      find_field(label).find("option:nth-of-type(2)").select_option
+    end
   end
 end

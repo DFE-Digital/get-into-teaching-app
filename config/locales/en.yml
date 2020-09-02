@@ -130,8 +130,15 @@ en:
             subscribe_to_mailing_list:
               inclusion: Choose yes or no
         events/steps/personalised_updates:
+          attributes:
             address_postcode:
               invalid: Enter a valid postcode, or leave blank
+            degree_status_id:
+              inclusion: Select the stage of your degree you are at
+            consideration_journey_stage_id:
+              inclusion: Select how close you are to applying for teacher training
+            preferred_teaching_subject_id:
+              inclusion: Select the subject do you want to teach
 
         mailing_list/steps/name:
           attributes:
@@ -170,16 +177,21 @@ en:
 
   helpers:
     label:
+      wizard_steps_authenticate:
+        timed_one_time_password: Enter the verification code sent to %{email}
+
       events_steps_personal_details:
         first_name: First name
         last_name: Surname
         email: Email address
       events_steps_contact_details:
         telephone: Phone number (optional)
-      wizard_steps_authenticate:
-        timed_one_time_password: Enter the verification code sent to %{email}
       events_steps_personalised_updates:
-        address_postcode: Postcode (optional)
+        address_postcode: What is your postcode? (optional)
+        degree_status_id: What stage are you at with your degree?
+        consideration_journey_stage_id: How close are you to applying for teacher training?
+        preferred_teaching_subject_id: What subject do you want to teach?
+
       mailing_list_steps_name:
         first_name: First name
         last_name: Surname
