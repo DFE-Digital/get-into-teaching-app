@@ -1268,6 +1268,15 @@
   dependencies:
     "@stimulus/multimap" "^1.1.1"
 
+"@stimulus/polyfills@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/@stimulus/polyfills/-/polyfills-1.1.1.tgz#02bacbb8de1ff592200f20a440d382608160b1f5"
+  integrity sha512-QDdxHvkFozgxEHzhVZQkiKPmgSNdjhnwkrsuRu88v0UohgzxUrSV8MNJEJCs9AqNdpCIY3XmaXItjJe0MnVFIg==
+  dependencies:
+    core-js "^2.5.3"
+    element-closest "^2.0.2"
+    mutation-observer-inner-html-shim "^1.0.0"
+
 "@stimulus/test@^1.1.1":
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/@stimulus/test/-/test-1.1.1.tgz#118d7f4be1d0d6b5e16900c344ab503f765f1d68"
@@ -2697,6 +2706,11 @@ core-js-compat@^3.6.2:
     browserslist "^4.8.5"
     semver "7.0.0"
 
+core-js@^2.5.3:
+  version "2.6.11"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
+  integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
+
 core-js@^3.6.4:
   version "3.6.5"
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
@@ -3286,6 +3300,11 @@ electron-to-chromium@^1.3.413:
   version "1.3.414"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.414.tgz#9d0a92defefda7cc1cf8895058b892795ddd6b41"
   integrity sha512-UfxhIvED++qLwWrAq9uYVcqF8FdeV9sU2S7qhiHYFODxzXRrd1GZRl/PjITHsTEejgibcWDraD8TQqoHb1aCBQ==
+
+element-closest@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/element-closest/-/element-closest-2.0.2.tgz#72a740a107453382e28df9ce5dbb5a8df0f966ec"
+  integrity sha1-cqdAoQdFM4LijfnOXbtajfD5Zuw=
 
 elliptic@^6.0.0:
   version "6.5.3"
@@ -5891,6 +5910,11 @@ multicast-dns@^6.0.1:
   dependencies:
     dns-packet "^1.3.1"
     thunky "^1.0.2"
+
+mutation-observer-inner-html-shim@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mutation-observer-inner-html-shim/-/mutation-observer-inner-html-shim-1.0.1.tgz#84349f51dfc390d0af85011de8fa14e645fb400e"
+  integrity sha512-YmJPDSUWJgBhwqRJP6AMvjdfDHU1gsrT5YdgpxMit2+x1khLYhdYq9fvp4clPsYecVT3JOprBf/KjEX7IqlU+g==
 
 nan@^2.12.1, nan@^2.13.2:
   version "2.14.1"
