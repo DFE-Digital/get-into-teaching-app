@@ -35,7 +35,7 @@ export default class extends Controller {
   }
 
   get fieldInputs() {
-    return this.showhideTarget.querySelectorAll('input,select') ;
+    return Array.from(this.showhideTarget.querySelectorAll('input,select'))
   }
 
   hideField() {
