@@ -10,7 +10,6 @@ export default class extends Controller {
 
     showChatControls() {
         this.chatTarget.style.display = 'inline-block';
-        this.ttaTarget.style.width = "48%";
     }
 
     startChat(e) {
