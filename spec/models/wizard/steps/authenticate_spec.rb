@@ -22,7 +22,7 @@ describe Wizard::Steps::Authenticate do
     it { is_expected.not_to allow_value("12345").for :timed_one_time_password }
   end
 
-  describe "skipped?" do
+  describe "#skipped?" do
     it "returns true if authenticate is false" do
       wizardstore["authenticate"] = false
       expect(subject).to be_skipped
@@ -31,6 +31,24 @@ describe Wizard::Steps::Authenticate do
     it "returns false if authenticate is true" do
       wizardstore["authenticate"] = true
       expect(subject).to_not be_skipped
+    end
+  end
+
+  describe "#export" do
+    it "returns a hash containing the matchback fields" do
+      wizardstore["candidate_id"] = "abc-123"
+      wizardstore["qualification_id"] = "def-456"
+      subject.timed_one_time_password = "123456"
+      expect(subject.export).to eq({
+        "candidate_id" => "abc-123",
+        "qualification_id" => "def-456",
+      })
+    end
+
+    it "does not include matchback fields in export if skipped" do
+      wizardstore["candidate_id"] = "abc-123"
+      allow_any_instance_of(described_class).to receive(:skipped?) { true }
+      expect(subject.export.values).to all(be_nil)
     end
   end
 
