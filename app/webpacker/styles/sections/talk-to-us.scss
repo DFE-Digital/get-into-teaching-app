@@ -19,13 +19,13 @@
 
         &__table {
             width: 100%;
-
+            display: flex;
             &__column {
                 display: inline-block;
                 box-sizing: border-box;
                 padding-left: 20px;
                 padding-right: 20px;
-                width:48%;
+                flex: 1;
                 min-width: 245px;
                 vertical-align: top;
 
@@ -44,7 +44,7 @@
             }
 
             &__column:last-child {
-                width: 100%;
+                flex: 1;
             }
         }
 
@@ -73,6 +73,7 @@
             }
     
             &__table {
+                flex-direction: column;
                 &__column {
                     display: block;
                     width: 100%;
@@ -80,6 +81,10 @@
                     padding-left: 0px;
                     padding-right: 0px;
                 }
+            }
+            &__freephone {
+                padding-left: 0px;
+                padding-right: 0px;
             }
         }
         

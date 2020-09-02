@@ -1,20 +1,35 @@
 <footer>
     <%= render "sections/talk-to-us" %>
     <div class="footer-top">
+        <div class="footer-top__social">
+          <a href="https://www.facebook.com/getintoteaching" class="footer-top__social__link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-facebook-f"></i>
+            <span class="visually-hidden">Facebook - opens in a new tab</span>
+          </a>
+          <a href="https://www.instagram.com/get_into_teaching/" class="footer-top__social__link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-instagram"></i>
+            <span class="visually-hidden">Instagram - opens in a new tab</span>
+          </a>
+          <a href="https://www.linkedin.com/company/9258520?trk=tyah&trkInfo=idx%3A1-1-1%2CtarId%3A1424345327269%2Ctas%3Aget+into+teaching" class="footer-top__social__link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+            <span class="visually-hidden">LinkedIn - opens in a new tab</span>
+          </a>
+          <a href="https://twitter.com/getintoteaching" class="footer-top__social__link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+            <span class="visually-hidden">Twitter - opens in a new tab</span>
+          </a>
+          <a href="http://www.youtube.com/user/getintoteaching" class="footer-top__social__link" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-youtube"></i>
+            <span class="visually-hidden">Youtube - opens in a new tab</span>
+          </a>
+        </div>
+        
         <div class="footer-top__links-container">
             <a href="/">Home</a>
             <% navigation_resources(@sitemap).each_with_index do |resource, index| %>
-              <% if index == 2 %>
-                <span><br /><br /></span>
-              <% else %>
-                <span> | </span>
-              <% end %>
               <a href="<%= resource[:path] %>"><%= resource[:front_matter]["title"] %></a>
             <% end %>
-            <span> | </span>
             <%= link_to "Find an event near you", events_path %>
-            <span> | </span>
-            <a href="/">Talk to us</a>
         </div>
     </div>
     <div class="footer-bottom">
@@ -23,13 +38,9 @@
         </div>
         <div class="footer-bottom__links-container">
             <a href="/">Feedback</a>
-            <span> | </span>
             <a href="/">Cookies</a>
-            <span> | </span>
             <a href="/privacy-policy">Privacy notice</a>
-            <span> | </span>
             <a href="/accessibility">Accessibility</a>
-            <span><br/><br/></span>
             <div class="footer-bottom__links-container__license">All content is available under the <a href="/">Open Government License v.3.0,</a> except where otherwise stated</div>
         </div>
     </div>
