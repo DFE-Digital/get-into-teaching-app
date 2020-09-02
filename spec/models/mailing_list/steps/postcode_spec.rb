@@ -9,8 +9,8 @@ describe MailingList::Steps::Postcode do
   context "address_postcode" do
     it { is_expected.to allow_value("TE57 1NG").for :address_postcode }
     it { is_expected.to allow_value("  TE571NG  ").for :address_postcode }
-    it { is_expected.not_to allow_value(nil).for :address_postcode }
-    it { is_expected.not_to allow_value("").for :address_postcode }
+    it { is_expected.to allow_value(nil).for :address_postcode }
+    it { is_expected.to allow_value("").for :address_postcode }
     it { is_expected.not_to allow_value("random").for :address_postcode }
   end
 

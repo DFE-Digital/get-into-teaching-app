@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
   get "/scribble", to: "pages#scribble", via: :all, as: nil
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
+  get "/tta-service", to: "pages#tta_service", as: :tta_service
+  get "/tta", to: "pages#tta_service", as: nil
 
   resources "events", path: "/events", only: %i[index show search] do
     collection do
