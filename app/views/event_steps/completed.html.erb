@@ -3,10 +3,18 @@
         <div class="content__left">
             <h1 class="strapline">Sign up complete</h1>
             <br/><br/>	
-            <p>You are signed up for the following event:</p>
+            <h3>You are signed up for the following event:</h3>
 
             <b><%= @event.name %></b>
             <p><%= format_event_date @event, stacked: false %></p>
+
+            <%- if params[:subscribed].to_s == "1" -%>
+            <h3>You've also signed up for personalised updates</h3>
+            <p>
+                You're ready to receive personalised updates to help you get
+                into teaching.
+            </p>
+            <%- end -%>
 
             <h2>What happens next?</h2>
             <p>

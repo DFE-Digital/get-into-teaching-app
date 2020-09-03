@@ -6,10 +6,18 @@ class EventStepsController < ApplicationController
 
 private
 
-  def step_path(step = params[:id])
-    event_step_path params[:event_id], step
+  def step_path(step = params[:id], urlparams = {})
+    event_step_path params[:event_id], step, urlparams
   end
   helper_method :step_path
+
+  def completed_step_path
+    if wizard_store["subscribe_to_mailing_list"]
+      step_path :completed, subscribed: 1
+    else
+      step_path :completed
+    end
+  end
 
   def wizard_store
     Wizard::Store.new session_store
