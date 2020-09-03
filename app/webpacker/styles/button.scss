@@ -5,7 +5,7 @@
     letter-spacing: 0px;
     box-sizing: border-box;
     display: inline-block;
-    padding: 18px 20px 16px 20px;
+    padding: 14px 20px 16px 20px;
     border: none;
 
     i {
@@ -32,10 +32,26 @@
             border-width: 3px 3px 0px 0px;
             transform: rotate(45deg);
             top: 1px;
+            margin-left: 5px;
         }
     }
     &:hover {
         background-color: $green-dark;
+    }
+}
+
+.sidebar-button {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    position: relative;
+    padding-right: 30px;
+    span:last-child {
+        &:after {
+            position: absolute;
+            top: calc(50% - 6px);
+            right: 13px;
+        }
     }
 }
 
