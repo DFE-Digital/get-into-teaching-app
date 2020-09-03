@@ -1,4 +1,4 @@
-require "rails_helper" 
+require "rails_helper"
 
 RSpec.feature "Finding an event", type: :feature do
   include_context "stub types api"
