@@ -12,9 +12,16 @@
 <% end %>
 
 <% unless f.object.already_subscribed_to_mailing_list? %>
-<%= f.govuk_collection_radio_buttons :subscribe_to_mailing_list,
-      f.object.subscribe_options, :last, :first,
-      inline: true %>
+  <div data-controller="last-step" data-last-step-complete="Complete sign up" data-last-step-continue="Next Step">
+    <div data-action="click->last-step#updateSubmit">
+      <%= f.govuk_radio_buttons_fieldset :subscribe_to_mailing_list, inline: true do %>
+        <%= f.govuk_radio_button :subscribe_to_mailing_list, true, label: { text: "Yes" } %>
+        <div data-target="last-step.complete">
+        <%= f.govuk_radio_button :subscribe_to_mailing_list, false, label: { text: "No" } %>
+        </div>
+      <% end %>
+    </div>
+  </div>
 <% end %>
 
 <%= f.hidden_field :event_id, value: @event.id %>

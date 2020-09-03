@@ -1,8 +1,6 @@
 module Events
   module Steps
     class FurtherDetails < ::Wizard::Step
-      SUBSCRIBE_OPTIONS = [["Yes", true], ["No", false]].freeze
-
       attribute :event_id
       attribute :privacy_policy, :boolean
       attribute :subscribe_to_mailing_list, :boolean
@@ -14,10 +12,6 @@ module Events
 
       def latest_privacy_policy
         @latest_privacy_policy ||= GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
-      end
-
-      def subscribe_options
-        SUBSCRIBE_OPTIONS
       end
 
       def already_subscribed_to_mailing_list?

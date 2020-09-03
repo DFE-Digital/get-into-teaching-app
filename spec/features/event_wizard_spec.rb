@@ -124,7 +124,6 @@ RSpec.feature "Event wizard", type: :feature do
     within_fieldset "Would you like to receive personalised information" do
       choose "Yes"
     end
-    choose "events-steps-further-details-subscribe-to-mailing-list-field-error"
     click_on "Complete sign up"
 
     fill_in_personalised_updates
