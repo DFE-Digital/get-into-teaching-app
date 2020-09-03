@@ -1,19 +1,19 @@
 <%= f.govuk_collection_select :degree_status_id,
       f.object.degree_status_options,
-      :first,
-      :last,
+      :id,
+      :value,
       options: { prompt: true } %>
 
 <%= f.govuk_collection_select :consideration_journey_stage_id,
       f.object.journey_stage_options,
-      :first,
-      :last,
+      :id,
+      :value,
       options: { prompt: true } %>
 
 <%= f.govuk_text_field :address_postcode %>
 
 <%= f.govuk_collection_select :preferred_teaching_subject_id,
     f.object.teaching_subject_options,
-    :first,
-    :last,
+    :id,
+    :value,
     options: { prompt: true } %>

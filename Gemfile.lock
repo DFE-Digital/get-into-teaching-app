@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: 933973b9e34a3340cebe3a42ad035246576e8d90
+  revision: ad6c74dd2d3bf88e90819f3e9f9f166a3f1c85c1
   specs:
-    get_into_teaching_api_client (1.0.8)
+    get_into_teaching_api_client (1.1.1)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
 
@@ -332,7 +332,7 @@ DEPENDENCIES
   faraday_middleware
   foreman
   front_matter_parser!
-  get_into_teaching_api_client (= 1.0.8)!
+  get_into_teaching_api_client!
   govuk_design_system_formbuilder
   kramdown
   listen (>= 3.0.5, < 3.3)

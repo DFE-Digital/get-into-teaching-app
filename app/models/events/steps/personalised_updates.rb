@@ -20,27 +20,30 @@ module Events
       end
 
       def degree_status_options
-        [[1, "Undergraduate"]]
+        @degree_status_options ||=
+          GetIntoTeachingApiClient::TypesApi.new.get_qualification_degree_status
       end
 
       def degree_status_option_ids
-        degree_status_options.map(&:first)
+        degree_status_options.map(&:id).map(&:to_i)
       end
 
       def journey_stage_options
-        [[1, "Stage 1"]]
+        @journey_stage_options ||=
+          GetIntoTeachingApiClient::TypesApi.new.get_candidate_journey_stages
       end
 
       def journey_stage_option_ids
-        journey_stage_options.map(&:first)
+        journey_stage_options.map(&:id).map(&:to_i)
       end
 
       def teaching_subject_options
-        [["fd11dc24-54ee-41b7-bf46-5f7e4d8926e5", "Maths"]]
+        @teaching_subject_options ||=
+          GetIntoTeachingApiClient::TypesApi.new.get_teaching_subjects
       end
 
       def teaching_subject_option_ids
-        teaching_subject_options.map(&:first)
+        teaching_subject_options.map(&:id)
       end
     end
   end
