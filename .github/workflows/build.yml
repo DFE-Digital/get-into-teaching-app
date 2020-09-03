@@ -62,6 +62,10 @@ jobs:
           docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test $DOCKER_IMAGE \
             rspec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
 
+      - name: Run JS Specs
+        run: |-
+          docker run -t --rm -e NODE_ENV=test $DOCKER_IMAGE yarn spec
+
       - name: Fixup report file paths
         run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/.resultset.json
 
