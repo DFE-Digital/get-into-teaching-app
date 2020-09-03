@@ -59,7 +59,7 @@ jobs:
 
       - name: Run JS Specs
         run: |-
-          docker run -t --rm -e NODE_ENV=test $DOCKER_IMAGE yarn install && yarn spec
+          docker run -t --rm -e NODE_ENV=test $DOCKER_IMAGE yarn install --production=false && yarn spec
 
       - name: Run Specs
         run: |-
