@@ -45,11 +45,6 @@ describe('TalkToUsController', () => {
             expect(chat.style.display).toContain('inline-block');
         });
 
-        it("should make the tta section have 48% width", () => {
-            var chat = document.getElementById('2');
-            expect(chat.style.width).toBe('48%');
-        });
-
     });
 
 });

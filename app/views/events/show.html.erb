@@ -14,6 +14,12 @@
             online: @event.is_online,
             location: event_address(@event)
         %>
+
+        <% if @event.web_feed_id %>
+          <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button sidebar-button" do %>
+              Sign up for this <span>event</span>
+          <% end %>
+        <% end %>
     </div>
     <div class="content__left">
         <% if @event.message %>

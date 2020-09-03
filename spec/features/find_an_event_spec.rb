@@ -27,7 +27,7 @@ RSpec.feature "Finding an event", type: :feature do
     click_on(event.name)
 
     expect(page).to have_css "h1", text: event.name
-    click_on "Sign up for this event"
+    click_on "Sign up for this event", match: :first
   end
 
   scenario "Finding an event by type" do
@@ -43,6 +43,6 @@ RSpec.feature "Finding an event", type: :feature do
     click_on(event.name)
 
     expect(page).to have_css "h1", text: event.name
-    click_on "Sign up for this event"
+    click_on "Sign up for this event", match: :first
   end
 end
