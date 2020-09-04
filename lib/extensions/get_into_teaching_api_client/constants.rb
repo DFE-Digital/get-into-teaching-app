@@ -8,6 +8,13 @@ module GetIntoTeachingApiClient
         "School or University Event" => 222_750_009,
       }.freeze
 
+    # This is not a complete list.
+    EVENT_STATUS =
+      {
+        "Open" => 222_750_000,
+        "Closed" => 222_750_001,
+      }.freeze
+
     GET_INTO_TEACHING_EVENT_TYPES = EVENT_TYPES.select { |key|
       ["Train to Teach Event", "Online Event", "Application Workshop"].include?(key)
     }.freeze

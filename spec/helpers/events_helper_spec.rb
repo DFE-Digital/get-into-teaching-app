@@ -38,6 +38,48 @@ describe EventsHelper, type: "helper" do
     end
   end
 
+  describe "#event_status_open?" do
+    it "returns true for events that have a status of open" do
+      event = GetIntoTeachingApiClient::TeachingEvent.new(
+        statusId: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
+      )
+      expect(event_status_open?(event)).to be_truthy
+    end
+
+    it "returns false for closed events" do
+      event = GetIntoTeachingApiClient::TeachingEvent.new(
+        statusId: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"],
+      )
+      expect(event_status_open?(event)).to be_falsy
+    end
+  end
+
+  describe "#can_sign_up_online?" do
+    it "returns true for events with a web_feed_id that are not closed" do
+      event = GetIntoTeachingApiClient::TeachingEvent.new(
+        webFeedId: "abc-123",
+        statusId: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
+      )
+      expect(can_sign_up_online?(event)).to be_truthy
+    end
+
+    it "returns false for events without a web_feed_id" do
+      event = GetIntoTeachingApiClient::TeachingEvent.new(
+        webFeedId: nil,
+        statusId: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
+      )
+      expect(can_sign_up_online?(event)).to be_falsy
+    end
+
+    it "returns false for closed events" do
+      event = GetIntoTeachingApiClient::TeachingEvent.new(
+        webFeedId: "abc-123",
+        statusId: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"],
+      )
+      expect(can_sign_up_online?(event)).to be_falsy
+    end
+  end
+
   describe "#event_type_color" do
     it "returns green for train to teach events" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]

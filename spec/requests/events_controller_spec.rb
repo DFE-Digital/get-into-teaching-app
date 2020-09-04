@@ -106,6 +106,12 @@ describe EventsController do
           it { is_expected.to match(/To attend this event, please <a.*visit this website.*a>/) }
         end
 
+        context "when the event is closed" do
+          let(:event) { build(:event_api, web_feed_id: "123", readable_id: event_readable_id, status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"]) }
+
+          it { is_expected.to_not match(/How to attend/) }
+        end
+
         context "when the event is online" do
           let(:event) { build(:event_api, is_online: true) }
 
