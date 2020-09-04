@@ -221,7 +221,14 @@
     padding-bottom: 20px;
     padding-left: 35px;
     padding-right: 35px;
-
+    p {
+        font-size: 16px;
+        line-height: 1.25;
+        margin: 0 0 10px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
     &__header {
         display: block;
         font-size: 19px;

@@ -17,6 +17,7 @@
                 %>
                 <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>"> 
                     <%= yield %>
+                    <%= render "sections/page-question" %>
                 </section>
             </div>
             <%= render "sections/footer" %>     
