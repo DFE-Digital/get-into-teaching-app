@@ -14,6 +14,10 @@ FactoryBot.define do
     is_online { false }
     building { build :event_building_api }
 
+    trait :closed do
+      status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"] }
+    end
+
     trait :with_provider_info do
       provider_website_url { "https://event-provider.com" }
       provider_target_audience { "Anyone interested in teaching from Sept 2021" }

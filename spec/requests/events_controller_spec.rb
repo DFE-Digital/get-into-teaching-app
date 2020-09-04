@@ -107,9 +107,10 @@ describe EventsController do
         end
 
         context "when the event is closed" do
-          let(:event) { build(:event_api, web_feed_id: "123", readable_id: event_readable_id, status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"]) }
+          let(:event) { build(:event_api, :closed, web_feed_id: "123", readable_id: event_readable_id) }
 
           it { is_expected.to_not match(/How to attend/) }
+          it { is_expected.to match(/This event is now closed/) }
         end
 
         context "when the event is online" do

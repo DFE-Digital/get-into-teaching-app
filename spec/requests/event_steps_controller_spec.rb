@@ -21,6 +21,12 @@ describe EventStepsController do
     before { get step_path }
     subject { response }
     it { is_expected.to have_http_status :success }
+
+    context "when the event is closed" do
+      let(:event) { build :event_api, :closed, readable_id: readable_event_id }
+
+      it { is_expected.to redirect_to(event_path(id: event.readable_id)) }
+    end
   end
 
   describe "#update" do

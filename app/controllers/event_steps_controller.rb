@@ -1,10 +1,17 @@
 class EventStepsController < ApplicationController
   before_action :load_event
+  before_action :redirect_closed_events, only: %i[show update] # rubocop:disable Rails/LexicallyScopedActionFilter
 
   include WizardSteps
   self.wizard_class = Events::Wizard
 
 private
+
+  def redirect_closed_events
+    return unless @event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"]
+
+    redirect_to event_path(id: @event.readable_id)
+  end
 
   def step_path(step = params[:id], urlparams = {})
     event_step_path params[:event_id], step, urlparams
