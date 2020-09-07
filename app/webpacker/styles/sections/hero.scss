@@ -33,6 +33,9 @@
                 font-size: 42px;
                 margin: 0;
                 padding: 0;
+                &:after {
+                    content: ".";
+                }
             }
 
             p {
