@@ -12,4 +12,6 @@ GetIntoTeachingApiClient.configure do |config|
     config.host = parsed.hostname
     config.base_path = parsed.path.gsub(%r{\A/api}, "")
   end
+
+  config.cache_store = Rails.cache
 end
