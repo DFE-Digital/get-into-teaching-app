@@ -4,6 +4,7 @@ FactoryBot.define do
     sequence(:readable_id, &:to_s)
     type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
     web_feed_id { "123" }
+    status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"] }
     sequence(:name) { |i| "Become a Teacher #{i}" }
     sequence(:description) { |i| "Become a Teacher #{i} event description" }
     message { "An important message" }
@@ -12,6 +13,10 @@ FactoryBot.define do
     end_at { start_at }
     is_online { false }
     building { build :event_building_api }
+
+    trait :closed do
+      status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"] }
+    end
 
     trait :with_provider_info do
       provider_website_url { "https://event-provider.com" }
