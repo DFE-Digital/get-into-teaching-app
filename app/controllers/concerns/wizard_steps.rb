@@ -51,8 +51,12 @@ private
     elsif (invalid_step = @wizard.first_invalid_step)
       step_path invalid_step
     else # all steps valid so completed
-      step_path :completed
+      completed_step_path
     end
+  end
+
+  def completed_step_path
+    step_path :completed
   end
 
   def step_params

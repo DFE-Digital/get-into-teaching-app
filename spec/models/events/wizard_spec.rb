@@ -10,6 +10,7 @@ describe Events::Wizard do
         Events::Steps::Authenticate,
         Events::Steps::ContactDetails,
         Events::Steps::FurtherDetails,
+        Events::Steps::PersonalisedUpdates,
       ]
     end
   end
@@ -31,7 +32,7 @@ describe Events::Wizard do
       )
     end
 
-    subject { described_class.new wizardstore, "further_details" }
+    subject { described_class.new wizardstore, "personalised_updates" }
 
     before { allow(subject).to receive(:valid?).and_return true }
     before do

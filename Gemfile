@@ -41,7 +41,7 @@ gem "govuk_design_system_formbuilder"
 
 gem "sentry-raven"
 
-gem "get_into_teaching_api_client", "1.0.8", github: "DFE-Digital/get-into-teaching-api-ruby-client"
+gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
 
 group :development, :test do

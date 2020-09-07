@@ -129,6 +129,10 @@
             display: block;
             margin-left: -20px;
             margin-right: -20px;
+
+            a {
+              color: $white;
+            }
         }
         
         div.content-video {

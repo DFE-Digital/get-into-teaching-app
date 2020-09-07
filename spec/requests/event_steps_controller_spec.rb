@@ -21,6 +21,12 @@ describe EventStepsController do
     before { get step_path }
     subject { response }
     it { is_expected.to have_http_status :success }
+
+    context "when the event is closed" do
+      let(:event) { build :event_api, :closed, readable_id: readable_event_id }
+
+      it { is_expected.to redirect_to(event_path(id: event.readable_id)) }
+    end
   end
 
   describe "#update" do
@@ -52,17 +58,20 @@ describe EventStepsController do
           allow_any_instance_of(Events::Steps::ContactDetails).to \
             receive(:valid?).and_return true
 
+          allow_any_instance_of(Events::Steps::FurtherDetails).to \
+            receive(:valid?).and_return true
+
           allow_any_instance_of(Events::Wizard).to \
             receive(:add_attendee_to_event).and_return true
         end
-        let(:model) { Events::Steps::FurtherDetails }
-        let(:details_params) { attributes_for(:events_further_details) }
+        let(:model) { Events::Steps::PersonalisedUpdates }
+        let(:details_params) { attributes_for(:events_personalised_updates) }
         it { is_expected.to redirect_to completed_event_steps_path(readable_event_id) }
       end
 
       context "when invalid steps" do
-        let(:model) { Events::Steps::FurtherDetails }
-        let(:details_params) { attributes_for(:events_further_details) }
+        let(:model) { Events::Steps::PersonalisedUpdates }
+        let(:details_params) { attributes_for(:events_personalised_updates) }
         it do
           is_expected.to redirect_to \
             event_step_path(readable_event_id, "personal_details")

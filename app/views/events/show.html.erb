@@ -15,13 +15,17 @@
             location: event_address(@event)
         %>
 
-        <% if @event.web_feed_id %>
+        <% if can_sign_up_online?(@event) %>
           <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button sidebar-button" do %>
               Sign up for this <span>event</span>
           <% end %>
         <% end %>
     </div>
     <div class="content__left">
+        <% unless event_status_open?(@event) %>
+          <p class="content-alert">This event is now closed. Search <%= link_to("here", events_path) %> for our other events.</p>
+        <% end %>
+
         <% if @event.message %>
           <p class="content-alert"><%= @event.message %></p>
         <% end %>
@@ -41,7 +45,7 @@
         <% if event_has_provider_info?(@event) %>
           <h2 class="strapline-article">Provider information</h2>
           <% if @event.provider_website_url %>
-            <p><strong>Event website</strong><br /><%= link_to(@event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
+            <p><strong>Event website</strong><br /><%= link_to(@event.provider_website_url, @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
           <% end %>
           <% if @event.provider_target_audience %>
             <p><strong>Target audience</strong><br /><%= @event.provider_target_audience %></p>
@@ -62,21 +66,23 @@
         <br />
         <% end %>
 
-        <% if @event.web_feed_id %>
-          <h2 class="strapline-article">How to attend</h2>
-          <p>
-              To access this event, please sign up on this page and watch out for the reminder email we will send the day before the event. It will contain an access link to the live online event and a directory of some of the local training providers.
-          </p>
+        <% if event_status_open?(@event) %>
+          <% if can_sign_up_online?(@event) %>
+            <h2 class="strapline-article">How to attend</h2>
+            <p>
+                To access this event, please sign up on this page and watch out for the reminder email we will send the day before the event. It will contain an access link to the live online event and a directory of some of the local training providers.
+            </p>
 
-          <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
-              Sign up for this <span>event</span>
+            <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
+                Sign up for this <span>event</span>
+            <% end %>
+          <% elsif @event.provider_website_url %>
+            <h2 class="strapline-article">How to attend</h2>
+            <p>To attend this event, please <%= link_to("visit this website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i>.<p>
+          <% elsif @event.provider_contact_email %>
+            <h2 class="strapline-article">How to attend</h2>
+            <p>To attend this event, please <%= mail_to(@event.provider_contact_email, "email us") %>.<p>
           <% end %>
-        <% elsif @event.provider_website_url %>
-          <h2 class="strapline-article">How to attend</h2>
-          <p>To attend this event, please <%= link_to(@event.provider_website_url, "visit this website", { target: "blank" }) %><i class="icon icon-external"></i>.<p>
-        <% elsif @event.provider_contact_email %>
-          <h2 class="strapline-article">How to attend</h2>
-          <p>To attend this event, please <%= mail_to(@event.provider_contact_email, "email us") %>.<p>
         <% end %>
       </div>
         <%= render "sections/page-question" %>

@@ -17,6 +17,14 @@ module EventsHelper
     end
   end
 
+  def event_status_open?(event)
+    event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+  end
+
+  def can_sign_up_online?(event)
+    event.web_feed_id && event_status_open?(event)
+  end
+
   def embed_event_video_url(video_url)
     video_url&.sub("watch?v=", "embed/")
   end
