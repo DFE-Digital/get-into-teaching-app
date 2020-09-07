@@ -50,6 +50,18 @@ module EventsHelper
     ].compact!.join(",\n")
   end
 
+  def event_location_map(event)
+    address = event_address(event)
+
+    ajax_map(
+      address,
+      zoom: 10,
+      mapsize: [628, 420],
+      title: event.name,
+      description: address,
+    )
+  end
+
   def name_of_event_type(type_id)
     api = GetIntoTeachingApiClient::TypesApi.new
     type = api.get_teaching_event_types.find { |t| t.id == type_id.to_s }

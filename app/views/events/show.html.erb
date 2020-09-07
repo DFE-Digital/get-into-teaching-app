@@ -39,7 +39,7 @@
         <% if @event.provider_website_url %>
           <p><%= link_to("Visit venue website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
         <%end %>
-        <div class="event-info__venue__map"></div>	        
+        <p><%= event_location_map(@event) %></p>	        
         <% end %>
 
         <% if event_has_provider_info?(@event) %>

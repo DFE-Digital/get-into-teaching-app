@@ -5,7 +5,8 @@ Rails.application.configure do
   # Override any production defaults here
   config.x.git_api_endpoint = \
     "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
-
+  config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence || \
+    Rails.application.credentials.google_maps_key.presence
   config.x.static_pages.disable_caching = true
   config.x.utm_codes = true
 end
