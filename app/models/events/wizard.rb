@@ -7,6 +7,7 @@ module Events
       Steps::Authenticate,
       Steps::ContactDetails,
       Steps::FurtherDetails,
+      Steps::PersonalisedUpdates,
     ].freeze
 
     def complete!
