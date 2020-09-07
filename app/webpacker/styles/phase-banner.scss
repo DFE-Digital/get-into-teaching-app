@@ -1,9 +1,9 @@
 .phase-banner {
     display: flex;
     justify-content: space-between;
-    width: calc(100% - 40px);
+    width:100%;
     border-bottom: 1px solid $grey-mid;
-    margin-top: 40px;
+    margin-bottom: 20px;
     padding-bottom: 10px;
     text-align: left;
     position: relative;
@@ -35,20 +35,20 @@
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .phase-banner {
+        width: calc(100% - 40px);
+    }
+}
+
 @media only screen and (max-width: 800px) {
     .phase-banner {
         width: 100%;
-        margin-top: 0px;
-        &__left {
-        }
-        &__close {
-        }
     }
 }
 
 @media only screen and (max-width: 500px) {
     .phase-banner {
-        width: 100%;
         margin-top: 0px;
         &__left {
             padding: 0;
