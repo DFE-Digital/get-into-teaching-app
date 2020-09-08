@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   get "/tta-service", to: "pages#tta_service", as: :tta_service
   get "/tta", to: "pages#tta_service", as: nil
 
+  post "feedback/page_helpful", to: "feedback#page_helpful", as: :page_helpful_feedback
+
   resources "events", path: "/events", only: %i[index show search] do
     collection do
       get "search"
