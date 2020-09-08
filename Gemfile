@@ -39,6 +39,8 @@ gem "dotenv-rails"
 
 gem "govuk_design_system_formbuilder"
 
+gem "prometheus-client"
+
 gem "sentry-raven"
 
 gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
