@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   include StaticPages
   around_action :cache_static_page, only: %i[show]
-  rescue_from ActionView::MissingTemplate, with: :rescue_missing_template
+  rescue_from ActionView::MissingTemplate, StaticPages::InvalidTemplateName, with: :rescue_missing_template
 
   def scribble
     @page_title = "Scribble Test"
@@ -43,11 +43,7 @@ class PagesController < ApplicationController
 private
 
   def content_template
-    "content/#{filtered_page}"
-  end
-
-  def filtered_page
-    params[:page].to_s.gsub(%r{[^a-z_\-/]}, "")
+    "content/#{filtered_page_template}"
   end
 
   def rescue_missing_template

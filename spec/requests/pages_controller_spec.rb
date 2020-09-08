@@ -57,6 +57,14 @@ describe PagesController do
       it { is_expected.to have_http_status :not_found }
       it { is_expected.to have_attributes body: %r{Page not found} }
     end
+
+    context "for invalid page page" do
+      let(:template) { "../../secrets.txt" }
+      before { get "/test" }
+      subject { response }
+      it { is_expected.to have_http_status :not_found }
+      it { is_expected.to have_attributes body: %r{Page not found} }
+    end
   end
 
   describe "redirect to TTA site" do
