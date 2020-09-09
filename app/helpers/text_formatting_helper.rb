@@ -5,4 +5,8 @@ module TextFormattingHelper
   def safe_format(content)
     simple_format strip_tags content
   end
+
+  def safe_html_format(html)
+    sanitize html, tags: %w[strong a ul li p b], attributes: %w[href]
+  end
 end
