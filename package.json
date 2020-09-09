@@ -6,6 +6,7 @@
     "@stimulus/polyfills": "^1.1.1",
     "govuk-frontend": "^3.6.0",
     "is-touch-device": "^1.0.1",
+    "js-cookie": "^2.2.1",
     "rails-ujs": "^5.2.4",
     "serialize-javascript": "^3.1.0",
     "set-value": "^3.0.2",
@@ -24,7 +25,8 @@
     ],
     "moduleDirectories": [
       "node_modules",
-      "app/webpacker/controllers"
+      "app/webpacker/controllers",
+      "app/webpacker/javascript"
     ]
   },
   "scripts": {
