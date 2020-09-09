@@ -14,4 +14,23 @@ describe TextFormattingHelper, type: :helper do
       it { is_expected.to eql "<p>hello world</p>" }
     end
   end
+
+  describe "#safe_html_format" do
+    subject { safe_html_format html }
+
+    context "with allowed HTML" do
+      let(:html) { "<p><strong>hello</strong> <a href=\"http://test.com\">world</a></p><ul><li>test</li></ul>" }
+      it { is_expected.to eql html }
+    end
+
+    context "with disallowed HTML" do
+      let(:html) { "<script>malicious</script>" }
+      it { is_expected.to eql "malicious" }
+    end
+
+    context "with malicious anchor tags" do
+      let(:html) { "<a href=\"http://test.com\" onclick=\"somethingNasty();\">boom</a>" }
+      it { is_expected.to eql "<a href=\"http://test.com\">boom</a>" }
+    end
+  end
 end
