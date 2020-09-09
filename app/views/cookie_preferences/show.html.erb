@@ -26,9 +26,13 @@
     </p>
 
     <div id="cookie-preferences-form">
-      <form id="cookie-preferences-from" novalidate>
+      <form id="cookie-preferences-from" novalidate data-controller="cookie-preferences">
         <div class="govuk-form-group">
-          <fieldset class="govuk-fieldset" aria-describedby="cookies-non-functional-hint">
+          <fieldset class="govuk-fieldset"
+            aria-describedby="cookies-non-functional-hint"
+            data-target="cookie-preferences.category"
+            data-category="non-functional">
+
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
               <h3 class="govuk-fieldset__heading">
                 Cookies that measure website use
@@ -71,13 +75,13 @@
             </div>
             <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
               <div class="govuk-radios__item">
-                <input id="cookies-non-functional-yes" class="govuk-radios__input" type="radio" value="1" name="cookies-non-functional" />
+                <input id="cookies-non-functional-yes" class="govuk-radios__input" type="radio" value="1" name="cookies-non-functional" data-action="cookie-preferences#toggle" />
                 <label for="cookies-non-functional-yes" class="govuk-label govuk-radios__label">
                   Yes
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input id="cookies-non-functional-no" class="govuk-radios__input" type="radio" value="0" name="cookies-non-functional" />
+                <input id="cookies-non-functional-no" class="govuk-radios__input" type="radio" value="0" name="cookies-non-functional"  data-action="cookie-preferences#toggle" />
                 <label for="cookies-non-functional-no" class="govuk-label govuk-radios__label">
                   No
                 </label>
@@ -87,7 +91,11 @@
 
           <hr />
 
-          <fieldset class="govuk-fieldset" aria-describedby="cookies-marketing-hint">
+          <fieldset class="govuk-fieldset"
+            aria-describedby="cookies-marketing-hint"
+            data-target="cookie-preferences.category"
+            data-category="marketing">
+
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
               <h3 class="govuk-fieldset__heading">
                 Cookies that help with our communication and marketing
@@ -109,13 +117,13 @@
             </div>
             <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
               <div class="govuk-radios__item">
-                <input id="cookies-marketing-yes" class="govuk-radios__input" type="radio" value="1" name="cookies-marketing" />
+                <input id="cookies-marketing-yes" class="govuk-radios__input" type="radio" value="1" name="cookies-marketing" data-action="cookie-preferences#toggle" />
                 <label for="cookies-marketing-yes" class="govuk-label govuk-radios__label">
                   Yes
                 </label>
               </div>
               <div class="govuk-radios__item">
-                <input id="cookies-marketing-no" class="govuk-radios__input" type="radio" value="0" name="cookies-marketing" />
+                <input id="cookies-marketing-no" class="govuk-radios__input" type="radio" value="0" name="cookies-marketing" data-action="cookie-preferences#toggle" />
                 <label for="cookies-marketing-no" class="govuk-label govuk-radios__label">
                   No
                 </label>
@@ -125,7 +133,11 @@
 
           <hr />
 
-          <fieldset class="govuk-fieldset" aria-describedby="cookies-functional-hint">
+          <fieldset class="govuk-fieldset"
+            aria-describedby="cookies-functional-hint"
+            data-target="cookie-preferences.category"
+            data-category="functional">
+
             <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
               <h3 class="govuk-fieldset__heading">
                 Strictly necessary cookies
