@@ -15,6 +15,7 @@
   "devDependencies": {
     "@stimulus/test": "^1.1.1",
     "jest": "^26.0.1",
+    "jest-fetch-mock": "^3.0.3",
     "webpack-dev-server": "^3.11.0"
   },
   "jest": {
@@ -22,6 +23,7 @@
     "roots": [
       "spec/javascript"
     ],
+    "setupFilesAfterEnv": ["./spec/javascript/jest.setup.js"],
     "moduleDirectories": [
       "node_modules",
       "app/webpacker/controllers"

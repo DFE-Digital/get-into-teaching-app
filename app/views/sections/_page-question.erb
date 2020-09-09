@@ -1,11 +1,11 @@
-<div class="page-question-wrapper">
+<div class="page-question-wrapper" data-controller="page-helpful">
     <div class="page-question">
         <div class="page-question__left">
-            <strong>Is this page helpful?</strong>
+            <strong data-target="page-helpful.text">Is this page helpful?</strong>
         </div>
         <div class="page-question__right">
-            <a href="#" class="page-question__answer">Yes</a>
-            <a href="#" class="page-question__answer">No</a>
+            <a href="javascript:void(0)" class="page-question__answer" data-target="page-helpful.link" data-action="page-helpful#yes">Yes</a>
+            <a href="javascript:void(0)" class="page-question__answer" data-target="page-helpful.link" data-action="page-helpful#no">No</a>
         </div>
     </div>
 </div>
