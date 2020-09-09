@@ -27,5 +27,10 @@ describe TextFormattingHelper, type: :helper do
       let(:html) { "<script>malicious</script>" }
       it { is_expected.to eql "malicious" }
     end
+
+    context "with malicious anchor tags" do
+      let(:html) { "<a href=\"http://test.com\" onclick=\"somethingNasty();\">boom</a>" }
+      it { is_expected.to eql "<a href=\"http://test.com\">boom</a>" }
+    end
   end
 end
