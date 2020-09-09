@@ -97,6 +97,18 @@
         transform: rotate(-3deg);
         text-align: left;
         max-width: 75%;
+        &:after {
+            content: "";
+            display: inline-block;
+            position: relative;
+            width: 10px;
+            height: 10px;
+            border: 4px solid #FFFFFF;
+            border-width: 3px 3px 0px 0px;
+            transform: rotate(45deg);
+            top: 1px;
+            margin-left: 5px;
+        }
     }
     &:hover {
         .cta-link__label {
