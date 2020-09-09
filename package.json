@@ -9,7 +9,8 @@
     "serialize-javascript": "^3.1.0",
     "set-value": "^3.0.2",
     "stimulus": "^1.1.1",
-    "turbolinks": "^5.2.0"
+    "turbolinks": "^5.2.0",
+    "whatwg-fetch": "^3.4.1"
   },
   "devDependencies": {
     "@stimulus/test": "^1.1.1",
