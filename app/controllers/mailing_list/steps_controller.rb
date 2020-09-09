@@ -3,6 +3,8 @@ module MailingList
     include WizardSteps
     self.wizard_class = MailingList::Wizard
 
+    before_action :set_page_title, only: [:show] # rubocop:disable Rails/LexicallyScopedActionFilter
+
   private
 
     def step_path(step = params[:id])
