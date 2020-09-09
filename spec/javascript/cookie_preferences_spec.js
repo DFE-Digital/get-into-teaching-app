@@ -48,7 +48,59 @@ describe('CookiePreferences', () => {
     }) ;
 
     describe("assigning #all", () => {
-      beforeEach(() => {})
+      beforeEach(() => { prefs.all = {required: false, functional: true} })
+
+      it("should update", () => {
+        expect(prefs.all).toEqual({required: false, functional: true})
+      })
+
+      it("should return new values for #allowed", () => {
+        expect(prefs.allowed('required')).toBe(false)
+        expect(prefs.allowed('functional')).toBe(true)
+        expect(prefs.allowed('marketing')).toBe(false)
+      })
+
+      it("should update #categories list", () => {
+        expect(prefs.categories).toEqual(['required', 'functional'])
+      }) ;
+
+      test.todo("should emit event for updates")
+    }) ;
+
+    describe("assigning existing category", () => {
+      beforeEach(() => { prefs.setCategory('marketing', true) })
+
+      it("updates allowed value", () => {
+        expect(prefs.allowed('marketing')).toBe(true)
+      })
+
+      it("updates #all", () => {
+        expect(prefs.all).toEqual({required: true, marketing: true})
+      })
+
+      it("does not update category list", () => {
+        expect(prefs.categories).toEqual(['required', 'marketing'])
+      })
+
+      test.todo("emits event") ;
+    })
+
+    describe("assigning new category", () => {
+      beforeEach(() => { prefs.setCategory('functional', true) })
+
+      it("updates allowed value", () => {
+        expect(prefs.allowed('functional')).toBe(true)
+      })
+
+      it("updates #all", () => {
+        expect(prefs.all).toEqual({required: true, marketing: false, functional: true})
+      })
+
+      it("does not update category list", () => {
+        expect(prefs.categories).toEqual(['required', 'marketing', 'functional'])
+      })
+
+      test.todo("emits event") ;
     })
   })
 
@@ -87,7 +139,25 @@ describe('CookiePreferences', () => {
         expect(prefs.categories).toEqual(['required', 'functional'])
       }) ;
 
-      test.todo("should emit event for updates")
+      test.todo("emits event for updates")
     }) ;
+
+    describe("assigning new category", () => {
+      beforeEach(() => { prefs.setCategory('functional', true) })
+
+      it("updates allowed value", () => {
+        expect(prefs.allowed('functional')).toBe(true)
+      })
+
+      it("updates #all", () => {
+        expect(prefs.all).toEqual({functional: true})
+      })
+
+      it("does not update category list", () => {
+        expect(prefs.categories).toEqual(['functional'])
+      })
+
+      test.todo("emits event") ;
+    })
   }) ;
 })  

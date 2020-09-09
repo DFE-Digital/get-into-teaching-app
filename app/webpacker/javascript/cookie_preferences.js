@@ -46,4 +46,13 @@ export default class CookiePreferences {
 
     this.settings = this.parseSettings() ;
   }
+
+  setCategory(category, value) {
+    const strValue = value.toString() ;
+
+    this.settings[category] =
+      (strValue == "1" || strValue == "true" || strValue == "yes") ;
+
+    this.all = this.settings ;
+  }
 }
