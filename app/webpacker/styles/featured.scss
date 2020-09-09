@@ -24,6 +24,9 @@
         padding: 10px 20px;
         font-weight: bold;
         max-width: calc(100% - 80px);
+        &:after {
+            content: ".";
+        }
     }
 
     &__image {

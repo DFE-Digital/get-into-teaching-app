@@ -50,7 +50,10 @@ a {
     font-size: 36px;
     background-color: $purple;
     display: inline-block;
-    padding: 12px 20px 8px
+    padding: 12px 20px 8px;
+        &:after {
+            content: ".";
+        }
 }
 
 .strapline {
@@ -59,7 +62,10 @@ a {
     font-size: 36px;
     background-color: $purple;
     display: inline-block;
-    padding: 12px 20px 8px
+    padding: 12px 20px 8px;
+    &:after {
+        content: ".";
+    }
 }
 
 .strapline-article {
