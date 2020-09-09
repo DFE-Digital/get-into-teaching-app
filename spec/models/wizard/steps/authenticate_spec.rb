@@ -74,6 +74,12 @@ describe Wizard::Steps::Authenticate do
         subject.save
         expect { subject.save }.to_not raise_error
       end
+
+      it "does not set authenticated to true" do
+        subject.timed_one_time_password = nil
+        subject.save
+        expect(wizardstore["authenticated"]).to be_falsy
+      end
     end
 
     context "when valid" do
@@ -86,7 +92,14 @@ describe Wizard::Steps::Authenticate do
         subject.save
       end
 
-      it "throws an error if #f is not defined" do
+      it "does not call the API on validation if already authenticated" do
+        expect(subject).to_not receive(:perform_existing_candidate_request)
+        wizardstore["authenticated"] = true
+        subject.timed_one_time_password = "123456"
+        subject.valid?
+      end
+
+      it "throws an error if #perform_existing_candidate_request is not defined" do
         expect(instance).to receive(:perform_existing_candidate_request).and_call_original
         expect { subject.save }.to raise_error(NotImplementedError)
       end
@@ -106,6 +119,25 @@ describe Wizard::Steps::Authenticate do
         subject.save
         expect(wizardstore["candidate_id"]).to eq(response.candidate_id)
         expect(wizardstore["first_name"]).to eq("First")
+      end
+
+      it "sets authenticated to true" do
+        response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidateId: "abc123")
+        expect(subject).to receive(:perform_existing_candidate_request).with(request) { response }
+        subject.save
+        expect(wizardstore["authenticated"]).to be_truthy
+      end
+
+      context "when TOTP is changed to be incorrect" do
+        it "sets authenticated back to false" do
+          response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidateId: "abc123")
+          expect(subject).to receive(:perform_existing_candidate_request).with(request) { response }
+          subject.save
+          expect(wizardstore["authenticated"]).to be_truthy
+          subject.timed_one_time_password = nil
+          subject.save
+          expect(wizardstore["authenticated"]).to be_falsy
+        end
       end
     end
 
