@@ -16,7 +16,9 @@
                     :mailinglist => @front_matter["mailinglist"] 
                 %>
                 <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>"> 
+                    <%= render "sections/phase-banner" %>
                     <%= yield %>
+                    <%= render "sections/page-question" unless @front_matter["hide_page_helpful_question"] %>
                 </section>
             </div>
             <%= render "sections/footer" %>     

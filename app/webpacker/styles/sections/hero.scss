@@ -7,7 +7,7 @@
     position: relative;
     overflow: hidden;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     &__banner {
 
@@ -57,6 +57,7 @@
         padding-bottom: 20px;
         padding-left: 40px;
         padding-right: 40px;
+        margin-bottom: 30px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -83,7 +84,7 @@
             font-weight: bold;
             padding-left: 15px;
             padding-right: 15px;
-            padding-top: 10px;
+            padding-top: 6px;
             padding-bottom: 6px;
             text-decoration: none;
             span {
