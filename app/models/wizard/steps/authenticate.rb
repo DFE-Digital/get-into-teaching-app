@@ -8,7 +8,7 @@ module Wizard
 
       validates :timed_one_time_password, presence: true, length: { is: 6, message: :invalid },
                                           format: { with: /\A[0-9]*\z/, message: :invalid }
-      validate :timed_one_time_password_is_correct, if: :timed_one_time_password_valid?
+      validate :timed_one_time_password_is_correct, if: :perform_api_check?
 
       before_validation if: :timed_one_time_password do
         self.timed_one_time_password = timed_one_time_password.to_s.strip
@@ -19,7 +19,12 @@ module Wizard
       end
 
       def save
-        prepopulate_store if valid?
+        @store["authenticated"] = false
+
+        if valid?
+          prepopulate_store
+          @store["authenticated"] = true
+        end
 
         super
       end
@@ -48,6 +53,10 @@ module Wizard
       end
 
     private
+
+      def perform_api_check?
+        timed_one_time_password_valid? && !@store["authenticated"]
+      end
 
       def timed_one_time_password_valid?
         self.class.validators_on(:timed_one_time_password).each do |validator|
