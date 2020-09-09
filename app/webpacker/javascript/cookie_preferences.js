@@ -8,19 +8,26 @@ export default class CookiePreferences {
   settings = null ;
 
   constructor() {
-    this.settings = this.parseSettings() ;
+    this.readCookie() ;
   }
 
   static get cookieName() {
     return CookiePreferences.cookieBaseName + "-v" + CookiePreferences.cookieVersion ;
   }
 
-  parseSettings() {
+  readCookie() {
     const cookie = Cookies.get(CookiePreferences.cookieName);
     if (typeof(cookie) == 'undefined' || !cookie)
-      return {} ;
+      this.settings = {} ;
+    else
+      this.settings = JSON.parse(cookie) ;
+  }
 
-    return JSON.parse(cookie) ;
+  writeCookie(categories) {
+    const serialized = JSON.stringify(categories)
+    Cookies.set(CookiePreferences.cookieName, serialized, {
+      expires: CookiePreferences.cookieLifetimeInDays
+    }) ;
   }
 
   get all() {
@@ -39,20 +46,36 @@ export default class CookiePreferences {
   }
 
   set all(categories) {
-    const serialized = JSON.stringify(categories)
-    Cookies.set(CookiePreferences.cookieName, serialized, {
-      expires: CookiePreferences.cookieLifetimeInDays
-    }) ;
+    const existingAllowed = this.allowedCategories ;
 
-    this.settings = this.parseSettings() ;
+    this.writeCookie(categories) ;
+    this.readCookie() ;
+
+    const newlyAllowed = this.allowedCategories.filter(category => !existingAllowed.includes(category))
+
+    this.emitEvent(newlyAllowed) ;
   }
 
   setCategory(category, value) {
     const strValue = value.toString() ;
-
-    this.settings[category] =
+    const boolValue =
       (strValue == "1" || strValue == "true" || strValue == "yes") ;
 
-    this.all = this.settings ;
+    let newSettings = Object.assign({}, this.settings) ;
+    newSettings[category] = boolValue ;
+
+    this.all = newSettings ;
+  }
+
+  get allowedCategories() {
+    return this.categories.filter(category => this.allowed(category))
+  }
+
+  emitEvent(newCategories) {
+    let acceptedCookies = new CustomEvent("cookies:accepted", {
+      detail: { cookies: newCategories }
+    }) ;
+
+    document.dispatchEvent(acceptedCookies) ;
   }
 }

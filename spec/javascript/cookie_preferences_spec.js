@@ -3,6 +3,7 @@ import CookiePreferences from 'cookie_preferences' ;
 
 describe('CookiePreferences', () => {
   let prefs = null ;
+  let newCategoriesEvent = null ;
 
   function setCookie(name, content) {
     Cookies.set(name, content) ;
@@ -12,7 +13,14 @@ describe('CookiePreferences', () => {
     setCookie(name, JSON.stringify(data)) ;
   }
 
-  beforeEach(() => { Cookies.remove(CookiePreferences.cookieName) })
+  document.addEventListener("cookies:accepted", (event) => {
+    newCategoriesEvent = event.detail.cookies ;
+  })
+
+  beforeEach(() => {
+    Cookies.remove(CookiePreferences.cookieName)
+    newCategoriesEvent = null ;
+  })
 
   describe("cookieName", () => {
     it("should include version number", () => {
@@ -47,6 +55,12 @@ describe('CookiePreferences', () => {
       }) ;
     }) ;
 
+    describe("#allowedCategories", () => {
+      it("should return categories set to true", () => {
+        expect(prefs.allowedCategories).toEqual(['required'])
+      })
+    })
+
     describe("assigning #all", () => {
       beforeEach(() => { prefs.all = {required: false, functional: true} })
 
@@ -64,7 +78,9 @@ describe('CookiePreferences', () => {
         expect(prefs.categories).toEqual(['required', 'functional'])
       }) ;
 
-      test.todo("should emit event for updates")
+      it("emits event", () => {
+        expect(newCategoriesEvent).toEqual(['functional'])
+      })
     }) ;
 
     describe("assigning existing category", () => {
@@ -82,7 +98,13 @@ describe('CookiePreferences', () => {
         expect(prefs.categories).toEqual(['required', 'marketing'])
       })
 
-      test.todo("emits event") ;
+      it("does update allowed categories", () => {
+        expect(prefs.allowedCategories).toEqual(['required', 'marketing'])
+      })
+
+      it("emits event", () => {
+        expect(newCategoriesEvent).toEqual(['marketing'])
+      })
     })
 
     describe("assigning new category", () => {
@@ -100,7 +122,13 @@ describe('CookiePreferences', () => {
         expect(prefs.categories).toEqual(['required', 'marketing', 'functional'])
       })
 
-      test.todo("emits event") ;
+      it("does update allowed categories", () => {
+        expect(prefs.allowedCategories).toEqual(['required', 'functional'])
+      })
+
+      it("emits event", () => {
+        expect(newCategoriesEvent).toEqual(['functional'])
+      })
     })
   })
 
@@ -122,6 +150,10 @@ describe('CookiePreferences', () => {
       it("should be empty", () => { expect(prefs.categories).toEqual([]) })
     })
 
+    describe("#allowedCategories", () => {
+      it("should be empty", () => { expect(prefs.allowedCategories).toEqual([]) })
+    })
+
     describe("assigning #all", () => {
       beforeEach(() => { prefs.all = {required: false, functional: true} })
 
@@ -139,7 +171,9 @@ describe('CookiePreferences', () => {
         expect(prefs.categories).toEqual(['required', 'functional'])
       }) ;
 
-      test.todo("emits event for updates")
+      it("emits event", () => {
+        expect(newCategoriesEvent).toEqual(['functional'])
+      })
     }) ;
 
     describe("assigning new category", () => {
@@ -157,7 +191,9 @@ describe('CookiePreferences', () => {
         expect(prefs.categories).toEqual(['functional'])
       })
 
-      test.todo("emits event") ;
+      it("emits event", () => {
+        expect(newCategoriesEvent).toEqual(['functional'])
+      })
     })
   }) ;
 })  
