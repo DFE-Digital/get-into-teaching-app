@@ -16,6 +16,8 @@ Rails.application.routes.draw do
 
   post "feedback/page_helpful", to: "feedback#page_helpful", as: :page_helpful_feedback
 
+  get "sessions/crsf_token", to: "sessions#crsf_token"
+
   resources "events", path: "/events", only: %i[index show search] do
     collection do
       get "search"

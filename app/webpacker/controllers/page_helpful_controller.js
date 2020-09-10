@@ -17,7 +17,7 @@ export default class extends Controller {
     this.submitAnswer('no')
   }
 
-  submitAnswer(answer) {
+  async submitAnswer(answer) {
     this.disableLinks();
     
     fetch('/feedback/page_helpful', { 
@@ -30,7 +30,7 @@ export default class extends Controller {
           url: window.location.href.split('?')[0], 
           answer 
         }, 
-        authenticity_token: window._token 
+        authenticity_token: await this.getToken() 
       })
     }) 
     .then(() => { 
@@ -42,6 +42,12 @@ export default class extends Controller {
     .finally(() => {
       this.hideLinks();
     });
+  }
+
+  async getToken() {
+    const response = await fetch('/sessions/crsf_token');
+    const json = await response.json();
+    return json.token;
   }
 
   disableLinks() {

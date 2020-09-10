@@ -1,5 +1,6 @@
 import { Application } from 'stimulus' ;
 import PageHelpfulController from 'page_helpful_controller';
+import waitForExpect from 'wait-for-expect';
 
 describe('PageHelpfulController', () => {
   document.body.innerHTML = `
@@ -14,22 +15,24 @@ describe('PageHelpfulController', () => {
   application.register('page-helpful', PageHelpfulController);
   const yesButton = document.getElementById("yesButton");
   const noButton = document.getElementById("noButton");
+  const authenticity_token = "abc-123";
 
   const expectCall = (answer, url = window.location.href) => {
-    expect(fetch.mock.calls.length).toEqual(1);
-
-    const call = fetch.mock.calls[0];
+    expect(fetch.mock.calls.length).toEqual(2);
+    
+    const call = fetch.mock.calls[1];
     const path = call[0];
     const request = call[1];
 
     expect(path).toEqual("/feedback/page_helpful");
     expect(request.method).toEqual("POST");
     expect(request.headers).toEqual({ "Content-Type": "application/json" });
-    expect(request.body).toEqual(JSON.stringify({ page_helpful: { url, answer: answer }}));
+    expect(request.body).toEqual(JSON.stringify({ page_helpful: { url, answer: answer }, authenticity_token }));
   }
 
   beforeEach(() => {
     window.fetch.resetMocks();
+    fetch.mockResponseOnce(JSON.stringify({ token: authenticity_token }))
   });
 
   describe("on connect", () => {
@@ -40,24 +43,30 @@ describe('PageHelpfulController', () => {
   });
 
   describe("submitting an answer", () => {
-    it("sends a 'yes' answer", () => {
+    it("sends a 'yes' answer", async () => {
       yesButton.click();
-      expectCall("yes");
+      await waitForExpect(() => {
+        expectCall("yes");
+      });
     });
 
-    it("sends a 'no' answer", () => {
+    it("sends a 'no' answer", async () => {
       noButton.click();
-      expectCall("no");
+      await waitForExpect(() => {
+        expectCall("no");
+      });
     });
 
-    it("does not send query parameters as part of the url attribute", () => {
+    it("does not send query parameters as part of the url attribute", async () => {
       Object.defineProperty(window, "location", {
         value: {
           href: "http://localhost/test?param=ignore"
         }
       });
       yesButton.click();
-      expectCall("yes", "http://localhost/test");
+      await waitForExpect(() => {
+        expectCall("yes", "http://localhost/test");
+      });
     });
 
     it("disables the links when clicked", () => {
