@@ -11,13 +11,35 @@
             </div>
         </div>
     <% else %>
-        <div class="hero" style="background-image: url('<%= hero_image_path image %>')">
-            <div class="hero__banner">
-                <div class="hero__banner__text">
-                    <h1><%= header %></h1>
+        <% if mobileimage %>
+            <div class="hero">
+                <picture class="hero__image">
+                    <source 
+                        srcset="
+                        <%= hero_image_path mobileimage %>
+                        "
+                        media="(max-width: 799px)"
+                    />
+                    <img 
+                        src="<%= hero_image_path image %>"
+                        alt=" "
+                    />
+                </picture>
+                <div class="hero__banner">
+                    <div class="hero__banner__text">
+                        <h1><%= header %></h1>
+                    </div>
                 </div>
             </div>
-        </div>
+        <% else %>
+            <div class="hero" style="background-image: url('<%= hero_image_path image %>')">
+                <div class="hero__banner">
+                    <div class="hero__banner__text">
+                        <h1><%= header %></h1>
+                    </div>
+                </div>
+            </div>
+        <% end %>
     <% end %>
     <% if mailinglist %>
         <div class="hero__mailing-strip">
