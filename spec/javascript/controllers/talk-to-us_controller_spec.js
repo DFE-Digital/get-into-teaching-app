@@ -20,7 +20,7 @@ describe('TalkToUsController', () => {
 
         <div class="talk-to-us__inner__table__column" data-target="talk-to-us.tta" id="2">
             <p>
-                <b>Sign up to talk to a teacher training adviser</b> <br/>
+                <b>Get an adviser</b> <br/>
                 If you're ready to get into teaching, you can get support from a dedicated and experienced teaching professional 
                 who can guide you through each step of the process.
             </p>
@@ -28,7 +28,7 @@ describe('TalkToUsController', () => {
                 If you’re returning to teaching and are qualified to teach maths, physics or languages, you can also get support by using this service.
             </p>
             <%= tta_service_link class: "call-to-action-button" do %>
-                Sign up to talk to a teacher training <span>adviser</span>
+                Get an <span>adviser</span>
             <% end %>
         </div>
 
