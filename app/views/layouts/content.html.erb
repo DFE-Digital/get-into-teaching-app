@@ -11,7 +11,9 @@
             <%= render "sections/header" %>
             <div  role="main" id="main-content">
                 <%= render "sections/hero", 
-                    :header => @front_matter["title"], :image => @front_matter["image"], 
+                    :header => @front_matter["title"],
+                    :image => @front_matter["image"], 
+                    :mobileimage => @front_matter["mobileimage"], 
                     :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"], 
                     :mailinglist => @front_matter["mailinglist"] 
                 %>
