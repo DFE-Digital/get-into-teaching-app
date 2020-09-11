@@ -11,7 +11,7 @@
             </div>
         </div>
     <% else %>
-        <% if mobileimage %>
+        <% if defined?(mobileimage) && mobileimage %>
             <div class="hero">
                 <picture class="hero__image">
                     <source 
