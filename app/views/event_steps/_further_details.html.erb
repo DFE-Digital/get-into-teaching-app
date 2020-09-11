@@ -11,7 +11,7 @@
         label: { text: "Yes" } %>
 <% end %>
 
-<% unless f.object.already_subscribed_to_mailing_list? %>
+<% if f.object.can_subscribe_to_mailing_list? %>
   <div data-controller="last-step" data-last-step-complete="Complete sign up" data-last-step-continue="Next Step">
     <div data-action="click->last-step#updateSubmit">
       <%= f.govuk_radio_buttons_fieldset :subscribe_to_mailing_list, inline: true do %>
