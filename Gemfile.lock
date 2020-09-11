@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: 8c2f175fcb86236d68c931be3fee1f2662568b85
+  revision: e6903ee25cd33f549d35d625f7029f97d717fd15
   specs:
-    get_into_teaching_api_client (1.1.1)
+    get_into_teaching_api_client (1.1.2)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (0.1.1)
+    get_into_teaching_api_client_faraday (0.1.2)
       activesupport
       faraday
       faraday-encoding
@@ -97,7 +97,7 @@ GEM
       xpath (~> 3.2)
     childprocess (3.0.0)
     coderay (1.1.2)
-    concurrent-ruby (1.1.6)
+    concurrent-ruby (1.1.7)
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     crass (1.0.6)
@@ -133,7 +133,7 @@ GEM
       activesupport (>= 5.2)
     hashdiff (1.0.1)
     htmlentities (4.3.4)
-    i18n (1.8.3)
+    i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     json (2.3.1)
     kramdown (2.3.0)
@@ -152,7 +152,7 @@ GEM
     mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    minitest (5.14.1)
+    minitest (5.14.2)
     msgpack (1.3.3)
     multipart-post (2.1.1)
     nio4r (2.5.2)
@@ -321,7 +321,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.3.0)
+    zeitwerk (2.4.0)
 
 PLATFORMS
   ruby
