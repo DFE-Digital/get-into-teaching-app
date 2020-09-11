@@ -21,6 +21,8 @@ gem "bootsnap", ">= 1.1.0", require: false
 # Manage multiple processes i.e. web server and webpack
 gem "foreman"
 
+gem "secure_headers"
+
 # Canonical meta tag
 gem "canonical-rails"
 
