@@ -18,7 +18,7 @@ SecureHeaders::Configuration.default do |config|
     img_src: %w['self'],
     manifest_src: %w['self'],
     media_src: %w['self'],
-    script_src: %w['self' 'unsafe-inline' *.facebook.net *.googletagmanager.com *.hotjar.com *.pinimg.com *.sc-static.net],
+    script_src: %w['self' *.facebook.net *.googletagmanager.com *.hotjar.com *.pinimg.com *.sc-static.net],
     style_src: %w['self' 'unsafe-inline'],
     worker_src: %w['self'],
     upgrade_insecure_requests: true, # see https://www.w3.org/TR/upgrade-insecure-requests/
