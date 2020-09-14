@@ -17,8 +17,11 @@ describe('CookieAcceptanceController', () => {
                     Header
                 </div>
                 BODY
-                <a href="#" id="accept-cookie" class="call-to-action-button" data-action="click->cookie-acceptance#accept">
+                <a href="#" id="cookies-agree" data-target="cookie-acceptance.agree" class="call-to-action-button" data-action="click->cookie-acceptance#accept">
                     Yes, I agree. Continue to the new <span>website</span>
+                </a>
+                <a class="secondary-link" href='https://getintoteaching.education.gov.uk/' data-target="cookie-acceptance.disagree" id="cookies-disagree">
+                  No, I want to go to the current website <i class="fas fa-chevron-right"></i>
                 </a>
             </div>
         </div>
@@ -45,7 +48,7 @@ describe('CookieAcceptanceController', () => {
 
     describe("clicking the accept button", () => {
         it('sets the cookie', () => {
-            let acceptanceButton = document.getElementById("accept-cookie");
+            let acceptanceButton = document.getElementById("cookies-agree");
             acceptanceButton.click();
             expect(document.cookie.indexOf('GiTBetaCookie=Accepted') === -1).toBe(false);
         })
@@ -55,7 +58,7 @@ describe('CookieAcceptanceController', () => {
         it('hides the dialog', () => {
             window.document.cookie = "";
             application.register('cookie-acceptance', CookieAcceptanceController);
-            let acceptanceButton = document.getElementById("accept-cookie");
+            let acceptanceButton = document.getElementById("cookies-agree");
             acceptanceButton.click();
             let overlay = document.getElementById('overlay');
             expect(overlay.style.display).toBe("none");
