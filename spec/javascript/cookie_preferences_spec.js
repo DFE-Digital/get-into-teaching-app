@@ -35,7 +35,7 @@ describe('CookiePreferences', () => {
     }) ;
 
     it("#all should load settings from cookie", () => {
-      expect(prefs.all).toEqual({required: true, marketing: false}) ;
+      expect(prefs.all).toEqual({functional: true, required: true, marketing: false}) ;
     }) ;
 
     it("should mark cookie as set", () => {
@@ -46,6 +46,7 @@ describe('CookiePreferences', () => {
       it("should return per category values",() => {
         expect(prefs.allowed('required')).toBe(true) ;
         expect(prefs.allowed('marketing')).toBe(false) ;
+        expect(prefs.allowed('functional')).toBe(true) ;
       })
 
       it("should return false for unknown categories", () => {
@@ -55,35 +56,36 @@ describe('CookiePreferences', () => {
 
     describe("#categories", () => {
       it("should return the categories held in the cookie", () => {
-        expect(prefs.categories).toEqual(["required", "marketing"]) ;
+        expect(prefs.categories).toEqual(["required", "marketing", "functional"]) ;
       }) ;
     }) ;
 
     describe("#allowedCategories", () => {
       it("should return categories set to true", () => {
-        expect(prefs.allowedCategories).toEqual(['required'])
+        expect(prefs.allowedCategories).toEqual(['required', 'functional'])
       })
     })
 
     describe("assigning #all", () => {
-      beforeEach(() => { prefs.all = {required: false, functional: true} })
+      beforeEach(() => { prefs.all = {required: false, features: true} })
 
       it("should update", () => {
-        expect(prefs.all).toEqual({required: false, functional: true})
+        expect(prefs.all).toEqual({required: false, features: true, functional: true})
       })
 
       it("should return new values for #allowed", () => {
         expect(prefs.allowed('required')).toBe(false)
-        expect(prefs.allowed('functional')).toBe(true)
+        expect(prefs.allowed('features')).toBe(true)
         expect(prefs.allowed('marketing')).toBe(false)
+        expect(prefs.allowed('functional')).toBe(true)
       })
 
       it("should update #categories list", () => {
-        expect(prefs.categories).toEqual(['required', 'functional'])
+        expect(prefs.categories).toEqual(['required', 'features', 'functional'])
       }) ;
 
       it("emits event", () => {
-        expect(newCategoriesEvent).toEqual(['functional'])
+        expect(newCategoriesEvent).toEqual(['features'])
       })
     }) ;
 
@@ -95,31 +97,7 @@ describe('CookiePreferences', () => {
       })
 
       it("updates #all", () => {
-        expect(prefs.all).toEqual({required: true, marketing: true})
-      })
-
-      it("does not update category list", () => {
-        expect(prefs.categories).toEqual(['required', 'marketing'])
-      })
-
-      it("does update allowed categories", () => {
-        expect(prefs.allowedCategories).toEqual(['required', 'marketing'])
-      })
-
-      it("emits event", () => {
-        expect(newCategoriesEvent).toEqual(['marketing'])
-      })
-    })
-
-    describe("assigning new category", () => {
-      beforeEach(() => { prefs.setCategory('functional', true) })
-
-      it("updates allowed value", () => {
-        expect(prefs.allowed('functional')).toBe(true)
-      })
-
-      it("updates #all", () => {
-        expect(prefs.all).toEqual({required: true, marketing: false, functional: true})
+        expect(prefs.all).toEqual({required: true, marketing: true, functional: true})
       })
 
       it("does not update category list", () => {
@@ -127,11 +105,51 @@ describe('CookiePreferences', () => {
       })
 
       it("does update allowed categories", () => {
-        expect(prefs.allowedCategories).toEqual(['required', 'functional'])
+        expect(prefs.allowedCategories).toEqual(['required', 'marketing', 'functional'])
       })
 
       it("emits event", () => {
-        expect(newCategoriesEvent).toEqual(['functional'])
+        expect(newCategoriesEvent).toEqual(['marketing'])
+      })
+    })
+
+    describe("assigning functational to false", () => {
+      beforeEach(() => { prefs.setCategory('functional', false) })
+
+      it("leaves the value as true", () => {
+        expect(prefs.allowed('functional')).toBe(true)
+      })
+
+      it("is included in category list", () => {
+        expect(prefs.categories.includes('functional')).toBe(true)
+      })
+
+      it("is included in the allowedCategories list", () => {
+        expect(prefs.allowedCategories.includes('functional')).toBe(true)
+      }) ;
+    }) ;
+
+    describe("assigning new category", () => {
+      beforeEach(() => { prefs.setCategory('features', true) })
+
+      it("updates allowed value", () => {
+        expect(prefs.allowed('features')).toBe(true)
+      })
+
+      it("updates #all", () => {
+        expect(prefs.all).toEqual({required: true, marketing: false, features: true, functional: true})
+      })
+
+      it("does not update category list", () => {
+        expect(prefs.categories).toEqual(['required', 'marketing', 'functional', 'features'])
+      })
+
+      it("does update allowed categories", () => {
+        expect(prefs.allowedCategories).toEqual(['required', 'functional', 'features'])
+      })
+
+      it("emits event", () => {
+        expect(newCategoriesEvent).toEqual(['features'])
       })
     })
 
@@ -154,22 +172,23 @@ describe('CookiePreferences', () => {
     })
 
     describe("#all", () => {
-      it("should be null", () => { expect(prefs.all).toEqual({}) })
+      it("should still include functional", () => { expect(prefs.all).toEqual({'functional' : true}) })
     })
 
     describe("#allowed", () => {
       it("should return false for all categories", () => {
+        expect(prefs.allowed('functional')).toBe(true)
         expect(prefs.allowed('required')).toBe(false)
         expect(prefs.allowed('marketing')).toBe(false)
       })
     })
 
     describe("#categories", () => {
-      it("should be empty", () => { expect(prefs.categories).toEqual([]) })
+      it("should be functional only", () => { expect(prefs.categories).toEqual(['functional']) })
     })
 
     describe("#allowedCategories", () => {
-      it("should be empty", () => { expect(prefs.allowedCategories).toEqual([]) })
+      it("should be functional only", () => { expect(prefs.allowedCategories).toEqual(['functional']) })
     })
 
     describe("assigning #all", () => {
@@ -190,7 +209,7 @@ describe('CookiePreferences', () => {
       }) ;
 
       it("emits event", () => {
-        expect(newCategoriesEvent).toEqual(['functional'])
+        expect(newCategoriesEvent).toEqual([])
       })
     }) ;
 
@@ -210,7 +229,7 @@ describe('CookiePreferences', () => {
       })
 
       it("emits event", () => {
-        expect(newCategoriesEvent).toEqual(['functional'])
+        expect(newCategoriesEvent).toEqual([])
       })
     })
 

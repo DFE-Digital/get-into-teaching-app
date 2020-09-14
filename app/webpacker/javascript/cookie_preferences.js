@@ -4,6 +4,7 @@ export default class CookiePreferences {
   static cookieBaseName = "git-cookie-preferences" ;
   static cookieVersion = 1 ;
   static cookieLifetimeInDays = 90 ;
+  static alwaysOnCategory = 'functional' ;
   static allCategories = {
     'functional' : true,
     'non-functional' : true,
@@ -29,9 +30,12 @@ export default class CookiePreferences {
       this.settings = JSON.parse(cookie) ;
       this.cookieSet = true ;
     }
+
+    this.settings[CookiePreferences.alwaysOnCategory] = true ;
   }
 
   writeCookie(categories) {
+    categories[CookiePreferences.alwaysOnCategory] = true ;
     const serialized = JSON.stringify(categories)
     Cookies.set(CookiePreferences.cookieName, serialized, {
       expires: CookiePreferences.cookieLifetimeInDays
