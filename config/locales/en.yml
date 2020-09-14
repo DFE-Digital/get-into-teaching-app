@@ -218,8 +218,7 @@ en:
           link: resend verification
       events_steps_personalised_updates:
         address_postcode: |-
-          Enter your postcode so that we can send you event information
-          specificities to your area.
+          We want to send you relevant information about events in your area.
 
     legend:
       events_steps_further_details:
