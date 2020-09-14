@@ -7,7 +7,7 @@ on:
 
 jobs:
   cve:
-    name: CVE scanner 
+    name: CVE/OWASP scanner 
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -16,12 +16,21 @@ jobs:
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag localbuild/testimage:latest
 
-      - name: Scan image
+      - name: Anchore Scan
         uses: anchore/scan-action@v1
         with:
              dockerfile-path: "Dockerfile"
              image-reference:  localbuild/testimage:latest
              fail-build: true
+
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.1.0
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          docker_name: 'owasp/zap2docker-stable'
+          target: localbuild/testimage:latest
+          rules_file_name: '.zap/rules.tsv'
+          cmd_options: '-a'
 
       - name: Slack Notification
         if: failure()
