@@ -130,6 +130,16 @@ describe('CookiePreferences', () => {
         expect(newCategoriesEvent).toEqual(['functional'])
       })
     })
+
+    describe("allowAll", () => {
+      beforeEach(() => { prefs.allowAll() }) ;
+
+      it("sets all to true", () => {
+        expect(prefs.allowedCategories).toEqual(
+          ['functional', 'non-functional', 'marketing']
+        ) ;
+      }) ;
+    }) ;
   })
 
   describe("without cookie set", () => {
@@ -195,5 +205,15 @@ describe('CookiePreferences', () => {
         expect(newCategoriesEvent).toEqual(['functional'])
       })
     })
+
+    describe("allowAll", () => {
+      beforeEach(() => { prefs.allowAll() }) ;
+
+      it("sets all to true", () => {
+        expect(prefs.allowedCategories).toEqual(
+          ['functional', 'non-functional', 'marketing']
+        ) ;
+      }) ;
+    }) ;
   }) ;
 })  

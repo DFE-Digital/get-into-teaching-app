@@ -4,6 +4,11 @@ export default class CookiePreferences {
   static cookieBaseName = "git-cookie-preferences" ;
   static cookieVersion = 1 ;
   static cookieLifetimeInDays = 90 ;
+  static allCategories = {
+    'functional' : true,
+    'non-functional' : true,
+    'marketing' : true
+  } ;
 
   settings = null ;
 
@@ -77,5 +82,9 @@ export default class CookiePreferences {
     }) ;
 
     document.dispatchEvent(acceptedCookies) ;
+  }
+
+  allowAll() {
+    this.all = CookiePreferences.allCategories ;
   }
 }
