@@ -22,6 +22,7 @@ SecureHeaders::Configuration.default do |config|
     style_src: %w['self' 'unsafe-inline'],
     worker_src: %w['self'],
     upgrade_insecure_requests: true, # see https://www.w3.org/TR/upgrade-insecure-requests/
+    report_uri: [ENV["SENTRY_CSP_REPORT_URI"]],
   }
 end
 # rubocop:enable Lint/PercentStringArray
