@@ -19,6 +19,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     end
   end
 
+  let(:channels) do
+    GetIntoTeachingApiClient::Constants::CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS.map do |k, v|
+      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+    end
+  end
+
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
 
   before do
@@ -28,6 +34,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
     allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
       receive(:get_teaching_subjects).and_return(teaching_subject_types)
+    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+      receive(:get_candidate_mailing_list_subscription_channels).and_return(channels)
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
@@ -39,6 +47,43 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
     visit mailing_list_steps_path
+
+    expect(page).to have_text "Sign up for personalised updates"
+    fill_in_name_step(degree_status: "First year")
+    click_on "Next Step"
+
+    expect(page).to have_text "How close are you to applying"
+    select "I’m not sure and finding out more"
+    click_on "Next Step"
+
+    expect(page).to have_text "Which subject do you want to teach"
+    select "Maths"
+    click_on "Next Step"
+
+    expect(page).to have_text "Events in your area"
+    fill_in "What's your postcode", with: "TE57 1NG"
+    click_on "Next Step"
+
+    expect(page).to have_text "If you need more information"
+    fill_in_contact_step
+    click_on "Complete sign up"
+
+    expect(page).to have_text "If you need more information"
+    expect(page).to have_text "There is a problem"
+    expect(page).to have_text "Accept the privacy policy to continue"
+    check "Yes"
+    click_on "Complete sign up"
+
+    expect(page).to have_text "You've signed up"
+    expect(page).to have_text "What happens next"
+  end
+
+  scenario "Full journey as an on-campus candidate" do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+
+    channel_id = channels.first.id
+    visit mailing_list_steps_path({ id: :name, channel: channel_id })
 
     expect(page).to have_text "Sign up for personalised updates"
     fill_in_name_step(degree_status: "First year")

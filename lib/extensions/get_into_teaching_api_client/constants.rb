@@ -15,6 +15,13 @@ module GetIntoTeachingApiClient
         "Closed" => 222_750_001,
       }.freeze
 
+    # This is not a complete list.
+    CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS =
+      {
+        "GITIS - On Campus - Careers Services activity" => 222_750_037,
+        "GITIS - On Campus - Students Union Media" => 222_750_038,
+      }.freeze
+
     GET_INTO_TEACHING_EVENT_TYPES = EVENT_TYPES.select { |key|
       ["Train to Teach Event", "Online Event", "Application Workshop"].include?(key)
     }.freeze
