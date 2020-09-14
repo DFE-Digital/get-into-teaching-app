@@ -34,7 +34,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Phone number (optional)", with: "01234567890"
     click_on "Next Step"
 
-    within_fieldset "Would you like to receive personalised information" do
+    within_fieldset "Would you like to receive email updates" do
       choose "Yes"
     end
     click_on "Complete sign up"
@@ -68,7 +68,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Phone number (optional)", with: "01234567890"
     click_on "Next Step"
 
-    within_fieldset "Would you like to receive personalised information" do
+    within_fieldset "Would you like to receive email updates" do
       choose "No"
     end
     click_on "Complete sign up"
@@ -111,7 +111,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "Are you over 16 and do you agree"
-    expect(page).to have_text "Would you like to receive personalised information"
+    expect(page).to have_text "Would you like to receive email updates"
     click_on "Complete sign up"
 
     expect(page).to have_text "There is a problem"
@@ -121,7 +121,7 @@ RSpec.feature "Event wizard", type: :feature do
     within_fieldset "Are you over 16 and do you agree" do
       check "Yes"
     end
-    within_fieldset "Would you like to receive personalised information" do
+    within_fieldset "Would you like to receive email updates" do
       choose "Yes"
     end
     click_on "Complete sign up"
@@ -191,7 +191,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text("Are you over 16 and do you agree")
-    expect(page).to_not have_text("Would you like to receive personalised information")
+    expect(page).to_not have_text("Would you like to receive email updates")
     click_on "Complete sign up"
 
     expect(page).to have_text "There is a problem"
@@ -233,7 +233,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text("Are you over 16 and do you agree")
-    expect(page).to_not have_text("Would you like to receive personalised information")
+    expect(page).to_not have_text("Would you like to receive email updates")
     click_on "Complete sign up"
 
     expect(page).to have_text "There is a problem"
