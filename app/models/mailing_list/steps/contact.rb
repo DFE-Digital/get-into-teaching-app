@@ -12,14 +12,6 @@ module MailingList
         self.telephone = telephone.to_s.strip.presence
       end
 
-      def save
-        if valid?
-          @store["subscribe_to_events"] = true
-        end
-
-        super
-      end
-
       def latest_privacy_policy
         @latest_privacy_policy ||= GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
       end

@@ -35,37 +35,4 @@ describe MailingList::Steps::Contact do
   context "accept_privacy_policy" do
     it { is_expected.to validate_acceptance_of :accept_privacy_policy }
   end
-
-  describe "#save" do
-    context "when invalid" do
-      before do
-        subject.accept_privacy_policy = nil
-        expect_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to_not \
-          receive(:get_latest_privacy_policy)
-      end
-
-      it "does not update the store" do
-        expect(subject).to_not be_valid
-        subject.save
-        expect(wizardstore["subscribe_to_events"]).to be_nil
-      end
-    end
-
-    context "when valid" do
-      let(:response) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
-
-      before do
-        subject.accept_privacy_policy = true
-
-        allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
-          receive(:get_latest_privacy_policy).and_return(response)
-      end
-
-      it "updates the store" do
-        expect(subject).to be_valid
-        subject.save
-        expect(wizardstore["subscribe_to_events"]).to be_truthy
-      end
-    end
-  end
 end
