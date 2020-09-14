@@ -3,11 +3,6 @@ class PagesController < ApplicationController
   around_action :cache_static_page, only: %i[show]
   rescue_from ActionView::MissingTemplate, with: :rescue_missing_template
 
-  def scribble
-    @page_title = "Scribble Test"
-    render template: "pages/scribble"
-  end
-
   def privacy_policy
     @page_title = "Privacy Policy"
     policy_id = params[:id]
