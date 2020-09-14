@@ -6,6 +6,7 @@ export default class extends Controller {
 
   connect() {
     this.cookiePreferences = new CookiePreferences ;
+    this.cookiePreferences.writeCookie(this.cookiePreferences.all) ;
     this.assignRadios() ;
   }
 

@@ -34,14 +34,18 @@ describe('CookiePreferencesController', () => {
     setCookie(JSON.stringify(data)) ;
   }
 
-  beforeEach(() => {
+  function initCookie() {
     setJsonCookie({ first: true, second: false })
+  }
 
+  function initApp(setCookie) {
     const application = Application.start() ;
     application.register('cookie-preferences', CookiePreferencesController);
-  })
+  }
 
   describe("on page load", () => {
+    beforeEach(() => { initCookie(); initApp() })
+
     it('radios should be assigned', () => {
       expect(document.getElementById('first-yes').checked).toBe(true) ;
       expect(document.getElementById('first-no').checked).toBe(false) ;
@@ -50,13 +54,24 @@ describe('CookiePreferencesController', () => {
     })
   }) ;
 
+  describe("on page load without cookie", () => {
+    beforeEach(() => { initApp() })
+
+    it('should save cookie', () => {
+      const data = getJsonCookie() ;
+      expect(data['functional']).toBe(true) ;
+    })
+  })
+
   describe("when changing radios", () => {
+    beforeEach(() => { initCookie(); initApp() })
+
     it("cookie should be updated", () => {
-      expect(getJsonCookie()).toEqual({ first: true, second: false })
+      expect(getJsonCookie()).toEqual({ first: true, functional: true, second: false })
       document.getElementById('first-no').click() ;
-      expect(getJsonCookie()).toEqual({ first: false, second: false })
+      expect(getJsonCookie()).toEqual({ first: false, functional: true, second: false })
       document.getElementById('second-yes').click() ;
-      expect(getJsonCookie()).toEqual({ first: false, second: true })
+      expect(getJsonCookie()).toEqual({ first: false, functional: true, second: true })
     })
   }) ;
 }) ;
