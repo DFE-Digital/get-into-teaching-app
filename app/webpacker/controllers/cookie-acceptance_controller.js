@@ -6,7 +6,9 @@ export default class extends Controller {
     static targets = ["modal","overlay","agree","disagree"];
 
     connect() {
-        this.checkforCookie();
+        if (!this.isPreferencesPage()) {
+          this.checkforCookie();
+        }
     }
 
     checkforCookie() {
@@ -38,5 +40,10 @@ export default class extends Controller {
             e.preventDefault();
             document.getElementById('cookies-disagree').focus();
         });
+    }
+
+    isPreferencesPage() {
+      const path = window.location.href.replace(/^https?:\/\/[^/]+/, '')
+      return (path == "/cookie_preference") ;
     }
 }
