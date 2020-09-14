@@ -11,6 +11,7 @@ export default class CookiePreferences {
   } ;
 
   settings = null ;
+  cookieSet = false ;
 
   constructor() {
     this.readCookie() ;
@@ -22,10 +23,12 @@ export default class CookiePreferences {
 
   readCookie() {
     const cookie = Cookies.get(CookiePreferences.cookieName);
-    if (typeof(cookie) == 'undefined' || !cookie)
+    if (typeof(cookie) == 'undefined' || !cookie) {
       this.settings = {} ;
-    else
+    } else {
       this.settings = JSON.parse(cookie) ;
+      this.cookieSet = true ;
+    }
   }
 
   writeCookie(categories) {
@@ -33,6 +36,8 @@ export default class CookiePreferences {
     Cookies.set(CookiePreferences.cookieName, serialized, {
       expires: CookiePreferences.cookieLifetimeInDays
     }) ;
+
+    this.cookieSet = true ;
   }
 
   get all() {

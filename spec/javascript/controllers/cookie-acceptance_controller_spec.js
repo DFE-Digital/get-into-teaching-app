@@ -1,12 +1,9 @@
+const Cookies = require('js-cookie') ;
 import { Application } from 'stimulus' ;
 import CookieAcceptanceController from 'cookie-acceptance_controller.js' ;
 
 describe('CookieAcceptanceController', () => {
-
-    Object.defineProperty(window.document, 'cookie', {
-        writable: true,
-        value: 'GiTBetaCookie=Accepted; expires=Fri, 31 Dec 2021 12:00:00 UTC'
-    });
+  let cookieName = "git-cookie-preferences-v1" ;
 
     document.body.innerHTML = 
     `<div data-controller="cookie-acceptance">
@@ -27,10 +24,23 @@ describe('CookieAcceptanceController', () => {
         </div>
     </div>`;
 
-    const application = Application.start() ;
-    application.register('cookie-acceptance', CookieAcceptanceController);
+    function initApp() {
+      const application = Application.start() ;
+      application.register('cookie-acceptance', CookieAcceptanceController);
+    }
+
+    beforeEach(() => {
+      Cookies.remove("git-cookie-preferences-v1") ;
+    }) ;
 
     describe("when the cookie is set", () => {
+        beforeEach(() => {
+          const data = JSON.stringify({functional: true}) ;
+          Cookies.set("git-cookie-preferences-v1", data) ;
+
+          initApp() ;
+        }) ;
+
         it('does not show the cookie acceptance dialog', () => {
             let overlay = document.getElementById('overlay');
             expect(overlay.style.display).toBe("");
@@ -38,28 +48,27 @@ describe('CookieAcceptanceController', () => {
     });
 
     describe("when the cookie is not set", () => {
+        beforeEach(() => { initApp() }) ;
+
         it('shows the cookie acceptance dialog', () => {
-            window.document.cookie = "";
-            application.register('cookie-acceptance', CookieAcceptanceController);
             let overlay = document.getElementById('overlay');
             expect(overlay.style.display).toBe("flex");
         })
     });
 
     describe("clicking the accept button", () => {
-        it('sets the cookie', () => {
-            let acceptanceButton = document.getElementById("cookies-agree");
-            acceptanceButton.click();
-            expect(document.cookie.indexOf('GiTBetaCookie=Accepted') === -1).toBe(false);
-        })
-    });
+        beforeEach(() => {
+          initApp()
 
-    describe("clicking the accept button", () => {
+          let acceptanceButton = document.getElementById("cookies-agree");
+          acceptanceButton.click();
+        }) ;
+
+        it('sets the cookie', () => {
+            expect(Cookies.get("git-cookie-preferences-v1")).not.toBe(false);
+        })
+
         it('hides the dialog', () => {
-            window.document.cookie = "";
-            application.register('cookie-acceptance', CookieAcceptanceController);
-            let acceptanceButton = document.getElementById("cookies-agree");
-            acceptanceButton.click();
             let overlay = document.getElementById('overlay');
             expect(overlay.style.display).toBe("none");
         })

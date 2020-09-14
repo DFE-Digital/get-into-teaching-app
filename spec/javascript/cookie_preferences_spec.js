@@ -38,6 +38,10 @@ describe('CookiePreferences', () => {
       expect(prefs.all).toEqual({required: true, marketing: false}) ;
     }) ;
 
+    it("should mark cookie as set", () => {
+      expect(prefs.cookieSet).toBe(true) ;
+    })
+
     describe("#allowed", () => {
       it("should return per category values",() => {
         expect(prefs.allowed('required')).toBe(true) ;
@@ -144,6 +148,10 @@ describe('CookiePreferences', () => {
 
   describe("without cookie set", () => {
     beforeEach(() => { prefs = new CookiePreferences })
+
+    it("should mark cookie as set", () => {
+      expect(prefs.cookieSet).toBe(false) ;
+    })
 
     describe("#all", () => {
       it("should be null", () => { expect(prefs.all).toEqual({}) })
