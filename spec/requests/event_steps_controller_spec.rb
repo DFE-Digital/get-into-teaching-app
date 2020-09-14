@@ -17,6 +17,12 @@ describe EventStepsController do
       receive(:get_teaching_event).and_return event
   end
 
+  describe "#index" do
+    before { get event_steps_path("123", query: "param") }
+    subject { response }
+    it { is_expected.to redirect_to(event_step_path("123", { id: :personal_details, query: "param" })) }
+  end
+
   describe "#show" do
     before { get step_path }
     subject { response }

@@ -7,7 +7,8 @@ module WizardSteps
   end
 
   def index
-    redirect_to step_path(wizard_class.first_key)
+    query_params = request.query_parameters
+    redirect_to step_path(wizard_class.first_key, query_params)
   end
 
   def show
