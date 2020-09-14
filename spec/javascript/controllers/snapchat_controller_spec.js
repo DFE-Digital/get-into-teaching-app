@@ -10,6 +10,6 @@ describe('SnapchatController', () => {
   // window appears to not be getting redefined between runs, so remove manually
   afterEach(() => { delete window.snaptr })
 
-  AnalyticsHelper.describeWithCookieSet('snapchat', SnapchatController, 'snaptr')
-  AnalyticsHelper.describeWhenEventFires('snapchat', SnapchatController, 'snaptr')
+  AnalyticsHelper.describeWithCookieSet('snapchat', SnapchatController, 'snaptr', 'marketing')
+  AnalyticsHelper.describeWhenEventFires('snapchat', SnapchatController, 'snaptr', 'marketing')
 })

@@ -10,6 +10,6 @@ describe('HotjarController', () => {
   // window appears to not be getting redefined between runs, so remove manually
   afterEach(() => { delete window.hj })
 
-  AnalyticsHelper.describeWithCookieSet('hotjar', HotjarController, 'hj')
-  AnalyticsHelper.describeWhenEventFires('hotjar', HotjarController, 'hj')
+  AnalyticsHelper.describeWithCookieSet('hotjar', HotjarController, 'hj', 'non-functional')
+  AnalyticsHelper.describeWhenEventFires('hotjar', HotjarController, 'hj', 'non-functional')
 })
