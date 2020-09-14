@@ -6,12 +6,15 @@ SecureHeaders::Configuration.default do |config|
   config.x_download_options = "noopen"
   config.x_permitted_cross_domain_policies = "none"
   config.referrer_policy = %w[origin-when-cross-origin strict-origin-when-cross-origin]
+
+  tta_service_uri = URI.parse(ENV["TTA_SERVICE_URL"])
+
   config.csp = {
     default_src: %w['none'],
     base_uri: %w['self'],
     block_all_mixed_content: true, # see http://www.w3.org/TR/mixed-content/
     child_src: %w['self' *.youtube.com],
-    connect_src: %w['self'],
+    connect_src: %W['self' #{tta_service_uri.host}],
     font_src: %w['self'],
     form_action: %w['self'],
     frame_ancestors: %w['none'],
