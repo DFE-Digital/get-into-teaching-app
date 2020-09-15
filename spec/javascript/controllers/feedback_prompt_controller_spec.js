@@ -1,3 +1,4 @@
+const Cookies = require('js-cookie') ;
 import { Application } from 'stimulus' ;
 
 describe('FeedbackPromptController', () => {
@@ -5,6 +6,9 @@ describe('FeedbackPromptController', () => {
   var application;
 
   beforeEach(() => {
+    Cookies.remove('GiTBetaCookie') ;
+    Cookies.remove('GiTBetaFeedbackPrompt') ;
+
     console.error = jest.fn();
     document.body.innerHTML = `
     <div data-controller="feedback-prompt">
@@ -31,13 +35,6 @@ describe('FeedbackPromptController', () => {
     window.pageYOffset = end;
   };
 
-  const setCookie = (cookie) => {
-    Object.defineProperty(window.document, 'cookie', {
-      writable: true,
-      value: cookie
-    });
-  };
-
   const attachController = () => {
     jest.resetModules();
     application.register('feedback-prompt', require("feedback_prompt_controller").default);
@@ -62,7 +59,7 @@ describe('FeedbackPromptController', () => {
 
   describe("when cookies have been accepted", () => {
     beforeEach(() => { 
-      setCookie('GiTBetaCookie=Accepted')
+      Cookies.set('GiTBetaCookie', 'Accepted') ;
     });
 
     it("does not display by default", () => {
@@ -142,8 +139,8 @@ describe('FeedbackPromptController', () => {
         expect(dialog.style.display).toContain("none");
       });
 
-      it("set the cookie with an expiry date", () => {
-        expect(document.cookie).toContain("GiTBetaFeedbackPrompt=Disabled; expires=");
+      it("set the cookie", () => {
+        expect(Cookies.get('GiTBetaFeedbackPrompt')).toEqual("Disabled");
       });
     });
 
@@ -156,15 +153,16 @@ describe('FeedbackPromptController', () => {
         actionButton.click();
       });
 
-      it("set the cookie with an expiry date", () => {
-        expect(document.cookie).toContain("GiTBetaFeedbackPrompt=Disabled; expires=");
+      it("set the cookie", () => {
+        expect(Cookies.get('GiTBetaFeedbackPrompt')).toEqual("Disabled");
       });
     });
   });
 
   describe("when the prompt has already been seen", () => {
     beforeEach(() => { 
-      setCookie('GiTBetaCookie=Accepted;GiTBetaFeedbackPrompt=Disabled')
+      Cookies.set('GiTBetaCookie', 'Accepted')
+      Cookies.set('GiTBetaFeedbackPrompt', 'Disabled') ;
     });
 
     it("no longer prompts", () => {
@@ -176,9 +174,8 @@ describe('FeedbackPromptController', () => {
 
   describe("when the prompt has already been actioned", () => {
     beforeEach(() => { 
-      var expiry = new Date();
-      expiry.setFullYear(expiry.getFullYear() + 1);
-      setCookie(`GiTBetaCookie=Accepted;GiTBetaFeedbackPrompt=Disabled; expires=${expiry.toUTCString()}`)
+      Cookies.set('GiTBetaCookie', 'Accepted')
+      Cookies.set('GiTBetaFeedbackPrompt', 'Disabled', { expires: 365 }) ;
     });
 
     it("no longer prompts", () => {
