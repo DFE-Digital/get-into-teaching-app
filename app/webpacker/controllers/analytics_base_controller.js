@@ -25,7 +25,7 @@ export default class extends Controller {
   }
 
   get isEnabled() {
-    return (this.serviceId && this.data.has('action') && this.data.has('event')) ;
+    return (this.serviceId && this.data.has('action')) ;
   }
 
   triggerEvent() {
@@ -59,21 +59,25 @@ export default class extends Controller {
   }
 
   get eventData() {
+    if (typeof(this.parsedEventData) != "undefined")
+      return this.parsedEventData ;
+
     let evData = this.data.get('event-data') ;
+    this.parsedEventData = null ;
 
     if (evData && evData != "")
-      return JSON.parse(evData) ;
-    else
-      return null ;
+      this.parsedEventData = JSON.parse(evData) ;
+
+    return this.parsedEventData ;
   }
 
   sendEvent() {
-    let evData = this.eventData ;
-
-    if (evData)
-      this.serviceFunction(this.serviceAction, this.eventName, evData) ;
-    else
+    if (this.eventData)
+      this.serviceFunction(this.serviceAction, this.eventName, this.eventData) ;
+    else if (this.eventName)
       this.serviceFunction(this.serviceAction, this.eventName) ;
+    else
+      this.serviceFunction(this.serviceAction) ;
   }
 
 }
