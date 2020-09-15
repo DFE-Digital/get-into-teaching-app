@@ -108,4 +108,6 @@ Rails.application.configure do
 
   config.x.git_api_endpoint = \
     "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
+  config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence || \
+    Rails.application.credentials.google_maps_key.presence
 end

@@ -30,6 +30,8 @@ gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown"
 gem "rinku"
 
+gem "addressable"
+
 gem "faraday"
 gem "faraday-encoding"
 gem "faraday-http-cache"

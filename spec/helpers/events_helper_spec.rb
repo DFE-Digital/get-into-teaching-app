@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe EventsHelper, type: "helper" do
+  include MapsHelper
+
   let(:startdate) { DateTime.new(2020, 6, 1, 10) }
   let(:enddate) { DateTime.new(2020, 6, 1, 12) }
   let(:event) { build(:event_api, start_at: startdate, end_at: enddate) }
@@ -23,6 +25,18 @@ describe EventsHelper, type: "helper" do
 
       it { is_expected.to eql "June 1st, 2020 at 10:00 - 12:00" }
     end
+  end
+
+  describe "#event_location_map" do
+    subject { event_location_map(event) }
+
+    before do
+      allow(Rails.application.config.x).to receive(:google_maps_key) { "12345" }
+    end
+
+    it { is_expected.to match(/data-map-description=\"Line 1,\nLine 2,\nManchester,\nMA1 1AM\" /) }
+    it { is_expected.to match(/zoom=10/) }
+    it { is_expected.to match(/alt=\"Map showing #{event.name}\"/) }
   end
 
   describe "#name_of_event_type" do
