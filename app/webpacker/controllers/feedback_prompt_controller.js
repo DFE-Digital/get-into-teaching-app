@@ -1,4 +1,5 @@
 const Cookies = require('js-cookie') ;
+import CookiePreferences from '../javascript/cookie_preferences' ;
 import { Controller } from "stimulus"
 import isTouchDevice from 'is-touch-device';
 
@@ -7,6 +8,7 @@ export default class extends Controller {
   topExitSensitivity = 20;
   topScrollEndSensitivity = 300;
   topScrollMinimumDistance = 700;
+  cookieCategory = 'functional' ;
 
   connect() {
     if (isTouchDevice()) {
@@ -94,7 +96,7 @@ export default class extends Controller {
   };
 
   get cookiesAccepted() {
-    return Cookies.get('GiTBetaCookie') == 'Accepted' ;
+    return (new CookiePreferences).allowed(this.cookieCategory) ;
   }
 
   get disabled() {

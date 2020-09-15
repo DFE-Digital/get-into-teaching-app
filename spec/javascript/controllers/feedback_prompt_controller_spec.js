@@ -1,4 +1,5 @@
 const Cookies = require('js-cookie') ;
+import CookiePreferences from 'cookie_preferences' ;
 import { Application } from 'stimulus' ;
 
 describe('FeedbackPromptController', () => {
@@ -6,7 +7,7 @@ describe('FeedbackPromptController', () => {
   var application;
 
   beforeEach(() => {
-    Cookies.remove('GiTBetaCookie') ;
+    Cookies.remove(CookiePreferences.cookieName) ;
     Cookies.remove('GiTBetaFeedbackPrompt') ;
 
     console.error = jest.fn();
@@ -48,18 +49,10 @@ describe('FeedbackPromptController', () => {
   const mockDesktop = () => {
     jest.mock('is-touch-device', () => ({ __esModule: true, default: () => false }));
   };
-  
-  describe("when cookies have not been accepted", () => {
-    it("does not prompt", () => {
-      attachController();
-      mouseLeave();
-      expect(dialog.style.display).toContain("none");
-    });
-  });
 
   describe("when cookies have been accepted", () => {
     beforeEach(() => { 
-      Cookies.set('GiTBetaCookie', 'Accepted') ;
+      (new CookiePreferences).allowAll() ;
     });
 
     it("does not display by default", () => {
@@ -161,7 +154,7 @@ describe('FeedbackPromptController', () => {
 
   describe("when the prompt has already been seen", () => {
     beforeEach(() => { 
-      Cookies.set('GiTBetaCookie', 'Accepted')
+      (new CookiePreferences).allowAll() ;
       Cookies.set('GiTBetaFeedbackPrompt', 'Disabled') ;
     });
 
@@ -174,7 +167,7 @@ describe('FeedbackPromptController', () => {
 
   describe("when the prompt has already been actioned", () => {
     beforeEach(() => { 
-      Cookies.set('GiTBetaCookie', 'Accepted')
+      (new CookiePreferences).allowAll() ;
       Cookies.set('GiTBetaFeedbackPrompt', 'Disabled', { expires: 365 }) ;
     });
 
