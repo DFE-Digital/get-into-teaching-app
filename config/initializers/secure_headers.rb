@@ -14,14 +14,14 @@ SecureHeaders::Configuration.default do |config|
     base_uri: %w['self'],
     block_all_mixed_content: true, # see http://www.w3.org/TR/mixed-content/
     child_src: %w['self' *.youtube.com],
-    connect_src: %W['self' #{tta_service_uri.host}],
+    connect_src: %W['self' #{tta_service_uri.host} *.google-analytics.com],
     font_src: %w['self' *.gov.uk fonts.gstatic.com],
     form_action: %w['self'],
     frame_ancestors: %w['none'],
-    img_src: %w['self' *.gov.uk data: maps.gstatic.com *.googleapis.com],
+    img_src: %w['self' *.gov.uk data: maps.gstatic.com *.googleapis.com *.google-analytics.com],
     manifest_src: %w['self'],
     media_src: %w['self'],
-    script_src: %w['self' 'unsafe-inline' *.googleapis.com *.gov.uk code.jquery.com *.google-analytics.com *.facebook.net *.googletagmanager.com *.hotjar.com *.pinimg.com *.sc-static.net],
+    script_src: %w['self' 'unsafe-inline' *.google-analytics.com *.googleapis.com *.gov.uk code.jquery.com *.google-analytics.com *.facebook.net *.googletagmanager.com *.hotjar.com *.pinimg.com *.sc-static.net],
     style_src: %w['self' 'unsafe-inline' *.gov.uk *.googleapis.com],
     worker_src: %w['self'],
     upgrade_insecure_requests: true, # see https://www.w3.org/TR/upgrade-insecure-requests/
