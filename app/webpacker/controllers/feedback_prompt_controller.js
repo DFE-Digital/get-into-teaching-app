@@ -1,3 +1,4 @@
+const Cookies = require('js-cookie') ;
 import { Controller } from "stimulus"
 import isTouchDevice from 'is-touch-device';
 
@@ -50,7 +51,7 @@ export default class extends Controller {
     }
 
     this.dialogTarget.style.display = 'flex';
-    document.cookie = this.cookie;
+    Cookies.set(this.cookieName, 'Disabled')
   }
 
   close(e) {
@@ -59,9 +60,7 @@ export default class extends Controller {
   }
 
   disable() {
-    var expiry = new Date();
-    expiry.setFullYear(expiry.getFullYear() + 1);
-    document.cookie = `${this.cookie}; expires=${expiry.toUTCString()}`
+    Cookies.set(this.cookieName, 'Disabled', {expires: 365})
   }
 
   handleMouseLeave(e) {
@@ -95,14 +94,14 @@ export default class extends Controller {
   };
 
   get cookiesAccepted() {
-    return document.cookie.indexOf('GiTBetaCookie=Accepted') > -1;
+    return Cookies.get('GiTBetaCookie') == 'Accepted' ;
   }
 
   get disabled() {
-    return !this.cookiesAccepted || document.cookie.indexOf(this.cookie) != -1;
+    return !this.cookiesAccepted || Cookies.get(this.cookieName) == 'Disabled';
   }
 
-  get cookie() {
-    return 'GiTBetaFeedbackPrompt=Disabled';
+  get cookieName() {
+    return 'GiTBetaFeedbackPrompt' ;
   }
 }
