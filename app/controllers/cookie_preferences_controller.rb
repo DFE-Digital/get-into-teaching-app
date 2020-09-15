@@ -1,3 +1,5 @@
 class CookiePreferencesController < ApplicationController
-  def show; end
+  def show
+    # default render
+  end
 end

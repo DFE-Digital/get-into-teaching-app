@@ -41,7 +41,7 @@ export default class extends Controller {
   }
 
   cookiesAcceptedChecker(event) {
-    if (event.detail && event.detail.cookies && event.detail.cookies.includes(this.cookieCategory))
+    if (event.detail?.cookies?.includes(this.cookieCategory))
       this.triggerEvent() ;
   }
 
