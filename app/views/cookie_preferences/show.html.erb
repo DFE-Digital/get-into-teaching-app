@@ -1,0 +1,183 @@
+<section class="event-info content container-1000" role="main" id="main-content">
+  <div class="content__left">
+    <%= back_link %>
+
+    <h1>Cookies on Get into Teaching</h1>
+
+    <p class="govuk-body">
+      <strong>
+        Cookies are files saved on your phone, tablet or computer when
+        you visit a website.
+      </strong>
+    </p>
+
+    <p>
+      We use cookies to store information about how you use the website, such
+      as the pages you visit.
+    </p>
+
+    <h2 class="govuk-heading-m">
+      Cookie settings
+    </h2>
+
+    <p>
+      We use 3 types of cookie. You can choose which cookies you're happy
+      for us to use.
+    </p>
+
+    <div id="cookie-preferences-form">
+      <form id="cookie-preferences-from" novalidate data-controller="cookie-preferences">
+        <div class="govuk-form-group">
+          <fieldset class="govuk-fieldset"
+            aria-describedby="cookies-non-functional-hint"
+            data-target="cookie-preferences.category"
+            data-category="non-functional">
+
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h3 class="govuk-fieldset__heading">
+                Cookies that measure website use
+              </h3>
+            </legend>
+            <div class="govuk-hint" id="cookies-non-functional-hint">
+              <p>
+                We use Google Analytics to measure how you use the website so
+                we can improve it based on user needs. We do not allow Google
+                to use or share the data about how you use this service.
+              </p>
+
+              <p>
+                Google Analytics sets cookies that store anonymised
+                information about:
+              </p>
+
+              <ul>
+                <li>how you got to the service</li>
+                <li>
+                  the pages you visit on <a href="https://www.gov.uk">GOV.UK</a>
+                  and government digital services, and how long you spend on
+                  each page
+                </li>
+                <li>what you click on while you're visiting the service</li>
+              </ul>
+
+              <p>
+                Cookies may be set by other third-party services to do things
+                like measure how you view YouTube videos that are on the
+                service.
+              </p>
+
+              <p>
+                If you have an account with other services provided by the
+                Education and Skills Funding Agency, the information collected
+                using analytics cookies will be linked to your account. This
+                will help us make the service work better for you.
+              </p>
+            </div>
+            <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input id="cookies-non-functional-yes" class="govuk-radios__input" type="radio" value="1" name="cookies-non-functional" data-action="cookie-preferences#toggle" />
+                <label for="cookies-non-functional-yes" class="govuk-label govuk-radios__label">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input id="cookies-non-functional-no" class="govuk-radios__input" type="radio" value="0" name="cookies-non-functional"  data-action="cookie-preferences#toggle" />
+                <label for="cookies-non-functional-no" class="govuk-label govuk-radios__label">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <hr />
+
+          <fieldset class="govuk-fieldset"
+            aria-describedby="cookies-marketing-hint"
+            data-target="cookie-preferences.category"
+            data-category="marketing">
+
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h3 class="govuk-fieldset__heading">
+                Cookies that help with our communication and marketing
+              </h3>
+            </legend>
+            <div class="govuk-hint" id="cookies-marketing-hint">
+              <p>
+                These cookies help us to improve the relevency of advertising
+                campaigns you receive from us.
+              </p>
+
+              <p>
+                We also share information about your use of this service with
+                our social media, advertising and analytics partner. They
+                combine it with other information that they've collected from
+                your use of our services to guide the advertising that you
+                receive.
+              </p>
+            </div>
+            <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
+              <div class="govuk-radios__item">
+                <input id="cookies-marketing-yes" class="govuk-radios__input" type="radio" value="1" name="cookies-marketing" data-action="cookie-preferences#toggle" />
+                <label for="cookies-marketing-yes" class="govuk-label govuk-radios__label">
+                  Yes
+                </label>
+              </div>
+              <div class="govuk-radios__item">
+                <input id="cookies-marketing-no" class="govuk-radios__input" type="radio" value="0" name="cookies-marketing" data-action="cookie-preferences#toggle" />
+                <label for="cookies-marketing-no" class="govuk-label govuk-radios__label">
+                  No
+                </label>
+              </div>
+            </div>
+          </fieldset>
+
+          <hr />
+
+          <fieldset class="govuk-fieldset"
+            aria-describedby="cookies-functional-hint"
+            data-target="cookie-preferences.category"
+            data-category="functional">
+
+            <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+              <h3 class="govuk-fieldset__heading">
+                Strictly necessary cookies
+              </h3>
+            </legend>
+            <div class="govuk-hint" id="cookies-functional-hint">
+              <p>
+                These essential cookies do things like:
+              </p>
+
+              <ul>
+                <li>
+                  your progress through a form (for example a licence
+                  application)
+                </li>
+                <li>
+                  the notifications you've seen so we do not show them to you
+                  again
+                </li>
+              </ul>
+
+              <p>They always need to be on.</p>
+
+              <p>
+                <a href="/cookie-policy">Find out more</a>
+                about cookies on this service
+              </p>
+            </div>
+          </fieldset>
+        </div>
+      </form>
+
+      <p>
+        You can find more about who we are, how you can contact us
+        and how we process personal data in our
+        <a href="/privacy-policy">privacy notice</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="content__right"></div>
+</section>
+

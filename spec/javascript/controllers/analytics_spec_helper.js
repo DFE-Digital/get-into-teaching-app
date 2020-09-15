@@ -1,16 +1,14 @@
+const Cookies = require('js-cookie') ;
+import CookiePreferences from "cookie_preferences" ;
 import { Application } from 'stimulus' ;
 
 export default class {
   static setCookie(cookieContent) {
-    Object.defineProperty(window.document, 'cookie', {
-      writable: true,
-      value: cookieContent
-    })
+    Cookies.set(CookiePreferences.cookieName, cookieContent) ;
   }
 
   static setAcceptedCookie() {
-    const nextYear = (new Date).getFullYear() + 1 ;
-    this.setCookie('GiTBetaCookie=Accepted; expires=Fri, 31 Dec ' + nextYear + ' 12:00:00 UTC') ;
+    (new CookiePreferences).allowAll() ;
   }
 
   static setBlankCookie() {
@@ -23,7 +21,9 @@ export default class {
     application.register(name, controller) ;
   }
 
-  static describeWithCookieSet(name, controller, serviceFunctionName) {
+  static describeWithCookieSet(name, controller, serviceFunctionName, cookieCategory) {
+    beforeEach(() => { Cookies.remove(CookiePreferences.cookieName) })
+
     describe("with cookie already set", () => {
       beforeEach(() => { this.setAcceptedCookie() })
 
@@ -45,7 +45,9 @@ export default class {
     })
   }
 
-  static describeWhenEventFires(name, controller, serviceFunctionName) {
+  static describeWhenEventFires(name, controller, serviceFunctionName, cookieCategory) {
+    beforeEach(() => { Cookies.remove(CookiePreferences.cookieName) })
+
     describe("without cookie set yet", () => {
       beforeEach(() => {
         this.setBlankCookie() ;
@@ -57,7 +59,7 @@ export default class {
       }) ;
 
       it("Should register service when event is emitted", () => {
-        document.dispatchEvent(new Event("cookies:accepted")) ;
+        (new CookiePreferences).setCategory(cookieCategory, true) ;
         expect(typeof(window[serviceFunctionName])).toBe("function") ;
       }) ;
     }) ;

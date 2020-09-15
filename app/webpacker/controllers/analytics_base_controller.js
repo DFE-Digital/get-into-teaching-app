@@ -1,20 +1,27 @@
+import CookiePreferences from "../javascript/cookie_preferences"
 import { Controller } from "stimulus"
 
 export default class extends Controller {
 
   connect() {
-    if(document.cookie.indexOf('GiTBetaCookie=Accepted') > -1) {
+    const cookiePrefs = new CookiePreferences() ;
+
+    if(cookiePrefs.allowed(this.cookieCategory)) {
       this.triggerEvent() ;
     } else {
-      this.triggerEventHandler = this.triggerEvent.bind(this)
-      document.addEventListener("cookies:accepted", this.triggerEventHandler) ;
+      this.cookiesAcceptedHandler = this.cookiesAcceptedChecker.bind(this) ;
+      document.addEventListener("cookies:accepted", this.cookiesAcceptedHandler) ;
     }
   }
 
   disconnect() {
     if (this.analyticsAcceptedHandler) {
-      document.removeEventListener("cookies:accepted", this.triggerEventHandler) ;
+      document.removeEventListener("cookies:accepted", this.cookiesAcceptedHandler) ;
     }
+  }
+
+  get cookieCategory() {
+    return 'marketing' ;
   }
 
   get isEnabled() {
@@ -31,6 +38,11 @@ export default class extends Controller {
       this.initService() ;
 
     this.sendEvent() ;
+  }
+
+  cookiesAcceptedChecker(event) {
+    if (event.detail?.cookies?.includes(this.cookieCategory))
+      this.triggerEvent() ;
   }
 
   getServiceId(attribute) {

@@ -10,6 +10,10 @@ export default class extends AnalyticsBaseController {
     return window.hj ;
   }
 
+  get cookieCategory() {
+    return 'non-functional' ;
+  }
+
   initService() {
     // IMPORTANT: see line marked below
     // the 'a' variable was originally used in the function call

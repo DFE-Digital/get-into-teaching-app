@@ -10,6 +10,6 @@ describe('GtmController', () => {
   // window appears to not be getting redefined between runs, so remove manually
   afterEach(() => { delete window.gtag })
 
-  AnalyticsHelper.describeWithCookieSet('gtm', GtmController, 'gtag')
-  AnalyticsHelper.describeWhenEventFires('gtm', GtmController, 'gtag')
+  AnalyticsHelper.describeWithCookieSet('gtm', GtmController, 'gtag', 'non-functional')
+  AnalyticsHelper.describeWhenEventFires('gtm', GtmController, 'gtag', 'non-functional')
 })

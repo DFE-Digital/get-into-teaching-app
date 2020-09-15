@@ -1,3 +1,4 @@
+import CookiePreferences from "../javascript/cookie_preferences"
 import { Controller } from "stimulus"
 
 export default class extends Controller {
@@ -5,24 +6,25 @@ export default class extends Controller {
     static targets = ["modal","overlay","agree","disagree"];
 
     connect() {
-        this.checkforCookie();
+        if (!this.isPreferencesPage()) {
+          this.checkforCookie();
+        }
     }
 
     checkforCookie() {
-        var cookie = document.cookie;
-        if(cookie.indexOf('GiTBetaCookie=Accepted') > -1) {
-            return;
-        }
+        const cookiePrefs = new CookiePreferences() ;
+        if (cookiePrefs.cookieSet)
+          return ;
+
         this.showDialog();
     }
 
     accept(event) {
         event.preventDefault();
         this.overlayTarget.style.display = "none";
-        document.cookie = "GiTBetaCookie=Accepted; expires=Fri, 31 Dec 2021 12:00:00 UTC";
 
-        let acceptedCookies = new Event("cookies:accepted") ;
-        document.dispatchEvent(acceptedCookies) ;
+        const cookiePrefs = new CookiePreferences() ;
+        cookiePrefs.allowAll() ;
     }
 
     showDialog() {
@@ -40,4 +42,8 @@ export default class extends Controller {
         });
     }
 
+    isPreferencesPage() {
+      const path = window.location.href.replace(/^https?:\/\/[^/]+/, '')
+      return (path == "/cookie_preference") ;
+    }
 }

@@ -14,6 +14,6 @@ describe('FacebookController', () => {
   // window appears to not be getting redefined between runs, so remove manually
   afterEach(() => { delete window.fbq })
 
-  AnalyticsHelper.describeWithCookieSet('facebook', FacebookController, 'fbq')
-  AnalyticsHelper.describeWhenEventFires('facebook', FacebookController, 'fbq')
+  AnalyticsHelper.describeWithCookieSet('facebook', FacebookController, 'fbq', 'marketing')
+  AnalyticsHelper.describeWhenEventFires('facebook', FacebookController, 'fbq', 'marketing')
 })
