@@ -1,12 +1,16 @@
-import { Controller } from "stimulus"
+const Cookies = require('js-cookie') ;
+import CookiePreferences from '../javascript/cookie_preferences' ;
+import { Controller } from "stimulus" ;
 
 export default class extends Controller {
+  cookieCategory = 'functional' ;
+
   connect() {
     this.hideOnLoad();
   }
 
   hideOnLoad() {
-    if(document.cookie.indexOf(this.cookie) != -1) {
+    if(Cookies.get(this.cookieName) == 'Hidden') {
       this.hideBanner();
     }
   }
@@ -22,11 +26,12 @@ export default class extends Controller {
   }
 
   setCookie() {
-    document.cookie = this.cookie;
+    if ((new CookiePreferences).allowed(this.cookieCategory))
+      Cookies.set(this.cookieName, 'Hidden')
   }
 
-  get cookie() {
-    return `GiTBetaBanner${this.name}=Hidden`;
+  get cookieName() {
+    return `GiTBetaBanner${this.name}`;
   }
 
   get name() {
