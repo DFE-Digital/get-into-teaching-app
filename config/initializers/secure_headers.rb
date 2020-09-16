@@ -8,24 +8,30 @@ SecureHeaders::Configuration.default do |config|
   config.referrer_policy = %w[origin-when-cross-origin strict-origin-when-cross-origin]
 
   tta_service_uri = URI.parse(ENV["TTA_SERVICE_URL"])
+  google_analytcs = "https://www.google-analytics.com"
 
   config.csp = {
     default_src: %w['none'],
     base_uri: %w['self'],
     block_all_mixed_content: true, # see http://www.w3.org/TR/mixed-content/
-    child_src: %w['self' *.youtube.com],
-    connect_src: %W['self' #{tta_service_uri.host} *.google-analytics.com],
+    child_src: %w['self' *.youtube.com ct.pinterest.com tr.snapchat.com *.hotjar.com],
+    connect_src: %W['self' #{tta_service_uri.host} #{google_analytcs} ct.pinterest.com *.hotjar.com],
     font_src: %w['self' *.gov.uk fonts.gstatic.com],
-    form_action: %w['self'],
+    form_action: %w['self' tr.snapchat.com],
     frame_ancestors: %w['none'],
-    img_src: %w['self' *.gov.uk data: maps.gstatic.com *.googleapis.com *.google-analytics.com],
+    img_src: %W['self' *.gov.uk data: maps.gstatic.com *.googleapis.com #{google_analytcs} www.facebook.com ct.pinterest.com],
     manifest_src: %w['self'],
     media_src: %w['self'],
-    script_src: %w['self' 'unsafe-inline' *.google-analytics.com *.googleapis.com *.gov.uk code.jquery.com *.google-analytics.com *.facebook.net *.googletagmanager.com *.hotjar.com *.pinimg.com *.sc-static.net],
+    script_src: %W['self' 'unsafe-inline' *.googleapis.com *.gov.uk code.jquery.com #{google_analytcs} *.facebook.net *.googletagmanager.com *.hotjar.com *.pinimg.com sc-static.net],
     style_src: %w['self' 'unsafe-inline' *.gov.uk *.googleapis.com],
     worker_src: %w['self'],
     upgrade_insecure_requests: true, # see https://www.w3.org/TR/upgrade-insecure-requests/
     report_uri: [ENV["SENTRY_CSP_REPORT_URI"]],
   }
+
+  if Rails.env.development?
+    # Webpack-dev-server
+    config.csp[:connect_src] += %w[ws: localhost:*]
+  end
 end
 # rubocop:enable Lint/PercentStringArray
