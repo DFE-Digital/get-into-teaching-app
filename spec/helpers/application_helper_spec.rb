@@ -6,6 +6,7 @@ describe ApplicationHelper do
     let(:pinterest_id) { gtm_id }
     let(:snapchat_id) { gtm_id }
     let(:facebook_id) { gtm_id }
+    let(:twitter_id) { gtm_id }
 
     before do
       allow(ENV).to receive(:[]).and_call_original
@@ -13,6 +14,7 @@ describe ApplicationHelper do
       allow(ENV).to receive(:[]).with("PINTEREST_ID").and_return pinterest_id
       allow(ENV).to receive(:[]).with("SNAPCHAT_ID").and_return snapchat_id
       allow(ENV).to receive(:[]).with("FACEBOOK_ID").and_return facebook_id
+      allow(ENV).to receive(:[]).with("TWITTER_ID").and_return twitter_id
     end
 
     subject { analytics_body_tag { "<h1>TEST</h1>".html_safe } }
@@ -24,6 +26,7 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-controller~=pinterest]" }
       it { is_expected.to have_css "body[data-controller~=snapchat]" }
       it { is_expected.to have_css "body[data-controller~=facebook]" }
+      it { is_expected.to have_css "body[data-controller~=twitter]" }
     end
 
     context "assigns service ids" do
@@ -31,6 +34,7 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-analytics-pinterest-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-snapchat-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-facebook-id=1234]" }
+      it { is_expected.to have_css "body[data-analytics-twitter-id=1234]" }
     end
 
     context "with blank service ids" do
@@ -39,6 +43,7 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-analytics-pinterest-id=\"\"]" }
       it { is_expected.to have_css "body[data-analytics-snapchat-id=\"\"]" }
       it { is_expected.to have_css "body[data-analytics-facebook-id=\"\"]" }
+      it { is_expected.to have_css "body[data-analytics-twitter-id=\"\"]" }
     end
 
     context "with no service ids" do
@@ -47,6 +52,7 @@ describe ApplicationHelper do
       it { is_expected.not_to have_css "body[data-analytics-pinterest-id]" }
       it { is_expected.not_to have_css "body[data-analytics-snapchat-id]" }
       it { is_expected.not_to have_css "body[data-analytics-facebook-id]" }
+      it { is_expected.not_to have_css "body[data-analytics-twitter-id]" }
     end
 
     context "default events" do
@@ -54,6 +60,8 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-snapchat-event=PAGE_VIEW]" }
       it { is_expected.to have_css "body[data-facebook-action=track]" }
       it { is_expected.to have_css "body[data-facebook-event=PageView]" }
+      it { is_expected.to have_css "body[data-twitter-action=track]" }
+      it { is_expected.to have_css "body[data-twitter-event=PageView]" }
     end
 
     context "with additional stimulus controller" do
@@ -62,6 +70,7 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-controller~=pinterest]" }
       it { is_expected.to have_css "body[data-controller~=snapchat]" }
       it { is_expected.to have_css "body[data-controller~=facebook]" }
+      it { is_expected.to have_css "body[data-controller~=twitter]" }
       it { is_expected.to have_css "body[data-controller~=atest]" }
     end
 

@@ -22,7 +22,7 @@ SecureHeaders::Configuration.default do |config|
     img_src: %W['self' *.gov.uk data: maps.gstatic.com *.googleapis.com #{google_analytcs} www.facebook.com ct.pinterest.com],
     manifest_src: %w['self'],
     media_src: %w['self'],
-    script_src: %W['self' 'unsafe-inline' *.googleapis.com *.gov.uk code.jquery.com #{google_analytcs} *.facebook.net *.googletagmanager.com *.hotjar.com *.pinimg.com sc-static.net],
+    script_src: %W['self' 'unsafe-inline' *.googleapis.com *.gov.uk code.jquery.com #{google_analytcs} *.facebook.net *.googletagmanager.com *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com],
     style_src: %w['self' 'unsafe-inline' *.gov.uk *.googleapis.com],
     worker_src: %w['self'],
     upgrade_insecure_requests: true, # see https://www.w3.org/TR/upgrade-insecure-requests/
