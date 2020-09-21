@@ -80,6 +80,10 @@ describe MailingList::StepsController do
       get resend_verification_mailing_list_steps_path(redirect_path: "redirect/path")
       response
     end
-    it { is_expected.to redirect_to("redirect/path") }
+
+    it do
+      is_expected.to redirect_to \
+        controller.send(:authenticate_path, verification_resent: true)
+    end
   end
 end

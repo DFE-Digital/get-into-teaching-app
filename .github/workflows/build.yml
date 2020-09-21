@@ -80,7 +80,11 @@ jobs:
       - name: Lint Ruby
         run: |-
           docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE \
-            bundle exec rubocop app config db lib spec Gemfile --format clang
+            rubocop app config db lib spec Gemfile --format clang
+
+      - name: Run Brakeman static security scanner
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE brakeman --no-pager
 
       - name: Run sonarqube
         env:

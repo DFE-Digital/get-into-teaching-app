@@ -99,6 +99,10 @@ describe EventStepsController do
       get resend_verification_event_steps_path(readable_event_id, redirect_path: "redirect/path")
       response
     end
-    it { is_expected.to redirect_to("redirect/path") }
+
+    it do
+      is_expected.to redirect_to \
+        controller.send(:authenticate_path, verification_resent: true)
+    end
   end
 end

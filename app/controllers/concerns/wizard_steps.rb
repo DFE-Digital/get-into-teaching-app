@@ -33,7 +33,7 @@ module WizardSteps
   def resend_verification
     request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(camelized_identity_data)
     GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request)
-    redirect_to params[:redirect_path]
+    redirect_to authenticate_path(verification_resent: true)
   end
 
 private
@@ -54,6 +54,10 @@ private
     else # all steps valid so completed
       completed_step_path
     end
+  end
+
+  def authenticate_path(params = {})
+    step_path :authenticate, params
   end
 
   def completed_step_path
