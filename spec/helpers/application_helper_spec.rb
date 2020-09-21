@@ -2,11 +2,13 @@ require "rails_helper"
 
 describe ApplicationHelper do
   describe "#analytics_body_tag" do
-    let(:gtm_id) { "1234" }
-    let(:pinterest_id) { gtm_id }
-    let(:snapchat_id) { gtm_id }
-    let(:facebook_id) { gtm_id }
-    let(:twitter_id) { gtm_id }
+    let(:id) { "1234" }
+    let(:gtm_id) { id }
+    let(:bam_id) { id }
+    let(:pinterest_id) { id }
+    let(:snapchat_id) { id }
+    let(:facebook_id) { id }
+    let(:twitter_id) { id }
 
     before do
       allow(ENV).to receive(:[]).and_call_original
@@ -15,6 +17,7 @@ describe ApplicationHelper do
       allow(ENV).to receive(:[]).with("SNAPCHAT_ID").and_return snapchat_id
       allow(ENV).to receive(:[]).with("FACEBOOK_ID").and_return facebook_id
       allow(ENV).to receive(:[]).with("TWITTER_ID").and_return twitter_id
+      allow(ENV).to receive(:[]).with("BAM_ID").and_return bam_id
     end
 
     subject { analytics_body_tag { "<h1>TEST</h1>".html_safe } }
@@ -35,24 +38,27 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-analytics-snapchat-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-facebook-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-twitter-id=1234]" }
+      it { is_expected.to have_css "body[data-analytics-bam-id=1234]" }
     end
 
     context "with blank service ids" do
-      let(:gtm_id) { "" }
+      let(:id) { "" }
       it { is_expected.to have_css "body[data-analytics-gtm-id=\"\"]" }
       it { is_expected.to have_css "body[data-analytics-pinterest-id=\"\"]" }
       it { is_expected.to have_css "body[data-analytics-snapchat-id=\"\"]" }
       it { is_expected.to have_css "body[data-analytics-facebook-id=\"\"]" }
       it { is_expected.to have_css "body[data-analytics-twitter-id=\"\"]" }
+      it { is_expected.to have_css "body[data-analytics-bam-id=\"\"]" }
     end
 
     context "with no service ids" do
-      let(:gtm_id) { nil }
+      let(:id) { nil }
       it { is_expected.not_to have_css "body[data-analytics-gtm-id]" }
       it { is_expected.not_to have_css "body[data-analytics-pinterest-id]" }
       it { is_expected.not_to have_css "body[data-analytics-snapchat-id]" }
       it { is_expected.not_to have_css "body[data-analytics-facebook-id]" }
       it { is_expected.not_to have_css "body[data-analytics-twitter-id]" }
+      it { is_expected.not_to have_css "body[data-analytics-bam-id]" }
     end
 
     context "default events" do

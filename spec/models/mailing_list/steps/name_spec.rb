@@ -10,9 +10,17 @@ describe MailingList::Steps::Name do
     end
   end
 
+  let(:channels) do
+    GetIntoTeachingApiClient::Constants::CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS.map do |k, v|
+      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+    end
+  end
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
       receive(:get_qualification_degree_status).and_return(degree_status_option_types)
+    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+      receive(:get_candidate_mailing_list_subscription_channels).and_return(channels)
   end
 
   it { is_expected.to respond_to :first_name }
@@ -49,6 +57,13 @@ describe MailingList::Steps::Name do
     it { is_expected.not_to allow_value(nil).for :degree_status_id }
     it { is_expected.not_to allow_value("").for :degree_status_id }
     it { is_expected.not_to allow_value(12_345).for :degree_status_id }
+  end
+
+  context "channel_id" do
+    let(:options) { channels.map(&:id) }
+    it { is_expected.to allow_values(options).for :channel_id }
+    it { is_expected.to allow_value(nil, "").for :channel_id }
+    it { is_expected.to_not allow_value(12_345).for :channel_id }
   end
 
   context "when the step is valid" do

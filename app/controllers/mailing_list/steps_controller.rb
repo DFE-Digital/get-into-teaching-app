@@ -7,8 +7,8 @@ module MailingList
 
   private
 
-    def step_path(step = params[:id])
-      mailing_list_step_path step
+    def step_path(step = params[:id], urlparams = {})
+      mailing_list_step_path step, urlparams
     end
     helper_method :step_path
 
