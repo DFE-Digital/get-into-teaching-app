@@ -42,36 +42,17 @@
                 <div class="more-stories">
                     <h2 class="more-stories_header strapline">More stories</h2>
                     <div class="more-stories__thumbs">
-                        <% if @front_matter["more_stories"].count > 0 %>
+                        <% Array.wrap(@front_matter["more_stories"]).slice(0, 3).each do |story| %>
                             <div class="more-stories__thumbs__thumb">
-                                <a href="<%= @front_matter["more_stories"][0]["url"] %>">
-                                    <div class="more-stories__thumbs__thumb__img" style="background-image:url('<%= @front_matter["more_stories"][0]["image"] %>')"></div>
+                                <a href="<%= story["url"] %>">
+                                    <div class="more-stories__thumbs__thumb__img" style="background-image:url('<%= story["image"] %>')"></div>
                                 </a>
                                 <div class="more-stories__thumbs__thumb__content">
-                                    <p><%= @front_matter["more_stories"][0]["title"] %></p>
-                                    <a class="git-link" href="<%= @front_matter["more_stories"][0]["url"] %>"><%= @front_matter["more_stories"][0]["cta"] %>  <i class="fas fa-chevron-right"></i></a>
-                                </div>
-                            </div>
-                        <% end %>
-                        <% if @front_matter["more_stories"].count > 1 %>
-                            <div class="more-stories__thumbs__thumb">
-                                <a href="<%= @front_matter["more_stories"][1]["url"] %>">
-                                    <div class="more-stories__thumbs__thumb__img" style="background-image:url('<%= @front_matter["more_stories"][1]["image"] %>')"></div>
-                                </a>
-                                <div class="more-stories__thumbs__thumb__content">
-                                    <p><%= @front_matter["more_stories"][1]["title"] %></p>
-                                    <a class="git-link" href="<%= @front_matter["more_stories"][1]["url"] %>"><%= @front_matter["more_stories"][1]["cta"] %>  <i class="fas fa-chevron-right"></i></a>
-                                </div>
-                            </div>
-                        <% end %>
-                        <% if @front_matter["more_stories"].count > 2 %>
-                            <div class="more-stories__thumbs__thumb">
-                                <a href="<%= @front_matter["more_stories"][2]["url"] %>">
-                                    <div class="more-stories__thumbs__thumb__img" style="background-image:url('<%= @front_matter["more_stories"][2]["image"] %>')"></div>
-                                </a>
-                                <div class="more-stories__thumbs__thumb__content">
-                                    <p><%= @front_matter["more_stories"][2]["title"] %></p>
-                                    <a class="git-link" href="<%= @front_matter["more_stories"][2]["url"] %>"><%= @front_matter["more_stories"][2]["cta"] %> <i class="fas fa-chevron-right"></i></a>
+                                    <p><%= story[0]["title"] %></p>
+                                    <%= link_to story["url"], class: "git-link" do %>
+                                      <%= story["cta"] %>
+                                      <i class="fas fa-chevron-right"></i>
+                                    <% end %>
                                 </div>
                             </div>
                         <% end %>
