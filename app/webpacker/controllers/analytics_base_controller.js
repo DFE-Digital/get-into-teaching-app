@@ -1,3 +1,4 @@
+const Cookies = require("js-cookie") ;
 import CookiePreferences from "../javascript/cookie_preferences"
 import { Controller } from "stimulus"
 
@@ -5,18 +6,30 @@ export default class extends Controller {
 
   connect() {
     const cookiePrefs = new CookiePreferences() ;
+    const cookiesAccepted = cookiePrefs.allowed(this.cookieCategory) ;
 
-    if(cookiePrefs.allowed(this.cookieCategory)) {
+    if (this.hasVwoCompleted && cookiesAccepted) {
       this.triggerEvent() ;
-    } else {
+    }
+
+    if (!cookiesAccepted) {
       this.cookiesAcceptedHandler = this.cookiesAcceptedChecker.bind(this) ;
       document.addEventListener("cookies:accepted", this.cookiesAcceptedHandler) ;
+    }
+
+    if (!this.hasVwoCompleted) {
+      this.vwoCompletedHandler = this.vwoCompleted.bind(this) ;
+      document.addEventListener("vwo:completed", this.vwoCompletedHandler) ;
     }
   }
 
   disconnect() {
-    if (this.analyticsAcceptedHandler) {
+    if (document && this.analyticsAcceptedHandler) {
       document.removeEventListener("cookies:accepted", this.cookiesAcceptedHandler) ;
+    }
+
+    if (document && this.vwoCompletedHandler) {
+      document.removeEventListener("vwo:completed", this.vwoCompletedHandler) ;
     }
   }
 
@@ -29,6 +42,10 @@ export default class extends Controller {
   }
 
   triggerEvent() {
+    // No-op as being redirected away
+    if (window.willRedirectionOccurByVWO)
+      return ;
+
     if (document.documentElement.hasAttribute("data-turbolinks-preview"))
       return ;
 
@@ -41,7 +58,13 @@ export default class extends Controller {
   }
 
   cookiesAcceptedChecker(event) {
-    if (event.detail?.cookies?.includes(this.cookieCategory))
+    if (event.detail?.cookies?.includes(this.cookieCategory) && this.hasVwoCompleted)
+      this.triggerEvent() ;
+  }
+
+  vwoCompleted(event) {
+    const cookiePrefs = new CookiePreferences() ;
+    if (cookiePrefs.allowed(this.cookieCategory))
       this.triggerEvent() ;
   }
 
@@ -80,5 +103,8 @@ export default class extends Controller {
       this.serviceFunction(this.serviceAction) ;
   }
 
+  get hasVwoCompleted() {
+    return (typeof(window.willRedirectionOccurByVWO) != "undefined")
+  }
 }
 
