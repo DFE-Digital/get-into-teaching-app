@@ -62,9 +62,14 @@ a {
     font-size: 36px;
     background-color: $purple;
     display: inline-block;
-    padding: 12px 20px 8px;
+    padding: 10px 20px;
     &:after {
         content: ".";
+    }
+    &--overlap {
+        background-color: $blue-dark-90;
+        padding: 10px 20px 10px 40px;
+        margin: 20px -20px;
     }
 }
 

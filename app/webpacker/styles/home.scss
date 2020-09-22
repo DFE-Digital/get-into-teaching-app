@@ -67,6 +67,7 @@
 }
 .cta-links {
     display: flex;
+    margin-bottom: 70px;
 }
 
 .cta-link {
@@ -194,12 +195,13 @@
 
     &__wrapper {
         display: flex;
+        justify-content: space-between;
         margin-top: 30px;
         padding: 0 20px;
     }
     &__step {
-        flex: 1;
         display: flex;
+        flex-direction: column;
     }
     &__link {
         font-weight: bold;
@@ -207,21 +209,28 @@
         line-height: 1.25;
         padding-right: 20px;
         flex: 1;
-        span {
-            display: block;
-            white-space: nowrap;
+        > span {
+            
+            
+            &:first-child {
+                display: block;
+            }
             &:last-child {
-                &:after {
-                    content: "";
-                    display: inline-block;
-                    width: 8px;
-                    height: 8px;
-                    border: 2px solid black;
-                    border-width: 3px 3px 0 0;
-                    transform: rotate(45deg);
-                    position: relative;
-                    top: 1px;
-                    left: 5px;
+                
+                span {
+                    white-space: nowrap;
+                    &:after {
+                        content: "";
+                        display: inline-block;
+                        width: 8px;
+                        height: 8px;
+                        border: 2px solid black;
+                        border-width: 3px 3px 0 0;
+                        transform: rotate(45deg);
+                        position: relative;
+                        top: 1px;
+                        left: 5px;
+                    }
                 }
             }
         }
@@ -242,6 +251,19 @@
         transform: rotate(-3deg);
         color: white;
         margin-right: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+.steps-home {
+    background: $grey;
+    padding: 0 0 70px 0;
+    .container-1000 {
+        text-align: left;
+        padding-top: 1px;
+    }
+    &__inner {
+        margin-top: -65px;
     }
 }
 
@@ -249,6 +271,7 @@
     background: $yellow;
     position: relative;
     padding: 80px 0;
+    margin-bottom: 70px;
     &__text {
         width: 50%;
         margin-left: 50px;
@@ -501,14 +524,16 @@
         display: flex;
         flex-direction: column-reverse;
         padding: 0;
+        margin-left: -20px;
+        margin-right: -20px;
         &__img {
             position: static;
             width: 100%;
             height: 200px;
         }
         &__text {
-            width: calc(100% - 60px);
-            margin: 30px;
+            width: calc(100% - 80px);
+            margin: 30px 30px 30px 50px;
         }
     }
 
@@ -538,6 +563,17 @@
 
     }
 
+}
+
+@media (max-width: 800px) {
+    .steps-home {
+        margin-left: -20px;
+        margin-right: -20px;
+        padding-bottom: 50px;
+        h2 {
+            margin-right: 20px;
+        }
+    }
 }
 
 @media (max-width: 700px) {
