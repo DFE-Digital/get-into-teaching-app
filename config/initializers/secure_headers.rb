@@ -15,9 +15,9 @@ SecureHeaders::Configuration.default do |config|
     base_uri: %w['self'],
     block_all_mixed_content: true, # see http://www.w3.org/TR/mixed-content/
     child_src: %w['self' *.youtube.com ct.pinterest.com tr.snapchat.com *.hotjar.com],
-    connect_src: %W['self' linkbam.uk #{tta_service_uri.host} #{google_analytcs} ct.pinterest.com *.hotjar.com],
+    connect_src: %W['self' linkbam.uk #{tta_service_uri.host} #{google_analytcs} ct.pinterest.com *.hotjar.com www.facebook.com],
     font_src: %w['self' *.gov.uk fonts.gstatic.com],
-    form_action: %w['self' tr.snapchat.com],
+    form_action: %w['self' tr.snapchat.com www.facebook.com],
     frame_ancestors: %w['none'],
     img_src: %W['self' *.gov.uk data: maps.gstatic.com *.googleapis.com #{google_analytcs} www.facebook.com ct.pinterest.com t.co],
     manifest_src: %w['self'],
