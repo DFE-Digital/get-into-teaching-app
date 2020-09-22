@@ -13,6 +13,7 @@ export default class extends AnalyticsBaseController {
     'nwQx6WBpT23FfAn/1hnVZ',
     '3BSBg0IMtWQmpkb/wFCtJ',
     '1MbhNg55GhAVDkd/3VrFR',
+    'Ae4BnnTfkvZ5pRz/dbgOi',
   ];
 
   get serviceId() {

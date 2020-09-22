@@ -40,7 +40,8 @@ describe('BamController', () => {
         'https://linkbam.uk/m/fSSR83JdeURiiQ3/YNZ99.png',
         'https://linkbam.uk/m/nwQx6WBpT23FfAn/1hnVZ.png',
         'https://linkbam.uk/m/3BSBg0IMtWQmpkb/wFCtJ.png',
-        'https://linkbam.uk/m/1MbhNg55GhAVDkd/3VrFR.png'
+        'https://linkbam.uk/m/1MbhNg55GhAVDkd/3VrFR.png',
+        'https://linkbam.uk/m/Ae4BnnTfkvZ5pRz/dbgOi.png',
       ])
     })
   })
