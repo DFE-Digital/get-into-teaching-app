@@ -44,11 +44,11 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/life-as-a-teacher/my-story-into-teaching", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching"
-  get "/life-as-a-teacher/my-story-into-teaching/career-changers", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/career-changers"
-  get "/life-as-a-teacher/my-story-into-teaching/international-career-changers", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/international-career-changers"
-  get "/life-as-a-teacher/my-story-into-teaching/making-a-difference", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/making-a-difference"
-  get "/life-as-a-teacher/my-story-into-teaching/teacher-training-stories", to: "pages#show", page: "/life-as-a-teacher/my-story-into-teaching/teacher-training-stories"
+  get "/life-as-a-teacher/my-story-into-teaching", to: "pages#show", page: "life-as-a-teacher/my-story-into-teaching"
+  get "/life-as-a-teacher/my-story-into-teaching/career-changers", to: "pages#show", page: "life-as-a-teacher/my-story-into-teaching/career-changers"
+  get "/life-as-a-teacher/my-story-into-teaching/international-career-changers", to: "pages#show", page: "life-as-a-teacher/my-story-into-teaching/international-career-changers"
+  get "/life-as-a-teacher/my-story-into-teaching/making-a-difference", to: "pages#show", page: "life-as-a-teacher/my-story-into-teaching/making-a-difference"
+  get "/life-as-a-teacher/my-story-into-teaching/teacher-training-stories", to: "pages#show", page: "life-as-a-teacher/my-story-into-teaching/teacher-training-stories"
   get "/life-as-a-teacher/my-story-into-teaching/*story", to: "stories#show"
 
   get "/guidance", to: "pages#showblank", page: "guidance"
