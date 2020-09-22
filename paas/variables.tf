@@ -47,7 +47,7 @@ variable "paas_logging_name" {
 }
 
 variable "paas_redis_1_name" {
-   default = "dfe-teacher-services-dev-red-svc"
+   default = "get-into-teaching-dev-redis-svc"
 }
 
 variable "paas_app_application_name" {

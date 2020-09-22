@@ -14,7 +14,7 @@ resource "cloudfoundry_app" "app_application" {
     }
 
     service_binding  {
-            service_instance = cloudfoundry_service_instance.redis.id
+            service_instance = data.cloudfoundry_service_instance.redis.id
     }
 
     routes { route = cloudfoundry_route.app_route_internal.id }

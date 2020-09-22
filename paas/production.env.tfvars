@@ -1,5 +1,7 @@
-paas_space="get-into-teaching-test"
-paas_postgres_name="get-into-teaching-api-test-pg-svc"
-paas_api_application_name="get-into-teaching-test-api"
-
-ASPNETCORE_ENVIRONMENT="Production"
+paas_space="get-into-teaching-production"
+paas_app_route_name="get-into-teaching-app-prod"
+paas_api_application_name="get-into-teaching-app-prod"
+paas_redis_1_name=  "get-into-teaching-prod-redis-svc"
+logging=0
+additional_routes=0
+instances=1
