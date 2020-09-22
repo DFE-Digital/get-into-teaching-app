@@ -8,7 +8,7 @@ SecureHeaders::Configuration.default do |config|
   config.referrer_policy = %w[origin-when-cross-origin strict-origin-when-cross-origin]
 
   tta_service_uri = URI.parse(ENV["TTA_SERVICE_URL"])
-  google_analytcs = "https://www.google-analytics.com"
+  google_analytcs = "www.google-analytics.com"
 
   config.csp = {
     default_src: %w['none'],
