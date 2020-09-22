@@ -16,6 +16,10 @@ class PagesController < ApplicationController
     render template: "pages/privacy_policy"
   end
 
+  def cookies
+    render template: "pages/cookies"
+  end
+
   def show
     render template: content_template, layout: "layouts/content"
   end
