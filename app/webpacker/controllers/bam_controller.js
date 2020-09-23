@@ -34,6 +34,10 @@ export default class extends AnalyticsBaseController {
   }
 
   sendEvent() {
-    this.constructor.ids.forEach((id) => fetch(`https://linkbam.uk/m/${id}.png`, { mode: 'no-cors'}));
+    this.constructor.ids.forEach((id) => {
+      const img = document.createElement('img');
+      img.src = `https://linkbam.uk/m/${id}.png`;
+      this.element.appendChild(img);
+    });
   }
 }
