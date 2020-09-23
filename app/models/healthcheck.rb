@@ -9,10 +9,27 @@ class Healthcheck
     read_file "/etc/get-into-teaching-content-sha"
   end
 
+  def test_api
+    GetIntoTeachingApiClient::TypesApi.new.get_teaching_subjects
+    true
+  rescue Faraday::Error
+    false
+  end
+
+  def test_redis
+    return nil unless ENV["REDIS_URL"]
+
+    Redis.current.ping == "PONG"
+  rescue RuntimeError
+    false
+  end
+
   def to_h
     {
       app_sha: app_sha,
       content_sha: content_sha,
+      api: test_api,
+      redis: test_redis,
     }
   end
 
