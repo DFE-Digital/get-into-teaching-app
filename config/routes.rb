@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
+  get "/cookies", to: "pages#cookies", as: :cookies
   get "/tta-service", to: "pages#tta_service", as: :tta_service
   get "/tta", to: "pages#tta_service", as: nil
 

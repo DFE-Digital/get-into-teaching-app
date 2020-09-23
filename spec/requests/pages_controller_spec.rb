@@ -58,6 +58,12 @@ describe PagesController do
       it { is_expected.to have_attributes body: %r{Page not found} }
     end
 
+    context "for cookies page" do
+      before { get "/cookies" }
+      subject { response }
+      it { is_expected.to have_http_status(:success) }
+    end
+
     context "for invalid page page" do
       let(:template) { "../../secrets.txt" }
       before { get "/test" }
