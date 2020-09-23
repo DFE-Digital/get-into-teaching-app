@@ -51,7 +51,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
-    expect(page).to have_text "signed up for personalised updates"
+    expect(page).to have_text "signed up for email updates"
   end
 
   scenario "Full journey as a new candidate declining the mailing list option" do
@@ -81,7 +81,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
-    expect(page).not_to have_text "signed up for personalised updates"
+    expect(page).not_to have_text "signed up for email updates"
   end
 
   scenario "Full journey as an existing candidate" do
@@ -130,7 +130,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
-    expect(page).to have_text "signed up for personalised updates"
+    expect(page).to have_text "signed up for email updates"
   end
 
   scenario "Full journey as a returning candidate that resends the verification code" do
@@ -204,7 +204,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
-    expect(page).not_to have_text "signed up for personalised updates"
+    expect(page).not_to have_text "signed up for email updates"
   end
 
   scenario "Full journey as an existing candidate that has already subscribed to the teacher training adviser service" do
@@ -246,7 +246,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
-    expect(page).not_to have_text "signed up for personalised updates"
+    expect(page).not_to have_text "signed up for email updates"
   end
 
   def fill_in_personal_details_step(
