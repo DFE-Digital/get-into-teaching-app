@@ -60,5 +60,6 @@ export default class extends Controller {
     close() {
         this.linkTarget.focus();
         this.playerTarget.style.display = "none";
+        this.iframeTarget.src = this.iframeTarget.src;
     }
 }
