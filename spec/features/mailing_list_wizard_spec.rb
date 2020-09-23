@@ -48,7 +48,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for personalised updates"
+    expect(page).to have_text "Sign up for email updates"
     fill_in_name_step(degree_status: "First year")
     click_on "Next Step"
 
@@ -85,7 +85,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     channel_id = channels.first.id
     visit mailing_list_steps_path({ id: :name, channel: channel_id })
 
-    expect(page).to have_text "Sign up for personalised updates"
+    expect(page).to have_text "Sign up for email updates"
     fill_in_name_step(degree_status: "First year")
     click_on "Next Step"
 
@@ -131,7 +131,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for personalised updates"
+    expect(page).to have_text "Sign up for email updates"
     fill_in_name_step(degree_status: "Other")
     click_on "Next Step"
 
@@ -183,7 +183,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for personalised updates"
+    expect(page).to have_text "Sign up for email updates"
     fill_in_name_step(degree_status: "Final year")
     click_on "Next Step"
 
@@ -214,7 +214,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for personalised updates"
+    expect(page).to have_text "Sign up for email updates"
     fill_in_name_step(degree_status: "Final year")
     click_on "Next Step"
 
@@ -238,7 +238,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for personalised updates"
+    expect(page).to have_text "Sign up for email updates"
     fill_in_name_step(degree_status: "Final year")
     click_on "Next Step"
 
@@ -262,7 +262,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for personalised updates"
+    expect(page).to have_text "Sign up for email updates"
     fill_in_name_step(degree_status: "Final year")
     click_on "Next Step"
 
@@ -279,7 +279,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
-    expect(page).to have_text "Sign up for personalised updates"
+    expect(page).to have_text "Sign up for email updates"
     fill_in_name_step(email: "test2@user.com")
     click_on "Next Step"
 
