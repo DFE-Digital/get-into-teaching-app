@@ -19,7 +19,7 @@ SecureHeaders::Configuration.default do |config|
     font_src: %w['self' *.gov.uk fonts.gstatic.com],
     form_action: %w['self' tr.snapchat.com www.facebook.com],
     frame_ancestors: %w['self'],
-    frame_src: %w['self' www.facebook.com],
+    frame_src: %w['self' tr.snapchat.com www.facebook.com],
     img_src: %W['self' linkbam.uk *.gov.uk data: maps.gstatic.com *.googleapis.com #{google_analytcs} www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com],
     manifest_src: %w['self'],
     media_src: %w['self'],
