@@ -226,7 +226,7 @@ en:
           text: Are you over 16 and do you agree to our %{link}?
           link: privacy policy
         subscribe_to_mailing_list: |-
-          Would you like to receive email updates to help you get into teaching? If you say no, you will still recieve confirmation emails about any events you sign up to attend.
+          Would you like to receive email updates to help you get into teaching? If you say no, you will still receive confirmation emails about any events you sign up to attend.
       mailing_list_steps_contact:
         accept_privacy_policy:
           text: Are you over 16 and do you agree to our %{link}?
