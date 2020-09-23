@@ -6,6 +6,7 @@ select, input {
     border: 2px solid $black;
     background-color: $white;
     height: 42px;
+    width: 100%;
     &:focus {
       outline: 3px solid $yellow;
       outline-offset: 0;
