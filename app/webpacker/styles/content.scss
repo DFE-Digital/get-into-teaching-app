@@ -107,11 +107,20 @@
             color: $black;
             text-decoration: none;
             display: inline-block;
-
-            i {
-                position: relative;
-                left: 4px;
-                top: 1px;
+            span:last-child {
+                white-space: nowrap;
+                &:after {
+                    content: "";
+                    display: inline-block;
+                    position: relative;
+                    width: 10px;
+                    height: 10px;
+                    border: 4px solid $black;
+                    border-width: 3px 3px 0px 0px;
+                    transform: rotate(45deg);
+                    top: 1px;
+                    margin-left: 5px;
+                }
             }
         }
 
