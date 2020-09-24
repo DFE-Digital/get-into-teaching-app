@@ -49,11 +49,18 @@ en:
         </p>
       school_or_university_event: |-
         <p>
-          Schools and universities that run teacher training courses often hold their own events giving you a valuable 
-          opportunity to get a feel for what their teacher training course might be like. Each event is different, but 
-          typically they’ll cover areas such as course information, application advice, school experience and the 
-          chance to talk to current trainees or staff.
+          Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to get a feel for what 
+          their teacher training course might be like. 
         </p>
+
+        <p>Each event is different, but typically they’ll cover areas such as:</p>
+
+        <ul>
+          <li><span>course information</span></li>
+          <li><span>application advice</span></li>
+          <li><span>school experience</span></li>
+          <li><span>a chance to talk to current trainees or staff</span></li>
+        </ul>
       application_workshop: |-
         <p>
           Our Train to Teach events and application workshops offer you the chance to speak to teaching experts face-to-face. 
@@ -65,7 +72,7 @@ en:
         Find out everything you need to know about teacher training at one of our flagship Train to Teach events. 
         These popular events take place all over the country and offer a brilliant opportunity to get all of your 
         questions answered by a range of teaching professionals. Best of all, they’re completely free – find your 
-        local event and register to guarantee your place.
+        local event and sign up to guarantee your place.
       </p>
       <p>When you attend a Train to Teach event, you’ll get the chance to:</p>
       <ul>
