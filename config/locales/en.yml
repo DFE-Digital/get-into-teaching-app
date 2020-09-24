@@ -33,44 +33,73 @@ en:
   find_an_event:
     types:
       train_to_teach_event: |-
-        Meet experienced teaching professionals who can answer questions about your application, 
-        ways to train, funding and more. Talk one-to-one with newly qualified teachers and find 
-        out what teaching is really like.
+        <p>Our free Train to Teach events are the perfect opportunity to find out more about teacher training and receive advice from experts and training providers.</p>
+        <p>They’ll tell you everything you need to know about:</p>
+        <ul>
+          <li>funding</li>
+          <li>different training courses</li>
+          <li>how to submit a successful application</li>
+          <li>what a career in teaching is really like</li>
+        </ul>
       online_event: |-
-        Online teaching events are interactive sessions that offer a convenient way to engage directly 
-        with a panel of specialist advisers across a range of topics.
+        <p>
+          Ask a panel of specialists the questions that matter to you in one of our real-time Q&A online events. 
+          Whether you want general guidance, or advice tailored to your circumstances, these events offer a 
+          convenient way to discuss a range of topics related to teacher training.
+        </p>
       school_or_university_event: |-
-        Universities and schools often hold their own events to help you get into teaching. 
-        These can range from general open days to events about teaching certain subjects, school experience days and the application process.
+        <p>
+          Schools and universities that run teacher training courses often hold their own events giving you a valuable 
+          opportunity to get a feel for what their teacher training course might be like. Each event is different, but 
+          typically they’ll cover areas such as course information, application advice, school experience and the 
+          chance to talk to current trainees or staff.
+        </p>
       application_workshop: |-
-        Our Train to Teach events and application workshops offer you the chance to speak to teaching experts face-to-face. 
-        Get bespoke advice, help with your application, and meet training providers in your area – all completely free.
+        <p>
+          Our Train to Teach events and application workshops offer you the chance to speak to teaching experts face-to-face. 
+          Get bespoke advice, help with your application, and meet training providers in your area – all completely free.
+        </p>
   event_categories:
     train_to_teach_event: |-
       <p>
-          At our Train to Teach events, you can meet experienced teaching professionals who can answer all of your questions. 
+        Find out everything you need to know about teacher training at one of our flagship Train to Teach events. 
+        These popular events take place all over the country and offer a brilliant opportunity to get all of your 
+        questions answered by a range of teaching professionals. Best of all, they’re completely free – find your 
+        local event and register to guarantee your place.
       </p>
-      <h4>You’ll get the chance to:</h4>
+      <p>When you attend a Train to Teach event, you’ll get the chance to:</p>
       <ul>
-          <li><span>Speak to experts about ways into teacher training and available funding</span></li>
-          <li><span>Talk one-to-one with experienced and newly qualified teachers to find out what Teaching is really like</span></li>
-          <li><span>Get advice on your teacher training application</span></li>
-          <li><span>Talk to schools and universities in your area to help you decide on the best place for you to train and how to apply</span></li>
+          <li><span>attend a presentation on the different teacher training routes and funding available</span></li>
+          <li><span>speak to teaching experts to receive one-to-one advice on your training options</span></li>
+          <li><span>receive personalised advice on your UCAS application – don’t forget to bring a copy of your personal statement with you</span></li>
+          <li><span>talk to practicing teachers about life in the classroom</span></li>
+          <li><span>meet representatives from the schools and universities that deliver teacher training in your region to find out about their courses and entry requirements</span></li>
       </ul>
       <p>
-          You can drop in at any time. Allow at least two hours to make the most of your visit. Train to Teach presentations run hourly throughout the event. 
-      </p>
-      <p>
-          Check event timetables to make sure you don’t miss anything.
+        Train to Teach Question Time events are smaller events that offer you the opportunity to ask the questions 
+        you have to a panel of teaching experts. Alongside presentations on the application process and funding your 
+        teacher training, there will also be a marketplace where you can receive tailored advice and support.
       </p>
     online_event: |-
-      <p>Online teaching events are interactive sessions that offer a convenient way to engage directly with a panel of specialist advisers 
-      across a range of topics.</p><p>You can get your questions answered within minutes – and see what matters to other potential trainee 
-      teachers too. Joining a conversation is easy – remember to check in regularly to see what discussions we’ve got lined up.</p>
+      <p>
+        Online teaching events are interactive sessions that allow you to engage directly with a panel of specialist advisers across a range of topics. 
+        You type your questions in, and an adviser will respond with a written answer. Joining a conversation is easy – remember to check in 
+        regularly to see what discussions we’ve got lined up.
+      </p>
     school_or_university_event: |-
-      <p>The schools and universities that run teacher training courses often hold their own events. These give you a valuable opportunity 
-      to get a feel for what different teacher training courses might be like.</p><p>Each event is different, but typically they’ll cover areas 
-      such as course information, application advice, school experience and the chance to talk to current trainees or staff.</p>
+      <p>
+        Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to get a feel for what 
+        their teacher training course might be like. 
+      </p>
+
+      <p>Each event is different, but typically they’ll cover areas such as:</p>
+
+      <ul>
+        <li><span>course information</span></li>
+        <li><span>application advice</span></li>
+        <li><span>school experience</span></li>
+        <li><span>a chance to talk to current trainees or staff</span></li>
+      </ul>
     application_workshop: |-
       <p>
         If you’re ready to apply for teacher training, we’re here to help. Our free application workshops are the perfect way to get expert 

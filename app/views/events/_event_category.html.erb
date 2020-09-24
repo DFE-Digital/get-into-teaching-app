@@ -10,7 +10,7 @@
     <div class="events-featured">
         <h3><%= type_name.pluralize %></h3>
         <div class="events-featured__text">
-          <p><%= t("find_an_event.types.#{type_name.parameterize(separator: "_")}") %></p>
+          <p><%= safe_html_format(t("find_an_event.types.#{type_name.parameterize(separator: "_")}")) %></p>
         </div>
         <% events.in_groups_of(3, false) do |events_on_row| %>
           <div class="events-featured__items">
