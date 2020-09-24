@@ -8,7 +8,7 @@ SecureHeaders::Configuration.default do |config|
   config.referrer_policy = %w[origin-when-cross-origin strict-origin-when-cross-origin]
 
   tta_service_uri = URI.parse(ENV["TTA_SERVICE_URL"])
-  google_analytcs = "www.google-analytics.com ssl.google-analytics.com"
+  google_analytcs = "www.google-analytics.com ssl.google-analytics.com www.googletagmanager.com"
 
   config.csp = {
     default_src: %w['none'],
@@ -17,9 +17,9 @@ SecureHeaders::Configuration.default do |config|
     child_src: %w['self' *.youtube.com ct.pinterest.com tr.snapchat.com *.hotjar.com],
     connect_src: %W['self' #{tta_service_uri.host} #{google_analytcs} ct.pinterest.com *.hotjar.com www.facebook.com],
     font_src: %w['self' *.gov.uk fonts.gstatic.com],
-    form_action: %w['self' tr.snapchat.com www.facebook.com],
+    form_action: %w['self' tr.snapchat.com www.facebook.com www.gov.uk],
     frame_ancestors: %w['self'],
-    frame_src: %w['self' tr.snapchat.com www.facebook.com],
+    frame_src: %w['self' tr.snapchat.com www.facebook.com www.youtube.com],
     img_src: %W['self' linkbam.uk *.gov.uk data: maps.gstatic.com *.googleapis.com #{google_analytcs} www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com],
     manifest_src: %w['self'],
     media_src: %w['self'],
