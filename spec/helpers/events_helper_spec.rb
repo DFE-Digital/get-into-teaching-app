@@ -12,7 +12,7 @@ describe EventsHelper, type: "helper" do
     subject { format_event_date event, stacked: stacked }
 
     context "for single day event" do
-      it { is_expected.to eql "June 1st, 2020 <br /> 10:00 - 12:00" }
+      it { is_expected.to eql "June 1st, 2020 <br> 10:00 - 12:00" }
     end
 
     context "for multi day event" do
