@@ -13,7 +13,7 @@
         <%= link_to "All events", events_path, class: "backlink" %>
         <h3><%= category_name.pluralize %></h3>
         <br />
-        <%= t("event_categories.#{category_name.parameterize(separator: "_")}").html_safe %>
+        <%= safe_html_format(t("event_categories.#{category_name.parameterize(separator: "_")}")) %>
     </div>
 
 </section>
