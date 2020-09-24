@@ -32,5 +32,10 @@ describe TextFormattingHelper, type: :helper do
       let(:html) { "<a href=\"http://test.com\" onclick=\"somethingNasty();\">boom</a>" }
       it { is_expected.to eql "<a href=\"http://test.com\">boom</a>" }
     end
+
+    context "with anchor tags" do
+      let(:html) { "<a href=\"http://test.com\" target=\"blank\">open</a>" }
+      it { is_expected.to eql html }
+    end
   end
 end
