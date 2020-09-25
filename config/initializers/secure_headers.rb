@@ -9,7 +9,7 @@ SecureHeaders::Configuration.default do |config|
 
   tta_service_hosts = []
   tta_service_hosts << URI.parse(ENV["TTA_SERVICE_URL"]).host if ENV["TTA_SERVICE_URL"].present?
-  google_analytics = %w[www.google-analytics.com ssl.google-analytics.com *.googletagmanager.com tagmanager.google.com]
+  google_analytics = %w[www.google-analytics.com ssl.google-analytics.com *.googletagmanager.com tagmanager.google.com *.googleusercontent.com *.gstatic.com s.ytimg.com]
 
   config.csp = {
     default_src: %w['none'],
@@ -21,11 +21,11 @@ SecureHeaders::Configuration.default do |config|
     form_action: %w['self' tr.snapchat.com www.facebook.com www.gov.uk],
     frame_ancestors: %w['self'],
     frame_src: %w['self' tr.snapchat.com www.facebook.com www.youtube.com],
-    img_src: %w['self' linkbam.uk *.gov.uk data: maps.gstatic.com *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com] + google_analytics,
+    img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com] + google_analytics,
     manifest_src: %w['self'],
     media_src: %w['self'],
     script_src: %w['self' 'unsafe-inline' *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com *.youtube.com] + google_analytics,
-    style_src: %w['self' 'unsafe-inline' *.gov.uk *.googleapis.com],
+    style_src: %w['self' 'unsafe-inline' *.gov.uk *.googleapis.com] + google_analytics,
     worker_src: %w['self'],
     upgrade_insecure_requests: !Rails.env.development?, # see https://www.w3.org/TR/upgrade-insecure-requests/
     report_uri: [ENV["SENTRY_CSP_REPORT_URI"]],
