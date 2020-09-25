@@ -9,7 +9,7 @@ SecureHeaders::Configuration.default do |config|
 
   tta_service_hosts = []
   tta_service_hosts << URI.parse(ENV["TTA_SERVICE_URL"]).host if ENV["TTA_SERVICE_URL"].present?
-  google_analytics = %w[www.google-analytics.com ssl.google-analytics.com www.googletagmanager.com]
+  google_analytics = %w[www.google-analytics.com ssl.google-analytics.com *.googletagmanager.com tagmanager.google.com]
 
   config.csp = {
     default_src: %w['none'],
@@ -24,7 +24,7 @@ SecureHeaders::Configuration.default do |config|
     img_src: %w['self' linkbam.uk *.gov.uk data: maps.gstatic.com *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com] + google_analytics,
     manifest_src: %w['self'],
     media_src: %w['self'],
-    script_src: %w['self' 'unsafe-inline' *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.googletagmanager.com *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com] + google_analytics,
+    script_src: %w['self' 'unsafe-inline' *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com *.youtube.com] + google_analytics,
     style_src: %w['self' 'unsafe-inline' *.gov.uk *.googleapis.com],
     worker_src: %w['self'],
     upgrade_insecure_requests: !Rails.env.development?, # see https://www.w3.org/TR/upgrade-insecure-requests/
