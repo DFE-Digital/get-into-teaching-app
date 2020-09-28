@@ -17,13 +17,13 @@ resource "cloudfoundry_app" "app_application" {
             service_instance = data.cloudfoundry_service_instance.redis.id
     }
 
-    routes { route = cloudfoundry_route.app_route_internal.id }
     dynamic "routes" {
       for_each = data.cloudfoundry_route.app_route_internet
       content {
         route = routes.value["id"]
       }
     }
+
     environment = {
           HTTPAUTH_PASSWORD = var.HTTPAUTH_PASSWORD
           HTTPAUTH_USERNAME = var.HTTPAUTH_USERNAME
@@ -31,4 +31,6 @@ resource "cloudfoundry_app" "app_application" {
           RAILS_MASTER_KEY = var.RAILS_MASTER_KEY
     }    
 }
+
+
 
