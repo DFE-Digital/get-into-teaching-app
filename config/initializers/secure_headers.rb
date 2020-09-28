@@ -16,17 +16,17 @@ SecureHeaders::Configuration.default do |config|
     base_uri: %w['self'],
     block_all_mixed_content: true, # see http://www.w3.org/TR/mixed-content/
     child_src: %w['self' *.youtube.com ct.pinterest.com tr.snapchat.com *.hotjar.com],
-    connect_src: %w['self' ct.pinterest.com *.hotjar.com vc.hotjar.io wss://*.hotjar.com www.facebook.com] + google_analytics + tta_service_hosts,
+    connect_src: %w['self' ct.pinterest.com *.hotjar.com vc.hotjar.io wss://*.hotjar.com www.facebook.com *.visualwebsiteoptimizer.com] + google_analytics + tta_service_hosts,
     font_src: %w['self' *.gov.uk fonts.gstatic.com],
     form_action: %w['self' tr.snapchat.com www.facebook.com www.gov.uk],
     frame_ancestors: %w['self'],
     frame_src: %w['self' tr.snapchat.com www.facebook.com www.youtube.com *.hotjar.com],
-    img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com] + google_analytics,
+    img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com] + google_analytics,
     manifest_src: %w['self'],
     media_src: %w['self'],
-    script_src: %w['self' 'unsafe-inline' *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com *.youtube.com] + google_analytics,
+    script_src: %w['self' 'unsafe-inline' 'unsafe-eval' *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com *.youtube.com *.visualwebsiteoptimizer.com] + google_analytics,
     style_src: %w['self' 'unsafe-inline' *.gov.uk *.googleapis.com] + google_analytics,
-    worker_src: %w['self'],
+    worker_src: %w['self' *.visualwebsiteoptimizer.com blob:],
     upgrade_insecure_requests: !Rails.env.development?, # see https://www.w3.org/TR/upgrade-insecure-requests/
     report_uri: [ENV["SENTRY_CSP_REPORT_URI"]],
   }
