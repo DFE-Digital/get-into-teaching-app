@@ -31,7 +31,7 @@
         <% end %>
 
         <h2 class="strapline-article">Event information</h2>
-        <p><%= @event.description %></p>
+        <%= safe_format @event.description %>
 
         <% if @event.building && !@event.is_online %>
         <h2 class="strapline-article">Venue information</h2>
