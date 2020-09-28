@@ -10,7 +10,7 @@
 <section class="types-of-event content container-1000">
 
     <div class="content__left">
-        <%= link_to "All events", events_path, class: "backlink" %>
+        <%= back_link(internal_referer || events_path, text: "All events") %>
         <h3><%= category_name.pluralize %></h3>
         <br />
         <%= safe_html_format(t("event_categories.#{category_name.parameterize(separator: "_")}")) %>
