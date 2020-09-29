@@ -43,7 +43,7 @@ Rails.application.configure do
 
   # Use the lowest log level to ensure availability of diagnostic information
   # when problems arise.
-  config.log_level = :debug
+  config.log_level = :info
 
   # Prepend all log lines with the following tags.
   config.log_tags = [:request_id]
@@ -71,16 +71,6 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
-
-  # Use a different logger for distributed setups.
-  # require 'syslog/logger'
-  # config.logger = ActiveSupport::TaggedLogging.new(Syslog::Logger.new 'app-name')
-
-  if ENV["RAILS_LOG_TO_STDOUT"].present?
-    logger           = ActiveSupport::Logger.new(STDOUT)
-    logger.formatter = config.log_formatter
-    config.logger    = ActiveSupport::TaggedLogging.new(logger)
-  end
 
   # Do not dump schema after migrations.
   # config.active_record.dump_schema_after_migration = false
@@ -110,4 +100,21 @@ Rails.application.configure do
     "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
   config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence || \
     Rails.application.credentials.google_maps_key.presence
+
+  # Configure Semantic Logging for production environments
+  # This cannot be conditionally loaded so we use it all the time in production
+  # like environments.
+  #
+  # The rails_semantic_logger gem overwrites the log initializer code and by
+  # this point its too late to monkey patch that
+  STDOUT.sync = true
+  SemanticLogger.application = ENV["SEMANTIC_LOGGER_APP"].presence || "Get into Teaching App"
+  config.rails_semantic_logger.started = false
+  config.rails_semantic_logger.processing = false
+  config.rails_semantic_logger.format = :json
+  config.rails_semantic_logger.add_file_appender = false
+  config.semantic_logger.add_appender \
+    io: STDOUT,
+    level: Rails.application.config.log_level,
+    formatter: config.rails_semantic_logger.format
 end
