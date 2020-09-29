@@ -102,47 +102,55 @@ export default class {
   }
 
   static describeWhenEventFires(name, controller, serviceFunctionName, cookieCategory) {
-    describe("when cookie:accepted event first", () => {
+    describe("when cookies have not yet been accepted", () => {
       beforeEach(() => {
         delete window.willRedirectionOccurByVWO ;
         Cookies.remove(CookiePreferences.cookieName)
         this.initApp(name, controller, "1234") ;
       })
 
-      describe("VWO has completed", () => {
+      describe("than VWO completes", () => {
         beforeEach(() => { window.willRedirectionOccurByVWO = false }) ;
 
-        it("Should not register the service", () => {
-          expect(typeof(window[serviceFunctionName])).toBe("undefined") ;
-        }) ;
-
-        it("Should register service when Cookie event is emitted", () => {
-          (new CookiePreferences).setCategory(cookieCategory, true) ;
-          expect(typeof(window[serviceFunctionName])).toBe("function") ;
-        }) ;
-      }) ;
-
-      describe("VWO has not yet completed", () => {
-        it("Should not register the service", () => {
-          (new CookiePreferences).setCategory(cookieCategory, true) ;
+        it("should not register the service", () => {
           expect(typeof(window[serviceFunctionName])).toBe("undefined") ;
         })
 
-        it("VWO then completes and emits event", () => {
-          (new CookiePreferences).setCategory(cookieCategory, true) ;
-          expect(typeof(window[serviceFunctionName])).toBe("undefined") ;
+        describe("than cookies are accepted", () => {
+          it("should register service", () => {
+            (new CookiePreferences).setCategory(cookieCategory, true) ;
+            expect(typeof(window[serviceFunctionName])).toBe("function") ;
+          })
+        })
+      })
 
-          this.vwoCompletes() ;
-          expect(typeof(window[serviceFunctionName])).toBe("function") ;
-        }) ;
+      describe("VWO has not yet completed", () => {
+        describe("then the cookie event is emitted", () => {
+          it("Should not register the service when", () => {
+            (new CookiePreferences).setCategory(cookieCategory, true) ;
+            expect(typeof(window[serviceFunctionName])).toBe("undefined") ;
+          })
+        })
 
-        it("VWO then completes but is navigating away", () => {
-          (new CookiePreferences).setCategory(cookieCategory, true) ;
-          expect(typeof(window[serviceFunctionName])).toBe("undefined") ;
+        describe("VWO then completes and emits event", () => {
+          it("should register the service", () => {
+            (new CookiePreferences).setCategory(cookieCategory, true) ;
+            expect(typeof(window[serviceFunctionName])).toBe("undefined") ;
 
-          this.vwoCompletesAndRedirects() ;
-          expect(typeof(window[serviceFunctionName])).toBe("undefined") ;
-        }) ;
+            this.vwoCompletes() ;
+            expect(typeof(window[serviceFunctionName])).toBe("function") ;
+          })
+        })
+
+        describe("VWO then completes but is navigating away", () => {
+          it("should not register the service", () => {
+            (new CookiePreferences).setCategory(cookieCategory, true) ;
+            expect(typeof(window[serviceFunctionName])).toBe("undefined") ;
+
+            this.vwoCompletesAndRedirects() ;
+            expect(typeof(window[serviceFunctionName])).toBe("undefined") ;
+          })
+        })
       })
     })
   }
