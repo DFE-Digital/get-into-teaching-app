@@ -11,12 +11,3 @@ Rails.start();
 Turbolinks.start();
 
 import "controllers";
-
-document.addEventListener("turbolinks:load", function() {
-    const links = document.querySelectorAll('a');
-    links.forEach((l) => {
-        if (l.getAttribute('href')?.startsWith('#')) {
-            l.dataset.turbolinks = "false"
-        }
-    });
-})
