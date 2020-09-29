@@ -62,6 +62,10 @@
 
     tryNonVWOTracking(nonVWOScriptsToExecute);
   })([function() {
+    // fallback if VWO code doesn't set global variable which we rely upon
+    if (typeof(window.willRedirectionOccurByVWO) == "undefined")
+      window.willRedirectionOccurByVWO = false ;
+
     if (document) {
       document.dispatchEvent(new CustomEvent("vwo:completed")) ;
     }
