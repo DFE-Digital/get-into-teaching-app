@@ -2,11 +2,10 @@ require "rails_helper"
 
 RSpec.feature "Password protection", type: :feature do
   before do
-    allow_any_instance_of(Healthcheck).to receive(:test_api).and_return true
     allow(ENV).to receive(:[]).and_call_original
     allow(ENV).to receive(:[]).with("HTTPAUTH_USERNAME") { username }
     allow(ENV).to receive(:[]).with("HTTPAUTH_PASSWORD") { password }
-    visit healthcheck_path
+    visit cookies_path
   end
 
   subject { page }
