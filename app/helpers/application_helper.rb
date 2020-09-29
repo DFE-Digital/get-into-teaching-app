@@ -74,4 +74,12 @@ module ApplicationHelper
 
     link_to text, path, **options
   end
+
+  def internal_referer
+    referer = request.referer
+    internal = referer.to_s.include?(root_url)
+    return nil unless internal
+
+    referer
+  end
 end

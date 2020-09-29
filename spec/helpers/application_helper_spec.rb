@@ -93,4 +93,29 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body.homepage" }
     end
   end
+
+  describe "#internal_referer" do
+    before { helper.request = double("request") }
+
+    it "returns nil if the referrer is not set" do
+      helper.request.stub(:referer) { nil }
+      expect(helper.internal_referer).to be_nil
+    end
+
+    it "returns nil if the referrer is empty" do
+      helper.request.stub(:referer) { " " }
+      expect(helper.internal_referer).to be_nil
+    end
+
+    it "returns nil if the referrer is external" do
+      helper.request.stub(:referer) { "https://external.com" }
+      expect(helper.internal_referer).to be_nil
+    end
+
+    it "returns the referrer if internal" do
+      referer = root_url
+      helper.request.stub(:referer) { referer }
+      expect(helper.internal_referer).to be(referer)
+    end
+  end
 end
