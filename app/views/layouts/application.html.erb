@@ -2,7 +2,7 @@
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
 
-  <%= analytics_body_tag class: "govuk-template__body govuk-body" do %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "link", target: "link.content" }  do %>
     <div id="skiplink-container">
       <div>
         <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>

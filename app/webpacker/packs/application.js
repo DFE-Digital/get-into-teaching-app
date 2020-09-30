@@ -11,4 +11,3 @@ Rails.start();
 Turbolinks.start();
 
 import "controllers";
-
