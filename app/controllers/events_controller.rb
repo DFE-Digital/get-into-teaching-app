@@ -38,32 +38,32 @@ private
   end
 
   def categorise_events
-    @events_by_category = events_sorted_by_type.each_with_object({}) do |event, hash|
+    @events_by_group = events_sorted_by_category.each_with_object({}) do |event, hash|
       type_id = event.type_id
+      group_name = event_group_name(type_id)
       category_name = event_category_name(type_id)
-      type_name = event_type_name(type_id)
 
-      hash[category_name] ||= {}
-      hash[category_name][type_name] ||= []
+      hash[group_name] ||= {}
+      hash[group_name][category_name] ||= []
 
-      hash[category_name][type_name] << event
+      hash[group_name][category_name] << event
     end
   end
 
-  def events_sorted_by_type
+  def events_sorted_by_category
     @events.sort_by do |event|
       GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.index(event.type_id)
     end
   end
 
-  def event_category_name(type_id)
+  def event_group_name(type_id)
     get_into_teaching_type_ids = GetIntoTeachingApiClient::Constants::GET_INTO_TEACHING_EVENT_TYPES.values
     return "Get into Teaching" if get_into_teaching_type_ids.include?(type_id)
 
-    event_type_name(type_id)
+    event_category_name(type_id)
   end
 
-  def event_type_name(type_id)
+  def event_category_name(type_id)
     api = GetIntoTeachingApiClient::TypesApi.new
     type = api.get_teaching_event_types.find { |t| t.id == type_id.to_s }
     type&.value || ""
