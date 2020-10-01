@@ -21,6 +21,7 @@ Rails.application.routes.draw do
   resources "events", path: "/events", only: %i[index show search] do
     collection do
       get "search"
+      get "category/school-and-university-event", to: "events#show_category", category: "school-or-university-event"
       get "category/:category", to: "events#show_category", as: :event_category
     end
     resources "steps",

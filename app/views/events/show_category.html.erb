@@ -1,3 +1,7 @@
+<% category_name = t("event_types.#{@type.id}.name").pluralize %>
+
+<% @page_title = category_name %>
+
 <%= render "sections/hero",  
   header: "Train to teach events", 
   image: "media/images/events-hero-dt.jpg",
@@ -5,15 +9,13 @@
   mailinglist: false 
 %>
 
-<% category_name = name_of_event_type(@type.id) %>
-
 <section class="types-of-event content container-1000">
 
     <div class="content__left">
         <%= back_link(internal_referer || events_path, text: "All events") %>
-        <h3><%= category_name.pluralize %></h3>
+        <h3><%= category_name %></h3>
         <br />
-        <%= safe_html_format(t("event_categories.#{category_name.parameterize(separator: "_")}")) %>
+        <%= safe_html_format(t("event_types.#{@type.id}.description")) %>
     </div>
 
 </section>

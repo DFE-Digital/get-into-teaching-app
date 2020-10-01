@@ -31,6 +31,15 @@ describe "View events by category" do
     end
   end
 
+  context "when viewing the schools and university events category" do
+    it "queries events for the correct category" do
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
+      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:search_teaching_events).with(type_id: type_id.to_s)
+      get event_category_events_path("school-and-university-event")
+    end
+  end
+
   context "when a category does not exist" do
     before do
       get event_category_events_path("non-existant")
