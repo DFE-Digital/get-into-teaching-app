@@ -19,7 +19,7 @@ describe "View events by category" do
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events) { events }
-      get event_category_events_path("train-to-teach-event")
+      get event_category_events_path("train-to-teach-events")
     end
 
     subject { response }
@@ -36,7 +36,7 @@ describe "View events by category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events).with(type_id: type_id.to_s)
-      get event_category_events_path("school-and-university-event")
+      get event_category_events_path("school-and-university-events")
     end
   end
 

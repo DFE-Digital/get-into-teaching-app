@@ -71,7 +71,9 @@ en:
     222750009: "schools and universities"
   event_types:
     222750001: 
-      name: "Train to Teach Event"
+      name:
+        singular: "Train to Teach Event"
+        plural: "Train to Teach Events"
       description: |-
         <p>
           Find out everything you need to know about teacher training at one of our flagship Train to Teach events. 
@@ -93,7 +95,9 @@ en:
           teacher training, there will also be a marketplace where you can receive tailored advice and support.
         </p>
     222750008: 
-      name: "Online Event"
+      name: 
+        singular: "Online Event"
+        plural: "Online Events"
       description: |-
         <p>
           Online teaching events are interactive sessions that allow you to engage directly with a panel of specialist advisers across a range of topics. 
@@ -101,7 +105,9 @@ en:
           regularly to see what discussions we’ve got lined up.
         </p>
     222750009: 
-      name: "School and University Event"
+      name: 
+        singular: "School or University Event"
+        plural: "School and University Events"
       description: |-
         <p>
           Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to get a feel for what 
@@ -117,7 +123,9 @@ en:
           <li><span>a chance to talk to current trainees or staff</span></li>
         </ul>
     222750000: 
-      name: "Application Workshop"
+      name: 
+        singular: "Application Workshop"
+        plural: "Application Workshops"
       description: |-
         <p>
           If you’re ready to apply for teacher training, we’re here to help. Our free application workshops are the perfect way to get expert 
