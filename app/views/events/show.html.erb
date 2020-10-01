@@ -73,9 +73,17 @@
                 To access this event, please sign up on this page and watch out for the reminder email we will send the day before the event. It will contain an access link to the live online event and a directory of some of the local training providers.
             </p>
 
-            <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
-                Sign up for this <span>event</span>
-            <% end %>
+            <p>
+              <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
+                  Sign up for this <span>event</span>
+              <% end %>
+            </p>
+            
+            <p>
+              To attend this event, you must register for a place. Once registered, you will receive log-in information and joining instructions via email.
+              Please note: to access this event you will require a laptop/desktop pc and be using chrome as your browser.
+            </p>
+
           <% elsif @event.provider_website_url %>
             <h2 class="strapline-article">How to attend</h2>
             <p>To attend this event, please <%= link_to("visit this website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i>.<p>
