@@ -14,7 +14,4 @@ resource "cloudfoundry_route" "app_route_internal" {
     domain = data.cloudfoundry_domain.internal.id
     hostname =  "${var.paas_app_route_name}-internal"
     space = data.cloudfoundry_space.space.id
-    target {
-          app = cloudfoundry_app.app_application.id_bg
-    }
 }

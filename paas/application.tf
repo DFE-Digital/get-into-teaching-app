@@ -22,6 +22,9 @@ resource "cloudfoundry_app" "app_application" {
          route = cloudfoundry_route.app_route_cloud.id  
     }
 
+    routes  {
+         route = cloudfoundry_route.app_route_internal.id  
+    }
 
     dynamic "routes" {
       for_each = data.cloudfoundry_route.app_route_internet
