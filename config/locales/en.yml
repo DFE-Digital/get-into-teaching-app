@@ -32,7 +32,7 @@
 en:
   find_an_event:
     types:
-      train_to_teach_event: |-
+      222750001: |-
         <p>Our free Train to Teach events are the perfect opportunity to find out more about teacher training and receive advice from experts and training providers.</p>
         <p>They’ll tell you everything you need to know about:</p>
         <ul>
@@ -41,13 +41,13 @@ en:
           <li>how to submit a successful application</li>
           <li>what a career in teaching is really like</li>
         </ul>
-      online_event: |-
+      222750008: |-
         <p>
           Ask a panel of specialists the questions that matter to you in one of our real-time Q&A online events. 
           Whether you want general guidance, or advice tailored to your circumstances, these events offer a 
           convenient way to discuss a range of topics related to teacher training.
         </p>
-      school_or_university_event: |-
+      222750009: |-
         <p>
           Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to get a feel for what 
           their teacher training course might be like. 
@@ -61,68 +61,87 @@ en:
           <li><span>school experience</span></li>
           <li><span>a chance to talk to current trainees or staff</span></li>
         </ul>
-      application_workshop: |-
+      222750000: |-
         <p>
           Our Train to Teach events and application workshops offer you the chance to speak to teaching experts face-to-face. 
           Get bespoke advice, help with your application, and meet training providers in your area – all completely free.
         </p>
-  event_categories:
-    train_to_teach_event: |-
-      <p>
-        Find out everything you need to know about teacher training at one of our flagship Train to Teach events. 
-        These popular events take place all over the country and offer a brilliant opportunity to get all of your 
-        questions answered by a range of teaching professionals. Best of all, they’re completely free – find your 
-        local event and sign up to guarantee your place.
-      </p>
-      <p>When you attend a Train to Teach event, you’ll get the chance to:</p>
-      <ul>
-          <li><span>attend a presentation on the different teacher training routes and funding available</span></li>
-          <li><span>speak to teaching experts to receive one-to-one advice on your training options</span></li>
-          <li><span>receive personalised advice on your UCAS application – don’t forget to bring a copy of your personal statement with you</span></li>
-          <li><span>talk to practicing teachers about life in the classroom</span></li>
-          <li><span>meet representatives from the schools and universities that deliver teacher training in your region to find out about their courses and entry requirements</span></li>
-      </ul>
-      <p>
-        Train to Teach Question Time events are smaller events that offer you the opportunity to ask the questions 
-        you have to a panel of teaching experts. Alongside presentations on the application process and funding your 
-        teacher training, there will also be a marketplace where you can receive tailored advice and support.
-      </p>
-    online_event: |-
-      <p>
-        Online teaching events are interactive sessions that allow you to engage directly with a panel of specialist advisers across a range of topics. 
-        You type your questions in, and an adviser will respond with a written answer. Joining a conversation is easy – remember to check in 
-        regularly to see what discussions we’ve got lined up.
-      </p>
-    school_or_university_event: |-
-      <p>
-        Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to get a feel for what 
-        their teacher training course might be like. 
-      </p>
+  event_groups:
+    get_into_teaching: "Get into Teaching"
+    222750009: "schools and universities"
+  event_types:
+    222750001: 
+      name:
+        singular: "Train to Teach Event"
+        plural: "Train to Teach Events"
+      description: |-
+        <p>
+          Find out everything you need to know about teacher training at one of our flagship Train to Teach events. 
+          These popular events take place all over the country and offer a brilliant opportunity to get all of your 
+          questions answered by a range of teaching professionals. Best of all, they’re completely free – find your 
+          local event and sign up to guarantee your place.
+        </p>
+        <p>When you attend a Train to Teach event, you’ll get the chance to:</p>
+        <ul>
+            <li><span>attend a presentation on the different teacher training routes and funding available</span></li>
+            <li><span>speak to teaching experts to receive one-to-one advice on your training options</span></li>
+            <li><span>receive personalised advice on your UCAS application – don’t forget to bring a copy of your personal statement with you</span></li>
+            <li><span>talk to practicing teachers about life in the classroom</span></li>
+            <li><span>meet representatives from the schools and universities that deliver teacher training in your region to find out about their courses and entry requirements</span></li>
+        </ul>
+        <p>
+          Train to Teach Question Time events are smaller events that offer you the opportunity to ask the questions 
+          you have to a panel of teaching experts. Alongside presentations on the application process and funding your 
+          teacher training, there will also be a marketplace where you can receive tailored advice and support.
+        </p>
+    222750008: 
+      name: 
+        singular: "Online Event"
+        plural: "Online Events"
+      description: |-
+        <p>
+          Online teaching events are interactive sessions that allow you to engage directly with a panel of specialist advisers across a range of topics. 
+          You type your questions in, and an adviser will respond with a written answer. Joining a conversation is easy – remember to check in 
+          regularly to see what discussions we’ve got lined up.
+        </p>
+    222750009: 
+      name: 
+        singular: "School or University Event"
+        plural: "School and University Events"
+      description: |-
+        <p>
+          Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to get a feel for what 
+          their teacher training course might be like. 
+        </p>
 
-      <p>Each event is different, but typically they’ll cover areas such as:</p>
+        <p>Each event is different, but typically they’ll cover areas such as:</p>
 
-      <ul>
-        <li><span>course information</span></li>
-        <li><span>application advice</span></li>
-        <li><span>school experience</span></li>
-        <li><span>a chance to talk to current trainees or staff</span></li>
-      </ul>
-    application_workshop: |-
-      <p>
-        If you’re ready to apply for teacher training, we’re here to help. Our free application workshops are the perfect way to get expert 
-        advice and information that will help you create the strongest teacher training application possible. Workshops tend to fill up fast – 
-        find an event near you and reserve your place.
-      </p>
+        <ul>
+          <li><span>course information</span></li>
+          <li><span>application advice</span></li>
+          <li><span>school experience</span></li>
+          <li><span>a chance to talk to current trainees or staff</span></li>
+        </ul>
+    222750000: 
+      name: 
+        singular: "Application Workshop"
+        plural: "Application Workshops"
+      description: |-
+        <p>
+          If you’re ready to apply for teacher training, we’re here to help. Our free application workshops are the perfect way to get expert 
+          advice and information that will help you create the strongest teacher training application possible. Workshops tend to fill up fast – 
+          find an event near you and reserve your place.
+        </p>
 
-      <h4>When you attend a workshop you’ll get the chance to:</h4>
+        <h4>When you attend a workshop you’ll get the chance to:</h4>
 
-      <ul>
-        <li><span>Attend a presentation to get handy hints and helpful tips on how to make your application stand out</span></li>
-        <li><span>Receive one-to-one feedback from our teaching experts when you bring along your draft personal statement</span></li>
-        <li><span>Talk to current teachers about their experiences</span></li>
-      </ul>
+        <ul>
+          <li><span>Attend a presentation to get handy hints and helpful tips on how to make your application stand out</span></li>
+          <li><span>Receive one-to-one feedback from our teaching experts when you bring along your draft personal statement</span></li>
+          <li><span>Talk to current teachers about their experiences</span></li>
+        </ul>
 
-      <p>Make your application count – join us at a workshop and give yourself the best chance of success.</p>
+        <p>Make your application count – join us at a workshop and give yourself the best chance of success.</p>
   activemodel:
     errors:
       models:

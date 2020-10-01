@@ -39,19 +39,6 @@ describe EventsHelper, type: "helper" do
     it { is_expected.to match(/alt=\"Map showing #{event.name}\"/) }
   end
 
-  describe "#name_of_event_type" do
-    include_context "stub types api"
-
-    it "returns the name of the given event type id" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]
-      expect(name_of_event_type(type_id)).to eq("Train to Teach Event")
-    end
-
-    it "returns an empty string if the event type cannot be found" do
-      expect(name_of_event_type(-1)).to be_empty
-    end
-  end
-
   describe "#event_status_open?" do
     it "returns true for events that have a status of open" do
       event = GetIntoTeachingApiClient::TeachingEvent.new(

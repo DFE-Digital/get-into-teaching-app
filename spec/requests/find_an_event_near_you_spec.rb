@@ -48,7 +48,7 @@ describe "Find an event near you" do
           "Train to Teach Events",
           "Online Events",
           "Application Workshops",
-          "School or University Events",
+          "School and University Events",
         ]
 
         expect(headings & expected_headings).to eq(expected_headings)

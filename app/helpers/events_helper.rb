@@ -66,12 +66,6 @@ module EventsHelper
     )
   end
 
-  def name_of_event_type(type_id)
-    api = GetIntoTeachingApiClient::TypesApi.new
-    type = api.get_teaching_event_types.find { |t| t.id == type_id.to_s }
-    type&.value || ""
-  end
-
   def event_type_color(type_id)
     case type_id
     when GetIntoTeachingApiClient::Constants::EVENT_TYPES["Application Workshop"]
