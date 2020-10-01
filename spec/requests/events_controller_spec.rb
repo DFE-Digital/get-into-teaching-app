@@ -113,6 +113,13 @@ describe EventsController do
           it { is_expected.to match(/This event is now closed/) }
         end
 
+        context "when the event has a scribble_id" do
+          let(:event) { build(:event_api, scribble_id: "123", readable_id: event_readable_id) }
+
+          it { is_expected.to match(/Attend online/) }
+          it { is_expected.to match(/data-controller="scribble" data-scribble-id="123"/) }
+        end
+
         context "when the event is online" do
           let(:event) { build(:event_api, is_online: true) }
 

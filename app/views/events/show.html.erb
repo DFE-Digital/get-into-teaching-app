@@ -84,6 +84,15 @@
             <p>To attend this event, please <%= mail_to(@event.provider_contact_email, "email us") %>.<p>
           <% end %>
         <% end %>
+
+        <% if @event.scribble_id %>
+          <h2 class="strapline-article">Attend online</h2>
+        <% end %>
       </div>
-        <%= render "sections/page_question" %>
+      
+      <% if @event.scribble_id %>
+        <div data-controller="scribble" data-scribble-id="<%= @event.scribble_id %>"></div>
+      <% end %>
+      
+      <%= render "sections/page_question" %>
 </section>
