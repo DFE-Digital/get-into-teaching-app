@@ -1,9 +1,9 @@
 shared_examples %(an event box with an event type and coloured icons) do
   [
-    OpenStruct.new(name: 'Application Workshop', trait: :application_workshop, expected_colour: 'yellow'),
-    OpenStruct.new(name: 'Train to Teach Event', trait: :train_to_teach_event, expected_colour: 'green'),
-    OpenStruct.new(name: 'Online Event', trait: :online_event, expected_colour: 'purple'),
-    OpenStruct.new(name: '', trait: :no_event_type, expected_colour: 'blue')
+    OpenStruct.new(name: "Application Workshop", trait: :application_workshop, expected_colour: "yellow"),
+    OpenStruct.new(name: "Train to Teach Event", trait: :train_to_teach_event, expected_colour: "green"),
+    OpenStruct.new(name: "Online Event", trait: :online_event, expected_colour: "purple"),
+    OpenStruct.new(name: "", trait: :no_event_type, expected_colour: "blue"),
   ].each do |event_type|
     description = event_type.name.present? ? %(is a '#{event_type.name}') : %(isn't specified)
 
