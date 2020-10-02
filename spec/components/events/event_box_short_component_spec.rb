@@ -1,27 +1,21 @@
 require 'rails_helper'
 require_relative 'shared_event_box_examples'
 
-describe Events::EventBoxComponent, type: 'component' do
+describe Events::EventBoxShortComponent, type: 'component' do
   include_context 'stub types api'
   let(:event) { build(:event_api) }
 
-  subject! { render_inline(Events::EventBoxComponent.new(event)) }
+  subject! { render_inline(Events::EventBoxShortComponent.new(event)) }
 
   specify 'renders an event result box' do
-    expect(page).to have_css('.event-resultbox')
+    expect(page).to have_css('.event-resultboxshort')
   end
 
-  specify 'places the date and time in the datetime div' do
-    page.find('.event-resultbox__datetime') do |datetime_div|
-      expect(datetime_div).to have_content(event.start_at.to_date.to_formatted_s(:long_ordinal))
-      expect(datetime_div).to have_content(event.start_at.to_formatted_s(:time))
-      expect(datetime_div).to have_content(event.end_at.to_formatted_s(:time))
-    end
-  end
-
-  specify 'places the description in the content div' do
-    page.find('.event-resultbox__content') do |content_div|
-      expect(content_div).to have_content(event.summary)
+  specify 'places the date and time in the header' do
+    page.find('.event-resultboxshort__header') do |header|
+      expect(header).to have_content(event.start_at.to_date.to_formatted_s(:long_ordinal))
+      expect(header).to have_content(event.start_at.to_formatted_s(:time))
+      expect(header).to have_content(event.end_at.to_formatted_s(:time))
     end
   end
 
@@ -31,7 +25,7 @@ describe Events::EventBoxComponent, type: 'component' do
       let(:event) { build(:event_api, is_online: true) }
 
       specify %(it's marked as being online) do
-        expect(page).to have_css('h5', text: online_heading)
+        expect(page).to have_css('span.event-resultboxshort__content__label', text: online_heading)
       end
     end
 
@@ -47,8 +41,8 @@ describe Events::EventBoxComponent, type: 'component' do
   describe 'location' do
     context 'when the event has a location' do
       specify 'the city should be displayed' do
-        expect(page).to have_css('.event-resultbox__content__location')
-        expect(page).to have_css('p', text: event.building.address_city)
+        expect(page).to have_css('.event-resultboxshort__content__location')
+        expect(page).to have_css('.event-resultboxshort__content__location', text: event.building.address_city)
       end
     end
 

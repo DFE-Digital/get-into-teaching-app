@@ -7,13 +7,7 @@
 
 <section class="event-info content container-1000">
     <div class="content__right">
-        <%= render "components/eventboxshort",
-            title: @event.name,
-            datetime: format_event_date(@event),
-            type: @event.type_id,
-            online: @event.is_online,
-            location: event_address(@event)
-        %>
+        <%= render(Events::EventBoxShortComponent.new(@event)) %>
 
         <% if can_sign_up_online?(@event) %>
           <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button sidebar-button" do %>
