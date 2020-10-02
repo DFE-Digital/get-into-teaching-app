@@ -7,7 +7,7 @@ describe "Find an event near you" do
 
   let(:events) do
     5.times.collect do |index|
-      start_at = Time.zone.today.at_beginning_of_month + index.days
+      start_at = Time.zone.today.at_end_of_month - index.days
       build(:event_api, name: "Event #{index + 1}", start_at: start_at)
     end
   end
@@ -25,6 +25,11 @@ describe "Find an event near you" do
 
     it "displays all events" do
       expect(response.body.scan(/Event [1-5]/).count).to eq(5)
+    end
+
+    it "presents the events in date order" do
+      headings = response.body.scan(/<h2>(.*)<\/h2>/).flatten.take(events.count)
+      expect(headings).to eq(["Event 5", "Event 4", "Event 3", "Event 2", "Event 1"])
     end
 
     context "when there are no results" do

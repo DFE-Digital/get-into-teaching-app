@@ -50,7 +50,10 @@ private
 
   def events_sorted_by_category
     @events.sort_by do |event|
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.index(event.type_id)
+      [
+        GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.index(event.type_id),
+        event.start_at,
+      ]
     end
   end
 
