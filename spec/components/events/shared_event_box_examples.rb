@@ -15,7 +15,9 @@ shared_examples %(an event box with an event type and coloured icons) do
       end
 
       specify %(the box should have the right type of divider) do
-        expect(page).to have_css(%(.event-resultbox__divider.event-resultbox__divider--#{event_type.name&.parameterize}))
+        if event_type.name.present?
+          expect(page).to have_css(%(.event-resultbox__divider.event-resultbox__divider--#{event_type.name&.parameterize}))
+        end
       end
 
       specify %(the online icon should be #{event_type.expected_colour}) do
