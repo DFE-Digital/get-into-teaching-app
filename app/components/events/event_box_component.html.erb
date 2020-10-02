@@ -22,15 +22,16 @@
         </h5>
       <% end %>
 
-      <% if online %>
+      <% if online? %>
         <h5>
           <div class='event-resultbox__content__icon icon-online-event <%= "icon-online-event--#{type_color}" %>'></div>
           Online Event
         </h5>
       <% end %>
 
-      <% if location %>
-        <h5 class="event-resultbox__content__location"><div class='event-resultbox__content__icon icon-pin <%= "icon-pin--#{type_color}" %>'></div>
+      <% if location.present? %>
+        <h5 class="event-resultbox__content__location">
+          <div class='event-resultbox__content__icon icon-pin <%= "icon-pin--#{type_color}" %>'></div>
           <%= formatted_location %>
         </h5>
       <% end %>

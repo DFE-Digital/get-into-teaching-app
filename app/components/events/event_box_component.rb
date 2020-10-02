@@ -2,6 +2,10 @@ module Events
   class EventBoxComponent < ViewComponent::Base
     attr_reader :title, :event, :title, :description, :type, :online, :location
 
+    delegate :format_event_date, :name_of_event_type, :event_type_color, :safe_format, to: :helpers
+
+    alias_method :online?, :online
+
     def initialize(event)
       @event       = event
       @title       = event.name
@@ -12,19 +16,19 @@ module Events
     end
 
     def datetime
-      helpers.format_event_date(event, stacked: false)
+      format_event_date(event, stacked: false)
     end
 
     def type_name
-      helpers.name_of_event_type(type)
+      name_of_event_type(type)
     end
 
     def type_color
-      helpers.event_type_color(type)
+      event_type_color(type)
     end
 
     def formatted_location
-      helpers.safe_format(location)
+      safe_format(location)
     end
   end
 end
