@@ -1,10 +1,3 @@
 <%= link_to event_path(id: event.readable_id), class: "event-link" do %>
-    <%= render "components/eventbox",
-        title: event.name,
-        datetime: format_event_date(event, stacked: false),
-        description: event.summary,
-        type: event.type_id,
-        online: event.is_online,
-        location: event.building&.address_city
-    %>
+  <%= render(Events::EventBoxComponent.new(event)) %>
 <% end %>
