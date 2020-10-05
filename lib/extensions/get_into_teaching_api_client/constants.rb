@@ -50,7 +50,12 @@ module GetIntoTeachingApiClient
         "Art and design" => "7e2655a1-2afa-e811-a981-000d3a276620",
         "Maths" => "a42655a1-2afa-e811-a981-000d3a276620",
         "Pyhsics" => "ac2655a1-2afa-e811-a981-000d3a276620",
-        "No preference" => "bc68e0c1-7212-e911-a974-000d3a206976",
+      }.freeze
+
+    IGNORED_PREFERRED_TEACHING_SUBJECTS =
+      {
+        "Other" => "bc2655a1-2afa-e811-a981-000d3a276620",
+        "No Preference" => "bc68e0c1-7212-e911-a974-000d3a206976",
       }.freeze
   end
 end

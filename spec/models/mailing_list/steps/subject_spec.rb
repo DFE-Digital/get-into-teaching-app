@@ -25,4 +25,17 @@ describe MailingList::Steps::Subject do
     it { is_expected.not_to allow_value("").for :preferred_teaching_subject_id }
     it { is_expected.not_to allow_value("random").for :preferred_teaching_subject_id }
   end
+
+  describe "#teaching_subject_ids" do
+    let(:teaching_subject_types) do
+      subjects = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.merge(
+        GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS,
+      )
+      subjects.map { |k, v| GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k }) }
+    end
+
+    subject { instance.teaching_subject_ids }
+
+    it { is_expected.to eq([nil] + GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.values) }
+  end
 end
