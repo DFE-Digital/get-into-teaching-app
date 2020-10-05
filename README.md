@@ -46,6 +46,11 @@ You will need to do this manually to have the content available on your local de
 1. Clone the following repo: https://github.com/DFE-Digital/get-into-teaching-content
 2. Copy the `content` folder from this repo and merge it into `app/views/content`
 
+Alternatively, create a [symlink](https://en.wikipedia.org/wiki/Symbolic_link)
+from `apps/views/content` to the location of your content directory by changing
+to your `app/views` directory and running `ln -s content
+/the/path/to/your/content/directory`.
+
 ## Whats included in this website
 
 - Rails 6.0 with Webpacker
