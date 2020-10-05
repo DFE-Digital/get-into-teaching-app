@@ -29,6 +29,10 @@ module EventsHelper
     event.web_feed_id && event_status_open?(event)
   end
 
+  def is_event_type?(event, type_name)
+    event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES.dig(type_name)
+  end
+
   def embed_event_video_url(video_url)
     video_url&.sub("watch?v=", "embed/")
   end
