@@ -133,6 +133,7 @@ describe EventsController do
           let(:event) { build(:event_api, web_feed_id: nil, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]) }
 
           it { is_expected.to match(%r{To register for this event, follow the instructions in the event information section}) }
+          it { is_expected.not_to match(%r{Sign up for this}) }
         end
       end
     end
