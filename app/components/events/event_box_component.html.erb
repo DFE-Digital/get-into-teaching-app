@@ -1,0 +1,39 @@
+<div class="event-resultbox">
+
+    <div class="event-resultbox__header">
+        <h2><%= title %></h2>
+    </div>
+
+    <div class="event-resultbox__datetime">
+        <%= datetime %>
+    </div>
+
+    <div class="event-resultbox__divider event-resultbox__divider--<%= type_name.parameterize %>"></div>
+
+    <div class="event-resultbox__content">
+      <p>
+        <%= description %>
+      </p>
+
+      <% if type && type != GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] %>
+        <h5>
+          <div class="event-resultbox__content__icon icon-<%= type_name.parameterize %>"></div>
+          <%= type_name %>
+        </h5>
+      <% end %>
+
+      <% if online? %>
+        <h5>
+          <div class='event-resultbox__content__icon icon-online-event <%= "icon-online-event--#{type_color}" %>'></div>
+          Online Event
+        </h5>
+      <% end %>
+
+      <% if location.present? %>
+        <h5 class="event-resultbox__content__location">
+          <div class='event-resultbox__content__icon icon-pin <%= "icon-pin--#{type_color}" %>'></div>
+          <%= formatted_location %>
+        </h5>
+      <% end %>
+    </div>
+</div>

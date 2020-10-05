@@ -14,6 +14,7 @@ require "action_view/railtie"
 # require "action_cable/engine"
 # require "sprockets/railtie"
 require "rails/test_unit/railtie"
+require "view_component/engine"
 
 require "prometheus/client/data_stores/direct_file_store"
 
