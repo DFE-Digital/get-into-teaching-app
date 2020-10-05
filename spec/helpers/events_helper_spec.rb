@@ -81,6 +81,20 @@ describe EventsHelper, type: "helper" do
     end
   end
 
+  describe "#is_event_type?" do
+    let(:matching_type) { "School or University Event" }
+    let(:non_matching_type) { "Application Workshop" }
+    let(:event) { build(:event_api, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES[matching_type]) }
+
+    it "should be truthy when the type matches" do
+      expect(is_event_type?(event, matching_type)).to be_truthy
+    end
+
+    it "should be falsy when the type matches" do
+      expect(is_event_type?(event, non_matching_type)).to be_falsy
+    end
+  end
+
   describe "#event_type_color" do
     it "returns green for train to teach events" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]

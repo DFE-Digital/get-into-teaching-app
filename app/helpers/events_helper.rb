@@ -26,7 +26,11 @@ module EventsHelper
   end
 
   def can_sign_up_online?(event)
-    event.web_feed_id && event_status_open?(event)
+    event.web_feed_id && event_status_open?(event) && !is_event_type?(event, "School or University Event")
+  end
+
+  def is_event_type?(event, type_name)
+    event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES.dig(type_name)
   end
 
   def embed_event_video_url(video_url)
