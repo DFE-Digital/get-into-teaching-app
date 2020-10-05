@@ -65,4 +65,23 @@ describe Events::Steps::PersonalisedUpdates do
       it { is_expected.to be_skipped }
     end
   end
+
+  describe "#teaching_subject_options" do
+    let(:teaching_subject_types) do
+      subjects = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.merge(
+        GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS,
+      )
+      subjects.map { |k, v| GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k }) }
+    end
+
+    before do
+      allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+        receive(:get_teaching_subjects).and_return(teaching_subject_types)
+    end
+
+    subject { instance.teaching_subject_options }
+
+    it { expect(subject.map(&:id)).to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.values) }
+    it { expect(subject.map(&:value)).to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.keys) }
+  end
 end
