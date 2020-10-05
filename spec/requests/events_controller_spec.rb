@@ -128,6 +128,12 @@ describe EventsController do
           it { is_expected.to_not match(/#{event.building.address_line2}/) }
           it { is_expected.to_not match(/#{event.building.address_postcode}/) }
         end
+
+        context %(when the event is a 'School or University Event') do
+          let(:event) { build(:event_api, web_feed_id: nil, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]) }
+
+          it { is_expected.to match(%r{To register for this event, follow the instructions in the event information section}) }
+        end
       end
     end
 
