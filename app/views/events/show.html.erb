@@ -61,8 +61,8 @@
         <% end %>
 
         <% if event_status_open?(@event) %>
-          <h2 class="strapline-article">How to attend</h2>
           <% if can_sign_up_online?(@event) %>
+            <h2 class="strapline-article">How to attend</h2>
             <p>
                 To access this event, please sign up on this page and watch out for the reminder email we will send the day before the event. It will contain an access link to the live online event and a directory of some of the local training providers.
             </p>
@@ -79,10 +79,13 @@
             </p>
 
           <% elsif is_event_type?(@event, "School or University Event") %>
+            <h2 class="strapline-article">How to attend</h2>
             <p>To register for this event, follow the instructions in the event information section.</p>
           <% elsif @event.provider_website_url %>
+            <h2 class="strapline-article">How to attend</h2>
             <p>To attend this event, please <%= link_to("visit this website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i>.<p>
           <% elsif @event.provider_contact_email %>
+            <h2 class="strapline-article">How to attend</h2>
             <p>To attend this event, please <%= mail_to(@event.provider_contact_email, "email us") %>.<p>
           <% end %>
         <% end %>
