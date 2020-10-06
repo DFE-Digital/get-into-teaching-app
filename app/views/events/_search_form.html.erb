@@ -6,23 +6,23 @@
         data-conditional-field-mode="hide"
         data-conditional-field-expected="">
 
-    <div class="search-for-events__content__input">
+    <div class="search-for-events__content__input <%= "search-for-events__content__error" if f.object.errors[:type].any? %>">
         <%= f.label :type, "Event type", class: "search-for-events__content__input__label" %>
         <%= f.collection_select :type, f.object.available_event_types, :id, :value, { include_blank: "All events" } %>
     </div>
 
-    <div class="search-for-events__content__input">
+    <div class="search-for-events__content__input <%= "search-for-events__content__error" if f.object.errors[:distance].any? %>">
         <%= f.label :distance, "Location", class: "search-for-events__content__input__label" %>
         <%= f.select :distance, f.object.available_distances, {},
               data: { action: "conditional-field#toggle", target: "conditional-field.source" } %>
     </div>
-    <div class="search-for-events__content__input"
+    <div class="search-for-events__content__input <%= "search-for-events__content__error" if f.object.errors[:postcode].any? %>"
       data-target="conditional-field.showhide">
 
       <%= f.label :postcode, "Postcode", class: "search-for-events__content__input__label" %>
       <%= f.text_field :postcode %>
     </div>
-    <div class="search-for-events__content__input">
+    <div class="search-for-events__content__input <%= "search-for-events__content__error" if f.object.errors[:month].any? %>">
         <%= f.label :month, "Month", class: "search-for-events__content__input__label" %>
         <%= f.select :month, f.object.available_months %>
     </div>
