@@ -2,6 +2,8 @@ class EventsController < ApplicationController
   before_action :load_events, only: %i[index search]
   before_action :categorise_events, only: %i[index search]
 
+  INDEX_EVENTS_PER_TYPE_CAP = 9
+
   def index
     @page_title = "Find an event near you"
   end
@@ -44,6 +46,10 @@ private
       hash[group_key] ||= {}
       hash[group_key][type_id] ||= []
 
+      if cap_results?
+        next if hash[group_key][type_id].size >= INDEX_EVENTS_PER_TYPE_CAP
+      end
+
       hash[group_key][type_id] << event
     end
   end
@@ -69,5 +75,9 @@ private
 
     (params[Events::Search.model_name.param_key] || defaults)
       .permit(:type, :distance, :postcode, :month)
+  end
+
+  def cap_results?
+    params.dig("events_search").blank?
   end
 end
