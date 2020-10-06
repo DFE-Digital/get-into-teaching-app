@@ -54,6 +54,15 @@ describe Healthcheck do
 
       it { is_expected.to be false }
     end
+
+    context "with an API error" do
+      before do
+        expect_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+          receive(:get_teaching_subjects).and_raise(GetIntoTeachingApiClient::ApiError)
+      end
+
+      it { is_expected.to be false }
+    end
   end
 
   describe "#test_redis" do

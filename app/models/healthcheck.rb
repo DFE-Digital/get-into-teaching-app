@@ -12,7 +12,7 @@ class Healthcheck
   def test_api
     GetIntoTeachingApiClient::TypesApi.new.get_teaching_subjects
     true
-  rescue Faraday::Error
+  rescue Faraday::Error, GetIntoTeachingApiClient::ApiError
     false
   end
 
