@@ -34,7 +34,6 @@
 
 
     &__header {
-        min-height: 46px;
         width: 100%;
         overflow: hidden;
 
@@ -52,10 +51,10 @@
     }
 
     &__divider {
+      border: none;
       height: 8px;
       background-color: $blue;
-      margin-top: 6px;
-      margin-bottom: 20px;
+      margin: 6px 0px;
     }
 
     &__divider--online-event {

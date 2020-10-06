@@ -39,5 +39,11 @@ module Events
     def heading
       condensed ? datetime : title
     end
+
+    def divider
+      event_type_class = %(event-box__divider--#{type_name.parameterize})
+
+      tag.hr(class: %w(event-box__divider).append(event_type_class).compact)
+    end
   end
 end
