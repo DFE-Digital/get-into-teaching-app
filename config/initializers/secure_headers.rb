@@ -21,7 +21,7 @@ SecureHeaders::Configuration.default do |config|
     form_action: %w['self' tr.snapchat.com www.facebook.com www.gov.uk],
     frame_ancestors: %w['self'],
     frame_src: %w['self' embed.scribblelive.com tr.snapchat.com www.facebook.com www.youtube.com *.hotjar.com],
-    img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com] + google_analytics,
+    img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com ad.doubleclick.net] + google_analytics,
     manifest_src: %w['self'],
     media_src: %w['self'],
     script_src: %w['self' 'unsafe-inline' 'unsafe-eval' embed.scribblelive.com *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com *.youtube.com *.visualwebsiteoptimizer.com] + google_analytics,
