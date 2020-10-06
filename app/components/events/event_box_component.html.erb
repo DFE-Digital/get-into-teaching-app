@@ -1,19 +1,20 @@
 <div class="event-resultbox">
-
     <div class="event-resultbox__header">
-        <h2><%= title %></h2>
+        <h2><%= heading %></h2>
     </div>
 
-    <div class="event-resultbox__datetime">
+    <% unless condensed? %>
+      <div class="event-resultbox__datetime">
         <%= datetime %>
-    </div>
+      </div>
+    <% end %>
 
     <div class="event-resultbox__divider event-resultbox__divider--<%= type_name.parameterize %>"></div>
 
     <div class="event-resultbox__content">
-      <p>
-        <%= description %>
-      </p>
+      <% unless condensed? %>
+        <p><%= description %></p>
+      <% end %>
 
       <% if type && type != GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] %>
         <h5>

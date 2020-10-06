@@ -1,16 +1,19 @@
 module Events
   class EventBoxComponent < ViewComponent::Base
-    attr_reader :title, :event, :description, :type, :online, :location
+    attr_reader :title, :event, :description, :type, :online, :location, :condensed
 
     delegate :format_event_date, :name_of_event_type, :event_type_color, :safe_format, to: :helpers
 
-    def initialize(event)
+    alias_method :condensed?, :condensed
+
+    def initialize(event, condensed: false)
       @event       = event
       @title       = event.name
       @description = event.summary
       @type        = event.type_id
       @online      = event.is_online
       @location    = event.building&.address_city
+      @condensed   = condensed
     end
 
     def datetime
@@ -31,6 +34,10 @@ module Events
 
     def online?
       online
+    end
+
+    def heading
+      condensed ? datetime : title
     end
   end
 end
