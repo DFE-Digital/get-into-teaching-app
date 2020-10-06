@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe EventsController do
   include_context "stub types api"
+  let(:events_cap) { EventsController::INDEX_EVENTS_PER_TYPE_CAP }
 
   describe "#index" do
     let(:first_readable_id) { "123" }
@@ -19,12 +20,24 @@ describe EventsController do
         receive(:search_teaching_events).and_return events
     end
 
-    subject do
+    subject! do
       get(events_path)
       response
     end
 
     it { is_expected.to have_http_status :success }
+
+    context "when there are more than 9 events of a certain type" do
+      let(:events_count) { 13 }
+      let(:event_type_name) { "Train to Teach Event" }
+      let(:event_type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES[event_type_name] }
+      let(:events) { build_list(:event_api, 13, start_at: 1.week.from_now) }
+      let(:parsed_response) { Nokogiri.parse(response.body) }
+
+      specify "only the first 9 should be rendered" do
+        expect(parsed_response.css(".event-link").count).to eql(events_cap)
+      end
+    end
   end
 
   describe "#search" do
@@ -48,6 +61,63 @@ describe EventsController do
 
       it { is_expected.to have_http_status :success }
       it { is_expected.to have_attributes media_type: "text/html" }
+    end
+
+    context "when there are more than 9 events of a certain type" do
+      let(:date) { 1.week.from_now }
+      let(:search_month) { date.strftime("%Y-%m") }
+      let(:events_count) { 13 }
+      let(:event_type_name) { "Train to Teach Event" }
+      let(:event_type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES[event_type_name] }
+      let(:search_params) do
+        attributes_for(
+          :events_search,
+          type: event_type,
+          month: search_month,
+          distance: "",
+        )
+      end
+      let(:events) { build_list(:event_api, events_count, start_at: date) }
+      let(:parsed_response) { Nokogiri.parse(response.body) }
+
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+          receive(:search_teaching_events).and_return events
+      end
+
+      before { subject }
+
+      context "when searching for a particular event type" do
+        let(:search_params) do
+          attributes_for(
+            :events_search,
+            type: event_type,
+            month: search_month,
+            distance: "",
+            postcode: "",
+          )
+        end
+
+        specify "all events should be rendered" do
+          expect(parsed_response.css(".event-link").count).to eql(events_count)
+        end
+      end
+
+      context "when no specific search terms are used" do
+        let(:search_params) do
+          attributes_for(
+            :events_search,
+            type: "",
+            month: search_month,
+            distance: "",
+            postcode: "",
+          )
+        end
+
+        specify "only the first 9 should be rendered" do
+          expect(parsed_response.css(".event-link").count).to eql(events_cap)
+        end
+      end
     end
   end
 
