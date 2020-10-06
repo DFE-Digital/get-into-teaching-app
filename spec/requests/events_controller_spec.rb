@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe EventsController do
   include_context "stub types api"
+  let(:events_cap) { EventsController::INDEX_EVENTS_PER_TYPE_CAP }
 
   describe "#index" do
     let(:first_readable_id) { "123" }
@@ -28,14 +29,13 @@ describe EventsController do
 
     context "when there are more than 9 events of a certain type" do
       let(:events_count) { 13 }
-      let(:events_cap) { EventsController::INDEX_EVENTS_PER_TYPE_CAP }
       let(:event_type_name) { "Train to Teach Event" }
       let(:event_type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES[event_type_name] }
       let(:events) { build_list(:event_api, 13, start_at: 1.week.from_now) }
       let(:parsed_response) { Nokogiri.parse(response.body) }
 
       specify "only the first 9 should be rendered" do
-        expect(parsed_response.css(".event-link").count).to be(events_cap)
+        expect(parsed_response.css(".event-link").count).to eql(events_cap)
       end
     end
   end
@@ -74,7 +74,7 @@ describe EventsController do
           :events_search,
           type: event_type,
           month: search_month,
-          distance: nil,
+          distance: "",
         )
       end
       let(:events) { build_list(:event_api, events_count, start_at: date) }
@@ -87,8 +87,36 @@ describe EventsController do
 
       before { subject }
 
-      specify "all events should be rendered" do
-        expect(parsed_response.css(".event-link").count).to be(events_count)
+      context "when searching for a particular event type" do
+        let(:search_params) do
+          attributes_for(
+            :events_search,
+            type: event_type,
+            month: search_month,
+            distance: "",
+            postcode: "",
+          )
+        end
+
+        specify "all events should be rendered" do
+          expect(parsed_response.css(".event-link").count).to eql(events_count)
+        end
+      end
+
+      context "when no specific search terms are used" do
+        let(:search_params) do
+          attributes_for(
+            :events_search,
+            type: "",
+            month: search_month,
+            distance: "",
+            postcode: "",
+          )
+        end
+
+        specify "only the first 9 should be rendered" do
+          expect(parsed_response.css(".event-link").count).to eql(events_cap)
+        end
       end
     end
   end
