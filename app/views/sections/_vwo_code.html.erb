@@ -1,6 +1,6 @@
-<%- if ENV["VWO_ID"].present? -%>
 <!-- Start VWO Async SmartCode -->
 <script type="text/javascript">
+<%- if ENV["VWO_ID"].present? -%>
   window._vwo_code = window._vwo_code || (function(){
   var account_id="<%= ENV["VWO_ID"] %>",
   settings_tolerance=2000,
@@ -70,6 +70,8 @@
       document.dispatchEvent(new CustomEvent("vwo:completed")) ;
     }
   }], 5000 /*MAXIMUM TIME IN SECONDS IN WHICH GA CODE WILL EXECUTE ANYWAY*/ );
+<%- else -%>
+  window.willRedirectionOccurByVWO = false ;
+<%- end -%>
 </script>
 <!-- End VWO Async SmartCode -->
-<%- end -%>
