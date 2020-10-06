@@ -46,9 +46,7 @@ private
       hash[group_key] ||= {}
       hash[group_key][type_id] ||= []
 
-      if cap_results?
-        next if hash[group_key][type_id].size >= INDEX_EVENTS_PER_TYPE_CAP
-      end
+      next if cap_results? && hash[group_key][type_id].size >= INDEX_EVENTS_PER_TYPE_CAP
 
       hash[group_key][type_id] << event
     end
