@@ -18,21 +18,21 @@
 
       <% if type && type != GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] %>
         <h5>
-          <div class="event-box__content__icon icon-<%= type_name.parameterize %>"></div>
+          <%= event_type_icon %>
           <%= type_name %>
         </h5>
       <% end %>
 
       <% if online? %>
         <h5>
-          <div class='event-box__content__icon icon-online-event <%= "icon-online-event--#{type_color}" %>'></div>
+          <%= online_icon %>
           Online Event
         </h5>
       <% end %>
 
       <% if location.present? %>
         <h5 class="event-box__content__location">
-          <div class='event-box__content__icon icon-pin <%= "icon-pin--#{type_color}" %>'></div>
+          <%= location_icon %>
           <%= formatted_location %>
         </h5>
       <% end %>

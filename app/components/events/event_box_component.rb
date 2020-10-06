@@ -41,9 +41,27 @@ module Events
     end
 
     def divider
-      event_type_class = %(event-box__divider--#{type_name.parameterize})
+      event_type_divider_class = %(event-box__divider--#{type_name.parameterize})
 
-      tag.hr(class: %w(event-box__divider).append(event_type_class).compact)
+      tag.hr(class: (%w[event-box__divider] << event_type_divider_class).compact)
+    end
+
+    def event_type_icon
+      icon_class = %(icon-#{type_name.parameterize})
+
+      tag.div(class: (%w[event-box__content__icon] << icon_class).compact)
+    end
+
+    def online_icon
+      colour_class = %(icon-online-event--#{type_color})
+
+      tag.div(class: (%w[event-box__content__icon icon-online-event] << colour_class))
+    end
+
+    def location_icon
+      colour_class = %(icon-pin--#{type_color})
+
+      tag.div(class: (%w[event-box__content__icon icon-pin] << colour_class))
     end
   end
 end
