@@ -4,7 +4,7 @@ describe Prometheus::Metrics do
   let(:registry) { Prometheus::Client.registry }
 
   describe "request_total" do
-    subject { registry.get(:requests_total) }
+    subject { registry.get(:app_requests_total) }
 
     it { is_expected.not_to be_nil }
     it { is_expected.to have_attributes(docstring: "A counter of requests") }
@@ -12,7 +12,7 @@ describe Prometheus::Metrics do
   end
 
   describe "request_duration_ms" do
-    subject { registry.get(:request_duration_ms) }
+    subject { registry.get(:app_request_duration_ms) }
 
     it { is_expected.not_to be_nil }
     it { is_expected.to have_attributes(docstring: "A histogram of request durations") }
@@ -20,7 +20,7 @@ describe Prometheus::Metrics do
   end
 
   describe "request_view_runtime_ms" do
-    subject { registry.get(:request_view_runtime_ms) }
+    subject { registry.get(:app_request_view_runtime_ms) }
 
     it { is_expected.not_to be_nil }
     it { is_expected.to have_attributes(docstring: "A histogram of request view runtimes") }
@@ -28,7 +28,7 @@ describe Prometheus::Metrics do
   end
 
   describe "render_view_ms" do
-    subject { registry.get(:render_view_ms) }
+    subject { registry.get(:app_render_view_ms) }
 
     it { is_expected.not_to be_nil }
     it { is_expected.to have_attributes(docstring: "A histogram of view rendering times") }
@@ -36,7 +36,7 @@ describe Prometheus::Metrics do
   end
 
   describe "render_partial_ms" do
-    subject { registry.get(:render_partial_ms) }
+    subject { registry.get(:app_render_partial_ms) }
 
     it { is_expected.not_to be_nil }
     it { is_expected.to have_attributes(docstring: "A histogram of partial rendering times") }
@@ -44,7 +44,7 @@ describe Prometheus::Metrics do
   end
 
   describe "cache_read_total" do
-    subject { registry.get(:cache_read_total) }
+    subject { registry.get(:app_cache_read_total) }
 
     it { is_expected.not_to be_nil }
     it { is_expected.to have_attributes(docstring: "A counter of cache reads") }
