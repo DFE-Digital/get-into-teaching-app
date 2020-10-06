@@ -48,11 +48,18 @@ form {
 }
 
 .search-for-events__content__errors {
-  color: $pink;
-  margin: 0 0 0.6em;
+    color: #d4351c;
+    margin: -13px 0 25px;
+    font-weight: bold;
 
   div {
     margin: 0.2em 0 ;
+  }
+}
+
+.search-for-events__content__error {
+  input {
+    border-color: #d4351c;
   }
 }
 
