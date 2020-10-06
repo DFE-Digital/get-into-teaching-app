@@ -7,17 +7,17 @@ describe "Instrumentation" do
     after { get cookies_path }
 
     it "increments the :requests_total metric" do
-      metric = registry.get(:requests_total)
+      metric = registry.get(:app_requests_total)
       expect(metric).to receive(:increment).with(labels: { path: "/cookies", method: "GET", status: 200 }).once
     end
 
     it "observes the :request_duration_ms metric" do
-      metric = registry.get(:request_duration_ms)
+      metric = registry.get(:app_request_duration_ms)
       expect(metric).to receive(:observe).with(instance_of(Float), labels: { path: "/cookies", method: "GET", status: 200 }).once
     end
 
     it "observes the :request_view_runtime_ms metric" do
-      metric = registry.get(:request_view_runtime_ms)
+      metric = registry.get(:app_request_view_runtime_ms)
       expect(metric).to receive(:observe).with(instance_of(Float), labels: { path: "/cookies", method: "GET", status: 200 }).once
     end
   end
@@ -26,7 +26,7 @@ describe "Instrumentation" do
     after { get cookie_preference_path }
 
     it "observes the :render_view_ms metric" do
-      metric = registry.get(:render_view_ms)
+      metric = registry.get(:app_render_view_ms)
       expect(metric).to receive(:observe).with(instance_of(Float), labels: {
         identifier: Rails.root.join("app/views/cookie_preferences/show.html.erb").to_s,
       }).once
@@ -37,7 +37,7 @@ describe "Instrumentation" do
     after { get root_path }
 
     it "observes the :render_view_ms metric" do
-      metric = registry.get(:render_partial_ms)
+      metric = registry.get(:app_render_partial_ms)
       allow(metric).to receive(:observe)
       expect(metric).to receive(:observe).with(instance_of(Float), labels: {
         identifier: Rails.root.join("app/views/sections/_head.html.erb").to_s,
@@ -51,7 +51,7 @@ describe "Instrumentation" do
     after { get privacy_policy_path }
 
     it "observes the :cache_read_total metric" do
-      metric = registry.get(:cache_read_total)
+      metric = registry.get(:app_cache_read_total)
       expect(metric).to receive(:increment).with(labels: {
         key: instance_of(String),
         hit: false,

@@ -7,14 +7,14 @@ ActiveSupport::Notifications.subscribe "process_action.action_controller" do |*a
   labels = { path: nil, method: nil, status: nil }
   labels.merge!(payload.slice(*labels.keys))
 
-  metric = prometheus.get(:requests_total)
+  metric = prometheus.get(:app_requests_total)
   metric.increment(labels: labels)
 
-  metric = prometheus.get(:request_duration_ms)
+  metric = prometheus.get(:app_request_duration_ms)
   metric.observe(event.duration, labels: labels)
 
   if payload.key?(:view_runtime)
-    metric = prometheus.get(:request_view_runtime_ms)
+    metric = prometheus.get(:app_request_view_runtime_ms)
     metric.observe(payload[:view_runtime], labels: labels)
   end
 end
@@ -27,7 +27,7 @@ ActiveSupport::Notifications.subscribe "render_template.action_view" do |*args|
   labels = { identifier: nil }
   labels.merge!(event.payload.symbolize_keys.slice(*labels.keys))
 
-  metric = prometheus.get(:render_view_ms)
+  metric = prometheus.get(:app_render_view_ms)
   metric.observe(event.duration, labels: labels)
 end
 
@@ -39,7 +39,7 @@ ActiveSupport::Notifications.subscribe "render_partial.action_view" do |*args|
   labels = { identifier: nil }
   labels.merge!(event.payload.symbolize_keys.slice(*labels.keys))
 
-  metric = prometheus.get(:render_partial_ms)
+  metric = prometheus.get(:app_render_partial_ms)
   metric.observe(event.duration, labels: labels)
 end
 
@@ -51,6 +51,6 @@ ActiveSupport::Notifications.subscribe "cache_read.active_support" do |*args|
   labels = { key: nil, hit: nil }
   labels.merge!(event.payload.symbolize_keys.slice(*labels.keys))
 
-  metric = prometheus.get(:cache_read_total)
+  metric = prometheus.get(:app_cache_read_total)
   metric.increment(labels: labels)
 end
