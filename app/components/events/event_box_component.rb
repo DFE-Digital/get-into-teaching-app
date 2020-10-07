@@ -45,19 +45,25 @@ module Events
     def event_type_icon
       icon_class = %(icon-#{type_name.parameterize})
 
-      tag.div(class: (%w[event-box__footer__icon] << icon_class).compact)
+      tag.div(class: [event_box_footer_icon_class, icon_class])
     end
 
     def online_icon
       colour_class = %(icon-online-event--#{type_color})
 
-      tag.div(class: (%w[event-box__footer__icon icon-online-event] << colour_class))
+      tag.div(class: [event_box_footer_icon_class, "icon-online-event", colour_class])
     end
 
     def location_icon
       colour_class = %(icon-pin--#{type_color})
 
-      tag.div(class: (%w[event-box__footer__icon icon-pin] << colour_class))
+      tag.div(class: [event_box_footer_icon_class, "icon-pin", colour_class])
+    end
+
+  private
+
+    def event_box_footer_icon_class
+      "event-box__footer__icon"
     end
   end
 end
