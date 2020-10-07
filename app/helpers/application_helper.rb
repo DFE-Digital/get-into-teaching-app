@@ -4,6 +4,7 @@ module ApplicationHelper
 
     analytics = {
       "analytics-gtm-id" => ENV["GOOGLE_TAG_MANAGER_ID"],
+      "analytics-adwords-id" => ENV["GOOGLE_AD_WORDS_ID"],
       "analytics-pinterest-id" => ENV["PINTEREST_ID"],
       "analytics-snapchat-id" => ENV["SNAPCHAT_ID"],
       "analytics-facebook-id" => ENV["FACEBOOK_ID"],
