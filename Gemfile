@@ -91,5 +91,12 @@ group :test do
   gem "webmock"
 end
 
+group :rolling, :preprod, :userresearch, :production do
+  # loading the Gem monkey patches rails logger
+  # only load in prod-like environments when we actually need it
+  gem "amazing_print"
+  gem "rails_semantic_logger"
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[mingw mswin x64_mingw jruby]
