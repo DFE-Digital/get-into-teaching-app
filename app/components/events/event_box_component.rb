@@ -28,10 +28,6 @@ module Events
       event_type_color(type)
     end
 
-    def formatted_location
-      safe_format(location)
-    end
-
     def online?
       online
     end
@@ -49,19 +45,19 @@ module Events
     def event_type_icon
       icon_class = %(icon-#{type_name.parameterize})
 
-      tag.div(class: (%w[event-box__content__icon] << icon_class).compact)
+      tag.div(class: (%w[event-box__footer__icon] << icon_class).compact)
     end
 
     def online_icon
       colour_class = %(icon-online-event--#{type_color})
 
-      tag.div(class: (%w[event-box__content__icon icon-online-event] << colour_class))
+      tag.div(class: (%w[event-box__footer__icon icon-online-event] << colour_class))
     end
 
     def location_icon
       colour_class = %(icon-pin--#{type_color})
 
-      tag.div(class: (%w[event-box__content__icon icon-pin] << colour_class))
+      tag.div(class: (%w[event-box__footer__icon icon-pin] << colour_class))
     end
   end
 end

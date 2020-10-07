@@ -69,37 +69,30 @@
       background-color: $yellow;
     }
 
-    &__content {
-        
-        &__icon {
-            vertical-align: middle;
-            margin-right: 2px;
-            width: 40px;
-        }
+    &__content p {
+      font-size: 17px;
+      margin-bottom: 0;
+    }
 
-        &__location {
-          display: flex;
-        
-          p {
-            margin: 7px 0 0 0;
-          }
-        }
+    &__footer {
+        display: table;
+        border-spacing: 12px 16px;
 
-        h5 {
-          margin: 15px 0 0 0;
-        }
+        .event-box__footer {
+            &__item {
+              display: table-row;
+            }
 
-        p {
-            margin: 0;
-            font-size: 17px;
-        }
+            &__icon,
+            &__meta {
+              display: table-cell;
+              vertical-align: middle;
+            }
 
-        &__location {
-          display: flex;
-
-          p {
-            margin: 7px 0 0 0;
-          }
+            &__meta {
+                font-size: smaller;
+                font-weight: 800;
+            }
         }
     }
 }

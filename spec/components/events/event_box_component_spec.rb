@@ -30,7 +30,7 @@ describe Events::EventBoxComponent, type: "component" do
       let(:event) { build(:event_api, is_online: true) }
 
       specify %(it's marked as being online) do
-        expect(page).to have_css("h5", text: online_heading)
+        expect(page).to have_css(".event-box__footer__meta", text: online_heading)
       end
     end
 
@@ -38,16 +38,16 @@ describe Events::EventBoxComponent, type: "component" do
       let(:event) { build(:event_api, is_online: false) }
 
       specify %(it's not marked as being online) do
-        expect(page).not_to have_css("h5", text: online_heading)
+        expect(page).not_to have_css(".event-box__footer__meta", text: online_heading)
       end
     end
   end
 
   describe "location" do
+    let(:location_description_div) { ".event-box__footer__meta--location" }
     context "when the event has a location" do
       specify "the city should be displayed" do
-        expect(page).to have_css(".event-box__content__location")
-        expect(page).to have_css("p", text: event.building.address_city)
+        expect(page).to have_css(location_description_div, text: event.building.address_city)
       end
     end
 
@@ -55,7 +55,7 @@ describe Events::EventBoxComponent, type: "component" do
       let(:event) { build(:event_api, :no_location) }
 
       specify "no location information should be displayed" do
-        expect(page).not_to have_css(".event-box__content__location")
+        expect(page).not_to have_css(location_description_div)
       end
     end
   end
