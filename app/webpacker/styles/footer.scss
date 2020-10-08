@@ -1,7 +1,7 @@
-body > footer {
+footer.site-footer {
     background-color: $black;
 
-    .footer-top {
+    .site-footer-top {
         width: 100%;
         padding-left: 40px;
         padding-right: 40px;
@@ -70,7 +70,7 @@ body > footer {
         }
     }
 
-    .footer-bottom {
+    .site-footer-bottom {
         height: 140px;
         width: 100%;
         padding-left: 40px;
@@ -150,7 +150,7 @@ body > footer {
 }
 
 @media only screen and (max-width: 1155px) {
-    footer .footer-top__links-container {
+    footer .site-footer-top__links-container {
         max-width: none;
     }
 }
@@ -159,7 +159,7 @@ body > footer {
 
     footer {
 
-        .footer-top {
+        .site-footer-top {
             padding-left: 20px;
             padding-right: 20px;
             padding-top: 20px;
@@ -197,7 +197,7 @@ body > footer {
             }
         }
 
-        .footer-bottom {
+        .site-footer-bottom {
             display: block;
             height: 360px;
             padding-left: 20px;
