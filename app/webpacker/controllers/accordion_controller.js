@@ -65,7 +65,10 @@ export default class extends Controller {
         }
 
         if(!dontScroll) {
-            this.element.getElementById('step-' + stepnumber).scrollIntoView(true,{smooth:true});
+            let element = document.getElementById('step-' + stepnumber);
+            if(element) {
+                element.scrollIntoView(true,{smooth:true});
+            }
         }
     }
 
