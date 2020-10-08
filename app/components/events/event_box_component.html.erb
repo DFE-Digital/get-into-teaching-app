@@ -1,39 +1,48 @@
-<div class="event-resultbox">
+<div class="event-box">
+    <header class="event-box__header">
+        <h2><%= heading %></h2>
+    </header>
 
-    <div class="event-resultbox__header">
-        <h2><%= title %></h2>
-    </div>
-
-    <div class="event-resultbox__datetime">
+    <% unless condensed? %>
+      <div class="event-box__datetime">
         <%= datetime %>
+      </div>
+    <% end %>
+
+    <%= divider %>
+
+    <div class="event-box__content">
+      <% unless condensed? %>
+        <p><%= description %></p>
+      <% end %>
     </div>
 
-    <div class="event-resultbox__divider event-resultbox__divider--<%= type_name.parameterize %>"></div>
-
-    <div class="event-resultbox__content">
-      <p>
-        <%= description %>
-      </p>
-
+    <footer class="event-box__footer">
       <% if type && type != GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] %>
-        <h5>
-          <div class="event-resultbox__content__icon icon-<%= type_name.parameterize %>"></div>
-          <%= type_name %>
-        </h5>
+        <div class="event-box__footer__item">
+          <%= event_type_icon %>
+          <div class="event-box__footer__meta">
+            <%= type_name %>
+          </div>
+        </div>
       <% end %>
 
       <% if online? %>
-        <h5>
-          <div class='event-resultbox__content__icon icon-online-event <%= "icon-online-event--#{type_color}" %>'></div>
-          Online Event
-        </h5>
+        <div class="event-box__footer__item">
+          <%= online_icon %>
+          <div class="event-box__footer__meta">
+            Online Event
+          </div>
+        </div>
       <% end %>
 
       <% if location.present? %>
-        <h5 class="event-resultbox__content__location">
-          <div class='event-resultbox__content__icon icon-pin <%= "icon-pin--#{type_color}" %>'></div>
-          <%= formatted_location %>
-        </h5>
+        <div class="event-box__footer__item">
+          <%= location_icon %>
+          <div class="event-box__footer__meta event-box__footer__meta--location">
+            <%= location %>
+          </div>
+        </div>
       <% end %>
-    </div>
+    </footer>
 </div>

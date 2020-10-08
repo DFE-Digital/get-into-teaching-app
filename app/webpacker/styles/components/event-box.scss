@@ -1,4 +1,3 @@
-
 .event-link {
     &:focus {
         outline: none;
@@ -12,7 +11,7 @@
   font-size: 300px;
 }
 
-.event-resultbox {
+.event-box {
     box-sizing: border-box;
     padding: 20px;
     display: inline-block;
@@ -35,7 +34,6 @@
 
 
     &__header {
-        min-height: 46px;
         width: 100%;
         overflow: hidden;
 
@@ -53,10 +51,10 @@
     }
 
     &__divider {
+      border: none;
       height: 8px;
       background-color: $blue;
-      margin-top: 6px;
-      margin-bottom: 20px;
+      margin: 6px 0px;
     }
 
     &__divider--online-event {
@@ -71,37 +69,31 @@
       background-color: $yellow;
     }
 
-    &__content {
-        
-        &__icon {
-            vertical-align: middle;
-            margin-right: 2px;
-            width: 40px;
-        }
+    &__content p {
+      font-size: 17px;
+      margin-bottom: 0;
+    }
 
-        &__location {
-          display: flex;
-        
-          p {
-            margin: 7px 0 0 0;
-          }
-        }
+    &__footer {
+        display: table;
+        border-spacing: 0 16px;
 
-        h5 {
-          margin: 15px 0 0 0;
-        }
+        .event-box__footer {
+            &__item {
+              display: table-row;
+            }
 
-        p {
-            margin: 0;
-            font-size: 17px;
-        }
+            &__icon,
+            &__meta {
+              display: table-cell;
+              vertical-align: middle;
+            }
 
-        &__location {
-          display: flex;
-
-          p {
-            margin: 7px 0 0 0;
-          }
+            &__meta {
+                padding-left: 0.8em;
+                font-size: smaller;
+                font-weight: 800;
+            }
         }
     }
 }

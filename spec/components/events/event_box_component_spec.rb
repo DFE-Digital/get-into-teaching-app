@@ -1,5 +1,4 @@
 require "rails_helper"
-require_relative "shared_event_box_examples"
 
 describe Events::EventBoxComponent, type: "component" do
   include_context "stub types api"
@@ -7,12 +6,12 @@ describe Events::EventBoxComponent, type: "component" do
 
   subject! { render_inline(Events::EventBoxComponent.new(event)) }
 
-  specify "renders an event result box" do
-    expect(page).to have_css(".event-resultbox")
+  specify "renders an event box" do
+    expect(page).to have_css(".event-box")
   end
 
   specify "places the date and time in the datetime div" do
-    page.find(".event-resultbox__datetime") do |datetime_div|
+    page.find(".event-box__datetime") do |datetime_div|
       expect(datetime_div).to have_content(event.start_at.to_date.to_formatted_s(:long_ordinal))
       expect(datetime_div).to have_content(event.start_at.to_formatted_s(:time))
       expect(datetime_div).to have_content(event.end_at.to_formatted_s(:time))
@@ -20,7 +19,7 @@ describe Events::EventBoxComponent, type: "component" do
   end
 
   specify "places the description in the content div" do
-    page.find(".event-resultbox__content") do |content_div|
+    page.find(".event-box__content") do |content_div|
       expect(content_div).to have_content(event.summary)
     end
   end
@@ -31,7 +30,7 @@ describe Events::EventBoxComponent, type: "component" do
       let(:event) { build(:event_api, is_online: true) }
 
       specify %(it's marked as being online) do
-        expect(page).to have_css("h5", text: online_heading)
+        expect(page).to have_css(".event-box__footer__meta", text: online_heading)
       end
     end
 
@@ -39,16 +38,16 @@ describe Events::EventBoxComponent, type: "component" do
       let(:event) { build(:event_api, is_online: false) }
 
       specify %(it's not marked as being online) do
-        expect(page).not_to have_css("h5", text: online_heading)
+        expect(page).not_to have_css(".event-box__footer__meta", text: online_heading)
       end
     end
   end
 
   describe "location" do
+    let(:location_description_div) { ".event-box__footer__meta--location" }
     context "when the event has a location" do
       specify "the city should be displayed" do
-        expect(page).to have_css(".event-resultbox__content__location")
-        expect(page).to have_css("p", text: event.building.address_city)
+        expect(page).to have_css(location_description_div, text: event.building.address_city)
       end
     end
 
@@ -56,10 +55,74 @@ describe Events::EventBoxComponent, type: "component" do
       let(:event) { build(:event_api, :no_location) }
 
       specify "no location information should be displayed" do
-        expect(page).not_to have_css(".event-resultbox__content__location")
+        expect(page).not_to have_css(location_description_div)
       end
     end
   end
 
-  it_behaves_like "an event box with an event type and coloured icons"
+  [
+    OpenStruct.new(
+      name: "Application Workshop",
+      trait: :application_workshop,
+      expected_colour: "yellow",
+      is_online: false,
+    ),
+    OpenStruct.new(
+      name: "Train to Teach Event",
+      trait: :train_to_teach_event,
+      expected_colour: "green",
+      is_online: false,
+    ),
+    OpenStruct.new(
+      name: "Online Event",
+      trait: :online_event,
+      expected_colour: "purple",
+      is_online: true,
+    ),
+    OpenStruct.new(
+      name: "",
+      trait: :no_event_type,
+      expected_colour: "blue",
+      is_online: false,
+    ),
+    # a 'Train to Teach Event' that also happens to be online
+    OpenStruct.new(
+      name: "Train to Teach Event",
+      trait: :train_to_teach_event,
+      expected_colour: "green",
+      is_online: true,
+    ),
+  ].each do |event_type|
+    description = event_type.name.present? ? %(is a '#{event_type.name}') : %(isn't specified)
+
+    context %(when the event #{description}) do
+      let(:event) { build(:event_api, event_type.trait, is_online: event_type.is_online) }
+
+      specify %(the event type name should be displayed) do
+        expect(page).to have_content(event_type.name)
+      end
+
+      if event_type.is_online && event_type.trait != :online_event
+        specify %(the event should also be described as an 'Online Event') do
+          expect(page).to have_content("Online Event")
+        end
+      end
+
+      specify %(the box should have the right type of divider) do
+        if event_type.name.present?
+          expect(page).to have_css(%(.event-box__divider.event-box__divider--#{event_type.name&.parameterize}))
+        end
+      end
+
+      if event_type.is_online
+        specify %(the online icon should be #{event_type.expected_colour}) do
+          expect(page).to have_css(%(.icon-online-event--#{event_type.expected_colour}))
+        end
+      end
+
+      specify %(the map pin icon should be #{event_type.expected_colour}) do
+        expect(page).to have_css(%(.icon-pin--#{event_type.expected_colour}))
+      end
+    end
+  end
 end
