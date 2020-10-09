@@ -25,9 +25,6 @@
         padding: 10px 20px;
         font-weight: bold;
         max-width: calc(100% - 80px);
-        &:after {
-            content: ".";
-        }
     }
 
     &__image {
@@ -36,6 +33,11 @@
         background-size: cover;
         background-position: 50%;
         margin-bottom: 10px;
+        position: relative;
+        overflow: auto;
+        .more-stories__thumbs__thumb__play {
+            top: 80px;
+        }
     }
 
     &__content {
