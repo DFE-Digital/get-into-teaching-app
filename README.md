@@ -1,8 +1,5 @@
 #  DFE-Digital Get into Teaching website
 
-
-
-
 ## Prerequisites
 
 - Ruby 2.6.6
