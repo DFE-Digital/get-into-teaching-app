@@ -1,8 +1,5 @@
 class EventsController < ApplicationController
   before_action :load_events, only: %i[index search]
-  before_action :categorise_events, only: %i[index search]
-
-  INDEX_EVENTS_PER_TYPE_CAP = 9
 
   def index
     @page_title = "Find an event near you"
@@ -36,36 +33,7 @@ private
   def load_events
     @event_search = Events::Search.new(event_search_params)
     @events = @event_search.query_events
-  end
-
-  def categorise_events
-    @events_by_group = events_sorted_by_category.each_with_object({}) do |event, hash|
-      type_id = event.type_id
-      group_key = event_group_key(type_id)
-
-      hash[group_key] ||= {}
-      hash[group_key][type_id] ||= []
-
-      next if cap_results? && hash[group_key][type_id].size >= INDEX_EVENTS_PER_TYPE_CAP
-
-      hash[group_key][type_id] << event
-    end
-  end
-
-  def events_sorted_by_category
-    @events.sort_by do |event|
-      [
-        GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.index(event.type_id),
-        event.start_at,
-      ]
-    end
-  end
-
-  def event_group_key(type_id)
-    get_into_teaching_type_ids = GetIntoTeachingApiClient::Constants::GET_INTO_TEACHING_EVENT_TYPES.values
-    return "get_into_teaching" if get_into_teaching_type_ids.include?(type_id)
-
-    type_id
+    @group_presenter = Events::GroupPresenter.new(@events, cap: cap_results?)
   end
 
   def event_search_params

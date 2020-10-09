@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe EventsController do
   include_context "stub types api"
-  let(:events_cap) { EventsController::INDEX_EVENTS_PER_TYPE_CAP }
+  let(:events_cap) { Events::GroupPresenter::INDEX_PAGE_CAP }
 
   describe "#index" do
     let(:first_readable_id) { "123" }
