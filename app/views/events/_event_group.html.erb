@@ -1,26 +1,15 @@
-<% group_key, events_by_category = event_group %>
+<div class="events-featured">
+  <h3><%= pluralised_category_name(type_id) %></h3>
 
-<section class="types-of-event content container-1000">
-  <div class="content__left">
-      <h2>
-        Organised by <%= t("event_groups.#{group_key}") %>
-      </h2>
+  <div class="events-featured__text">
+    <p><%= safe_html_format(t("find_an_event.types.#{type_id}")) %></p>
   </div>
-  <% events_by_category.each do |type_id, events| %>
-    <% category_name = t("event_types.#{type_id}.name.plural") %>
-    <div class="events-featured">
-        <h3><%= category_name %></h3>
-        <div class="events-featured__text">
-          <p><%= safe_html_format(t("find_an_event.types.#{type_id}")) %></p>
-        </div>
-        <% events.in_groups_of(3, false) do |events_on_row| %>
-          <div class="events-featured__items">
-          <%= render partial: "events/event", collection: events_on_row %>
-          </div>
-        <% end %>
-        <%= link_to(event_category_events_path(category_name.parameterize)) do %>
-            <div class="call-to-action-button">See all <%= category_name %> <i class="fas fa-chevron-right"></i></div>
-        <% end %>
-    </div>
+
+  <div class="events-featured__list">
+    <%= render partial: "event", collection: events %>
+  </div>
+
+  <%= link_to(event_category_events_path(pluralised_category_name(type_id).parameterize)) do %>
+    <div class="call-to-action-button">See all <%= pluralised_category_name(type_id) %> <i class="fas fa-chevron-right"></i></div>
   <% end %>
-</section>
+</div>

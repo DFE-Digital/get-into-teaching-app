@@ -162,4 +162,17 @@ describe EventsHelper, type: "helper" do
       expect(embed_event_video_url(embed_url)).to eq(embed_url)
     end
   end
+
+  describe "#pluralised_category_name" do
+    {
+      222_750_001 => "Train to Teach Events",
+      222_750_008 => "Online Events",
+      222_750_009 => "School and University Events",
+      222_750_000 => "Application Workshops",
+    }.each do |type_id, name|
+      specify "#{type_id} => #{name}" do
+        expect(pluralised_category_name(type_id)).to eql(name)
+      end
+    end
+  end
 end

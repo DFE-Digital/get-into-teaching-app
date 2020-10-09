@@ -35,7 +35,7 @@ describe EventsController do
       let(:parsed_response) { Nokogiri.parse(response.body) }
 
       specify "only the first 9 should be rendered" do
-        expect(parsed_response.css(".event-link").count).to eql(events_cap)
+        expect(parsed_response.css(".events-featured__list__item").count).to eql(events_cap)
       end
     end
   end
@@ -99,7 +99,7 @@ describe EventsController do
         end
 
         specify "all events should be rendered" do
-          expect(parsed_response.css(".event-link").count).to eql(events_count)
+          expect(parsed_response.css(".events-featured__list__item").count).to eql(events_count)
         end
       end
 
@@ -115,7 +115,7 @@ describe EventsController do
         end
 
         specify "only the first 9 should be rendered" do
-          expect(parsed_response.css(".event-link").count).to eql(events_cap)
+          expect(parsed_response.css(".events-featured__list__item").count).to eql(events_cap)
         end
       end
     end
