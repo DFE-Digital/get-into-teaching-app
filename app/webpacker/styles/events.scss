@@ -246,19 +246,28 @@
       margin-bottom: 30px;
     }
 
-    &__items {
-        display: flex;
-        margin-left: -10px;
-        margin-right: -10px;
-        margin-bottom: 30px;
-        a {
-            box-sizing: border-box;
-            width: 33.3333%;
-            padding: 0 10px;
-            .event-box {
-                height: 100%;
-            }
+    &__list {
+      padding: 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1em;
+      align-items: stretch;
+      margin-bottom: 1.5em;
+
+      &__item {
+        // if there's no grid support the events
+        // will be shown in a single column, so
+        // add a margin between them.
+        @supports not (display: grid) {
+          div {
+            margin-bottom: 1.5em;
+          }
         }
+
+        list-style: none;
+        display: flex;
+        text-decoration: none;
+      }
     }
 }
 
@@ -349,12 +358,8 @@
     }
 
     .events-featured {
-        &__items {
-            flex-wrap: wrap;
-            a {
-                width: 100%;
-            margin-bottom: 20px;
-            }
+        &__list {
+            grid-template-columns: none;
         }
 
         &__text {
