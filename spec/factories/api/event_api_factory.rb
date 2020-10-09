@@ -6,7 +6,7 @@ FactoryBot.define do
     web_feed_id { "123" }
     status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"] }
     sequence(:name) { |i| "Become a Teacher #{i}" }
-    sequence(:description) { |i| "<b>Become a Teacher #{i} event description</b>" }
+    sequence(:description) { |i| "Become a Teacher #{i} event description" }
     sequence(:summary) { |i| "Become a Teacher #{i} event summary" }
     message { "An important message" }
     video_url { "https://video.com" }
