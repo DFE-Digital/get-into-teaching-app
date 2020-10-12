@@ -15,6 +15,7 @@ footer.site-footer {
         a {
             text-decoration: none;
         }
+
         &__social {
             display: flex;
             &__link {
@@ -150,14 +151,14 @@ footer.site-footer {
 }
 
 @media only screen and (max-width: 1155px) {
-    footer .site-footer-top__links-container {
+    footer.site-footer .site-footer-top__links-container {
         max-width: none;
     }
 }
 
 @media only screen and (max-width: 800px) {
 
-    footer {
+    footer.site-footer {
 
         .site-footer-top {
             padding-left: 20px;
