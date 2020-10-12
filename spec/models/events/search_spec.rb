@@ -74,19 +74,32 @@ describe Events::Search do
     subject { build :events_search }
     before { allow(subject).to receive(:valid?).and_return is_valid }
 
+    let(:expected_attributes) do
+      {
+        type_id: subject.type,
+        radius: subject.distance,
+        postcode: subject.postcode,
+        start_after: Date.new(2020, 7, 1),
+        start_before: Date.new(2020, 7, 31),
+      }
+    end
+
     context "when valid" do
       let(:is_valid) { true }
+      after { subject.query_events }
 
       it "calls the API" do
         expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-          receive(:search_teaching_events).with(
-            type_id: subject.type,
-            radius: subject.distance,
-            postcode: subject.postcode,
-            start_after: Date.new(2020, 7, 1),
-            start_before: Date.new(2020, 7, 31),
-          )
-        subject.query_events
+          receive(:search_teaching_events).with(**expected_attributes)
+      end
+
+      context "when there's whitespace around a provided postcode" do
+        subject { build(:events_search, postcode: " TE57 1NG  ") }
+
+        it "the whitespace is stripped before querying the API" do
+          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+            receive(:search_teaching_events).with(**expected_attributes.merge(postcode: subject.postcode.strip))
+        end
       end
     end
 
