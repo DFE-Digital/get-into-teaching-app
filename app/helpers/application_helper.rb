@@ -55,9 +55,12 @@ module ApplicationHelper
     end
   end
 
-  def fa_icon(icon_name, *additional_classes)
-    classes = ["fas", "fa-#{icon_name}"] + additional_classes
-    content_tag :i, "", class: classes.join(" ")
+  # FA supports several styles:
+  # fas = solid, fab = brand, far = regular, fal = light, fad = duotone
+  # https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
+  def fa_icon(icon_name, *additional_classes, style: "fas")
+    classes = [style, "fa-#{icon_name}"] + additional_classes
+    tag.span("", class: classes)
   end
   alias_method :fas, :fa_icon
 

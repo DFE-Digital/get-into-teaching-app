@@ -3,26 +3,26 @@
   <div class="site-footer-top">
     <div class="site-footer-top__social">
       <a href="https://www.facebook.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-facebook-f"></i>
+        <%= fa_icon("facebook-f", "icon", style: "fab") %>
         <span class="visually-hidden">Facebook - opens in a new tab</span>
       </a>
       <a href="https://www.instagram.com/get_into_teaching/" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-instagram"></i>
+        <%= fa_icon("instagram", "icon", style: "fab") %>
         <span class="visually-hidden">Instagram - opens in a new tab</span>
       </a>
       <a href="https://www.linkedin.com/company/9258520?trk=tyah&trkInfo=idx%3A1-1-1%2CtarId%3A1424345327269%2Ctas%3Aget+into+teaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-linkedin-in"></i>
+        <%= fa_icon("linkedin-in", "icon", style: "fab") %>
         <span class="visually-hidden">LinkedIn - opens in a new tab</span>
       </a>
       <a href="https://twitter.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-twitter"></i>
+        <%= fa_icon("twitter", "icon", style: "fab") %>
         <span class="visually-hidden">Twitter - opens in a new tab</span>
       </a>
       <a href="http://www.youtube.com/user/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
-        <i class="fab fa-youtube"></i>
+        <%= fa_icon("youtube", "icon", style: "fab") %>
         <span class="visually-hidden">Youtube - opens in a new tab</span>
       </a>
-    </div>     
+    </div>
     <div class="site-footer-top__links-container">
       <%= link_to("Home", page_path(page: :home)) %>
       <% navigation_resources(@sitemap).each_with_index do |resource, index| %>
