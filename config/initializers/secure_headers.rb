@@ -20,7 +20,7 @@ SecureHeaders::Configuration.default do |config|
     font_src: %w['self' *.gov.uk fonts.gstatic.com],
     form_action: %w['self' tr.snapchat.com www.facebook.com www.gov.uk dev.visualwebsiteoptimizer.com],
     frame_ancestors: %w['self'],
-    frame_src: %w['self' embed.scribblelive.com tr.snapchat.com www.facebook.com www.youtube.com *.hotjar.com *.doubleclick.net],
+    frame_src: %w['self' embed.scribblelive.com tr.snapchat.com www.facebook.com www.youtube.com *.hotjar.com *.doubleclick.net dev.visualwebsiteoptimizer.com],
     img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com ad.doubleclick.net i.ytimg.com adservice.google.com] + google_analytics,
     manifest_src: %w['self'],
     media_src: %w['self'],
