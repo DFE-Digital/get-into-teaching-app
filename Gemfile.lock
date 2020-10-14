@@ -79,7 +79,7 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    amazing_print (1.2.1)
+    amazing_print (1.2.2)
     ast (2.4.0)
     bindex (0.8.1)
     bootsnap (1.4.6)
