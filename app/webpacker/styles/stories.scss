@@ -52,6 +52,50 @@
     overflow: auto;
 }
 
+.story {
+    h1 {
+        font-size: 40px;
+    }
+
+    .backlink.backlink--top {
+        margin-bottom: 0;
+    }
+
+    .story__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &__thumb {
+            background-color: grey;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-width: 200px;
+            height: 200px;
+        }
+
+        &__label {
+
+            h2 {
+                font-size: 32px;
+                border-bottom: none;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    > p:first-of-type {
+        font-weight: bold;
+    }
+
+    &__video {
+        margin-bottom: 1.5em;
+    }
+
+
+}
+
 .stories {
 
     h1 {
