@@ -89,6 +89,42 @@
         font-weight: bold;
     }
 
+    blockquote {
+        margin: 0 25px 0 0;
+        background-color: $yellow;
+        float: left;
+        max-width: 340px;
+        position: relative;
+
+        p {
+            padding: 15px 44px;
+            font-weight: bold;
+            font-size: 115%;
+
+            @mixin quote-icon {
+              @include icon;
+              background-image: url('../images/white-quote.svg');
+              width: 24px;
+              height: 24px;
+              fill: $white;
+              content: "";
+            }
+
+            &::before {
+              @include quote-icon;
+              position: absolute;
+              left: 10px;
+            }
+
+            &::after {
+              @include quote-icon;
+              position: absolute;
+              transform: rotate(180deg);
+              margin-left: 10px;
+            }
+        }
+    }
+
     &__video {
         margin-bottom: 1.5em;
         width: 100%;
