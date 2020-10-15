@@ -29,7 +29,7 @@
             </div>
           </div>
 
-          <% if @front_matter.dig("more_stories").any? %>
+          <% if @front_matter.dig("more_stories").present? %>
             <h2 class="more-stories_header strapline">More stories</h2>
 
             <div class="more-stories">
