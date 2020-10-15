@@ -59,7 +59,7 @@ module Events
       GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
         type_id: type,
         radius: distance,
-        postcode: postcode,
+        postcode: postcode&.strip,
         start_after: start_of_month,
         start_before: end_of_month,
       )
