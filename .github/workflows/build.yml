@@ -189,9 +189,18 @@ jobs:
           cd content
           git show HEAD
 
-      - name: Push the commit
-        env:
-          API_TOKEN_GITHUB: ${{ secrets.BUILD_CONTENT_TOKEN }}
+      # - name: Push the commit
+      #   env:
+      #     API_TOKEN_GITHUB: ${{ secrets.BUILD_CONTENT_TOKEN }}
+      #   run: |-
+      #     cd content
+      #     git push origin master
+
+      - name: Trigger build in Content repo
         run: |-
-          cd content
-          git push origin master
+          curl -X POST \
+            -H "Authorization: token ${{ secrets.BUILD_CONTENT_TOKEN }}" \
+            -H "Accept: application/vnd.github.v3+json" \
+            -H "Content-Type: application/json" \
+            https://api.github.com/repos/${{ env.CONTENT_REPOSITORY }}/dispatches \
+            --data '{"event_type": "Build triggered from App repo", "client_payload": { "parent_sha": "'"5fe203c5c4e7898d2c3e6e0c30d4361f419b720b"'"  }}'
