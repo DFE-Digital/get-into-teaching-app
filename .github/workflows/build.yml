@@ -148,10 +148,14 @@ jobs:
     # if: github.ref == 'refs/heads/master'
     # needs: build
     steps:
+      - name: Set short sha
+        id: sha
+        run: echo ::set-output name=short::$(echo "${{ github.sha }}" | cut -c -7)
+
       - name: Set docker-image variable
         id: docker-image
         run: |-
-          echo ::set-output name=image::${{ env.APP_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
+          echo ::set-output name=image::${{ env.APP_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
 
       - name: Print discovered docker-image variable
         run: |-
@@ -165,5 +169,7 @@ jobs:
 
       - name: Update Dockerfile
         run: |-
-           cd content &&
-            cat Dockerfile.experiment | sed "s~FROM .*~FROM ${{ steps.docker-image.outputs.image }}~"
+          sed -i "s~FROM .*~FROM ${{ steps.docker-image.outputs.image }}~" content/Dockerfile.experiment
+
+      - name: Print updated Dockerfile
+        run: cat content/Dockerfile.experiment 
