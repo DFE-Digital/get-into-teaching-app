@@ -162,3 +162,8 @@ jobs:
 
       - name: List content repo
         run: cd content && ls
+
+      - name: Update Dockerfile
+        run: |-
+           cd content &&
+            cat Dockerfile.experiment | sed "s/FROM .*/FROM ${{ steps.docker-image.outputs.image }}/"
