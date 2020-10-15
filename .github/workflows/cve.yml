@@ -30,7 +30,7 @@ jobs:
            SLACK_CHANNEL: getintoteaching_tech
            SLACK_COLOR: '#3278BD'
            SLACK_ICON: https://github.com/rtCamp.png?size=48
-           SLACK_MESSAGE: 'CVE Scan failure with get-into-teaching-app"
+           SLACK_MESSAGE: 'CVE Scan failure with get-into-teaching-app'
            SLACK_TITLE: 'Failure: ${{ github.workflow }}'
            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
