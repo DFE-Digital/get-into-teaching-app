@@ -158,4 +158,7 @@ jobs:
           echo "DOCKER IMAGE: '${{ steps.docker-image.outputs.image }}'"
 
       - name: Clone content repo
-        run: echo "Content repo - '${{ env.CONTENT_REPOSITORY }}'"
+        run: git clone --depth=1 https://github.com/${{ env.CONTENT_REPOSITORY }}.git content
+
+      - name: List content repo
+        run: cd content && ls
