@@ -180,7 +180,9 @@ jobs:
           git config user.name "GitHub Workflow - get-into-teaching-app"
           git config user.email "get-into-teaching-tech@digital.education.gov.uk"
           git add Dockerfile.experiment
-          git commit -m "Updated base image to ${{ steps.sha.outputs.short}}\\n\\n${{ steps.docker-image.outputs.image }}"
+          git commit -m "Updated base image to ${{ steps.sha.outputs.short}}
+
+          ${{ steps.docker-image.outputs.image }}"
 
       - name: Show last commit
         run: |-
