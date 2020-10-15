@@ -42,7 +42,10 @@
                     <% end %>
                     <div class="more-stories__thumbs__thumb__content">
                       <p>School experience helped me decide to switch</p>
-                      <a class="git-link" href="/life-as-a-teacher/my-story-into-teaching/career-changers/school-experience-helped-me-decide-to-switch">Read Zainab's story  <i class="fas fa-chevron-right"></i></a>
+
+                      <%= link_to(story["link"], class: "git-link") do %>
+                        <%= story["name"] %> <%= fas_icon("chevron-right") %>
+                      <% end %>
                     </div>
                   </div>
 
