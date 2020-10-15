@@ -22,7 +22,14 @@ jobs:
         with:
              image:  localbuild/testimage:latest
              fail-build: true
-
+             severity-cutoff: high
+             acs-report-enable: true
+           
+      - name: upload Anchore scan SARIF report
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: results.sarif
+        
       - name: Slack Notification
         if: failure()
         uses: rtCamp/action-slack-notify@master
