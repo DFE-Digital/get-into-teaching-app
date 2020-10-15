@@ -11,6 +11,7 @@ jobs:
   build:
     name: Build and Deploy 
     runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
@@ -141,3 +142,21 @@ jobs:
            SLACK_TITLE: 'Failure: ${{ github.workflow }}'
            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
+  update_content_repo:
+    name: Update the base image used in the Content repo
+    runs-on: ubuntu-latest
+    # if: github.ref == 'refs/heads/master'
+    needs: build
+    steps:
+      - name: Set App Repo SHA
+        id: sha
+        run: echo ::set-output name=short::$(echo "${{ github.sha }}" | cut -c -7)
+
+      - name: Set docker-image variable
+        id: docker-image
+        run: |-
+          echo ::set-output name=image::${{ env.APP_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
+
+      - name: Print discovered docker-image variable
+        run: |-
+          echo "DOCKER IMAGE: '${{ steps.docker-image.outputs.image }}'"
