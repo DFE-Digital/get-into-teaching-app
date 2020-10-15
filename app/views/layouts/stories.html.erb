@@ -41,7 +41,7 @@
                       <%= more_stories_thumbnail(story["image"]) %>
                     <% end %>
                     <div class="more-stories__thumbs__thumb__content">
-                      <p>School experience helped me decide to switch</p>
+                      <%= tag.p(story["snippet"]) %>
 
                       <%= link_to(story["link"], class: "git-link") do %>
                         Read <%= story["name"] %>’s story <%= fas_icon("chevron-right") %>
