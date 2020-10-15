@@ -172,4 +172,15 @@ jobs:
           sed -i "s~FROM .*~FROM ${{ steps.docker-image.outputs.image }}~" content/Dockerfile.experiment
 
       - name: Print updated Dockerfile
-        run: cat content/Dockerfile.experiment 
+        run: cat content/Dockerfile.experiment
+
+      - name: Commit changes to Dockerfile
+        run: |-
+          cd content
+          git add Dockerfile.experiment
+          git commit -m "Updated base image to ${{ steps.sha.outputs.short}}\n\n${{ steps.docker-image.outputs.image }}"
+
+      - name: Show last commit
+        run: |-
+          cd content
+          git show HEAD
