@@ -62,7 +62,14 @@ module ApplicationHelper
     classes = [style, "fa-#{icon_name}"] + additional_classes
     tag.span("", class: classes)
   end
-  alias_method :fas, :fa_icon
+
+  def fas_icon(*args)
+    fa_icon(*args, style: "fas")
+  end
+
+  def fab_icon(*args)
+    fa_icon(*args, style: "fab")
+  end
 
   def govuk_form_for(*args, **options, &block)
     merged = options.dup

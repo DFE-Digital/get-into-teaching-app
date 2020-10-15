@@ -150,4 +150,24 @@ describe ApplicationHelper do
       end
     end
   end
+
+  describe "#fab_icon" do
+    let(:icon_name) { "friendster" }
+    subject { helper.fab_icon(icon_name) }
+    after { subject }
+
+    it %(it returns a span with class 'fab') do
+      expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fab")
+    end
+  end
+
+  describe "#fas_icon" do
+    let(:icon_name) { "orkut" }
+    subject { helper.fas_icon(icon_name) }
+    after { subject }
+
+    it %(it returns a span with class 'fas') do
+      expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fas")
+    end
+  end
 end
