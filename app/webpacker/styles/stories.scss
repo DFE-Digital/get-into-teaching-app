@@ -123,6 +123,14 @@
               margin-left: 10px;
             }
         }
+
+        @media only screen and (max-width: 500px) {
+          display: block;
+          width: 100%;
+          min-width: 100%;
+          float: none;
+          margin: 2em 0;
+        }
     }
 
     &__video {
