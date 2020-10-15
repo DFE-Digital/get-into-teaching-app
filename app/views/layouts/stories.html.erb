@@ -14,7 +14,7 @@
                 <%= tag.h1(@front_matter["title"]) %>
 
                 <header class="story__header">
-                  <%= image_tag(@front_matter["image"], width: 200, height: 200) %>
+                  <%= image_tag(@front_matter["image"], width: 200, height: 200, alt: story_image_alt(@front_matter.dig("story", "teacher"))) %>
                   <div class="story__header__label">
                     <%= story_heading(@front_matter) %>
                   </div>

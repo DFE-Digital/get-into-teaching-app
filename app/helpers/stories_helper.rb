@@ -12,6 +12,10 @@ module StoriesHelper
     end
   end
 
+  def story_image_alt(name)
+    "A photograph of #{name}"
+  end
+
   def youtube(url)
     tag.iframe(
       "",
