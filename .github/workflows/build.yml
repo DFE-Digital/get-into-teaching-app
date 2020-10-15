@@ -162,8 +162,6 @@ jobs:
           echo "DOCKER IMAGE: '${{ steps.docker-image.outputs.image }}'"
 
       - name: Clone content repo
-        env:
-          GITHUB_API_TOKEN: ${{ secrets.BUILD_CONTENT_TOKEN }}
         run: git clone --depth=1 https://github.com/${{ env.CONTENT_REPOSITORY }}.git content
 
       - name: List content repo
@@ -193,7 +191,7 @@ jobs:
 
       - name: Push the commit
         env:
-          GITHUB_API_TOKEN: ${{ secrets.BUILD_CONTENT_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.BUILD_CONTENT_TOKEN }}
         run: |-
           cd content
           git push origin master
