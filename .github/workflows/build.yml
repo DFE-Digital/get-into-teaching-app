@@ -177,7 +177,7 @@ jobs:
       - name: Commit changes to Dockerfile
         run: |-
           cd content
-          git config user.name "Get into Teaching Bot"
+          git config user.name "GiT Workflow Bot"
           git config user.email "<>"
           git add Dockerfile.experiment
           git commit -m "Updated base image to ${{ steps.sha.outputs.short}}
@@ -190,6 +190,8 @@ jobs:
           git show HEAD
 
       - name: Push the commit
+        env:
+          GITHUB_API_TOKEN: ${{ secrets.BUILD_CONTENT_TOKEN }}
         run: |-
           cd content
           git push origin master
