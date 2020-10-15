@@ -166,4 +166,4 @@ jobs:
       - name: Update Dockerfile
         run: |-
            cd content &&
-            cat Dockerfile.experiment | echo "s/FROM .*/FROM ${{ steps.docker-image.outputs.image }}/"
+            cat Dockerfile.experiment | echo "s~FROM .*~FROM ${{ steps.docker-image.outputs.image }}~"
