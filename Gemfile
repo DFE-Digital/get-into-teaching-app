@@ -72,7 +72,7 @@ group :development, :test do
   gem "capybara", "~> 3.33"
   gem "factory_bot_rails"
   gem "rspec-sonarqube-formatter", "~> 1.3", require: false
-  gem "simplecov", "<= 0.17"
+  gem "simplecov", "<= 0.20"
 end
 
 group :development do
