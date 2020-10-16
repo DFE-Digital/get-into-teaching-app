@@ -17,11 +17,18 @@ jobs:
         run: docker build . --file Dockerfile --tag localbuild/testimage:latest
 
       - name: Scan image
-        uses: anchore/scan-action@v1
+        uses: anchore/scan-action@v2
         with:
-             dockerfile-path: "Dockerfile"
-             image-reference:  localbuild/testimage:latest
+             image:  localbuild/testimage:latest
              fail-build: true
+             severity-cutoff: high
+             acs-report-enable: true
+
+      - name: upload Anchore scan SARIF report
+        if: always()
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: results.sarif
 
       - name: Slack Notification
         if: failure()
@@ -30,8 +37,8 @@ jobs:
            SLACK_CHANNEL: getintoteaching_tech
            SLACK_COLOR: '#3278BD'
            SLACK_ICON: https://github.com/rtCamp.png?size=48
-           SLACK_MESSAGE: ':disappointed_relieved: Pipeline Failure :disappointed_relieved:'
-           SLACK_TITLE: 'Failure: ${{ github.workflow }}'
+           SLACK_MESSAGE: 'The Application CVE Workflow has failed'
+           SLACK_TITLE: 'Application CVE Workflow failure'
            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
 
