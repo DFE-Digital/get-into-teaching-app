@@ -16,6 +16,15 @@ describe StoriesHelper, type: "helper" do
     end
   end
 
+  describe "#story_image_alt" do
+    let(:name) { "David" }
+    subject { helper.story_image_alt(name) }
+
+    specify %(returns string 'A photograph of' followed by the supplied name) do
+      is_expected.to match("A photograph of #{name}")
+    end
+  end
+
   describe "#youtube" do
     let(:url) { "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
     subject { helper.youtube(url) }
