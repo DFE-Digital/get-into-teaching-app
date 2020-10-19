@@ -5,17 +5,24 @@ import isTouchDevice from 'is-touch-device';
 
 export default class extends Controller {
   static targets = ['dialog'];
-  topExitSensitivity = 20;
+  topExitSensitivity = 0;
   topScrollEndSensitivity = 300;
   topScrollMinimumDistance = 700;
+  delayInMilliseconds = 20000;
   cookieCategory = 'functional' ;
 
   connect() {
-    if (isTouchDevice()) {
-      this.setupTouchDevice();
-    } else {
-      this.setupDesktop();
-    }
+    this.delayTimeout = setTimeout(() => {
+      if (isTouchDevice()) {
+        this.setupTouchDevice();
+      } else {
+        this.setupDesktop();
+      }
+    }, this.delayInMilliseconds);
+  }
+
+  disconnect() {
+    clearTimeout(this.delayTimeout);
   }
   
   setupDesktop() {
@@ -96,7 +103,8 @@ export default class extends Controller {
   };
 
   get cookiesAccepted() {
-    return (new CookiePreferences).allowed(this.cookieCategory) ;
+    const cookiePreferences = new CookiePreferences();
+    return cookiePreferences.cookieSet && cookiePreferences.allowed(this.cookieCategory);
   }
 
   get disabled() {
