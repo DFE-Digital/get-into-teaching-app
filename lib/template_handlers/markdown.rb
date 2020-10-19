@@ -1,3 +1,5 @@
+require "abbreviations"
+
 module TemplateHandlers
   class Markdown
     attr_reader :template, :source, :options
@@ -30,8 +32,12 @@ module TemplateHandlers
       Rinku.auto_link content
     end
 
+    def add_abbreviations(content)
+      Abbreviations.new(content, front_matter["abbreviations"]).render
+    end
+
     def render
-      autolink_html render_markdown
+      add_abbreviations autolink_html render_markdown
     end
 
     def markdown

@@ -89,4 +89,33 @@ describe TemplateHandlers::Markdown, type: :view do
       expect(frontmatter).to include "front" => true
     end
   end
+
+  context "with abbreviations" do
+    let :markdown do
+      <<~MARKDOWN
+        ---
+        title: My page
+        abbreviations:
+          VAT: Value added tax
+        ---
+
+        All prices include VAT unless marked as exVAT
+
+        Find out more about <a href="#vat" title="VAT">VAT</a>
+      MARKDOWN
+    end
+
+    before do
+      stub_template "frontmatter.md" => markdown
+      render template: "frontmatter.md"
+    end
+
+    it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
+    it { is_expected.to match "exVAT" } # check it honours word boundaries
+
+    it do
+      is_expected.to have_css \
+        "a[title=\"VAT\"] abbr[title=\"Value added tax\"]", text: "VAT"
+    end
+  end
 end
