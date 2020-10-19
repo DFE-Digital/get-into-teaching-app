@@ -123,4 +123,51 @@ describe ApplicationHelper do
       expect(helper.internal_referer).to be(referer)
     end
   end
+
+  describe "#fa_icon" do
+    let(:icon_name) { "myspace" }
+    subject { helper.fa_icon(icon_name) }
+
+    it "returns an empty span with the default classes" do
+      expect(subject).to have_css("span.fas.fa-#{icon_name}")
+    end
+
+    context "FA styles" do
+      let(:style) { "fad" }
+      subject { helper.fa_icon(icon_name, style: style) }
+
+      it "returns an empty span with provided style class" do
+        expect(subject).to have_css("span.#{style}.fa-#{icon_name}")
+      end
+    end
+
+    context "extra clases" do
+      let(:extra_classes) { %w[abc def] }
+      subject { helper.fa_icon(icon_name, *extra_classes) }
+
+      it "returns an empty span with the extra classes" do
+        expect(subject).to have_css(%(span.fa-#{icon_name}.#{extra_classes.join('.')}))
+      end
+    end
+  end
+
+  describe "#fab_icon" do
+    let(:icon_name) { "friendster" }
+    subject { helper.fab_icon(icon_name) }
+    after { subject }
+
+    it %(it returns a span with class 'fab') do
+      expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fab")
+    end
+  end
+
+  describe "#fas_icon" do
+    let(:icon_name) { "orkut" }
+    subject { helper.fas_icon(icon_name) }
+    after { subject }
+
+    it %(it returns a span with class 'fas') do
+      expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fas")
+    end
+  end
 end

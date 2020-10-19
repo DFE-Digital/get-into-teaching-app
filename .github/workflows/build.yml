@@ -20,7 +20,7 @@ jobs:
         with:
              dockerfile: "Dockerfile"
       - name: Setup sonarqube
-        uses: warchant/setup-sonar-scanner@v1 
+        uses: warchant/setup-sonar-scanner@v3 
 
       - name: Get Short SHA
         id: sha
@@ -108,36 +108,70 @@ jobs:
            SLACK_TITLE: 'Failure: ${{ github.workflow }}'
            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
-  trigger_content_build:
-    name: Trigger build of Content repo
+  update_content_repo:
+    name: Update the base image used in the Content repo
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     needs: build
     steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2
-
-      - name: Get Short SHA
+      - name: Set short sha
         id: sha
-        run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
+        run: echo ::set-output name=short::$(echo "${{ github.sha }}" | cut -c -7)
 
-      - name: Trigger build in Content repo
+      - name: Set docker-image variable
+        id: docker-image
         run: |-
-          curl -X POST \
-            -H "Authorization: token ${{ secrets.BUILD_CONTENT_TOKEN }}" \
-            -H "Accept: application/vnd.github.v3+json" \
-            -H "Content-Type: application/json" \
-            https://api.github.com/repos/${{ env.CONTENT_REPOSITORY }}/dispatches \
-            --data '{"event_type": "Build triggered from App repo", "client_payload": { "parent_sha": "'"${{ steps.sha.outputs.short}}"'"  }}'
+          echo ::set-output name=image::${{ env.APP_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
+
+      - name: Print discovered docker-image variable
+        run: |-
+          echo "DOCKER IMAGE: '${{ steps.docker-image.outputs.image }}'"
+
+      - name: Check out the Content
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.BUILD_CONTENT_TOKEN }}
+          repository: ${{ env.CONTENT_REPOSITORY }}
+          path: content
+
+      - name: List content repo
+        run: cd content && ls
+
+      - name: Update Dockerfile
+        run: |-
+          sed -i "s~FROM .*~FROM ${{ steps.docker-image.outputs.image }}~" content/Dockerfile
+
+      - name: Print updated Dockerfile
+        run: cat content/Dockerfile
+
+      - name: Commit changes to Dockerfile
+        run: |-
+          cd content
+          git config user.name "GiT Workflow Bot"
+          git config user.email "<>"
+          git add Dockerfile
+          git commit -m "Updated base image to ${{ steps.sha.outputs.short}}
+
+          ${{ steps.docker-image.outputs.image }}"
+
+      - name: Show last commit
+        run: |-
+          cd content
+          git show HEAD
+
+      - name: Push the commit
+        run: |-
+          cd content
+          git push origin master
 
       - name: Slack Notification
         if: failure()
         uses: rtCamp/action-slack-notify@master
         env:
-           SLACK_CHANNEL: getintoteaching_tech
-           SLACK_COLOR: '#3278BD'
-           SLACK_ICON: https://github.com/rtCamp.png?size=48
-           SLACK_MESSAGE: ':disappointed_relieved: Pipeline Failure :disappointed_relieved:'
-           SLACK_TITLE: 'Failure: ${{ github.workflow }}'
-           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: getintoteaching_tech
+          SLACK_COLOR: '#3278BD'
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: ':disappointed_relieved: Pipeline Failure :disappointed_relieved:'
+          SLACK_TITLE: 'Failure: ${{ github.workflow }}'
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 

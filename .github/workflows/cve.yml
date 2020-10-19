@@ -1,9 +1,5 @@
 name: Run CVE scanner 
 on:
-  pull_request:
-    types: [assigned, opened, synchronize, reopened]
-  push:
-    branches: [ master ]
   workflow_dispatch:
 
 jobs:
@@ -24,13 +20,13 @@ jobs:
              fail-build: true
              severity-cutoff: high
              acs-report-enable: true
-           
+
       - name: upload Anchore scan SARIF report
         if: always()
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: results.sarif
-        
+
       - name: Slack Notification
         if: failure()
         uses: rtCamp/action-slack-notify@master
@@ -38,8 +34,8 @@ jobs:
            SLACK_CHANNEL: getintoteaching_tech
            SLACK_COLOR: '#3278BD'
            SLACK_ICON: https://github.com/rtCamp.png?size=48
-           SLACK_MESSAGE: 'CVE Scan failure with get-into-teaching-app'
-           SLACK_TITLE: 'Failure: ${{ github.workflow }}'
+           SLACK_MESSAGE: 'The Application CVE Workflow has failed'
+           SLACK_TITLE: 'Application CVE Workflow failure'
            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
 
