@@ -8,14 +8,21 @@ export default class extends Controller {
   topExitSensitivity = 0;
   topScrollEndSensitivity = 300;
   topScrollMinimumDistance = 700;
+  delayInMilliseconds = 20000;
   cookieCategory = 'functional' ;
 
   connect() {
-    if (isTouchDevice()) {
-      this.setupTouchDevice();
-    } else {
-      this.setupDesktop();
-    }
+    this.delayTimeout = setTimeout(() => {
+      if (isTouchDevice()) {
+        this.setupTouchDevice();
+      } else {
+        this.setupDesktop();
+      }
+    }, this.delayInMilliseconds);
+  }
+
+  disconnect() {
+    clearTimeout(this.delayTimeout);
   }
   
   setupDesktop() {
