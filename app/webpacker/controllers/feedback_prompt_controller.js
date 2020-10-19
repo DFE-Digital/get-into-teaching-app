@@ -96,7 +96,8 @@ export default class extends Controller {
   };
 
   get cookiesAccepted() {
-    return (new CookiePreferences).allowed(this.cookieCategory) ;
+    const cookiePreferences = new CookiePreferences();
+    return cookiePreferences.cookieSet && cookiePreferences.allowed(this.cookieCategory);
   }
 
   get disabled() {
