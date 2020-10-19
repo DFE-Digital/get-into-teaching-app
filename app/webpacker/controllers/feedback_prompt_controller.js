@@ -5,7 +5,7 @@ import isTouchDevice from 'is-touch-device';
 
 export default class extends Controller {
   static targets = ['dialog'];
-  topExitSensitivity = 20;
+  topExitSensitivity = 0;
   topScrollEndSensitivity = 300;
   topScrollMinimumDistance = 700;
   cookieCategory = 'functional' ;

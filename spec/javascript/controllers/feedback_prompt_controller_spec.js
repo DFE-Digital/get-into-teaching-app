@@ -72,9 +72,9 @@ describe('FeedbackPromptController', () => {
       });
   
       it("prompts according to the sensitivity value", () => {
-        mouseLeave(21);
+        mouseLeave(1);
         expect(dialog.style.display).toContain("none");
-        mouseLeave(19);
+        mouseLeave(0);
         expect(dialog.style.display).toContain("flex");
       });
     });
