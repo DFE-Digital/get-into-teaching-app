@@ -25,6 +25,10 @@
                 <% end %>
 
                 <%= yield %>
+
+                <% if @front_matter["more_information"] %>
+                  <%= link_to(@front_matter.dig("more_information", "text"), @front_matter.dig("more_information", "link"), class: "git-link") %> <%= fas_icon "chevron-right" %>
+                <% end %>
               </article>
             </div>
           </div>
