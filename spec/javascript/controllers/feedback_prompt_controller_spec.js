@@ -7,6 +7,8 @@ describe('FeedbackPromptController', () => {
   var application;
 
   beforeEach(() => {
+    jest.useFakeTimers();
+
     Cookies.remove(CookiePreferences.cookieName) ;
     Cookies.remove('GiTBetaFeedbackPrompt') ;
 
@@ -85,37 +87,28 @@ describe('FeedbackPromptController', () => {
         attachController();
       });
 
-      it("prompts on long scroll to top", (done) => {
+      it("prompts on long scroll to top", () => {
         longScrollToTop();
-
-        setTimeout(() => {
-          expect(dialog.style.display).toContain("flex");
-          done();
-        }, 100); // Wait for timeout indicating scroll end.
+        jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
+        expect(dialog.style.display).toContain("flex");
       });
 
-      it("prompts according to the distance sensitivity value", (done) => {
+      it("prompts according to the distance sensitivity value", () => {
         longScrollToTop(699);
-        setTimeout(() => {
-          expect(dialog.style.display).toContain("none");
-          longScrollToTop(701);
-          setTimeout(() => {
-            expect(dialog.style.display).toContain("flex");
-            done();
-          }, 100); // Wait for timeout indicating scroll end.
-        }, 100); // Wait for timeout indicating scroll end.
+        jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
+        expect(dialog.style.display).toContain("none");
+        longScrollToTop(701);
+        jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
+        expect(dialog.style.display).toContain("flex");
       });
 
-      it("prompts according to the end sensitivity value", (done) => {
+      it("prompts according to the end sensitivity value", () => {
         longScrollToTop(700, 301);
-        setTimeout(() => {
-          expect(dialog.style.display).toContain("none");
-          longScrollToTop(700, 299);
-          setTimeout(() => {
-            expect(dialog.style.display).toContain("flex");
-            done();
-          }, 100); // Wait for timeout indicating scroll end.
-        }, 100); // Wait for timeout indicating scroll end.
+        jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
+        expect(dialog.style.display).toContain("none");
+        longScrollToTop(700, 299);
+        jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
+        expect(dialog.style.display).toContain("flex");
       });
     });
 
