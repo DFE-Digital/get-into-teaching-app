@@ -96,6 +96,8 @@
         max-width: 340px;
         position: relative;
 
+        $quote-size: 17px;
+
         p {
             padding: 15px 44px;
             font-weight: bold;
@@ -104,8 +106,8 @@
             @mixin quote-icon {
               @include icon;
               background-image: url('../images/white-quote.svg');
-              width: 24px;
-              height: 24px;
+              width: $quote-size;
+              height: $quote-size;
               fill: $white;
               content: "";
             }
@@ -113,14 +115,14 @@
             &::before {
               @include quote-icon;
               position: absolute;
-              left: 10px;
+              left: 19px;
             }
 
             &::after {
               @include quote-icon;
-              position: absolute;
+              position: inline;
               transform: rotate(180deg);
-              margin-left: 10px;
+              margin-left: 7px;
             }
         }
 
