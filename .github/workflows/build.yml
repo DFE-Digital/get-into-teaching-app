@@ -64,7 +64,7 @@ jobs:
 
       - name: Run Specs
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${steps.docker.outputs.DOCKER_IMAGE}} \
+          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}} \
             rspec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
 
       - name: Fixup report file paths
