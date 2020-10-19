@@ -46,7 +46,6 @@ jobs:
           password: ${{ secrets.DOCKERHUB_PERSONAL_ACCESS_TOKEN }}
 
       - name: Build and push to Docker Hub
-        if: github.ref == 'refs/heads/master'
         uses: docker/build-push-action@v2
         with:
           builder: ${{ steps.buildx.outputs.name }}
@@ -58,26 +57,14 @@ jobs:
           build-args: |
                       CONTENT_SHA=${{ steps.sha.outputs.short }}
 
-      - name: Build Only
-        if: github.ref != 'refs/heads/master'
-        uses: docker/build-push-action@v2
-        with:
-          builder: ${{ steps.buildx.outputs.name }}
-          cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache
-          tags: |
-                 ${{env.APP_REPOSITORY}}:sha-${{ steps.sha.outputs.short }}
-          push: false
-          build-args: |
-                      CONTENT_SHA=${{ steps.sha.outputs.short }}
-
       - name: Set DOCKER_IMAGE environment variable
+        id:   docker
         run: |-
-          echo ::set-env name=DOCKER_IMAGE::${{ env.APP_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
+          echo ::set-output name=DOCKER_IMAGE::${{ env.APP_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
 
       - name: Run Specs
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test $DOCKER_IMAGE \
+          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{steps.docker.outputs.name}} \
             rspec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
 
       - name: Fixup report file paths
@@ -97,12 +84,12 @@ jobs:
 
       - name: Lint Ruby
         run: |-
-          docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE \
+          docker run -t --rm -e RAILS_ENV=test ${{steps.docker.outputs.name}} \
             rubocop app config db lib spec Gemfile --format clang
 
       - name: Run Brakeman static security scanner
         run: |-
-          docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE brakeman --no-pager
+          docker run -t --rm -e RAILS_ENV=test ${{steps.docker.outputs.name}}  brakeman --no-pager
 
       - name: Run sonarqube
         env:
