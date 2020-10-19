@@ -1,9 +1,6 @@
 name: Run CVE scanner 
 on:
-  pull_request:
-    types: [assigned, opened, synchronize, reopened]
-  push:
-    branches: [ master ]
+  workflow_dispatch:
 
 jobs:
   cve:
