@@ -52,6 +52,96 @@
     overflow: auto;
 }
 
+.story {
+    h1 {
+        font-size: 40px;
+    }
+
+    .backlink.backlink--top {
+        margin-bottom: 0;
+    }
+
+    .story__header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+
+        &__thumb {
+            background-color: grey;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-width: 200px;
+            height: 200px;
+        }
+
+        &__label {
+
+            h2 {
+                font-size: 32px;
+                border-bottom: none;
+                padding-left: 20px;
+            }
+        }
+    }
+
+    > p:first-of-type {
+        font-weight: bold;
+    }
+
+    blockquote {
+        margin: 0 25px 0 0;
+        background-color: $yellow;
+        float: left;
+        max-width: 340px;
+        position: relative;
+
+        $quote-size: 17px;
+
+        p {
+            padding: 15px 44px;
+            font-weight: bold;
+            font-size: 115%;
+
+            @mixin quote-icon {
+                @include icon;
+                background-image: url('../images/white-quote.svg');
+                width: $quote-size;
+                height: $quote-size;
+                fill: $white;
+                content: "";
+            }
+
+            &::before {
+                @include quote-icon;
+                position: absolute;
+                left: 19px;
+            }
+
+            &::after {
+                @include quote-icon;
+                position: inline;
+                transform: rotate(180deg);
+                margin-left: 7px;
+            }
+        }
+
+        @media only screen and (max-width: 500px) {
+            display: block;
+            width: 100%;
+            min-width: 100%;
+            float: none;
+            margin: 2em 0;
+        }
+    }
+
+    &__video {
+        margin-bottom: 1.5em;
+        width: 100%;
+        height: 350px;
+    }
+}
+
 .stories {
 
     h1 {
