@@ -1,13 +1,11 @@
 module StoriesHelper
   def story_heading(front_matter)
+    delimiter = ("," + tag.br + "\n").html_safe
+
     tag.h2 do
       safe_join(
-        [
-          front_matter.dig("story", "teacher"),
-          ",",
-          tag.br,
-          front_matter.dig("story", "position"),
-        ],
+        [front_matter.dig("story", "teacher"), front_matter.dig("story", "position")].compact,
+        delimiter,
       )
     end
   end
