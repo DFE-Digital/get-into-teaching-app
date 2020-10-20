@@ -28,9 +28,7 @@ module Events
 
       return groups unless @cap
 
-      groups.each.with_object({}) do |(type_id, events_in_group), capped_groups|
-        capped_groups[type_id] = events_in_group.first(INDEX_PAGE_CAP)
-      end
+      groups.transform_values { |events_in_group| events_in_group.first(INDEX_PAGE_CAP) }
     end
 
     def get_into_teaching_type_ids
