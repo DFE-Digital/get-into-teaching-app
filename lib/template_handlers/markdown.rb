@@ -45,12 +45,12 @@ module TemplateHandlers
       Rinku.auto_link content
     end
 
-    def add_abbreviations(content)
+    def add_acronyms(content)
       Acronyms.new(content, front_matter["acronyms"]).render
     end
 
     def render
-      add_abbreviations autolink_html render_markdown
+      add_acronyms autolink_html render_markdown
     end
 
     def markdown
