@@ -1,11 +1,11 @@
 require "rails_helper"
-require "abbreviations"
+require "acronyms"
 
-describe Abbreviations, type: :helper do
+describe Acronyms, type: :helper do
   let(:content) { "All prices include VAT except where marked exVAT" }
-  let(:abbreviations) { { "VAT" => "Value added tax" } }
+  let(:acronyms) { { "VAT" => "Value added tax" } }
 
-  subject { Abbreviations.new(content, abbreviations).render }
+  subject { described_class.new(content, acronyms).render }
   it { is_expected.to match "marked exVAT" }
   it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
 
@@ -15,7 +15,7 @@ describe Abbreviations, type: :helper do
     it { is_expected.to have_css "a[title=\"VAT information\"]" }
   end
 
-  context "with unknown abbreviation" do
+  context "with unknown acronym" do
     let(:content) { "<p>Payments are deducted as part of PAYE</p>" }
     it { is_expected.to have_css "p", text: "Payments are deducted as part of PAYE" }
   end

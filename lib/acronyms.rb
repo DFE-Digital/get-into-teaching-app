@@ -1,13 +1,13 @@
-class Abbreviations
+class Acronyms
   ABBR_REGEXP = %r{\b([A-Z][A-Z]+)\b}.freeze
 
-  def initialize(content, abbreviations)
+  def initialize(content, acronyms)
     @document = parse_html(content)
-    @abbreviations = abbreviations || {}
+    @acronyms = acronyms || {}
   end
 
   def render
-    @document.tap(&method(:replace_abbreviations)).to_html
+    @document.tap(&method(:replace_acronyms)).to_html
   end
 
 private
@@ -16,13 +16,13 @@ private
     Nokogiri::HTML::DocumentFragment.parse(content)
   end
 
-  def replace_abbreviations(document)
+  def replace_acronyms(document)
     document.traverse do |node|
       next unless node.text?
 
       replacements = 0
-      replacement = node.content.gsub(ABBR_REGEXP) do |abbr|
-        matched = abbreviation_for(abbr)
+      replacement = node.content.gsub(ABBR_REGEXP) do |acronym|
+        matched = acronym_for(acronym)
         next unless matched
 
         replacements += 1
@@ -33,9 +33,9 @@ private
     end
   end
 
-  def abbreviation_for(abbr)
-    if @abbreviations.key? abbr
-      "<abbr title=\"#{@abbreviations[abbr]}\">#{abbr}</abbr>"
+  def acronym_for(acronym)
+    if @acronyms.key? acronym
+      "<abbr title=\"#{@acronyms[acronym]}\">#{acronym}</abbr>"
     end
   end
 end
