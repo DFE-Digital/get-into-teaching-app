@@ -20,7 +20,7 @@ class CspReportsController < ApplicationController
       .slice(*CSP_KEYS)
       .transform_values { |v| v.truncate(MAX_ENTRY_LENGTH) }
 
-    Rails.logger.error(report) unless report.empty?
+    Rails.logger.error({ "csp-report" => report }) unless report.empty?
 
     head :ok
   end
