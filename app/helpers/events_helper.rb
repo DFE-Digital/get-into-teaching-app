@@ -82,4 +82,8 @@ module EventsHelper
       "blue"
     end
   end
+
+  def pluralised_category_name(type_id)
+    t("event_types.#{type_id}.name.plural")
+  end
 end

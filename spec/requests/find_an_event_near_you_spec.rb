@@ -28,7 +28,7 @@ describe "Find an event near you" do
     end
 
     it "presents the events in date order" do
-      headings = response.body.scan(/<h2>(.*)<\/h2>/).flatten.take(events.count)
+      headings = response.body.scan(/<h4>(.*)<\/h4>/).flatten.take(events.count)
       expect(headings).to eq(["Event 5", "Event 4", "Event 3", "Event 2", "Event 1"])
     end
 

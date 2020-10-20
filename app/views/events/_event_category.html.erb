@@ -1,0 +1,9 @@
+<section class="types-of-event content container-1000">
+  <div class="content__left">
+    <h2>Organised by <%= organised_by %></h2>
+  </div>
+
+  <% category_groups.each do |type_id, events| %>
+    <%= render partial: "event_group", locals: { type_id: type_id, events: events } %>
+  <% end %>
+</section>
