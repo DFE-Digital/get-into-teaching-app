@@ -32,6 +32,8 @@ gem "rinku"
 
 gem "addressable"
 
+gem "rack-attack"
+
 gem "faraday"
 gem "faraday-encoding"
 gem "faraday-http-cache"
