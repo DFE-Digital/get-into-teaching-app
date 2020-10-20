@@ -28,7 +28,7 @@ SecureHeaders::Configuration.default do |config|
     style_src: %w['self' 'unsafe-inline' *.gov.uk *.googleapis.com] + google_analytics,
     worker_src: %w['self' *.visualwebsiteoptimizer.com blob:],
     upgrade_insecure_requests: !Rails.env.development?, # see https://www.w3.org/TR/upgrade-insecure-requests/
-    report_uri: [ENV["SENTRY_CSP_REPORT_URI"]],
+    report_uri: %w[/csp_reports],
   }
 
   if Rails.env.development?
