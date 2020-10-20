@@ -1,11 +1,26 @@
+require "abbreviations"
+
 module TemplateHandlers
   class Markdown
     attr_reader :template, :source, :options
 
     DEFAULTS = {}.freeze
+    GLOBAL_FRONT_MATTER = Rails.root.join("config/frontmatter.yml").freeze
 
-    def self.call(template, source = nil)
-      new(template, source).call
+    class << self
+      def call(template, source = nil)
+        new(template, source).call
+      end
+
+      def global_front_matter
+        @global_front_matter ||= begin
+          if GLOBAL_FRONT_MATTER.exist?
+            YAML.load_file GLOBAL_FRONT_MATTER
+          else
+            {}
+          end
+        end
+      end
     end
 
     def initialize(template, source = nil, **options)
@@ -30,8 +45,12 @@ module TemplateHandlers
       Rinku.auto_link content
     end
 
+    def add_abbreviations(content)
+      Abbreviations.new(content, front_matter["abbreviations"]).render
+    end
+
     def render
-      autolink_html render_markdown
+      add_abbreviations autolink_html render_markdown
     end
 
     def markdown
@@ -39,7 +58,7 @@ module TemplateHandlers
     end
 
     def front_matter
-      parsed.front_matter
+      @front_matter ||= self.class.global_front_matter.deep_merge(parsed.front_matter)
     end
 
     def parsed

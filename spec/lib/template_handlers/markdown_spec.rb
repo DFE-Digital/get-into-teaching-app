@@ -89,4 +89,73 @@ describe TemplateHandlers::Markdown, type: :view do
       expect(frontmatter).to include "front" => true
     end
   end
+
+  context "with abbreviations" do
+    let :markdown do
+      <<~MARKDOWN
+        ---
+        title: My page
+        abbreviations:
+          VAT: Value added tax
+        ---
+
+        All prices include VAT unless marked as exVAT
+
+        Find out more about <a href="#vat" title="VAT">VAT</a>
+      MARKDOWN
+    end
+
+    before do
+      stub_template "frontmatter.md" => markdown
+      render template: "frontmatter.md"
+    end
+
+    it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
+    it { is_expected.to match "exVAT" } # check it honours word boundaries
+
+    it do
+      is_expected.to have_css \
+        "a[title=\"VAT\"] abbr[title=\"Value added tax\"]", text: "VAT"
+    end
+  end
+
+  context "global frontmatter" do
+    let :global_front_matter do
+      {
+        "title" => "Default page title",
+        "abbreviations" => {
+          "CPD" => "Continuous professional development",
+          "VAT" => "Wrong definition",
+        },
+      }
+    end
+
+    let :markdown do
+      <<~MARKDOWN
+        ---
+        abbreviations:
+          PAYE: Pay as you earn
+          VAT: Value added tax
+        ---
+        I've been studying VAT and PAYE as part of my CPD
+      MARKDOWN
+    end
+
+    before do
+      allow(described_class).to \
+        receive(:global_front_matter).and_return global_front_matter
+
+      stub_template "frontmatter.md" => markdown
+      render template: "frontmatter.md"
+    end
+
+    it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
+
+    it do
+      is_expected.to \
+        have_css "abbr[title=\"Continuous professional development\"]", text: "CPD"
+    end
+
+    it { is_expected.to have_css "abbr[title=\"Pay as you earn\"]", text: "PAYE" }
+  end
 end
