@@ -19,47 +19,52 @@ jobs:
         uses: brpaz/hadolint-action@master
         with:
              dockerfile: "Dockerfile"
+
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v3 
 
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@master
+
       - name: Get Short SHA
         id: sha
-        run: echo ::set-output name=short::$(git rev-parse --short $GITHUB_SHA)
+        run: echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
+
+      - name: Cache Docker layers
+        uses: actions/cache@v2
+        with:
+          path: /tmp/.buildx-cache
+          key: ${{ runner.os }}-buildx-${{ github.sha }}
+          restore-keys: |
+             ${{ runner.os }}-buildx-
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PERSONAL_ACCESS_TOKEN }}
 
       - name: Build and push to Docker Hub
-        if: github.ref == 'refs/heads/master'
-        uses: docker/build-push-action@v1
+        uses: docker/build-push-action@v2
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_PERSONAL_ACCESS_TOKEN }}
-          repository: ${{ env.APP_REPOSITORY }}
-          always_pull: true
-          add_git_labels: true
-          tag_with_ref: true
-          tag_with_sha: true
+          builder: ${{ steps.buildx.outputs.name }}
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
+          tags: |
+                 ${{env.APP_REPOSITORY}}:sha-${{ steps.sha.outputs.short }}
           push: true
-          build_args: SHA=${{ steps.sha.outputs.short}}
-
-      - name: Build Only
-        if: github.ref != 'refs/heads/master'
-        uses: docker/build-push-action@v1
-        with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_PERSONAL_ACCESS_TOKEN }}
-          repository: ${{ env.APP_REPOSITORY }}
-          always_pull: true
-          add_git_labels: true
-          tag_with_ref: true
-          tag_with_sha: true
-          build_args: SHA=${{ steps.sha.outputs.short}}
+          build-args: |
+                      CONTENT_SHA=${{ steps.sha.outputs.short }}
 
       - name: Set DOCKER_IMAGE environment variable
+        id:   docker
         run: |-
-          echo ::set-env name=DOCKER_IMAGE::${{ env.APP_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
+          echo ::set-output name=DOCKER_IMAGE::${{ env.APP_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
 
       - name: Run Specs
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test $DOCKER_IMAGE \
+          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}} \
             rspec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
 
       - name: Fixup report file paths
@@ -79,12 +84,12 @@ jobs:
 
       - name: Lint Ruby
         run: |-
-          docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE \
+          docker run -t --rm -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}} \
             rubocop app config db lib spec Gemfile --format clang
 
       - name: Run Brakeman static security scanner
         run: |-
-          docker run -t --rm -e RAILS_ENV=test $DOCKER_IMAGE brakeman --no-pager
+          docker run -t --rm -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}}  brakeman --no-pager
 
       - name: Run sonarqube
         env:
@@ -104,8 +109,8 @@ jobs:
            SLACK_CHANNEL: getintoteaching_tech
            SLACK_COLOR: '#3278BD'
            SLACK_ICON: https://github.com/rtCamp.png?size=48
-           SLACK_MESSAGE: ':disappointed_relieved: Pipeline Failure :disappointed_relieved:'
-           SLACK_TITLE: 'Failure: ${{ github.workflow }}'
+           SLACK_MESSAGE: 'There has been a failure building tha application and deploying it to Development.'
+           SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
   update_content_repo:
