@@ -2,13 +2,24 @@
     display: flex;
     justify-content: space-between;
     width:100%;
-    border-bottom: 1px solid $grey-mid;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
     text-align: left;
-    position: relative;
-        &__left {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    .container-1000 {
+        width: 100%;
+        text-align: left;
+    }
+    &__inner {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid $grey;
+        border-width: 1px 1px 0 1px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
         display: flex;
         align-items: flex-start;
         padding-right: 20px;
@@ -29,10 +40,16 @@
     a {
         color: $blue-dark;
         white-space: nowrap;
+        &:hover {
+            text-decoration: none;
+        }
+        &:focus {
+            color: $black;
+        }
     }
 
     &__close {
-        padding: 8px 0px;
+        padding-top: 8px;
     }
 }
 
@@ -40,29 +57,22 @@
     margin-top: 0;
 }
 
-@media only screen and (max-width: 1000px) {
-    .phase-banner {
-        width: calc(100% - 40px);
-    }
-}
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
     .phase-banner {
         width: 100%;
+        .container-1000 {
+            padding: 0;
+        }
+        &__left {
+            flex-direction: column;
+            margin-top: -38px;
+        }
     }
 }
-
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 460px) {
     .phase-banner {
-        margin-top: 0px;
-        &__left {
-            padding: 0;
-            flex-direction: column;
-        }
         &__close {
-            position: absolute;
-            top: 0;
-            right: 0;
+            padding-top: 5px;
         }
     }
 }
