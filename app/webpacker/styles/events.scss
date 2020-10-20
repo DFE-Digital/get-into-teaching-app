@@ -206,31 +206,9 @@
 
     &__list {
       padding: 0;
-
-      // fall back to flexbox if there's no
-      // css grid support
-      display: flex;
-      flex-wrap: wrap;
-      margin-bottom: 1.5em;
-
-      @supports (display: grid) {
-        display: grid;
-        align-items: stretch;
-        grid-template-columns: repeat(3, 1fr);
-        grid-gap: 1em;
-      }
+      @include cards-grid;
 
       &__item {
-        flex: 0 1;
-        flex-basis: 14em;
-        margin-right: 1em;
-        margin-bottom: 1em;
-
-        @supports (display: grid) {
-          width: 100%;
-          margin-right: 0;
-          margin-bottom: 0;
-        }
 
         list-style: none;
         display: flex;
