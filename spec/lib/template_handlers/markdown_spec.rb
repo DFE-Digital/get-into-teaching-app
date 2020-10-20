@@ -90,12 +90,12 @@ describe TemplateHandlers::Markdown, type: :view do
     end
   end
 
-  context "with abbreviations" do
+  context "with acronyms" do
     let :markdown do
       <<~MARKDOWN
         ---
         title: My page
-        abbreviations:
+        acronyms:
           VAT: Value added tax
         ---
 
@@ -123,7 +123,7 @@ describe TemplateHandlers::Markdown, type: :view do
     let :global_front_matter do
       {
         "title" => "Default page title",
-        "abbreviations" => {
+        "acronyms" => {
           "CPD" => "Continuous professional development",
           "VAT" => "Wrong definition",
         },
@@ -133,7 +133,7 @@ describe TemplateHandlers::Markdown, type: :view do
     let :markdown do
       <<~MARKDOWN
         ---
-        abbreviations:
+        acronyms:
           PAYE: Pay as you earn
           VAT: Value added tax
         ---

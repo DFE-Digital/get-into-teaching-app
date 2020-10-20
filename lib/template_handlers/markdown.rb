@@ -1,4 +1,4 @@
-require "abbreviations"
+require "acronyms"
 
 module TemplateHandlers
   class Markdown
@@ -46,7 +46,7 @@ module TemplateHandlers
     end
 
     def add_abbreviations(content)
-      Abbreviations.new(content, front_matter["abbreviations"]).render
+      Acronyms.new(content, front_matter["acronyms"]).render
     end
 
     def render
