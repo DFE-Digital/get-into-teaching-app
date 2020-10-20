@@ -1,50 +1,8 @@
 .types-of-event {
-
-    vertical-align: top;
-    text-align: left;
-    width: 100%;
-
-    &__left {
-
-        box-sizing: border-box;
-        padding-left: 40px;
-        padding-right:20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        text-align: left;
-        vertical-align: top;
-        width: calc(100% - 370px);
-
-        p.content-alert {
-            background-color: $purple;
-            color: $white;
-            box-sizing: border-box;
-            padding: 20px;
-            font-weight: bold;
-            line-height: 1.5;
-            display: inline-block;
-
-            a {
-              color: $white;
-            }
-        }
-
+    > .events-featured {
+        background-color: white;
+        padding: 1em 0 0;
     }
-
-    &__right {
-
-        margin-right: 40px;
-        padding-left: 40px;
-        padding-right:20px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        text-align: left;
-        vertical-align: top;
-        float: right;
-        width: 288px;
-
-    }
-
 }
 
 .types-of-event__header__icon {

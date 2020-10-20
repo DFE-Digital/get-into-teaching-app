@@ -11,16 +11,6 @@
 
 <section class="types-of-event content container-1000">
 
-    <div class="content__left">
-        <%= back_link(internal_referer || events_path, text: "All events") %>
-        <h3><%= category_name %></h3>
-        <br />
-        <%= safe_html_format(t("event_types.#{@type.id}.description")) %>
-    </div>
-
+    <%= back_link(internal_referer || events_path, text: "All events") %>
+    <%= render partial: "event_group", locals: { type_id: @type.id, events: @events } %>
 </section>
-
-<section class="search-for-events-results content container-1000">
-  <%= render partial: "event", collection: @events %>
-</section>
-
