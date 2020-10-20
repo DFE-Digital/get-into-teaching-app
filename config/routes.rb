@@ -18,6 +18,8 @@ Rails.application.routes.draw do
   resource "cookie_preference", only: %i[show]
   get "/cookie-policy", to: redirect("/cookies")
 
+  resource :csp_reports, only: %i[create]
+
   resources "events", path: "/events", only: %i[index show search] do
     collection do
       get "search"
