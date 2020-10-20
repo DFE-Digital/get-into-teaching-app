@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+    <%= render "sections/head" %>
+    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", target: "link.content" }, id: "body" do %>
+      <%= render "sections/header" %>
+      <%= render "sections/hero",
+          :header => @front_matter["title"],
+          :image => @front_matter["image"],
+          :mobileimage => @front_matter["mobileimage"],
+          :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"],
+          :mailinglist => @front_matter["mailinglist"]
+      %>
+      <main class="content container-1000" role="main" id="main-content">
+        <%= yield %>
+        <div class="story-cards">
+          <% @front_matter.dig("stories")&.each do |story| %>
+            <div class="story-card">
+              <%= story["name"] %>
+            </div>
+          <% end %>
+        </div>
+      </main>
+      <%= render "sections/footer" %>
+      <%= render "components/videoplayer" %>
+      <%= render "sections/cookie-acceptance" %>
+    <% end %>
+</html>
