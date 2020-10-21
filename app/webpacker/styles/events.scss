@@ -304,14 +304,6 @@
     }
 
     .events-featured {
-        &__list {
-            grid-template-columns: none;
-            &__item {
-              flex: 1;
-              flex-basis: auto;
-            }
-        }
-
         &__text {
           max-width: 100%;
         }    

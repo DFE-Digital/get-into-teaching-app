@@ -3,7 +3,7 @@
 // override the flexbox settings. This will give us graceful
 // degredation back to IE10.
 // Older browsers will just get a list.
-@mixin cards-grid($columns: 3) {
+@mixin cards-grid($columns: 3, $gap: 1em) {
     // fall back to flexbox if there's no
     // css grid support
     display: flex;
@@ -14,7 +14,7 @@
         display: grid;
         align-items: stretch;
         grid-template-columns: repeat($columns, 1fr);
-        grid-gap: 1em;
+        grid-gap: $gap;
     }
 
     > * {
@@ -27,6 +27,15 @@
           width: 100%;
           margin-right: 0;
           margin-bottom: 0;
+        }
+    }
+
+    @media only screen and (max-width: 800px) {
+        grid-template-columns: none;
+
+        > * {
+          flex: 1;
+          flex-basis: auto;
         }
     }
 }
