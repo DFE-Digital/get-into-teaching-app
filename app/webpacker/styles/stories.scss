@@ -53,7 +53,39 @@
 }
 
 .story-cards {
-    @include cards-grid;
+    @include cards-grid(3, 2.5em);
+    padding: 2px;
+
+    .story-card {
+        outline: 2px solid $black;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+
+        &__thumb {
+            width: 100%;
+
+            img  {
+                height: 220px;
+                width: 100%;
+                object-fit: cover;
+
+                @media only screen and (max-width: 800px) {
+                    height: 250px;
+                    width: 100%;
+                }
+            }
+
+        }
+
+        &__snippet {
+            padding: 0 1em;
+        }
+
+        &__footer {
+            padding: 0 1em 1em;
+        }
+    }
 }
 
 .story {
@@ -143,11 +175,6 @@
         margin-bottom: 1.5em;
         width: 100%;
         height: 350px;
-    }
-}
-
-.story-cards {
-    .story-card {
     }
 }
 

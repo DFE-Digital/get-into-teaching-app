@@ -1,0 +1,13 @@
+<div class="story-card">
+  <%= link_to(link, class: "story-card__thumb") do %>
+    <%= image_tag(image) %>
+  <% end %>
+  <div class="story-card__snippet">
+    <%= tag.p(snippet) %>
+  </div>
+  <footer class="story-card__footer">
+    <%= link_to(link, class: "git-link") do %>
+      Read <%= name %>'s story <%= helpers.fas_icon("chevron-right") %>
+    <% end %>
+  </footer>
+</div>
