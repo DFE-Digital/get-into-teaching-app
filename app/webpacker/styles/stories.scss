@@ -56,6 +56,10 @@
     @include cards-grid(3, 2.5em);
     padding: 2px;
 
+    &.more-stories {
+        padding: 0 20px;
+    }
+
     .story-card {
         outline: 2px solid $black;
         display: flex;

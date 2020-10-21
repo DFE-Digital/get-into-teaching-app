@@ -20,6 +20,7 @@
     > * {
         flex: 1;
         flex-basis: ((100% / $columns) - 2%);
+        flex-grow: inherit;
         margin-right: 1em;
         margin-bottom: 1em;
 
