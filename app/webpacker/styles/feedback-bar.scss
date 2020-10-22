@@ -1,5 +1,5 @@
-.phase-banner {
-    display: flex;
+.feedback-bar {
+    display: none;
     justify-content: space-between;
     width:100%;
     text-align: left;
@@ -53,12 +53,12 @@
     }
 }
 
-.hero + .content > .phase-banner {
+.hero + .content > .feedback-bar {
     margin-top: 0;
 }
 
 @media only screen and (max-width: 700px) {
-    .phase-banner {
+    .feedback-bar {
         width: 100%;
         .container-1000 {
             padding: 0;
@@ -70,7 +70,7 @@
     }
 }
 @media only screen and (max-width: 460px) {
-    .phase-banner {
+    .feedback-bar {
         &__close {
             padding-top: 5px;
         }

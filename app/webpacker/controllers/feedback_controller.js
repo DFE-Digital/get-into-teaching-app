@@ -10,18 +10,22 @@ export default class extends Controller {
     // if the user has viewed more than two pages and
     // hasn't yet dismissed the feedback banner, keep
     // showing it until they do
-    if (this.feedbackDismissed || this.pageViewCount <= 2) {
-      this.hideBanner();
+    if (!this.feedbackDismissed && this.pageViewCount >= 3) {
+      this.show();
     }
   }
 
-  hideBanner() {
+  show() {
+    this.element.style.display = 'flex';
+  }
+
+  hide() {
     this.element.style.display = 'none';
   }
 
   dismiss() {
     this.dismissFeedback();
-    this.hideBanner();
+    this.hide();
   }
 
   // we'll probably want to record the fact that
