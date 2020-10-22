@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Events::Steps::Authenticate do
-  include_context "wizard step"
+  include_context "wizard step", Events::Wizard
 
   it { is_expected.to be_kind_of(::Wizard::Steps::Authenticate) }
 

@@ -3,10 +3,12 @@ shared_context "wizard store" do
   let(:wizardstore) { Wizard::Store.new backingstore }
 end
 
-shared_context "wizard step" do
+shared_context "wizard step" do |wizardclass|
   include_context "wizard store"
   let(:attributes) { {} }
-  let(:instance) { described_class.new nil, wizardstore, attributes }
+  let(:client_ip) { "1.2.3.4" }
+  let(:wizard) { wizardclass.new(wizardstore, described_class.key, client_ip) }
+  let(:instance) { described_class.new wizard, wizardstore, attributes }
   subject { instance }
 end
 
@@ -23,6 +25,7 @@ shared_examples "an issue verification code wizard step" do
       subject.last_name = "last"
     end
 
+    let(:client_ip) { "1.2.3.4" }
     let(:request) do
       GetIntoTeachingApiClient::ExistingCandidateRequest.new(
         email: subject.email,
@@ -41,7 +44,7 @@ shared_examples "an issue verification code wizard step" do
 
     context "when an existing candidate" do
       it "sends verification code and sets authenticate to true" do
-        allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
+        allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request, x_client_ip: client_ip)
         subject.save
         expect(wizardstore["authenticate"]).to be_truthy
       end
@@ -49,7 +52,7 @@ shared_examples "an issue verification code wizard step" do
 
     context "when a new candidate or CRM is unavailable" do
       it "will skip the authenticate step" do
-        allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
+        allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request, x_client_ip: client_ip)
           .and_raise(GetIntoTeachingApiClient::ApiError)
         subject.save
         expect(wizardstore["authenticate"]).to be_falsy

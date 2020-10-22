@@ -8,7 +8,7 @@ module Wizard
       if valid?
         begin
           request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(request_attributes)
-          GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request)
+          GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request, x_client_ip: @wizard.client_ip)
           @store["authenticate"] = true
         rescue GetIntoTeachingApiClient::ApiError
           # Existing candidate not found or CRM is currently unavailable.

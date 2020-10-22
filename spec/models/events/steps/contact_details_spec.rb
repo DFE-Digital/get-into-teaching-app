@@ -1,8 +1,7 @@
 require "rails_helper"
 
 describe Events::Steps::ContactDetails do
-  include_context "wizard step"
-
+  include_context "wizard step", Events::Wizard
   it_behaves_like "a wizard step"
 
   it { is_expected.to respond_to :telephone }

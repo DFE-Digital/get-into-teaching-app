@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Events::Steps::PersonalDetails do
-  include_context "wizard step"
+  include_context "wizard step", Events::Wizard
   it_behaves_like "a wizard step"
   it_behaves_like "an issue verification code wizard step"
 

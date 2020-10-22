@@ -1,8 +1,7 @@
 require "rails_helper"
 
 describe Events::Steps::FurtherDetails do
-  include_context "wizard step"
-
+  include_context "wizard step", Events::Wizard
   it_behaves_like "a wizard step"
 
   context "attributes" do

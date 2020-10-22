@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Wizard::Steps::Authenticate do
-  include_context "wizard step"
+  include_context "wizard step", MailingList::Wizard
   it_behaves_like "a wizard step"
 
   before { allow(instance).to receive(:perform_existing_candidate_request).with(anything) { {} } }

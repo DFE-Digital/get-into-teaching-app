@@ -82,10 +82,23 @@ describe MailingList::StepsController do
   end
 
   describe "#resend_verification" do
-    subject do
-      get resend_verification_mailing_list_steps_path(redirect_path: "redirect/path")
-      response
+    let(:request_attributes) do
+      {
+        "email" => "email@address.com",
+        "first_name" => "first",
+        "last_name" => "last",
+      }
     end
+    let(:session) { { mailinglist: request_attributes } }
+
+    before do
+      expect_any_instance_of(ApplicationController).to receive(:session) { session }
+      expect_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+        receive(:create_candidate_access_token).with(having_attributes(request_attributes), x_client_ip: "127.0.0.1")
+      get resend_verification_mailing_list_steps_path(redirect_path: "redirect/path")
+    end
+
+    subject { response }
 
     it do
       is_expected.to redirect_to \

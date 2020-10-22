@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe MailingList::Steps::TeacherTraining do
-  include_context "wizard step"
+  include_context "wizard step", MailingList::Wizard
   it_behaves_like "a wizard step"
 
   let(:consideration_journey_stage_types) do

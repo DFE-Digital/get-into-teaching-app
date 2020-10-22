@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe MailingList::Steps::Name do
-  include_context "wizard step"
+  include_context "wizard step", MailingList::Wizard
   it_behaves_like "a wizard step"
 
   let(:degree_status_option_types) do
