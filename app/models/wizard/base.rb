@@ -28,10 +28,11 @@ module Wizard
 
     delegate :step, :key_index, :indexed_steps, :step_keys, to: :class
     delegate :can_proceed?, to: :find_current_step
-    attr_reader :current_key
+    attr_reader :current_key, :client_ip
 
-    def initialize(store, current_key)
+    def initialize(store, current_key, client_ip)
       @store = store
+      @client_ip = client_ip
 
       raise(UnknownStep) unless step_keys.include?(current_key)
 

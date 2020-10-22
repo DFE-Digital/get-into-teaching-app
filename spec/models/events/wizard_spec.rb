@@ -17,6 +17,7 @@ describe Events::Wizard do
 
   describe "#complete!" do
     let(:uuid) { SecureRandom.uuid }
+    let(:client_ip) { "1.2.3.4" }
     let(:store) do
       { uuid => {
         "event_id" => "abc123",
@@ -32,7 +33,7 @@ describe Events::Wizard do
       )
     end
 
-    subject { described_class.new wizardstore, "personalised_updates" }
+    subject { described_class.new wizardstore, "personalised_updates", client_ip }
 
     before { allow(subject).to receive(:valid?).and_return true }
     before do

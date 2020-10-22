@@ -38,8 +38,12 @@ module WizardSteps
 
 private
 
+  def client_ip
+    request.remote_ip
+  end
+
   def load_wizard
-    @wizard = wizard_class.new(wizard_store, params[:id])
+    @wizard = wizard_class.new(wizard_store, params[:id], client_ip)
   rescue Wizard::UnknownStep
     raise_not_found
   end

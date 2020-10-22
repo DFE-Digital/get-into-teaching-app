@@ -4,7 +4,14 @@ describe Wizard::Base do
   include_context "wizard store"
 
   let(:wizardclass) { TestWizard }
-  let(:wizard) { wizardclass.new wizardstore, "age" }
+  let(:client_ip) { "1.2.3.4" }
+  let(:wizard) { wizardclass.new wizardstore, "age", client_ip }
+
+  describe ".client_ip" do
+    subject { wizard.client_ip }
+
+    it { is_expected.to eq(client_ip) }
+  end
 
   describe ".indexed_steps" do
     subject { wizardclass.indexed_steps }
@@ -51,32 +58,32 @@ describe Wizard::Base do
 
   describe ".new" do
     it "should return instance for known step" do
-      expect(wizardclass.new(wizardstore, "name")).to be_instance_of wizardclass
+      expect(wizardclass.new(wizardstore, "name", client_ip)).to be_instance_of wizardclass
     end
 
     it "should raise exception for unknown step" do
-      expect { wizardclass.new wizardstore, "unknown" }.to \
+      expect { wizardclass.new wizardstore, "unknown", client_ip }.to \
         raise_exception Wizard::UnknownStep
     end
   end
 
   describe "#can_proceed?" do
-    subject { wizardclass.new(wizardstore, "name") }
+    subject { wizardclass.new(wizardstore, "name", client_ip) }
     it { is_expected.to be_can_proceed }
   end
 
   describe "#current_key" do
-    subject { wizardclass.new(wizardstore, "name").current_key }
+    subject { wizardclass.new(wizardstore, "name", client_ip).current_key }
     it { is_expected.to eql "name" }
   end
 
   describe "#later_keys" do
-    subject { wizardclass.new(wizardstore, "name").later_keys }
+    subject { wizardclass.new(wizardstore, "name", client_ip).later_keys }
     it { is_expected.to eql %w[age postcode] }
   end
 
   describe "#earlier_keys" do
-    subject { wizardclass.new(wizardstore, "postcode").earlier_keys }
+    subject { wizardclass.new(wizardstore, "postcode", client_ip).earlier_keys }
     it { is_expected.to eql %w[name age] }
   end
 
@@ -147,7 +154,7 @@ describe Wizard::Base do
   end
 
   describe "complete!" do
-    subject { wizardclass.new wizardstore, "postcode" }
+    subject { wizardclass.new wizardstore, "postcode", client_ip }
     before { allow(subject).to receive(:valid?).and_return steps_valid }
 
     context "when valid" do
@@ -180,7 +187,7 @@ describe Wizard::Base do
     end
 
     let(:current_step) { "name" }
-    subject { wizardclass.new wizardstore, current_step }
+    subject { wizardclass.new wizardstore, current_step, client_ip }
 
     context "for the first step" do
       it { is_expected.to have_attributes first_step?: true }

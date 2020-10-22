@@ -19,6 +19,7 @@ describe MailingList::Wizard do
 
   describe "#complete!" do
     let(:uuid) { SecureRandom.uuid }
+    let(:client_ip) { "1.2.3.4" }
     let(:store) do
       { uuid => {
         "email" => "email@address.com",
@@ -33,7 +34,7 @@ describe MailingList::Wizard do
       )
     end
 
-    subject { described_class.new wizardstore, "contact" }
+    subject { described_class.new wizardstore, "contact", client_ip }
 
     before { allow(subject).to receive(:valid?).and_return true }
     before do
