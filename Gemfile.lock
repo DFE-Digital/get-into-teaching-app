@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: b790c3adf3f7bf8aae0335c8c4b76d99b0326265
+  revision: de4e6b9d429a3615f88b988d3d766b626e229fe4
   specs:
-    get_into_teaching_api_client (1.1.3)
+    get_into_teaching_api_client (1.1.4)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (0.1.4)
+    get_into_teaching_api_client_faraday (0.1.5)
       activesupport
       faraday
       faraday-encoding
@@ -118,6 +118,7 @@ GEM
       railties (>= 5.0.0)
     faraday (1.0.1)
       multipart-post (>= 1.2, < 3)
+      ruby2_keywords
     faraday-encoding (0.0.5)
       faraday
     faraday-http-cache (2.2.0)
@@ -263,6 +264,7 @@ GEM
     rubocop-rspec (1.39.0)
       rubocop (>= 0.68.1)
     ruby-progressbar (1.10.1)
+    ruby2_keywords (0.0.2)
     rubyzip (2.3.0)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
