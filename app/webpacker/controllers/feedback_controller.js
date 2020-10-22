@@ -5,13 +5,12 @@ import { Controller } from "stimulus" ;
 
 export default class extends Controller {
   connect() {
-    this.incrementFeedbackPageCounter();
+    if (!this.feedbackDismissed) {
+      this.incrementFeedbackPageCounter();
 
-    // if the user has viewed more than two pages and
-    // hasn't yet dismissed the feedback banner, keep
-    // showing it until they do
-    if (!this.feedbackDismissed && this.pageViewCount >= 3) {
-      this.show();
+      if (this.pageViewCount >= 3) {
+        this.show();
+      }
     }
   }
 
