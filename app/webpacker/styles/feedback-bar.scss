@@ -1,0 +1,78 @@
+.feedback-bar {
+    display: none;
+    justify-content: space-between;
+    width:100%;
+    text-align: left;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100;
+    .container-1000 {
+        width: 100%;
+        text-align: left;
+    }
+    &__inner {
+        background-color: white;
+        padding: 20px;
+        border: 1px solid $grey;
+        border-width: 1px 1px 0 1px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__left {
+        display: flex;
+        align-items: flex-start;
+        padding-right: 20px;
+        line-height: 1.2;
+    }
+
+    &__description {
+        padding-top: 8px;
+    }
+    &__label {
+        background: $blue;
+        color: white;
+        font-weight: bold;
+        display: inline-block;
+        padding: 8px 20px;
+        margin-right: 20px;
+    }
+    a {
+        color: $blue-dark;
+        white-space: nowrap;
+        &:hover {
+            text-decoration: none;
+        }
+        &:focus {
+            color: $black;
+        }
+    }
+
+    &__close {
+        padding-top: 8px;
+    }
+}
+
+.hero + .content > .feedback-bar {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .feedback-bar {
+        width: 100%;
+        .container-1000 {
+            padding: 0;
+        }
+        &__left {
+            flex-direction: column;
+            margin-top: -38px;
+        }
+    }
+}
+@media only screen and (max-width: 460px) {
+    .feedback-bar {
+        &__close {
+            padding-top: 5px;
+        }
+    }
+}
