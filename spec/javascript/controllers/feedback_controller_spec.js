@@ -1,6 +1,22 @@
 import { Application } from 'stimulus' ;
 import FeedbackController from 'feedback_controller.js';
 
+class fakeLocalStorage {
+  constructor() {
+    this.store = {};
+  }
+
+  getItem(key) {
+    console.log(this.store)
+    return this.store[key]
+  }
+
+  setItem(key, value) {
+    console.log(this.store, value)
+    return this.store[key] = value
+  }
+}
+
 describe('FeedbackController', () => {
   beforeEach(() => {
     document.body.innerHTML = `
@@ -16,12 +32,14 @@ describe('FeedbackController', () => {
         </div>
       </div>
     `;
-
-    const application = Application.start();
-    application.register('feedback', FeedbackController);
   })
 
   describe("clicking hide", () => {
+    beforeEach(() => {
+      const application = Application.start();
+      application.register('feedback', FeedbackController);
+    })
+
     it('hides the feedback bar', () => {
       const feedbackBar = document.getElementById('feedback-bar');
       const hideLink = document.getElementById('hide-feedback-bar');
@@ -31,11 +49,32 @@ describe('FeedbackController', () => {
   })
 
   describe("clicking 'Give us feedback on this website'", () => {
+    beforeEach(() => {
+      const application = Application.start();
+      application.register('feedback', FeedbackController);
+    })
+
     it('hides the feedback bar', () => {
       const feedbackBar = document.getElementById('feedback-bar');
       const hideLink = document.getElementById('hide-feedback-bar');
       hideLink.click();
       expect(feedbackBar.style.display).toContain('none');
+    })
+  })
+
+  describe("when the user has visited 3 or more pages", () => {
+    beforeEach(() => {
+      window.localStorage = new fakeLocalStorage();
+
+      window.localStorage.setItem('feedbackPageCount', '5')
+
+      const application = Application.start();
+      application.register('feedback', FeedbackController);
+    })
+
+    it('shows the feedback bar', () => {
+      const feedbackBar = document.getElementById('feedback-bar');
+      expect(feedbackBar.style.display).toContain('flex');
     })
   })
 })
