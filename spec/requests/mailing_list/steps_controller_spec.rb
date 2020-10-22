@@ -93,16 +93,24 @@ describe MailingList::StepsController do
 
     before do
       expect_any_instance_of(ApplicationController).to receive(:session) { session }
+    end
+
+    it "resends the verification code and redirects with verification_resent: true" do
       expect_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
         receive(:create_candidate_access_token).with(having_attributes(request_attributes), x_client_ip: "127.0.0.1")
       get resend_verification_mailing_list_steps_path(redirect_path: "redirect/path")
+      expect(response).to redirect_to \
+        controller.send(:authenticate_path, verification_resent: true)
     end
 
-    subject { response }
-
-    it do
-      is_expected.to redirect_to \
-        controller.send(:authenticate_path, verification_resent: true)
+    context "when the user has made too many requests" do
+      it "redirects with verification_resent: false" do
+        expect_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+          receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError.new(code: 429))
+        get resend_verification_mailing_list_steps_path(redirect_path: "redirect/path")
+        expect(response).to redirect_to \
+          controller.send(:authenticate_path, verification_resent: false)
+      end
     end
   end
 end

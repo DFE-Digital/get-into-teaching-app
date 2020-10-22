@@ -202,6 +202,23 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "How close are you to applying"
   end
 
+  scenario "Resending the verification code too many times" do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token)
+
+    visit mailing_list_steps_path
+
+    expect(page).to have_text "Sign up for email updates"
+    fill_in_name_step(degree_status: "Final year")
+    click_on "Next Step"
+
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError.new(code: 429))
+
+    click_link "resend verification"
+    expect(page).to have_text "You can try again in 1 minute"
+  end
+
   scenario "Full journey as an existing candidate that has already subscribed to the mailing list" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)

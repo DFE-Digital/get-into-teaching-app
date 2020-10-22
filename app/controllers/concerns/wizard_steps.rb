@@ -31,9 +31,15 @@ module WizardSteps
   end
 
   def resend_verification
-    request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(camelized_identity_data)
-    GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request, x_client_ip: client_ip)
-    redirect_to authenticate_path(verification_resent: true)
+    begin
+      request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(camelized_identity_data)
+      GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request, x_client_ip: client_ip)
+      verification_resent = true
+    rescue GetIntoTeachingApiClient::ApiError
+      verification_resent = false
+    end
+
+    redirect_to authenticate_path(verification_resent: verification_resent)
   end
 
 private

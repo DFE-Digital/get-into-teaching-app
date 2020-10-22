@@ -167,6 +167,11 @@ en:
               invalid: Enter a valid postcode
         events/steps/personal_details:
           attributes:
+            base:
+              too_many_requests: |-
+                We need to verify your email address for you to continue.
+                We can send a verification code to your email address but you have reached the limit 
+                of the number of codes you can request for now. You can try again in 1 minute.
             first_name:
               blank: Enter your first name
             last_name:
@@ -197,6 +202,11 @@ en:
 
         mailing_list/steps/name:
           attributes:
+            base:
+              too_many_requests: |-
+                We need to verify your email address for you to continue.
+                We can send a verification code to your email address but you have reached the limit 
+                of the number of codes you can request for now. You can try again in 1 minute.
             first_name:
               blank: Enter your first name
             last_name:
@@ -270,6 +280,7 @@ en:
         timed_one_time_password:
           text: Check your junk mail folder or %{link}.
           resent: We've sent you another email.
+          resend_failed: You have reached the limit of the number of verification codes that we can send to you for now. You can try again in 1 minute.
           link: resend verification
       events_steps_personalised_updates:
         address_postcode: |-

@@ -50,6 +50,16 @@ shared_examples "an issue verification code wizard step" do
       end
     end
 
+    context "when the candidate has made too many verification code requests" do
+      it "adds an error to the base model" do
+        allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+          receive(:create_candidate_access_token).with(request, x_client_ip: client_ip)
+          .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 429))
+        subject.save
+        expect(subject.tap(&:valid?).errors[:base]).to_not be_empty
+      end
+    end
+
     context "when a new candidate or CRM is unavailable" do
       it "will skip the authenticate step" do
         allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request, x_client_ip: client_ip)
