@@ -64,7 +64,7 @@ describe('FeedbackController', () => {
 
   describe("when the user has visited 3 or more pages", () => {
     beforeEach(() => {
-      window.localStorage = new fakeLocalStorage();
+      Object.defineProperty(window, 'localStorage', { value: new fakeLocalStorage() });
 
       window.localStorage.setItem('feedbackPageCount', '5')
 
