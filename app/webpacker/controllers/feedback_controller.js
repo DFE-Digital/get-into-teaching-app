@@ -36,13 +36,7 @@ export default class extends Controller {
   incrementFeedbackPageCounter() {
     const currentValue = this.pageViewCount;
 
-    if (currentValue) {
-      this.updatePageViewCount(currentValue + 1)
-    }
-    else {
-      // initialise the counter
-      this.updatePageViewCount(1)
-    }
+    this.updatePageViewCount(currentValue + 1)
   }
 
   updatePageViewCount(value) {
@@ -50,13 +44,9 @@ export default class extends Controller {
   }
 
   get pageViewCount() {
-    let count = window.localStorage.getItem(countKey);
+    const count = window.localStorage.getItem(countKey) || 0;
 
-    if (count) {
-      return parseInt(count);
-    }
-
-    return null;
+    return parseInt(count);
   }
 
   dismissFeedback() {
