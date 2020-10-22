@@ -23,7 +23,7 @@ describe('FeedbackController', () => {
             <div class="feedback-bar__inner">
                 <div class="feedback-bar__left">
                     <span class="feedback-bar__label">FEEDBACK</span>
-                    <span class="feedback-bar__description">Give us <a href="/some/page" target="blank" data-action="click->feedback#giveFeedback">feedback on this website</a>.</span>
+                    <span class="feedback-bar__description">Give us <a id="give-feedback" href="/some/page" target="blank" data-action="click->feedback#giveFeedback">feedback on this website</a>.</span>
                 </div>
                 <a href="" class="feedback-bar__close" id="hide-feedback-bar" data-action="click->feedback#dismiss">Hide</a>
             </div>
@@ -54,8 +54,8 @@ describe('FeedbackController', () => {
 
     it('hides the feedback bar', () => {
       const feedbackBar = document.getElementById('feedback-bar');
-      const hideLink = document.getElementById('hide-feedback-bar');
-      hideLink.click();
+      const giveFeedback = document.getElementById('give-feedback');
+      giveFeedback.click();
       expect(feedbackBar.style.display).toContain('none');
     })
   })
