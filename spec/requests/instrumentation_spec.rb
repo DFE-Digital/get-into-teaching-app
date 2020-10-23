@@ -65,7 +65,7 @@ describe "Instrumentation" do
         "csp-report" =>
         {
           "blocked-uri" => "http://document-uri.com/script.js?param=test",
-          "document-uri" => "http://document-uri.com?param=test",
+          "document-uri" => "http://document-uri.com/path?param=test",
           "violated-directive": "violated-directive extra-info",
         },
       }
@@ -78,7 +78,7 @@ describe "Instrumentation" do
       expect(metric).to receive(:increment).with(labels:
         {
           blocked_uri: "http://document-uri.com/script.js",
-          document_uri: "http://document-uri.com",
+          document_uri: "/path",
           violated_directive: "violated-directive",
         }).once
     end
