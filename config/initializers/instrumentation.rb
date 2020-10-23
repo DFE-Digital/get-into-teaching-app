@@ -66,7 +66,11 @@ ActiveSupport::Notifications.subscribe "app.csp_violation" do |*args|
 
   labels[:violated_directive] = labels[:violated_directive].split.first if labels[:violated_directive]
   labels[:blocked_uri] = labels[:blocked_uri].split("?").first if labels[:blocked_uri]
-  labels[:document_uri] = labels[:document_uri].split("?").first if labels[:document_uri]
+
+  if labels[:document_uri]
+    document_uri = URI.parse(labels[:document_uri])
+    labels[:document_uri] = document_uri.path
+  end
 
   metric = prometheus.get(:app_csp_violations_total)
   metric.increment(labels: labels)
