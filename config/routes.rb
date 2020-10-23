@@ -57,8 +57,8 @@ Rails.application.routes.draw do
   get "/life-as-a-teacher/my-story-into-teaching/*story/", to: "stories#index"
 
   get "/guidance", to: "pages#showblank", page: "guidance"
-  get "/finance-guidance", to: "pages#showblank", page: "finance-guidance"
-  get "/ways-to-train-guidance", to: "pages#showblank", page: "ways-to-train-guidance"
+  get "/financial-support-for-teacher-training", to: "pages#showblank", page: "financial-support-for-teacher-training"
+  get "/train-to-become-a-teacher", to: "pages#showblank", page: "train-to-become-a-teacher"
   get "/returning-to-teaching-guidance", to: "pages#showblank", page: "returning-to-teaching-guidance"
 
   get "*page", to: "pages#show", as: :page
