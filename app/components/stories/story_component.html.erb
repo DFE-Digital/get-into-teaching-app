@@ -6,7 +6,7 @@
       <%= tag.h1(title) %>
 
       <header class="story__header">
-        <%= image_tag(image, width: 200, height: 200, alt: helpers.story_image_alt(teacher)) %>
+        <%= image_tag(image, width: 200, height: 200, alt: helpers.story_image_alt(teacher), class: "story__header__thumb") %>
         <div class="story__header__label">
           <%= helpers.story_heading(teacher, position) %>
         </div>
