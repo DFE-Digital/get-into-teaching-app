@@ -10,7 +10,7 @@ describe StoriesController do
 
   context "#show" do
     subject do
-      get "/life-as-a-teacher/my-story-into-teaching/known-page"
+      get "/life-as-a-teacher/my-story-into-teaching/returners/known-page"
       response
     end
 

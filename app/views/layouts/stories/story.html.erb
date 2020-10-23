@@ -34,27 +34,9 @@
           </div>
 
           <% if @front_matter.dig("more_stories").present? %>
-            <h2 class="more-stories_header strapline">More stories</h2>
-
-            <div class="more-stories">
-              <div class="more-stories__thumbs">
-                <% @front_matter.dig("more_stories").each do |story| %>
-
-                  <div class="more-stories__thumbs__thumb">
-                    <%= link_to(story["link"]) do %>
-                      <%= more_stories_thumbnail(story["image"]) %>
-                    <% end %>
-                    <div class="more-stories__thumbs__thumb__content">
-                      <%= tag.p(story["snippet"]) %>
-
-                      <%= link_to(story["link"], class: "git-link") do %>
-                        Read <%= story["name"] %>’s story <%= fas_icon("chevron-right") %>
-                      <% end %>
-                    </div>
-                  </div>
-
-                <% end %>
-              </div>
+            <h2 class="strapline">More stories</h2>
+            <div class="story-cards more-stories">
+              <%= render Stories::CardComponent.with_collection(@front_matter.dig("more_stories")) %>
             </div>
           <% end %>
 

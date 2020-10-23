@@ -47,12 +47,14 @@ Rails.application.routes.draw do
     end
   end
 
-  get "/life-as-a-teacher/my-story-into-teaching", to: "pages#show", page: "life-as-a-teacher/my-story-into-teaching"
-  get "/life-as-a-teacher/my-story-into-teaching/career-changers", to: "pages#show", page: "life-as-a-teacher/my-story-into-teaching/career-changers"
-  get "/life-as-a-teacher/my-story-into-teaching/international-career-changers", to: "pages#show", page: "life-as-a-teacher/my-story-into-teaching/international-career-changers"
-  get "/life-as-a-teacher/my-story-into-teaching/making-a-difference", to: "pages#show", page: "life-as-a-teacher/my-story-into-teaching/making-a-difference"
-  get "/life-as-a-teacher/my-story-into-teaching/teacher-training-stories", to: "pages#show", page: "life-as-a-teacher/my-story-into-teaching/teacher-training-stories"
-  get "/life-as-a-teacher/my-story-into-teaching/*story", to: "stories#show"
+  # if the story path contains a slash followed by any text, it's a story
+  # if it has no slashes or ends in a slash, it's an index page
+  get(
+    "/life-as-a-teacher/my-story-into-teaching/*story/",
+    to: "stories#show",
+    constraints: ->(params) { params["story"] =~ /.*\/(.+)/ },
+  )
+  get "/life-as-a-teacher/my-story-into-teaching/*story/", to: "stories#index"
 
   get "/guidance", to: "pages#showblank", page: "guidance"
   get "/finance-guidance", to: "pages#showblank", page: "finance-guidance"
