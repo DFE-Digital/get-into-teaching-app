@@ -11,7 +11,7 @@ RSpec.feature "content pages check", type: :feature do
 
   class << self
     def files
-      Dir["app/views/content/**/*"]
+      Dir["app/views/content/**/*.md"]
     end
 
     def remove_folders(filename)
