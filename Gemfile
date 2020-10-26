@@ -89,7 +89,7 @@ end
 
 group :test do
   gem "shoulda-matchers"
-  gem "webdrivers", "~> 4.3"
+  gem "webdrivers", "~> 4.4"
   gem "webmock"
 end
 
