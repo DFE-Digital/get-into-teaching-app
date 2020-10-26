@@ -19,6 +19,12 @@ describe MailingList::StepsController do
     before { get step_path }
     subject { response }
     it { is_expected.to have_http_status :success }
+
+    context "with an invalid step" do
+      let(:step_path) { mailing_list_step_path :invalid }
+
+      it { is_expected.to have_http_status :not_found }
+    end
   end
 
   describe "#update" do
