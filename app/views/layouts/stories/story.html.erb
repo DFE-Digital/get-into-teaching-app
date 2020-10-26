@@ -5,41 +5,9 @@
       <%= render "sections/header" %>
       <main class="content container-1000" role="main" id="main-content">
         <% if @front_matter.dig("build_layout_from_frontmatter") %>
-
-          <div class="content-wrapper">
-            <div class="content__left">
-              <article class="story">
-                <%= link_to(@front_matter["backlink_text"], @front_matter["backlink"], class: "backlink backlink--top") %>
-
-                <%= tag.h1(@front_matter["title"]) %>
-
-                <header class="story__header">
-                  <%= image_tag(@front_matter["image"], width: 200, height: 200, alt: story_image_alt(@front_matter.dig("story", "teacher"))) %>
-                  <div class="story__header__label">
-                    <%= story_heading(@front_matter) %>
-                  </div>
-                </header>
-
-                <% if youtube_url = @front_matter.dig("story", "video") %>
-                  <%= youtube(youtube_url) %>
-                <% end %>
-
-                <%= yield %>
-
-                <% if @front_matter["more_information"] %>
-                  <%= link_to(@front_matter.dig("more_information", "text"), @front_matter.dig("more_information", "link"), class: "git-link") %> <%= fas_icon "chevron-right" %>
-                <% end %>
-              </article>
-            </div>
-          </div>
-
-          <% if @front_matter.dig("more_stories").present? %>
-            <h2 class="strapline">More stories</h2>
-            <div class="story-cards more-stories">
-              <%= render Stories::CardComponent.with_collection(@front_matter.dig("more_stories")) %>
-            </div>
+          <%= render Stories::StoryComponent.new(@front_matter) do %>
+            <%= yield %>
           <% end %>
-
         <% else %>
           <%= yield %>
         <% end %>
