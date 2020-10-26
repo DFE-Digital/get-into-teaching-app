@@ -29,6 +29,10 @@ describe "View events by category" do
     it "displays all events in the category" do
       expect(response.body.scan(/Event \d/).count).to eq(events.count)
     end
+
+    it "does not display the 'See all events' button" do
+      expect(response.body.scan(/see all train to teach events/i)).to be_empty
+    end
   end
 
   context "when viewing the schools and university events category" do

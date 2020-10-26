@@ -9,7 +9,11 @@
     <%= render partial: "event", collection: events %>
   </div>
 
-  <%= link_to(event_category_events_path(pluralised_category_name(type_id).parameterize)) do %>
-    <div class="call-to-action-button">See all <%= pluralised_category_name(type_id) %> <i class="fas fa-chevron-right"></i></div>
+  <% show_see_all_events ||= false %>
+
+  <% if show_see_all_events %>
+    <%= link_to(event_category_events_path(pluralised_category_name(type_id).parameterize)) do %>
+      <div class="call-to-action-button">See all <%= pluralised_category_name(type_id) %> <i class="fas fa-chevron-right"></i></div>
+    <% end %>
   <% end %>
 </div>
