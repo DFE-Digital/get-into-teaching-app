@@ -33,6 +33,12 @@ describe EventStepsController do
 
       it { is_expected.to redirect_to(event_path(id: event.readable_id)) }
     end
+
+    context "with an invalid step" do
+      let(:step_path) { event_step_path readable_event_id, :invalid }
+
+      it { is_expected.to have_http_status :not_found }
+    end
   end
 
   describe "#update" do
