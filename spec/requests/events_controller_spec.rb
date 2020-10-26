@@ -38,6 +38,10 @@ describe EventsController do
         expect(parsed_response.css(".events-featured__list__item").count).to eql(events_cap)
       end
     end
+
+    specify "rendering the see all events button" do
+      expect(subject.body).to match(/see all train to teach events/i)
+    end
   end
 
   describe "#search" do
