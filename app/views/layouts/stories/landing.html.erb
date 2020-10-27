@@ -24,7 +24,7 @@
       </div>
 
       <main class="content container-1000 story-landing" role="main" id="main-content">
-        <% @front_matter["sections"].each do |name, section| %>
+        <% @front_matter["sections"]&.each do |name, section| %>
           <section>
             <header>
               <%= tag.h2(name) %>
@@ -49,4 +49,3 @@
       <%= render "sections/cookie-acceptance" %>
     <% end %>
 </html>
-
