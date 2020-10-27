@@ -49,6 +49,7 @@ Rails.application.routes.draw do
 
   # if the story path contains a slash followed by any text, it's a story
   # if it has no slashes or ends in a slash, it's an index page
+  get "/life-as-a-teacher/my-story-into-teaching", to: "stories#landing"
   get(
     "/life-as-a-teacher/my-story-into-teaching/*story/",
     to: "stories#show",

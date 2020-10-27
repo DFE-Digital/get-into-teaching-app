@@ -2,6 +2,10 @@ class StoriesController < ApplicationController
   include StaticPages
   rescue_from ActionView::MissingTemplate, StaticPages::InvalidTemplateName, with: :rescue_missing_template
 
+  def landing
+    render template: landing_template, layout: "layouts/stories/landing"
+  end
+
   def index
     render template: index_template, layout: "layouts/stories/list"
   end
@@ -11,6 +15,10 @@ class StoriesController < ApplicationController
   end
 
 private
+
+  def landing_template
+    "content/life-as-a-teacher/my-story-into-teaching"
+  end
 
   def stories_template
     "content/life-as-a-teacher/my-story-into-teaching/" + filtered_page_template(:story)
