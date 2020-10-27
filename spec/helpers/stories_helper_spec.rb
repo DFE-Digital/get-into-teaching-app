@@ -9,7 +9,7 @@ describe StoriesHelper, type: "helper" do
   end
 
   describe "#story_heading" do
-    subject { helper.story_heading(front_matter) }
+    subject { helper.story_heading(teacher, position) }
 
     specify %(should generate a level 2 heading containing the teacher's name and job) do
       expect(subject).to have_css("h2", text: %(#{teacher},\n#{position}))

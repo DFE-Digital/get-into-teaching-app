@@ -1,13 +1,8 @@
 module StoriesHelper
-  def story_heading(front_matter)
+  def story_heading(teacher, position)
     delimiter = ("," + tag.br + "\n").html_safe
 
-    tag.h2 do
-      safe_join(
-        [front_matter.dig("story", "teacher"), front_matter.dig("story", "position")].compact,
-        delimiter,
-      )
-    end
+    tag.h2 { safe_join([teacher, position].compact, delimiter) }
   end
 
   def story_image_alt(name)
