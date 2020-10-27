@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+    <%= render "sections/head" %>
+    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", target: "link.content" }, id: "body" do %>
+      <%= render "sections/header" %>
+      <%= render "sections/hero",
+          :header => @front_matter["title"],
+          :image => @front_matter["image"],
+          :mobileimage => @front_matter["mobileimage"],
+          :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"],
+          :mailinglist => @front_matter["mailinglist"]
+      %>
+
+      <div class="stories-feature">
+        <div class="stories-feature__image" style="background-image:url('/assets/images/victoria.png')"></div>
+        <div class="stories-feature__content">
+          <%= tag.h2(@front_matter.dig("featured_story", "heading")) %>
+          <%= tag.h3(@front_matter.dig("featured_story", "subheading")) %>
+          <%= tag.p(@front_matter.dig("featured_story", "text")) %>
+          <%= link_to(@front_matter.dig("featured_story", "link"), class: "git-link") do %>
+            Read <%= @front_matter.dig("featured_story", "name") %>’s story <%= fas_icon("chevron-right") %>
+          <% end %>
+        </div>
+      </div>
+
+      <main class="content container-1000 story-landing" role="main" id="main-content">
+        <% @front_matter["sections"]&.each do |name, section| %>
+          <section>
+            <header>
+              <%= tag.h2(name) %>
+              <%= tag.p(section["text"]) %>
+            </header>
+            <% if section["stories"].present? %>
+              <div class="story-cards more-stories">
+                <%= render Stories::CardComponent.with_collection(section["stories"]) %>
+              </div>
+
+              <footer>
+                <%= link_to section["link"] do %>
+                  Read all stories about <%= name.downcase %>
+                <% end %>
+              </footer>
+            <% end %>
+          </section>
+        <% end %>
+      </main>
+      <%= render "sections/footer" %>
+      <%= render "components/videoplayer" %>
+      <%= render "sections/cookie-acceptance" %>
+    <% end %>
+</html>
