@@ -1,5 +1,7 @@
 class EventsController < ApplicationController
   before_action :load_events, only: %i[index search]
+  
+  MAXIMUM_EVENTS_IN_CATEGORY = 1_000
 
   def index
     @page_title = "Find an event near you"
@@ -25,7 +27,11 @@ class EventsController < ApplicationController
     render(template: "errors/not_found", status: :not_found) && return if @type.nil?
 
     api = GetIntoTeachingApiClient::TeachingEventsApi.new
-    @events = api.search_teaching_events(type_id: @type.id)
+    events_by_type = api.search_teaching_events_indexed_by_type(
+      type_id: @type.id, 
+      quantity_per_type: MAXIMUM_EVENTS_IN_CATEGORY
+    )
+    @events = events_by_type[@type.id.to_sym]
   end
 
 private
