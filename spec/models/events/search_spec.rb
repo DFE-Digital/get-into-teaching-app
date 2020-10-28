@@ -81,6 +81,7 @@ describe Events::Search do
         postcode: subject.postcode,
         start_after: Date.new(2020, 7, 1),
         start_before: Date.new(2020, 7, 31),
+        quantity_per_type: described_class::RESULTS_PER_TYPE,
       }
     end
 
@@ -90,7 +91,7 @@ describe Events::Search do
 
       it "calls the API" do
         expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-          receive(:search_teaching_events).with(**expected_attributes)
+          receive(:search_teaching_events_indexed_by_type).with(**expected_attributes)
       end
 
       context "when there's whitespace around a provided postcode" do
@@ -98,7 +99,7 @@ describe Events::Search do
 
         it "the whitespace is stripped before querying the API" do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-            receive(:search_teaching_events).with(**expected_attributes.merge(postcode: subject.postcode.strip))
+            receive(:search_teaching_events_indexed_by_type).with(**expected_attributes.merge(postcode: subject.postcode.strip))
         end
       end
     end
@@ -108,7 +109,7 @@ describe Events::Search do
 
       it "does not call the API" do
         expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).not_to \
-          receive(:search_teaching_events)
+          receive(:search_teaching_events_indexed_by_type)
         subject.query_events
       end
     end

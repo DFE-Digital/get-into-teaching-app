@@ -32,7 +32,7 @@
         </div>
     </section>
 
-    <% if @events.any? %>
+    <% if @events_by_type.any? %>
       <% if @group_presenter.get_into_teaching_events.any? %>
         <%= render partial: "event_category", locals: { organised_by: t("event_groups.get_into_teaching"), category_groups: @group_presenter.get_into_teaching_events } %>
       <% end %>

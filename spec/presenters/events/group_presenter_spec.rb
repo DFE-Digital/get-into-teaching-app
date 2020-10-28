@@ -6,8 +6,9 @@ describe Events::GroupPresenter do
   let(:online_events) { build_list(:event_api, 3, :online_event) }
   let(:school_and_university_events) { build_list(:event_api, 3, :school_or_university_event) }
   let(:all_events) { [train_to_teach_events, application_workshops, online_events, school_and_university_events].flatten }
+  let(:events_by_type) { all_events.group_by { |event| event.type_id.to_s.to_sym } }
 
-  subject { Events::GroupPresenter.new(all_events) }
+  subject { Events::GroupPresenter.new(events_by_type) }
 
   describe "#get_into_teaching_events" do
     context "application workshops" do
@@ -65,52 +66,17 @@ describe Events::GroupPresenter do
   end
 
   describe "sorting" do
-    context "by event type" do
-      let(:application_workshop) { build(:event_api, :application_workshop) }
-      let(:train_to_teach_event) { build(:event_api, :train_to_teach_event) }
-      let(:online_event) { build(:event_api, :online_event) }
-      let(:unsorted_events) { [online_event, train_to_teach_event, application_workshop] }
-
-      subject { Events::GroupPresenter.new(unsorted_events) }
-
-      specify "events should be sorted by their event type" do
-        # note these match the order in GetIntoTeachingApiClient::Constants::EVENT_TYPES
-        expect(subject.all_events).to eql([train_to_teach_event, online_event, application_workshop])
-      end
-    end
-
     context "within an event type" do
       let(:early) { build(:event_api, :application_workshop, start_at: 1.week.from_now) }
       let(:middle) { build(:event_api, :application_workshop, start_at: 2.weeks.from_now) }
       let(:late) { build(:event_api, :application_workshop, start_at: 3.weeks.from_now) }
+      let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Application Workshop"] }
       let(:unsorted_events) { [middle, late, early] }
 
-      subject { Events::GroupPresenter.new(unsorted_events) }
+      subject { Events::GroupPresenter.new({ type_id => unsorted_events }) }
 
       specify "events of the same type should be sorted by date" do
-        expect(subject.all_events).to eql([early, middle, late])
-      end
-    end
-  end
-
-  describe "capping" do
-    let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Application Workshop"] }
-    let(:all_events) { build_list(:event_api, 10, :application_workshop) }
-    subject { Events::GroupPresenter.new(all_events, cap: cap).get_into_teaching_events }
-
-    context "when enabled" do
-      let(:cap) { true }
-
-      specify "should be capped at the INDEX_PAGE_CAP number" do
-        expect(subject.fetch(type_id).size).to eql(Events::GroupPresenter::INDEX_PAGE_CAP)
-      end
-    end
-
-    context "when not enabled" do
-      let(:cap) { false }
-
-      specify "should not be capped (all events are present)" do
-        expect(subject.fetch(type_id).size).to eql(all_events.size)
+        expect(subject.events_by_type[type_id]).to eql([early, middle, late])
       end
     end
   end

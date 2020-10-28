@@ -9,16 +9,17 @@ describe "View events by category" do
       build(:event_api, name: "Event #{index + 1}", start_at: start_at)
     end
   end
+  let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events) { events }
+      receive(:search_teaching_events_indexed_by_type) { events_by_type }
   end
 
   context "when viewing a category" do
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events) { events }
+        receive(:search_teaching_events_indexed_by_type) { events_by_type }
       get event_category_events_path("train-to-teach-events")
     end
 
@@ -39,7 +40,7 @@ describe "View events by category" do
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events).with(type_id: type_id.to_s)
+        receive(:search_teaching_events_indexed_by_type).with(type_id: type_id.to_s, quantity_per_type: 1_000)
       get event_category_events_path("school-and-university-events")
     end
   end

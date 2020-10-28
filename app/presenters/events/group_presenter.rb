@@ -1,20 +1,19 @@
 module Events
   class GroupPresenter
-    attr_accessor :all_events
+    attr_accessor :events_by_type
 
-    INDEX_PAGE_CAP = 9
-
-    def initialize(events, cap: false)
-      @all_events = events.sort_by { |e| [event_type_name(e.type_id), e.start_at] }
-      @cap        = cap
+    def initialize(events_by_type)
+      @events_by_type = events_by_type
+        .transform_keys { |k| k.to_s.to_i }
+        .transform_values { |v| v.sort_by { |e| [event_type_name(e.type_id), e.start_at] } }
     end
 
     def get_into_teaching_events
-      group_by_type_id(all_events.select { |event| event.type_id.in?(get_into_teaching_type_ids) })
+      @get_into_teaching_events ||= events_by_type.slice(*get_into_teaching_type_ids)
     end
 
     def school_and_university_events
-      group_by_type_id(all_events.reject { |event| event.type_id.in?(get_into_teaching_type_ids) })
+      @school_and_university_events ||= events_by_type.slice(school_and_university_type_id)
     end
 
   private
@@ -23,16 +22,12 @@ module Events
       GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.index(type_id)
     end
 
-    def group_by_type_id(events)
-      groups = events.group_by(&:type_id)
-
-      return groups unless @cap
-
-      groups.transform_values { |events_in_group| events_in_group.first(INDEX_PAGE_CAP) }
-    end
-
     def get_into_teaching_type_ids
       @get_into_teaching_type_ids ||= GetIntoTeachingApiClient::Constants::GET_INTO_TEACHING_EVENT_TYPES.values
+    end
+
+    def school_and_university_type_id
+      GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
     end
   end
 end
