@@ -2,22 +2,27 @@ require "rails_helper"
 
 describe EventsController do
   include_context "stub types api"
-  let(:events_cap) { Events::GroupPresenter::INDEX_PAGE_CAP }
 
   describe "#index" do
-    let(:first_readable_id) { "123" }
-    let(:second_readable_id) { "456" }
-
-    let(:events) do
-      [
-        build(:event_api, readable_id: first_readable_id, name: "First"),
-        build(:event_api, readable_id: second_readable_id, name: "Second"),
-      ]
+    let(:results_per_type) { Events::Search::RESULTS_PER_TYPE }
+    let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
+    let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
+    let(:parsed_response) { Nokogiri.parse(response.body) }
+    let(:expected_request_attributes) do
+      {
+        postcode: nil,
+        quantity_per_type: results_per_type,
+        radius: nil,
+        start_after: Time.zone.today.beginning_of_month,
+        start_before: Time.zone.today.end_of_month,
+        type_id: nil,
+      }
     end
 
     before do
-      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events).and_return events
+      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:search_teaching_events_indexed_by_type)
+        .with(a_hash_including(expected_request_attributes)) { events_by_type }
     end
 
     subject! do
@@ -27,16 +32,8 @@ describe EventsController do
 
     it { is_expected.to have_http_status :success }
 
-    context "when there are more than 9 events of a certain type" do
-      let(:events_count) { 13 }
-      let(:event_type_name) { "Train to Teach Event" }
-      let(:event_type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES[event_type_name] }
-      let(:events) { build_list(:event_api, 13, start_at: 1.week.from_now) }
-      let(:parsed_response) { Nokogiri.parse(response.body) }
-
-      specify "only the first 9 should be rendered" do
-        expect(parsed_response.css(".events-featured__list__item").count).to eql(events_cap)
-      end
+    specify "all events should be rendered" do
+      expect(parsed_response.css(".events-featured__list__item").count).to eql(events.count)
     end
 
     specify "rendering the see all events button" do
@@ -45,32 +42,27 @@ describe EventsController do
   end
 
   describe "#search" do
+    let(:results_per_type) { Events::Search::RESULTS_PER_TYPE }
+    let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
+    let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
     let(:search_key) { Events::Search.model_name.param_key }
     let(:search_path) { search_events_path(search_key => search_params) }
+    let(:date) { 1.week.from_now }
+    let(:search_month) { date.strftime("%Y-%m") }
+    let(:parsed_response) { Nokogiri.parse(response.body) }
 
-    subject do
+    before do
+      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:search_teaching_events_indexed_by_type)
+        .with(a_hash_including(expected_request_attributes)) { events_by_type }
+    end
+
+    subject! do
       get(search_path)
       response
     end
 
     context "with valid search params" do
-      let(:search_params) { attributes_for :events_search }
-
-      it { is_expected.to have_http_status :success }
-      it { is_expected.to have_attributes media_type: "text/html" }
-    end
-
-    context "with invalid search params" do
-      let(:search_params) { { "distance" => "" } }
-
-      it { is_expected.to have_http_status :success }
-      it { is_expected.to have_attributes media_type: "text/html" }
-    end
-
-    context "when there are more than 9 events of a certain type" do
-      let(:date) { 1.week.from_now }
-      let(:search_month) { date.strftime("%Y-%m") }
-      let(:events_count) { 13 }
       let(:event_type_name) { "Train to Teach Event" }
       let(:event_type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES[event_type_name] }
       let(:search_params) do
@@ -81,47 +73,31 @@ describe EventsController do
           distance: "",
         )
       end
-      let(:events) { build_list(:event_api, events_count, start_at: date) }
-      let(:parsed_response) { Nokogiri.parse(response.body) }
-
-      before do
-        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-          receive(:search_teaching_events).and_return events
+      let(:expected_request_attributes) do
+        {
+          postcode: nil,
+          quantity_per_type: results_per_type,
+          radius: nil,
+          start_after: date.beginning_of_month,
+          start_before: date.end_of_month,
+          type_id: event_type,
+        }
       end
 
-      before { subject }
+      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_attributes media_type: "text/html" }
 
-      context "when searching for a particular event type" do
-        let(:search_params) do
-          attributes_for(
-            :events_search,
-            type: event_type,
-            month: search_month,
-            distance: "",
-            postcode: "",
-          )
-        end
-
-        specify "all events should be rendered" do
-          expect(parsed_response.css(".events-featured__list__item").count).to eql(events_count)
-        end
+      specify "all events should be rendered" do
+        expect(parsed_response.css(".events-featured__list__item").count).to eql(events.count)
       end
+    end
 
-      context "when no specific search terms are used" do
-        let(:search_params) do
-          attributes_for(
-            :events_search,
-            type: "",
-            month: search_month,
-            distance: "",
-            postcode: "",
-          )
-        end
+    context "with invalid search params" do
+      let(:search_params) { { "distance" => "", month: search_month } }
+      let(:expected_request_attributes) { { radius: nil } }
 
-        specify "only the first 9 should be rendered" do
-          expect(parsed_response.css(".events-featured__list__item").count).to eql(events_cap)
-        end
-      end
+      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_attributes media_type: "text/html" }
     end
   end
 

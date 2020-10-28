@@ -38,8 +38,8 @@ private
 
   def load_events
     @event_search = Events::Search.new(event_search_params)
-    @events = @event_search.query_events
-    @group_presenter = Events::GroupPresenter.new(@events, cap: cap_results?)
+    @events_by_type = @event_search.query_events
+    @group_presenter = Events::GroupPresenter.new(@events_by_type)
   end
 
   def event_search_params
@@ -47,17 +47,5 @@ private
 
     (params[Events::Search.model_name.param_key] || defaults)
       .permit(:type, :distance, :postcode, :month)
-  end
-
-  # When there's a value in the 'distance', 'type' or 'postcode' events_search param, an actual
-  # search has been made so display all results. If none have values it's either the index page
-  # or an open-ended search ('All Events'/'Nationwide') so apply a cap so the user isn't swamped
-  # with events
-  def cap_results?
-    active_search_params = params
-      .fetch("events_search", {})
-      .reject { |_, v| v.blank? }
-
-    %i[distance type postcode].none? { |param| active_search_params.key?(param) }
   end
 end

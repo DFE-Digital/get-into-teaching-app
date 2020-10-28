@@ -9,11 +9,12 @@ RSpec.feature "Finding an event", type: :feature do
       build(:event_api, name: "Event #{index + 1}", start_at: start_at)
     end
   end
+  let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
   let(:event) { events.last }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events) { events }
+      receive(:search_teaching_events_indexed_by_type) { events_by_type }
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event) { event }
   end

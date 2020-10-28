@@ -11,9 +11,10 @@ describe "Find an event near you" do
       build(:event_api, name: "Event #{index + 1}", start_at: start_at)
     end
   end
+  let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events) { events }
+      receive(:search_teaching_events_indexed_by_type) { events_by_type }
   end
 
   subject { response }

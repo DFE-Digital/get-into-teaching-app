@@ -4,6 +4,7 @@ module Events
     include ActiveModel::Attributes
     include ActiveModel::Validations::Callbacks
 
+    RESULTS_PER_TYPE = 9
     DISTANCES = [30, 50, 100].freeze
     MONTH_FORMAT = %r{\A20[234]\d-(0[1-9]|1[012])\z}.freeze
 
@@ -50,18 +51,19 @@ module Events
     end
 
     def query_events
-      valid? ? query_events_api : []
+      valid? ? query_events_api : {}
     end
 
   private
 
     def query_events_api
-      GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
+      GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events_indexed_by_type(
         type_id: type,
         radius: distance,
         postcode: postcode&.strip,
         start_after: start_of_month,
         start_before: end_of_month,
+        quantity_per_type: RESULTS_PER_TYPE,
       )
     end
 
