@@ -27,6 +27,22 @@ describe EventsHelper, type: "helper" do
     end
   end
 
+  describe "#formatted_event_description" do
+    subject { formatted_event_description(description) }
+
+    context "when plain text" do
+      let(:description) { "Some\nText" }
+
+      it { is_expected.to eq("<p>Some\n<br />Text</p>") }
+    end
+
+    context "when HTML" do
+      let(:description) { "<p>Some <b>text</b></p>" }
+
+      it { is_expected.to eq("<p>Some <b>text</b></p>") }
+    end
+  end
+
   describe "#event_location_map" do
     subject { event_location_map(event) }
 

@@ -37,6 +37,14 @@ module EventsHelper
     video_url&.sub("watch?v=", "embed/")
   end
 
+  def formatted_event_description(description)
+    if strip_tags(description) != description
+      safe_html_format(description)
+    else
+      safe_format(description)
+    end
+  end
+
   def event_has_provider_info?(event)
     event.provider_website_url ||
       event.provider_target_audience ||
