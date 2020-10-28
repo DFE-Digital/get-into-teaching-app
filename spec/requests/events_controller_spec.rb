@@ -8,20 +8,11 @@ describe EventsController do
     let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
     let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
     let(:parsed_response) { Nokogiri.parse(response.body) }
-    let(:expected_request_attributes) do
-      {
-        postcode: nil,
-        quantity_per_type: results_per_type,
-        radius: nil,
-        start_after: Time.zone.today.beginning_of_month,
-        start_before: Time.zone.today.end_of_month,
-        type_id: nil,
-      }
-    end
+    let(:expected_request_attributes) { { quantity_per_type: results_per_type } }
 
     before do
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_indexed_by_type)
+        receive(:upcoming_teaching_events_indexed_by_type)
         .with(a_hash_including(expected_request_attributes)) { events_by_type }
     end
 

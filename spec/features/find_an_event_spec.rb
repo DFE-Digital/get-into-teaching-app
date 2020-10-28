@@ -14,6 +14,8 @@ RSpec.feature "Finding an event", type: :feature do
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      receive(:upcoming_teaching_events_indexed_by_type) { events_by_type }
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:search_teaching_events_indexed_by_type) { events_by_type }
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event) { event }

@@ -1,7 +1,10 @@
 class EventsController < ApplicationController
-  before_action :load_events, only: %i[index search]
-  
+  before_action :load_event_search, only: %i[search index]
+  before_action :search_events, only: %i[search]
+  before_action :load_upcoming_events, only: %i[index]
+
   MAXIMUM_EVENTS_IN_CATEGORY = 1_000
+  UPCOMING_EVENTS_PER_TYPE = 9
 
   def index
     @page_title = "Find an event near you"
@@ -28,18 +31,27 @@ class EventsController < ApplicationController
 
     api = GetIntoTeachingApiClient::TeachingEventsApi.new
     events_by_type = api.search_teaching_events_indexed_by_type(
-      type_id: @type.id, 
-      quantity_per_type: MAXIMUM_EVENTS_IN_CATEGORY
+      type_id: @type.id,
+      quantity_per_type: MAXIMUM_EVENTS_IN_CATEGORY,
     )
     @events = events_by_type[@type.id.to_sym]
   end
 
 private
 
-  def load_events
-    @event_search = Events::Search.new(event_search_params)
+  def load_upcoming_events
+    api = GetIntoTeachingApiClient::TeachingEventsApi.new
+    @events_by_type = api.upcoming_teaching_events_indexed_by_type(quantity_per_type: UPCOMING_EVENTS_PER_TYPE)
+    @group_presenter = Events::GroupPresenter.new(@events_by_type)
+  end
+
+  def search_events
     @events_by_type = @event_search.query_events
     @group_presenter = Events::GroupPresenter.new(@events_by_type)
+  end
+
+  def load_event_search
+    @event_search = Events::Search.new(event_search_params)
   end
 
   def event_search_params

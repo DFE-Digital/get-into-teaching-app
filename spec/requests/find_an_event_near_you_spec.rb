@@ -12,14 +12,15 @@ describe "Find an event near you" do
     end
   end
   let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
-  before do
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_indexed_by_type) { events_by_type }
-  end
 
   subject { response }
 
   context "when landing on the page initially" do
+    before do
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:upcoming_teaching_events_indexed_by_type) { events_by_type }
+    end
+
     before { get events_path }
 
     it { is_expected.to have_http_status :success }
@@ -64,6 +65,12 @@ describe "Find an event near you" do
 
   context "when searching for an event by type" do
     let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
+
+    before do
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:search_teaching_events_indexed_by_type) { events_by_type }
+    end
+
     before { get search_events_path(events_search: { type: type_id, month: "2020-07" }) }
 
     it "displays all events of that type" do
