@@ -1,0 +1,44 @@
+<h1 id="searchforevents" class="strapline search-for-events__header">Search for events</h1>
+<div class="search-for-events__content">
+  <%= form_for search, method: :get, url: path do |f| %>
+
+    <div class="search-for-events__content__inputs"
+          data-controller="conditional-field"
+          data-conditional-field-mode="hide"
+          data-conditional-field-expected="">
+
+      <%= tag.div(class: input_field_classes(:type)) do %>
+          <%= f.label :type, "Event type", class: "search-for-events__content__input__label" %>
+          <%= f.collection_select :type, f.object.available_event_types, :id, :value, { include_blank: "All events" } %>
+      <% end %>
+
+      <%= tag.div(class: input_field_classes(:distance)) do %>
+          <%= f.label :distance, "Location", class: "search-for-events__content__input__label" %>
+          <%= f.select :distance, f.object.available_distances, {},
+                data: { action: "conditional-field#toggle", target: "conditional-field.source" } %>
+      <% end %>
+
+      <%= tag.div(class: input_field_classes(:postcode), data: { target: "conditional-field.showhide" }) do %>
+        <%= f.label :postcode, "Postcode", class: "search-for-events__content__input__label" %>
+        <%= f.text_field :postcode %>
+      <% end %>
+
+      <%= tag.div(class: input_field_classes(:month)) do %>
+          <%= f.label :month, "Month", class: "search-for-events__content__input__label" %>
+          <%= f.select :month, f.object.available_months %>
+      <% end %>
+    </div>
+
+    <% if f.object.errors.any? %>
+      <div class="search-for-events__content__errors">
+        <% f.object.errors.messages.values.flatten.each do |error_message| %>
+          <%= tag.div(error_message) %>
+        <% end %>
+      </div>
+    <% end %>
+
+    <div class="search-for-events__content__update">
+      <button class="request-button">Update results <%= helpers.fas_icon "sync" %></button>
+    </div>
+  <% end %>
+</div>
