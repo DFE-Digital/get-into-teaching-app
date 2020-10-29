@@ -55,6 +55,19 @@ describe "View events by category" do
     end
   end
 
+  context "filtering the results" do
+    let(:postcode) { "TE57 ING" }
+    let(:radius) { 30 }
+    let(:filter) { { postcode: postcode, quantity_per_type: nil, radius: radius, start_after: nil, start_before: nil, type_id: nil } }
+
+    it "queries events for the correct category" do
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
+      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:search_teaching_events_indexed_by_type).with(filter.merge(type_id: type_id, quantity_per_type: 1_000))
+      get event_category_events_path("school-and-university-events", events_search: { distance: radius, postcode: postcode })
+    end
+  end
+
   context "when a category does not exist" do
     before do
       get event_category_events_path("non-existant")
