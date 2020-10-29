@@ -6,6 +6,12 @@ describe EventStepsController do
   include_context "stub latest privacy policy api"
   include_context "stub event add attendee api"
 
+  it_behaves_like "a controller with a #resend_verification action" do
+    def perform_request
+      get resend_verification_event_steps_path(readable_event_id, redirect_path: "redirect/path")
+    end
+  end
+
   let(:readable_event_id) { "123" }
   let(:model) { Events::Steps::PersonalDetails }
   let(:step_path) { event_step_path readable_event_id, model.key }
@@ -98,17 +104,5 @@ describe EventStepsController do
       response
     end
     it { is_expected.to have_http_status :success }
-  end
-
-  describe "#resend_verification" do
-    subject do
-      get resend_verification_event_steps_path(readable_event_id, redirect_path: "redirect/path")
-      response
-    end
-
-    it do
-      is_expected.to redirect_to \
-        controller.send(:authenticate_path, verification_resent: true)
-    end
   end
 end

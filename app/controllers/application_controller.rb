@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   include UtmCodes
 
   rescue_from ActionController::RoutingError, with: :render_not_found
+  rescue_from GetIntoTeachingApiClient::ApiError, with: :handle_api_error
 
   before_action :http_basic_authenticate
   before_action :record_utm_codes
@@ -12,8 +13,18 @@ class ApplicationController < ActionController::Base
 
 private
 
+  def handle_api_error(error)
+    render_too_many_requests && return if error.code == 429
+
+    raise
+  end
+
   def render_not_found
     render template: "errors/not_found", status: :not_found
+  end
+
+  def render_too_many_requests
+    render template: "errors/too_many_requests", status: :too_many_requests
   end
 
   def http_basic_authenticate

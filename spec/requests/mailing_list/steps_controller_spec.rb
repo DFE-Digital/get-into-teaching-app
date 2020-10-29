@@ -6,6 +6,12 @@ describe MailingList::StepsController do
   include_context "stub latest privacy policy api"
   include_context "stub mailing list add member api"
 
+  it_behaves_like "a controller with a #resend_verification action" do
+    def perform_request
+      get resend_verification_mailing_list_steps_path(redirect_path: "redirect/path")
+    end
+  end
+
   let(:model) { MailingList::Steps::Name }
   let(:step_path) { mailing_list_step_path model.key }
 
@@ -79,17 +85,5 @@ describe MailingList::StepsController do
       response
     end
     it { is_expected.to have_http_status :success }
-  end
-
-  describe "#resend_verification" do
-    subject do
-      get resend_verification_mailing_list_steps_path(redirect_path: "redirect/path")
-      response
-    end
-
-    it do
-      is_expected.to redirect_to \
-        controller.send(:authenticate_path, verification_resent: true)
-    end
   end
 end
