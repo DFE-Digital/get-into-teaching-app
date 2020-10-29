@@ -70,7 +70,7 @@ describe Events::Search do
     end
   end
 
-  describe "#query_events" do
+  shared_examples "interrogation" do
     subject { build :events_search }
     before { allow(subject).to receive(:valid?).and_return is_valid }
 
@@ -81,13 +81,31 @@ describe Events::Search do
         postcode: subject.postcode,
         start_after: Date.new(2020, 7, 1),
         start_before: Date.new(2020, 7, 31),
-        quantity_per_type: described_class::RESULTS_PER_TYPE,
+        quantity_per_type: expected_limit,
       }
+    end
+
+    context "contextual validation" do
+      let(:is_valid) { true }
+      after { subject.send(*args) }
+
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+          receive(:search_teaching_events_indexed_by_type).and_return([])
+      end
+
+      specify "is validated in the correct context" do
+        if validation_context
+          expect(subject).to receive(:valid?).with(validation_context)
+        else
+          expect(subject).to receive(:valid?).with(no_args)
+        end
+      end
     end
 
     context "when valid" do
       let(:is_valid) { true }
-      after { subject.query_events }
+      after { subject.send(*args) }
 
       it "calls the API" do
         expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -113,5 +131,20 @@ describe Events::Search do
         subject.query_events
       end
     end
+  end
+
+  describe "#query_events" do
+    let(:expected_limit) { described_class::RESULTS_PER_TYPE }
+    let(:args) { [:query_events] }
+    let(:validation_context) { :search }
+    include_examples "interrogation"
+  end
+
+  describe "#filter_events" do
+    let(:provided_limit) { 50 }
+    let(:expected_limit) { provided_limit }
+    let(:validation_context) { nil }
+    let(:args) { [:filter_events, provided_limit] }
+    include_examples "interrogation"
   end
 end
