@@ -10,6 +10,23 @@ describe Events::SearchComponent, type: "component" do
     expect(page).to have_css("form[action='#{path}'][method='get']")
   end
 
+  describe "heading" do
+    context "when unset" do
+      specify %(the title is 'Search for events') do
+        expect(page).to have_css("h2", text: "Search for events")
+      end
+    end
+
+    context "when overridden" do
+      let(:new_heading) { "Search for Awesome events" }
+      subject! { render_inline(Events::SearchComponent.new(search, path, heading: new_heading)) }
+
+      specify %(the title is overridden) do
+        expect(page).to have_css("h2", text: new_heading)
+      end
+    end
+  end
+
   describe "fields" do
     [
       { attribute: :type, label: "Event type", element: :select },

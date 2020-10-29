@@ -1,10 +1,12 @@
 module Events
   class SearchComponent < ViewComponent::Base
-    attr_accessor :search, :path
+    attr_accessor :search, :path, :include_type, :heading
 
-    def initialize(search, path)
-      @search = search
-      @path   = path
+    def initialize(search, path, include_type: true, heading: "Search for events")
+      @search       = search
+      @path         = path
+      @include_type = include_type
+      @heading      = heading
     end
 
     def input_field_classes(field)
