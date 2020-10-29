@@ -9,8 +9,24 @@
   mailinglist: false 
 %>
 
-<section class="types-of-event content container-1000">
-
+<section class="types-of-event">
+  <div class="content container-1000">
     <%= back_link(internal_referer || events_path, text: "All events") %>
-    <%= render partial: "event_group", locals: { type_id: @type.id, events: @events } %>
+
+    <div class="events-featured__text">
+      <p><%= safe_html_format(t("find_an_event.types.#{@type.id}")) %></p>
+    </div>
+  </div>
+</section>
+
+<section class="search-for-events">
+  <div class="container-1000">
+    <%= render Events::SearchComponent.new(@event_search, search_events_path(anchor: "searchforevents")) %>
+  </div>
+</section>
+
+<section class="types-of-event content container-1000">
+  <div class="events-featured__list">
+    <%= render partial: "event", collection: @events %>
+  </div>
 </section>
