@@ -1,5 +1,5 @@
 terraform {
   backend "azurerm" {
-    container_name       = "pass-tfstate"
+    container_name = "pass-tfstate"
   }
 }

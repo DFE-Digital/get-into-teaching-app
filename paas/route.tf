@@ -1,17 +1,17 @@
 data "cloudfoundry_route" "app_route_internet" {
-    count = var.additional_routes
-    domain = data.cloudfoundry_domain.internet.id
-    hostname = var.paas_additional_route_name
+  count    = var.additional_routes
+  domain   = data.cloudfoundry_domain.internet.id
+  hostname = var.paas_additional_route_name
 }
 
 resource "cloudfoundry_route" "app_route_cloud" {
-    domain = data.cloudfoundry_domain.cloudapps.id
-    hostname =  var.paas_app_route_name
-    space = data.cloudfoundry_space.space.id
+  domain   = data.cloudfoundry_domain.cloudapps.id
+  hostname = var.paas_app_route_name
+  space    = data.cloudfoundry_space.space.id
 }
 
 resource "cloudfoundry_route" "app_route_internal" {
-    domain = data.cloudfoundry_domain.internal.id
-    hostname =  "${var.paas_app_route_name}-internal"
-    space = data.cloudfoundry_space.space.id
+  domain   = data.cloudfoundry_domain.internal.id
+  hostname = "${var.paas_app_route_name}-internal"
+  space    = data.cloudfoundry_space.space.id
 }

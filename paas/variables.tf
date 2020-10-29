@@ -2,31 +2,35 @@
 # or set with environment variables TF_VAR_xxxx
 
 variable user {
-    default = "get-into-teaching-tech@digital.education.gov.uk"
+  default = "get-into-teaching-tech@digital.education.gov.uk"
 }
 
 variable api_url {
-     default = "https://api.london.cloud.service.gov.uk"
+  default = "https://api.london.cloud.service.gov.uk"
 }
 
 variable password {}
 
 
 variable "application_stopped" {
-   default = false
+  default = false
 }
 
 variable "paas_space" {
-   default = "sandbox"
+  default = "sandbox"
 }
 
 variable "paas_org_name" {
-   default = "dfe-teacher-services"
+  default = "dfe-teacher-services"
 }
 
 variable "instances" {
   default = 1
 }
+
+variable "docker_username" {}
+variable "docker_password" {}
+
 
 variable "logging" {
   default = 1
@@ -37,29 +41,29 @@ variable "additional_routes" {
 }
 
 variable "paas_additional_route_name" {
-   default = ""
+  default = ""
 }
 
 variable "paas_app_route_name" {}
 
 variable "paas_logging_name" {
-   default = "logit-ssl-drain"
+  default = "logit-ssl-drain"
 }
 
 variable "paas_redis_1_name" {
-   default = "get-into-teaching-dev-redis-svc"
+  default = "get-into-teaching-dev-redis-svc"
 }
 
 variable "paas_app_application_name" {
-   default = "dfe-teacher-services-app"
+  default = "dfe-teacher-services-app"
 }
 
 variable "paas_app_docker_image" {
-   default = "dfedigital/get-into-teaching-frontend:latest"
+  default = "dfedigital/get-into-teaching-frontend:latest"
 }
 
 variable "strategy" {
-   default = "blue-green"
+  default = "blue-green"
 }
 
 variable "HTTPAUTH_PASSWORD" {}
