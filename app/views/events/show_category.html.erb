@@ -21,7 +21,13 @@
 
 <section class="search-for-events">
   <div class="container-1000">
-    <%= render Events::SearchComponent.new(@event_search, search_events_path(anchor: "searchforevents")) %>
+    <%= render Events::SearchComponent.new(
+      @event_search,
+      event_category_events_path(params[:category]),
+      include_type: false,
+      heading: "Search for #{category_name}",
+      allow_blank_month: true,
+    ) %>
   </div>
 </section>
 

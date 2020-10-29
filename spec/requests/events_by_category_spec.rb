@@ -34,6 +34,14 @@ describe "View events by category" do
     it "does not display the 'See all events' button" do
       expect(response.body.scan(/see all train to teach events/i)).to be_empty
     end
+
+    it "displays an event filter" do
+      expect(response.body).to match(/Search for train to teach events/i)
+    end
+
+    it "hides the type field" do
+      expect(response.body).not_to match(/Event type/i)
+    end
   end
 
   context "when viewing the schools and university events category" do

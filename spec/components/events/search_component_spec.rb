@@ -45,5 +45,13 @@ describe Events::SearchComponent, type: "component" do
         end
       end
     end
+
+    describe "optionally-blank month field" do
+      subject! { render_inline(Events::SearchComponent.new(search, path, allow_blank_month: true)) }
+
+      specify "there should be a blank option with the text '#{Events::SearchComponent::BLANK_MONTH_TEXT}'" do
+        expect(page).to have_css("option[value='']", text: Events::SearchComponent::BLANK_MONTH_TEXT)
+      end
+    end
   end
 end

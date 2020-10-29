@@ -29,9 +29,9 @@ class EventsController < ApplicationController
 
     render(template: "errors/not_found", status: :not_found) && return if @type.nil?
 
-    @event_search = Events::Search.new(type: @type.id, **event_filter_params)
-    results = @event_search.filter_events(MAXIMUM_EVENTS_IN_CATEGORY)
-    @events = results[@type.id.to_sym]
+    @event_search = Events::Search.new(event_filter_params.merge(type: @type.id))
+    all_results = @event_search.filter_events(MAXIMUM_EVENTS_IN_CATEGORY)
+    @events = all_results[@type.id.to_sym]
   end
 
 private
