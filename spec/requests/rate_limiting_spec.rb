@@ -1,37 +1,70 @@
 require "rails_helper"
 
 describe "Rate limiting" do
-  let(:memory_store) { ActiveSupport::Cache.lookup_store(:memory_store) }
+  include_context "stub types api"
+  include_context "stub candidate create access token api"
 
-  before { allow(Rack::Attack.cache).to receive(:store) { memory_store } }
+  let(:ip) { "1.2.3.4" }
 
-  describe "POST /csp_reports" do
-    let(:limit) { 1 }
-    let(:ip) { "1.2.3.4" }
+  it_behaves_like "an IP-based rate limited endpoint", "POST /csp_reports", 5, 1.minute do
+    def perform_request
+      post csp_reports_path, params: {}.to_json, headers: { "REMOTE_ADDR" => ip }
+    end
+  end
 
-    before { limit.times { post csp_reports_path, params: {}.to_json, headers: { "REMOTE_ADDR" => ip } } }
+  it_behaves_like "an IP-based rate limited endpoint", "PATCH /mailinglist/signup/name", 5, 1.minute do
+    def perform_request
+      key = MailingList::Steps::Name.model_name.param_key
+      params = { key => attributes_for(:mailing_list_name) }
+      patch mailing_list_step_path(:name), params: params, headers: { "REMOTE_ADDR" => ip }
+    end
+  end
 
-    subject { response.status }
+  it_behaves_like "an IP-based rate limited endpoint", "GET */resend_verification", 5, 1.minute do
+    def perform_request
+      get resend_verification_mailing_list_steps_path(redirect_path: "redirect/path"), headers: { "REMOTE_ADDR" => ip }
+    end
+  end
 
-    context "when fewer than rate limit" do
-      let(:limit) { 4 }
+  it_behaves_like "an IP-based rate limited endpoint", "PATCH */mailinglist/signup/contact", 5, 1.minute do
+    def perform_request
+      key = MailingList::Steps::Contact.model_name.param_key
+      params = { key => attributes_for(:mailing_list_contact) }
+      patch mailing_list_step_path(:contact), params: params, headers: { "REMOTE_ADDR" => ip }
+    end
+  end
 
-      it { is_expected.to_not eq(429) }
+  describe "event endpoint rate limiting" do
+    let(:readable_event_id) { "123" }
+
+    before do
+      event = build(:event_api, readable_id: readable_event_id)
+
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:get_teaching_event).and_return event
     end
 
-    context "when more than rate limit" do
-      let(:limit) { 6 }
-
-      it do
-        is_expected.to eq(429)
+    it_behaves_like "an IP-based rate limited endpoint", "PATCH /events/:id/apply/personal_details", 5, 1.minute do
+      def perform_request
+        key = Events::Steps::PersonalDetails.model_name.param_key
+        params = { key => attributes_for(:events_personal_details) }
+        patch event_step_path(readable_event_id, :personal_details), params: params, headers: { "REMOTE_ADDR" => ip }
       end
+    end
 
-      context "when time restriction has passed" do
-        it "allows another request" do
-          travel 1.minute
-          post csp_reports_path, params: {}.to_json, headers: { "REMOTE_ADDR" => ip }
-          expect(response.status).to_not eq(429)
-        end
+    it_behaves_like "an IP-based rate limited endpoint", "PATCH */events/:id/apply/personalised_updates", 5, 1.minute do
+      def perform_request
+        key = Events::Steps::PersonalisedUpdates.model_name.param_key
+        params = { key => attributes_for(:events_personalised_updates) }
+        patch event_step_path(readable_event_id, :personalised_updates), params: params, headers: { "REMOTE_ADDR" => ip }
+      end
+    end
+
+    it_behaves_like "an IP-based rate limited endpoint", "PATCH */events/:id/apply/further_details", 5, 1.minute do
+      def perform_request
+        key = Events::Steps::FurtherDetails.model_name.param_key
+        params = { key => attributes_for(:events_further_details) }
+        patch event_step_path(readable_event_id, :further_details), params: params, headers: { "REMOTE_ADDR" => ip }
       end
     end
   end
