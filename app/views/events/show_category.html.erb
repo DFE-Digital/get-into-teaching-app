@@ -11,7 +11,7 @@
 
 <section class="types-of-event">
   <div class="content container-1000">
-    <%= back_link(internal_referer || events_path, text: "All events") %>
+    <%= back_link(events_path, text: "Back") %>
 
     <div class="events-featured__text">
       <p><%= safe_html_format(t("find_an_event.types.#{@type.id}")) %></p>
