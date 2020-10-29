@@ -51,27 +51,35 @@ module Events
     end
 
     def query_events
-      valid? ? query_events_api : {}
+      valid?(:search) ? query_events_api : {}
+    end
+
+    def filter_events(limit)
+      valid? ? query_events_api(limit) : {}
     end
 
   private
 
-    def query_events_api
+    def query_events_api(limit = RESULTS_PER_TYPE)
       GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events_indexed_by_type(
         type_id: type,
         radius: distance,
         postcode: postcode&.strip,
         start_after: start_of_month,
         start_before: end_of_month,
-        quantity_per_type: RESULTS_PER_TYPE,
+        quantity_per_type: limit,
       )
     end
 
     def start_of_month
+      return nil if month.blank?
+
       DateTime.parse("#{month}-01 00:00:00").beginning_of_month
     end
 
     def end_of_month
+      return nil if month.blank?
+
       start_of_month.end_of_month
     end
   end

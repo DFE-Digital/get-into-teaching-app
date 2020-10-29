@@ -37,10 +37,12 @@ describe "View events by category" do
   end
 
   context "when viewing the schools and university events category" do
+    let(:blank_search) { { postcode: nil, quantity_per_type: nil, radius: nil, start_after: nil, start_before: nil, type_id: nil } }
+
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_indexed_by_type).with(type_id: type_id.to_s, quantity_per_type: 1_000)
+        receive(:search_teaching_events_indexed_by_type).with(blank_search.merge(type_id: type_id, quantity_per_type: 1_000))
       get event_category_events_path("school-and-university-events")
     end
   end
