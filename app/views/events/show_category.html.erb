@@ -23,7 +23,7 @@
   <div class="container-1000">
     <%= render Events::SearchComponent.new(
       @event_search,
-      event_category_events_path(params[:category]),
+      event_category_events_path(pluralised_category_name(@type.id).parameterize),
       include_type: false,
       heading: "Search for #{category_name}",
       allow_blank_month: true,
