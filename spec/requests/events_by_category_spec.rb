@@ -3,6 +3,8 @@ require "rails_helper"
 describe "View events by category" do
   include_context "stub types api"
 
+  let(:expected_limit) { EventsController::MAXIMUM_EVENTS_IN_CATEGORY }
+
   let(:events) do
     5.times.collect do |index|
       start_at = Time.zone.today.at_beginning_of_month + index.days
@@ -50,7 +52,7 @@ describe "View events by category" do
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_indexed_by_type).with(blank_search.merge(type_id: type_id, quantity_per_type: 1_000))
+        receive(:search_teaching_events_indexed_by_type).with(blank_search.merge(type_id: type_id, quantity_per_type: expected_limit))
       get event_category_events_path("school-and-university-events")
     end
   end
@@ -63,7 +65,7 @@ describe "View events by category" do
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_indexed_by_type).with(filter.merge(type_id: type_id, quantity_per_type: 1_000))
+        receive(:search_teaching_events_indexed_by_type).with(filter.merge(type_id: type_id, quantity_per_type: expected_limit))
       get event_category_events_path("school-and-university-events", events_search: { distance: radius, postcode: postcode })
     end
   end

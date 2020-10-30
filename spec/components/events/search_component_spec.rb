@@ -31,7 +31,7 @@ describe Events::SearchComponent, type: "component" do
   describe "error messages" do
     specify "any error messages should be rendered" do
       component.error_messages.each do |message|
-        expect(page).to have_css('div', text: message)
+        expect(page).to have_css("div", text: message)
       end
     end
   end
