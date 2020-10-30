@@ -4,7 +4,7 @@ describe "Instrumentation" do
   let(:registry) { Prometheus::Client.registry }
 
   describe "process_action.action_controller" do
-    after { get cookies_path }
+    after { get cookies_path(query: "param") }
 
     it "increments the :app_requests_total metric" do
       metric = registry.get(:app_requests_total)
@@ -28,7 +28,7 @@ describe "Instrumentation" do
     it "observes the :app_render_view_ms metric" do
       metric = registry.get(:app_render_view_ms)
       expect(metric).to receive(:observe).with(instance_of(Float), labels: {
-        identifier: Rails.root.join("app/views/cookie_preferences/show.html.erb").to_s,
+        identifier: "cookie_preferences/show.html.erb",
       }).once
     end
   end
@@ -40,7 +40,7 @@ describe "Instrumentation" do
       metric = registry.get(:app_render_partial_ms)
       allow(metric).to receive(:observe)
       expect(metric).to receive(:observe).with(instance_of(Float), labels: {
-        identifier: Rails.root.join("app/views/sections/_head.html.erb").to_s,
+        identifier: "sections/_head.html.erb",
       }).once
     end
   end

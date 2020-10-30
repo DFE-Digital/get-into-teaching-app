@@ -7,6 +7,8 @@ ActiveSupport::Notifications.subscribe "process_action.action_controller" do |*a
   labels = { path: nil, method: nil, status: nil }
   labels.merge!(payload.slice(*labels.keys))
 
+  labels[:path] = labels[:path].split("?").first if labels[:path]
+
   metric = prometheus.get(:app_requests_total)
   metric.increment(labels: labels)
 
@@ -27,6 +29,8 @@ ActiveSupport::Notifications.subscribe "render_template.action_view" do |*args|
   labels = { identifier: nil }
   labels.merge!(event.payload.symbolize_keys.slice(*labels.keys))
 
+  labels[:identifier] = labels[:identifier].split("/app/views/").last if labels[:identifier]
+
   metric = prometheus.get(:app_render_view_ms)
   metric.observe(event.duration, labels: labels)
 end
@@ -38,6 +42,8 @@ ActiveSupport::Notifications.subscribe "render_partial.action_view" do |*args|
 
   labels = { identifier: nil }
   labels.merge!(event.payload.symbolize_keys.slice(*labels.keys))
+
+  labels[:identifier] = labels[:identifier].split("/app/views/").last if labels[:identifier]
 
   metric = prometheus.get(:app_render_partial_ms)
   metric.observe(event.duration, labels: labels)
