@@ -16,7 +16,7 @@ module Events
     validates :type, presence: false, inclusion: { in: :available_event_type_ids, allow_nil: true }
     validates :distance, inclusion: { in: :available_distance_keys }, allow_nil: true
     validates :postcode, presence: true, postcode: { allow_blank: true }, if: :distance
-    validates :month, presence: true, format: { with: MONTH_FORMAT, allow_blank: true }
+    validates :month, presence: false, format: { with: MONTH_FORMAT, allow_blank: true }
 
     before_validation { self.distance = nil if distance.blank? }
     before_validation(unless: :distance) { self.postcode = nil }
@@ -50,28 +50,32 @@ module Events
       end
     end
 
-    def query_events
-      valid? ? query_events_api : {}
+    def query_events(limit = RESULTS_PER_TYPE)
+      valid? ? query_events_api(limit) : {}
     end
 
   private
 
-    def query_events_api
+    def query_events_api(limit)
       GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events_indexed_by_type(
         type_id: type,
         radius: distance,
         postcode: postcode&.strip,
         start_after: start_of_month,
         start_before: end_of_month,
-        quantity_per_type: RESULTS_PER_TYPE,
+        quantity_per_type: limit,
       )
     end
 
     def start_of_month
+      return nil if month.blank?
+
       DateTime.parse("#{month}-01 00:00:00").beginning_of_month
     end
 
     def end_of_month
+      return nil if month.blank?
+
       start_of_month.end_of_month
     end
   end

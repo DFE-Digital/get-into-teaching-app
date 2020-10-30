@@ -9,111 +9,6 @@
   margin-bottom: 5px;
 }
 
-.types-of-event-quote {
-
-    &__left {
-        background-color: $yellow;
-        text-align: left;
-        vertical-align: top;
-        padding-bottom: 40px;
-        padding-left: 40px;
-        padding-right: 40px;
-
-        &__graphic__container {
-            text-align: left;
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-
-        &__graphic {
-            display: inline-block;
-            width: 50px;
-            height: 50px;
-            background-color: rgba(255, 255, 255, .9);
-            padding-top: 5px;
-            box-sizing: border-box;
-            transform: rotate(3deg);
-            margin-top: 30px;
-            text-align: center;
-        
-            i {
-                transform: rotate(-3deg);
-            }
-        }
-
-        &__quote {
-            display: inline-block;
-            font-size: 26px;
-            font-weight: bold;
-            text-align: left;
-            vertical-align: top;
-            margin-top: 30px;
-            margin-left: 20px;
-            letter-spacing: 0px;
-            line-height: 1.2;
-
-            &--quotee {
-                font-weight: normal;
-                margin-top: 30px;
-            }
-        }
-    }
-    
-    &__right {
-        display: table-cell;
-        background-color:lightgray;
-        width: 50%;
-        height: 385px;
-        white-space: normal;
-        overflow: hidden;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-        &__mask {
-            background-color: $yellow;
-            height: 110%;
-            width: 60px;
-            transform: rotate(-6deg);
-            margin-left: -20px;
-        }
-    }
-}
-
-.types-of-event-types {
-
-    vertical-align: top;
-    text-align: left;
-    width: 100%;
-
-    &__content {
-
-        box-sizing: border-box;
-        padding-left: 40px;
-        padding-right:20px;
-        padding-top: 20px;
-        padding-bottom: 60px;
-        text-align: left;
-        vertical-align: top;
-        width: calc(100% - 370px);
-
-        ul {
-            padding-left: 20px;
-            list-style-type: square;
-        }
-
-        li {
-            font-size: 19px;
-            line-height: 1.6;
-            color: $purple;
-
-            span {
-                color: $black;
-            }
-        }
-    }
-}
-
 .search-for-events {
     text-align: left;
     background-color: $grey;
@@ -251,18 +146,6 @@
             display: block;
             width: 100%;
         }
-    }
-
-    .types-of-event-types {
-    
-        padding-top: 20px;
-
-        &__content {
-            display: block;
-            width: 100%;
-            margin-right: 40px;
-        }
-
     }
 
     .search-for-events {

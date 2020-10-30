@@ -1,6 +1,6 @@
 <div class="event-box">
     <header class="event-box__header">
-        <h4><%= heading %></h4>
+      <h4><%= heading %></h4>
     </header>
 
     <% unless condensed? %>
@@ -11,11 +11,11 @@
 
     <%= divider %>
 
-    <div class="event-box__content">
-      <% unless condensed? %>
+    <% unless condensed? %>
+      <div class="event-box__content">
         <p><%= description %></p>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
 
     <footer class="event-box__footer">
       <% if type && type != GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] %>

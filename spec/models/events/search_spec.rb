@@ -59,18 +59,20 @@ describe Events::Search do
     end
 
     context "for month" do
-      it { is_expected.to allow_value("2020-01").for :month }
-      it { is_expected.to allow_value("2020-12").for :month }
-      it { is_expected.not_to allow_value("2020-00").for :month }
-      it { is_expected.not_to allow_value("2020-13").for :month }
-      it { is_expected.not_to allow_value("1900-01").for :month }
-      it { is_expected.not_to allow_value("foo").for :month }
-      it { is_expected.not_to allow_value("").for :month }
-      it { is_expected.not_to allow_value(nil).for :month }
+      it { is_expected.to allow_value("2020-01").for(:month) }
+      it { is_expected.to allow_value("2020-12").for(:month) }
+      it { is_expected.to allow_value("").for(:month) }
+      it { is_expected.to allow_value(nil).for(:month) }
+      it { is_expected.not_to allow_value("2020-00").for(:month) }
+      it { is_expected.not_to allow_value("2020-13").for(:month) }
+      it { is_expected.not_to allow_value("1900-01").for(:month) }
+      it { is_expected.not_to allow_value("foo").for(:month) }
     end
   end
 
   describe "#query_events" do
+    let(:default_limit) { described_class::RESULTS_PER_TYPE }
+
     subject { build :events_search }
     before { allow(subject).to receive(:valid?).and_return is_valid }
 
@@ -81,13 +83,13 @@ describe Events::Search do
         postcode: subject.postcode,
         start_after: Date.new(2020, 7, 1),
         start_before: Date.new(2020, 7, 31),
-        quantity_per_type: described_class::RESULTS_PER_TYPE,
+        quantity_per_type: default_limit,
       }
     end
 
     context "when valid" do
       let(:is_valid) { true }
-      after { subject.query_events }
+      after { subject.send(:query_events) }
 
       it "calls the API" do
         expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \

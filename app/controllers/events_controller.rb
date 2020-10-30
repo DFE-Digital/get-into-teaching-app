@@ -29,12 +29,9 @@ class EventsController < ApplicationController
 
     render(template: "errors/not_found", status: :not_found) && return if @type.nil?
 
-    api = GetIntoTeachingApiClient::TeachingEventsApi.new
-    events_by_type = api.search_teaching_events_indexed_by_type(
-      type_id: @type.id,
-      quantity_per_type: MAXIMUM_EVENTS_IN_CATEGORY,
-    )
-    @events = events_by_type[@type.id.to_sym]
+    @event_search = Events::Search.new(event_filter_params.merge(type: @type.id))
+    all_results = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
+    @events = all_results[@type.id.to_sym]
   end
 
 private
@@ -59,5 +56,13 @@ private
 
     (params[Events::Search.model_name.param_key] || defaults)
       .permit(:type, :distance, :postcode, :month)
+  end
+
+  # filtering is like searching but limited to a single event type. A custom
+  # type isn't required and a month isn't enforced
+  def event_filter_params
+    return {} unless (event_params = params[Events::Search.model_name.param_key])
+
+    event_params.permit(:distance, :postcode, :month)
   end
 end
