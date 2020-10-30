@@ -27,5 +27,9 @@ module Events
         {}
       end
     end
+
+    def error_messages
+      search.errors.messages.values.flatten
+    end
   end
 end

@@ -1,10 +1,11 @@
 require "rails_helper"
 
 describe Events::SearchComponent, type: "component" do
-  let(:search) { build(:events_search) }
+  let(:search) { build(:events_search, :invalid) }
   let(:path) { "/some/path" }
 
-  subject! { render_inline(Events::SearchComponent.new(search, path)) }
+  let(:component) { Events::SearchComponent.new(search, path) }
+  subject! { render_inline(component) }
 
   specify "builds a search form" do
     expect(page).to have_css("form[action='#{path}'][method='get']")
@@ -23,6 +24,14 @@ describe Events::SearchComponent, type: "component" do
 
       specify %(the title is overridden) do
         expect(page).to have_css("h2", text: new_heading)
+      end
+    end
+  end
+
+  describe "error messages" do
+    specify "any error messages should be rendered" do
+      component.error_messages.each do |message|
+        expect(page).to have_css('div', text: message)
       end
     end
   end

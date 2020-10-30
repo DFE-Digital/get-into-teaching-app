@@ -4,5 +4,10 @@ FactoryBot.define do
     distance { Events::Search.new.available_distances.first[0] }
     postcode { "TE57 1NG" }
     month { "2020-07" }
+
+    trait :invalid do
+      distance { 20 }
+      postcode { nil }
+    end
   end
 end
