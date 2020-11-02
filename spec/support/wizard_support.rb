@@ -55,6 +55,17 @@ shared_examples "an issue verification code wizard step" do
         expect(wizardstore["authenticate"]).to be_falsy
       end
     end
+
+    context "when the API rate limits the request" do
+      let(:too_many_requests_error) { GetIntoTeachingApiClient::ApiError.new(code: 429) }
+
+      it "will re-raise the ApiError (to be rescued by the ApplicationController)" do
+        allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
+          .and_raise(too_many_requests_error)
+        expect { subject.save }.to raise_error(too_many_requests_error)
+        expect(wizardstore["authenticate"]).to be_nil
+      end
+    end
   end
 end
 
