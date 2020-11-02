@@ -1,0 +1,7 @@
+# this file will be replaced with config/redirects.yml from the content repo
+# during the docker build. The values below are used by the redirection tests
+redirects:
+  "/old-path": "/new-path"
+  "/old/deeply-nested/path": "/new/deeply-nested/path"
+  "/converging-path-one": "/converged-path"
+  "/converging-path-two": "/converged-path"
