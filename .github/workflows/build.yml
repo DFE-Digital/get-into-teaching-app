@@ -55,7 +55,7 @@ jobs:
                  ${{env.APP_REPOSITORY}}:sha-${{ steps.sha.outputs.short }}
           push: true
           build-args: |
-                      CONTENT_SHA=${{ steps.sha.outputs.short }}
+                      SHA=${{ steps.sha.outputs.short }}
 
       - name: Set DOCKER_IMAGE environment variable
         id:   docker
