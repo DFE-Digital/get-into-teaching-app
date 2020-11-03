@@ -57,10 +57,7 @@ Rails.application.routes.draw do
   )
   get "/life-as-a-teacher/my-story-into-teaching/*story/", to: "stories#index"
 
-  get "/guidance", to: "pages#showblank", page: "guidance"
-  get "/financial-support-for-teacher-training", to: "pages#showblank", page: "financial-support-for-teacher-training"
-  get "/train-to-become-a-teacher", to: "pages#showblank", page: "train-to-become-a-teacher"
-  get "/returning-to-teaching-guidance", to: "pages#showblank", page: "returning-to-teaching-guidance"
+  get "/guidance/*page", to: "guidance#show"
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
     redirect_rules.each { |from, to| get from, to: redirect(to) }

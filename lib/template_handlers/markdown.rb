@@ -38,7 +38,7 @@ module TemplateHandlers
   private
 
     def render_markdown
-      Kramdown::Document.new(markdown).to_html
+      Kramdown::Document.new(markdown, { toc_levels: 1..2 }).to_html
     end
 
     def autolink_html(content)
