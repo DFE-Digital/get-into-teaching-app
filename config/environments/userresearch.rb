@@ -7,4 +7,6 @@ Rails.application.configure do
     "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
   config.x.static_pages.disable_caching = true
   config.x.utm_codes = true
+
+  Rack::Attack.enabled = false
 end
