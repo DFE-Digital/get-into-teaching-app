@@ -38,8 +38,10 @@ class EventsController < ApplicationController
 private
 
   def paginate(events)
+    return [] if events.blank?
+
     Kaminari
-      .paginate_array(events, total_count: events.size)
+      .paginate_array(events, total_count: events&.size)
       .page(params[:page])
       .per(EVENTS_PER_PAGE)
   end

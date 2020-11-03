@@ -37,6 +37,8 @@
   </div>
 </section>
 
-<div class="event-pagination content container-1000">
-  <%= paginate @events %>
-</div>
+<% if @events.any? %>
+  <div class="event-pagination content container-1000">
+    <%= paginate @events %>
+  </div>
+<% end %>

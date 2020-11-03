@@ -70,6 +70,55 @@ describe "View events by category" do
     end
   end
 
+  context "pagination" do
+    before { get(path) }
+
+    let(:events_per_page) { EventsController::EVENTS_PER_PAGE }
+    let(:parsed_response) { Nokogiri.parse(response.body) }
+
+    context "when there are more than one page's worth of events" do
+      let(:extra_events) { 3 }
+      let(:path) { event_category_events_path("train-to-teach-events") }
+      let(:events) { build_list(:event_api, events_per_page + extra_events) }
+
+      context "pagination links" do
+        specify "only the first page of events is shown" do
+          expect(parsed_response.css(".event-box")).to have_attributes(size: 9)
+        end
+
+        specify "the navigation links should be visible" do
+          expect(parsed_response.css("nav.pagination")).to be_present
+        end
+
+        specify "there should be a link to page 2 and a next link" do
+          links = parsed_response.css("nav.pagination a")
+          expect(links).to have_attributes(size: 2)
+
+          %w[2 Next].each.with_index do |expected_link, i|
+            expect(links[i].text).to match(expected_link)
+          end
+        end
+      end
+
+      context "accessing later pages" do
+        let(:path) { event_category_events_path("train-to-teach-events", page: 2) }
+
+        specify "only the first page of events is shown" do
+          expect(parsed_response.css(".event-box")).to have_attributes(size: extra_events)
+        end
+      end
+    end
+
+    context "when there are fewer than one page's worth of events" do
+      let(:path) { event_category_events_path("train-to-teach-events") }
+      let(:events) { build_list(:event_api, events_per_page - 3) }
+
+      specify "no pagination links are shown" do
+        expect(parsed_response.css("nav.pagination")).to be_empty
+      end
+    end
+  end
+
   context "when a category does not exist" do
     before do
       get event_category_events_path("non-existant")
