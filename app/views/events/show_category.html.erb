@@ -35,7 +35,8 @@
   <div class="events-featured__list">
     <%= render partial: "event", collection: @events %>
   </div>
-  <div class="events-featured__pagination">
-    <%= paginate @events %>
-  </div>
 </section>
+
+<div class="event-pagination content container-1000">
+  <%= paginate @events %>
+</div>
