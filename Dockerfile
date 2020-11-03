@@ -5,7 +5,7 @@ ENV RAILS_ENV=production \
     RAILS_SERVE_STATIC_FILES=true \
     RAILS_LOG_TO_STDOUT=true \
     RACK_TIMEOUT_SERVICE_TIMEOUT=60 \
-    BUNDLE_BUILD__SASSC=--disable-march-tune-native
+    BUNDLE_WITHOUT=development
 
 RUN mkdir /app
 WORKDIR /app
@@ -27,7 +27,7 @@ RUN gem install bundler --version=2.1.4
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./
 # hadolint ignore=SC2046
-RUN bundle install --without development --jobs=$(nproc --all) && \
+RUN bundle install --jobs=$(nproc --all) && \
     rm -rf /root/.bundle/cache && \
     rm -rf /usr/local/bundle/cache
 
