@@ -92,6 +92,12 @@ jobs:
           docker run -t --rm -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}} \
             rubocop app config db lib spec Gemfile --format json --out=rubocop-result.json
 
+      - name:  Keep Rubocop output
+        uses: actions/upload-artifact@v2
+        with:
+          name: Rubocop_results
+          path: ${{ github.workspace }}/rubocop-result.json
+
       - name: Run Brakeman static security scanner
         run: |-
           docker run -t --rm -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}}  brakeman --no-pager
