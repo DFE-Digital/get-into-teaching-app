@@ -89,8 +89,8 @@ jobs:
 
       - name: Lint Ruby
         run: |-
-          docker run -t --rm -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}} \
-            rubocop app config db lib spec Gemfile --format json --out=rubocop-result.json
+          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}} \
+            rubocop app config db lib spec Gemfile --format json --out=/app/out/rubocop-result.json
 
       - name:  Keep Rubocop output
         uses: actions/upload-artifact@v2
