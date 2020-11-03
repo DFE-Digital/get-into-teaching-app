@@ -84,3 +84,14 @@
         }
     }
 }
+
+.secondary-button {
+  @include button;
+  background-color: $grey-light;
+  color: $black !important ;
+  text-decoration: none !important;
+
+  &:hover {
+    background-color: $grey-mid ;
+  }
+}
