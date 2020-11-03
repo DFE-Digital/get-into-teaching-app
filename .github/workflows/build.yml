@@ -106,6 +106,7 @@ jobs:
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
            -Dsonar.testExecutionReportPaths=out/test-report.xml
            -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/.resultset.json
+           -Dsonar.ruby.rubocop.reportPaths=${PWD}/rubocop-result.json
 
       - name: Slack Notification
         if: failure()
