@@ -72,7 +72,7 @@ describe('CookiePreferencesController', () => {
 
     it('should save cookie', () => {
       const data = getJsonCookie() ;
-      expect(data['functional']).toBe(true) ;
+      expect(data['functional']).toBe(undefined) ;
     })
   })
 
@@ -80,11 +80,11 @@ describe('CookiePreferencesController', () => {
     beforeEach(() => { initCookie(); initPage() })
 
     it("cookie should only be updated when they click save", () => {
-      expect(getJsonCookie()).toEqual({ first: true, functional: true, second: false })
+      expect(getJsonCookie()).toEqual({ first: true, second: false })
       document.getElementById('first-no').click()
-      expect(getJsonCookie()).toEqual({ first: true, functional: true, second: false })
+      expect(getJsonCookie()).toEqual({ first: true, second: false })
       document.getElementById('second-yes').click()
-      expect(getJsonCookie()).toEqual({ first: true, functional: true, second: false })
+      expect(getJsonCookie()).toEqual({ first: true, second: false })
 
       document.querySelector('button').click()
       expect(getJsonCookie()).toEqual({ first: false, functional: true, second: true })
