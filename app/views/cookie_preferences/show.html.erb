@@ -1,6 +1,6 @@
 <section class="event-info content container-1000" role="main" id="main-content">
   <div class="content__left">
-    <%= back_link %>
+    <%= back_link internal_referer || root_path %>
 
     <h1>Cookies on Get Into Teaching</h1>
 
@@ -178,7 +178,7 @@
             </span>
 
             <br />
-            <%= link_to "Back to page", :back, class: "secondary-button" %>
+            <%= link_to "Back to page", internal_referer || root_path, class: "secondary-button" %>
           </p>
 
           <p>
