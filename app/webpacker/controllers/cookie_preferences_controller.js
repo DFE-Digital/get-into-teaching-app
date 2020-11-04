@@ -6,7 +6,6 @@ export default class extends Controller {
 
   connect() {
     this.cookiePreferences = new CookiePreferences ;
-    this.cookiePreferences.writeCookie(this.cookiePreferences.all) ;
     this.assignRadios() ;
   }
 
@@ -23,9 +22,27 @@ export default class extends Controller {
   }
 
   toggle(event) {
-    const category = event.target.name.toString().replace(/^cookies-/, '')
-    const value = event.target.value ;
+    this.data.set('save-state', 'unsaved')
+  }
 
-    this.cookiePreferences.setCategory(category, value) ;
+  save(event) {
+    event.preventDefault() ;
+
+    for (const categoryFieldset of this.categoryTargets) {
+      const category = categoryFieldset.getAttribute('data-category')
+      const field = categoryFieldset.querySelector('input[type="radio"]:checked')
+
+      if (field) {
+        this.cookiePreferences.setCategory(category, field.value)
+      }
+    }
+
+    this.data.set('save-state', 'saving')
+    window.setTimeout(this.finishSave.bind(this), 600)
+  }
+
+  finishSave() {
+    if (this.data.get('save-state') == 'saving')
+      this.data.set('save-state', 'saved')
   }
 }
