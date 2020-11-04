@@ -17,7 +17,7 @@ module Events
     end
 
     def datetime
-      format_event_date(event, stacked: false)
+      format_event_date(event, stacked: true)
     end
 
     def type_name

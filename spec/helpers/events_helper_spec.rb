@@ -12,18 +12,18 @@ describe EventsHelper, type: "helper" do
     subject { format_event_date event, stacked: stacked }
 
     context "for single day event" do
-      it { is_expected.to eql "June 1st, 2020 <br> 10:00 - 12:00" }
+      it { is_expected.to eql "1 June 2020 <br> 10:00 - 12:00" }
     end
 
     context "for multi day event" do
       let(:enddate) { DateTime.new(2020, 6, 4, 14) }
-      it { is_expected.to eql "June 1st, 2020 10:00 to June 4th, 2020 14:00" }
+      it { is_expected.to eql "1 June 2020 10:00 to 4 June 2020 14:00" }
     end
 
     context "when not stacked" do
       let(:stacked) { false }
 
-      it { is_expected.to eql "June 1st, 2020 at 10:00 - 12:00" }
+      it { is_expected.to eql "1 June 2020 at 10:00 - 12:00" }
     end
   end
 
