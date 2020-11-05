@@ -1,4 +1,4 @@
-### JIRA ticket number
+### Trello card
 
 ### Context
 
