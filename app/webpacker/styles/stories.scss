@@ -159,12 +159,7 @@
         margin-bottom: 30px;
 
         &__thumb {
-            background-color: grey;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-            min-width: 200px;
-            height: 200px;
+            object-fit: cover;
         }
 
         &__label {
