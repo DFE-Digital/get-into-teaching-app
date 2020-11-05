@@ -201,13 +201,15 @@
     }
     &__step {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
+
     &__link {
         font-weight: bold;
         text-decoration: none;
         line-height: 1.25;
         padding-right: 20px;
+        font-size: .8em;
         flex: 1;
         > span {
             
@@ -258,12 +260,20 @@
 .steps-home {
     background: $grey;
     padding: 0 0 70px 0;
+    margin: 70px 0;
+
     .container-1000 {
         text-align: left;
         padding-top: 1px;
     }
+
     &__inner {
+        position: relative;
         margin-top: -65px;
+    }
+
+    .strapline {
+        background-color: $blue;
     }
 }
 
