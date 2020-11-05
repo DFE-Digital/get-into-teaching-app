@@ -3,18 +3,29 @@ require "rails_helper"
 describe Events::EventBoxComponent, type: "component" do
   include_context "stub types api"
   let(:event) { build(:event_api) }
+  let(:condensed) { false }
 
-  subject! { render_inline(Events::EventBoxComponent.new(event)) }
+  subject! { render_inline(Events::EventBoxComponent.new(event, condensed: condensed)) }
 
   specify "renders an event box" do
     expect(page).to have_css(".event-box")
   end
 
-  specify "places the date and time in the datetime div" do
-    page.find(".event-box__datetime") do |datetime_div|
-      expect(datetime_div).to have_content(event.start_at.to_date.to_formatted_s(:long_ordinal))
-      expect(datetime_div).to have_content(event.start_at.to_formatted_s(:time))
-      expect(datetime_div).to have_content(event.end_at.to_formatted_s(:time))
+  describe "heading" do
+    specify "places the date and time in the datetime div" do
+      page.find(".event-box__datetime") do |datetime_div|
+        expect(datetime_div.native.inner_html).to include(
+          "#{date_text} <br> #{start_at_text} - #{end_at_text}",
+        )
+      end
+    end
+
+    context "when condensed" do
+      let(:condensed) { true }
+
+      specify "does not display the event name" do
+        expect(page).not_to have_content(event.name)
+      end
     end
   end
 
@@ -124,5 +135,17 @@ describe Events::EventBoxComponent, type: "component" do
         expect(page).to have_css(%(.icon-pin--#{event_type.expected_colour}))
       end
     end
+  end
+
+  def date_text
+    event.start_at.to_date.to_formatted_s(:long)
+  end
+
+  def start_at_text
+    event.start_at.to_formatted_s(:time)
+  end
+
+  def end_at_text
+    event.end_at.to_formatted_s(:time)
   end
 end
