@@ -89,8 +89,14 @@ jobs:
 
       - name: Lint Ruby
         run: |-
-          docker run -t --rm -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}} \
-            rubocop app config db lib spec Gemfile --format clang
+          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}} \
+            rubocop app config db lib spec Gemfile --format json --out=/app/out/rubocop-result.json
+
+      - name:  Keep Rubocop output
+        uses: actions/upload-artifact@v2
+        with:
+          name: Rubocop_results
+          path: ${{ github.workspace }}/rubocop-result.json
 
       - name: Run Brakeman static security scanner
         run: |-
@@ -106,6 +112,7 @@ jobs:
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
            -Dsonar.testExecutionReportPaths=out/test-report.xml
            -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/.resultset.json
+           -Dsonar.ruby.rubocop.reportPaths=${PWD}/out/rubocop-result.json
 
       - name: Slack Notification
         if: failure()
