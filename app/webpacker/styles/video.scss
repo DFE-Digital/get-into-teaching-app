@@ -47,12 +47,12 @@
         margin: 40px;
 
         &__dismiss {
+            @include rotated-block($degrees: 3px);
             position: absolute;
             top: -25px;
             right: -25px;
             width: 60px;
             height: 60px;
-            transform: rotate(3deg);
             z-index: 1001;
             display: block;
             background-color: $pink-dark-90;

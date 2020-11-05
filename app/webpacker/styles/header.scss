@@ -190,10 +190,10 @@
     }
 
     &__image {
+        @include rotated-block;
         background-color: $green-dark-90;
         width: 258px;
         height: 116px;
-        transform: rotate(-3deg);
         position: relative;
         top: 11px;
         left:-10px;

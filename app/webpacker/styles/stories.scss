@@ -278,10 +278,10 @@
             }
 
             &__play {
+                @include rotated-block;
                 background-color: $pink-dark-90;
                 height: 72px;
                 width: 72px;
-                transform: rotate(-3deg);
                 position: absolute;
                 top: 50px;
                 left: -2px;
