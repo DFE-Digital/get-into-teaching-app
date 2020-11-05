@@ -110,6 +110,66 @@
         text-decoration: none;
       }
     }
+
+}
+
+.event-pagination {
+    &.content {
+        overflow: inherit;
+    }
+
+    .pagination {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @mixin pagination-item {
+            font-weight: bold;
+            font-size: smaller;
+            padding: 0.8em 0.8em;
+            text-decoration: none;
+            margin: 1em 0;
+        }
+
+        // kaminari selectors
+        * {
+            display: block;
+            line-height: 1;
+        }
+
+        a {
+            @include pagination-item;
+            border: 2px solid $pink-dark;
+            color: $pink-dark;
+        }
+
+        .page {
+            text-align: center;
+            min-width: 0.8em;
+
+            &.current,
+            &.gap {
+                padding: 0.8em 0.6em;
+            }
+
+            &.current {
+                @include pagination-item;
+                background-color: $pink-dark;
+                color: white;
+                border: 2px solid $pink-dark;
+            }
+        }
+
+        .prev {
+            margin-right: 0.2em;
+        }
+
+        .prev + .page,
+        .page + .page {
+            margin-left: 0.2em;
+            margin-right: 0.2em;
+        }
+    }
 }
 
 .search-for-events-no-results {

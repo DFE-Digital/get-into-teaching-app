@@ -36,3 +36,9 @@
     <%= render partial: "event", collection: @events %>
   </div>
 </section>
+
+<% if @events.any? %>
+  <div class="event-pagination content container-1000">
+    <%= paginate @events %>
+  </div>
+<% end %>

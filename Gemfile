@@ -52,6 +52,7 @@ gem "sentry-raven"
 gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
 
+gem "kaminari", "~> 1.2"
 gem "view_component"
 
 group :development, :test do

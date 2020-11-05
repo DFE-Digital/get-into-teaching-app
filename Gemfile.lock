@@ -138,6 +138,18 @@ GEM
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     json (2.3.1)
+    kaminari (1.2.1)
+      activesupport (>= 4.1.0)
+      kaminari-actionview (= 1.2.1)
+      kaminari-activerecord (= 1.2.1)
+      kaminari-core (= 1.2.1)
+    kaminari-actionview (1.2.1)
+      actionview
+      kaminari-core (= 1.2.1)
+    kaminari-activerecord (1.2.1)
+      activerecord
+      kaminari-core (= 1.2.1)
+    kaminari-core (1.2.1)
     kramdown (2.3.0)
       rexml
     listen (3.2.1)
@@ -358,6 +370,7 @@ DEPENDENCIES
   front_matter_parser!
   get_into_teaching_api_client_faraday!
   govuk_design_system_formbuilder
+  kaminari (~> 1.2)
   kramdown
   listen (>= 3.0.5, < 3.3)
   prometheus-client

@@ -4,7 +4,7 @@ RSpec.feature "Finding an event", type: :feature do
   include_context "stub types api"
 
   let(:events) do
-    5.times.collect do |index|
+    11.times.collect do |index|
       start_at = Time.zone.today.at_beginning_of_month + index.days
       build(:event_api, name: "Event #{index + 1}", start_at: start_at)
     end
@@ -47,5 +47,22 @@ RSpec.feature "Finding an event", type: :feature do
 
     expect(page).to have_css "h1", text: event.name
     click_on "Sign up for this event", match: :first
+  end
+
+  let(:event_category_slug) { "train-to-teach-events" }
+  scenario "Navigating events by page" do
+    visit event_category_events_path(event_category_slug)
+
+    expect(page).to have_css("h2", text: "Search for Train to Teach Events")
+
+    expect(page).to have_link("2", href: event_category_events_path(event_category_slug, page: 2))
+    expect(page).to have_link("Next ›", href: event_category_events_path(event_category_slug, page: 2))
+
+    # there are 11 events and 9 per page
+    expect(page).to have_css(".event-box", count: 9)
+
+    click_on("2")
+    expect(page).to have_css(".event-box", count: 2)
+    expect(page).to have_link("‹ Prev", href: event_category_events_path(event_category_slug))
   end
 end

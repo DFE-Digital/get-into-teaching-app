@@ -5,6 +5,7 @@ class EventsController < ApplicationController
 
   MAXIMUM_EVENTS_IN_CATEGORY = 1_000
   UPCOMING_EVENTS_PER_TYPE = 9
+  EVENTS_PER_PAGE = 9
 
   def index
     @page_title = "Find an event near you"
@@ -31,10 +32,19 @@ class EventsController < ApplicationController
 
     @event_search = Events::Search.new(event_filter_params.merge(type: @type.id))
     all_results = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
-    @events = all_results[@type.id.to_sym]
+    @events = paginate(all_results[@type.id.to_sym])
   end
 
 private
+
+  def paginate(events)
+    return [] if events.blank?
+
+    Kaminari
+      .paginate_array(events, total_count: events&.size)
+      .page(params[:page])
+      .per(EVENTS_PER_PAGE)
+  end
 
   def load_upcoming_events
     api = GetIntoTeachingApiClient::TeachingEventsApi.new
