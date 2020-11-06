@@ -9,11 +9,13 @@ module Events
     end
 
     def get_into_teaching_events
-      @get_into_teaching_events ||= events_by_type.slice(*get_into_teaching_type_ids)
+      empty_types = get_into_teaching_type_ids.product([[]]).to_h
+      @get_into_teaching_events ||= empty_types.merge!(events_by_type.slice(*get_into_teaching_type_ids))
     end
 
     def school_and_university_events
-      @school_and_university_events ||= events_by_type.slice(school_and_university_type_id)
+      empty_types = { school_and_university_type_id => [] }
+      @school_and_university_events ||= empty_types.merge!(events_by_type.slice(school_and_university_type_id))
     end
 
   private
