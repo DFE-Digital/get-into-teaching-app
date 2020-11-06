@@ -34,6 +34,10 @@ module WizardSteps
     request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(camelized_identity_data)
     GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request)
     redirect_to authenticate_path(verification_resent: true)
+  rescue GetIntoTeachingApiClient::ApiError => e
+    redirect_to(first_step_path) && return if e.code == 400
+
+    raise
   end
 
 private
@@ -56,6 +60,10 @@ private
     else # all steps valid so completed
       completed_step_path
     end
+  end
+
+  def first_step_path
+    step_path(wizard_class.steps.first.key)
   end
 
   def authenticate_path(params = {})
