@@ -47,13 +47,6 @@
     }
 }
 
-.icon-application-workshop {
-  @include icon;
-  background-image: url('../images/icon-application-workshop.svg');
-  width: 38px;
-  height: 25px;
-}
-
 .icon-pin {
     @include icon;
     background-image: url('../images/icon-pin-blue.svg');
