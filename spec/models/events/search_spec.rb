@@ -18,6 +18,22 @@ describe Events::Search do
     it { is_expected.to eql GetIntoTeachingApiClient::Constants::EVENT_TYPES.values }
   end
 
+  describe ".available_months" do
+    before { travel_to(DateTime.new(2020, 11, 1)) }
+    subject { described_class.available_months }
+
+    it {
+      is_expected.to eq([
+        ["November 2020", "2020-11"],
+        ["December 2020", "2020-12"],
+        ["January 2021", "2021-01"],
+        ["February 2021", "2021-02"],
+        ["March 2021", "2021-03"],
+        ["April 2021", "2021-04"],
+      ])
+    }
+  end
+
   context "validation" do
     context "for event type" do
       it { is_expected.to allow_value(GetIntoTeachingApiClient::Constants::EVENT_TYPES["Teain to Teach event"]).for :type }
