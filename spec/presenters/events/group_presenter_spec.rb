@@ -42,6 +42,17 @@ describe Events::GroupPresenter do
         expect(actual_events & school_and_university_events).to be_empty
       end
     end
+
+    context "when there are no events" do
+      let(:application_workshops) { [] }
+      let(:train_to_teach_events) { [] }
+      let(:online_events) { [] }
+
+      specify "contains a key for each event type mapping to an empty array" do
+        keys = GetIntoTeachingApiClient::Constants::GET_INTO_TEACHING_EVENT_TYPES.values
+        expect(subject.get_into_teaching_events).to eq(keys.product([[]]).to_h)
+      end
+    end
   end
 
   describe "#school_and_university_events" do
@@ -61,6 +72,16 @@ describe Events::GroupPresenter do
 
       specify "are absent" do
         expect(actual_events & get_into_teaching_events).to be_empty
+      end
+    end
+
+    context "when there are no events" do
+      let(:school_and_university_events) { [] }
+
+      specify "contains a key for schools or university events mapping to an empty array" do
+        expect(subject.school_and_university_events).to eq({
+          GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"] => [],
+        })
       end
     end
   end

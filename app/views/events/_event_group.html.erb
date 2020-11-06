@@ -1,19 +1,27 @@
+<% plural_category_name = pluralised_category_name(type_id) %>
+
 <div class="events-featured">
-  <h3><%= pluralised_category_name(type_id) %></h3>
+  <h3><%= plural_category_name %></h3>
 
-  <div class="events-featured__text">
-    <p><%= safe_html_format(t("find_an_event.types.#{type_id}")) %></p>
-  </div>
+    <div class="events-featured__text">
+      <p><%= safe_html_format(t("find_an_event.types.#{type_id}")) %></p>
+    </div>
 
-  <div class="events-featured__list">
-    <%= render partial: "event", collection: events %>
-  </div>
+  <% if events.any? %>
+    <div class="events-featured__list">
+      <%= render partial: "event", collection: events %>
+    </div>
+  <% else %>
+    <div class="search-for-events-no-results search-for-events-no-results--by-type">
+      There are no <%= plural_category_name %> that match your search criteria. Try widening your search and updating your results.
+    </div>
+  <% end %>
 
   <% show_see_all_events ||= false %>
 
   <% if show_see_all_events %>
-    <%= link_to(event_category_events_path(pluralised_category_name(type_id).parameterize)) do %>
-      <div class="call-to-action-button">See all <%= pluralised_category_name(type_id) %> <i class="fas fa-chevron-right"></i></div>
+    <%= link_to(event_category_events_path(plural_category_name.parameterize)) do %>
+      <div class="call-to-action-button">See all <%= plural_category_name %> <i class="fas fa-chevron-right"></i></div>
     <% end %>
   <% end %>
 </div>

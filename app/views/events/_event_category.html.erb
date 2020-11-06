@@ -4,6 +4,8 @@
   </div>
 
   <% category_groups.each do |type_id, events| %>
-    <%= render partial: "event_group", locals: { type_id: type_id, events: events, show_see_all_events: true } %>
+    <% if events.any? || display_empty_types %>
+      <%= render partial: "event_group", locals: { type_id: type_id, events: events, show_see_all_events: true } %>
+    <% end %>
   <% end %>
 </section>

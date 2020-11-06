@@ -30,12 +30,20 @@
     </section>
 
     <% if @events_by_type.any? %>
-      <% if @group_presenter.get_into_teaching_events.any? %>
-        <%= render partial: "event_category", locals: { organised_by: t("event_groups.get_into_teaching"), category_groups: @group_presenter.get_into_teaching_events } %>
+      <% if @group_presenter.get_into_teaching_events.values.flatten.any? || @display_empty_types %>
+        <%= render partial: "event_category", locals: { 
+          organised_by: t("event_groups.get_into_teaching"), 
+          category_groups: @group_presenter.get_into_teaching_events,
+          display_empty_types: @display_empty_types,
+        } %>
       <% end %>
 
-      <% if @group_presenter.school_and_university_events.any? %>
-        <%= render partial: "event_category", locals: { organised_by:  t("event_groups.222750009"), category_groups: @group_presenter.school_and_university_events } %>
+      <% if @group_presenter.school_and_university_events.values.flatten.any?  || @display_empty_types %>
+        <%= render partial: "event_category", locals: { 
+          organised_by:  t("event_groups.222750009"), 
+          category_groups: @group_presenter.school_and_university_events,
+          display_empty_types: @display_empty_types,
+        } %>
       <% end %>
     <% else %>
       <section class="content container-1000">
