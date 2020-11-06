@@ -33,7 +33,7 @@ describe "Find an event near you" do
 
     it "presents the events in date order, per category" do
       headings = response.body.scan(/<h4>(.*)<\/h4>/).flatten.take(events.count)
-      expect(headings).to eq(["Event 5", "Event 1", "Event 2", "Event 3", "Event 4"])
+      expect(headings).to eq(["Event 4", "Event 1", "Event 5", "Event 2", "Event 3"])
     end
 
     context "when there are no results" do

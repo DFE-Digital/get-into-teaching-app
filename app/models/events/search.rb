@@ -9,7 +9,7 @@ module Events
     MONTH_FORMAT = %r{\A20[234]\d-(0[1-9]|1[012])\z}.freeze
 
     delegate :available_event_type_ids, :available_distance_keys, to: :class
-    
+
     attribute :type, :integer
     attribute :distance, :integer
     attribute :postcode, :string

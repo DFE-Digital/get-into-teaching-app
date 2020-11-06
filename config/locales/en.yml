@@ -61,11 +61,6 @@ en:
           <li><span>school experience</span></li>
           <li><span>a chance to talk to current trainees or staff</span></li>
         </ul>
-      222750000: |-
-        <p>
-          Our Train to Teach events and application workshops offer you the chance to speak to teaching experts face-to-face. 
-          Get bespoke advice, help with your application, and meet training providers in your area – all completely free.
-        </p>
   event_groups:
     get_into_teaching: "Get into Teaching"
     222750009: "schools and universities"
@@ -122,26 +117,6 @@ en:
           <li><span>school experience</span></li>
           <li><span>a chance to talk to current trainees or staff</span></li>
         </ul>
-    222750000: 
-      name: 
-        singular: "Application Workshop"
-        plural: "Application Workshops"
-      description: |-
-        <p>
-          If you’re ready to apply for teacher training, we’re here to help. Our free application workshops are the perfect way to get expert 
-          advice and information that will help you create the strongest teacher training application possible. Workshops tend to fill up fast – 
-          find an event near you and reserve your place.
-        </p>
-
-        <h4>When you attend a workshop you’ll get the chance to:</h4>
-
-        <ul>
-          <li><span>Attend a presentation to get handy hints and helpful tips on how to make your application stand out</span></li>
-          <li><span>Receive one-to-one feedback from our teaching experts when you bring along your draft personal statement</span></li>
-          <li><span>Talk to current teachers about their experiences</span></li>
-        </ul>
-
-        <p>Make your application count – join us at a workshop and give yourself the best chance of success.</p>
   activemodel:
     errors:
       models:
