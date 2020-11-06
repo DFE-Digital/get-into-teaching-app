@@ -26,10 +26,6 @@ FactoryBot.define do
       provider_contact_email { "jim@smith.com" }
     end
 
-    trait :application_workshop do
-      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Application Workshop"] }
-    end
-
     trait :train_to_teach_event do
       type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
     end

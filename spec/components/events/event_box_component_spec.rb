@@ -73,12 +73,6 @@ describe Events::EventBoxComponent, type: "component" do
 
   [
     OpenStruct.new(
-      name: "Application Workshop",
-      trait: :application_workshop,
-      expected_colour: "yellow",
-      is_online: false,
-    ),
-    OpenStruct.new(
       name: "Train to Teach Event",
       trait: :train_to_teach_event,
       expected_colour: "green",

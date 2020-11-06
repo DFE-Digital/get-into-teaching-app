@@ -99,7 +99,7 @@ describe EventsHelper, type: "helper" do
 
   describe "#is_event_type?" do
     let(:matching_type) { "School or University Event" }
-    let(:non_matching_type) { "Application Workshop" }
+    let(:non_matching_type) { "Online Event" }
     let(:event) { build(:event_api, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES[matching_type]) }
 
     it "should be truthy when the type matches" do
@@ -120,11 +120,6 @@ describe EventsHelper, type: "helper" do
     it "returns purple for online events" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"]
       expect(event_type_color(type_id)).to eq("purple")
-    end
-
-    it "returns yellow for application workshop" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Application Workshop"]
-      expect(event_type_color(type_id)).to eq("yellow")
     end
 
     it "returns blue for schools or university events" do
@@ -184,7 +179,6 @@ describe EventsHelper, type: "helper" do
       222_750_001 => "Train to Teach Events",
       222_750_008 => "Online Events",
       222_750_009 => "School and University Events",
-      222_750_000 => "Application Workshops",
     }.each do |type_id, name|
       specify "#{type_id} => #{name}" do
         expect(pluralised_category_name(type_id)).to eql(name)

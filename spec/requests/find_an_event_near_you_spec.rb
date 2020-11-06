@@ -54,7 +54,6 @@ describe "Find an event near you" do
         expected_headings = [
           "Train to Teach Events",
           "Online Events",
-          "Application Workshops",
           "School and University Events",
         ]
 
