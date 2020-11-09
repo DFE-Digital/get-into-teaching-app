@@ -8,6 +8,8 @@ module Events
     DISTANCES = [30, 50, 100].freeze
     MONTH_FORMAT = %r{\A20[234]\d-(0[1-9]|1[012])\z}.freeze
 
+    delegate :available_event_type_ids, :available_distance_keys, to: :class
+
     attribute :type, :integer
     attribute :distance, :integer
     attribute :postcode, :string
@@ -21,32 +23,34 @@ module Events
     before_validation { self.distance = nil if distance.blank? }
     before_validation(unless: :distance) { self.postcode = nil }
 
-    def available_event_types
-      @available_event_types ||= GetIntoTeachingApiClient::Constants::EVENT_TYPES.map do |key, value|
-        GetIntoTeachingApiClient::TypeEntity.new(id: value, value: key)
+    class << self
+      def available_event_types
+        @available_event_types ||= GetIntoTeachingApiClient::Constants::EVENT_TYPES.map do |key, value|
+          GetIntoTeachingApiClient::TypeEntity.new(id: value, value: key)
+        end
       end
-    end
 
-    def available_event_type_ids
-      available_event_types.map(&:id)
-    end
+      def available_event_type_ids
+        available_event_types.map(&:id)
+      end
 
-    def available_distances
-      [["Nationwide", nil]] + DISTANCES.map { |d| ["Within #{d} miles", d] }
-    end
+      def available_distance_keys
+        available_distances.map(&:last)
+      end
 
-    def available_distance_keys
-      available_distances.map(&:last)
-    end
+      def available_distances
+        [["Nationwide", nil]] + DISTANCES.map { |d| ["Within #{d} miles", d] }
+      end
 
-    def available_months
-      (0..5).map do |i|
-        month = i.months.from_now.to_date
+      def available_months
+        (0..5).map do |i|
+          month = i.months.from_now.to_date
 
-        [
-          month.to_formatted_s(:humanmonthyear),
-          month.to_formatted_s(:yearmonth),
-        ]
+          [
+            month.to_formatted_s(:humanmonthyear),
+            month.to_formatted_s(:yearmonth),
+          ]
+        end
       end
     end
 

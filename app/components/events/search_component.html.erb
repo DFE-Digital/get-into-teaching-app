@@ -11,13 +11,13 @@
       <% if include_type %>
         <%= tag.div(class: input_field_classes(:type)) do %>
             <%= f.label :type, "Event type", class: "search-for-events__content__input__label" %>
-            <%= f.collection_select :type, search.available_event_types, :id, :value, { include_blank: "All events" } %>
+            <%= f.collection_select :type, search.class.available_event_types, :id, :value, { include_blank: "All events" } %>
         <% end %>
       <% end %>
 
       <%= tag.div(class: input_field_classes(:distance)) do %>
           <%= f.label :distance, "Location", class: "search-for-events__content__input__label" %>
-          <%= f.select :distance, search.available_distances, {},
+          <%= f.select :distance, search.class.available_distances, {},
                 data: { action: "conditional-field#toggle", target: "conditional-field.source" } %>
       <% end %>
 
@@ -28,7 +28,7 @@
 
       <%= tag.div(class: input_field_classes(:month)) do %>
           <%= f.label :month, "Month", class: "search-for-events__content__input__label" %>
-          <%= f.select :month, search.available_months, **month_args %>
+          <%= f.select :month, search.class.available_months, **month_args %>
       <% end %>
     </div>
 

@@ -1,7 +1,7 @@
 FactoryBot.define do
   factory :events_search, class: Events::Search do
-    type { Events::Search.new.available_event_types.first.id }
-    distance { Events::Search.new.available_distances.first[0] }
+    type { Events::Search.available_event_types.first.id }
+    distance { Events::Search.available_distances.first[0] }
     postcode { "TE57 1NG" }
     month { "2020-07" }
 
