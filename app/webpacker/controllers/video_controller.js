@@ -38,11 +38,10 @@ export default class extends Controller {
         for(var link of this.linkTargets) {
             link.removeAttribute('target');
         }
-        var myFrame = this.iframeTarget;
         
-        this.closeTarget.addEventListener('blur', function (e) {
+        this.closeTarget.addEventListener('blur', (e) => {
             e.preventDefault();
-            myFrame.contentWindow.focus();
+            this.focusIframeWindow();
         });
     }
 
@@ -54,12 +53,16 @@ export default class extends Controller {
         var link = event.target.closest('a');
         this.iframeTarget.src = link.href.replace('https://www.youtube.com/watch?v=','https://www.youtube.com/embed/');
         this.playerTarget.style.display = "flex";
-        this.iframeTarget.contentWindow.focus();
+        this.focusIframeWindow();
     }
 
     close() {
         this.linkTarget.focus();
         this.playerTarget.style.display = "none";
         this.iframeTarget.src = this.iframeTarget.src;
+    }
+
+    focusIframeWindow() {
+      this.iFrameTarget.contentWindow.focus();
     }
 }
