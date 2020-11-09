@@ -6,8 +6,9 @@ describe Events::GroupPresenter do
   let(:school_and_university_events) { build_list(:event_api, 3, :school_or_university_event) }
   let(:all_events) { [train_to_teach_events, online_events, school_and_university_events].flatten }
   let(:events_by_type) { all_events.group_by { |event| event.type_id.to_s.to_sym } }
+  let(:display_empty_types) { false }
 
-  subject { Events::GroupPresenter.new(events_by_type) }
+  subject { Events::GroupPresenter.new(events_by_type, display_empty_types) }
 
   describe "#get_into_teaching_events" do
     context "train to teach events" do
@@ -35,13 +36,51 @@ describe Events::GroupPresenter do
     end
 
     context "when there are no events" do
-      let(:application_workshops) { [] }
       let(:train_to_teach_events) { [] }
       let(:online_events) { [] }
 
       specify "contains a key for each event type mapping to an empty array" do
         keys = GetIntoTeachingApiClient::Constants::GET_INTO_TEACHING_EVENT_TYPES.values
         expect(subject.get_into_teaching_events).to eq(keys.product([[]]).to_h)
+      end
+    end
+  end
+
+  describe "#display_empty_types?" do
+    it "defaults to false" do
+      expect(Events::GroupPresenter.new({})).to_not be_display_empty_types
+    end
+  end
+
+  describe "#display_get_into_teaching_events?" do
+    it { expect(subject).to be_display_get_into_teaching_events }
+
+    context "when there are no get into teaching events" do
+      let(:train_to_teach_events) { [] }
+      let(:online_events) { [] }
+
+      it { expect(subject).to_not be_display_get_into_teaching_events }
+
+      context "when display_empty_types is true" do
+        let(:display_empty_types) { true }
+
+        it { expect(subject).to be_display_get_into_teaching_events }
+      end
+    end
+  end
+
+  describe "#display_school_and_university_events?" do
+    it { expect(subject).to be_display_school_and_university_events }
+
+    context "when there are no get into teaching events" do
+      let(:school_and_university_events) { [] }
+
+      it { expect(subject).to_not be_display_school_and_university_events }
+
+      context "when display_empty_types is true" do
+        let(:display_empty_types) { true }
+
+        it { expect(subject).to be_display_school_and_university_events }
       end
     end
   end
