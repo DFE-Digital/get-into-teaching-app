@@ -4,6 +4,12 @@ class StepsToBecomeATeacherController < ApplicationController
   rescue_from ActionView::MissingTemplate, StaticPages::InvalidTemplateName, with: :rescue_missing_template
 
   def show
-    render template: "content/steps-to-become-a-teacher", layout: "layouts/steps_to_become_a_teacher"
+    render template: steps_to_become_a_teacher_template, layout: "layouts/steps_to_become_a_teacher"
+  end
+
+private
+
+  def steps_to_become_a_teacher_template
+    "content/steps-to-become-a-teacher"
   end
 end
