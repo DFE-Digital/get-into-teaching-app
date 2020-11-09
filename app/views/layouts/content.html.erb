@@ -13,11 +13,54 @@
                 :header => @front_matter["title"],
                 :image => @front_matter["image"],
                 :mobileimage => @front_matter["mobileimage"],
-                :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"],
+                :deep => @front_matter["deepheader"],
+                :subtitle =>  @front_matter["subtitle"],
                 :mailinglist => @front_matter["mailinglist"]
             %>
             <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
-                <%= yield %>
+                <% if @front_matter["jump_links"].present? %>
+                  <div class="content__right">
+                    <div class="link-block link-block--jump">
+                      <h2 class="link-block__header">On this page:</h2>
+                      <ul class="link-block__list">
+                        <% @front_matter["jump_links"].each do |item, anchor| %>
+                          <%= link_to(item, anchor) %>
+                        <% end %>
+                      </ul>
+                    </div>
+                  </div>
+                <% end %>
+
+                <% if @front_matter["related_content"].present? %>
+                  <div class="content__right">
+                    <div class="link-block link-block--related">
+                      <h2 class="link-block__header">Related Content:</h2>
+                      <ul class="link-block__list">
+                        <ul class="link-block__list">
+                          <% @front_matter["related_content"].each do |item, anchor| %>
+                            <%= link_to(item, anchor) %>
+                          <% end %>
+                        </ul>
+                      </ul>
+                    </div>
+                  </div>
+                <% end %>
+
+                <% if @front_matter["fullwidth"] %>
+                  <%= yield %>
+                <% else %>
+                  <div class="content__left">
+                    <% if !@front_matter["image"] %>
+                      <%= tag.h1(@front_matter["title"]) %>
+                    <% end %>
+
+                    <% if @front_matter["alert"].present? %>
+                      <%= tag.p(@front_matter["alert"], class: "content-alert") %>
+                    <% end %>
+
+                    <%= yield %>
+                  </div>
+                <% end %>
                 <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
             </section>
         </main>

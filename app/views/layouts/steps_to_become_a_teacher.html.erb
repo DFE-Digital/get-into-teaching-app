@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+    <%= render "sections/head" %>
+    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", target: "link.content" }, id: "body" do %>
+    <div id="skiplink-container">
+        <div>
+            <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+        </div>
+    </div>
+        <%= render "sections/header" %>
+        <main role="main" id="main-content">
+            <%= render "sections/hero",
+                :header => @front_matter["title"],
+                :image => @front_matter["image"],
+                :mobileimage => @front_matter["mobileimage"],
+                :deep => @front_matter["deepheader"],
+                :subtitle =>  @front_matter["subtitle"],
+                :mailinglist => @front_matter["mailinglist"]
+            %>
+            <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
+                <div class="content__left">
+                  <% if @front_matter["alert"].present? %>
+                    <%= tag.p(@front_matter["alert"], class: "content-alert") %>
+                  <% end %>
+
+                  <div class="accordions" data-controller="accordion">
+                    <% if @front_matter["steps"].present? %>
+                      <% @front_matter["steps"].each.with_index(1) do |(title, partial), i| %>
+                        <%= tag.button(class: "steps-header", id: "step-#{i}", data: { action: "click->accordion#toggle", target: "accordion.header" }, aria: { controls: "collapsable-content-#{i}", expanded: (i == 1) }) do %>
+                          <%= tag.h2(%(#{i}. #{title})) %>
+                        <% end %>
+
+                        <%= tag.div(id: %(collapsable-content-#{i}), class: %w[steps-content collapsable], data: { target: "accordion.content" }, aria: { labelledby: %(step-#{i}) }) do %>
+                          <%= render(partial: partial) %>
+                        <% end %>
+                      <% end %>
+                    <% end %>
+                  </div>
+                </div>
+
+                <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
+            </section>
+        </main>
+
+        <%= render "sections/footer" %>
+        <%= render "components/videoplayer" %>
+        <%= render "sections/cookie-acceptance" %>
+        <%= render "sections/feedback-bar" %>
+    <% end %>
+</html>
+
