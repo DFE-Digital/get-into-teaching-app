@@ -4,6 +4,8 @@ import { Application } from 'stimulus' ;
 import VideoController from 'video_controller.js' ;
 
 describe('AccordionController', () => {
+  const iframeFocusMock = jest.fn();
+
   function initPageTemplate() {
     document.body.innerHTML = `
     <div data-controller="video">
@@ -45,6 +47,11 @@ describe('AccordionController', () => {
     Cookies.set("git-cookie-preferences-v1", data) ;
   }
 
+  function mockIframeFocus() {
+    iframeFocusMock.mockClear();
+    VideoController.prototype.focusIframeWindow = iframeFocusMock;
+  }
+
   function acceptCookies() {
     (new CookiePreferences).allowAll() ;
   }
@@ -56,6 +63,7 @@ describe('AccordionController', () => {
   }
 
   beforeEach(() => {
+    mockIframeFocus() ;
     Cookies.remove("git-cookie-preferences-v1") ;
   }) ;
 
@@ -93,6 +101,10 @@ describe('AccordionController', () => {
         const videoplayer = document.getElementById('the-video-player');
         expect(videoplayer.style.display).toBe('flex');
       });
+
+      it("focuses on the video player iframe", () => {
+        expect(iframeFocusMock).toHaveBeenCalled();
+      })
     });
 
     describe("when the dismiss button is clicked", () => {
