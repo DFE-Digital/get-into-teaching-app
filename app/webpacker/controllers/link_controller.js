@@ -24,6 +24,14 @@ export default class extends Controller {
         links.forEach((l) => {
             if (l.getAttribute('href')?.startsWith('http')) {
               l.setAttribute('target', '_blank');
+
+              // add hidden text to inform screen reader users that
+              // link will open in a new window
+              const linkOpensInNewWindow = document.createElement("span");
+              const text = document.createTextNode("(Link opens in new window)");
+              linkOpensInNewWindow.classList.add('govuk-visually-hidden');
+              linkOpensInNewWindow.appendChild(text)
+              l.appendChild(linkOpensInNewWindow);
             }
         });
     }
