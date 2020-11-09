@@ -6,6 +6,7 @@ describe StepsToBecomeATeacherController do
 
     subject do
       get "/steps-to-become-a-teacher"
+
       response
     end
 

@@ -18,12 +18,12 @@
                 :mailinglist => @front_matter["mailinglist"]
             %>
             <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
-                <% if @front_matter["on_this_page"].present? %>
+                <% if @front_matter["jump_links"].present? %>
                   <div class="content__right">
                     <div class="link-block link-block--jump">
                       <h2 class="link-block__header">On this page:</h2>
                       <ul class="link-block__list">
-                        <% @front_matter["on_this_page"].each do |item, anchor| %>
+                        <% @front_matter["jump_links"].each do |item, anchor| %>
                           <%= link_to(item, anchor) %>
                         <% end %>
                       </ul>
