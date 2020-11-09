@@ -178,10 +178,20 @@
   padding: 20px;
   font-weight: bold;
   margin-bottom: 80px;
+
+  &--by-type {
+    box-sizing: border-box;
+    margin: 0 0 30px 0;
+    width: 66.6%;
+  }
 }
 
 @media only screen and (max-width: 800px) {
     
+    .search-for-events-no-results--by-type {
+      width: 100%;
+    }
+
     .types-of-event {
         padding-top: 20px;
 
