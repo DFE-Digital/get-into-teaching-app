@@ -120,7 +120,7 @@ describe ApplicationHelper do
     it "returns the referrer if internal" do
       referer = root_url
       helper.request.stub(:referer) { referer }
-      expect(helper.internal_referer).to be(referer)
+      expect(helper.internal_referer).to eql(helper.root_path)
     end
   end
 
