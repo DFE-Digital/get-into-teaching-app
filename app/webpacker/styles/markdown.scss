@@ -1,0 +1,12 @@
+.markdown {
+    a {
+        &[href*="//"] {
+            &::after {
+                content: url('../images/icon-external.svg');
+                margin-left: 0.2em;
+                display: inline-block;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}

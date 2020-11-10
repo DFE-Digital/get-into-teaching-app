@@ -58,7 +58,9 @@
                       <%= tag.p(@front_matter["alert"], class: "content-alert") %>
                     <% end %>
 
-                    <%= yield %>
+                    <article class="markdown">
+                      <%= yield %>
+                    </article>
                   </div>
                 <% end %>
                 <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
