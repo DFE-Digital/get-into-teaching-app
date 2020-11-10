@@ -107,6 +107,7 @@
                 height: 220px;
                 width: 100%;
                 object-fit: cover;
+                display: block;
 
                 @media only screen and (max-width: 800px) {
                     height: 250px;
@@ -131,6 +132,9 @@
                 .story-card__thumb--play-icon > span {
                     background-color: $pink;
                 }
+            }
+            &.object-fit-polyfill {
+                padding-top: 260px;
             }
         }
 

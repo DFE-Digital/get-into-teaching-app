@@ -20,7 +20,7 @@ module Stories
 
     def image_link
       link_to(link, class: "story-card__thumb") do
-        image_tag(image)
+        image_tag(image, data: { "object-fit" => "cover" })
       end
     end
 
