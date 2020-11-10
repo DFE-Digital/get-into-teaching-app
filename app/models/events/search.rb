@@ -23,6 +23,10 @@ module Events
     before_validation { self.distance = nil if distance.blank? }
     before_validation(unless: :distance) { self.postcode = nil }
 
+    before_validation if: :postcode do
+      self.postcode = UKPostcode.parse(postcode).to_s
+    end
+
     class << self
       def available_event_types
         @available_event_types ||= GetIntoTeachingApiClient::Constants::EVENT_TYPES.map do |key, value|

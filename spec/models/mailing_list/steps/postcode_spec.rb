@@ -15,8 +15,8 @@ describe MailingList::Steps::Postcode do
   end
 
   context "data cleaning" do
-    it "cleans the postcode" do
-      subject.address_postcode = "  TE57 1NG "
+    it "normalises the postcode" do
+      subject.address_postcode = "  TE57ING "
       subject.valid?
       expect(subject.address_postcode).to eq("TE57 1NG")
       subject.address_postcode = "  "

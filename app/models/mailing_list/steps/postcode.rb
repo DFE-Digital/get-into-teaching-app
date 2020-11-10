@@ -5,7 +5,7 @@ module MailingList
       validates :address_postcode, postcode: true
 
       before_validation if: :address_postcode do
-        self.address_postcode = address_postcode.to_s.strip.presence
+        self.address_postcode = UKPostcode.parse(address_postcode).to_s.presence
       end
     end
   end

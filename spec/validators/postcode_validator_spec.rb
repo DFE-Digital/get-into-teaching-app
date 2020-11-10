@@ -17,7 +17,7 @@ describe PostcodeValidator do
     end
   end
 
-  ["M1 2WD", "TE57 1NG", ""].each do |postcode|
+  ["M1 2WD", "TE57 1NG", "", "PE7 IXR"].each do |postcode|
     context "checking '#{postcode}'" do
       let(:instance) { TestModel.new(postcode: postcode) }
       it { is_expected.not_to include :postcode }

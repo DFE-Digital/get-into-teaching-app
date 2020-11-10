@@ -113,11 +113,11 @@ describe Events::Search do
       end
 
       context "when there's whitespace around a provided postcode" do
-        subject { build(:events_search, postcode: " TE57 1NG  ") }
+        subject { build(:events_search, postcode: " te571ng  ").tap(&:validate) }
 
         it "the whitespace is stripped before querying the API" do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-            receive(:search_teaching_events_indexed_by_type).with(**expected_attributes.merge(postcode: subject.postcode.strip))
+            receive(:search_teaching_events_indexed_by_type).with(**expected_attributes.merge(postcode: "TE57 1NG"))
         end
       end
     end
