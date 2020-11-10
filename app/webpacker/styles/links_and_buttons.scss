@@ -4,6 +4,8 @@
     text-decoration: none;
     color: $fg;
     padding: 14px 20px;
+    font-size: 19px;
+    border: none;
 
     &:hover {
         background: darken($bg, 5%);
@@ -19,9 +21,8 @@
 }
 
 @mixin chevron($color: $white) {
-    *:last-child {
+    * {
         $dimensions: .6em;
-
         white-space: nowrap;
 
         &:after {
@@ -33,7 +34,7 @@
             border: 4px solid $color;
             border-width: 3px 3px 0px 0px;
             transform: rotate(45deg);
-            margin-left: .2em;
+            margin-left: .1em;
         }
     }
 }
@@ -75,30 +76,13 @@ a.content-link-secondary:hover {
     text-decoration: underline;
 }
 
-p.content-alert {
-    background-color: $purple;
-    color: $white;
-    box-sizing: border-box;
-    padding: 20px;
-    font-weight: bold;
-    line-height: 1.5;
-    display: block;
-    margin-left: -20px;
-    margin-right: -20px;
-
-    a {
-      color: $white;
-    }
-}
-
 .call-to-action-button {
     @include button;
     @include chevron;
-    text-decoration: none;
+}
 
-    // &:hover {
-    //     background-color: $green-dark;
-    // }
+.secondary-button {
+    @include button($bg: $grey-light, $fg: black);
 }
 
 .sidebar-button {
@@ -117,35 +101,5 @@ p.content-alert {
 }
 
 .request-button {
-    @include button;
-    background-color: $pink;
-}
-
-.arrow-link {
-    span:last-child {
-        white-space: nowrap;
-        &:after {
-            content: "";
-            display: inline-block;
-            position: relative;
-            width: 10px;
-            height: 10px;
-            border: 4px solid $white;
-            border-width: 3px 3px 0px 0px;
-            transform: rotate(45deg);
-            top: 1px;
-            margin-left: 5px;
-        }
-    }
-}
-
-.secondary-button {
-  @include button;
-  background-color: $grey-light;
-  color: $black !important ;
-  text-decoration: none !important;
-
-  &:hover {
-    background-color: $grey-mid ;
-  }
+    @include button($bg: $pink);
 }

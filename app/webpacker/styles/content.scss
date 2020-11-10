@@ -60,8 +60,21 @@
             line-height: 1.4;
             margin: 0 0 30px;
             padding: 0;
+
             &:last-child {
                 margin-bottom: 0;
+            }
+
+            &.content-alert {
+                background-color: $purple;
+                color: $white;
+                font-weight: bold;
+                padding: 1.5em;
+                line-height: 1.5em;
+
+                a {
+                  color: $white;
+                }
             }
         }
 
