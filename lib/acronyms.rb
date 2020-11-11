@@ -22,14 +22,14 @@ private
 
       replacements = 0
       replacement = node.content.gsub(ABBR_REGEXP) do |acronym|
-        matched = acronym_for(acronym)
-        next unless matched
+        expanded = acronym_for(acronym)
+        next acronym unless expanded
 
         replacements += 1
-        matched
+        expanded
       end
 
-      node.replace(replacement) unless replacements.zero?
+      node.replace(replacement) if replacements.positive?
     end
   end
 

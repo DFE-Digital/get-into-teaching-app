@@ -19,4 +19,15 @@ describe Acronyms, type: :helper do
     let(:content) { "<p>Payments are deducted as part of PAYE</p>" }
     it { is_expected.to have_css "p", text: "Payments are deducted as part of PAYE" }
   end
+
+  context "with nil acronyms" do
+    let(:acronyms) { nil }
+    it { is_expected.to have_css "p", text: "All prices include VAT except where marked exVAT" }
+  end
+
+  context "with multiple acronyms in the same node" do
+    let(:content) { "Taxes you may encounter include VAT and PAYE" }
+    it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
+    fit { is_expected.to match "and PAYE" }
+  end
 end
