@@ -71,6 +71,7 @@ describe Events::Search do
         it { is_expected.not_to allow_value(nil).for :postcode }
         it { is_expected.not_to allow_value("random").for :postcode }
         it { is_expected.to allow_value("MA1 2WD").for :postcode }
+        it { is_expected.not_to allow_value("TE57 ING").for :postcode }
       end
     end
 
@@ -113,7 +114,7 @@ describe Events::Search do
       end
 
       context "when there's whitespace around a provided postcode" do
-        subject { build(:events_search, postcode: " te571ng  ").tap(&:validate) }
+        subject { build(:events_search, postcode: " te57 1ng  ").tap(&:validate) }
 
         it "the whitespace is stripped before querying the API" do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \

@@ -12,7 +12,7 @@ module Events
       validates :preferred_teaching_subject_id, inclusion: { in: :teaching_subject_option_ids }
 
       before_validation if: :address_postcode do
-        self.address_postcode = UKPostcode.parse(address_postcode).to_s.presence
+        self.address_postcode = address_postcode.to_s.strip.upcase.presence
       end
 
       def skipped?

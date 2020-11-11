@@ -24,7 +24,7 @@ module Events
     before_validation(unless: :distance) { self.postcode = nil }
 
     before_validation if: :postcode do
-      self.postcode = UKPostcode.parse(postcode).to_s
+      self.postcode = postcode.to_s.strip.upcase.presence
     end
 
     class << self

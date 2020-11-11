@@ -39,8 +39,6 @@ gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
 
-gem "uk_postcode"
-
 gem "dotenv-rails"
 
 gem "govuk_design_system_formbuilder"
