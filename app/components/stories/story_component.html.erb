@@ -1,7 +1,9 @@
 <div class="content-wrapper">
   <div class="content__left">
     <article class="story">
-      <%= link_to(backlink_text, backlink, class: "backlink backlink--top") %>
+      <%= link_to(backlink, class: "backlink backlink--top") do %>
+        <%= tag.span(backlink_text) %>
+      <% end %>
 
       <%= tag.h1(title) %>
 
