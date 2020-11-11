@@ -10,7 +10,7 @@ describe PostcodeValidator do
   before { instance.valid? }
   subject { instance.errors.to_h }
 
-  ["MA1 1AM", "F00BAR", "M1", "123ABC"].each do |postcode|
+  ["F00BAR", "M1", "123ABC", "TE57 ING"].each do |postcode|
     context "checking '#{postcode}'" do
       let(:instance) { TestModel.new(postcode: postcode) }
       it { is_expected.to include postcode: "is invalid" }

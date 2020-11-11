@@ -14,11 +14,13 @@ describe Events::Steps::PersonalisedUpdates do
   end
 
   context "validations" do
+    let(:msg) { "Enter a valid postcode, or leave blank" }
+
     it { is_expected.to allow_value("TE571NG").for :address_postcode }
     it { is_expected.to allow_value("TE57 1NG").for :address_postcode }
     it { is_expected.to allow_value(" TE57 1NG ").for :address_postcode }
     it { is_expected.to allow_value("").for :address_postcode }
-    it { is_expected.not_to allow_value("unknown").for :address_postcode }
+    it { is_expected.not_to allow_value("unknown").for(:address_postcode).with_message(msg) }
 
     it { is_expected.to allow_value(subject.degree_status_option_ids.first).for :degree_status_id }
     it { is_expected.to allow_value(subject.degree_status_option_ids.last).for :degree_status_id }
