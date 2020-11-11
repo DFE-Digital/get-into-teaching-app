@@ -17,14 +17,7 @@
             width: 66.6%;
 
             a {
-                background-color: $grey;
-                font-weight: bold;
-                text-decoration: none;
-                padding: 1em;
-
-                &:hover {
-                    background-color: darken($grey, 10%);
-                }
+                @include button($bg: $grey, $fg: $black);
             }
         }
     }
