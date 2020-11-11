@@ -58,9 +58,9 @@ describe "View events by category" do
   end
 
   context "filtering the results" do
-    let(:postcode) { "TE57 ING" }
+    let(:postcode) { "TE57 1NG" }
     let(:radius) { 30 }
-    let(:filter) { { postcode: postcode, quantity_per_type: nil, radius: radius, start_after: nil, start_before: nil, type_id: nil } }
+    let(:filter) { { postcode: "TE57 1NG", quantity_per_type: nil, radius: radius, start_after: nil, start_before: nil, type_id: nil } }
 
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]

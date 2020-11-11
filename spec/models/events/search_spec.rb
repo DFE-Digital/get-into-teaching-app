@@ -63,6 +63,8 @@ describe Events::Search do
       end
 
       context "with assigned distance" do
+        let(:msg) { "Enter a valid postcode" }
+
         subject do
           described_class.new distance: described_class::DISTANCES.first
         end
@@ -71,6 +73,7 @@ describe Events::Search do
         it { is_expected.not_to allow_value(nil).for :postcode }
         it { is_expected.not_to allow_value("random").for :postcode }
         it { is_expected.to allow_value("MA1 2WD").for :postcode }
+        it { is_expected.not_to allow_value("TE57 ING").for(:postcode).with_message(msg) }
       end
     end
 
@@ -113,11 +116,11 @@ describe Events::Search do
       end
 
       context "when there's whitespace around a provided postcode" do
-        subject { build(:events_search, postcode: " TE57 1NG  ") }
+        subject { build(:events_search, postcode: " te57 1ng  ").tap(&:validate) }
 
         it "the whitespace is stripped before querying the API" do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-            receive(:search_teaching_events_indexed_by_type).with(**expected_attributes.merge(postcode: subject.postcode.strip))
+            receive(:search_teaching_events_indexed_by_type).with(**expected_attributes.merge(postcode: "TE57 1NG"))
         end
       end
     end
