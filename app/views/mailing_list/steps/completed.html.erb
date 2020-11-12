@@ -11,8 +11,8 @@
               You can unsubscribe if you change your mind. To find out how we
               handle your personal data, you can read our privacy policy.
             </p>
-
-            <span data-controller="pinterest"
+        </div>
+        <span data-controller="pinterest"
                 data-pinterest-action="track"
                 data-pinterest-event="lead"
                 data-pinterest-event-data='{"lead-type" : "Newsletter"}'></span>
@@ -26,10 +26,12 @@
                 data-facebook-event="Newsletter_Subscribers"></span>
 
             <span data-controller="bam" data-bam-action="track"></span>
+    </div>
+    <div class="explore">
+        <div class="content container-1000 explore__header">
+            <h2>Explore Get Into Teaching</h2>
         </div>
-        <div class="content__right">
-
-        </div>
+        <%= render "content/home/featured_content" %>
     </div>
 </section>
 
