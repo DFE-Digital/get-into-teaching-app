@@ -1,70 +1,43 @@
-.content {
+.accordions {
+    display: flex;
+    flex-direction: column;
+
     .steps-header {
         @include button($bg: $pink, $fg: $white);
-        @include chevron($color: $white, $direction: 'down');
 
-        h2 {
-            color: $white;
+        display: flex;
+        align-items: center;
+
+        &:not(:first-child) {
+            margin-top: 1em;
+        }
+
+        .steps-header__text {
+            text-align: left;
             border: 0;
-            font-size: 28px;
             margin: 0;
+            font-size: 140%;
+            flex-grow: 2;
         }
-        &:after {
-            content: "";
-            display: block;
-            width: 18px;
-            height: 18px;
-            border: 4px solid white;
-            border-width: 4px 4px 0 0;
-            transform: rotate(-45deg);
-            position: absolute;
-            top: 32px;
-            right: 20px;
+
+        .steps-header__chevron {
+            flex-shrink: 0;
+            margin-top: 5px;
+            @include chevron-icon($color: $white, $dimensions: .7em, $rotate: unquote(map-get($chevron-direction-map, 'up')));
         }
+
         &.inactive {
-            margin-bottom: 30px;
-            &:after {
-                transform: rotate(-225deg);
-                top: 22px;
+            .steps-header__chevron {
+                margin-top: -5px;
+                @include chevron-icon($color: $white, $dimensions: .7em, $rotate: unquote(map-get($chevron-direction-map, 'down')));
             }
         }
-        button {
-            float: right;
-            background: transparent;
-            border: none;
-            color: $white;
-            font-size: 28px;
-        }
-
-        button:focus { 
-            outline-color: $yellow;
-            background-color: $yellow;
-            color: $black;
-        }
     }
+
     .steps-content {
         background-color: $grey;
-        padding: 20px;
-        margin-bottom: 30px;
-    }
-}
-
-@media only screen and (max-width: 800px) {
-
-    .content {
-        .steps-header {
-            h2 {
-                font-size: 19px;
-            }
-            &:after {
-                top: 26px;
-            }
-            &.inactive {
-                &:after {
-                    top: 16px;
-                }
-            }
-        }
+        margin: 0 0 1em 0;
+        padding: .8em;
 
     }
 }

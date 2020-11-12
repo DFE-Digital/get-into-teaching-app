@@ -31,15 +31,19 @@
     transform: rotate($rotate);
 }
 
+$chevron-direction-map: (
+    'right': 45deg,
+    'left': 225deg,
+    'up': 315deg,
+    'down': 135deg
+);
+
 @mixin chevron($color: $white, $after: true, $direction: right, $dimensions: .6em) {
     $chevron-margin: .1em;
 
-    @if $direction == right {
-        $degrees: 45deg;
-    }
+    $degrees: unquote(map-get($chevron-direction-map, $direction));
 
-
-    * {
+    > * {
         white-space: nowrap;
 
         // after governs whether the chevron is placed after (on the right) or
@@ -52,7 +56,7 @@
             }
         } @else {
             &:before {
-                @include chevron-icon($color: $color, $rotate: 225deg, $dimensions: $dimensions, $rotate: $degrees);
+                @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
 
                 margin-right: $chevron-margin;
             }
