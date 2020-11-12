@@ -31,8 +31,14 @@
     transform: rotate($rotate);
 }
 
-@mixin chevron($color: $white, $after: true, $dimensions: .6em) {
+@mixin chevron($color: $white, $after: true, $direction: right, $dimensions: .6em) {
     $chevron-margin: .1em;
+
+    @if $direction == right {
+        $degrees: 45deg;
+    }
+
+
     * {
         white-space: nowrap;
 
@@ -40,13 +46,13 @@
         // before (on the left) of the link text
         @if $after {
             &:after {
-                @include chevron-icon($color: $color, $dimensions: $dimensions);
+                @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
 
                 margin-left: $chevron-margin;
             }
         } @else {
             &:before {
-                @include chevron-icon($color: $color, $rotate: 225deg, $dimensions: $dimensions);
+                @include chevron-icon($color: $color, $rotate: 225deg, $dimensions: $dimensions, $rotate: $degrees);
 
                 margin-right: $chevron-margin;
             }
