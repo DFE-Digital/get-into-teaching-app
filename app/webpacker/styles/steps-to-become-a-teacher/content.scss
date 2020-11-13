@@ -27,13 +27,13 @@
         .steps-header__chevron {
             flex-shrink: 0;
             margin-top: 5px;
-            @include chevron-icon($color: $white, $dimensions: .7em, $rotate: unquote(map-get($chevron-direction-map, 'up')));
+            @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, 'up'));
         }
 
         &.inactive {
             .steps-header__chevron {
                 margin-top: -5px;
-                @include chevron-icon($color: $white, $dimensions: .7em, $rotate: unquote(map-get($chevron-direction-map, 'down')));
+                @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, 'down'));
             }
         }
     }

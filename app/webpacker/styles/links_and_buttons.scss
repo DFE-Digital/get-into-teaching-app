@@ -20,50 +20,6 @@
     }
 }
 
-@mixin chevron-icon($color, $dimensions, $rotate: 45deg) {
-    content: "";
-    display: inline-block;
-    position: relative;
-    width: $dimensions;
-    height: $dimensions;
-    border: 4px solid $color;
-    border-width: 3px 3px 0px 0px;
-    transform: rotate($rotate);
-}
-
-$chevron-direction-map: (
-    'right': 45deg,
-    'left': 225deg,
-    'up': 315deg,
-    'down': 135deg
-);
-
-@mixin chevron($color: $white, $after: true, $direction: right, $dimensions: .6em) {
-    $chevron-margin: .1em;
-
-    $degrees: unquote(map-get($chevron-direction-map, $direction));
-
-    > * {
-        white-space: nowrap;
-
-        // after governs whether the chevron is placed after (on the right) or
-        // before (on the left) of the link text
-        @if $after {
-            &:after {
-                @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
-
-                margin-left: $chevron-margin;
-            }
-        } @else {
-            &:before {
-                @include chevron-icon($color: $color, $dimensions: $dimensions, $rotate: $degrees);
-
-                margin-right: $chevron-margin;
-            }
-        }
-    }
-}
-
 a {
     color: $blue-dark;
 
