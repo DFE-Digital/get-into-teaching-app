@@ -75,6 +75,10 @@
                 a {
                   color: $white;
                 }
+
+                @media only screen and (max-width: 800px) {
+                    font-size: 100%;
+                }
             }
         }
 
