@@ -28,7 +28,7 @@ describe EventsController do
     end
 
     specify "rendering the see all events button" do
-      expect(subject.body).to match(/see all train to teach events/i)
+      expect(subject.body).to match(%r{see all <span>train to teach events</span>}i)
     end
   end
 
