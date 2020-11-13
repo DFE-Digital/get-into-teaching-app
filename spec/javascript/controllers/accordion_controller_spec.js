@@ -3,81 +3,67 @@ import AccordionController from 'accordion_controller.js' ;
 
 describe('AccordionController', () => {
 
-    document.body.innerHTML = 
-    `
+    document.body.innerHTML = `
     <div data-controller="accordion">
-        <div class="steps-header" id="step-1" data-action="click->accordion#toggle" data-target="accordion.header">
-            <h1>
-                <div class="steps-header__number"><span>1</span></div>
-                Header 1
-                <button><i id="collapsable-icon-1" class="fas fa-chevron-up"></i></button>
-            </h1>
-        </div>
-        <div id="collapsable-content-1" class="collapsable" data-target="accordion.content">
-            Content 1
-        </div>
-        <div class="steps-header" id="step-2" data-action="click->accordion#toggle" data-target="accordion.header">
-            <h1>
-                <div class="steps-header__number"><span>2</span></div>
-                Header 2
-                <button><i id="collapsable-icon-2" class="fas fa-chevron-up"></i></button>
-            </h1>
-        </div>
-        <div id="collapsable-content-2" class="collapsable" data-target="accordion.content">
-            Content 2
-        </div>
-        <div class="steps-header" id="step-3" data-action="click->accordion#toggle" data-target="accordion.header">
-            <h1>
-                <div class="steps-header__number"><span>2</span></div>
-                Header 3
-                <button><i id="collapsable-icon-3" class="fas fa-chevron-up"></i></button>
-            </h1>
-        </div>
-        <div id="collapsable-content-3" class="collapsable" data-target="accordion.content">
-            Content 3
-        </div>
-    </div>   
+        <section id="step-1" class="step" data-id="1">
+            <button id="button-1" class="step-header" data-action="click->accordion#toggle" data-target="accordion.header">
+              Button 1
+            </button>
+            <div id="collapsable-content-1" data-target="accordion.content">
+                Content 1
+            </div>
+        </section>
+
+        <section id="step-2" class="step" data-id="2">
+            <button id="button-2" class="step-header" data-action="click->accordion#toggle" data-target="accordion.header">
+              Button 2
+            </button>
+            <div id="collapsable-content-2" data-target="accordion.content">
+                Content 2
+            </div>
+        </section>
+
+        <section id="step-3" class="step" data-id="3">
+            <button id="button-3" class="step-header" data-action="click->accordion#toggle" data-target="accordion.header">
+              Button 3
+            </button>
+            <div id="collapsable-content-3" data-target="accordion.content">
+                Content 3
+            </div>
+        </section>
+    </div>
     ` ;
 
     const application = Application.start() ;
     application.register('accordion', AccordionController) ;
 
-
     describe("when first loaded", () => {
         it("only first step should be opened", () => {
-            const headers = document.getElementsByClassName('steps-header');
-            for(let i=0;i<headers.length;i+=1){
-                let stepHeaders = headers[i];
-                if (!stepHeaders.length) break;
-                let stepHeader = stepHeaders[0];
-                if(i === 0) {
-                    expect(stepHeader.className).not.toContain('inactive');
-                } else {
-                    expect(stepHeader.className).toContain('inactive');
-                }
-            }
+          expect(document.getElementById("step-1").classList).not.toContain("inactive");
+
+          expect(document.getElementById("step-2").classList).toContain("inactive");
+          expect(document.getElementById("step-3").classList).toContain("inactive");
         });
     })
 
     describe("when open header is toggled", () => {
         it("should close", () => {
-            let headers = document.getElementsByClassName('steps-header');
-            let stepHeader = headers[0];
-            expect(stepHeader.className).not.toContain('inactive');
-            headers[0].click();
-            expect(stepHeader.className).toContain('inactive');
+          expect(document.getElementById("step-1").classList).not.toContain("inactive");
+
+          document.getElementById("button-1").click();
+
+          expect(document.getElementById("step-1").classList).toContain("inactive");
         });
     });
 
     describe("when closed header is toggled", () => {
         it("should open", () => {
-            let headers = document.getElementsByClassName('steps-header');
-            let stepHeader = headers[0];
-            expect(stepHeader.className).toContain('inactive');
-            headers[0].click();
-            expect(stepHeader.className).not.toContain('inactive');
+          expect(document.getElementById("step-2").classList).toContain("inactive");
+
+          document.getElementById("button-2").click();
+
+          expect(document.getElementById("step-2").classList).not.toContain("inactive");
         });
     });
-
 });
 

@@ -1,48 +1,68 @@
 .accordions {
-    display: flex;
-    flex-direction: column;
-
-    .steps-header {
-        @include button($bg: $pink, $fg: $white);
-
-        display: flex;
-        align-items: center;
-
-        &:not(:first-child) {
+    .step {
+        & + .step {
             margin-top: 1em;
         }
 
-        .steps-header__text {
-            text-align: left;
-            border: 0;
-            margin: 0;
-            font-size: 140%;
-            flex-grow: 2;
+        display: flex;
+        flex-direction: column;
 
-            @media only screen and (max-width: 800px) {
-                font-size: 100%;
+        .step-header {
+            @include button($bg: $pink, $fg: $white);
+
+            display: flex;
+            align-items: center;
+
+            .step-header__text {
+                text-align: left;
+                border: 0;
+                margin: 0;
+                font-size: 140%;
+                flex-grow: 2;
+
+                @media only screen and (max-width: 800px) {
+                    font-size: 100%;
+                }
             }
+
+            .step-header__chevron {
+                flex-shrink: 0;
+                margin-top: 5px;
+                @include chevron-icon($color: $white, $dimensions: .7em, $rotate: unquote(map-get($chevron-direction-map, 'up')));
+            }
+
+            &:focus {
+                .step-header__chevron {
+                    @include chevron-icon($color: $black, $dimensions: .7em, $rotate: unquote(map-get($chevron-direction-map, 'up')));
+                }
+            }
+
         }
 
-        .steps-header__chevron {
-            flex-shrink: 0;
-            margin-top: 5px;
-            @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, 'up'));
+        .step-content {
+            background-color: $grey;
+            margin: 0;
+            padding: .8em;
+
         }
 
         &.inactive {
-            .steps-header__chevron {
-                margin-top: -5px;
-                @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, 'down'));
+            .step-header {
+                .step-header__chevron {
+                    margin-top: 0px;
+                    @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, 'down'));
+                }
+
+                &:focus {
+                    .step-header__chevron {
+                        @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, 'down'));
+                    }
+                }
+            }
+
+            .step-content {
+                display: none;
             }
         }
     }
-
-    .steps-content {
-        background-color: $grey;
-        margin: 0 0 1em 0;
-        padding: .8em;
-
-    }
-
 }
