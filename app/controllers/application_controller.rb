@@ -15,6 +15,7 @@ private
 
   def handle_api_error(error)
     render_too_many_requests && return if error.code == 429
+    render_not_found && return if error.code == 404
 
     raise
   end
