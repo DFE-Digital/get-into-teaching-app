@@ -1,0 +1,37 @@
+{
+  "ignored_warnings": [
+    {
+      "warning_type": "Dynamic Render Path",
+      "warning_code": 15,
+      "fingerprint": "c209b4311a0817e2aa893dee169cfdb26166dbd7d29f9726eafe18fccc8f4e78",
+      "check_name": "Render",
+      "message": "Render path contains parameter value",
+      "file": "app/views/events/show.html.erb",
+      "line": 10,
+      "link": "https://brakemanscanner.org/docs/warning_types/dynamic_render_path/",
+      "code": "render(action => Events::EventBoxComponent.new(GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]), :condensed => true), {})",
+      "render_path": [
+        {
+          "type": "controller",
+          "class": "EventsController",
+          "method": "show",
+          "line": 22,
+          "file": "app/controllers/events_controller.rb",
+          "rendered": {
+            "name": "events/show",
+            "file": "app/views/events/show.html.erb"
+          }
+        }
+      ],
+      "location": {
+        "type": "template",
+        "template": "events/show"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "note": "False positive - Brakeman does not understand ViewComponents yet"
+    }
+  ],
+  "updated": "2020-11-16 16:55:39 +0000",
+  "brakeman_version": "4.10.0"
+}
