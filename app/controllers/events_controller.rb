@@ -19,8 +19,6 @@ class EventsController < ApplicationController
   def show
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
     @page_title = @event.name
-  rescue GetIntoTeachingApiClient::ApiError
-    render template: "errors/not_found", status: :not_found
   end
 
   def show_category

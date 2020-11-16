@@ -182,7 +182,7 @@ describe EventsController do
     context "for unknown event" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-          receive(:get_teaching_event).and_raise GetIntoTeachingApiClient::ApiError
+          receive(:get_teaching_event).and_raise GetIntoTeachingApiClient::ApiError.new(code: 404)
 
         get(event_path(id: event_readable_id))
       end

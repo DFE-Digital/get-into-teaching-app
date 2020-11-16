@@ -20,7 +20,7 @@ describe EventStepsController do
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:get_teaching_event).and_return event
+      receive(:get_teaching_event).with(readable_event_id) { event }
   end
 
   describe "#index" do
@@ -42,6 +42,19 @@ describe EventStepsController do
 
     context "with an invalid step" do
       let(:step_path) { event_step_path readable_event_id, :invalid }
+
+      it { is_expected.to have_http_status :not_found }
+    end
+
+    context "when the event does not exist" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+          receive(:get_teaching_event).with("456")
+          .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 404))
+      end
+
+      before { get event_steps_path("456") }
+      subject { response }
 
       it { is_expected.to have_http_status :not_found }
     end
