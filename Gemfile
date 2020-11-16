@@ -67,6 +67,8 @@ group :development, :test do
   # Debugging
   gem "pry-byebug"
 
+  gem "parallel_tests"
+
   # Testing framework
   gem "rspec-rails", "~> 4.0.0"
   # Adds support for Capybara system testing and selenium driver
