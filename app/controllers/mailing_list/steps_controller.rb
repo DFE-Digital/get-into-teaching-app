@@ -12,11 +12,7 @@ module MailingList
     end
     helper_method :step_path
 
-    def wizard_store
-      ::Wizard::Store.new session_store
-    end
-
-    def session_store
+    def backing_store
       session[:mailinglist] ||= {}
     end
 

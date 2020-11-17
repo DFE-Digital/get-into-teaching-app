@@ -1,6 +1,6 @@
 module MailingList
   module Steps
-    class Postcode < ::Wizard::Step
+    class Postcode < ::DFEWizard::Step
       attribute :address_postcode
       validates :address_postcode, postcode: true
 

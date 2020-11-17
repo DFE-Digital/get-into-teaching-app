@@ -1,6 +1,6 @@
 module MailingList
   module Steps
-    class Name < ::Wizard::Step
+    class Name < ::DFEWizard::Step
       include ::Wizard::IssueVerificationCode
 
       attribute :first_name

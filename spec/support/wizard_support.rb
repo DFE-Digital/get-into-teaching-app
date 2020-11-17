@@ -1,6 +1,6 @@
 shared_context "wizard store" do
   let(:backingstore) { { "name" => "Joe", "age" => 35 } }
-  let(:wizardstore) { Wizard::Store.new backingstore }
+  let(:wizardstore) { DFEWizard::Store.new backingstore }
 end
 
 shared_context "wizard step" do

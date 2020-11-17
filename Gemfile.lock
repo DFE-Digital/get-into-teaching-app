@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DFE-Digital/dfe_wizard.git
-  revision: 44e4aeba3697cf6628274ee1c14f1da937b291fd
+  revision: 445b6744e356bb0eddd0412bdd84756ddfe7a3fd
   branch: main
   specs:
     dfe_wizard (0.1.0)

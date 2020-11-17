@@ -1,6 +1,6 @@
 module Events
   module Steps
-    class FurtherDetails < ::Wizard::Step
+    class FurtherDetails < ::DFEWizard::Step
       attribute :event_id
       attribute :privacy_policy, :boolean
       attribute :subscribe_to_mailing_list, :boolean

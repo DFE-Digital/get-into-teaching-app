@@ -1,6 +1,6 @@
 module MailingList
   module Steps
-    class Subject < ::Wizard::Step
+    class Subject < ::DFEWizard::Step
       attribute :preferred_teaching_subject_id
       validates :preferred_teaching_subject_id,
                 presence: true,

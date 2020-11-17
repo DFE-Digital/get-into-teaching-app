@@ -1,6 +1,6 @@
 module Wizard
   module Steps
-    class Authenticate < ::Wizard::Step
+    class Authenticate < ::DFEWizard::Step
       IDENTITY_ATTRS = %i[email first_name last_name date_of_birth].freeze
       MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
 

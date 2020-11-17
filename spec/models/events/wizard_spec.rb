@@ -25,7 +25,7 @@ describe Events::Wizard do
         "last_name" => "Joseph",
       } }
     end
-    let(:wizardstore) { Wizard::Store.new store[uuid] }
+    let(:wizardstore) { DFEWizard::Store.new store[uuid] }
     let(:request) do
       GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
         { eventId: "abc123", email: "email@address.com", firstName: "Joe", lastName: "Joseph" },

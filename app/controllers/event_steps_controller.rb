@@ -26,11 +26,7 @@ private
     end
   end
 
-  def wizard_store
-    Wizard::Store.new session_store
-  end
-
-  def session_store
+  def backing_store
     session[:events] ||= {}
     session[:events][params[:event_id]] ||= {}
   end

@@ -1,6 +1,6 @@
 module Events
   module Steps
-    class ContactDetails < ::Wizard::Step
+    class ContactDetails < ::DFEWizard::Step
       attribute :telephone
       validates :telephone, telephone: true, allow_blank: true
 
