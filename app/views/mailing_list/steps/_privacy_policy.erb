@@ -8,8 +8,8 @@
 <%= f.govuk_error_summary %>
 
 <%
-  legend_text = t("helpers.legend.mailing_list_steps_contact.accept_privacy_policy.text", 
-    link: link_to(t("helpers.legend.mailing_list_steps_contact.accept_privacy_policy.link"), 
+  legend_text = t("helpers.legend.mailing_list_steps_privacy_policy.accept_privacy_policy.text", 
+    link: link_to(t("helpers.legend.mailing_list_steps_privacy_policy.accept_privacy_policy.link"), 
     privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }))
 %>
 

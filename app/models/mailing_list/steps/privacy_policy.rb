@@ -1,6 +1,6 @@
 module MailingList
   module Steps
-    class Contact < ::Wizard::Step
+    class PrivacyPolicy < ::Wizard::Step
       attribute :accept_privacy_policy, :boolean
       attribute :accepted_policy_id
 

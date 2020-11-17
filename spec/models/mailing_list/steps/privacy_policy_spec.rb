@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe MailingList::Steps::Contact do
+describe MailingList::Steps::PrivacyPolicy do
   include_context "wizard step"
   it_behaves_like "a wizard step"
 
