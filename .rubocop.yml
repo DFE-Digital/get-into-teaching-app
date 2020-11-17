@@ -3,6 +3,9 @@ inherit_gem:
     - config/default.yml
     - config/rails.yml
 
+require:
+  - rubocop-rspec
+
 AllCops:
   Exclude:
     - Rakefile
@@ -10,7 +13,6 @@ AllCops:
     - db/schema.rb
     - bin/*
     - node_modules/**/*
-
 
 Lint/AmbiguousOperator:
   Enabled: false
@@ -30,3 +32,9 @@ Rails/UnknownEnv:
     - preprod
     - userresearch
     - production
+
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/ImplicitSubject:
+  Enabled: false
