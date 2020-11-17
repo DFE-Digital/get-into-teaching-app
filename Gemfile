@@ -47,6 +47,7 @@ gem "prometheus-client"
 
 gem "sentry-raven"
 
+gem "dfe_wizard", github: "DFE-Digital/dfe_wizard", branch: "main"
 gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
 

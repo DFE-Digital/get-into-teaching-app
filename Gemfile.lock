@@ -1,4 +1,13 @@
 GIT
+  remote: https://github.com/DFE-Digital/dfe_wizard.git
+  revision: 44e4aeba3697cf6628274ee1c14f1da937b291fd
+  branch: main
+  specs:
+    dfe_wizard (0.1.0)
+      activemodel (>= 6.0.3.4)
+      activesupport (>= 6.0.3.4)
+
+GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
   revision: b54d486736e47a88d9d86e7080891f564c4f9dc3
   specs:
@@ -359,6 +368,7 @@ DEPENDENCIES
   byebug
   canonical-rails
   capybara (~> 3.33)
+  dfe_wizard!
   dotenv-rails
   factory_bot_rails
   faraday
