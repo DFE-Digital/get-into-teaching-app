@@ -1,12 +1,14 @@
 <div class="content-wrapper">
   <div class="content__left">
     <article class="story">
-      <%= link_to(backlink_text, backlink, class: "backlink backlink--top") %>
+      <%= helpers.back_link(backlink, text: tag.span(backlink_text)) %>
 
       <%= tag.h1(title) %>
 
       <header class="story__header">
-        <%= image_tag(image, width: 200, height: 200, alt: helpers.story_image_alt(teacher), class: "story__header__thumb") %>
+        <% if image.present? %>
+          <%= image_tag(image, width: 200, height: 200, alt: helpers.story_image_alt(teacher), class: "story__header__thumb") %>
+        <% end %>
         <div class="story__header__label">
           <%= helpers.story_heading(teacher, position) %>
         </div>

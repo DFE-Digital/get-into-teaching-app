@@ -1,7 +1,10 @@
 body {
     font-family: sans-serif;
-    margin: 0!important;
-    padding: 0;
+
+    &.govuk-body {
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .no-hero {

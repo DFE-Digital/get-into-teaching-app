@@ -20,8 +20,8 @@
   <% show_see_all_events ||= false %>
 
   <% if show_see_all_events %>
-    <%= link_to(event_category_events_path(plural_category_name.parameterize)) do %>
-      <div class="call-to-action-button">See all <%= plural_category_name %> <i class="fas fa-chevron-right"></i></div>
+    <%= link_to(event_category_events_path(plural_category_name.parameterize), class: "call-to-action-button") do %>
+      See all <span><%= plural_category_name %></span>
     <% end %>
   <% end %>
 </div>

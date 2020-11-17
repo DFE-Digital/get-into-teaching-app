@@ -46,6 +46,9 @@
     }
 
     &__link {
+        @include chevron($color: $black);
+        color: $black;
+
         margin-top: 10px;
         display: block;
         text-decoration: none;
@@ -53,22 +56,7 @@
 
         &:hover {
             text-decoration: underline;
-        }
-
-        .link-chevron {
-            white-space: nowrap;
-
-            &:after {
-                content: "";
-                display: inline-block;
-                position: relative;
-                width: 10px;
-                height: 10px;
-                border: 4px solid $black;
-                border-width: 3px 3px 0px 0px;
-                transform: rotate(45deg);
-                top: 1px;
-            }
+            color: inherit;
         }
     }
 

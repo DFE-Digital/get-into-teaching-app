@@ -59,7 +59,7 @@ describe Stories::StoryComponent, type: "component" do
     end
 
     specify "the backlink is present" do
-      expect(page).to have_link(front_matter[:backlink_text], href: front_matter[:backlink], class: %w[backlink backlink--top])
+      expect(page).to have_link(front_matter[:backlink_text], href: front_matter[:backlink], class: %w[govuk-back-link])
     end
   end
 
