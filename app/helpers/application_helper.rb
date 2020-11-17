@@ -88,9 +88,9 @@ module ApplicationHelper
 
   def internal_referer
     referer = request.referer
-    internal = referer.to_s.include?(root_url)
-    return nil unless internal
 
-    referer
+    return unless referer.present? && referer.start_with?(root_url)
+
+    referer.gsub(root_url, root_path)
   end
 end
