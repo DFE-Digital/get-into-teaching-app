@@ -29,9 +29,23 @@ describe Events::EventBoxComponent, type: "component" do
     end
   end
 
-  specify "places the description in the content div" do
-    page.find(".event-box__content") do |content_div|
-      expect(content_div).to have_content(event.summary)
+  describe "event description" do
+    specify "places the description in the content div" do
+      page.find(".event-box__content") do |content_div|
+        expect(content_div).to have_content(event.summary)
+      end
+    end
+
+    context "when the event is a virtual TTT event" do
+      let(:event) { build(:event_api, :virtual_train_to_teach_event) }
+
+      specify { expect(page).to_not have_selector(".event-box__content") }
+    end
+
+    context "when condensed" do
+      let(:condensed) { true }
+
+      specify { expect(page).to_not have_selector(".event-box__content") }
     end
   end
 

@@ -32,6 +32,10 @@ module Events
       online
     end
 
+    def description_hidden?
+      condensed? || virtual_train_to_teach_event?
+    end
+
     def heading
       condensed ? datetime : title
     end
@@ -61,6 +65,14 @@ module Events
     end
 
   private
+
+    def virtual_train_to_teach_event?
+      online? && train_to_teach_event?
+    end
+
+    def train_to_teach_event?
+      @type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]
+    end
 
     def event_box_footer_icon_class
       "event-box__footer__icon"
