@@ -46,7 +46,8 @@
     }
 
     &__link {
-        @include chevron($color: $blue);
+        @include chevron($color: $black);
+        color: $black;
 
         margin-top: 10px;
         display: block;
@@ -55,6 +56,7 @@
 
         &:hover {
             text-decoration: underline;
+            color: inherit;
         }
     }
 
