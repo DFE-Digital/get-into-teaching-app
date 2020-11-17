@@ -199,8 +199,6 @@ en:
               invalid: Enter a valid postcode
         mailing_list/steps/contact:
           attributes:
-            telephone:
-              invalid: Enter a valid phone number
             accept_privacy_policy:
               blank: Accept the privacy policy to continue
               accepted: Accept the privacy policy to continue
@@ -233,8 +231,6 @@ en:
         preferred_teaching_subject_id: Which subject do you want to teach?
       mailing_list_steps_postcode:
         address_postcode: What's your postcode? (optional)
-      mailing_list_steps_contact:
-        telephone: What's your phone number (optional)
 
     hint:
       events_steps_contact_details:
