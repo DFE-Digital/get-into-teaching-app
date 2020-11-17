@@ -3,14 +3,14 @@ inherit_gem:
     - config/default.yml
     - config/rails.yml
 
-Rails/UnknownEnv:
-  Environments:
-    - development
-    - test
-    - rolling
-    - preprod
-    - userresearch
-    - production
+AllCops:
+  Exclude:
+    - Rakefile
+    - config.ru
+    - db/schema.rb
+    - bin/*
+    - node_modules/**/*
+
 
 Lint/AmbiguousOperator:
   Enabled: false
@@ -21,3 +21,12 @@ Style/SignalException:
 Rails/LexicallyScopedActionFilter:
   Exclude:
     - 'app/controllers/**/*steps_controller.rb'
+
+Rails/UnknownEnv:
+  Environments:
+    - development
+    - test
+    - rolling
+    - preprod
+    - userresearch
+    - production
