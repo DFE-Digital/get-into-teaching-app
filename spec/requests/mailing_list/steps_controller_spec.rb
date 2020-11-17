@@ -80,6 +80,8 @@ describe MailingList::StepsController do
   end
 
   describe "#completed" do
+    include_context "prepend fake views"
+
     subject do
       get completed_mailing_list_steps_path
       response
