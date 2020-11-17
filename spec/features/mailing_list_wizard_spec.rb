@@ -66,10 +66,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "What's your postcode", with: "TE57 1NG"
     click_on "Next Step"
 
-    expect(page).to have_text "If you need more information"
+    expect(page).to have_text "Accept privacy policy"
     click_on "Complete sign up"
 
-    expect(page).to have_text "If you need more information"
+    expect(page).to have_text "Accept privacy policy"
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
     check "Yes"
@@ -102,10 +102,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "What's your postcode", with: "TE57 1NG"
     click_on "Next Step"
 
-    expect(page).to have_text "If you need more information"
+    expect(page).to have_text "Accept privacy policy"
     click_on "Complete sign up"
 
-    expect(page).to have_text "If you need more information"
+    expect(page).to have_text "Accept privacy policy"
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
     check "Yes"
@@ -156,10 +156,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_field("What's your postcode?", with: response.address_postcode)
     click_on "Next Step"
 
-    expect(page).to have_text "If you need more information"
+    expect(page).to have_text "Accept privacy policy"
     click_on "Complete sign up"
 
-    expect(page).to have_text "If you need more information"
+    expect(page).to have_text "Accept privacy policy"
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
     check "Yes"
