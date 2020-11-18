@@ -1,4 +1,5 @@
 @mixin button($bg: $green, $fg: $white) {
+    display: block;
     font-weight: bold;
     background-color: $bg;
     text-decoration: none;

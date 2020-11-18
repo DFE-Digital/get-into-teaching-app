@@ -17,6 +17,10 @@ module Sections
       @deep = true
     end
 
+    # def header
+    #   tag.header(style: "background-image: url('#{helpers.hero_image_path(image)}')") { yield }
+    # end
+
     def render?
       image.present?
     end
