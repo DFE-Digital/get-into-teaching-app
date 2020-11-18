@@ -6,6 +6,7 @@ module MailingList
       Steps::Name,
       Steps::Authenticate,
       Steps::AlreadySubscribed,
+      Steps::DegreeStatus,
       Steps::TeacherTraining,
       Steps::Subject,
       Steps::Postcode,

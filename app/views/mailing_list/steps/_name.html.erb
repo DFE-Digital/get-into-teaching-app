@@ -17,8 +17,3 @@
 <%= f.govuk_text_field :last_name %>
 <%= f.govuk_email_field :email %>
 <%= f.hidden_field :channel_id, value: params[:channel] %>
-
-<%= f.govuk_collection_select :degree_status_id,
-      f.object.degree_status_options,
-      :id,
-      :value %>

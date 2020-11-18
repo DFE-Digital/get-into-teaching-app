@@ -145,6 +145,8 @@ en:
             email:
               blank: Enter your full email address
               invalid: Enter a valid email address
+        mailing_list/steps/degree_status:
+          attributes:
             degree_status_id:
               blank: Select your degree stage
               inclusion: Select your degree stage from the list
@@ -170,6 +172,16 @@ en:
               accepted: Accept the privacy policy to continue
 
   helpers:
+    answer:
+      mailing_list_steps_degree_status:
+        degree_status:
+          graduate_or_postgraduate: "Yes, I already have a degree"
+          final_year: "I am a final year student"
+          second_year: "I am a second year student"
+          first_year: "I am a first year student"
+          i_don_t_have_a_degree_and_am_not_studying_for_one: "No, I am not studying for a degree"
+          other: "Other"
+
     label:
       wizard_steps_authenticate:
         timed_one_time_password: Enter the verification code sent to %{email}
@@ -190,6 +202,7 @@ en:
         first_name: First name
         last_name: Surname
         email: Email address
+      mailing_list_steps_degree_status:
         degree_status_id: What stage are you at with your degree?
       mailing_list_steps_teacher_training:
         consideration_journey_stage_id: How close are you to applying for teacher training?

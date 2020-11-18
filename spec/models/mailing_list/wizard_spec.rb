@@ -9,6 +9,7 @@ describe MailingList::Wizard do
         MailingList::Steps::Name,
         MailingList::Steps::Authenticate,
         MailingList::Steps::AlreadySubscribed,
+        MailingList::Steps::DegreeStatus,
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,
         MailingList::Steps::Postcode,
