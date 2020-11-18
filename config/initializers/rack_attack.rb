@@ -28,7 +28,7 @@ module Rack
 
     # Throttle mailing list sign ups by IP (5rpm)
     throttle("mailing_list_sign_up req/ip", limit: 5, period: 1.minute) do |req|
-      req.ip if (req.patch? || req.put?) && req.path == "/mailinglist/signup/contact"
+      req.ip if (req.patch? || req.put?) && req.path == "/mailinglist/signup/privacy_policy"
     end
 
     # Throttle event sign ups by IP (5rpm)

@@ -12,7 +12,7 @@ describe MailingList::Wizard do
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,
         MailingList::Steps::Postcode,
-        MailingList::Steps::Contact,
+        MailingList::Steps::PrivacyPolicy,
       ]
     end
   end
@@ -33,7 +33,7 @@ describe MailingList::Wizard do
       )
     end
 
-    subject { described_class.new wizardstore, "contact" }
+    subject { described_class.new wizardstore, "privacy_policy" }
 
     before { allow(subject).to receive(:valid?).and_return true }
     before do

@@ -197,10 +197,8 @@ en:
             address_postcode:
               blank: Enter your postcode
               invalid: Enter a valid postcode
-        mailing_list/steps/contact:
+        mailing_list/steps/privacy_policy:
           attributes:
-            telephone:
-              invalid: Enter a valid phone number
             accept_privacy_policy:
               blank: Accept the privacy policy to continue
               accepted: Accept the privacy policy to continue
@@ -233,8 +231,6 @@ en:
         preferred_teaching_subject_id: Which subject do you want to teach?
       mailing_list_steps_postcode:
         address_postcode: What's your postcode? (optional)
-      mailing_list_steps_contact:
-        telephone: What's your phone number (optional)
 
     hint:
       events_steps_contact_details:
@@ -257,7 +253,7 @@ en:
           link: privacy policy
         subscribe_to_mailing_list: |-
           Would you like to receive email updates to help you get into teaching? If you say no, you will still receive confirmation emails about any events you sign up to attend.
-      mailing_list_steps_contact:
+      mailing_list_steps_privacy_policy:
         accept_privacy_policy:
           text: Are you over 16 and do you agree to our %{link}?
           link: privacy policy

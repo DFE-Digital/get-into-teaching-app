@@ -9,7 +9,7 @@ module MailingList
       Steps::TeacherTraining,
       Steps::Subject,
       Steps::Postcode,
-      Steps::Contact,
+      Steps::PrivacyPolicy,
     ].freeze
 
     def complete!

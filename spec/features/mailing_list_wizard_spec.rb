@@ -66,11 +66,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "What's your postcode", with: "TE57 1NG"
     click_on "Next Step"
 
-    expect(page).to have_text "If you need more information"
-    fill_in_contact_step
+    expect(page).to have_text "Accept privacy policy"
     click_on "Complete sign up"
 
-    expect(page).to have_text "If you need more information"
+    expect(page).to have_text "Accept privacy policy"
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
     check "Yes"
@@ -103,11 +102,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "What's your postcode", with: "TE57 1NG"
     click_on "Next Step"
 
-    expect(page).to have_text "If you need more information"
-    fill_in_contact_step
+    expect(page).to have_text "Accept privacy policy"
     click_on "Complete sign up"
 
-    expect(page).to have_text "If you need more information"
+    expect(page).to have_text "Accept privacy policy"
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
     check "Yes"
@@ -126,7 +124,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
       considerationJourneyStageId: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m very sure and think I’ll apply"],
       degreeStatusId: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"],
       addressPostcode: "TE57 1NG",
-      telephone: "1234567890",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:get_pre_filled_mailing_list_add_member).with("123456", anything).and_return(response)
@@ -159,11 +156,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_field("What's your postcode?", with: response.address_postcode)
     click_on "Next Step"
 
-    expect(page).to have_text "If you need more information"
-    expect(page).to have_field("What's your phone number (optional)", with: response.telephone)
+    expect(page).to have_text "Accept privacy policy"
     click_on "Complete sign up"
 
-    expect(page).to have_text "If you need more information"
+    expect(page).to have_text "Accept privacy policy"
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
     check "Yes"
@@ -298,11 +294,5 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Surname", with: last_name if last_name
     fill_in "Email address", with: email if email
     select degree_status if degree_status
-  end
-
-  def fill_in_contact_step(
-    telephone: "01234567890"
-  )
-    fill_in "What's your phone number", with: telephone
   end
 end

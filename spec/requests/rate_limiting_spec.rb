@@ -26,11 +26,11 @@ describe "Rate limiting" do
     end
   end
 
-  it_behaves_like "an IP-based rate limited endpoint", "PATCH */mailinglist/signup/contact", 5, 1.minute do
+  it_behaves_like "an IP-based rate limited endpoint", "PATCH */mailinglist/signup/privacy_policy", 5, 1.minute do
     def perform_request
-      key = MailingList::Steps::Contact.model_name.param_key
-      params = { key => attributes_for(:mailing_list_contact) }
-      patch mailing_list_step_path(:contact), params: params, headers: { "REMOTE_ADDR" => ip }
+      key = MailingList::Steps::PrivacyPolicy.model_name.param_key
+      params = { key => attributes_for(:mailing_list_privacy_policy) }
+      patch mailing_list_step_path(:privacy_policy), params: params, headers: { "REMOTE_ADDR" => ip }
     end
   end
 
