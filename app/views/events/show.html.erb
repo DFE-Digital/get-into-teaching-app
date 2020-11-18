@@ -1,8 +1,8 @@
-<%= render "sections/hero",  
-    :header => @event.name, 
+<%= render Sections::HeroComponent.new(
+    :header => @event.name,
     :image => "media/images/events-hero-dt.jpg",
     :deep => false,
-    :mailinglist => false 
+    :mailinglist => false)
 %>
 
 <section class="event-info content container-1000">

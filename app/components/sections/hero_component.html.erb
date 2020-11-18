@@ -1,0 +1,51 @@
+<% if deep %>
+    <div class="hero hero--deep" style="background-image: url('<%= helpers.hero_image_path image %>')">
+        <div class="hero__banner">
+            <div class="hero__banner__text">
+                <h1><%= title %></h1>
+                <p><%= subtitle %></p>
+            </div>
+        </div>
+    </div>
+<% else %>
+    <% if mobile_image %>
+        <div class="hero">
+            <picture class="hero__image">
+                <source
+                    srcset="
+                    <%= helpers.hero_image_path mobile_image %>
+                    "
+                    media="(max-width: 799px)"
+                />
+                <img
+                    src="<%= helpers.hero_image_path image %>"
+                    alt=" "
+                    data-object-fit
+                />
+            </picture>
+            <div class="hero__banner">
+                <div class="hero__banner__text">
+                    <h1><%= title %></h1>
+                </div>
+            </div>
+        </div>
+    <% else %>
+        <div class="hero" style="background-image: url('<%= helpers.hero_image_path image %>')">
+            <div class="hero__banner">
+                <div class="hero__banner__text">
+                    <h1><%= title %></h1>
+                </div>
+            </div>
+        </div>
+    <% end %>
+<% end %>
+<% if show_mailing_list %>
+    <div class="hero__mailing-strip">
+        <div class="hero__mailing-strip__text">
+            <p>Sign up to receive information via email that could help you make your decision to get into teaching.</p>
+        </div>
+        <%= link_to(mailing_list_steps_path, class: "hero__mailing-strip__button") do %>
+            <span>Sign up here <i class="visually-hidden">to receive information via email</i></span>
+        <% end %>
+    </div>
+<% end %>

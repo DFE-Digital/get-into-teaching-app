@@ -9,14 +9,7 @@
     </div>
         <%= render "sections/header" %>
         <main role="main" id="main-content">
-            <%= render "sections/hero",
-                :header => @front_matter["title"],
-                :image => @front_matter["image"],
-                :mobileimage => @front_matter["mobileimage"],
-                :deep => @front_matter["deepheader"],
-                :subtitle =>  @front_matter["subtitle"],
-                :mailinglist => @front_matter["mailinglist"]
-            %>
+            <%= render Sections::HeroComponent.new(@front_matter) %>
             <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
                 <% if @front_matter["jump_links"].present? %>
                   <div class="content__right">

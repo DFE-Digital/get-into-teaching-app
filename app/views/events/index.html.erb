@@ -1,10 +1,11 @@
-<%= render "sections/hero",  
-    :header => "Find an event near you", 
-    :image => "media/images/events-hero-dt.jpg",
-    :mobileimage => "media/images/events-hero-mob.jpg",
-    :deep => false,
-    :mailinglist => false
+<%= render Sections::HeroComponent.new(
+    header: "Find an event near you", 
+    image: "media/images/events-hero-dt.jpg",
+    mobileimage: "media/images/events-hero-mob.jpg",
+    deep: false,
+    mailinglist: false)
 %>
+
 <section role="main" id="main-content">
     <div class="types-of-event content container-1000">
         <div class="content__left">

@@ -3,13 +3,7 @@
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", target: "link.content" }, id: "body" do %>
       <%= render "sections/header" %>
-      <%= render "sections/hero",
-          :header => @front_matter["title"],
-          :image => @front_matter["image"],
-          :mobileimage => @front_matter["mobileimage"],
-          :deep => @front_matter["deepheader"], :subtitle =>  @front_matter["subtitle"],
-          :mailinglist => @front_matter["mailinglist"]
-      %>
+      <%= render Sections::HeroComponent.new(@front_matter) %>
 
       <div class="stories-feature">
         <div class="stories-feature__image" style="background-image:url('/assets/images/victoria.png')"></div>
