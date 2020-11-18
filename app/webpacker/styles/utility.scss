@@ -29,7 +29,7 @@ $chevron-direction-map: (
     $degrees: map-get($chevron-direction-map, $direction);
 
     > * {
-        white-space: nowrap;
+        word-break: break-word;
 
         // after governs whether the chevron is placed after (on the right) or
         // before (on the left) of the link text
