@@ -1,7 +1,14 @@
+$mobile-cutoff: 800px;
+
 .hero.hero--deep {
+
     > header {
         display: flex;
         min-height: 26em;
+
+        @media only screen and (max-width: $mobile-cutoff) {
+            flex-direction: column-reverse;
+        }
 
         background-color: $grey;
 
@@ -9,9 +16,14 @@
             display: flex;
             flex-grow: 1;
             flex-direction: column;
+            min-width: 15em;
 
             &__title {
                 margin-top: 14em;
+
+                @media only screen and (max-width: $mobile-cutoff) {
+                    margin-top: 8em;
+                }
 
                 h1 {
                     // we're using flexbox to keep things sane but it doesn't
@@ -42,19 +54,31 @@
                 margin: 3em 1em;
                 font-size: 120%;
                 font-weight: 700;
+
+                @media only screen and (max-width: $mobile-cutoff) {
+                    margin: 1em 1em 2em;
+                    font-size: 140%;
+                }
             }
         }
-        
-        .right {
-            .hero-img {
+
+        .hero-img {
+            overflow: hidden;
+
+            img {
                 object-fit: cover;
                 display: block;
                 margin: 4em 0 0 0;
                 max-height: 24em;
+
+                @media only screen and (max-width: $mobile-cutoff) {
+                    margin: 0;
+                    width: 100vw;
+                    max-height: 14em;
+                }
             }
         }
     }
-
 }
 
 .hero__mailing-strip {
@@ -62,11 +86,23 @@
     align-items: center;
     background-color: $green;
 
+    @media only screen and (max-width: $mobile-cutoff) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
     &__text {
         flex-grow: 1;
         color: $white;
         font-weight: bold;
         margin-left: 1em;
+
+        @media only screen and (max-width: $mobile-cutoff) {
+            > p {
+                font-size: 80%;
+                margin-bottom: 0.2em;
+            }
+        }
     }
 
     &__cta {
@@ -76,6 +112,12 @@
             @include button($bg: $white, $fg: $black);
             @include chevron($color: $black);
             padding: 0.4em 1em;
+
+            @media only screen and (max-width: $mobile-cutoff) {
+                font-size: smaller;
+                padding: .2em .5em;
+                margin-bottom: .5em;
+            }
         }
     }
 }
