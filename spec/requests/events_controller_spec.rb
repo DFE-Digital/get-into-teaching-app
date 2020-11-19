@@ -4,7 +4,7 @@ describe EventsController do
   include_context "stub types api"
 
   describe "#index" do
-    let(:results_per_type) { Events::Search::RESULTS_PER_TYPE }
+    let(:results_per_type) { EventsController::UPCOMING_EVENTS_PER_TYPE }
     let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
     let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
     let(:parsed_response) { Nokogiri.parse(response.body) }
