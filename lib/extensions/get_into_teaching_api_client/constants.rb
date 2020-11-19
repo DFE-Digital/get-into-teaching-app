@@ -21,10 +21,6 @@ module GetIntoTeachingApiClient
         "GITIS - On Campus - Students Union Media" => 222_750_038,
       }.freeze
 
-    GET_INTO_TEACHING_EVENT_TYPES = EVENT_TYPES.select { |key|
-      ["Train to Teach Event", "Online Event"].include?(key)
-    }.freeze
-
     DEGREE_STATUS_OPTIONS =
       {
         "Graduate or postgraduate" => 222_750_000,

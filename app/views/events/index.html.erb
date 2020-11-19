@@ -30,21 +30,11 @@
     </section>
 
     <% if @events_by_type.any? %>
-      <% if @group_presenter.display_get_into_teaching_events? %>
-        <%= render partial: "event_category", locals: { 
-          organised_by: t("event_groups.get_into_teaching"), 
-          category_groups: @group_presenter.get_into_teaching_events,
-          display_empty_types: @group_presenter.display_empty_types?,
-        } %>
-      <% end %>
-
-      <% if @group_presenter.display_school_and_university_events? %>
-        <%= render partial: "event_category", locals: { 
-          organised_by:  t("event_groups.222750009"), 
-          category_groups: @group_presenter.school_and_university_events,
-          display_empty_types: @group_presenter.display_empty_types?,
-        } %>
-      <% end %>
+      <section class="content container-1000">
+        <% @group_presenter.sorted_events_by_type.each do |type_id, events| %>
+          <%= render partial: "event_group", locals: { type_id: type_id, events: events, show_see_all_events: true } %>
+        <% end %>
+      </section>
     <% else %>
       <section class="content container-1000">
         <div class="content__left">

@@ -61,9 +61,6 @@ en:
           <li><span>school experience</span></li>
           <li><span>a chance to talk to current trainees or staff</span></li>
         </ul>
-  event_groups:
-    get_into_teaching: "Get into Teaching"
-    222750009: "schools and universities"
   event_types:
     222750001: 
       name:
