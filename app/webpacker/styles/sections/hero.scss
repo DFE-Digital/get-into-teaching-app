@@ -1,13 +1,21 @@
 $mobile-cutoff: 800px;
 
-.hero.hero--deep {
+.hero {
+
+    &--deep {
+        > header {
+            min-height: 26em;
+        }
+    }
 
     > header {
         display: flex;
-        min-height: 26em;
+        min-height: 18em;
+
 
         @media only screen and (max-width: $mobile-cutoff) {
             flex-direction: column-reverse;
+            background-color: $white;
         }
 
         background-color: $grey;
@@ -18,8 +26,12 @@ $mobile-cutoff: 800px;
             flex-direction: column;
             min-width: 15em;
 
+            @media only screen and (max-width: $mobile-cutoff) {
+                margin-bottom: 2em;
+            }
+
             &__title {
-                margin-top: 14em;
+                margin-top: 17em;
 
                 @media only screen and (max-width: $mobile-cutoff) {
                     margin-top: 8em;
@@ -51,12 +63,12 @@ $mobile-cutoff: 800px;
 
             &__subtitle {
                 transform: rotate(-3deg);
-                margin: 3em 1em;
+                margin: 3em .5em;
                 font-size: 120%;
                 font-weight: 700;
 
                 @media only screen and (max-width: $mobile-cutoff) {
-                    margin: 1em 1em 2em;
+                    margin: 1em 1em 1em;
                     font-size: 140%;
                 }
             }

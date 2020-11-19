@@ -1,16 +1,18 @@
-<div class="hero hero--deep">
+<%= tag.div(class: classes) do %>
   <header>
       <div class="hero__titles">
         <div class="hero__titles__title">
           <h1><%= tag.span(title) %></h1>
         </div>
-        <%= tag.div(subtitle, class: "hero__titles__subtitle") %>
+        <% if subtitle.present? %>
+          <%= tag.div(subtitle, class: "hero__titles__subtitle") %>
+        <% end %>
       </div>
       <div class="hero-img">
         <%= image_tag(helpers.hero_image_path(image), alt: "Student in a classroom", class: "") %>
       </div>
   </header>
-</div>
+<% end %>
 
 <% if show_mailing_list %>
     <div class="hero__mailing-strip">
