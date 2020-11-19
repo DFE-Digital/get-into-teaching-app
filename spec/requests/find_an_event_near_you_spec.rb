@@ -27,6 +27,15 @@ describe "Find an event near you" do
 
     it { is_expected.to have_http_status :success }
 
+    it "displays event types" do
+      expect(response.body).to include("Types of Events")
+      event_types = GetIntoTeachingApiClient::Constants::EVENT_TYPES.values
+
+      event_types.each do |type|
+        expect(response.body).to include(I18n.t("event_types.#{type}.description"))
+      end
+    end
+
     it "displays all events" do
       expect(response.body.scan(/Event [1-5]/).count).to eq(5)
     end

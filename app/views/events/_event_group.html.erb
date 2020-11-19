@@ -3,10 +3,6 @@
 <div class="events-featured">
   <h3><%= plural_category_name %></h3>
 
-  <div class="events-featured__text">
-    <p><%= safe_html_format(t("find_an_event.types.#{type_id}")) %></p>
-  </div>
-
   <% if events.any? %>
     <div class="events-featured__list">
       <%= render partial: "event", collection: events %>
