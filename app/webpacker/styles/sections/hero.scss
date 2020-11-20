@@ -1,17 +1,9 @@
-$mobile-cutoff: 800px;
 
 .hero {
-
-    &--deep {
-        > header {
-            min-height: 26em;
-        }
-    }
+    $mobile-cutoff: 800px;
 
     > header {
         display: flex;
-        min-height: 18em;
-
 
         @media only screen and (max-width: $mobile-cutoff) {
             flex-direction: column-reverse;
@@ -19,6 +11,11 @@ $mobile-cutoff: 800px;
         }
 
         background-color: $grey;
+        border-top: 3em solid $grey;
+
+        @media only screen and (max-width: $mobile-cutoff) {
+            border-top: none;
+        }
 
         .hero__titles {
             display: flex;
@@ -31,7 +28,7 @@ $mobile-cutoff: 800px;
             }
 
             &__title {
-                margin-top: 17em;
+                margin-top: 10em;
 
                 @media only screen and (max-width: $mobile-cutoff) {
                     margin-top: 8em;
@@ -77,15 +74,19 @@ $mobile-cutoff: 800px;
         .hero__img {
             overflow: hidden;
 
+            @media only screen and (max-width: $mobile-cutoff) {
+                align-self: flex-end;
+            }
+
+
             img {
                 object-fit: cover;
                 display: block;
-                margin: 4em 0 0 0;
                 max-height: 24em;
 
                 @media only screen and (max-width: $mobile-cutoff) {
                     margin: 0;
-                    width: 100vw;
+                    width: 90vw;
                     max-height: 14em;
                 }
             }
@@ -94,6 +95,8 @@ $mobile-cutoff: 800px;
 }
 
 .hero__mailing-strip {
+    $mobile-cutoff: 800px;
+
     display: flex;
     align-items: center;
     background-color: $green;

@@ -4,7 +4,6 @@ describe Sections::HeroComponent, type: "component" do
   let(:front_matter) do
     {
       title: "Teaching, it's pretty awesome",
-      deepheader: false,
       mailinglist: true,
       fullwidth: true,
       hide_page_helpful_question: true,
@@ -24,23 +23,6 @@ describe Sections::HeroComponent, type: "component" do
 
       specify "renders the subtitle" do
         expect(page).to have_css(".hero__titles > div", text: front_matter[:subtitle])
-      end
-    end
-
-    describe "depth" do
-      context "when deepheader: false" do
-        specify "renders a hero section without the hero--deep class" do
-          expect(page).to have_css(".hero")
-          expect(page).not_to have_css(".hero.hero--deep")
-        end
-      end
-
-      context "when deepheader: true" do
-        let(:component) { Sections::HeroComponent.new(front_matter.merge(deepheader: true)) }
-
-        specify "renders a hero section with the hero--deep class" do
-          expect(page).to have_css(".hero.hero--deep")
-        end
       end
     end
 

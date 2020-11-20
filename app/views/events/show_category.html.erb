@@ -2,11 +2,9 @@
 
 <% @page_title = category_name %>
 
-<%= render Sections::HeroComponent.new(
+<%= render Sections::HeaderComponent.new(
     title: category_name,
-    image: "media/images/events-hero-dt.jpg",
-    deep: false,
-    mailinglist: false)
+    image: "media/images/events-hero-dt.jpg")
 %>
 
 <section class="types-of-event">

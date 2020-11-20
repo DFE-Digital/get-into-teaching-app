@@ -21,7 +21,7 @@ class PagesController < ApplicationController
   end
 
   def show
-    render template: content_template, layout: "layouts/content"
+    render template: content_template, layout: page_layout
   end
 
   def showblank
@@ -40,6 +40,10 @@ class PagesController < ApplicationController
   end
 
 private
+
+  def page_layout
+    request.path == root_path ? "layouts/home" : "layouts/content"
+  end
 
   def content_template
     "content/#{filtered_page_template}"

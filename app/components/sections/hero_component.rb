@@ -1,6 +1,6 @@
 module Sections
   class HeroComponent < ViewComponent::Base
-    attr_accessor :title, :image, :mobile_image, :subtitle, :show_mailing_list, :deep
+    attr_accessor :title, :image, :mobile_image, :subtitle, :show_mailing_list
 
     def initialize(front_matter)
       front_matter.with_indifferent_access.tap do |fm|
@@ -9,14 +9,11 @@ module Sections
         @image             = fm["image"]
         @mobile_image      = fm["mobileimage"]
         @show_mailing_list = fm["mailinglist"]
-        @deep              = fm["deepheader"]
       end
     end
 
     def classes
-      %w[hero].tap do |c|
-        c << "hero--deep" if deep?
-      end
+      %w[hero]
     end
 
     def render?
@@ -31,10 +28,6 @@ module Sections
     end
 
   private
-
-    def deep?
-      @deep
-    end
 
     def image_path
       helpers.hero_image_path(image)

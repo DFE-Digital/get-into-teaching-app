@@ -1,10 +1,11 @@
-$mobile-cutoff: 800px;
-
 .header {
+    $mobile-cutoff: 800px;
+
     background-color: $grey;
     border-top: 3em solid $grey;
     display: flex;
     align-items: center;
+    margin-bottom: 1em;
 
     @media only screen and (max-width: $mobile-cutoff) {
         border-top: none;
@@ -12,6 +13,10 @@ $mobile-cutoff: 800px;
     }
 
     &__title {
+        @media only screen and (max-width: $mobile-cutoff) {
+            align-self: flex-start;
+        }
+
         h1 {
             font-size: 300%;
             font-weight: bold;

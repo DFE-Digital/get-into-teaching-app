@@ -11,6 +11,8 @@ module Sections
     end
 
     def responsive_image
+      return if image.blank?
+
       image_sizes = [%(#{image_path} 800w)]
       image_sizes << %(#{mobile_image_path} 600w) if mobile_image.present?
 

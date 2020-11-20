@@ -9,7 +9,7 @@
     </div>
         <%= render "sections/header" %>
         <main role="main" id="main-content">
-            <%= render Sections::HeroComponent.new(@front_matter) %>
+            <%= render Sections::HeaderComponent.new(@front_matter) %>
             <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
                 <% if @front_matter["jump_links"].present? %>
                   <div class="content__right">
