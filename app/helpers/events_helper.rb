@@ -81,8 +81,6 @@ module EventsHelper
   def event_type_color(type_id)
     case type_id
     when GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]
-      "green"
-    when GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"]
       "purple"
     else
       "blue"

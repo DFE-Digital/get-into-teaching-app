@@ -29,22 +29,21 @@
 }
 
 .icon-online-event {
-    @include icon;
-    background-image: url('../images/icon-online-blue.svg');
-    width: 38px;
-    height: 25px;
+  @include icon;
+  background-image: url('../images/icon-online-blue.svg');
+  width: 38px;
+  height: 25px;
+}
 
-    &--green {
-      background-image: url('../images/icon-online-green.svg');
-    }
+.icon-moved-online-event {
+  @include icon;
+  background-image: url('../images/icon-moved-online-blue.svg');
+  width: 38px;
+  height: 25px;
 
-    &--yellow {
-      background-image: url('../images/icon-online-yellow.svg');
-    }
-
-    &--purple {
-      background-image: url('../images/icon-online-purple.svg');
-    }
+  &--purple {
+    background-image: url('../images/icon-moved-online-purple.svg');
+  }
 }
 
 .icon-pin {
@@ -52,18 +51,6 @@
     background-image: url('../images/icon-pin-blue.svg');
     width: 23px;
     height: 36px;
-
-    &--green {
-      background-image: url('../images/icon-pin-green.svg');
-    }
-
-    &--yellow {
-      background-image: url('../images/icon-pin-yellow.svg');
-    }
-
-    &--purple {
-      background-image: url('../images/icon-pin-purple.svg');
-    }
 }
 
 .icon-pin-large {

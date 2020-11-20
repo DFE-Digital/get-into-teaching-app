@@ -112,17 +112,14 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#event_type_color" do
-    it "returns green for train to teach events" do
+    it "returns purple for train to teach events" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]
-      expect(event_type_color(type_id)).to eq("green")
-    end
-
-    it "returns purple for online events" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"]
       expect(event_type_color(type_id)).to eq("purple")
     end
 
-    it "returns blue for schools or university events" do
+    it "returns blue for non-train to teach events" do
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"]
+      expect(event_type_color(type_id)).to eq("blue")
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Schools or University Events"]
       expect(event_type_color(type_id)).to eq("blue")
     end

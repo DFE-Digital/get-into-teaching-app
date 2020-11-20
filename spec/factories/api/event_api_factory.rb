@@ -37,6 +37,7 @@ FactoryBot.define do
 
     trait :online_event do
       type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] }
+      is_online { true }
     end
 
     trait :school_or_university_event do
