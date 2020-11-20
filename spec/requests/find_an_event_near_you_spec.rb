@@ -27,6 +27,10 @@ describe "Find an event near you" do
 
     it { is_expected.to have_http_status :success }
 
+    it "displays the submit an event section" do
+      expect(response.body).to include("Do you have a teaching event?")
+    end
+
     it "displays event types" do
       expect(response.body).to include("Types of Events")
       event_types = GetIntoTeachingApiClient::Constants::EVENT_TYPES.values
@@ -90,6 +94,10 @@ describe "Find an event near you" do
       expected_headings = ["Train to Teach Events"]
 
       expect(headings).to eq(expected_headings)
+    end
+
+    it "displays the submit an event section" do
+      expect(response.body).to include("Do you have a teaching event?")
     end
 
     context "when there are no results" do
