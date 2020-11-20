@@ -39,7 +39,7 @@
     }
 
     &__header {
-        background-color: $blue;
+        background-color: $pink;
         position: relative;
         top: -60px;
     }
@@ -100,6 +100,7 @@
 
 .events-featured {
     background: #F0F0F0;
+    position: relative;
     float: left;
     padding: 20px;
     width: 100%;
@@ -107,10 +108,13 @@
     + .events-featured {
         margin-top: 30px;
     }
-    > h3 {
+
+    &__heading {
+      > h3 {
         font-size: 28px;
         margin: 0 0 20px 0;
         line-height: 1.25;
+      }
     }
 
     &__text {
@@ -130,6 +134,16 @@
       }
     }
 
+    &--with-logo {
+      margin-top: 88px;
+    }
+
+    &__logo {
+      position: absolute;
+      top: 0;
+      left: 100%;
+      transform: translate(-100%, -65%);
+    }
 }
 
 .event-pagination {
@@ -191,6 +205,10 @@
     }
 }
 
+.discover-events-strapline {
+  margin-bottom: -20px;
+}
+
 .search-for-events-no-results {
   background: $purple;
   color: $white;
@@ -224,12 +242,6 @@
             display: block;
             width: 100%;
             margin-right: 40px;
-
-            p.content-alert {
-                margin-top: -10px;
-                margin-right: 0px;
-            }
-
         }
 
         &__right {
@@ -281,12 +293,34 @@
     .events-featured {
         &__text {
           max-width: 100%;
-        }    
+        }
+
+        &__heading {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        &__logo {
+          position: relative;
+          top: auto;
+          left: auto;
+          transform: scale(0.7);
+          margin-right: -58px;
+        }
     }
 
 }
 
 @media only screen and (max-width: 500px) {
+    .events-featured {
+      &__heading {
+        > h3 {
+          font-size: 23px;
+        }
+      }
+    }
+
     .search-for-events-results {
 
         > a {

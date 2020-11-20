@@ -23,8 +23,25 @@
         </div>
     </section>
 
+    <% unless @performed_search %>
+    <section class="content container-1000">
+      <div class="content-alert">
+        <div class="content-alert__icon">
+          <img src="<%= asset_pack_path "media/images/icon-moved-online-purple.svg" %>" alt="" />
+        </div>
+        <div>
+          <h4>Some events have moved online</h4>
+          <p>Until it is safe to see you in person, the Train to Teach and School and University events are online.</p>
+        </div>
+      </p>
+    </section>
+    <% end %>
+
     <% if @events_by_type.any? %>
       <section class="content container-1000">
+        <% unless @performed_search %>
+        <h2 class="strapline strapline--blue discover-events-strapline">Discover Events</h2>
+        <% end %>
         <% @group_presenter.sorted_events_by_type.each do |type_id, events| %>
           <%= render partial: "event_group", locals: { type_id: type_id, events: events, show_see_all_events: true } %>
         <% end %>

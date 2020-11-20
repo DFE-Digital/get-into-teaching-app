@@ -1,8 +1,17 @@
 <% plural_category_name = pluralised_category_name(type_id) %>
+<% with_logo = type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] %>
 
-<div class="events-featured">
-  <h3><%= plural_category_name %></h3>
+<div class="events-featured <%= "events-featured--with-logo" if with_logo %>">
+  <div class="events-featured__heading">
+    <h3><%= plural_category_name %></h3>
 
+    <% if with_logo %>
+    <div class="events-featured__logo">
+      <img src="<%= asset_pack_path "media/images/getintoteachinglogo-with-bg-purple.svg" %>" alt="" />
+    </div>
+    <% end %>
+  </div>
+  
   <% if events.any? %>
     <div class="events-featured__list">
       <%= render partial: "event", collection: events %>
@@ -17,7 +26,7 @@
 
   <% if show_see_all_events %>
     <%= link_to(event_category_events_path(plural_category_name.parameterize), class: "call-to-action-button") do %>
-      See all <span><%= plural_category_name %></span>
+      Explore <span><%= plural_category_name %></span>
     <% end %>
   <% end %>
 </div>

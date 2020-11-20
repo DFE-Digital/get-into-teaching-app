@@ -54,6 +54,7 @@ private
     @events_by_type = @event_search.query_events
     @display_empty_types = @event_search.type.nil?
     @group_presenter = Events::GroupPresenter.new(@events_by_type, @display_empty_types)
+    @performed_search = true
   end
 
   def load_event_search
