@@ -5,7 +5,7 @@ module Sections
     attr_accessor :deep
 
     def initialize(front_matter, deep: false)
-      front_matter.tap do |fm|
+      front_matter.with_indifferent_access.tap do |fm|
         @title             = fm["title"]
         @subtitle          = fm["subtitle"]
         @image             = fm["image"]
@@ -26,7 +26,7 @@ module Sections
       image.present?
     end
 
-private
+  private
 
     def deep?
       @deep
