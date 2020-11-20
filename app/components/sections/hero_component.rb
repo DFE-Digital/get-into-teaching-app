@@ -2,7 +2,7 @@ module Sections
   class HeroComponent < ViewComponent::Base
     attr_accessor :title, :image, :mobile_image, :subtitle, :show_mailing_list, :deep
 
-    def initialize(front_matter, deep: false)
+    def initialize(front_matter)
       front_matter.with_indifferent_access.tap do |fm|
         @title             = fm["title"]
         @subtitle          = fm["subtitle"]
@@ -11,7 +11,6 @@ module Sections
         @show_mailing_list = fm["mailinglist"]
         @deep              = fm["deepheader"]
       end
-
     end
 
     def classes

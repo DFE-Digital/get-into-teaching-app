@@ -1,0 +1,49 @@
+$mobile-cutoff: 800px;
+
+.header {
+    background-color: $grey;
+    border-top: 3em solid $grey;
+    display: flex;
+    align-items: center;
+
+    @media only screen and (max-width: $mobile-cutoff) {
+        border-top: none;
+        flex-direction: column-reverse;
+    }
+
+    &__title {
+        h1 {
+            font-size: 300%;
+            font-weight: bold;
+            text-decoration: underline .1em;
+            text-underline-offset: .25em;
+            padding: 0 1.5em;
+
+            @media only screen and (max-width: $mobile-cutoff) {
+                font-size: 200%;
+                padding: 1em;
+            }
+        }
+    }
+
+    &__img {
+        overflow: hidden;
+
+        @media only screen and (max-width: $mobile-cutoff) {
+            align-self: flex-end;
+        }
+
+        > img {
+            object-fit: cover;
+            display: block;
+            max-height: 18em;
+            min-width: 50vw;
+
+            @media only screen and (max-width: $mobile-cutoff) {
+                width: 80vw;
+                max-height: 12em;
+                min-height: 12em;
+            }
+        }
+    }
+}
