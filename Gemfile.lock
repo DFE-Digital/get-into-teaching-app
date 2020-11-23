@@ -152,7 +152,7 @@ GEM
     kaminari-core (1.2.1)
     kramdown (2.3.0)
       rexml
-    listen (3.2.1)
+    listen (3.3.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.7.0)
@@ -371,7 +371,7 @@ DEPENDENCIES
   govuk_design_system_formbuilder
   kaminari (~> 1.2)
   kramdown
-  listen (>= 3.0.5, < 3.3)
+  listen (>= 3.0.5, < 3.4)
   prometheus-client
   pry-byebug
   puma (~> 5.0)
