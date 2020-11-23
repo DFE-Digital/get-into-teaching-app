@@ -29,58 +29,32 @@ describe Events::EventBoxComponent, type: "component" do
     end
   end
 
-  describe "event description" do
-    specify "places the description in the content div" do
-      page.find(".event-box__content") do |content_div|
-        expect(content_div).to have_content(event.summary)
+  describe "online/offline" do
+    let(:online_heading) { "Online Event" }
+    let(:moved_online_heading) { "Event has moved online" }
+
+    context "when the event is an online event type" do
+      let(:event) { build(:event_api, :online_event) }
+
+      specify "it's marked as being online" do
+        expect(page).to have_css(".event-box__footer__meta", text: online_heading)
       end
     end
 
-    context "when the event is a virtual TTT event" do
+    context "when the event has moved online" do
       let(:event) { build(:event_api, :virtual_train_to_teach_event) }
 
-      specify { expect(page).to_not have_selector(".event-box__content") }
-    end
-
-    context "when condensed" do
-      let(:condensed) { true }
-
-      specify { expect(page).to_not have_selector(".event-box__content") }
-    end
-  end
-
-  describe "online/offline" do
-    let(:online_heading) { "Online Event" }
-    context "when the event is online" do
-      let(:event) { build(:event_api, is_online: true) }
-
-      specify %(it's marked as being online) do
-        expect(page).to have_css(".event-box__footer__meta", text: online_heading)
+      specify "it's marked as being moved online" do
+        expect(page).to have_css(".event-box__footer__meta", text: moved_online_heading)
       end
     end
 
     context "when the event is offline" do
       let(:event) { build(:event_api, is_online: false) }
 
-      specify %(it's not marked as being online) do
+      specify "it's not marked as being online or moved online" do
         expect(page).not_to have_css(".event-box__footer__meta", text: online_heading)
-      end
-    end
-  end
-
-  describe "location" do
-    let(:location_description_div) { ".event-box__footer__meta--location" }
-    context "when the event has a location" do
-      specify "the city should be displayed" do
-        expect(page).to have_css(location_description_div, text: event.building.address_city)
-      end
-    end
-
-    context "when the event has no location" do
-      let(:event) { build(:event_api, :no_location) }
-
-      specify "no location information should be displayed" do
-        expect(page).not_to have_css(location_description_div)
+        expect(page).not_to have_css(".event-box__footer__meta", text: moved_online_heading)
       end
     end
   end
@@ -89,13 +63,13 @@ describe Events::EventBoxComponent, type: "component" do
     OpenStruct.new(
       name: "Train to Teach Event",
       trait: :train_to_teach_event,
-      expected_colour: "green",
+      expected_colour: "purple",
       is_online: false,
     ),
     OpenStruct.new(
       name: "Online Event",
       trait: :online_event,
-      expected_colour: "purple",
+      expected_colour: "blue",
       is_online: true,
     ),
     OpenStruct.new(
@@ -108,7 +82,7 @@ describe Events::EventBoxComponent, type: "component" do
     OpenStruct.new(
       name: "Train to Teach Event",
       trait: :train_to_teach_event,
-      expected_colour: "green",
+      expected_colour: "purple",
       is_online: true,
     ),
   ].each do |event_type|
@@ -121,9 +95,23 @@ describe Events::EventBoxComponent, type: "component" do
         expect(page).to have_content(event_type.name)
       end
 
-      if event_type.is_online && event_type.trait != :online_event
+      if event_type.is_online && event_type.trait == :online_event
         specify %(the event should also be described as an 'Online Event') do
           expect(page).to have_content("Online Event")
+        end
+
+        specify %(the online icon should be #{event_type.expected_colour}) do
+          expect(page).to have_css(%(.icon-online-event--#{event_type.expected_colour}))
+        end
+      end
+
+      if event_type.is_online && event_type.trait != :online_event
+        specify %(the event should also be described as a 'Event has moved online') do
+          expect(page).to have_content("Event has moved online")
+        end
+
+        specify %(the online icon should be #{event_type.expected_colour}) do
+          expect(page).to have_css(%(.icon-moved-online-event--#{event_type.expected_colour}))
         end
       end
 
@@ -131,16 +119,6 @@ describe Events::EventBoxComponent, type: "component" do
         if event_type.name.present?
           expect(page).to have_css(%(.event-box__divider.event-box__divider--#{event_type.name&.parameterize}))
         end
-      end
-
-      if event_type.is_online
-        specify %(the online icon should be #{event_type.expected_colour}) do
-          expect(page).to have_css(%(.icon-online-event--#{event_type.expected_colour}))
-        end
-      end
-
-      specify %(the map pin icon should be #{event_type.expected_colour}) do
-        expect(page).to have_css(%(.icon-pin--#{event_type.expected_colour}))
       end
     end
   end

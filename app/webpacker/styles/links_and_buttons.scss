@@ -61,6 +61,7 @@ a.content-link-secondary:hover {
 .call-to-action-button {
     @include button;
     @include chevron;
+    display: inline-block;
 }
 
 .secondary-button {

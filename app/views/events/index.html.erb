@@ -6,22 +6,16 @@
     :mailinglist => false
 %>
 <section role="main" id="main-content">
-    <div class="types-of-event content container-1000">
-        <div class="content__left">
-            <p>
-                <strong>Our nationwide events are informal opportunities for you to get free expert advice about your next steps into teaching.</strong>
-            </p>
-            <p>
-              If you’d like to advertise your teaching event in this listing, please 
-              <a  href="https://form.education.gov.uk/fillform.php?self=1&amp;form_id=KGRAPEGQYmw&amp;type=form&amp;ShowMsg=1&amp;skipExtraPage=1&amp;form_name=Provider+event+details+-+Get+into+Teaching+website&amp;noRegister=false&amp;ret=/MyServices&amp;blackListId=KGRAPEGQYmw&amp;cancelRedirectLink=%2F&amp;noLoginPrompt=1" 
-                  title="Submit your event details on GOV.UK"   
-                  target="_blank"
-                  rel="noopener norefferer">
-                fill in our online form
-              </a>
-            </p>
-        </div>
-    </div>
+    <section class="event-type-descriptions">
+      <div class="container-1000">
+        <h2 class="strapline strapline--blue">Types of Events</h2>
+        <section class="event-type-descriptions__content">
+          <% GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.each do |type_id| %>
+            <%= render Events::TypeDescriptionComponent.new(type_id) %>
+          <% end %>
+        </section>
+      </div>
+    </section>
 
     <section class="search-for-events">
         <div class="container-1000">
@@ -29,22 +23,29 @@
         </div>
     </section>
 
-    <% if @events_by_type.any? %>
-      <% if @group_presenter.display_get_into_teaching_events? %>
-        <%= render partial: "event_category", locals: { 
-          organised_by: t("event_groups.get_into_teaching"), 
-          category_groups: @group_presenter.get_into_teaching_events,
-          display_empty_types: @group_presenter.display_empty_types?,
-        } %>
-      <% end %>
+    <% unless @performed_search %>
+    <section class="content container-1000">
+      <div class="content-alert">
+        <div class="content-alert__icon">
+          <img src="<%= asset_pack_path "media/images/icon-moved-online-purple.svg" %>" alt="" />
+        </div>
+        <div>
+          <h4>Some events have moved online</h4>
+          <p>Until it is safe to see you in person, the Train to Teach and School and University events are online.</p>
+        </div>
+      </p>
+    </section>
+    <% end %>
 
-      <% if @group_presenter.display_school_and_university_events? %>
-        <%= render partial: "event_category", locals: { 
-          organised_by:  t("event_groups.222750009"), 
-          category_groups: @group_presenter.school_and_university_events,
-          display_empty_types: @group_presenter.display_empty_types?,
-        } %>
-      <% end %>
+    <% if @events_by_type.any? %>
+      <section class="content container-1000">
+        <% unless @performed_search %>
+        <h2 class="strapline strapline--blue discover-events-strapline">Discover Events</h2>
+        <% end %>
+        <% @group_presenter.sorted_events_by_type.each do |type_id, events| %>
+          <%= render partial: "event_group", locals: { type_id: type_id, events: events, show_see_all_events: true } %>
+        <% end %>
+      </section>
     <% else %>
       <section class="content container-1000">
         <div class="content__left">
@@ -54,4 +55,19 @@
         </div>
       </section>
     <% end %>
+
+    <section class="submit-event-cta">
+      <div class="container-1000">
+        <div class="content-cta content-cta--center">
+          <h2>Do you have a teaching event?</h2>
+          <p>
+            If you'd like to advertise your teaching event in this listing, <a href="https://form.education.gov.uk/fillform.php?self=1&amp;form_id=KGRAPEGQYmw&amp;type=form&amp;ShowMsg=1&amp;skipExtraPage=1&amp;form_name=Provider+event+details+-+Get+into+Teaching+website&amp;noRegister=false&amp;ret=/MyServices&amp;blackListId=KGRAPEGQYmw&amp;cancelRedirectLink=%2F&amp;noLoginPrompt=1" 
+              title="Submit your event details on GOV.UK"   
+              target="_blank"
+              rel="noopener norefferer">
+            please fill in our online form<i class="icon icon-external"></i></a>.
+          </p>
+        </div>
+      </div>
+    </section>
 </section>

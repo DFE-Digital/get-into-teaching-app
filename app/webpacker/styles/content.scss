@@ -64,22 +64,6 @@
             &:last-child {
                 margin-bottom: 0;
             }
-
-            &.content-alert {
-                background-color: $purple;
-                color: $white;
-                font-weight: bold;
-                padding: 1.5em;
-                line-height: 1.5em;
-
-                a {
-                  color: $white;
-                }
-
-                @media only screen and (max-width: 800px) {
-                    font-size: 100%;
-                }
-            }
         }
 
         ul {
@@ -184,10 +168,6 @@
             padding: 0 0 20px 0px;    
             display: block;
             width: 100%;
-
-            p.content-alert {
-                margin-top: 0px;
-            }
 
             div.media-cta {
                 max-width: 700px;

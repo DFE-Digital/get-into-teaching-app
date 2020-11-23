@@ -20,7 +20,7 @@
             <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
                 <div class="content__left">
                   <% if @front_matter["alert"].present? %>
-                    <%= tag.p(@front_matter["alert"], class: "content-alert") %>
+                    <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
                   <% end %>
 
                   <div class="accordions" data-controller="accordion">

@@ -1,6 +1,6 @@
 module Events
   class EventBoxComponent < ViewComponent::Base
-    attr_reader :title, :event, :description, :type, :online, :location, :condensed
+    attr_reader :title, :event, :type, :online, :condensed
 
     delegate :format_event_date, :name_of_event_type, :event_type_color, :safe_format, to: :helpers
 
@@ -9,10 +9,8 @@ module Events
     def initialize(event, condensed: false)
       @event       = event
       @title       = event.name
-      @description = event.summary
       @type        = event.type_id
       @online      = event.is_online
-      @location    = event.building&.address_city
       @condensed   = condensed
     end
 
@@ -32,10 +30,6 @@ module Events
       online
     end
 
-    def description_hidden?
-      condensed? || virtual_train_to_teach_event?
-    end
-
     def heading
       condensed ? datetime : title
     end
@@ -53,25 +47,26 @@ module Events
     end
 
     def online_icon
-      colour_class = %(icon-online-event--#{type_color})
+      icon_class = moved_online? ? "icon-moved-online-event" : "icon-online-event"
+      colour_class = "#{icon_class}--#{type_color}"
 
-      tag.div(class: [event_box_footer_icon_class, "icon-online-event", colour_class])
+      tag.div(class: [event_box_footer_icon_class, icon_class, colour_class])
     end
 
-    def location_icon
-      colour_class = %(icon-pin--#{type_color})
+    def online_text
+      return "Event has moved online" if moved_online?
 
-      tag.div(class: [event_box_footer_icon_class, "icon-pin", colour_class])
+      "Online Event"
     end
 
   private
 
-    def virtual_train_to_teach_event?
-      online? && train_to_teach_event?
+    def moved_online?
+      online? && !online_event_type?
     end
 
-    def train_to_teach_event?
-      @type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]
+    def online_event_type?
+      @type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"]
     end
 
     def event_box_footer_icon_class

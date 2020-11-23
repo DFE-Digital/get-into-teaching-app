@@ -1,12 +1,34 @@
+@mixin content-cta {
+  background: $grey;
+  text-align: left;
+  padding: 20px;
+  margin: 0 -20px 30px;
+  box-sizing: border-box;
+  width: auto;
+  h2 {
+      border: 0;
+      margin-bottom: 5px;
+      margin-top:0;
+      font-size: 28px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
 .content__left {
-    .content-cta {
-        background: $grey;
-        padding: 20px;
-        margin: 0 -20px 30px;
-        h2 {
-            border: 0;
-            margin-bottom: 5px;
-            font-size: 28px;
-        }
-    }
+  .content-cta {
+      @include content-cta;
+  }
+}
+
+.content-cta {
+  @include content-cta;
+  width: 65%;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+  }
 }

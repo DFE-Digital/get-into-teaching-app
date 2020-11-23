@@ -1,0 +1,46 @@
+.content-alert {
+  background-color: $purple;
+  color: $white;
+  padding: 1em;
+  line-height: 1.5em;
+  display: flex;
+  width: 78%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+
+  @media only screen and (max-width: 800px) {
+    width: 100%;
+  }
+
+  &--fullwidth {
+    width: 100%;
+  }
+
+  h4 {
+    margin: 0;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    color: $white;
+  }
+
+  &__icon {
+    position: relative;
+    background-color: $white;
+    min-width: 62px;
+    max-width: 62px;
+    height: 62px;
+    margin-right: 20px
+  }
+
+  img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

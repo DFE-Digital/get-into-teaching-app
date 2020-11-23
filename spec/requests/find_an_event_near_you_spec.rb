@@ -27,13 +27,34 @@ describe "Find an event near you" do
 
     it { is_expected.to have_http_status :success }
 
+    it "displays the submit an event section" do
+      expect(response.body).to include("Do you have a teaching event?")
+    end
+
+    it "displays the events moved online notice" do
+      expect(response.body).to include("Some events have moved online")
+    end
+
+    it "displays the discover events heading" do
+      expect(response.body).to include("Discover Events")
+    end
+
+    it "displays event types" do
+      expect(response.body).to include("Types of Events")
+      event_types = GetIntoTeachingApiClient::Constants::EVENT_TYPES.values
+
+      event_types.each do |type|
+        expect(response.body).to include(I18n.t("event_types.#{type}.description"))
+      end
+    end
+
     it "displays all events" do
       expect(response.body.scan(/Event [1-5]/).count).to eq(5)
     end
 
     it "presents the events in date order, per category" do
-      headings = response.body.scan(/<h4>(.*)<\/h4>/).flatten.take(events.count)
-      expect(headings).to eq(["Event 4", "Event 1", "Event 5", "Event 2", "Event 3"])
+      headings = response.body.scan(/<h4>Event (.*)<\/h4>/).flatten.take(events.count)
+      expect(headings).to eq(%w[4 1 5 2 3])
     end
 
     context "when there are no results" do
@@ -83,6 +104,10 @@ describe "Find an event near you" do
       expect(headings).to eq(expected_headings)
     end
 
+    it "displays the submit an event section" do
+      expect(response.body).to include("Do you have a teaching event?")
+    end
+
     context "when there are no results" do
       let(:events) { [] }
 
@@ -108,6 +133,14 @@ describe "Find an event near you" do
 
     it "displays events" do
       expect(response.body.scan(/Event \d/).count).to eq(events.count)
+    end
+
+    it "does not display the events moved online notice" do
+      expect(response.body).to_not include("Some events have moved online")
+    end
+
+    it "does not display the discover events heading" do
+      expect(response.body).to_not include("Discover Events")
     end
 
     it "categorises the results" do

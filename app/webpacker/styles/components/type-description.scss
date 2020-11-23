@@ -1,0 +1,27 @@
+.type-description {
+  h5 {
+    margin: 10px 0;
+    font-size: 0.9em;
+  }
+
+  p {
+    font-size: 0.85em;
+    margin-top: 0;
+  }
+}
+
+.type-description__link {
+  @include chevron($color: $black);
+  
+  color: $black;
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.85em;
+
+  &:hover {
+      text-decoration: underline;
+      color: inherit;
+  }
+}

@@ -4,7 +4,7 @@ class EventsController < ApplicationController
   before_action :load_upcoming_events, only: %i[index]
 
   MAXIMUM_EVENTS_IN_CATEGORY = 1_000
-  UPCOMING_EVENTS_PER_TYPE = 9
+  UPCOMING_EVENTS_PER_TYPE = 3
   EVENTS_PER_PAGE = 9
 
   def index
@@ -54,6 +54,7 @@ private
     @events_by_type = @event_search.query_events
     @display_empty_types = @event_search.type.nil?
     @group_presenter = Events::GroupPresenter.new(@events_by_type, @display_empty_types)
+    @performed_search = true
   end
 
   def load_event_search

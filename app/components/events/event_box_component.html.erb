@@ -11,12 +11,6 @@
 
     <%= divider %>
 
-    <% unless description_hidden? %>
-      <div class="event-box__content">
-        <p><%= description %></p>
-      </div>
-    <% end %>
-
     <footer class="event-box__footer">
       <% if type && type != GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] %>
         <div class="event-box__footer__item">
@@ -31,16 +25,7 @@
         <div class="event-box__footer__item">
           <%= online_icon %>
           <div class="event-box__footer__meta">
-            Online Event
-          </div>
-        </div>
-      <% end %>
-
-      <% if location.present? %>
-        <div class="event-box__footer__item">
-          <%= location_icon %>
-          <div class="event-box__footer__meta event-box__footer__meta--location">
-            <%= location %>
+            <%= online_text %>
           </div>
         </div>
       <% end %>
