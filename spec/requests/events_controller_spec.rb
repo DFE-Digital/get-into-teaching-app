@@ -4,17 +4,8 @@ describe EventsController do
   include_context "stub types api"
 
   describe "#index" do
-    let(:results_per_type) { EventsController::UPCOMING_EVENTS_PER_TYPE }
-    let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
-    let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
+    include_context "stub events by category api", EventsController::UPCOMING_EVENTS_PER_TYPE
     let(:parsed_response) { Nokogiri.parse(response.body) }
-    let(:expected_request_attributes) { { quantity_per_type: results_per_type } }
-
-    before do
-      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:upcoming_teaching_events_indexed_by_type)
-        .with(a_hash_including(expected_request_attributes)) { events_by_type }
-    end
 
     subject! do
       get(events_path)
