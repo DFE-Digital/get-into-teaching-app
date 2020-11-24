@@ -18,7 +18,8 @@
 @import './sections/header';
 @import './sections/talk-to-us';
 
-@import './components/cards-grid';
+@import './components/mixins/cards-grid';
+@import './components/cards.scss';
 @import './components/event-box';
 @import './components/content-nav';
 @import './components/content-cta';

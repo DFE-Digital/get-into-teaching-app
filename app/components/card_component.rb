@@ -18,14 +18,14 @@ class CardComponent < ViewComponent::Base
 private
 
   def image_link
-    link_to(link, class: "story-card__thumb") do
+    link_to(link, class: "card__thumb") do
       image_tag(image, data: { "object-fit" => "cover" })
     end
   end
 
   def video_link
-    link_to(video, class: "story-card__thumb", data: { action: "click->video#play", target: "video.link" }) do
-      safe_join([tag.div(helpers.fas_icon("play"), class: "story-card__thumb--play-icon"), image_tag(image)])
+    link_to(video, class: "card__thumb", data: { action: "click->video#play", target: "video.link" }) do
+      safe_join([tag.div(helpers.fas_icon("play"), class: "card__thumb--play-icon"), image_tag(image)])
     end
   end
 end

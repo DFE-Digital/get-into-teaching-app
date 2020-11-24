@@ -13,7 +13,7 @@ describe CardComponent, type: "component" do
   subject! { render_inline(CardComponent.new(card: card)) }
 
   specify "renders a card" do
-    expect(page).to have_css(".story-card")
+    expect(page).to have_css(".card")
   end
 
   specify "includes a link wrapping the story image" do

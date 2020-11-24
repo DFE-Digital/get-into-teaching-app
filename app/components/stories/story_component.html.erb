@@ -31,7 +31,7 @@
 
 <% if show_more_stories? %>
   <h2 class="strapline">More stories</h2>
-  <div class="story-cards more-stories">
+  <div class="cards more-stories">
     <%= render Stories::CardComponent.with_collection(more_stories) %>
   </div>
 <% end %>

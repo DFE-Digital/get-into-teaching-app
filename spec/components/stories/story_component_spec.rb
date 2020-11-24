@@ -107,7 +107,7 @@ describe Stories::StoryComponent, type: "component" do
       end
 
       specify "there should be a story card for each story" do
-        expect(page).to have_css(".story-cards.more-stories > .story-card", count: front_matter[:more_stories].length)
+        expect(page).to have_css(".cards.more-stories > .card", count: front_matter[:more_stories].length)
       end
     end
 

@@ -1,0 +1,59 @@
+.cards {
+    @include cards-grid(3, 2.5em);
+    padding: 2px;
+
+    .card {
+        outline: 2px solid $black;
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        position: relative;
+        overflow: hidden;
+
+        &__thumb {
+            width: 100%;
+
+            img  {
+                height: 220px;
+                width: 100%;
+                object-fit: cover;
+                display: block;
+
+                @media only screen and (max-width: 800px) {
+                    height: 250px;
+                    width: 100%;
+                }
+            }
+
+            &--play-icon {
+                position: absolute;
+                margin: 3em auto auto -.2em;
+
+                > span {
+                    font-size: 150%;
+                    color: white;
+                    background-color: $pink-dark-90;
+                    padding: .8em;
+                    transform: rotate(-3deg);
+                }
+            }
+
+            &:hover {
+                .card__thumb--play-icon > span {
+                    background-color: $pink;
+                }
+            }
+            &.object-fit-polyfill {
+                padding-top: 260px;
+            }
+        }
+
+        &__snippet {
+            padding: 0 1em;
+        }
+
+        &__footer {
+            padding: 0 1em 1em;
+        }
+    }
+}
