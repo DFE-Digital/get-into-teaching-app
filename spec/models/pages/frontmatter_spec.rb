@@ -26,10 +26,40 @@ RSpec.describe Pages::Frontmatter do
     end
   end
 
+  describe ".perform_caching" do
+    subject { described_class.perform_caching }
+
+    it { is_expected.to be false }
+  end
+
+  describe ".find" do
+    subject { described_class.find page, content_dir }
+
+    it_behaves_like "page loading"
+
+    context "when caching" do
+      before do
+        allow(Pages::Frontmatter).to receive(:instance) { instance.preload }
+        expect(instance).to receive(:find_from_preloaded).and_call_original
+      end
+
+      it_behaves_like "page loading"
+    end
+  end
+
   describe "#find" do
     subject { instance.find page }
 
     it_behaves_like "page loading"
+
+    context "when preloaded" do
+      before do
+        expect(instance).to receive(:find_from_preloaded).and_call_original
+        instance.preload
+      end
+
+      it_behaves_like "page loading"
+    end
   end
 
   subject "#[]" do
@@ -38,9 +68,10 @@ RSpec.describe Pages::Frontmatter do
     it_behaves_like "page loading"
   end
 
-  describe ".find" do
-    subject { described_class.find page, content_dir }
+  describe "#preload" do
+    subject { instance.preload.send(:templates) }
 
-    it_behaves_like "page loading"
+    it { is_expected.to have_attributes keys: %w[page1 subfolder/page2] }
+    it { is_expected.to include "page1" => { title: "Hello World 1" } }
   end
 end

@@ -5,7 +5,19 @@ module Pages
 
     class << self
       def find(template, content_dir)
-        new(content_dir).find template
+        instance(content_dir).find template
+      end
+
+      def instance(content_dir)
+        if perform_caching
+          @new ||= new(content_dir).preload
+        else
+          new(content_dir)
+        end
+      end
+
+      def perform_caching
+        Rails.application.config.action_controller.perform_caching
       end
     end
 
@@ -14,9 +26,19 @@ module Pages
     end
 
     def find(template)
-      extract_frontmatter file_from_template(template)
+      preloaded? ? find_from_preloaded(template) : find_now(template)
     end
     alias_method :[], :find
+
+    def preload
+      Dir.glob(content_pattern, &method(:add))
+
+      self
+    end
+
+    def preloaded?
+      !@templates.nil?
+    end
 
     class MissingTemplate < RuntimeError
       def initialize(tmpl)
@@ -25,6 +47,30 @@ module Pages
     end
 
   private
+
+    def find_now(template)
+      extract_frontmatter file_from_template(template)
+    end
+
+    def find_from_preloaded(template)
+      if @templates.key? template
+        @templates[template]
+      else
+        raise MissingTemplate, template
+      end
+    end
+
+    def templates
+      @templates ||= {}
+    end
+
+    def add(file)
+      templates[path(file)] = extract_frontmatter(file)
+    end
+
+    def path(file)
+      Pathname.new(file).sub_ext("").relative_path_from(content_dir).to_s
+    end
 
     def extract_frontmatter(file)
       FrontMatterParser::Parser.parse_file(file).front_matter.symbolize_keys
@@ -38,6 +84,10 @@ module Pages
       else
         raise MissingTemplate, template
       end
+    end
+
+    def content_pattern
+      "#{content_dir}/**/*.{md,markdown}"
     end
   end
 end
