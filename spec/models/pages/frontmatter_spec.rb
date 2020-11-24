@@ -26,6 +26,11 @@ RSpec.describe Pages::Frontmatter do
     end
   end
 
+  shared_examples "a listing of all pages" do
+    it { is_expected.to have_attributes keys: %w[/page1 /subfolder/page2] }
+    it { is_expected.to include "/page1" => { title: "Hello World 1" } }
+  end
+
   describe ".perform_caching" do
     subject { described_class.perform_caching }
 
@@ -45,6 +50,12 @@ RSpec.describe Pages::Frontmatter do
 
       it_behaves_like "page loading"
     end
+  end
+
+  describe ".list" do
+    subject { described_class.list content_dir }
+
+    it_behaves_like "a listing of all pages"
   end
 
   describe "#find" do
@@ -71,7 +82,12 @@ RSpec.describe Pages::Frontmatter do
   describe "#preload" do
     subject { instance.preload.send(:templates) }
 
-    it { is_expected.to have_attributes keys: %w[/page1 /subfolder/page2] }
-    it { is_expected.to include "/page1" => { title: "Hello World 1" } }
+    it_behaves_like "a listing of all pages"
+  end
+
+  describe "#list" do
+    subject { instance.list }
+
+    it_behaves_like "a listing of all pages"
   end
 end

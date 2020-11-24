@@ -4,6 +4,8 @@ describe TemplateHandlers::ERB, type: :view do
   subject { rendered }
 
   context "generic ERB page accessing the @sitemap" do
+    include_context "use fixture markdown pages"
+
     let(:erb) do
       <<~ERB
         <%= pluralize(@sitemap[:markdown_content].count, "resource") %>
@@ -14,7 +16,6 @@ describe TemplateHandlers::ERB, type: :view do
 
     before do
       TemplateHandlers::ERB.sitemap = nil # clear cache
-      stub_const("TemplateHandlers::ERB::MARKDOWN_CONTENT_DIR", "#{file_fixture_path}/markdown_content")
       stub_template "test.erb" => erb
       render template: "test.erb"
     end

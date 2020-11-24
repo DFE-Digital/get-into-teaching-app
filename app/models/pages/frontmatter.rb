@@ -4,8 +4,12 @@ module Pages
     attr_reader :content_dir
 
     class << self
-      def find(template, content_dir)
+      def find(template, content_dir = nil)
         instance(content_dir).find template
+      end
+
+      def list(content_dir = nil)
+        instance(content_dir).list
       end
 
       def instance(content_dir)
@@ -22,13 +26,20 @@ module Pages
     end
 
     def initialize(content_dir = nil)
-      @content_dir = content_dir || MARKDOWN_CONTENT_DIR
+      @content_dir = content_dir ? Pathname.new(content_dir) : MARKDOWN_CONTENT_DIR
     end
 
     def find(template)
       preloaded? ? find_from_preloaded(template) : find_now(template)
     end
     alias_method :[], :find
+
+    def list
+      preload unless preloaded?
+
+      @templates
+    end
+    alias_method :to_h, :find
 
     def preload
       Dir.glob(content_pattern, &method(:add))
