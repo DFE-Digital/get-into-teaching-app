@@ -61,62 +61,28 @@ en:
           <li><span>school experience</span></li>
           <li><span>a chance to talk to current trainees or staff</span></li>
         </ul>
-  event_groups:
-    get_into_teaching: "Get into Teaching"
-    222750009: "schools and universities"
   event_types:
     222750001: 
       name:
         singular: "Train to Teach Event"
         plural: "Train to Teach Events"
       description: |-
-        <p>
-          Find out everything you need to know about teacher training at one of our flagship Train to Teach events. 
-          These popular events take place all over the country and offer a brilliant opportunity to get all of your 
-          questions answered by a range of teaching professionals. Best of all, they’re completely free – find your 
-          local event and sign up to guarantee your place.
-        </p>
-        <p>When you attend a Train to Teach event, you’ll get the chance to:</p>
-        <ul>
-            <li><span>attend a presentation on the different teacher training routes and funding available</span></li>
-            <li><span>speak to teaching experts to receive one-to-one advice on your training options</span></li>
-            <li><span>receive personalised advice on your UCAS application – don’t forget to bring a copy of your personal statement with you</span></li>
-            <li><span>talk to practicing teachers about life in the classroom</span></li>
-            <li><span>meet representatives from the schools and universities that deliver teacher training in your region to find out about their courses and entry requirements</span></li>
-        </ul>
-        <p>
-          Train to Teach Question Time events are smaller events that offer you the opportunity to ask the questions 
-          you have to a panel of teaching experts. Alongside presentations on the application process and funding your 
-          teacher training, there will also be a marketplace where you can receive tailored advice and support.
-        </p>
+        Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training 
+        will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
     222750008: 
       name: 
         singular: "Online Event"
         plural: "Online Events"
       description: |-
-        <p>
-          Online teaching events are interactive sessions that allow you to engage directly with a panel of specialist advisers across a range of topics. 
-          You type your questions in, and an adviser will respond with a written answer. Joining a conversation is easy – remember to check in 
-          regularly to see what discussions we’ve got lined up.
-        </p>
+        In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train. 
+        Get fast answers to your questions so you can take the next step to becoming a teacher.
     222750009: 
       name: 
         singular: "School or University Event"
         plural: "School and University Events"
       description: |-
-        <p>
-          Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to get a feel for what 
-          their teacher training course might be like. 
-        </p>
-
-        <p>Each event is different, but typically they’ll cover areas such as:</p>
-
-        <ul>
-          <li><span>course information</span></li>
-          <li><span>application advice</span></li>
-          <li><span>school experience</span></li>
-          <li><span>a chance to talk to current trainees or staff</span></li>
-        </ul>
+        These events, run by schools and universities, are a great way to and find out more about a particular training provider. 
+        Find out what they have to offer and help make your decision on where to apply.
   activemodel:
     errors:
       models:
@@ -197,10 +163,8 @@ en:
             address_postcode:
               blank: Enter your postcode
               invalid: Enter a valid postcode
-        mailing_list/steps/contact:
+        mailing_list/steps/privacy_policy:
           attributes:
-            telephone:
-              invalid: Enter a valid phone number
             accept_privacy_policy:
               blank: Accept the privacy policy to continue
               accepted: Accept the privacy policy to continue
@@ -233,8 +197,6 @@ en:
         preferred_teaching_subject_id: Which subject do you want to teach?
       mailing_list_steps_postcode:
         address_postcode: What's your postcode? (optional)
-      mailing_list_steps_contact:
-        telephone: What's your phone number (optional)
 
     hint:
       events_steps_contact_details:
@@ -257,7 +219,7 @@ en:
           link: privacy policy
         subscribe_to_mailing_list: |-
           Would you like to receive email updates to help you get into teaching? If you say no, you will still receive confirmation emails about any events you sign up to attend.
-      mailing_list_steps_contact:
+      mailing_list_steps_privacy_policy:
         accept_privacy_policy:
           text: Are you over 16 and do you agree to our %{link}?
           link: privacy policy

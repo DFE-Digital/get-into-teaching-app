@@ -62,25 +62,11 @@ a.content-link-secondary:hover {
 .call-to-action-button {
     @include button;
     @include chevron;
+    display: inline-block;
 }
 
 .secondary-button {
     @include button($bg: $grey-light, $fg: black);
-}
-
-.sidebar-button {
-    width: 100%;
-    display: block;
-    margin-top: 10px;
-    position: relative;
-    padding-right: 30px;
-    span:last-child {
-        &:after {
-            position: absolute;
-            top: calc(50% - 6px);
-            right: 13px;
-        }
-    }
 }
 
 .request-button {

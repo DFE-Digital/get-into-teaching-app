@@ -15,15 +15,15 @@
     box-sizing: border-box;
     padding: 20px;
     display: inline-block;
-    border: 2px solid $black;
     overflow: hidden;
     text-align: left;
     margin: 0;
+    border: 2px solid $white;
     width: 100%;
     color: $black;
     background-color: $white;
     a:hover &{
-        background-color: $grey;
+      border: 2px solid $black;
     }
 
     a:focus & {
@@ -65,12 +65,8 @@
       margin: 6px 0px;
     }
 
-    &__divider--online-event {
-      background-color: $purple;
-    }
-
     &__divider--train-to-teach-event {
-        background-color: $green;
+        background-color: $purple;
     }
 
     &__content p {

@@ -1,17 +1,10 @@
-<h1>If you need more information</h1>
-
-<p>
-  Do you have any questions about teaching or is there any information you need
-  from us?  We can call you if you provide a phone number.
-</p>
+<h1>Accept privacy policy</h1>
 
 <%= f.govuk_error_summary %>
 
-<%= f.govuk_text_field :telephone %>
-
 <%
-  legend_text = t("helpers.legend.mailing_list_steps_contact.accept_privacy_policy.text", 
-    link: link_to(t("helpers.legend.mailing_list_steps_contact.accept_privacy_policy.link"), 
+  legend_text = t("helpers.legend.mailing_list_steps_privacy_policy.accept_privacy_policy.text", 
+    link: link_to(t("helpers.legend.mailing_list_steps_privacy_policy.accept_privacy_policy.link"), 
     privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }))
 %>
 

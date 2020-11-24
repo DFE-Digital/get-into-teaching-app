@@ -48,7 +48,7 @@
                     <% end %>
 
                     <% if @front_matter["alert"].present? %>
-                      <%= tag.p(@front_matter["alert"], class: "content-alert") %>
+                      <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
                     <% end %>
 
                     <article class="markdown">

@@ -103,23 +103,22 @@ describe ApplicationHelper do
     before { helper.request = double("request") }
 
     it "returns nil if the referrer is not set" do
-      helper.request.stub(:referer) { nil }
+      allow(helper.request).to receive(:referer).and_return nil
       expect(helper.internal_referer).to be_nil
     end
 
     it "returns nil if the referrer is empty" do
-      helper.request.stub(:referer) { " " }
+      allow(helper.request).to receive(:referer).and_return " "
       expect(helper.internal_referer).to be_nil
     end
 
     it "returns nil if the referrer is external" do
-      helper.request.stub(:referer) { "https://external.com" }
+      allow(helper.request).to receive(:referer).and_return "https://external.com"
       expect(helper.internal_referer).to be_nil
     end
 
     it "returns the referrer if internal" do
-      referer = root_url
-      helper.request.stub(:referer) { referer }
+      allow(helper.request).to receive(:referer).and_return root_url
       expect(helper.internal_referer).to eql(helper.root_path)
     end
   end

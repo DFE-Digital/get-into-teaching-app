@@ -1,29 +1,31 @@
-<%= render Sections::HeaderComponent.new(
-    :title => @event.name,
-    :image => "media/images/events-hero-dt.jpg")
-%>
-
 <section class="event-info content container-1000">
-    <div class="content__right">
-        <%= render(Events::EventBoxComponent.new(@event, condensed: true)) %>
-
-        <% if can_sign_up_online?(@event) %>
-          <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button sidebar-button" do %>
-              Sign up for this <span>event</span>
-          <% end %>
-        <% end %>
-    </div>
     <div class="content__left">
+        <h1><%= @event.name %></h1>
+
+        <p class="event-info__date"><%= format_event_date(@event, stacked: false) %></p>
+
         <% unless event_status_open?(@event) %>
-          <p class="content-alert">This event is now closed. Search <%= link_to("here", events_path) %> for our other events.</p>
+          <div class="content-alert content-alert--fullwidth">
+            <p>This event is now closed. Search <%= link_to("here", events_path) %> for our other events.</p>
+          </div>
         <% end %>
 
         <% if @event.message %>
-          <p class="content-alert"><%= @event.message %></p>
+          <div class="content-alert content-alert--fullwidth">
+            <p><%= @event.message %></p>
+          </div>
         <% end %>
 
+        <p>
+          <% if can_sign_up_online?(@event) %>
+            <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
+                Sign up for this <span>event</span>
+            <% end %>
+          <% end %>
+        </p>
+
         <h2 class="strapline-article">Event information</h2>
-        <%= formatted_event_description(@event.description) %>
+        <p><%= formatted_event_description(@event.description) %></p>
 
         <% if @event.building && !@event.is_online %>
         <h2 class="strapline-article">Venue information</h2>

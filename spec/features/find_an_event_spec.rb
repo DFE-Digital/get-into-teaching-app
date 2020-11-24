@@ -25,7 +25,7 @@ RSpec.feature "Finding an event", type: :feature do
     visit events_path
 
     expect(page).to have_text "Search for events"
-    expect(page).to have_css "h2", text: "Organised by Get into Teaching"
+    expect(page).to have_css "h3", text: "Train to Teach Events"
 
     click_on(event.name)
 

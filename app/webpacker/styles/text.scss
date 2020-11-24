@@ -71,6 +71,10 @@ a {
         padding: 10px 20px 10px 40px;
         margin: 20px -20px;
     }
+
+    &--blue {
+      background-color: $blue;
+    }
 }
 
 .strapline-article {

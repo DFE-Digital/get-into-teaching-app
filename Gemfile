@@ -72,13 +72,13 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.33"
   gem "factory_bot_rails"
-  gem "rspec-sonarqube-formatter", "~> 1.3", require: false
+  gem "rspec-sonarqube-formatter", "~> 1.4", require: false
   gem "simplecov", "~> 0.17.1"
 end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem "listen", ">= 3.0.5", "< 3.3"
+  gem "listen", ">= 3.0.5", "< 3.4"
   gem "web-console", ">= 3.3.0"
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
