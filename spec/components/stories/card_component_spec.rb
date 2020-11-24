@@ -12,7 +12,7 @@ describe Stories::CardComponent, type: "component" do
 
   subject! { render_inline(Stories::CardComponent.new(card: story)) }
 
-  specify "renders a story card" do
+  specify "renders a card" do
     expect(page).to have_css(".story-card")
   end
 
