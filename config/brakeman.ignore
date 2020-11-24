@@ -3,11 +3,42 @@
     {
       "warning_type": "Dynamic Render Path",
       "warning_code": 15,
+      "fingerprint": "1430cdf53b8e078f0e3d4afa8d9a95a57ee133f0a93e4095c114bf1f27e56e17",
+      "check_name": "Render",
+      "message": "Render path contains parameter value",
+      "file": "app/views/events/show.html.erb",
+      "line": 2,
+      "link": "https://brakemanscanner.org/docs/warning_types/dynamic_render_path/",
+      "code": "render(action => Sections::HeaderComponent.new(:title => GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]).name, :image => \"media/images/events-hero-dt.jpg\"), {})",
+      "render_path": [
+        {
+          "type": "controller",
+          "class": "EventsController",
+          "method": "show",
+          "line": 22,
+          "file": "app/controllers/events_controller.rb",
+          "rendered": {
+            "name": "events/show",
+            "file": "app/views/events/show.html.erb"
+          }
+        }
+      ],
+      "location": {
+        "type": "template",
+        "template": "events/show"
+      },
+      "user_input": "params[:id]",
+      "confidence": "Weak",
+      "note": "False positive - Brakeman does not understand ViewComponents yet"
+    },
+    {
+      "warning_type": "Dynamic Render Path",
+      "warning_code": 15,
       "fingerprint": "c209b4311a0817e2aa893dee169cfdb26166dbd7d29f9726eafe18fccc8f4e78",
       "check_name": "Render",
       "message": "Render path contains parameter value",
       "file": "app/views/events/show.html.erb",
-      "line": 10,
+      "line": 8,
       "link": "https://brakemanscanner.org/docs/warning_types/dynamic_render_path/",
       "code": "render(action => Events::EventBoxComponent.new(GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]), :condensed => true), {})",
       "render_path": [
@@ -32,6 +63,6 @@
       "note": "False positive - Brakeman does not understand ViewComponents yet"
     }
   ],
-  "updated": "2020-11-16 16:55:39 +0000",
+  "updated": "2020-11-20 14:59:39 +0000",
   "brakeman_version": "4.10.0"
 }

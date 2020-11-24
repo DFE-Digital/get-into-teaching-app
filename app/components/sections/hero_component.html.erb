@@ -1,0 +1,28 @@
+<%= tag.div(class: classes) do %>
+  <header>
+      <div class="hero__titles">
+        <div class="hero__titles__title">
+          <h1><%= tag.span(title) %></h1>
+        </div>
+        <% if subtitle.present? %>
+          <%= tag.div(subtitle, class: "hero__titles__subtitle") %>
+        <% end %>
+      </div>
+      <div class="hero__img">
+        <%= responsive_image %>
+      </div>
+  </header>
+<% end %>
+
+<% if show_mailing_list %>
+    <div class="hero__mailing-strip">
+        <div class="hero__mailing-strip__text">
+            <p>Sign up to receive information via email that could help you make your decision to get into teaching.</p>
+        </div>
+        <div class="hero__mailing-strip__cta">
+          <%= link_to(mailing_list_steps_path, class: "hero__mailing-strip__cta__button") do %>
+            <span>Sign up here <span class="visually-hidden">to receive information via email</span></span>
+          <% end %>
+        </div>
+    </div>
+<% end %>

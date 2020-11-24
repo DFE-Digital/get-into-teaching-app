@@ -1,175 +1,138 @@
+
 .hero {
-    height: 370px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    margin-bottom: 30px;
+    $mobile-cutoff: 800px;
 
-    &__image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        img {
-            position: absolute;
-            top: -25%;
-            left: -25%;
-            min-width: 100%;
-            width: 150%;
-            min-height: 100%;
-            object-fit: cover;
+    > header {
+        display: flex;
+
+        @media only screen and (max-width: $mobile-cutoff) {
+            flex-direction: column-reverse;
+            background-color: $white;
         }
-    }   
 
-    &__banner {
-        width: 100%;
-        position: absolute;
-        bottom: 56px;
-        
-        &__text {
-            @include rotated-block;
-            margin-left: -10px;
-            line-height: 1.3;
-            max-width: 70%;
-            background-color: $yellow-dark-90;
-            padding-top: 40px;
-            padding-bottom: 40px;
-            padding-left:50px;
-            padding-right: 70px;
-            box-sizing: border-box;
-            display: inline-block;
+        background-color: $grey;
+        border-top: 3em solid $grey;
 
-            h1 {
-                font-size: 42px;
-                margin: 0;
-                padding: 0;
-                &:after {
-                    content: ".";
+        @media only screen and (max-width: $mobile-cutoff) {
+            border-top: none;
+        }
+
+        .hero__titles {
+            display: flex;
+            flex-grow: 1;
+            flex-direction: column;
+            min-width: 15em;
+
+            @media only screen and (max-width: $mobile-cutoff) {
+                margin-bottom: 2em;
+            }
+
+            &__title {
+                margin-top: 10em;
+
+                @media only screen and (max-width: $mobile-cutoff) {
+                    margin-top: 8em;
+                }
+
+                h1 {
+                    // we're using flexbox to keep things sane but it doesn't
+                    // support overlapping, so push the header to the right manually
+                    transform: translateX(3em) rotate(-3deg);
+                    background-color: $yellow-dark-90;
+
+                    padding: 1em 1em 1em 1.7em;
+                    margin: -4em;
+
+                    text-decoration: underline .1em;
+                    text-underline-offset: .25em;
+
+                    font-weight: 900;
+                    font-size: 220%;
+
+                    max-width: 9em;
+                    min-width: 9em;
+
+                    &::after {
+                        content: "."
+                    }
                 }
             }
 
-            p {
-                font-weight: bold;
-                margin-top: 5px;
-                font-size: 26px;
-                width: 475px;
-                line-height: 1.3;
-                margin: 0;
-                padding: 0;
+            &__subtitle {
+                transform: rotate(-3deg);
+                margin: 3em .5em;
+                font-size: 120%;
+                font-weight: 700;
+
+                @media only screen and (max-width: $mobile-cutoff) {
+                    margin: 1em 1em 1em;
+                    font-size: 140%;
+                }
+            }
+        }
+
+        .hero__img {
+            overflow: hidden;
+
+            @media only screen and (max-width: $mobile-cutoff) {
+                align-self: flex-end;
+            }
+
+
+            img {
+                object-fit: cover;
+                display: block;
+                max-height: 24em;
+
+                @media only screen and (max-width: $mobile-cutoff) {
+                    margin: 0;
+                    width: 90vw;
+                    max-height: 14em;
+                }
+            }
+        }
+    }
+}
+
+.hero__mailing-strip {
+    $mobile-cutoff: 800px;
+
+    display: flex;
+    align-items: center;
+    background-color: $green;
+
+    @media only screen and (max-width: $mobile-cutoff) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    &__text {
+        flex-grow: 1;
+        color: $white;
+        font-weight: bold;
+        margin-left: 1em;
+
+        @media only screen and (max-width: $mobile-cutoff) {
+            > p {
+                font-size: 80%;
+                margin-bottom: 0.2em;
             }
         }
     }
 
-    &__mailing-strip {
-        background-color: $green;
-        box-sizing: border-box;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 40px;
-        padding-right: 40px;
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-
-        &__text {
-            color: $white;
-            margin-right: 20px;
-            padding: 0px;
-            font-weight: bold;
-            width: 66.6666%;
-
-            p { 
-                padding: 0px;
-                margin: 0px;
-                line-height: 1.25;
-            }
-        }
+    &__cta {
+        margin: 0.4em 1em;
 
         &__button {
             @include button($bg: $white, $fg: $black);
             @include chevron($color: $black);
+            padding: 0.4em 1em;
 
-            padding: 6px 15px;
-        }
-    }
-
-    
-}
-
-.hero--deep {
-    height: 540px;
-    margin-bottom: 0px;
-}
-
-@media only screen and (max-width: 800px) {
-
-    .hero{
-
-        height: 300px;
-        margin-bottom: 30px;
-
-        &__banner {
-            
-            bottom: 30px;
-
-            &__text {
-                
-                max-width: 90%;
-                padding: 14px;
-                padding-left: 30px;
-
-                h1 {
-                    font-size: 28px;
-                }
-            }
-            
-        }
-        &__mailing-strip {
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 20px;
-            margin-bottom: 0;
-
-            &__text {
-                width: 100%;
-                margin-bottom: 20px;
+            @media only screen and (max-width: $mobile-cutoff) {
+                font-size: smaller;
+                padding: .2em .5em;
+                margin-bottom: .5em;
             }
         }
-
-    }
-
-    .hero--deep {
-        height: 470px;
-        margin-bottom: 0px;
-        
-        .hero__banner {
-
-            h1 {
-                font-size: 28px;
-            }
-
-            p {
-                margin-top: 2px;
-                font-size: 16px;
-                width: 215px;
-                line-height: 1.4;
-            }
-
-        }
-    }
-}
-
-@supports (object-fit: cover) {
-    .hero__image img {
-        width: 100%;
-        height: 100%;
-        left: 0;
-        top: 0;
     }
 }

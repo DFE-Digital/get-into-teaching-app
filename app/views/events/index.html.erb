@@ -1,10 +1,9 @@
-<%= render "sections/hero",  
-    :header => "Find an event near you", 
-    :image => "media/images/events-hero-dt.jpg",
-    :mobileimage => "media/images/events-hero-mob.jpg",
-    :deep => false,
-    :mailinglist => false
+<%= render Sections::HeaderComponent.new(
+    title: "Find an event near you",
+    image: "media/images/events-hero-dt.jpg",
+    mobileimage: "media/images/events-hero-mob.jpg")
 %>
+
 <section role="main" id="main-content">
     <section class="event-type-descriptions">
       <div class="container-1000">

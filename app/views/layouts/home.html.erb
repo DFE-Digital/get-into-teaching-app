@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+    <%= render "sections/head" %>
+    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", target: "link.content" }, id: "body" do %>
+        <div id="skiplink-container">
+            <div>
+                <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+            </div>
+        </div>
+        <%= render "sections/header" %>
+        <main role="main" id="main-content">
+            <%= render Sections::HeroComponent.new(@front_matter) %>
+            <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
+                <%= yield %>
+                <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
+            </section>
+        </main>
+
+        <%= render "sections/footer" %>
+        <%= render "components/videoplayer" %>
+        <%= render "sections/cookie-acceptance" %>
+        <%= render "sections/feedback-bar" %>
+    <% end %>
+</html>
+
