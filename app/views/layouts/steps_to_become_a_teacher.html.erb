@@ -17,27 +17,14 @@
                     <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
                   <% end %>
 
-                  <div class="accordions" data-controller="accordion">
-                    <% if @front_matter["steps"].present? %>
-                      <% @front_matter["steps"].each.with_index(1) do |(title, partial), i| %>
-                        <%= tag.section(id: "step-#{i}", class: "step", data: { id: i }) do %>
-                          <%= tag.button(class: "step-header", data: { action: "click->accordion#toggle", target: "accordion.header" }, aria: { controls: "collapsable-content-#{i}"}) do %>
-                            <%= tag.h2(%(#{i}. #{title}), class: "step-header__text") %>
-                            <div class="step-header__chevron"> </div>
-                          <% end %>
-
-                          <%= tag.div(id: %(collapsable-content-#{i}), class: %w[step-content collapsable], data: { target: "accordion.content" }, aria: { labelledby: %(step-#{i}) }) do %>
-                            <!-- 
-                              Rendering the partials will overwrite the global @front_matter, 
-                              so we have to restore it after rendering 
-                            -->
-                            <%= render(partial: partial) %>
-                            <% @front_matter = @parent_front_matter %>
-                          <% end %>
-                        <% end %>
+                  <%= render Content::AccordionComponent.new do |accordion| %>
+                    <% @front_matter["steps"].each do |title, contents| %>
+                      <%= accordion.slot(:step, title: title) do %>
+                        <%= render(partial: contents["partial"]) %>
                       <% end %>
                     <% end %>
-                  </div>
+                  <% end %>
+                  <% @front_matter = @parent_front_matter %>
                 </div>
 
                 <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
