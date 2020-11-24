@@ -23,11 +23,11 @@
             text-decoration: underline;
             text-decoration-thickness: .1em;
             text-underline-offset: .25em;
-            padding: 0 1.5em;
+            padding: 0 .5em;
 
             @media only screen and (max-width: $mobile-cutoff) {
                 font-size: 200%;
-                padding: 1em;
+                padding: 1em .3em .5em;
             }
         }
     }

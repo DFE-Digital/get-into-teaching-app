@@ -54,6 +54,10 @@
         text-decoration: none;
         font-weight: bold;
 
+        > span {
+            white-space: nowrap;
+        }
+
         &:hover {
             text-decoration: underline;
             color: inherit;
