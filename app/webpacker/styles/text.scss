@@ -59,6 +59,7 @@ a {
 .strapline {
     @include font;
     color: $white;
+    font-weight: bold;
     font-size: 36px;
     background-color: $purple;
     display: inline-block;
@@ -74,6 +75,15 @@ a {
 
     &--blue {
       background-color: $blue;
+    }
+
+    &--small {
+      font-size: 0.8em;
+      text-transform: uppercase;
+
+      &:after {
+        content: "";
+      }
     }
 }
 
