@@ -51,7 +51,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
     visit mailing_list_steps_path
 
     expect(page).to have_text "Sign up for email updates"
-    fill_in_name_step(degree_status: "First year")
+    fill_in_name_step
+    click_on "Next Step"
+
+    expect(page).to have_text "What stage are you at with your degree?"
+    choose "I am a first year student"
     click_on "Next Step"
 
     expect(page).to have_text "How close are you to applying"
@@ -87,7 +91,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
     visit mailing_list_steps_path({ id: :name, channel: channel_id })
 
     expect(page).to have_text "Sign up for email updates"
-    fill_in_name_step(degree_status: "First year")
+    fill_in_name_step
+    click_on "Next Step"
+
+    expect(page).to have_text "What stage are you at with your degree?"
+    choose "I am a first year student"
     click_on "Next Step"
 
     expect(page).to have_text "How close are you to applying"
@@ -126,16 +134,22 @@ RSpec.feature "Mailing list wizard", type: :feature do
       addressPostcode: "TE57 1NG",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:get_pre_filled_mailing_list_add_member).with("123456", anything).and_return(response)
+      receive(:get_pre_filled_mailing_list_add_member).with("123456", anything) { response }
 
     visit mailing_list_steps_path
 
     expect(page).to have_text "Sign up for email updates"
-    fill_in_name_step(degree_status: "Other")
+    fill_in_name_step
     click_on "Next Step"
 
     expect(page).to have_text "Verify your email address"
     fill_in "Enter the verification code sent to test@user.com", with: "123456"
+    click_on "Next Step"
+
+    expect(page).to have_text "What stage are you at with your degree?"
+    expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
+      response.degree_status_id.to_s,
+    )
     click_on "Next Step"
 
     expect(page).to have_text "How close are you to applying"
@@ -182,7 +196,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     visit mailing_list_steps_path
 
     expect(page).to have_text "Sign up for email updates"
-    fill_in_name_step(degree_status: "Final year")
+    fill_in_name_step
     click_on "Next Step"
 
     expect(page).to have_text "Verify your email address"
@@ -197,7 +211,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Enter the verification code sent to test@user.com", with: "123456"
     click_on "Next Step"
 
-    expect(page).to have_text "How close are you to applying"
+    expect(page).to have_text "What stage are you at with your degree?"
   end
 
   scenario "Full journey as an existing candidate that has already subscribed to the mailing list" do
@@ -213,7 +227,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     visit mailing_list_steps_path
 
     expect(page).to have_text "Sign up for email updates"
-    fill_in_name_step(degree_status: "Final year")
+    fill_in_name_step
     click_on "Next Step"
 
     expect(page).to have_text "Verify your email address"
@@ -237,7 +251,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     visit mailing_list_steps_path
 
     expect(page).to have_text "Sign up for email updates"
-    fill_in_name_step(degree_status: "Final year")
+    fill_in_name_step
     click_on "Next Step"
 
     expect(page).to have_text "Verify your email address"
@@ -261,7 +275,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     visit mailing_list_steps_path
 
     expect(page).to have_text "Sign up for email updates"
-    fill_in_name_step(degree_status: "Final year")
+    fill_in_name_step
     click_on "Next Step"
 
     expect(page).to have_text "Verify your email address"
@@ -281,18 +295,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step(email: "test2@user.com")
     click_on "Next Step"
 
-    expect(page).to have_text "We need some more details"
+    expect(page).to have_text "What stage are you at with your degree?"
   end
 
   def fill_in_name_step(
     first_name: "Test",
     last_name: "User",
-    email: "test@user.com",
-    degree_status: nil
+    email: "test@user.com"
   )
     fill_in "First name", with: first_name if first_name
     fill_in "Surname", with: last_name if last_name
     fill_in "Email address", with: email if email
-    select degree_status if degree_status
   end
 end
