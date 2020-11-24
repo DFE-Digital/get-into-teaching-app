@@ -69,7 +69,7 @@ module Pages
     end
 
     def path(file)
-      Pathname.new(file).sub_ext("").relative_path_from(content_dir).to_s
+      Pathname.new(file).sub_ext("").relative_path_from(content_dir).to_s.prepend("/")
     end
 
     def extract_frontmatter(file)
@@ -77,10 +77,12 @@ module Pages
     end
 
     def file_from_template(template)
-      if content_dir.join("#{template}.md").exist?
-        content_dir.join("#{template}.md")
-      elsif content_dir.join("#{template}.markdown").exist?
-        content_dir.join("#{template}.markdown")
+      unprefixed = template.delete_prefix("/")
+
+      if content_dir.join("#{unprefixed}.md").exist?
+        content_dir.join("#{unprefixed}.md")
+      elsif content_dir.join("#{unprefixed}.markdown").exist?
+        content_dir.join("#{unprefixed}.markdown")
       else
         raise MissingTemplate, template
       end

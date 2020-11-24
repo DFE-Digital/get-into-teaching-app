@@ -6,19 +6,19 @@ RSpec.describe Pages::Frontmatter do
 
   shared_examples "page loading" do
     context "with known page" do
-      let(:page) { "page1" }
+      let(:page) { "/page1" }
 
       it { is_expected.to include title: "Hello World 1" }
     end
 
     context "with nested page" do
-      let(:page) { "subfolder/page2" }
+      let(:page) { "/subfolder/page2" }
 
       it { is_expected.to include title: "Hello World 2" }
     end
 
     context "with unknown page" do
-      let(:page) { "unknown" }
+      let(:page) { "/unknown" }
 
       it "should raise an exception" do
         expect { subject }.to raise_exception Pages::Frontmatter::MissingTemplate
@@ -71,7 +71,7 @@ RSpec.describe Pages::Frontmatter do
   describe "#preload" do
     subject { instance.preload.send(:templates) }
 
-    it { is_expected.to have_attributes keys: %w[page1 subfolder/page2] }
-    it { is_expected.to include "page1" => { title: "Hello World 1" } }
+    it { is_expected.to have_attributes keys: %w[/page1 /subfolder/page2] }
+    it { is_expected.to include "/page1" => { title: "Hello World 1" } }
   end
 end
