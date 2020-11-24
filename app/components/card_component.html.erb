@@ -1,8 +1,16 @@
-<div class="card">
+<div class="card<%= " card--no-border" unless border %>">
+  <% if header %>
+  <header class="card__header">
+    <%= header %>
+  </header>
+  <% end %>
+
   <%= media_link %>
+
   <div class="card__snippet">
     <p><%= snippet %><p>
   </div>
+
   <footer class="card__footer">
     <%= link_to(link, class: "git-link") do %>
       <%= link_text %> <%= helpers.fas_icon("chevron-right") %>

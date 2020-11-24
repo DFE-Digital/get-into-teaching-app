@@ -1,5 +1,5 @@
 class CardComponent < ViewComponent::Base
-  attr_accessor :snippet, :link, :link_text, :image, :video
+  attr_accessor :snippet, :link, :link_text, :image, :video, :header, :border
 
   def initialize(card:)
     @card = card
@@ -9,6 +9,8 @@ class CardComponent < ViewComponent::Base
     @link_text = card["link_text"].presence || card["linktext"]
     @image     = card["image"]
     @video     = card["video"]
+    @header    = card["header"]
+    @border    = card["border"] != false
   end
 
   def media_link

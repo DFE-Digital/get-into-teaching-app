@@ -34,6 +34,34 @@ describe CardComponent, type: "component" do
     expect(page).not_to have_css(".fas.fa-play")
   end
 
+  specify "header does not show by default" do
+    expect(page).not_to have_css(".card header")
+  end
+
+  specify "border shows by default" do
+    expect(page).not_to have_css(".card.card--no-border")
+  end
+
+  context "with border removed" do
+    let(:noborder) { card.merge(border: false) }
+
+    subject! { render_inline(CardComponent.new(card: noborder)) }
+
+    specify "border is removed" do
+      expect(page).to have_css(".card.card--no-border")
+    end
+  end
+
+  context "with header set" do
+    let(:withheader) { card.merge(header: "Further info") }
+
+    subject! { render_inline(CardComponent.new(card: withheader)) }
+
+    specify "header is shown" do
+      expect(page).to have_css(".card header")
+    end
+  end
+
   context "video stories" do
     let(:video) { "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
     let(:video_card) { card.merge(video: video).with_indifferent_access }

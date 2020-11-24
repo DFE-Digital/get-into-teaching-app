@@ -8,7 +8,6 @@
         flex-direction: column;
         text-decoration: none;
         position: relative;
-        overflow: hidden;
 
         &__thumb {
             width: 100%;
@@ -48,12 +47,43 @@
             }
         }
 
+        &__header {
+          z-index: 2;
+          position: absolute;
+          top: -20px;
+          left: -20px;
+          display: block;
+          background: $blue-dark-90;
+          color: white;
+          padding: 10px 20px;
+          font-weight: bold;
+          max-width: calc(100% - 80px);
+          backdrop-filter: blur(4px);
+
+          h2, h3, h4 {
+            margin: 0
+          }
+        }
+
         &__snippet {
             padding: 0 1em;
         }
 
         &__footer {
             padding: 0 1em 1em;
+        }
+
+        &.card--no-border {
+            outline: none;
+
+            .card__snippet {
+                padding: 0 0 ;
+            }
+
+            .card__footer {
+                padding-left: 0 ;
+                padding-right: 0 ;
+            }
         }
     }
 }
