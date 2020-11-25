@@ -16,13 +16,11 @@ end
 
 describe StoriesController do
   let(:template) { "testing/markdown_test" }
+  let(:page) { double Pages::Page, template: template }
+
+  before { allow(Pages::Page).to receive(:find).and_return page }
 
   context "#landing" do
-    before do
-      allow_any_instance_of(described_class).to \
-        receive(:landing_template).and_return template
-    end
-
     subject do
       get "/my-story-into-teaching/"
       response
@@ -36,11 +34,6 @@ describe StoriesController do
   end
 
   context "#index" do
-    before do
-      allow_any_instance_of(described_class).to \
-        receive(:index_template).and_return template
-    end
-
     subject do
       get "/my-story-into-teaching/returners"
       response
@@ -54,11 +47,6 @@ describe StoriesController do
   end
 
   context "#show" do
-    before do
-      allow_any_instance_of(described_class).to \
-        receive(:stories_template).and_return template
-    end
-
     subject do
       get "/my-story-into-teaching/returners/known-page"
       response

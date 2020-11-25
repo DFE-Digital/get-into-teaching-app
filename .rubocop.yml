@@ -12,5 +12,9 @@ Rails/UnknownEnv:
     - userresearch
     - production
 
+Lint/AmbiguousOperator:
+  Enabled: false
+
 Style/SignalException:
   Enabled: false
+
