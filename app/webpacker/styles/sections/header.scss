@@ -13,7 +13,9 @@
     }
 
     &__title {
+        flex-grow: 1;
         @media only screen and (max-width: $mobile-cutoff) {
+            flex-grow: 0;
             align-self: flex-start;
         }
 
