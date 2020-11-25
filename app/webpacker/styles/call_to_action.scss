@@ -1,4 +1,31 @@
 .call-to-action {
     background-color: $grey;
-    padding: .5em;
+    padding: .5em .8em;
+
+    &__icon {
+        padding: .5em;
+        font-size: 200%;
+    }
+
+
+    &--chat-online {
+        display: flex;
+        align-items: center;
+
+    }
+
+    &__text {
+        font-size: smaller;
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    &__action {
+        > button {
+            @include button;
+            @include chevron;
+            margin: .2em;
+        }
+    }
 }
