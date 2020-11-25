@@ -15,10 +15,7 @@ shared_examples "page cannot be found" do |template|
 end
 
 describe StoriesController do
-  let(:template) { "testing/markdown_test" }
-  let(:page) { double Pages::Page, template: template }
-
-  before { allow(Pages::Page).to receive(:find).and_return page }
+  include_context "always render testing page"
 
   context "#landing" do
     subject do

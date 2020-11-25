@@ -2,11 +2,7 @@ require "rails_helper"
 
 describe GuidanceController do
   describe "#show" do
-    let(:template) { "testing/markdown_test" }
-    before do
-      allow_any_instance_of(described_class).to \
-        receive(:guidance_template).and_return template
-    end
+    include_context "always render testing page"
 
     subject do
       get "/guidance/become-a-teacher-in-england"
