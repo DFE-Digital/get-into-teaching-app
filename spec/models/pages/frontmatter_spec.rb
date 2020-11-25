@@ -21,7 +21,7 @@ RSpec.describe Pages::Frontmatter do
       let(:page) { "/unknown" }
 
       it "should raise an exception" do
-        expect { subject }.to raise_exception Pages::Frontmatter::MissingTemplate
+        expect { subject }.to raise_exception Pages::Frontmatter::NotMarkdownTemplate
       end
     end
   end
@@ -80,7 +80,7 @@ RSpec.describe Pages::Frontmatter do
   end
 
   describe "#preload" do
-    subject { instance.preload.send(:templates) }
+    subject { instance.preload.send(:frontmatter) }
 
     it_behaves_like "a listing of all pages"
   end

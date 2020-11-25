@@ -6,7 +6,6 @@ module StaticPages
   MISSING_TEMPLATE_EXCEPTIONS = [
     ActionView::MissingTemplate,
     StaticPages::InvalidTemplateName,
-    Pages::Frontmatter::MissingTemplate,
   ].freeze
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze

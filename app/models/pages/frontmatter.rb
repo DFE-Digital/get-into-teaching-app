@@ -37,7 +37,7 @@ module Pages
     def list
       preload unless preloaded?
 
-      @templates
+      frontmatter
     end
     alias_method :to_h, :find
 
@@ -48,10 +48,10 @@ module Pages
     end
 
     def preloaded?
-      !@templates.nil?
+      !@frontmatter.nil?
     end
 
-    class MissingTemplate < RuntimeError
+    class NotMarkdownTemplate < RuntimeError
       def initialize(tmpl)
         super "Cannot find Markdown Page #{tmpl}.md"
       end
@@ -64,19 +64,19 @@ module Pages
     end
 
     def find_from_preloaded(template)
-      if @templates.key? template
-        @templates[template]
+      if @frontmatter.key? template
+        @frontmatter[template]
       else
-        raise MissingTemplate, template
+        raise NotMarkdownTemplate, template
       end
     end
 
-    def templates
-      @templates ||= {}
+    def frontmatter
+      @frontmatter ||= {}
     end
 
     def add(file)
-      templates[path(file)] = extract_frontmatter(file)
+      frontmatter[path(file)] = extract_frontmatter(file)
     end
 
     def path(file)
@@ -95,7 +95,7 @@ module Pages
       elsif content_dir.join("#{unprefixed}.markdown").exist?
         content_dir.join("#{unprefixed}.markdown")
       else
-        raise MissingTemplate, template
+        raise NotMarkdownTemplate, template
       end
     end
 

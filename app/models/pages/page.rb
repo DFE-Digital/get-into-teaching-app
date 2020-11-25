@@ -8,7 +8,9 @@ module Pages
 
     class << self
       def find(path)
-        new path, Frontmatter.find(path)
+        new path, Pages::Frontmatter.find(path)
+      rescue Pages::Frontmatter::NotMarkdownTemplate
+        new path, {}
       end
     end
 
