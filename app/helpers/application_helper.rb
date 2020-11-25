@@ -95,11 +95,16 @@ module ApplicationHelper
     referer.gsub(root_url, root_path)
   end
 
-
   def nav_link(link_text, link_path)
-    class_name = 'active' if current_page?(link_path)
+    class_name = 'active' if first_uri_segment_matches_link?(link_path)
     content_tag(:li, :class => class_name) do
       link_to link_text, link_path
     end
+  end
+
+  def first_uri_segment_matches_link?(link_path)
+    current_uri = request.env['PATH_INFO']
+    first_path_segment = /^\/[^\/]*/.match(current_uri)
+    return first_path_segment[0] == link_path
   end
 end
