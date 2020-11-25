@@ -7,7 +7,7 @@
       <main class="content container-1000" role="main" id="main-content">
         <%= back_link "/life-as-a-teacher/my-story-into-teaching", text: "All stories" %>
         <%= yield %>
-        <div class="story-cards">
+        <div class="cards">
           <%= render Stories::CardComponent.with_collection(@front_matter.dig("stories")) %>
         </div>
       </main>

@@ -25,7 +25,7 @@
               <%= tag.p(section["text"]) %>
             </header>
             <% if section["stories"].present? %>
-              <div class="story-cards more-stories">
+              <div class="cards more-stories">
                 <%= render Stories::CardComponent.with_collection(section["stories"]) %>
               </div>
 
