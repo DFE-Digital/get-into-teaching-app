@@ -92,6 +92,13 @@
         li a:hover {
             text-decoration: underline;
         }
+
+        .active {
+          background-color: $blue-dark;
+          a {
+            color: $white;
+          }
+        }
     }
 
     &__mobile {
