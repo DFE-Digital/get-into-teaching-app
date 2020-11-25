@@ -52,8 +52,8 @@ module Pages
     end
 
     class NotMarkdownTemplate < RuntimeError
-      def initialize(tmpl)
-        super "Cannot find Markdown Page #{tmpl}.md"
+      def initialize(template)
+        super "Cannot find Markdown Page #{template}.md"
       end
     end
 
