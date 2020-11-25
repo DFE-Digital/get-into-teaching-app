@@ -8,7 +8,13 @@
       <% end %>
 
       <%= tag.div(id: %(collapsable-content-#{i}), class: %w[step-content collapsable], data: { target: "accordion.content" }, aria: { labelledby: %(step-#{i}) }) do %>
-        <%= step.content %>
+        <div class="step-content__description">
+          <%= step.content %>
+        </div>
+
+        <% if step.call_to_action.present? %>
+          <%= render step.call_to_action %>
+        <% end %>
       <% end %>
 
     <% end %>
