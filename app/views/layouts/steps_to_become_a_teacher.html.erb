@@ -18,7 +18,7 @@
                   <% end %>
 
                   <%= render Content::AccordionComponent.new do |accordion| %>
-                    <% @front_matter["steps"].each do |title, contents| %>
+                    <% @front_matter["steps"]&.each do |title, contents| %>
                       <%= accordion.slot(:step, title: title, call_to_action: contents["cta"]) do %>
                         <%= render(partial: contents["partial"]) %>
                       <% end %>

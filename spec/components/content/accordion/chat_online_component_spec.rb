@@ -19,7 +19,7 @@ RSpec.describe Content::Accordion::ChatOnlineComponent, type: :component do
   specify %(the "Chat online" button will start a chat) do
     expect(page).to have_css(
       %(.call-to-action__action > button[data-action="click->talk-to-us#startChat"]),
-      text: "Chat online"
+      text: "Chat online",
     )
   end
 end

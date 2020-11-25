@@ -24,10 +24,10 @@ module Content
     private
 
       def call_to_action_component(call_to_action)
-        return unless call_to_action.present?
+        return if call_to_action.blank?
 
         CALLS_TO_ACTION.fetch(call_to_action)
-      rescue KeyNotFound => e
+      rescue KeyError
         fail(ArgumentError, "call to action not registered: #{call_to_action}")
       end
     end
