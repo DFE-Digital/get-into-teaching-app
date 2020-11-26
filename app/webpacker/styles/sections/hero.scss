@@ -101,10 +101,12 @@
     display: flex;
     align-items: center;
     background-color: $green;
+    margin-top: 2em;
 
     @media only screen and (max-width: $mobile-cutoff) {
         flex-direction: column;
         align-items: flex-start;
+        margin: 0 -20px;
     }
 
     &__text {
@@ -112,11 +114,14 @@
         color: $white;
         font-weight: bold;
         margin-left: 1em;
+        text-align: left;
+        padding-right: 150px;
 
         @media only screen and (max-width: $mobile-cutoff) {
+            padding-right: 0;
+            
             > p {
-                font-size: 80%;
-                margin-bottom: 0.2em;
+                margin-bottom: 1.2em;
             }
         }
     }
@@ -130,7 +135,6 @@
             padding: 0.4em 1em;
 
             @media only screen and (max-width: $mobile-cutoff) {
-                font-size: smaller;
                 padding: .2em .5em;
                 margin-bottom: .5em;
             }
