@@ -23,7 +23,7 @@ $chevron-direction-map: (
     'down': 135deg
 );
 
-@mixin chevron($color: $white, $after: true, $direction: right, $dimensions: .6em) {
+@mixin chevron($color: $white, $after: true, $direction: right, $dimensions: .6em, $focus-color: $black) {
     $chevron-margin: .1em;
 
     $degrees: map-get($chevron-direction-map, $direction);
@@ -45,6 +45,12 @@ $chevron-direction-map: (
 
                 margin-right: $chevron-margin;
             }
+        }
+    }
+
+    &:focus > * {
+        &:after, &:before {
+            border-color: $focus-color;
         }
     }
 }
