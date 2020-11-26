@@ -1,3 +1,4 @@
+<% @parent_front_matter = @front_matter %>
 <!doctype html>
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
@@ -26,7 +27,12 @@
                           <% end %>
 
                           <%= tag.div(id: %(collapsable-content-#{i}), class: %w[step-content collapsable], data: { target: "accordion.content" }, aria: { labelledby: %(step-#{i}) }) do %>
+                            <!-- 
+                              Rendering the partials will overwrite the global @front_matter, 
+                              so we have to restore it after rendering 
+                            -->
                             <%= render(partial: partial) %>
+                            <% @front_matter = @parent_front_matter %>
                           <% end %>
                         <% end %>
                       <% end %>
@@ -42,6 +48,7 @@
         <%= render "components/videoplayer" %>
         <%= render "sections/cookie-acceptance" %>
         <%= render "sections/feedback-bar" %>
+        <%= render "components/analytics" %>
     <% end %>
 </html>
 
