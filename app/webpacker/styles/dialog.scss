@@ -80,6 +80,8 @@
       }
 
       .secondary-link {
+          @include chevron($color: $blue);
+
           display: inline-block;
           cursor: pointer;
           font-weight: bold;
