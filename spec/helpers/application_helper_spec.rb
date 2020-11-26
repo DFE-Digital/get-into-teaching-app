@@ -6,6 +6,7 @@ describe ApplicationHelper do
     let(:gtm_id) { id }
     let(:adwords_id) { id }
     let(:bam_id) { id }
+    let(:lid_id) { id }
     let(:pinterest_id) { id }
     let(:snapchat_id) { id }
     let(:facebook_id) { id }
@@ -20,6 +21,7 @@ describe ApplicationHelper do
       allow(ENV).to receive(:[]).with("FACEBOOK_ID").and_return facebook_id
       allow(ENV).to receive(:[]).with("TWITTER_ID").and_return twitter_id
       allow(ENV).to receive(:[]).with("BAM_ID").and_return bam_id
+      allow(ENV).to receive(:[]).with("LID_ID").and_return lid_id
     end
 
     subject { analytics_body_tag { "<h1>TEST</h1>".html_safe } }
@@ -42,6 +44,7 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-analytics-facebook-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-twitter-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-bam-id=1234]" }
+      it { is_expected.to have_css "body[data-analytics-lid-id=1234]" }
     end
 
     context "with blank service ids" do
@@ -53,6 +56,7 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-analytics-facebook-id=\"\"]" }
       it { is_expected.to have_css "body[data-analytics-twitter-id=\"\"]" }
       it { is_expected.to have_css "body[data-analytics-bam-id=\"\"]" }
+      it { is_expected.to have_css "body[data-analytics-lid-id=\"\"]" }
     end
 
     context "with no service ids" do
@@ -64,6 +68,7 @@ describe ApplicationHelper do
       it { is_expected.not_to have_css "body[data-analytics-facebook-id]" }
       it { is_expected.not_to have_css "body[data-analytics-twitter-id]" }
       it { is_expected.not_to have_css "body[data-analytics-bam-id]" }
+      it { is_expected.not_to have_css "body[data-analytics-lid-id]" }
     end
 
     context "default events" do
