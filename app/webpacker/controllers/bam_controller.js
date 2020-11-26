@@ -1,6 +1,6 @@
-import AnalyticsBaseController from "./analytics_base_controller"
+import ImagePixelBaseController from "./image_pixel_base_controller"
 
-export default class extends AnalyticsBaseController {
+export default class extends ImagePixelBaseController {
   static ids = [
     '3g6cKlN4VmA4FAL/1SlB2',
     'nis3acYUOeaVpuG/RPOzc',
@@ -24,20 +24,12 @@ export default class extends AnalyticsBaseController {
     return window.bam;
   }
 
-  get cookieCategory() {
-    return 'non-functional';
-  }
-
   initService() {
     // Empty as this is an image tracking pixel.
     window.bam = () => {};
   }
 
   sendEvent() {
-    this.constructor.ids.forEach((id) => {
-      const img = document.createElement('img');
-      img.src = `https://linkbam.uk/m/${id}.png`;
-      this.element.appendChild(img);
-    });
+    this.constructor.ids.forEach((id) => this.loadPixel(`https://linkbam.uk/m/${id}.png`));
   }
 }
