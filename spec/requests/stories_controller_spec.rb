@@ -24,7 +24,7 @@ describe StoriesController do
     end
 
     subject do
-      get "/life-as-a-teacher/my-story-into-teaching/"
+      get "/my-story-into-teaching/"
       response
     end
 
@@ -42,7 +42,7 @@ describe StoriesController do
     end
 
     subject do
-      get "/life-as-a-teacher/my-story-into-teaching/returners"
+      get "/my-story-into-teaching/returners"
       response
     end
 
@@ -60,7 +60,7 @@ describe StoriesController do
     end
 
     subject do
-      get "/life-as-a-teacher/my-story-into-teaching/returners/known-page"
+      get "/my-story-into-teaching/returners/known-page"
       response
     end
 
