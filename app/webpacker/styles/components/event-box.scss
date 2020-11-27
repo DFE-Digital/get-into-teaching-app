@@ -83,10 +83,14 @@
               display: table-row;
             }
 
-            &__icon,
+            &__icon-wrapper,
             &__meta {
               display: table-cell;
               vertical-align: middle;
+            }
+
+            &__icon-wrapper {
+              text-align: center;
             }
 
             &__meta {
