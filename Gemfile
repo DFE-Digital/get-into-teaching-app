@@ -66,6 +66,7 @@ group :development, :test do
 
   # Debugging
   gem "pry-byebug"
+  gem "pry-rails"
 
   # Testing framework
   gem "rspec-rails", "~> 4.0.0"
