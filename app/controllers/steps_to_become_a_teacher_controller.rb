@@ -5,7 +5,7 @@ class StepsToBecomeATeacherController < ApplicationController
 
   def show
     @page = Pages::Page.find(steps_to_become_a_teacher_template)
-    render template: @page.template, layout: "layouts/steps_to_become_a_teacher"
+    render template: @page.template, layout: "layouts/accordion"
   end
 
 private
