@@ -2,6 +2,8 @@ module Content
   class AccordionComponent < ViewComponent::Base
     include ViewComponent::Slotable
     with_slot :step, collection: true, class_name: "Step"
+    with_slot :content_before_accordion, class_name: "ContentBeforeAccordion"
+    with_slot :content_after_accordion, class_name: "ContentAfterAccordion"
 
     attr_reader :numbered
 
@@ -23,8 +25,8 @@ module Content
       end
     end
 
-    class Step < ViewComponent::Slot
-      attr_accessor :title, :partial, :call_to_action
+    class EmbeddableSlot < ViewComponent::Slot
+      attr_reader :call_to_action
 
       # Calls to action (poppers) are 'registered' here and can
       # be specified via FrontMatter
@@ -33,8 +35,7 @@ module Content
         "story" => Content::Accordion::StoryComponent,
       }.freeze
 
-      def initialize(title:, call_to_action: nil)
-        @title          = title
+      def build(call_to_action)
         @call_to_action = if call_to_action.is_a?(Hash)
                             advanced_call_to_action_component(call_to_action)
                           else
@@ -72,5 +73,26 @@ module Content
         fail(ArgumentError, "call to action properly configured: #{call_to_action}")
       end
     end
+
+    class Step < EmbeddableSlot
+      attr_accessor :title, :partial
+
+      def initialize(title:, call_to_action: nil)
+        @title = title
+        @call_to_action = build(call_to_action)
+      end
+    end
+
+    class ContentAroundSlot < EmbeddableSlot
+      attr_accessor :partial
+
+      def initialize(call_to_action: nil, partial: nil)
+        @call_to_action = build(call_to_action)
+        @partial = partial
+      end
+    end
+
+    class ContentBeforeAccordion < ContentAroundSlot; end
+    class ContentAfterAccordion < ContentAroundSlot; end
   end
 end
