@@ -14,21 +14,46 @@ module Content
       # be specified via FrontMatter
       CALLS_TO_ACTION = {
         "chat_online" => Content::Accordion::ChatOnlineComponent,
+        "story" => Content::Accordion::StoryComponent,
       }.freeze
 
       def initialize(title:, call_to_action: nil)
         @title          = title
-        @call_to_action = call_to_action_component(call_to_action)&.new
+        @call_to_action = if call_to_action.is_a?(Hash)
+                            advanced_call_to_action_component(call_to_action)
+                          else
+                            basic_call_to_action_component(call_to_action)
+                          end
       end
 
     private
 
-      def call_to_action_component(call_to_action)
+      # when the CTA is some static HTML and invoked by name with no args
+      #
+      # cta: my_call_to_action
+      def basic_call_to_action_component(call_to_action)
         return if call_to_action.blank?
 
-        CALLS_TO_ACTION.fetch(call_to_action)
+        CALLS_TO_ACTION.fetch(call_to_action).new
       rescue KeyError
         fail(ArgumentError, "call to action not registered: #{call_to_action}")
+      end
+
+      # when the CTA is configurable and is defined in the following format:
+      #
+      # cta:
+      #   name: my_call_to_action
+      #   arguments:
+      #     colour: purple
+      #     size: massive
+      def advanced_call_to_action_component(call_to_action)
+        return if call_to_action.blank?
+
+        CALLS_TO_ACTION
+          .fetch(call_to_action.fetch("name"))
+          .new(**call_to_action.fetch("arguments").symbolize_keys)
+      rescue KeyError
+        fail(ArgumentError, "call to action properly configured: #{call_to_action}")
       end
     end
   end
