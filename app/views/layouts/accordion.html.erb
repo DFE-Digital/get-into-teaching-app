@@ -33,7 +33,9 @@
                     <% end %>
 
                     <% if accordion_fm.key?("content_after_accordion") %>
-                      <%= render(partial: accordion_fm.fetch("content_after_accordion")) %>
+                      <div class="content-after-accordion">
+                        <%= render(partial: accordion_fm.fetch("content_after_accordion")) %>
+                      </div>
                     <% end %>
                   <% end %>
 
