@@ -97,6 +97,7 @@
     float: left;
     padding: 20px;
     width: 100%;
+    margin-top: 60px;
     box-sizing: border-box;
     + .events-featured {
         margin-top: 30px;
@@ -129,10 +130,6 @@
 
     .call-to-action-button {
       margin-top: 1.5em;
-    }
-
-    &--with-logo {
-      margin-top: 88px;
     }
 
     &__logo {
