@@ -55,4 +55,49 @@
             }
         }
     }
+
+    &--next-steps {
+        padding: 0;
+        .call-to-action__icon {
+            border: 1.5em solid $yellow;
+            background: $yellow;
+        }
+
+        .call-to-action__contents {
+            &__header{
+                margin: .4em 0;
+            }
+
+            padding: 1em;
+
+            &__options {
+                display: grid;
+                grid-template-columns: .33fr .66fr;
+                grid-gap: 1em;
+                align-items: center;
+
+                &__button {
+                    @include button;
+                    display: flex;
+                    align-items: center;
+
+                    &__text {
+                        flex-grow: 1;
+                    }
+
+                    &__chevron {
+                        @include chevron-icon($color: white, $dimensions: .4em);
+                        width: .5em;
+                        height: .5em;
+                        content: " ";
+                        position: relative;
+                    }
+                }
+
+                &__text {
+                    margin: 0;
+                }
+            }
+        }
+    }
 }

@@ -25,7 +25,7 @@ module Content
       end
     end
 
-    class EmbeddableSlot < ViewComponent::Slot
+    class ComposableSlot < ViewComponent::Slot
       attr_reader :call_to_action
 
       # Calls to action (poppers) are 'registered' here and can
@@ -33,6 +33,7 @@ module Content
       CALLS_TO_ACTION = {
         "chat_online" => Content::Accordion::ChatOnlineComponent,
         "story" => Content::Accordion::StoryComponent,
+        "next_steps" => Content::Accordion::NextStepsComponent,
       }.freeze
 
       def build(call_to_action)
@@ -74,7 +75,7 @@ module Content
       end
     end
 
-    class Step < EmbeddableSlot
+    class Step < ComposableSlot
       attr_accessor :title, :partial
 
       def initialize(title:, call_to_action: nil)
@@ -83,7 +84,7 @@ module Content
       end
     end
 
-    class ContentAroundSlot < EmbeddableSlot
+    class ContentAroundSlot < ComposableSlot
       attr_accessor :partial
 
       def initialize(call_to_action: nil, partial: nil)
