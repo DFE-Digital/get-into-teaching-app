@@ -3,8 +3,24 @@ module Content
     include ViewComponent::Slotable
     with_slot :step, collection: true, class_name: "Step"
 
+    attr_reader :numbered
+
+    def initialize(numbered: false)
+      @numbered = numbered
+    end
+
     def render?
       steps.any?
+    end
+
+    def numbered?
+      numbered
+    end
+
+    def number_prefix(number)
+      if numbered?
+        %(#{number}.)
+      end
     end
 
     class Step < ViewComponent::Slot

@@ -18,13 +18,13 @@
 
                   <%# FIXME: we're tapping the frontmatter here because
                              rendering partials overwrites it %>
-                  <% @front_matter.tap do |accordion_fm| %>
+                  <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>
 
                     <% if accordion_fm.key?("content_before_accordion") %>
                       <%= render(partial: accordion_fm.fetch("content_before_accordion")) %>
                     <% end %>
 
-                    <%= render Content::AccordionComponent.new do |accordion| %>
+                    <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered")) do |accordion| %>
                       <% accordion_fm["steps"]&.each do |title, contents| %>
                         <%= accordion.slot(:step, title: title, call_to_action: contents["cta"]) do %>
                           <%= render(partial: contents["partial"]) %>
