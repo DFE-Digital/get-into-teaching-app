@@ -11,9 +11,10 @@ module Stories
                   :backlink_text,
                   :more_information_text,
                   :more_information_link,
-                  :front_matter
+                  :front_matter,
+                  :page_data
 
-    def initialize(front_matter)
+    def initialize(front_matter, page_data = nil)
       front_matter.tap do |fm|
         @title         = fm["title"]
         @image         = fm["image"]
@@ -27,6 +28,8 @@ module Stories
 
         @more_information_text = fm.dig("more_information", "text")
         @more_information_link = fm.dig("more_information", "link")
+
+        @page_data = page_data
       end
     end
 

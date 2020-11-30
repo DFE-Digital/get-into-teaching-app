@@ -125,4 +125,17 @@ describe Stories::StoryComponent, type: "component" do
       end
     end
   end
+
+  describe "with page_data" do
+    let(:page_data) { Pages::Data.new }
+    let(:more_stories) { front_matter[:more_stories].length }
+
+    specify "renders a story" do
+      is_expected.to have_css("article.story")
+    end
+
+    specify "there should be a story card for each story" do
+      is_expected.to have_css(".cards.more-stories > .card", count: more_stories)
+    end
+  end
 end
