@@ -11,6 +11,7 @@ module ApplicationHelper
       "analytics-hotjar-id" => ENV["HOTJAR_ID"],
       "analytics-twitter-id" => ENV["TWITTER_ID"],
       "analytics-bam-id" => ENV["BAM_ID"],
+      "analytics-lid-id" => ENV["LID_ID"],
       "pinterest-action" => "page",
       "snapchat-action" => "track",
       "snapchat-event" => "PAGE_VIEW",

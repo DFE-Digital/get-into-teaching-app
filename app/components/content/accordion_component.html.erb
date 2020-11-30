@@ -1,0 +1,22 @@
+<div class="accordions" data-controller="accordion">
+  <% steps.each.with_index(1) do |step, i| %>
+    <%= tag.section(id: "step-#{i}", class: "step", data: { id: i }) do %>
+
+      <%= tag.button(class: "step-header", data: { action: "click->accordion#toggle", target: "accordion.header" }, aria: { controls: "collapsable-content-#{i}"}) do %>
+        <%= tag.h2(%(#{i}. #{step.title}), class: "step-header__text") %>
+        <div class="step-header__chevron"> </div>
+      <% end %>
+
+      <%= tag.div(id: %(collapsable-content-#{i}), class: %w[step-content collapsable], data: { target: "accordion.content" }, aria: { labelledby: %(step-#{i}) }) do %>
+        <div class="step-content__description">
+          <%= step.content %>
+        </div>
+
+        <% if step.call_to_action.present? %>
+          <%= render step.call_to_action %>
+        <% end %>
+      <% end %>
+
+    <% end %>
+  <% end %>
+</div>

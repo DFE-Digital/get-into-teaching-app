@@ -14,7 +14,9 @@
     <footer class="event-box__footer">
       <% if type && type != GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] %>
         <div class="event-box__footer__item">
-          <%= event_type_icon %>
+          <div class="event-box__footer__icon-wrapper">
+            <%= event_type_icon %>
+          </div>
           <div class="event-box__footer__meta">
             <%= type_name %>
           </div>

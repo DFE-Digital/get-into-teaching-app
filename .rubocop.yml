@@ -11,3 +11,6 @@ Rails/UnknownEnv:
     - preprod
     - userresearch
     - production
+
+Style/SignalException:
+  Enabled: false

@@ -36,11 +36,9 @@
                     @include chevron-icon($color: $black, $dimensions: .7em, $rotate: unquote(map-get($chevron-direction-map, 'up')));
                 }
             }
-
         }
 
-        .step-content {
-            background-color: $grey;
+        .step-content__description {
             margin: 0;
             padding: .8em;
 

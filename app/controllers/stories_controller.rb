@@ -17,14 +17,14 @@ class StoriesController < ApplicationController
 private
 
   def landing_template
-    "content/life-as-a-teacher/my-story-into-teaching"
+    "content/my-story-into-teaching"
   end
 
   def stories_template
-    "content/life-as-a-teacher/my-story-into-teaching/" + filtered_page_template(:story)
+    "content/my-story-into-teaching/" + filtered_page_template(:story)
   end
 
   def index_template
-    ["content/life-as-a-teacher/my-story-into-teaching", filtered_page_template(:story), "index"].join("/")
+    ["content/my-story-into-teaching", filtered_page_template(:story), "index"].join("/")
   end
 end

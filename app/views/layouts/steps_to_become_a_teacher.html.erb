@@ -1,3 +1,4 @@
+<% @parent_front_matter = @front_matter %>
 <!doctype html>
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
@@ -16,22 +17,14 @@
                     <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
                   <% end %>
 
-                  <div class="accordions" data-controller="accordion">
-                    <% if @front_matter["steps"].present? %>
-                      <% @front_matter["steps"].each.with_index(1) do |(title, partial), i| %>
-                        <%= tag.section(id: "step-#{i}", class: "step", data: { id: i }) do %>
-                          <%= tag.button(class: "step-header", data: { action: "click->accordion#toggle", target: "accordion.header" }, aria: { controls: "collapsable-content-#{i}"}) do %>
-                            <%= tag.h2(%(#{i}. #{title}), class: "step-header__text") %>
-                            <div class="step-header__chevron"> </div>
-                          <% end %>
-
-                          <%= tag.div(id: %(collapsable-content-#{i}), class: %w[step-content collapsable], data: { target: "accordion.content" }, aria: { labelledby: %(step-#{i}) }) do %>
-                            <%= render(partial: partial) %>
-                          <% end %>
-                        <% end %>
+                  <%= render Content::AccordionComponent.new do |accordion| %>
+                    <% @front_matter["steps"]&.each do |title, contents| %>
+                      <%= accordion.slot(:step, title: title, call_to_action: contents["cta"]) do %>
+                        <%= render(partial: contents["partial"]) %>
                       <% end %>
                     <% end %>
-                  </div>
+                  <% end %>
+                  <% @front_matter = @parent_front_matter %>
                 </div>
 
                 <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
@@ -42,6 +35,7 @@
         <%= render "components/videoplayer" %>
         <%= render "sections/cookie-acceptance" %>
         <%= render "sections/feedback-bar" %>
+        <%= render "components/analytics" %>
     <% end %>
 </html>
 
