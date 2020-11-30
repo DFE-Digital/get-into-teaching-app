@@ -43,6 +43,10 @@
                 font-size: 110%;
             }
 
+            &__story {
+                margin: 0.6em 0;
+            }
+
             &__button {
                 @include button;
                 @include chevron($color: $white);
