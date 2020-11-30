@@ -1,6 +1,6 @@
 class CardComponent < ViewComponent::Base
   MAX_HEADER_LENGTH = 40
-  attr_accessor :snippet, :link, :link_text, :image, :video, :header, :border
+  attr_accessor :snippet, :link, :link_text, :image, :video, :header, :border, :title
 
   def initialize(card:)
     @card = card
@@ -11,6 +11,7 @@ class CardComponent < ViewComponent::Base
     @image     = card["image"]
     @video     = card["video"]
     @header    = card["header"]
+    @title     = card["title"]
     @border    = card["border"] != false
   end
 
