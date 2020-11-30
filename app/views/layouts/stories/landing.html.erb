@@ -6,7 +6,7 @@
       <%= render Sections::HeaderComponent.new(@front_matter) %>
 
       <div class="stories-feature">
-        <div class="stories-feature__image" style="background-image:url('/assets/images/victoria.png')"></div>
+        <div class="stories-feature__image" style="background-image:url('/assets/images/victoria.jpg')"></div>
         <div class="stories-feature__content">
           <%= tag.h2(@front_matter.dig("featured_story", "heading")) %>
           <%= tag.h3(@front_matter.dig("featured_story", "subheading")) %>
