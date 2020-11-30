@@ -38,7 +38,7 @@ describe Stories::CardWithHeaderComponent, type: "component" do
 
   context "With header from stories frontmatter" do
     let(:page_data) { Pages::Data.new }
-    let(:truncated) { edna[:title].slice 0, described_class::MAX_HEADER_LENGTH }
+    let(:truncated) { edna[:title].truncate described_class::MAX_HEADER_LENGTH }
 
     before do
       allow(Pages::Frontmatter).to \

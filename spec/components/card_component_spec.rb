@@ -67,9 +67,10 @@ describe CardComponent, type: "component" do
     context "With long header" do
       let(:header) { "long " * 50 }
       let(:withheader) { card.merge header: header }
+      let(:truncated) { header.truncate(described_class::MAX_HEADER_LENGTH) }
 
       it "will be truncated" do
-        is_expected.to have_css ".card header", text: header.slice(0, 20)
+        is_expected.to have_css ".card header", text: truncated
       end
     end
   end

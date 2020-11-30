@@ -1,5 +1,5 @@
 class CardComponent < ViewComponent::Base
-  MAX_HEADER_LENGTH = 20
+  MAX_HEADER_LENGTH = 40
   attr_accessor :snippet, :link, :link_text, :image, :video, :header, :border
 
   def initialize(card:)
@@ -19,7 +19,7 @@ class CardComponent < ViewComponent::Base
   end
 
   def truncated_header
-    header&.slice(0, MAX_HEADER_LENGTH)
+    header&.truncate(MAX_HEADER_LENGTH)
   end
 
 private
