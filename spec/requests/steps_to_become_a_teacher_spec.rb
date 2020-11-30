@@ -2,12 +2,7 @@ require "rails_helper"
 
 describe StepsToBecomeATeacherController do
   describe "#show" do
-    let(:template) { "testing/markdown_test" }
-
-    before do
-      allow_any_instance_of(described_class).to \
-        receive(:steps_to_become_a_teacher_template).and_return template
-    end
+    include_context "always render testing page"
 
     subject do
       get "/steps-to-become-a-teacher"

@@ -1,8 +1,14 @@
 module StaticPages
   extend ActiveSupport::Concern
 
-  PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
   class InvalidTemplateName < RuntimeError; end
+
+  MISSING_TEMPLATE_EXCEPTIONS = [
+    ActionView::MissingTemplate,
+    StaticPages::InvalidTemplateName,
+  ].freeze
+
+  PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
 
 private
 

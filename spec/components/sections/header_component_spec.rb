@@ -5,7 +5,7 @@ describe Sections::HeaderComponent, type: "component" do
     {
       title: "Teaching, it's pretty awesome",
       image: "media/images/hero-home-dt.jpg",
-    }.with_indifferent_access
+    }
   end
 
   let(:component) { Sections::HeaderComponent.new(front_matter) }

@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   include StaticPages
   around_action :cache_static_page, only: %i[show]
-  rescue_from ActionView::MissingTemplate, StaticPages::InvalidTemplateName, with: :rescue_missing_template
+  rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
   def privacy_policy
     @page_title = "Privacy Policy"
@@ -21,7 +21,8 @@ class PagesController < ApplicationController
   end
 
   def show
-    render template: content_template, layout: page_layout
+    @page = Pages::Page.find content_template
+    render template: @page.template, layout: page_layout
   end
 
   def showblank
@@ -46,7 +47,7 @@ private
   end
 
   def content_template
-    "content/#{filtered_page_template}"
+    "/#{filtered_page_template}"
   end
 
   def rescue_missing_template

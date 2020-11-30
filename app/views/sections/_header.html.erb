@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <% navigation_resources(@sitemap).each do |resource| %>
-                    <li><a href="<%= resource[:path] %>"><%= resource[:front_matter]["title"] %></a></li>
+                    <li><a href="<%= resource[:path] %>"><%= resource[:front_matter][:title] %></a></li>
                 <% end %>
                 <li><%= link_to "Find an event near you", events_path %></li>
             </ul>
@@ -34,7 +34,7 @@
                 <ul>
                     <li><a href="/">Home</a></li>
                     <% navigation_resources(@sitemap).each do |resource| %>
-                        <li><a href="<%= resource[:path] %>"><%= resource[:front_matter]["title"] %></a></li>
+                        <li><a href="<%= resource[:path] %>"><%= resource[:front_matter][:title] %></a></li>
                     <% end %>
                     <li><%= link_to "Find an event near you", events_path %></li>
                 </ul>
