@@ -258,31 +258,47 @@
 }
 
 .home-find-event {
-  background-color: $grey;
-  position: relative;
-
-  >.content {
-    overflow: visible;
-    margin-bottom: 0;
-  }
-
-  &__img {
-    background-image: url('../images/featured-3.png');
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 30%;
-    height: 100%;
-    background-position: 50%;
-    background-size: cover;
-  }
-
-  &__inner {
+    background-color: $grey;
     position: relative;
-    top: -20px;
-    padding-bottom: 12px;
-    width: 70%;
-  }
+    .home-inset-content {
+        padding-top: 20px;
+    }
+    h2 {
+        font-size: 36px;
+        margin: 0 0 10px;
+        @media (max-width: 800px) {
+            font-size: 28px;
+        }
+    }
+
+    p {
+        margin-top: 0;
+    }
+
+    >.content {
+        overflow: visible;
+        margin-bottom: 0;
+    }
+
+    &__img {
+        background-image: url('../images/featured-3.png');
+        position: absolute;
+        top: 0;
+        // Width calculated to be a third of the content column plus half of the viewport
+        left: calc( ((1000px / 3) * 2) + ((100vw - 934px) / 2));
+        width: calc((1000px / 3) + ((100vw - 1066px) / 2));
+        max-width: 720px;
+        height: 100%;
+        background-position: 50% 15%;
+        background-size: cover;
+    }
+
+    &__inner {
+        position: relative;
+        top: -20px;
+        padding-bottom: 12px;
+        width: 70%;
+    }
 }
 
 .steps-home {
@@ -295,7 +311,7 @@
 }
 
 .home-inset-content {
-  margin: 0 20px;
+    margin: 0 20px;
 }
 
 .home-quote {
@@ -346,10 +362,12 @@
     &__img {
         position: absolute;
         top: 0;
-        right: 0;
-        width: 30%;
+        // Width calculated to be a third of the content column plus half of the viewport
+        left: calc( ((1000px / 3) * 2) + ((100vw - 934px) / 2));
+        width: calc((1000px / 3) + ((100vw - 1066px) / 2));
+        max-width: 720px;
         height: 100%;
-        background-position: 50%;
+        background-position: 50% 15%;
         background-size: cover;
     }
 }
@@ -558,16 +576,19 @@
     }
 
     .home-find-event {
-      margin-bottom: 0;
+        margin-bottom: 0;
+        p {
+            margin-top: 0;
+        }
+        
+        &__img {
+            height: 300px;
+        }
 
-      &__img {
-        height: 300px;
-      }
-
-      &__inner {
-        top: -45px;
-        width: 100%;
-      }
+        &__inner {
+            top: -45px;
+            width: 100%;
+        }
     }
 
     .home-quote {
@@ -610,7 +631,7 @@
     .steps-home {
       margin-top: 30px;
       h2 {
-          margin-right: 20px;
+        font-size: 28px;
       }
     }
 }

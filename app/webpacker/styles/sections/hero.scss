@@ -4,91 +4,125 @@
 
     > header {
         display: flex;
+        position: relative;
+        box-sizing: border-box;
+        
+        height: 500px;
+
+        margin-top: -1px;
+
+        background-color: $grey;
+        padding-top: 3em;
 
         @media only screen and (max-width: $mobile-cutoff) {
             flex-direction: column-reverse;
-            background-color: $white;
+            padding-top: 0;
+            height: auto;
         }
 
-        background-color: $grey;
-        border-top: 3em solid $grey;
-
-        @media only screen and (max-width: $mobile-cutoff) {
-            border-top: none;
+        @media only screen and (min-width: 1500px) {
+            min-height: 500px;
+            height: 33vw;
         }
 
         .hero__titles {
             display: flex;
-            flex-grow: 1;
             flex-direction: column;
-            min-width: 15em;
+            justify-content: center;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            transform: rotate(-3deg);
+            transform-origin: left;
+            margin-left: -7px;
 
             @media only screen and (max-width: $mobile-cutoff) {
-                margin-bottom: 2em;
+                position: relative;
+                top: -50px;
+                margin-bottom: -25px;
             }
 
             &__title {
-                margin-top: 10em;
-
-                @media only screen and (max-width: $mobile-cutoff) {
-                    margin-top: 8em;
-                }
 
                 h1 {
-                    // we're using flexbox to keep things sane but it doesn't
-                    // support overlapping, so push the header to the right manually
-                    transform: translateX(3em) rotate(-3deg);
                     background-color: $yellow-dark-90;
 
-                    padding: 1em 1em 1em 1.7em;
-                    margin: -4em;
+                    padding: 20px 40px 25px 40px;
+                    margin: 0 0 30px 0;
 
                     text-decoration: underline;
-                    text-decoration-thickness: .1em;
+                    text-decoration-thickness: 5px;
                     text-underline-offset: .25em;
 
                     font-weight: 900;
-                    font-size: 220%;
+                    font-size: 3.38rem;
+                    line-height: 1.4;
 
-                    max-width: 9em;
-                    min-width: 9em;
+                    width: calc(40% + 70px);
+                    min-width: 490px;
+                    box-sizing: border-box;
 
                     &::after {
                         content: "."
+                    }
+
+                    @media only screen and (max-width: $mobile-cutoff) {
+                        font-size: 28px;
+                        text-decoration-thickness: 4px;
+                        margin: 0 0 10px 0;
+                        width: calc(100% - 50px);
+                        max-width: 400px;
+                        min-width: 0;
+                    }
+                    @media only screen and (min-width: 1500px) {
+                        font-size: 3.6vw;
                     }
                 }
             }
 
             &__subtitle {
-                transform: rotate(-3deg);
-                margin: 3em .5em 3em 1.9em;
-                font-size: 120%;
+                width: 40%;
+                padding: 0 40px;
+                font-size: 29px;
                 font-weight: 700;
+                box-sizing: border-box;
 
                 @media only screen and (max-width: $mobile-cutoff) {
-                    margin: 1em 1em 1em 1.5em;
-                    font-size: 140%;
+                    font-size: 19px;
+                    width: 100%;
+                    max-width: 400px;
                 }
             }
         }
 
         .hero__img {
             overflow: hidden;
+            
+            position: absolute;
+            bottom: 0;
+            right: 0;
 
+            width: 60%;
+            height: calc(100% - 3em);
             @media only screen and (max-width: $mobile-cutoff) {
-                align-self: flex-end;
+                position: static;
+                width: calc(100% - 50px);
+                height: 300px;
+                margin-left: 50px;
             }
 
 
             img {
                 object-fit: cover;
                 display: block;
-                max-height: 24em;
+
+                width: 100%;
+                height: 100%;
 
                 @media only screen and (max-width: $mobile-cutoff) {
                     margin: 0;
-                    width: 90vw;
-                    max-height: 14em;
+                    width: 100%;
+                    height: 100%;
                 }
             }
         }
@@ -101,12 +135,13 @@
     display: flex;
     align-items: center;
     background-color: $green;
-    margin-top: 2em;
+    margin-top: 50px;
 
     @media only screen and (max-width: $mobile-cutoff) {
         flex-direction: column;
         align-items: flex-start;
         margin: 0 -20px;
+        margin-top: 30px;
     }
 
     &__text {
@@ -118,16 +153,15 @@
         padding-right: 150px;
 
         @media only screen and (max-width: $mobile-cutoff) {
-            padding-right: 0;
+            padding-right: 20px;
             
             > p {
-                margin-bottom: 1.2em;
             }
         }
     }
 
     &__cta {
-        margin: 0.4em 1em;
+        margin: 0.4em 1em 20px;
 
         &__button {
             @include button($bg: $white, $fg: $black);
@@ -136,7 +170,6 @@
 
             @media only screen and (max-width: $mobile-cutoff) {
                 padding: .2em .5em;
-                margin-bottom: .5em;
             }
         }
     }
