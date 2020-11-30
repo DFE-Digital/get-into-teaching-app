@@ -1,4 +1,5 @@
 class CardComponent < ViewComponent::Base
+  MAX_HEADER_LENGTH = 20
   attr_accessor :snippet, :link, :link_text, :image, :video, :header, :border
 
   def initialize(card:)
@@ -15,6 +16,10 @@ class CardComponent < ViewComponent::Base
 
   def media_link
     @video ? video_link : image_link
+  end
+
+  def truncated_header
+    header&.slice(0, MAX_HEADER_LENGTH)
   end
 
 private

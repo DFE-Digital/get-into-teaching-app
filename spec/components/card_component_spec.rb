@@ -55,10 +55,22 @@ describe CardComponent, type: "component" do
   context "with header set" do
     let(:withheader) { card.merge(header: "Further info") }
 
-    subject! { render_inline(CardComponent.new(card: withheader)) }
+    subject do
+      render_inline(CardComponent.new(card: withheader))
+      page
+    end
 
     specify "header is shown" do
-      expect(page).to have_css(".card header")
+      is_expected.to have_css(".card header")
+    end
+
+    context "With long header" do
+      let(:header) { "long " * 50 }
+      let(:withheader) { card.merge header: header }
+
+      it "will be truncated" do
+        is_expected.to have_css ".card header", text: header.slice(0, 20)
+      end
     end
   end
 
