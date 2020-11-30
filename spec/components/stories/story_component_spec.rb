@@ -37,29 +37,33 @@ describe Stories::StoryComponent, type: "component" do
   end
 
   let(:front_matter) { default_front_matter }
-  subject! { render_inline(Stories::StoryComponent.new(front_matter)) }
+
+  subject do
+    render_inline(Stories::StoryComponent.new(front_matter))
+    page
+  end
 
   describe "metadata content" do
     specify "renders a story" do
-      expect(page).to have_css("article.story")
+      is_expected.to have_css("article.story")
     end
 
     specify "the story's title forms the main heading" do
-      expect(page).to have_css("h1", text: front_matter[:title])
+      is_expected.to have_css("h1", text: front_matter[:title])
     end
 
     specify "the story's image is rendered" do
-      expect(page).to have_css(%(img[src='#{front_matter[:image]}']))
+      is_expected.to have_css(%(img[src='#{front_matter[:image]}']))
     end
 
     specify "the teacher name and position are in secondary heading" do
       [front_matter.dig(:story, :teacher), front_matter.dig(:story, :position)].each do |part|
-        expect(page).to have_css("h2", text: Regexp.new(part))
+        is_expected.to have_css("h2", text: Regexp.new(part))
       end
     end
 
     specify "the backlink is present" do
-      expect(page).to have_link(front_matter[:backlink_text], href: front_matter[:backlink], class: %w[govuk-back-link])
+      is_expected.to have_link(front_matter[:backlink_text], href: front_matter[:backlink], class: %w[govuk-back-link])
     end
   end
 
@@ -72,7 +76,7 @@ describe Stories::StoryComponent, type: "component" do
     let(:front_matter) { default_front_matter.merge(video_story) }
 
     specify "the video iframe is present in the document and the src is correct" do
-      expect(page).to have_css("iframe[src='#{video_url}']")
+      is_expected.to have_css("iframe[src='#{video_url}']")
     end
   end
 
@@ -83,31 +87,33 @@ describe Stories::StoryComponent, type: "component" do
     let(:front_matter) { default_front_matter.merge(more_information) }
 
     specify "the link is present in the document" do
-      expect(page).to have_link(text, href: link)
+      is_expected.to have_link(text, href: link)
     end
   end
 
   describe "content" do
     let(:content) { "The quick brown fox" }
-    subject! do
+    subject do
       render_inline(Stories::StoryComponent.new(front_matter)) do
         content
       end
+
+      page
     end
 
     specify "the content is rendered" do
-      expect(page).to have_content(content)
+      is_expected.to have_content(content)
     end
   end
 
   describe "more stories" do
     context "when there are more stories" do
       specify "there is a more stories header" do
-        expect(page).to have_css("h2", text: "More stories")
+        is_expected.to have_css("h2", text: "More stories")
       end
 
       specify "there should be a story card for each story" do
-        expect(page).to have_css(".cards.more-stories > .card", count: front_matter[:more_stories].length)
+        is_expected.to have_css(".cards.more-stories > .card", count: front_matter[:more_stories].length)
       end
     end
 
@@ -115,7 +121,7 @@ describe Stories::StoryComponent, type: "component" do
       let(:front_matter) { default_front_matter.merge(more_stories: nil) }
 
       specify "there is no more stories header" do
-        expect(page).not_to have_css("h2", text: "More stories")
+        is_expected.not_to have_css("h2", text: "More stories")
       end
     end
   end
