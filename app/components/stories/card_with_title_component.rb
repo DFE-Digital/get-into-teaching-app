@@ -1,5 +1,5 @@
 module Stories
-  class CardWithHeaderComponent < CardComponent
+  class CardWithTitleComponent < CardComponent
     attr_reader :page_data
     with_collection_parameter :card
 
@@ -12,8 +12,8 @@ module Stories
       false
     end
 
-    def header
-      @header ||= lookup_header
+    def title
+      @title ||= lookup_header
     end
 
   private
