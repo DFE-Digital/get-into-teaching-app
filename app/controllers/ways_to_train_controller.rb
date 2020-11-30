@@ -4,12 +4,12 @@ class WaysToTrainController < ApplicationController
   rescue_from ActionView::MissingTemplate, StaticPages::InvalidTemplateName, with: :rescue_missing_template
 
   def show
-    render template: steps_to_become_a_teacher_template, layout: "layouts/accordion"
+    render template: ways_to_train_template, layout: "layouts/accordion"
   end
 
 private
 
-  def steps_to_become_a_teacher_template
-    "content/steps-to-become-a-teacher"
+  def ways_to_train_template
+    "content/ways-to-train"
   end
 end
