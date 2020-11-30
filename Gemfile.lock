@@ -155,7 +155,7 @@ GEM
     listen (3.3.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.7.0)
+    loofah (2.8.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -214,7 +214,7 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.3.0)
       loofah (~> 2.3)
-    rails_semantic_logger (4.4.4)
+    rails_semantic_logger (4.4.5)
       rack
       railties (>= 3.2)
       semantic_logger (~> 4.4)
@@ -293,7 +293,7 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
-    semantic_logger (4.7.2)
+    semantic_logger (4.7.4)
       concurrent-ruby (~> 1.0)
     semantic_range (2.3.0)
     sentry-raven (3.1.1)
@@ -348,7 +348,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.4.1)
+    zeitwerk (2.4.2)
 
 PLATFORMS
   ruby
