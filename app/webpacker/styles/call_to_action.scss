@@ -66,9 +66,7 @@
     }
 
     &--next-steps {
-        @media only screen and (max-width: 800px) {
-            flex-direction: column;
-        }
+        flex-direction: column;
 
         padding: 0;
         .call-to-action__icon {
@@ -76,52 +74,48 @@
             background: $yellow;
         }
 
-        .call-to-action__contents {
+        .call-to-action {
+            &__contents {
+                padding: 1em;
+            }
+
             &__header{
                 margin: .4em 0;
             }
 
-            padding: 1em;
-
             &__options {
+                display: flex;
+                flex-direction: column;
+            }
 
-                &__row {
-                    display: flex;
-                    margin: 1em 0;
-                    gap: 1em;
+            &__column {
+                display: flex;
+                flex-direction: column;
+                margin: 1em .5em;
+            }
 
-                    @media only screen and (max-width: 800px) {
-                        flex-direction: column-reverse;
-                        align-items: flex-start;
-                    }
+            &__text {
+                flex-grow: 1;
+                font-size: smaller;
+                margin: 1em 0;
+            }
 
-                    align-items: center;
+            &__button {
+                @include button;
+                display: flex;
+                align-items: center;
+                min-width: 5em;
 
-                    &__button {
-                        @include button;
-                        display: flex;
-                        align-items: center;
-                        min-width: 5em;
-                        @media only screen and (max-width: 800px) {
-                            width: 90%;
-                        }
+                &__text {
+                    flex-grow: 1;
+                }
 
-                        &__text {
-                            flex-grow: 1;
-                        }
-
-                        &__chevron {
-                            @include chevron-icon($color: white, $dimensions: .4em);
-                            width: .5em;
-                            height: .5em;
-                            content: " ";
-                            position: relative;
-                        }
-                    }
-
-                    &__text {
-                        margin: 0;
-                    }
+                &__chevron {
+                    @include chevron-icon($color: white, $dimensions: .4em);
+                    width: .5em;
+                    height: .5em;
+                    content: " ";
+                    position: relative;
                 }
             }
         }
