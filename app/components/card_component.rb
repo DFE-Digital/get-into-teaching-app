@@ -23,6 +23,10 @@ class CardComponent < ViewComponent::Base
     header&.truncate(MAX_HEADER_LENGTH)
   end
 
+  def modifier_classes
+    [border_class].compact.join(" ")
+  end
+
 private
 
   def image_link
@@ -35,5 +39,9 @@ private
     link_to(video, class: "card__thumb", data: { action: "click->video#play", target: "video.link" }) do
       safe_join([tag.div(helpers.fas_icon("play"), class: "card__thumb--play-icon"), image_tag(image)])
     end
+  end
+
+  def border_class
+    border ? nil : "card--no-border"
   end
 end
