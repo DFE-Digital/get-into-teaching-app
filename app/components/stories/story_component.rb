@@ -7,6 +7,7 @@ module Stories
                   :position,
                   :more_stories,
                   :more_information,
+                  :explore,
                   :backlink,
                   :backlink_text,
                   :more_information_text,
@@ -21,6 +22,7 @@ module Stories
         @backlink      = fm["backlink"]
         @backlink_text = fm["backlink_text"]
         @more_stories  = fm["more_stories"]
+        @explore       = fm["explore"]
 
         @teacher  = fm.dig("story", "teacher")
         @position = fm.dig("story", "position")
@@ -43,6 +45,10 @@ module Stories
 
     def show_more_stories?
       more_stories.present?
+    end
+
+    def show_explore?
+      explore.present?
     end
   end
 end

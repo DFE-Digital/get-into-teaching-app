@@ -126,6 +126,34 @@ describe Stories::StoryComponent, type: "component" do
     end
   end
 
+  describe "explore" do
+    context "when there are is explore frontmatter" do
+      let(:explore) do
+        default_front_matter[:more_stories].map { |s| s.merge(header: "Test") }
+      end
+
+      let(:front_matter) { default_front_matter.merge(explore: explore) }
+
+      specify "there is an explore header" do
+        is_expected.to have_css "section.cards-with-headers h2"
+      end
+
+      specify "cards will render without borders" do
+        is_expected.to have_css "section.cards-with-headers .cards .card--no-border"
+      end
+
+      specify "cards will render with headers" do
+        is_expected.to have_css "section.cards-with-headers .cards header"
+      end
+    end
+
+    context "when there is no explore frontmatter" do
+      specify "there should not be an explore section" do
+        is_expected.not_to have_css("section.cards-with-headers")
+      end
+    end
+  end
+
   describe "with page_data" do
     let(:page_data) { Pages::Data.new }
     let(:more_stories) { front_matter[:more_stories].length }
