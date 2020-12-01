@@ -1,5 +1,7 @@
 @charset 'UTF-8';
 
+$govuk-font-family: Sans-serif;
+
 @import './git.scss';
 @import "~govuk-frontend/govuk/all";
 @import './govuk-reset.scss';
