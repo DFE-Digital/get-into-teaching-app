@@ -1,15 +1,9 @@
 module Navbar
   class NavbarComponent < ViewComponent::Base
-    attr_reader :sitemap
-
-    def initialize(sitemap)
-      @sitemap = sitemap
-    end
-
   private
 
     def resources
-      helpers.navigation_resources(@sitemap)
+      helpers.navigation_resources
     end
 
     def nav_link(link_text, link_path)
@@ -22,8 +16,9 @@ module Navbar
 
     def first_uri_segment_matches_link?(link_path)
       current_uri = request.path
-
-      /^\/[^\/]*/.match(current_uri)[0] == link_path
+      if (matches = /^\/[^\/]*/.match(current_uri))
+        matches[0] == link_path
+      end
     end
   end
 end
