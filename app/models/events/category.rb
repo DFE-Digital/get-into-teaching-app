@@ -31,7 +31,7 @@ module Events
     end
 
     def type_id_for_category(category_name)
-      category = event_types.index_by(&:value)[category_name.singularize]
+      category = indexed_categories[normalize_name(category_name)]
       category ? category.id.to_i : raise(UnknownEventCategory)
     end
 
@@ -47,6 +47,16 @@ module Events
       events_api
         .upcoming_teaching_events_indexed_by_type(quantity_per_type: limit)
         .transform_keys { |k| k.to_s.to_i }
+    end
+
+    def normalize_name(name)
+      name.singularize.downcase
+    end
+
+    def indexed_categories
+      event_types
+        .index_by(&:value)
+        .transform_keys(&method(:normalize_name))
     end
   end
 end

@@ -31,6 +31,13 @@ RSpec.describe Events::Category do
         expect { described_class.new "Unknown event type" }.to \
           raise_exception Events::Category::UnknownEventCategory
       end
+
+      context "with incorrect case" do
+        subject { described_class.new "train to teach events" }
+
+        it { is_expected.to be_kind_of described_class }
+        it { is_expected.to have_attributes id: type_id }
+      end
     end
   end
 
