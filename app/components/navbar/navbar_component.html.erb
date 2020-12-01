@@ -6,7 +6,7 @@
         <ul>
             <%= nav_link("Home", '/') %>
             <% resources.each do |resource| %>
-                <%= nav_link(resource[:front_matter]["title"], resource[:path]) %>   
+                <%= nav_link(resource[:front_matter][:title], resource[:path]) %>   
             <% end %>
             <%= nav_link("Find an event near you", events_path) %>
         </ul>
