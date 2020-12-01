@@ -59,7 +59,7 @@ describe CardComponent, type: "component" do
     let(:card) { base.merge(header: "Further info") }
 
     specify "header is shown" do
-      is_expected.to have_css(".card header")
+      is_expected.to have_css(".card header", text: "Further info")
     end
 
     context "With long header" do
@@ -78,7 +78,7 @@ describe CardComponent, type: "component" do
     let(:card) { base.merge title: title }
 
     specify "title is shown" do
-      is_expected.to have_css(".card > h3")
+      is_expected.to have_css(".card > h3", text: "a title")
     end
   end
 
