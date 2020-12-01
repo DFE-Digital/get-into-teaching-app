@@ -27,7 +27,10 @@ RSpec.describe Pages::Frontmatter do
   end
 
   shared_examples "a listing of all pages" do
-    it { is_expected.to have_attributes keys: %w[/page1 /subfolder/page2] }
+    it "includes all pages" do
+      expect(subject.keys).to match_array(%w[/page1 /subfolder/page2])
+    end
+
     it { is_expected.to include "/page1" => { title: "Hello World 1" } }
   end
 
