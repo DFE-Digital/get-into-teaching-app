@@ -16,7 +16,7 @@
         <div class="navbar__desktop">
             <ul>
                 <li><a href="/">Home</a></li>
-                <% navigation_resources(@sitemap).each do |resource| %>
+                <% navigation_resources.each do |resource| %>
                     <li><a href="<%= resource[:path] %>"><%= resource[:front_matter][:title] %></a></li>
                 <% end %>
                 <li><%= link_to "Find an event near you", events_path %></li>
@@ -33,7 +33,7 @@
             <div data-target="navigation.links" id="navbar-mobile-links" class="navbar__mobile__links">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <% navigation_resources(@sitemap).each do |resource| %>
+                    <% navigation_resources.each do |resource| %>
                         <li><a href="<%= resource[:path] %>"><%= resource[:front_matter][:title] %></a></li>
                     <% end %>
                     <li><%= link_to "Find an event near you", events_path %></li>
