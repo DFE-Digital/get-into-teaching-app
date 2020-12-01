@@ -24,30 +24,30 @@
     </ul>
 
     <div class="call-to-action__contents__options">
-      <div>
-        <%= link_to("#", class: "call-to-action__contents__options__button") do %>
-          <div class="call-to-action__contents__options__button__text">Find</div>
-          <div class="call-to-action__contents__options__button__chevron"></div>
+      <div class="call-to-action__contents__options__row">
+        <%= link_to("#", class: "call-to-action__contents__options__row__button") do %>
+          <div class="call-to-action__contents__options__row__button__text">Find</div>
+          <div class="call-to-action__contents__options__row__button__chevron"></div>
         <% end %>
+
+        <p class="call-to-action__contents__options__row__text">
+          Use the GOV.UK service to find postgraduate teacher
+          training providers near you.
+        </p>
       </div>
 
-      <p class="call-to-action__contents__options__text">
-        Use the GOV.UK service to find postgraduate teacher
-        training providers near you.
-      </p>
-
-      <div>
-        <%= link_to("#", class: "call-to-action__contents__options__button") do %>
-          <div class="call-to-action__contents__options__button__text">Contact</div>
-          <div class="call-to-action__contents__options__button__chevron"></div>
+      <div class="call-to-action__contents__options__row">
+        <%= link_to("#", class: "call-to-action__contents__options__row__button") do %>
+          <div class="call-to-action__contents__options__row__button__text">Contact</div>
+          <div class="call-to-action__contents__options__row__button__chevron"></div>
         <% end %>
-      </div>
 
-      <p class="call-to-action__contents__options__text">
-        Our trained advisers can help you select the best training option
-        and provider for you, they can also offer advice on potential
-        funding support.
-      </p>
+        <p class="call-to-action__contents__options__row__text">
+          Our trained advisers can help you select the best training option
+          and provider for you, they can also offer advice on potential
+          funding support.
+        </p>
+      </div>
     </div>
   </div>
 <% end %>

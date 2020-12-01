@@ -3,7 +3,12 @@
     padding: .5em .8em;
     display: flex;
 
+
     &--chat-online {
+        @media only screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+
         align-items: center;
 
         .call-to-action__icon {
@@ -29,6 +34,10 @@
     }
 
     &--story {
+        @media only screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+
         padding: 0;
         .call-to-action__photo > img {
             width: 8em;
@@ -57,6 +66,10 @@
     }
 
     &--next-steps {
+        @media only screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+
         padding: 0;
         .call-to-action__icon {
             border: 1.5em solid $yellow;
@@ -71,31 +84,44 @@
             padding: 1em;
 
             &__options {
-                display: grid;
-                grid-template-columns: .33fr .66fr;
-                grid-gap: 1em;
-                align-items: center;
 
-                &__button {
-                    @include button;
+                &__row {
                     display: flex;
+                    margin: 1em 0;
+                    gap: 1em;
+
+                    @media only screen and (max-width: 800px) {
+                        flex-direction: column-reverse;
+                        align-items: flex-start;
+                    }
+
                     align-items: center;
 
+                    &__button {
+                        @include button;
+                        display: flex;
+                        align-items: center;
+                        min-width: 5em;
+                        @media only screen and (max-width: 800px) {
+                            width: 90%;
+                        }
+
+                        &__text {
+                            flex-grow: 1;
+                        }
+
+                        &__chevron {
+                            @include chevron-icon($color: white, $dimensions: .4em);
+                            width: .5em;
+                            height: .5em;
+                            content: " ";
+                            position: relative;
+                        }
+                    }
+
                     &__text {
-                        flex-grow: 1;
+                        margin: 0;
                     }
-
-                    &__chevron {
-                        @include chevron-icon($color: white, $dimensions: .4em);
-                        width: .5em;
-                        height: .5em;
-                        content: " ";
-                        position: relative;
-                    }
-                }
-
-                &__text {
-                    margin: 0;
                 }
             }
         }
