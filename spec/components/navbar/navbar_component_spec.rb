@@ -14,24 +14,13 @@ describe Navbar::NavbarComponent, type: "component" do
   describe "Desktop navbar component" do
     context "when rendered" do
       it "shows background colour on link that matches the current page" do
-        desktop_navbar = page.find(".navbar__desktop")
-        home_link = desktop_navbar.find("a", text: "Home")
-        parent_li = home_link.find(:xpath, "..")
-
-        expect(parent_li["class"]).to match("active")
+        expect(page).to have_css("li.active") do |active_li|
+          expect(active_li).to have_link("Home", href: "/")
+        end
       end
 
       it "shows no background colour on links that do not match the current page" do
-        desktop_navbar = page.find(".navbar__desktop")
-        home_links = desktop_navbar.all("a").reject do |anchor|
-          anchor.native.children.text == "Home"
-        end
-        parent_lis = []
-        home_links.each { |anchor| parent_lis.push(anchor.find(:xpath, "..")) }
-
-        parent_lis.each do |li|
-          expect(li["class"]).to_not match("active")
-        end
+        page.all(".navbar__desktop li.active", count: 1)
       end
     end
   end
