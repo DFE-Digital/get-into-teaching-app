@@ -7,19 +7,22 @@ module Stories
                   :position,
                   :more_stories,
                   :more_information,
+                  :explore,
                   :backlink,
                   :backlink_text,
                   :more_information_text,
                   :more_information_link,
-                  :front_matter
+                  :front_matter,
+                  :page_data
 
-    def initialize(front_matter)
+    def initialize(front_matter, page_data = nil)
       front_matter.tap do |fm|
         @title         = fm["title"]
         @image         = fm["image"]
         @backlink      = fm["backlink"]
         @backlink_text = fm["backlink_text"]
         @more_stories  = fm["more_stories"]
+        @explore       = fm["explore"]
 
         @teacher  = fm.dig("story", "teacher")
         @position = fm.dig("story", "position")
@@ -27,6 +30,8 @@ module Stories
 
         @more_information_text = fm.dig("more_information", "text")
         @more_information_link = fm.dig("more_information", "link")
+
+        @page_data = page_data
       end
     end
 
@@ -40,6 +45,10 @@ module Stories
 
     def show_more_stories?
       more_stories.present?
+    end
+
+    def show_explore?
+      explore.present?
     end
   end
 end

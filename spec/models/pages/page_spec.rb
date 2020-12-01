@@ -11,6 +11,7 @@ RSpec.describe Pages::Page do
       it { is_expected.to have_attributes title: "Hello World 1" }
       it { is_expected.to have_attributes path: "/page1" }
       it { is_expected.to have_attributes template: "content/page1" }
+      it { is_expected.to have_attributes data: instance_of(Pages::Data) }
     end
 
     context "with non markdown page" do
@@ -20,6 +21,7 @@ RSpec.describe Pages::Page do
       it { is_expected.to have_attributes title: nil }
       it { is_expected.to have_attributes path: "/unknown" }
       it { is_expected.to have_attributes template: "content/unknown" }
+      it { is_expected.to have_attributes data: instance_of(Pages::Data) }
     end
   end
 end

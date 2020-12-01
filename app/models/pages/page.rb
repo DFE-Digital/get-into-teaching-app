@@ -22,5 +22,9 @@ module Pages
     def template
       TEMPLATES_FOLDER + path
     end
+
+    def data
+      @data ||= Pages::Data.new
+    end
   end
 end

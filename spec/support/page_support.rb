@@ -6,6 +6,7 @@ end
 
 shared_context "always render testing page" do
   let(:template) { "testing/markdown_test" }
-  let(:page) { double Pages::Page, template: template }
+  let(:page_data) { Pages::Data.new }
+  let(:page) { double Pages::Page, template: template, data: page_data }
   before { allow(Pages::Page).to receive(:find).and_return page }
 end

@@ -1,5 +1,6 @@
 class CardComponent < ViewComponent::Base
-  attr_accessor :snippet, :link, :link_text, :image, :video
+  MAX_HEADER_LENGTH = 40
+  attr_accessor :snippet, :link, :link_text, :image, :video, :header, :border, :title
 
   def initialize(card:)
     @card = card
@@ -9,10 +10,21 @@ class CardComponent < ViewComponent::Base
     @link_text = card["link_text"].presence || card["linktext"]
     @image     = card["image"]
     @video     = card["video"]
+    @header    = card["header"]
+    @title     = card["title"]
+    @border    = card["border"] != false
   end
 
   def media_link
     @video ? video_link : image_link
+  end
+
+  def truncated_header
+    header&.truncate(MAX_HEADER_LENGTH)
+  end
+
+  def modifier_classes
+    [border_class].compact.join(" ")
   end
 
 private
@@ -27,5 +39,9 @@ private
     link_to(video, class: "card__thumb", data: { action: "click->video#play", target: "video.link" }) do
       safe_join([tag.div(helpers.fas_icon("play"), class: "card__thumb--play-icon"), image_tag(image)])
     end
+  end
+
+  def border_class
+    border ? nil : "card--no-border"
   end
 end

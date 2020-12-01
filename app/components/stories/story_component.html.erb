@@ -35,3 +35,13 @@
     <%= render Stories::CardComponent.with_collection(more_stories) %>
   </div>
 <% end %>
+
+<% if show_explore? %>
+<section class="cards-with-headers">
+  <h2>Explore Get Into Teaching</h2>
+
+  <div class="cards more-stories">
+    <%= render Cards::StoryComponent.with_collection(explore, page_data: page_data) %>
+  </div>
+<section>
+<% end %>

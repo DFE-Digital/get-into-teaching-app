@@ -5,7 +5,7 @@
       <%= render "sections/header" %>
       <main class="content container-1000" role="main" id="main-content">
         <article class="markdown">
-          <%= render Stories::StoryComponent.new(@front_matter) do %>
+          <%= render Stories::StoryComponent.new(@front_matter, @page.data) do %>
             <%= yield %>
           <% end %>
         </article>
