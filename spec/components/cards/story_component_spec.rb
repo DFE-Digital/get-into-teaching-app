@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Stories::CardWithHeaderComponent, type: "component" do
+describe Cards::StoryComponent, type: "component" do
   let :edna do
     {
       title: "Edna's career in teaching",
@@ -28,7 +28,12 @@ describe Stories::CardWithHeaderComponent, type: "component" do
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }
   it { is_expected.not_to have_css ".card header" }
+  it { is_expected.to have_css "img[src=\"#{story['image']}\"]" }
   it { is_expected.to have_content story[:snippet] }
+
+  specify "includes the name in a link" do
+    is_expected.to have_link(%(Read #{story[:name]}'s story), href: story[:link], class: "git-link")
+  end
 
   context "With supplied header" do
     let(:story) { base.merge header: "Edna's story" }

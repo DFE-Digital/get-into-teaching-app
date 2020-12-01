@@ -1,5 +1,5 @@
-module Stories
-  class CardWithHeaderComponent < CardComponent
+module Cards
+  class StoryComponent < Stories::CardComponent
     attr_reader :page_data
     with_collection_parameter :card
 
