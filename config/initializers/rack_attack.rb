@@ -48,7 +48,7 @@ module Rack
 
   Rack::Attack.throttled_response = lambda do |env|
     accept_html = env["HTTP_ACCEPT"].include?("text/html")
-    return [429, {}, "Rate limit exceeded"] unless accept_html
+    return [429, {}, ["Rate limit exceeded"]] unless accept_html
 
     html = ApplicationController.render(
       template: "errors/too_many_requests",
