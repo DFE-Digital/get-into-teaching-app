@@ -62,22 +62,22 @@ en:
           <li><span>a chance to talk to current trainees or staff</span></li>
         </ul>
   event_types:
-    222750001: 
+    222750001:
       name:
         singular: "Train to Teach Event"
         plural: "Train to Teach Events"
       description: |-
         Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training 
         will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
-    222750008: 
-      name: 
+    222750008:
+      name:
         singular: "Online Event"
         plural: "Online Events"
       description: |-
         In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train. 
         Get fast answers to your questions so you can take the next step to becoming a teacher.
-    222750009: 
-      name: 
+    222750009:
+      name:
         singular: "School or University Event"
         plural: "School and University Events"
       description: |-
@@ -104,8 +104,8 @@ en:
             distance:
               inclusion: Select a distance from the list
             postcode:
-              blank: Enter your postcode
-              invalid: Enter a valid postcode
+              blank: Enter full postcode or first part
+              invalid: Enter valid full postcode or first part
         events/steps/personal_details:
           attributes:
             first_name:
