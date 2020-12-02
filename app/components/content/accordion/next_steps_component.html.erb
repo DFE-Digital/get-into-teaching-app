@@ -1,10 +1,10 @@
 <%= tag.div(class: %w[call-to-action call-to-action--next-steps]) do %>
-  <%= icon %>
-
-  <div class="call-to-action__contents">
-    <h3 class="call-to-action__contents__header">
+  <div class="call-to-action__header">
+    <%= icon %>
+    <h3 class="call-to-action__title">
       Next steps
     </h3>
+  </div>
 
   <div class="call-to-action__contents">
 
@@ -45,7 +45,7 @@
         </p>
 
         <%= link_to("#", class: "call-to-action__button") do %>
-          <div class="call-to-action__button__text">Sign up for Teacher Training Adviser</div>
+          <div class="call-to-action__button__text">Sign up for a Teacher Training Adviser</div>
           <div class="call-to-action__button__chevron"></div>
         <% end %>
       </div>
