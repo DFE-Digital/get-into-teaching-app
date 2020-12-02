@@ -16,6 +16,8 @@
                     <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
                   <% end %>
 
+                  <% @parent_front_matter = @front_matter %>
+
                   <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>
 
                     <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered")) do |accordion| %>
@@ -39,6 +41,8 @@
                       ) %>
                     <% end %>
                   <% end %>
+
+                  <% @front_matter = @parent_front_matter %>
                 </div>
 
                 <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
