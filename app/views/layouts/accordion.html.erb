@@ -16,8 +16,6 @@
                     <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
                   <% end %>
 
-                  <%# FIXME: we're tapping the frontmatter here because
-                             rendering partials overwrites it %>
                   <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>
 
                     <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered")) do |accordion| %>
