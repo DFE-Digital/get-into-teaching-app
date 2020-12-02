@@ -3,8 +3,8 @@ require "rails_helper"
 describe PostcodeValidator do
   class TestModel
     include ActiveModel::Model
-    attr_accessor :postcode, :outward_only_postcode
-    validates :postcode, postcode: { outward_only_postcode: :outward_only_postcode }
+    attr_accessor :postcode, :accept_partial_postcode
+    validates :postcode, postcode: { accept_partial_postcode: :accept_partial_postcode }
   end
 
   before { instance.valid? }
@@ -31,7 +31,7 @@ describe PostcodeValidator do
   context "with valid outward only postcodes" do
     %w[ST6 M1 TE57].each do |postcode|
       context "checking '#{postcode}'" do
-        let(:instance) { TestModel.new(postcode: postcode, outward_only_postcode: true) }
+        let(:instance) { TestModel.new(postcode: postcode, accept_partial_postcode: true) }
         it { is_expected.not_to include :postcode }
       end
     end
