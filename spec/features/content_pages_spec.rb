@@ -31,10 +31,11 @@ RSpec.feature "content pages check", type: :feature, content: true do
     describe "visiting #{url}" do
       let(:url) { url }
       before { visit(url) }
+      let(:successful_responses) { 200..399 }
       let(:document) { Nokogiri.parse(page.body) }
 
       scenario "checking that #{url} responds with success" do
-        expect(page).to have_http_status :success
+        expect(page.status_code).to be_in(successful_responses)
       end
 
       scenario "the anchor links reference existing IDs" do
@@ -59,7 +60,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
           .each do |href|
             visit(href)
 
-            expect(page).to(have_http_status(:success), %(invalid link on #{url} - #{href}))
+            expect(page.status_code).to(be_in(successful_responses), %(invalid link on #{url} - #{href}))
 
             if (fragment = URI.parse(href).fragment)
               expect(page).to(have_css("#" + fragment), %(invalid link on #{url} - #{href}, (missing fragment #{fragment})))
