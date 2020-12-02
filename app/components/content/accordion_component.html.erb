@@ -1,9 +1,21 @@
+<% if content_before_accordion %>
+  <div class="content_before_accordion">
+    <% if content_before_accordion.call_to_action.present? %>
+      <%= render content_before_accordion.call_to_action %>
+    <% end %>
+
+    <% if content_before_accordion.partial.present? %>
+      <%= render content_before_accordion.partial %>
+    <% end %>
+  </div>
+<% end %>
+
 <div class="accordions" data-controller="accordion">
   <% steps.each.with_index(1) do |step, i| %>
     <%= tag.section(id: "step-#{i}", class: "step", data: { id: i }) do %>
 
       <%= tag.button(class: "step-header", data: { action: "click->accordion#toggle", target: "accordion.header" }, aria: { controls: "collapsable-content-#{i}"}) do %>
-        <%= tag.h2(%(#{i}. #{step.title}), class: "step-header__text") %>
+        <%= tag.h2(%(#{number_prefix(i)} #{step.title}), class: "step-header__text") %>
         <div class="step-header__chevron"> </div>
       <% end %>
 
@@ -20,3 +32,15 @@
     <% end %>
   <% end %>
 </div>
+
+<% if content_after_accordion %>
+  <div class="content_after_accordion">
+    <% if content_after_accordion.call_to_action.present? %>
+      <%= render content_after_accordion.call_to_action %>
+    <% end %>
+
+    <% if content_after_accordion.partial.present? %>
+      <%= render content_after_accordion.partial %>
+    <% end %>
+  </div>
+<% end %>

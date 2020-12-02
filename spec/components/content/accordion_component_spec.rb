@@ -54,33 +54,68 @@ describe Content::AccordionComponent, type: "component" do
     let(:title) { "some title" }
     let(:text) { "some text" }
 
-    subject do
-      render_inline(Content::AccordionComponent.new) do |accordion|
-        accordion.slot(:step, title: title, call_to_action: call_to_action) do
-          text
+    describe "chat_online" do
+      subject do
+        render_inline(Content::AccordionComponent.new) do |accordion|
+          accordion.slot(:step, title: title, call_to_action: call_to_action) do
+            text
+          end
+        end
+      end
+
+      describe "when a call to action is specified" do
+        let(:call_to_action) { "chat_online" }
+        before { subject }
+
+        specify "the title and content are rendered" do
+          expect(page).to have_content(title)
+          expect(page).to have_content(text)
+        end
+
+        specify "the call to action should be rendered" do
+          expect(page).to have_css(".call-to-action--chat-online")
+        end
+      end
+
+      describe "when an invalid call to action is specified" do
+        let(:call_to_action) { "send_a_telegram" }
+
+        specify "an error is raised" do
+          expect { subject }.to raise_error(ArgumentError, /action not registered: #{call_to_action}/)
         end
       end
     end
 
-    describe "when a call to action is specified" do
-      let(:call_to_action) { "chat_online" }
-      before { subject }
-
-      specify "the title and content are rendered" do
-        expect(page).to have_content(title)
-        expect(page).to have_content(text)
+    describe "story" do
+      subject do
+        render_inline(Content::AccordionComponent.new) do |accordion|
+          accordion.slot(:step, title: title, call_to_action: call_to_action)
+        end
       end
 
-      specify "the call to action should be rendered" do
-        expect(page).to have_css(".call-to-action--chat-online")
-      end
-    end
+      describe "when a call to action is specified" do
+        let(:name) { "Story name" }
+        let(:heading) { "Story heading" }
+        let(:call_to_action) do
+          {
+            "name" => "story",
+            "arguments" => {
+              "name" => name,
+              "heading" => heading,
+              "image" => "/an-image.jpg",
+              "link" => "/some-link",
+              "text" => "The quick brown fox",
+            },
+          }
+        end
 
-    describe "when an invalid call to action is specified" do
-      let(:call_to_action) { "send_a_telegram" }
+        before { subject }
 
-      specify "an error is raised" do
-        expect { subject }.to raise_error(ArgumentError, /action not registered: #{call_to_action}/)
+        specify "the story component is rendered" do
+          expect(page).to have_css(".call-to-action--story")
+          expect(page).to have_content(heading)
+          expect(page).to have_content(name)
+        end
       end
     end
   end

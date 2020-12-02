@@ -1,4 +1,5 @@
 .accordions {
+    margin: 2em 0;
     .step {
         & + .step {
             margin-top: 1em;
@@ -19,6 +20,8 @@
                 margin: 0;
                 font-size: 140%;
                 flex-grow: 2;
+                white-space: initial;
+                padding-right: 2em;
 
                 @media only screen and (max-width: 800px) {
                     font-size: 100%;
@@ -63,4 +66,10 @@
             }
         }
     }
+}
+
+.content-after-accordion {
+    background-color: $grey;
+    margin: 2em 0;
+    padding: 1em;
 }

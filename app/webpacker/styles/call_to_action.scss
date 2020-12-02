@@ -1,31 +1,134 @@
 .call-to-action {
     background-color: $grey;
     padding: .5em .8em;
-
-    &__icon {
-        padding: .5em .5em .5em 0;
-        font-size: 200%;
-    }
+    display: flex;
 
 
     &--chat-online {
-        display: flex;
+        @media only screen and (max-width: 800px) {
+            flex-direction: column;
+        }
+
         align-items: center;
 
+        .call-to-action__icon {
+            padding: .5em .5em .5em 0;
+            font-size: 200%;
+        }
+
+
+        .call-to-action__text {
+            font-size: smaller;
+            margin: 0;
+            padding: 0;
+            font-weight: bold;
+        }
+
+        .call-to-action__action {
+            > button {
+                @include button;
+                @include chevron;
+                margin: .2em;
+            }
+        }
     }
 
-    &__text {
-        font-size: smaller;
-        margin: 0;
+    &--story {
+        @media only screen and (max-width: 500px) {
+            flex-direction: column;
+        }
+
         padding: 0;
-        font-weight: bold;
+        .call-to-action__photo > img {
+            width: 8em;
+            height: auto;
+        }
+
+        .call-to-action__contents {
+            padding: .5em 1em;
+
+            &__heading {
+                margin-top: .3em;
+                font-size: 110%;
+            }
+
+            &__story {
+                margin: 0.6em 0;
+            }
+
+            &__button {
+                @include button;
+                @include chevron($color: $white);
+
+                display: inline-block;
+            }
+        }
     }
 
-    &__action {
-        > button {
-            @include button;
-            @include chevron;
-            margin: .2em;
+    &--next-steps {
+        flex-direction: column;
+
+        padding: 0;
+        .call-to-action__icon {
+            border: 1.5em solid $yellow;
+            background: $yellow;
+        }
+
+        .call-to-action {
+            &__contents {
+                padding: 1em;
+            }
+
+            &__header {
+                display: flex; align-items: center;
+            }
+
+            &__title {
+                margin: .4em 0 .4em 1em;
+            }
+
+            &__options {
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__column {
+                display: flex;
+                flex-direction: column;
+                margin: 1em .5em;
+            }
+
+            &__text {
+                flex-grow: 1;
+                font-size: smaller;
+                margin: 1em 0;
+            }
+
+            &__button {
+                @include button;
+                display: flex;
+                align-items: center;
+                min-width: 5em;
+                max-width: max-content;
+
+                @media only screen and (max-width: 800px) {
+                    white-space: normal;
+                    min-width: 90%;
+                    max-width: none;
+                }
+
+                &__text {
+                    flex-grow: 1;
+                }
+
+                &__chevron {
+                    @include chevron-icon($color: white, $dimensions: .4em);
+                    width: .5em;
+                    height: .5em;
+                    content: " ";
+                    position: relative;
+                }
+            }
         }
     }
 }
