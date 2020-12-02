@@ -73,7 +73,6 @@
     
         li {
             float: right;
-            padding: 8px 16px;
         }
     
         li a {
@@ -81,6 +80,7 @@
             font-size: 16px;
             display: block;
             text-align: center;
+            padding: 8px 16px;
             text-decoration: none;
             text-align: right;
             font-weight: bold;
@@ -89,29 +89,8 @@
             line-height: 1;
         }
 
-        $border-width: 2.5px;
-        $padding-space: 2.5px;
-      
-        %hover-shared {
-          padding-bottom: 2.5px;
-          margin-bottom: -$border-width - $padding-space;
-        }
-      
-        a:hover:not(:focus):not(.active) {
-          @extend %hover-shared;
-          border-bottom: solid $border-width $black;
-        }
-      
-        .active a:hover:not(:focus) {
-          @extend %hover-shared;
-          border-bottom: solid $border-width $white;
-        }
-      
-        .active {
-          background-color: $blue-dark;
-          a {
-            color: $white;
-          }
+        li a:hover {
+            text-decoration: underline;
         }
     }
 

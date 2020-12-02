@@ -8,5 +8,38 @@
             <a href="#" data-action="click->banner#hide">Hide this message</a>
         </p>
     </section>
-    <%= render(Navbar::NavbarComponent.new(@sitemap)) %>
+
+    <div class="navbar">
+        <div class="logo"> 
+            <%= render "components/logo" %>
+        </div>
+        <div class="navbar__desktop">
+            <ul>
+                <li><a href="/">Home</a></li>
+                <% navigation_resources.each do |resource| %>
+                    <li><a href="<%= resource[:path] %>"><%= resource[:front_matter][:title] %></a></li>
+                <% end %>
+                <li><%= link_to "Find an event near you", events_path %></li>
+            </ul>
+        </div>
+        
+        <div class="navbar__mobile" data-controller="navigation">
+            <div class="navbar__mobile__buttons">
+                <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
+                    <div data-target="navigation.hamburger" id='hamburger' class="icon-close"></div>
+                    <div data-target="navigation.label" id="navbar-label" class="icon-hamburger-label">Close</div>
+                </a>
+            </div>
+            <div data-target="navigation.links" id="navbar-mobile-links" class="navbar__mobile__links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <% navigation_resources.each do |resource| %>
+                        <li><a href="<%= resource[:path] %>"><%= resource[:front_matter][:title] %></a></li>
+                    <% end %>
+                    <li><%= link_to "Find an event near you", events_path %></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
 </nav>
