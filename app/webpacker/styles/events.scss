@@ -103,6 +103,10 @@
         margin-top: 30px;
     }
 
+    &--with-logo {
+      margin-top: 90px;
+    }
+
     &__heading {
       > h3 {
         font-size: 28px;
@@ -287,6 +291,10 @@
     .events-featured {
         &__text {
           max-width: 100%;
+        }
+
+        &--with-logo {
+          margin-top: 60px;
         }
 
         &__heading {
