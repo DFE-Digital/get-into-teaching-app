@@ -16,6 +16,8 @@
                     <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
                   <% end %>
 
+                  <%= yield %>
+
                   <% @parent_front_matter = @front_matter %>
 
                   <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>

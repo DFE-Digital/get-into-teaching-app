@@ -45,6 +45,12 @@
             margin: 0;
             padding: .8em;
 
+            blockquote {
+              background: $grey;
+              padding: 1em;
+              margin: 1em 0;
+            }
+
         }
 
         &.inactive {
