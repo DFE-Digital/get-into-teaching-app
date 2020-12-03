@@ -23,7 +23,7 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <% resources.each do |resource| %>
-                    <li><a href="<%= resource[:path] %>"><%= resource[:front_matter]["title"] %></a></li>
+                    <li><%= link_to resource[:front_matter][:title], resource[:path] %></li>
                 <% end %>
                 <li><%= link_to "Find an event near you", events_path %></li>
             </ul>
