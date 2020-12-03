@@ -31,9 +31,9 @@ module Content
       # Calls to action (poppers) are 'registered' here and can
       # be specified via FrontMatter
       CALLS_TO_ACTION = {
-        "chat_online" => Content::Accordion::ChatOnlineComponent,
-        "story" => Content::Accordion::StoryComponent,
-        "next_steps" => Content::Accordion::NextStepsComponent,
+        "chat_online" => CallsToAction::ChatOnlineComponent,
+        "story" => CallsToAction::StoryComponent,
+        "next_steps" => CallsToAction::NextStepsComponent,
       }.freeze
 
       def build(call_to_action)
