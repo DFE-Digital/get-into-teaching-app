@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Content::Accordion::StoryComponent, type: :component do
+RSpec.describe CallsToAction::StoryComponent, type: :component do
   let(:name) { "Joey" }
   let(:link) { "/some-dir/some-page" }
   let(:image_path) { "media/images/hero-home-dt.jpg" }
@@ -9,7 +9,7 @@ RSpec.describe Content::Accordion::StoryComponent, type: :component do
 
   let(:args) { { name: name, heading: heading, image: image_path, link: link, text: text } }
 
-  let(:component) { Content::Accordion::StoryComponent.new(args) }
+  let(:component) { CallsToAction::StoryComponent.new(args) }
   before { render_inline(component) }
 
   specify "renders the call to action" do

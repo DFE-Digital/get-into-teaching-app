@@ -1,7 +1,7 @@
 require "rails_helper"
 
-RSpec.describe Content::Accordion::ChatOnlineComponent, type: :component do
-  let(:component) { Content::Accordion::ChatOnlineComponent.new }
+RSpec.describe CallsToAction::ChatOnlineComponent, type: :component do
+  let(:component) { CallsToAction::ChatOnlineComponent.new }
   before { render_inline(component) }
 
   specify "renders a call to action" do
