@@ -35,6 +35,7 @@ module Content
         "chat_online" => CallsToAction::ChatOnlineComponent,
         "story" => CallsToAction::StoryComponent,
         "next_steps" => CallsToAction::NextStepsComponent,
+        "multiple_buttons" => CallsToAction::MultipleButtonsComponent,
       }.freeze
 
       def build(call_to_action)
