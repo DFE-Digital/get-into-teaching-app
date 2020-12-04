@@ -22,7 +22,9 @@ RSpec.describe CallsToAction::StoryComponent, type: :component do
   end
 
   specify "the link is present" do
-    expect(page).to have_link(%(Read #{name}'s story), href: link, class: "call-to-action__contents__button")
+    page.find(".call-to-action__action") do |cta|
+      expect(cta).to have_link(%(Read #{name}'s story), href: link)
+    end
   end
 
   specify "the heading and text are present" do
