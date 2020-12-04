@@ -9,9 +9,5 @@ module CallsToAction
       @link    = link
       @text    = text
     end
-
-    def button
-      link_to(tag.span("Read #{name}'s story"), link, class: "call-to-action__contents__button")
-    end
   end
 end

@@ -31,6 +31,7 @@ module Content
       # Calls to action (poppers) are 'registered' here and can
       # be specified via FrontMatter
       CALLS_TO_ACTION = {
+        "simple" => CallsToAction::SimpleComponent,
         "chat_online" => CallsToAction::ChatOnlineComponent,
         "story" => CallsToAction::StoryComponent,
         "next_steps" => CallsToAction::NextStepsComponent,

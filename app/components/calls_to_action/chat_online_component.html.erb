@@ -1,15 +1,21 @@
 <%= tag.div(class: %w[call-to-action call-to-action--chat-online], data: { controller: "talk-to-us" }) do %>
   <%= icon %>
 
-  <div class="call-to-action__text">
-    If you're unsure whether your qualification is equivalent to a degree, you can talk to us
-  </div>
+  <div class="call-to-action__content">
+    <h4 class="call-to-action__heading">
+      Talk to us
+    </h4>
 
-  <div class="call-to-action__action">
-    <button data-action="click->talk-to-us#startChat">
-      <span>
-        Chat online
-      </span>
-    </button>
+    <p class="call-to-action__text">
+      If you're unsure whether your qualification is equivalent to a degree, you can talk to us
+    </p>
+
+    <div class="call-to-action__action">
+      <button data-action="click->talk-to-us#startChat">
+        <span>
+          Chat online
+        </span>
+      </button>
+    </div>
   </div>
 <% end %>

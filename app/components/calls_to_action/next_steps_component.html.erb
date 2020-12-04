@@ -1,19 +1,17 @@
 <%= tag.div(class: %w[call-to-action call-to-action--next-steps]) do %>
-  <div class="call-to-action__header">
-    <%= icon %>
-    <h3 class="call-to-action__title">
+  <%= icon %>
+
+  <div class="call-to-action__content">
+    <h4 class="call-to-action__heading">
       Next steps
-    </h3>
-  </div>
+    </h4>
 
-  <div class="call-to-action__contents">
-
-    <p>
-      If you have a degree you can search for postgraduate teacher
-      training courses using the GOV.UK service.
+    <p class="call-to-action__text">
+        If you have a degree you can search for postgraduate teacher
+        training courses using the GOV.UK service.
     </p>
 
-    <p>
+    <p class="call-to-action__text">
       You can find out details such as:
     </p>
 
@@ -25,30 +23,26 @@
       <li>how to apply</li>
     </ul>
 
-    <div class="call-to-action__options">
-      <div class="call-to-action__column">
-        <p class="call-to-action__text">
-          Use the GOV.UK service to find postgraduate teacher
-          training providers near you.
-        </p>
+    <div class="call-to-action__action">
+      <p class="call-to-action__text">
+        Use the GOV.UK service to find postgraduate teacher
+        training providers near you.
+      </p>
 
-        <%= link_to("#", class: "call-to-action__button") do %>
-          <div class="call-to-action__button__text">Find Postgraduate training</div>
-          <div class="call-to-action__button__chevron"></div>
-        <% end %>
-      </div>
+      <%= link_to("#", class: "call-to-action__button") do %>
+        <span>Find Postgraduate training</span>
+      <% end %>
+    </div>
 
-      <div class="call-to-action__column">
-        <p class="call-to-action__text">
-          Our trained advisers can help you select the best training provider
-          and funding options for you.
-        </p>
+    <div class="call-to-action__action">
+      <p class="call-to-action__text">
+        Our trained advisers can help you select the best training provider
+        and funding options for you.
+      </p>
 
-        <%= link_to("#", class: "call-to-action__button") do %>
-          <div class="call-to-action__button__text">Sign up for a Teacher Training Adviser</div>
-          <div class="call-to-action__button__chevron"></div>
-        <% end %>
-      </div>
+      <%= link_to("#", class: "call-to-action__button") do %>
+        <span>Sign up for a Teacher Training Adviser</span>
+      <% end %>
     </div>
   </div>
 <% end %>
