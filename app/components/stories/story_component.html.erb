@@ -31,7 +31,7 @@
 
 <% if show_more_stories? %>
   <h2 class="strapline">More stories</h2>
-  <div class="cards more-stories">
+  <div class="cards stories">
     <%= render Stories::CardComponent.with_collection(more_stories) %>
   </div>
 <% end %>
@@ -40,8 +40,8 @@
 <section class="cards-with-headers">
   <h2>Explore Get Into Teaching</h2>
 
-  <div class="cards more-stories">
-    <%= render Cards::RendererComponent.with_collection(explore, page_data: page_data) %>
+  <div class="cards stories">
+    <%= render Cards::StoryComponent.with_collection(explore, page_data: page_data) %>
   </div>
 <section>
 <% end %>

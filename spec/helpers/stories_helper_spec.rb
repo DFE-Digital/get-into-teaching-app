@@ -39,7 +39,7 @@ describe StoriesHelper, type: "helper" do
     subject { helper.more_stories_thumbnail(path) }
 
     specify %(should generate a div with the background image set to the provided path) do
-      expect(subject).to have_css(%(div[style="background-image:url('#{path}')"]), class: "more-stories__thumbs__thumb__img")
+      expect(subject).to have_css(%(div[style="background-image:url('#{path}')"]), class: "stories__thumbs__thumb__img")
     end
   end
 end
