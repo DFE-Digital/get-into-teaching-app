@@ -164,75 +164,6 @@
     }
 }
 
-.more-stories {
-
-    &__thumbs {
-
-        padding-left: 20px;
-        padding-right: 20px;
-        box-sizing: border-box;
-            display: -ms-flexbox;
-            display: flexbox;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-
-        &__thumb {
-            width: calc(33% - 25px);
-            border: 2px solid $black;
-            box-sizing: border-box;
-            margin-bottom: 40px;
-            margin-right: 40px;
-            position: relative;
-            text-align: left;
-            &:nth-child(3n + 3) {
-                margin-right: 0;
-            }
-            &__img
-            {
-                width: 100%;
-                height: 230px;
-                background-position: center;
-                background-repeat: no-repeat;
-                background-size: cover;
-                position: relative;
-                overflow: hidden;
-            }
-
-            &__content {
-                box-sizing: border-box;
-                padding: 20px;
-                p {
-                    margin: 0 0 20px;
-                }
-            }
-
-            &__play {
-                @include rotated-block;
-                background-color: $pink-dark-90;
-                height: 72px;
-                width: 72px;
-                position: absolute;
-                top: 50px;
-                left: -2px;
-            
-                div {
-                    transform: rotate(3deg);
-                    margin-top: 22px;
-                    margin-left: 24px; 
-                }
-                a:hover & {
-                    background-color: $pink;
-                }
-                a:focus & {
-                    background-color: $yellow;
-                }
-            }
-            
-        }
-    }
-}
-
 .content-wrapper {
     .content__left {
         .stories-call-to-action {
@@ -307,7 +238,7 @@
                 h2 {
                     padding-left: 0px;
                     padding-top: 20px;
-                }         
+                }
             }
         }
     }
