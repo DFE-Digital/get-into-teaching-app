@@ -1154,13 +1154,14 @@
   dependencies:
     "@stimulus/multimap" "^1.1.1"
 
-"@stimulus/polyfills@^1.1.1":
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/@stimulus/polyfills/-/polyfills-1.1.1.tgz#02bacbb8de1ff592200f20a440d382608160b1f5"
-  integrity sha512-QDdxHvkFozgxEHzhVZQkiKPmgSNdjhnwkrsuRu88v0UohgzxUrSV8MNJEJCs9AqNdpCIY3XmaXItjJe0MnVFIg==
+"@stimulus/polyfills@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@stimulus/polyfills/-/polyfills-2.0.0.tgz#64b3e247c762330f80d88e993d1d26b24e3c13b1"
+  integrity sha512-XrN0AGSpBg9e7LHcOGjuyKx3a1SIcaNDqQkjMU0dy63NKsqYccjRGCvtBBE2U3NwcCQX3H22kMpeXCERUwl0ag==
   dependencies:
-    core-js "^2.5.3"
+    core-js "^3.4.0"
     element-closest "^2.0.2"
+    eventlistener-polyfill "^1.0.5"
     mutation-observer-inner-html-shim "^1.0.0"
 
 "@stimulus/test@^1.1.1":
@@ -2614,15 +2615,10 @@ core-js-compat@^3.6.2:
     browserslist "^4.8.5"
     semver "7.0.0"
 
-core-js@^2.5.3:
-  version "2.6.11"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.11.tgz#38831469f9922bded8ee21c9dc46985e0399308c"
-  integrity sha512-5wjnpaT/3dV+XB4borEsnAYQchn00XSgTAWKDkEqv+K8KevjbzmofK6hfJ9TZIlpj2N0xQpazy7PiRQiWHqzWg==
-
-core-js@^3.6.5:
-  version "3.6.5"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.6.5.tgz#7395dc273af37fb2e50e9bd3d9fe841285231d1a"
-  integrity sha512-vZVEEwZoIsI+vPEuoF9Iqf5H7/M3eeQqWlQnYa8FSKKePuYTf5MWnxb5SDAzCa60b3JBRS5g9b+Dq7b1y/RCrA==
+core-js@^3.4.0, core-js@^3.6.5:
+  version "3.8.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.8.1.tgz#f51523668ac8a294d1285c3b9db44025fda66d47"
+  integrity sha512-9Id2xHY1W7m8hCl8NkhQn5CufmF/WuR30BTRewvCXc1aZd3kMECwNZ69ndLbekKfakw9Rf2Xyc+QR6E7Gg+obg==
 
 core-util-is@1.0.2, core-util-is@~1.0.0:
   version "1.0.2"
@@ -3407,6 +3403,11 @@ eventemitter3@^4.0.0:
   version "4.0.7"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-4.0.7.tgz#2de9b68f6528d5644ef5c59526a1b4a07306169f"
   integrity sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==
+
+eventlistener-polyfill@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/eventlistener-polyfill/-/eventlistener-polyfill-1.0.5.tgz#d3c96e57d52ca4dc30b3b8f3cf9698dc8e277d8a"
+  integrity sha512-xqqTj0eyJWqAMg1U+Sr20Upi86bOlbLfk/cbVnHuTEKh2S59PszLNwsc4miaUwLR7YRnCnxwSkdCZpxdo3MPwA==
 
 events@^3.0.0:
   version "3.2.0"

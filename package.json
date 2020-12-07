@@ -3,7 +3,7 @@
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@rails/webpacker": "^5.1.1",
-    "@stimulus/polyfills": "^1.1.1",
+    "@stimulus/polyfills": "^2.0.0",
     "govuk-frontend": "^3.10.1",
     "is-touch-device": "^1.0.1",
     "js-cookie": "^2.2.1",
