@@ -3,9 +3,12 @@
     <%= image_tag(image) %>
   </div>
 
-  <div class="call-to-action__contents">
+  <div class="call-to-action__content">
     <%= tag.h3(heading, class: "call-to-action__contents__heading") %>
     <%= tag.p(text, class: "call-to-action__contents__story") %>
-    <%= button %>
+
+    <div class="call-to-action__action">
+      <%= link_to(tag.span("Read #{name}'s story"), link) %>
+    </div>
   </div>
 <% end %>

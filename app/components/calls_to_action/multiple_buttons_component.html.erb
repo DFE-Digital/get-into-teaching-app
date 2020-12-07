@@ -1,0 +1,17 @@
+<%= tag.div(class: %w[call-to-action call-to-action--multiple-buttons]) do %>
+  <%= icon %>
+
+  <div class="call-to-action__content">
+    <h4 class="call-to-action__heading">
+      <%= title %>
+    </h4>
+
+    <div class="call-to-action__button-row">
+      <% links.each do |link| %>
+        <div class="call-to-action__button-row__action">
+          <%= link %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+<% end %>

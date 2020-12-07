@@ -13,7 +13,7 @@ RSpec.describe CallsToAction::ChatOnlineComponent, type: :component do
   end
 
   specify "some useful text is included" do
-    expect(page).to have_css(".call-to-action__text", text: /talk to us/)
+    expect(page).to have_css(".call-to-action__text", text: /chat to us/)
   end
 
   specify %(the "Chat online" button will start a chat) do
