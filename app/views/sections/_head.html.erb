@@ -8,6 +8,6 @@
   <%= tag :meta, name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' %>
   <%= tag :link, rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' %>
   <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
   <%= yield :head %>
 </head>
