@@ -5,9 +5,9 @@
       <%= render "sections/header" %>
       <%= render Sections::HeroComponent.new(@front_matter) %>
       <main class="content container-1000" role="main" id="main-content">
-        <%= back_link "/life-as-a-teacher/my-story-into-teaching", text: "All stories" %>
+        <%= back_link "/my-story-into-teaching", text: "All stories" %>
         <%= yield %>
-        <div class="cards">
+        <div class="cards stories">
           <%= render Stories::CardComponent.with_collection(@front_matter.dig("stories")) %>
         </div>
       </main>
