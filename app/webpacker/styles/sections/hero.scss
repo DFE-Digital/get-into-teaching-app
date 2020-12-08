@@ -50,11 +50,6 @@
                     padding: 20px 40px 25px 40px;
                     margin: 0 0 30px 0;
 
-                    text-decoration: underline;
-                    text-decoration-thickness: 5px;
-                    text-underline-offset: .25em;
-
-                    font-weight: 900;
                     font-size: 3.38rem;
                     line-height: 1.4;
 
@@ -62,13 +57,8 @@
                     min-width: 490px;
                     box-sizing: border-box;
 
-                    &::after {
-                        content: "."
-                    }
-
                     @media only screen and (max-width: $mobile-cutoff) {
                         font-size: 28px;
-                        text-decoration-thickness: 4px;
                         margin: 0 0 10px 0;
                         width: calc(100% - 50px);
                         max-width: 400px;
@@ -76,6 +66,16 @@
                     }
                     @media only screen and (min-width: 1500px) {
                         font-size: 3.6vw;
+                    }
+
+                    span {
+                        border-bottom: 5px solid $black;
+                        padding-bottom: 5px;
+
+                        @media only screen and (max-width: $mobile-cutoff) {
+                        border-bottom: 4px solid $black;
+                        padding-bottom: 4px;
+                        }
                     }
                 }
             }
