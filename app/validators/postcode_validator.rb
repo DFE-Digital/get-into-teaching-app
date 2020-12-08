@@ -1,5 +1,16 @@
 class PostcodeValidator < ActiveModel::EachValidator
-  PATTERN = %r{\A([A-Z][A-HJ-Y]?\d[A-Z\d]? ?\d[A-Z]{2}|GIR ?0A{2})\Z}.freeze
+  OUTWARD_POSTCODE_PATTERN = /[A-Z][A-HJ-Y]?\d[A-Z\d]?/.freeze
+  FULL_POSTCODE_PATTERN = /#{OUTWARD_POSTCODE_PATTERN} ?\d[A-Z]{2}|GIR ?0A{2}/.freeze
+
+  OUTWARD_OR_FULL_POSTCODE_REGEX = %r{\A(#{OUTWARD_POSTCODE_PATTERN})\z|\A(#{FULL_POSTCODE_PATTERN})\z}.freeze
+  FULL_POSTCODE_REGEX = %r{\A(#{FULL_POSTCODE_PATTERN})\z}.freeze
+
+  attr_reader :accept_partial_postcode
+
+  def initialize(options)
+    super
+    @accept_partial_postcode = options[:accept_partial_postcode]
+  end
 
   def validate_each(record, attribute, value)
     if value.present? && invalid_postcode?(value)
@@ -9,7 +20,11 @@ class PostcodeValidator < ActiveModel::EachValidator
 
 private
 
+  def validation_regex
+    accept_partial_postcode ? OUTWARD_OR_FULL_POSTCODE_REGEX : FULL_POSTCODE_REGEX
+  end
+
   def invalid_postcode?(postcode)
-    !PATTERN.match?(postcode)
+    !validation_regex.match?(postcode)
   end
 end

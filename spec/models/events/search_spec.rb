@@ -63,7 +63,7 @@ describe Events::Search do
       end
 
       context "with assigned distance" do
-        let(:msg) { "Enter a valid postcode" }
+        let(:msg) { "Enter valid full postcode or first part" }
 
         subject do
           described_class.new distance: described_class::DISTANCES.first
