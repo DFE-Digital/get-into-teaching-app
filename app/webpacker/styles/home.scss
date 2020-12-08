@@ -4,15 +4,15 @@
     box-sizing: border-box;
     display: table;
     width: 100%;
-    
+
     &__left {
-        
+
         display: table-cell;
         vertical-align: top;
         width: 370px;
         min-width: 370px;
         height: 240px;
-        
+
         &__video {
             margin-left: 20px;
             width: 370px;
@@ -37,11 +37,11 @@
                 a:focus & {
                     background-color: $yellow;
                 }
-            
+
                 div {
                     transform: rotate(3deg);
                     margin-top: 22px;
-                    margin-left: 5px; 
+                    margin-left: 5px;
                 }
             }
         }
@@ -124,7 +124,7 @@
 
     white-space: nowrap;
     overflow: hidden;
-    
+
     &__pic {
         display: inline-block;
         box-sizing: border-box;
@@ -395,15 +395,15 @@
     box-sizing: border-box;
     display: table;
     width: 100%;
-    
+
     &__left {
-        
+
         display: table-cell;
         vertical-align: top;
         width: 370px;
         min-width: 370px;
         height: 240px;
-        
+
         &__map {
             margin-left: 20px;
             width: 370px;
@@ -416,7 +416,7 @@
             &__pin {
                 position: relative;
                 top: 60px;
-            
+
                 div {
                     margin-top: 10px;
                 }
@@ -449,7 +449,7 @@
 
 @media only screen and (max-width: 800px) {
 
-    .steps { 
+    .steps {
 
         &__table {
             margin-top: 0px;
@@ -464,16 +464,16 @@
                 margin-bottom: 10px;
             }
         }
-    
+
     }
 
     .my-story {
-        
+
         padding-top: 70px;
         padding-bottom: 20px;
         padding-left:0px;
         padding-right: 0px;
-        
+
         &__left {
             display: block;
 
@@ -504,12 +504,12 @@
     }
 
     .find-an-event {
-        
+
         padding-top: 70px;
         padding-bottom: 20px;
         padding-left: 0px;
         padding-right: 0px;
-        
+
         &__left {
             display: block;
 
@@ -561,7 +561,7 @@
                 display: block;
             }
         }
-        
+
     }
 
     .find-an-event {
@@ -596,7 +596,7 @@
         p {
             margin-top: 0;
         }
-        
+
         &__img {
             height: 300px;
         }
