@@ -7,6 +7,11 @@
         flex-direction: column;
     }
 
+    &--chat-online {
+        // Made visible by Stimulus controller if JS is enabled.
+        display: none;
+    }
+
     &__icon {
         background-color: $yellow;
         padding: 1em;

@@ -2,14 +2,12 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
 
-    static targets = ["chat", "tta"];
-
     connect() {
-        this.showChatControls();
+        this.show();
     }
 
-    showChatControls() {
-        this.chatTarget.style.display = 'inline-block';
+    show() {
+        this.element.style.display = this.display;
     }
 
     startChat(e) {
@@ -20,4 +18,7 @@ export default class extends Controller {
         windowFeatures);
     }
 
+    get display() {
+        return this.data.get('display') || 'block';
+    }
 }
