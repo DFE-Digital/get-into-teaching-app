@@ -5,7 +5,7 @@ describe('TalkToUsController', () => {
 
     document.body.innerHTML = 
     `
-    <section data-controller="talk-to-us" data-talk-to-us-display-class="talk-to-us--display-block" id="element">
+    <section data-controller="talk-to-us" id="element">
         <div data-target="talk-to-us.chat" id="chat">
             <a href="#" data-action="click->talk-to-us#startChat" id="startChat">Chat Online</a>
         </div>
@@ -20,9 +20,9 @@ describe('TalkToUsController', () => {
         jest.spyOn(global, "window", "get").mockImplementation(() => ({ open }));
     });
 
-    it("makes the controller element visible, using the correct display class", () => {
+    it("makes the controller element visible", () => {
         var element = document.getElementById('element');
-        expect(element.classList).toContain('talk-to-us--display-block');
+        expect(element.classList).toContain('visible');
     });
 
     describe("startChat", () => {

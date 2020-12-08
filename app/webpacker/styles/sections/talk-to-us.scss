@@ -35,6 +35,14 @@
 
                 a{
                     text-decoration: none;
+                }  
+            }
+
+            &__column:first-child {
+                display: none;
+            
+                &.visible {
+                    display: inline-block;
                 }
             }
 
@@ -48,18 +56,6 @@
             padding-top: 10px;
             padding-right: 10px;
         }
-    }
-
-    &--hidden {
-        display: none;
-    }
-
-    &--display-block {
-        display: block;
-    }
-
-    &--display-flex {
-        display: flex;
     }
 }
 

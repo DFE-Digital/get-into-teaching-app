@@ -7,7 +7,7 @@ export default class extends Controller {
     }
 
     show() {
-        this.element.classList.add(this.displayClass);
+        this.element.classList.add("visible");
     }
 
     startChat(e) {
@@ -16,9 +16,5 @@ export default class extends Controller {
         window.open("https://gov.klick2contact.com/v03/launcherV3.php?p=DfE&d=971&ch=CH&psk=chat_a1&iid=STC&srbp=0&fcl=0&r=Static&s=https://gov.klick2contact.com/v03&u=&wo=&uh=&pid=82&iif=0",
         "Get into teaching: Chat online",
         windowFeatures);
-    }
-
-    get displayClass() {
-        return this.data.get('display-class');
     }
 }

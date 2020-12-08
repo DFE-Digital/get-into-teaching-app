@@ -18,6 +18,14 @@
         }
     }
 
+    &--chat-online {
+        display: none;
+    }
+
+    &.visible {
+        display: flex;
+    }
+
     &__content {
         padding: .5em 1em 1em;
 
