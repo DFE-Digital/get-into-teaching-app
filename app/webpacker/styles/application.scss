@@ -1,14 +1,15 @@
 @charset 'UTF-8';
 
-$govuk-font-family: Sans-serif;
-
 @import './git.scss';
+
+$govuk-font-family: $git-font-family;
+
 @import "~govuk-frontend/govuk/all";
 @import './govuk-reset.scss';
 
 @import './components/map';
 
-$fa-font-path: '~@fortawesome/fontawesome-free/webfonts'; 
+$fa-font-path: '~@fortawesome/fontawesome-free/webfonts';
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
