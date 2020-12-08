@@ -185,24 +185,6 @@
         background-color: $blue;
     }
 
-    &__wrapper {
-        display: flex;
-
-        @media (max-width: $steps-row-limit) {
-            flex-direction: column;
-        }
-
-        /*  This is a bit of a hack to target IE, which has a horrendous bug
-            that prevents it from wrapping text inside hyperlinks. So we
-            needn't wrap, always display the steps in a column format on IE */
-        @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-            flex-direction: column;
-            > * {
-                padding: .5em 0;
-            }
-        }
-    }
-
     &__step {
         display: flex;
         align-items: center;
@@ -224,15 +206,12 @@
         text-decoration: none;
         font-size: smaller;
         padding: 0.5em;
+        margin-left: 0.5em;
+        font-size: inherit;
 
         &:hover {
             color: $black;
             text-decoration: underline;
-        }
-
-        @media (max-width: $steps-row-limit) {
-            margin-left: 0.5em;
-            font-size: inherit;
         }
     }
 
