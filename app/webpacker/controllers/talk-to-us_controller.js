@@ -7,7 +7,7 @@ export default class extends Controller {
     }
 
     show() {
-        this.element.style.display = this.display;
+        this.element.classList.add(this.displayClass);
     }
 
     startChat(e) {
@@ -18,7 +18,7 @@ export default class extends Controller {
         windowFeatures);
     }
 
-    get display() {
-        return this.data.get('display') || 'block';
+    get displayClass() {
+        return this.data.get('display-class');
     }
 }

@@ -6,7 +6,6 @@
     .container-1000 {
         text-align: left;
     }
-    
 
     &__inner {
         position: relative;
@@ -39,10 +38,6 @@
                 }
             }
 
-            &__column:first-child {
-                display: none;
-            }
-
             &__column:last-child {
                 flex: 1;
             }
@@ -53,6 +48,18 @@
             padding-top: 10px;
             padding-right: 10px;
         }
+    }
+
+    &--hidden {
+        display: none;
+    }
+
+    &--display-block {
+        display: block;
+    }
+
+    &--display-flex {
+        display: flex;
     }
 }
 
