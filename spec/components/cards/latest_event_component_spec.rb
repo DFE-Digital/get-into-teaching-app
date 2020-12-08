@@ -9,6 +9,9 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
   let(:instance) { described_class.new card: card, page_data: page_data }
   let(:card) { { category: "train to teach event" }.with_indifferent_access }
 
+  let(:generic_header) { described_class::ALL_EVENTS_HEADER }
+  let(:generic_snippet) { described_class::ALL_EVENTS_SNIPPET }
+
   context "with category" do
     before do
       expect(page_data).to receive(:latest_event_for_category)
@@ -33,14 +36,12 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
 
     context "with no events" do
       let(:event) { nil }
-      let(:header) { described_class::ALL_EVENTS_HEADER }
-      let(:snippet) { described_class::ALL_EVENTS_SNIPPET }
 
       it { is_expected.to have_css ".card" }
       it { is_expected.to have_css ".card.card--no-border" }
-      it { is_expected.to have_css ".card header", text: header }
+      it { is_expected.to have_css ".card header", text: generic_header }
       it { is_expected.to have_css "img" }
-      it { is_expected.to have_content snippet }
+      it { is_expected.to have_content generic_snippet }
       it { is_expected.to have_link "View events", href: url_helpers.events_path }
     end
   end
@@ -50,9 +51,9 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
 
     let(:card) { { category: "unknown" }.with_indifferent_access }
 
-    it "will raise an error" do
-      expect { subject }.to raise_exception Events::Category::UnknownEventCategory
-    end
+    before { expect(Raven).to receive(:capture_exception).and_call_original }
+
+    it { is_expected.to have_css ".card header", text: generic_header }
   end
 
   context "with no category" do
@@ -60,8 +61,8 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
 
     let(:card) { {} }
 
-    it "will raise an error" do
-      expect { subject }.to raise_exception Events::Category::UnknownEventCategory
-    end
+    before { expect(Raven).to receive(:capture_exception).and_call_original }
+
+    it { is_expected.to have_css ".card header", text: generic_header }
   end
 end
