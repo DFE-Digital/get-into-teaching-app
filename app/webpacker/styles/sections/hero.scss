@@ -2,6 +2,8 @@
 .hero {
     $mobile-cutoff: 800px;
 
+    margin-bottom: 30px;
+
     > header {
         display: flex;
         position: relative;
@@ -61,10 +63,6 @@
                     width: calc(40% + 70px);
                     min-width: 490px;
                     box-sizing: border-box;
-
-                    &::after {
-                        content: "."
-                    }
 
                     @media only screen and (max-width: $mobile-cutoff) {
                         font-size: 28px;
