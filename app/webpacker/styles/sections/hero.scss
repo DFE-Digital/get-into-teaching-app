@@ -78,6 +78,10 @@
                             border-bottom: 4px solid $black;
                             padding-bottom: 4px;
                         }
+
+                        &:after {
+                            content: ".";
+                        }
                     }
                 }
             }
