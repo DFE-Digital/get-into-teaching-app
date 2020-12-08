@@ -43,10 +43,10 @@ describe Sections::HeroComponent, type: "component" do
       end
 
       describe "responsive images" do
-        let(:component) { Sections::HeaderComponent.new(front_matter.merge(mobileimage: "media/images/events-hero-mob.jpg")) }
+        let(:component) { Sections::HeroComponent.new(front_matter.merge(mobileimage: "media/images/events-hero-mob.jpg")) }
 
         specify "the image's srcset should contain desktop and mobile" do
-          img_tag = page.find(".header__img > img")
+          img_tag = page.find(".hero__img > img")
 
           expect(img_tag[:srcset].split(",").map { |img| img.split.last }).to match_array(%w[600w 800w])
         end
