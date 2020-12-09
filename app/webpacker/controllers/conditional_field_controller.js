@@ -9,13 +9,13 @@ export default class extends Controller {
 
   match(sourceValue) {
     if (this.mode == 'hide')
-      return (this.sourceValue != this.expected) ;
+      return (sourceValue != this.expected) ;
     else
-      return (this.sourceValue == this.expected) ;
+      return (sourceValue == this.expected) ;
   }
 
   toggle() {
-    if (this.match()) {
+    if (this.match(this.sourceValue)) {
       this.showField() ;
     } else {
       this.hideField() ;

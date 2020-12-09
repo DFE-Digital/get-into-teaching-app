@@ -18,10 +18,10 @@
       <%= tag.div(class: input_field_classes(:distance)) do %>
           <%= f.label :distance, "Location", class: "search-for-events__content__input__label" %>
           <%= f.select :distance, search.class.available_distances, {},
-                data: { action: "conditional-field#toggle", target: "conditional-field.source" } %>
+                data: { action: "conditional-field#toggle", "conditional-field-target": "source" } %>
       <% end %>
 
-      <%= tag.div(class: input_field_classes(:postcode), data: { target: "conditional-field.showhide" }) do %>
+      <%= tag.div(class: input_field_classes(:postcode), data: { "conditional-field-target": "showhide" }) do %>
         <%= f.label :postcode, "Postcode", class: "search-for-events__content__input__label" %>
         <%= f.text_field :postcode %>
       <% end %>

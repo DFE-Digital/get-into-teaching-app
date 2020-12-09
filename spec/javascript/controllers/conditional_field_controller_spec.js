@@ -11,7 +11,7 @@ describe('ConditionalFieldController', () => {
 
           <div>
             <select id="select"
-                    data-target="conditional-field.source"
+                    data-conditional-field-target="source"
                     data-action="conditional-field#toggle">
               <option value="">-- Please choose --</option>
               <option value="1">First</option>
@@ -19,7 +19,7 @@ describe('ConditionalFieldController', () => {
             </select>
           </div>
 
-          <div id="container" data-target="conditional-field.showhide">
+          <div id="container" data-conditional-field-target="showhide">
             <input name="postcode" id="postcode" value="" />
           </div>
         </div>
@@ -69,7 +69,7 @@ describe('ConditionalFieldController', () => {
 
           <div id="selectcontainer">
             <select id="select"
-                    data-target="conditional-field.source"
+                    data-conditional-field-target="source"
                     data-action="conditional-field#toggle">
               <option value="">-- Please choose --</option>
               <option value="1">First</option>
@@ -77,7 +77,7 @@ describe('ConditionalFieldController', () => {
             </select>
           </div>
 
-          <div id="container" data-target="conditional-field.showhide">
+          <div id="container" data-conditional-field-target="showhide">
             <input name="postcode" id="postcode" value="" />
           </div>
         </div>
