@@ -5,8 +5,8 @@ describe('LinkController', () => {
   describe ("disabling turbolinks for links to anchors", () => {
     beforeEach(() => {
       document.body.innerHTML = `
-      <div data-controller="link" data-target="link.content">
-        <div id="level-1" class="video-overlay" data-target="video.player" data-action="click->video#close">
+      <div data-controller="link" data-link-target="content">
+        <div id="level-1" class="video-overlay" data-video-target="player" data-action="click->video#close">
           <a href="#level-3" />
           <div id="level-2">
             <a href="#level-1" />
@@ -41,7 +41,7 @@ describe('LinkController', () => {
   describe ("making external links open in new windows", () => {
     beforeEach(() => {
       document.body.innerHTML = `
-      <div data-controller="link" data-target="link.content">
+      <div data-controller="link" data-link-target="content">
         <div class="content">
           <a id="content-external-link" href="https://www.sample.com/content-link">Content external link</a>
           <a id="content-internal-link" href="/internal-link">Content internal link</a>
