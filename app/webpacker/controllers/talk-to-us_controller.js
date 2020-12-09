@@ -2,14 +2,12 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
 
-    static targets = ["chat", "tta"];
-
     connect() {
-        this.showChatControls();
+        this.show();
     }
 
-    showChatControls() {
-        this.chatTarget.style.display = 'inline-block';
+    show() {
+        this.element.classList.add("visible");
     }
 
     startChat(e) {
@@ -19,5 +17,4 @@ export default class extends Controller {
         "Get into teaching: Chat online",
         windowFeatures);
     }
-
 }

@@ -6,7 +6,6 @@
     .container-1000 {
         text-align: left;
     }
-    
 
     &__inner {
         position: relative;
@@ -36,11 +35,15 @@
 
                 a{
                     text-decoration: none;
-                }
+                }  
             }
 
             &__column:first-child {
                 display: none;
+            
+                &.visible {
+                    display: inline-block;
+                }
             }
 
             &__column:last-child {

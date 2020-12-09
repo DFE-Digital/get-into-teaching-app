@@ -5,46 +5,34 @@ describe('TalkToUsController', () => {
 
     document.body.innerHTML = 
     `
-    <section id="talk-to-us" class="talk-to-us" data-controller="talk-to-us">
-
-        <div class="talk-to-us__inner__table__column" data-target="talk-to-us.chat" id="1">
-            <p>
-                <b>Chat online</b> <br/>
-                If you have questions about getting into teaching, we can help you get the answers you need with our one-to-one live online chat service, 
-                Monday-Friday between 8.30am and 5pm.
-            </p>
-            <a href="#" class="call-to-action-button" data-action="click->talk-to-us#startChat">
-                Chat <span>online</span>
-            </a>
+    <section data-controller="talk-to-us" id="element">
+        <div data-target="talk-to-us.chat" id="chat">
+            <a href="#" data-action="click->talk-to-us#startChat" id="startChat">Chat Online</a>
         </div>
-
-        <div class="talk-to-us__inner__table__column" data-target="talk-to-us.tta" id="2">
-            <p>
-                <b>Get an adviser</b> <br/>
-                If you're ready to get into teaching, you can get support from a dedicated and experienced teaching professional 
-                who can guide you through each step of the process.
-            </p>
-            <p>
-                If you’re returning to teaching and are qualified to teach maths, physics or languages, you can also get support by using this service.
-            </p>
-            <%= tta_service_link class: "call-to-action-button" do %>
-                Get an <span>adviser</span>
-            <% end %>
-        </div>
-
     </section>
     `;
 
-    const application = Application.start() ;
-    application.register('talk-to-us', TalkToUsController) ;
+    const open = jest.fn();
+    const application = Application.start();
+    application.register('talk-to-us', TalkToUsController);
 
-    describe("when first loaded", () => {
-
-        it("should make the chat section visible", () => {
-            var chat = document.getElementById('1');
-            expect(chat.style.display).toContain('inline-block');
-        });
-
+    beforeEach(() => {
+        jest.spyOn(global, "window", "get").mockImplementation(() => ({ open }));
     });
 
+    it("makes the controller element visible", () => {
+        var element = document.getElementById('element');
+        expect(element.classList).toContain('visible');
+    });
+
+    describe("startChat", () => {
+        it("opens the chat session", () => {
+            var startChat = document.getElementById("startChat");
+            startChat.click();
+            const url = "https://gov.klick2contact.com/v03/launcherV3.php?p=DfE&d=971&ch=CH&psk=chat_a1&iid=STC&srbp=0&fcl=0&r=Static&s=https://gov.klick2contact.com/v03&u=&wo=&uh=&pid=82&iif=0";
+            const target = "Get into teaching: Chat online";
+            const features = "menubar=no,location=yes,resizable=yes,scrollbars=no,status=yes,width=340,height=480";
+            expect(open).toBeCalledWith(url, target, features);
+        });
+    });
 });
