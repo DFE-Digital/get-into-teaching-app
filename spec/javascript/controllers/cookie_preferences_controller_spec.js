@@ -12,12 +12,12 @@ describe('CookiePreferencesController', () => {
   function initPage() {
     document.body.innerHTML =
     `<form data-controller="cookie-preferences">
-      <fieldset data-target="cookie-preferences.category" data-category="first">
+      <fieldset data-cookie-preferences-target="category" data-category="first">
         <input type="radio" value="0" id="first-no" name="cookies-first" data-action="cookie-preferences#toggle" />
         <input type="radio" value="1" id="first-yes" name="cookies-first" data-action="cookie-preferences#toggle" />
       </fieldset>
 
-      <fieldset data-target="cookie-preferences.category" data-category="second">
+      <fieldset data-cookie-preferences-target="category" data-category="second">
         <input type="radio" value="0" id="second-no" name="cookies-second" data-action="cookie-preferences#toggle" />
         <input type="radio" value="1" id="second-yes" name="cookies-second" data-action="cookie-preferences#toggle" />
       </fieldset>
