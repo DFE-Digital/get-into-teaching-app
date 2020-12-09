@@ -1,6 +1,11 @@
 
 .hero {
     $mobile-cutoff: 800px;
+    margin-bottom: 1.5em;
+
+    @media only screen and (max-width: $mobile-cutoff) {
+      margin-bottom: .5em;
+    }
 
     > header {
         display: flex;
