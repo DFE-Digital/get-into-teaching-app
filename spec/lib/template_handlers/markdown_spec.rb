@@ -90,6 +90,26 @@ describe TemplateHandlers::Markdown, type: :view do
     end
   end
 
+  context "with empty front matter" do
+    let(:original_front_matter) { { "title": "Outer page" } }
+    let :markdown do
+      <<~MARKDOWN
+        # Page without frontmatter (a partial)
+      MARKDOWN
+    end
+
+    before { view.instance_variable_set("@front_matter", original_front_matter) }
+
+    before do
+      stub_template "test.md" => markdown
+      render template: "test.md"
+    end
+
+    it "won't overwrite existing frontmatter with no data" do
+      expect(view.instance_variable_get("@front_matter")).to eql(original_front_matter)
+    end
+  end
+
   context "with acronyms" do
     let :markdown do
       <<~MARKDOWN
