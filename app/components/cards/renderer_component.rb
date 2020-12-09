@@ -9,7 +9,7 @@ module Cards
     with_collection_parameter :card
 
     def initialize(card:, page_data: nil)
-      @card_type = card["card_type"] || "Story"
+      @card_type = card["card_type"].to_s
       @card = card.without("card_type")
       @page_data = page_data
     end
@@ -24,7 +24,7 @@ module Cards
 
     class InvalidComponent < RuntimeError
       def initialize(card_type)
-        super "#{card_type} is not a valid card component"
+        super "\"#{card_type}\" is not a valid card component"
       end
     end
 
@@ -32,14 +32,18 @@ module Cards
 
     def card_type_class
       case normalised_card_type
-      when "event"
+      when "event", "latestevent"
         Cards::LatestEventComponent
       when *EXCLUDE_COMPONENTS
-        raise InvalidComponent, normalised_card_type
+        raise InvalidComponent, @card_type
       when ""
-        Cards::StoryComponent
+        DEFAULT_TYPE
       else
-        "::Cards::#{normalised_card_type.camelize}Component".constantize
+        begin
+          "::Cards::#{normalised_card_type.camelize}Component".constantize
+        rescue NameError
+          raise InvalidComponent, @card_type
+        end
       end
     end
 

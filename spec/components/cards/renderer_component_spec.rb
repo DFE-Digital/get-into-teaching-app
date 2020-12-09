@@ -49,6 +49,12 @@ RSpec.describe Cards::RendererComponent, type: :component do
     it { is_expected.to have_css ".card header", text: event.name }
   end
 
+  context "with unknown card type specified" do
+    let(:card) { { card_type: "random" }.with_indifferent_access }
+
+    it { expect { subject }.to raise_exception described_class::InvalidComponent }
+  end
+
   context "with excluded type specified" do
     let(:card) { { card_type: "renderer" }.with_indifferent_access }
 
