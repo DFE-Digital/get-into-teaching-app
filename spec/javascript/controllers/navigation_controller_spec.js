@@ -3,15 +3,15 @@ import NavigationController from 'navigation_controller.js' ;
 
 describe('NavigationController', () => {
 
-    document.body.innerHTML = 
+    document.body.innerHTML =
     `<div class="navbar__mobile" data-controller="navigation">
         <div class="navbar__mobile__buttons">
             <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
-                <div data-target="navigation.hamburger" id='hamburger' class="icon-close"></div>
-                <div data-target="navigation.label" id="navbar-label" class="icon-hamburger-label">Close</div>
+                <div data-navigation-target="hamburger" id='hamburger' class="icon-close"></div>
+                <div data-navigation-target="label" id="navbar-label" class="icon-hamburger-label">Close</div>
             </a>
         </div>
-        <div data-target="navigation.links" id="navbar-mobile-links" class="navbar__mobile__links">
+        <div data-navigation-target="links" id="navbar-mobile-links" class="navbar__mobile__links">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/steps-to-become-a-teacher">Steps to become a teacher</a></li>
