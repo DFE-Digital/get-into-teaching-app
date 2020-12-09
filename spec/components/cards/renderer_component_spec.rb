@@ -6,13 +6,6 @@ RSpec.describe Cards::RendererComponent, type: :component do
   let(:page_data) { Pages::Data.new }
   let(:instance) { described_class.new card: card, page_data: page_data }
 
-  describe ".components" do
-    subject { described_class.components }
-    it { is_expected.to be_kind_of Hash }
-    it { is_expected.to include "story" => Cards::StoryComponent }
-    it { is_expected.not_to include "renderer" }
-  end
-
   context "with no card type" do
     let :edna do
       {
@@ -54,5 +47,11 @@ RSpec.describe Cards::RendererComponent, type: :component do
     it { is_expected.to have_css "img" }
 
     it { is_expected.to have_css ".card header", text: event.name }
+  end
+
+  context "with excluded type specified" do
+    let(:card) { { card_type: "renderer" }.with_indifferent_access }
+
+    it { expect { subject }.to raise_exception described_class::InvalidComponent }
   end
 end

@@ -8,28 +8,6 @@ module Cards
     attr_reader :card, :page_data
     with_collection_parameter :card
 
-    class << self
-      def components
-        @components ||= enumerate_components.without(*EXCLUDE_COMPONENTS)
-      end
-
-    private
-
-      def list_components
-        Dir[CARD_COMPONENTS_PATH]
-      end
-
-      def enumerate_components
-        list_components.map.with_object({}) do |filename, hash|
-          card_name = File.basename(filename).gsub(%r{\_component.rb\Z}, "")
-          normalised_name = card_name.gsub %r{[^a-z]}, ""
-
-          hash[normalised_name] =
-            "Cards::#{card_name.camelize}Component".constantize
-        end
-      end
-    end
-
     def initialize(card:, page_data: nil)
       @card_type = card["card_type"] || "Story"
       @card = card.without("card_type")
@@ -44,19 +22,33 @@ module Cards
       render card_type_instance
     end
 
+    class InvalidComponent < RuntimeError
+      def initialize(card_type)
+        super "#{card_type} is not a valid card component"
+      end
+    end
+
   private
 
     def card_type_class
       case normalised_card_type
       when "event"
         Cards::LatestEventComponent
+      when *EXCLUDE_COMPONENTS
+        raise InvalidComponent, normalised_card_type
+      when ""
+        Cards::StoryComponent
       else
-        self.class.components[normalised_card_type] || DEFAULT_TYPE
+        "::Cards::#{normalised_card_type.camelize}Component".constantize
       end
     end
 
     def normalised_card_type
-      @normalised_card_type ||= @card_type.downcase.gsub(%r{[^a-z]}, "")
+      @normalised_card_type ||= normalise_card_type
+    end
+
+    def normalise_card_type
+      @card_type.underscore.gsub(%r{[^a-z _ ]}, "").gsub(%r{\s+}, "_")
     end
   end
 end
