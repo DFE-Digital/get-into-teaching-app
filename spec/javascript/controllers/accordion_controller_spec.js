@@ -6,28 +6,28 @@ describe('AccordionController', () => {
     document.body.innerHTML = `
     <div data-controller="accordion">
         <section id="step-1" class="step" data-id="1">
-            <button id="button-1" class="step-header" data-action="click->accordion#toggle" data-target="accordion.header">
+            <button id="button-1" class="step-header" data-action="click->accordion#toggle" data-accordion-target="header">
               Button 1
             </button>
-            <div id="collapsable-content-1" data-target="accordion.content">
+            <div id="collapsable-content-1" data-accordion-target="content">
                 Content 1
             </div>
         </section>
 
         <section id="step-2" class="step" data-id="2">
-            <button id="button-2" class="step-header" data-action="click->accordion#toggle" data-target="accordion.header">
+            <button id="button-2" class="step-header" data-action="click->accordion#toggle" data-accordion-target="header">
               Button 2
             </button>
-            <div id="collapsable-content-2" data-target="accordion.content">
+            <div id="collapsable-content-2" data-accordion-target="content">
                 Content 2
             </div>
         </section>
 
         <section id="step-3" class="step" data-id="3">
-            <button id="button-3" class="step-header" data-action="click->accordion#toggle" data-target="accordion.header">
+            <button id="button-3" class="step-header" data-action="click->accordion#toggle" data-accordion-target="header">
               Button 3
             </button>
-            <div id="collapsable-content-3" data-target="accordion.content">
+            <div id="collapsable-content-3" data-accordion-target="content">
                 Content 3
             </div>
         </section>

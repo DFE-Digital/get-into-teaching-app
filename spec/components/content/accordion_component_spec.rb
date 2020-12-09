@@ -28,7 +28,7 @@ describe Content::AccordionComponent, type: "component" do
 
     specify "each step has a button with the appropriate data attributes" do
       expect(page).to have_css(
-        %(section.step > button.step-header[data-action="click->accordion#toggle"][data-target="accordion.header"]),
+        %(section.step > button.step-header[data-action="click->accordion#toggle"][data-accordion-target="header"]),
         count: steps.size,
       )
     end
@@ -36,7 +36,7 @@ describe Content::AccordionComponent, type: "component" do
     specify "each step has a section with the appropriate content and data attributes" do
       steps.each_value do |content|
         expect(page).to have_css(
-          %(section.step > .step-content.collapsable[data-target="accordion.content"]),
+          %(section.step > .step-content.collapsable[data-accordion-target="content"]),
           text: content,
         )
       end
