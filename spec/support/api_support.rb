@@ -68,6 +68,18 @@ shared_context "stub mailing list add member api" do
   end
 end
 
+shared_context "stub events by category api" do |results_per_type|
+  let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
+  let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
+  let(:expected_request_attributes) { { quantity_per_type: results_per_type } }
+
+  before do
+    expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      receive(:upcoming_teaching_events_indexed_by_type)
+      .with(a_hash_including(expected_request_attributes)) { events_by_type }
+  end
+end
+
 shared_examples "api support" do
   let(:token) { "test123" }
   let(:endpoint) { "http://my.api/api" }

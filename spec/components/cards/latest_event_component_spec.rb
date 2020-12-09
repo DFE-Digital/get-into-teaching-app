@@ -1,0 +1,68 @@
+require "rails_helper"
+
+RSpec.describe Cards::LatestEventComponent, type: :component do
+  subject { render_inline(instance) && page }
+
+  let(:page_data) { Pages::Data.new }
+  let(:url_helpers) { Rails.application.routes.url_helpers }
+  let(:event) { build(:event_api, name: "Test event") }
+  let(:instance) { described_class.new card: card, page_data: page_data }
+  let(:card) { { category: "train to teach event" }.with_indifferent_access }
+
+  let(:generic_header) { described_class::ALL_EVENTS_HEADER }
+  let(:generic_snippet) { described_class::ALL_EVENTS_SNIPPET }
+
+  context "with category" do
+    before do
+      expect(page_data).to receive(:latest_event_for_category)
+        .with("train to teach event")
+        .and_return event
+    end
+
+    context "with events" do
+      it { is_expected.to have_css ".card" }
+      it { is_expected.to have_css ".card.card--no-border" }
+      it { is_expected.to have_css ".card header", text: event.name }
+      it { is_expected.to have_css "img" }
+      it { is_expected.to have_content event.summary }
+
+      it "includes the footer link" do
+        is_expected.to have_link \
+          "View event",
+          href: url_helpers.event_path(event.readable_id),
+          class: "git-link"
+      end
+    end
+
+    context "with no events" do
+      let(:event) { nil }
+
+      it { is_expected.to have_css ".card" }
+      it { is_expected.to have_css ".card.card--no-border" }
+      it { is_expected.to have_css ".card header", text: generic_header }
+      it { is_expected.to have_css "img" }
+      it { is_expected.to have_content generic_snippet }
+      it { is_expected.to have_link "View events", href: url_helpers.events_path }
+    end
+  end
+
+  context "with unknown category" do
+    include_context "stub types api"
+
+    let(:card) { { category: "unknown" }.with_indifferent_access }
+
+    before { expect(Raven).to receive(:capture_exception).and_call_original }
+
+    it { is_expected.to have_css ".card header", text: generic_header }
+  end
+
+  context "with no category" do
+    include_context "stub types api"
+
+    let(:card) { {} }
+
+    before { expect(Raven).to receive(:capture_exception).and_call_original }
+
+    it { is_expected.to have_css ".card header", text: generic_header }
+  end
+end
