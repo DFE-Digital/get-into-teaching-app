@@ -11,7 +11,7 @@
         display: flex;
         position: relative;
         box-sizing: border-box;
-        
+
         height: 500px;
 
         margin-top: -1px;
@@ -102,7 +102,7 @@
 
         .hero__img {
             overflow: hidden;
-            
+
             position: absolute;
             bottom: 0;
             right: 0;
@@ -159,7 +159,7 @@
 
         @media only screen and (max-width: $mobile-cutoff) {
             padding-right: 20px;
-            
+
             > p {
             }
         }
