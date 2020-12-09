@@ -8,7 +8,6 @@ module Cards
     SNIPPET
 
     attr_reader :page_data, :category, :event
-    with_collection_parameter :card
 
     def initialize(card:, page_data: nil)
       super card: card
@@ -45,7 +44,7 @@ module Cards
 
     def image
       # FIXME: change to image_pack_path once theres a new webpacker release
-      @image ||= resolve_path_to_image("latest-event-card-image.jpg")
+      @image ||= resolve_path_to_image("latest-event-card.jpg")
     end
 
   private

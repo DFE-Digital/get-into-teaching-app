@@ -1,7 +1,6 @@
 module Cards
   class StoryComponent < Stories::CardComponent
     attr_reader :page_data
-    with_collection_parameter :card
 
     def initialize(card:, page_data: nil)
       @page_data = page_data

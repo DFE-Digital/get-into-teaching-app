@@ -1,5 +1,6 @@
 class CardComponent < ViewComponent::Base
-  MAX_HEADER_LENGTH = 40
+  MAX_HEADER_LENGTH = 70
+  with_collection_parameter :card
   attr_accessor :snippet, :link, :link_text, :image, :video, :header, :border, :title
 
   def initialize(card:)
@@ -30,9 +31,11 @@ class CardComponent < ViewComponent::Base
 private
 
   def image_link
-    link_to(link, class: "card__thumb") do
-      image_tag(image, data: { "object-fit" => "cover" })
-    end
+    link_to(thumbnail_image_tag, link, class: "card__thumb")
+  end
+
+  def thumbnail_image_tag
+    helpers.image_tag(image, data: { "object-fit" => "cover" })
   end
 
   def video_link

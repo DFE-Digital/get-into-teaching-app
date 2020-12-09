@@ -98,3 +98,7 @@
     font-size: 36px ;
   }
 }
+
+.card-chat-online footer a:not(.visible) {
+  display: none;
+}
