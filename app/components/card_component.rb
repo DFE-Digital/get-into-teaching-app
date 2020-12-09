@@ -36,7 +36,7 @@ private
   end
 
   def video_link
-    link_to(video, class: "card__thumb", data: { action: "click->video#play", target: "video.link" }) do
+    link_to(video, class: "card__thumb", data: { action: "click->video#play", "video-target": "link" }) do
       safe_join([tag.div(helpers.fas_icon("play"), class: "card__thumb--play-icon"), image_tag(image)])
     end
   end

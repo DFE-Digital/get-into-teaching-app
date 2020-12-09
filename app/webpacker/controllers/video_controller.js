@@ -3,7 +3,7 @@ import { Controller } from "stimulus"
 
 export default class extends Controller {
 
-    static targets = [ "player", "iframe", "link", "close"]
+    static targets = ["player", "iframe", "link", "close"]
 
     connect() {
       if (this.playerAllowedByCookies) {
@@ -18,7 +18,7 @@ export default class extends Controller {
       const cookiePrefs = new CookiePreferences() ;
       return cookiePrefs.allowed('non-functional')
     }
-    
+
     cookiesAcceptedChecker(event) {
       if (event.detail?.cookies?.includes('non-functional'))
         this.activateJavascriptPlayer();
@@ -38,7 +38,7 @@ export default class extends Controller {
         for(var link of this.linkTargets) {
             link.removeAttribute('target');
         }
-        
+
         this.closeTarget.addEventListener('blur', (e) => {
             e.preventDefault();
             this.focusIframeWindow();

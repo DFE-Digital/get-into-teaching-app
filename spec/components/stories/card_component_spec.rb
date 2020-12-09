@@ -57,7 +57,7 @@ describe Stories::CardComponent, type: "component" do
     end
 
     specify "the link has the required data attributes for the pop up video" do
-      is_expected.to have_css(%(a[data-action='click->video#play'][data-target='video.link']))
+      is_expected.to have_css(%(a[data-action='click->video#play'][data-video-target='link']))
     end
   end
 end
