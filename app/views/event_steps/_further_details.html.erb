@@ -1,6 +1,6 @@
 <%
-  legend_text = t("helpers.legend.events_steps_further_details.privacy_policy.text", 
-    link: link_to(t("helpers.legend.events_steps_further_details.privacy_policy.link"), 
+  legend_text = t("helpers.legend.events_steps_further_details.privacy_policy.text",
+    link: link_to(t("helpers.legend.events_steps_further_details.privacy_policy.link"),
     privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }))
 %>
 
@@ -16,7 +16,7 @@
     <div data-action="click->last-step#updateSubmit">
       <%= f.govuk_radio_buttons_fieldset :subscribe_to_mailing_list, inline: true do %>
         <%= f.govuk_radio_button :subscribe_to_mailing_list, true, label: { text: "Yes" } %>
-        <div data-target="last-step.complete">
+        <div data-last-step-target="complete">
         <%= f.govuk_radio_button :subscribe_to_mailing_list, false, label: { text: "No" } %>
         </div>
       <% end %>
