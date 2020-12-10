@@ -2,13 +2,18 @@
   <%= icon %>
 
   <div class="call-to-action__content">
-    <h4 class="call-to-action__heading">
-      <%= title %>
-    </h4>
 
-    <p class="call-to-action__text">
-      <%= text %>
-    </p>
+    <% if title.present? %>
+      <h4 class="call-to-action__heading">
+        <%= title %>
+      </h4>
+    <% end %>
+
+    <% if text.present? %>
+      <p class="call-to-action__text">
+        <%= text %>
+      </p>
+    <% end %>
 
     <div class="call-to-action__action">
       <%= link %>
