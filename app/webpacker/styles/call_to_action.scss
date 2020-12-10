@@ -34,6 +34,11 @@
       font-size: 140%;
       margin-bottom: 1em;
     }
+
+    .call-to-action__heading,
+    .call-to-action__text:first-child {
+      margin-top: .6em;
+    }
   }
 
   &__action {
