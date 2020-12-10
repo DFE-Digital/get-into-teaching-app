@@ -6,10 +6,11 @@
   box-sizing: border-box;
   width: auto;
   h2 {
-      border: 0;
       margin-bottom: 5px;
       margin-top:0;
       font-size: 28px;
+      background: transparent;
+      color: $black;
   }
 
   p:last-child {

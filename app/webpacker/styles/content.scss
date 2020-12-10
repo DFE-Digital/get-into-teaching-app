@@ -31,12 +31,7 @@
         }
 
         h2 {
-            font-size: 36px;
-            font-weight: bold;
-            border-bottom: 8px solid $blue;
-            margin: 0;
-            padding: 0;
-            margin-bottom: 20px;
+            @include content-heading;
         }
 
         h3 {

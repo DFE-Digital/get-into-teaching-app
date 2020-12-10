@@ -1,0 +1,9 @@
+@mixin content-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: $white;
+    background-color: $blue;
+    margin: 0 -20px 20px -20px;
+    padding: 10px 20px;
+    display: inline-block;
+}

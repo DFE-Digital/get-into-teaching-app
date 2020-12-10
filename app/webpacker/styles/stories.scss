@@ -4,8 +4,7 @@
         width: 66.6%;
 
         h2 {
-            font-size: 1.8em;
-            border-bottom: 8px solid #2781be;
+            @include content-heading;
         }
     }
 
@@ -100,7 +99,10 @@
             h2 {
                 font-size: 32px;
                 border-bottom: none;
-                padding-left: 20px;
+                padding: 0 20px;
+                margin: 0;
+                color: $black;
+                background: transparent;
             }
         }
     }
