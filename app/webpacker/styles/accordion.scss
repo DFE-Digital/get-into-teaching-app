@@ -16,12 +16,12 @@
 
             .step-header__text {
                 text-align: left;
-                border: 0;
                 margin: 0;
                 font-size: 140%;
                 flex-grow: 2;
                 white-space: initial;
-                padding-right: 2em;
+                padding: 0 2em 0 0;
+                background: transparent;
 
                 @media only screen and (max-width: 800px) {
                     font-size: 100%;
