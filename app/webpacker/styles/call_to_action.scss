@@ -1,6 +1,7 @@
 .call-to-action {
     background-color: $grey;
     padding: 0;
+    margin-bottom: 2em;
     display: flex;
 
     @media only screen and (max-width: 800px) {
