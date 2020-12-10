@@ -1,90 +1,91 @@
 .call-to-action {
-    background-color: $grey;
-    padding: 0;
-    margin-bottom: 2em;
+  background-color: $grey;
+  padding: 0;
+  margin-bottom: 2em;
+  display: flex;
+
+  @media only screen and (max-width: 800px) {
+    flex-direction: column;
+  }
+
+  &__icon {
+    background-color: $yellow;
+    padding: 1em;
+  }
+
+  &__photo {
+    > img {
+      width: 8em;
+    }
+  }
+
+  &--chat-online {
+    display: none;
+  }
+
+  &.visible {
+    display: flex;
+  }
+
+  &__content {
+    padding: .5em 1em 1em;
+
+    .call-to-action__heading {
+      font-size: 140%;
+      margin-bottom: 1em;
+    }
+
+    .call-to-action__heading,
+    .call-to-action__text:first-child {
+      margin-top: .6em;
+    }
+  }
+
+  &__action {
+    margin: .5em 0;
+
+    button,
+    a {
+      @include button;
+      @include chevron;
+      white-space: initial;
+
+      display: inline-block;
+    }
+
+    .call-to-action__text {
+      margin-bottom: .4em;
+    }
+  }
+
+  &__button-row {
     display: flex;
 
-    @media only screen and (max-width: 800px) {
-        flex-direction: column;
-    }
-
-    &__icon {
-        background-color: $yellow;
-        padding: 1em;
-    }
-
-    &__photo {
-        > img {
-            width: 8em;
-        }
-    }
-
-    &--chat-online {
-        display: none;
-    }
-
-    &.visible {
-        display: flex;
-    }
-
-    &__content {
-        padding: .5em 1em 1em;
-
-        .call-to-action__heading {
-            font-size: 140%;
-            margin-bottom: 1em;
-        }
-    }
-
-
-    &__content {
-    }
-
     &__action {
-        margin: .5em 0;
-        button,
-        a {
-            @include button;
-            @include chevron;
-            white-space: initial;
-
-            display: inline-block;
-        }
-
-        .call-to-action__text {
-            margin-bottom: .4em;
-        }
+      a {
+        @include button;
+        @include chevron;
+        white-space: initial;
+      }
     }
 
-    &__button-row {
-        display: flex;
-
-        &__action {
-            a {
-                @include button;
-                @include chevron;
-                white-space: initial;
-            }
-        }
-
-        .call-to-action__button-row__action + .call-to-action__button-row__action {
-            margin-top: 0;
-            margin-left: 1em;
-        }
-
-        @media only screen and (max-width: 800px) {
-            flex-direction: column;
-
-            .call-to-action__button-row__action + .call-to-action__button-row__action {
-                margin-top: 1em;
-                margin-left: 0;
-            }
-        }
+    .call-to-action__button-row__action + .call-to-action__button-row__action {
+      margin-top: 0;
+      margin-left: 1em;
     }
 
+    @media only screen and (max-width: 800px) {
+      flex-direction: column;
 
-    // add some extra space between multiple actions
-    .call-to-action__action + .call-to-action__action {
-        margin-top: 2em;
+      .call-to-action__button-row__action + .call-to-action__button-row__action {
+        margin-top: 1em;
+        margin-left: 0;
+      }
     }
+  }
+
+  // add some extra space between multiple actions
+  .call-to-action__action + .call-to-action__action {
+    margin-top: 2em;
+  }
 }

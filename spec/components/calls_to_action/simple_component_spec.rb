@@ -33,6 +33,22 @@ RSpec.describe CallsToAction::SimpleComponent, type: :component do
     specify "the link is present" do
       expect(page).to have_link(link_text, href: link_target)
     end
+
+    context "when no title is present" do
+      let(:kwargs) { { icon: icon, text: text, link_text: link_text, link_target: link_target } }
+
+      specify "no paragraph tag should be rendered" do
+        expect(page).not_to have_css("h4", class: "call-to-action__heading")
+      end
+    end
+
+    context "when no text is present" do
+      let(:kwargs) { { icon: icon, title: title, link_text: link_text, link_target: link_target } }
+
+      specify "no paragraph tag should be rendered" do
+        expect(page).not_to have_css("p", class: "call-to-action__text")
+      end
+    end
   end
 
   describe "failing to render due to missing args" do
