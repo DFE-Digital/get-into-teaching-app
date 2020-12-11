@@ -4,15 +4,15 @@
     box-sizing: border-box;
     display: table;
     width: 100%;
-    
+
     &__left {
-        
+
         display: table-cell;
         vertical-align: top;
         width: 370px;
         min-width: 370px;
         height: 240px;
-        
+
         &__video {
             margin-left: 20px;
             width: 370px;
@@ -37,11 +37,11 @@
                 a:focus & {
                     background-color: $yellow;
                 }
-            
+
                 div {
                     transform: rotate(3deg);
                     margin-top: 22px;
-                    margin-left: 5px; 
+                    margin-left: 5px;
                 }
             }
         }
@@ -124,7 +124,7 @@
 
     white-space: nowrap;
     overflow: hidden;
-    
+
     &__pic {
         display: inline-block;
         box-sizing: border-box;
@@ -174,7 +174,8 @@
 }
 
 .steps {
-    $steps-row-limit: 1000px;
+    $steps-row-narrow: 600px;
+    $steps-row-wide: 1200px;
 
     min-height: 250px;
     padding-top: 40px;
@@ -188,7 +189,7 @@
     &__wrapper {
         display: flex;
 
-        @media (max-width: $steps-row-limit) {
+        @media (max-width: $steps-row-narrow) {
             flex-direction: column;
         }
 
@@ -206,12 +207,27 @@
     &__step {
         display: flex;
         align-items: center;
+        min-width: 20%;
 
-        @media (max-width: $steps-row-limit) {
+        @media (max-width: $steps-row-narrow) {
             flex-direction: row;
             justify-content: flex-start;
             margin: .5em 0;
             align-items: center;
+        }
+
+        @media (min-width: $steps-row-narrow) and (max-width: $steps-row-wide) {
+          flex-direction: column;
+          align-items: baseline;
+        }
+
+        @media (min-width: $steps-row-wide) {
+          align-items: baseline;
+          padding-right: .5em;
+
+          .steps__link {
+            padding-top: 0;
+          }
         }
     }
 
@@ -230,7 +246,7 @@
             text-decoration: underline;
         }
 
-        @media (max-width: $steps-row-limit) {
+        @media (max-width: $steps-row-narrow) {
             margin-left: 0.5em;
             font-size: inherit;
         }
@@ -379,15 +395,15 @@
     box-sizing: border-box;
     display: table;
     width: 100%;
-    
+
     &__left {
-        
+
         display: table-cell;
         vertical-align: top;
         width: 370px;
         min-width: 370px;
         height: 240px;
-        
+
         &__map {
             margin-left: 20px;
             width: 370px;
@@ -400,7 +416,7 @@
             &__pin {
                 position: relative;
                 top: 60px;
-            
+
                 div {
                     margin-top: 10px;
                 }
@@ -433,7 +449,7 @@
 
 @media only screen and (max-width: 800px) {
 
-    .steps { 
+    .steps {
 
         &__table {
             margin-top: 0px;
@@ -448,16 +464,16 @@
                 margin-bottom: 10px;
             }
         }
-    
+
     }
 
     .my-story {
-        
+
         padding-top: 70px;
         padding-bottom: 20px;
         padding-left:0px;
         padding-right: 0px;
-        
+
         &__left {
             display: block;
 
@@ -488,12 +504,12 @@
     }
 
     .find-an-event {
-        
+
         padding-top: 70px;
         padding-bottom: 20px;
         padding-left: 0px;
         padding-right: 0px;
-        
+
         &__left {
             display: block;
 
@@ -545,7 +561,7 @@
                 display: block;
             }
         }
-        
+
     }
 
     .find-an-event {
@@ -580,7 +596,7 @@
         p {
             margin-top: 0;
         }
-        
+
         &__img {
             height: 300px;
         }
