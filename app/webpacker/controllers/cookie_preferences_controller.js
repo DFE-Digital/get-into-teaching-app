@@ -21,7 +21,7 @@ export default class extends Controller {
     }
   }
 
-  toggle(event) {
+  toggle(_event) {
     this.data.set('save-state', 'unsaved')
   }
 

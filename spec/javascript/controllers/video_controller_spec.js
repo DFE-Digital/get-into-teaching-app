@@ -9,7 +9,7 @@ describe('AccordionController', () => {
   function initPageTemplate() {
     document.body.innerHTML = `
     <div data-controller="video">
-        <a href="https://www.youtube.com/watch?v=MLdrZJpK5rU" target="_blank rel="noopener"" data-action="click->video#play" data-target="video.link">
+        <a href="https://www.youtube.com/watch?v=MLdrZJpK5rU" target="_blank rel="noopener"" data-action="click->video#play" data-video-target="link">
             <div class="content-video">
                 <img src="/assets/images/case-study-helen.png" alt="Helen's story">
                 <div class="content-video__play">
@@ -17,12 +17,12 @@ describe('AccordionController', () => {
                 </div>
             </div>
         </a>
-        <div id="the-video-player" class="video-overlay" data-target="video.player" data-action="click->video#close">
+        <div id="the-video-player" class="video-overlay" data-video-target="player" data-action="click->video#close">
             <div class="video-overlay__background">
             </div>
             <div class='video-overlay__video-container'>
                 <div class="video-overlay__video-container__wrapper">
-                    <iframe data-target="video.iframe"
+                    <iframe data-video-target="iframe"
                         width="800"
                         height="450"
                         src=""
@@ -31,7 +31,7 @@ describe('AccordionController', () => {
                         allowfullscreen>
                     </iframe>
                 </div>
-                <button id="close-button" class="video-overlay__video-container__dismiss" data-target="video.close" data-action="click->video#close">
+                <button id="close-button" class="video-overlay__video-container__dismiss" data-video-target="close" data-action="click->video#close">
                     <div class="icon-video-close"><span class="visually-hidden">Close video</span></div>
                 </button>
                 <a class="visually-hidden" href="#">
@@ -80,7 +80,7 @@ describe('AccordionController', () => {
       })
 
       it("sets the video player as enabled", () => {
-        const overlay = document.querySelector('[data-target="video.player"') ;
+        const overlay = document.querySelector('[data-video-target="player"') ;
         expect(overlay.classList.contains('playback-enabled')).toBe(true) ;
       }) ;
     });
@@ -131,12 +131,12 @@ describe('AccordionController', () => {
     beforeEach(() => { initApp() })
 
     it("does not enable in page playback", () => {
-      const overlay = document.querySelector('[data-target="video.player"') ;
+      const overlay = document.querySelector('[data-video-target="player"') ;
       expect(overlay.classList.contains('playback-enabled')).toBe(false)
     })
 
     it("leaves iframe src blank when video link is clicked", () => {
-      document.querySelector('a[data-target="video.link"]').click() ;
+      document.querySelector('a[data-video-target="link"]').click() ;
 
       const iframe = document.querySelector('iframe') ;
       expect(iframe.getAttribute('src')).toEqual("")
@@ -145,14 +145,14 @@ describe('AccordionController', () => {
 
   describe("when cookies accepted after page has loaded", () => {
     beforeEach(() => { initApp() ; acceptCookies() })
-    
+
     it("does enable in-page playback", () => {
-      const overlay = document.querySelector('[data-target="video.player"') ;
+      const overlay = document.querySelector('[data-video-target="player"') ;
       expect(overlay.classList.contains('playback-enabled')).toBe(true)
     })
 
     it("sets the iframe src when video link is clicked", () => {
-      document.querySelector('a[data-target="video.link"]').click() ;
+      document.querySelector('a[data-video-target="link"]').click() ;
 
       const iframeSrc = document.querySelector('iframe').getAttribute('src') ;
       expect(iframeSrc).toMatch(/youtube/)

@@ -3,18 +3,18 @@
     "@fortawesome/fontawesome-free": "^5.13.0",
     "@fortawesome/free-solid-svg-icons": "^5.13.0",
     "@rails/webpacker": "^5.1.1",
-    "@stimulus/polyfills": "^1.1.1",
+    "@stimulus/polyfills": "^2.0.0",
     "govuk-frontend": "^3.10.1",
     "is-touch-device": "^1.0.1",
     "js-cookie": "^2.2.1",
     "rails-ujs": "^5.2.4",
     "serialize-javascript": "^5.0.1",
     "set-value": "^3.0.2",
-    "stimulus": "^1.1.1",
+    "stimulus": "^2.0.0",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
-    "@stimulus/test": "^1.1.1",
+    "@stimulus/test": "^2.0.0",
     "jest": "^26.6.3",
     "webpack-dev-server": "^3.11.0"
   },

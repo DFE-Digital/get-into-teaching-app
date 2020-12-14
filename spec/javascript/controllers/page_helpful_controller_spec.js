@@ -4,8 +4,8 @@ import PageHelpfulController from 'page_helpful_controller';
 describe('PageHelpfulController', () => {
   document.body.innerHTML = `
   <div id="pageHelpful" data-controller="page-helpful">
-    <p id="text" data-target="page-helpful.text">Is this page helpful?</p>
-    <a href="javascript:void(0)" id="answerButton" data-target="page-helpful.link" data-action="page-helpful#answer">Answer</a>
+    <p id="text" data-page-helpful-target="text">Is this page helpful?</p>
+    <a href="javascript:void(0)" id="answerButton" data-page-helpful-target="link" data-action="page-helpful#answer">Answer</a>
   </div>
   ` ;
 

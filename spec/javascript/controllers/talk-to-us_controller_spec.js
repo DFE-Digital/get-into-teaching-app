@@ -3,10 +3,10 @@ import TalkToUsController from 'talk-to-us_controller.js';
 
 describe('TalkToUsController', () => {
 
-    document.body.innerHTML = 
+    document.body.innerHTML =
     `
     <section data-controller="talk-to-us" id="element">
-        <div data-target="talk-to-us.chat" id="chat">
+        <div data-talk-to-us-target="chat" id="chat">
             <a href="#" data-action="click->talk-to-us#startChat" id="startChat">Chat Online</a>
         </div>
     </section>

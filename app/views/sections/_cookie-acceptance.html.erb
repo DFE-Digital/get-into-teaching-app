@@ -1,5 +1,5 @@
-<div data-controller="cookie-acceptance" data-target="cookie-acceptance.modal" role="complementary">
-    <div class="dialog" data-target="cookie-acceptance.overlay">
+<div data-controller="cookie-acceptance" data-cookie-acceptance-target="modal" role="complementary">
+    <div class="dialog" data-cookie-acceptance-target="overlay">
         <div class="dialog__background"></div>
         <div class="dialog__content">
             <div>
@@ -11,17 +11,17 @@
                 <h2>Help us improve</h2>
             </div>
             <p>
-                Welcome to the new Get Into Teaching website. We invite you to try the latest beta version of the site and 
+                Welcome to the new Get Into Teaching website. We invite you to try the latest beta version of the site and
                 help us improve the services we offer.
             </p>
             <p>
-                To use the new website, we need you to agree to our cookie policy. This means we can use your data to understand how to improve the 
+                To use the new website, we need you to agree to our cookie policy. This means we can use your data to understand how to improve the
                 website for all of our users.
             </p>
-            <a href="#" class="call-to-action-button" data-action="click->cookie-acceptance#accept" data-target="cookie-acceptance.agree" id="cookies-agree">
+            <a href="#" class="call-to-action-button" data-action="click->cookie-acceptance#accept" data-cookie-acceptance-target="agree" id="cookies-agree">
                 <span>Accept all cookies</span>
             </a>
-            <a class="secondary-link" href="/cookie_preference" data-target="cookie-acceptance.disagree" id="cookies-disagree">
+            <a class="secondary-link" href="/cookie_preference" data-cookie-acceptance-target="disagree" id="cookies-disagree">
                 <span>Set cookie preferences</span>
             </a>
         </div>

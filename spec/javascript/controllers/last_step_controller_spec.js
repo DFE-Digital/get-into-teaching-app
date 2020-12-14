@@ -15,7 +15,7 @@ describe('LastStepController', () => {
               </label>
             <div>
 
-            <div data-target="last-step.complete">
+            <div data-last-step-target="complete">
               <div>
                 <label>
                   <input type="radio" value="no" id="no-radio"> No
