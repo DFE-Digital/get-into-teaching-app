@@ -1,18 +1,12 @@
 module Cards
   class LatestEventComponent < CardComponent
-    ALL_EVENTS_HEADER = "Find a Teacher Training Event".freeze
-    ALL_EVENTS_SNIPPET = <<~SNIPPET.freeze
-      Find an event to speak to real teachers and get your questions answered
-      by our expert advisers. You can also find out what it is like to train
-      and be in the classroom.
-    SNIPPET
-
     attr_reader :page_data, :category, :event
 
     def initialize(card:, page_data: nil)
       super card: card
 
       @category = card["category"].to_s
+      @card = card
       @page_data = page_data
 
       fetch_event
@@ -23,28 +17,28 @@ module Cards
     end
 
     def header
-      event ? "Event: #{event.name}" : ALL_EVENTS_HEADER
+      "Event: #{event.name}"
     end
 
     def snippet
-      event ? event.summary : ALL_EVENTS_SNIPPET
+      event.summary
     end
 
     def link_text
-      event ? "View event" : "View events"
+      "View event"
     end
 
     def link
-      if event
-        event_path event.readable_id
-      else
-        events_path
-      end
+      event_path event.readable_id
     end
 
     def image
       # FIXME: change to image_pack_path once theres a new webpacker release
       @image ||= resolve_path_to_image("latest-event-card.jpg")
+    end
+
+    def call
+      event ? super : render(find_events_component)
     end
 
   private
@@ -54,6 +48,10 @@ module Cards
     rescue Events::Category::UnknownEventCategory => e
       Raven.capture_exception(e)
       @event = nil
+    end
+
+    def find_events_component
+      FindEventsComponent.new(card: @card)
     end
   end
 end
