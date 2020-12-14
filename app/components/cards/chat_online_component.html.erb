@@ -1,0 +1,23 @@
+<div class="card card-chat-online <%= modifier_classes %>">
+  <header class="card__header">
+    <%= truncated_header %>
+  </header>
+
+  <a href="/helping-you-become-a-teacher" data-controller="talk-to-us" data-action="talk-to-us#startChat" class="card__thumb">
+    <%= thumbnail_image_tag %>
+  </a>
+
+  <div class="card__snippet">
+    <p><%= snippet %><p>
+  </div>
+
+  <footer class="card__footer" data-controller="talk-to-us">
+    <a href="#" data-action="talk-to-us#startChat" class="git-link">
+      <%= link_text %> <%= helpers.fas_icon("chevron-right") %>
+    </a>
+
+    <a href="/helping-you-become-a-teacher" class="git-link no-js-fallback">
+      Chat to us <%= helpers.fas_icon("chevron-right") %>
+    </a>
+  </footer>
+</div>
