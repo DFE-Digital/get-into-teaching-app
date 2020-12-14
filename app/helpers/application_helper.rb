@@ -94,4 +94,10 @@ module ApplicationHelper
 
     referer.gsub(root_url, root_path)
   end
+
+  def replace_bau_cookies_link(html_content)
+    html_content&.gsub \
+      ' href="https://getintoteaching.education.gov.uk/how-we-use-your-information"',
+      " href=\"#{cookies_path}\""
+  end
 end
