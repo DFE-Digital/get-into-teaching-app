@@ -39,13 +39,7 @@
                   </div>
                 <% end %>
 
-                <% if @front_matter.dig("right_column", "ctas").present? %>
-                  <div class="content__right">
-                    <% @front_matter.dig("right_column", "ctas").each do |cta| %>
-                      <%= render CallsToAction::NarrowComponent.new(**cta.symbolize_keys) %>
-                    <% end %>
-                  </div>
-                <% end %>
+                <%= render partial: "layouts/shared/narrow_call_to_action" %>
 
                 <% if @front_matter["fullwidth"] %>
                   <%= yield %>

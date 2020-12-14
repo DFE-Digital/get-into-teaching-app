@@ -11,6 +11,9 @@
         <main role="main" id="main-content">
             <%= render Sections::HeroComponent.new(@front_matter) %>
             <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
+
+                <%= render partial: "layouts/shared/narrow_call_to_action" %>
+
                 <div class="content__left">
                   <% if @front_matter["alert"].present? %>
                     <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
