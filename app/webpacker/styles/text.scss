@@ -1,5 +1,7 @@
+$git-font-family: Sans-serif;
+
 @mixin font {
-    font-family: sans-serif;
+    font-family: $git-font-family;
     font-style: normal;
 }
 
@@ -116,7 +118,7 @@ a {
     &:hover {
         color: inherit;
     }
-    
+
     i {
         margin-left: 4px;
         vertical-align: middle;
