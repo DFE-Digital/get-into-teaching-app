@@ -88,4 +88,23 @@
   .call-to-action__action + .call-to-action__action {
     margin-top: 2em;
   }
+
+  &--narrow {
+    header {
+      display: flex;
+
+      .call-to-action__heading {
+        margin-left: 1em;
+        margin-bottom: 0;
+      }
+
+      @supports (gap: 1em) {
+        gap: 1em;
+
+        .call-to-action__heading {
+          margin-left: 0;
+        }
+      }
+    }
+  }
 }

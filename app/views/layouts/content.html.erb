@@ -39,6 +39,8 @@
                   </div>
                 <% end %>
 
+                <%= render partial: "layouts/shared/narrow_call_to_action" %>
+
                 <% if @front_matter["fullwidth"] %>
                   <%= yield %>
                 <% else %>
