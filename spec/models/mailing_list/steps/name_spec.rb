@@ -11,7 +11,7 @@ describe MailingList::Steps::Name do
   end
 
   before do
-    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_mailing_list_subscription_channels).and_return(channels)
   end
 

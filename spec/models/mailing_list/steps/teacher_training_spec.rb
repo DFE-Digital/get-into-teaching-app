@@ -11,7 +11,7 @@ describe MailingList::Steps::TeacherTraining do
   end
 
   before do
-    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
   end
 

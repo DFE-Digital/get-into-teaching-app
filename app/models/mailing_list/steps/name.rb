@@ -32,7 +32,7 @@ module MailingList
     private
 
       def query_channels
-        @query_channels ||= GetIntoTeachingApiClient::TypesApi.new.get_candidate_mailing_list_subscription_channels
+        @query_channels ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_mailing_list_subscription_channels
       end
     end
   end

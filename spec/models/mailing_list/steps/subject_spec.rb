@@ -11,7 +11,7 @@ describe MailingList::Steps::Subject do
   end
 
   before do
-    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
       receive(:get_teaching_subjects).and_return(teaching_subject_types)
   end
 

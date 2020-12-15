@@ -28,13 +28,13 @@ RSpec.feature "Mailing list wizard", type: :feature do
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
 
   before do
-    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_qualification_degree_status).and_return(degree_status_option_types)
-    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
-    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
       receive(:get_teaching_subjects).and_return(teaching_subject_types)
-    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_mailing_list_subscription_channels).and_return(channels)
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)

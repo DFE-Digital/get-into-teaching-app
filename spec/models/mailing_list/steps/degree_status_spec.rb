@@ -11,7 +11,7 @@ describe MailingList::Steps::DegreeStatus do
   end
 
   before do
-    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_qualification_degree_status).and_return(degree_status_option_types)
   end
 
