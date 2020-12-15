@@ -3,13 +3,7 @@
   border-top: 1px solid $grey-light;
   padding-top: 70px;
 
-  .strapline {
-      background-color: $green;
-      margin-bottom: 30px;
-      margin-left: -20px;
-  }
-
-  .govuk-checkboxes__item, .govuk-form-group 
+  .govuk-checkboxes__item, .govuk-form-group
   {
       margin-bottom: 10px;
   }
@@ -38,8 +32,8 @@
       max-width: 375px;
       margin-bottom: 15px;
       margin-left: 0;
-  }  
-  
+  }
+
   button.call-to-action-button {
     margin-top: 20px;
   }
@@ -49,10 +43,10 @@
 @media only screen and (max-width: 800px) {
 
   .event-reg-main,
-  .mailing-reg-main { 
+  .mailing-reg-main {
 
       &__content {
-      
+
           display: block;
 
           &__left {
