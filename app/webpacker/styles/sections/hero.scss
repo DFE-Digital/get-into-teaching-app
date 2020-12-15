@@ -1,12 +1,17 @@
 
 .hero {
     $mobile-cutoff: 800px;
+    margin-bottom: 1.5em;
+
+    @media only screen and (max-width: $mobile-cutoff) {
+      margin-bottom: .5em;
+    }
 
     > header {
         display: flex;
         position: relative;
         box-sizing: border-box;
-        
+
         height: 500px;
 
         margin-top: -1px;
@@ -97,7 +102,7 @@
 
         .hero__img {
             overflow: hidden;
-            
+
             position: absolute;
             bottom: 0;
             right: 0;
@@ -154,7 +159,7 @@
 
         @media only screen and (max-width: $mobile-cutoff) {
             padding-right: 20px;
-            
+
             > p {
             }
         }
