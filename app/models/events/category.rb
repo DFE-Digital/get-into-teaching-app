@@ -18,12 +18,12 @@ module Events
 
   private
 
-    def types_api
-      GetIntoTeachingApiClient::TypesApi.new
+    def pick_list_items_api
+      GetIntoTeachingApiClient::PickListItemsApi.new
     end
 
     def event_types
-      @event_types = types_api.get_teaching_event_types
+      @event_types = pick_list_items_api.get_teaching_event_types
     end
 
     def events_api

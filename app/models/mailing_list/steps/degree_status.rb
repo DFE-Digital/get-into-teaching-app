@@ -18,7 +18,7 @@ module MailingList
     private
 
       def query_degree_status
-        GetIntoTeachingApiClient::TypesApi.new.get_qualification_degree_status
+        GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_status
       end
     end
   end

@@ -17,7 +17,7 @@ module MailingList
     private
 
       def query_consideration_journey_stages
-        GetIntoTeachingApiClient::TypesApi.new.get_candidate_journey_stages
+        GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_journey_stages
       end
     end
   end

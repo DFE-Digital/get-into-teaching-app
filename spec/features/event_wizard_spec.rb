@@ -16,7 +16,7 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:add_teaching_event_attendee)
-    allow_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_teaching_event_types) { [] }
   end
 

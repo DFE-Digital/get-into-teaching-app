@@ -30,7 +30,7 @@ describe Healthcheck do
   include_examples "reading git shas", "content_sha", "/etc/get-into-teaching-content-sha"
 
   before do
-    stub_request(:get, "#{git_api_endpoint}/api/types/teaching_subjects")
+    stub_request(:get, "#{git_api_endpoint}/api/lookup_items/teaching_subjects")
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
@@ -46,7 +46,7 @@ describe Healthcheck do
 
     context "with broken connection" do
       before do
-        stub_request(:get, "#{git_api_endpoint}/api/types/teaching_subjects")
+        stub_request(:get, "#{git_api_endpoint}/api/lookup_items/teaching_subjects")
           .to_timeout
           .then.to_timeout
           .then.to_timeout
@@ -57,7 +57,7 @@ describe Healthcheck do
 
     context "with an API error" do
       before do
-        expect_any_instance_of(GetIntoTeachingApiClient::TypesApi).to \
+        expect_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
           receive(:get_teaching_subjects).and_raise(GetIntoTeachingApiClient::ApiError)
       end
 

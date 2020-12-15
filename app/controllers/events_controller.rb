@@ -22,7 +22,7 @@ class EventsController < ApplicationController
   end
 
   def show_category
-    @type = GetIntoTeachingApiClient::TypesApi.new.get_teaching_event_types.find do |type|
+    @type = GetIntoTeachingApiClient::PickListItemsApi.new.get_teaching_event_types.find do |type|
       I18n.t("event_types.#{type.id}.name.plural").parameterize == params[:category]
     end
 
@@ -30,7 +30,7 @@ class EventsController < ApplicationController
 
     @event_search = Events::Search.new(event_filter_params.merge(type: @type.id))
     all_results = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
-    @events = paginate(all_results[@type.id.to_sym])
+    @events = paginate(all_results[@type.id.to_s.to_sym])
   end
 
 private

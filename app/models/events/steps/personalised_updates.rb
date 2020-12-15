@@ -21,7 +21,7 @@ module Events
 
       def degree_status_options
         @degree_status_options ||=
-          GetIntoTeachingApiClient::TypesApi.new.get_qualification_degree_status
+          GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_status
       end
 
       def degree_status_option_ids
@@ -30,7 +30,7 @@ module Events
 
       def journey_stage_options
         @journey_stage_options ||=
-          GetIntoTeachingApiClient::TypesApi.new.get_candidate_journey_stages
+          GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_journey_stages
       end
 
       def journey_stage_option_ids
@@ -39,7 +39,7 @@ module Events
 
       def teaching_subject_options
         @teaching_subject_options ||=
-          GetIntoTeachingApiClient::TypesApi.new.get_teaching_subjects.reject do |type|
+          GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject do |type|
             GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS.values.include?(type.id)
           end
       end

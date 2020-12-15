@@ -3,31 +3,31 @@ shared_context "stub types api" do
   let(:stub_types) { [{ "id" => 1, "value" => "First type" }] }
 
   before do
-    stub_request(:get, "#{git_api_endpoint}/api/types/teaching_event/types")
+    stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/teaching_event/types")
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
         body: stub_types.to_json
 
-    stub_request(:get, "#{git_api_endpoint}/api/types/qualification/degree_status")
+    stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/qualification/degree_status")
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
         body: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map { |k, v| { id: v, value: k } }.to_json
 
-    stub_request(:get, "#{git_api_endpoint}/api/types/candidate/consideration_journey_stages")
+    stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/candidate/consideration_journey_stages")
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
         body: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map { |k, v| { id: v, value: k } }.to_json
 
-    stub_request(:get, "#{git_api_endpoint}/api/types/teaching_event/types")
+    stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/teaching_event/types")
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
         body: GetIntoTeachingApiClient::Constants::EVENT_TYPES.map { |k, v| { id: v, value: k } }.to_json
 
-    stub_request(:get, "#{git_api_endpoint}/api/types/teaching_subjects")
+    stub_request(:get, "#{git_api_endpoint}/api/lookup_items/teaching_subjects")
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
