@@ -3,25 +3,53 @@ require "rails_helper"
 RSpec.describe Pages::Page do
   include_context "use fixture markdown pages"
 
-  describe "#find" do
+  shared_examples "a page" do |title, path, template|
+    it { is_expected.to be_instance_of described_class }
+    it { is_expected.to have_attributes title: title }
+    it { is_expected.to have_attributes path: path }
+    it { is_expected.to have_attributes template: template }
+    it { is_expected.to have_attributes data: instance_of(Pages::Data) }
+  end
+
+  describe ".find" do
     context "with markdown page" do
       subject { described_class.find "/page1" }
 
-      it { is_expected.to be_instance_of Pages::Page }
-      it { is_expected.to have_attributes title: "Hello World 1" }
-      it { is_expected.to have_attributes path: "/page1" }
-      it { is_expected.to have_attributes template: "content/page1" }
-      it { is_expected.to have_attributes data: instance_of(Pages::Data) }
+      it_behaves_like "a page", "Hello World 1", "/page1", "content/page1"
     end
 
     context "with non markdown page" do
       subject { described_class.find "/unknown" }
 
-      it { is_expected.to be_instance_of Pages::Page }
-      it { is_expected.to have_attributes title: nil }
-      it { is_expected.to have_attributes path: "/unknown" }
-      it { is_expected.to have_attributes template: "content/unknown" }
-      it { is_expected.to have_attributes data: instance_of(Pages::Data) }
+      it_behaves_like "a page", nil, "/unknown", "content/unknown"
+    end
+  end
+
+  describe ".featured" do
+    subject { described_class.featured }
+
+    let(:pages) do
+      {
+        "/stories/featured" => { featured: true, title: "Featured page" },
+        "/stories/second" => { title: "Second page" },
+      }
+    end
+
+    let(:frontmatter) { Pages::Frontmatter.new pages }
+
+    before { expect(Pages::Frontmatter).to receive(:instance).and_return frontmatter }
+
+    it_behaves_like "a page", "Featured page", "/stories/featured", "content/stories/featured"
+
+    context "#with multiple featured stories" do
+      let(:pages) do
+        {
+          "/stories/featured" => { featured: true, title: "Featured page" },
+          "/stories/second" => { featured: true, title: "Second page" },
+        }
+      end
+
+      it { expect { subject }.to raise_exception Pages::Page::MultipleFeatured }
     end
   end
 end

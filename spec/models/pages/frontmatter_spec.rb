@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Pages::Frontmatter do
-  let(:content_dir) { Rails.root.join("spec/fixtures/files/markdown_content") }
+  let(:content_dir) { Rails.root.join "spec/fixtures/files/markdown_content" }
   let(:instance) { described_class.new content_dir }
 
   shared_examples "page loading" do
@@ -35,7 +35,7 @@ RSpec.describe Pages::Frontmatter do
   end
 
   describe ".perform_caching" do
-    subject { described_class.perform_caching }
+    subject { described_class.send :perform_caching }
 
     it { is_expected.to be false }
   end
@@ -59,6 +59,14 @@ RSpec.describe Pages::Frontmatter do
     subject { described_class.list content_dir }
 
     it_behaves_like "a listing of all pages"
+  end
+
+  describe ".select" do
+    subject { described_class.select :title, content_dir }
+
+    before { expect_any_instance_of(described_class).to receive(:select).and_call_original }
+
+    it { is_expected.to include "/page1" }
   end
 
   describe "#find" do
@@ -92,5 +100,45 @@ RSpec.describe Pages::Frontmatter do
     subject { instance.list }
 
     it_behaves_like "a listing of all pages"
+  end
+
+  describe "#select" do
+    let :content_dir do
+      {
+        "/first" => { priority: 10, section: "stories", first: "First" },
+        "/second" => { priority: 20 },
+        "/third" => { priority: 30, section: "stories" },
+      }
+    end
+
+    context "stories with matching key" do
+      subject { instance.select :section }
+
+      it { is_expected.to include "/first" }
+      it { is_expected.not_to include "/second" }
+      it { is_expected.to include "/third" }
+    end
+
+    context "stories with matching key and value" do
+      subject { instance.select section: "stories" }
+
+      it { is_expected.to include "/first" }
+      it { is_expected.not_to include "/second" }
+      it { is_expected.to include "/third" }
+    end
+
+    context "with multiple keys and values" do
+      subject { instance.select section: "stories", priority: 30 }
+
+      it { is_expected.not_to include "/first" }
+      it { is_expected.not_to include "/second" }
+      it { is_expected.to include "/third" }
+    end
+
+    context "with an unexpected selector type" do
+      subject { instance.select 1 }
+
+      it { expect { subject }.to raise_exception described_class::UnknownSelectorType }
+    end
   end
 end

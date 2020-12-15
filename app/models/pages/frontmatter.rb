@@ -12,6 +12,12 @@ module Pages
         instance(content_dir).list
       end
 
+      def select(selector, content_dir = nil)
+        instance(content_dir).select(selector)
+      end
+
+    private
+
       def instance(content_dir)
         if perform_caching
           @new ||= new(content_dir).preload
@@ -25,8 +31,15 @@ module Pages
       end
     end
 
-    def initialize(content_dir = nil)
-      @content_dir = content_dir ? Pathname.new(content_dir) : MARKDOWN_CONTENT_DIR
+    def initialize(content_dir_or_data = nil)
+      case content_dir_or_data
+      when Hash
+        @frontmatter = content_dir_or_data
+      when NilClass
+        @content_dir = MARKDOWN_CONTENT_DIR
+      else
+        @content_dir = Pathname.new(content_dir_or_data)
+      end
     end
 
     def find(template)
@@ -42,7 +55,7 @@ module Pages
     alias_method :to_h, :find
 
     def preload
-      Dir.glob(content_pattern, &method(:add))
+      Dir.glob(content_pattern, &method(:add)) unless preloaded?
 
       self
     end
@@ -51,9 +64,28 @@ module Pages
       !@frontmatter.nil?
     end
 
+    def select(selector)
+      list.select do |_path, frontmatter|
+        case selector
+        when Symbol, String
+          frontmatter.key? selector.to_sym
+        when Hash
+          selector.all? { |k, v| frontmatter.key?(k) && frontmatter[k] == v }
+        else
+          raise UnknownSelectorType, selector
+        end
+      end
+    end
+
     class NotMarkdownTemplate < RuntimeError
       def initialize(template)
         super "Cannot find Markdown Page #{template}.md"
+      end
+    end
+
+    class UnknownSelectorType < RuntimeError
+      def initialize(selector)
+        super "Unknown selector type: #{selector.class}: #{selector.inspect}"
       end
     end
 
