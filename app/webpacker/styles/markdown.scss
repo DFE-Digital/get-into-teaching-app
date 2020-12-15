@@ -9,4 +9,16 @@
             }
         }
     }
+
+    // stop the external icon from appearing inside CTA 'button' style links
+    .call-to-action__action {
+      a {
+        &[href*="//"] {
+            &::after {
+              content: none;
+              margin-left: unset;
+            }
+        }
+      }
+    }
 }
