@@ -57,7 +57,6 @@ Rails.application.routes.draw do
   )
   get "/my-story-into-teaching/*story/", to: "stories#index"
 
-  get "/guidance/*page", to: "guidance#show"
   get "/steps-to-become-a-teacher", to: "steps_to_become_a_teacher#show"
   get "/ways-to-train", to: "ways_to_train#show"
 
@@ -65,5 +64,6 @@ Rails.application.routes.draw do
     redirect_rules.each { |from, to| get from, to: redirect(to) }
   end
 
+  get "/guidance/*page", to: "guidance#show"
   get "*page", to: "pages#show", as: :page
 end
