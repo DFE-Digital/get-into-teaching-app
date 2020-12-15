@@ -8,7 +8,7 @@
         <%= back_link "/my-story-into-teaching", text: "All stories" %>
         <%= yield %>
         <div class="cards stories">
-          <%= render Stories::CardComponent.with_collection(@front_matter.dig("stories")) %>
+          <%= render Cards::RendererComponent.with_collection(@front_matter.dig("stories")) %>
         </div>
       </main>
       <%= render "sections/footer" %>

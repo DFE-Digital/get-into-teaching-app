@@ -26,7 +26,7 @@
             </header>
             <% if section["stories"].present? %>
               <div class="cards stories">
-                <%= render Stories::CardComponent.with_collection(section["stories"]) %>
+                <%= render Cards::RendererComponent.with_collection(section["stories"]) %>
               </div>
 
               <footer>
