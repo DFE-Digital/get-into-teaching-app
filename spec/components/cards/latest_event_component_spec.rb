@@ -8,9 +8,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
   let(:event) { build(:event_api, name: "Test event") }
   let(:instance) { described_class.new card: card, page_data: page_data }
   let(:card) { { category: "train to teach event" }.with_indifferent_access }
-
-  let(:generic_header) { described_class::ALL_EVENTS_HEADER }
-  let(:generic_snippet) { described_class::ALL_EVENTS_SNIPPET }
+  let(:find_events_header) { Cards::FindEventsComponent::HEADER }
 
   context "with category" do
     before do
@@ -37,11 +35,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
     context "with no events" do
       let(:event) { nil }
 
-      it { is_expected.to have_css ".card" }
-      it { is_expected.to have_css ".card.card--no-border" }
-      it { is_expected.to have_css ".card header", text: generic_header }
-      it { is_expected.to have_css "img" }
-      it { is_expected.to have_content generic_snippet }
+      it { is_expected.to have_css ".card header", text: find_events_header }
       it { is_expected.to have_link "View events", href: url_helpers.events_path }
     end
   end
@@ -53,7 +47,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
 
     before { expect(Raven).to receive(:capture_exception).and_call_original }
 
-    it { is_expected.to have_css ".card header", text: generic_header }
+    it { is_expected.to have_css ".card header", text: find_events_header }
   end
 
   context "with no category" do
@@ -63,6 +57,6 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
 
     before { expect(Raven).to receive(:capture_exception).and_call_original }
 
-    it { is_expected.to have_css ".card header", text: generic_header }
+    it { is_expected.to have_css ".card header", text: find_events_header }
   end
 end
