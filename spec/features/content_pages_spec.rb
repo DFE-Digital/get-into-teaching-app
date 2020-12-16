@@ -48,6 +48,13 @@ RSpec.feature "content pages check", type: :feature, content: true do
           end
       end
 
+      scenario "there are no localhost links" do
+        document
+          .css("a")
+          .map { |fragment| fragment["href"] }
+          .each { |href| expect(href).not_to match(%r{https?://(localhost|127\.0\.0\.1)}) }
+      end
+
       scenario "the internal links reference existing pages" do
         document
           .css("a")
