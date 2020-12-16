@@ -17,9 +17,9 @@
       <%= render partial: "event", collection: events %>
     </div>
   <% else %>
-    <div class="search-for-events-no-results search-for-events-no-results--by-type">
+    <%= render(Events::NoResultsComponent.new) do %>
       Sorry your search has not found any events of this type, try a different location or month.
-    </div>
+    <% end %>
   <% end %>
 
   <% show_see_all_events ||= false %>

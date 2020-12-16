@@ -122,7 +122,7 @@ describe "View events by category" do
       let(:path) { event_category_events_path("train-to-teach-events") }
       let(:events) { [] }
 
-      subject { parsed_response.css(".search-for-events-no-results").first }
+      subject { parsed_response.css(".no-results").first }
 
       it { is_expected.to_not be_nil }
       it { expect(subject.text).to include("Sorry your search has not found any events") }

@@ -103,6 +103,14 @@
         margin-top: 30px;
     }
 
+    .no-results {
+      width: 66.6%;
+
+      @media only screen and (max-width: 800px) {
+        width: 100%;
+      }
+    }
+
     &--with-logo {
       margin-top: 90px;
     }
@@ -207,31 +215,9 @@
   margin-bottom: -20px;
 }
 
-.search-for-events-no-results {
-  background: $purple;
-  color: $white;
-  padding: 20px;
-  font-weight: bold;
-  margin-bottom: 80px;
-
-  a {
-    color: $white;
-  }
-
-  &--by-type {
-    box-sizing: border-box;
-    margin: 0 0 30px 0;
-    width: 66.6%;
-  }
-}
-
 @media only screen and (max-width: 800px) {
     .event-type-descriptions {
       padding-bottom: 0px;
-    }
-
-    .search-for-events-no-results--by-type {
-      width: 100%;
     }
 
     .types-of-event {
