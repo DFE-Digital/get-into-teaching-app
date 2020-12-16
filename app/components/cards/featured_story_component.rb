@@ -10,7 +10,7 @@ module Cards
     end
 
     def link_text
-      "Read more"
+      @link_text || "Read #{story_name}'s story"
     end
 
     def border
@@ -18,22 +18,22 @@ module Cards
     end
 
     def image
-      @image ||= story.frontmatter.featured[:image] || story.image
+      @image ||= featured_metadata["image"] || story.image
     end
 
     def header
-      story.frontmatter.featured[:title] || story.title
+      @header ||= featured_metadata["title"] || "#{story_name}'s story"
     end
 
     def snippet
-      story.frontmatter.featured[:snippet] || raise(MissingSnippet, story.path)
+      @snippet ||= story.frontmatter.title || raise(MissingTitleOnFeatured, story.path)
     end
 
     class NoFeaturedStory < RuntimeError; end
 
-    class MissingSnippet < RuntimeError
+    class MissingTitleOnFeatured < RuntimeError
       def initialize(story_path)
-        super "Featured story is missing the 'snippet' - #{story_path}"
+        super "Featured story is missing a 'title' - #{story_path}"
       end
     end
 
@@ -41,6 +41,17 @@ module Cards
 
     def story
       @story ||= @page_data.featured_page || raise(NoFeaturedStory)
+    end
+
+    def story_name
+      story.frontmatter.story["name"]
+    end
+
+    def featured_metadata
+      case story.frontmatter.featured
+      when Hash then story.frontmatter.featured
+      else {}
+      end
     end
   end
 end

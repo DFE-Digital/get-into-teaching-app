@@ -7,9 +7,8 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
     {
       title: "Page title",
       image: "/test.jpg",
-      featured: {
-        snippet: "This is a featured page",
-      },
+      featured: true,
+      story: { "name" => "Teacher" },
     }
   end
 
@@ -22,31 +21,31 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
 
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }
-  it { is_expected.to have_css ".card header", text: "Page title" }
+  it { is_expected.to have_css ".card header", text: "Teacher's story" }
   it { is_expected.to have_css 'img[src="/test.jpg"]' }
-  it { is_expected.to have_content "This is a featured page" }
+  it { is_expected.to have_content "Page title" }
 
   it "includes the footer link" do
     is_expected.to have_link \
-      "Read more",
+      "Read Teacher's story",
       href: "/stories/featured",
       class: "git-link"
   end
 
   context "With different title" do
-    let(:frontmatter) { original.deep_merge featured: { title: "Featured" } }
+    let(:frontmatter) { original.deep_merge featured: { "title" => "Featured" } }
 
     it { is_expected.to have_css ".card" }
     it { is_expected.to have_css ".card.card--no-border" }
     it { is_expected.to have_css ".card header", text: "Featured" }
     it { is_expected.to have_css "img" }
-    it { is_expected.to have_content "This is a featured page" }
+    it { is_expected.to have_content "Page title" }
   end
 
   context "Without snippet" do
-    let(:frontmatter) { original.merge featured: { title: "Featured" } }
+    let(:frontmatter) { original.without :title }
 
-    it { expect { subject }.to raise_exception described_class::MissingSnippet }
+    it { expect { subject }.to raise_exception described_class::MissingTitleOnFeatured }
   end
 
   context "Without featured story" do
