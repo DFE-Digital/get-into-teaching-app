@@ -3,7 +3,8 @@ module MailingList
     include WizardSteps
     self.wizard_class = MailingList::Wizard
 
-    before_action :set_page_title, only: [:show] # rubocop:disable Rails/LexicallyScopedActionFilter
+    before_action :set_step_page_title, only: [:show]
+    before_action :set_completed_page_title, only: [:completed]
 
   private
 
@@ -20,11 +21,15 @@ module MailingList
       session[:mailinglist] ||= {}
     end
 
-    def set_page_title
+    def set_step_page_title
       @page_title = "Sign up for email updates"
       unless @current_step.nil?
         @page_title += ", #{@current_step.title.downcase} step"
       end
+    end
+
+    def set_completed_page_title
+      @page_title = "You've signed up"
     end
   end
 end
