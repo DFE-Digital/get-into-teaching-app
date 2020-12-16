@@ -35,12 +35,12 @@
 
 <% if content_after_accordion %>
   <div class="content_after_accordion">
-    <% if content_after_accordion.call_to_action.present? %>
-      <%= render content_after_accordion.call_to_action %>
-    <% end %>
-
     <% if content_after_accordion.partial.present? %>
       <%= render content_after_accordion.partial %>
+    <% end %>
+
+    <% if content_after_accordion.call_to_action.present? %>
+      <%= render content_after_accordion.call_to_action %>
     <% end %>
   </div>
 <% end %>
