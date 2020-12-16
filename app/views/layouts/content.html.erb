@@ -55,6 +55,10 @@
 
                     <article class="markdown">
                       <%= yield %>
+
+                      <% @front_matter["content"]&.each do |partial| %>
+                        <%= render(partial) %>
+                      <% end %>
                     </article>
                   </div>
                 <% end %>
