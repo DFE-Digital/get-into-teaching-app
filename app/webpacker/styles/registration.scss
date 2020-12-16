@@ -25,7 +25,8 @@
 
   h2 {
       font-size: 28px;
-      border: 0;
+      background: transparent;
+      color: $black;
   }
 
   .govuk-input, .govuk-select {
