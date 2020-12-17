@@ -28,20 +28,11 @@ RSpec.describe Pages::Page do
   describe ".featured" do
     subject { described_class.featured }
 
-    let(:pages) do
-      {
-        "/stories/featured" => { featured: true, title: "Featured page" },
-        "/stories/second" => { title: "Second page" },
-      }
-    end
-
-    let(:frontmatter) { Pages::Frontmatter.new pages }
-
-    before { expect(Pages::Frontmatter).to receive(:instance).and_return frontmatter }
-
-    it_behaves_like "a page", "Featured page", "/stories/featured", "content/stories/featured"
+    it_behaves_like "a page", "Hello World 1", "/page1", "content/page1"
 
     context "#with multiple featured stories" do
+      before { allow(Pages::Frontmatter).to receive(:select).and_return pages }
+
       let(:pages) do
         {
           "/stories/featured" => { featured: true, title: "Featured page" },

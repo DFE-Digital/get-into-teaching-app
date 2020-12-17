@@ -31,15 +31,8 @@ module Pages
       end
     end
 
-    def initialize(content_dir_or_data = nil)
-      case content_dir_or_data
-      when Hash
-        @frontmatter = content_dir_or_data
-      when NilClass
-        @content_dir = MARKDOWN_CONTENT_DIR
-      else
-        @content_dir = Pathname.new(content_dir_or_data)
-      end
+    def initialize(content_dir = nil)
+      @content_dir = content_dir ? Pathname.new(content_dir) : MARKDOWN_CONTENT_DIR
     end
 
     def find(template)
@@ -55,7 +48,7 @@ module Pages
     alias_method :to_h, :find
 
     def preload
-      Dir.glob(content_pattern, &method(:add)) unless preloaded?
+      Dir.glob(content_pattern, &method(:add))
 
       self
     end

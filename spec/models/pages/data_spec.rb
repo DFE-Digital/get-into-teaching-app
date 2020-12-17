@@ -3,8 +3,6 @@ require "rails_helper"
 RSpec.describe Pages::Data do
   include_context "use fixture markdown pages"
 
-  let(:md_files) { { "/page1" => { title: "Page 1", featured: true } } }
-
   let(:instance) { described_class.new }
 
   describe "#find_page" do

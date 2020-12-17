@@ -27,11 +27,9 @@ RSpec.describe Pages::Frontmatter do
   end
 
   shared_examples "a listing of all pages" do
-    it "includes all pages" do
-      expect(subject.keys).to match_array(%w[/page1 /subfolder/page2])
-    end
-
-    it { is_expected.to include "/page1" => { title: "Hello World 1" } }
+    it { expect(subject.keys).to include "/page1" }
+    it { expect(subject.keys).to include "/subfolder/page2" }
+    it { expect(subject["/page1"]).to include title: "Hello World 1" }
   end
 
   describe ".perform_caching" do
@@ -103,14 +101,6 @@ RSpec.describe Pages::Frontmatter do
   end
 
   describe "#select" do
-    let :content_dir do
-      {
-        "/first" => { priority: 10, section: "stories", first: "First" },
-        "/second" => { priority: 20 },
-        "/third" => { priority: 30, section: "stories" },
-      }
-    end
-
     context "stories with matching key" do
       subject { instance.select :section }
 
