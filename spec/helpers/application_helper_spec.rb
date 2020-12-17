@@ -174,4 +174,27 @@ describe ApplicationHelper do
       expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fas")
     end
   end
+
+  describe "#replace_bau_cookies_link" do
+    subject { helper.replace_bau_cookies_link html }
+
+    context "when in href" do
+      let :html do
+        <<~HTML
+          <p>
+            <a href="/first">First</a>
+          </p>
+
+          </p>
+            <a href="https://getintoteaching.education.gov.uk/how-we-use-your-information">
+              Information
+            </a>
+          </p>
+        HTML
+      end
+
+      it { is_expected.to have_link "First", href: "/first" }
+      it { is_expected.to have_link "Information", href: cookies_path }
+    end
+  end
 end
