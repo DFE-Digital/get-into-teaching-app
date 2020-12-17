@@ -9,7 +9,7 @@ env:
   CONTENT_REPOSITORY: DFE-Digital/get-into-teaching-content
 jobs:
   build:
-    name: Build and Deploy 
+    name: Build and Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
@@ -131,6 +131,9 @@ jobs:
     if: github.ref == 'refs/heads/master'
     needs: build
     steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
       - name: Set short sha
         id: sha
         run: echo ::set-output name=short::$(echo "${{ github.sha }}" | cut -c -7)
@@ -143,6 +146,11 @@ jobs:
       - name: Print discovered docker-image variable
         run: |-
           echo "DOCKER IMAGE: '${{ steps.docker-image.outputs.image }}'"
+
+      - name: Extract latest commit message
+        id: latest-commit
+        run: |-
+          echo ::set-output name=message::$(git show -s --format=%B HEAD)
 
       - name: Check out the Content
         uses: actions/checkout@v2
@@ -169,7 +177,11 @@ jobs:
           git add Dockerfile
           git commit -m "Updated base image to ${{ steps.sha.outputs.short}}
 
-          ${{ steps.docker-image.outputs.image }}"
+          ${{ steps.docker-image.outputs.image }}
+
+          -----
+
+          ${{ steps.latest-commit.outputs.message }}"
 
       - name: Show last commit
         run: |-
