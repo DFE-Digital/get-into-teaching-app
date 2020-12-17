@@ -29,6 +29,7 @@
   </div>
 </section>
 
+<% if @events.any? %>
 <section class="types-of-event content container-1000">
   <div class="events-featured">
     <div class="events-featured__list">
@@ -37,8 +38,15 @@
   </div>
 </section>
 
-<% if @events.any? %>
-  <div class="event-pagination content container-1000">
-    <%= paginate @events %>
+<div class="event-pagination content container-1000">
+  <%= paginate @events %>
+</div>
+<% else %>
+<section class="content container-1000">
+  <div class="content__left">
+    <%= render(Events::NoResultsComponent.new) do %>
+      Sorry your search has not found any events, try a different location or month. <%= link_to("Search for another event type", events_path) %></a>.
+    <% end %>
   </div>
+</section>
 <% end %>

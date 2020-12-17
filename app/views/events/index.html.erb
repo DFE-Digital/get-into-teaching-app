@@ -48,9 +48,9 @@
     <% else %>
       <section class="content container-1000">
         <div class="content__left">
-          <div class="search-for-events-no-results">
+          <%= render(Events::NoResultsComponent.new) do %>
             Sorry your search has not found any events, try a different type, location or month.
-          </div>
+          <% end %>
         </div>
       </section>
     <% end %>
