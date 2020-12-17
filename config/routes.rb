@@ -4,12 +4,16 @@ Rails.application.routes.draw do
   get "/404", to: "errors#not_found", via: :all
   get "/422", to: "errors#unprocessable_entity", via: :all
   get "/500", to: "errors#internal_server_error", via: :all
+  get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
+
+  YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
+    redirect_rules.each { |from, to| get from, to: redirect(to) }
+  end
 
   if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production?
     get "/assets/*missing", to: "errors#not_found", via: :all
   end
 
-  get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/tta-service", to: "pages#tta_service", as: :tta_service
@@ -59,10 +63,6 @@ Rails.application.routes.draw do
 
   get "/steps-to-become-a-teacher", to: "steps_to_become_a_teacher#show"
   get "/ways-to-train", to: "ways_to_train#show"
-
-  YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
-    redirect_rules.each { |from, to| get from, to: redirect(to) }
-  end
 
   get "/guidance/*page", to: "guidance#show"
   get "*page", to: "pages#show", as: :page
