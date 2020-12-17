@@ -55,6 +55,18 @@ RSpec.feature "content pages check", type: :feature, content: true do
           .each { |href| expect(href).not_to match(%r{https?://(localhost|127\.0\.0\.1)}) }
       end
 
+      scenario "the internal images exist" do
+        document
+          .css("img")
+          .map { |img| img["src"] }
+          .reject { |src| src.start_with?("http") }
+          .uniq
+          .each do |src|
+            visit(src)
+            expect(page).to have_http_status(:success), %(invalid image src on #{url} - #{src})
+          end
+      end
+
       scenario "the internal links reference existing pages" do
         document
           .css("a")
