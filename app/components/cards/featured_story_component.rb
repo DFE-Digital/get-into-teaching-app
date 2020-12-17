@@ -6,11 +6,11 @@ module Cards
     end
 
     def link
-      story.path
+      featured_story.path
     end
 
     def link_text
-      @link_text || "Read #{story_name}'s story"
+      @link_text ||= "Read #{story_candidates_name}'s story"
     end
 
     def border
@@ -18,15 +18,17 @@ module Cards
     end
 
     def image
-      @image ||= featured_metadata["image"] || story.image
+      @image ||= featured_metadata["image"] || featured_story.image
     end
 
     def header
-      @header ||= featured_metadata["title"] || "#{story_name}'s story"
+      @header ||= featured_metadata["title"] || "#{story_candidates_name}'s story"
     end
 
     def snippet
-      @snippet ||= story.frontmatter.title || raise(MissingTitleOnFeatured, story.path)
+      @snippet ||=
+        featured_story.frontmatter.title ||
+        raise(MissingTitleOnFeatured, featured_story.path)
     end
 
     class NoFeaturedStory < RuntimeError; end
@@ -39,17 +41,17 @@ module Cards
 
   private
 
-    def story
-      @story ||= @page_data.featured_page || raise(NoFeaturedStory)
+    def featured_story
+      @featured_story ||= @page_data.featured_page || raise(NoFeaturedStory)
     end
 
-    def story_name
-      story.frontmatter.story["name"]
+    def story_candidates_name
+      featured_story.frontmatter.story["name"]
     end
 
     def featured_metadata
-      case story.frontmatter.featured
-      when Hash then story.frontmatter.featured
+      case featured_story.frontmatter.featured
+      when Hash then featured_story.frontmatter.featured
       else {}
       end
     end
