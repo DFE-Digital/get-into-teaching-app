@@ -128,7 +128,7 @@ jobs:
   update_content_repo:
     name: Update the base image used in the Content repo
     runs-on: ubuntu-latest
-    # if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/master'
     needs: build
     steps:
       - name: Check out the repo
@@ -188,19 +188,19 @@ jobs:
           cd content
           git show HEAD
 
-      # - name: Push the commit
-      #   run: |-
-      #     cd content
-      #     git push origin master
+      - name: Push the commit
+        run: |-
+          cd content
+          git push origin master
 
-      # - name: Slack Notification
-      #   if: failure()
-      #   uses: rtCamp/action-slack-notify@master
-      #   env:
-      #     SLACK_CHANNEL: getintoteaching_tech
-      #     SLACK_COLOR: '#3278BD'
-      #     SLACK_ICON: https://github.com/rtCamp.png?size=48
-      #     SLACK_MESSAGE: ':disappointed_relieved: Pipeline Failure :disappointed_relieved:'
-      #     SLACK_TITLE: 'Failure: ${{ github.workflow }}'
-      #     SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_CHANNEL: getintoteaching_tech
+          SLACK_COLOR: '#3278BD'
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: ':disappointed_relieved: Pipeline Failure :disappointed_relieved:'
+          SLACK_TITLE: 'Failure: ${{ github.workflow }}'
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
 
