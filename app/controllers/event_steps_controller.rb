@@ -1,9 +1,12 @@
 class EventStepsController < ApplicationController
   before_action :load_event
-  before_action :redirect_closed_events, only: %i[show update] # rubocop:disable Rails/LexicallyScopedActionFilter
 
   include WizardSteps
   self.wizard_class = Events::Wizard
+
+  before_action :redirect_closed_events, only: %i[show update]
+  before_action :set_step_page_title, only: [:show]
+  before_action :set_completed_page_title, only: [:completed]
 
 private
 
@@ -39,10 +42,14 @@ private
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:event_id])
   end
 
-  def set_page_title
+  def set_step_page_title
     @page_title = "Sign up for #{@event.name}"
     unless @current_step.nil?
       @page_title += ", #{@current_step.title.downcase} step"
     end
+  end
+
+  def set_completed_page_title
+    @page_title = "Sign up complete"
   end
 end
