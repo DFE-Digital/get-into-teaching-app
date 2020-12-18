@@ -7,8 +7,8 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
     {
       title: "Page title",
       image: "/test.jpg",
-      featured: true,
-      story: { "name" => "Teacher" },
+      featured_story_card: true,
+      story: { "teacher" => "  Teacher Jones" },
     }
   end
 
@@ -33,7 +33,9 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
   end
 
   context "With different title" do
-    let(:frontmatter) { original.deep_merge featured: { "title" => "Featured" } }
+    let(:frontmatter) do
+      original.deep_merge featured_story_card: { "title" => "Featured" }
+    end
 
     it { is_expected.to have_css ".card" }
     it { is_expected.to have_css ".card.card--no-border" }
