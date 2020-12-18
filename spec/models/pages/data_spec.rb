@@ -1,6 +1,8 @@
 require "rails_helper"
 
 RSpec.describe Pages::Data do
+  include_context "use fixture markdown pages"
+
   let(:instance) { described_class.new }
 
   describe "#find_page" do
@@ -29,5 +31,13 @@ RSpec.describe Pages::Data do
       it { is_expected.to be_kind_of GetIntoTeachingApiClient::TeachingEvent }
       it { is_expected.to have_attributes type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES[category] }
     end
+  end
+
+  describe "#featured_page" do
+    subject { instance.featured_page }
+
+    before { expect(Pages::Page).to receive(:featured).and_call_original }
+
+    it { is_expected.to be_kind_of Pages::Page }
   end
 end

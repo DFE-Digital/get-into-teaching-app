@@ -12,6 +12,14 @@ module Pages
       rescue Pages::Frontmatter::NotMarkdownTemplate
         new path, {}
       end
+
+      def featured
+        pages = Pages::Frontmatter.select(:featured)
+        return nil? if pages.empty?
+        raise MultipleFeatured, pages.keys if pages.many?
+
+        new(*pages.first)
+      end
     end
 
     def initialize(path, frontmatter)
@@ -25,6 +33,12 @@ module Pages
 
     def data
       @data ||= Pages::Data.new
+    end
+
+    class MultipleFeatured < RuntimeError
+      def initialize(page_paths)
+        super "There are multiple featured pages: #{page_paths.join(', ')}"
+      end
     end
   end
 end
