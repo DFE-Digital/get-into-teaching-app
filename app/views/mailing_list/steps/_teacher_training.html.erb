@@ -7,7 +7,9 @@
 
 <%= f.govuk_error_summary %>
 
-<%= f.govuk_collection_select :consideration_journey_stage_id,
-      f.object.consideration_journey_stages,
-      :id,
-      :value %>
+<%= f.govuk_collection_radio_buttons :consideration_journey_stage_id,
+  f.object.consideration_journey_stages,
+  :id,
+  :value,
+  legend: { text: t('helpers.label.mailing_list_steps_teacher_training.consideration_journey_stage_id') }
+%>

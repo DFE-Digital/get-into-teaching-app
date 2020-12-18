@@ -61,7 +61,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "How close are you to applying"
-    select "I’m not sure and finding out more"
+    choose "I’m not sure and finding out more"
     click_on "Next Step"
 
     expect(page).to have_text "Which subject do you want to teach"
@@ -102,7 +102,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "How close are you to applying"
-    select "I’m not sure and finding out more"
+    choose "I’m not sure and finding out more"
     click_on "Next Step"
 
     expect(page).to have_text "Which subject do you want to teach"
@@ -156,9 +156,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "How close are you to applying"
-    expect(page).to have_select(
-      "How close are you to applying for teacher training?",
-      selected: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.key(response.consideration_journey_stage_id),
+    expect(find("[name=\"mailing_list_steps_teacher_training[consideration_journey_stage_id]\"][checked]").value).to eq(
+      response.consideration_journey_stage_id.to_s,
     )
     click_on "Next Step"
 

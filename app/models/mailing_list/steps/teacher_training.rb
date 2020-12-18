@@ -7,7 +7,7 @@ module MailingList
                 inclusion: { in: :consideration_journey_stage_ids }
 
       def consideration_journey_stages
-        @consideration_journey_stages ||= [OpenStruct.new(id: nil, value: "Please select")] + query_consideration_journey_stages
+        @consideration_journey_stages ||= query_consideration_journey_stages
       end
 
       def consideration_journey_stage_ids
