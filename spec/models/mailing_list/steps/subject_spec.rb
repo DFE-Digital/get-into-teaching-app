@@ -6,7 +6,7 @@ describe MailingList::Steps::Subject do
 
   let(:teaching_subject_types) do
     GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map do |k, v|
-      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+      GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k })
     end
   end
 
@@ -31,7 +31,7 @@ describe MailingList::Steps::Subject do
       subjects = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.merge(
         GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS,
       )
-      subjects.map { |k, v| GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k }) }
+      subjects.map { |k, v| GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k }) }
     end
 
     subject { instance.teaching_subject_ids }

@@ -73,7 +73,7 @@ describe Events::Steps::PersonalisedUpdates do
       subjects = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.merge(
         GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS,
       )
-      subjects.map { |k, v| GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k }) }
+      subjects.map { |k, v| GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k }) }
     end
 
     before do

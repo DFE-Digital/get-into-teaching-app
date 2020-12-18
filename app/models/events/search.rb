@@ -30,7 +30,7 @@ module Events
     class << self
       def available_event_types
         @available_event_types ||= GetIntoTeachingApiClient::Constants::EVENT_TYPES.map do |key, value|
-          GetIntoTeachingApiClient::TypeEntity.new(id: value, value: key)
+          GetIntoTeachingApiClient::PickListItem.new(id: value, value: key)
         end
       end
 

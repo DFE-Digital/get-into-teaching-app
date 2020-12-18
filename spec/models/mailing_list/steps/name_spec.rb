@@ -6,7 +6,7 @@ describe MailingList::Steps::Name do
 
   let(:channels) do
     GetIntoTeachingApiClient::Constants::CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS.map do |k, v|
-      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
 
