@@ -14,7 +14,7 @@ module Pages
       end
 
       def featured
-        pages = Pages::Frontmatter.select(:featured)
+        pages = Pages::Frontmatter.select(:featured_story_card)
         return nil? if pages.empty?
         raise MultipleFeatured, pages.keys if pages.many?
 

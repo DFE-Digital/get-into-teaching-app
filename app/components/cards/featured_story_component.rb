@@ -50,8 +50,8 @@ module Cards
     end
 
     def featured_metadata
-      case featured_story.frontmatter.featured
-      when Hash then featured_story.frontmatter.featured
+      case featured_story.frontmatter.featured_story_card
+      when Hash then featured_story.frontmatter.featured_story_card
       else {}
       end
     end
