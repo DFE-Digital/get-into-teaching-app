@@ -75,7 +75,7 @@ private
   end
 
   def step_params
-    params.require(step_param_key).permit @current_step.attributes.keys
+    params.fetch(step_param_key, {}).permit @current_step.attributes.keys
   end
 
   def step_param_key
