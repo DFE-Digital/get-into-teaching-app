@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: afef61cf2553e754a7447ba3ac5a98215780f5ff
+  revision: fc55a73e7192f95199f4c3d2e9c04c3e7eb6ada3
   specs:
-    get_into_teaching_api_client (1.1.6)
+    get_into_teaching_api_client (1.1.7)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (0.1.8)
+    get_into_teaching_api_client_faraday (0.1.9)
       activesupport
       faraday
       faraday-encoding
@@ -137,7 +137,7 @@ GEM
     htmlentities (4.3.4)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    json (2.4.0)
+    json (2.4.1)
     kaminari (1.2.1)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.2.1)
@@ -320,7 +320,7 @@ GEM
     thread_safe (0.3.6)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
-    tzinfo (1.2.8)
+    tzinfo (1.2.9)
       thread_safe (~> 0.1)
     unicode-display_width (1.7.0)
     view_component (2.23.1)
