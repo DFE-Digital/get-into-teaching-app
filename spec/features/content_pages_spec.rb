@@ -10,8 +10,16 @@ RSpec.feature "content pages check", type: :feature, content: true do
   ].freeze
 
   class << self
-    def files
+    def md_files
       Dir["app/views/content/**/[^_]*.md"]
+    end
+
+    def html_files
+      Dir["app/views/content/**/[^_]*.html.erb"]
+    end
+
+    def files
+      html_files + md_files
     end
 
     def remove_folders(filename)
@@ -52,7 +60,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
         document
           .css("a")
           .map { |fragment| fragment["href"] }
-          .each { |href| expect(href).not_to match(%r{https?://(localhost|127\.0\.0\.1)}) }
+          .each { |href| expect(href).not_to match(%r{https?://(localhost|127\.0\.0\.1|::1)}) }
       end
 
       scenario "the internal images exist" do
@@ -63,7 +71,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
           .uniq
           .each do |src|
             visit(src)
-            expect(page).to have_http_status(:success), %(invalid image src on #{url} - #{src})
+            expect(page).to have_http_status(:success), "invalid image src on #{url} - #{src}"
           end
       end
 
@@ -71,17 +79,17 @@ RSpec.feature "content pages check", type: :feature, content: true do
         document
           .css("a")
           .map { |fragment| fragment["href"] }
-          .reject { |href| href.start_with?(Regexp.union("http", "tel", "mailto")) }
+          .reject { |href| href.start_with?(Regexp.union("http:", "https:", "tel:", "mailto:")) }
           .reject { |href| href.match?(Regexp.union("privacy-policy", "events", "javascript")) }
           .select { |href| href.start_with?(Regexp.union("/", /\w+/)) }
           .uniq
           .each do |href|
             visit(href)
 
-            expect(page).to(have_http_status(:success), %(invalid link on #{url} - #{href}))
+            expect(page).to(have_http_status(:success), "invalid link on #{url} - #{href}")
 
             if (fragment = URI.parse(href).fragment)
-              expect(page).to(have_css("#" + fragment), %(invalid link on #{url} - #{href}, (missing fragment #{fragment})))
+              expect(page).to(have_css("#" + fragment), "invalid link on #{url} - #{href}, (missing fragment #{fragment})")
             end
           end
       end
