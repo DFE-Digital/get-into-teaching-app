@@ -3,25 +3,25 @@ require "rails_helper"
 RSpec.feature "Mailing list wizard", type: :feature do
   let(:degree_status_option_types) do
     GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
-      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
 
   let(:consideration_journey_stage_types) do
     GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
-      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
 
   let(:teaching_subject_types) do
     GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map do |k, v|
-      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
 
   let(:channels) do
     GetIntoTeachingApiClient::Constants::CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS.map do |k, v|
-      GetIntoTeachingApiClient::TypeEntity.new({ id: v, value: k })
+      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
 
