@@ -10,6 +10,10 @@
 
         h2 {
             @include content-heading;
+            color: $black;
+            background-color: unset;
+            size: 110%;
+            margin-bottom: 0;
         }
     }
 
@@ -43,7 +47,10 @@
     width: 100%;
     max-width: 1250px;
     margin: 2em auto 2em;
-    border-bottom: 2em solid $purple;
+
+    @media only screen and (min-width: 800px) {
+      border-bottom: 2em solid $purple;
+    }
 
     &__image {
         display: table-cell;
@@ -277,7 +284,7 @@
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
 
     .stories {
 
