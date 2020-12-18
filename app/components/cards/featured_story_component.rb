@@ -46,7 +46,7 @@ module Cards
     end
 
     def story_candidates_name
-      featured_story.frontmatter.story["name"]
+      featured_story.frontmatter.story["teacher"].to_s.strip.split(%r{\s}).first
     end
 
     def featured_metadata

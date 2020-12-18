@@ -8,7 +8,7 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
       title: "Page title",
       image: "/test.jpg",
       featured_story_card: true,
-      story: { "name" => "Teacher" },
+      story: { "teacher" => "  Teacher Jones" },
     }
   end
 
