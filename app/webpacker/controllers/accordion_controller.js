@@ -3,6 +3,9 @@ import { Controller } from "stimulus"
 export default class extends Controller {
 
     static targets = ["header", "content"]
+    static values = {
+      activeStep: Number
+    }
 
     connect() {
         this.setup();
@@ -44,19 +47,34 @@ export default class extends Controller {
     }
 
     setup() {
-        // disable all the steps except the nominated one or the first
-        const stepMatcher = /step-([\d])/;
-        const stepFromHash = window.location.hash.match(stepMatcher);
-
-        let activeStep = "step-1";
-
-        if (stepFromHash) {
-            activeStep = stepFromHash[0];
-        }
+        const selector = this.stepFromURI() || this.stepFromAttr() || ".step";
 
         document
-            .querySelectorAll(`.step:not(#${activeStep})`)
+            .querySelectorAll(selector)
             .forEach(step => this.deactivate(step));
+    }
+
+    stepFromURI() {
+        const stepMatcher = /step-([\d])/;
+        const uriFragment = window.location.hash.match(stepMatcher);
+
+        if (uriFragment) {
+          const stepFromHashId = uriFragment[0];
+
+          return `.step:not(#${stepFromHashId})`;
+        }
+
+        return false;
+    }
+
+    stepFromAttr() {
+        if (this.activeStepValue) {
+          const stepFromDataAttr = `step-${this.activeStepValue}`;
+
+          return `.step:not(#${stepFromDataAttr})`;
+        }
+
+      return false;
     }
 
     allStepElements() {
