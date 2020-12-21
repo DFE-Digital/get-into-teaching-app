@@ -10,7 +10,7 @@
   </div>
 <% end %>
 
-<div class="accordions" data-controller="accordion">
+<%= tag.div(class: "accordions", data: data_attributes) do %>
   <% steps.each.with_index(1) do |step, i| %>
     <%= tag.section(id: "step-#{i}", class: "step", data: { id: i }) do %>
 
@@ -31,7 +31,7 @@
 
     <% end %>
   <% end %>
-</div>
+<% end %>
 
 <% if content_after_accordion %>
   <div class="content_after_accordion">
