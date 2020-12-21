@@ -22,7 +22,7 @@
                   <%= yield %>
 
                   <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>
-                    <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered")) do |accordion| %>
+                    <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered"), active_step: accordion_fm.dig("active_step")) do |accordion| %>
                       <%= accordion.slot(
                         :content_before_accordion,
                         partial: accordion_fm.dig("content_before_accordion", "partial"),

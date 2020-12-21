@@ -7,8 +7,9 @@ module Content
 
     attr_reader :numbered
 
-    def initialize(numbered: false)
-      @numbered = numbered
+    def initialize(numbered: false, active_step: nil)
+      @numbered    = numbered
+      @active_step = active_step
     end
 
     def render?
@@ -23,6 +24,10 @@ module Content
       if numbered?
         %(#{number}.)
       end
+    end
+
+    def data_attributes
+      { controller: "accordion", accordion_active_step_value: @active_step }.compact
     end
 
     class ComposableSlot < ViewComponent::Slot
