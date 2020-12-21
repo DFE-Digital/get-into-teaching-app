@@ -120,6 +120,18 @@ describe Content::AccordionComponent, type: "component" do
     end
   end
 
+  describe "Numbered steps" do
+    subject! do
+      render_inline(Content::AccordionComponent.new(numbered: true)) do |accordion|
+        accordion.slot(:step, title: title) { text }
+      end
+    end
+
+    specify "the step is prefixed by a number" do
+      expect(page).to have_css("h2.step-header__text", text: %r{1. #{title}})
+    end
+  end
+
   describe "Setting the active step via a data attribute" do
     let(:active_step) { 3 }
 
