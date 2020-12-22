@@ -9,7 +9,7 @@ GetIntoTeachingApiClient.configure do |config|
   if endpoint
     parsed = URI.parse(endpoint)
 
-    config.host = parsed.hostname
+    config.host = "#{parsed.hostname}:#{parsed.port}"
     config.base_path = parsed.path.gsub(%r{\A/api}, "")
   end
 

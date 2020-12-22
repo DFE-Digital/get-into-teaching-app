@@ -1,23 +1,22 @@
 GIT
-  remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: 61152b6255ba9ea824d28c5db3c0dce75658dd2e
+  remote: https://github.com/waiting-for-dev/front_matter_parser.git
+  revision: 71d1d61c4feeb2c73de7d986a7f97e9ab931917e
   specs:
-    get_into_teaching_api_client (1.1.9)
+    front_matter_parser (0.2.1)
+
+PATH
+  remote: ../get-into-teaching-api-ruby-client
+  specs:
+    get_into_teaching_api_client (1.1.8)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (0.1.12)
+    get_into_teaching_api_client_faraday (0.1.91)
       activesupport
       faraday
       faraday-encoding
       faraday-http-cache
       faraday_middleware
       get_into_teaching_api_client
-
-GIT
-  remote: https://github.com/waiting-for-dev/front_matter_parser.git
-  revision: 71d1d61c4feeb2c73de7d986a7f97e9ab931917e
-  specs:
-    front_matter_parser (0.2.1)
 
 GEM
   remote: https://rubygems.org/
