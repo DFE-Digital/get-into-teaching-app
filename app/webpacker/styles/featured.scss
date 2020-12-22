@@ -22,7 +22,16 @@
         position: relative;
         overflow: auto;
         .more-stories__thumbs__thumb__play {
-            top: 80px;
+            @include rotated-block(-3deg, $blur: 4px);
+            background-color: $pink-dark-90;
+            padding: 1em 1em 1em 1.5em;
+            position: absolute;
+            top: 120px;
+            margin-left: -.6em;
+
+            &:hover {
+              background-color: $pink;
+            }
         }
     }
 
