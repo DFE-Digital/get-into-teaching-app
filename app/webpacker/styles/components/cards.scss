@@ -3,6 +3,7 @@
     padding: 2px;
 
     .card {
+        overflow: auto;
         outline: 2px solid $black;
         display: flex;
         flex-direction: column;

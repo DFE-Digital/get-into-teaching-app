@@ -24,7 +24,7 @@ module StoriesHelper
 
   def more_stories_thumbnail(path)
     tag.div(
-      class: "more-stories__thumbs__thumb__img",
+      class: "stories__thumbs__thumb__img",
       style: %(background-image:url('#{path}')),
     )
   end

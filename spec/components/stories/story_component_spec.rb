@@ -113,7 +113,7 @@ describe Stories::StoryComponent, type: "component" do
       end
 
       specify "there should be a story card for each story" do
-        is_expected.to have_css(".cards.more-stories > .card", count: front_matter[:more_stories].length)
+        is_expected.to have_css(".cards.stories > .card", count: front_matter[:more_stories].length)
       end
     end
 
@@ -163,7 +163,7 @@ describe Stories::StoryComponent, type: "component" do
     end
 
     specify "there should be a story card for each story" do
-      is_expected.to have_css(".cards.more-stories > .card", count: more_stories)
+      is_expected.to have_css(".cards.stories > .card", count: more_stories)
     end
   end
 end
