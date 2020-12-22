@@ -1,0 +1,14 @@
+<div class="link-block">
+  <header class="link-block__header">
+    <div class="link-block__header__icon"></div>
+    <%= tag.h2(title) %>
+  </header>
+  <ul class="link-block__list">
+    <% links.each do |link| %>
+      <li class="link-block__list__item">
+        <div class="link-block__list__icon"></div>
+        <%= tag.div(link, class: "link-block__list__link") %>
+      </li>
+    <% end %>
+  </ul>
+</div>
