@@ -21,7 +21,7 @@ aside {
   }
 }
 
-article {
+.content {
   // make all direct descendents have a left margin
   // so we can override it independently on things that are
   // meant to overhang (h2)
@@ -33,10 +33,6 @@ article {
     margin: inherit 1em;
     flex-basis: 65%;
     flex-shrink: 0;
-  }
-
-  h2:not(:first-of-type) {
-    margin-top: 1em;
   }
 
   a {
@@ -65,7 +61,7 @@ article {
   // Markdown
   h2 {
     @include content-heading;
-    margin: .1em 0;
+    margin: .5em 0;
 
     &:first-of-type {
       margin-top: 0;

@@ -8,44 +8,40 @@
         </div>
     </div>
         <%= render "sections/header" %>
+        <%= render Sections::HeroComponent.new(@front_matter) %>
+
         <main role="main" id="main-content">
-            <%= render Sections::HeroComponent.new(@front_matter) %>
-            <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
+          <aside>
+            <%= render partial: "layouts/shared/narrow_call_to_action" %>
+          </aside>
 
-                <%= render partial: "layouts/shared/narrow_call_to_action" %>
+          <article class="content">
+            <%= yield %>
 
-                <div class="content__left">
-                  <% if @front_matter["alert"].present? %>
-                    <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
+            <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>
+              <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered"), active_step: accordion_fm.dig("active_step")) do |accordion| %>
+                <%= accordion.slot(
+                  :content_before_accordion,
+                  partial: accordion_fm.dig("content_before_accordion", "partial"),
+                  call_to_action: accordion_fm.dig("content_before_accordion", "cta")
+                ) %>
+
+                <% accordion_fm["steps"]&.each do |title, contents| %>
+                  <%= accordion.slot(:step, title: title, call_to_action: contents["cta"]) do %>
+                    <%= render(partial: contents["partial"]) %>
                   <% end %>
+                <% end %>
 
-                  <%= yield %>
+                <%= accordion.slot(
+                  :content_after_accordion,
+                  partial: accordion_fm.dig("content_after_accordion", "partial"),
+                  call_to_action: accordion_fm.dig("content_after_accordion", "cta")
+                ) %>
+              <% end %>
+            <% end %>
 
-                  <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>
-                    <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered"), active_step: accordion_fm.dig("active_step")) do |accordion| %>
-                      <%= accordion.slot(
-                        :content_before_accordion,
-                        partial: accordion_fm.dig("content_before_accordion", "partial"),
-                        call_to_action: accordion_fm.dig("content_before_accordion", "cta")
-                      ) %>
-
-                      <% accordion_fm["steps"]&.each do |title, contents| %>
-                        <%= accordion.slot(:step, title: title, call_to_action: contents["cta"]) do %>
-                          <%= render(partial: contents["partial"]) %>
-                        <% end %>
-                      <% end %>
-
-                      <%= accordion.slot(
-                        :content_after_accordion,
-                        partial: accordion_fm.dig("content_after_accordion", "partial"),
-                        call_to_action: accordion_fm.dig("content_after_accordion", "cta")
-                      ) %>
-                    <% end %>
-                  <% end %>
-                </div>
-
-                <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
-            </section>
+            <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
+          </article>
         </main>
 
         <%= render "sections/footer" %>
