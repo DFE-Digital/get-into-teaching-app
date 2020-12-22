@@ -92,18 +92,10 @@
   &--narrow {
     header {
       display: flex;
+      align-items: center;
 
       .call-to-action__heading {
-        margin-left: 1em;
-        margin-bottom: 0;
-      }
-
-      @supports (gap: 1em) {
-        gap: 1em;
-
-        .call-to-action__heading {
-          margin-left: 0;
-        }
+        margin: 0 0 0 .5em;
       }
     }
   }
