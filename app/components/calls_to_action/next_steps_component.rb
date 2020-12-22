@@ -2,7 +2,7 @@ module CallsToAction
   class NextStepsComponent < ViewComponent::Base
     def icon
       image_tag(
-        asset_pack_path("media/images/calls-to-action/icon-person.svg"),
+        asset_pack_path("media/images/icon-person.svg"),
         width: 50,
         height: 50,
         alt: "Chat with a adviser online",
