@@ -18,6 +18,21 @@ describe MailingList::Wizard do
     end
   end
 
+  describe "#perform_auth_request" do
+    let(:wizardstore) { Wizard::Store.new({}) }
+    let(:wizard) { described_class.new wizardstore, "name" }
+    let(:candidate_id) { "abc" }
+    let(:token) { "def" }
+    let(:stub_response) { GetIntoTeachingApiClient::MailingListAddMember.new(candidateId: candidate_id) }
+
+    it "authenticates with the API" do
+      expect_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+        receive(:get_pre_filled_mailing_list_add_member_long_lived).with(candidate_id, token) { stub_response }
+      response = wizard.perform_auth_request(candidate_id, token)
+      expect(response).to eq(stub_response)
+    end
+  end
+
   describe "#complete!" do
     let(:uuid) { SecureRandom.uuid }
     let(:store) do

@@ -22,6 +22,11 @@ module MailingList
       end
     end
 
+    def perform_auth_request(candidate_id, token)
+      api = GetIntoTeachingApiClient::MailingListApi.new
+      api.get_pre_filled_mailing_list_add_member_long_lived(candidate_id, token)
+    end
+
   private
 
     def add_member_to_mailing_list

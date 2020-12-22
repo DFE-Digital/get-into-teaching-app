@@ -24,7 +24,7 @@ module Wizard
   private
 
     def previously_authenticated?
-      @store["authenticate"]
+      @store["authenticated"]
     end
 
     def request_attributes

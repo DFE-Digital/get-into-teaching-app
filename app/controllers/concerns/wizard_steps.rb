@@ -1,9 +1,13 @@
 module WizardSteps
   extend ActiveSupport::Concern
 
+  AUTH_ATTRS = %w[candidate_id token].freeze
+
   included do
     class_attribute :wizard_class
-    before_action :load_wizard, :load_current_step, only: %i[show update]
+    before_action :load_wizard, only: %i[show update]
+    before_action :authenticate, only: %i[show]
+    before_action :load_current_step, only: %i[show update]
   end
 
   def index
@@ -41,6 +45,14 @@ module WizardSteps
   end
 
 private
+
+  def authenticate
+    candidate_id, token = request.query_parameters.values_at(*AUTH_ATTRS)
+    return unless candidate_id && token
+
+    @wizard.authenticate(candidate_id, token)
+    redirect_to(step_path(@wizard.next_key(Wizard::Steps::Authenticate.key)))
+  end
 
   def load_wizard
     @wizard = wizard_class.new(wizard_store, params[:id])

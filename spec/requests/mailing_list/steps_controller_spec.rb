@@ -31,6 +31,20 @@ describe MailingList::StepsController do
 
       it { is_expected.to have_http_status :not_found }
     end
+
+    context "when auth parameters are provided" do
+      let(:candidate_id) { "abc" }
+      let(:token) { "def" }
+
+      before do
+        expect_any_instance_of(MailingList::Wizard).to \
+          receive(:authenticate).with(candidate_id, token)
+        get mailing_list_steps_path(:name, { candidate_id: "abc", token: "def" })
+        follow_redirect!
+      end
+
+      it { is_expected.to redirect_to(mailing_list_step_path(:degree_status)) }
+    end
   end
 
   describe "#update" do

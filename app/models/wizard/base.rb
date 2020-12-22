@@ -1,5 +1,6 @@
 module Wizard
   class UnknownStep < RuntimeError; end
+  class AuthNotSupported < RuntimeError; end
 
   class Base
     class_attribute :steps
@@ -74,6 +75,12 @@ module Wizard
       last_step? && valid?
     end
 
+    def authenticate(candidate_id, token)
+      response = perform_auth_request(candidate_id, token)
+      prepopulate_store(response)
+      @store["authenticated"] = true
+    end
+
     def invalid_steps
       active_steps.select(&:invalid?)
     end
@@ -97,7 +104,18 @@ module Wizard
       all_steps.map(&:export).reduce({}, :merge)
     end
 
+  protected
+
+    def perform_auth_request(_candidate_id, _token)
+      raise(AuthNotSupported)
+    end
+
   private
+
+    def prepopulate_store(response)
+      hash = response.to_hash.transform_keys { |k| k.to_s.underscore }
+      @store.persist(hash)
+    end
 
     def all_steps
       step_keys.map(&method(:find))

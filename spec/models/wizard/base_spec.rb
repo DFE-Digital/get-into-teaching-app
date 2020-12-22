@@ -161,6 +161,47 @@ describe Wizard::Base do
     end
   end
 
+  describe "authenticate" do
+    let(:candidate_id) { "abc" }
+    let(:token) { "def" }
+    let(:stub_response) do
+      GetIntoTeachingApiClient::MailingListAddMember.new(
+        candidateId: "abc",
+        firstName: "John",
+        lastName: "Doe",
+      )
+    end
+
+    before do
+      allow_any_instance_of(TestWizard).to \
+        receive(:perform_auth_request).with(candidate_id, token) { stub_response }
+    end
+
+    subject do
+      wizard.authenticate(candidate_id, token)
+      wizardstore.fetch(%w[candidate_id first_name last_name authenticated])
+    end
+
+    it {
+      is_expected.to eq({
+        "candidate_id" => "abc",
+        "first_name" => "John",
+        "last_name" => "Doe",
+        "authenticated" => true,
+      })
+    }
+
+    context "when the wizard does not implement perform_auth_request" do
+      before do
+        allow_any_instance_of(TestWizard).to \
+          receive(:perform_auth_request).with(candidate_id, token)
+          .and_call_original
+      end
+
+      it { expect { wizard.authenticate(candidate_id, token) }.to raise_error(Wizard::AuthNotSupported) }
+    end
+  end
+
   describe "invalid_steps" do
     let(:backingstore) { { "age" => 30 } }
     subject { wizard.invalid_steps.map(&:key) }
