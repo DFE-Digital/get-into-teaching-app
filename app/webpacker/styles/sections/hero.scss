@@ -52,6 +52,7 @@
 
                 h1 {
                     background-color: $yellow-dark-90;
+                    backdrop-filter: blur(4px);
 
                     padding: 20px 40px 25px 40px;
                     margin: 0 0 30px 0;

@@ -15,7 +15,7 @@
             <%= render partial: "layouts/shared/narrow_call_to_action" %>
           </aside>
 
-          <article class="content">
+          <article class="content markdown">
             <%= yield %>
 
             <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>

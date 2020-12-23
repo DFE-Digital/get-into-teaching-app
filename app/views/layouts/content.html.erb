@@ -20,7 +20,7 @@
             <%= render partial: "layouts/shared/narrow_call_to_action" %>
           </aside>
 
-          <article class="content">
+          <article class="content markdown">
             <% if !@front_matter["image"] %>
               <%= tag.h1(@front_matter["title"]) %>
             <% end %>

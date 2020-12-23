@@ -4,13 +4,15 @@
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
       <%= render "sections/header" %>
       <%= render Sections::HeroComponent.new(@front_matter) %>
-      <main class="content container-1000" role="main" id="main-content">
+
+      <main class="content column" role="main" id="main-content">
         <%= back_link "/my-story-into-teaching", text: "All stories" %>
         <%= yield %>
         <div class="cards stories">
           <%= render Cards::RendererComponent.with_collection(@front_matter.dig("stories")) %>
         </div>
       </main>
+
       <%= render "sections/footer" %>
       <%= render "components/videoplayer" %>
       <%= render "sections/cookie-acceptance" %>

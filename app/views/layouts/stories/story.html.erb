@@ -3,13 +3,9 @@
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
       <%= render "sections/header" %>
-      <main class="content container-1000" role="main" id="main-content">
-        <article class="markdown">
-          <%= render Stories::StoryComponent.new(@front_matter, @page.data) do %>
-            <%= yield %>
-          <% end %>
-        </article>
-      </main>
+      <%= render Stories::StoryComponent.new(@front_matter, @page.data) do %>
+        <%= yield %>
+      <% end %>
       <%= render "sections/footer" %>
       <%= render "components/videoplayer" %>
       <%= render "sections/cookie-acceptance" %>

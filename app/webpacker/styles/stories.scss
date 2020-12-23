@@ -42,54 +42,43 @@
 }
 
 .stories-feature {
+  display: flex;
+  background-color: $purple;
+  margin: 2em 0 2em 2em;
 
-    display: table;
-    width: 100%;
-    max-width: 1250px;
-    margin: 2em auto 2em;
+  @media only screen and (max-width: 800px) {
+    margin: 2em 0;
+  }
 
-    @media only screen and (min-width: 800px) {
-      border-bottom: 2em solid $purple;
+  &__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: 30%;
+    flex-shrink: 0;
+    max-height: 16em;
+  }
+
+  &__content {
+    color: $white;
+    padding: 1em;
+
+    > h2 {
+      font-size: 28px;
+      background-color: unset;
+      padding: unset;
     }
 
-    &__image {
-        display: table-cell;
-        width: 38%;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .git-link {
+      color: $white;
+      cursor: pointer;
     }
 
-    &__content {
-        display: table-cell;
-        background-color: $purple;
-        vertical-align: top;
-        box-sizing: border-box;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: 20px;
-        padding-bottom: 40px;
-        color: $white;
+  }
+}
 
-        h2 {
-            font-size: 28px;
-        }
-
-        h3 {
-            padding: 0;
-            margin: 0;
-        }
-
-        p {
-            padding-top: 0;
-            margin-top: 0;
-        }
-
-        a.git-link {
-            color: $white;
-            cursor: pointer;
-        }
-
-    }
+.stories-related-content {
+  max-width: 1000px;
+  margin: 3em auto 4em;
 }
 
 .content-wrapper {

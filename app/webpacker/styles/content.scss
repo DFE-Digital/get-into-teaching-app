@@ -10,6 +10,9 @@ main {
   @media only screen and (min-width: $mobile-wrap) {
     flex-direction: row-reverse;
   }
+
+  &.story {
+  }
 }
 
 aside {
@@ -22,19 +25,60 @@ aside {
 }
 
 .content {
+  &.column {
+    flex-direction: column;
+  }
+
+  flex-grow: 0;
+
   // make all direct descendents have a left margin
   // so we can override it independently on things that are
   // meant to overhang (h2)
   > * {
     margin-left: 1em;
+
+    @media only screen and (max-width: $mobile-wrap) {
+      margin: .5em;
+    }
   }
 
   @media only screen and (min-width: $mobile-wrap) {
     margin: inherit 1em;
     flex-basis: 65%;
     flex-shrink: 0;
+    flex-grow: 0;
   }
 
+  h1 {
+    margin: .5em;
+  }
+
+  // Markdown
+  h2 {
+    @include content-heading;
+    margin: .5em 0;
+
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  ul {
+    list-style-type: square;
+  }
+
+  li {
+    line-height: 1.6;
+  }
+
+  // when we're including a back link in the content it needs to
+  // be nudged down a little to clear the slanted header
+  .govuk-back-link {
+    margin-top: 2em;
+  }
+}
+
+.markdown {
   a {
     &[href*="//"] {
       &::after {
@@ -56,23 +100,5 @@ aside {
         }
       }
     }
-  }
-
-  // Markdown
-  h2 {
-    @include content-heading;
-    margin: .5em 0;
-
-    &:first-of-type {
-      margin-top: 0;
-    }
-  }
-
-  ul {
-    list-style-type: square;
-  }
-
-  li {
-    line-height: 1.6;
   }
 }
