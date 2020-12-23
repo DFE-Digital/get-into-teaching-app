@@ -26,7 +26,7 @@ RSpec.describe Pages::Data do
     end
 
     context "with category name" do
-      let(:category) { "Train to Teach Event" }
+      let(:category) { "Train to Teach event" }
 
       it { is_expected.to be_kind_of GetIntoTeachingApiClient::TeachingEvent }
       it { is_expected.to have_attributes type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES[category] }

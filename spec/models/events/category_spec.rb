@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe Events::Category do
   include_context "stub types api"
 
-  let(:category_name) { "Train to Teach Event" }
+  let(:category_name) { "Train to Teach event" }
   let(:type_id) do
     GetIntoTeachingApiClient::Constants::EVENT_TYPES[category_name]
   end
@@ -53,7 +53,7 @@ RSpec.describe Events::Category do
     it { is_expected.to have_attributes type_id: type_id }
 
     context "with no events for category id" do
-      let(:category_name) { "Online Event" }
+      let(:category_name) { "Online event" }
       it { is_expected.to be_nil }
     end
   end

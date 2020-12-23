@@ -21,7 +21,7 @@ describe Events::EventBoxComponent, type: "component" do
   end
 
   describe "online/offline" do
-    let(:online_heading) { "Online Event" }
+    let(:online_heading) { "Online event" }
     let(:moved_online_heading) { "Event has moved online" }
 
     context "when the event is an online event type" do
@@ -60,14 +60,14 @@ describe Events::EventBoxComponent, type: "component" do
 
   [
     OpenStruct.new(
-      name: "Train to Teach Event",
+      name: "Train to Teach event",
       trait: :train_to_teach_event,
       expected_colour: "purple",
       is_online: false,
       is_virtual: false,
     ),
     OpenStruct.new(
-      name: "Online Event",
+      name: "Online event",
       trait: :online_event,
       expected_colour: "blue",
       is_online: true,
@@ -80,9 +80,9 @@ describe Events::EventBoxComponent, type: "component" do
       is_online: false,
       is_virtual: false,
     ),
-    # a 'Train to Teach Event' that also happens to be online
+    # a 'Train to Teach event' that also happens to be online
     OpenStruct.new(
-      name: "Train to Teach Event",
+      name: "Train to Teach event",
       trait: :train_to_teach_event,
       expected_colour: "purple",
       is_online: true,

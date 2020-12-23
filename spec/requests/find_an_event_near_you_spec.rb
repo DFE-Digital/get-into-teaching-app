@@ -78,9 +78,9 @@ describe "Find an event near you" do
       it "presents the types in the correct order" do
         headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
         expected_headings = [
-          "Train to Teach Events",
-          "Online Events",
-          "School and University Events",
+          "Train to Teach events",
+          "Online events",
+          "School and University events",
         ]
 
         expect(headings & expected_headings).to eq(expected_headings)
@@ -89,7 +89,7 @@ describe "Find an event near you" do
   end
 
   context "when searching for an event by type" do
-    let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
+    let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
     let(:events) { [build(:event_api, type_id: type_id)] }
 
     before do
@@ -101,7 +101,7 @@ describe "Find an event near you" do
 
     it "displays only the category filtered to" do
       headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
-      expected_headings = ["Train to Teach Events"]
+      expected_headings = ["Train to Teach events"]
 
       expect(headings).to eq(expected_headings)
     end
@@ -148,7 +148,7 @@ describe "Find an event near you" do
     it "categorises the results" do
       headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
       expected_headings = [
-        "Train to Teach Events",
+        "Train to Teach events",
       ]
 
       expect(headings & expected_headings).to eq(expected_headings)
@@ -164,7 +164,7 @@ describe "Find an event near you" do
     end
 
     context "when there are results for a subset of categories" do
-      let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] }
+      let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
       let(:events) { [build(:event_api, type_id: type_id)] }
 
       it "displays the no results message per category" do

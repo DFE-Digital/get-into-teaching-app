@@ -2,9 +2,9 @@ module GetIntoTeachingApiClient
   module Constants
     EVENT_TYPES =
       {
-        "Train to Teach Event" => 222_750_001,
-        "Online Event" => 222_750_008,
-        "School or University Event" => 222_750_009,
+        "Train to Teach event" => 222_750_001,
+        "Online event" => 222_750_008,
+        "School or University event" => 222_750_009,
       }.freeze
 
     EVENT_TYPES_WITH_ARCHIVE =

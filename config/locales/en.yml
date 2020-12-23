@@ -64,22 +64,22 @@ en:
   event_types:
     222750001:
       name:
-        singular: "Train to Teach Event"
-        plural: "Train to Teach Events"
+        singular: "Train to Teach event"
+        plural: "Train to Teach events"
       description: |-
         Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training 
         will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
     222750008:
       name:
-        singular: "Online Event"
-        plural: "Online Events"
+        singular: "Online event"
+        plural: "Online events"
       description: |-
         In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train. 
         Get fast answers to your questions so you can take the next step to becoming a teacher.
     222750009:
       name:
-        singular: "School or University Event"
-        plural: "School and University Events"
+        singular: "School or University event"
+        plural: "School and University events"
       description: |-
         These events, run by schools and universities, are a great way to and find out more about a particular training provider. 
         Find out what they have to offer and help make your decision on where to apply.
