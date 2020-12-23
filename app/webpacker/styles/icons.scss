@@ -1,28 +1,28 @@
 @mixin icon {
-    display: inline-block;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    vertical-align: middle;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
 }
 
 .icon-close {
-    @include icon;
-    background-image: url('../images/icon-hamburger-close.svg');
-    width: 23px;
-    height: 23px;
+  @include icon;
+  background-image: url("../images/icon-hamburger-close.svg");
+  width: 23px;
+  height: 23px;
 }
 
 .icon-hamburger {
   @include icon;
-  background-image: url('../images/icon-hamburger.svg');
+  background-image: url("../images/icon-hamburger.svg");
   width: 30px;
   height: 20px;
 }
 
 .icon-external {
   @include icon;
-  background-image: url('../images/icon-external.svg');
+  background-image: url("../images/icon-external.svg");
   width: 20px;
   height: 15px;
   margin: 0 0 5px 5px;
@@ -30,68 +30,68 @@
 
 .icon-online-event {
   @include icon;
-  background-image: url('../images/icon-online-blue.svg');
+  background-image: url("../images/icon-online-blue.svg");
   width: 34px;
   height: 34px;
 }
 
 .icon-moved-online-event {
   @include icon;
-  background-image: url('../images/icon-moved-online-blue.svg');
+  background-image: url("../images/icon-moved-online-blue.svg");
   width: 36px;
   height: 36px;
 
   &--purple {
-    background-image: url('../images/icon-moved-online-purple.svg');
+    background-image: url("../images/icon-moved-online-purple.svg");
   }
 }
 
 .icon-pin {
-    @include icon;
-    background-image: url('../images/icon-pin-blue.svg');
-    width: 23px;
-    height: 36px;
+  @include icon;
+  background-image: url("../images/icon-pin-blue.svg");
+  width: 23px;
+  height: 36px;
 }
 
 .icon-pin-large {
-    @include icon;
-    background-image: url('../images/icon-pin-pink.svg');
-    width: 50px;
-    height: 60px;
+  @include icon;
+  background-image: url("../images/icon-pin-pink.svg");
+  width: 50px;
+  height: 60px;
 }
 
 .icon-play {
-    @include icon;
-    background-image: url('../images/play-icon.svg');
-    width: 24px;
-    height: 24px;
+  @include icon;
+  background-image: url("../images/icon-play.svg");
+  width: 24px;
+  height: 24px;
 }
 
 .icon-school-or-university-event {
-    @include icon;
-    background-image: url('../images/icon-school-blue.svg');
-    width: 36px;
-    height: 36px;
+  @include icon;
+  background-image: url("../images/icon-school-blue.svg");
+  width: 36px;
+  height: 36px;
 }
 
 .icon-train-to-teach-event {
-    @include icon;
-    background-image: url('../images/icon-ttt.svg');
-    width: 32px;
-    height: 32px;
+  @include icon;
+  background-image: url("../images/icon-ttt.svg");
+  width: 32px;
+  height: 32px;
 }
 
 .icon-quote {
-    @include icon;
-    background-image: url('../images/white-quote.svg');
-    width: 24px;
-    height: 24px;
-    fill: $white;
+  @include icon;
+  background-image: url("../images/white-quote.svg");
+  width: 24px;
+  height: 24px;
+  fill: $white;
 }
 
 .icon-video-close {
-    @include icon;
-    background-image: url('../images/icon-close.svg');
-    width: 30px;
-    height: 30px;
+  @include icon;
+  background-image: url("../images/icon-close.svg");
+  width: 30px;
+  height: 30px;
 }

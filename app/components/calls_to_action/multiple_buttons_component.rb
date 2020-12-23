@@ -11,13 +11,11 @@ module CallsToAction
   private
 
     def icon_element(icon)
-      image_tag(
-        asset_pack_path("media/images/calls-to-action/#{icon}.svg"),
-        width: 50,
-        height: 50,
-        alt: "#{icon} icon",
-        class: "call-to-action__icon",
-      )
+      image_pack_tag("media/images/#{icon}.svg",
+                     width: 50,
+                     height: 50,
+                     alt: "#{icon} icon",
+                     class: "call-to-action__icon")
     end
   end
 end
