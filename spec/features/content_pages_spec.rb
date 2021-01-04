@@ -97,7 +97,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
 
       let(:navigation_pages) { Pages::Frontmatter.select(:navigation) }
 
-      scenario "navigatable pages appear in desktop navbar" do
+      scenario "navigable pages appear in desktop navbar" do
         navigation_pages.each do |url, frontmatter|
           page.within "nav .navbar__desktop" do
             is_expected.to have_link frontmatter[:title], href: url
@@ -105,7 +105,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
         end
       end
 
-      scenario "navigatable pages appear in mobile navbar" do
+      scenario "navigable pages appear in mobile navbar" do
         navigation_pages.each do |url, frontmatter|
           page.within "nav .navbar__mobile" do
             is_expected.to have_link frontmatter[:title], href: url
