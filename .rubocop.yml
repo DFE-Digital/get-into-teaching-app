@@ -143,10 +143,6 @@ RSpec/ScatteredSetup:
   Exclude:
     - spec/**/*.rb
 
-RSpec/SharedContext:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/SubjectStub:
   Exclude:
     - spec/**/*.rb
