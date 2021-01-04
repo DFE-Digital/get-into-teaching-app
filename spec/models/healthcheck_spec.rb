@@ -21,7 +21,7 @@ describe Healthcheck do
           allow(File).to receive(:read).with(shafile).and_raise Errno::ENOENT
         end
 
-        it { is_expected.to eql nil }
+        it { is_expected.to be_nil }
       end
     end
   end

@@ -45,10 +45,6 @@ Style/SignalException:
 
 # FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
-RSpec/BeEql:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/ContextMethod:
   Exclude:
     - spec/**/*.rb
