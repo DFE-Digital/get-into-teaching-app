@@ -1,4 +1,4 @@
-FROM ruby:2.6.6-alpine3.12
+FROM ruby:3.0.0-alpine3.12
 
 ENV RAILS_ENV=production \
     NODE_ENV=production \
