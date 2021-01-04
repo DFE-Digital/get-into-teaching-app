@@ -12,7 +12,7 @@ describe Sections::HeroComponent, type: "component" do
       backlink: "/",
     }.with_indifferent_access
   end
-  let(:component) { Sections::HeroComponent.new(front_matter) }
+  let(:component) { described_class.new(front_matter) }
   subject! { render_inline(component) }
 
   describe "rendering a hero section" do
@@ -28,7 +28,7 @@ describe Sections::HeroComponent, type: "component" do
 
     describe "images" do
       context "when no image is present" do
-        let(:component) { Sections::HeroComponent.new(front_matter.merge(image: nil)) }
+        let(:component) { described_class.new(front_matter.merge(image: nil)) }
 
         specify "nothing is rendered" do
           expect(rendered_component).to be_empty
@@ -43,7 +43,7 @@ describe Sections::HeroComponent, type: "component" do
       end
 
       describe "responsive images" do
-        let(:component) { Sections::HeroComponent.new(front_matter.merge(mobileimage: "media/images/events-hero-mob.jpg")) }
+        let(:component) { described_class.new(front_matter.merge(mobileimage: "media/images/events-hero-mob.jpg")) }
 
         specify "the image's srcset should contain desktop and mobile" do
           img_tag = page.find(".hero__img > img")
@@ -55,7 +55,7 @@ describe Sections::HeroComponent, type: "component" do
 
     describe "mailing list cta" do
       context "when mailinglist: true" do
-        let(:component) { Sections::HeroComponent.new(front_matter.merge(deepheader: true)) }
+        let(:component) { described_class.new(front_matter.merge(deepheader: true)) }
 
         specify "renders a mailing list strip beneath the header" do
           expect(page).to have_css(".hero__mailing-strip")

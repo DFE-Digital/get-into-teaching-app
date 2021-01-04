@@ -39,7 +39,7 @@ describe Stories::StoryComponent, type: "component" do
   let(:front_matter) { default_front_matter }
 
   subject do
-    render_inline(Stories::StoryComponent.new(front_matter))
+    render_inline(described_class.new(front_matter))
     page
   end
 
@@ -94,7 +94,7 @@ describe Stories::StoryComponent, type: "component" do
   describe "content" do
     let(:content) { "The quick brown fox" }
     subject do
-      render_inline(Stories::StoryComponent.new(front_matter)) do
+      render_inline(described_class.new(front_matter)) do
         content
       end
 

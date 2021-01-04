@@ -5,7 +5,7 @@ describe Events::EventBoxComponent, type: "component" do
   let(:event) { build(:event_api) }
   let(:condensed) { false }
 
-  subject! { render_inline(Events::EventBoxComponent.new(event, condensed: condensed)) }
+  subject! { render_inline(described_class.new(event, condensed: condensed)) }
 
   specify "renders an event box" do
     expect(page).to have_css(".event-box")

@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe CallsToAction::NarrowComponent, type: :component do
   subject do
-    CallsToAction::NarrowComponent.new(
+    described_class.new(
       icon: "icon-question",
       title: "title",
       text: "text",

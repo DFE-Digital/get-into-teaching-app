@@ -9,7 +9,7 @@ describe Navbar::NavbarComponent, type: "component" do
     allow(Pages::Frontmatter).to receive(:list).and_return all_frontmatter
   end
 
-  subject! { render_inline(Navbar::NavbarComponent.new) }
+  subject! { render_inline(described_class.new) }
 
   describe "Desktop navbar component" do
     context "when rendered" do

@@ -45,7 +45,7 @@ RSpec.describe Pages::Frontmatter do
 
     context "when caching" do
       before do
-        allow(Pages::Frontmatter).to receive(:instance) { instance.preload }
+        allow(described_class).to receive(:instance) { instance.preload }
         expect(instance).to receive(:find_from_preloaded).and_call_original
       end
 

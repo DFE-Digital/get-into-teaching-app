@@ -11,7 +11,7 @@ describe Stories::CardComponent, type: "component" do
   end
 
   subject do
-    render_inline(Stories::CardComponent.new(card: story))
+    render_inline(described_class.new(card: story))
     page
   end
 
@@ -42,7 +42,7 @@ describe Stories::CardComponent, type: "component" do
     let(:video_story) { story.merge(video: video).with_indifferent_access }
 
     subject do
-      render_inline(Stories::CardComponent.new(card: video_story))
+      render_inline(described_class.new(card: video_story))
       page
     end
 

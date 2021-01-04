@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe CallsToAction::NextStepsComponent, type: :component do
-  let(:component) { CallsToAction::NextStepsComponent.new }
+  let(:component) { described_class.new }
   before { render_inline(component) }
 
   specify "renders the call to action" do
