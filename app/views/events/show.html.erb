@@ -1,97 +1,99 @@
-<section class="event-info content container-1000">
-    <div class="content__left">
-        <h1><%= @event.name %></h1>
+<main class="event-info" role="main" id="main-content">
+  <aside></aside>
+  <div class="content">
+    <h1 class="event-info__title"><%= @event.name %></h1>
 
-        <p class="event-info__date"><%= format_event_date(@event, stacked: false) %></p>
+    <p class="event-info__date"><%= format_event_date(@event, stacked: false) %></p>
 
-        <% unless event_status_open?(@event) %>
-          <div class="content-alert content-alert--fullwidth">
-            <p>This event is now closed. Search <%= link_to("here", events_path) %> for our other events.</p>
-          </div>
-        <% end %>
-
-        <% if @event.message %>
-          <div class="content-alert content-alert--fullwidth">
-            <p><%= @event.message %></p>
-          </div>
-        <% end %>
-
-        <p>
-          <% if can_sign_up_online?(@event) %>
-            <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
-                Sign up for this <span>event</span>
-            <% end %>
-          <% end %>
-        </p>
-
-        <h2 class="strapline-article">Event information</h2>
-        <p><%= formatted_event_description(@event.description) %></p>
-
-        <% if @event.building && !@event.is_online %>
-        <h2 class="strapline-article">Venue information</h2>
-        <p><%= @event.building.venue %>, <%= event_address(@event) %>.</p>
-        <% if @event.provider_website_url %>
-          <p><%= link_to("Visit venue website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
-        <%end %>
-        <p><%= event_location_map(@event) %></p>	        
-        <% end %>
-
-        <% if event_has_provider_info?(@event) %>
-          <h2 class="strapline-article">Provider information</h2>
-          <% if @event.provider_website_url %>
-            <p><strong>Event website</strong><br /><%= link_to(@event.provider_website_url, @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
-          <% end %>
-          <% if @event.provider_target_audience %>
-            <p><strong>Target audience</strong><br /><%= @event.provider_target_audience %></p>
-          <% end %>
-          <% if @event.provider_organiser %>
-            <p><strong>Organiser</strong><br /><%= @event.provider_organiser %></p>
-          <% end %>
-          <% if @event.provider_contact_email %>
-            <p><strong>Contact email</strong><br /><%= mail_to(@event.provider_contact_email) %></p>
-          <% end %>
-        <% end %>
-
-        <% if @event.video_url %>
-        <h2 class="strapline-article">Video</h2>
-        <div class="responsive-video">
-          <iframe class="responsive-video__iframe" src="<%= embed_event_video_url(@event.video_url) %>"></iframe>
-        </div>
-        <br />
-        <% end %>
-
-        <% if event_status_open?(@event) %>
-          <% if can_sign_up_online?(@event) %>
-            <h2 class="strapline-article">How to attend</h2>
-            <p>
-              To attend this event, you must register for a place. Once registered, you will receive log-in information and joining instructions via email.
-              Please note: to access this event you will require a laptop/desktop pc and be using chrome as your browser.
-            </p>
-            <p>
-              <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
-                  Sign up for this <span>event</span>
-              <% end %>
-            </p>
-          <% elsif is_event_type?(@event, "School or University Event") %>
-            <h2 class="strapline-article">How to attend</h2>
-            <p>To register for this event, follow the instructions in the event information section.</p>
-          <% elsif @event.provider_website_url %>
-            <h2 class="strapline-article">How to attend</h2>
-            <p>To attend this event, please <%= link_to("visit this website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i>.<p>
-          <% elsif @event.provider_contact_email %>
-            <h2 class="strapline-article">How to attend</h2>
-            <p>To attend this event, please <%= mail_to(@event.provider_contact_email, "email us") %>.<p>
-          <% end %>
-        <% end %>
-
-        <% if @event.scribble_id %>
-          <h2 class="strapline-article">Attend online</h2>
-        <% end %>
+    <% unless event_status_open?(@event) %>
+      <div class="content-alert content-alert--fullwidth">
+        <p>This event is now closed. Search <%= link_to("here", events_path) %> for our other events.</p>
       </div>
+    <% end %>
 
-      <% if @event.scribble_id %>
-        <div data-controller="scribble" data-scribble-id="<%= @event.scribble_id %>"></div>
+    <% if @event.message %>
+      <div class="content-alert content-alert--fullwidth">
+        <p><%= @event.message %></p>
+      </div>
+    <% end %>
+
+    <p>
+    <% if can_sign_up_online?(@event) %>
+      <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
+        Sign up for this <span>event</span>
       <% end %>
+    <% end %>
+    </p>
 
-      <%= render "sections/page_question" %>
-</section>
+    <h2 class="strapline-article">Event information</h2>
+    <p><%= formatted_event_description(@event.description) %></p>
+
+    <% if @event.building && !@event.is_online %>
+      <h2 class="strapline-article">Venue information</h2>
+      <p><%= @event.building.venue %>, <%= event_address(@event) %>.</p>
+      <% if @event.provider_website_url %>
+        <p><%= link_to("Visit venue website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
+      <%end %>
+      <p><%= event_location_map(@event) %></p>
+    <% end %>
+
+    <% if event_has_provider_info?(@event) %>
+      <h2 class="strapline-article">Provider information</h2>
+      <% if @event.provider_website_url %>
+        <p><strong>Event website</strong><br /><%= link_to(@event.provider_website_url, @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i></p>
+      <% end %>
+      <% if @event.provider_target_audience %>
+        <p><strong>Target audience</strong><br /><%= @event.provider_target_audience %></p>
+      <% end %>
+      <% if @event.provider_organiser %>
+        <p><strong>Organiser</strong><br /><%= @event.provider_organiser %></p>
+      <% end %>
+      <% if @event.provider_contact_email %>
+        <p><strong>Contact email</strong><br /><%= mail_to(@event.provider_contact_email) %></p>
+      <% end %>
+    <% end %>
+
+    <% if @event.video_url %>
+      <h2 class="strapline-article">Video</h2>
+      <div class="responsive-video">
+        <iframe class="responsive-video__iframe" src="<%= embed_event_video_url(@event.video_url) %>"></iframe>
+      </div>
+      <br />
+    <% end %>
+
+    <% if event_status_open?(@event) %>
+      <% if can_sign_up_online?(@event) %>
+        <h2 class="strapline-article">How to attend</h2>
+        <p>
+        To attend this event, you must register for a place. Once registered, you will receive log-in information and joining instructions via email.
+        Please note: to access this event you will require a laptop/desktop pc and be using chrome as your browser.
+        </p>
+        <p>
+        <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
+          Sign up for this <span>event</span>
+        <% end %>
+        </p>
+      <% elsif is_event_type?(@event, "School or University Event") %>
+        <h2 class="strapline-article">How to attend</h2>
+        <p>To register for this event, follow the instructions in the event information section.</p>
+      <% elsif @event.provider_website_url %>
+        <h2 class="strapline-article">How to attend</h2>
+        <p>To attend this event, please <%= link_to("visit this website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i>.<p>
+      <% elsif @event.provider_contact_email %>
+        <h2 class="strapline-article">How to attend</h2>
+        <p>To attend this event, please <%= mail_to(@event.provider_contact_email, "email us") %>.<p>
+      <% end %>
+    <% end %>
+
+    <% if @event.scribble_id %>
+      <h2 class="strapline-article">Attend online</h2>
+    <% end %>
+
+    <% if @event.scribble_id %>
+      <div data-controller="scribble" data-scribble-id="<%= @event.scribble_id %>"></div>
+    <% end %>
+
+    <%= render "sections/page_question" %>
+  </div>
+
+</main>

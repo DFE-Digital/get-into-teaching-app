@@ -7,15 +7,15 @@
     image: "media/images/events-hero-dt.jpg")
 %>
 
-<section class="types-of-event">
-  <div class="content container-1000">
+<div class="content-container events">
+  <section class="types-of-event">
     <%= back_link(events_path, text: "Back") %>
 
     <div class="events-featured__text">
       <p><%= safe_html_format(t("find_an_event.types.#{@type.id}")) %></p>
     </div>
-  </div>
-</section>
+  </section>
+</div>
 
 <section class="search-for-events">
   <div class="container-1000">
@@ -29,24 +29,26 @@
   </div>
 </section>
 
-<% if @events.any? %>
-<section class="types-of-event content container-1000">
-  <div class="events-featured">
-    <div class="events-featured__list">
-      <%= render partial: "event", collection: @events %>
+<main class="events" role="main" id="main-content">
+  <% if @events.any? %>
+  <section class="types-of-event content container-1000">
+    <div class="events-featured">
+      <div class="events-featured__list">
+        <%= render partial: "event", collection: @events %>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<div class="event-pagination content container-1000">
-  <%= paginate @events %>
-</div>
-<% else %>
-<section class="content container-1000">
-  <div class="content__left">
-    <%= render(Events::NoResultsComponent.new) do %>
-      Sorry your search has not found any events, try a different location or month. <%= link_to("Search for another event type", events_path) %></a>.
-    <% end %>
+  <div class="event-pagination">
+    <%= paginate @events %>
   </div>
-</section>
-<% end %>
+  <% else %>
+  <section class="content container-1000">
+    <div class="content__left">
+      <%= render(Events::NoResultsComponent.new) do %>
+        Sorry your search has not found any events, try a different location or month. <%= link_to("Search for another event type", events_path) %></a>.
+      <% end %>
+    </div>
+  </section>
+  <% end %>
+</main>

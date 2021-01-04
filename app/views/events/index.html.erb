@@ -4,9 +4,9 @@
     mobileimage: "media/images/events-hero-mob.jpg")
 %>
 
-<section role="main" id="main-content">
+<div class="content-container">
     <section class="event-type-descriptions">
-      <div class="container-1000">
+      <div class="container column">
         <h2 class="strapline strapline--blue">Types of Events</h2>
         <section class="event-type-descriptions__content">
           <% GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.each do |type_id| %>
@@ -15,15 +15,17 @@
         </section>
       </div>
     </section>
+</div>
 
-    <section class="search-for-events">
-        <div class="container-1000">
-          <%= render Events::SearchComponent.new(@event_search, search_events_path(anchor: "searchforevents")) %>
-        </div>
-    </section>
+<section class="search-for-events">
+  <div class="container-1000">
+    <%= render Events::SearchComponent.new(@event_search, search_events_path(anchor: "searchforevents")) %>
+  </div>
+</section>
 
+<main class="events" role="main" id="main-content">
     <% unless @performed_search %>
-    <section class="content container-1000">
+    <section class="content container column">
       <div class="content-alert">
         <div class="content-alert__icon">
           <%= image_pack_tag "media/images/icon-moved-online-purple.svg", alt: "" %>
@@ -32,12 +34,12 @@
           <h4>Some events have moved online</h4>
           <p>Until it is safe to see you in person, the Train to Teach and most of School and University events are online.</p>
         </div>
-      </p>
+      </div>
     </section>
     <% end %>
 
     <% if @events_by_type.any? %>
-      <section class="content container-1000">
+      <section class="content container column">
         <% unless @performed_search %>
         <h2 class="strapline strapline--blue discover-events-strapline">Discover Events</h2>
         <% end %>
@@ -46,7 +48,7 @@
         <% end %>
       </section>
     <% else %>
-      <section class="content container-1000">
+      <section class="content container column">
         <div class="content__left">
           <%= render(Events::NoResultsComponent.new) do %>
             Sorry your search has not found any events, try a different type, location or month.
@@ -56,7 +58,7 @@
     <% end %>
 
     <section class="submit-event-cta">
-      <div class="container-1000">
+      <div class="container column">
         <div class="content-cta content-cta--center">
           <h2>Do you have a teaching event?</h2>
           <p>
@@ -71,4 +73,4 @@
     </section>
 
     <span data-controller="lid" data-lid-action="track" data-lid-event="Events"></span>
-</section>
+</main>

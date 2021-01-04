@@ -1,5 +1,17 @@
+.events.content {
+  h1 {
+    font-size: 250%;
+    padding: .5em 0;
+    margin-left: 0;
+  }
+}
+
 .types-of-event__header__icon {
   margin-bottom: 5px;
+}
+
+.types-of-event {
+  margin-bottom: 2em;
 }
 
 .event-type-descriptions {
@@ -25,7 +37,6 @@
     text-align: left;
     background-color: $grey;
     padding-bottom: 60px;
-    margin-bottom: 50px;
 
     .container-1000 {
         text-align: left;
@@ -153,6 +164,7 @@
 }
 
 .event-pagination {
+  margin-bottom: 4em;
     &.content {
         overflow: inherit;
     }
@@ -257,7 +269,7 @@
 
                 &__select {
                     display: block;
-                    
+
                     select {
                         margin-top: 10px;
                         margin-left: 0px;

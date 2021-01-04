@@ -1,11 +1,13 @@
 .event-info {
 
-    h1 {
-        margin: 1em 0 5px 0
+    h1.event-info__title {
+      font-size: 220%;
+      margin: 1.5em 0 0 20px;
     }
 
     &__date {
-      font-size: 1.4em;
+      margin: 0 auto 1.5em;
+      font-size: 120%;
     }
 
     &__venue {
@@ -34,7 +36,7 @@
 @media only screen and (max-width: 800px) {
 
     .event-info {
-        
+
         &__eventbox {
             display: block;
             width: 100%;
