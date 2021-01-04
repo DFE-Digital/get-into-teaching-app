@@ -79,10 +79,6 @@ RSpec/ExpectInHook:
   Exclude:
     - spec/**/*.rb
 
-RSpec/FilePath:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/HookArgument:
   Exclude:
     - spec/**/*.rb
