@@ -123,10 +123,6 @@ RSpec/ReceiveCounts:
   Exclude:
     - spec/**/*.rb
 
-RSpec/RepeatedDescription:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/ReturnFromStub:
   Exclude:
     - spec/**/*.rb
