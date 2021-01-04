@@ -44,10 +44,6 @@ Style/SignalException:
 
 # FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
-FactoryBot/FactoryClassName:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/BeEql:
   Exclude:
     - spec/**/*.rb

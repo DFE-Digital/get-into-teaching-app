@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :events_personalised_updates, class: Events::Steps::PersonalisedUpdates do
+  factory :events_personalised_updates, class: "Events::Steps::PersonalisedUpdates" do
     degree_status_id do
       GetIntoTeachingApiClient::PickListItemsApi.new
         .get_qualification_degree_status.first.id
