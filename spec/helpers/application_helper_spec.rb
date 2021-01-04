@@ -28,15 +28,25 @@ describe ApplicationHelper do
 
     it { is_expected.to have_css "body h1" }
 
-    context "includes stimulus controllers" do
+    describe "the stimulus controllers" do
       it { is_expected.to have_css "body[data-controller~=gtm]" }
       it { is_expected.to have_css "body[data-controller~=pinterest]" }
       it { is_expected.to have_css "body[data-controller~=snapchat]" }
       it { is_expected.to have_css "body[data-controller~=facebook]" }
       it { is_expected.to have_css "body[data-controller~=twitter]" }
+
+      context "with additional stimulus controller" do
+        subject { analytics_body_tag(data: { controller: "atest" }) { tag.hr } }
+        it { is_expected.to have_css "body[data-controller~=gtm]" }
+        it { is_expected.to have_css "body[data-controller~=pinterest]" }
+        it { is_expected.to have_css "body[data-controller~=snapchat]" }
+        it { is_expected.to have_css "body[data-controller~=facebook]" }
+        it { is_expected.to have_css "body[data-controller~=twitter]" }
+        it { is_expected.to have_css "body[data-controller~=atest]" }
+      end
     end
 
-    context "assigns service ids" do
+    describe "the service ids" do
       it { is_expected.to have_css "body[data-analytics-gtm-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-adwords-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-pinterest-id=1234]" }
@@ -45,49 +55,39 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-analytics-twitter-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-bam-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-lid-id=1234]" }
+
+      context "with blank service ids" do
+        let(:id) { "" }
+        it { is_expected.to have_css "body[data-analytics-gtm-id=\"\"]" }
+        it { is_expected.to have_css "body[data-analytics-adwords-id=\"\"]" }
+        it { is_expected.to have_css "body[data-analytics-pinterest-id=\"\"]" }
+        it { is_expected.to have_css "body[data-analytics-snapchat-id=\"\"]" }
+        it { is_expected.to have_css "body[data-analytics-facebook-id=\"\"]" }
+        it { is_expected.to have_css "body[data-analytics-twitter-id=\"\"]" }
+        it { is_expected.to have_css "body[data-analytics-bam-id=\"\"]" }
+        it { is_expected.to have_css "body[data-analytics-lid-id=\"\"]" }
+      end
+
+      context "with no service ids" do
+        let(:id) { nil }
+        it { is_expected.not_to have_css "body[data-analytics-gtm-id]" }
+        it { is_expected.not_to have_css "body[data-analytics-adwords-id]" }
+        it { is_expected.not_to have_css "body[data-analytics-pinterest-id]" }
+        it { is_expected.not_to have_css "body[data-analytics-snapchat-id]" }
+        it { is_expected.not_to have_css "body[data-analytics-facebook-id]" }
+        it { is_expected.not_to have_css "body[data-analytics-twitter-id]" }
+        it { is_expected.not_to have_css "body[data-analytics-bam-id]" }
+        it { is_expected.not_to have_css "body[data-analytics-lid-id]" }
+      end
     end
 
-    context "with blank service ids" do
-      let(:id) { "" }
-      it { is_expected.to have_css "body[data-analytics-gtm-id=\"\"]" }
-      it { is_expected.to have_css "body[data-analytics-adwords-id=\"\"]" }
-      it { is_expected.to have_css "body[data-analytics-pinterest-id=\"\"]" }
-      it { is_expected.to have_css "body[data-analytics-snapchat-id=\"\"]" }
-      it { is_expected.to have_css "body[data-analytics-facebook-id=\"\"]" }
-      it { is_expected.to have_css "body[data-analytics-twitter-id=\"\"]" }
-      it { is_expected.to have_css "body[data-analytics-bam-id=\"\"]" }
-      it { is_expected.to have_css "body[data-analytics-lid-id=\"\"]" }
-    end
-
-    context "with no service ids" do
-      let(:id) { nil }
-      it { is_expected.not_to have_css "body[data-analytics-gtm-id]" }
-      it { is_expected.not_to have_css "body[data-analytics-adwords-id]" }
-      it { is_expected.not_to have_css "body[data-analytics-pinterest-id]" }
-      it { is_expected.not_to have_css "body[data-analytics-snapchat-id]" }
-      it { is_expected.not_to have_css "body[data-analytics-facebook-id]" }
-      it { is_expected.not_to have_css "body[data-analytics-twitter-id]" }
-      it { is_expected.not_to have_css "body[data-analytics-bam-id]" }
-      it { is_expected.not_to have_css "body[data-analytics-lid-id]" }
-    end
-
-    context "default events" do
+    describe "the default events" do
       it { is_expected.to have_css "body[data-snapchat-action=track]" }
       it { is_expected.to have_css "body[data-snapchat-event=PAGE_VIEW]" }
       it { is_expected.to have_css "body[data-facebook-action=track]" }
       it { is_expected.to have_css "body[data-facebook-event=PageView]" }
       it { is_expected.to have_css "body[data-twitter-action=track]" }
       it { is_expected.to have_css "body[data-twitter-event=PageView]" }
-    end
-
-    context "with additional stimulus controller" do
-      subject { analytics_body_tag(data: { controller: "atest" }) { tag.hr } }
-      it { is_expected.to have_css "body[data-controller~=gtm]" }
-      it { is_expected.to have_css "body[data-controller~=pinterest]" }
-      it { is_expected.to have_css "body[data-controller~=snapchat]" }
-      it { is_expected.to have_css "body[data-controller~=facebook]" }
-      it { is_expected.to have_css "body[data-controller~=twitter]" }
-      it { is_expected.to have_css "body[data-controller~=atest]" }
     end
 
     context "with other data attributes" do
@@ -136,7 +136,7 @@ describe ApplicationHelper do
       expect(subject).to have_css("span.fas.fa-#{icon_name}")
     end
 
-    context "FA styles" do
+    context "with FA styles" do
       let(:style) { "fad" }
       subject { helper.fa_icon(icon_name, style: style) }
 
@@ -145,7 +145,7 @@ describe ApplicationHelper do
       end
     end
 
-    context "extra clases" do
+    context "with extra classes" do
       let(:extra_classes) { %w[abc def] }
       subject { helper.fa_icon(icon_name, *extra_classes) }
 

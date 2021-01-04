@@ -39,7 +39,7 @@ describe Events::GroupPresenter do
       end
     end
 
-    context "sorting within an event type" do
+    describe "sorting within an event type" do
       let(:early) { build(:event_api, :online_event, start_at: 1.week.from_now) }
       let(:middle) { build(:event_api, :online_event, start_at: 2.weeks.from_now) }
       let(:late) { build(:event_api, :online_event, start_at: 3.weeks.from_now) }

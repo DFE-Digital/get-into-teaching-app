@@ -101,7 +101,7 @@ RSpec.describe Pages::Frontmatter do
   end
 
   describe "#select" do
-    context "stories with matching key" do
+    context "with matching key" do
       subject { instance.select :section }
 
       it { is_expected.to include "/first" }
@@ -109,7 +109,7 @@ RSpec.describe Pages::Frontmatter do
       it { is_expected.to include "/third" }
     end
 
-    context "stories with matching key and value" do
+    context "with matching key and value" do
       subject { instance.select section: "stories" }
 
       it { is_expected.to include "/first" }

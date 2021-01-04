@@ -47,7 +47,8 @@ Style/SignalException:
 
 RSpec/ContextWording:
   Exclude:
-    - spec/**/*.rb
+    - spec/support/*.rb
+
 RSpec/DescribeClass:
   Exclude:
     - spec/**/*.rb

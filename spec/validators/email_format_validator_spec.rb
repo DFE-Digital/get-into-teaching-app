@@ -16,7 +16,7 @@ describe EmailFormatValidator do
   before { instance.valid? }
   subject { instance.errors.to_h }
 
-  context "invalid addresses" do
+  context "with invalid addresses" do
     %w[test.com test@@test.com test@test test@test.].each do |email|
       let(:instance) { test_model.new(email: email) }
 
@@ -34,7 +34,7 @@ describe EmailFormatValidator do
     end
   end
 
-  context "valid addresses" do
+  context "with valid addresses" do
     %w[test@example.com testymctest@gmail.com test%.mctest@domain.co.uk]
       .each do |email|
       let(:instance) { test_model.new(email: email) }

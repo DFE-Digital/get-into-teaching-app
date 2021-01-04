@@ -56,7 +56,7 @@ describe MailingList::StepsController do
       it { is_expected.to have_http_status :success }
     end
 
-    context "for last step" do
+    context "with last step" do
       let(:steps) { MailingList::Wizard.steps }
       let(:model) { steps.last }
       let(:details_params) { attributes_for :"mailing_list_#{model.key}" }

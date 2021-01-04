@@ -9,11 +9,11 @@ describe GuidanceController do
       response
     end
 
-    context "for known page" do
+    context "with known page" do
       it { is_expected.to have_http_status :success }
     end
 
-    context "for unknown page" do
+    context "with unknown page" do
       let(:template) { "testing/other-page" }
 
       it { is_expected.to have_http_status :not_found }

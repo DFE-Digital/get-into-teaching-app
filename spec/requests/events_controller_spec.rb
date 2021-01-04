@@ -92,7 +92,7 @@ describe EventsController do
 
     subject { response }
 
-    context "for known event" do
+    context "with known event" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
           receive(:get_teaching_event).and_return event
@@ -102,23 +102,21 @@ describe EventsController do
 
       it { is_expected.to have_http_status :success }
 
-      context "within the response body" do
+      describe "the response body" do
         subject { response.body }
 
-        context "event information" do
-          it { is_expected.to include(event.name) }
-          it { is_expected.to include(event.description) }
-          it { is_expected.to include(event.message) }
-          it { is_expected.to include(event.building.venue) }
-          it { is_expected.to match(/#{event.building.address_line1}/) }
-          it { is_expected.to match(/#{event.building.address_line2}/) }
-          it { is_expected.to match(/#{event.building.address_postcode}/) }
-          it { is_expected.to match(/iframe.+src="#{event.video_url}"/) }
-          it { is_expected.to include(event.provider_website_url) }
-          it { is_expected.to include(event.provider_target_audience) }
-          it { is_expected.to include(event.provider_organiser) }
-          it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
-        end
+        it { is_expected.to include(event.name) }
+        it { is_expected.to include(event.description) }
+        it { is_expected.to include(event.message) }
+        it { is_expected.to include(event.building.venue) }
+        it { is_expected.to match(/#{event.building.address_line1}/) }
+        it { is_expected.to match(/#{event.building.address_line2}/) }
+        it { is_expected.to match(/#{event.building.address_postcode}/) }
+        it { is_expected.to match(/iframe.+src="#{event.video_url}"/) }
+        it { is_expected.to include(event.provider_website_url) }
+        it { is_expected.to include(event.provider_target_audience) }
+        it { is_expected.to include(event.provider_organiser) }
+        it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
 
         context "when the event can be registered for online" do
           let(:event) { build(:event_api, web_feed_id: "123", readable_id: event_readable_id) }
@@ -170,7 +168,7 @@ describe EventsController do
       end
     end
 
-    context "for unknown event" do
+    context "with unknown event" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
           receive(:get_teaching_event).and_raise GetIntoTeachingApiClient::ApiError.new(code: 404)

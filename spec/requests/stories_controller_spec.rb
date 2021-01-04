@@ -1,13 +1,13 @@
 require "rails_helper"
 
 shared_examples "page cannot be found" do |template|
-  context "for unknown page" do
+  context "with unknown page" do
     let(:template) { template }
     it { is_expected.to have_http_status :not_found }
     it { is_expected.to have_attributes body: %r{Page not found} }
   end
 
-  context "for invalid page page" do
+  context "with invalid page" do
     let(:template) { "../../secrets.txt" }
     it { is_expected.to have_http_status :not_found }
     it { is_expected.to have_attributes body: %r{Page not found} }
@@ -23,7 +23,7 @@ describe StoriesController do
       response
     end
 
-    context "for known page" do
+    context "with known page" do
       it { is_expected.to have_http_status :success }
     end
 
@@ -36,7 +36,7 @@ describe StoriesController do
       response
     end
 
-    context "for known page" do
+    context "with known page" do
       it { is_expected.to have_http_status :success }
     end
 
@@ -49,7 +49,7 @@ describe StoriesController do
       response
     end
 
-    context "for known page" do
+    context "with known page" do
       it { is_expected.to have_http_status :success }
     end
 

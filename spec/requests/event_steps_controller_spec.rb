@@ -82,7 +82,7 @@ describe EventStepsController do
       it { is_expected.to have_http_status :success }
     end
 
-    context "for last step" do
+    context "with last step" do
       context "when all valid" do
         before do
           allow_any_instance_of(Events::Steps::PersonalDetails).to \
