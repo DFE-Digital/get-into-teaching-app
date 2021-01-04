@@ -1,10 +1,16 @@
 require "rails_helper"
 
 describe EmailFormatValidator do
-  class TestModel
-    include ActiveModel::Model
-    attr_accessor :email
-    validates :email, email_format: true
+  let :test_model do
+    Class.new do
+      include ActiveModel::Model
+      attr_accessor :email
+      validates :email, email_format: true
+
+      def self.model_name
+        ActiveModel::Name.new(self, nil, "test")
+      end
+    end
   end
 
   before { instance.valid? }
@@ -12,7 +18,7 @@ describe EmailFormatValidator do
 
   context "invalid addresses" do
     %w[test.com test@@test.com test@test test@test.].each do |email|
-      let(:instance) { TestModel.new(email: email) }
+      let(:instance) { test_model.new(email: email) }
 
       it "#{email} should not be valid" do
         is_expected.to include email: "is invalid"
@@ -20,7 +26,7 @@ describe EmailFormatValidator do
     end
 
     context "when over 100 characters" do
-      let(:instance) { TestModel.new(email: "#{'a' * 100}@test.com") }
+      let(:instance) { test_model.new(email: "#{'a' * 100}@test.com") }
 
       it "is not be valid" do
         is_expected.to include email: "is invalid"
@@ -31,7 +37,7 @@ describe EmailFormatValidator do
   context "valid addresses" do
     %w[test@example.com testymctest@gmail.com test%.mctest@domain.co.uk]
       .each do |email|
-      let(:instance) { TestModel.new(email: email) }
+      let(:instance) { test_model.new(email: email) }
 
       it "#{email} should be valid" do
         is_expected.not_to include :email

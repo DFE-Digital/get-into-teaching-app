@@ -13,6 +13,7 @@ AllCops:
     - db/schema.rb
     - bin/*
     - node_modules/**/*
+    - spec/models/wizard/**/* # Separate PR splits this out into gem
 
 Capybara/FeatureMethods:
   Enabled: false
@@ -99,10 +100,6 @@ RSpec/InstanceVariable:
     - spec/**/*.rb
 
 RSpec/LeadingSubject:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/LeakyConstantDeclaration:
   Exclude:
     - spec/**/*.rb
 
