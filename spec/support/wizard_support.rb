@@ -35,7 +35,7 @@ shared_examples "an issue verification code wizard step" do
       it "does not call the API" do
         subject.email = nil
         subject.save
-        expect_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to_not receive(:create_candidate_access_token)
+        expect_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).not_to receive(:create_candidate_access_token)
       end
     end
 

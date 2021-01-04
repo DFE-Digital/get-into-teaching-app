@@ -137,7 +137,7 @@ describe EventsHelper, type: "helper" do
     end
 
     it "returns the address, comma separated with line breaks between parts" do
-      expect(event.building).to_not be_nil
+      expect(event.building).not_to be_nil
       expect(event_address(event)).to eq("Line 1,\nLine 2,\nManchester,\nMA1 1AM")
     end
   end

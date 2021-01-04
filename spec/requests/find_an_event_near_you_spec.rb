@@ -136,11 +136,11 @@ describe "Find an event near you" do
     end
 
     it "does not display the events moved online notice" do
-      expect(response.body).to_not include("Some events have moved online")
+      expect(response.body).not_to include("Some events have moved online")
     end
 
     it "does not display the discover events heading" do
-      expect(response.body).to_not include("Discover Events")
+      expect(response.body).not_to include("Discover Events")
     end
 
     it "categorises the results" do

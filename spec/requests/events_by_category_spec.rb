@@ -124,7 +124,7 @@ describe "View events by category" do
 
       subject { parsed_response.css(".no-results").first }
 
-      it { is_expected.to_not be_nil }
+      it { is_expected.not_to be_nil }
       it { expect(subject.text).to include("Sorry your search has not found any events") }
     end
   end

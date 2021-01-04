@@ -237,7 +237,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "You’ve already signed up"
-    expect(page).to_not have_button("Next Step")
+    expect(page).not_to have_button("Next Step")
   end
 
   scenario "Full journey as an existing candidate that has already subscribed to a teacher training adviser" do
@@ -261,7 +261,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "You have already signed up to an adviser"
-    expect(page).to_not have_button("Next Step")
+    expect(page).not_to have_button("Next Step")
   end
 
   scenario "Start as an existing candidate then switch to new candidate" do

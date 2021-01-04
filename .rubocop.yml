@@ -130,10 +130,6 @@ RSpec/NestedGroups:
   Exclude:
     - spec/**/*.rb
 
-RSpec/NotToNot:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/ReceiveCounts:
   Exclude:
     - spec/**/*.rb

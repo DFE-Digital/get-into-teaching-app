@@ -30,7 +30,7 @@ describe Wizard::Steps::Authenticate do
 
     it "returns false if authenticate is true" do
       wizardstore["authenticate"] = true
-      expect(subject).to_not be_skipped
+      expect(subject).not_to be_skipped
     end
   end
 
@@ -72,7 +72,7 @@ describe Wizard::Steps::Authenticate do
       it "does not attempt to call the API" do
         subject.timed_one_time_password = nil
         subject.save
-        expect { subject.save }.to_not raise_error
+        expect { subject.save }.not_to raise_error
       end
 
       it "does not set authenticated to true" do
@@ -93,7 +93,7 @@ describe Wizard::Steps::Authenticate do
       end
 
       it "does not call the API on validation if already authenticated" do
-        expect(subject).to_not receive(:perform_existing_candidate_request)
+        expect(subject).not_to receive(:perform_existing_candidate_request)
         wizardstore["authenticated"] = true
         subject.timed_one_time_password = "123456"
         subject.valid?

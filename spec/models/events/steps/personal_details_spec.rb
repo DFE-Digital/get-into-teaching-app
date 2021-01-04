@@ -18,11 +18,11 @@ describe Events::Steps::PersonalDetails do
   end
 
   context "first_name" do
-    it { is_expected.to_not allow_value("a" * 257).for :first_name }
+    it { is_expected.not_to allow_value("a" * 257).for :first_name }
   end
 
   context "last_name" do
-    it { is_expected.to_not allow_value("a" * 257).for :last_name }
+    it { is_expected.not_to allow_value("a" * 257).for :last_name }
   end
 
   context "email address" do
