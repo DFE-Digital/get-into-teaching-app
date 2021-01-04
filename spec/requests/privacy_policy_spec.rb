@@ -11,14 +11,14 @@ describe "GET /privacy-policy" do
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
-        receive(:get_latest_privacy_policy).and_return(policy)
+        receive(:get_latest_privacy_policy).with(no_args).and_return(policy)
     end
 
     it { is_expected.to have_http_status :success }
     it { expect(subject.body).to include(policy.text) }
   end
 
-  context "when viewing the latest privacy policy" do
+  context "when viewing a privacy policy by id" do
     subject do
       get(privacy_policy_path(id: policy.id))
       response
