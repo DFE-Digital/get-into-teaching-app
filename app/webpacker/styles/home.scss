@@ -1,3 +1,8 @@
+.home {
+  h3 {
+    font-size: 150%;
+  }
+}
 .my-story {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -334,7 +339,7 @@
     background: $yellow;
     position: relative;
     padding: 80px 0;
-    margin-bottom: 70px;
+    margin: 2em 0;
     &__text {
         width: 60%;
         margin-left: 50px;

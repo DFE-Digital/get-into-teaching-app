@@ -3,7 +3,6 @@
     height: 112px;
     width: 100%;
     background-color: $white;
-        border-bottom: 1px solid #CCCCCC;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,22 +13,22 @@
         float:right;
         margin-top:20px;
         margin-right: 20px;
-    
+
         div {
             width: 100%;
             height: 30px;
         }
-        
-        ul {    
+
+        ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
-    
+
         li {
             float: right;
         }
-    
+
         li a {
             @include font;
             font-size: 16px;
@@ -56,13 +55,13 @@
         float:right;
         margin-top: 0px;
         margin-right: 20px;
-    
+
         div {
             width: 100%;
             height: 30px;
         }
-        
-        ul {    
+
+        ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -70,12 +69,12 @@
             flex-wrap: wrap;
             justify-content: flex-end;
         }
-    
+
         li {
             float: right;
             padding: 8px 16px;
         }
-    
+
         li a {
             @include font;
             font-size: 16px;
@@ -91,22 +90,22 @@
 
         $border-width: 2.5px;
         $padding-space: 2.5px;
-      
+
         %hover-shared {
           padding-bottom: 2.5px;
           margin-bottom: -$border-width - $padding-space;
         }
-      
+
         a:hover:not(:focus):not(.active) {
           @extend %hover-shared;
           border-bottom: solid $border-width $black;
         }
-      
+
         .active a:hover:not(:focus) {
           @extend %hover-shared;
           border-bottom: solid $border-width $white;
         }
-      
+
         .active {
           background-color: $blue-dark;
           a {
@@ -116,9 +115,9 @@
     }
 
     &__mobile {
-        
+
         display:none;
-    
+
         a {
             text-decoration: none;
         }
@@ -157,7 +156,7 @@
             padding: 1px;
             background-color: $grey;
             width: 100%;
-        
+
             a {
                 display: block;
                 text-align: center;
@@ -182,7 +181,7 @@
 
         &__container {
             margin-right : 10px;
-            margin-top :47px; 
+            margin-top :47px;
         }
     }
 
@@ -220,7 +219,7 @@
         left:-10px;
         z-index: 1000;
 
-    
+
         img {
             transform: rotate(3deg);
             margin-left: 40px;
@@ -297,7 +296,7 @@
             }
         }
     }
-    
+
     .navbar {
 
         position: relative;
@@ -311,7 +310,7 @@
         display: block;
         width: 100%;
     }
-    
+
 }
 
 .skiplink {

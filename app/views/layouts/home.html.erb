@@ -8,9 +8,9 @@
             </div>
         </div>
         <%= render "sections/header" %>
-        <main role="main" id="main-content">
+        <main class="home" role="main" id="main-content">
             <%= render Sections::HeroComponent.new(@front_matter) %>
-            <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
+            <section>
                 <%= yield %>
                 <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
             </section>
