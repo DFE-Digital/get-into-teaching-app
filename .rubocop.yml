@@ -115,10 +115,6 @@ RSpec/NestedGroups:
   Exclude:
     - spec/**/*.rb
 
-RSpec/ReceiveCounts:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/ReturnFromStub:
   Exclude:
     - spec/**/*.rb
