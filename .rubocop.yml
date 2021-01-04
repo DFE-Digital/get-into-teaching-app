@@ -45,9 +45,6 @@ Style/SignalException:
 
 # FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
-RSpec/ContextMethod:
-  Exclude:
-    - spec/**/*.rb
 RSpec/ContextWording:
   Exclude:
     - spec/**/*.rb

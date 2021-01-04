@@ -3,7 +3,7 @@ require "rails_helper"
 describe PagesController do
   include_context "always render testing page"
 
-  context "#show" do
+  describe "#show" do
     context "without caching enabled" do
       it "Should not have cache headers" do
         get "/test"

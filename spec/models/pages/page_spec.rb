@@ -30,7 +30,7 @@ RSpec.describe Pages::Page do
 
     it_behaves_like "a page", "Hello World 1", "/page1", "content/page1"
 
-    context "#with multiple featured stories" do
+    context "with multiple featured stories" do
       before { allow(Pages::Frontmatter).to receive(:select).and_return pages }
 
       let(:pages) do

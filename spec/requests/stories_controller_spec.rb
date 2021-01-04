@@ -17,7 +17,7 @@ end
 describe StoriesController do
   include_context "always render testing page"
 
-  context "#landing" do
+  describe "#landing" do
     subject do
       get "/my-story-into-teaching/"
       response
@@ -30,7 +30,7 @@ describe StoriesController do
     include_examples "page cannot be found", "testing/unknown"
   end
 
-  context "#index" do
+  describe "#index" do
     subject do
       get "/my-story-into-teaching/returners"
       response
@@ -43,7 +43,7 @@ describe StoriesController do
     include_examples "page cannot be found", "testing/unknown"
   end
 
-  context "#show" do
+  describe "#show" do
     subject do
       get "/my-story-into-teaching/returners/known-page"
       response
