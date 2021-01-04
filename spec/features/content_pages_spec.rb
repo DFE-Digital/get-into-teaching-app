@@ -89,7 +89,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
     end
   end
 
-  content_urls.slice(0, 1).each do |first_url|
+  content_urls.first.tap do |first_url|
     describe "navbar" do
       subject { page }
 
