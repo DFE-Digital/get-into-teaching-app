@@ -45,7 +45,7 @@ describe Stories::StoryComponent, type: "component" do
 
   describe "metadata content" do
     specify "renders a story" do
-      is_expected.to have_css("article.story")
+      is_expected.to have_css("main.story")
     end
 
     specify "the story's title forms the main heading" do
@@ -159,7 +159,7 @@ describe Stories::StoryComponent, type: "component" do
     let(:more_stories) { front_matter[:more_stories].length }
 
     specify "renders a story" do
-      is_expected.to have_css("article.story")
+      is_expected.to have_css("main.story")
     end
 
     specify "there should be a story card for each story" do

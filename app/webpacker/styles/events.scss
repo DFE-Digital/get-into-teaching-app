@@ -137,6 +137,10 @@
     &__text {
       max-width: 70%;
       margin-bottom: 30px;
+
+      @media only screen and (max-width: 800px) {
+        margin: 0 1em;
+      }
     }
 
     &__list {
