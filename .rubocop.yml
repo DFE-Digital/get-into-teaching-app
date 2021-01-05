@@ -3,6 +3,27 @@ inherit_gem:
     - config/default.yml
     - config/rails.yml
 
+require:
+  - rubocop-rspec
+
+AllCops:
+  Exclude:
+    - Rakefile
+    - config.ru
+    - db/schema.rb
+    - bin/*
+    - node_modules/**/*
+
+Capybara/FeatureMethods:
+  Enabled: false
+
+Lint/AmbiguousOperator:
+  Enabled: false
+
+Rails/LexicallyScopedActionFilter:
+  Exclude:
+    - 'app/controllers/**/*steps_controller.rb'
+
 Rails/UnknownEnv:
   Environments:
     - development
@@ -12,12 +33,143 @@ Rails/UnknownEnv:
     - userresearch
     - production
 
-Lint/AmbiguousOperator:
+RSpec/AnyInstance:
+  Enabled: false
+
+RSpec/ImplicitSubject:
   Enabled: false
 
 Style/SignalException:
   Enabled: false
 
-Rails/LexicallyScopedActionFilter:
+# FIXME Temporary whilst updating specs - to be removed in subsequent PRs
+
+FactoryBot/FactoryClassName:
   Exclude:
-    - 'app/controllers/**/*steps_controller.rb'
+    - spec/**/*.rb
+
+RSpec/BeEql:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/ContextMethod:
+  Exclude:
+    - spec/**/*.rb
+RSpec/ContextWording:
+  Exclude:
+    - spec/**/*.rb
+RSpec/DescribeClass:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/DescribedClass:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/EmptyLineAfterFinalLet:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/EmptyLineAfterHook:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/EmptyLineAfterSubject:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/ExampleLength:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/ExampleWording:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/ExpectInHook:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/FilePath:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/HookArgument:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/HooksBeforeExamples:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/InstanceVariable:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/LeadingSubject:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/LeakyConstantDeclaration:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/LetBeforeExamples:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/MessageSpies:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/MultipleExpectations:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/NamedSubject:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/NestedGroups:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/NotToNot:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/ReceiveCounts:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/RepeatedDescription:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/RepeatedExampleGroupDescription:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/ReturnFromStub:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/ScatteredLet:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/ScatteredSetup:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/SharedContext:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/SubjectStub:
+  Exclude:
+    - spec/**/*.rb
+
+RSpec/VerifiedDoubles:
+  Exclude:
+    - spec/**/*.rb
