@@ -5,38 +5,40 @@
       <%= render "sections/header" %>
       <%= render Sections::HeroComponent.new(@front_matter) %>
 
-
-      <main class="content container-1000 story-landing" role="main" id="main-content">
-        <div class="stories-feature">
-          <div class="stories-feature__image" style="background-image:url('/assets/images/victoria.jpg')"></div>
-          <div class="stories-feature__content">
-            <%= tag.h2(@front_matter.dig("featured_story", "heading")) %>
-            <%= tag.h3(@front_matter.dig("featured_story", "subheading")) %>
-            <%= tag.p(@front_matter.dig("featured_story", "text")) %>
-            <%= link_to(@front_matter.dig("featured_story", "link"), class: "git-link") do %>
-              Read <%= @front_matter.dig("featured_story", "name") %>’s story <%= fas_icon("chevron-right") %>
-            <% end %>
+      <main class="semantic story-landing" role="main" id="main-content">
+        <section class="feature">
+          <div class="stories-feature">
+            <div class="stories-feature__image" style="background-image:url('/assets/images/victoria.jpg')"></div>
+            <div class="stories-feature__content">
+              <%= tag.h2(@front_matter.dig("featured_story", "heading")) %>
+              <%= tag.h3(@front_matter.dig("featured_story", "subheading")) %>
+              <%= tag.p(@front_matter.dig("featured_story", "text")) %>
+              <%= link_to(@front_matter.dig("featured_story", "link"), class: "git-link") do %>
+                Read <%= @front_matter.dig("featured_story", "name") %>’s story <%= fas_icon("chevron-right") %>
+              <% end %>
+            </div>
           </div>
-        </div>
-        <% @front_matter["sections"]&.each do |name, section| %>
-          <section>
-            <header>
-              <%= tag.h2(name) %>
-              <%= tag.p(section["text"]) %>
-            </header>
-            <% if section["stories"].present? %>
-              <div class="cards stories">
-                <%= render Cards::RendererComponent.with_collection(section["stories"]) %>
-              </div>
 
-              <footer>
-                <%= link_to section["link"] do %>
-                  <span>Read all stories about <%= name.downcase %></span>
-                <% end %>
-              </footer>
-            <% end %>
-          </section>
-        <% end %>
+          <% @front_matter["sections"]&.each do |name, section| %>
+            <section>
+              <header>
+                <%= tag.h2(name) %>
+                <%= tag.p(section["text"]) %>
+              </header>
+              <% if section["stories"].present? %>
+                <div class="cards stories">
+                  <%= render Cards::RendererComponent.with_collection(section["stories"]) %>
+                </div>
+
+                <footer>
+                  <%= link_to section["link"] do %>
+                    <span>Read all stories about <%= name.downcase %></span>
+                  <% end %>
+                </footer>
+              <% end %>
+            </section>
+          <% end %>
+        </section>
       </main>
       <%= render "sections/footer" %>
       <%= render "components/videoplayer" %>

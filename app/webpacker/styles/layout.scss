@@ -41,3 +41,39 @@ body {
 .hidden {
     display: none;
 }
+
+
+
+// new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
+
+$content-max-width: 1000px;
+$mobile-wrap: 800px;
+
+main.semantic {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  max-width: $content-max-width;
+  margin: 1em .8em 3em;
+
+  @media only screen and (min-width: $mobile-wrap) {
+    flex-direction: row;
+    margin: 1em auto 4em;
+  }
+
+  > article {
+    flex: 0 0 70%;
+  }
+
+  > aside {
+    flex: 0 0 30%;
+  }
+
+  // feature: content that's not a regular text document, like a list of items on an index
+  // supplementary: content that's not directly related to the main article but might be of interest
+  > .feature,
+  > .supplementary {
+    flex: 0 0 100%;
+  }
+}
