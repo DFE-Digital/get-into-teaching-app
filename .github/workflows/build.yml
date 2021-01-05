@@ -147,10 +147,16 @@ jobs:
         run: |-
           echo "DOCKER IMAGE: '${{ steps.docker-image.outputs.image }}'"
 
-      - name: Extract latest commit message
-        id: latest-commit
+      - name: Generate commit message
         run: |-
-          echo ::set-output name=message::$(git show -s --format=%B HEAD)
+          echo "Updated base image to ${{ steps.sha.outputs.short}}" > commit.msg
+          echo >> commit.msg
+          echo ${{ steps.docker-image.outputs.image }} >> commit.msg
+          echo >> commit.msg
+          echo "-----" >> commit.msg
+          echo >> commit.msg
+          git show -s --format=%B HEAD >> commit.msg
+          echo >> commit.msg
 
       - name: Check out the Content
         uses: actions/checkout@v2
@@ -175,13 +181,7 @@ jobs:
           git config user.name "GiT Workflow Bot"
           git config user.email "<>"
           git add Dockerfile
-          git commit -m "Updated base image to ${{ steps.sha.outputs.short}}
-
-          ${{ steps.docker-image.outputs.image }}
-
-          -----
-
-          ${{ steps.latest-commit.outputs.message }}"
+          git commit -F ../commit.msg
 
       - name: Show last commit
         run: |-
