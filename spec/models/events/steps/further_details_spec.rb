@@ -5,33 +5,37 @@ describe Events::Steps::FurtherDetails do
 
   it_behaves_like "a wizard step"
 
-  context "attributes" do
+  describe "attributes" do
     it { is_expected.to respond_to :event_id }
     it { is_expected.to respond_to :privacy_policy }
     it { is_expected.to respond_to :subscribe_to_mailing_list }
     it { is_expected.to respond_to :accepted_policy_id }
   end
 
-  context "validations" do
+  describe "validations" do
     it { is_expected.to allow_value("abc123").for :event_id }
     it { is_expected.not_to allow_value("").for :event_id }
 
-    it { is_expected.to allow_value("1").for :privacy_policy }
-    it { is_expected.not_to allow_value("0").for :privacy_policy }
-    it { is_expected.not_to allow_value("").for :privacy_policy }
+    describe "for privacy_policy" do
+      it { is_expected.to allow_value("1").for :privacy_policy }
+      it { is_expected.not_to allow_value("0").for :privacy_policy }
+      it { is_expected.not_to allow_value("").for :privacy_policy }
+    end
 
-    it { is_expected.to allow_value("1").for :subscribe_to_mailing_list }
-    it { is_expected.to allow_value("0").for :subscribe_to_mailing_list }
-    it { is_expected.not_to allow_value("").for :subscribe_to_mailing_list }
+    describe "for subscribe_to_mailing_list" do
+      it { is_expected.to allow_values("1").for :subscribe_to_mailing_list }
+      it { is_expected.to allow_value("0").for :subscribe_to_mailing_list }
+      it { is_expected.not_to allow_value("").for :subscribe_to_mailing_list }
+    end
 
-    context "already_subscribed_to_mailing_list" do
+    describe "#already_subscribed_to_mailing_list" do
       let(:backingstore) { { "already_subscribed_to_mailing_list" => true } }
       it { is_expected.to allow_value("1").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("0").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("").for :subscribe_to_mailing_list }
     end
 
-    context "already_subscribed_to_teacher_training_adviser" do
+    describe "#already_subscribed_to_teacher_training_adviser" do
       let(:backingstore) { { "already_subscribed_to_teacher_training_adviser" => true } }
       it { is_expected.to allow_value("1").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("0").for :subscribe_to_mailing_list }

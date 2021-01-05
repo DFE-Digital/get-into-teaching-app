@@ -9,7 +9,7 @@ RSpec.describe MapsHelper, type: :helper do
     allow(Rails.application.config.x).to receive(:google_maps_key) { "12345" }
   end
 
-  context ".static_map_url" do
+  describe ".static_map_url" do
     subject do
       static_map_url(destination, mapsize: [300, 200], zoom: zoom)
     end
@@ -21,7 +21,7 @@ RSpec.describe MapsHelper, type: :helper do
     end
   end
 
-  context ".ajax_map" do
+  describe ".ajax_map" do
     subject { ajax_map(destination, mapsize: [300, 200], zoom: zoom) }
 
     it "includes wrapping div" do
@@ -38,7 +38,7 @@ RSpec.describe MapsHelper, type: :helper do
     end
   end
 
-  context ".external_map_url" do
+  describe ".external_map_url" do
     subject { external_map_url(destination: destination, name: "test", zoom: zoom) }
 
     it "adds in destination" do

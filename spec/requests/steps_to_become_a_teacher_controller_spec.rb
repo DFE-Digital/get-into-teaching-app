@@ -10,8 +10,6 @@ describe StepsToBecomeATeacherController do
       response
     end
 
-    context "viewing steps-to-become-a-teacher" do
-      it { is_expected.to have_http_status :success }
-    end
+    it { is_expected.to have_http_status :success }
   end
 end

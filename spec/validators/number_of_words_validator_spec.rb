@@ -17,8 +17,8 @@ describe NumberOfWordsValidator do
     validator.validate_each model, :description, description
   end
 
-  context "less than" do
-    context "too many words" do
+  context "with less_than argument" do
+    context "when too many words" do
       let :description do
         151.times.map { "word" }.join(" ")
       end
@@ -29,7 +29,7 @@ describe NumberOfWordsValidator do
       end
     end
 
-    context "correct number of words" do
+    context "when correct number of words" do
       let :description do
         149.times.map { "word" }.join(" ")
       end
@@ -39,7 +39,7 @@ describe NumberOfWordsValidator do
       end
     end
 
-    context "set to nil" do
+    context "when set to nil" do
       let :description do
         nil
       end

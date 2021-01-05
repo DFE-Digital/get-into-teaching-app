@@ -17,12 +17,12 @@ describe MailingList::Steps::DegreeStatus do
 
   it { is_expected.to respond_to :degree_status_id }
 
-  context "validations" do
+  describe "validations" do
     subject { instance.tap(&:valid?).errors.messages }
     it { is_expected.to include(:degree_status_id) }
   end
 
-  context "degree_status_id" do
+  describe "#degree_status_id" do
     let(:options) { degree_status_option_types.map(&:id) }
     it { is_expected.to allow_value(options.first).for :degree_status_id }
     it { is_expected.to allow_value(options.last).for :degree_status_id }

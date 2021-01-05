@@ -58,7 +58,7 @@ describe "View events by category" do
     end
   end
 
-  context "filtering the results" do
+  describe "filtering the results" do
     let(:postcode) { "TE57 1NG" }
     let(:radius) { 30 }
     let(:start_of_today) { DateTime.now.utc.beginning_of_day }
@@ -72,7 +72,7 @@ describe "View events by category" do
     end
   end
 
-  context "pagination" do
+  describe "pagination" do
     before { get(path) }
 
     let(:events_per_page) { EventsController::EVENTS_PER_PAGE }
@@ -83,7 +83,7 @@ describe "View events by category" do
       let(:path) { event_category_events_path("train-to-teach-events") }
       let(:events) { build_list(:event_api, events_per_page + extra_events) }
 
-      context "pagination links" do
+      describe "pagination links" do
         specify "only the first page of events is shown" do
           expect(parsed_response.css(".event-box")).to have_attributes(size: 9)
         end
@@ -102,7 +102,7 @@ describe "View events by category" do
         end
       end
 
-      context "accessing later pages" do
+      describe "accessing later pages" do
         let(:path) { event_category_events_path("train-to-teach-events", page: 2) }
 
         specify "only the first page of events is shown" do

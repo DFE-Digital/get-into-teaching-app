@@ -32,7 +32,7 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
       class: "git-link"
   end
 
-  context "With different title" do
+  context "with different title" do
     let(:frontmatter) do
       original.deep_merge featured_story_card: { "title" => "Featured" }
     end
@@ -44,13 +44,13 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
     it { is_expected.to have_content "Page title" }
   end
 
-  context "Without snippet" do
+  context "without snippet" do
     let(:frontmatter) { original.without :title }
 
     it { expect { subject }.to raise_exception described_class::MissingTitleOnFeatured }
   end
 
-  context "Without featured story" do
+  context "without featured story" do
     let(:featured_page) { nil }
 
     it { expect { subject }.to raise_exception described_class::NoFeaturedStory }

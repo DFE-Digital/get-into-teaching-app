@@ -73,7 +73,7 @@ describe StaticPages do
     end
   end
 
-  context "#filtered_page_template" do
+  describe "#filtered_page_template" do
     let(:params) { { page: template } }
     before { allow(tester).to receive(:params).and_return params }
     subject { tester.send :filtered_page_template }

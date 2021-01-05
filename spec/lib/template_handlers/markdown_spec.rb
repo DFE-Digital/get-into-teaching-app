@@ -3,7 +3,7 @@ require "rails_helper"
 describe TemplateHandlers::Markdown, type: :view do
   subject { rendered }
 
-  context "generic markdown page" do
+  context "with generic markdown page" do
     let(:markdown) do
       <<~MARKDOWN
         # Heading
@@ -139,7 +139,7 @@ describe TemplateHandlers::Markdown, type: :view do
     end
   end
 
-  context "global frontmatter" do
+  describe "global frontmatter" do
     let :global_front_matter do
       {
         "title" => "Default page title",

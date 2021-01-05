@@ -10,8 +10,6 @@ describe WaysToTrainController do
       response
     end
 
-    context "viewing ways-to-train" do
-      it { is_expected.to have_http_status :success }
-    end
+    it { is_expected.to have_http_status :success }
   end
 end

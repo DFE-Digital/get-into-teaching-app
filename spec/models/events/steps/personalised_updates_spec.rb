@@ -6,14 +6,14 @@ describe Events::Steps::PersonalisedUpdates do
 
   it_behaves_like "a wizard step"
 
-  context "attributes" do
+  describe "attributes" do
     it { is_expected.to respond_to :address_postcode }
     it { is_expected.to respond_to :degree_status_id }
     it { is_expected.to respond_to :consideration_journey_stage_id }
     it { is_expected.to respond_to :preferred_teaching_subject_id }
   end
 
-  context "validations" do
+  describe "validations" do
     let(:msg) { "Enter a valid postcode, or leave blank" }
 
     it { is_expected.to allow_value("TE571NG").for :address_postcode }
@@ -38,7 +38,7 @@ describe Events::Steps::PersonalisedUpdates do
     it { is_expected.not_to allow_value("12345").for :preferred_teaching_subject_id }
   end
 
-  context "data cleaning" do
+  describe "data cleaning" do
     it "cleans the postcode" do
       subject.address_postcode = "  TE57 1NG "
       subject.valid?
@@ -49,7 +49,7 @@ describe Events::Steps::PersonalisedUpdates do
     end
   end
 
-  context "skipped?" do
+  describe "#skipped?" do
     let(:mailing_list) { nil }
     let(:backingstore) { { "subscribe_to_mailing_list" => mailing_list } }
 

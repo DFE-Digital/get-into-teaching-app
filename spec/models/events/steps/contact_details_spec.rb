@@ -7,7 +7,7 @@ describe Events::Steps::ContactDetails do
 
   it { is_expected.to respond_to :telephone }
 
-  context "validations" do
+  describe "validations" do
     it { is_expected.to allow_value("").for :telephone }
     it { is_expected.to allow_value("01234567890").for :telephone }
     it { is_expected.to allow_value("01234 567890").for :telephone }
@@ -15,7 +15,7 @@ describe Events::Steps::ContactDetails do
     it { is_expected.not_to allow_value("01234").for :telephone }
   end
 
-  context "data cleaning" do
+  describe "data cleaning" do
     it "cleans the telephone" do
       subject.telephone = "  01234567890 "
       subject.valid?

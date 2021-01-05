@@ -35,13 +35,13 @@ describe Cards::StoryComponent, type: "component" do
     is_expected.to have_link(%(Read #{story[:name]}'s story), href: story[:link], class: "git-link")
   end
 
-  context "With supplied header" do
+  context "with supplied header" do
     let(:story) { base.merge header: "Edna's story" }
 
     it { is_expected.to have_css ".card header" }
   end
 
-  context "With header from stories frontmatter" do
+  context "with header from stories frontmatter" do
     let(:page_data) { Pages::Data.new }
     let(:truncated) { edna[:title].truncate described_class::MAX_HEADER_LENGTH }
 
@@ -55,7 +55,7 @@ describe Cards::StoryComponent, type: "component" do
     end
   end
 
-  context "With no header and unknown page" do
+  context "with no header and unknown page" do
     let(:page_data) { Pages::Data.new }
     it { is_expected.not_to have_css ".card header" }
   end

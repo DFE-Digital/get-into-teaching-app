@@ -3,7 +3,7 @@ require "rails_helper"
 describe PagesController do
   include_context "always render testing page"
 
-  context "#show" do
+  describe "#show" do
     context "without caching enabled" do
       it "Should not have cache headers" do
         get "/test"
@@ -45,7 +45,7 @@ describe PagesController do
       end
     end
 
-    context "for unknown page" do
+    context "with unknown page" do
       let(:template) { "testing/unknown" }
       before { get "/test" }
       subject { response }
@@ -53,13 +53,13 @@ describe PagesController do
       it { is_expected.to have_attributes body: %r{Page not found} }
     end
 
-    context "for cookies page" do
+    context "with cookies page" do
       before { get "/cookies" }
       subject { response }
       it { is_expected.to have_http_status(:success) }
     end
 
-    context "for invalid page page" do
+    context "with invalid page page" do
       let(:template) { "../../secrets.txt" }
       before { get "/test" }
       subject { response }

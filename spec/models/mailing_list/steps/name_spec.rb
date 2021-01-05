@@ -19,28 +19,28 @@ describe MailingList::Steps::Name do
   it { is_expected.to respond_to :last_name }
   it { is_expected.to respond_to :email }
 
-  context "validations" do
+  describe "validations" do
     subject { instance.tap(&:valid?).errors.messages }
     it { is_expected.to include(:first_name) }
     it { is_expected.to include(:last_name) }
     it { is_expected.to include(:email) }
   end
 
-  context "first_name" do
+  describe "validations for first_name" do
     it { is_expected.not_to allow_value("a" * 257).for :first_name }
   end
 
-  context "last_name" do
+  describe "validations for last_name" do
     it { is_expected.not_to allow_value("a" * 257).for :last_name }
   end
 
-  context "email address" do
+  describe "validations for email address" do
     it { is_expected.to allow_value("me@you.com").for :email }
     it { is_expected.to allow_value(" me@you.com ").for :email }
     it { is_expected.not_to allow_value("me@you").for :email }
   end
 
-  context "channel_id" do
+  describe "validations for channel_id" do
     let(:options) { channels.map(&:id) }
     it { is_expected.to allow_values(options).for :channel_id }
     it { is_expected.to allow_value(nil, "").for :channel_id }

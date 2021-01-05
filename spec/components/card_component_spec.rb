@@ -62,7 +62,7 @@ describe CardComponent, type: "component" do
       is_expected.to have_css(".card header", text: "Further info")
     end
 
-    context "With long header" do
+    context "with long header" do
       let(:header) { "long " * 50 }
       let(:card) { base.merge header: header }
       let(:truncated) { header.truncate(described_class::MAX_HEADER_LENGTH) }
@@ -82,7 +82,7 @@ describe CardComponent, type: "component" do
     end
   end
 
-  context "video stories" do
+  context "with video story" do
     let(:video) { "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
     let(:card) { base.merge(video: video).with_indifferent_access }
 
@@ -101,7 +101,7 @@ describe CardComponent, type: "component" do
     end
   end
 
-  context "mistyped link_text key" do
+  context "with mistyped link_text key" do
     let(:card) { base.except(:link_text).merge(linktext: "shortened linktext") }
 
     specify "still includes the link text" do

@@ -45,12 +45,10 @@ Style/SignalException:
 
 # FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
-RSpec/ContextMethod:
-  Exclude:
-    - spec/**/*.rb
 RSpec/ContextWording:
   Exclude:
-    - spec/**/*.rb
+    - spec/support/*.rb
+
 RSpec/DescribeClass:
   Exclude:
     - spec/**/*.rb
@@ -76,10 +74,6 @@ RSpec/ExampleWording:
     - spec/**/*.rb
 
 RSpec/ExpectInHook:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/FilePath:
   Exclude:
     - spec/**/*.rb
 
@@ -116,10 +110,6 @@ RSpec/NamedSubject:
     - spec/**/*.rb
 
 RSpec/NestedGroups:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/ReceiveCounts:
   Exclude:
     - spec/**/*.rb
 

@@ -37,7 +37,7 @@ describe Stories::CardComponent, type: "component" do
     is_expected.not_to have_css(".fas.fa-play")
   end
 
-  context "video stories" do
+  context "with video stories" do
     let(:video) { "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
     let(:video_story) { story.merge(video: video).with_indifferent_access }
 

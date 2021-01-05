@@ -8,7 +8,7 @@ describe MailingList::Steps::Postcode do
 
   it { is_expected.to respond_to :address_postcode }
 
-  context "address_postcode" do
+  describe "validations for address_postcode" do
     it { is_expected.to allow_value("TE57 1NG").for :address_postcode }
     it { is_expected.to allow_value("  TE571NG  ").for :address_postcode }
     it { is_expected.to allow_value(nil).for :address_postcode }
@@ -17,7 +17,7 @@ describe MailingList::Steps::Postcode do
     it { is_expected.not_to allow_value("TE57 ING").for(:address_postcode).with_message(msg) }
   end
 
-  context "data cleaning" do
+  describe "data cleaning for the postcode" do
     it "normalises the postcode" do
       subject.address_postcode = "  te57 1ng "
       subject.valid?
