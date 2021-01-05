@@ -33,6 +33,10 @@
   background-image: url("../images/icon-online-blue.svg");
   width: 34px;
   height: 34px;
+
+  &--purple {
+    background-image: url("../images/icon-online-purple.svg");
+  }
 }
 
 .icon-moved-online-event {

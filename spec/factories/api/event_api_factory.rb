@@ -30,6 +30,12 @@ FactoryBot.define do
       type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
     end
 
+    trait :online_train_to_teach_event do
+      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
+      is_online { true }
+      building { nil }
+    end
+
     trait :virtual_train_to_teach_event do
       train_to_teach_event
       is_online { true }
@@ -38,6 +44,7 @@ FactoryBot.define do
     trait :online_event do
       type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] }
       is_online { true }
+      building { nil }
     end
 
     trait :school_or_university_event do
