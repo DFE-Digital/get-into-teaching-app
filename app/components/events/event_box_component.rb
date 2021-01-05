@@ -61,8 +61,12 @@ module Events
 
   private
 
+    def has_building?
+      @event.building.present?
+    end
+
     def moved_online?
-      online? && !online_event_type?
+      online? && has_building?
     end
 
     def online_event_type?

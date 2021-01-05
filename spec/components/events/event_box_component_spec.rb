@@ -41,7 +41,15 @@ describe Events::EventBoxComponent, type: "component" do
       end
     end
 
-    context "when the event has moved online" do
+    context "when the event is online, with no associated building (not virtual)" do
+      let(:event) { build(:event_api, :online_train_to_teach_event) }
+
+      specify "it's marked as being online" do
+        expect(page).to have_css(".event-box__footer__meta", text: online_heading)
+      end
+    end
+
+    context "when the event has moved online (virtual)" do
       let(:event) { build(:event_api, :virtual_train_to_teach_event) }
 
       specify "it's marked as being moved online" do
