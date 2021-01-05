@@ -47,8 +47,7 @@ describe "View events by category" do
   end
 
   context "when viewing the schools and university events category" do
-    let(:start_of_today) { DateTime.now.utc.beginning_of_day }
-    let(:blank_search) { { postcode: nil, quantity_per_type: nil, radius: nil, start_after: start_of_today, start_before: nil, type_id: nil } }
+    let(:blank_search) { { postcode: nil, quantity_per_type: nil, radius: nil, start_after: nil, start_before: nil, type_id: nil } }
 
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
@@ -61,8 +60,7 @@ describe "View events by category" do
   describe "filtering the results" do
     let(:postcode) { "TE57 1NG" }
     let(:radius) { 30 }
-    let(:start_of_today) { DateTime.now.utc.beginning_of_day }
-    let(:filter) { { postcode: "TE57 1NG", quantity_per_type: nil, radius: radius, start_after: start_of_today, start_before: nil, type_id: nil } }
+    let(:filter) { { postcode: "TE57 1NG", quantity_per_type: nil, radius: radius, start_after: nil, start_before: nil, type_id: nil } }
 
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
