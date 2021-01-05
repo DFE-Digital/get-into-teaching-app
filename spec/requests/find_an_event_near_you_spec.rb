@@ -3,7 +3,7 @@ require "rails_helper"
 describe "Find an event near you" do
   include_context "stub types api"
 
-  NO_EVENTS_REGEX = /Sorry your search has not found any events/.freeze
+  let(:no_events_regex) { /Sorry your search has not found any events/ }
 
   let(:types) { Events::Search.available_event_type_ids }
   let(:events) do
@@ -61,7 +61,7 @@ describe "Find an event near you" do
       let(:events) { [] }
 
       it "displays a single no results message" do
-        no_results_messages = response.body.scan(NO_EVENTS_REGEX).flatten
+        no_results_messages = response.body.scan(no_events_regex).flatten
         expect(no_results_messages.count).to eq(1)
       end
     end
@@ -112,7 +112,7 @@ describe "Find an event near you" do
       let(:events) { [] }
 
       it "displays a single no results message" do
-        no_results_messages = response.body.scan(NO_EVENTS_REGEX).flatten
+        no_results_messages = response.body.scan(no_events_regex).flatten
         expect(no_results_messages.count).to eq(1)
       end
 
@@ -136,11 +136,11 @@ describe "Find an event near you" do
     end
 
     it "does not display the events moved online notice" do
-      expect(response.body).to_not include("Some events have moved online")
+      expect(response.body).not_to include("Some events have moved online")
     end
 
     it "does not display the discover events heading" do
-      expect(response.body).to_not include("Discover Events")
+      expect(response.body).not_to include("Discover Events")
     end
 
     it "categorises the results" do
@@ -156,7 +156,7 @@ describe "Find an event near you" do
       let(:events) { [] }
 
       it "displays a single no results message" do
-        no_results_messages = response.body.scan(NO_EVENTS_REGEX).flatten
+        no_results_messages = response.body.scan(no_events_regex).flatten
         expect(no_results_messages.count).to eq(1)
       end
     end
@@ -167,7 +167,7 @@ describe "Find an event near you" do
 
       it "displays the no results message per category" do
         headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
-        no_results_messages = response.body.scan(NO_EVENTS_REGEX).flatten
+        no_results_messages = response.body.scan(no_events_regex).flatten
         expect(headings.count).to eq(Events::Search.available_event_types.count)
         expect(headings.count - 1).to eq(no_results_messages.count)
       end

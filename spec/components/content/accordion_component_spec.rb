@@ -14,7 +14,7 @@ describe Content::AccordionComponent, type: "component" do
     end
 
     subject! do
-      render_inline(Content::AccordionComponent.new) do |accordion|
+      render_inline(described_class.new) do |accordion|
         steps.each do |title, content|
           accordion.slot(:step, title: title) { content }
         end
@@ -56,7 +56,7 @@ describe Content::AccordionComponent, type: "component" do
   describe "Calls to action" do
     describe "chat_online" do
       subject do
-        render_inline(Content::AccordionComponent.new) do |accordion|
+        render_inline(described_class.new) do |accordion|
           accordion.slot(:step, title: title, call_to_action: call_to_action) do
             text
           end
@@ -88,7 +88,7 @@ describe Content::AccordionComponent, type: "component" do
 
     describe "story" do
       subject do
-        render_inline(Content::AccordionComponent.new) do |accordion|
+        render_inline(described_class.new) do |accordion|
           accordion.slot(:step, title: title, call_to_action: call_to_action)
         end
       end
@@ -122,7 +122,7 @@ describe Content::AccordionComponent, type: "component" do
 
   describe "Numbered steps" do
     subject! do
-      render_inline(Content::AccordionComponent.new(numbered: true)) do |accordion|
+      render_inline(described_class.new(numbered: true)) do |accordion|
         accordion.slot(:step, title: title) { text }
       end
     end
@@ -136,7 +136,7 @@ describe Content::AccordionComponent, type: "component" do
     let(:active_step) { 3 }
 
     subject! do
-      render_inline(Content::AccordionComponent.new(active_step: active_step)) do |accordion|
+      render_inline(described_class.new(active_step: active_step)) do |accordion|
         1.upto(3).each do |i|
           accordion.slot(:step, title: "title #{i}") { "text #{i}" }
         end

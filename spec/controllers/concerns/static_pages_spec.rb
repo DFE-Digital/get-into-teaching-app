@@ -1,32 +1,34 @@
 require "rails_helper"
 
 describe StaticPages do
-  class StaticPageTester
-    include StaticPages
-    attr_reader :cacheable_static_page
+  let(:testing_class) do
+    Class.new do
+      include StaticPages
+      attr_reader :cacheable_static_page
 
-    def render
-      cache_static_page { fetch_content }
-    end
+      def render
+        cache_static_page { fetch_content }
+      end
 
-    def fetch_content
-      true
-    end
+      def fetch_content
+        true
+      end
 
-    def stale?(*_args)
-      true
-    end
+      def stale?(*_args)
+        true
+      end
 
-    def expires_in(*_args)
-      true
-    end
+      def expires_in(*_args)
+        true
+      end
 
-    def params
-      {}
+      def params
+        {}
+      end
     end
   end
 
-  let(:tester) { StaticPageTester.new }
+  let(:tester) { testing_class.new }
 
   let(:config) { Rails.application.config.x.static_pages }
   let(:etag) { "12345" }

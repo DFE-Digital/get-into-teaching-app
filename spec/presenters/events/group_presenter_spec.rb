@@ -8,7 +8,7 @@ describe Events::GroupPresenter do
   let(:events_by_type) { all_events.group_by(&:type_id) }
   let(:display_empty_types) { false }
 
-  subject { Events::GroupPresenter.new(events_by_type, display_empty_types) }
+  subject { described_class.new(events_by_type, display_empty_types) }
 
   context "#sorted_events_by_type" do
     let(:type_ids) { subject.sorted_events_by_type.map(&:first) }
@@ -46,7 +46,7 @@ describe Events::GroupPresenter do
       let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] }
       let(:unsorted_events) { [middle, late, early] }
 
-      subject { Events::GroupPresenter.new({ type_id => unsorted_events }) }
+      subject { described_class.new({ type_id => unsorted_events }) }
 
       it "sorts events of the same type by date" do
         expect(subject.sorted_events_by_type.to_h[type_id]).to eql([early, middle, late])

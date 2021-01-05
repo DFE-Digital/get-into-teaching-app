@@ -8,7 +8,7 @@ RSpec.describe CallsToAction::MultipleButtonsComponent, type: :component do
     { "first button" => "/first/link", "second button" => "/second/link" }
   end
 
-  let(:component) { CallsToAction::MultipleButtonsComponent.new(icon: icon, title: title, links: links) }
+  let(:component) { described_class.new(icon: icon, title: title, links: links) }
 
   before { render_inline(component) }
 

@@ -4,7 +4,7 @@ describe MailingList::Steps::AlreadySubscribed do
   include_context "wizard step"
   it_behaves_like "a wizard step"
 
-  it { is_expected.to_not be_can_proceed }
+  it { is_expected.not_to be_can_proceed }
 
   describe "#skipped?" do
     it "returns true if already_subscribed_to_mailing_list is false/nil/undefined" do
@@ -25,12 +25,12 @@ describe MailingList::Steps::AlreadySubscribed do
 
     it "returns false if already_subscribed_to_mailing_list is true" do
       wizardstore["already_subscribed_to_mailing_list"] = true
-      expect(subject).to_not be_skipped
+      expect(subject).not_to be_skipped
     end
 
     it "returns false if already_subscribed_to_teacher_training_adviser is true" do
       wizardstore["already_subscribed_to_teacher_training_adviser"] = true
-      expect(subject).to_not be_skipped
+      expect(subject).not_to be_skipped
     end
   end
 end

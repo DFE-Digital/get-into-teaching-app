@@ -141,7 +141,7 @@ describe EventsController do
         context "when the event is closed" do
           let(:event) { build(:event_api, :closed, web_feed_id: "123", readable_id: event_readable_id) }
 
-          it { is_expected.to_not match(/How to attend/) }
+          it { is_expected.not_to match(/How to attend/) }
           it { is_expected.to match(/This event is now closed/) }
         end
 
@@ -155,10 +155,10 @@ describe EventsController do
         context "when the event is online" do
           let(:event) { build(:event_api, is_online: true) }
 
-          it { is_expected.to_not match(/#{event.building.venue}/) }
-          it { is_expected.to_not match(/#{event.building.address_line1}/) }
-          it { is_expected.to_not match(/#{event.building.address_line2}/) }
-          it { is_expected.to_not match(/#{event.building.address_postcode}/) }
+          it { is_expected.not_to match(/#{event.building.venue}/) }
+          it { is_expected.not_to match(/#{event.building.address_line1}/) }
+          it { is_expected.not_to match(/#{event.building.address_line2}/) }
+          it { is_expected.not_to match(/#{event.building.address_postcode}/) }
         end
 
         context %(when the event is a 'School or University Event') do

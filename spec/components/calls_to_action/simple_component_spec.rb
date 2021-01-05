@@ -10,7 +10,7 @@ RSpec.describe CallsToAction::SimpleComponent, type: :component do
   describe "rendering the component" do
     let(:kwargs) { { icon: icon, title: title, text: text, link_text: link_text, link_target: link_target } }
 
-    let(:component) { CallsToAction::SimpleComponent.new(kwargs) }
+    let(:component) { described_class.new(kwargs) }
     before { render_inline(component) }
 
     specify "renders the call to action" do
@@ -55,7 +55,7 @@ RSpec.describe CallsToAction::SimpleComponent, type: :component do
     let(:kwargs) { { icon: icon, link_text: link_text, link_target: link_target } }
 
     specify "raises an argument error when title and text aren't provided" do
-      expect { CallsToAction::SimpleComponent.new(**kwargs) }.to raise_error(ArgumentError, /title or text must be present/)
+      expect { described_class.new(**kwargs) }.to raise_error(ArgumentError, /title or text must be present/)
     end
   end
 end

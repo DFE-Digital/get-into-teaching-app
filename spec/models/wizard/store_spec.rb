@@ -9,7 +9,7 @@ describe Wizard::Store do
 
   describe ".new" do
     context "with valid source data" do
-      it { is_expected.to be_instance_of(Wizard::Store) }
+      it { is_expected.to be_instance_of(described_class) }
       it { is_expected.to have_attributes data: backingstore }
       it { is_expected.to respond_to :[] }
       it { is_expected.to respond_to :[]= }

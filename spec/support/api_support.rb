@@ -80,7 +80,7 @@ shared_context "stub events by category api" do |results_per_type|
   end
 end
 
-shared_examples "api support" do
+shared_context "api support" do
   let(:token) { "test123" }
   let(:endpoint) { "http://my.api/api" }
   let(:response_headers) { { "Content-Type" => "application/json" } }

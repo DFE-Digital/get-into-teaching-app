@@ -5,7 +5,7 @@ describe Events::EventBoxComponent, type: "component" do
   let(:event) { build(:event_api) }
   let(:condensed) { false }
 
-  subject! { render_inline(Events::EventBoxComponent.new(event, condensed: condensed)) }
+  subject! { render_inline(described_class.new(event, condensed: condensed)) }
 
   specify "renders an event box" do
     expect(page).to have_css(".event-box")
@@ -96,22 +96,26 @@ describe Events::EventBoxComponent, type: "component" do
       end
 
       if event_type.is_online && event_type.trait == :online_event
-        specify %(the event should also be described as an 'Online Event') do
-          expect(page).to have_content("Online Event")
-        end
+        context "when is_online and an 'online_event'" do
+          specify %(the event should also be described as an 'Online Event') do
+            expect(page).to have_content("Online Event")
+          end
 
-        specify %(the online icon should be #{event_type.expected_colour}) do
-          expect(page).to have_css(%(.icon-online-event--#{event_type.expected_colour}))
+          specify %(the online icon should be #{event_type.expected_colour}) do
+            expect(page).to have_css(%(.icon-online-event--#{event_type.expected_colour}))
+          end
         end
       end
 
       if event_type.is_online && event_type.trait != :online_event
-        specify %(the event should also be described as a 'Event has moved online') do
-          expect(page).to have_content("Event has moved online")
-        end
+        context "when is_online but not 'online_event'" do
+          specify %(the event should also be described as a 'Event has moved online') do
+            expect(page).to have_content("Event has moved online")
+          end
 
-        specify %(the online icon should be #{event_type.expected_colour}) do
-          expect(page).to have_css(%(.icon-moved-online-event--#{event_type.expected_colour}))
+          specify %(the online icon should be #{event_type.expected_colour}) do
+            expect(page).to have_css(%(.icon-moved-online-event--#{event_type.expected_colour}))
+          end
         end
       end
 

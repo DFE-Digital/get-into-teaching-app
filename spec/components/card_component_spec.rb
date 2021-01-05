@@ -13,7 +13,7 @@ describe CardComponent, type: "component" do
   let(:card) { base }
 
   subject do
-    render_inline CardComponent.new(card: card)
+    render_inline described_class.new(card: card)
     page
   end
 

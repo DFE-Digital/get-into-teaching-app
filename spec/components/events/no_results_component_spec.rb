@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe Events::NoResultsComponent, type: "component" do
   let(:message) { "no results message" }
-  let(:component) { Events::NoResultsComponent.new }
+  let(:component) { described_class.new }
 
   subject do
     render_inline(component) { message }

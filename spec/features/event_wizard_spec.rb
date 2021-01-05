@@ -193,12 +193,12 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text("Are you over 16 and do you agree")
-    expect(page).to_not have_text("Would you like to receive email updates")
+    expect(page).not_to have_text("Would you like to receive email updates")
     click_on "Complete sign up"
 
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
-    expect(page).to_not have_text "Choose yes or no"
+    expect(page).not_to have_text "Choose yes or no"
 
     within_fieldset "Are you over 16 and do you agree" do
       check "Yes"
@@ -235,12 +235,12 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text("Are you over 16 and do you agree")
-    expect(page).to_not have_text("Would you like to receive email updates")
+    expect(page).not_to have_text("Would you like to receive email updates")
     click_on "Complete sign up"
 
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Accept the privacy policy to continue"
-    expect(page).to_not have_text "Choose yes or no"
+    expect(page).not_to have_text "Choose yes or no"
 
     within_fieldset "Are you over 16 and do you agree" do
       check "Yes"

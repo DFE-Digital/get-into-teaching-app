@@ -12,7 +12,7 @@ shared_examples "an IP-based rate limited endpoint" do |desc, limit, period|
     context "when fewer than rate limit" do
       let(:request_count) { limit - 1 }
 
-      it { is_expected.to_not eq(429) }
+      it { is_expected.not_to eq(429) }
     end
 
     context "when more than rate limit" do
@@ -24,7 +24,7 @@ shared_examples "an IP-based rate limited endpoint" do |desc, limit, period|
         it "allows another request" do
           travel period + 1.second
           perform_request
-          expect(response.status).to_not eq(429)
+          expect(response.status).not_to eq(429)
         end
       end
     end

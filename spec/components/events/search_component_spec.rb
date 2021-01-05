@@ -4,7 +4,7 @@ describe Events::SearchComponent, type: "component" do
   let(:search) { build(:events_search, :invalid) }
   let(:path) { "/some/path" }
 
-  let(:component) { Events::SearchComponent.new(search, path) }
+  let(:component) { described_class.new(search, path) }
   subject! { render_inline(component) }
 
   specify "builds a search form" do
@@ -20,7 +20,7 @@ describe Events::SearchComponent, type: "component" do
 
     context "when overridden" do
       let(:new_heading) { "Search for Awesome events" }
-      subject! { render_inline(Events::SearchComponent.new(search, path, heading: new_heading)) }
+      subject! { render_inline(described_class.new(search, path, heading: new_heading)) }
 
       specify %(the title is overridden) do
         expect(page).to have_css("h2", text: new_heading)
@@ -56,10 +56,10 @@ describe Events::SearchComponent, type: "component" do
     end
 
     describe "optionally-blank month field" do
-      subject! { render_inline(Events::SearchComponent.new(search, path, allow_blank_month: true)) }
+      subject! { render_inline(described_class.new(search, path, allow_blank_month: true)) }
 
-      specify "there should be a blank option with the text '#{Events::SearchComponent::BLANK_MONTH_TEXT}'" do
-        expect(page).to have_css("option[value='']", text: Events::SearchComponent::BLANK_MONTH_TEXT)
+      specify "there should be a blank option with the text '#{described_class::BLANK_MONTH_TEXT}'" do
+        expect(page).to have_css("option[value='']", text: described_class::BLANK_MONTH_TEXT)
       end
     end
   end

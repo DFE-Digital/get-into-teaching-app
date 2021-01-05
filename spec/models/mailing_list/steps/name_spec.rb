@@ -27,11 +27,11 @@ describe MailingList::Steps::Name do
   end
 
   context "first_name" do
-    it { is_expected.to_not allow_value("a" * 257).for :first_name }
+    it { is_expected.not_to allow_value("a" * 257).for :first_name }
   end
 
   context "last_name" do
-    it { is_expected.to_not allow_value("a" * 257).for :last_name }
+    it { is_expected.not_to allow_value("a" * 257).for :last_name }
   end
 
   context "email address" do
@@ -44,7 +44,7 @@ describe MailingList::Steps::Name do
     let(:options) { channels.map(&:id) }
     it { is_expected.to allow_values(options).for :channel_id }
     it { is_expected.to allow_value(nil, "").for :channel_id }
-    it { is_expected.to_not allow_value(12_345).for :channel_id }
+    it { is_expected.not_to allow_value(12_345).for :channel_id }
   end
 
   context "when the step is valid" do
