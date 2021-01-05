@@ -76,9 +76,13 @@ module Events
     end
 
     def start_of_month
-      return nil if month.blank?
+      start_of_today = DateTime.now.utc.beginning_of_day
+      return start_of_today if month.blank?
 
-      DateTime.parse("#{month}-01 00:00:00").beginning_of_month
+      date = DateTime.parse("#{month}-01 00:00:00")
+      return start_of_today if date.month == start_of_today.month
+
+      date.beginning_of_month
     end
 
     def end_of_month
