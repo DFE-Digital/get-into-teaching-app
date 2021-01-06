@@ -1,5 +1,5 @@
 <% category_name = t("event_types.#{@type.id}.name.plural") %>
-<% category_name = "#{category_name} - Archive" if @archive %>
+<% category_name = "Past #{category_name}" if @is_archive %>
 
 <% @page_title = category_name %>
 
@@ -50,4 +50,17 @@
     <% end %>
   </div>
 </section>
+<% end %>
+
+<% if @show_archive_link %>
+  <section class="event-content-cta">
+    <div class="container-1000">
+      <div class="content-cta content-cta--center">
+        <h2>Past <%= category_name %></h2>
+        <p>
+          You can see past <%= category_name %>, including all questions and answers, <%= link_to("on this page", event_category_archive_events_path(pluralised_category_name(@type.id).parameterize)) %>
+        </p>
+      </div>
+    </div>
+  </section>
 <% end %>

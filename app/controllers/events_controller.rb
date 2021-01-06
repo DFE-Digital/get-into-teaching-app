@@ -38,6 +38,7 @@ class EventsController < ApplicationController
 
     all_results = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
     @events = paginate(all_results[@type.id.to_s.to_sym])
+    @show_archive_link = !@is_archive && has_archive
   end
 
 private
