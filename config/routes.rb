@@ -28,6 +28,7 @@ Rails.application.routes.draw do
     collection do
       get "search"
       get "category/:category", to: "events#show_category", as: :event_category
+      get "category/:category/archive", to: "events#show_category", as: :event_category_archive, archive: true
     end
     resources "steps",
               path: "/apply",

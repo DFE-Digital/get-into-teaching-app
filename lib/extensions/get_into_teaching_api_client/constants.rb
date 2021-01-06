@@ -7,6 +7,11 @@ module GetIntoTeachingApiClient
         "School or University Event" => 222_750_009,
       }.freeze
 
+    EVENT_TYPES_WITH_ARCHIVE =
+      {
+        "Online Event" => 222_750_008,
+      }.freeze
+
     # This is not a complete list.
     EVENT_STATUS =
       {

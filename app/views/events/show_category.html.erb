@@ -1,4 +1,5 @@
 <% category_name = t("event_types.#{@type.id}.name.plural") %>
+<% category_name = "#{category_name} - Archive" if @archive %>
 
 <% @page_title = category_name %>
 
@@ -21,7 +22,7 @@
   <div class="container-1000">
     <%= render Events::SearchComponent.new(
       @event_search,
-      event_category_events_path(pluralised_category_name(@type.id).parameterize),
+      request.path,
       include_type: false,
       heading: "Search for #{category_name}",
       allow_blank_month: true,

@@ -18,6 +18,26 @@ describe "View events by category" do
       receive(:search_teaching_events_indexed_by_type) { events_by_type }
   end
 
+  context "when viewing a category archive" do
+    let(:category) { "online-events" }
+    before do
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:search_teaching_events_indexed_by_type) { events_by_type }
+      get event_category_archive_events_path(category)
+    end
+
+    subject { response }
+
+    it { is_expected.to have_http_status :success }
+    it { expect(response.body).to include "Past Online Events" }
+
+    context "when the category does not support archives" do
+      let(:category) { "train-to-teach-events" }
+
+      it { is_expected.to have_http_status :not_found }
+    end
+  end
+
   context "when viewing a category" do
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -47,8 +67,9 @@ describe "View events by category" do
   end
 
   context "when viewing the schools and university events category" do
-    let(:start_of_today) { DateTime.now.utc.beginning_of_day }
-    let(:blank_search) { { postcode: nil, quantity_per_type: nil, radius: nil, start_after: start_of_today, start_before: nil, type_id: nil } }
+    let(:start_after) { DateTime.now.utc.beginning_of_day }
+    let(:start_before) { start_after.advance(months: 5).end_of_month }
+    let(:blank_search) { { postcode: nil, quantity_per_type: nil, radius: nil, start_after: start_after, start_before: start_before, type_id: nil } }
 
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
@@ -61,8 +82,9 @@ describe "View events by category" do
   describe "filtering the results" do
     let(:postcode) { "TE57 1NG" }
     let(:radius) { 30 }
-    let(:start_of_today) { DateTime.now.utc.beginning_of_day }
-    let(:filter) { { postcode: "TE57 1NG", quantity_per_type: nil, radius: radius, start_after: start_of_today, start_before: nil, type_id: nil } }
+    let(:start_after) { DateTime.now.utc.beginning_of_day }
+    let(:start_before) { start_after.advance(months: 5).end_of_month }
+    let(:filter) { { postcode: "TE57 1NG", quantity_per_type: nil, radius: radius, start_after: start_after, start_before: start_before, type_id: nil } }
 
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]

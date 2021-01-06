@@ -26,9 +26,16 @@ class EventsController < ApplicationController
       I18n.t("event_types.#{type.id}.name.plural").parameterize == params[:category]
     end
 
-    render(template: "errors/not_found", status: :not_found) && return if @type.nil?
+    raise_not_found && return if @type.nil?
 
-    @event_search = Events::Search.new(event_filter_params.merge(type: @type.id))
+    @is_archive = params[:archive]
+    has_archive = has_archive?(@type)
+
+    raise_not_found && return if @is_archive && !has_archive
+
+    period = @is_archive ? :past : :future
+    @event_search = Events::Search.new(event_filter_params.merge(type: @type.id, period: period))
+
     all_results = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
     @events = paginate(all_results[@type.id.to_s.to_sym])
   end
@@ -42,6 +49,10 @@ private
       .paginate_array(events, total_count: events&.size)
       .page(params[:page])
       .per(EVENTS_PER_PAGE)
+  end
+
+  def has_archive?(type)
+    GetIntoTeachingApiClient::Constants::EVENT_TYPES_WITH_ARCHIVE.values.include?(type.id)
   end
 
   def load_upcoming_events
