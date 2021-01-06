@@ -1,14 +1,14 @@
 <%= tag.div(class: %w[call-to-action call-to-action--narrow]) do %>
-  <div class="call-to-action__content">
-    <header>
-      <%= icon %>
-      <% if title.present? %>
-        <h4 class="call-to-action__heading">
-          <%= title %>
-        </h4>
-      <% end %>
-    </header>
+  <header>
+    <%= icon %>
+    <% if title.present? %>
+      <h4 class="call-to-action__heading">
+        <%= title %>
+      </h4>
+    <% end %>
+  </header>
 
+  <div class="call-to-action__content">
     <% if text.present? %>
       <p class="call-to-action__text">
         <%= text %>

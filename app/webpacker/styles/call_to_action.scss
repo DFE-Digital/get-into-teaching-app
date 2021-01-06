@@ -30,15 +30,15 @@
   &__content {
     padding: .5em 1em 1em;
 
-    .call-to-action__heading {
-      font-size: 140%;
-      margin-bottom: 1em;
-    }
-
     .call-to-action__heading,
     .call-to-action__text:first-child {
       margin-top: .6em;
     }
+  }
+
+  .call-to-action__heading {
+    font-size: 140%;
+    margin-bottom: 1em;
   }
 
   &__action {
@@ -90,6 +90,9 @@
   }
 
   &--narrow {
+    display: flex;
+    flex-direction: column;
+
     header {
       display: flex;
       align-items: center;
