@@ -42,8 +42,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:add_mailing_list_member)
   end
 
-  include_context "prepend fake views"
-
   scenario "Full journey as a new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
