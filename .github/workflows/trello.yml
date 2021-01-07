@@ -1,0 +1,42 @@
+name: Link Trello card
+
+on:
+  pull_request:
+    types: [ opened ]
+
+jobs:
+  attach-to-trello:
+    name: Link Trello card to this PR
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract Pull Request url
+        id: pr-url
+        run: |
+          echo ::set-output name=url::$(jq -r .pull_request.html_url $GITHUB_EVENT_PATH)
+
+      - name: Extract Trello URL
+        id: trello-id
+        run: |
+          ruby -e \
+            'require "json" ; \
+              body = JSON.parse(ARGF.read).dig("pull_request", "body") ; \
+              if m = body.match(%r{https://trello.com/c/([a-zA-Z0-9]+)}) ; \
+                puts "::set-output name=id::#{m[1]}" ; \
+              else ; \
+                "" ; \
+              end' \
+            $GITHUB_EVENT_PATH
+
+      - name: Link to Trello card
+        if: steps.trello-id.outputs.id
+        run: |
+          curl \
+            --silent \
+            --output /dev/null \
+            --show-error \
+            --fail \
+            --request POST \
+            --url 'https://api.trello.com/1/cards/${{ steps.trello-id.outputs.id }}/actions/comments' \
+            --data-urlencode "key=${{ secrets.TRELLO_KEY }}" \
+            --data-urlencode "token=${{ secrets.TRELLO_TOKEN }}" \
+            --data-urlencode "text=${{ steps.pr-url.outputs.url }}"
