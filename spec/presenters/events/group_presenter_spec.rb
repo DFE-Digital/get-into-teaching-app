@@ -45,11 +45,19 @@ describe Events::GroupPresenter do
       let(:late) { build(:event_api, :online_event, start_at: 3.weeks.from_now) }
       let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] }
       let(:unsorted_events) { [middle, late, early] }
+      let(:ascending) { true }
 
-      subject { described_class.new({ type_id => unsorted_events }) }
+      subject { described_class.new({ type_id => unsorted_events }, false, ascending) }
 
-      it "sorts events of the same type by date" do
+      it "sorts events of the same type by date, ascending" do
         expect(subject.sorted_events_by_type.to_h[type_id]).to eql([early, middle, late])
+      end
+
+      context "when descending" do
+        let(:ascending) { false }
+        it "sorts events of the same type by date, descending" do
+          expect(subject.sorted_events_by_type.to_h[type_id]).to eql([late, middle, early])
+        end
       end
     end
   end

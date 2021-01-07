@@ -34,11 +34,13 @@ class EventsController < ApplicationController
     raise_not_found && return if @is_archive && !has_archive
 
     period = @is_archive ? :past : :future
-    @event_search = Events::Search.new(event_filter_params.merge(type: @type.id, period: period))
-
-    all_results = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
-    @events = paginate(all_results[@type.id.to_s.to_sym])
     @show_archive_link = !@is_archive && has_archive
+
+    @event_search = Events::Search.new(event_filter_params.merge(type: @type.id, period: period))
+    events_by_type = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
+    group_presenter = Events::GroupPresenter.new(events_by_type, false, @event_search.future?)
+    events_of_type = group_presenter.sorted_events_by_type.first { |v| v.first == @type.id }&.last
+    @events = paginate(events_of_type)
   end
 
 private

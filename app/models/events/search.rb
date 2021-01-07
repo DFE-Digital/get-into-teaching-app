@@ -66,10 +66,14 @@ module Events
       valid? ? query_events_api(limit) : {}
     end
 
+    def future?
+      period == :future
+    end
+
   private
 
     def month_range
-      return 0..FUTURE_MONTHS if period_future?
+      return 0..FUTURE_MONTHS if future?
 
       start_month_index = today_start_of_month? ? -1 : 0
       start_month_index.downto(start_month_index - (PAST_MONTHS - 1)).to_a
@@ -109,7 +113,7 @@ module Events
     end
 
     def earliest_date_for_period
-      if period_future?
+      if future?
         DateTime.now.utc.beginning_of_day
       else
         month_at_index(month_range.last).beginning_of_month
@@ -117,15 +121,11 @@ module Events
     end
 
     def latest_date_for_period
-      if period_future?
+      if future?
         month_at_index(month_range.last).end_of_month
       else
         DateTime.now.utc.advance(days: -1).end_of_day
       end
-    end
-
-    def period_future?
-      period == :future
     end
   end
 end

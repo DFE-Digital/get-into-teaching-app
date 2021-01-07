@@ -24,6 +24,11 @@ describe Events::Search do
     it { is_expected.to eql GetIntoTeachingApiClient::Constants::EVENT_TYPES.values }
   end
 
+  describe "#future?" do
+    it { expect(described_class.new(period: :future)).to be_future }
+    it { expect(described_class.new(period: :past)).not_to be_future }
+  end
+
   describe "#available_months" do
     before { travel_to(DateTime.new(2020, 11, 10)) }
     subject { described_class.new(period: period).available_months }

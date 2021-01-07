@@ -1,10 +1,14 @@
 module Events
   class GroupPresenter
-    def initialize(events_by_type, display_empty_types = false)
+    def initialize(events_by_type, display_empty_types = false, ascending = true)
       @display_empty_types = display_empty_types
       @events_by_type = events_by_type
         .transform_keys { |k| k.to_s.to_i }
-        .transform_values { |v| v.sort_by { |e| [event_type_name(e.type_id), e.start_at] } }
+        .transform_values do |v|
+          events = v.sort_by { |e| [e.start_at] }
+          events.reverse! unless ascending
+          events
+        end
     end
 
     def sorted_events_by_type

@@ -31,6 +31,10 @@ describe "View events by category" do
     it { is_expected.to have_http_status :success }
     it { expect(response.body).to include "Past Online Events" }
 
+    it "displays all events in the category, ordered by date descending" do
+      expect(response.body.scan(/Event \d/)).to eq(["Event 5", "Event 4", "Event 3", "Event 2", "Event 1"])
+    end
+
     context "when the category does not support archives" do
       let(:category) { "train-to-teach-events" }
 
@@ -49,8 +53,8 @@ describe "View events by category" do
 
     it { is_expected.to have_http_status :success }
 
-    it "displays all events in the category" do
-      expect(response.body.scan(/Event \d/).count).to eq(events.count)
+    it "displays all events in the category, ordered by date ascending" do
+      expect(response.body.scan(/Event \d/)).to eq(["Event 1", "Event 2", "Event 3", "Event 4", "Event 5"])
     end
 
     it "does not display the 'See all events' button" do
