@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: fc55a73e7192f95199f4c3d2e9c04c3e7eb6ada3
+  revision: f04da90eb269eb537a614248596536926f20f97b
   specs:
     get_into_teaching_api_client (1.1.7)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (0.1.9)
+    get_into_teaching_api_client_faraday (0.1.10)
       activesupport
       faraday
       faraday-encoding
@@ -116,16 +116,18 @@ GEM
     factory_bot_rails (6.1.0)
       factory_bot (~> 6.1.0)
       railties (>= 5.0.0)
-    faraday (1.1.0)
+    faraday (1.3.0)
+      faraday-net_http (~> 1.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords
     faraday-encoding (0.0.5)
       faraday
     faraday-http-cache (2.2.0)
       faraday (>= 0.8)
+    faraday-net_http (1.0.0)
     faraday_middleware (1.0.0)
       faraday (~> 1.0)
-    ffi (1.13.1)
+    ffi (1.14.2)
     foreman (0.87.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -135,9 +137,9 @@ GEM
       activesupport (>= 5.2)
     hashdiff (1.0.1)
     htmlentities (4.3.4)
-    i18n (1.8.5)
+    i18n (1.8.7)
       concurrent-ruby (~> 1.0)
-    json (2.4.1)
+    json (2.5.1)
     kaminari (1.2.1)
       activesupport (>= 4.1.0)
       kaminari-actionview (= 1.2.1)
@@ -166,7 +168,7 @@ GEM
     mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
-    minitest (5.14.2)
+    minitest (5.14.3)
     msgpack (1.3.3)
     multipart-post (2.1.1)
     nio4r (2.5.4)

@@ -123,6 +123,31 @@ describe Events::Search do
             receive(:search_teaching_events_indexed_by_type).with(**expected_attributes.merge(postcode: "TE57 1NG"))
         end
       end
+
+      context "when the month is nil" do
+        subject { build(:events_search, month: nil).tap(&:validate) }
+
+        it "searches all future events" do
+          start_of_today = DateTime.now.utc.beginning_of_day
+          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+            receive(:search_teaching_events_indexed_by_type)
+              .with(**expected_attributes.merge(start_before: nil, start_after: start_of_today))
+        end
+      end
+
+      context "when the month is the current month" do
+        let(:month) { DateTime.now.utc.to_formatted_s(:humanmonthyear) }
+        subject { build(:events_search, month: month).tap(&:validate) }
+
+        it "searches only the remainder of the month" do
+          start_of_today = DateTime.now.utc.beginning_of_day
+          end_of_month = DateTime.now.utc.end_of_month
+
+          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+            receive(:search_teaching_events_indexed_by_type)
+              .with(**expected_attributes.merge(start_before: end_of_month, start_after: start_of_today))
+        end
+      end
     end
 
     context "when invalid" do

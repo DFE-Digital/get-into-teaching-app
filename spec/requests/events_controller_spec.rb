@@ -29,7 +29,7 @@ describe EventsController do
     let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
     let(:search_key) { Events::Search.model_name.param_key }
     let(:search_path) { search_events_path(search_key => search_params) }
-    let(:date) { 1.week.from_now }
+    let(:date) { DateTime.now.utc }
     let(:search_month) { date.strftime("%Y-%m") }
     let(:parsed_response) { Nokogiri.parse(response.body) }
 
@@ -60,7 +60,7 @@ describe EventsController do
           postcode: nil,
           quantity_per_type: results_per_type,
           radius: nil,
-          start_after: date.beginning_of_month,
+          start_after: date.beginning_of_day,
           start_before: date.end_of_month,
           type_id: event_type,
         }
