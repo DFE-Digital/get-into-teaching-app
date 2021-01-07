@@ -2,70 +2,64 @@
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
+
     <div id="skiplink-container">
-        <div>
-            <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
-        </div>
+      <div>
+        <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+      </div>
     </div>
-        <%= render "sections/header" %>
-        <main role="main" id="main-content">
-            <%= render Sections::HeroComponent.new(@front_matter) %>
-            <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
-                <% if @front_matter["jump_links"].present? %>
-                  <div class="content__right">
-                    <div class="link-block link-block--jump">
-                      <h2 class="link-block__header">On this page:</h2>
-                      <ul class="link-block__list">
-                        <% @front_matter["jump_links"].each do |item, anchor| %>
-                          <%= link_to(item, anchor) %>
-                        <% end %>
-                      </ul>
-                    </div>
-                  </div>
+
+    <%= render "sections/header" %>
+    <%= render Sections::HeroComponent.new(@front_matter) %>
+
+    <main class="semantic" role="main" id="main-content">
+
+      <aside>
+        <% if @front_matter["jump_links"].present? %>
+          <div class="link-block link-block--jump">
+            <h2 class="link-block__header">On this page:</h2>
+            <ul class="link-block__list">
+              <% @front_matter["jump_links"].each do |item, anchor| %>
+                <%= link_to(item, anchor) %>
+              <% end %>
+            </ul>
+          </div>
+        <% end %>
+
+        <% if @front_matter["related_content"].present? %>
+          <div class="link-block link-block--related">
+            <h2 class="link-block__header">Related Content:</h2>
+            <ul class="link-block__list">
+              <ul class="link-block__list">
+                <% @front_matter["related_content"].each do |item, anchor| %>
+                  <%= link_to(item, anchor) %>
                 <% end %>
+              </ul>
+            </ul>
+          </div>
+        <% end %>
 
-                <% if @front_matter["related_content"].present? %>
-                  <div class="content__right">
-                    <div class="link-block link-block--related">
-                      <h2 class="link-block__header">Related Content:</h2>
-                      <ul class="link-block__list">
-                        <ul class="link-block__list">
-                          <% @front_matter["related_content"].each do |item, anchor| %>
-                            <%= link_to(item, anchor) %>
-                          <% end %>
-                        </ul>
-                      </ul>
-                    </div>
-                  </div>
-                <% end %>
+        <%= render partial: "layouts/shared/narrow_call_to_action" %>
+      </aside>
 
-                <%= render partial: "layouts/shared/narrow_call_to_action" %>
+      <article class="markdown overhang">
+        <% if !@front_matter["image"] %>
+          <%= tag.h1(@front_matter["title"]) %>
+        <% end %>
 
-                <% if @front_matter["fullwidth"] %>
-                  <%= yield %>
-                <% else %>
-                  <div class="content__left">
-                    <% if !@front_matter["image"] %>
-                      <%= tag.h1(@front_matter["title"]) %>
-                    <% end %>
+        <% if @front_matter["alert"].present? %>
+          <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
+        <% end %>
 
-                    <% if @front_matter["alert"].present? %>
-                      <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
-                    <% end %>
+        <%= yield %>
 
-                    <article class="markdown">
-                      <%= yield %>
+        <% @front_matter["content"]&.each do |partial| %>
+          <%= render(partial) %>
+        <% end %>
+      </article>
+    </main>
 
-                      <% @front_matter["content"]&.each do |partial| %>
-                        <%= render(partial) %>
-                      <% end %>
-                    </article>
-                  </div>
-                <% end %>
-                <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
-            </section>
-        </main>
-
+        <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
         <%= render "sections/footer" %>
         <%= render "components/videoplayer" %>
         <%= render "sections/cookie-acceptance" %>
