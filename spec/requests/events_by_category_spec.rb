@@ -3,7 +3,7 @@ require "rails_helper"
 describe "View events by category" do
   include_context "stub types api"
 
-  let(:expected_limit) { EventsController::MAXIMUM_EVENTS_IN_CATEGORY }
+  let(:expected_limit) { EventCategoriesController::MAXIMUM_EVENTS_IN_CATEGORY }
 
   let(:events) do
     5.times.collect do |index|
@@ -23,7 +23,7 @@ describe "View events by category" do
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type) { events_by_type }
-      get event_category_archive_events_path(category)
+      get archive_event_category_path(category)
     end
 
     subject { response }
@@ -46,7 +46,7 @@ describe "View events by category" do
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type) { events_by_type }
-      get event_category_events_path("train-to-teach-events")
+      get event_category_path("train-to-teach-events")
     end
 
     subject { response }
@@ -79,7 +79,7 @@ describe "View events by category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type).with(blank_search.merge(type_id: type_id, quantity_per_type: expected_limit))
-      get event_category_events_path("school-and-university-events")
+      get event_category_path("school-and-university-events")
     end
   end
 
@@ -94,19 +94,19 @@ describe "View events by category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type).with(filter.merge(type_id: type_id, quantity_per_type: expected_limit))
-      get event_category_events_path("school-and-university-events", events_search: { distance: radius, postcode: postcode })
+      get event_category_path("school-and-university-events", events_search: { distance: radius, postcode: postcode })
     end
   end
 
   describe "pagination" do
     before { get(path) }
 
-    let(:events_per_page) { EventsController::EVENTS_PER_PAGE }
+    let(:events_per_page) { EventCategoriesController::EVENTS_PER_PAGE }
     let(:parsed_response) { Nokogiri.parse(response.body) }
 
     context "when there are more than one page's worth of events" do
       let(:extra_events) { 3 }
-      let(:path) { event_category_events_path("train-to-teach-events") }
+      let(:path) { event_category_path("train-to-teach-events") }
       let(:events) { build_list(:event_api, events_per_page + extra_events) }
 
       describe "pagination links" do
@@ -129,7 +129,7 @@ describe "View events by category" do
       end
 
       describe "accessing later pages" do
-        let(:path) { event_category_events_path("train-to-teach-events", page: 2) }
+        let(:path) { event_category_path("train-to-teach-events", page: 2) }
 
         specify "only the first page of events is shown" do
           expect(parsed_response.css(".event-box")).to have_attributes(size: extra_events)
@@ -138,7 +138,7 @@ describe "View events by category" do
     end
 
     context "when there are fewer than one page's worth of events" do
-      let(:path) { event_category_events_path("train-to-teach-events") }
+      let(:path) { event_category_path("train-to-teach-events") }
       let(:events) { build_list(:event_api, events_per_page - 3) }
 
       specify "no pagination links are shown" do
@@ -147,7 +147,7 @@ describe "View events by category" do
     end
 
     context "when there are no results" do
-      let(:path) { event_category_events_path("train-to-teach-events") }
+      let(:path) { event_category_path("train-to-teach-events") }
       let(:events) { [] }
 
       subject { parsed_response.css(".no-results").first }
@@ -159,7 +159,7 @@ describe "View events by category" do
 
   context "when a category does not exist" do
     before do
-      get event_category_events_path("non-existant")
+      get event_category_path("non-existant")
     end
 
     subject { response }

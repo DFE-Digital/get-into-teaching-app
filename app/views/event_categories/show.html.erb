@@ -1,5 +1,5 @@
 <% category_name = t("event_types.#{@type.id}.name.plural") %>
-<% category_name = "Past #{category_name}" if @is_archive %>
+<% category_name = "Past #{category_name}" if @period == :past %>
 
 <% @page_title = category_name %>
 
@@ -34,7 +34,7 @@
 <section class="types-of-event content container-1000">
   <div class="events-featured">
     <div class="events-featured__list">
-      <%= render partial: "event", collection: @events %>
+      <%= render partial: "events/event", collection: @events %>
     </div>
   </div>
 </section>
@@ -58,7 +58,7 @@
       <div class="content-cta content-cta--center">
         <h2>Past <%= category_name %></h2>
         <p>
-          You can see past <%= category_name %>, including all questions and answers, <%= link_to("on this page", event_category_archive_events_path(pluralised_category_name(@type.id).parameterize)) %>
+          You can see past <%= category_name %>, including all questions and answers, <%= link_to("on this page", archive_event_category_path(pluralised_category_name(@type.id).parameterize)) %>
         </p>
       </div>
     </div>

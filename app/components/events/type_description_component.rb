@@ -20,7 +20,7 @@ module Events
     end
 
     def read_more_href
-      event_category_events_path(type_name_plural.parameterize)
+      event_category_path(type_name_plural.parameterize)
     end
 
   private

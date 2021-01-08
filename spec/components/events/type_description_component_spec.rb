@@ -22,6 +22,6 @@ describe Events::TypeDescriptionComponent, type: "component" do
   end
 
   it "has a read more link" do
-    expect(page).to have_link("Read more", href: "/events/category/online-events", class: "type-description__link")
+    expect(page).to have_link("Read more", href: "/event_categories/online-events", class: "type-description__link")
   end
 end

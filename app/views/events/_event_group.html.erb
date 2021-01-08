@@ -25,7 +25,7 @@
   <% show_see_all_events ||= false %>
 
   <% if show_see_all_events %>
-    <%= link_to(event_category_events_path(plural_category_name.parameterize), class: "call-to-action-button") do %>
+    <%= link_to(event_category_path(plural_category_name.parameterize), class: "call-to-action-button") do %>
       Explore <span><%= plural_category_name %></span>
     <% end %>
   <% end %>

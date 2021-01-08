@@ -65,4 +65,12 @@ describe Events::GroupPresenter do
       end
     end
   end
+
+  describe "#sorted_events_of_type" do
+    let(:type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
+
+    it "returns the events of the given type" do
+      expect(subject.sorted_events_of_type(type)).to eq(train_to_teach_events)
+    end
+  end
 end
