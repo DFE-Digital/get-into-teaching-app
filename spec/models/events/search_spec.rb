@@ -158,7 +158,7 @@ describe Events::Search do
 
       it "calls the API" do
         expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-          receive(:search_teaching_events_indexed_by_type).with(**expected_attributes)
+          receive(:search_teaching_events_grouped_by_type).with(**expected_attributes)
       end
 
       context "when there's whitespace around a provided postcode" do
@@ -166,7 +166,7 @@ describe Events::Search do
 
         it "the whitespace is stripped before querying the API" do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-            receive(:search_teaching_events_indexed_by_type).with(**expected_attributes.merge(postcode: "TE57 1NG"))
+            receive(:search_teaching_events_grouped_by_type).with(**expected_attributes.merge(postcode: "TE57 1NG"))
         end
       end
 
@@ -179,7 +179,7 @@ describe Events::Search do
 
           it "searches from the beginning of today to the end of the next 5 months" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-              receive(:search_teaching_events_indexed_by_type)
+              receive(:search_teaching_events_grouped_by_type)
                 .with(**expected_attributes.merge(start_after: travel_date.beginning_of_day, start_before: DateTime.new(2020, 6, 30).end_of_day))
           end
         end
@@ -190,7 +190,7 @@ describe Events::Search do
 
           it "searches from the beginning of today to the end of the current month" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-              receive(:search_teaching_events_indexed_by_type)
+              receive(:search_teaching_events_grouped_by_type)
                 .with(**expected_attributes.merge(start_after: date.beginning_of_day, start_before: date.end_of_month))
           end
         end
@@ -201,7 +201,7 @@ describe Events::Search do
 
           it "searches from the start of the next month to the end" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-              receive(:search_teaching_events_indexed_by_type)
+              receive(:search_teaching_events_grouped_by_type)
                 .with(**expected_attributes.merge(start_after: date.beginning_of_month, start_before: date.end_of_month))
           end
         end
@@ -217,7 +217,7 @@ describe Events::Search do
 
           it "searches from the start of 4 months ago to the end of yesterday" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-              receive(:search_teaching_events_indexed_by_type)
+              receive(:search_teaching_events_grouped_by_type)
                 .with(**expected_attributes.merge(start_after: DateTime.new(2019, 10, 1).beginning_of_day, start_before: day_before_travel_date.end_of_day))
           end
         end
@@ -228,7 +228,7 @@ describe Events::Search do
 
           it "searches from the beginning of the month to the end of yesterday" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-              receive(:search_teaching_events_indexed_by_type)
+              receive(:search_teaching_events_grouped_by_type)
                 .with(**expected_attributes.merge(start_after: date.beginning_of_month, start_before: day_before_travel_date.end_of_day))
           end
         end
@@ -239,7 +239,7 @@ describe Events::Search do
 
           it "searches from the start of the previous month to the end" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-              receive(:search_teaching_events_indexed_by_type)
+              receive(:search_teaching_events_grouped_by_type)
                 .with(**expected_attributes.merge(start_after: date.beginning_of_month, start_before: date.end_of_month))
           end
         end
@@ -251,7 +251,7 @@ describe Events::Search do
 
       it "does not call the API" do
         expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).not_to \
-          receive(:search_teaching_events_indexed_by_type)
+          receive(:search_teaching_events_grouped_by_type)
         subject.query_events
       end
     end

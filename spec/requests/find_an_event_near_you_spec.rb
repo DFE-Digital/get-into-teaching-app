@@ -13,14 +13,16 @@ describe "Find an event near you" do
       build(:event_api, name: "Event #{index + 1}", start_at: start_at, type_id: type_id)
     end
   end
-  let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
+  let(:events_by_type) { group_events_by_type(events) }
 
   subject { response }
 
   context "when landing on the page initially" do
+    let(:expected_request_attributes) { { start_after: DateTime.now.utc.beginning_of_day } }
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:upcoming_teaching_events_indexed_by_type) { events_by_type }
+        receive(:search_teaching_events_grouped_by_type)
+        .with(a_hash_including(expected_request_attributes)) { events_by_type }
     end
 
     before { get events_path }
@@ -92,7 +94,7 @@ describe "Find an event near you" do
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_indexed_by_type) { events_by_type }
+        receive(:search_teaching_events_grouped_by_type) { events_by_type }
     end
 
     before { get search_events_path(events_search: { type: type_id, month: "2020-07" }) }
@@ -126,7 +128,7 @@ describe "Find an event near you" do
   context "when searching for an event" do
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_indexed_by_type) { events_by_type }
+        receive(:search_teaching_events_grouped_by_type) { events_by_type }
     end
 
     before { get search_events_path(events_search: { month: "2020-07" }) }

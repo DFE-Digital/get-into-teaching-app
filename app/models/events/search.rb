@@ -88,7 +88,7 @@ module Events
     end
 
     def query_events_api(limit)
-      GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events_indexed_by_type(
+      GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events_grouped_by_type(
         type_id: type,
         radius: distance,
         postcode: postcode&.strip,

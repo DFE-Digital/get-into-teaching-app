@@ -68,14 +68,20 @@ shared_context "stub mailing list add member api" do
   end
 end
 
-shared_context "stub events by category api" do |results_per_type|
+shared_context "stub upcoming events by category api" do |results_per_type|
   let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
-  let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
-  let(:expected_request_attributes) { { quantity_per_type: results_per_type } }
+  let(:events_by_type) { group_events_by_type(events) }
+  let(:expected_request_attributes) do
+    {
+      quantity_per_type: results_per_type,
+      start_after: DateTime.now.utc.beginning_of_day,
+    }
+  end
+  before { travel_to(DateTime.new(2020, 11, 1, 10)) }
 
   before do
     expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:upcoming_teaching_events_indexed_by_type)
+      receive(:search_teaching_events_grouped_by_type)
       .with(a_hash_including(expected_request_attributes)) { events_by_type }
   end
 end

@@ -42,7 +42,7 @@ RSpec.describe Events::Category do
   end
 
   describe "#latest" do
-    include_context "stub events by category api", 1
+    include_context "stub upcoming events by category api", 1
 
     subject { instance.latest }
 

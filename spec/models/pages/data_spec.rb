@@ -14,7 +14,7 @@ RSpec.describe Pages::Data do
 
   describe "#latest_event_for_category" do
     include_context "stub types api"
-    include_context "stub events by category api", 1
+    include_context "stub upcoming events by category api", 1
 
     subject { instance.latest_event_for_category category }
 

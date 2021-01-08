@@ -4,7 +4,7 @@ describe EventsController do
   include_context "stub types api"
 
   describe "#index" do
-    include_context "stub events by category api", EventsController::UPCOMING_EVENTS_PER_TYPE
+    include_context "stub upcoming events by category api", EventsController::UPCOMING_EVENTS_PER_TYPE
     let(:parsed_response) { Nokogiri.parse(response.body) }
 
     subject! do
@@ -26,7 +26,7 @@ describe EventsController do
   describe "#search" do
     let(:results_per_type) { Events::Search::RESULTS_PER_TYPE }
     let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
-    let(:events_by_type) { events.group_by { |event| event.type_id.to_s.to_sym } }
+    let(:events_by_type) { group_events_by_type(events) }
     let(:search_key) { Events::Search.model_name.param_key }
     let(:search_path) { search_events_path(search_key => search_params) }
     let(:date) { DateTime.now.utc }
@@ -35,7 +35,7 @@ describe EventsController do
 
     before do
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_indexed_by_type)
+        receive(:search_teaching_events_grouped_by_type)
         .with(a_hash_including(expected_request_attributes)) { events_by_type }
     end
 
