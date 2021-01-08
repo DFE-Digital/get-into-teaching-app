@@ -5,7 +5,7 @@ class GuidanceController < ApplicationController
 
   def show
     @page = Pages::Page.find guidance_template
-    render template: @page.template, layout: "layouts/guidance"
+    render template: @page.template, layout: "layouts/content"
   end
 
 private
