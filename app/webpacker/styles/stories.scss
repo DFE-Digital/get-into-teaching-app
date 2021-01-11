@@ -11,7 +11,7 @@
         h2 {
             @include content-heading;
             color: $black;
-            background-color: unset;
+            background-color: inherit;
             size: 110%;
             margin-bottom: 0;
         }
