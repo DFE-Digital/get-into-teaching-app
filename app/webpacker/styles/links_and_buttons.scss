@@ -66,6 +66,11 @@ a.content-link-secondary:hover {
     display: inline-block;
 }
 
+.call-to-action-icon-button {
+    @include button;
+    display: inline-block;
+}
+
 .secondary-button {
     @include button($bg: $grey-light, $fg: black);
 }
