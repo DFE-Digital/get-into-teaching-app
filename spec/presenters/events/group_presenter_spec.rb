@@ -16,9 +16,9 @@ describe Events::GroupPresenter do
 
     it "returns events_by_type as an array of [type_id, events] tuples" do
       expect(subject.sorted_events_by_type).to eq([
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"], train_to_teach_events],
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"], online_events],
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"], school_and_university_events],
+        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"], train_to_teach_events],
+        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"], online_events],
+        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"], school_and_university_events],
       ])
     end
 

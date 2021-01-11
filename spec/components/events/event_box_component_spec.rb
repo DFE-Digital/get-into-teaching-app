@@ -100,8 +100,8 @@ describe Events::EventBoxComponent, type: "component" do
 
       if event_type.is_online && event_type.trait == :online_event
         context "when is_online and an 'online_event'" do
-          specify %(the event should also be described as an 'Online Event') do
-            expect(page).to have_content("Online Event")
+          specify %(the event should also be described as an 'Online event') do
+            expect(page).to have_content("Online event")
           end
 
           specify %(the online icon should be #{event_type.expected_colour}) do
