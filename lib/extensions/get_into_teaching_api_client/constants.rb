@@ -9,7 +9,7 @@ module GetIntoTeachingApiClient
 
     EVENT_TYPES_WITH_ARCHIVE =
       {
-        "Online Event" => 222_750_008,
+        "Online event" => 222_750_008,
       }.freeze
 
     # This is not a complete list.
