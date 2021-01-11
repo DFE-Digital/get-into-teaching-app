@@ -71,7 +71,7 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.include ViewComponent::TestHelpers, type: :component
   config.include ActiveSupport::Testing::TimeHelpers
-  config.include Helpers::Events
+  config.include SpecHelpers::Events
 end
 
 Shoulda::Matchers.configure do |config|
