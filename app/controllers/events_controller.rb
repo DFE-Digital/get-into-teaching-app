@@ -60,7 +60,10 @@ private
 
   def load_upcoming_events
     api = GetIntoTeachingApiClient::TeachingEventsApi.new
-    @events_by_type = api.upcoming_teaching_events_indexed_by_type(quantity_per_type: UPCOMING_EVENTS_PER_TYPE)
+    @events_by_type = api.search_teaching_events_grouped_by_type(
+      quantity_per_type: UPCOMING_EVENTS_PER_TYPE,
+      start_after: DateTime.now.utc.beginning_of_day,
+    )
     @group_presenter = Events::GroupPresenter.new(@events_by_type)
   end
 

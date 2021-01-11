@@ -1,11 +1,11 @@
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: f04da90eb269eb537a614248596536926f20f97b
+  revision: abbc59ebe7c7a76866aefc9914eb7c515ef5454d
   specs:
-    get_into_teaching_api_client (1.1.7)
+    get_into_teaching_api_client (1.1.8)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (0.1.10)
+    get_into_teaching_api_client_faraday (0.1.11)
       activesupport
       faraday
       faraday-encoding
