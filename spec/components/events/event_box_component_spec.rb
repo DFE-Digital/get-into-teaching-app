@@ -3,9 +3,8 @@ require "rails_helper"
 describe Events::EventBoxComponent, type: "component" do
   include_context "stub types api"
   let(:event) { build(:event_api) }
-  let(:condensed) { false }
 
-  subject! { render_inline(described_class.new(event, condensed: condensed)) }
+  subject! { render_inline(described_class.new(event)) }
 
   specify "renders an event box" do
     expect(page).to have_css(".event-box")
@@ -17,14 +16,6 @@ describe Events::EventBoxComponent, type: "component" do
         expect(datetime_div.native.inner_html).to include(
           "#{date_text} <br> #{start_at_text} - #{end_at_text}",
         )
-      end
-    end
-
-    context "when condensed" do
-      let(:condensed) { true }
-
-      specify "does not display the event name" do
-        expect(page).not_to have_content(event.name)
       end
     end
   end
@@ -42,7 +33,7 @@ describe Events::EventBoxComponent, type: "component" do
     end
 
     context "when the event is online, with no associated building (not virtual)" do
-      let(:event) { build(:event_api, :online_train_to_teach_event) }
+      let(:event) { build(:event_api, :train_to_teach_event, :online) }
 
       specify "it's marked as being online" do
         expect(page).to have_css(".event-box__footer__meta", text: online_heading)
@@ -50,7 +41,7 @@ describe Events::EventBoxComponent, type: "component" do
     end
 
     context "when the event has moved online (virtual)" do
-      let(:event) { build(:event_api, :virtual_train_to_teach_event) }
+      let(:event) { build(:event_api, :train_to_teach_event, :virtual) }
 
       specify "it's marked as being moved online" do
         expect(page).to have_css(".event-box__footer__meta", text: moved_online_heading)
@@ -73,18 +64,21 @@ describe Events::EventBoxComponent, type: "component" do
       trait: :train_to_teach_event,
       expected_colour: "purple",
       is_online: false,
+      is_virtual: false,
     ),
     OpenStruct.new(
       name: "Online Event",
       trait: :online_event,
       expected_colour: "blue",
       is_online: true,
+      is_virtual: false,
     ),
     OpenStruct.new(
       name: "",
       trait: :no_event_type,
       expected_colour: "blue",
       is_online: false,
+      is_virtual: false,
     ),
     # a 'Train to Teach Event' that also happens to be online
     OpenStruct.new(
@@ -92,12 +86,13 @@ describe Events::EventBoxComponent, type: "component" do
       trait: :train_to_teach_event,
       expected_colour: "purple",
       is_online: true,
+      is_virtual: true,
     ),
   ].each do |event_type|
     description = event_type.name.present? ? %(is a '#{event_type.name}') : %(isn't specified)
 
     context %(when the event #{description}) do
-      let(:event) { build(:event_api, event_type.trait, is_online: event_type.is_online) }
+      let(:event) { build(:event_api, event_type.trait, is_online: event_type.is_online, is_virtual: event_type.is_virtual) }
 
       specify %(the event type name should be displayed) do
         expect(page).to have_content(event_type.name)

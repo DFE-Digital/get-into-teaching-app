@@ -1,17 +1,17 @@
 module Events
   class EventBoxComponent < ViewComponent::Base
-    attr_reader :title, :event, :type, :online, :condensed
+    attr_reader :title, :event, :type, :online, :virtual
 
     delegate :format_event_date, :name_of_event_type, :event_type_color, :safe_format, to: :helpers
+    alias_method :online?, :online
+    alias_method :virtual?, :virtual
 
-    alias_method :condensed?, :condensed
-
-    def initialize(event, condensed: false)
+    def initialize(event)
       @event       = event
       @title       = event.name
       @type        = event.type_id
       @online      = event.is_online
-      @condensed   = condensed
+      @virtual     = event.is_virtual
     end
 
     def datetime
@@ -24,14 +24,6 @@ module Events
 
     def type_color
       event_type_color(type)
-    end
-
-    def online?
-      online
-    end
-
-    def heading
-      condensed ? datetime : title
     end
 
     def divider
@@ -47,31 +39,19 @@ module Events
     end
 
     def online_icon
-      icon_class = moved_online? ? "icon-moved-online-event" : "icon-online-event"
+      icon_class = virtual? ? "icon-moved-online-event" : "icon-online-event"
       colour_class = "#{icon_class}--#{type_color}"
 
       tag.div(class: [event_box_footer_icon_class, icon_class, colour_class])
     end
 
     def online_text
-      return "Event has moved online" if moved_online?
+      return "Event has moved online" if virtual?
 
       "Online Event"
     end
 
   private
-
-    def has_building?
-      @event.building.present?
-    end
-
-    def moved_online?
-      online? && has_building?
-    end
-
-    def online_event_type?
-      @type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"]
-    end
 
     def event_box_footer_icon_class
       "event-box__footer__icon"

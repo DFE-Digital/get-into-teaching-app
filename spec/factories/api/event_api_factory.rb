@@ -13,6 +13,7 @@ FactoryBot.define do
     sequence(:start_at) { |i| i.weeks.from_now }
     end_at { start_at + 2.hours }
     is_online { false }
+    is_virtual { false }
     building { build :event_building_api }
 
     trait :closed do
@@ -30,21 +31,20 @@ FactoryBot.define do
       type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
     end
 
-    trait :online_train_to_teach_event do
-      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
+    trait :virtual do
       is_online { true }
-      building { nil }
+      is_virtual { true }
     end
 
-    trait :virtual_train_to_teach_event do
-      train_to_teach_event
+    trait :online do
       is_online { true }
+      is_virtual { false }
+      building { nil }
     end
 
     trait :online_event do
+      online
       type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] }
-      is_online { true }
-      building { nil }
     end
 
     trait :school_or_university_event do
