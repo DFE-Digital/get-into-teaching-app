@@ -25,4 +25,9 @@
         }
       }
     }
+
+    // this is added by Kramdown when using the ToC (table of contents) plugin
+    #markdown-toc {
+        margin-bottom: 3em;
+    }
 }
