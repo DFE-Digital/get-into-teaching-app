@@ -38,11 +38,11 @@ describe "Find an event near you" do
     end
 
     it "displays the discover events heading" do
-      expect(response.body).to include("Discover Events")
+      expect(response.body).to include("Discover events")
     end
 
     it "displays event types" do
-      expect(response.body).to include("Types of Events")
+      expect(response.body).to include("Types of events")
       event_types = GetIntoTeachingApiClient::Constants::EVENT_TYPES.values
 
       event_types.each do |type|
@@ -142,7 +142,7 @@ describe "Find an event near you" do
     end
 
     it "does not display the discover events heading" do
-      expect(response.body).not_to include("Discover Events")
+      expect(response.body).to_not include("Discover events")
     end
 
     it "categorises the results" do

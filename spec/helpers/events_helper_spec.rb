@@ -173,7 +173,7 @@ describe EventsHelper, type: "helper" do
 
   describe "#pluralised_category_name" do
     {
-      222_750_001 => "Train to Teach Events",
+      222_750_001 => "Train to Teach events",
       222_750_008 => "Online events",
       222_750_009 => "School and University events",
     }.each do |type_id, name|
