@@ -62,8 +62,17 @@ module Rack
 
       blocklist("block hostile bots") do |req|
         Fail2Ban.filter("hostile-bots-#{req.ip}", maxretry: 0, findtime: 1.second, bantime: FAIL2BAN_TIME) do
-          FAIL2BAN_REGEX.match?(CGI.unescape(req.query_string)) ||
+          (
+            FAIL2BAN_REGEX.match?(CGI.unescape(req.query_string)) ||
             FAIL2BAN_REGEX.match?(req.path)
+          ).tap do |should_ban|
+            if should_ban
+              Raven.capture_message <<~BAN_MESSAGE
+                Banning IP: #{req.ip} for #{FAIL2BAN_TIME.to_i / 60} minutes
+                accessing #{req.path} with '#{req.query_string}'
+              BAN_MESSAGE
+            end
+          end
         end
       end
     end
