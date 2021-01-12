@@ -15,44 +15,46 @@ module Rack
       req.ip if req.path == "/csp_reports"
     end
 
-    # Throttle requests that issue a verification code by IP (5rpm)
-    throttle("issue_verification_code req/ip", limit: 5, period: 1.minute) do |req|
-      issue_verification_code_paths = [
-        %r{mailinglist/signup/name},
-        %r{events/.*/apply/personal_details},
-      ]
+    unless ENV["SKIP_REQ_LIMITS"].to_s.in? %w[true yes 1]
+      # Throttle requests that issue a verification code by IP (5rpm)
+      throttle("issue_verification_code req/ip", limit: 5, period: 1.minute) do |req|
+        issue_verification_code_paths = [
+          %r{mailinglist/signup/name},
+          %r{events/.*/apply/personal_details},
+        ]
 
-      path_issues_verification_code = issue_verification_code_paths.any? do |pattern|
-        pattern.match(req.path)
+        path_issues_verification_code = issue_verification_code_paths.any? do |pattern|
+          pattern.match(req.path)
+        end
+
+        req.ip if (req.patch? || req.put?) && path_issues_verification_code
       end
 
-      req.ip if (req.patch? || req.put?) && path_issues_verification_code
-    end
+      # Throttle requests that resend a verification code by IP (5rpm)
+      throttle("resend_verification_code req/ip", limit: 5, period: 1.minute) do |req|
+        path_resends_verification_code = %r{/*./resend_verification}.match?(req.path)
 
-    # Throttle requests that resend a verification code by IP (5rpm)
-    throttle("resend_verification_code req/ip", limit: 5, period: 1.minute) do |req|
-      path_resends_verification_code = %r{/*./resend_verification}.match?(req.path)
-
-      req.ip if req.get? && path_resends_verification_code
-    end
-
-    # Throttle mailing list sign ups by IP (5rpm)
-    throttle("mailing_list_sign_up req/ip", limit: 5, period: 1.minute) do |req|
-      req.ip if (req.patch? || req.put?) && req.path == "/mailinglist/signup/privacy_policy"
-    end
-
-    # Throttle event sign ups by IP (5rpm)
-    throttle("event_sign_up req/ip", limit: 5, period: 1.minute) do |req|
-      event_sign_up_paths = [
-        %r{events/.*/apply/personalised_updates},
-        %r{events/.*/apply/further_details},
-      ]
-
-      path_performs_event_sign_up = event_sign_up_paths.any? do |pattern|
-        pattern.match(req.path)
+        req.ip if req.get? && path_resends_verification_code
       end
 
-      req.ip if (req.patch? || req.put?) && path_performs_event_sign_up
+      # Throttle mailing list sign ups by IP (5rpm)
+      throttle("mailing_list_sign_up req/ip", limit: 5, period: 1.minute) do |req|
+        req.ip if (req.patch? || req.put?) && req.path == "/mailinglist/signup/privacy_policy"
+      end
+
+      # Throttle event sign ups by IP (5rpm)
+      throttle("event_sign_up req/ip", limit: 5, period: 1.minute) do |req|
+        event_sign_up_paths = [
+          %r{events/.*/apply/personalised_updates},
+          %r{events/.*/apply/further_details},
+        ]
+
+        path_performs_event_sign_up = event_sign_up_paths.any? do |pattern|
+          pattern.match(req.path)
+        end
+
+        req.ip if (req.patch? || req.put?) && path_performs_event_sign_up
+      end
     end
 
     if ENV["FAIL2BAN"].to_s.match? %r{\A\d+\z}
