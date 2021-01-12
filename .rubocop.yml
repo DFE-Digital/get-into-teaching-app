@@ -132,3 +132,7 @@ RSpec/SubjectStub:
 RSpec/VerifiedDoubles:
   Exclude:
     - spec/**/*.rb
+
+RSpec/NotToNot:
+  Exclude:
+    - spec/**/*.rb
