@@ -7,12 +7,16 @@ class Search
   def results
     return nil if search.blank?
 
-    @results ||= Pages::Frontmatter.list.select do |_path, frontmatter|
-      keywords_match?(frontmatter[:keywords]) || title_matches?(frontmatter[:title])
-    end
+    @results ||= search_frontmatter
   end
 
 private
+
+  def search_frontmatter
+    Pages::Frontmatter.list.select do |_path, frontmatter|
+      keywords_match?(frontmatter[:keywords]) || title_matches?(frontmatter[:title])
+    end
+  end
 
   def keywords_match?(keywords)
     Array.wrap(keywords).any? do |keyword|

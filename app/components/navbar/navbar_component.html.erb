@@ -1,35 +1,60 @@
-<div class="navbar limit-content-width">
-    <%= render "components/logo" %>
-    <div class="navbar__desktop">
-        <ul>
-            <%= nav_link("Home", '/') %>
-            <% resources.each do |resource| %>
-                <%= nav_link(resource[:front_matter][:title], resource[:path]) %>
-            <% end %>
-            <%= nav_link("Find an event near you", events_path) %>
-        </ul>
-
-        <div class="navbar__desktop__search">
-          <%= link_to image_pack_tag("icon-site-search.svg", alt: "Search"), search_path %>
-        </div>
-    </div>
-
-    <div class="navbar__mobile" data-controller="navigation">
-        <div class="navbar__mobile__buttons">
-            <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
-                <div data-navigation-target="label" id="navbar-label" class="icon-hamburger-label">Close</div>
-                <div data-navigation-target="hamburger" id='hamburger' class="icon-close"></div>
-            </a>
-            <%= link_to image_pack_tag("icon-site-search.svg", alt: "Search"), search_path %>
-        </div>
-        <div data-navigation-target="links" id="navbar-mobile-links" class="navbar__mobile__links">
+<div data-controller="<%= "searchbox" unless Rails.env.production? %>" class="limit-content-width searchbox">
+    <div class="navbar">
+        <%= render "components/logo" %>
+        <div class="navbar__desktop">
             <ul>
                 <%= nav_link("Home", '/') %>
                 <% resources.each do |resource| %>
-                    <%= nav_link resource[:front_matter][:title], resource[:path] %>
+                    <%= nav_link(resource[:front_matter][:title], resource[:path]) %>
                 <% end %>
-                <%= nav_link "Find an event near you", events_path %>
+                <%= nav_link("Find an event near you", events_path) %>
             </ul>
+
+            <div class="navbar__desktop__search">
+              <%= link_to image_pack_tag("icon-site-search.svg", alt: "Search"),
+                          search_path,
+                          class: "searchbox__search",
+                          data: { action: "searchbox#toggle" } %>
+
+              <%= link_to image_pack_tag("icon-site-search-close.svg", alt: "Close search"),
+                          search_path,
+                          class: "searchbox__close",
+                          data: { action: "searchbox#toggle" } %>
+            </div>
         </div>
+
+        <div class="navbar__mobile" data-controller="navigation">
+            <div class="navbar__mobile__buttons">
+                <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
+                    <div data-navigation-target="label" id="navbar-label" class="icon-hamburger-label">Close</div>
+                    <div data-navigation-target="hamburger" id='hamburger' class="icon-close"></div>
+                </a>
+
+                <%= link_to image_pack_tag("icon-site-search.svg", alt: "Search"),
+                            search_path,
+                            class: "searchbox__search",
+                            data: { action: "searchbox#toggle" } %>
+
+                <%= link_to image_pack_tag("icon-site-search-close.svg", alt: "Close search"),
+                            search_path,
+                            class: "searchbox__close",
+                            data: { action: "searchbox#toggle" } %>
+            </div>
+            <div data-navigation-target="links" id="navbar-mobile-links" class="navbar__mobile__links">
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <% resources.each do |resource| %>
+                        <li><%= link_to resource[:front_matter][:title], resource[:path] %></li>
+                    <% end %>
+                    <li><%= link_to "Find an event near you", events_path %></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="searchbox__bar" data-searchbox-target="searchbar">
+        <label for="searchbox__input">
+          Search Get into Teaching
+        </label>
     </div>
 </div>

@@ -26,15 +26,7 @@
   <% end %>
   </p>
 
-  <% for path, frontmatter in @search.results %>
-    <%= link_to path, class: "search-result" do %>
-      <p>
-        <% for folder in path.split("/").slice(1...-1) %>
-          <%= folder.humanize.gsub "-", " " %>
-          &rsaquo;
-        <% end %>
-      </p>
-      <h3><%= frontmatter[:title] %></h3>
-    <% end %>
-  <% end %>
+  <div class="searchpage__results">
+    <%= render partial: "result", collection: @search.results %>
+  </div>
 <% end %>
