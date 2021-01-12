@@ -15,6 +15,10 @@ module Events
       populate_events_by_type.sort_by { |k, _| event_type_ids.index(k) }
     end
 
+    def sorted_events_of_type(type_id)
+      sorted_events_by_type.first { |v| v.first == type_id }&.last
+    end
+
   private
 
     def populate_events_by_type
