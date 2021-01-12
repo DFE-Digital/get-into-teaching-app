@@ -182,4 +182,14 @@ describe EventsHelper, type: "helper" do
       end
     end
   end
+
+  describe "#past_category_name" do
+    it "returns 'Past online events' if the category name contains 'online'" do
+      expect(past_category_name("Online events")).to eql("Past online events")
+    end
+
+    it "returns the category name with 'Past' prepended if the category name does not contain 'online'" do
+      expect(past_category_name("Train to Teach events")).to eql("Past Train to Teach events")
+    end
+  end
 end

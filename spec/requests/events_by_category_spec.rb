@@ -29,7 +29,7 @@ describe "View events by category" do
     subject { response }
 
     it { is_expected.to have_http_status :success }
-    it { expect(response.body).to include "Past Online events" }
+    it { expect(response.body).to include "Past online events" }
 
     it "displays all events in the category, ordered by date descending" do
       expect(response.body.scan(/Event \d/)).to eq(["Event 5", "Event 4", "Event 3", "Event 2", "Event 1"])
