@@ -48,7 +48,6 @@ body {
 
 $content-max-width: 1000px;
 $mobile-wrap: 800px;
-$gap: 1em;
 
 main.semantic {
   display: flex;
@@ -59,7 +58,6 @@ main.semantic {
   margin: 1em .8em 3em;
 
   @media only screen and (min-width: $mobile-wrap) {
-    gap: $gap;
     flex-direction: row-reverse;
     justify-content: flex-end;
     margin: 1em auto 4em;
@@ -72,6 +70,9 @@ main.semantic {
   > aside {
     flex: 0 0 calc(30%);
 
+    // note we're not using `gap: 1em` even though it works for flex in
+    // Firefox/Chrome as Safari is lagging behind a bit. Instead knock a
+    // bit off the basis and add some margin when wider than mobile
     @media only screen and (min-width: $mobile-wrap) {
       flex: 0 0 calc(30% - 1em);
       margin-left: 1em;
