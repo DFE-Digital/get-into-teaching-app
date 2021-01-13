@@ -2,6 +2,7 @@ require "rails_helper"
 
 RSpec.feature "content pages check", type: :feature, content: true do
   let(:document) { Nokogiri.parse(page.body) }
+  let(:statuses_deemed_successful) { Rack::Utils::SYMBOL_TO_STATUS_CODE.values_at(:ok, :moved_permanently) }
 
   PageLister.content_urls.each do |url|
     describe "visiting #{url}" do
@@ -53,7 +54,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
           .each do |href|
             visit(href)
 
-            expect(page).to(have_http_status(:success), "invalid link on #{url} - #{href}")
+            expect(page.status_code).to be_in(statuses_deemed_successful)
 
             if (fragment = URI.parse(href).fragment)
               expect(page).to(have_css("#" + fragment), "invalid link on #{url} - #{href}, (missing fragment #{fragment})")
