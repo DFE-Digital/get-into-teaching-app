@@ -44,5 +44,9 @@ module GovukRailsBoilerplate
     # the framework and any gems in your application.
 
     config.exceptions_app = routes
+
+    # View component previews
+    config.view_component.preview_paths << Rails.root.join("spec/components/previews")
+    config.view_component.default_preview_layout = "component_preview"
   end
 end
