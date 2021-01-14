@@ -347,5 +347,18 @@
     }
 }
 
+// Account for the extra height added by the logo skew
+@media only screen and (min-width: 2000px) {
+    .logo-wrapper {
+        height: calc(100% + 40px);
+        overflow: hidden;
+
+    }
+
+    .logo {
+        top: 18px;
+    }
+}    
+
 
 

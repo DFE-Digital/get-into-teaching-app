@@ -12,7 +12,8 @@ body {
     }
 }
 
-main {
+main, 
+header {
     @extend %content-width-limiter-shared; 
 }
 
