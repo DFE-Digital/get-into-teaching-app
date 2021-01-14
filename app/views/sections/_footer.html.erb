@@ -26,7 +26,7 @@
       </div>
       <div class="site-footer-top__links-container">
         <%= link_to("Home", page_path(page: :home)) %>
-        <% navigation_resources.each_with_index do |resource, index| %>
+        <% navigation_resources.each do |resource| %>
           <a href="<%= resource[:path] %>"><%= resource[:front_matter][:title] %></a>
         <% end %>
         <%= link_to "Find an event near you", events_path %>
