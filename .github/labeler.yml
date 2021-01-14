@@ -1,7 +1,11 @@
 ---
 
+Style:
+  - app/**/*.sccs
+
 Ruby:
   - app/**/*.rb
+  - app/**/*.erb
   - db/**/*.rb
   - config/**/*.rb
   - lib/**/*.rb
