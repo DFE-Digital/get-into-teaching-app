@@ -26,11 +26,6 @@
             height: auto;
         }
 
-        @media only screen and (min-width: 1500px) {
-            min-height: 500px;
-            height: 33vw;
-        }
-
         .hero__titles {
             display: flex;
             flex-direction: column;
@@ -69,9 +64,6 @@
                         width: calc(100% - 50px);
                         max-width: 400px;
                         min-width: 0;
-                    }
-                    @media only screen and (min-width: 1500px) {
-                        font-size: 3.6vw;
                     }
 
                     span {
