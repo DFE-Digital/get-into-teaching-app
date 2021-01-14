@@ -1,0 +1,22 @@
+<div class="events-featured__list__item">
+  <div class="event-box">
+    <div class="event-box__header">
+      <h4>
+        <%= header %>
+      </h4>
+    </div>
+
+    <hr class="event-box__divider event-box__divider--online-event" />
+
+    <div class="event-box__datetime">
+      <p>
+      <% for field, value in fields %>
+        <div>
+          <span><%= field.humanize %>:</span>
+          <span><%= linked_value(value) %></span>
+        </div>
+      <% end %>
+      <p>
+    </div>
+  </div>
+</div>
