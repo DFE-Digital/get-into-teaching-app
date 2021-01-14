@@ -1,0 +1,56 @@
+.feature-table {
+  margin: 0 -20px 30px -20px;
+
+  .strapline {
+    margin: 0 4em 0 0;
+
+    &:after {
+      content: '';
+    }
+  }
+
+  table {
+    background-color: $grey;
+    width: 100%;
+    text-align: left;
+    border-spacing: 20px 0.2em;
+    padding: 20px 0;
+
+    tbody {
+      &.mobile {
+        display: none;
+      }
+
+      th {
+        width: 1%;
+        white-space: nowrap;
+
+        &:after {
+          content: ':';
+        }
+      }
+    }
+  }
+
+  &--with-title table {
+    margin-top: -1.3em;
+    padding: 40px 0 20px 0;
+  }
+
+  @media only screen and (max-width: $mobile-wrap) {
+    .strapline {
+      margin-right: 1.2em;
+    }
+
+    table tbody
+    {
+      &.mobile {
+        display: table-row-group;;
+      }
+
+      &.desktop {
+        display: none;
+      }
+    }
+  }
+}
