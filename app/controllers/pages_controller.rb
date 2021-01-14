@@ -3,6 +3,10 @@ class PagesController < ApplicationController
   around_action :cache_static_page, only: %i[show]
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
+  PAGE_LAYOUTS = [
+    "layouts/accordion",
+  ].freeze
+
   def privacy_policy
     @page_title = "Privacy Policy"
     policy_id = params[:id]
@@ -43,6 +47,9 @@ class PagesController < ApplicationController
 private
 
   def page_layout
+    layout = @page.frontmatter[:layout]
+    return layout if PAGE_LAYOUTS.include?(layout)
+
     request.path == root_path ? "layouts/home" : "layouts/content"
   end
 
