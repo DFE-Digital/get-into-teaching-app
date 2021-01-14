@@ -26,7 +26,7 @@ module EventsHelper
   end
 
   def can_sign_up_online?(event)
-    event.web_feed_id && event_status_open?(event) && !is_event_type?(event, "School or University Event")
+    event.web_feed_id && event_status_open?(event) && !is_event_type?(event, "School or University event")
   end
 
   def is_event_type?(event, type_name)
@@ -80,7 +80,7 @@ module EventsHelper
 
   def event_type_color(type_id)
     case type_id
-    when GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]
+    when GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
       "purple"
     else
       "blue"
@@ -89,5 +89,13 @@ module EventsHelper
 
   def pluralised_category_name(type_id)
     t("event_types.#{type_id}.name.plural")
+  end
+
+  def past_category_name(category_name)
+    if category_name.downcase.include? "online"
+      "Past online events"
+    else
+      "Past #{category_name}"
+    end
   end
 end

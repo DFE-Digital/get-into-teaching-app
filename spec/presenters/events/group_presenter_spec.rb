@@ -12,13 +12,13 @@ describe Events::GroupPresenter do
 
   describe "#sorted_events_by_type" do
     let(:type_ids) { subject.sorted_events_by_type.map(&:first) }
-    let(:online_event_type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] }
+    let(:online_event_type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
 
     it "returns events_by_type as an array of [type_id, events] tuples" do
       expect(subject.sorted_events_by_type).to eq([
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"], train_to_teach_events],
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"], online_events],
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"], school_and_university_events],
+        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"], train_to_teach_events],
+        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"], online_events],
+        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"], school_and_university_events],
       ])
     end
 
@@ -47,7 +47,7 @@ describe Events::GroupPresenter do
       let(:early) { build(:event_api, :online_event, start_at: 1.week.from_now) }
       let(:middle) { build(:event_api, :online_event, start_at: 2.weeks.from_now) }
       let(:late) { build(:event_api, :online_event, start_at: 3.weeks.from_now) }
-      let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] }
+      let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
       let(:unsorted_events) { [middle, late, early] }
       let(:ascending) { true }
 

@@ -38,7 +38,7 @@ RSpec.describe Cards::RendererComponent, type: :component do
   end
 
   context "with card type specified" do
-    let(:card) { { category: "Train to Teach Event", card_type: "latest_event" }.with_indifferent_access }
+    let(:card) { { category: "Train to Teach event", card_type: "latest_event" }.with_indifferent_access }
     let(:event) { build(:event_api, name: "Test event") }
     let(:page_data) { double Pages::Data, latest_event_for_category: event }
 

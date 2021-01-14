@@ -98,8 +98,8 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#is_event_type?" do
-    let(:matching_type) { "School or University Event" }
-    let(:non_matching_type) { "Online Event" }
+    let(:matching_type) { "School or University event" }
+    let(:non_matching_type) { "Online event" }
     let(:event) { build(:event_api, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES[matching_type]) }
 
     it "should be truthy when the type matches" do
@@ -113,12 +113,12 @@ describe EventsHelper, type: "helper" do
 
   describe "#event_type_color" do
     it "returns purple for train to teach events" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"]
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
       expect(event_type_color(type_id)).to eq("purple")
     end
 
     it "returns blue for non-train to teach events" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"]
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
       expect(event_type_color(type_id)).to eq("blue")
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Schools or University Events"]
       expect(event_type_color(type_id)).to eq("blue")
@@ -173,13 +173,23 @@ describe EventsHelper, type: "helper" do
 
   describe "#pluralised_category_name" do
     {
-      222_750_001 => "Train to Teach Events",
-      222_750_008 => "Online Events",
-      222_750_009 => "School and University Events",
+      222_750_001 => "Train to Teach events",
+      222_750_008 => "Online events",
+      222_750_009 => "School and University events",
     }.each do |type_id, name|
       specify "#{type_id} => #{name}" do
         expect(pluralised_category_name(type_id)).to eql(name)
       end
+    end
+  end
+
+  describe "#past_category_name" do
+    it "returns 'Past online events' if the category name contains 'online'" do
+      expect(past_category_name("Online events")).to eql("Past online events")
+    end
+
+    it "returns the category name with 'Past' prepended if the category name does not contain 'online'" do
+      expect(past_category_name("Train to Teach events")).to eql("Past Train to Teach events")
     end
   end
 end

@@ -2,7 +2,7 @@ FactoryBot.define do
   factory :event_api, class: "GetIntoTeachingApiClient::TeachingEvent" do
     id { SecureRandom.uuid }
     sequence(:readable_id, &:to_s)
-    type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
+    type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
     web_feed_id { "123" }
     status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"] }
     sequence(:name) { |i| "Become a Teacher #{i}" }
@@ -28,7 +28,7 @@ FactoryBot.define do
     end
 
     trait :train_to_teach_event do
-      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach Event"] }
+      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
     end
 
     trait :virtual do
@@ -44,11 +44,11 @@ FactoryBot.define do
 
     trait :online_event do
       online
-      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online Event"] }
+      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
     end
 
     trait :school_or_university_event do
-      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"] }
+      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"] }
     end
 
     trait :no_event_type do

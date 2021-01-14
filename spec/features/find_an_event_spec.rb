@@ -23,7 +23,7 @@ RSpec.feature "Finding an event", type: :feature do
     visit events_path
 
     expect(page).to have_text "Search for events"
-    expect(page).to have_css "h3", text: "Train to Teach Events"
+    expect(page).to have_css "h3", text: "Train to Teach events"
 
     click_on(event.name)
 
@@ -36,7 +36,7 @@ RSpec.feature "Finding an event", type: :feature do
 
     expect(page).to have_text "Search for events"
 
-    select "Train to Teach Event"
+    select "Train to Teach event"
     click_on "Update results"
 
     expect(page).not_to have_css "h2", text: "Organized by Get into Teaching"
@@ -51,7 +51,7 @@ RSpec.feature "Finding an event", type: :feature do
   scenario "Navigating events by page" do
     visit event_category_path(event_category_slug)
 
-    expect(page).to have_css("h2", text: "Search for Train to Teach Events")
+    expect(page).to have_css("h2", text: "Search for Train to Teach events")
 
     expect(page).to have_link("2", href: event_category_path(event_category_slug, page: 2))
     expect(page).to have_link("Next ›", href: event_category_path(event_category_slug, page: 2))

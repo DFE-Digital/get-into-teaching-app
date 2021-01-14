@@ -29,7 +29,7 @@ describe "View events by category" do
     subject { response }
 
     it { is_expected.to have_http_status :success }
-    it { expect(response.body).to include "Past Online Events" }
+    it { expect(response.body).to include "Past online events" }
 
     it "displays all events in the category, ordered by date descending" do
       expect(response.body.scan(/Event \d/)).to eq(["Event 5", "Event 4", "Event 3", "Event 2", "Event 1"])
@@ -76,7 +76,7 @@ describe "View events by category" do
     let(:blank_search) { { postcode: nil, quantity_per_type: nil, radius: nil, start_after: start_after, start_before: start_before, type_id: nil } }
 
     it "queries events for the correct category" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type).with(blank_search.merge(type_id: type_id, quantity_per_type: expected_limit))
       get event_category_path("school-and-university-events")
@@ -91,7 +91,7 @@ describe "View events by category" do
     let(:filter) { { postcode: "TE57 1NG", quantity_per_type: nil, radius: radius, start_after: start_after, start_before: start_before, type_id: nil } }
 
     it "queries events for the correct category" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type).with(filter.merge(type_id: type_id, quantity_per_type: expected_limit))
       get event_category_path("school-and-university-events", events_search: { distance: radius, postcode: postcode })

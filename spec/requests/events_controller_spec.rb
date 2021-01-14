@@ -45,7 +45,7 @@ describe EventsController do
     end
 
     context "with valid search params" do
-      let(:event_type_name) { "Train to Teach Event" }
+      let(:event_type_name) { "Train to Teach event" }
       let(:event_type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES[event_type_name] }
       let(:search_params) do
         attributes_for(
@@ -159,8 +159,8 @@ describe EventsController do
           it { is_expected.not_to match(/#{event.building.address_postcode}/) }
         end
 
-        context %(when the event is a 'School or University Event') do
-          let(:event) { build(:event_api, web_feed_id: nil, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University Event"]) }
+        context %(when the event is a 'School or University event') do
+          let(:event) { build(:event_api, web_feed_id: nil, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]) }
 
           it { is_expected.to match(%r{To register for this event, follow the instructions in the event information section}) }
           it { is_expected.not_to match(%r{Sign up for this}) }

@@ -7,7 +7,7 @@
 <section role="main" id="main-content">
     <section class="event-type-descriptions">
       <div class="container-1000">
-        <h2 class="strapline strapline--blue">Types of Events</h2>
+        <h2 class="strapline strapline--blue">Types of events</h2>
         <section class="event-type-descriptions__content">
           <% GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.each do |type_id| %>
             <%= render Events::TypeDescriptionComponent.new(type_id) %>
@@ -39,7 +39,7 @@
     <% if @events_by_type.any? %>
       <section class="content container-1000">
         <% unless @performed_search %>
-        <h2 class="strapline strapline--blue discover-events-strapline">Discover Events</h2>
+        <h2 class="strapline strapline--blue discover-events-strapline">Discover events</h2>
         <% end %>
         <% @group_presenter.sorted_events_by_type.each do |type_id, events| %>
           <%= render partial: "event_group", locals: { type_id: type_id, events: events, show_see_all_events: true } %>
