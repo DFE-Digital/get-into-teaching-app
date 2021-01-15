@@ -7,10 +7,11 @@
     @media only screen and (min-width: $mobile-wrap) {
       > * {
         margin-left: $indent-amount;
+        margin-right: $indent-amount;
       }
     }
 
-    @mixin overhang { margin-left: auto; }
+    @mixin overhang { margin-left: auto; margin-right: auto; }
 
     > h2 {
       @include overhang;
@@ -29,6 +30,10 @@
     }
 
     .call-to-action {
+      @include overhang;
+    }
+
+    .feature-table {
       @include overhang;
     }
   }
