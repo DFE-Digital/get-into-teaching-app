@@ -2,24 +2,10 @@
   <% if title? %>
     <h2 class="strapline strapline--blue"><%= title %></h2>
   <% end %>
-  <table aria-label="<%= description %>">
-    <tbody class="desktop">
-      <% data.map do |key, value| %>
-        <tr>
-          <th><%= key %></th>
-          <td><%= value %></td>
-        </tr>
-      <% end %>
-    </tbody>
-    <tbody class="mobile">
-      <% data.map do |key, value| %>
-        <tr>
-          <th><%= key %></th>
-        </tr>
-        <tr>
-          <td><%= value %></td>
-        </tr>
-      <% end %>
-    </tbody>
-  </table>
+  <dl>
+    <% data.map do |key, value| %>
+      <dt><%= key %></dt>
+      <dd><%= value %></dd>
+    <% end %>
+  </dl>
 </div>

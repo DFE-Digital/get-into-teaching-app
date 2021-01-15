@@ -1,10 +1,10 @@
 class Content::FeatureComponentPreview < ViewComponent::Preview
   def with_title_and_data
-    render(Content::FeatureTableComponent.new(data, "Description of the data", "Features"))
+    render(Content::FeatureTableComponent.new(data, "Features"))
   end
 
   def with_data
-    render(Content::FeatureTableComponent.new(data, "Description of the data"))
+    render(Content::FeatureTableComponent.new(data))
   end
 
 private
