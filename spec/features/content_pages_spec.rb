@@ -54,7 +54,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
           .each do |href|
             visit(href)
 
-            expect(page.status_code).to be_in(statuses_deemed_successful)
+            expect(page.status_code).to(be_in(statuses_deemed_successful), "#{href} resulted in #{page.status_code}")
 
             if (fragment = URI.parse(href).fragment)
               expect(page).to(have_css("#" + fragment), "invalid link on #{url} - #{href}, (missing fragment #{fragment})")
