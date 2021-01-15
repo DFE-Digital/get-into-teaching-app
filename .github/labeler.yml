@@ -1,8 +1,9 @@
 ---
 
 Style:
-  - app/**/*.sccs
-
+  - app/**/*.scss
+  - app/**/*.css
+  
 Ruby:
   - app/**/*.rb
   - app/**/*.erb
