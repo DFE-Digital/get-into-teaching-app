@@ -5,6 +5,9 @@ class PagesController < ApplicationController
 
   PAGE_LAYOUTS = [
     "layouts/accordion",
+    "layouts/stories/landing",
+    "layouts/stories/list",
+    "layouts/stories/story",
   ].freeze
 
   def privacy_policy

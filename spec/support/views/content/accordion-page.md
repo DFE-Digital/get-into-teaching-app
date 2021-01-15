@@ -1,6 +1,6 @@
 ---
   layout: "layouts/accordion"
-  title: "Accordion Test"
+  title: "Accordion Page Test"
   accordion:
     steps:
       Step 1:
