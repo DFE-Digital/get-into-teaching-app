@@ -1,6 +1,5 @@
 module Pages
   class Frontmatter
-    MARKDOWN_CONTENT_DIR = Rails.root.join("app/views/content").freeze
     attr_reader :content_dir
 
     class << self
@@ -32,7 +31,11 @@ module Pages
     end
 
     def initialize(content_dir = nil)
-      @content_dir = content_dir ? Pathname.new(content_dir) : MARKDOWN_CONTENT_DIR
+      @content_dir = content_dir ? Pathname.new(content_dir) : markdown_content_dir
+    end
+
+    def markdown_content_dir
+      Pathname.new("#{ApplicationController.view_paths.first.path}/content")
     end
 
     def find(template)

@@ -70,9 +70,6 @@ Rails.application.routes.draw do
   )
   get "/my-story-into-teaching/*story/", to: "stories#index"
 
-  get "/steps-to-become-a-teacher", to: "steps_to_become_a_teacher#show"
-  get "/ways-to-train", to: "ways_to_train#show"
-
   get "/guidance/*page", to: "guidance#show"
   get "*page", to: "pages#show", as: :page
 end
