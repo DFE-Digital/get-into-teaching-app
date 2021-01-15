@@ -1,0 +1,57 @@
+.feature-table {
+  margin: 0 -20px 30px -20px;
+
+  .strapline {
+    margin: 0 4em 0 0;
+
+    &:after {
+      content: '';
+    }
+  }
+
+  dl {
+    font-size: 19px;
+    background-color: $grey;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    dt, dd {
+      padding: 0.15em 0;
+    }
+
+    dt {
+      font-weight: bold;
+      flex-basis: 38%;
+
+      &:after {
+        content: ':';
+      }
+    }
+
+    dd {
+      flex-basis: 62%;
+      margin: 0;
+    }
+  }
+
+  &--with-title dl {
+    margin-top: -1.3em;
+    padding-top: 40px;
+  }
+
+  @media only screen and (max-width: $mobile-wrap) {
+    .strapline {
+      margin-right: 1.2em;
+    }
+
+    dl {
+      dt, dd {
+        flex-basis: 100%;
+      }
+    }
+  }
+}

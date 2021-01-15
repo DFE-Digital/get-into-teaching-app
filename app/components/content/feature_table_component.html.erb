@@ -1,0 +1,11 @@
+<div class="<%= wrapper_class %>">
+  <% if title? %>
+    <h2 class="strapline strapline--blue"><%= title %></h2>
+  <% end %>
+  <dl>
+    <% data.map do |key, value| %>
+      <dt><%= key %></dt>
+      <dd><%= value %></dd>
+    <% end %>
+  </dl>
+</div>

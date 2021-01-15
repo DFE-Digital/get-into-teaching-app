@@ -71,5 +71,5 @@ Rails.application.routes.draw do
   get "/my-story-into-teaching/*story/", to: "stories#index"
 
   get "/guidance/*page", to: "guidance#show"
-  get "*page", to: "pages#show", as: :page
+  get "*page", to: "pages#show", as: :page, constraints: ->(request) { !request.path.start_with?("/rails/") }
 end
