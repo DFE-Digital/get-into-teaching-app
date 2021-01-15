@@ -11,43 +11,14 @@ module Content
       fail(ArgumentError, "description must be present") if description.blank?
     end
 
-    def wrapper
-      wrapper_class = %w[feature-table]
-      wrapper_class << "feature-table--with-title" if title
-      tag.div(class: wrapper_class.join(" ")) { yield }
+    def wrapper_class
+      klass = %w[feature-table]
+      klass << "feature-table--with-title" if title
+      klass.join(" ")
     end
 
-    def table
-      tag.table("aria-label": description) { yield }
-    end
-
-    def heading
-      return nil if title.blank?
-
-      tag.h2(title, class: "strapline strapline--blue")
-    end
-
-    def desktop_rows
-      safe_join(
-        data.map do |key, value|
-          tag.tr do
-            tag.th(key) + tag.td(value)
-          end
-        end,
-      )
-    end
-
-    def mobile_rows
-      safe_join(
-        data.map do |key, value|
-          tag.tr {
-            tag.th(key)
-          } +
-          tag.tr do
-            tag.td(value)
-          end
-        end,
-      )
+    def title?
+      title.present?
     end
 
   private

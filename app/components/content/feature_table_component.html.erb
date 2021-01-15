@@ -1,11 +1,25 @@
-<%= wrapper do %>
-  <%= heading %>
-  <%= table do %>
+<div class="<%= wrapper_class %>">
+  <% if title? %>
+    <h2 class="strapline strapline--blue"><%= title %></h2>
+  <% end %>
+  <table aria-label="<%= description %>">
     <tbody class="desktop">
-      <%= desktop_rows %>
+      <% data.map do |key, value| %>
+        <tr>
+          <th><%= key %></th>
+          <td><%= value %></td>
+        </tr>
+      <% end %>
     </tbody>
     <tbody class="mobile">
-      <%= mobile_rows %>
+      <% data.map do |key, value| %>
+        <tr>
+          <th><%= key %></th>
+        </tr>
+        <tr>
+          <td><%= value %></td>
+        </tr>
+      <% end %>
     </tbody>
-  <% end %>
-<% end %>
+  </table>
+</div>
