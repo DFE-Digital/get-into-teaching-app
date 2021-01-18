@@ -4,6 +4,7 @@ class PagesController < ApplicationController
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
   PAGE_LAYOUTS = [
+    "layouts/home",
     "layouts/accordion",
     "layouts/stories/landing",
     "layouts/stories/list",
@@ -53,7 +54,7 @@ private
     layout = @page.frontmatter[:layout]
     return layout if PAGE_LAYOUTS.include?(layout)
 
-    request.path == root_path ? "layouts/home" : "layouts/content"
+    request.path == root_path ? "layouts/home-old" : "layouts/content"
   end
 
   def content_template
