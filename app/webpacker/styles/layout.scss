@@ -12,13 +12,13 @@ body {
     }
 }
 
-main, 
-header {
-    @extend %content-width-limiter-shared; 
+main,
+main > header {
+    @extend %content-width-limiter-shared;
 }
 
 .limit-content-width {
-    @extend %content-width-limiter-shared; 
+    @extend %content-width-limiter-shared;
 }
 
 .no-hero {
