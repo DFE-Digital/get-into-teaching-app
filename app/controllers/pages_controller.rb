@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
   include StaticPages
-  delegate :template_exists?, to: :lookup_context
   around_action :cache_static_page, only: %i[show]
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
@@ -29,8 +28,6 @@ class PagesController < ApplicationController
   end
 
   def show
-    render_not_found && return if directly_requesting_index_page?
-
     @page = Pages::Page.find content_template
     render template: @page.template, layout: page_layout
   end
@@ -52,10 +49,6 @@ class PagesController < ApplicationController
 
 private
 
-  def directly_requesting_index_page?
-    params[:page].end_with?("/index")
-  end
-
   def page_layout
     layout = @page.frontmatter[:layout]
     return layout if PAGE_LAYOUTS.include?(layout)
@@ -64,10 +57,7 @@ private
   end
 
   def content_template
-    template = "/#{filtered_page_template}"
-    return template if template_exists?("#{Pages::Page::TEMPLATES_FOLDER}/#{template}")
-
-    "#{template}/index"
+    "/#{filtered_page_template}"
   end
 
   def rescue_missing_template
