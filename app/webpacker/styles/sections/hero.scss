@@ -1,6 +1,64 @@
 // layout, mobile-first
 $mobile-cutoff: 800px;
 
+// fallback styles (IE)
+.hero {
+  &__title {
+    display: block;
+    max-width: 90%;
+
+    @media only screen and (min-width: $mobile-cutoff) {
+      display: inline-block;
+      width: 45%;
+    }
+
+    // undo
+    @supports (display: grid) {
+      display: block;
+      width: initial;
+      max-width: initial;
+    }
+
+  }
+
+  &__subtitle {
+    display: block;
+    width: 90%;
+    margin: 0 2em 4em 1em;
+
+    @media only screen and (min-width: $mobile-cutoff) {
+      display: inline-block;
+      max-width: 45%;
+    }
+
+    // undo
+    @supports (display: grid) {
+      display: block;
+      max-width: initial;
+      margin: initial;
+      width: initial;
+    }
+  }
+
+  &__img {
+    float: right;
+    max-width: 50%;
+    display: none;
+
+    @media only screen and (min-width: $mobile-cutoff) {
+      display: block;
+    }
+
+    // undo
+    @supports (display: grid) {
+      float: none;
+      max-width: initial;
+      display: block;
+    }
+  }
+}
+
+// grid-specific
 .hero {
   @supports (display: grid) {
     display: grid;
