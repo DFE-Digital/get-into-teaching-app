@@ -16,9 +16,11 @@
             </section>
         </main>
 
-        <% @front_matter["content"]&.each do |partial| %>
-          <%= render(partial) %>
-        <% end %>
+        <%= render "sections/footer" %>
+        <%= render "components/videoplayer" %>
+        <%= render "sections/cookie-acceptance" %>
+        <%= render "sections/feedback-bar" %>
+        <%= render "components/analytics" %>
     <% end %>
 </html>
 

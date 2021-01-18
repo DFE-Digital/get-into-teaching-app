@@ -3,6 +3,17 @@ require "rails_helper"
 describe "rendering pages with a custom layout" do
   include_context "prepend fake views"
 
+  context "with a home page layout" do
+    before { get "/home-page" }
+    subject { response.body }
+
+    it { expect(response).to have_http_status(200) }
+    it { is_expected.to include("Home Page Test") }
+
+    it { is_expected.to include("Discover the steps to become a teacher") }
+    it { is_expected.to include("Check your qualifications") }
+  end
+
   context "with an accordion layout" do
     before { get "/accordion-page" }
     subject { response.body }
