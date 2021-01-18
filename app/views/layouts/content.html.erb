@@ -14,6 +14,7 @@
 
     <main class="semantic" role="main" id="main-content">
 
+      <% if @front_matter["fullwidth"].blank? %>
       <aside>
         <% if @front_matter["jump_links"].present? %>
           <div class="link-block link-block--jump">
@@ -41,8 +42,9 @@
 
         <%= render partial: "layouts/shared/narrow_call_to_action" %>
       </aside>
+      <% end %>
 
-      <article class="markdown overhang">
+      <article class="markdown overhang <%= "fullwidth" if @front_matter["fullwidth"] %> ">
         <% if !@front_matter["image"] %>
           <%= tag.h1(@front_matter["title"]) %>
         <% end %>

@@ -77,7 +77,7 @@ main.semantic {
     margin: 1em auto 4em;
   }
 
-  > article {
+  > article:not(.fullwidth) {
     flex: 0 1 65%;
   }
 
