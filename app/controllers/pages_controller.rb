@@ -33,10 +33,6 @@ class PagesController < ApplicationController
     render template: @page.template, layout: page_layout
   end
 
-  def showblank
-    render template: content_template, layout: "layouts/blank"
-  end
-
   def tta_service
     raise ActionView::MissingTemplate if ENV["TTA_SERVICE_URL"].blank?
 
