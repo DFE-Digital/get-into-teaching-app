@@ -19,6 +19,8 @@
         <% @front_matter["content"]&.each do |partial| %>
           <%= render(partial) %>
         <% end %>
+
+        <%= render "sections/footer" %>
     <% end %>
 </html>
 
