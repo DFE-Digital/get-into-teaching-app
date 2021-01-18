@@ -1,176 +1,151 @@
+// layout, mobile-first
+$mobile-cutoff: 800px;
 
 .hero {
-    margin-bottom: 1.5em;
+  @supports (display: grid) {
+    display: grid;
 
-    @include mq($until: tablet) {
-      margin-bottom: .5em;
+    grid-template-columns: 3em repeat(3, 1fr);
+    grid-template-rows: repeat(4, minmax(1em, max-content));
+
+    &__title {
+      grid-area: 2 / 1 / 4 / 4;
+      align-self: end;
     }
 
-    > header {
-        display: flex;
-        position: relative;
-        box-sizing: border-box;
-        overflow: hidden;
+    &__subtitle,
+    &__content { grid-area: 4 / 1 / 5 / 4; }
 
-        height: 500px;
+    &__subtitle {
+      align-items: center;
+      margin: 0 auto 2em 1.5em;
 
-        margin-top: -1px;
-
-        background-color: $grey;
-        padding-top: 3em;
-
-        @include mq($until: tablet) {
-            flex-direction: column-reverse;
-            padding-top: 0;
-            height: auto;
-        }
-
-        .hero__titles {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 100%;
-            position: relative;
-            z-index: 1;
-            transform: rotate(-3deg);
-            transform-origin: left;
-            margin-left: -7px;
-
-            @include mq($until: tablet) {
-                position: relative;
-                top: -50px;
-                margin-bottom: -25px;
-            }
-
-            &__title {
-
-                h1 {
-                    background-color: $yellow-dark-90;
-
-                    padding: 20px 40px 25px 40px;
-                    margin: 0 0 30px 0;
-
-                    font-size: 3.38rem;
-                    line-height: 1.4;
-
-                    width: calc(40% + 70px);
-                    min-width: 490px;
-                    box-sizing: border-box;
-
-                    @include mq($until: tablet) {
-                        font-size: 28px;
-                        margin: 0 0 10px 0;
-                        width: calc(100% - 50px);
-                        max-width: 400px;
-                        min-width: 0;
-                    }
-
-                    span {
-                        border-bottom: 5px solid $black;
-                        padding-bottom: 5px;
-
-                        @include mq($until: tablet) {
-                            border-bottom: 4px solid $black;
-                            padding-bottom: 4px;
-                        }
-                        &:after {
-                            content: ".";
-                        }
-                    }
-                }
-            }
-
-            &__subtitle {
-                width: 40%;
-                padding: 0 40px;
-                font-size: 29px;
-                font-weight: 700;
-                box-sizing: border-box;
-
-                @include mq($until: tablet) {
-                    font-size: 19px;
-                    width: 100%;
-                    max-width: 400px;
-                }
-            }
-        }
-
-        .hero__img {
-            overflow: hidden;
-
-            position: absolute;
-            bottom: 0;
-            right: 0;
-
-            width: 60%;
-            height: calc(100% - 3em);
-            @include mq($until: tablet) {
-                position: static;
-                width: calc(100% - 50px);
-                height: 300px;
-                margin-left: 50px;
-            }
-
-
-            img {
-                object-fit: cover;
-                display: block;
-
-                width: 100%;
-                height: 100%;
-
-                @include mq($until: tablet) {
-                    margin: 0;
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
+      @media only screen and (min-width: $mobile-cutoff) {
+        margin: 1em 2em .5em 2em;
+      }
     }
+
+    &__img {
+      min-height: 10em;
+      grid-area: 1 / 2 / 3 / 5;
+    }
+
+    @media only screen and (min-width: $mobile-cutoff) {
+      grid-template-columns: repeat(8, minmax(100px, 1fr));
+      grid-template-rows: 2em repeat(5, minmax(5px, max-content)) 2em;
+
+      &__title { grid-area: 3 / 1 / 5 / 5; }
+
+      &__subtitle,
+      &__content { grid-area: 5 / 1 / 7 / 4; }
+
+      &__img {
+        grid-area: 2 / 4 / 8 / 9;
+      }
+    }
+  }
+}
+
+// styles
+.hero {
+  background-color: $grey;
+
+  // repeat( auto-fit, minmax(250px, 1fr) );
+  overflow: hidden;
+
+  &__title,
+  &__subtitle {
+    > * {
+      @include rotated-block;
+    }
+  }
+
+  &__title {
+    z-index: 20;
+
+    h1 {
+      background-color: $yellow-dark-90;
+      padding: .8em 2em 1.2em;
+      margin-left: -1em;
+
+      @media only screen and (min-width: $mobile-cutoff) {
+        margin-top: 2em;
+      }
+
+      > span {
+        font-size: 2rem;
+        border-bottom: 3px solid $black;
+
+        @media only screen and (min-width: $mobile-cutoff) {
+          font-size: 4rem;
+          border-bottom: 5px solid $black;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+
+    div {
+      font-size: 1.4rem;
+      font-weight: 700;
+
+      @media only screen and (min-width: $mobile-cutoff) {
+        font-size: 2rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__content {
+    background-color: lightblue;
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 .hero__mailing-strip {
-    $mobile-cutoff: 800px;
 
-    display: flex;
-    align-items: center;
-    background-color: $green;
-    margin-top: 50px;
+  display: flex;
+  align-items: center;
+  background-color: $green;
+  margin-top: 50px;
 
-    @include mq($until: tablet) {
-        flex-direction: column;
-        align-items: flex-start;
-        margin: 0 -20px;
-        margin-top: 30px;
+  @media only screen and (max-width: $mobile-cutoff) {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 -20px;
+    margin-top: 30px;
+  }
+
+  &__text {
+    flex-grow: 1;
+    color: $white;
+    font-weight: bold;
+    margin-left: 1em;
+    text-align: left;
+    padding-right: 150px;
+
+    @media only screen and (max-width: $mobile-cutoff) {
+      padding-right: 20px;
     }
+  }
 
-    &__text {
-        flex-grow: 1;
-        color: $white;
-        font-weight: bold;
-        margin-left: 1em;
-        text-align: left;
-        padding-right: 150px;
+  &__cta {
+    margin: 0.4em 1em 20px;
 
-        @include mq($until: tablet) {
-            padding-right: 20px;
+    &__button {
+      @include button($bg: $white, $fg: $black);
+      @include chevron($color: $black);
+      padding: 0.4em 1em;
 
-            > p {
-            }
-        }
+      @media only screen and (max-width: $mobile-cutoff) {
+        padding: .2em .5em;
+      }
     }
-
-    &__cta {
-        margin: 0.4em 1em 20px;
-
-        &__button {
-            @include button($bg: $white, $fg: $black);
-            @include chevron($color: $black);
-            padding: 0.4em 1em;
-
-            @include mq($until: tablet) {
-                padding: .2em .5em;
-            }
-        }
-    }
+  }
 }
