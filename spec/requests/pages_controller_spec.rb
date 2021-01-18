@@ -1,9 +1,9 @@
 require "rails_helper"
 
 describe PagesController do
-  include_context "always render testing page"
-
   describe "#show" do
+    include_context "always render testing page"
+
     context "without caching enabled" do
       it "Should not have cache headers" do
         get "/test"
@@ -65,6 +65,26 @@ describe PagesController do
       subject { response }
       it { is_expected.to have_http_status :not_found }
       it { is_expected.to have_attributes body: %r{Page not found} }
+    end
+  end
+
+  describe "rendering a page that has a .../index template" do
+    include_context "prepend fake views"
+
+    it "returns the template at <template>/index if the request is just for <template>" do
+      get "/test"
+      expect(response).to have_http_status(:success)
+      expect(response.body).to include("Index Page Test")
+    end
+
+    it "returns 404 if <template>/index is requested directly" do
+      get "/test/index"
+      expect(response).to have_http_status(:not_found)
+    end
+
+    it "returns 404 if there is no <template>/index and the request is just for <template>" do
+      get "/stories"
+      expect(response).to have_http_status(:not_found)
     end
   end
 
