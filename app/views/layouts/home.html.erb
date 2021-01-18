@@ -12,15 +12,18 @@
             <%= render Sections::HeroComponent.new(@front_matter) %>
             <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
                 <%= yield %>
+                <% @front_matter["content"]&.each do |partial| %>
+                    <%= render(partial) %>
+                <% end %>
                 <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
             </section>
         </main>
 
-        <% @front_matter["content"]&.each do |partial| %>
-          <%= render(partial) %>
-        <% end %>
-
         <%= render "sections/footer" %>
+        <%= render "components/videoplayer" %>
+        <%= render "sections/cookie-acceptance" %>
+        <%= render "sections/feedback-bar" %>
+        <%= render "components/analytics" %>
     <% end %>
 </html>
 
