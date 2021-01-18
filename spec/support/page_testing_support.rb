@@ -5,12 +5,6 @@ class PageLister
     /index
     /steps-to-become-a-teacher/v2-index
     /privacy-policy
-    /my-story-into-teaching/career-changers/index
-    /my-story-into-teaching/career-progression/index
-    /my-story-into-teaching/international-career-changers/index
-    /my-story-into-teaching/making-a-difference/index
-    /my-story-into-teaching/returners/index
-    /my-story-into-teaching/teacher-training-stories/index
   ].freeze
 
   class << self

@@ -68,26 +68,6 @@ describe PagesController do
     end
   end
 
-  describe "rendering a page that has a .../index template" do
-    include_context "prepend fake views"
-
-    it "returns the template at <template>/index if the request is just for <template>" do
-      get "/test"
-      expect(response).to have_http_status(:success)
-      expect(response.body).to include("Index Page Test")
-    end
-
-    it "returns 404 if <template>/index is requested directly" do
-      get "/test/index"
-      expect(response).to have_http_status(:not_found)
-    end
-
-    it "returns 404 if there is no <template>/index and the request is just for <template>" do
-      get "/stories"
-      expect(response).to have_http_status(:not_found)
-    end
-  end
-
   describe "redirect to TTA site" do
     include_context "stub env vars", "TTA_SERVICE_URL" => "https://tta-service/"
     subject { response }
