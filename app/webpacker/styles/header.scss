@@ -270,15 +270,14 @@
 }
 
 /* mobile css */
-@media only screen and (max-width: 1150px) {
+@include mq($until: desktop) {
     .navbar {
         &__desktop {
                 max-width: calc(100% - 300px);
         }
     }
 }
-@media only screen and (max-width: 900px) {
-
+@include mq($until: 900px) {
     .logo {
 
         position: absolute;

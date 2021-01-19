@@ -152,7 +152,7 @@ footer.site-footer {
     }
 }
 
-@media only screen and (max-width: 1155px) {
+@include mq($until: desktop) {
     footer.site-footer .site-footer-top__links-container {
         max-width: none;
     }

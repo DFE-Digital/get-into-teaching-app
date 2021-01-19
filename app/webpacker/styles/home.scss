@@ -174,9 +174,6 @@
 }
 
 .steps {
-    $steps-row-narrow: 600px;
-    $steps-row-wide: 1200px;
-
     min-height: 250px;
     padding-top: 40px;
     padding-bottom: 60px;
@@ -189,7 +186,7 @@
     &__wrapper {
         display: flex;
 
-        @media (max-width: $steps-row-narrow) {
+        @include mq($until: tablet) {
             flex-direction: column;
         }
 
@@ -209,19 +206,19 @@
         align-items: center;
         min-width: 20%;
 
-        @media (max-width: $steps-row-narrow) {
+        @include mq($until: tablet) {
             flex-direction: row;
             justify-content: flex-start;
             margin: .5em 0;
             align-items: center;
         }
 
-        @media (min-width: $steps-row-narrow) and (max-width: $steps-row-wide) {
+        @include mq($from: tablet, $until: desktop) {
           flex-direction: column;
           align-items: baseline;
         }
 
-        @media (min-width: $steps-row-wide) {
+        @include mq($from: desktop) {
           align-items: baseline;
           padding-right: .5em;
 
@@ -246,7 +243,7 @@
             text-decoration: underline;
         }
 
-        @media (max-width: $steps-row-narrow) {
+        @include mq($until: tablet) {
             margin-left: 0.5em;
             font-size: inherit;
         }
@@ -663,7 +660,7 @@
     }
 }
 
-@media (max-width: 700px) {
+@include mq($until: tablet) {
     .cta-links {
         flex-direction: column;
     }
