@@ -674,17 +674,3 @@
         height: 290px;
     }
 }
-
-@media (max-width:550px) {
-    .steps__wrapper {
-        flex-direction: column
-    }
-    .steps__step {
-        flex-direction: row;
-        align-items: center
-    }
-    .steps__link span {
-        display: inline;
-        white-space: normal;
-    }
-}
