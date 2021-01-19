@@ -78,6 +78,7 @@ module Wizard
     def authenticate(candidate_id, token)
       response = perform_auth_request(candidate_id, token)
       prepopulate_store(response)
+      @store["authenticate"] = false
       @store["authenticated"] = true
     end
 
