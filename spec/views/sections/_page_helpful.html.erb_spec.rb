@@ -1,7 +1,7 @@
 require "rails_helper"
 
-describe "sections/_page_question.html.erb", type: :view do
-  before { render partial: "sections/page_question" }
+describe "sections/_page_helpful.html.erb", type: :view do
+  before { render partial: "sections/page_helpful" }
   subject { rendered }
 
   # Targetted by GTM event.
