@@ -7,6 +7,7 @@ describe CardComponent, type: "component" do
       link: "/another/page",
       link_text: "Link to another page",
       image: "/images/card_thumb.jpg",
+      image_description: "A thorough description of the image",
     }.with_indifferent_access
   end
 
@@ -25,6 +26,10 @@ describe CardComponent, type: "component" do
     is_expected.to have_link(href: card[:link]) do |anchor|
       expect(anchor).to have_css(%(img[src='#{card[:image]}']))
     end
+  end
+
+  specify "sets the image's alt text" do
+    is_expected.to have_css(%(img[alt='#{card[:image_description]}']))
   end
 
   specify "includes the snippet" do

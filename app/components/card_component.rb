@@ -6,14 +6,15 @@ class CardComponent < ViewComponent::Base
   def initialize(card:)
     @card = card
 
-    @snippet   = card["snippet"]
-    @link      = card["link"]
-    @link_text = card["link_text"].presence || card["linktext"]
-    @image     = card["image"]
-    @video     = card["video"]
-    @header    = card["header"]
-    @title     = card["title"]
-    @border    = card["border"] != false
+    @snippet           = card["snippet"]
+    @link              = card["link"]
+    @link_text         = card["link_text"].presence || card["linktext"]
+    @image             = card["image"]
+    @image_description = card["image_description"]
+    @video             = card["video"]
+    @header            = card["header"]
+    @title             = card["title"]
+    @border            = card["border"] != false
   end
 
   def media_link
@@ -35,7 +36,13 @@ private
   end
 
   def thumbnail_image_tag
-    helpers.image_tag(image, data: { "object-fit" => "cover" })
+    helpers.image_tag(image, data: { "object-fit" => "cover" }, **thumbnail_image_alt_attribute)
+  end
+
+  def thumbnail_image_alt_attribute
+    return {} if @image_description.blank?
+
+    { alt: @image_description }
   end
 
   def video_link
