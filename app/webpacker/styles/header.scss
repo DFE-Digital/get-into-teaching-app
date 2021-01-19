@@ -348,7 +348,7 @@
 }
 
 // Account for the extra height added by the logo skew
-@media only screen and (min-width: 2000px) {
+@include mq($from: wide) {
     .logo-wrapper {
         height: calc(100% + 40px);
         overflow: hidden;

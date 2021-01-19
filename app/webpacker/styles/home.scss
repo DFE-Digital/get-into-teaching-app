@@ -316,7 +316,7 @@
         width: 70%;
     }
 
-    @media only screen and (min-width: 2000px) {
+    @include mq($from: wide) {
         &__img {
             left: calc( ((1000px / 3) * 2) + ((2000px - 934px) / 2));
         }
@@ -393,7 +393,7 @@
         background-size: cover;
     }
 
-    @media only screen and (min-width: 2000px) {
+    @include mq($from: wide) {
         &__img {
             left: calc( ((1000px / 3) * 2) + ((2000px - 934px) / 2));
         }
