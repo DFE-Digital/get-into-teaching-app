@@ -134,6 +134,8 @@ $mobile-cutoff: 800px;
         font-size: 2rem;
         border-bottom: 3px solid $black;
 
+        &:after { content: "."; }
+
         @media only screen and (min-width: $mobile-cutoff) {
           font-size: 4rem;
           border-bottom: 5px solid $black;
