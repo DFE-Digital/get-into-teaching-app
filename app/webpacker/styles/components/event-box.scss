@@ -48,7 +48,7 @@
     }
 
     &__content {
-        @media only screen and (max-width: 500px) {
+        @include mq($until: mobile) {
             display: none;
         }
     }

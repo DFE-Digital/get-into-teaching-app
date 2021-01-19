@@ -164,7 +164,7 @@
             }
         }
 
-        @media only screen and (max-width: 500px) {
+        @include mq($until: mobile) {
             display: block;
             width: 100%;
             min-width: 100%;
