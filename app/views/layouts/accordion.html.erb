@@ -43,11 +43,11 @@
                   ) %>
                 <% end %>
               <% end %>
-
+              
+              <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
             </article>
         </main>
 
-        <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
         <%= render "sections/footer" %>
         <%= render "components/videoplayer" %>
         <%= render "sections/cookie-acceptance" %>

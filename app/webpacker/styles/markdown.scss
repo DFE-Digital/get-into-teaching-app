@@ -36,6 +36,10 @@
     .feature-table {
       @include overhang;
     }
+
+    .page-question {
+      @include overhang;
+    }
   }
 
   h2:not(:first-of-type) {

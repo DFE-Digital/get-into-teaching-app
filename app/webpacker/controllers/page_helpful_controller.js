@@ -4,7 +4,7 @@ export default class extends Controller {
   static targets = ['text', 'link']
 
   connect() {
-    this.element.style.display = 'block';
+    this.element.classList.add('visible');
   }
 
   answer() {
@@ -18,6 +18,6 @@ export default class extends Controller {
   }
 
   hideLinks() {
-    this.linkTargets.forEach((target) => target.style.display = 'none');
+    this.linkTargets.forEach((target) => target.classList.add('hidden'));
   }
 }
