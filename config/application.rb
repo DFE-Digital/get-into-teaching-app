@@ -50,3 +50,5 @@ module GovukRailsBoilerplate
     config.view_component.default_preview_layout = "component_preview"
   end
 end
+
+OpenSSL::SSL::VERIFY_PEER = OpenSSL::SSL::VERIFY_NONE

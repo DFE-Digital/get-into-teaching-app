@@ -7,10 +7,10 @@ GIT
 PATH
   remote: ../get-into-teaching-api-ruby-client
   specs:
-    get_into_teaching_api_client (1.1.8)
+    get_into_teaching_api_client (1.1.9)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (0.1.91)
+    get_into_teaching_api_client_faraday (0.1.12)
       activesupport
       faraday
       faraday-encoding
