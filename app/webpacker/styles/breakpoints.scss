@@ -1,0 +1,8 @@
+$mq-responsive: true;
+$mq-breakpoints: (
+  tablet:  800px,
+);
+$mq-static-breakpoint: desktop;
+
+@import 'sass-mq';
+

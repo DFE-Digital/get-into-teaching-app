@@ -8,7 +8,7 @@
   box-sizing: border-box;
   margin-bottom: 20px;
 
-  @media only screen and (max-width: 800px) {
+  @include mq($until: tablet) {
     width: 100%;
   }
 

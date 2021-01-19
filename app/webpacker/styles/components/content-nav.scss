@@ -32,12 +32,10 @@
     
 } 
 
-@media only screen and (max-width: 800px) {
-
+@include mq($until: tablet) {
     .content-nav {
         padding-left: 0px;
         padding-right: 0px;
         margin-bottom: 40px;
     }
-
 }

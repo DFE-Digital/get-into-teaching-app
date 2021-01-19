@@ -4,7 +4,7 @@
   &.overhang {
     $indent-amount: 1.5rem;
 
-    @media only screen and (min-width: $mobile-wrap) {
+    @include mq($until: tablet) {
       > * {
         margin-left: $indent-amount;
         margin-right: $indent-amount;

@@ -282,7 +282,7 @@
     h2 {
         font-size: 24pt;
         margin: 0 0 10px;
-        @media (max-width: 800px) {
+        @include mq($until: tablet) {
             font-size: 28px;
         }
     }
@@ -459,8 +459,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
-
+@include mq($until: tablet) {
     .steps {
 
         &__table {

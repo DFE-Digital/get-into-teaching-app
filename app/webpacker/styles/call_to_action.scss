@@ -4,7 +4,7 @@
   margin-bottom: 2em;
   display: flex;
 
-  @media only screen and (max-width: 800px) {
+  @include mq($until: tablet) {
     flex-direction: column;
   }
 
@@ -74,7 +74,7 @@
       margin-left: 1em;
     }
 
-    @media only screen and (max-width: 800px) {
+    @include mq($until: tablet) {
       flex-direction: column;
 
       .call-to-action__button-row__action + .call-to-action__button-row__action {

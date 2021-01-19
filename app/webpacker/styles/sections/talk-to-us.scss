@@ -59,8 +59,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
-
+@include mq($until: tablet) {
     .talk-to-us {
         padding: 0;
         
@@ -92,5 +91,4 @@
         }
         
     }
-    
 }

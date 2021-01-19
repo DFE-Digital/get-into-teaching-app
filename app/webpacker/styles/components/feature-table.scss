@@ -43,7 +43,7 @@
     padding-top: 40px;
   }
 
-  @media only screen and (max-width: $mobile-wrap) {
+  @include mq($until: tablet) {
     .strapline {
       margin-right: 1.2em;
     }

@@ -158,8 +158,7 @@ footer.site-footer {
     }
 }
 
-@media only screen and (max-width: 800px) {
-
+@include mq($until: tablet) {
     footer.site-footer {
 
         .site-footer-top {

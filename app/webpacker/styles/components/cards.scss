@@ -19,7 +19,7 @@
                 object-fit: cover;
                 display: block;
 
-                @media only screen and (max-width: 800px) {
+                @include mq($until: tablet) {
                     height: 250px;
                     width: 100%;
                 }

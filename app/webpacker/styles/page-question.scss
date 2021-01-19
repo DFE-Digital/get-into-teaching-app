@@ -30,7 +30,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
+@include mq($until: tablet) {
     .page-question-wrapper {
         padding: 20px 0px 50px;
     }

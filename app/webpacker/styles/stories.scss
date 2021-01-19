@@ -3,7 +3,7 @@
         padding: 0 20px;
         width: 66.6%;
 
-        @media only screen and (max-width: 800px) {
+        @include mq($until: tablet) {
           width: 100%;
           padding: 0;
         }
@@ -24,7 +24,7 @@
             padding: 20px;
             width: 66.6%;
 
-            @media only screen and (max-width: 800px) {
+            @include mq($until: tablet) {
               width: 100%;
               margin: 0;
               padding: 0;
@@ -48,7 +48,7 @@
     max-width: 1250px;
     margin: 2em auto 2em;
 
-    @media only screen and (min-width: 800px) {
+    @include mq($from: tablet) {
       border-bottom: 2em solid $purple;
     }
 
@@ -184,9 +184,8 @@
 .stories {
   grid-gap: 1em;
   padding: 0 20px;
-  $story-card-wrap: 800px;
 
-  @media only screen and (max-width: $story-card-wrap) {
+  @include mq($until: tablet) {
     padding: 0;
   }
 
@@ -197,7 +196,7 @@
     background-color: $grey;
     align-items: center;
 
-    @media only screen and (max-width: $story-card-wrap) {
+    @include mq($until: tablet) {
       flex-wrap: nowrap;
       flex-direction: column;
       align-content: flex-start;
@@ -212,7 +211,7 @@
         height: auto;
       }
 
-      @media only screen and (max-width: $story-card-wrap) {
+      @include mq($until: tablet) {
         flex: 1 0 auto;
         justify-items: center;
         text-align: center;
@@ -227,7 +226,7 @@
     .card__snippet {
       flex: 0 0 50%;
 
-      @media only screen and (max-width: $story-card-wrap) {
+      @include mq($until: tablet) {
         flex: 1 0 auto;
         padding: 1em;
       }
@@ -240,7 +239,7 @@
         margin: 0;
         font-size: smaller;
 
-        @media only screen and (max-width: $story-card-wrap) {
+        @include mq($until: tablet) {
           margin-top: .5em;
           padding: 0 .5em;
           font-size: initial;
@@ -253,7 +252,7 @@
       flex: 1 0 80%;
       margin-left: 1em;
 
-      @media only screen and (max-width: $story-card-wrap) {
+      @include mq($until: tablet) {
         margin: 0;
         flex: 1 1 0;
       }
@@ -283,8 +282,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
-
+@include mq($until: tablet) {
     .stories {
 
         &__thumbs {

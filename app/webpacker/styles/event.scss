@@ -31,8 +31,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
-
+@include mq($until: tablet) {
     .event-info {
         
         &__eventbox {
