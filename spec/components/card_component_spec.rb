@@ -113,4 +113,12 @@ describe CardComponent, type: "component" do
       is_expected.to have_link("shortened linktext", href: card[:link], class: "git-link")
     end
   end
+
+  context "when no image_description is provided" do
+    let(:card) { base.merge(image_description: nil).with_indifferent_access }
+
+    it "has no image description attribute" do
+      expect(subject.find("img")["alt"]).to be_nil
+    end
+  end
 end
