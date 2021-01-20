@@ -77,8 +77,11 @@ main.semantic {
   }
 
   > article {
-    flex: 0 1 65%;
+    &.fullwidth {
+      flex: 1 0 100%;
+    }
   }
+
 
   > aside {
     flex: 0 0 calc(30%);

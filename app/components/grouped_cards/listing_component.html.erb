@@ -1,0 +1,23 @@
+<ul>
+  <% for region in regions %>
+  <li>
+    <%= link_to region, "##{group_link_anchor(region)}" %>
+  </li>
+  <% end %>
+</ul>
+
+<% for region in regions %>
+<div class="events-featured" id="<%= group_link_anchor(region) %>">
+  <div class="events-featured__heading">
+    <h3>
+      <%= region %>
+    </h3>
+  </div>
+
+  <div class="events-featured__list">
+  <% for provider in providers(region) %>
+    <%= render GroupedCards::CardComponent.new provider %>
+  <% end %>
+  </div>
+</div>
+<% end %>
