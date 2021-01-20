@@ -8,8 +8,8 @@ module GroupedCards
       @data.keys
     end
 
-    def region_link_anchor(region)
-      region.downcase.gsub %r{[^a-z0-9]+}, "-"
+    def group_link_anchor(group)
+      "group--" + group.parameterize
     end
 
     def providers(region)

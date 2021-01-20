@@ -1,13 +1,13 @@
 <ul>
   <% for region in regions %>
   <li>
-    <%= link_to region, "#group--#{region_link_anchor(region)}" %>
+    <%= link_to region, "##{group_link_anchor(region)}" %>
   </li>
   <% end %>
 </ul>
 
 <% for region in regions %>
-<div class="events-featured" id="group--<%= region_link_anchor(region) %>">
+<div class="events-featured" id="<%= group_link_anchor(region) %>">
   <div class="events-featured__heading">
     <h3>
       <%= region %>
