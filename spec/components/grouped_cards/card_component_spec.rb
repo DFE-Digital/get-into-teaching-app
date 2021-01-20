@@ -17,4 +17,21 @@ describe GroupedCards::CardComponent, type: "component" do
   it { is_expected.to have_css ".event-box__datetime span", text: "Name" }
   it { is_expected.to have_css ".event-box__datetime span", text: "Joe Bloggs" }
   it { is_expected.to have_link "joe.bloggs@first.org", href: "mailto:joe.bloggs@first.org" }
+
+  it { is_expected.not_to have_css "a h4" }
+
+  context "with link" do
+    let(:organisation) do
+      {
+        header: "First organisation",
+        link: "https://education.gov.uk",
+        name: "Joe Bloggs",
+        email: "joe.bloggs@first.org",
+      }.with_indifferent_access
+    end
+
+    it { is_expected.to have_link href: "https://education.gov.uk" }
+    it { is_expected.to have_css "a h4", text: "First organisation" }
+    it { is_expected.to have_link "joe.bloggs@first.org", href: "mailto:joe.bloggs@first.org" }
+  end
 end
