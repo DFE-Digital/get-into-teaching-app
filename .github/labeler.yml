@@ -1,7 +1,12 @@
 ---
 
+Style:
+  - app/**/*.scss
+  - app/**/*.css
+  
 Ruby:
   - app/**/*.rb
+  - app/**/*.erb
   - db/**/*.rb
   - config/**/*.rb
   - lib/**/*.rb
