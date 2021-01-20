@@ -15,7 +15,11 @@
                 <% @front_matter["content"]&.each do |partial| %>
                     <%= render(partial) %>
                 <% end %>
-                <%= render "sections/page_question" unless @front_matter["hide_page_helpful_question"] %>
+                <% unless @front_matter["hide_page_helpful_question"] %>
+                    <div class="container-1000">
+                        <%= render "sections/page_helpful" %>
+                    </div>
+                <% end %>
             </section>
         </main>
 

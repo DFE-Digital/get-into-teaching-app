@@ -16,14 +16,14 @@ describe('PageHelpfulController', () => {
   describe("on connect", () => {
     it("displays the page helpful HTML", () => {
       const pageHelpful = document.getElementById("pageHelpful");
-      expect(pageHelpful.style.display).toContain('block');
+      expect(pageHelpful.classList).toContain('visible');
     });
   });
 
   describe("submitting an answer", () => {
     it("hides the links", () => {
       answerButton.click();
-      expect(answerButton.style.display).toContain('none');
+      expect(answerButton.classList).toContain('hidden');
     });
 
     it("displays a thank you message", () => {
