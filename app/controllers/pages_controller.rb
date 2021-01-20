@@ -54,7 +54,7 @@ private
     layout = @page.frontmatter[:layout]
     return layout if PAGE_LAYOUTS.include?(layout)
 
-    request.path == root_path ? "layouts/home-old" : "layouts/content"
+    "layouts/content"
   end
 
   def content_template
