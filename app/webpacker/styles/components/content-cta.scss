@@ -29,7 +29,7 @@
   width: 65%;
   margin: 0 auto;
 
-  @media only screen and (max-width: 800px) {
+  @include mq($until: tablet) {
     width: 100%;
   }
 }

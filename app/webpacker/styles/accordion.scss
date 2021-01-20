@@ -23,7 +23,7 @@
                 padding: 0 2em 0 0;
                 background: transparent;
 
-                @media only screen and (max-width: 800px) {
+                @include mq($until: tablet) {
                     font-size: 100%;
                 }
             }

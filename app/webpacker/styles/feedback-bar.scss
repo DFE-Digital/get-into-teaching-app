@@ -57,7 +57,7 @@
     margin-top: 0;
 }
 
-@media only screen and (max-width: 700px) {
+@include mq($until: tablet) {
     .feedback-bar {
         width: 100%;
         .container-1000 {
@@ -67,10 +67,6 @@
             flex-direction: column;
             margin-top: -38px;
         }
-    }
-}
-@media only screen and (max-width: 460px) {
-    .feedback-bar {
         &__close {
             padding-top: 5px;
         }

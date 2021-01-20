@@ -1,5 +1,5 @@
 %content-width-limiter-shared {
-    max-width: 2000px;
+    max-width: wide;
     margin: auto;
 }
 
@@ -31,8 +31,8 @@ main > header {
     text-align: center;
     margin: 0 auto;
 
-    @media only screen and (max-width: 800px) {
-        box-sizing: border-box;
+    @include mq($until: tablet) {
+      box-sizing: border-box;
         padding-left: 20px;
         padding-right: 20px;
         .content & {
@@ -61,7 +61,6 @@ main > header {
 // new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
 
 $content-max-width: 1000px;
-$mobile-wrap: 800px;
 
 main.semantic {
   display: flex;
@@ -71,7 +70,7 @@ main.semantic {
   max-width: $content-max-width;
   margin: 1em .8em 3em;
 
-  @media only screen and (min-width: $mobile-wrap) {
+  @include mq($from: tablet) {
     flex-direction: row-reverse;
     justify-content: flex-end;
     margin: 1em auto 4em;
@@ -86,8 +85,8 @@ main.semantic {
 
     // note we're not using `gap: 1em` even though it works for flex in
     // Firefox/Chrome as Safari is lagging behind a bit. Instead knock a
-    // bit off the basis and add some margin when wider than mobile
-    @media only screen and (min-width: $mobile-wrap) {
+    // bit off the basis and add some margin when wider than tablet
+    @include mq($from: tablet) {
       flex: 0 0 calc(30% - 1em);
       margin-left: 1em;
     }

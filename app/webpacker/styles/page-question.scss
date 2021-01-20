@@ -24,13 +24,13 @@
         }
     }
 }
-@media only screen and (max-width: 1000px) {
+@include mq($until: desktop) {
     .page-question-wrapper {
         padding: 20px 20px 50px;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@include mq($until: tablet) {
     .page-question-wrapper {
         padding: 20px 0px 50px;
     }

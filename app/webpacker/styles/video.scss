@@ -39,7 +39,7 @@
 
     &__video-container {
         width: 100%;
-        max-width: 800px;
+        max-width: tablet;
         background-color: $white;
         padding: 20px;
         box-sizing: border-box;
@@ -89,8 +89,7 @@
     
 }
 
-@media only screen and (max-width: 800px) {
-    
+@include mq($until: tablet) {    
     .video-overlay {
     
         &__video-container {
@@ -104,7 +103,7 @@
         }
     }
 }
-@media only screen and (max-width: 500px) {
+@include mq($until: mobile) {
     .video-overlay__video-container {
         padding: 10px;
         margin: 20px;

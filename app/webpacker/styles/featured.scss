@@ -108,7 +108,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
+@include mq($until: tablet) {
     .featured-content {
         margin-top: 70px;
         &__items {
@@ -154,7 +154,7 @@
 
 .explore {
     margin-bottom: 110px;
-    @media only screen and (max-width: 800px) {
+    @include mq($until: tablet) {
         margin-bottom: 45px;
     }
     &__header {
@@ -166,7 +166,7 @@
     }
     h2 {
         margin: 0;
-        @media only screen and (max-width: 800px) {
+        @include mq($until: tablet) {
             margin-bottom: 20px;
         }
     }

@@ -28,7 +28,7 @@
     }
   }
 
-  @include govuk-media-query($from: tablet) {
+  @include mq($from: tablet) {
     width: 100%;
   }
 }
