@@ -2,10 +2,11 @@ import { Application } from 'stimulus' ;
 import LinkController from 'link_controller.js' ;
 
 describe('LinkController', () => {
-  describe ("disabling turbolinks for links to anchors", () => {
+  describe ("disabling turbolinks for links containing anchors", () => {
     beforeEach(() => {
       document.body.innerHTML = `
       <div data-controller="link" data-link-target="content">
+        <a href="path/to#position">Jump Link</a>
         <div id="level-1" class="video-overlay" data-video-target="player" data-action="click->video#close">
           <a href="#level-3" />
           <div id="level-2">

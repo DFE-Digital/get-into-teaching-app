@@ -12,7 +12,7 @@ export default class extends Controller {
         const links = this.contentTarget.querySelectorAll('a');
 
         links.forEach((l) => {
-            if (l.getAttribute('href')?.startsWith('#')) {
+            if (l.getAttribute('href')?.includes('#')) {
                 l.dataset.turbolinks = "false"
             }
         });
