@@ -1,22 +1,13 @@
 <%= tag.header(class: classes) do %>
-    <%= responsive_image %>
-    <div class="hero__title">
-      <h1><%= tag.span(title) %></h1>
+  <%= responsive_image %>
+  <div class="hero__title">
+    <h1><%= tag.span(title) %></h1>
+  </div>
+  <% if subtitle.present? %>
+    <div class="hero__subtitle">
+      <%= tag.div(subtitle) %>
     </div>
-      <% if subtitle.present? %>
-        <div class="hero__subtitle">
-          <%= tag.div(subtitle) %>
-        </div>
-      <% end %>
-      <% if false %>
-        <div class="hero__content">
-          <ul>
-            <li><a href="#">One</a></li>
-            <li><a href="#">Two</a></li>
-            <li><a href="#">Three</a></li>
-          </ul>
-        </div>
-      <% end %>
+  <% end %>
 <% end %>
 
 <% if show_mailing_list %>
