@@ -107,8 +107,6 @@ $mobile-cutoff: 800px;
 // styles
 .hero {
   background-color: $grey;
-
-  // repeat( auto-fit, minmax(250px, 1fr) );
   overflow: hidden;
 
   &__title,
