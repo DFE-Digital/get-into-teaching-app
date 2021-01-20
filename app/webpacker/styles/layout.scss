@@ -13,7 +13,7 @@ body {
 }
 
 main,
-main > header {
+.hero {
     @extend %content-width-limiter-shared;
 }
 
