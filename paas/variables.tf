@@ -21,7 +21,7 @@ variable "paas_space" {
 }
 
 variable "paas_org_name" {
-  default = "dfe-teacher-services"
+  default = "dfe"
 }
 
 variable "instances" {
