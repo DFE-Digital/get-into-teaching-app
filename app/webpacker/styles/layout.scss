@@ -77,9 +77,12 @@ main.semantic {
     margin: 1em auto 4em;
   }
 
-  > article:not(.fullwidth) {
-    flex: 0 1 65%;
+  > article {
+    &.fullwidth {
+      flex: 1 0 100%;
+    }
   }
+
 
   > aside {
     flex: 0 0 calc(30%);
