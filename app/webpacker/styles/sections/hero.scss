@@ -7,7 +7,7 @@ $mobile-cutoff: 800px;
     display: block;
     max-width: 90%;
 
-    @media only screen and (min-width: $mobile-cutoff) {
+    @include mq($from: tablet) {
       display: inline-block;
       width: 45%;
     }
@@ -26,7 +26,7 @@ $mobile-cutoff: 800px;
     width: 90%;
     margin: 0 2em 4em 1em;
 
-    @media only screen and (min-width: $mobile-cutoff) {
+    @include mq($from: tablet) {
       display: inline-block;
       max-width: 45%;
     }
@@ -45,7 +45,7 @@ $mobile-cutoff: 800px;
     max-width: 50%;
     display: none;
 
-    @media only screen and (min-width: $mobile-cutoff) {
+    @include mq($from: tablet) {
       display: block;
     }
 
@@ -78,7 +78,7 @@ $mobile-cutoff: 800px;
       align-items: center;
       margin: 0 auto 2em 1.5em;
 
-      @media only screen and (min-width: $mobile-cutoff) {
+      @include mq($from: tablet) {
         margin: 1em 2em .5em 2em;
       }
     }
@@ -88,7 +88,7 @@ $mobile-cutoff: 800px;
       grid-area: 1 / 2 / 3 / 5;
     }
 
-    @media only screen and (min-width: $mobile-cutoff) {
+    @include mq($from: tablet) {
       grid-template-columns: repeat(8, minmax(100px, 1fr));
       grid-template-rows: 2em repeat(5, minmax(5px, max-content)) 2em;
 
@@ -124,7 +124,7 @@ $mobile-cutoff: 800px;
       padding: .8em 2em 1.2em;
       margin-left: -1em;
 
-      @media only screen and (min-width: $mobile-cutoff) {
+      @include mq($from: tablet) {
         margin-top: 2em;
       }
 
@@ -134,7 +134,7 @@ $mobile-cutoff: 800px;
 
         &:after { content: "."; }
 
-        @media only screen and (min-width: $mobile-cutoff) {
+        @include mq($from: tablet) {
           font-size: 4rem;
           border-bottom: 5px solid $black;
         }
@@ -148,7 +148,7 @@ $mobile-cutoff: 800px;
       font-size: 1.4rem;
       font-weight: 700;
 
-      @media only screen and (min-width: $mobile-cutoff) {
+      @include mq($from: tablet) {
         font-size: 2rem;
         font-weight: 700;
       }
@@ -184,7 +184,7 @@ $mobile-cutoff: 800px;
   background-color: $green;
   margin-top: 50px;
 
-  @media only screen and (max-width: $mobile-cutoff) {
+  @include mq($until: tablet) {
     flex-direction: column;
     align-items: flex-start;
     margin: 0 -20px;
@@ -199,7 +199,7 @@ $mobile-cutoff: 800px;
     text-align: left;
     padding-right: 150px;
 
-    @media only screen and (max-width: $mobile-cutoff) {
+    @include mq($until: tablet) {
       padding-right: 20px;
     }
   }
@@ -212,7 +212,7 @@ $mobile-cutoff: 800px;
       @include chevron($color: $black);
       padding: 0.4em 1em;
 
-      @media only screen and (max-width: $mobile-cutoff) {
+      @include mq($until: tablet) {
         padding: .2em .5em;
       }
     }
