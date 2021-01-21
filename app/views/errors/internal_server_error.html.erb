@@ -1,6 +1,8 @@
-<section class="content container-1000 error-page" role="main" id="main-content"> 
+<% @fullwidth = @skip_hero = @hide_page_helpful_question = true %>
+<% @page_title = "Sorry, there is a problem with the Website" %>
+<section class="error-page">
   <p>Error 500</p>
-  <h1>Sorry, there is a problem with the Website</h1>
+  <h1><%= @page_title %></h1>
   <p>Try again later</p>
   <p><a href="#talk-to-us">Contact us</a> if you need to speak to someone about Get Into Teaching</p>
 </section>

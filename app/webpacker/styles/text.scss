@@ -88,14 +88,6 @@ a {
     }
 }
 
-.strapline-article {
-    @include font;
-    color: $black;
-    font-size: 24pt;
-    background-color: transparent;
-    padding-bottom: 5px;
-}
-
 .strapline-prominent {
     @include font;
     background-color: $pink;

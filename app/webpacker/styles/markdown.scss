@@ -5,7 +5,7 @@
     $indent-amount: 1.5rem;
 
     @include mq($until: tablet) {
-      > * {
+      > *:not(table) {
         margin-left: $indent-amount;
         margin-right: $indent-amount;
       }
@@ -29,14 +29,9 @@
       }
     }
 
-    .call-to-action {
-      @include overhang;
-    }
-
-    .feature-table {
-      @include overhang;
-    }
-
+    .call-to-action,
+    .feature-table,
+    .secondary-button,
     .page-helpful {
       @include overhang;
     }

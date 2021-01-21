@@ -1,15 +1,18 @@
 .event-info {
 
     h1 {
+        font-size: 42px;
+        line-height: 1.25;
         margin: 1em 0 5px 0
-    }
-
-    .page-helpful {
-        margin: 0 -20px 20px -20px;
     }
 
     &__date {
       font-size: 1.4em;
+      margin-top: 0;
+    }
+
+    &__information {
+        @extend p;
     }
 
     &__venue {
@@ -37,7 +40,7 @@
 
 @include mq($until: tablet) {
     .event-info {
-        
+
         &__eventbox {
             display: block;
             width: 100%;
