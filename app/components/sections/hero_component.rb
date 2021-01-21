@@ -24,7 +24,7 @@ module Sections
       image_sizes = [%(#{image_path} 800w)]
       image_sizes << %(#{mobile_image_path} 600w) if mobile_image.present?
 
-      image_tag(image_path, srcset: image_sizes.join(", "), alt: "Student in a classroom")
+      image_tag(image_path, class: "hero__img", srcset: image_sizes.join(", "), alt: "Student in a classroom")
     end
 
   private

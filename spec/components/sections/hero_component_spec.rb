@@ -18,11 +18,11 @@ describe Sections::HeroComponent, type: "component" do
   describe "rendering a hero section" do
     describe "title and subtitle" do
       specify "renders the title" do
-        expect(page).to have_css(".hero__titles > .hero__titles__title > h1", text: front_matter[:title])
+        expect(page).to have_css(".hero__title > h1", text: front_matter[:title])
       end
 
       specify "renders the subtitle" do
-        expect(page).to have_css(".hero__titles > div", text: front_matter[:subtitle])
+        expect(page).to have_css(".hero__subtitle > div", text: front_matter[:subtitle])
       end
     end
 
@@ -37,7 +37,7 @@ describe Sections::HeroComponent, type: "component" do
 
       context "when an image is present in the front matter" do
         specify "the hero renders it" do
-          img_tag = page.find(".hero__img > img")
+          img_tag = page.find("img.hero__img")
           img_tag[:src].match?(Regexp.new(front_matter[:image].delete_suffix(".jpg")))
         end
       end
@@ -46,7 +46,7 @@ describe Sections::HeroComponent, type: "component" do
         let(:component) { described_class.new(front_matter.merge(mobileimage: "media/images/events-hero-mob.jpg")) }
 
         specify "the image's srcset should contain desktop and mobile" do
-          img_tag = page.find(".hero__img > img")
+          img_tag = page.find("img.hero__img")
 
           expect(img_tag[:srcset].split(",").map { |img| img.split.last }).to match_array(%w[600w 800w])
         end
