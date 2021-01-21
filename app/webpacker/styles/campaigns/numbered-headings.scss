@@ -1,0 +1,35 @@
+// styles headings like the fancy links placed in
+// the hero, used on campaign landing pages
+.markdown.hero-nav {
+
+  p + .numbered-heading {
+    margin-top: 4em;
+  }
+
+  .numbered-heading {
+    margin-top: 2em;
+    display: flex;
+    align-items: center;
+
+
+    span.pink-rotated-number {
+      background-color: $pink;
+      @include rotated-block;
+      color: white;
+      padding: .8em;
+      font-weight: bold;
+      margin-right: 1em;
+    }
+
+    h2 {
+      margin: 0;
+      background: none;
+      color: $black;
+
+      &:after {
+        content: "";
+      }
+      // background-color: red;
+    }
+  }
+}
