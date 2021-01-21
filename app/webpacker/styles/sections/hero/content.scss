@@ -1,7 +1,7 @@
 // campaign-specific hero styles
 .hero {
   &__content {
-    ol {
+    .hero-nav {
       font-weight: bold;
       counter-reset: item;
       list-style-type: none;

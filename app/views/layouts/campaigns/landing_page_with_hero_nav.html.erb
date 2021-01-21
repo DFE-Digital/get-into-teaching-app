@@ -12,7 +12,7 @@
     <%= render "sections/header" %>
     <%= render Sections::HeroComponent.new(@front_matter) do %>
       <% if @front_matter["hero_nav"].any? %>
-        <ol>
+        <ol class="hero-nav">
           <% @front_matter["hero_nav"].each do |section, href| %>
           <li><%= link_to(section, href) %></li>
           <% end %>
