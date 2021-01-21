@@ -8,6 +8,12 @@
       <%= tag.div(subtitle) %>
     </div>
   <% end %>
+
+  <% if content.present? %>
+    <div class="hero__content">
+      <%= content %>
+    </div>
+  <% end %>
 <% end %>
 
 <% if show_mailing_list %>

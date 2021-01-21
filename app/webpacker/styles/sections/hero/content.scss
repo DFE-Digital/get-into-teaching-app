@@ -1,0 +1,47 @@
+// campaign-specific hero styles
+.hero {
+  &__content {
+    ol {
+      font-weight: bold;
+      counter-reset: item;
+      list-style-type: none;
+      padding-left: 0;
+
+      li {
+        counter-increment: item;
+        display: flex;
+        align-items: center;
+
+        &:before {
+          content: counter(item);
+          flex: 0 0 1.5em;
+          @include rotated-block;
+          background-color: $pink-dark;
+          text-align: center;
+          color: $white;
+          padding: .4em;
+          margin: 1em;
+        }
+
+        &:after {
+          flex-shrink: 0;
+          flex-basis: 2em;
+          height: 2em;
+          min-width: 4em;
+          content: "   ";
+          background-image: url('../images/icon-down.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+
+        a {
+          color: $black;
+          text-decoration: none;
+          flex-shrink: 1;
+          flex-grow: 1;
+          max-width: 30em;
+        }
+      }
+    }
+  }
+}
