@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
+    <div id="skiplink-container">
+      <div>
+        <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+      </div>
+    </div>
+
+    <%= render "sections/header" %>
+
+    <%= yield :hero %>
+
+    <main class="semantic" role="main" id="main-content">
+      <article class="markdown overhang<%= " fullwidth" if @before_search_fullwidth %> ">
+        <%= yield :before_search %>
+      </article>
+      <div class="feature">
+        <section class="search-for-events">
+          <div class="search-for-events__background"></div>
+          <%= render @search_component %>
+        </section>
+      </div>
+      <article class="markdown overhang fullwidth">
+        <%= yield %>
+      </article>
+    </main>
+
+    <%= render "sections/footer" %>
+    <%= render "sections/cookie-acceptance" %>
+    <%= render "sections/feedback-bar" %>
+    <%= render "components/videoplayer" %>
+  <% end %>
+</html>

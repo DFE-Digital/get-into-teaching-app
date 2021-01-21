@@ -1,68 +1,51 @@
 <% category_name = pluralised_category_name(@type.id) %>
 <% category_name = past_category_name(category_name) if @period == :past %>
-
-<% @page_title = category_name %>
-
-<%= render Sections::HeroComponent.new(
-    title: category_name,
-    image: "media/images/events-hero-dt.jpg")
-%>
-
-<main role="main">
-  <section class="types-of-event">
-    <div class="content container-1000">
-      <%= back_link(events_path, text: "Back") %>
-
-      <div class="events-featured__text">
-        <p><%= safe_html_format(t("find_an_event.types.#{@type.id}")) %></p>
-      </div>
-    </div>
-  </section>
-
-  <section class="search-for-events">
-    <div class="container-1000">
-      <%= render Events::SearchComponent.new(
+<% @search_component = Events::SearchComponent.new(
         @event_search,
         request.path,
         include_type: false,
         heading: "Search for #{category_name}",
         allow_blank_month: true,
-      ) %>
-    </div>
-  </section>
+      )
+%>
+<% @page_title = category_name %>
 
-  <% if @events.any? %>
-  <section class="types-of-event content container-1000">
-    <div class="events-featured">
-      <div class="events-featured__list">
-        <%= render partial: "events/event", collection: @events %>
-      </div>
-    </div>
-  </section>
+<% content_for :hero do %>
+  <%= render Sections::HeroComponent.new(
+      title: category_name,
+      image: "media/images/events-hero-dt.jpg")
+  %>
+<% end %>
 
-  <div class="event-pagination content container-1000">
-    <%= paginate @events %>
+<% content_for :before_search do %>
+  <%= back_link(events_path, text: "Back") %>
+
+  <p><%= safe_html_format(t("find_an_event.types.#{@type.id}")) %></p>
+<% end %>
+
+<% if @events.any? %>
+<section class="types-of-event">
+  <div class="events-featured">
+    <div class="events-featured__list">
+      <%= render partial: "events/event", collection: @events %>
+    </div>
   </div>
-  <% else %>
-  <section class="content container-1000">
-    <div class="content__left">
-      <%= render(Events::NoResultsComponent.new) do %>
-        Sorry your search has not found any events, try a different location or month. <%= link_to("Search for another event type", events_path) %></a>.
-      <% end %>
-    </div>
-  </section>
-  <% end %>
+</section>
 
-  <% if @show_archive_link %>
-    <section class="event-content-cta">
-      <div class="container-1000">
-        <div class="content-cta content-cta--center">
-          <h2> <%= past_category_name(category_name) %> </h2>
-          <p>
-            You can see <%= past_category_name(category_name).downcase %>, including all questions and answers, <%= link_to("on this page", archive_event_category_path(pluralised_category_name(@type.id).parameterize)) %>
-          </p>
-        </div>
-      </div>
-    </section>
+<div class="event-pagination">
+  <%= paginate @events %>
+</div>
+<% else %>
+  <%= render(Events::NoResultsComponent.new) do %>
+    Sorry your search has not found any events, try a different location or month. <%= link_to("Search for another event type", events_path) %></a>.
   <% end %>
-</main>
+<% end %>
+
+<% if @show_archive_link %>
+  <div class="event-content-cta content-cta">
+    <h2> <%= past_category_name(category_name) %> </h2>
+    <p>
+      You can see <%= past_category_name(category_name).downcase %>, including all questions and answers, <%= link_to("on this page", archive_event_category_path(pluralised_category_name(@type.id).parameterize)) %>
+    </p>
+  </div>
+<% end %>

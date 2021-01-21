@@ -1,74 +1,66 @@
-<%= render Sections::HeroComponent.new(
-    title: "Find an event near you",
-    image: "media/images/events-hero-dt.jpg",
-    mobileimage: "media/images/events-hero-mob.jpg")
-%>
+<% content_for :hero do %>
+  <%= render Sections::HeroComponent.new(
+      title: "Find an event near you",
+      image: "media/images/events-hero-dt.jpg",
+      mobileimage: "media/images/events-hero-mob.jpg")
+  %>
+<% end %>
 
-<main role="main" id="main-content">
-    <section class="event-type-descriptions">
-      <div class="container-1000">
-        <h2 class="strapline strapline--blue">Types of events</h2>
-        <section class="event-type-descriptions__content">
-          <% GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.each do |type_id| %>
-            <%= render Events::TypeDescriptionComponent.new(type_id) %>
-          <% end %>
-        </section>
-      </div>
-    </section>
+<% @search_component = Events::SearchComponent.new(
+  @event_search,
+  search_events_path(anchor: "searchforevents")
+) %>
 
-    <section class="search-for-events">
-        <div class="container-1000">
-          <%= render Events::SearchComponent.new(@event_search, search_events_path(anchor: "searchforevents")) %>
-        </div>
-    </section>
+<% @before_search_fullwidth = true %>
 
-    <% unless @performed_search %>
-    <section class="content container-1000">
-      <div class="content-alert">
-        <div class="content-alert__icon">
-          <%= image_pack_tag "media/images/icon-moved-online-purple.svg", alt: "" %>
-        </div>
-        <div>
-          <h4>Some events have moved online</h4>
-          <p>Until it is safe to see you in person, the Train to Teach and most of School and University events are online.</p>
-        </div>
-      </p>
-    </section>
+<% content_for :before_search do %>
+<section class="event-type-descriptions">
+  <h2 class="strapline strapline--blue">Types of events</h2>
+  <section class="event-type-descriptions__content">
+    <% GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.each do |type_id| %>
+      <%= render Events::TypeDescriptionComponent.new(type_id) %>
     <% end %>
+  </section>
+</section>
+<% end %>
 
-    <% if @events_by_type.any? %>
-      <section class="content container-1000">
-        <% unless @performed_search %>
-        <h2 class="strapline strapline--blue discover-events-strapline">Discover events</h2>
-        <% end %>
-        <% @group_presenter.sorted_events_by_type.each do |type_id, events| %>
-          <%= render partial: "event_group", locals: { type_id: type_id, events: events, show_see_all_events: true } %>
-        <% end %>
-      </section>
-    <% else %>
-      <section class="content container-1000">
-        <div class="content__left">
-          <%= render(Events::NoResultsComponent.new) do %>
-            Sorry your search has not found any events, try a different type, location or month.
-          <% end %>
-        </div>
-      </section>
-    <% end %>
 
-    <section class="event-content-cta">
-      <div class="container-1000">
-        <div class="content-cta content-cta--center">
-          <h2>Do you have a teaching event?</h2>
-          <p>
-            If you'd like to advertise your teaching event in this listing, <a href="https://form.education.gov.uk/fillform.php?self=1&amp;form_id=KGRAPEGQYmw&amp;type=form&amp;ShowMsg=1&amp;skipExtraPage=1&amp;form_name=Provider+event+details+-+Get+into+Teaching+website&amp;noRegister=false&amp;ret=/MyServices&amp;blackListId=KGRAPEGQYmw&amp;cancelRedirectLink=%2F&amp;noLoginPrompt=1"
-              title="Submit your event details on GOV.UK"
-              target="_blank"
-              rel="noopener norefferer">
-            please fill in our online form<i class="icon icon-external"></i></a>.
-          </p>
-        </div>
-      </div>
-    </section>
+<% unless @performed_search %>
+  <div class="content-alert">
+    <div class="content-alert__icon">
+      <%= image_pack_tag "media/images/icon-moved-online-purple.svg", alt: "" %>
+    </div>
+    <div>
+      <h4>Some events have moved online</h4>
+      <p>Until it is safe to see you in person, the Train to Teach and most of School and University events are online.</p>
+    </div>
+  </div>
+<% end %>
 
-    <span data-controller="lid" data-lid-action="track" data-lid-event="Events"></span>
-</main>
+<% if @events_by_type.any? %>
+  <% unless @performed_search %>
+  <h2 class="strapline strapline--blue">Discover events</h2>
+  <% end %>
+  <% @group_presenter.sorted_events_by_type.each do |type_id, events| %>
+    <%= render partial: "event_group", locals: { type_id: type_id, events: events, show_see_all_events: true } %>
+  <% end %>
+<% else %>
+  <%= render(Events::NoResultsComponent.new) do %>
+    Sorry your search has not found any events, try a different type, location or month.
+  <% end %>
+<% end %>
+
+<section class="event-content-cta">
+  <div class="content-cta">
+    <h2>Do you have a teaching event?</h2>
+    <p>
+      If you'd like to advertise your teaching event in this listing, <a href="https://form.education.gov.uk/fillform.php?self=1&amp;form_id=KGRAPEGQYmw&amp;type=form&amp;ShowMsg=1&amp;skipExtraPage=1&amp;form_name=Provider+event+details+-+Get+into+Teaching+website&amp;noRegister=false&amp;ret=/MyServices&amp;blackListId=KGRAPEGQYmw&amp;cancelRedirectLink=%2F&amp;noLoginPrompt=1"
+        title="Submit your event details on GOV.UK"
+        target="_blank"
+        rel="noopener norefferer">
+      please fill in our online form<i class="icon icon-external"></i></a>.
+    </p>
+  </div>
+</section>
+
+<span data-controller="lid" data-lid-action="track" data-lid-event="Events"></span>

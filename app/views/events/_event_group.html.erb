@@ -1,32 +1,34 @@
 <% plural_category_name = pluralised_category_name(type_id) %>
 <% with_logo = type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] %>
 
-<div class="events-featured <%= "events-featured--with-logo" if with_logo %>">
-  <div class="events-featured__heading">
-    <h3><%= plural_category_name %></h3>
+<div class="types-of-event">
+  <div class="events-featured <%= "events-featured--with-logo" if with_logo %>">
+    <div class="events-featured__heading">
+      <h3><%= plural_category_name %></h3>
 
-    <% if with_logo %>
-    <div class="events-featured__logo">
-      <%= image_pack_tag "media/images/getintoteachinglogo-with-bg-purple.svg", alt: "" %>
+      <% if with_logo %>
+      <div class="events-featured__logo">
+        <%= image_pack_tag "media/images/getintoteachinglogo-with-bg-purple.svg", alt: "" %>
+      </div>
+      <% end %>
     </div>
+
+    <% if events.any? %>
+      <div class="events-featured__list">
+        <%= render partial: "event", collection: events %>
+      </div>
+    <% else %>
+      <%= render(Events::NoResultsComponent.new) do %>
+        Sorry your search has not found any events of this type, try a different location or month.
+      <% end %>
+    <% end %>
+
+    <% show_see_all_events ||= false %>
+
+    <% if show_see_all_events %>
+      <%= link_to(event_category_path(plural_category_name.parameterize), class: "call-to-action-button") do %>
+        Explore <span><%= plural_category_name %></span>
+      <% end %>
     <% end %>
   </div>
-  
-  <% if events.any? %>
-    <div class="events-featured__list">
-      <%= render partial: "event", collection: events %>
-    </div>
-  <% else %>
-    <%= render(Events::NoResultsComponent.new) do %>
-      Sorry your search has not found any events of this type, try a different location or month.
-    <% end %>
-  <% end %>
-
-  <% show_see_all_events ||= false %>
-
-  <% if show_see_all_events %>
-    <%= link_to(event_category_path(plural_category_name.parameterize), class: "call-to-action-button") do %>
-      Explore <span><%= plural_category_name %></span>
-    <% end %>
-  <% end %>
 </div>
