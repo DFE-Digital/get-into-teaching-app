@@ -1,6 +1,8 @@
-<section class="content container-1000 error-page" role="main" id="main-content"> 
+<% @fullwidth = @skip_hero = @hide_page_helpful_question = true %>
+<% @page_title = "Sorry, that change was rejected" %>
+<section class="error-page">
   <p>Error 422</p>
-  <h1>Sorry, that change was rejected</h1>
+  <h1><%= @page_title %></h1>
   <p>You may not have permissions to perform that action</p>
   <p><a href="#talk-to-us">Contact us</a> if you need to speak to someone about Get Into Teaching</p>
 </section>

@@ -29,14 +29,9 @@
       }
     }
 
-    .call-to-action {
-      @include overhang;
-    }
-
-    .feature-table {
-      @include overhang;
-    }
-
+    .call-to-action,
+    .feature-table,
+    .secondary-button,
     .page-helpful {
       @include overhang;
     }

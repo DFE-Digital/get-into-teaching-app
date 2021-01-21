@@ -1,8 +1,9 @@
-<section class="content container-1000 error-page" role="main" id="main-content"> 
+<% @fullwidth = @skip_hero = @hide_page_helpful_question = true %>
+<% @page_title = "Page not found" %>
+<section class="error-page">
   <p>Error 404</p>
-  <h1>Page not found</h1>
+  <h1><%= @page_title %></h1>
   <p>If you typed the web address, check it is correct.</p>
   <p>If you pasted the web address, check you copied the entire address.</p>
   <p>You can <a href="/">browse from the homepage</a> or <a href="#talk-to-us">contact us</a> if you need to speak to someone about Get Into Teaching</p>
 </section>
-

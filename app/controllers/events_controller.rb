@@ -2,6 +2,7 @@ class EventsController < ApplicationController
   before_action :load_event_search, only: %i[search index]
   before_action :search_events, only: %i[search]
   before_action :load_upcoming_events, only: %i[index]
+  layout "application_old", only: [:index]
 
   UPCOMING_EVENTS_PER_TYPE = 3
 

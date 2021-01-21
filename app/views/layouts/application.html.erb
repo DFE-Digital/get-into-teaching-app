@@ -1,18 +1,33 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "link", "link-target": "content" }  do %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
     <div id="skiplink-container">
       <div>
         <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
       </div>
     </div>
+
     <%= render "sections/header" %>
-    <%= yield %>
+
+    <%= yield :hero %>
+
+    <main class="semantic" role="main" id="main-content">
+      <% unless @fullwidth %>
+        <aside></aside>
+      <% end %>
+      <article class="markdown overhang<%= " fullwidth" if @fullwidth %><%= " no-hero" if @skip_hero %>">
+        <%= yield %>
+      </article>
+      <section class="feature">
+        <%= yield :feature %>
+      </section>
+      <%= render "sections/page_helpful" unless @hide_page_helpful_question %>
+    </main>
+
     <%= render "sections/footer" %>
     <%= render "sections/cookie-acceptance" %>
     <%= render "sections/feedback-bar" %>
+    <%= render "components/videoplayer" %>
   <% end %>
-
 </html>

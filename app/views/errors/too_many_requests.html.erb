@@ -1,8 +1,9 @@
-<section class="content container-1000 error-page" role="main" id="main-content"> 
+<% @fullwidth = @skip_hero = @hide_page_helpful_question = true %>
+<% @page_title = "Too many requests" %>
+<section class="error-page">
   <p>Error 429</p>
-  <h1>Too many requests</h1>
+  <h1><%= @page_title %></h1>
   <p>You have tried to access a page too often in a short space of time.</p>
   <p>You can go <%= link_to("back", :back) %> and try to access the page again in 1 minute.</p>
   <p>You can <a href="/">browse the homepage</a> or <a href="#talk-to-us">talk to us</a> if you have a question about teaching or teacher training.</p>
 </section>
-
