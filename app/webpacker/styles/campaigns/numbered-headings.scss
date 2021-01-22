@@ -11,12 +11,11 @@
     display: flex;
     align-items: center;
 
-
-    span.pink-rotated-number {
-      background-color: $pink;
+    .pink-rotated-number {
+      background-color: $pink-dark;
       @include rotated-block;
-      color: white;
-      padding: .8em;
+      color: $white;
+      padding: .5em .8em;
       font-weight: bold;
       margin-right: 1em;
     }
