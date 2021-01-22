@@ -14,16 +14,18 @@
 
     <main class="semantic" role="main" id="main-content">
       <section class="container">
-        <% unless @fullwidth %>
-          <aside></aside>
-        <% end %>
-        <article class="markdown overhang<%= " fullwidth" if @fullwidth %><%= " no-hero" if @skip_hero %>">
+        <article class="markdown overhang<%= " fullwidth" if @before_search_fullwidth %> ">
+          <%= yield :before_search %>
+        </article>
+      </section>
+      <div class="feature">
+        <%= render @search_component %>
+      </div>
+      <section class="container">
+        <article class="markdown overhang fullwidth">
           <%= yield %>
         </article>
-        <section class="feature">
-          <%= yield :feature %>
-        </section>
-        <%= render "sections/page_helpful" unless @hide_page_helpful_question %>
+      </section>
       </section>
     </main>
 

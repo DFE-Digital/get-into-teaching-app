@@ -13,54 +13,55 @@
     <%= render Sections::HeroComponent.new(@front_matter) %>
 
     <main class="semantic" role="main" id="main-content">
-
-      <% if @front_matter["fullwidth"].blank? %>
-      <aside>
-        <% if @front_matter["jump_links"].present? %>
-          <div class="link-block link-block--jump">
-            <h2 class="link-block__header">On this page:</h2>
-            <ul class="link-block__list">
-              <% @front_matter["jump_links"].each do |item, anchor| %>
-                <%= link_to(item, anchor) %>
-              <% end %>
-            </ul>
-          </div>
-        <% end %>
-
-        <% if @front_matter["related_content"].present? %>
-          <div class="link-block link-block--related">
-            <h2 class="link-block__header">Related Content:</h2>
-            <ul class="link-block__list">
+      <section class="container">
+        <% if @front_matter["fullwidth"].blank? %>
+        <aside>
+          <% if @front_matter["jump_links"].present? %>
+            <div class="link-block link-block--jump">
+              <h2 class="link-block__header">On this page:</h2>
               <ul class="link-block__list">
-                <% @front_matter["related_content"].each do |item, anchor| %>
+                <% @front_matter["jump_links"].each do |item, anchor| %>
                   <%= link_to(item, anchor) %>
                 <% end %>
               </ul>
-            </ul>
-          </div>
+            </div>
+          <% end %>
+
+          <% if @front_matter["related_content"].present? %>
+            <div class="link-block link-block--related">
+              <h2 class="link-block__header">Related Content:</h2>
+              <ul class="link-block__list">
+                <ul class="link-block__list">
+                  <% @front_matter["related_content"].each do |item, anchor| %>
+                    <%= link_to(item, anchor) %>
+                  <% end %>
+                </ul>
+              </ul>
+            </div>
+          <% end %>
+
+          <%= render partial: "layouts/shared/narrow_call_to_action" %>
+        </aside>
         <% end %>
 
-        <%= render partial: "layouts/shared/narrow_call_to_action" %>
-      </aside>
-      <% end %>
+        <article class="markdown overhang <%= "fullwidth" if @front_matter["fullwidth"] %> ">
+          <% if !@front_matter["image"] %>
+            <%= tag.h1(@front_matter["title"]) %>
+          <% end %>
 
-      <article class="markdown overhang <%= "fullwidth" if @front_matter["fullwidth"] %> ">
-        <% if !@front_matter["image"] %>
-          <%= tag.h1(@front_matter["title"]) %>
-        <% end %>
+          <% if @front_matter["alert"].present? %>
+            <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
+          <% end %>
 
-        <% if @front_matter["alert"].present? %>
-          <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
-        <% end %>
+          <%= yield %>
 
-        <%= yield %>
+          <% @front_matter["content"]&.each do |partial| %>
+            <%= render(partial) %>
+          <% end %>
 
-        <% @front_matter["content"]&.each do |partial| %>
-          <%= render(partial) %>
-        <% end %>
-
-        <%= render "sections/page_helpful" unless @front_matter["hide_page_helpful_question"] %>
-      </article>
+          <%= render "sections/page_helpful" unless @front_matter["hide_page_helpful_question"] %>
+        </article>
+      </section>
     </main>
 
         <%= render "sections/footer" %>

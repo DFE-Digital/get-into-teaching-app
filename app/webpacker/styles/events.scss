@@ -18,7 +18,7 @@
 }
 
 .event-content-cta {
-  margin-bottom: 80px;
+  margin: 70px 0 50px 0;
 }
 
 .search-for-events {
@@ -26,9 +26,10 @@
     background-color: $grey;
     padding-bottom: 60px;
     margin-bottom: 50px;
+    margin-top: 3em;
 
-    .container-1000 {
-        text-align: left;
+    &__wrapper {
+      width: 100%;
     }
 
     &__header {
@@ -94,10 +95,9 @@
 .events-featured {
     background: #F0F0F0;
     position: relative;
-    float: left;
     padding: 20px;
     width: 100%;
-    margin-top: 60px;
+    margin-top: 30px;
     box-sizing: border-box;
     + .events-featured {
         margin-top: 30px;
@@ -209,10 +209,6 @@
             margin-right: 0.2em;
         }
     }
-}
-
-.discover-events-strapline {
-  margin-bottom: -20px;
 }
 
 @include mq($until: tablet) {

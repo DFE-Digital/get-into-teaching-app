@@ -2,17 +2,18 @@ class EventsController < ApplicationController
   before_action :load_event_search, only: %i[search index]
   before_action :search_events, only: %i[search]
   before_action :load_upcoming_events, only: %i[index]
-  layout "application_old", only: [:index]
+  layout "application"
 
   UPCOMING_EVENTS_PER_TYPE = 3
 
   def index
     @page_title = "Find an event near you"
+    render layout: "events"
   end
 
   def search
     @page_title = "Find an event near you"
-    render "index"
+    render "index", layout: "events"
   end
 
   def show

@@ -11,6 +11,7 @@
         <%= render Sections::HeroComponent.new(@front_matter) %>
 
         <main class="semantic" role="main" id="main-content">
+          <section class="container">
             <aside>
               <%= render partial: "layouts/shared/narrow_call_to_action" %>
             </aside>
@@ -43,9 +44,10 @@
                   ) %>
                 <% end %>
               <% end %>
-              
+
               <%= render "sections/page_helpful" unless @front_matter["hide_page_helpful_question"] %>
             </article>
+          </section>
         </main>
 
         <%= render "sections/footer" %>

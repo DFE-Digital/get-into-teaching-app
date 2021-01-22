@@ -9,4 +9,8 @@
   a {
     color: $white;
   }
+
+  @include mq($from: tablet) {
+    width: 70%;
+  }
 }

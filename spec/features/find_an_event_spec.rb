@@ -63,4 +63,21 @@ RSpec.feature "Finding an event", type: :feature do
     expect(page).to have_css(".event-box", count: 2)
     expect(page).to have_link("‹ Prev", href: event_category_path(event_category_slug))
   end
+
+  scenario "Searching events within a category" do
+    visit event_category_path("online-events")
+
+    expect(page).to have_text "Search for Online events"
+
+    click_on "Update results"
+
+    uri = URI.parse(page.current_url)
+    expect(uri.fragment).to eq("searchforevents")
+
+    within(:css, ".event-content-cta") do
+      click_on "on this page"
+    end
+
+    expect(page).to have_text "Search for Past online events"
+  end
 end
