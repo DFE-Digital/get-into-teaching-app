@@ -96,12 +96,17 @@ $mobile-cutoff: 800px;
 
       &__subtitle { grid-area: 5 / 1 / 7 / 4; }
 
-      &__content { grid-area: 5 / 2 / 7 / 5; }
+      &__content { grid-area: 5 / 1 / 7 / 5; }
 
       &__img {
         grid-area: 2 / 5 / 8 / 9;
       }
     }
+
+    @include mq($from: wide) {
+      &__content { grid-area: 5 / 2 / 7 / 5; }
+    }
+
   }
 }
 
