@@ -132,7 +132,7 @@ a {
     text-decoration: none;
 }
 
-@include mq($until: tablet) {    
+@include mq($until: tablet) {
     .strapline {
         font-size: 24px;
         padding-top: 10px;

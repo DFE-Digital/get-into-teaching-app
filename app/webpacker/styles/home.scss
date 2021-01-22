@@ -67,7 +67,7 @@
 }
 .cta-links {
     display: flex;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .cta-link {
@@ -270,6 +270,33 @@
   margin-top: 45px;
 }
 
+.home-quote-img,
+.home-find-event-img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-size: cover;
+  // Width calculated to be a third of the content column plus half of the viewport
+  left: calc( ((1000px / 3) * 2) + ((100vw - 934px) / 2));
+  width: calc((1000px / 3) + ((100vw - 1066px) / 2));
+  max-width: 720px;
+  background-position: 50% 15%;
+
+  @include mq($from: wide) {
+    left: calc( ((1000px / 3) * 2) + ((2000px - 934px) / 2));
+  }
+
+  @include mq($until: tablet) {
+    position: static;
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.home-find-event-img {
+  background-image: url('../images/home-events.jpg');
+}
+
 .home-find-event {
     background-color: $grey;
     position: relative;
@@ -332,7 +359,6 @@
 .home-inset-content {
     margin: 0 20px;
 }
-
 .home-quote {
     background: $yellow;
     position: relative;

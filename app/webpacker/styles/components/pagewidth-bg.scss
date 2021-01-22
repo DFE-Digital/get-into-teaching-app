@@ -1,0 +1,27 @@
+.pagewidth-bg {
+  margin: 3em 0;
+  position: relative;
+
+  &--grey {
+    background-color: $grey;
+  }
+
+  &--yellow {
+    background-color: $yellow;
+  }
+
+  &__content {
+    padding: 3em 0;
+  }
+
+  &--with-title {
+    .pagewidth-bg__content {
+      margin-top: -1em;
+      padding-top: 0;
+    }
+  }
+
+  &__title {
+    transform: translate(0, -50%);
+  }
+}
