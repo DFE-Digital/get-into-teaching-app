@@ -1,7 +1,7 @@
 // campaign-specific hero styles
 .hero {
   &__content {
-    .hero-nav {
+    .hero__nav {
       font-weight: bold;
       counter-reset: item;
       list-style-type: none;
@@ -40,6 +40,10 @@
           flex-shrink: 1;
           flex-grow: 1;
           max-width: 30em;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
     }
