@@ -67,5 +67,20 @@ describe Sections::HeroComponent, type: "component" do
         end
       end
     end
+
+    describe "rendering block content" do
+      let(:sample) { "some content" }
+      let(:component) do
+        described_class.new(front_matter)
+      end
+
+      subject! do
+        render_inline(component) { sample }
+      end
+
+      specify "the block content should be rendered by the component" do
+        expect(page).to have_css(".hero__content", text: sample)
+      end
+    end
   end
 end

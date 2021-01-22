@@ -18,6 +18,7 @@
 @import 'accordion';
 
 @import './sections/hero';
+@import './sections/hero/content';
 @import './sections/talk-to-us';
 
 @import './components/mixins/cards-grid';
@@ -32,6 +33,8 @@
 @import './components/type-description';
 @import './components/events/no-results';
 @import './components/turbolinks-progress-bar';
+
+@import './campaigns/numbered-headings';
 
 @import 'home';
 @import 'event';
