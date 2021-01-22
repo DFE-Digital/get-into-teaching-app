@@ -3,10 +3,12 @@
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
       <%= render "sections/header" %>
-      <main role="main" id="main-content" class="semantic">
-        <%= render Stories::StoryComponent.new(@front_matter, @page.data) do %>
-          <%= yield %>
-        <% end %>
+      <main class="semantic" role="main" id="main-content">
+        <section class="container">
+          <%= render Stories::StoryComponent.new(@front_matter, @page.data) do %>
+            <%= yield %>
+          <% end %>
+        </section>
       </main>
       <%= render "sections/footer" %>
       <%= render "components/videoplayer" %>

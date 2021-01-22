@@ -59,52 +59,60 @@ main,
 $content-max-width: 1000px;
 
 main.semantic {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-
-  max-width: $content-max-width;
-  margin: 1em .8em 3em;
+  margin-bottom: 3em;
 
   @include mq($from: tablet) {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-    margin: 1em auto 4em;
+    margin-bottom: 4em;
   }
 
-  > article {
-    flex: 0 1 65%;
+  section.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 
-    &.fullwidth {
-      flex: 1 0 100%;
-    }
+    max-width: $content-max-width;
+    margin: 1em .8em 0;
 
-    &.no-hero {
-      margin-top: 2em;
-    }
-  }
-
-
-  > aside {
-    flex: 0 0 calc(30%);
-
-    // note we're not using `gap: 1em` even though it works for flex in
-    // Firefox/Chrome as Safari is lagging behind a bit. Instead knock a
-    // bit off the basis and add some margin when wider than tablet
     @include mq($from: tablet) {
-      flex: 0 0 calc(30% - 1em);
-      margin-left: 1em;
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      margin: 1em auto 0;
     }
-  }
 
-  // feature: content that's not a regular text document, like a list of items on an index
-  // supplementary: content that's not directly related to the main article but might be of interest
-  > .feature,
-  > .supplementary {
-    flex: 0 0 100%;
-  }
+    > article {
+      flex: 0 1 65%;
 
-  >.page-helpful {
-    flex: 0 1 65%;
+      &.fullwidth {
+        flex: 1 0 100%;
+      }
+
+      &.no-hero {
+        margin-top: 2em;
+      }
+    }
+
+
+    > aside {
+      flex: 0 0 calc(30%);
+
+      // note we're not using `gap: 1em` even though it works for flex in
+      // Firefox/Chrome as Safari is lagging behind a bit. Instead knock a
+      // bit off the basis and add some margin when wider than tablet
+      @include mq($from: tablet) {
+        flex: 0 0 calc(30% - 1em);
+        margin-left: 1em;
+      }
+    }
+
+    // feature: content that's not a regular text document, like a list of items on an index
+    // supplementary: content that's not directly related to the main article but might be of interest
+    > .feature,
+    > .supplementary {
+      flex: 0 0 100%;
+    }
+
+    >.page-helpful {
+      flex: 0 1 65%;
+    }
   }
 }

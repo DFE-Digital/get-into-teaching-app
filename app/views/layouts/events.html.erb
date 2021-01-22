@@ -13,18 +13,20 @@
     <%= yield :hero %>
 
     <main class="semantic" role="main" id="main-content">
-      <article class="markdown overhang<%= " fullwidth" if @before_search_fullwidth %> ">
-        <%= yield :before_search %>
-      </article>
+      <section class="container">
+        <article class="markdown overhang<%= " fullwidth" if @before_search_fullwidth %> ">
+          <%= yield :before_search %>
+        </article>
+      </section>
       <div class="feature">
-        <section class="search-for-events">
-          <div class="search-for-events__background"></div>
-          <%= render @search_component %>
-        </section>
+        <%= render @search_component %>
       </div>
-      <article class="markdown overhang fullwidth">
-        <%= yield %>
-      </article>
+      <section class="container">
+        <article class="markdown overhang fullwidth">
+          <%= yield %>
+        </article>
+      </section>
+      </section>
     </main>
 
     <%= render "sections/footer" %>

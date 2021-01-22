@@ -13,16 +13,18 @@
     <%= yield :hero %>
 
     <main class="semantic" role="main" id="main-content">
-      <% unless @fullwidth %>
-        <aside></aside>
-      <% end %>
-      <article class="markdown overhang<%= " fullwidth" if @fullwidth %><%= " no-hero" if @skip_hero %>">
-        <%= yield %>
-      </article>
-      <section class="feature">
-        <%= yield :feature %>
+      <section class="container">
+        <% unless @fullwidth %>
+          <aside></aside>
+        <% end %>
+        <article class="markdown overhang<%= " fullwidth" if @fullwidth %><%= " no-hero" if @skip_hero %>">
+          <%= yield %>
+        </article>
+        <section class="feature">
+          <%= yield :feature %>
+        </section>
+        <%= render "sections/page_helpful" unless @hide_page_helpful_question %>
       </section>
-      <%= render "sections/page_helpful" unless @hide_page_helpful_question %>
     </main>
 
     <%= render "sections/footer" %>

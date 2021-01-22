@@ -2,7 +2,7 @@
 <% category_name = past_category_name(category_name) if @period == :past %>
 <% @search_component = Events::SearchComponent.new(
         @event_search,
-        request.path,
+        @form_action.to_s,
         include_type: false,
         heading: "Search for #{category_name}",
         allow_blank_month: true,

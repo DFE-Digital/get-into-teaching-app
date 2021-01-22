@@ -1,8 +1,8 @@
 class EventCategoriesController < ApplicationController
   before_action -> { @period = :past }, only: %i[show_archive]
   before_action -> { @period = :future }, only: %i[show]
-  before_action :load_type, :load_events, only: %i[show show_archive]
-  layout "events", only: %i[show show_archive]
+  before_action :load_type, :load_events, :set_form_action
+  layout "events"
 
   EVENTS_PER_PAGE = 9
   MAXIMUM_EVENTS_IN_CATEGORY = 1_000
@@ -33,6 +33,11 @@ private
     end
 
     raise_not_found && return if @type.nil?
+  end
+
+  def set_form_action
+    @form_action = URI.parse(request.path)
+    @form_action.fragment = "searchforevents"
   end
 
   def paginate(events)
