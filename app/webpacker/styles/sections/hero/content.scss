@@ -23,26 +23,29 @@
           margin: 1em;
         }
 
-        &:after {
-          flex-shrink: 0;
-          flex-basis: 2em;
-          height: 2em;
-          min-width: 4em;
-          content: "   ";
-          background-image: url('../images/icon-down.svg');
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-
         a {
+          display: flex;
+          flex-grow: 1;
           color: $black;
           text-decoration: none;
-          flex-shrink: 1;
-          flex-grow: 1;
-          max-width: 30em;
 
           &:hover {
             text-decoration: underline;
+          }
+
+          span {
+            flex-grow: 1;
+          }
+
+          &:after {
+            flex-basis: 2em;
+            align-self: center;
+            height: 2em;
+            min-width: 4em;
+            content: "   ";
+            background-image: url('../images/icon-down.svg');
+            background-repeat: no-repeat;
+            background-position: center;
           }
         }
       }
