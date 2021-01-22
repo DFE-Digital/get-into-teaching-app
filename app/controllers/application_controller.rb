@@ -21,11 +21,11 @@ private
   end
 
   def render_not_found
-    render template: "errors/not_found", status: :not_found
+    render template: "errors/not_found", layout: "application", status: :not_found
   end
 
   def render_too_many_requests
-    render template: "errors/too_many_requests", status: :too_many_requests
+    render template: "errors/too_many_requests", layout: "application", status: :too_many_requests
   end
 
   def http_basic_authenticate
