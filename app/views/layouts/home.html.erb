@@ -1,33 +1,33 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
-    <%= render "sections/head" %>
-    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
-        <div id="skiplink-container">
-            <div>
-                <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
-            </div>
-        </div>
-        <%= render "sections/header" %>
-        <%= render Sections::HeroComponent.new(@front_matter) %>
-        <main role="main" id="main-content">
-            <section class="content content--<%= @front_matter["direction"] %> <%= @front_matter["fullwidth"] ? "" : "container-1000" %>">
-                <%= yield %>
-                <% @front_matter["content"]&.each do |partial| %>
-                    <%= render(partial) %>
-                <% end %>
-                <% unless @front_matter["hide_page_helpful_question"] %>
-                    <div class="container-1000">
-                        <%= render "sections/page_helpful" %>
-                    </div>
-                <% end %>
-            </section>
-        </main>
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
+    <div id="skiplink-container">
+      <div>
+        <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+      </div>
+    </div>
 
-        <%= render "sections/footer" %>
-        <%= render "components/videoplayer" %>
-        <%= render "sections/cookie-acceptance" %>
-        <%= render "sections/feedback-bar" %>
-        <%= render "components/analytics" %>
-    <% end %>
+    <%= render "sections/header" %>
+
+    <%= render Sections::HeroComponent.new(@front_matter) %>
+
+    <main class="semantic" role="main" id="main-content">
+      <section class="container">
+        <article class="markdown overhang fullwidth">
+          <%= yield %>
+        </article>
+      </section>
+
+      <% @front_matter["content"]&.each do |partial| %>
+        <%= render(partial) %>
+      <% end %>
+    </main>
+
+    <%= render "sections/footer" %>
+    <%= render "components/videoplayer" %>
+    <%= render "sections/cookie-acceptance" %>
+    <%= render "sections/feedback-bar" %>
+    <%= render "components/analytics" %>
+  <% end %>
 </html>
-
