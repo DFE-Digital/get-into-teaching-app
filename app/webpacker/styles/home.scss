@@ -235,7 +235,7 @@
         font-weight: bold;
         word-break: break-all;
         text-decoration: none;
-        font-size: smaller;
+        font-size: $fs-16;
         padding: 0.5em;
 
         &:hover {
@@ -304,10 +304,10 @@
         padding-top: 20px;
     }
     h2 {
-        font-size: 24pt;
+        font-size: $fs-32;
         margin: 0 0 10px;
         @include mq($until: tablet) {
-            font-size: 28px;
+            font-size: $fs-28;
         }
     }
 
@@ -342,7 +342,7 @@
 
     @include mq($from: wide) {
         &__img {
-            left: calc( ((1000px / 3) * 2) + ((2000px - 934px) / 2));
+            left: calc( ((1000px / 3) * 2) + ((1500px - 934px) / 2));
         }
     }
 }
@@ -374,7 +374,7 @@
     &__quote {
         margin: 0 0 20px;
         font-weight: bold;
-        font-size: 28px;
+        font-size: $fs-28;
         line-height: 1.25;
         display: block;
         &:before {
@@ -530,7 +530,7 @@
                 left: 0px;
 
                 .strapline {
-                    font-size: 24px;
+                    font-size: $fs-24;
                 }
             }
         }
@@ -565,7 +565,7 @@
                 top:-285px;
 
                 .strapline {
-                    font-size: 24px;
+                    font-size: $fs-24;
                 }
             }
         }
@@ -658,7 +658,7 @@
         padding-bottom: 40px;
 
         .strapline {
-            font-size: 24px;
+            font-size: $fs-24;
             margin-right:80px;
         }
 
@@ -681,7 +681,7 @@
     .steps-home {
       margin-top: 30px;
       h2 {
-        font-size: 28px;
+        font-size: $fs-28;
       }
     }
 }

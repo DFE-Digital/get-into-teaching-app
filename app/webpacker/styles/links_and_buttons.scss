@@ -5,7 +5,7 @@
     text-decoration: none;
     color: $fg;
     padding: 14px 20px;
-    font-size: 19px;
+    font-size: $fs-19;
     white-space: nowrap;
     border: none;
 
@@ -35,7 +35,7 @@ a {
 a.content-link-secondary {
     @include font;
     font-weight: bold;
-    font-size: 19px;
+    font-size: $fs-19;
     color: $black;
     text-decoration: none;
     display: inline-block;

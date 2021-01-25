@@ -30,7 +30,7 @@
                 margin: 3em auto auto -.2em;
 
                 > span {
-                    font-size: 150%;
+                    font-size: $fs-24;
                     color: white;
                     background-color: $pink-dark-90;
                     padding: .8em;
@@ -97,7 +97,7 @@
 
   h2 {
     padding: 0 20px 20px ;
-    font-size: 24pt;
+    font-size: $fs-32;
   }
 
   .card {

@@ -26,7 +26,7 @@
         }
 
         h1 {
-            font-size: 42px;
+            font-size: $fs-42;
             line-height: 1.25;
         }
 
@@ -35,7 +35,7 @@
         }
 
         h3 {
-            font-size: 28px;
+            font-size: $fs-28;
             font-weight: bold;
             margin: 0;
             padding: 0;
@@ -44,7 +44,7 @@
         }
 
         h4 {
-            font-size: 19px;
+            font-size: $fs-19;
             font-weight: bold;
             margin: 0;
             padding: 0;
@@ -67,7 +67,7 @@
         }
 
         li {
-            font-size: 19px;
+            font-size: $fs-19;
             line-height: 1.6;
         }
 

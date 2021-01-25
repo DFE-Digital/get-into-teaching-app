@@ -29,8 +29,8 @@
     text-align: left;
 
     &__content {
-        font-size: 19px;
         padding-top: 2em;
+        font-size: $fs-19;
 
         &__inputs {
             display: flex;
@@ -105,7 +105,7 @@
 
     &__heading {
       > h3 {
-        font-size: 28px;
+        font-size: $fs-28;
         margin: 0 0 20px 0;
         line-height: 1.25;
       }
@@ -152,7 +152,7 @@
 
         @mixin pagination-item {
             font-weight: bold;
-            font-size: smaller;
+            font-size: $fs-16;
             padding: 0.8em 0.8em;
             text-decoration: none;
             margin: 1em 0;
@@ -292,7 +292,7 @@
     .events-featured {
       &__heading {
         > h3 {
-          font-size: 23px;
+          font-size: $fs-24;
         }
       }
     }

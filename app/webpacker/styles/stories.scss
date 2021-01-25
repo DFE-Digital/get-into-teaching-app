@@ -71,7 +71,7 @@
         color: $white;
 
         h2 {
-            font-size: 28px;
+            font-size: $fs-28;
         }
 
         h3 {
@@ -97,10 +97,6 @@
 }
 
 .story {
-    h1 {
-        font-size: 40px;
-    }
-
     .story__header {
         display: flex;
         align-items: center;
@@ -113,7 +109,7 @@
         &__label {
 
             h2 {
-                font-size: 32px;
+                font-size: $fs-32;
                 border-bottom: none;
                 padding: 0 20px;
                 margin: 0;
@@ -139,7 +135,7 @@
         p {
             padding: 15px 44px;
             font-weight: bold;
-            font-size: 115%;
+            font-size: $fs-22;
 
             @mixin quote-icon {
                 @include icon;
@@ -153,7 +149,7 @@
             &::before {
                 @include quote-icon;
                 position: absolute;
-                left: 19px;
+                left: $fs-19;
             }
 
             &::after {
@@ -237,7 +233,7 @@
       > p {
         padding: 0 .6em;
         margin: 0;
-        font-size: smaller;
+        font-size: $fs-16;
 
         @include mq($until: tablet) {
           margin-top: .5em;
