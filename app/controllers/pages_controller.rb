@@ -5,6 +5,7 @@ class PagesController < ApplicationController
 
   PAGE_LAYOUTS = [
     "layouts/home",
+    "layouts/home_old",
     "layouts/accordion",
     "layouts/stories/landing",
     "layouts/stories/list",
