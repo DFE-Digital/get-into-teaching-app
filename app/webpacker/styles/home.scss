@@ -342,7 +342,7 @@
 
     @include mq($from: wide) {
         &__img {
-            left: calc( ((1000px / 3) * 2) + ((1500px - 934px) / 2));
+            left: calc( ((1000px / 3) * 2) + ((2000px - 934px) / 2));
         }
     }
 }

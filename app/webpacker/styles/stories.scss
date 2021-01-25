@@ -97,6 +97,10 @@
 }
 
 .story {
+    h1 {
+        font-size: $fs-40;
+    }
+
     .story__header {
         display: flex;
         align-items: center;
