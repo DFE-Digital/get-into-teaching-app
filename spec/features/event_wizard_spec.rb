@@ -257,7 +257,7 @@ RSpec.feature "Event wizard", type: :feature do
     email: "test@user.com"
   )
     fill_in "First name", with: first_name if first_name
-    fill_in "Surname", with: last_name if last_name
+    fill_in "Last name", with: last_name if last_name
     fill_in "Email address", with: email if email
   end
 

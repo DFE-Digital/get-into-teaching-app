@@ -43,14 +43,14 @@ en:
         </ul>
       222750008: |-
         <p>
-          Ask a panel of specialists the questions that matter to you in one of our real-time Q&A online events. 
-          Whether you want general guidance, or advice tailored to your circumstances, these events offer a 
+          Ask a panel of specialists the questions that matter to you in one of our real-time Q&A online events.
+          Whether you want general guidance, or advice tailored to your circumstances, these events offer a
           convenient way to discuss a range of topics related to teacher training.
         </p>
       222750009: |-
         <p>
-          Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to get a feel for what 
-          their teacher training course might be like. 
+          Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to get a feel for what
+          their teacher training course might be like.
         </p>
 
         <p>Each event is different, but typically they’ll cover areas such as:</p>
@@ -67,21 +67,21 @@ en:
         singular: "Train to Teach event"
         plural: "Train to Teach events"
       description: |-
-        Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training 
+        Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training
         will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
     222750008:
       name:
         singular: "Online event"
         plural: "Online events"
       description: |-
-        In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train. 
+        In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train.
         Get fast answers to your questions so you can take the next step to becoming a teacher.
     222750009:
       name:
         singular: "School or University event"
         plural: "School and University events"
       description: |-
-        These events, run by schools and universities, are a great way to and find out more about a particular training provider. 
+        These events, run by schools and universities, are a great way to and find out more about a particular training provider.
         Find out what they have to offer and help make your decision on where to apply.
   activemodel:
     errors:
@@ -188,7 +188,7 @@ en:
 
       events_steps_personal_details:
         first_name: First name
-        last_name: Surname
+        last_name: Last name
         email: Email address
       events_steps_contact_details:
         telephone: Phone number (optional)
@@ -200,7 +200,7 @@ en:
 
       mailing_list_steps_name:
         first_name: First name
-        last_name: Surname
+        last_name: Last name
         email: Email address
       mailing_list_steps_degree_status:
         degree_status_id: What stage are you at with your degree?
