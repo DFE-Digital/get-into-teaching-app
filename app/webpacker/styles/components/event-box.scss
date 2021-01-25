@@ -1,16 +1,3 @@
-.event-link {
-    &:focus {
-        outline: none;
-        border: none;
-        background: transparent;
-        box-shadow: none;
-    }
-}
-
-.events-listing p {
-  font-size: 300px;
-}
-
 .event-box {
     box-sizing: border-box;
     padding: 20px;
