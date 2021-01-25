@@ -1,66 +1,17 @@
 .navbar {
-
-    height: 112px;
+    min-height: 112px;
     width: 100%;
     background-color: $white;
-        border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-
-    &__desktop-bak {
-        max-width: 630px;
-        float:right;
-        margin-top:20px;
-        margin-right: 20px;
-    
-        div {
-            width: 100%;
-            height: 30px;
-        }
-        
-        ul {    
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-    
-        li {
-            float: right;
-        }
-    
-        li a {
-            @include font;
-            font-size: $fs-16;
-            display: block;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-            text-align: right;
-            font-weight: bold;
-            letter-spacing: 0px;
-            color: #1D1D1B;
-            margin-left: -10px;
-            margin-bottom: -20px;
-            line-height: 1;
-        }
-
-        li a:hover {
-            text-decoration: underline;
-        }
-    }
-
     &__desktop {
-        max-width: calc(100% - 350px);
-        float:right;
+        margin-left: 280px;
+        width: 100%;
         margin-top: 0px;
         margin-right: 20px;
-    
-        div {
-            width: 100%;
-            height: 30px;
-        }
         
         ul {    
             list-style-type: none;
@@ -72,7 +23,6 @@
         }
     
         li {
-            float: right;
             padding: 8px 16px;
         }
     
@@ -188,11 +138,17 @@
 
 }
 
-.logo {
+.logo-wrapper {
+  position: absolute;
+  z-index: 0;
+  width: 260px ;
+  overflow-x: hidden;
+  top: 8px;
+  padding-bottom: 20px;
+}
 
-    display: inline-block;
-    position: relative;
-    top: 8px;
+.logo {
+    display: block;
 
     a {
         text-decoration: none;
@@ -269,24 +225,17 @@
 
 }
 
-/* mobile css */
-@include mq($until: desktop) {
-    .navbar {
-        &__desktop {
-                max-width: calc(100% - 300px);
-        }
-    }
-}
 @include mq($until: 900px) {
+    .logo-wrapper {
+      width: 200px ;
+      top: 0;
+    }
+
     .logo {
-
-        position: absolute;
-
         &__image {
 
             width: 196px;
             height: 87px;
-            top: 4px;
 
             img {
                 margin-top: 20px;
@@ -298,9 +247,8 @@
     }
     
     .navbar {
-
         position: relative;
-        height: auto;
+        min-height: auto;
         &__desktop {
             display: none;
         }
@@ -349,12 +297,6 @@
 // Account for the extra height added by the logo skew
 @include mq($from: wide) {
     .logo-wrapper {
-        height: calc(100% + 40px);
-        overflow: hidden;
-
-    }
-
-    .logo {
         top: 18px;
     }
 }    
