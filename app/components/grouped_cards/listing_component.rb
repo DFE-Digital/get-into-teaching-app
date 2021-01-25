@@ -4,7 +4,7 @@ module GroupedCards
       @data = data
     end
 
-    def regions
+    def groups
       @data.keys
     end
 
@@ -12,8 +12,8 @@ module GroupedCards
       "group--" + group.parameterize
     end
 
-    def providers(region)
-      @data[region]
+    def items(group)
+      @data[group]
     end
   end
 end

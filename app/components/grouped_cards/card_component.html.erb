@@ -1,9 +1,7 @@
-<div class="events-featured__list__item">
+<div class="events-featured__list__item grouped-cards">
   <div class="event-box">
-    <div class="event-box__header">
-      <h4>
-        <%= header %>
-      </h4>
+    <div class="event-box__header grouped-cards__header">
+      <%= linked_header %>
     </div>
 
     <hr class="event-box__divider event-box__divider--online-event" />
@@ -11,12 +9,12 @@
     <div class="event-box__datetime">
       <p>
       <% for field, value in fields %>
-        <div>
+        <div class="grouped-cards__fields">
           <span><%= field.humanize %>:</span>
           <span><%= linked_value(value) %></span>
         </div>
       <% end %>
-      <p>
+      </p>
     </div>
   </div>
 </div>
