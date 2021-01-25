@@ -1,6 +1,6 @@
 
 select, input {
-    font-size: 19px;
+    font-size: $fs-19;
     margin-left: 20px;
     margin-right: 20px;
     border: 2px solid $black;
@@ -22,7 +22,7 @@ input {
 
 form {
   .fieldlabel, .govuk-label, h3.govuk-fieldset__heading {
-      font-size: 19px;
+      font-size: $fs-19;
       color: $black;
       font-weight: bold;
   }

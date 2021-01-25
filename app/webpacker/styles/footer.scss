@@ -25,7 +25,7 @@ footer.site-footer {
                 display: block;
                 margin-right: 20px;
                 .icon {
-                    font-size: 33px;
+                    font-size: $fs-32;
                 }
                 &:hover {
                     color: $grey-light;
@@ -37,7 +37,7 @@ footer.site-footer {
             text-align: right;
             vertical-align: top;
             color: $grey-mid;
-            font-size: 16px;
+            font-size: $fs-16;
             letter-spacing: 0px;
             display: flex;
             justify-content: flex-end;
@@ -100,7 +100,7 @@ footer.site-footer {
             text-align: right;
             vertical-align: top;
             color: $grey-mid;
-            font-size: 16px;
+            font-size: $fs-16;
             letter-spacing: 0px;
             padding-left: 40px;
             display: flex;
@@ -217,7 +217,7 @@ footer.site-footer {
                 padding-left: 0px;
 
                 &__license {
-                    font-size: 16px;
+                    font-size: $fs-16;
                     padding-right:30px;
                     padding-top:20px;
                     a {

@@ -7,29 +7,29 @@ $git-font-family: Sans-serif;
 
 h1 {
     @include font;
-    font-size: 28px;
+    font-size: $fs-28;
 }
 
 h2 {
     @include font;
-    font-size: 19px;
+    font-size: $fs-19;
     line-height: 1.25;
 }
 
 h3 {
     @include font;
-    font-size: 19px;
+    font-size: $fs-19;
     font-weight: bold;
 }
 
 h4 {
     @include font;
-    font-size: 19px;
+    font-size: $fs-19;
 }
 
 p {
     @include font;
-    font-size: 19px;
+    font-size: $fs-19;
     line-height: 1.5;
 }
 
@@ -49,7 +49,7 @@ a {
 .strapline-image {
     @include font;
     color: $white;
-    font-size: 24pt;
+    font-size: $fs-32;
     background-color: $purple;
     display: inline-block;
     padding: 12px 20px 8px;
@@ -62,7 +62,7 @@ a {
     @include font;
     color: $white;
     font-weight: bold;
-    font-size: 24pt;
+    font-size: $fs-32;
     background-color: $purple;
     display: inline-block;
     padding: 10px 20px;
@@ -80,7 +80,7 @@ a {
     }
 
     &--small {
-      font-size: 0.8em;
+      font-size: $fs-16;
 
       &:after {
         content: "";
@@ -92,7 +92,7 @@ a {
     @include font;
     background-color: $pink;
     text-decoration: underline;
-    font-size: 19px;
+    font-size: $fs-19;
     padding-top: 18px;
     padding-bottom: 18px;
     padding-left: 18px;
@@ -102,7 +102,7 @@ a {
 .git-link, .content__left a.git-link {
     @include font;
     font-weight: bold;
-    font-size: 19px;
+    font-size: $fs-19;
     color: $black;
     text-decoration: none;
     display: inline-block;
@@ -134,22 +134,22 @@ a {
 
 @include mq($until: tablet) {
     .strapline {
-        font-size: 24px;
+        font-size: $fs-24;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
     .strapline--small {
-        font-size: 19px;
+        font-size: $fs-19;
     }
 
     .strapline-image {
-        font-size: 24px;
+        font-size: $fs-24;
         padding-top: 10px;
         padding-bottom: 10px;
     }
 
     .strapline-prominent {
-        font-size: 19px;
+        font-size: $fs-19;
     }
 }

@@ -1,16 +1,3 @@
-.event-link {
-    &:focus {
-        outline: none;
-        border: none;
-        background: transparent;
-        box-shadow: none;
-    }
-}
-
-.events-listing p {
-  font-size: 300px;
-}
-
 .event-box {
     box-sizing: border-box;
     padding: 20px;
@@ -55,7 +42,7 @@
 
     &__datetime {
         margin-bottom: 4px;
-        font-size: 0.8em;
+        font-size: $fs-15;
 
         span {
           word-break: break-word;
@@ -74,7 +61,7 @@
     }
 
     &__content p {
-      font-size: 17px;
+      font-size: $fs-16;
       margin-bottom: 0;
     }
 

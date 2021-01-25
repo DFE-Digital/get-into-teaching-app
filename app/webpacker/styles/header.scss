@@ -32,7 +32,7 @@
     
         li a {
             @include font;
-            font-size: 16px;
+            font-size: $fs-16;
             display: block;
             text-align: center;
             padding: 16px;
@@ -78,7 +78,7 @@
     
         li a {
             @include font;
-            font-size: 16px;
+            font-size: $fs-16;
             display: block;
             text-align: center;
             text-decoration: none;
@@ -147,13 +147,13 @@
             margin-top: 32px;
             margin-right: 10px;
             font-weight: bold;
-            font-size: 16px;
+            font-size: $fs-16;
             letter-spacing: 0px;
         }
 
         &__links {
 
-            font-size: 16px;
+            font-size: $fs-16;
             padding: 1px;
             background-color: $grey;
             width: 100%;
@@ -234,7 +234,7 @@
 
 .covid {
     @include font;
-    font-size: 16px;
+    font-size: $fs-16;
     line-height: 1.25;
     background-color: $black;
     color: $white;
@@ -243,7 +243,7 @@
     padding-left: 35px;
     padding-right: 35px;
     p {
-        font-size: 16px;
+        font-size: $fs-16;
         line-height: 1.25;
         margin: 0 0 10px;
         &:last-child {
@@ -252,7 +252,7 @@
     }
     &__header {
         display: block;
-        font-size: 19px;
+        font-size: $fs-19;
         font-weight: bold;
     }
 

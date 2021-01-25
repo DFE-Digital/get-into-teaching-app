@@ -60,8 +60,8 @@
       }
 
       h2, h3 {
-        font-size: 24pt;
-    }
+        font-size: $fs-32;
+      }
 
       h3 {
           margin-top: 0;
@@ -115,14 +115,14 @@
               float: none;
               margin-top: 20px;
               margin-bottom: -20px;
-              font-size: 24px;
+              font-size: $fs-24;
           }
           p {
-              font-size: 16px;
+              font-size: $fs-16;
               line-height: 1.25;
           }
           a {
-              font-size: 16px;
+              font-size: $fs-16;
               padding: 8px 12px;
               &.git-link {
                   margin: 8px 0 0 0;

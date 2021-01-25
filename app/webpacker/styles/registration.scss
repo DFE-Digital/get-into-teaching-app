@@ -11,7 +11,7 @@
 
   .content__left {
       h1 {
-          font-size: 42px;
+          font-size: $fs-42;
           margin: 0;
           &.strapline {
             margin-bottom: 30px;
@@ -21,7 +21,7 @@
   }
 
   h2 {
-      font-size: 28px;
+      font-size: $fs-28;
       background: transparent;
       color: $black;
   }

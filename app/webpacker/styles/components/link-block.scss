@@ -7,7 +7,7 @@
         background-color: $pink;
         color: #FFFFFF;
         font-weight: bold;
-        font-size: 19px;
+        font-size: $fs-19;
         padding: 20px 20px 20px 50px;
         margin: 0;
         position: relative;
@@ -58,7 +58,7 @@
                     display: block;
                     background-image: url('../images/icon-down.svg');
                     width: 21px;
-                    height: 19px;
+                    height: $fs-19;
                     position: absolute;
                     top: 6px;
                     left: 15px;
