@@ -153,10 +153,6 @@
   max-width: 720px;
   background-position: 50% 15%;
 
-  @include mq($from: wide) {
-    left: calc( ((1000px / 3) * 2) + ((2000px - 934px) / 2));
-  }
-
   @include mq($until: tablet) {
     position: static;
     width: 100%;
