@@ -135,13 +135,13 @@ $mobile-cutoff: 800px;
       }
 
       > span {
-        font-size: 2rem;
+        font-size: $fs-32;
         border-bottom: 3px solid $black;
 
         &:after { content: "."; }
 
         @include mq($from: tablet) {
-          font-size: 4rem;
+          font-size: $fs-64;
           border-bottom: 5px solid $black;
         }
       }
@@ -151,11 +151,11 @@ $mobile-cutoff: 800px;
   &__subtitle {
 
     div {
-      font-size: 1.4rem;
+      font-size: $fs-22-4;
       font-weight: 700;
 
       @include mq($from: tablet) {
-        font-size: 2rem;
+        font-size: $fs-32;
         font-weight: 700;
       }
     }
