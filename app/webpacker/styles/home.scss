@@ -211,6 +211,24 @@
     &__citation {
         font-weight: bold;
     }
+
+    &__img {
+        position: absolute;
+        top: 0;
+        // Width calculated to be a third of the content column plus half of the viewport
+        left: calc( ((1000px / 3) * 2) + ((100vw - 934px) / 2));
+        width: calc((1000px / 3) + ((100vw - 1066px) / 2));
+        max-width: 720px;
+        height: 100%;
+        background-position: 50% 15%;
+        background-size: cover;
+    }
+
+    @include mq($from: wide) {
+        &__img {
+            left: calc( ((1000px / 3) * 2) + ((2000px - 934px) / 2));
+        }
+    }
 }
 
 @include mq($until: tablet) {
