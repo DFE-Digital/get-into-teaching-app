@@ -151,7 +151,7 @@ $mobile-cutoff: 800px;
   &__subtitle {
 
     div {
-      font-size: $fs-22-4;
+      font-size: $fs-22;
       font-weight: 700;
 
       @include mq($from: tablet) {
