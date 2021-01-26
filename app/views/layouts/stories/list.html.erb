@@ -4,8 +4,8 @@
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
       <%= render "sections/header" %>
       <%= render Sections::HeroComponent.new(@front_matter) %>
-      <main role="main" id="main-content">
-        <section class="semantic">
+      <main role="main" class="semantic" id="main-content">
+        <section class="container">
           <section class="feature">
             <%= back_link "/my-story-into-teaching", text: "All stories" %>
             <%= yield %>
@@ -14,7 +14,7 @@
               <%= render Cards::RendererComponent.with_collection(@front_matter.dig("stories")) %>
             </div>
           </section>
-        </section>
+        </div>
       </main>
       <%= render "sections/footer" %>
       <%= render "components/videoplayer" %>
