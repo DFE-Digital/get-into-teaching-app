@@ -4,7 +4,7 @@ RSpec.describe Search do
   include_context "use fixture markdown pages"
 
   describe "#results" do
-    subject { described_class.new(search).results }
+    subject { described_class.new(search: search).results }
 
     context "with keyword matching single result" do
       let(:search) { "returners" }

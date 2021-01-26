@@ -1,16 +1,15 @@
 class Search
-  attr_reader :search_term
+  include ActiveModel::Model
+  include ActiveModel::Attributes
 
-  def initialize(search_term)
-    @search_term = search_term.presence
-  end
+  attribute :search
 
   def results
-    return nil unless search_term
+    return nil if search.blank?
 
     @results ||= Pages::Frontmatter.list.select do |_path, frontmatter|
       Array.wrap(frontmatter[:keywords]).any? do |keyword|
-        keyword.downcase.starts_with? search_term.downcase
+        keyword.downcase.starts_with? search.downcase
       end
     end
   end
