@@ -1,6 +1,5 @@
 ---
 title: Cookies
-fullwidth: True
 ---
 
 We want to make our services easy, useful and reliable. When services
