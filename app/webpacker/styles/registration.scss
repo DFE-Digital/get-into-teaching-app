@@ -1,5 +1,7 @@
 .event-reg-main,
 .mailing-reg-main {
+  margin-bottom: 1em;
+
   .govuk-checkboxes__item, .govuk-form-group
   {
       margin-bottom: 10px;
@@ -12,6 +14,7 @@
   h1 {
       font-size: $fs-42;
       margin: 0;
+      line-height: 1.25;
 
       &.strapline {
         margin-bottom: 30px;
@@ -20,9 +23,19 @@
   }
 
   h2 {
+      @include content-heading;
+      margin-bottom: 0;
       font-size: $fs-28;
       background: transparent;
       color: $black;
+  }
+
+  h3 {
+    font-size: $fs-28;
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 
   .govuk-input, .govuk-select {
@@ -40,22 +53,25 @@
 @include mq($until: tablet) {
   .event-reg-main,
   .mailing-reg-main {
+      h1 {
+        &.strapline {
+          margin-left: 0;
+        }
+    }
 
-      &__content {
+    &__content {
 
-          display: block;
+        display: block;
 
-          &__left {
-              display: block;
-              margin-right: 40px;
-          }
+        &__left {
+            display: block;
+            margin-right: 40px;
+        }
 
-          &__right {
-              display: block;
-              margin-top: 40px;
-          }
-
-      }
-
+        &__right {
+            display: block;
+            margin-top: 40px;
+        }
+    }
   }
 }
