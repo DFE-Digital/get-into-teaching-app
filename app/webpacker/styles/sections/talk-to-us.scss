@@ -3,10 +3,6 @@
     background-color: $grey;
     padding-bottom: 1px;
 
-    .container-1000 {
-        text-align: left;
-    }
-
     &__inner {
         position: relative;
         top: -65px;
@@ -35,12 +31,12 @@
 
                 a{
                     text-decoration: none;
-                }  
+                }
             }
 
             &__column:first-child {
                 display: none;
-            
+
                 &.visible {
                     display: inline-block;
                 }
@@ -61,11 +57,10 @@
 
 @include mq($until: tablet) {
     .talk-to-us {
-        padding: 0;
-        
         &__inner {
-            top: -50px;
-            
+            padding: 0 20px;
+            top: -45px;
+
             .strapline {
                 font-size: $fs-24;
             }
@@ -73,7 +68,7 @@
             &__label {
                 margin: 0;
             }
-    
+
             &__table {
                 flex-direction: column;
                 &__column {
@@ -89,6 +84,6 @@
                 padding-right: 0px;
             }
         }
-        
+
     }
 }
