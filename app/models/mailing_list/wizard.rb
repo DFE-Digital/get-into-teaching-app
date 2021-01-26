@@ -36,3 +36,4 @@ module MailingList
     end
   end
 end
+
