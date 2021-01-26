@@ -260,28 +260,6 @@
   }
 }
 
-.content-wrapper {
-    .content__left {
-        .stories-call-to-action {
-            margin-top: -20px;
-            background-color: $grey;
-            color: $black;
-            span:after {
-                border-color: $black;
-                margin-left: 10px;
-            }
-        }
-        .stories-call-to-action:hover {
-            background-color: $grey-mid;
-            color: $black;
-            span:after {
-                border-color: $black;
-                margin-left: 10px;
-            }
-        }
-    }
-}
-
 @include mq($until: tablet) {
     .stories {
 

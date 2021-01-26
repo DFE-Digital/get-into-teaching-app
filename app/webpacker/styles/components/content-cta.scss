@@ -18,12 +18,6 @@
   }
 }
 
-.content__left {
-  .content-cta {
-      @include content-cta;
-  }
-}
-
 .content-cta {
   @include content-cta;
   width: 65%;
