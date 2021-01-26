@@ -57,20 +57,28 @@ we provide. It also ensures that the service is available when you want
 it, and that it delivers information quickly. We use Google Analytics to
 gather this data.
 
-| Name                          | Purpose                                                                                                                                                        | Expires     |
-|-------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
-| `_ga`                           | Used by Google Analytics, this helps count how many people visit this site by tracking if you’ve visited before                                                | 2 years     |
-| `UA-179982899-1`                | Used by Google Analytics, this registers a unique ID to generate statistics about how you use the website                                                      | 1 minute    |
-| `_gid`                          | Used by Google Analytics, this helps count how many people visit this site by tracking if you’ve visited before                                                | 24 hours    |
-| `_hjid`                         | Used by Hotjar. This registers a unique ID to generate statistics abouthow you use the website.                                                                | 365 days    |
-| `_hjRecordingLastActivity`      | Used by Hotjar. This gets updated when a visitor recording starts and when you perform an action that Hotjar records.                                          | Session     |
-| `_hjTLDTest`                    | Used by Hotjar. This is used to determine where cookies will be stored. After this check, the cookie is removed.                                               | Session     |
-| `_hjUserAttributesHash`         | Used by Hotjar. Information about your visit is cached for the duration of the session in order to know when anattribute has changed and needs to be updated.  | Session     |
-| `_hjCachedUserAttributes`       | Used by Hotjar. This cookie stores User Attributes which are sent whenever the user is not in the sample.                                                      | Session     |
-| `_hjLocalStorageTest`           | Used by Hotjar. This cookie is used to check if the Hotjar Tracking Script can use local storage.                                                              | Under 100ms |
-| `_hjIncludedInPageviewSample`   | Used by Hotjar. This cookie is set to let Hotjar know whether you are included in data sampling.                                                               | 30 minutes  |
-| `_hjIncludedInSessionSample`    | Used by Hotjar. This cookie is set to let Hotjar know whether you are included in data sampling.                                                               | 30 minutes  |
-| `_hjAbsoluteSessionInProgress`  | Used by Hotjar. This cookie is used to detect your first pageview session.                                                                                     | 30 Minutes  |
+#### Google Analytics cookies
+
+| Name             | Purpose                                                                          | Expires after |
+| ------           | --------                                                                         | -------  |
+| `_ga`            | Helps count how many people visit this site by tracking if you’ve visited before | 2 years  |
+| `UA-179982899-1` | Registers a unique ID to generate statistics about how you use the website       | 1 minute |
+| `_gid`           | Helps count how many people visit this site by tracking if you’ve visited before | 24 hours |
+
+
+#### Hotjar cookies
+
+| Name                           | Purpose                                                                                          | Expires after          |
+| -----                          | -------                                                                                          | --------               |
+| `_hjid`                        | Registers a unique ID to generate statistics abouthow you use the website.                       | 365 days               |
+| `_hjRecordingLastActivity`     | Gets updated when a visitor recording starts and when you perform an action that Hotjar records. | End of browser session |
+| `_hjTLDTest`                   | Used to determine where cookies will be stored. After this check, the cookie is removed.         | End of browser session |
+| `_hjUserAttributesHash`        | Holds information about your visit so your information can be kept up to date.                   | End of browser session |
+| `_hjCachedUserAttributes`      | Stores User Attributes which are sent whenever the user is not in the sample.                    | End of browser session |
+| `_hjLocalStorageTest`          | Used to check if the Hotjar Tracking Script can use local storage.                               | Under 100ms            |
+| `_hjIncludedInPageviewSample`  | Lets Hotjar know whether you are included in data sampling.                                      | 30 minutes             |
+| `_hjIncludedInSessionSample`   | Set to let Hotjar know whether you are included in data sampling.                                | 30 minutes             |
+| `_hjAbsoluteSessionInProgress` | Used to detect your first pageview session.                                                      | 30 Minutes             |
 
 ### Marketing
 
@@ -99,24 +107,24 @@ share it on (for example, Facebook) may set a cookie. We have no control
 over cookies set on other websites - you can turn them off, but not
 through us.
 
-| Name                  | Purpose                                                                                                                                                                  | Expires                  |
-| --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
-| `_pin_unauth`         | We work with Pinterest to make our Pinterest ads more effective by being able to retarget those that have already visited our website and create lookalike audiences.    | 1 year later             |
-| `_scid`               | Snapchat uses this cookie to deliver advertisements, to make them more relevant and meaningful to consumers, and to track the efficiency of advertising campaigns.       | 13 months later          |
-| `_derived_epik`       | gets set by Pinterest                                                                                                                                                    | 1 year later             |
-| `fr`                  | These help to deliver our advertising when you visit Facebook or a digital platform powered by Facebook Advertising                                                      | 90 days later            |
-| `ATN`                 | athmt.com                                                                                                                                                                | 2 years later            |
-| `X-AB`                | sc-static.net                                                                                                                                                            | 24 hours later           |
-| `_pineterest_ct_ua`   | Pinterest marketing.                                                                                                                                                     | 1 year later             |
-| `GPS`                 | YouTube may set this cookie on your computer once you click on the YouTube video player                                                                                  | 30 minutes later         |
-| `PREF`                | YouTube may set this cookie on your computer once you click on the YouTube video player                                                                                  | 2 years later            |
-| `VISITOR_INFO1_LIVE`  | YouTube may set this cookie on your computer once you click on the YouTube video player                                                                                  | 180 days later           |
-| `YSC`                 | YouTube may set this cookie on your computer once you click on the YouTube video player                                                                                  | End of browser session   |
-| `IDE`                 | Double-click advertising                                                                                                                                                 | 390 days later           |
-| `sc_at`               | Snapchat uses this cookie to deliver advertisements, to make them more relevant and meaningful to consumers, and to track the efficiency of advertising campaigns.       | 390 days later           |
-| `personalization_id`  | Twitter uses this cookie to deliver advertisements, to make them more relevant and meaningful to consumers, and to track the efficiency of advertising campaigns.        | 2 years later            |
-| `bam-session`         | BAM use this cookie to attribute mailing list sign ups back to the agent at a teaching event that presented a QR code to the candidate.                                  | 30 days                  |
-| `dax_listenerid`      | DAX use this cookie for campaign effectiveness measurement for digital audio activity.                                                                                   | 3 months                 |
+| Name                 | Purpose                                                                                                                                                               | Expires after          |
+| ----                 | --------                                                                                                                                                              | ---------              |
+| `_pin_unauth`        | We work with Pinterest to make our Pinterest ads more effective by being able to retarget those that have already visited our website and create lookalike audiences. | 1 year                 |
+| `_scid`              | Snapchat uses this cookie to deliver advertisements, to make them more relevant and meaningful to consumers, and to track the efficiency of advertising campaigns.    | 13 months              |
+| `_derived_epik`      | gets set by Pinterest                                                                                                                                                 | 1 year                 |
+| `fr`                 | These help to deliver our advertising when you visit Facebook or a digital platform powered by Facebook Advertising                                                   | 90 days                |
+| `ATN`                | athmt.com                                                                                                                                                             | 2 years                |
+| `X-AB`               | sc-static.net                                                                                                                                                         | 24 hours               |
+| `_pineterest_ct_ua`  | Pinterest marketing.                                                                                                                                                  | 1 year                 |
+| `GPS`                | YouTube may set this cookie on your computer once you click on the YouTube video player                                                                               | 30 minutes             |
+| `PREF`               | YouTube may set this cookie on your computer once you click on the YouTube video player                                                                               | 2 years                |
+| `VISITOR_INFO1_LIVE` | YouTube may set this cookie on your computer once you click on the YouTube video player                                                                               | 180 days               |
+| `YSC`                | YouTube may set this cookie on your computer once you click on the YouTube video player                                                                               | End of browser session |
+| `IDE`                | Double-click advertising                                                                                                                                              | 390 days               |
+| `sc_at`              | Snapchat uses this cookie to deliver advertisements, to make them more relevant and meaningful to consumers, and to track the efficiency of advertising campaigns.    | 390 days               |
+| `personalization_id` | Twitter uses this cookie to deliver advertisements, to make them more relevant and meaningful to consumers, and to track the efficiency of advertising campaigns.     | 2 years                |
+| `bam-session`        | BAM use this cookie to attribute mailing list sign ups back to the agent at a teaching event that presented a QR code to the candidate.                               | 30 days                |
+| `dax_listenerid`     | DAX use this cookie for campaign effectiveness measurement for digital audio activity.                                                                                | 3 months               |
 
 ### How to control your cookies
 
