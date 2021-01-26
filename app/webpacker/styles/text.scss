@@ -46,18 +46,6 @@ a {
     }
 }
 
-.strapline-image {
-    @include font;
-    color: $white;
-    font-size: $fs-32;
-    background-color: $purple;
-    display: inline-block;
-    padding: 12px 20px 8px;
-        &:after {
-            content: ".";
-        }
-}
-
 .strapline {
     @include font;
     color: $white;
@@ -88,18 +76,7 @@ a {
     }
 }
 
-.strapline-prominent {
-    @include font;
-    background-color: $pink;
-    text-decoration: underline;
-    font-size: $fs-19;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    padding-left: 18px;
-    min-width: 288px;
-}
-
-.git-link, .content__left a.git-link {
+.git-link {
     @include font;
     font-weight: bold;
     font-size: $fs-19;
@@ -117,7 +94,7 @@ a {
     }
 }
 
-.git-link:hover, .content__left a.git-link:hover {
+.git-link:hover {
     text-decoration: underline;
 }
 
@@ -137,19 +114,5 @@ a {
         font-size: $fs-24;
         padding-top: 10px;
         padding-bottom: 10px;
-    }
-
-    .strapline--small {
-        font-size: $fs-19;
-    }
-
-    .strapline-image {
-        font-size: $fs-24;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-
-    .strapline-prominent {
-        font-size: $fs-19;
     }
 }

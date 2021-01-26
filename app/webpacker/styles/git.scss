@@ -4,7 +4,7 @@
 @import 'utility';
 @import 'text';
 @import 'layout';
-@import 'links_and_buttons';
+@import 'links-and-buttons';
 @import 'markdown';
 @import 'featured';
 @import 'forms';
@@ -14,8 +14,8 @@
 @import 'footer';
 @import 'dialog';
 @import 'feedback-bar';
-@import 'page_helpful';
-@import 'call_to_action';
+@import 'page-helpful';
+@import 'call-to-action';
 @import 'accordion';
 
 @import './sections/hero';
@@ -26,7 +26,6 @@
 @import './components/mixins/headings';
 @import './components/cards.scss';
 @import './components/event-box';
-@import './components/content-nav';
 @import './components/content-cta';
 @import './components/content-alert';
 @import './components/feature-table';
@@ -42,7 +41,6 @@
 @import 'home';
 @import 'event';
 @import 'events';
-@import 'content';
 @import 'error';
 @import 'stories';
 

@@ -19,7 +19,7 @@ describe('FeedbackController', () => {
   beforeEach(() => {
     document.body.innerHTML = `
       <div id="feedback-bar" class="feedback-bar" data-controller="feedback" data-banner-name="Feedback">
-        <div class="container-1000">
+        <section class="container">
             <div class="feedback-bar__inner">
                 <div class="feedback-bar__left">
                     <span class="feedback-bar__label">FEEDBACK</span>
@@ -27,7 +27,7 @@ describe('FeedbackController', () => {
                 </div>
                 <a href="" class="feedback-bar__close" id="hide-feedback-bar" data-action="click->feedback#dismiss">Hide</a>
             </div>
-        </div>
+        </section>
       </div>
     `;
   })
