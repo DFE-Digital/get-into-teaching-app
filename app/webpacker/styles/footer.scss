@@ -1,7 +1,9 @@
 footer.site-footer {
-    background-color: $black;
-
     clear: both; // IE-specific fix to make sure footer stays below main content
+
+    .site-footer__wrapper {
+      background-color: $black;
+    }
 
     .site-footer-top {
         width: 100%;
