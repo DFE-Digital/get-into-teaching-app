@@ -7,15 +7,16 @@
     bottom: 0;
     left: 0;
     z-index: 100;
-    .container-1000 {
+    .container {
         width: 100%;
-        text-align: left;
     }
     &__inner {
+      box-sizing: border-box;
         background-color: white;
         padding: 20px;
         border: 1px solid $grey;
         border-width: 1px 1px 0 1px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
     }
@@ -59,10 +60,10 @@
 
 @include mq($until: tablet) {
     .feedback-bar {
-        width: 100%;
-        .container-1000 {
-            padding: 0;
+        section.container {
+          margin: 0;
         }
+
         &__left {
             flex-direction: column;
             margin-top: -38px;
