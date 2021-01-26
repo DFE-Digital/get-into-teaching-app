@@ -8,9 +8,23 @@ class Search
     return nil if search.blank?
 
     @results ||= Pages::Frontmatter.list.select do |_path, frontmatter|
-      Array.wrap(frontmatter[:keywords]).any? do |keyword|
-        keyword.downcase.starts_with? search.downcase
-      end
+      keywords_match?(frontmatter[:keywords]) || title_matches?(frontmatter[:title])
     end
+  end
+
+private
+
+  def keywords_match?(keywords)
+    Array.wrap(keywords).any? do |keyword|
+      keyword.downcase.starts_with? search.downcase
+    end
+  end
+
+  def title_matches?(title)
+    title.to_s.downcase.match? title_match_regex
+  end
+
+  def title_match_regex
+    @title_match_regex ||= %r{\b#{Regexp.quote search.downcase}}
   end
 end

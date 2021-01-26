@@ -55,5 +55,26 @@ RSpec.describe Search do
 
       it { is_expected.to be_nil }
     end
+
+    context "with search term matching partially page title" do
+      let(:search) { "sec" }
+
+      it { is_expected.to have_attributes length: 1 }
+      it { is_expected.to include "/second" }
+    end
+
+    context "with search term matching word later in title" do
+      let(:search) { "wor" }
+
+      it { is_expected.to have_attributes length: 2 }
+      it { is_expected.to include "/page1" }
+      it { is_expected.to include "/subfolder/page2" }
+    end
+
+    context "with search term starting in the middle of a word" do
+      let(:search) { "ello" }
+
+      it { is_expected.to be_empty }
+    end
   end
 end
