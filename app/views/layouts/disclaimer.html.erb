@@ -1,0 +1,41 @@
+
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+      </div>
+    </div>
+
+    <%= render "sections/header" %>
+    <%= render Sections::HeroComponent.new(@front_matter) %>
+
+    <main class="semantic" role="main" id="main-content">
+      <section class="container">
+        <article class="markdown disclaimer fullwidth">
+          <% if !@front_matter["image"] %>
+            <%= tag.h1(@front_matter["title"]) %>
+          <% end %>
+
+          <%= yield %>
+
+          <% @front_matter["content"]&.each do |partial| %>
+            <%= render(partial) %>
+          <% end %>
+
+          <%= render "sections/page_helpful" unless @front_matter["hide_page_helpful_question"] %>
+        </article>
+      </section>
+    </main>
+
+    <%= render "sections/footer" %>
+    <%= render "components/videoplayer" %>
+    <%= render "sections/cookie-acceptance" %>
+    <%= render "sections/feedback-bar" %>
+    <%= render "components/analytics" %>
+  <% end %>
+</html>
+
