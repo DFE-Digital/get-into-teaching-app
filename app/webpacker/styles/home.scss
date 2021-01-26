@@ -174,15 +174,6 @@
 }
 
 .steps {
-    min-height: 250px;
-    padding-top: 40px;
-    padding-bottom: 60px;
-    text-align: left;
-
-    .strapline {
-        background-color: $blue;
-    }
-
     &__wrapper {
         display: flex;
 
@@ -297,73 +288,10 @@
   background-image: url('../images/home-events.jpg');
 }
 
-.home-find-event {
-    background-color: $grey;
-    position: relative;
-    .home-inset-content {
-        padding-top: 20px;
-    }
-    h2 {
-        font-size: $fs-32;
-        margin: 0 0 10px;
-        @include mq($until: tablet) {
-            font-size: $fs-28;
-        }
-    }
-
-    p {
-        margin-top: 0;
-    }
-
-    >.content {
-        overflow: visible;
-        margin-bottom: 0;
-    }
-
-    &__img {
-        background-image: url('../images/home-events.jpg');
-        position: absolute;
-        top: 0;
-        // Width calculated to be a third of the content column plus half of the viewport
-        left: calc( ((1000px / 3) * 2) + ((100vw - 934px) / 2));
-        width: calc((1000px / 3) + ((100vw - 1066px) / 2));
-        max-width: 720px;
-        height: 100%;
-        background-position: 50% 15%;
-        background-size: cover;
-    }
-
-    &__inner {
-        position: relative;
-        top: -20px;
-        padding-bottom: 12px;
-        width: 70%;
-    }
-
-    @include mq($from: wide) {
-        &__img {
-            left: calc( ((1000px / 3) * 2) + ((2000px - 934px) / 2));
-        }
-    }
-}
-
-.steps-home {
-    margin: 50px 0 70px 0;
-
-    .container-1000 {
-        text-align: left;
-        padding-top: 1px;
-    }
-}
-
 .home-inset-content {
     margin: 0 20px;
 }
 .home-quote {
-    background: $yellow;
-    position: relative;
-    padding: 80px 0;
-    margin-bottom: 70px;
     &__text {
         width: 60%;
         margin-left: 50px;
@@ -402,83 +330,6 @@
 
     &__citation {
         font-weight: bold;
-    }
-
-    &__img {
-        position: absolute;
-        top: 0;
-        // Width calculated to be a third of the content column plus half of the viewport
-        left: calc( ((1000px / 3) * 2) + ((100vw - 934px) / 2));
-        width: calc((1000px / 3) + ((100vw - 1066px) / 2));
-        max-width: 720px;
-        height: 100%;
-        background-position: 50% 15%;
-        background-size: cover;
-    }
-
-    @include mq($from: wide) {
-        &__img {
-            left: calc( ((1000px / 3) * 2) + ((2000px - 934px) / 2));
-        }
-    }
-}
-
-.find-an-event {
-
-    padding-top: 70px;
-    padding-bottom: 70px;
-    box-sizing: border-box;
-    display: table;
-    width: 100%;
-
-    &__left {
-
-        display: table-cell;
-        vertical-align: top;
-        width: 370px;
-        min-width: 370px;
-        height: 240px;
-
-        &__map {
-            margin-left: 20px;
-            width: 370px;
-            min-width: 370px;
-            height: 240px;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-            &__pin {
-                position: relative;
-                top: 60px;
-
-                div {
-                    margin-top: 10px;
-                }
-            }
-        }
-    }
-
-    &__right {
-        display: table-cell;
-        vertical-align: top;
-        min-height: 240px;
-        text-align: left;
-
-        &__header {
-            position: relative;
-            left: -20px;
-
-            .strapline-image {
-                background-color: $blue;
-            }
-        }
-
-        p {
-            margin-top: 0px;
-            margin-left: 20px;
-            margin-right: 20px;
-        }
     }
 }
 
@@ -537,41 +388,6 @@
 
     }
 
-    .find-an-event {
-
-        padding-top: 70px;
-        padding-bottom: 20px;
-        padding-left: 0px;
-        padding-right: 0px;
-
-        &__left {
-            display: block;
-
-            &__map {
-                width: 335px;
-                height: 217px;
-                min-width: 0;
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-        }
-
-        &__right {
-            display: block;
-            min-height: 0;
-
-            &__header {
-                height: 0px;
-                top:-285px;
-
-                .strapline {
-                    font-size: $fs-24;
-                }
-            }
-        }
-
-    }
-
     .pic-links {
 
         &__pic {
@@ -598,54 +414,7 @@
 
     }
 
-    .find-an-event {
-        padding-bottom: 50px;
-
-        &__right {
-
-            &__header {
-                left:0px;
-            }
-        }
-    }
-
-    .home-find-event, .home-quote, .steps-home, .featured-content {
-      margin-left: -20px;
-      margin-right: -20px;
-    }
-
-    .home-find-event, .home-quote {
-      display: flex;
-      flex-direction: column-reverse;
-      padding: 0;
-
-      &__img {
-        position: static;
-        width: 100%;
-      }
-    }
-
-    .home-find-event {
-        margin-bottom: 0;
-        p {
-            margin-top: 0;
-        }
-
-        &__img {
-            height: 300px;
-        }
-
-        &__inner {
-            top: -45px;
-            width: 100%;
-        }
-    }
-
     .home-quote {
-      &__img {
-        height: 200px;
-      }
-
       &__text {
           width: calc(100% - 80px);
           margin: 30px 30px 30px 50px;
@@ -653,15 +422,6 @@
     }
 
     .steps {
-        padding: 0;
-        padding-top: 20px;
-        padding-bottom: 40px;
-
-        .strapline {
-            font-size: $fs-24;
-            margin-right:80px;
-        }
-
         .git-link {
             padding-left: 40px;
             padding-right: 20px;
@@ -676,13 +436,6 @@
             }
         }
 
-    }
-
-    .steps-home {
-      margin-top: 30px;
-      h2 {
-        font-size: $fs-28;
-      }
     }
 }
 
