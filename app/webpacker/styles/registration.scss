@@ -9,14 +9,13 @@
       margin-left: 0px;
   }
 
-  .content__left {
-      h1 {
-          font-size: $fs-42;
-          margin: 0;
-          &.strapline {
-            margin-bottom: 30px;
-            margin-left: -20px;
-          }
+  h1 {
+      font-size: $fs-42;
+      margin: 0;
+
+      &.strapline {
+        margin-bottom: 30px;
+        margin-left: -20px;
       }
   }
 

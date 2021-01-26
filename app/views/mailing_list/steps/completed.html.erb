@@ -1,50 +1,49 @@
-<% @no_hero = @fullwidth = @hide_page_helpful_question = true %>
+<% @skip_hero = @hide_page_helpful_question = true %>
 
 <section class="mailing-reg-main">
-    <div class="content container-1000">
-        <div class="content__left">
-            <h1 class="strapline">You've signed up</h1>
-            <p>You’re ready to receive email updates to help you get into teaching.</p>
+    <h1 class="strapline">You've signed up</h1>
+    <p>You’re ready to receive email updates to help you get into teaching.</p>
 
-            <h2>What happens next?</h2>
+    <h2>What happens next?</h2>
 
-            <p>
-              You’ll receive an email to the address you gave us when you signed up.
-              You can unsubscribe if you change your mind. To find out how we
-              handle your personal data, you can read our <%= link_to("privacy policy", privacy_policy_path) %>.
-            </p>
+    <p>
+      You’ll receive an email to the address you gave us when you signed up.
+      You can unsubscribe if you change your mind. To find out how we
+      handle your personal data, you can read our <%= link_to("privacy policy", privacy_policy_path) %>.
+    </p>
 
-            <h2>Want to speak to us?</h2>
+    <h2>Want to speak to us?</h2>
 
-            <p>
-              If you’d prefer, you can call us about teaching or teacher training on Freephone <a href="tel:08003892501" class="telephone-number" aria-label="Telephone">0800 389 2501</a>, Monday-Friday between 8.30am and 5pm.
-            </p>
-            <p>
-              You can also use this number to update or amend any of your details.
-            </p>
-        </div>
-        <span data-controller="pinterest"
-                data-pinterest-action="track"
-                data-pinterest-event="lead"
-                data-pinterest-event-data='{"lead-type" : "Newsletter"}'></span>
+    <p>
+      If you’d prefer, you can call us about teaching or teacher training on Freephone <a href="tel:08003892501" class="telephone-number" aria-label="Telephone">0800 389 2501</a>, Monday-Friday between 8.30am and 5pm.
+    </p>
+    <p>
+      You can also use this number to update or amend any of your details.
+    </p>
 
-            <span data-controller="snapchat"
-                data-snapchat-action="track"
-                data-snapchat-event="SUBSCRIBE"></span>
+    <h2>Explore Get Into Teaching</h2>
 
-            <span data-controller="facebook"
-                data-facebook-action="trackCustom"
-                data-facebook-event="Newsletter_Subscribers"></span>
+    <span data-controller="pinterest"
+        data-pinterest-action="track"
+        data-pinterest-event="lead"
+        data-pinterest-event-data='{"lead-type" : "Newsletter"}'></span>
 
-            <span data-controller="bam" data-bam-action="track"></span>
+    <span data-controller="snapchat"
+        data-snapchat-action="track"
+        data-snapchat-event="SUBSCRIBE"></span>
 
-            <span data-controller="lid" data-lid-action="track" data-lid-event="MailingList"></span>
-    </div>
+    <span data-controller="facebook"
+        data-facebook-action="trackCustom"
+        data-facebook-event="Newsletter_Subscribers"></span>
+
+    <span data-controller="bam" data-bam-action="track"></span>
+
+    <span data-controller="lid" data-lid-action="track" data-lid-event="MailingList"></span>
+</section>
+
+<% content_for(:feature) do %>
     <div class="explore">
-        <div class="content container-1000 explore__header">
-            <h2>Explore Get Into Teaching</h2>
-        </div>
         <%= render "content/home/featured_content" %>
     </div>
-</section>
+<% end %>
 
