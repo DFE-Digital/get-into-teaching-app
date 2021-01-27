@@ -6,15 +6,15 @@
       <%= render Sections::HeroComponent.new(@front_matter) %>
       <main role="main" class="semantic" id="main-content">
         <section class="container">
-          <section class="feature">
+          <article class="markdown overhang fullwidth">
             <%= back_link "/my-story-into-teaching", text: "All stories" %>
             <%= yield %>
 
             <div class="cards stories">
               <%= render Cards::RendererComponent.with_collection(@front_matter.dig("stories")) %>
             </div>
-          </section>
-        </div>
+          </article>
+        </section>
       </main>
       <%= render "sections/footer" %>
       <%= render "components/videoplayer" %>

@@ -1,10 +1,10 @@
 .story-landing {
-    header {
-        padding: 0 20px;
+    &__header {
         width: 66.6%;
+        margin-top: 1.5rem;
 
         @include mq($until: tablet) {
-          width: 100%;
+          width: auto;
           padding: 0;
         }
 
@@ -17,26 +17,21 @@
         }
     }
 
-    .feature > section {
-        margin-bottom: 3em;
+    &__footer {
+        width: 66.6%;
 
-        > footer {
-            padding: 20px;
-            width: 66.6%;
+        @include mq($until: tablet) {
+          width: 100%;
+          margin: 0;
+          padding: 0;
+        }
 
-            @include mq($until: tablet) {
-              width: 100%;
-              margin: 0;
-              padding: 0;
-            }
-
-            a {
-                @include button;
-                @include chevron;
-                display: inline-block;
-                margin: 1em 0 0 0;
-                white-space: initial;
-            }
+        a {
+            @include button;
+            @include chevron;
+            display: inline-block;
+            margin: 1em 0 0 0;
+            white-space: initial;
         }
     }
 }
@@ -45,8 +40,6 @@
 
     display: table;
     width: 100%;
-    max-width: 1250px;
-    margin: 2em auto 2em;
 
     @include mq($from: tablet) {
       border-bottom: 2em solid $purple;
@@ -115,7 +108,7 @@
             h2 {
                 font-size: $fs-32;
                 border-bottom: none;
-                padding: 0 20px;
+                padding: 0 1.5rem;
                 margin: 0;
                 color: $black;
                 background: transparent;
@@ -183,10 +176,13 @@
 
 .stories {
   grid-gap: 1em;
-  padding: 0 20px;
 
   @include mq($until: tablet) {
     padding: 0;
+  }
+
+  &--with-padding {
+    padding: 0 1.5rem;
   }
 
   .card {

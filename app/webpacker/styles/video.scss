@@ -26,7 +26,7 @@
     z-index: 1000;
     justify-content: center;
     align-items: center;
-    
+
     &__background {
         opacity: 0.4;
         background-color: $black;
@@ -86,16 +86,16 @@
         }
 
     }
-    
+
 }
 
-@include mq($until: tablet) {    
+@include mq($until: tablet) {
     .video-overlay {
-    
+
         &__video-container {
-        
+
             &__dismiss {
-                
+
                 width: 44px;
                 height: 44px;
 

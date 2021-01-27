@@ -16,7 +16,7 @@
               <%= render partial: "layouts/shared/narrow_call_to_action" %>
             </aside>
 
-            <article>
+            <article class="markdown overhang">
               <% if @front_matter["alert"].present? %>
                 <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
               <% end %>

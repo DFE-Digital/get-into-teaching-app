@@ -5,7 +5,7 @@
 
     &__inner {
         position: relative;
-        top: -65px;
+        top: -55px;
         margin-bottom: -45px;
 
         &__label {
@@ -58,13 +58,14 @@
 
 @include mq($until: tablet) {
     .talk-to-us {
-        &__inner {
-            padding: 0 20px;
-            top: -45px;
+        .strapline {
+          margin-left: -1.5rem;
+          margin-right: -1.5rem;
+        }
 
-            .strapline {
-                font-size: $fs-24;
-            }
+        &__inner {
+            top: -40px;
+            padding: 0 1.5rem;
 
             &__label {
                 margin: 0;

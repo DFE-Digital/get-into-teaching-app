@@ -1,46 +1,49 @@
-<article class="story markdown">
-  <%= helpers.back_link(backlink, text: tag.span(backlink_text)) %>
 
-  <%= tag.h1(title) %>
+<section class="container">
+  <article class="markdown overhang no-hero">
+    <article class="story markdown">
+      <%= helpers.back_link(backlink, text: tag.span(backlink_text)) %>
 
-  <header class="story__header">
-    <% if image.present? %>
-      <%= image_tag(image, width: 200, height: 200, alt: helpers.story_image_alt(teacher), class: "story__header__thumb") %>
-    <% end %>
-    <div class="story__header__label">
-      <%= helpers.story_heading(teacher, position) %>
-    </div>
-  </header>
+      <%= tag.h1(title) %>
 
-  <% if show_video? %>
-    <%= helpers.youtube(video) %>
-  <% end %>
+      <header class="story__header">
+        <% if image.present? %>
+          <%= image_tag(image, width: 200, height: 200, alt: helpers.story_image_alt(teacher), class: "story__header__thumb") %>
+        <% end %>
+        <div class="story__header__label">
+          <%= helpers.story_heading(teacher, position) %>
+        </div>
+      </header>
 
-  <%= content %>
+      <% if show_video? %>
+        <%= helpers.youtube(video) %>
+      <% end %>
 
-  <% if show_more_information? %>
-    <%= link_to(more_information_link, class: "git-link") do %>
-      <%= more_information_text %> <%= helpers.fas_icon "chevron-right" %>
-    <% end %>
-  <% end %>
+      <%= content %>
 
-</article>
-
-<section class="feature">
-  <% if show_more_stories? %>
-    <h2 class="strapline">More stories</h2>
-    <div class="cards stories">
-      <%= render Cards::RendererComponent.with_collection(more_stories) %>
-    </div>
-  <% end %>
-
-  <% if show_explore? %>
-    <section class="cards-with-headers">
-      <h2>Explore Get Into Teaching</h2>
-
-      <div class="cards">
-        <%= render Cards::RendererComponent.with_collection(explore, page_data: page_data) %>
+      <% if show_more_information? %>
+        <%= link_to(more_information_link, class: "git-link") do %>
+          <%= more_information_text %> <%= helpers.fas_icon "chevron-right" %>
+        <% end %>
+      <% end %>
+    </article>
+  </article>
+  <section class="feature">
+    <% if show_more_stories? %>
+      <h2 class="strapline">More stories</h2>
+      <div class="cards stories stories--with-padding">
+        <%= render Cards::RendererComponent.with_collection(more_stories) %>
       </div>
+    <% end %>
+
+    <% if show_explore? %>
+      <section class="cards-with-headers">
+        <h2>Explore Get Into Teaching</h2>
+
+        <div class="cards">
+          <%= render Cards::RendererComponent.with_collection(explore, page_data: page_data) %>
+        </div>
       <section>
-  <% end %>
+    <% end %>
+  </section>
 </section>

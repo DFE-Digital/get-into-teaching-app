@@ -17,14 +17,14 @@
             .step-header__text {
                 text-align: left;
                 margin: 0;
-                font-size: $fs-26;
+                font-size: $fs-24;
                 flex-grow: 2;
                 white-space: initial;
                 padding: 0 2em 0 0;
                 background: transparent;
 
-                @include mq($until: tablet) {
-                    font-size: $fs-19;
+                @include mq($from: tablet) {
+                  font-size: $fs-32;
                 }
             }
 
@@ -41,9 +41,13 @@
             }
         }
 
+        .call-to-action {
+          margin: 0 1.5rem;
+        }
+
         .step-content__description {
             margin: 0;
-            padding: .8em;
+            padding: 1.5rem;
 
             blockquote {
               background: $grey;

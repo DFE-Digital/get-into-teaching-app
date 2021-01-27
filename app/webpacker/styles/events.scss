@@ -8,7 +8,7 @@
 
   .event-type-descriptions__content {
     @include cards-grid;
-    padding: 20px 20px 0 20px;
+    padding: 1.5rem 1.5rem 0 1.5rem;
     margin-bottom: 0;
   }
 }
@@ -79,7 +79,7 @@
 .events-featured {
     background: #F0F0F0;
     position: relative;
-    padding: 20px;
+    padding: 1.5rem;
     width: 100%;
     margin-top: 30px;
     box-sizing: border-box;
@@ -126,6 +126,7 @@
 
     .call-to-action-button {
       margin-top: 1.5em;
+      white-space: normal;
     }
 
     &__logo {
@@ -201,8 +202,6 @@
     }
 
     .types-of-event {
-        padding-top: 20px;
-
         &__left {
 
             padding-left: 0px;
@@ -265,6 +264,10 @@
 
         &--with-logo {
           margin-top: 60px;
+
+          @include mq($until: tablet) {
+            margin-top: 30px;
+          }
         }
 
         &__heading {

@@ -5,10 +5,11 @@
         box-sizing: border-box;
     }
     .container {
-        margin: 1em auto 0;
+        margin-top: 0;
+        margin-bottom: 0;
     }
     &__inner {
-        padding: 20px 20px;
+        padding: 1.5rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
