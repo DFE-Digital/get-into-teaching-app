@@ -1,3 +1,33 @@
+.footer-signup {
+    background: $green;
+    color: white;
+    * {
+        box-sizing: border-box;
+    }
+    .container {
+        margin: 1em auto 0;
+    }
+    &__inner {
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        @include mq($until: tablet) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    }
+
+    &__text {
+        padding-right: 20px;
+        font-weight: bold;
+        @include mq($until: tablet) {
+            margin-bottom: 20px;
+        }
+    }
+}
+
 footer.site-footer {
     clear: both; // IE-specific fix to make sure footer stays below main content
 

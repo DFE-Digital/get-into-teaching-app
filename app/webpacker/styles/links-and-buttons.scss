@@ -36,6 +36,10 @@ a {
     @include button;
     @include chevron;
     display: inline-block;
+    &--white {
+        @include button($bg: $white, $fg: $black);
+        @include chevron($color: $black);
+    }
 }
 
 .call-to-action-icon-button {
