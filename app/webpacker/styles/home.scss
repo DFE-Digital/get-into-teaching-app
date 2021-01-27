@@ -141,6 +141,10 @@
   margin-top: 45px;
 }
 
+@function img-left($view-width) {
+    @return calc( ((1000px / 3) * 2) + ((#{$view-width} - 934px) / 2));
+}
+
 .home-quote-img,
 .home-find-event-img {
   position: absolute;
@@ -148,19 +152,19 @@
   height: 100%;
   background-size: cover;
   // Width calculated to be a third of the content column plus half of the viewport
-  left: calc( ((1000px / 3) * 2) + ((100vw - 934px) / 2));
+  left: img-left(100vw);
   width: calc((1000px / 3) + ((100vw - 1066px) / 2));
   max-width: 720px;
   background-position: 50% 15%;
-
-  @include mq($from: wide) {
-    left: calc( ((1000px / 3) * 2) + ((2000px - 934px) / 2));
-  }
 
   @include mq($until: tablet) {
     position: static;
     width: 100%;
     height: 300px;
+  }
+
+  @include mq($from: $max-content-width) {
+    left: img-left($max-content-width);
   }
 }
 
