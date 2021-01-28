@@ -166,6 +166,8 @@
             background-color: $grey;
             width: 100%;
         
+            text-align: right;
+            font-weight: bold;
             a {
                 display: block;
                 text-align: center;
@@ -174,7 +176,6 @@
                 font-weight: bold;
                 letter-spacing: 0px;
                 color: #1D1D1B;
-                margin-right: 40px;
                 padding-right: 0px;
             }
 
@@ -183,7 +184,19 @@
             }
 
             ul {
+                margin-right: 40px;
                 list-style-type:none;
+
+                li {
+                  margin: .2em;
+                }
+
+                li.active {
+                  background-color: $blue;
+                  color: $white;
+                  display: inline-block;
+                  padding: .2em .3em;
+                }
             }
 
         }
