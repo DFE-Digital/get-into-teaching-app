@@ -1,20 +1,22 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    jest: true,
   },
-  extends: [
-    'standard', 'prettier'
-  ],
-  
+  extends: ['standard', 'prettier'],
   parserOptions: {
     ecmaVersion: 12,
-    sourceType: 'module'
+    sourceType: 'module',
   },
   parser: 'babel-eslint',
-  plugins: [ "prettier"],
-
+  plugins: ['prettier'],
   rules: {
-    "prettier/prettier": "error"
-  }
-}
+    'prettier/prettier': [
+      'error',
+      {
+        endOfLine: 'auto',
+      },
+    ],
+  },
+};
