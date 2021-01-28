@@ -24,6 +24,25 @@ describe Sections::HeroComponent, type: "component" do
       specify "renders the subtitle" do
         expect(page).to have_css(".hero__subtitle > div", text: front_matter[:subtitle])
       end
+
+      context "when the subtitle is a link" do
+        let(:front_matter) do
+          {
+            title: "Teaching, it's pretty awesome",
+            subtitle: "Teach all the subjects!",
+            subtitle_link: "https://foo.com",
+            image: "media/images/hero-home-dt.jpg",
+          }
+        end
+
+        subject! { render_inline(component) }
+
+        specify "renders the subtitle" do
+          expect(page).to have_css(".hero__subtitle > div") do |div|
+            expect(div).to have_link(front_matter[:subtitle], href: front_matter[:subtitle_link])
+          end
+        end
+      end
     end
 
     describe "images" do

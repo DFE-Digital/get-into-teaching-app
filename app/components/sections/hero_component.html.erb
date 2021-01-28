@@ -3,7 +3,7 @@
   <div class="hero__title">
     <h1><%= tag.span(title) %></h1>
   </div>
-  <% if subtitle.present? %>
+  <% if show_subtitle? %>
     <div class="hero__subtitle">
       <%= tag.div(subtitle) %>
     </div>

@@ -38,6 +38,15 @@ $mobile-cutoff: 800px;
       margin: initial;
       width: initial;
     }
+
+    a {
+      color: $black;
+      text-decoration: none;
+
+      &:hover {
+        border-bottom: 2px solid $black;
+      }
+    }
   }
 
   &__img {
