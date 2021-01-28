@@ -2,7 +2,6 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    jest: true,
   },
   extends: ['standard', 'prettier'],
   parserOptions: {
@@ -19,4 +18,13 @@ module.exports = {
       },
     ],
   },
+  overrides: [
+    {
+      files: ['*_spec.js', '*spec_helper.js'],
+      env: {
+        jest: true,
+        mocha: true,
+      },
+    },
+  ],
 };
