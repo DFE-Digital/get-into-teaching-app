@@ -1,0 +1,9 @@
+  SLACK_FAILURE:         '#ff0000'
+  SLACK_SUCCESS:         '#00ff00'
+  SLACK_ICON:            https://raw.githubusercontent.com/DFE-Digital/get-into-teaching-api/master/.github/image.png?size=48
+  SLACK_USERNAME:        GiT Workflows
+  SLACK_FOOTER:          Get Into Teaching Application
+  DOCKERHUB_REPOSITORY:  dfedigital/get-into-teaching-web
+  DOMAIN:                london.cloudapps.digital
+  APPLICATION:           Get Into Teaching Application (code)
+  
