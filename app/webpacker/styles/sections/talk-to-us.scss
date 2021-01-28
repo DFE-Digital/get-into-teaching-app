@@ -33,6 +33,11 @@
                 a{
                     text-decoration: none;
                 }
+
+                &__heading {
+                    font-size: $fs-26;
+                    margin: .5em 0;
+                }
             }
 
             &__column:first-child {
