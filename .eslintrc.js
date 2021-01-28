@@ -24,7 +24,6 @@ module.exports = {
       files: ['*_spec.js', '*spec_helper.js'],
       env: {
         jest: true,
-        mocha: true,
       },
     },
   ],
