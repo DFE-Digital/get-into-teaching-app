@@ -6,7 +6,7 @@
   display: flex;
   width: 78%;
   box-sizing: border-box;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 
   @include mq($until: tablet) {
     width: inherit;

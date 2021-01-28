@@ -7,7 +7,7 @@
 
       <main class="semantic story-landing" role="main" id="main-content">
         <section class="container">
-          <section class="feature">
+          <article class="markdown overhang fullwidth no-hero">
             <div class="stories-feature">
               <div class="stories-feature__image" style="background-image:url('/assets/images/victoria.jpg')"></div>
               <div class="stories-feature__content">
@@ -21,26 +21,26 @@
             </div>
 
             <% @front_matter["sections"]&.each do |name, section| %>
-              <section>
-                <header>
-                  <%= tag.h2(name) %>
-                  <%= tag.p(section["text"]) %>
-                </header>
-                <% if section["stories"].present? %>
-                  <div class="cards stories">
+              <div class="story-landing__header">
+                <%= tag.h2(name) %>
+                <%= tag.p(section["text"]) %>
+              </div>
+              <% if section["stories"].present? %>
+                <div class="story-landing__stories">
+                  <div class="story-landing__cards cards stories">
                     <%= render Cards::RendererComponent.with_collection(section["stories"]) %>
                   </div>
 
-                  <footer>
+                  <div class="story-landing__footer">
                     <%= link_to section["link"] do %>
                       <span>Read all stories about <%= name.downcase %></span>
                     <% end %>
-                  </footer>
-                <% end %>
-              </section>
+                  </div>
+                </div>
+              <% end %>
             <% end %>
           </section>
-        </section>
+        </article>
       </main>
       <%= render "sections/footer" %>
       <%= render "components/videoplayer" %>

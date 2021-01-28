@@ -5,7 +5,7 @@
 
 .cta-link {
     width: 50%;
-    padding: 0 20px;
+    padding: 0 1.5rem;
     height: 290px;
     display: block;
     margin-bottom: 30px;
@@ -24,7 +24,7 @@
 
         background: $green-dark-90;
         display: inline-block;
-        padding: 20px 20px 20px 23px;
+        padding: 1.5rem;
         line-height: 1.2;
         font-weight: bold;
         color: white;
@@ -157,14 +157,15 @@
   max-width: 720px;
   background-position: 50% 15%;
 
+  @include mq($from: wide) {
+    left: auto;
+    right: 0;
+  }
+
   @include mq($until: tablet) {
     position: static;
     width: 100%;
     height: 300px;
-  }
-
-  @include mq($from: $max-content-width) {
-    left: img-left($max-content-width);
   }
 }
 

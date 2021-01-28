@@ -7,7 +7,7 @@ $git-font-family: Sans-serif;
 
 h1 {
     @include font;
-    font-size: $fs-28;
+    font-size: $fs-32;
 }
 
 h2 {
@@ -50,10 +50,10 @@ a {
     @include font;
     color: $white;
     font-weight: bold;
-    font-size: $fs-32;
+    font-size: $fs-24;
     background-color: $purple;
     display: inline-block;
-    padding: 10px 20px;
+    padding: 0.4rem 1.5rem;
     &:after {
         content: ".";
     }
@@ -67,12 +67,20 @@ a {
       background-color: $blue;
     }
 
+    &--green {
+      background-color: $green;
+    }
+
     &--small {
-      font-size: $fs-16;
+      font-size: $fs-19;
 
       &:after {
         content: "";
       }
+    }
+
+    @include mq($from: tablet) {
+      font-size: $fs-32;
     }
 }
 
@@ -107,12 +115,4 @@ a {
 
 .telephone-number:hover {
     text-decoration: none;
-}
-
-@include mq($until: tablet) {
-    .strapline {
-        font-size: $fs-24;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
 }

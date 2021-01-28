@@ -15,11 +15,6 @@
       font-size: $fs-42;
       margin: 0;
       line-height: 1.25;
-
-      &.strapline {
-        margin-bottom: 30px;
-        margin-left: -20px;
-      }
   }
 
   h2 {
@@ -53,12 +48,6 @@
 @include mq($until: tablet) {
   .event-reg-main,
   .mailing-reg-main {
-      h1 {
-        &.strapline {
-          margin-left: 0;
-        }
-    }
-
     &__content {
 
         display: block;

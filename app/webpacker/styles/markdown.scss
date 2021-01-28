@@ -4,11 +4,9 @@
   &.overhang {
     $indent-amount: 1.5rem;
 
-    @include mq($until: tablet) {
-      > *:not(table) {
-        margin-left: $indent-amount;
-        margin-right: $indent-amount;
-      }
+    > *:not(table) {
+      margin-left: $indent-amount;
+      margin-right: $indent-amount;
     }
 
     @mixin overhang { margin-left: auto; margin-right: auto; }
@@ -21,7 +19,7 @@
       margin-bottom: .2rem;
       padding: .4rem $indent-amount;
       background: $blue;
-      font-size: $fs-32;
+      font-size: $fs-24;
       font-weight: 700;
       color: $white;
       &:after {
@@ -31,17 +29,35 @@
       &.purple {
         background-color: $purple;
       }
+
+      &.green {
+        background-color: $green;
+      }
+
+      &.small {
+        font-size: $fs-19;
+      }
+
+      @include mq($from: tablet) {
+        font-size: $fs-32;
+      }
     }
 
-    .call-to-action,
+    .accordions,
+    .stories-feature,
     .feature-table,
     .secondary-button,
+    .content-alert,
+    .event-type-descriptions,
     .types-of-event,
     .content-cta,
     .featured-content,
-    .event-pagination,
     .page-helpful {
       @include overhang;
+    }
+
+    .content-alert--left {
+      margin-left: 0;
     }
   }
 

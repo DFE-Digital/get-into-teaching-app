@@ -54,13 +54,13 @@ section.container {
   flex-wrap: wrap;
   flex-direction: column;
 
-  max-width: $content-max-width;
-  margin: 1em .8em 0;
+  margin: 1em 0;
 
   @include mq($from: tablet) {
     flex-direction: row-reverse;
     justify-content: flex-end;
-    margin: 1em auto 0;
+    margin: 1.5em auto 0;
+    max-width: $content-max-width;
   }
 
   > article {

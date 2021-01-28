@@ -1,5 +1,5 @@
 .featured-content {
-    
+
     &__items {
         margin-top: 30px;
         display: flex;
@@ -81,7 +81,7 @@
             position: relative;
         }
         &__content {
-            padding: 0 20px;
+            padding: 0 1.5rem;
             p {
                 margin-top: 0;
             }
@@ -159,7 +159,7 @@
     }
     &__header {
         margin: -20px auto -20px;
-        padding: 0 20px;
+        padding: 0 1.5rem;
         &.content {
             margin-bottom: -20px;
         }

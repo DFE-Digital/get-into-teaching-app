@@ -43,6 +43,11 @@ describe Stories::StoryComponent, type: "component" do
     page
   end
 
+  describe "layout elements" do
+    it { is_expected.to have_css(".container .markdown.overhang.no-hero") }
+    it { is_expected.to have_css(".container .feature") }
+  end
+
   describe "metadata content" do
     specify "renders a story" do
       is_expected.to have_css("article.story")
