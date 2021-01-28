@@ -1,14 +1,4 @@
 .feature-table {
-  margin: 30px 0;
-
-  .strapline {
-    margin: 0 4em 0 0;
-
-    &:after {
-      content: '';
-    }
-  }
-
   dl {
     font-size: $fs-19;
     background-color: $grey;
@@ -44,10 +34,6 @@
   }
 
   @include mq($until: tablet) {
-    .strapline {
-      margin-right: 1.2em;
-    }
-
     dl {
       dt, dd {
         flex-basis: 100%;
