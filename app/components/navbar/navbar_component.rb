@@ -10,7 +10,7 @@ module Navbar
       class_name = "active" if first_uri_segment_matches_link?(link_path)
 
       content_tag(:li, class: class_name) do
-        link_to link_text, link_path
+        link_to_unless_current link_text, link_path
       end
     end
 

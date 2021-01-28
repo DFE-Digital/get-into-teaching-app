@@ -75,8 +75,14 @@
             float: right;
             padding: 8px 16px;
         }
-    
-        li a {
+
+        li {
+          @include font;
+          font-size: $fs-16;
+          font-weight: bold;
+          line-height: 1;
+
+          a {
             @include font;
             font-size: $fs-16;
             display: block;
@@ -87,6 +93,7 @@
             letter-spacing: 0px;
             color: #1D1D1B;
             line-height: 1;
+          }
         }
 
         $border-width: 2.5px;
@@ -109,6 +116,7 @@
       
         .active {
           background-color: $blue-dark;
+          color: $white;
           a {
             color: $white;
           }
