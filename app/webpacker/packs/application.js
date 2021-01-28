@@ -1,7 +1,7 @@
-require.context('../fonts', true) ;
-require.context('../images', true) ;
+require.context('../fonts', true);
+require.context('../images', true);
 
-import '@stimulus/polyfills'
+import '@stimulus/polyfills';
 import '../styles/application.scss';
 import 'polyfills/ie8.js';
 import 'polyfills/objectFitPolyfill.basic.min.js';
@@ -12,4 +12,4 @@ import Turbolinks from 'turbolinks';
 Rails.start();
 Turbolinks.start();
 
-import "controllers";
+import 'controllers';

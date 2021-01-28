@@ -1,5 +1,5 @@
-import { Application } from 'stimulus'
-import ScribbleController from 'scribble_controller' ;
+import { Application } from 'stimulus';
+import ScribbleController from 'scribble_controller';
 
 describe('ScribbleController', () => {
   var scribble;
@@ -12,7 +12,7 @@ describe('ScribbleController', () => {
     const application = Application.start();
     application.register('scribble', ScribbleController);
     scribble = document.getElementById('scribble');
-  })
+  });
 
   it('sets the scribble data-src and class', () => {
     expect(scribble.dataset.src).toEqual('123');
@@ -22,4 +22,4 @@ describe('ScribbleController', () => {
   it('initialises the service', () => {
     expect(window.scribble).not.toBe(undefined);
   });
-})
+});

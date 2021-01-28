@@ -1,7 +1,7 @@
-import { Controller } from "stimulus"
+import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = ['text', 'link']
+  static targets = ['text', 'link'];
 
   connect() {
     this.element.classList.add('visible');

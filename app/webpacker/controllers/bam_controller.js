@@ -1,4 +1,4 @@
-import ImagePixelBaseController from "./image_pixel_base_controller"
+import ImagePixelBaseController from './image_pixel_base_controller';
 
 export default class extends ImagePixelBaseController {
   static ids = [
@@ -17,7 +17,7 @@ export default class extends ImagePixelBaseController {
   ];
 
   get serviceId() {
-    return this.getServiceId('bam-id') ;
+    return this.getServiceId('bam-id');
   }
 
   get serviceFunction() {
@@ -30,6 +30,8 @@ export default class extends ImagePixelBaseController {
   }
 
   sendEvent() {
-    this.constructor.ids.forEach((id) => this.loadPixel(`https://linkbam.uk/m/${id}.png`));
+    this.constructor.ids.forEach((id) =>
+      this.loadPixel(`https://linkbam.uk/m/${id}.png`)
+    );
   }
 }

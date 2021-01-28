@@ -1,8 +1,8 @@
-import { Application } from 'stimulus' ;
-import ConditionalFieldController from 'conditional_field_controller.js' ;
+import { Application } from 'stimulus';
+import ConditionalFieldController from 'conditional_field_controller.js';
 
 describe('ConditionalFieldController', () => {
-  describe("toggleable field when it should hide", () => {
+  describe('toggleable field when it should hide', () => {
     beforeEach(() => {
       document.body.innerHTML = `
         <div data-controller="conditional-field"
@@ -23,44 +23,44 @@ describe('ConditionalFieldController', () => {
             <input name="postcode" id="postcode" value="" />
           </div>
         </div>
-      ` ;
+      `;
 
-      const application = Application.start() ;
-      application.register('conditional-field', ConditionalFieldController) ;
-    })
+      const application = Application.start();
+      application.register('conditional-field', ConditionalFieldController);
+    });
 
-    describe("when the source is blank", () => {
-      it("should be hidden", () => {
-        const classes = document.getElementById('container').classList ;
-        expect(classes).toContain('hidden') ;
-      }) ;
+    describe('when the source is blank', () => {
+      it('should be hidden', () => {
+        const classes = document.getElementById('container').classList;
+        expect(classes).toContain('hidden');
+      });
 
-      it("inner input should be disabled", () => {
-        const disabled = document.getElementById('postcode').disabled ;
-        expect(disabled).toBe(true) ;
-      }) ;
-    })
+      it('inner input should be disabled', () => {
+        const disabled = document.getElementById('postcode').disabled;
+        expect(disabled).toBe(true);
+      });
+    });
 
-    describe("when the source field is not blank", () => {
+    describe('when the source field is not blank', () => {
       beforeEach(() => {
-        const select = document.getElementById('select') ;
-        select.value = 2
-        select.dispatchEvent(new Event('change')) ;
-      }) ;
+        const select = document.getElementById('select');
+        select.value = 2;
+        select.dispatchEvent(new Event('change'));
+      });
 
-      it("should not be hidden", () => {
-        const classes = document.getElementById('container').classList ;
-        expect(classes).not.toContain('hidden') ;
-      })
+      it('should not be hidden', () => {
+        const classes = document.getElementById('container').classList;
+        expect(classes).not.toContain('hidden');
+      });
 
-      it("inner input should not be disabled", () => {
-        const disabled = document.getElementById('postcode').disabled ;
-        expect(disabled).toBe(false) ;
-      })
-    }) ;
-  }) ;
+      it('inner input should not be disabled', () => {
+        const disabled = document.getElementById('postcode').disabled;
+        expect(disabled).toBe(false);
+      });
+    });
+  });
 
-  describe("toggleable field when it should show", () => {
+  describe('toggleable field when it should show', () => {
     beforeEach(() => {
       document.body.innerHTML = `
         <div data-controller="conditional-field"
@@ -81,40 +81,40 @@ describe('ConditionalFieldController', () => {
             <input name="postcode" id="postcode" value="" />
           </div>
         </div>
-      ` ;
+      `;
 
-      const application = Application.start() ;
-      application.register('conditional-field', ConditionalFieldController) ;
-    })
+      const application = Application.start();
+      application.register('conditional-field', ConditionalFieldController);
+    });
 
-    describe("when the source is blank", () => {
-      it("should be not be hidden", () => {
-        const classes = document.getElementById('container').classList ;
-        expect(classes).not.toContain('hidden') ;
-      }) ;
+    describe('when the source is blank', () => {
+      it('should be not be hidden', () => {
+        const classes = document.getElementById('container').classList;
+        expect(classes).not.toContain('hidden');
+      });
 
-      it("inner input should not be disabled", () => {
-        const disabled = document.getElementById('postcode').disabled ;
-        expect(disabled).toBe(false) ;
-      }) ;
-    })
+      it('inner input should not be disabled', () => {
+        const disabled = document.getElementById('postcode').disabled;
+        expect(disabled).toBe(false);
+      });
+    });
 
-    describe("when the source field is not blank", () => {
+    describe('when the source field is not blank', () => {
       beforeEach(() => {
-        const select = document.getElementById('select') ;
-        select.value = 2
-        select.dispatchEvent(new Event('change')) ;
-      }) ;
+        const select = document.getElementById('select');
+        select.value = 2;
+        select.dispatchEvent(new Event('change'));
+      });
 
-      it("should be hidden", () => {
-        const classes = document.getElementById('container').classList ;
-        expect(classes).toContain('hidden') ;
-      })
+      it('should be hidden', () => {
+        const classes = document.getElementById('container').classList;
+        expect(classes).toContain('hidden');
+      });
 
-      it("inner input should be disabled", () => {
-        const disabled = document.getElementById('postcode').disabled ;
-        expect(disabled).toBe(true) ;
-      })
-    }) ;
-  }) ;
-}) ;
+      it('inner input should be disabled', () => {
+        const disabled = document.getElementById('postcode').disabled;
+        expect(disabled).toBe(true);
+      });
+    });
+  });
+});

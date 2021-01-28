@@ -1,33 +1,33 @@
-import { Controller } from "stimulus"
+import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = ["complete"]
+  static targets = ['complete'];
 
   connect() {
-    this.updateSubmit() ;
+    this.updateSubmit();
   }
 
   updateSubmit() {
     if (this.isLastStep()) {
-      this.setSubmitText(this.data.get('complete')) ;
+      this.setSubmitText(this.data.get('complete'));
     } else {
-      this.setSubmitText(this.data.get('continue')) ;
+      this.setSubmitText(this.data.get('continue'));
     }
   }
 
   isLastStep() {
-    return this.radioInput.checked ;
+    return this.radioInput.checked;
   }
 
   get radioInput() {
-    return this.completeTarget.querySelector('input[type=radio]') ;
+    return this.completeTarget.querySelector('input[type=radio]');
   }
 
   get submitButton() {
-    return this.radioInput.form.querySelector('button[type=submit]') ;
+    return this.radioInput.form.querySelector('button[type=submit]');
   }
 
   setSubmitText(submitMsg) {
-    this.submitButton.innerText = submitMsg ;
+    this.submitButton.innerText = submitMsg;
   }
 }

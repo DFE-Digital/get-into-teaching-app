@@ -1,4 +1,4 @@
-import AnalyticsBaseController from "./analytics_base_controller"
+import AnalyticsBaseController from './analytics_base_controller';
 
 export default class extends AnalyticsBaseController {
   get cookieCategory() {

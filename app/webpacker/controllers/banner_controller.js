@@ -1,16 +1,16 @@
-const Cookies = require('js-cookie') ;
-import CookiePreferences from '../javascript/cookie_preferences' ;
-import { Controller } from "stimulus" ;
+const Cookies = require('js-cookie');
+import CookiePreferences from '../javascript/cookie_preferences';
+import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  cookieCategory = 'functional' ;
+  cookieCategory = 'functional';
 
   connect() {
     this.hideOnLoad();
   }
 
   hideOnLoad() {
-    if(Cookies.get(this.cookieName) == 'Hidden') {
+    if (Cookies.get(this.cookieName) == 'Hidden') {
       this.hideBanner();
     }
   }
@@ -26,8 +26,8 @@ export default class extends Controller {
   }
 
   setCookie() {
-    if ((new CookiePreferences).allowed(this.cookieCategory))
-      Cookies.set(this.cookieName, 'Hidden')
+    if (new CookiePreferences().allowed(this.cookieCategory))
+      Cookies.set(this.cookieName, 'Hidden');
   }
 
   get cookieName() {

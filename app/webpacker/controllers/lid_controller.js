@@ -1,14 +1,14 @@
-import ImagePixelBaseController from "./image_pixel_base_controller"
+import ImagePixelBaseController from './image_pixel_base_controller';
 
 export default class extends ImagePixelBaseController {
-  static path = "/one.png"
+  static path = '/one.png';
   static domains = [
     'https://pixelg.adswizz.com',
     'https://tracking.audio.thisisdax.com',
   ];
 
   get serviceId() {
-    return this.getServiceId('lid-id') ;
+    return this.getServiceId('lid-id');
   }
 
   get serviceFunction() {
@@ -16,7 +16,7 @@ export default class extends ImagePixelBaseController {
   }
 
   get event() {
-    return this.data.get("event")
+    return this.data.get('event');
   }
 
   initService() {
@@ -29,6 +29,8 @@ export default class extends ImagePixelBaseController {
   }
 
   sendEvent() {
-    this.constructor.domains.forEach((domain) => this.loadPixel(this.imgSrc(domain, this.event)));
+    this.constructor.domains.forEach((domain) =>
+      this.loadPixel(this.imgSrc(domain, this.event))
+    );
   }
 }

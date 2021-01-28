@@ -1,7 +1,7 @@
 const countKey = 'feedbackPageCount';
 const feedbackDismissedKey = 'feedbackDismissed';
 
-import { Controller } from "stimulus" ;
+import { Controller } from 'stimulus';
 
 export default class extends Controller {
   connect() {
@@ -36,7 +36,7 @@ export default class extends Controller {
   incrementFeedbackPageCounter() {
     const currentValue = this.pageViewCount;
 
-    this.updatePageViewCount(currentValue + 1)
+    this.updatePageViewCount(currentValue + 1);
   }
 
   updatePageViewCount(value) {
@@ -50,10 +50,10 @@ export default class extends Controller {
   }
 
   dismissFeedback() {
-    return window.localStorage.setItem(feedbackDismissedKey, "true");
+    return window.localStorage.setItem(feedbackDismissedKey, 'true');
   }
 
   get feedbackDismissed() {
-    return "true" === window.localStorage.getItem(feedbackDismissedKey);
+    return 'true' === window.localStorage.getItem(feedbackDismissedKey);
   }
 }
