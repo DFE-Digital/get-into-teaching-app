@@ -1,4 +1,4 @@
-const Cookies = require('js-cookie');
+import Cookies from 'js-cookie';
 import CookiePreferences from 'cookie_preferences';
 import { Application } from 'stimulus';
 import VideoController from 'video_controller.js';
@@ -74,7 +74,7 @@ describe('AccordionController', () => {
 
     describe('when first loaded', () => {
       it('removes the target attribute from video links', () => {
-        let vidlink = document.getElementsByTagName('a');
+        const vidlink = document.getElementsByTagName('a');
         expect(vidlink[0].getAttribute('target')).toBe(null);
       });
 
@@ -108,18 +108,18 @@ describe('AccordionController', () => {
 
     describe('when the dismiss button is clicked', () => {
       it('sets the video player display to hidden', () => {
-        let closeButton = document.getElementById('close-button');
+        const closeButton = document.getElementById('close-button');
         closeButton.click();
-        let videoplayer = document.getElementById('the-video-player');
+        const videoplayer = document.getElementById('the-video-player');
         expect(videoplayer.style.display).toBe('none');
       });
     });
 
     describe('when the overlay is clicked and video is open', () => {
       it('sets the video player display to hidden', () => {
-        let vidlink = document.getElementsByTagName('a')[0];
+        const vidlink = document.getElementsByTagName('a')[0];
         vidlink.click();
-        let videoplayer = document.getElementById('the-video-player');
+        const videoplayer = document.getElementById('the-video-player');
         videoplayer.click();
         expect(videoplayer.style.display).toBe('none');
       });

@@ -43,7 +43,7 @@ describe('BamController', () => {
       const ids = BamController.ids;
 
       images.forEach((image) => {
-        const match = ids.some((id) => image.src.indexOf(id) != -1);
+        const match = ids.some((id) => image.src.indexOf(id) !== -1);
         expect(match).toBeTruthy();
       });
     });

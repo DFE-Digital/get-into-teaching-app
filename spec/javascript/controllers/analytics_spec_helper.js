@@ -1,4 +1,4 @@
-const Cookies = require('js-cookie');
+import Cookies from 'js-cookie';
 import CookiePreferences from 'cookie_preferences';
 import { Application } from 'stimulus';
 

@@ -2,7 +2,7 @@ import { Application } from 'stimulus';
 import ScribbleController from 'scribble_controller';
 
 describe('ScribbleController', () => {
-  var scribble;
+  let scribble;
 
   beforeEach(() => {
     document.body.innerHTML = `

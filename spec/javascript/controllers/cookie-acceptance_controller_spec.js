@@ -1,10 +1,8 @@
-const Cookies = require('js-cookie');
+import Cookies from 'js-cookie';
 import { Application } from 'stimulus';
 import CookieAcceptanceController from 'cookie-acceptance_controller.js';
 
 describe('CookieAcceptanceController', () => {
-  let cookieName = 'git-cookie-preferences-v1';
-
   document.body.innerHTML = `<div data-controller="cookie-acceptance">
         <div id="overlay" class="cookie-acceptance" data-cookie-acceptance-target="overlay">
             <div class="cookie-acceptance__background"></div>
@@ -41,7 +39,7 @@ describe('CookieAcceptanceController', () => {
     });
 
     it('does not show the cookie acceptance dialog', () => {
-      let overlay = document.getElementById('overlay');
+      const overlay = document.getElementById('overlay');
       expect(overlay.style.display).toBe('');
     });
   });
@@ -52,7 +50,7 @@ describe('CookieAcceptanceController', () => {
     });
 
     it('shows the cookie acceptance dialog', () => {
-      let overlay = document.getElementById('overlay');
+      const overlay = document.getElementById('overlay');
       expect(overlay.style.display).toBe('flex');
     });
   });
@@ -61,7 +59,7 @@ describe('CookieAcceptanceController', () => {
     beforeEach(() => {
       initApp();
 
-      let acceptanceButton = document.getElementById('cookies-agree');
+      const acceptanceButton = document.getElementById('cookies-agree');
       acceptanceButton.click();
     });
 
@@ -70,7 +68,7 @@ describe('CookieAcceptanceController', () => {
     });
 
     it('hides the dialog', () => {
-      let overlay = document.getElementById('overlay');
+      const overlay = document.getElementById('overlay');
       expect(overlay.style.display).toBe('none');
     });
   });

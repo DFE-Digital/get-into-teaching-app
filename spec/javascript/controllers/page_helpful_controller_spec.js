@@ -28,6 +28,7 @@ describe('PageHelpfulController', () => {
 
     it('displays a thank you message', () => {
       answerButton.click();
+      const text = document.getElementById('text');
       expect(text.textContent).toEqual('Thank you for your feedback');
     });
   });

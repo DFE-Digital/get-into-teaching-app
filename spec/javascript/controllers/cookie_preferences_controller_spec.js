@@ -1,7 +1,6 @@
 import { Application } from 'stimulus';
 import CookiePreferencesController from 'cookie_preferences_controller.js';
-
-const Cookies = require('js-cookie');
+import Cookies from 'js-cookie';
 import CookiePreferences from 'cookie_preferences';
 
 describe('CookiePreferencesController', () => {
@@ -78,7 +77,7 @@ describe('CookiePreferencesController', () => {
 
     it('should save cookie', () => {
       const data = getJsonCookie();
-      expect(data['functional']).toBe(undefined);
+      expect(data.functional).toBe(undefined);
     });
   });
 

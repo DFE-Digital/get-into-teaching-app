@@ -1,7 +1,7 @@
 import { Application } from 'stimulus';
 import FeedbackController from 'feedback_controller.js';
 
-class fakeLocalStorage {
+class FakeLocalStorage {
   constructor(store = {}) {
     this.store = store;
   }
@@ -77,7 +77,7 @@ describe('FeedbackController', () => {
   describe('when the user has visited 3 or more pages', () => {
     beforeEach(() => {
       Object.defineProperty(window, 'localStorage', {
-        value: new fakeLocalStorage(),
+        value: new FakeLocalStorage(),
       });
       window.localStorage.setItem('feedbackPageCount', '5');
 
@@ -94,7 +94,7 @@ describe('FeedbackController', () => {
   describe('viewing a page increments the counter', () => {
     beforeEach(() => {
       Object.defineProperty(window, 'localStorage', {
-        value: new fakeLocalStorage(),
+        value: new FakeLocalStorage(),
       });
       window.localStorage.setItem('feedbackPageCount', '2');
 
@@ -112,7 +112,7 @@ describe('FeedbackController', () => {
   describe('dismissing the feedback box', () => {
     beforeEach(() => {
       Object.defineProperty(window, 'localStorage', {
-        value: new fakeLocalStorage({ feedbackPageCount: '2' }),
+        value: new FakeLocalStorage({ feedbackPageCount: '2' }),
       });
 
       const application = Application.start();
@@ -131,7 +131,7 @@ describe('FeedbackController', () => {
   describe("once dismissed the feedback bar shouldn't be shown", () => {
     beforeEach(() => {
       Object.defineProperty(window, 'localStorage', {
-        value: new fakeLocalStorage({
+        value: new FakeLocalStorage({
           feedbackDismissed: 'true',
           feedbackPageCount: '8',
         }),

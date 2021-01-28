@@ -1,4 +1,4 @@
-const Cookies = require('js-cookie');
+import Cookies from 'js-cookie';
 import { Application } from 'stimulus';
 import BannerController from 'banner_controller';
 
@@ -9,12 +9,14 @@ describe('BannerController', () => {
   </div>
   `;
 
+  let banner = '';
+
   beforeEach(() => {
     Cookies.remove('GiTBetaBannerName');
 
     const application = Application.start();
     application.register('banner', BannerController);
-    const banner = document.getElementById('banner');
+    banner = document.getElementById('banner');
   });
 
   describe('when the cookie is not yet set', () => {
@@ -24,7 +26,7 @@ describe('BannerController', () => {
 
     describe('clicking the hide button', () => {
       it('hides the banner', () => {
-        var hideButton = document.getElementById('hideButton');
+        const hideButton = document.getElementById('hideButton');
         hideButton.click();
         expect(banner.style.display).toContain('none');
       });

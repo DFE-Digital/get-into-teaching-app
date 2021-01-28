@@ -19,13 +19,13 @@ describe('TalkToUsController', () => {
   });
 
   it('makes the controller element visible', () => {
-    var element = document.getElementById('element');
+    const element = document.getElementById('element');
     expect(element.classList).toContain('visible');
   });
 
   describe('startChat', () => {
     it('opens the chat session', () => {
-      var startChat = document.getElementById('startChat');
+      const startChat = document.getElementById('startChat');
       startChat.click();
       const url =
         'https://gov.klick2contact.com/v03/launcherV3.php?p=DfE&d=971&ch=CH&psk=chat_a2&iid=STC&srbp=0&fcl=0&r=Static&s=https://gov.klick2contact.com/v03&u=&wo=&uh=&pid=82&iif=0';

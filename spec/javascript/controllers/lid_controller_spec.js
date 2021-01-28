@@ -52,7 +52,7 @@ describe('LidController', () => {
         (image) =>
           image.src.indexOf(
             `/one.png&?client=GovernmentDFE&action=cs&j=0&event=${event}`
-          ) != -1
+          ) !== -1
       );
       expect(match).toBeTruthy();
     });
@@ -63,7 +63,7 @@ describe('LidController', () => {
       const domains = LidController.domains;
 
       domains.forEach((domain) => {
-        const match = images.some((image) => image.src.indexOf(domain) != -1);
+        const match = images.some((image) => image.src.indexOf(domain) !== -1);
         expect(match).toBeTruthy();
       });
     });
