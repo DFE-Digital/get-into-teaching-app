@@ -26,7 +26,6 @@ describe('AccordionController', () => {
                         width="800"
                         height="450"
                         src=""
-                        frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                     </iframe>
