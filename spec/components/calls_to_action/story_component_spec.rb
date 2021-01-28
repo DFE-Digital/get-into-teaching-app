@@ -28,7 +28,7 @@ RSpec.describe CallsToAction::StoryComponent, type: :component do
   end
 
   specify "the heading and text are present" do
-    expect(page).to have_css("h3", text: heading)
-    expect(page).to have_css("p", text: text)
+    expect(page).to have_css(".call-to-action__contents__heading", text: heading)
+    expect(page).to have_css(".call-to-action__contents__story", text: text)
   end
 end
