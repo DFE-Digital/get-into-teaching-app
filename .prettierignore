@@ -1,0 +1,11 @@
+*.scss
+*.min.*
+*.yml
+*.md
+*.config.js
+config/
+*.config.json
+public/**
+coverage/**
+package.json
+package-lock.json
