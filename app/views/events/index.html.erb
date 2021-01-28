@@ -14,8 +14,8 @@
 <% @before_search_fullwidth = true %>
 
 <% content_for :before_search do %>
+<h2>Types of events</h2>
 <section class="event-type-descriptions">
-  <h2 class="strapline strapline--blue">Types of events</h2>
   <section class="event-type-descriptions__content">
     <% GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.each do |type_id| %>
       <%= render Events::TypeDescriptionComponent.new(type_id) %>
@@ -23,7 +23,6 @@
   </section>
 </section>
 <% end %>
-
 
 <% unless @performed_search %>
   <div class="content-alert content-alert--left">
@@ -39,7 +38,7 @@
 
 <% if @events_by_type.any? %>
   <% unless @performed_search %>
-  <h2 class="strapline strapline--blue">Discover events</h2>
+  <h2>Discover events</h2>
   <% end %>
   <% @group_presenter.sorted_events_by_type.each do |type_id, events| %>
     <%= render partial: "event_group", locals: { type_id: type_id, events: events, show_see_all_events: true } %>

@@ -2,8 +2,6 @@
 
   // allow level two headings (blue boxes) and CTAs to 'overhang' on the left
   &.overhang {
-    $indent-amount: 1.5rem;
-
     > *:not(table) {
       margin-left: $indent-amount;
       margin-right: $indent-amount;
@@ -13,34 +11,7 @@
 
     > h2 {
       @include overhang;
-
-      display: inline-block;
-      margin-top: 0;
-      margin-bottom: .2rem;
-      padding: .4rem $indent-amount;
-      background: $blue;
-      font-size: $fs-24;
-      font-weight: 700;
-      color: $white;
-      &:after {
-        content: ".";
-      }
-
-      &.purple {
-        background-color: $purple;
-      }
-
-      &.green {
-        background-color: $green;
-      }
-
-      &.small {
-        font-size: $fs-19;
-      }
-
-      @include mq($from: tablet) {
-        font-size: $fs-32;
-      }
+      @include content-heading;
     }
 
     .accordions,
@@ -61,7 +32,7 @@
     }
   }
 
-  h2:not(:first-of-type) {
+  h2:not(:first-child) {
     margin-top: 1em;
   }
 

@@ -46,44 +46,6 @@ a {
     }
 }
 
-.strapline {
-    @include font;
-    color: $white;
-    font-weight: bold;
-    font-size: $fs-24;
-    background-color: $purple;
-    display: inline-block;
-    padding: 0.4rem 1.5rem;
-    &:after {
-        content: ".";
-    }
-    &--overlap {
-        background-color: $blue-dark-90;
-        padding: 10px 20px 10px 40px;
-        margin: 20px -20px;
-    }
-
-    &--blue {
-      background-color: $blue;
-    }
-
-    &--green {
-      background-color: $green;
-    }
-
-    &--small {
-      font-size: $fs-19;
-
-      &:after {
-        content: "";
-      }
-    }
-
-    @include mq($from: tablet) {
-      font-size: $fs-32;
-    }
-}
-
 .git-link {
     @include font;
     font-weight: bold;

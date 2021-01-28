@@ -30,10 +30,12 @@
   </article>
   <section class="feature">
     <% if show_more_stories? %>
-      <h2 class="strapline">More stories</h2>
-      <div class="cards stories stories--with-padding">
-        <%= render Cards::RendererComponent.with_collection(more_stories) %>
-      </div>
+      <h2 class="purple">More stories</h2>
+      <p>
+        <div class="cards stories stories--with-padding">
+          <%= render Cards::RendererComponent.with_collection(more_stories) %>
+        </div>
+      </p>
     <% end %>
 
     <% if show_explore? %>
