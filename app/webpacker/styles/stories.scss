@@ -176,9 +176,14 @@
 
 .stories {
   grid-gap: 1em;
+  @include cards-grid(1, 2.5em);
 
-  @include mq($until: tablet) {
-    padding: 0;
+  @include mq($from: mobile, $until: desktop) {
+    @include cards-grid(2, 2.5em);
+  }
+
+  @include mq($from: desktop) {
+    @include cards-grid(3, 2.5em);
   }
 
   &--with-padding {
@@ -192,12 +197,6 @@
     background-color: $grey;
     align-items: center;
 
-    @include mq($until: tablet) {
-      flex-wrap: nowrap;
-      flex-direction: column;
-      align-content: flex-start;
-    }
-
     .card__thumb {
       flex: 0 1 45%;
 
@@ -206,26 +205,10 @@
         object-fit: contain;
         height: auto;
       }
-
-      @include mq($until: tablet) {
-        flex: 1 0 auto;
-        justify-items: center;
-        text-align: center;
-
-        > img {
-          object-fit: cover;
-          max-height: 15em;
-        }
-      }
     }
 
     .card__snippet {
       flex: 0 0 50%;
-
-      @include mq($until: tablet) {
-        flex: 1 0 auto;
-        padding: 1em;
-      }
 
       padding: 0;
       margin: 0;
@@ -234,12 +217,6 @@
         padding: 0 .6em;
         margin: 0;
         font-size: $fs-16;
-
-        @include mq($until: tablet) {
-          margin-top: .5em;
-          padding: 0 .5em;
-          font-size: initial;
-        }
       }
     }
 
@@ -247,18 +224,12 @@
       padding: .6em 1em;
       flex: 1 0 80%;
       margin-left: 1em;
-
-      @include mq($until: tablet) {
-        margin: 0;
-        flex: 1 1 0;
-      }
     }
   }
 }
 
 @include mq($until: tablet) {
     .stories {
-
         &__thumbs {
             flex-wrap: wrap;
             margin-bottom: 20px;
