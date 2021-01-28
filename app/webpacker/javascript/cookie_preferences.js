@@ -26,7 +26,7 @@ export default class CookiePreferences {
 
   readCookie() {
     const cookie = Cookies.get(CookiePreferences.cookieName);
-    if (typeof cookie == 'undefined' || !cookie) {
+    if (typeof cookie === 'undefined' || !cookie) {
       this.settings = {};
     } else {
       this.settings = JSON.parse(cookie);
@@ -56,7 +56,7 @@ export default class CookiePreferences {
 
   get categories() {
     if (this.settings) return Object.keys(this.settings);
-    else return new Array();
+    else return [];
   }
 
   set all(categories) {
@@ -75,9 +75,9 @@ export default class CookiePreferences {
   setCategory(category, value) {
     const strValue = value.toString();
     const boolValue =
-      strValue == '1' || strValue == 'true' || strValue == 'yes';
+      strValue === '1' || strValue === 'true' || strValue === 'yes';
 
-    let newSettings = Object.assign({}, this.settings);
+    const newSettings = Object.assign({}, this.settings);
     newSettings[category] = boolValue;
 
     this.all = newSettings;
@@ -88,7 +88,7 @@ export default class CookiePreferences {
   }
 
   emitEvent(newCategories) {
-    let acceptedCookies = new CustomEvent('cookies:accepted', {
+    const acceptedCookies = new CustomEvent('cookies:accepted', {
       detail: { cookies: newCategories },
     });
 

@@ -9,6 +9,7 @@ export default class extends AnalyticsBaseController {
     return window.snaptr;
   }
 
+  /* eslint-disable */
   initService() {
     (function (e, t, n) {
       if (e.snaptr) return;

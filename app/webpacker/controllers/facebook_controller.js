@@ -9,6 +9,7 @@ export default class extends AnalyticsBaseController {
     return window.fbq;
   }
 
+  /* eslint-disable */
   initService() {
     !(function (f, b, e, v, n, t, s) {
       if (f.fbq) return;

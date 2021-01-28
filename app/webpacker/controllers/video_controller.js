@@ -37,7 +37,7 @@ export default class extends Controller {
   activateJavascriptPlayer() {
     this.enableVideoPlayer();
 
-    for (var link of this.linkTargets) {
+    for (const link of this.linkTargets) {
       link.removeAttribute('target');
     }
 
@@ -51,7 +51,7 @@ export default class extends Controller {
     if (!this.isVideoPlayerEnabled) return;
 
     event.preventDefault();
-    var link = event.target.closest('a');
+    const link = event.target.closest('a');
     this.iframeTarget.src = link.href.replace(
       'https://www.youtube.com/watch?v=',
       'https://www.youtube.com/embed/'

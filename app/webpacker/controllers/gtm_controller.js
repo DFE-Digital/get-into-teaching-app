@@ -13,6 +13,7 @@ export default class extends AnalyticsBaseController {
     return 'non-functional';
   }
 
+  /* eslint-disable */
   initService() {
     (function (w, d, s, l, i) {
       w[l] = w[l] || [];

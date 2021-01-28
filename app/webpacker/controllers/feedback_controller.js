@@ -1,7 +1,7 @@
+import { Controller } from 'stimulus';
+
 const countKey = 'feedbackPageCount';
 const feedbackDismissedKey = 'feedbackDismissed';
-
-import { Controller } from 'stimulus';
 
 export default class extends Controller {
   connect() {
@@ -54,6 +54,6 @@ export default class extends Controller {
   }
 
   get feedbackDismissed() {
-    return 'true' === window.localStorage.getItem(feedbackDismissedKey);
+    return window.localStorage.getItem(feedbackDismissedKey) === 'true';
   }
 }

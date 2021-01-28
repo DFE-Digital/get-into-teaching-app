@@ -11,9 +11,12 @@ application.load(definitionsFromContext(context));
 global.mapsLoadedCallback = function () {
   global.mapsLoaded = true;
 
-  let maps = document.querySelectorAll('[data-controller="map"]');
-  for (let map of maps) {
-    let instance = application.getControllerForElementAndIdentifier(map, 'map');
+  const maps = document.querySelectorAll('[data-controller="map"]');
+  for (const map of maps) {
+    const instance = application.getControllerForElementAndIdentifier(
+      map,
+      'map'
+    );
     instance.initMap();
   }
 };

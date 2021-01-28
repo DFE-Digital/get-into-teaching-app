@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
@@ -15,7 +16,7 @@ export default class extends Controller {
     geocoder.geocode(
       { address: this.data.get('destination') },
       (results, status) => {
-        if (status == 'OK') {
+        if (status === 'OK') {
           this.drawMap(results[0].geometry.location);
         }
       }

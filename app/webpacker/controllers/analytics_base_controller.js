@@ -1,4 +1,3 @@
-const Cookies = require('js-cookie');
 import CookiePreferences from '../javascript/cookie_preferences';
 import { Controller } from 'stimulus';
 
@@ -75,7 +74,7 @@ export default class extends Controller {
 
   getServiceId(attribute) {
     const value = document.body.getAttribute('data-analytics-' + attribute);
-    return value && value.trim() != '' ? value.trim() : null;
+    return value && value.trim() !== '' ? value.trim() : null;
   }
 
   get serviceAction() {
@@ -87,12 +86,13 @@ export default class extends Controller {
   }
 
   get eventData() {
-    if (typeof this.parsedEventData != 'undefined') return this.parsedEventData;
+    if (typeof this.parsedEventData !== 'undefined')
+      return this.parsedEventData;
 
-    let evData = this.data.get('event-data');
+    const evData = this.data.get('event-data');
     this.parsedEventData = null;
 
-    if (evData && evData != '') this.parsedEventData = JSON.parse(evData);
+    if (evData && evData !== '') this.parsedEventData = JSON.parse(evData);
 
     return this.parsedEventData;
   }
@@ -106,6 +106,6 @@ export default class extends Controller {
   }
 
   get hasVwoCompleted() {
-    return typeof window.willRedirectionOccurByVWO != 'undefined';
+    return typeof window.willRedirectionOccurByVWO !== 'undefined';
   }
 }

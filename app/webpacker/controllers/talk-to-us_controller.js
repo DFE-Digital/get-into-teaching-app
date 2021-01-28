@@ -11,7 +11,7 @@ export default class extends Controller {
 
   startChat(e) {
     e.preventDefault();
-    var windowFeatures =
+    const windowFeatures =
       'menubar=no,location=yes,resizable=yes,scrollbars=no,status=yes,width=340,height=480';
     window.open(
       'https://gov.klick2contact.com/v03/launcherV3.php?p=DfE&d=971&ch=CH&psk=chat_a2&iid=STC&srbp=0&fcl=0&r=Static&s=https://gov.klick2contact.com/v03&u=&wo=&uh=&pid=82&iif=0',

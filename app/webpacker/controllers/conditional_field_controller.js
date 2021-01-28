@@ -8,8 +8,8 @@ export default class extends Controller {
   }
 
   match(sourceValue) {
-    if (this.mode == 'hide') return sourceValue != this.expected;
-    else return sourceValue == this.expected;
+    if (this.mode === 'hide') return sourceValue !== this.expected;
+    else return sourceValue === this.expected;
   }
 
   toggle() {
@@ -37,13 +37,13 @@ export default class extends Controller {
   }
 
   hideField() {
-    for (let input of this.fieldInputs) input.disabled = true;
+    for (const input of this.fieldInputs) input.disabled = true;
 
     this.showhideTarget.classList.add('hidden');
   }
 
   showField() {
-    for (let input of this.fieldInputs) input.disabled = false;
+    for (const input of this.fieldInputs) input.disabled = false;
 
     this.showhideTarget.classList.remove('hidden');
   }

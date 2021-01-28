@@ -9,6 +9,7 @@ export default class extends AnalyticsBaseController {
     return window.pintrk;
   }
 
+  /* eslint-disable */
   initService() {
     !(function (e) {
       if (!window.pintrk) {

@@ -1,4 +1,4 @@
-const Cookies = require('js-cookie');
+import Cookies from 'js-cookie';
 import CookiePreferences from '../javascript/cookie_preferences';
 import { Controller } from 'stimulus';
 
@@ -10,7 +10,7 @@ export default class extends Controller {
   }
 
   hideOnLoad() {
-    if (Cookies.get(this.cookieName) == 'Hidden') {
+    if (Cookies.get(this.cookieName) === 'Hidden') {
       this.hideBanner();
     }
   }

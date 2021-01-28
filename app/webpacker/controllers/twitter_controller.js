@@ -9,6 +9,7 @@ export default class extends AnalyticsBaseController {
     return window.twq;
   }
 
+  /* eslint-disable */
   initService() {
     !(function (e, t, n, s, u, a) {
       e.twq ||

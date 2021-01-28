@@ -18,6 +18,7 @@ module.exports = {
       },
     ],
   },
+  ignorePatterns: ['polyfills/'],
   overrides: [
     {
       files: ['*_spec.js', '*spec_helper.js'],

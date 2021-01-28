@@ -45,7 +45,7 @@ export default class extends Controller {
   }
 
   finishSave() {
-    if (this.data.get('save-state') == 'saving')
+    if (this.data.get('save-state') === 'saving')
       this.data.set('save-state', 'saved');
   }
 }

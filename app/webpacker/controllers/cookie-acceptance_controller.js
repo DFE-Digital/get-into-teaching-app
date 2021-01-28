@@ -42,6 +42,6 @@ export default class extends Controller {
 
   isPreferencesPage() {
     const path = window.location.href.replace(/^https?:\/\/[^/]+/, '');
-    return path == '/cookie_preference';
+    return path === '/cookie_preference';
   }
 }
