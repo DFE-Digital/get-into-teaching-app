@@ -23,7 +23,7 @@
         </div>
         <div data-navigation-target="links" id="navbar-mobile-links" class="navbar__mobile__links">
             <ul>
-                <li><a href="/">Home</a></li>
+                <li><%= link_to("Home", root_path) %></li>
                 <% resources.each do |resource| %>
                     <li><%= link_to resource[:front_matter][:title], resource[:path] %></li>
                 <% end %>
