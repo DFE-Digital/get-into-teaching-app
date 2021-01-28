@@ -17,7 +17,7 @@ RSpec.describe CallsToAction::MultipleButtonsComponent, type: :component do
   end
 
   specify "the title is present" do
-    expect(page).to have_css("h4", text: title)
+    expect(page).to have_css(".call-to-action__heading", text: title)
   end
 
   specify "all the links are present" do

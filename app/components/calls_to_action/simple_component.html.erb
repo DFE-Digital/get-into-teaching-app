@@ -2,11 +2,8 @@
   <%= icon %>
 
   <div class="call-to-action__content">
-
     <% if title.present? %>
-      <h4 class="call-to-action__heading">
-        <%= title %>
-      </h4>
+      <%= tag.span(title, class: "call-to-action__heading") %>
     <% end %>
 
     <% if text.present? %>

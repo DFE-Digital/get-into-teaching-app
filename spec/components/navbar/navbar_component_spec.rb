@@ -21,7 +21,7 @@ describe Navbar::NavbarComponent, type: "component" do
 
       it "shows background colour on link that matches the current page" do
         expect(page).to have_css("li.active") do |active_li|
-          expect(active_li).to have_link("Home", href: "/")
+          expect(active_li).to have_content("Home")
         end
       end
 

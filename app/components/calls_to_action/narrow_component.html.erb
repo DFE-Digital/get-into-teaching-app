@@ -2,9 +2,7 @@
   <header>
     <%= icon %>
     <% if title.present? %>
-      <h4 class="call-to-action__heading">
-        <%= title %>
-      </h4>
+      <%= tag.span(title, class: "call-to-action__heading") %>
     <% end %>
   </header>
 
