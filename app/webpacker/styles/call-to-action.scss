@@ -35,13 +35,13 @@
       margin-top: .6em;
     }
   }
-  &:not(.call-to-action--narrow) {
-    .call-to-action__heading {
-      font-size: $fs-26;
-      margin-bottom: 1em;
-    }
+
+  .call-to-action__heading {
+    font-size: $fs-26;
+    font-weight: bold;
+    margin-bottom: 1em;
   }
- 
+
 
 
   &__action {
@@ -101,7 +101,8 @@
       align-items: center;
 
       .call-to-action__heading {
-        margin: 0 0 0 .5em;
+        font-size: $fs-19;
+        margin: 0 .5em;
       }
     }
   }
