@@ -6,3 +6,5 @@ logging                   = 0
 additional_routes         = 0
 instances                 = 1
 alerts                    = {}
+azure_key_vault           = "s146d01-kv"
+azure_resource_group      = "s146d01-rg"

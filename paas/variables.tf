@@ -1,16 +1,13 @@
 # These settings are for the sandbox and should mainly be overriden by TF_VARS 
 # or set with environment variables TF_VAR_xxxx
 
-variable user {
-  default = "get-into-teaching-tech@digital.education.gov.uk"
-}
-
 variable api_url {
   default = "https://api.london.cloud.service.gov.uk"
 }
 
-variable password {}
-
+variable AZURE_CREDENTIALS {}
+variable azure_key_vault {}
+variable azure_resource_group {}
 
 variable "application_stopped" {
   default = false
@@ -27,10 +24,6 @@ variable "paas_org_name" {
 variable "instances" {
   default = 1
 }
-
-variable "docker_username" {}
-variable "docker_password" {}
-
 
 variable "logging" {
   default = 1
@@ -66,14 +59,7 @@ variable "strategy" {
   default = "blue-green"
 }
 
-variable "HTTPAUTH_PASSWORD" {}
-variable "HTTPAUTH_USERNAME" {}
-variable "RAILS_ENV" {}
-variable "RAILS_MASTER_KEY" {}
-
-
-variable "sc_username" {}
-variable "sc_api_key" {}
 variable "alerts" {
   type = map
 }
+
