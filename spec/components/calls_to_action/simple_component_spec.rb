@@ -49,6 +49,20 @@ RSpec.describe CallsToAction::SimpleComponent, type: :component do
         expect(page).not_to have_css("p", class: "call-to-action__text")
       end
     end
+
+    describe "utility classes" do
+      %w[mobile tablet desktop].each do |size|
+        context "hiding on #{size}" do
+          let(:display_arg_key) { "hide_on_#{size}".to_sym }
+          let(:display_args) { { display_arg_key => true } }
+          let(:component) { described_class.new(kwargs.merge(display_args)) }
+
+          specify "adds a .hide-on-#{size} class to the call to action" do
+            expect(page).to have_css(".call-to-action.hide-on-#{size}")
+          end
+        end
+      end
+    end
   end
 
   describe "failing to render due to missing args" do
