@@ -10,7 +10,7 @@ FactoryBot.define do
     sequence(:summary) { |i| "Become a Teacher #{i} event summary" }
     message { "An important message" }
     video_url { "https://video.com" }
-    sequence(:start_at) { |i| i.weeks.from_now }
+    sequence(:start_at) { |i| i.weeks.from_now.change(hour: 7, minute: 30) }
     end_at { start_at + 2.hours }
     is_online { false }
     is_virtual { false }
