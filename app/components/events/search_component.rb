@@ -13,11 +13,7 @@ module Events
     end
 
     def input_field_classes(field)
-      error_class = "search-for-events__content__error"
-
-      %w[search-for-events__content__input].tap do |classes|
-        classes << error_class if search.errors[field].any?
-      end
+      return "search__field--error" if search.errors[field].any?
     end
 
     def month_args
