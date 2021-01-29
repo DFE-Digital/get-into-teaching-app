@@ -35,11 +35,14 @@
       margin-top: .6em;
     }
   }
-
-  .call-to-action__heading {
-    font-size: $fs-26;
-    margin-bottom: 1em;
+  &:not(.call-to-action--narrow) {
+    .call-to-action__heading {
+      font-size: $fs-26;
+      margin-bottom: 1em;
+    }
   }
+ 
+
 
   &__action {
     margin: .5em 0;
