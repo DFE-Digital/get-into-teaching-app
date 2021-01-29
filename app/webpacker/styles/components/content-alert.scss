@@ -6,7 +6,7 @@
   display: flex;
   width: 78%;
   box-sizing: border-box;
-  margin-bottom: 50px;
+  margin-bottom: $indent-amount;
 
   @include mq($until: tablet) {
     width: inherit;
@@ -34,7 +34,7 @@
     min-width: 62px;
     max-width: 62px;
     height: 62px;
-    margin-right: 20px
+    margin-right: $indent-amount
   }
 
   img {

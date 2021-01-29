@@ -12,8 +12,8 @@
         }
 
         &__label {
-            margin-left: 20px;
-            margin-top: 20px;
+            margin-left: $indent-amount;
+            margin-top: $indent-amount;
         }
 
         &__table {
@@ -22,14 +22,14 @@
             &__column {
                 display: inline-block;
                 box-sizing: border-box;
-                padding-left: 20px;
-                padding-right: 20px;
+                padding-left: $indent-amount;
+                padding-right: $indent-amount;
                 flex: 1;
                 min-width: 245px;
                 vertical-align: top;
 
                 h2 {
-                    margin-top: 20px;
+                    margin-top: $indent-amount;
                     margin-bottom: 40px;
                 }
 
@@ -57,7 +57,7 @@
         }
 
         &__freephone {
-            padding-left: 20px;
+            padding-left: $indent-amount;
             padding-top: 10px;
             padding-right: 10px;
         }
@@ -68,10 +68,10 @@
     .talk-to-us {
         &__inner {
             top: -20px;
-            padding: 0 1.5rem;
+            padding: 0 $indent-amount;
 
             &__label {
-                margin: 1.5rem 0;
+                margin: $indent-amount 0;
             }
 
             &__table {

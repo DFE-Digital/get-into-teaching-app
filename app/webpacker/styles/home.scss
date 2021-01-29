@@ -5,7 +5,7 @@
 
 .cta-link {
     width: 50%;
-    padding: 0 1.5rem;
+    padding: 0 $indent-amount;
     height: 290px;
     display: block;
     margin-bottom: 30px;
@@ -24,7 +24,7 @@
 
         background: $green-dark-90;
         display: inline-block;
-        padding: 1.5rem;
+        padding: $indent-amount;
         line-height: 1.2;
         font-weight: bold;
         color: white;
@@ -174,7 +174,7 @@
 }
 
 .home-inset-content {
-    margin: 0 20px;
+    margin: 0 $indent-amount;
 }
 .home-quote {
     &__text {
@@ -185,7 +185,7 @@
     }
 
     &__quote {
-        margin: 0 0 20px;
+        margin: 0 0 $indent-amount;
         font-weight: bold;
         font-size: $fs-28;
         line-height: 1.25;
@@ -247,8 +247,8 @@
     .steps {
         .git-link {
             padding-left: 40px;
-            padding-right: 20px;
-            margin-top: 20px;
+            padding-right: $indent-amount;
+            margin-top: $indent-amount;
         }
 
         &__table {

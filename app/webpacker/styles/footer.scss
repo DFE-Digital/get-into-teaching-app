@@ -9,7 +9,7 @@
         margin-bottom: 0;
     }
     &__inner {
-        padding: 1.5rem;
+        padding: $indent-amount;
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -21,10 +21,10 @@
     }
 
     &__text {
-        padding-right: 20px;
+        padding-right: $indent-amount;
         font-weight: bold;
         @include mq($until: tablet) {
-            margin-bottom: 20px;
+            margin-bottom: $indent-amount;
         }
     }
 }
@@ -56,7 +56,7 @@ footer.site-footer {
             &__link {
                 color: white;
                 display: block;
-                margin-right: 20px;
+                margin-right: $indent-amount;
                 .icon {
                     font-size: $fs-32;
                 }
@@ -195,9 +195,9 @@ footer.site-footer {
     footer.site-footer {
 
         .site-footer-top {
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
+            padding-left: $indent-amount;
+            padding-right: $indent-amount;
+            padding-top: $indent-amount;
             flex-direction: column-reverse;
             align-items: flex-start;
 
@@ -235,8 +235,8 @@ footer.site-footer {
         .site-footer-bottom {
             display: block;
             height: 360px;
-            padding-left: 20px;
-            padding-right: 20px;
+            padding-left: $indent-amount;
+            padding-right: $indent-amount;
             padding-top: 0;
 
             &__logo-container {

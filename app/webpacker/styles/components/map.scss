@@ -113,7 +113,7 @@
     .map-marker__title {
       @include govuk-font($size: 19, $line-height: 1.5, $weight: bold);
       @include govuk-responsive-margin(2, "bottom");
-      padding-right: 20px;
+      padding-right: $indent-amount;
     }
 
     .map-marker__body {
@@ -127,7 +127,7 @@
 
   .govuk-heading-s {
     @include govuk-responsive-margin(2, "bottom");
-    padding-right: 20px;
+    padding-right: $indent-amount;
   }
 
   .govuk-body,

@@ -1,7 +1,7 @@
 .story-landing {
     &__header {
         width: 66.6%;
-        margin-top: 1.5rem;
+        margin-top: $indent-amount;
 
         @include mq($until: tablet) {
           width: auto;
@@ -59,7 +59,7 @@
         box-sizing: border-box;
         padding-left: 40px;
         padding-right: 40px;
-        padding-top: 20px;
+        padding-top: $indent-amount;
         padding-bottom: 40px;
         color: $white;
 
@@ -108,7 +108,7 @@
             h2 {
                 font-size: $fs-32;
                 border-bottom: none;
-                padding: 0 1.5rem;
+                padding: 0 $indent-amount;
                 margin: 0;
                 color: $black;
                 background: transparent;
@@ -187,7 +187,7 @@
   }
 
   &--with-padding {
-    padding: 0 1.5rem;
+    padding: 0 $indent-amount;
   }
 
   .card {
@@ -232,7 +232,7 @@
     .stories {
         &__thumbs {
             flex-wrap: wrap;
-            margin-bottom: 20px;
+            margin-bottom: $indent-amount;
             margin-right: 0;
             padding: 0;
             &__thumb {

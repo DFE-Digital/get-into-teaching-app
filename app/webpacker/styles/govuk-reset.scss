@@ -2,7 +2,7 @@
  * As well as our own stylesheet, we also import the GOV.UK design system styles.
  *
  * There are a number of generic selectors used in our stylesheets (anchor
- * tags, lists, etc) that end up adding attributes to some of the GOV.UK styles. 
+ * tags, lists, etc) that end up adding attributes to some of the GOV.UK styles.
  * We need to undo these style changes when they occur, which is what this set of
  * styles is for.
  */
@@ -17,5 +17,5 @@
 }
 
 h2.govuk-error-summary__title {
-  margin-bottom: 20px;
+  margin-bottom: $indent-amount;
 }

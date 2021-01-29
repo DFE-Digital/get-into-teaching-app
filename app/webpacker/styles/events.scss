@@ -8,7 +8,7 @@
 
   .event-type-descriptions__content {
     @include cards-grid;
-    padding: 1.5rem 1.5rem 0 1.5rem;
+    padding: $indent-amount $indent-amount 0 $indent-amount;
     margin-bottom: 0;
   }
 }
@@ -38,7 +38,7 @@
 .events-featured {
     background: #F0F0F0;
     position: relative;
-    padding: 1.5rem;
+    padding: $indent-amount;
     width: 100%;
     margin-top: 30px;
     box-sizing: border-box;
@@ -61,7 +61,7 @@
     &__heading {
       > h3 {
         font-size: $fs-28;
-        margin: 0 0 20px 0;
+        margin: 0 0 $indent-amount 0;
         line-height: 1.25;
       }
     }

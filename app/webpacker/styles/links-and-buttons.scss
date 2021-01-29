@@ -4,7 +4,7 @@
     background-color: $bg;
     text-decoration: none;
     color: $fg;
-    padding: 14px 20px;
+    padding: 14px $indent-amount;
     font-size: $fs-19;
     white-space: nowrap;
     border: none;
