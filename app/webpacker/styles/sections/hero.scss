@@ -69,11 +69,13 @@ $mobile-cutoff: 800px;
 
 // grid-specific
 .hero {
+  $title-overlap-img: 4em;
+
   @supports (display: grid) {
     display: grid;
 
     grid-template-columns: 3em repeat(3, 1fr);
-    grid-template-rows: repeat(4, minmax(1em, max-content));
+    grid-template-rows: max-content $title-overlap-img repeat(2, minmax(1em, max-content));
 
     &__title {
       grid-area: 2 / 1 / 4 / 4;
@@ -94,22 +96,21 @@ $mobile-cutoff: 800px;
 
     &__img {
       min-height: 10em;
-      grid-area: 1 / 2 / 3 / 5;
+      grid-area: -5 / -4 / -3 / -1;
     }
 
     @include mq($from: tablet) {
-      grid-template-columns: repeat(8, minmax(100px, 1fr));
+
+      grid-template-columns: repeat(3, minmax(100px, 1fr)) $title-overlap-img repeat(4, minmax(100px, 1fr));
       grid-template-rows: 2em repeat(5, minmax(5px, max-content)) 2em;
 
-      &__title { grid-area: 3 / 1 / 5 / 6; }
+      &__title { grid-area: 3 / 1 / 5 / 5; }
 
       &__subtitle { grid-area: 5 / 1 / 7 / 4; }
 
       &__content { grid-area: 5 / 1 / 7 / 5; }
 
-      &__img {
-        grid-area: 2 / 5 / 8 / 9;
-      }
+      &__img { grid-area: -6 / -6 / -1 / -1; }
     }
 
     @include mq($from: wide) {
