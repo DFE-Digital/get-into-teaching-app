@@ -9,7 +9,7 @@
         width: 33.333%;
         margin-bottom: 30px;
         text-align: left;
-        padding: 0px 20px;
+        padding: 0px $indent-amount;
         position: relative;
     }
 
@@ -81,7 +81,7 @@
             position: relative;
         }
         &__content {
-            padding: 0 1.5rem;
+            padding: 0 $indent-amount;
             p {
                 margin-top: 0;
             }
@@ -119,7 +119,7 @@
 
         &__item {
             width: 100%;
-            padding: 0px 20px;
+            padding: 0px $indent-amount;
             margin-bottom: 50px;
         }
 
@@ -128,7 +128,7 @@
             position: relative;
             &__image {
                 width: 100%;
-                margin-bottom: 20px;
+                margin-bottom: $indent-amount;
             }
 
             &__right {
@@ -153,7 +153,7 @@
     }
     &__header {
         margin: -20px auto -20px;
-        padding: 0 1.5rem;
+        padding: 0 $indent-amount;
         &.content {
             margin-bottom: -20px;
         }
@@ -161,7 +161,7 @@
     h2 {
         margin: 0;
         @include mq($until: tablet) {
-            margin-bottom: 20px;
+            margin-bottom: $indent-amount;
         }
     }
 }

@@ -211,12 +211,16 @@ $mobile-cutoff: 800px;
     padding-right: 150px;
 
     @include mq($until: tablet) {
-      padding-right: 20px;
+      padding-right: $indent-amount;
     }
   }
 
   &__cta {
-    margin: 0.4em 1em 20px;
+    margin: $indent-amount 1em;
+
+    @include mq($until: tablet) {
+      margin-top: 0;
+    }
 
     &__button {
       @include button($bg: $white, $fg: $black);

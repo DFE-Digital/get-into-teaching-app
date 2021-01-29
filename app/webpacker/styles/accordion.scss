@@ -42,12 +42,12 @@
         }
 
         .call-to-action {
-          margin: 0 1.5rem;
+          margin: 0 $indent-amount;
         }
 
         .step-content__description {
             margin: 0;
-            padding: 1.5rem;
+            padding: $indent-amount;
 
             blockquote {
               background: $grey;

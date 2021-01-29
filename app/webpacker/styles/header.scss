@@ -13,23 +13,23 @@
         max-width: 630px;
         float:right;
         margin-top:20px;
-        margin-right: 20px;
-    
+        margin-right: $indent-amount;
+
         div {
             width: 100%;
             height: 30px;
         }
-        
-        ul {    
+
+        ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
         }
-    
+
         li {
             float: right;
         }
-    
+
         li a {
             @include font;
             font-size: $fs-16;
@@ -55,14 +55,14 @@
         max-width: calc(100% - 350px);
         float:right;
         margin-top: 0px;
-        margin-right: 20px;
-    
+        margin-right: $indent-amount;
+
         div {
             width: 100%;
             height: 30px;
         }
-        
-        ul {    
+
+        ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
@@ -70,7 +70,7 @@
             flex-wrap: wrap;
             justify-content: flex-end;
         }
-    
+
         li {
             float: right;
             padding: 8px 16px;
@@ -98,22 +98,22 @@
 
         $border-width: 2.5px;
         $padding-space: 2.5px;
-      
+
         %hover-shared {
           padding-bottom: 2.5px;
           margin-bottom: -$border-width - $padding-space;
         }
-      
+
         a:hover:not(:focus):not(.active) {
           @extend %hover-shared;
           border-bottom: solid $border-width $black;
         }
-      
+
         .active a:hover:not(:focus) {
           @extend %hover-shared;
           border-bottom: solid $border-width $white;
         }
-      
+
         .active {
           background-color: $blue-dark;
           color: $white;
@@ -124,9 +124,9 @@
     }
 
     &__mobile {
-        
+
         display:none;
-    
+
         a {
             text-decoration: none;
         }
@@ -139,7 +139,7 @@
             float: right;
             color: $black;
             margin-top: 33px;
-            margin-right: 20px;
+            margin-right: $indent-amount;
         }
 
         .icon-close {
@@ -165,7 +165,7 @@
             padding: 1px;
             background-color: $grey;
             width: 100%;
-        
+
             text-align: right;
             font-weight: bold;
             a {
@@ -203,7 +203,7 @@
 
         &__container {
             margin-right : 10px;
-            margin-top :47px; 
+            margin-top :47px;
         }
     }
 
@@ -241,7 +241,7 @@
         left:-10px;
         z-index: 1000;
 
-    
+
         img {
             transform: rotate(3deg);
             margin-left: 40px;
@@ -259,8 +259,8 @@
     line-height: 1.25;
     background-color: $black;
     color: $white;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: $indent-amount;
+    padding-bottom: $indent-amount;
     padding-left: 35px;
     padding-right: 35px;
     p {
@@ -310,14 +310,14 @@
             top: 4px;
 
             img {
-                margin-top: 20px;
+                margin-top: $indent-amount;
                 margin-left: 24px;
                 width: 142px;
                 height: 48px;
             }
         }
     }
-    
+
     .navbar {
 
         position: relative;
@@ -331,7 +331,7 @@
         display: block;
         width: 100%;
     }
-    
+
 }
 
 .skiplink {
@@ -378,7 +378,7 @@
     .logo {
         top: 18px;
     }
-}    
+}
 
 
 

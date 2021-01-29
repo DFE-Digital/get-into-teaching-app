@@ -1,7 +1,7 @@
 @mixin content-cta {
   background: $grey;
   text-align: left;
-  padding: 1.5rem;
+  padding: $indent-amount;
   margin: 0 -20px 30px;
   box-sizing: border-box;
   width: auto;

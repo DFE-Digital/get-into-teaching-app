@@ -33,7 +33,7 @@
         width: 100%;
         min-height: 100vh;
         box-sizing: border-box;
-        padding: 20px;
+        padding: $indent-amount;
         position: absolute;
     }
 
@@ -41,7 +41,7 @@
         width: 100%;
         max-width: tablet;
         background-color: $white;
-        padding: 20px;
+        padding: $indent-amount;
         box-sizing: border-box;
         position: relative;
         margin: 40px;
@@ -106,7 +106,7 @@
 @include mq($until: mobile) {
     .video-overlay__video-container {
         padding: 10px;
-        margin: 20px;
+        margin: $indent-amount;
     }
 
     .video-overlay__video-container__dismiss {

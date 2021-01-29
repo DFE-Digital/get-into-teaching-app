@@ -19,7 +19,7 @@
         float:left;
         text-align: left;
         width: calc(100% - 360px);
-        padding-top: 20px;
+        padding-top: $indent-amount;
 
         h1 {
             margin: 0;

@@ -8,14 +8,14 @@
   z-index: 1000;
   justify-content: center;
   align-items: center;
-  
+
   &__background {
       opacity: 0.4;
       background-color: $black;
       width: 100%;
       min-height: 100vh;
       box-sizing: border-box;
-      padding: 20px;
+      padding: $indent-amount;
       position: absolute;
       top: 0;
       left: 0;
@@ -28,7 +28,7 @@
       padding: 40px;
       box-sizing: border-box;
       position: relative;
-      margin: 20px;
+      margin: $indent-amount;
       overflow: hidden;
 
       .logo__image {
@@ -36,7 +36,7 @@
           top: 0px;
           left: -45px;
           width: 240px;
-          margin-bottom: 20px;
+          margin-bottom: $indent-amount;
 
           a {
               margin-left: 8px;
@@ -85,8 +85,8 @@
           display: inline-block;
           cursor: pointer;
           font-weight: bold;
-          margin-top: 20px;
-          padding: 0 20px;
+          margin-top: $indent-amount;
+          padding: 0 $indent-amount;
       }
   }
 }
@@ -94,7 +94,7 @@
 @include mq($until: tablet) {
   .dialog {
       &__content {
-          padding: 20px;
+          padding: $indent-amount;
           max-height: calc(100vh - 40px);
           overflow: auto;
           &__header {
@@ -102,18 +102,18 @@
           }
           .logo__image {
               width: 220px;
-              margin-left: 20px;
+              margin-left: $indent-amount;
               div {
                   margin-left: 39px;
                   margin-top: -3px;
-                  
+
               }
           }
 
           h2 {
               display: block;
               float: none;
-              margin-top: 20px;
+              margin-top: $indent-amount;
               margin-bottom: -20px;
               font-size: $fs-24;
           }

@@ -13,7 +13,7 @@
     &__inner {
       box-sizing: border-box;
         background-color: white;
-        padding: 1.5rem;
+        padding: $indent-amount;
         border: 1px solid $grey;
         border-width: 1px 1px 0 1px;
         width: 100%;
@@ -23,7 +23,7 @@
     &__left {
         display: flex;
         align-items: flex-start;
-        padding-right: 20px;
+        padding-right: $indent-amount;
         line-height: 1.2;
     }
 
@@ -35,8 +35,8 @@
         color: white;
         font-weight: bold;
         display: inline-block;
-        padding: 8px 20px;
-        margin-right: 20px;
+        padding: 8px $indent-amount;
+        margin-right: $indent-amount;
     }
     a {
         color: $blue-dark;

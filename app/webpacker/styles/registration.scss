@@ -29,7 +29,7 @@
     font-size: $fs-28;
     margin: 0;
     padding: 0;
-    margin-top: 20px;
+    margin-top: $indent-amount;
     margin-bottom: 10px;
   }
 
@@ -40,7 +40,7 @@
   }
 
   button.call-to-action-button {
-    margin-top: 20px;
+    margin-top: $indent-amount;
   }
 
 }
