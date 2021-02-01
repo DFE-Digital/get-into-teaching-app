@@ -1,88 +1,71 @@
 .story-landing {
-    &__header {
-        width: 66.6%;
-        margin-top: $indent-amount;
+  &__footer {
+    display: inline-block;
+    margin: 1em 0;
 
-        @include mq($until: tablet) {
-          width: auto;
-          padding: 0;
-        }
+    a {
+      @include button;
+      @include chevron;
 
-        h2 {
-            @include content-heading;
-            color: $black;
-            background-color: inherit;
-            size: 110%;
-            margin-bottom: 0;
-        }
+      span {
+        white-space: normal;
+      }
     }
+  }
 
-    &__footer {
-        width: 66.6%;
-
-        @include mq($until: tablet) {
-          width: 100%;
-          margin: 0;
-          padding: 0;
-        }
-
-        a {
-            @include button;
-            @include chevron;
-            display: inline-block;
-            margin: 1em 0 0 0;
-            white-space: initial;
-        }
+  &__header {
+    h2 {
+      font-size: $fs-32;
     }
+  }
+
+  &__stories + &__stories {
+    margin-top: 2em;
+  }
 }
 
 .stories-feature {
+  background: $purple;
+  color: $white;
+  display: flex;
+  flex-direction: column;
 
-    display: table;
-    width: 100%;
+  @include mq($from: tablet) {
+    border-bottom: inherit;
+    flex-direction: row;
+    border-bottom: 2em solid $purple;
+  }
+
+  &__image {
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1 0 40%;
+    min-height: 15em;
+  }
+
+  &__content {
+    flex: 1 0 60%;
+    margin: auto $indent-amount;
+    padding-bottom: 2em;
+
+    a.git-link {
+      color: $white;
+    }
 
     @include mq($from: tablet) {
-      border-bottom: 2em solid $purple;
+      flex-shrink: 1;
+      padding-left: 1em;
     }
 
-    &__image {
-        display: table-cell;
-        width: 38%;
-        background-repeat: no-repeat;
-        background-size: cover;
+    h2 {
+      font-size: $fs-28;
     }
 
-    &__content {
-        display: table-cell;
-        background-color: $purple;
-        vertical-align: top;
-        box-sizing: border-box;
-        padding-left: 40px;
-        padding-right: 40px;
-        padding-top: $indent-amount;
-        padding-bottom: 40px;
-        color: $white;
-
-        h2 {
-            font-size: $fs-28;
-        }
-
-        h3 {
-            padding: 0;
-            margin: 0;
-        }
-
-        p {
-            padding-top: 0;
-            margin-top: 0;
-        }
-
-        a.git-link {
-            color: $white;
-            cursor: pointer;
-        }
-
+    .stories-feature__subheading {
+      font-size: $fs-19;
+      font-weight: bold;
     }
+  }
 }
 
 .content-wrapper {
@@ -251,22 +234,5 @@
             }
 
         }
-    }
-
-    .stories-feature {
-        display: block;
-        width: auto;
-        margin-bottom: 0px;
-
-        &__image {
-            display: block;
-            width: 100%;
-            height:400px;
-        }
-
-        &__content {
-            display: block;
-        }
-
     }
 }

@@ -7,26 +7,25 @@
 
       <main class="semantic story-landing" role="main" id="main-content">
         <section class="container">
-          <article class="markdown fullwidth no-hero">
-            <div class="stories-feature">
-              <div class="stories-feature__image" style="background-image:url('/assets/images/victoria.jpg')"></div>
-              <div class="stories-feature__content">
-                <%= tag.h2(@front_matter.dig("featured_story", "heading")) %>
-                <%= tag.h3(@front_matter.dig("featured_story", "subheading")) %>
-                <%= tag.p(@front_matter.dig("featured_story", "text")) %>
-                <%= link_to(@front_matter.dig("featured_story", "link"), class: "git-link") do %>
-                  Read <%= @front_matter.dig("featured_story", "name") %>’s story <%= fas_icon("chevron-right") %>
-                <% end %>
-              </div>
+          <section class="stories-feature">
+            <div class="stories-feature__image" style="background-image:url('/assets/images/victoria.jpg')"></div>
+            <div class="stories-feature__content">
+              <%= tag.h2(@front_matter.dig("featured_story", "heading")) %>
+              <%= tag.span(@front_matter.dig("featured_story", "subheading"), class: "stories-feature__subheading") %>
+              <%= tag.p(@front_matter.dig("featured_story", "text")) %>
+              <%= link_to(@front_matter.dig("featured_story", "link"), class: "git-link") do %>
+                Read <%= @front_matter.dig("featured_story", "name") %>’s story <%= fas_icon("chevron-right") %>
+            <% end %>
             </div>
-
+          </section>
+          <article class="markdown fullwidth no-hero">
             <% @front_matter["sections"]&.each do |name, section| %>
-              <div class="story-landing__header">
-                <%= tag.h2(name) %>
-                <%= tag.p(section["text"]) %>
-              </div>
               <% if section["stories"].present? %>
                 <div class="story-landing__stories">
+                  <div class="story-landing__header">
+                    <%= tag.h2(name) %>
+                    <%= tag.p(section["text"]) %>
+                  </div>
                   <div class="story-landing__cards cards stories">
                     <%= render Cards::RendererComponent.with_collection(section["stories"]) %>
                   </div>
