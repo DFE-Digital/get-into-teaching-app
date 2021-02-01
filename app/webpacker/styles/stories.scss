@@ -99,6 +99,11 @@
         align-items: center;
         margin-bottom: 30px;
 
+        @include mq($until: mobile) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
         &__thumb {
             object-fit: cover;
         }
@@ -106,12 +111,17 @@
         &__label {
 
             h2 {
-                font-size: $fs-32;
+                font-size: $fs-26;
                 border-bottom: none;
                 padding: 0 $indent-amount;
                 margin: 0;
                 color: $black;
                 background: transparent;
+
+                @include mq($until: mobile) {
+                  padding: 0;
+                  margin-top: $indent-amount;
+                }
             }
         }
     }
