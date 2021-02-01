@@ -14,7 +14,7 @@
 
     <main class="semantic" role="main" id="main-content">
       <section class="container">
-        <article class="markdown overhang<%= " fullwidth" if @before_search_fullwidth %> ">
+        <article class="markdown<%= " fullwidth" if @before_search_fullwidth %> ">
           <%= yield :before_search %>
         </article>
       </section>
@@ -22,7 +22,7 @@
         <%= render @search_component %>
       </div>
       <section class="container">
-        <article class="markdown overhang fullwidth">
+        <article class="markdown fullwidth">
           <%= yield %>
         </article>
       </section>

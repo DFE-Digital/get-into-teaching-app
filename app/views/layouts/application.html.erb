@@ -17,7 +17,7 @@
         <% unless @fullwidth %>
           <aside></aside>
         <% end %>
-        <article class="markdown overhang<%= " fullwidth" if @fullwidth %><%= " no-hero" if @skip_hero %>">
+        <article class="markdown <%= " fullwidth" if @fullwidth %><%= " no-hero" if @skip_hero %>">
           <%= yield %>
         </article>
         <section class="feature">
