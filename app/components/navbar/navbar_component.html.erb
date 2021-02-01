@@ -9,9 +9,11 @@
             <%= nav_link("Find an event near you", events_path) %>
         </ul>
 
+        <% unless Rails.env.production? %>
         <div class="navbar__desktop__search">
           <%= link_to image_pack_tag("icon-site-search.svg"), search_path %>
         </div>
+        <% end %>
     </div>
 
     <div class="navbar__mobile" data-controller="navigation">
@@ -20,7 +22,7 @@
                 <div data-navigation-target="label" id="navbar-label" class="icon-hamburger-label">Close</div>
                 <div data-navigation-target="hamburger" id='hamburger' class="icon-close"></div>
             </a>
-            <%= link_to image_pack_tag("icon-site-search.svg"), search_path %>
+            <%= link_to image_pack_tag("icon-site-search.svg"), search_path unless Rails.env.production? %>
         </div>
         <div data-navigation-target="links" id="navbar-mobile-links" class="navbar__mobile__links">
             <ul>
