@@ -22,7 +22,8 @@ export default class extends Controller {
     this.element.style.display = 'none';
   }
 
-  dismiss() {
+  dismiss(event) {
+    if (event) event.preventDefault();
     this.dismissFeedback();
     this.hide();
   }
