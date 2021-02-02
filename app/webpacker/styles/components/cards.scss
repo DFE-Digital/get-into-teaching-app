@@ -9,6 +9,7 @@
         flex-direction: column;
         text-decoration: none;
         position: relative;
+        box-sizing: border-box;
 
         &__thumb {
             width: 100%;
@@ -94,7 +95,6 @@
 }
 
 .cards-with-headers {
-
   h2 {
     padding: 0 $indent-amount $indent-amount;
     font-size: $fs-32;
@@ -103,6 +103,18 @@
   .card {
     margin-left: 1em;
     overflow: initial;
+  }
+
+  @include mq($until: tablet) {
+    .card {
+      margin-left: 0;
+      padding-left: 1em;
+      padding-right: 1em;
+
+      &__header {
+        left: 0;
+      }
+    }
   }
 }
 
