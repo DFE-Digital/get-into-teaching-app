@@ -44,7 +44,7 @@
         </aside>
         <% end %>
 
-        <article class="markdown overhang <%= "fullwidth" if @front_matter["fullwidth"] %> ">
+        <article class="markdown <%= "fullwidth" if @front_matter["fullwidth"] %> ">
           <% if !@front_matter["image"] %>
             <%= tag.h1(@front_matter["title"]) %>
           <% end %>

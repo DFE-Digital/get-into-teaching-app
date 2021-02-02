@@ -1,35 +1,32 @@
 .markdown {
+  @mixin overhang { margin-left: auto; margin-right: auto; }
 
   // allow level two headings (blue boxes) and CTAs to 'overhang' on the left
-  &.overhang {
-    > *:not(table) {
-      margin-left: $indent-amount;
-      margin-right: $indent-amount;
-    }
+  > *:not(table) {
+    margin-left: $indent-amount;
+    margin-right: $indent-amount;
+  }
 
-    @mixin overhang { margin-left: auto; margin-right: auto; }
+  > h2 {
+    @include overhang;
+    @include content-heading;
+  }
 
-    > h2 {
-      @include overhang;
-      @include content-heading;
-    }
+  .accordions,
+  .stories-feature,
+  .feature-table,
+  .secondary-button,
+  .content-alert,
+  .event-type-descriptions,
+  .types-of-event,
+  .content-cta,
+  .featured-content,
+  .page-helpful {
+    @include overhang;
+  }
 
-    .accordions,
-    .stories-feature,
-    .feature-table,
-    .secondary-button,
-    .content-alert,
-    .event-type-descriptions,
-    .types-of-event,
-    .content-cta,
-    .featured-content,
-    .page-helpful {
-      @include overhang;
-    }
-
-    .content-alert--left {
-      margin-left: 0;
-    }
+  .content-alert--left {
+    margin-left: 0;
   }
 
   h2:not(:first-child),
