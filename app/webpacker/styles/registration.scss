@@ -43,6 +43,10 @@
     margin-top: $indent-amount;
   }
 
+  #event-reg-main-title{
+    padding: 0;
+    margin: 25px 0;
+  }
 }
 
 @include mq($until: tablet) {
