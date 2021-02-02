@@ -81,7 +81,7 @@ describe Sections::HeroComponent, type: "component" do
         end
 
         specify "the mailing list strip contains text and a button" do
-          expect(page).to have_css(".hero__mailing-strip__text", text: /Get personalised information and advice about getting into teaching/)
+          expect(page).to have_css(".hero__mailing-strip__text", text: /Get personalised information and updates about getting into teaching/)
           expect(page).to have_css(".hero__mailing-strip__cta > a.hero__mailing-strip__cta__button", text: /Sign up here/)
         end
       end
