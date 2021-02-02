@@ -15,6 +15,13 @@ select, input {
     }
 }
 
+form .govuk-form-group {
+  select, input {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 input {
   padding-left: 0.4em ;
   padding-right: 0.4em ;

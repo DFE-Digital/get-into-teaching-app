@@ -1,66 +1,24 @@
 .navbar {
-
-    height: 112px;
+    min-height: 112px;
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+         /* IE hack - IE can't vertically align flexbox items without a fixed height */
+         height: 112px;
+    }
     width: 100%;
     background-color: $white;
-        border-bottom: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-
-    &__desktop-bak {
-        max-width: 630px;
-        float:right;
-        margin-top:20px;
-        margin-right: $indent-amount;
-
-        div {
-            width: 100%;
-            height: 30px;
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-
-        li {
-            float: right;
-        }
-
-        li a {
-            @include font;
-            font-size: $fs-16;
-            display: block;
-            text-align: center;
-            padding: 16px;
-            text-decoration: none;
-            text-align: right;
-            font-weight: bold;
-            letter-spacing: 0px;
-            color: #1D1D1B;
-            margin-left: -10px;
-            margin-bottom: -20px;
-            line-height: 1;
-        }
-
-        li a:hover {
-            text-decoration: underline;
-        }
-    }
-
     &__desktop {
-        max-width: calc(100% - 350px);
-        float:right;
+        display: flex;
+        box-sizing: border-box;
+        margin-left: 280px;
+        width: 100%;
         margin-top: 0px;
-        margin-right: $indent-amount;
-
-        div {
-            width: 100%;
-            height: 30px;
-        }
+        margin-right: 20px;
 
         ul {
             list-style-type: none;
@@ -72,7 +30,6 @@
         }
 
         li {
-            float: right;
             padding: 8px 16px;
         }
 
@@ -121,6 +78,15 @@
             color: $white;
           }
         }
+
+        &__search {
+            align-self: center;
+
+            img {
+                display: block;
+                width: 50px;
+            }
+        }
     }
 
     &__mobile {
@@ -133,34 +99,41 @@
 
         &__buttons {
             height: 85px;
+            line-height: 85px;
+            padding-right: 20px;
+            text-align: right;
+
+            a {
+              vertical-align: middle;
+              display: inline-block;
+
+              img {
+                width: 36px;
+              }
+            }
+
+            div {
+              display: inline-block;
+              margin-left: 0.2rem;
+            }
         }
 
         .icon-hamburger {
-            float: right;
             color: $black;
-            margin-top: 33px;
-            margin-right: $indent-amount;
         }
 
         .icon-close {
-            float: right;
             color: $black;
-            margin-top: 28px;
-            margin-right: 15px;
         }
 
         .icon-hamburger-label {
-            float: right;
             color: $black;
-            margin-top: 32px;
-            margin-right: 10px;
             font-weight: bold;
             font-size: $fs-16;
             letter-spacing: 0px;
         }
 
         &__links {
-
             font-size: $fs-16;
             padding: 1px;
             background-color: $grey;
@@ -198,7 +171,6 @@
                   padding: .2em .3em;
                 }
             }
-
         }
 
         &__container {
@@ -209,11 +181,17 @@
 
 }
 
-.logo {
+.logo-wrapper {
+  position: absolute;
+  z-index: 0;
+  width: 260px ;
+  overflow-x: hidden;
+  top: 6px;
+  padding-bottom: 20px;
+}
 
-    display: inline-block;
-    position: relative;
-    top: 8px;
+.logo {
+    display: block;
 
     a {
         text-decoration: none;
@@ -290,24 +268,17 @@
 
 }
 
-/* mobile css */
-@include mq($until: desktop) {
-    .navbar {
-        &__desktop {
-                max-width: calc(100% - 300px);
-        }
-    }
-}
 @include mq($until: 900px) {
+    .logo-wrapper {
+      width: 200px ;
+      top: 0;
+    }
+
     .logo {
-
-        position: absolute;
-
         &__image {
 
             width: 196px;
             height: 87px;
-            top: 4px;
 
             img {
                 margin-top: $indent-amount;
@@ -319,9 +290,8 @@
     }
 
     .navbar {
-
         position: relative;
-        height: auto;
+        min-height: auto;
         &__desktop {
             display: none;
         }
@@ -367,16 +337,13 @@
     }
 }
 
-// Account for the extra height added by the logo skew
 @include mq($from: wide) {
     .logo-wrapper {
-        height: calc(100% + 40px);
-        overflow: hidden;
-
+        top: -2px;
     }
 
-    .logo {
-        top: 18px;
+    .navbar__desktop {
+      margin-left: 330px;
     }
 }
 

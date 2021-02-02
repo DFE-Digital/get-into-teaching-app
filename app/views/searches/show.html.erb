@@ -1,0 +1,40 @@
+<h1>Search Get into Teaching</h1>
+
+<%= govuk_form_for Search.new, url: search_path, method: :get do |f| %>
+  <%= f.govuk_text_field :search,
+        width: "two-thirds",
+        label: { text: "Enter your search term" },
+        placeholder: "Enter your search term" %>
+
+  <div class="govuk-form-group">
+    <%= f.button name: nil, class: "request-button" do %>
+      Search
+      <%= "again" if @search %>
+      <%= fas_icon "search" %>
+    <% end %>
+  </div>
+<% end %>
+
+<% if @search.results %>
+  <p>
+  <% if @search.results.any? %>
+    Showing search results for <strong><%= @search.search %></strong>
+  <% else %>
+    <em>
+      No results found for <strong><%= @search.search %></strong>
+    </em>
+  <% end %>
+  </p>
+
+  <% for path, frontmatter in @search.results %>
+    <%= link_to path, class: "search-result" do %>
+      <p>
+        <% for folder in path.split("/").slice(1...-1) %>
+          <%= folder.humanize.gsub "-", " " %>
+          &rsaquo;
+        <% end %>
+      </p>
+      <h3><%= frontmatter[:title] %></h3>
+    <% end %>
+  <% end %>
+<% end %>

@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   get "/tta-service", to: "pages#tta_service", as: :tta_service
   get "/tta", to: "pages#tta_service", as: nil
 
+  resource :search, only: %i[show] unless Rails.env.production?
+
   resource "cookie_preference", only: %i[show]
   get "/cookie-policy", to: redirect("/cookies")
 
