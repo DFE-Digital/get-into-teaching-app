@@ -1,6 +1,18 @@
 // layout, mobile-first
 $mobile-cutoff: 800px;
 
+@mixin safari-only {
+  // Hack for Safari: Safari has a different take on calculating the height
+  // of flex/grid elements that contain an image with 100% height. This selector
+  // identifies Safari so we can apply a maximim height that won't also apply
+  // to Firefox or Blink-based browsers
+  //
+  // https://stackoverflow.com/questions/57516373/image-stretching-in-flexbox-in-safari
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    @content;
+  }
+}
+
 // fallback styles (IE)
 .hero {
   &__title {
@@ -18,7 +30,6 @@ $mobile-cutoff: 800px;
       width: initial;
       max-width: initial;
     }
-
   }
 
   &__subtitle {
@@ -75,7 +86,10 @@ $mobile-cutoff: 800px;
     display: grid;
 
     grid-template-columns: 3em repeat(3, 1fr);
-    grid-template-rows: max-content $title-overlap-img repeat(2, minmax(1em, max-content));
+    grid-template-rows: max-content $title-overlap-img repeat(
+        2,
+        minmax(1em, max-content)
+      );
 
     &__title {
       grid-area: 2 / 1 / 4 / 4;
@@ -83,14 +97,16 @@ $mobile-cutoff: 800px;
     }
 
     &__subtitle,
-    &__content { grid-area: 4 / 1 / 5 / 5; }
+    &__content {
+      grid-area: 4 / 1 / 5 / 5;
+    }
 
     &__subtitle {
       align-items: center;
       margin: 0 auto 2em 1.5em;
 
       @include mq($from: tablet) {
-        margin: 1em 2em .5em 2em;
+        margin: 1em 2em 0.5em 2em;
       }
     }
 
@@ -100,23 +116,34 @@ $mobile-cutoff: 800px;
     }
 
     @include mq($from: tablet) {
-
-      grid-template-columns: repeat(3, minmax(100px, 1fr)) $title-overlap-img repeat(4, minmax(100px, 1fr));
+      grid-template-columns: repeat(3, minmax(100px, 1fr)) $title-overlap-img repeat(
+          4,
+          minmax(100px, 1fr)
+        );
       grid-template-rows: 2em repeat(5, minmax(5px, max-content)) 2em;
 
-      &__title { grid-area: 3 / 1 / 5 / 5; }
+      &__title {
+        grid-area: 3 / 1 / 5 / 5;
+      }
 
-      &__subtitle { grid-area: 5 / 1 / 7 / 4; }
+      &__subtitle {
+        grid-area: 5 / 1 / 7 / 4;
+      }
 
-      &__content { grid-area: 5 / 1 / 7 / 5; }
+      &__content {
+        grid-area: 5 / 1 / 7 / 5;
+      }
 
-      &__img { grid-area: -6 / -6 / -1 / -1; }
+      &__img {
+        grid-area: -6 / -6 / -1 / -1;
+      }
     }
 
     @include mq($from: wide) {
-      &__content { grid-area: 5 / 2 / 7 / 5; }
+      &__content {
+        grid-area: 5 / 2 / 7 / 5;
+      }
     }
-
   }
 }
 
@@ -137,7 +164,7 @@ $mobile-cutoff: 800px;
 
     h1 {
       background-color: $yellow-dark-90;
-      padding: .8em 2em 1.2em;
+      padding: 0.8em 2em 1.2em;
       margin-left: -1em;
 
       @include mq($from: tablet) {
@@ -148,7 +175,9 @@ $mobile-cutoff: 800px;
         font-size: $fs-32;
         border-bottom: 3px solid $black;
 
-        &:after { content: "."; }
+        &:after {
+          content: ".";
+        }
 
         @include mq($from: tablet) {
           font-size: $fs-64;
@@ -159,7 +188,6 @@ $mobile-cutoff: 800px;
   }
 
   &__subtitle {
-
     div {
       font-size: $fs-22-4;
       font-weight: 700;
@@ -171,27 +199,23 @@ $mobile-cutoff: 800px;
     }
   }
 
-
   &__img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     object-position: center;
 
-    // Hack for Safari: Safari has a different take on calculating the height
-    // of flex/grid elements that contain an image with 100% height. This selector
-    // identifies Safari so we can apply a maximim height that won't also apply
-    // to Firefox or Blink-based browsers
-    //
-    // https://stackoverflow.com/questions/57516373/image-stretching-in-flexbox-in-safari
-    @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    @include safari-only {
       max-height: 30em;
+
+      @include mq($until: tablet) {
+        height: auto;
+      }
     }
   }
 }
 
 .hero__mailing-strip {
-
   display: flex;
   align-items: center;
   background-color: $green;
@@ -229,7 +253,7 @@ $mobile-cutoff: 800px;
       padding: 0.4em 1em;
 
       @include mq($until: tablet) {
-        padding: .2em .5em;
+        padding: 0.2em 0.5em;
       }
     }
   }
