@@ -1,8 +1,8 @@
-import { Application } from 'stimulus' ;
-import AccordionController from 'accordion_controller.js' ;
+import { Application } from 'stimulus';
+import AccordionController from 'accordion_controller.js';
 
 describe('AccordionController', () => {
-    document.body.innerHTML = `
+  document.body.innerHTML = `
     <div data-controller="accordion" data-accordion-active-step-value="2">
         <section id="step-1" class="step" data-id="1">
             <button id="button-1" class="step-header" data-action="click->accordion#toggle" data-accordion-target="header">
@@ -33,35 +33,41 @@ describe('AccordionController', () => {
     </div>
     `;
 
-    const application = Application.start() ;
-    application.register('accordion', AccordionController) ;
+  const application = Application.start();
+  application.register('accordion', AccordionController);
 
-    describe("when first loaded with 'active' step set to '2'", () => {
-        it("only first step should be opened", () => {
-          expect(document.getElementById("step-2").classList).not.toContain("inactive");
+  describe("when first loaded with 'active' step set to '2'", () => {
+    it('only first step should be opened', () => {
+      expect(document.getElementById('step-2').classList).not.toContain(
+        'inactive'
+      );
 
-          expect(document.getElementById("step-1").classList).toContain("inactive");
-          expect(document.getElementById("step-3").classList).toContain("inactive");
-        });
-    })
-
-    describe("when open header is toggled", () => {
-        it("should close", () => {
-          expect(document.getElementById("step-2").classList).not.toContain("inactive");
-
-          document.getElementById("button-2").click();
-
-          expect(document.getElementById("step-2").classList).toContain("inactive");
-        });
+      expect(document.getElementById('step-1').classList).toContain('inactive');
+      expect(document.getElementById('step-3').classList).toContain('inactive');
     });
+  });
 
-    describe("when closed header is toggled", () => {
-        it("should open", () => {
-          expect(document.getElementById("step-3").classList).toContain("inactive");
+  describe('when open header is toggled', () => {
+    it('should close', () => {
+      expect(document.getElementById('step-2').classList).not.toContain(
+        'inactive'
+      );
 
-          document.getElementById("button-3").click();
+      document.getElementById('button-2').click();
 
-          expect(document.getElementById("step-3").classList).not.toContain("inactive");
-        });
+      expect(document.getElementById('step-2').classList).toContain('inactive');
     });
+  });
+
+  describe('when closed header is toggled', () => {
+    it('should open', () => {
+      expect(document.getElementById('step-3').classList).toContain('inactive');
+
+      document.getElementById('button-3').click();
+
+      expect(document.getElementById('step-3').classList).not.toContain(
+        'inactive'
+      );
+    });
+  });
 });

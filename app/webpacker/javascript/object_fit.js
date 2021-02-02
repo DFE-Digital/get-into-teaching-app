@@ -1,3 +1,4 @@
-document.addEventListener("turbolinks:load", function () {
+/* eslint-disable no-undef */
+document.addEventListener('turbolinks:load', function () {
   objectFitPolyfill();
-})
+});

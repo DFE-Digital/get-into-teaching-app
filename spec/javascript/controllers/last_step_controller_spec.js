@@ -1,5 +1,5 @@
-import { Application } from 'stimulus' ;
-import LastStepController from 'last_step_controller' ;
+import { Application } from 'stimulus';
+import LastStepController from 'last_step_controller';
 
 describe('LastStepController', () => {
   document.body.innerHTML = `
@@ -27,40 +27,40 @@ describe('LastStepController', () => {
 
       <button type="submit" id="button">undetermined</button>
     </form>
-  ` ;
+  `;
 
   beforeEach(() => {
-    const application = Application.start() ;
-    application.register('last-step', LastStepController) ;
-  })
+    const application = Application.start();
+    application.register('last-step', LastStepController);
+  });
 
   function buttonLabel() {
-    return document.getElementById("button").innerText
-  } ;
+    return document.getElementById('button').innerText;
+  }
 
-  describe("When no button clicked", () => {
-    it("should have default message", () => {
-      expect(buttonLabel()).toEqual("continue") ;
-    }) ;
-  }) ;
+  describe('When no button clicked', () => {
+    it('should have default message', () => {
+      expect(buttonLabel()).toEqual('continue');
+    });
+  });
 
-  describe("Clicking normal radio", () => {
+  describe('Clicking normal radio', () => {
     beforeEach(() => {
-      document.getElementById("yes-radio").click() ;
-    }) ;
+      document.getElementById('yes-radio').click();
+    });
 
-    it("should set message to continue", () => {
-      expect(buttonLabel()).toEqual("continue")
-    }) ;
-  }) ;
+    it('should set message to continue', () => {
+      expect(buttonLabel()).toEqual('continue');
+    });
+  });
 
-  describe("Clicking radio to end wizard", () => {
+  describe('Clicking radio to end wizard', () => {
     beforeEach(() => {
-      document.getElementById("no-radio").click() ;
-    }) ;
+      document.getElementById('no-radio').click();
+    });
 
-    it("should set message to complete", () => {
-      expect(buttonLabel()).toEqual("complete")
-    }) ;
-  }) ;
-})
+    it('should set message to complete', () => {
+      expect(buttonLabel()).toEqual('complete');
+    });
+  });
+});

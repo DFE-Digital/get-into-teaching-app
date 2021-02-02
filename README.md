@@ -105,6 +105,21 @@ if [ "x$SKIPLINT" == "x" ]; then
 fi
 ```
 
+[Prettier](https://prettier.io/) is used for code formatting.
+To enforce stylistic rules with Prettier (note: this overwrites the file), run:
+
+```js
+yarn prettier --write <path to your file>
+```
+
+[ESLint](https://eslint.org/) is used for static analysis of JavaScript code quality. It is configured to ignore stylistic rules that conflict with Prettier, and uses the [JavaScript Standard style](https://standardjs.com/).
+
+To check a file:
+
+```js
+yarn eslint <path to your file>
+```
+
 ## Configuration
 
 ### Environments

@@ -14,26 +14,38 @@ describe('BamController', () => {
   `;
 
   // window appears to not be getting redefined between runs, so remove manually
-  afterEach(() => { delete window.bam })
+  afterEach(() => {
+    delete window.bam;
+  });
 
-  AnalyticsHelper.describeWithCookieSet('bam', BamController, 'bam', 'non-functional')
-  AnalyticsHelper.describeWhenEventFires('bam', BamController, 'bam', 'non-functional')
+  AnalyticsHelper.describeWithCookieSet(
+    'bam',
+    BamController,
+    'bam',
+    'non-functional'
+  );
+  AnalyticsHelper.describeWhenEventFires(
+    'bam',
+    BamController,
+    'bam',
+    'non-functional'
+  );
 
-  describe("tracking pixels", () => {
-    beforeEach(() => { 
+  describe('tracking pixels', () => {
+    beforeEach(() => {
       AnalyticsHelper.setAcceptedCookie();
       AnalyticsHelper.initApp('bam', BamController, 'bam');
-    })
+    });
 
-    it("appends each pixel to the controller element", () => {
+    it('appends each pixel to the controller element', () => {
       const container = document.getElementById('container');
       const images = Array.from(container.querySelectorAll('img'));
       const ids = BamController.ids;
 
       images.forEach((image) => {
-        const match = ids.some((id) => image.src.indexOf(id) != -1);
+        const match = ids.some((id) => image.src.indexOf(id) !== -1);
         expect(match).toBeTruthy();
       });
-    })
-  })
-})
+    });
+  });
+});

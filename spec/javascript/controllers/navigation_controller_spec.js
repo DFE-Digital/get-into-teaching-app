@@ -1,10 +1,8 @@
-import { Application } from 'stimulus' ;
-import NavigationController from 'navigation_controller.js' ;
+import { Application } from 'stimulus';
+import NavigationController from 'navigation_controller.js';
 
 describe('NavigationController', () => {
-
-    document.body.innerHTML =
-    `<div class="navbar__mobile" data-controller="navigation">
+  document.body.innerHTML = `<div class="navbar__mobile" data-controller="navigation">
         <div class="navbar__mobile__buttons">
             <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
                 <div data-navigation-target="hamburger" id='hamburger' class="icon-close"></div>
@@ -22,53 +20,52 @@ describe('NavigationController', () => {
                 <li><a href="/">Talk to us</a></li>
             </ul>
         </div>
-    </div>`
+    </div>`;
 
-    const application = Application.start() ;
-    application.register('navigation', NavigationController) ;
+  const application = Application.start();
+  application.register('navigation', NavigationController);
 
-    describe("when first loaded", () => {
-        it("hides the mobile navigation", () => {
-            let themobilenav = document.getElementById('navbar-mobile-links');
-            expect(themobilenav.style.display).toBe("none");
-        });
+  describe('when first loaded', () => {
+    it('hides the mobile navigation', () => {
+      const themobilenav = document.getElementById('navbar-mobile-links');
+      expect(themobilenav.style.display).toBe('none');
     });
+  });
 
-    describe("when first loaded", () => {
-        it("sets the icon to a hamburger", () => {
-            let theicon = document.getElementById('hamburger');
-            expect(theicon.className).toBe("icon-hamburger");
-        });
+  describe('when first loaded', () => {
+    it('sets the icon to a hamburger', () => {
+      const theicon = document.getElementById('hamburger');
+      expect(theicon.className).toBe('icon-hamburger');
     });
+  });
 
-    describe("when first loaded", () => {
-        it("sets the label to read 'Menu'", () => {
-            let thelabel = document.getElementById('navbar-label');
-            expect(thelabel.innerHTML).toBe("Menu");
-        });
+  describe('when first loaded', () => {
+    it("sets the label to read 'Menu'", () => {
+      const thelabel = document.getElementById('navbar-label');
+      expect(thelabel.innerHTML).toBe('Menu');
     });
+  });
 
-    describe("once clicked", () => {
-        it("shows the mobile navigation", () => {
-            let theicon = document.getElementById('hamburger');
-            theicon.click();
-            let themobilenav = document.getElementById('navbar-mobile-links');
-            expect(themobilenav.style.display).toBe("block");
-        });
+  describe('once clicked', () => {
+    it('shows the mobile navigation', () => {
+      const theicon = document.getElementById('hamburger');
+      theicon.click();
+      const themobilenav = document.getElementById('navbar-mobile-links');
+      expect(themobilenav.style.display).toBe('block');
     });
+  });
 
-    describe("once clicked", () => {
-        it("sets the icon to a cross", () => {
-            let theicon = document.getElementById('hamburger');
-            expect(theicon.className).toBe("icon-close");
-        });
+  describe('once clicked', () => {
+    it('sets the icon to a cross', () => {
+      const theicon = document.getElementById('hamburger');
+      expect(theicon.className).toBe('icon-close');
     });
+  });
 
-    describe("once clicked", () => {
-        it("sets the label to read 'Close'", () => {
-            let thelabel = document.getElementById('navbar-label');
-            expect(thelabel.innerHTML).toBe("Close");
-        });
+  describe('once clicked', () => {
+    it("sets the label to read 'Close'", () => {
+      const thelabel = document.getElementById('navbar-label');
+      expect(thelabel.innerHTML).toBe('Close');
     });
-
+  });
 });

@@ -1,12 +1,9 @@
-const Cookies = require('js-cookie') ;
-import { Application } from 'stimulus' ;
-import CookieAcceptanceController from 'cookie-acceptance_controller.js' ;
+import Cookies from 'js-cookie';
+import { Application } from 'stimulus';
+import CookieAcceptanceController from 'cookie-acceptance_controller.js';
 
 describe('CookieAcceptanceController', () => {
-  let cookieName = "git-cookie-preferences-v1" ;
-
-    document.body.innerHTML =
-    `<div data-controller="cookie-acceptance">
+  document.body.innerHTML = `<div data-controller="cookie-acceptance">
         <div id="overlay" class="cookie-acceptance" data-cookie-acceptance-target="overlay">
             <div class="cookie-acceptance__background"></div>
             <div class="cookie-acceptance__dialog">
@@ -24,54 +21,55 @@ describe('CookieAcceptanceController', () => {
         </div>
     </div>`;
 
-    function initApp() {
-      const application = Application.start() ;
-      application.register('cookie-acceptance', CookieAcceptanceController);
-    }
+  function initApp() {
+    const application = Application.start();
+    application.register('cookie-acceptance', CookieAcceptanceController);
+  }
 
+  beforeEach(() => {
+    Cookies.remove('git-cookie-preferences-v1');
+  });
+
+  describe('when the cookie is set', () => {
     beforeEach(() => {
-      Cookies.remove("git-cookie-preferences-v1") ;
-    }) ;
+      const data = JSON.stringify({ functional: true });
+      Cookies.set('git-cookie-preferences-v1', data);
 
-    describe("when the cookie is set", () => {
-        beforeEach(() => {
-          const data = JSON.stringify({functional: true}) ;
-          Cookies.set("git-cookie-preferences-v1", data) ;
-
-          initApp() ;
-        }) ;
-
-        it('does not show the cookie acceptance dialog', () => {
-            let overlay = document.getElementById('overlay');
-            expect(overlay.style.display).toBe("");
-        })
+      initApp();
     });
 
-    describe("when the cookie is not set", () => {
-        beforeEach(() => { initApp() }) ;
+    it('does not show the cookie acceptance dialog', () => {
+      const overlay = document.getElementById('overlay');
+      expect(overlay.style.display).toBe('');
+    });
+  });
 
-        it('shows the cookie acceptance dialog', () => {
-            let overlay = document.getElementById('overlay');
-            expect(overlay.style.display).toBe("flex");
-        })
+  describe('when the cookie is not set', () => {
+    beforeEach(() => {
+      initApp();
     });
 
-    describe("clicking the accept button", () => {
-        beforeEach(() => {
-          initApp()
+    it('shows the cookie acceptance dialog', () => {
+      const overlay = document.getElementById('overlay');
+      expect(overlay.style.display).toBe('flex');
+    });
+  });
 
-          let acceptanceButton = document.getElementById("cookies-agree");
-          acceptanceButton.click();
-        }) ;
+  describe('clicking the accept button', () => {
+    beforeEach(() => {
+      initApp();
 
-        it('sets the cookie', () => {
-            expect(Cookies.get("git-cookie-preferences-v1")).not.toBe(false);
-        })
-
-        it('hides the dialog', () => {
-            let overlay = document.getElementById('overlay');
-            expect(overlay.style.display).toBe("none");
-        })
+      const acceptanceButton = document.getElementById('cookies-agree');
+      acceptanceButton.click();
     });
 
+    it('sets the cookie', () => {
+      expect(Cookies.get('git-cookie-preferences-v1')).not.toBe(false);
+    });
+
+    it('hides the dialog', () => {
+      const overlay = document.getElementById('overlay');
+      expect(overlay.style.display).toBe('none');
+    });
+  });
 });

@@ -1,8 +1,8 @@
-import { Application } from 'stimulus' ;
-import LinkController from 'link_controller.js' ;
+import { Application } from 'stimulus';
+import LinkController from 'link_controller.js';
 
 describe('LinkController', () => {
-  describe ("disabling turbolinks for links containing anchors", () => {
+  describe('disabling turbolinks for links containing anchors', () => {
     beforeEach(() => {
       document.body.innerHTML = `
       <div data-controller="link" data-link-target="content">
@@ -16,30 +16,34 @@ describe('LinkController', () => {
             </div>
           </div>
         </div>
-      </div>`
+      </div>`;
     });
 
     beforeEach(() => {
       const application = Application.start();
       application.register('link', LinkController);
-    })
+    });
 
-    describe("when first loaded", () => {
-      it("adds data-turbolinks attribute to all jump links", () => {
+    describe('when first loaded', () => {
+      it('adds data-turbolinks attribute to all jump links', () => {
         const linkNodes = [...document.getElementsByTagName('a')];
 
-        linkNodes.forEach((link) => { expect(link.hasAttribute('data-turbolinks')).toBe(true) });
+        linkNodes.forEach((link) => {
+          expect(link.hasAttribute('data-turbolinks')).toBe(true);
+        });
       });
 
-      it("sets data-turbolinks attribute to value of false", () => {
+      it('sets data-turbolinks attribute to value of false', () => {
         const linkNodes = [...document.getElementsByTagName('a')];
 
-        linkNodes.forEach((link) => { expect(link.getAttribute('data-turbolinks')).toEqual('false') });
-      })
+        linkNodes.forEach((link) => {
+          expect(link.getAttribute('data-turbolinks')).toEqual('false');
+        });
+      });
     });
   });
 
-  describe ("making external links open in new windows", () => {
+  describe('making external links open in new windows', () => {
     beforeEach(() => {
       document.body.innerHTML = `
       <div data-controller="link" data-link-target="content">
@@ -50,34 +54,38 @@ describe('LinkController', () => {
         </div>
         <a href="https://www.sample.com/non-content-link">Non-content link</a>
         <a href="https://www.sample.com/another-non-content-link">Another non-content link</a>
-      </div>`
+      </div>`;
     });
 
     beforeEach(() => {
       const application = Application.start();
       application.register('link', LinkController);
-    })
+    });
 
-    describe("when loaded", () => {
+    describe('when loaded', () => {
       it("adds target='_blank' to the content external link", () => {
-        const contentExternalLink = document.getElementById('content-external-link');
+        const contentExternalLink = document.getElementById(
+          'content-external-link'
+        );
         expect(contentExternalLink.hasAttribute('target')).toBe(true);
-      })
+      });
 
-      it("adds a description of where the link will open for screen reader users", () => {
-        const hiddenText = document.querySelector('a#content-external-link > span');
-        expect(hiddenText.textContent).toEqual("(Link opens in new window)");
-      })
+      it('adds a description of where the link will open for screen reader users', () => {
+        const hiddenText = document.querySelector(
+          'a#content-external-link > span'
+        );
+        expect(hiddenText.textContent).toEqual('(Link opens in new window)');
+      });
 
       it("doesn't add target='_blank' to any other links", () => {
         const linkNodes = [...document.getElementsByTagName('a')];
 
         linkNodes
-          .filter(link => !link.href.startsWith("http"))
+          .filter((link) => !link.href.startsWith('http'))
           .forEach((link) => {
             expect(link.hasAttribute('target')).toBe(false);
           });
-      })
+      });
     });
-  })
+  });
 });

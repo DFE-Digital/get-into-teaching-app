@@ -1,4 +1,4 @@
-import { Controller } from "stimulus" ;
+import { Controller } from 'stimulus';
 
 export default class extends Controller {
   connect() {
@@ -16,9 +16,9 @@ export default class extends Controller {
   }
 
   initService() {
-    const scribble = document.createElement("script");
-    scribble.id = "scrbbl-js";
-    scribble.src = "//embed.scribblelive.com/widgets/embed.js";
+    const scribble = document.createElement('script');
+    scribble.id = 'scrbbl-js';
+    scribble.src = '//embed.scribblelive.com/widgets/embed.js';
     this.element.appendChild(scribble);
   }
 

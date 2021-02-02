@@ -1,19 +1,22 @@
-// Load all the controllers within this directory and all subdirectories. 
+// Load all the controllers within this directory and all subdirectories.
 // Controller files must be named *_controller.js.
 
-import { Application } from "stimulus"
-import { definitionsFromContext } from "stimulus/webpack-helpers"
+import { Application } from 'stimulus';
+import { definitionsFromContext } from 'stimulus/webpack-helpers';
 
-const application = Application.start()
-const context = require.context("controllers", true, /_controller\.js$/)
-application.load(definitionsFromContext(context))
+const application = Application.start();
+const context = require.context('controllers', true, /_controller\.js$/);
+application.load(definitionsFromContext(context));
 
-global.mapsLoadedCallback = function() {
-  global.mapsLoaded = true ;
+global.mapsLoadedCallback = function () {
+  global.mapsLoaded = true;
 
-  let maps = document.querySelectorAll('[data-controller="map"]');
-  for(let map of maps) {
-    let instance = application.getControllerForElementAndIdentifier(map, "map");
+  const maps = document.querySelectorAll('[data-controller="map"]');
+  for (const map of maps) {
+    const instance = application.getControllerForElementAndIdentifier(
+      map,
+      'map'
+    );
     instance.initMap();
   }
 };
