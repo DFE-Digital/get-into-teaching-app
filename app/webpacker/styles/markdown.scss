@@ -32,8 +32,9 @@
     }
   }
 
-  h2:not(:first-child) {
-    margin-top: 1em;
+  h2:not(:first-child),
+  .call-to-action {
+    margin-top: 1.5em;
   }
 
   a {
