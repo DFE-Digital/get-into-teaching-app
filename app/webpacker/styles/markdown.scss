@@ -1,12 +1,12 @@
 .markdown {
   @mixin overhang { margin-left: auto; margin-right: auto; }
 
-  // allow level two headings (blue boxes) and CTAs to 'overhang' on the left
-  > *:not(table) {
+  > * {
     margin-left: $indent-amount;
     margin-right: $indent-amount;
   }
 
+  // allow level two headings (blue boxes) and CTAs to 'overhang' on the left
   > h2 {
     @include overhang;
     @include content-heading;
@@ -61,6 +61,21 @@
     // this is added by Kramdown when using the ToC (table of contents) plugin
     #markdown-toc {
       margin-bottom: 3em;
+    }
+  }
+
+  table {
+    border-spacing: 0 .5em;
+    margin: 1em $indent-amount 2em;
+    width: 90%;
+    border-color: $grey;
+
+    thead > tr > th {
+      text-align: left;
+    }
+
+    tbody {
+      font-size: $fs-16;
     }
   }
 }

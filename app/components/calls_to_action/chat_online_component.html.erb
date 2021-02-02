@@ -2,17 +2,15 @@
   <%= icon %>
 
   <div class="call-to-action__content">
-    <%= tag.span("Chat to us", class: "call-to-action__heading") %>
+    <%= tag.span(title, class: "call-to-action__heading") %>
 
     <p class="call-to-action__text">
-      If you're unsure whether your qualifications are equivalent, you can chat to us.
+      <%= text %>
     </p>
 
     <div class="call-to-action__action">
       <button data-action="click->talk-to-us#startChat">
-        <span>
-          Chat online
-        </span>
+        <%= tag.span(button_text) %>
       </button>
     </div>
   </div>
