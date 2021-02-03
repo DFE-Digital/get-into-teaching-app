@@ -31,7 +31,6 @@
   flex-direction: column;
 
   @include mq($from: tablet) {
-    border-bottom: inherit;
     flex-direction: row;
     border-bottom: 2em solid $purple;
   }

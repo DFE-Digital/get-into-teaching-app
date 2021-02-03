@@ -1,3 +1,5 @@
+// stylelint-disable no-duplicate-selectors
+
 // layout, mobile-first
 $mobile-cutoff: 800px;
 
@@ -124,17 +126,27 @@ $mobile-cutoff: 800px;
         );
       grid-template-rows: 2em repeat(5, minmax(5px, max-content)) 2em;
 
-      &__title { grid-area: 3 / 1 / 5 / 5; }
+      &__title {
+        grid-area: 3 / 1 / 5 / 5;
+      }
 
-      &__subtitle { grid-area: 5 / 1 / 7 / 4; }
+      &__subtitle {
+        grid-area: 5 / 1 / 7 / 4;
+      }
 
-      &__content { grid-area: 5 / 1 / 7 / 5; }
+      &__content {
+        grid-area: 5 / 1 / 7 / 5;
+      }
 
-      &__img { grid-area: -6 / -6 / -1 / -1; }
+      &__img {
+        grid-area: -6 / -6 / -1 / -1;
+      }
     }
 
     @include mq($from: wide) {
-      &__content { grid-area: 5 / 2 / 7 / 5; }
+      &__content {
+        grid-area: 5 / 2 / 7 / 5;
+      }
     }
   }
 }

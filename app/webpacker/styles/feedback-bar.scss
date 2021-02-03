@@ -14,7 +14,7 @@
 
   &__inner {
     box-sizing: border-box;
-    background-color: white;
+    background-color: $white;
     padding: $indent-amount;
     border: 1px solid $grey;
     border-width: 1px 1px 0;
@@ -36,7 +36,7 @@
 
   &__label {
     background: $blue;
-    color: white;
+    color: $white;
     font-weight: bold;
     display: inline-block;
     padding: 8px $indent-amount;
@@ -67,7 +67,7 @@
 
 @include mq($until: tablet) {
   .feedback-bar {
-    section.container {
+    .container {
       margin: 0;
     }
 

@@ -130,12 +130,12 @@
         font-size: $fs-16;
         padding: 8px 12px;
 
-        &.git-link {
+        .git-link {
           margin: 8px 0 0;
           padding: 0 12px;
         }
 
-        &.visually-hidden {
+        .visually-hidden {
           padding: 0;
         }
       }

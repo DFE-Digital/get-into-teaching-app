@@ -1,4 +1,3 @@
-
 select,
 input {
   font-size: $fs-19;
@@ -17,14 +16,6 @@ input {
   }
 }
 
-form .govuk-form-group {
-  select,
-  input {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
 input {
   padding-left: .4em;
   padding-right: .4em;
@@ -37,6 +28,38 @@ form {
     font-size: $fs-19;
     color: $black;
     font-weight: bold;
+  }
+
+  .govuk-form-group {
+    select,
+    input {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  .save-with-confirmation {
+    button {
+      margin-right: 1em;
+      margin-bottom: 1em;
+    }
+
+    span {
+      color: $green;
+      display: none;
+    }
+  }
+
+  [data-cookie-preferences-save-state="saving"] {
+    .fa-sync.fa-spin {
+      display: inline-block;
+    }
+  }
+
+  [data-cookie-preferences-save-state="saved"] {
+    .save-with-confirmation__message {
+      display: inline-block;
+    }
   }
 }
 
@@ -57,31 +80,5 @@ form {
 .govuk-radios__item {
   label {
     font-weight: normal;
-  }
-}
-
-form {
-  .save-with-confirmation {
-    button {
-      margin-right: 1em;
-      margin-bottom: 1em;
-    }
-
-    span {
-      color: $green;
-      display: none;
-    }
-  }
-
-  &[data-cookie-preferences-save-state="saving"] {
-    .fa-sync.fa-spin {
-      display: inline-block;
-    }
-  }
-
-  &[data-cookie-preferences-save-state="saved"] {
-    .save-with-confirmation__message {
-      display: inline-block;
-    }
   }
 }

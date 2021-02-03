@@ -28,7 +28,7 @@
     padding: $indent-amount;
     line-height: 1.2;
     font-weight: bold;
-    color: white;
+    color: $white;
     position: absolute;
     bottom: 30px;
     left: -3px;
@@ -64,9 +64,9 @@
       flex-direction: column;
     }
 
-    /*  This is a bit of a hack to target IE, which has a horrendous bug
-            that prevents it from wrapping text inside hyperlinks. So we
-            needn't wrap, always display the steps in a column format on IE */
+    // This is a bit of a hack to target IE, which has a horrendous bug
+    // that prevents it from wrapping text inside hyperlinks. So we
+    // needn't wrap, always display the steps in a column format on IE */
     @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
       flex-direction: column;
 
@@ -131,7 +131,7 @@
       display: inline-block;
       box-sizing: border-box;
       background-color: $pink;
-      color: white;
+      color: $white;
       font-weight: bold;
       text-align: center;
       line-height: 40px;
@@ -229,6 +229,12 @@
     &__table {
       margin-top: 0;
       margin-bottom: 0;
+
+      &__row {
+        &__cell {
+          padding-left: 20px;
+        }
+      }
     }
 
     &__row {
@@ -239,28 +245,18 @@
         margin-bottom: 10px;
       }
     }
+
+    .git-link {
+      padding-left: 40px;
+      padding-right: $indent-amount;
+      margin-top: $indent-amount;
+    }
   }
 
   .home-quote {
     &__text {
       width: calc(100% - 80px);
       margin: 30px 30px 30px 50px;
-    }
-  }
-
-  .steps {
-    .git-link {
-      padding-left: 40px;
-      padding-right: $indent-amount;
-      margin-top: $indent-amount;
-    }
-
-    &__table {
-      &__row {
-        &__cell {
-          padding-left: 20px;
-        }
-      }
     }
   }
 }

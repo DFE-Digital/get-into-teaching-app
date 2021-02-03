@@ -1,6 +1,10 @@
 .grouped-cards {
-  &__header a[href*="//"] {
-    display: block;
+  &__header {
+    a {
+      [href*="//"] {
+        display: block;
+      }
+    }
 
     &:after {
       display: none;

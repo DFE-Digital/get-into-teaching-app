@@ -1,6 +1,6 @@
 .footer-signup {
   background: $green;
-  color: white;
+  color: $white;
 
   * {
     box-sizing: border-box;
@@ -58,7 +58,7 @@ footer.site-footer {
       display: flex;
 
       &__link {
-        color: white;
+        color: $white;
         display: block;
         margin-right: $indent-amount;
 

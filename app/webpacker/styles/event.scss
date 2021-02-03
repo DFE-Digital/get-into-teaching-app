@@ -10,10 +10,6 @@
     font-size: $fs-26;
   }
 
-  &__information {
-    @extend p;
-  }
-
   &__venue {
     float: left;
     text-align: left;

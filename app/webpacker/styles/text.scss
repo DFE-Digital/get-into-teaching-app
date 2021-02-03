@@ -57,16 +57,13 @@ a {
 
   &:hover {
     color: inherit;
+    text-decoration: underline;
   }
 
   i {
     margin-left: 4px;
     vertical-align: middle;
   }
-}
-
-.git-link:hover {
-  text-decoration: underline;
 }
 
 .telephone-number {

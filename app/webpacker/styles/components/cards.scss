@@ -32,7 +32,7 @@
 
         > span {
           font-size: $fs-24;
-          color: white;
+          color: $white;
           background-color: $pink-dark-90;
           padding: .8em;
           transform: rotate(-3deg);
@@ -57,7 +57,7 @@
       left: -20px;
       display: block;
       background: $blue-dark-90;
-      color: white;
+      color: $white;
       padding: 10px $indent-amount;
       font-weight: bold;
       max-width: calc(100% - 80px);

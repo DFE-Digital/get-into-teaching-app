@@ -35,7 +35,7 @@
   }
 
   a {
-    &[href*="//"] {
+    [href*="//"] {
       &:after {
         content: url('../images/icon-external.svg');
         margin-left: .2em;
@@ -50,7 +50,7 @@
   .call-to-action__action,
   .featured-content__item {
     a {
-      &[href*="//"] {
+      [href*="//"] {
         &:after {
           content: none;
           margin-left: unset;

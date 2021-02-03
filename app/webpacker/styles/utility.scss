@@ -56,6 +56,7 @@ $chevron-direction-map: (
   }
 }
 
+/* stylelint-disable */
 .hide-on-desktop {
   @include mq($from: tablet) {
     display: none !important;
@@ -73,3 +74,4 @@ $chevron-direction-map: (
     display: none !important;
   }
 }
+/* stylelint-enable */

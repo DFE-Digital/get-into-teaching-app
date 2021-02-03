@@ -1,12 +1,12 @@
 .navbar {
   min-height: 112px;
   @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-    /* IE hack - IE can't vertically align flexbox items without a fixed height */
+    // IE hack - IE can't vertically align flexbox items without a fixed height
     height: 112px;
   }
   width: 100%;
   background-color: $white;
-  border-bottom: 1px solid #cccccc;
+  border-bottom: 1px solid $grey-light;
   position: relative;
   display: flex;
   align-items: center;
@@ -31,9 +31,6 @@
 
     li {
       padding: 8px 16px;
-    }
-
-    li {
       @include font;
       font-size: $fs-16;
       font-weight: bold;
@@ -43,9 +40,7 @@
         @include font;
         font-size: $fs-16;
         display: block;
-        text-align: center;
         text-decoration: none;
-        text-align: right;
         font-weight: bold;
         letter-spacing: 0;
         color: #1d1d1b;
@@ -145,12 +140,11 @@
 
       a {
         display: block;
-        text-align: center;
         padding: 2px;
         text-align: right;
         font-weight: bold;
         letter-spacing: 0;
-        color: #1d1d1b;
+        color: $black;
         padding-right: 0;
       }
 
