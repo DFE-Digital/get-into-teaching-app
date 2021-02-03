@@ -1,6 +1,8 @@
 module.exports = {
-  extends: "stylelint-config-gds/scss",
+  extends: 'stylelint-config-gds/scss',
   rules: {
-    'max-nesting-depth': [5]
+    'max-nesting-depth': null,
+    'selector-no-qualifying-type': [true, { ignore: ['class'] }],
+    'selector-max-id': 1,
   },
 };
