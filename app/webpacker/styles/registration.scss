@@ -2,27 +2,27 @@
 .mailing-reg-main {
   margin-bottom: 1em;
 
-  .govuk-checkboxes__item, .govuk-form-group
-  {
-      margin-bottom: 10px;
+  .govuk-checkboxes__item,
+  .govuk-form-group {
+    margin-bottom: 10px;
   }
 
   .govuk-input {
-      margin-left: 0px;
+    margin-left: 0;
   }
 
   h1 {
-      font-size: $fs-42;
-      margin: 0;
-      line-height: 1.25;
+    font-size: $fs-42;
+    margin: 0;
+    line-height: 1.25;
   }
 
   h2 {
-      @include content-heading;
-      margin-bottom: 0;
-      font-size: $fs-28;
-      background: transparent;
-      color: $black;
+    @include content-heading;
+    margin-bottom: 0;
+    font-size: $fs-28;
+    background: transparent;
+    color: $black;
   }
 
   h3 {
@@ -33,16 +33,16 @@
     margin-bottom: 10px;
   }
 
-  .govuk-input, .govuk-select {
-      max-width: 375px;
-      margin-bottom: 15px;
-      margin-left: 0;
+  .govuk-input,
+  .govuk-select {
+    max-width: 375px;
+    margin-bottom: 15px;
+    margin-left: 0;
   }
 
   button.call-to-action-button {
     margin-top: $indent-amount;
   }
-
 }
 
 @include mq($until: tablet) {
@@ -50,17 +50,17 @@
   .mailing-reg-main {
     &__content {
 
+      display: block;
+
+      &__left {
         display: block;
+        margin-right: 40px;
+      }
 
-        &__left {
-            display: block;
-            margin-right: 40px;
-        }
-
-        &__right {
-            display: block;
-            margin-top: 40px;
-        }
+      &__right {
+        display: block;
+        margin-top: 40px;
+      }
     }
   }
 }

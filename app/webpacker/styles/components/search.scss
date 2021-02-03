@@ -1,5 +1,6 @@
 .search {
-  select, input {
+  select,
+  input {
     margin-left: 0;
     margin-right: 0;
     box-sizing: border-box;
@@ -11,7 +12,8 @@
   }
 
   &__field--error {
-    input, select {
+    input,
+    select {
       border-color: $red;
     }
   }

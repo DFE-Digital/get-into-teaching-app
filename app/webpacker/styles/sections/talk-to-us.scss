@@ -1,94 +1,96 @@
 .talk-to-us {
-    text-align: left;
-    background-color: $grey;
-    padding-bottom: 1px;
+  text-align: left;
+  background-color: $grey;
+  padding-bottom: 1px;
 
-    &__inner {
-        position: relative;
-        top: -27px;
+  &__inner {
+    position: relative;
+    top: -27px;
+
+    h2 {
+      @include content-heading;
+    }
+
+    &__label {
+      margin-left: $indent-amount;
+      margin-top: $indent-amount;
+    }
+
+    &__table {
+      width: 100%;
+      display: flex;
+
+      &__column {
+        display: inline-block;
+        box-sizing: border-box;
+        padding-left: $indent-amount;
+        padding-right: $indent-amount;
+        flex: 1;
+        min-width: 245px;
+        vertical-align: top;
 
         h2 {
-          @include content-heading;
+          margin-top: $indent-amount;
+          margin-bottom: 40px;
         }
 
-        &__label {
-            margin-left: $indent-amount;
-            margin-top: $indent-amount;
+        a {
+          text-decoration: none;
         }
 
-        &__table {
-            width: 100%;
-            display: flex;
-            &__column {
-                display: inline-block;
-                box-sizing: border-box;
-                padding-left: $indent-amount;
-                padding-right: $indent-amount;
-                flex: 1;
-                min-width: 245px;
-                vertical-align: top;
-
-                h2 {
-                    margin-top: $indent-amount;
-                    margin-bottom: 40px;
-                }
-
-                a{
-                    text-decoration: none;
-                }
-
-                &__heading {
-                    font-size: $fs-26;
-                    margin: .5em 0;
-                }
-            }
-
-            &__column:first-child {
-                display: none;
-
-                &.visible {
-                    display: inline-block;
-                }
-            }
-
-            &__column:last-child {
-                flex: 1;
-            }
+        &__heading {
+          font-size: $fs-26;
+          margin: .5em 0;
         }
+      }
 
-        &__freephone {
-            padding-left: $indent-amount;
-            padding-top: 10px;
-            padding-right: 10px;
+      &__column:first-child {
+        display: none;
+
+        &.visible {
+          display: inline-block;
         }
+      }
+
+      &__column:last-child {
+        flex: 1;
+      }
     }
+
+    &__freephone {
+      padding-left: $indent-amount;
+      padding-top: 10px;
+      padding-right: 10px;
+    }
+  }
 }
 
 @include mq($until: tablet) {
-    .talk-to-us {
-        &__inner {
-            top: -20px;
-            padding: 0 $indent-amount;
+  .talk-to-us {
+    &__inner {
+      top: -20px;
+      padding: 0 $indent-amount;
 
-            &__label {
-                margin: $indent-amount 0;
-            }
+      &__label {
+        margin: $indent-amount 0;
+      }
 
-            &__table {
-                flex-direction: column;
-                &__column {
-                    display: block;
-                    width: 100%;
-                    padding-bottom: 10px;
-                    padding-left: 0px;
-                    padding-right: 0px;
-                }
-            }
-            &__freephone {
-                padding-left: 0px;
-                padding-right: 0px;
-            }
+      &__table {
+        flex-direction: column;
+
+        &__column {
+          display: block;
+          width: 100%;
+          padding-bottom: 10px;
+          padding-left: 0;
+          padding-right: 0;
         }
+      }
 
+      &__freephone {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
+  }
 }

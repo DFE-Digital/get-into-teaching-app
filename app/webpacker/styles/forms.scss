@@ -1,44 +1,49 @@
 
-select, input {
-    font-size: $fs-19;
-    margin-left: $indent-amount;
-    margin-right: $indent-amount;
-    border: 2px solid $black;
-    background-color: $white;
-    height: 42px;
-    width: 100%;
-    &:focus {
-      outline: 3px solid $yellow;
-      outline-offset: 0;
-      -webkit-box-shadow: inset 0 0 0 2px;
-      box-shadow: inset 0 0 0 2px;
-    }
+select,
+input {
+  font-size: $fs-19;
+  margin-left: $indent-amount;
+  margin-right: $indent-amount;
+  border: 2px solid $black;
+  background-color: $white;
+  height: 42px;
+  width: 100%;
+
+  &:focus {
+    outline: 3px solid $yellow;
+    outline-offset: 0;
+    -webkit-box-shadow: inset 0 0 0 2px;
+    box-shadow: inset 0 0 0 2px;
+  }
 }
 
 form .govuk-form-group {
-  select, input {
+  select,
+  input {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
 input {
-  padding-left: 0.4em ;
-  padding-right: 0.4em ;
+  padding-left: .4em;
+  padding-right: .4em;
 }
 
 form {
-  .fieldlabel, .govuk-label, h3.govuk-fieldset__heading {
-      font-size: $fs-19;
-      color: $black;
-      font-weight: bold;
+  .fieldlabel,
+  .govuk-label,
+  h3.govuk-fieldset__heading {
+    font-size: $fs-19;
+    color: $black;
+    font-weight: bold;
   }
 }
 
-.fieldhelp, .govuk-hint {
-    margin-top: 0;
+.fieldhelp,
+.govuk-hint {
+  margin-top: 0;
 }
-
 
 .field_with_errors {
   display: inline;
@@ -48,7 +53,8 @@ form {
   }
 }
 
-.govuk-checkboxes__item, .govuk-radios__item {
+.govuk-checkboxes__item,
+.govuk-radios__item {
   label {
     font-weight: normal;
   }
@@ -62,20 +68,20 @@ form {
     }
 
     span {
-      color: $green ;
-      display: none ;
+      color: $green;
+      display: none;
     }
   }
 
   &[data-cookie-preferences-save-state="saving"] {
     .fa-sync.fa-spin {
-      display: inline-block ;
+      display: inline-block;
     }
   }
 
   &[data-cookie-preferences-save-state="saved"] {
     .save-with-confirmation__message {
-      display: inline-block ;
+      display: inline-block;
     }
   }
 }

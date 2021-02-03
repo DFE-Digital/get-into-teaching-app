@@ -9,8 +9,9 @@
     flex-direction: row;
     flex-wrap: wrap;
 
-    dt, dd {
-      padding: 0.15em 0;
+    dt,
+    dd {
+      padding: .15em 0;
     }
 
     dt {
@@ -35,7 +36,8 @@
 
   @include mq($until: tablet) {
     dl {
-      dt, dd {
+      dt,
+      dd {
         flex-basis: 100%;
       }
     }

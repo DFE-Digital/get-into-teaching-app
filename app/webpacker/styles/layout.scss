@@ -1,41 +1,39 @@
 %content-width-limiter-shared {
-    max-width: $max-content-width;
-    margin: auto;
+  max-width: $max-content-width;
+  margin: auto;
 }
 
 body {
-    font-family: $git-font-family;
+  font-family: $git-font-family;
 
-    &.govuk-body {
-        margin: 0;
-        padding: 0;
-    }
+  &.govuk-body {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 main,
 .hero {
-    @extend %content-width-limiter-shared;
+  @extend %content-width-limiter-shared;
 }
 
 .limit-content-width {
-    @extend %content-width-limiter-shared;
+  @extend %content-width-limiter-shared;
 }
 
 .visually-hidden {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
-
-
 
 // new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
 
@@ -74,7 +72,6 @@ section.container {
       margin-top: 2em;
     }
   }
-
 
   > aside {
     flex: 0 0 calc(30%);

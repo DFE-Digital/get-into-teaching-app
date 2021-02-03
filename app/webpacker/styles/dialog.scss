@@ -10,129 +10,135 @@
   align-items: center;
 
   &__background {
-      opacity: 0.4;
-      background-color: $black;
-      width: 100%;
-      min-height: 100vh;
-      box-sizing: border-box;
-      padding: $indent-amount;
-      position: absolute;
-      top: 0;
-      left: 0;
+    opacity: .4;
+    background-color: $black;
+    width: 100%;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: $indent-amount;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 
   &__content {
-      width: 100%;
-      max-width: 700px;
-      background-color: $grey;
-      padding: 40px;
-      box-sizing: border-box;
-      position: relative;
-      margin: $indent-amount;
-      overflow: hidden;
+    width: 100%;
+    max-width: 700px;
+    background-color: $grey;
+    padding: 40px;
+    box-sizing: border-box;
+    position: relative;
+    margin: $indent-amount;
+    overflow: hidden;
 
-      .logo__image {
-          display: inline-block;
-          top: 0px;
-          left: -45px;
-          width: 240px;
-          margin-bottom: $indent-amount;
-
-          a {
-              margin-left: 8px;
-
-              &:focus {
-                  &:before {
-                      content: "";
-                      display: block;
-                      background: $yellow;
-                      width: 100%;
-                      height: 100%;
-                      position: absolute;
-                      top: 0;
-                  }
-              }
-          }
-
-          div {
-              margin-left: 48px;
-          }
-      }
-
-      h2, h3 {
-        font-size: $fs-32;
-      }
-
-      h3 {
-          margin-top: 0;
-      }
-
-      h2 {
-          float: right;
-      }
+    .logo__image {
+      display: inline-block;
+      top: 0;
+      left: -45px;
+      width: 240px;
+      margin-bottom: $indent-amount;
 
       a {
-          text-decoration: none;
+        margin-left: 8px;
+
+        &:focus {
+          &:before {
+            content: "";
+            display: block;
+            background: $yellow;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+          }
+        }
       }
 
-      a:hover {
-          text-decoration: underline;
+      div {
+        margin-left: 48px;
       }
+    }
 
-      .secondary-link {
-          @include chevron($color: $blue);
+    h2,
+    h3 {
+      font-size: $fs-32;
+    }
 
-          display: inline-block;
-          cursor: pointer;
-          font-weight: bold;
-          margin-top: $indent-amount;
-          padding: 0 $indent-amount;
-      }
+    h3 {
+      margin-top: 0;
+    }
+
+    h2 {
+      float: right;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .secondary-link {
+      @include chevron($color: $blue);
+
+      display: inline-block;
+      cursor: pointer;
+      font-weight: bold;
+      margin-top: $indent-amount;
+      padding: 0 $indent-amount;
+    }
   }
 }
 
 @include mq($until: tablet) {
   .dialog {
-      &__content {
-          padding: $indent-amount;
-          max-height: calc(100vh - 40px);
-          overflow: auto;
-          &__header {
-              margin-bottom: 25px;
-          }
-          .logo__image {
-              width: 220px;
-              margin-left: $indent-amount;
-              div {
-                  margin-left: 39px;
-                  margin-top: -3px;
+    &__content {
+      padding: $indent-amount;
+      max-height: calc(100vh - 40px);
+      overflow: auto;
 
-              }
-          }
-
-          h2 {
-              display: block;
-              float: none;
-              margin-top: $indent-amount;
-              margin-bottom: -20px;
-              font-size: $fs-24;
-          }
-          p {
-              font-size: $fs-16;
-              line-height: 1.25;
-          }
-          a {
-              font-size: $fs-16;
-              padding: 8px 12px;
-              &.git-link {
-                  margin: 8px 0 0 0;
-                  padding: 0 12px;
-              }
-              &.visually-hidden {
-                  padding: 0;
-              }
-          }
+      &__header {
+        margin-bottom: 25px;
       }
-  }
 
+      .logo__image {
+        width: 220px;
+        margin-left: $indent-amount;
+
+        div {
+          margin-left: 39px;
+          margin-top: -3px;
+        }
+      }
+
+      h2 {
+        display: block;
+        float: none;
+        margin-top: $indent-amount;
+        margin-bottom: -20px;
+        font-size: $fs-24;
+      }
+
+      p {
+        font-size: $fs-16;
+        line-height: 1.25;
+      }
+
+      a {
+        font-size: $fs-16;
+        padding: 8px 12px;
+
+        &.git-link {
+          margin: 8px 0 0;
+          padding: 0 12px;
+        }
+
+        &.visually-hidden {
+          padding: 0;
+        }
+      }
+    }
+  }
 }

@@ -1,351 +1,356 @@
 .navbar {
-    min-height: 112px;
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-         /* IE hack - IE can't vertically align flexbox items without a fixed height */
-         height: 112px;
-    }
-    width: 100%;
-    background-color: $white;
-    border-bottom: 1px solid #CCCCCC;
-    position: relative;
+  min-height: 112px;
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE hack - IE can't vertically align flexbox items without a fixed height */
+    height: 112px;
+  }
+  width: 100%;
+  background-color: $white;
+  border-bottom: 1px solid #cccccc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__desktop {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    box-sizing: border-box;
+    margin-left: 280px;
+    width: 100%;
+    margin-top: 0;
+    margin-right: 20px;
 
-    &__desktop {
-        display: flex;
-        box-sizing: border-box;
-        margin-left: 280px;
-        width: 100%;
-        margin-top: 0px;
-        margin-right: 20px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
 
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: flex-end;
+    li {
+      padding: 8px 16px;
+    }
+
+    li {
+      @include font;
+      font-size: $fs-16;
+      font-weight: bold;
+      line-height: 1;
+
+      a {
+        @include font;
+        font-size: $fs-16;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        text-align: right;
+        font-weight: bold;
+        letter-spacing: 0;
+        color: #1d1d1b;
+        line-height: 1;
+      }
+    }
+
+    $border-width: 2.5px;
+    $padding-space: 2.5px;
+
+    %hover-shared {
+      padding-bottom: 2.5px;
+      margin-bottom: -$border-width - $padding-space;
+    }
+
+    a:hover:not(:focus):not(.active) {
+      @extend %hover-shared;
+      border-bottom: solid $border-width $black;
+    }
+
+    .active a:hover:not(:focus) {
+      @extend %hover-shared;
+      border-bottom: solid $border-width $white;
+    }
+
+    .active {
+      background-color: $blue-dark;
+      color: $white;
+
+      a {
+        color: $white;
+      }
+    }
+
+    &__search {
+      align-self: center;
+
+      img {
+        display: block;
+        width: 50px;
+      }
+    }
+  }
+
+  &__mobile {
+
+    display: none;
+
+    a {
+      text-decoration: none;
+    }
+
+    &__buttons {
+      height: 85px;
+      line-height: 85px;
+      padding-right: 20px;
+      text-align: right;
+
+      a {
+        vertical-align: middle;
+        display: inline-block;
+
+        img {
+          width: 36px;
         }
+      }
+
+      div {
+        display: inline-block;
+        margin-left: .2rem;
+      }
+    }
+
+    .icon-hamburger {
+      color: $black;
+    }
+
+    .icon-close {
+      color: $black;
+    }
+
+    .icon-hamburger-label {
+      color: $black;
+      font-weight: bold;
+      font-size: $fs-16;
+      letter-spacing: 0;
+    }
+
+    &__links {
+      font-size: $fs-16;
+      padding: 1px;
+      background-color: $grey;
+      width: 100%;
+
+      text-align: right;
+      font-weight: bold;
+
+      a {
+        display: block;
+        text-align: center;
+        padding: 2px;
+        text-align: right;
+        font-weight: bold;
+        letter-spacing: 0;
+        color: #1d1d1b;
+        padding-right: 0;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      ul {
+        margin-right: 40px;
+        list-style-type: none;
 
         li {
-            padding: 8px 16px;
+          margin: .2em;
         }
 
-        li {
-          @include font;
-          font-size: $fs-16;
-          font-weight: bold;
-          line-height: 1;
-
-          a {
-            @include font;
-            font-size: $fs-16;
-            display: block;
-            text-align: center;
-            text-decoration: none;
-            text-align: right;
-            font-weight: bold;
-            letter-spacing: 0px;
-            color: #1D1D1B;
-            line-height: 1;
-          }
-        }
-
-        $border-width: 2.5px;
-        $padding-space: 2.5px;
-
-        %hover-shared {
-          padding-bottom: 2.5px;
-          margin-bottom: -$border-width - $padding-space;
-        }
-
-        a:hover:not(:focus):not(.active) {
-          @extend %hover-shared;
-          border-bottom: solid $border-width $black;
-        }
-
-        .active a:hover:not(:focus) {
-          @extend %hover-shared;
-          border-bottom: solid $border-width $white;
-        }
-
-        .active {
-          background-color: $blue-dark;
+        li.active {
+          background-color: $blue;
           color: $white;
-          a {
-            color: $white;
-          }
+          display: inline-block;
+          padding: .2em .3em;
         }
-
-        &__search {
-            align-self: center;
-
-            img {
-                display: block;
-                width: 50px;
-            }
-        }
+      }
     }
 
-    &__mobile {
-
-        display:none;
-
-        a {
-            text-decoration: none;
-        }
-
-        &__buttons {
-            height: 85px;
-            line-height: 85px;
-            padding-right: 20px;
-            text-align: right;
-
-            a {
-              vertical-align: middle;
-              display: inline-block;
-
-              img {
-                width: 36px;
-              }
-            }
-
-            div {
-              display: inline-block;
-              margin-left: 0.2rem;
-            }
-        }
-
-        .icon-hamburger {
-            color: $black;
-        }
-
-        .icon-close {
-            color: $black;
-        }
-
-        .icon-hamburger-label {
-            color: $black;
-            font-weight: bold;
-            font-size: $fs-16;
-            letter-spacing: 0px;
-        }
-
-        &__links {
-            font-size: $fs-16;
-            padding: 1px;
-            background-color: $grey;
-            width: 100%;
-
-            text-align: right;
-            font-weight: bold;
-            a {
-                display: block;
-                text-align: center;
-                padding: 2px;
-                text-align: right;
-                font-weight: bold;
-                letter-spacing: 0px;
-                color: #1D1D1B;
-                padding-right: 0px;
-            }
-
-            a:hover {
-                text-decoration: underline;
-            }
-
-            ul {
-                margin-right: 40px;
-                list-style-type:none;
-
-                li {
-                  margin: .2em;
-                }
-
-                li.active {
-                  background-color: $blue;
-                  color: $white;
-                  display: inline-block;
-                  padding: .2em .3em;
-                }
-            }
-        }
-
-        &__container {
-            margin-right : 10px;
-            margin-top :47px;
-        }
+    &__container {
+      margin-right: 10px;
+      margin-top: 47px;
     }
-
+  }
 }
 
 .logo-wrapper {
   position: absolute;
   z-index: 0;
-  width: 260px ;
+  width: 260px;
   overflow-x: hidden;
   top: 6px;
   padding-bottom: 20px;
 }
 
 .logo {
+  display: block;
+
+  a {
+    text-decoration: none;
     display: block;
 
-    a {
-        text-decoration: none;
+    &:focus {
+      &:before {
+        content: "";
         display: block;
-        &:focus {
-            &:before {
-                content: "";
-                display: block;
-                background: $yellow;
-                width: 100%;
-                height: 100%;
-                position: absolute;
-                top: 0;
-            }
-        }
+        background: $yellow;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+      }
     }
+  }
 
-    &__image {
-        @include rotated-block;
-        background-color: $green-dark-90;
-        width: 258px;
-        height: 116px;
-        position: relative;
-        top: 11px;
-        left:-10px;
-        z-index: 1000;
+  &__image {
+    @include rotated-block;
+    background-color: $green-dark-90;
+    width: 258px;
+    height: 116px;
+    position: relative;
+    top: 11px;
+    left: -10px;
+    z-index: 1000;
 
-
-        img {
-            transform: rotate(3deg);
-            margin-left: 40px;
-            margin-top: 30px;
-            width: 180px;
-            height: 57px;
-            position: relative;
-        }
+    img {
+      transform: rotate(3deg);
+      margin-left: 40px;
+      margin-top: 30px;
+      width: 180px;
+      height: 57px;
+      position: relative;
     }
+  }
 }
 
 .covid {
-    @include font;
+  @include font;
+  font-size: $fs-16;
+  line-height: 1.25;
+  background-color: $black;
+  color: $white;
+  padding-top: $indent-amount;
+  padding-bottom: $indent-amount;
+  padding-left: 35px;
+  padding-right: 35px;
+
+  p {
     font-size: $fs-16;
     line-height: 1.25;
-    background-color: $black;
+    margin: 0 0 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__header {
+    display: block;
+    font-size: $fs-19;
+    font-weight: bold;
+  }
+
+  a {
     color: $white;
-    padding-top: $indent-amount;
-    padding-bottom: $indent-amount;
-    padding-left: 35px;
-    padding-right: 35px;
-    p {
-        font-size: $fs-16;
-        line-height: 1.25;
-        margin: 0 0 10px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    &__header {
-        display: block;
-        font-size: $fs-19;
-        font-weight: bold;
-    }
 
-    a {
-        color: $white;
-        &:hover {
-            text-decoration: none;
-        }
-        &:focus {
-            color: $black;
-        }
-    }
-
-
-}
-
-@include mq($until: 900px) {
-    .logo-wrapper {
-      width: 200px ;
-      top: 0;
-    }
-
-    .logo {
-        &__image {
-
-            width: 196px;
-            height: 87px;
-
-            img {
-                margin-top: $indent-amount;
-                margin-left: 24px;
-                width: 142px;
-                height: 48px;
-            }
-        }
-    }
-
-    .navbar {
-        position: relative;
-        min-height: auto;
-        &__desktop {
-            display: none;
-        }
-    }
-
-    .navbar__mobile {
-        display: block;
-        width: 100%;
-    }
-
-}
-
-.skiplink {
-    position: absolute;
-    left: -9999em;
-    &:focus, &:visited {
-        color: #0b0c0c
+    &:hover {
+      text-decoration: none;
     }
 
     &:focus {
-        left: 0;
-        z-index: 1;
-        outline: 3px solid transparent;
-        color: $black;
-        background-color: $yellow;
-        box-shadow: 0 -2px $yellow, 0 4px $black;
-        text-decoration: none;
+      color: $black;
     }
+  }
+}
+
+@include mq($until: 900px) {
+  .logo-wrapper {
+    width: 200px;
+    top: 0;
+  }
+
+  .logo {
+    &__image {
+
+      width: 196px;
+      height: 87px;
+
+      img {
+        margin-top: $indent-amount;
+        margin-left: 24px;
+        width: 142px;
+        height: 48px;
+      }
+    }
+  }
+
+  .navbar {
+    position: relative;
+    min-height: auto;
+
+    &__desktop {
+      display: none;
+    }
+  }
+
+  .navbar__mobile {
+    display: block;
+    width: 100%;
+  }
+}
+
+.skiplink {
+  position: absolute;
+  left: -9999em;
+
+  &:focus,
+  &:visited {
+    color: #0b0c0c;
+  }
+
+  &:focus {
+    left: 0;
+    z-index: 1;
+    outline: 3px solid transparent;
+    color: $black;
+    background-color: $yellow;
+    box-shadow: 0 -2px $yellow, 0 4px $black;
+    text-decoration: none;
+  }
 }
 
 #skiplink-container {
-    text-align: center;
-    background: #0b0c0c;
-    div {
-        text-align: left;
-        margin: 0 auto;
-        max-width: 1020px
-    }
-    .skiplink {
-        display: -moz-inline-stack;
-        display: inline-block;
-        margin: 0.75em 0 0 30px;
-    }
+  text-align: center;
+  background: #0b0c0c;
+
+  div {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 1020px;
+  }
+
+  .skiplink {
+    display: -moz-inline-stack;
+    display: inline-block;
+    margin: .75em 0 0 30px;
+  }
 }
 
 @include mq($from: wide) {
-    .logo-wrapper {
-        top: -2px;
-    }
+  .logo-wrapper {
+    top: -2px;
+  }
 
-    .navbar__desktop {
-      margin-left: 330px;
-    }
+  .navbar__desktop {
+    margin-left: 330px;
+  }
 }
-
-
-

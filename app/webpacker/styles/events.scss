@@ -14,223 +14,218 @@
 }
 
 .event-content-cta {
-  margin: 70px 0 50px 0;
+  margin: 70px 0 50px;
 }
 
 .search-for-events-results {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 
-    > a {
-        width: 33.333%;
-        margin-bottom: 30px;
-        padding: 0 15px;
-        box-sizing: border-box;
-        text-decoration: none;
-    }
+  > a {
+    width: 33.333%;
+    margin-bottom: 30px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
 
-    .event-box {
-        height: 100%;
-    }
-
+  .event-box {
+    height: 100%;
+  }
 }
 
 .events-featured {
-    background: #F0F0F0;
-    position: relative;
-    padding: $indent-amount;
-    width: 100%;
+  background: #f0f0f0;
+  position: relative;
+  padding: $indent-amount;
+  width: 100%;
+  margin-top: 30px;
+  box-sizing: border-box;
+
+  + .events-featured {
     margin-top: 30px;
-    box-sizing: border-box;
-    + .events-featured {
-        margin-top: 30px;
+  }
+
+  .no-results {
+    width: 66.6%;
+
+    @include mq($until: tablet) {
+      width: 100%;
     }
+  }
 
-    .no-results {
-      width: 66.6%;
+  &--with-logo {
+    margin-top: 90px;
+  }
 
-      @include mq($until: tablet) {
-        width: 100%;
-      }
+  &__heading {
+    > h3 {
+      font-size: $fs-28;
+      margin: 0 0 $indent-amount 0;
+      line-height: 1.25;
     }
+  }
 
-    &--with-logo {
-      margin-top: 90px;
+  &__text {
+    max-width: 70%;
+    margin-bottom: 30px;
+  }
+
+  &__list {
+    padding: 0;
+    @include cards-grid;
+
+    &__item {
+
+      list-style: none;
+      display: flex;
+      text-decoration: none;
     }
+  }
 
-    &__heading {
-      > h3 {
-        font-size: $fs-28;
-        margin: 0 0 $indent-amount 0;
-        line-height: 1.25;
-      }
-    }
+  .call-to-action-button {
+    margin-top: 1.5em;
+    white-space: normal;
+  }
 
-    &__text {
-      max-width: 70%;
-      margin-bottom: 30px;
-    }
-
-    &__list {
-      padding: 0;
-      @include cards-grid;
-
-      &__item {
-
-        list-style: none;
-        display: flex;
-        text-decoration: none;
-      }
-    }
-
-    .call-to-action-button {
-      margin-top: 1.5em;
-      white-space: normal;
-    }
-
-    &__logo {
-      position: absolute;
-      top: 0;
-      left: 100%;
-      transform: translate(-100%, -65%);
-    }
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translate(-100%, -65%);
+  }
 }
 
 .event-pagination {
-    &.content {
-        overflow: inherit;
+  &.content {
+    overflow: inherit;
+  }
+
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    @mixin pagination-item {
+      font-weight: bold;
+      font-size: $fs-16;
+      padding: .8em;
+      text-decoration: none;
+      margin: 1em 0;
     }
 
-    .pagination {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-
-        @mixin pagination-item {
-            font-weight: bold;
-            font-size: $fs-16;
-            padding: 0.8em 0.8em;
-            text-decoration: none;
-            margin: 1em 0;
-        }
-
-        // kaminari selectors
-        * {
-            display: block;
-            line-height: 1;
-        }
-
-        a {
-            @include pagination-item;
-            border: 2px solid $pink-dark;
-            color: $pink-dark;
-        }
-
-        .page {
-            text-align: center;
-            min-width: 0.8em;
-
-            &.current,
-            &.gap {
-                padding: 0.8em 0.6em;
-            }
-
-            &.current {
-                @include pagination-item;
-                background-color: $pink-dark;
-                color: white;
-                border: 2px solid $pink-dark;
-            }
-        }
-
-        .prev {
-            margin-right: 0.2em;
-        }
-
-        .prev + .page,
-        .page + .page {
-            margin-left: 0.2em;
-            margin-right: 0.2em;
-        }
-    }
-}
-
-@include mq($until: tablet) {
-    .event-type-descriptions {
-      padding-bottom: 0px;
+    // kaminari selectors
+    * {
+      display: block;
+      line-height: 1;
     }
 
-    .types-of-event {
-        &__left {
-
-            padding-left: 0px;
-            padding-right: 0px;
-            display: block;
-            width: 100%;
-            margin-right: 40px;
-        }
-
-        &__right {
-            margin: 0;
-            padding: 0;
-            display: block;
-            width: 100%;
-        }
+    a {
+      @include pagination-item;
+      border: 2px solid $pink-dark;
+      color: $pink-dark;
     }
 
-    .search-for-events-results {
+    .page {
+      text-align: center;
+      min-width: .8em;
 
-        > a {
-            width: 50%;
-        }
+      &.current,
+      &.gap {
+        padding: .8em .6em;
+      }
 
-    }
-
-    .events-featured {
-        &__text {
-          max-width: 100%;
-        }
-
-        &--with-logo {
-          margin-top: 60px;
-
-          @include mq($until: tablet) {
-            margin-top: 30px;
-          }
-        }
-
-        &__heading {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-
-        &__logo {
-          position: relative;
-          top: auto;
-          left: auto;
-          transform: scale(0.7);
-          margin-right: -58px;
-        }
-    }
-
-}
-
-@include mq($until: mobile) {
-    .events-featured {
-      &__heading {
-        > h3 {
-          font-size: $fs-24;
-        }
+      &.current {
+        @include pagination-item;
+        background-color: $pink-dark;
+        color: white;
+        border: 2px solid $pink-dark;
       }
     }
 
-    .search-for-events-results {
-
-        > a {
-            width: 100%;
-            padding: 0;
-        }
-
+    .prev {
+      margin-right: .2em;
     }
+
+    .prev + .page,
+    .page + .page {
+      margin-left: .2em;
+      margin-right: .2em;
+    }
+  }
+}
+
+@include mq($until: tablet) {
+  .event-type-descriptions {
+    padding-bottom: 0;
+  }
+
+  .types-of-event {
+    &__left {
+
+      padding-left: 0;
+      padding-right: 0;
+      display: block;
+      width: 100%;
+      margin-right: 40px;
+    }
+
+    &__right {
+      margin: 0;
+      padding: 0;
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .search-for-events-results {
+    > a {
+      width: 50%;
+    }
+  }
+
+  .events-featured {
+    &__text {
+      max-width: 100%;
+    }
+
+    &--with-logo {
+      margin-top: 60px;
+
+      @include mq($until: tablet) {
+        margin-top: 30px;
+      }
+    }
+
+    &__heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__logo {
+      position: relative;
+      top: auto;
+      left: auto;
+      transform: scale(.7);
+      margin-right: -58px;
+    }
+  }
+}
+
+@include mq($until: mobile) {
+  .events-featured {
+    &__heading {
+      > h3 {
+        font-size: $fs-24;
+      }
+    }
+  }
+
+  .search-for-events-results {
+    > a {
+      width: 100%;
+      padding: 0;
+    }
+  }
 }
