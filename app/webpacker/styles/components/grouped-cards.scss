@@ -1,14 +1,18 @@
 .grouped-cards {
-  &__header a[href*="//"] {
-    display: block;
+  &__header {
+    a {
+      [href*="//"] {
+        display: block;
+      }
+    }
 
-    &::after {
+    &:after {
       display: none;
       content: "";
     }
   }
 
   .grouped-cards__fields + .grouped-cards__fields {
-    margin-top: 0.5em ;
+    margin-top: .5em;
   }
 }

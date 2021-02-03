@@ -1,3 +1,5 @@
+// stylelint-disable no-duplicate-selectors
+
 // layout, mobile-first
 $mobile-cutoff: 800px;
 
@@ -86,7 +88,8 @@ $mobile-cutoff: 800px;
     display: grid;
 
     grid-template-columns: 3em repeat(3, 1fr);
-    grid-template-rows: max-content $title-overlap-img repeat(
+    grid-template-rows:
+      max-content $title-overlap-img repeat(
         2,
         minmax(1em, max-content)
       );
@@ -106,7 +109,7 @@ $mobile-cutoff: 800px;
       margin: 0 auto 2em 1.5em;
 
       @include mq($from: tablet) {
-        margin: 1em 2em 0.5em 2em;
+        margin: 1em 2em .5em;
       }
     }
 
@@ -116,7 +119,8 @@ $mobile-cutoff: 800px;
     }
 
     @include mq($from: tablet) {
-      grid-template-columns: repeat(3, minmax(100px, 1fr)) $title-overlap-img repeat(
+      grid-template-columns:
+        repeat(3, minmax(100px, 1fr)) $title-overlap-img repeat(
           4,
           minmax(100px, 1fr)
         );
@@ -164,7 +168,7 @@ $mobile-cutoff: 800px;
 
     h1 {
       background-color: $yellow-dark-90;
-      padding: 0.8em 2em 1.2em;
+      padding: .8em 2em 1.2em;
       margin-left: -1em;
 
       @include mq($from: tablet) {
@@ -250,10 +254,10 @@ $mobile-cutoff: 800px;
     &__button {
       @include button($bg: $white, $fg: $black);
       @include chevron($color: $black);
-      padding: 0.4em 1em;
+      padding: .4em 1em;
 
       @include mq($until: tablet) {
-        padding: 0.2em 0.5em;
+        padding: .2em .5em;
       }
     }
   }

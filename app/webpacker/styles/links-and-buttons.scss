@@ -1,57 +1,58 @@
 @mixin button($bg: $green, $fg: $white) {
-    display: block;
-    font-weight: bold;
-    background-color: $bg;
-    text-decoration: none;
+  display: block;
+  font-weight: bold;
+  background-color: $bg;
+  text-decoration: none;
+  color: $fg;
+  padding: 14px $indent-amount;
+  font-size: $fs-19;
+  white-space: nowrap;
+  border: none;
+
+  &:hover {
+    background: darken($bg, 5%);
     color: $fg;
-    padding: 14px $indent-amount;
-    font-size: $fs-19;
-    white-space: nowrap;
-    border: none;
+  }
 
-    &:hover {
-        background: darken($bg, 5%);
-        color: $fg;
-    }
-
-    &:focus {
-        outline: 3px solid transparent;
-        color: #1D1D1B;
-        background-color: $yellow;
-        box-shadow: 0 -2px $yellow, 0 4px #1D1D1B;
-        z-index: 100;
-    }
+  &:focus {
+    outline: 3px solid transparent;
+    color: #1d1d1b;
+    background-color: $yellow;
+    box-shadow: 0 -2px $yellow, 0 4px #1d1d1b;
+    z-index: 100;
+  }
 }
 
 a {
-    color: $blue-dark;
+  color: $blue-dark;
 
-    &:hover {
-        color: darken($blue-dark, 15%);
-        text-decoration: none;
-    }
+  &:hover {
+    color: darken($blue-dark, 15%);
+    text-decoration: none;
+  }
 }
 
 .call-to-action-button {
-    @include button;
-    @include chevron;
-    display: inline-block;
-    &--white {
-        @include button($bg: $white, $fg: $black);
-        @include chevron($color: $black);
-    }
+  @include button;
+  @include chevron;
+  display: inline-block;
+
+  &--white {
+    @include button($bg: $white, $fg: $black);
+    @include chevron($color: $black);
+  }
 }
 
 .call-to-action-icon-button {
-    @include button;
-    display: inline-block;
+  @include button;
+  display: inline-block;
 }
 
 .secondary-button {
-    width: 100%;
-    @include button($bg: $grey-light, $fg: black);
+  width: 100%;
+  @include button($bg: $grey-light, $fg: black);
 }
 
 .request-button {
-    @include button($bg: $pink);
+  @include button($bg: $pink);
 }

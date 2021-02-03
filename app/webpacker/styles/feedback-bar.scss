@@ -1,75 +1,83 @@
 .feedback-bar {
-    display: none;
+  display: none;
+  justify-content: space-between;
+  width: 100%;
+  text-align: left;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+
+  .container {
+    width: 100%;
+  }
+
+  &__inner {
+    box-sizing: border-box;
+    background-color: $white;
+    padding: $indent-amount;
+    border: 1px solid $grey;
+    border-width: 1px 1px 0;
+    width: 100%;
+    display: flex;
     justify-content: space-between;
-    width:100%;
-    text-align: left;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
-    .container {
-        width: 100%;
-    }
-    &__inner {
-      box-sizing: border-box;
-        background-color: white;
-        padding: $indent-amount;
-        border: 1px solid $grey;
-        border-width: 1px 1px 0 1px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-    }
-    &__left {
-        display: flex;
-        align-items: flex-start;
-        padding-right: $indent-amount;
-        line-height: 1.2;
+  }
+
+  &__left {
+    display: flex;
+    align-items: flex-start;
+    padding-right: $indent-amount;
+    line-height: 1.2;
+  }
+
+  &__description {
+    padding-top: 8px;
+  }
+
+  &__label {
+    background: $blue;
+    color: $white;
+    font-weight: bold;
+    display: inline-block;
+    padding: 8px $indent-amount;
+    margin-right: $indent-amount;
+  }
+
+  a {
+    color: $blue-dark;
+    white-space: nowrap;
+
+    &:hover {
+      text-decoration: none;
     }
 
-    &__description {
-        padding-top: 8px;
+    &:focus {
+      color: $black;
     }
-    &__label {
-        background: $blue;
-        color: white;
-        font-weight: bold;
-        display: inline-block;
-        padding: 8px $indent-amount;
-        margin-right: $indent-amount;
-    }
-    a {
-        color: $blue-dark;
-        white-space: nowrap;
-        &:hover {
-            text-decoration: none;
-        }
-        &:focus {
-            color: $black;
-        }
-    }
+  }
 
-    &__close {
-        padding-top: 8px;
-    }
+  &__close {
+    padding-top: 8px;
+  }
 }
 
 .hero + .content > .feedback-bar {
-    margin-top: 0;
+  margin-top: 0;
 }
 
 @include mq($until: tablet) {
-    .feedback-bar {
-        section.container {
-          margin: 0;
-        }
-
-        &__left {
-            flex-direction: column;
-            margin-top: -38px;
-        }
-        &__close {
-            padding-top: 5px;
-        }
+  .feedback-bar {
+    .container {
+      margin: 0;
     }
+
+    &__left {
+      flex-direction: column;
+      margin-top: -38px;
+    }
+
+    &__close {
+      padding-top: 5px;
+    }
+  }
 }

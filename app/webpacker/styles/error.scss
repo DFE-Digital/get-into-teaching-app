@@ -1,20 +1,20 @@
 .error-page {
-    p:first-child {
-        margin: 0;
-        padding: 0;
-    }
+  p:first-child {
+    margin: 0;
+    padding: 0;
+  }
 
-    h1 {
-        margin-top: 0px;
-        font-size: $fs-42;
-        font-weight: 900;
-    }
+  h1 {
+    margin-top: 0;
+    font-size: $fs-42;
+    font-weight: 900;
+  }
 
-    a {
-        color: $blue;
-    }
+  a {
+    color: $blue;
+  }
 
-    a:hover {
-        text-decoration: none;
-    }
+  a:hover {
+    text-decoration: none;
+  }
 }

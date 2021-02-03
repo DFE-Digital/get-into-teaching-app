@@ -35,10 +35,10 @@
   }
 
   a {
-    &[href*="//"] {
-      &::after {
+    [href*="//"] {
+      &:after {
         content: url('../images/icon-external.svg');
-        margin-left: 0.2em;
+        margin-left: .2em;
         display: inline-block;
         background-repeat: no-repeat;
       }
@@ -50,8 +50,8 @@
   .call-to-action__action,
   .featured-content__item {
     a {
-      &[href*="//"] {
-        &::after {
+      [href*="//"] {
+        &:after {
           content: none;
           margin-left: unset;
         }
@@ -93,7 +93,7 @@
       margin: 1em $indent-amount 2em;
 
       tr {
-        margin: 0.5em auto;
+        margin: .5em auto;
 
         > th {
           padding-bottom: 1em;

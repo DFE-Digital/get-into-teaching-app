@@ -4,38 +4,38 @@
 // degredation back to IE10.
 // Older browsers will just get a list.
 @mixin cards-grid($columns: 3, $gap: 1em) {
-    // fall back to flexbox if there's no
-    // css grid support
-    display: flex;
-    flex-wrap: wrap;
+  // fall back to flexbox if there's no
+  // css grid support
+  display: flex;
+  flex-wrap: wrap;
+
+  @supports (display: grid) {
+    display: grid;
+    align-items: stretch;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-gap: $gap;
+  }
+
+  > * {
+    flex: 1;
+    flex-basis: ((100% / $columns) - 2%);
+    flex-grow: inherit;
+    margin-right: 1em;
+    margin-bottom: 1em;
 
     @supports (display: grid) {
-        display: grid;
-        align-items: stretch;
-        grid-template-columns: repeat($columns, 1fr);
-        grid-gap: $gap;
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 0;
     }
+  }
+
+  @include mq($until: tablet) {
+    grid-template-columns: none;
 
     > * {
-        flex: 1;
-        flex-basis: ((100% / $columns) - 2%);
-        flex-grow: inherit;
-        margin-right: 1em;
-        margin-bottom: 1em;
-
-        @supports (display: grid) {
-          width: 100%;
-          margin-right: 0;
-          margin-bottom: 0;
-        }
+      flex: 1;
+      flex-basis: auto;
     }
-
-    @include mq($until: tablet) {
-        grid-template-columns: none;
-
-        > * {
-          flex: 1;
-          flex-basis: auto;
-        }
-    }
+  }
 }

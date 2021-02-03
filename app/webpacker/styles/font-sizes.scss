@@ -1,13 +1,11 @@
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
 
-/*
- * Numbers refer to pixel size when the base font
- * size of the broswer is 16px (most broswers)
- */
+// Numbers refer to pixel size when the base font
+// size of the broswer is 16px (most broswers)
 
-$fs-15: 0.93rem;
+$fs-15: .93rem;
 $fs-16: 1rem;
 $fs-19: 1.1875rem;
 $fs-22: 1.375rem;

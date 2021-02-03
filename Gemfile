@@ -59,7 +59,6 @@ group :development, :test do
 
   # GOV.UK interpretation of rubocop for linting Ruby
   gem "rubocop-govuk"
-  gem "scss_lint-govuk"
 
   # Static security scanner
   gem "brakeman", require: false

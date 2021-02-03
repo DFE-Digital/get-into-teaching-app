@@ -31,7 +31,6 @@
   flex-direction: column;
 
   @include mq($from: tablet) {
-    border-bottom: inherit;
     flex-direction: row;
     border-bottom: 2em solid $purple;
   }
@@ -69,103 +68,101 @@
 }
 
 .content-wrapper {
-    overflow: auto;
+  overflow: auto;
 }
 
 .story {
-    h1 {
-        font-size: $fs-40;
+  h1 {
+    font-size: $fs-40;
+  }
+
+  .story__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @include mq($until: mobile) {
+      flex-direction: column;
+      align-items: flex-start;
     }
 
-    .story__header {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
+    &__thumb {
+      object-fit: cover;
+    }
+
+    &__label {
+      h2 {
+        font-size: $fs-26;
+        border-bottom: none;
+        padding: 0 $indent-amount;
+        margin: 0;
+        color: $black;
+        background: transparent;
 
         @include mq($until: mobile) {
-          flex-direction: column;
-          align-items: flex-start;
+          padding: 0;
+          margin-top: $indent-amount;
         }
+      }
+    }
+  }
 
-        &__thumb {
-            object-fit: cover;
-        }
+  > p:first-of-type {
+    font-weight: bold;
+  }
 
-        &__label {
+  blockquote {
+    margin: 0 25px 0 0;
+    background-color: $yellow;
+    float: left;
+    max-width: 340px;
+    position: relative;
 
-            h2 {
-                font-size: $fs-26;
-                border-bottom: none;
-                padding: 0 $indent-amount;
-                margin: 0;
-                color: $black;
-                background: transparent;
+    $quote-size: 17px;
 
-                @include mq($until: mobile) {
-                  padding: 0;
-                  margin-top: $indent-amount;
-                }
-            }
-        }
+    p {
+      padding: 15px 44px;
+      font-weight: bold;
+      font-size: $fs-22;
+
+      @mixin quote-icon {
+        @include icon;
+        background-image: url('../images/white-quote.svg');
+        width: $quote-size;
+        height: $quote-size;
+        fill: $white;
+        content: "";
+      }
+
+      &:before {
+        @include quote-icon;
+        position: absolute;
+        left: $fs-19;
+      }
+
+      &:after {
+        @include quote-icon;
+        position: inline;
+        transform: rotate(180deg);
+        margin-left: 7px;
+      }
     }
 
-    > p:first-of-type {
-        font-weight: bold;
+    @include mq($until: mobile) {
+      display: block;
+      width: 100%;
+      min-width: 100%;
+      float: none;
+      margin: 2em 0;
     }
+  }
 
-    blockquote {
-        margin: 0 25px 0 0;
-        background-color: $yellow;
-        float: left;
-        max-width: 340px;
-        position: relative;
-
-        $quote-size: 17px;
-
-        p {
-            padding: 15px 44px;
-            font-weight: bold;
-            font-size: $fs-22;
-
-            @mixin quote-icon {
-                @include icon;
-                background-image: url('../images/white-quote.svg');
-                width: $quote-size;
-                height: $quote-size;
-                fill: $white;
-                content: "";
-            }
-
-            &::before {
-                @include quote-icon;
-                position: absolute;
-                left: $fs-19;
-            }
-
-            &::after {
-                @include quote-icon;
-                position: inline;
-                transform: rotate(180deg);
-                margin-left: 7px;
-            }
-        }
-
-        @include mq($until: mobile) {
-            display: block;
-            width: 100%;
-            min-width: 100%;
-            float: none;
-            margin: 2em 0;
-        }
-    }
-
-    &__video {
-        margin-bottom: 1.5em;
-        width: 100%;
-        height: 350px;
-    }
+  &__video {
+    margin-bottom: 1.5em;
+    width: 100%;
+    height: 350px;
+  }
 }
-
 
 .stories {
   grid-gap: 1em;
@@ -222,17 +219,17 @@
 }
 
 @include mq($until: tablet) {
-    .stories {
-        &__thumbs {
-            flex-wrap: wrap;
-            margin-bottom: $indent-amount;
-            margin-right: 0;
-            padding: 0;
-            &__thumb {
-                width: 100%;
-                margin-right: 0;
-            }
+  .stories {
+    &__thumbs {
+      flex-wrap: wrap;
+      margin-bottom: $indent-amount;
+      margin-right: 0;
+      padding: 0;
 
-        }
+      &__thumb {
+        width: 100%;
+        margin-right: 0;
+      }
     }
+  }
 }

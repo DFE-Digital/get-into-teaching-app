@@ -1,94 +1,97 @@
 .event-box {
-    box-sizing: border-box;
-    padding: $indent-amount;
-    display: inline-block;
-    overflow: hidden;
-    text-align: left;
-    margin: 0;
-    border: 2px solid $white;
+  box-sizing: border-box;
+  padding: $indent-amount;
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  margin: 0;
+  border: 2px solid $white;
+  width: 100%;
+  color: $black;
+  background-color: $white;
+
+  a:hover & {
+    border: 2px solid $black;
+  }
+
+  a:focus & {
+    outline: 3px solid $yellow;
+    outline-offset: 0;
+    -webkit-box-shadow: inset 0 0 0 2px;
+    box-shadow: inset 0 0 0 2px;
+  }
+
+  &__header {
     width: 100%;
-    color: $black;
-    background-color: $white;
-    a:hover &{
-      border: 2px solid $black;
+    overflow: hidden;
+
+    h4 {
+      line-height: 1.3em;
+      margin: 0 0 .4em;
+
+      a:hover &,
+      a:focus,
+      a:active {
+        text-decoration: underline;
+      }
     }
+  }
 
-    a:focus & {
-        outline: 3px solid $yellow;
-        outline-offset: 0;
-        -webkit-box-shadow: inset 0 0 0 2px;
-        box-shadow: inset 0 0 0 2px;
+  &__content {
+    @include mq($until: mobile) {
+      display: none;
     }
+  }
 
+  &__datetime {
+    margin-bottom: 4px;
+    font-size: $fs-15;
 
-    &__header {
-        width: 100%;
-        overflow: hidden;
-
-        h4 {
-            line-height: 1.3em;
-            margin: 0 0 0.4em 0;
-            a:hover &, a:focus, a:active {
-                text-decoration: underline;
-            }
-        }
+    span {
+      word-break: break-word;
     }
+  }
 
-    &__content {
-        @include mq($until: mobile) {
-            display: none;
-        }
+  &__divider {
+    border: none;
+    height: 8px;
+    background-color: $blue;
+    margin: 6px 0;
+  }
+
+  &__divider--train-to-teach-event {
+    background-color: $purple;
+  }
+
+  &__content p {
+    font-size: $fs-16;
+    margin-bottom: 0;
+  }
+
+  &__footer {
+    display: table;
+    border-spacing: 0 16px;
+
+    .event-box__footer {
+      &__item {
+        display: table-row;
+      }
+
+      &__icon-wrapper,
+      &__meta {
+        display: table-cell;
+        vertical-align: middle;
+      }
+
+      &__icon-wrapper {
+        text-align: center;
+      }
+
+      &__meta {
+        padding-left: .8em;
+        font-size: smaller;
+        font-weight: 800;
+      }
     }
-
-    &__datetime {
-        margin-bottom: 4px;
-        font-size: $fs-15;
-
-        span {
-          word-break: break-word;
-        }
-    }
-
-    &__divider {
-      border: none;
-      height: 8px;
-      background-color: $blue;
-      margin: 6px 0px;
-    }
-
-    &__divider--train-to-teach-event {
-        background-color: $purple;
-    }
-
-    &__content p {
-      font-size: $fs-16;
-      margin-bottom: 0;
-    }
-
-    &__footer {
-        display: table;
-        border-spacing: 0 16px;
-
-        .event-box__footer {
-            &__item {
-              display: table-row;
-            }
-
-            &__icon-wrapper,
-            &__meta {
-              display: table-cell;
-              vertical-align: middle;
-            }
-
-            &__icon-wrapper {
-              text-align: center;
-            }
-
-            &__meta {
-                padding-left: 0.8em;
-                font-size: smaller;
-                font-weight: 800;
-            }
-        }
-    }
+  }
 }

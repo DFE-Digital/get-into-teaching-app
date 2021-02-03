@@ -1,11 +1,11 @@
 @charset 'UTF-8';
 
-@import './git.scss';
+@import './git';
 
 $govuk-font-family: $git-font-family;
 
 @import "~govuk-frontend/govuk/all";
-@import './govuk-reset.scss';
+@import './govuk-reset';
 
 @import './components/map';
 

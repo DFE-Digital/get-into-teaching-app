@@ -1,80 +1,78 @@
-$git-font-family: Sans-serif;
+$git-font-family: sans-serif;
 
 @mixin font {
-    font-family: $git-font-family;
-    font-style: normal;
+  font-family: $git-font-family;
+  font-style: normal;
 }
 
 h1 {
-    @include font;
-    font-size: $fs-32;
+  @include font;
+  font-size: $fs-32;
 }
 
 h2 {
-    @include font;
-    font-size: $fs-19;
-    line-height: 1.25;
+  @include font;
+  font-size: $fs-19;
+  line-height: 1.25;
 }
 
 h3 {
-    @include font;
-    font-size: $fs-19;
-    font-weight: bold;
+  @include font;
+  font-size: $fs-19;
+  font-weight: bold;
 }
 
 h4 {
-    @include font;
-    font-size: $fs-19;
+  @include font;
+  font-size: $fs-19;
 }
 
 p {
-    @include font;
-    font-size: $fs-19;
-    line-height: 1.5;
+  @include font;
+  font-size: $fs-19;
+  line-height: 1.5;
 }
 
 a {
-    @include font;
+  @include font;
+  color: $black;
+  line-height: 1.5;
+
+  &:focus {
+    outline: 3px solid transparent;
     color: $black;
-    line-height: 1.5;
-    &:focus {
-        outline: 3px solid transparent;
-        color: $black;
-        background-color: $yellow;
-        box-shadow: 0 -2px $yellow, 0 4px $black;
-        text-decoration: none;
-    }
+    background-color: $yellow;
+    box-shadow: 0 -2px $yellow, 0 4px $black;
+    text-decoration: none;
+  }
 }
 
 .git-link {
-    @include font;
-    font-weight: bold;
-    font-size: $fs-19;
-    color: $black;
-    text-decoration: none;
-    display: inline-block;
+  @include font;
+  font-weight: bold;
+  font-size: $fs-19;
+  color: $black;
+  text-decoration: none;
+  display: inline-block;
 
-    &:hover {
-        color: inherit;
-    }
-
-    i {
-        margin-left: 4px;
-        vertical-align: middle;
-    }
-}
-
-.git-link:hover {
+  &:hover {
+    color: inherit;
     text-decoration: underline;
+  }
+
+  i {
+    margin-left: 4px;
+    vertical-align: middle;
+  }
 }
 
 .telephone-number {
-    @include font;
-    color: $blue;
-    text-decoration: underline;
-    font-weight: bold;
+  @include font;
+  color: $blue;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .telephone-number:hover {
-    text-decoration: none;
+  text-decoration: none;
 }

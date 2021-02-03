@@ -89,10 +89,6 @@ It's best to lint just your app directories and not those belonging to the frame
 
 ```bash
 bundle exec rubocop app config db lib spec Gemfile --format clang -a
-
-or
-
-bundle exec scss-lint app/webpacker/styles
 ```
 
 You can automatically run the Ruby linter on commit for any changed files with 
@@ -104,6 +100,8 @@ if [ "x$SKIPLINT" == "x" ]; then
     exec bundle exec rubocop $(git diff --cached --name-only --diff-filter=ACM | egrep '\.rb|\.feature|\.rake' | grep -v 'db/schema.rb') Gemfile
 fi
 ```
+
+### JavaScript
 
 [Prettier](https://prettier.io/) is used for code formatting.
 To enforce stylistic rules with Prettier (note: this overwrites the file), run:
@@ -118,6 +116,20 @@ To check a file:
 
 ```js
 yarn eslint <path to your file>
+```
+
+### CSS
+
+[StyleLint](https://stylelint.io/) is for CSS linting, it uses the [GDS Stylelint Config](https://github.com/alphagov/stylelint-config-gds).
+
+To lint the `./app/webpacker/styles` directory:
+
+```js
+# Run StyleLint
+yarn scss-lint
+
+# Automatically fix, where possible, violations reported by rules
+yarn scss-lint --fix
 ```
 
 ## Configuration
