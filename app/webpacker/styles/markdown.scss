@@ -78,4 +78,39 @@
       font-size: $fs-16;
     }
   }
+
+  &.disclaimer {
+    p,
+    ul,
+    ol {
+      @include mq($from: tablet) {
+        width: 65%;
+      }
+    }
+
+    table {
+      font-size: smaller;
+      margin: 1em $indent-amount 2em;
+
+      tr {
+        margin: 0.5em auto;
+
+        > th {
+          padding-bottom: 1em;
+        }
+
+        td {
+          border-top: 1px solid $grey;
+          padding: .5em;
+
+          // used to display cookie names
+          > code {
+            @include mq($until: tablet) {
+              overflow-wrap: anywhere;
+            }
+          }
+        }
+      }
+    }
+  }
 }

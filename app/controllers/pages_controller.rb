@@ -26,7 +26,7 @@ class PagesController < ApplicationController
   end
 
   def cookies
-    render template: "pages/cookies"
+    render template: "pages/cookies", layout: "disclaimer"
   end
 
   def show
