@@ -61,7 +61,7 @@
 
     h2,
     h3 {
-      font-size: $fs-32;
+      font-size: $fs-36;
     }
 
     h3 {
@@ -118,16 +118,15 @@
         float: none;
         margin-top: $indent-amount;
         margin-bottom: -20px;
-        font-size: $fs-24;
+        font-size: $fs-36;
       }
 
       p {
-        font-size: $fs-16;
         line-height: 1.25;
       }
 
       a {
-        font-size: $fs-16;
+        font-size: $fs-19;
         padding: 8px 12px;
 
         .git-link {

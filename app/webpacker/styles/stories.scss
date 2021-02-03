@@ -15,7 +15,7 @@
 
   &__header {
     h2 {
-      font-size: $fs-32;
+      font-size: $fs-36;
     }
   }
 
@@ -73,7 +73,7 @@
 
 .story {
   h1 {
-    font-size: $fs-40;
+    font-size: $fs-42;
   }
 
   .story__header {
@@ -92,7 +92,7 @@
 
     &__label {
       h2 {
-        font-size: $fs-26;
+        font-size: $fs-36;
         border-bottom: none;
         padding: 0 $indent-amount;
         margin: 0;
@@ -123,7 +123,6 @@
     p {
       padding: 15px 44px;
       font-weight: bold;
-      font-size: $fs-22;
 
       @mixin quote-icon {
         @include icon;
@@ -206,7 +205,10 @@
       > p {
         padding: 0 .6em;
         margin: 0;
-        font-size: $fs-16;
+
+        @include mq($until: desktop) {
+          font-size: $fs-16;
+        }
       }
     }
 

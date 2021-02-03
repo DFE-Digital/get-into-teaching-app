@@ -214,14 +214,6 @@
 }
 
 @include mq($until: mobile) {
-  .events-featured {
-    &__heading {
-      > h3 {
-        font-size: $fs-24;
-      }
-    }
-  }
-
   .search-for-events-results {
     > a {
       width: 100%;
