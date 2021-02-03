@@ -1,4 +1,5 @@
-.markdown {
+.markdown,
+.text-content {
   @mixin overhang { margin-left: auto; margin-right: auto; }
 
   > * {
