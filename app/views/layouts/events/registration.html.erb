@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
+    <div id="skiplink-container">
+      <div>
+        <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+      </div>
+    </div>
+
+    <%= render "sections/header" %>
+
+    <main class="semantic" role="main" id="main-content">
+      <section class="feature registration container">
+        <%= yield %>
+        <%= render "sections/page_helpful" unless @hide_page_helpful_question %>
+      </section>
+    </main>
+
+    <%= render "sections/footer" %>
+    <%= render "sections/cookie-acceptance" %>
+    <%= render "sections/feedback-bar" %>
+    <%= render "components/videoplayer" %>
+  <% end %>
+</html>

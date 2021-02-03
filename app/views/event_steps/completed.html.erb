@@ -1,35 +1,33 @@
 <% @skip_hero = @hide_page_helpful_question = true %>
 
-<h2 class="green">Sign up complete</h2>
-
-<section class="event-reg-main" role="main" id="main-content">
+<section class="text-content">
+  <h2 class="green">Sign up complete</h2>
   <h3>You are signed up for the following event:</h3>
 
   <b><%= @event.name %></b>
   <p><%= format_event_date @event, stacked: false %></p>
 
   <%- if params[:subscribed].to_s == "1" -%>
-  <h3>You've also signed up for email updates</h3>
-  <p>
-      You're ready to receive email updates to help you get
-      into teaching.
-  </p>
+    <h3>You've also signed up for email updates</h3>
+
+    <p>You're ready to receive email updates to help you get into teaching.</p>
   <%- end -%>
 
   <h3>What happens next?</h3>
   <p>
-      You will receive a confirmation email with details of the event. If there is an issue with the event we will contact you via phone.
+    You will receive a confirmation email with details of the event. If there
+    is an issue with the event we will contact you via phone.
   </p>
 
   <span data-controller="pinterest"
-      data-pinterest-action="track"
-      data-pinterest-event="custom"></span>
+        data-pinterest-action="track"
+        data-pinterest-event="custom"></span>
 
   <span data-controller="snapchat"
-      data-pinterest-action="track"
-      data-pinterest-event="INVITE"></span>
+        data-pinterest-action="track"
+        data-pinterest-event="INVITE"></span>
 
   <span data-controller="facebook"
-      data-pinterest-action="track"
-      data-pinterest-event="Event_Registrations"></span>
+        data-pinterest-action="track"
+        data-pinterest-event="Event_Registrations"></span>
 </section>

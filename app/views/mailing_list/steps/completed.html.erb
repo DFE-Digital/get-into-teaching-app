@@ -1,48 +1,51 @@
 <% @skip_hero = @hide_page_helpful_question = true %>
 
-<h2 class="green">You've signed up</h2>
+<section class="text-content">
+  <h2 class="green">You've signed up</h2>
 
-<section class="mailing-reg-main">
-    <p>You’re ready to receive email updates to help you get into teaching.</p>
+  <p>You’re ready to receive email updates to help you get into teaching.</p>
 
-    <h3>What happens next?</h2>
+  <h3>What happens next?</h3>
 
-    <p>
-      You’ll receive an email to the address you gave us when you signed up.
-      You can unsubscribe if you change your mind. To find out how we
-      handle your personal data, you can read our <%= link_to("privacy policy", privacy_policy_path) %>.
-    </p>
+  <p>
+    You’ll receive an email to the address you gave us when you signed up.
+    You can unsubscribe if you change your mind. To find out how we
+    handle your personal data, you can read our <%= link_to("privacy policy", privacy_policy_path) %>.
+  </p>
 
-    <h3>Want to speak to us?</h2>
+  <h3>Want to speak to us?</h3>
 
-    <p>
-      If you’d prefer, you can call us about teaching or teacher training on Freephone <a href="tel:08003892501" class="telephone-number" aria-label="Telephone">0800 389 2501</a>, Monday-Friday between 8.30am and 5pm.
-    </p>
-    <p>
-      You can also use this number to update or amend any of your details.
-    </p>
+  <p>
+    If you’d prefer, you can call us about teaching or teacher training on
+    Freephone <a href="tel:08003892501" class="telephone-number"
+    aria-label="Telephone">0800 389 2501</a>, Monday-Friday between 8.30am and
+    5pm.
+  </p>
 
-    <span data-controller="pinterest"
+  <p>
+    You can also use this number to update or amend any of your details.
+  </p>
+
+  <span data-controller="pinterest"
         data-pinterest-action="track"
         data-pinterest-event="lead"
         data-pinterest-event-data='{"lead-type" : "Newsletter"}'></span>
 
-    <span data-controller="snapchat"
+  <span data-controller="snapchat"
         data-snapchat-action="track"
         data-snapchat-event="SUBSCRIBE"></span>
 
-    <span data-controller="facebook"
+  <span data-controller="facebook"
         data-facebook-action="trackCustom"
         data-facebook-event="Newsletter_Subscribers"></span>
 
-    <span data-controller="bam" data-bam-action="track"></span>
+  <span data-controller="bam" data-bam-action="track"></span>
 
-    <span data-controller="lid" data-lid-action="track" data-lid-event="MailingList"></span>
+  <span data-controller="lid" data-lid-action="track" data-lid-event="MailingList"></span>
 </section>
 
 <% content_for(:feature) do %>
-    <div class="explore">
-        <%= render "content/home/featured_content" %>
-    </div>
+  <div class="explore">
+    <%= render "content/home/featured_content" %>
+  </div>
 <% end %>
-
