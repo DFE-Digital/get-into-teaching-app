@@ -42,9 +42,8 @@
     ]
   },
   "scripts": {
-    "spec": "jest"
-  },
-  "stylelint": {
-    "extends": "stylelint-config-gds/scss"
+    "spec": "jest",
+    "scss-lint": "npx stylelint app/webpacker/styles",
+    "scss-lint --fix": "npx stylelint app/webpacker/styles"
   }
 }
