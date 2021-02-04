@@ -48,6 +48,6 @@ jobs:
             --fail \
             --request POST \
             --url 'https://api.trello.com/1/cards/${{ steps.trello-id.outputs.id }}/actions/comments' \
-            --data-urlencode "key=${{ steps.azSecret.outputs.TRELLO_KEY }}" \
-            --data-urlencode "token=${{ steps.azSecret.outputs.TRELLO_TOKEN }}" \
+            --data-urlencode "key=${{ steps.azSecret.outputs.TRELLO-KEY }}" \
+            --data-urlencode "token=${{ steps.azSecret.outputs.TRELLO-TOKEN }}" \
             --data-urlencode "text=${{ steps.pr-url.outputs.url }}"
