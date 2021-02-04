@@ -66,13 +66,19 @@
   }
 
   table {
-    border-spacing: 0 .5em;
+    $table-spacing: .5em;
+    border-spacing: 0 $table-spacing;
     margin: 1em $indent-amount 2em;
     width: 90%;
     border-color: $grey;
 
-    thead > tr > th {
-      text-align: left;
+    thead > tr {
+      > th {
+        text-align: left;
+        padding-bottom: $table-spacing;
+        margin-bottom: $table-spacing;
+        border-bottom: 1px solid $grey-light;
+      }
     }
 
     tbody {
@@ -101,7 +107,7 @@
         }
 
         td {
-          border-top: 1px solid $grey;
+          border-bottom: 1px solid $grey;
           padding: .5em;
 
           // used to display cookie names
