@@ -157,10 +157,7 @@ jobs:
 
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@master
-<<<<<<< HEAD
-=======
 
->>>>>>> 8a886bfbddcbe688ae398db6d9a5cb99fdaa1308
       - name: Set short sha
         id: sha
         run: echo ::set-output name=short::$(echo "${{ github.sha }}" | cut -c -7)
@@ -202,13 +199,7 @@ jobs:
           git config user.name "GiT Workflow Bot"
           git config user.email "<>"
           git add Dockerfile
-<<<<<<< HEAD
-          git commit -m "Updated base image to ${{ steps.sha.outputs.short}}
-
-          ${{ steps.docker-image.outputs.image }}"
-=======
           git commit -F ../commit.msg
->>>>>>> 8a886bfbddcbe688ae398db6d9a5cb99fdaa1308
 
       - name: Slack Notification
         if: failure()
