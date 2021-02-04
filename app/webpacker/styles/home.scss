@@ -258,6 +258,10 @@
       width: calc(100% - 80px);
       margin: 30px 30px 30px 50px;
     }
+
+    &__quote {
+      font-size: size("small");
+    }
   }
 }
 
