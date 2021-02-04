@@ -120,7 +120,7 @@ yarn eslint <path to your file>
 
 ### CSS
 
-[StyleLint](https://stylelint.io/) is for CSS linting, it uses the [GDS Stylelint Config](https://github.com/alphagov/stylelint-config-gds).
+[StyleLint](https://stylelint.io/) is used for CSS linting, it uses the [GDS Stylelint Config](https://github.com/alphagov/stylelint-config-gds).
 
 To lint the `./app/webpacker/styles` directory:
 

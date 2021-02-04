@@ -43,7 +43,6 @@
   },
   "scripts": {
     "spec": "jest",
-    "scss-lint": "npx stylelint app/webpacker/styles",
-    "scss-lint --fix": "npx stylelint app/webpacker/styles"
+    "scss-lint": "npx stylelint app/webpacker/styles"
   }
 }
