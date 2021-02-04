@@ -10,6 +10,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'SLACK-WEBHOOK'
+
       - name: Build the Docker image
         run: docker build . --file Dockerfile --tag localbuild/testimage:latest
 
@@ -31,11 +44,9 @@ jobs:
         if: failure()
         uses: rtCamp/action-slack-notify@master
         env:
-           SLACK_CHANNEL: getintoteaching_tech
-           SLACK_COLOR: '#3278BD'
-           SLACK_ICON: https://github.com/rtCamp.png?size=48
+           SLACK_COLOR: ${{ env.SLACK_ERROR}}
            SLACK_MESSAGE: 'The Application CVE Workflow has failed'
            SLACK_TITLE: 'Application CVE Workflow failure'
-           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+           SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
 
 

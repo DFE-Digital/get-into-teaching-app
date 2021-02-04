@@ -4,6 +4,6 @@
   SLACK_USERNAME:        GiT Workflows
   SLACK_FOOTER:          Get Into Teaching Application
   DOCKERHUB_REPOSITORY:  dfedigital/get-into-teaching-web
+  CONTENT_REPOSITORY:    DFE-Digital/get-into-teaching-content
   DOMAIN:                london.cloudapps.digital
-  APPLICATION:           Get Into Teaching Application (code)
-  
+  APPLICATION:           Get Into Teaching Application

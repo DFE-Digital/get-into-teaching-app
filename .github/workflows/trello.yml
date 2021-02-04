@@ -9,6 +9,17 @@ jobs:
     name: Link Trello card to this PR
     runs-on: ubuntu-latest
     steps:
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'TRELLO-KEY, TRELLO-TOKEN'
+
       - name: Extract Pull Request url
         id: pr-url
         run: |
@@ -37,6 +48,6 @@ jobs:
             --fail \
             --request POST \
             --url 'https://api.trello.com/1/cards/${{ steps.trello-id.outputs.id }}/actions/comments' \
-            --data-urlencode "key=${{ secrets.TRELLO_KEY }}" \
-            --data-urlencode "token=${{ secrets.TRELLO_TOKEN }}" \
+            --data-urlencode "key=${{ steps.azSecret.outputs.TRELLO_KEY }}" \
+            --data-urlencode "token=${{ steps.azSecret.outputs.TRELLO_TOKEN }}" \
             --data-urlencode "text=${{ steps.pr-url.outputs.url }}"
