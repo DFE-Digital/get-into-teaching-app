@@ -63,7 +63,7 @@ footer.site-footer {
         margin-right: $indent-amount;
 
         .icon {
-          font-size: $fs-32;
+          font-size: size("large");
         }
 
         &:hover {
@@ -76,7 +76,7 @@ footer.site-footer {
       text-align: right;
       vertical-align: top;
       color: $grey-mid;
-      font-size: $fs-16;
+      font-size: size("xsmall");
       letter-spacing: 0;
       display: flex;
       justify-content: flex-end;
@@ -143,7 +143,7 @@ footer.site-footer {
       text-align: right;
       vertical-align: top;
       color: $grey-mid;
-      font-size: $fs-16;
+      font-size: size("xsmall");
       letter-spacing: 0;
       padding-left: 40px;
       display: flex;
@@ -267,7 +267,7 @@ footer.site-footer {
         padding-left: 0;
 
         &__license {
-          font-size: $fs-16;
+          font-size: size("xsmall");
           padding-right: 30px;
           padding-top: 20px;
 

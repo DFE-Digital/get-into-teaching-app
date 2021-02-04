@@ -1,11 +1,11 @@
 .type-description {
   h5 {
     margin: 10px 0;
-    font-size: $fs-16;
+    font-size: size("xsmall");
   }
 
   p {
-    font-size: $fs-16;
+    font-size: size("xsmall");
     margin-top: 0;
   }
 }
@@ -18,7 +18,7 @@
   display: block;
   text-decoration: none;
   font-weight: bold;
-  font-size: $fs-16;
+  font-size: size("xsmall");
 
   &:hover {
     text-decoration: underline;
