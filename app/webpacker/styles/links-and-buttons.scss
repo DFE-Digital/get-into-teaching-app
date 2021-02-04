@@ -49,8 +49,8 @@ a {
 }
 
 .secondary-button {
-  width: 100%;
   @include button($bg: $grey-light, $fg: black);
+  display: inline-block;
 }
 
 .request-button {
