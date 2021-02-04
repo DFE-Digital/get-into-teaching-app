@@ -100,7 +100,7 @@
 .cards-with-headers {
   h2 {
     padding: 0 $indent-amount $indent-amount;
-    font-size: $fs-36;
+    font-size: size("large");
   }
 
   .card {

@@ -4,11 +4,11 @@
     margin: auto $indent-amount;
 
     h1 {
-      font-size: $fs-42;
+      font-size: size("xlarge");
     }
 
     h2 {
-      font-size: $fs-28;
+      font-size: size("medium");
     }
   }
 }

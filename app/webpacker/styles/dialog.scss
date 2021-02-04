@@ -61,7 +61,7 @@
 
     h2,
     h3 {
-      font-size: $fs-36;
+      font-size: size("large");
     }
 
     h3 {
@@ -118,7 +118,7 @@
         float: none;
         margin-top: $indent-amount;
         margin-bottom: -20px;
-        font-size: $fs-36;
+        font-size: size("large");
       }
 
       p {
@@ -126,7 +126,7 @@
       }
 
       a {
-        font-size: $fs-19;
+        font-size: size("small");
         padding: 8px 12px;
 
         .git-link {

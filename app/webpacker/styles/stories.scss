@@ -15,7 +15,7 @@
 
   &__header {
     h2 {
-      font-size: $fs-36;
+      font-size: size("large");
     }
   }
 
@@ -57,11 +57,11 @@
     }
 
     h2 {
-      font-size: $fs-28;
+      font-size: size("medium");
     }
 
     .stories-feature__subheading {
-      font-size: $fs-19;
+      font-size: size("small");
       font-weight: bold;
     }
   }
@@ -73,7 +73,7 @@
 
 .story {
   h1 {
-    font-size: $fs-42;
+    font-size: size("xlarge");
   }
 
   .story__header {
@@ -92,7 +92,7 @@
 
     &__label {
       h2 {
-        font-size: $fs-36;
+        font-size: size("large");
         border-bottom: none;
         padding: 0 $indent-amount;
         margin: 0;
@@ -136,7 +136,7 @@
       &:before {
         @include quote-icon;
         position: absolute;
-        left: $fs-19;
+        left: size("small");
       }
 
       &:after {
@@ -207,7 +207,7 @@
         margin: 0;
 
         @include mq($until: desktop) {
-          font-size: $fs-16;
+          font-size: size("xsmall");
         }
       }
     }

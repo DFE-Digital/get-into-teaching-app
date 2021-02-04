@@ -176,7 +176,7 @@ $mobile-cutoff: 800px;
       }
 
       > span {
-        font-size: $fs-36;
+        font-size: size("large");
         border-bottom: 3px solid $black;
 
         &:after {
@@ -184,7 +184,7 @@ $mobile-cutoff: 800px;
         }
 
         @include mq($from: tablet) {
-          font-size: $fs-54;
+          font-size: size("xxlarge");
           border-bottom: 5px solid $black;
         }
       }
@@ -193,11 +193,11 @@ $mobile-cutoff: 800px;
 
   &__subtitle {
     div {
-      font-size: $fs-19;
+      font-size: size("small");
       font-weight: 700;
 
       @include mq($from: tablet) {
-        font-size: $fs-28;
+        font-size: size("medium");
         font-weight: 700;
       }
     }

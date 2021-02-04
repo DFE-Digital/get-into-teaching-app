@@ -37,7 +37,7 @@
   }
 
   .call-to-action__heading {
-    font-size: $fs-28;
+    font-size: size("medium");
     font-weight: bold;
     margin-bottom: 1em;
   }
@@ -99,7 +99,7 @@
       align-items: center;
 
       .call-to-action__heading {
-        font-size: $fs-19;
+        font-size: size("small");
         margin: 0 .5em;
       }
     }

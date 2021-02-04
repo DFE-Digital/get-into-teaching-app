@@ -110,7 +110,7 @@
     font-weight: bold;
     word-break: break-all;
     text-decoration: none;
-    font-size: $fs-16;
+    font-size: size("xsmall");
     padding: .5em;
 
     &:hover {
@@ -192,7 +192,7 @@
   &__quote {
     margin: 0 0 $indent-amount;
     font-weight: bold;
-    font-size: $fs-28;
+    font-size: size("medium");
     line-height: 1.25;
     display: block;
 

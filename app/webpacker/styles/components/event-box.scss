@@ -45,7 +45,7 @@
 
   &__datetime {
     margin-bottom: 4px;
-    font-size: $fs-16;
+    font-size: size("xsmall");
 
     span {
       word-break: break-word;
@@ -64,7 +64,7 @@
   }
 
   &__content p {
-    font-size: $fs-16;
+    font-size: size("xsmall");
     margin-bottom: 0;
   }
 
@@ -89,7 +89,7 @@
 
       &__meta {
         padding-left: .8em;
-        font-size: $fs-16;
+        font-size: size("xsmall");
         font-weight: 800;
       }
     }

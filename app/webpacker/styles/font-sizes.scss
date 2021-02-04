@@ -11,3 +11,19 @@ $fs-28: 1.75rem;
 $fs-36: 2.25rem;
 $fs-42: 2.625rem;
 $fs-54: 3.375rem;
+
+$sizes: (
+  "xsmall": $fs-16,
+  "small": $fs-19,
+  "medium": $fs-28,
+  "large": $fs-36,
+  "xlarge" : $fs-42,
+  "xxlarge": $fs-54
+);
+
+@function size($size) {
+  @if not map-has-key($sizes, $size) {
+    @error "Unknown font size `#{$size}`";
+  }
+  @return map-get($sizes, $size);
+}
