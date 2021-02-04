@@ -179,4 +179,22 @@ describe EventsController do
       it { is_expected.to have_http_status :not_found }
     end
   end
+
+  describe "redirects" do
+    {
+      "/events/category/some-event-category" => "/event-categories/some-event-category",
+      "/event_categories/some-event-category" => "/event-categories/some-event-category",
+
+      "/events/category/some-event-category/archive" => "/event-categories/some-event-category/archive",
+      "/event_categories/some-event-category/archive" => "/event-categories/some-event-category/archive",
+    }.each do |from, to|
+      describe from do
+        subject { get(from) }
+
+        specify "redirects to #{to}" do
+          expect(subject).to redirect_to(to)
+        end
+      end
+    end
+  end
 end

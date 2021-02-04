@@ -41,15 +41,17 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :event_categories, only: %i[show] do
+  resources :event_categories, only: %i[show], path: "event-categories" do
     member do
       get "archive", to: "event_categories#show_archive"
     end
   end
   # The event category pages used to exist here - once we're sure no traffic is
   # coming to these paths we can safely remove these redirects.
-  get "events/category/:id/", to: redirect("/event_categories/%{id}/")
-  get "events/category/:id/archive", to: redirect("/event_categories/%{id}/archive")
+  get "events/category/:id/", to: redirect("/event-categories/%{id}")
+  get "events/category/:id/archive", to: redirect("/event-categories/%{id}/archive")
+  get "event_categories/:id", to: redirect("/event-categories/%{id}")
+  get "event_categories/:id/archive", to: redirect("/event-categories/%{id}/archive")
 
   namespace :mailing_list, path: "/mailinglist" do
     resources :steps,
