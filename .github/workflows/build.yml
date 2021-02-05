@@ -158,9 +158,6 @@ jobs:
            keyvault: ${{ secrets.KEY_VAULT}}
            secrets: 'SLACK-WEBHOOK, ACTIONS-API-ACCESS-TOKEN'
 
-      - name: Lint Dockerfile
-        uses: brpaz/hadolint-action@master
-
       - name: Set short sha
         id: sha
         run: echo ::set-output name=short::$(echo "${{ github.sha }}" | cut -c -7)
