@@ -1,278 +1,60 @@
-.cta-links {
-  display: flex;
-  margin-bottom: 30px;
+main.home {
+  // the homepage is 100px wider than the regular
+  // max width so we can make things overhang if
+  // neccessary
+  $homepage-max-width: $content-max-width + 100px;
+  outline: 1px solid $red;
+
+  max-width: $homepage-max-width;
+  outline: 1px dashed $blue;
+
+  section {
+    margin-top: 0;
+    width: $content-max-width;
+  }
+
+  section + section {
+    margin-top: 2em;
+  }
+
+  .homepage-feature {
+    &.steps-to-become-a-teacher {
+      width: 100%;
+    }
+  }
 }
 
-.cta-link {
-  width: 50%;
-  padding: 0 $indent-amount;
-  height: 290px;
-  display: block;
-  margin-bottom: 30px;
+.homepage-feature {
+  outline: 1px dashed pink;
+  margin: 0 auto;
 
-  &__img {
+  &.steps-to-become-a-teacher {
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-    overflow: hidden;
-  }
+    display: grid;
 
-  &__label {
-    @include rotated-block;
-    @include chevron;
+    grid-template-columns: 50px auto 50px;
 
-    background: $green-dark-90;
-    display: inline-block;
-    padding: $indent-amount;
-    line-height: 1.2;
-    font-weight: bold;
-    color: $white;
-    position: absolute;
-    bottom: 30px;
-    left: -3px;
-    text-align: left;
-    max-width: 75%;
-  }
+    .purple-box {
+      background-color: $purple;
+      grid-area: 1 / 2 / 2 / 3;
 
-  &:hover {
-    .cta-link__label {
-      background: $green;
+      h2 {
+        display: inline-block;
+        color: black;
+        background-color: white;
+        padding: .4em;
+      }
     }
   }
 
-  &:focus {
-    background-color: transparent;
-    box-shadow: none;
-
-    .cta-link__label {
-      outline: 3px solid transparent;
-      color: $black;
-      background-color: $yellow;
-      box-shadow: 0 -2px $yellow, 0 4px $black;
-      text-decoration: none;
-    }
-  }
-}
-
-.steps {
-  &__wrapper {
+  &__content {
     display: flex;
 
-    @include mq($until: tablet) {
-      flex-direction: column;
+    * {
+      flex: 1;
+      border: 1px dashed fuchsia;
+      padding: 1em;
+      margin: .5em;
     }
-
-    // This is a bit of a hack to target IE, which has a horrendous bug
-    // that prevents it from wrapping text inside hyperlinks. So we
-    // needn't wrap, always display the steps in a column format on IE */
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-      flex-direction: column;
-
-      > * {
-        padding: .5em 0;
-      }
-    }
-  }
-
-  &__step {
-    display: flex;
-    align-items: center;
-    min-width: 20%;
-
-    @include mq($until: tablet) {
-      flex-direction: row;
-      justify-content: flex-start;
-      margin: .5em 0;
-      align-items: center;
-    }
-
-    @include mq($from: tablet, $until: desktop) {
-      flex-direction: column;
-      align-items: baseline;
-    }
-
-    @include mq($from: desktop) {
-      align-items: baseline;
-      padding-right: .5em;
-
-      .steps__link {
-        padding-top: 0;
-      }
-    }
-  }
-
-  &__link {
-    @include chevron($color: $black);
-
-    color: $black;
-    font-weight: bold;
-    word-break: break-all;
-    text-decoration: none;
-    font-size: size("xsmall");
-    padding: .5em;
-
-    &:hover {
-      color: $black;
-      text-decoration: underline;
-    }
-
-    @include mq($until: tablet) {
-      margin-left: .5em;
-      font-size: inherit;
-    }
-  }
-
-  &__number {
-    @include rotated-block;
-
-    span {
-      display: inline-block;
-      box-sizing: border-box;
-      background-color: $pink;
-      color: $white;
-      font-weight: bold;
-      text-align: center;
-      line-height: 40px;
-      width: 40px;
-      height: 40px;
-    }
-  }
-}
-
-.featured-content {
-  margin-top: 45px;
-}
-
-@function img-left($view-width) {
-  @return calc( ((1000px / 3) * 2) + ((#{$view-width} - 934px) / 2));
-}
-
-.home-quote-img,
-.home-find-event-img {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  background-size: cover;
-  // Width calculated to be a third of the content column plus half of the viewport
-  left: img-left(100vw);
-  width: calc((1000px / 3) + ((100vw - 1066px) / 2));
-  max-width: 720px;
-  background-position: 50% 15%;
-
-  @include mq($from: wide) {
-    left: auto;
-    right: 0;
-  }
-
-  @include mq($until: tablet) {
-    position: static;
-    width: 100%;
-    height: 300px;
-  }
-}
-
-.home-find-event-img {
-  background-image: url('../images/home-events.jpg');
-}
-
-.home-inset-content {
-  margin: 0 $indent-amount;
-}
-
-.home-quote {
-  &__text {
-    width: 60%;
-    margin-left: 50px;
-    text-align: left;
-    position: relative;
-  }
-
-  &__quote {
-    margin: 0 0 $indent-amount;
-    font-weight: bold;
-    font-size: size("medium");
-    line-height: 1.25;
-    display: block;
-
-    &:before {
-      position: absolute;
-      top: 4px;
-      left: -30px;
-      width: 22px;
-      height: 21px;
-      background-image: url('../images/white-quote.svg');
-      content: "";
-      display: block;
-    }
-
-    &:after {
-      display: inline-block;
-      position: relative;
-      transform: rotate(-180deg);
-      width: 22px;
-      height: 21px;
-      background-image: url('../images/white-quote.svg');
-      content: "";
-      margin-left: 8px;
-    }
-  }
-
-  &__citation {
-    font-weight: bold;
-  }
-}
-
-@include mq($until: tablet) {
-  .steps {
-    &__table {
-      margin-top: 0;
-      margin-bottom: 0;
-
-      &__row {
-        &__cell {
-          padding-left: 20px;
-        }
-      }
-    }
-
-    &__row {
-      &__cell {
-        display: block;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-    }
-
-    .git-link {
-      padding-left: 40px;
-      padding-right: $indent-amount;
-      margin-top: $indent-amount;
-    }
-  }
-
-  .home-quote {
-    &__text {
-      width: calc(100% - 80px);
-      margin: 30px 30px 30px 50px;
-    }
-
-    &__quote {
-      font-size: size("small");
-    }
-  }
-}
-
-@include mq($until: tablet) {
-  .cta-links {
-    flex-direction: column;
-  }
-
-  .cta-link {
-    width: 100%;
-    padding: 0;
-    height: 290px;
   }
 }
