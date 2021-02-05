@@ -147,7 +147,9 @@ jobs:
     if: github.ref == 'refs/heads/master'
     needs: build
     steps:
-       
+      - name: Check out the repo
+        uses: actions/checkout@v2
+        
       - uses: Azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
