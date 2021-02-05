@@ -1,3 +1,4 @@
+
 name: Run CVE scanner 
 on:
   workflow_dispatch:
@@ -13,40 +14,28 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+      - name: Install Cloud Foundry
+        run: |
+          wget -q -O - https://packages.cloudfoundry.org/debian/cli.cloudfoundry.org.key | sudo apt-key add -
+          echo "deb https://packages.cloudfoundry.org/debian stable main" | sudo tee /etc/apt/sources.list.d/cloudfoundry-cli.list
+          sudo apt-get update
+          sudo apt-get install cf7-cli  
+          
+      - name: Login to Cloud Foundry
+        run: cf login -a api.london.cloud.service.gov.uk -u ${{secrets.GOVUKPAAS_USERNAME}} -p ${{secrets.GOVUKPAAS_PASSWORD}} -s get-into-teaching-monitoring
+             
+      - name: Push App
+        run: cf push STEVE --docker-image alpine --no-start
+      
+      - name: Set Env
+        run: |
+            cf set-env STEVE BUILD_CONTENT_TOKEN '${{secrets.BUILD_CONTENT_TOKEN}}'
 
-      - uses: Azure/get-keyvault-secrets@v1
-        id:   azSecret
-        with:
-           keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'SLACK-WEBHOOK'
-
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag localbuild/testimage:latest
-
-      - name: Scan image
-        uses: anchore/scan-action@v2
-        with:
-             image:  localbuild/testimage:latest
-             fail-build: true
-             severity-cutoff: high
-             acs-report-enable: true
-
-      - name: upload Anchore scan SARIF report
-        if: always()
-        uses: github/codeql-action/upload-sarif@v1
-        with:
-          sarif_file: results.sarif
-
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{ env.SLACK_ERROR}}
-           SLACK_MESSAGE: 'The Application CVE Workflow has failed'
-           SLACK_TITLE: 'Application CVE Workflow failure'
-           SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
+      
+      - name: Give me 2 minutes
+        run:  sleep 120
+        
+      - name: Drop Image
+        run:  cf delete STEVE -r -f
 
 
