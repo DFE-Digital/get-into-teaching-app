@@ -24,13 +24,10 @@ jobs:
       - name: Login to Cloud Foundry
         run: cf login -a api.london.cloud.service.gov.uk -u ${{secrets.GOVUKPAAS_USERNAME}} -p ${{secrets.GOVUKPAAS_PASSWORD}} -s get-into-teaching-monitoring
              
-      - name: Push App
-        run: cf push STEVE --docker-image alpine --no-start
       
       - name: Set Env
         run: |
             cf set-env STEVE BUILD_CONTENT_TOKEN '${{secrets.BUILD_CONTENT_TOKEN}}'
-
       
       - name: Give me 2 minutes
         run:  sleep 120
