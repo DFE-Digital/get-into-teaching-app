@@ -4,6 +4,17 @@ on:
     types: [assigned, opened, synchronize, reopened]
   push:
     branches: [ master ]
+env:
+  CONTENT_REPOSITORY: DFE-Digital/get-into-teaching-content
+  SLACK_FAILURE:         '#ff0000'
+  SLACK_SUCCESS:         '#00ff00'
+  SLACK_ICON:            https://raw.githubusercontent.com/DFE-Digital/get-into-teaching-api/master/.github/image.png?size=48
+  SLACK_USERNAME:        GiT Workflows
+  SLACK_FOOTER:          Get Into Teaching Application
+  DOCKERHUB_REPOSITORY:  dfedigital/get-into-teaching-web
+  DOMAIN:                london.cloudapps.digital
+  APPLICATION:           Get Into Teaching Application (code)
+
 jobs:
   build:
     name: Build and Deploy
@@ -11,9 +22,6 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
 
       - uses: Azure/login@v1
         with:
@@ -139,12 +147,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     needs: build
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-
+       
       - uses: Azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
