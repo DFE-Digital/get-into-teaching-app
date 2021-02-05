@@ -4,12 +4,11 @@ module Sections
 
     def initialize(front_matter)
       front_matter.with_indifferent_access.tap do |fm|
-        @title             = fm["title"]
-        @subtitle          = fm["subtitle"]
-        @subtitle_link     = fm["subtitle_link"]
-        @image             = fm["image"]
-        @mobile_image      = fm["mobileimage"]
-        @show_mailing_list = fm["mailinglist"]
+        @title         = fm["title"]
+        @subtitle      = fm["subtitle"]
+        @subtitle_link = fm["subtitle_link"]
+        @image         = fm["image"]
+        @mobile_image  = fm["mobileimage"]
       end
     end
 

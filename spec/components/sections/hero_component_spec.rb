@@ -4,7 +4,6 @@ describe Sections::HeroComponent, type: "component" do
   let(:front_matter) do
     {
       title: "Teaching, it's pretty awesome",
-      mailinglist: true,
       fullwidth: true,
       hide_page_helpful_question: true,
       subtitle: "Teach all the subjects!",
@@ -68,21 +67,6 @@ describe Sections::HeroComponent, type: "component" do
           img_tag = page.find("img.hero__img")
 
           expect(img_tag[:srcset].split(",").map { |img| img.split.last }).to match_array(%w[600w 800w])
-        end
-      end
-    end
-
-    describe "mailing list cta" do
-      context "when mailinglist: true" do
-        let(:component) { described_class.new(front_matter.merge(deepheader: true)) }
-
-        specify "renders a mailing list strip beneath the header" do
-          expect(page).to have_css(".hero__mailing-strip")
-        end
-
-        specify "the mailing list strip contains text and a button" do
-          expect(page).to have_css(".hero__mailing-strip__text", text: /Get personalised information and updates about getting into teaching/)
-          expect(page).to have_css(".hero__mailing-strip__cta > a.hero__mailing-strip__cta__button", text: /Sign up here/)
         end
       end
     end
