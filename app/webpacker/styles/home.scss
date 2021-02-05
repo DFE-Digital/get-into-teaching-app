@@ -1,20 +1,16 @@
+$px-either-side-of-content: 15px;
+$px-above-content: 10px;
+
 main.home {
-  // the homepage is 100px wider than the regular
-  // max width so we can make things overhang if
-  // neccessary
-  $homepage-max-width: $content-max-width + 100px;
-  outline: 1px solid $red;
+  // the homepage is a few px wider than the regular max width so we can
+  // make things overhang if neccessary
+  $homepage-max-width: $content-max-width + (2 * $px-either-side-of-content);
 
   max-width: $homepage-max-width;
-  outline: 1px dashed $blue;
 
   section {
-    margin-top: 0;
-    width: $content-max-width;
-  }
-
-  section + section {
     margin-top: 2em;
+    width: $content-max-width;
   }
 
   .homepage-feature {
@@ -25,36 +21,148 @@ main.home {
 }
 
 .homepage-feature {
-  outline: 1px dashed pink;
   margin: 0 auto;
 
   &.steps-to-become-a-teacher {
     width: 100%;
+  }
+
+  &.blocks {
+    display: flex;
+    gap: 1em;
+
+    > * {
+      flex: 1;
+    }
+  }
+}
+
+.steps-to-become-a-teacher {
+  background: $purple;
+  color: $white;
+
+  &__purple-box {
+    display: none;
+  }
+
+  // general styles (grid fallback)
+  &__heading {
+    @include rotated-block;
+    font-size: size('medium');
+    display: inline-block;
+    color: $black;
+    background-color: $white;
+
+    padding: .4em .4em .4em 1.4em;
+    margin: 1em 0 0 -.4em;
+    line-height: 2em;
+    max-width: 80%;
+  }
+
+  &__text {
+    color: $white;
+    padding: 1em 1.5em 0;
+  }
+
+  &__cta {
+    display: inline-block;
+    padding: 1.5em;
+
+    > a {
+      @include button;
+      @include chevron;
+      white-space: inherit;
+    }
+  }
+
+  @mixin background-image($size: 85%, $align: center, $image: "desktop") {
+    $background-images: (
+      "desktop": "../images/steps-graphic.svg",
+      "mobile": "../images/steps-graphic-mob.svg"
+    );
+
+    background: $align / $size no-repeat url(#{map-get($background-images, $image)});
+  }
+
+  // grid-specifics. We're using a grid here so that we can allow part of the SVG
+  // to 'overhang' the edge. This would be possible by just nudging the SVG right
+  // using some margin-left but then we'd need to make further steps to guess
+  // when to change the layout so it's not hanging off the edge of the screen.
+  // dimensions: (rows × columns)
+  //   desktop:   4    × 6
+  //    tablet:   3    × 3
+  //    mobile:   5    × 1
+  @supports (display: grid) {
     display: grid;
+    grid-template-columns: $px-either-side-of-content repeat(4, 1fr) $px-either-side-of-content;
+    grid-template-rows: repeat(3, 1fr);
 
-    grid-template-columns: 50px auto 50px;
+    padding: inherit;
+    background-color: inherit;
 
-    .purple-box {
+    &__purple-box {
+      display: block;
       background-color: $purple;
-      grid-area: 1 / 2 / 2 / 3;
+      grid-area: 1 / 2 / 4 / 6;
+    }
 
-      h2 {
-        display: inline-block;
-        color: black;
-        background-color: white;
-        padding: .4em;
+    &__heading {
+      grid-area: 1 / 2 / 2 / 4;
+      align-self: center;
+    }
+
+    &__text { grid-area: 2 / 2 / 3 / 4; }
+
+    &__graphic {
+      grid-area: 1 / 4 / 4 / 7;
+      @include background-image($align: right, $image: "desktop");
+    }
+
+    &__cta {
+      grid-area: 3 / 2 / 3 / 4;
+      align-self: center;
+
+      padding: 0 1em;
+
+      a {
+        @include button;
+        @include chevron;
+        white-space: inherit;
       }
     }
   }
 
-  &__content {
-    display: flex;
+  @include mq($until: tablet) {
+    // stop overhanging when the screen is this narrow
+    width: 100%;
+    grid-template-columns: 60% repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
-    * {
-      flex: 1;
-      border: 1px dashed fuchsia;
-      padding: 1em;
-      margin: .5em;
+    &__purple-box { grid-area: 1 / 1 / 4 / 4; }
+    &__heading { grid-area: 1 / 1 / 2 / 2; }
+    &__text { grid-area: 2 / 1 / 3 / 2; }
+    &__cta { grid-area: 3 / 1 / 4 / 2; }
+
+    &__graphic {
+      grid-area: 1 / 2 / 4 / 4;
+      @include background-image($image: "mobile");
+    }
+  }
+
+  @include mq($until: mobile) {
+    grid-template-columns: auto;
+    grid-template-rows: $px-above-content repeat(5, 1fr);
+
+    &__purple-box { grid-area: 2 / 1 / 6 / 2; }
+    &__heading { grid-area: 3 / 1 / 4 / 2; }
+    &__text { grid-area: 4 / 1 / 5 / 2; }
+    &__cta { grid-area: 5 / 1 / 6 / 2; }
+
+    &__graphic {
+      grid-area: 1 / 1 / 3 / 2;
+      @include background-image($image: "mobile");
+      background-size: contain;
+      background-position: center;
     }
   }
 }
