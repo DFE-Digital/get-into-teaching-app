@@ -201,6 +201,11 @@ jobs:
           git add Dockerfile
           git commit -F ../commit.msg
 
+      - name: Push the commit
+        run: |-
+          cd content
+          git push origin master
+          
       - name: Slack Notification
         if: failure()
         uses: rtCamp/action-slack-notify@master
