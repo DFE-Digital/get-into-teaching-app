@@ -29,6 +29,8 @@ main.home {
 
   &.blocks {
     display: flex;
+    width: auto;
+    margin: 1em $px-either-side-of-content;
     gap: 1em;
 
     > * {
@@ -151,7 +153,7 @@ main.home {
 
   @include mq($until: mobile) {
     grid-template-columns: auto;
-    grid-template-rows: $px-above-content repeat(5, 1fr);
+    grid-template-rows: $px-above-content repeat(4, 1fr);
 
     &__purple-box { grid-area: 2 / 1 / 6 / 2; }
     &__heading { grid-area: 3 / 1 / 4 / 2; }
@@ -164,5 +166,40 @@ main.home {
       background-size: contain;
       background-position: center;
     }
+  }
+}
+
+.blocks {
+  @include mq($until: tablet) {
+    flex-direction: column;
+    margin: 1em;
+  }
+
+  width: auto;
+
+  &__directory {
+    border: 2px solid $purple;
+    padding: 1em;
+
+    h3 {
+      font-size: size('small');
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li > a {
+        font-size: size('xsmall');
+        color: $black;
+        line-height: 1.8em;
+        text-underline-offset: .2em;
+      }
+    }
+  }
+
+  &__icon {
+    // placeholders for now
+    font-size: size('xlarge');
   }
 }
