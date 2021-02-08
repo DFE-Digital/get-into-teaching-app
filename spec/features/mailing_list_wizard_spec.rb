@@ -137,7 +137,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       addressPostcode: "TE57 1NG",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:get_pre_filled_mailing_list_add_member).with("123456", anything) { response }
+      receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything) { response }
 
     visit mailing_list_steps_path
 
@@ -191,9 +191,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:get_pre_filled_mailing_list_add_member).with("654321", anything).and_raise(GetIntoTeachingApiClient::ApiError)
+      receive(:exchange_access_token_for_mailing_list_add_member).with("654321", anything).and_raise(GetIntoTeachingApiClient::ApiError)
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:get_pre_filled_mailing_list_add_member).with("123456", anything).and_return(response)
+      receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
 
     visit mailing_list_steps_path
 
@@ -224,7 +224,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       alreadySubscribedToMailingList: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:get_pre_filled_mailing_list_add_member).with("123456", anything).and_return(response)
+      receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
 
     visit mailing_list_steps_path
 
@@ -248,7 +248,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       alreadySubscribedToTeacherTrainingAdviser: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:get_pre_filled_mailing_list_add_member).with("123456", anything).and_return(response)
+      receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
 
     visit mailing_list_steps_path
 
@@ -272,7 +272,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       alreadySubscribedToMailingList: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:get_pre_filled_mailing_list_add_member).with("123456", anything).and_return(response)
+      receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
 
     visit mailing_list_steps_path
 

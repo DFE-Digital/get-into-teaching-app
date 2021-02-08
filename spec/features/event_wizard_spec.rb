@@ -96,7 +96,7 @@ RSpec.feature "Event wizard", type: :feature do
       telephone: "1234567890",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:get_pre_filled_teaching_event_add_attendee).with("123456", anything).and_return(response)
+      receive(:exchange_access_token_for_teaching_event_add_attendee).with("123456", anything).and_return(response)
 
     visit event_steps_path(event_id: event_readable_id)
 
@@ -141,9 +141,9 @@ RSpec.feature "Event wizard", type: :feature do
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:get_pre_filled_teaching_event_add_attendee).with("654321", anything).and_raise(GetIntoTeachingApiClient::ApiError)
+      receive(:exchange_access_token_for_teaching_event_add_attendee).with("654321", anything).and_raise(GetIntoTeachingApiClient::ApiError)
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:get_pre_filled_teaching_event_add_attendee).with("123456", anything).and_return(response)
+      receive(:exchange_access_token_for_teaching_event_add_attendee).with("123456", anything).and_return(response)
 
     visit event_steps_path(event_id: event_readable_id)
 
@@ -176,7 +176,7 @@ RSpec.feature "Event wizard", type: :feature do
       alreadySubscribedToMailingList: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:get_pre_filled_teaching_event_add_attendee).with("123456", anything).and_return(response)
+      receive(:exchange_access_token_for_teaching_event_add_attendee).with("123456", anything).and_return(response)
 
     visit event_steps_path(event_id: event_readable_id)
 
@@ -218,7 +218,7 @@ RSpec.feature "Event wizard", type: :feature do
       alreadySubscribedToTeacherTrainingAdviser: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:get_pre_filled_teaching_event_add_attendee).with("123456", anything).and_return(response)
+      receive(:exchange_access_token_for_teaching_event_add_attendee).with("123456", anything).and_return(response)
 
     visit event_steps_path(event_id: event_readable_id)
 
