@@ -1,0 +1,12 @@
+<%= tag.div(class: %w[call-to-action call-to-action--homepage]) do %>
+  <div class="call-to-action__content">
+    <%= tag.div(icon, class: "call-to-action__icon__container") %>
+
+    <%= tag.span(title, class: "call-to-action__heading") %>
+
+    <div class="call-to-action__action">
+      <%= link %>
+    </div>
+  </div>
+  <%= image %>
+<% end %>

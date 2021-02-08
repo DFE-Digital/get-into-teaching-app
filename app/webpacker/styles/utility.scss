@@ -1,3 +1,8 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
 // these are typically headers or section headings, often
 // placed over images or other sections
 @mixin rotated-block($degrees: -3deg, $blur: 4px) {

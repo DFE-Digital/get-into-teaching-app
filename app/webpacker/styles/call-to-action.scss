@@ -104,4 +104,72 @@
       }
     }
   }
+
+  &--homepage {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 0;
+
+    .call-to-action {
+      @include reset;
+
+      // the icon__container is the container used
+      // by flex to position the div
+      &__icon__container {
+        transform: rotate(-3deg);
+      }
+
+      // the box exists so we can rotate the icon's background
+      // and the icon itself separately in opposite directions
+      &__icon__box {
+        margin: 1em auto auto -.2em;
+        padding-left: .2em;
+        background-color: $yellow;
+        display: inline-block;
+      }
+
+      &__icon {
+        background: transparent;
+        transform: rotate(3deg);
+      }
+
+      &__heading {
+        display: inline-block;
+        padding: .5em;
+        margin: .2em 0;
+
+        font-size: size(medium);
+        text-decoration: underline;
+        text-underline-offset: .2em;
+        line-height: 1.3em;
+        text-decoration-thickness: .09em;
+      }
+
+      &__content {
+        @include reset;
+
+        flex: 1 0 50%;
+        overflow: hidden;
+      }
+
+      &__image {
+        flex: 1 0 50%;
+        align-self: center;
+        overflow: hidden;
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 80%;
+        height: 90%;
+        @include mq($until: tablet) {
+          display: none;
+        }
+      }
+
+      &__action {
+        margin: .2em .5em 1em;
+      }
+    }
+  }
 }

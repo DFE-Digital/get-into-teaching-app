@@ -10,7 +10,7 @@ main.home {
 
   section {
     margin-top: 2em;
-    width: $content-max-width;
+    max-width: $homepage-max-width;
   }
 
   .homepage-feature {
@@ -29,12 +29,11 @@ main.home {
 
   &.blocks {
     display: flex;
-    width: auto;
     margin: 1em $px-either-side-of-content;
     gap: 1em;
 
     > * {
-      flex: 1;
+      flex: 1 0;
     }
   }
 }
@@ -69,6 +68,7 @@ main.home {
   &__cta {
     display: inline-block;
     padding: 1.5em;
+    margin: 1em 0;
 
     > a {
       @include button;
@@ -97,7 +97,7 @@ main.home {
   @supports (display: grid) {
     display: grid;
     grid-template-columns: $px-either-side-of-content repeat(4, 1fr) $px-either-side-of-content;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
 
     padding: inherit;
     background-color: inherit;
@@ -174,8 +174,6 @@ main.home {
     flex-direction: column;
     margin: 1em;
   }
-
-  width: auto;
 
   &__directory {
     border: 2px solid $purple;
