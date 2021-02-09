@@ -83,7 +83,6 @@ main.home {
   }
 
   &__cta {
-    display: inline-block;
     padding: 1.5em;
     margin: 1em 0;
 
@@ -91,6 +90,8 @@ main.home {
       @include button;
       @include chevron;
       white-space: inherit;
+
+      display: inline-block !important; // override the block set by button mixin
     }
   }
 
