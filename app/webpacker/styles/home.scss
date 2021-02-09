@@ -66,7 +66,7 @@ main.home {
   // general styles (grid fallback)
   &__heading {
     @include rotated-block;
-    font-size: size('medium');
+    font-size: size('large');
     display: inline-block;
     color: $black;
     background-color: $white;
