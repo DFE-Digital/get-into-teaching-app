@@ -5,7 +5,11 @@
   </div>
   <% if show_subtitle? %>
     <div class="hero__subtitle">
-      <%= tag.div(subtitle) %>
+      <%= tag.div(subtitle, class: "hero__subtitle__text") %>
+
+      <% if show_subtitle_button? %>
+        <%= link_to(tag.span(@subtitle_button), @subtitle_link, class: "hero__subtitle__button") %>
+      <% end %>
     </div>
   <% end %>
 

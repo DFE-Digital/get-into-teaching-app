@@ -51,15 +51,6 @@ $mobile-cutoff: 800px;
       margin: initial;
       width: initial;
     }
-
-    a {
-      color: $black;
-      text-decoration: none;
-
-      &:hover {
-        border-bottom: 2px solid $black;
-      }
-    }
   }
 
   &__img {
@@ -110,6 +101,13 @@ $mobile-cutoff: 800px;
 
       @include mq($from: tablet) {
         margin: 1em 2em .5em;
+      }
+
+      &__button {
+        @include button;
+        @include chevron;
+        margin-top: 1.5em;
+        display: inline-block;
       }
     }
 

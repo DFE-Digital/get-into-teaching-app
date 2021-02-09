@@ -7,6 +7,8 @@ describe Sections::HeroComponent, type: "component" do
       fullwidth: true,
       hide_page_helpful_question: true,
       subtitle: "Teach all the subjects!",
+      subtitle_link: "/signup",
+      subtitle_button: "Find out more",
       image: "media/images/hero-home-dt.jpg",
       backlink: "/",
     }.with_indifferent_access
@@ -21,14 +23,15 @@ describe Sections::HeroComponent, type: "component" do
       end
 
       specify "renders the subtitle" do
-        expect(page).to have_css(".hero__subtitle > div", text: front_matter[:subtitle])
+        expect(page).to have_css(".hero__subtitle > .hero__subtitle__text", text: front_matter[:subtitle])
       end
 
-      context "when the subtitle is a link" do
+      context "when a subtitle link exists" do
         let(:front_matter) do
           {
             title: "Teaching, it's pretty awesome",
             subtitle: "Teach all the subjects!",
+            subtitle_button: "Click here to find out",
             subtitle_link: "https://foo.com",
             image: "media/images/hero-home-dt.jpg",
           }
@@ -36,9 +39,9 @@ describe Sections::HeroComponent, type: "component" do
 
         subject! { render_inline(component) }
 
-        specify "renders the subtitle" do
-          expect(page).to have_css(".hero__subtitle > div") do |div|
-            expect(div).to have_link(front_matter[:subtitle], href: front_matter[:subtitle_link])
+        specify "renders the subtitle button" do
+          expect(page).to have_css(".hero__subtitle") do |div|
+            expect(div).to have_link(front_matter[:subtitle_button], href: front_matter[:subtitle_link])
           end
         end
       end
