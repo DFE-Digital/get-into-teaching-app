@@ -34,6 +34,13 @@ main.home {
 
     > * {
       flex: 1 0;
+
+      // this can be deleted once gap is supported by
+      // Safari, it's currently only in the TP (tech preview)
+      // build https://caniuse.com/?search=gap
+      @include safari-only {
+        margin: .3em;
+      }
     }
   }
 }

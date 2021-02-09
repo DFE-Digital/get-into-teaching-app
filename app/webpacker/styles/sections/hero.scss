@@ -3,18 +3,6 @@
 // layout, mobile-first
 $mobile-cutoff: 800px;
 
-@mixin safari-only {
-  // Hack for Safari: Safari has a different take on calculating the height
-  // of flex/grid elements that contain an image with 100% height. This selector
-  // identifies Safari so we can apply a maximim height that won't also apply
-  // to Firefox or Blink-based browsers
-  //
-  // https://stackoverflow.com/questions/57516373/image-stretching-in-flexbox-in-safari
-  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
-    @content;
-  }
-}
-
 // fallback styles (IE)
 .hero {
   &__title {
