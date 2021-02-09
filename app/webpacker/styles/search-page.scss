@@ -1,19 +1,26 @@
 .search-result {
   display: block;
-  border-top: 1px solid $black;
+  border-top: 1px solid $grey-mid;
   text-decoration: none;
   color: initial;
+  padding: 1em 0 ;
 
   &:hover {
-    text-decoration: underline;
     color: $blue-dark;
+    background: $grey;
+
+    h3 {
+      text-decoration: underline;
+    }
   }
 
   h3 {
     margin-top: .2rem;
+    margin-bottom: 0
   }
 
   p {
+    margin-top: 0;
     margin-bottom: .2rem;
   }
 }
