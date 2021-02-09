@@ -136,6 +136,7 @@ main.home {
     &__graphic {
       grid-area: 1 / 4 / 4 / 7;
       @include background-image($align: right, $image: "desktop");
+      background-size: contain;
     }
 
     &__cta {
