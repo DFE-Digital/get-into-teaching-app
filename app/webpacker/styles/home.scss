@@ -114,7 +114,7 @@ main.home {
   //    mobile:   5    × 1
   @supports (display: grid) {
     display: grid;
-    grid-template-columns: $px-either-side-of-content repeat(4, 1fr) $px-either-side-of-content;
+    grid-template-columns: $px-either-side-of-content repeat(2, 1.2fr) repeat(2, .8fr) $px-either-side-of-content;
     grid-template-rows: repeat(3, minmax(min-content, max-content));
 
     padding: inherit;
