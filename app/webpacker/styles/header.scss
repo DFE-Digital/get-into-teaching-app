@@ -1,6 +1,6 @@
 .navbar {
   min-height: 112px;
-  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  @mixin ie-only {
     // IE hack - IE can't vertically align flexbox items without a fixed height
     height: 112px;
   }

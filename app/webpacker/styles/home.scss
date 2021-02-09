@@ -29,8 +29,14 @@ main.home {
 
   &.blocks {
     display: flex;
-    margin: 1em $px-either-side-of-content;
     gap: 1em;
+
+    // This is a fix to make IE display the content
+    // centrally.
+    margin: 1em auto;
+    @supports (display: grid) {
+      margin: 1em $px-either-side-of-content;
+    }
 
     > * {
       flex: 1 0;
@@ -39,6 +45,10 @@ main.home {
       // Safari, it's currently only in the TP (tech preview)
       // build https://caniuse.com/?search=gap
       @include safari-only {
+        margin: .3em;
+      }
+
+      @include ie-only {
         margin: .3em;
       }
     }

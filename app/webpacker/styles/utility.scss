@@ -81,6 +81,8 @@ $chevron-direction-map: (
 }
 /* stylelint-enable */
 
+// Mixins for targetting specific legacy/quirky/inferior browsers
+
 @mixin safari-only {
   // Hack for Safari: Safari has a different take on calculating the height
   // of flex/grid elements that contain an image with 100% height. This selector
@@ -89,6 +91,13 @@ $chevron-direction-map: (
   //
   // https://stackoverflow.com/questions/57516373/image-stretching-in-flexbox-in-safari
   @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    @content;
+  }
+}
+
+@mixin ie-only {
+  // IE only, use sparingly, won't need to be supported for ever
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     @content;
   }
 }
