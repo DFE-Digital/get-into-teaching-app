@@ -1,5 +1,4 @@
 $px-either-side-of-content: 15px;
-$px-above-content: 10px;
 
 main.home {
   // the homepage is a few px wider than the regular max width so we can
@@ -172,19 +171,25 @@ main.home {
 
   @include mq($until: mobile) {
     grid-template-columns: auto;
-    grid-template-rows: $px-above-content repeat(4, 1fr);
+    grid-template-rows: .5fr .5fr 2fr .5fr;
 
-    &__purple-box { grid-area: 2 / 1 / 6 / 2; }
-    &__heading { grid-area: 3 / 1 / 4 / 2; }
-    &__text { grid-area: 4 / 1 / 5 / 2; }
-    &__cta { grid-area: 5 / 1 / 6 / 2; }
+    &__purple-box { grid-area: 1 / 1 / 6 / 2; }
+
+    &__heading { grid-area: 1 / 1 / 2 / 2; }
+
+    &__text {
+      font-size: size(small);
+      grid-area: 2 / 1 / 3 / 2;
+    }
 
     &__graphic {
-      grid-area: 1 / 1 / 3 / 2;
+      grid-area: 3 / 1 / 4 / 2;
       @include background-image($image: "mobile");
       background-size: contain;
       background-position: center;
     }
+
+    &__cta { grid-area: 4 / 1 / 5 / 2; }
   }
 }
 
