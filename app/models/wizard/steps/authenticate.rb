@@ -15,7 +15,7 @@ module Wizard
       end
 
       def skipped?
-        @store["authenticate"] == false
+        @store["authenticate"] != true
       end
 
       def save

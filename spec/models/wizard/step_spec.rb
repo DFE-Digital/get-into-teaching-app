@@ -37,6 +37,12 @@ describe Wizard::Step do
     it { expect(subject).to be_can_proceed }
   end
 
+  describe "#flash_error" do
+    before { subject.flash_error("error message") }
+
+    it { expect(subject.errors[:base]).to include("error message") }
+  end
+
   describe "#save" do
     let(:backingstore) { {} }
 

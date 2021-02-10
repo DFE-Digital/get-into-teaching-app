@@ -85,6 +85,11 @@ en:
         Find out what they have to offer and help make your decision on where to apply.
   activemodel:
     errors:
+      magic_link_token:
+        invalid: "We could not find this link. Enter the details below to help us verify you."
+        expired: "This link has expired. Enter the details below to help us verify you."
+        already_exchanged: "This link has been used already. Enter the details below to help us verify you."
+
       models:
         wizard/steps/authenticate:
           attributes:

@@ -3,7 +3,10 @@ module WizardSteps
 
   included do
     class_attribute :wizard_class
-    before_action :load_wizard, :load_current_step, only: %i[show update]
+    before_action :load_wizard, only: %i[show update]
+    before_action :process_magic_link_token, only: %i[show]
+    before_action :load_current_step, only: %i[show update]
+    before_action :display_magic_link_token_error, only: %i[show]
   end
 
   def index
@@ -42,6 +45,31 @@ module WizardSteps
 
 private
 
+  def process_magic_link_token
+    token = request.query_parameters[:magic_link_token]
+    return if token.blank?
+
+    @wizard.process_magic_link_token(token)
+    redirect_to(step_path(@wizard.next_key(Wizard::Steps::Authenticate.key)))
+  rescue GetIntoTeachingApiClient::ApiError => e
+    handle_magic_link_token_error(e) && return if e.code == 401
+
+    raise
+  end
+
+  def handle_magic_link_token_error(error)
+    response = JSON.parse(error.response_body)
+    redirect_to(first_step_path(magic_link_token_error: response["status"]))
+  end
+
+  def display_magic_link_token_error
+    magic_link_token_error = params[:magic_link_token_error]
+    return if magic_link_token_error.blank?
+
+    message = t("activemodel.errors.magic_link_token.#{magic_link_token_error.underscore}")
+    @current_step.flash_error(message)
+  end
+
   def load_wizard
     @wizard = wizard_class.new(wizard_store, params[:id])
   rescue Wizard::UnknownStep
@@ -62,8 +90,8 @@ private
     end
   end
 
-  def first_step_path
-    step_path(wizard_class.steps.first.key)
+  def first_step_path(opts = {})
+    step_path(wizard_class.steps.first.key, opts)
   end
 
   def authenticate_path(params = {})

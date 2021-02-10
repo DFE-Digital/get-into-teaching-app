@@ -60,6 +60,41 @@ describe Wizard::Base do
     end
   end
 
+  describe "#process_magic_link_token" do
+    let(:token) { "magic-link-token" }
+    let(:stub_response) do
+      GetIntoTeachingApiClient::MailingListAddMember.new(
+        candidateId: "abc123",
+        firstName: "John",
+        lastName: "Doe",
+        email: "john@doe.com",
+      )
+    end
+    let(:response_hash) { stub_response.to_hash.transform_keys { |k| k.to_s.underscore } }
+
+    before do
+      allow_any_instance_of(TestWizard).to \
+        receive(:exchange_magic_link_token).with(token) { stub_response }
+    end
+
+    subject do
+      wizard.process_magic_link_token(token)
+      wizardstore.fetch(%w[candidate_id first_name last_name email])
+    end
+
+    it { is_expected.to eq response_hash }
+
+    context "when the wizard does not implement exchange_magic_link_token" do
+      before do
+        allow_any_instance_of(TestWizard).to \
+          receive(:exchange_magic_link_token).with(token)
+          .and_call_original
+      end
+
+      it { expect { wizard.process_magic_link_token(token) }.to raise_error(Wizard::MagicLinkTokenNotSupportedError) }
+    end
+  end
+
   describe "#can_proceed?" do
     subject { wizardclass.new(wizardstore, "name") }
     it { is_expected.to be_can_proceed }

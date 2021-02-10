@@ -23,8 +23,10 @@ describe Wizard::Steps::Authenticate do
   end
 
   describe "#skipped?" do
-    it "returns true if authenticate is false" do
+    it "returns true if authenticate is false or nil" do
       wizardstore["authenticate"] = false
+      expect(subject).to be_skipped
+      wizardstore["authenticate"] = nil
       expect(subject).to be_skipped
     end
 
@@ -36,6 +38,7 @@ describe Wizard::Steps::Authenticate do
 
   describe "#export" do
     it "returns a hash containing the matchback fields" do
+      allow_any_instance_of(described_class).to receive(:skipped?) { false }
       wizardstore["candidate_id"] = "abc-123"
       wizardstore["qualification_id"] = "def-456"
       subject.timed_one_time_password = "123456"
