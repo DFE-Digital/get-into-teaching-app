@@ -1,4 +1,5 @@
 $px-either-side-of-content: 15px;
+$space-between-sections: 3.7em;
 
 main.home {
   // the homepage is a few px wider than the regular max width so we can
@@ -8,7 +9,7 @@ main.home {
   max-width: $homepage-max-width;
 
   section {
-    margin-top: 2em;
+    margin-top: $space-between-sections;
     max-width: $homepage-max-width;
   }
 
@@ -32,9 +33,9 @@ main.home {
 
     // This is a fix to make IE display the content
     // centrally.
-    margin: 1em auto;
+    margin: $space-between-sections auto 0;
     @supports (display: grid) {
-      margin: 1em $px-either-side-of-content;
+      margin: $space-between-sections $px-either-side-of-content 0;
     }
 
     > * {
