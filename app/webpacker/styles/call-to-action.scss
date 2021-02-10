@@ -106,70 +106,95 @@
   }
 
   &--homepage {
-    display: flex;
-    flex-direction: row;
+    display: grid;
     margin-bottom: 0;
+    gap: .2em;
 
-    .call-to-action {
+    grid-template-rows: 1em 1fr 2fr .8fr 1em;
+    grid-template-columns: 1.2fr .8fr;
+    overflow: hidden;
+
+    .call-to-action__icon__container {
       @include reset;
 
-      // the icon__container is the container used
-      // by flex to position the div
-      &__icon__container {
-        transform: rotate(-3deg);
-      }
+      grid-area: 1 / 1 / 3 / 2;
+      transform: rotate(-3deg);
 
       // the box exists so we can rotate the icon's background
       // and the icon itself separately in opposite directions
-      &__icon__box {
+      .call-to-action__icon__box {
         margin: 1em auto auto -.2em;
         padding-left: .2em;
         background-color: $yellow;
         display: inline-block;
       }
 
-      &__icon {
+      .call-to-action__icon {
         background: transparent;
         transform: rotate(3deg);
       }
+    }
 
-      &__heading {
+    .call-to-action__heading {
+      @include reset;
+      align-self: center;
+      padding: 0 1em;
+      font-size: size(medium);
+      text-decoration: underline;
+      text-underline-offset: .2em;
+      line-height: 1.3em;
+      text-decoration-thickness: .12em;
+
+      grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .call-to-action__action {
+      @include reset;
+      grid-area: 4 / 1 / 6 / 2;
+
+      a {
+        margin: .3em 1.5em;
         display: inline-block;
-        padding: .5em;
-        margin: .2em 0;
-
-        font-size: size(medium);
-        text-decoration: underline;
-        text-underline-offset: .2em;
-        line-height: 1.3em;
-        text-decoration-thickness: .12em;
+        font-size: size("small");
       }
+    }
 
-      &__content {
-        @include reset;
+    .call-to-action__image {
+      @include reset;
+      grid-area: 2 / 2 / 5 / 3;
+      background-position: center;
+      background-size: cover;
+    }
 
-        flex: 1 0 50%;
-        overflow: hidden;
-      }
+    @include mq($until: tablet) {
+      grid-template-rows: 12em 1fr auto;
+      grid-template-columns: .8fr 1.2fr;
 
-      &__image {
-        flex: 1 0 50%;
+      .call-to-action__icon__container {
+        grid-area: 1 / 1 / 2 / 2;
         align-self: center;
-        overflow: hidden;
-        object-fit: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        width: 80%;
-        height: 90%;
-        @include mq($until: tablet) {
-          display: none;
+
+        img {
+          padding: 1.2em;
+          height: 3em;
+          width: 3em;
         }
       }
 
-      &__action {
-        margin: .2em .5em 1em;
+      .call-to-action__heading {
+        grid-area: 2 / 1 / 3 / 3;
+        margin: 1em auto .5em;
       }
+
+      .call-to-action__action {
+        grid-area: 3 / 1 / 4 / 3;
+
+        a {
+          margin: 1em 1.5em;
+        }
+      }
+
+      .call-to-action__image { grid-area: 1 / 2 / 2 / 3; }
     }
   }
 }
