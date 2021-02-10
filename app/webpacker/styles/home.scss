@@ -218,6 +218,12 @@ main.home {
         color: $black;
         line-height: 1.8em;
         text-underline-offset: .2em;
+
+        &:hover {
+          color: $purple;
+          text-decoration: underline;
+          text-decoration-thickness: .12em;
+        }
       }
     }
   }
