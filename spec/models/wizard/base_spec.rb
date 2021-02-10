@@ -262,5 +262,15 @@ describe Wizard::Base do
       it { is_expected.not_to include "age" }
       it { is_expected.to include "postcode" => nil }
     end
+
+    context "when the store was populated with matchback data" do
+      before do
+        wizardstore["candidate_id"] = "abc-123"
+        wizardstore["qualification_id"] = "def-456"
+      end
+
+      it { is_expected.to include "candidate_id" => "abc-123" }
+      it { is_expected.to include "qualification_id" => "def-456" }
+    end
   end
 end

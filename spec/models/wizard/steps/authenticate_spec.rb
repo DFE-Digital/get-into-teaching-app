@@ -37,21 +37,10 @@ describe Wizard::Steps::Authenticate do
   end
 
   describe "#export" do
-    it "returns a hash containing the matchback fields" do
+    it "returns an empty hash" do
       allow_any_instance_of(described_class).to receive(:skipped?) { false }
-      wizardstore["candidate_id"] = "abc-123"
-      wizardstore["qualification_id"] = "def-456"
       subject.timed_one_time_password = "123456"
-      expect(subject.export).to eq({
-        "candidate_id" => "abc-123",
-        "qualification_id" => "def-456",
-      })
-    end
-
-    it "does not include matchback fields in export if skipped" do
-      wizardstore["candidate_id"] = "abc-123"
-      allow_any_instance_of(described_class).to receive(:skipped?) { true }
-      expect(subject.export.values).to all(be_nil)
+      expect(subject.export).to be_empty
     end
   end
 

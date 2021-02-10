@@ -3,6 +3,8 @@ module Wizard
   class MagicLinkTokenNotSupportedError < RuntimeError; end
 
   class Base
+    MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
+
     class_attribute :steps
 
     class << self
@@ -95,7 +97,10 @@ module Wizard
     end
 
     def export_data
-      all_steps.map(&:export).reduce({}, :merge)
+      matchback_data = @store.fetch(MATCHBACK_ATTRS)
+      step_data = all_steps.map(&:export).reduce({}, :merge)
+
+      step_data.merge!(matchback_data)
     end
 
     def process_magic_link_token(token)
