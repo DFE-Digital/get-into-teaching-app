@@ -12,13 +12,7 @@
 
     <%= render Sections::HeroComponent.new(@front_matter) %>
 
-    <main class="semantic" role="main" id="main-content">
-      <section class="container">
-        <article class="markdown fullwidth">
-          <%= yield %>
-        </article>
-      </section>
-
+    <main class="semantic home" role="main" id="main-content">
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
       <% end %>

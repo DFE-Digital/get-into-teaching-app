@@ -1,3 +1,8 @@
+@mixin reset {
+  margin: 0;
+  padding: 0;
+}
+
 // these are typically headers or section headings, often
 // placed over images or other sections
 @mixin rotated-block($degrees: -3deg, $blur: 4px) {
@@ -75,3 +80,24 @@ $chevron-direction-map: (
   }
 }
 /* stylelint-enable */
+
+// Mixins for targetting specific legacy/quirky/inferior browsers
+
+@mixin safari-only {
+  // Hack for Safari: Safari has a different take on calculating the height
+  // of flex/grid elements that contain an image with 100% height. This selector
+  // identifies Safari so we can apply a maximim height that won't also apply
+  // to Firefox or Blink-based browsers
+  //
+  // https://stackoverflow.com/questions/57516373/image-stretching-in-flexbox-in-safari
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    @content;
+  }
+}
+
+@mixin ie-only {
+  // IE only, use sparingly, won't need to be supported for ever
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    @content;
+  }
+}

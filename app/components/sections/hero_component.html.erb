@@ -5,7 +5,11 @@
   </div>
   <% if show_subtitle? %>
     <div class="hero__subtitle">
-      <%= tag.div(subtitle) %>
+      <%= tag.div(subtitle, class: "hero__subtitle__text") %>
+
+      <% if show_subtitle_button? %>
+        <%= link_to(tag.span(@subtitle_button), @subtitle_link, class: "hero__subtitle__button") %>
+      <% end %>
     </div>
   <% end %>
 
@@ -14,19 +18,4 @@
       <%= content %>
     </div>
   <% end %>
-<% end %>
-
-<% if show_mailing_list %>
-  <section class="container">
-    <div class="hero__mailing-strip">
-        <div class="hero__mailing-strip__text">
-            <p>Get personalised information and updates about getting into teaching.</p>
-        </div>
-        <div class="hero__mailing-strip__cta">
-          <%= link_to(mailing_list_steps_path, class: "hero__mailing-strip__cta__button") do %>
-            <span>Sign up here <span class="visually-hidden">to receive information via email</span></span>
-          <% end %>
-        </div>
-    </div>
-  </section>
 <% end %>

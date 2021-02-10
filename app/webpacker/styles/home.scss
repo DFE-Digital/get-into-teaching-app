@@ -1,278 +1,235 @@
-.cta-links {
-  display: flex;
-  margin-bottom: 30px;
+$px-either-side-of-content: 15px;
+$space-between-sections: 3.7em;
+
+main.home {
+  // the homepage is a few px wider than the regular max width so we can
+  // make things overhang if neccessary
+  $homepage-max-width: $content-max-width + (2 * $px-either-side-of-content);
+
+  max-width: $homepage-max-width;
+
+  section {
+    margin-top: $space-between-sections;
+    max-width: $homepage-max-width;
+  }
+
+  .homepage-feature {
+    &.steps-to-become-a-teacher {
+      width: 100%;
+    }
+  }
 }
 
-.cta-link {
-  width: 50%;
-  padding: 0 $indent-amount;
-  height: 290px;
-  display: block;
-  margin-bottom: 30px;
+.homepage-feature {
+  margin: 0 auto;
 
-  &__img {
+  &.steps-to-become-a-teacher {
     width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: 50%;
-    position: relative;
-    overflow: hidden;
   }
 
-  &__label {
-    @include rotated-block;
-    @include chevron;
+  &.blocks {
+    display: flex;
+    gap: 1em;
 
-    background: $green-dark-90;
+    // This is a fix to make IE display the content
+    // centrally.
+    margin: $space-between-sections auto 0;
+    @supports (display: grid) {
+      margin: $space-between-sections $px-either-side-of-content 0;
+    }
+
+    > * {
+      flex: 1 0;
+
+      // this can be deleted once gap is supported by
+      // Safari, it's currently only in the TP (tech preview)
+      // build https://caniuse.com/?search=gap
+      @include safari-only {
+        margin: .3em;
+      }
+
+      @include ie-only {
+        margin: .3em;
+      }
+    }
+  }
+}
+
+.steps-to-become-a-teacher {
+  background: $purple;
+  color: $white;
+
+  &__purple-box {
+    display: none;
+  }
+
+  // general styles (grid fallback)
+  &__heading {
+    @include rotated-block;
+    font-size: size('large');
     display: inline-block;
-    padding: $indent-amount;
-    line-height: 1.2;
-    font-weight: bold;
-    color: $white;
-    position: absolute;
-    bottom: 30px;
-    left: -3px;
-    text-align: left;
-    max-width: 75%;
-  }
-
-  &:hover {
-    .cta-link__label {
-      background: $green;
-    }
-  }
-
-  &:focus {
-    background-color: transparent;
-    box-shadow: none;
-
-    .cta-link__label {
-      outline: 3px solid transparent;
-      color: $black;
-      background-color: $yellow;
-      box-shadow: 0 -2px $yellow, 0 4px $black;
-      text-decoration: none;
-    }
-  }
-}
-
-.steps {
-  &__wrapper {
-    display: flex;
-
-    @include mq($until: tablet) {
-      flex-direction: column;
-    }
-
-    // This is a bit of a hack to target IE, which has a horrendous bug
-    // that prevents it from wrapping text inside hyperlinks. So we
-    // needn't wrap, always display the steps in a column format on IE */
-    @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {
-      flex-direction: column;
-
-      > * {
-        padding: .5em 0;
-      }
-    }
-  }
-
-  &__step {
-    display: flex;
-    align-items: center;
-    min-width: 20%;
-
-    @include mq($until: tablet) {
-      flex-direction: row;
-      justify-content: flex-start;
-      margin: .5em 0;
-      align-items: center;
-    }
-
-    @include mq($from: tablet, $until: desktop) {
-      flex-direction: column;
-      align-items: baseline;
-    }
-
-    @include mq($from: desktop) {
-      align-items: baseline;
-      padding-right: .5em;
-
-      .steps__link {
-        padding-top: 0;
-      }
-    }
-  }
-
-  &__link {
-    @include chevron($color: $black);
-
     color: $black;
-    font-weight: bold;
-    word-break: break-all;
-    text-decoration: none;
-    font-size: size("xsmall");
-    padding: .5em;
+    background-color: $white;
 
-    &:hover {
-      color: $black;
-      text-decoration: underline;
-    }
+    padding: .4em .4em .4em 1.4em;
+    margin: 1em 0 0 -.4em;
+    line-height: 1.25em;
+    max-width: 80%;
+  }
 
-    @include mq($until: tablet) {
-      margin-left: .5em;
-      font-size: inherit;
+  &__text {
+    color: $white;
+    padding: 1em 1.5em 0;
+  }
+
+  &__cta {
+    padding: 1.5em;
+    margin: 1em 0;
+
+    > a {
+      @include button;
+      @include chevron;
+      white-space: inherit;
+
+      display: inline-block !important; // override the block set by button mixin
     }
   }
 
-  &__number {
-    @include rotated-block;
+  @mixin background-image($size: 85%, $align: center, $image: "desktop") {
+    $background-images: (
+      "desktop": "../images/steps-graphic.svg",
+      "mobile": "../images/steps-graphic-mob.svg"
+    );
 
-    span {
-      display: inline-block;
-      box-sizing: border-box;
-      background-color: $pink;
-      color: $white;
-      font-weight: bold;
-      text-align: center;
-      line-height: 40px;
-      width: 40px;
-      height: 40px;
-    }
+    background: $align / $size no-repeat url(#{map-get($background-images, $image)});
   }
-}
 
-.featured-content {
-  margin-top: 45px;
-}
+  // grid-specifics. We're using a grid here so that we can allow part of the SVG
+  // to 'overhang' the edge. This would be possible by just nudging the SVG right
+  // using some margin-left but then we'd need to make further steps to guess
+  // when to change the layout so it's not hanging off the edge of the screen.
+  // dimensions: (rows × columns)
+  //   desktop:   4    × 6
+  //    tablet:   3    × 3
+  //    mobile:   5    × 1
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: $px-either-side-of-content repeat(2, 1.2fr) repeat(2, .8fr) $px-either-side-of-content;
+    grid-template-rows: repeat(3, minmax(min-content, max-content));
 
-@function img-left($view-width) {
-  @return calc( ((1000px / 3) * 2) + ((#{$view-width} - 934px) / 2));
-}
+    padding: inherit;
+    background-color: inherit;
 
-.home-quote-img,
-.home-find-event-img {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  background-size: cover;
-  // Width calculated to be a third of the content column plus half of the viewport
-  left: img-left(100vw);
-  width: calc((1000px / 3) + ((100vw - 1066px) / 2));
-  max-width: 720px;
-  background-position: 50% 15%;
+    &__purple-box {
+      display: block;
+      background-color: $purple;
+      grid-area: 1 / 2 / 4 / 6;
+    }
 
-  @include mq($from: wide) {
-    left: auto;
-    right: 0;
+    &__heading {
+      grid-area: 1 / 2 / 2 / 4;
+      align-self: center;
+    }
+
+    &__text { grid-area: 2 / 2 / 3 / 4; }
+
+    &__graphic {
+      grid-area: 1 / 4 / 4 / 7;
+      @include background-image($align: right, $image: "desktop");
+      background-size: contain;
+    }
+
+    &__cta {
+      grid-area: 3 / 2 / 3 / 4;
+      align-self: center;
+
+      padding: 0 1em;
+
+      a {
+        @include button;
+        @include chevron;
+        white-space: inherit;
+      }
+    }
   }
 
   @include mq($until: tablet) {
-    position: static;
+    // stop overhanging when the screen is this narrow
     width: 100%;
-    height: 300px;
-  }
-}
+    grid-template-columns: 60% repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
 
-.home-find-event-img {
-  background-image: url('../images/home-events.jpg');
-}
+    &__purple-box { grid-area: 1 / 1 / 4 / 4; }
+    &__heading { grid-area: 1 / 1 / 2 / 2; }
+    &__text { grid-area: 2 / 1 / 3 / 2; }
+    &__cta { grid-area: 3 / 1 / 4 / 2; }
 
-.home-inset-content {
-  margin: 0 $indent-amount;
-}
-
-.home-quote {
-  &__text {
-    width: 60%;
-    margin-left: 50px;
-    text-align: left;
-    position: relative;
-  }
-
-  &__quote {
-    margin: 0 0 $indent-amount;
-    font-weight: bold;
-    font-size: size("medium");
-    line-height: 1.25;
-    display: block;
-
-    &:before {
-      position: absolute;
-      top: 4px;
-      left: -30px;
-      width: 22px;
-      height: 21px;
-      background-image: url('../images/white-quote.svg');
-      content: "";
-      display: block;
-    }
-
-    &:after {
-      display: inline-block;
-      position: relative;
-      transform: rotate(-180deg);
-      width: 22px;
-      height: 21px;
-      background-image: url('../images/white-quote.svg');
-      content: "";
-      margin-left: 8px;
+    &__graphic {
+      grid-area: 1 / 2 / 4 / 4;
+      @include background-image($image: "mobile");
     }
   }
 
-  &__citation {
-    font-weight: bold;
+  @include mq($until: mobile) {
+    grid-template-columns: auto;
+    grid-template-rows: .5fr .5fr 2fr .5fr;
+
+    &__purple-box { grid-area: 1 / 1 / 6 / 2; }
+
+    &__heading { grid-area: 1 / 1 / 2 / 2; }
+
+    &__text {
+      font-size: size(small);
+      grid-area: 2 / 1 / 3 / 2;
+    }
+
+    &__graphic {
+      grid-area: 3 / 1 / 4 / 2;
+      @include background-image($image: "mobile");
+      background-size: contain;
+      background-position: center;
+    }
+
+    &__cta { grid-area: 4 / 1 / 5 / 2; }
   }
 }
 
-@include mq($until: tablet) {
-  .steps {
-    &__table {
-      margin-top: 0;
-      margin-bottom: 0;
+.blocks {
+  @include mq($until: tablet) {
+    flex-direction: column;
+    margin: 1em;
+  }
 
-      &__row {
-        &__cell {
-          padding-left: 20px;
+  &__directory {
+    border: 3px solid $purple;
+    padding: 1em;
+
+    h3 {
+      font-size: size('small');
+      margin: .2em auto .1em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li > a {
+        font-size: size('xsmall');
+        color: $black;
+        line-height: 1.8em;
+        text-underline-offset: .2em;
+
+        &:hover {
+          color: $purple;
+          text-decoration: underline;
+          text-decoration-thickness: .12em;
         }
       }
     }
-
-    &__row {
-      &__cell {
-        display: block;
-        width: 100%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-    }
-
-    .git-link {
-      padding-left: 40px;
-      padding-right: $indent-amount;
-      margin-top: $indent-amount;
-    }
   }
 
-  .home-quote {
-    &__text {
-      width: calc(100% - 80px);
-      margin: 30px 30px 30px 50px;
-    }
-
-    &__quote {
-      font-size: size("small");
-    }
-  }
-}
-
-@include mq($until: tablet) {
-  .cta-links {
-    flex-direction: column;
-  }
-
-  .cta-link {
-    width: 100%;
-    padding: 0;
-    height: 290px;
+  &__icon {
+    // placeholders for now
+    font-size: size('xlarge');
   }
 }
