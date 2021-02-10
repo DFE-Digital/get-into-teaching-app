@@ -1,6 +1,8 @@
 module Wizard
   module Steps
     class Authenticate < ::Wizard::Step
+      include ActiveModel::Dirty
+
       IDENTITY_ATTRS = %i[email first_name last_name date_of_birth].freeze
 
       attribute :timed_one_time_password
@@ -21,7 +23,6 @@ module Wizard
         @store["authenticated"] = false
 
         if valid?
-          prepopulate_store
           @store["authenticated"] = true
         end
 
@@ -32,21 +33,10 @@ module Wizard
         {}
       end
 
-      def timed_one_time_password=(value)
-        @totp_response = nil if value != timed_one_time_password
-        super(value)
-      end
-
       def candidate_identity_data
         @store.fetch(IDENTITY_ATTRS).transform_keys do |k|
           k.camelize(:lower).to_sym
         end
-      end
-
-    protected
-
-      def perform_existing_candidate_request(_request)
-        raise NotImplementedError, "subclass must define #perform_existing_candidate_request"
       end
 
     private
@@ -64,14 +54,10 @@ module Wizard
 
       def timed_one_time_password_is_correct
         request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(candidate_identity_data)
-        @totp_response ||= perform_existing_candidate_request(request)
+        @wizard.process_access_token(timed_one_time_password, request) if timed_one_time_password_changed?
+        clear_attribute_changes(%i[timed_one_time_password])
       rescue GetIntoTeachingApiClient::ApiError
         errors.add(:timed_one_time_password, :wrong_code)
-      end
-
-      def prepopulate_store
-        hash = @totp_response.to_hash.transform_keys { |k| k.to_s.underscore }
-        @store.persist(hash.except(*@store.keys))
       end
     end
   end

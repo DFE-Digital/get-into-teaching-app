@@ -1,6 +1,7 @@
 module Wizard
   class UnknownStep < RuntimeError; end
   class MagicLinkTokenNotSupportedError < RuntimeError; end
+  class AccessTokenNotSupportedError < RuntimeError; end
 
   class Base
     MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
@@ -108,10 +109,19 @@ module Wizard
       prepopulate_store(response)
     end
 
+    def process_access_token(token, request)
+      response = exchange_access_token(token, request)
+      prepopulate_store(response)
+    end
+
   protected
 
     def exchange_magic_link_token(_token)
       raise(MagicLinkTokenNotSupportedError)
+    end
+
+    def exchange_access_token(_timed_one_time_password, _request)
+      raise(AccessTokenNotSupportedError)
     end
 
   private

@@ -4,7 +4,7 @@ module Events
 
     self.steps = [
       Steps::PersonalDetails,
-      Steps::Authenticate,
+      ::Wizard::Steps::Authenticate,
       Steps::ContactDetails,
       Steps::FurtherDetails,
       Steps::PersonalisedUpdates,
@@ -17,6 +17,11 @@ module Events
         add_attendee_to_event
         @store.purge!
       end
+    end
+
+    def exchange_access_token(timed_one_time_password, request)
+      @api ||= GetIntoTeachingApiClient::TeachingEventsApi.new
+      @api.exchange_access_token_for_teaching_event_add_attendee(timed_one_time_password, request)
     end
 
   private

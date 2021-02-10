@@ -3,7 +3,7 @@ module Wizard
     extend ActiveSupport::Concern
 
     def save
-      @store.purge! if previously_authenticated?
+      @store.purge!
 
       if valid?
         begin
@@ -22,10 +22,6 @@ module Wizard
     end
 
   private
-
-    def previously_authenticated?
-      @store["authenticate"]
-    end
 
     def request_attributes
       attributes.slice("email", "first_name", "last_name").transform_keys { |k| k.camelize(:lower).to_sym }
