@@ -37,6 +37,10 @@ a {
   @include chevron;
   display: inline-block;
 
+  span {
+    white-space: nowrap;
+  }
+
   &--white {
     @include button($bg: $white, $fg: $black);
     @include chevron($color: $black);

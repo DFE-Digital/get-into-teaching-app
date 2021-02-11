@@ -6,6 +6,7 @@ export default class extends Controller {
   connect() {
     this.preventTurboLinksOnJumpLinks();
     this.openExternalContentLinksInNewWindow();
+    this.prepareChevronOnButtonLinks();
   }
 
   preventTurboLinksOnJumpLinks() {
@@ -34,5 +35,30 @@ export default class extends Controller {
         l.appendChild(linkOpensInNewWindow);
       }
     });
+  }
+
+  prepareChevronOnButtonLinks() {
+    const links = this.contentTarget.querySelectorAll(
+      '.button,.type-description__link'
+    );
+
+    [...links]
+      .filter((link) => link.querySelector('span') === null) // don't touch buttons that already include a span
+      .forEach((link) => {
+        link.innerHTML = this.wrapFinalWordInSpan(
+          link.textContent.trim().split(' ')
+        );
+      });
+  }
+
+  wrapFinalWordInSpan(words) {
+    const wordCount = words.length - 1;
+
+    return words
+      .map((word, i) => {
+        console.debug(word, i);
+        return i === wordCount ? `<span>${word}</span>` : word;
+      })
+      .join(' ');
   }
 }
