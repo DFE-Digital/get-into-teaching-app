@@ -44,6 +44,10 @@ module Wizard
       false
     end
 
+    def flash_error(message)
+      errors.add(:base, message)
+    end
+
     def export
       return {} if skipped?
 

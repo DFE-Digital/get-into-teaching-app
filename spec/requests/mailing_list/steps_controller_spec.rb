@@ -33,6 +33,48 @@ describe MailingList::StepsController do
     end
   end
 
+  describe "#show with a magic link token" do
+    let(:token) { "magic-link-token" }
+    let(:step_path) { mailing_list_steps_path(:name, { magic_link_token: token }) }
+
+    context "when the token is valid" do
+      let(:stub_response) do
+        GetIntoTeachingApiClient::MailingListAddMember.new(
+          candidateId: "abc123",
+          firstName: "John",
+          lastName: "Doe",
+          email: "john@doe.com",
+        )
+      end
+
+      before do
+        expect_any_instance_of(MailingList::Wizard).to \
+          receive(:exchange_magic_link_token).with(token) { stub_response }
+        get step_path
+        follow_redirect!
+      end
+
+      it { is_expected.to redirect_to(mailing_list_step_path(:degree_status)) }
+    end
+
+    context "when the token is not valid" do
+      let(:exchange_result) { GetIntoTeachingApiClient::CandidateMagicLinkExchangeResult.new(success: false, status: status) }
+
+      before do
+        expect_any_instance_of(MailingList::Wizard).to \
+          receive(:exchange_magic_link_token).with(token)
+            .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 401, response_body: exchange_result.to_json))
+        get step_path
+        follow_redirect!
+      end
+
+      GetIntoTeachingApiClient::ExchangeStatus.constants.each do |c|
+        let(:status) { GetIntoTeachingApiClient::ExchangeStatus.const_get(c) }
+        it { is_expected.to redirect_to(mailing_list_step_path(:name, magic_link_token_error: status)) }
+      end
+    end
+  end
+
   describe "#update" do
     let(:key) { model.model_name.param_key }
 

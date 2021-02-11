@@ -264,6 +264,62 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).not_to have_button("Next Step")
   end
 
+  scenario "Full journey as an existing candidate using a magic link" do
+    token = "magic-link-token"
+    response = GetIntoTeachingApiClient::MailingListAddMember.new(
+      firstName: "Test",
+      lastName: "User",
+      email: "test@user.com",
+      considerationJourneyStageId: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m very sure and think I’ll apply"],
+      degreeStatusId: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"],
+    )
+    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+      receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }
+
+    visit mailing_list_steps_path(magic_link_token: token)
+
+    expect(page).to have_text "What stage are you at with your degree?"
+    expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
+      response.degree_status_id.to_s,
+    )
+    click_on "Next Step"
+
+    expect(page).to have_text "How close are you to applying"
+    expect(find("[name=\"mailing_list_steps_teacher_training[consideration_journey_stage_id]\"][checked]").value).to eq(
+      response.consideration_journey_stage_id.to_s,
+    )
+    click_on "Next Step"
+
+    expect(page).to have_text "Which subject do you want to teach"
+    select "Maths"
+    click_on "Next Step"
+
+    expect(page).to have_text "Events in your area"
+    fill_in "What's your postcode", with: "TE57 1NG"
+    click_on "Next Step"
+
+    expect(page).to have_text "Accept privacy policy"
+    check "Yes"
+    click_on "Complete sign up"
+
+    expect(page).to have_text "You've signed up"
+    expect(page).to have_text "What happens next"
+  end
+
+  scenario "Invalid magic link tokens" do
+    visit mailing_list_steps_path(magic_link_token_error: GetIntoTeachingApiClient::ExchangeStatus::INVALID)
+    expect(page).to have_text "We could not find this link"
+
+    visit mailing_list_steps_path(magic_link_token_error: GetIntoTeachingApiClient::ExchangeStatus::EXPIRED)
+    expect(page).to have_text "This link has expired"
+
+    visit mailing_list_steps_path(magic_link_token_error: GetIntoTeachingApiClient::ExchangeStatus::ALREADY_EXCHANGED)
+    expect(page).to have_text "This link has been used already"
+
+    visit mailing_list_steps_path(magic_link_token_error: "UnknownError")
+    expect(page).to have_text "We could not find this link"
+  end
+
   scenario "Start as an existing candidate then switch to new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)

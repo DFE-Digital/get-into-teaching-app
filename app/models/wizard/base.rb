@@ -1,7 +1,10 @@
 module Wizard
   class UnknownStep < RuntimeError; end
+  class MagicLinkTokenNotSupportedError < RuntimeError; end
 
   class Base
+    MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
+
     class_attribute :steps
 
     class << self
@@ -94,10 +97,29 @@ module Wizard
     end
 
     def export_data
-      all_steps.map(&:export).reduce({}, :merge)
+      matchback_data = @store.fetch(MATCHBACK_ATTRS)
+      step_data = all_steps.map(&:export).reduce({}, :merge)
+
+      step_data.merge!(matchback_data)
+    end
+
+    def process_magic_link_token(token)
+      response = exchange_magic_link_token(token)
+      prepopulate_store(response)
+    end
+
+  protected
+
+    def exchange_magic_link_token(_token)
+      raise(MagicLinkTokenNotSupportedError)
     end
 
   private
+
+    def prepopulate_store(response)
+      hash = response.to_hash.transform_keys { |k| k.to_s.underscore }
+      @store.persist(hash)
+    end
 
     def all_steps
       step_keys.map(&method(:find))

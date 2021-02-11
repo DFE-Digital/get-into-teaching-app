@@ -22,6 +22,13 @@ module MailingList
       end
     end
 
+  protected
+
+    def exchange_magic_link_token(token)
+      api = GetIntoTeachingApiClient::MailingListApi.new
+      api.exchange_magic_link_token_for_mailing_list_add_member(token)
+    end
+
   private
 
     def add_member_to_mailing_list
