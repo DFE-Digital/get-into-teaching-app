@@ -14,6 +14,7 @@
 
   &__desktop {
     display: flex;
+    align-items: center;
     box-sizing: border-box;
     margin-left: 280px;
     width: 100%;
@@ -76,8 +77,6 @@
     }
 
     &__search {
-      align-self: center;
-
       img {
         display: block;
         width: 50px;
