@@ -315,6 +315,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path(magic_link_token_error: GetIntoTeachingApiClient::ExchangeStatus::ALREADY_EXCHANGED)
     expect(page).to have_text "This link has been used already"
+
+    visit mailing_list_steps_path(magic_link_token_error: "UnknownError")
+    expect(page).to have_text "We could not find this link"
   end
 
   scenario "Start as an existing candidate then switch to new candidate" do

@@ -66,7 +66,8 @@ private
     magic_link_token_error = params[:magic_link_token_error]
     return if magic_link_token_error.blank?
 
-    message = t("activemodel.errors.magic_link_token.#{magic_link_token_error.underscore}")
+    key = "activemodel.errors.magic_link_token"
+    message = t("#{key}.#{magic_link_token_error.underscore}", default: t("#{key}.invalid"))
     @current_step.flash_error(message)
   end
 
