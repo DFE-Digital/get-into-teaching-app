@@ -5,7 +5,7 @@ module CallsToAction
     def initialize(icon:, title:, links:)
       @icon  = icon_element(icon)
       @title = title
-      @links = links.map { |text, href| link_to(tag.span(text), href) }
+      @links = links.map { |text, href| link_to(text, href) }
     end
 
   private

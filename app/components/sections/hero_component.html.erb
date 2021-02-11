@@ -8,7 +8,7 @@
       <%= tag.div(subtitle, class: "hero__subtitle__text") %>
 
       <% if show_subtitle_button? %>
-        <%= link_to(tag.span(@subtitle_button), @subtitle_link, class: "hero__subtitle__button") %>
+        <%= link_to(@subtitle_button, @subtitle_link, class: "hero__subtitle__button button") %>
       <% end %>
     </div>
   <% end %>

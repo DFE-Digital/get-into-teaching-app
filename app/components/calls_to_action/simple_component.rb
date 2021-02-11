@@ -6,7 +6,7 @@ module CallsToAction
       @icon  = icon_element(icon)
       @title = title
       @text  = text
-      @link  = link_to(tag.span(link_text), link_target)
+      @link  = link_to(link_text, link_target, class: "button")
 
       @hide_on_mobile  = hide_on_mobile
       @hide_on_tablet  = hide_on_tablet

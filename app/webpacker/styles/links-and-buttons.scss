@@ -32,7 +32,7 @@ a {
   }
 }
 
-.call-to-action-button {
+.button {
   @include button;
   @include chevron;
   display: inline-block;

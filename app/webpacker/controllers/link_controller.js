@@ -56,7 +56,6 @@ export default class extends Controller {
 
     return words
       .map((word, i) => {
-        console.debug(word, i);
         return i === wordCount ? `<span>${word}</span>` : word;
       })
       .join(' ');

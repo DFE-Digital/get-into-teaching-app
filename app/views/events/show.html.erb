@@ -17,8 +17,8 @@
 
   <p>
     <% if can_sign_up_online?(@event) %>
-      <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
-          Sign up for this <span>event</span>
+      <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button button" do %>
+          Sign up for this event
       <% end %>
     <% end %>
   </p>
@@ -69,8 +69,8 @@
         Please note: to access this event you will require a laptop/desktop pc and be using chrome as your browser.
       </p>
       <p>
-        <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button" do %>
-            Sign up for this <span>event</span>
+        <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button button" do %>
+            Sign up for this event
         <% end %>
       </p>
     <% elsif is_event_type?(@event, "School or University event") %>

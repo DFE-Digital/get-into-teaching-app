@@ -19,7 +19,7 @@ describe EventsController do
     end
 
     specify "rendering the see all events button" do
-      expect(subject.body).to match(%r{explore <span>train to teach events</span>}i)
+      expect(subject.body).to match(%r{explore train to teach events}i)
     end
   end
 
@@ -121,7 +121,7 @@ describe EventsController do
         context "when the event can be registered for online" do
           let(:event) { build(:event_api, web_feed_id: "123", readable_id: event_readable_id) }
 
-          it { is_expected.to match(/Sign up for this <span>event<\/span>/) }
+          it { is_expected.to match(/Sign up for this event/) }
         end
 
         context "when the event can be registered for by email" do
