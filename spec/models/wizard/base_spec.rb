@@ -71,6 +71,7 @@ describe Wizard::Base do
       )
     end
     let(:response_hash) { stub_response.to_hash.transform_keys { |k| k.to_s.underscore } }
+    let(:keys) { response_hash.keys }
 
     before do
       allow_any_instance_of(TestWizard).to \
@@ -79,10 +80,11 @@ describe Wizard::Base do
 
     subject do
       wizard.process_magic_link_token(token)
-      wizardstore.fetch(%w[candidate_id first_name last_name email])
+      wizardstore
     end
 
-    it { is_expected.to eq response_hash }
+    it { expect(subject.fetch(keys)).to eq response_hash }
+    it { expect(subject.fetch(keys.map { |k| "#{k}_in_crm" }).values).to match_array response_hash.values }
 
     context "when the wizard does not implement exchange_magic_link_token" do
       before do
@@ -107,6 +109,7 @@ describe Wizard::Base do
       )
     end
     let(:response_hash) { stub_response.to_hash.transform_keys { |k| k.to_s.underscore } }
+    let(:keys) { response_hash.keys }
 
     before do
       allow_any_instance_of(TestWizard).to \
@@ -115,10 +118,11 @@ describe Wizard::Base do
 
     subject do
       wizard.process_access_token(token, request)
-      wizardstore.fetch(%w[candidate_id first_name last_name email])
+      wizardstore
     end
 
-    it { is_expected.to eq response_hash }
+    it { expect(subject.fetch(keys)).to eq response_hash }
+    it { expect(subject.fetch(keys.map { |k| "#{k}_in_crm" }).values).to match_array response_hash.values }
 
     context "when the wizard does not implement exchange_magic_link_token" do
       before do

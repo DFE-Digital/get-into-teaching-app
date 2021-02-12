@@ -3,44 +3,87 @@ require "rails_helper"
 describe Wizard::Step do
   include_context "wizard store"
 
-  class FirstStep < Wizard::Step
-    attribute :name
-    attribute :age, :integer
-    validates :name, presence: true
+  class SingleStepWizard < Wizard::Base
+    class FirstStep < Wizard::Step
+      attribute :name
+      attribute :age, :integer
+      validates :name, presence: true
+    end
+
+    self.steps = [FirstStep].freeze
   end
 
   let(:attributes) { {} }
-  subject { FirstStep.new nil, wizardstore, attributes }
+  let(:wizard) { SingleStepWizard.new(wizardstore, SingleStepWizard::FirstStep.key) }
+  subject { SingleStepWizard::FirstStep.new wizard, wizardstore, attributes }
 
   describe ".key" do
     it { expect(described_class.key).to eql "step" }
-    it { expect(FirstStep.key).to eql "first_step" }
+    it { expect(SingleStepWizard::FirstStep.key).to eql "first_step" }
   end
 
   describe ".title" do
     it { expect(described_class.title).to eql "Step" }
-    it { expect(FirstStep.title).to eql "First step" }
+    it { expect(SingleStepWizard::FirstStep.title).to eql "First step" }
   end
 
   describe ".new" do
     let(:attributes) { { age: "20" } }
-    it { is_expected.to be_instance_of FirstStep }
+    it { is_expected.to be_instance_of SingleStepWizard::FirstStep }
     it { is_expected.to have_attributes key: "first_step" }
     it { is_expected.to have_attributes id: "first_step" }
     it { is_expected.to have_attributes persisted?: true }
     it { is_expected.to have_attributes name: "Joe" }
     it { is_expected.to have_attributes age: 20 }
     it { is_expected.to have_attributes skipped?: false }
+    it { is_expected.to have_attributes can_proceed?: true }
+    it { is_expected.to have_attributes optional?: false }
   end
 
-  describe "#can_proceed" do
-    it { expect(subject).to be_can_proceed }
+  describe "#skipped?" do
+    context "when optional" do
+      before { expect(subject).to receive(:optional?) { true } }
+
+      context "when values for all attributes are present in the CRM" do
+        before do
+          wizardstore["name_in_crm"] = "John"
+          wizardstore["age_in_crm"] = 18
+        end
+
+        it { is_expected.to be_skipped }
+      end
+
+      context "when values for some attributes are present in the CRM" do
+        before do
+          wizardstore["name_in_crm"] = "John"
+          wizardstore["age_in_crm"] = nil
+        end
+
+        it { is_expected.not_to be_skipped }
+      end
+    end
   end
 
   describe "#flash_error" do
     before { subject.flash_error("error message") }
 
     it { expect(subject.errors[:base]).to include("error message") }
+  end
+
+  describe "#<attribute>_in_crm" do
+    before do
+      wizardstore["name"] = "John"
+      wizardstore["name_in_crm"] = "James"
+    end
+
+    it { expect(subject.name).to eq("John") }
+    it { expect(subject.name_in_crm).to eq("James") }
+    it { expect { subject.missing_attribute_in_crm }.to raise_error(NoMethodError) }
+  end
+
+  describe "#responds_to(<attribute>_in_crm)?" do
+    it { is_expected.to be_respond_to(:name_in_crm) }
+    it { is_expected.not_to be_respond_to(:missing_attribute_in_crm) }
   end
 
   describe "#save" do
@@ -65,7 +108,7 @@ describe Wizard::Step do
 
   describe "#export" do
     let(:backingstore) { { "name" => "Joe" } }
-    let(:instance) { FirstStep.new nil, wizardstore, age: 35 }
+    let(:instance) { SingleStepWizard::FirstStep.new nil, wizardstore, age: 35 }
     subject { instance.export }
     it { is_expected.to include "name" => "Joe" }
     it { is_expected.to include "age" => nil } # should only export persisted data

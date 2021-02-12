@@ -5,6 +5,7 @@ module Wizard
 
   class Base
     MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
+    ATTRIBUTE_IN_CRM_SUFFIX = "_in_crm".freeze
 
     class_attribute :steps
 
@@ -128,7 +129,14 @@ module Wizard
 
     def prepopulate_store(response)
       hash = response.to_hash.transform_keys { |k| k.to_s.underscore }
+      retain_values_in_crm(hash)
       @store.persist(hash)
+    end
+
+    def retain_values_in_crm(hash)
+      hash.dup.each do |key, value|
+        hash["#{key}#{ATTRIBUTE_IN_CRM_SUFFIX}"] = value
+      end
     end
 
     def all_steps
