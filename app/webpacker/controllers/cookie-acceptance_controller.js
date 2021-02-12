@@ -5,7 +5,7 @@ export default class extends Controller {
   static targets = ['modal', 'overlay', 'agree', 'disagree'];
 
   connect() {
-    if (!this.isPreferencesPage()) {
+    if (!this.isPrivacyPage()) {
       this.checkforCookie();
     }
   }
@@ -40,8 +40,10 @@ export default class extends Controller {
     });
   }
 
-  isPreferencesPage() {
+  isPrivacyPage() {
     const path = window.location.href.replace(/^https?:\/\/[^/]+/, '');
-    return path === '/cookie_preference';
+    const cookiesPages = ['/cookie_preference', '/cookies', '/privacy-policy'];
+
+    return cookiesPages.includes(path);
   }
 }
