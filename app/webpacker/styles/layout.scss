@@ -110,4 +110,10 @@ section.container {
   >.page-helpful {
     flex: 0 1 65%;
   }
+  &--narrow {
+    margin-top: 0;
+    margin-bottom: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }

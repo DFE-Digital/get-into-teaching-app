@@ -1,8 +1,11 @@
 
 <section class="container">
   <article class="story markdown no-hero">
-    <%= helpers.back_link(backlink, text: tag.span(backlink_text)) %>
-
+      <ul class="breadcrumb">
+        <li><a href="#" class="breadcrumb__link">Home</a></li>
+        <li><a href="#" class="breadcrumb__link">Section</a></li>
+        <li><a href="#" class="breadcrumb__link">Sub section</a></li>
+      </ul>
     <%= tag.h1(title) %>
 
     <header class="story__header">

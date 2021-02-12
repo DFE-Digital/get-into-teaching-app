@@ -1,0 +1,51 @@
+.breadcrumb {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding: 0 0 0 1.5em;
+  margin: 0;
+  max-width: calc(100% - 1.5em);
+  list-style: none;
+  * {
+    box-sizing: border-box;
+  }
+  li {
+    a {
+      position: relative;
+      display: block;
+      margin-right: 0.8em;
+      color: black;
+      font-size: 0.842em;
+        @include mq($until: tablet) {
+          font-size: 0.737em;
+        }
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 7px;
+        height: 7px;
+        border: 2px solid $black;
+        border-width: 2px 2px 0px 0px;
+        margin-left: 6px;
+        transform: rotate(45deg);
+      }
+    }
+    &:last-child {
+      a {
+        margin-right: 0;
+        padding-right: 0;
+        &:after {
+          display: none;
+        }
+      }
+    }
+  }
+  &--hero {
+    padding: 0.2rem 1.5rem 0.5em;
+    margin: 0 0 1.5em;
+    background: $grey;
+  }
+  & + h1 {
+    margin-top: 10px;
+  }
+}

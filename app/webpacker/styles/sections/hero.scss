@@ -154,7 +154,7 @@ $mobile-cutoff: 800px;
 
     h1 {
       background-color: $yellow-dark-90;
-      padding: .8em 2em 1.2em;
+      padding: .8em 1.2em 1.2em 2em;
       margin-left: -1em;
 
       @include mq($from: tablet) {
