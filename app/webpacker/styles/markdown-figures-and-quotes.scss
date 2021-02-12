@@ -1,0 +1,76 @@
+.markdown {
+  @mixin quote-icon($quote-size) {
+    @include icon;
+    background-image: url('../images/white-quote.svg');
+    width: $quote-size;
+    height: $quote-size;
+    fill: $white;
+    content: "";
+  }
+
+  @mixin quote {
+    background-color: $yellow;
+    float: left;
+    max-width: 340px;
+    position: relative;
+  }
+
+  @mixin fancy-quotes {
+    $quote-size: 17px;
+
+    padding: 15px 44px;
+    font-weight: bold;
+
+    &:before {
+      @include quote-icon($quote-size);
+      position: absolute;
+      left: size("small");
+    }
+
+    &:after {
+      @include quote-icon($quote-size);
+      position: inline;
+      transform: rotate(180deg);
+      margin-left: 7px;
+    }
+  }
+
+  > blockquote {
+    @include quote;
+    margin: 0 25px 0 0;
+
+    p {
+      @include fancy-quotes;
+    }
+
+    @include mq($until: mobile) {
+      display: block;
+      width: 100%;
+      min-width: 100%;
+      float: none;
+      margin: 2em 0;
+    }
+  }
+
+  figure {
+    background-color: $yellow;
+    @include quote;
+
+    &.right {
+      float: right;
+    }
+
+    blockquote {
+      p {
+        @include fancy-quotes;
+        @include reset;
+      }
+    }
+
+    figcaption {
+      margin: 1em 2em 1em 3em;
+      text-align: right;
+      font-size: smaller;
+    }
+  }
+}

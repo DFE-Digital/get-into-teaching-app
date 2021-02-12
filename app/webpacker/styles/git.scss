@@ -4,6 +4,7 @@
 @import './components/mixins/cards-grid';
 @import './components/mixins/headings';
 
+@import 'icons';
 @import 'breakpoints';
 @import 'font-sizes';
 @import 'utility';
@@ -11,10 +12,10 @@
 @import 'layout';
 @import 'links-and-buttons';
 @import 'markdown';
+@import 'markdown-figures-and-quotes';
 @import 'feature';
 @import 'featured';
 @import 'forms';
-@import 'icons';
 @import 'video';
 @import 'header';
 @import 'footer';
