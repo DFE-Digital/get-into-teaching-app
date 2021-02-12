@@ -4,7 +4,7 @@ module MailingList
 
     self.steps = [
       Steps::Name,
-      Steps::Authenticate,
+      ::Wizard::Steps::Authenticate,
       Steps::AlreadySubscribed,
       Steps::DegreeStatus,
       Steps::TeacherTraining,
@@ -20,6 +20,11 @@ module MailingList
         add_member_to_mailing_list
         @store.purge!
       end
+    end
+
+    def exchange_access_token(timed_one_time_password, request)
+      @api ||= GetIntoTeachingApiClient::MailingListApi.new
+      @api.exchange_access_token_for_mailing_list_add_member(timed_one_time_password, request)
     end
 
   protected
