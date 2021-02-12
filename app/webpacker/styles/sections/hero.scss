@@ -5,6 +5,10 @@ $mobile-cutoff: 800px;
 
 // fallback styles (IE)
 .hero {
+  @include mq($from: tablet) {
+    max-height: 30em;
+  }
+
   &__title {
     display: block;
     max-width: 90%;
