@@ -49,17 +49,17 @@ form {
       display: none;
     }
   }
+}
 
-  [data-cookie-preferences-save-state="saving"] {
-    .fa-sync.fa-spin {
-      display: inline-block;
-    }
+#cookie-preferences-from[data-cookie-preferences-save-state="saving"] {
+  .fa-sync.fa-spin {
+    display: inline-block;
   }
+}
 
-  [data-cookie-preferences-save-state="saved"] {
-    .save-with-confirmation__message {
-      display: inline-block;
-    }
+#cookie-preferences-from[data-cookie-preferences-save-state="saved"] {
+  .save-with-confirmation__message {
+    display: inline-block;
   }
 }
 
