@@ -53,13 +53,13 @@ form {
   }
 }
 
-#cookie-preferences-from[data-cookie-preferences-save-state="saving"] {
+#cookie-preferences-form[data-cookie-preferences-save-state="saving"] {
   .fa-sync.fa-spin {
     display: inline-block;
   }
 }
 
-#cookie-preferences-from[data-cookie-preferences-save-state="saved"] {
+#cookie-preferences-form[data-cookie-preferences-save-state="saved"] {
   .save-with-confirmation__message {
     display: inline-block;
   }
