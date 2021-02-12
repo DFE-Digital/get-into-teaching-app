@@ -42,6 +42,8 @@ form {
     button {
       margin-right: 1em;
       margin-bottom: 1em;
+      @include button;
+      display: inline-block;
     }
 
     span {
@@ -49,17 +51,17 @@ form {
       display: none;
     }
   }
+}
 
-  [data-cookie-preferences-save-state="saving"] {
-    .fa-sync.fa-spin {
-      display: inline-block;
-    }
+#cookie-preferences-from[data-cookie-preferences-save-state="saving"] {
+  .fa-sync.fa-spin {
+    display: inline-block;
   }
+}
 
-  [data-cookie-preferences-save-state="saved"] {
-    .save-with-confirmation__message {
-      display: inline-block;
-    }
+#cookie-preferences-from[data-cookie-preferences-save-state="saved"] {
+  .save-with-confirmation__message {
+    display: inline-block;
   }
 }
 
