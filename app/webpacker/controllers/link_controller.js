@@ -52,12 +52,6 @@ export default class extends Controller {
   }
 
   wrapFinalWordInSpan(words) {
-    const wordCount = words.length - 1;
-
-    return words
-      .map((word, i) => {
-        return i === wordCount ? `<span>${word}</span>` : word;
-      })
-      .join(' ');
+    return words.concat(`<span>${words.pop()}</span>`).join(' ');
   }
 }
