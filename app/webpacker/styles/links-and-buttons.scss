@@ -32,10 +32,14 @@ a {
   }
 }
 
-.call-to-action-button {
+.button {
   @include button;
   @include chevron;
   display: inline-block;
+
+  span {
+    white-space: nowrap;
+  }
 
   &--white {
     @include button($bg: $white, $fg: $black);

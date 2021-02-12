@@ -6,6 +6,7 @@ export default class extends Controller {
   connect() {
     this.preventTurboLinksOnJumpLinks();
     this.openExternalContentLinksInNewWindow();
+    this.prepareChevronOnButtonLinks();
   }
 
   preventTurboLinksOnJumpLinks() {
@@ -34,5 +35,23 @@ export default class extends Controller {
         l.appendChild(linkOpensInNewWindow);
       }
     });
+  }
+
+  prepareChevronOnButtonLinks() {
+    const links = this.contentTarget.querySelectorAll(
+      '.button,.type-description__link'
+    );
+
+    [...links]
+      .filter((link) => link.querySelector('span') === null) // don't touch buttons that already include a span
+      .forEach((link) => {
+        link.innerHTML = this.wrapFinalWordInSpan(
+          link.textContent.trim().split(' ')
+        );
+      });
+  }
+
+  wrapFinalWordInSpan(words) {
+    return words.concat(`<span>${words.pop()}</span>`).join(' ');
   }
 }
