@@ -58,7 +58,9 @@ group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
 
   # GOV.UK interpretation of rubocop for linting Ruby
-  gem "rubocop-govuk"
+  gem "rubocop-govuk", "~> 3.14.0" # FIXME: stop gap fix but we should relint the codebase
+  gem "rubocop-rails", "~> 2.5.2" # FIXME: stop gap fix but we should relint the codebase
+  gem "rubocop-rspec", "~> 1.39.0" # FIXME: stop gap fix but we should relint the codebase
 
   # Static security scanner
   gem "brakeman", require: false
