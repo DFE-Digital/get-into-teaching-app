@@ -383,7 +383,6 @@ DEPENDENCIES
   rspec-sonarqube-formatter (~> 1.4)
   rubocop-govuk (~> 3.14.0)
   rubocop-rails (~> 2.5.2)
-  rubocop-rspec (~> 1.41.0)
   secure_headers
   sentry-raven
   shoulda-matchers

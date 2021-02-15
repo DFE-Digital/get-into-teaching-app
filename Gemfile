@@ -60,7 +60,6 @@ group :development, :test do
   # GOV.UK interpretation of rubocop for linting Ruby
   gem "rubocop-govuk", "~> 3.14.0" # FIXME: stop gap fix but we should relint the codebase
   gem "rubocop-rails", "~> 2.5.2" # FIXME: stop gap fix but we should relint the codebase
-  gem "rubocop-rspec", "~> 1.41.0" # FIXME: stop gap fix but we should relint the codebase
 
   # Static security scanner
   gem "brakeman", require: false
