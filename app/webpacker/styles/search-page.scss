@@ -7,18 +7,12 @@
 
 .search-result {
   display: block;
-  border-top: 1px solid $grey-mid;
   text-decoration: none;
   color: initial;
-  padding: 1em 0 ;
+  padding: 1em 0;
 
   &:hover {
-    color: $blue-dark;
-    background: $grey;
 
-    h3 {
-      text-decoration: underline;
-    }
   }
 
   h3 {
@@ -29,5 +23,23 @@
   p {
     margin-top: 0;
     margin-bottom: .2rem;
+    font-size: .9em;
+  }
+
+  span {
+    white-space: nowrap;
+  }
+}
+
+.searchpage__results .search-result {
+  border-top: 1px solid $grey-mid;
+
+  &:hover {
+    color: $blue-dark;
+    background: $grey;
+
+    h3 {
+      text-decoration: underline;
+    }
   }
 }

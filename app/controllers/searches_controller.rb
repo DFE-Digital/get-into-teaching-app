@@ -5,7 +5,7 @@ class SearchesController < ApplicationController
     @search = Search.new(search_params)
 
     respond_to do |format|
-      format.json { render json: @search.results }
+      format.json { render json: autocomplete_results(@search.results) }
       format.html
     end
   end
@@ -18,5 +18,22 @@ private
 
   def search_params
     params.fetch(:search, {}).permit(:search)
+  end
+
+  def autocomplete_results(results)
+    (results || []).map do |path, frontmatter|
+      {
+        link: path,
+        title: frontmatter[:title],
+        html: render_result(path, frontmatter),
+      }
+    end
+  end
+
+  def render_result(*result)
+    render_to_string \
+      partial: "result",
+      object: result,
+      formats: [:html]
   end
 end
