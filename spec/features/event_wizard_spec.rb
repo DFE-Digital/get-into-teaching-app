@@ -109,9 +109,6 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Enter the verification code sent to test@user.com", with: "123456"
     click_on "Next Step"
 
-    expect(page).to have_field("Phone number (optional)", with: response.telephone)
-    click_on "Next Step"
-
     expect(page).to have_text "Are you over 16 and do you agree"
     expect(page).to have_text "Would you like to receive email updates"
     click_on "Complete sign up"
@@ -128,6 +125,7 @@ RSpec.feature "Event wizard", type: :feature do
     end
     click_on "Complete sign up"
 
+    expect(page).to_not have_text("What is your postcode? (optional)")
     fill_in_personalised_updates
     click_on "Complete sign up"
 
@@ -269,7 +267,9 @@ RSpec.feature "Event wizard", type: :feature do
   )
     select_value_or_default "What stage are you at with your degree?", degree_status
     select_value_or_default "How close are you to applying for teacher training?", consideration_journey_stage
-    fill_in "What is your postcode? (optional)", with: postcode
+    if page.has_text?("What is your postcode? (optional)")
+      fill_in "What is your postcode? (optional)", with: postcode
+    end
     select_value_or_default "What subject do you want to teach?", preferred_teaching_subject
   end
 

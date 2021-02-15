@@ -6,6 +6,7 @@ describe Events::Steps::ContactDetails do
   it_behaves_like "a wizard step"
 
   it { is_expected.to respond_to :telephone }
+  it { expect(subject).to be_optional }
 
   describe "validations" do
     it { is_expected.to allow_value("").for :telephone }

@@ -168,10 +168,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
     )
     click_on "Next Step"
 
-    expect(page).to have_text "Events in your area"
-    expect(page).to have_field("What's your postcode?", with: response.address_postcode)
-    click_on "Next Step"
-
     expect(page).to have_text "Accept privacy policy"
     click_on "Complete sign up"
 

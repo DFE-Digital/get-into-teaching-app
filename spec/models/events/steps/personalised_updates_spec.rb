@@ -49,6 +49,20 @@ describe Events::Steps::PersonalisedUpdates do
     end
   end
 
+  describe "#hide_postcode_field?" do
+    context "when the postcode is present in the crm store" do
+      let(:crm_backingstore) { { "address_postcode" => "TE5 1NG" } }
+
+      it { is_expected.to be_hide_postcode_field }
+    end
+
+    context "when the postcode is not present in the crm store" do
+      let(:crm_backingstore) { { "address_postcode" => nil } }
+
+      it { is_expected.not_to be_hide_postcode_field }
+    end
+  end
+
   describe "#skipped?" do
     let(:mailing_list) { nil }
     let(:backingstore) { { "subscribe_to_mailing_list" => mailing_list } }
