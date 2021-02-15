@@ -38,6 +38,18 @@ form {
     }
   }
 
+  &[data-cookie-preferences-save-state="saving"] {
+    .fa-sync.fa-spin {
+      display: inline-block;
+    }
+  }
+
+  &[data-cookie-preferences-save-state="saved"] {
+    .save-with-confirmation__message {
+      display: inline-block;
+    }
+  }
+
   .save-with-confirmation {
     button {
       margin-right: 1em;
@@ -50,18 +62,6 @@ form {
       color: $green;
       display: none;
     }
-  }
-}
-
-#cookie-preferences-form[data-cookie-preferences-save-state="saving"] {
-  .fa-sync.fa-spin {
-    display: inline-block;
-  }
-}
-
-#cookie-preferences-form[data-cookie-preferences-save-state="saved"] {
-  .save-with-confirmation__message {
-    display: inline-block;
   }
 }
 
