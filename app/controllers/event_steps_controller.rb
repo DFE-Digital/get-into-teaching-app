@@ -32,12 +32,17 @@ private
   end
 
   def wizard_store
-    Wizard::Store.new session_store
+    ::Wizard::Store.new app_store, crm_store
   end
 
-  def session_store
+  def app_store
     session[:events] ||= {}
     session[:events][params[:event_id]] ||= {}
+  end
+
+  def crm_store
+    session[:events_crm] ||= {}
+    session[:events_crm][params[:event_id]] ||= {}
   end
 
   def load_event

@@ -9,7 +9,7 @@ describe MailingList::Wizard do
       "last_name" => "Joseph",
     } }
   end
-  let(:wizardstore) { Wizard::Store.new store[uuid] }
+  let(:wizardstore) { Wizard::Store.new store[uuid], {} }
   subject { described_class.new wizardstore, "privacy_policy" }
 
   describe ".steps" do

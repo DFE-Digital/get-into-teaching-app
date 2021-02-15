@@ -79,7 +79,7 @@ describe Wizard::Base do
 
     subject do
       wizard.process_magic_link_token(token)
-      wizardstore.fetch(%w[candidate_id first_name last_name email])
+      wizardstore.fetch(%w[candidate_id first_name last_name email], source: :crm)
     end
 
     it { is_expected.to eq response_hash }
@@ -115,7 +115,7 @@ describe Wizard::Base do
 
     subject do
       wizard.process_access_token(token, request)
-      wizardstore.fetch(%w[candidate_id first_name last_name email])
+      wizardstore.fetch(%w[candidate_id first_name last_name email], source: :crm)
     end
 
     it { is_expected.to eq response_hash }

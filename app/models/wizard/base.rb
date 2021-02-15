@@ -128,7 +128,7 @@ module Wizard
 
     def prepopulate_store(response)
       hash = response.to_hash.transform_keys { |k| k.to_s.underscore }
-      @store.persist(hash)
+      @store.persist_crm(hash)
     end
 
     def all_steps
