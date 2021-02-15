@@ -67,17 +67,11 @@ describe Wizard::Steps::Authenticate do
         subject.save
         expect { subject.save }.not_to raise_error
       end
-
-      it "does not set authenticated to true" do
-        subject.timed_one_time_password = nil
-        subject.save
-        expect(wizardstore["authenticated"]).to be_falsy
-      end
     end
 
     context "when valid" do
       it "attempts to call the API exactly once for each valid timed_one_time_password" do
-        expect(wizard).to receive(:exchange_access_token).with(totp, request).once
+        expect(wizard).to receive(:exchange_access_token).with(totp, request).and_raise(GetIntoTeachingApiClient::ApiError).once
         expect(wizard).to receive(:exchange_access_token).with("000000", request).once
         subject.timed_one_time_password = totp
         subject.save
@@ -87,8 +81,8 @@ describe Wizard::Steps::Authenticate do
       end
 
       it "does not call the API on validation if already authenticated" do
+        expect(wizard).to receive(:access_token_used?) { true }
         expect(wizard).not_to receive(:exchange_access_token)
-        wizardstore["authenticated"] = true
         subject.timed_one_time_password = totp
         subject.valid?
       end
@@ -105,25 +99,6 @@ describe Wizard::Steps::Authenticate do
         expect(wizard).to receive(:exchange_access_token).with(totp, request) { response }
         subject.save
         expect(wizardstore["candidate_id"]).to eq(response.candidate_id)
-      end
-
-      it "sets authenticated to true" do
-        response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidateId: "abc123")
-        expect(wizard).to receive(:exchange_access_token).with(totp, request) { response }
-        subject.save
-        expect(wizardstore["authenticated"]).to be_truthy
-      end
-
-      context "when TOTP is changed to be incorrect" do
-        it "sets authenticated back to false" do
-          response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidateId: "abc123")
-          expect(wizard).to receive(:exchange_access_token).with(totp, request) { response }
-          subject.save
-          expect(wizardstore["authenticated"]).to be_truthy
-          subject.timed_one_time_password = nil
-          subject.save
-          expect(wizardstore["authenticated"]).to be_falsy
-        end
       end
     end
 

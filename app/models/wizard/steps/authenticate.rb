@@ -19,16 +19,6 @@ module Wizard
         @store["authenticate"] != true
       end
 
-      def save
-        @store["authenticated"] = false
-
-        if valid?
-          @store["authenticated"] = true
-        end
-
-        super
-      end
-
       def export
         {}
       end
@@ -42,7 +32,7 @@ module Wizard
     private
 
       def perform_api_check?
-        timed_one_time_password_valid? && !@store["authenticated"]
+        timed_one_time_password_valid? && !@wizard.access_token_used?
       end
 
       def timed_one_time_password_valid?
@@ -54,8 +44,10 @@ module Wizard
 
       def timed_one_time_password_is_correct
         request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(candidate_identity_data)
-        @wizard.process_access_token(timed_one_time_password, request) if timed_one_time_password_changed?
-        clear_attribute_changes(%i[timed_one_time_password])
+        if timed_one_time_password_changed?
+          clear_attribute_changes(%i[timed_one_time_password])
+          @wizard.process_access_token(timed_one_time_password, request)
+        end
       rescue GetIntoTeachingApiClient::ApiError
         errors.add(:timed_one_time_password, :wrong_code)
       end
