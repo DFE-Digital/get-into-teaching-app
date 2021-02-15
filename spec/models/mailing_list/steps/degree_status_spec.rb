@@ -30,4 +30,14 @@ describe MailingList::Steps::DegreeStatus do
     it { is_expected.not_to allow_value("").for :degree_status_id }
     it { is_expected.not_to allow_value(12_345).for :degree_status_id }
   end
+
+  describe "#wizard_magic_link_token_used?" do
+    it { is_expected.not_to be_magic_link_token_used }
+
+    context "when magic link token was used" do
+      before { wizardstore["auth_method"] = Wizard::Base::Auth::MAGIC_LINK_TOKEN }
+
+      it { is_expected.to be_magic_link_token_used }
+    end
+  end
 end

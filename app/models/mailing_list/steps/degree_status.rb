@@ -7,6 +7,8 @@ module MailingList
                 presence: true,
                 inclusion: { in: :degree_status_option_ids }
 
+      delegate :magic_link_token_used?, to: :@wizard
+
       def degree_status_options
         @degree_status_options ||= query_degree_status
       end
