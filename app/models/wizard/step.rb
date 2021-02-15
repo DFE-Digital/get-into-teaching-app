@@ -36,11 +36,24 @@ module Wizard
       true
     end
 
-    def persisted?
-      !id.nil?
+    def show?
+      !skipped? && !hidden?
     end
 
+    # Step not shown and data not exported if skipped
     def skipped?
+      false
+    end
+
+    # Step not shown, but data still exported if hidden
+    def hidden?
+      return false unless optional?
+
+      @store.fetch(attribute_names, source: :crm).values.all?(&:present?)
+    end
+
+    # Step will be hidden if all attributes are pre-filled from CRM
+    def optional?
       false
     end
 

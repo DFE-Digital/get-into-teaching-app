@@ -27,14 +27,68 @@ describe Wizard::Step do
     it { is_expected.to be_instance_of FirstStep }
     it { is_expected.to have_attributes key: "first_step" }
     it { is_expected.to have_attributes id: "first_step" }
-    it { is_expected.to have_attributes persisted?: true }
     it { is_expected.to have_attributes name: "Joe" }
     it { is_expected.to have_attributes age: 20 }
     it { is_expected.to have_attributes skipped?: false }
+    it { is_expected.to have_attributes optional?: false }
+    it { is_expected.to have_attributes can_proceed?: true }
   end
 
-  describe "#can_proceed" do
-    it { expect(subject).to be_can_proceed }
+  describe "#show?" do
+    it "returns true if not hidden or skipped" do
+      allow(subject).to receive(:hidden?) { false }
+      allow(subject).to receive(:skipped?) { false }
+      expect(subject).to be_show
+    end
+
+    it "returns false if hidden but not skipped" do
+      allow(subject).to receive(:hidden?) { true }
+      allow(subject).to receive(:skipped?) { false }
+      expect(subject).not_to be_show
+    end
+
+    it "returns false if skipped but not hidden" do
+      allow(subject).to receive(:hidden?) { false }
+      allow(subject).to receive(:skipped?) { true }
+      expect(subject).not_to be_show
+    end
+  end
+
+  describe "#hidden?" do
+    context "when optional" do
+      before { expect(subject).to receive(:optional?) { true } }
+
+      context "when values for all attributes are present in the CRM" do
+        before do
+          crm_backingstore["name"] = "John"
+          crm_backingstore["age"] = 18
+        end
+
+        it { is_expected.to be_hidden }
+      end
+
+      context "when values for some attributes are present in the CRM" do
+        before do
+          crm_backingstore["name"] = "John"
+          crm_backingstore["age"] = nil
+        end
+
+        it { is_expected.not_to be_hidden }
+      end
+    end
+
+    context "when not optional" do
+      before { expect(subject).to receive(:optional?) { false } }
+
+      context "when values for all attributes are present in the CRM" do
+        before do
+          crm_backingstore["name"] = "John"
+          crm_backingstore["age"] = 18
+        end
+
+        it { is_expected.to_not be_hidden }
+      end
+    end
   end
 
   describe "#flash_error" do
