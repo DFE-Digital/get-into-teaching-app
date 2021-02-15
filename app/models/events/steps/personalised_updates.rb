@@ -19,6 +19,10 @@ module Events
         !@store["subscribe_to_mailing_list"]
       end
 
+      def hide_postcode_field?
+        @store.crm(:address_postcode).present?
+      end
+
       def degree_status_options
         @degree_status_options ||=
           GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_status
