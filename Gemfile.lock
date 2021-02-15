@@ -280,7 +280,7 @@ GEM
       rubocop (>= 0.72.0)
     rubocop-rake (0.5.1)
       rubocop
-    rubocop-rspec (1.39.0)
+    rubocop-rspec (1.41.0)
       rubocop (>= 0.68.1)
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.4)
@@ -383,7 +383,7 @@ DEPENDENCIES
   rspec-sonarqube-formatter (~> 1.4)
   rubocop-govuk (~> 3.14.0)
   rubocop-rails (~> 2.5.2)
-  rubocop-rspec (~> 1.39.0)
+  rubocop-rspec (~> 1.41.0)
   secure_headers
   sentry-raven
   shoulda-matchers
