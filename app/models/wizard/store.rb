@@ -1,7 +1,6 @@
 module Wizard
   class Store
-    attr_reader :data
-    delegate :keys, :to_h, :to_hash, to: :data
+    delegate :keys, :to_h, :to_hash, to: :@data
 
     def initialize(data)
       raise InvalidBackingStore unless data.respond_to?(:[]=)
@@ -10,25 +9,26 @@ module Wizard
     end
 
     def [](key)
-      data[key.to_s]
+      @data[key.to_s]
     end
 
     def []=(key, value)
-      data[key.to_s] = value
+      @data[key.to_s] = value
     end
 
     def fetch(*keys)
-      data.slice(*Array.wrap(keys).flatten.map(&:to_s)).stringify_keys
+      array_of_keys = Array.wrap(keys).flatten.map(&:to_s)
+      Hash[array_of_keys.zip].merge(@data.slice(*array_of_keys))
     end
 
     def persist(attributes)
-      data.merge! attributes.stringify_keys
+      @data.merge! attributes.stringify_keys
 
       true
     end
 
     def purge!
-      data.clear
+      @data.clear
     end
 
     class InvalidBackingStore < RuntimeError; end

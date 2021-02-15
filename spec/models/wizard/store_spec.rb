@@ -10,7 +10,6 @@ describe Wizard::Store do
   describe ".new" do
     context "with valid source data" do
       it { is_expected.to be_instance_of(described_class) }
-      it { is_expected.to have_attributes data: backingstore }
       it { is_expected.to respond_to :[] }
       it { is_expected.to respond_to :[]= }
     end
@@ -57,6 +56,22 @@ describe Wizard::Store do
         is_expected.to eql({ "first_name" => "Joe", "region" => "Manchester" })
       end
     end
+
+    context "when a key is not present in the store" do
+      subject { instance.fetch %w[first_name missing_key] }
+      it "will return it with a nil value in the hash" do
+        is_expected.to eql({ "first_name" => "Joe", "missing_key" => nil })
+      end
+    end
+  end
+
+  describe "#persist" do
+    subject! { instance.persist({ first_name: "Jim", age: 23 }) }
+
+    it { is_expected.to be_truthy }
+    it { expect(instance["first_name"]).to eq("Jim") }
+    it { expect(instance["age"]).to eq(23) }
+    it { expect(instance["region"]).to eq("Manchester") }
   end
 
   describe "#purge!" do
