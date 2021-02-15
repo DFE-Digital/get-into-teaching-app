@@ -1,24 +1,24 @@
 module ApplicationHelper
   def analytics_body_tag(attributes = {}, &block)
-    attributes = attributes.with_indifferent_access
+    attributes = attributes.symbolize_keys
 
     analytics = {
-      "analytics-gtm-id" => ENV["GOOGLE_TAG_MANAGER_ID"],
-      "analytics-adwords-id" => ENV["GOOGLE_AD_WORDS_ID"],
-      "analytics-pinterest-id" => ENV["PINTEREST_ID"],
-      "analytics-snapchat-id" => ENV["SNAPCHAT_ID"],
-      "analytics-facebook-id" => ENV["FACEBOOK_ID"],
-      "analytics-hotjar-id" => ENV["HOTJAR_ID"],
-      "analytics-twitter-id" => ENV["TWITTER_ID"],
-      "analytics-bam-id" => ENV["BAM_ID"],
-      "analytics-lid-id" => ENV["LID_ID"],
-      "pinterest-action" => "page",
-      "snapchat-action" => "track",
-      "snapchat-event" => "PAGE_VIEW",
-      "facebook-action" => "track",
-      "facebook-event" => "PageView",
-      "twitter-action" => "track",
-      "twitter-event" => "PageView",
+      "analytics-gtm-id": ENV["GOOGLE_TAG_MANAGER_ID"],
+      "analytics-adwords-id": ENV["GOOGLE_AD_WORDS_ID"],
+      "analytics-pinterest-id": ENV["PINTEREST_ID"],
+      "analytics-snapchat-id": ENV["SNAPCHAT_ID"],
+      "analytics-facebook-id": ENV["FACEBOOK_ID"],
+      "analytics-hotjar-id": ENV["HOTJAR_ID"],
+      "analytics-twitter-id": ENV["TWITTER_ID"],
+      "analytics-bam-id": ENV["BAM_ID"],
+      "analytics-lid-id": ENV["LID_ID"],
+      "pinterest-action": "page",
+      "snapchat-action": "track",
+      "snapchat-event": "PAGE_VIEW",
+      "facebook-action": "track",
+      "facebook-event": "PageView",
+      "twitter-action": "track",
+      "twitter-event": "PageView",
     }
 
     attributes[:data] ||= {}
@@ -27,7 +27,7 @@ module ApplicationHelper
     attributes[:data][:controller] =
       "gtm pinterest snapchat facebook hotjar twitter #{attributes[:data][:controller]}"
 
-    content_tag :body, attributes, &block
+    tag.body **attributes, &block
   end
 
   def page_title(title, frontmatter)
