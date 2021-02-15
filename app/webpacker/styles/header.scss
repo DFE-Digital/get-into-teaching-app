@@ -76,6 +76,8 @@
     }
 
     &__search {
+      margin-left: 10px;
+
       img {
         display: block;
         width: 50px;
@@ -102,7 +104,9 @@
         display: inline-block;
 
         img {
-          width: 36px;
+          vertical-align: middle;
+          width: 28px;
+          margin-left: 0.2em ;
         }
       }
 
