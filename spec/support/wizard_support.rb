@@ -1,6 +1,7 @@
 shared_context "wizard store" do
   let(:backingstore) { { "name" => "Joe", "age" => 35 } }
-  let(:wizardstore) { Wizard::Store.new backingstore }
+  let(:crm_backingstore) { {} }
+  let(:wizardstore) { Wizard::Stores::Combined.new backingstore, crm_backingstore }
 end
 
 shared_context "wizard step" do

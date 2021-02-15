@@ -14,11 +14,15 @@ module MailingList
     helper_method :step_path
 
     def wizard_store
-      ::Wizard::Store.new session_store
+      ::Wizard::Stores::Combined.new app_store, crm_store
     end
 
-    def session_store
+    def app_store
       session[:mailinglist] ||= {}
+    end
+
+    def crm_store
+      session[:mailinglist_crm] ||= {}
     end
 
     def set_step_page_title

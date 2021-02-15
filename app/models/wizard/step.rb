@@ -40,8 +40,14 @@ module Wizard
       !id.nil?
     end
 
-    def skipped?
+    def optional?
       false
+    end
+
+    def skipped?
+      return false unless optional?
+
+      @store.fetch(attribute_names, source: :crm).values.all?(&:present?)
     end
 
     def flash_error(message)
@@ -57,7 +63,7 @@ module Wizard
   private
 
     def attributes_from_store
-      @store.fetch attributes.keys
+      @store.fetch(attributes.keys).compact
     end
 
     def persist_to_store

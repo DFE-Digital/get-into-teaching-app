@@ -49,7 +49,8 @@ private
     token = request.query_parameters[:magic_link_token]
     return if token.blank?
 
-    @wizard.process_magic_link_token(token)
+    hash = @wizard.process_magic_link_token(token)
+    wizard_store.persist(hash, source: :crm)
     redirect_to(step_path(@wizard.next_key(Wizard::Steps::Authenticate.key)))
   rescue GetIntoTeachingApiClient::ApiError => e
     handle_magic_link_token_error(e) && return if e.code == 401

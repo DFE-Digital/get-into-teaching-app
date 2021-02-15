@@ -98,7 +98,7 @@ module Wizard
     end
 
     def export_data
-      matchback_data = @store.fetch(MATCHBACK_ATTRS)
+      matchback_data = @store.fetch(MATCHBACK_ATTRS).compact
       step_data = all_steps.map(&:export).reduce({}, :merge)
 
       step_data.merge!(matchback_data)
@@ -106,12 +106,12 @@ module Wizard
 
     def process_magic_link_token(token)
       response = exchange_magic_link_token(token)
-      prepopulate_store(response)
+      transform_response_keys(response)
     end
 
     def process_access_token(token, request)
       response = exchange_access_token(token, request)
-      prepopulate_store(response)
+      transform_response_keys(response)
     end
 
   protected
@@ -126,9 +126,8 @@ module Wizard
 
   private
 
-    def prepopulate_store(response)
-      hash = response.to_hash.transform_keys { |k| k.to_s.underscore }
-      @store.persist(hash)
+    def transform_response_keys(response)
+      response.to_hash.transform_keys { |k| k.to_s.underscore }
     end
 
     def all_steps

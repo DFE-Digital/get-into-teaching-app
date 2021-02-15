@@ -77,10 +77,7 @@ describe Wizard::Base do
         receive(:exchange_magic_link_token).with(token) { stub_response }
     end
 
-    subject do
-      wizard.process_magic_link_token(token)
-      wizardstore.fetch(%w[candidate_id first_name last_name email])
-    end
+    subject { wizard.process_magic_link_token(token) }
 
     it { is_expected.to eq response_hash }
 
@@ -113,10 +110,7 @@ describe Wizard::Base do
         receive(:exchange_access_token).with(token, request) { stub_response }
     end
 
-    subject do
-      wizard.process_access_token(token, request)
-      wizardstore.fetch(%w[candidate_id first_name last_name email])
-    end
+    subject { wizard.process_access_token(token, request) }
 
     it { is_expected.to eq response_hash }
 

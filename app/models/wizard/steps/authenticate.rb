@@ -34,7 +34,7 @@ module Wizard
       end
 
       def candidate_identity_data
-        @store.fetch(IDENTITY_ATTRS).transform_keys do |k|
+        @store.fetch(IDENTITY_ATTRS).compact.transform_keys do |k|
           k.camelize(:lower).to_sym
         end
       end
@@ -54,7 +54,10 @@ module Wizard
 
       def timed_one_time_password_is_correct
         request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(candidate_identity_data)
-        @wizard.process_access_token(timed_one_time_password, request) if timed_one_time_password_changed?
+        if timed_one_time_password_changed?
+          hash = @wizard.process_access_token(timed_one_time_password, request)
+          @store.persist(hash, source: :crm)
+        end
         clear_attribute_changes(%i[timed_one_time_password])
       rescue GetIntoTeachingApiClient::ApiError
         errors.add(:timed_one_time_password, :wrong_code)
