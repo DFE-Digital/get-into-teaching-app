@@ -82,7 +82,7 @@ RSpec.describe Pages::Frontmatter do
     end
   end
 
-  subject "#[]" do
+  describe "#[]" do
     subject { instance[page] }
 
     it_behaves_like "page loading"
