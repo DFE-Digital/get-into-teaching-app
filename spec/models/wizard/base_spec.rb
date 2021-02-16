@@ -12,6 +12,7 @@ describe Wizard::Base do
     it do
       is_expected.to eql \
         "name" => TestWizard::Name,
+        "other_age" => TestWizard::OtherAge,
         "age" => TestWizard::Age,
         "postcode" => TestWizard::Postcode
     end
@@ -30,7 +31,7 @@ describe Wizard::Base do
 
   describe ".key_index" do
     it "will return index for known step" do
-      expect(wizardclass.key_index("age")).to eql 1
+      expect(wizardclass.key_index("age")).to eql 2
     end
 
     it "will raise exception for unknown step" do
@@ -41,7 +42,7 @@ describe Wizard::Base do
 
   describe ".step_keys" do
     subject { wizardclass.step_keys }
-    it { is_expected.to eql %w[name age postcode] }
+    it { is_expected.to eql %w[name other_age age postcode] }
   end
 
   describe ".first_key" do
@@ -120,7 +121,7 @@ describe Wizard::Base do
 
     it { is_expected.to eq response_hash }
 
-    context "when the wizard does not implement exchange_magic_link_token" do
+    context "when the wizard does not implement exchange_access_token" do
       before do
         allow_any_instance_of(TestWizard).to \
           receive(:exchange_access_token).with(token, request)
@@ -143,12 +144,12 @@ describe Wizard::Base do
 
   describe "#later_keys" do
     subject { wizardclass.new(wizardstore, "name").later_keys }
-    it { is_expected.to eql %w[age postcode] }
+    it { is_expected.to eql %w[other_age age postcode] }
   end
 
   describe "#earlier_keys" do
     subject { wizardclass.new(wizardstore, "postcode").earlier_keys }
-    it { is_expected.to eql %w[name age] }
+    it { is_expected.to eql %w[name other_age age] }
   end
 
   describe "#find" do
@@ -165,7 +166,7 @@ describe Wizard::Base do
   describe "#previous_key" do
     context "when there are earlier steps" do
       subject { wizard.previous_key("age") }
-      it { is_expected.to eql "name" }
+      it { is_expected.to eql "other_age" }
     end
 
     context "when there are no earlier steps" do
@@ -175,7 +176,7 @@ describe Wizard::Base do
 
     context "when no key supplied" do
       subject { wizard.previous_key }
-      it { is_expected.to eql "name" }
+      it { is_expected.to eql "other_age" }
     end
   end
 
@@ -248,6 +249,8 @@ describe Wizard::Base do
     before do
       allow_any_instance_of(TestWizard::Age).to \
         receive(:skipped?).and_return true
+      allow_any_instance_of(TestWizard::OtherAge).to \
+        receive(:skipped?).and_return true
     end
 
     let(:current_step) { "name" }
@@ -290,13 +293,32 @@ describe Wizard::Base do
 
     context "with skipped step" do
       before do
-        allow_any_instance_of(TestWizard::Age).to \
+        allow_any_instance_of(TestWizard::Name).to \
           receive(:skipped?).and_return true
       end
 
-      it { is_expected.to include "name" => "Joe" }
-      it { is_expected.to include "age" => nil }
+      it { is_expected.to include "name" => nil }
+      it { is_expected.to include "age" => 35 }
       it { is_expected.to include "postcode" => nil }
+    end
+
+    context "when a skipped step preceeds a shown step using the same attribute and crm data is present for the field" do
+      let(:crm_backingstore) { { "age" => 22 } }
+      let(:backingstore) { { "age" => 33 } }
+
+      before do
+        allow_any_instance_of(TestWizard::OtherAge).to \
+          receive(:skipped?).and_return true
+      end
+
+      it { is_expected.to include "age" => 33 }
+
+      context "when exporting the skipped step" do
+        it "contains the crm value" do
+          skipped_step = wizard.find(TestWizard::OtherAge.key)
+          expect(skipped_step.export["age"]).to eq(22)
+        end
+      end
     end
 
     context "when the store was populated with matchback data" do

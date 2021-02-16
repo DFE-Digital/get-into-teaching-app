@@ -99,8 +99,10 @@ module Wizard
 
     def export_data
       matchback_data = @store.fetch(MATCHBACK_ATTRS)
-      step_data = all_steps.map(&:export).reduce({}, :merge)
-
+      # Ensure skipped step data is overwritten by shown step data.
+      # Important as two steps can write to the same attribute.
+      skipped_steps_first = all_steps.partition(&:skipped?).flatten
+      step_data = skipped_steps_first.map(&:export).reduce({}, :merge)
       step_data.merge!(matchback_data)
     end
 
