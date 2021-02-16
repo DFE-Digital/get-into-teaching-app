@@ -1,6 +1,6 @@
 module Sections
   class HeroComponent < ViewComponent::Base
-    attr_accessor :title, :subtitle, :image, :mobile_image, :show_mailing_list
+    attr_accessor :title, :subtitle, :image, :show_mailing_list
 
     def initialize(front_matter)
       front_matter.with_indifferent_access.tap do |fm|
@@ -21,11 +21,8 @@ module Sections
       image.present?
     end
 
-    def responsive_image
-      image_sizes = [%(#{image_path} 800w)]
-      image_sizes << %(#{mobile_image_path} 600w) if mobile_image.present?
-
-      image_tag(image_path, class: "hero__img", srcset: image_sizes.join(", "), alt: "Student in a classroom")
+    def background_image
+      tag.div(class: "hero__img", style: "background-image: url(#{image_path})")
     end
 
     def show_subtitle?

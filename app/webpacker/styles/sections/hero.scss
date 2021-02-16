@@ -5,10 +5,6 @@ $mobile-cutoff: 800px;
 
 // fallback styles (IE)
 .hero {
-  @include mq($from: tablet) {
-    max-height: 30em;
-  }
-
   &__title {
     display: block;
     max-width: 90%;
@@ -72,7 +68,7 @@ $mobile-cutoff: 800px;
 
     grid-template-columns: 3em repeat(3, 1fr);
     grid-template-rows:
-      max-content $title-overlap-img repeat(
+      8em $title-overlap-img repeat(
         2,
         minmax(1em, max-content)
       );
@@ -196,8 +192,9 @@ $mobile-cutoff: 800px;
   &__img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     @include safari-only {
       max-height: 30em;

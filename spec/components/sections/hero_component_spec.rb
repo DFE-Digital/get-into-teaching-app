@@ -58,18 +58,8 @@ describe Sections::HeroComponent, type: "component" do
 
       context "when an image is present in the front matter" do
         specify "the hero renders it" do
-          img_tag = page.find("img.hero__img")
-          img_tag[:src].match?(Regexp.new(front_matter[:image].delete_suffix(".jpg")))
-        end
-      end
-
-      describe "responsive images" do
-        let(:component) { described_class.new(front_matter.merge(mobileimage: "media/images/events-hero-mob.jpg")) }
-
-        specify "the image's srcset should contain desktop and mobile" do
-          img_tag = page.find("img.hero__img")
-
-          expect(img_tag[:srcset].split(",").map { |img| img.split.last }).to match_array(%w[600w 800w])
+          expect(page).to have_css(%(div.hero__img))
+          expect(rendered_component).to match(/images\/hero-home-dt-[0-9a-f]+\.jpg/)
         end
       end
     end
