@@ -27,6 +27,7 @@ describe Wizard::Step do
     it { is_expected.to be_instance_of FirstStep }
     it { is_expected.to have_attributes key: "first_step" }
     it { is_expected.to have_attributes id: "first_step" }
+    it { is_expected.to have_attributes persisted?: true }
     it { is_expected.to have_attributes name: "Joe" }
     it { is_expected.to have_attributes age: 20 }
     it { is_expected.to have_attributes skipped?: false }
@@ -34,27 +35,7 @@ describe Wizard::Step do
     it { is_expected.to have_attributes can_proceed?: true }
   end
 
-  describe "#show?" do
-    it "returns true if not hidden or skipped" do
-      allow(subject).to receive(:hidden?) { false }
-      allow(subject).to receive(:skipped?) { false }
-      expect(subject).to be_show
-    end
-
-    it "returns false if hidden but not skipped" do
-      allow(subject).to receive(:hidden?) { true }
-      allow(subject).to receive(:skipped?) { false }
-      expect(subject).not_to be_show
-    end
-
-    it "returns false if skipped but not hidden" do
-      allow(subject).to receive(:hidden?) { false }
-      allow(subject).to receive(:skipped?) { true }
-      expect(subject).not_to be_show
-    end
-  end
-
-  describe "#hidden?" do
+  describe "#skipped?" do
     context "when optional" do
       before { expect(subject).to receive(:optional?) { true } }
 
@@ -64,7 +45,7 @@ describe Wizard::Step do
           crm_backingstore["age"] = 18
         end
 
-        it { is_expected.to be_hidden }
+        it { is_expected.to be_skipped }
       end
 
       context "when values for some attributes are present in the CRM" do
@@ -73,7 +54,7 @@ describe Wizard::Step do
           crm_backingstore["age"] = nil
         end
 
-        it { is_expected.not_to be_hidden }
+        it { is_expected.not_to be_skipped }
       end
     end
 
@@ -86,7 +67,7 @@ describe Wizard::Step do
           crm_backingstore["age"] = 18
         end
 
-        it { is_expected.to_not be_hidden }
+        it { is_expected.to_not be_skipped }
       end
     end
   end
@@ -123,5 +104,14 @@ describe Wizard::Step do
     subject { instance.export }
     it { is_expected.to include "name" => "Joe" }
     it { is_expected.to include "age" => nil } # should only export persisted data
+
+    context "when the step is skipped" do
+      let(:crm_backingstore) { { "name" => "Jimmy" } }
+
+      before { expect(instance).to receive(:skipped?) { true } }
+
+      it { is_expected.to include "name" => "Jimmy" }
+      it { is_expected.to include "age" => nil } # should only export persisted data
+    end
   end
 end

@@ -52,13 +52,13 @@ module Wizard
 
     def previous_key(key = current_key)
       earlier_keys(key).reverse.find do |k|
-        find(k).show?
+        !find(k).skipped?
       end
     end
 
     def next_key(key = current_key)
       later_keys(key).find do |k|
-        find(k).show?
+        !find(k).skipped?
       end
     end
 
@@ -136,7 +136,7 @@ module Wizard
     end
 
     def active_steps
-      all_steps.select(&:show?)
+      all_steps.reject(&:skipped?)
     end
   end
 end

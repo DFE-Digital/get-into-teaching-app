@@ -295,7 +295,7 @@ describe Wizard::Base do
       end
 
       it { is_expected.to include "name" => "Joe" }
-      it { is_expected.not_to include "age" }
+      it { is_expected.to include "age" => nil }
       it { is_expected.to include "postcode" => nil }
     end
 

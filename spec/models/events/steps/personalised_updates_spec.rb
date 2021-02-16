@@ -82,6 +82,21 @@ describe Events::Steps::PersonalisedUpdates do
     end
   end
 
+  describe "#export" do
+    let(:backingstore) { { "subscribe_to_mailing_list" => true, "address_postcode" => "app-postcode" } }
+    let(:crm_backingstore) { {} }
+
+    subject { instance.export["address_postcode"] }
+
+    it { is_expected.to eq("app-postcode") }
+
+    context "when the postcode exists in the CRM" do
+      let(:crm_backingstore) { { "address_postcode" => "crm-postcode" } }
+
+      it { is_expected.to eq("crm-postcode") }
+    end
+  end
+
   describe "#teaching_subject_options" do
     let(:teaching_subject_types) do
       subjects = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.merge(
