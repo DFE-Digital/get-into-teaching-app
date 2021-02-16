@@ -7,6 +7,7 @@ describe MailingList::Steps::Postcode do
   let(:msg) { "Enter a valid postcode" }
 
   it { is_expected.to respond_to :address_postcode }
+  it { expect(subject).to be_optional }
 
   describe "validations for address_postcode" do
     it { is_expected.to allow_value("TE57 1NG").for :address_postcode }

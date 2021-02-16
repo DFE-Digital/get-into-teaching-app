@@ -19,6 +19,16 @@ module Events
         !@store["subscribe_to_mailing_list"]
       end
 
+      def hide_postcode_field?
+        postcode_in_crm.present?
+      end
+
+      def export
+        super.tap do |hash|
+          hash["address_postcode"] = postcode_in_crm if hide_postcode_field?
+        end
+      end
+
       def degree_status_options
         @degree_status_options ||=
           GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_status
@@ -46,6 +56,12 @@ module Events
 
       def teaching_subject_option_ids
         teaching_subject_options.map(&:id)
+      end
+
+    private
+
+      def postcode_in_crm
+        @store.crm(:address_postcode)
       end
     end
   end
