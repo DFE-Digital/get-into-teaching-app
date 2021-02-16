@@ -192,8 +192,9 @@ $mobile-cutoff: 800px;
   &__img {
     height: 100%;
     width: 100%;
-    object-fit: cover;
-    object-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
     @include safari-only {
       max-height: 30em;
