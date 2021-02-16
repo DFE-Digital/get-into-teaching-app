@@ -68,7 +68,7 @@ $mobile-cutoff: 800px;
 
     grid-template-columns: 3em repeat(3, 1fr);
     grid-template-rows:
-      max-content $title-overlap-img repeat(
+      8em $title-overlap-img repeat(
         2,
         minmax(1em, max-content)
       );
