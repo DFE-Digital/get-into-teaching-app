@@ -2,7 +2,6 @@
 
 # Configure sensitive parameters which will be filtered from the log file.
 Rails.application.config.filter_parameters += %i[
-  address_postcode
   email
   first_name
   last_name
