@@ -14,6 +14,12 @@
 
     <main class="semantic" role="main" id="main-content">
       <section class="container">
+        <% if !@front_matter["image"] %>
+          <header>
+            <%= tag.h1(@front_matter["title"]) %>
+          </header>
+        <% end %>
+
         <% if @front_matter["fullwidth"].blank? %>
         <aside>
           <% if @front_matter["jump_links"].present? %>
@@ -45,9 +51,6 @@
         <% end %>
 
         <article class="markdown <%= "fullwidth" if @front_matter["fullwidth"] %> ">
-          <% if !@front_matter["image"] %>
-            <%= tag.h1(@front_matter["title"]) %>
-          <% end %>
 
           <% if @front_matter["alert"].present? %>
             <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>

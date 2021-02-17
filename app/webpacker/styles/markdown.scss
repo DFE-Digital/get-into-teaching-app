@@ -3,8 +3,11 @@
   @mixin overhang { margin-left: auto; margin-right: auto; }
 
   > * {
-    margin-left: $indent-amount;
-    margin-right: $indent-amount;
+    @include indent-left-and-right;
+  }
+
+  h1 {
+    font-size: size('xxlarge');
   }
 
   // allow level two headings (blue boxes) and CTAs to 'overhang' on the left
