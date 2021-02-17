@@ -4,6 +4,11 @@ module Wizard
   class AccessTokenNotSupportedError < RuntimeError; end
 
   class Base
+    module Auth
+      ACCESS_TOKEN = 0
+      MAGIC_LINK_TOKEN = 1
+    end
+
     MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
 
     class_attribute :steps
@@ -90,6 +95,14 @@ module Wizard
       steps[(key_index(key) + 1)..].to_a.map(&:key)
     end
 
+    def magic_link_token_used?
+      @store["auth_method"] == Auth::MAGIC_LINK_TOKEN
+    end
+
+    def access_token_used?
+      @store["auth_method"] == Auth::ACCESS_TOKEN
+    end
+
     def earlier_keys(key = current_key)
       index = key_index(key)
       return [] unless index.positive?
@@ -108,12 +121,12 @@ module Wizard
 
     def process_magic_link_token(token)
       response = exchange_magic_link_token(token)
-      prepopulate_store(response)
+      prepopulate_store(response, Auth::MAGIC_LINK_TOKEN)
     end
 
     def process_access_token(token, request)
       response = exchange_access_token(token, request)
-      prepopulate_store(response)
+      prepopulate_store(response, Auth::ACCESS_TOKEN)
     end
 
   protected
@@ -128,9 +141,10 @@ module Wizard
 
   private
 
-    def prepopulate_store(response)
+    def prepopulate_store(response, auth_method)
       hash = response.to_hash.transform_keys { |k| k.to_s.underscore }
       @store.persist_crm(hash)
+      @store["auth_method"] = auth_method
     end
 
     def all_steps

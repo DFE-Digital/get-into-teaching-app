@@ -56,6 +56,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next Step"
 
+    expect(page).to_not have_text "Tell us more about you so that you only get emails relevant to your circumstances."
+
     expect(page).to have_text "What stage are you at with your degree?"
     choose "I am a first year student"
     click_on "Next Step"
@@ -273,6 +275,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }
 
     visit mailing_list_steps_path(magic_link_token: token)
+
+    expect(page).to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
 
     expect(page).to have_text "What stage are you at with your degree?"
     expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
