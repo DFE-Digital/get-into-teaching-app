@@ -61,6 +61,21 @@ section.container {
     max-width: $content-max-width;
   }
 
+  // most pages won't have a h1 here but on those where
+  // we forego the hero we want it to span both the article
+  // and the aside.
+  header {
+    flex: 0 0 100%;
+    max-width: $content-max-width;
+
+    h1 {
+      @include indent-left-and-right;
+
+      font-size: size(xxlarge);
+      margin-bottom: .5rem;
+    }
+  }
+
   > article {
     flex: 0 1 65%;
 
