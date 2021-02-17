@@ -16,6 +16,11 @@
   &__header {
     h2 {
       font-size: size("large");
+      background-color: inherit;
+      color: $black;
+      padding: .2em 0;
+
+      &:after { content: unset; }
     }
   }
 
