@@ -24,7 +24,7 @@
     &:before {
       @include quote-icon($quote-size);
       position: absolute;
-      left: size("small");
+      left: .4em;
     }
 
     &:after {
@@ -41,6 +41,8 @@
 
     p {
       @include fancy-quotes;
+      margin: 0;
+      padding: 1em 1.6em;
     }
 
     @include mq($until: mobile) {
@@ -53,14 +55,22 @@
   }
 
   figure {
-    background-color: $yellow;
     @include quote;
+
+    @include mq($until: tablet) {
+      max-width: inherit;
+      float: none;
+      @include reset;
+      padding: 1em 0;
+    }
 
     &.right {
       float: right;
     }
 
     blockquote {
+      margin: 1em 2rem;
+
       p {
         @include fancy-quotes;
         @include reset;
@@ -68,7 +78,7 @@
     }
 
     figcaption {
-      margin: 1em 2em 1em 3em;
+      margin: 1em 2rem 1em 3em;
       text-align: right;
       font-size: smaller;
     }
