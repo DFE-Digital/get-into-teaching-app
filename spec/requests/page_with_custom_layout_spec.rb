@@ -14,16 +14,6 @@ describe "rendering pages with a custom layout" do
     it { is_expected.to include("Check your qualifications") }
   end
 
-  context "with an accordion layout" do
-    before { get "/accordion-page" }
-    subject { response.body }
-
-    it { expect(response).to have_http_status(200) }
-    it { is_expected.to include("Accordion Page Test") }
-    it { is_expected.to include("Step 1") }
-    it { is_expected.to include("Step 2") }
-  end
-
   context "with a stories/story layout" do
     before { get "/stories/story-page" }
     subject { response.body }
