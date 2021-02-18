@@ -24,7 +24,10 @@ module MailingList
 
     def exchange_access_token(timed_one_time_password, request)
       @api ||= GetIntoTeachingApiClient::MailingListApi.new
-      @api.exchange_access_token_for_mailing_list_add_member(timed_one_time_password, request)
+      response = @api.exchange_access_token_for_mailing_list_add_member(timed_one_time_password, request)
+      # TEMP: debugging invalid postcode issue
+      Rails.logger.info("MailingList::Wizard#exchange_access_token with postcode: #{response.address_postcode}")
+      response
     end
 
   protected
@@ -39,6 +42,8 @@ module MailingList
     def add_member_to_mailing_list
       request = GetIntoTeachingApiClient::MailingListAddMember.new(export_camelized_hash)
       api = GetIntoTeachingApiClient::MailingListApi.new
+      # TEMP: debugging invalid postcode issue
+      Rails.logger.info("MailingList::Wizard#add_mailing_list_member with postcode: #{request.address_postcode}")
       api.add_mailing_list_member(request)
     end
   end
