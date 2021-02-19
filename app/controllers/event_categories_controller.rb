@@ -4,6 +4,8 @@ class EventCategoriesController < ApplicationController
   before_action :load_type, :load_events, :set_form_action
   layout "events"
 
+  breadcrumb "Find an event near you", :events_path
+
   EVENTS_PER_PAGE = 9
   MAXIMUM_EVENTS_IN_CATEGORY = 1_000
 
@@ -13,6 +15,9 @@ class EventCategoriesController < ApplicationController
 
   def show_archive
     raise_not_found && return unless has_archive?(@type)
+
+    category_name = t("event_types.#{@type.id}.name.plural")
+    breadcrumb category_name, event_category_path(category_name.parameterize)
 
     render :show
   end
