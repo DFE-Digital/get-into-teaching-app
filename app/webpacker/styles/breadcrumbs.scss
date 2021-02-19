@@ -1,10 +1,9 @@
-.breadcrumb {
+.breadcrumb ol {
   display: flex;
   flex-wrap: wrap;
   box-sizing: border-box;
-  padding: 0 0 0 1.5em;
-  margin: 0;
-  max-width: calc(100% - 1.5em);
+  padding: 0.5rem $indent-amount;
+  margin: $indent-amount 0 0 0;
   list-style: none;
   * {
     box-sizing: border-box;
@@ -40,12 +39,9 @@
       }
     }
   }
-  &--hero {
-    padding: 0.2rem 1.5rem 0.5em;
-    margin: 0 0 1.5em;
-    background: $grey;
-  }
-  & + h1 {
-    margin-top: 10px;
-  }
+}
+
+.breadcrumb--hero ol {
+  background: $grey;
+  margin: 0;
 }

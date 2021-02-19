@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Navbar::NavbarComponent, type: "component" do
+describe Navigation::NavbarComponent, type: "component" do
   let(:all_frontmatter) do
     { "/mock-path" => { title: "Mock title", navigation: 20 } }
   end
