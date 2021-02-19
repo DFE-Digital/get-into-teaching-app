@@ -42,7 +42,7 @@ describe Stories::StoryComponent, type: "component" do
   end
 
   describe "layout elements" do
-    it { is_expected.to have_css(".container .markdown.no-hero") }
+    it { is_expected.to have_css(".container .markdown") }
     it { is_expected.to have_css(".container .feature") }
   end
 
