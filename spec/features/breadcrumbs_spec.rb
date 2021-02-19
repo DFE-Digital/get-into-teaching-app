@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Breadcrumbs", type: :feature do
-  include_context "use fixture markdown pages"
+  include_context "prepend fake views"
   include_context "stub types api"
 
   let(:event) { GetIntoTeachingApiClient::TeachingEvent.new(statusId: 1) }
@@ -17,20 +17,20 @@ RSpec.feature "Breadcrumbs", type: :feature do
   subject { page }
 
   context "when visiting the home page" do
-    let(:path) { "/home" }
+    let(:path) { "/home-page" }
 
     it { is_expected.to_not have_css(".breadcrumb") }
   end
 
   context "when visiting a content page" do
-    let(:path) { page_path("story-section/story-listing/story") }
+    let(:path) { page_path("test/subfolder/nested") }
 
     it { is_expected.to have_css(".breadcrumb") }
 
     it "links to all ancestor pages" do
       page.within ".breadcrumb" do
-        is_expected.to have_link "Story Listing Page", href: "/story-section/story-listing"
-        is_expected.to have_link "Story Section Page", href: "/story-section"
+        is_expected.to have_link "Subfolder", href: "/test/subfolder"
+        is_expected.to have_link "Test", href: "/test"
         is_expected.to have_link "Home", href: "/"
       end
     end
@@ -43,19 +43,19 @@ RSpec.feature "Breadcrumbs", type: :feature do
   end
 
   context "when visiting the stories landing page" do
-    let(:path) { page_path("stories-landing") }
+    let(:path) { page_path("stories/landing-page") }
 
     it { is_expected.to have_css(".breadcrumb") }
   end
 
   context "when visiting the story listing page" do
-    let(:path) { page_path("story-section/story-listing") }
+    let(:path) { page_path("stories/list-page") }
 
     it { is_expected.to have_css(".breadcrumb") }
   end
 
   context "when visiting the story page" do
-    let(:path) { page_path("story-section/story-listing/story") }
+    let(:path) { page_path("stories/story-page") }
 
     it { is_expected.to have_css(".breadcrumb") }
   end

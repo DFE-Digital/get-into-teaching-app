@@ -47,12 +47,6 @@ RSpec.describe Pages::Page do
   describe "#parent" do
     subject { described_class.find(path).parent&.path }
 
-    context "when the home page" do
-      let(:path) { "/home" }
-
-      it { is_expected.to be_nil }
-    end
-
     context "when a top-level page" do
       let(:path) { "/first" }
 
@@ -61,15 +55,15 @@ RSpec.describe Pages::Page do
 
     context "when a sub-page" do
       context "when the sub-page has a parent" do
-        let(:path) { "/story-section/story-listing" }
+        let(:path) { "/subfolder/page2" }
 
-        it { is_expected.to eq("/story-section") }
+        it { is_expected.to eq("/subfolder") }
       end
 
       context "when the sub-page does not have an immediate parent" do
-        let(:path) { "/story-section/story-listing/other-story/story" }
+        let(:path) { "/subfolder/transient/page3" }
 
-        it { is_expected.to eq("/story-section/story-listing") }
+        it { is_expected.to eq("/subfolder") }
       end
     end
   end
@@ -77,12 +71,6 @@ RSpec.describe Pages::Page do
   describe "#ancestors" do
     subject { described_class.find(path).ancestors.map(&:path) }
 
-    context "when the home page" do
-      let(:path) { "/home" }
-
-      it { is_expected.to be_empty }
-    end
-
     context "when a top-level page" do
       let(:path) { "/first" }
 
@@ -91,15 +79,15 @@ RSpec.describe Pages::Page do
 
     context "when a sub-page" do
       context "when the sub-page has a parent" do
-        let(:path) { "/story-section/story-listing" }
+        let(:path) { "/subfolder/page2" }
 
-        it { is_expected.to eq(["/story-section"]) }
+        it { is_expected.to eq(["/subfolder"]) }
       end
 
-      context "when the sub-page does not have an immediate parent" do
-        let(:path) { "/story-section/story-listing/other-story/story" }
+      context "when the sub-page has multiple parents" do
+        let(:path) { "/subfolder/other/page4" }
 
-        it { is_expected.to eq(["/story-section/story-listing", "/story-section"]) }
+        it { is_expected.to eq(["/subfolder/other", "/subfolder"]) }
       end
     end
   end
