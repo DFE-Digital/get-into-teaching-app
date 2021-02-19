@@ -4,7 +4,7 @@ class EventCategoriesController < ApplicationController
   before_action :load_type, :load_events, :set_form_action
   layout "events"
 
-  breadcrumb "Find an event near you", :events_path
+  breadcrumb "events.search", :events_path
 
   EVENTS_PER_PAGE = 9
   MAXIMUM_EVENTS_IN_CATEGORY = 1_000

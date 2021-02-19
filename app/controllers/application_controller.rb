@@ -18,7 +18,7 @@ private
   def add_home_breadcrumb
     return if request.path == root_path
 
-    breadcrumb "Home", :root_path
+    breadcrumb "home", :root_path
   end
 
   def handle_api_error(error)
