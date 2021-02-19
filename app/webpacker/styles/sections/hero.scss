@@ -121,7 +121,7 @@ $mobile-cutoff: 800px;
       }
 
       &__content {
-        grid-area: 5 / 1 / 7 / 5;
+        grid-area: 5 / 1 / 7 / 4;
       }
 
       &__img {
@@ -131,7 +131,7 @@ $mobile-cutoff: 800px;
 
     @include mq($from: wide) {
       &__content {
-        grid-area: 5 / 2 / 7 / 5;
+        grid-area: 5 / 2 / 7 / 4;
       }
     }
   }
