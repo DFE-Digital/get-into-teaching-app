@@ -39,6 +39,10 @@ $space-between-sections: 3.7em;
     border: 3px solid $purple;
     padding: 1em;
 
+    @include mq($until: tablet) {
+      margin: 0 $indent-amount;
+    }
+
     h3 {
       font-size: size('small');
       margin: .2em auto .1em;
