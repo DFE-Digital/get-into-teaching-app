@@ -1,0 +1,70 @@
+$px-either-side-of-content: 15px;
+$space-between-sections: 3.7em;
+
+// blocks is a utility class that allows a several
+// items of block content on a page; on desktop they'll
+// be in a row and on mobile in a column
+.blocks {
+  display: flex;
+  gap: 1em;
+
+  // This is a fix to make IE display the content
+  // centrally.
+  margin: $space-between-sections auto 0;
+  @supports (display: grid) {
+    margin: $space-between-sections $px-either-side-of-content 0;
+  }
+
+  > * {
+    flex: 1 0;
+
+    // this can be deleted once gap is supported by
+    // Safari, it's currently only in the TP (tech preview)
+    // build https://caniuse.com/?search=gap
+    @include safari-only {
+      margin: .3em;
+    }
+
+    @include ie-only {
+      margin: .3em;
+    }
+  }
+
+  @include mq($until: tablet) {
+    flex-direction: column;
+    margin: 1em;
+  }
+
+  &__directory {
+    border: 3px solid $purple;
+    padding: 1em;
+
+    h3 {
+      font-size: size('small');
+      margin: .2em auto .1em;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li > a {
+        font-size: size('xsmall');
+        color: $black;
+        line-height: 1.8em;
+        text-underline-offset: .2em;
+
+        &:hover {
+          color: $purple;
+          text-decoration: underline;
+          text-decoration-thickness: .12em;
+        }
+      }
+    }
+  }
+
+  &__icon {
+    // placeholders for now
+    font-size: size('xlarge');
+  }
+}
