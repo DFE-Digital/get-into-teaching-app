@@ -1,5 +1,0 @@
----
-title: Page
----
-
-Some content

@@ -61,21 +61,15 @@ RSpec.describe Pages::Page do
 
     context "when a sub-page" do
       context "when the sub-page has a parent" do
-        let(:path) { "/subfolder/page2" }
+        let(:path) { "/story-section/story-listing" }
 
-        it { is_expected.to eq("/subfolder") }
+        it { is_expected.to eq("/story-section") }
       end
 
       context "when the sub-page does not have an immediate parent" do
-        let(:path) { "/subfolder/sub-subfolder/page" }
+        let(:path) { "/story-section/story-listing/other-story/story" }
 
-        it { is_expected.to eq("/subfolder") }
-      end
-
-      context "when the sub-page has multiple parents" do
-        let(:path) { "/subfolder/sub-subfolder/sub-sub-subfolder/page" }
-
-        it { is_expected.to eq("/subfolder/sub-subfolder/sub-sub-subfolder") }
+        it { is_expected.to eq("/story-section/story-listing") }
       end
     end
   end
@@ -97,21 +91,15 @@ RSpec.describe Pages::Page do
 
     context "when a sub-page" do
       context "when the sub-page has a parent" do
-        let(:path) { "/subfolder/page2" }
+        let(:path) { "/story-section/story-listing" }
 
-        it { is_expected.to eq(["/subfolder"]) }
+        it { is_expected.to eq(["/story-section"]) }
       end
 
       context "when the sub-page does not have an immediate parent" do
-        let(:path) { "/subfolder/sub-subfolder/page" }
+        let(:path) { "/story-section/story-listing/other-story/story" }
 
-        it { is_expected.to eq(["/subfolder"]) }
-      end
-
-      context "when the sub-page has multiple parents" do
-        let(:path) { "/subfolder/sub-subfolder/sub-sub-subfolder/page" }
-
-        it { is_expected.to eq(["/subfolder/sub-subfolder/sub-sub-subfolder", "/subfolder"]) }
+        it { is_expected.to eq(["/story-section/story-listing", "/story-section"]) }
       end
     end
   end

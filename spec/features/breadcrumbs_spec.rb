@@ -23,14 +23,14 @@ RSpec.feature "Breadcrumbs", type: :feature do
   end
 
   context "when visiting a content page" do
-    let(:path) { page_path("subfolder/sub-subfolder/sub-sub-subfolder/page") }
+    let(:path) { page_path("story-section/story-listing/story") }
 
     it { is_expected.to have_css(".breadcrumb") }
 
     it "links to all ancestor pages" do
       page.within ".breadcrumb" do
-        is_expected.to have_link "Sub-Sub-Subfolder", href: "/subfolder/sub-subfolder/sub-sub-subfolder"
-        is_expected.to have_link "Subfolder", href: "/subfolder"
+        is_expected.to have_link "Story Listing Page", href: "/story-section/story-listing"
+        is_expected.to have_link "Story Section Page", href: "/story-section"
         is_expected.to have_link "Home", href: "/"
       end
     end
@@ -55,7 +55,7 @@ RSpec.feature "Breadcrumbs", type: :feature do
   end
 
   context "when visiting the story page" do
-    let(:path) { page_path("story-section/story") }
+    let(:path) { page_path("story-section/story-listing/story") }
 
     it { is_expected.to have_css(".breadcrumb") }
   end
