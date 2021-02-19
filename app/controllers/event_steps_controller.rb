@@ -8,7 +8,7 @@ class EventStepsController < ApplicationController
   before_action :set_step_page_title, only: [:show]
   before_action :set_completed_page_title, only: [:completed]
 
-  layout "events/registration"
+  layout "registration"
 
 private
 

@@ -3,6 +3,11 @@
   .registration__mailing-list {
     margin: auto $indent-amount;
 
+    @include mq($from: tablet) {
+      max-width: 55%;
+      width: 55%;
+    }
+
     h1 {
       font-size: size("xlarge");
     }
