@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   include UtmCodes
 
   rescue_from ActionController::RoutingError, with: :render_not_found
+  rescue_from Pages::Page::PageNotFoundError, with: :render_not_found
   rescue_from GetIntoTeachingApiClient::ApiError, with: :handle_api_error
 
   before_action :http_basic_authenticate

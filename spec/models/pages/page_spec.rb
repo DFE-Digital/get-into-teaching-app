@@ -19,9 +19,9 @@ RSpec.describe Pages::Page do
     end
 
     context "with non markdown page" do
-      subject { described_class.find "/unknown" }
-
-      it_behaves_like "a page", nil, "/unknown", "content/unknown"
+      it "raises an exception" do
+        expect { described_class.find "/unknown" }.to raise_error(Pages::Page::PageNotFoundError)
+      end
     end
   end
 
@@ -41,6 +41,78 @@ RSpec.describe Pages::Page do
       end
 
       it { expect { subject }.to raise_exception Pages::Page::MultipleFeatured }
+    end
+  end
+
+  describe "#parent" do
+    subject { described_class.find(path).parent&.path }
+
+    context "when the home page" do
+      let(:path) { "/home" }
+
+      it { is_expected.to be_nil }
+    end
+
+    context "when a top-level page" do
+      let(:path) { "/first" }
+
+      it { is_expected.to be_nil }
+    end
+
+    context "when a sub-page" do
+      context "when the sub-page has a parent" do
+        let(:path) { "/subfolder/page2" }
+
+        it { is_expected.to eq("/subfolder") }
+      end
+
+      context "when the sub-page does not have an immediate parent" do
+        let(:path) { "/subfolder/sub-subfolder/page" }
+
+        it { is_expected.to eq("/subfolder") }
+      end
+
+      context "when the sub-page has multiple parents" do
+        let(:path) { "/subfolder/sub-subfolder/sub-sub-subfolder/page" }
+
+        it { is_expected.to eq("/subfolder/sub-subfolder/sub-sub-subfolder") }
+      end
+    end
+  end
+
+  describe "#ancestors" do
+    subject { described_class.find(path).ancestors.map(&:path) }
+
+    context "when the home page" do
+      let(:path) { "/home" }
+
+      it { is_expected.to be_empty }
+    end
+
+    context "when a top-level page" do
+      let(:path) { "/first" }
+
+      it { is_expected.to be_empty }
+    end
+
+    context "when a sub-page" do
+      context "when the sub-page has a parent" do
+        let(:path) { "/subfolder/page2" }
+
+        it { is_expected.to eq(["/subfolder"]) }
+      end
+
+      context "when the sub-page does not have an immediate parent" do
+        let(:path) { "/subfolder/sub-subfolder/page" }
+
+        it { is_expected.to eq(["/subfolder"]) }
+      end
+
+      context "when the sub-page has multiple parents" do
+        let(:path) { "/subfolder/sub-subfolder/sub-sub-subfolder/page" }
+
+        it { is_expected.to eq(["/subfolder/sub-subfolder/sub-sub-subfolder", "/subfolder"]) }
+      end
     end
   end
 end
