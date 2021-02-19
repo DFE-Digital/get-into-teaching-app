@@ -10,7 +10,9 @@
     </div>
 
     <%= render "sections/header" %>
-    <%= render Sections::HeroComponent.new(@front_matter) %>
+    <% hero = Sections::HeroComponent.new(@front_matter) %>
+    <%= render hero %>
+    <%= render Navigation::BreadcrumbComponent.new(under_hero: hero.render?) %>
 
     <main class="semantic" role="main" id="main-content">
       <section class="container">
