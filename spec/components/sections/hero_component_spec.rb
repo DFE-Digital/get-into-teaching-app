@@ -10,7 +10,6 @@ describe Sections::HeroComponent, type: "component" do
       subtitle_link: "/signup",
       subtitle_button: "Find out more",
       image: "media/images/hero-home-dt.jpg",
-      backlink: "/",
     }.with_indifferent_access
   end
   let(:component) { described_class.new(front_matter) }

@@ -8,8 +8,6 @@ module Stories
                   :more_stories,
                   :more_information,
                   :explore,
-                  :backlink,
-                  :backlink_text,
                   :more_information_text,
                   :more_information_link,
                   :front_matter,
@@ -19,8 +17,6 @@ module Stories
       front_matter.tap do |fm|
         @title         = fm["title"]
         @image         = fm["image"]
-        @backlink      = fm["backlink"]
-        @backlink_text = fm["backlink_text"]
         @more_stories  = fm["more_stories"]
         @explore       = fm["explore"]
 

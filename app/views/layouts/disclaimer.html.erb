@@ -12,6 +12,7 @@
 
     <%= render "sections/header" %>
     <%= render Sections::HeroComponent.new(@front_matter) %>
+    <%= render Navigation::BreadcrumbComponent.new %>
 
     <main class="semantic" role="main" id="main-content">
       <section class="container">
