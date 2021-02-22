@@ -3,6 +3,7 @@ class ApplicationController < ActionController::Base
 
   rescue_from ActionController::RoutingError, with: :render_not_found
   rescue_from GetIntoTeachingApiClient::ApiError, with: :handle_api_error
+  rescue_from Pages::Page::PageNotFoundError, with: :render_not_found
 
   before_action :http_basic_authenticate
   before_action :record_utm_codes

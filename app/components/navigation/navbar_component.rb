@@ -1,4 +1,4 @@
-module Navbar
+module Navigation
   class NavbarComponent < ViewComponent::Base
   private
 

@@ -1,0 +1,10 @@
+<section class="container container--narrow">
+  <nav class="breadcrumb" aria-label="breadcrumb">
+    <ol>
+      <% helpers.breadcrumb_trail do |crumb| %>
+        <% next if crumb.current? %>
+        <li><%= link_to crumb.name, crumb.url %></li>
+      <% end %>
+    </ol>
+  </nav>
+</section>
