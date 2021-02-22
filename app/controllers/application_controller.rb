@@ -7,12 +7,19 @@ class ApplicationController < ActionController::Base
 
   before_action :http_basic_authenticate
   before_action :record_utm_codes
+  before_action :add_home_breadcrumb
 
   def raise_not_found
     raise ActionController::RoutingError, "Not Found"
   end
 
 private
+
+  def add_home_breadcrumb
+    return if request.path == root_path
+
+    breadcrumb "home", :root_path
+  end
 
   def handle_api_error(error)
     render_too_many_requests && return if error.code == 429

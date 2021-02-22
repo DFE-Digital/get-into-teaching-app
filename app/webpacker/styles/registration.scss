@@ -20,4 +20,14 @@
       font-size: size("medium");
     }
   }
+
+  .registration__event {
+    h1 {
+      margin-bottom: 0;
+    }
+
+    h2 {
+      margin: 0.2em 0 1em 0;
+    }
+  }
 }

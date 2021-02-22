@@ -5,6 +5,7 @@
       <%= render "sections/header" %>
       <main class="semantic" role="main" id="main-content">
         <%= render Stories::StoryComponent.new(@front_matter, @page.data) do %>
+          <%= render Navigation::BreadcrumbComponent.new %>
           <%= yield %>
         <% end %>
       </main>

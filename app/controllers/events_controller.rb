@@ -19,6 +19,10 @@ class EventsController < ApplicationController
   def show
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
     @page_title = @event.name
+
+    breadcrumb "events.search", :events_path
+    category_name = t("event_types.#{@event.type_id}.name.plural")
+    breadcrumb category_name, event_category_path(category_name.parameterize)
   end
 
 private
