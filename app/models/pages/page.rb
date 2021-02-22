@@ -3,6 +3,7 @@ module Pages
     class PageNotFoundError < RuntimeError; end
 
     TEMPLATES_FOLDER = "content".freeze
+    MAX_TRAVERSAL_DEPTH = 100
 
     attr_reader :path, :frontmatter
 
@@ -40,7 +41,7 @@ module Pages
     def parent
       pathname = Pathname.new(path)
 
-      loop do
+      (0...MAX_TRAVERSAL_DEPTH).each do
         pathname = pathname.parent
         return nil if pathname.root?
 
@@ -54,7 +55,7 @@ module Pages
       ancestors = []
       page = self
 
-      loop do
+      (0...MAX_TRAVERSAL_DEPTH).each do
         page = page.parent
         return ancestors if page.nil?
 
