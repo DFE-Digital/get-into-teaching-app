@@ -65,6 +65,10 @@ $space-between-sections: 3.7em;
         }
       }
     }
+
+    p {
+      font-size: size('xsmall');
+    }
   }
 
   &__icon {

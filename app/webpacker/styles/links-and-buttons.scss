@@ -45,6 +45,10 @@ a {
     @include button($bg: $white, $fg: $black);
     @include chevron($color: $black);
   }
+
+  &--unpadded {
+    padding: 0;
+  }
 }
 
 .call-to-action-icon-button {
