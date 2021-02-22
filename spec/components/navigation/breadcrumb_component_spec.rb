@@ -1,10 +1,8 @@
 require "rails_helper"
 
 describe Navigation::BreadcrumbComponent, type: "component" do
-  let(:under_hero) { false }
-
   subject! do
-    component = described_class.new(under_hero: under_hero)
+    component = described_class.new
     render_inline(component) do
       controller = component.controller
       controller.breadcrumb "Page 1", "/page/1"
@@ -26,11 +24,5 @@ describe Navigation::BreadcrumbComponent, type: "component" do
       expect(ol).to have_link("Page 2", href: "/page/2")
       expect(ol).to have_link("Page 3", href: "/page/3")
     end
-  end
-
-  context "when under a hero component" do
-    let(:under_hero) { true }
-
-    it { is_expected.to have_css("nav.breadcrumb.breadcrumb--hero") }
   end
 end

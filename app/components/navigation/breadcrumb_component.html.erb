@@ -1,5 +1,5 @@
 <section class="container container--narrow">
-  <nav class="breadcrumb<%= " breadcrumb--hero" if @under_hero %>" aria-label="breadcrumb">
+  <nav class="breadcrumb" aria-label="breadcrumb">
     <ol>
       <% helpers.breadcrumb_trail do |crumb| %>
         <% next if crumb.current? %>

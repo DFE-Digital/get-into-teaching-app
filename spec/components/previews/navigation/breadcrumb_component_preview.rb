@@ -6,13 +6,6 @@ class Navigation::BreadcrumbComponentPreview < ViewComponent::Preview
     end
   end
 
-  def when_under_hero
-    component = Navigation::BreadcrumbComponent.new(under_hero: true)
-    render(component) do
-      add_breadcrumbs(component.controller)
-    end
-  end
-
 private
 
   def add_breadcrumbs(controller)
