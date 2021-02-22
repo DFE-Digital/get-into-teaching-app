@@ -1,5 +1,7 @@
 module Pages
   class Page
+    class PageNotFoundError < RuntimeError; end
+
     TEMPLATES_FOLDER = "content".freeze
 
     attr_reader :path, :frontmatter
@@ -9,8 +11,8 @@ module Pages
     class << self
       def find(path)
         new path, Pages::Frontmatter.find(path)
-      rescue Pages::Frontmatter::NotMarkdownTemplate
-        new path, {}
+      rescue Pages::Frontmatter::NotMarkdownTemplate => e
+        raise PageNotFoundError, e.message
       end
 
       def featured

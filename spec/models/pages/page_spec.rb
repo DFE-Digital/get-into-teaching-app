@@ -19,9 +19,9 @@ RSpec.describe Pages::Page do
     end
 
     context "with non markdown page" do
-      subject { described_class.find "/unknown" }
-
-      it_behaves_like "a page", nil, "/unknown", "content/unknown"
+      it "raises an exception" do
+        expect { described_class.find "/unknown" }.to raise_error(Pages::Page::PageNotFoundError)
+      end
     end
   end
 
