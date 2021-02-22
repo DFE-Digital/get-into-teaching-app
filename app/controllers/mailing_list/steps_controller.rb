@@ -6,6 +6,8 @@ module MailingList
     before_action :set_step_page_title, only: [:show]
     before_action :set_completed_page_title, only: [:completed]
 
+    layout "registration"
+
   private
 
     def step_path(step = params[:id], urlparams = {})
