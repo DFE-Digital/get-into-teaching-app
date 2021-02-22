@@ -8,4 +8,7 @@ Rails.application.config.filter_parameters += %i[
   password
   telephone
   timed_one_time_password
+  firstName
+  lastName
+  timedOneTimePassword
 ]

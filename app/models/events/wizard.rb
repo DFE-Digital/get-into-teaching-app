@@ -1,3 +1,5 @@
+require "attribute_filter"
+
 module Events
   class Wizard < ::Wizard::Base
     include ::Wizard::ApiClientSupport
@@ -22,8 +24,7 @@ module Events
     def exchange_access_token(timed_one_time_password, request)
       @api ||= GetIntoTeachingApiClient::TeachingEventsApi.new
       response = @api.exchange_access_token_for_teaching_event_add_attendee(timed_one_time_password, request)
-      # TEMP: debugging invalid postcode issue
-      Rails.logger.info("Events::Wizard#exchange_access_token with postcode: #{response.address_postcode}")
+      Rails.logger.info("Events::Wizard#exchange_access_token: #{AttributeFilter.filtered_json(response)}")
       response
     end
 
@@ -32,8 +33,7 @@ module Events
     def add_attendee_to_event
       request = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(export_camelized_hash)
       api = GetIntoTeachingApiClient::TeachingEventsApi.new
-      # TEMP: debugging invalid postcode issue
-      Rails.logger.info("Events::Wizard#add_attendee_to_event with postcode: #{request.address_postcode}")
+      Rails.logger.info("Events::Wizard#add_attendee_to_event: #{AttributeFilter.filtered_json(request)}")
       api.add_teaching_event_attendee(request)
     end
   end
