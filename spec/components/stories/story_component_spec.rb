@@ -5,8 +5,6 @@ describe Stories::StoryComponent, type: "component" do
     {
       title: "Swapping senior management for students",
       image: "/assets/images/stories/stories-karen.jpg",
-      backlink: "./",
-      backlink_text: "Career changers' stories",
       story: {
         teacher: "Karen Roberts",
         video: "https://www.youtube.com/embed/riY-1DUkLVk",
@@ -65,10 +63,6 @@ describe Stories::StoryComponent, type: "component" do
       [front_matter.dig(:story, :teacher), front_matter.dig(:story, :position)].each do |part|
         is_expected.to have_css("h2", text: Regexp.new(part))
       end
-    end
-
-    specify "the backlink is present" do
-      is_expected.to have_link(front_matter[:backlink_text], href: front_matter[:backlink], class: %w[govuk-back-link])
     end
   end
 
