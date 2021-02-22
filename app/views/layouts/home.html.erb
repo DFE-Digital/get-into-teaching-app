@@ -12,7 +12,7 @@
 
     <%= render Sections::HeroComponent.new(@front_matter) %>
 
-    <main class="semantic home" role="main" id="main-content">
+    <main class="home" role="main" id="main-content">
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
       <% end %>

@@ -10,7 +10,7 @@
 
     <%= render "sections/header" %>
 
-    <main class="semantic" role="main" id="main-content">
+    <main role="main" id="main-content">
       <section class="feature registration container">
         <%= yield %>
         <%= render "sections/page_helpful" unless @hide_page_helpful_question %>

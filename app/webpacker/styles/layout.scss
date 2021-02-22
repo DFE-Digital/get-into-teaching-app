@@ -39,7 +39,7 @@ main,
 
 $content-max-width: 1000px;
 
-main.semantic {
+main {
   margin-bottom: 3em;
 
   @include mq($from: tablet) {

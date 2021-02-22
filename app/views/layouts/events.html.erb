@@ -13,7 +13,7 @@
     <%= yield :hero %>
     <%= render Navigation::BreadcrumbComponent.new %>
 
-    <main class="semantic" role="main" id="main-content">
+    <main role="main" id="main-content">
       <section class="container">
         <article class="markdown<%= " fullwidth" if @before_search_fullwidth %> ">
           <%= yield :before_search %>
