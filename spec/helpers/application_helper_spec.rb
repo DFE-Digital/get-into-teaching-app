@@ -4,6 +4,7 @@ describe ApplicationHelper do
   describe "#analytics_body_tag" do
     let(:id) { "1234" }
     let(:gtm_id) { id }
+    let(:ga_id) { id }
     let(:adwords_id) { id }
     let(:bam_id) { id }
     let(:lid_id) { id }
@@ -15,6 +16,7 @@ describe ApplicationHelper do
     before do
       allow(ENV).to receive(:[]).and_call_original
       allow(ENV).to receive(:[]).with("GOOGLE_TAG_MANAGER_ID").and_return gtm_id
+      allow(ENV).to receive(:[]).with("GOOGLE_ANALYTICS_ID").and_return ga_id
       allow(ENV).to receive(:[]).with("GOOGLE_AD_WORDS_ID").and_return adwords_id
       allow(ENV).to receive(:[]).with("PINTEREST_ID").and_return pinterest_id
       allow(ENV).to receive(:[]).with("SNAPCHAT_ID").and_return snapchat_id
@@ -48,6 +50,7 @@ describe ApplicationHelper do
 
     describe "the service ids" do
       it { is_expected.to have_css "body[data-analytics-gtm-id=1234]" }
+      it { is_expected.to have_css "body[data-analytics-ga-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-adwords-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-pinterest-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-snapchat-id=1234]" }
@@ -59,6 +62,7 @@ describe ApplicationHelper do
       context "with blank service ids" do
         let(:id) { "" }
         it { is_expected.to have_css "body[data-analytics-gtm-id=\"\"]" }
+        it { is_expected.to have_css "body[data-analytics-ga-id=\"\"]" }
         it { is_expected.to have_css "body[data-analytics-adwords-id=\"\"]" }
         it { is_expected.to have_css "body[data-analytics-pinterest-id=\"\"]" }
         it { is_expected.to have_css "body[data-analytics-snapchat-id=\"\"]" }
@@ -71,6 +75,7 @@ describe ApplicationHelper do
       context "with no service ids" do
         let(:id) { nil }
         it { is_expected.not_to have_css "body[data-analytics-gtm-id]" }
+        it { is_expected.not_to have_css "body[data-analytics-ga-id]" }
         it { is_expected.not_to have_css "body[data-analytics-adwords-id]" }
         it { is_expected.not_to have_css "body[data-analytics-pinterest-id]" }
         it { is_expected.not_to have_css "body[data-analytics-snapchat-id]" }
