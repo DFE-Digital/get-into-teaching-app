@@ -48,13 +48,19 @@ describe MailingList::StepsController do
       end
 
       before do
-        expect_any_instance_of(MailingList::Wizard).to \
-          receive(:exchange_magic_link_token).with(token) { stub_response }
+        expect_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+          receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { stub_response }
+        allow(Rails.logger).to receive(:info)
         get step_path
         follow_redirect!
       end
 
       it { is_expected.to redirect_to(mailing_list_step_path(:degree_status)) }
+
+      it "logs the response model (filtering sensitive attributes)" do
+        filtered_json = { "candidateId" => "abc123", "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]" }.to_json
+        expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#exchange_magic_link_token: #{filtered_json}")
+      end
     end
 
     context "when the token is not valid" do

@@ -1,3 +1,5 @@
+require "attribute_filter"
+
 module MailingList
   class Wizard < ::Wizard::Base
     include ::Wizard::ApiClientSupport
@@ -25,8 +27,7 @@ module MailingList
     def exchange_access_token(timed_one_time_password, request)
       @api ||= GetIntoTeachingApiClient::MailingListApi.new
       response = @api.exchange_access_token_for_mailing_list_add_member(timed_one_time_password, request)
-      # TEMP: debugging invalid postcode issue
-      Rails.logger.info("MailingList::Wizard#exchange_access_token with postcode: #{response.address_postcode}")
+      Rails.logger.info("MailingList::Wizard#exchange_access_token: #{AttributeFilter.filtered_json(response)}")
       response
     end
 
@@ -34,7 +35,9 @@ module MailingList
 
     def exchange_magic_link_token(token)
       api = GetIntoTeachingApiClient::MailingListApi.new
-      api.exchange_magic_link_token_for_mailing_list_add_member(token)
+      response = api.exchange_magic_link_token_for_mailing_list_add_member(token)
+      Rails.logger.info("MailingList::Wizard#exchange_magic_link_token: #{AttributeFilter.filtered_json(response)}")
+      response
     end
 
   private
@@ -42,8 +45,7 @@ module MailingList
     def add_member_to_mailing_list
       request = GetIntoTeachingApiClient::MailingListAddMember.new(export_camelized_hash)
       api = GetIntoTeachingApiClient::MailingListApi.new
-      # TEMP: debugging invalid postcode issue
-      Rails.logger.info("MailingList::Wizard#add_mailing_list_member with postcode: #{request.address_postcode}")
+      Rails.logger.info("MailingList::Wizard#add_mailing_list_member: #{AttributeFilter.filtered_json(request)}")
       api.add_mailing_list_member(request)
     end
   end
