@@ -43,6 +43,8 @@ gem "dotenv-rails"
 
 gem "govuk_design_system_formbuilder"
 
+gem "loaf"
+
 gem "prometheus-client"
 
 gem "sentry-raven"
