@@ -1,0 +1,5 @@
+---
+title: Subfolder
+---
+
+Some content
