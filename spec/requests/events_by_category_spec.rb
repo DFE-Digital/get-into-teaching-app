@@ -70,6 +70,22 @@ describe "View events by category" do
     end
   end
 
+  context "when viewing old online-events url" do
+    subject { response }
+
+    context "when current events" do
+      before { get event_category_path "online-events" }
+
+      it { is_expected.to redirect_to event_category_path "online-q-as" }
+    end
+
+    context "when archive events" do
+      before { get archive_event_category_path "online-events" }
+
+      it { is_expected.to redirect_to archive_event_category_path "online-q-as" }
+    end
+  end
+
   context "when viewing the schools and university events category" do
     let(:start_after) { DateTime.now.utc.beginning_of_day }
     let(:start_before) { start_after.advance(months: 5).end_of_month }
