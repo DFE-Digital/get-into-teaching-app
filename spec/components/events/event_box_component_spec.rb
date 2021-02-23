@@ -3,6 +3,9 @@ require "rails_helper"
 describe Events::EventBoxComponent, type: "component" do
   include_context "stub types api"
   let(:event) { build(:event_api) }
+  let(:date_text) { event.start_at.to_date.to_formatted_s(:long) }
+  let(:start_at_text) { event.start_at.to_formatted_s(:time) }
+  let(:end_at_text) { event.end_at.to_formatted_s(:time) }
 
   subject! { render_inline(described_class.new(event)) }
 
@@ -58,87 +61,55 @@ describe Events::EventBoxComponent, type: "component" do
     end
   end
 
-  [
-    OpenStruct.new(
-      name: "Train to Teach event",
-      trait: :train_to_teach_event,
-      expected_colour: "purple",
-      is_online: false,
-      is_virtual: false,
-    ),
-    OpenStruct.new(
-      name: "Online event",
-      trait: :online_event,
-      expected_colour: "blue",
-      is_online: true,
-      is_virtual: false,
-    ),
-    OpenStruct.new(
-      name: "",
-      trait: :no_event_type,
-      expected_colour: "blue",
-      is_online: false,
-      is_virtual: false,
-    ),
-    # a 'Train to Teach event' that also happens to be online
-    OpenStruct.new(
-      name: "Train to Teach event",
-      trait: :train_to_teach_event,
-      expected_colour: "purple",
-      is_online: true,
-      is_virtual: true,
-    ),
-  ].each do |event_type|
-    description = event_type.name.present? ? %(is a '#{event_type.name}') : %(isn't specified)
+  context "with Train to Teach category offline event" do
+    let(:event) { build :event_api, :train_to_teach_event }
 
-    context %(when the event #{description}) do
-      let(:event) { build(:event_api, event_type.trait, is_online: event_type.is_online, is_virtual: event_type.is_virtual) }
+    specify %(the event type name should be displayed) do
+      expect(page).to have_content("Train to Teach event")
+    end
 
-      specify %(the event type name should be displayed) do
-        expect(page).to have_content(event_type.name)
-      end
-
-      if event_type.is_online && event_type.trait == :online_event
-        context "when is_online and an 'online_event'" do
-          specify %(the event should also be described as an 'Online event') do
-            expect(page).to have_content("Online event")
-          end
-
-          specify %(the online icon should be #{event_type.expected_colour}) do
-            expect(page).to have_css(%(.icon-online-event--#{event_type.expected_colour}))
-          end
-        end
-      end
-
-      if event_type.is_online && event_type.trait != :online_event
-        context "when is_online but not 'online_event'" do
-          specify %(the event should also be described as a 'Event has moved online') do
-            expect(page).to have_content("Event has moved online")
-          end
-
-          specify %(the online icon should be #{event_type.expected_colour}) do
-            expect(page).to have_css(%(.icon-moved-online-event--#{event_type.expected_colour}))
-          end
-        end
-      end
-
-      specify %(the box should have the right type of divider) do
-        if event_type.name.present?
-          expect(page).to have_css(%(.event-box__divider.event-box__divider--#{event_type.name&.parameterize}))
-        end
-      end
+    specify %(the box should have the right type of divider) do
+      expect(page).to have_css(%(.event-box__divider.event-box__divider--train-to-teach-event))
     end
   end
 
-  def date_text
-    event.start_at.to_date.to_formatted_s(:long)
+  context "with Online event category event" do
+    let(:event) { build :event_api, :online_event }
+
+    specify %(the event type name should not be displayed) do
+      expect(page).to have_css("footer .event-box__footer__item", count: 1)
+    end
+
+    specify %(the event should also be described as an 'Online event') do
+      expect(page).to have_content("Online event")
+    end
+
+    specify %(the online icon should be blue) do
+      expect(page).to have_css(%(.icon-online-event--blue))
+    end
+
+    specify %(the box should have the right type of divider) do
+      expect(page).to have_css(%(.event-box__divider.event-box__divider--online-event))
+    end
   end
 
-  def start_at_text
-    event.start_at.to_formatted_s(:time)
-  end
+  context "with Train to Teach category online event" do
+    let(:event) { build :event_api, :train_to_teach_event, :virtual }
 
-  def end_at_text
-    event.end_at.to_formatted_s(:time)
+    specify %(the event type name should be displayed) do
+      expect(page).to have_content("Train to Teach event")
+    end
+
+    specify %(the event should also be described as a 'Event has moved online') do
+      expect(page).to have_content("Event has moved online")
+    end
+
+    specify %(the online icon should be purple) do
+      expect(page).to have_css(%(.icon-moved-online-event--purple))
+    end
+
+    specify %(the box should have the right type of divider) do
+      expect(page).to have_css(%(.event-box__divider.event-box__divider--train-to-teach-event))
+    end
   end
 end
