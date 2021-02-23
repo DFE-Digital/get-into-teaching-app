@@ -75,11 +75,8 @@ export default class extends Controller {
 
   onConfirm(chosen) {
     if (chosen && chosen.link) {
-      if (this.analyticsSubmitter) {
-        this.clearAnalyticsSubmitter()
-
+      if (this.analyticsSubmitter)
         this.sendToAnalytics()
-      }
 
       Turbolinks.visit(chosen.link)
     }
