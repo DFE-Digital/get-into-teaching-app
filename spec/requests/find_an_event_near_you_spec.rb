@@ -79,7 +79,7 @@ describe "Find an event near you" do
         headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
         expected_headings = [
           "Train to Teach events",
-          "Online events",
+          "Online Q&amp;As",
           "School and University events",
         ]
 

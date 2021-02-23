@@ -19,7 +19,7 @@ describe "View events by category" do
   end
 
   context "when viewing a category archive" do
-    let(:category) { "online-events" }
+    let(:category) { "online-q-as" }
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type) { events_by_type }
@@ -29,7 +29,7 @@ describe "View events by category" do
     subject { response }
 
     it { is_expected.to have_http_status :success }
-    it { expect(response.body).to include "Past online events" }
+    it { expect(response.body).to include "Past online Q&amp;As" }
 
     it "displays all events in the category, ordered by date descending" do
       expect(response.body.scan(/Event \d/)).to eq(["Event 5", "Event 4", "Event 3", "Event 2", "Event 1"])

@@ -120,7 +120,7 @@ describe EventsHelper, type: "helper" do
     it "returns blue for non-train to teach events" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
       expect(event_type_color(type_id)).to eq("blue")
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Schools or University Events"]
+      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Schools or University event"]
       expect(event_type_color(type_id)).to eq("blue")
     end
   end
@@ -174,7 +174,7 @@ describe EventsHelper, type: "helper" do
   describe "#pluralised_category_name" do
     {
       222_750_001 => "Train to Teach events",
-      222_750_008 => "Online events",
+      222_750_008 => "Online Q&As",
       222_750_009 => "School and University events",
     }.each do |type_id, name|
       specify "#{type_id} => #{name}" do
@@ -184,8 +184,8 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#past_category_name" do
-    it "returns 'Past online events' if the category name contains 'online'" do
-      expect(past_category_name(222_750_008)).to eql("Past online events")
+    it "returns 'Past online Q&As' if the category name contains 'online'" do
+      expect(past_category_name(222_750_008)).to eql("Past online Q&As")
     end
 
     it "returns the category name with 'Past' prepended if the category name does not contain 'online'" do

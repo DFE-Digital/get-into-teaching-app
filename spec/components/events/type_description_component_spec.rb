@@ -10,11 +10,11 @@ describe Events::TypeDescriptionComponent, type: "component" do
   end
 
   it "has an event type icon" do
-    expect(page).to have_css("div.icon-online-event")
+    expect(page).to have_css("div.icon-online-q-a")
   end
 
   it "has a heading" do
-    expect(page).to have_css("h5", text: "Online events")
+    expect(page).to have_css("h5", text: "Online Q&As")
   end
 
   it "has a description" do
@@ -22,6 +22,6 @@ describe Events::TypeDescriptionComponent, type: "component" do
   end
 
   it "has a read more link" do
-    expect(page).to have_link("Read more", href: "/event-categories/online-events", class: "type-description__link")
+    expect(page).to have_link("Read more", href: "/event-categories/online-q-as", class: "type-description__link")
   end
 end

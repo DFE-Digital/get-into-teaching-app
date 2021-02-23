@@ -89,7 +89,7 @@ describe Events::EventBoxComponent, type: "component" do
     end
 
     specify %(the box should have the right type of divider) do
-      expect(page).to have_css(%(.event-box__divider.event-box__divider--online-event))
+      expect(page).to have_css(%(.event-box__divider.event-box__divider--online-q-a))
     end
   end
 
