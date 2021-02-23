@@ -27,7 +27,7 @@
     "eslint-plugin-promise": "^4.3.1",
     "jest": "^26.6.3",
     "prettier": "^2.2.1",
-    "stylelint": "^13.10.0",
+    "stylelint": "^13.11.0",
     "stylelint-config-gds": "^0.1.0",
     "webpack-dev-server": "^3.11.2"
   },
