@@ -73,6 +73,7 @@ en:
       name:
         singular: "Online event"
         plural: "Online events"
+        past: "Past online events"
       description: |-
         In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train.
         Get fast answers to your questions so you can take the next step to becoming a teacher.
