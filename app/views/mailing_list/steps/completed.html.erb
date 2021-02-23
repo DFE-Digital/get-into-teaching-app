@@ -43,3 +43,52 @@
 
   <span data-controller="lid" data-lid-action="track" data-lid-event="MailingList"></span>
 </section>
+
+<section class="supplementary">
+
+
+<%= content_for(:feature) do %>
+  <div class="blocks">
+    <%= render Content::GenericBlockComponent.new(
+      title: "Life as a teacher",
+      icon_image: "icon-school-black.svg",
+      icon_alt: "mortarboard icon",
+      classes: "blocks__directory"
+    ) do %>
+      <ul>
+        <li><a href="/my-story-into-teaching">Read teachers' stories</a></li>
+        <li><a href="https://schoolexperience.education.gov.uk/">Experience a real school</a></li>
+        <li><a href="/salaries-and-benefits">Teachers' salaries</a></li>
+      </ul>
+    <% end %>
+
+    <%= render Content::GenericBlockComponent.new(
+      title: "Your next steps",
+      icon_image: "icon-doc-black.svg",
+      icon_alt: "icon containing learning materials",
+      classes: "blocks__directory"
+    ) do %>
+      <ul>
+        <li><a href="/steps-to-become-a-teacher">How to become a teacher</a></li>
+        <li><a href="/ways-to-train">Explore ways to train</a></li>
+        <li><a href="/funding-your-training">Find your funding options</a></li>
+      </ul>
+    <% end %>
+
+    <%= render Content::GenericBlockComponent.new(
+      title: "Speak to teachers",
+      icon_image: "icon-git-black.svg",
+      icon_alt: "site icon logo checkmark",
+      classes: "blocks__directory"
+    ) do %>
+      <p class="block__text">
+        Attend an event and speak to current teachers or get your
+        questions answered by our expert advisers. You can
+        also find out what it's like to train and be in the
+        classroom.
+      </p>
+
+      <%= link_to "Find an event", events_path, class: "button button--white button--unpadded" %>
+    <% end %>
+  </div>
+<% end %>
