@@ -3,27 +3,19 @@
 <section class="text-content">
   <h2 class="green">You've signed up</h2>
 
-  <p>You’re ready to receive email updates to help you get into teaching.</p>
-
-  <h3>What happens next?</h3>
+  <p>You'll receive a welcome email shortly.</p>
 
   <p>
-    You’ll receive an email to the address you gave us when you signed up.
-    You can unsubscribe if you change your mind. To find out how we
-    handle your personal data, you can read our <%= link_to("privacy policy", privacy_policy_path) %>.
+    You’ll get emails that we think are relevant to you. 
+    If your circumstances change, you can let us know at any time.
   </p>
 
-  <h3>Want to speak to us?</h3>
+  <h3>Speak to us</h3>
 
   <p>
-    If you’d prefer, you can call us about teaching or teacher training on
-    Freephone <a href="tel:08003892501" class="telephone-number"
+    You can call us for free on <a href="tel:08003892501" class="telephone-number"
     aria-label="Telephone">0800 389 2501</a>, Monday-Friday between 8.30am and
     5pm.
-  </p>
-
-  <p>
-    You can also use this number to update or amend any of your details.
   </p>
 
   <span data-controller="pinterest"
@@ -44,51 +36,46 @@
   <span data-controller="lid" data-lid-action="track" data-lid-event="MailingList"></span>
 </section>
 
-<section class="supplementary">
+<div class="blocks">
+  <%= render Content::GenericBlockComponent.new(
+    title: "Life as a teacher",
+    icon_image: "icon-school-black.svg",
+    icon_alt: "mortarboard icon",
+    classes: "blocks__directory"
+  ) do %>
+    <ul>
+      <li><a href="/my-story-into-teaching">Read teachers' stories</a></li>
+      <li><a href="https://schoolexperience.education.gov.uk/">Experience a real school</a></li>
+      <li><a href="/salaries-and-benefits">Teachers' salaries</a></li>
+    </ul>
+  <% end %>
 
+  <%= render Content::GenericBlockComponent.new(
+    title: "Your next steps",
+    icon_image: "icon-doc-black.svg",
+    icon_alt: "icon containing learning materials",
+    classes: "blocks__directory"
+  ) do %>
+    <ul>
+      <li><a href="/steps-to-become-a-teacher">How to become a teacher</a></li>
+      <li><a href="/ways-to-train">Explore ways to train</a></li>
+      <li><a href="/funding-your-training">Find your funding options</a></li>
+    </ul>
+  <% end %>
 
-<%= content_for(:feature) do %>
-  <div class="blocks">
-    <%= render Content::GenericBlockComponent.new(
-      title: "Life as a teacher",
-      icon_image: "icon-school-black.svg",
-      icon_alt: "mortarboard icon",
-      classes: "blocks__directory"
-    ) do %>
-      <ul>
-        <li><a href="/my-story-into-teaching">Read teachers' stories</a></li>
-        <li><a href="https://schoolexperience.education.gov.uk/">Experience a real school</a></li>
-        <li><a href="/salaries-and-benefits">Teachers' salaries</a></li>
-      </ul>
-    <% end %>
+  <%= render Content::GenericBlockComponent.new(
+    title: "Speak to teachers",
+    icon_image: "icon-git-black.svg",
+    icon_alt: "site icon logo checkmark",
+    classes: "blocks__directory"
+  ) do %>
+    <p class="block__text">
+      Attend an event and speak to current teachers or get your
+      questions answered by our expert advisers. You can
+      also find out what it's like to train and be in the
+      classroom.
+    </p>
 
-    <%= render Content::GenericBlockComponent.new(
-      title: "Your next steps",
-      icon_image: "icon-doc-black.svg",
-      icon_alt: "icon containing learning materials",
-      classes: "blocks__directory"
-    ) do %>
-      <ul>
-        <li><a href="/steps-to-become-a-teacher">How to become a teacher</a></li>
-        <li><a href="/ways-to-train">Explore ways to train</a></li>
-        <li><a href="/funding-your-training">Find your funding options</a></li>
-      </ul>
-    <% end %>
-
-    <%= render Content::GenericBlockComponent.new(
-      title: "Speak to teachers",
-      icon_image: "icon-git-black.svg",
-      icon_alt: "site icon logo checkmark",
-      classes: "blocks__directory"
-    ) do %>
-      <p class="block__text">
-        Attend an event and speak to current teachers or get your
-        questions answered by our expert advisers. You can
-        also find out what it's like to train and be in the
-        classroom.
-      </p>
-
-      <%= link_to "Find an event", events_path, class: "button button--white button--unpadded" %>
-    <% end %>
-  </div>
-<% end %>
+    <%= link_to "Find an event", events_path, class: "button button--white button--unpadded" %>
+  <% end %>
+</div>

@@ -85,7 +85,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_title("Get into teaching: You've signed up")
     expect(page).to have_text "You've signed up"
-    expect(page).to have_text "What happens next"
   end
 
   scenario "Full journey as an on-campus candidate" do
@@ -125,7 +124,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
-    expect(page).to have_text "What happens next"
   end
 
   scenario "Full journey as an existing candidate" do
@@ -180,7 +178,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
-    expect(page).to have_text "What happens next"
   end
 
   scenario "Full journey as an existing candidate that resends the verification code" do
@@ -303,7 +300,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
-    expect(page).to have_text "What happens next"
   end
 
   scenario "Invalid magic link tokens" do
