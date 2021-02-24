@@ -56,7 +56,15 @@ module TemplateHandlers
     end
 
     def markdown
-      parsed.content
+      parsed.content.tap do |body|
+        body.scan(/(\$[A-z0-9-]+\$)/).flatten.each do |placeholder|
+          body.gsub!(placeholder, call_to_action)
+        end
+      end
+    end
+
+    def call_to_action
+      ApplicationController.render(CallsToAction::ChatOnlineComponent.new)
     end
 
     def front_matter

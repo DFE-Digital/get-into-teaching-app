@@ -178,4 +178,41 @@ describe TemplateHandlers::Markdown, type: :view do
 
     it { is_expected.to have_css "abbr[title=\"Pay as you earn\"]", text: "PAYE" }
   end
+
+  describe "injecting rich content" do
+    let(:original_front_matter) do
+      {
+        "title": "Page with rich content (calls to action)",
+        "calls_to_action" => {
+          "big-warning" => {
+            name: "simple",
+            title: "be careful",
+            link_text: "something is about to happen",
+            link_target: "#",
+          },
+        },
+      }
+    end
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+
+        $big-warning$
+
+        Donec in leo enim. Mauris aliquet nulla dolor
+      MARKDOWN
+    end
+
+    before do
+      stub_template "page_with_rich_content.md" => markdown
+      render template: "page_with_rich_content.md"
+    end
+
+    specify "should render the component" do
+      expect(rendered).to have_css(".call-to-action")
+    end
+  end
 end
