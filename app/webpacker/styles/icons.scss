@@ -85,6 +85,13 @@
   height: 32px;
 }
 
+.icon-online-q-a {
+  @include icon;
+  background-image: url("../images/icon-online-blue.svg");
+  width: 34px;
+  height: 34px;
+}
+
 .icon-quote {
   @include icon;
   background-image: url("../images/white-quote.svg");

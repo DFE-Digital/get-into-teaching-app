@@ -7,6 +7,14 @@ module Events
     alias_method :virtual?, :virtual
 
     def initialize(event)
+      # An event can have three different 'states':
+      # - Offline (in person)
+      #   - is_online == false && is_virtual == false
+      # - Moved online (online, but has an associated building - aka virtual)
+      #   - is_online == true && is_virtual == true
+      # - Online (fully online with no building)
+      #   - is_online == true && is_virtual == false
+
       @event       = event
       @title       = event.name
       @type        = event.type_id
@@ -51,10 +59,18 @@ module Events
       "Online event"
     end
 
+    def show_category?
+      type && !is_online_event_category?
+    end
+
   private
 
     def event_box_footer_icon_class
       "event-box__footer__icon"
+    end
+
+    def is_online_event_category?
+      type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
     end
   end
 end

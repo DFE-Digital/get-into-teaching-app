@@ -10,7 +10,7 @@
     <%= divider %>
 
     <footer class="event-box__footer">
-      <% if type && type != GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] %>
+      <% if show_category? %>
         <div class="event-box__footer__item">
           <div class="event-box__footer__icon-wrapper">
             <%= event_type_icon %>

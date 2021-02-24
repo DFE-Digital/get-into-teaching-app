@@ -1,18 +1,15 @@
-<% category_name = pluralised_category_name(@type.id) %>
-<% category_name = past_category_name(category_name) if @period == :past %>
 <% @search_component = Events::SearchComponent.new(
         @event_search,
         @form_action.to_s,
         include_type: false,
-        heading: "Search for #{category_name}",
+        heading: "Search for #{@category_name}",
         allow_blank_month: true,
       )
 %>
-<% @page_title = category_name %>
 
 <% content_for :hero do %>
   <%= render Sections::HeroComponent.new(
-      title: category_name,
+      title: @category_name,
       image: "media/images/events-hero-dt.jpg")
   %>
 <% end %>
@@ -35,15 +32,19 @@
 </div>
 <% else %>
   <%= render(Events::NoResultsComponent.new) do %>
-    Sorry your search has not found any events, try a different location or month. <%= link_to("Search for another event type", events_path) %></a>.
+    Sorry your search has not found any events, try a different location or month.
+    <%= link_to("Search for another event type", events_path) %>.
   <% end %>
 <% end %>
 
 <% if @show_archive_link %>
   <div class="event-content-cta content-cta">
-    <h2> <%= past_category_name(category_name) %> </h2>
+    <h2><%= past_category_name(@type.id) %></h2>
     <p>
-      You can see <%= past_category_name(category_name).downcase %>, including all questions and answers, <%= link_to("on this page", archive_event_category_path(pluralised_category_name(@type.id).parameterize)) %>
+      You can see <%= past_category_name(@type.id).downcase %>, including
+      all questions and answers,
+      <%= link_to "on this page",
+                  archive_event_category_path(pluralised_category_name(@type.id).parameterize) %>
     </p>
   </div>
 <% end %>

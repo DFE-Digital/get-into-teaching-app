@@ -65,9 +65,9 @@ RSpec.feature "Finding an event", type: :feature do
   end
 
   scenario "Searching events within a category" do
-    visit event_category_path("online-events")
+    visit event_category_path("online-q-as")
 
-    expect(page).to have_text "Search for Online events"
+    expect(page).to have_text "Search for Online Q&As"
 
     click_on "Update results"
 
@@ -78,6 +78,6 @@ RSpec.feature "Finding an event", type: :feature do
       click_on "on this page"
     end
 
-    expect(page).to have_text "Search for Past online events"
+    expect(page).to have_text "Search for Past online Q&As"
   end
 end
