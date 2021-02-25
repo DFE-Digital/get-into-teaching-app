@@ -34,8 +34,6 @@ module CallsToAction
     #
     # cta: my_call_to_action
     def basic_call_to_action_component
-      return if @params.blank?
-
       CALLS_TO_ACTION.fetch(@params).new
     rescue KeyError
       fail(ArgumentError, "call to action not registered: #{@params}")
@@ -49,8 +47,6 @@ module CallsToAction
     #     colour: purple
     #     size: massive
     def advanced_call_to_action_component
-      return if @params.blank?
-
       CALLS_TO_ACTION
         .fetch(@params.fetch("name"))
         .new(**@params.fetch("arguments").symbolize_keys)

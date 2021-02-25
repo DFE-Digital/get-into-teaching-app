@@ -193,6 +193,7 @@ describe TemplateHandlers::Markdown, type: :view do
               "icon" => "icon-arrow",
             },
           },
+          "small-warning" => "chat_online",
         },
       }
     end
@@ -206,6 +207,10 @@ describe TemplateHandlers::Markdown, type: :view do
         $big-warning$
 
         Donec in leo enim. Mauris aliquet nulla dolor
+
+        $small-warning$
+
+        $one-that-does-not-exist$
       MARKDOWN
     end
 
@@ -219,7 +224,11 @@ describe TemplateHandlers::Markdown, type: :view do
     end
 
     specify "should render the component" do
-      expect(rendered).to have_css(".call-to-action")
+      expect(rendered).to have_css(".call-to-action", count: front_matter_with_calls_to_action["calls_to_action"].size)
+    end
+
+    specify "unregistered calls to action should be omitted" do
+      expect(rendered).not_to have_content(/one-that-does-not-exist/)
     end
   end
 end
