@@ -55,13 +55,15 @@ module TemplateHandlers
       add_acronyms autolink_html render_markdown
     end
 
+    # rubocop:disable Style/PerlBackrefs
     def markdown
-      parsed.content.tap do |body|
-        body.scan(/(\$[A-z0-9-]+\$)/).flatten.each do |placeholder|
-          body.gsub!(placeholder, call_to_action)
-        end
-      end
+      # use $1 rather than a block argument here because gsub assigns the
+      # entire placeholder to the arg (including dollar symbols) but we only
+      # want what's inside the capture group
+
+      parsed.content.gsub(/\$([A-z0-9-]+)\$/) { call_to_action($1) }
     end
+    # rubocop:enable Style/PerlBackrefs
 
     def call_to_action(placeholder)
       ApplicationController.render(CallsToAction::RendererComponent.new(front_matter.dig("calls_to_action", placeholder)))
