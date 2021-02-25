@@ -32,54 +32,6 @@ module Content
 
     class ComposableSlot < ViewComponent::Slot
       attr_reader :call_to_action
-
-      # Calls to action (poppers) are 'registered' here and can
-      # be specified via FrontMatter
-      CALLS_TO_ACTION = {
-        "simple" => CallsToAction::SimpleComponent,
-        "chat_online" => CallsToAction::ChatOnlineComponent,
-        "story" => CallsToAction::StoryComponent,
-        "next_steps" => CallsToAction::NextStepsComponent,
-        "multiple_buttons" => CallsToAction::MultipleButtonsComponent,
-      }.freeze
-
-      def build(call_to_action)
-        @call_to_action = if call_to_action.is_a?(Hash)
-                            advanced_call_to_action_component(call_to_action)
-                          else
-                            basic_call_to_action_component(call_to_action)
-                          end
-      end
-
-    private
-
-      # when the CTA is some static HTML and invoked by name with no args
-      #
-      # cta: my_call_to_action
-      def basic_call_to_action_component(call_to_action)
-        return if call_to_action.blank?
-
-        CALLS_TO_ACTION.fetch(call_to_action).new
-      rescue KeyError
-        fail(ArgumentError, "call to action not registered: #{call_to_action}")
-      end
-
-      # when the CTA is configurable and is defined in the following format:
-      #
-      # cta:
-      #   name: my_call_to_action
-      #   arguments:
-      #     colour: purple
-      #     size: massive
-      def advanced_call_to_action_component(call_to_action)
-        return if call_to_action.blank?
-
-        CALLS_TO_ACTION
-          .fetch(call_to_action.fetch("name"))
-          .new(**call_to_action.fetch("arguments").symbolize_keys)
-      rescue KeyError
-        fail(ArgumentError, "call to action properly configured: #{call_to_action}")
-      end
     end
 
     class Step < ComposableSlot
@@ -87,7 +39,7 @@ module Content
 
       def initialize(title:, call_to_action: nil)
         @title = title
-        @call_to_action = build(call_to_action)
+        @call_to_action = CallsToAction::RendererComponent.new(call_to_action)
       end
     end
 
@@ -95,7 +47,7 @@ module Content
       attr_accessor :partial
 
       def initialize(call_to_action: nil, partial: nil)
-        @call_to_action = build(call_to_action)
+        @call_to_action = CallsToAction::RendererComponent.new(call_to_action)
         @partial = partial
       end
     end

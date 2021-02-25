@@ -178,4 +178,57 @@ describe TemplateHandlers::Markdown, type: :view do
 
     it { is_expected.to have_css "abbr[title=\"Pay as you earn\"]", text: "PAYE" }
   end
+
+  describe "injecting rich content" do
+    let(:front_matter_with_calls_to_action) do
+      {
+        "title": "Page with rich content (calls to action)",
+        "calls_to_action" => {
+          "big-warning" => {
+            "name" => "simple",
+            "arguments" => {
+              "title" => "be careful",
+              "link_text" => "something is about to happen",
+              "link_target" => "#",
+              "icon" => "icon-arrow",
+            },
+          },
+          "small-warning" => "chat_online",
+        },
+      }
+    end
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        Lorem ipsum dolor sit amet, consectetur adipiscing
+
+        $big-warning$
+
+        Donec in leo enim. Mauris aliquet nulla dolor
+
+        $small-warning$
+
+        $one-that-does-not-exist$
+      MARKDOWN
+    end
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_calls_to_action)
+    end
+
+    before do
+      stub_template "page_with_rich_content.md" => markdown
+      render template: "page_with_rich_content.md"
+    end
+
+    specify "should render the component" do
+      expect(rendered).to have_css(".call-to-action", count: front_matter_with_calls_to_action["calls_to_action"].size)
+    end
+
+    specify "unregistered calls to action should be omitted" do
+      expect(rendered).not_to have_content(/one-that-does-not-exist/)
+    end
+  end
 end
