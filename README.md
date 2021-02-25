@@ -2,7 +2,7 @@
 
 ## Prerequisites
 
-- Ruby 2.6.6
+- Ruby 2.7.2
 - NodeJS 12.15.x
 - Yarn 1.12.x
 
@@ -20,10 +20,10 @@ Run `echo 409B6B1796C275462A1703113804BB82D39DC0E3:6: | gpg2 --import-ownertrust
 Run `\curl -sSL https://get.rvm.io | bash -s stable`
 6. enable rvm (replace <your-user-name>)
 Run `source /Users/<your-user-name>/.rvm/scripts/rvm`
-7. install ruby 2.6.6
-Run `rvm install ruby 2.6.6`
-8. switch your system to use ruby 2.6.6
-Run `rvm use 2.6.6`
+7. install ruby 2.7.2
+Run `rvm install ruby 2.7.2`
+8. switch your system to use ruby 2.7.2`
+Run `rvm use 2.7.2`
 9. install yarn
 Run `brew install yarn`
 10. install the bundler gem
