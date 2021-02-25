@@ -63,8 +63,8 @@ module TemplateHandlers
       end
     end
 
-    def call_to_action
-      ApplicationController.render(CallsToAction::ChatOnlineComponent.new)
+    def call_to_action(placeholder)
+      ApplicationController.render(CallsToAction::RendererComponent.new(front_matter.dig("calls_to_action", placeholder)))
     end
 
     def front_matter

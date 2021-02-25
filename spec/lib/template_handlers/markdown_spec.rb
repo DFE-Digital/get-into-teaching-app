@@ -180,15 +180,18 @@ describe TemplateHandlers::Markdown, type: :view do
   end
 
   describe "injecting rich content" do
-    let(:original_front_matter) do
+    let(:front_matter_with_calls_to_action) do
       {
         "title": "Page with rich content (calls to action)",
         "calls_to_action" => {
           "big-warning" => {
-            name: "simple",
-            title: "be careful",
-            link_text: "something is about to happen",
-            link_target: "#",
+            "name" => "simple",
+            "arguments" => {
+              "title" => "be careful",
+              "link_text" => "something is about to happen",
+              "link_target" => "#",
+              "icon" => "icon-arrow",
+            },
           },
         },
       }
@@ -204,6 +207,10 @@ describe TemplateHandlers::Markdown, type: :view do
 
         Donec in leo enim. Mauris aliquet nulla dolor
       MARKDOWN
+    end
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_calls_to_action)
     end
 
     before do
