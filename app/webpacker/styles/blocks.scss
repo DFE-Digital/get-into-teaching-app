@@ -11,8 +11,11 @@ $space-between-sections: 3.7em;
   // This is a fix to make IE display the content
   // centrally.
   margin: $space-between-sections auto 0;
-  @supports (display: grid) {
-    margin: $space-between-sections $px-either-side-of-content 0;
+
+  &.homepage-feature {
+    @supports (display: grid) {
+      margin: $space-between-sections $px-either-side-of-content 0;
+    }
   }
 
   > * {
