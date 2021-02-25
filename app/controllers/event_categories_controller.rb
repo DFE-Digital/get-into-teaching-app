@@ -1,4 +1,5 @@
 class EventCategoriesController < ApplicationController
+  include CircuitBreaker
   before_action :load_type
   before_action :set_form_action
   layout "events"
@@ -31,6 +32,12 @@ class EventCategoriesController < ApplicationController
       event_category_path(future_events_category_name.parameterize)
 
     render :show
+  end
+
+protected
+
+  def not_available_path
+    events_not_available_path
   end
 
 private

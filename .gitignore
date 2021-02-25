@@ -37,3 +37,4 @@ yarn-debug.log*
 app/views/content
 /config/credentials/*.key
 /coverage
+.idea
