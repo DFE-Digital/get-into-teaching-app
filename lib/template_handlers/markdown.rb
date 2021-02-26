@@ -66,7 +66,11 @@ module TemplateHandlers
     # rubocop:enable Style/PerlBackrefs
 
     def call_to_action(placeholder)
-      ApplicationController.render(CallsToAction::RendererComponent.new(front_matter.dig("calls_to_action", placeholder)))
+      component = Content::ComponentInjector.new(front_matter.dig("calls_to_action", placeholder)).component
+
+      return unless component
+
+      ApplicationController.render(component)
     end
 
     def front_matter
