@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe CallsToAction::RendererComponent, type: :component do
+RSpec.describe Content::ComponentInjector, type: :component do
   {
     "simple component" => {
       "name" => "simple",
@@ -25,12 +25,21 @@ RSpec.describe CallsToAction::RendererComponent, type: :component do
     },
   }.each do |name, meta|
     describe "rendering a #{name}" do
-      let(:component) { described_class.new(meta) }
-      before { render_inline(component) }
+      subject { described_class.new(meta).component }
 
-      specify "renders the #{name} component correctly" do
-        expect(page).to have_css(".call-to-action")
+      specify "generates a view component from the arguments" do
+        is_expected.to be_a(ViewComponent::Base)
       end
+    end
+  end
+
+  context "with invalid arguments" do
+    let(:invalid_args) do
+      { "story component" => { "name" => "story", "arguments" => { "something" => "story component" } } }
+    end
+
+    specify "raises an error describing bad config of the component" do
+      expect { described_class.new(invalid_args).component }.to raise_error(ArgumentError, /call to action not properly configured/)
     end
   end
 end

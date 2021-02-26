@@ -1,34 +1,29 @@
-module CallsToAction
-  class RendererComponent < ViewComponent::Base
+module Content
+  class ComponentInjector
     CALLS_TO_ACTION = {
       "simple" => CallsToAction::SimpleComponent,
       "chat_online" => CallsToAction::ChatOnlineComponent,
       "story" => CallsToAction::StoryComponent,
       "next_steps" => CallsToAction::NextStepsComponent,
       "multiple_buttons" => CallsToAction::MultipleButtonsComponent,
+      "feature_table" => Content::FeatureTableComponent,
     }.freeze
 
     def initialize(params)
       @params = params
     end
 
-    def render?
-      @params.present?
-    end
+    def component
+      return unless @params
 
-    def call
-      render(build)
-    end
-
-  private
-
-    def build
       if @params.is_a?(Hash)
         advanced_call_to_action_component
       else
         basic_call_to_action_component
       end
     end
+
+  private
 
     # when the CTA is some static HTML and invoked by name with no args
     #
@@ -47,11 +42,26 @@ module CallsToAction
     #     colour: purple
     #     size: massive
     def advanced_call_to_action_component
+      args, kwargs = *advanced_arguments
+
       CALLS_TO_ACTION
         .fetch(@params.fetch("name"))
-        .new(**@params.fetch("arguments").symbolize_keys)
+        .new(*args, **kwargs)
     rescue KeyError
       fail(ArgumentError, "call to action not properly configured: #{@params}")
+    end
+
+    # component params can be passed as either an array or hash but not
+    # a combination
+    def advanced_arguments
+      args = @params.fetch("arguments")
+
+      case args
+      when Array
+        [args, {}]
+      when Hash
+        [[], args.symbolize_keys]
+      end
     end
   end
 end

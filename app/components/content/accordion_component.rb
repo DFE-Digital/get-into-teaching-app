@@ -39,7 +39,7 @@ module Content
 
       def initialize(title:, call_to_action: nil)
         @title = title
-        @call_to_action = CallsToAction::RendererComponent.new(call_to_action)
+        @call_to_action = Content::ComponentInjector.new(call_to_action).component
       end
     end
 
@@ -47,7 +47,7 @@ module Content
       attr_accessor :partial
 
       def initialize(call_to_action: nil, partial: nil)
-        @call_to_action = CallsToAction::RendererComponent.new(call_to_action)
+        @call_to_action = Content::ComponentInjector.new(call_to_action).component
         @partial = partial
       end
     end
