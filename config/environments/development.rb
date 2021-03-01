@@ -22,7 +22,6 @@ Rails.application.configure do
     config.public_file_server.headers = {
       "Cache-Control" => "public, max-age=#{2.days.to_i}",
     }
-    config.circuit_breaker = :circuit_breaker_config
   else
     config.action_controller.perform_caching = false
 

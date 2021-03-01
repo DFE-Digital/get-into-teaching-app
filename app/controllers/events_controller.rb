@@ -1,7 +1,6 @@
 class EventsController < ApplicationController
   include CircuitBreaker
 
-  rescue_from CircuitBreaker::CircuitBrokenError, with: :redirect_to_not_available
   before_action :load_event_search, only: %i[search index]
   before_action :search_events, only: %i[search]
   before_action :load_upcoming_events, only: %i[index]

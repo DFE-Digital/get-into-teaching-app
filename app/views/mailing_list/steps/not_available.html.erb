@@ -1,5 +1,1 @@
-<% @fullwidth = @skip_hero = @hide_page_helpful_question = true %>
-<% @page_title = "Sorry, the events service is currently unavailable" %>
-<h1><%= @page_title %></h1>
-<p>To sign up whilst this service is unavailable, you can call us on
-  <a href="tel:08003892501" class="telephone-number" aria-label="Telephone">0800 389 2501</a></p>
+<%= render ServiceUnavailableComponent.new(service_type: "sign up for updates") %>

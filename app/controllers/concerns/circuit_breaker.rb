@@ -1,5 +1,4 @@
 module CircuitBreaker
-  class CircuitBrokenError < RuntimeError; end
   class NotAvailablePathMissingError < RuntimeError; end
 
   extend ActiveSupport::Concern
