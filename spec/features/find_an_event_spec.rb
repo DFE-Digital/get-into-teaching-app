@@ -74,7 +74,7 @@ RSpec.feature "Finding an event", type: :feature do
     uri = URI.parse(page.current_url)
     expect(uri.fragment).to eq("searchforevents")
 
-    within(:css, ".event-content-cta") do
+    within(:css, ".content-cta") do
       click_on "on this page"
     end
 

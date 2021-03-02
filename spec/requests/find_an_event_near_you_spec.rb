@@ -4,7 +4,7 @@ describe "Find an event near you" do
   include_context "stub types api"
 
   let(:no_events_regex) { /Sorry your search has not found any events/ }
-
+  let(:category_headings_regex) { /<h3>([Train|Online|School].*)<\/h3>/ }
   let(:types) { Events::Search.available_event_type_ids }
   let(:events) do
     5.times.collect do |index|
@@ -76,7 +76,7 @@ describe "Find an event near you" do
       end
 
       it "presents the types in the correct order" do
-        headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
+        headings = response.body.scan(category_headings_regex).flatten
         expected_headings = [
           "Train to Teach events",
           "Online Q&amp;As",
@@ -100,7 +100,7 @@ describe "Find an event near you" do
     before { get search_events_path(events_search: { type: type_id, month: "2020-07" }) }
 
     it "displays only the category filtered to" do
-      headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
+      headings = response.body.scan(category_headings_regex).flatten
       expected_headings = ["Train to Teach events"]
 
       expect(headings).to eq(expected_headings)
@@ -119,7 +119,7 @@ describe "Find an event near you" do
       end
 
       it "does not display any categories" do
-        headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
+        headings = response.body.scan(category_headings_regex).flatten
         expect(headings).to be_empty
       end
     end
@@ -146,7 +146,7 @@ describe "Find an event near you" do
     end
 
     it "categorises the results" do
-      headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
+      headings = response.body.scan(category_headings_regex).flatten
       expected_headings = [
         "Train to Teach events",
       ]
@@ -168,7 +168,7 @@ describe "Find an event near you" do
       let(:events) { [build(:event_api, type_id: type_id)] }
 
       it "displays the no results message per category" do
-        headings = response.body.scan(/<h3>(.*)<\/h3>/).flatten
+        headings = response.body.scan(category_headings_regex).flatten
         no_results_messages = response.body.scan(no_events_regex).flatten
         expect(headings.count).to eq(Events::Search.available_event_types.count)
         expect(headings.count - 1).to eq(no_results_messages.count)

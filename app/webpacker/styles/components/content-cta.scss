@@ -2,16 +2,18 @@
   background: $grey;
   text-align: left;
   padding: $indent-amount;
-  margin: 0 -20px 30px;
   box-sizing: border-box;
   width: auto;
 
-  h2 {
-    margin-bottom: 5px;
-    margin-top: 0;
+  h3 {
+    margin: 0 0 0.5em 0;
     font-size: size("medium");
     background: transparent;
     color: $black;
+  }
+
+  p:first-child {
+    margin-top: 0;
   }
 
   p:last-child {
@@ -22,7 +24,7 @@
 .content-cta {
   @include content-cta;
   width: 65%;
-  margin: 0 auto;
+  margin: 3em auto 0;
 
   @include mq($until: tablet) {
     width: auto;
