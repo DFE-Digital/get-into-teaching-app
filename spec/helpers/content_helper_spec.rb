@@ -12,8 +12,8 @@ describe ContentHelper, type: :helper do
       end
     end
 
-    context "when full_width is true" do
-      let(:front_matter) { { "full_width" => true } }
+    context "when fullwidth is true" do
+      let(:front_matter) { { "fullwidth" => true } }
 
       it %(returns an array containing "markdown" and "fullwidth") do
         expect(subject).to match_array(%w[markdown fullwidth])
