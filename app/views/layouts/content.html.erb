@@ -51,7 +51,7 @@
         </aside>
         <% end %>
 
-        <article class="markdown <%= "fullwidth" if @front_matter["fullwidth"] %> ">
+        <%= tag.article(class: article_classes(@front_matter)) do %>
 
           <% if @front_matter["alert"].present? %>
             <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
@@ -86,7 +86,7 @@
           <% end %>
 
           <%= render "sections/page_helpful" unless @front_matter["hide_page_helpful_question"] %>
-        </article>
+        <% end %>
       </section>
     </main>
 
