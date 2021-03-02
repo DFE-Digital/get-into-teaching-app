@@ -17,6 +17,10 @@
       <section class="container">
         <% if !@front_matter["image"] %>
           <header>
+            <% if @front_matter["title_caption"].present? %>
+              <%= tag.span(@front_matter["title_caption"], class: "caption") %>
+            <% end %>
+
             <%= tag.h1(@front_matter["title"]) %>
           </header>
         <% end %>

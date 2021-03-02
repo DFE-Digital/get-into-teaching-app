@@ -74,12 +74,22 @@ section.container {
   header {
     flex: 0 0 100%;
     max-width: $content-max-width;
+    @include indent-left-and-right;
 
     h1 {
-      @include indent-left-and-right;
 
       font-size: size(xxlarge);
       margin-bottom: 3rem;
+    }
+
+    span.caption {
+      font-size: size(medium);
+      margin-top: 3em;
+      color: $grey-dark;
+    }
+
+    span.caption + h1 {
+      margin-top: 0;
     }
   }
 
