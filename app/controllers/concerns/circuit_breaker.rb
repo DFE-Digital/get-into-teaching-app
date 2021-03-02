@@ -14,6 +14,6 @@ protected
   end
 
   def not_available_path
-    raise NotAvailablePathMissingError
+    raise NotAvailablePathMissingError, "#not_available_path hasn't been overridden"
   end
 end
