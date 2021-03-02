@@ -3,14 +3,14 @@ require "rails_helper"
 describe Sections::HeroComponent, type: "component" do
   let(:front_matter) do
     {
-      title: "Teaching, it's pretty awesome",
-      fullwidth: true,
-      hide_page_helpful_question: true,
-      subtitle: "Teach all the subjects!",
-      subtitle_link: "/signup",
-      subtitle_button: "Find out more",
-      image: "media/images/hero-home-dt.jpg",
-    }.with_indifferent_access
+      "title" => "Teaching, it's pretty awesome",
+      "fullwidth" => true,
+      "hide_page_helpful_question" => true,
+      "subtitle" => "Teach all the subjects!",
+      "subtitle_link" => "/signup",
+      "subtitle_button" => "Find out more",
+      "image" => "media/images/hero-home-dt.jpg",
+    }
   end
   let(:component) { described_class.new(front_matter) }
   subject! { render_inline(component) }
@@ -18,21 +18,21 @@ describe Sections::HeroComponent, type: "component" do
   describe "rendering a hero section" do
     describe "title and subtitle" do
       specify "renders the title" do
-        expect(page).to have_css(".hero__title > h1", text: front_matter[:title])
+        expect(page).to have_css(".hero__title > h1", text: front_matter["title"])
       end
 
       specify "renders the subtitle" do
-        expect(page).to have_css(".hero__subtitle > .hero__subtitle__text", text: front_matter[:subtitle])
+        expect(page).to have_css(".hero__subtitle > .hero__subtitle__text", text: front_matter["subtitle"])
       end
 
       context "when a subtitle link exists" do
         let(:front_matter) do
           {
-            title: "Teaching, it's pretty awesome",
-            subtitle: "Teach all the subjects!",
-            subtitle_button: "Click here to find out",
-            subtitle_link: "https://foo.com",
-            image: "media/images/hero-home-dt.jpg",
+            "title" => "Teaching, it's pretty awesome",
+            "subtitle" => "Teach all the subjects!",
+            "subtitle_button" => "Click here to find out",
+            "subtitle_link" => "https://foo.com",
+            "image" => "media/images/hero-home-dt.jpg",
           }
         end
 
@@ -40,7 +40,7 @@ describe Sections::HeroComponent, type: "component" do
 
         specify "renders the subtitle button" do
           expect(page).to have_css(".hero__subtitle") do |div|
-            expect(div).to have_link(front_matter[:subtitle_button], href: front_matter[:subtitle_link])
+            expect(div).to have_link(front_matter["subtitle_button"], href: front_matter["subtitle_link"])
           end
         end
       end
@@ -48,7 +48,7 @@ describe Sections::HeroComponent, type: "component" do
 
     describe "images" do
       context "when no image is present" do
-        let(:component) { described_class.new(front_matter.merge(image: nil)) }
+        let(:component) { described_class.new(front_matter.merge("image" => nil)) }
 
         specify "nothing is rendered" do
           expect(rendered_component).to be_empty

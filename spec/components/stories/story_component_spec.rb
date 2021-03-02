@@ -3,35 +3,35 @@ require "rails_helper"
 describe Stories::StoryComponent, type: "component" do
   let(:default_front_matter) do
     {
-      title: "Swapping senior management for students",
-      image: "/assets/images/stories/stories-karen.jpg",
-      story: {
-        teacher: "Karen Roberts",
-        video: "https://www.youtube.com/embed/riY-1DUkLVk",
-        position: "languages teacher",
+      "title" => "Swapping senior management for students",
+      "image" => "/assets/images/stories/stories-karen.jpg",
+      "story" => {
+        "teacher" => "Karen Roberts",
+        "video" => "https://www.youtube.com/embed/riY-1DUkLVk",
+        "position" => "languages teacher",
       },
-      more_stories: [
+      "more_stories" => [
         {
-          name: "Zainab",
-          snippet: "School experience helped me decide to switch",
-          image: "/assets/images/stories/stories-zainab.jpg",
-          link: "/life-as-a-teacher/my-story-into-teaching/career-changers/school-experience-helped-me-decide-to-switch",
+          "name" => "Zainab",
+          "snippet" => "School experience helped me decide to switch",
+          "image" => "/assets/images/stories/stories-zainab.jpg",
+          "link" => "/life-as-a-teacher/my-story-into-teaching/career-changers/school-experience-helped-me-decide-to-switch",
         },
         {
-          name: "Katie",
-          snippet: "Returning to teach with international experience",
-          image: "/assets/images/stories/stories-katie.png",
-          link: "/life-as-a-teacher/my-story-into-teaching/international-career-changers/returning-to-teaching-with-international-experience",
+          "name" => "Katie",
+          "snippet" => "Returning to teach with international experience",
+          "image" => "/assets/images/stories/stories-katie.png",
+          "link" => "/life-as-a-teacher/my-story-into-teaching/international-career-changers/returning-to-teaching-with-international-experience",
         },
         {
-          name: "Helen",
-          snippet: "Lawyer to assistant headteacher",
-          image: "/assets/images/stories/stories-helen.jpg",
-          link: "/life-as-a-teacher/my-story-into-teaching/career-progression/lawyer-to-assistant-teacher",
+          "name" => "Helen",
+          "snippet" => "Lawyer to assistant headteacher",
+          "image" => "/assets/images/stories/stories-helen.jpg",
+          "link" => "/life-as-a-teacher/my-story-into-teaching/career-progression/lawyer-to-assistant-teacher",
         },
       ],
-      build_layout_from_frontmatter: true,
-    }.with_indifferent_access
+      "build_layout_from_frontmatter" => true,
+    }
   end
 
   let(:front_matter) { default_front_matter }
@@ -52,15 +52,15 @@ describe Stories::StoryComponent, type: "component" do
     end
 
     specify "the story's title forms the main heading" do
-      is_expected.to have_css("h1", text: front_matter[:title])
+      is_expected.to have_css("h1", text: front_matter["title"])
     end
 
     specify "the story's image is rendered" do
-      is_expected.to have_css(%(img[src='#{front_matter[:image]}']))
+      is_expected.to have_css(%(img[src="#{front_matter['image']}"]))
     end
 
     specify "the teacher name and position are in secondary heading" do
-      [front_matter.dig(:story, :teacher), front_matter.dig(:story, :position)].each do |part|
+      [front_matter.dig("story", "teacher"), front_matter.dig("story", "position")].each do |part|
         is_expected.to have_css("h2", text: Regexp.new(part))
       end
     end
@@ -69,7 +69,7 @@ describe Stories::StoryComponent, type: "component" do
   describe "video" do
     let(:video_url) { "https://www.youtube.com/embed/riY-1DUkLVk" }
     let(:video_story) do
-      { story: { teacher: "Karen Roberts", video: video_url, position: "languages teacher" } }
+      { story: { "teacher" => "Karen Roberts", "video" => video_url, "position" => "languages teacher" } }
     end
 
     let(:front_matter) { default_front_matter.merge(video_story) }
@@ -82,7 +82,7 @@ describe Stories::StoryComponent, type: "component" do
   describe "more information" do
     let(:text) { "Really interesting stuff" }
     let(:link) { "/really-interesting-stuff" }
-    let(:more_information) { { more_information: { link: link, text: text } } }
+    let(:more_information) { { "more_information" => { "link" => link, "text" => text } } }
     let(:front_matter) { default_front_matter.merge(more_information) }
 
     specify "the link is present in the document" do
@@ -112,12 +112,12 @@ describe Stories::StoryComponent, type: "component" do
       end
 
       specify "there should be a story card for each story" do
-        is_expected.to have_css(".cards.stories > .card", count: front_matter[:more_stories].length)
+        is_expected.to have_css(".cards.stories > .card", count: front_matter["more_stories"].length)
       end
     end
 
     context "when there are no more stories" do
-      let(:front_matter) { default_front_matter.merge(more_stories: nil) }
+      let(:front_matter) { default_front_matter.merge("more_stories" => nil) }
 
       specify "there is no more stories header" do
         is_expected.not_to have_css("h2", text: "More stories")
@@ -128,10 +128,10 @@ describe Stories::StoryComponent, type: "component" do
   describe "explore" do
     context "when there are is explore frontmatter" do
       let(:explore) do
-        default_front_matter[:more_stories].map { |s| s.merge(header: "Test") }
+        default_front_matter["more_stories"].map { |s| s.merge("header" => "Test") }
       end
 
-      let(:front_matter) { default_front_matter.merge(explore: explore) }
+      let(:front_matter) { default_front_matter.merge("explore" => explore) }
 
       specify "there is an explore header" do
         is_expected.to have_css "section.cards-with-headers h2"
@@ -155,7 +155,7 @@ describe Stories::StoryComponent, type: "component" do
 
   describe "with page_data" do
     let(:page_data) { Pages::Data.new }
-    let(:more_stories) { front_matter[:more_stories].length }
+    let(:more_stories) { front_matter["more_stories"].length }
 
     specify "renders a story" do
       is_expected.to have_css("article.story")

@@ -6,17 +6,17 @@ describe GroupedCards::ListingComponent, type: "component" do
   let(:instance) { described_class.new data }
   let(:organisation) do
     {
-      header: "First organisation",
-      name: "Joe Bloggs",
-      telephone: "01234567890",
-      email: "joe.bloggs@first.org",
-    }.with_indifferent_access
+      "header" => "First organisation",
+      "name" => "Joe Bloggs",
+      "telephone" => "01234567890",
+      "email" => "joe.bloggs@first.org",
+    }
   end
   let :data do
     {
       "Region 1" => [organisation, organisation],
       "Region 2" => [organisation],
-    }.with_indifferent_access
+    }
   end
 
   it { is_expected.to have_css "ul", count: 1 }

@@ -10,11 +10,11 @@ describe Cards::StoryComponent, type: "component" do
 
   let :base do
     {
-      name: "Edna Krabappel",
-      snippet: "Your education is important. Roman numerals, et cetera",
-      link: "/stories/edna-k",
-      image: "/images/edna-k.jpg",
-    }.with_indifferent_access
+      "name" => "Edna Krabappel",
+      "snippet" => "Your education is important. Roman numerals, et cetera",
+      "link" => "/stories/edna-k",
+      "image" => "/images/edna-k.jpg",
+    }
   end
 
   let(:story) { base }
@@ -29,14 +29,14 @@ describe Cards::StoryComponent, type: "component" do
   it { is_expected.to have_css ".card.card--no-border" }
   it { is_expected.not_to have_css ".card header" }
   it { is_expected.to have_css "img[src=\"#{story['image']}\"]" }
-  it { is_expected.to have_content story[:snippet] }
+  it { is_expected.to have_content story["snippet"] }
 
   specify "includes the name in a link" do
-    is_expected.to have_link(%(Read #{story[:name]}'s story), href: story[:link], class: "git-link")
+    is_expected.to have_link(%(Read #{story['name']}'s story), href: story["link"], class: "git-link")
   end
 
   context "with supplied header" do
-    let(:story) { base.merge header: "Edna's story" }
+    let(:story) { base.merge "header" => "Edna's story" }
 
     it { is_expected.to have_css ".card header" }
   end
@@ -47,7 +47,7 @@ describe Cards::StoryComponent, type: "component" do
 
     before do
       allow(Pages::Frontmatter).to \
-        receive(:find).with(story[:link]).and_return edna
+        receive(:find).with(story["link"]).and_return edna
     end
 
     it do

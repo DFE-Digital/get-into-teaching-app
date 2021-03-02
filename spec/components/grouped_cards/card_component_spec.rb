@@ -6,11 +6,11 @@ describe GroupedCards::CardComponent, type: "component" do
   let(:instance) { described_class.new organisation }
   let(:organisation) do
     {
-      header: "First organisation",
-      name: "Joe Bloggs",
-      telephone: "01234 567890 (ext 123)",
-      email: "joe.bloggs@first.org",
-    }.with_indifferent_access
+      "header" => "First organisation",
+      "name" => "Joe Bloggs",
+      "telephone" => "01234 567890 (ext 123)",
+      "email" => "joe.bloggs@first.org",
+    }
   end
 
   it { is_expected.to have_css "h4", text: "First organisation" }
@@ -23,11 +23,11 @@ describe GroupedCards::CardComponent, type: "component" do
   context "with link" do
     let(:organisation) do
       {
-        header: "First organisation",
-        link: "https://education.gov.uk",
-        name: "Joe Bloggs",
-        email: "joe.bloggs@first.org",
-      }.with_indifferent_access
+        "header" => "First organisation",
+        "link" => "https://education.gov.uk",
+        "name" => "Joe Bloggs",
+        "email" => "joe.bloggs@first.org",
+      }
     end
 
     it { is_expected.to have_link href: "https://education.gov.uk" }

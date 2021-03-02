@@ -10,7 +10,7 @@ describe Content::AccordionComponent, type: "component" do
         "Step one" => "some content",
         "Step two" => "some other content",
         "Step three" => "even more content",
-      }.with_indifferent_access
+      }
     end
 
     subject! do

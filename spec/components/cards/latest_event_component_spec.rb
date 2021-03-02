@@ -7,7 +7,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
   let(:url_helpers) { Rails.application.routes.url_helpers }
   let(:event) { build(:event_api, name: "Test event") }
   let(:instance) { described_class.new card: card, page_data: page_data }
-  let(:card) { { category: "train to teach event" }.with_indifferent_access }
+  let(:card) { { "category" => "train to teach event" } }
   let(:find_events_header) { Cards::FindEventsComponent::HEADER }
 
   context "with category" do
@@ -43,7 +43,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
   context "with unknown category" do
     include_context "stub types api"
 
-    let(:card) { { category: "unknown" }.with_indifferent_access }
+    let(:card) { { "category" => "unknown" } }
 
     before { expect(Raven).to receive(:capture_exception).and_call_original }
 
