@@ -3,11 +3,11 @@ require "rails_helper"
 describe Stories::CardComponent, type: "component" do
   let(:story) do
     {
-      name: "Edna Krabappel",
-      snippet: "Your education is important. Roman numerals, et cetera",
-      link: "/stories/edna-k",
-      image: "/images/edna-k.jpg",
-    }.with_indifferent_access
+      "name" => "Edna Krabappel",
+      "snippet" => "Your education is important. Roman numerals, et cetera",
+      "link" => "/stories/edna-k",
+      "image" => "/images/edna-k.jpg",
+    }
   end
 
   subject do
@@ -20,17 +20,17 @@ describe Stories::CardComponent, type: "component" do
   end
 
   specify "includes a link wrapping the story image" do
-    is_expected.to have_link(href: story[:link]) do |anchor|
-      expect(anchor).to have_css(%(img[src='#{story[:image]}']))
+    is_expected.to have_link(href: story["link"]) do |anchor|
+      expect(anchor).to have_css(%(img[src="#{story['image']}"]))
     end
   end
 
   specify "includes the snippet" do
-    is_expected.to have_content(story[:snippet])
+    is_expected.to have_content(story["snippet"])
   end
 
   specify "includes the name in a link" do
-    is_expected.to have_link(%(Read #{story[:name]}'s story), href: story[:link], class: "git-link")
+    is_expected.to have_link(%(Read #{story['name']}'s story), href: story["link"], class: "git-link")
   end
 
   specify "no play icon is visible" do
@@ -39,7 +39,7 @@ describe Stories::CardComponent, type: "component" do
 
   context "with video stories" do
     let(:video) { "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
-    let(:video_story) { story.merge(video: video).with_indifferent_access }
+    let(:video_story) { story.merge("video" => video) }
 
     subject do
       render_inline(described_class.new(card: video_story))
@@ -47,8 +47,8 @@ describe Stories::CardComponent, type: "component" do
     end
 
     specify "the image links to the video instead of the story" do
-      is_expected.to have_link(href: video_story[:video]) do |anchor|
-        expect(anchor).to have_css(%(img[src='#{story[:image]}']))
+      is_expected.to have_link(href: video_story["video"]) do |anchor|
+        expect(anchor).to have_css(%(img[src="#{story['image']}"]))
       end
     end
 

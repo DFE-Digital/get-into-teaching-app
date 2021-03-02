@@ -6,7 +6,7 @@ RSpec.describe Cards::FindEventsComponent, type: :component do
   let(:page_data) { Pages::Data.new }
   let(:url_helpers) { Rails.application.routes.url_helpers }
   let(:event) { build(:event_api, name: "Test event") }
-  let(:card) { {}.with_indifferent_access }
+  let(:card) { {} }
   let(:instance) { described_class.new card: card, page_data: page_data }
 
   it { is_expected.to have_css ".card" }

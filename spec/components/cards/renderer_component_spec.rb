@@ -16,16 +16,16 @@ RSpec.describe Cards::RendererComponent, type: :component do
 
     let :card do
       {
-        name: "Edna Krabappel",
-        snippet: "Your education is important. Roman numerals, et cetera",
-        link: "/stories/edna-k",
-        image: "/images/edna-k.jpg",
-      }.with_indifferent_access
+        "name" => "Edna Krabappel",
+        "snippet" => "Your education is important. Roman numerals, et cetera",
+        "link" => "/stories/edna-k",
+        "image" => "/images/edna-k.jpg",
+      }
     end
 
     before do
       allow(Pages::Frontmatter).to \
-        receive(:find).with(card[:link]).and_return edna
+        receive(:find).with(card["link"]).and_return edna
     end
 
     it { is_expected.to have_css ".card" }
@@ -38,7 +38,7 @@ RSpec.describe Cards::RendererComponent, type: :component do
   end
 
   context "with card type specified" do
-    let(:card) { { category: "Train to Teach event", card_type: "latest_event" }.with_indifferent_access }
+    let(:card) { { "category" => "Train to Teach event", "card_type" => "latest_event" } }
     let(:event) { build(:event_api, name: "Test event") }
     let(:page_data) { double Pages::Data, latest_event_for_category: event }
 
@@ -50,13 +50,13 @@ RSpec.describe Cards::RendererComponent, type: :component do
   end
 
   context "with unknown card type specified" do
-    let(:card) { { card_type: "random" }.with_indifferent_access }
+    let(:card) { { "card_type" => "random" } }
 
     it { expect { subject }.to raise_exception described_class::InvalidComponent }
   end
 
   context "with excluded type specified" do
-    let(:card) { { card_type: "renderer" }.with_indifferent_access }
+    let(:card) { { "card_type" => "renderer" } }
 
     it { expect { subject }.to raise_exception described_class::InvalidComponent }
   end
