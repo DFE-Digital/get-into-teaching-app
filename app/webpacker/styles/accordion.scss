@@ -23,10 +23,6 @@
         white-space: initial;
         padding: 0 2em 0 0;
         background: transparent;
-
-        @include mq($from: tablet) {
-          font-size: size("large");
-        }
       }
 
       .step-header__chevron {
