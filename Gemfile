@@ -91,7 +91,7 @@ end
 group :test do
   gem "shoulda-matchers"
   gem "webdrivers", "~> 4.5"
-  gem "webmock"
+  gem "webmock", "~> 3.11.2"
 end
 
 group :rolling, :preprod, :userresearch, :production do
