@@ -6,7 +6,6 @@
   color: $fg;
   padding: 14px $indent-amount;
   font-size: size("small");
-  white-space: nowrap;
   border: none;
 
   &:hover {
@@ -44,6 +43,10 @@ a {
   &--white {
     @include button($bg: $white, $fg: $black);
     @include chevron($color: $black);
+  }
+
+  &--nowrap {
+    white-space: nowrap;
   }
 
   &--unpadded {
