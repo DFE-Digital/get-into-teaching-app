@@ -42,11 +42,11 @@
             </div>
             <div data-navigation-target="links" id="navbar-mobile-links" class="navbar__mobile__links">
                 <ul>
-                    <li><a href="/">Home</a></li>
-                    <% resources.each do |resource| %>
-                        <li><%= link_to resource[:front_matter][:title], resource[:path] %></li>
-                    <% end %>
-                    <li><%= link_to "Find an event near you", events_path %></li>
+                  <%= nav_link("Home", '/') %>
+                  <% resources.each do |resource| %>
+                    <%= nav_link(resource[:front_matter][:title], resource[:path]) %>
+                  <% end %>
+                  <%= nav_link("Find an event near you", events_path) %>
                 </ul>
             </div>
         </div>
