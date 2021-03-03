@@ -64,35 +64,33 @@ RSpec.feature "content pages check", type: :feature, content: true do
     end
   end
 
-  PageLister.content_urls.first.tap do |first_url|
-    describe "navbar" do
-      subject { page }
+  describe "navbar" do
+    subject { page }
 
-      before { visit first_url }
+    before { visit "/" }
 
-      let(:navigation_pages) { Pages::Frontmatter.select(:navigation) }
+    let(:navigation_pages) { Pages::Frontmatter.select(:navigation) }
 
-      scenario "navigable pages appear in desktop navbar" do
-        navigation_pages.each do |url, frontmatter|
-          page.within "nav .navbar__desktop" do
-            is_expected.to have_link frontmatter[:title], href: url
-          end
+    scenario "navigable pages appear in desktop navbar" do
+      navigation_pages.each do |url, frontmatter|
+        page.within "nav .navbar__desktop" do
+          is_expected.to have_link frontmatter[:title], href: url
         end
       end
+    end
 
-      scenario "navigable pages appear in mobile navbar" do
-        navigation_pages.each do |url, frontmatter|
-          page.within "nav .navbar__mobile" do
-            is_expected.to have_link frontmatter[:title], href: url
-          end
+    scenario "navigable pages appear in mobile navbar" do
+      navigation_pages.each do |url, frontmatter|
+        page.within "nav .navbar__mobile" do
+          is_expected.to have_link frontmatter[:title], href: url
         end
       end
+    end
 
-      scenario "mobile nav matches desktop nav" do
-        document.css("nav .navbar__desktop a").each do |desktop_link|
-          page.within "nav .navbar__mobile" do
-            is_expected.to have_link desktop_link.text, href: desktop_link["href"]
-          end
+    scenario "mobile nav matches desktop nav" do
+      document.css("nav .navbar__desktop a").each do |desktop_link|
+        page.within "nav .navbar__mobile" do
+          is_expected.to have_link desktop_link.text, href: desktop_link["href"]
         end
       end
     end
