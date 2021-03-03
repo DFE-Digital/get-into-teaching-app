@@ -1,4 +1,6 @@
 class EventStepsController < ApplicationController
+  include CircuitBreaker
+
   before_action :load_event
 
   include WizardSteps
@@ -9,6 +11,12 @@ class EventStepsController < ApplicationController
   before_action :set_completed_page_title, only: [:completed]
 
   layout "registration"
+
+protected
+
+  def not_available_path
+    events_not_available_path
+  end
 
 private
 

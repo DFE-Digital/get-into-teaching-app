@@ -1,4 +1,6 @@
 class EventsController < ApplicationController
+  include CircuitBreaker
+
   before_action :load_event_search, only: %i[search index]
   before_action :search_events, only: %i[search]
   before_action :load_upcoming_events, only: %i[index]
@@ -23,6 +25,16 @@ class EventsController < ApplicationController
     breadcrumb "events.search", :events_path
     category_name = t("event_types.#{@event.type_id}.name.plural")
     breadcrumb category_name, event_category_path(category_name.parameterize)
+  end
+
+  def not_available
+    render "not_available"
+  end
+
+protected
+
+  def not_available_path
+    events_not_available_path
   end
 
 private

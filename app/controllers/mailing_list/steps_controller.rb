@@ -1,5 +1,7 @@
 module MailingList
   class StepsController < ApplicationController
+    include CircuitBreaker
+
     include WizardSteps
     self.wizard_class = MailingList::Wizard
 
@@ -7,6 +9,16 @@ module MailingList
     before_action :set_completed_page_title, only: [:completed]
 
     layout "registration"
+
+    def not_available
+      render "not_available"
+    end
+
+  protected
+
+    def not_available_path
+      mailinglist_not_available_path
+    end
 
   private
 
