@@ -2,7 +2,7 @@ module MailingList
   module Steps
     class AlreadySubscribed < ::Wizard::Step
       def skipped?
-        !subscribed_to_mailing_list? && !subscribed_to_teacher_training_adviser?
+        !subscribed_to_mailing_list?
       end
 
       def can_proceed?
@@ -11,10 +11,6 @@ module MailingList
 
       def subscribed_to_mailing_list?
         @store["already_subscribed_to_mailing_list"]
-      end
-
-      def subscribed_to_teacher_training_adviser?
-        @store["already_subscribed_to_teacher_training_adviser"]
       end
     end
   end

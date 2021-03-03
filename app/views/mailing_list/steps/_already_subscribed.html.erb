@@ -1,13 +1,5 @@
-<% if f.object.subscribed_to_teacher_training_adviser? %>
-<h1>You have already signed up to an adviser</h1>
-
-<p>The email address <%= mailing_list_session["email"] %> has already signed up to get an adviser.</p>
-<p>Our email updates are intended for users who have not yet signed up for our Get an adviser service.</p>
-<p>The level of support you receive from an adviser will be more in-depth and personal to you than the information we provide in our emails.</p>
-<% else %>
 <h1>You’ve already signed up</h1>
 
 <p>
 The email address <%= mailing_list_session["email"] %> has already signed up to receive emails.
 </p>
-<% end %>

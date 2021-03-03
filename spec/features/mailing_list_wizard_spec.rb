@@ -255,8 +255,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "Enter the verification code sent to test@user.com", with: "123456"
     click_on "Next Step"
 
-    expect(page).to have_text "You have already signed up to an adviser"
-    expect(page).not_to have_button("Next Step")
+    expect(page).to have_text "What stage are you at with your degree?"
   end
 
   scenario "Full journey as an existing candidate using a magic link" do
