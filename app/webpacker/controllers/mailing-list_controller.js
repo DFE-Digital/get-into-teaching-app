@@ -1,12 +1,12 @@
 import { Controller } from 'stimulus';
 
-const countKey = 'feedbackPageCount';
-const feedbackDismissedKey = 'feedbackDismissed';
+const countKey = 'mailingListPageCount';
+const mailingListDismissedKey = 'mailingListDismissed';
 
 export default class extends Controller {
   connect() {
-    if (!this.feedbackDismissed) {
-      this.incrementFeedbackPageCounter();
+    if (!this.mailingListDismissed) {
+      this.incrementMailingListPageCounter();
 
       if (this.pageViewCount >= 3) {
         this.show();
@@ -24,17 +24,17 @@ export default class extends Controller {
 
   dismiss(event) {
     if (event) event.preventDefault();
-    this.dismissFeedback();
+    this.dismissMailingList();
     this.hide();
   }
 
   // we'll probably want to record the fact that
-  // someone's followed the feedback link
-  giveFeedback() {
+  // someone's followed the mailing list link
+  beginMailingListJourney() {
     this.dismiss();
   }
 
-  incrementFeedbackPageCounter() {
+  incrementMailingListPageCounter() {
     const currentValue = this.pageViewCount;
 
     this.updatePageViewCount(currentValue + 1);
@@ -50,11 +50,11 @@ export default class extends Controller {
     return parseInt(count);
   }
 
-  dismissFeedback() {
-    return window.localStorage.setItem(feedbackDismissedKey, 'true');
+  dismissMailingList() {
+    return window.localStorage.setItem(mailingListDismissedKey, 'true');
   }
 
-  get feedbackDismissed() {
-    return window.localStorage.getItem(feedbackDismissedKey) === 'true';
+  get mailingListDismissed() {
+    return window.localStorage.getItem(mailingListDismissedKey) === 'true';
   }
 }
