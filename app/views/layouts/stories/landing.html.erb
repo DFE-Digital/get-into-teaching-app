@@ -8,17 +8,34 @@
 
       <main class="story-landing" role="main" id="main-content">
         <section class="container">
-          <section class="stories-feature">
-            <div class="stories-feature__image" style="background-image:url('/assets/images/victoria.jpg')"></div>
-            <div class="stories-feature__content">
-              <%= tag.h2(@front_matter.dig("featured_story", "heading")) %>
-              <%= tag.span(@front_matter.dig("featured_story", "subheading"), class: "stories-feature__subheading") %>
-              <%= tag.p(@front_matter.dig("featured_story", "text")) %>
-              <%= link_to(@front_matter.dig("featured_story", "link"), class: "git-link") do %>
-                Read <%= @front_matter.dig("featured_story", "name") %>’s story <%= fas_icon("chevron-right") %>
-            <% end %>
-            </div>
-          </section>
+          <% if @front_matter.key?("featured_story") %>
+            <section class="stories-feature">
+              <div class="stories-feature__image" style="background-image:url('<%= @front_matter.dig("featured_story", "image") %>')"></div>
+              <div class="stories-feature__content">
+                <%= tag.h2(@front_matter.dig("featured_story", "heading")) %>
+                <%= tag.span(@front_matter.dig("featured_story", "subheading"), class: "stories-feature__subheading") %>
+                <%= tag.p(@front_matter.dig("featured_story", "text")) %>
+                <%= link_to(@front_matter.dig("featured_story", "link"), class: "git-link") do %>
+                  Read <%= @front_matter.dig("featured_story", "name") %>’s story <%= fas_icon("chevron-right") %>
+                <% end %>
+              </div>
+            </section>
+          <% end %>
+
+          <% if @front_matter.key?("featured_page") %>
+            <section class="stories-feature">
+              <div class="stories-feature__image" style="background-image:url('<%= @front_matter.dig("featured_page", "image") %>')"></div>
+              <div class="stories-feature__content">
+                <%= tag.h2(@front_matter.dig("featured_page", "heading")) %>
+                <%= tag.span(@front_matter.dig("featured_page", "subheading"), class: "stories-feature__subheading") %>
+                <%= tag.p(@front_matter.dig("featured_page", "text")) %>
+                <%= link_to(@front_matter.dig("featured_page", "link", "path"), class: "git-link") do %>
+                  <%= @front_matter.dig("featured_page", "link", "text") %> <%= fas_icon("chevron-right") %>
+                <% end %>
+              </div>
+            </section>
+          <% end %>
+
           <article class="markdown fullwidth">
             <% @front_matter["sections"]&.each do |name, section| %>
               <% if section["stories"].present? %>
