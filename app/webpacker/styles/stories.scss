@@ -46,6 +46,11 @@
     background-size: cover;
     flex: 1 0 40%;
     min-height: 15em;
+    background-position: 0 -1.5em;
+
+    @include mq($from: tablet) {
+      background-position: 0 0;
+    }
   }
 
   &__content {
