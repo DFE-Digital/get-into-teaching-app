@@ -1,0 +1,67 @@
+.mailing-list-bar {
+  background-color: $green;
+  max-width: $content-max-width;
+  margin: 0 auto;
+
+  position: sticky;
+  bottom: 0;
+  padding: 1em;
+
+  flex-direction: row;
+
+  // will be enabled via JS
+  display: none;
+
+  &__inner {
+    align-items: center;
+    display: flex;
+
+    @include mq($until: tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &__left {
+    padding: 1em;
+    font-size: size(small);
+    font-weight: bold;
+    color: $white;
+
+    @include mq($until: tablet) {
+      padding: 1em 0;
+    }
+  }
+
+  &__right {
+    justify-items: left;
+    align-items: center;
+    display: flex;
+    flex-shrink: 0;
+
+    @include mq($until: tablet) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .button {
+      padding: 1.6em;
+    }
+  }
+
+  &__close {
+    padding: .5em;
+    color: $white;
+    font-weight: bold;
+    text-underline-offset: .2em;
+
+    &:hover {
+      color: $white;
+      text-decoration: none;
+    }
+  }
+
+  > .container {
+    @include reset;
+  }
+}
