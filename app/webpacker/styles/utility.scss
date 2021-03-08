@@ -33,7 +33,7 @@ $chevron-direction-map: (
 
   $degrees: map-get($chevron-direction-map, $direction);
 
-  > * {
+  > span {
     word-break: break-word;
 
     // after governs whether the chevron is placed after (on the right) or
