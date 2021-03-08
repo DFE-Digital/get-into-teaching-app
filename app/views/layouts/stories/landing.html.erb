@@ -8,20 +8,6 @@
 
       <main class="story-landing" role="main" id="main-content">
         <section class="container">
-          <% if @front_matter.key?("featured_story") %>
-            <section class="stories-feature">
-              <div class="stories-feature__image" style="background-image:url('<%= @front_matter.dig("featured_story", "image") %>')"></div>
-              <div class="stories-feature__content">
-                <%= tag.h2(@front_matter.dig("featured_story", "heading")) %>
-                <%= tag.span(@front_matter.dig("featured_story", "subheading"), class: "stories-feature__subheading") %>
-                <%= tag.p(@front_matter.dig("featured_story", "text")) %>
-                <%= link_to(@front_matter.dig("featured_story", "link"), class: "git-link") do %>
-                  Read <%= @front_matter.dig("featured_story", "name") %>’s story <%= fas_icon("chevron-right") %>
-                <% end %>
-              </div>
-            </section>
-          <% end %>
-
           <% if @front_matter.key?("featured_page") %>
             <section class="stories-feature">
               <div class="stories-feature__image" style="background-image:url('<%= @front_matter.dig("featured_page", "image") %>')"></div>
