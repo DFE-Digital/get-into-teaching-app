@@ -36,12 +36,17 @@
   </div>
 <% end %>
 
-<% if @events_by_type.any? %>
+<% unless @no_results %>
   <% unless @performed_search %>
   <h2>Discover events</h2>
   <% end %>
-  <% @group_presenter.sorted_events_by_type.each do |type_id, events| %>
-    <%= render partial: "event_group", locals: { type_id: type_id, events: events, show_see_all_events: true } %>
+  <% @events_by_type.each do |type_id, events| %>
+    <%= render "event_group",
+      type_id: type_id,
+      events: events,
+      page_param_name: @performed_search ? @group_presenter.page_param_name(type_id) : nil,
+      show_see_all_events: true
+    %>
   <% end %>
 <% else %>
   <%= render(Events::NoResultsComponent.new) do %>

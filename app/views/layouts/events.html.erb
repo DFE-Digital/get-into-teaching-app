@@ -1,5 +1,12 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
+  <% content_for(:head) do %>
+    <!--
+    Turbolinks preview cache occasionally causes the page to jump
+    back to the top after we restore the scroll position on pagination.
+    -->
+    <meta name="turbolinks-cache-control" content="no-cache">
+  <% end %>
   <%= render "sections/head" %>
   <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
     <div id="skiplink-container">

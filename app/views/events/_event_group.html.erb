@@ -23,6 +23,12 @@
       <% end %>
     <% end %>
 
+    <% if page_param_name.present? %>
+      <div class="event-pagination">
+        <%= paginate events, param_name: page_param_name %>
+      </div>
+    <% end %>
+
     <% show_see_all_events ||= false %>
 
     <% if show_see_all_events %>

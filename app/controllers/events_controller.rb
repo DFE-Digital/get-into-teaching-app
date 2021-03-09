@@ -7,6 +7,7 @@ class EventsController < ApplicationController
   layout "application"
 
   UPCOMING_EVENTS_PER_TYPE = 3
+  MAXIMUM_EVENTS_PER_CATEGORY = 1_000
 
   def index
     @page_title = "Find an event near you"
@@ -41,18 +42,25 @@ private
 
   def load_upcoming_events
     api = GetIntoTeachingApiClient::TeachingEventsApi.new
-    @events_by_type = api.search_teaching_events_grouped_by_type(
+    search_results = api.search_teaching_events_grouped_by_type(
       quantity_per_type: UPCOMING_EVENTS_PER_TYPE,
       start_after: DateTime.now.utc.beginning_of_day,
     )
-    @group_presenter = Events::GroupPresenter.new(@events_by_type)
+    @group_presenter = Events::GroupPresenter.new(search_results)
+    @events_by_type = @group_presenter.sorted_events_by_type
+    @no_results = @events_by_type.all? { |_, events| events.empty? }
   end
 
   def search_events
-    @events_by_type = @event_search.query_events
+    search_results = @event_search.query_events(MAXIMUM_EVENTS_PER_CATEGORY)
+
     @display_empty_types = @event_search.type.nil?
-    @group_presenter = Events::GroupPresenter.new(@events_by_type, @display_empty_types)
     @performed_search = true
+
+    @group_presenter = Events::GroupPresenter.new(search_results, @display_empty_types)
+    pages = params.permit(@group_presenter.page_param_names.values)
+    @events_by_type = @group_presenter.paginated_events_by_type(pages)
+    @no_results = @events_by_type.all? { |_, events| events.empty? }
   end
 
   def load_event_search
