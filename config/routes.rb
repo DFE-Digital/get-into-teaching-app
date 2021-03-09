@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
-    redirect_rules.each { |from, to| get from, to: redirect(to) }
+    redirect_rules.each { |from, to| get from, to: redirect(path: to) }
   end
 
   if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production?
