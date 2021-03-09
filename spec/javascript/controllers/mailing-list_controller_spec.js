@@ -1,19 +1,6 @@
 import { Application } from 'stimulus';
 import MailingListController from 'mailing-list_controller.js';
-
-class FakeLocalStorage {
-  constructor(store = {}) {
-    this.store = store;
-  }
-
-  getItem(key) {
-    return this.store[key];
-  }
-
-  setItem(key, value) {
-    return (this.store[key] = value);
-  }
-}
+import StubLocalStorage from '../stubs/local_storage';
 
 describe('MailingListController', () => {
   beforeEach(() => {
@@ -79,7 +66,7 @@ describe('MailingListController', () => {
   describe('when the user has visited 3 or more pages', () => {
     beforeEach(() => {
       Object.defineProperty(window, 'localStorage', {
-        value: new FakeLocalStorage(),
+        value: new StubLocalStorage(),
       });
       window.localStorage.setItem('mailingListPageCount', '5');
 
@@ -96,7 +83,7 @@ describe('MailingListController', () => {
   describe('viewing a page increments the counter', () => {
     beforeEach(() => {
       Object.defineProperty(window, 'localStorage', {
-        value: new FakeLocalStorage(),
+        value: new StubLocalStorage(),
       });
       window.localStorage.setItem('mailingListPageCount', '2');
 
@@ -114,7 +101,7 @@ describe('MailingListController', () => {
   describe('dismissing the mailing list box', () => {
     beforeEach(() => {
       Object.defineProperty(window, 'localStorage', {
-        value: new FakeLocalStorage({ mailingListPageCount: '2' }),
+        value: new StubLocalStorage({ mailingListPageCount: '2' }),
       });
 
       const application = Application.start();
@@ -133,7 +120,7 @@ describe('MailingListController', () => {
   describe("once dismissed the mailing list bar shouldn't be shown", () => {
     beforeEach(() => {
       Object.defineProperty(window, 'localStorage', {
-        value: new FakeLocalStorage({
+        value: new StubLocalStorage({
           mailingListDismissed: 'true',
           mailingListPageCount: '8',
         }),
