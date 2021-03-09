@@ -1,8 +1,6 @@
 require "rails_helper"
 
 describe "ensuring frontmatter from content pages is rendered" do
-  include_context "prepend fake views"
-
   context "with an accordion layout" do
     before { get "/content-page" }
     subject { response.body }

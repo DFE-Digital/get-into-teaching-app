@@ -1,8 +1,6 @@
 require "rails_helper"
 
 describe "rendering pages with a custom layout" do
-  include_context "prepend fake views"
-
   context "with a home page layout" do
     before { get "/home-page" }
     subject { response.body }

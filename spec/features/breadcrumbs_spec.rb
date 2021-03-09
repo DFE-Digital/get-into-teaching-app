@@ -1,7 +1,6 @@
 require "rails_helper"
 
 RSpec.feature "Breadcrumbs", type: :feature do
-  include_context "prepend fake views"
   include_context "stub types api"
 
   let(:event) { GetIntoTeachingApiClient::TeachingEvent.new(statusId: 1) }
