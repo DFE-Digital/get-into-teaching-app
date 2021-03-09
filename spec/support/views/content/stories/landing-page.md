@@ -3,13 +3,14 @@
   title: "Landing Page Test"
   hide_page_helpful_question: true
   fullwidth: true
-  featured_story:
+  featured_page:
     image: /a/story/image.jpg
-    name: Featured story
     heading: A heading
     subheading: A subheading
-    text: Longer featured story text
-    link: /a/story/link
+    text: Longer featured page text
+    link: 
+      text: a story link
+      path: /a/story/link
   sections:
     A Section:
       link: /a/section/link

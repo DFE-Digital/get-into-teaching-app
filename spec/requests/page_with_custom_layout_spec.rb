@@ -44,10 +44,9 @@ describe "rendering pages with a custom layout" do
     it { expect(response).to have_http_status(200) }
     it { is_expected.to include("Landing Page Test") }
 
-    it { is_expected.to include("Featured story") }
     it { is_expected.to include("A heading") }
     it { is_expected.to include("A subheading") }
-    it { is_expected.to include("Longer featured story text") }
+    it { is_expected.to include("Longer featured page text") }
 
     it { is_expected.to include("A Section") }
     it { is_expected.to include("Longer section text") }
