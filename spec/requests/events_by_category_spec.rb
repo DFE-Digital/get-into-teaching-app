@@ -117,7 +117,7 @@ describe "View events by category" do
   describe "pagination" do
     before { get(path) }
 
-    let(:events_per_page) { EventCategoriesController::EVENTS_PER_PAGE }
+    let(:events_per_page) { Events::GroupPresenter::EVENTS_PER_TYPE }
     let(:parsed_response) { Nokogiri.parse(response.body) }
 
     context "when there are more than one page's worth of events" do

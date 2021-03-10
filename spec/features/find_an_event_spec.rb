@@ -10,7 +10,8 @@ RSpec.feature "Finding an event", type: :feature do
     end
   end
   let(:events_by_type) { group_events_by_type(events) }
-  let(:event) { events.last }
+  let(:event) { events.first }
+  let(:event_category_slug) { "train-to-teach-events" }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -25,7 +26,7 @@ RSpec.feature "Finding an event", type: :feature do
     expect(page).to have_text "Search for events"
     expect(page).to have_css "h3", text: "Train to Teach events"
 
-    click_on(event.name)
+    first(:link, event.name).click
 
     expect(page).to have_css "h1", text: event.name
     click_on "Sign up for this event", match: :first
@@ -47,7 +48,22 @@ RSpec.feature "Finding an event", type: :feature do
     click_on "Sign up for this event", match: :first
   end
 
-  let(:event_category_slug) { "train-to-teach-events" }
+  scenario "Paging through search results" do
+    visit events_path
+
+    expect(page).to have_text "Search for events"
+    expect(page).to_not have_css ".pagination"
+
+    click_on "Update results"
+
+    expect(page).to have_css ".pagination"
+
+    # there are 11 events and 9 per page
+    expect(page).to have_css(".event-box", count: 9)
+    click_on("2")
+    expect(page).to have_css(".event-box", count: 2)
+  end
+
   scenario "Navigating events by page" do
     visit event_category_path(event_category_slug)
 

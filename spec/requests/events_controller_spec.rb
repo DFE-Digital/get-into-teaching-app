@@ -24,7 +24,7 @@ describe EventsController do
   end
 
   describe "#search" do
-    let(:results_per_type) { Events::Search::RESULTS_PER_TYPE }
+    let(:results_per_type) { EventsController::MAXIMUM_EVENTS_PER_CATEGORY }
     let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
     let(:events_by_type) { group_events_by_type(events) }
     let(:search_key) { Events::Search.model_name.param_key }
