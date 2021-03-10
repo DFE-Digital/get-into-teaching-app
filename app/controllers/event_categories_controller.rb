@@ -6,7 +6,6 @@ class EventCategoriesController < ApplicationController
 
   breadcrumb "events.search", :events_path
 
-  EVENTS_PER_PAGE = 9
   MAXIMUM_EVENTS_IN_CATEGORY = 1_000
 
   def show
@@ -46,8 +45,7 @@ private
     @event_search = Events::Search.new(event_filter_params.merge(type: @type.id, period: period))
     events_by_type = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
     group_presenter = Events::GroupPresenter.new(events_by_type, false, @event_search.future?)
-    events_of_type = group_presenter.sorted_events_of_type(@type.id)
-    @events = paginate(events_of_type)
+    @events = group_presenter.paginated_events_of_type(@type.id, params[:page]) || []
   end
 
   def load_type
@@ -61,15 +59,6 @@ private
   def set_form_action
     @form_action = URI.parse(request.path)
     @form_action.fragment = "searchforevents"
-  end
-
-  def paginate(events)
-    return [] if events.blank?
-
-    Kaminari
-      .paginate_array(events, total_count: events&.size)
-      .page(params[:page])
-      .per(EVENTS_PER_PAGE)
   end
 
   def has_archive?(type)
