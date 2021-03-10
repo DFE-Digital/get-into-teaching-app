@@ -2,14 +2,14 @@ name: Link Trello card
 
 on:
   pull_request:
-    types: [ opened ]
+    types: [ opened , edited]
 
 jobs:
   attach-to-trello:
     name: Link Trello card to this PR
     runs-on: ubuntu-latest
+    environment: Development
     steps:
-
       - uses: Azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
@@ -20,34 +20,10 @@ jobs:
            keyvault: ${{ secrets.KEY_VAULT}}
            secrets: 'TRELLO-KEY, TRELLO-TOKEN'
 
-      - name: Extract Pull Request url
-        id: pr-url
-        run: |
-          echo ::set-output name=url::$(jq -r .pull_request.html_url $GITHUB_EVENT_PATH)
-
-      - name: Extract Trello URL
-        id: trello-id
-        run: |
-          ruby -e \
-            'require "json" ; \
-              body = JSON.parse(ARGF.read).dig("pull_request", "body") ; \
-              if m = body.match(%r{https://trello.com/c/([a-zA-Z0-9]+)}) ; \
-                puts "::set-output name=id::#{m[1]}" ; \
-              else ; \
-                "" ; \
-              end' \
-            $GITHUB_EVENT_PATH
-
-      - name: Link to Trello card
-        if: steps.trello-id.outputs.id
-        run: |
-          curl \
-            --silent \
-            --output /dev/null \
-            --show-error \
-            --fail \
-            --request POST \
-            --url 'https://api.trello.com/1/cards/${{ steps.trello-id.outputs.id }}/actions/comments' \
-            --data-urlencode "key=${{ steps.azSecret.outputs.TRELLO-KEY }}" \
-            --data-urlencode "token=${{ steps.azSecret.outputs.TRELLO-TOKEN }}" \
-            --data-urlencode "text=${{ steps.pr-url.outputs.url }}"
+      - name: Add Trello Comment
+        uses: DFE-Digital/github-actions/AddTrelloComment@master
+        with:
+          MESSAGE:      ${{ github.event.pull_request.html_url }} 
+          CARD:         ${{ github.event.pull_request.body }}           
+          TRELLO-KEY:   ${{ steps.azSecret.outputs.TRELLO-KEY}}
+          TRELLO-TOKEN: ${{ steps.azSecret.outputs.TRELLO-TOKEN }
