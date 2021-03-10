@@ -10,6 +10,7 @@ class SitemapController < ApplicationController
     /event-categories/train-to-teach-events
     /event-categories/online-q-as
     /event-categories/school-and-university-events
+    /mailinglist/signup
   ].freeze
 
   def show
@@ -33,7 +34,6 @@ private
           xml.url do
             xml.loc(request.base_url + events_path)
             xml.lastmod(DEFAULT_LASTMOD)
-            xml.change_frequency("daily")
           end
         end
       end
