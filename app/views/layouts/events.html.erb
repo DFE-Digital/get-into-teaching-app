@@ -21,7 +21,7 @@
     <%= render Navigation::BreadcrumbComponent.new %>
 
     <main role="main" id="main-content">
-      <section class="container">
+      <section class="container events">
         <article class="markdown<%= " fullwidth" if @before_search_fullwidth %> ">
           <%= yield :before_search %>
         </article>
@@ -29,7 +29,7 @@
       <div class="feature">
         <%= render @search_component %>
       </div>
-      <section class="container">
+      <section class="container events">
         <article class="fullwidth">
           <%= yield %>
         </article>
