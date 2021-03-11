@@ -1,11 +1,12 @@
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: 73e455e0f3fd17a2308c6fb0a2dde5f5985ee812
+  revision: ea07b478ff51a4238c8f32e40859b2c6f890275b
   specs:
-    get_into_teaching_api_client (1.1.12)
+    get_into_teaching_api_client (1.1.13)
+      addressable (~> 2.3, >= 2.3.0)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (0.1.17)
+    get_into_teaching_api_client_faraday (0.1.18)
       activesupport
       faraday
       faraday-encoding
@@ -132,7 +133,7 @@ GEM
     faraday_middleware-circuit_breaker (0.4.1)
       faraday (>= 0.9, < 2.0)
       stoplight (~> 2.1)
-    ffi (1.14.2)
+    ffi (1.15.0)
     foreman (0.87.2)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -175,7 +176,7 @@ GEM
     mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.5.0)
-    minitest (5.14.3)
+    minitest (5.14.4)
     msgpack (1.4.2)
     multipart-post (2.1.1)
     nio4r (2.5.5)
