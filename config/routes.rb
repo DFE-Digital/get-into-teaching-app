@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   get "/422", to: "errors#unprocessable_entity", via: :all
   get "/500", to: "errors#internal_server_error", via: :all
   get "/healthcheck.json", to: "healthchecks#show", as: :healthcheck
+  get "/sitemap.xml", to: "sitemap#show", via: :all
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
     redirect_rules.each { |from, to| get from, to: redirect(path: to) }
