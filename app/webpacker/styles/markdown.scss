@@ -41,6 +41,14 @@
     margin-top: 1.5em;
   }
 
+  h3 {
+    font-size: size(large);
+  }
+
+  h4 {
+    font-size: size(medium);
+  }
+
   a {
     &[href*="//"] {
       &:after {
