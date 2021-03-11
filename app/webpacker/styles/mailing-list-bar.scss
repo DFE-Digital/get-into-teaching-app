@@ -25,7 +25,7 @@
     color: $white;
 
     @include mq($until: tablet) {
-      padding: 1em 0;
+      padding: .2em 0 1em;
     }
   }
 
@@ -36,8 +36,7 @@
     flex-shrink: 0;
 
     @include mq($until: tablet) {
-      flex-direction: column;
-      align-items: flex-start;
+      justify-items: center;
     }
 
     .button {
@@ -46,6 +45,7 @@
   }
 
   &__close {
+    margin-left: 1em;
     padding: .5em;
     color: $white;
     font-weight: bold;
