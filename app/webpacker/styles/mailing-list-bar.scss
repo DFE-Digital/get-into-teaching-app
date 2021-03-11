@@ -1,13 +1,8 @@
 .mailing-list-bar {
   background-color: $green;
-  max-width: $content-max-width;
-  margin: 0 auto;
-
+  padding: 1em;
   position: sticky;
   bottom: 0;
-  padding: 1em;
-
-  flex-direction: row;
 
   // will be enabled via JS
   display: none;
@@ -15,6 +10,7 @@
   &__inner {
     align-items: center;
     display: flex;
+    margin: 0 auto;
 
     @include mq($until: tablet) {
       flex-direction: column;
@@ -59,9 +55,5 @@
       color: $white;
       text-decoration: none;
     }
-  }
-
-  > .container {
-    @include reset;
   }
 }
