@@ -56,7 +56,7 @@ describe MailingList::Wizard do
   describe "#exchange_access_token" do
     let(:totp) { "123456" }
     let(:request) { GetIntoTeachingApiClient::ExistingCandidateRequest.new }
-    let(:response) { GetIntoTeachingApiClient::MailingListAddMember.new(candidateId: "123", telephone: "12345") }
+    let(:response) { GetIntoTeachingApiClient::MailingListAddMember.new(candidateId: "123", email: "12345") }
 
     before do
       expect_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
@@ -69,7 +69,7 @@ describe MailingList::Wizard do
     end
 
     it "logs the response model (filtering sensitive attributes)" do
-      filtered_json = { "candidateId" => "123", "telephone" => "[FILTERED]" }.to_json
+      filtered_json = { "candidateId" => "123", "email" => "[FILTERED]" }.to_json
       expect(Rails.logger).to receive(:info).with("MailingList::Wizard#exchange_access_token: #{filtered_json}")
       subject.exchange_access_token(totp, request)
     end
