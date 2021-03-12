@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
@@ -34,12 +34,12 @@
             <div class="steps">
               <% steps_fm.each.with_index(1) do |(title, contents), i| %>
                 <section class="step">
-                  <div class="step__number">
-                    <%= i %>
-                  </div>
 
                   <header class="step__header">
-                    <%= tag.h3(title) %>
+                    <div class="step__number">
+                      <%= i %>
+                    </div>
+                    <%= tag.h2(title) %>
                   </header>
 
                   <div class="step__content">
@@ -51,8 +51,9 @@
 
           <% end %>
 
-          <%= render "sections/page_helpful" unless @front_matter["hide_page_helpful_question"] %>
+
         <% end %>
+        <%= render "sections/page_helpful" unless @front_matter["hide_page_helpful_question"] %>
       </section>
     </main>
 
