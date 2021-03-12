@@ -32,7 +32,7 @@
           <% @front_matter.key?("steps") && @front_matter.dig("steps").tap do |steps_fm| %>
 
             <div class="steps">
-              <% steps_fm.each.with_index do |(title, contents), i| %>
+              <% steps_fm.each.with_index(1) do |(title, contents), i| %>
                 <section class="step">
                   <div class="step__number">
                     <%= i %>
