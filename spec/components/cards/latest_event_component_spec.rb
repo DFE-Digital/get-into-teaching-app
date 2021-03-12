@@ -45,7 +45,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
 
     let(:card) { { "category" => "unknown" } }
 
-    before { expect(Raven).to receive(:capture_exception).and_call_original }
+    before { expect(Sentry).to receive(:capture_exception).and_call_original }
 
     it { is_expected.to have_css ".card header", text: find_events_header }
   end
@@ -55,7 +55,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
 
     let(:card) { {} }
 
-    before { expect(Raven).to receive(:capture_exception).and_call_original }
+    before { expect(Sentry).to receive(:capture_exception).and_call_original }
 
     it { is_expected.to have_css ".card header", text: find_events_header }
   end

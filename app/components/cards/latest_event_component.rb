@@ -46,7 +46,7 @@ module Cards
     def fetch_event
       @event = @page_data.latest_event_for_category(category)
     rescue Events::Category::UnknownEventCategory => e
-      Raven.capture_exception(e)
+      Sentry.capture_exception(e)
       @event = nil
     end
 
