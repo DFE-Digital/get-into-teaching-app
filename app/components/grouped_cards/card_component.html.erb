@@ -1,20 +1,16 @@
-<div class="events-featured__list__item grouped-cards">
-  <div class="event-box">
-    <div class="event-box__header grouped-cards__header">
-      <%= linked_header %>
-    </div>
+<div class="group__card">
+  <div class="group__card__heading">
+    <%= linked_header %>
+  </div>
 
-    <hr class="event-box__divider event-box__divider--online-event" />
+  <hr class="group__card__divider" />
 
-    <div class="event-box__datetime">
-      <p>
-      <% for field, value in fields %>
-        <div class="grouped-cards__fields">
-          <span><%= field.humanize %>:</span>
-          <span><%= linked_value(value) %></span>
-        </div>
-      <% end %>
-      </p>
-    </div>
+  <div class="group__card__content">
+    <% for field, value in fields %>
+      <div class="group__card__fields">
+        <span><%= field.humanize %>:</span>
+        <span><%= linked_value(value) %></span>
+      </div>
+    <% end %>
   </div>
 </div>

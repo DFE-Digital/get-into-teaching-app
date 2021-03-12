@@ -14,8 +14,8 @@ describe GroupedCards::CardComponent, type: "component" do
   end
 
   it { is_expected.to have_css "h4", text: "First organisation" }
-  it { is_expected.to have_css ".event-box__datetime span", text: "Name" }
-  it { is_expected.to have_css ".event-box__datetime span", text: "Joe Bloggs" }
+  it { is_expected.to have_css ".group__card__fields span", text: "Name" }
+  it { is_expected.to have_css ".group__card__fields span", text: "Joe Bloggs" }
   it { is_expected.to have_link "joe.bloggs@first.org", href: "mailto:joe.bloggs@first.org" }
 
   it { is_expected.not_to have_css "a h4" }

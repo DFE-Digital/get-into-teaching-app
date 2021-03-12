@@ -26,5 +26,5 @@ describe GroupedCards::ListingComponent, type: "component" do
   it { is_expected.to have_css "h3", text: "Region 1" }
   it { is_expected.to have_css "h3", text: "Region 2" }
 
-  it { is_expected.to have_css ".event-box", count: 3 }
+  it { is_expected.to have_css ".group__card", count: 3 }
 end

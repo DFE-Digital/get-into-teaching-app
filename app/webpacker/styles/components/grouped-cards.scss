@@ -1,18 +1,44 @@
-.grouped-cards {
-  &__header {
-    a {
-      [href*="//"] {
-        display: block;
-      }
-    }
+.group {
+  display: flex;
+  min-width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+  background: $grey;
+  padding: 1em;
+  margin: 1em auto;
 
-    &:after {
-      display: none;
-      content: "";
-    }
+  h3 {
+    margin: .2em auto 1em;
   }
 
-  .grouped-cards__fields + .grouped-cards__fields {
-    margin-top: .5em;
+  .group__cards {
+    @include cards-grid;
+
+    .group__card {
+      box-sizing: border-box;
+      padding: 1em;
+      background: $white;
+
+      &__heading {
+        h4 {
+          font-size: size(small);
+          display: inline;
+        }
+      }
+
+      &__divider {
+        border: none;
+        height: 4px;
+        background-color: $blue;
+        margin: 1em 0;
+      }
+
+      &__fields {
+        font-size: size(xsmall);
+        white-space: normal;
+
+        a { overflow-wrap: break-word; }
+      }
+    }
   }
 }

@@ -12,7 +12,7 @@
   @supports (display: grid) {
     display: grid;
     align-items: stretch;
-    grid-template-columns: repeat($columns, 1fr);
+    grid-template-columns: repeat($columns, minmax(0, 1fr));
     grid-gap: $gap;
   }
 
