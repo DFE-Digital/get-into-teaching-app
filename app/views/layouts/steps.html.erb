@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+    <%= render "sections/head" %>
+    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+      </div>
+    </div>
+
+    <%= render "sections/header" %>
+    <%= render Sections::HeroComponent.new(@front_matter) %>
+    <%= render Navigation::BreadcrumbComponent.new %>
+
+    <main role="main" id="main-content">
+      <section class="container">
+        <% if !@front_matter["image"] %>
+          <header>
+            <% if @front_matter["title_caption"].present? %>
+              <%= tag.span(@front_matter["title_caption"], class: "caption") %>
+            <% end %>
+
+            <%= tag.h1(@front_matter["title"]) %>
+          </header>
+        <% end %>
+
+        <%= tag.article(class: article_classes(@front_matter)) do %>
+
+          <%= yield %>
+
+          <% @front_matter.key?("steps") && @front_matter.dig("steps").tap do |steps_fm| %>
+
+            <div class="steps">
+              <% steps_fm.each.with_index do |(title, contents), i| %>
+                <section class="step">
+                  <div class="step__number">
+                    <%= i %>
+                  </div>
+
+                  <header class="step__header">
+                    <%= tag.h3(title) %>
+                  </header>
+
+                  <div class="step__content">
+                    <%= render(partial: contents["partial"]) %>
+                  </div>
+                </section>
+              <% end %>
+            </ul>
+
+          <% end %>
+
+          <%= render "sections/page_helpful" unless @front_matter["hide_page_helpful_question"] %>
+        <% end %>
+      </section>
+    </main>
+
+    <%= render "sections/footer" %>
+    <%= render "components/videoplayer" %>
+    <%= render "sections/cookie-acceptance" %>
+    <%= render "components/analytics" %>
+    <% end %>
+</html>
+

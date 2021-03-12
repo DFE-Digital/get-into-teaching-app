@@ -1,0 +1,27 @@
+.steps {
+  outline: 1px dashed pink;
+  padding: 1em;
+
+  .step {
+    outline: 1px dashed lightblue;
+    padding: 1em;
+
+    &__number {
+      outline: 1px dashed peru;
+      padding: 1em;
+      margin: .2em;
+    }
+
+    &__header {
+      outline: 1px dashed coral;
+      padding: 1em;
+      margin: .2em;
+    }
+
+    &__content {
+      outline: 1px dashed chartreuse;
+      padding: 1em;
+      margin: .2em;
+    }
+  }
+}
