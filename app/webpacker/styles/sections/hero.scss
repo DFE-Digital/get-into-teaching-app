@@ -66,7 +66,7 @@ $mobile-cutoff: 800px;
   @supports (display: grid) {
     display: grid;
 
-    grid-template-columns: 3em repeat(3, 1fr);
+    grid-template-columns: 3em repeat(2, 1fr) 2em;
     grid-template-rows:
       8em $title-overlap-img repeat(
         2,
@@ -154,11 +154,12 @@ $mobile-cutoff: 800px;
 
     h1 {
       background-color: $yellow-dark-90;
-      padding: .8em 2em 1.2em;
+      padding: .8em 0.75em 1.2em 1.75em;
       margin-left: -1em;
 
       @include mq($from: tablet) {
         margin-top: 2em;
+        padding: .8em 2em 1.2em;
       }
 
       > span {

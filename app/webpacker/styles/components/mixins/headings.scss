@@ -6,7 +6,8 @@
   background: $blue;
   font-size: size("medium");
   font-weight: 700;
-  margin-right: 8rem;
+  box-sizing: border-box;
+  max-width: calc(100% - 1.25rem);
   color: $white;
 
   &:after {
