@@ -30,7 +30,6 @@
           <div class="govuk-checkboxes__item">
             <%= form.check_box :degree, checked: @eligibility.degree, class: "govuk-checkboxes__input" %>
             <%= form.label :degree, "Bachelor's degree", class: "govuk-label govuk-checkboxes__label" %>
-            <div class="govuk-hint govuk-checkboxes__hint">Grade 2:2 honours or above</div>
           </div>
         </div>
       </fieldset>
@@ -65,7 +64,7 @@
 
 <% elsif @eligibility.no_english_or_maths? %>
   <p>
-    All teachers need English and maths GCSEs, or equivalent. You’ll need to
+    All teachers need English and Maths GCSEs, or equivalent. You’ll need to
     show that you have a comparable level of education.
   </p>
 
