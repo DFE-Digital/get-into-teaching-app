@@ -1,1 +1,38 @@
-<h1>Show</h1>
+<h1>Check your eligibility</h1>
+
+<%= form_with(object: @eligibility, method: :get, url: "#", data: { remote: false }) do |form| %>
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <legend class="govuk-fieldset__legend">Which qualifications do you have?</legend>
+
+      <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <%= form.check_box :gcse_english, checked: ActiveModel::Type::Boolean.new.cast(@eligibility.gcse_english), class: "govuk-checkboxes__input" %>
+        <%= form.label :gcse_english, "GCSE English", class: "govuk-label govuk-checkboxes__label" %>
+        <div class="govuk-hint govuk-checkboxes__hint">Grade 4 (C) or above</div>
+      </div>
+
+      <div class="govuk-checkboxes__item">
+        <%= form.check_box :gcse_maths, checked: ActiveModel::Type::Boolean.new.cast(@eligibility.gcse_maths), class: "govuk-checkboxes__input" %>
+        <%= form.label :gcse_maths, "GCSE Maths", class: "govuk-label govuk-checkboxes__label" %>
+        <div class="govuk-hint govuk-checkboxes__hint">Grade 4 (C) or above</div>
+      </div>
+
+
+      <div class="govuk-checkboxes__item">
+        <%= form.check_box :gcse_science, checked: ActiveModel::Type::Boolean.new.cast(@eligibility.gcse_science), class: "govuk-checkboxes__input" %>
+        <%= form.label :gcse_science, "GCSE Science", class: "govuk-label govuk-checkboxes__label" %>
+        <div class="govuk-hint govuk-checkboxes__hint">Grade 4 (C) or above</div>
+      </div>
+
+
+      <div class="govuk-checkboxes__item">
+        <%= form.check_box :gcse_degree, checked: ActiveModel::Type::Boolean.new.cast(@eligibility.degree), class: "govuk-checkboxes__input" %>
+        <%= form.label :gcse_degree, "Bachelor's degree", class: "govuk-label govuk-checkboxes__label" %>
+        <div class="govuk-hint govuk-checkboxes__hint">Grade 2:2 honours or above</div>
+      </div>
+    </fieldset>
+  </div>
+
+  <%= form.submit(data: { save_with: false, disable_with: false }) %>
+<% end %>
