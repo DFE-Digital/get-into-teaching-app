@@ -1,4 +1,5 @@
 <h1>Are you qualified to start teacher training?</h1>
+<p>Find out instantly if you have what you need to start postgraduate training for teaching in English primary or secondary schools. You'll also see your next steps for qualifying.</p>  
 
 <% unless @eligibility.any_checked? %>
   <%= form_with(object: @eligibility, method: :get, url: "#", data: { remote: false }) do |form| %>
@@ -86,3 +87,4 @@
 <% if @eligibility.any_checked? %>
   <%= link_to("Start again", eligibility_checker_path, class: "secondary-button govuk-!-margin-top-9") %>
 <% end %>
+
