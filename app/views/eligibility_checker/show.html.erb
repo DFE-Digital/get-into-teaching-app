@@ -66,14 +66,19 @@
   </p>
 
   <p>
-    <strong>Primary school teachers</strong> need a also science GCSE. You’ll need to show that you have an equivalent level of education.
+    <strong>Primary school teachers</strong> also need a science GCSE. Alternatively, you’ll need to show that you have an equivalent level of education.
   </p>
 
   <h3>Next steps:</h3>
 
   <p>
-    Speak to a <%= link_to("Teacher Training Adviser", "/tta-service") %>.
+    If you want to teach at a secondary school speak to a <%= link_to("Teacher Training Adviser", "/tta-service") %>.
     They'll help you understand your options.
+  </p>
+
+  <p>
+    If you want to teach in a primary school and need to get the right GCSEs, you will need to find a GCSE training provider. You can
+    find a training provider on the <%= link_to("National Careers Service", "https://nationalcareers.service.gov.uk/find-a-course/search") %>.
   </p>
 
 <% elsif @eligibility.no_english_or_maths? %>
@@ -123,5 +128,5 @@
 <p>
   <strong>Similar qualifications:</strong> If you think you have what you need, but your
   qualifications are not on this list, <%= link_to "a Teacher Training Adviser", "/tta-service" %> can let you
-  know if you're ready to apply.
+  know if your qualifications are equivalent and that you're ready to apply.
 </p>
