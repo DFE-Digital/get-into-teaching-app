@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   rescue_from Pages::Page::PageNotFoundError, with: :render_not_found
 
   before_action :http_basic_authenticate
+  before_action :set_api_client_request_id
   before_action :record_utm_codes
   before_action :add_home_breadcrumb
 
@@ -14,6 +15,12 @@ class ApplicationController < ActionController::Base
   end
 
 private
+
+  def set_api_client_request_id
+    # The request_id is passed to the ApiClient via Thread.current
+    # so we don't have to set it explicitly on every usage.
+    GetIntoTeachingApiClient::Current.request_id = request.uuid
+  end
 
   def add_home_breadcrumb
     return if request.path == root_path
