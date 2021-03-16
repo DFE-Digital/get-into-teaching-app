@@ -16,7 +16,7 @@ describe Events::Search do
 
   describe ".available_distance_keys" do
     subject { described_class.new.available_distance_keys }
-    it { is_expected.to eql [nil, 30, 50, 100] }
+    it { is_expected.to eql [nil, 10, 25] }
   end
 
   describe ".available_event_type_ids" do
