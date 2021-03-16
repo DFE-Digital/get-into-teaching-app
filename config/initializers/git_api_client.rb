@@ -14,4 +14,10 @@ GetIntoTeachingApiClient.configure do |config|
   end
 
   config.cache_store = Rails.cache
+
+  config.circuit_breaker = {
+    enabled: true,
+    threshold: 5,
+    timeout: 5.minutes,
+  }
 end
