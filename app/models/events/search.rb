@@ -7,7 +7,7 @@ module Events
     RESULTS_PER_TYPE = 9
     FUTURE_MONTHS = 5
     PAST_MONTHS = 4
-    DISTANCES = [30, 50, 100].freeze
+    DISTANCES = [10, 25].freeze
     MONTH_FORMAT = %r{\A20[234]\d-(0[1-9]|1[012])\z}.freeze
 
     delegate :available_event_type_ids, :available_distance_keys, to: :class
