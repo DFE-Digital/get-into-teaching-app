@@ -52,6 +52,11 @@ a {
   &--unpadded {
     padding: 0;
   }
+
+  &--smaller {
+    font-size: size("xsmall");
+    padding: 8px $indent-amount;
+  }
 }
 
 .call-to-action-icon-button {

@@ -55,6 +55,7 @@
         width: calc(100% - 100px);
         background: transparent;
         color: $black;
+
         @include mq($until: tablet) {
           font-size: size(medium);
         }
@@ -70,6 +71,25 @@
       @include mq($until: tablet) {
         padding-left: 75px;
         padding-right: 20px;
+      }
+
+      details {
+        border: 2px solid $pink-dark;
+
+        summary {
+          background-color: $pink-dark;
+          color: $white;
+          font-weight: bold;
+          padding: .4em 2em;
+        }
+
+        section {
+          margin: 1em;
+        }
+
+        section + section {
+          margin-top: 2em;
+        }
       }
     }
   }
