@@ -16,11 +16,17 @@
 require "webmock/rspec"
 
 require "simplecov"
+require "simplecov_json_formatter"
 SimpleCov.start "rails" do
   add_filter "/app/services/get_into_teaching_api/fake_endpoints.rb"
   add_filter "/bin/"
   add_filter "/db/"
   add_filter "/spec/"
+
+  formatter SimpleCov::Formatter::MultiFormatter.new [
+    SimpleCov::Formatter::HTMLFormatter,
+    SimpleCov::Formatter::JSONFormatter,
+  ]
 end
 
 RSpec.configure do |config|
