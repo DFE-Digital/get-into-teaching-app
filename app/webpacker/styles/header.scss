@@ -155,7 +155,8 @@
       }
 
       ul {
-        margin-right: 40px;
+        margin-right: 20px;
+        padding-left: 20px;
         list-style-type: none;
 
         li {
@@ -301,6 +302,9 @@
   .navbar__mobile {
     display: block;
     width: 100%;
+  }
+  .covid {
+    padding: 1.25em;
   }
 }
 
