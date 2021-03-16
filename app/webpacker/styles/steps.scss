@@ -5,7 +5,7 @@
 
   &:before {
     content: "";
-    width: 0px;
+    width: 0;
     height: calc(100% - 20px);
     position: absolute;
     top: 20px;
@@ -46,6 +46,7 @@
     &__header {
       display: flex;
       align-items: center;
+
       h2 {
         margin: 0;
         padding: 0;
@@ -55,8 +56,9 @@
         background: transparent;
         color: $black;
         @include mq($until: tablet) {
-        font-size: size(medium);
+          font-size: size(medium);
         }
+
         &:after {
           display: none;
         }
