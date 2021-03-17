@@ -36,7 +36,7 @@ private
   end
 
   def render_not_found
-    render template: "errors/not_found", layout: "application", status: :not_found
+    render template: "errors/not_found", layout: "application", status: :not_found, formats: %i[html]
   end
 
   def render_too_many_requests
