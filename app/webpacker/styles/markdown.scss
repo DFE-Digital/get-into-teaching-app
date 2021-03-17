@@ -49,7 +49,7 @@
     font-size: size(small);
   }
 
-  a {
+  a:not(.button--no-external-icon) {
     &[href*="//"] {
       &:after {
         content: url('../images/icon-external.svg');
