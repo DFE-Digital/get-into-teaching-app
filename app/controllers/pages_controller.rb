@@ -68,6 +68,7 @@ private
       format.html do
         render \
           template: "errors/not_found",
+          layout: "application",
           status: :not_found
       end
 

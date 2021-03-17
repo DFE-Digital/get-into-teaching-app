@@ -36,11 +36,11 @@ private
   end
 
   def render_not_found
-    render template: "errors/not_found", layout: "application", status: :not_found
+    render_error :not_found
   end
 
   def render_too_many_requests
-    render template: "errors/too_many_requests", layout: "application", status: :too_many_requests
+    render_error :too_many_requests
   end
 
   def http_basic_authenticate
@@ -49,6 +49,25 @@ private
     authenticate_or_request_with_http_basic do |name, password|
       name == ENV["HTTPAUTH_USERNAME"].to_s &&
         password == ENV["HTTPAUTH_PASSWORD"].to_s
+    end
+  end
+
+  def render_error(status_code_symbol)
+    unless status_code_symbol.is_a?(Symbol) # Guard against incorrect usage
+      return render status: :invalid_server_error, body: nil
+    end
+
+    respond_to do |format|
+      format.html do
+        render \
+          template: "errors/#{status_code_symbol}",
+          layout: "application",
+          status: status_code_symbol
+      end
+
+      format.all do
+        render status: status_code_symbol, body: nil
+      end
     end
   end
 end
