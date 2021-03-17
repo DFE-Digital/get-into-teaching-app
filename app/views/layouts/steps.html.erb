@@ -51,21 +51,14 @@
 
           <% end %>
 
+          <div class="supplementary steps-cta">
+            <%= render CallsToAction::NextStepsComponent.new%>
+          </div>
+
         <% end %>
-
+        
       </section>
 
-      <section class="container">
-        <div class="supplementary steps-cta">
-            <%= render CallsToAction::SimpleComponent.new(
-              icon: "icon-person",
-              title: "Get support from an adviser",
-              text: "Our Teacher Training Advisers can help you select a provider, prepare for interviews and complete your application successfully. ",
-              link_text: "Sign up",
-              link_target: "/tta-service"
-            )%>
-        </div>
-      </section>
     </main>
 
     <%= render "sections/footer" %>
