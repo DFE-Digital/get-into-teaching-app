@@ -33,7 +33,7 @@ class PagesController < ApplicationController
     @page = Pages::Page.find content_template
 
     (@page.ancestors.reverse + [@page]).each do |page|
-      breadcrumb page.title, page.path
+      breadcrumb page.title, page.path if @page.title.present?
     end
 
     render template: @page.template, layout: page_layout
