@@ -35,6 +35,12 @@ RSpec.feature "Breadcrumbs", type: :feature do
     end
   end
 
+  context "when visiting a content page without a title" do
+    let(:path) { page_path("no-title") }
+
+    it { is_expected.to have_http_status(:success) }
+  end
+
   context "when visiting a disclaimer page" do
     let(:path) { page_path("disclaimer") }
 
