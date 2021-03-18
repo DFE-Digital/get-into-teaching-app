@@ -89,12 +89,14 @@ jobs:
         run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/.resultset.json
 
       - name:  Keep Code Coverage Report
+        if:  always()
         uses: actions/upload-artifact@v2
         with:
           name: Code_Coverage
           path: ${{ github.workspace }}/coverage/*
 
       - name:  Keep Unit Tests Results
+        if:  always()
         uses: actions/upload-artifact@v2
         with:
           name: unit_tests
@@ -111,6 +113,7 @@ jobs:
             rubocop --format json --out=/app/out/rubocop-result.json
 
       - name: Keep Rubocop output
+        if:  always()
         uses: actions/upload-artifact@v2
         with:
           name: Rubocop_results
