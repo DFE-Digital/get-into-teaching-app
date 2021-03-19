@@ -3,13 +3,13 @@ require "rails_helper"
 describe Navigation::BreadcrumbComponent, type: "component" do
   subject! do
     component = described_class.new
-    render_inline(component) do
-      controller = component.controller
-      controller.breadcrumb "Page 1", "/page/1"
-      controller.breadcrumb "Page 2", "/page/2"
-      controller.breadcrumb "Page 3", "/page/3"
-      controller.breadcrumb "Current Page", controller.request.path
-    end
+
+    controller.breadcrumb "Page 1", "/page/1"
+    controller.breadcrumb "Page 2", "/page/2"
+    controller.breadcrumb "Page 3", "/page/3"
+    controller.breadcrumb "Current Page", controller.request.path
+
+    render_inline(component)
     page
   end
 
