@@ -70,7 +70,7 @@ module TemplateHandlers
 
       return unless component
 
-      ApplicationController.render(component)
+      ApplicationController.render(component, layout: false)
     end
 
     def front_matter
