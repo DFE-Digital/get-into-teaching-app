@@ -18,7 +18,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
     before do
       stub_template "test.md" => markdown
-      render template: "test.md"
+      render template: "test"
     end
 
     it { is_expected.to have_css("p", text: "Lorem") }
@@ -44,7 +44,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
     before do
       stub_template "test.md" => markdown
-      render template: "test.md"
+      render template: "test"
     end
 
     it { is_expected.to have_css("p", text: /Lorem/) }
@@ -70,7 +70,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
     before do
       stub_template "frontmatter.md" => markdown
-      render template: "frontmatter.md"
+      render template: "frontmatter"
     end
 
     it { is_expected.to have_css "h1", text: "Page with frontmatter" }
@@ -102,7 +102,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
     before do
       stub_template "test.md" => markdown
-      render template: "test.md"
+      render template: "test"
     end
 
     it "won't overwrite existing frontmatter with no data" do
@@ -127,7 +127,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
     before do
       stub_template "frontmatter.md" => markdown
-      render template: "frontmatter.md"
+      render template: "frontmatter"
     end
 
     it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
@@ -166,7 +166,7 @@ describe TemplateHandlers::Markdown, type: :view do
         receive(:global_front_matter).and_return global_front_matter
 
       stub_template "frontmatter.md" => markdown
-      render template: "frontmatter.md"
+      render template: "frontmatter"
     end
 
     it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
@@ -220,7 +220,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
     before do
       stub_template "page_with_rich_content.md" => markdown
-      render template: "page_with_rich_content.md"
+      render template: "page_with_rich_content"
     end
 
     specify "should render the component" do
