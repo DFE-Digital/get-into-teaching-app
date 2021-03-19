@@ -65,6 +65,8 @@ module Pages
     def preload
       content_dirs.reverse.each do |content_dir|
         Dir.glob(content_pattern(content_dir)) do |found|
+          next if File.basename(found).starts_with? "_"
+
           add path(content_dir, found), found
         end
       end
