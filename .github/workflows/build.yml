@@ -86,7 +86,7 @@ jobs:
             rspec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
 
       - name: Fixup report file paths
-        run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/.resultset.json
+        run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/coverage.json
 
       - name:  Keep Code Coverage Report
         if:  always()
@@ -132,7 +132,7 @@ jobs:
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
            -Dsonar.testExecutionReportPaths=out/test-report.xml
-           -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/.resultset.json
+           -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/coverage.json
            -Dsonar.ruby.rubocop.reportPaths=${PWD}/out/rubocop-result.json
 
       - name: Slack Notification
