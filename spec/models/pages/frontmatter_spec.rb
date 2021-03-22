@@ -30,6 +30,7 @@ RSpec.describe Pages::Frontmatter do
     it { expect(subject.keys).to include "/page1" }
     it { expect(subject.keys).to include "/subfolder/page2" }
     it { expect(subject["/page1"]).to include title: "Hello World 1" }
+    it { expect(subject.keys).to_not include "/_partial" }
   end
 
   describe ".perform_caching" do
