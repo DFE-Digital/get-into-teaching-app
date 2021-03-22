@@ -22,10 +22,27 @@ export default class extends Controller {
 
   toggle(ev) {
     ev.preventDefault()
-    this.element.classList.toggle(this.constructor.openedClass)
 
-    if (this.element.classList.contains(this.constructor.openedClass) && this.inputField)
-      this.inputField.focus() ;
+    this.visible ? this.hide() : this.show()
+  }
+
+  get visible() {
+    return this.element.classList.contains(this.constructor.openedClass)
+  }
+
+  show() {
+    if (this.visible) return
+
+    this.element.classList.add(this.constructor.openedClass)
+
+    if (this.inputField)
+      this.inputField.focus()
+  }
+
+  hide() {
+    if (!this.visible) return
+
+    this.element.classList.remove(this.constructor.openedClass)
   }
 
   get autocompleteWrapper() {
