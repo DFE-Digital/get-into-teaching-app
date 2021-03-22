@@ -182,10 +182,11 @@
 .logo-wrapper {
   position: absolute;
   z-index: 0;
-  width: 260px;
   overflow-x: hidden;
-  top: 6px;
+  top: 8px;
   padding-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .logo {
@@ -211,22 +212,31 @@
   &__image {
     @include rotated-block;
     background-color: $green-dark-90;
-    width: 258px;
-    height: 116px;
+    width: 205px;
+    height: 92px;
     position: relative;
     top: 11px;
     left: -10px;
     z-index: 1000;
+    margin-right: 10px;
 
     img {
       transform: rotate(3deg);
       margin-left: 40px;
-      margin-top: 30px;
-      width: 180px;
-      height: 57px;
+      margin-top: 21px;
+      width: 140px;
+      height: 48px;
       position: relative;
     }
   }
+}
+
+.dfe-logo {
+  position: relative;
+  top: 4px;
+    img {
+      width: 100%;
+    }
 }
 
 .covid {
@@ -271,23 +281,28 @@
 
 @include mq($until: 900px) {
   .logo-wrapper {
-    width: 200px;
     top: 0;
   }
 
   .logo {
     &__image {
 
-      width: 196px;
-      height: 87px;
+      width: 150px;
+      height: 73px;
+      margin-right: -2px;
 
       img {
-        margin-top: $indent-amount;
-        margin-left: 24px;
-        width: 142px;
-        height: 48px;
+        margin-top: 19px;
+        margin-left: 27px;
+        width: 105px;
+        height: 35px;
       }
     }
+  }
+  .dfe-logo {
+    position: relative;
+    top: 7px;
+    width: 54px;
   }
 
   .navbar {
@@ -352,5 +367,12 @@
 
   .navbar__desktop {
     margin-left: 330px;
+  }
+}
+
+@media (max-width: 340px) {
+
+  .dfe-logo {
+    display: none;
   }
 }
