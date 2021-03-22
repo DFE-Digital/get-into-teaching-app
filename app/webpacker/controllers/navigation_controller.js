@@ -5,7 +5,15 @@ export default class extends Controller {
   static closedClass = 'navbar__mobile--closed';
 
   connect() {
-    this.navToggle();
+    this.navToggle()
+
+    this.searchHandler = this.hide.bind(this)
+    document.addEventListener('navigation:search', this.searchHandler)
+  }
+
+  disconnect() {
+    if (document && this.searchHandler)
+      document.removeEventListener('navigation:menu', this.searchHandler)
   }
 
   navToggle() {
@@ -18,6 +26,8 @@ export default class extends Controller {
     this.linksTarget.style.display = 'block';
     this.hamburgerTarget.className = 'icon-close';
     this.labelTarget.innerHTML = 'Close';
+
+    this.notify()
   }
 
   hide() {
@@ -30,5 +40,11 @@ export default class extends Controller {
 
   get visible() {
     return !this.element.classList.contains(this.constructor.closedClass)
+  }
+
+  notify() {
+    const showingMenuEvent = new CustomEvent('navigation:menu');
+
+    document.dispatchEvent(showingMenuEvent);
   }
 }

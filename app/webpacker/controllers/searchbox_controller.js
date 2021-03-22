@@ -11,6 +11,9 @@ export default class extends Controller {
 
   connect() {
     this.setupAccessibleAutocomplete()
+
+    this.mobileMenuHandler = this.hide.bind(this)
+    document.addEventListener('navigation:menu', this.mobileMenuHandler)
   }
 
   disconnect() {
@@ -18,6 +21,9 @@ export default class extends Controller {
       this.autocompleteWrapper.remove()
 
     this.clearAnalyticsSubmitter() ;
+
+    if (document && this.mobileMenuHandler)
+      document.removeEventListener('navigation:menu', this.mobileMenuHandler)
   }
 
   toggle(ev) {
@@ -37,6 +43,8 @@ export default class extends Controller {
 
     if (this.inputField)
       this.inputField.focus()
+
+    this.notify()
   }
 
   hide() {
@@ -143,5 +151,11 @@ export default class extends Controller {
 
     window.clearTimeout(this.analyticsSubmitter)
     this.analyticsSubmitter = null
+  }
+
+  notify() {
+    const showingSearchEvent = new CustomEvent('navigation:search');
+
+    document.dispatchEvent(showingSearchEvent);
   }
 }
