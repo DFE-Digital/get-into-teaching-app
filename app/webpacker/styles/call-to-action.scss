@@ -199,4 +199,39 @@
       .call-to-action__image { grid-area: 1 / 2 / 2 / 3; }
     }
   }
+
+  &--next-steps {
+    position: relative;
+    background: transparent;
+    @include mq($until: tablet) {
+      max-width: calc(100% - 1.25em);
+    }
+    .call-to-action__heading {
+      color: white;
+      background: $green;
+      transform: rotate(-3deg);
+      display: inline-block;
+      padding: 0.625em 1.25em;
+      margin-left: -22px;
+      margin-bottom: 0.5em;
+    }
+    .call-to-action__content {
+      background-color: $grey;
+      overflow: hidden;
+      position: relative;
+    }
+    .call-to-action__text {
+      margin-bottom: 1.4em;
+    }
+    &:before {
+      content: "";
+      display: block;
+      width: calc(50% + 1.25em);
+      height: calc(50% + 1.25em);
+      position: absolute;
+      bottom: -1.25em;
+      right: -1.25em;
+      background-color: $green;
+    }
+  }
 }

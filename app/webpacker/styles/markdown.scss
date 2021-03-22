@@ -42,14 +42,14 @@
   }
 
   h3 {
-    font-size: size(large);
-  }
-
-  h4 {
     font-size: size(medium);
   }
 
-  a {
+  h4 {
+    font-size: size(small);
+  }
+
+  a:not(.button--no-external-icon) {
     &[href*="//"] {
       &:after {
         content: url('../images/icon-external.svg');

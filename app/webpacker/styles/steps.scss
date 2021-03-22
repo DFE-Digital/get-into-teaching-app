@@ -1,0 +1,121 @@
+.steps {
+  position: relative;
+  margin: 0;
+  box-sizing: border-box;
+
+  &:before {
+    content: "";
+    width: 0;
+    height: calc(100% - 20px);
+    position: absolute;
+    top: 20px;
+    left: 37px;
+    border-left: 6px dotted $black;
+    @include mq($until: tablet) {
+      left: 27px;
+    }
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .step {
+    margin-bottom: 50px;
+
+    &__number {
+      width: 80px;
+      height: 80px;
+      padding: 4px;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      font-weight: bold;
+      font-size: 28px;
+      background-color: $yellow;
+      position: relative;
+      @include mq($until: tablet) {
+        width: 60px;
+        height: 60px;
+        margin-right: 15px;
+      }
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+
+      h2 {
+        margin: 0;
+        padding: 0;
+        font-size: size(large);
+        line-height: 1.25em;
+        width: calc(100% - 100px);
+        background: transparent;
+        color: $black;
+
+        @include mq($until: tablet) {
+          font-size: size(medium);
+        }
+
+        &:after {
+          display: none;
+        }
+      }
+    }
+
+    &__content {
+      padding-left: 100px;
+      @include mq($until: tablet) {
+        padding-left: 75px;
+        padding-right: 20px;
+      }
+
+      details {
+        summary {
+          font-weight: bold;
+          color: $blue-dark;
+          text-decoration: underline;
+          list-style: none;
+          cursor: pointer;
+
+          &::-webkit-details-marker {
+            display: none;
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border: 2px solid $blue-dark;
+            border-width: 0 3px 3px 0;
+            transform: rotate(45deg);
+            position: relative;
+            top: -2px;
+            margin-left: 7px;
+          }
+        }
+
+        section + section {
+          margin-top: 2em;
+        }
+
+        &[open] {
+          summary {
+            &:after {
+              transform: rotate(225deg);
+              top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

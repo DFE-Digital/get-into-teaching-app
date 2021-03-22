@@ -52,6 +52,17 @@ a {
   &--unpadded {
     padding: 0;
   }
+
+  &--smaller {
+    font-size: size("xsmall");
+    padding: 8px $indent-amount;
+  }
+
+  &--no-external-icon {
+    &:after {
+      content: none;
+    }
+  }
 }
 
 .call-to-action-icon-button {
