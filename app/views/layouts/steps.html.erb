@@ -33,8 +33,7 @@
 
             <div class="steps">
               <% steps_fm.each.with_index(1) do |(title, contents), i| %>
-                <section class="step">
-
+                <%= tag.section(class: "step", id: "step-#{i}") do %>
                   <header class="step__header">
                     <div class="step__number">
                       <%= i %>
@@ -45,7 +44,7 @@
                   <div class="step__content">
                     <%= render(partial: contents["partial"]) %>
                   </div>
-                </section>
+                <% end %>
               <% end %>
             </ul>
 
@@ -56,7 +55,7 @@
           </div>
 
         <% end %>
-        
+
       </section>
 
     </main>
