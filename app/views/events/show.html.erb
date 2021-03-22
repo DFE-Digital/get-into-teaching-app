@@ -88,6 +88,14 @@
     <% end %>
   <% end %>
 
+  <% if @event.providers_list %>
+    <%= render Content::AccordionComponent.new do |accordion| %>
+      <%= accordion.slot(:step, title: "Training providers at this event") do %>
+        <%= safe_html_format(@event.providers_list) %>
+      <% end %>
+    <% end %>
+  <% end %>
+
   <% content_for :feature do %>
     <% if @event.scribble_id %>
     <p>
