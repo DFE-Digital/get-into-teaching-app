@@ -2,7 +2,7 @@ import { Application } from 'stimulus';
 import NavigationController from 'navigation_controller.js';
 
 describe('NavigationController', () => {
-  document.body.innerHTML = `<div class="navbar__mobile" data-controller="navigation">
+  const navigationTemplate = `<div class="navbar__mobile" data-controller="navigation">
         <div class="navbar__mobile__buttons">
             <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
                 <div data-navigation-target="hamburger" id='hamburger' class="icon-close"></div>
@@ -25,47 +25,66 @@ describe('NavigationController', () => {
   const application = Application.start();
   application.register('navigation', NavigationController);
 
+  beforeEach(() => document.body.innerHTML = navigationTemplate)
+
   describe('when first loaded', () => {
     it('hides the mobile navigation', () => {
       const themobilenav = document.getElementById('navbar-mobile-links');
       expect(themobilenav.style.display).toBe('none');
     });
-  });
 
-  describe('when first loaded', () => {
     it('sets the icon to a hamburger', () => {
       const theicon = document.getElementById('hamburger');
       expect(theicon.className).toBe('icon-hamburger');
     });
-  });
 
-  describe('when first loaded', () => {
     it("sets the label to read 'Menu'", () => {
       const thelabel = document.getElementById('navbar-label');
       expect(thelabel.innerHTML).toBe('Menu');
     });
   });
 
-  describe('once clicked', () => {
+  describe('once clicked to open', () => {
+    beforeEach(() => document.getElementById('hamburger').click())
+
     it('shows the mobile navigation', () => {
-      const theicon = document.getElementById('hamburger');
-      theicon.click();
       const themobilenav = document.getElementById('navbar-mobile-links');
       expect(themobilenav.style.display).toBe('block');
     });
-  });
 
-  describe('once clicked', () => {
     it('sets the icon to a cross', () => {
       const theicon = document.getElementById('hamburger');
       expect(theicon.className).toBe('icon-close');
     });
-  });
 
-  describe('once clicked', () => {
     it("sets the label to read 'Close'", () => {
       const thelabel = document.getElementById('navbar-label');
       expect(thelabel.innerHTML).toBe('Close');
     });
   });
+
+  describe('search bar opening', () => {
+    describe('when mobile menu already open', () => {
+      beforeEach(() => {
+        document.getElementById('hamburger').click()
+        document.dispatchEvent(new CustomEvent('navigation:search'))
+      })
+
+      it("hides the mobile navigation", () => {
+        const themobilenav = document.getElementById('navbar-mobile-links');
+        expect(themobilenav.style.display).toBe('none');
+      })
+    })
+
+    describe('when mobile menu closed', () => {
+      beforeEach(() => {
+        document.dispatchEvent(new CustomEvent('navigation:search'))
+      })
+
+      it("leaves the mobile navigation closed", () => {
+        const themobilenav = document.getElementById('navbar-mobile-links');
+        expect(themobilenav.style.display).toBe('none');
+      })
+    })
+  })
 });
