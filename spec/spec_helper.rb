@@ -112,4 +112,6 @@ RSpec.configure do |config|
   #   Kernel.srand config.seed
 
   config.raise_errors_for_deprecations!
+
+  config.filter_run_excluding :onschedule
 end
