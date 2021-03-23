@@ -14,13 +14,13 @@ describe PostcodeValidator do
   end
 
   before { instance.valid? }
-  subject { instance.errors.to_h }
+  subject { instance.errors.to_hash }
 
   context "with invalid full postcodes" do
     ["F00BAR", "123ABC", "TE57 ING"].each do |postcode|
       context "checking '#{postcode}'" do
         let(:instance) { test_model.new(postcode: postcode) }
-        it { is_expected.to include postcode: "is invalid" }
+        it { is_expected.to include postcode: ["is invalid"] }
       end
     end
   end

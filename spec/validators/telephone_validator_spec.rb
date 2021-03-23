@@ -15,12 +15,12 @@ describe TelephoneValidator do
   end
 
   before { instance.valid? }
-  subject { instance.errors.to_h }
+  subject { instance.errors.to_hash }
 
   %w[1234 123456789123456789123 1feg313153gewg1 random].each do |number|
     context "checking '#{number}'" do
       let(:instance) { test_model.new(telephone: number) }
-      it { is_expected.to include telephone: "is invalid" }
+      it { is_expected.to include telephone: ["is invalid"] }
     end
   end
 
