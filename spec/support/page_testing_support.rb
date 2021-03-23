@@ -35,6 +35,8 @@ class PageLister
 end
 
 class LinkChecker
+  IGNORE = %w[127.0.0.1 localhost ::1 www.linkedin.com linkedin.com].freeze
+
   attr_reader :page, :document
 
   class Results < Hash; end
@@ -52,6 +54,8 @@ class LinkChecker
 
   def check_links(results = Results.new)
     external_links.each do |link|
+      next if ignored?(link)
+
       results[link] ||= Result.new(check(link), [])
       results[link].pages << page
     end
@@ -80,5 +84,11 @@ private
     faraday.get(link).status
   rescue ::Faraday::Error
     nil
+  end
+
+  def ignored?(link)
+    IGNORE.any? do |ignore|
+      link.starts_with? %r{https?://#{ignore}/}
+    end
   end
 end
