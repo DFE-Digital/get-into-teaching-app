@@ -33,3 +33,47 @@ class PageLister
     end
   end
 end
+
+class LinkChecker
+  attr_reader :page, :document
+
+  class Results < Hash; end
+  Result = Struct.new(:status, :pages)
+
+  def initialize(page, body)
+    @page = page
+    @document = Nokogiri.parse(body)
+  end
+
+  def check_links(results = Results.new)
+    external_links.each do |link|
+      results[link] ||= Result.new(check(link), [])
+      results[link].pages << page
+    end
+
+    results
+  end
+
+private
+
+  def links
+    document.css("a").pluck("href")
+  end
+
+  def external_links
+    links.select { |href| href.starts_with? %r{https?://} }
+  end
+
+  def faraday
+    ::Faraday.new do |f|
+      f.request :retry, max: 2
+      f.use ::FaradayMiddleware::FollowRedirects
+    end
+  end
+
+  def check(link)
+    faraday.get(link).status
+  rescue ::Faraday::Error
+    nil
+  end
+end
