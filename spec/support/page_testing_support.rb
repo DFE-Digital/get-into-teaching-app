@@ -36,16 +36,12 @@ end
 
 class LinkChecker
   IGNORE = %w[127.0.0.1 localhost ::1 www.linkedin.com linkedin.com].freeze
+  GET_NOT_HEAD = %w[].freeze
 
   attr_reader :page, :document
 
   class Results < Hash; end
-
-  Result = Struct.new(:status, :pages) do
-    def inspect
-      "Status code: #{status}" + pages.map { |p| "\n        -> #{p}" }.join
-    end
-  end
+  Result = Struct.new(:status, :pages)
 
   def initialize(page, body)
     @page = page
@@ -81,9 +77,19 @@ private
   end
 
   def check(link)
-    faraday.get(link).status
+    if needs_get?(link)
+      faraday.get(link).status
+    else
+      faraday.head(link).status
+    end
   rescue ::Faraday::Error
     nil
+  end
+
+  def needs_get?(link)
+    GET_NOT_HEAD.any? do |domain|
+      link.starts_with? %r{https?://#{domain}/}
+    end
   end
 
   def ignored?(link)
