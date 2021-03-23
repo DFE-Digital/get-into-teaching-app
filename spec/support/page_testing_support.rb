@@ -38,7 +38,12 @@ class LinkChecker
   attr_reader :page, :document
 
   class Results < Hash; end
-  Result = Struct.new(:status, :pages)
+
+  Result = Struct.new(:status, :pages) do
+    def inspect
+      "Status code: #{status}" + pages.map { |p| "\n        -> #{p}" }.join
+    end
+  end
 
   def initialize(page, body)
     @page = page
