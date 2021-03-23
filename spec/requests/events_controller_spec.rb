@@ -150,6 +150,13 @@ describe EventsController do
           it { is_expected.to match(/data-controller="scribble" data-scribble-id="123"/) }
         end
 
+        context "when the event has a providers_list" do
+          let(:event) { build(:event_api, providers_list: "<b><script type=\"malicious\"></script>a provider</b>", readable_id: event_readable_id) }
+
+          it { is_expected.to match(/Training providers at this event/) }
+          it { is_expected.to match(/<b>a provider<\/b>/) }
+        end
+
         context "when the event is online" do
           let(:event) { build(:event_api, is_online: true) }
 
