@@ -14,14 +14,14 @@ describe EmailFormatValidator do
   end
 
   before { instance.valid? }
-  subject { instance.errors.to_h }
+  subject { instance.errors.to_hash }
 
   context "with invalid addresses" do
     %w[test.com test@@test.com test@test test@test.].each do |email|
       let(:instance) { test_model.new(email: email) }
 
       it "#{email} should not be valid" do
-        is_expected.to include email: "is invalid"
+        is_expected.to include email: ["is invalid"]
       end
     end
 
@@ -29,7 +29,7 @@ describe EmailFormatValidator do
       let(:instance) { test_model.new(email: "#{'a' * 100}@test.com") }
 
       it "is not be valid" do
-        is_expected.to include email: "is invalid"
+        is_expected.to include email: ["is invalid"]
       end
     end
   end

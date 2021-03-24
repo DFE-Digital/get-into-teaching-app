@@ -2,8 +2,6 @@ require "rails_helper"
 
 describe PagesController do
   describe "#show" do
-    include_context "always render testing page"
-
     context "without caching enabled" do
       it "Should not have cache headers" do
         get "/test"
@@ -46,8 +44,7 @@ describe PagesController do
     end
 
     context "with unknown page" do
-      let(:template) { "testing/unknown" }
-      before { get "/test" }
+      before { get "/testing/unknown" }
       subject { response }
       it { is_expected.to have_http_status :not_found }
       it { is_expected.to have_attributes body: %r{Page not found} }
@@ -59,12 +56,18 @@ describe PagesController do
       it { is_expected.to have_http_status(:success) }
     end
 
-    context "with invalid page page" do
-      let(:template) { "../../secrets.txt" }
-      before { get "/test" }
+    context "with invalid page" do
+      before do
+        expect_any_instance_of(described_class).to \
+          receive(:render).with(status: :not_found, body: nil).and_call_original
+
+        get "/../../secrets.txt"
+      end
+
       subject { response }
+
       it { is_expected.to have_http_status :not_found }
-      it { is_expected.to have_attributes body: %r{Page not found} }
+      it { is_expected.to have_attributes body: "" }
     end
   end
 
