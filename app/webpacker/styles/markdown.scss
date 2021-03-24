@@ -1,6 +1,7 @@
 .markdown,
 .text-content {
   @mixin overhang { margin-left: auto; margin-right: auto; }
+  @include external-link-icon;
 
   > * {
     @include indent-left-and-right;
@@ -49,29 +50,11 @@
     font-size: size(small);
   }
 
-  a:not(.button--no-external-icon) {
-    &[href*="//"] {
-      &:after {
-        content: url('../images/icon-external.svg');
-        margin-left: .2em;
-        display: inline-block;
-        background-repeat: no-repeat;
-      }
-    }
-  }
-
   // stop the external icon from appearing inside CTA 'button' style links
   // and the home page featured content video thumbnail links
   .call-to-action__action,
   .featured-content__item {
-    a {
-      &[href*="//"] {
-        &:after {
-          content: none;
-          margin-left: unset;
-        }
-      }
-    }
+    @include suppress-external-link-icon;
 
     // this is added by Kramdown when using the ToC (table of contents) plugin
     #markdown-toc {

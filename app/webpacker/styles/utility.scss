@@ -3,6 +3,38 @@
   padding: 0;
 }
 
+@mixin suppress-external-link-icon {
+  a {
+    &[href*="//"] {
+      &:after {
+        content: none !important;
+        margin-left: unset;
+      }
+    }
+  }
+}
+
+@mixin _external-link-icon-style {
+  &[href*="//"] {
+    &:after {
+      content: url('../images/icon-external.svg');
+      margin-left: .2em;
+      display: inline-block;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@mixin external-link-icon {
+  a:not(.no-external-icon) {
+    @include _external-link-icon-style;
+  }
+
+  a:not(.button--no-external-icon) {
+    @include _external-link-icon-style;
+  }
+}
+
 // these are typically headers or section headings, often
 // placed over images or other sections
 @mixin rotated-block($degrees: -3deg, $blur: 4px) {
