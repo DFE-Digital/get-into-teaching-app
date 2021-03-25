@@ -33,3 +33,68 @@ class PageLister
     end
   end
 end
+
+class LinkChecker
+  IGNORE = %w[127.0.0.1 localhost ::1 www.linkedin.com linkedin.com].freeze
+  GET_NOT_HEAD = %w[].freeze
+
+  attr_reader :page, :document
+
+  class Results < Hash; end
+  Result = Struct.new(:status, :pages)
+
+  def initialize(page, body)
+    @page = page
+    @document = Nokogiri.parse(body)
+  end
+
+  def check_links(results = Results.new)
+    external_links.each do |link|
+      next if ignored?(link)
+
+      results[link] ||= Result.new(check(link), [])
+      results[link].pages << page
+    end
+
+    results
+  end
+
+private
+
+  def links
+    document.css("a").pluck("href")
+  end
+
+  def external_links
+    links.select { |href| href.starts_with? %r{https?://} }
+  end
+
+  def faraday
+    ::Faraday.new do |f|
+      f.request :retry, max: 2
+      f.use ::FaradayMiddleware::FollowRedirects
+    end
+  end
+
+  def check(link)
+    if needs_get?(link)
+      faraday.get(link).status
+    else
+      faraday.head(link).status
+    end
+  rescue ::Faraday::Error
+    nil
+  end
+
+  def needs_get?(link)
+    GET_NOT_HEAD.any? do |domain|
+      link.starts_with? %r{https?://#{domain}/}
+    end
+  end
+
+  def ignored?(link)
+    IGNORE.any? do |ignore|
+      link.starts_with? %r{https?://#{ignore}/}
+    end
+  end
+end
