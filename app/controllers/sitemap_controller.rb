@@ -10,7 +10,7 @@ class SitemapController < ApplicationController
     /event-categories/train-to-teach-events
     /event-categories/online-q-as
     /event-categories/school-and-university-events
-    /mailinglist/signup
+    /mailinglist/signup/name
   ].freeze
 
   def show
