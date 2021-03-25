@@ -15,7 +15,7 @@ ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server" ]
 
 # hadolint ignore=DL3018
-RUN apk add --no-cache build-base git tzdata nodejs yarn
+RUN apk add --no-cache build-base git tzdata shared-mime-info nodejs yarn
 
 # install NPM packages removign artifacts
 COPY package.json yarn.lock ./
