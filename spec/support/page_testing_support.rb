@@ -36,7 +36,7 @@ end
 
 class LinkChecker
   IGNORE = %w[127.0.0.1 localhost ::1 www.linkedin.com linkedin.com].freeze
-  GET_NOT_HEAD = %w[].freeze
+  GET_NOT_HEAD = %w[www.instagram.com].freeze
 
   attr_reader :page, :document
 
