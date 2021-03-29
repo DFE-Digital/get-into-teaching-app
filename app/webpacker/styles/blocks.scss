@@ -18,6 +18,10 @@ $space-between-sections: 3.7em;
     }
   }
 
+  &--no-top-margin {
+    margin-top: 0;
+  }
+
   > * {
     flex: 1 0;
 
