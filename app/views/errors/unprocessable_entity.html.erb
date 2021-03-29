@@ -1,8 +1,15 @@
 <% @fullwidth = @hide_page_helpful_question = true %>
 <% @page_title = "Sorry, that change was rejected" %>
-<section class="error-page">
-  <p>Error 422</p>
-  <h1><%= @page_title %></h1>
-  <p>You may not have permissions to perform that action</p>
-  <p><a href="#talk-to-us">Contact us</a> if you need to speak to someone about Get Into Teaching</p>
+
+<section class="container supplementary">
+  <header>
+    <span class="caption">Error 422</span>
+    <h1><%= @page_title %></h1>
+  </header>
+
+  <article class="text-content">
+    <p>You may not have permissions to perform that action.</p>
+
+    <p><a href="#talk-to-us">Contact us</a> if you need to speak to someone about Get Into Teaching.</p>
+  </article>
 </section>

@@ -18,6 +18,10 @@ $space-between-sections: 3.7em;
     }
   }
 
+  &--no-top-margin {
+    margin-top: 0;
+  }
+
   > * {
     flex: 1 0;
 
@@ -51,16 +55,20 @@ $space-between-sections: 3.7em;
       list-style: none;
       padding: 0;
 
-      li > a {
-        font-size: size('xsmall');
-        color: $black;
-        line-height: 1.8em;
-        text-underline-offset: .2em;
+      li {
+        @include suppress-external-link-icon;
 
-        &:hover {
-          color: $purple;
-          text-decoration: underline;
-          text-decoration-thickness: .12em;
+        > a {
+          font-size: size('xsmall');
+          color: $black;
+          line-height: 1.8em;
+          text-underline-offset: .2em;
+
+          &:hover {
+            color: $purple;
+            text-decoration: underline;
+            text-decoration-thickness: .12em;
+          }
         }
       }
     }
