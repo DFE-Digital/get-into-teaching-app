@@ -13,7 +13,7 @@ class SearchesController < ApplicationController
 private
 
   def set_page_title
-    @page_title = "Search Get into Teaching"
+    @page_title = "Search Get Into Teaching"
   end
 
   def search_params

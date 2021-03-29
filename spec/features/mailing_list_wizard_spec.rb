@@ -48,7 +48,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_title("Get into teaching: Get personalised information and updates about getting into teaching, name step")
+    expect(page).to have_title("Get Into Teaching: Get personalised information and updates about getting into teaching, name step")
 
     expect(page).to have_text "Get personalised information and updates about getting into teaching"
     fill_in_name_step
@@ -81,7 +81,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     check "Yes"
     click_on "Complete sign up"
 
-    expect(page).to have_title("Get into teaching: You've signed up")
+    expect(page).to have_title("Get Into Teaching: You've signed up")
     expect(page).to have_text "You've signed up"
   end
 

@@ -40,7 +40,7 @@ RSpec.feature "Finding an event", type: :feature do
     select "Train to Teach event"
     click_on "Update results"
 
-    expect(page).not_to have_css "h2", text: "Organized by Get into Teaching"
+    expect(page).not_to have_css "h2", text: "Organized by Get Into Teaching"
 
     click_on(event.name)
 

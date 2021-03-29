@@ -1,4 +1,4 @@
-#  DFE-Digital Get into Teaching website
+#  DFE-Digital Get Into Teaching website
 
 ## Prerequisites
 
