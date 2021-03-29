@@ -26,7 +26,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_title("Get into teaching: Sign up for #{event.name}, personal details step")
+    expect(page).to have_title("Get Into Teaching: Sign up for #{event.name}, personal details step")
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
     fill_in_personal_details_step
@@ -51,7 +51,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personalised_updates
     click_on "Complete sign up"
 
-    expect(page).to have_title("Get into teaching: Sign up complete")
+    expect(page).to have_title("Get Into Teaching: Sign up complete")
     expect(page).to have_text "What happens next"
     expect(page).to have_text "signed up for email updates"
   end

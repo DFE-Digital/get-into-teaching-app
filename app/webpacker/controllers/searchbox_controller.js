@@ -139,7 +139,7 @@ export default class extends Controller {
 
     if (window.ga && this.google_analytics_id) {
       window.ga('create', this.google_analytics_id, 'auto')
-      window.ga('set', 'title', 'Get into Teaching: Search Get into Teaching')
+      window.ga('set', 'title', 'Get Into Teaching: Search Get Into Teaching')
       window.ga('set', 'page', '/search?' + this.searchParams(this.redactedQuery))
       window.ga('send', 'pageview')
     }

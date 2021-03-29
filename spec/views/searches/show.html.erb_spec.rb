@@ -9,7 +9,7 @@ describe "searches/show.html.erb" do
   let(:model) { Search.new }
   let(:results) { nil }
 
-  it { is_expected.to have_css "h1", text: "Search Get into Teaching" }
+  it { is_expected.to have_css "h1", text: "Search Get Into Teaching" }
   it { is_expected.to have_css %(form input[name="search[search]"]) }
   it { is_expected.not_to have_css "h2" }
 
