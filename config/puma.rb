@@ -48,7 +48,7 @@ on_worker_boot do
     SemanticLogger.reopen
   end
 
-  if Rails.env.rolling?
+  if Rails.env.preprod?
     require "page_speed_score"
     PageSpeedScore.publish
   end
