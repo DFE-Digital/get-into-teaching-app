@@ -25,6 +25,10 @@ describe Stories::CardComponent, type: "component" do
     end
   end
 
+  specify "the image has descriptive alt text" do
+    expect(subject).to have_css(%(img[alt="A photograph of #{story['name']}"]))
+  end
+
   specify "includes the snippet" do
     is_expected.to have_content(story["snippet"])
   end
