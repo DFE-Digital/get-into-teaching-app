@@ -43,5 +43,23 @@ module Prometheus
       docstring: "A counter of CSP violations",
       labels: %i[blocked_uri document_uri violated_directive],
     )
+
+    prometheus.gauge(
+      :app_page_speed_score_performance,
+      docstring: "Google page speed scores (performance)",
+      labels: %i[strategy path],
+    )
+
+    prometheus.gauge(
+      :app_page_speed_score_accessibility,
+      docstring: "Google page speed scores (accessibility)",
+      labels: %i[strategy path],
+    )
+
+    prometheus.gauge(
+      :app_page_speed_score_seo,
+      docstring: "Google page speed scores (seo)",
+      labels: %i[strategy path],
+    )
   end
 end

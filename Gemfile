@@ -56,6 +56,8 @@ gem "redis"
 gem "kaminari", "~> 1.2"
 gem "view_component"
 
+gem "google-api-client", require: false
+
 # Ignore cloudfront IPs when getting customer IP address
 gem "actionpack-cloudfront"
 

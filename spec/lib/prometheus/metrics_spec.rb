@@ -58,4 +58,28 @@ describe Prometheus::Metrics do
     it { is_expected.to have_attributes(docstring: "A counter of cache reads") }
     it { expect { subject.get(labels: %i[key hit]) }.not_to raise_error }
   end
+
+  describe "app_page_speed_score_performance" do
+    subject { registry.get(:app_page_speed_score_performance) }
+
+    it { is_expected.not_to be_nil }
+    it { is_expected.to have_attributes(docstring: "Google page speed scores (performance)") }
+    it { expect { subject.get(labels: %i[strategy path]) }.not_to raise_error }
+  end
+
+  describe "app_page_speed_score_accessibility" do
+    subject { registry.get(:app_page_speed_score_accessibility) }
+
+    it { is_expected.not_to be_nil }
+    it { is_expected.to have_attributes(docstring: "Google page speed scores (accessibility)") }
+    it { expect { subject.get(labels: %i[strategy path]) }.not_to raise_error }
+  end
+
+  describe "app_page_speed_score_seo" do
+    subject { registry.get(:app_page_speed_score_seo) }
+
+    it { is_expected.not_to be_nil }
+    it { is_expected.to have_attributes(docstring: "Google page speed scores (seo)") }
+    it { expect { subject.get(labels: %i[strategy path]) }.not_to raise_error }
+  end
 end

@@ -47,4 +47,9 @@ on_worker_boot do
     # Re-open appenders after forking the process
     SemanticLogger.reopen
   end
+
+  if Rails.env.rolling?
+    require "page_speed_score"
+    PageSpeedScore.publish
+  end
 end
