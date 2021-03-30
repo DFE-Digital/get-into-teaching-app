@@ -3,30 +3,43 @@ require "prometheus/client/push"
 
 class PageSpeedScore
   attr_reader :sitemap_url
+  attr_reader :metrics
 
-  BATCH_SIZE = 10
+  REDIS_KEY = "app_page_speed_metrics".freeze
   STRATEGIES = %w[mobile desktop].freeze
   CATEGORIES = %w[performance accessibility seo].freeze
   FIELDS = "lighthouse_result(categories(seo/score,performance/score,accessibility/score))".freeze
 
   def initialize(sitemap_url)
     @sitemap_url = sitemap_url
+    @metrics = {}
   end
 
   def fetch
-    urls.product(STRATEGIES).each_slice(BATCH_SIZE) do |requests|
-      threads = requests.map do |url, strategy|
-        Thread.new do
-          options = default_options.merge!({ strategy: strategy })
-          result = service.runpagespeed_pagespeedapi(url, options)
-          record_metrics(result, url, strategy)
-        end
-      end
-
-      threads.each(&:join)
+    urls.product(STRATEGIES) do |url, strategy|
+      options = default_options.merge!({ strategy: strategy })
+      result = service.runpagespeed_pagespeedapi(url, options)
+      record_metrics(result, url, strategy)
     end
 
-    Prometheus::Client::Push.new("page_speed_score_job").add(prometheus)
+    Redis.current.set(REDIS_KEY, metrics.to_json)
+  end
+
+  class << self
+    def publish
+      scores = Redis.current.get(PageSpeedScore::REDIS_KEY)
+
+      return if scores.blank?
+
+      Redis.current.del(PageSpeedScore::REDIS_KEY)
+
+      prometheus = Prometheus::Client.registry
+
+      JSON.parse(scores, symbolize_names: true).each do |metric_key, values|
+        metric = prometheus.get(metric_key)
+        values.each { |v| metric.set(v[:score], labels: v[:labels]) }
+      end
+    end
   end
 
 private
@@ -36,8 +49,9 @@ private
     path = URI(url).path
 
     CATEGORIES.each do |category|
-      metric = prometheus.get("app_page_speed_score_#{category}".to_sym)
-      metric.set(categories.send(category).score, labels: { strategy: strategy, path: path })
+      key = "app_page_speed_score_#{category}".to_sym
+      metrics[key] ||= []
+      metrics[key] << { score: categories.send(category).score, labels: { strategy: strategy, path: path } }
     end
   end
 
@@ -57,9 +71,5 @@ private
     @service ||= Google::Apis::PagespeedonlineV5::PagespeedInsightsService.new.tap do |s|
       s.key = ENV["PAGE_SPEED_INSIGHTS_KEY"]
     end
-  end
-
-  def prometheus
-    @prometheus ||= Prometheus::Client.registry
   end
 end
