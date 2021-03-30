@@ -105,6 +105,7 @@ Rails.application.configure do
     "https://get-into-teaching-api-prod.london.cloudapps.digital/api"
   config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence || \
     Rails.application.credentials.google_maps_key.presence
+  config.x.enable_beta_redirects = false
 
   # Configure Semantic Logging for production environments
   # This cannot be conditionally loaded so we use it all the time in production
