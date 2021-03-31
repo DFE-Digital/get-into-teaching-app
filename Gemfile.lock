@@ -1,12 +1,12 @@
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: 629a558e1f360c33c8b75a01555541f05420c167
+  revision: 91a5af6745c62ee36aaf351f7f372a1e02a60f71
   specs:
     get_into_teaching_api_client (1.1.14)
       addressable (~> 2.3, >= 2.3.0)
       json (~> 2.1, >= 2.1.0)
       typhoeus (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (0.1.22)
+    get_into_teaching_api_client_faraday (0.1.26)
       activesupport
       faraday
       faraday-encoding
@@ -181,7 +181,7 @@ GEM
     hashdiff (1.0.1)
     htmlentities (4.3.4)
     httpclient (2.8.3)
-    i18n (1.8.9)
+    i18n (1.8.10)
       concurrent-ruby (~> 1.0)
     json (2.5.1)
     jwt (2.2.2)
@@ -347,11 +347,11 @@ GEM
     sentry-rails (4.3.1)
       rails (>= 5.0)
       sentry-ruby-core (~> 4.3.0)
-    sentry-ruby (4.3.0)
+    sentry-ruby (4.3.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       faraday (>= 1.0)
-      sentry-ruby-core (= 4.3.0)
-    sentry-ruby-core (4.3.0)
+      sentry-ruby-core (= 4.3.1)
+    sentry-ruby-core (4.3.1)
       concurrent-ruby
       faraday
     shoulda-matchers (4.5.1)
