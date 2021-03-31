@@ -12,6 +12,9 @@ class RobotsController < ApplicationController
 
       User-agent: SemrushBot-SA
       Allow: /
+
+      User-agent: AhrefsSiteAudit
+      Allow: /
     ROBOTS
   end
 end
