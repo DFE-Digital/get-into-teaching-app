@@ -16,8 +16,8 @@ describe PageSpeedScore do
     let(:expected_metrics) { {} }
 
     before do
-      allow(ENV).to receive(:[]).and_call_original
-      expect(ENV).to receive(:[]).with("PAGE_SPEED_INSIGHTS_KEY") { "12345" }
+      expect(Rails.application.credentials).to \
+        receive(:page_speed_insights_key) { "12345" }
     end
 
     it "retrieves the scores for each page/strategy combination and caches them in Redis" do
