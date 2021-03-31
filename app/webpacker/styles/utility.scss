@@ -4,12 +4,10 @@
 }
 
 @mixin suppress-external-link-icon {
-  a {
-    &[href*="//"] {
-      &:after {
-        content: none !important;
-        margin-left: unset;
-      }
+  &[href*="//"] {
+    &:after {
+      content: none !important;
+      margin-left: unset;
     }
   }
 }
