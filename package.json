@@ -8,7 +8,7 @@
     "govuk-frontend": "^3.11.0",
     "is-touch-device": "^1.0.1",
     "js-cookie": "^2.2.1",
-    "rails-ujs": "^5.2.4",
+    "rails-ujs": "^5.2.5",
     "sass-mq": "^5.0.1",
     "serialize-javascript": "^5.0.1",
     "set-value": "^3.0.2",
