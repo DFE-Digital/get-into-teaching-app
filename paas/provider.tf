@@ -4,7 +4,7 @@ provider "cloudfoundry" {
   password = data.azurerm_key_vault_secret.paas_password.value
 }
 
-provider statuscake {
+provider "statuscake" {
   username = data.azurerm_key_vault_secret.statuscake_username.value
   apikey   = data.azurerm_key_vault_secret.statuscake_password.value
 }
@@ -14,7 +14,6 @@ locals {
 }
 
 provider "azurerm" {
-  version                    = ">= 2.0"
   skip_provider_registration = true
   features {}
   subscription_id = local.azure_credentials.subscriptionId
