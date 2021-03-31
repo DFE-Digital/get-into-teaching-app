@@ -21,7 +21,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
       it { is_expected.to have_css ".card" }
       it { is_expected.to have_css ".card.card--no-border" }
       it { is_expected.to have_css ".card header", text: event.name }
-      it { is_expected.to have_css "img" }
+      it { is_expected.to have_css "img[alt='A photograph of staff chatting in a school setting']" }
       it { is_expected.to have_content event.summary }
 
       it "includes the footer link" do

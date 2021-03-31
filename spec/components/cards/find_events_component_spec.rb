@@ -12,7 +12,7 @@ RSpec.describe Cards::FindEventsComponent, type: :component do
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }
   it { is_expected.to have_css ".card header", text: described_class::HEADER }
-  it { is_expected.to have_css "img" }
+  it { is_expected.to have_css "img[alt='A photograph of staff chatting in a school setting']" }
   it { is_expected.to have_content described_class::SNIPPET }
 
   it "includes the footer link" do

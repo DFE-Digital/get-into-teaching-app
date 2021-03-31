@@ -2,6 +2,8 @@ module Cards
   class ChatOnlineComponent < CardComponent
     def initialize(card:, **_options)
       super(card: card)
+
+      @image_description = "A photograph of a child with their hand raised"
     end
 
     def border
