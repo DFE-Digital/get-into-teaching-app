@@ -22,7 +22,8 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }
   it { is_expected.to have_css ".card header", text: "Teacher's story" }
-  it { is_expected.to have_css 'img[src="/test.jpg"]' }
+
+  it { is_expected.to have_css 'img[src="/test.jpg"][alt="A photograph of a teacher"]' }
   it { is_expected.to have_content "Page title" }
 
   it "includes the footer link" do

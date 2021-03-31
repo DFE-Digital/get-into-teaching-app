@@ -10,6 +10,7 @@ module Cards
     def initialize(card:, page_data: nil)
       super card: card
       @page_data = page_data
+      @image_description = "A photograph of staff chatting in a school setting"
     end
 
     def border

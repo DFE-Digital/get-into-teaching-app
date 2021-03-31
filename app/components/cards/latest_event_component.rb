@@ -9,6 +9,8 @@ module Cards
       @card = card
       @page_data = page_data
 
+      @image_description = "A photograph of staff chatting in a school setting"
+
       fetch_event
     end
 

@@ -3,6 +3,7 @@ module Cards
     def initialize(card:, page_data:)
       super(card: card)
       @page_data = page_data
+      @image_description = "A photograph of a teacher"
     end
 
     def link
