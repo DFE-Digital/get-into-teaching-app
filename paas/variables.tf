@@ -29,12 +29,8 @@ variable "logging" {
   default = 1
 }
 
-variable "additional_routes" {
-  default = 1
-}
-
-variable "paas_additional_route_name" {
-  default = ""
+variable "paas_internet_hostnames" {
+  default = []
 }
 
 variable "paas_app_route_name" {}

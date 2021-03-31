@@ -1,7 +1,7 @@
 data "cloudfoundry_route" "app_route_internet" {
-  count    = var.additional_routes
+  for_each = toset(var.paas_internet_hostnames)
+  hostname = each.value
   domain   = data.cloudfoundry_domain.internet.id
-  hostname = var.paas_additional_route_name
 }
 
 resource "cloudfoundry_route" "app_route_cloud" {
@@ -15,3 +15,4 @@ resource "cloudfoundry_route" "app_route_internal" {
   hostname = "${var.paas_app_route_name}-internal"
   space    = data.cloudfoundry_space.space.id
 }
+
