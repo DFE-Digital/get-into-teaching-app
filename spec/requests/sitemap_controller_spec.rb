@@ -6,18 +6,18 @@ RSpec.describe SitemapController do
   let(:content_pages) do
     {
       "/ways-to-train" => {
-        "name" => "Ways to train",
-        "priority" => 0.8,
-        "date" => "2020-11-11",
+        name: "Ways to train",
+        priority: 0.8,
+        date: "2020-11-11",
       },
       "/salaries-and-benfits" => {
-        "name" => "Salaries and benefits",
-        "priority" => 0.7,
+        name: "Salaries and benefits",
+        priority: 0.7,
       },
       "/my-story-into-teaching/what-a-great-story" => {
-        "name" => "What a great story",
-        "priority" => 0.7,
-        "date" => "2020-10-10",
+        name: "What a great story",
+        priority: 0.7,
+        date: "2020-10-10",
       },
     }
   end
@@ -56,7 +56,7 @@ RSpec.describe SitemapController do
             %(/xmlns:urlset/xmlns:url[xmlns:loc = 'http://www.example.com#{path}']/xmlns:priority),
           ).text
 
-          expect(importance).to eql(data["priority"].to_s)
+          expect(importance).to eql(data[:priority].to_s)
         end
       end
     end
@@ -68,7 +68,7 @@ RSpec.describe SitemapController do
             %(/xmlns:urlset/xmlns:url[xmlns:loc = 'http://www.example.com#{path}']/xmlns:lastmod),
           ).text
 
-          expect(last_modified).to eql((data["date"] || SitemapController::DEFAULT_LASTMOD).to_s)
+          expect(last_modified).to eql((data[:date] || SitemapController::DEFAULT_LASTMOD).to_s)
         end
       end
     end

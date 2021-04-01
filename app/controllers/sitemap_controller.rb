@@ -25,8 +25,8 @@ private
         Pages::Frontmatter.list.each do |path, metadata|
           xml.url do
             xml.loc(request.base_url + page_location(path))
-            xml.lastmod(metadata.fetch("date") { DEFAULT_LASTMOD })
-            xml.priority(metadata.fetch("priority")) if metadata.key?("priority")
+            xml.lastmod(metadata.fetch(:date) { DEFAULT_LASTMOD })
+            xml.priority(metadata.fetch(:priority)) if metadata.key?(:priority)
           end
         end
 
