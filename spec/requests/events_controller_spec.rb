@@ -6,6 +6,7 @@ describe EventsController do
   describe "#index" do
     include_context "stub upcoming events by category api", EventsController::UPCOMING_EVENTS_PER_TYPE
     let(:parsed_response) { Nokogiri.parse(response.body) }
+    let(:expected_description) { "Get your questions answered at an event." }
 
     subject! do
       get(events_path)
@@ -13,6 +14,18 @@ describe EventsController do
     end
 
     it { is_expected.to have_http_status :success }
+
+    it "has a meta description" do
+      actual_description = parsed_response.at_css("head meta[name='description']")["content"]
+
+      expect(actual_description).to eql(expected_description)
+    end
+
+    it "has a meta og:description" do
+      actual_description = parsed_response.at_css("head meta[name='og:description']")["content"]
+
+      expect(actual_description).to eql(expected_description)
+    end
 
     specify "all events should be rendered" do
       expect(parsed_response.css(".events-featured__list__item").count).to eql(events.count)
@@ -65,12 +78,25 @@ describe EventsController do
           type_id: event_type,
         }
       end
+      let(:expected_description) { "Get your questions answered at an event." }
 
       it { is_expected.to have_http_status :success }
       it { is_expected.to have_attributes media_type: "text/html" }
 
-      specify "all events should be rendered" do
+      it "renders all events" do
         expect(parsed_response.css(".events-featured__list__item").count).to eql(events.count)
+      end
+
+      it "has a meta description" do
+        actual_description = parsed_response.at_css("head meta[name='description']")["content"]
+
+        expect(actual_description).to eql(expected_description)
+      end
+
+      it "has a meta og:description" do
+        actual_description = parsed_response.at_css("head meta[name='og:description']")["content"]
+
+        expect(actual_description).to eql(expected_description)
       end
     end
 
@@ -104,6 +130,7 @@ describe EventsController do
 
       describe "the response body" do
         subject { response.body }
+        let(:parsed_response) { Nokogiri.parse(response.body) }
 
         it { is_expected.to include(event.name) }
         it { is_expected.to include(event.description) }
@@ -171,6 +198,18 @@ describe EventsController do
 
           it { is_expected.to match(%r{To register for this event, follow the instructions in the event information section}) }
           it { is_expected.not_to match(%r{Sign up for this}) }
+        end
+
+        it "has a meta description" do
+          actual_description = parsed_response.at_css("head meta[name='description']")["content"]
+
+          expect(actual_description).to eql(event.summary)
+        end
+
+        it "has a meta og:description" do
+          actual_description = parsed_response.at_css("head meta[name='og:description']")["content"]
+
+          expect(actual_description).to eql(event.summary)
         end
       end
     end

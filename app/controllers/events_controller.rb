@@ -11,17 +11,23 @@ class EventsController < ApplicationController
 
   def index
     @page_title = "Find an event near you"
+    @front_matter = { "description" => "Get your questions answered at an event." }
+
     render layout: "events"
   end
 
   def search
     @page_title = "Find an event near you"
+    @front_matter = { "description" => "Get your questions answered at an event." }
+
     render "index", layout: "events"
   end
 
   def show
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+
     @page_title = @event.name
+    @front_matter = { "description" => @event.summary }
 
     breadcrumb "events.search", :events_path
     category_name = t("event_types.#{@event.type_id}.name.plural")

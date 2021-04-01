@@ -13,6 +13,7 @@ class EventCategoriesController < ApplicationController
 
     @category_name = helpers.pluralised_category_name(@type.id)
     @page_title = @category_name
+    @front_matter = { "description" => "Get your questions answered at a #{@category_name} event." }
 
     load_events(:future)
   end
@@ -21,7 +22,9 @@ class EventCategoriesController < ApplicationController
     raise_not_found unless has_archive?(@type)
 
     @category_name = helpers.past_category_name(@type.id)
+
     @page_title = @category_name
+    @front_matter = { "description" => "See past #{@category_name} events." }
 
     load_events(:past)
 
