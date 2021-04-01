@@ -260,10 +260,25 @@
     }
   }
 
+  .limit-content-width {
+    display: flex;
+    align-items: center;
+
+    @include mq($until: tablet) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+  }
+
   &__header {
     display: block;
     font-size: size("small");
     font-weight: bold;
+    flex-grow: 1;
+
+    @include mq($until: tablet) {
+      margin: .4em auto;
+    }
   }
 
   a {
