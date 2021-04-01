@@ -55,20 +55,17 @@ $space-between-sections: 3.7em;
       list-style: none;
       padding: 0;
 
-      li {
+      li > a {
         @include suppress-external-link-icon;
+        font-size: size('xsmall');
+        color: $black;
+        line-height: 1.8em;
+        text-underline-offset: .2em;
 
-        > a {
-          font-size: size('xsmall');
-          color: $black;
-          line-height: 1.8em;
-          text-underline-offset: .2em;
-
-          &:hover {
-            color: $purple;
-            text-decoration: underline;
-            text-decoration-thickness: .12em;
-          }
+        &:hover {
+          color: $purple;
+          text-decoration: underline;
+          text-decoration-thickness: .12em;
         }
       }
     }

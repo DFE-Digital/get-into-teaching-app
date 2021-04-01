@@ -1,4 +1,5 @@
 @mixin button($bg: $green, $fg: $white) {
+  @include suppress-external-link-icon;
   display: block;
   font-weight: bold;
   background-color: $bg;
