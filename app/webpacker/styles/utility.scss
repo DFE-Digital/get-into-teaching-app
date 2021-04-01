@@ -15,7 +15,7 @@
 @mixin _external-link-icon-style {
   &[href*="//"] {
     &:after {
-      content: url('../images/icon-external.svg');
+      content: url('../images/icon-external.svg') / "External link icon";
       margin-left: .2em;
       display: inline-block;
       background-repeat: no-repeat;
