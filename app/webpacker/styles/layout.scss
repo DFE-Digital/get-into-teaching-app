@@ -118,7 +118,8 @@ section.container {
   // supplementary: content that's not directly related to the main article but might be of interest
   > .feature,
   > .supplementary {
-    flex: 0 0 100%;
+    flex: 0 1 100%;
+    @include indent-left-and-right;
   }
 
   >.page-helpful {
