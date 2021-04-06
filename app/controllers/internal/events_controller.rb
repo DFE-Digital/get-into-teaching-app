@@ -17,7 +17,7 @@ module Internal
     def new
       @event = Event.new
       @event.building = EventBuilding.new
-      @event.building.fieldset = "existing"
+      @event.building.venue_type = "existing"
     end
 
     def approve
@@ -44,9 +44,9 @@ module Internal
       event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
       @event = transform_event(event)
       if @event.building.nil?
-        @event.building = EventBuilding.new(fieldset: "none")
+        @event.building = EventBuilding.new(venue_type: "none")
       else
-        @event.building.fieldset = "existing"
+        @event.building.venue_type = "existing"
       end
       render "new"
     end
@@ -58,7 +58,7 @@ module Internal
   private
 
     def format_building(building_params)
-      case building_params[:fieldset]
+      case building_params[:venue_type]
       when "existing"
         building = @buildings.select { |b| b.id == building_params[:id] }
         transform_event_building(building.first&.to_hash)
@@ -109,7 +109,7 @@ module Internal
         :provider_website_url,
         building: %i[
           id
-          fieldset
+          venue_type
           venue
           address_line_1
           address_line_2
@@ -123,7 +123,7 @@ module Internal
     def load_pending_events
       opts = {
         type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-        status_ids: pending_event_status_id,
+        status_ids: [pending_event_status_id],
         quantity_per_type: 1_000,
       }
 
