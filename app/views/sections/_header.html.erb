@@ -2,9 +2,7 @@
     <section class="covid" data-controller="banner" data-banner-name="Covid">
         <div class="limit-content-width">
             <span class="covid__header">Coronavirus (COVID-19) - <a href="/covid-19">check here for updates</a></span>
-            <p>
-                <a href="#" data-action="click->banner#hide">Hide this message</a>
-            </p>
+                <a href="#" data-action="click->banner#hide" class="covid__close"><span class="visually-hidden">Hide this message</span></a>
         </div>
     </section>
     <%= render(Navigation::NavbarComponent.new) %>
