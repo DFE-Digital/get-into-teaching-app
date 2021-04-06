@@ -25,6 +25,9 @@ class EventsController < ApplicationController
 
   def show
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+    if @event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+      raise_not_found
+    end
 
     @page_title = @event.name
     @front_matter = { "description" => @event.summary }
