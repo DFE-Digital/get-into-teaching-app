@@ -7,8 +7,8 @@
     padding: 1.5em;
   }
 
-
   &__inner {
+    max-width: $content-max-width;
     align-items: center;
     display: flex;
     margin: 0 auto;
