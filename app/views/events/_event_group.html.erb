@@ -15,7 +15,7 @@
 
     <% if events.any? %>
       <div class="events-featured__list">
-        <%= render partial: "event", collection: events %>
+        <%= render partial: "events/event", collection: events %>
       </div>
     <% else %>
       <%= render(Events::NoResultsComponent.new) do %>

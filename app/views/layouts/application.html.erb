@@ -11,7 +11,7 @@
     <%= render "sections/header" %>
 
     <%= yield :hero %>
-    <%= render Navigation::BreadcrumbComponent.new %>
+    <%= render Navigation::BreadcrumbComponent.new unless @minimal %>
 
     <main role="main" id="main-content">
       <section class="container">

@@ -1,0 +1,39 @@
+<div class="markdown">
+  <% if params[:success] %>
+    <div class="govuk-panel govuk-panel--confirmation">
+      <h1 class="govuk-panel__title">
+        Event submitted
+        <% if params[:success] == "pending" %>
+          for review
+        <% end %>
+      </h1>
+    </div>
+  <% end %>
+
+  <h1 class="pending-title">Pending Provider Events</h1>
+
+  <%= button_to "Submit a provider event for review",
+                new_internal_event_path, method: :get,
+                class: "button submit-button no-left-margin" %>
+
+  <% if @no_results %>
+    <div class="pending-no-results">
+      <%= render(Events::NoResultsComponent.new) do %>
+        No pending events for review
+      <% end %>
+    </div>
+  <% else %>
+    <div class="events container">
+      <section class="types-of-event">
+        <div class="events-featured">
+          <div class="events-featured__list">
+            <%= render partial: "provider_event", collection: @events %>
+          </div>
+        </div>
+        <div class="event-pagination">
+          <%= paginate @events %>
+        </div>
+      </section>
+    </div>
+  <% end %>
+</div>

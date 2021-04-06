@@ -1,0 +1,29 @@
+<div>
+  <%= link_to "Return to pending events",
+              internal_events_path, method: :get,
+              class: "govuk-back-link" %>
+  <div class="govuk-notification-banner" role="region" aria-labelledby="govuk-notification-banner-title" data-module="govuk-notification-banner">
+    <div class="govuk-notification-banner__header">
+      <h2 class="govuk-notification-banner__title" id="govuk-notification-banner-title">
+        Important
+      </h2>
+    </div>
+    <div class="govuk-notification-banner__content">
+      <p class="govuk-notification-banner__heading">
+        This is a pending event.
+        <%= button_to "Edit this provider event",
+                      edit_internal_event_path(@event.readable_id), method: :get,
+                      class: "button notification-button" %>
+        <% if publisher? %>
+          <%= button_to "Submit this provider event",
+                        internal_final_submit_path(@event.readable_id), method: :put,
+                        class: "button notification-button" %>
+        <% end %>
+      </p>
+    </div>
+
+  </div>
+
+  <%= render "events/show" %>
+</div>
+
