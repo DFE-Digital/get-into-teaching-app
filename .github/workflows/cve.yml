@@ -48,7 +48,7 @@ jobs:
           sarif_file: results.sarif
 
       - name: Slack Notification
-        if: failure()
+        if: failure()  && github.ref == 'refs/heads/master'
         uses: rtCamp/action-slack-notify@master
         env:
            SLACK_COLOR: ${{ env.SLACK_ERROR}}

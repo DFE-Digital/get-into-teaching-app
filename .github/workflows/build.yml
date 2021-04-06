@@ -136,11 +136,11 @@ jobs:
            -Dsonar.ruby.rubocop.reportPaths=${PWD}/out/rubocop-result.json
 
       - name: Slack Notification
-        if: failure()
+        if: failure() && github.ref == 'refs/heads/master'
         uses: rtCamp/action-slack-notify@master
         env:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: 'There has been a failure building tha application and deploying it to Development.'
+           SLACK_MESSAGE: 'There has been a failure building the MASTER branch of the application and deploying it to Development.'
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
 
@@ -227,7 +227,7 @@ jobs:
         uses: rtCamp/action-slack-notify@master
         env:
           SLACK_COLOR: ${{ env.SLACK_ERROR }}
-          SLACK_MESSAGE: ':disappointed_relieved: Pipeline Failure :disappointed_relieved:'
+          SLACK_MESSAGE: 'Failure Initialising Content Deployment'
           SLACK_TITLE: 'Failure: ${{ github.workflow }}'
           SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
 
