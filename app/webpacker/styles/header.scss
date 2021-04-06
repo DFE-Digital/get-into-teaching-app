@@ -245,10 +245,13 @@
   line-height: 1.25;
   background-color: $black;
   color: $white;
-  padding-top: $indent-amount;
-  padding-bottom: $indent-amount;
-  padding-left: 35px;
-  padding-right: 35px;
+  padding: 10px 20px;
+
+  .limit-content-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
 
   p {
     font-size: size("xsmall");
@@ -262,8 +265,18 @@
 
   &__header {
     display: block;
-    font-size: size("small");
     font-weight: bold;
+  }
+
+  &__close {
+    background: url(/packs/media/images/icon-close-4b00d0952ffd57a191ae46fdf62e895d.svg);
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-left: 20px;
   }
 
   a {
