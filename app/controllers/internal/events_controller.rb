@@ -20,7 +20,7 @@ module Internal
       @event.building.fieldset = "existing"
     end
 
-    def final_submit
+    def approve
       event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:format])
       @event = transform_event(event)
       if @event.approve

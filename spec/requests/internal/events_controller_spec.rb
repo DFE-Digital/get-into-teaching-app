@@ -436,7 +436,7 @@ describe Internal::EventsController do
     end
   end
 
-  describe "#final_submit" do
+  describe "#approve" do
     context "when any user type" do
       let(:event) { events[0] }
       let(:expected_request_body) do
@@ -472,7 +472,7 @@ describe Internal::EventsController do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
-          put internal_final_submit_path,
+          put internal_approve_path,
               headers: generate_auth_headers("author"),
               params: params
 
@@ -494,7 +494,7 @@ describe Internal::EventsController do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
-          put internal_final_submit_path,
+          put internal_approve_path,
               headers: generate_auth_headers("author"),
               params: params
 
@@ -505,13 +505,13 @@ describe Internal::EventsController do
 
     context "when unauthenticated" do
       it "should reject bad login" do
-        put internal_final_submit_path("any"), headers: generate_auth_headers("wrong")
+        put internal_approve_path("any"), headers: generate_auth_headers("wrong")
 
         assert_response :unauthorized
       end
 
       it "should reject no authentication" do
-        put internal_final_submit_path("any")
+        put internal_approve_path("any")
 
         assert_response :unauthorized
       end
