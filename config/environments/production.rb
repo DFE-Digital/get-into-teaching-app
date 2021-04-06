@@ -23,8 +23,8 @@ Rails.application.configure do
   config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
 
   config.public_file_server.headers = {
-    "Cache-Control" => "public, max-age=#{15.minutes.to_i}",
-    "Expires" => 15.minutes.from_now.to_formatted_s(:rfc822),
+    "Cache-Control" => "public, max-age=#{365.days.to_i}",
+    "Expires" => 365.days.from_now.to_formatted_s(:rfc822),
   }
 
   # Compress CSS using a preprocessor.
