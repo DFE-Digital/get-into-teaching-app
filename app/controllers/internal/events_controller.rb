@@ -9,10 +9,9 @@ module Internal
 
     def show
       @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+      raise_not_found unless @event.status_id == pending_event_status_id
+
       @page_title = @event.name
-      if @event.status_id != GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
-        raise ActionController::RoutingError, "Not Found"
-      end
     end
 
     def new
@@ -124,7 +123,7 @@ module Internal
     def load_pending_events
       opts = {
         type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-        status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
+        status_ids: pending_event_status_id,
         quantity_per_type: 1_000,
       }
 
@@ -135,6 +134,10 @@ module Internal
       unless @events.nil?
         @events = Kaminari.paginate_array(@events).page(params[:page])
       end
+    end
+
+    def pending_event_status_id
+      GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
     end
   end
 end
