@@ -5,13 +5,13 @@ class InternalController < ApplicationController
 protected
 
   def publisher?
-    session[:publisher]
+    session[:role] == :publisher
   end
 
 private
 
-  def set_account_role(role)
-    session[role] = true
+  def set_account_role(role_type)
+    session[:role] = role_type
   end
 
   def authenticate
