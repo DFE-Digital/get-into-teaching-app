@@ -24,8 +24,6 @@ module Internal
     def final_submit
       event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:format])
       @event = transform_event(event)
-      @event.start_at = Time.zone.parse(@event.start_at.to_s)
-      @event.end_at = Time.zone.parse(@event.end_at.to_s)
       if @event.approve
         redirect_to internal_events_path(success: true)
       else
@@ -75,6 +73,8 @@ module Internal
     def transform_event(event)
       hash = event.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| Event.attribute_names.include?(k) }
       internal_event = Event.new(hash)
+      internal_event.start_at = Time.zone.parse(internal_event.start_at.to_s)
+      internal_event.end_at = Time.zone.parse(internal_event.end_at.to_s)
       internal_event.building =
         if event.building.nil?
           nil
