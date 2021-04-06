@@ -7,13 +7,13 @@
       <%= render Navigation::BreadcrumbComponent.new %>
       <main role="main" id="main-content">
         <section class="container">
-          <article class="markdown fullwidth">
+          <section class="feature">
             <%= yield %>
 
             <div class="cards stories">
               <%= render Cards::RendererComponent.with_collection(@front_matter.dig("stories")) %>
             </div>
-          </article>
+          </section>
         </section>
       </main>
       <%= render "sections/footer" %>

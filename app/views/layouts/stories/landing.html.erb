@@ -22,7 +22,7 @@
             </section>
           <% end %>
 
-          <article class="markdown fullwidth">
+          <section class="feature">
             <% @front_matter["sections"]&.each do |name, section| %>
               <% if section["stories"].present? %>
                 <div class="story-landing__stories">
@@ -43,7 +43,7 @@
               <% end %>
             <% end %>
           </section>
-        </article>
+        </section>
       </main>
       <%= render "sections/footer" %>
       <%= render "components/videoplayer" %>
