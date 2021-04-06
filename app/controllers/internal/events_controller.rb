@@ -15,9 +15,8 @@ module Internal
     end
 
     def new
-      @event = Event.new
+      @event = Event.new(venue_type: "existing")
       @event.building = EventBuilding.new
-      @event.building.venue_type = "existing"
     end
 
     def approve
@@ -32,7 +31,7 @@ module Internal
 
     def create
       @event = Event.new(event_params)
-      @event.building = format_building(event_params["building"])
+      @event.building = format_building(event_params)
       if @event.submit_pending
         redirect_to internal_events_path(success: :pending)
       else
@@ -44,9 +43,10 @@ module Internal
       event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
       @event = transform_event(event)
       if @event.building.nil?
-        @event.building = EventBuilding.new(venue_type: "none")
+        @event.venue_type = "none"
+        @event.building = EventBuilding.new
       else
-        @event.building.venue_type = "existing"
+        @event.venue_type = "existing"
       end
       render "new"
     end
@@ -57,13 +57,13 @@ module Internal
 
   private
 
-    def format_building(building_params)
-      case building_params[:venue_type]
+    def format_building(event_params)
+      case event_params[:venue_type]
       when "existing"
-        building = @buildings.select { |b| b.id == building_params[:id] }
+        building = @buildings.select { |b| b.id == event_params[:building][:id] }
         transform_event_building(building.first&.to_hash)
       when "add"
-        building = building_params.to_hash
+        building = event_params[:building].to_hash
         building[:id] = nil # Id may be present from previous selection
         EventBuilding.new(building)
       end
@@ -107,9 +107,9 @@ module Internal
         :provider_organiser,
         :provider_target_audience,
         :provider_website_url,
+        :venue_type,
         building: %i[
           id
-          venue_type
           venue
           address_line_1
           address_line_2

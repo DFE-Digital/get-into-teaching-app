@@ -3,8 +3,6 @@ module Internal
     include ActiveModel::Model
     include ActiveModel::Attributes
 
-    attr_accessor :venue_type
-
     attribute :id, :string
     attribute :venue, :string
     attribute :address_line1, :string

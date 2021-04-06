@@ -17,6 +17,7 @@ module Internal
     attribute :provider_target_audience, :string
     attribute :provider_website_url, :string
     attribute :building
+    attribute :venue_type
 
     validates :name, presence: true, allow_blank: false
     validates :readable_id, presence: true, allow_blank: false

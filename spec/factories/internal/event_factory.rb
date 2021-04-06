@@ -12,8 +12,8 @@ FactoryBot.define do
     provider_organiser { "Test" }
     provider_target_audience { "Test" }
     provider_website_url { "Test" }
+    venue_type { "" }
     factory :building, class: "Internal::EventBuilding" do
-      fieldset { "" }
       id { "" }
       venue { "" }
       address_line1 { "" }
