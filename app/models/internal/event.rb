@@ -6,16 +6,11 @@ module Internal
     VENUE_TYPES = { add: "add", existing: "existing", none: "none" }.freeze
 
     def self.initialize_with_api_event(event)
-      hash = event.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| Event.attribute_names.include?(k) }
+      hash = event.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| attribute_names.include?(k) }
       hash["start_at"] = format_time(hash["start_at"])
       hash["end_at"] = format_time(hash["end_at"])
-      hash["building"] = transform_event_building(hash["building"]) unless hash["building"].nil?
+      hash["building"] = EventBuilding.initialize_with_api_building(hash["building"]) unless hash["building"].nil?
       new(hash)
-    end
-
-    def self.transform_event_building(building)
-      hash = building.transform_keys { |k| k.to_s.underscore }.filter { |k| EventBuilding.attribute_names.include?(k) }
-      EventBuilding.new(hash)
     end
 
     attribute :id, :string, default: nil

@@ -11,7 +11,9 @@ module Internal
     attribute :address_city, :string
     attribute :address_postcode, :string
 
-    validates :event, presence: true, allow_blank: false
-    validates :postcode, presence: true, allow_blank: false
+    def self.initialize_with_api_building(building)
+      hash = building.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| attribute_names.include?(k) }
+      new(hash)
+    end
   end
 end

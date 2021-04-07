@@ -56,18 +56,13 @@ module Internal
     def format_building(event_params)
       case event_params[:venue_type]
       when Event::VENUE_TYPES[:existing]
-        building = @buildings.select { |b| b.id == event_params[:building][:id] }
-        transform_event_building(building.first&.to_hash)
+        api_building = @buildings.find { |b| b.id == event_params[:building][:id] }
+        EventBuilding.initialize_with_api_building(api_building)
       when Event::VENUE_TYPES[:add]
         building = event_params[:building].to_hash
         building[:id] = nil # Id may be present from previous selection
         EventBuilding.new(building)
       end
-    end
-
-    def transform_event_building(building)
-      hash = building.transform_keys { |k| k.to_s.underscore }.filter { |k| EventBuilding.attribute_names.include?(k) }
-      EventBuilding.new(hash)
     end
 
     def load_buildings
