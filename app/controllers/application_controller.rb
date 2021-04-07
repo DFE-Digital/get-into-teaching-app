@@ -1,3 +1,5 @@
+require "next_gen_images"
+
 class ApplicationController < ActionController::Base
   include UtmCodes
 
@@ -10,11 +12,19 @@ class ApplicationController < ActionController::Base
   before_action :record_utm_codes
   before_action :add_home_breadcrumb
 
+  after_action :insert_next_gen_images, if: -> { Rails.env.preprod? }
+
   def raise_not_found
     raise ActionController::RoutingError, "Not Found"
   end
 
 private
+
+  def insert_next_gen_images
+    return unless response.headers["Content-Type"]&.include?("text/html")
+
+    response.body = NextGenImages.new(response.body).html
+  end
 
   def set_api_client_request_id
     # The request_id is passed to the ApiClient via Thread.current
