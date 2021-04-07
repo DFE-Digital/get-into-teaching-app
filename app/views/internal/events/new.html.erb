@@ -2,11 +2,10 @@
             internal_events_path,
             method: :get,
             class: "govuk-back-link" %>
-<h1>
-  Provider Event Details
-</h1>
 
-<%= govuk_form_for @event do |f| %>
+<h1>Provider Event Details</h1>
+
+<%= govuk_form_for @event, url: internal_events_path, method: :post do |f| %>
   <%= f.govuk_error_summary %>
 
   <%= f.hidden_field :id %>
@@ -25,7 +24,7 @@
     <label for="internal_event[description]" class="govuk-label">Event description</label>
     <%= f.hidden_field :description, class: "event-description" %>
     <trix-editor class="<%= class_names("govuk-input", "event-description", { "govuk-input--error": @event.errors[:description].any? }) %>"
-                   input="internal_event_description">
+                 input="internal_event_description">
     </trix-editor>
   </div>
 
@@ -59,7 +58,7 @@
     <% end %>
     <h3 class="govuk-label">End at</h3>
     <%= f.datetime_field :end_at, class: class_names("datetime", "govuk-input",
-                                                       { "govuk-input--error": @event.errors[:end_at].any? }) %>
+                                                     { "govuk-input--error": @event.errors[:end_at].any? }) %>
   </div>
 
   <div class="no-left-margin">

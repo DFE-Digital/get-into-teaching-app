@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   end
 
   namespace :internal do
-    resources :events, only: %i[index show new create edit update]
+    resources :events, only: %i[index show new create edit]
     put "/approve", to: "events#approve"
   end
 

@@ -132,7 +132,7 @@ describe Internal::EventsController do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
           .to receive(:get_teaching_event).with(event_to_edit_readable_id) { events[0] }
 
-        get edit_internal_event_path(event_to_edit_readable_id), headers: generate_auth_headers("author")
+        get edit_internal_event_path(event_to_edit_readable_id), headers: generate_auth_headers(:author)
       end
 
       it "should have an events form with populated fields" do

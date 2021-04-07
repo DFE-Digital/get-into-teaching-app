@@ -51,10 +51,6 @@ module Internal
       render "new"
     end
 
-    def update
-      create
-    end
-
   private
 
     def format_building(event_params)
