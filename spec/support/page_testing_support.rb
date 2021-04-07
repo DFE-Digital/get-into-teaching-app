@@ -69,8 +69,8 @@ private
     links.select { |href| href.starts_with? %r{https?://} }
   end
 
-  def faraday
-    ::Faraday.new do |f|
+  def faraday(link)
+    ::Faraday.new(link) do |f|
       f.request :retry, max: 2
       f.use ::FaradayMiddleware::FollowRedirects
     end
@@ -78,9 +78,9 @@ private
 
   def check(link)
     if needs_get?(link)
-      faraday.get(link).status
+      faraday(link).get.status
     else
-      faraday.head(link).status
+      faraday(link).head.status
     end
   rescue ::Faraday::Error
     nil
