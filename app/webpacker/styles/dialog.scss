@@ -68,9 +68,9 @@
       margin-top: 0;
     }
 
-    h2 {
-      float: right;
-    }
+    // h2 {
+      // float: right;
+   // } 
 
     a {
       text-decoration: none;
@@ -118,7 +118,7 @@
         float: none;
         margin-top: $indent-amount;
         margin-bottom: -20px;
-        font-size: size("large");
+        font-size: size("medium");
       }
 
       p {
@@ -127,7 +127,12 @@
 
       a {
         font-size: size("small");
-        padding: 8px 12px;
+        
+        .call-to-action-button {
+          
+          padding: 8px 12px;
+
+        }
 
         .git-link {
           margin: 8px 0 0;
