@@ -47,6 +47,7 @@ private
 
     case ext
     when ".webp"
+      # Rack::Mime.mime_type is returning the wrong mime type for webp.
       "image/webp"
     else
       Rack::Mime.mime_type(ext)
