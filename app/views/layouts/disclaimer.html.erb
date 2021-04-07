@@ -26,8 +26,6 @@
           <% @front_matter["content"]&.each do |partial| %>
             <%= render(partial) %>
           <% end %>
-
-          <%= render "sections/page_helpful" unless @front_matter["hide_page_helpful_question"] %>
         </article>
       </section>
     </main>
@@ -38,4 +36,3 @@
     <%= render "components/analytics" %>
   <% end %>
 </html>
-
