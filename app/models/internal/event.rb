@@ -3,6 +3,8 @@ module Internal
     include ActiveModel::Model
     include ActiveModel::Attributes
 
+    VENUE_TYPES = { add: "add", existing: "existing", none: "none" }.freeze
+
     attribute :id, :string, default: nil
     attribute :readable_id, :string
     attribute :status_id, :integer
@@ -17,7 +19,7 @@ module Internal
     attribute :provider_target_audience, :string
     attribute :provider_website_url, :string
     attribute :building
-    attribute :venue_type
+    attribute :venue_type, VENUE_TYPES
 
     validates :name, presence: true, allow_blank: false
     validates :readable_id, presence: true, allow_blank: false
@@ -56,7 +58,7 @@ module Internal
       submit
     end
 
-  private
+    private
 
     def submit
       return false if invalid?

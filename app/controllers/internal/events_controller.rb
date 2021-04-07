@@ -15,7 +15,7 @@ module Internal
     end
 
     def new
-      @event = Event.new(venue_type: "existing")
+      @event = Event.new(venue_type: Event::VENUE_TYPES[:existing])
       @event.building = EventBuilding.new
     end
 
@@ -43,10 +43,10 @@ module Internal
       event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
       @event = transform_event(event)
       if @event.building.nil?
-        @event.venue_type = "none"
+        @event.venue_type = Event::VENUE_TYPES[:none]
         @event.building = EventBuilding.new
       else
-        @event.venue_type = "existing"
+        @event.venue_type = Event::VENUE_TYPES[:existing]
       end
       render "new"
     end
@@ -55,10 +55,10 @@ module Internal
 
     def format_building(event_params)
       case event_params[:venue_type]
-      when "existing"
+      when Event::VENUE_TYPES[:existing]
         building = @buildings.select { |b| b.id == event_params[:building][:id] }
         transform_event_building(building.first&.to_hash)
-      when "add"
+      when Event::VENUE_TYPES[:add]
         building = event_params[:building].to_hash
         building[:id] = nil # Id may be present from previous selection
         EventBuilding.new(building)

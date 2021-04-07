@@ -166,7 +166,7 @@ describe Internal::EventsController do
       context "when \"select a venue\" is selected" do
         let(:params) do
           attributes_for :internal_event,
-                         { "venue_type": "existing", "building": { "id": building_id } }
+                         { "venue_type": Internal::Event::VENUE_TYPES[:existing], "building": { "id": building_id } }
         end
         it "should post the event and an existing building" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
@@ -189,7 +189,7 @@ describe Internal::EventsController do
       context "when \"no venue\" is selected" do
         let(:params) do
           attributes_for :internal_event,
-                         { "building": { "venue_type": "none" } }
+                         { "building": { "venue_type": Internal::Event::VENUE_TYPES[:none] } }
         end
         it "should post no building" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
@@ -212,7 +212,7 @@ describe Internal::EventsController do
         let(:expected_venue) { "New venue" }
         let(:params) do
           attributes_for :internal_event,
-                         { "venue_type": "add",
+                         { "venue_type": Internal::Event::VENUE_TYPES[:add],
                            "building":
                              { "id": building_id,
                                "venue": expected_venue } }
