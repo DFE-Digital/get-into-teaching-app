@@ -21,7 +21,7 @@ module Internal
 
     def approve
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:format])
-      @event =  Event.initialize_with_api_event(api_event)
+      @event = Event.initialize_with_api_event(api_event)
       if @event.approve
         redirect_to internal_events_path(success: true)
       else

@@ -11,7 +11,7 @@ describe Internal::EventsController do
   end
   let(:events_by_type) { group_events_by_type(events) }
 
-  before { events[0].status_id = 222_750_003 }
+  before { events[0].status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"] }
 
   describe "#index" do
     context "when any user type" do
