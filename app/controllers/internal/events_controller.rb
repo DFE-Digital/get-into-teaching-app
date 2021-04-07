@@ -1,6 +1,6 @@
 module Internal
   class EventsController < ::InternalController
-    before_action :load_buildings, only: %i[new edit create update]
+    before_action :load_buildings, only: %i[new edit create]
     layout "internal"
 
     def index
