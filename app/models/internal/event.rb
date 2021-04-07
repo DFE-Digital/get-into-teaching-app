@@ -5,6 +5,19 @@ module Internal
 
     VENUE_TYPES = { add: "add", existing: "existing", none: "none" }.freeze
 
+    def initialize(api_event)
+      hash = api_event.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| Event.attribute_names.include?(k) }
+      hash["start_at"] = format_time(hash["start_at"])
+      hash["end_at"] = format_time(hash["end_at"])
+      hash["building"] = transform_event_building(hash["building"]) unless hash["building"].nil?
+      super hash
+    end
+
+    def transform_event_building(building)
+      hash = building.transform_keys { |k| k.to_s.underscore }.filter { |k| EventBuilding.attribute_names.include?(k) }
+      EventBuilding.new(hash)
+    end
+
     attribute :id, :string, default: nil
     attribute :readable_id, :string
     attribute :status_id, :integer
@@ -59,6 +72,10 @@ module Internal
     end
 
   private
+
+    def format_time(attribute)
+      Time.zone.parse(attribute.to_s)
+    end
 
     def submit
       return false if invalid?

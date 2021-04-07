@@ -20,8 +20,8 @@ module Internal
     end
 
     def approve
-      event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:format])
-      @event = transform_event(event)
+      api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:format])
+      @event = Event.new(api_event)
       if @event.approve
         redirect_to internal_events_path(success: true)
       else
@@ -40,15 +40,15 @@ module Internal
     end
 
     def edit
-      event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      @event = transform_event(event)
+      api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+      @event = Event.new(api_event)
       if @event.building.nil?
         @event.venue_type = Event::VENUE_TYPES[:none]
         @event.building = EventBuilding.new
       else
         @event.venue_type = Event::VENUE_TYPES[:existing]
       end
-      render "new"
+      render :new
     end
 
   private
@@ -63,20 +63,6 @@ module Internal
         building[:id] = nil # Id may be present from previous selection
         EventBuilding.new(building)
       end
-    end
-
-    def transform_event(event)
-      hash = event.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| Event.attribute_names.include?(k) }
-      internal_event = Event.new(hash)
-      internal_event.start_at = Time.zone.parse(internal_event.start_at.to_s)
-      internal_event.end_at = Time.zone.parse(internal_event.end_at.to_s)
-      internal_event.building =
-        if event.building.nil?
-          nil
-        else
-          transform_event_building(hash["building"])
-        end
-      internal_event
     end
 
     def transform_event_building(building)
