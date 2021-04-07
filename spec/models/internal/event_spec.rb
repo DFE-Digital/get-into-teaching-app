@@ -96,4 +96,36 @@ describe Internal::Event do
       it { is_expected.to_not allow_value(nil).for :provider_website_url }
     end
   end
+
+  describe "#initialize" do
+    context "with GetIntoTeachingApiClient::TeachingEvent" do
+      let(:api_event) { build(:event_api) }
+      let(:expected_attributes) do
+        attributes_for(
+          :event_api,
+          id: api_event.id,
+          name: api_event.name,
+          readable_id: api_event.readable_id,
+          status_id: api_event.status_id,
+          summary: api_event.summary,
+          description: api_event.description,
+          is_online: api_event.is_online,
+          start_at: api_event.start_at,
+          end_at: api_event.end_at,
+          provider_contact_email: api_event.provider_contact_email,
+          provider_organiser: api_event.provider_organiser,
+          provider_target_audience: api_event.provider_target_audience,
+          provider_website_url: api_event.provider_website_url,
+        ).except(:type_id, :building)
+      end
+      let(:expected_building_attributes) { attributes_for(:event_building_api, id: api_event.building.id) }
+
+      it "should have correct attributes" do
+        internal_event = described_class.initialize_with_api_event(api_event)
+
+        expect(internal_event).to have_attributes(expected_attributes)
+        expect(internal_event.building).to have_attributes(expected_building_attributes)
+      end
+    end
+  end
 end
