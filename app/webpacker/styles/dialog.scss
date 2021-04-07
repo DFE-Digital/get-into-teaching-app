@@ -68,10 +68,6 @@
       margin-top: 0;
     }
 
-    h2 {
-      float: right;
-    }
-
     a {
       text-decoration: none;
     }
@@ -88,6 +84,15 @@
       font-weight: bold;
       margin-top: $indent-amount;
       padding: 0 $indent-amount;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: .4em;
+
+    @include mq($until: tablet) {
+      flex-direction: column;
     }
   }
 }
@@ -115,19 +120,19 @@
 
       h2 {
         display: block;
-        float: none;
-        margin-top: $indent-amount;
-        margin-bottom: -20px;
-        font-size: size("large");
+        margin: 0.3em 0;
+        font-size: size("small");
       }
 
       p {
         line-height: 1.25;
+        font-size: size("xsmall");
       }
 
       a {
-        font-size: size("small");
-        padding: 8px 12px;
+        &.button {
+          font-size: size("xsmall");
+        }
 
         .git-link {
           margin: 8px 0 0;

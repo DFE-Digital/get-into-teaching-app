@@ -46,6 +46,11 @@ a {
     @include chevron($color: $black);
   }
 
+  &--secondary {
+    @include button($bg: $grey, $fg: $black);
+    @include chevron($color: $black);
+  }
+
   &--nowrap {
     white-space: nowrap;
   }

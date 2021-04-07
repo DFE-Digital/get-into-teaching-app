@@ -8,22 +8,23 @@
                         <%= image_pack_tag "media/images/getintoteachinglogo.svg", alt: "Get Into Teaching" %>
                     </span>
                 </div>
-                <h2>Help us improve</h2>
+                <h2>Tell us whether you accept cookies</h2>
             </div>
             <p>
-                Welcome to the new Get Into Teaching website. We invite you to try the latest beta version of the site and
-                help us improve the services we offer.
+            We use <a href="/cookies">cookies</a> to collect information about how you use this website.
+            We use this information to make the website work as well as possible, and improve this website.
+            We also share some of this information with our social media, advertising and analytics partners.
             </p>
-            <p>
-                To use the new website, we need you to agree to our cookie policy. This means we can use your data to understand how to improve the
-                website for all of our users.
-            </p>
-            <a href="#" class="button call-to-action-button" data-action="click->cookie-acceptance#accept" data-cookie-acceptance-target="agree" id="cookies-agree">
-                <span>Accept all cookies</span>
-            </a>
-            <a class="secondary-link" href="/cookie_preference" data-cookie-acceptance-target="disagree" id="cookies-disagree">
-                <span>Set cookie preferences</span>
-            </a>
+
+
+            <div class="dialog__buttons">
+              <a href="#" class="button call-to-action-button" data-action="click->cookie-acceptance#accept" data-cookie-acceptance-target="agree" id="cookies-agree">
+                  <span>Accept all cookies</span>
+              </a>
+              <a class="button button--secondary" href="/cookie_preference" data-cookie-acceptance-target="disagree" id="cookies-disagree">
+                  <span>Set cookie preferences</span>
+              </a>
+            </div>
         </div>
     </div>
 </div>
