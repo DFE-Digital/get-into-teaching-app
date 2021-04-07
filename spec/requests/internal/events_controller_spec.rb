@@ -20,7 +20,7 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type) { [] }
 
-          get internal_events_path, headers: generate_auth_headers("author")
+          get internal_events_path, headers: generate_auth_headers(:author)
         end
         it "shows a no events banner" do
           assert_response :success
@@ -33,7 +33,7 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type) { events_by_type }
 
-          get internal_events_path, headers: generate_auth_headers("author")
+          get internal_events_path, headers: generate_auth_headers(:author)
         end
         it "shows pending events" do
           assert_response :success
@@ -41,20 +41,6 @@ describe Internal::EventsController do
           expect(response.body).to include("<h4>Event 1</h4>")
           expect(response.body).not_to include("<h4>Event 2</h4>")
         end
-      end
-    end
-
-    context "when unauthenticated" do
-      it "should reject bad login" do
-        get internal_events_path, headers: generate_auth_headers("wrong")
-
-        assert_response :unauthorized
-      end
-
-      it "should reject no authentication" do
-        get internal_events_path
-
-        assert_response :unauthorized
       end
     end
   end
@@ -67,7 +53,7 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event_to_get_readable_id) { events[0] }
 
-          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers("author")
+          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
         it "shows pending events" do
           assert_response :success
@@ -81,7 +67,7 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event_to_get_readable_id) { events[1] }
 
-          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers("author")
+          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
         it "redirects to not found" do
           assert_response :not_found
@@ -96,7 +82,7 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event_to_get_readable_id) { events[0] }
 
-          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers("author")
+          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
         it "does not have a final submit button" do
           assert_response :success
@@ -111,26 +97,12 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event_to_get_readable_id) { events[0] }
 
-          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers("publisher")
+          get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:publisher)
         end
         it "should have a final submit button" do
           assert_response :success
           expect(response.body).to include "Submit this provider event"
         end
-      end
-    end
-
-    context "when unauthenticated" do
-      it "should reject bad login" do
-        get internal_event_path(event_to_get_readable_id, headers: generate_auth_headers("wrong"))
-
-        assert_response :unauthorized
-      end
-
-      it "should reject no authentication" do
-        get internal_event_path(event_to_get_readable_id)
-
-        assert_response :unauthorized
       end
     end
   end
@@ -141,26 +113,12 @@ describe Internal::EventsController do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
           .to receive(:get_teaching_event_buildings) { [] }
 
-        get new_internal_event_path, headers: generate_auth_headers("author")
+        get new_internal_event_path, headers: generate_auth_headers(:author)
       end
 
       it "should have an events form" do
         assert_response :success
         expect(response.body).to include("form")
-      end
-    end
-
-    context "when unauthenticated" do
-      it "should reject bad login" do
-        get new_internal_event_path, headers: generate_auth_headers("wrong")
-
-        assert_response :unauthorized
-      end
-
-      it "should reject no authentication" do
-        get new_internal_event_path
-
-        assert_response :unauthorized
       end
     end
   end
@@ -180,20 +138,6 @@ describe Internal::EventsController do
       it "should have an events form with populated fields" do
         assert_response :success
         expect(response.body).to include("value=\"Event 1\"")
-      end
-    end
-
-    context "when unauthenticated" do
-      it "should reject bad login" do
-        get edit_internal_event_path(event_to_edit_readable_id), headers: generate_auth_headers("wrong")
-
-        assert_response :unauthorized
-      end
-
-      it "should reject no authentication" do
-        get edit_internal_event_path(event_to_edit_readable_id)
-
-        assert_response :unauthorized
       end
     end
   end
@@ -235,7 +179,7 @@ describe Internal::EventsController do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           post internal_events_path,
-               headers: generate_auth_headers("author"),
+               headers: generate_auth_headers(:author),
                params: { internal_event: params }
 
           expect(response).to redirect_to(internal_events_path(success: :pending))
@@ -257,7 +201,7 @@ describe Internal::EventsController do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           post internal_events_path,
-               headers: generate_auth_headers("author"),
+               headers: generate_auth_headers(:author),
                params: { internal_event: params }
 
           expect(response).to redirect_to(internal_events_path(success: :pending))
@@ -292,145 +236,11 @@ describe Internal::EventsController do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           post internal_events_path,
-               headers: generate_auth_headers("author"),
+               headers: generate_auth_headers(:author),
                params: { internal_event: params }
 
           expect(response).to redirect_to(internal_events_path(success: :pending))
         end
-      end
-    end
-
-    context "when unauthenticated" do
-      it "should reject bad login" do
-        post internal_events_path,
-             headers: generate_auth_headers("wrong")
-
-        assert_response :unauthorized
-      end
-
-      it "should reject no authentication" do
-        post internal_events_path
-
-        assert_response :unauthorized
-      end
-    end
-  end
-
-  describe "#update" do
-    context "when any user type" do
-      let(:building_id) { events[0].building.id }
-      let(:expected_request_body) do
-        build(:event_api,
-              id: params[:id],
-              name: params[:name],
-              readable_id: params[:readable_id],
-              type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-              status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
-              summary: params[:summary],
-              description: params[:description],
-              is_online: params[:is_online],
-              start_at: params[:start_at].getutc.floor,
-              end_at: params[:end_at].getutc.floor,
-              provider_contact_email: params[:provider_contact_email],
-              provider_organiser: params[:provider_organiser],
-              provider_target_audience: params[:provider_target_audience],
-              provider_website_url: params[:provider_website_url])
-      end
-
-      context "when \"select a venue\" is selected" do
-        let(:params) do
-          attributes_for :internal_event,
-                         { "venue_type": "existing", "building": { "id": building_id, } }
-        end
-        it "should post the event and an existing building" do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [events[0].building] }
-
-          expected_request_body.building =
-            build(:event_building_api, { id: params[:building][:id] })
-
-          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:upsert_teaching_event).with(expected_request_body)
-
-          put internal_event_path(expected_request_body.readable_id),
-              headers: generate_auth_headers("author"),
-              params: { internal_event: params }
-
-          expect(response).to redirect_to(internal_events_path(success: :pending))
-        end
-      end
-
-      context "when \"no venue\" is selected" do
-        let(:params) do
-          attributes_for :internal_event,
-                         { "building": { "venue_type": "none" } }
-        end
-        it "should post no building" do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [events[0].building] }
-
-          expected_request_body.building = nil
-
-          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:upsert_teaching_event).with(expected_request_body)
-
-          put internal_event_path(expected_request_body.readable_id),
-              headers: generate_auth_headers("author"),
-              params: { internal_event: params }
-
-          expect(response).to redirect_to(internal_events_path(success: :pending))
-        end
-      end
-
-      context "when \"add a building\" is selected" do
-        let(:expected_venue) { "New venue" }
-        let(:params) do
-          attributes_for :internal_event,
-                         { venue_type: "add",
-                           "building":
-                           { "id": building_id,
-                             "venue": expected_venue } }
-        end
-        it "should post new building fields with no id" do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [events[0].building] }
-
-          expected_request_body.building =
-            build(:event_building_api, {
-              id: nil,
-              venue: expected_venue,
-              address_line1: nil,
-              address_line2: nil,
-              address_line3: nil,
-              address_city: nil,
-              address_postcode: nil,
-
-            })
-
-          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:upsert_teaching_event).with(expected_request_body)
-
-          put internal_event_path(expected_request_body.readable_id),
-              headers: generate_auth_headers("author"),
-              params: { internal_event: params }
-
-          expect(response).to redirect_to(internal_events_path(success: :pending))
-        end
-      end
-    end
-
-    context "when unauthenticated" do
-      it "should reject bad login" do
-        put internal_event_path("any"),
-            headers: generate_auth_headers("wrong")
-
-        assert_response :unauthorized
-      end
-
-      it "should reject no authentication" do
-        put internal_event_path("any")
-
-        assert_response :unauthorized
       end
     end
   end
@@ -472,7 +282,7 @@ describe Internal::EventsController do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           put internal_approve_path,
-              headers: generate_auth_headers("author"),
+              headers: generate_auth_headers(:author),
               params: params
 
           expect(response).to redirect_to(internal_events_path(success: true))
@@ -494,25 +304,11 @@ describe Internal::EventsController do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           put internal_approve_path,
-              headers: generate_auth_headers("author"),
+              headers: generate_auth_headers(:author),
               params: params
 
           expect(response).to redirect_to(internal_events_path(success: true))
         end
-      end
-    end
-
-    context "when unauthenticated" do
-      it "should reject bad login" do
-        put internal_approve_path("any"), headers: generate_auth_headers("wrong")
-
-        assert_response :unauthorized
-      end
-
-      it "should reject no authentication" do
-        put internal_approve_path("any")
-
-        assert_response :unauthorized
       end
     end
   end
@@ -520,10 +316,10 @@ describe Internal::EventsController do
 private
 
   def generate_auth_headers(user_type)
-    if user_type == "publisher"
+    if user_type == :publisher
       username = ENV["PUBLISHER_USERNAME"]
       password = ENV["PUBLISHER_PASSWORD"]
-    elsif user_type == "author"
+    elsif user_type == :author
       username = ENV["AUTHOR_USERNAME"]
       password = ENV["AUTHOR_PASSWORD"]
     end
