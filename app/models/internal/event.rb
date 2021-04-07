@@ -58,7 +58,7 @@ module Internal
       submit
     end
 
-    private
+  private
 
     def submit
       return false if invalid?
