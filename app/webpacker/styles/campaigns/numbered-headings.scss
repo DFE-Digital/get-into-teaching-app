@@ -14,18 +14,28 @@
       background-color: $pink-dark;
       @include rotated-block;
       color: $white;
-      padding: .5em .8em;
+      padding: .6em .8em;
       font-weight: bold;
-      margin-right: 1em;
+      margin-right: .3em;
+      font-size: size(large);
     }
 
     h2 {
       margin: 0;
       background: none;
       color: $black;
+      font-size: size(large);
 
       &:after {
         content: "";
+      }
+
+      @include mq($until: tablet) {
+        font-size: size(small);
+      }
+
+      @include mq($until: desktop) {
+        font-size: size(medium);
       }
     }
   }
