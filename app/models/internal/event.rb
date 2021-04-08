@@ -14,6 +14,38 @@ module Internal
       new(hash)
     end
 
+    def map_to_api_event
+      body = GetIntoTeachingApiClient::TeachingEvent.new(
+        id: id.presence,
+        name: name,
+        readableId: readable_id,
+        typeId: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+        statusId: status_id,
+        summary: summary,
+        description: description,
+        isOnline: is_online,
+        startAt: start_at,
+        endAt: end_at,
+        providerContactEmail: provider_contact_email,
+        providerOrganiser: provider_organiser,
+        providerTargetAudience: provider_target_audience,
+        providerWebsiteUrl: provider_website_url,
+      )
+
+      if building.present?
+        body.building = GetIntoTeachingApiClient::TeachingEventBuilding.new(
+          venue: building.venue.presence,
+          addressLine1: building.address_line1.presence,
+          addressLine2: building.address_line2.presence,
+          addressLine3: building.address_line3.presence,
+          addressCity: building.address_city.presence,
+          addressPostcode: building.address_postcode.presence,
+          id: building.id.presence,
+        )
+      end
+      body
+    end
+
     attribute :id, :string, default: nil
     attribute :readable_id, :string
     attribute :status_id, :integer
@@ -57,16 +89,6 @@ module Internal
       id.present?
     end
 
-    def submit_pending
-      self.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
-      submit
-    end
-
-    def approve
-      self.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
-      submit
-    end
-
     private
 
     def submit
@@ -80,46 +102,6 @@ module Internal
 
       if end_at <= start_at
         errors.add(:end_at, "must be after the start date")
-      end
-    end
-
-    def submit_to_api?
-      body = GetIntoTeachingApiClient::TeachingEvent.new(
-        id: id.presence,
-        name: name,
-        readableId: readable_id,
-        typeId: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-        statusId: status_id,
-        summary: summary,
-        description: description,
-        isOnline: is_online,
-        startAt: start_at,
-        endAt: end_at,
-        providerContactEmail: provider_contact_email,
-        providerOrganiser: provider_organiser,
-        providerTargetAudience: provider_target_audience,
-        providerWebsiteUrl: provider_website_url,
-      )
-
-      if building.present?
-        body.building = GetIntoTeachingApiClient::TeachingEventBuilding.new(
-          venue: building.venue.presence,
-          addressLine1: building.address_line1.presence,
-          addressLine2: building.address_line2.presence,
-          addressLine3: building.address_line3.presence,
-          addressCity: building.address_city.presence,
-          addressPostcode: building.address_postcode.presence,
-          id: building.id.presence,
-        )
-      end
-
-      begin
-        GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(body)
-
-        true
-      rescue GetIntoTeachingApiClient::ApiError => e
-        map_errors_to_fields(e) if e.code == 400
-        false
       end
     end
 

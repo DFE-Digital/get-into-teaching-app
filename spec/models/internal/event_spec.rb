@@ -99,7 +99,7 @@ describe Internal::Event do
     end
   end
 
-  describe "#initialize" do
+  describe "#initialize_with_api_event" do
     context "with GetIntoTeachingApiClient::TeachingEvent" do
       let(:api_event) { build(:event_api) }
       let(:expected_attributes) do
@@ -143,5 +143,9 @@ describe Internal::Event do
         end
       end
     end
+  end
+
+  describe "#map_to_api_event" do
+
   end
 end

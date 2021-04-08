@@ -21,18 +21,15 @@ module Internal
 
     def approve
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:format])
-      @event = Event.initialize_with_api_event(api_event)
-      if @event.approve
-        redirect_to internal_events_path(success: true)
-      else
-        render action: :new
-      end
+      api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+      api(api_event)
+      redirect_to internal_events_path(success: true)
     end
 
     def create
       @event = Event.new(event_params)
       @event.building = format_building(event_params)
-      if @event.submit_pending
+      if submit_pending
         redirect_to internal_events_path(success: :pending)
       else
         render action: :new
@@ -45,7 +42,26 @@ module Internal
       render :new
     end
 
-  private
+    private
+
+    def submit_pending
+      return false if @event.invalid?
+
+      @event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+      api_event = @event.map_to_api_event
+      api(api_event)
+    end
+
+    def api(body)
+      begin
+        GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(body)
+
+        true
+      rescue GetIntoTeachingApiClient::ApiError => e
+        map_errors_to_fields(e) if e.code == 400
+        false
+      end
+    end
 
     def format_building(event_params)
       case event_params[:venue_type]
