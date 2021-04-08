@@ -34,7 +34,9 @@ private
   def source(original_src, ext, doc)
     src = "#{File.basename(original_src, '.*')}#{ext}"
 
-    return nil unless File.exist?("#{Rails.public_path}/#{src}")
+    # File.exist? should work here but doesn't; for some reason
+    # File.file? appears to work correctly.
+    return nil unless File.file?("#{Rails.public_path}/#{src}")
 
     Nokogiri::XML::Node.new("source", doc) do |source|
       source.set_attribute("srcset", src)
