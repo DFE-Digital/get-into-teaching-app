@@ -22,7 +22,7 @@ module Internal
     def approve
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:format])
       api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
-      api(api_event)
+      submit_to_api(api_event)
       redirect_to internal_events_path(success: true)
     end
 
@@ -49,30 +49,28 @@ module Internal
 
       @event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
       api_event = @event.map_to_api_event
-      api(api_event)
+      submit_to_api(api_event)
     end
 
-    def api(body)
-      begin
-        GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(body)
-
-        true
-      rescue GetIntoTeachingApiClient::ApiError => e
-        map_errors_to_fields(e) if e.code == 400
-        false
-      end
+    def submit_to_api(body)
+      GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(body)
+      true
+    rescue GetIntoTeachingApiClient::ApiError => e
+      map_errors_to_fields(e) if e.code == 400
+      false
     end
 
     def format_building(event_params)
-      case event_params[:venue_type]
-      when Event::VENUE_TYPES[:existing]
+      if event_params[:venue_type] == Event::VENUE_TYPES[:existing] && event_params[:building][:id].present?
         api_building = @buildings.find { |b| b.id == event_params[:building][:id] }
-        EventBuilding.initialize_with_api_building(api_building)
-      when Event::VENUE_TYPES[:add]
-        building = event_params[:building].to_hash
-        building[:id] = nil # Id may be present from previous selection
-        EventBuilding.new(building)
+        return EventBuilding.initialize_with_api_building(api_building)
       end
+      if event_params[:venue_type] == Event::VENUE_TYPES[:add]
+        building = event_params[:building].to_hash
+        building[:id] = nil # Id may be present on hidden field from previous selection
+        return EventBuilding.new(building)
+      end
+      nil
     end
 
     def load_buildings
