@@ -49,24 +49,26 @@ describe Internal::Event do
     end
 
     describe "#end_at" do
+      let(:now) { Time.zone.now }
+
       it { is_expected.to_not allow_value(nil).for :end_at }
-      it { is_expected.to_not allow_value(Time.zone.now - 1.minute).for :end_at }
-      it { is_expected.to_not allow_value(Time.zone.now).for :end_at }
-      it { is_expected.to allow_value(Time.zone.now + 1.minute).for :end_at }
+      it { is_expected.to_not allow_value(now - 1.minute).for :end_at }
+      it { is_expected.to_not allow_value(now).for :end_at }
+      it { is_expected.to allow_value(now + 1.minute).for :end_at }
 
       it "is expected not to allow end at to be the same as start at" do
-        subject.start_at = Time.zone.now + 1.minute
-        is_expected.to_not allow_value(Time.zone.now + 1.minute).for :end_at
+        subject.start_at = now + 1.minute
+        is_expected.to_not allow_value(now + 1.minute).for :end_at
       end
 
       it "is expected not to allow end at to be earlier than start at" do
-        subject.start_at = Time.zone.now + 2.minutes
-        is_expected.to_not allow_value(Time.zone.now + 1.minute).for :end_at
+        subject.start_at = now + 2.minutes
+        is_expected.to_not allow_value(now + 1.minute).for :end_at
       end
 
       it "is expected to allow end at to be later than start at" do
-        subject.start_at = Time.zone.now + 1.minute
-        is_expected.to allow_value(Time.zone.now + 2.minutes).for :end_at
+        subject.start_at = now + 1.minute
+        is_expected.to allow_value(now + 2.minutes).for :end_at
       end
     end
 

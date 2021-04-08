@@ -7,8 +7,6 @@ module Internal
 
     def self.initialize_with_api_event(event)
       hash = event.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| attribute_names.include?(k) }
-      hash["start_at"] = format_time(hash["start_at"])
-      hash["end_at"] = format_time(hash["end_at"])
       hash["building"] = EventBuilding.initialize_with_api_building(hash["building"]) unless hash["building"].nil?
       new(hash)
     end
@@ -66,14 +64,6 @@ module Internal
       submit
     end
 
-    class << self
-    private
-
-      def format_time(attribute)
-        Time.zone.parse(attribute.to_s)
-      end
-    end
-
   private
 
     def submit
@@ -85,7 +75,7 @@ module Internal
     def end_after_start
       return if end_at.blank? || start_at.blank?
 
-      if end_at.floor <= start_at.floor
+      if end_at <= start_at
         errors.add(:end_at, "must be after the start date")
       end
     end
