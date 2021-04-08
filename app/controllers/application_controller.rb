@@ -11,6 +11,7 @@ class ApplicationController < ActionController::Base
   before_action :set_api_client_request_id
   before_action :record_utm_codes
   before_action :add_home_breadcrumb
+  before_action :toggle_vwo
 
   after_action :insert_next_gen_images, if: -> { Rails.env.preprod? }
 
@@ -19,6 +20,16 @@ class ApplicationController < ActionController::Base
   end
 
 private
+
+  def toggle_vwo
+    @render_vwo = vwo_config[:paths]&.include?(request.path)
+  end
+
+  def vwo_config
+    # rubocop:disable Style/ClassVars
+    @@vwo_config ||= YAML.safe_load(File.read(Rails.root.join("config/vwo.yml"))).deep_symbolize_keys
+    # rubocop:enable Style/ClassVars
+  end
 
   def insert_next_gen_images
     return unless response.headers["Content-Type"]&.include?("text/html")
