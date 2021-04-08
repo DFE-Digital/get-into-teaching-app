@@ -1,5 +1,5 @@
 FactoryBot.define do
-  factory :event_building_factory, class: "Internal::EventBuilding" do
+  factory :event_building, class: "Internal::EventBuilding" do
     id { "test" }
     venue { "test" }
     address_line1 { "test" }

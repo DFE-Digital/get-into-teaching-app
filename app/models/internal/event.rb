@@ -15,20 +15,15 @@ module Internal
     end
 
     def map_to_api_event
-      # byebug
-      hash = attributes.filter { |k| attribute_names.include?(k) }.transform_keys { |k| k.to_s.camelize(:lower) }
+      self.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+      hash = attributes
+               .filter { |k| attribute_names.include?(k) }
+               .transform_keys { |k| k.to_s.camelize(:lower) }
+               .filter { |_, v| v.presence }
       api_event = GetIntoTeachingApiClient::TeachingEvent.new(hash)
 
       if building.present?
-        api_event.building = GetIntoTeachingApiClient::TeachingEventBuilding.new(
-          venue: building.venue.presence,
-          addressLine1: building.address_line1.presence,
-          addressLine2: building.address_line2.presence,
-          addressLine3: building.address_line3.presence,
-          addressCity: building.address_city.presence,
-          addressPostcode: building.address_postcode.presence,
-          id: building.id.presence
-        )
+        api_event.building = building.map_to_api_building
       end
       api_event
     end
@@ -36,6 +31,7 @@ module Internal
     attribute :id, :string
     attribute :readable_id, :string
     attribute :status_id, :integer
+    attribute :type_id, :integer
     attribute :name, :string
     attribute :summary, :string
     attribute :description, :string
@@ -76,13 +72,7 @@ module Internal
       id.present?
     end
 
-    private
-
-    def submit
-      return false if invalid?
-
-      submit_to_api?
-    end
+  private
 
     def end_after_start
       return if end_at.blank? || start_at.blank?

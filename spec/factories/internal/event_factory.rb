@@ -13,6 +13,6 @@ FactoryBot.define do
     provider_target_audience { "Test" }
     provider_website_url { "Test" }
     venue_type { "" }
-    building { build :event_building_factory }
+    building { build :event_building }
   end
 end

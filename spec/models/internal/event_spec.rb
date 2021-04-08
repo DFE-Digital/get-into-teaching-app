@@ -154,6 +154,7 @@ describe Internal::Event do
         name: internal_event.name,
         readable_id: internal_event.readable_id,
         status_id: internal_event.status_id,
+        type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
         summary: internal_event.summary,
         description: internal_event.description,
         is_online: internal_event.is_online,
@@ -192,13 +193,13 @@ describe Internal::Event do
       end
     end
 
-    # context "when passed an event with nil id" do
-    #   it "should have no id field" do
-    #     api_event = internal_event.map_to_api_event
-    #
-    #     expected = expected_attributes.except(:id)
-    #     expect(api_event).to have_attributes(expected)
-    #   end
-    # end
+    context "when passed an event with blank id" do
+      it "should have no id field" do
+        internal_event.id = ""
+        api_event = internal_event.map_to_api_event
+
+        expect(api_event.id).to be_nil
+      end
+    end
   end
 end
