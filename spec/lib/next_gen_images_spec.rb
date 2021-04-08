@@ -7,13 +7,13 @@ describe NextGenImages do
     let(:body) { "<img src=\"#{original_src}\">" }
     let(:instance) { described_class.new(body) }
 
-    before { allow(File).to receive(:file?) { false } }
-    before { allow(File).to receive(:file?).with("#{Rails.public_path}/#{original_src}") { true } }
+    before { allow(File).to receive(:exist?) { false } }
+    before { allow(File).to receive(:exist?).with("#{Rails.public_path}/#{original_src}") { true } }
 
     subject { instance.html }
 
     context "when the original image is a jpg" do
-      let(:original_src) { "image.jpg" }
+      let(:original_src) { "path/to/image.jpg" }
 
       context "when there are no next-gen images" do
         it { is_expected.to include("<picture><img src=\"#{original_src}\">#{source(original_src, 'image/jpeg')}</picture>") }
@@ -36,7 +36,7 @@ describe NextGenImages do
 
         before do
           next_gen_imgs.values.each do |src|
-            allow(File).to receive(:file?).with("#{Rails.public_path}/#{src}") { true }
+            allow(File).to receive(:exist?).with("#{Rails.public_path}/#{src}") { true }
           end
         end
 
@@ -48,13 +48,13 @@ describe NextGenImages do
     end
 
     context "when the original image is a png" do
-      let(:original_src) { "image.png" }
+      let(:original_src) { "path/to/image.png" }
 
       it { is_expected.to include("<picture><img src=\"#{original_src}\">#{source(original_src, 'image/png')}</picture>") }
     end
 
     context "when the original image is an svg" do
-      let(:original_src) { "image.svg" }
+      let(:original_src) { "path/to/image.svg" }
 
       it { is_expected.to include("<picture><img src=\"#{original_src}\">#{source(original_src, 'image/svg+xml')}</picture>") }
     end

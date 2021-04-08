@@ -3,8 +3,8 @@ require "rails_helper"
 describe "Next Gen Images" do
   before do
     allow(Rails.env).to receive(:preprod?) { preprod }
-    allow(File).to receive(:file?).and_call_original
-    allow(File).to receive(:file?).with(/.*\.svg/) { true }
+    allow(File).to receive(:exist?).and_call_original
+    allow(File).to receive(:exist?).with(/.*\.svg/) { true }
     get root_path
   end
   subject { response.body }
