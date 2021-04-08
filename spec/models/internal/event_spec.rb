@@ -120,13 +120,27 @@ describe Internal::Event do
           provider_website_url: api_event.provider_website_url,
         ).except(:type_id, :building)
       end
-      let(:expected_building_attributes) { attributes_for(:event_building_api, id: api_event.building.id) }
+      context "with building" do
+        let(:expected_building_attributes) { attributes_for(:event_building_api, id: api_event.building.id) }
 
-      it "should have correct attributes" do
-        internal_event = described_class.initialize_with_api_event(api_event)
+        it "should have correct attributes" do
+          expected_attributes["venue_type"] = Internal::Event::VENUE_TYPES[:existing]
+          internal_event = described_class.initialize_with_api_event(api_event)
 
-        expect(internal_event).to have_attributes(expected_attributes)
-        expect(internal_event.building).to have_attributes(expected_building_attributes)
+          expect(internal_event).to have_attributes(expected_attributes)
+          expect(internal_event.building).to have_attributes(expected_building_attributes)
+        end
+      end
+
+      context "without building" do
+        it "should have correct attributes" do
+          api_event.building = nil
+          expected_attributes["venue_type"] = Internal::Event::VENUE_TYPES[:none]
+          internal_event = described_class.initialize_with_api_event(api_event)
+
+          expect(internal_event).to have_attributes(expected_attributes)
+          expect(internal_event.building).to be_nil
+        end
       end
     end
   end

@@ -7,7 +7,10 @@ module Internal
 
     def self.initialize_with_api_event(event)
       hash = event.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| attribute_names.include?(k) }
-      hash["building"] = EventBuilding.initialize_with_api_building(hash["building"]) unless hash["building"].nil?
+      unless hash["building"].nil?
+        hash["building"] = EventBuilding.initialize_with_api_building(hash["building"])
+        hash["venue_type"] = VENUE_TYPES[:existing]
+      end
       new(hash)
     end
 
@@ -25,7 +28,7 @@ module Internal
     attribute :provider_target_audience, :string
     attribute :provider_website_url, :string
     attribute :building
-    attribute :venue_type, VENUE_TYPES
+    attribute :venue_type, type: VENUE_TYPES, default: VENUE_TYPES[:none]
 
     validates :name, presence: true, allow_blank: false
     validates :readable_id, presence: true, allow_blank: false
@@ -64,7 +67,7 @@ module Internal
       submit
     end
 
-  private
+    private
 
     def submit
       return false if invalid?
