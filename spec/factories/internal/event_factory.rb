@@ -13,14 +13,6 @@ FactoryBot.define do
     provider_target_audience { "Test" }
     provider_website_url { "Test" }
     venue_type { "" }
-    factory :building, class: "Internal::EventBuilding" do
-      id { "" }
-      venue { "" }
-      address_line1 { "" }
-      address_line2 { "" }
-      address_line3 { "" }
-      address_city { "" }
-      address_postcode { "" }
-    end
+    building { build :event_building_factory }
   end
 end

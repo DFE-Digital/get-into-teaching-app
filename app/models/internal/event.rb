@@ -15,7 +15,7 @@ module Internal
     end
 
     def map_to_api_event
-      body = GetIntoTeachingApiClient::TeachingEvent.new(
+      api_event = GetIntoTeachingApiClient::TeachingEvent.new(
         id: id.presence,
         name: name,
         readableId: readable_id,
@@ -33,17 +33,17 @@ module Internal
       )
 
       if building.present?
-        body.building = GetIntoTeachingApiClient::TeachingEventBuilding.new(
-          venue: building[:venue].presence,
-          addressLine1: building[:address_line1].presence,
-          addressLine2: building[:address_line2].presence,
-          addressLine3: building[:address_line3].presence,
-          addressCity: building[:address_city].presence,
-          addressPostcode: building[:address_postcode].presence,
-          id: building[:id].presence,
+        api_event.building = GetIntoTeachingApiClient::TeachingEventBuilding.new(
+          venue: building.venue.presence,
+          addressLine1: building.address_line1.presence,
+          addressLine2: building.address_line2.presence,
+          addressLine3: building.address_line3.presence,
+          addressCity: building.address_city.presence,
+          addressPostcode: building.address_postcode.presence,
+          id: building.id.presence
         )
       end
-      body
+      api_event
     end
 
     attribute :id, :string, default: nil

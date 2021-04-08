@@ -147,16 +147,7 @@ describe Internal::Event do
 
   describe "#map_to_api_event" do
     let(:internal_event) do
-      build(:internal_event,
-            { building:
-                { id: SecureRandom.uuid,
-                  venue: "test",
-                  address_line1: "test",
-                  address_line2: "test",
-                  address_line3: "test",
-                  address_city: "test",
-                  address_postcode: "test" } },
-      )
+      build(:internal_event)
     end
     let(:expected_attributes) do
       attributes_for(
@@ -179,32 +170,27 @@ describe Internal::Event do
     let(:expected_building_attributes) do
       attributes_for(
         :event_building_api,
-        id: internal_event.building[:id],
-        venue: internal_event.building[:venue],
-        address_line1: internal_event.building[:address_line1],
-        address_line2: internal_event.building[:address_line2],
-        address_line3: internal_event.building[:address_line3],
-        address_city: internal_event.building[:address_city],
-        address_postcode: internal_event.building[:address_postcode],
+        id: internal_event.building.id,
+        venue: internal_event.building.venue,
+        address_line1: internal_event.building.address_line1,
+        address_line2: internal_event.building.address_line2,
+        address_line3: internal_event.building.address_line3,
+        address_city: internal_event.building.address_city,
+        address_postcode: internal_event.building.address_postcode,
       )
     end
 
-    context "with building" do
-      fit "should map a #{described_class} to a GetIntoTeachingApiClient::TeachingEvent" do
+    context "when passed a building" do
+      it "should have correct attributes" do
         api_event = internal_event.map_to_api_event
-        expect(api_event).to have_attributes(expected_attributes)
         expect(api_event.building).to have_attributes(expected_building_attributes)
       end
     end
 
-    context "without building" do
+    context "when passed a event" do
       it "should have correct attributes" do
-        api_event.building = nil
-        expected_attributes["venue_type"] = Internal::Event::VENUE_TYPES[:none]
-        internal_event = described_class.initialize_with_api_event(api_event)
-
-        expect(internal_event).to have_attributes(expected_attributes)
-        expect(internal_event.building).to be_nil
+        api_event = internal_event.map_to_api_event
+        expect(api_event).to have_attributes(expected_attributes)
       end
     end
   end
