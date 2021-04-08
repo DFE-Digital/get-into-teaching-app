@@ -7,8 +7,8 @@ describe NextGenImages do
     let(:body) { "<img src=\"#{original_src}\">" }
     let(:instance) { described_class.new(body) }
 
-    before { allow(File).to receive(:exist?) { false } }
-    before { allow(File).to receive(:exist?).with("#{Rails.public_path}/#{original_src}") { true } }
+    before { allow(File).to receive(:file?) { false } }
+    before { allow(File).to receive(:file?).with("#{Rails.public_path}/#{original_src}") { true } }
 
     subject { instance.html }
 
@@ -36,7 +36,7 @@ describe NextGenImages do
 
         before do
           next_gen_imgs.values.each do |src|
-            allow(File).to receive(:exist?).with("#{Rails.public_path}/#{src}") { true }
+            allow(File).to receive(:file?).with("#{Rails.public_path}/#{src}") { true }
           end
         end
 
