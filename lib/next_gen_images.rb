@@ -1,7 +1,7 @@
 class NextGenImages
   # As we control the conversion we only need to look for
   # a subset of all the possible extensions.
-  NEXT_GEN_IMAGE_EXTS = %w[.jp2 .webp].freeze
+  NEXT_GEN_IMAGE_EXTS = %w[.webp .jp2].freeze
 
   def initialize(page)
     @page = page
@@ -22,12 +22,12 @@ private
     src = img.attribute("src").value
 
     Nokogiri::XML::Node.new("picture", doc) do |picture|
-      picture.add_child(img.dup)
-      source_exts = [File.extname(src)] + NEXT_GEN_IMAGE_EXTS
+      source_exts = NEXT_GEN_IMAGE_EXTS + [File.extname(src)]
       source_exts.each do |ext|
         source = source(src, ext, doc)
         picture.add_child(source) if source.present?
       end
+      picture.add_child(img.dup)
     end
   end
 

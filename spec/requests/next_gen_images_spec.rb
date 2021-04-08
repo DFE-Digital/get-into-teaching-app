@@ -14,7 +14,7 @@ describe "Next Gen Images" do
 
     it do
       is_expected.to match(
-        /<picture><img alt="Department for education" src=".*\.svg"><source srcset=".*\.svg" type="image\/svg\+xml"><\/source><\/picture>/,
+        /<picture><source srcset=".*\.svg" type="image\/svg\+xml"><\/source><img alt="Department for education" src=".*\.svg"><\/picture>/,
       )
     end
   end
