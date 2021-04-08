@@ -88,9 +88,9 @@ module Internal
         building: %i[
           id
           venue
-          address_line_1
-          address_line_2
-          address_line_3
+          address_line1
+          address_line2
+          address_line3
           address_city
           address_postcode
         ],
