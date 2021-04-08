@@ -8,13 +8,9 @@ class RobotsController < ApplicationController
   def show
     render plain: <<~ROBOTS
       User-agent: *
-      Disallow: /
-
-      User-agent: SemrushBot-SA
       Allow: /
 
-      User-agent: AhrefsSiteAudit
-      Allow: /
+      Sitemap: https://getintoteaching.education.gov.uk/sitemap.xml
     ROBOTS
   end
 end

@@ -4,7 +4,14 @@ describe RobotsController do
   before { get("/robots.txt") }
   subject { response.body }
 
-  it { is_expected.to match("User-agent") }
-  it { is_expected.to match("SemrushBot-SA") }
-  it { is_expected.to match("AhrefsSiteAudit") }
+  it do
+    is_expected.to eq(
+      <<~ROBOTS,
+        User-agent: *
+        Allow: /
+
+        Sitemap: https://getintoteaching.education.gov.uk/sitemap.xml
+      ROBOTS
+    )
+  end
 end
