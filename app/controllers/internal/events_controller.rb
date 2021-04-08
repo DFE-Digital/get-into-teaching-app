@@ -42,7 +42,7 @@ module Internal
       render :new
     end
 
-    private
+  private
 
     def submit_pending
       return false if @event.invalid?
