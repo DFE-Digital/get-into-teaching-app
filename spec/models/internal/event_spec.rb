@@ -146,9 +146,7 @@ describe Internal::Event do
   end
 
   describe "#map_to_api_event" do
-    let(:internal_event) do
-      build(:internal_event)
-    end
+    let(:internal_event) { build(:internal_event) }
     let(:expected_attributes) do
       attributes_for(
         :event_api,
@@ -193,5 +191,14 @@ describe Internal::Event do
         expect(api_event).to have_attributes(expected_attributes)
       end
     end
+
+    # context "when passed an event with nil id" do
+    #   it "should have no id field" do
+    #     api_event = internal_event.map_to_api_event
+    #
+    #     expected = expected_attributes.except(:id)
+    #     expect(api_event).to have_attributes(expected)
+    #   end
+    # end
   end
 end

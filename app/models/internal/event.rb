@@ -15,22 +15,9 @@ module Internal
     end
 
     def map_to_api_event
-      api_event = GetIntoTeachingApiClient::TeachingEvent.new(
-        id: id.presence,
-        name: name,
-        readableId: readable_id,
-        typeId: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-        statusId: status_id,
-        summary: summary,
-        description: description,
-        isOnline: is_online,
-        startAt: start_at,
-        endAt: end_at,
-        providerContactEmail: provider_contact_email,
-        providerOrganiser: provider_organiser,
-        providerTargetAudience: provider_target_audience,
-        providerWebsiteUrl: provider_website_url,
-      )
+      # byebug
+      hash = attributes.filter { |k| attribute_names.include?(k) }.transform_keys { |k| k.to_s.camelize(:lower) }
+      api_event = GetIntoTeachingApiClient::TeachingEvent.new(hash)
 
       if building.present?
         api_event.building = GetIntoTeachingApiClient::TeachingEventBuilding.new(
@@ -46,7 +33,7 @@ module Internal
       api_event
     end
 
-    attribute :id, :string, default: nil
+    attribute :id, :string
     attribute :readable_id, :string
     attribute :status_id, :integer
     attribute :name, :string
