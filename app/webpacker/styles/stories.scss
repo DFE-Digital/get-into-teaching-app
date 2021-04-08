@@ -155,7 +155,7 @@
     .card__thumb {
       flex: 0 1 45%;
 
-      > picture img {
+      > picture img, > img {
         width: 100%;
         object-fit: contain;
         height: auto;
