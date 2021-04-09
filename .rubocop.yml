@@ -33,6 +33,7 @@ Rails/UnknownEnv:
     - preprod
     - userresearch
     - production
+    - pagespeed
 
 RSpec/AnyInstance:
   Enabled: false
