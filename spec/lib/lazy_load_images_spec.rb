@@ -12,9 +12,15 @@ describe LazyLoadImages do
     subject { instance.html }
 
     it do
-      lazy_image = "<img class=\"test lazyload\" src=\"\" data-src=\"#{original_src}\">"
-      lazy_source = "<source srcset=\"\" data-srcset=\"#{original_src}\"></source>"
+      lazy_image = "<img class=\"test lazyload\" data-src=\"#{original_src}\">"
+      lazy_source = "<source data-srcset=\"#{original_src}\"></source>"
       is_expected.to include("<picture>#{lazy_image}<noscript>#{img}</noscript>#{lazy_source}</picture>")
+    end
+
+    context "when lazy-loading is disabled on the image" do
+      let(:img) { "<img class=\"test\" src=\"#{original_src}\" data-lazy-disable=\"true\">" }
+
+      it { is_expected.to include(picture) }
     end
   end
 end

@@ -7,16 +7,24 @@ class LazyLoadImages
     doc = Nokogiri::HTML(@page)
 
     doc.css("img").each do |img|
+      next if img["data-lazy-disable"].present?
+
       img.after(noscript_image(img, doc))
-      img.set_attribute("data-src", img.attribute("src"))
+
+      img["data-src"] = img.attribute("src")
       img.remove_attribute("src")
+
       img["class"] ||= ""
       img["class"] = img["class"] << " lazyload"
     end
 
-    doc.css("picture source").each do |source|
-      source.set_attribute("data-srcset", source.attribute("srcset"))
-      source.remove_attribute("srcset")
+    doc.css("picture").each do |picture|
+      next if picture.css("img[data-lazy-disable]").any?
+
+      picture.css("source").each do |source|
+        source["data-srcset"] = source.attribute("srcset")
+        source.remove_attribute("srcset")
+      end
     end
 
     doc.to_html(encoding: "UTF-8", indent: 2)

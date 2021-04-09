@@ -14,7 +14,7 @@ describe "Next Gen Images" do
 
     it do
       is_expected.to match(
-        /<picture><source type="image\/svg\+xml" data-srcset=".*\.svg"><\/source><img alt="Department for education" width=\"92\" height=\"54\" data-src=".*\.svg" class=" lazyload"><noscript>.*<\/noscript><\/picture>/,
+        /<picture><source .*><\/source><img .*><noscript><img .*><\/noscript><\/picture>/,
       )
     end
   end
