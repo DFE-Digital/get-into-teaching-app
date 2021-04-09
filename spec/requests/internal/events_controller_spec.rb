@@ -10,6 +10,7 @@ describe Internal::EventsController do
     end
   end
   let(:events_by_type) { group_events_by_type(events) }
+  let(:provider_events_by_type) { group_events_by_type([events[0]]) }
 
   before do
     events[0].status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
@@ -34,7 +35,7 @@ describe Internal::EventsController do
       context "when there are pending events" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type) { events_by_type }
+            .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
 
           get internal_events_path, headers: generate_auth_headers(:author)
         end
@@ -340,7 +341,7 @@ describe Internal::EventsController do
     end
   end
 
-private
+  private
 
   def generate_auth_headers(user_type)
     if user_type == :publisher

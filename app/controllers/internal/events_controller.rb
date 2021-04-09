@@ -4,7 +4,7 @@ module Internal
     layout "internal"
 
     def index
-      load_pending_events
+      @no_results = load_pending_events.blank?
     end
 
     def show
@@ -126,7 +126,6 @@ module Internal
         GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
         params[:page],
       )
-      @no_results = @events.empty?
     end
 
     def pending_event_status_id
