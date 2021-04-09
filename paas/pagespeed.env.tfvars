@@ -6,6 +6,7 @@ timeout                   = 1800
 logging                   = 0
 instances                 = 1
 alerts                    = {}
+azure_vault_secret        = "PAGE-SPEED-KEYS"
 azure_key_vault           = "s146t01-kv"
 azure_resource_group      = "s146t01-rg"
 

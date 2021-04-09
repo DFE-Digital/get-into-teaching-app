@@ -17,6 +17,10 @@ variable "timeout" {
   default = 180
 }
 
+variable "azure_vault_secret" {
+  default = "CONTENT-KEYS"
+}
+
 variable "paas_space" {
   default = "sandbox"
 }

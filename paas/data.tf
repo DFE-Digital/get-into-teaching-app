@@ -5,7 +5,7 @@ data "azurerm_key_vault" "vault" {
 
 data "azurerm_key_vault_secret" "application" {
   key_vault_id = data.azurerm_key_vault.vault.id
-  name         = "CONTENT-KEYS"
+  name         = var.azure_vault_secret
 }
 
 locals {
