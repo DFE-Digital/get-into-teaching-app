@@ -242,7 +242,7 @@ describe Internal::EventsController do
                            "building":
                              { "id": building_id,
                                "venue": expected_venue,
-                               "address_postcode": expected_postcode} }
+                               "address_postcode": expected_postcode } }
         end
         it "should post new building fields with no id" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
