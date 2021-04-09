@@ -6,7 +6,7 @@ RSpec.feature "Finding an event", type: :feature do
   let(:events) do
     11.times.collect do |index|
       start_at = Time.zone.today.at_beginning_of_month + index.days
-      build(:event_api, name: "Event #{index + 1}", start_at: start_at)
+      build(:event_api, :optional, name: "Event #{index + 1}", start_at: start_at)
     end
   end
   let(:events_by_type) { group_events_by_type(events) }
