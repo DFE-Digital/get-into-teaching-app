@@ -11,12 +11,12 @@
             </ul>
 
             <div class="navbar__desktop__search">
-              <%= link_to image_pack_tag("icon-site-search.svg", alt: "Search", size: "50x50"),
+              <%= link_to image_pack_tag("icon-site-search.svg", alt: "Search", size: "50x50", data: { "lazy-disable": true }),
                           search_path,
                           class: "searchbox__search",
                           data: { action: "searchbox#toggle" } %>
 
-              <%= link_to image_pack_tag("icon-site-search-close.svg", alt: "Close search", size: "50x50"),
+              <%= link_to image_pack_tag("icon-site-search-close.svg", alt: "Close search", size: "50x50", data: { "lazy-disable": true }),
                           search_path,
                           class: "searchbox__close",
                           data: { action: "searchbox#toggle" } %>
@@ -30,12 +30,12 @@
                     <div data-navigation-target="hamburger" id='hamburger' class="icon-close"></div>
                 </a>
 
-                <%= link_to image_pack_tag("icon-site-search.svg", alt: "Search", size: "50x50"),
+                <%= link_to image_pack_tag("icon-site-search.svg", alt: "Search", size: "50x50", data: { "lazy-disable": true }),
                             search_path,
                             class: "searchbox__search",
                             data: { action: "searchbox#toggle" } %>
 
-                <%= link_to image_pack_tag("icon-site-search-close.svg", alt: "Close search", size: "50x50"),
+                <%= link_to image_pack_tag("icon-site-search-close.svg", alt: "Close search", size: "50x50", data: { "lazy-disable": true }),
                             search_path,
                             class: "searchbox__close",
                             data: { action: "searchbox#toggle" } %>

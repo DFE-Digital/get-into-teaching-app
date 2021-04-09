@@ -19,7 +19,7 @@ class NextGenImages
 private
 
   def picture(img, doc)
-    src = img.attribute("src").value
+    src = img["src"]
 
     Nokogiri::XML::Node.new("picture", doc) do |picture|
       source_exts = NEXT_GEN_IMAGE_EXTS + [File.extname(src)]
@@ -37,8 +37,8 @@ private
     return nil unless File.exist?("#{Rails.public_path}/#{src}")
 
     Nokogiri::XML::Node.new("source", doc) do |source|
-      source.set_attribute("srcset", src)
-      source.set_attribute("type", mime_type(src))
+      source["srcset"] = src
+      source["type"] = mime_type(src)
     end
   end
 
