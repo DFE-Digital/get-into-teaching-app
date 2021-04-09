@@ -4,7 +4,7 @@ module Internal
     layout "internal"
 
     def index
-      @no_results = load_pending_events.blank?
+      load_pending_events
     end
 
     def show
@@ -117,13 +117,16 @@ module Internal
         quantity_per_type: 1_000,
       }
 
-      @events = GetIntoTeachingApiClient::TeachingEventsApi
-                  .new
-                  .search_teaching_events_grouped_by_type(opts)[0]&.teaching_events
+      search_results = GetIntoTeachingApiClient::TeachingEventsApi
+                         .new
+                         .search_teaching_events_grouped_by_type(opts)
 
-      unless @events.nil?
-        @events = Kaminari.paginate_array(@events).page(params[:page])
-      end
+      @group_presenter = Events::GroupPresenter.new(search_results)
+      @events = @group_presenter.paginated_events_of_type(
+        GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+        params[:page],
+      )
+      @no_results = @events.empty?
     end
 
     def pending_event_status_id
