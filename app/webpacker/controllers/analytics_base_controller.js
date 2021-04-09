@@ -6,7 +6,7 @@ export default class extends Controller {
     const cookiePrefs = new CookiePreferences();
     const cookiesAccepted = cookiePrefs.allowed(this.cookieCategory);
 
-    if (this.hasVwoCompleted && cookiesAccepted) {
+    if (!this.waitForVwo && cookiesAccepted) {
       this.triggerEvent();
     }
 
@@ -18,7 +18,7 @@ export default class extends Controller {
       );
     }
 
-    if (!this.hasVwoCompleted) {
+    if (this.waitForVwo) {
       this.vwoCompletedHandler = this.vwoCompleted.bind(this);
       document.addEventListener('vwo:completed', this.vwoCompletedHandler);
     }
@@ -62,7 +62,7 @@ export default class extends Controller {
   cookiesAcceptedChecker(event) {
     if (
       event.detail?.cookies?.includes(this.cookieCategory) &&
-      this.hasVwoCompleted
+      !this.waitForVwo
     )
       this.triggerEvent();
   }
@@ -103,6 +103,14 @@ export default class extends Controller {
     else if (this.eventName)
       this.serviceFunction(this.serviceAction, this.eventName);
     else this.serviceFunction(this.serviceAction);
+  }
+
+  get waitForVwo() {
+    return this.isVwoEnabled && !this.hasVwoCompleted;
+  }
+
+  get isVwoEnabled() {
+    return typeof window._vwo_code !== 'undefined';
   }
 
   get hasVwoCompleted() {

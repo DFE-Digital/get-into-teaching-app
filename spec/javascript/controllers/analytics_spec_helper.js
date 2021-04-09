@@ -34,9 +34,12 @@ export default class {
   static describeWithCookieSet(
     name,
     controller,
-    serviceFunctionName,
-    cookieCategory
+    serviceFunctionName
   ) {
+    beforeEach(() => {
+      window._vwo_code = {};
+    });
+
     describe('with cookie already set', () => {
       beforeEach(() => {
         delete window.willRedirectionOccurByVWO;
@@ -66,6 +69,33 @@ export default class {
 
           it('Should register the service', () => {
             expect(typeof window[serviceFunctionName]).toBe('function');
+          });
+        });
+
+        describe('with VWO disabled', () => {
+          beforeEach(() => {
+            delete window._vwo_code;
+            delete window.willRedirectionOccurByVWO;
+          });
+
+          describe('with no service id', () => {
+            beforeEach(() => {
+              this.initApp(name, controller, '');
+            });
+
+            it('Should not register the service', () => {
+              expect(typeof window[serviceFunctionName]).toBe('undefined');
+            });
+          });
+
+          describe('with service id set', () => {
+            beforeEach(() => {
+              this.initApp(name, controller, '1234');
+            });
+
+            it('Should register the service', () => {
+              expect(typeof window[serviceFunctionName]).toBe('function');
+            });
           });
         });
       });
@@ -116,6 +146,30 @@ export default class {
     serviceFunctionName,
     cookieCategory
   ) {
+    beforeEach(() => {
+      window._vwo_code = {};
+    });
+
+    describe('with VWO disabled', () => {
+      beforeEach(() => {
+        delete window._vwo_code;
+        delete window.willRedirectionOccurByVWO;
+        Cookies.remove(CookiePreferences.cookieName);
+        this.initApp(name, controller, '1234');
+      });
+
+      it('should not register the service', () => {
+        expect(typeof window[serviceFunctionName]).toBe('undefined');
+      });
+
+      describe('than cookies are accepted', () => {
+        it('should register service', () => {
+          new CookiePreferences().setCategory(cookieCategory, true);
+          expect(typeof window[serviceFunctionName]).toBe('function');
+        });
+      });
+    });
+
     describe('when cookies have not yet been accepted', () => {
       beforeEach(() => {
         delete window.willRedirectionOccurByVWO;
