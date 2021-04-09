@@ -13,6 +13,10 @@ variable "application_stopped" {
   default = false
 }
 
+variable "timeout" {
+  default = 180
+}
+
 variable "paas_space" {
   default = "sandbox"
 }
