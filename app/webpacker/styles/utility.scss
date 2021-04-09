@@ -136,3 +136,7 @@ $chevron-direction-map: (
 .clearfix {
   clear: both;
 }
+
+img[data-src]:not(.visible) {
+  display: none;
+}
