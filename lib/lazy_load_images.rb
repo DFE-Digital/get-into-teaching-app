@@ -9,14 +9,14 @@ class LazyLoadImages
     doc.css("img").each do |img|
       img.after(noscript_image(img, doc))
       img.set_attribute("data-src", img.attribute("src"))
-      img.set_attribute("src", nil)
+      img.remove_attribute("src")
       img["class"] ||= ""
       img["class"] = img["class"] << " lazyload"
     end
 
     doc.css("picture source").each do |source|
       source.set_attribute("data-srcset", source.attribute("srcset"))
-      source.set_attribute("srcset", nil)
+      source.remove_attribute("srcset")
     end
 
     doc.to_html(encoding: "UTF-8", indent: 2)

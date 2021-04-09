@@ -1,7 +1,8 @@
-import 'lazysizes';
+import lazySizes from 'lazysizes';
+lazySizes.cfg.init = false;
 
-// By default lazy-loaded images are hidden (to support JS
-// being disabled). If JS is enabled, we show them.
-document.querySelectorAll(".lazyload").forEach((img) => {
-  img.classList.add("visible");
+lazySizes.init();
+
+document.addEventListener('turbolinks:load', function () {
+  lazySizes.init();
 });

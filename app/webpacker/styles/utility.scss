@@ -137,6 +137,6 @@ $chevron-direction-map: (
   clear: both;
 }
 
-img[data-src]:not(.visible) {
-  display: none;
+img.lazyload:not([src]) {
+  visibility: hidden;
 }
