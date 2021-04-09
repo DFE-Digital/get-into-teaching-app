@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   before_action :add_home_breadcrumb
   before_action :toggle_vwo
 
-  after_action :process_images, if: -> { Rails.env.preprod? }
+  after_action :process_images
 
   def raise_not_found
     raise ActionController::RoutingError, "Not Found"
