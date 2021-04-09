@@ -25,6 +25,10 @@ module EventsHelper
     event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
   end
 
+  def event_status_pending?(event)
+    event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+  end
+
   def can_sign_up_online?(event)
     event.web_feed_id && event_status_open?(event) && !is_event_type?(event, "School or University event")
   end
