@@ -25,6 +25,10 @@ Rails.application.routes.draw do
     get "/assets/*missing", to: "errors#not_found", via: :all
   end
 
+  namespace :internal do
+    resources :events, only: %i[index]
+  end
+
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/tta-service", to: "pages#tta_service", as: :tta_service
