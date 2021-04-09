@@ -341,7 +341,7 @@ describe Internal::EventsController do
     end
   end
 
-  private
+private
 
   def generate_auth_headers(user_type)
     if user_type == :publisher
