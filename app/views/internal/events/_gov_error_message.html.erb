@@ -1,0 +1,10 @@
+<div class="<%= class_names("govuk-form-group", { "govuk-form-group--error": field_errors.any? }) %>">
+  <h3 class="govuk-label"><%= label %></h3>
+  <% if field_errors.any? %>
+    <span class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span><%= field_errors[0] %>
+    </span>
+  <% end %>
+  <div></div>
+  <%= yield %>
+</div>
