@@ -235,12 +235,14 @@ describe Internal::EventsController do
 
       context "when \"add a building\" is selected" do
         let(:expected_venue) { "New venue" }
+        let(:expected_postcode) { "M1 7AX" }
         let(:params) do
           attributes_for :internal_event,
                          { "venue_type": Internal::Event::VENUE_TYPES[:add],
                            "building":
                              { "id": building_id,
-                               "venue": expected_venue } }
+                               "venue": expected_venue,
+                               "address_postcode": expected_postcode} }
         end
         it "should post new building fields with no id" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
@@ -254,7 +256,7 @@ describe Internal::EventsController do
               address_line2: nil,
               address_line3: nil,
               address_city: nil,
-              address_postcode: nil,
+              address_postcode: expected_postcode,
             })
 
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
