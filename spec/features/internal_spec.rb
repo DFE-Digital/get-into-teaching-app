@@ -20,7 +20,7 @@ RSpec.feature "Internal section", type: :feature do
 
   before do
     if page.driver.browser.respond_to?(:authorize)
-      page.driver.browser.authorize("publisher", "password")
+      page.driver.browser.authorize(ENV["PUBLISHER_USERNAME"], ENV["PUBLISHER_PASSWORD"])
     end
 
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -34,27 +34,9 @@ RSpec.feature "Internal section", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:upsert_teaching_event) { [] }
 
-    visit internal_events_path
-    expect(page).to have_text "Pending Provider Events"
+    navigate_to_new_submission
 
-    click_button "Submit a provider event for review"
-    expect(page).to have_text("Provider Event Details")
-    expect(page).to have_checked_field("Search existing venues")
-
-    fill_in "Event name", with: "test"
-    fill_in "External event name", with: "test"
-    fill_in "Event summary", with: "test"
-    find(:id, "internal_event_description", visible: false)
-      .click
-      .set "some value here"
-    fill_in "Provider email address", with: "test@test.com"
-    fill_in "Provider organiser", with: "test"
-    fill_in "Target audience", with: "test"
-    fill_in "Provider website/registration link", with: "test"
-    choose "Yes"
-    fill_in "internal_event[start_at]", with: Time.zone.now + 1.day
-    fill_in "internal_event[end_at]", with: Time.zone.now + 2.days
-    choose "No venue"
+    enter_valid_event_details
 
     click_button "Submit for review"
     expect(page).to have_text "Event submitted for review"
@@ -69,14 +51,8 @@ RSpec.feature "Internal section", type: :feature do
 
     events[0].building = nil
 
-    visit internal_events_path
-    expect(page).to have_text "Pending Provider Events"
+    navigate_to_edit_form
 
-    click_link "Event 1"
-    expect(page).to have_text("This is a pending event")
-
-    click_button "Edit this provider event"
-    expect(page).to have_text("Provider Event Details")
     expect(page).to have_checked_field("No venue")
 
     click_button "Submit for review"
@@ -90,14 +66,8 @@ RSpec.feature "Internal section", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event) { events[0] }
 
-    visit internal_events_path
-    expect(page).to have_text "Pending Provider Events"
+    navigate_to_edit_form
 
-    click_link "Event 1"
-    expect(page).to have_text("This is a pending event")
-
-    click_button "Edit this provider event"
-    expect(page).to have_text("Provider Event Details")
     expect(page).to have_checked_field("Search existing venues")
   end
 
@@ -116,5 +86,101 @@ RSpec.feature "Internal section", type: :feature do
 
     click_button "Submit this provider event"
     expect(page).to have_text("Event submitted")
+  end
+
+  describe "validations" do
+    scenario "There are validation errors on event and building" do
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:upsert_teaching_event) { [] }
+
+      navigate_to_new_submission
+
+      fill_in "internal_event[start_at]", with: 1.day.ago
+      fill_in "internal_event[end_at]", with: 1.day.ago
+
+      choose "Add a new venue"
+      fill_in "Postcode", with: "invalid"
+
+      click_button "Submit for review"
+
+      expect(page).to have_text "can't be blank"
+      expect(page).to have_text "is not included in the list"
+      expect(page).to have_text "is invalid"
+    end
+
+    scenario "There are validation errors on building only" do
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:upsert_teaching_event) { [] }
+
+      navigate_to_new_submission
+
+      enter_valid_event_details
+
+      choose "Add a new venue"
+      fill_in "Venue", with: "valid"
+      fill_in "Postcode", with: "invalid"
+
+      click_button "Submit for review"
+
+      expect(page).to_not have_text "can't be blank"
+      expect(page).to_not have_text "is not included in the list"
+      expect(page).to have_text "is invalid"
+    end
+
+    scenario "There are validation errors on event only" do
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:upsert_teaching_event) { [] }
+
+      navigate_to_new_submission
+
+      choose "Add a new venue"
+      fill_in "Venue", with: "valid"
+      fill_in "Postcode", with: "M1 7AX"
+
+      click_button "Submit for review"
+
+      expect(page).to have_text "can't be blank"
+      expect(page).to have_text "is not included in the list"
+      expect(page).to_not have_text "is invalid"
+    end
+  end
+
+private
+
+  def navigate_to_new_submission
+    visit internal_events_path
+    expect(page).to have_text "Pending Provider Events"
+
+    click_button "Submit a provider event for review"
+    expect(page).to have_text("Provider Event Details")
+    expect(page).to have_checked_field("Search existing venues")
+  end
+
+  def navigate_to_edit_form
+    visit internal_events_path
+    expect(page).to have_text "Pending Provider Events"
+
+    click_link "Event 1"
+    expect(page).to have_text("This is a pending event")
+
+    click_button "Edit this provider event"
+    expect(page).to have_text("Provider Event Details")
+  end
+
+  def enter_valid_event_details
+    fill_in "Event name", with: "test"
+    fill_in "External event name", with: "test"
+    fill_in "Event summary", with: "test"
+    find(:id, "internal_event_description", visible: false)
+      .click
+      .set "some value here"
+    fill_in "Provider email address", with: "test@test.com"
+    fill_in "Provider organiser", with: "test"
+    fill_in "Target audience", with: "test"
+    fill_in "Provider website/registration link", with: "test"
+    choose "Yes"
+    fill_in "internal_event[start_at]", with: Time.zone.now + 1.day
+    fill_in "internal_event[end_at]", with: Time.zone.now + 2.days
+    choose "No venue"
   end
 end

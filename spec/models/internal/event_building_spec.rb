@@ -11,6 +11,21 @@ describe Internal::EventBuilding do
     it { is_expected.to respond_to :address_postcode }
   end
 
+  describe "validations" do
+    describe "#venue" do
+      it { is_expected.to allow_value("test").for :venue }
+      it { is_expected.to_not allow_value("").for :venue }
+      it { is_expected.to_not allow_value(nil).for :venue }
+    end
+
+    describe "#address_postcode" do
+      it { is_expected.to allow_value("M1 7AX").for :address_postcode }
+      it { is_expected.to_not allow_value("not a postcode").for :address_postcode }
+      it { is_expected.to_not allow_value("").for :address_postcode }
+      it { is_expected.to_not allow_value(nil).for :address_postcode }
+    end
+  end
+
   describe "#initialize_with_api_building" do
     let(:api_building) { build(:event_building_api) }
     let(:expected_attributes) do
