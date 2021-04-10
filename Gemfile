@@ -27,7 +27,7 @@ gem "secure_headers"
 gem "canonical-rails"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
-gem "kramdown"
+gem "kramdown", ">= 2.3.1"
 gem "rinku"
 
 gem "addressable"
@@ -56,7 +56,7 @@ gem "redis"
 gem "kaminari", "~> 1.2"
 gem "view_component"
 
-gem "google-api-client", require: false
+gem "google-api-client", ">= 0.53.0", require: false
 
 # Ignore cloudfront IPs when getting customer IP address
 gem "actionpack-cloudfront"
@@ -97,7 +97,7 @@ end
 group :test do
   gem "shoulda-matchers"
   gem "webdrivers", "~> 4.6"
-  gem "webmock"
+  gem "webmock", ">= 3.12.2"
 end
 
 group :rolling, :preprod, :userresearch, :production do
