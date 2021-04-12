@@ -9,6 +9,7 @@ resource "cloudfoundry_app" "app_application" {
   stopped      = var.application_stopped
   strategy     = var.strategy
   memory       = 1024
+  disk_quota   = 1536
   timeout      = var.timeout
   instances    = var.instances
   dynamic "service_binding" {

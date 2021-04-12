@@ -7,7 +7,7 @@ on:
 
 jobs:
   build:
-    name: Build and Deploy
+    name: Build
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
@@ -152,3 +152,61 @@ jobs:
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
 
+  review:
+    name: Review Deployment Process
+    environment: Development
+    needs: [ build ]
+    if: github.ref != 'refs/heads/master' && github.event.pull_request.draft == false
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK'
+
+      - name: Trigger Review Deployment
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+          workflow: Deploy to PaaS
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          inputs: '{"environment": "Review", "sha": "${{ github.sha }}" , "pr": "${{github.event.number}}"  }'
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Wait for Deployment to Review
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-review
+        with:
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          checkName: Deploy Review
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Check if Review Deployment has returned with a failure
+        if: steps.wait-for-review.outputs.conclusion == 'failure'
+        run: exit 1
+
+      - name: Post PR comment
+        run: |
+          curl --silent  \
+               --header "Accept: application/vnd.github.v3+json" \
+               --header "Authorization: Bearer ${{ github.token }}" \
+               --request POST \
+               --data '{"body": "Review app deployed to https://${{env.REVIEW_APPLICATION}}-${{github.event.number}}.${{env.DOMAIN}} "}'  \
+               https://api.github.com/repos/${{ github.repository }}/issues/${{github.event.number }}/comments
+
+      - name: Add Review Label
+        if: contains(github.event.pull_request.user.login, 'dependabot') == false
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          labels: Review
