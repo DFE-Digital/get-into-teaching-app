@@ -56,16 +56,14 @@ module Internal
       new(hash)
     end
 
-    def map_to_api_event
+    def to_api_event
       hash = attributes
                .filter { |k| attribute_names.include?(k) }
                .transform_keys { |k| k.to_s.camelize(:lower) }
                .filter { |_, v| v.presence }
       api_event = GetIntoTeachingApiClient::TeachingEvent.new(hash)
 
-      if building.present?
-        api_event.building = building.map_to_api_building
-      end
+      api_event.building = building.to_api_building if building.present?
       api_event
     end
 

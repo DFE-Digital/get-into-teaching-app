@@ -168,14 +168,14 @@ describe Internal::Event do
 
     context "when passed a building" do
       it "has correct attributes" do
-        api_event = internal_event.map_to_api_event
+        api_event = internal_event.to_api_event
         expect(api_event.building).to have_attributes(expected_building_attributes)
       end
     end
 
     context "when passed a event" do
       it "has correct attributes" do
-        api_event = internal_event.map_to_api_event
+        api_event = internal_event.to_api_event
         expect(api_event).to have_attributes(expected_attributes)
       end
     end
@@ -183,7 +183,7 @@ describe Internal::Event do
     context "when passed an event with blank id" do
       it "has no id field" do
         internal_event.id = ""
-        api_event = internal_event.map_to_api_event
+        api_event = internal_event.to_api_event
 
         expect(api_event.id).to be_nil
       end

@@ -19,7 +19,7 @@ module Internal
       new(hash)
     end
 
-    def map_to_api_building
+    def to_api_building
       hash = attributes
                .filter { |k| attribute_names.include?(k) }
                .transform_keys { |k| k.to_s.camelize(:lower) }
