@@ -123,7 +123,7 @@ describe Internal::Event do
       context "with building" do
         let(:expected_building_attributes) { attributes_for(:event_building_api, id: api_event.building.id) }
 
-        it "should have correct attributes" do
+        it "has correct attributes" do
           expected_attributes["venue_type"] = Internal::Event::VENUE_TYPES[:existing]
           internal_event = described_class.initialize_with_api_event(api_event)
 
@@ -133,7 +133,7 @@ describe Internal::Event do
       end
 
       context "without building" do
-        it "should have correct attributes" do
+        it "has correct attributes" do
           api_event.building = nil
           expected_attributes["venue_type"] = Internal::Event::VENUE_TYPES[:none]
           internal_event = described_class.initialize_with_api_event(api_event)
@@ -180,21 +180,21 @@ describe Internal::Event do
     end
 
     context "when passed a building" do
-      it "should have correct attributes" do
+      it "has correct attributes" do
         api_event = internal_event.map_to_api_event
         expect(api_event.building).to have_attributes(expected_building_attributes)
       end
     end
 
     context "when passed a event" do
-      it "should have correct attributes" do
+      it "has correct attributes" do
         api_event = internal_event.map_to_api_event
         expect(api_event).to have_attributes(expected_attributes)
       end
     end
 
     context "when passed an event with blank id" do
-      it "should have no id field" do
+      it "has no id field" do
         internal_event.id = ""
         api_event = internal_event.map_to_api_event
 
