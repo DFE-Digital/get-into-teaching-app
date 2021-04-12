@@ -82,8 +82,8 @@ module Internal
       end
     end
 
-    def map_errors_to_fields(error)
-      JSON.parse(error.response_body)["errors"].each do |key, value|
+    def map_api_errors_to_attributes(response)
+      JSON.parse(response.response_body)["errors"].each do |key, value|
         errors.add(key.underscore.to_sym, value[0])
       end
     end
