@@ -8,7 +8,9 @@ module Internal
     attribute :id, :string
     attribute :readable_id, :string
     attribute :status_id, :integer
-    attribute :type_id, :integer
+    attribute :type_id,
+              :integer,
+              default: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
     attribute :name, :string
     attribute :summary, :string
     attribute :description, :string
@@ -55,7 +57,6 @@ module Internal
     end
 
     def map_to_api_event
-      self.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
       hash = attributes
                .filter { |k| attribute_names.include?(k) }
                .transform_keys { |k| k.to_s.camelize(:lower) }
