@@ -5,29 +5,6 @@ module Internal
 
     VENUE_TYPES = { add: "add", existing: "existing", none: "none" }.freeze
 
-    def self.initialize_with_api_event(event)
-      hash = event.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| attribute_names.include?(k) }
-      unless hash["building"].nil?
-        hash["building"] = EventBuilding.initialize_with_api_building(hash["building"])
-        hash["venue_type"] = VENUE_TYPES[:existing]
-      end
-      new(hash)
-    end
-
-    def map_to_api_event
-      self.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
-      hash = attributes
-               .filter { |k| attribute_names.include?(k) }
-               .transform_keys { |k| k.to_s.camelize(:lower) }
-               .filter { |_, v| v.presence }
-      api_event = GetIntoTeachingApiClient::TeachingEvent.new(hash)
-
-      if building.present?
-        api_event.building = building.map_to_api_building
-      end
-      api_event
-    end
-
     attribute :id, :string
     attribute :readable_id, :string
     attribute :status_id, :integer
@@ -67,6 +44,29 @@ module Internal
       end
     end
     validate :end_after_start
+
+    def self.initialize_with_api_event(api_event)
+      hash = api_event.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| attribute_names.include?(k) }
+      unless hash["building"].nil?
+        hash["building"] = EventBuilding.initialize_with_api_building(hash["building"])
+        hash["venue_type"] = VENUE_TYPES[:existing]
+      end
+      new(hash)
+    end
+
+    def map_to_api_event
+      self.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+      hash = attributes
+               .filter { |k| attribute_names.include?(k) }
+               .transform_keys { |k| k.to_s.camelize(:lower) }
+               .filter { |_, v| v.presence }
+      api_event = GetIntoTeachingApiClient::TeachingEvent.new(hash)
+
+      if building.present?
+        api_event.building = building.map_to_api_building
+      end
+      api_event
+    end
 
     def persisted?
       id.present?
