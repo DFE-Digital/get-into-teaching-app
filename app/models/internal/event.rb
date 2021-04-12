@@ -69,6 +69,12 @@ module Internal
       id.present?
     end
 
+    def map_api_errors_to_attributes(response)
+      JSON.parse(response.response_body)["errors"].each do |key, value|
+        errors.add(key.underscore.to_sym, value[0])
+      end
+    end
+
   private
 
     def end_after_start
@@ -76,12 +82,6 @@ module Internal
 
       if end_at <= start_at
         errors.add(:end_at, "must be after the start date")
-      end
-    end
-
-    def map_api_errors_to_attributes(response)
-      JSON.parse(response.response_body)["errors"].each do |key, value|
-        errors.add(key.underscore.to_sym, value[0])
       end
     end
   end

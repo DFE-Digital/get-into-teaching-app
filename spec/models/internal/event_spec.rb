@@ -189,4 +189,18 @@ describe Internal::Event do
       end
     end
   end
+
+  describe "#map_api_errors_to_attributes" do
+    let(:error_message) { "Must be unique" }
+    let(:json_error) { JSON[errors: { ReadableId: [error_message] }] }
+    let(:api_error) { GetIntoTeachingApiClient::ApiError.new(response_body: json_error) }
+
+    let(:internal_event) { build(:internal_event) }
+
+    it "adds the error to the correct attribute" do
+      internal_event.map_api_errors_to_attributes(api_error)
+
+      expect(internal_event.errors["readable_id"].first).to eq(error_message)
+    end
+  end
 end
