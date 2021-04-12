@@ -2,6 +2,7 @@ module Internal
   class EventBuilding
     include ActiveModel::Model
     include ActiveModel::Attributes
+    include ApiModelConvertable
 
     attribute :id, :string
     attribute :venue, :string
@@ -15,15 +16,12 @@ module Internal
     validates :address_postcode, presence: true, postcode: true, allow_blank: false
 
     def self.initialize_with_api_building(building)
-      hash = building.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| attribute_names.include?(k) }
+      hash = convert_attributes_from_api_model(building)
       new(hash)
     end
 
     def to_api_building
-      hash = attributes
-               .filter { |k| attribute_names.include?(k) }
-               .transform_keys { |k| k.to_s.camelize(:lower) }
-               .filter { |_, v| v.presence }
+      hash = convert_attributes_for_api_model
       GetIntoTeachingApiClient::TeachingEventBuilding.new(hash)
     end
   end

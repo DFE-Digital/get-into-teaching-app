@@ -20,10 +20,10 @@ describe ApiModelConvertable do
     model
   end
 
-  let(:tester) {testing_model.new}
+  let(:tester) { testing_model.new }
 
   describe "#convert_attributes_from_api_model" do
-    let(:converted_hash) { tester.convert_attributes_from_api_model(api_model) }
+    let(:converted_hash) { testing_model.convert_attributes_from_api_model(api_model) }
 
     it "returns a hash of snake case attributes" do
       expect(converted_hash).to have_key("type_id")
@@ -48,5 +48,3 @@ describe ApiModelConvertable do
     end
   end
 end
-
-

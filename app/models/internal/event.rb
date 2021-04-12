@@ -2,6 +2,7 @@ module Internal
   class Event
     include ActiveModel::Model
     include ActiveModel::Attributes
+    include ApiModelConvertable
 
     VENUE_TYPES = { add: "add", existing: "existing", none: "none" }.freeze
 
@@ -48,7 +49,7 @@ module Internal
     validate :end_after_start
 
     def self.initialize_with_api_event(api_event)
-      hash = api_event.to_hash.transform_keys { |k| k.to_s.underscore }.filter { |k| attribute_names.include?(k) }
+      hash = convert_attributes_from_api_model(api_event)
       unless hash["building"].nil?
         hash["building"] = EventBuilding.initialize_with_api_building(hash["building"])
         hash["venue_type"] = VENUE_TYPES[:existing]
@@ -57,10 +58,7 @@ module Internal
     end
 
     def to_api_event
-      hash = attributes
-               .filter { |k| attribute_names.include?(k) }
-               .transform_keys { |k| k.to_s.camelize(:lower) }
-               .filter { |_, v| v.presence }
+      hash = convert_attributes_for_api_model
       api_event = GetIntoTeachingApiClient::TeachingEvent.new(hash)
 
       api_event.building = building.to_api_building if building.present?
