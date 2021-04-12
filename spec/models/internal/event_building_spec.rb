@@ -45,7 +45,7 @@ describe Internal::EventBuilding do
     end
   end
 
-  describe "#map_to_api_building" do
+  describe "#to_api_building" do
     let(:internal_building) { build(:event_building) }
     let(:expected_api_building_attributes) do
       attributes_for(

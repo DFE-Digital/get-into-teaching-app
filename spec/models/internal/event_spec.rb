@@ -50,7 +50,7 @@ describe Internal::Event do
 
       it "is expected not to allow end at to be the same as start at" do
         subject.start_at = now + 1.minute
-        is_expected.to_not allow_value(now + 1.minute).for :end_at
+        is_expected.to_not allow_value(subject.start_at).for :end_at
       end
 
       it "is expected not to allow end at to be earlier than start at" do
@@ -105,7 +105,7 @@ describe Internal::Event do
           provider_organiser: api_event.provider_organiser,
           provider_target_audience: api_event.provider_target_audience,
           provider_website_url: api_event.provider_website_url,
-        ).except(:type_id, :building, :web_feed_id, :message, :video_url, :is_virtual)
+        ).slice(described_class.attribute_names)
       end
       context "with building" do
         let(:expected_building_attributes) { attributes_for(:event_building_api, id: api_event.building.id) }
@@ -132,7 +132,7 @@ describe Internal::Event do
     end
   end
 
-  describe "#map_to_api_event" do
+  describe "#to_api_event" do
     let(:internal_event) { build(:internal_event) }
     let(:expected_attributes) do
       attributes_for(
@@ -151,7 +151,7 @@ describe Internal::Event do
         provider_organiser: internal_event.provider_organiser,
         provider_target_audience: internal_event.provider_target_audience,
         provider_website_url: internal_event.provider_website_url,
-      ).except(:type_id, :building, :web_feed_id, :message, :video_url, :is_virtual)
+      ).slice(described_class.attribute_names)
     end
     let(:expected_building_attributes) do
       attributes_for(
