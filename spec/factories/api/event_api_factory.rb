@@ -10,14 +10,11 @@ FactoryBot.define do
     sequence(:start_at) { |i| i.weeks.from_now.change(hour: 7, minute: 30) }
     end_at { start_at + 2.hours }
     is_online { false }
+    web_feed_id { "123" }
+    message { "An important message" }
+    video_url { "https://video.com" }
+    is_virtual { false }
     building { build :event_building_api }
-
-    trait :optional do
-      web_feed_id { "123" }
-      message { "An important message" }
-      video_url { "https://video.com" }
-      is_virtual { false }
-    end
 
     trait :closed do
       status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"] }

@@ -113,7 +113,7 @@ describe EventsController do
     let(:event_readable_id) { "123" }
 
     let(:event) do
-      build(:event_api, :optional, :with_provider_info, readable_id: event_readable_id)
+      build(:event_api, :with_provider_info, readable_id: event_readable_id)
     end
 
     subject { response }

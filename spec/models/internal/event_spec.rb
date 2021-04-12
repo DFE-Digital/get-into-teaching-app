@@ -105,7 +105,7 @@ describe Internal::Event do
           provider_organiser: api_event.provider_organiser,
           provider_target_audience: api_event.provider_target_audience,
           provider_website_url: api_event.provider_website_url,
-        ).except(:type_id, :building)
+        ).except(:type_id, :building, :web_feed_id, :message, :video_url, :is_virtual)
       end
       context "with building" do
         let(:expected_building_attributes) { attributes_for(:event_building_api, id: api_event.building.id) }
@@ -151,7 +151,7 @@ describe Internal::Event do
         provider_organiser: internal_event.provider_organiser,
         provider_target_audience: internal_event.provider_target_audience,
         provider_website_url: internal_event.provider_website_url,
-      ).except(:type_id, :building)
+      ).except(:type_id, :building, :web_feed_id, :message, :video_url, :is_virtual)
     end
     let(:expected_building_attributes) do
       attributes_for(
