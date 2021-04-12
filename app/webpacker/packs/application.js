@@ -1,5 +1,6 @@
 import '@stimulus/polyfills';
 import '../styles/application.scss';
+import 'polyfills/includes.js';
 import 'polyfills/ie11-foreach.js';
 import 'polyfills/ie8.js';
 import 'polyfills/objectFitPolyfill.basic.min.js';
