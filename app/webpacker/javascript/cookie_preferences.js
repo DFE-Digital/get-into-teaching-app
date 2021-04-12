@@ -41,6 +41,7 @@ export default class CookiePreferences {
     const serialized = JSON.stringify(categories);
     Cookies.set(CookiePreferences.cookieName, serialized, {
       expires: CookiePreferences.cookieLifetimeInDays,
+      sameSite: 'Lax',
     });
 
     this.cookieSet = true;
