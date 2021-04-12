@@ -1,10 +1,7 @@
 import '@stimulus/polyfills';
+import "core-js/stable";
+import "regenerator-runtime/runtime";
 import '../styles/application.scss';
-import 'polyfills/includes.js';
-import 'polyfills/ie11-foreach.js';
-import 'polyfills/ie8.js';
-import 'polyfills/objectFitPolyfill.basic.min.js';
-import 'javascript/object_fit.js';
 import Rails from 'rails-ujs';
 import Turbolinks from 'turbolinks';
 
