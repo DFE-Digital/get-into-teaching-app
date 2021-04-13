@@ -1,9 +1,10 @@
 module Internal
   class EventsController < ::InternalController
     layout "internal"
+    before_action :load_pending_events, only: %i[index]
 
     def index
-      @no_results = load_pending_events.blank?
+      @no_results = @events.blank?
     end
 
     def show
