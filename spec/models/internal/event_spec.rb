@@ -203,4 +203,34 @@ describe Internal::Event do
       expect(internal_event.errors["readable_id"].first).to eq(error_message)
     end
   end
+
+  describe "#invalid_with_building?" do
+    let(:event) { build(:internal_event) }
+
+    context "when event is valid" do
+      it "returns false when building is invalid" do
+        allow_any_instance_of(Internal::EventBuilding).to receive(:valid?) { false }
+        expect(event.invalid_with_building?).to be true
+      end
+
+      it "returns true when building is nil" do
+        event.building = nil
+        expect(event.invalid_with_building?).to be false
+      end
+
+      it "returns false when building is valid" do
+        allow_any_instance_of(Internal::EventBuilding).to receive(:valid?) { true }
+        expect(event.invalid_with_building?).to be false
+      end
+    end
+
+    context "when event is invalid" do
+      let(:invalid_event) { build(:internal_event) }
+
+      it "returns true" do
+        allow_any_instance_of(described_class).to receive(:valid?) { false }
+        expect(event.invalid_with_building?).to be true
+      end
+    end
+  end
 end

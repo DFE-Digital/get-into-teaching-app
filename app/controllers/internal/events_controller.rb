@@ -49,16 +49,11 @@ module Internal
   private
 
     def submit_pending
-      return if invalid?
+      return false if @event.invalid_with_building?
 
       @event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
       api_event = @event.to_api_event
       submit_to_api(api_event)
-    end
-
-    def invalid?
-      invalid_building = @event.building.nil? ? false : @event.building.invalid?
-      (@event.invalid? || invalid_building)
     end
 
     def submit_to_api(body)

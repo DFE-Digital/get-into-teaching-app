@@ -75,6 +75,11 @@ module Internal
       end
     end
 
+    def invalid_with_building?
+      invalid_building = building.nil? ? false : building.invalid?
+      (invalid? || invalid_building)
+    end
+
   private
 
     def end_after_start
