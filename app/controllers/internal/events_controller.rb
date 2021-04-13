@@ -24,6 +24,8 @@ module Internal
     end
 
     def approve
+      render json: { error: "forbidden" }, status: :forbidden and return unless publisher?
+
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:format])
       api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
       submit_to_api(api_event)

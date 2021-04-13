@@ -277,7 +277,7 @@ describe Internal::EventsController do
   end
 
   describe "#approve" do
-    context "when any user type" do
+    context "when publisher user type" do
       let(:event) { pending_event }
       let(:expected_request_body) do
         build(:event_api,
@@ -317,7 +317,7 @@ describe Internal::EventsController do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           put internal_approve_path,
-              headers: generate_auth_headers(:author),
+              headers: generate_auth_headers(:publisher),
               params: params
 
           expect(response).to redirect_to(internal_events_path(success: true))
@@ -339,11 +339,22 @@ describe Internal::EventsController do
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
           put internal_approve_path,
-              headers: generate_auth_headers(:author),
+              headers: generate_auth_headers(:publisher),
               params: params
 
           expect(response).to redirect_to(internal_events_path(success: true))
         end
+      end
+    end
+
+    context "when author user type" do
+      it "responds with forbidden" do
+        expected_response_body = { error: "forbidden" }.to_json
+
+        put internal_approve_path, headers: generate_auth_headers(:author)
+
+        assert_response :forbidden
+        expect(response.body).to eq expected_response_body
       end
     end
   end
