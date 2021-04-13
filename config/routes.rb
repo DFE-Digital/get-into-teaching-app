@@ -21,7 +21,7 @@ Rails.application.routes.draw do
     redirect_rules.each { |from, to| get from, to: redirect(path: to) }
   end
 
-  if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production?
+  if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production? || Rails.env.pagespeed?
     get "/assets/*missing", to: "errors#not_found", via: :all
   end
 
