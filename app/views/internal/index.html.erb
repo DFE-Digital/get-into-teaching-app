@@ -1,9 +1,9 @@
 <div class="markdown">
-  <% if params[:success] %>
+  <% if @success %>
     <div class="govuk-panel govuk-panel--confirmation">
       <h1 class="govuk-panel__title">
         Event submitted
-        <% if params[:success] == "pending" %>
+        <% if @pending %>
           for review
         <% end %>
       </h1>
