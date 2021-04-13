@@ -47,14 +47,4 @@ on_worker_boot do
     # Re-open appenders after forking the process
     SemanticLogger.reopen
   end
-
-  if Rails.env.pagespeed?
-    require "page_speed_score"
-
-    sitemap_url = "https://getintoteaching.education.gov.uk/sitemap.xml"
-    page_speed_score = PageSpeedScore.new(sitemap_url)
-    page_speed_score.fetch
-
-    PageSpeedScore.publish
-  end
 end

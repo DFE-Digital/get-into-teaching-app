@@ -25,6 +25,18 @@ Rails.application.routes.draw do
     get "/assets/*missing", to: "errors#not_found", via: :all
   end
 
+  post "/pagespeed/run", constraints: -> { Rails.env.pagespeed? }, to: proc { |_env|
+    require "page_speed_score"
+
+    sitemap_url = "https://getintoteaching.education.gov.uk/sitemap.xml"
+    page_speed_score = PageSpeedScore.new(sitemap_url)
+    page_speed_score.fetch
+
+    PageSpeedScore.publish
+
+    [204, {}, []]
+  }
+
   namespace :internal do
     resources :events, only: %i[index]
   end
