@@ -6,6 +6,9 @@ module Internal
 
     def index
       @no_results = @events.blank?
+
+      @success = params[:success]
+      @pending = params[:success] == "pending"
     end
 
     def show
@@ -49,7 +52,7 @@ module Internal
       return if invalid?
 
       @event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
-      api_event = @event.map_to_api_event
+      api_event = @event.to_api_event
       submit_to_api(api_event)
     end
 
