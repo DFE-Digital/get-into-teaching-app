@@ -38,7 +38,8 @@ Rails.application.routes.draw do
   }
 
   namespace :internal do
-    resources :events, only: %i[index show]
+    resources :events, only: %i[index show new create edit]
+    put "/approve", to: "events#approve"
   end
 
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
