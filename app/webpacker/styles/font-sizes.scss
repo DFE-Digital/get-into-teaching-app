@@ -1,6 +1,6 @@
 html {
-  @include mq($until: mobile) { font-size: 80%; }
-  @include mq($from: mobile, $until: tablet) { font-size: 90%; }
+  @include mq($until: mobile) { font-size: 85%; }
+  @include mq($from: mobile, $until: tablet) { font-size: 92%; }
   @include mq($from: tablet) { font-size: 100%; }
 }
 
