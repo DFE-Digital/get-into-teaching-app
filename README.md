@@ -143,6 +143,7 @@ The application has 2 extra Rails environments, in addition to the default 3.
 3. `production` - the 'live' production copy of the application
 4. `rolling` - 'production-like' - continuously delivered, reflects current master
 5. `preprod` - 'production-like' - stage before release to final production
+6. `pagespeed` - 'production-like' - pipes page speed metrics to Prometheus on boot
 
 **NOTE:** It is **important** if checking for the production environment to also 
 check for other 'production-like' environments unless you really intend to only

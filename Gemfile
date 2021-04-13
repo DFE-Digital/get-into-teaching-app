@@ -100,7 +100,7 @@ group :test do
   gem "webmock"
 end
 
-group :rolling, :preprod, :userresearch, :production do
+group :rolling, :preprod, :userresearch, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"
