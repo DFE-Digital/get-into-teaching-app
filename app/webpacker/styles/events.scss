@@ -62,7 +62,7 @@
 
     &__heading {
       > h3 {
-        font-size: size("medium");
+        @include font-size("medium");
         margin: 0 0 $indent-amount 0;
         line-height: 1.25;
       }
@@ -110,7 +110,7 @@
 
       @mixin pagination-item {
         font-weight: bold;
-        font-size: size("xsmall");
+        @include font-size("xsmall");
         padding: .8em;
         text-decoration: none;
         margin: 1em 0;

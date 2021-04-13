@@ -79,12 +79,12 @@ section.container {
 
     h1 {
 
-      font-size: size(xxlarge);
+      @include font-size(xxlarge);
       margin-bottom: 3rem;
     }
 
     span.caption {
-      font-size: size(medium);
+      @include font-size(medium);
       margin-top: 3em;
       color: $grey-dark;
     }

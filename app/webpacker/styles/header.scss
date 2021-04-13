@@ -32,13 +32,13 @@
     li {
       padding: 8px 16px;
       @include font;
-      font-size: size("xsmall");
+      @include font-size("xsmall");
       font-weight: bold;
       line-height: 1;
 
       a {
         @include font;
-        font-size: size("xsmall");
+        @include font-size("xsmall");
         display: block;
         text-decoration: none;
         font-weight: bold;
@@ -127,12 +127,12 @@
     .icon-hamburger-label {
       color: $black;
       font-weight: bold;
-      font-size: size("xsmall");
+      @include font-size("xsmall");
       letter-spacing: 0;
     }
 
     &__links {
-      font-size: size("xsmall");
+      @include font-size("xsmall");
       padding: 1px;
       background-color: $grey;
       width: 100%;
@@ -241,7 +241,7 @@
 
 .covid {
   @include font;
-  font-size: size("xsmall");
+  @include font-size("xsmall");
   line-height: 1.25;
   background-color: $black;
   color: $white;
@@ -254,7 +254,7 @@
   }
 
   p {
-    font-size: size("xsmall");
+    @include font-size("xsmall");
     line-height: 1.25;
     margin: 0 0 10px;
 

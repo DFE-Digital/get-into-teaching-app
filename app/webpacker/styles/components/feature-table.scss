@@ -1,6 +1,6 @@
 .feature-table {
   dl {
-    font-size: size("small");
+    @include font-size("small");
     background-color: $grey;
     width: 100%;
     padding: $indent-amount;

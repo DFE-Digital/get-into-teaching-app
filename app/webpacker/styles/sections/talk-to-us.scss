@@ -39,7 +39,7 @@
         }
 
         &__heading {
-          font-size: size("medium");
+          @include font-size("medium");
           margin: .5em 0;
         }
       }

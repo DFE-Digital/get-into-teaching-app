@@ -47,7 +47,7 @@ $space-between-sections: 3.7em;
     padding: 1em;
 
     h3 {
-      font-size: size('small');
+      @include font-size('small');
       margin: .2em auto .1em;
     }
 
@@ -57,7 +57,7 @@ $space-between-sections: 3.7em;
 
       li > a {
         @include suppress-external-link-icon;
-        font-size: size('xsmall');
+        @include font-size('xsmall');
         color: $black;
         line-height: 1.8em;
         text-underline-offset: .2em;
@@ -71,12 +71,12 @@ $space-between-sections: 3.7em;
     }
 
     p {
-      font-size: size('xsmall');
+      @include font-size('xsmall');
     }
   }
 
   &__icon {
     // placeholders for now
-    font-size: size('xlarge');
+    @include font-size('xlarge');
   }
 }

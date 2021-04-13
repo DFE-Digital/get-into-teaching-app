@@ -1,6 +1,6 @@
 select,
 input {
-  font-size: size("small");
+  @include font-size("small");
   margin-left: $indent-amount;
   margin-right: $indent-amount;
   border: 2px solid $black;
@@ -25,7 +25,7 @@ form {
   .fieldlabel,
   .govuk-label,
   h3.govuk-fieldset__heading {
-    font-size: size("small");
+    @include font-size("small");
     color: $black;
     font-weight: bold;
   }

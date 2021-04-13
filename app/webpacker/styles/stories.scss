@@ -15,7 +15,7 @@
 
   &__header {
     h2 {
-      font-size: size("large");
+      @include font-size("large");
       background-color: inherit;
       color: $black;
       padding: .2em 0;
@@ -69,11 +69,11 @@
     }
 
     h2 {
-      font-size: size("medium");
+      @include font-size("medium");
     }
 
     .stories-feature__subheading {
-      font-size: size("small");
+      @include font-size("small");
       font-weight: bold;
     }
   }
@@ -85,7 +85,7 @@
 
 .story {
   h1 {
-    font-size: size("xlarge");
+    @include font-size("xlarge");
   }
 
   .story__header {
@@ -104,7 +104,7 @@
 
     &__label {
       h2 {
-        font-size: size("large");
+        @include font-size("large");
         border-bottom: none;
         padding: 0 $indent-amount;
         margin: 0;
@@ -174,7 +174,7 @@
         margin: 0;
 
         @include mq($until: desktop) {
-          font-size: size("xsmall");
+          @include font-size("xsmall");
         }
       }
     }

@@ -12,7 +12,7 @@
   }
 
   h1 {
-    font-size: size('xxlarge');
+    @include font-size('xxlarge');
   }
 
   // allow level two headings (blue boxes) and CTAs to 'overhang' on the left
@@ -43,11 +43,11 @@
   }
 
   h3 {
-    font-size: size(medium);
+    @include font-size(medium);
   }
 
   h4 {
-    font-size: size(small);
+    @include font-size(small);
   }
 
   // stop the external icon from appearing inside CTA 'button' style links

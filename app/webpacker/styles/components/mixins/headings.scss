@@ -4,7 +4,7 @@
   margin-bottom: .2rem;
   padding: .4rem $indent-amount;
   background: $blue;
-  font-size: size("medium");
+  @include font-size("medium");
   font-weight: 700;
   box-sizing: border-box;
   max-width: calc(100% - 1.25rem);
@@ -23,11 +23,11 @@
   }
 
   &.small {
-    font-size: size("small");
+    @include font-size("small");
   }
 
   @include mq($from: tablet) {
-    font-size: size("large");
+    @include font-size("large");
 
     &:not(.always-indent) {
       margin-right: 0;
