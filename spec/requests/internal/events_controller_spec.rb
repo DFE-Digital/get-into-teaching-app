@@ -302,7 +302,7 @@ describe Internal::EventsController do
       end
 
       context "when event has no building" do
-        let(:params) { { "format": event.id } }
+        let(:params) { { "id": event.id } }
 
         it "should post the event with event status open" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
@@ -325,7 +325,7 @@ describe Internal::EventsController do
       end
 
       context "when event has a building" do
-        let(:params) { { "format": event.id } }
+        let(:params) { { "id": event.id } }
 
         it "should post the event with event status open" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)

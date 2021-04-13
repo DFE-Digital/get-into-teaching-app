@@ -21,12 +21,15 @@ RSpec.feature "Internal section", type: :feature do
 
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi).to \
       receive(:get_teaching_event_buildings) { [] }
-  end
 
-  scenario "Submit a new form" do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:upsert_teaching_event) { [] }
 
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      receive(:get_teaching_event) { event }
+  end
+
+  scenario "Submit a new form" do
     navigate_to_new_submission
 
     enter_valid_event_details
@@ -36,12 +39,6 @@ RSpec.feature "Internal section", type: :feature do
   end
 
   scenario "Edit a pending event with no building" do
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:upsert_teaching_event) { [] }
-
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:get_teaching_event) { event }
-
     event.building = nil
 
     navigate_to_edit_form
@@ -53,24 +50,12 @@ RSpec.feature "Internal section", type: :feature do
   end
 
   scenario "Edit a pending event with building" do
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:upsert_teaching_event) { [] }
-
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:get_teaching_event) { event }
-
     navigate_to_edit_form
 
     expect(page).to have_checked_field("Search existing venues")
   end
 
   scenario "Final submit" do
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:upsert_teaching_event) { [] }
-
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:get_teaching_event) { event }
-
     visit internal_events_path
     expect(page).to have_text "Pending Provider Events"
 
@@ -83,9 +68,6 @@ RSpec.feature "Internal section", type: :feature do
 
   describe "validations" do
     scenario "There are validation errors on event and building" do
-      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:upsert_teaching_event) { [] }
-
       navigate_to_new_submission
 
       fill_in "internal_event[start_at]", with: 1.day.ago
@@ -102,9 +84,6 @@ RSpec.feature "Internal section", type: :feature do
     end
 
     scenario "There are validation errors on building only" do
-      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:upsert_teaching_event) { [] }
-
       navigate_to_new_submission
 
       enter_valid_event_details
@@ -121,9 +100,6 @@ RSpec.feature "Internal section", type: :feature do
     end
 
     scenario "There are validation errors on event only" do
-      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:upsert_teaching_event) { [] }
-
       navigate_to_new_submission
 
       choose "Add a new venue"
