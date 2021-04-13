@@ -1,11 +1,11 @@
 require "rails_helper"
 
-describe ApiModelConvertable do
+describe ApiModelConvertible do
   let(:testing_model) do
     Class.new do
       include ActiveModel::Model
       include ActiveModel::Attributes
-      include ApiModelConvertable
+      include ApiModelConvertible
 
       attribute :type_id
       attribute :status_id

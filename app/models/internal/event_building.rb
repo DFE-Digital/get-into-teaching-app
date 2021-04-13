@@ -2,7 +2,7 @@ module Internal
   class EventBuilding
     include ActiveModel::Model
     include ActiveModel::Attributes
-    include ApiModelConvertable
+    include ApiModelConvertible
 
     attribute :id, :string
     attribute :venue, :string

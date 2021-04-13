@@ -2,7 +2,7 @@ module Internal
   class Event
     include ActiveModel::Model
     include ActiveModel::Attributes
-    include ApiModelConvertable
+    include ApiModelConvertible
 
     VENUE_TYPES = { add: "add", existing: "existing", none: "none" }.freeze
 

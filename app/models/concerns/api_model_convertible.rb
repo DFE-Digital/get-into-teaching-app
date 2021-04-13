@@ -1,4 +1,4 @@
-module ApiModelConvertable
+module ApiModelConvertible
   extend ActiveSupport::Concern
 
   included do
