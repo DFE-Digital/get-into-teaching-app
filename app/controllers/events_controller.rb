@@ -25,7 +25,7 @@ class EventsController < ApplicationController
 
   def show
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-    raise_not_found if @event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+    raise_not_found if @event.status_id == pending_event_status_id
 
     @page_title = @event.name
     @front_matter = { "description" => @event.summary }
@@ -79,5 +79,9 @@ private
 
     (params[Events::Search.model_name.param_key] || defaults)
       .permit(:type, :distance, :postcode, :month)
+  end
+
+  def pending_event_status_id
+    GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
   end
 end
