@@ -6,6 +6,6 @@ $mq-breakpoints: (
   wide: 1500px,
 );
 $mq-static-breakpoint: desktop;
-$max-content-width: 2000px;
+$page-max-width: 2000px;
 
 @import 'sass-mq';
