@@ -138,7 +138,7 @@ RSpec.feature "Internal section", type: :feature do
     end
   end
 
-  private
+private
 
   def navigate_to_new_submission
     visit internal_events_path
