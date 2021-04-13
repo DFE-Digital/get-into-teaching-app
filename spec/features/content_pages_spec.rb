@@ -34,7 +34,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
       scenario "the internal images exist" do
         document
           .css("img")
-          .map { |img| img["src"] }
+          .map { |img| img["data-src"] || img["src"] }
           .reject { |src| src.start_with?("http") }
           .uniq
           .each do |src|
