@@ -1,0 +1,23 @@
+@import "~govuk-frontend/govuk/all";
+@import "~trix";
+
+.event-description {
+  resize: vertical;
+  overflow: auto;
+}
+
+.notification-button {
+  margin: 0 30px 30px 0;
+}
+
+.pending-title {
+  padding-top: 30px;
+}
+
+.pending-no-results {
+  margin: 3em;
+}
+
+.no-left-margin {
+  margin-left: 0;
+}
