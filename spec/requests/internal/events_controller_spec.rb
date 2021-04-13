@@ -1,21 +1,15 @@
 require "rails_helper"
 
 describe Internal::EventsController do
-  let(:types) { Events::Search.available_event_type_ids }
-  let(:events) do
-    2.times.collect do |index|
-      start_at = Time.zone.today.at_end_of_month - index.days
-      type_id = types[index % types.count]
-      build(:event_api, :with_provider_info, name: "Event #{index + 1}", start_at: start_at, type_id: type_id)
-    end
+  let(:pending_event) do
+    build(:event_api,
+          name: "Pending event",
+          status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
+          type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"])
   end
-  let(:events_by_type) { group_events_by_type(events) }
-  let(:provider_events_by_type) { group_events_by_type([events[0]]) }
-
-  before do
-    events[0].status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
-    events[0].type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
-  end
+  let(:open_event) { build(:event_api, name: "Open event") }
+  let(:events) { [pending_event, open_event] }
+  let(:provider_events_by_type) { group_events_by_type([pending_event]) }
 
   describe "#index" do
     context "when any user type" do
@@ -42,8 +36,8 @@ describe Internal::EventsController do
         it "shows pending events" do
           assert_response :success
           expect(response.body).not_to include("No pending events")
-          expect(response.body).to include("<h4>Event 1</h4>")
-          expect(response.body).not_to include("<h4>Event 2</h4>")
+          expect(response.body).to include("<h4>Pending event</h4>")
+          expect(response.body).not_to include("<h4>Open event</h4>")
         end
       end
     end
@@ -61,7 +55,7 @@ describe Internal::EventsController do
         end
         it "shows pending events" do
           assert_response :success
-          expect(response.body).to include("<h1>Event 1</h1>")
+          expect(response.body).to include("<h1>Pending event</h1>")
         end
       end
 
