@@ -26,7 +26,7 @@ Rails.application.routes.draw do
   end
 
   namespace :internal do
-    resources :events, only: %i[index]
+    resources :events, only: %i[index show]
   end
 
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
