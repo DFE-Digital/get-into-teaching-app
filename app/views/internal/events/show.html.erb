@@ -17,7 +17,7 @@
                       class: "button notification-button" %>
         <% if publisher? %>
           <%= button_to "Submit this provider event",
-                        internal_approve_path(@event.readable_id), method: :put,
+                        internal_approve_path, params: { id: @event.readable_id }, method: :put,
                         class: "button notification-button" %>
         <% end %>
       </p>
