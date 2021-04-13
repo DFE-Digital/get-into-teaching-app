@@ -23,4 +23,4 @@ jobs:
         method: 'POST'
         username: ${{ secrets.HTTP-USERNAME }}
         password: ${{ secrets.HTTP-PASSWORD }}
-        timeout: 1800000 # 30 minutes in ms
+        timeout: 3600000 # 1hr in ms
