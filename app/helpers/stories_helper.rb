@@ -18,6 +18,7 @@ module StoriesHelper
       allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
       allowfullscreen: true,
       class: "story__video",
+      loading: "lazy",
     )
   end
 
