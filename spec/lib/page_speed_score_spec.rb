@@ -13,60 +13,21 @@ describe PageSpeedScore do
 
   describe "#fetch" do
     let(:sitemap_xml) { file_fixture("sitemap.xml").read }
-    let(:expected_metrics) { {} }
+    let(:prometheus) { Prometheus::Client.registry }
 
     before do
       expect(Rails.application.credentials).to \
         receive(:page_speed_insights_key) { "12345" }
     end
 
-    it "retrieves the scores for each page/strategy combination and caches them in Redis" do
+    it "retrieves the scores for each page/strategy combination and sends them to prometheus" do
       stub_request(:get, "https://example.com/sitemap.xml")
         .to_return(status: 200, body: sitemap_xml)
 
       expect_page_scores("page1")
       expect_page_scores("page2")
 
-      expect(Redis.current).to receive(:set)
-        .with("app_page_speed_metrics", expected_metrics.to_json)
-
       subject.fetch
-
-      expect(subject.metrics).to eq(expected_metrics)
-    end
-  end
-
-  describe ".publish" do
-    context "when there are no scores to publish" do
-      before do
-        expect(Redis.current).to receive(:get).with(described_class::REDIS_KEY) { nil }
-      end
-
-      it "does not call Prometheus" do
-        expect(Prometheus::Client).to_not receive(:registry)
-        described_class.publish
-      end
-    end
-
-    context "when there are scores to publish" do
-      let(:prometheus) { Prometheus::Client.registry }
-      let(:test_metrics) do
-        {
-          "app_page_speed_score_seo" => [
-            { score: 56, labels: { strategy: "mobile", path: "/test/page" } },
-          ],
-        }
-      end
-
-      it "deletes from Redis then sends the scores to Prometheus" do
-        expect(Redis.current).to receive(:get).with(described_class::REDIS_KEY) { test_metrics.to_json }
-        expect(Redis.current).to receive(:del).with(described_class::REDIS_KEY)
-
-        metric = prometheus.get(:app_page_speed_score_seo)
-        expect(metric).to receive(:set).with(56, labels: { strategy: "mobile", path: "/test/page" }).once
-
-        described_class.publish
-      end
     end
   end
 end
@@ -75,15 +36,14 @@ def expect_page_scores(page)
   described_class::STRATEGIES.each do |strategy|
     scores = { performance: rand(100), accessibility: rand(100), seo: rand(100) }
     expect_page_speed_score_request(page, strategy, scores)
-    update_expected_metrics(page, strategy, scores)
+    expect_metric_set(page, strategy, scores)
   end
 end
 
-def update_expected_metrics(page, strategy, scores)
+def expect_metric_set(page, strategy, scores)
   scores.each do |category, score|
-    key = "app_page_speed_score_#{category}".to_sym
-    expected_metrics[key] ||= []
-    expected_metrics[key] << { score: score, labels: { strategy: strategy, path: "/#{page}" } }
+    metric = prometheus.get("app_page_speed_score_#{category}".to_sym)
+    expect(metric).to receive(:set).with(score, labels: { strategy: strategy, path: "/#{page}" })
   end
 end
 

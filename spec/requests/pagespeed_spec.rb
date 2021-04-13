@@ -19,7 +19,6 @@ describe "Page Speed Task" do
 
     before do
       expect_any_instance_of(PageSpeedScore).to receive(:fetch)
-      expect(PageSpeedScore).to receive(:publish)
     end
 
     it "returns 204" do

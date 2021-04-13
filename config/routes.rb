@@ -32,8 +32,6 @@ Rails.application.routes.draw do
     page_speed_score = PageSpeedScore.new(sitemap_url)
     page_speed_score.fetch
 
-    PageSpeedScore.publish
-
     [204, {}, []]
   }
 

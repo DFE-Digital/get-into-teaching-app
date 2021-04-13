@@ -3,16 +3,13 @@ require "prometheus/client/push"
 
 class PageSpeedScore
   attr_reader :sitemap_url
-  attr_reader :metrics
 
-  REDIS_KEY = "app_page_speed_metrics".freeze
   STRATEGIES = %w[mobile desktop].freeze
   CATEGORIES = %w[performance accessibility seo].freeze
   FIELDS = "lighthouse_result(categories(seo/score,performance/score,accessibility/score))".freeze
 
   def initialize(sitemap_url)
     @sitemap_url = sitemap_url
-    @metrics = {}
   end
 
   def fetch
@@ -20,25 +17,6 @@ class PageSpeedScore
       options = default_options.merge!({ strategy: strategy })
       result = service.runpagespeed_pagespeedapi(url, options)
       record_metrics(result, url, strategy)
-    end
-
-    Redis.current.set(REDIS_KEY, metrics.to_json)
-  end
-
-  class << self
-    def publish
-      scores = Redis.current.get(PageSpeedScore::REDIS_KEY)
-
-      return if scores.blank?
-
-      Redis.current.del(PageSpeedScore::REDIS_KEY)
-
-      prometheus = Prometheus::Client.registry
-
-      JSON.parse(scores, symbolize_names: true).each do |metric_key, values|
-        metric = prometheus.get(metric_key)
-        values.each { |v| metric.set(v[:score], labels: v[:labels]) }
-      end
     end
   end
 
@@ -50,9 +28,13 @@ private
 
     CATEGORIES.each do |category|
       key = "app_page_speed_score_#{category}".to_sym
-      metrics[key] ||= []
-      metrics[key] << { score: categories.send(category).score, labels: { strategy: strategy, path: path } }
+      metric = prometheus.get(key)
+      metric.set(categories.send(category).score, labels: { strategy: strategy, path: path })
     end
+  end
+
+  def prometheus
+    @prometheus ||= Prometheus::Client.registry
   end
 
   def default_options
