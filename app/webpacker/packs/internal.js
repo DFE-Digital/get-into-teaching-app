@@ -4,6 +4,7 @@ import 'trix';
 
 initAll();
 
+// Needed for GovUK JavaScript
 document.body.className = document.body.className
   ? document.body.className + ' js-enabled'
   : 'js-enabled';
