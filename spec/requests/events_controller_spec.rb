@@ -200,6 +200,12 @@ describe EventsController do
           it { is_expected.not_to match(%r{Sign up for this}) }
         end
 
+        context "when the event is a 'Pending event'" do
+          let(:event) { build(:event_api, web_feed_id: nil, status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]) }
+
+          it { expect(response).to have_http_status :not_found }
+        end
+
         it "has a meta description" do
           actual_description = parsed_response.at_css("head meta[name='description']")["content"]
 

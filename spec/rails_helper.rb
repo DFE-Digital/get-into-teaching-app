@@ -72,6 +72,7 @@ RSpec.configure do |config|
   config.include ViewComponent::TestHelpers, type: :component
   config.include ActiveSupport::Testing::TimeHelpers
   config.include SpecHelpers::Events
+  config.include SpecHelpers::Internal
 end
 
 Shoulda::Matchers.configure do |config|

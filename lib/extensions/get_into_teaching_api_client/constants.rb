@@ -17,6 +17,7 @@ module GetIntoTeachingApiClient
       {
         "Open" => 222_750_000,
         "Closed" => 222_750_001,
+        "Pending" => 222_750_003,
       }.freeze
 
     # This is not a complete list.
