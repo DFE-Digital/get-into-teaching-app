@@ -21,3 +21,6 @@ DevOps:
 
 Docker:
   - Dockerfile 
+
+Rails:
+  - get-into-teaching-app/.env.*
