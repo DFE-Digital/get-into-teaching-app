@@ -12,6 +12,10 @@
 
   <h1 class="pending-title">Pending Provider Events</h1>
 
+  <%= button_to "Submit a provider event for review",
+                new_internal_event_path, method: :get,
+                class: "button submit-button no-left-margin" %>
+
   <% if @no_results %>
     <div class="pending-no-results">
       <%= render(Events::NoResultsComponent.new) do %>
