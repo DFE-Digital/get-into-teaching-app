@@ -78,8 +78,8 @@
       }
     }
 
-    tbody {
-      font-size: size("xsmall");
+    tbody td {
+      @include font-size("xsmall");
     }
   }
 
