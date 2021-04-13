@@ -11,10 +11,21 @@
   &__icon {
     background-color: $yellow;
     padding: 1em;
+
+    @include mq($until: mobile) {
+      width: 25px;
+      height: 25px;
+    }
+
+    @include mq($from: mobile, $until: tablet) {
+      width: 35px;
+      height: 35px;
+    }
   }
 
   &__photo {
-    > picture img, > img {
+    > picture img,
+    > img {
       width: 8em;
     }
   }
