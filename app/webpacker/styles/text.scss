@@ -27,7 +27,8 @@ h4 {
   @include font-size("small");
 }
 
-p {
+p,
+ul {
   @include font;
   @include font-size("small");
   line-height: 1.5;
