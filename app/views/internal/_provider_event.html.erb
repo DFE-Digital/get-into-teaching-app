@@ -1,0 +1,3 @@
+<%= link_to internal_event_path(id: provider_event.readable_id), class: "events-featured__list__item" do %>
+  <%= render(Events::EventBoxComponent.new(provider_event)) %>
+<% end %>
