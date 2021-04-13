@@ -17,21 +17,21 @@ module Internal
   private
 
     def load_pending_events
-      opts = {
-        type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-        status_ids: [pending_event_status_id],
-        quantity_per_type: 1_000,
-      }
-
       search_results = GetIntoTeachingApiClient::TeachingEventsApi
                          .new
-                         .search_teaching_events_grouped_by_type(opts)
+                         .search_teaching_events_grouped_by_type(events_search_params)
 
       @group_presenter = Events::GroupPresenter.new(search_results)
       @events = @group_presenter.paginated_events_of_type(
         GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
         params[:page],
       )
+    end
+
+    def events_search_params
+      { type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+        status_ids: [pending_event_status_id],
+        quantity_per_type: 1_000 }
     end
 
     def pending_event_status_id
