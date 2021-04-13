@@ -7,12 +7,7 @@ describe Internal do
   end
 
   it "should reject unauthenticated users" do
-    authorization = ActionController::HttpAuthentication::Basic.encode_credentials(
-      "wrong",
-      "wrong",
-    )
-
-    get internal_events_path, headers: { "HTTP_AUTHORIZATION" => authorization }
+    get internal_events_path, headers: generate_auth_headers(:bad_credentials)
 
     assert_response :unauthorized
   end
@@ -24,26 +19,16 @@ describe Internal do
   end
 
   it "should set the account role of publishers" do
-    authorization = ActionController::HttpAuthentication::Basic.encode_credentials(
-      ENV["PUBLISHER_USERNAME"],
-      ENV["PUBLISHER_PASSWORD"],
-    )
+    get internal_events_path, headers: generate_auth_headers(:publisher)
 
-    get internal_events_path, headers: { "HTTP_AUTHORIZATION" => authorization }
-
-    assert_response 200
+    assert_response :success
     expect(session[:role]).to be(:publisher)
   end
 
   it "should set the account role of authors" do
-    authorization = ActionController::HttpAuthentication::Basic.encode_credentials(
-      ENV["AUTHOR_USERNAME"],
-      ENV["AUTHOR_PASSWORD"],
-    )
+    get internal_events_path, headers: generate_auth_headers(:author)
 
-    get internal_events_path, headers: { "HTTP_AUTHORIZATION" => authorization }
-
-    assert_response 200
+    assert_response :success
     expect(session[:role]).to be(:author)
   end
 end

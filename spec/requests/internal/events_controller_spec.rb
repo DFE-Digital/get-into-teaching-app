@@ -79,22 +79,4 @@ describe Internal::EventsController do
       end
     end
   end
-
-private
-
-  def generate_auth_headers(user_type)
-    if user_type == :publisher
-      username = ENV["PUBLISHER_USERNAME"]
-      password = ENV["PUBLISHER_PASSWORD"]
-    elsif user_type == :author
-      username = ENV["AUTHOR_USERNAME"]
-      password = ENV["AUTHOR_PASSWORD"]
-    end
-
-    { "HTTP_AUTHORIZATION" =>
-        ActionController::HttpAuthentication::Basic.encode_credentials(
-          username,
-          password,
-        ) }
-  end
 end
