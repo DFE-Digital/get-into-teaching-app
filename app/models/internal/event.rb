@@ -97,8 +97,8 @@ module Internal
         .new.get_teaching_event_buildings
     end
 
-    def valid?(context = nil)
-      super && (building.nil? || building.valid?)
+    def invalid?
+      super | (building.present? && building.invalid?)
     end
 
   private
