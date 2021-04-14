@@ -1,5 +1,5 @@
 class Acronyms
-  ABBR_REGEXP = %r{\b([A-Z][A-Z]+)\b}.freeze
+  ABBR_REGEXP = %r{(?<!\()\b([A-Z][A-Z]+)\b(?![\w\s]*[)])}.freeze
 
   def initialize(content, acronyms)
     @document = parse_html(content)
