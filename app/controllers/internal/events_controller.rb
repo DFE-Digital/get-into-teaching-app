@@ -1,8 +1,8 @@
 module Internal
   class EventsController < ::InternalController
     layout "internal"
-    before_action :load_buildings, only: %i[new edit create]
     before_action :load_pending_events, only: %i[index]
+    before_action :authorize_publisher, only: %i[approve]
 
     def index
       @no_results = @events.blank?
@@ -24,18 +24,15 @@ module Internal
     end
 
     def approve
-      render json: { error: "forbidden" }, status: :forbidden and return unless publisher?
-
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
       api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
-      submit_to_api(api_event)
+      GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       redirect_to internal_events_path(success: true)
     end
 
     def create
       @event = Event.new(event_params)
-      @event.building = format_building(event_params)
-      if submit_pending
+      if @event.save
         redirect_to internal_events_path(success: :pending)
       else
         render action: :new
@@ -50,38 +47,8 @@ module Internal
 
   private
 
-    def submit_pending
-      return false if @event.invalid_with_building?
-
-      @event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
-      api_event = @event.to_api_event
-      submit_to_api(api_event)
-    end
-
-    def submit_to_api(body)
-      GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(body)
-      true
-    rescue GetIntoTeachingApiClient::ApiError => e
-      @event.map_api_errors_to_attributes(e) if e.code == 400
-      false
-    end
-
-    def format_building(event_params)
-      if event_params[:venue_type] == Event::VENUE_TYPES[:existing] && event_params[:building][:id].present?
-        api_building = @buildings.find { |b| b.id == event_params[:building][:id] }
-        return EventBuilding.initialize_with_api_building(api_building)
-      end
-      if event_params[:venue_type] == Event::VENUE_TYPES[:add]
-        building = event_params[:building].to_hash
-        building[:id] = nil # Id may be present on hidden field from previous selection
-        return EventBuilding.new(building)
-      end
-      nil
-    end
-
-    def load_buildings
-      @buildings = GetIntoTeachingApiClient::TeachingEventBuildingsApi
-                     .new.get_teaching_event_buildings
+    def authorize_publisher
+      render_forbidden unless publisher?
     end
 
     def load_pending_events
@@ -97,9 +64,11 @@ module Internal
     end
 
     def events_search_params
-      { type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+      {
+        type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
         status_ids: [pending_event_status_id],
-        quantity_per_type: 1_000 }
+        quantity_per_type: 1_000,
+      }
     end
 
     def pending_event_status_id

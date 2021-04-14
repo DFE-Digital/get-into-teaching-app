@@ -43,7 +43,7 @@
         <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:none], label: { text: 'No venue' } %>
         <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:existing], label: { text: 'Search existing venues' } do %>
           <%= b.govuk_collection_select :id,
-                                        @buildings,
+                                        f.object.buildings,
                                         :id,
                                         ->(building) { "#{building.venue}, #{building.address_postcode}" },
                                         label: { text: 'Search for existing buildings' },

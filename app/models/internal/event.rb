@@ -8,7 +8,9 @@ module Internal
 
     attribute :id, :string
     attribute :readable_id, :string
-    attribute :status_id, :integer
+    attribute :status_id,
+              :integer,
+              default: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
     attribute :type_id,
               :integer,
               default: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
@@ -48,6 +50,11 @@ module Internal
     end
     validate :end_after_start
 
+    def initialize(attributes = {})
+      super
+      self.building = initialize_building(attributes[:venue_type], attributes[:building] || {})
+    end
+
     def self.initialize_with_api_event(api_event)
       hash = convert_attributes_from_api_model(api_event)
       unless hash["building"].nil?
@@ -69,18 +76,49 @@ module Internal
       id.present?
     end
 
+    def save
+      return false if invalid?
+
+      GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(to_api_event)
+      true
+    rescue GetIntoTeachingApiClient::ApiError => e
+      map_api_errors_to_attributes(e) if e.code == 400
+      false
+    end
+
     def map_api_errors_to_attributes(response)
       JSON.parse(response.response_body)["errors"].each do |key, value|
         errors.add(key.underscore.to_sym, value[0])
       end
     end
 
-    def invalid_with_building?
-      invalid_building = building.nil? ? false : building.invalid?
-      (invalid? || invalid_building)
+    def buildings
+      @buildings ||= GetIntoTeachingApiClient::TeachingEventBuildingsApi
+        .new.get_teaching_event_buildings
+    end
+
+    def valid?(context = nil)
+      super && (building.nil? || building.valid?)
     end
 
   private
+
+    def initialize_building(venue_type, attributes = {})
+      existing_building = venue_type == VENUE_TYPES[:existing] && attributes[:id].present?
+      new_building = venue_type == VENUE_TYPES[:add]
+
+      if existing_building
+        initialize_building_with_id(attributes[:id])
+      elsif new_building
+        # Id may be present on hidden field from previous selection.
+        EventBuilding.new(attributes.merge({ id: nil }).to_hash)
+      end
+    end
+
+    def initialize_building_with_id(id)
+      api_building = buildings.find { |b| b.id == id }
+      EventBuilding.initialize_with_api_building(api_building)
+    end
 
     def end_after_start
       return if end_at.blank? || start_at.blank?
