@@ -65,10 +65,11 @@
           content: "";
           display: block;
           background-image: url('../images/icon-down.svg');
+          background-repeat: no-repeat;
           width: 21px;
-          // height: size("small");
+          height: 21px;
           position: absolute;
-          top: 6px;
+          top: 10px;
           left: 15px;
         }
       }
