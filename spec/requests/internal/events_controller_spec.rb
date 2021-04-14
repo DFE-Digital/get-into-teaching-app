@@ -217,8 +217,7 @@ describe Internal::EventsController do
 
       context "when \"no venue\" is selected" do
         let(:params) do
-          attributes_for :internal_event,
-                         { "venue_type": Internal::Event::VENUE_TYPES[:none] }
+          attributes_for(:internal_event, { "venue_type": Internal::Event::VENUE_TYPES[:none], "building": { "id": "" } })
         end
         it "should post no building" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)

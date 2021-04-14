@@ -50,24 +50,32 @@ module Internal
     end
     validate :end_after_start
 
-    def initialize(attributes = {})
-      super
-      self.building = initialize_building(attributes[:venue_type], attributes[:building] || {})
-    end
-
     def self.initialize_with_api_event(api_event)
       hash = convert_attributes_from_api_model(api_event)
-      unless hash["building"].nil?
-        hash["building"] = EventBuilding.initialize_with_api_building(hash["building"])
-        hash["venue_type"] = VENUE_TYPES[:existing]
+      new(hash).tap do |event|
+        if api_event.building.present?
+          event.building = EventBuilding.initialize_with_api_building(api_event.building)
+          event.venue_type = VENUE_TYPES[:existing]
+        else
+          event.venue_type = VENUE_TYPES[:none]
+        end
       end
-      new(hash)
+    end
+
+    def assign_building(building_params)
+      id = building_params[:id]
+
+      if venue_type == VENUE_TYPES[:existing] && id.present?
+        api_building = buildings.find { |b| b.id == id }
+        self.building = EventBuilding.initialize_with_api_building(api_building)
+      elsif venue_type == VENUE_TYPES[:add]
+        self.building = EventBuilding.new(building_params.except(:id))
+      end
     end
 
     def to_api_event
       hash = convert_attributes_for_api_model
       api_event = GetIntoTeachingApiClient::TeachingEvent.new(hash)
-
       api_event.building = building.to_api_building if building.present?
       api_event
     end
@@ -86,38 +94,22 @@ module Internal
       false
     end
 
-    def map_api_errors_to_attributes(response)
-      JSON.parse(response.response_body)["errors"].each do |key, value|
-        errors.add(key.underscore.to_sym, value[0])
-      end
-    end
-
     def buildings
       @buildings ||= GetIntoTeachingApiClient::TeachingEventBuildingsApi
-        .new.get_teaching_event_buildings
+                       .new.get_teaching_event_buildings
     end
 
     def invalid?
-      super | (building.present? && building.invalid?)
+      invalid_building = building.present? && building.invalid?
+      super || invalid_building
     end
 
   private
 
-    def initialize_building(venue_type, attributes = {})
-      existing_building = venue_type == VENUE_TYPES[:existing] && attributes[:id].present?
-      new_building = venue_type == VENUE_TYPES[:add]
-
-      if existing_building
-        initialize_building_with_id(attributes[:id])
-      elsif new_building
-        # Id may be present on hidden field from previous selection.
-        EventBuilding.new(attributes.merge({ id: nil }).to_hash)
+    def map_api_errors_to_attributes(response)
+      JSON.parse(response.response_body)["errors"].each do |key, value|
+        errors.add(key.underscore.to_sym, value[0])
       end
-    end
-
-    def initialize_building_with_id(id)
-      api_building = buildings.find { |b| b.id == id }
-      EventBuilding.initialize_with_api_building(api_building)
     end
 
     def end_after_start

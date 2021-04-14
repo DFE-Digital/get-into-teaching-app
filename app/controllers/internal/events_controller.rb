@@ -32,6 +32,8 @@ module Internal
 
     def create
       @event = Event.new(event_params)
+      @event.assign_building(building_params)
+
       if @event.save
         redirect_to internal_events_path(success: :pending)
       else
@@ -90,15 +92,18 @@ module Internal
         :provider_target_audience,
         :provider_website_url,
         :venue_type,
-        building: %i[
-          id
-          venue
-          address_line1
-          address_line2
-          address_line3
-          address_city
-          address_postcode
-        ],
+      )
+    end
+
+    def building_params
+      params.require(:internal_event).require(:building).permit(
+        :id,
+        :venue,
+        :address_line1,
+        :address_line2,
+        :address_line3,
+        :address_city,
+        :address_postcode,
       )
     end
   end
