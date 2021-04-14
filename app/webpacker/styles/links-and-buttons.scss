@@ -6,7 +6,7 @@
   text-decoration: none;
   color: $fg;
   padding: 14px $indent-amount;
-  font-size: size("small");
+  @include font-size("small");
   border: none;
 
   &:hover {
@@ -60,7 +60,7 @@ a {
   }
 
   &--smaller {
-    font-size: size("xsmall");
+    @include font-size("xsmall");
     padding: 8px $indent-amount;
   }
 

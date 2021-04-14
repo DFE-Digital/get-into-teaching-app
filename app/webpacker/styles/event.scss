@@ -1,13 +1,13 @@
 .event-info {
   h1 {
-    font-size: size("xlarge");
+    @include font-size("xlarge");
     line-height: 1.25;
     margin: 0;
   }
 
   &__date {
     margin-top: 0;
-    font-size: size("medium");
+    @include font-size("medium");
   }
 
   &__venue {

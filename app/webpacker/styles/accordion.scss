@@ -18,7 +18,7 @@
       .step-header__text {
         text-align: left;
         margin: 0;
-        font-size: size("medium");
+        @include font-size("medium");
         flex-grow: 2;
         white-space: initial;
         padding: 0 2em 0 0;

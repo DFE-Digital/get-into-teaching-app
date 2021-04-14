@@ -13,11 +13,11 @@
     }
 
     h1 {
-      font-size: size("xlarge");
+      @include font-size("xlarge");
     }
 
     h2 {
-      font-size: size("medium");
+      @include font-size("medium");
     }
   }
 

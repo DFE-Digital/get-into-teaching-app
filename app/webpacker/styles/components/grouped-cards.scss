@@ -21,7 +21,7 @@
 
       &__heading {
         h4 {
-          font-size: size(small);
+          @include font-size(small);
           display: inline;
         }
       }
@@ -34,7 +34,7 @@
       }
 
       &__fields {
-        font-size: size(xsmall);
+        @include font-size(xsmall);
         white-space: normal;
 
         a { overflow-wrap: break-word; }

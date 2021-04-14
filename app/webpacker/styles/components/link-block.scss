@@ -8,7 +8,7 @@
     background-color: $pink;
     color: #ffffff;
     font-weight: bold;
-    font-size: size("small");
+    @include font-size("small");
     padding: $indent-amount $indent-amount $indent-amount 50px;
     margin: 0;
     position: relative;
@@ -66,7 +66,7 @@
           display: block;
           background-image: url('../images/icon-down.svg');
           width: 21px;
-          height: size("small");
+          // height: size("small");
           position: absolute;
           top: 6px;
           left: 15px;

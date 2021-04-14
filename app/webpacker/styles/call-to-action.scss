@@ -11,10 +11,21 @@
   &__icon {
     background-color: $yellow;
     padding: 1em;
+
+    @include mq($until: mobile) {
+      width: 25px;
+      height: 25px;
+    }
+
+    @include mq($from: mobile, $until: tablet) {
+      width: 35px;
+      height: 35px;
+    }
   }
 
   &__photo {
-    > picture img, > img {
+    > picture img,
+    > img {
       width: 8em;
     }
   }
@@ -37,7 +48,7 @@
   }
 
   .call-to-action__heading {
-    font-size: size("medium");
+    @include font-size("medium");
     font-weight: bold;
     margin-bottom: 1em;
   }
@@ -99,7 +110,7 @@
       align-items: center;
 
       .call-to-action__heading {
-        font-size: size("small");
+        @include font-size("small");
         margin: 0 .5em;
       }
     }
@@ -139,7 +150,7 @@
       @include reset;
       align-self: center;
       padding: 0 1em;
-      font-size: size(medium);
+      @include font-size(medium);
       text-decoration: underline;
       text-underline-offset: .2em;
       line-height: 1.3em;
@@ -156,7 +167,7 @@
       a {
         margin: .3em 1.5em;
         display: inline-block;
-        font-size: size("small");
+        @include font-size("small");
       }
     }
 
@@ -185,7 +196,7 @@
       .call-to-action__heading {
         grid-area: 2 / 1 / 3 / 3;
         margin: 1em auto .5em 0;
-        font-size: size('small');
+        @include font-size('small');
       }
 
       .call-to-action__action {

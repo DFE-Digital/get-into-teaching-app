@@ -20,7 +20,7 @@
 
   &__left {
     padding: 1em;
-    font-size: size(small);
+    @include font-size(small);
     font-weight: bold;
     color: $white;
 

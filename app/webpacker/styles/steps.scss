@@ -50,14 +50,14 @@
       h2 {
         margin: 0;
         padding: 0;
-        font-size: size(large);
+        @include font-size(large);
         line-height: 1.25em;
         width: calc(100% - 100px);
         background: transparent;
         color: $black;
 
         @include mq($until: tablet) {
-          font-size: size(medium);
+          @include font-size(medium);
         }
 
         &:after {

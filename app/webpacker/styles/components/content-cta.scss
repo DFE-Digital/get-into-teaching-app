@@ -7,7 +7,7 @@
 
   h3 {
     margin: 0 0 0.5em 0;
-    font-size: size("medium");
+    @include font-size("medium");
     background: transparent;
     color: $black;
   }

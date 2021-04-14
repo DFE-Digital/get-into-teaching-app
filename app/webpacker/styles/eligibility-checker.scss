@@ -6,7 +6,7 @@
     @include rotated-block;
     background-color: $purple-dark;
     color: $white;
-    font-size: size("medium");
+    @include font-size("medium");
     padding: .3em;
     margin-left: -2em;
     padding-left: 2em;

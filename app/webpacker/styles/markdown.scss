@@ -14,7 +14,7 @@
   }
 
   h1 {
-    font-size: size('xxlarge');
+    @include font-size('xxlarge');
   }
 
   // allow level two headings (blue boxes) and CTAs to 'overhang' on the left
@@ -45,11 +45,11 @@
   }
 
   h3 {
-    font-size: size(medium);
+    @include font-size(medium);
   }
 
   h4 {
-    font-size: size(small);
+    @include font-size(small);
   }
 
   // stop the external icon from appearing inside CTA 'button' style links
@@ -61,6 +61,12 @@
     // this is added by Kramdown when using the ToC (table of contents) plugin
     #markdown-toc {
       margin-bottom: 3em;
+    }
+  }
+
+  ul {
+    @include mq($until: tablet) {
+      padding-left: 1.2em;
     }
   }
 
@@ -80,8 +86,8 @@
       }
     }
 
-    tbody {
-      font-size: size("xsmall");
+    tbody td {
+      @include font-size("xsmall");
     }
   }
 

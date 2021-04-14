@@ -7,29 +7,30 @@ $git-font-family: sans-serif;
 
 h1 {
   @include font;
-  font-size: size("large");
+  @include font-size("large");
 }
 
 h2 {
   @include font;
-  font-size: size("small");
+  @include font-size("small");
   line-height: 1.25;
 }
 
 h3 {
   @include font;
-  font-size: size("small");
+  @include font-size("small");
   font-weight: bold;
 }
 
 h4 {
   @include font;
-  font-size: size("small");
+  @include font-size("small");
 }
 
-p {
+p,
+ul {
   @include font;
-  font-size: size("small");
+  @include font-size("small");
   line-height: 1.5;
 }
 
@@ -50,7 +51,7 @@ a {
 .git-link {
   @include font;
   font-weight: bold;
-  font-size: size("small");
+  @include font-size("small");
   color: $black;
   text-decoration: none;
   display: inline-block;

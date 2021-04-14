@@ -61,7 +61,7 @@
 
     h2,
     h3 {
-      font-size: size("large");
+      @include font-size("large");
     }
 
     h3 {
@@ -121,17 +121,17 @@
       h2 {
         display: block;
         margin: 0.3em 0;
-        font-size: size("small");
+        @include font-size("small");
       }
 
       p {
         line-height: 1.25;
-        font-size: size("xsmall");
+        @include font-size("xsmall");
       }
 
       a {
         &.button {
-          font-size: size("xsmall");
+          @include font-size("xsmall");
         }
 
         .git-link {
