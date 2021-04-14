@@ -349,12 +349,9 @@ describe Internal::EventsController do
 
     context "when author user type" do
       it "responds with forbidden" do
-        expected_response_body = { error: "forbidden" }.to_json
-
         put internal_approve_path, headers: generate_auth_headers(:author)
 
-        assert_response :forbidden
-        expect(response.body).to eq expected_response_body
+        expect(response).to have_http_status(:forbidden)
       end
     end
   end

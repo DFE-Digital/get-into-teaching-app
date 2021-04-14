@@ -66,6 +66,10 @@ private
     render_error :not_found
   end
 
+  def render_forbidden
+    render_error :forbidden
+  end
+
   def render_too_many_requests
     render_error :too_many_requests
   end
