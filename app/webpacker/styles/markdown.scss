@@ -3,6 +3,8 @@
   @mixin overhang { margin-left: auto; margin-right: auto; }
   @include external-link-icon;
 
+  word-break: break-word;
+
   > * {
     @include indent-left-and-right;
   }
