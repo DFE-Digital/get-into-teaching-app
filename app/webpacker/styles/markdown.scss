@@ -70,6 +70,23 @@
     }
   }
 
+  @mixin abbr-styles {
+    text-underline-offset: .2em;
+    text-decoration-thickness: 2em;
+    text-decoration: underline dotted $grey-dark;
+  }
+
+  abbr {
+    @include abbr-styles;
+    cursor: help;
+  }
+
+  .abbr-replacement {
+    // nothing here yet, but we could use this to show
+    // that we've expanded an abbreviation
+    // @include abbr-styles;
+  }
+
   table {
     $table-spacing: .5em;
     border-spacing: 0 $table-spacing;
