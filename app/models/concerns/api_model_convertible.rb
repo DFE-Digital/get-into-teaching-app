@@ -7,6 +7,7 @@ module ApiModelConvertible
         .to_hash
         .transform_keys { |k| k.to_s.underscore }
         .filter { |k| attribute_names.include?(k) }
+        .with_indifferent_access
     end
   end
 
@@ -15,5 +16,6 @@ module ApiModelConvertible
       .filter { |k| attribute_names.include?(k) }
       .transform_keys { |k| k.to_s.camelize(:lower) }
       .filter { |_, v| v.presence }
+      .with_indifferent_access
   end
 end
