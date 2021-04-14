@@ -1,14 +1,14 @@
 html {
-  @include mq($until: mobile) { font-size: 85%; }
-  @include mq($from: mobile, $until: tablet) { font-size: 92%; }
+  @include mq($until: mobile) { font-size: 90%; }
+  @include mq($from: mobile, $until: tablet) { font-size: 95%; }
   @include mq($from: tablet) { font-size: 100%; }
 }
 
 // Numbers refer to pixel size when the base font
 // size of the broswer is 16px (most broswers)
 
-$fs-12: .8rem;
 $fs-14: .9rem;
+$fs-15: .95rem;
 $fs-16: 1rem;
 $fs-19: 1.1875rem;
 $fs-28: 1.75rem;
@@ -23,8 +23,8 @@ $fs-54: 3.375rem;
   @return map-get($device-sizes, $size);
 }
 
-$mobile-sizes:  ("xsmall": $fs-12, "small": $fs-14, "medium": $fs-16, "large": $fs-19, "xlarge" : $fs-28, "xxlarge": $fs-36);
-$tablet-sizes:  ("xsmall": $fs-14, "small": $fs-16, "medium": $fs-19, "large": $fs-28, "xlarge" : $fs-36, "xxlarge": $fs-42);
+$mobile-sizes:  ("xsmall": $fs-14, "small": $fs-15, "medium": $fs-16, "large": $fs-19, "xlarge" : $fs-28, "xxlarge": $fs-36);
+$tablet-sizes:  ("xsmall": $fs-15, "small": $fs-16, "medium": $fs-19, "large": $fs-28, "xlarge" : $fs-36, "xxlarge": $fs-42);
 $desktop-sizes: ("xsmall": $fs-16, "small": $fs-19, "medium": $fs-28, "large": $fs-36, "xlarge" : $fs-42, "xxlarge": $fs-54);
 
 @mixin font-size($size) {
