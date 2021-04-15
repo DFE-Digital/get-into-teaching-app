@@ -4,7 +4,10 @@ module CircuitBreaker
   extend ActiveSupport::Concern
 
   included do
-    rescue_from GetIntoTeachingApiClient::CircuitBrokenError, with: :redirect_to_not_available
+    rescue_from GetIntoTeachingApiClient::CircuitBrokenError do |exception|
+      Sentry.capture_exception(exception)
+      redirect_to_not_available
+    end
   end
 
 protected
