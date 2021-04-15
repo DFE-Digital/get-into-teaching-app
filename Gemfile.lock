@@ -436,10 +436,10 @@ DEPENDENCIES
   foreman
   front_matter_parser!
   get_into_teaching_api_client_faraday!
-  google-api-client
+  google-api-client (>= 0.53.0)
   govuk_design_system_formbuilder
   kaminari (~> 1.2)
-  kramdown
+  kramdown (>= 2.3.1)
   listen (>= 3.0.5, < 3.6)
   loaf
   prometheus-client
@@ -465,7 +465,7 @@ DEPENDENCIES
   view_component
   web-console (>= 3.3.0)
   webdrivers (~> 4.6)
-  webmock
+  webmock (>= 3.12.2)
   webpacker
 
 RUBY VERSION
