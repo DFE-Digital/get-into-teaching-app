@@ -1,5 +1,16 @@
 class Acronyms
-  ABBR_REGEXP = %r{\b([A-Z][A-Z]+)\b}.freeze
+  # This should match:
+  #
+  #  * uppercase strings,
+  #  * that are longer than 2+ characters long
+  #  * that aren't surrounded by parens
+  #
+  #  e.g., given the string:
+  #
+  #  > "A Postgraduate Certificate in Education (PGCE) will help you get QTS."
+  #
+  # QTS _should_ match but PGCE _shouldn't_.
+  ABBR_REGEXP = %r{(?!\()\b([A-Z]{2,})\b(?![\w\s]*\))}.freeze
 
   def initialize(content, acronyms)
     @document = parse_html(content)

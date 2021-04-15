@@ -30,4 +30,11 @@ describe Acronyms, type: :helper do
     it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
     it { is_expected.to match "and PAYE" }
   end
+
+  context "when the acronym is surrounded by brackets" do
+    let(:content) { "Taxes you may encounter include Value Added Tax (VAT) and Pay as you earn (PAYE)." }
+    it "remains unchanged" do
+      is_expected.to match(content)
+    end
+  end
 end
