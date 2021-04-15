@@ -190,17 +190,131 @@ describe Internal::Event do
     end
   end
 
-  describe "#map_api_errors_to_attributes" do
-    let(:error_message) { "Must be unique" }
-    let(:json_error) { JSON[errors: { ReadableId: [error_message] }] }
-    let(:api_error) { GetIntoTeachingApiClient::ApiError.new(response_body: json_error) }
+  describe "#save" do
+    context "when the result is invalid" do
+      it "returns false" do
+        allow_any_instance_of(described_class).to receive(:invalid?) { true }
+        expect(described_class.new.save).to be false
+      end
+    end
 
-    let(:internal_event) { build(:internal_event) }
+    context "when the result is valid" do
+      context "when the API raises an error" do
+        let(:error_message) { "Must be unique" }
+        let(:json_error) { JSON[errors: { ReadableId: [error_message] }] }
+        let(:api_error) { GetIntoTeachingApiClient::ApiError.new(code: 400, response_body: json_error) }
 
-    it "adds the error to the correct attribute" do
-      internal_event.map_api_errors_to_attributes(api_error)
+        before do
+          allow_any_instance_of(described_class).to receive(:invalid?) { false }
 
-      expect(internal_event.errors["readable_id"].first).to eq(error_message)
+          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+            .to receive(:upsert_teaching_event) { raise api_error }
+        end
+
+        subject { described_class.new }
+
+        it "adds the error to the correct attribute" do
+          subject.save
+
+          expect(subject.errors["readable_id"].first).to eq(error_message)
+        end
+
+        it "returns false" do
+          expect(subject.save).to be false
+        end
+      end
+    end
+  end
+
+  describe "#buildings" do
+    let(:building) { build(:event_building_api) }
+
+    it "fetches buildings if they are nil" do
+      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+        .to receive(:get_teaching_event_buildings)
+
+      described_class.new.buildings
+    end
+
+    it "only fetches buildings once" do
+      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+        .to receive(:get_teaching_event_buildings).once.and_return([build(:event_building_api)])
+
+      event = described_class.new
+      2.times { event.buildings }
+    end
+  end
+
+  describe "#assign_building" do
+    context "when the venue type is existing" do
+      context "when id is present" do
+        let(:building) { build(:event_building_api) }
+        let(:attributes) { attributes_for(:event_building_api, id: building.id) }
+        it "sets building based on id" do
+          event = described_class.new
+          event.venue_type = Internal::Event::VENUE_TYPES[:existing]
+          allow(event).to receive(:buildings) { [building] }
+          event.assign_building(building.to_hash)
+          expect(event.building).to have_attributes(attributes)
+        end
+
+        context "when id is not present" do
+          let(:building) { build(:event_building_api, id: nil) }
+          it "returns nil" do
+            event = described_class.new
+            event.venue_type = Internal::Event::VENUE_TYPES[:existing]
+            expect(event.assign_building(building.to_hash)).to be_nil
+          end
+        end
+      end
+    end
+
+    context "when the venue type is add and an id is present" do
+      let(:building) { attributes_for(:event_building) }
+      it "sets building with no id" do
+        event = described_class.new
+        event.venue_type = Internal::Event::VENUE_TYPES[:add]
+        event.assign_building(building.to_hash)
+
+        expect(event.building).to have_attributes(building.except(:id))
+      end
+    end
+
+    context "when the venue type is none" do
+      let(:building) { attributes_for(:event_building) }
+      it "returns nil" do
+        event = described_class.new
+        event.venue_type = Internal::Event::VENUE_TYPES[:none]
+        expect(event.assign_building(building.to_hash)).to be_nil
+      end
+    end
+  end
+
+  describe "#invalid" do
+    let(:event) { build(:internal_event) }
+
+    context "when event is valid" do
+      it "returns false when building is invalid" do
+        allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?) { true }
+        expect(event.invalid?).to be true
+      end
+
+      it "returns true when building is nil" do
+        event.building = nil
+        expect(event.invalid?).to be false
+      end
+
+      it "returns false when building is valid" do
+        allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?) { false }
+        expect(event.invalid?).to be false
+      end
+    end
+
+    context "when event is invalid" do
+      it "returns true" do
+        allow_any_instance_of(described_class).to receive(:invalid?) { true }
+        expect(event.invalid?).to be true
+      end
     end
   end
 end

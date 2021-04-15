@@ -9,6 +9,14 @@ class ErrorsController < ApplicationController
     end
   end
 
+  def forbidden
+    respond_to do |format|
+      format.html { render status: :forbidden }
+      format.json { render json: { error: "Forbidden" }, status: :forbidden }
+      format.all { render status: :forbidden, body: nil }
+    end
+  end
+
   def internal_server_error
     respond_to do |format|
       format.html { render status: :internal_server_error }
