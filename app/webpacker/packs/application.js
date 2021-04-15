@@ -9,7 +9,6 @@ import 'controllers';
 
 require.context('../fonts', true);
 require.context('../images', true);
-require('packs/govuk_components');
 
 Rails.start();
 Turbolinks.start();
