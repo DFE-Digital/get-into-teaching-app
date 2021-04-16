@@ -9,9 +9,11 @@ document.body.className = document.body.className
   ? document.body.className + ' js-enabled'
   : 'js-enabled';
 
-const selectId = '#internal-event-building-id-field';
+const selectId = document.querySelector('#internal-event-building-id-field');
 
-enhanceSelectElement({
-  selectElement: document.querySelector(selectId),
-  placeholder: 'E.g., M1 7JA',
-});
+if (selectId) {
+  enhanceSelectElement({
+    selectElement: selectId,
+    placeholder: 'E.g., M1 7JA',
+  });
+}
