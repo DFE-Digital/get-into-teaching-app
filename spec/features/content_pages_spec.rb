@@ -61,6 +61,16 @@ RSpec.feature "content pages check", type: :feature, content: true do
             end
           end
       end
+
+      scenario "there are no internal links that contain the site's domain" do
+        document
+          .css("a")
+          .map { |fragment| fragment["href"] }
+          .each do |href|
+            expect(href).not_to start_with("https://getintoteaching.education.gov.uk")
+            expect(href).not_to start_with("http://getintoteaching.education.gov.uk")
+          end
+      end
     end
   end
 
