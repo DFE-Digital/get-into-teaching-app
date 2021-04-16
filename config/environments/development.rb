@@ -57,4 +57,13 @@ Rails.application.configure do
   config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence || \
     Rails.application.credentials.google_maps_key.presence
   config.x.enable_beta_redirects = false
+
+  config.x.publisher_username = ENV["PUBLISHER_USERNAME"].presence || \
+    Rails.application.credentials.publisher_username.presence
+  config.x.publisher_password = ENV["PUBLISHER_PASSWORD"].presence || \
+    Rails.application.credentials.publisher_password.presence
+  config.x.author_username = ENV["AUTHOR_USERNAME"].presence || \
+    Rails.application.credentials.author_username.presence
+  config.x.author_password = ENV["AUTHOR_PASSWORD"].presence || \
+    Rails.application.credentials.author_password.presence
 end

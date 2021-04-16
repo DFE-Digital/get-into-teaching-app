@@ -12,8 +12,11 @@ RSpec.feature "Internal section", type: :feature do
   let(:events_by_type) { group_events_by_type([event]) }
 
   before do
+    allow(Rails.application.config.x).to receive(:publisher_username) { "publisher" }
+    allow(Rails.application.config.x).to receive(:publisher_password) { "password" }
+
     if page.driver.browser.respond_to?(:authorize)
-      page.driver.browser.authorize(ENV["PUBLISHER_USERNAME"], ENV["PUBLISHER_PASSWORD"])
+      page.driver.browser.authorize("publisher", "password")
     end
 
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \

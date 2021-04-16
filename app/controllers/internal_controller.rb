@@ -16,13 +16,29 @@ private
 
   def authenticate
     authenticate_or_request_with_http_basic do |username, password|
-      if username == ENV["PUBLISHER_USERNAME"] && password == ENV["PUBLISHER_PASSWORD"]
+      return false if username.blank? || password.blank?
+
+      if username == publisher[:username] && password == publisher[:password]
         set_account_role(:publisher)
-      elsif username == ENV["AUTHOR_USERNAME"] && password == ENV["AUTHOR_PASSWORD"]
+      elsif username == author[:username] && password == author[:password]
         set_account_role(:author)
       end
 
       session[:role].present?
     end
+  end
+
+  def publisher
+    {
+      username: Rails.application.config.x.publisher_username,
+      password: Rails.application.config.x.publisher_password,
+    }
+  end
+
+  def author
+    {
+      username: Rails.application.config.x.author_username,
+      password: Rails.application.config.x.author_password,
+    }
   end
 end
