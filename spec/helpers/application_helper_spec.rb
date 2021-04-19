@@ -202,4 +202,21 @@ describe ApplicationHelper do
       it { is_expected.to have_link "Information", href: cookies_path }
     end
   end
+
+  describe "#chat_link" do
+    let(:text) { "Chat with us" }
+    subject { helper.chat_link(text) }
+
+    it %(generates a hyperlink) do
+      expect(subject).to have_css("a")
+    end
+
+    it %(has the right data controller) do
+      expect(subject).to have_css(%(a[data-controller="talk-to-us"]))
+    end
+
+    it %(has the right data action) do
+      expect(subject).to have_css(%(a[data-action="talk-to-us#startChat"]))
+    end
+  end
 end
