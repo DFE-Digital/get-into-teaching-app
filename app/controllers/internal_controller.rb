@@ -1,5 +1,6 @@
 class InternalController < ApplicationController
   before_action :authenticate
+  skip_before_action :site_wide_authentication
   helper_method :publisher?
 
 protected
@@ -20,11 +21,13 @@ private
 
       if username == publisher[:username] && password == publisher[:password]
         set_account_role(:publisher)
+        return true
       elsif username == author[:username] && password == author[:password]
         set_account_role(:author)
+        return true
       end
 
-      session[:role].present?
+      false
     end
   end
 

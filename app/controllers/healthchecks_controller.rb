@@ -1,5 +1,5 @@
 class HealthchecksController < ApplicationController
-  skip_before_action :http_basic_authenticate
+  skip_before_action :site_wide_authentication
 
   def show
     @healthcheck = Healthcheck.new
