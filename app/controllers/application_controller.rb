@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
   rescue_from GetIntoTeachingApiClient::ApiError, with: :handle_api_error
   rescue_from Pages::Page::PageNotFoundError, with: :render_not_found
 
-  before_action :http_basic_authenticate
+  before_action :site_wide_authentication
   before_action :set_api_client_request_id
   before_action :record_utm_codes
   before_action :add_home_breadcrumb
@@ -74,7 +74,7 @@ private
     render_error :too_many_requests
   end
 
-  def http_basic_authenticate
+  def site_wide_authentication
     return true if ENV["HTTPAUTH_USERNAME"].blank?
 
     authenticate_or_request_with_http_basic do |name, password|
