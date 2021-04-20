@@ -1,6 +1,16 @@
 require "rails_helper"
 
 RSpec.feature "content pages check", type: :feature, content: true do
+  include_context "stub types api"
+
+  before do
+    # we don't care about the contents of the events pages here, just
+    # that they exist.
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+      .to(receive(:search_teaching_events_grouped_by_type))
+      .and_return([])
+  end
+
   let(:document) { Nokogiri.parse(page.body) }
   let(:statuses_deemed_successful) { Rack::Utils::SYMBOL_TO_STATUS_CODE.values_at(:ok, :moved_permanently) }
 
