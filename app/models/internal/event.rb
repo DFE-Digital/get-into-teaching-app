@@ -116,7 +116,7 @@ module Internal
       return if end_at.blank? || start_at.blank?
 
       if end_at <= start_at
-        errors.add(:end_at, "must be after the start date")
+        errors.add(:end_at, "Must be after the start date")
       end
     end
   end
