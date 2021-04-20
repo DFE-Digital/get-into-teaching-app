@@ -64,7 +64,8 @@
     }
   }
 
-  ul {
+  ul,
+  ol {
     @include mq($until: tablet) {
       padding-left: 1.2em;
     }
@@ -76,15 +77,19 @@
     text-decoration: underline dotted $grey-dark;
   }
 
-  abbr {
-    @include abbr-styles;
-    cursor: help;
-  }
+  p,
+  ol,
+  ul {
+    abbr {
+      @include abbr-styles;
+      cursor: help;
+    }
 
-  .abbr-replacement {
-    // nothing here yet, but we could use this to show
-    // that we've expanded an abbreviation
-    // @include abbr-styles;
+    // .abbr-replacement {
+    //   nothing here yet, but we could use this to show
+    //   that we've expanded an abbreviation
+    //   @include abbr-styles;
+    // }
   }
 
   table {
