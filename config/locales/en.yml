@@ -180,6 +180,39 @@ en:
               blank: Accept the privacy policy to continue
               accepted: Accept the privacy policy to continue
 
+        internal/event:
+          attributes:
+            name:
+              blank: Enter a name
+            readable_id:
+              blank: Enter a partial URL
+            summary:
+              blank: Enter a summary
+            description:
+              blank: Enter a description
+            provider_contact_email:
+              blank: Enter a provider email address
+              invalid: Enter a valid email address
+            provider_organiser:
+              blank: Enter a provider organiser
+            provider_target_audience:
+              blank: Enter a provider target audience
+            provider_website_url:
+              blank: Enter a provider website/registration link
+            is_online:
+              inclusion: Choose whether the event is online
+            start_at:
+              blank: Enter the date and time the event starts
+            end_at:
+              blank: Enter the date and time the event ends
+
+        internal/event_building:
+          attributes:
+            venue:
+              blank: Enter a venue name
+            address_postcode:
+              blank: Enter a postcode
+
   helpers:
     answer:
       mailing_list_steps_degree_status:

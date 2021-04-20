@@ -81,9 +81,8 @@ RSpec.feature "Internal section", type: :feature do
 
       click_button "Submit for review"
 
-      expect(page).to have_text "can't be blank"
-      expect(page).to have_text "is not included in the list"
-      expect(page).to have_text "is invalid"
+      expect(page).to have_text "Enter a name"
+      expect(page).to have_text "Enter a venue name"
     end
 
     scenario "There are validation errors on building only" do
@@ -92,14 +91,10 @@ RSpec.feature "Internal section", type: :feature do
       enter_valid_event_details
 
       choose "Add a new venue"
-      fill_in "Venue", with: "valid"
-      fill_in "Postcode", with: "invalid"
 
       click_button "Submit for review"
 
-      expect(page).to_not have_text "can't be blank"
-      expect(page).to_not have_text "is not included in the list"
-      expect(page).to have_text "is invalid"
+      expect(page).to have_text "Enter a venue name"
     end
 
     scenario "There are validation errors on event only" do
@@ -111,9 +106,7 @@ RSpec.feature "Internal section", type: :feature do
 
       click_button "Submit for review"
 
-      expect(page).to have_text "can't be blank"
-      expect(page).to have_text "is not included in the list"
-      expect(page).to_not have_text "is invalid"
+      expect(page).to have_text "Enter a name"
     end
   end
 
@@ -141,7 +134,7 @@ private
 
   def enter_valid_event_details
     fill_in "Event name", with: "test"
-    fill_in "External event name", with: "test"
+    fill_in "Event partial URL", with: "test"
     fill_in "Event summary", with: "test"
     find(:id, "internal_event_description", visible: false)
       .click
