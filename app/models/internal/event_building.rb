@@ -12,8 +12,12 @@ module Internal
     attribute :address_city, :string
     attribute :address_postcode, :string
 
-    validates :venue, presence: true, allow_blank: false
-    validates :address_postcode, presence: true, postcode: true, allow_blank: false
+    validates :venue, presence: true, allow_blank: false, length: { maximum: 100 }
+    validates :address_line1, length: { maximum: 255 }
+    validates :address_line2, length: { maximum: 255 }
+    validates :address_line3, length: { maximum: 255 }
+    validates :address_city, length: { maximum: 100 }
+    validates :address_postcode, presence: true, postcode: true, allow_blank: false, length: { maximum: 100 }
 
     def self.initialize_with_api_building(building)
       hash = convert_attributes_from_api_model(building)

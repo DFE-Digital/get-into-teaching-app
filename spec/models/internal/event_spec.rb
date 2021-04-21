@@ -4,6 +4,7 @@ describe Internal::Event do
   describe "attributes" do
     it { is_expected.to respond_to :id }
     it { is_expected.to respond_to :name }
+    it { is_expected.to respond_to :readable_id }
     it { is_expected.to respond_to :summary }
     it { is_expected.to respond_to :description }
     it { is_expected.to respond_to :building }
@@ -22,16 +23,25 @@ describe Internal::Event do
     describe "#name" do
       it { is_expected.to allow_value("test").for :name }
       it { is_expected.to_not allow_values("", nil).for :name }
+      it { is_expected.to validate_length_of(:name).is_at_most(300) }
+    end
+
+    describe "#readable_id" do
+      it { is_expected.to allow_value("test").for :readable_id }
+      it { is_expected.to_not allow_values("", nil).for :readable_id }
+      it { is_expected.to validate_length_of(:readable_id).is_at_most(300) }
     end
 
     describe "#summary" do
       it { is_expected.to allow_value("test").for :summary }
       it { is_expected.to_not allow_values("", nil).for :summary }
+      it { is_expected.to validate_length_of(:summary).is_at_most(1000) }
     end
 
     describe "#description" do
       it { is_expected.to allow_value("test").for :description }
       it { is_expected.to_not allow_values("", nil).for :description }
+      it { is_expected.to validate_length_of(:description).is_at_most(2000) }
     end
 
     describe "#is_online" do
@@ -73,16 +83,19 @@ describe Internal::Event do
     describe "#provider organiser" do
       it { is_expected.to allow_value("test").for :provider_organiser }
       it { is_expected.to_not allow_value("", nil).for :provider_organiser }
+      it { is_expected.to validate_length_of(:provider_organiser).is_at_most(300) }
     end
 
     describe "#provider target audience" do
       it { is_expected.to allow_value("test").for :provider_target_audience }
       it { is_expected.to_not allow_value("", nil).for :provider_target_audience }
+      it { is_expected.to validate_length_of(:provider_target_audience).is_at_most(500) }
     end
 
     describe "#provider website url" do
       it { is_expected.to allow_value("test").for :provider_website_url }
       it { is_expected.to_not allow_value("", nil).for :provider_website_url }
+      it { is_expected.to validate_length_of(:provider_website_url).is_at_most(300) }
     end
   end
 
