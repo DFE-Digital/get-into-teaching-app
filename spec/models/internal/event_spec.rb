@@ -191,6 +191,8 @@ describe Internal::Event do
   end
 
   describe "#save" do
+    subject { described_class.new }
+
     context "when the result is invalid" do
       it "returns false" do
         allow_any_instance_of(described_class).to receive(:invalid?) { true }
@@ -199,7 +201,7 @@ describe Internal::Event do
     end
 
     context "when the result is valid" do
-      context "when the API raises an error" do
+      context "when the API raises a 400 error" do
         let(:error_message) { "Must be unique" }
         let(:json_error) { JSON[errors: { ReadableId: [error_message] }] }
         let(:api_error) { GetIntoTeachingApiClient::ApiError.new(code: 400, response_body: json_error) }
@@ -211,8 +213,6 @@ describe Internal::Event do
             .to receive(:upsert_teaching_event) { raise api_error }
         end
 
-        subject { described_class.new }
-
         it "adds the error to the correct attribute" do
           subject.save
 
@@ -221,6 +221,23 @@ describe Internal::Event do
 
         it "returns false" do
           expect(subject.save).to be false
+        end
+      end
+
+      context "when the API raises a server error" do
+        let(:api_error) { GetIntoTeachingApiClient::ApiError.new(code: 500) }
+
+        before do
+          allow_any_instance_of(described_class).to receive(:invalid?) { false }
+
+          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+            .to receive(:upsert_teaching_event).and_raise(api_error)
+        end
+
+        subject { described_class.new }
+
+        it "re-raises the error" do
+          expect { subject.save }.to raise_error api_error
         end
       end
     end
