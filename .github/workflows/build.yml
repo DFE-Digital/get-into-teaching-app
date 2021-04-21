@@ -4,16 +4,6 @@ on:
     types: [assigned, opened, synchronize, reopened]
   push:
     branches: [ master ]
-env:
-  CONTENT_REPOSITORY: DFE-Digital/get-into-teaching-content
-  SLACK_FAILURE:         '#ff0000'
-  SLACK_SUCCESS:         '#00ff00'
-  SLACK_ICON:            https://raw.githubusercontent.com/DFE-Digital/get-into-teaching-api/master/.github/image.png?size=48
-  SLACK_USERNAME:        GiT Workflows
-  SLACK_FOOTER:          Get Into Teaching Application
-  DOCKERHUB_REPOSITORY:  dfedigital/get-into-teaching-web
-  DOMAIN:                london.cloudapps.digital
-  APPLICATION:           Get Into Teaching Application (code)
 
 jobs:
   build:
@@ -23,6 +13,9 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2
 
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
       - uses: Azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
@@ -31,7 +24,7 @@ jobs:
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'SONAR-TOKEN, SLACK-WEBHOOK, DOCKER-USERNAME, DOCKER-PASSWORD'
+           secrets: 'SONAR-TOKEN, SLACK-WEBHOOK, ACTIONS-API-ACCESS-TOKEN'
 
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@master
@@ -60,8 +53,9 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ steps.azSecret.outputs.DOCKER-USERNAME }}
-          password: ${{ steps.azSecret.outputs.DOCKER-PASSWORD }}
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
 
       - name: Build and push to Docker Hub
         uses: docker/build-push-action@v2
@@ -70,7 +64,7 @@ jobs:
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
           tags: |
-                 ${{env.DOCKERHUB_REPOSITORY}}:sha-${{ steps.sha.outputs.short }}
+                 ${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short }}
           push: true
           build-args: |
                       SHA=${{ steps.sha.outputs.short }}
@@ -78,7 +72,7 @@ jobs:
       - name: Set DOCKER_IMAGE environment variable
         id:   docker
         run: |-
-          echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKERHUB_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
+          echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
 
       - name: Run Specs
         run: |-
@@ -102,10 +96,10 @@ jobs:
           name: unit_tests
           path: ${{ github.workspace }}/out/*
 
-      - name: Run Javascript Tests
-        run: |-
-          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{steps.docker.outputs.DOCKER_IMAGE}} "yarn && yarn spec"
+#     - name: Run Javascript Tests
+#       run: |-
+#         docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
+#           ${{steps.docker.outputs.DOCKER_IMAGE}} "yarn && yarn spec"
 
       - name: Lint Ruby
         run: |-
@@ -143,91 +137,4 @@ jobs:
            SLACK_MESSAGE: 'There has been a failure building the MASTER branch of the application and deploying it to Development.'
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
-
-  update_content_repo:
-    name: Update the base image used in the Content repo
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
-    needs: build
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2
-        
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - uses: Azure/get-keyvault-secrets@v1
-        id:   azSecret
-        with:
-           keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'SLACK-WEBHOOK, ACTIONS-API-ACCESS-TOKEN'
-
-      - name: Set short sha
-        id: sha
-        run: echo ::set-output name=short::$(echo "${{ github.sha }}" | cut -c -7)
-
-      - name: Set docker-image variable
-        id: docker-image
-        run: |-
-          echo ::set-output name=image::${{ env.DOCKERHUB_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
-
-      - name: Print discovered docker-image variable
-        run: |-
-          echo "DOCKER IMAGE: '${{ steps.docker-image.outputs.image }}'"
-
-      - name: Generate commit message
-        run: |-
-          echo "Updated base image to ${{ steps.sha.outputs.short}}" > commit.msg
-          echo >> commit.msg
-          echo ${{ steps.docker-image.outputs.image }} >> commit.msg
-          echo >> commit.msg
-          echo "-----" >> commit.msg
-          echo >> commit.msg
-          git show -s --format=%B HEAD >> commit.msg
-          echo >> commit.msg
-
-      - name: Check out the Content
-        uses: actions/checkout@v2
-        with:
-          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
-          repository: ${{ env.CONTENT_REPOSITORY }}
-          path: content
-
-      - name: List content repo
-        run: cd content && ls
-        
-      - name: Update Dockerfile
-        run: |-
-          sed -i "s~FROM .*~FROM ${{ steps.docker-image.outputs.image }}~" content/Dockerfile
-
-      - name: Print updated Dockerfile
-        run: cat content/Dockerfile
-
-      - name: Commit changes to Dockerfile
-        run: |-
-          cd content
-          git config user.name "GiT Workflow Bot"
-          git config user.email "<>"
-          git add Dockerfile
-          git commit -F ../commit.msg
-
-      - name: Show last commit
-        run: |-
-          cd content
-          git show HEAD
-          
-      - name: Push the commit
-        run: |-
-          cd content
-          git push origin master
-          
-      - name: Slack Notification
-        if: failure()
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{ env.SLACK_ERROR }}
-          SLACK_MESSAGE: 'Failure Initialising Content Deployment'
-          SLACK_TITLE: 'Failure: ${{ github.workflow }}'
-          SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
 
