@@ -27,10 +27,10 @@ module Internal
     attribute :building
     attribute :venue_type, type: VENUE_TYPES, default: VENUE_TYPES[:none]
 
-    validates :name, presence: true, allow_blank: false
-    validates :readable_id, presence: true, allow_blank: false
-    validates :summary, presence: true, allow_blank: false
-    validates :description, presence: true, allow_blank: false
+    validates :name, presence: true, allow_blank: false, length: { maximum: 300 }
+    validates :readable_id, presence: true, allow_blank: false, length: { maximum: 300 }
+    validates :summary, presence: true, allow_blank: false, length: { maximum: 1000 }
+    validates :description, presence: true, allow_blank: false, length: { maximum: 2000 }
     validates :summary, presence: true, allow_blank: false
     validates :is_online, inclusion: { in: [true, false] }
     validates :start_at, presence: true, allow_blank: false
@@ -40,9 +40,9 @@ module Internal
               allow_blank: false,
               email_format: true,
               length: { maximum: 100 }
-    validates :provider_organiser, presence: true, allow_blank: false
-    validates :provider_target_audience, presence: true, allow_blank: false
-    validates :provider_website_url, presence: true, allow_blank: false
+    validates :provider_organiser, presence: true, allow_blank: false, length: { maximum: 300 }
+    validates :provider_target_audience, presence: true, allow_blank: false, length: { maximum: 500 }
+    validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: 300 }
     validates_each :start_at, :end_at do |record, attr, value|
       unless value.nil?
         record.errors.add attr, "Must be in the future" if value <= Time.zone.now

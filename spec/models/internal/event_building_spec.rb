@@ -16,6 +16,23 @@ describe Internal::EventBuilding do
       it { is_expected.to allow_value("test").for :venue }
       it { is_expected.to_not allow_value("").for :venue }
       it { is_expected.to_not allow_value(nil).for :venue }
+      it { is_expected.to validate_length_of(:venue).is_at_most(100) }
+    end
+
+    describe "#address_line1" do
+      it { is_expected.to validate_length_of(:address_line1).is_at_most(255) }
+    end
+
+    describe "#address_line2" do
+      it { is_expected.to validate_length_of(:address_line2).is_at_most(255) }
+    end
+
+    describe "#address_line3" do
+      it { is_expected.to validate_length_of(:address_line3).is_at_most(255) }
+    end
+
+    describe "#address_city" do
+      it { is_expected.to validate_length_of(:address_city).is_at_most(100) }
     end
 
     describe "#address_postcode" do
@@ -23,6 +40,7 @@ describe Internal::EventBuilding do
       it { is_expected.to_not allow_value("not a postcode").for :address_postcode }
       it { is_expected.to_not allow_value("").for :address_postcode }
       it { is_expected.to_not allow_value(nil).for :address_postcode }
+      it { is_expected.to validate_length_of(:address_postcode).is_at_most(100) }
     end
   end
 
