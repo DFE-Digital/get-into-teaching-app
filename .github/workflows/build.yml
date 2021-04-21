@@ -40,7 +40,13 @@ jobs:
 
       - name: Get Short SHA
         id: sha
-        run: echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
+        run: |
+             echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
+
+      - name: Set DOCKER_IMAGE environment variable
+        id:   docker
+        run: |-
+          echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:${{ steps.sha.outputs.short }}
 
       - name: Cache Docker layers
         uses: actions/cache@v2.1.5
@@ -64,15 +70,10 @@ jobs:
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
           tags: |
-                 ${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short }}
+                 ${{ steps.docker.outputs.DOCKER_IMAGE }}
           push: true
           build-args: |
                       SHA=${{ steps.sha.outputs.short }}
-
-      - name: Set DOCKER_IMAGE environment variable
-        id:   docker
-        run: |-
-          echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
 
       - name: Run Specs
         run: |-
@@ -129,12 +130,25 @@ jobs:
            -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/coverage.json
            -Dsonar.ruby.rubocop.reportPaths=${PWD}/out/rubocop-result.json
 
+      - name: Check Content pages
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test \
+            ${{ steps.docker.outputs.DOCKER_IMAGE }} \
+            rspec --format documentation spec/features/content_pages_spec.rb
+
+#     - name: Trigger CVE Testing
+#       uses: benc-uk/workflow-dispatch@v1.1
+#       with:
+#         workflow: cve
+#         token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+#         inputs: '{"image": "${{ steps.docker.outputs.DOCKER_IMAGE }}"}'
+
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'
         uses: rtCamp/action-slack-notify@master
         env:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: 'There has been a failure building the MASTER branch of the application and deploying it to Development.'
+           SLACK_MESSAGE: 'There has been a failure building the MASTER branch of the application'
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
 
