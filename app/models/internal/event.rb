@@ -90,8 +90,12 @@ module Internal
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(to_api_event)
       true
     rescue GetIntoTeachingApiClient::ApiError => e
-      map_api_errors_to_attributes(e) if e.code == 400
-      false
+      if e.code == 400
+        map_api_errors_to_attributes(e)
+        false
+      else
+        raise
+      end
     end
 
     def buildings
