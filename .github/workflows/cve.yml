@@ -1,24 +1,22 @@
-name: Run CVE scanner 
+name: cve
 on:
   workflow_dispatch:
+    inputs:
+      image:
+        description: Image Name to be Tested
+        required: true
 
-env:
-  SLACK_FAILURE:         '#ff0000'
-  SLACK_SUCCESS:         '#00ff00'
-  SLACK_ICON:            https://raw.githubusercontent.com/DFE-Digital/get-into-teaching-api/master/.github/image.png?size=48
-  SLACK_USERNAME:        GiT Workflows
-  SLACK_FOOTER:          Get Into Teaching Application
-  DOCKERHUB_REPOSITORY:  dfedigital/get-into-teaching-web
-  DOMAIN:                london.cloudapps.digital
-  APPLICATION:           Get Into Teaching Application (code)
-  
 jobs:
   cve:
-    name: CVE scanner 
+    name: CVE Test
     runs-on: ubuntu-latest
+    environment: Development
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
 
       - uses: Azure/login@v1
         with:
@@ -30,16 +28,13 @@ jobs:
            keyvault: ${{ secrets.KEY_VAULT}}
            secrets: 'SLACK-WEBHOOK'
 
-      - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag localbuild/testimage:latest
-
       - name: Scan image
         uses: anchore/scan-action@v2
         with:
-             image:  localbuild/testimage:latest
-             fail-build: true
-             severity-cutoff: high
-             acs-report-enable: true
+          image: ${{github.event.inputs.image}}
+          fail-build: false
+          severity-cutoff: high
+          acs-report-enable: true
 
       - name: upload Anchore scan SARIF report
         if: always()
@@ -48,12 +43,10 @@ jobs:
           sarif_file: results.sarif
 
       - name: Slack Notification
-        if: failure()  && github.ref == 'refs/heads/master'
+        if: failure()
         uses: rtCamp/action-slack-notify@master
         env:
-           SLACK_COLOR: ${{ env.SLACK_ERROR}}
-           SLACK_MESSAGE: 'The Application CVE Workflow has failed'
-           SLACK_TITLE: 'Application CVE Workflow failure'
-           SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
-
-
+          SLACK_COLOR: ${{env.SLACK_FAILURE}}
+          SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
+          SLACK_MESSAGE: Pipeline Failure carrying out CVE Testing on ${{ github.event.inputs.image }}
+          SLACK_TITLE: CVE Testing has failed

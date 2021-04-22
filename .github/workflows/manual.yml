@@ -1,0 +1,94 @@
+---
+name: Manual Release
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Development/Test/Production/Speed/UR
+        required: true
+      tag:
+        description: Release Tag
+        required: true
+
+jobs:
+  manual:
+    name: Deploy to ${{github.event.inputs.environment}}
+    environment:
+       name: ${{github.event.inputs.environment}}
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'SLACK-WEBHOOK, SLACK-RELEASE-NOTE-WEBHOOK, ACTIONS-API-ACCESS-TOKEN'
+
+      - name: Get Release Id from Tag
+        id: tag_id
+        uses: DFE-Digital/github-actions/DraftReleaseByTag@master
+        with:
+          TAG: ${{ github.event.inputs.tag }}
+          TOKEN: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+
+      - name: Check if found
+        if: steps.tag_id.outputs.release_id == ''
+        run: |
+             echo "::error ::Tag ${{ github.event.inputs.tag }} cannot be found in releases"
+             exit 1
+
+      - name: Trigger Deployment to ${{github.event.inputs.environment}}
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+          workflow: Deploy to PaaS
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          inputs: '{"environment": "${{github.event.inputs.environment}}" , "sha": "${{steps.tag_id.outputs.release_sha}}"  }'
+          ref: "${{github.ref}}"
+
+      - name: Wait for Deployment to ${{github.event.inputs.environment}}
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-deploy
+        with:
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          checkName: Deploy ${{github.event.inputs.environment}}
+          ref: "${{github.ref}}"
+
+      - name: Check if ${{github.event.inputs.environment}} Deployment has returned with a failure
+        if: steps.wait-for-deploy.outputs.conclusion == 'failure'
+        run: exit 1
+
+      - name: Check if ${{github.event.inputs.environment}} Deployment has returned with a time out
+        if: steps.wait-for-deploy.outputs.conclusion == 'timed_out'
+        run: exit 1
+
+      - name: Slack Release Notification
+        if: steps.tag_id.outputs.release_id && github.event.inputs.environment == 'Production'
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_SUCCESS}}
+          SLACK_TITLE: "Release Published to ${{github.event.inputs.environment}}: ${{steps.tag_id.outputs.release_name}}"
+          SLACK_MESSAGE: ${{ fromJson( steps.tag_id.outputs.release_body) }}
+          SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-RELEASE-NOTE-WEBHOOK }}
+          MSG_MINIMAL: true
+
+      - name: Slack Notification
+        if: failure() && github.event.inputs.environment == 'Production'
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_FAILURE}}
+          SLACK_TITLE: "Manual Release Failed: ${{steps.tag_id.outputs.release_name}}"
+          SLACK_MESSAGE: Failure deploying ${{github.event.inputs.environment}} release
+          SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
