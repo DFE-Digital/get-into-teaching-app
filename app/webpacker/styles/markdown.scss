@@ -23,6 +23,10 @@
     @include content-heading;
   }
 
+  p > .button {
+    margin-bottom: 1.5em;
+  }
+
   .accordions,
   .stories-feature,
   .feature-table,
