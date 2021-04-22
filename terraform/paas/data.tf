@@ -12,16 +12,6 @@ locals {
   application_secrets = yamldecode(data.azurerm_key_vault_secret.application.value)
 }
 
-data "azurerm_key_vault_secret" "docker_username" {
-  key_vault_id = data.azurerm_key_vault.vault.id
-  name         = "DOCKER-USERNAME"
-}
-
-data "azurerm_key_vault_secret" "docker_password" {
-  key_vault_id = data.azurerm_key_vault.vault.id
-  name         = "DOCKER-PASSWORD"
-}
-
 data "azurerm_key_vault_secret" "paas_username" {
   key_vault_id = data.azurerm_key_vault.vault.id
   name         = "PAAS-USERNAME"
