@@ -23,8 +23,31 @@
     @include content-heading;
   }
 
-  p > .button {
-    margin-bottom: 1.5em;
+  h2:not(:first-child),
+  .call-to-action {
+    margin-top: 1.5em;
+  }
+
+  h3 {
+    @include font-size(medium);
+    margin-bottom: 0.2em;
+  }
+
+  h4 {
+    @include font-size(small);
+    margin-bottom: 0.2em;
+  }
+
+  p,
+  table {
+    > .button {
+      margin-bottom: 1.5em;
+    }
+
+    + h3,
+    + h4 {
+      margin-top: 1.5em;
+    }
   }
 
   .accordions,
@@ -41,19 +64,6 @@
 
   .content-alert--left {
     margin-left: 0;
-  }
-
-  h2:not(:first-child),
-  .call-to-action {
-    margin-top: 1.5em;
-  }
-
-  h3 {
-    @include font-size(medium);
-  }
-
-  h4 {
-    @include font-size(small);
   }
 
   // stop the external icon from appearing inside CTA 'button' style links
