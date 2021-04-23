@@ -147,7 +147,7 @@ jobs:
           continue-after-seconds: 180
 
       - name: Start ${{ github.event.inputs.environment }} Deployment
-        uses: bobheadxi/deployments@v0.4.3
+        uses: bobheadxi/deployments@v0.5.2
         id: deployment
         with:
           step: start
@@ -169,7 +169,7 @@ jobs:
         run: |
             if [ "${{steps.variables.outputs.RUN_TEST}}" == "true" ]
             then
-                   tests/confidence/healthcheck.sh  "${{steps.variables.outputs.healthcheck}}"  "${{ steps.sha.outputs.short }}"
+                   tests/confidence/healthcheck.sh  "${{steps.variables.outputs.healthcheck}}"  "sha-${{ steps.sha.outputs.short }}"
             fi
         env:
           HTTPAUTH_PASSWORD: ${{ steps.azSecret.outputs.HTTP-PASSWORD }}
@@ -177,7 +177,7 @@ jobs:
 
       - name: Update ${{ github.event.inputs.environment }} status
         if: always()
-        uses: bobheadxi/deployments@v0.4.3
+        uses: bobheadxi/deployments@v0.5.2
         with:
           step: finish
           token: ${{ secrets.GITHUB_TOKEN }}
