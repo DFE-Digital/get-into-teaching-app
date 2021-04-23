@@ -263,7 +263,7 @@ en:
         email: Email address
         degree_status_id: Do you have a degree?
         preferred_teaching_subject_id: What would you like to teach?
-        consideration_journey_stage_id: TODO commitment level
+        consideration_journey_stage_id: How close are you to applying for teacher training?
 
     hint:
       events_steps_contact_details:
