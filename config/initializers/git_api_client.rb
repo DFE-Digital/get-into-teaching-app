@@ -13,7 +13,7 @@ GetIntoTeachingApiClient.configure do |config|
     config.base_path = parsed.path.gsub(%r{\A/api}, "")
   end
 
-  config.cache_store = Rails.cache
+  config.cache_store = Rails.application.config.x.api_client_cache_store
 
   config.circuit_breaker = {
     enabled: true,

@@ -46,9 +46,7 @@ describe "Instrumentation" do
   end
 
   describe "cache_read.active_support" do
-    include_context "stub latest privacy policy api"
-
-    after { get privacy_policy_path }
+    after { Rails.cache.read("test") }
 
     it "observes the :app_cache_read_total metric" do
       metric = registry.get(:app_cache_read_total)
