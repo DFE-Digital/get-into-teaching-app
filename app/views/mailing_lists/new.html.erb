@@ -14,23 +14,23 @@
 
     <%= f.govuk_collection_select(
       :consideration_journey_stage_id,
-      [OpenStruct.new(id: 1, name: "Unsure")],
+      f.object.consideration_journey_stages,
       :id,
-      :name,
+      :value,
     ) %>
 
     <%= f.govuk_collection_select(
       :degree_status_id,
-      [OpenStruct.new(id: 1, name: "Yes")],
+      f.object.degree_status_options,
       :id,
-      :name,
+      :value,
     ) %>
 
     <%= f.govuk_collection_select(
       :preferred_teaching_subject_id,
-      [OpenStruct.new(id: 1, name: "Maths")],
+      f.object.teaching_subjects,
       :id,
-      :name,
+      :value,
     ) %>
 
     <button class="button">Register</button>
