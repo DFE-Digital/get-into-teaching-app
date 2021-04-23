@@ -1,0 +1,38 @@
+<section class="registration__mailing-list">
+  <h1>Register for personalised updates</h1>
+
+  <p>Get emails on teaching events, school experience and your next steps.</p>
+
+  <%= govuk_form_for(@signup, url: '#') do |f| %>
+    <%= f.govuk_error_summary %>
+
+    <%= f.govuk_text_field(:first_name) %>
+
+    <%= f.govuk_text_field(:last_name) %>
+
+    <%= f.govuk_email_field(:email) %>
+
+    <%= f.govuk_collection_select(
+      :consideration_journey_stage_id,
+      [OpenStruct.new(id: 1, name: "Unsure")],
+      :id,
+      :name,
+    ) %>
+
+    <%= f.govuk_collection_select(
+      :degree_status_id,
+      [OpenStruct.new(id: 1, name: "Yes")],
+      :id,
+      :name,
+    ) %>
+
+    <%= f.govuk_collection_select(
+      :preferred_teaching_subject_id,
+      [OpenStruct.new(id: 1, name: "Maths")],
+      :id,
+      :name,
+    ) %>
+
+    <button class="button">Register</button>
+  <% end %>
+</section>

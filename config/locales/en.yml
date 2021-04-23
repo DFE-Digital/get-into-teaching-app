@@ -256,6 +256,15 @@ en:
       search:
         search: Search for ...
 
+      # one-page mailing list
+      mailing_list_signup:
+        first_name: First name
+        last_name: Last name
+        email: Email address
+        degree_status_id: Do you have a degree?
+        preferred_teaching_subject_id: What would you like to teach?
+        consideration_journey_stage_id: TODO commitment level
+
     hint:
       events_steps_contact_details:
         telephone: |-

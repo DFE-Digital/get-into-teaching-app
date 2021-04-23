@@ -99,6 +99,8 @@ Rails.application.routes.draw do
     end
   end
 
+  resource :mailing_list
+
   get "/guidance/*page", to: "guidance#show"
   get "*page", to: "pages#show", as: :page, constraints: ->(request) { !request.path.start_with?("/rails/") }
 end
