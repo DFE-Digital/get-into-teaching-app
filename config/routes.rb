@@ -99,7 +99,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resource :mailing_list
+  resource :mailing_list, path: "signup", as: "mailing_list_signup"
 
   get "/guidance/*page", to: "guidance#show"
   get "*page", to: "pages#show", as: :page, constraints: ->(request) { !request.path.start_with?("/rails/") }
