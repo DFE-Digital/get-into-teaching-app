@@ -88,8 +88,8 @@ module ApplicationHelper
     link_to text, path, **options
   end
 
-  def chat_link(text = "Chat to us")
-    link_to(text, "#", data: { controller: "talk-to-us", action: "talk-to-us#startChat" })
+  def chat_link(text = "Chat to us", classes: nil)
+    link_to(text, "#", class: classes, data: { controller: "talk-to-us", action: "talk-to-us#startChat" })
   end
 
   def internal_referer

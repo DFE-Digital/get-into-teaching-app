@@ -16,7 +16,7 @@ describe Content::FeatureTableComponent, type: "component" do
   end
 
   it { is_expected.to have_css(".feature-table") }
-  it { is_expected.to have_css("h2", text: title) }
+  it { is_expected.to have_css("h2##{title.parameterize}-table", text: title) }
   it { is_expected.to have_css("dl") }
 
   describe "within the definition list" do
