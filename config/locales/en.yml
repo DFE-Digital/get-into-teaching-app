@@ -180,6 +180,31 @@ en:
               blank: Accept the privacy policy to continue
               accepted: Accept the privacy policy to continue
 
+        # one-page mailing list
+        mailing_list/signup:
+          attributes:
+            first_name:
+              blank: Enter your first name
+            last_name:
+              blank: Enter your last name
+            email:
+              blank: Enter your full email address
+              invalid: Enter a valid email address
+            degree_status_id:
+              blank: Select your degree stage
+              inclusion: Select your degree stage from the list
+            consideration_journey_stage_id:
+              blank: Choose an option from the list
+              inclusion: Choose an option from the list
+            preferred_teaching_subject_id:
+              blank: Choose a subject from the list
+              inclusion: Choose a subject from the list
+            address_postcode:
+              invalid: Enter a valid postcode
+            accept_privacy_policy:
+              blank: Accept the privacy policy to continue
+              accepted: Accept the privacy policy to continue
+
         internal/event:
           attributes:
             name:

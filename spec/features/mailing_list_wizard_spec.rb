@@ -1,46 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Mailing list wizard", type: :feature do
-  let(:degree_status_option_types) do
-    GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
-      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
-    end
-  end
-
-  let(:consideration_journey_stage_types) do
-    GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
-      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
-    end
-  end
-
-  let(:teaching_subject_types) do
-    GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map do |k, v|
-      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
-    end
-  end
-
-  let(:channels) do
-    GetIntoTeachingApiClient::Constants::CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS.map do |k, v|
-      GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
-    end
-  end
-
-  let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
-
-  before do
-    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_qualification_degree_status).and_return(degree_status_option_types)
-    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
-    allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
-      receive(:get_teaching_subjects).and_return(teaching_subject_types)
-    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_candidate_mailing_list_subscription_channels).and_return(channels)
-    allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
-      receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
-    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:add_mailing_list_member)
-  end
+  include_context "wizard data"
 
   scenario "Full journey as a new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
