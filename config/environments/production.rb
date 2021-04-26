@@ -116,6 +116,8 @@ Rails.application.configure do
   config.x.author_password = ENV["AUTHOR_PASSWORD"].presence || \
     Rails.application.credentials.author_password.presence
 
+  config.x.api_client_cache_store = ActiveSupport::Cache::RedisCacheStore.new(namespace: "GIT-HTTP")
+
   # Configure Semantic Logging for production environments
   # This cannot be conditionally loaded so we use it all the time in production
   # like environments.

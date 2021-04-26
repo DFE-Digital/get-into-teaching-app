@@ -66,4 +66,6 @@ Rails.application.configure do
     Rails.application.credentials.author_username.presence
   config.x.author_password = ENV["AUTHOR_PASSWORD"].presence || \
     Rails.application.credentials.author_password.presence
+
+  config.x.api_client_cache_store = ActiveSupport::Cache::MemoryStore.new
 end
