@@ -59,13 +59,22 @@ shared_examples "an issue verification code wizard step" do
       end
     end
 
-    context "when a new candidate or CRM is unavailable" do
-      it "will skip the authenticate step" do
-        allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
-          .and_raise(GetIntoTeachingApiClient::ApiError)
-        subject.save
-        expect(wizardstore["authenticate"]).to be_falsy
-      end
+    it "will skip the authenticate step for new candidates" do
+      expect(Rails.logger).to receive(:info).with("#{described_class} requesting access code")
+      expect(Rails.logger).to_not receive(:info).with("#{described_class} potential duplicate (response code 404)")
+      allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
+        .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 404))
+      subject.save
+      expect(wizardstore["authenticate"]).to be_falsy
+    end
+
+    it "will skip the authenticate step if the CRM is unavailable" do
+      expect(Rails.logger).to receive(:info).with("#{described_class} requesting access code")
+      expect(Rails.logger).to receive(:info).with("#{described_class} potential duplicate (response code 500)")
+      allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
+        .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 500))
+      subject.save
+      expect(wizardstore["authenticate"]).to be_falsy
     end
 
     context "when the API rate limits the request" do
