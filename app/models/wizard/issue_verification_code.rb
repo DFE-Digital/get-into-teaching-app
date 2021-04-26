@@ -6,12 +6,16 @@ module Wizard
       @store.purge!
 
       if valid?
+        Rails.logger.info("#{self.class} requesting access code")
+
         begin
           request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(request_attributes)
           GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request)
           @store["authenticate"] = true
         rescue GetIntoTeachingApiClient::ApiError => e
           raise if e.code == 429
+
+          Rails.logger.info("#{self.class} potential duplicate (response code #{e.code})") unless e.code == 404
 
           # Existing candidate not found or CRM is currently unavailable.
           @store["authenticate"] = false
