@@ -24,6 +24,6 @@ jobs:
         uses: DFE-Digital/github-actions/AddTrelloComment@master
         with:
           MESSAGE:      ${{ github.event.pull_request.html_url }} 
-          CARD:         ${{ github.event.pull_request.body }}           
+          CARD:         "${{ github.event.pull_request.body }}"           
           TRELLO-KEY:   ${{ steps.azSecret.outputs.TRELLO-KEY}}
           TRELLO-TOKEN: ${{ steps.azSecret.outputs.TRELLO-TOKEN }}
