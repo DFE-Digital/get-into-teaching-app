@@ -205,7 +205,8 @@ describe ApplicationHelper do
 
   describe "#chat_link" do
     let(:text) { "Chat with us" }
-    subject { helper.chat_link(text) }
+    let(:extra_class) { "button" }
+    subject { helper.chat_link(text, classes: extra_class) }
 
     it %(generates a hyperlink) do
       expect(subject).to have_css("a")
@@ -217,6 +218,10 @@ describe ApplicationHelper do
 
     it %(has the right data action) do
       expect(subject).to have_css(%(a[data-action="talk-to-us#startChat"]))
+    end
+
+    it %(applies the correct class) do
+      expect(subject).to have_css(%(a.button))
     end
   end
 end
