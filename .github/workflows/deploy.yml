@@ -133,7 +133,7 @@ jobs:
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'HTTP-USERNAME, HTTP-PASSWORD'
+           secrets: 'HTTP-USERNAME, HTTP-PASSWORD, LOGIT-API'
 
       - uses: hashicorp/setup-terraform@v1.3.2
         with:
@@ -183,3 +183,16 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           status: ${{ job.status }}
           deployment_id: ${{ steps.deployment.outputs.deployment_id }}
+
+      - name: Log Deployment
+        if: always()
+        uses: DFE-Digital/github-actions/SendToLogit@master
+        with:
+           LOGIT-API-KEY: ${{ steps.azSecret.outputs.LOGIT-API }}
+           logtype: "github"
+           JSON: |
+                '{"Application" : "${{env.PAAS_APPLICATION_NAME}}", 
+                  "Status"      : "${{ job.status }}",
+                  "Action"      : "Deploy",                        
+                  "Environment" : "${{github.event.inputs.environment}}",              
+                  "Version"     : "${{ github.event.inputs.sha }}" }'
