@@ -3,7 +3,7 @@
 
   <p>Get emails on teaching events, school experience and your next steps.</p>
 
-  <%= govuk_form_for(@signup, url: '#') do |f| %>
+  <%= govuk_form_for(@signup, url: mailing_list_signup_path) do |f| %>
     <%= f.govuk_error_summary %>
 
     <%= f.govuk_text_field(:first_name) %>
@@ -32,6 +32,10 @@
       :id,
       :value,
     ) %>
+
+    <%= f.govuk_check_boxes_fieldset(:accept_privacy_policy, multiple: false, legend: { text: "Terms and conditions" }) do %>
+      <%= f.govuk_check_box :accept_privacy_policy, 1, 0, multiple: false, link_errors: true %>
+    <% end %>
 
     <button class="button">Register</button>
   <% end %>
