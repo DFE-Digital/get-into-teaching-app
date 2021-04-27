@@ -1,7 +1,10 @@
+require "attribute_filter"
+
 module MailingList
   class Signup
     include ActiveModel::Model
     include ActiveModel::Validations::Callbacks
+    include ::Wizard::ApiClientSupport
 
     MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
 
@@ -17,6 +20,7 @@ module MailingList
                   :degree_status_id
 
     before_validation :strip_whitespace
+    before_validation :convert_string_ids_to_integers
 
     validates :email,
               presence: true,
@@ -65,6 +69,28 @@ module MailingList
       @query_channels ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_mailing_list_subscription_channels
     end
 
+    def export_data
+      {
+        "email" => email,
+        "first_name" => first_name,
+        "last_name" => last_name,
+        "degree_status_id" => degree_status_id,
+        "consideration_journey_stage_id" => consideration_journey_stage_id,
+        "preferred_teaching_subject_id" => preferred_teaching_subject_id,
+        "accepted_policy_id" => accepted_policy_id,
+      }
+    end
+
+    def latest_privacy_policy
+      @latest_privacy_policy ||= GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
+    end
+
+    def add_member_to_mailing_list!
+      request = GetIntoTeachingApiClient::MailingListAddMember.new(export_camelized_hash)
+      Rails.logger.info("MailingList::Signup#add_mailing_list_member!: #{::AttributeFilter.filtered_json(request)}")
+      api.add_mailing_list_member(request)
+    end
+
   private
 
     def query_degree_status
@@ -97,14 +123,19 @@ module MailingList
       query_channels.map { |channel| channel.id.to_i }
     end
 
-    def latest_privacy_policy
-      @latest_privacy_policy ||= GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
-    end
-
     def strip_whitespace
       email&.strip!
       first_name&.strip!
       last_name&.strip!
+    end
+
+    def convert_string_ids_to_integers
+      self.degree_status_id = degree_status_id.to_i
+      self.consideration_journey_stage_id = consideration_journey_stage_id.to_i
+    end
+
+    def api
+      GetIntoTeachingApiClient::MailingListApi.new
     end
   end
 end

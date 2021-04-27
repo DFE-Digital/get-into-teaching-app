@@ -5,6 +5,8 @@
 
   <%= govuk_form_for(@signup, url: mailing_list_signup_path) do |f| %>
     <%= f.govuk_error_summary %>
+    <%= f.hidden_field(:channel_id, value: params[:channel]) %>
+    <%= f.hidden_field :accepted_policy_id, value: @signup.latest_privacy_policy.id %>
 
     <%= f.govuk_text_field(:first_name) %>
 

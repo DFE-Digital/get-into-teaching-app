@@ -10,11 +10,16 @@ class MailingListSignupsController < ApplicationController
     @signup = MailingList::Signup.new(new_signup_params)
 
     if @signup.valid?
-      # check if they've already signed up
+      # TODO: check if they've already signed up
       #
-      # if yes, save their data to the session and redirect to #update (/personalised-updates/verify)
+      #   if yes, save their data to the session and redirect to #update
+      #   (/personalised-updates/verify)
       #
-      # if no, submit their data to the API
+      #   if no, submit their data to the API
+      @signup.add_member_to_mailing_list!
+
+      redirect_to mailing_list_step_path("completed")
+
     else
       render :new
     end
