@@ -16,6 +16,8 @@
     Extra financial support for parents and carers: "#extra-financial-support-for-parents-and-carers"
     Extra financial support for students with disabilities: "#extra-financial-support-for-students-with-disabilities"
     Applying for funding if you come from outside England: "#applying-for-funding-if-you-come-from-outside-england"
+  before-content:
+    - content/funding-your-training/funding-widget
   calls_to_action:
     chat:
       name: chat_online
@@ -82,7 +84,7 @@
     - Adult Dependants’ Grant
     - Disabled students
     - Disabled Students’ Allowances
-    
+
 ---
 
 

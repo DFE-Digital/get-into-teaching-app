@@ -95,6 +95,11 @@ en:
         already_exchanged: "This link has been used already. Enter the details below to help us verify you."
 
       models:
+        funding_widget:
+          attributes:
+            subject:
+              blank: Select a subject
+
         wizard/steps/authenticate:
           attributes:
             timed_one_time_password:

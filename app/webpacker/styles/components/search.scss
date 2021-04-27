@@ -11,22 +11,9 @@
     margin-bottom: 5px;
   }
 
-  &__field--error {
-    input,
-    select {
-      border-color: $red;
-    }
-  }
-
   &__controls {
     @include cards-grid(4);
 
     margin: $indent-amount 0;
-  }
-
-  &__errors {
-    color: $red;
-    font-weight: bold;
-    margin-bottom: $indent-amount;
   }
 }
