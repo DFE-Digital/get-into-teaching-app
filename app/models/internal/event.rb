@@ -25,7 +25,7 @@ module Internal
     attribute :provider_target_audience, :string
     attribute :provider_website_url, :string
     attribute :building
-    attribute :venue_type, type: VENUE_TYPES, default: VENUE_TYPES[:none]
+    attribute :venue_type, default: VENUE_TYPES[:none]
 
     validates :name, presence: true, allow_blank: false, length: { maximum: 300 }
     validates :readable_id, presence: true, allow_blank: false, length: { maximum: 300 }
@@ -43,12 +43,14 @@ module Internal
     validates :provider_organiser, presence: true, allow_blank: false, length: { maximum: 300 }
     validates :provider_target_audience, presence: true, allow_blank: false, length: { maximum: 500 }
     validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: 300 }
+    validates :venue_type, inclusion: { in: VENUE_TYPES.values }
     validates_each :start_at, :end_at do |record, attr, value|
       unless value.nil?
         record.errors.add attr, "Must be in the future" if value <= Time.zone.now
       end
     end
     validate :end_after_start
+    validate :existing_building_present
 
     def self.initialize_with_api_event(api_event)
       hash = convert_attributes_from_api_model(api_event)
@@ -121,6 +123,12 @@ module Internal
 
       if end_at <= start_at
         errors.add(:end_at, "Must be after the start date")
+      end
+    end
+
+    def existing_building_present
+      if venue_type == VENUE_TYPES[:existing] && building&.id.nil?
+        errors.add(:venue_type, "You must select an existing building")
       end
     end
   end
