@@ -45,11 +45,11 @@ describe MailingList::Signup do
 
     describe "#preferred_teaching_subject_id" do
       let(:teaching_subjects) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS }
+      let(:message) { "Choose a subject from the list" }
 
-      it { is_expected.to validate_presence_of(:preferred_teaching_subject_id) }
+      it { is_expected.to validate_presence_of(:preferred_teaching_subject_id).with_message(message) }
 
       describe "values" do
-        let(:message) { "Choose a subject from the list" }
         specify "allows teaching subject values" do
           teaching_subjects.each_value do |ts|
             expect(subject).to allow_value(ts).for(:preferred_teaching_subject_id)
@@ -68,7 +68,7 @@ describe MailingList::Signup do
       let(:journey_stages) { GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_journey_stages }
       let(:message) { "Choose an option from the list" }
 
-      it { is_expected.to validate_presence_of(:consideration_journey_stage_id) }
+      it { is_expected.to validate_presence_of(:consideration_journey_stage_id).with_message(message) }
 
       describe "values" do
         specify "allows teaching subject values" do
@@ -89,7 +89,7 @@ describe MailingList::Signup do
       let(:degree_statuses) { GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_status }
       let(:message) { "Select your degree stage from the list" }
 
-      it { is_expected.to validate_presence_of(:degree_status_id) }
+      it { is_expected.to validate_presence_of(:degree_status_id).with_message(message) }
 
       describe "values" do
         specify "allows teaching subject values" do
