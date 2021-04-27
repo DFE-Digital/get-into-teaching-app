@@ -50,6 +50,14 @@
     }
   }
 
+  > iframe {
+    width: 90%;
+    height: 18em;
+
+    @include mq($from: tablet) { height: 21em; }
+    @include mq($from: desktop) { height: 24em; }
+  }
+
   .accordions,
   .stories-feature,
   .feature-table,
