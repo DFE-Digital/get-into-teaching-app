@@ -97,6 +97,23 @@ describe Internal::Event do
       it { is_expected.to_not allow_value("", nil).for :provider_website_url }
       it { is_expected.to validate_length_of(:provider_website_url).is_at_most(300) }
     end
+
+    describe "#venue_type" do
+      it { is_expected.to allow_values(described_class::VENUE_TYPES.values).for :venue_type }
+      it { is_expected.not_to allow_values(:other, nil, "").for :venue_type }
+
+      context "when building is nil" do
+        before { subject.building = nil }
+
+        it { is_expected.to_not allow_value(described_class::VENUE_TYPES[:existing]).for :venue_type }
+      end
+
+      context "when building.id is nil" do
+        before { subject.building = build(:event_building, id: nil) }
+
+        it { is_expected.to_not allow_value(described_class::VENUE_TYPES[:existing]).for :venue_type }
+      end
+    end
   end
 
   describe "#initialize_with_api_event" do
@@ -124,7 +141,7 @@ describe Internal::Event do
         let(:expected_building_attributes) { attributes_for(:event_building_api, id: api_event.building.id) }
 
         it "has correct attributes" do
-          expected_attributes["venue_type"] = Internal::Event::VENUE_TYPES[:existing]
+          expected_attributes["venue_type"] = described_class::VENUE_TYPES[:existing]
           internal_event = described_class.initialize_with_api_event(api_event)
 
           expect(internal_event).to have_attributes(expected_attributes)
@@ -135,7 +152,7 @@ describe Internal::Event do
       context "without building" do
         it "has correct attributes" do
           api_event.building = nil
-          expected_attributes["venue_type"] = Internal::Event::VENUE_TYPES[:none]
+          expected_attributes["venue_type"] = described_class::VENUE_TYPES[:none]
           internal_event = described_class.initialize_with_api_event(api_event)
 
           expect(internal_event).to have_attributes(expected_attributes)
@@ -282,7 +299,7 @@ describe Internal::Event do
         let(:attributes) { attributes_for(:event_building_api, id: building.id) }
         it "sets building based on id" do
           event = described_class.new
-          event.venue_type = Internal::Event::VENUE_TYPES[:existing]
+          event.venue_type = described_class::VENUE_TYPES[:existing]
           allow(event).to receive(:buildings) { [building] }
           event.assign_building(building.to_hash)
           expect(event.building).to have_attributes(attributes)
@@ -292,7 +309,7 @@ describe Internal::Event do
           let(:building) { build(:event_building_api, id: nil) }
           it "returns nil" do
             event = described_class.new
-            event.venue_type = Internal::Event::VENUE_TYPES[:existing]
+            event.venue_type = described_class::VENUE_TYPES[:existing]
             expect(event.assign_building(building.to_hash)).to be_nil
           end
         end
@@ -303,7 +320,7 @@ describe Internal::Event do
       let(:building) { attributes_for(:event_building) }
       it "sets building with no id" do
         event = described_class.new
-        event.venue_type = Internal::Event::VENUE_TYPES[:add]
+        event.venue_type = described_class::VENUE_TYPES[:add]
         event.assign_building(building.to_hash)
 
         expect(event.building).to have_attributes(building.except(:id))
@@ -314,14 +331,14 @@ describe Internal::Event do
       let(:building) { attributes_for(:event_building) }
       it "returns nil" do
         event = described_class.new
-        event.venue_type = Internal::Event::VENUE_TYPES[:none]
+        event.venue_type = described_class::VENUE_TYPES[:none]
         expect(event.assign_building(building.to_hash)).to be_nil
       end
     end
   end
 
   describe "#invalid" do
-    let(:event) { build(:internal_event) }
+    let(:event) { build(:internal_event, venue_type: described_class::VENUE_TYPES[:none]) }
 
     context "when event is valid" do
       it "returns false when building is invalid" do
@@ -335,6 +352,7 @@ describe Internal::Event do
       end
 
       it "returns false when building is valid" do
+        event.venue_type = described_class::VENUE_TYPES[:existing]
         allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?) { false }
         expect(event.invalid?).to be false
       end

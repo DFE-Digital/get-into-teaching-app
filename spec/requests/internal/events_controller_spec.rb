@@ -193,28 +193,6 @@ describe Internal::EventsController do
         end
       end
 
-      context "when \"select a venue\" is selected and a venue has not been chosen" do
-        let(:params) do
-          attributes_for :internal_event,
-                         { "venue_type": Internal::Event::VENUE_TYPES[:existing], "building": { "id": "" } }
-        end
-        it "should post no building" do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [pending_event.building] }
-
-          expected_request_body.building = nil
-
-          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:upsert_teaching_event).with(expected_request_body)
-
-          post internal_events_path,
-               headers: generate_auth_headers(:author),
-               params: { internal_event: params }
-
-          expect(response).to redirect_to(internal_events_path(success: :pending))
-        end
-      end
-
       context "when \"no venue\" is selected" do
         let(:params) do
           attributes_for(:internal_event, { "venue_type": Internal::Event::VENUE_TYPES[:none], "building": { "id": "" } })

@@ -39,7 +39,7 @@
     <%= f.fields_for :building, @event.building do |b| %>
       <%= b.govuk_error_summary unless @event.building.nil? %>
       <%= f.govuk_radio_buttons_fieldset(:venue_type, legend: { size: 'm', text: 'Event venue' }) do %>
-        <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:none], label: { text: 'No venue' } %>
+        <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:none], label: { text: 'No venue' }, link_errors: true %>
         <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:existing], label: { text: 'Search existing venues' } do %>
           <%= b.govuk_collection_select :id,
                                         f.object.buildings,
