@@ -19,7 +19,6 @@
 # Ignore local databases
 /db/*.sqlite*
 
-/public/assets
 .byebug_history
 
 # Ignore master key for decrypting credentials and more.
@@ -34,7 +33,10 @@ yarn-debug.log*
 .env
 .env*.local
 *.log
-app/views/content
 /config/credentials/*.key
 /coverage
 .idea
+.terraform/
+tokens
+terraform.tfstate
+terraform.tfstate.backup

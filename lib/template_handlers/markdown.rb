@@ -32,7 +32,7 @@ module TemplateHandlers
 
     def call
       # inspect objects to Ruby strings which can be eval'd
-      return %(#{render.inspect}.html_safe) if front_matter.empty?
+      return %(#{render.inspect}.html_safe) if front_matter == TemplateHandlers::Markdown.global_front_matter
 
       %(@front_matter = #{front_matter.inspect}; #{render.inspect}.html_safe)
     end

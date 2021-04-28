@@ -4,24 +4,20 @@ on:
     types: [assigned, opened, synchronize, reopened]
   push:
     branches: [ master ]
-env:
-  CONTENT_REPOSITORY: DFE-Digital/get-into-teaching-content
-  SLACK_FAILURE:         '#ff0000'
-  SLACK_SUCCESS:         '#00ff00'
-  SLACK_ICON:            https://raw.githubusercontent.com/DFE-Digital/get-into-teaching-api/master/.github/image.png?size=48
-  SLACK_USERNAME:        GiT Workflows
-  SLACK_FOOTER:          Get Into Teaching Application
-  DOCKERHUB_REPOSITORY:  dfedigital/get-into-teaching-web
-  DOMAIN:                london.cloudapps.digital
-  APPLICATION:           Get Into Teaching Application (code)
 
 jobs:
   build:
-    name: Build and Deploy
+    name: Build ${{github.ref}}
     runs-on: ubuntu-latest
+    outputs:
+      DOCKER_IMAGE: ${{ steps.docker.outputs.DOCKER_IMAGE }}
+
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
 
       - uses: Azure/login@v1
         with:
@@ -31,15 +27,12 @@ jobs:
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'SONAR-TOKEN, SLACK-WEBHOOK, DOCKER-USERNAME, DOCKER-PASSWORD'
+           secrets: 'ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK'
 
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@master
         with:
              dockerfile: "Dockerfile"
-
-      - name: Setup sonarqube
-        uses: warchant/setup-sonar-scanner@v3 
 
       - name: Set up Docker Buildx
         id: buildx
@@ -47,7 +40,18 @@ jobs:
 
       - name: Get Short SHA
         id: sha
-        run: echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
+        run: |
+             echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
+
+      - name: Set DOCKER_IMAGE environment variable
+        id:   docker
+        run: |
+             if [ "${{github.ref}}" == "refs/heads/master" ] 
+             then
+                echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
+             else
+                echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:review-${{steps.sha.outputs.short }}
+             fi
 
       - name: Cache Docker layers
         uses: actions/cache@v2.1.5
@@ -60,8 +64,9 @@ jobs:
       - name: Login to Docker Hub
         uses: docker/login-action@v1
         with:
-          username: ${{ steps.azSecret.outputs.DOCKER-USERNAME }}
-          password: ${{ steps.azSecret.outputs.DOCKER-PASSWORD }}
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
 
       - name: Build and push to Docker Hub
         uses: docker/build-push-action@v2
@@ -70,58 +75,132 @@ jobs:
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
           tags: |
-                 ${{env.DOCKERHUB_REPOSITORY}}:sha-${{ steps.sha.outputs.short }}
+                 ${{ steps.docker.outputs.DOCKER_IMAGE }}
           push: true
           build-args: |
                       SHA=${{ steps.sha.outputs.short }}
 
-      - name: Set DOCKER_IMAGE environment variable
-        id:   docker
+      - name: Slack Notification
+        if: failure() && github.ref == 'refs/heads/master'
+        uses: rtCamp/action-slack-notify@master
+        env:
+           SLACK_COLOR: ${{env.SLACK_ERROR}}
+           SLACK_MESSAGE: 'There has been a failure building the application'
+           SLACK_TITLE: 'Failure Building Application'
+           SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
+
+
+  master_tests:
+    name: Unit Tests (Master Branch)
+    runs-on: ubuntu-latest
+    needs: [ build ]
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'SLACK-WEBHOOK, ACTIONS-API-ACCESS-TOKEN'
+
+      - name: Check Content pages
         run: |-
-          echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKERHUB_REPOSITORY }}:sha-$(echo "${{ github.sha }}" | cut -c -7)
+          docker run -t --rm -e RAILS_ENV=test \
+            ${{ needs.build.outputs.DOCKER_IMAGE }} \
+            rspec --format documentation spec/features/content_pages_spec.rb
+
+      - name: Slack Notification
+        if: failure() 
+        uses: rtCamp/action-slack-notify@master
+        env:
+           SLACK_COLOR: ${{env.SLACK_ERROR}}
+           SLACK_MESSAGE: 'There has been a failure unit testing the application'
+           SLACK_TITLE: 'Failure Unit Testing Application'
+           SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
+
+  javascript_tests:
+    name: Javascript Tests
+    runs-on: ubuntu-latest
+    needs: [ build ]
+    if: github.ref != 'refs/heads/master'
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - name: Run Javascript Tests
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
+            ${{needs.build.outputs.DOCKER_IMAGE}} "yarn && yarn spec"
+
+  feature_tests:
+    name: Unit Tests (Feature Branch)
+    runs-on: ubuntu-latest
+    needs: [ build ]
+    if: github.ref != 'refs/heads/master'
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'SONAR-TOKEN, SLACK-WEBHOOK'
+
+      - name: Lint Ruby
+        run: |-
+          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
+            rubocop --format json --out=/app/out/rubocop-result.json
+
+      - name: Keep Rubocop output
+        uses: actions/upload-artifact@v2
+        with:
+          name: Rubocop_results
+          path: ${{ github.workspace }}/out/rubocop-result.json
 
       - name: Run Specs
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}} \
+          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
             rspec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
 
       - name: Fixup report file paths
         run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/coverage.json
 
       - name:  Keep Code Coverage Report
-        if:  always()
+        if: always() 
         uses: actions/upload-artifact@v2
         with:
           name: Code_Coverage
           path: ${{ github.workspace }}/coverage/*
 
       - name:  Keep Unit Tests Results
-        if:  always()
+        if: always() 
         uses: actions/upload-artifact@v2
         with:
           name: unit_tests
           path: ${{ github.workspace }}/out/*
 
-      - name: Run Javascript Tests
-        run: |-
-          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{steps.docker.outputs.DOCKER_IMAGE}} "yarn && yarn spec"
-
-      - name: Lint Ruby
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}} \
-            rubocop --format json --out=/app/out/rubocop-result.json
-
-      - name: Keep Rubocop output
-        if:  always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Rubocop_results
-          path: ${{ github.workspace }}/out/rubocop-result.json
-
-      - name: Run Brakeman static security scanner
-        run: |-
-          docker run -t --rm -e RAILS_ENV=test ${{steps.docker.outputs.DOCKER_IMAGE}}  brakeman --no-pager
+      - name: Setup sonarqube
+        uses: warchant/setup-sonar-scanner@v3 
 
       - name: Run sonarqube
         env:
@@ -135,24 +214,118 @@ jobs:
            -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/coverage.json
            -Dsonar.ruby.rubocop.reportPaths=${PWD}/out/rubocop-result.json
 
-      - name: Slack Notification
-        if: failure() && github.ref == 'refs/heads/master'
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: 'There has been a failure building the MASTER branch of the application and deploying it to Development.'
-           SLACK_TITLE: 'Failure Building Application'
-           SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
-
-  update_content_repo:
-    name: Update the base image used in the Content repo
+  security_tests:
+    name: Security Tests
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
-    needs: build
+    needs: [ build ]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'SLACK-WEBHOOK'
+
+      - name: Scan image
+        uses: anchore/scan-action@v2
+        with:
+          image: ${{needs.build.outputs.DOCKER_IMAGE}}
+          fail-build: false
+          severity-cutoff: high
+          acs-report-enable: true
+
+      - name: upload Anchore scan SARIF report
+        if: always()
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: results.sarif
+
+      - name: Run Brakeman static security scanner
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}}  brakeman --no-pager
+
+  review:
+    name: Review Deployment Process
+    needs: [  javascript_tests , feature_tests , security_tests ]
+    if: github.ref != 'refs/heads/master'  
+    runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-        
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK'
+
+      - name: Trigger Review Deployment
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+          workflow: Deploy to PaaS
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          inputs: '{"environment": "Review", "sha": "${{ github.sha }}" , "pr": "${{github.event.number}}"  }'
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Wait for Deployment to Review
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-review
+        with:
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          checkName: Deploy Review
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Check if Review Deployment has returned with a failure
+        if: steps.wait-for-review.outputs.conclusion == 'failure'
+        run: exit 1
+
+      - name: Post PR comment
+        run: |
+          curl --silent  \
+               --header "Accept: application/vnd.github.v3+json" \
+               --header "Authorization: Bearer ${{ github.token }}" \
+               --request POST \
+               --data '{"body": "Review app deployed to https://${{env.REVIEW_APPLICATION}}-${{github.event.number}}.${{env.DOMAIN}} "}'  \
+               https://api.github.com/repos/${{ github.repository }}/issues/${{github.event.number }}/comments
+
+      - name: Add Review Label
+        if: contains(github.event.pull_request.user.login, 'dependabot') == false
+        uses: actions-ecosystem/action-add-labels@v1
+        with:
+          github_token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          labels: Review
+
+  development:
+    name: Development Deployment
+    needs: [  javascript_tests , master_tests , security_tests ]
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    outputs:
+      release_tag: ${{steps.tag_version.outputs.pr_number}}
+      release_sha: ${{github.sha }}
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
       - uses: Azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
@@ -163,71 +336,254 @@ jobs:
            keyvault: ${{ secrets.KEY_VAULT}}
            secrets: 'SLACK-WEBHOOK, ACTIONS-API-ACCESS-TOKEN'
 
-      - name: Set short sha
-        id: sha
-        run: echo ::set-output name=short::$(echo "${{ github.sha }}" | cut -c -7)
+      - name: Trigger Development Deployment
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+          workflow: Deploy to PaaS
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          inputs: '{"environment": "Development", "sha": "${{ github.sha }}"}'
+          ref: ${{github.ref}}
 
-      - name: Set docker-image variable
-        id: docker-image
-        run: |-
-          echo ::set-output name=image::${{ env.DOCKERHUB_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
-
-      - name: Print discovered docker-image variable
-        run: |-
-          echo "DOCKER IMAGE: '${{ steps.docker-image.outputs.image }}'"
-
-      - name: Generate commit message
-        run: |-
-          echo "Updated base image to ${{ steps.sha.outputs.short}}" > commit.msg
-          echo >> commit.msg
-          echo ${{ steps.docker-image.outputs.image }} >> commit.msg
-          echo >> commit.msg
-          echo "-----" >> commit.msg
-          echo >> commit.msg
-          git show -s --format=%B HEAD >> commit.msg
-          echo >> commit.msg
-
-      - name: Check out the Content
-        uses: actions/checkout@v2
+      - name: Wait for Deployment to Development
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-deploy
         with:
           token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
-          repository: ${{ env.CONTENT_REPOSITORY }}
-          path: content
+          checkName: Deploy Development
+          ref: ${{github.ref}}
 
-      - name: List content repo
-        run: cd content && ls
-        
-      - name: Update Dockerfile
-        run: |-
-          sed -i "s~FROM .*~FROM ${{ steps.docker-image.outputs.image }}~" content/Dockerfile
+      - name: Check if Development Deployment has returned with a failure
+        if: steps.wait-for-deploy.outputs.conclusion == 'failure'
+        run: exit 1
 
-      - name: Print updated Dockerfile
-        run: cat content/Dockerfile
+      - name: Trigger OWASP Testing
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+          workflow: owasp
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          inputs: '{"environment": "dev"}'
 
-      - name: Commit changes to Dockerfile
-        run: |-
-          cd content
-          git config user.name "GiT Workflow Bot"
-          git config user.email "<>"
-          git add Dockerfile
-          git commit -F ../commit.msg
-
-      - name: Show last commit
-        run: |-
-          cd content
-          git show HEAD
+      - name: Trigger Development Fix Network Policies
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+          repo: DFE-Digital/get-into-teaching-api
+          workflow: Fix Network policies 
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          inputs: '{"environment": "Development" }'
+           
+      - name: Generate Tag from PR Number
+        id: tag_version
+        uses: DFE-Digital/github-actions/GenerateReleaseFromSHA@master
+        with:
+          sha: ${{github.sha}}
+            
+      - name: Create a GitHub Release
+        id: release
+        if: steps.tag_version.outputs.pr_found == 1
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ steps.tag_version.outputs.pr_number }} 
+          body: ${{ steps.tag_version.outputs.pr_number }}
+          release_name: Release ${{ steps.tag_version.outputs.pr_number }}
+          commitish: ${{ github.sha}}
+          prerelease: false
+          draft: false
           
-      - name: Push the commit
-        run: |-
-          cd content
-          git push origin master
-          
+      - name: Copy PR Info to Release
+        if: steps.release.outputs.id      
+        uses: DFE-Digital/github-actions/CopyPRtoRelease@master
+        with:
+          PR_NUMBER:  ${{ steps.tag_version.outputs.pr_number }}
+          RELEASE_ID: ${{ steps.release.outputs.id }}
+          TOKEN: ${{secrets.GITHUB_TOKEN}}          
+
+  qa:
+    name: Quality Assurance Deployment
+    needs: [ development ]
+    if: github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'SLACK-WEBHOOK, ACTIONS-API-ACCESS-TOKEN'
+
+      - name: Trigger Deployment to QA
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+          workflow: Deploy to PaaS
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          inputs: '{"environment": "Test", "sha": "${{ github.sha }}" }'
+          ref: ${{github.ref}}
+
+      - name: Wait for Deployment to QA
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-deploy
+        with:
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          checkName: Deploy Test
+          ref: ${{github.ref}}
+
+      - name: Trigger Test Fix Network Policies
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+         repo: DFE-Digital/get-into-teaching-api
+         workflow: Fix Network policies 
+         token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+         inputs: '{"environment": "Test" }'
+         
+      - name: Check if QA Deployment has returned with a failure
+        if: steps.wait-for-deploy.outputs.conclusion == 'failure'
+        run: exit 1
+
       - name: Slack Notification
         if: failure()
         uses: rtCamp/action-slack-notify@master
         env:
-          SLACK_COLOR: ${{ env.SLACK_ERROR }}
-          SLACK_MESSAGE: 'Failure Initialising Content Deployment'
-          SLACK_TITLE: 'Failure: ${{ github.workflow }}'
+          SLACK_COLOR: ${{env.SLACK_ERROR}}
+          SLACK_TITLE: Failure in Post-Development Deploy
+          SLACK_MESSAGE: Failure with initialising QA deployment for ${{env.APPLICATION}}
+          SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
+
+  cypress:
+    name: Run Cypress Tests on QA
+    runs-on: ubuntu-latest
+    needs: [ qa ]
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+        
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'ACTIONS-API-ACCESS-TOKEN'
+
+      - name: Trigger Cypress Tests (DFE-Digital/get-into-teaching-frontend-tests )
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+          repo: DFE-Digital/get-into-teaching-frontend-tests
+          workflow: Cypress
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          inputs: '{"application": "APP" , "reference": "${{ github.sha }}" }'
+          ref: refs/heads/master
+
+      - name: Wait for Cypress Tests
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-tests
+        with:
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          checkName: ${{ github.sha }}
+          ref: refs/heads/master
+          repo: get-into-teaching-frontend-tests
+          intervalSeconds: 30
+          timeoutSeconds: 300
+
+      - name: Check for test failure
+        if: steps.wait-for-tests.outputs.conclusion == 'failure'
+        run: exit 1
+
+  production:
+    name: Production Deployment
+    runs-on: ubuntu-latest
+    needs: [ cypress, development ]
+    if: github.ref == 'NEVER_NEVER_NEVER'
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: Azure/get-keyvault-secrets@v1
+        id:   azSecret
+        with:
+           keyvault: ${{ secrets.KEY_VAULT}}
+           secrets: 'ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK, SLACK-RELEASE-NOTE-WEBHOOK'
+
+      - name: Get Release Id from Tag
+        id: tag_id
+        uses: DFE-Digital/github-actions/DraftReleaseByTag@master
+        with:
+          TAG: ${{needs.development.outputs.release_tag}}
+          TOKEN: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+
+      - name: Publish Release
+        if: steps.tag_id.outputs.release_id
+        uses: eregon/publish-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release_id: ${{steps.tag_id.outputs.release_id}}
+
+      - name: Trigger Deployment to Production
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+          workflow: Deploy to PaaS
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          inputs: '{"environment": "Production", "sha": "${{ github.sha }}" }'
+          ref: ${{github.ref}}
+
+      - name: Wait for Deployment to Production
+        uses: fountainhead/action-wait-for-check@v1.0.0
+        id: wait-for-deploy
+        with:
+          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          checkName: Deploy Production
+          ref: ${{github.ref}}
+
+      - name: Check if Production Deployment has returned with a failure
+        if: steps.wait-for-deploy.outputs.conclusion == 'failure'
+        run: exit 1
+
+      - name: Trigger Production Fix Network Policies
+        uses: benc-uk/workflow-dispatch@v1.1
+        with:
+         repo: DFE-Digital/get-into-teaching-api
+         workflow: Fix Network policies 
+         token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+         inputs: '{"environment": "Production" }'
+
+      - name: Slack Release Notification
+        if: steps.tag_id.outputs.release_id
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_SUCCESS}}
+          SLACK_TITLE: "Release Published: ${{steps.tag_id.outputs.release_name}}"
+          SLACK_MESSAGE: ${{ fromJson( steps.tag_id.outputs.release_body) }}
+          SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-RELEASE-NOTE-WEBHOOK }}
+          MSG_MINIMAL: true
+
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_FAILURE}}
+          SLACK_TITLE: Production Release ${{github.event.title}}
+          SLACK_MESSAGE: Failure deploying Production release
           SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
 
