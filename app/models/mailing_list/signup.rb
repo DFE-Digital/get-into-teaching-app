@@ -3,24 +3,25 @@ require "attribute_filter"
 module MailingList
   class Signup
     include ActiveModel::Model
+    include ActiveModel::Attributes
     include ActiveModel::Validations::Callbacks
     include ::Wizard::ApiClientSupport
 
     MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
 
-    attr_accessor :preferred_teaching_subject_id,
-                  :consideration_journey_stage_id,
-                  :accept_privacy_policy,
-                  :accepted_policy_id,
-                  :address_postcode,
-                  :first_name,
-                  :last_name,
-                  :email,
-                  :channel_id,
-                  :degree_status_id
+    attribute :accept_privacy_policy, :string
+    attribute :accepted_policy_id, :string
+    attribute :address_postcode, :string
+    attribute :email, :string
+    attribute :first_name, :string
+    attribute :last_name, :string
+    attribute :preferred_teaching_subject_id, :string
+
+    attribute :channel_id, :integer
+    attribute :consideration_journey_stage_id, :integer
+    attribute :degree_status_id, :integer
 
     before_validation :strip_whitespace
-    before_validation :convert_string_ids_to_integers
 
     validates :email,
               presence: true,
@@ -127,11 +128,6 @@ module MailingList
       email&.strip!
       first_name&.strip!
       last_name&.strip!
-    end
-
-    def convert_string_ids_to_integers
-      self.degree_status_id = degree_status_id.to_i
-      self.consideration_journey_stage_id = consideration_journey_stage_id.to_i
     end
 
     def api
