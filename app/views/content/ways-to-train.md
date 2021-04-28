@@ -46,23 +46,21 @@ keywords:
 
 You need ‘qualified teacher status’ (QTS) to work in the majority of schools in England including state maintained primary, secondary and special schools.
 
-There are different ways to get qualified teacher status, for example:
+There are different ways to get qualified teacher status.
 
-* [if you want to go to university as a postgraduate student](#go-to-university-as-a-postgraduate-student)
+If you have a degree you can [go back to university as a postgraduate student](#go-back-to-university-as-a-postgraduate-student) or [find training led by a school or group of schools](#training-led-by-a-school-or-group-of-schools).
 
-* [if you want to learn on the job in schools near you](#learn-on-the-job-in-schools-near-you)
+[If you do not have a degree](#if-you-do-not-have-a-degree) you can do an undergraduate course.
 
-* [if you do not have a degree](#if-you-do-not-have-a-degree)
+[Already have teaching experience?](#if-you-already-have-teaching-experience) You may be able to get qualified teacher status within 12 weeks.
 
-* [if you already have teaching experience](#if-you-already-have-teaching-experience)
-
-You can also find specialised programmes [if you're a career changer](#if-youre-a-career-changer) or [if you have a doctorate](#if-you-have-a-doctorate).
+You can also find specialised programmes [if you're changing changer](#if-youre-changing-career) or [if you have a doctorate](#if-you-have-a-doctorate).
 
 Not looking for primary or secondary teacher training? Consider teaching [early years](/early-years-teaching-training) or [further education](/further-education-teacher-training).
 
-### Return to university as a postgraduate student
+### Go back to university as a postgraduate student
 
-If you already have a degree and want to go to university again, you can do a university-led PGCE or PGDE leading to qualified teacher status.
+You can do a university-led PGCE or PGDE leading to qualified teacher status if you already have a degree.
 
 A PGCE or PGDE is an academic qualification that you can use towards masters credits.
 
@@ -76,9 +74,9 @@ You can also apply for a [student loan](/funding-your-training).
 
 <a class="button" href="https://www.find-postgraduate-teacher-training.service.gov.uk/">Find university training</a>
 
-### Learn on the job in schools near you
+### Training led by a school or group of schools
 
-If you already have a degree and want to spend as much time as possible in practical learning, you can find a training programme led by a school or group of schools.
+If you already have a degree you can learn as you teach in a school or group of schools.
 
 You'll only spend about about a fifth of your time in academic learning.
 
@@ -90,7 +88,7 @@ Although you often have to pay course fees of around £9,250 you can get [fundin
 
 You can also apply for a [student loan](/funding-your-training).
 
-Some training programmes offer a salary, although these can be harder to find.
+Some training programmes offer a salary, although you may need transferable work experience. 
 
 <a class="button" href="https://www.find-postgraduate-teacher-training.service.gov.uk/">Find courses near you</a>
 
@@ -110,11 +108,11 @@ Courses typically cost £9,250 per year and can take up to 4 years but you can [
 
 ### If you already have teaching experience
 
-If you have a degree and you're an experienced teacher, you may be able to get qualified teacher status through a 12-week 'assessment only' programme.
+You may be able to get qualified teacher status through a 12-week 'assessment only' programme if you also have a degree.
 
 [Apply directly to assessment only teacher training providers](/assessment-only-providers) and ask them about entry criteria.
 
-### If you're a career changer
+### If you're changing career
 
 A career change into teaching allows you to use your experience and passion to inspire young people.
 
