@@ -11,6 +11,10 @@ keywords:
   - FE
   - Further Education
   - FE Advice
+  - College
+  - Vocation
+  - Vocational
+  - F.E.
 ---
 
 ## Become a further education teacher

@@ -134,8 +134,8 @@ providers:
       link: "https://ywtt.org.uk/"
       name: Sarah Barley
       email: sarah.barley@theeducationalliance.org.uk
-    - header: North and West Yorkshire and Calderdale Internships
-      link: "http://www.northernlightstsa.org/"
+    - header: Northern Lights Teaching School
+      link: "https://www.northernlightsscitt.com/our-programmes/teaching-internships1/"
       name: Ginette Hawkins
       email: shine@northernlightstsa.org
     - header: Teach North with Outwood Grange Academies Trust
@@ -146,6 +146,10 @@ providers:
       link: "https://www.sheffieldscitt.org.uk/"
       name: Anna Shirley
       email: ashirley@notredame-high.co.uk
+    - header: Red Kite Teacher Training
+      link: "https://redkiteteachertraining.co.uk/internships-2 "
+      name: Kathy Murdie
+      email: teachertraining@redkitealliance.co.uk
     - header: St Mary's College
       link:  "http://www.schooldirecthull.co.uk"
       name: Kerry Kirby
@@ -154,4 +158,15 @@ providers:
       link: "https://www.learningpartnership.education"
       name: Jonathan Chapman
       email: "jchapman@learningpartnership.education"
+keywords:
+  - teaching internship
+  - internship
+  - providers
+  - maths
+  - physics
+  - STEM
+  - paid internship
+  - TI
+  - T.I.
+  - summer internship
 ---

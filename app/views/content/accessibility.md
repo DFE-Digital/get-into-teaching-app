@@ -13,6 +13,9 @@ keywords:
   - PDF
   - Braille
   - Audio Recording
+  - screen reader
+  - digital accessibility centre
+  - DAC
 ---
 
 This service is run by the Department for Education (DfE).

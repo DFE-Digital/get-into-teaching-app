@@ -23,6 +23,17 @@ keywords:
   - Holiday
   - Annual Leave
   - Pension
+  - Additional
+  - Responsibility
+  - Responsibilities
+  - Career
+  - Benefits
+  - Earnings
+  - Leadership
+  - Early Career Framework
+  - Support
+  - Training
+  - ECF
 ---
 
 Schools develop their own pay policies to attract and retain teachers that have the greatest impact on their pupils' learning. What you're paid will be linked to performance, not length of service - meaning your salary can move forward in line with your career.
@@ -38,7 +49,7 @@ As you progress in your teaching career, it's possible to move up through these 
 | Inner London                  | £32,157 | £50,953 |
 | Outer London                  | £29,915 | £45,766 |
 | London fringe                 | £26,948 | £42,780 |
-| The rest of England and Wales | £25,714 | £41.604 |
+| The rest of England and Wales | £25,714 | £41,604 |
 
 ### Newly qualified teacher benefits
  

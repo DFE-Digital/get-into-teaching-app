@@ -33,6 +33,25 @@ accordion:
       partial: content/international-returners/get-started-on-your-personal-and-professional-admin
     Research visas and immigration:
       partial: content/international-returners/research-visas-and-immigration
+keywords:
+  - International
+  - Returners
+  - Return
+  - Abroad
+  - Back
+  - vacancies
+  - vacancy
+  - jobs
+  - network
+  - interview
+  - ofsted
+  - ofsted framework
+  - types of school
+  - school types
+  - teacher standards
+  - teachers standards
+  - standards
+  - chartered college of teaching
 ---
 
 Are you a UK-trained teacher and UK citizen currently working abroad? Our

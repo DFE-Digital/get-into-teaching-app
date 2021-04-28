@@ -56,6 +56,10 @@ keywords:
   - Taiwan
   - Family Visa
   - UK Ancestry Visa
+  - Abroad
+  - Europe
+  - European
+  - Settlement Scheme
 ---
 
 ## Train to teach in England

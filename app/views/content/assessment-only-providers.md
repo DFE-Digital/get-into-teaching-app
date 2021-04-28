@@ -46,6 +46,10 @@ providers:
     name: Jacqui Waring
     telephone: 01603 773708
     email: jacqui.waring@ccn.ac.uk
+  - header: North Essex Teacher Training (NETT)
+    link: http://www.nett.org.uk/
+    telephone: '01255431949'
+    email: teach@nett.org.uk
   - header: SAF ITT
     name: Su Bernard
     telephone: 01234 827145
@@ -152,10 +156,6 @@ providers:
   - header: Middlesex University
     telephone: 020 8411 5555
     email: enquiries@mdx.ac.uk
-  - header: North Essex Teacher Training (NETT)
-    link: http://www.nett.org.uk/
-    telephone: '01255431949'
-    email: teach@nett.org.uk
   - header: St Mary’s University
     link: https://www.stmarys.ac.uk/education-theology-and-leadership/assessment-only-qts.htm
     name: Elizabeth Jackson
@@ -457,6 +457,12 @@ providers:
     name: Mikki Burns
     telephone: 0203 194 3200
     email: Institute@tesglobal.com
+keywords:
+  - Assessment Only
+  - Assessment
+  - Provider
+  - SCITT
+  - experienced
 ---
 
 A number of accredited providers have been approved to offer the 

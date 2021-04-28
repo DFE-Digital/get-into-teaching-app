@@ -10,6 +10,11 @@ keywords:
  - EYTS
  - Early Years Teacher Status
  - Under 5
+ - EY
+ - E.Y.
+ - nursery
+ - preschool
+ - year one
 date: "2021-03-29"
 description: |-
   As an early years teacher you'll use your knowledge and skills to help younger children

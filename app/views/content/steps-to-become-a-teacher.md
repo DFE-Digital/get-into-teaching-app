@@ -55,6 +55,8 @@
     - Interview
     - How to apply
     - How to
+    - apply
+    - application
     - Adviser
     - Advisers
     - TTA

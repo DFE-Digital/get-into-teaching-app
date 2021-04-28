@@ -27,6 +27,9 @@ keywords:
   - WomenEd
   - Disability
   - DisabilityEd
+  - back
+  - vacancies
+  - teach again
 calls_to_action:
   get-a-tta:
     name: simple
@@ -49,7 +52,7 @@ If you’re considering coming back to the profession, or if you’re qualified 
 
 ## Why now
 
-Thousands of former teachers return to teaching each year.
+Thousands of former teachers return to teaching each year. 
 
 Here at the Department for Education, we’re taking action to address some of the common issues that teachers face in the classroom. This includes helping schools to:
 
@@ -72,6 +75,8 @@ Our return to teaching advisers can give free one-to-one support with:
 * the applications process, such as writing personal statements and preparing for interviews
 * accessing courses to enhance your subject knowledge
 * finding teaching vacancies
+
+<iframe src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Return to teaching advisers also run events to support returners. [Sign up here](/event-categories/online-q-as).
 

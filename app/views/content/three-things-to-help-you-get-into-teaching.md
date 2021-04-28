@@ -23,6 +23,9 @@
     - Advisor
     - Teacher Training Advisor
     - get an adviser
+    - advice
+    - support
+    - help
 ---
 
 <div id="get-free-one-to-one-advice-from-a-teacher-training-adviser" class="numbered-heading">
