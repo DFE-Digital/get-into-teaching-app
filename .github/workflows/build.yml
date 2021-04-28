@@ -507,7 +507,6 @@ jobs:
     name: Production Deployment
     runs-on: ubuntu-latest
     needs: [ cypress, development ]
-    if: github.ref == 'NEVER_NEVER_NEVER'
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
