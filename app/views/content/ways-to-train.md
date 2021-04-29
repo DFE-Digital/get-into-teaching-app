@@ -48,7 +48,10 @@ You need ‘qualified teacher status’ (QTS) to work in the majority of schools
 
 There are different ways to get qualified teacher status.
 
-If you have a degree you can [go back to university as a postgraduate student](#go-back-to-university-as-a-postgraduate-student) or [train as you teach at a school or group of schools](#train-as-you-teach-at-a-school-or-group-of-schools).
+If you have a degree you can:
+
+* [go back to university as a postgraduate student](#go-back-to-university-as-a-postgraduate-student)
+* [train as you teach at a school or group of schools](#train-as-you-teach-at-a-school-or-group-of-schools)
 
 [If you do not have a degree](#if-you-do-not-have-a-degree) you can do an undergraduate course.
 
