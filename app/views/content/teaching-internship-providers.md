@@ -66,7 +66,7 @@ providers:
       name:  Susan Ingram
       email:  susan.ingram@shottonhallacademy.co.uk
     - header: Teach North with Outwood Grange Academies Trust
-      link: "https://teachnorth.com/internships"
+      link: "https://teachnorth.com/latest-news/2020/2/11/applications-open-for-oie-teaching-internship-programme?rq=internships"
       name: Emma Sikora
       email: e.sikora@outwood.com
   North West:
