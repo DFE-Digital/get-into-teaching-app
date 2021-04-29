@@ -81,7 +81,7 @@ You can also apply for a [student loan](/funding-your-training#tuition-fee-and-m
 
 On a 'school direct' programme or 'postgraduate teaching apprenticeship' you spend less time in academic learning than you would on a university course.
 
-Many courses even give you a PGCE or PGDE - an academic qualification which you can use towards masters credits.
+Despite the focus on training as you teach, many courses give you a PGCE or PGDE - an academic qualification which you can use towards masters credits.
 
 Courses typically take one year but you may be able to study part time.
 
