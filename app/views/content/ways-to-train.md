@@ -79,19 +79,17 @@ You can also apply for a [student loan](/funding-your-training#tuition-fee-and-m
 
 ### Train as you teach at a school or group of schools
 
-If you already have a degree you can learn as you teach in a school or group of schools.
-
-You'll only spend about about a fifth of your time in academic learning.
+On a 'school direct' programme or 'postgraduate teaching apprenticeship' you spend less time in academic learning than you would on a university course.
 
 Many courses even give you a PGCE or PGDE - an academic qualification which you can use towards masters credits.
 
 Courses typically take one year but you may be able to study part time.
 
-Although you often have to pay course fees of around £9,250 you can get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects.
+Although you often have to pay course fees of around £9,250 on 'school direct' programmes you can get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects.
 
 You can also apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans).
 
-Some training programmes offer a salary, although you may need transferable work experience.
+Some training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' even offer a salary.
 
 <a class="button" href="https://www.find-postgraduate-teacher-training.service.gov.uk/">Find courses near you</a>
 
