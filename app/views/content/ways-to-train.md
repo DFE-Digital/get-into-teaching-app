@@ -48,7 +48,7 @@ You need ‘qualified teacher status’ (QTS) to work in the majority of schools
 
 There are different ways to get qualified teacher status.
 
-If you have a degree you can [go back to university as a postgraduate student](#go-back-to-university-as-a-postgraduate-student) or [find training led by a school or group of schools](#training-led-by-a-school-or-group-of-schools).
+If you have a degree you can [go back to university as a postgraduate student](#go-back-to-university-as-a-postgraduate-student) or [train as you teach at a school or group of schools](#train-as-you-teach-at-a-school-or-group-of-schools).
 
 [If you do not have a degree](#if-you-do-not-have-a-degree) you can do an undergraduate course.
 
@@ -74,7 +74,7 @@ You can also apply for a [student loan](/funding-your-training).
 
 <a class="button" href="https://www.find-postgraduate-teacher-training.service.gov.uk/">Find university training</a>
 
-### Training led by a school or group of schools
+### Train as you teach at a school or group of schools
 
 If you already have a degree you can learn as you teach in a school or group of schools.
 
@@ -88,7 +88,7 @@ Although you often have to pay course fees of around £9,250 you can get [fundin
 
 You can also apply for a [student loan](/funding-your-training).
 
-Some training programmes offer a salary, although you may need transferable work experience. 
+Some training programmes offer a salary, although you may need transferable work experience.
 
 <a class="button" href="https://www.find-postgraduate-teacher-training.service.gov.uk/">Find courses near you</a>
 
