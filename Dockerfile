@@ -1,4 +1,4 @@
-FROM ruby:2.7.2-alpine3.12
+FROM ruby:2.7.3-alpine3.12
 
 ENV RAILS_ENV=production \
     NODE_ENV=production \
@@ -22,7 +22,7 @@ COPY package.json yarn.lock ./
 RUN yarn install && yarn cache clean
 
 # Install bundler
-RUN gem install bundler --version=2.1.4
+RUN gem install bundler --version=2.2.8
 
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./
