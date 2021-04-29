@@ -287,7 +287,11 @@ redirects:
   "/life-as-a-teacher/real-life-experiences/(*story)": "/my-story-into-teaching"
   "/funding-and-salary(*section)": "/funding-your-training"
   "/regional-make-a-difference-in-(*area)": "/"
-
+  "/how-to-apply(*method)": "/tips-on-applying-for-teacher-training"
+  "/lp(*category)": "/"
+  "/frequently-asked-questions": "/"
+  "/premier-plus-adviser(*tip)": "/three-things-to-help-you-get-into-teaching"
+  "/why-teach(*reason)": "/my-story-into-teaching"
 
   # Events
   "/teaching-events/train-to-teach-events/train-to-teach-london-virtual-event-300121": "/events/train-to-teach-london-virtual-event-300121"
