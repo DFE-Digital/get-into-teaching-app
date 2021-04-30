@@ -18,7 +18,7 @@ class MailingListSignupsController < ApplicationController
       end
 
       @signup.add_member_to_mailing_list!
-      redirect_to mailing_list_step_path("completed")
+      complete
     else
       render :new
     end
@@ -35,19 +35,22 @@ class MailingListSignupsController < ApplicationController
 
     if @signup.valid?(:verify)
       if @signup.already_subscribed_to_mailing_list
-        session.delete(SESSION_STORE_KEY)
-        return redirect_to mailing_list_step_path("already_subscribed")
+        return complete("already_subscribed")
       end
 
       @signup.add_member_to_mailing_list!
-      session.delete(SESSION_STORE_KEY)
-      redirect_to mailing_list_step_path("completed")
+      complete
     else
       render :edit
     end
   end
 
 private
+
+  def complete(path = "completed")
+    session.delete(SESSION_STORE_KEY)
+    redirect_to mailing_list_step_path(path)
+  end
 
   def restore_signup_from_session
     signup_data = session[SESSION_STORE_KEY]
