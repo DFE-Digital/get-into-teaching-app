@@ -6,6 +6,12 @@ RSpec.feature "Mailing list signup", type: :feature do
   include_context "stub latest privacy policy api"
   include_context "stub mailing list add member api"
 
+  let(:privacy_policy_id) { "PP-ABC-123" }
+
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to receive(:get_latest_privacy_policy).and_return(OpenStruct.new(id: privacy_policy_id))
+  end
+
   def enter_candidate_details
     fill_in "First name", with: "Milhouse"
     fill_in "Last name", with: "van Houten"
@@ -34,6 +40,8 @@ RSpec.feature "Mailing list signup", type: :feature do
     ].each do |field_name|
       expect(page).to have_field(field_name)
     end
+
+    expect(page.find("#mailing_list_signup_accepted_policy_id", visible: false).value).to eql(privacy_policy_id)
   end
 
   def check_verification_form
@@ -47,7 +55,7 @@ RSpec.feature "Mailing list signup", type: :feature do
       allow_any_instance_of(MailingList::Signup).to(receive(:already_signed_up?).and_return(false))
     end
 
-    specify "registering and confirming identity using a verification code" do
+    specify "registering as a new user" do
       visit new_mailing_list_signup_path
 
       check_registration_form
