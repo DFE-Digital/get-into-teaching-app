@@ -12,10 +12,9 @@ class MailingListSignupsController < ApplicationController
     @signup = MailingList::Signup.new(new_signup_params)
 
     if @signup.valid?
-      if @signup.already_signed_up?
-        session[SESSION_STORE_KEY] = @signup.export_data
-        return redirect_to(edit_mailing_list_signup_path)
-      end
+      save_signup_to_session
+
+      return redirect_to(edit_mailing_list_signup_path) if @signup.already_signed_up?
 
       @signup.add_member_to_mailing_list!
       complete
@@ -34,9 +33,9 @@ class MailingListSignupsController < ApplicationController
     @signup.assign_attributes(edit_signup_params)
 
     if @signup.valid?(:verify)
-      if @signup.already_subscribed_to_mailing_list
-        return complete("already_subscribed")
-      end
+      save_signup_to_session
+
+      return complete("already_subscribed") if @signup.already_subscribed_to_mailing_list
 
       @signup.add_member_to_mailing_list!
       complete
@@ -61,6 +60,10 @@ private
     end
 
     @signup = MailingList::Signup.new(**signup_data)
+  end
+
+  def save_signup_to_session
+    session[SESSION_STORE_KEY] = @signup.export_data
   end
 
   def new_signup_params
