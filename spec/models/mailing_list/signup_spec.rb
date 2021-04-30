@@ -111,5 +111,21 @@ describe MailingList::Signup do
       it { is_expected.to validate_presence_of(:accept_privacy_policy).with_message(message) }
       it { is_expected.to validate_acceptance_of(:accept_privacy_policy).with_message(message) }
     end
+
+    describe "timed one time password" do
+      subject { described_class.new(email: "test@test.org") }
+
+      before do
+        allow_any_instance_of(described_class).to receive(:timed_one_time_password_is_correct) do
+          true
+        end
+      end
+
+      it { is_expected.to allow_value("000000").for(:timed_one_time_password).on(:verify) }
+      it { is_expected.to allow_value(" 123456").for(:timed_one_time_password).on(:verify) }
+      it { is_expected.not_to allow_value("abc123").for(:timed_one_time_password).on(:verify) }
+      it { is_expected.not_to allow_value("1234567").for(:timed_one_time_password).on(:verify) }
+      it { is_expected.not_to allow_value("12345").for(:timed_one_time_password).on(:verify) }
+    end
   end
 end

@@ -2,6 +2,8 @@ class MailingListSignupsController < ApplicationController
   include CircuitBreaker
   layout "registration"
 
+  SESSION_STORE_KEY = :mailing_list_signup
+
   def new
     @signup = MailingList::Signup.new
   end
@@ -10,33 +12,53 @@ class MailingListSignupsController < ApplicationController
     @signup = MailingList::Signup.new(new_signup_params)
 
     if @signup.valid?
-      # TODO: check if they've already signed up
-      #
-      #   if yes, save their data to the session and redirect to #update
-      #   (/personalised-updates/verify)
-      #
-      #   if no, submit their data to the API
+      if @signup.already_signed_up?
+        session[SESSION_STORE_KEY] = @signup.export_data
+        return redirect_to(edit_mailing_list_signup_path)
+      end
+
       @signup.add_member_to_mailing_list!
-
       redirect_to mailing_list_step_path("completed")
-
     else
       render :new
     end
   end
 
   def edit
-    # they've already signed up to the mailing list, so here we'd ask them for a
-    # code to check they own the email address/account
+    restore_signup_from_session
   end
 
   def update
-    @signup = MailingList::Signup.new_from_session
+    restore_signup_from_session
 
-    # send their data along with the verification code to the API? Probably
+    @signup.assign_attributes(edit_signup_params)
+
+    if @signup.valid?(:verify)
+      if @signup.already_subscribed_to_mailing_list
+        session.delete(SESSION_STORE_KEY)
+        return redirect_to mailing_list_step_path("already_subscribed")
+      end
+
+      @signup.add_member_to_mailing_list!
+      session.delete(SESSION_STORE_KEY)
+      redirect_to mailing_list_step_path("completed")
+    else
+      render :edit
+    end
   end
 
 private
+
+  def restore_signup_from_session
+    signup_data = session[SESSION_STORE_KEY]
+
+    if signup_data.nil?
+      Rails.logger.warn("tried to confirm identity with blank session")
+      return redirect_to(new_mailing_list_signup_path)
+    end
+
+    @signup = MailingList::Signup.new(**signup_data)
+  end
 
   def new_signup_params
     params
@@ -56,6 +78,6 @@ private
   end
 
   def edit_signup_params
-    params.require(:mailing_list_signup).permit(:verification_code)
+    params.require(:mailing_list_signup).permit(:timed_one_time_password)
   end
 end

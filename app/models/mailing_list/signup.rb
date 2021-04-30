@@ -7,6 +7,7 @@ module MailingList
     include ActiveModel::Validations::Callbacks
     include ::Wizard::ApiClientSupport
 
+    IDENTITY_ATTRS = %i[email first_name last_name date_of_birth].freeze
     MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
 
     attribute :accept_privacy_policy, :string
@@ -63,6 +64,15 @@ module MailingList
               acceptance: true,
               allow_nil: false
 
+    validates :timed_one_time_password,
+              on: :verify,
+              presence: true,
+              length: { is: 6, message: :invalid },
+              format: { with: /\A[0-9]*\z/, message: :invalid }
+
+    validate :timed_one_time_password_is_correct,
+             on: :verify
+
     def degree_status_options
       @degree_status_options ||= query_degree_status
     end
@@ -88,7 +98,14 @@ module MailingList
         "consideration_journey_stage_id" => consideration_journey_stage_id,
         "preferred_teaching_subject_id" => preferred_teaching_subject_id,
         "accepted_policy_id" => accepted_policy_id,
-      }
+        "accept_privacy_policy" => accept_privacy_policy,
+        "qualification_id" => qualification_id,
+        "candidate_id" => candidate_id,
+      }.compact
+    end
+
+    def verification_data
+      export_data.merge("timed_one_time_password" => timed_one_time_password)
     end
 
     def latest_privacy_policy
@@ -101,7 +118,28 @@ module MailingList
       api.add_mailing_list_member(request)
     end
 
+    def already_signed_up?
+      request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(identity_data)
+      GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request)
+
+      true
+    rescue GetIntoTeachingApiClient::ApiError => e
+      raise if e.code == 429
+
+      Rails.logger.info("#{self.class} potential duplicate (response code #{e.code})") unless e.code == 404
+
+      false
+    end
+
   private
+
+    def identity_data
+      {
+        "email" => email,
+        "firstName" => first_name,
+        "lastName" => last_name,
+      }
+    end
 
     def query_degree_status
       GetIntoTeachingApiClient::PickListItemsApi.new.get_qualification_degree_status
@@ -137,11 +175,27 @@ module MailingList
       email&.strip!
       first_name&.strip!
       last_name&.strip!
+      timed_one_time_password&.strip!
       address_postcode&.strip!
     end
 
     def api
       GetIntoTeachingApiClient::MailingListApi.new
+    end
+
+    def timed_one_time_password_is_correct
+      request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(identity_data)
+      response = api.exchange_access_token_for_mailing_list_add_member(timed_one_time_password, request)
+
+      Rails.logger.info("MailingList::Wizard#exchange_access_token: #{AttributeFilter.filtered_json(response)}")
+
+      response.tap do |r|
+        self.candidate_id = r.candidate_id
+        self.qualification_id = r.qualification_id
+        self.already_subscribed_to_mailing_list = r.already_subscribed_to_mailing_list
+      end
+    rescue GetIntoTeachingApiClient::ApiError
+      errors.add(:timed_one_time_password, :wrong_code)
     end
   end
 end
