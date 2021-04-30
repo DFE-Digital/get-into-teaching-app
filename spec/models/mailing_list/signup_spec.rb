@@ -128,4 +128,83 @@ describe MailingList::Signup do
       it { is_expected.not_to allow_value("12345").for(:timed_one_time_password).on(:verify) }
     end
   end
+
+  describe "methods" do
+    describe "#query_degree_status" do
+      it { is_expected.to respond_to(:query_channels) }
+
+      let(:api) { instance_double(GetIntoTeachingApiClient::PickListItemsApi) }
+
+      before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
+
+      specify "should call the PickListItemsApi" do
+        expect(api).to receive(:get_qualification_degree_status)
+        subject.send(:query_degree_status)
+      end
+    end
+
+    describe "#query_channels" do
+      it { is_expected.to respond_to(:query_channels) }
+
+      let(:api) { instance_double(GetIntoTeachingApiClient::PickListItemsApi) }
+
+      before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
+
+      specify "should call the PickListItemsApi" do
+        expect(api).to receive(:get_candidate_mailing_list_subscription_channels)
+        subject.query_channels
+      end
+    end
+
+    describe "#teaching_subjects" do
+      it { is_expected.to respond_to(:teaching_subjects) }
+
+      let(:api) { instance_double(GetIntoTeachingApiClient::LookupItemsApi, get_teaching_subjects: []) }
+
+      before { allow(GetIntoTeachingApiClient::LookupItemsApi).to receive(:new).and_return(api) }
+
+      specify "should call the LookupItemsApi" do
+        expect(api).to receive(:get_teaching_subjects)
+        subject.teaching_subjects
+      end
+    end
+
+    describe "#consideration_journey_stages" do
+      it { is_expected.to respond_to(:consideration_journey_stages) }
+
+      let(:api) { instance_double(GetIntoTeachingApiClient::PickListItemsApi, get_candidate_journey_stages: []) }
+
+      before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
+
+      specify "should call the PickListItemsApi" do
+        expect(api).to receive(:get_candidate_journey_stages)
+        subject.consideration_journey_stages
+      end
+    end
+
+    describe "export_data" do
+      it { is_expected.to respond_to(:consideration_journey_stages) }
+
+      let(:attributes) do
+        {
+          email: "test@test.com",
+          first_name: "martin",
+          last_name: "prince",
+          degree_status_id: 123,
+          consideration_journey_stage_id: 456,
+          accept_privacy_policy: "abc-123",
+          qualification_id: "def-234",
+          candidate_id: "efg-345",
+          accepted_policy_id: "fgh-456",
+          address_postcode: "M1 2EJ",
+        }
+      end
+
+      subject { described_class.new(**attributes) }
+
+      specify "returns a hash with correct data" do
+        expect(subject.export_data).to eql(attributes.transform_keys(&:to_s))
+      end
+    end
+  end
 end

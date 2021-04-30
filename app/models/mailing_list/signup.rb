@@ -7,9 +7,6 @@ module MailingList
     include ActiveModel::Validations::Callbacks
     include ::Wizard::ApiClientSupport
 
-    IDENTITY_ATTRS = %i[email first_name last_name date_of_birth].freeze
-    MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
-
     attribute :accept_privacy_policy, :string
     attribute :accepted_policy_id, :string
     attribute :address_postcode, :string
@@ -101,11 +98,8 @@ module MailingList
         "accept_privacy_policy" => accept_privacy_policy,
         "qualification_id" => qualification_id,
         "candidate_id" => candidate_id,
+        "address_postcode" => address_postcode,
       }.compact
-    end
-
-    def verification_data
-      export_data.merge("timed_one_time_password" => timed_one_time_password)
     end
 
     def latest_privacy_policy
