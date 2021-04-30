@@ -28,14 +28,14 @@
       :value,
     ) %>
 
-    <%= f.govuk_text_field(:address_postcode, width: 10) %>
-
     <%= f.govuk_collection_select(
       :preferred_teaching_subject_id,
       f.object.teaching_subjects,
       :id,
       :value,
     ) %>
+
+    <%= f.govuk_text_field(:address_postcode, width: 10) %>
 
     <%= f.govuk_check_boxes_fieldset(:accept_privacy_policy, multiple: false, legend: { text: "Terms and conditions" }) do %>
       <%= f.govuk_check_box :accept_privacy_policy, 1, 0, multiple: false, link_errors: true %>
