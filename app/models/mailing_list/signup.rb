@@ -21,7 +21,16 @@ module MailingList
     attribute :consideration_journey_stage_id, :integer
     attribute :degree_status_id, :integer
 
+    attribute :timed_one_time_password
+
+    attribute :candidate_id
+    attribute :qualification_id
+    attribute :already_subscribed_to_mailing_list, :boolean
+
     before_validation :strip_whitespace
+
+    validates :address_postcode,
+              postcode: true
 
     validates :email,
               presence: true,
@@ -128,6 +137,7 @@ module MailingList
       email&.strip!
       first_name&.strip!
       last_name&.strip!
+      address_postcode&.strip!
     end
 
     def api
