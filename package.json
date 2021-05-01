@@ -2,7 +2,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@rails/webpacker": "^5.1.1",
+    "@rails/webpacker": "^5.3.0",
     "@stimulus/polyfills": "^2.0.0",
     "accessible-autocomplete": "^2.0.3",
     "govuk-frontend": "^3.11.0",
