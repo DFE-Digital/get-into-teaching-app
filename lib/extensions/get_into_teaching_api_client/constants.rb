@@ -50,7 +50,7 @@ module GetIntoTeachingApiClient
       {
         "Art and design" => "7e2655a1-2afa-e811-a981-000d3a276620",
         "Maths" => "a42655a1-2afa-e811-a981-000d3a276620",
-        "Pyhsics" => "ac2655a1-2afa-e811-a981-000d3a276620",
+        "Physics" => "ac2655a1-2afa-e811-a981-000d3a276620",
       }.freeze
 
     IGNORED_PREFERRED_TEACHING_SUBJECTS =
