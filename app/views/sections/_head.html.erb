@@ -1,9 +1,6 @@
 <head>
   <meta charset="utf-8">
   <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
-  <script type="module">
-    document.documentElement.classList.toggle('js-enabled');
-  </script>
 
   <%= render "sections/vwo_code" if @render_vwo %>
   <%= csrf_meta_tags unless @cacheable_static_page %>
