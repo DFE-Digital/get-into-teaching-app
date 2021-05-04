@@ -42,7 +42,7 @@ RSpec.feature "Mailing list signup", type: :feature do
     select form_choices.dig(:preferred_teaching_subject_id, :option),
            from: "What would you like to teach?"
 
-    check "I am over 16 years old and accept the terms and conditions"
+    check "I am over 16 years old and accept the privacy policy"
   end
 
   def enter_invalid_candidate_details
