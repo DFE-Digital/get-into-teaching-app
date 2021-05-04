@@ -30,7 +30,7 @@ class FundingWidgetComponent < ViewComponent::Base
     subject_data&.fetch(:sub_head, "")
   end
 
-  private
+private
 
   def subjects
     t("funding_widget.subjects")
