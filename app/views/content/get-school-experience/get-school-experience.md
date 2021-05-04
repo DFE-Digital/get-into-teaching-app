@@ -58,4 +58,4 @@ Be flexible with your availability if possible and persevere with your search.
 
 These videos are not a claim of best practice but can help you get to know teaching better.
 
-[Events](https://getintoteaching.education.gov.uk/events) can also help you get to know teaching.
+[Events](https://getintoteaching.education.gov.uk/events) can also give you an insight into teaching.
