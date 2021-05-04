@@ -33,7 +33,7 @@ class FundingWidgetComponent < ViewComponent::Base
   private
 
   def subjects
-    t('funding_widget.subjects')
+    t("funding_widget.subjects")
   end
 
   def subject_groups
@@ -45,6 +45,6 @@ class FundingWidgetComponent < ViewComponent::Base
   end
 
   def subject_data
-    t('funding_widget.subjects')[form.subject.to_sym]
+    t("funding_widget.subjects")[form.subject.to_sym]
   end
 end
