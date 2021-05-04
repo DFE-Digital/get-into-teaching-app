@@ -67,7 +67,7 @@ module MailingList
               length: { is: 6, message: :invalid },
               format: { with: /\A[0-9]*\z/, message: :invalid }
 
-    validate :timed_one_time_password_is_correct,
+    validate :verify_timed_one_password_and_update_identification_info,
              on: :verify
 
     def degree_status_options
@@ -177,7 +177,7 @@ module MailingList
       GetIntoTeachingApiClient::MailingListApi.new
     end
 
-    def timed_one_time_password_is_correct
+    def verify_timed_one_password_and_update_identification_info
       request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(identity_data)
       response = api.exchange_access_token_for_mailing_list_add_member(timed_one_time_password, request)
 
