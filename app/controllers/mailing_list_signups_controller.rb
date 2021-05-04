@@ -14,7 +14,7 @@ class MailingListSignupsController < ApplicationController
     if @signup.valid?
       save_signup_to_session
 
-      return redirect_to(edit_mailing_list_signup_path) if @signup.already_signed_up?
+      return redirect_to(edit_mailing_list_signup_path) if @signup.exists_in_crm?
 
       @signup.add_member_to_mailing_list!
       complete

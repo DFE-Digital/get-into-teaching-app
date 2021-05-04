@@ -112,7 +112,7 @@ module MailingList
       api.add_mailing_list_member(request)
     end
 
-    def already_signed_up?
+    def exists_in_crm?
       request = GetIntoTeachingApiClient::ExistingCandidateRequest.new(identity_data)
       GetIntoTeachingApiClient::CandidatesApi.new.create_candidate_access_token(request)
 
