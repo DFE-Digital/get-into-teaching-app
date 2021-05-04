@@ -59,7 +59,7 @@ RSpec.feature "Mailing list signup", type: :feature do
       "Do you have a degree?",
       "What's your postcode? (optional)",
       "What would you like to teach?",
-      "I am over 16 years old and accept the terms and conditions",
+      "I am over 16 years old and accept the privacy policy",
     ].each do |field_name|
       expect(page).to have_field(field_name)
     end
