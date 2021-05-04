@@ -223,9 +223,6 @@ providers:
     name: Neil Dixon
     telephone: 0151 426 6869
     email: neil.dixon@knowsley.gov.uk
-  - header: Merseyside, Cheshire & Greater Manchester Teacher Training Consortium
-    link: https://www.teachertrainingconsortium.info
-    email: admin@teachertrainingconsortium.org.uk
   - header: North Manchester ITT Partnership
     link: https://www.teachnorthmanchester.com/assessment-only
     name: Carrie Carvell
