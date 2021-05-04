@@ -8,9 +8,7 @@ date: "2021-05-04"
 right_column:
   ctas:
     - title: Find school experience
-      text: |
-       Request early years, primary or secondary experience.
-      link_text: "Find school experience"
+      link_text: "Request early years, primary or secondary experience."
       link_target: "https://schoolexperience.education.gov.uk/"
       icon: "icon-person"
       hide_on_mobile: Yes
