@@ -32,14 +32,17 @@ RSpec.describe FundingWidgetComponent, type: :component do
         end
 
         it "is populated correclty" do
+          expect(page).to have_css("optgroup[label='Primary']")
           expect(page).to have_css("optgroup[label='Secondary']")
-          expect(page).to have_css("option[value='Biology']")
+          expect(page).to have_css("optgroup[label='Secondary: Modern languages']")
+          expect(page).to have_css("option[value='primary_with_english']", text: "Primary with English")
+          expect(page).to have_css("option[value='french']", text: "French")
         end
       end
     end
 
     describe "results" do
-      let(:funding_widget) { FundingWidget.new(subject: "Biology") }
+      let(:funding_widget) { FundingWidget.new(subject: "biology") }
 
       it "has a sub head" do
         expect(page).to have_css("h3", text: "Biology - Secondary")
