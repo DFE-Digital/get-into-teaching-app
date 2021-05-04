@@ -1,4 +1,6 @@
 class MailingListSignupsController < ApplicationController
+  class VerifyWithEmptySessionError < StandardError; end
+
   include CircuitBreaker
   layout "registration"
 
@@ -25,6 +27,8 @@ class MailingListSignupsController < ApplicationController
 
   def edit
     restore_signup_from_session
+  rescue VerifyWithEmptySessionError
+    redirect_to(new_mailing_list_signup_path)
   end
 
   def update
@@ -42,6 +46,8 @@ class MailingListSignupsController < ApplicationController
     else
       render :edit
     end
+  rescue VerifyWithEmptySessionError
+    redirect_to(new_mailing_list_signup_path)
   end
 
 private
@@ -54,10 +60,7 @@ private
   def restore_signup_from_session
     signup_data = session[SESSION_STORE_KEY]
 
-    if signup_data.nil?
-      Rails.logger.warn("tried to confirm identity with blank session")
-      return redirect_to(new_mailing_list_signup_path)
-    end
+    raise VerifyWithEmptySessionError, "tried to confirm identity with blank session" if signup_data.nil?
 
     @signup = MailingList::Signup.new(**signup_data)
   end
