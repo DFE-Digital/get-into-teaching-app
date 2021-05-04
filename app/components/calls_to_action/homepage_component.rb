@@ -3,10 +3,17 @@ module CallsToAction
     attr_accessor :icon, :image, :title, :link
 
     def initialize(icon:, title: nil, link_text:, link_target:, image:)
-      @title = title
-      @link  = link_to(link_text, link_target, class: "button")
-      @icon  = icon_element(icon)
-      @image = image_element(image)
+      @title         = title
+      @image         = image_element(image)
+      @icon_filename = icon
+
+      @link_target = link_target
+      @link_text   = link_text
+    end
+
+    def before_render
+      @icon = icon_element(@icon_filename)
+      @link = link_to(@link_text, @link_target, class: "button")
     end
 
   private
