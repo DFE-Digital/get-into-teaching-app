@@ -9,10 +9,8 @@ class FundingWidgetComponent < ViewComponent::Base
   end
 
   def grouped_options
-    {}.tap do |options|
-      form.subjects.map { |_k, v| v[:education] }.uniq.each do |education|
-        options[education] = form.subjects.select { |_k, v| v[:education] == education }.map { |k, _v| k }
-      end
+    subject_groups.map do |group|
+      [group, grouped_subjects(group)]
     end
   end
 
@@ -25,10 +23,28 @@ class FundingWidgetComponent < ViewComponent::Base
   end
 
   def funding_results
-    form.subject_data&.fetch(:funding, "")
+    subject_data&.fetch(:funding, "")
   end
 
   def sub_head
-    form.subject_data&.fetch(:sub_head, "")
+    subject_data&.fetch(:sub_head, "")
+  end
+
+  private
+
+  def subjects
+    t('funding_widget.subjects')
+  end
+
+  def subject_groups
+    subjects.map { |_k, v| v[:group] }.uniq
+  end
+
+  def grouped_subjects(group)
+    subjects.select { |_k, v| v[:group] == group }.map { |k, v| [v[:name], k] }
+  end
+
+  def subject_data
+    t('funding_widget.subjects')[form.subject.to_sym]
   end
 end
