@@ -419,7 +419,7 @@ providers:
   Yorkshire and the Humber:
   - header: The Sheffield SCITT
     link: https://www.sheffieldscitt.org.uk/
-    email: kbarna@hallamtsa.org.uk
+    email: admin@sheffieldscitt.org.uk
   - header: Bradford College
     link: https://www.bradfordcollege.ac.uk/courses/course/qualified-teacher-status-qts-assessment-only-programme/
     name: Lee Parsell
