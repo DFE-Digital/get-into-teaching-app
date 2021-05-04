@@ -51,15 +51,11 @@ describe MailingList::Signup do
 
       describe "values" do
         specify "allows teaching subject values" do
-          teaching_subjects.each_value do |ts|
-            expect(subject).to allow_value(ts).for(:preferred_teaching_subject_id)
-          end
+          expect(subject).to allow_value(*teaching_subjects.values).for(:preferred_teaching_subject_id)
         end
 
         specify "doesn't allow other values" do
-          %w[abc 123].each do |invalid|
-            expect(subject).not_to allow_value(invalid).for(:preferred_teaching_subject_id).with_message(message)
-          end
+          expect(subject).not_to allow_value("abc", "123").for(:preferred_teaching_subject_id).with_message(message)
         end
       end
     end
@@ -72,15 +68,11 @@ describe MailingList::Signup do
 
       describe "values" do
         specify "allows teaching subject values" do
-          journey_stages.map(&:id).each do |js|
-            expect(subject).to allow_value(js).for(:consideration_journey_stage_id)
-          end
+          expect(subject).to allow_value(*journey_stages.map(&:id)).for(:consideration_journey_stage_id)
         end
 
         specify "doesn't allow other values" do
-          %w[abc 123].each do |invalid|
-            expect(subject).not_to allow_value(invalid).for(:consideration_journey_stage_id).with_message(message)
-          end
+          expect(subject).not_to allow_value("abc", "123").for(:consideration_journey_stage_id).with_message(message)
         end
       end
     end
@@ -93,15 +85,11 @@ describe MailingList::Signup do
 
       describe "values" do
         specify "allows teaching subject values" do
-          degree_statuses.map(&:id).each do |ds|
-            expect(subject).to allow_value(ds).for(:degree_status_id)
-          end
+          expect(subject).to allow_value(*degree_statuses.map(&:id)).for(:degree_status_id)
         end
 
         specify "doesn't allow other values" do
-          %w[abc 123].each do |invalid|
-            expect(subject).not_to allow_value(invalid).for(:degree_status_id).with_message(message)
-          end
+          expect(subject).not_to allow_value("abc", "123").for(:degree_status_id).with_message(message)
         end
       end
     end
