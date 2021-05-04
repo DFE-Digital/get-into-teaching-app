@@ -29,7 +29,7 @@ Spending some time in a school allows you to:
 * talk to teachers
 * get an insight into day-to-day school life
 
-It can also really help your teacher training application, although it’s not a training entry requirement.
+It can also really help [your teacher training application](/tips-on-applying-for-teacher-training), although it’s not a training entry requirement.
 
 To find experience you can:
 
