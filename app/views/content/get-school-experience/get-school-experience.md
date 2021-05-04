@@ -46,7 +46,7 @@ They're not obliged to offer experience and may be limiting visitors due to coro
 
 They also need to be careful about allowing visitors into the school for the safety of children and young people.
 
-You may also be asked to have a DBS check to ensure you're safe to work with children.
+You may be asked to have a DBS check to ensure you're safe to work with children.
 
 Be flexible with your availability if possible and persevere with your search.
 
