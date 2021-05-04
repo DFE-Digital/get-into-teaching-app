@@ -121,7 +121,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
         All prices include VAT unless marked as exVAT
 
-        Find out more about <a href="#vat" title="VAT">VAT</a>
+        Find out more about <span id="vat" title="VAT">VAT</a>
       MARKDOWN
     end
 
@@ -135,7 +135,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
     it do
       is_expected.to have_css \
-        "a[title=\"VAT\"] abbr[title=\"Value added tax\"]", text: "VAT"
+        "span[title=\"VAT\"] abbr[title=\"Value added tax\"]", text: "VAT"
     end
   end
 
