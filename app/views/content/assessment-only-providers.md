@@ -223,9 +223,6 @@ providers:
     name: Neil Dixon
     telephone: 0151 426 6869
     email: neil.dixon@knowsley.gov.uk
-  - header: Merseyside, Cheshire & Greater Manchester Teacher Training Consortium
-    link: https://www.teachertrainingconsortium.info
-    email: admin@teachertrainingconsortium.org.uk
   - header: North Manchester ITT Partnership
     link: https://www.teachnorthmanchester.com/assessment-only
     name: Carrie Carvell
@@ -419,7 +416,7 @@ providers:
   Yorkshire and the Humber:
   - header: The Sheffield SCITT
     link: https://www.sheffieldscitt.org.uk/
-    email: kbarna@hallamtsa.org.uk
+    email: admin@sheffieldscitt.org.uk
   - header: Bradford College
     link: https://www.bradfordcollege.ac.uk/courses/course/qualified-teacher-status-qts-assessment-only-programme/
     name: Lee Parsell
