@@ -75,7 +75,7 @@ module MailingList
     end
 
     def teaching_subjects
-      @teaching_subjects ||= [OpenStruct.new(id: nil, value: "Please select")] + query_teaching_subjects
+      @teaching_subjects ||= query_teaching_subjects
     end
 
     def consideration_journey_stages
