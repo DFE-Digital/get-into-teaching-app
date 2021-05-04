@@ -28,12 +28,12 @@
       .step-header__chevron {
         flex-shrink: 0;
         margin-top: 5px;
-        @include chevron-icon($color: $white, $dimensions: .7em, $rotate: unquote(map-get($chevron-direction-map, 'up')));
+        @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
       }
 
       &:focus {
         .step-header__chevron {
-          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: unquote(map-get($chevron-direction-map, 'up')));
+          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
         }
       }
     }
@@ -57,12 +57,12 @@
       .step-header {
         .step-header__chevron {
           margin-top: 0;
-          @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, 'down'));
+          @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
         }
 
         &:focus {
           .step-header__chevron {
-            @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, 'down'));
+            @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
           }
         }
       }

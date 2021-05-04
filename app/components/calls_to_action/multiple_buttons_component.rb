@@ -3,9 +3,14 @@ module CallsToAction
     attr_accessor :icon, :title, :links
 
     def initialize(icon:, title:, links:)
-      @icon  = icon_element(icon)
-      @title = title
-      @links = links.map { |text, href| link_to(text, href) }
+      @title         = title
+      @link_data     = links
+      @icon_filename = icon
+    end
+
+    def before_render
+      @icon  = icon_element(@icon_filename)
+      @links = @link_data.map { |text, href| link_to(text, href) }
     end
 
   private
