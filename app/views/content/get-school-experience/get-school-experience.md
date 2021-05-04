@@ -7,8 +7,8 @@ description: |-
 date: "2021-05-04"
 right_column:
   ctas:
-    - title: Find school experience
-      link_text: "Request early years, primary or secondary experience."
+    - title: Get school experience
+      link_text: "Request early years, primary or secondary experience"
       link_target: "https://schoolexperience.education.gov.uk/"
       icon: "icon-person"
       hide_on_mobile: Yes
@@ -40,11 +40,7 @@ To find experience you can:
 
 It's normal to have to try a few schools before you find one that can help.
 
-They're not obliged to offer experience and may be limiting visitors due to coronavirus (COVID-19).
-
-They also need to be careful about allowing visitors into the school for the safety of children and young people.
-
-You may be asked to have a DBS check to ensure you're safe to work with children.
+They may be limiting visitors due to coronavirus (COVID-19) and may need to organise a DBS check to ensure you're safe to work with children.
 
 Be flexible with your availability if possible and persevere with your search.
 
