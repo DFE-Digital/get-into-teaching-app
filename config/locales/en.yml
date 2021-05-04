@@ -202,8 +202,8 @@ en:
             address_postcode:
               invalid: Enter a valid postcode
             accept_privacy_policy:
-              blank: Accept the privacy policy to continue
-              accepted: Accept the privacy policy to continue
+              blank: Accept the terms and conditions to continue
+              accepted: Accept the terms and conditions to continue
             timed_one_time_password:
               wrong_code: Enter the code you received by email
 
@@ -294,7 +294,7 @@ en:
         consideration_journey_stage_id: How close are you to applying for teacher training?
         timed_one_time_password: Verification code
         accept_privacy_policy_options:
-          1_html: I am over 16 years old and accept the <a href="/privacy-policy">terms and conditions</a>
+          1_html: I am over 16 years old and accept the <a target="_blank" href="/privacy-policy">terms and conditions</a>
 
     hint:
       events_steps_contact_details:

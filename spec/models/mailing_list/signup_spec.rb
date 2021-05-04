@@ -95,7 +95,7 @@ describe MailingList::Signup do
     end
 
     describe "#accept_privacy_policy" do
-      let(:message) { "Accept the privacy policy to continue" }
+      let(:message) { "Accept the terms and conditions to continue" }
       it { is_expected.to validate_presence_of(:accept_privacy_policy).with_message(message) }
       it { is_expected.to validate_acceptance_of(:accept_privacy_policy).with_message(message) }
     end
