@@ -50,7 +50,7 @@ Be flexible with your availability if possible and persevere with your search.
 
 ## Maths or physics teaching internships
 
-[Find a paid teaching internship if you’re doing an undergraduate degree in science, technology, engineering or maths (STEM)](https://getintoteaching.education.gov.uk/teaching-internship-providers).
+[Find a paid teaching internship if you’re doing an undergraduate degree in science, technology, engineering or maths (STEM)](/teaching-internship-providers).
 
 ## If you cannot get into the classroom right now
 
@@ -58,4 +58,4 @@ Be flexible with your availability if possible and persevere with your search.
 
 These videos are not a claim of best practice but can help you get to know teaching better.
 
-[Events](https://getintoteaching.education.gov.uk/events) can also give you an insight into teaching.
+[Events](/events) can also give you an insight into teaching.
