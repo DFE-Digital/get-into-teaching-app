@@ -8,7 +8,7 @@ jobs:
   attach-to-trello:
     name: Link Trello card to this PR
     runs-on: ubuntu-latest
-    if: ! contains( "sfawcett dependabot[bot] snyk" , ${{github.actor}} )  
+    if: ! contains( "sfawcett dependabot[bot] snyk" , github.actor )  
     steps:
       - uses: Azure/login@v1
         with:
