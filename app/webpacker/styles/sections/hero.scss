@@ -41,7 +41,7 @@ $mobile-cutoff: 800px;
     }
   }
 
-  &__img {
+  > picture {
     float: right;
     max-width: 50%;
     display: none;
@@ -99,7 +99,7 @@ $mobile-cutoff: 800px;
       }
     }
 
-    &__img {
+    > picture {
       min-height: 10em;
       grid-area: -5 / -4 / -3 / -1;
     }
@@ -124,7 +124,7 @@ $mobile-cutoff: 800px;
         grid-area: 5 / 1 / 7 / 4;
       }
 
-      &__img {
+      > picture {
         grid-area: -6 / -6 / -1 / -1;
       }
     }
@@ -190,12 +190,15 @@ $mobile-cutoff: 800px;
     }
   }
 
-  &__img {
+  > picture {
     height: 100%;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
 
     @include safari-only {
       max-height: 30em;
