@@ -15,7 +15,7 @@ ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server" ]
 
 # hadolint ignore=DL3018
-RUN apk add --no-cache build-base git tzdata shared-mime-info nodejs yarn
+RUN apk add --no-cache build-base git tzdata shared-mime-info nodejs yarn wget xvfb unzip chromium chromium-chromedriver
 
 # install NPM packages removign artifacts
 COPY package.json yarn.lock ./
@@ -35,5 +35,7 @@ RUN bundle install --jobs=$(nproc --all) && \
 COPY . .
 RUN bundle exec rake assets:precompile
 
+
 ARG SHA
 RUN echo "sha-${SHA}" > /etc/get-into-teaching-app-sha
+
