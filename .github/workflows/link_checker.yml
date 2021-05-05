@@ -35,7 +35,7 @@ jobs:
       - name: Check for broken links
         run: |
           docker run -t --rm -e RAILS_ENV=test \
-            ${{ env.DOCKERHUB_REPOSITORY }}:sha-${{ steps.sha.outputs.short }} \
+            ${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }} \
             rspec --format documentation -t onschedule spec/features/external_links_spec.rb
 
       - name: Slack Notification
