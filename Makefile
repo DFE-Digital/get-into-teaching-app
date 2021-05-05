@@ -23,6 +23,7 @@ APPLICATION_SECRETS=APP-KEYS
 CONTENT_SECRETS=CONTENT-KEYS
 PAGESPEED_SECRETS=PAGE-SPEED-KEYS
 DOCKER_IMAGE=get-into-teaching-app
+CORES=8
 
 .PHONY: development
 development:
@@ -82,4 +83,4 @@ docker:
 	docker build . -t ${DOCKER_IMAGE}
 
 specs:
-	docker run -t --rm -e RAILS_ENV=test ${DOCKER_IMAGE} rspec spec/features/funding_widget_spec.rb
+	docker run -t --rm -e PARALLEL_TEST_PROCESSORS=${CORES}  -e RAILS_ENV=test ${DOCKER_IMAGE} rake parallel:rspec

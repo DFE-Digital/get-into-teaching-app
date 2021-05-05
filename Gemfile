@@ -77,6 +77,7 @@ group :development, :test do
 
   # Testing framework
   gem "rspec-rails", "~> 5.0.1"
+  gem 'parallel_tests'
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.35"
   gem "factory_bot_rails"

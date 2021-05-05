@@ -14,6 +14,7 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 require "webmock/rspec"
+require 'parallel_tests/test/runtime_logger'
 
 require "simplecov"
 require "simplecov_json_formatter"
