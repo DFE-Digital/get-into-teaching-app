@@ -19,6 +19,16 @@ stories:
     image: /assets/images/stories/stories-shaun.jpg
     image_description: Photograph of international returning teacher, Shaun
     link: /my-story-into-teaching/international-career-changers/returning-to-teaching-with-support-from-an-adviser
+  - name: Gary
+    snippet: An interview with Gary Hellyer
+    image: /assets/images/stories/stories-generic.jpg
+    image_description: Photograph of international returning teacher, Gary
+    link: /my-story-into-teaching/international-career-changers/an-interview-with-gary-hellyer
+  - name: Jack
+    snippet: An interview with Jack Higgins
+    image: /assets/images/stories/stories-generic.jpg
+    image_description: Photograph of international returning teacher, Jack
+    link: /my-story-into-teaching/international-career-changers/an-interview-with-jack-higgins
 keywords:
   - Changing career
   - Career change
@@ -28,4 +38,5 @@ keywords:
   - International Returner
 ---
 
-Read stories from teachers with international experience who have returned to teaching in England.
+Read stories from teachers with international experience who have returned to
+teaching in England.
