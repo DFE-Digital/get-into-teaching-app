@@ -1,5 +1,6 @@
 name: Build and Deploy
 on:
+  workflow_dispatch:
   pull_request:
     types: [assigned, opened, synchronize, reopened]
   push:
