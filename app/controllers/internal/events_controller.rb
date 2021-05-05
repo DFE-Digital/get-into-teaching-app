@@ -50,6 +50,11 @@ module Internal
     def edit
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
       @event = Event.initialize_with_api_event(api_event)
+      if params[:duplicated]
+        @event.id = nil
+        @event.readable_id = nil
+      end
+
       render :new
     end
 

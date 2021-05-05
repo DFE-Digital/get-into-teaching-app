@@ -184,6 +184,13 @@ describe Internal::EventsController do
       context "when online event type parameter" do
         include_examples "new event", "online"
       end
+
+      it "removes 'id' and 'partial url' when event is duplicated" do
+        get edit_internal_event_path(event_to_edit_readable_id, duplicated: true), headers: generate_auth_headers(:author)
+        assert_response :success
+        expect(css_select("#internal_event_id").first[:value]).to be_nil
+        expect(css_select("#internal-event-readable-id-field").first[:value]).to be_nil
+      end
     end
 
     describe "#edit" do
