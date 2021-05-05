@@ -16,7 +16,7 @@
                       edit_internal_event_path(@event.readable_id), method: :get,
                       class: "button notification-button" %>
         <%= button_to "Duplicate this event",
-                      edit_internal_event_path(@event.readable_id), params: { duplicated: true },
+                      new_internal_event_path, params: { duplicate: @event.readable_id },
                       method: :get,
                       class: "button notification-button",
                       form: { target: '_blank' } %>
