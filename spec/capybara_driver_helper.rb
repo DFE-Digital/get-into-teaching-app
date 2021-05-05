@@ -1,4 +1,5 @@
 require "capybara/rspec"
+require "webdrivers/chromedriver"
 
 JS_DRIVER = :selenium_chrome_headless
 
