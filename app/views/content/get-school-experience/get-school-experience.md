@@ -7,10 +7,10 @@ description: |-
 date: "2021-05-04"
 right_column:
   ctas:
-    - title: Get school experience
-      link_text: "Request early years, primary or secondary experience"
+    - title: Organise school experience
+      link_text: "Request school experience"
       link_target: "https://schoolexperience.education.gov.uk/"
-      icon: "icon-person"
+      icon: "icon-calendar"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
 keywords:
@@ -31,7 +31,7 @@ It can also really help [your teacher training application](/tips-on-applying-fo
 
 To find experience you can:
 
-* [request early years, primary or secondary experience on GOV.UK](https://schoolexperience.education.gov.uk/) - not all schools advertise experience here and some only offer online experience due to coronavirus (COVID-19) restrictions
+* [find a school offering experience through GOV.UK](https://schoolexperience.education.gov.uk/) - not all schools advertise experience here and some only offer online experience due to coronavirus (COVID-19) restrictions
 * approach schools yourself
 
 ## Approach schools yourself
