@@ -1,5 +1,6 @@
 require "next_gen_images"
 require "lazy_load_images"
+require "responsive_images"
 
 class ApplicationController < ActionController::Base
   include UtmCodes
@@ -36,6 +37,7 @@ private
     return unless response_is_html?
 
     response.body = NextGenImages.new(response.body).html
+    response.body = ResponsiveImages.new(response.body).html
     response.body = LazyLoadImages.new(response.body).html
   end
 

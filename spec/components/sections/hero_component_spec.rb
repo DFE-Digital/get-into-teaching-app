@@ -57,7 +57,7 @@ describe Sections::HeroComponent, type: "component" do
 
       context "when an image is present in the front matter" do
         specify "the hero renders it" do
-          expect(page).to have_css(%(div.hero__img))
+          expect(page).to have_css("img[data-lazy-disable=true]")
           expect(rendered_component).to match(/images\/hero-home-dt-[0-9a-f]+\.jpg/)
         end
       end
