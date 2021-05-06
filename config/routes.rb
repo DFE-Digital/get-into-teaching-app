@@ -99,6 +99,14 @@ Rails.application.routes.draw do
     end
   end
 
+  unless Rails.env.production?
+    resource :mailing_list_signup,
+             path: "personalised-updates",
+             path_names: { new: "register", edit: "verify" },
+             as: "mailing_list_signup",
+             only: %w[new create edit update]
+  end
+
   get "/guidance/*page", to: "guidance#show"
   get "*page", to: "pages#show", as: :page, constraints: ->(request) { !request.path.start_with?("/rails/") }
 end
