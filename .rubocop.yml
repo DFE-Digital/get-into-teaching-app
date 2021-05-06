@@ -11,6 +11,7 @@ AllCops:
     - Rakefile
     - config.ru
     - db/schema.rb
+    - lib/tasks/tests.rake
     - bin/*
     - node_modules/**/*
     - spec/models/wizard/**/* # Separate PR splits this out into gem
