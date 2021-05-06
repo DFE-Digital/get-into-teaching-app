@@ -4,9 +4,9 @@ redirects:
   "/train-to-become-a-teacher": "/guidance/become-a-teacher-in-england"
   "/guidance/train-to-become-a-teacher": "/guidance/become-a-teacher-in-england"
 
-  "/finance-guidance": "/guidance/financial-support-for-teacher-training"
-  "/financial-support-for-teacher-training": "/guidance/financial-support-for-teacher-training"
-
+  "/finance-guidance": "/funding-your-training"
+  "/financial-support-for-teacher-training": "/funding-your-training"
+  "/guidance/financial-support-for-teacher-training": "/funding-your-training"
   "/guidance": "/guidance/become-a-teacher-in-england"
 
   # Top-level pages
