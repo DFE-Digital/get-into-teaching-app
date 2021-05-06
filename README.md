@@ -72,7 +72,7 @@ bundle exec rake
 ## Running specs
 
 **Dependencies:** The Chrome and chromedriver need to be installed for the feature tests.
-Alternatively, install the chromium and chromium-webdriver for smaller footprint.
+Alternatively, install the chromium and chromium-chromedriver for smaller footprint.
 
 To run the Ruby specs
 
