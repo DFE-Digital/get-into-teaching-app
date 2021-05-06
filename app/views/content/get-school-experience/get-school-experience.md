@@ -3,7 +3,7 @@ title: Get school experience
 image: "/assets/images/international-dt.jpg"
 mobileimage: "/assets/images/steps-hero-mob.jpg"
 description: |-
-  School experience can help your teacher training application. Here's how to get school experience.
+  School experience can help you talk to teachers and get an insight into day-to-day school life. Here's how to get school experience.
 date: "2021-05-04"
 right_column:
   ctas:
@@ -26,8 +26,6 @@ Spending some time in a school allows you to:
 * observe lessons and other teacher responsibilities
 * talk to teachers
 * get an insight into day-to-day school life
-
-It can also really help [your teacher training application](/tips-on-applying-for-teacher-training), although it’s not a training entry requirement.
 
 To find experience you can:
 
