@@ -24,9 +24,12 @@ Bundler.require(*Rails.groups)
 
 PROMETHEUS_DIR = "/tmp/prometheus".freeze
 
-# Needs to clear before initializing.
-Dir["#{PROMETHEUS_DIR}/*.bin"].each do |file_path|
-  File.unlink(file_path)
+# Needs to clear before initializing - we don't do this in test
+# env as its not needed and also not thread-safe (specs run in parallel).
+unless Rails.env.test?
+  Dir["#{PROMETHEUS_DIR}/*.bin"].each do |file_path|
+    File.unlink(file_path)
+  end
 end
 
 # The DirectFileStore is the only way to aggregate metrics across processes.

@@ -229,6 +229,9 @@ GEM
       racc (~> 1.4)
     os (1.1.1)
     parallel (1.20.1)
+    parallel_split_test (0.9.1)
+      parallel (>= 0.5.13)
+      rspec-core (>= 3.9.0)
     parser (3.0.0.0)
       ast (~> 2.4.1)
     prometheus-client (2.1.0)
@@ -446,6 +449,7 @@ DEPENDENCIES
   kramdown (>= 2.3.1)
   listen (>= 3.0.5, < 3.6)
   loaf
+  parallel_split_test
   prometheus-client
   pry-byebug
   pry-rails
@@ -476,4 +480,4 @@ RUBY VERSION
    ruby 2.7.3p183
 
 BUNDLED WITH
-   2.2.8
+   2.2.16
