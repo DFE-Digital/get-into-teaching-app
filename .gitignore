@@ -40,5 +40,3 @@ yarn-debug.log*
 tokens
 terraform.tfstate
 terraform.tfstate.backup
-
-!parallel_runtime_rspec.log
