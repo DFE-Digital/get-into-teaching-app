@@ -1,0 +1,25 @@
+<%= tag.blockquote(class: quote_class) do %>
+  <p><%= text_sans_last_word %><span><%= text_last_word %></span></p>
+  <% if show_footer? %>
+    <%= tag.footer(class: footer_class) do %>
+      <div class="author">
+        <% if image.present? %>
+          <%= image_pack_tag(image) %>
+        <% end %>
+        <div>
+          <% if name.present? %>
+            <cite class="name"><%= name %></cite>
+          <% end %>
+          <% if job_title.present? %>
+            <cite class="job-title"><%= job_title %></cite>
+          <% end %>
+        </div>
+      </div>
+      <% if cta.present? %>
+        <%= link_to(cta[:link], class: "button button--smaller") do %>
+          <%= cta_title_sans_last_word %> <span><%= cta_title_last_word %></span>
+        <% end %>
+      <% end %>
+    <% end %>
+  <% end %>
+<% end %>

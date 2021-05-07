@@ -1,48 +1,16 @@
 .markdown {
-  @mixin quote-icon($quote-size) {
-    @include icon;
-    background-image: url('../images/white-quote.svg');
-    width: $quote-size;
-    height: $quote-size;
-    fill: $white;
-    content: "";
-  }
-
-  @mixin quote {
-    background-color: $yellow;
-    float: left;
-    max-width: 340px;
-    position: relative;
-  }
-
-  @mixin fancy-quotes {
-    $quote-size: 17px;
-
-    padding: 15px 44px;
-    font-weight: bold;
-
-    &:before {
-      @include quote-icon($quote-size);
-      position: absolute;
-      left: .4em;
-    }
-
-    &:after {
-      @include quote-icon($quote-size);
-      position: inline;
-      transform: rotate(180deg);
-      margin-left: 7px;
-    }
-  }
-
   > blockquote {
     @include quote;
+    float: left;
+    max-width: 340px;
     margin: 0 25px 0 0;
 
     p {
-      @include fancy-quotes;
+      @include fancy-quotes-before;
+      @include fancy-quotes-after;
       margin: 0;
       padding: 1em 1.6em;
+      padding: 15px 44px;
     }
 
     @include mq($until: mobile) {
@@ -56,6 +24,8 @@
 
   figure {
     @include quote;
+    float: left;
+    max-width: 340px;
 
     @include mq($until: tablet) {
       max-width: inherit;
@@ -69,10 +39,10 @@
     }
 
     blockquote {
-      margin: 1em 2rem;
-
       p {
-        @include fancy-quotes;
+        @include fancy-quotes-before;
+        @include fancy-quotes-after;
+        padding: 15px 44px;
         @include reset;
       }
     }
