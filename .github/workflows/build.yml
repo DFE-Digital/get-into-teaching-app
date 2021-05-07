@@ -499,7 +499,7 @@ jobs:
           ref: refs/heads/master
           repo: get-into-teaching-frontend-tests
           intervalSeconds: 30
-          timeoutSeconds: 300
+          timeoutSeconds: 600
 
       - name: Check for test failure
         if: steps.wait-for-tests.outputs.conclusion == 'failure'
