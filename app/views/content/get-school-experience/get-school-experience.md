@@ -7,8 +7,8 @@ description: |-
 date: "2021-05-04"
 right_column:
   ctas:
-    - title: Organise school experience
-      link_text: "Request school experience"
+    - title: Find and organise school experience
+      link_text: "Get school experience"
       link_target: "https://schoolexperience.education.gov.uk/"
       icon: "icon-calendar"
       hide_on_mobile: Yes
@@ -23,14 +23,16 @@ School experience can help you decide whether teaching is right for you.
 
 Spending some time in a school allows you to:
 
-* observe lessons and other teacher responsibilities
+* observe a range of lessons and other teacher responsibilities
 * talk to teachers
 * get an insight into day-to-day school life
 
 To find experience you can:
 
-* [find a school offering experience through GOV.UK](https://schoolexperience.education.gov.uk/) - not all schools advertise experience here and some only offer online experience due to coronavirus (COVID-19) restrictions
+* [find a school offering experience through GOV.UK](https://schoolexperience.education.gov.uk/)
 * approach schools yourself
+
+Many schools offer virtual experience. This could include talking to teachers and reviewing videos of lessons, for example.
 
 ## Approach schools yourself
 
@@ -38,13 +40,13 @@ To find experience you can:
 
 It's normal to have to try a few schools before you find one that can help.
 
-They may be limiting visitors due to coronavirus (COVID-19) and may need to organise a DBS check to ensure you're safe to work with children.
+They may be limiting visitors due to coronavirus (COVID-19) and may need to organise a DBS check.
 
 Be flexible with your availability if possible and persevere with your search.
 
 ## Maths or physics teaching internships
 
-[Find a paid teaching internship if you’re doing an undergraduate degree in science, technology, engineering or maths (STEM)](/teaching-internship-providers).
+You may be eligible for a [maths or physics teaching internship earning £300 a week if you're doing a undergraduate degree in science, technology, engineering or maths](/teaching-internship-providers).
 
 ## If you cannot get into the classroom right now
 
