@@ -7,7 +7,7 @@ description: |-
 date: "2021-05-04"
 right_column:
   ctas:
-    - title: Find and organise school experience on GOV.UK
+    - title: Find and organise school experience
       link_text: "Get school experience"
       link_target: "https://schoolexperience.education.gov.uk/"
       icon: "icon-calendar"
@@ -23,7 +23,7 @@ School experience can help you decide whether teaching is right for you.
 
 Spending some time in a school allows you to:
 
-* observe lessons and other teacher responsibilities
+* observe a range of lessons and other teacher responsibilities
 * talk to teachers
 * get an insight into day-to-day school life
 
@@ -31,6 +31,8 @@ To find experience you can:
 
 * [find a school offering experience through GOV.UK](https://schoolexperience.education.gov.uk/)
 * approach schools yourself
+
+Many schools offer virtual experience. This could include talking to teachers and reviewing videos of lessons, for example.
 
 ## Approach schools yourself
 
@@ -44,7 +46,7 @@ Be flexible with your availability if possible and persevere with your search.
 
 ## Maths or physics teaching internships
 
-If you are interested in teaching secondary maths or physics, and you are an undergraduate on a STEM related degree, you may be eligible for a paid Teaching Internship. This provides an opportunity to experience the teaching profession, gain new skills and be paid £300 per week for your time. [Find a paid teaching internship](/teaching-internship-providers).
+You may be eligible for a [maths or physics teaching internship earning £300 a week if you're doing a undergraduate degree in science, technology, engineering or maths](/teaching-internship-providers).
 
 ## If you cannot get into the classroom right now
 
