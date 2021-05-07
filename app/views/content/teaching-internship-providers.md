@@ -1,5 +1,5 @@
 ---
-title: Providers offering maths and physics teaching internships
+title: Maths and physics teaching internships
 description: |-
   A number of accredited providers have been approved to offer Teaching
   Internships. You can find them listed on this page.
