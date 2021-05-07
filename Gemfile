@@ -4,13 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.3"
+gem "rails", "~> 6.1.3", ">= 6.1.3.2"
 
 # Use Puma as the app server
 gem "puma", "~> 5.2"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem "webpacker"
+gem "webpacker", ">= 5.3.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -24,7 +24,7 @@ gem "foreman"
 gem "secure_headers"
 
 # Canonical meta tag
-gem "canonical-rails"
+gem "canonical-rails", ">= 0.2.11"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.3.1"
@@ -39,15 +39,15 @@ gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
 
-gem "dotenv-rails"
+gem "dotenv-rails", ">= 2.7.6"
 
 gem "govuk_design_system_formbuilder"
 
-gem "loaf"
+gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails"
+gem "sentry-rails", ">= 4.3.4"
 gem "sentry-ruby"
 
 gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
@@ -59,7 +59,7 @@ gem "view_component"
 gem "google-api-client", ">= 0.53.0", require: false
 
 # Ignore cloudfront IPs when getting customer IP address
-gem "actionpack-cloudfront"
+gem "actionpack-cloudfront", ">= 1.1.0"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -79,7 +79,7 @@ group :development, :test do
   gem "rspec-rails", "~> 5.0.1"
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.35"
-  gem "factory_bot_rails"
+  gem "factory_bot_rails", ">= 6.1.0"
   gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false
   gem "simplecov"
@@ -88,7 +88,7 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem "listen", ">= 3.0.5", "< 3.6"
-  gem "web-console", ">= 3.3.0"
+  gem "web-console", ">= 4.1.0"
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "spring"
@@ -105,7 +105,7 @@ group :rolling, :preprod, :userresearch, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"
-  gem "rails_semantic_logger"
+  gem "rails_semantic_logger", ">= 4.5.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
