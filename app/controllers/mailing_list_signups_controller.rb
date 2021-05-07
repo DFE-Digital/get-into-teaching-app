@@ -7,6 +7,8 @@ class MailingListSignupsController < ApplicationController
   SESSION_STORE_KEY = :mailing_list_signup
 
   def new
+    @page_title = "Register for personalised updates"
+
     @signup = MailingList::Signup.new
   end
 
@@ -26,6 +28,8 @@ class MailingListSignupsController < ApplicationController
   end
 
   def edit
+    @page_title = "We've emailed you a code to check it's you"
+
     restore_signup_from_session
   rescue VerifyWithEmptySessionError
     redirect_to(new_mailing_list_signup_path)
