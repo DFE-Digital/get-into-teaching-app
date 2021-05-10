@@ -1,0 +1,121 @@
+.quote {
+  @include quote;
+  margin: 0;
+
+  p {
+    @include fancy-quotes-before;
+    margin: 0;
+    font-size: 1.2em;
+
+    span {
+      @include fancy-quotes-after;
+      white-space: nowrap;
+    }
+  }
+
+  p, .footer {
+    padding: $indent-amount 25px $indent-amount 48px;
+  }
+
+  .footer {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .author {
+      display: inline-flex;
+      gap: 1em;
+      font-size: 1em;
+    }
+
+    .name, .job-title {
+      display: block;
+      font-style: normal;
+    }
+
+    .job-title {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    .button {
+      margin-top: $indent-amount;
+    }
+
+    img {
+      max-width: 50%;
+    }
+  }
+}
+
+@include mq($from: tablet) {
+  .quote p {
+    font-size: 1.4em;
+  }
+
+  .quote--inline {
+    max-width: 50%;
+    float: left;
+    margin-right: $indent-amount;
+    margin-bottom: $indent-amount;
+  }
+
+  .quote:not(.quote--inline) {
+    &.quote--hang-right {
+      .footer {
+        flex-direction: row-reverse;
+
+        &--with-image {
+          .author {
+            margin-right: 185px;
+          }
+        }
+
+        .author {
+          margin-left: 0;
+          text-align: right;
+        }
+
+        img {
+          left: auto;
+          right: 0;
+        }
+
+        .button {
+          right: auto;
+          left: 1em;
+        }
+      }
+    }
+  }
+
+  .quote:not(.quote--inline) {
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &--with-image {
+        .author {
+          margin-left: 170px;
+        }
+      }
+
+      .button {
+        margin-top: 0;
+        position: absolute;
+        right: $indent-amount;
+        bottom: 0;
+        transform: translate(0, 50%);
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        border: 1em solid $yellow;
+        border-top: 0;
+        width: 175px;
+      }
+    }
+  }
+}
