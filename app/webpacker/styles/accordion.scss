@@ -45,12 +45,6 @@
     .step-content__description {
       margin: 0;
       padding: $indent-amount;
-
-      blockquote {
-        background: $grey;
-        padding: 1em;
-        margin: 1em 0;
-      }
     }
 
     &.inactive {

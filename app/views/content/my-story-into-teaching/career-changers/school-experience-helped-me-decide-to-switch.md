@@ -15,13 +15,17 @@ build_layout_from_frontmatter: true
 description: |-
   Zainab Kasmani's route into teaching
 date: "2020-02-01"
+quote:
+  q-zainab:
+    text: I started thinking about the other options. I thought about speech and language therapy and teaching children with special needs. I thought, 'The only way I'm going to know for certain if teaching is the right career for me, is if I go part-time at work and volunteer in a school'.
+    inline: left
 ---
 
 I graduated with a degree in English language and communication, I wasn't sure what I wanted to do, but I knew I wanted to travel. I completed a starter course and went to teach English abroad.
 
 When I returned I worked in the NHS for 4 years, but the job was not for me.
 
-> I started thinking about the other options. I thought about speech and language therapy and teaching children with special needs. I thought, 'The only way I'm going to know for certain if teaching is the right career for me, is if I go part-time at work and volunteer in a school'.
+$q-zainab$
 
 I volunteered at a local primary school for two days a week and from the moment I walked into my first class, it felt very natural to be interacting with children.
 

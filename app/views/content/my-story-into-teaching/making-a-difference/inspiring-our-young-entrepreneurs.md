@@ -15,11 +15,15 @@ build_layout_from_frontmatter: true
 description: |-
   Laura Hurn's route into teaching
 date: "2020-02-01"
+quote:
+  q-laura:
+    text: Being able to make a difference to individuals' lives, rather than being motivated by pounds in tills, is really satisfying.
+    inline: left
 ---
 
 I have been a business studies teacher for 8 years, after a career in the retail industry. I loved the excitement of retail, but the chance to educate children to become whatever they want to be was just really appealing.
 
-> Being able to make a difference to individuals' lives, rather than being motivated by pounds in tills, is really satisfying.
+$q-laura$
 
 ### Business studies equals life skills
 

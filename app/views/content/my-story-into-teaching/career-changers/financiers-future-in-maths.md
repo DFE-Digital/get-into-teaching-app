@@ -15,13 +15,17 @@ build_layout_from_frontmatter: true
 description: |-
   Peter Bassett's route into teaching
 date: "2020-02-01"
+quote:
+  q-peter:
+    text: Enrolling on a salaried teacher training course made becoming a teacher a possibility.
+    inline: left
 ---
 
 I spent 27 years working in finance in London. Having raised my own family and enjoyed a successful career in the city, I wanted to pursue one of my long-term ambitions, and chose to make the switch to teaching.
 
 I'd been working in the same role for many years and I was no longer feeling challenged. So I had a decision to make: stay in my finance role, or give myself a new break.
 
-> Enrolling on a salaried teacher training course made becoming a teacher a possibility.
+$q-peter$
 
 I'd gained a lot of experience of working with people who have different skill sets and approaches, and it really helped me when faced with a classroom of students all of whom have different approaches, ideas and attitudes.
 

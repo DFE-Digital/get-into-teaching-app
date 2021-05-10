@@ -16,13 +16,17 @@ build_layout_from_frontmatter: true
 description: |-
   Karen Roberts's route into teaching
 date: "2020-02-01"
+quote:
+  q-karen:
+    text: The best parts of teaching for me are seeing that lightbulb moment when a child suddenly understands something they didn't before.
+    inline: left
 ---
 
 I am a French and Spanish teacher at Norbury Manor Business Enterprise College for Girls. I was a director of a large market research agency, but I had always always harboured a long-term ambition to teach.
 
 I'd always had teaching in mind, because I'd really enjoyed the work I'd done with young people and children in my previous job. I felt a spark and the creativity that comes with that. I wanted to become a teacher for that reason but also because of the passion and enthusiasm I have for languages, which I wanted to pass on.
 
-> The best parts of teaching for me are seeing that lightbulb moment when a child suddenly understands something they didn't before.
+$q-karen$
 
 Making the decision to leave an established career wasn't easy, and I had to be sure I was making the right decision. I went to a 'train to teach roadshow', taking the opportunity to speak to experienced teachers, schools and universities that offer teacher training and fellow professionals seeking to establish a new career in teaching.
 

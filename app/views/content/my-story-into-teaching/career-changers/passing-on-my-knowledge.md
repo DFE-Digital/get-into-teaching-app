@@ -15,13 +15,17 @@ build_layout_from_frontmatter: true
 description: |-
   Amy Salwey's route into teaching
 date: "2020-02-01"
+quote:
+  q-amy:
+    text: I remember one of my teachers saying 'We should not keep knowledge to ourselves; we should share this knowledge to others.'
+    inline: left
 ---
 
 After university I became an accountant and built my way up to chief financial officer. I wanted to use this experience to break down the perceived barriers around the subject I love: maths.
 
 Maths has the unfortunate reputation of being difficult and lifeless. I want to raise its reputation by inspiring young minds to find the fun in discovering maths' unique characteristics.
 
-> I remember one of my teachers saying 'We should not keep knowledge to ourselves; we should share this knowledge to others.'
+$q-amy$
 
 When I made the decision of a career change, I knew I needed to be doing something which could provide some type of service for the greater good. I wanted a career that would inspire me and motivate me to be at my best, a career which gives back to the soul.
 

@@ -18,11 +18,15 @@ build_layout_from_frontmatter: true
 description: |-
   Katie Lockett's route into teaching
 date: "2020-02-01"
+quote:
+  q-katie:
+    text: The main thing I missed about teaching in England was the curriculum and approach to teaching and learning.
+    inline: left
 ---
 
 After four years of teaching modern foreign languages in London, I decided to try something different. I moved to China to teach in an international school, but after a while, I wanted to move back to England to be closer to my partner.
 
-> The main thing I missed about teaching in England was the curriculum and approach to teaching and learning.
+$q-katie$
 
 We're fortunate to have so many research-based educators here who share their ideas at exciting events like ResearchEd.
 

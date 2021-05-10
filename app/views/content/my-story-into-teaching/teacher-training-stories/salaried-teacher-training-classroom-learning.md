@@ -15,13 +15,17 @@ build_layout_from_frontmatter: true
 description: |-
   Nathan Sproule's route into teaching
 date: "2020-02-01"
+quote:
+  q-nathan:
+    text: Throughout my training year I was regularly supported by a mentor, who I met weekly
+    inline: left
 ---
 
 Salaried teacher training offered the best option for me, earning an income while I trained towards qualified teacher status (QTS). My course also included a postgraduate certificate in education (PGCE), and Masters-level credits.
 
 From the outset I was working within the school, learning and training in the classroom whilst being supported by qualified teachers and mentors. This gave me valuable experience of school life and a real feel for school. It also prepared me thoroughly for my newly qualified teacher (NQT) year.
 
-> Throughout my training year I was regularly supported by a mentor, who I met weekly
+$q-nathan$
 
 This really helped me to improve; we developed targets for future lessons and discussed which areas were going well and which required improvement.
 

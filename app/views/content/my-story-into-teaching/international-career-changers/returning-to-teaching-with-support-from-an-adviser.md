@@ -18,6 +18,10 @@ build_layout_from_frontmatter: true
 description: |-
   Shaun's route into teaching
 date: "2020-02-01"
+quote:
+  q-shaun:
+    text: I believe the advice for approaching the observed lesson was exceptional – I received lots of great ideas (especially for science practicals).
+    inline: left
 ---
 
 I taught abroad for a number of years and returned to the UK in 2017. On returning, I felt teaching back in the UK was too daunting as things had moved on a lot since I was last in a UK classroom.
@@ -28,7 +32,7 @@ I tried my hand at various other jobs, but they just didn't give me the same job
 
 For example, they highlighted things I may have missed from the job specification and provided background information about the school.
 
-> I believe the advice for approaching the observed lesson was exceptional – I received lots of great ideas (especially for science practicals).
+$q-shaun$
 
 I think it’s very easy to try and do too much in an observed lesson and my adviser was great at identifying this and suggesting other approaches. I was also signposted to continuous professional development (CPD) opportunities that would help me get back into the classroom.
 
