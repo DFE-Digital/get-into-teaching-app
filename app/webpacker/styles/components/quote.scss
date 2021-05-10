@@ -1,11 +1,11 @@
 .quote {
   @include quote;
-  margin: 0;
+  margin: $indent-amount 0;
+  width: 100%;
 
   p {
     @include fancy-quotes-before;
     margin: 0;
-    font-size: 1.2em;
 
     span {
       @include fancy-quotes-after;
@@ -14,7 +14,7 @@
   }
 
   p, .footer {
-    padding: $indent-amount 25px $indent-amount 48px;
+    padding: $indent-amount 25px $indent-amount 42px;
   }
 
   .footer {
@@ -50,18 +50,23 @@
 }
 
 @include mq($from: tablet) {
-  .quote p {
-    font-size: 1.4em;
-  }
-
-  .quote--inline {
+  .quote--inline-left,
+  .quote--inline-right {
     max-width: 50%;
-    float: left;
-    margin-right: $indent-amount;
     margin-bottom: $indent-amount;
   }
 
-  .quote:not(.quote--inline) {
+  .quote--inline-left {
+    float: left;
+    margin-right: $indent-amount;
+  }
+
+  .quote--inline-right {
+    float: right;
+    margin-left: $indent-amount;
+  }
+
+  .quote:not(.quote--inline-left, .quote--inline-right) {
     &.quote--hang-right {
       .footer {
         flex-direction: row-reverse;
@@ -88,9 +93,7 @@
         }
       }
     }
-  }
 
-  .quote:not(.quote--inline) {
     .footer {
       flex-direction: row;
       justify-content: space-between;

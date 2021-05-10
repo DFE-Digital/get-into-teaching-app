@@ -162,13 +162,13 @@ private
 
   def hang_right
     {
-      hang: :right,
+      hang: "right",
     }
   end
 
   def inline
     {
-      inline: true,
+      inline: "left",
     }
   end
 end

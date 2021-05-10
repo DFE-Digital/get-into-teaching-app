@@ -17,8 +17,8 @@ describe Content::QuoteComponent, type: :component do
   let(:job_title) { "job-title" }
   let(:cta) { { title: "click this", link: "/cta" } }
   let(:image) { "media/images/featured-3.jpg" }
-  let(:hang) { :left }
-  let(:inline) { false }
+  let(:hang) { "left" }
+  let(:inline) { nil }
 
   subject do
     render_inline(component)
@@ -27,7 +27,8 @@ describe Content::QuoteComponent, type: :component do
 
   describe "quote classes" do
     it { is_expected.to have_css(".quote.quote--hang-#{hang}") }
-    it { is_expected.not_to have_css(".quote--inline") }
+    it { is_expected.not_to have_css(".quote--inline-left") }
+    it { is_expected.not_to have_css(".quote--inline-right") }
   end
 
   describe "quote text" do
@@ -70,9 +71,14 @@ describe Content::QuoteComponent, type: :component do
     it { is_expected.not_to have_css("img") }
   end
 
-  context "when inline" do
-    let(:inline) { true }
-    it { is_expected.to have_css(".quote--inline") }
+  context "when inline right" do
+    let(:inline) { "right" }
+    it { is_expected.to have_css(".quote--inline-right") }
+  end
+
+  context "when inline left" do
+    let(:inline) { "left" }
+    it { is_expected.to have_css(".quote--inline-left") }
   end
 
   context "when no footer elements are present" do
@@ -96,12 +102,17 @@ describe Content::QuoteComponent, type: :component do
 
     it do
       expect { described_class.new(text: text, hang: nil) }.to \
-        raise_error(ArgumentError, "hang must be :right or :left")
+        raise_error(ArgumentError, "hang must be right or left")
     end
 
     it do
-      expect { described_class.new(text: text, hang: :up) }.to \
-        raise_error(ArgumentError, "hang must be :right or :left")
+      expect { described_class.new(text: text, hang: "up") }.to \
+        raise_error(ArgumentError, "hang must be right or left")
+    end
+
+    it do
+      expect { described_class.new(text: text, inline: "bottom") }.to \
+        raise_error(ArgumentError, "inline must be right or left")
     end
 
     it do
