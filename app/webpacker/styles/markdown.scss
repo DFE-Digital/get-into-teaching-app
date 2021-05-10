@@ -135,6 +135,24 @@
     }
   }
 
+  &.guidance {
+    // undo the blue background
+    h2 {
+      background-color: unset;
+      color: $black;
+      margin-top: 1rem;
+      font-size: 1.4rem;
+
+      &:after {
+        content: unset;
+      }
+    }
+
+    h3 {
+      font-size: 1.2rem;
+    }
+  }
+
   &.disclaimer {
     p,
     ul,
