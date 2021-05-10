@@ -45,7 +45,7 @@
                          hint: { text: 'You can generate the partial URL from the event name and start at date' },
                          data: { target: "internal-events.partialUrl" } %>
   <%= f.button "Generate partial URL",
-               class: "call-to-action-button button form-button",
+               class: "button form-button",
                data: { action: "click->internal-events#generateButtonClicked" } %>
 
   <div class="no-left-margin">
@@ -72,5 +72,5 @@
       <% end %>
     <% end %>
   </div>
-  <%= f.button "Submit for review", class: "call-to-action-button button form-button" %>
+  <%= f.button "Submit for review", class: "button form-button" %>
 <% end %>
