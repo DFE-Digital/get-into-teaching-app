@@ -1,5 +1,5 @@
 module Content
-  class ComponentInjector
+  class CallToActionComponentInjector
     CALLS_TO_ACTION = {
       "simple" => CallsToAction::SimpleComponent,
       "chat_online" => CallsToAction::ChatOnlineComponent,

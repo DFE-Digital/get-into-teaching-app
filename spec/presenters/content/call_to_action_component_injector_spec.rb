@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Content::ComponentInjector, type: :component do
+RSpec.describe Content::CallToActionComponentInjector, type: :component do
   {
     "simple component" => {
       "name" => "simple",
