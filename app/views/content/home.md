@@ -1,6 +1,6 @@
 ---
   layout: "layouts/home"
-  title: "Need help getting into teaching?"
+  title: "Inspire the next generation"
   description: |-
     If you want to get into teaching, we can help. Get information on training
     courses, funding, salaries and benefits - everything you need to take
