@@ -3,28 +3,10 @@ import { Controller } from 'stimulus';
 export default class extends Controller {
   static targets = ['name', 'startAt', 'partialUrl'];
 
-  get nameValue() {
-    return this.nameTarget.value;
-  }
-
-  get startAtValue() {
-    return this.startAtTarget.value;
-  }
-
-  get partialUrlValue() {
-    return this.partialUrlTarget.value;
-  }
-
-  set partialUrlValue(value) {
-    this.partialUrlTarget.value = value;
-  }
-
-  generateButtonClicked(event) {
-    event.preventDefault();
-
-    const date = this.formatDate(this.startAtValue);
-    const name = this.formatName(this.nameValue);
-    this.partialUrlValue = this.generatePartialUrl(date, name);
+  populatePartialUrl() {
+    const date = this.formatDate(this.startAtTarget.value);
+    const name = this.formatName(this.nameTarget.value);
+    this.partialUrlTarget.value = this.generatePartialUrl(date, name);
   }
 
   generatePartialUrl(date, name) {

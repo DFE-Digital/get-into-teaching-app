@@ -1,69 +1,64 @@
 import InternalEventsController from 'internal_events_controller.js';
+import { Application } from 'stimulus';
 
 describe('InternalEventsController', () => {
-  let controller;
+  document.body.innerHTML = `
+    <form class="new_internal_event" id="new_internal_event" data-controller="internal-events">
+      <input id="internal-event-name-field" class="govuk-input" data-internal-events-target="name"/>
+      <input class="datetime govuk-input" data-internal-events-target="startAt" type="datetime-local" name="internal_event[start_at]" id="internal_event_start_at"/>
+      <input id="internal-event-readable-id-field" class="govuk-input" aria-describedby="internal-event-readable-id-hint" data-internal-events-target="partialUrl" type="text" name="internal_event[readable_id]"/>
+      <button id="generate" name="button" type="button" class="button form-button" data-target="internal-events.generateButton" data-action="click->internal-events#populatePartialUrl">Generate partial <span>URL</span></button>
+    </form>
+  `;
 
-  beforeEach(() => {
-    controller = new InternalEventsController();
-  });
+  const application = Application.start();
+  application.register('internal-events', InternalEventsController);
 
-  describe('#formatDate()', () => {
-    it('returns an empty string when date an empty string', () => {
-      const result = controller.formatDate('');
+  describe('clicking "generate partial URL" button', () => {
+    describe('start at time is selected', () => {
+      beforeEach(
+        () =>
+          (document.getElementById('internal_event_start_at').value =
+            '2021-05-15T10:51')
+      );
 
-      expect(result).toBe('');
+      it('replaces name internal whitespace with hyphens', () => {
+        document.getElementById('internal-event-name-field').value =
+          'event     name';
+
+        document.getElementById('generate').click();
+
+        const partialUrlFieldValue = document.getElementById(
+          'internal-event-readable-id-field'
+        ).value;
+        expect(partialUrlFieldValue).toBe('210515-event-name');
+      });
+
+      it('trims name surrounding whitespace', () => {
+        document.getElementById('internal-event-name-field').value =
+          '  event name  ';
+
+        document.getElementById('generate').click();
+
+        const partialUrlFieldValue = document.getElementById(
+          'internal-event-readable-id-field'
+        ).value;
+        expect(partialUrlFieldValue).toBe('210515-event-name');
+      });
+
+      it('converts characters to lower case', () => {
+        document.getElementById('internal-event-name-field').value =
+          'EVENT NAME';
+
+        document.getElementById('generate').click();
+
+        const partialUrlFieldValue = document.getElementById(
+          'internal-event-readable-id-field'
+        ).value;
+        expect(partialUrlFieldValue).toBe('210515-event-name');
+      });
     });
 
-    it('returns a formatted date', () => {
-      const result = controller.formatDate('2021-05-15T10:51');
-
-      expect(result).toBe('210515');
-    });
-  });
-
-  describe('#formatName()', () => {
-    it('returns an empty string when name an empty string', () => {
-      const result = controller.formatName('');
-
-      expect(result).toBe('');
-    });
-
-    it('trims surrounding whitespace', () => {
-      const result = controller.formatName(' name ');
-
-      expect(result).toBe('name');
-    });
-
-    it('converts characters to lower case', () => {
-      const result = controller.formatName('TEST');
-
-      expect(result).toBe('test');
-    });
-
-    it('replaces internal whitespace with hyphens', () => {
-      const result = controller.formatName('event name');
-
-      expect(result).toBe('event-name');
-    });
-  });
-
-  describe('#generatePartialUrl()', () => {
-    it('returns an empty string when date is an empty string', () => {
-      const result = controller.generatePartialUrl('', 'name');
-
-      expect(result).toBe('');
-    });
-
-    it('returns an empty string when name is an empty string', () => {
-      const result = controller.generatePartialUrl('date', '');
-
-      expect(result).toBe('');
-    });
-
-    it('returns a formatted partial URL', () => {
-      const result = controller.generatePartialUrl('210515', 'event-name');
-
-      expect(result).toBe('210515-event-name');
-    });
+    describe('start at is not set', () => {});
   });
 });
