@@ -2,6 +2,8 @@ require "acronyms"
 
 module TemplateHandlers
   class Markdown
+    include ActionView::Helpers::OutputSafetyHelper
+
     attr_reader :template, :source, :options
 
     DEFAULTS = {}.freeze
@@ -63,14 +65,25 @@ module TemplateHandlers
       # want what's inside the capture group
 
       parsed.content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
-        cta_component($1)
+        safe_join([cta_component($1), component("quote", $1)].compact)
       end
     end
     # rubocop:enable Style/PerlBackrefs
 
     def cta_component(placeholder)
       component = Content::CallToActionComponentInjector.new(
-        front_matter.dig("calls_to_action", placeholder)
+        front_matter.dig("calls_to_action", placeholder),
+      ).component
+
+      return unless component
+
+      ApplicationController.render(component, layout: false)
+    end
+
+    def component(type, placeholder)
+      component = Content::ComponentInjector.new(
+        type,
+        front_matter.dig(type, placeholder),
       ).component
 
       return unless component
