@@ -1,6 +1,7 @@
 ---
 title: Get school experience
 image: "/assets/images/international-dt.jpg"
+article_classes: ['longform']
 mobileimage: "/assets/images/steps-hero-mob.jpg"
 description: |-
   School experience can help you talk to teachers and get an insight into day-to-day school life. Here's how to get school experience.
