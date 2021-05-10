@@ -37,6 +37,7 @@ COPY . .
 RUN bundle exec rake assets:precompile
 
 # Lossless optimize PNGs
+# hadolint ignore=DL3059
 RUN find public -type f -iname "*.png" -exec optipng -nb -nc -np {} \;
 # Optimize JPEG at 90% quality
 RUN find public -type f \( -iname "*.jpg" -o -iname "*.jpg" \) -exec jpegoptim -m90 --strip-all {} \;
@@ -49,6 +50,7 @@ RUN bundle exec rake fingerprinter:run
 # At 75% quality the images still look good and they are roughly half the size.
 # We need to convert after the fingerprinting so the file names are consistent.
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
+# hadolint ignore=DL3059
 RUN find public -name "*.jpg" -size "+1b" | parallel -eta magick {} -quality 75 "{.}.webp"
 RUN find public -name "*.jpeg" -size "+1b" | parallel -eta magick {} -quality 75 "{.}.webp"
 RUN find public -name "*.png" -size "+1b" | parallel -eta magick {} -quality 75 "{.}.webp"
