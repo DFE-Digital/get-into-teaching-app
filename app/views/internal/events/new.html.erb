@@ -13,7 +13,7 @@
   <%= f.hidden_field :id %>
   <%= f.govuk_text_field :name,
                          label: { text: 'Event name' },
-                         data: { "internal-events-target": "name"  } %>
+                         data: { "internal-events-target": "name" } %>
   <%= f.govuk_text_area :summary, label: { text: 'Event summary' } %>
   <%= render "form/govuk_error_message", label: "Event description", field_errors: @event.errors[:description] do %>
     <%= f.hidden_field :description, class: "event-description" %>
@@ -43,7 +43,11 @@
   <%= f.govuk_text_field :readable_id,
                          label: { text: 'Event partial URL' },
                          hint: { text: 'You can generate the partial URL from the event name and start at date' },
-                         data: { target: "internal-events.partialUrl" } %>
+                         data: { "internal-events-target": "partialUrl" } %>
+
+  <span class="govuk-error-message hidden" id="internal-generate-url-error" data-internal-events-target="errorMessage" }>
+    <span class="govuk-visually-hidden">Error: </span>Name and Start at fields must have values in order to generate partial URL
+  </span>
   <%= f.button "Generate partial URL",
                class: "button form-button",
                type: "button",

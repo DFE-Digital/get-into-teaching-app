@@ -1,23 +1,33 @@
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = ['name', 'startAt', 'partialUrl'];
+  static targets = ['name', 'startAt', 'partialUrl', 'errorMessage'];
 
   populatePartialUrl() {
-    const date = this.formatDate(this.startAtTarget.value);
-    const name = this.formatName(this.nameTarget.value);
+    const nameValue = this.nameTarget.value;
+    const startAtValue = this.startAtTarget.value;
+
+    if (nameValue === '' || startAtValue === '') {
+      this.partialUrlTarget.value = '';
+      this.toggleErrorMessageVisibility(true);
+      return;
+    }
+
+    this.toggleErrorMessageVisibility(false);
+    const date = this.formatDate(startAtValue);
+    const name = this.formatName(nameValue);
     this.partialUrlTarget.value = this.generatePartialUrl(date, name);
   }
 
   generatePartialUrl(date, name) {
-    if (date === '' || name === '') return '';
-
     return `${date}-${name}`;
   }
 
-  formatDate(dateTimeString) {
-    if (dateTimeString === '') return '';
+  toggleErrorMessageVisibility(visible) {
+    this.errorMessageTarget.style.display = visible ? 'block' : 'none';
+  }
 
+  formatDate(dateTimeString) {
     const date = dateTimeString.substring(0, dateTimeString.indexOf('T'));
     const [year, month, day] = date.split('-');
     return year.slice(-2) + month + day;
