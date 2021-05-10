@@ -6,7 +6,6 @@ import Rails from 'rails-ujs';
 import Turbolinks from 'turbolinks';
 
 import 'controllers';
-import 'javascript/js_enabled';
 
 require.context('../fonts', true);
 require.context('../images', true);
