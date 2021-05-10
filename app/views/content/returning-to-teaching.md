@@ -50,6 +50,8 @@ Returning to teaching might be easier than you expect.
 
 If you’re considering coming back to the profession, or if you’re qualified to teach but have never taught in a state school in England, we’re here to help.  
 
+<iframe src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 ## Why now
 
 Thousands of former teachers return to teaching each year. 
