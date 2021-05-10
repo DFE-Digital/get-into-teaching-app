@@ -17,11 +17,15 @@ keywords:
 ---
 Most disabled pupils and pupils with special educational needs learn in mainstream schools.
 
-As a qualified teacher you’ll have the opportunity to work with pupils with complex needs, no matter what setting you work in.
+No matter what settings you [train](/ways-to-train) and work in, whether it's mainstream schools or special schools, you’ll work with pupils with complex needs.
 
-Once you have [qualified teacher status](/ways-to-train) you might choose to teach in a mainstream or a special school, for example.
+You can [find a course which specialises in special educational needs and disability (SEND)](https://www.find-postgraduate-teacher-training.service.gov.uk/start/subject?l=2) if you have a particular interest in this area.
 
-You can [find a course which specialises in special educational needs and disability (SEND)](https://www.find-postgraduate-teacher-training.service.gov.uk/start/subject?l=2) if you have a particular interest in this area. However, it’s not essential.
+However, it’s not essential to do a course specialising in SEND.
+
+As you train and teach you'll get the skills you need to work with disabled pupils and pupils with special educational needs.
+
+This will enable you to work in a range of settings throughout your career.
 
 ## Teach pupils with sensory impairments
 
