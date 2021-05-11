@@ -1,4 +1,5 @@
 import { Controller } from 'stimulus';
+import { DateTime } from 'luxon';
 
 export default class extends Controller {
   static targets = ['name', 'startAt', 'partialUrl', 'errorMessage'];
@@ -8,18 +9,21 @@ export default class extends Controller {
     const startAtValue = this.startAtTarget.value;
 
     if (nameValue === '' || startAtValue === '') {
-      this.partialUrlTarget.value = '';
       this.toggleErrorMessageVisibility(true);
-      return;
+      this.partialUrlTarget.value = '';
+    } else {
+      this.toggleErrorMessageVisibility(false);
+      this.partialUrlTarget.value = this.generatePartialUrl(
+        startAtValue,
+        nameValue
+      );
     }
-
-    this.toggleErrorMessageVisibility(false);
-    const date = this.formatDate(startAtValue);
-    const name = this.formatName(nameValue);
-    this.partialUrlTarget.value = this.generatePartialUrl(date, name);
   }
 
-  generatePartialUrl(date, name) {
+  generatePartialUrl(startAtValue, nameValue) {
+    const date = this.formatDate(startAtValue);
+    const name = this.formatName(nameValue);
+
     return `${date}-${name}`;
   }
 
@@ -28,9 +32,7 @@ export default class extends Controller {
   }
 
   formatDate(dateTimeString) {
-    const date = dateTimeString.substring(0, dateTimeString.indexOf('T'));
-    const [year, month, day] = date.split('-');
-    return year.slice(-2) + month + day;
+    return DateTime.fromISO(dateTimeString).toFormat('yyMMdd');
   }
 
   formatName(name) {
