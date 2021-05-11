@@ -66,6 +66,18 @@ describe('InternalEventsController', () => {
           ).value;
           expect(partialUrlFieldValue).toBe('210515-event-name');
         });
+
+        it('removes extra hyphens', () => {
+          document.getElementById('internal-event-name-field').value =
+            'event - name - with - hyphens';
+
+          document.getElementById('generate').click();
+
+          const partialUrlFieldValue = document.getElementById(
+            'internal-event-readable-id-field'
+          ).value;
+          expect(partialUrlFieldValue).toBe('210515-event-name-with-hyphens');
+        });
       });
 
       it('previous error message is removed', () => {

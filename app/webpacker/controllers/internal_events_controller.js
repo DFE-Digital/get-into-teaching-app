@@ -34,6 +34,6 @@ export default class extends Controller {
   }
 
   formatName(name) {
-    return name.trim().toLowerCase().split(/\s+/).join('-');
+    return name.trim().toLowerCase().replace(/-/g, '').split(/\s+/).join('-');
   }
 }
