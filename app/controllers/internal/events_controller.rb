@@ -1,10 +1,12 @@
 module Internal
   class EventsController < ::InternalController
     layout "internal"
-    before_action :load_pending_events, only: %i[index]
     before_action :authorize_publisher, only: %i[approve]
 
     def index
+      event_type = event_types[params[:event_type]] || event_types[:provider]
+
+      load_pending_events(event_type)
       @no_results = @events.blank?
 
       @success = params[:success]
@@ -53,10 +55,12 @@ module Internal
       render_forbidden unless publisher?
     end
 
-    def load_pending_events
+    def load_pending_events(event_type)
       search_results = GetIntoTeachingApiClient::TeachingEventsApi
                          .new
-                         .search_teaching_events_grouped_by_type(events_search_params)
+                         .search_teaching_events_grouped_by_type(
+                           events_search_params(event_type),
+                         )
 
       @group_presenter = Events::GroupPresenter.new(search_results)
       @events = @group_presenter.paginated_events_of_type(
@@ -65,9 +69,9 @@ module Internal
       )
     end
 
-    def events_search_params
+    def events_search_params(event_type)
       {
-        type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+        type_id: event_type,
         status_ids: [pending_event_status_id],
         quantity_per_type: 1_000,
       }
@@ -75,6 +79,15 @@ module Internal
 
     def pending_event_status_id
       GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+    end
+
+    def event_types
+      {
+        provider: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+        online: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
+      }
+        .with_indifferent_access
+        .freeze
     end
 
     def event_params
