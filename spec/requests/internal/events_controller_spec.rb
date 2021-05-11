@@ -45,14 +45,17 @@ describe Internal::EventsController do
     end
 
     shared_examples "pending events" do |event_params|
+      let(:event_type) { event_params }
+
       context "when there are pending #{event_params} events" do
         before do
-          get internal_events_path, headers: generate_auth_headers(:author), params: event_params
+          get internal_events_path, headers: generate_auth_headers(:author), params: event_type
         end
+
         it "shows pending #{event_params} events" do
           assert_response :success
           expect(response.body).not_to include("No pending events")
-          expect(response.body).to include("<h4>Pending #{event_params} event</h4>")
+          expect(response.body).to include("<h4>Pending #{event_type} event</h4>")
           expect(response.body).not_to include("<h4>Open event</h4>")
         end
       end
