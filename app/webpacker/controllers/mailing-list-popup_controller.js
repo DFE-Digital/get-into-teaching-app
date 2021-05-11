@@ -10,8 +10,10 @@ export default class extends Controller {
 
   connect() {
     if (isTouchDevice()) {
+      console.debug("setting up touch device");
       this.setupTouchDevice();
     } else {
+      console.debug("setting up desktop");
       this.setupDesktop();
     }
   }
@@ -39,10 +41,8 @@ export default class extends Controller {
   }
 
   disconnect() {
-    clearTimeout(this.delayTimeout);
-
     if (this.handleMouseLeave) {
-      document.documentElement.removeEventListener(
+      document?.documentElement.removeEventListener(
         'mouseleave',
         this.handleMouseLeave
       );
