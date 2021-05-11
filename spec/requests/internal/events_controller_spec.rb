@@ -29,8 +29,8 @@ describe Internal::EventsController do
   let(:online_events_by_type) { group_events_by_type([pending_online_event]) }
 
   describe "#index" do
-    shared_examples "no pending events" do |event_type|
-      context "when there are no #{event_type} events" do
+    shared_examples "no pending events" do |event_type, default_event_type|
+      context "when there are no pending #{event_type || default_event_type} events" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type) { [] }
@@ -44,18 +44,18 @@ describe Internal::EventsController do
       end
     end
 
-    shared_examples "pending events" do |event_params|
+    shared_examples "pending events" do |event_params, default_event_type|
       let(:event_type) { event_params }
 
-      context "when there are pending #{event_params || 'provider'} events" do
+      context "when there are pending #{event_params || default_event_type} events" do
         before do
           get internal_events_path, headers: generate_auth_headers(:author), params: event_type
         end
 
-        it "shows pending #{event_params || 'provider'} events" do
+        it "shows pending #{event_params || default_event_type} events" do
           assert_response :success
           expect(response.body).not_to include("No pending events")
-          expect(response.body).to include("<h4>Pending #{event_type || 'provider'} event</h4>")
+          expect(response.body).to include("<h4>Pending #{event_type || default_event_type} event</h4>")
           expect(response.body).not_to include("<h4>Open event</h4>")
         end
       end
@@ -81,14 +81,16 @@ describe Internal::EventsController do
       end
 
       context "when no event type params are passed" do
-        include_examples "pending events", nil do
+        default_event_type = "provider".freeze
+
+        include_examples "pending events", nil, default_event_type do
           before(:each) do
             allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
               .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
           end
         end
 
-        include_examples "no pending events"
+        include_examples "no pending events", default_event_type
       end
     end
   end

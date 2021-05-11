@@ -49,7 +49,7 @@ module Internal
       render :new
     end
 
-    private
+  private
 
     def authorize_publisher
       render_forbidden unless publisher?
