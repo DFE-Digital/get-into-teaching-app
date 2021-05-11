@@ -30,7 +30,7 @@ describe Internal::EventsController do
 
   describe "#index" do
     shared_examples "no pending events" do |event_type|
-      context "when there are no #{event_type || 'provider'} events" do
+      context "when there are no #{event_type} events" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type) { [] }
@@ -47,15 +47,15 @@ describe Internal::EventsController do
     shared_examples "pending events" do |event_params|
       let(:event_type) { event_params }
 
-      context "when there are pending #{event_params} events" do
+      context "when there are pending #{event_params || 'provider'} events" do
         before do
           get internal_events_path, headers: generate_auth_headers(:author), params: event_type
         end
 
-        it "shows pending #{event_params} events" do
+        it "shows pending #{event_params || 'provider'} events" do
           assert_response :success
           expect(response.body).not_to include("No pending events")
-          expect(response.body).to include("<h4>Pending #{event_type} event</h4>")
+          expect(response.body).to include("<h4>Pending #{event_type || 'provider'} event</h4>")
           expect(response.body).not_to include("<h4>Open event</h4>")
         end
       end
@@ -80,12 +80,16 @@ describe Internal::EventsController do
         end
       end
 
+      context "when no event type params are passed" do
+        include_examples "pending events", nil do
+          before(:each) do
+            allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+              .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+          end
+        end
 
-      # context "when no event type params are passed" do
-      #   # include_examples "provider event"
-      #
-      #   include_examples "no pending events"
-      # end
+        include_examples "no pending events"
+      end
     end
   end
 
