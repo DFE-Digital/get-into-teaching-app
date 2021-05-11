@@ -67,7 +67,16 @@ describe('LinkController', () => {
         const contentExternalLink = document.getElementById(
           'content-external-link'
         );
-        expect(contentExternalLink.hasAttribute('target')).toBe(true);
+        expect(contentExternalLink.getAttribute('target')).toEqual('_blank');
+      });
+
+      it("adds rel='noopener noreferrer' to the content external link", () => {
+        const contentExternalLink = document.getElementById(
+          'content-external-link'
+        );
+        expect(contentExternalLink.getAttribute('rel')).toEqual(
+          'noopener noreferrer'
+        );
       });
 
       it('adds a description of where the link will open for screen reader users', () => {
