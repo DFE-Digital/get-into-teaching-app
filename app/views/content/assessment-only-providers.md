@@ -369,6 +369,9 @@ providers:
     name: Programme Leader
     telephone: 0121 331 4627
     email: assessmentonlyqts@bcu.ac.uk
+  - header: Haybridge Alliance SCITT
+    link: https://www.teachwithhaybridge.co.uk
+    email: tforward@haybridge.worcs.sch.uk
   - header: Keele and North Staffordshire Teacher Education
     link: https://knste-shaw.org.uk/assessment-route
     name: Tricia Locker
