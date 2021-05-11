@@ -9,13 +9,9 @@ export default class extends Controller {
   topScrollMinimumDistance = 700;
 
   connect() {
-    console.debug('connected');
-
     if (isTouchDevice()) {
-      console.debug('touch device detected');
       this.setupTouchDevice();
     } else {
-      console.debug('desktop detected');
       this.setupDesktop();
     }
   }
@@ -58,10 +54,7 @@ export default class extends Controller {
   }
 
   showDialog() {
-    console.debug('showing dialog');
-
     if (this.mailingListDismissed) {
-      console.debug('already dismissed, not showing');
       return;
     }
 
@@ -74,7 +67,6 @@ export default class extends Controller {
   }
 
   dismiss(event) {
-    console.debug("dismissed");
     if (event) event.preventDefault();
 
     this.dismissMailingListPopup();
@@ -82,8 +74,6 @@ export default class extends Controller {
   }
 
   hide() {
-    console.debug("hiding");
-
     this.dialogTarget.style.display = 'none';
   }
 
@@ -98,12 +88,9 @@ export default class extends Controller {
   }
 
   monitorScrollDistance(callback) {
-    console.debug('setting up scrolling');
     let isScrolling, start, end, distance;
 
     const onScroll = () => {
-      console.debug('scrolling...');
-
       if (!start) {
         start = window.pageYOffset;
       }
