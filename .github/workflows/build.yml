@@ -238,7 +238,7 @@ jobs:
            secrets: 'SLACK-WEBHOOK'
 
       - name: Scan image
-        uses: anchore/scan-action@v2
+        uses: anchore/scan-action@v2.0.4
         with:
           image: ${{needs.build.outputs.DOCKER_IMAGE}}
           fail-build: false
