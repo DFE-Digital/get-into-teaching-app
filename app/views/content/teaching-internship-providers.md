@@ -62,7 +62,7 @@ providers:
       email: mhoward@theappletonschool.org
   London:
     - header: St Pauls
-      link:  " http://inspiretsa.co.uk/Opportunities/MathsInternship"
+      link:  "http://inspiretsa.co.uk/Opportunities/MathsInternship"
       name: Keith Perera
       email: kperera@stpaulscc.co.uk  
     - header: The Cardinal Vaughan Memorial School
