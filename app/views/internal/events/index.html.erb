@@ -1,4 +1,4 @@
-<div class="markdown">
+<div class="markdown events-index">
   <% if @success %>
     <div class="govuk-panel govuk-panel--confirmation">
       <h1 class="govuk-panel__title">
@@ -10,9 +10,20 @@
     </div>
   <% end %>
 
-  <h1 class="pending-title">Pending Provider Events</h1>
 
-  <%= button_to "Submit a provider event for review",
+  <div class="tab-bar">
+    <%= link_to "Provider events",
+                internal_events_path(event_type: "provider"),
+                class: class_names("tab-link", "tab", { "active-tab": event_type_name == "provider" }) %>
+    <%= link_to "Online events",
+                internal_events_path(event_type: "online"),
+                class: class_names("tab-link", "tab", { "active-tab": event_type_name == "online" }) %>
+  </div>
+
+
+  <h1 class="pending-title">Pending <%= event_type_name %> events</h1>
+
+  <%= button_to "Submit #{event_type_name} event for review",
                 new_internal_event_path, method: :get,
                 class: "button submit-button no-left-margin" %>
 

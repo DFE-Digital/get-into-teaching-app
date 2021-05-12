@@ -32,3 +32,61 @@ $govuk-include-default-font-face: false;
 .hidden {
   display: none;
 }
+
+// Tab navigation
+
+$grey-very-light: #f3f2f1;
+$br: 7.5px;
+
+.listing {
+  background-color: $grey-very-light;
+  max-width: none;
+
+  .container {
+    background-color: $white;
+
+    .tab-bar {
+      background-color: $grey-very-light;
+      margin: 0;
+      padding-left: 50px;
+
+      display: flex;
+      align-items: center;
+
+      .tab {
+        padding: 15px 30px;
+        height: 100%;
+        list-style: none;
+        background-color: $green;
+        color: $white;
+        border-radius: $br $br 0 0;
+
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+
+        &:focus {
+          background-color: $yellow;
+          box-shadow: 0 -2px $yellow, 0 4px #1d1d1b;
+        }
+
+        &:hover:not(:focus):not(.active-tab) {
+          background: darken($green, 5%);
+        }
+      }
+
+      .active-tab {
+        background-color: $white;
+        color: $black;
+      }
+
+      .tab-link {
+        text-decoration: none;
+      }
+    }
+
+    .event-pagination {
+      min-height: 50px;
+    }
+  }
+}

@@ -2,11 +2,14 @@ module Internal
   class EventsController < ::InternalController
     layout "internal"
     before_action :authorize_publisher, only: %i[approve]
+    helper_method :event_type_name
+
+    DEFAULT_EVENT_TYPE = "provider".freeze
 
     def index
-      event_type = event_types[params[:event_type]] || event_types[:provider]
+      @event_type = event_types[params[:event_type]] || event_types[:provider]
 
-      load_pending_events(event_type)
+      load_pending_events(@event_type)
       @no_results = @events.blank?
 
       @success = params[:success]
@@ -50,6 +53,10 @@ module Internal
     end
 
   private
+
+    def event_type_name
+      params[:event_type] || DEFAULT_EVENT_TYPE
+    end
 
     def authorize_publisher
       render_forbidden unless publisher?
