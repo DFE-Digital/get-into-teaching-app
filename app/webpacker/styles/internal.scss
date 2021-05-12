@@ -26,11 +26,15 @@ $govuk-include-default-font-face: false;
 }
 
 .form-button {
-  margin: 0 0 30px;
+  margin-bottom: 30px;
 }
 
 .hidden {
   display: none;
+}
+
+.confirmation-panel {
+  margin: 0;
 }
 
 // Tab navigation
@@ -46,10 +50,9 @@ $br: 7.5px;
     background-color: $white;
 
     .tab-bar {
+      padding: 20px 0 0 50px;
       background-color: $grey-very-light;
       margin: 0;
-      padding-left: 50px;
-
       display: flex;
       align-items: center;
 
