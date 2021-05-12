@@ -10,7 +10,6 @@
     </div>
   <% end %>
 
-
   <div class="tab-bar">
     <%= link_to "Provider events",
                 internal_events_path(event_type: "provider"),
@@ -19,7 +18,6 @@
                 internal_events_path(event_type: "online"),
                 class: class_names("tab-link", "tab", { "active-tab": event_type_name == "online" }) %>
   </div>
-
 
   <h1 class="pending-title">Pending <%= event_type_name %> events</h1>
 
