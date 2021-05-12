@@ -62,6 +62,7 @@ export default class extends Controller {
   accept() {
     // hook in any logging to a successful response here
     this.dismissMailingListPopup();
+    this.hide()
   }
 
   dismiss(event) {

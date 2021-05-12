@@ -17,10 +17,10 @@ describe('MailingListPopupController', () => {
     <div data-controller="mailing-list-popup" data-mailing-list-popup-target="modal" role="complementary">
       <div id="dialog" class="dialog" data-mailing-list-popup-target="dialog" style="display: none">
             <div class="dialog__buttons">
-              <a href="/mailinglist/signup/name" class="button call-to-action-button" data-action="click->mailing-list-popup#accept">
+              <a id="mailing-list-popup-accept" href="/mailinglist/signup/name" class="button call-to-action-button" data-action="click->mailing-list-popup#accept">
                   <span>Register your interest</span>
               </a>
-              <a class="button button--secondary" href="#" id="cookies-disagree" data-action="click->mailing-list-popup#dismiss">
+              <a id="mailing-list-popup-dismiss" class="button button--secondary" href="#" id="cookies-disagree" data-action="click->mailing-list-popup#dismiss">
                   <span>No thanks</span>
               </a>
             </div>
@@ -104,6 +104,73 @@ describe('MailingListPopupController', () => {
         longScrollToTop(MailingListPopupController.topScrollMinimumDistance);
         jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
         expect(dialog.style.display).toContain("flex");
+      });
+
+      it("prompts according to the distance sensitivity value", () => {
+        longScrollToTop(699);
+        jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
+        expect(dialog.style.display).toContain("none");
+        longScrollToTop(701);
+        jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
+        expect(dialog.style.display).toContain("flex");
+      });
+
+      it("prompts according to the end sensitivity value", () => {
+        longScrollToTop(700, 301);
+        jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
+        expect(dialog.style.display).toContain("none");
+        longScrollToTop(700, 299);
+        jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
+        expect(dialog.style.display).toContain("flex");
+      });
+    });
+
+    describe('clicking "No thanks"', () => {
+      beforeEach(() => {
+        window.localStorage.setItem('mailingListDismissed', 'false')
+        attachController();
+      });
+
+      it('hides the mailing-list popup', () => {
+        expect(
+          window.localStorage.getItem('mailingListDismissed')
+        ).toEqual('false');
+
+        mouseLeave();
+        const closeLink = document.getElementById('mailing-list-popup-dismiss');
+        expect(dialog.style.display).toContain("flex");
+        closeLink.click();
+        expect(dialog.style.display).toContain("none");
+
+        expect(
+          window.localStorage.getItem('mailingListDismissed')
+        ).toEqual('true');
+      });
+    });
+
+    describe('clicking "Register your interest"', () => {
+      beforeEach(() => {
+        window.localStorage.setItem('mailingListDismissed', 'false')
+        attachController();
+      });
+
+      it('hides the mailing-list popup', () => {
+        expect(
+          window.localStorage.getItem('mailingListDismissed')
+        ).toEqual('false');
+
+        mouseLeave();
+        const acceptLink = document.getElementById('mailing-list-popup-accept');
+
+        expect(acceptLink.getAttribute('href')).toEqual('/mailinglist/signup/name');
+        expect(dialog.style.display).toContain("flex");
+
+        acceptLink.click();
+        expect(dialog.style.display).toContain("none");
+
+        expect(
+          window.localStorage.getItem('mailingListDismissed')
+        ).toEqual('true');
       });
     });
   });
