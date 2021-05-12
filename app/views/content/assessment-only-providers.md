@@ -80,9 +80,9 @@ providers:
     email: admission@beds.ac.uk
   - header: University of Hertfordshire
     link: https://www.herts.ac.uk/apply/schools-of-study/education/initial-teacher-training/assessment-only-route
-    name: Lee Hague (AO Administrator)
-    telephone: 01707 285612
-    email: l.a.hague@herts.ac.uk
+    name: AO Administration Team
+    telephone: 01707 286300
+    email: AOenquiries@herts.ac.uk
   East Midlands:
   - header: Bishop Grosseteste University
     link: https://www.bishopg.ac.uk
