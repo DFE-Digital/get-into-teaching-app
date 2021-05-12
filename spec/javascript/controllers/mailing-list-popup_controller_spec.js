@@ -1,6 +1,9 @@
 import { Application } from 'stimulus' ;
 import MailingListPopupController from 'mailing-list-popup_controller.js';
 import StubLocalStorage from '../stubs/local_storage';
+import isTouchDevice from 'is-touch-device';
+
+jest.mock('is-touch-device')
 
 describe('MailingListPopupController', () => {
   beforeEach(() => {
@@ -40,25 +43,16 @@ describe('MailingListPopupController', () => {
   };
 
   const attachController = (touch = false) => {
-    jest.resetModules();
-
     if (touch) {
-      console.debug("mocking touch device");
-      jest.mock('is-touch-device', () => ({ __esModule: true, default: () => true }));
+      isTouchDevice.mockImplementation(() => true);
     } else {
-      console.debug("mocking desktop");
-      jest.mock('is-touch-device', () => ({ __esModule: true, default: () => false }));
+      isTouchDevice.mockImplementation(() => false);
     }
 
-    console.debug("mounting controller");
     const application = Application.start();
     application.register('mailing-list-popup', MailingListPopupController);
     dialog = document.getElementById('dialog');
   }
-
-  beforeEach(() => {
-    jest.resetModules();
-  });
 
   describe("when the mailing list has already been dismissed", () => {
     beforeEach(() => {
@@ -107,7 +101,7 @@ describe('MailingListPopupController', () => {
       });
 
       it("prompts on long scroll to top", () => {
-        longScrollToTop(1);
+        longScrollToTop(MailingListPopupController.topScrollMinimumDistance);
         jest.advanceTimersByTime(100); // Wait for timeout indicating scroll end.
         expect(dialog.style.display).toContain("flex");
       });

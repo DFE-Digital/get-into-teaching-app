@@ -10,10 +10,8 @@ export default class extends Controller {
 
   connect() {
     if (isTouchDevice()) {
-      console.debug("setting up touch device");
       this.setupTouchDevice();
     } else {
-      console.debug("setting up desktop");
       this.setupDesktop();
     }
   }
