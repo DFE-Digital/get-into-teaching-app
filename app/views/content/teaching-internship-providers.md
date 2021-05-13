@@ -31,6 +31,10 @@ providers:
       link: "https://www.lincolnshiretsa.co.uk/page/?title=Paid+Teaching+Internship+Programme&pid=269"
       name: Angela Murphy
       email: anmurphy@prioryacademies.co.uk
+    - header: The Becket School 
+      link: "https://www.becketonline.co.uk/teachingschool/school-direct-teacher-training/applications-3-copy/"
+      name: Vanessa Scott
+      email: V.Scott@becketonline.co.uk
   East of England:
     - header: Farlingaye High School
       link: "https://www.eastscitt.co.uk/Undergraduate-Internships/"
@@ -52,10 +56,6 @@ providers:
       link: "https://www.setsa.info/1569/news-1/post/20/teaching-internship-2021"
       name: Emma Lowne
       email: e.lowne@setsa.info
-    - header: The Becket School 
-      link: "https://www.becketonline.co.uk/teachingschool/school-direct-teacher-training/applications-3-copy/"
-      name: Vanessa Scott
-      email: V.Scott@becketonline.co.uk
     - header: The Benfleet Teaching School Alliance
       link: "http://www.benfleet-teaching-school.co.uk/internship-scheme/"
       name: Maxine Howard
