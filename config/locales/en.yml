@@ -126,7 +126,7 @@ en:
               invalid: Enter a valid email address
         events/steps/contact_details:
           attributes:
-            telephone:
+            address_telephone:
               invalid: Enter a valid phone number
         events/steps/further_details:
           attributes:
@@ -260,7 +260,7 @@ en:
         last_name: Last name
         email: Email address
       events_steps_contact_details:
-        telephone: Phone number (optional)
+        address_telephone: Phone number (optional)
       events_steps_personalised_updates:
         address_postcode: What is your postcode? (optional)
         degree_status_id: What stage are you at with your degree?
