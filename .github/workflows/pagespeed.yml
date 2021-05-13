@@ -11,7 +11,7 @@ jobs:
     - uses: Azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: Azure/get-keyvault-secrets@v1
+    - uses: Azure/get-keyvault-secrets@v1.2
       id: azSecret
       with:
           keyvault: ${{ secrets.KEY_VAULT }}

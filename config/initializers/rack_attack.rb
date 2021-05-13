@@ -69,10 +69,12 @@ module Rack
             if should_ban
               obscured_ip = req.ip.to_s.gsub(%r{\.\d+\.(\d+)\.}, ".***.***.")
 
-              Sentry.capture_message <<~BAN_MESSAGE
-                Banning IP: #{obscured_ip} for #{FAIL2BAN_TIME.to_i / 60} minutes
-                accessing #{req.path} with '#{req.query_string}'
-              BAN_MESSAGE
+              Rails.logger.info(
+                <<~BAN_MESSAGE,
+                  Banning IP: #{obscured_ip} for #{FAIL2BAN_TIME.to_i / 60} minutes
+                  accessing #{req.path} with '#{req.query_string}'
+                BAN_MESSAGE
+              )
             end
           end
         end

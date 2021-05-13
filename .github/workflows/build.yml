@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -24,7 +24,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -63,14 +63,14 @@ jobs:
              ${{ runner.os }}-buildx-
 
       - name: Login to Docker Hub
-        uses: docker/login-action@v1
+        uses: docker/login-action@v1.9.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
 
       - name: Build and push to Docker Hub
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v2.4.0
         with:
           builder: ${{ steps.buildx.outputs.name }}
           cache-from: type=local,src=/tmp/.buildx-cache
@@ -98,7 +98,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -107,7 +107,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -135,7 +135,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -152,7 +152,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -161,7 +161,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -222,7 +222,7 @@ jobs:
     needs: [ build ]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -231,14 +231,14 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
            secrets: 'SLACK-WEBHOOK'
 
       - name: Scan image
-        uses: anchore/scan-action@v2
+        uses: anchore/scan-action@v2.0.4
         with:
           image: ${{needs.build.outputs.DOCKER_IMAGE}}
           fail-build: false
@@ -262,7 +262,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -271,7 +271,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -308,7 +308,7 @@ jobs:
 
       - name: Add Review Label
         if: contains(github.event.pull_request.user.login, 'dependabot') == false
-        uses: actions-ecosystem/action-add-labels@v1
+        uses: actions-ecosystem/action-add-labels@v1.1.2
         with:
           github_token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
           labels: Review
@@ -323,7 +323,7 @@ jobs:
       release_sha: ${{github.sha }}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -332,7 +332,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -382,7 +382,7 @@ jobs:
       - name: Create a GitHub Release
         id: release
         if: steps.tag_version.outputs.pr_found == 1
-        uses: actions/create-release@v1
+        uses: actions/create-release@v1.1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -408,7 +408,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -417,7 +417,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -466,7 +466,7 @@ jobs:
     needs: [ qa ]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -475,7 +475,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -511,7 +511,7 @@ jobs:
     needs: [ cypress, development ]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -520,7 +520,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
