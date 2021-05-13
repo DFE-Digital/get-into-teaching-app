@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").chomp
 gem "rails", "~> 6.1.3"
 
 # Use Puma as the app server
-gem "puma", "~> 5.2"
+gem "puma", "~> 5.3", ">= 5.3.1"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker"
