@@ -7,8 +7,10 @@ Rails.application.config.filter_parameters += %i[
   last_name
   password
   telephone
+  address_telephone
   timed_one_time_password
   firstName
   lastName
   timedOneTimePassword
+  addressTelephone
 ]

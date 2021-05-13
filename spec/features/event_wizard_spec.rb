@@ -93,7 +93,7 @@ RSpec.feature "Event wizard", type: :feature do
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
       eventId: "abc-123",
       addressPostcode: "TE57 1NG",
-      telephone: "1234567890",
+      addressTelephone: "1234567890",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:exchange_access_token_for_teaching_event_add_attendee).with("123456", anything).and_return(response)
