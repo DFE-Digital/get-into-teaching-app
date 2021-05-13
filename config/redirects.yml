@@ -17,6 +17,9 @@ redirects:
   "/international-teachers": "/international-candidates"
   "/international-students": "/international-candidates"
 
+  # Old GSE Page
+  "/get-school-experience/get-school-experience": "/get-school-experience"
+
   # Campaign landing pages
   "/helping-you-become-a-teacher": "/three-things-to-help-you-get-into-teaching"
 
