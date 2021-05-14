@@ -5,8 +5,8 @@ export default class extends Controller {
 
   connect() {
     this.preventTurboLinksOnJumpLinks();
-    this.openExternalContentLinksInNewWindow();
     this.prepareChevronOnButtonLinks();
+    this.openExternalContentLinksInNewWindow();
   }
 
   preventTurboLinksOnJumpLinks() {
