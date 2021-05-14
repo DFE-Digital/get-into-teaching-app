@@ -1,13 +1,13 @@
 redirects:
   # Guidance
-  "/ways-to-train-guidance": "/guidance/become-a-teacher-in-england"
-  "/train-to-become-a-teacher": "/guidance/become-a-teacher-in-england"
-  "/guidance/train-to-become-a-teacher": "/guidance/become-a-teacher-in-england"
+  "/ways-to-train-guidance": "/ways-to-train"
+  "/train-to-become-a-teacher": "/ways-to-train"
+  "/guidance/train-to-become-a-teacher": "/ways-to-train"
 
   "/finance-guidance": "/funding-your-training"
   "/financial-support-for-teacher-training": "/funding-your-training"
   "/guidance/financial-support-for-teacher-training": "/funding-your-training"
-  "/guidance": "/guidance/become-a-teacher-in-england"
+  "/guidance": "/ways-to-train"
 
   # Top-level pages
   "/life-as-a-teacher/teachers-salaries-and-benefits": "/salaries-and-benefits"
@@ -272,7 +272,7 @@ redirects:
   "/funding-and-salary/overview/scholarships/physics-scholarships": "/funding-your-training"
   "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas": "/international-returners"
   "/getting-school-experience": "/steps-to-become-a-teacher"
-  "/submitting-your-application": "/guidance/become-a-teacher-in-england"
+  "/submitting-your-application": "/tips-on-applying-for-teacher-training"
   "/competitive-salary-and-great-benefits": "/salaries-and-benefits"
   "/explore-my-options/further-education-teacher-training/bursaries": "/funding-your-training"
   "/explore-my-options/teach-languages": "/ways-to-train"
