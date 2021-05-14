@@ -4,8 +4,8 @@ image: "/assets/images/international-dt.jpg"
 article_classes: ['longform']
 mobileimage: "/assets/images/steps-hero-mob.jpg"
 description: |-
-  School experience can help you talk to teachers and get an insight into day-to-day school life. Here's how to get school experience.
-date: "2021-05-04"
+  You may be able to do a 'subject knowledge enhancement' (SKE) course to improve your knowledge of the subject you want to teach.
+date: "2021-05-14"
 right_column:
   ctas:
     - title: Find and apply for teacher training
@@ -19,7 +19,7 @@ keywords:
   - Subject knowledge enhancement
   - SKE
 ---
-If you're concerned about how well you know the subject you want to teach, do not worry - you may be able to do a 'subject knowledge enhancement' course.
+If you're concerned about how well you know the subject you want to teach, do not worry - you may be able to do a 'subject knowledge enhancement' (SKE) course.
 
 When you apply for teacher training, the school or university will help you establish whether you need to improve your subject knowledge.
 
