@@ -209,7 +209,7 @@ redirects:
   "/user/register": "/tta-service"
   "/funding-and-salary/teacher-salaries": "/salaries-and-benefits"
   "/life-as-a-teacher/real-life-experiences/career-progression-stories/the-rapid-career-climber": "/my-story-into-teaching/career-progression/leaping-to-head-of-department"
-  "/subject-knowledge-enhancement-ske-courses": "//improve-your-subject-knowledge"
+  "/subject-knowledge-enhancement-ske-courses": "/improve-your-subject-knowledge"
   "/funding-and-salary/overview/funding-by-subject/funding-for-training-to-teach-religious-education": "/funding-your-training"
   "/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training/degrees-with-opt-in-qts": "/ways-to-train"
   "/signup/salaries-and-benefits": "/salaries-and-benefits"
