@@ -10,10 +10,17 @@ class Search
     @results ||= search_frontmatter
   end
 
+  NON_CONTENT_PAGES = {
+    "/events" => {
+      title: "Find an event near you",
+      keywords: %w[events conferences presentation],
+    },
+  }.freeze
+
 private
 
   def search_frontmatter
-    Pages::Frontmatter.list.select do |_path, frontmatter|
+    searchable_pages.select do |_path, frontmatter|
       keywords_match?(frontmatter[:keywords]) || title_matches?(frontmatter[:title])
     end
   end
@@ -30,5 +37,9 @@ private
 
   def title_match_regex
     @title_match_regex ||= %r{\b#{Regexp.quote search.downcase}}
+  end
+
+  def searchable_pages
+    NON_CONTENT_PAGES.merge(Pages::Frontmatter.list)
   end
 end

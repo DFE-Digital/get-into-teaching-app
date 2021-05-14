@@ -76,5 +76,19 @@ RSpec.describe Search do
 
       it { is_expected.to be_empty }
     end
+
+    describe "non-content pages" do
+      describe "events" do
+        Search::NON_CONTENT_PAGES.dig("/events", :keywords).each do |kw|
+          describe kw do
+            let(:search) { kw }
+
+            it "finds the events page when searching for #{kw}" do
+              expect(subject).to include "/events"
+            end
+          end
+        end
+      end
+    end
   end
 end
