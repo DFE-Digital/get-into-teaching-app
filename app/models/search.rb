@@ -13,7 +13,7 @@ class Search
   NON_CONTENT_PAGES = {
     "/events" => {
       title: "Find an event near you",
-      keywords: %w[events conferences presentation],
+      keywords: %w[event events conference presentation virtual online TTT Q&A attend training],
     },
   }.freeze
 
