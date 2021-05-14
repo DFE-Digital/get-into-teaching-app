@@ -57,7 +57,7 @@ If you have a degree you can:
 
 [Already have teaching experience?](#if-you-already-have-teaching-experience) You may be able to get qualified teacher status within 12 weeks.
 
-You can also find specialised programmes [if you're changing changer](#if-youre-changing-career) or [if you have a doctorate](#if-you-have-a-doctorate).
+You can also find specialised programmes [if you're changing career](#if-youre-changing-career) or [if you have a doctorate](#if-you-have-a-doctorate).
 
 Not looking for primary or secondary teacher training? Consider teaching [early years](/early-years-teaching-training) or [further education](/further-education-teacher-training).
 
