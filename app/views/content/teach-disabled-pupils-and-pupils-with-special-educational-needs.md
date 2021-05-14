@@ -17,7 +17,7 @@ keywords:
 ---
 Most disabled pupils and pupils with special educational needs learn in mainstream schools.
 
-No matter what settings you train and work in, whether it's mainstream schools or special schools or both, you’ll work with pupils with complex needs.
+No matter what settings you train and work in – whether it's mainstream schools, special schools, or both – you’ll work with pupils with complex needs.
 
 You can [find a course which specialises in special educational needs and disability (SEND)](https://www.find-postgraduate-teacher-training.service.gov.uk/start/subject?l=2) if you have a particular interest in this area.
 
