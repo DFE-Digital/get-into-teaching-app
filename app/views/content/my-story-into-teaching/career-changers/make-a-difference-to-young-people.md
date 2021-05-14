@@ -15,13 +15,17 @@ build_layout_from_frontmatter: true
 description: |-
   Sarah Birt's route into teaching
 date: "2020-02-01"
+quote:
+  q-sarah:
+    text: When I decided to become a teacher I thought I'd better make sure that it really was what I wanted to do and I thought there'd be no better way than going into some schools.
+    inline: left
 ---
 
 Having completed a degree in psychology, my initial plans were to be a clinical psychologist. I had never really considered teaching as a career option. It was only after becoming a mental health researcher and discovering how much I enjoyed working with young people that I realised I might be even happier in teaching.
 
 I loved working with young people and loved building relationships with them. There were adolescents that were suffering from quite bad depression and anxiety disorders and I loved helping them. I also really enjoyed training people, so I thought if I became a teacher I could get more involved with young people at an earlier age, motivate them and get them more engaged in school.
 
-> When I decided to become a teacher I thought I'd better make sure that it really was what I wanted to do and I thought there'd be no better way than going into some schools.
+$q-sarah$
 
 After a few weeks observing lessons and speaking to students, I was convinced and decided to teach maths. I successfully applied for teacher training, but was advised to first complete a subject knowledge enhancement course (SKE) to make the transition from psychology to maths smoother.
 

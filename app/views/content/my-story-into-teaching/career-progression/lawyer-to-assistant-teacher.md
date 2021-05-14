@@ -15,15 +15,17 @@ build_layout_from_frontmatter: true
 description: |-
   Helen Winter's route into teaching
 date: "2020-02-01"
+quote:
+  q-helen:
+    text: There is no better feeling than watching a child succeed, especially if they have had to overcome obstacles or are lacking in self-belief.
+    inline: left
 ---
-
-
 
 I started out as a lawyer, but after re-evaluating my career and with the support of my sister, who is a teacher, I made the jump from lawyer to teacher.
 
 I was instantly hooked after gaining school experience. The inspirational teachers I saw motivated me; not only did they have the ability to deliver a subject with real zeal and passion but also to develop curiosity in their pupils.
 
-> There is no better feeling than watching a child succeed, especially if they have had to overcome obstacles or are lacking in self-belief.
+$q-helen$
 
 ### 100% job satisfaction
 It is the only job where I can honestly say you get 100% job satisfaction. It is lovely to watch your pupils grow into young adults and when they receive their exam results, and realise it was all worthwhile, there is no greater pleasure. Being part of helping shape a young person's future is very humbling as well as fulfilling.

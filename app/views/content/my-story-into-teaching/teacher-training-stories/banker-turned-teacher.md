@@ -15,13 +15,17 @@ build_layout_from_frontmatter: true
 description: |-
   Katherine Hills's route into teaching
 date: "2020-02-01"
+quote:
+  q-katherine:
+    text: I get a real buzz from teaching.
+    inline: left
 ---
 
 I always wanted to teach, I wanted to instil a love of languages in young people, but I also knew I didn't have to pursue that ambition straight after graduating. I worked for 4 years in an investment bank before training to teach.
 
 I have always loved languages and have seen first-hand how they open doors – both from a personal, and professional point of view. Learning and teaching languages is also really good fun and I get a real buzz when my students are able to express themselves.
 
-> I get a real buzz from teaching.
+$q-katherine$
 
 It's amazing when I walk around school and hear my top-set year 7s chatting to each other in Spanish and debating the correct adjective agreement!
 

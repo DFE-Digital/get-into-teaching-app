@@ -15,6 +15,10 @@ build_layout_from_frontmatter: true
 description: |-
   Sarah Fisher's route into teaching
 date: "2020-02-01"
+quote:
+  q-sarah:
+    text: The best part of teaching is being in front of my 32 students and seeing how my passion for the subject I teach rubs off on them
+    inline: left
 ---
 
 Two years after qualifying as a teacher, I progressed to head of biology, climbing the career ladder. I always had an inkling that teaching was the right direction.
@@ -25,7 +29,7 @@ From an early age, I knew a teaching career was for me. I could not imagine work
 
 When your pupils have those 'light bulb' moments, hearing the sudden 'So that's how it works!' and seeing them take your subject into A level and beyond makes the job so worthwhile.
 
-> The best part of teaching is being in front of my 32 students and seeing how my passion for the subject I teach rubs off on them
+$q-sarah$
 
 ### So grateful
 

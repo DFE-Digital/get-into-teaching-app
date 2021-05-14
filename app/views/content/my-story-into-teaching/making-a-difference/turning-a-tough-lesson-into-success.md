@@ -15,11 +15,15 @@ build_layout_from_frontmatter: true
 description: |-
   Danny Holliday's route into teaching
 date: "2020-02-01"
+quote:
+  q-danny:
+    text: Teaching is a massive responsibility; you're tasked with working with hundreds of students each day, and they're placed into your care – that's quite a demanding responsibility. But it's part of what you do as a teacher.
+    inline: left
 ---
 
 I started in quite a hard school in a deprived area. I taught there for three years and it was tough, but extremely rewarding.
 
-> Teaching is a massive responsibility; you're tasked with working with hundreds of students each day, and they're placed into your care – that's quite a demanding responsibility. But it's part of what you do as a teacher.
+$q-danny$
 
 Behaviour management skills need to be absolutely spot-on if the students are to learn in your lessons, because there are a lot of barriers that can prevent the students from accessing that learning.
 

@@ -2,10 +2,13 @@ require "acronyms"
 
 module TemplateHandlers
   class Markdown
+    include ActionView::Helpers::OutputSafetyHelper
+
     attr_reader :template, :source, :options
 
     DEFAULTS = {}.freeze
     GLOBAL_FRONT_MATTER = Rails.root.join("config/frontmatter.yml").freeze
+    COMPONENT_PLACEHOLDER_REGEX = /\$([A-z0-9-]+)\$/.freeze
 
     class << self
       def call(template, source = nil)
@@ -61,12 +64,27 @@ module TemplateHandlers
       # entire placeholder to the arg (including dollar symbols) but we only
       # want what's inside the capture group
 
-      parsed.content.gsub(/\$([A-z0-9-]+)\$/) { call_to_action($1) }
+      parsed.content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
+        safe_join([cta_component($1), component("quote", $1)].compact)
+      end
     end
     # rubocop:enable Style/PerlBackrefs
 
-    def call_to_action(placeholder)
-      component = Content::ComponentInjector.new(front_matter.dig("calls_to_action", placeholder)).component
+    def cta_component(placeholder)
+      component = Content::CallToActionComponentInjector.new(
+        front_matter.dig("calls_to_action", placeholder),
+      ).component
+
+      return unless component
+
+      ApplicationController.render(component, layout: false)
+    end
+
+    def component(type, placeholder)
+      component = Content::ComponentInjector.new(
+        type,
+        front_matter.dig(type, placeholder),
+      ).component
 
       return unless component
 

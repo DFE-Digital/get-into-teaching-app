@@ -15,11 +15,15 @@ build_layout_from_frontmatter: true
 description: |-
   Tarik Reghif's route into teaching
 date: "2020-02-01"
+quote:
+  q-tarik:
+    text: During this time I felt that something was missing, and the pull towards teaching became harder to resist.
+    inline: left
 ---
 
 I am a 'geek' and have always been passionate about computing. It's a professional outlet that helped me develop a fabulously varied and exciting career, which included travelling the world.
 
-> During this time I felt that something was missing, and the pull towards teaching became harder to resist.
+$q-tarik$
 
 ### Bye CEO, hi kids
 

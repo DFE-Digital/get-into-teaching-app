@@ -15,6 +15,10 @@ build_layout_from_frontmatter: true
 description: |-
   Karen Falcon's route into teaching
 date: "2020-02-01"
+quote:
+  q-jon:
+    text: The best thing about teaching is the independence you have in your classroom to create an inspiring environment
+    inline: left
 ---
 
 I've enjoyed rapid career progression. I made the most of the opportunities and prospects that teaching offered me, and was head of department for geography at The Toynbee School in Chandler's Ford within two years of my NQT year.
@@ -27,7 +31,7 @@ I developed a reputation for delivering exceptional lessons and became an outsta
 
 What got me noticed as a teacher were the improvements I made to the directional and strategic change of my school. I was recognised not only as a great teacher, but as a future leader.
 
-> The best thing about teaching is the independence you have in your classroom to create an inspiring environment
+$q-karen$
 
 As I have progressed, I do less teaching and more leadership and management. I spend time listening and talking to other teachers and line managing three humanities departments, but I believe it is necessary to still be involved in the classroom as I am still responsible for student attainment.
 

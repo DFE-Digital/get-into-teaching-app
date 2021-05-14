@@ -8,8 +8,8 @@ module Content
       job_title: nil,
       cta: nil,
       image: nil,
-      hang: :left,
-      inline: false
+      hang: "left",
+      inline: nil
     )
       @text = text
       @name = name
@@ -23,8 +23,8 @@ module Content
 
       cta_malformed = cta.present? && cta.values_at(:title, :link).any?(&:blank?)
       fail(ArgumentError, "cta must contain a title and link") if cta_malformed
-
-      fail(ArgumentError, "hang must be :right or :left") unless %i[right left].any?(hang)
+      fail(ArgumentError, "hang must be right or left") unless %w[right left].any?(hang)
+      fail(ArgumentError, "inline must be right or left") unless inline.nil? || %w[right left].any?(inline)
     end
 
     def show_footer?
@@ -56,7 +56,7 @@ module Content
 
     def quote_class
       ["quote", "quote--hang-#{hang}"].tap do |c|
-        c << "quote--inline" if inline
+        c << "quote--inline-#{inline}" if inline
       end
     end
   end
