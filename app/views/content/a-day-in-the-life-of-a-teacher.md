@@ -28,7 +28,7 @@
     q-sarah-geography-1:
       text: "I have four free periods a week, which I use as my own time."
       name: "Sarah"
-      job_title: "Sarah, geography teacher"
+      job_title: "Geography teacher"
       inline: right
     q-gavin:
       text: "Teaching and learning does not stop with the bell at the end of the school day."
