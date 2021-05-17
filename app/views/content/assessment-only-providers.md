@@ -86,9 +86,9 @@ providers:
   East Midlands:
   - header: Bishop Grosseteste University
     link: https://www.bishopg.ac.uk
-    name: Dr Abigail Parrish
-    telephone: 01522 583729
-    email: abigail.parrish@bishopg.ac.uk
+    name: Enquiries Team
+    telephone: 01522 583658
+    email: enquiries@bishopg.ac.uk
   - header: CfBT Education Trust SCITT
     name: Julie Woolley
     telephone: '07919 568841'
