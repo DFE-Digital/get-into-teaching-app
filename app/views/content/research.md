@@ -2,7 +2,7 @@
 title: Research
 description: |-
   A record of recent surveys and research carried out on behalf of the Get Into Teaching campaign, such as the effect of the Covid-19 pandemic on people's career aspirations.
-date: "2021-01-19"
+date: "2021-05-17"
 image: false
 keywords:
   - Research
@@ -104,7 +104,7 @@ Last updated 6 April 2018
 
 ## Soft messaging survey
 
-On behalf of NCTL, SKV Communications and Kindred Agency commissioned Censuswide to carry out a survey. This asked teachers and the non-teaching public from other professions about the extent to which they experience emotionally rewarding benefits from their career.
+On behalf of [NCTL](https://www.gov.uk/government/organisations/national-college-for-teaching-and-leadership), SKV Communications and Kindred Agency commissioned Censuswide to carry out a survey. This asked teachers and the non-teaching public from other professions about the extent to which they experience emotionally rewarding benefits from their career.
 
 <a href="/assets/documents/soft-messaging.pdf" class="call-to-action-icon-button">
     Read the summary of findings (PDF 459KB)
