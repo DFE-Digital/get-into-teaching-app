@@ -82,7 +82,7 @@
     - Adult Dependants’ Grant
     - Disabled students
     - Disabled Students’ Allowances
-    
+
 ---
 
 
@@ -129,7 +129,7 @@ There are [Troops to Teachers](https://www.ucas.com/teaching-option/troops-teach
 
 $chat$
 
-## Extra financial support for parents and carers
+## If you're a parent or carer
 
 You may be able to get extra financial support if you have children or other caring responsibilities.
 
@@ -138,12 +138,16 @@ You may be able to get extra financial support if you have children or other car
 * [Adult Dependants’ Grant](https://www.gov.uk/adult-dependants-grant)
 
 
-## Extra financial support for students with disabilities
+## If you're disabled
 
-If you have additional needs due to a mental health condition, long-term illness or disability you can apply for [Disabled Students’ Allowance (DSA)](https://www.gov.uk/disabled-students-allowances-dsas/how-to-claim).
+You may be able to [get support if you’re a student and you’re disabled, have a learning difficulty or health problem](https://www.gov.uk/disabled-students-allowance-dsa/how-to-claim).
+
+[If you do paid training you may also be eligible for support](https://www.gov.uk/access-to-work).
+
+[Learn more about training to teach if you're disabled](/get-support-training-to-teach-if-you-are-disabled). 
 
 
-## Applying for funding if you come from outside England
+## If you come from outside England
 
 If you live outside England you may still be eligible for funding to train to teach via:
 
