@@ -26,7 +26,7 @@ Kindred Agency commissioned research company Censuswide to carry out two surveys
 
 For students and recent graduates, the purpose of the survey was also to provide insights about the qualities and skills they most possess, as well as what they most hope to gain when considering a future career, including teaching. For the teacher survey, the purpose was to understand what attributes and skills they believed to be most useful for being a teacher, the best aspects of their job and what it enables them to do.
 
-<a href="/assets/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf" class="call-to-action-icon-button">
+<a href="/assets/documents/it-takes-you-to-teach.pdf" class="call-to-action-icon-button">
     Read the summary of findings (PDF 764KB)
     <i class="fas fa-file-pdf"></i>
 </a>
@@ -39,7 +39,7 @@ Kindred Agency, in partnership with SKV Communications, commissioned research co
 
 The purpose of the survey was aimed at gaining further insights from parents, during this unprecedented period, and exploring the role teachers continue to play in the lives of young people. 
 
-<a href="/assets/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf" class="call-to-action-icon-button">
+<a href="/assets/documents/thank-a-teacher.pdf" class="call-to-action-icon-button">
     Read the summary of findings (PDF 754KB)
     <i class="fas fa-file-pdf"></i>
 </a>
@@ -72,7 +72,7 @@ Published 4 September 2019
 
 Kindred Agency, in partnership with SKV Communications, commissioned research company Censuswide to carry out a survey on behalf of the Get Into Teaching campaign, asking the general public about their propensity for changing career.
 
-<a href="/assets/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf" class="call-to-action-icon-button">
+<a href="/assets/documents/career-change-research.pdf" class="call-to-action-icon-button">
     Read the summary of findings (PDF 450KB)
     <i class="fas fa-file-pdf"></i>
 </a>
