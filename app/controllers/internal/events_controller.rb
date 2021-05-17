@@ -7,7 +7,7 @@ module Internal
     DEFAULT_EVENT_TYPE = "provider".freeze
 
     def index
-      @event_type = event_types[params[:event_type]] || event_types[:provider]
+      @event_type = set_event_type(params[:event_type])
 
       load_pending_events(@event_type)
       @no_results = @events.blank?
@@ -24,7 +24,8 @@ module Internal
     end
 
     def new
-      @event = Event.new(venue_type: Event::VENUE_TYPES[:existing])
+      @event_type = set_event_type(params[:event_type])
+      @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
       @event.building = EventBuilding.new
     end
 
@@ -37,7 +38,7 @@ module Internal
 
     def create
       @event = Event.new(event_params)
-      @event.assign_building(building_params)
+      @event.assign_building(building_params) unless @event.online_event?
 
       if @event.save
         redirect_to internal_events_path(success: :pending)
@@ -53,6 +54,10 @@ module Internal
     end
 
   private
+
+    def set_event_type(type)
+      event_types[type] || event_types[:provider]
+    end
 
     def event_type_name
       params[:event_type] || DEFAULT_EVENT_TYPE
@@ -112,6 +117,8 @@ module Internal
         :provider_target_audience,
         :provider_website_url,
         :venue_type,
+        :type_id,
+        :scribble_id,
       )
     end
 
