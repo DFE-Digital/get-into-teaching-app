@@ -22,7 +22,7 @@ module Sections
     end
 
     def background_image
-      tag.img(src: image_path, data: { "lazy-disable": true })
+      tag.img(src: image_path, data: { "lazy-disable": true }, alt: "Photograph of teaching taking place in a classroom")
     end
 
     def show_subtitle?
