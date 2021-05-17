@@ -1,13 +1,13 @@
 redirects:
   # Guidance
-  "/ways-to-train-guidance": "/guidance/become-a-teacher-in-england"
-  "/train-to-become-a-teacher": "/guidance/become-a-teacher-in-england"
-  "/guidance/train-to-become-a-teacher": "/guidance/become-a-teacher-in-england"
+  "/ways-to-train-guidance": "/ways-to-train"
+  "/train-to-become-a-teacher": "/ways-to-train"
+  "/guidance/train-to-become-a-teacher": "/ways-to-train"
 
   "/finance-guidance": "/funding-your-training"
   "/financial-support-for-teacher-training": "/funding-your-training"
   "/guidance/financial-support-for-teacher-training": "/funding-your-training"
-  "/guidance": "/guidance/become-a-teacher-in-england"
+  "/guidance": "/ways-to-train"
 
   # Top-level pages
   "/life-as-a-teacher/teachers-salaries-and-benefits": "/salaries-and-benefits"
@@ -209,7 +209,7 @@ redirects:
   "/user/register": "/tta-service"
   "/funding-and-salary/teacher-salaries": "/salaries-and-benefits"
   "/life-as-a-teacher/real-life-experiences/career-progression-stories/the-rapid-career-climber": "/my-story-into-teaching/career-progression/leaping-to-head-of-department"
-  "/subject-knowledge-enhancement-ske-courses": "/guidance/become-a-teacher-in-england#subject-knowledge-enhancement-courses"
+  "/subject-knowledge-enhancement-ske-courses": "/improve-your-subject-knowledge"
   "/funding-and-salary/overview/funding-by-subject/funding-for-training-to-teach-religious-education": "/funding-your-training"
   "/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training/degrees-with-opt-in-qts": "/ways-to-train"
   "/signup/salaries-and-benefits": "/salaries-and-benefits"
@@ -217,7 +217,6 @@ redirects:
   "/mailinglist/signup/salaries-and-benefits": "/salaries-and-benefits"
   "/how-to-apply/the-application-process/your-written-application": "/steps-to-become-a-teacher"
   "/funding-and-salary/overview/scholarships/computing-scholarships": "/funding-your-training"
-  "/subject-knowledge-enhancement-ske-courses": "/guidance/become-a-teacher-in-england#subject-knowledge-enhancement-courses"
   "/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training/funding-for-undergraduate-teacher-training/student-loans": "/ways-to-train"
   "/funding-and-salary/overview/funding-by-subject/funding-for-training-to-teach-chemistry": "/funding-your-training"
   "/school-experience/making-your-mind-up-with-school-experience": "/steps-to-become-a-teacher"
@@ -272,7 +271,7 @@ redirects:
   "/funding-and-salary/overview/scholarships/physics-scholarships": "/funding-your-training"
   "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas": "/international-returners"
   "/getting-school-experience": "/steps-to-become-a-teacher"
-  "/submitting-your-application": "/guidance/become-a-teacher-in-england"
+  "/submitting-your-application": "/tips-on-applying-for-teacher-training"
   "/competitive-salary-and-great-benefits": "/salaries-and-benefits"
   "/explore-my-options/further-education-teacher-training/bursaries": "/funding-your-training"
   "/explore-my-options/teach-languages": "/ways-to-train"
