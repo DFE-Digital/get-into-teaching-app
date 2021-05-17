@@ -50,7 +50,7 @@ Published 20 May 2020
 
 Kindred Agency, in partnership with SKV Communications, commissioned research company Censuswide to carry out a survey on behalf of the Get Into Teaching campaign, asking the full-time, part-time working public or job seekers (those aged between 21-40 years old and who studied in higher education) about their inclination and motivation for making significant changes to their lifestyle, including changing careers.
 
-<a href="/assets/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf" class="call-to-action-icon-button">
+<a href="/assets/documents/millenial-career-crossroads.pdf" class="call-to-action-icon-button">
     Read the summary of findings (PDF 752KB)
     <i class="fas fa-file-pdf"></i>
 </a>
