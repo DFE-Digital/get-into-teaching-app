@@ -31,11 +31,15 @@ There’s no national curriculum for FE, so courses are often tailored to meet e
 
 ### How to become a further education teacher
 
-The qualifications you need to become an FE teacher depend on the type of course you'd like to teach. For example, you can get qualifications in education and training, as well as qualifications in specific subjects.
+Unlike with other types of teaching, you do not need to get '[qualified teacher status](/ways-to-train)' to teach in further education.
+
+The qualifications you need to become an FE teacher depend on the type of course you'd like to teach. You can get qualifications in education and training, as well as qualifications in specific subjects.
+
+For example, you can train to get a PGCE or PGDE in Post Compulsory Education and Training (PCET). [Search for a further education course leading to a PGCE or PGDE](https://www.gov.uk/find-postgraduate-teacher-training-courses).
+
+You can also <a href='https://www.feadvice.org.uk/i-want-work-fe-skills-sector'>visit Further Education Advice</a> or ring their support service on 0300 303 1877.
 
 You can even gain new qualifications once you start teaching.
-
-Visit <a href='https://www.feadvice.org.uk/i-want-work-fe-skills-sector'>Further Education Advice</a> or ring their support service on 0300 303 1877.
 
 ## Funding for training as a further education teacher
 
