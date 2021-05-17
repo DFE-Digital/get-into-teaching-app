@@ -82,7 +82,7 @@ When you apply you’ll need to give details about:
 * why you’re suited to teach a particular subject or age group
 
 You can also share whether you need any adjustments during the application
-process or on the course - for example, if you’re disabled.
+process or on the course - for example, [if you’re disabled](/get-support-training-to-teach-if-you-are-disabled).
 
 You’ll be encouraged to declare any potential safeguarding issues such as
 criminal convictions. Training providers can advise you whether it’ll affect
@@ -155,14 +155,22 @@ You may want to cover some of the following:
 
 * why you want to teach
 * what inspired you to choose teaching
-* your thoughts on children and young children’s wellbeing and the education system
+* your thoughts on children’s wellbeing and the education system
 * your understanding of the demands and rewards of the profession
 * personal qualities that will make you a good teacher
 * your contribution to the life of the school outside the classroom – for
   example, running extra-curricular activities and clubs
 * details of any experience you have working with children and what you learnt
 * your suitability to teach a subject or group
-* evidence of the knowledge you have in your subject
+
+As part of your personal statement you'll need to demonstrate your suitability to teach a subject or age group. You could talk about:
+
+* the subject of your undergraduate degree and the modules you studied
+* postgraduate degrees (for example, a Masters or PhD)
+* your A level subjects
+* expertise you’ve gained at work
+
+[If you're concerned about your subject knowledge](/improve-your-subject-knowledge), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training. 
 
 ## If you’re invited to interview
 
