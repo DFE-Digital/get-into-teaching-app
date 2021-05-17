@@ -61,7 +61,7 @@ Published 7 January 2020
 
 Kindred Agency, in partnership with SKV Communications, commissioned research company Censuswide to carry out a survey on behalf of the Get Into Teaching campaign, asking the general public about their inclination and motivation for changing careers, specifically at the start of a new academic year.
 
-<a href="/assets/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf" class="call-to-action-icon-button">
+<a href="/assets/documents/career-conundrum.pdf" class="call-to-action-icon-button">
     Read the summary of findings (PDF 460KB)
     <i class="fas fa-file-pdf"></i>
 </a>
@@ -94,7 +94,7 @@ Published 14 November 2018
 
 Censuswide were commissioned to ask university degree-level students and graduates from the last 18 months about their career aspirations. 
 
-<a href="/assets/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf" class="call-to-action-icon-button">
+<a href="/assets/documents/career-survey-summary.pdf" class="call-to-action-icon-button">
     Read the summary of findings (PDF 424KB)
     <i class="fas fa-file-pdf"></i>
 </a>
