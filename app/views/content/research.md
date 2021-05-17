@@ -83,7 +83,7 @@ Published 3 January 2019
 
 Kindred Agency, in partnership with SKV Communications, commissioned research company Censuswide to carry out a survey asking the general public about the people who influence them, the significance of this influence and the influence and impact their teachers had on them. 
 
-<a href="/assets/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf" class="call-to-action-icon-button">
+<a href="/assets/documents/perceptions-of-influence.pdf" class="call-to-action-icon-button">
     Read the summary of findings (PDF 450KB)
     <i class="fas fa-file-pdf"></i>
 </a>
@@ -106,7 +106,7 @@ Last updated 6 April 2018
 
 On behalf of NCTL, SKV Communications and Kindred Agency commissioned Censuswide to carry out a survey. This asked teachers and the non-teaching public from other professions about the extent to which they experience emotionally rewarding benefits from their career.
 
-<a href="/assets/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf" class="call-to-action-icon-button">
+<a href="/assets/documents/soft-messaging.pdf" class="call-to-action-icon-button">
     Read the summary of findings (PDF 459KB)
     <i class="fas fa-file-pdf"></i>
 </a>
