@@ -7,7 +7,7 @@ module MailingList
                 inclusion: { in: :teaching_subject_ids }
 
       def teaching_subjects
-        @teaching_subjects ||= [OpenStruct.new(id: nil, value: "Please select")] + query_teaching_subjects
+        @teaching_subjects ||= query_teaching_subjects
       end
 
       def teaching_subject_ids

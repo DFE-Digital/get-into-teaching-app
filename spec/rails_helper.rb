@@ -8,6 +8,7 @@ unless Rails.env.development? || Rails.env.test?
 end
 
 require "rspec/rails"
+require "active_record"
 require "view_component/test_helpers"
 # Add additional requires below this line. Rails is not loaded until this point!
 

@@ -15,13 +15,17 @@ build_layout_from_frontmatter: true
 description: |-
   Paul Evason's route into teaching
 date: "2020-02-01"
+quote:
+  q-paul:
+    text: There are plenty of progression opportunities in teaching – you just have to grasp them.
+    inline: left
 ---
 
 I always wanted to work in an environment that was never going to be the same every day – teaching definitely provides this. Working with students from different backgrounds and preparing them to take their next steps towards success was always a huge draw to the profession.
 
 As a teacher, you'll have the opportunity to develop and succeed in your career to realise your professional and personal ambitions. Before I was assistant headteacher I enjoyed a number of different roles learning new skills that have helped me to move forward in my career.
 
-> There are plenty of progression opportunities in teaching – you just have to grasp them.
+$q-paul$
 
 ### Take on a challenge
 

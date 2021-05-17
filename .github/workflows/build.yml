@@ -1,5 +1,6 @@
 name: Build and Deploy
 on:
+  workflow_dispatch:
   pull_request:
     types: [assigned, opened, synchronize, reopened]
   push:
@@ -7,14 +8,14 @@ on:
 
 jobs:
   build:
-    name: Build ${{github.ref}}
+    name: Build
     runs-on: ubuntu-latest
     outputs:
       DOCKER_IMAGE: ${{ steps.docker.outputs.DOCKER_IMAGE }}
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -23,7 +24,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -46,7 +47,7 @@ jobs:
       - name: Set DOCKER_IMAGE environment variable
         id:   docker
         run: |
-             if [ "${{github.ref}}" == "refs/heads/master" ] 
+             if [ "${{github.ref}}" == "refs/heads/master" ]
              then
                 echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
              else
@@ -62,14 +63,14 @@ jobs:
              ${{ runner.os }}-buildx-
 
       - name: Login to Docker Hub
-        uses: docker/login-action@v1
+        uses: docker/login-action@v1.9.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
 
       - name: Build and push to Docker Hub
-        uses: docker/build-push-action@v2
+        uses: docker/build-push-action@v2.4.0
         with:
           builder: ${{ steps.buildx.outputs.name }}
           cache-from: type=local,src=/tmp/.buildx-cache
@@ -97,7 +98,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -106,7 +107,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -119,7 +120,7 @@ jobs:
             rspec --format documentation spec/features/content_pages_spec.rb
 
       - name: Slack Notification
-        if: failure() 
+        if: failure()
         uses: rtCamp/action-slack-notify@master
         env:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
@@ -134,7 +135,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -151,7 +152,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -160,7 +161,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -172,6 +173,7 @@ jobs:
             rubocop --format json --out=/app/out/rubocop-result.json
 
       - name: Keep Rubocop output
+        if: always()
         uses: actions/upload-artifact@v2
         with:
           name: Rubocop_results
@@ -180,27 +182,27 @@ jobs:
       - name: Run Specs
         run: |-
           docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
-            rspec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
+            bundle exec parallel_split_test spec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
 
       - name: Fixup report file paths
         run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/coverage.json
 
       - name:  Keep Code Coverage Report
-        if: always() 
+        if: always()
         uses: actions/upload-artifact@v2
         with:
           name: Code_Coverage
           path: ${{ github.workspace }}/coverage/*
 
       - name:  Keep Unit Tests Results
-        if: always() 
+        if: always()
         uses: actions/upload-artifact@v2
         with:
           name: unit_tests
           path: ${{ github.workspace }}/out/*
 
       - name: Setup sonarqube
-        uses: warchant/setup-sonar-scanner@v3 
+        uses: warchant/setup-sonar-scanner@v3
 
       - name: Run sonarqube
         env:
@@ -220,7 +222,7 @@ jobs:
     needs: [ build ]
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -229,14 +231,14 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
            secrets: 'SLACK-WEBHOOK'
 
       - name: Scan image
-        uses: anchore/scan-action@v2
+        uses: anchore/scan-action@v2.0.4
         with:
           image: ${{needs.build.outputs.DOCKER_IMAGE}}
           fail-build: false
@@ -256,11 +258,11 @@ jobs:
   review:
     name: Review Deployment Process
     needs: [  javascript_tests , feature_tests , security_tests ]
-    if: github.ref != 'refs/heads/master'  
+    if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -269,7 +271,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -306,7 +308,7 @@ jobs:
 
       - name: Add Review Label
         if: contains(github.event.pull_request.user.login, 'dependabot') == false
-        uses: actions-ecosystem/action-add-labels@v1
+        uses: actions-ecosystem/action-add-labels@v1.1.2
         with:
           github_token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
           labels: Review
@@ -321,7 +323,7 @@ jobs:
       release_sha: ${{github.sha }}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -330,7 +332,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -367,37 +369,37 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1.1
         with:
           repo: DFE-Digital/get-into-teaching-api
-          workflow: Fix Network policies 
+          workflow: Fix Network policies
           token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
           inputs: '{"environment": "Development" }'
-           
+
       - name: Generate Tag from PR Number
         id: tag_version
         uses: DFE-Digital/github-actions/GenerateReleaseFromSHA@master
         with:
           sha: ${{github.sha}}
-            
+
       - name: Create a GitHub Release
         id: release
         if: steps.tag_version.outputs.pr_found == 1
-        uses: actions/create-release@v1
+        uses: actions/create-release@v1.1.4
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tag_name: ${{ steps.tag_version.outputs.pr_number }} 
+          tag_name: ${{ steps.tag_version.outputs.pr_number }}
           body: ${{ steps.tag_version.outputs.pr_number }}
           release_name: Release ${{ steps.tag_version.outputs.pr_number }}
           commitish: ${{ github.sha}}
           prerelease: false
           draft: false
-          
+
       - name: Copy PR Info to Release
-        if: steps.release.outputs.id      
+        if: steps.release.outputs.id
         uses: DFE-Digital/github-actions/CopyPRtoRelease@master
         with:
           PR_NUMBER:  ${{ steps.tag_version.outputs.pr_number }}
           RELEASE_ID: ${{ steps.release.outputs.id }}
-          TOKEN: ${{secrets.GITHUB_TOKEN}}          
+          TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   qa:
     name: Quality Assurance Deployment
@@ -406,7 +408,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -415,7 +417,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -441,10 +443,10 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1.1
         with:
          repo: DFE-Digital/get-into-teaching-api
-         workflow: Fix Network policies 
+         workflow: Fix Network policies
          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
          inputs: '{"environment": "Test" }'
-         
+
       - name: Check if QA Deployment has returned with a failure
         if: steps.wait-for-deploy.outputs.conclusion == 'failure'
         run: exit 1
@@ -464,8 +466,8 @@ jobs:
     needs: [ qa ]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
-        
+        uses: actions/checkout@v2.3.4
+
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
@@ -473,7 +475,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -497,7 +499,7 @@ jobs:
           ref: refs/heads/master
           repo: get-into-teaching-frontend-tests
           intervalSeconds: 30
-          timeoutSeconds: 300
+          timeoutSeconds: 600
 
       - name: Check for test failure
         if: steps.wait-for-tests.outputs.conclusion == 'failure'
@@ -507,10 +509,9 @@ jobs:
     name: Production Deployment
     runs-on: ubuntu-latest
     needs: [ cypress, development ]
-    if: github.ref == 'NEVER_NEVER_NEVER'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -519,7 +520,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
@@ -564,7 +565,7 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1.1
         with:
          repo: DFE-Digital/get-into-teaching-api
-         workflow: Fix Network policies 
+         workflow: Fix Network policies
          token: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
          inputs: '{"environment": "Production" }'
 

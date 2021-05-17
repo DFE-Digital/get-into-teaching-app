@@ -22,7 +22,7 @@ jobs:
         shell: bash
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -31,7 +31,7 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}

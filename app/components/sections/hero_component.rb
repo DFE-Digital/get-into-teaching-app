@@ -22,7 +22,7 @@ module Sections
     end
 
     def background_image
-      tag.div(class: "hero__img", style: "background-image: url(#{image_path})")
+      tag.img(src: image_path, data: { "lazy-disable": true })
     end
 
     def show_subtitle?

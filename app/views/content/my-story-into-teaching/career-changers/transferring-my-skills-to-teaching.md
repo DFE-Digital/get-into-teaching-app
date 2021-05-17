@@ -15,13 +15,15 @@ build_layout_from_frontmatter: true
 description: |-
   Will Fordham's route into teaching
 date: "2020-02-01"
+quote:
+  q-will:
+    text: I was working for a charity as a communications manager, when I realised that teaching was what I loved and that I wanted to continue doing the work I was doing abroad.
+    inline: left
 ---
 
 I decided to train as an English teacher after working in various communication roles as a civil servant. Before enrolling on a salaried teacher training course, I completed a Certificate in Teaching English to Speakers of Other Languages (CELTA) qualification at Cambridge University, so I could teach English as a second language. I spent 2 years teaching English in Italy before returning to another communications job.
 
-Maths has the unfortunate reputation of being difficult and lifeless. I want to raise its reputation by inspiring young minds to find the fun in discovering maths' unique characteristics.
-
-> I was working for a charity as a communications manager, when I realised that teaching was what I loved and that I wanted to continue doing the work I was doing abroad.
+$q-will$
 
 When I decided to move back to London from East Anglia, 'I wanted to be able to start working and have the money to support my move. That was my main objective, to be paid to train. I think financing myself through the training year could have been difficult, having lived abroad and come back to a job in the UK.
 

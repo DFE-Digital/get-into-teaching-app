@@ -7,20 +7,20 @@ on:
 jobs:
   attach-to-trello:
     name: Link Trello card to this PR
-    runs-on: ubuntu-latest
-    environment: Development
+    runs-on: ubuntu-latest  
+    if: "!contains( 'dependabot[bot] snyk-bot' , github.actor )"  
     steps:
       - uses: Azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1
+      - uses: Azure/get-keyvault-secrets@v1.2
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
            secrets: 'TRELLO-KEY, TRELLO-TOKEN'
 
-      - name: Add Trello Comment
+      - name: Add Trello Comment 
         uses: DFE-Digital/github-actions/AddTrelloComment@master
         with:
           MESSAGE:      ${{ github.event.pull_request.html_url }} 

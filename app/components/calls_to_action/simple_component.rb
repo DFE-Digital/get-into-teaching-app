@@ -3,16 +3,22 @@ module CallsToAction
     attr_accessor :icon, :title, :text, :link
 
     def initialize(icon:, title: nil, text: nil, link_text:, link_target:, hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
-      @icon  = icon_element(icon)
-      @title = title
-      @text  = text
-      @link  = link_to(link_text, link_target, class: "button")
+      @icon_filename = icon
+      @title         = title
+      @text          = text
+      @link_text     = link_text
+      @link_target   = link_target
 
       @hide_on_mobile  = hide_on_mobile
       @hide_on_tablet  = hide_on_tablet
       @hide_on_desktop = hide_on_desktop
 
       fail(ArgumentError, "a title or text must be present") if title.nil? && text.nil?
+    end
+
+    def before_render
+      @icon = icon_element(@icon_filename)
+      @link = link_to(@link_text, @link_target, class: "button")
     end
 
   private

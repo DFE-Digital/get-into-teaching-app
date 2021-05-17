@@ -1,0 +1,124 @@
+.quote {
+  @include quote;
+  margin: $indent-amount 0;
+  width: 100%;
+
+  p {
+    @include fancy-quotes-before;
+    margin: 0;
+
+    span {
+      @include fancy-quotes-after;
+      white-space: nowrap;
+    }
+  }
+
+  p, .footer {
+    padding: $indent-amount 25px $indent-amount 42px;
+  }
+
+  .footer {
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .author {
+      display: inline-flex;
+      gap: 1em;
+      font-size: 1em;
+    }
+
+    .name, .job-title {
+      display: block;
+      font-style: normal;
+    }
+
+    .job-title {
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+
+    .button {
+      margin-top: $indent-amount;
+    }
+
+    img {
+      max-width: 50%;
+    }
+  }
+}
+
+@include mq($from: tablet) {
+  .quote--inline-left,
+  .quote--inline-right {
+    max-width: 50%;
+    margin-bottom: $indent-amount;
+  }
+
+  .quote--inline-left {
+    float: left;
+    margin-right: $indent-amount;
+  }
+
+  .quote--inline-right {
+    float: right;
+    margin-left: $indent-amount;
+  }
+
+  .quote:not(.quote--inline-left, .quote--inline-right) {
+    &.quote--hang-right {
+      .footer {
+        flex-direction: row-reverse;
+
+        &--with-image {
+          .author {
+            margin-right: 185px;
+          }
+        }
+
+        .author {
+          margin-left: 0;
+          text-align: right;
+        }
+
+        img {
+          left: auto;
+          right: 0;
+        }
+
+        .button {
+          right: auto;
+          left: 1em;
+        }
+      }
+    }
+
+    .footer {
+      flex-direction: row;
+      justify-content: space-between;
+
+      &--with-image {
+        .author {
+          margin-left: 170px;
+        }
+      }
+
+      .button {
+        margin-top: 0;
+        position: absolute;
+        right: $indent-amount;
+        bottom: 0;
+        transform: translate(0, 50%);
+      }
+
+      img {
+        position: absolute;
+        left: 0;
+        border: 1em solid $yellow;
+        border-top: 0;
+        width: 175px;
+      }
+    }
+  }
+}

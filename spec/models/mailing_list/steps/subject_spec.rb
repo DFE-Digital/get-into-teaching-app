@@ -36,6 +36,6 @@ describe MailingList::Steps::Subject do
 
     subject { instance.teaching_subject_ids }
 
-    it { is_expected.to eq([nil] + GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.values) }
+    it { is_expected.to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.values) }
   end
 end

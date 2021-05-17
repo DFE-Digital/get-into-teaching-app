@@ -1,5 +1,5 @@
 ---
-title: Providers offering maths and physics teaching internships
+title: Maths and physics teaching internships
 description: |-
   A number of accredited providers have been approved to offer Teaching
   Internships. You can find them listed on this page.
@@ -15,6 +15,10 @@ providers:
       link: "https://www.beauchampteach.org.uk/opportunities/internships/"
       name: Emma Lowe
       email: Emma.Lowe@beauchamp.org.uk
+    - header: Bluecoat Aspley Academy
+      link: "https://www.bluecoatscittalliance.uk.com/vacancies/paid-graduate-internship/"
+      name: Julie Heffernan
+      email: itt@bluecoat.uk.com
     - header: George Spencer Academy
       link: "http://georgespencerscitt.co.uk/"
       name: Sarah Brennan
@@ -27,6 +31,10 @@ providers:
       link: "https://www.lincolnshiretsa.co.uk/page/?title=Paid+Teaching+Internship+Programme&pid=269"
       name: Angela Murphy
       email: anmurphy@prioryacademies.co.uk
+    - header: The Becket School 
+      link: "https://www.becketonline.co.uk/teachingschool/school-direct-teacher-training/applications-3-copy/"
+      name: Vanessa Scott
+      email: V.Scott@becketonline.co.uk
   East of England:
     - header: Farlingaye High School
       link: "https://www.eastscitt.co.uk/Undergraduate-Internships/"
@@ -52,6 +60,15 @@ providers:
       link: "http://www.benfleet-teaching-school.co.uk/internship-scheme/"
       name: Maxine Howard
       email: mhoward@theappletonschool.org
+  London:
+    - header: St Pauls
+      link:  "http://inspiretsa.co.uk/Opportunities/MathsInternship"
+      name: Keith Perera
+      email: kperera@stpaulscc.co.uk  
+    - header: The Cardinal Vaughan Memorial School
+      link:  "https://www.cvms.co.uk/Physics-and-Maths-Undergraduate-Summer-Internship-/"
+      name: Patrick Lanigan, Emma Templeman
+      email: Laniganp@cvms.co.uk; e.templeman@stbons.org
   North East:
     - header: Cardinal Hulme
       link: "http://www.cardinalhume.com"
@@ -66,7 +83,7 @@ providers:
       name:  Susan Ingram
       email:  susan.ingram@shottonhallacademy.co.uk
     - header: Teach North with Outwood Grange Academies Trust
-      link: "https://teachnorth.com/internships"
+      link: "https://teachnorth.com/latest-news/2020/2/11/applications-open-for-oie-teaching-internship-programme?rq=internships"
       name: Emma Sikora
       email: e.sikora@outwood.com
   North West:
@@ -79,10 +96,6 @@ providers:
       name: Rachel Eppy
       email: Rachel.eppy@teachmanchester.com
   South East:
-    - header: The Cardinal Vaughan Memorial School
-      link:  "https://www.cvms.co.uk/Physics-and-Maths-Undergraduate-Summer-Internship-/"
-      name: Patrick Lanigan, Emma Templeman
-      email: Laniganp@cvms.co.uk; e.templeman@stbons.org
     - header: Furze Platt Senior School
       link: "https://www.furzeplatt.com/page/?title=Physics+and+Maths+Internships&pid=536"
       name: Debbie Harding
@@ -95,6 +108,10 @@ providers:
       link: "https://www.e21c.co.uk/"
       name: Chris Wallis
       email: cwallis@spires.e21c.co.uk
+    - header: Salesian School
+      link: "https://salesian.surrey.sch.uk/teaching-school/"
+      name: K Cornforth
+      email: kcornforth@salesian.surrey.sch.uk
   South West:
     - header: Excalibur TSA
       link: "http://www.excaliburtsa.org.uk/itt/teaching-internships-summer-2021/"
@@ -113,6 +130,10 @@ providers:
       link: "https://www.bctsa.org/teaching-internship-programme"
       name: Catherine Haines
       email:  teachingschool@bishopchalloner.bham.sch.uk
+    - header: Haybridge High School and Sixth Form
+      link: "https://www.teachwithhaybridge.co.uk/internships/"
+      name:  B Darby 
+      email: info@teachwithhaybridge.co.uk
     - header: Painsley Catholic College TSA
       link: "https://www.painsleytsa.co.uk/Internships/"
       name: Louise Bullock
@@ -129,6 +150,10 @@ providers:
       link: "https://www.st-peters.solihull.sch.uk/teaching-school/"
       name: Anthony Jones
       email: jonesa@st-peters.solihull.sch.uk
+    - header: The Polesworth School
+      link: "https://catteachingschool.org/paid-internship-programme/"
+      name:  Michelle Borders 
+      email: catts@thepolesworthschool.com
   Yorkshire and the Humber:
     - header: The Education Alliance, Yorkshire Wolds Teacher Training
       link: "https://ywtt.org.uk/"

@@ -5,8 +5,8 @@ export default class extends Controller {
 
   connect() {
     this.preventTurboLinksOnJumpLinks();
-    this.openExternalContentLinksInNewWindow();
     this.prepareChevronOnButtonLinks();
+    this.openExternalContentLinksInNewWindow();
   }
 
   preventTurboLinksOnJumpLinks() {
@@ -20,11 +20,12 @@ export default class extends Controller {
   }
 
   openExternalContentLinksInNewWindow() {
-    const links = this.contentTarget.querySelectorAll('.content a');
+    const links = this.contentTarget.querySelectorAll('a');
 
     links.forEach((l) => {
       if (l.getAttribute('href')?.startsWith('http')) {
         l.setAttribute('target', '_blank');
+        l.setAttribute('rel', 'noopener noreferrer');
 
         // add hidden text to inform screen reader users that
         // link will open in a new window

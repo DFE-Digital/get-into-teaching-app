@@ -15,13 +15,17 @@ build_layout_from_frontmatter: true
 description: |-
   Claire Johnson's route into teaching
 date: "2020-02-01"
+quote:
+  q-claire:
+    text: Being a mum, I realised that education in this country was more important to me than ever.
+    inline: left
 ---
 
 After college, I went traveling and then spent my 20s trying out different careers.
 
 I worked in HR for 5 years while also doing a part-time degree in physical science through The Open University - achieving a first. I also became a mum too.
 
-> Being a mum, I realised that education in this country was more important to me than ever.
+$q-claire$
 
 Whilst on maternity leave, I saw the advert for teacher training and saw that with my degree, I'd even get a bursary.
 

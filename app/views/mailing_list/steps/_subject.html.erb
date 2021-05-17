@@ -10,4 +10,5 @@
 <%= f.govuk_collection_select :preferred_teaching_subject_id,
       f.object.teaching_subjects,
       :id,
-      :value %>
+      :value,
+      options: { prompt: "Please select" } %>

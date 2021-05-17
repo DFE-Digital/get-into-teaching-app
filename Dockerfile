@@ -1,4 +1,4 @@
-FROM ruby:2.7.2-alpine3.12
+FROM ruby:2.7.3-alpine3.12
 
 ENV RAILS_ENV=production \
     NODE_ENV=production \
@@ -14,19 +14,18 @@ EXPOSE 3000
 ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server" ]
 
-# hadolint ignore=DL3018
-RUN apk add --no-cache build-base git tzdata shared-mime-info nodejs yarn
+RUN apk add --no-cache build-base git tzdata shared-mime-info nodejs yarn\
+    jpegoptim=1.4.6-r0 optipng=0.7.7-r0 imagemagick=7.0.10.48-r0 parallel=20200522-r0
 
 # install NPM packages removign artifacts
 COPY package.json yarn.lock ./
 RUN yarn install && yarn cache clean
 
 # Install bundler
-RUN gem install bundler --version=2.1.4
+RUN gem install bundler --version=2.2.8
 
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./
-# hadolint ignore=SC2046
 RUN bundle install --jobs=$(nproc --all) && \
     rm -rf /root/.bundle/cache && \
     rm -rf /usr/local/bundle/cache
@@ -34,6 +33,25 @@ RUN bundle install --jobs=$(nproc --all) && \
 # Add code and compile assets
 COPY . .
 RUN bundle exec rake assets:precompile
+
+# Lossless optimize PNGs
+RUN find public -type f -iname "*.png" -exec optipng -nb -nc -np {} \;
+# Optimize JPEG at 90% quality
+RUN find public -type f \( -iname "*.jpg" -o -iname "*.jpg" \) -exec jpegoptim -m90 --strip-all {} \;
+RUN find public -type f \( -iname "*.jpeg" -o -iname "*.jpeg" \) -exec jpegoptim -m90 --strip-all {} \;
+
+# Fingerprint content assets
+RUN bundle exec rake fingerprinter:run
+
+# Convert to WebP/JPEG-2000 formats (size constraint avoids an error on empty images)
+# At 75% quality the images still look good and they are roughly half the size.
+# We need to convert after the fingerprinting so the file names are consistent.
+SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
+RUN find public -name "*.jpg" -size "+1b" | parallel -eta magick {} -quality 75 "{.}.webp"
+RUN find public -name "*.jpeg" -size "+1b" | parallel -eta magick {} -quality 75 "{.}.webp"
+RUN find public -name "*.png" -size "+1b" | parallel -eta magick {} -quality 75 "{.}.webp"
+RUN find public -name "*.jpg" -size "+1b" | parallel -eta magick {} -quality 75 "{.}.jp2"
+RUN find public -name "*.jpeg" -size "+1b" | parallel -eta magick {} -quality 75 "{.}.jp2"
 
 ARG SHA
 RUN echo "sha-${SHA}" > /etc/get-into-teaching-app-sha

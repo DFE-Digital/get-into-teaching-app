@@ -16,6 +16,10 @@ build_layout_from_frontmatter: true
 description: |-
   Gavin McIntyre's route into teaching
 date: "2020-02-01"
+quote:
+  q-gavin:
+    text: One thing I've realised is that when you're training to be a teacher, it's okay to make mistakes.
+    inline: left
 ---
 
 I am an assistant headteacher and ICT learning co-ordinator and have an MSc in computing and information systems. I had always been open to the idea of teaching as a potential career path – so I took the plunge when I moved from Northern Ireland to England.
@@ -24,7 +28,7 @@ I am an assistant headteacher and ICT learning co-ordinator and have an MSc in c
 
 Teacher training proved to be a steep learning curve for me.
 
-> One thing I've realised is that when you're training to be a teacher, it's okay to make mistakes.
+$q-gavin$
 
 Making mistakes allows you to develop strategies, techniques, and skills which you can apply to your teaching.
 

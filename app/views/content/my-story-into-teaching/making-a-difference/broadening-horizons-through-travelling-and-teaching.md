@@ -15,13 +15,17 @@ build_layout_from_frontmatter: true
 description: |-
   Craig Cairns's route into teaching
 date: "2020-02-01"
+quote:
+  q-craig:
+    text: I preferred the environment and the type of learning that went on in primary schools. I think you get to know the child a bit more because you're teaching a range of different subjects.
+    inline: left
 ---
 
 I spent my first year after graduating working in Pakistan, coding for software companies. Now I am a support teacher for years 5 and 6 at Eleanor Palmer Primary School in London and I teach young pupils basic programming as part of the new computing curriculum.
 
 I'm really happy coding has been introduced to the curriculum because I think it's something that has been lacking for quite a while. It's a very powerful thing for children to understand how technology works and what's going on in the background, even if they don't aspire to become programmers themselves.
 
-> I preferred the environment and the type of learning that went on in primary schools. I think you get to know the child a bit more because you're teaching a range of different subjects.
+$q-craig$
 
 I enjoyed working in schools while at university and started working as a learning mentor at a secondary school when I returned from Pakistan.
 

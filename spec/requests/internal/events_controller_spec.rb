@@ -1,10 +1,10 @@
 require "rails_helper"
 
 describe Internal::EventsController do
-  let(:pending_event) do
+  let(:pending_provider_event) do
     build(:event_api,
           :with_provider_info,
-          name: "Pending event",
+          name: "Pending provider event",
           status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
           type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
           is_virtual: nil,
@@ -12,38 +12,85 @@ describe Internal::EventsController do
           message: nil,
           web_feed_id: nil)
   end
+  let(:pending_online_event) do
+    build(:event_api,
+          :with_provider_info,
+          name: "Pending online event",
+          status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
+          type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
+          is_virtual: nil,
+          video_url: nil,
+          message: nil,
+          web_feed_id: nil)
+  end
   let(:open_event) { build(:event_api, name: "Open event") }
-  let(:events) { [pending_event, open_event] }
-  let(:provider_events_by_type) { group_events_by_type([pending_event]) }
+  let(:events) { [pending_provider_event, open_event, pending_online_event] }
+  let(:provider_events_by_type) { group_events_by_type([pending_provider_event]) }
+  let(:online_events_by_type) { group_events_by_type([pending_online_event]) }
 
   describe "#index" do
-    context "when any user type" do
-      context "when there are no pending events" do
+    shared_examples "no pending events" do |event_type, default_event_type|
+      context "when there are no pending #{event_type || default_event_type} events" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type) { [] }
 
-          get internal_events_path, headers: generate_auth_headers(:author)
+          get internal_events_path, headers: generate_auth_headers(:author), params: { event_type: event_type }
         end
         it "shows a no events banner" do
           assert_response :success
           expect(response.body).to include("No pending events")
         end
       end
+    end
 
-      context "when there are pending events" do
+    shared_examples "pending events" do |event_params, default_event_type|
+      let(:event_type) { event_params }
+
+      context "when there are pending #{event_params || default_event_type} events" do
         before do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
-
-          get internal_events_path, headers: generate_auth_headers(:author)
+          get internal_events_path, headers: generate_auth_headers(:author), params: event_type
         end
-        it "shows pending events" do
+
+        it "shows pending #{event_params || default_event_type} events" do
           assert_response :success
           expect(response.body).not_to include("No pending events")
-          expect(response.body).to include("<h4>Pending event</h4>")
+          expect(response.body).to include("<h4>Pending #{event_type || default_event_type} event</h4>")
           expect(response.body).not_to include("<h4>Open event</h4>")
         end
+      end
+    end
+
+    context "when any user type" do
+      include_examples "no pending events", "provider"
+
+      include_examples "no pending events", "online"
+
+      include_examples "pending events", "provider" do
+        before(:each) do
+          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+            .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+        end
+      end
+
+      include_examples "pending events", "online" do
+        before(:each) do
+          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+            .to receive(:search_teaching_events_grouped_by_type) { online_events_by_type }
+        end
+      end
+
+      context "when no event type params are passed" do
+        default_event_type = "provider".freeze
+
+        include_examples "pending events", nil, default_event_type do
+          before(:each) do
+            allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+              .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+          end
+        end
+
+        include_examples "no pending events", default_event_type
       end
     end
   end
@@ -54,14 +101,14 @@ describe Internal::EventsController do
       context "when the event is pending" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:get_teaching_event).with(event_to_get_readable_id) { pending_event }
+            .to receive(:get_teaching_event).with(event_to_get_readable_id) { pending_provider_event }
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
         it "shows pending events" do
           assert_response :success
           expect(response.body).to include("This is a pending event")
-          expect(response.body).to include("<h1>Pending event</h1>")
+          expect(response.body).to include("<h1>Pending provider event</h1>")
         end
       end
 
@@ -83,7 +130,7 @@ describe Internal::EventsController do
       context "when the event is pending" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:get_teaching_event).with(event_to_get_readable_id) { pending_event }
+            .to receive(:get_teaching_event).with(event_to_get_readable_id) { pending_provider_event }
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
@@ -98,7 +145,7 @@ describe Internal::EventsController do
       context "when the event is pending" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:get_teaching_event).with(event_to_get_readable_id) { pending_event }
+            .to receive(:get_teaching_event).with(event_to_get_readable_id) { pending_provider_event }
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:publisher)
         end
@@ -133,21 +180,21 @@ describe Internal::EventsController do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
           .to receive(:get_teaching_event_buildings) { [] }
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:get_teaching_event).with(event_to_edit_readable_id) { pending_event }
+          .to receive(:get_teaching_event).with(event_to_edit_readable_id) { pending_provider_event }
 
         get edit_internal_event_path(event_to_edit_readable_id), headers: generate_auth_headers(:author)
       end
 
       it "should have an events form with populated fields" do
         assert_response :success
-        expect(response.body).to include("value=\"Pending event\"")
+        expect(response.body).to include("value=\"Pending provider event\"")
       end
     end
   end
 
   describe "#create" do
     context "when any user type" do
-      let(:building_id) { pending_event.building.id }
+      let(:building_id) { pending_provider_event.building.id }
       let(:expected_request_body) do
         build(:event_api,
               id: params[:id],
@@ -177,7 +224,7 @@ describe Internal::EventsController do
         end
         it "should post the event and an existing building" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [pending_event.building] }
+            .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
 
           expected_request_body.building =
             build(:event_building_api, { id: params[:building][:id] })
@@ -199,7 +246,7 @@ describe Internal::EventsController do
         end
         it "should post no building" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [pending_event.building] }
+            .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
 
           expected_request_body.building = nil
 
@@ -227,7 +274,7 @@ describe Internal::EventsController do
         end
         it "should post new building fields with no id" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [pending_event.building] }
+            .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
 
           expected_request_body.building =
             build(:event_building_api, {
@@ -255,7 +302,7 @@ describe Internal::EventsController do
 
   describe "#approve" do
     context "when publisher user type" do
-      let(:event) { pending_event }
+      let(:event) { pending_provider_event }
       let(:expected_request_body) do
         build(:event_api,
               id: event.id,

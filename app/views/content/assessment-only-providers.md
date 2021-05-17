@@ -80,9 +80,9 @@ providers:
     email: admission@beds.ac.uk
   - header: University of Hertfordshire
     link: https://www.herts.ac.uk/apply/schools-of-study/education/initial-teacher-training/assessment-only-route
-    name: Lee Hague (AO Administrator)
-    telephone: 01707 285612
-    email: l.a.hague@herts.ac.uk
+    name: AO Administration Team
+    telephone: 01707 286300
+    email: AOenquiries@herts.ac.uk
   East Midlands:
   - header: Bishop Grosseteste University
     link: https://www.bishopg.ac.uk
@@ -223,9 +223,6 @@ providers:
     name: Neil Dixon
     telephone: 0151 426 6869
     email: neil.dixon@knowsley.gov.uk
-  - header: Merseyside, Cheshire & Greater Manchester Teacher Training Consortium
-    link: https://www.teachertrainingconsortium.info
-    email: admin@teachertrainingconsortium.org.uk
   - header: North Manchester ITT Partnership
     link: https://www.teachnorthmanchester.com/assessment-only
     name: Carrie Carvell
@@ -372,6 +369,9 @@ providers:
     name: Programme Leader
     telephone: 0121 331 4627
     email: assessmentonlyqts@bcu.ac.uk
+  - header: Haybridge Alliance SCITT
+    link: https://www.teachwithhaybridge.co.uk
+    email: tforward@haybridge.worcs.sch.uk
   - header: Keele and North Staffordshire Teacher Education
     link: https://knste-shaw.org.uk/assessment-route
     name: Tricia Locker
@@ -419,7 +419,7 @@ providers:
   Yorkshire and the Humber:
   - header: The Sheffield SCITT
     link: https://www.sheffieldscitt.org.uk/
-    email: kbarna@hallamtsa.org.uk
+    email: admin@sheffieldscitt.org.uk
   - header: Bradford College
     link: https://www.bradfordcollege.ac.uk/courses/course/qualified-teacher-status-qts-assessment-only-programme/
     name: Lee Parsell

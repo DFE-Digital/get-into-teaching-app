@@ -130,7 +130,7 @@ If you do not have a degree, you can do an undergraduate degree which leads to Q
 
 Different types of training have different eligibility criteria, [funding options](/funding-your-training) and qualifications. Lots of courses also allow you to study part-time.
 
-You can also [get support to improve your subject knowledge](/guidance/become-a-teacher-in-england#subject-knowledge-enhancement-courses) to supplement your training.
+You can also [get support to improve your subject knowledge](/improve-your-subject-knowledge) to supplement your training.
 
 Not looking for primary or secondary training? Consider training to teach [early years](/early-years-teaching-training) or [further education](/further-education-teacher-training).
 

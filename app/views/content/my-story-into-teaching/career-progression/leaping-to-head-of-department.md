@@ -15,6 +15,10 @@ build_layout_from_frontmatter: true
 description: |-
   Jon Simmons's route into teaching
 date: "2020-02-01"
+quote:
+  q-jon:
+    text: Now 4 years into my teaching career, I haven't looked back – I was head of year 18 months after qualifying as a teacher, and a year later promoted to head of department.
+    inline: left
 ---
 
 After 6 years of working in the world of recruitment consultancy, I felt it was time for a new career.
@@ -23,7 +27,7 @@ I had 2 degrees: Master's merit in management and a degree in geography, so I wa
 
 However, after some hard thinking, my real passion lay in teaching geography. In addition, it was clear to me that geography is becoming a subject that will rise in importance and be in far more demand over the next decade.
 
-> Now 4 years into my teaching career, I haven't looked back – I was head of year 18 months after qualifying as a teacher, and a year later promoted to head of department.
+$q-jon$
 
 I was working away a lot and spending less and less time with my family. This was another reason I decided to investigate a career in teaching.
 

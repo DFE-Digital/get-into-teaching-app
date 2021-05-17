@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").chomp
 gem "rails", "~> 6.1.3"
 
 # Use Puma as the app server
-gem "puma", "~> 5.2"
+gem "puma", "~> 5.3", ">= 5.3.1"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker"
@@ -54,7 +54,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2"
-gem "view_component"
+gem "view_component", "~> 2.29.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -80,6 +80,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.35"
   gem "factory_bot_rails"
+  gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false
   gem "simplecov"
 end

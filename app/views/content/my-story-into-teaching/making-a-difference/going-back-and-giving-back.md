@@ -15,11 +15,15 @@ build_layout_from_frontmatter: true
 description: |-
   Sandra Macfarlane's route into teaching
 date: "2020-02-01"
+quote:
+  q-sandra:
+    text: I see myself as a teacher that helps students and gives them a love for what they have to do, whether they want to do it or not.
+    inline: left
 ---
 
 For me, the teachers who stick in my mind are the ones that gave me their time and effort, and really prepared me for my future. I chose to train as a teacher so that I could do the same and give something back.
 
-> I see myself as a teacher that helps students and gives them a love for what they have to do, whether they want to do it or not.
+$q-sandra$
 
 ### Proudest moment
 
