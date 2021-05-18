@@ -187,4 +187,46 @@
       }
     }
   }
+
+  .badge {
+    padding: .2em .4em;
+    display: inline-block;
+    margin: .2em;
+    border-radius: 5px;
+
+    &.pink {
+      color: white;
+      border: 1px solid $pink-dark;
+      font-weight: 900;
+      background: $pink-dark;
+    }
+
+    &.cyan {
+      color: white;
+      border: 1px solid darkcyan;
+      font-weight: 900;
+      background: darkcyan;
+    }
+
+    &.yellow {
+      color: black;
+      border: 1px solid $yellow;
+      font-weight: 900;
+      background: $yellow;
+    }
+
+    &.dark-blue {
+      color: white;
+      border: 1px solid $blue-dark;
+      font-weight: 900;
+      background: $blue-dark;
+    }
+
+    &.purple {
+      color: white;
+      border: 1px solid $purple;
+      font-weight: 900;
+      background: $purple;
+    }
+  }
 }

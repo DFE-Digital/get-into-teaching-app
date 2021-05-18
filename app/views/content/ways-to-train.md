@@ -50,7 +50,7 @@ Not looking to teach in primary or secondary settings? Consider [early years](/e
 
 ## How to get qualified teacher status
 
-### If you have a degree
+#### If you have a degree
 
 You can:
 
@@ -59,19 +59,25 @@ You can:
 
 You may even be able to [earn a salary](#earn-a-salary).
 
-### If you do not have a degree
+#### If you do not have a degree
 
 You can do [undergraduate teacher training](#undergraduate-teacher-training).
 
-### If you already have teaching experience
+#### If you already have teaching experience
 
 You may be able to get qualified teacher status within 12 weeks [if you have teaching experience](#if-you-already-have-teaching-experience-1).
 
-### Specialised training programmes
+#### Specialised training programmes
 
 [If you're changing careers](#if-youre-changing-career) or [if you have a doctorate](#if-you-have-a-doctorate).
 
-### Go back to university as a postgraduate student
+<div>
+  <h3>Go back to university as a postgraduate student</h3>
+  <span class="badge pink">£9,250</span>
+  <span class="badge cyan">Funding available</span>
+  <span class="badge dark-blue">PGCE or PGDE</span>
+  <span class="badge purple">One year</span>
+</div>
 
 With [university-led training](#compare-popular-types-of-postgraduate-primary-and-secondary-teacher-training) you spend about a third of your time in academic learning and the rest in school placements.
 
@@ -79,7 +85,13 @@ You'll get a PGCE or PGDE in addition to QTS by the end of your training.
 
 Fees are usually around £9,250 but you can get [funding that you do not have to pay back](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#bursaries-and-scholarships) for certain subjects. You can also apply for a [student loan](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#tuition-fee-and-maintenance-loans).
 
-### Train as you teach at a school or group of schools
+<div>
+  <h3>Train as you teach at a school or group of schools</h3>
+  <span class="badge pink">£9,250</span>
+  <span class="badge cyan">Funding available</span>
+  <span class="badge dark-blue">PGCE or PGDE</span>
+  <span class="badge purple">One year</span>
+</div>
 
 On a '[school direct (fee-funded)](#compare-popular-types-of-postgraduate-primary-and-secondary-teacher-training)' programme you spend less time in academic learning than you would on a university course.
 
@@ -87,7 +99,13 @@ Many courses give you a PGCE or PGDE in addition to QTS.
 
 Although you pay course fees of around £9,250 you can get [funding that you do not have to pay back](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#bursaries-and-scholarships) for certain subjects. You can also apply for a [student loan](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#tuition-fee-and-maintenance-loans).  
 
-### Earn a salary
+
+<div>
+  <h3>Earn a salary</h3>
+  <span class="badge pink">No fees</span>
+  <span class="badge dark-blue">PGCE or PGDE</span>
+  <span class="badge purple">1 to 2 years</span>
+</div>
 
 Some training programmes like '[school direct (salaried)](#compare-popular-types-of-postgraduate-primary-and-secondary-teacher-training)' and '[<span class="underline">postgraduate teaching apprenticeships</span>](#compare-popular-types-of-postgraduate-primary-and-secondary-teacher-training)' offer a salary.
 
@@ -99,66 +117,17 @@ Many courses give you a PGCE or PGDE in addition to QTS.
 also offers a salary. It's a 2-year programme leading to a PGDE and
 qualified teacher status.
 
-### Compare popular types of postgraduate primary and secondary teacher training
-
-<table>
-  <thead>
-    <tr class="header">
-      <th></th>
-      <th><strong>Tuition fee</strong></th>
-      <th><strong>Salary</strong></th>
-      <th><strong>Duration</strong></th>
-      <th><strong>Qualification</strong></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="odd">
-      <td><strong>University-led training</strong></td>
-      <td>up to £9,250</td>
-      <td>no, but you can <a href="/funding-your-training"><span class="underline">get funding</span></a></td>
-      <td>typically 1 academic year</td>
-      <td><p>QTS</p>
-        <p>PGCE or PGDE</p></td>
-    </tr>
-    <tr class="even">
-      <td><strong>School direct (fee funded)</strong></td>
-      <td>up to £9,250</td>
-      <td>no, but you can <a href="/funding-your-training"><span class="underline">get funding</span></a></td>
-      <td>typically 1 academic year</td>
-      <td><p>QTS</p>
-        <p>sometimes a PGCE or PGDE</p></td>
-    </tr>
-    <tr class="odd">
-      <td><strong>School direct (salaried)</strong></td>
-      <td>no fees</td>
-      <td>yes</td>
-      <td>typically 1 academic year</td>
-      <td><p>QTS</p>
-        <p>sometimes a PGCE or PGDE</p></td>
-    </tr>
-    <tr class="even">
-      <td><strong>Postgraduate teaching apprenticeship</strong></td>
-      <td>no fees</td>
-      <td>yes</td>
-      <td>typically 1 academic year</td>
-      <td>QTS</td>
-    </tr>
-    <tr class="odd">
-      <td><strong>Teach First</strong></td>
-      <td>no fees</td>
-      <td>yes</td>
-      <td>2 years</td>
-      <td><p>QTS</p>
-        <p>PGDE</p></td>
-    </tr>
-  </tbody>
-</table>
-
 <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses" class="button">Find a postgraduate course</a>
   
 Includes all postgraduate types except [<span class="underline">Teach First</span>](https://www.teachfirst.org.uk/).
 
-### Undergraduate teacher training
+<div>
+  <h3>Undergraduate teacher training</h3>
+  <span class="badge pink">£9,250</span>
+  <span class="badge cyan">Funding available</span>
+  <span class="badge dark-blue">PGCE or PGDE</span>
+  <span class="badge purple">Up to 4 years</span>
+</div>
 
 You can get qualified teacher status as part of an undergraduate degree.
 
