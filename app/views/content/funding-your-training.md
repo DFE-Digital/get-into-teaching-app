@@ -13,9 +13,9 @@
   jump_links:
     Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"
     Bursaries and scholarships: "#bursaries-and-scholarships"
-    Extra financial support for parents and carers: "#extra-financial-support-for-parents-and-carers"
-    Extra financial support for students with disabilities: "#extra-financial-support-for-students-with-disabilities"
-    Applying for funding if you come from outside England: "#applying-for-funding-if-you-come-from-outside-england"
+    Extra financial support for parents and carers: "#if-youre-a-parent-or-carer"
+    Extra financial support for students with disabilities: "#if-youre-disabled"
+    Applying for funding if you come from outside England: "#if-you-come-from-outside-england"
   calls_to_action:
     chat:
       name: chat_online
