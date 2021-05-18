@@ -13,9 +13,9 @@
   jump_links:
     Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"
     Bursaries and scholarships: "#bursaries-and-scholarships"
-    Extra financial support for parents and carers: "#if-youre-a-parent-or-carer"
-    Extra financial support for students with disabilities: "#if-youre-disabled"
-    Applying for funding if you come from outside England: "#if-you-come-from-outside-england"
+    If you're a parent or carer: "#if-youre-a-parent-or-carer"
+    If you're disabled: "#if-youre-disabled"
+    If you come from outside England: "#if-you-come-from-outside-england"
   calls_to_action:
     chat:
       name: chat_online
@@ -144,7 +144,7 @@ You may be able to [get support if you’re a student and you’re disabled, hav
 
 [If you do paid training you may also be eligible for support](https://www.gov.uk/access-to-work).
 
-[Learn more about training to teach if you're disabled](/get-support-training-to-teach-if-you-are-disabled). 
+[Learn more about training to teach if you're disabled](/get-support-training-to-teach-if-you-are-disabled).
 
 
 ## If you come from outside England
@@ -158,11 +158,6 @@ If you live in [Wales](https://www.studentfinancewales.co.uk/), [Scotland](https
 
 Contact the education authority if you live in the Channel Islands ([Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx) and [Guernsey](https://www.gov.gg/article/152744/Policies)) or on the [Isle of Man](https://www.gov.im/student-grants).
 
-If you are an applicant from outside the UK, read our
-[guidance on financial help for international applicants](/guidance/financial-support-for-international-applicants)
-to check:
-
-* the types of financial help available
-* whether you meet the eligibility requirements
+[Find out more about financial help if you're an applicant from outside the UK](/guidance/financial-support-for-international-applicants) or [learn about training to teach as an international candidate](/international-candidates).
 
 $international-candidates$
