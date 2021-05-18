@@ -1,0 +1,9 @@
+<div id="event_survey" data-controller="page-helpful">
+  <h3><%= question %></h3>
+  <div class="govuk-hint" data-page-helpful-target="text"><%= hint %></div>
+  <p>
+    <% answers.each do |answer| %>
+      <a href="javascript:void(0)" data-page-helpful-target="link" data-action="page-helpful#answer" role="button" class="survey-button"><%= answer %></a>
+    <% end %>
+  </p>
+</div>
