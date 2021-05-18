@@ -46,30 +46,20 @@ keywords:
 
 You need 'qualified teacher status' (QTS) to work in the majority of schools in England including state maintained primary, secondary and special schools.
 
+Find out how to get qualified teacher status if you:
+
+* [have a degree](#if-you-have-a-degree)
+* [do not have a degree](#if-you-do-not-have-a-degree)
+* [already have teaching experience](#if-you-already-have-teaching-experience)
+
+You can also find specialised training programmes if you're:
+
+* [changing careers](#if-youre-changing-career)
+* [have a doctorate](#if-you-have-a-doctorate)
+
 Not looking to teach in primary or secondary settings? Consider [early years](/early-years-teaching-training) or [further education](/further-education-teacher-training).
 
-## How to get qualified teacher status
-
-#### If you have a degree
-
-You can:
-
-* [go back to university as a postgraduate student](#go-back-to-university-as-a-postgraduate-student)
-* [train as you teach at a school or group of schools](#_ks4us698kqkh)
-
-You may even be able to [earn a salary](#earn-a-salary).
-
-#### If you do not have a degree
-
-You can do [undergraduate teacher training](#undergraduate-teacher-training).
-
-#### If you already have teaching experience
-
-You may be able to get qualified teacher status within 12 weeks [if you have teaching experience](#if-you-already-have-teaching-experience-1).
-
-#### Specialised training programmes
-
-[If you're changing careers](#if-youre-changing-career) or [if you have a doctorate](#if-you-have-a-doctorate).
+## If you have a degree
 
 <div>
   <h3>Go back to university as a postgraduate student</h3>
@@ -122,6 +112,8 @@ Many courses give you a PGCE or PGDE in addition to QTS.
 
 <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses" class="button">Find a postgraduate course</a>
 
+## If you do not have a degree
+
 <div>
   <h3>Undergraduate teacher training</h3>
   <span class="badge pink">£9,250</span>
@@ -142,20 +134,20 @@ Qualifications vary depending on the course. For example, you could get QTS with
 
 <a href="https://digital.ucas.com/search" class="button">Find an undergraduate course</a>
 
-### If already have teaching experience
+## If you already have teaching experience
 
 You may be able to get qualified teacher status through a 12-week 'assessment only' programme if you also have a degree.
 
 [Apply directly to assessment only teacher training providers](/assessment-only-providers) and ask them about entry criteria.
 
-### If you're changing career
+## If you're changing career
 
 A career change into teaching allows you to use your experience and
 passion to inspire young people.
 
 [Now Teach](https://nowteach.org.uk/) and [Transition to Teach](https://www.transitiontoteach.co.uk/) can support you with your career change.
 
-### If you have a doctorate
+## If you have a doctorate
 
 If you have or are about to get a PHD you could consider the [researchers in schools](https://thebrilliantclub.org/researchers-in-schools/) programme.
 
