@@ -13,8 +13,8 @@ right_column:
   ctas:
     - title: Get support from a teacher training adviser
       text: |
-       If you’re not sure which would be the best way to train for you, you can get personalised support from a teacher training adviser.
-      link_text: "Get a Teaching Training Adviser"
+       Unsure about the best route for you? A teacher training adviser can help.
+      link_text: "Get a teaching training adviser"
       link_target: "/tta-service"
       icon: "icon-person"
       hide_on_mobile: Yes
@@ -100,7 +100,7 @@ calls_to_action:
         Funding available: "Yes"
         Length of training: "1 to 4 years"
         Available for: "Primary, secondary"
-        Qualification: "Qualifications vary — for example, BA (Hons) with QTS, or BSc (Hons) with QTS"
+        Qualification: "Qualifications vary. For example: Bachelor of Arts (BA) with QTS, Bachelor of Education (BEd) with QTS, or Bachelor of Science (BSc) with QTS."
       - "Undergraduate teacher training"
   teach-first:
     name: feature_table
@@ -120,7 +120,7 @@ calls_to_action:
       - "Assessment only"
 ---
 
-You need to get 'qualified teacher status' (QTS) to teach in the majority of schools in England. This includes primary, secondary and special ‘maintained schools’ - part of the state funded schools system. 
+You need to get 'qualified teacher status' (QTS) to teach in the majority of schools in England. This includes primary, secondary and special ‘maintained schools’ - part of the state funded schools system.
 
 You can get QTS in different ways.
 
@@ -156,7 +156,7 @@ Some providers offer a Postgraduate Diploma in Education (PGDE) instead of a PGC
 
 $school-direct-fee-funded$
 
-You’ll learn on the job while you work towards your Qualified Teacher Status (QTS).
+You’ll learn as you teach while you work towards qualified teacher status (QTS).
 
 You’ll be based in a school but you will not be employed by them.
 
@@ -172,7 +172,7 @@ You can also [get funding](/funding-your-training).
 
 $school-direct-salaried$
 
-You’ll be employed by a school as an unqualified teacher while you work towards your Qualified Teacher Status (QTS).
+You’ll be employed by a school as an unqualified teacher while you work towards qualified teacher status (QTS).
 
 You’ll earn a salary and do not need to pay any tuition fees.
 
@@ -196,11 +196,11 @@ You’ll split your time between school and university study, with at least 20% 
 
 $teach-first$
 
-The Teach First Leadership Development Programme is a two-year salaried programme.
+The Teach First Leadership Development Programme is a 2-year salaried programme.
 
 It combines leadership development with teacher training, and focuses on training exceptional teachers to teach in challenging schools.
 
-You’ll learn on the job while you work towards Qualified Teacher Status (QTS) and a Postgraduate Diploma in Education (PGDE).
+You’ll learn on the job while you work towards qualified teacher status (QTS) and a Postgraduate Diploma in Education (PGDE).
 
 A PGDE contains up to 120 credits at master’s degree level.
 
@@ -210,12 +210,12 @@ A PGDE contains up to 120 credits at master’s degree level.
 
 $undergraduate$
 
- You can get Qualified Teacher Status (QTS) as part of an undergraduate degree course.
- 
+ You can get qualified teacher status (QTS) as part of an undergraduate degree course.
+
  This could be right for you if you do not have a degree yet.
- 
+
  You can also [get funding](/funding-your-training).
- 
+
  <p class="call-to-action__action">
    <a href="https://digital.ucas.com/search">Find an undergraduate <span>course</span></a>
  </p>
