@@ -194,4 +194,12 @@ keywords:
   - TI
   - T.I.
   - summer internship
+  - T.I
+  - internships
+  - teaching intern
+  - intern
+  - interns
+  - teaching internship programme
+  - T.I. programme
+  - TI programme
 ---

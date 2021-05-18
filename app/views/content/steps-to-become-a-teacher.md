@@ -48,7 +48,6 @@
     - References
     - Referee
     - Referees
-    - Transcript
     - Interview
     - How to apply
     - How to
@@ -58,18 +57,6 @@
     - Advisor
     - Teacher Training Advisor
     - get an adviser
-    - TI
-    - T.I
-    - T.I.
-    - internship
-    - internships
-    - teaching intern
-    - teaching internship
-    - intern
-    - interns
-    - teaching internship programme
-    - T.I. programme
-    - TI programme
-    - oak academy
-    - oak national academy
+
+
 ---
