@@ -89,6 +89,11 @@ a {
   @include button($bg: $blue-dark);
   margin-bottom: 0.5rem;
 
+  &--smaller {
+    @include font-size("xsmall");
+    padding: 8px $indent-amount;
+  }
+
   @include mq($from: tablet) {
     display: inline-block;
   }
