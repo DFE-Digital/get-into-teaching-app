@@ -19,6 +19,18 @@
     h2 {
       @include font-size("medium");
     }
+
+    details {
+      margin: 2em 0;
+
+      summary {
+        margin: 1em 0;
+      }
+
+      * {
+        margin-left: 0.5em;
+      }
+    }
   }
 
   .registration__event {

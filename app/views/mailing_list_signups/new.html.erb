@@ -14,29 +14,32 @@
 
     <%= f.govuk_email_field(:email) %>
 
-    <%= f.govuk_collection_select(
-      :consideration_journey_stage_id,
-      f.object.consideration_journey_stages,
-      :id,
-      :value,
-    ) %>
-
-    <%= f.govuk_collection_select(
-      :degree_status_id,
-      f.object.degree_status_options,
-      :id,
-      :value,
-    ) %>
-
-    <%= f.govuk_collection_select(
-      :preferred_teaching_subject_id,
-      f.object.teaching_subjects,
-      :id,
-      :value,
-      options: { prompt: "Please select" },
-    ) %>
-
     <%= f.govuk_text_field(:address_postcode, width: 10) %>
+
+    <details>
+      <summary>Personalise your emails</summary>
+      <%= f.govuk_collection_select(
+        :consideration_journey_stage_id,
+        f.object.consideration_journey_stages,
+        :id,
+        :value,
+      ) %>
+
+      <%= f.govuk_collection_select(
+        :degree_status_id,
+        f.object.degree_status_options,
+        :id,
+        :value,
+      ) %>
+
+      <%= f.govuk_collection_select(
+        :preferred_teaching_subject_id,
+        f.object.teaching_subjects,
+        :id,
+        :value,
+        options: { prompt: "Please select" },
+      ) %>
+    </details>
 
     <%= f.govuk_check_boxes_fieldset(:accept_privacy_policy, multiple: false, legend: { text: "Terms and conditions" }) do %>
       <%= f.govuk_check_box :accept_privacy_policy, 1, 0, multiple: false, link_errors: true %>
