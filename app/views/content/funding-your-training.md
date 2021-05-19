@@ -74,9 +74,13 @@
     - Troops to Teachers
     - Army
     - Air Force
+    - RAF
     - Navy
+    - Military
+    - Former
     - Parents
     - Parents’ Learning Allowance
+    - PLA
     - Childcare
     - Childcare Grant
     - Adult Dependants’ Grant
