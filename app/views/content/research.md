@@ -8,6 +8,15 @@ keywords:
   - Research
 ---
 
+## My favourite subject – exploring people’s favourite subjects and the lasting impact of teachers
+
+Kindred Agency commissioned research company Censuswide to carry out a survey on behalf of the Get Into Teaching campaign to explore people’s favourite subjects from their time at school, and the impact of teachers well beyond the classroom years. The purpose of the survey was aimed at understanding the extent to which people feel that their teachers’ passion for their subject helped spark an interest in their favourite subjects, and whether people’s current job or career is related to one of their favourite subjects from their time at school. 
+
+<a href="/assets/documents/my-favourite-subject.pdf">
+    Read the summary of findings (PDF 201KB)
+    <i class="fas fa-file-pdf"></i>
+</a>
+
 ## Decade dilemmas – exploring people’s career aspirations in the wake of 2020
 
 Kindred Agency commissioned research company Censuswide to carry out a survey on behalf of the Get Into Teaching campaign to explore people’s job or career aspirations at the start of the year and how these have changed as a result of the Covid-19 pandemic in 2020.
