@@ -12,7 +12,7 @@ keywords:
 
 Kindred Agency commissioned research company Censuswide to carry out a survey on behalf of the Get Into Teaching campaign to explore people’s favourite subjects from their time at school, and the impact of teachers well beyond the classroom years. The purpose of the survey was aimed at understanding the extent to which people feel that their teachers’ passion for their subject helped spark an interest in their favourite subjects, and whether people’s current job or career is related to one of their favourite subjects from their time at school. 
 
-<a href="#">
+<a href="/assets/documents/my-favourite-subject.pdf">
     Read the summary of findings (PDF 754KB)
     <i class="fas fa-file-pdf"></i>
 </a>
