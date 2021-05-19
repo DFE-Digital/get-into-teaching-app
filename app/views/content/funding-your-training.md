@@ -118,8 +118,8 @@ For a scholarship, each professional scholarship body sets its own criteria. The
 
 * the [Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
 * [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
-* [Mathematics Teacher Training Scholarship](https://ima.org.uk/support/mathematics-teacher-training-scholarship/) (maths)
-* [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
+* the [Institute of Mathematics and its Applications](https://ima.org.uk/support/mathematics-teacher-training-scholarship/) (maths)
+* the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
 
 ### Check which subjects have bursaries and scholarships
 
@@ -160,7 +160,7 @@ $chat$
  If you have children or other caring responsibilities you may be able to get extra financial support through the following schemes:
 
 * [Childcare Grant](https://www.gov.uk/childcare-grant)
-* [Parents Learning Allowance](https://www.gov.uk/parents-learning-allowance)
+* [Parents' Learning Allowance](https://www.gov.uk/parents-learning-allowance)
 * [Adult Dependants’ Grant](https://www.gov.uk/adult-dependants-grant)
 
 
