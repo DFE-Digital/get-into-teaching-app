@@ -61,13 +61,7 @@ Not looking to teach in primary or secondary settings? Consider [early years](/e
 
 ## If you have a degree
 
-<div>
-  <h3>Go back to university as a postgraduate student</h3>
-  <span class="badge pink">£9,250</span>
-  <span class="badge cyan">Funding available</span>
-  <span class="badge dark-blue">PGCE or PGDE</span>
-  <span class="badge purple">One year</span>
-</div>
+### Go back to university as a postgraduate student
 
 With university-led training you spend about a third of your time in academic learning and the rest in school placements.
 
@@ -78,13 +72,17 @@ Fees are usually around £9,250 but you can:
 * get [funding that you do not have to pay back](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#bursaries-and-scholarships) for certain subjects
 * apply for a [student loan](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#tuition-fee-and-maintenance-loans)
 
-<div>
-  <h3>Train as you teach at a school or group of schools</h3>
-  <span class="badge pink">£9,250</span>
-  <span class="badge cyan">Funding available</span>
-  <span class="badge dark-blue">PGCE or PGDE</span>
-  <span class="badge purple">One year</span>
+<div class="training-attributes">
+  <h4>University-led training</h4>
+  <div>
+    <span class="badge pink">Costs £9,250</span>
+    <span class="badge cyan">Funding available</span>
+    <span class="badge dark-blue">PGCE or PGDE</span>
+    <span class="badge purple">One year</span>
+  </div>
 </div>
+
+### Train as you teach at a school or group of schools
 
 On a 'school direct (fee-funded)' programme you spend less time in academic learning than you would on a university course.
 
@@ -95,12 +93,17 @@ Although you pay course fees of around £9,250 you can:
 * get [funding that you do not have to pay back](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#bursaries-and-scholarships) for certain subjects
 * apply for a [student loan](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#tuition-fee-and-maintenance-loans)  
 
-<div>
-  <h3>Earn a salary</h3>
-  <span class="badge pink">No fees</span>
-  <span class="badge dark-blue">PGCE or PGDE</span>
-  <span class="badge purple">1 to 2 years</span>
+<div class="training-attributes">
+  <h4>School direct<br/>(fee-funded)</h4>
+  <div>
+    <span class="badge pink">£9,250</span>
+    <span class="badge cyan">Funding available</span>
+    <span class="badge dark-blue">PGCE or PGDE</span>
+    <span class="badge purple">One year</span>
+  </div>
 </div>
+
+### Earn a salary
 
 Some training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary.
 
@@ -110,17 +113,36 @@ Many courses give you a PGCE or PGDE in addition to QTS.
 
 [Teach First](https://www.teachfirst.org.uk/) also offers a salary. It's a 2-year programme leading to a PGDE and qualified teacher status.
 
+<dl>
+  <div class="training-option">
+    <dt>School direct</dt>
+    <dd>
+      <span class="badge purple">One year</span>
+      <span class="badge dark-blue">PGCE or PGDE</span>
+    </dd>
+  </div>
+
+  <div class="training-option">
+    <dt>Postgraduate teaching apprenticeship</dt>
+    <dd>
+      <span class="badge purple">One year</span>
+    </dd>
+  </div>
+
+  <div class="training-option">
+    <dt>Teach First</dt>
+    <dd>
+      <span class="badge purple">Two years</span>
+      <span class="badge dark-blue">PGDE</span>
+    </dd>
+  </div>
+</dl>
+
 <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses" class="button">Find a postgraduate course</a>
 
 ## If you do not have a degree
 
-<div>
-  <h3>Undergraduate teacher training</h3>
-  <span class="badge pink">£9,250</span>
-  <span class="badge cyan">Funding available</span>
-  <span class="badge dark-blue">Qualifications vary</span>
-  <span class="badge purple">Up to 4 years</span>
-</div>
+### Do an undergraduate teacher training degree
 
 You can get qualified teacher status as part of an undergraduate degree.
 
@@ -131,6 +153,16 @@ Qualifications vary depending on the course. For example, you could get QTS with
 * Bachelor of Arts (BA)
 * Bachelor of Education (BEd)
 * Bachelor of Science (BSc)
+
+<div class="training-attributes">
+  <h4>Undergraduate teacher training</h4>
+  <div>
+    <span class="badge pink">£9,250</span>
+    <span class="badge cyan">Funding available</span>
+    <span class="badge dark-blue">Qualifications vary</span>
+    <span class="badge purple">Up to 4 years</span>
+  </div>
+</div>
 
 <a href="https://digital.ucas.com/search" class="button">Find an undergraduate course</a>
 
