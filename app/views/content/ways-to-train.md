@@ -74,11 +74,11 @@ Fees are usually around £9,250 but you can:
 
 <div class="training-attributes">
   <h4>University-led training</h4>
-  <div>
+  <div class="badges">
     <span class="badge pink">Costs £9,250</span>
     <span class="badge cyan">Funding available</span>
+    <span class="badge purple">Takes 1 year</span>
     <span class="badge dark-blue">PGCE or PGDE</span>
-    <span class="badge purple">One year</span>
   </div>
 </div>
 
@@ -95,11 +95,11 @@ Although you pay course fees of around £9,250 you can:
 
 <div class="training-attributes">
   <h4>School direct<br/>(fee-funded)</h4>
-  <div>
-    <span class="badge pink">£9,250</span>
+  <div class="badges">
+    <span class="badge pink">Costs £9,250</span>
     <span class="badge cyan">Funding available</span>
-    <span class="badge dark-blue">PGCE or PGDE</span>
-    <span class="badge purple">One year</span>
+    <span class="badge purple">Takes 1 year</span>
+    <span class="badge dark-blue">Often a PGCE or PGDE</span>
   </div>
 </div>
 
@@ -115,24 +115,24 @@ Many courses give you a PGCE or PGDE in addition to QTS.
 
 <dl>
   <div class="training-option">
-    <dt>School direct</dt>
-    <dd>
-      <span class="badge purple">One year</span>
-      <span class="badge dark-blue">PGCE or PGDE</span>
+    <dt>School direct<br/>(salaried)</dt>
+    <dd class="badges">
+      <span class="badge purple">Takes 1 year</span>
+      <span class="badge dark-blue">Often a PGCE or PGDE</span>
     </dd>
   </div>
 
   <div class="training-option">
     <dt>Postgraduate teaching apprenticeship</dt>
-    <dd>
-      <span class="badge purple">One year</span>
+    <dd class="badges">
+      <span class="badge purple">Takes 1 year</span>
     </dd>
   </div>
 
   <div class="training-option">
     <dt>Teach First</dt>
-    <dd>
-      <span class="badge purple">Two years</span>
+    <dd class="badges">
+      <span class="badge purple">Takes 2 years</span>
       <span class="badge dark-blue">PGDE</span>
     </dd>
   </div>
@@ -156,11 +156,11 @@ Qualifications vary depending on the course. For example, you could get QTS with
 
 <div class="training-attributes">
   <h4>Undergraduate teacher training</h4>
-  <div>
-    <span class="badge pink">£9,250</span>
+  <div class="badges">
+    <span class="badge pink">Costs £9,250</span>
     <span class="badge cyan">Funding available</span>
-    <span class="badge dark-blue">Qualifications vary</span>
     <span class="badge purple">Up to 4 years</span>
+    <span class="badge dark-blue">Qualifications vary</span>
   </div>
 </div>
 

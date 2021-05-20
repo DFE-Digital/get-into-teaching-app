@@ -201,11 +201,18 @@
     }
   }
 
+  .badges {
+    display: flex;
+    gap: .4em;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .badge {
     padding: .2em .4em;
     display: inline-block;
-    margin: .2em;
     border-radius: 5px;
+    @include font-size("xsmall");
 
     &.pink {
       color: white;
@@ -247,9 +254,9 @@
     margin-bottom: 3em;
 
     .training-option {
-      align-items: center;
+      align-items: baseline;
       display: flex;
-      margin: 1.5em 0;
+      margin: 2em 0;
 
       @include mq($until: mobile) {
         flex-direction: column;
@@ -268,11 +275,6 @@
 
       dd {
         display: flex;
-        gap: .2em;
-
-        .badge {
-          margin: 0;
-        }
       }
     }
   }
