@@ -42,8 +42,8 @@
       name: simple
       arguments:
         icon: "icon-arrow"
-        text: "If you come from outside England, you can get advice about training to be a teacher and find out more about coming to train in England."
-        link_text: "Find out more"
+        text: "If you come from outside England."
+        link_text: "Train to teach as an international candidate"
         link_target: "/international-candidates"
 
   keywords:
@@ -184,6 +184,6 @@ If you live in [Wales](https://www.studentfinancewales.co.uk/), [Scotland](https
 
 Contact the education authority if you live in the Channel Islands ([Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx) and [Guernsey](https://www.gov.gg/article/152744/Policies)) or on the [Isle of Man](https://www.gov.im/student-grants).
 
-[Find out more about financial help if you're an applicant from outside the UK](/guidance/financial-support-for-international-applicants) or [learn about training to teach as an international candidate](/international-candidates).
+[Find out more about financial help if you're an applicant from outside the UK](/guidance/financial-support-for-international-applicants).
 
 $international-candidates$
