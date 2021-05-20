@@ -220,9 +220,9 @@ providers:
     telephone: '01942 510712 ext 500'
     email: g.thomson@kingsbridgeeip.co.uk
   - header: Mersey Boroughs ITT Partnership
-    name: Neil Dixon
-    telephone: 0151 426 6869
-    email: neil.dixon@knowsley.gov.uk
+    name: Gill Makin
+    telephone: 0151 443 2663
+    email: merseyboroughsitt@knowsley.gov.uk
   - header: North Manchester ITT Partnership
     link: https://www.teachnorthmanchester.com/assessment-only
     name: Carrie Carvell
