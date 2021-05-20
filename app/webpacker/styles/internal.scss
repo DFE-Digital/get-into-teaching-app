@@ -3,93 +3,95 @@ $govuk-include-default-font-face: false;
 @import "~govuk-frontend/govuk/all";
 @import "~trix";
 
-.event-description {
-  resize: vertical;
-  overflow: auto;
-  height: 350px;
-}
+.internal-container {
+  .event-description {
+    resize: vertical;
+    overflow: auto;
+    height: 350px;
+  }
 
-.notification-button {
-  margin: 0 30px 30px 0;
-}
+  .notification-button {
+    margin: 0 30px 30px 0;
+  }
 
-.pending-title {
-  padding-top: 30px;
-}
+  .pending-title {
+    padding-top: 30px;
+  }
 
-.pending-no-results {
-  margin: 3em;
-}
+  .pending-no-results {
+    margin: 3em;
+  }
 
-.no-left-margin {
-  margin-left: 0;
-}
+  .no-left-margin {
+    margin-left: 0;
+  }
 
-.form-button {
-  margin-bottom: 30px;
-}
+  .form-button {
+    margin-bottom: 30px;
+  }
 
-.hidden {
-  display: none;
-}
+  .hidden {
+    display: none;
+  }
 
-.confirmation-panel {
-  margin: 0;
-}
+  .confirmation-panel {
+    margin: 0;
+  }
 
-// Tab navigation
+  // Tab navigation
 
-$grey-very-light: #f3f2f1;
-$br: 7.5px;
+  $grey-very-light: #f3f2f1;
+  $br: 7.5px;
 
-.listing {
-  background-color: $grey-very-light;
-  max-width: none;
+  .listing {
+    background-color: $grey-very-light;
+    max-width: none;
 
-  .container {
-    background-color: $white;
+    .container {
+      background-color: $white;
 
-    .tab-bar {
-      padding: 20px 0 0 50px;
-      background-color: $grey-very-light;
-      margin: 0;
-      display: flex;
-      align-items: center;
+      .tab-bar {
+        padding: 20px 0 0 50px;
+        background-color: $grey-very-light;
+        margin: 0;
+        display: flex;
+        align-items: center;
 
-      .tab {
-        padding: 15px 30px;
-        height: 100%;
-        list-style: none;
-        background-color: $green;
-        color: $white;
-        border-radius: $br $br 0 0;
+        .tab {
+          padding: 15px 30px;
+          height: 100%;
+          list-style: none;
+          background-color: $green;
+          color: $white;
+          border-radius: $br $br 0 0;
 
-        &:not(:first-child) {
-          margin-left: 20px;
+          &:not(:first-child) {
+            margin-left: 20px;
+          }
+
+          &:focus {
+            background-color: $yellow;
+            box-shadow: 0 -2px $yellow, 0 4px #1d1d1b;
+          }
+
+          &:hover:not(:focus):not(.active-tab) {
+            background: darken($green, 5%);
+          }
         }
 
-        &:focus {
-          background-color: $yellow;
-          box-shadow: 0 -2px $yellow, 0 4px #1d1d1b;
+        .active-tab {
+          background-color: $white;
+          color: $black;
         }
 
-        &:hover:not(:focus):not(.active-tab) {
-          background: darken($green, 5%);
+        .tab-link {
+          text-decoration: none;
         }
       }
 
-      .active-tab {
-        background-color: $white;
-        color: $black;
+      .event-pagination {
+        min-height: 50px;
       }
-
-      .tab-link {
-        text-decoration: none;
-      }
-    }
-
-    .event-pagination {
-      min-height: 50px;
     }
   }
 }
