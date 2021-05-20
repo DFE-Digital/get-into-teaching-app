@@ -46,7 +46,7 @@ keywords:
 
 You need 'qualified teacher status' (QTS) to work in the majority of schools in England including state maintained primary, secondary and special schools.
 
-Find out how to get qualified teacher status if you:
+Find out how to get QTS if you:
 
 * [have a degree](#if-you-have-a-degree)
 * [do not have a degree](#if-you-do-not-have-a-degree)
@@ -54,10 +54,10 @@ Find out how to get qualified teacher status if you:
 
 You can also find specialised training programmes if you're:
 
-* [changing careers](#if-youre-changing-career)
+* [changing career](#if-youre-changing-career)
 * [have a doctorate](#if-you-have-a-doctorate)
 
-Not looking to teach in primary or secondary settings? Consider [early years](/early-years-teaching-training) or [further education](/further-education-teacher-training).
+Not looking to teach in primary or secondary settings? Consider teaching [early years](/early-years-teaching-training) or [further education](/further-education-teacher-training).
 
 ## If you have a degree
 
@@ -65,7 +65,9 @@ Not looking to teach in primary or secondary settings? Consider [early years](/e
 
 With university-led training you spend about a third of your time in academic learning and the rest in school placements.
 
-You'll get a PGCE or PGDE in addition to QTS by the end of your training.
+In addition to QTS you'll get a PGCE or PGDE (an academic qualification).
+
+Courses typically take one year but you may be able to study part-time.
 
 Fees are usually around £9,250 but you can:
 
@@ -84,11 +86,13 @@ Fees are usually around £9,250 but you can:
 
 ### Train as you teach at a school or group of schools
 
-On a 'school direct (fee-funded)' programme you spend less time in academic learning than you would on a university course.
+On a 'school direct (fee-funded)' programme you spend less time learning about the theory of teaching than you would in [university-led training](/ways-to-train#go-back-to-university-as-a-postgraduate-student).
 
-Many courses give you a PGCE or PGDE in addition to QTS.
+Despite the focus on training as you teach, many courses give you a PGCE or PGDE (an academic qualification) in addition to QTS.
 
-Although you pay course fees of around £9,250 you can:
+Courses typically take one year but you may be able to study part-time.
+
+Fees are usually around £9,250 but you can:
 
 * get [funding that you do not have to pay back](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#bursaries-and-scholarships) for certain subjects
 * apply for a [student loan](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#tuition-fee-and-maintenance-loans)  
@@ -107,11 +111,13 @@ Although you pay course fees of around £9,250 you can:
 
 Some training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary.
 
-You spend less time in academic learning than you would on a university-led course.
+You spend less time learning about the theory of teaching than you would in [university-led training](/ways-to-train#go-back-to-university-as-a-postgraduate-student).
 
-Many courses give you a PGCE or PGDE in addition to QTS.
+Despite the focus on training as you teach, many 'school direct (salaried)' courses give you a PGCE or PGDE (an academic qualification) in addition to QTS.
 
-[Teach First](https://www.teachfirst.org.uk/) also offers a salary. It's a 2-year programme leading to a PGDE and qualified teacher status.
+Courses typically take one year but you may be able to study part-time.
+
+[Teach First](https://www.teachfirst.org.uk/) also offers a salary. It's a 2-year programme leading to a PGDE and QTS.
 
 <dl>
   <div class="training-option">
@@ -138,13 +144,13 @@ Many courses give you a PGCE or PGDE in addition to QTS.
   </div>
 </dl>
 
-<a href="https://www.gov.uk/find-postgraduate-teacher-training-courses" class="button">Find a postgraduate course</a>
+<a href="https://www.gov.uk/find-postgraduate-teacher-training-courses" class="button">Find teacher training courses if you have a degree</a>
 
 ## If you do not have a degree
 
 ### Do an undergraduate teacher training degree
 
-You can get qualified teacher status as part of an undergraduate degree.
+You can get QTS as part of an undergraduate degree.
 
 Courses typically cost £9,250 per year and can take up to 4 years but you can [get funding](https://www.gov.uk/student-finance-calculator).
 
@@ -157,7 +163,7 @@ Qualifications vary depending on the course. For example, you could get QTS with
 <div class="training-attributes">
   <h4>Undergraduate teacher training</h4>
   <div class="badges">
-    <span class="badge pink">Costs £9,250</span>
+    <span class="badge pink">Costs £9,250 per year</span>
     <span class="badge cyan">Funding available</span>
     <span class="badge purple">Up to 4 years</span>
     <span class="badge dark-blue">Qualifications vary</span>
@@ -168,7 +174,7 @@ Qualifications vary depending on the course. For example, you could get QTS with
 
 ## If you already have teaching experience
 
-You may be able to get qualified teacher status through a 12-week 'assessment only' programme if you also have a degree.
+You may be able to get QTS through a 12-week 'assessment only' programme if you also have a degree.
 
 [Apply directly to assessment only teacher training providers](/assessment-only-providers) and ask them about entry criteria.
 
