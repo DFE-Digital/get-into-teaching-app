@@ -34,15 +34,15 @@ calls_to_action:
   get-a-tta:
     name: simple
     arguments:
-      text: "Our return to teaching advisers specialise in helping returning teachers with QTS get back into the classroom."
+      text: "Return to teaching advisers specialise in helping returning teachers with qualified teacher status (QTS) get back into the classroom."
       link_text: "Get a return to teaching adviser"
       link_target: "/tta-service"
       icon: "icon-person"
 right_column:
   ctas:
    - icon: icon-calendar
-     title: Are you returning from overseas?
-     link_text: Find out more about how to become a teacher in England
+     title: Returning from overseas?
+     link_text: How to become a teacher in England
      link_target: "/international-returners"
 ---
 
@@ -54,7 +54,7 @@ If you’re considering coming back to the profession, or if you’re qualified 
 
 ## Why now
 
-Thousands of former teachers return to teaching each year. 
+Thousands of former teachers return to teaching each year.
 
 Here at the Department for Education, we’re taking action to address some of the common issues that teachers face in the classroom. This includes helping schools to:
 
@@ -70,9 +70,7 @@ The education sector promotes inclusivity and diversity. There are many organisa
 ## Return to teaching advisers
 
 If you want to return to teach modern foreign languages, maths or physics at
-secondary school in England, we can help.
-
-Our return to teaching advisers can give free one-to-one support with:
+secondary school in England, a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/) can give free one-to-one support with:
 
 * the applications process, such as writing personal statements and preparing for interviews
 * accessing courses to enhance your subject knowledge
@@ -80,7 +78,7 @@ Our return to teaching advisers can give free one-to-one support with:
 
 <iframe src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-Return to teaching advisers also run events to support returners. [Sign up here](/event-categories/online-q-as).
+Return to teaching advisers also run [events](/event-categories/online-q-as) to support returners.
 
 $get-a-tta$
 
