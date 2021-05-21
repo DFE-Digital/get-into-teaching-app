@@ -22,7 +22,9 @@
   <h1 class="pending-title">Pending <%= event_type_name %> events</h1>
 
   <%= button_to "Submit #{event_type_name} event for review",
-                new_internal_event_path, method: :get,
+                new_internal_event_path,
+                params: { event_type: event_type_name },
+                method: :get,
                 class: "button submit-button no-left-margin" %>
 
   <% if @no_results %>

@@ -151,43 +151,57 @@ describe Internal::EventsController do
         end
         it "should have a final submit button" do
           assert_response :success
-          expect(response.body).to include "Submit this provider event"
+          expect(response.body).to include "Set event status to Open"
         end
       end
     end
   end
 
   describe "#new" do
-    context "when any user type" do
-      before do
-        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-          .to receive(:get_teaching_event_buildings) { [] }
+    shared_examples "new event" do |event_params|
+      it "renders #{event_params || 'provider'} events form" do
+        get new_internal_event_path, headers: generate_auth_headers(:author), params: { event_type: event_params }
 
-        get new_internal_event_path, headers: generate_auth_headers(:author)
-      end
-
-      it "should have an events form" do
         assert_response :success
-        expect(response.body).to include("form")
+        expect(response.body).to include("#{event_params ? event_params.capitalize : 'Provider'} event details")
       end
     end
-  end
 
-  describe "#edit" do
-    let(:event_to_edit_readable_id) { "1" }
     context "when any user type" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
           .to receive(:get_teaching_event_buildings) { [] }
-        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:get_teaching_event).with(event_to_edit_readable_id) { pending_provider_event }
-
-        get edit_internal_event_path(event_to_edit_readable_id), headers: generate_auth_headers(:author)
       end
 
-      it "should have an events form with populated fields" do
-        assert_response :success
-        expect(response.body).to include("value=\"Pending provider event\"")
+      context "when no event type parameter" do
+        include_examples "new event"
+      end
+
+      context "when provider event type parameter" do
+        include_examples "new event", "provider"
+      end
+
+      context "when online event type parameter" do
+        include_examples "new event", "online"
+      end
+    end
+
+    describe "#edit" do
+      let(:event_to_edit_readable_id) { "1" }
+      context "when any user type" do
+        before do
+          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+            .to receive(:get_teaching_event_buildings) { [] }
+          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+            .to receive(:get_teaching_event).with(event_to_edit_readable_id) { pending_provider_event }
+
+          get edit_internal_event_path(event_to_edit_readable_id), headers: generate_auth_headers(:author)
+        end
+
+        it "should have an events form with populated fields" do
+          assert_response :success
+          expect(response.body).to include("value=\"Pending provider event\"")
+        end
       end
     end
   end

@@ -17,13 +17,14 @@ module Internal
     attribute :name, :string
     attribute :summary, :string
     attribute :description, :string
-    attribute :is_online, :boolean
+    attribute :is_online, :boolean, default: nil
     attribute :start_at, :datetime
     attribute :end_at, :datetime
-    attribute :provider_contact_email, :string
-    attribute :provider_organiser, :string
-    attribute :provider_target_audience, :string
-    attribute :provider_website_url, :string
+    attribute :provider_contact_email, :string, default: nil
+    attribute :provider_organiser, :string, default: nil
+    attribute :provider_target_audience, :string, default: nil
+    attribute :provider_website_url, :string, default: nil
+    attribute :scribble_id, :string, default: nil
     attribute :building
     attribute :venue_type, default: VENUE_TYPES[:none]
 
@@ -31,18 +32,18 @@ module Internal
     validates :readable_id, presence: true, allow_blank: false, length: { maximum: 300 }
     validates :summary, presence: true, allow_blank: false, length: { maximum: 1000 }
     validates :description, presence: true, allow_blank: false, length: { maximum: 2000 }
-    validates :summary, presence: true, allow_blank: false
-    validates :is_online, inclusion: { in: [true, false] }
+    validates :is_online, inclusion: { in: [true, false] }, if: -> { provider_event? }
     validates :start_at, presence: true, allow_blank: false
     validates :end_at, presence: true
     validates :provider_contact_email,
               presence: true,
               allow_blank: false,
               email_format: true,
-              length: { maximum: 100 }
-    validates :provider_organiser, presence: true, allow_blank: false, length: { maximum: 300 }
-    validates :provider_target_audience, presence: true, allow_blank: false, length: { maximum: 500 }
-    validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: 300 }
+              length: { maximum: 100 }, if: -> { provider_event? }
+    validates :provider_organiser, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
+    validates :provider_target_audience, presence: true, allow_blank: false, length: { maximum: 500 }, if: -> { provider_event? }
+    validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
+    validates :scribble_id, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { online_event? }
     validates :venue_type, inclusion: { in: VENUE_TYPES.values }
     validates_each :start_at, :end_at do |record, attr, value|
       unless value.nil?
@@ -108,6 +109,14 @@ module Internal
     def invalid?
       invalid_building = building.present? && building.invalid?
       super || invalid_building
+    end
+
+    def provider_event?
+      type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+    end
+
+    def online_event?
+      type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
     end
 
   private
