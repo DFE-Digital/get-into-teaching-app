@@ -7,7 +7,7 @@ module Internal
     DEFAULT_EVENT_TYPE = "provider".freeze
 
     def index
-      @event_type = set_event_type(params[:event_type])
+      @event_type = determine_event_type(params[:event_type])
 
       load_pending_events(@event_type)
       @no_results = @events.blank?
@@ -24,7 +24,7 @@ module Internal
     end
 
     def new
-      @event_type = set_event_type(params[:event_type])
+      @event_type = determine_event_type(params[:event_type])
       @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
       @event.building = EventBuilding.new
     end
@@ -55,7 +55,7 @@ module Internal
 
   private
 
-    def set_event_type(type)
+    def determine_event_type(type)
       event_types[type] || event_types[:provider]
     end
 
