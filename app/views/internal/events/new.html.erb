@@ -31,7 +31,7 @@
 
     <%= f.govuk_radio_buttons_fieldset(:is_online, inline: true,
                                        legend: { size: 'm', text: 'Online event?' }) do %>
-      <%= f.govuk_radio_button :is_online, true, label: { text: 'Yes' } %>
+      <%= f.govuk_radio_button :is_online, true, label: { text: 'Yes' }, link_errors: true %>
       <%= f.govuk_radio_button :is_online, false, label: { text: 'No' } %>
     <% end %>
   <% end %>
