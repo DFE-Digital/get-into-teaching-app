@@ -60,7 +60,7 @@ RSpec.feature "Internal section", type: :feature do
 
   scenario "Final submit" do
     visit internal_events_path
-    expect(page).to have_text "Pending Provider Events"
+    expect(page).to have_text "Pending provider events"
 
     click_link "Pending event"
     expect(page).to have_text("This is a pending event")
@@ -113,17 +113,17 @@ RSpec.feature "Internal section", type: :feature do
 private
 
   def navigate_to_new_submission
-    visit internal_events_path
-    expect(page).to have_text "Pending Provider Events"
+    visit internal_events_path(event_type: "provider")
+    expect(page).to have_text "Pending provider events"
 
-    click_button "Submit a provider event for review"
+    click_button "Submit provider event for review"
     expect(page).to have_text("Provider Event Details")
     expect(page).to have_checked_field("Search existing venues")
   end
 
   def navigate_to_edit_form
-    visit internal_events_path
-    expect(page).to have_text "Pending Provider Events"
+    visit internal_events_path(event_type: "provider")
+    expect(page).to have_text "Pending provider events"
 
     click_link "Pending event"
     expect(page).to have_text("This is a pending event")
