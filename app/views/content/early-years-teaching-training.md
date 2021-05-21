@@ -28,7 +28,7 @@ calls_to_action:
         Salary: "No"
         Funding available: "Yes"
         Length of training: "3 or 4 years"
-        Qualification: "Early Years Teacher Status"
+        Qualification: "Early years teacher status"
       - "Undergraduate early years teacher training"
   EY-graduate:
     name: feature_table
@@ -37,7 +37,7 @@ calls_to_action:
         Salary: "No"
         Funding available: "Yes"
         Length of training: "Typically 1 academic year"
-        Qualification: "Early Years Teacher Status"
+        Qualification: "Early years teacher status"
       - "Graduate early years teacher training"     
   EY-graduate-employment:
     name: feature_table
@@ -46,7 +46,7 @@ calls_to_action:
         Salary: "Provided by employer"
         Funding available: "Yes"
         Length of training: "Typically 1 academic year"
-        Qualification: "Early Years Teacher Status"
+        Qualification: "Early years teacher status"
       - "Graduate employment-based early years teacher training"
   EY-self-funded:
     name: feature_table
@@ -55,33 +55,35 @@ calls_to_action:
         Salary: "No"
         Funding available: "No"
         Length of training: "3 months"
-        Qualification: "Early Years Teacher Status"
-      - "Graduate Assessment-Only training"
+        Qualification: "Early years teacher status"
+      - "Graduate 'assessment only' training"
 ---
 
 ## Become an early years teacher
- 
-As an early years teacher, you'll work with young children up to the age of 5. Your input will have a lasting and positive effect on their development and wellbeing.
- 
-By training to be an early years teacher, you’ll use your knowledge and skills to help young children enjoy high standards of teaching. 
 
-The early years are critical in children's development. You’ll be opening their minds to new ideas every day.
- 
+As an early years teacher you'll work with young children up to the age of 5. Your input will have a lasting and positive effect on their development and wellbeing.
+
+The early years are critical in children's development. You’ll use your knowledge and skills to help young children enjoy high standards of teaching and open their minds to new ideas every day.
+
 ###How to become an early years teacher
- 
-You’ll need to achieve Early Years Teacher Status (EYTS). This is different from Qualified Teacher Status (QTS), which is the equivalent for teaching children aged 3 to 18. 
+
+You’ll need to do 'early years initial teacher training' (EYITT) to achieve 'early years teacher status' (EYTS).
+
+EYTS is different from '[qualified teacher status](/ways-to-train)' (QTS), which is the equivalent for teaching children aged 3 to 18.
 
 Your training will enable you to meet the [early years teachers' standards](https://www.gov.uk/government/publications/early-years-teachers-standards).
- 
+
 To start early years teacher training, you’ll need these qualifications (or to demonstrate an equivalent standard):
 
-* Maths grade 4 (C)
+* maths grade 4 (C)
 * English grade 4 (C)
-* Science grade 4 (C)
+* science grade 4 (C)
 
 If you do postgraduate early years teacher training, you'll need a 2:2 bachelor’s degree with honours or higher.
- 
-[Contact one of our early years training providers to apply for a place](https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations).
+
+[Contact accredited early years training providers to apply for a place](https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations).
+
+[Learn about funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2021-to-2022-funding-guidance).
 
 ## Ways to train
 
@@ -91,25 +93,19 @@ A full-time bachelor’s degree in an early childhood-related subject leading to
 (SFE)](https://www.gov.uk/student-finance).
 
 $EY-graduate$
- 
+
 Bursaries are available, including:
 
  * £5,000 if you have a first class degree
  * £4,000 if you have a 2:1 degree
  * £2,000 if you have a 2:2 degree
- 
+
 $EY-graduate-employment$
 
-This one-year part-time route is for graduates working in an early years setting who need further training to meet the [early years teachers' standards](https://www.gov.uk/government/publications/early-years-teachers-standards). 
+This one-year part-time route is for graduates working in an early years setting who need further training to meet the [early years teachers' standards](https://www.gov.uk/government/publications/early-years-teachers-standards).
 
 Funding of up to £14,000 is available. This would cover course fees of up to £7,000, plus £7,000 for your employer, to help cover their extra costs while you train.
 
-$EY-self-funded$ 
+$EY-self-funded$
 
-This self-funded route is ideal for graduates with early-years experience. If you already meet the [early years teachers' standards](https://www.gov.uk/government/publications/early-years-teachers-standards), you can gain EYTS without the need for further training. 
-
-## Next Steps
-
-[Contact one of our early years training providers to apply for a place](https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations).
-
-[Read more about funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2021-to-2022-funding-guidance)
+This self-funded route is ideal for graduates with early-years experience. If you already meet the [early years teachers' standards](https://www.gov.uk/government/publications/early-years-teachers-standards), you can gain EYTS without the need for further training.

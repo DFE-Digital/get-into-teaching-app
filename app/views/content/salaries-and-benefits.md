@@ -9,6 +9,16 @@ image: "/assets/images/salaries-hero-dt.jpg"
 backlink: "../../"
 navigation: 40
 lid_pixel_event: "SalaryBenefits"
+right_column:
+  ctas:
+    - title: How to train to teach
+      text: |
+       Find out how to train to become a qualified primary or secondary teacher in England.
+      link_text: "Ways to train"
+      link_target: "/ways-to-train"
+      icon: "icon-person"
+      hide_on_mobile: Yes
+      hide_on_tablet: Yes
 keywords:
   - Salary
   - Pay
@@ -36,7 +46,9 @@ keywords:
   - ECF
 ---
 
-Schools develop their own pay policies to attract and retain teachers that have the greatest impact on their pupils' learning. What you're paid will be linked to performance, not length of service - meaning your salary can move forward in line with your career.
+Schools develop their own pay policies to attract and retain teachers that have the greatest impact on their pupils' learning.
+
+What you're paid will be linked to performance, not length of service - meaning your salary can move forward in line with your career.
 
 ## Qualified teachers
 
@@ -52,28 +64,30 @@ As you progress in your teaching career, it's possible to move up through these 
 | The rest of England and Wales | £25,714 | £41,604 |
 
 ### Newly qualified teacher benefits
- 
-A new 2-year package to support teachers at the start of their career, based on the [Early Career Framework](https://www.gov.uk/government/publications/supporting-early-career-teachers), launches nationally in September 2021.
- 
+
+A 2-year package to support teachers at the start of their career, based on the [early career framework](https://www.gov.uk/government/publications/supporting-early-career-teachers), launches nationally in September 2021.
+
 The support package includes:
- 
+
 * funded 5% time off timetable in the second year of teaching, in addition to the existing 10% in the first year
-* a range of high-quality, freely available curricula and training materials underpinned by the Early Career Framework
+* a range of high-quality, freely available curricula and training materials underpinned by the early career framework
 * funded training for mentors of early career teachers
-* funded time for mentors to support early career teachers 
+* funded time for mentors to support early career teachers
 
 ### Teaching and learning responsibility (TLR) payments
 
 If you take on extra ongoing responsibilities in your role, you could get a salary uplift.
 
-There are two main ranges for these (TLR 1 and TLR 2), depending on the category your duties come under:
+There are 2 main ranges for these (TLR 1 and TLR 2), depending on the category your duties come under:
 
 | Level   | Minimum | Maximum |
 | ------- | -----   | -----   |
 | TLR 1   | £8,291  | £14,030 |
 | TLR 2   | £2,873  | £7,017  |
 
-Factors that apply to awarding TLRs include impact on educational progress beyond the teacher’s assigned pupils. It may also involve leading, developing and enhancing the teaching practice of others.
+Factors that apply to awarding TLRs include impact on educational progress beyond the teacher’s assigned pupils.
+
+It may also involve leading, developing and enhancing the teaching practice of others.
 
 ### Holidays
 
@@ -87,15 +101,17 @@ The Teachers’ Pension Scheme gives you a regular source of income when you ret
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
-[Find out more from Teachers’ Pensions](https://www.teacherspensions.co.uk/members/new-starter.aspx)
+[Find out more about the Teachers’ Pension Scheme](https://www.teacherspensions.co.uk/members/new-starter.aspx)
 
 ## Career progression
 
 ### Leading practitioners
 
-A Leading Practitioner is an excellent and highly skilled teacher who consistently demonstrates the highest standards of classroom practice. They share their skills and experience through the coaching, mentoring and induction of teachers, including trainees and newly qualified teachers (NQTs). 
+A 'leading practitioner' is an excellent and highly skilled teacher who consistently demonstrates the highest standards of classroom practice.
 
-In this role you could earn between £42,402 and £72,480 depending on where you teach.
+They share their skills and experience through the coaching, mentoring and induction of teachers, including trainees and newly qualified teachers (NQTs).
+
+You could earn between £42,402 and £72,480 depending on where you teach.
 
 | Area                          | Minimum | Maximum |
 | -------                       | -----   | -----   |
@@ -106,7 +122,9 @@ In this role you could earn between £42,402 and £72,480 depending on where you
 
 ### Headteachers
 
-Headteachers lead, motivate and manage staff. In this role you will earn between £47,735 to £125,098 depending on where you teach.
+Headteachers lead, motivate and manage staff.
+
+You will earn between £47,735 to £125,098 depending on where you teach.
 
 | Area                          | Minimum | Maximum  |
 | -------                       | -----   | -----    |
@@ -117,7 +135,9 @@ Headteachers lead, motivate and manage staff. In this role you will earn between
 
 #### Other leadership team positions
 
-Headteachers work with other leadership teachers. The average salary for leadership teachers (excluding headteachers) in 2019 was £54,911.
+Headteachers work with other leadership teachers.
+
+The average salary for leadership teachers (excluding headteachers) in 2019 was £54,911.
 
 ### Unqualified teachers
 

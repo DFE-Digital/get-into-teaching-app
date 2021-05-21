@@ -21,7 +21,7 @@ keywords:
 
 Being a further education (FE) teacher means you’ll teach students aged 14 and above. Further education covers a hugely diverse range of subjects and qualifications.
 
-As an FE teacher, you’ll improve your students’ qualifications and job prospects. You'll also inspire people who want to enjoy building new skills and knowledge.
+As an FE teacher, you’ll improve your students’ qualifications and job prospects. You'll also inspire people who want to build new skills and knowledge.
 
 FE qualifications range from basic literacy and numeracy to higher-level apprenticeships and technical qualifications, including the <a href='https://www.gov.uk/government/publications/introduction-of-t-levels/introduction-of-t-levels'>new T levels</a>, which are vocational alternatives to A levels.
 
@@ -37,9 +37,9 @@ The qualifications you need to become an FE teacher depend on the type of course
 
 For example, you can train to get a PGCE or PGDE in Post Compulsory Education and Training (PCET). [Search for a further education course leading to a PGCE or PGDE](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
-You can also <a href='https://www.feadvice.org.uk/i-want-work-fe-skills-sector'>visit Further Education Advice</a> or ring their support service on 0300 303 1877.
-
 You can even gain new qualifications once you start teaching.
+
+<a href='https://www.feadvice.org.uk/i-want-work-fe-skills-sector'>Find out more about training to be a further education teacher</a> or ring the Further Education Advice support service on 0300 303 1877.
 
 ## Funding for training as a further education teacher
 
