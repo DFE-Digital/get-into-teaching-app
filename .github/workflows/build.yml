@@ -391,7 +391,6 @@ jobs:
           release_name: Release ${{ steps.tag_version.outputs.pr_number }}
           commitish: ${{ github.sha}}
           prerelease: false
-          draft: false
 
       - name: Copy PR Info to Release
         if: steps.release.outputs.id
