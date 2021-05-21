@@ -24,15 +24,13 @@ module Internal
     end
 
     def new
-      @event_type = determine_event_type(params[:event_type])
-      @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
-      @event.building = EventBuilding.new
       if params[:duplicate]
         @event = get_event_by_id(params[:duplicate])
         @event.id = nil
         @event.readable_id = nil
       else
-        @event = Event.new(venue_type: Event::VENUE_TYPES[:existing])
+        @event_type = determine_event_type(params[:event_type])
+        @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
         @event.building = EventBuilding.new
       end
     end
