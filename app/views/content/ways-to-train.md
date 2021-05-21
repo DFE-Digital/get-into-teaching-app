@@ -71,8 +71,8 @@ Courses typically take one year but you may be able to study part-time.
 
 Fees are usually around £9,250 but you can:
 
-* get [funding that you do not have to pay back](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#bursaries-and-scholarships) for certain subjects
-* apply for a [student loan](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#tuition-fee-and-maintenance-loans)
+* get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
+* apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
 
 <div class="training-attributes">
   <h4>University-led training</h4>
@@ -94,8 +94,8 @@ Courses typically take one year but you may be able to study part-time.
 
 Fees are usually around £9,250 but you can:
 
-* get [funding that you do not have to pay back](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#bursaries-and-scholarships) for certain subjects
-* apply for a [student loan](https://review-get-into-teaching-app-1182.london.cloudapps.digital/funding-your-training#tuition-fee-and-maintenance-loans)  
+* get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
+* apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)  
 
 <div class="training-attributes">
   <h4>School direct<br/>(fee-funded)</h4>
