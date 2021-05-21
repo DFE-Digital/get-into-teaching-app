@@ -24,9 +24,15 @@ module Internal
     end
 
     def new
-      @event_type = determine_event_type(params[:event_type])
-      @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
-      @event.building = EventBuilding.new
+      if params[:duplicate]
+        @event = get_event_by_id(params[:duplicate])
+        @event.id = nil
+        @event.readable_id = nil
+      else
+        @event_type = determine_event_type(params[:event_type])
+        @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
+        @event.building = EventBuilding.new
+      end
     end
 
     def approve
@@ -48,8 +54,8 @@ module Internal
     end
 
     def edit
-      api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      @event = Event.initialize_with_api_event(api_event)
+      @event = get_event_by_id(params[:id])
+
       render :new
     end
 
@@ -61,6 +67,11 @@ module Internal
 
     def event_type_name
       params[:event_type] || DEFAULT_EVENT_TYPE
+    end
+
+    def get_event_by_id(event_id)
+      api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(event_id)
+      @event = Event.initialize_with_api_event(api_event)
     end
 
     def authorize_publisher
