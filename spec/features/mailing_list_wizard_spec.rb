@@ -303,7 +303,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
-    expect(page).to have_text "Get personalised advice about getting into teaching"
+    expect(page).to have_text "Get personalised guidance about getting into teaching"
     fill_in_name_step(email: "test2@user.com")
     click_on "Next Step"
 
