@@ -149,7 +149,7 @@ describe Internal::EventsController do
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:publisher)
         end
-        it "should have a final submit button" do
+        it "has a final submit button" do
           assert_response :success
           expect(response.body).to include "Set event status to Open"
         end
@@ -224,7 +224,7 @@ describe Internal::EventsController do
         get edit_internal_event_path(event_to_edit_readable_id), headers: generate_auth_headers(:author)
       end
 
-      it "should have an events form with populated fields" do
+      it "has an events form with populated fields" do
         assert_response :success
         expect(response.body).to include("value=\"Pending provider event\"")
       end
@@ -261,7 +261,7 @@ describe Internal::EventsController do
           attributes_for :internal_event,
                          { "venue_type": Internal::Event::VENUE_TYPES[:existing], "building": { "id": building_id } }
         end
-        it "should post the event and an existing building" do
+        it "posts the event and an existing building" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
 
@@ -283,7 +283,7 @@ describe Internal::EventsController do
         let(:params) do
           attributes_for(:internal_event, { "venue_type": Internal::Event::VENUE_TYPES[:none], "building": { "id": "" } })
         end
-        it "should post no building" do
+        it "does not post a building" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
 
@@ -311,7 +311,7 @@ describe Internal::EventsController do
                                "venue": expected_venue,
                                "address_postcode": expected_postcode } }
         end
-        it "should post new building fields with no id" do
+        it "posts building with no id" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
 
@@ -367,7 +367,7 @@ describe Internal::EventsController do
       context "when event has no building" do
         let(:params) { { "id": event.id } }
 
-        it "should post the event with event status open" do
+        it "posts the event with event status open" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event.id) { event }
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
@@ -390,7 +390,7 @@ describe Internal::EventsController do
       context "when event has a building" do
         let(:params) { { "id": event.id } }
 
-        it "should post the event with event status open" do
+        it "posts the event with event status open" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event.id) { event }
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
