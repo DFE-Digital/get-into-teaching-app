@@ -245,7 +245,7 @@ en:
       mailing_list_steps_degree_status:
         degree_status:
           graduate_or_postgraduate: "Yes, I already have a degree"
-          final_year: "Not yet, I'm a final year student"
+          final_year: "Almost, I'm a final year student"
           second_year: "Not yet, I'm a second year student"
           first_year: "Not yet, I'm a first year student"
           i_don_t_have_a_degree_and_am_not_studying_for_one: "No, I am not studying for a degree"
