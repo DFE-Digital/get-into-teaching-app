@@ -286,7 +286,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised advice about getting into teaching"
+    expect(page).to have_text "Get personalised guidance about getting into teaching"
     fill_in_name_step
     click_on "Next Step"
 
