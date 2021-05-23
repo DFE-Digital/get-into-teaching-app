@@ -11,7 +11,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_title("Get Into Teaching: Get personalised guidance about getting into teaching, name step")
 
-    expect(page).to have_text "Get personalised advice about getting into teaching"
+    expect(page).to have_text "Get personalised guidance about getting into teaching"
     fill_in_name_step
     click_on "Next Step"
 
