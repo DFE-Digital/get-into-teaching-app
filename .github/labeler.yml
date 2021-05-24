@@ -28,10 +28,10 @@ Rails:
   - get-into-teaching-app/.env.*
 
 Assets:
-  - assets/**/*
+  - public/assets/**/*
 
 Content:
-  - content/**/*
+  - app/views/content/**/*
 
 Config:
   - config/**/*
