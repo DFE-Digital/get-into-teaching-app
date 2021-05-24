@@ -2,10 +2,10 @@ require "rails_helper"
 
 describe EventsController do
   include_context "stub types api"
+  let(:parsed_response) { Nokogiri.parse(response.body) }
 
   describe "#index" do
     include_context "stub upcoming events by category api", EventsController::UPCOMING_EVENTS_PER_TYPE
-    let(:parsed_response) { Nokogiri.parse(response.body) }
     let(:expected_description) { "Get your questions answered at an event." }
 
     subject! do
@@ -115,6 +115,7 @@ describe EventsController do
     let(:event) do
       build(:event_api, :with_provider_info, readable_id: event_readable_id)
     end
+    let(:expected_description) { event.summary }
 
     subject { response }
 
@@ -127,6 +128,18 @@ describe EventsController do
       end
 
       it { is_expected.to have_http_status :success }
+
+      it "has a meta description" do
+        actual_description = parsed_response.at_css("head meta[name='description']")["content"]
+
+        expect(actual_description).to eql(expected_description)
+      end
+
+      it "has a meta og:description" do
+        actual_description = parsed_response.at_css("head meta[name='og:description']")["content"]
+
+        expect(actual_description).to eql(expected_description)
+      end
 
       describe "the response body" do
         subject { response.body }
