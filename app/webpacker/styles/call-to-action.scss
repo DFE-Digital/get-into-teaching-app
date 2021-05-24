@@ -217,23 +217,27 @@
     @include mq($until: tablet) {
       max-width: calc(100% - 1.25em);
     }
+
     .call-to-action__heading {
-      color: white;
+      color: $white;
       background: $green;
       transform: rotate(-3deg);
       display: inline-block;
-      padding: 0.625em 1.25em;
+      padding: .625em 1.25em;
       margin-left: -22px;
-      margin-bottom: 0.5em;
+      margin-bottom: .5em;
     }
+
     .call-to-action__content {
       background-color: $grey;
       overflow: hidden;
       position: relative;
     }
+
     .call-to-action__text {
       margin-bottom: 1.4em;
     }
+
     &:before {
       content: "";
       display: block;

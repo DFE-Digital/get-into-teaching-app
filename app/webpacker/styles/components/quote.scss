@@ -13,7 +13,8 @@
     }
   }
 
-  p, .footer {
+  p,
+  .footer {
     padding: $indent-amount 25px $indent-amount 42px;
   }
 
@@ -29,14 +30,15 @@
       font-size: 1em;
     }
 
-    .name, .job-title {
+    .name,
+    .job-title {
       display: block;
       font-style: normal;
     }
 
     .job-title {
       font-weight: bold;
-      margin-top: 0.5rem;
+      margin-top: .5rem;
     }
 
     .button {

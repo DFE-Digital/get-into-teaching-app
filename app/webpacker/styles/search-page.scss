@@ -1,6 +1,6 @@
 .new_search {
   button .fas {
-    margin-left: 0.4em ;
+    margin-left: .4em;
     vertical-align: bottom;
   }
 }
@@ -11,13 +11,9 @@
   color: initial;
   padding: 1em 0;
 
-  &:hover {
-
-  }
-
   h3 {
     margin-top: .2rem;
-    margin-bottom: 0
+    margin-bottom: 0;
   }
 
   p {

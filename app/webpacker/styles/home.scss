@@ -61,7 +61,7 @@ main.home {
       @include chevron;
       white-space: inherit;
 
-      display: inline-block !important; // override the block set by button mixin
+      display: inline-block; // override the block set by button mixin
     }
   }
 
