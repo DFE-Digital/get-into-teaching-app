@@ -3,8 +3,8 @@
 ## Prerequisites
 
 - Ruby 2.7.3
-- NodeJS 12.15.x
-- Yarn 1.12.x
+- NodeJS 12.22.x
+- Yarn 1.22.x
 
 ## Mac Setup (as of Catalina 11-07-20)
 
@@ -50,7 +50,7 @@ to your `app/views` directory and running `ln -s content
 
 ## Whats included in this website
 
-- Rails 6.0 with Webpacker
+- Rails 6.1 with Webpacker
 - RSpec
 - Dotenv (managing environment variables)
 - Dockerbuild file
