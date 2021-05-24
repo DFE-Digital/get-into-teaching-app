@@ -40,7 +40,7 @@ module MailingList
     end
 
     def set_step_page_title
-      @page_title = "Get personalised guidance about getting into teaching"
+      @page_title = "Get personalised guidance to your inbox"
       unless @current_step.nil?
         @page_title += ", #{@current_step.title.downcase} step"
       end
