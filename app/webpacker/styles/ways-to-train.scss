@@ -98,7 +98,7 @@
 
     .training-option + .training-option {
       padding-top: $space-between-definitions;
-      border-top: 1px solid $grey-mid;
+      border-top: 1px solid darken($grey, 10%);
     }
   }
 }
