@@ -10,7 +10,7 @@ class StoredPage
   end
 end
 
-RSpec.feature "content pages check", type: :feature, content: true do
+RSpec.xfeature "content pages check", type: :feature, content: true do
   include_context "stub types api"
 
   let(:other_paths) { %w[/ /search /tta-service /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
