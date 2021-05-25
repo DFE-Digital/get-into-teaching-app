@@ -49,8 +49,8 @@ You need 'qualified teacher status' (QTS) to work in the majority of schools in 
 
 Find out how to get QTS if you:
 
-* [have a degree](#if-you-have-a-degree) or you're studying for one
-* [do not have a degree](#if-you-do-not-have-a-degree) and you're not studying for one
+* [have a degree](#if-you-have-a-degree) (or you're doing one)
+* [do not have a degree](#if-you-do-not-have-a-degree) (and you're not already doing one)
 * [are already an experienced teacher](#if-you-are-already-an-experienced-teacher)
 
 You can also find specialised training programmes if you're:
