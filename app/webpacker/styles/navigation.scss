@@ -1,0 +1,71 @@
+#main-navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .main-logo {
+    flex-basis: 14em;
+    background-color: $green;
+  }
+
+  nav {
+    justify-content: flex-end;
+    margin: 2em 0 1em;
+    padding: 0 1em;
+
+    display: flex;
+    flex-direction: column;
+
+    ol {
+      margin: 0;
+      list-style: none;
+
+      display: flex;
+      gap: 1em;
+      justify-content: flex-end;
+
+      li {
+        padding: 1em .5em;
+      }
+
+      @mixin active {
+        background-color: $pink;
+
+        a,
+        .category {
+          color: $white;
+        }
+      }
+
+      &.primary {
+        li.active {
+          @include active;
+        }
+      }
+
+      &.secondary {
+        @include active;
+
+        li {
+          flex-grow: 1;
+        }
+      }
+    }
+
+    li {
+      @include font-size(xsmall);
+      font-weight: bold;
+    }
+
+    li > a,
+    li > .category {
+      color: $black;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
