@@ -466,7 +466,7 @@ keywords:
   - experienced
 ---
 
-If you’re an experienced teacher with a degree, you may be able to get qualified teacher status (QTS) through a 12-week 'assessment only' (AO) programme.
+If you’re an experienced teacher with a degree, you may be able to get qualified teacher status (QTS) through a 12-week assessment only (AO) programme.
 
 The following accredited teacher training providers offer the AO programme.
 
