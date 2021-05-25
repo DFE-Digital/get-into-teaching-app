@@ -76,6 +76,10 @@
         flex-direction: column;
         align-items: baseline;
 
+        dt {
+          margin-bottom: .3em;
+        }
+
         dd {
           margin-left: 0;
         }
