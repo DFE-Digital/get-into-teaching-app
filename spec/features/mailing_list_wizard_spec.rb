@@ -9,9 +9,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_title("Get Into Teaching: Get personalised guidance about getting into teaching, name step")
+    expect(page).to have_title("Get Into Teaching: Get personalised guidance to your inbox, name step")
 
-    expect(page).to have_text "Get personalised guidance about getting into teaching"
+    expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
     click_on "Next Step"
 
@@ -29,8 +29,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next Step"
 
-    expect(page).to have_text "Events in your area"
-    fill_in "What's your postcode", with: "TE57 1NG"
+    expect(page).to have_text "events in your area"
+    fill_in "Your postcode (optional)", with: "TE57 1NG"
     click_on "Next Step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -53,7 +53,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     channel_id = channels.first.id
     visit mailing_list_steps_path({ id: :name, channel: channel_id })
 
-    expect(page).to have_text "Get personalised guidance about getting into teaching"
+    expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
     click_on "Next Step"
 
@@ -69,8 +69,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next Step"
 
-    expect(page).to have_text "Events in your area"
-    fill_in "What's your postcode", with: "TE57 1NG"
+    expect(page).to have_text "events in your area"
+    fill_in "Your postcode (optional)", with: "TE57 1NG"
     click_on "Next Step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -100,7 +100,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance about getting into teaching"
+    expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
     click_on "Next Step"
 
@@ -151,7 +151,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance about getting into teaching"
+    expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
     click_on "Next Step"
 
@@ -182,7 +182,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance about getting into teaching"
+    expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
     click_on "Next Step"
 
@@ -206,7 +206,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance about getting into teaching"
+    expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
     click_on "Next Step"
 
@@ -249,8 +249,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next Step"
 
-    expect(page).to have_text "Events in your area"
-    fill_in "What's your postcode", with: "TE57 1NG"
+    expect(page).to have_text "events in your area"
+    fill_in "Your postcode (optional)", with: "TE57 1NG"
     click_on "Next Step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -286,7 +286,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance about getting into teaching"
+    expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
     click_on "Next Step"
 
@@ -303,7 +303,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
-    expect(page).to have_text "Get personalised guidance about getting into teaching"
+    expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step(email: "test2@user.com")
     click_on "Next Step"
 

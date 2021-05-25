@@ -288,7 +288,7 @@ en:
         first_name: First name
         last_name: Last name
         email: Email address
-        address_postcode: What's your postcode? (optional)
+        address_postcode: What is your postcode? (optional)
         degree_status_id: Do you have a degree?
         preferred_teaching_subject_id: What would you like to teach?
         consideration_journey_stage_id: How close are you to applying for teacher training?
