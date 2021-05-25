@@ -69,7 +69,7 @@ The education sector promotes inclusivity and diversity. There are many organisa
 
 ## Return to teaching advisers
 
-If you want to return to teach modern foreign languages, maths or physics at
+If you hold '[qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts)' want to return to teach modern foreign languages, maths or physics at
 secondary school in England, a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/) can give free one-to-one support with:
 
 * the applications process, such as writing personal statements and preparing for interviews
@@ -84,17 +84,17 @@ $get-a-tta$
 
 ## Find a role
 
-[Search for a teaching role in England](https://teaching-vacancies.service.gov.uk/).
+Teaching Vacancies is the government’s free, national job listing service for the teaching profession. [Search for a teaching role in England](https://teaching-vacancies.service.gov.uk/).
 You can set up job alerts so that you do not miss out on any opportunities.
 
 Take a look at the different [types of schools and staff roles](https://www.gov.uk/types-of-school)
-to find the best opportunity for you.
+to find the best opportunity for you. Vacancies with flexible working opportunities are listed on the service.
 
 ## National Tutoring Programme
 
 The National Tutoring Programme supports schools to close the attainment gap in light of the coronavirus pandemic and provides 2 different options to return to a school environment without taking on a full-time or part-time classroom role.
 
-If you’re unsure about taking on a teacher role at this time, [consider applying to tutor or mentor through the National Tutoring Programme](https://nationaltutoring.org.uk/).
+If you’re unsure about taking on a teacher role at this time, [consider applying to tutor or mentor through the National Tutoring Programme](https://nationaltutoring.org.uk/) and help provide support to disadvantaged pupils.
 
 ## If you've been out of teaching for a while
 
