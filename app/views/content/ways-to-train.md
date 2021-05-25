@@ -9,6 +9,7 @@ description: |-
 date: "2021-02-26"
 backlink: "../"
 navigation: 20
+article_classes: ['ways-to-train']
 right_column:
   ctas:
     - title: Get support
@@ -78,7 +79,7 @@ Fees are usually around £9,250 but you can:
   <h4>University-led training</h4>
   <div class="badges">
     <span class="badge pink">Costs £9,250</span>
-    <span class="badge cyan">Funding available</span>
+    <span class="badge dark-cyan">Funding available</span>
     <span class="badge purple">Takes 1 year</span>
     <span class="badge dark-blue">PGCE or PGDE</span>
   </div>
@@ -101,7 +102,7 @@ Fees are usually around £9,250 but you can:
   <h4>School direct<br/>(fee-funded)</h4>
   <div class="badges">
     <span class="badge pink">Costs £9,250</span>
-    <span class="badge cyan">Funding available</span>
+    <span class="badge dark-cyan">Funding available</span>
     <span class="badge purple">Takes 1 year</span>
     <span class="badge dark-blue">Often a PGCE or PGDE</span>
   </div>
@@ -164,7 +165,7 @@ Qualifications vary depending on the course. For example, you could get QTS with
   <h4>Undergraduate teacher training</h4>
   <div class="badges">
     <span class="badge pink">Costs £9,250 per year</span>
-    <span class="badge cyan">Funding available</span>
+    <span class="badge dark-cyan">Funding available</span>
     <span class="badge purple">Up to 4 years</span>
     <span class="badge dark-blue">Qualifications vary</span>
   </div>
