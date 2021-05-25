@@ -64,9 +64,7 @@ Not looking to teach in primary or secondary settings? Consider teaching [early 
 
 ### Go back to university as a postgraduate student
 
-Once you have an undergraduate degree you can do postgraduate university-led training.
-
-You spend about a third of your time in academic learning and the rest in school placements.
+With university-led training you spend about a third of your time in academic learning and the rest in school placements.
 
 In addition to QTS you'll get a PGCE or PGDE (an academic qualification).
 
