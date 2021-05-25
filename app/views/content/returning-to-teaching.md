@@ -54,12 +54,12 @@ If you’re considering coming back to the profession, or if you’re qualified 
 
 ## Why now
 
-Thousands of former teachers return to teaching each year.
+Thousands of former teachers return to teaching each year and now could be a great time for you to become a teacher again and help support education recovery. 
 
 Here at the Department for Education, we’re taking action to address some of the common issues that teachers face in the classroom. This includes helping schools to:
 
 * [reduce workload](https://www.gov.uk/guidance/school-workload-reduction-toolkit)
-* support mental health and wellbeing
+* [support mental health and wellbeing](https://www.gov.uk/guidance/education-staff-wellbeing-charter)
 * [enable flexible working](https://www.gov.uk/government/collections/flexible-working-resources-for-teachers-and-schools)
 * [manage behaviour](https://www.gov.uk/guidance/behaviour-hubs)
 
@@ -69,8 +69,8 @@ The education sector promotes inclusivity and diversity. There are many organisa
 
 ## Return to teaching advisers
 
-If you hold '[qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts)' want to return to teach modern foreign languages, maths or physics at
-secondary school in England, a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/) can give free one-to-one support with:
+If you want to return to teach modern foreign languages, maths or physics at
+secondary school in England, and hold '[qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts)', a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/) can give free one-to-one support with:
 
 * the applications process, such as writing personal statements and preparing for interviews
 * accessing courses to enhance your subject knowledge
