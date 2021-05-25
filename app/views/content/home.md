@@ -8,7 +8,7 @@
   date: "2021-03-03"
   fullwidth: true
   lid_pixel_event: "Homepage"
-  subtitle: "Get personalised guidance to your inbox."
+  subtitle: "Get information and support to help you become a teacher."
   subtitle_button: "Register for updates"
   subtitle_link: "/mailinglist/signup/name"
   image: "media/images/hero-home-dt.jpg"
