@@ -32,7 +32,7 @@
       background: $pink-dark;
     }
 
-    &.darkcyan {
+    &.dark-cyan {
       color: $white;
       border: 1px solid $dark-cyan;
       font-weight: 900;
@@ -61,13 +61,16 @@
     }
   }
 
+  $space-between-definitions: 1.5em;
+
   dl {
+    margin-top: 3em;
     margin-bottom: 3em;
 
     .training-option {
       align-items: baseline;
       display: flex;
-      padding-bottom: 1em;
+      padding-bottom: $space-between-definitions;
 
       @include mq($until: mobile) {
         flex-direction: column;
@@ -90,7 +93,7 @@
     }
 
     .training-option + .training-option {
-      padding-top: 1em;
+      padding-top: $space-between-definitions;
       border-top: 1px solid $grey;
     }
   }
