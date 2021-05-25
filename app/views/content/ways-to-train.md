@@ -51,7 +51,7 @@ Find out how to get QTS if you:
 
 * [have a degree](#if-you-have-a-degree)
 * [do not have a degree](#if-you-do-not-have-a-degree)
-* [already have teaching experience](#if-you-already-have-teaching-experience)
+* [are already an experienced teacher](#if-you-are-already-an-experienced-teacher)
 
 You can also find specialised training programmes if you're:
 
@@ -173,9 +173,11 @@ Qualifications vary depending on the course. For example, you could get QTS with
 
 <a href="https://digital.ucas.com/search" class="button">Find an undergraduate course</a>
 
-## If you already have teaching experience
+## If you are already an experienced teacher
 
 You may be able to get QTS through a 12-week 'assessment only' programme if you also have a degree.
+
+You’ll need to show evidence that you already meet the standards for QTS.
 
 [Apply directly to assessment only teacher training providers](/assessment-only-providers) and ask them about entry criteria.
 
