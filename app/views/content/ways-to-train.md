@@ -49,8 +49,8 @@ You need 'qualified teacher status' (QTS) to work in the majority of schools in 
 
 Find out how to get QTS if you:
 
-* [have a degree](#if-you-have-a-degree)
-* [do not have a degree](#if-you-do-not-have-a-degree)
+* [have a degree](#if-you-have-a-degree) or you're studying for one
+* [do not have a degree](#if-you-do-not-have-a-degree) and you're not studying for one
 * [are already an experienced teacher](#if-you-are-already-an-experienced-teacher)
 
 You can also find specialised training programmes if you're:
@@ -64,7 +64,9 @@ Not looking to teach in primary or secondary settings? Consider teaching [early 
 
 ### Go back to university as a postgraduate student
 
-With university-led training you spend about a third of your time in academic learning and the rest in school placements.
+Once you have an undergraduate degree you can do postgraduate university-led training.
+
+You spend about a third of your time in academic learning and the rest in school placements.
 
 In addition to QTS you'll get a PGCE or PGDE (an academic qualification).
 
