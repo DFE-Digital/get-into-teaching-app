@@ -1,0 +1,17 @@
+<p class="attachment">
+  <a href="<%= asset_path %>" class="call-to-action-icon-button">
+    <%= body %>
+    <% if icon_class %>
+      <i class="fas <%= icon_class %>"></i>
+    <% end %>
+  </a>
+</p>
+
+<% if published_at.present? %>
+  <p>Published <%= published_at %></p>
+<% end %>
+
+<% if updated_at.present? %>
+  <p>Last updated <%= updated_at %></p>
+<% end %>
+

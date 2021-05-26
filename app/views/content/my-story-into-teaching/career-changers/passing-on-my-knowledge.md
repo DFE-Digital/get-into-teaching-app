@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Passing on my knowledge
-image: /assets/images/stories/stories-amy.jpg
+image: media/images/content/stories/stories-amy.jpg
 backlink: "./"
 backlink_text: Career changers' stories
 story:

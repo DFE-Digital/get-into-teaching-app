@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Returning to teaching with support from an adviser
-image: /assets/images/stories/stories-shaun.jpg
+image: media/images/content/stories/stories-shaun.jpg
 backlink: "./"
 backlink_text: Stories from international teachers
 story:

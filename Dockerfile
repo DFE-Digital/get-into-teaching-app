@@ -40,9 +40,6 @@ RUN find public -type f -iname "*.png" -exec optipng -nb -nc -np {} \;
 RUN find public -type f \( -iname "*.jpg" -o -iname "*.jpg" \) -exec jpegoptim -m90 --strip-all {} \;
 RUN find public -type f \( -iname "*.jpeg" -o -iname "*.jpeg" \) -exec jpegoptim -m90 --strip-all {} \;
 
-# Fingerprint content assets
-RUN bundle exec rake fingerprinter:run
-
 # Convert to WebP/JPEG-2000 formats (size constraint avoids an error on empty images)
 # At 75% quality the images still look good and they are roughly half the size.
 # We need to convert after the fingerprinting so the file names are consistent.

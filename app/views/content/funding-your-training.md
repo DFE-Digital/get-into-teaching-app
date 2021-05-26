@@ -5,8 +5,8 @@
     maintenance loans are available to support your postgraduate teacher
     training.
   date: "2021-03-11"
-  image: "/assets/images/funding-hero-dt.jpg"
-  mobileimage: "/assets/images/funding-hero-mob.jpg"
+  image: "media/images/content/funding-hero-dt.jpg"
+  mobileimage: "media/images/content/funding-hero-mob.jpg"
   backlink: "../"
   navigation: 25
   lid_pixel_event: "Funding"

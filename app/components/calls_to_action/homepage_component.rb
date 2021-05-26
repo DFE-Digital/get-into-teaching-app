@@ -19,7 +19,7 @@ module CallsToAction
   private
 
     def image_element(image)
-      tag.div(style: %[background-image: url('#{image}')], class: "call-to-action__image")
+      tag.div(style: %[background-image: url('#{asset_pack_path(image)}')], class: "call-to-action__image")
     end
 
     def icon_element(icon)

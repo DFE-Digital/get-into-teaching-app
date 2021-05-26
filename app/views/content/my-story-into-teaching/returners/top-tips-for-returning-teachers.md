@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Top tips for returning teachers
-image: /assets/images/stories/stories-helen.jpg
+image: media/images/content/stories/stories-helen.jpg
 backlink: "./"
 backlink_text: Stories about returning to teaching
 story:

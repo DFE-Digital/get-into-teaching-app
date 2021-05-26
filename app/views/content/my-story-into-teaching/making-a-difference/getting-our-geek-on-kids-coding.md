@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Getting our 'geek' on - kids coding
-image: /assets/images/stories/stories-tarik.jpg
+image: media/images/content/stories/stories-tarik.jpg
 backlink: "./"
 backlink_text: Stories about making a difference
 story:

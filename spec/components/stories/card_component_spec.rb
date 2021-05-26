@@ -6,7 +6,7 @@ describe Stories::CardComponent, type: "component" do
       "name" => "Edna Krabappel",
       "snippet" => "Your education is important. Roman numerals, et cetera",
       "link" => "/stories/edna-k",
-      "image" => "/images/edna-k.jpg",
+      "image" => "media/images/dfelogo.png",
     }
   end
 
@@ -21,7 +21,7 @@ describe Stories::CardComponent, type: "component" do
 
   specify "includes a link wrapping the story image" do
     is_expected.to have_link(href: story["link"]) do |anchor|
-      expect(anchor).to have_css(%(img[src="#{story['image']}"]))
+      expect(anchor).to have_css(%(img[src*="packs-test/media/images/dfelogo"]))
     end
   end
 
@@ -52,7 +52,7 @@ describe Stories::CardComponent, type: "component" do
 
     specify "the image links to the video instead of the story" do
       is_expected.to have_link(href: video_story["video"]) do |anchor|
-        expect(anchor).to have_css(%(img[src="#{story['image']}"]))
+        expect(anchor).to have_css(%(img[src*="packs-test/media/images/dfelogo"]))
       end
     end
 

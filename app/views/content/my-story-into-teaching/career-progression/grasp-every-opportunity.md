@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Grasp every opportunity - you will progress
-image: /assets/images/stories/stories-paul.jpg
+image: media/images/content/stories/stories-paul.jpg
 backlink: "./"
 backlink_text: Career progression stories
 story:

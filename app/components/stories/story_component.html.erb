@@ -1,11 +1,10 @@
-
 <section class="container">
   <article class="story markdown">
     <%= tag.h1(title) %>
 
     <header class="story__header">
       <% if image.present? %>
-        <%= image_tag(image, width: 200, height: 200, alt: helpers.story_image_alt(teacher), class: "story__header__thumb") %>
+        <%= image_pack_tag(image, width: 200, height: 200, alt: helpers.story_image_alt(teacher), class: "story__header__thumb") %>
       <% end %>
       <div class="story__header__label">
         <%= helpers.story_heading(teacher, position) %>
