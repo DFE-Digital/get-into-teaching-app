@@ -105,8 +105,8 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next Step"
 
-    expect(page).to have_text "Enter the verification code"
-    fill_in "Enter the verification code sent to test@user.com", with: "123456"
+    expect(page).to have_text "Check your email and enter the verification code sent to test@user.com"
+    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
     click_on "Next Step"
 
     expect(page).to have_text "Are you over 16 and do you agree"
@@ -150,8 +150,8 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next Step"
 
-    expect(page).to have_text "Enter the verification code"
-    fill_in "Enter the verification code sent to test@user.com", with: "654321"
+    expect(page).to have_text "Check your email and enter the verification code sent to test@user.com"
+    fill_in "Check your email and enter the verification code sent to test@user.com", with: "654321"
     click_on "Next Step"
 
     expect(page).to have_text "Please enter the latest verification code"
@@ -159,7 +159,7 @@ RSpec.feature "Event wizard", type: :feature do
     click_link "resend verification"
     expect(page).to have_text "We've sent you another email."
 
-    fill_in "Enter the verification code sent to test@user.com", with: "123456"
+    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
     click_on "Next Step"
 
     expect(page).to have_text("Phone number (optional)")
@@ -183,8 +183,8 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next Step"
 
-    expect(page).to have_text "Enter the verification code"
-    fill_in "Enter the verification code sent to test@user.com", with: "123456"
+    expect(page).to have_text "Check your email and enter the verification code sent to test@user.com"
+    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
     click_on "Next Step"
 
     expect(page).to have_text("Phone number (optional)")
@@ -225,8 +225,8 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in_personal_details_step
     click_on "Next Step"
 
-    expect(page).to have_text "Enter the verification code"
-    fill_in "Enter the verification code sent to test@user.com", with: "123456"
+    expect(page).to have_text "Check your email and enter the verification code sent to test@user.com"
+    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
     click_on "Next Step"
 
     expect(page).to have_text("Phone number (optional)")
@@ -265,7 +265,7 @@ RSpec.feature "Event wizard", type: :feature do
     postcode: "TE57 1NG",
     preferred_teaching_subject: nil
   )
-    select_value_or_default "What stage are you at with your degree?", degree_status
+    select_value_or_default "Do you have a degree?", degree_status
     select_value_or_default "How close are you to applying for teacher training?", consideration_journey_stage
     if page.has_text?("What is your postcode? (optional)")
       fill_in "What is your postcode? (optional)", with: postcode

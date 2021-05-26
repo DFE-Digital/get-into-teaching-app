@@ -247,15 +247,15 @@ en:
       mailing_list_steps_degree_status:
         degree_status:
           graduate_or_postgraduate: "Yes, I already have a degree"
-          final_year: "I am a final year student"
-          second_year: "I am a second year student"
-          first_year: "I am a first year student"
-          i_don_t_have_a_degree_and_am_not_studying_for_one: "No, I am not studying for a degree"
+          final_year: "Almost, I'm a final year student"
+          second_year: "Not yet, I'm a second year student"
+          first_year: "Not yet, I'm a first year student"
+          i_don_t_have_a_degree_and_am_not_studying_for_one: "No, and I'm not studying for one"
           other: "Other"
 
     label:
       wizard_steps_authenticate:
-        timed_one_time_password: Enter the verification code sent to %{email}
+        timed_one_time_password: Check your email and enter the verification code sent to %{email}
 
       events_steps_personal_details:
         first_name: First name
@@ -265,7 +265,7 @@ en:
         address_telephone: Phone number (optional)
       events_steps_personalised_updates:
         address_postcode: What is your postcode? (optional)
-        degree_status_id: What stage are you at with your degree?
+        degree_status_id: Do you have a degree?
         consideration_journey_stage_id: How close are you to applying for teacher training?
         preferred_teaching_subject_id: What subject do you want to teach?
 
@@ -274,13 +274,13 @@ en:
         last_name: Last name
         email: Email address
       mailing_list_steps_degree_status:
-        degree_status_id: What stage are you at with your degree?
+        degree_status_id: Do you have a degree?
       mailing_list_steps_teacher_training:
         consideration_journey_stage_id: How close are you to applying for teacher training?
       mailing_list_steps_subject:
         preferred_teaching_subject_id: Which subject do you want to teach?
       mailing_list_steps_postcode:
-        address_postcode: What's your postcode? (optional)
+        address_postcode: Your postcode (optional)
 
       search:
         search: Search for ...
@@ -290,7 +290,7 @@ en:
         first_name: First name
         last_name: Last name
         email: Email address
-        address_postcode: What's your postcode? (optional)
+        address_postcode: What is your postcode? (optional)
         degree_status_id: Do you have a degree?
         preferred_teaching_subject_id: What would you like to teach?
         consideration_journey_stage_id: How close are you to applying for teacher training?
