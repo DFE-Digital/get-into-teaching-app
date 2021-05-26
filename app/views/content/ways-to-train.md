@@ -25,7 +25,7 @@ calls_to_action:
       name: simple
       arguments:
         icon: "icon-arrow"
-        text: "If you have a degree, search for postgraduate courses leading to qualified teacher status (QTS). This search tool does not include Teach First courses."
+        text: "If you have a degree (or you're getting one), search for postgraduate courses leading to qualified teacher status (QTS). This search tool does not include Teach First courses."
         link_text: "Find postgraduate teacher training courses"
         link_target: "https://www.gov.uk/find-postgraduate-teacher-training-courses"
 keywords:
@@ -57,7 +57,7 @@ You need 'qualified teacher status' (QTS) to work in the majority of schools in 
 
 Find out how to get QTS if you:
 
-* [have a degree](#if-you-have-a-degree) (or you're doing one)
+* [have a degree](#if-you-have-a-degree) (or you're getting one)
 * [do not have a degree](#if-you-do-not-have-a-degree) (and you're not already doing one)
 * [are already an experienced teacher](#if-you-are-already-an-experienced-teacher)
 
