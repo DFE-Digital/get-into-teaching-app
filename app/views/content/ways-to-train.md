@@ -20,6 +20,14 @@ right_column:
       icon: "icon-person"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
+calls_to_action:
+    find-postgraduate-training:
+      name: simple
+      arguments:
+        icon: "icon-arrow"
+        text: "If you have a degree, search for postgraduate courses leading to qualified teacher status (QTS). This service does not include Teach First courses."
+        link_text: "Find postgraduate teacher training courses"
+        link_target: "https://www.gov.uk/find-postgraduate-teacher-training-courses"
 keywords:
   - QTS
   - Qualified Teacher Status
@@ -142,7 +150,7 @@ Courses typically take one year but you may be able to study part-time.
   </div>
 </dl>
 
-<a href="https://www.gov.uk/find-postgraduate-teacher-training-courses" class="button">Find teacher training courses if you have a degree</a>
+$find-postgraduate-training$
 
 ## If you do not have a degree
 
