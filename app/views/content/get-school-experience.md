@@ -43,7 +43,7 @@ Many schools offer virtual experience. This could include talking to teachers an
 
 It's normal to have to try a few schools before you find one that can help.
 
-They may be limiting visitors due to coronavirus (COVID-19) and may need to organise a DBS check.
+They may be limiting visitors due to coronavirus (COVID-19) and may need to organise a [DBS check](https://www.gov.uk/government/organisations/disclosure-and-barring-service/about).
 
 Be flexible with your availability if possible and persevere with your search.
 

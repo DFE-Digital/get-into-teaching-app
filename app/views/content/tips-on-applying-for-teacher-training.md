@@ -170,7 +170,7 @@ As part of your personal statement you'll need to demonstrate your suitability t
 * your A level subjects
 * expertise you’ve gained at work
 
-[If you're concerned about your subject knowledge](/improve-your-subject-knowledge), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training. 
+[If you're concerned about your subject knowledge](/improve-your-subject-knowledge), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
 
 ## If you’re invited to interview
 
@@ -188,7 +188,7 @@ Some providers are doing interviews online due to COVID-19 restrictions.
 Congratulations!
 
 Before you start your training the provider will check whether you’re safe to work
-with children through an enhanced DBS check.
+with children through an enhanced [DBS check](https://www.gov.uk/government/organisations/disclosure-and-barring-service/about).
 
 They’ll also check whether you’re fit to train to teach through a health questionnaire.
 
