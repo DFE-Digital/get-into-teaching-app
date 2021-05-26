@@ -81,7 +81,7 @@ You may be able to get 'teaching and learning responsibility' (TLR) payments if 
 * progressing the education of people beyond your assigned pupils
 * leading, developing and enhancing the teaching practice of others
 
-TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on you responsibilities. For example, the higher payment involves taking on line management responsibilities.
+TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on your responsibilities. For example, the higher payment involves taking on line management responsibilities.
 
 | Level   | Minimum | Maximum |
 | ------- | -----   | -----   |
