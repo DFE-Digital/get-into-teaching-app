@@ -75,14 +75,16 @@
       li {
         padding: 1em;
 
-        .category:after {
+        span.multi.active:after {
           @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
           margin-left: 1em;
+          top:4px;
         }
 
         //if there is a link
-        a.category:after {
+        a.active:after {
           @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
+          
         }
       }
 
