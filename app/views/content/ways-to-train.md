@@ -28,6 +28,10 @@ calls_to_action:
         text: "If you have a degree (or you're getting one), search for postgraduate courses leading to qualified teacher status (QTS). This search tool does not include Teach First courses."
         link_text: "Find postgraduate teacher training courses"
         link_target: "https://www.gov.uk/find-postgraduate-teacher-training-courses"
+related_content:
+    Get support training to teach if you're disabled: "/tta-service"
+    Improve your subject knowledge : "/improve-your-subject-knowledge"
+    Tips on applying for teacher training : "/tips-on-applying-for-teacher-training"
 keywords:
   - QTS
   - Qualified Teacher Status

@@ -38,6 +38,8 @@
             </div>
           <% end %>
 
+          <%= render partial: "layouts/shared/narrow_call_to_action" %>
+
           <% if @front_matter["related_content"].present? %>
             <div class="link-block link-block--related">
               <h2 class="link-block__header">Related Content:</h2>
@@ -51,7 +53,6 @@
             </div>
           <% end %>
 
-          <%= render partial: "layouts/shared/narrow_call_to_action" %>
         </aside>
         <% end %>
 
@@ -99,4 +100,3 @@
         <%= render "components/analytics" %>
     <% end %>
 </html>
-
