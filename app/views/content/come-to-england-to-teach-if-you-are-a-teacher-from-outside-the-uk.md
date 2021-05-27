@@ -12,7 +12,7 @@ right_column:
         Come to an online event where you can ask advice from our panel of
         teaching experts about coming to teach in England.
       link_text: "Sign up"
-      link_target: "/events/advice-for-international-applicants-4"
+      link_target: "/event-categories/online-q-as"
       icon: "icon-calendar"
 keywords:
   - Nationality
@@ -98,11 +98,11 @@ If you’re a qualified teacher from outside the UK you can [work as a teacher i
 
 ### Talk to an adviser if you're qualified to teach maths, physics or modern languages
 
-If you’re an internationally-qualified teacher of maths, physics, or modern foreign languages at secondary school age, you can get one-to-one support with:
+You can get one-to-one support if you already have qualified teacher status (QTS) and you're qualified to teach secondary maths, physics or modern languages. Get help with:
 
 * the application process, such as writing a personal statement and preparing for an interview
-* accessing courses to enhance your subject knowledge
-* finding teaching vacancies
+* accessing courses to [improve your subject knowledge](/improve-your-subject-knowledge)
+* finding [teaching vacancies](https://teaching-vacancies.service.gov.uk/)
 
 <p class="call-to-action__action">
   <a href="/tta-service">Get an <span>adviser</span></a>

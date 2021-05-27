@@ -44,7 +44,7 @@
         icon: "icon-arrow"
         text: "If you come from outside England."
         link_text: "Train to teach as an international candidate"
-        link_target: "/international-candidates"
+        link_target: "/train-to-teach-in-england-as-an-international-student"
 
   keywords:
     - Bursaries

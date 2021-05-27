@@ -7,8 +7,9 @@ image: "/assets/images/international-dt.jpg"
 backlink: "../../"
 right_column:
   ctas:
-    - title: Are you from outside the UK but already a teacher?
+    - title: Already a teacher?
       text: |
+        If you're already a teacher from outside the UK, come to England to teach. 
       link_text: "Come to England to teach"
       link_target: "/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk"
       icon: "icon-person"
