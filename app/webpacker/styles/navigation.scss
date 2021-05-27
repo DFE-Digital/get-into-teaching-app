@@ -1,52 +1,49 @@
 #top-links {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-	//GC
-	background-color: $grey;
-	width: 100%;
+  //GC
+  background-color: $grey;
+  width: 100%;
 
+  nav {
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
 
-	nav {
-		justify-content: flex-end;
-		margin:  0;
-		padding: 0 1em;
-		display: flex;
-		flex-direction: column;
+    //GC
+    width: 100%;
 
-		//GC
-		width: 100%;
+    ol {
+      margin: 0;
+      list-style: none;
+      display: flex;
+      gap: 1em;
+      justify-content: flex-end;
 
-	    ol {
-	      margin: 0;
-	      list-style: none;
-	      display: flex;
-	      gap: 1em;
-	      justify-content: flex-end;
+      //GC
+      font-size: 14px;
 
-	      //GC
-	      font-size: 14px;
+      li {
+        padding: 1em;
 
-	      li {
-	        padding: 1em;
+        a {
+          //GC
+          color: $black;
+          text-decoration: none;
 
-	        a {
-		        //GC
-		        color: $black;
-		        text-decoration: none;
-		        &:hover {
-			        text-decoration: underline;
-		        }
-	        }
-
-	       }
-
-	    }
-	}
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
 }
-
 
 #main-navigation {
   display: flex;
@@ -79,31 +76,36 @@
         padding: 1em;
 
         .category:after {
-			@include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
-			margin-left: 1em;
+          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
+          margin-left: 1em;
         }
 
         //if there is a link
         a.category:after {
-	       @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
+          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
         }
-
-
       }
 
       @mixin active {
         background-color: $grey;
-
-              }
+      }
 
       &.primary {
-        li .active {
+        li {
+          .active {
+            @include active;
+            padding: 1em;
 
-          @include active;
-          padding: 1em;
+            &.multi:after {
+              margin-top: .3em;
+              @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
+            }
+          }
 
-
-
+          > .multi:after {
+            @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
+            margin-left: .5em
+          }
         }
       }
 
@@ -112,11 +114,13 @@
 
         li {
           flex-grow: 1;
+
           a {
-	          text-decoration: underline;
-	          &:hover {
-		          text-decoration: none;
-	          }
+            text-decoration: underline;
+
+            &:hover {
+              text-decoration: none;
+            }
           }
         }
       }
