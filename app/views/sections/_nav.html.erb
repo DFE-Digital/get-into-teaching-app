@@ -9,7 +9,7 @@
 
 </div>
 
-<div id="main-navigation" class="limit-content-width">
+<div id="main-navigation" class="limit-content-width" data-controller="nav">
 
   <div class="main-logo">
     Get Into Teaching
@@ -28,9 +28,7 @@
         <% end %>
       </li>
       <li>
-        <%= link_to_unless_current(tag.span("Ways to train", class: "multi"), page_path("ways-to-train"), class: "multi") do %>
-          <span class="active multi">Ways to train</span>
-        <% end %>
+        <%= tag.span("Ways to train", class: "multi", data: { action: "click->nav#toggleWays" }) %>
       </li>
       <li>
         <%= link_to_unless_current("Funding your training", page_path("funding-your-training")) do %>
@@ -44,14 +42,12 @@
       </li>
     </ol>
 
-    <% if request.path == "/ways-to-train" %>
-      <ol class="secondary">
-        <li><a href="/">One<a></li>
-        <li><a href="/">Two<a></li>
-        <li><a href="/">Three<a></li>
-        <li><a href="/">Four<a></li>
-        <li><a href="/">Five<a></li>
-      </ol>
-    <% end %>
+    <ol class="secondary" data-nav-target="secondary">
+      <li><a href="/">One<a></li>
+      <li><a href="/">Two<a></li>
+      <li><a href="/">Three<a></li>
+      <li><a href="/">Four<a></li>
+      <li><a href="/">Five<a></li>
+    </ol>
   </nav>
 </div>
