@@ -32,7 +32,7 @@ main,
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
 
 // new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
