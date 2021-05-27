@@ -1,34 +1,57 @@
 <div id="top-links" class="limit-content-width">
-	
+
   <nav>
     <ol>
       <li><a href="#">Register your interest<a></li>
       <li><a href="#">Search<a></li>
     </ol>
   </nav>
-  
+
 </div>
 
-<div id="main-navigation" class="limit-content-width">  
-  
+<div id="main-navigation" class="limit-content-width">
+
   <div class="main-logo">
     Get Into Teaching
   </div>
-  
+
   <nav>
     <ol class="primary">
-      <li><a href="/">Home<a></li>
-      <li><a href="/steps-to-become-a-teacher">Steps to become a teacher<a></li>
-      <li class="active category"><span class="category">Ways to train</li>
-      <li><a href="/funding-your-training">Funding your training<a></li>
-      <li><a class="category" href="/salaries-and-benefits">Salaries and benefits<a></li>
+      <li>
+        <%= link_to_unless_current("Home", root_path) do %>
+          <a href="/">Home<a>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to_unless_current("Steps to become a teacher", page_path("steps-to-become-a-teacher")) do %>
+          <span class="active">Steps to become a teacher</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to_unless_current("Ways to train", page_path("ways-to-train")) do %>
+          <span class="active">Ways to train</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to_unless_current("Funding your training", page_path("funding-your-training")) do %>
+          <span class="active">Funding your training</span>
+        <% end %>
+      </li>
+      <li>
+        <%= link_to_unless_current("Salaries and benefits", page_path("salaries-and-benefits")) do %>
+          <span class="active">Salaries and benefits</span>
+        <% end %>
+      </li>
     </ol>
-	<ol class="secondary">         
-	  <li><a href="/">One<a></li>  
-	  <li><a href="/">Two<a></li>  
-	  <li><a href="/">Three<a></li>
-	  <li><a href="/">Four<a></li> 
-	  <li><a href="/">Five<a></li> 
-	</ol>  
+
+    <% if request.path == "/ways-to-train" %>
+      <ol class="secondary">
+        <li><a href="/">One<a></li>
+        <li><a href="/">Two<a></li>
+        <li><a href="/">Three<a></li>
+        <li><a href="/">Four<a></li>
+        <li><a href="/">Five<a></li>
+      </ol>
+    <% end %>
   </nav>
 </div>
