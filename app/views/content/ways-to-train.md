@@ -182,9 +182,14 @@ Qualifications vary depending on the course. For example, you could get QTS with
 
 You may be able to get QTS through a 12-week 'assessment only' programme if you also have a degree.
 
-You’ll need to show evidence that you already meet the standards for QTS.
+You’ll need to show evidence that you already meet the standards for QTS. You may meet the standards if, for example:
 
-[Apply directly to assessment only teacher training providers](/assessment-only-providers) and ask them about entry criteria.
+* you’ve already been employed as an unqualified teacher for a significant amount of time (for example, 2 years) and you’ve worked in more than one school
+* [you’re a qualified teacher who trained overseas](/international-candidates#already-a-teacher-teach-in-england)
+
+Entry criteria may vary by teacher training provider. Ask them about eligibility before you apply.
+
+[Apply directly to assessment only teacher training providers](/assessment-only-providers).
 
 ## If you're changing career
 
