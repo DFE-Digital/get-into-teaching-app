@@ -25,7 +25,8 @@ calls_to_action:
       name: simple
       arguments:
         icon: "icon-arrow"
-        text: "If you have a degree (or you're getting one), search for postgraduate courses leading to qualified teacher status (QTS). This search tool does not include Teach First courses."
+        text: |-
+          If you have a degree (or you're getting one), search for postgraduate courses leading to qualified teacher status (QTS). This search tool does not include <a href="https://www.teachfirst.org.uk/">Teach First</a> courses.
         link_text: "Find postgraduate teacher training courses"
         link_target: "https://www.gov.uk/find-postgraduate-teacher-training-courses"
 related_content:

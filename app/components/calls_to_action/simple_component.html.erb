@@ -8,7 +8,7 @@
 
     <% if text.present? %>
       <p class="call-to-action__text">
-        <%= text %>
+        <%= text.html_safe %>
       </p>
     <% end %>
 
