@@ -40,13 +40,15 @@ calls_to_action:
       icon: "icon-person"
 right_column:
   ctas:
-  - title: Returning from overseas
+  - title: Return from overseas
     text: |
       Are you a UK-trained teacher and UK citizen currently working abroad?
     link_text: "Return to England to teach"
     link_target: "/international-returners"
     icon: "icon-person"
-  - title: Get support on your next steps
+  - title: Take the next step
+    text: |
+      Get support to take the next step at an event.
     link_text: "Attend an event"
     link_target: "/events"
     icon: "icon-calendar"
