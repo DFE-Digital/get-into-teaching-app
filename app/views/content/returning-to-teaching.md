@@ -50,6 +50,12 @@ right_column:
     link_text: "Attend an event"
     link_target: "/events"
     icon: "icon-calendar"
+quote:
+  q-helen-returner:
+    text: "Don’t necessarily expect to get the first job you apply for and don’t get disheartened if you’re not successful."
+    name: "Helen"
+    job_title: "Returning teacher"
+    inline: left
 ---
 
 Returning to teaching might be easier than you expect.
@@ -97,6 +103,10 @@ You can set up job alerts so that you do not miss out on any opportunities.
 Take a look at the different [types of schools and staff roles](https://www.gov.uk/types-of-school)
 to find the best opportunity for you. Vacancies with flexible working opportunities are listed on the service.
 
+$q-helen-returner$
+
+[Read Helen's top tips for returning teachers](/my-story-into-teaching/returners/top-tips-for-returning-teachers).
+
 ## National Tutoring Programme
 
 The National Tutoring Programme supports schools to close the attainment gap in light of the coronavirus pandemic and provides 2 different options to return to a school environment without taking on a full-time or part-time classroom role.
@@ -117,7 +127,3 @@ There’s lots you can do to re-familiarise yourself with teaching. For example,
 * read up on [teaching interview tips](https://www.teachertoolkit.co.uk/2019/04/04/job-interviews)
   and [get pointers on remote interviews](https://www.tes.com/news/coronavirus-10-tips-acing-remote-job-interview)
 * ensure your [pension is up to date](https://www.teacherspensions.co.uk/members/working-life/life-events/moving-abroad.aspx)
-
-## If you're a UK-trained teacher considering returning from overseas
-
-We’re here to support you to [progress your teaching career in England](/international-returners).
