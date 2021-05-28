@@ -1,5 +1,5 @@
 ---
-title: "Returning to teaching"
+title: "Return to teaching"
 description: |-
   Our return to teaching advisers can advise you on making a return to
   teaching, finding a role or joining the National Tutoring Programme.
@@ -54,7 +54,9 @@ If you’re considering coming back to the profession, or if you’re qualified 
 
 ## Why now
 
-Thousands of former teachers return to teaching each year and now could be a great time for you to become a teacher again and help support education recovery. 
+Thousands of former teachers return to teaching each year.
+
+Now could be a great time for you to become a teacher again and help support education recovery.
 
 Here at the Department for Education, we’re taking action to address some of the common issues that teachers face in the classroom. This includes helping schools to:
 
@@ -67,10 +69,9 @@ The education sector promotes inclusivity and diversity. There are many organisa
 
 [Search for jobs, including those with flexible working patterns, on Teaching Vacancies](https://teaching-vacancies.service.gov.uk/).
 
-## Return to teaching advisers
+## Get a return to teaching adviser
 
-If you want to return to teach modern foreign languages, maths or physics at
-secondary school in England, and hold '[qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts)', a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/) can give free one-to-one support with:
+If you have '[qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts)' and you want to return to teach modern foreign languages, maths or physics at secondary school in England, a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/) can give free one-to-one support with:
 
 * the applications process, such as writing personal statements and preparing for interviews
 * accessing courses to enhance your subject knowledge
