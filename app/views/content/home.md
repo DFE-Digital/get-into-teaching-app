@@ -9,7 +9,7 @@
   fullwidth: true
   lid_pixel_event: "Homepage"
   subtitle: "Get one step closer to the classroom with personalised guidance to your inbox."
-  subtitle_button: "Sign me up"
+  subtitle_button: "Sign up"
   subtitle_link: "/mailinglist/signup/name"
   image: "media/images/hero-home-dt.jpg"
   backlink: "/"
