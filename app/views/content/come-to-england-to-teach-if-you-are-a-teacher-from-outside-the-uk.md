@@ -98,7 +98,7 @@ If you’re a qualified teacher from outside the UK you can [work as a teacher i
 
 ### Talk to an adviser if you're qualified to teach maths, physics or modern languages
 
-You can get one-to-one support if you already have qualified teacher status (QTS) and you're qualified to teach secondary maths, physics or modern languages. Get help with:
+You can get one-to-one support if you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you're qualified to teach secondary maths, physics or modern languages. Get help with:
 
 * the application process, such as writing a personal statement and preparing for an interview
 * accessing courses to [improve your subject knowledge](/improve-your-subject-knowledge)
