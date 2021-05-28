@@ -1,22 +1,22 @@
 import { Application } from 'stimulus';
-import PageHelpfulController from 'page_helpful_controller';
+import FeedbackController from 'feedback_controller';
 
-describe('PageHelpfulController', () => {
+describe('FeedbackController', () => {
   document.body.innerHTML = `
-  <div id="pageHelpful" data-controller="page-helpful">
-    <p id="text" data-page-helpful-target="text">Is this page helpful?</p>
-    <a href="javascript:void(0)" id="answerButton" data-page-helpful-target="link" data-action="page-helpful#answer">Answer</a>
+  <div id="feedback" data-controller="feedback">
+    <p id="text" data-feedback-target="text">Is this page helpful?</p>
+    <a href="javascript:void(0)" id="answerButton" data-feedback-target="link" data-action="feedback#answer">Answer</a>
   </div>
   `;
 
   const application = Application.start();
-  application.register('page-helpful', PageHelpfulController);
+  application.register('feedback', FeedbackController);
   const answerButton = document.getElementById('answerButton');
 
   describe('on connect', () => {
     it('displays the page helpful HTML', () => {
-      const pageHelpful = document.getElementById('pageHelpful');
-      expect(pageHelpful.classList).toContain('visible');
+      const feedback = document.getElementById('feedback');
+      expect(feedback.classList).toContain('visible');
     });
   });
 
