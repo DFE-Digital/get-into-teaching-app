@@ -40,10 +40,16 @@ calls_to_action:
       icon: "icon-person"
 right_column:
   ctas:
-   - icon: icon-calendar
-     title: Returning from overseas?
-     link_text: How to become a teacher in England
-     link_target: "/international-returners"
+  - title: Returning from overseas
+    text: |
+      Are you a UK-trained teacher and UK citizen currently working abroad?
+    link_text: "Return to England to teach"
+    link_target: "/international-returners"
+    icon: "icon-person"
+  - title: Get support on your next steps
+    link_text: "Attend an event"
+    link_target: "/events"
+    icon: "icon-calendar"
 ---
 
 Returning to teaching might be easier than you expect.
