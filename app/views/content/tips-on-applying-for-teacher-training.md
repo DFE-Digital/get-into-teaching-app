@@ -30,6 +30,12 @@ calls_to_action:
       link_text: "Get a teacher training adviser"
       link_target: "/tta-service"
       icon: "icon-person"
+  right_column:
+  ctas:
+   - icon: icon-calendar
+     title: Returning from overseas?
+     link_text: How to become a teacher in England
+     link_target: "/international-returners"
 ---
 
 Give yourself the best chance of getting on the course you want.
