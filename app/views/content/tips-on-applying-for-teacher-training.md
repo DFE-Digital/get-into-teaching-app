@@ -33,8 +33,8 @@ calls_to_action:
 right_column:
   ctas:
    - icon: icon-calendar
-     title: Need help with your teacher training application?
-     link_text: Get a taecher training adviser
+     title: Need application support?
+     link_text: Get a teacher training adviser
      link_target: "/tta-service"
 ---
 
