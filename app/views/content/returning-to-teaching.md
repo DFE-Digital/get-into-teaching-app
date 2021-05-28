@@ -55,7 +55,6 @@ quote:
     text: "Don’t necessarily expect to get the first job you apply for and don’t get disheartened if you’re not successful."
     name: "Helen"
     job_title: "Returning teacher"
-    inline: left
 ---
 
 Returning to teaching might be easier than you expect.
