@@ -92,6 +92,10 @@
         background-color: $grey;
       }
 
+      .multi {
+        cursor: pointer;
+      }
+
       &.primary {
         li {
           &.active {
@@ -101,7 +105,7 @@
           &.up {
             span {
               &.multi:after {
-                margin-left: .4em;
+                margin-left: .8em;
                 margin-top: .3em;
                 @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
               }
@@ -111,24 +115,12 @@
           &.down {
             span {
               &.multi:after {
-                margin-left: .4em;
+                margin-left: .8em;
                 margin-top: .3em;
                 @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
               }
             }
           }
-
-          // span {
-          //   &.multi:after {
-          //     margin-top: .3em;
-          //     @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
-          //   }
-          // }
-
-          // > .multi:after {
-          //   @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
-          //   margin-left: .5em;
-          // }
         }
       }
 
