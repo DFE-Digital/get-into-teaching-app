@@ -54,7 +54,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.29.0"
+gem "view_component", "~> 2.32.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
