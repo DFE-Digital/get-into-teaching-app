@@ -39,6 +39,12 @@
           &:hover {
             text-decoration: underline;
           }
+          
+          span {
+	          margin-left: 0.5em;
+	          color: $grey-dark;
+          }
+          
         }
       }
     }
@@ -58,7 +64,7 @@
 
   nav {
     justify-content: flex-end;
-    margin: 2em 0 1em;
+    margin: 2em 0 0;
     padding: 0 1em;
 
     display: flex;
@@ -69,7 +75,7 @@
       list-style: none;
 
       display: flex;
-      gap: 1em;
+      gap: 1.2em;
       justify-content: flex-end;
       position: relative;
 
@@ -78,21 +84,21 @@
         padding: 1em;
 
         span.multi.active:after {
-          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
+          @include chevron-icon($color: $black, $dimensions: .5em, $rotate: map-get($chevron-direction-map, down));
           margin-left: 1em;
           top:4px;
         }
 
         //if there is a link
         a.active:after {
-          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
+          @include chevron-icon($color: $black, $dimensions: .5em, $rotate: map-get($chevron-direction-map, up));
           
         }
       }
 
       @mixin active {
         //background-color: $grey;
-        border-bottom: 3px solid $purple;
+        border-bottom: 4px solid $purple; //GC
       }
 
       .multi {
@@ -103,14 +109,16 @@
         li {
           &.active {
             @include active;
+            
           }
 
           &.up {
+	        background: $grey; //GC
             span {
               &.multi:after {
                 margin-left: .8em;
                 margin-top: .3em;
-                @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
+                @include chevron-icon($color: $black, $dimensions: .5em, $rotate: map-get($chevron-direction-map, up));
               }
             }
           }
@@ -120,7 +128,7 @@
               &.multi:after {
                 margin-left: .8em;
                 margin-top: .3em;
-                @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
+                @include chevron-icon($color: $black, $dimensions: .5em, $rotate: map-get($chevron-direction-map, down));
               }
             }
           }
@@ -131,9 +139,23 @@
         @include active;
         position: absolute;
         flex-direction: column;
-        padding: 0;
+        
         margin: 0;
-        top: 3em;
+        margin-left: -16px; //GC
+        top: 3.1em;
+        border-bottom: none; //GC
+        background: $grey; //GC
+        padding: 1.5em 0; //GC
+        
+        //-webkit-box-shadow: 0px 10px 20px -1px rgba(204,204,204,1);
+		//-moz-box-shadow: 0px 10px 20px -1px rgba(204,204,204,1);
+		//box-shadow: 0px 10px 20px -1px rgba(204,204,204,1); 
+		
+		
+		-webkit-box-shadow: 0 2px 4px rgb(0 68 152 / 4%), 0 4px 8px rgb(0 68 152 / 6%), 0 6px 12px rgb(0 68 152 / 5%);
+		box-shadow: 0 2px 4px rgb(0 68 152 / 4%), 0 4px 8px rgb(0 68 152 / 6%), 0 6px 12px rgb(0 68 152 / 5%);
+        
+        
 
         li {
           flex-grow: 1;

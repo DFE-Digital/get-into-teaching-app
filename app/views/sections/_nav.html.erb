@@ -2,8 +2,8 @@
 
   <nav>
     <ol>
-      <li><a href="#">Register your interest<a></li>
-      <li><a href="#">Search<a></li>
+      <li><a href="#">Register your interest<%= fas_icon("envelope") %><a></li>
+      <li><a href="#">Search<%= fas_icon("search") %><a></li>
     </ol>
   </nav>
 
@@ -35,11 +35,13 @@
         <%= tag.span("Becoming a teacher", class: "multi", data: { action: "click->nav#toggleWays" }) %>
 
         <ol class="secondary hidden" data-nav-target="secondary">
-          <li><a href="/ways-to-train/one">Ways to train<a></li>
-          <li><a href="/ways-to-train/two">Two<a></li>
-          <li><a href="/ways-to-train/three">Three<a></li>
-          <li><a href="/ways-to-train/four">Four<a></li>
-          <li><a href="/ways-to-train/five">Five<a></li>
+          <li><a href="/ways-to-train/one">Decide who to teach<a></li>
+          <li><a href="/ways-to-train/two">Check your qualifications<a></li>
+          <li><a href="/ways-to-train/three">Learn about funding<a></li>
+          <li><a href="/ways-to-train/four">Find the right training<a></li>
+          <li><a href="/ways-to-train/five">Next Steps<a></li>
+	      <li><a href="/ways-to-train/five">Find a course<a></li>
+		  <li><a href="/ways-to-train/five">Tips for applying<a></li>
         </ol>
       </li>
 
