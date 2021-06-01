@@ -10,7 +10,7 @@ gem "rails", "~> 6.1.3", ">= 6.1.3.2"
 gem "puma", "~> 5.3", ">= 5.3.1"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem "webpacker", ">= 5.3.0"
+gem "webpacker", ">= 5.4.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
