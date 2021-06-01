@@ -149,7 +149,7 @@ describe Internal::EventsController do
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:publisher)
         end
-        it "should have a final submit button" do
+        it "has a final submit button" do
           assert_response :success
           expect(response.body).to include "Set event status to Open"
         end
@@ -158,6 +158,11 @@ describe Internal::EventsController do
   end
 
   describe "#new" do
+    before do
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+        .to receive(:get_teaching_event_buildings) { [] }
+    end
+
     shared_examples "new event" do |event_params|
       it "renders #{event_params || 'provider'} events form" do
         get new_internal_event_path, headers: generate_auth_headers(:author), params: { event_type: event_params }
@@ -165,68 +170,63 @@ describe Internal::EventsController do
         assert_response :success
         expect(response.body).to include("#{event_params ? event_params.capitalize : 'Provider'} event details")
       end
-
-      context "when any user type" do
-        before do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [] }
-        end
-
-        context "when event is duplicated" do
-          let(:event_to_duplicate_readable_id) { "1" }
-          before do
-            allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-              .to receive(:get_teaching_event_buildings) { [] }
-            allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-              .to receive(:get_teaching_event).with(event_to_duplicate_readable_id) { pending_online_event }
-          end
-
-          it "renders the events form with populated fields" do
-            get new_internal_event_path(duplicate: event_to_duplicate_readable_id), headers: generate_auth_headers(:author)
-
-            assert_response :success
-            expect(response.body).to include("value=\"Pending online event\"")
-          end
-
-          it "removes 'id' and 'partial url' values" do
-            get new_internal_event_path(duplicate: event_to_duplicate_readable_id), headers: generate_auth_headers(:author)
-
-            assert_response :success
-            expect(css_select("#internal_event_id").first[:value]).to be_nil
-            expect(css_select("#internal-event-readable-id-field").first[:value]).to be_nil
-          end
-        end
-
-        context "when no event type parameter" do
-          include_examples "new event"
-        end
-
-        context "when provider event type parameter" do
-          include_examples "new event", "provider"
-        end
-
-        context "when online event type parameter" do
-          include_examples "new event", "online"
-        end
-      end
     end
 
-    describe "#edit" do
-      let(:event_to_edit_readable_id) { "1" }
-      context "when any user type" do
+    context "when any user type" do
+      context "when event is duplicated" do
+        let(:event_to_duplicate_readable_id) { "1" }
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [] }
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:get_teaching_event).with(event_to_edit_readable_id) { pending_provider_event }
-
-          get edit_internal_event_path(event_to_edit_readable_id), headers: generate_auth_headers(:author)
+            .to receive(:get_teaching_event).with(event_to_duplicate_readable_id) { pending_online_event }
         end
 
-        it "should have an events form with populated fields" do
+        it "renders the events form with populated fields" do
+          get new_internal_event_path(duplicate: event_to_duplicate_readable_id), headers: generate_auth_headers(:author)
+
           assert_response :success
-          expect(response.body).to include("value=\"Pending provider event\"")
+          expect(response.body).to include("value=\"Pending online event\"")
         end
+
+        it "removes 'id' and 'partial url' values" do
+          get new_internal_event_path(duplicate: event_to_duplicate_readable_id), headers: generate_auth_headers(:author)
+
+          assert_response :success
+          expect(css_select("#internal_event_id").first[:value]).to be_nil
+          expect(css_select("#internal-event-readable-id-field").first[:value]).to be_nil
+        end
+      end
+
+      context "when no event type parameter" do
+        include_examples "new event"
+      end
+
+      context "when provider event type parameter" do
+        include_examples "new event", "provider"
+      end
+
+      context "when online event type parameter" do
+        include_examples "new event", "online"
+      end
+    end
+  end
+
+  describe "#edit" do
+    let(:event_to_edit_readable_id) { "1" }
+    context "when any user type" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+          .to receive(:get_teaching_event_buildings) { [] }
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+          .to receive(:get_teaching_event).with(event_to_edit_readable_id) { pending_provider_event }
+
+        get edit_internal_event_path(event_to_edit_readable_id), headers: generate_auth_headers(:author)
+      end
+
+      it "has an events form with populated fields" do
+        assert_response :success
+        expect(response.body).to include("value=\"Pending provider event\"")
       end
     end
   end
@@ -261,7 +261,7 @@ describe Internal::EventsController do
           attributes_for :internal_event,
                          { "venue_type": Internal::Event::VENUE_TYPES[:existing], "building": { "id": building_id } }
         end
-        it "should post the event and an existing building" do
+        it "posts the event and an existing building" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
 
@@ -283,7 +283,7 @@ describe Internal::EventsController do
         let(:params) do
           attributes_for(:internal_event, { "venue_type": Internal::Event::VENUE_TYPES[:none], "building": { "id": "" } })
         end
-        it "should post no building" do
+        it "does not post a building" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
 
@@ -311,7 +311,7 @@ describe Internal::EventsController do
                                "venue": expected_venue,
                                "address_postcode": expected_postcode } }
         end
-        it "should post new building fields with no id" do
+        it "posts building with no id" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
 
@@ -367,7 +367,7 @@ describe Internal::EventsController do
       context "when event has no building" do
         let(:params) { { "id": event.id } }
 
-        it "should post the event with event status open" do
+        it "posts the event with event status open" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event.id) { event }
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
@@ -390,7 +390,7 @@ describe Internal::EventsController do
       context "when event has a building" do
         let(:params) { { "id": event.id } }
 
-        it "should post the event with event status open" do
+        it "posts the event with event status open" do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event.id) { event }
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
