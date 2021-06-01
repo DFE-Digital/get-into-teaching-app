@@ -189,12 +189,14 @@ describe Internal::EventsController do
           expect(response.body).to include("value=\"Pending online event\"")
         end
 
-        it "removes 'id' and 'partial url' values" do
+        it "removes 'id', 'partial url', 'start at' and 'end at' values" do
           get new_internal_event_path(duplicate: event_to_duplicate_readable_id), headers: generate_auth_headers(:author)
 
           assert_response :success
           expect(css_select("#internal_event_id").first[:value]).to be_nil
           expect(css_select("#internal-event-readable-id-field").first[:value]).to be_nil
+          expect(css_select("#internal_event_start_at").first[:value]).to be_nil
+          expect(css_select("#internal_event_end_at").first[:value]).to be_nil
         end
       end
 

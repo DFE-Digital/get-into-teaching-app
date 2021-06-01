@@ -5,6 +5,7 @@ module Internal
     helper_method :event_type_name
 
     DEFAULT_EVENT_TYPE = "provider".freeze
+    NILIFY_ON_DUPLICATE = %i[id readable_id start_at end_at].freeze
 
     def index
       @event_type = determine_event_type(params[:event_type])
@@ -26,8 +27,7 @@ module Internal
     def new
       if params[:duplicate]
         @event = get_event_by_id(params[:duplicate])
-        @event.id = nil
-        @event.readable_id = nil
+        @event.assign_attributes(NILIFY_ON_DUPLICATE.to_h { |attribute| [attribute, nil] })
       else
         @event_type = determine_event_type(params[:event_type])
         @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
