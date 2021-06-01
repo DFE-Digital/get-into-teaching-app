@@ -91,7 +91,8 @@
       }
 
       @mixin active {
-        background-color: $grey;
+        //background-color: $grey;
+        border-bottom: 3px solid $purple;
       }
 
       .multi {
