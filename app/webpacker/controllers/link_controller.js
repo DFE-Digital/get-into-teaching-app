@@ -3,10 +3,10 @@ import { Controller } from 'stimulus';
 export default class extends Controller {
   static targets = ['content'];
 
-  async connect() {
-    await this.preventTurboLinksOnJumpLinks();
-    await this.prepareChevronOnButtonLinks();
-    await this.openExternalContentLinksInNewWindow();
+  connect() {
+    this.preventTurboLinksOnJumpLinks();
+    this.prepareChevronOnButtonLinks();
+    this.openExternalContentLinksInNewWindow();
   }
 
   preventTurboLinksOnJumpLinks() {
