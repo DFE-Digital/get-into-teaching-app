@@ -17,37 +17,43 @@
 
   <nav>
     <ol class="primary">
-      <li>
-        <%= link_to_unless_current("Home", root_path) do %>
-          <a href="/">Home<a>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to_unless_current("Steps to become a teacher", page_path("steps-to-become-a-teacher")) do %>
-          <span class="active">Steps to become a teacher</span>
-        <% end %>
-      </li>
-      <li>
-        <%= tag.span("Ways to train", class: "multi", data: { action: "click->nav#toggleWays" }) %>
-      </li>
-      <li>
-        <%= link_to_unless_current("Funding your training", page_path("funding-your-training")) do %>
-          <span class="active">Funding your training</span>
-        <% end %>
-      </li>
-      <li>
-        <%= link_to_unless_current("Salaries and benefits", page_path("salaries-and-benefits")) do %>
-          <span class="active">Salaries and benefits</span>
-        <% end %>
-      </li>
-    </ol>
 
-    <ol class="secondary" data-nav-target="secondary">
-      <li><a href="/">One<a></li>
-      <li><a href="/">Two<a></li>
-      <li><a href="/">Three<a></li>
-      <li><a href="/">Four<a></li>
-      <li><a href="/">Five<a></li>
+      <% if request.path == root_path %>
+        <li class="active">Home</li>
+      <% else %>
+        <li><%= link_to("Home", root_path) %></li>
+      <% end %>
+
+      <% if request.path == page_path("steps-to-become-a-teacher") %>
+        <li class="active">Steps to become a teacher</li>
+      <% else %>
+        <li><%= link_to("Steps to become a teacher", page_path("steps-to-become-a-teacher")) %></li>
+      <% end %>
+
+
+      <li class="<%= request.path.start_with?("/ways-to-train") ? 'active' : nil %> down" data-nav-target="toggle">
+        <%= tag.span("Becoming a teacher", class: "multi", data: { action: "click->nav#toggleWays" }) %>
+
+        <ol class="secondary hidden" data-nav-target="secondary">
+          <li><a href="/ways-to-train/one">Ways to train<a></li>
+          <li><a href="/ways-to-train/two">Two<a></li>
+          <li><a href="/ways-to-train/three">Three<a></li>
+          <li><a href="/ways-to-train/four">Four<a></li>
+          <li><a href="/ways-to-train/five">Five<a></li>
+        </ol>
+      </li>
+
+      <% if request.path == page_path("funding-your-training") %>
+        <li class="active">Funding your training</li>
+      <% else %>
+        <li><%= link_to("Funding your training", page_path("funding-your-training")) %></li>
+      <% end %>
+
+      <% if request.path == page_path("salaries-and-benifits") %>
+        <li class="active">Salaries and benefits</li>
+      <% else %>
+        <li><%= link_to("Salaries and benefits", page_path("salaries-and-benifits")) %></li>
+      <% end %>
     </ol>
   </nav>
 </div>
