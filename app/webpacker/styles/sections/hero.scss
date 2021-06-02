@@ -5,6 +5,8 @@ $mobile-cutoff: 800px;
 
 // fallback styles (IE)
 .hero {
+  max-height: 25em;
+
   &__title {
     display: block;
     max-width: 90%;
