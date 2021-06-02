@@ -24,15 +24,12 @@
       display: flex;
       gap: 1em;
       justify-content: flex-end;
-
-      //GC
-      font-size: 14px;
+      font-size: 14px; //GC
 
       li {
-        padding: 1em;
+        padding: 1em .5em;
 
         a {
-          //GC
           color: $black;
           text-decoration: none;
 
@@ -41,7 +38,7 @@
           }
           
           span {
-	          margin-left: 0.5em;
+	          margin-left: 0.8em;
 	          color: $grey-dark;
           }
           
@@ -98,7 +95,7 @@
 
       @mixin active {
         //background-color: $grey;
-        border-bottom: 4px solid $purple; //GC
+        border-bottom: 5px solid $purple; //GC
       }
 
       .multi {
@@ -138,20 +135,16 @@
       &.secondary {
         @include active;
         position: absolute;
-        flex-direction: column;
+        //flex-direction: column; //vert
+        flex-direction: row; //Horiz
+        right: 0; //Horiz
         
         margin: 0;
-        margin-left: -16px; //GC
+        //margin-left: -16px; // vert
         top: 3.1em;
-        border-bottom: none; //GC
-        background: $grey; //GC
-        padding: 1.5em 0; //GC
-        
-        //-webkit-box-shadow: 0px 10px 20px -1px rgba(204,204,204,1);
-		//-moz-box-shadow: 0px 10px 20px -1px rgba(204,204,204,1);
-		//box-shadow: 0px 10px 20px -1px rgba(204,204,204,1); 
-		
-		
+        border-bottom: none;
+        background: $grey;
+        padding: 1.5em 0;
 		-webkit-box-shadow: 0 2px 4px rgb(0 68 152 / 4%), 0 4px 8px rgb(0 68 152 / 6%), 0 6px 12px rgb(0 68 152 / 5%);
 		box-shadow: 0 2px 4px rgb(0 68 152 / 4%), 0 4px 8px rgb(0 68 152 / 6%), 0 6px 12px rgb(0 68 152 / 5%);
         
@@ -159,12 +152,14 @@
 
         li {
           flex-grow: 1;
+          flex-wrap: wrap;
           padding: 0;
           margin: 0;
 
           a {
             text-decoration: underline;
-            padding: 0 2em;
+            //padding: 0 2em; // vert
+            //display: block;
 
             &:hover {
               text-decoration: none;
