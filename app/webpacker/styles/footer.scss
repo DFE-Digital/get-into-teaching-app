@@ -4,7 +4,7 @@ footer.site-footer {
 
   .site-footer__wrapper {
     display: flex;
-    gap: 4em;
+    // gap: 4em;
     flex-direction: column;
   }
 
@@ -14,7 +14,7 @@ footer.site-footer {
 
     @include mq($until: tablet) {
       flex-direction: column-reverse;
-      gap: 2em;
+      // gap: 2em;
     }
 
     &__links-container {
@@ -22,24 +22,36 @@ footer.site-footer {
 
       display: flex;
       flex-wrap: wrap;
-      column-gap: 1.5em;
-      row-gap: .6em;
-      justify-content: right;
 
-      @include mq($until: tablet) {
-        flex-direction: column;
-      }
+      justify-content: right;
 
       a {
         @include font-size("xsmall");
 
         color: $grey-mid;
+        margin-bottom: .5em;
+      }
+
+      // column-gap: 1.5em;
+      // row-gap: .6em;
+      a + a {
+        margin-left: 1.5em;
+      }
+
+      @include mq($until: tablet) {
+        flex-direction: column;
+        padding-bottom: 2em;
+
+        a + a {
+          margin-left: 0;
+        }
       }
     }
   }
 
   .site-footer-top {
     display: flex;
+    padding-bottom: 2em;
 
     .icon {
       @include font-size(large);
@@ -48,7 +60,11 @@ footer.site-footer {
     &__social {
       flex: 33% 0 0;
       display: flex;
-      gap: 1em;
+
+      // gap: 1em;
+      a + a {
+        margin-left: 1em;
+      }
 
       a,
       a:hover {
@@ -65,8 +81,12 @@ footer.site-footer {
       flex: 33% 0 0;
 
       display: flex;
-      gap: 3em;
       align-content: center;
+
+      // gap: 3em;
+      picture + picture {
+        margin-left: 3em;
+      }
     }
 
     &__links-container {
