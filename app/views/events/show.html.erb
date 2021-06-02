@@ -90,7 +90,7 @@
 
   <% if @event.providers_list %>
     <%= render Content::AccordionComponent.new do |accordion| %>
-      <%= accordion.slot(:step, title: "Training providers at this event") do %>
+      <%= accordion.step(title: "Training providers at this event") do %>
         <%= safe_html_format(@event.providers_list) %>
       <% end %>
     <% end %>
