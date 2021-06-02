@@ -50,6 +50,7 @@ RSpec.feature "Internal section", type: :feature do
 
       click_button "Submit for review"
       expect(page).to have_text "Event submitted for review"
+      expect(page).to have_link("test", href: internal_event_path("test"))
     end
 
     scenario "final submit" do

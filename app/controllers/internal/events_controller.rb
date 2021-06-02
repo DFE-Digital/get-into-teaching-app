@@ -15,6 +15,7 @@ module Internal
 
       @success = params[:success]
       @pending = params[:success] == "pending"
+      @readable_id = params[:readable_id]
     end
 
     def show
@@ -47,7 +48,7 @@ module Internal
       @event.assign_building(building_params) unless @event.online_event?
 
       if @event.save
-        redirect_to internal_events_path(success: :pending)
+        redirect_to internal_events_path(success: :pending, readable_id: @event.readable_id)
       else
         render action: :new
       end

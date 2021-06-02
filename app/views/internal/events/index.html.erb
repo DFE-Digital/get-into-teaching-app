@@ -7,6 +7,15 @@
           for review
         <% end %>
       </h1>
+      <% if @readable_id %>
+        <div class="govuk-panel__body">
+          Pending event<br>
+          <strong>
+            <%= link_to @readable_id,
+                internal_event_path(@readable_id) %>
+          </strong>
+        </div>
+      <% end %>
     </div>
   <% end %>
 

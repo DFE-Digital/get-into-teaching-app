@@ -277,7 +277,7 @@ describe Internal::EventsController do
                headers: generate_auth_headers(:author),
                params: { internal_event: params }
 
-          expect(response).to redirect_to(internal_events_path(success: :pending))
+          expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test"))
         end
       end
 
@@ -298,7 +298,7 @@ describe Internal::EventsController do
                headers: generate_auth_headers(:author),
                params: { internal_event: params }
 
-          expect(response).to redirect_to(internal_events_path(success: :pending))
+          expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test"))
         end
       end
 
@@ -335,7 +335,7 @@ describe Internal::EventsController do
                headers: generate_auth_headers(:author),
                params: { internal_event: params }
 
-          expect(response).to redirect_to(internal_events_path(success: :pending))
+          expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test"))
         end
       end
     end

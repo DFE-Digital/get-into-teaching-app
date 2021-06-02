@@ -37,6 +37,10 @@ $govuk-include-default-font-face: false;
 
   .confirmation-panel {
     margin: 0;
+
+    a {
+      color: $white;
+    }
   }
 
   // Tab navigation
