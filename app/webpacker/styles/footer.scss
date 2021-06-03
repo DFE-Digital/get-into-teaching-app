@@ -23,7 +23,7 @@ footer.site-footer {
       display: flex;
       flex-wrap: wrap;
 
-      justify-content: right;
+      justify-content: flex-end;
 
       a {
         @include font-size("xsmall");
