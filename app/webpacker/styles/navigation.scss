@@ -135,12 +135,12 @@
       &.secondary {
         @include active;
         position: absolute;
-        //flex-direction: column; //vert
-        flex-direction: row; //Horiz
-        right: 0; //Horiz
+        flex-direction: column; //vert
+        //flex-direction: row; //Horiz
+        //right: 0; //Horiz
         
         margin: 0;
-        //margin-left: -16px; // vert
+        margin-left: -16px; // vert
         top: 3.1em;
         border-bottom: none;
         background: $grey;
@@ -158,7 +158,7 @@
 
           a {
             text-decoration: underline;
-            //padding: 0 2em; // vert
+            padding: 0 2em; // vert
             //display: block;
 
             &:hover {
