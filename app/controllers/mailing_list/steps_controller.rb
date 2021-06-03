@@ -5,7 +5,7 @@ module MailingList
     include WizardSteps
     self.wizard_class = MailingList::Wizard
 
-    before_action :set_step_page_title, only: [:show]
+    before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
 
     layout "registration"
