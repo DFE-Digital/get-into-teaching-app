@@ -13,7 +13,7 @@ describe Events::Steps::ContactDetails do
     it { is_expected.to allow_value("01234567890").for :address_telephone }
     it { is_expected.to allow_value("01234 567890").for :address_telephone }
     it { is_expected.not_to allow_value("invalid").for :address_telephone }
-    it { is_expected.not_to allow_value("01234").for :address_telephone }
+    it { is_expected.not_to allow_value("1234").for :address_telephone }
   end
 
   describe "data cleaning" do
