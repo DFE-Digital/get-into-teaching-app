@@ -47,35 +47,6 @@ interviews. A [teacher training adviser](/tta-service) can help you with all of 
 
 You can [search for most postgraduate teacher training courses on GOV.UK](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
-You can apply to up to 3 courses in total, and then accept one offer.
-
-Many people do not get in the first time, but there’s no need to wait until the
-next year to apply again.
-
-You can rework your application and apply to further courses one at a time.
-
-[Attend an event](/events) to get your course questions answered.
-
-If you do not find the right course for you on GOV.UK, there are [other ways to
-train](/ways-to-train).
-
-## Questions to ask your training provider
-
-Every training provider and training programme is different.
-
-Note down any questions that come to mind while browsing courses.
-
-You may want to ask potential training providers questions, such as:
-
-1. How are academic work and practical teaching arranged?
-2. Who will my mentor be and how often will I meet with them?
-3. Which schools and how many schools will I teach in?
-4. Will I get any other qualifications aside from qualified teacher status
-   (QTS), and what are the benefits of that?
-5. Do you advise me to [get school experience](https://schoolexperience.education.gov.uk/)?
-6. Will you support me to find my first teaching job?
-7. How long does the training take?
-
 ## When to apply
 
 Courses usually open for applications in October for entry the following year
