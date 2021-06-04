@@ -1,6 +1,6 @@
 class TelephoneValidator < ActiveModel::EachValidator
   TELEPHONE_FORMAT = %r{\A[^a-zA-Z]+\z}.freeze
-  MINIMUM_LENGTH = 6
+  MINIMUM_LENGTH = 5
   MAXIMUM_LENGTH = 20
 
   def validate_each(record, attribute, value)
