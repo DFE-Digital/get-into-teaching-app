@@ -45,7 +45,8 @@
     "moduleDirectories": [
       "node_modules",
       "app/webpacker/controllers",
-      "app/webpacker/javascript"
+      "app/webpacker/javascript",
+      "app/webpacker/packs"
     ]
   },
   "scripts": {

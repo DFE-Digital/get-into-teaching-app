@@ -16,13 +16,16 @@
     If you're a parent or carer: "#if-youre-a-parent-or-carer"
     If you're disabled: "#if-youre-disabled"
     If you come from outside England: "#if-you-come-from-outside-england"
+  before-content:
+    - content/funding-your-training/funding-widget
   calls_to_action:
     chat:
       name: chat_online
       arguments:
         text: |-
-          If you're unsure about whether you qualify for a bursary or scholarship
-          you can chat to us.
+          If you're unsure about whether you qualify for a bursary or
+          scholarship you can chat to us, or call us on
+          <a href="tel:08003892500">0800 389 2500</a>.
     get-school-experience:
       name: simple
       arguments:
