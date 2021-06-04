@@ -4,7 +4,7 @@ module CallsToAction
 
     def initialize(icon:, title: nil, link_text:, link_target:, image:)
       @title         = title
-      @image         = image_element(image)
+      @image         = image
       @icon_filename = icon
 
       @link_target = link_target
