@@ -21,12 +21,27 @@ keywords:
   - when to apply
   - interviews
   - offers
+calls_to_action:
+  get-a-tta:
+    name: simple
+    arguments:
+      title: Get a teacher training adviser
+      text: "Teacher training advisers can help you with everything related to applying for teacher training."
+      link_text: "Get a teacher training adviser"
+      link_target: "/tta-service"
+      icon: "icon-person"
+right_column:
+  ctas:
+   - icon: icon-calendar
+     title: Need application support?
+     link_text: Get a teacher training adviser
+     link_target: "/tta-service"
 ---
 
 Give yourself the best chance of getting on the course you want.
 
 Discover tips on writing your application, finding referees and preparing for
-interviews.
+interviews. A [teacher training adviser](/tta-service) can help you with all of these.
 
 ## Browse courses
 
@@ -100,7 +115,7 @@ personal statement.
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
 
-[Talk to an experienced teacher for help preparing your application.](/tta-service)
+[Talk to an adviser for help preparing your application.](/tta-service)
 
 ## Choose your referees
 
@@ -172,6 +187,8 @@ As part of your personal statement you'll need to demonstrate your suitability t
 
 [If you're concerned about your subject knowledge](/improve-your-subject-knowledge), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
 
+You can [get support preparing a personal statement from an adviser](/tta-service).
+
 ## If you’re invited to interview
 
 Interviews usually last a day and may include time spent teaching real pupils.
@@ -204,3 +221,5 @@ technique or improve the quality of your application.
 
 You can apply as many times as you want to get a place. Many people succeed
 second or third time round.
+
+$get-a-tta$

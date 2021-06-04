@@ -310,6 +310,25 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Do you have a degree?"
   end
 
+  scenario "Partial journey with candidate encountering an error" do
+    expected_title = "Get Into Teaching: Get personalised guidance to your inbox, name step"
+
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+
+    visit mailing_list_steps_path
+
+    expect(page).to have_title(expected_title)
+
+    # try incorrectly first so we can check error state
+    click_on "Next Step"
+    expect(page).to have_text "There is a problem"
+    expect(page).to have_text "Enter your first name"
+    expect(page).to have_text "Enter your last name"
+    expect(page).to have_text "Enter your full email address"
+    expect(page).to have_title(expected_title)
+  end
+
   def fill_in_name_step(
     first_name: "Test",
     last_name: "User",

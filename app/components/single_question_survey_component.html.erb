@@ -1,0 +1,9 @@
+<div id="event_survey" data-controller="feedback">
+  <h3><%= question %></h3>
+  <div class="govuk-hint" data-feedback-target="text"><%= hint %></div>
+  <p>
+    <% answers.each do |answer| %>
+      <a href="javascript:void(0)" data-feedback-target="link" data-action="feedback#answer" role="button" class="survey-button survey-button--smaller"><%= answer %></a>
+    <% end %>
+  </p>
+</div>

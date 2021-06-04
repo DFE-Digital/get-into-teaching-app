@@ -2,6 +2,8 @@ $govuk-include-default-font-face: false;
 
 @import "~govuk-frontend/govuk/all";
 @import "~trix";
+@import "colours";
+$grey-very-light: #f3f2f1;
 
 .internal {
   .event-description {
@@ -34,14 +36,21 @@ $govuk-include-default-font-face: false;
     display: none;
   }
 
-  .confirmation-panel {
+  .confirmation-panel-container {
+    background-color: $grey-very-light;
+    padding-bottom: 30px;
     margin: 0;
+
+    a {
+      color: $white;
+    }
   }
 
   // Tab navigation
 
-  $grey-very-light: #f3f2f1;
-  $br: 7.5px;
+  $grey-very-dark: #202124;
+  $light-greyish-blue: #e8eaed;
+  $very-dark-greyish-blue: #5f6368;
 
   &.index {
     background-color: $grey-very-light;
@@ -51,8 +60,8 @@ $govuk-include-default-font-face: false;
       background-color: $white;
 
       .tab-bar {
-        padding: 20px 0 0 50px;
-        background-color: $grey-very-light;
+        background-color: $white;
+        border-bottom: 1px solid #e8eaed;
         margin: 0;
         display: flex;
         align-items: center;
@@ -60,28 +69,22 @@ $govuk-include-default-font-face: false;
         .tab {
           padding: 15px 30px;
           height: 100%;
-          list-style: none;
-          background-color: $green;
-          color: $white;
-          border-radius: $br $br 0 0;
-
-          &:not(:first-child) {
-            margin-left: 20px;
-          }
+          color: $very-dark-greyish-blue;
+          margin-left: 20px;
 
           &:focus {
             background-color: $yellow;
-            box-shadow: 0 -2px $yellow, 0 4px #1d1d1b;
+            box-shadow: 0 -2px $yellow, 0 4px $black;
           }
 
-          &:hover:not(:focus):not(.active-tab) {
-            background: darken($green, 5%);
+          &:hover:not(.active-tab) {
+            color: $grey-very-dark;
           }
         }
 
         .active-tab {
-          background-color: $white;
-          color: $black;
+          border-bottom: solid 2px $green;
+          color: $grey-very-dark;
         }
 
         .tab-link {
