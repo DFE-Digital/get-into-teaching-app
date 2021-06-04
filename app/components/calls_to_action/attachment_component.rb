@@ -21,6 +21,6 @@ class CallsToAction::AttachmentComponent < ViewComponent::Base
   end
 
   def icon_class
-    "fa-file-#{file_type.downcase}" if file_type.present?
+    "file-#{file_type.downcase}" if file_type.present?
   end
 end
