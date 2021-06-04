@@ -11,7 +11,7 @@
   subtitle: "There’s still time to apply and start your training this September."
   subtitle_button: "Find a course"
   subtitle_link: "/start-teacher-training-this-september"
-  image: "media/images/hero-home-dt.jpg"
+  image: "media/images/content/hero-images/0012-desktop.jpg"
   backlink: "/"
   content:
     - content/home/purple-box

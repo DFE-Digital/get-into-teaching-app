@@ -5,7 +5,7 @@ description: |-
   also includes additional pay if you teach SEN or take on extra
   responsibilities.
 date: "2021-02-24"
-image: "media/images/content/salaries-hero-dt.jpg"
+image: "media/images/content/hero-images/0003-desktop.jpg"
 backlink: "../../"
 navigation: 40
 lid_pixel_event: "SalaryBenefits"
