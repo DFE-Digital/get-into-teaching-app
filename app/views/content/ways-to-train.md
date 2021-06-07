@@ -17,8 +17,8 @@ right_column:
     - title: There's still time to apply and start training this September
       text: |
        Places fill up quickly, but many courses are still available.  
-      link_text: "Get a teaching training adviser"
-      link_target: "/tta-service"
+      link_text: "Find a course"
+      link_target: "/start-teacher-training-this-september"
       icon: "icon-person"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
