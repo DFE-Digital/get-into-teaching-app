@@ -8,8 +8,7 @@
       </div>
     </div>
 
-    <%= render "sections/header" %>
-
+    <%= render Sections::HeaderComponent.new %>
     <%= yield :hero %>
     <%= render Navigation::BreadcrumbComponent.new %>
 
