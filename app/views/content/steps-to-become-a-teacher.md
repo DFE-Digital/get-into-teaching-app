@@ -5,8 +5,8 @@
     These are the steps that people who want to become qualified teachers in
     England need to take.
   date: "2021-02-23"
-  image: "/assets/images/steps-hero-dt.jpg"
-  mobileimage: "/assets/images/steps-hero-mob.jpg"
+  image: "media/images/content/steps-hero-dt.jpg"
+  mobileimage: "media/images/content/steps-hero-mob.jpg"
   backlink: "../"
   navigation: 10
   lid_pixel_event: "Steps"

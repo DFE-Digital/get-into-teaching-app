@@ -5,7 +5,7 @@ description: |-
   and teach in England. We can help you see if you're ready and guide
   you through the application process.
 date: "2020-03-04"
-image: "/assets/images/international-dt.jpg"
+image: "media/images/content/international-dt.jpg"
 backlink: "../../"
 right_column:
   ctas:

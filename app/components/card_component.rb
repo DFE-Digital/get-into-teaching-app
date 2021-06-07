@@ -36,7 +36,7 @@ private
   end
 
   def thumbnail_image_tag
-    helpers.image_tag(image, data: { "object-fit" => "cover" }, size: "128x128", **thumbnail_image_alt_attribute)
+    helpers.image_pack_tag(image, data: { "object-fit" => "cover" }, size: "128x128", **thumbnail_image_alt_attribute)
   end
 
   def thumbnail_image_alt_attribute
@@ -47,7 +47,7 @@ private
 
   def video_link
     link_to(video, class: "card__thumb", data: { action: "click->video#play", "video-target": "link" }) do
-      safe_join([tag.div(helpers.fas_icon("play"), class: "card__thumb--play-icon"), image_tag(image, size: "128x128", **thumbnail_image_alt_attribute)])
+      safe_join([tag.div(helpers.fas_icon("play"), class: "card__thumb--play-icon"), image_pack_tag(image, size: "128x128", **thumbnail_image_alt_attribute)])
     end
   end
 

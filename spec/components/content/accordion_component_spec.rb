@@ -102,7 +102,7 @@ describe Content::AccordionComponent, type: "component" do
             "arguments" => {
               "name" => name,
               "heading" => heading,
-              "image" => "/an-image.jpg",
+              "image" => "media/images/dfelogo.png",
               "link" => "/some-link",
               "text" => "The quick brown fox",
             },

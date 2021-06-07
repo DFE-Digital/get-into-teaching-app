@@ -5,7 +5,7 @@
   stories:
     - name: Story
       snippet: Story snippet
-      image: /a/link/to/story/image.jpg
+      image: media/images/dfelogo.png
       link: /a/story/link
 ---
 

@@ -10,7 +10,7 @@
         <section class="container">
           <% if @front_matter.key?("featured_page") %>
             <section class="stories-feature">
-              <div class="stories-feature__image" style="background-image:url('<%= @front_matter.dig("featured_page", "image") %>')"></div>
+              <div class="stories-feature__image" style="background-image:url('<%= asset_pack_path(@front_matter.dig("featured_page", "image")) %>')"></div>
               <div class="stories-feature__content">
                 <%= tag.h2(@front_matter.dig("featured_page", "heading")) %>
                 <%= tag.span(@front_matter.dig("featured_page", "subheading"), class: "stories-feature__subheading") %>

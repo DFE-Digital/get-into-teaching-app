@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: "Salaried teacher training: classroom learning"
-image: /assets/images/stories/stories-nathan.jpg
+image: media/images/content/stories/stories-nathan.jpg
 backlink: "./"
 backlink_text: Teacher training stories
 story:

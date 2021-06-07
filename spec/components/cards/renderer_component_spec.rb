@@ -10,7 +10,7 @@ RSpec.describe Cards::RendererComponent, type: :component do
     let :edna do
       {
         title: "Edna's career",
-        image: "/images/edna-k.jpg",
+        image: "media/images/dfelogo.png",
       }
     end
 
@@ -19,7 +19,7 @@ RSpec.describe Cards::RendererComponent, type: :component do
         "name" => "Edna Krabappel",
         "snippet" => "Your education is important. Roman numerals, et cetera",
         "link" => "/stories/edna-k",
-        "image" => "/images/edna-k.jpg",
+        "image" => "media/images/dfelogo.png",
       }
     end
 
