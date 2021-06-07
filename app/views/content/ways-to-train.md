@@ -14,7 +14,7 @@ backlink: "../"
 navigation: 20
 right_column:
   ctas:
-    - title: There's still time to apply and start training this September
+    - title: Start your training this September
       text: |
        Places fill up quickly, but many courses are still available.  
       link_text: "Find a course"
