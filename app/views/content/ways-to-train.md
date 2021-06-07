@@ -19,7 +19,7 @@ right_column:
        Places fill up quickly, but many courses are still available.  
       link_text: "Find a course"
       link_target: "/start-teacher-training-this-september"
-      icon: "icon-person"
+      icon: "icon-calendar"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
 keywords:
