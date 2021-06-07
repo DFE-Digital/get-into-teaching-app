@@ -11,6 +11,8 @@ keywords:
     - Application
     - Apply
     - 2021 
+    - support
+    - training
 ---
 Everyday, people are being accepted onto courses that start this September. 
 
@@ -21,12 +23,13 @@ Courses cover a range of subjects including modern languages, mathematics, scien
 ## Find a course
 
 Search for a teacher training course:
-
-<a class="button button--white" href ="https://www.find-postgraduate-teacher-training.service.gov.uk">Find postgraduate teacher training</a>
+<p class ="button button--white">
+<a href ="https://www.find-postgraduate-teacher-training.service.gov.uk">Find postgraduate teacher training</a>
+</p>
 
 ## Get help to complete your application in time
 
-Our Teacher Training Advisors can help you write a strong application quickly. 
+Our teacher training advisers can help you write a strong application quickly. 
 
 They will help you to:
 
@@ -34,6 +37,8 @@ They will help you to:
 * choose the best people to be your references
 * explain any gaps in your work history
 
-<a class="button button--white" href = "/tta-service">Get a teacher training adviser</a>
+<p class ="button button--white">
+<a href = "/tta-service">Get a teacher training adviser</a>
+</p>
 
 An adviser will be in touch within 24 hours.
