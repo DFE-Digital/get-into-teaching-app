@@ -6,14 +6,17 @@ description: |-
   To teach in England you must have a degree and Qualified Teacher Status. You can
   get QTS by doing a PGCE, Postgraduate Teaching Apprenticeship or via one of the
   other routes listed here.
-date: "2021-02-26"
+subtitle: There’s still time to apply and start training this September. 
+subtitle_button: "Find a course"
+subtitle_link: "/start-teacher-training-this-september"
+date: "2021-06-07"
 backlink: "../"
 navigation: 20
 right_column:
   ctas:
-    - title: Get support from a teacher training adviser
+    - title: There's still time to apply and start training this September
       text: |
-       Unsure about the best route for you? A teacher training adviser can help.
+       Places fill up quickly, but many courses are still available.  
       link_text: "Get a teaching training adviser"
       link_target: "/tta-service"
       icon: "icon-person"
