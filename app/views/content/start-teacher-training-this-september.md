@@ -23,9 +23,8 @@ Courses cover a range of subjects including modern languages, mathematics, scien
 ## Find a course
 
 Search for a teacher training course:
-<p class ="button button--white">
-<a href ="https://www.find-postgraduate-teacher-training.service.gov.uk">Find postgraduate teacher training</a>
-</p>
+
+<a class ="button button--white" href ="https://www.find-postgraduate-teacher-training.service.gov.uk">Find postgraduate teacher training</a>
 
 ## Get help to complete your application in time
 
@@ -37,8 +36,6 @@ They will help you to:
 * choose the best people to be your references
 * explain any gaps in your work history
 
-<p class ="button button--white">
-<a href = "/tta-service">Get a teacher training adviser</a>
-</p>
+<a href = "/tta-service" class ="button button--white">Get a teacher training adviser</a>
 
 An adviser will be in touch within 24 hours.
