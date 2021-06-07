@@ -1,5 +1,6 @@
 ---
-title: "Start teacher training this September"
+title: "There's still time to apply"
+subtitle: "Start teacher training this September"
 description: |-
   There's still time to apply for teacher training in 2021. You could apply now and be training by September 2021 if you follow these instructions.
 date: "2021-06-07"
