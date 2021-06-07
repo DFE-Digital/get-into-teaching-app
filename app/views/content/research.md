@@ -12,6 +12,7 @@ calls_to_action:
       file_path: media/documents/my-favourite-subject.pdf
       file_type: PDF
       file_size: 266KB
+      published_at: 20 May 2021
   exploring-career-aspirations-in-the-wake-of-2020:
     name: attachment
     arguments:
