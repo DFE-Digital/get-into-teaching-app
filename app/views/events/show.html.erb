@@ -56,7 +56,7 @@
   <% if @event.video_url %>
   <h2>Video</h2>
   <div class="responsive-video">
-    <iframe class="responsive-video__iframe" src="<%= embed_event_video_url(@event.video_url) %>"></iframe>
+    <iframe title="An event preview" class="responsive-video__iframe" src="<%= embed_event_video_url(@event.video_url) %>"></iframe>
   </div>
   <br />
   <% end %>
