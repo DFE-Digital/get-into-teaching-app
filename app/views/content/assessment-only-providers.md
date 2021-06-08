@@ -3,7 +3,7 @@ title: Get qualified teacher status through an 'assessment only' programme
 description: |-
   A number of accredited providers have been approved to offer the
   'assessment only' (AO) route to qualified teacher status (QTS).
-date: "2021-03-02"
+date: "2021-06-08"
 image: false
 backlink: /
 fullwidth: true
