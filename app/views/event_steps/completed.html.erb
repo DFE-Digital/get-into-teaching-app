@@ -2,9 +2,9 @@
 
 <section class="text-content">
   <h2 class="green">Sign up complete</h2>
-  <h3>You are signed up for the following event:</h3>
 
-  <b><%= @event.name %></b>
+  <%= tag.h3("You are signed up for #{@event.name}.") %>
+
   <p><%= format_event_date @event, stacked: false %></p>
 
   <%- if params[:subscribed].to_s == "1" -%>
