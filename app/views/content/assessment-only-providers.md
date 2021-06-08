@@ -15,8 +15,8 @@ providers:
   - header: Billericay Educational Consortium
     link: http://secondary.billericayscitt.com/assessment-only-route-2/
     name: Fiona Manby
-    telephone: 01245 683619
-    email: info@billericayscitt.com
+    telephone: 01268 477611 (extn 471)
+    email: fiona@billericayscitt.com
   - header: Chiltern Training Group SCITT
     link: https://www.challneyboys.co.uk/
     name: Karen Bateman
