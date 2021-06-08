@@ -14,7 +14,7 @@ keywords:
     - support
     - training
 ---
-Everyday, people are being accepted onto courses that start this September. 
+Every day, people are being accepted onto courses that start this September.
 
 Places fill up quickly at this time of year, but there are still hundreds of courses available across the country.
 
