@@ -21,7 +21,7 @@ private
 
   def search_frontmatter
     searchable_pages.select do |_path, frontmatter|
-      keywords_match?(frontmatter[:keywords]) || title_matches?(frontmatter[:title])
+      keywords_match?(frontmatter[:keywords]&.map(&:to_s)) || title_matches?(frontmatter[:title])
     end
   end
 

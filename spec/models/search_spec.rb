@@ -56,6 +56,12 @@ RSpec.describe Search do
       it { is_expected.to be_nil }
     end
 
+    context "with numeric keyword" do
+      let(:search) { "2000" }
+
+      it { is_expected.to include("/second") }
+    end
+
     context "with search term matching partially page title" do
       let(:search) { "sec" }
 
