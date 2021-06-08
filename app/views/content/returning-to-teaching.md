@@ -61,6 +61,8 @@ quote:
 
 Returning to teaching might be easier than you expect.
 
+After a period of disruption for so many pupils, you could help those most affected to get back on track. Bring your valuable experience back to the classroom with help from the Department for Education.
+
 If you’re considering coming back to the profession, or if you’re qualified to teach but have never taught in a state school in England, we’re here to help.  
 
 <iframe src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
