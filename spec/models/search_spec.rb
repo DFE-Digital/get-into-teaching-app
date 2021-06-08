@@ -77,6 +77,12 @@ RSpec.describe Search do
       it { is_expected.to be_empty }
     end
 
+    context "when the search term is not a string" do
+      let(:search) { 2021 }
+
+      it { is_expected.to be_empty }
+    end
+
     describe "non-content pages" do
       describe "events" do
         Search::NON_CONTENT_PAGES.dig("/events", :keywords).each do |kw|
