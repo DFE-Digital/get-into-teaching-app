@@ -3,7 +3,7 @@ title: "Come to England to teach if you're a teacher from outside the UK"
 description: |-
   Come to England to teach if you're a qualified teacher from outside the UK
 date: "2021-05-27"
-image: "/assets/images/salaries-hero-dt.jpg"
+image: "media/images/content/salaries-hero-dt.jpg"
 backlink: "../../"
 right_column:
   ctas:
