@@ -2,7 +2,7 @@ class Search
   include ActiveModel::Model
   include ActiveModel::Attributes
 
-  attribute :search
+  attribute :search, :string
 
   def results
     return nil if search.blank?
