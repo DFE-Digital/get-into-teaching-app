@@ -20,13 +20,11 @@ Places fill up quickly at this time of year, but there are still hundreds of cou
 
 Courses cover a range of subjects including modern languages, mathematics, science and more.
 
-## Find a course
-
-Search for a teacher training course:
+### Search for a teacher training course
 
 <a class ="button button--white" href ="https://www.find-postgraduate-teacher-training.service.gov.uk">Find postgraduate teacher training</a>
 
-## Get help to complete your application in time
+### Get help to complete your application in time
 
 Our teacher training advisers can help you write a strong application quickly. 
 
