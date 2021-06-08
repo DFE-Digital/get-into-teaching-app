@@ -1,6 +1,12 @@
+@import "~govuk-frontend/govuk/helpers/visually-hidden";
+
 @mixin link-list {
   list-style-type: none;
   display: flex;
+}
+
+.skiplink {
+  @include govuk-visually-hidden;
 }
 
 .extra-links {
@@ -9,6 +15,7 @@
   justify-content: flex-end;
 
   ul {
+    @include reset;
     @include link-list;
     margin-right: 1em;
 
