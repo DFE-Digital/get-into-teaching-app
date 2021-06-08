@@ -3,7 +3,7 @@ title: Get qualified teacher status through an 'assessment only' programme
 description: |-
   A number of accredited providers have been approved to offer the
   'assessment only' (AO) route to qualified teacher status (QTS).
-date: "2021-03-02"
+date: "2021-06-08"
 image: false
 backlink: /
 fullwidth: true
@@ -15,8 +15,8 @@ providers:
   - header: Billericay Educational Consortium
     link: http://secondary.billericayscitt.com/assessment-only-route-2/
     name: Fiona Manby
-    telephone: 01245 683619
-    email: info@billericayscitt.com
+    telephone: 01268 477611 (extn 471)
+    email: fiona@billericayscitt.com
   - header: Chiltern Training Group SCITT
     link: https://www.challneyboys.co.uk/
     name: Karen Bateman
