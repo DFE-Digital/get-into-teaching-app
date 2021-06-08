@@ -1,8 +1,25 @@
-<div role="region" aria-label="Find out how coronavirus is affecting teacher training">
-  <section class="covid" data-controller="banner" data-banner-name="Covid">
-    <div class="limit-content-width">
-      <span class="covid__header"><a href="/covid-19">Find out how coronavirus is affecting teacher training</a></span>
-      <a href="#" data-action="click->banner#hide" class="covid__close"><span class="visually-hidden">Hide this message</span></a>
-    </div>
-  </section>
-</div>
+<section role="region" aria-label="Find out how coronavirus is affecting teacher training" class="covid" data-controller="banner" data-banner-name="Covid">
+  <div class="limit-content-width">
+    <span class="covid__header"><a href="/covid-19">Find out how coronavirus is affecting teacher training</a></span>
+    <a href="#" data-action="click->banner#hide" class="covid__close"><span class="visually-hidden">Hide this message</span></a>
+  </div>
+</section>
+
+<section class="extra-links">
+  <ul>
+    <li>Search</li>
+    <li>Sign up to the mailing list</li>
+  </ul>
+</section>
+
+<header>
+  <%= render("components/logo") %>
+  <nav>
+    <ul class="primary">
+        <%= nav_link("Home", '/') %>
+        <% resources.each do |resource| %>
+            <%= nav_link(resource[:front_matter][:title], resource[:path]) %>
+        <% end %>
+    </ul>
+  </nav>
+</header>
