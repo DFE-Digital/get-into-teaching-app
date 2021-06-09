@@ -15,7 +15,7 @@ RSpec.describe Pages::Page do
     context "with markdown page" do
       subject { described_class.find "/page1" }
 
-      it_behaves_like "a page", "Hello World 1", "/page1", "content/page1"
+      it_behaves_like "a page", "Hello World 1 Upwards", "/page1", "content/page1"
     end
 
     context "with non markdown page" do
@@ -28,7 +28,7 @@ RSpec.describe Pages::Page do
   describe ".featured" do
     subject { described_class.featured }
 
-    it_behaves_like "a page", "Hello World 1", "/page1", "content/page1"
+    it_behaves_like "a page", "Hello World 1 Upwards", "/page1", "content/page1"
 
     context "with multiple featured stories" do
       before { allow(Pages::Frontmatter).to receive(:select).and_return pages }

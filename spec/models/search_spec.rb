@@ -56,6 +56,30 @@ RSpec.describe Search do
       it { is_expected.to be_nil }
     end
 
+    context "with a stopword" do
+      let(:search) { "what" }
+
+      it { is_expected.to be_nil }
+    end
+
+    context "with an apostrophe" do
+      let(:search) { "John's" }
+
+      it { is_expected.to include(a_hash_including(path: "/subfolder/other")) }
+    end
+
+    context "with a hypehn" do
+      let(:search) { "Jim-bob" }
+
+      it { is_expected.to include(a_hash_including(path: "/subfolder/other")) }
+    end
+
+    context "with a misspelled term over 5 characters long" do
+      let(:search) { "abrowd" }
+
+      it { is_expected.to include(a_hash_including(path: "/subfolder/other")) }
+    end
+
     context "with numeric keyword" do
       let(:search) { "2000" }
 
@@ -72,9 +96,10 @@ RSpec.describe Search do
     context "with search term matching word later in title" do
       let(:search) { "wor" }
 
-      it { is_expected.to have_attributes length: 2 }
+      it { is_expected.to have_attributes length: 3 }
       it { is_expected.to include(a_hash_including(path: "/page1")) }
       it { is_expected.to include(a_hash_including(path: "/subfolder/page2")) }
+      it { is_expected.to include(a_hash_including(path: "/subfolder/other")) }
     end
 
     context "with search term starting in the middle of a word" do
@@ -87,6 +112,20 @@ RSpec.describe Search do
       let(:search) { 2021 }
 
       it { is_expected.to be_empty }
+    end
+
+    describe "ranking the results" do
+      let(:search) { "world upwards" }
+
+      it { is_expected.to have_attributes length: 3 }
+
+      it "weights keyword matches (by a factor of 2)" do
+        is_expected.to match([
+          a_hash_including(path: "/subfolder/other", rank: 4),
+          a_hash_including(path: "/page1", rank: 2),
+          a_hash_including(path: "/subfolder/page2", rank: 1),
+        ])
+      end
     end
 
     describe "non-content pages" do
