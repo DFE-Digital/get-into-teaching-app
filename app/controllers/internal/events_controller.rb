@@ -88,7 +88,7 @@ module Internal
 
       @group_presenter = Events::GroupPresenter.new(search_results)
       @events = @group_presenter.paginated_events_of_type(
-        GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+        event_type,
         params[:page],
       )
     end
