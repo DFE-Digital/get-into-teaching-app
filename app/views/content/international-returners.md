@@ -1,6 +1,6 @@
 ---
 title: Return to teaching from overseas
-image: "media/images/content/hero-images/0014-desktop.jpg"
+image: "media/images/content/hero-images/0014--desktop.jpg"
 backlink: "../../"
 description: |-
   Return to England to teach with the help of a teacher training adviser.

@@ -1,6 +1,6 @@
 ---
 title: Improve your subject knowledge
-image: "media/images/content/hero-images/0005-desktop.jpg"
+image: "media/images/content/hero-images/0005--desktop.jpg"
 article_classes: ['longform']
 description: |-
   You may be able to do a 'subject knowledge enhancement' (SKE) course to improve your knowledge of the subject you want to teach.

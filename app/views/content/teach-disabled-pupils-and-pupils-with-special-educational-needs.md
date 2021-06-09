@@ -3,7 +3,7 @@ title: "Teach disabled pupils and pupils with special educational needs"
 description: |-
   As a qualified teacher you’ll have the opportunity to work with pupils with complex needs, no matter what setting you work in.
 date: "2021-05-07"
-image: "media/images/content/hero-images/0023-desktop.jpg"
+image: "media/images/content/hero-images/0023--desktop.jpg"
 article_classes: ['longform']
 keywords:
   - SEND
