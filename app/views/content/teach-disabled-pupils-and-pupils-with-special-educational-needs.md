@@ -14,6 +14,11 @@ keywords:
   - teaching
   - teacher
   - special school
+
+# this is a test for secondary nav structure
+parent:
+  path: "/ways-to-train"
+  navigation: 1
 ---
 Most disabled pupils and pupils with special educational needs learn in mainstream schools.
 

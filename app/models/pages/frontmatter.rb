@@ -11,6 +11,10 @@ module Pages
         instance(content_dirs).list
       end
 
+      def navigation(content_dirs = nil)
+        instance(content_dirs).navigation
+      end
+
       def select(selector, content_dirs = nil)
         instance(content_dirs).select(selector)
       end
@@ -61,6 +65,10 @@ module Pages
       frontmatter
     end
     alias_method :to_h, :find
+
+    def navigation
+      @navigation ||= Navigation.new(list).to_a
+    end
 
     def preload
       content_dirs.reverse.each do |content_dir|
@@ -136,7 +144,7 @@ module Pages
     end
 
     def extract_frontmatter(file)
-      FrontMatterParser::Parser.parse_file(file).front_matter.symbolize_keys
+      FrontMatterParser::Parser.parse_file(file).front_matter.deep_symbolize_keys
     end
 
     def file_from_template(template)

@@ -17,7 +17,7 @@
   <nav>
     <ul class="primary">
         <%= nav_link("Home", '/') %>
-        <% resources.each do |resource| %>
+        <% Pages::Frontmatter.navigation.each do |resource| %>
             <%= nav_link(resource[:front_matter][:title], resource[:path]) %>
         <% end %>
     </ul>
