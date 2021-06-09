@@ -55,6 +55,12 @@ RSpec.describe FundingWidgetComponent, type: :component do
       it "has additional info for extra support" do
         expect(page).to have_css("p", text: "You may be able to get extra support")
       end
+
+      it "has the urgency notice" do
+        expect(page).to have_css("h3", text: "Start your teacher training this September")
+        expect(page).to have_css("div", text: "There's still time to find funding and complete an application. We can help you get ready.")
+        expect(page).to have_link(href: "/start-teacher-training-this-september")
+      end
     end
   end
 end
