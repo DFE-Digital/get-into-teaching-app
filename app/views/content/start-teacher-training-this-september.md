@@ -1,6 +1,6 @@
 ---
 title: "There's still time to apply"
-subtitle: "Start teacher training this September"
+subtitle: "Start teacher training this September."
 article_classes: ['longform']
 description: |-
   There's still time to apply for teacher training in 2021. You could apply now and be training by September 2021 if you follow these instructions.
