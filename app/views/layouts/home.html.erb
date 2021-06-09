@@ -8,7 +8,9 @@
       </div>
     </div>
 
-    <%= render Sections::HeaderComponent.new %>
+    <%= render Sections::HeaderComponent.new do |header| %>
+      <% header.primary_items(header_navigation) %>
+    <% end %>
     <%= render Sections::HeroComponent.new(@front_matter) %>
 
     <main class="home" role="main" id="main-content">

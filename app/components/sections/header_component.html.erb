@@ -16,10 +16,9 @@
   <%= render("components/logo") %>
   <nav>
     <ul class="primary">
-        <%= nav_link("Home", '/') %>
-        <% Pages::Frontmatter.navigation.each do |resource| %>
-            <%= nav_link(resource[:front_matter][:title], resource[:path]) %>
-        <% end %>
+      <% primary_items.each do |primary_item| %>
+        <%= primary_item %>
+      <% end %>
     </ul>
   </nav>
 </header>

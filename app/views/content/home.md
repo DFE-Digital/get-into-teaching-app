@@ -1,5 +1,6 @@
 ---
   layout: "layouts/home"
+  navigation_title: "Home"
   title: "Inspire the next generation"
   description: |-
     If you want to get into teaching, we can help. Get information on training
@@ -12,6 +13,7 @@
   subtitle_button: "Find a course"
   subtitle_link: "/start-teacher-training-this-september"
   image: "media/images/content/hero-images/0012.jpg"
+  navigation: 1
   backlink: "/"
   content:
     - content/home/purple-box

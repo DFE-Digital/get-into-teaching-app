@@ -105,4 +105,8 @@ module ApplicationHelper
       ' href="https://getintoteaching.education.gov.uk/how-we-use-your-information"',
       " href=\"#{cookies_path}\""
   end
+
+  def header_navigation
+    Pages::Frontmatter.navigation.to_a
+  end
 end
