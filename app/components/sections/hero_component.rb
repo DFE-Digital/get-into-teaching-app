@@ -22,14 +22,7 @@ module Sections
     end
 
     def picture
-      tag.picture do
-        safe_join(
-          [
-            tag.source(srcset: image_path, type: "image/jpeg", media: "(min-width: #{ResponsiveImages::BREAKPOINTS.fetch(:desktop)})"),
-            tag.img(src: image_path, data: { "lazy-disable": true }, alt: "Photograph of teaching taking place in a classroom"),
-          ],
-        )
-      end
+      tag.img(src: image_path, data: { "lazy-disable": true }, alt: "Photograph of teaching taking place in a classroom")
     end
 
     def show_subtitle?
