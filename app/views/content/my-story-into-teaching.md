@@ -5,7 +5,7 @@ description: |-
   Teachers offer an insight into day-to-day school life and the satisfaction
   that comes with making a difference to young people's lives.
 date: "2021-02-02"
-image: "media/images/content/hero-images/0010--desktop.jpg"
+image: "media/images/content/hero-images/0010.jpg"
 hide_page_helpful_question: true
 navigation: 35
 fullwidth: true

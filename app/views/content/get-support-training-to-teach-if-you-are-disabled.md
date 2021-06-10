@@ -1,6 +1,6 @@
 ---
 title: Get support training to teach if you're disabled
-image: "media/images/content/hero-images/0001--desktop.jpg"
+image: "media/images/content/hero-images/0001.jpg"
 article_classes: ['longform']
 description: |-
   If you’re disabled, have a mental health condition or educational needs, you can get support to become a teacher.

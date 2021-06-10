@@ -4,7 +4,7 @@
     Teachers lead fulfilling and varied lives. Here we take a closer look at a
     typical day in the life of a teacher.
   date: "2021-03-08"
-  image: "media/images/content/hero-images/0011--desktop.jpg"
+  image: "media/images/content/hero-images/0011.jpg"
   mobileimage: "media/images/content/teaching-as-a-career-hero-mob.jpg"
   backlink: "../"
   keywords:
