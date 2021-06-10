@@ -12,7 +12,7 @@ content:
   - content/assessment-only-providers/update-details
 providers:
   East of England:
-  - header: Billericay Educational Consortium
+  - header: BEC Teacher Training
     link: http://secondary.billericayscitt.com/assessment-only-route-2/
     name: Fiona Manby
     telephone: 01268 477611 (extn 471)
