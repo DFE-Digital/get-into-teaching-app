@@ -62,6 +62,15 @@ RSpec.describe Search do
       it { is_expected.to be_nil }
     end
 
+    context "with a space in front of the search term" do
+      let(:search) { " teach" }
+
+      it { is_expected.to have_attributes length: 3 }
+      it { is_expected.to include(a_hash_including(path: "/first")) }
+      it { is_expected.to include(a_hash_including(path: "/second")) }
+      it { is_expected.to include(a_hash_including(path: "/third")) }
+    end
+
     context "with an apostrophe" do
       let(:search) { "John's" }
 

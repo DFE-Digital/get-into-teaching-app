@@ -67,7 +67,7 @@ private
     text
       .to_s
       .split(WORD_BOUNDARY)
-      .reject { |w| ::Stopwords::EN.include?(w) }
+      .reject { |w| ::Stopwords::EN.include?(w) || w.blank? }
       .map(&:downcase)
   end
 
