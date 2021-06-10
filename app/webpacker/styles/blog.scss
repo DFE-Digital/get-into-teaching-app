@@ -1,0 +1,30 @@
+.blog-container {
+  background-image: url("../images/content/hero-images/0017.jpg");
+  background-repeat: no-repeat;
+  background-size: fit;
+  background-position: 0 -17em;
+  padding-top: 20em;
+
+  .blog-content {
+    max-width: $content-max-width;
+    margin: 0 auto;
+
+    background: white;
+    padding: 3em;
+
+    h1 {
+      padding-bottom: 1em;
+      border-bottom: 1px solid $grey-mid;
+
+      .meta {
+        margin-top: .5em;
+        font-size: 20pt;
+        color: $grey-dark;
+
+        .date {
+          font-size: 14pt;
+        }
+      }
+    }
+  }
+}

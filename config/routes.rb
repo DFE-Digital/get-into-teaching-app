@@ -105,5 +105,7 @@ Rails.application.routes.draw do
            as: "mailing_list_signup",
            only: %w[new create edit update]
 
+  resources "blogs", only: %i[index], path: "blog", controller: "blog"
+
   get "*page", to: "pages#show", as: :page, constraints: ->(request) { !request.path.start_with?("/rails/") }
 end

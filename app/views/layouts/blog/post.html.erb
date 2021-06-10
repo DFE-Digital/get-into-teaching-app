@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
+
+    <div id="skiplink-container">
+      <div>
+        <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+      </div>
+    </div>
+
+    <%= render "sections/header" %>
+
+    <main role="main" id="main-content">
+      <div class="blog-container">
+        <%= tag.article(class: article_classes(@front_matter).append("blog-content"), data: { controller: 'abbreviation' }) do %>
+          <h1>
+            <%= @front_matter["title"] %>
+            <div class="meta">
+              By <%= @front_matter["author"] %>
+
+              <div class="date">
+                <%= @front_matter["date"] %>
+              </div>
+            </div>
+          </h1>
+          <%= yield %>
+        <% end %>
+      </div>
+    </main>
+
+    <%= render "sections/mailing-list-bar" %>
+    <%= render "sections/footer" %>
+    <%= render "components/videoplayer" %>
+    <%= render "sections/cookie-acceptance" %>
+    <%= render "components/analytics" %>
+  <% end %>
+</html>
+

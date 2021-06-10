@@ -11,6 +11,7 @@ class PagesController < ApplicationController
     "layouts/stories/list",
     "layouts/stories/story",
     "layouts/campaigns/landing_page_with_hero_nav",
+    "layouts/blog/post",
   ].freeze
 
   def privacy_policy
