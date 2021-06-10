@@ -35,6 +35,7 @@ accordion:
       partial: content/international-returners/research-visas-and-immigration
 keywords:
   - International
+  - International returner
   - Returners
   - Return
   - Abroad
