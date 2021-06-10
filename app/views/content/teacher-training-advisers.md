@@ -15,6 +15,15 @@ quote:
       name: "Sarah"
       job_title: "Primary school teacher"
       inline: left
+calls_to_action:
+  get-a-tta:
+    name: simple
+    arguments:
+      title: Get a teacher training adviser
+      text: "Teacher training advisers can help you with everything related to applying for teacher training."
+      link_text: "Get a teacher training adviser"
+      link_target: "/tta-service"
+      icon: "icon-person"
 ---
 A Teacher Training Adviser is a free mentor who helps you get into teaching. They are all former teachers, so they speak from experience and know the process inside out.
 
@@ -60,7 +69,7 @@ To sign up, you’ll need one of these:
 * Predicted grade 2:2 or higher for your bachelor’s degree with honours, if you’re still a student
 * Overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
 
-[Get a teacher training adviser](/tta-service).
+$get-a-tta$
 
 Find out how an adviser helped:
 
