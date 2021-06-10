@@ -5,7 +5,7 @@ article_classes: ['longform']
 description: |-
   There's still time to apply for teacher training in 2021. You could apply now and be training by September 2021 if you follow these instructions.
 date: "2021-06-07"
-image: "media/images/content/teaching-as-a-career-hero-dt.jpg"
+image: "media/images/content/hero-images/0008.jpg"
 backlink: "../"
 keywords:
     - Application

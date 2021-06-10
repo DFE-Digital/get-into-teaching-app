@@ -3,7 +3,7 @@ title: "Train to teach in England as an international student"
 description: |-
   Train to teach in England as an international student
 date: "2021-05-27"
-image: "media/images/content/international-dt.jpg"
+image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
 right_column:
   ctas:

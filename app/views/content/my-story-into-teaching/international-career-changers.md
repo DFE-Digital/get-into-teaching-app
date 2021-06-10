@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/list"
 title: "International career changers"
-image: "media/images/content/life-as-a-teacher-header.jpg"
+image: "media/images/content/hero-images/0019.jpg"
 backlink: "../../"
 hide_page_helpful_question: true
 description: |-
