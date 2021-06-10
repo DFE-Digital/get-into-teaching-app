@@ -9,7 +9,6 @@
   subtitle: There’s still time to apply and start your training this September. 
   subtitle_button: "Find a course"
   subtitle_link: "/start-teacher-training-this-september"
-  mobileimage: "media/images/content/funding-hero-mob.jpg"
   backlink: "../"
   navigation: 25
   lid_pixel_event: "Funding"
