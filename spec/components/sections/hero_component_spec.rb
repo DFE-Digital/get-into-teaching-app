@@ -9,7 +9,7 @@ describe Sections::HeroComponent, type: "component" do
       "subtitle" => "Teach all the subjects!",
       "subtitle_link" => "/signup",
       "subtitle_button" => "Find out more",
-      "image" => "media/images/hero-home-dt.jpg",
+      "image" => "media/images/content/hero-images/0012.jpg",
     }
   end
   let(:component) { described_class.new(front_matter) }
@@ -32,7 +32,7 @@ describe Sections::HeroComponent, type: "component" do
             "subtitle" => "Teach all the subjects!",
             "subtitle_button" => "Click here to find out",
             "subtitle_link" => "https://foo.com",
-            "image" => "media/images/hero-home-dt.jpg",
+            "image" => "media/images/content/hero-images/0012.jpg",
           }
         end
 
@@ -58,7 +58,7 @@ describe Sections::HeroComponent, type: "component" do
       context "when an image is present in the front matter" do
         specify "the hero renders it" do
           expect(page).to have_css("img[data-lazy-disable=true]")
-          expect(rendered_component).to match(/images\/hero-home-dt-[0-9a-f]+\.jpg/)
+          expect(rendered_component).to match(/images\/.*[0-9a-f]+\.jpg/)
         end
       end
     end
