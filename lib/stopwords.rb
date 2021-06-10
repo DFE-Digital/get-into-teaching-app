@@ -378,7 +378,6 @@ module Stopwords
     say
     saying
     says
-    second
     secondly
     see
     seeing

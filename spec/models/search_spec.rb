@@ -57,7 +57,7 @@ RSpec.describe Search do
     end
 
     context "with a stopword" do
-      let(:search) { "what" }
+      let(:search) { "WhAt" }
 
       it { is_expected.to be_nil }
     end

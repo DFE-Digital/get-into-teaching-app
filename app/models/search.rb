@@ -7,8 +7,8 @@ class Search
   attribute :search, :string
 
   # Any non-word character, excluding
-  # joining characters ' and -
-  WORD_BOUNDARY = /[^\w'-]+/.freeze
+  # joining characters ', - and &
+  WORD_BOUNDARY = /[^\w'-\\&]+/.freeze
   MAX_LEVENSHTEIN_DISTANCE = 1
   LEVENSHTEIN_MIN_WORD_LENGTH = 6
   KEYWORD_WEIGHTING = 2
@@ -67,8 +67,8 @@ private
     text
       .to_s
       .split(WORD_BOUNDARY)
-      .reject { |w| ::Stopwords::EN.include?(w) || w.blank? }
       .map(&:downcase)
+      .reject { |w| ::Stopwords::EN.include?(w) || w.blank? }
   end
 
   def searchable_pages
