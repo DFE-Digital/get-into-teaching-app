@@ -8,6 +8,8 @@ image: "media/images/content/return-to-teaching-dt.jpg"
 backlink: "../../"
 keywords:
   - Returner
+  - Return
+  - Returning
   - Already
   - Qualified
   - Existing
