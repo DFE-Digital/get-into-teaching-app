@@ -121,6 +121,7 @@ If you’re unsure about taking on a teacher role at this time, [consider applyi
 There’s lots you can do to re-familiarise yourself with teaching. For example, you can:  
 
 * attend an [online return to teaching event](/event-categories/online-q-as)
+* read [Jill's journey](https://getintoteaching.education.gov.uk/my-story-into-teaching/returners/getting-back-into-the-classroom) to become a teacher again
 * review the latest [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards)
 * catch up on changes to the [national curriculum and qualifications](https://www.gov.uk/topic/schools-colleges-childrens-services/curriculum-qualifications)
 * [read through current behaviour management guidelines](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
