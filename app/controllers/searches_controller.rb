@@ -21,7 +21,10 @@ private
   end
 
   def autocomplete_results(results)
-    (results || []).map do |path, frontmatter|
+    (results || []).map do |page|
+      path = page[:path]
+      frontmatter = page[:frontmatter]
+
       {
         link: path,
         title: frontmatter[:title],

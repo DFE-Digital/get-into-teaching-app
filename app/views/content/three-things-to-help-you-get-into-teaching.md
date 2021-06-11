@@ -4,7 +4,7 @@
     Get some advice and tips on taking the next step in your journey into
     becoming a teacher.
   date: "2021-02-22"
-  image: media/images/content/hero-home-dt.jpg
+  image: "media/images/content/hero-images/0015.jpg"
   layout: layouts/campaigns/landing_page_with_hero_nav
   hero_nav:
     Receive personalised email updates and tips: "#receive-personalised-email-updates-and-tips"

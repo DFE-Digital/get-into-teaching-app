@@ -5,11 +5,10 @@
     maintenance loans are available to support your postgraduate teacher
     training.
   date: "2021-03-11"
-  image: "media/images/content/funding-hero-dt.jpg"
+  image: "media/images/content/hero-images/0013.jpg"
   subtitle: There’s still time to apply and start your training this September. 
   subtitle_button: "Find a course"
   subtitle_link: "/start-teacher-training-this-september"
-  mobileimage: "media/images/content/funding-hero-mob.jpg"
   backlink: "../"
   navigation: 25
   lid_pixel_event: "Funding"

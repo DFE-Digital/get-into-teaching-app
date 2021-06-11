@@ -8,7 +8,7 @@ RSpec.describe Pages::Frontmatter do
     context "with known page" do
       let(:page) { "/page1" }
 
-      it { is_expected.to include title: "Hello World 1" }
+      it { is_expected.to include title: "Hello World 1 Upwards" }
     end
 
     context "with nested page" do
@@ -29,7 +29,7 @@ RSpec.describe Pages::Frontmatter do
   shared_examples "a listing of all pages" do
     it { expect(subject.keys).to include "/page1" }
     it { expect(subject.keys).to include "/subfolder/page2" }
-    it { expect(subject["/page1"]).to include title: "Hello World 1" }
+    it { expect(subject["/page1"]).to include title: "Hello World 1 Upwards" }
     it { expect(subject.keys).to_not include "/_partial" }
   end
 

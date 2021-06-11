@@ -9,7 +9,7 @@ RSpec.describe Pages::Data do
     include_context "use fixture markdown pages"
 
     subject { instance.find_page "/page1" }
-    it { is_expected.to include title: "Hello World 1" }
+    it { is_expected.to include title: "Hello World 1 Upwards" }
   end
 
   describe "#latest_event_for_category" do
