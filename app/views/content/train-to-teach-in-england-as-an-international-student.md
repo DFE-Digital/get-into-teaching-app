@@ -14,6 +14,9 @@ right_column:
       link_target: "/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk"
       icon: "icon-person"
 keywords:
+  - International
+  - Overseas
+  - Foreign
   - Nationality
   - Residency
   - EEA

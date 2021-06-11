@@ -15,6 +15,9 @@ right_column:
       link_target: "/event-categories/online-q-as"
       icon: "icon-calendar"
 keywords:
+  - International
+  - Overseas
+  - Foreign
   - Nationality
   - Residency
   - EEA
