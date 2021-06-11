@@ -24,7 +24,7 @@ describe TelephoneValidator do
     end
   end
 
-  %w[01234567890 07123456789 +448574837584 555.3442.3516 (5835)533-6326-3525].each do |number|
+  %w[12345 01234567890 07123456789 +448574837584 555.3442.3516 (5835)533-6326-3525].each do |number|
     context "checking '#{number}'" do
       let(:instance) { test_model.new(telephone: number) }
       it { is_expected.not_to include :telephone }

@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Leaping to head of department
-image: /assets/images/stories/stories-jon.jpg
+image: media/images/content/stories/stories-jon.jpg
 backlink: "./"
 backlink_text: Career progression stories
 story:

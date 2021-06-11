@@ -1,14 +1,26 @@
 <div class="markdown events-index">
   <% if @success %>
-    <div class="govuk-panel govuk-panel--confirmation confirmation-panel">
-      <h1 class="govuk-panel__title">
-        Event submitted
-        <% if @pending %>
-          for review
+    <div class="confirmation-panel-container">
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          Event submitted
+          <% if @pending %>
+            for review
+          <% end %>
+        </h1>
+        <% if @readable_id %>
+          <div class="govuk-panel__body">
+            Pending event<br>
+            <strong>
+              <%= link_to @readable_id,
+                  internal_event_path(@readable_id) %>
+            </strong>
+          </div>
         <% end %>
-      </h1>
+        
+      </div>
     </div>
-  <% end %>
+  <% end %>  
 
   <div class="tab-bar">
     <%= link_to "Provider events",

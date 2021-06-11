@@ -1,9 +1,9 @@
 ---
-title: Providers of the Assessment Only (AO) route to QTS
+title: Get qualified teacher status through an 'assessment only' programme
 description: |-
   A number of accredited providers have been approved to offer the
-  Assessment-Only route to qualified teacher status (QTS).
-date: "2021-03-02"
+  'assessment only' (AO) route to qualified teacher status (QTS).
+date: "2021-06-08"
 image: false
 backlink: /
 fullwidth: true
@@ -12,11 +12,11 @@ content:
   - content/assessment-only-providers/update-details
 providers:
   East of England:
-  - header: Billericay Educational Consortium
+  - header: BEC Teacher Training
     link: http://secondary.billericayscitt.com/assessment-only-route-2/
     name: Fiona Manby
-    telephone: 01245 683619
-    email: info@billericayscitt.com
+    telephone: 01268 477611 (extn 471)
+    email: fiona@billericayscitt.com
   - header: Chiltern Training Group SCITT
     link: https://www.challneyboys.co.uk/
     name: Karen Bateman
@@ -249,8 +249,8 @@ providers:
     telephone: '01494 787573'
     email: sro@challoners.org
   - header: Boleyn Trust
-    link: https://www.elascitt.com 
-    email: elascitt@tollgate.boleyntrust.org 
+    link: https://www.elascitt.com
+    email: elascitt@tollgate.boleyntrust.org
   - header: Bourton Meadow Initial Teacher Training Centre
     # link: https://www.bourtonmeadowittc.co.uk
     name: Helen Byrom
@@ -330,7 +330,7 @@ providers:
     email: admin@itt-westberks.org
   - header: Xavier Catholic Education Trust
     link: https://www.teachsoutheast.co.uk/
-    email: a.harper@sjb.surrey.sch.uk 
+    email: a.harper@sjb.surrey.sch.uk
   South West:
   - header: Bath Spa University
     link: https://www.bathspa.ac.uk/
@@ -466,7 +466,8 @@ keywords:
   - experienced
 ---
 
-A number of accredited providers have been approved to offer the 
-Assessment Only (AO) route to qualified teacher status (QTS). 
-If you wish to apply for the AO route you should apply directly to one if the 
-following approved providers:
+If you’re an experienced teacher with a degree, you may be able to get qualified teacher status (QTS) through a 12-week assessment only (AO) programme.
+
+The following accredited teacher training providers offer the AO programme.
+
+Contact them directly to ask them about entry criteria and to apply.

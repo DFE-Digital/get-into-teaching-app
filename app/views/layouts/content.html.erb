@@ -56,9 +56,12 @@
         <% end %>
 
         <%= tag.article(class: article_classes(@front_matter), data: { controller: 'abbreviation' }) do %>
-
           <% if @front_matter["alert"].present? %>
             <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
+          <% end %>
+
+          <% @front_matter["before-content"]&.each do |partial| %>
+            <%= render(partial) %>
           <% end %>
 
           <%= yield %>
@@ -69,20 +72,18 @@
 
           <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>
             <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered"), active_step: accordion_fm.dig("active_step")) do |accordion| %>
-              <%= accordion.slot(
-                :content_before_accordion,
+              <% accordion.content_before_accordion(
                 partial: accordion_fm.dig("content_before_accordion", "partial"),
                 call_to_action: accordion_fm.dig("content_before_accordion", "cta")
               ) %>
 
               <% accordion_fm["steps"]&.each do |title, contents| %>
-                <%= accordion.slot(:step, title: title, call_to_action: contents["cta"]) do %>
+                <%= accordion.step(title: title, call_to_action: contents["cta"]) do %>
                   <%= render(partial: contents["partial"]) %>
                 <% end %>
               <% end %>
 
-              <%= accordion.slot(
-                :content_after_accordion,
+              <% accordion.content_after_accordion(
                 partial: accordion_fm.dig("content_after_accordion", "partial"),
                 call_to_action: accordion_fm.dig("content_after_accordion", "cta")
               ) %>

@@ -6,7 +6,7 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
   let :original do
     {
       title: "Page title",
-      image: "/test.jpg",
+      image: "media/images/dfelogo.png",
       featured_story_card: true,
       story: { "teacher" => "  Teacher Jones" },
     }
@@ -23,7 +23,7 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
   it { is_expected.to have_css ".card.card--no-border" }
   it { is_expected.to have_css ".card header", text: "Teacher's story" }
 
-  it { is_expected.to have_css 'img[src="/test.jpg"][alt="A photograph of a teacher"]' }
+  it { is_expected.to have_css 'img[src*="packs-test/media/images/dfelogo"][alt="A photograph of a teacher"]' }
   it { is_expected.to have_content "Page title" }
 
   it "includes the footer link" do

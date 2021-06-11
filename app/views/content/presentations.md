@@ -8,6 +8,19 @@ image: false
 backlink: /
 content:
   - content/presentations-cta
+calls_to_action:
+  train-to-teach-and-support:
+    name: attachment
+    arguments:
+      text: Train to Teach and Support slides
+      file_path: media/documents/train-to-teach-and-support.pdf
+      file_type: PDF
+  ready-to-apply:
+    name: attachment
+    arguments:
+      text: Ready to Apply slides
+      file_path: media/documents/ready-to-apply.pdf
+      file_type: PDF
 keywords:
   - Train to Teach
   - Event
@@ -29,10 +42,7 @@ This presentation covers:
 - What do I need to train to teach?
 - Advice and support from teacher training advisers
 
-<a href="/assets/documents/train-to-teach-and-support.pdf" class="call-to-action-icon-button">
-    Train to Teach and Support slides
-    <i class="fas fa-file-pdf"></i>
-</a>
+$train-to-teach-and-support$
 
 ## Ready to Apply?
 
@@ -43,8 +53,4 @@ This presentation covers:
 - Your application, including personal statement, work and school experience statements and references
 - Interviews
 
-<a href="/assets/documents/ready-to-apply.pdf" class="call-to-action-icon-button">
-    Ready to Apply slides
-    <i class="fas fa-file-pdf"></i>
-</a>
-
+$ready-to-apply$

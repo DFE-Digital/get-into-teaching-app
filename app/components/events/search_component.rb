@@ -13,7 +13,7 @@ module Events
     end
 
     def input_field_classes(field)
-      return "search__field--error" if search.errors[field].any?
+      return "form__field--error" if search.errors[field].any?
     end
 
     def month_args

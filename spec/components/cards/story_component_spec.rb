@@ -4,7 +4,7 @@ describe Cards::StoryComponent, type: "component" do
   let :edna do
     {
       title: "Edna's career in teaching",
-      image: "/images/edna-k.jpg",
+      image: "media/images/dfelogo.png",
     }
   end
 
@@ -13,7 +13,7 @@ describe Cards::StoryComponent, type: "component" do
       "name" => "Edna Krabappel",
       "snippet" => "Your education is important. Roman numerals, et cetera",
       "link" => "/stories/edna-k",
-      "image" => "/images/edna-k.jpg",
+      "image" => "media/images/dfelogo.png",
     }
   end
 
@@ -28,7 +28,7 @@ describe Cards::StoryComponent, type: "component" do
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }
   it { is_expected.not_to have_css ".card header" }
-  it { is_expected.to have_css "img[src=\"#{story['image']}\"]" }
+  it { is_expected.to have_css(%(img[src*="packs-test/media/images/dfelogo"])) }
   it { is_expected.to have_content story["snippet"] }
 
   specify "includes the name in a link" do

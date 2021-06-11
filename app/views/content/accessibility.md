@@ -7,6 +7,14 @@ description: |-
   understand.
 date: "2020-11-06"
 backlink: "../"
+calls_to_action:
+  dac-git-report:
+    name: attachment
+    arguments:
+      text: Read the full Digital Accessibility Centre Report
+      file_path: media/documents/dac_git_report.pdf
+      file_type: PDF
+      published_at: 01 September 2020
 keywords:
   - Accessibility
   - Accessibility information
@@ -74,6 +82,4 @@ This service was last tested on 01 September 2020. The test was carried out by t
 
 We tested our whole service platform.
 
-You can read the full [Digital Accessibility Centre Report](/assets/documents/dac_git_report.pdf).
-
-This statement was prepared on 01 September 2020.
+$dac-git-report$

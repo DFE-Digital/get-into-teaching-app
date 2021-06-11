@@ -36,7 +36,7 @@ module Cards
 
     def image
       # FIXME: change to image_pack_path once theres a new webpacker release
-      @image ||= resolve_path_to_image("latest-event-card.jpg")
+      @image ||= "media/images/latest-event-card.jpg"
     end
 
     def call

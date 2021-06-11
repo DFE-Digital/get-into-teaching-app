@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: From developing software to developing students
-image: /assets/images/stories/stories-steven.jpg
+image: media/images/content/stories/stories-steven.jpg
 backlink: "./"
 backlink_text: Career changers' stories
 story:

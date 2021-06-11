@@ -22,12 +22,21 @@ input {
 }
 
 form {
-  .fieldlabel,
   .govuk-label,
   h3.govuk-fieldset__heading {
     @include font-size("small");
     color: $black;
     font-weight: bold;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    > label.govuk-label {
+      font-size: inherit;
+    }
   }
 
   .govuk-form-group {
@@ -82,5 +91,18 @@ form {
 .govuk-radios__item {
   label {
     font-weight: normal;
+  }
+}
+
+.form__errors {
+  color: $red;
+  font-weight: bold;
+  margin-bottom: $indent-amount;
+}
+
+.form__field--error {
+  input,
+  select {
+    border-color: $red;
   }
 }

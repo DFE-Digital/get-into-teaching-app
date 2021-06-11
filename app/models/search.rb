@@ -2,7 +2,7 @@ class Search
   include ActiveModel::Model
   include ActiveModel::Attributes
 
-  attribute :search
+  attribute :search, :string
 
   def results
     return nil if search.blank?
@@ -21,7 +21,7 @@ private
 
   def search_frontmatter
     searchable_pages.select do |_path, frontmatter|
-      keywords_match?(frontmatter[:keywords]) || title_matches?(frontmatter[:title])
+      keywords_match?(frontmatter[:keywords]&.map(&:to_s)) || title_matches?(frontmatter[:title])
     end
   end
 

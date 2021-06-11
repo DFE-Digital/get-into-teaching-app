@@ -56,6 +56,12 @@ RSpec.describe Search do
       it { is_expected.to be_nil }
     end
 
+    context "with numeric keyword" do
+      let(:search) { "2000" }
+
+      it { is_expected.to include("/second") }
+    end
+
     context "with search term matching partially page title" do
       let(:search) { "sec" }
 
@@ -73,6 +79,12 @@ RSpec.describe Search do
 
     context "with search term starting in the middle of a word" do
       let(:search) { "ello" }
+
+      it { is_expected.to be_empty }
+    end
+
+    context "when the search term is not a string" do
+      let(:search) { 2021 }
 
       it { is_expected.to be_empty }
     end
