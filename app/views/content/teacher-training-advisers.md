@@ -10,11 +10,10 @@ keywords:
     - adviser
     - advisor
 quote:
-    q-sarah-primary:
+    q-tta-one:
       text: "I like to get in early so I can get organised — in teaching, preparation is everything."
-      name: "Sarah"
-      job_title: "Primary school teacher"
-      inline: left
+    q-tta-two:
+      text: "[My adviser] was extremely helpful as well as thoughtful and understanding."
 calls_to_action:
   get-a-tta:
     name: simple
@@ -31,7 +30,7 @@ Getting an adviser means you don’t need to go it alone. They’ll be there to 
 
 ## What an adviser can do for you
 
-$q-sarah-primary$
+$q-tta-one$
 
 Wherever you are in your journey into teaching, an adviser can help. 
 
@@ -46,9 +45,7 @@ Other trainee teachers say they are particularly helpful with:
 
 ## Helping you decide if teaching is right for you
 
-$q-sarah-primary$
-
-“[My adviser] was extremely helpful as well as thoughtful and understanding.”
+$q-tta-two$
 
 Meet Simon, a teacher training adviser.
 
