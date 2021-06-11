@@ -1,6 +1,7 @@
 module Content
   class CallToActionComponentInjector
     CALLS_TO_ACTION = {
+      "attachment" => CallsToAction::AttachmentComponent,
       "simple" => CallsToAction::SimpleComponent,
       "chat_online" => CallsToAction::ChatOnlineComponent,
       "story" => CallsToAction::StoryComponent,

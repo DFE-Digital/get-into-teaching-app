@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Returning to teaching with support from an adviser
-image: /assets/images/stories/stories-shaun.jpg
+image: media/images/content/stories/stories-shaun.jpg
 backlink: "./"
 backlink_text: Stories from international teachers
 story:
@@ -12,7 +12,7 @@ explore:
   - card_type: featured story
   - card_type: chat online
 more_information:
-  link: /international-candidates
+  link: /train-to-teach-in-england-as-an-international-student
   text: International candidates information
 build_layout_from_frontmatter: true
 description: |-

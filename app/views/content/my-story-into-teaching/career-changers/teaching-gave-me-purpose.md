@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Teaching gave me purpose
-image: /assets/images/stories/stories-luke.jpg
+image: media/images/content/stories/stories-luke.jpg
 backlink: "./"
 backlink_text: Career changers' stories
 story:

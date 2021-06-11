@@ -2,9 +2,9 @@
 
 <section class="text-content">
   <h2 class="green">Sign up complete</h2>
-  <h3>You are signed up for the following event:</h3>
 
-  <b><%= @event.name %></b>
+  <%= tag.h3("You are signed up for #{@event.name}.") %>
+
   <p><%= format_event_date @event, stacked: false %></p>
 
   <%- if params[:subscribed].to_s == "1" -%>
@@ -18,6 +18,22 @@
     You will receive a confirmation email with details of the event. If there
     is an issue with the event we will contact you via phone.
   </p>
+
+  <%= render SingleQuestionSurveyComponent.new(
+    question: 'How did you hear about this event?',
+    hint: 'Please click on one of the following options',
+    answers: [
+      'Get Into Teaching website',
+      'Get Into Teaching email',
+      'Social media',
+      'LinkedIn',
+      'Friends/family',
+      'University careers service/event',
+      'Radio',
+      'News article',
+      'Other'
+    ]
+  ) %>
 
   <span data-controller="pinterest"
         data-pinterest-action="track"

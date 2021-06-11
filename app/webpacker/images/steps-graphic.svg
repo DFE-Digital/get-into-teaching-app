@@ -1,29 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="490.689" height="279.344" viewBox="0 0 490.689 279.344">
-  <g id="Group_1441" data-name="Group 1441" transform="translate(-619.656 -845.001)">
-    <path id="Path_1614" data-name="Path 1614" d="M-282.547,11569.416c73.975,18.928,36.042-157.584,43.609-151.932,130.453-106.531,36.416,110.557,144.938,95.666,77.391,9.563-6.852-143.824,87-87.41s-49.412,142.451,54.563,170.207,67.609-66.766,49.773-121.946-3.109-119.876,59.664-108.845" transform="translate(935 -10495)" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="7"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="488.345" height="279.773" viewBox="0 0 488.345 279.773">
+  <g id="Group_1441" data-name="Group 1441" transform="translate(-619.656 -844.744)">
+    <path id="Path_1614" data-name="Path 1614" d="M-282.547,11569.416c73.975,18.928,36.042-157.584,43.609-151.932,130.453-106.531,36.416,110.557,144.938,95.666,66.169,8.176,59.486-99.555,60.025-101.381,9.541-32.323,30.7-29.115,44.3-20.936,93.852,56.414-66.742,177.357,37.232,205.113s67.609-66.766,49.773-121.946-3.109-119.876,59.664-108.845" transform="translate(935 -10495)" fill="none" stroke="#fff" stroke-width="6" stroke-dasharray="7"/>
     <g id="Group_1385" data-name="Group 1385" transform="translate(490.095 276)">
       <rect id="Rectangle_216" data-name="Rectangle 216" width="46" height="46" transform="translate(129.561 778.408) rotate(-3)" fill="#f9b400" opacity="0.9"/>
       <text id="_1" data-name="1" transform="translate(153.561 807)" fill="#fff" font-size="24" font-family="sans-serif" font-weight="700"><tspan x="-6.744" y="0">1</tspan></text>
     </g>
-    <g id="Group_1386" data-name="Group 1386" transform="translate(359.439 124)">
+    <g id="Group_1386" data-name="Group 1386" transform="translate(360.439 117.088)">
       <rect id="Rectangle_217" data-name="Rectangle 217" width="46" height="46" transform="translate(318.561 778.408) rotate(-3)" fill="#f9b400" opacity="0.9"/>
       <text id="_2" data-name="2" transform="translate(342.561 808)" fill="#fff" font-size="24" font-family="sans-serif" font-weight="700"><tspan x="-6.744" y="0">2</tspan></text>
     </g>
-    <g id="Group_1387" data-name="Group 1387" transform="translate(304.095 217)">
+    <g id="Group_1387" data-name="Group 1387" transform="translate(341.493 201.346)">
       <rect id="Rectangle_218" data-name="Rectangle 218" width="46" height="46" transform="translate(506.561 778.408) rotate(-3)" fill="#f9b400" opacity="0.9"/>
       <text id="_3" data-name="3" transform="translate(530.561 808)" fill="#fff" font-size="24" font-family="sans-serif" font-weight="700"><tspan x="-6.744" y="0">3</tspan></text>
     </g>
-    <g id="Group_1388" data-name="Group 1388" transform="translate(199.095 125)">
+    <g id="Group_1388" data-name="Group 1388" transform="translate(289.095 300.172)">
       <rect id="Rectangle_219" data-name="Rectangle 219" width="46" height="46" transform="translate(692.561 778.408) rotate(-3)" fill="#f9b400" opacity="0.9"/>
       <text id="_4" data-name="4" transform="translate(716.561 808)" fill="#fff" font-size="24" font-family="sans-serif" font-weight="700"><tspan x="-6.744" y="0">4</tspan></text>
     </g>
-    <g id="Group_1389" data-name="Group 1389" transform="translate(77.096 300)">
+    <g id="Group_1389" data-name="Group 1389" transform="translate(175.096 68.743)">
       <rect id="Rectangle_1309" data-name="Rectangle 1309" width="46" height="46" transform="translate(884.561 778.408) rotate(-3)" fill="#f9b400" opacity="0.9"/>
       <text id="_5" data-name="5" transform="translate(908.561 808)" fill="#fff" font-size="24" font-family="sans-serif" font-weight="700"><tspan x="-6.744" y="0">5</tspan></text>
-    </g>
-    <g id="Group_1390" data-name="Group 1390" transform="translate(177.439 69)">
-      <rect id="Rectangle_1309-2" data-name="Rectangle 1309" width="46" height="46" transform="translate(884.561 778.408) rotate(-3)" fill="#f9b400" opacity="0.9"/>
-      <text id="_6" data-name="6" transform="translate(908.561 808)" fill="#fff" font-size="24" font-family="sans-serif" font-weight="700"><tspan x="-6.744" y="0">6</tspan></text>
     </g>
   </g>
 </svg>

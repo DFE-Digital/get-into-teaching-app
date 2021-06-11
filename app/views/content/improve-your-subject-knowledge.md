@@ -1,8 +1,8 @@
 ---
 title: Improve your subject knowledge
-image: "/assets/images/international-dt.jpg"
+image: "media/images/content/international-dt.jpg"
 article_classes: ['longform']
-mobileimage: "/assets/images/steps-hero-mob.jpg"
+mobileimage: "media/images/content/steps-hero-mob.jpg"
 description: |-
   You may be able to do a 'subject knowledge enhancement' (SKE) course to improve your knowledge of the subject you want to teach.
 date: "2021-05-14"

@@ -37,6 +37,15 @@ class PagesController < ApplicationController
       breadcrumb page.title, page.path if @page.title.present?
     end
 
+    if @page.path.match?(/funding-your-training/)
+      @funding_widget =
+        if params[:funding_widget].blank?
+          FundingWidget.new
+        else
+          FundingWidget.new(funding_widget_params).tap(&:valid?)
+        end
+    end
+
     render template: @page.template, layout: page_layout
   end
 
@@ -52,6 +61,10 @@ class PagesController < ApplicationController
   end
 
 private
+
+  def funding_widget_params
+    params.require(:funding_widget).permit(:subject)
+  end
 
   def page_layout
     layout = @page.frontmatter[:layout]

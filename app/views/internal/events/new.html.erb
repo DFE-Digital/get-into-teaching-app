@@ -38,12 +38,15 @@
 
   <%= render "form/govuk_error_message", label: "Start at", field_errors: @event.errors[:start_at] do %>
     <%= f.datetime_field :start_at,
+                         max: Date.new(9999, 01, 01),
                          class: class_names("datetime", "govuk-input", { "govuk-input--error": @event.errors[:start_at].any? }),
                          data: { "internal-events-target": "startAt" } %>
   <% end %>
   <%= render "form/govuk_error_message", label: "End at", field_errors: @event.errors[:end_at] do %>
-    <%= f.datetime_field :end_at, class: class_names("datetime", "govuk-input",
-                                                     { "govuk-input--error": @event.errors[:end_at].any? }) %>
+    <%= f.datetime_field :end_at,
+                         max: Date.new(9999, 01, 01),
+                         class: class_names("datetime", "govuk-input",
+                                            { "govuk-input--error": @event.errors[:end_at].any? }) %>
   <% end %>
 
   <%= f.govuk_text_field :readable_id,

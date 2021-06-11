@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: One year from Post Grad to head of department
-image: /assets/images/stories/stories-owen.jpg
+image: media/images/content/stories/stories-owen.jpg
 backlink: "./"
 backlink_text: Career progression stories
 story:

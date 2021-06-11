@@ -5,7 +5,7 @@ description: |-
   also includes additional pay if you teach SEN or take on extra
   responsibilities.
 date: "2021-02-24"
-image: "/assets/images/salaries-hero-dt.jpg"
+image: "media/images/content/salaries-hero-dt.jpg"
 backlink: "../../"
 navigation: 40
 lid_pixel_event: "SalaryBenefits"
@@ -74,20 +74,19 @@ The support package includes:
 * funded training for mentors of early career teachers
 * funded time for mentors to support early career teachers
 
-### Teaching and learning responsibility (TLR) payments
+### Get a salary uplift for taking on extra responsibilities
 
-If you take on extra ongoing responsibilities in your role, you could get a salary uplift.
+You may be able to get 'teaching and learning responsibility' (TLR) payments if you take on extra responsibilities such as:
 
-There are 2 main ranges for these (TLR 1 and TLR 2), depending on the category your duties come under:
+* progressing the education of people beyond your assigned pupils
+* leading, developing and enhancing the teaching practice of others
+
+TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on your responsibilities. For example, the higher payment involves taking on line management responsibilities.
 
 | Level   | Minimum | Maximum |
 | ------- | -----   | -----   |
 | TLR 1   | £8,291  | £14,030 |
 | TLR 2   | £2,873  | £7,017  |
-
-Factors that apply to awarding TLRs include impact on educational progress beyond the teacher’s assigned pupils.
-
-It may also involve leading, developing and enhancing the teaching practice of others.
 
 ### Holidays
 

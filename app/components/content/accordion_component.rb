@@ -1,9 +1,9 @@
 module Content
   class AccordionComponent < ViewComponent::Base
     include ViewComponent::Slotable
-    with_slot :step, collection: true, class_name: "Step"
-    with_slot :content_before_accordion, class_name: "ContentBeforeAccordion"
-    with_slot :content_after_accordion, class_name: "ContentAfterAccordion"
+    renders_many :steps, "Step"
+    renders_one :content_before_accordion, "ContentBeforeAccordion"
+    renders_one :content_after_accordion, "ContentAfterAccordion"
 
     attr_reader :numbered
 
@@ -30,7 +30,7 @@ module Content
       { controller: "accordion", accordion_active_step_value: @active_step }.compact
     end
 
-    class ComposableSlot < ViewComponent::Slot
+    class ComposableSlot < ViewComponent::Base
       attr_reader :call_to_action
     end
 
@@ -40,6 +40,10 @@ module Content
       def initialize(title:, call_to_action: nil)
         @title = title
         @call_to_action = Content::CallToActionComponentInjector.new(call_to_action).component
+      end
+
+      def call
+        helpers.tag.div(content, class: "step-content__description")
       end
     end
 

@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Turning a tough lesson into a success
-image: /assets/images/stories/stories-danny.jpg
+image: media/images/content/stories/stories-danny.jpg
 backlink: "./"
 backlink_text: Stories about making a difference
 story:

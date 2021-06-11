@@ -5,8 +5,11 @@
     maintenance loans are available to support your postgraduate teacher
     training.
   date: "2021-03-11"
-  image: "/assets/images/funding-hero-dt.jpg"
-  mobileimage: "/assets/images/funding-hero-mob.jpg"
+  image: "media/images/content/funding-hero-dt.jpg"
+  subtitle: There’s still time to apply and start your training this September. 
+  subtitle_button: "Find a course"
+  subtitle_link: "/start-teacher-training-this-september"
+  mobileimage: "media/images/content/funding-hero-mob.jpg"
   backlink: "../"
   navigation: 25
   lid_pixel_event: "Funding"
@@ -16,13 +19,16 @@
     If you're a parent or carer: "#if-youre-a-parent-or-carer"
     If you're disabled: "#if-youre-disabled"
     If you come from outside England: "#if-you-come-from-outside-england"
+  before-content:
+    - content/funding-your-training/funding-widget
   calls_to_action:
     chat:
       name: chat_online
       arguments:
         text: |-
-          If you're unsure about whether you qualify for a bursary or scholarship
-          you can chat to us.
+          If you're unsure about whether you qualify for a bursary or
+          scholarship you can chat to us, or call us on
+          <a href="tel:08003892500">0800 389 2500</a>.
     get-school-experience:
       name: simple
       arguments:
@@ -44,7 +50,7 @@
         icon: "icon-arrow"
         text: "If you come from outside England."
         link_text: "Train to teach as an international candidate"
-        link_target: "/international-candidates"
+        link_target: "/train-to-teach-in-england-as-an-international-student"
 
   keywords:
     - Bursaries

@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Getting back into the classroom
-image: /assets/images/stories/stories-jill.jpg
+image: media/images/content/stories/stories-jill.jpg
 backlink: "./"
 backlink_text: Stories about returning to teaching
 story:

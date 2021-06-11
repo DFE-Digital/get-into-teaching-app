@@ -1,0 +1,71 @@
+<div class="call-to-action call-to-action--funding-widget">
+  <div class="call-to-action__content">
+    <span class="call-to-action__heading">What funding could I get for teacher training?</span>
+
+    <div class="call-to-action__text">
+      <div class="call-to-action__form">
+        <%= form_with(model: form, url: path, method: :get, local: true, html: { data: { "controller": "funding-widget" ,"funding-widget-target": 'form'}}) do |f| %>
+          <div class="field">
+            <%= tag.div(class: input_field_classes(:subject)) do %>
+              <%= f.label :subject, 'Choose the subject you want to teach' %>
+              <%= f.select :subject, grouped_options_for_select(grouped_options, form.subject), { prompt: true }, { data: { action: "funding-widget#submitForm"}} %>
+            <% end %>
+          </div>
+          <% if error_messages.any? %>
+            <div class="form__errors">
+              <% error_messages.each do |error_message| %>
+                <%= tag.div(error_message) %>
+              <% end %>
+            </div>
+          <% end %>
+          <div class="actions hidden">
+            <%= f.button 'See funding', type: 'submit', class: 'button' %>
+          </div>
+        <% end %>
+      </div>
+
+      <% if form.subject %>
+        <% if funding_results.blank? %>
+          <div class="call-to-action__text">
+            <h3><%= sub_head %></h3>
+            <div>
+              Tuition fee and maintenance loans are available.<br />
+              Adding loans for teacher training will not increase your monthly payments.<br />
+              Currently, no scholarships or bursaries are offered for this subject.
+            </div>
+          </div>
+          <div>
+            <h3>Next Steps</h3>
+            <div>
+              Use the <a href="https://www.gov.uk/student-finance-calculator">student finance calculator</a> to find out how much you can get.<br />
+              Explore <a href="/ways-to-train">ways to train</a>.
+            </div>
+          </div>
+        <% else %>
+          <div class="call-to-action__text">
+            <h3><%= sub_head %></h3>
+            <div>
+              <%= funding_results %><br/>
+              Tuition fee and maintenance loans are also available.
+            </div>
+          </div>
+          <div>
+            <h3>Next Steps</h3>
+            <div>
+              Find out more about <a href="#bursaries-and-scholarships">bursaries and scholarships</a>, including T&Cs.<br />
+              Explore <a href="/ways-to-train">ways to train</a>.
+            </div>
+          </div>
+        <% end %>
+        <p>You may be able to get extra support <a href="#extra-financial-support-for-students-with-disabilities">if you're disabled</a>, <a href="#extra-financial-support-for-parents-and-carers">if you're a parent or carer</a>. You may still be eligible for funding <a href="#applying-for-funding-if-you-come-from-outside-england">if you're an international candidate</a>.</p>
+
+        <div class="call-to-action__text">
+          <h3>Start your teacher training this September</h3>
+          <div>
+            There's still time to apply. <a href='/start-teacher-training-this-september'>Find a course</a>.
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

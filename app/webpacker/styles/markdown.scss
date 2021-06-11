@@ -86,6 +86,8 @@
     }
   }
 
+  a.button { @include suppress-external-link-icon; }
+
   ul,
   ol {
     @include mq($until: tablet) {

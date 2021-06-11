@@ -18,7 +18,7 @@ RSpec.describe CallsToAction::StoryComponent, type: :component do
 
   specify "the call to action contains the image" do
     image_element = page.find("img")
-    expect(image_element[:src]).to match(image_path)
+    expect(image_element[:src]).to match("packs-test/media/images/hero-home-dt")
   end
 
   specify "the link is present" do

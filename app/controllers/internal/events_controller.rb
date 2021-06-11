@@ -5,6 +5,7 @@ module Internal
     helper_method :event_type_name
 
     DEFAULT_EVENT_TYPE = "provider".freeze
+    NILIFY_ON_DUPLICATE = %i[id readable_id start_at end_at].freeze
 
     def index
       @event_type = determine_event_type(params[:event_type])
@@ -14,6 +15,7 @@ module Internal
 
       @success = params[:success]
       @pending = params[:success] == "pending"
+      @readable_id = params[:readable_id]
     end
 
     def show
@@ -26,8 +28,7 @@ module Internal
     def new
       if params[:duplicate]
         @event = get_event_by_id(params[:duplicate])
-        @event.id = nil
-        @event.readable_id = nil
+        @event.assign_attributes(NILIFY_ON_DUPLICATE.to_h { |attribute| [attribute, nil] })
       else
         @event_type = determine_event_type(params[:event_type])
         @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
@@ -47,7 +48,7 @@ module Internal
       @event.assign_building(building_params) unless @event.online_event?
 
       if @event.save
-        redirect_to internal_events_path(success: :pending)
+        redirect_to internal_events_path(success: :pending, readable_id: @event.readable_id)
       else
         render action: :new
       end
@@ -87,7 +88,7 @@ module Internal
 
       @group_presenter = Events::GroupPresenter.new(search_results)
       @events = @group_presenter.paginated_events_of_type(
-        GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+        event_type,
         params[:page],
       )
     end
