@@ -21,7 +21,7 @@ module Sections
       image.present?
     end
 
-    def background_image
+    def picture
       tag.img(src: image_path, data: { "lazy-disable": true }, alt: "Photograph of teaching taking place in a classroom")
     end
 

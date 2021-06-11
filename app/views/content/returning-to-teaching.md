@@ -4,7 +4,7 @@ description: |-
   Our return to teaching advisers can advise you on making a return to
   teaching, finding a role or joining the National Tutoring Programme.
 date: "2021-02-25"
-image: "media/images/content/return-to-teaching-dt.jpg"
+image: "media/images/content/hero-images/0010.jpg"
 backlink: "../../"
 keywords:
   - Returner
