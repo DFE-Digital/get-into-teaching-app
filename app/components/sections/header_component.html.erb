@@ -14,11 +14,11 @@
 
 <header>
   <%= render("components/logo") %>
-  <nav>
-    <ul class="primary">
+  <nav role="navigation" data-controller="navigation">
+    <ol class="primary">
       <% primary_items.each do |primary_item| %>
         <%= primary_item %>
       <% end %>
-    </ul>
+    </ol>
   </nav>
 </header>

@@ -2,7 +2,9 @@
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
-    <%= render Sections::HeaderComponent.new %>
+      <%= render Sections::HeaderComponent.new do |header| %>
+        <% header.primary_items(header_navigation) %>
+      <% end %>
       <%= render Sections::HeroComponent.new(@front_matter) %>
       <%= render Navigation::BreadcrumbComponent.new %>
       <main role="main" id="main-content">

@@ -10,7 +10,6 @@
   subtitle_button: "Find a course"
   subtitle_link: "/start-teacher-training-this-september"
   backlink: "../"
-  navigation: 25
   lid_pixel_event: "Funding"
   jump_links:
     Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"
@@ -91,6 +90,10 @@
     - Adult Dependants’ Grant
     - Disabled students
     - Disabled Students’ Allowances
+
+parent:
+  path: "/training-and-funding"
+  navigation: 20
 
 ---
 

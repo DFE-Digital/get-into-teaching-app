@@ -18,6 +18,11 @@ keywords:
   - Disability
   - Adjustments
   - Teacher training
+
+# this is a test for secondary nav structure
+parent:
+  path: "/training-and-funding"
+  navigation: 15
 ---
 
 The experience and perspective of a diverse workforce is valued in school culture.

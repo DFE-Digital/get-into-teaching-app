@@ -10,7 +10,6 @@ subtitle_button: "Find a course"
 subtitle_link: "/start-teacher-training-this-september"
 date: "2021-06-07"
 backlink: "../"
-navigation: 20
 right_column:
   ctas:
     - title: Start your training this September
@@ -120,6 +119,9 @@ calls_to_action:
       - Available for: "Primary, secondary, further education"
         Qualification: "QTS"
       - "Assessment only"
+parent:
+  path: "/training-and-funding"
+  navigation: 10
 ---
 
 You need to get 'qualified teacher status' (QTS) to teach in the majority of schools in England. This includes primary, secondary and special ‘maintained schools’ - part of the state funded schools system.

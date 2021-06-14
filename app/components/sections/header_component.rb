@@ -14,8 +14,14 @@ module Sections
       def call
         class_name = "active" if first_uri_segment_matches_link?(node.path)
 
-        tag.li(class: class_name) do
-          safe_join([nav_link(node), secondary_items].compact)
+        if node.front_matter.navigation_only?
+          tag.li(class: [class_name, "down"]) do
+            safe_join([nav_span(node, class: "multi", data: { action: "click->navigation#toggleWays" }), secondary_items])
+          end
+        else
+          tag.li(class: class_name) do
+            nav_link(node)
+          end
         end
       end
 
@@ -24,18 +30,24 @@ module Sections
       def secondary_items
         return nil if node.children.none?
 
-        tag.ul(class: "secondary") do
+        tag.ol(class: "secondary hidden") do
           safe_join(
             node
               .children
               .map { |child| Node.new(child) }
-              .map { |child_node| nav_link(child_node) },
+              .map { |child_node| tag.li(nav_link(child_node)) },
           )
         end
       end
 
       def nav_link(node)
-        link_to_unless_current(node.front_matter.navigation_title, node.path)
+        link_to_unless_current(node.front_matter.navigation_title, node.path) do
+          nav_span(node)
+        end
+      end
+
+      def nav_span(node, **kwargs)
+        tag.span(node.front_matter.navigation_title, tabindex: 0, **kwargs)
       end
 
       def first_uri_segment_matches_link?(link_path)
@@ -63,12 +75,17 @@ module Sections
 
       def initialize(**front_matter)
         @navigation_title = front_matter[:navigation_title]
+        @navigation_only  = front_matter[:navigation_only]
         @title            = front_matter[:title]
         @path             = front_matter[:path]
       end
 
       def navigation_title
         @navigation_title || title
+      end
+
+      def navigation_only?
+        @navigation_only
       end
     end
   end
