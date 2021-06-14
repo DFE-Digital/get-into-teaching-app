@@ -6,8 +6,7 @@ RSpec.describe BasicAuth do
   let(:instance) { described_class }
 
   before do
-    allow(Rails.application.credentials.config).to receive(:[]).and_call_original
-    allow(Rails.application.credentials.config).to receive(:[]).with(:http_auth) { http_auth }
+    allow(Rails.application.config.x).to receive(:http_auth) { http_auth }
     described_class.class_variable_set(:@@credentials, nil)
   end
 
@@ -15,7 +14,7 @@ RSpec.describe BasicAuth do
     before { allow(Rails).to receive(:env) { env.inquiry } }
     subject { instance.env_requires_auth? }
 
-    ENV_AUTH = {
+    env_auth = {
       "production" => false,
       "rolling" => true,
       "preprod" => true,
@@ -24,7 +23,7 @@ RSpec.describe BasicAuth do
       "development" => false,
     }.freeze
 
-    ENV_AUTH.each do |k, auth|
+    env_auth.each do |k, auth|
       context "when #{k}" do
         let(:env) { k }
 
@@ -39,13 +38,13 @@ RSpec.describe BasicAuth do
     it { is_expected.to eq([]) }
 
     context "when http_auth is present" do
-      let(:http_auth) { "username1=password1,username2=password2" }
+      let(:http_auth) { "username1|password1|role1,username2|password2," }
 
       it do
         is_expected.to contain_exactly(
-                         { username: "username1", password: "password1" },
-                         { username: "username2", password: "password2" },
-                         )
+          { username: "username1", password: "password1", role: "role1" },
+          { username: "username2", password: "password2", role: nil },
+        )
       end
     end
   end
@@ -65,7 +64,7 @@ RSpec.describe BasicAuth do
     end
 
     context "when http_auth is present" do
-      let(:http_auth) { "username1=password1,username2=password2,username2=password3" }
+      let(:http_auth) { "username1|password1,username2|password2,username2|password3" }
 
       context "when the username/password are incorrect" do
         let(:username) { "username1" }
@@ -78,7 +77,18 @@ RSpec.describe BasicAuth do
         let(:username) { "username1" }
         let(:password) { "password1" }
 
-        it { is_expected.to be_truthy }
+        it do
+          is_expected.to be_truthy
+          is_expected.to be_an_instance_of(User)
+          expect(subject.username).to eq("username1")
+          expect(subject.role).to eq(nil)
+        end
+
+        context "when a role is present" do
+          let(:http_auth) { "username1|password1|role1" }
+
+          it { expect(subject.role).to eq("role1") }
+        end
       end
 
       context "when the username/password are correct (duplicate username, different password)" do

@@ -85,8 +85,9 @@ private
 
   def http_basic_authenticate
     authenticate_or_request_with_http_basic do |username, password|
-      if BasicAuth.authenticate(username, password)
-        session[:username] = username
+      user = BasicAuth.authenticate(username, password)
+      if user.present?
+        session[:user] = user
       else
         false
       end

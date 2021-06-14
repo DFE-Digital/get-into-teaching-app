@@ -3,18 +3,21 @@ class BasicAuth
     def authenticate(username, password)
       return false unless [username, password].all?(&:present?)
 
-      credentials.any? { |c| c[:username] == username && c[:password] == password }
+      user = credentials.find { |c| c[:username] == username && c[:password] == password }
+      User.new(user[:username], user[:role]) if user.present?
     end
 
     def credentials
+      # rubocop:disable Style/ClassVars:
       @@credentials ||= http_auth.split(",").map do |credential|
-        parts = credential.split("=")
-        { username: parts.first, password: parts.last }
+        username, password, role = credential.split("|")
+        { username: username, password: password, role: role }.with_indifferent_access
       end
+      # rubocop:enable Style/ClassVars:
     end
 
     def http_auth
-      Rails.application.credentials.config[:http_auth] || ""
+      Rails.application.config.x.http_auth || ""
     end
 
     def env_requires_auth?
@@ -22,5 +25,16 @@ class BasicAuth
       # environments, but not in production itself.
       !Rails.env.production? && !Rails.env.test? && !Rails.env.development?
     end
+  end
+end
+
+class User
+  attr_reader :username, :role
+
+  ROLES = { publisher: :publisher, author: :author }.freeze
+
+  def initialize(username, role)
+    @username = username
+    @role = role
   end
 end

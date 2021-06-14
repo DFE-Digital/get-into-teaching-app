@@ -1,32 +1,26 @@
 class InternalController < ApplicationController
-  before_action :authenticate
-  helper_method :publisher?
+  helper_method :publisher?, :username
+  before_action :authorize_user
 
 private
 
-  def publisher?
-    session[:role] == :publisher
+  def authorize_user
+    render_forbidden unless publisher? || author?
   end
 
-  def set_account_role(role_type)
-    session[:role] = role_type
+  def publisher?
+    session[:user].role == "publisher"
+  end
+
+  def author?
+    session[:user].role == "author"
+  end
+
+  def username
+    session[:user].username
   end
 
   def authenticate?
     true
-  end
-
-  def publisher
-    {
-      username: Rails.application.config.x.publisher_username,
-      password: Rails.application.config.x.publisher_password,
-    }
-  end
-
-  def author
-    {
-      username: Rails.application.config.x.author_username,
-      password: Rails.application.config.x.author_password,
-    }
   end
 end

@@ -27,6 +27,16 @@ describe Internal::EventsController do
   let(:events) { [pending_provider_event, open_event, pending_online_event] }
   let(:provider_events_by_type) { group_events_by_type([pending_provider_event]) }
   let(:online_events_by_type) { group_events_by_type([pending_online_event]) }
+  let(:publisher_username) { "publisher_username" }
+  let(:publisher_password) { "publisher_password" }
+  let(:author_username) { "author_username" }
+  let(:author_password) { "author_password" }
+
+  before do
+    allow(Rails.application.config.x).to receive(:http_auth) do
+      "#{publisher_username}|#{publisher_password}|publisher,#{author_username}|#{author_password}|author"
+    end
+  end
 
   describe "#index" do
     shared_examples "no pending events" do |event_type, default_event_type|
@@ -419,5 +429,23 @@ describe Internal::EventsController do
         expect(response).to have_http_status(:forbidden)
       end
     end
+  end
+
+private
+
+  def generate_auth_headers(login_type)
+    case login_type
+    when :publisher
+      username = publisher_username
+      password = publisher_password
+    when :author
+      username = author_username
+      password = author_password
+    else
+      username = "bad_username"
+      password = "bad_password"
+    end
+
+    basic_auth_headers(username, password)
   end
 end
