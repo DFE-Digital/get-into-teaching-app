@@ -52,7 +52,7 @@ Returning to teaching might be easier than you expect.
 
 If you’re considering coming back to the profession, or if you’re qualified to teach but have never taught in a state school in England, we’re here to help.  
 
-<iframe src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Why now
 
@@ -78,7 +78,7 @@ secondary school in England, a [return to teaching adviser](https://adviser-geti
 * accessing courses to enhance your subject knowledge
 * finding teaching vacancies
 
-<iframe src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Return to teaching advisers also run [events](/event-categories/online-q-as) to support returners.
 

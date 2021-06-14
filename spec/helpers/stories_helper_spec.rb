@@ -29,8 +29,8 @@ describe StoriesHelper, type: "helper" do
     let(:url) { "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
     subject { helper.youtube(url) }
 
-    specify %(should generate an iframe with the src attribute set to the video's URL) do
-      expect(subject).to have_css(%(iframe[src='#{url}']), class: "story__video")
+    specify %(should generate an iframe with the data-src attribute set to the video's URL) do
+      expect(subject).to have_css(%(iframe[data-src='#{url}']), class: "story__video lazyload")
     end
   end
 
