@@ -13,30 +13,36 @@
   @include govuk-visually-hidden;
 }
 
-.extra-links {
+.extra-links-container {
   background-color: $grey;
-  display: flex;
-  justify-content: flex-end;
 
-  ul {
-    @include reset;
-    @include link-list;
-    margin-right: 1em;
+  .extra-links {
+    display: flex;
+    justify-content: flex-end;
+    max-width: $page-max-width;
+    margin: 0 auto;
 
-    li {
-      @include font-size("xsmall");
+    ul {
+      @include reset;
+      @include link-list;
 
-      padding: .2em 1em;
-    }
+      li {
+        @include font-size("xsmall");
 
-    li + li {
-      margin-left: 2em;
+        padding: .2em 1em;
+      }
+
+      li + li {
+        margin-left: 2em;
+      }
     }
   }
 }
 
 header {
   display: flex;
+  max-width: $page-max-width;
+  margin: 0 auto;
 
   .logo-wrapper {
     display: flex;
