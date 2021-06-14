@@ -75,7 +75,7 @@ describe Stories::StoryComponent, type: "component" do
     let(:front_matter) { default_front_matter.merge(video_story) }
 
     specify "the video iframe is present in the document and the src is correct" do
-      is_expected.to have_css("iframe[src='#{video_url}']")
+      is_expected.to have_css("iframe[data-src='#{video_url}'].lazyload")
     end
   end
 
