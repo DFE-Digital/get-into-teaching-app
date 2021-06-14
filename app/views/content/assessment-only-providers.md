@@ -385,6 +385,9 @@ providers:
     link: https://www.staffs.ac.uk/
     name: Cath Hickling
     email: c.hickling@staffs.ac.uk
+  - header: The Coventry SCITT
+    link: https://www.coventryscitt.org.uk
+    email: info@coventryscitt.org.uk
   - header: The National School of Education and Teaching, Coventry University
     name: Carol Rowntree
     telephone: 01327 850320
