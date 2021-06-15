@@ -33,6 +33,8 @@ describe Internal::EventsController do
   let(:author_password) { "author_password" }
 
   before do
+    BasicAuth.class_variable_set(:@@credentials, nil)
+
     allow(Rails.application.config.x).to receive(:http_auth) do
       "#{publisher_username}|#{publisher_password}|publisher,#{author_username}|#{author_password}|author"
     end
@@ -429,23 +431,5 @@ describe Internal::EventsController do
         expect(response).to have_http_status(:forbidden)
       end
     end
-  end
-
-private
-
-  def generate_auth_headers(login_type)
-    case login_type
-    when :publisher
-      username = publisher_username
-      password = publisher_password
-    when :author
-      username = author_username
-      password = author_password
-    else
-      username = "bad_username"
-      password = "bad_password"
-    end
-
-    basic_auth_headers(username, password)
   end
 end

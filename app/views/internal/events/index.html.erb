@@ -17,7 +17,6 @@
             </strong>
           </div>
         <% end %>
-
       </div>
     </div>
   <% end %>
@@ -29,7 +28,7 @@
     <%= link_to "Online events",
                 internal_events_path(event_type: "online"),
                 class: class_names("tab-link", "tab", { "active-tab": event_type_name == "online" }) %>
-    <p class="username">Logged in as: <%= username %></p>
+    <p class="username">Logged in as: <%= @user.username %></p>
   </div>
 
   <h1 class="pending-title">Pending <%= event_type_name %> events</h1>

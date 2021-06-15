@@ -1,3 +1,5 @@
+require_relative "./user.rb"
+
 class BasicAuth
   class << self
     def authenticate(username, password)
@@ -23,16 +25,5 @@ class BasicAuth
       # environments, but not in production itself.
       !Rails.env.production? && !Rails.env.test? && !Rails.env.development?
     end
-  end
-end
-
-class User
-  attr_reader :username, :role
-
-  ROLES = { publisher: :publisher, author: :author }.freeze
-
-  def initialize(username, role)
-    @username = username
-    @role = role
   end
 end

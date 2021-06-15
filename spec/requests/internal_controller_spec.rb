@@ -7,6 +7,8 @@ describe InternalController do
   let(:author_password) { "author_password" }
 
   before do
+    BasicAuth.class_variable_set(:@@credentials, nil)
+
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
       .to receive(:search_teaching_events_grouped_by_type) { [] }
 
@@ -31,7 +33,7 @@ describe InternalController do
     get internal_events_path, headers: generate_auth_headers(:publisher)
 
     expect(session[:user].username).to eq(publisher_username)
-    expect(session[:user].role).to eq("publisher")
+    expect(session[:user].publisher?).to be true
     assert_response :success
   end
 
@@ -39,25 +41,7 @@ describe InternalController do
     get internal_events_path, headers: generate_auth_headers(:author)
 
     expect(session[:user].username).to eq(author_username)
-    expect(session[:user].role).to eq("author")
+    expect(session[:user].author?).to be true
     assert_response :success
-  end
-
-private
-
-  def generate_auth_headers(login_type)
-    case login_type
-    when :publisher
-      username = publisher_username
-      password = publisher_password
-    when :author
-      username = author_username
-      password = author_password
-    else
-      username = "bad_username"
-      password = "bad_password"
-    end
-
-    basic_auth_headers(username, password)
   end
 end

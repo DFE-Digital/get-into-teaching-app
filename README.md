@@ -184,7 +184,7 @@ environments master key in.
 
 The app uses HTTP Basic authentication for two purposes:
 - To restrict access (site-wide) to any of the production-like environments (except production itself). 
-- To restrict access to the `/internal/` path, which is not intended for public use. Access is granted to users with either a `publisher` or `author` role (see `lib/basic_auth.rb`). The `publisher` user type has elevated permissions.
+- To restrict access to the `/internal/` path, which is not intended for public use. Access is granted to users with either a `publisher` or `author` role (see `./lib/user.rb`). The `publisher` user type has elevated permissions.
 
 Users are stored as comma separated list in the following format:
 

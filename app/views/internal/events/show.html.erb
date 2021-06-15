@@ -20,7 +20,7 @@
                       method: :get,
                       class: "button notification-button",
                       form: { target: '_blank' } %>
-        <% if publisher? %>
+        <% if @user.publisher? %>
           <%= button_to "Set event status to Open",
                         internal_approve_path, params: { id: @event.readable_id }, method: :put,
                         class: "button notification-button" %>

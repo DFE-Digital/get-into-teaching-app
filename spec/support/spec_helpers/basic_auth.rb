@@ -12,5 +12,21 @@ module SpecHelpers
       value = ActionController::HttpAuthentication::Basic.encode_credentials(username, password)
       { "HTTP_AUTHORIZATION" => value }
     end
+
+    def generate_auth_headers(login_type)
+      case login_type
+      when :publisher
+        username = publisher_username
+        password = publisher_password
+      when :author
+        username = author_username
+        password = author_password
+      else
+        username = "bad_username"
+        password = "bad_password"
+      end
+
+      basic_auth_headers(username, password)
+    end
   end
 end

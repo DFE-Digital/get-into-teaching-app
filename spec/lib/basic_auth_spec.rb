@@ -81,13 +81,24 @@ RSpec.describe BasicAuth do
           is_expected.to be_truthy
           is_expected.to be_an_instance_of(User)
           expect(subject.username).to eq("username1")
-          expect(subject.role).to eq(nil)
+          expect(subject.publisher?).to be false
+          expect(subject.author?).to be false
         end
 
-        context "when a role is present" do
-          let(:http_auth) { "username1|password1|role1" }
+        context "when user role is publisher" do
+          let(:http_auth) { "username1|password1|publisher" }
 
-          it { expect(subject.role).to eq("role1") }
+          it "responds to `publisher?`" do
+            expect(subject.publisher?).to be true
+          end
+        end
+
+        context "when user role is author" do
+          let(:http_auth) { "username1|password1|author" }
+
+          it "responds to `author?`" do
+            expect(subject.author?).to be true
+          end
         end
       end
 

@@ -76,7 +76,7 @@ module Internal
     end
 
     def authorize_publisher
-      render_forbidden unless publisher?
+      render_forbidden unless @user.publisher?
     end
 
     def load_pending_events(event_type)

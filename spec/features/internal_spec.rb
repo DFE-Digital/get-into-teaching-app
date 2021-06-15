@@ -23,6 +23,8 @@ RSpec.feature "Internal section", type: :feature do
   let(:publisher_password) { "publisher_password" }
 
   before do
+    BasicAuth.class_variable_set(:@@credentials, nil)
+
     allow(Rails.application.config.x).to receive(:http_auth) do
       "#{publisher_username}|#{publisher_password}|publisher"
     end
