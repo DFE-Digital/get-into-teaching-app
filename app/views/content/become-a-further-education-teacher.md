@@ -26,7 +26,7 @@ In further education, teaching doesn’t always happen in a classroom. It can ta
 
 Courses range from basic literacy and numeracy to apprenticeships and technical qualifications. 
 
-Searching for further education jobs will give you an idea of the subjects you can teach.
+[Searching for further education jobs](https://www.aocjobs.com/jobs) will give you an idea of the subjects you can teach.
 
 ## Using your professional experience
 
@@ -37,7 +37,7 @@ Employers will often accept work experience in place of qualifications.
 
 ## Training to teach in further education
 
-As part of your training, you will need to get a qualification to teach in further education. The type you need will depend on your employer.
+As part of your training, you will need to get a [qualification to teach in further education](https://www.feadvice.org.uk/i-want-work-fe-skills-sector/i-want-be-teacher-fe-skills/teaching-qualifications-fe-skills-sector). The type you need will depend on your employer.
  
 Some employers will let you start teaching without a qualification because you can work towards one as you go.
 
@@ -56,7 +56,7 @@ Bursaries (funding you do not need to repay) are available for the following sub
 
 ## Next steps
 
-For more information, visit Further Education Advice.
+For more information, visit [Further Education Advice](https://www.feadvice.org.uk/).
 
 You can also speak to an adviser on 0300 303 1877 or email feadviceline@etfoundation.co.uk.
 
