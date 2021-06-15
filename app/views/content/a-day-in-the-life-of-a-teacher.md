@@ -57,7 +57,7 @@ $q-sarah-primary$
 
 There may be staff meetings in the morning to catch up with all staff, year group, or faculty members.
 
-#### 8:30 - Day begins
+#### 8:30 - The day begins
 The day begins with form time. This might include uniform and planner checks, or even some numeracy and literacy skills activities.
 
 #### 9:00 - Morning lessons start
