@@ -1,5 +1,5 @@
 ---
-title: Become a further education teacher.
+title: Become a further education teacher
 article_classes: ['longform']
 image: "media/images/content/hero-images/0015.jpg"
 description: |-
