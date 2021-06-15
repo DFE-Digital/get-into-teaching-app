@@ -1,5 +1,20 @@
 ---
 title: Become a further education teacher.
+article_classes: ['longform']
+image: "media/images/content/hero-images/0015.jpg"
+description: |-
+  Further education is any study that takes place after secondary school but outside of higher education (e.g. university). 
+date: "2021-06-15"
+keywords:
+  - Further education
+  - FE
+  - College
+  - Vocational
+  - Vocation
+  - F.E.
+  - NVQ
+  - BTEC
+  - HND
 ---
 
 Further education is any study that takes place after secondary school but outside of higher education (e.g. university).
