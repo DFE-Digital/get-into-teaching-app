@@ -3,7 +3,7 @@ title: Become a further education teacher.
 ---
 Further education is any study that takes place after secondary school but outside of higher education (e.g. university).
 
-Teaching in further education doesn’t always happen in a classroom. It can take place in community centres, private training centres and workplaces. 
+Teaching in further education doesn’t always happen in a classroom. It can take place in community centres, workplaces and private training centres. 
 
 
 ## What you can teach
