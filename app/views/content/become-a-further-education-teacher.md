@@ -1,6 +1,7 @@
 ---
 title: Become a further education teacher.
 ---
+
 Further education is any study that takes place after secondary school but outside of higher education (e.g. university).
 
 In further education, teaching doesn’t always happen in a classroom. It can take place in community centres, workplaces and private training centres. 
@@ -25,6 +26,18 @@ As part of your training, you will need to get a qualification to teach in furth
  
 Some employers will let you start teaching without a qualification because you can work towards one as you go.
 
+## Funding
+
+Bursaries (funding you do not need to repay) are available for the following subjects:
+
+| Subject                                           | Bursary Amount |
+| ------------------------------------------------- | -------------- |
+| Maths                                             | £26,000        |
+| Science                                           | £26,000        |
+| Engineering                                       | £26,000        |
+| Computing                                         | £26,000        |
+| Special educational needs and disabilities (SEND) | £15,000        |
+| English                                           | £12,000        |
 
 ## Next steps
 
