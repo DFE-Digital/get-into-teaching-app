@@ -35,9 +35,7 @@ private
   end
 
   def vwo_config
-    # rubocop:disable Style/ClassVars
     @@vwo_config ||= YAML.safe_load(File.read(Rails.root.join("config/vwo.yml"))).deep_symbolize_keys
-    # rubocop:enable Style/ClassVars
   end
 
   def process_images

@@ -8,12 +8,10 @@ class BasicAuth
     end
 
     def credentials
-      # rubocop:disable Style/ClassVars:
       @@credentials ||= http_auth.split(",").map do |credential|
         username, password, role = credential.split("|")
         { username: username, password: password, role: role }.with_indifferent_access
       end
-      # rubocop:enable Style/ClassVars:
     end
 
     def http_auth

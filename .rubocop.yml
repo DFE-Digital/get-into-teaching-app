@@ -44,6 +44,9 @@ RSpec/ImplicitSubject:
 Style/SignalException:
   Enabled: false
 
+Style/ClassVars:
+  Enabled: false
+
 # FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
 RSpec/ContextWording:
