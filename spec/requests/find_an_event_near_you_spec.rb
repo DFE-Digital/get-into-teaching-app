@@ -4,7 +4,7 @@ describe "Find an event near you" do
   include_context "stub types api"
 
   let(:no_events_regex) { /Sorry your search has not found any events/ }
-  let(:category_headings_regex) { /<h3>([Train|Online|School].*)<\/h3>/ }
+  let(:category_headings_regex) { /<h3>(Train to Teach events|Online Q&amp;As|School and University events)<\/h3>/ }
   let(:types) { Events::Search.available_event_type_ids }
   let(:events) do
     5.times.collect do |index|
