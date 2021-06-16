@@ -35,4 +35,4 @@ They will help you to:
 
 <a href = "/tta-service" class ="button button--white">Get a teacher training adviser</a>
 
-An adviser will be in touch within 24 hours.
+An adviser will be in touch within 3 working days.
