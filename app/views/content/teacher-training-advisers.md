@@ -17,7 +17,9 @@ keywords:
     - preparation
 quote:
     q-tta-one:
-      text: "I like to get in early so I can get organised — in teaching, preparation is everything."
+      text: "It's tailor-made to individual needs. I received an abundance of help."
+      image: media/images/content/stories/stories-will.jpg
+      inline: right
     q-tta-two:
       text: "[My adviser] was extremely helpful as well as thoughtful and understanding."
 calls_to_action:
@@ -34,6 +36,8 @@ A Teacher Training Adviser is a free mentor who helps you get into teaching. The
 
 Getting an adviser means you don’t need to go it alone. They’ll be there to support you at each stage of the journey. 
 
+$get-a-tta$
+
 ## What an adviser can do for you
 
 $q-tta-one$
@@ -47,13 +51,17 @@ Other trainee teachers say they are particularly helpful with:
 * Writing a personal statement
 * Preparing for interviews
 
-[Video]
+[Video - Meet Emma, a TTA]
 
 ## Helping you decide if teaching is right for you
 
 $q-tta-two$
 
-Meet Simon, a teacher training adviser.
+Taking on teacher training and preparing for a new career can be daunting for anyone, but taking your next step might be more complicated if you have caring responsibilities, people dependent on your earnings, or you are living with a disability. 
+
+Your Teacher Training Adviser can help you navigate your path into teaching, and make sure you get any additional help that is available. Your adviser will be just a call, message or email away.
+
+[Video - Meet Simon, a teacher training adviser.]
 
 ## Already applied and been unsuccessful?
 
