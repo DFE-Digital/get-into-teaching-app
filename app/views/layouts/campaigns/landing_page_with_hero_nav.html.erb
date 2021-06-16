@@ -1,22 +1,17 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
-    <%= render "sections/head" %>
-    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
 
-    <div id="skiplink-container">
-      <div>
-        <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
-      </div>
-    </div>
-
-    <%= render "sections/header" %>
-    <%= render Header::HeroComponent.new(@front_matter) do %>
-      <% if @front_matter["hero_nav"].any? %>
-        <ol class="hero__nav">
-          <% @front_matter["hero_nav"].each do |section, href| %>
-          <li><%= link_to(tag.span(section), href) %></li>
-          <% end %>
-        </ol>
+    <%= render HeaderComponent.new do |c| %>
+      <% c.hero(@front_matter) do %>
+        <% if @front_matter["hero_nav"].any? %>
+          <ol class="hero__nav">
+            <% @front_matter["hero_nav"].each do |section, href| %>
+              <%= tag.li(link_to(tag.span(section), href)) %>
+            <% end %>
+          </ol>
+        <% end %>
       <% end %>
     <% end %>
 

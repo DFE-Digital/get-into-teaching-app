@@ -10,8 +10,7 @@
       </div>
     </div>
 
-    <%= render "sections/header" %>
-    <%= render Navigation::BreadcrumbComponent.new %>
+    <%= render HeaderComponent.new(breadcrumbs: true) %>
 
     <main role="main" id="main-content">
       <section class="container">

@@ -8,10 +8,9 @@
       </div>
     </div>
 
-    <%= render "sections/header" %>
-
-    <%= yield :hero %>
-    <%= render Navigation::BreadcrumbComponent.new %>
+    <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
+      <%= c.hero %>
+    <% end %>
 
     <main role="main" id="main-content">
       <section class="container events">

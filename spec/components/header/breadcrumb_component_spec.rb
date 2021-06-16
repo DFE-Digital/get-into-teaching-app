@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Navigation::BreadcrumbComponent, type: "component" do
+describe Header::BreadcrumbComponent, type: "component" do
   subject! do
     component = described_class.new
 

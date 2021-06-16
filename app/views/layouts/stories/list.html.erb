@@ -1,24 +1,26 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
-    <%= render "sections/head" %>
-    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
-      <%= render "sections/header" %>
-      <%= render Navigation::BreadcrumbComponent.new %>
-      <main role="main" id="main-content">
-        <section class="container">
-          <section class="feature">
-            <%= yield %>
-
-            <div class="cards stories">
-              <%= render Cards::RendererComponent.with_collection(@front_matter.dig("stories")) %>
-            </div>
-          </section>
-        </section>
-      </main>
-
-      <%= render "sections/mailing-list-bar" %>
-      <%= render "sections/footer" %>
-      <%= render "components/videoplayer" %>
-      <%= render "sections/cookie-acceptance" %>
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
+    <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
+      <%= c.hero(@front_matter) %>
     <% end %>
+
+    <main role="main" id="main-content">
+      <section class="container">
+        <section class="feature">
+          <%= yield %>
+
+          <div class="cards stories">
+            <%= render Cards::RendererComponent.with_collection(@front_matter.dig("stories")) %>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <%= render "sections/mailing-list-bar" %>
+    <%= render "sections/footer" %>
+    <%= render "components/videoplayer" %>
+    <%= render "sections/cookie-acceptance" %>
+  <% end %>
 </html>

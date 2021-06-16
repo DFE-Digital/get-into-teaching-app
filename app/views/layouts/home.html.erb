@@ -3,8 +3,8 @@
   <%= render "sections/head" %>
   <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
 
-    <%= render HeaderComponent.new(front_matter: @front_matter) do |c| %>
-      <%= c.hero %>
+    <%= render HeaderComponent.new do |c| %>
+      <%= c.hero(@front_matter) %>
     <% end %>
 
     <main class="home" role="main" id="main-content">
