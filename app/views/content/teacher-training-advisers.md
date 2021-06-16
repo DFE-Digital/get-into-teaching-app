@@ -9,6 +9,12 @@ backlink: "../"
 keywords: 
     - adviser
     - advisor
+    - TTA
+    - training
+    - application
+    - references
+    - interview
+    - preparation
 quote:
     q-tta-one:
       text: "I like to get in early so I can get organised — in teaching, preparation is everything."
