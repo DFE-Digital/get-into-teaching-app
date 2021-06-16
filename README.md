@@ -109,7 +109,7 @@ fi
 [Prettier](https://prettier.io/) is used for code formatting.
 To enforce stylistic rules with Prettier (note: this overwrites the file), run:
 
-```js
+```bash
 yarn prettier --write <path to your file>
 ```
 
@@ -117,7 +117,7 @@ yarn prettier --write <path to your file>
 
 To check a file:
 
-```js
+```bash
 yarn eslint <path to your file>
 ```
 
@@ -127,7 +127,7 @@ yarn eslint <path to your file>
 
 To lint the `./app/webpacker/styles` directory:
 
-```js
+```bash
 # Run StyleLint
 yarn scss-lint
 
@@ -180,10 +180,23 @@ You will either need to have `RAILS_MASTER_KEY` set within your environment or
 have have the appropriate `/config/credentials/<env-name>.key` file with the
 environments master key in.
 
-### Variables
+### HTTP Basic authentication
 
-`HTTPAUTH_USERNAME` and `HTTPAUTH_PASSWORD` - setting both enables site wide
-password protection
+The app uses HTTP Basic authentication for two purposes:
+- To restrict access (site-wide) to any of the production-like environments (except production itself). 
+- To restrict access to the `/internal/` path, which is not intended for public use. Access is granted to users with either a `publisher` or `author` role (see `./lib/user.rb`). The `publisher` user type has elevated permissions.
+
+Users are stored as comma separated list in the following format:
+
+```yaml
+username|password|role,username2|password2|role2
+```
+
+If a user does not require a role (site-wide authentication), the role credential can be omitted:
+
+```yaml
+username|password
+```
 
 
 
