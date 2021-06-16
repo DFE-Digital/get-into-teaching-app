@@ -1,10 +1,16 @@
-module Navigation
-  class NavbarComponent < ViewComponent::Base
-  private
+module Header
+  class NavigationComponent < ViewComponent::Base
+    attr_reader :resources
 
-    def resources
-      helpers.navigation_resources
+    def initialize(resources: nil)
+      @resources = resources
     end
+
+    def before_render
+      @resources ||= helpers.navigation_resources
+    end
+
+  private
 
     def nav_link(link_text, link_path)
       class_name = "active" if first_uri_segment_matches_link?(link_path)

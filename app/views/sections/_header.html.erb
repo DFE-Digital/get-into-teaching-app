@@ -5,7 +5,7 @@
                 <a href="#" data-action="click->banner#hide" class="covid__close"><span class="visually-hidden">Hide this message</span></a>
         </div>
     </section>
-    <%= render(Navigation::NavbarComponent.new) %>
+    <%= render(Header::NavigationComponent.new) %>
 </nav>
 
-<%= render Sections::HeroComponent.new(@front_matter) %>
+<%= render Header::HeroComponent.new(@front_matter) %>

@@ -8,7 +8,7 @@
 %>
 
 <% content_for :hero do %>
-  <%= render Sections::HeroComponent.new(
+  <%= render Header::HeroComponent.new(
       title: @category_name,
       image: "media/images/content/hero-images/0015.jpg")
   %>

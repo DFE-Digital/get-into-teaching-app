@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Sections::HeroComponent, type: "component" do
+describe Header::HeroComponent, type: "component" do
   let(:front_matter) do
     {
       "title" => "Teaching, it's pretty awesome",

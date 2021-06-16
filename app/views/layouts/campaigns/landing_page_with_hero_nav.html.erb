@@ -10,7 +10,7 @@
     </div>
 
     <%= render "sections/header" %>
-    <%= render Sections::HeroComponent.new(@front_matter) do %>
+    <%= render Header::HeroComponent.new(@front_matter) do %>
       <% if @front_matter["hero_nav"].any? %>
         <ol class="hero__nav">
           <% @front_matter["hero_nav"].each do |section, href| %>

@@ -1,3 +1,9 @@
+<div id="skiplink-container">
+  <div>
+    <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
+  </div>
+</div>
+
 <nav role="navigation" aria-label="main">
     <section class="covid" data-controller="banner" data-banner-name="Covid">
         <div class="limit-content-width">
@@ -5,7 +11,7 @@
                 <a href="#" data-action="click->banner#hide" class="covid__close"><span class="visually-hidden">Hide this message</span></a>
         </div>
     </section>
-    <%= render(Navigation::NavbarComponent.new) %>
 </nav>
 
-<%= render Sections::HeroComponent.new(front_matter) %>
+<%= render Header::NavigationComponent.new %>
+<%= hero(@front_matter) %>

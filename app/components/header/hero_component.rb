@@ -1,4 +1,4 @@
-module Sections
+module Header
   class HeroComponent < ViewComponent::Base
     attr_accessor :title, :subtitle, :image, :show_mailing_list
 
