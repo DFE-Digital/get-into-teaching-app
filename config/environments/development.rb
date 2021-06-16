@@ -59,7 +59,7 @@ Rails.application.configure do
   config.x.enable_beta_redirects = false
 
   config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence || \
-    Rails.application.credentials.presence
+    Rails.application.credentials.basic_auth_credentials.presence
 
   config.x.api_client_cache_store = ActiveSupport::Cache::MemoryStore.new
 end
