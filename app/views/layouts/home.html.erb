@@ -10,8 +10,6 @@
 
     <%= render "sections/header" %>
 
-    <%= render Sections::HeroComponent.new(@front_matter) %>
-
     <main class="home" role="main" id="main-content">
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>

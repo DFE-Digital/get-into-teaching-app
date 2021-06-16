@@ -3,6 +3,8 @@ module Sections
     attr_accessor :title, :subtitle, :image, :show_mailing_list
 
     def initialize(front_matter)
+      return if front_matter.blank?
+
       front_matter.with_indifferent_access.tap do |fm|
         @title           = fm["title"]
         @subtitle        = fm["subtitle"]
