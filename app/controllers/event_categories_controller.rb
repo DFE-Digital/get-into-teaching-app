@@ -13,7 +13,11 @@ class EventCategoriesController < ApplicationController
 
     @category_name = helpers.pluralised_category_name(@type.id)
     @page_title = @category_name
-    @front_matter = { "description" => "Get your questions answered at a #{@category_name} event." }
+    @front_matter = {
+      "description" => "Get your questions answered at a #{@category_name} event.",
+      "title" => @category_name,
+      "image" => "media/images/content/hero-images/0015.jpg",
+    }
 
     load_events(:future)
   end
@@ -24,7 +28,11 @@ class EventCategoriesController < ApplicationController
     @category_name = helpers.past_category_name(@type.id)
 
     @page_title = @category_name
-    @front_matter = { "description" => "See past #{@category_name} events." }
+    @front_matter = {
+      "description" => "See past #{@category_name} events.",
+      "title" => @category_name,
+      "image" => "media/images/content/hero-images/0015.jpg",
+    }
 
     load_events(:past)
 

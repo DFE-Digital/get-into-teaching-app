@@ -7,13 +7,6 @@
       )
 %>
 
-<% content_for :hero do %>
-  <%= render Header::HeroComponent.new(
-      title: @category_name,
-      image: "media/images/content/hero-images/0015.jpg")
-  %>
-<% end %>
-
 <% content_for :before_search do %>
   <p><%= safe_html_format(t("find_an_event.types.#{@type.id}")) %></p>
 <% end %>

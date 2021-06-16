@@ -9,7 +9,7 @@
     </div>
 
     <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
-      <%= c.hero %>
+      <%= c.hero(@front_matter) %>
     <% end %>
 
     <main role="main" id="main-content">
