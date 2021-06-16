@@ -5,7 +5,7 @@
             <ul>
                 <%= nav_link("Home", '/') %>
                 <% resources.each do |resource| %>
-                    <%= nav_link(resource[:front_matter][:title], resource[:path]) %>
+                    <%= nav_link(resource.title, resource.path) %>
                 <% end %>
                 <%= nav_link("Teaching events", events_path) %>
                 <%= nav_link("Register your interest", mailing_list_steps_path) %>
@@ -45,7 +45,7 @@
                 <ul>
                   <%= nav_link("Home", '/') %>
                   <% resources.each do |resource| %>
-                    <%= nav_link(resource[:front_matter][:title], resource[:path]) %>
+                    <%= nav_link(resource.title, resource.path) %>
                   <% end %>
                   <%= nav_link("Teaching events", events_path) %>
                   <%= nav_link("Register your interest", mailing_list_steps_path) %>
