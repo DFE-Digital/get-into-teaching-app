@@ -8,7 +8,7 @@
       </div>
     </div>
 
-    <%= render "sections/header" %>
+    <%= render Sections::HeaderComponent.new(front_matter: @front_matter) %>
 
     <main class="home" role="main" id="main-content">
       <% @front_matter["content"]&.each do |partial| %>
