@@ -30,9 +30,6 @@ Our teacher training advisers can help you write a strong application quickly.
 They will help you to:
 
 * create a personal statement that shows off your strengths
-* submit a quality application, including choosing the right references
 * prepare for interviews
 
 <a href = "/tta-service" class ="button button--white">Get a teacher training adviser</a>
-
-An adviser will be in touch within 3 working days.
