@@ -4,7 +4,7 @@ subtitle: "Start teacher training this September."
 article_classes: ['longform']
 description: |-
   There's still time to apply for teacher training in 2021. You could apply now and be training by September 2021 if you follow these instructions.
-date: "2021-06-07"
+date: "2021-06-17"
 image: "media/images/content/hero-images/0008.jpg"
 backlink: "../"
 keywords:
@@ -30,9 +30,6 @@ Our teacher training advisers can help you write a strong application quickly.
 They will help you to:
 
 * create a personal statement that shows off your strengths
-* choose the best people to be your references
-* explain any gaps in your work history
+* prepare for interviews
 
 <a href = "/tta-service" class ="button button--white">Get a teacher training adviser</a>
-
-An adviser will be in touch within 3 working days.
