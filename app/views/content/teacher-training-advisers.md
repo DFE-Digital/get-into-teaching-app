@@ -7,15 +7,14 @@ image: "media/images/content/hero-images/0003.jpg"
 article_classes: ['longform']
 backlink: "../"
 accordion:
-  steps:
-    Kelly:
-      partial: content/teacher-training-advisers/kelly
-    Allesandro:
-      partial: content/teacher-training-advisers/allesandro
-    Hannah:
-      partial: content/teacher-training-advisers/hannah
-    David:
-      partial: content/international-returners/david
+  Kelly:
+    partial: content/teacher-training-advisers/kelly
+  Allesandro:
+    partial: content/teacher-training-advisers/allesandro
+  Hannah:
+    partial: content/teacher-training-advisers/hannah
+  David:
+    partial: content/international-returners/david
 keywords: 
     - adviser
     - advisor
