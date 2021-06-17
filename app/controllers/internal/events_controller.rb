@@ -40,6 +40,7 @@ module Internal
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
       api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
+      Rails.logger.info("#{@user.username} - publish - #{api_event.to_json}")
       redirect_to internal_events_path(success: true)
     end
 
@@ -48,6 +49,7 @@ module Internal
       @event.assign_building(building_params) unless @event.online_event?
 
       if @event.save
+        Rails.logger.info("#{@user.username} - create/update - #{@event.to_api_event.to_json}")
         redirect_to internal_events_path(success: :pending, readable_id: @event.readable_id)
       else
         render action: :new
