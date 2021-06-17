@@ -66,7 +66,7 @@ private
     search_results = @event_search.query_events(MAXIMUM_EVENTS_PER_CATEGORY)
 
     @display_empty_types = @event_search.type.nil?
-    @performed_search = true
+    @performed_search = @event_search.valid?
 
     @group_presenter = Events::GroupPresenter.new(search_results, @display_empty_types)
     pages = params.permit(@group_presenter.page_param_names.values)

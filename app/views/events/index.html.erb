@@ -17,7 +17,7 @@
 </section>
 <% end %>
 
-<% unless @performed_search %>
+<% unless @performed_search || @no_results %>
   <div class="content-alert content-alert--left">
     <div class="content-alert__icon">
       <%= image_pack_tag "media/images/icon-moved-online-purple.svg", alt: "", size: "40x26" %>
@@ -31,7 +31,7 @@
 
 <% unless @no_results %>
   <% unless @performed_search %>
-  <h2>Discover events</h2>
+    <h2>Discover events</h2>
   <% end %>
   <% @events_by_type.each do |type_id, events| %>
     <%= render "event_group",
