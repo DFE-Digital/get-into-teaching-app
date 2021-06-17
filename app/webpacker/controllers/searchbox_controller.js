@@ -82,20 +82,26 @@ export default class extends Controller {
   }
 
   performXhrSearch(query, callback) {
-    this.searchQuery = query
-    this.scheduleSubmissionToAnalytics()
-
-    let request = new XMLHttpRequest()
-    request.open('GET', '/search.json?' + this.searchParams(query), true)
-    request.timeout = 10 * 1000
-    request.onreadystatechange = function () {
-      if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
-        const results = JSON.parse(request.responseText)
-        callback(results)
-      }
+    if (this.delaySearchTimeout) {
+      clearTimeout(this.delaySearchTimeout);
     }
 
-    request.send()
+    this.delaySearchTimeout = setTimeout(() => {
+      this.searchQuery = query
+      this.scheduleSubmissionToAnalytics()
+
+      let request = new XMLHttpRequest()
+      request.open('GET', '/search.json?' + this.searchParams(query), true)
+      request.timeout = 10 * 1000
+      request.onreadystatechange = function () {
+        if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
+          const results = JSON.parse(request.responseText)
+          callback(results)
+        }
+      }
+
+      request.send()
+    }, 500)
   }
 
   onConfirm(chosen) {
