@@ -29,13 +29,25 @@
 
 .searchpage__results .search-result {
   border-top: 1px solid $grey-mid;
+  padding: 1em .5em;
+
+  &__header {
+    margin-bottom: .4em;
+  }
+
+  &__path {
+    @include font-size("xsmall");
+    color: $grey-dark;
+    padding: 0;
+    margin: 0;
+  }
 
   &:hover {
     color: $blue-dark;
     background: $grey;
 
     h3 {
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 }
