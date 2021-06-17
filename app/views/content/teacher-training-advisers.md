@@ -51,7 +51,9 @@ Other trainee teachers say they are particularly helpful with:
 * Writing a personal statement
 * Preparing for interviews
 
-[Video - Meet Emma, a TTA]
+## Meet Emma, a Teacher Training Adviser
+
+<iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/ZaGL8c4FkLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Helping you decide if teaching is right for you
 
@@ -61,7 +63,9 @@ Taking on teacher training and preparing for a new career can be daunting for an
 
 Your Teacher Training Adviser can help you navigate your path into teaching, and make sure you get any additional help that is available. Your adviser will be just a call, message or email away.
 
-[Video - Meet Simon, a teacher training adviser.]
+## Meet Simon, a teacher training adviser
+
+<iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/T9Bhcaa6LJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Already applied and been unsuccessful?
 
