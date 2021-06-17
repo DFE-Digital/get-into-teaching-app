@@ -2,10 +2,20 @@
 title: Teacher Training Advisers
 description: |-
   What is a Teacher Training Adviser? They can help you with anything related to getting into teaching, such as writing your application, funding and interview preparation.
-date: "2021-06-10"
+date: "2021-06-17"
 image: "media/images/content/hero-images/0003.jpg"
 article_classes: ['longform']
 backlink: "../"
+accordion:
+  steps:
+    Kelly:
+      partial: content/teacher-training-advisers/kelly
+    Allesandro:
+      partial: content/teacher-training-advisers/allesandro
+    Hannah:
+      partial: content/teacher-training-advisers/hannah
+    David:
+      partial: content/international-returners/david
 keywords: 
     - adviser
     - advisor
@@ -86,9 +96,4 @@ To sign up, you’ll need one of these:
 
 $get-a-tta$
 
-Find out how an adviser helped:
-
-* Kelly
-* Allesandro
-* Hannah
-* David
+## Find out how an adviser helped:
