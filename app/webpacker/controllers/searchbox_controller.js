@@ -69,6 +69,7 @@ export default class extends Controller {
       minLength: 2,
       source: this.performXhrSearch.bind(this),
       confirmOnBlur: false,
+      tNoResults: () => this.searching ? "Searching..." : "No results found",
       onConfirm: this.onConfirm.bind(this),
       templates: {
         inputValue: this.inputValueTemplate.bind(this),
@@ -82,6 +83,8 @@ export default class extends Controller {
   }
 
   performXhrSearch(query, callback) {
+    this.searching = true
+
     if (this.delaySearchTimeout) {
       clearTimeout(this.delaySearchTimeout);
     }
@@ -93,9 +96,10 @@ export default class extends Controller {
       let request = new XMLHttpRequest()
       request.open('GET', '/search.json?' + this.searchParams(query), true)
       request.timeout = 10 * 1000
-      request.onreadystatechange = function () {
+      request.onreadystatechange = () => {
         if (request.readyState === XMLHttpRequest.DONE && request.status === 200) {
           const results = JSON.parse(request.responseText)
+          this.searching = false
           callback(results)
         }
       }

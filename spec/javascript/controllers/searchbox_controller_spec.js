@@ -89,6 +89,18 @@ describe('SearchboxController', () => {
         done();
       }, 1500);
     })
+
+    it("shows 'Searching...' while searching", (done) => {
+      const input = document.getElementById('searchbox__input')
+
+      input.value = 'search term'
+
+      setTimeout(() => {
+        const noResultsItem = document.querySelector('.autocomplete__option--no-results')
+        expect(noResultsItem.innerHTML).toEqual("Searching...")
+        done()
+      }, 250)
+    })
   })
 
   describe("toggling search open and close", () => {
