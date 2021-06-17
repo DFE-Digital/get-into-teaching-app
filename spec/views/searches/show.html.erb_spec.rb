@@ -28,10 +28,10 @@ describe "searches/show.html.erb" do
 
     context "with some results" do
       let(:results) do
-        [
-          { path: "/page1", front_matter: { title: "Page 1" } },
-          { path: "/page1", front_matter: { title: "Page 1" } },
-        ]
+        {
+          "/page1" => { title: "Page 1" },
+          "/page2" => { title: "Page 2" },
+        }
       end
 
       it { is_expected.to have_css "p" }
