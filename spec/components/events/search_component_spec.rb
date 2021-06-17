@@ -3,8 +3,9 @@ require "rails_helper"
 describe Events::SearchComponent, type: "component" do
   let(:search) { build(:events_search, :invalid) }
   let(:path) { "/some/path" }
+  let(:performed_search) { nil }
 
-  let(:component) { described_class.new(search, path) }
+  let(:component) { described_class.new(search, path, performed_search) }
   subject! { render_inline(component) }
 
   specify "builds a search form" do
@@ -20,7 +21,7 @@ describe Events::SearchComponent, type: "component" do
 
     context "when overridden" do
       let(:new_heading) { "Search for Awesome events" }
-      subject! { render_inline(described_class.new(search, path, heading: new_heading)) }
+      subject! { render_inline(described_class.new(search, path, performed_search, heading: new_heading)) }
 
       specify %(the title is overridden) do
         expect(page).to have_css("h2", text: new_heading)
@@ -56,10 +57,26 @@ describe Events::SearchComponent, type: "component" do
     end
 
     describe "optionally-blank month field" do
-      subject! { render_inline(described_class.new(search, path, allow_blank_month: true)) }
+      subject! { render_inline(described_class.new(search, path, performed_search, allow_blank_month: true)) }
 
       specify "there should be a blank option with the text '#{described_class::BLANK_MONTH_TEXT}'" do
         expect(page).to have_css("option[value='']", text: described_class::BLANK_MONTH_TEXT)
+      end
+    end
+
+    describe "data attributes" do
+      context "when `performed_search` is nil" do
+        let(:performed_search) { nil }
+        it "does not have `event-search-button` attribute" do
+          expect(page.find(".search")["data-controller"]).not_to include("event-search-button")
+        end
+      end
+
+      context "when `performed_search` is true" do
+        let(:performed_search) { true }
+        it "has the `event-search-button` attribute" do
+          expect(page.find(".search")["data-controller"]).to include("event-search-button")
+        end
       end
     end
   end

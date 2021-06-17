@@ -18,6 +18,12 @@ describe "View events by category" do
       receive(:search_teaching_events_grouped_by_type) { events_by_type }
   end
 
+  it "has the `event-search-button` data-controller attribute" do
+    get event_category_path("train-to-teach-events")
+
+    expect(response.body).to include "event-search-button"
+  end
+
   context "when viewing a category archive" do
     let(:category) { "online-q-as" }
     before do

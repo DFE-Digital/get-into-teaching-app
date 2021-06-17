@@ -57,6 +57,7 @@ private
     events_by_type = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
     group_presenter = Events::GroupPresenter.new(events_by_type, false, @event_search.future?)
     @events = group_presenter.paginated_events_of_type(@type.id, params[:page]) || []
+    @performed_search = true
   end
 
   def load_type

@@ -3,7 +3,7 @@
     <article class="markdown overhang fullwidth">
       <h2 id="searchforevents" class="colored-stripe__title purple"><%= heading %></h2>
       <div class="colored-stripe__content">
-        <div class="search">
+        <div class="search" data-controller="<%= "event-search-button" if @performed_search %>">
           <%= form_for search, method: :get, url: path do |f| %>
             <div class="search__controls" data-controller="conditional-field" data-conditional-field-mode="hide" data-conditional-field-expected="">
               <% if include_type %>

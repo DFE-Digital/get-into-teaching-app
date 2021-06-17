@@ -1,6 +1,7 @@
 <% @search_component = Events::SearchComponent.new(
         @event_search,
         @form_action.to_s,
+        @performed_search,
         include_type: false,
         heading: "Search for #{@category_name}",
         allow_blank_month: true,

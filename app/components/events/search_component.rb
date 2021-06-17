@@ -2,11 +2,12 @@ module Events
   class SearchComponent < ViewComponent::Base
     BLANK_MONTH_TEXT = "All months".freeze
 
-    attr_accessor :search, :path, :include_type, :heading, :allow_blank_month
+    attr_accessor :search, :path, :performed_search, :include_type, :heading, :allow_blank_month
 
-    def initialize(search, path, include_type: true, heading: "Search for events", allow_blank_month: false)
+    def initialize(search, path, performed_search, include_type: true, heading: "Search for events", allow_blank_month: false)
       @search            = search
       @path              = path
+      @performed_search  = performed_search
       @include_type      = include_type
       @heading           = heading
       @allow_blank_month = allow_blank_month
