@@ -9,17 +9,17 @@
   display: block;
   text-decoration: none;
   color: initial;
-  padding: 1em 0;
+  padding: 1em .5em;
 
-  h3 {
-    margin-top: .2rem;
-    margin-bottom: 0;
+  &__header {
+    margin-top: .4em;
   }
 
-  p {
-    margin-top: 0;
-    margin-bottom: .2rem;
-    font-size: .9em;
+  &__path {
+    @include font-size("xsmall");
+    color: $grey-dark;
+    padding: 0;
+    margin: 0;
   }
 
   span {
