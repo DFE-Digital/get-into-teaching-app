@@ -270,15 +270,18 @@ describe Internal::EventsController do
               web_feed_id: nil)
       end
 
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+          .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
+        allow(Rails.logger).to receive(:info)
+      end
+
       context "when \"select a venue\" is selected" do
         let(:params) do
           attributes_for :internal_event,
                          { "venue_type": Internal::Event::VENUE_TYPES[:existing], "building": { "id": building_id } }
         end
         it "posts the event and an existing building" do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
-
           expected_request_body.building =
             build(:event_building_api, { id: params[:building][:id] })
 
@@ -290,6 +293,7 @@ describe Internal::EventsController do
                params: { internal_event: params }
 
           expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test"))
+          expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
         end
       end
 
@@ -298,9 +302,6 @@ describe Internal::EventsController do
           attributes_for(:internal_event, { "venue_type": Internal::Event::VENUE_TYPES[:none], "building": { "id": "" } })
         end
         it "does not post a building" do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
-
           expected_request_body.building = nil
 
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
@@ -311,6 +312,7 @@ describe Internal::EventsController do
                params: { internal_event: params }
 
           expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test"))
+          expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
         end
       end
 
@@ -326,9 +328,6 @@ describe Internal::EventsController do
                                "address_postcode": expected_postcode } }
         end
         it "posts building with no id" do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
-
           expected_request_body.building =
             build(:event_building_api, {
               id: nil,
@@ -348,6 +347,7 @@ describe Internal::EventsController do
                params: { internal_event: params }
 
           expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test"))
+          expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
         end
       end
     end
@@ -378,15 +378,18 @@ describe Internal::EventsController do
               web_feed_id: nil)
       end
 
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+          .to receive(:get_teaching_event).with(event.id) { event }
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+          .to receive(:get_teaching_event_buildings) { [] }
+        allow(Rails.logger).to receive(:info)
+      end
+
       context "when event has no building" do
         let(:params) { { "id": event.id } }
 
         it "posts the event with event status open" do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:get_teaching_event).with(event.id) { event }
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [] }
-
           event.building = nil
           expected_request_body.building = nil
 
@@ -398,6 +401,7 @@ describe Internal::EventsController do
               params: params
 
           expect(response).to redirect_to(internal_events_path(success: true))
+          expect(Rails.logger).to have_received(:info).with("#{publisher_username} - publish - #{event.to_json}")
         end
       end
 
@@ -405,11 +409,6 @@ describe Internal::EventsController do
         let(:params) { { "id": event.id } }
 
         it "posts the event with event status open" do
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:get_teaching_event).with(event.id) { event }
-          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [] }
-
           expected_request_body.building = event.building
 
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
@@ -420,6 +419,7 @@ describe Internal::EventsController do
               params: params
 
           expect(response).to redirect_to(internal_events_path(success: true))
+          expect(Rails.logger).to have_received(:info).with("#{publisher_username} - publish - #{event.to_json}")
         end
       end
     end
