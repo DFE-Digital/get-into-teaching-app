@@ -1,13 +1,18 @@
 module Header
   class NavigationComponent < ViewComponent::Base
-    attr_reader :resources
+    attr_reader :resources, :extra_resources
 
-    def initialize(resources: nil)
-      @resources = resources
+    def initialize(resources: nil, extra_resources: {})
+      @resources       = resources
+      @extra_resources = build_additional_resource_nodes(extra_resources)
     end
 
     def before_render
       @resources ||= helpers.navigation_resources
+    end
+
+    def all_resources
+      resources + extra_resources
     end
 
   private
@@ -25,6 +30,10 @@ module Header
       if (matches = /^\/[^\/]*/.match(current_uri))
         matches[0] == link_path
       end
+    end
+
+    def build_additional_resource_nodes(extra_resources)
+      extra_resources.map { |path, title| OpenStruct.new(path: path, title: title) }
     end
   end
 end

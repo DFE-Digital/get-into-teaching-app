@@ -15,7 +15,9 @@
 
 <header class="limit-content-width">
   <%= render Header::LogoComponent.new %>
-  <%= render Header::NavigationComponent.new %>
+  <%= render Header::NavigationComponent.new(
+    extra_resources: { "/events" => "Teaching events", "/mailinglist/signup/name" => "Register your interest" }
+  ) %>
 </header>
 
 <%= hero %>
