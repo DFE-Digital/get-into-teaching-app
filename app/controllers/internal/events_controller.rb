@@ -8,7 +8,7 @@ module Internal
     NILIFY_ON_DUPLICATE = %i[id readable_id start_at end_at].freeze
 
     def index
-      @event_type = determine_event_type(params[:event_type])
+      @event_type = determine_event_type_from_name(params[:event_type])
 
       load_pending_events(@event_type)
       @no_results = @events.blank?
@@ -30,7 +30,7 @@ module Internal
         @event = get_event_by_id(params[:duplicate])
         @event.assign_attributes(NILIFY_ON_DUPLICATE.to_h { |attribute| [attribute, nil] })
       else
-        @event_type = determine_event_type(params[:event_type])
+        @event_type = determine_event_type_from_name(params[:event_type])
         @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
         @event.building = EventBuilding.new
       end
@@ -50,7 +50,11 @@ module Internal
 
       if @event.save
         Rails.logger.info("#{@user.username} - create/update - #{@event.to_api_event.to_json}")
-        redirect_to internal_events_path(success: :pending, readable_id: @event.readable_id)
+        redirect_to internal_events_path(
+          success: :pending,
+          readable_id: @event.readable_id,
+          event_type: determine_event_type_from_id(@event.type_id),
+        )
       else
         render action: :new
       end
@@ -64,8 +68,12 @@ module Internal
 
   private
 
-    def determine_event_type(type)
-      event_types[type] || event_types[:provider]
+    def determine_event_type_from_name(type_name)
+      event_types[type_name] || event_types[:provider]
+    end
+
+    def determine_event_type_from_id(type_id)
+      event_types.key(type_id).to_s
     end
 
     def event_type_name

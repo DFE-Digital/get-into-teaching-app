@@ -14,17 +14,18 @@ describe Internal::EventsController do
   end
   let(:pending_online_event) do
     build(:event_api,
-          :with_provider_info,
           name: "Pending online event",
           status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
           type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
+          scribble_id: "/scribble/id/12345",
           is_virtual: nil,
+          is_online: nil,
           video_url: nil,
           message: nil,
-          web_feed_id: nil)
+          web_feed_id: nil,
+          building: nil)
   end
-  let(:open_event) { build(:event_api, name: "Open event") }
-  let(:events) { [pending_provider_event, open_event, pending_online_event] }
+  let(:events) { [pending_provider_event, build(:event_api, name: "Open event"), pending_online_event] }
   let(:provider_events_by_type) { group_events_by_type([pending_provider_event]) }
   let(:online_events_by_type) { group_events_by_type([pending_online_event]) }
   let(:publisher_username) { "publisher_username" }
@@ -247,44 +248,144 @@ describe Internal::EventsController do
 
   describe "#create" do
     context "when any user type" do
-      let(:building_id) { pending_provider_event.building.id }
-      let(:expected_request_body) do
-        build(:event_api,
-              id: params[:id],
-              name: params[:name],
-              readable_id: params[:readable_id],
-              type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-              status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
-              summary: params[:summary],
-              description: params[:description],
-              is_online: params[:is_online],
-              start_at: params[:start_at].getutc.floor,
-              end_at: params[:end_at].getutc.floor,
-              provider_contact_email: params[:provider_contact_email],
-              provider_organiser: params[:provider_organiser],
-              provider_target_audience: params[:provider_target_audience],
-              provider_website_url: params[:provider_website_url],
-              is_virtual: nil,
-              video_url: nil,
-              message: nil,
-              web_feed_id: nil)
+
+      before { allow(Rails.logger).to receive(:info) }
+
+      context "when provider event" do
+        before do
+          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+            .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
+        end
+        let(:building_id) { pending_provider_event.building.id }
+        let(:expected_request_body) do
+          build(:event_api,
+                id: params[:id],
+                name: params[:name],
+                readable_id: params[:readable_id],
+                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
+                summary: params[:summary],
+                description: params[:description],
+                is_online: params[:is_online],
+                start_at: params[:start_at].getutc.floor,
+                end_at: params[:end_at].getutc.floor,
+                provider_contact_email: params[:provider_contact_email],
+                provider_organiser: params[:provider_organiser],
+                provider_target_audience: params[:provider_target_audience],
+                provider_website_url: params[:provider_website_url],
+                is_virtual: nil,
+                video_url: nil,
+                message: nil,
+                web_feed_id: nil)
+        end
+
+        context "when \"select a venue\" is selected" do
+          let(:params) do
+            attributes_for :internal_event,
+                           :provider_event,
+                           { "venue_type": Internal::Event::VENUE_TYPES[:existing], "building": { "id": building_id } }
+          end
+          it "posts the event and an existing building" do
+            expected_request_body.building =
+              build(:event_building_api, { id: params[:building][:id] })
+
+            expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+              .to receive(:upsert_teaching_event).with(expected_request_body)
+
+            post internal_events_path,
+                 headers: generate_auth_headers(:author),
+                 params: { internal_event: params }
+
+            expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "provider"))
+            expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+          end
+
+          context "when \"no venue\" is selected" do
+            let(:params) do
+              attributes_for(:internal_event,
+                             :provider_event,
+                             { "venue_type": Internal::Event::VENUE_TYPES[:none], "building": { "id": "" } })
+            end
+            it "does not post a building" do
+              expected_request_body.building = nil
+
+              expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+                .to receive(:upsert_teaching_event).with(expected_request_body)
+
+              post internal_events_path,
+                   headers: generate_auth_headers(:author),
+                   params: { internal_event: params }
+
+              expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "provider"))
+              expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+            end
+          end
+
+          context "when \"add a building\" is selected" do
+            let(:expected_venue) { "New venue" }
+            let(:expected_postcode) { "M1 7AX" }
+            let(:params) do
+              attributes_for :internal_event,
+                             :provider_event,
+                             { "venue_type": Internal::Event::VENUE_TYPES[:add],
+                               "building":
+                                 { "id": building_id,
+                                   "venue": expected_venue,
+                                   "address_postcode": expected_postcode } }
+            end
+            it "does not post a building" do
+              expected_request_body.building =
+                build(:event_building_api, {
+                  id: nil,
+                  venue: expected_venue,
+                  address_line1: nil,
+                  address_line2: nil,
+                  address_line3: nil,
+                  address_city: nil,
+                  address_postcode: expected_postcode,
+                })
+
+              expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+                .to receive(:upsert_teaching_event).with(expected_request_body)
+
+              post internal_events_path,
+                   headers: generate_auth_headers(:author),
+                   params: { internal_event: params }
+
+              expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "provider"))
+              expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+            end
+          end
+        end
       end
 
-      before do
-        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-          .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
-        allow(Rails.logger).to receive(:info)
-      end
-
-      context "when \"select a venue\" is selected" do
+      context "when online event" do
         let(:params) do
           attributes_for :internal_event,
-                         { "venue_type": Internal::Event::VENUE_TYPES[:existing], "building": { "id": building_id } }
+                         :online_event,
+                         type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
         end
-        it "posts the event and an existing building" do
-          expected_request_body.building =
-            build(:event_building_api, { id: params[:building][:id] })
+        let(:expected_request_body) do
+          build(:event_api,
+                id: params[:id],
+                name: params[:name],
+                readable_id: params[:readable_id],
+                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
+                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
+                summary: params[:summary],
+                description: params[:description],
+                start_at: params[:start_at].getutc.floor,
+                end_at: params[:end_at].getutc.floor,
+                scribble_id: params[:scribble_id],
+                building: nil,
+                is_online: nil,
+                is_virtual: nil,
+                video_url: nil,
+                message: nil,
+                web_feed_id: nil)
+        end
 
+        it "posts event" do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
@@ -292,61 +393,7 @@ describe Internal::EventsController do
                headers: generate_auth_headers(:author),
                params: { internal_event: params }
 
-          expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test"))
-          expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
-        end
-      end
-
-      context "when \"no venue\" is selected" do
-        let(:params) do
-          attributes_for(:internal_event, { "venue_type": Internal::Event::VENUE_TYPES[:none], "building": { "id": "" } })
-        end
-        it "does not post a building" do
-          expected_request_body.building = nil
-
-          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:upsert_teaching_event).with(expected_request_body)
-
-          post internal_events_path,
-               headers: generate_auth_headers(:author),
-               params: { internal_event: params }
-
-          expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test"))
-          expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
-        end
-      end
-
-      context "when \"add a building\" is selected" do
-        let(:expected_venue) { "New venue" }
-        let(:expected_postcode) { "M1 7AX" }
-        let(:params) do
-          attributes_for :internal_event,
-                         { "venue_type": Internal::Event::VENUE_TYPES[:add],
-                           "building":
-                             { "id": building_id,
-                               "venue": expected_venue,
-                               "address_postcode": expected_postcode } }
-        end
-        it "posts building with no id" do
-          expected_request_body.building =
-            build(:event_building_api, {
-              id: nil,
-              venue: expected_venue,
-              address_line1: nil,
-              address_line2: nil,
-              address_line3: nil,
-              address_city: nil,
-              address_postcode: expected_postcode,
-            })
-
-          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:upsert_teaching_event).with(expected_request_body)
-
-          post internal_events_path,
-               headers: generate_auth_headers(:author),
-               params: { internal_event: params }
-
-          expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test"))
+          expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "online"))
           expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
         end
       end
