@@ -30,15 +30,10 @@ module Pages
       attr_reader :path, :title, :rank
 
       def initialize(path, front_matter)
-        @path = path
+        @path = front_matter[:navigation_path] || path
 
         front_matter.tap do |fm|
-          @title = fm.fetch(:title) do
-            Rails.logger.warn("page #{path} has no title")
-
-            nil
-          end
-
+          @title = fm[:navigation_title] || fm[:title] || (Rails.logger.warn("page #{path} has no title") && nil)
           @rank  = fm.fetch(:navigation, nil)
           @menu  = fm.fetch(:menu, false)
         end

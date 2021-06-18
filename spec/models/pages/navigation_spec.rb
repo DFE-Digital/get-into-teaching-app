@@ -86,6 +86,28 @@ RSpec.describe Pages::Navigation do
       expect(subject.menu?).to eql(menu)
     end
 
+    context "when the navigation path is overridden" do
+      let(:custom_navigation_path) { "/sales" }
+      let(:front_matter) { { title: title, navigation: navigation, menu: menu, navigation_path: custom_navigation_path } }
+
+      subject { described_class.new(path, front_matter) }
+
+      specify "assigns the custom path to :path attr" do
+        expect(subject.path).to eql(custom_navigation_path)
+      end
+    end
+
+    context "when the navigation title is overridden" do
+      let(:custom_navigation_title) { "January sales!" }
+      let(:front_matter) { { title: title, navigation: navigation, menu: menu, navigation_title: custom_navigation_title } }
+
+      subject { described_class.new(path, front_matter) }
+
+      specify "assigns the custom path to :path attr" do
+        expect(subject.title).to eql(custom_navigation_title)
+      end
+    end
+
     context "when front matter is incomplete" do
       let(:front_matter) { {} }
 

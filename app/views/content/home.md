@@ -12,7 +12,9 @@
   subtitle_button: "Sign up"
   subtitle_link: "/mailinglist/signup/name"
   image: "media/images/content/hero-images/0012.jpg"
-  backlink: "/"
+  navigation: 5
+  navigation_title: "Home"
+  navigation_path: "/"
   content:
     - content/home/purple-box
     - content/home/calls-to-action
