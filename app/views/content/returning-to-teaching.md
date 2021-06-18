@@ -3,7 +3,7 @@ title: "Return to teaching"
 description: |-
   Our return to teaching advisers can advise you on making a return to
   teaching, finding a role or joining the National Tutoring Programme.
-date: "2021-06-08"
+date: "2021-06-18"
 image: "media/images/content/hero-images/0010.jpg"
 backlink: "../../"
 keywords:
@@ -32,6 +32,8 @@ keywords:
   - back
   - vacancies
   - teach again
+  - tutor
+  - QTS
 calls_to_action:
   get-a-tta:
     name: simple
