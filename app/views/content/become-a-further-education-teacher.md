@@ -4,7 +4,7 @@ article_classes: ['longform']
 image: "media/images/content/hero-images/0015.jpg"
 description: |-
   Further education is any study that takes place after secondary school but outside of higher education (e.g. university). 
-date: "2021-06-15"
+date: "2021-06-18"
 keywords:
   - Further
   - Further education
@@ -16,6 +16,7 @@ keywords:
   - NVQ
   - BTEC
   - HND
+  - apprencticeship
 ---
 
 Further education is any study that takes place after secondary school but outside of higher education (e.g. university).
@@ -71,7 +72,7 @@ Other types of funding are available. To find out more, speak to an adviser on [
 
 Speak to an adviser on [0300 303 1877](tel:0300 303 1877) or by emailing feadviceline@etfoundation.co.uk.
 
-Search for [further education jobs](www.aocjobs.com).
+Search for [further education jobs](https://www.aocjobs.com/jobs/).
 
 Visit [Further Education Advice](https://www.feadvice.org.uk/).
 
