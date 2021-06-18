@@ -1,6 +1,39 @@
+@mixin list-item-nav {
+  @include font-size("xsmall");
+
+  padding: .5em;
+
+  a {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 body > header nav {
+  display: flex;
+  flex-grow: 1;
+
   ol.primary {
+    @include reset;
+
+    flex-grow: 1;
+    align-items: flex-end;
+    justify-content: flex-end;
+
     display: flex;
     list-style: none;
+
+    li {
+      @include list-item-nav;
+      border-bottom: 6px solid $white;
+
+      &.active {
+        border-bottom: 6px solid $purple;
+      }
+    }
   }
 }

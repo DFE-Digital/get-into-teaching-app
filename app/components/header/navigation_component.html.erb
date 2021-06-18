@@ -1,7 +1,7 @@
 <nav role="nav">
   <ol class="primary">
     <% @resources.each do |resource| %>
-      <li><%= resource.title %></li>
+      <li><%= nav_link(resource.title, resource.path) %></li>
     <% end %>
   </ol>
 </nav>
