@@ -177,7 +177,7 @@ describe Internal::Event do
   end
 
   describe "#to_api_event" do
-    let(:internal_event) { build(:internal_event) }
+    let(:internal_event) { build(:internal_event, :provider_event) }
     let(:expected_attributes) do
       attributes_for(
         :event_api,
@@ -352,7 +352,7 @@ describe Internal::Event do
   end
 
   describe "#invalid" do
-    let(:event) { build(:internal_event, venue_type: described_class::VENUE_TYPES[:none]) }
+    let(:event) { build(:internal_event, :provider_event, venue_type: described_class::VENUE_TYPES[:none]) }
 
     context "when event is valid" do
       it "returns false when building is invalid" do
