@@ -6,6 +6,7 @@ description: |-
   Further education is any study that takes place after secondary school but outside of higher education (e.g. university). 
 date: "2021-06-15"
 keywords:
+  - Further
   - Further education
   - FE
   - College
@@ -63,14 +64,14 @@ Bursaries (funding you do not need to repay) are available for the following sub
 | English                                           | £12,000        |
 
 
-Other types of funding are available. To find out more, speak to an adviser on 0330 303 1877.
+Other types of funding are available. To find out more, speak to an adviser on [0300 303 1877](tel:0300 303 1877).
 
 
 ## Next steps
 
-Speak to an adviser on 0300 303 1877 or by emailing feadviceline@etfoundation.co.uk.
+Speak to an adviser on [0300 303 1877](tel:0300 303 1877) or by emailing feadviceline@etfoundation.co.uk.
 
-Search for further education jobs on www.aocjobs.com.
+Search for [further education jobs](www.aocjobs.com).
 
 Visit [Further Education Advice](https://www.feadvice.org.uk/).
 
