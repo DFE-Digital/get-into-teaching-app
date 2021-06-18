@@ -13,7 +13,11 @@
   </section>
 </div>
 
-<%= render Header::NavigationComponent.new %>
+<header>
+  <%= render Header::LogoComponent.new %>
+  <%= render Header::NavigationComponent.new %>
+</header>
+
 <%= hero %>
 
 <% if breadcrumbs %>
