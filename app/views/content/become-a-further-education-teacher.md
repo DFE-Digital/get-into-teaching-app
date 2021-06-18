@@ -74,4 +74,4 @@ Search for further education jobs on www.aocjobs.com.
 
 Visit [Further Education Advice](https://www.feadvice.org.uk/).
 
-Hear more about further education on the [Education and Training Foundation YouTube channel(https://www.youtube.com/channel/UCEKM_NnfNB-XPosOENe9uJg).
+Hear more about further education on the [Education and Training Foundation YouTube channel](https://www.youtube.com/channel/UCEKM_NnfNB-XPosOENe9uJg).
