@@ -248,7 +248,6 @@ describe Internal::EventsController do
 
   describe "#create" do
     context "when any user type" do
-
       before { allow(Rails.logger).to receive(:info) }
 
       context "when provider event" do
@@ -402,62 +401,110 @@ describe Internal::EventsController do
 
   describe "#approve" do
     context "when publisher user type" do
-      let(:event) { pending_provider_event }
-      let(:expected_request_body) do
-        build(:event_api,
-              id: event.id,
-              name: event.name,
-              readable_id: event.readable_id,
-              type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-              status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
-              summary: event.summary,
-              description: event.description,
-              is_online: event.is_online,
-              start_at: event.start_at,
-              end_at: event.end_at,
-              provider_contact_email: event.provider_contact_email,
-              provider_organiser: event.provider_organiser,
-              provider_target_audience: event.provider_target_audience,
-              provider_website_url: event.provider_website_url,
-              is_virtual: nil,
-              video_url: nil,
-              message: nil,
-              web_feed_id: nil)
-      end
-
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
           .to receive(:get_teaching_event).with(event.id) { event }
-        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-          .to receive(:get_teaching_event_buildings) { [] }
         allow(Rails.logger).to receive(:info)
       end
 
-      context "when event has no building" do
-        let(:params) { { "id": event.id } }
+      context "when provider event" do
+        before do
+          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+            .to receive(:get_teaching_event_buildings) { [] }
+        end
+        let(:event) { pending_provider_event }
+        let(:expected_request_body) do
+          build(:event_api,
+                id: event.id,
+                name: event.name,
+                readable_id: event.readable_id,
+                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
+                summary: event.summary,
+                description: event.description,
+                is_online: event.is_online,
+                start_at: event.start_at,
+                end_at: event.end_at,
+                provider_contact_email: event.provider_contact_email,
+                provider_organiser: event.provider_organiser,
+                provider_target_audience: event.provider_target_audience,
+                provider_website_url: event.provider_website_url,
+                is_virtual: nil,
+                video_url: nil,
+                message: nil,
+                web_feed_id: nil)
+        end
 
-        it "posts the event with event status open" do
-          event.building = nil
-          expected_request_body.building = nil
+        context "when event has no building" do
+          let(:params) { { "id": event.id } }
 
-          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:upsert_teaching_event).with(expected_request_body)
+          it "posts the event with event status open" do
+            event.building = nil
+            expected_request_body.building = nil
 
-          put internal_approve_path,
-              headers: generate_auth_headers(:publisher),
-              params: params
+            expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+              .to receive(:upsert_teaching_event).with(expected_request_body)
 
-          expect(response).to redirect_to(internal_events_path(success: true))
-          expect(Rails.logger).to have_received(:info).with("#{publisher_username} - publish - #{event.to_json}")
+            put internal_approve_path,
+                headers: generate_auth_headers(:publisher),
+                params: params
+
+            expect(response).to redirect_to(internal_events_path(
+                                              success: :open,
+                                              event_type: :provider,
+                                              readable_id: event.readable_id,
+                                            ))
+            expect(Rails.logger).to have_received(:info).with("#{publisher_username} - publish - #{event.to_json}")
+          end
+        end
+
+        context "when event has a building" do
+          let(:params) { { "id": event.id } }
+
+          it "posts the event with event status open" do
+            expected_request_body.building = event.building
+
+            expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+              .to receive(:upsert_teaching_event).with(expected_request_body)
+
+            put internal_approve_path,
+                headers: generate_auth_headers(:publisher),
+                params: params
+
+            expect(response).to redirect_to(internal_events_path(
+                                              success: :open,
+                                              event_type: :provider,
+                                              readable_id: event.readable_id,
+                                            ))
+            expect(Rails.logger).to have_received(:info).with("#{publisher_username} - publish - #{event.to_json}")
+          end
         end
       end
 
-      context "when event has a building" do
+      context "when online event" do
+        let(:event) { pending_online_event }
         let(:params) { { "id": event.id } }
+        let(:expected_request_body) do
+          build(:event_api,
+                id: event.id,
+                name: event.name,
+                readable_id: event.readable_id,
+                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
+                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
+                summary: event.summary,
+                description: event.description,
+                start_at: event.start_at,
+                end_at: event.end_at,
+                scribble_id: event.scribble_id,
+                building: nil,
+                is_online: nil,
+                is_virtual: nil,
+                video_url: nil,
+                message: nil,
+                web_feed_id: nil)
+        end
 
-        it "posts the event with event status open" do
-          expected_request_body.building = event.building
-
+        it "posts event with event status open" do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
@@ -465,7 +512,11 @@ describe Internal::EventsController do
               headers: generate_auth_headers(:publisher),
               params: params
 
-          expect(response).to redirect_to(internal_events_path(success: true))
+          expect(response).to redirect_to(internal_events_path(
+                                            success: :open,
+                                            event_type: :online,
+                                            readable_id: event.readable_id,
+                                          ))
           expect(Rails.logger).to have_received(:info).with("#{publisher_username} - publish - #{event.to_json}")
         end
       end

@@ -3,17 +3,14 @@
     <div class="confirmation-panel-container">
       <div class="govuk-panel govuk-panel--confirmation">
         <h1 class="govuk-panel__title">
-          Event submitted
-          <% if @pending %>
-            for review
-          <% end %>
+          <%= @pending ? "Event submitted for review" : "Event published" %>
         </h1>
         <% if @readable_id %>
           <div class="govuk-panel__body">
-            Pending event<br>
+            <%= @pending ? "Pending event" : "Published event" %><br>
             <strong>
               <%= link_to @readable_id,
-                  internal_event_path(@readable_id) %>
+                          @pending ? internal_event_path(@readable_id) : event_path(@readable_id) %>
             </strong>
           </div>
         <% end %>

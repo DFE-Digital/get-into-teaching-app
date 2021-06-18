@@ -7,6 +7,7 @@ RSpec.feature "Internal section", type: :feature do
     build(:event_api,
           :with_provider_info,
           name: "Pending provider event",
+          readable_id: "Readable_id",
           status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
           type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"])
   end
@@ -14,6 +15,7 @@ RSpec.feature "Internal section", type: :feature do
     build(:event_api,
           :with_provider_info,
           name: "Pending online event",
+          readable_id: "Readable_id",
           status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
           type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"])
   end
@@ -55,6 +57,7 @@ RSpec.feature "Internal section", type: :feature do
 
       click_button "Submit for review"
       expect(page).to have_text "Event submitted for review"
+      expect(page).to have_text "Pending event"
       expect(page).to have_link("test", href: internal_event_path("test"))
     end
 
@@ -66,7 +69,9 @@ RSpec.feature "Internal section", type: :feature do
       expect(page).to have_text("This is a pending event")
 
       click_button "Set event status to Open"
-      expect(page).to have_text("Event submitted")
+      expect(page).to have_text("Event published")
+      expect(page).to have_text("Published event")
+      expect(page).to have_link("Readable_id", href: event_path("Readable_id"))
     end
   end
 

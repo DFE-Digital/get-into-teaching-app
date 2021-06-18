@@ -41,7 +41,11 @@ module Internal
       api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - publish - #{api_event.to_json}")
-      redirect_to internal_events_path(success: true)
+      redirect_to internal_events_path(
+        success: :open,
+        event_type: determine_event_type_from_id(api_event.type_id),
+        readable_id: api_event.readable_id,
+      )
     end
 
     def create
