@@ -21,6 +21,9 @@ Capybara/FeatureMethods:
 Lint/AmbiguousOperator:
   Enabled: false
 
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
 Rails/LexicallyScopedActionFilter:
   Exclude:
     - 'app/controllers/**/*steps_controller.rb'

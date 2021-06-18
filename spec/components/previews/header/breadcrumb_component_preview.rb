@@ -1,6 +1,6 @@
-class Navigation::BreadcrumbComponentPreview < ViewComponent::Preview
+class Header::BreadcrumbComponentPreview < ViewComponent::Preview
   def default
-    component = Navigation::BreadcrumbComponent.new
+    component = Header::BreadcrumbComponent.new
     render(component) do
       add_breadcrumbs(component.controller)
     end
