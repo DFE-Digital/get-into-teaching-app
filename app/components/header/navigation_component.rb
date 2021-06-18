@@ -18,11 +18,15 @@ module Header
   private
 
     def nav_link(link_text, link_path)
-      class_name = "active" if first_uri_segment_matches_link?(link_path)
+      class_name = "active" if uri_is_root?(link_path) || first_uri_segment_matches_link?(link_path)
 
       tag.li class: class_name do
         link_to_unless_current link_text, link_path
       end
+    end
+
+    def uri_is_root?(link_path)
+      request.path == link_path
     end
 
     def first_uri_segment_matches_link?(link_path)
