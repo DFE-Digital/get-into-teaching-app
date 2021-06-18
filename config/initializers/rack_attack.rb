@@ -55,6 +55,16 @@ module Rack
 
         req.ip if (req.patch? || req.put?) && path_performs_event_sign_up
       end
+
+      # Throttle event upsert by IP (5rpm)
+      throttle("event upsert", limit: 5, period: 1.minute) do |req|
+        event_upsert_paths = [
+          %r{/internal/events},
+          %r{/internal/approve},
+        ]
+
+        req.ip if event_upsert_paths.any? { |path| req.path.match(path) } && (req.post? || req.put?)
+      end
     end
 
     if ENV["FAIL2BAN"].to_s.match? %r{\A\d+\z}
@@ -64,7 +74,7 @@ module Rack
         Fail2Ban.filter("hostile-bots-#{req.ip}", maxretry: 0, findtime: 1.second, bantime: FAIL2BAN_TIME) do
           (
             FAIL2BAN_REGEX.match?(CGI.unescape(req.query_string)) ||
-            FAIL2BAN_REGEX.match?(req.path)
+              FAIL2BAN_REGEX.match?(req.path)
           ).tap do |should_ban|
             if should_ban
               obscured_ip = req.ip.to_s.gsub(%r{\.\d+\.(\d+)\.}, ".***.***.")
