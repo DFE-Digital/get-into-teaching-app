@@ -4,7 +4,7 @@ description: |-
   View the teachers' pay ranges table for England and London. This
   also includes additional pay if you teach SEN or take on extra
   responsibilities.
-date: "2021-02-24"
+date: "2021-06-21"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
 navigation: 40
@@ -21,7 +21,11 @@ right_column:
       hide_on_tablet: Yes
 keywords:
   - Salary
+  - Salaries
+  - Band
   - Pay
+  - Pay scale
+  - Scale
   - Teacher Salary
   - Teacher Salaries
   - Leading Practitioner
@@ -46,13 +50,13 @@ keywords:
   - ECF
 ---
 
-Schools develop their own pay policies to attract and retain teachers that have the greatest impact on their pupils' learning.
+Schools develop their own pay scales to attract and retain teachers that have the greatest impact on their pupils' learning.
 
-What you're paid will be linked to performance, not length of service - meaning your salary can move forward in line with your career.
+What you're paid will be linked to performance, not length of service - meaning your salary can increase as you go through your career.
 
 ## Qualified teachers
 
-As a newly qualified teacher you could earn between £25,714 and £32,157 depending on where you teach.
+As a newly qualified teacher (NQT) in a primary or secondary school your salary could be £25,714 and £32,157 depending on where you teach.
 
 As you progress in your teaching career, it's possible to move up through these pay ranges:
 
@@ -62,6 +66,10 @@ As you progress in your teaching career, it's possible to move up through these 
 | Outer London                  | £29,915 | £45,766 |
 | London fringe                 | £26,948 | £42,780 |
 | The rest of England and Wales | £25,714 | £41,604 |
+
+### Holidays
+
+You'll get more days than people in many other professions. Full-time teachers work for 195 days per year in school.
 
 ### Newly qualified teacher benefits
 
@@ -88,15 +96,11 @@ TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on your respo
 | TLR 1   | £8,291  | £14,030 |
 | TLR 2   | £2,873  | £7,017  |
 
-### Holidays
-
-You'll get more days than people in many other professions. Full-time teachers work for 195 days per year in school.
-
 ### Teachers’ Pension Scheme
 
 The Teachers’ Pension Scheme gives you a regular source of income when you retire. It is:
 
-* based on your salary and service rather than investments
+* based on your teaching salary and service rather than investments
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
@@ -110,7 +114,7 @@ A 'leading practitioner' is an excellent and highly skilled teacher who consiste
 
 They share their skills and experience through the coaching, mentoring and induction of teachers, including trainees and newly qualified teachers (NQTs).
 
-You could earn between £42,402 and £72,480 depending on where you teach.
+The pay scale for leading practitioners is between £42,402 and £72,480 depending on where you teach.
 
 | Area                          | Minimum | Maximum |
 | -------                       | -----   | -----   |
@@ -123,7 +127,7 @@ You could earn between £42,402 and £72,480 depending on where you teach.
 
 Headteachers lead, motivate and manage staff.
 
-You will earn between £47,735 to £125,098 depending on where you teach.
+The pay scale for a headteacher is between £47,735 to £125,098 depending on where you teach.
 
 | Area                          | Minimum | Maximum  |
 | -------                       | -----   | -----    |
