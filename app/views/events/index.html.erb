@@ -1,8 +1,10 @@
-<% @search_component = Events::SearchComponent.new(
-  @event_search,
-  search_events_path(anchor: "searchforevents"),
-   @performed_search
-) %>
+<% content_for :search_component do %>
+  <%= render Events::SearchComponent.new(
+    @event_search,
+    search_events_path(anchor: "searchforevents"),
+    @performed_search
+  ) %>
+<% end %>
 
 <% @before_search_fullwidth = true %>
 
