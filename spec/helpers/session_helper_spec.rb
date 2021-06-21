@@ -25,4 +25,16 @@ describe SessionHelper, type: :helper do
       expect(mailing_list_session).to eq(mailing_list_session_data)
     end
   end
+
+  describe "#callbacks_session" do
+    it "defaults to an empty hash" do
+      expect(callbacks_session).to eq({})
+    end
+
+    it "returns the session callbacks data" do
+      callbacks_session_data = { email: "email@address.com" }
+      session[:callbacks] = callbacks_session_data
+      expect(callbacks_session).to eq(callbacks_session_data)
+    end
+  end
 end

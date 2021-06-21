@@ -1,0 +1,56 @@
+<% @hide_page_helpful_question = true %>
+
+<section class="text-content">
+  <h2 class="green">Callback confirmed</h2>
+
+  <h3>What happens next</h3>
+
+  <p>One of our Teacher Training Advisers will call you on <%= params[:date] %> at <%= params[:time] %>.</p>
+
+  <p>If you need to change your callback time, get in touch with our <a href="#" data-controller="talk-to-us" data-action="talk-to-us#startChat">live chat team</a>.</p>
+
+</section>
+
+<div class="blocks">
+  <%= render Content::GenericBlockComponent.new(
+    title: "Life as a teacher",
+    icon_image: "icon-school-black.svg",
+    icon_alt: "mortarboard icon",
+    icon_size: "40x30",
+    classes: "blocks__directory"
+  ) do %>
+    <ul>
+      <li><a href="/my-story-into-teaching">Read teachers' stories</a></li>
+      <li><a href="https://schoolexperience.education.gov.uk/">Experience a real school</a></li>
+      <li><a href="/salaries-and-benefits">Teachers' salaries</a></li>
+    </ul>
+  <% end %>
+
+  <%= render Content::GenericBlockComponent.new(
+    title: "Your next steps",
+    icon_image: "icon-doc-black.svg",
+    icon_alt: "icon containing learning materials",
+    icon_size: "40x35",
+    classes: "blocks__directory"
+  ) do %>
+    <ul>
+      <li><a href="/steps-to-become-a-teacher">How to become a teacher</a></li>
+      <li><a href="/ways-to-train">Explore ways to train</a></li>
+      <li><a href="/funding-your-training">Find your funding options</a></li>
+    </ul>
+  <% end %>
+
+  <%= render Content::GenericBlockComponent.new(
+    title: "Sign up to get a teacher training adviser",
+    icon_image: "icon-git-black.svg",
+    icon_alt: "site icon logo checkmark",
+    icon_size: "33x33",
+    classes: "blocks__directory"
+  ) do %>
+    <p class="block__text">
+      If you're ready to get into teaching, you can get free, one-to-one, support from a dedicated, experienced teaching professional to guide you through the process.
+    </p>
+
+    <%= link_to "Get an adviser", "/tta-service", class: "button button--white button--unpadded" %>
+  <% end %>
+</div>

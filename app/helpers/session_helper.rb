@@ -7,4 +7,8 @@ module SessionHelper
   def mailing_list_session
     session[:mailinglist] ||= {}
   end
+
+  def callbacks_session
+    session[:callbacks] ||= {}
+  end
 end
