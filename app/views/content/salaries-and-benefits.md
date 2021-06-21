@@ -57,9 +57,9 @@ What you're paid will be linked to performance, not length of service - meaning 
 
 ## Qualified teachers
 
-As a newly qualified teacher (NQT) in a primary or secondary school your salary could be £25,714 and £32,157 depending on where you teach.
+As a newly qualified teacher (NQT) in a primary or secondary school your salary will be between £25,714 and £32,157 depending on where you teach.
 
-As you progress in your teaching career, it's possible to move up through these pay ranges:
+As you progress in your teaching career, it's possible to move up through these pay scales:
 
 | Area                          | Minimum | Maximum |
 | -------                       | -----   | -----   |
@@ -72,7 +72,7 @@ As you progress in your teaching career, it's possible to move up through these 
 
 You'll get more days than people in many other professions. Full-time teachers work for 195 days per year in school.
 
-### Newly qualified teacher benefits
+### Newly qualified teacher (NQT) benefits
 
 A 2-year package to support teachers at the start of their career, based on the [early career framework](https://www.gov.uk/government/publications/supporting-early-career-teachers), launches nationally in September 2021.
 
