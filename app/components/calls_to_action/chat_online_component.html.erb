@@ -4,9 +4,7 @@
   <div class="call-to-action__content">
     <%= tag.span(title, class: "call-to-action__heading") %>
 
-    <p class="call-to-action__text">
-      <%= text %>
-    </p>
+    <%= tag.p(text.html_safe, class:"call-to-action__text") %>
 
     <div class="call-to-action__action">
       <button data-action="click->talk-to-us#startChat" class="button">

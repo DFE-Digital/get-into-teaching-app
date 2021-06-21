@@ -3,15 +3,9 @@
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
 
-    <div id="skiplink-container">
-      <div>
-        <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
-      </div>
-    </div>
-
-    <%= render "sections/header" %>
-    <%= render Sections::HeroComponent.new(@front_matter) %>
-    <%= render Navigation::BreadcrumbComponent.new %>
+    <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
+      <%= c.hero(@front_matter) %>
+    <% end %>
 
     <main role="main" id="main-content">
       <section class="container">
@@ -57,9 +51,12 @@
         <% end %>
 
         <%= tag.article(class: article_classes(@front_matter), data: { controller: 'abbreviation' }) do %>
-
           <% if @front_matter["alert"].present? %>
             <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
+          <% end %>
+
+          <% @front_matter["before-content"]&.each do |partial| %>
+            <%= render(partial) %>
           <% end %>
 
           <%= yield %>
@@ -70,20 +67,18 @@
 
           <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>
             <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered"), active_step: accordion_fm.dig("active_step")) do |accordion| %>
-              <%= accordion.slot(
-                :content_before_accordion,
+              <% accordion.content_before_accordion(
                 partial: accordion_fm.dig("content_before_accordion", "partial"),
                 call_to_action: accordion_fm.dig("content_before_accordion", "cta")
               ) %>
 
               <% accordion_fm["steps"]&.each do |title, contents| %>
-                <%= accordion.slot(:step, title: title, call_to_action: contents["cta"]) do %>
+                <%= accordion.step(title: title, call_to_action: contents["cta"]) do %>
                   <%= render(partial: contents["partial"]) %>
                 <% end %>
               <% end %>
 
-              <%= accordion.slot(
-                :content_after_accordion,
+              <% accordion.content_after_accordion(
                 partial: accordion_fm.dig("content_after_accordion", "partial"),
                 call_to_action: accordion_fm.dig("content_after_accordion", "cta")
               ) %>

@@ -27,7 +27,7 @@ module Cards
 
     def image
       # FIXME: change to image_pack_path once theres a new webpacker release
-      @image ||= resolve_path_to_image("chat-online-card.jpg")
+      @image ||= "media/images/chat-online-card.jpg"
     end
   end
 end

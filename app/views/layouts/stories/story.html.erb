@@ -2,10 +2,11 @@
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
-      <%= render "sections/header" %>
+      <%= render HeaderComponent.new %>
+
       <main role="main" id="main-content">
         <%= render Stories::StoryComponent.new(@front_matter, @page.data) do %>
-          <%= render Navigation::BreadcrumbComponent.new %>
+          <%= render Header::BreadcrumbComponent.new %>
           <%= yield %>
         <% end %>
       </main>

@@ -2,15 +2,16 @@
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
-      <%= render "sections/header" %>
-      <%= render Sections::HeroComponent.new(@front_matter) %>
-      <%= render Navigation::BreadcrumbComponent.new %>
+
+      <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
+        <%= c.hero(@front_matter) %>
+      <% end %>
 
       <main class="story-landing" role="main" id="main-content">
         <section class="container">
           <% if @front_matter.key?("featured_page") %>
             <section class="stories-feature">
-              <div class="stories-feature__image" style="background-image:url('<%= @front_matter.dig("featured_page", "image") %>')"></div>
+              <div class="stories-feature__image" style="background-image:url('<%= asset_pack_path(@front_matter.dig("featured_page", "image")) %>')"></div>
               <div class="stories-feature__content">
                 <%= tag.h2(@front_matter.dig("featured_page", "heading")) %>
                 <%= tag.span(@front_matter.dig("featured_page", "subheading"), class: "stories-feature__subheading") %>

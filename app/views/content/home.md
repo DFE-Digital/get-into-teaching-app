@@ -5,13 +5,13 @@
     If you want to get into teaching, we can help. Get information on training
     courses, funding, salaries and benefits - everything you need to take
     the next step.
-  date: "2021-03-03"
+  date: "2021-06-16"
   fullwidth: true
   lid_pixel_event: "Homepage"
-  subtitle: "Get information and support to help you become a teacher"
-  subtitle_button: "Register for updates"
+  subtitle: "Get one step closer to the classroom with personalised guidance to your inbox."
+  subtitle_button: "Sign up"
   subtitle_link: "/mailinglist/signup/name"
-  image: "media/images/hero-home-dt.jpg"
+  image: "media/images/content/hero-images/0012.jpg"
   backlink: "/"
   content:
     - content/home/purple-box

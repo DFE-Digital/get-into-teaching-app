@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: "School experience helped me decide to switch"
-image: /assets/images/stories/stories-zainab.jpg
+image: media/images/content/stories/stories-zainab.jpg
 backlink: "./"
 backlink_text: Career changers' stories
 story:

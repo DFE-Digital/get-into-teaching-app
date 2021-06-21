@@ -3,7 +3,7 @@
             method: :get,
             class: "govuk-back-link" %>
 
-<h1>Provider Event Details</h1>
+<h1><%= event_type_name.capitalize %> event details</h1>
 
 <%= govuk_form_for @event,
                    url: internal_events_path,
@@ -11,6 +11,7 @@
                    html: { data: { "controller": "internal-events" } } do |f| %>
   <%= f.govuk_error_summary %>
   <%= f.hidden_field :id %>
+  <%= f.hidden_field :type_id %>
   <%= f.govuk_text_field :name,
                          label: { text: 'Event name' },
                          data: { "internal-events-target": "name" } %>
@@ -21,23 +22,31 @@
                  input="internal_event_description">
     </trix-editor>
   <% end %>
-  <%= f.govuk_email_field :provider_contact_email, label: { text: 'Provider email address' } %>
-  <%= f.govuk_text_field :provider_organiser, label: { text: 'Provider organiser' } %>
-  <%= f.govuk_text_field :provider_target_audience, label: { text: 'Target audience' } %>
-  <%= f.govuk_url_field :provider_website_url, label: { text: 'Provider website/registration link' } %>
-  <%= f.govuk_radio_buttons_fieldset(:is_online, inline: true,
-                                     legend: { size: 'm', text: 'Online event?' }) do %>
-    <%= f.govuk_radio_button :is_online, true, label: { text: 'Yes' } %>
-    <%= f.govuk_radio_button :is_online, false, label: { text: 'No' } %>
+
+  <% if @event.provider_event? %>
+    <%= f.govuk_email_field :provider_contact_email, label: { text: 'Provider email address' } %>
+    <%= f.govuk_text_field :provider_organiser, label: { text: 'Provider organiser' } %>
+    <%= f.govuk_text_field :provider_target_audience, label: { text: 'Target audience' } %>
+    <%= f.govuk_url_field :provider_website_url, label: { text: 'Provider website/registration link' } %>
+
+    <%= f.govuk_radio_buttons_fieldset(:is_online, inline: true,
+                                       legend: { size: 'm', text: 'Online event?' }) do %>
+      <%= f.govuk_radio_button :is_online, true, label: { text: 'Yes' }, link_errors: true %>
+      <%= f.govuk_radio_button :is_online, false, label: { text: 'No' } %>
+    <% end %>
   <% end %>
+
   <%= render "form/govuk_error_message", label: "Start at", field_errors: @event.errors[:start_at] do %>
     <%= f.datetime_field :start_at,
+                         max: Date.new(9999, 01, 01),
                          class: class_names("datetime", "govuk-input", { "govuk-input--error": @event.errors[:start_at].any? }),
                          data: { "internal-events-target": "startAt" } %>
   <% end %>
   <%= render "form/govuk_error_message", label: "End at", field_errors: @event.errors[:end_at] do %>
-    <%= f.datetime_field :end_at, class: class_names("datetime", "govuk-input",
-                                                     { "govuk-input--error": @event.errors[:end_at].any? }) %>
+    <%= f.datetime_field :end_at,
+                         max: Date.new(9999, 01, 01),
+                         class: class_names("datetime", "govuk-input",
+                                            { "govuk-input--error": @event.errors[:end_at].any? }) %>
   <% end %>
 
   <%= f.govuk_text_field :readable_id,
@@ -53,29 +62,35 @@
                type: "button",
                data: { action: "click->internal-events#populatePartialUrl" } %>
 
-  <div class="no-left-margin">
-    <%= f.fields_for :building, @event.building do |b| %>
-      <%= b.govuk_error_summary unless @event.building.nil? %>
-      <%= f.govuk_radio_buttons_fieldset(:venue_type, legend: { size: 'm', text: 'Event venue' }) do %>
-        <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:none], label: { text: 'No venue' }, link_errors: true %>
-        <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:existing], label: { text: 'Search existing venues' } do %>
-          <%= b.govuk_collection_select :id,
-                                        f.object.buildings,
-                                        :id,
-                                        ->(building) { "#{building.venue}, #{building.address_postcode}" },
-                                        label: { text: 'Search for existing buildings' },
-                                        options: { include_blank: "" } %>
-        <% end %>
-        <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:add], label: { text: 'Add a new venue' } do %>
-          <%= b.govuk_text_field :venue, label: { text: 'Venue' } %>
-          <%= b.govuk_text_field :address_line1, label: { text: 'Address line 1' } %>
-          <%= b.govuk_text_field :address_line2, label: { text: 'Address line 2' } %>
-          <%= b.govuk_text_field :address_line3, label: { text: 'Address line 3' } %>
-          <%= b.govuk_text_field :address_city, label: { text: 'City' } %>
-          <%= b.govuk_text_field :address_postcode, label: { text: 'Postcode' } %>
+  <% if @event.online_event? %>
+    <%= f.govuk_url_field :scribble_id, label: { text: 'Scribble ID' } %>
+  <% end %>
+
+  <% if @event.provider_event? %>
+    <div class="no-left-margin">
+      <%= f.fields_for :building, @event.building do |b| %>
+        <%= b.govuk_error_summary unless @event.building.nil? %>
+        <%= f.govuk_radio_buttons_fieldset(:venue_type, legend: { size: 'm', text: 'Event venue' }) do %>
+          <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:none], label: { text: 'No venue' }, link_errors: true %>
+          <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:existing], label: { text: 'Search existing venues' } do %>
+            <%= b.govuk_collection_select :id,
+                                          f.object.buildings,
+                                          :id,
+                                          ->(building) { "#{building.venue}, #{building.address_postcode}" },
+                                          label: { text: 'Search for existing buildings' },
+                                          options: { include_blank: "" } %>
+          <% end %>
+          <%= f.govuk_radio_button :venue_type, Internal::Event::VENUE_TYPES[:add], label: { text: 'Add a new venue' } do %>
+            <%= b.govuk_text_field :venue, label: { text: 'Venue' } %>
+            <%= b.govuk_text_field :address_line1, label: { text: 'Address line 1' } %>
+            <%= b.govuk_text_field :address_line2, label: { text: 'Address line 2' } %>
+            <%= b.govuk_text_field :address_line3, label: { text: 'Address line 3' } %>
+            <%= b.govuk_text_field :address_city, label: { text: 'City' } %>
+            <%= b.govuk_text_field :address_postcode, label: { text: 'Postcode' } %>
+          <% end %>
         <% end %>
       <% end %>
-    <% end %>
+  <% end %>
   </div>
   <%= f.button "Submit for review", class: "button form-button" %>
 <% end %>

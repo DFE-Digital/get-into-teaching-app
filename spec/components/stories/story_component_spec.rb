@@ -4,7 +4,7 @@ describe Stories::StoryComponent, type: "component" do
   let(:default_front_matter) do
     {
       "title" => "Swapping senior management for students",
-      "image" => "/assets/images/stories/stories-karen.jpg",
+      "image" => "media/images/content/stories/stories-karen.jpg",
       "story" => {
         "teacher" => "Karen Roberts",
         "video" => "https://www.youtube.com/embed/riY-1DUkLVk",
@@ -14,19 +14,19 @@ describe Stories::StoryComponent, type: "component" do
         {
           "name" => "Zainab",
           "snippet" => "School experience helped me decide to switch",
-          "image" => "/assets/images/stories/stories-zainab.jpg",
+          "image" => "media/images/content/stories/stories-zainab.jpg",
           "link" => "/life-as-a-teacher/my-story-into-teaching/career-changers/school-experience-helped-me-decide-to-switch",
         },
         {
           "name" => "Katie",
           "snippet" => "Returning to teach with international experience",
-          "image" => "/assets/images/stories/stories-katie.png",
+          "image" => "media/images/content/stories/stories-katie.png",
           "link" => "/life-as-a-teacher/my-story-into-teaching/international-career-changers/returning-to-teaching-with-international-experience",
         },
         {
           "name" => "Helen",
           "snippet" => "Lawyer to assistant headteacher",
-          "image" => "/assets/images/stories/stories-helen.jpg",
+          "image" => "media/images/content/stories/stories-helen.jpg",
           "link" => "/life-as-a-teacher/my-story-into-teaching/career-progression/lawyer-to-assistant-teacher",
         },
       ],
@@ -56,7 +56,7 @@ describe Stories::StoryComponent, type: "component" do
     end
 
     specify "the story's image is rendered" do
-      is_expected.to have_css(%(img[src="#{front_matter['image']}"]))
+      is_expected.to have_css(%(img[src*="/packs-test/media/images/content/stories/stories-karen"]))
     end
 
     specify "the teacher name and position are in secondary heading" do
@@ -75,7 +75,7 @@ describe Stories::StoryComponent, type: "component" do
     let(:front_matter) { default_front_matter.merge(video_story) }
 
     specify "the video iframe is present in the document and the src is correct" do
-      is_expected.to have_css("iframe[src='#{video_url}']")
+      is_expected.to have_css("iframe[data-src='#{video_url}'].lazyload")
     end
   end
 

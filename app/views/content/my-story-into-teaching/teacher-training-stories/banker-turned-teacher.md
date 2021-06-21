@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Banker turned teacher
-image: /assets/images/stories/stories-katherine.jpg
+image: media/images/content/stories/stories-katherine.jpg
 backlink: "./"
 backlink_text: Teacher training stories
 story:

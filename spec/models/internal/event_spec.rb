@@ -44,11 +44,6 @@ describe Internal::Event do
       it { is_expected.to validate_length_of(:description).is_at_most(2000) }
     end
 
-    describe "#is_online" do
-      it { is_expected.to allow_values(true, false).for :is_online }
-      it { is_expected.to_not allow_value(nil).for :is_online }
-    end
-
     describe "#start_at" do
       it { is_expected.to_not allow_values(nil, now - 1.minute, now).for :start_at }
       it { is_expected.to allow_value(Time.zone.now + 1.minute).for :start_at }
@@ -74,28 +69,47 @@ describe Internal::Event do
       end
     end
 
-    describe "#provider contact email" do
-      it { is_expected.to allow_value("test@test.com").for :provider_contact_email }
-      it { is_expected.to_not allow_values("test", "", nil).for :provider_contact_email }
-      it { is_expected.to validate_length_of(:provider_contact_email).is_at_most(100) }
+    context "when online event" do
+      before { allow(subject).to receive(:online_event?).and_return(true) }
+
+      describe "#scribble_id" do
+        it { is_expected.to allow_value("test").for :scribble_id }
+        it { is_expected.to_not allow_values("", nil).for :scribble_id }
+        it { is_expected.to validate_length_of(:scribble_id).is_at_most(300) }
+      end
     end
 
-    describe "#provider organiser" do
-      it { is_expected.to allow_value("test").for :provider_organiser }
-      it { is_expected.to_not allow_value("", nil).for :provider_organiser }
-      it { is_expected.to validate_length_of(:provider_organiser).is_at_most(300) }
-    end
+    context "when provider event" do
+      before { allow(subject).to receive(:provider_event?).and_return(true) }
 
-    describe "#provider target audience" do
-      it { is_expected.to allow_value("test").for :provider_target_audience }
-      it { is_expected.to_not allow_value("", nil).for :provider_target_audience }
-      it { is_expected.to validate_length_of(:provider_target_audience).is_at_most(500) }
-    end
+      describe "#is_online" do
+        it { is_expected.to allow_values(true, false).for :is_online }
+        it { is_expected.to_not allow_value(nil).for :is_online }
+      end
 
-    describe "#provider website url" do
-      it { is_expected.to allow_value("test").for :provider_website_url }
-      it { is_expected.to_not allow_value("", nil).for :provider_website_url }
-      it { is_expected.to validate_length_of(:provider_website_url).is_at_most(300) }
+      describe "#provider contact email" do
+        it { is_expected.to allow_value("test@test.com").for :provider_contact_email }
+        it { is_expected.to_not allow_values("test", "", nil).for :provider_contact_email }
+        it { is_expected.to validate_length_of(:provider_contact_email).is_at_most(100) }
+      end
+
+      describe "#provider organiser" do
+        it { is_expected.to allow_value("test").for :provider_organiser }
+        it { is_expected.to_not allow_value("", nil).for :provider_organiser }
+        it { is_expected.to validate_length_of(:provider_organiser).is_at_most(300) }
+      end
+
+      describe "#provider target audience" do
+        it { is_expected.to allow_value("test").for :provider_target_audience }
+        it { is_expected.to_not allow_value("", nil).for :provider_target_audience }
+        it { is_expected.to validate_length_of(:provider_target_audience).is_at_most(500) }
+      end
+
+      describe "#provider website url" do
+        it { is_expected.to allow_value("test").for :provider_website_url }
+        it { is_expected.to_not allow_value("", nil).for :provider_website_url }
+        it { is_expected.to validate_length_of(:provider_website_url).is_at_most(300) }
+      end
     end
 
     describe "#venue_type" do
@@ -163,7 +177,7 @@ describe Internal::Event do
   end
 
   describe "#to_api_event" do
-    let(:internal_event) { build(:internal_event) }
+    let(:internal_event) { build(:internal_event, :provider_event) }
     let(:expected_attributes) do
       attributes_for(
         :event_api,
@@ -338,7 +352,7 @@ describe Internal::Event do
   end
 
   describe "#invalid" do
-    let(:event) { build(:internal_event, venue_type: described_class::VENUE_TYPES[:none]) }
+    let(:event) { build(:internal_event, :provider_event, venue_type: described_class::VENUE_TYPES[:none]) }
 
     context "when event is valid" do
       it "returns false when building is invalid" do

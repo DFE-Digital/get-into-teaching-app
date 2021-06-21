@@ -21,45 +21,31 @@ keywords:
   - when to apply
   - interviews
   - offers
+calls_to_action:
+  get-a-tta:
+    name: simple
+    arguments:
+      title: Get a teacher training adviser
+      text: "Teacher training advisers can help you with everything related to applying for teacher training."
+      link_text: "Get a teacher training adviser"
+      link_target: "/tta-service"
+      icon: "icon-person"
+right_column:
+  ctas:
+   - icon: icon-calendar
+     title: Need application support?
+     link_text: Get a teacher training adviser
+     link_target: "/tta-service"
 ---
 
 Give yourself the best chance of getting on the course you want.
 
 Discover tips on writing your application, finding referees and preparing for
-interviews.
+interviews. A [teacher training adviser](/tta-service) can help you with all of these.
 
 ## Browse courses
 
 You can [search for most postgraduate teacher training courses on GOV.UK](https://www.gov.uk/find-postgraduate-teacher-training-courses).
-
-You can apply to up to 3 courses in total, and then accept one offer.
-
-Many people do not get in the first time, but there’s no need to wait until the
-next year to apply again.
-
-You can rework your application and apply to further courses one at a time.
-
-[Attend an event](/events) to get your course questions answered.
-
-If you do not find the right course for you on GOV.UK, there are [other ways to
-train](/ways-to-train).
-
-## Questions to ask your training provider
-
-Every training provider and training programme is different.
-
-Note down any questions that come to mind while browsing courses.
-
-You may want to ask potential training providers questions, such as:
-
-1. How are academic work and practical teaching arranged?
-2. Who will my mentor be and how often will I meet with them?
-3. Which schools and how many schools will I teach in?
-4. Will I get any other qualifications aside from qualified teacher status
-   (QTS), and what are the benefits of that?
-5. Do you advise me to [get school experience](https://schoolexperience.education.gov.uk/)?
-6. Will you support me to find my first teaching job?
-7. How long does the training take?
 
 ## When to apply
 
@@ -100,7 +86,7 @@ personal statement.
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
 
-[Talk to an experienced teacher for help preparing your application.](/tta-service)
+[Talk to an adviser for help preparing your application.](/tta-service)
 
 ## Choose your referees
 
@@ -170,7 +156,9 @@ As part of your personal statement you'll need to demonstrate your suitability t
 * your A level subjects
 * expertise you’ve gained at work
 
-[If you're concerned about your subject knowledge](/improve-your-subject-knowledge), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training. 
+[If you're concerned about your subject knowledge](/improve-your-subject-knowledge), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
+
+You can [get support preparing a personal statement from an adviser](/tta-service).
 
 ## If you’re invited to interview
 
@@ -188,7 +176,7 @@ Some providers are doing interviews online due to COVID-19 restrictions.
 Congratulations!
 
 Before you start your training the provider will check whether you’re safe to work
-with children through an enhanced DBS check.
+with children through an enhanced [DBS check](https://www.gov.uk/government/organisations/disclosure-and-barring-service/about).
 
 They’ll also check whether you’re fit to train to teach through a health questionnaire.
 
@@ -204,3 +192,5 @@ technique or improve the quality of your application.
 
 You can apply as many times as you want to get a place. Many people succeed
 second or third time round.
+
+$get-a-tta$

@@ -6,7 +6,7 @@ describe CardComponent, type: "component" do
       "snippet" => "Lorem ipsum ....",
       "link" => "/another/page",
       "link_text" => "Link to another page",
-      "image" => "/images/card_thumb.jpg",
+      "image" => "media/images/dfelogo.png",
       "image_description" => "A thorough description of the image",
     }
   end
@@ -24,7 +24,7 @@ describe CardComponent, type: "component" do
 
   specify "includes a link wrapping the story image" do
     is_expected.to have_link(href: card["link"]) do |anchor|
-      expect(anchor).to have_css(%(img[src="#{card['image']}"]))
+      expect(anchor).to have_css(%(img[src*="packs-test/media/images/dfelogo"]))
     end
   end
 
@@ -93,7 +93,7 @@ describe CardComponent, type: "component" do
 
     specify "the image links to the video instead of the card" do
       is_expected.to have_link(href: card["video"]) do |anchor|
-        expect(anchor).to have_css(%(img[src="#{card['image']}"]))
+        expect(anchor).to have_css(%(img[src*="packs-test/media/images/dfelogo"]))
       end
     end
 

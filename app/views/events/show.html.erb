@@ -56,12 +56,12 @@
   <% if @event.video_url %>
   <h2>Video</h2>
   <div class="responsive-video">
-    <iframe class="responsive-video__iframe" src="<%= embed_event_video_url(@event.video_url) %>"></iframe>
+    <iframe title="An event preview" class="responsive-video__iframe" class="lazyload" data-src="<%= embed_event_video_url(@event.video_url) %>"></iframe>
   </div>
   <br />
   <% end %>
 
-  <% if event_status_open?(@event) %>
+  <% if event_status_open?(@event) || event_status_pending?(@event) %>
     <% if can_sign_up_online?(@event) %>
       <h2>How to attend</h2>
       <p>
@@ -90,7 +90,7 @@
 
   <% if @event.providers_list %>
     <%= render Content::AccordionComponent.new do |accordion| %>
-      <%= accordion.slot(:step, title: "Training providers at this event") do %>
+      <%= accordion.step(title: "Training providers at this event") do %>
         <%= safe_html_format(@event.providers_list) %>
       <% end %>
     <% end %>

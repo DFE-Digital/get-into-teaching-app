@@ -7,7 +7,7 @@
   hide_page_helpful_question: true
   lid_pixel_event: "Homepage"
   subtitle: "Get information and support to help you become a teacher"
-  image: "media/images/hero-home-dt.jpg"
+  image: "media/images/content/hero-images/0012.jpg"
   content:
     - content/home/test_content
 ---

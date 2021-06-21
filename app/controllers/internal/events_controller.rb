@@ -2,15 +2,20 @@ module Internal
   class EventsController < ::InternalController
     layout "internal"
     before_action :authorize_publisher, only: %i[approve]
+    helper_method :event_type_name
+
+    DEFAULT_EVENT_TYPE = "provider".freeze
+    NILIFY_ON_DUPLICATE = %i[id readable_id start_at end_at].freeze
 
     def index
-      event_type = event_types[params[:event_type]] || event_types[:provider]
+      @event_type = determine_event_type_from_name(params[:event_type])
 
-      load_pending_events(event_type)
+      load_pending_events(@event_type)
       @no_results = @events.blank?
 
       @success = params[:success]
       @pending = params[:success] == "pending"
+      @readable_id = params[:readable_id]
     end
 
     def show
@@ -21,38 +26,71 @@ module Internal
     end
 
     def new
-      @event = Event.new(venue_type: Event::VENUE_TYPES[:existing])
-      @event.building = EventBuilding.new
+      if params[:duplicate]
+        @event = get_event_by_id(params[:duplicate])
+        @event.assign_attributes(NILIFY_ON_DUPLICATE.to_h { |attribute| [attribute, nil] })
+      else
+        @event_type = determine_event_type_from_name(params[:event_type])
+        @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
+        @event.building = EventBuilding.new
+      end
     end
 
     def approve
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
       api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
-      redirect_to internal_events_path(success: true)
+      Rails.logger.info("#{@user.username} - publish - #{api_event.to_json}")
+      redirect_to internal_events_path(
+        success: :open,
+        event_type: determine_event_type_from_id(api_event.type_id),
+        readable_id: api_event.readable_id,
+      )
     end
 
     def create
       @event = Event.new(event_params)
-      @event.assign_building(building_params)
+      @event.assign_building(building_params) unless @event.online_event?
 
       if @event.save
-        redirect_to internal_events_path(success: :pending)
+        Rails.logger.info("#{@user.username} - create/update - #{@event.to_api_event.to_json}")
+        redirect_to internal_events_path(
+          success: :pending,
+          readable_id: @event.readable_id,
+          event_type: determine_event_type_from_id(@event.type_id),
+        )
       else
         render action: :new
       end
     end
 
     def edit
-      api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      @event = Event.initialize_with_api_event(api_event)
+      @event = get_event_by_id(params[:id])
+
       render :new
     end
 
   private
 
+    def determine_event_type_from_name(type_name)
+      event_types[type_name] || event_types[:provider]
+    end
+
+    def determine_event_type_from_id(type_id)
+      event_types.key(type_id).to_s
+    end
+
+    def event_type_name
+      params[:event_type] || DEFAULT_EVENT_TYPE
+    end
+
+    def get_event_by_id(event_id)
+      api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(event_id)
+      @event = Event.initialize_with_api_event(api_event)
+    end
+
     def authorize_publisher
-      render_forbidden unless publisher?
+      render_forbidden unless @user.publisher?
     end
 
     def load_pending_events(event_type)
@@ -64,7 +102,7 @@ module Internal
 
       @group_presenter = Events::GroupPresenter.new(search_results)
       @events = @group_presenter.paginated_events_of_type(
-        GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+        event_type,
         params[:page],
       )
     end
@@ -105,6 +143,8 @@ module Internal
         :provider_target_audience,
         :provider_website_url,
         :venue_type,
+        :type_id,
+        :scribble_id,
       )
     end
 

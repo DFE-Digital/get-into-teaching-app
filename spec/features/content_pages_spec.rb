@@ -94,6 +94,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
           .css("a")
           .map { |fragment| fragment["href"] }
           .reject { |href| href.start_with?(Regexp.union("http:", "https:", "tel:", "mailto:")) }
+          .reject { |href| href.match?("media/") }
           .reject { |href| href.match?(Regexp.union("privacy-policy", "events", "javascript")) }
           .select { |href| href.start_with?(Regexp.union("/", /\w+/)) }
           .uniq

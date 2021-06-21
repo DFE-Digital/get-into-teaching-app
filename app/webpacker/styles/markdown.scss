@@ -30,12 +30,12 @@
 
   h3 {
     @include font-size(medium);
-    margin-bottom: 0.2em;
+    margin-bottom: .2em;
   }
 
   h4 {
     @include font-size(small);
-    margin-bottom: 0.2em;
+    margin-bottom: .2em;
   }
 
   p,
@@ -85,6 +85,8 @@
       margin-bottom: 3em;
     }
   }
+
+  a.button { @include suppress-external-link-icon; }
 
   ul,
   ol {

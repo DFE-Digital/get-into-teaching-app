@@ -3,8 +3,8 @@
 ## Prerequisites
 
 - Ruby 2.7.3
-- NodeJS 12.15.x
-- Yarn 1.12.x
+- NodeJS 12.22.x
+- Yarn 1.22.x
 
 ## Mac Setup (as of Catalina 11-07-20)
 
@@ -50,7 +50,7 @@ to your `app/views` directory and running `ln -s content
 
 ## Whats included in this website
 
-- Rails 6.0 with Webpacker
+- Rails 6.1 with Webpacker
 - RSpec
 - Dotenv (managing environment variables)
 - Dockerbuild file
@@ -61,7 +61,7 @@ to your `app/views` directory and running `ln -s content
 The static content for this website is held in a separate [Content repository](https://github.com/DFE-Digital/get-into-teaching-content)
 
 When the application in this repository is deployed, it builds a Docker Image,
-then triggers a build of the Content Repo which builds its own Docker Image 
+then triggers a build of the Content Repo which builds its own Docker Image
 layered on top of this one.
 
 ## Running specs, linter(without auto correct) and annotate models and serializers
@@ -70,6 +70,9 @@ bundle exec rake
 ```
 
 ## Running specs
+
+**Dependencies:** The Chrome and chromedriver need to be installed for the feature tests.
+Alternatively, install the chromium and chromium-chromedriver for smaller footprint.
 
 To run the Ruby specs
 
@@ -91,7 +94,7 @@ It's best to lint just your app directories and not those belonging to the frame
 bundle exec rubocop app config db lib spec Gemfile --format clang -a
 ```
 
-You can automatically run the Ruby linter on commit for any changed files with 
+You can automatically run the Ruby linter on commit for any changed files with
 the following pre-commit hook `.git/hooks/pre-commit`.
 
 ```bash
@@ -106,7 +109,7 @@ fi
 [Prettier](https://prettier.io/) is used for code formatting.
 To enforce stylistic rules with Prettier (note: this overwrites the file), run:
 
-```js
+```bash
 yarn prettier --write <path to your file>
 ```
 
@@ -114,7 +117,7 @@ yarn prettier --write <path to your file>
 
 To check a file:
 
-```js
+```bash
 yarn eslint <path to your file>
 ```
 
@@ -124,7 +127,7 @@ yarn eslint <path to your file>
 
 To lint the `./app/webpacker/styles` directory:
 
-```js
+```bash
 # Run StyleLint
 yarn scss-lint
 
@@ -145,7 +148,7 @@ The application has 2 extra Rails environments, in addition to the default 3.
 5. `preprod` - 'production-like' - stage before release to final production
 6. `pagespeed` - 'production-like' - pipes page speed metrics to Prometheus on boot
 
-**NOTE:** It is **important** if checking for the production environment to also 
+**NOTE:** It is **important** if checking for the production environment to also
 check for other 'production-like' environments unless you really intend to only
 check for production, ie.
 
@@ -158,7 +161,7 @@ if Rails.env.rolling? || Rails.env.preprod? || Rails
 First its worth mentioning that all config from `production.rb` is inherited by
 both `rolling.rb` and `preprod.rb` so separate configuration may not be required
 
-Publicly visible Environment Variables can be added to the relevant `.env` 
+Publicly visible Environment Variables can be added to the relevant `.env`
 files for each environment
 
 1. `/.env.production`
@@ -177,10 +180,23 @@ You will either need to have `RAILS_MASTER_KEY` set within your environment or
 have have the appropriate `/config/credentials/<env-name>.key` file with the
 environments master key in.
 
-### Variables
+### HTTP Basic authentication
 
-`HTTPAUTH_USERNAME` and `HTTPAUTH_PASSWORD` - setting both enables site wide 
-password protection
+The app uses HTTP Basic authentication for two purposes:
+- To restrict access (site-wide) to any of the production-like environments (except production itself). 
+- To restrict access to the `/internal/` path, which is not intended for public use. Access is granted to users with either a `publisher` or `author` role (see `./lib/user.rb`). The `publisher` user type has elevated permissions.
+
+Users are stored as comma separated list in the following format:
+
+```yaml
+username|password|role,username2|password2|role2
+```
+
+If a user does not require a role (site-wide authentication), the role credential can be omitted:
+
+```yaml
+username|password
+```
 
 
 

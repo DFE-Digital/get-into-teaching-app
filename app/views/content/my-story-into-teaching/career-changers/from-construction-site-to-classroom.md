@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: From construction site to classroom
-image: /assets/images/stories/stories-julia.jpg
+image: media/images/content/stories/stories-julia.jpg
 backlink: "./"
 backlink_text: Career changers' stories
 story:

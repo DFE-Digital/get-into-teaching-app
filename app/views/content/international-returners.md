@@ -1,6 +1,6 @@
 ---
 title: Return to teaching from overseas
-image: /assets/images/international-returners-dt.jpg
+image: "media/images/content/hero-images/0014.jpg"
 backlink: "../../"
 description: |-
   Return to England to teach with the help of a teacher training adviser.
@@ -35,6 +35,7 @@ accordion:
       partial: content/international-returners/research-visas-and-immigration
 keywords:
   - International
+  - International returner
   - Returners
   - Return
   - Abroad
@@ -62,7 +63,7 @@ If you're thinking about coming home to teach, we want to help.
 
 If you are a non-UK citizen interested in teaching or training to teach in
 England, please read our
-[guidance for international teachers and trainees](/international-candidates)
+[guidance for international teachers and trainees](/train-to-teach-in-england-as-an-international-student)
 to learn how we can support your journey to the UK.
 
 ### Return to teaching success stories

@@ -68,4 +68,45 @@ describe "Rate limiting" do
       end
     end
   end
+
+  describe "event upsert endpoint rate limiting" do
+    let(:publisher_username) { "publisher_username" }
+    let(:publisher_password) { "publisher_password" }
+    let(:author_username) { "author_username" }
+    let(:author_password) { "author_password" }
+    let(:event) { attributes_for(:internal_event, { "building": { "id": "" } }) }
+
+    before do
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:upsert_teaching_event).and_return event
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+        .to receive(:get_teaching_event_buildings) { [] }
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+        .to receive(:get_teaching_event).with(event[:id]) { build(:event_api) }
+
+      BasicAuth.class_variable_set(:@@credentials, nil)
+
+      allow(Rails.application.config.x).to receive(:http_auth) do
+        "#{publisher_username}|#{publisher_password}|publisher,#{author_username}|#{author_password}|author"
+      end
+    end
+
+    it_behaves_like "an IP-based rate limited endpoint", "POST /internal/events", 5, 1.minute do
+      def perform_request
+        post internal_events_path,
+             headers: { "REMOTE_ADDR" => ip }.merge(generate_auth_headers(:author)),
+             params: { internal_event: event }
+      end
+    end
+
+    it_behaves_like "an IP-based rate limited endpoint", "PUT /internal/approve", 5, 1.minute do
+      let(:params) { { "id": event[:id] } }
+
+      def perform_request
+        put internal_approve_path,
+            headers: { "REMOTE_ADDR" => ip }.merge(generate_auth_headers(:publisher)),
+            params: params
+      end
+    end
+  end
 end

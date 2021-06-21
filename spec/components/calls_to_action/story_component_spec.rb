@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe CallsToAction::StoryComponent, type: :component do
   let(:name) { "Joey" }
   let(:link) { "/some-dir/some-page" }
-  let(:image_path) { "media/images/hero-home-dt.jpg" }
+  let(:image_path) { "media/images/content/hero-images/0012.jpg" }
   let(:heading) { "Lorem ipsum sit dolorem" }
   let(:text) { "Venenatismorbi anunc diamsuspendisse pretiumin sollicitudindonec." }
 
@@ -18,7 +18,7 @@ RSpec.describe CallsToAction::StoryComponent, type: :component do
 
   specify "the call to action contains the image" do
     image_element = page.find("img")
-    expect(image_element[:src]).to match(image_path)
+    expect(image_element[:src]).to match(%r{media/images.*\.jpg})
   end
 
   specify "the link is present" do

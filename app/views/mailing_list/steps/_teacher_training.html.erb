@@ -1,15 +1,12 @@
-<h1>We need some more details</h1>
-
-<p>
-  The following answers will only be used to make sure we send relevant
-  information to support you at this time.
-</p>
-
 <%= f.govuk_error_summary %>
 
 <%= f.govuk_collection_radio_buttons :consideration_journey_stage_id,
   f.object.consideration_journey_stages,
   :id,
   :value,
-  legend: { text: t('helpers.label.mailing_list_steps_teacher_training.consideration_journey_stage_id') }
+  legend: { tag: "h1", text: t('helpers.label.mailing_list_steps_teacher_training.consideration_journey_stage_id') } do
 %>
+<p>
+  You'll get the most relevant guidance to support you depending on your circumstances.
+</p>
+<% end %>

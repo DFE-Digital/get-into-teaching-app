@@ -4,7 +4,7 @@
   hide_page_helpful_question: true
   fullwidth: true
   featured_page:
-    image: /a/story/image.jpg
+    image: media/images/dfelogo.png
     heading: A heading
     subheading: A subheading
     text: Longer featured page text
@@ -18,6 +18,6 @@
       stories:
         - name: Section story
           link: /a/section/story/link
-          image: /a/section/story/image.jpg
+          image: media/images/dfelogo.png
           snippet: A snippet
 ---

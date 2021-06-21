@@ -1,6 +1,6 @@
 $indent-amount: 1.5rem;
 
-@mixin indent-left-and-right {
-  margin-left: $indent-amount;
-  margin-right: $indent-amount;
+@mixin indent-left-and-right($left: $indent-amount, $right: $indent-amount) {
+  margin-left: $left;
+  margin-right: $right;
 }

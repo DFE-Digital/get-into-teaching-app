@@ -11,7 +11,7 @@ describe('CookieAcceptanceController', () => {
                     Header
                 </div>
                 BODY
-                <a href="#" id="cookies-agree" data-cookie-acceptance-target="agree" class="call-to-action-button" data-action="click->cookie-acceptance#accept">
+                <a href="#" id="biscuits-agree" data-cookie-acceptance-target="agree" class="call-to-action-button" data-action="click->cookie-acceptance#accept">
                     Yes, I agree. Continue to the new <span>website</span>
                 </a>
                 <a class="secondary-link" href='https://getintoteaching.education.gov.uk/' data-cookie-acceptance-target="disagree" id="cookies-disagree">
@@ -59,7 +59,7 @@ describe('CookieAcceptanceController', () => {
     beforeEach(() => {
       initApp();
 
-      const acceptanceButton = document.getElementById('cookies-agree');
+      const acceptanceButton = document.getElementById('biscuits-agree');
       acceptanceButton.click();
     });
 

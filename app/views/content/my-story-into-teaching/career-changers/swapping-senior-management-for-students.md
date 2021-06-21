@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Swapping senior management for students
-image: /assets/images/stories/stories-karen.jpg
+image: media/images/content/stories/stories-karen.jpg
 backlink: "./"
 backlink_text: Career changers' stories
 story:

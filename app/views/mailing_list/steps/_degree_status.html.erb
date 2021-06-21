@@ -7,17 +7,15 @@
 </div>
 <% end %>
 
-<h1>Do you have a degree?</h1>
-
-<p>
-Telling us whether you have a degree, or are studying for a degree, will help us to give you the right support to become a teacher.
-</p>
-
 <%= f.govuk_error_summary %>
 
 <%= f.govuk_collection_radio_buttons :degree_status_id,
   f.object.degree_status_options,
   :id,
   ->(option) { I18n.t("helpers.answer.mailing_list_steps_degree_status.degree_status.#{option.value.parameterize(separator: "_")}", default: option.value) },
-  legend: { text: t('helpers.label.mailing_list_steps_degree_status.degree_status_id') }
+  legend: { tag: 'h1', text: t('helpers.label.mailing_list_steps_degree_status.degree_status_id') } do
 %>
+  <p>
+    You'll find out how to become a teacher based on your current circumstances.
+  </p>
+<% end %>

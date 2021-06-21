@@ -57,11 +57,8 @@ main.home {
     margin: 1em 0;
 
     > a {
-      @include button;
       @include chevron;
       white-space: inherit;
-
-      display: inline-block !important; // override the block set by button mixin
     }
   }
 
@@ -116,7 +113,6 @@ main.home {
       padding: 0 1em;
 
       a {
-        @include button;
         @include chevron;
         white-space: inherit;
       }

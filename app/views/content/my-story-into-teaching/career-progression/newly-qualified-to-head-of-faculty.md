@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: From newly qualified teacher to head of faculty in 5 years
-image: /assets/images/stories/stories-karen-f.jpg
+image: media/images/content/stories/stories-karen-f.jpg
 backlink: "./"
 backlink_text: Career progression stories
 story:

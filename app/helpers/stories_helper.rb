@@ -14,10 +14,10 @@ module StoriesHelper
       "",
       width: 560,
       height: 315,
-      src: url,
+      data: { src: url },
       allow: "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture",
       allowfullscreen: true,
-      class: "story__video",
+      class: "story__video lazyload",
       loading: "lazy",
     )
   end

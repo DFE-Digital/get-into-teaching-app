@@ -6,6 +6,7 @@ describe EventsHelper, type: "helper" do
   let(:startdate) { DateTime.new(2020, 6, 1, 10) }
   let(:enddate) { DateTime.new(2020, 6, 1, 12) }
   let(:event) { build(:event_api, start_at: startdate, end_at: enddate) }
+  let(:building_fully_populated) { build(:event_building_api, address_line3: "Line 3") }
 
   describe "#format_event_date" do
     let(:stacked) { true }
@@ -139,6 +140,11 @@ describe EventsHelper, type: "helper" do
     it "returns the address, comma separated with line breaks between parts" do
       expect(event.building).not_to be_nil
       expect(event_address(event)).to eq("Line 1,\nLine 2,\nManchester,\nMA1 1AM")
+    end
+
+    it "returns the address, when all fields have values" do
+      event.building = building_fully_populated
+      expect(event_address(event)).to eq("Line 1,\nLine 2,\nLine 3,\nManchester,\nMA1 1AM")
     end
   end
 

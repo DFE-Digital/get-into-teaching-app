@@ -27,11 +27,11 @@ export default class extends Controller {
 
   showDialog() {
     this.overlayTarget.style.display = 'flex';
-    document.getElementById('cookies-agree').focus();
+    document.getElementById('biscuits-agree').focus();
 
     this.disagreeTarget.addEventListener('blur', function (e) {
       e.preventDefault();
-      document.getElementById('cookies-agree').focus();
+      document.getElementById('biscuits-agree').focus();
     });
 
     this.agreeTarget.addEventListener('blur', function (e) {

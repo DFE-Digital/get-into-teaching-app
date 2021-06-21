@@ -9,6 +9,7 @@ import 'controllers';
 
 require.context('../fonts', true);
 require.context('../images', true);
+require.context('../documents', true);
 
 Rails.start();
 Turbolinks.start();

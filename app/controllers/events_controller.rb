@@ -11,7 +11,11 @@ class EventsController < ApplicationController
 
   def index
     @page_title = "Find an event near you"
-    @front_matter = { "description" => "Get your questions answered at an event." }
+    @front_matter = {
+      "description" => "Get your questions answered at an event.",
+      "title" => "Find an event near you",
+      "image" => "media/images/content/hero-images/0002.jpg",
+    }
 
     render layout: "events"
   end

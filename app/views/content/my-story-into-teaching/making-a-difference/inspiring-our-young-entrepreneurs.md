@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Inspiring our young entrepreneurs
-image: /assets/images/stories/stories-laura.jpg
+image: media/images/content/stories/stories-laura.jpg
 backlink: "./"
 backlink_text: Stories about making a difference
 story:

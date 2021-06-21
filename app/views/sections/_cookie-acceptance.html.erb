@@ -18,7 +18,11 @@
 
 
             <div class="dialog__buttons">
-              <a href="#" class="button call-to-action-button" data-action="click->cookie-acceptance#accept" data-cookie-acceptance-target="agree" id="cookies-agree">
+              <!--
+                The id is `biscuits-agrees` instead of `cookies-agree`
+                to prevent ad blockers from removing the button.
+              -->
+              <a href="#" class="button call-to-action-button" data-action="click->cookie-acceptance#accept" data-cookie-acceptance-target="agree" id="biscuits-agree">
                   <span>Accept all cookies</span>
               </a>
               <a class="button button--secondary" href="/cookie_preference" data-cookie-acceptance-target="disagree" id="cookies-disagree">

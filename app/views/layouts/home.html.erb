@@ -2,15 +2,10 @@
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
   <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
-    <div id="skiplink-container">
-      <div>
-        <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
-      </div>
-    </div>
 
-    <%= render "sections/header" %>
-
-    <%= render Sections::HeroComponent.new(@front_matter) %>
+    <%= render HeaderComponent.new do |c| %>
+      <%= c.hero(@front_matter) %>
+    <% end %>
 
     <main class="home" role="main" id="main-content">
       <% @front_matter["content"]&.each do |partial| %>

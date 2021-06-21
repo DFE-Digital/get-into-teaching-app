@@ -6,7 +6,7 @@
 @mixin suppress-external-link-icon {
   &[href*="//"] {
     &:after {
-      content: none !important;
+      content: none;
       margin-left: unset;
     }
   }

@@ -1,3 +1,3 @@
 Loaf.configure do |config|
-  config.match = :exact
+  config.match = :exclusive
 end
