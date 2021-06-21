@@ -1,7 +1,8 @@
 ---
 title: "Salaries and benefits"
 description: |-
-  View the teachers' pay ranges table for England and London. This
+  View teachers' pay scales, pay ranges table and salary bands for England and London, 
+  as well as other benefits such as holidays and pensions. This
   also includes additional pay if you teach SEN or take on extra
   responsibilities.
 date: "2021-06-21"
