@@ -145,7 +145,7 @@ The average salary for leadership teachers (excluding headteachers) in 2019 was 
 
 ### Unqualified teachers
 
-As an unqualified teacher you could earn between £18,169 and £33,410 depending on where you teach and your level of experience.
+An unqualified teacher's salary can be between £18,169 and £33,410 depending on where you teach and your level of experience.
 
 | Area                          | Minimum | Maximum |
 | -------                       | -----   | -----   |
