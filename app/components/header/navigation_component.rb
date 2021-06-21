@@ -18,11 +18,30 @@ module Header
   private
 
     def nav_link(link_text, link_path)
-      class_name = "active" if uri_is_root?(link_path) || first_uri_segment_matches_link?(link_path)
-
-      tag.li class: class_name do
+      tag.li class: class_name(link_path) do
         link_to_unless_current link_text, link_path
       end
+    end
+
+    def menu(link_text, link_path, children)
+      tag.li class: class_name(link_path) do
+        safe_join(
+          [
+            link_to_unless_current(link_text, link_path),
+            tag.ol(class: "secondary") do
+              safe_join(
+                children.map do |child|
+                  tag.li(link_to(child.title, child.path))
+                end,
+              )
+            end,
+          ],
+        )
+      end
+    end
+
+    def class_name(link_path)
+      "active" if uri_is_root?(link_path) || first_uri_segment_matches_link?(link_path)
     end
 
     def uri_is_root?(link_path)

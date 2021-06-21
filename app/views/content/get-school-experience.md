@@ -1,5 +1,6 @@
 ---
 title: Get school experience
+navigation: 10.2
 image: "media/images/content/hero-images/0006.jpg"
 article_classes: ['longform']
 description: |-

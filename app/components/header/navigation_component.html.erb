@@ -1,7 +1,11 @@
 <nav role="nav">
   <ol class="primary">
     <% all_resources.each do |resource| %>
-      <%= nav_link(resource.title, resource.path) %>
+      <% if resource.menu? %>
+        <%= menu(resource.title, resource.path, resource.children) %>
+      <% else %>
+        <%= nav_link(resource.title, resource.path) %>
+      <% end %>
     <% end %>
   </ol>
 </nav>
