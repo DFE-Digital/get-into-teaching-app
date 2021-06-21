@@ -2,33 +2,103 @@ $govuk-include-default-font-face: false;
 
 @import "~govuk-frontend/govuk/all";
 @import "~trix";
+@import "colours";
+$grey-very-light: #f3f2f1;
 
-.event-description {
-  resize: vertical;
-  overflow: auto;
-  height: 350px;
-}
+.internal {
+  .event-description {
+    resize: vertical;
+    overflow: auto;
+    height: 350px;
+  }
 
-.notification-button {
-  margin: 0 30px 30px 0;
-}
+  .notification-button {
+    margin: 0 30px 30px 0;
+  }
 
-.pending-title {
-  padding-top: 30px;
-}
+  .pending-title {
+    padding-top: 30px;
+  }
 
-.pending-no-results {
-  margin: 3em;
-}
+  .pending-no-results {
+    margin: 3em;
+  }
 
-.no-left-margin {
-  margin-left: 0;
-}
+  .no-left-margin {
+    margin-left: 0;
+  }
 
-.form-button {
-  margin: 0 0 30px;
-}
+  .form-button {
+    margin-bottom: 30px;
+  }
 
-.hidden {
-  display: none;
+  .hidden {
+    display: none;
+  }
+
+  .confirmation-panel-container {
+    background-color: $grey-very-light;
+    padding-bottom: 30px;
+    margin: 0;
+
+    a {
+      color: $white;
+    }
+  }
+
+  // Tab navigation
+
+  $grey-very-dark: #202124;
+  $light-greyish-blue: #e8eaed;
+  $very-dark-greyish-blue: #5f6368;
+
+  &.index {
+    background-color: $grey-very-light;
+    max-width: none;
+
+    .container {
+      background-color: $white;
+
+      .tab-bar {
+        background-color: $white;
+        border-bottom: 1px solid #e8eaed;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        .tab {
+          padding: 15px 30px;
+          height: 100%;
+          color: $very-dark-greyish-blue;
+          margin-left: 20px;
+
+          &:focus {
+            background-color: $yellow;
+            box-shadow: 0 -2px $yellow, 0 4px $black;
+          }
+
+          &:hover:not(.active-tab) {
+            color: $grey-very-dark;
+          }
+        }
+
+        .active-tab {
+          border-bottom: solid 2px $green;
+          color: $grey-very-dark;
+        }
+
+        .tab-link {
+          text-decoration: none;
+        }
+
+        .username {
+          margin: 0 30px 0 auto;
+        }
+      }
+
+      .event-pagination {
+        min-height: 50px;
+      }
+    }
+  }
 }

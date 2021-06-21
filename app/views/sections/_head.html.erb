@@ -1,6 +1,7 @@
 <head>
   <meta charset="utf-8">
   <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
+
   <%= render "sections/vwo_code" if @render_vwo %>
   <%= csrf_meta_tags unless @cacheable_static_page %>
   <%= csp_meta_tag %>
@@ -9,6 +10,7 @@
   <%= tag :link, rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' %>
   <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
   <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
+  <%= javascript_pack_tag 'js_enabled', 'data-turbolinks-track': 'reload', async: false %>
   <%= javascript_pack_tag 'lazy_images', 'data-turbolinks-track': 'reload', async: true %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
   <%= yield :head %>

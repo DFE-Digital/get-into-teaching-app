@@ -1,19 +1,39 @@
-<div class="markdown">
+<div class="markdown events-index">
   <% if @success %>
-    <div class="govuk-panel govuk-panel--confirmation">
-      <h1 class="govuk-panel__title">
-        Event submitted
-        <% if @pending %>
-          for review
+    <div class="confirmation-panel-container">
+      <div class="govuk-panel govuk-panel--confirmation">
+        <h1 class="govuk-panel__title">
+          <%= @pending ? "Event submitted for review" : "Event published" %>
+        </h1>
+        <% if @readable_id %>
+          <div class="govuk-panel__body">
+            <%= @pending ? "Pending event" : "Published event" %><br>
+            <strong>
+              <%= link_to @readable_id,
+                          @pending ? internal_event_path(@readable_id) : event_path(@readable_id) %>
+            </strong>
+          </div>
         <% end %>
-      </h1>
+      </div>
     </div>
   <% end %>
 
-  <h1 class="pending-title">Pending Provider Events</h1>
+  <div class="tab-bar">
+    <%= link_to "Provider events",
+                internal_events_path(event_type: "provider"),
+                class: class_names("tab-link", "tab", { "active-tab": event_type_name == "provider" }) %>
+    <%= link_to "Online events",
+                internal_events_path(event_type: "online"),
+                class: class_names("tab-link", "tab", { "active-tab": event_type_name == "online" }) %>
+    <p class="username">Logged in as: <%= @user.username %></p>
+  </div>
 
-  <%= button_to "Submit a provider event for review",
-                new_internal_event_path, method: :get,
+  <h1 class="pending-title">Pending <%= event_type_name %> events</h1>
+
+  <%= button_to "Submit #{event_type_name} event for review",
+                new_internal_event_path,
+                params: { event_type: event_type_name },
+                method: :get,
                 class: "button submit-button no-left-margin" %>
 
   <% if @no_results %>

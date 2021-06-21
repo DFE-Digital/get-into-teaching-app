@@ -110,7 +110,7 @@ $mobile-cutoff: 800px;
           4,
           minmax(100px, 1fr)
         );
-      grid-template-rows: 2em repeat(5, minmax(5px, max-content)) 2em;
+      grid-template-rows: 2em fit-content(1em) fit-content(1em) fit-content(1em) fit-content(1em) fit-content(1em) 2em;
 
       &__title {
         grid-area: 3 / 1 / 5 / 5;
@@ -154,7 +154,7 @@ $mobile-cutoff: 800px;
 
     h1 {
       background-color: $yellow-dark-90;
-      padding: .8em 0.75em 1.2em 1.75em;
+      padding: .8em .75em 1.2em 1.75em;
       margin-left: -1em;
 
       @include mq($from: tablet) {

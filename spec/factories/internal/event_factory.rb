@@ -5,9 +5,16 @@ FactoryBot.define do
     name { "Test" }
     summary { "Test" }
     description { "Test" }
-    is_online { true }
     start_at { DateTime.now + 1.day }
     end_at { DateTime.now + 2.days }
+  end
+
+  trait :online_event do
+    scribble_id { "/scribble/id/1234" }
+  end
+
+  trait :provider_event do
+    is_online { true }
     provider_contact_email { "test@test.com" }
     provider_organiser { "Test" }
     provider_target_audience { "Test" }

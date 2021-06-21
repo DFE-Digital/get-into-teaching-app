@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: No two days are the same
-image: /assets/images/stories/stories-gavin.jpg
+image: media/images/content/stories/stories-gavin.jpg
 backlink: "./"
 backlink_text: Stories about making a difference
 featured_story_card: yes

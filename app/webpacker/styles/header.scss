@@ -106,7 +106,7 @@
         img {
           vertical-align: middle;
           width: 28px;
-          margin-left: 0.2em ;
+          margin-left: .2em;
         }
       }
 
@@ -234,9 +234,10 @@
 .dfe-logo {
   position: relative;
   top: 4px;
-    img {
-      width: 100%;
-    }
+
+  img {
+    width: 100%;
+  }
 }
 
 .covid {
@@ -263,11 +264,6 @@
     }
   }
 
-  .limit-content-width {
-    display: flex;
-    align-items: center;
-  }
-
   &__header {
     display: block;
     font-weight: bold;
@@ -275,7 +271,7 @@
   }
 
   &__close {
-    background: url(/packs/media/images/icon-close-4b00d0952ffd57a191ae46fdf62e895d.svg);
+    background: url("/packs/media/images/icon-close-4b00d0952ffd57a191ae46fdf62e895d.svg");
     display: block;
     width: 44px;
     height: 44px;
@@ -318,6 +314,7 @@
       }
     }
   }
+
   .dfe-logo {
     position: relative;
     top: 7px;
@@ -337,6 +334,7 @@
     display: block;
     width: 100%;
   }
+
   .covid {
     padding: 1.25em;
   }
@@ -390,7 +388,6 @@
 }
 
 @media (max-width: 340px) {
-
   .dfe-logo {
     display: none;
   }

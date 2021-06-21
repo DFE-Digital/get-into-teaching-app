@@ -1,8 +1,7 @@
 ---
 title: Improve your subject knowledge
-image: "/assets/images/international-dt.jpg"
+image: "media/images/content/hero-images/0005.jpg"
 article_classes: ['longform']
-mobileimage: "/assets/images/steps-hero-mob.jpg"
 description: |-
   You may be able to do a 'subject knowledge enhancement' (SKE) course to improve your knowledge of the subject you want to teach.
 date: "2021-05-14"
@@ -35,4 +34,4 @@ Completing a course may be a condition of your offer to train.
 
 [Check whether there’s a subject knowledge enhancement course for your subject](https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory). They're typically offered for subjects where there’s a particular demand for teachers.
 
-Courses are available across England and are often online. You can do them before or alongside your teacher training. You may also be able to study part-time.
+Courses are available across England and are often online. You can do them before or alongside your [teacher training](/ways-to-train). You may also be able to study part-time.

@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Going back and giving back
-image: /assets/images/stories/stories-sandra.jpg
+image: media/images/content/stories/stories-sandra.jpg
 backlink: "./"
 backlink_text: Stories about making a difference
 story:

@@ -1,6 +1,7 @@
 import { initAll } from 'govuk-frontend';
 import { enhanceSelectElement } from 'accessible-autocomplete';
 import 'trix';
+import '../styles/internal.scss';
 
 initAll();
 

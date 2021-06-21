@@ -5,8 +5,10 @@
     maintenance loans are available to support your postgraduate teacher
     training.
   date: "2021-03-11"
-  image: "/assets/images/funding-hero-dt.jpg"
-  mobileimage: "/assets/images/funding-hero-mob.jpg"
+  image: "media/images/content/hero-images/0013.jpg"
+  subtitle: There’s still time to apply and start your training this September. 
+  subtitle_button: "Find a course"
+  subtitle_link: "/start-teacher-training-this-september"
   backlink: "../"
   navigation: 25
   lid_pixel_event: "Funding"
@@ -16,13 +18,16 @@
     If you're a parent or carer: "#if-youre-a-parent-or-carer"
     If you're disabled: "#if-youre-disabled"
     If you come from outside England: "#if-you-come-from-outside-england"
+  before-content:
+    - content/funding-your-training/funding-widget
   calls_to_action:
     chat:
       name: chat_online
       arguments:
         text: |-
-          If you're unsure about whether you qualify for a bursary or scholarship
-          you can chat to us.
+          If you're unsure about whether you qualify for a bursary or
+          scholarship you can chat to us, or call us on
+          <a href="tel:08003892500">0800 389 2500</a>.
     get-school-experience:
       name: simple
       arguments:
@@ -42,9 +47,9 @@
       name: simple
       arguments:
         icon: "icon-arrow"
-        text: "If you come from outside England, you can get advice about training to be a teacher and find out more about coming to train in England."
-        link_text: "Find out more"
-        link_target: "/international-candidates"
+        text: "If you come from outside England."
+        link_text: "Train to teach as an international candidate"
+        link_target: "/train-to-teach-in-england-as-an-international-student"
 
   keywords:
     - Bursaries
@@ -184,6 +189,6 @@ If you live in [Wales](https://www.studentfinancewales.co.uk/), [Scotland](https
 
 Contact the education authority if you live in the Channel Islands ([Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx) and [Guernsey](https://www.gov.gg/article/152744/Policies)) or on the [Isle of Man](https://www.gov.im/student-grants).
 
-[Find out more about financial help if you're an applicant from outside the UK](/guidance/financial-support-for-international-applicants) or [learn about training to teach as an international candidate](/international-candidates).
+[Find out more about financial help if you're an applicant from outside the UK](/guidance/financial-support-for-international-applicants).
 
 $international-candidates$

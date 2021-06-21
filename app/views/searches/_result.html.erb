@@ -1,4 +1,7 @@
-<%= link_to result[0], class: "search-result" do %>
-  <p><%= humanize_path result[0] %></p>
-  <h3><%= result[1][:title] %></h3>
+<%= link_to result[:path], class: "search-result" do %>
+  <%= display_search_path(result[:path]) %>
+
+  <h3 class="search-result__header"><%= result.dig(:frontmatter, :title) %></h3>
+
+  <p class="search-result__description"><%= result.dig(:frontmatter, :description) %></p>
 <% end %>

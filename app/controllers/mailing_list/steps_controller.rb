@@ -5,7 +5,7 @@ module MailingList
     include WizardSteps
     self.wizard_class = MailingList::Wizard
 
-    before_action :set_step_page_title, only: [:show]
+    before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
 
     layout "registration"
@@ -40,7 +40,7 @@ module MailingList
     end
 
     def set_step_page_title
-      @page_title = "Get personalised information and updates about getting into teaching"
+      @page_title = "Get personalised guidance to your inbox"
       unless @current_step.nil?
         @page_title += ", #{@current_step.title.downcase} step"
       end

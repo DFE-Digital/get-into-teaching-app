@@ -1,11 +1,3 @@
-<% content_for :hero do %>
-  <%= render Sections::HeroComponent.new(
-      title: "Find an event near you",
-      image: "media/images/events-hero-dt.jpg",
-      mobileimage: "media/images/events-hero-mob.jpg")
-  %>
-<% end %>
-
 <% @search_component = Events::SearchComponent.new(
   @event_search,
   search_events_path(anchor: "searchforevents")

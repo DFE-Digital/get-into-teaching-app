@@ -1,5 +1,3 @@
-$git-font-family: sans-serif;
-
 @mixin font {
   font-family: $git-font-family;
   font-style: normal;
@@ -84,5 +82,5 @@ a {
 }
 
 .strong {
-  font-weight: bold
+  font-weight: bold;
 }

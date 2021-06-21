@@ -1,264 +1,108 @@
 footer.site-footer {
-  clear: both; // IE-specific fix to make sure footer stays below main content
   background-color: $black;
+  padding: 2em;
 
-  .site-footer-top {
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 70px;
-    padding-bottom: 30px;
-    box-sizing: border-box;
+  .site-footer__wrapper {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    // gap: 4em;
+    flex-direction: column;
+  }
 
-    a {
-      text-decoration: none;
-    }
+  .site-footer-top,
+  .site-footer-bottom {
+    display: flex;
 
-    &__social {
-      display: flex;
-
-      &__link {
-        color: $white;
-        display: block;
-        margin-right: $indent-amount;
-
-        .icon {
-          @include font-size("large");
-        }
-
-        &:hover {
-          color: $grey-light;
-        }
-      }
+    @include mq($until: tablet) {
+      flex-direction: column-reverse;
+      // gap: 2em;
     }
 
     &__links-container {
-      text-align: right;
-      vertical-align: top;
-      color: $grey-mid;
-      @include font-size("xsmall");
-      letter-spacing: 0;
+      flex: 66% 0 0%;
+
       display: flex;
-      justify-content: flex-end;
       flex-wrap: wrap;
-      max-width: 58.3333%;
+
+      justify-content: flex-end;
 
       a {
+        @include font-size("xsmall");
+
         color: $grey-mid;
-        margin-left: 5px;
-        margin-right: 5px;
-        text-decoration: underline;
-        white-space: nowrap;
-        display: block;
-        margin-bottom: 10px;
+        margin-bottom: .5em;
+      }
 
-        &:hover {
-          text-decoration: none;
-        }
+      // column-gap: 1.5em;
+      // row-gap: .6em;
+      a + a {
+        margin-left: 1.5em;
+      }
 
-        &:focus {
-          color: $black;
-          text-decoration: none;
-        }
+      @include mq($until: tablet) {
+        flex-direction: column;
+        padding-bottom: 2em;
 
-        &:before {
-          content: "|";
-          display: inline-block;
-          margin-right: 13px;
+        a + a {
+          margin-left: 0;
         }
+      }
+    }
+  }
 
-        &:first-child:before {
-          content: "";
-          display: none;
-          margin: 0;
-        }
+  .site-footer-top {
+    display: flex;
+    padding-bottom: 2em;
+
+    .icon {
+      @include font-size(large);
+    }
+
+    &__social {
+      flex: 33% 0 0;
+      display: flex;
+
+      // gap: 1em;
+      a + a {
+        margin-left: 1em;
+      }
+
+      a,
+      a:hover {
+        text-decoration: none;
       }
     }
   }
 
   .site-footer-bottom {
-    height: 140px;
-    width: 100%;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-top: 30px;
-    padding-bottom: 70px;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    border-top: 1px solid $grey-mid;
+    margin-top: 2em;
+    padding-top: 2em;
 
     &__logo-container {
-      vertical-align: top;
-      width: 124px;
-      height: 73px;
+      flex: 33% 0 0;
 
-      img {
-        width: 124px;
-        height: 73px;
+      display: flex;
+      align-content: center;
+
+      // gap: 3em;
+      picture + picture {
+        margin-left: 3em;
       }
     }
 
     &__links-container {
-      text-align: right;
-      vertical-align: top;
-      color: $grey-mid;
-      @include font-size("xsmall");
-      letter-spacing: 0;
-      padding-left: 40px;
-      display: flex;
-      justify-content: flex-end;
-      flex-wrap: wrap;
-
-      a {
-        color: $grey-mid;
-        margin-left: 5px;
-        margin-right: 5px;
-        text-decoration: underline;
-        white-space: nowrap;
-        display: block;
-        margin-bottom: 10px;
-
-        &:hover {
-          text-decoration: none;
-        }
-
-        &:focus {
-          color: $black;
-          text-decoration: none;
-        }
-
-        &:before {
-          content: "|";
-          display: inline-block;
-          margin-right: 13px;
-        }
-
-        &:first-child:before {
-          content: "";
-          display: none;
-          margin: 0;
-        }
-      }
-
       &__license {
-        a {
-          display: inline;
-          margin: 0;
+        @include font-size("xsmall");
+        color: $grey-mid;
 
-          &:before {
-            content: "";
-            display: none;
-          }
+        @include mq($from: tablet) {
+          text-align: right;
         }
       }
     }
   }
 
-  .logo__image {
-    top: 0;
-    left: -60px;
-  }
-}
-
-@include mq($until: desktop) {
-  footer.site-footer .site-footer-top__links-container {
-    max-width: none;
-  }
-}
-
-@include mq($until: tablet) {
-  footer.site-footer {
-    .site-footer-top {
-      padding-left: $indent-amount;
-      padding-right: $indent-amount;
-      padding-top: $indent-amount;
-      flex-direction: column-reverse;
-      align-items: flex-start;
-
-      &__links-container {
-        display: block;
-        text-align: left;
-        padding-bottom: 30px;
-        max-width: none;
-
-        &__license {
-          padding-right: 30px;
-          padding-top: 20px;
-
-          a {
-            display: inline-block;
-          }
-        }
-
-        a {
-          display: block;
-          margin-left: 0;
-          margin-right: 0;
-          margin-bottom: 6px;
-
-          &:before {
-            display: none;
-            margin: 0;
-          }
-        }
-
-        span {
-          display: none;
-        }
-      }
-    }
-
-    .site-footer-bottom {
-      display: block;
-      height: 360px;
-      padding-left: $indent-amount;
-      padding-right: $indent-amount;
-      padding-top: 0;
-
-      &__logo-container {
-        display: block;
-      }
-
-      &__links-container {
-        display: block;
-        text-align: left;
-        padding-top: 30px;
-        padding-left: 0;
-
-        &__license {
-          @include font-size("xsmall");
-          padding-right: 30px;
-          padding-top: 20px;
-
-          a {
-            display: inline-block;
-          }
-        }
-
-        a {
-          display: block;
-          margin-left: 0;
-          margin-right: 0;
-          margin-bottom: 6px;
-
-          &:before {
-            display: none;
-            margin: 0;
-          }
-        }
-
-        span {
-          display: none;
-        }
-      }
-    }
-
-    .logo__image {
-      left: -40px;
-    }
+  a {
+    color: $white;
   }
 }

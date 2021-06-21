@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Royal Marine Commando to geography teacher
-image: /assets/images/stories/stories-thomas.jpg
+image: media/images/content/stories/stories-thomas.jpg
 backlink: "./"
 backlink_text: Career changers' stories
 story:

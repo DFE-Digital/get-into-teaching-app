@@ -107,14 +107,8 @@ Rails.application.configure do
     Rails.application.credentials.google_maps_key.presence
   config.x.enable_beta_redirects = true
 
-  config.x.publisher_username = ENV["PUBLISHER_USERNAME"].presence || \
-    Rails.application.credentials.publisher_username.presence
-  config.x.publisher_password = ENV["PUBLISHER_PASSWORD"].presence || \
-    Rails.application.credentials.publisher_password.presence
-  config.x.author_username = ENV["AUTHOR_USERNAME"].presence || \
-    Rails.application.credentials.author_username.presence
-  config.x.author_password = ENV["AUTHOR_PASSWORD"].presence || \
-    Rails.application.credentials.author_password.presence
+  config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence || \
+    Rails.application.credentials.basic_auth_credentials.presence
 
   config.x.api_client_cache_store = ActiveSupport::Cache::RedisCacheStore.new(namespace: "GIT-HTTP")
 

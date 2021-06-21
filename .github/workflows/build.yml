@@ -55,7 +55,7 @@ jobs:
              fi
 
       - name: Cache Docker layers
-        uses: actions/cache@v2.1.5
+        uses: actions/cache@v2.1.6
         with:
           path: /tmp/.buildx-cache
           key: ${{ runner.os }}-buildx-${{ github.sha }}
@@ -70,7 +70,7 @@ jobs:
           password: ${{ steps.azSecret.outputs.ACTIONS-API-ACCESS-TOKEN }}
 
       - name: Build and push to Docker Hub
-        uses: docker/build-push-action@v2.4.0
+        uses: docker/build-push-action@v2.5.0
         with:
           builder: ${{ steps.buildx.outputs.name }}
           cache-from: type=local,src=/tmp/.buildx-cache
@@ -391,7 +391,6 @@ jobs:
           release_name: Release ${{ steps.tag_version.outputs.pr_number }}
           commitish: ${{ github.sha}}
           prerelease: false
-          draft: false
 
       - name: Copy PR Info to Release
         if: steps.release.outputs.id

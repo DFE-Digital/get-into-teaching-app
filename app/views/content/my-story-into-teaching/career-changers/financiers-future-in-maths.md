@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: Financier's future in maths
-image: /assets/images/stories/stories-peter.jpg
+image: media/images/content/stories/stories-peter.jpg
 backlink: "./"
 backlink_text: Career changers' stories
 story:

@@ -45,7 +45,8 @@
       max-width: initial;
     }
 
-    li:hover, li.autocomplete__option--focused {
+    li:hover,
+    li.autocomplete__option--focused {
       .search-result {
         color: govuk-colour("white");
 
@@ -67,7 +68,7 @@
       font-size: .8em;
 
       &:hover {
-        color: grey;
+        color: $grey;
       }
     }
 
@@ -76,4 +77,3 @@
     }
   }
 }
-

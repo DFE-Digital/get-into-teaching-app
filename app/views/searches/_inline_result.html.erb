@@ -1,0 +1,6 @@
+<%= link_to inline_result[0], class: "search-result" do %>
+  <% if humanize_path(inline_result[0]).present? %>
+    <p><%= humanize_path inline_result[0] %></p>
+  <% end %>
+  <h3><%= inline_result[1][:title] %></h3>
+<% end %>

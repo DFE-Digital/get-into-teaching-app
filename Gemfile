@@ -4,13 +4,13 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.3", ">= 6.1.3.1"
+gem "rails", "~> 6.1.3", ">= 6.1.3.2"
 
 # Use Puma as the app server
 gem "puma", "~> 5.3", ">= 5.3.1"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem "webpacker", ">= 5.3.0"
+gem "webpacker", ">= 5.4.0"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -41,7 +41,7 @@ gem "faraday_middleware"
 
 gem "dotenv-rails", ">= 2.7.6"
 
-gem "govuk_design_system_formbuilder", ">= 2.2.0"
+gem "govuk_design_system_formbuilder", ">= 2.5.3"
 
 gem "loaf", ">= 0.10.0"
 
@@ -50,11 +50,13 @@ gem "prometheus-client"
 gem "sentry-rails", ">= 4.3.4"
 gem "sentry-ruby"
 
+gem "text"
+
 gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.29.0"
+gem "view_component", "~> 2.32.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -96,8 +98,8 @@ group :development do
 end
 
 group :test do
+  gem "selenium-webdriver", "~> 3.142"
   gem "shoulda-matchers"
-  gem "webdrivers", "~> 4.6", ">= 4.6.0"
   gem "webmock", ">= 3.12.2"
 end
 

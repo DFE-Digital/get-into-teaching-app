@@ -4,7 +4,7 @@ module CallsToAction
 
     def initialize(icon:, title: nil, link_text:, link_target:, image:)
       @title         = title
-      @image         = image_element(image)
+      @image         = image
       @icon_filename = icon
 
       @link_target = link_target
@@ -19,7 +19,7 @@ module CallsToAction
   private
 
     def image_element(image)
-      tag.div(style: %[background-image: url('#{image}')], class: "call-to-action__image")
+      tag.div(style: %[background-image: url('#{asset_pack_path(image)}')], class: "call-to-action__image")
     end
 
     def icon_element(icon)

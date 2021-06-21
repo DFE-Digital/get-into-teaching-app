@@ -57,7 +57,7 @@ RSpec.feature "Mailing list signup", type: :feature do
       "Email address",
       "How close are you to applying for teacher training?",
       "Do you have a degree?",
-      "What's your postcode? (optional)",
+      "What is your postcode? (optional)",
       "What would you like to teach?",
       "I am over 16 years old and accept the privacy policy",
     ].each do |field_name|

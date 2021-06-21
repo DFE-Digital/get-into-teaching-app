@@ -1,8 +1,7 @@
 ---
 title: Get support training to teach if you're disabled
-image: "/assets/images/international-dt.jpg"
+image: "media/images/content/hero-images/0001.jpg"
 article_classes: ['longform']
-mobileimage: "/assets/images/steps-hero-mob.jpg"
 description: |-
   If you’re disabled, have a mental health condition or educational needs, you can get support to become a teacher.
 date: "2021-05-11"
@@ -27,7 +26,7 @@ If you’re disabled, have a mental health condition or educational needs, you c
 
 ## Adjustments can help you train
 
-Teacher training providers can make adjustments so that you can attend an interview or do the training. For example, they could:
+Teacher training providers can make adjustments so that you can attend an interview or do the [training](/ways-to-train). For example, they could:
 
 * organise equipment like a hearing loop or an adapted keyboard
 * put you in touch with support staff if you have a mental health condition

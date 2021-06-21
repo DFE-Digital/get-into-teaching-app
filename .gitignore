@@ -40,3 +40,10 @@ yarn-debug.log*
 tokens
 terraform.tfstate
 terraform.tfstate.backup
+
+/public/packs
+/public/packs-test
+/node_modules
+/yarn-error.log
+yarn-debug.log*
+.yarn-integrity

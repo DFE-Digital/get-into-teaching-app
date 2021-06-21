@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/list"
 title: "Career progression stories"
-image: "/assets/images/life-as-a-teacher-header.jpg"
+image: "media/images/content/hero-images/0018.jpg"
 backlink: "../../"
 hide_page_helpful_question: true
 description: |-
@@ -11,32 +11,32 @@ date: "2020-02-01"
 stories:
   - name: Paul
     snippet: "Grasp every opportunity: you will progress"
-    image: /assets/images/stories/stories-paul.jpg
+    image: media/images/content/stories/stories-paul.jpg
     image_description: Photograph of Paul Evason, assistant headteacher
     link: /my-story-into-teaching/career-progression/grasp-every-opportunity
   - name: Helen
     snippet: Lawyer to assistant headteacher
-    image: /assets/images/stories/stories-helen.jpg
+    image: media/images/content/stories/stories-helen.jpg
     image_description: Photograph of assistant headteacher and director, Helen Winter
     link: /my-story-into-teaching/career-progression/lawyer-to-assistant-teacher
   - name: Jon
     snippet: Leaping to head of department
-    image: /assets/images/stories/stories-jon.jpg
+    image: media/images/content/stories/stories-jon.jpg
     image_description: Photograph of department head, Jon Simmons
     link: /my-story-into-teaching/career-progression/leaping-to-head-of-department
   - name: Karen
     snippet: From newly qualified teacher to head of faculty in 5 years
-    image: /assets/images/stories/stories-karen-f.jpg
+    image: media/images/content/stories/stories-karen-f.jpg
     image_description: Photograph of head of geography, Karen Falcon
     link: /my-story-into-teaching/career-progression/newly-qualified-to-head-of-faculty
   - name: Sarah
     snippet: NQT to head of biology in 2 years
-    image: /assets/images/stories/stories-sarah-f.jpg
+    image: media/images/content/stories/stories-sarah-f.jpg
     image_description: Photograph of head of biology, Sarah Fisher
     link: /my-story-into-teaching/career-progression/nqt-to-head-of-biology
   - name: Owen
     snippet: One year from post grad to head of department
-    image: /assets/images/stories/stories-owen.jpg
+    image: media/images/content/stories/stories-owen.jpg
     image_description: Photograph of leader of teaching standards, Dr Owen Mather
     link: /my-story-into-teaching/career-progression/one-year-from-post-grad-to-hod
 keywords:

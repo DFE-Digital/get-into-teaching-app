@@ -67,7 +67,7 @@ module EventsHelper
       building.address_line3,
       building.address_city,
       building.address_postcode,
-    ].compact!.join(",\n")
+    ].compact.join(",\n")
   end
 
   def event_location_map(event)

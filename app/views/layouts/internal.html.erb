@@ -1,7 +1,12 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
+<% content_for :head do %>
+  <%= stylesheet_pack_tag 'internal', 'data-turbolinks-track': 'reload', media: 'all' %>
+  <%= javascript_pack_tag 'internal', 'data-turbolinks-track': 'reload', async: true %>
+<% end %>
+
 <%= render "sections/head" %>
-<%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link internal-events", "link-target": "content" }, id: "body" do %>
+<%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video internal-events", "link-target": "content" }, id: "body" do %>
   <div id="skiplink-container">
     <div>
       <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
@@ -9,15 +14,15 @@
   </div>
 
 
-  <main role="main" id="main-content">
-    <section class="container">
+  <main role="main" id="main-content" class="<%= class_names("internal", { "index": current_page?(action: 'index') }) %>">
+    <section class="container internal-container">
       <article class="fullwidth">
         <%= yield %>
+        <%= yield(:feature) %>
       </article>
     </section>
   </main>
 
   <%= render "components/videoplayer" %>
-  <%= javascript_pack_tag 'internal', 'data-turbolinks-track': 'reload', async: true %>
 <% end %>
 </html>

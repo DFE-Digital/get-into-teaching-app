@@ -64,6 +64,209 @@ en:
           <li><span>school experience</span></li>
           <li><span>a chance to talk to current trainees or staff</span></li>
         </ul>
+  funding_widget:
+    subjects:
+      primary:
+        name: "Primary"
+        group: "Primary"
+        sub_head: "Primary"
+        funding: ""
+      primary_with_english:
+        name: "Primary with English"
+        group: "Primary"
+        sub_head: "Primary with English"
+        funding: ""
+      primary_with_geography_and_history:
+        name: "Primary with geography and history"
+        group: "Primary"
+        sub_head: "Primary with geography and history"
+        funding: ""
+      primary_with_mathematics:
+        name: "Primary with mathematics"
+        group: "Primary"
+        sub_head: "Primary with mathematics"
+        funding: ""
+      primary_with_modern_languages:
+        name: "Primary with modern languages"
+        group: "Primary"
+        sub_head: "Primary with modern languages"
+        funding: ""
+      primary_with_physical_group:
+        name: "Primary with physical education"
+        group: "Primary"
+        sub_head: "Primary with physical education"
+        funding: ""
+      primary_with_science:
+        name: "Primary with science"
+        group: "Primary"
+        sub_head: "Primary with science"
+        funding: ""
+      art_and_design:
+        name: "Art and design"
+        group: "Secondary"
+        sub_head: "Art and design - Secondary"
+        funding: ""
+      biology:
+        name: "Biology"
+        group: "Secondary"
+        sub_head: "Biology - Secondary"
+        funding: "Bursaries of £7,000 are available for trainee biology teachers."
+      business_studies:
+        name: "Business studies"
+        group: "Secondary"
+        sub_head: "Business - Secondary"
+        funding: ""
+      chemistry:
+        name: "Chemistry"
+        group: "Secondary"
+        sub_head: "Chemistry - Secondary"
+        funding: "Scholarships of £26,000 and bursaries of £24,000 are available for trainee chemistry teachers."
+      citizenship:
+        name: "Citizenship"
+        group: "Secondary"
+        sub_head: "Citizenship - Secondary"
+        funding: ""
+      classics:
+        name: "Classics"
+        group: "Secondary"
+        sub_head: "Classics - Secondary"
+        funding: "Bursaries of £10,000 are available for trainee classics teachers."
+      communication_and_media_studies:
+        name: "Communication and media studies"
+        group: "Secondary"
+        sub_head: "Communication and media studies - Secondary"
+        funding: ""
+      computing:
+        name: "Computing"
+        group: "Secondary"
+        sub_head: "Computing - Secondary"
+        funding: "Scholarships of £26,000 and bursaries of £24,000 are available for trainee computing teachers."
+      dance:
+        name: "Dance"
+        group: "Secondary"
+        sub_head: "Dance - Secondary"
+        funding: ""
+      design_and_technology:
+        name: "Design and technology"
+        group: "Secondary"
+        sub_head: "Design and technology - Secondary"
+        funding: ""
+      drama:
+        name: "Drama"
+        group: "Secondary"
+        sub_head: "Drama - Secondary"
+        funding: ""
+      economics:
+        name: "Economics"
+        group: "Secondary"
+        sub_head: "Economics - Secondary"
+        funding: ""
+      english:
+        name: "English"
+        group: "Secondary"
+        sub_head: "English - Secondary"
+        funding: ""
+      geography:
+        name: "Geography"
+        group: "Secondary"
+        sub_head: "Geography - Secondary"
+        funding: ""
+      health_and_social_care:
+        name: "Health and social care"
+        group: "Secondary"
+        sub_head: "Health and social care - Secondary"
+        funding: ""
+      history:
+        name: "History"
+        group: "Secondary"
+        sub_head: "History - Secondary"
+        funding: ""
+      mathematics:
+        name: "Mathematics"
+        group: "Secondary"
+        sub_head: "Mathematics - Secondary"
+        funding: "Scholarships of £26,000 and bursaries of £24,000 are available for trainee maths teachers."
+      music:
+        name: "Music"
+        group: "Secondary"
+        sub_head: "Music - Secondary"
+        funding: ""
+      physical_group:
+        name: "Physical education"
+        group: "Secondary"
+        sub_head: "Physical education - Secondary"
+        funding: ""
+      physics:
+        name: "Physics"
+        group: "Secondary"
+        sub_head: "Physics - Secondary"
+        funding: "Scholarships of £26,000 and bursaries of £24,000 are available for trainee physics teachers."
+      psychology:
+        name: "Psychology"
+        group: "Secondary"
+        sub_head: "Psychology - Secondary"
+        funding: ""
+      religious_group:
+        name: "Religious education"
+        group: "Secondary"
+        sub_head: "Religious education - Secondary"
+        funding: ""
+      science:
+        name: "Science"
+        group: "Secondary"
+        sub_head: "Science - Secondary"
+        funding: ""
+      social_sciences:
+        name: "Social sciences"
+        group: "Secondary"
+        sub_head: "Social sciences - Secondary"
+        funding: ""
+      english_as_a_second_or_other_language:
+        name: "English as a second or other language"
+        group: "Secondary: Modern languages"
+        sub_head: "English as a second or other language - Secondary"
+        funding: ""
+      french:
+        name: "French"
+        group: "Secondary: Modern languages"
+        sub_head: "French - Secondary"
+        funding: "Bursaries of £10,000 are available for trainee French language teachers."
+      german:
+        name: "German"
+        group: "Secondary: Modern languages"
+        sub_head: "German - Secondary"
+        funding: "Bursaries of £10,000 are available for trainee German language teachers."
+      italian:
+        name: "Italian"
+        group: "Secondary: Modern languages"
+        sub_head: "Italian - Secondary"
+        funding: "Bursaries of £10,000 are available for trainee Italian language teachers."
+      japanese:
+        name: "Japanese"
+        group: "Secondary: Modern languages"
+        sub_head: "Japanese - Secondary"
+        funding: "Bursaries of £10,000 are available for trainee Japanese language teachers."
+      mandarin:
+        name: "Mandarin"
+        group: "Secondary: Modern languages"
+        sub_head: "Mandarin - Secondary"
+        funding: "Bursaries of £10,000 are available for trainee Mandarin language teachers."
+      modern_languages_other:
+        name: "Modern languages (other)"
+        group: "Secondary: Modern languages"
+        sub_head: "Modern languages (other) - Secondary"
+        funding: "Bursaries of £10,000 are available for trainee Modern languages (other) teachers."
+      russian:
+        name: "Russian"
+        group: "Secondary: Modern languages"
+        sub_head: "Russian - Secondary"
+        funding: "Bursaries of £10,000 are available for trainee Russian language teachers."
+      spanish:
+        name: "Spanish"
+        group: "Secondary: Modern languages"
+        sub_head: "Spanish - Secondary"
+        funding: "Bursaries of £10,000 are available for trainee Spanish language teachers."
+
   event_types:
     222750001:
       name:
@@ -95,6 +298,11 @@ en:
         already_exchanged: "This link has been used already. Enter the details below to help us verify you."
 
       models:
+        funding_widget:
+          attributes:
+            subject:
+              blank: Select a subject
+
         wizard/steps/authenticate:
           attributes:
             timed_one_time_password:
@@ -232,6 +440,8 @@ en:
               blank: Enter the date and time the event starts
             end_at:
               blank: Enter the date and time the event ends
+            scribble_id:
+              blank: Enter a Scribble ID
 
         internal/event_building:
           attributes:
@@ -245,15 +455,15 @@ en:
       mailing_list_steps_degree_status:
         degree_status:
           graduate_or_postgraduate: "Yes, I already have a degree"
-          final_year: "I am a final year student"
-          second_year: "I am a second year student"
-          first_year: "I am a first year student"
-          i_don_t_have_a_degree_and_am_not_studying_for_one: "No, I am not studying for a degree"
+          final_year: "Almost, I'm a final year student"
+          second_year: "Not yet, I'm a second year student"
+          first_year: "Not yet, I'm a first year student"
+          i_don_t_have_a_degree_and_am_not_studying_for_one: "No, and I'm not studying for one"
           other: "Other"
 
     label:
       wizard_steps_authenticate:
-        timed_one_time_password: Enter the verification code sent to %{email}
+        timed_one_time_password: Check your email and enter the verification code sent to %{email}
 
       events_steps_personal_details:
         first_name: First name
@@ -263,7 +473,7 @@ en:
         address_telephone: Phone number (optional)
       events_steps_personalised_updates:
         address_postcode: What is your postcode? (optional)
-        degree_status_id: What stage are you at with your degree?
+        degree_status_id: Do you have a degree?
         consideration_journey_stage_id: How close are you to applying for teacher training?
         preferred_teaching_subject_id: What subject do you want to teach?
 
@@ -272,13 +482,13 @@ en:
         last_name: Last name
         email: Email address
       mailing_list_steps_degree_status:
-        degree_status_id: What stage are you at with your degree?
+        degree_status_id: Do you have a degree?
       mailing_list_steps_teacher_training:
         consideration_journey_stage_id: How close are you to applying for teacher training?
       mailing_list_steps_subject:
         preferred_teaching_subject_id: Which subject do you want to teach?
       mailing_list_steps_postcode:
-        address_postcode: What's your postcode? (optional)
+        address_postcode: Your postcode (optional)
 
       search:
         search: Search for ...
@@ -288,7 +498,7 @@ en:
         first_name: First name
         last_name: Last name
         email: Email address
-        address_postcode: What's your postcode? (optional)
+        address_postcode: What is your postcode? (optional)
         degree_status_id: Do you have a degree?
         preferred_teaching_subject_id: What would you like to teach?
         consideration_journey_stage_id: How close are you to applying for teacher training?

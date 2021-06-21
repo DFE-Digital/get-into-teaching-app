@@ -1,15 +1,18 @@
 require "next_gen_images"
 require "lazy_load_images"
 require "responsive_images"
+require "basic_auth"
 
 class ApplicationController < ActionController::Base
+  class ForbiddenError < StandardError; end
+
   include UtmCodes
 
   rescue_from ActionController::RoutingError, with: :render_not_found
   rescue_from GetIntoTeachingApiClient::ApiError, with: :handle_api_error
   rescue_from Pages::Page::PageNotFoundError, with: :render_not_found
 
-  before_action :site_wide_authentication
+  before_action :http_basic_authenticate, if: :authenticate?
   before_action :set_api_client_request_id
   before_action :record_utm_codes
   before_action :add_home_breadcrumb
@@ -17,20 +20,22 @@ class ApplicationController < ActionController::Base
 
   after_action :process_images
 
+private
+
   def raise_not_found
     raise ActionController::RoutingError, "Not Found"
   end
 
-private
+  def authenticate?
+    BasicAuth.env_requires_auth?
+  end
 
   def toggle_vwo
     @render_vwo = vwo_config[:paths]&.include?(request.path)
   end
 
   def vwo_config
-    # rubocop:disable Style/ClassVars
     @@vwo_config ||= YAML.safe_load(File.read(Rails.root.join("config/vwo.yml"))).deep_symbolize_keys
-    # rubocop:enable Style/ClassVars
   end
 
   def process_images
@@ -76,12 +81,14 @@ private
     render_error :too_many_requests
   end
 
-  def site_wide_authentication
-    return true if ENV["HTTPAUTH_USERNAME"].blank?
-
-    authenticate_or_request_with_http_basic do |name, password|
-      name == ENV["HTTPAUTH_USERNAME"].to_s &&
-        password == ENV["HTTPAUTH_PASSWORD"].to_s
+  def http_basic_authenticate
+    authenticate_or_request_with_http_basic do |username, password|
+      user = BasicAuth.authenticate(username, password)
+      if user.present?
+        session[:user] = user
+      else
+        false
+      end
     end
   end
 

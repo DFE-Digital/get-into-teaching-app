@@ -1,9 +1,9 @@
 @charset 'UTF-8';
 
-@import './git';
-
+$git-font-family: sans-serif;
 $govuk-font-family: $git-font-family;
 
+@import './git';
 @import "~govuk-frontend/govuk/all";
 @import './govuk-reset';
 

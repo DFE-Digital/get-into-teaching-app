@@ -1,7 +1,6 @@
-<%= render "sections/mailing-list-popup" %>
+<%= render "sections/talk-to-us" %>
+<%= render "sections/feedback_bar" %>
 <footer class="site-footer">
-  <%= render "sections/talk-to-us" %>
-  <%= render "sections/feedback_bar" %>
   <div class="site-footer__wrapper limit-content-width">
     <div class="site-footer-top">
       <div class="site-footer-top__social">
@@ -29,7 +28,7 @@
       <div class="site-footer-top__links-container">
         <%= link_to("Home", root_path) %>
         <% navigation_resources.each do |resource| %>
-          <a href="<%= resource[:path] %>"><%= resource[:front_matter][:title] %></a>
+          <a href="<%= resource.path %>"><%= resource.title %></a>
         <% end %>
         <%= link_to "Find an event near you", events_path %>
         <%= link_to "Sign up for updates", mailing_list_steps_path %>
@@ -40,6 +39,7 @@
     <div class="site-footer-bottom">
       <div class="site-footer-bottom__logo-container">
         <%= image_pack_tag 'media/images/dfelogo-white.svg', alt: "Department for Education", size: "124x73" %>
+        <%= image_pack_tag 'media/images/plan-for-jobs.svg', alt: "Plan for jobs", size: "124x73" %>
       </div>
       <div class="site-footer-bottom__links-container">
         <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSdBXbU5nwP6_3TH7HY5rB4ehkSDNzfKqB5X2G7wG4K6LY97-g/viewform">Feedback</a>
@@ -47,7 +47,7 @@
         <%= link_to "Privacy notice", privacy_policy_path %>
         <%= link_to("Accessibility", page_path(page: :accessibility)) %>
         <a target="_blank" rel="noopener noreferrer" href="https://form.education.gov.uk/en/AchieveForms/?form_uri=sandbox-publish://AF-Process-f1453496-7d8a-463f-9f33-1da2ac47ed76/AF-Stage-1e64d4cc-25fb-499a-a8d7-74e98203ac00/definition.json&redirectlink=%2Fen&cancelRedirectLink=%2Fen">Freedom of information</a>
-        <div class="site-footer-bottom__links-container__license">All content is available under the <a href="/">Open Government License v.3.0,</a> except where otherwise stated</div>
+        <div class="site-footer-bottom__links-container__license">All content is available under the <a href="/">Open Government License v.3.0,</a> except where otherwise stated.</div>
       </div>
     </div>
   </div>

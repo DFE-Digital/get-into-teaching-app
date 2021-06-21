@@ -16,7 +16,7 @@ describe Content::AccordionComponent, type: "component" do
     subject! do
       render_inline(described_class.new) do |accordion|
         steps.each do |title, content|
-          accordion.slot(:step, title: title) { content }
+          accordion.step(title: title) { content }
         end
       end
     end
@@ -57,7 +57,7 @@ describe Content::AccordionComponent, type: "component" do
     describe "chat_online" do
       subject do
         render_inline(described_class.new) do |accordion|
-          accordion.slot(:step, title: title, call_to_action: call_to_action) do
+          accordion.step(title: title, call_to_action: call_to_action) do
             text
           end
         end
@@ -89,7 +89,7 @@ describe Content::AccordionComponent, type: "component" do
     describe "story" do
       subject do
         render_inline(described_class.new) do |accordion|
-          accordion.slot(:step, title: title, call_to_action: call_to_action)
+          accordion.step(title: title, call_to_action: call_to_action)
         end
       end
 
@@ -102,7 +102,7 @@ describe Content::AccordionComponent, type: "component" do
             "arguments" => {
               "name" => name,
               "heading" => heading,
-              "image" => "/an-image.jpg",
+              "image" => "media/images/dfelogo.png",
               "link" => "/some-link",
               "text" => "The quick brown fox",
             },
@@ -123,7 +123,7 @@ describe Content::AccordionComponent, type: "component" do
   describe "Numbered steps" do
     subject! do
       render_inline(described_class.new(numbered: true)) do |accordion|
-        accordion.slot(:step, title: title) { text }
+        accordion.step(title: title) { text }
       end
     end
 
@@ -138,7 +138,7 @@ describe Content::AccordionComponent, type: "component" do
     subject! do
       render_inline(described_class.new(active_step: active_step)) do |accordion|
         1.upto(3).each do |i|
-          accordion.slot(:step, title: "title #{i}") { "text #{i}" }
+          accordion.step(title: "title #{i}") { "text #{i}" }
         end
       end
     end

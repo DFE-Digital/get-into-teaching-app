@@ -21,7 +21,10 @@ private
   end
 
   def autocomplete_results(results)
-    (results || []).map do |path, frontmatter|
+    (results || []).map do |page|
+      path = page[:path]
+      frontmatter = page[:frontmatter]
+
       {
         link: path,
         title: frontmatter[:title],
@@ -30,10 +33,10 @@ private
     end
   end
 
-  def render_result(*result)
+  def render_result(*inline_result)
     render_to_string \
-      partial: "result",
-      object: result,
+      partial: "inline_result",
+      object: inline_result,
       formats: [:html]
   end
 end
