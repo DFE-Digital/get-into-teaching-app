@@ -53,6 +53,7 @@ jobs:
              else
                 echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:review-${{steps.sha.outputs.short }}
              fi
+             echo ::set-output name=DOCKER_EVENT::${{ env.DOCKER_REPOSITORY }}:event-${{ github.event.number }}
 
       - name: Cache Docker layers
         uses: actions/cache@v2.1.6
@@ -77,6 +78,7 @@ jobs:
           cache-to: type=local,dest=/tmp/.buildx-cache
           tags: |
                  ${{ steps.docker.outputs.DOCKER_IMAGE }}
+                 ${{ steps.docker.outputs.DOCKER_EVENT }}
           push: true
           build-args: |
                       SHA=${{ steps.sha.outputs.short }}
