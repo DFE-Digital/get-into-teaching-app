@@ -85,6 +85,12 @@ a {
   @include button($bg: $pink);
 }
 
+.disabled-button {
+  @include button($bg: $pink);
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
 .survey-button {
   @include button($bg: $blue-dark);
   margin-bottom: 0.5rem;

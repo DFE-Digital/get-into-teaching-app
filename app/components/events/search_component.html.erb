@@ -8,25 +8,25 @@
             <div class="search__controls" data-controller="conditional-field" data-conditional-field-mode="hide" data-conditional-field-expected="">
               <% if include_type %>
                 <%= tag.div(class: input_field_classes(:type)) do %>
-                    <%= f.label :type, "Event type" %>
-                    <%= f.collection_select :type, search.class.available_event_types, :id, :value, { include_blank: "All events" } %>
+                  <%= f.label :type, "Event type" %>
+                  <%= f.collection_select :type, search.class.available_event_types, :id, :value, { include_blank: "All events" }, data: { action: "event-search-button#parameterChanged" } %>
                 <% end %>
               <% end %>
 
               <%= tag.div(class: input_field_classes(:distance)) do %>
-                  <%= f.label :distance, "Location" %>
-                  <%= f.select :distance, search.class.available_distances, {},
-                        data: { action: "conditional-field#toggle", "conditional-field-target": "source" } %>
+                <%= f.label :distance, "Location" %>
+                <%= f.select :distance, search.class.available_distances, {},
+                             data: { action: "conditional-field#toggle event-search-button#parameterChanged", "conditional-field-target": "source" } %>
               <% end %>
 
               <%= tag.div(class: input_field_classes(:postcode), data: { "conditional-field-target": "showhide" }) do %>
                 <%= f.label :postcode, "Postcode" %>
-                <%= f.text_field :postcode %>
+                <%= f.text_field :postcode, data: { action: "event-search-button#parameterChanged" } %>
               <% end %>
 
               <%= tag.div(class: input_field_classes(:month)) do %>
-                  <%= f.label :month, "Month" %>
-                  <%= f.select :month, search.available_months, **month_args %>
+                <%= f.label :month, "Month" %>
+                <%= f.select :month, search.available_months, month_args, data: { action: "event-search-button#parameterChanged" } %>
               <% end %>
             </div>
 
@@ -38,7 +38,8 @@
               </div>
             <% end %>
 
-            <button class="request-button">Update results <%= helpers.fas_icon "sync" %></button>
+            <button class="request-button" id="updateResultsButton" data-event-search-button-target="updateResultsButton">Update
+              results <%= helpers.fas_icon "sync" %></button>
           <% end %>
         </div>
       </div>
