@@ -26,7 +26,7 @@ module Header
     def menu(link_text, link_path, children)
       heading_args = { class: "menu__heading", data: { action: "click->navigation#toggleMenu" } }
 
-      link_content = safe_join([link_text, tag.span(class: "menu-chevron")])
+      link_content = safe_join([link_text, tag.div(class: "menu-chevron")])
 
       tag.li(class: ["menu", class_name(link_path)]) do
         safe_join(
@@ -34,7 +34,7 @@ module Header
             link_to_unless_current(link_content, link_path, **heading_args) do
               tag.span(link_content, **heading_args)
             end,
-            tag.ol(class: %w[secondary hidden]) do
+            tag.ol(class: %w[secondary hidden-desktop]) do
               safe_join(
                 children.map do |child|
                   tag.li(link_to(child.title, child.path))

@@ -5,6 +5,7 @@
   padding-bottom: 20px;
   display: flex;
   align-items: center;
+  flex-shrink: 0;
 }
 
 .logo {
@@ -52,8 +53,22 @@
 .dfe-logo {
   position: relative;
   top: 4px;
+  flex: 0 0 auto;
 
   img {
     width: 100%;
+  }
+}
+
+#mobile-navigation-menu-button {
+  flex-grow: 1;
+  text-align: right;
+
+  @include mq($from: desktop) {
+    display: none;
+  }
+
+  button {
+    margin-right: 2em;
   }
 }

@@ -21,57 +21,104 @@ body > header nav {
   display: flex;
   flex-grow: 1;
 
+  @include mq($until: desktop) {
+    &.hidden-mobile {
+      display: none;
+    }
+  }
+
   ol.primary {
-    @include reset;
-
-    flex-grow: 1;
-    align-items: flex-end;
-    justify-content: flex-end;
-
-    display: flex;
     list-style: none;
 
     > li {
       @include list-item-nav;
-      @include list-border-bottom($white);
-      position: relative;
-      cursor: pointer;
-
-      .menu-chevron {
-        margin: 0 .4em;
-        @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
-      }
+      @include reset;
 
       &.active {
-        @include list-border-bottom($purple);
-      }
-
-      &.down {
-        @include list-border-bottom($grey);
-        background-color: $grey;
-
-        .menu-chevron {
-          top: .3em;
-          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
-        }
+        font-weight: bold;
       }
     }
   }
 
   ol.secondary {
     list-style: none;
-    display: block;
-    position: absolute;
-    left: 0;
-
-    margin-top: 1em;
-    padding-left: 0;
-    background-color: $grey;
-
-    z-index: 80;
+    padding-left: 1em;
 
     > li {
       @include list-item-nav;
+      @include reset;
+
+      font-weight: normal;
+
+      &.active {
+        font-weight: bold;
+      }
+
+      &:hover {
+        background: darken($grey, 5%);
+      }
+    }
+  }
+
+  @include mq($from: desktop) {
+    ol.primary {
+      @include reset;
+
+      flex-grow: 1;
+      align-items: flex-end;
+      justify-content: flex-end;
+      gap: 1em;
+      margin-right: .4em;
+
+      display: flex;
+
+      > li {
+        @include list-item-nav;
+        @include list-border-bottom($white);
+        position: relative;
+        cursor: pointer;
+
+        .menu-chevron {
+          margin: 0 .4em;
+          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
+        }
+
+        &.active {
+          @include list-border-bottom($purple);
+          font-weight: normal;
+        }
+
+        &.down {
+          @include list-border-bottom($grey);
+          background-color: $grey;
+
+          .menu-chevron {
+            top: .3em;
+            @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
+          }
+        }
+      }
+    }
+
+    ol.secondary {
+      list-style: none;
+      display: block;
+      position: absolute;
+      left: 0;
+
+      margin-top: 1em;
+      padding-left: 0;
+      background-color: $grey;
+
+      z-index: 80;
+
+      > li {
+        @include list-item-nav;
+      }
+
+      &.hidden-desktop {
+        visibility: hidden;
+      }
     }
   }
 }

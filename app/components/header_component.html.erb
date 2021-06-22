@@ -13,7 +13,7 @@
   </section>
 </div>
 
-<header class="limit-content-width">
+<header class="limit-content-width" data-controller="navigation">
   <%= render Header::LogoComponent.new %>
   <%= render Header::NavigationComponent.new(
     extra_resources: { "/events" => "Teaching events", "/mailinglist/signup/name" => "Register your interest" }
