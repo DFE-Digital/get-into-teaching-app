@@ -19,7 +19,7 @@ jobs:
       with:
         url: 'https://get-into-teaching-app-pagespeed.london.cloudapps.digital/assets/check'
         method: 'POST'
-        username: ${{ secrets.HTTP-USERNAME }}
-        password: ${{ secrets.HTTP-PASSWORD }}
+        username: ${{ steps.azSecret.outputs.HTTP-USERNAME }}
+        password: ${{ steps.azSecret.outputs.HTTP-PASSWORD }}
         timeout: 20000 # 20s
         preventFailureOnNoResponse: true
