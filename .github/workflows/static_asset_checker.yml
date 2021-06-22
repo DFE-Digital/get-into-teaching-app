@@ -1,7 +1,5 @@
 name: Run Static Asset Checker
 on:
-  schedule:
-    - cron:  '* * * * *' # every minute
   workflow_dispatch:
 
 jobs:
