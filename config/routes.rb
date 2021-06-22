@@ -36,6 +36,16 @@ Rails.application.routes.draw do
     [204, {}, []]
   }
 
+  get "/assets/check", constraints: -> { Rails.env.pagespeed? }, to: proc { |_env|
+    require "asset_checker"
+
+    root_url = "https://getintoteaching.education.gov.uk"
+    checker = AssetChecker.new(root_url)
+    result = checker.run
+
+    [result.empty? ? 204 : 404, {}, [result.join($INPUT_RECORD_SEPARATOR)]]
+  }
+
   namespace :internal do
     resources :events, only: %i[index show new create edit]
     put "/approve", to: "events#approve"
