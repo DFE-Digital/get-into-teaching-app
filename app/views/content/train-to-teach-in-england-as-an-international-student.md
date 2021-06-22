@@ -54,6 +54,8 @@ keywords:
   - Europe
   - European
   - Settlement Scheme
+  - Statement
+  - Comparability
 ---
 
 As an international candidate you’ll be welcomed by many teacher training providers in England.
@@ -78,7 +80,11 @@ You usually need the equivalent of a GCSE (grade 4) in English and maths.
 
 To teach children aged 3 to 11, you also need the equivalent of a GCSE (grade 4) in a science subject.
 
-[Contact UK ENIC to find out if your qualifications meet the standard](https://www.enic.org.uk/).
+#### To make sure your qualifications are equivalent
+
+If all or part of your qualifications are from outside the UK, you should contact the schools or universities you would like to train with, as they make the final decision if your qualifications meet the minimum requirements.
+
+For help understanding UK qualifications and their international equivalents, you can call us for free on [0800 389 2500](tel://08003892500). You may be able to get a free statement of comparability, showing how your overseas qualifications compare to UK qualifications. This normally costs £49.50 plus VAT.
 
 #### An offer to train
 
@@ -102,9 +108,7 @@ Your training provider will check you’re suitable for teaching in terms of you
 
 ### Get a teacher training adviser
 
-You can get an adviser for one-to-one support.
-
-Your adviser can help you get a 'statement of comparability' showing [how your overseas qualifications compare to UK qualifications](https://enic.org.uk/Qualifications/SOC/Default.aspx).
+You can get an adviser for one-to-one support. They can give you practical advice and guidance at every stage of your application.
 
 <p class="call-to-action__action">
   <a href="/tta-service">Get an <span>adviser</span></a>
