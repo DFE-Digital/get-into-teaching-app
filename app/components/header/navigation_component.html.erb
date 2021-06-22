@@ -1,5 +1,5 @@
-<nav role="nav">
-  <ol class="primary">
+<nav role="nav" data-controller="navigation">
+  <ol class="primary" data-navigation-target="primary">
     <% all_resources.each do |resource| %>
       <% if resource.menu? %>
         <%= menu(resource.title, resource.path, resource.children) %>

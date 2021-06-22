@@ -1,50 +1,46 @@
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = ['hamburger', 'label', 'links'];
-  static closedClass = 'navbar__mobile--closed';
+  static targets = ['primary'];
 
-  connect() {
-    this.navToggle()
+  connect() {}
 
-    this.searchHandler = this.hide.bind(this)
-    document.addEventListener('navigation:search', this.searchHandler)
+  toggleMenu(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const toggle = event.target.parentElement;
+    const secondary = event.target.parentElement.querySelector('ol');
+
+    if (secondary.classList.contains('hidden')) {
+      this.expandMenu(secondary, toggle);
+    } else {
+      this.collapseMenu(secondary, toggle);
+    }
   }
 
-  disconnect() {
-    if (document && this.searchHandler)
-      document.removeEventListener('navigation:menu', this.searchHandler)
+  collapseMenu(menu, item) {
+    menu.classList.add('hidden');
+
+    item.classList.remove('down');
+    item.classList.add('up');
   }
 
-  navToggle() {
-    this.visible ? this.hide() : this.show()
+  expandMenu(menu, item) {
+    this.collapseAllOpenMenus();
+    menu.classList.remove('hidden');
+
+    item.classList.remove('up');
+    item.classList.add('down');
   }
 
-  show() {
-    this.element.classList.remove(this.constructor.closedClass) ;
+  collapseAllOpenMenus() {
+    this.primaryTarget.querySelectorAll('li.menu.down').forEach((li) => {
+      const menu = li.querySelector('ol.secondary');
 
-    this.linksTarget.style.display = 'block';
-    this.hamburgerTarget.className = 'icon-close';
-    this.labelTarget.innerHTML = 'Close';
-
-    this.notify()
-  }
-
-  hide() {
-    this.element.classList.add(this.constructor.closedClass) ;
-
-    this.linksTarget.style.display = 'none';
-    this.hamburgerTarget.className = 'icon-hamburger';
-    this.labelTarget.innerHTML = 'Menu';
-  }
-
-  get visible() {
-    return !this.element.classList.contains(this.constructor.closedClass)
-  }
-
-  notify() {
-    const showingMenuEvent = new CustomEvent('navigation:menu');
-
-    document.dispatchEvent(showingMenuEvent);
+      if (menu && li) {
+        this.collapseMenu(menu, li);
+      }
+    });
   }
 }

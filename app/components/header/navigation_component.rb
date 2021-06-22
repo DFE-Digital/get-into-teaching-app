@@ -24,11 +24,17 @@ module Header
     end
 
     def menu(link_text, link_path, children)
-      tag.li class: class_name(link_path) do
+      heading_args = { class: "menu__heading", data: { action: "click->navigation#toggleMenu" } }
+
+      link_content = safe_join([link_text, tag.span(class: "menu-chevron")])
+
+      tag.li(class: ["menu", class_name(link_path)]) do
         safe_join(
           [
-            link_to_unless_current(link_text, link_path),
-            tag.ol(class: "secondary") do
+            link_to_unless_current(link_content, link_path, **heading_args) do
+              tag.span(link_content, **heading_args)
+            end,
+            tag.ol(class: %w[secondary hidden]) do
               safe_join(
                 children.map do |child|
                   tag.li(link_to(child.title, child.path))
