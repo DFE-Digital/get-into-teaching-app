@@ -134,7 +134,7 @@ Different types of training have different eligibility criteria, [funding option
 
 You can also [get support to improve your subject knowledge](/improve-your-subject-knowledge) to supplement your training.
 
-Not looking for primary or secondary training? Consider training to teach [early years](/early-years-teaching-training) or [further education](/further-education-teacher-training).
+Not looking for primary or secondary training? Consider training to teach [early years](/early-years-teaching-training) or [further education](/become-a-further-education-teacher).
 
 $get-a-tta$
 
