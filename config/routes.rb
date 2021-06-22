@@ -36,7 +36,7 @@ Rails.application.routes.draw do
     [204, {}, []]
   }
 
-  get "/assets/check", constraints: -> { Rails.env.pagespeed? }, to: proc { |_env|
+  post "/assets/check", constraints: -> { Rails.env.pagespeed? }, to: proc { |_env|
     require "asset_checker"
 
     root_url = "https://getintoteaching.education.gov.uk"
