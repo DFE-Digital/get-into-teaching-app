@@ -24,3 +24,4 @@ jobs:
         username: ${{ secrets.HTTP-USERNAME }}
         password: ${{ secrets.HTTP-PASSWORD }}
         timeout: 3600000 # 1hr in ms
+        preventFailureOnNoResponse: true
