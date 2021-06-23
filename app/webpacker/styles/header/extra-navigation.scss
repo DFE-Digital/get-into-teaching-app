@@ -1,6 +1,6 @@
 .extra-navigation {
   @include mq($from: desktop) {
-    margin: 0 1em;
+    margin: auto 1em;
     padding: 0 1em;
   }
 
