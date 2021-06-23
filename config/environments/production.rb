@@ -112,6 +112,8 @@ Rails.application.configure do
 
   config.x.api_client_cache_store = ActiveSupport::Cache::RedisCacheStore.new(namespace: "GIT-HTTP")
 
+  config.x.basic_auth = ENV["BASIC_AUTH"]
+
   # Configure Semantic Logging for production environments
   # This cannot be conditionally loaded so we use it all the time in production
   # like environments.

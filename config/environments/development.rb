@@ -62,4 +62,6 @@ Rails.application.configure do
     Rails.application.credentials.basic_auth_credentials.presence
 
   config.x.api_client_cache_store = ActiveSupport::Cache::MemoryStore.new
+
+  config.x.basic_auth = ENV["BASIC_AUTH"]
 end
