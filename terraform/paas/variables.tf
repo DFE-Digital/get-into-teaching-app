@@ -37,6 +37,10 @@ variable "logging" {
   default = 1
 }
 
+variable "basic_auth" {
+   default = 1
+}
+
 variable "paas_internet_hostnames" {
   default = []
 }
