@@ -12,10 +12,8 @@
     <%= render current_step.key, current_step: current_step, f: f %>
 
     <% if wizard.can_proceed? %>
-      <%= f.button class: "call-to-action-button button" do %>
-        <%= wizard.last_step? ? "Complete sign up" : "Next Step" %>
-        <span></span>
-      <% end %>
+      <% button_text = safe_html_format(wizard.last_step? ? "Complete sign up <span></span>" : "Next Step <span></span>") %>
+      <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
     <% end %>
   <% end %>
 </section>
