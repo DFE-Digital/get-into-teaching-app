@@ -35,12 +35,17 @@ describe('LastStepController', () => {
   });
 
   function buttonLabel() {
-    return document.getElementById('button').innerText;
+    return document.getElementById('button').innerHTML;
+  }
+
+  function buttonDisableText() {
+    return document.getElementById('button').dataset.disableWith;
   }
 
   describe('When no button clicked', () => {
     it('should have default message', () => {
       expect(buttonLabel()).toEqual('continue');
+      expect(buttonDisableText()).toEqual('continue');
     });
   });
 
@@ -51,6 +56,7 @@ describe('LastStepController', () => {
 
     it('should set message to continue', () => {
       expect(buttonLabel()).toEqual('continue');
+      expect(buttonDisableText()).toEqual('continue');
     });
   });
 
@@ -61,6 +67,7 @@ describe('LastStepController', () => {
 
     it('should set message to complete', () => {
       expect(buttonLabel()).toEqual('complete');
+      expect(buttonDisableText()).toEqual('complete');
     });
   });
 });
