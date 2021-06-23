@@ -32,12 +32,3 @@ data "azurerm_key_vault_secret" "statuscake_password" {
   name         = "SC-PASSWORD"
 }
 
-data "azurerm_key_vault_secret" "http_username" {
-  key_vault_id = data.azurerm_key_vault.vault.id
-  name         = "HTTP-USERNAME"
-}
-
-data "azurerm_key_vault_secret" "http_password" {
-  key_vault_id = data.azurerm_key_vault.vault.id
-  name         = "HTTP-PASSWORD"
-}
