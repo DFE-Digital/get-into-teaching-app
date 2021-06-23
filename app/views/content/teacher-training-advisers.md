@@ -44,9 +44,8 @@ calls_to_action:
       link_target: "/tta-service"
       icon: "icon-person"
 ---
-A Teacher Training Adviser is a free mentor who helps you get into teaching. They are all former teachers, so they speak from experience and know the process inside out.
+Teacher Training Advisers give you free, one-to-one help and support. They're all former teachers with lots of experience, so they know the process inside and out.  
 
-Getting an adviser means you don’t need to go it alone. They’ll be there to support you at each stage of the journey. 
 
 $get-a-tta$
 
@@ -54,7 +53,7 @@ $get-a-tta$
 
 $q-tta-one$
 
-Wherever you are in your journey into teaching, an adviser can help. 
+Wherever you are in your journey into teaching, an adviser can give you as much or as little help as you need. 
 
 Other trainee teachers say they are particularly helpful with: 
 
@@ -62,6 +61,8 @@ Other trainee teachers say they are particularly helpful with:
 * Seeking out financial support
 * Writing a personal statement
 * Preparing for interviews
+
+Our advisers can help you at any time, even if you're a year away from applying.
 
 ## Meet Emma, a Teacher Training Adviser
 
@@ -71,22 +72,21 @@ Other trainee teachers say they are particularly helpful with:
 
 $q-tta-two$
 
-Taking on teacher training and preparing for a new career can be daunting for anyone, but taking your next step might be more complicated if you have caring responsibilities, people dependent on your earnings, or you are living with a disability. 
+Teaching is an exciting career, but figuring out if it's right for you can be more complicated if you have caring responsibilities, people dependent on your earnings, or you are living with a disability. 
 
 Your Teacher Training Adviser can help you navigate your path into teaching, and make sure you get any additional help that is available. Your adviser will be just a call, message or email away.
 
-## Meet Simon, a teacher training adviser
+## Meet Simon, a Teacher Training Adviser
 
 <iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/T9Bhcaa6LJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Already applied and been unsuccessful?
 
-Our teacher training advisers can help make your next application stronger. They’ll work with you to:
+Our Teacher Training Advisers can help make your next application stronger. They’ll help you:
 
 * act on any feedback
-* take practical steps to improve your application, like getting school experience
-* get the qualifications you need to become a teacher
-* edit your personal statement
+* understand the qualifications you need to become a teacher
+* improve your personal statement
 
 ## Are you ready for an Adviser? 
 
@@ -96,6 +96,8 @@ To sign up, you’ll need one of these:
 * Predicted grade 2:2 or higher for your bachelor’s degree with honours, if you’re still a student
 * Overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
 
+If you're applying from overseas, [contact UK ENIC to check if your qualifications meeet this standard](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) before signing up. 
+
 $get-a-tta$
 
-## Find out how an adviser helped:
+## Find out how a Teacher Training Adviser helped:
