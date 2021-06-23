@@ -355,11 +355,6 @@ providers:
     name: Ania Glowczynska
     telephone: 01726 891 745
     email: info@learninginstitute.co.uk
-  - header: University of Gloucestershire
-    link: https://www.glos.ac.uk/study/Pages/study-with-us.aspx
-    name: Tim Adams
-    telephone: 01242 714638
-    email: qtsassessmentonly@glos.ac.uk
   - header: Wessex Schools Training Partnership
     name: Mike Petrus
     telephone: 01202 662044
