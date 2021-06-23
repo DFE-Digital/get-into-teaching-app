@@ -116,7 +116,7 @@ $q-helen-returner$
 
 ## National Tutoring Programme
 
-The National Tutoring Programme supports schools to close the attainment gap in light of the coronavirus pandemic and provides 2 different options to return to a school environment without taking on a full-time or part-time classroom role.
+The National Tutoring Programme supports schools to close the attainment gap in light of the coronavirus pandemic and provides different options to return to a school environment without taking on a full-time or part-time classroom role.
 
 If you’re unsure about taking on a teacher role at this time, [consider applying to tutor or mentor through the National Tutoring Programme](https://nationaltutoring.org.uk/) and help provide support to disadvantaged pupils.
 

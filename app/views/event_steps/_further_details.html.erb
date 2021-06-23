@@ -12,7 +12,7 @@
 <% end %>
 
 <% if f.object.can_subscribe_to_mailing_list? %>
-  <div data-controller="last-step" data-last-step-complete="Complete sign up" data-last-step-continue="Next Step">
+  <div data-controller="last-step" data-last-step-complete="Complete sign up<span></span>" data-last-step-continue="Next Step<span></span>">
     <div data-action="click->last-step#updateSubmit">
       <%= f.govuk_radio_buttons_fieldset :subscribe_to_mailing_list, inline: true do %>
         <%= f.govuk_radio_button :subscribe_to_mailing_list, true, label: { text: "Yes" } %>

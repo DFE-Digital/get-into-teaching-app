@@ -50,9 +50,12 @@ jobs:
              if [ "${{github.ref}}" == "refs/heads/master" ]
              then
                 echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
+                echo ::set-output name=DOCKER_EVENT::""
              else
                 echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:review-${{steps.sha.outputs.short }}
+                echo ::set-output name=DOCKER_EVENT::${{ env.DOCKER_REPOSITORY }}:PR-${{ github.event.number }}
              fi
+
 
       - name: Cache Docker layers
         uses: actions/cache@v2.1.6
@@ -77,6 +80,7 @@ jobs:
           cache-to: type=local,dest=/tmp/.buildx-cache
           tags: |
                  ${{ steps.docker.outputs.DOCKER_IMAGE }}
+                 ${{ steps.docker.outputs.DOCKER_EVENT }}
           push: true
           build-args: |
                       SHA=${{ steps.sha.outputs.short }}

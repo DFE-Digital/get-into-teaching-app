@@ -19,7 +19,7 @@ describe TextFormattingHelper, type: :helper do
     subject { safe_html_format html }
 
     context "with allowed HTML" do
-      let(:html) { "<div>test</div><p><strong>hello</strong> <a href=\"http://test.com\">world</a></p><ul><li>test</li></ul>" }
+      let(:html) { "<div>test</div><p><strong>hello</strong> <a href=\"http://test.com\">world</a></p><ul><li>test</li></ul><span>test</span>" }
       it { is_expected.to eql html }
     end
 

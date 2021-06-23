@@ -4,6 +4,7 @@ paas_app_application_name = "get-into-teaching-app-prod"
 paas_redis_1_name         = "get-into-teaching-prod-redis-svc"
 paas_internet_hostnames   = ["beta-getintoteaching", "getintoteaching"]
 instances                 = 2
+basic_auth                = 0
 azure_key_vault           = "s146p01-kv"
 azure_resource_group      = "s146p01-rg"
 alerts = {

@@ -21,9 +21,11 @@ class BasicAuth
     end
 
     def env_requires_auth?
-      # Site-wide authentication present in all production-like
-      # environments, but not in production itself.
-      !Rails.env.production? && !Rails.env.test? && !Rails.env.development?
+      basic_auth = Rails.application.config.x.basic_auth
+
+      return false if basic_auth.blank?
+
+      ActiveModel::Type::Boolean.new.cast(basic_auth)
     end
   end
 end

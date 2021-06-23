@@ -28,6 +28,7 @@ export default class extends Controller {
   }
 
   setSubmitText(submitMsg) {
-    this.submitButton.innerText = submitMsg;
+    this.submitButton.innerHTML = submitMsg;
+    this.submitButton.dataset.disableWith = submitMsg;
   }
 }

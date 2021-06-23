@@ -1,11 +1,11 @@
-name: Run PageSpeed task
+name: Run Static Asset Checker
 on:
   schedule:
-    - cron:  '0 8 * * *' # 8am daily
+    - cron:  '* * * * *' # every minute
   workflow_dispatch:
 
 jobs:
-  pagespeed:
+  asset_checker:
     runs-on: ubuntu-latest
     steps:
     - uses: Azure/login@v1
@@ -16,12 +16,12 @@ jobs:
       with:
           keyvault: ${{ secrets.KEY_VAULT }}
           secrets: 'HTTP-USERNAME, HTTP-PASSWORD'
-    - name: Run Page Speed Tas
+    - name: Run Static Asset Checker
       uses: fjogeleit/http-request-action@master
       with:
-        url: 'https://get-into-teaching-app-pagespeed.london.cloudapps.digital/pagespeed/run'
+        url: 'https://get-into-teaching-app-pagespeed.london.cloudapps.digital/assets/check'
         method: 'POST'
         username: ${{ steps.azSecret.outputs.HTTP-USERNAME }}
         password: ${{ steps.azSecret.outputs.HTTP-PASSWORD }}
-        timeout: 3600000 # 1hr in ms
+        timeout: 20000 # 20s
         preventFailureOnNoResponse: true
