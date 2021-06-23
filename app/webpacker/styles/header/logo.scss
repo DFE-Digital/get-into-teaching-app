@@ -1,4 +1,6 @@
 .logo-wrapper {
+  // background-color: thistle;
+
   z-index: 0;
   overflow-x: hidden;
   top: 8px;
@@ -6,6 +8,7 @@
   display: flex;
   align-items: center;
   flex-shrink: 0;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -31,21 +34,13 @@
   &__image {
     @include rotated-block;
     background-color: $green-dark-90;
-    width: 205px;
-    height: 92px;
     position: relative;
-    top: 11px;
-    left: -10px;
     z-index: 1000;
-    margin-right: 10px;
+    margin: 1em 1em 0 -1em;
 
     img {
+      padding: 2em;
       transform: rotate(3deg);
-      margin-left: 40px;
-      margin-top: 21px;
-      width: 140px;
-      height: 48px;
-      position: relative;
     }
   }
 }

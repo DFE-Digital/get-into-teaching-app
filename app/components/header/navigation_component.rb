@@ -34,7 +34,7 @@ module Header
             link_to_unless_current(link_content, link_path, **heading_args) do
               tag.span(link_content, **heading_args)
             end,
-            tag.ol(class: %w[secondary hidden-desktop]) do
+            tag.ol(class: %w[secondary hidden]) do
               safe_join(
                 children.map do |child|
                   tag.li(link_to(child.title, child.path))

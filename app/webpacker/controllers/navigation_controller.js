@@ -13,7 +13,7 @@ export default class extends Controller {
     const toggle = event.target.parentElement;
     const secondary = event.target.parentElement.querySelector('ol');
 
-    if (secondary.classList.contains(this.desktopHiddenClass)) {
+    if (secondary.classList.contains(this.menuHiddenClass)) {
       this.expandMenu(secondary, toggle);
     } else {
       this.collapseMenu(secondary, toggle);
@@ -27,7 +27,7 @@ export default class extends Controller {
 
     const nav = this.navTarget;
 
-    if (nav.classList.contains(this.mobileHiddenClass)) {
+    if (nav.classList.contains(this.navHiddenClass)) {
       this.expandNav();
     } else {
       this.collapseNav();
@@ -35,7 +35,7 @@ export default class extends Controller {
   }
 
   collapseMenu(menu, item) {
-    menu.classList.add(this.desktopHiddenClass);
+    menu.classList.add(this.menuHiddenClass);
 
     item.classList.remove('down');
     item.classList.add('up');
@@ -43,7 +43,7 @@ export default class extends Controller {
 
   expandMenu(menu, item) {
     this.collapseAllOpenMenus();
-    menu.classList.remove(this.desktopHiddenClass);
+    menu.classList.remove(this.menuHiddenClass);
 
     item.classList.remove('up');
     item.classList.add('down');
@@ -60,18 +60,18 @@ export default class extends Controller {
   }
 
   collapseNav() {
-    this.navTarget.classList.add(this.mobileHiddenClass);
+    this.navTarget.classList.add(this.navHiddenClass);
   }
 
   expandNav() {
-    this.navTarget.classList.remove(this.mobileHiddenClass);
+    this.navTarget.classList.remove(this.navHiddenClass);
   }
 
-  get desktopHiddenClass() {
-    return 'hidden-desktop';
+  get menuHiddenClass() {
+    return 'hidden';
   }
 
-  get mobileHiddenClass() {
+  get navHiddenClass() {
     return 'hidden-mobile';
   }
 }

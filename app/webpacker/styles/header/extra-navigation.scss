@@ -1,0 +1,31 @@
+.extra-navigation {
+  // background-color: pink;
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2em;
+    padding: 0 2em;
+    @include font-size("xsmall");
+
+    @include mq($until: tablet) {
+      flex-direction: column;
+      gap: .5em;
+      padding: .5em;
+    }
+
+    li {
+      a {
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}

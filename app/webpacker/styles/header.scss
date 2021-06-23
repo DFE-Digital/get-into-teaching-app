@@ -2,12 +2,40 @@
 @import 'header/logo';
 @import 'header/skiplink';
 @import 'header/navigation';
+@import 'header/extra-navigation';
 
 body > header {
-  display: flex;
-  flex-direction: column;
 
+  // mobile (default) layout
+  display: grid;
+
+  grid-template-columns: 1fr;
+
+  // tablet
+  @include mq($from: tablet, $until: desktop) {
+    grid-template-columns: 1fr;
+
+    nav {
+      grid-column: 1/3;
+    }
+  }
+
+  // desktop
+  @include mq($from: desktop, $until: wide) {
+    grid-template-columns: 1fr 2fr;
+
+    nav {
+      grid-column: 1/3;
+    }
+  }
+
+  // wide
   @include mq($from: wide) {
-    flex-direction: row;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr 3fr;
+
+    .logo-wrapper {
+      grid-row: 1/3;
+    }
   }
 }
