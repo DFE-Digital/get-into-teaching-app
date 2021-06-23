@@ -37,6 +37,10 @@ a {
   @include chevron;
   display: inline-block;
 
+  &:disabled {
+    opacity: 0.7;
+  }
+
   span {
     white-space: nowrap;
   }
