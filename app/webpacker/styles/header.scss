@@ -31,7 +31,7 @@ body > header {
 
   // wide
   @include mq($from: wide) {
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(2, minmax(2rem auto));
     grid-template-columns: 1fr 3fr;
 
     .logo-wrapper {

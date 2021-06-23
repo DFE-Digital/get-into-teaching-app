@@ -36,10 +36,10 @@
     background-color: $green-dark-90;
     position: relative;
     z-index: 1000;
-    margin: 1em 1em 0 -1em;
+    margin: 1em 1em 0 -.5em;
 
     img {
-      padding: 2em;
+      padding: 1.2em;
       transform: rotate(3deg);
     }
   }

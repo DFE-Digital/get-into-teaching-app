@@ -1,7 +1,13 @@
 .extra-navigation {
-  // background-color: pink;
+  @include mq($from: desktop) {
+    margin: 0 1em;
+    padding: 0 1em;
+  }
 
   ul {
+    // @include font-size("xsmall");
+    font-size: .9rem;
+
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -9,12 +15,32 @@
     align-items: center;
     gap: 2em;
     padding: 0 2em;
-    @include font-size("xsmall");
 
     @include mq($until: tablet) {
+      align-items: flex-start;
       flex-direction: column;
+    }
+
+    // mobile and tablet
+    @include mq($until: desktop) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 0;
+      flex-wrap: wrap;
       gap: .5em;
-      padding: .5em;
+      text-align: left;
+      background-color: $grey;
+      padding: 2.6em;
+
+      input {
+        margin: 0;
+      }
+
+      li.extra-navigation__link {
+        margin: .4em 0;
+        padding: .6em .2em;
+        background-color: darken($grey, 5%);
+      }
     }
 
     li {
