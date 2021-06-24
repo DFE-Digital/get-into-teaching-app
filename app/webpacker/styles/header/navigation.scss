@@ -36,6 +36,22 @@ body > header nav {
     > li {
       @include list-item-nav;
       @include reset;
+
+      .menu__heading {
+        display: flex;
+      }
+
+      .menu__chevron {
+        margin: 0 .4em;
+        @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
+      }
+
+      &.down {
+        .menu__chevron {
+          top: .4em;
+          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
+        }
+      }
     }
   }
 
@@ -62,10 +78,16 @@ body > header nav {
 
     ol.primary {
       flex-direction: column;
+      margin-bottom: 2em;
 
       > li {
         padding-left: 1em;
         border-left: 6px solid $white;
+        max-width: 80%;
+
+        .menu__text {
+          flex-grow: 1;
+        }
 
         &.active {
           border-left: 6px solid $purple;

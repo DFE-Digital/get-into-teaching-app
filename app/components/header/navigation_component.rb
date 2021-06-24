@@ -26,7 +26,7 @@ module Header
     def menu(link_text, link_path, children)
       heading_args = { class: "menu__heading", data: { action: "click->navigation#toggleMenu" } }
 
-      link_content = safe_join([link_text, tag.div(class: "menu-chevron")])
+      link_content = safe_join([tag.span(link_text, class: "menu__text"), tag.div(class: "menu__chevron")])
 
       tag.li(class: ["menu", class_name(link_path)]) do
         safe_join(
