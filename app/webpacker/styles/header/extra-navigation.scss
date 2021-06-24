@@ -1,10 +1,40 @@
+@import "accessible-autocomplete";
+
+html.js-enabled {
+  .extra-navigation__search-fallback {
+    display: none;
+  }
+}
+
+.autocomplete__option {
+  padding-left: 1em;
+
+  &:hover,
+  &:focus {
+    p,
+    h3 {
+      color: $white;
+    }
+  }
+}
+
 .extra-navigation {
   @include mq($from: desktop) {
-    margin: auto 1em;
-    padding: 0 1em;
+    margin: 0;
+    padding-right: 2em;
   }
 
-  ul {
+  .extra-navigation__search {
+    padding: 0;
+    position: relative;
+
+    input {
+      @include reset;
+      padding: 0 1em;
+    }
+  }
+
+  ul.extra-navigation__list {
     // @include font-size("xsmall");
     font-size: .9rem;
 
@@ -14,7 +44,7 @@
     justify-content: flex-end;
     align-items: center;
     gap: 2em;
-    padding: 0 2em;
+    padding: 0;
 
     @include mq($until: tablet) {
       align-items: flex-start;
@@ -34,12 +64,12 @@
 
       input {
         margin: 0;
+        background-color: white;
       }
 
       li.extra-navigation__link {
         margin: .4em 0;
         padding: .6em .2em;
-        background-color: darken($grey, 5%);
       }
     }
 

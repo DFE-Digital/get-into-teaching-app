@@ -1,9 +1,15 @@
 <%= tag.div(class: classes) do %>
-  <ul>
+  <ul class="extra-navigation__list">
     <li class="extra-navigation__link"><%= link_to("Teaching events", events_path) %></li>
     <li class="extra-navigation__link"><%= link_to("Register your interest", mailing_list_steps_path) %></li>
-    <li>
-      <form><input placeholder="Search Get Into Teaching" name="search" type="search"></input></form>
+
+    <li class="extra-navigation__link extra-navigation__search-fallback">
+      <%= link_to("Search", search_path) %></li>
     </li>
+
+    <%= tag.li(class: %w[extra-navigation__link extra-navigation__search], data: { controller: "searchbox" }) do %>
+      <label for="searchbox__input" class="searchbox__label visually-hidden">Search the Get Into Teahcing website</label>
+      <%= tag.div(data: { "searchbox-target" => "searchbar" }) %>
+    <% end %>
   </ul>
 <% end %>
