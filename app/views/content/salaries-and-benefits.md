@@ -2,10 +2,8 @@
 title: "Salaries and benefits"
 description: |-
   View teachers' pay scales, pay ranges table and salary bands for England and London, 
-  as well as other benefits such as holidays and pensions. This
-  also includes additional pay if you teach SEN or take on extra
-  responsibilities.
-date: "2021-06-21"
+  as well as other benefits such as holidays and the Teacher Pension Scheme. Find out the average salary for primary and secondary school teachers, as well as leading practictioners and headteachers.
+date: "2021-06-24"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
 navigation: 40
