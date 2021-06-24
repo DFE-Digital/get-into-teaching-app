@@ -7,8 +7,8 @@
       <%= link_to("Search", search_path) %></li>
     </li>
 
-    <%= tag.li(class: %w[extra-navigation__link extra-navigation__search], data: { controller: "searchbox" }) do %>
-      <label for="searchbox__input" class="searchbox__label visually-hidden">Search the Get Into Teahcing website</label>
+    <%= tag.li(class: %w[extra-navigation__link extra-navigation__search], data: { controller: "searchbox", "searchbox-search-input-id-value" => search_input_id }) do %>
+      <%= tag.label("Search the Get Into Teaching website", for: search_input_id, class: %w[searchbox__label visually-hidden]) %>
       <%= tag.div(data: { "searchbox-target" => "searchbar" }) %>
     <% end %>
   </ul>

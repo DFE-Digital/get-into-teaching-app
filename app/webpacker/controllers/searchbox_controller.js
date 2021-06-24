@@ -3,9 +3,9 @@ import accessibleAutocomplete from 'accessible-autocomplete'
 import Redacter from '../javascript/redacter'
 
 export default class extends Controller {
-  static inputId = 'searchbox__input'
   static openedClass = 'searchbox--opened'
   static targets = ['searchbar']
+  static values = { searchInputId: String }
 
   searchQuery = null
 
@@ -36,6 +36,10 @@ export default class extends Controller {
     return this.element.classList.contains(this.constructor.openedClass)
   }
 
+  get searchInputId() {
+    return 'searchbox__input';
+  }
+
   show() {
     if (this.visible) return
 
@@ -63,8 +67,9 @@ export default class extends Controller {
 
   setupAccessibleAutocomplete() {
     accessibleAutocomplete({
+      placeholder: "Search Get Into Teaching",
       element: this.searchbarTarget,
-      id: this.constructor.inputId,
+      id: this.searchInputIdValue,
       displayMenu: 'overlay',
       minLength: 2,
       source: this.performXhrSearch.bind(this),
