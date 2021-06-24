@@ -456,6 +456,26 @@ providers:
     name: Mikki Burns
     telephone: 0203 194 3200
     email: Institute@tesglobal.com
+  Overseas AO Providers:
+  - header: University of Sunderland
+    link: https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/
+    name: Ian Elliott
+    telephone: 0191 515 2159
+    email: ian.elliott@sunderland.ac.uk
+  - header: Educational Success Partners (ESP)
+    link: https://www.espeducation.co.uk/assessment-only-route-to-qts
+    name: Mark Bignell
+    telephone: 07425 555142
+    email: mark@espeducation.co.uk
+  - header: Buckingham International School of Education
+    link: https://www.bise.org
+    telephone: +86 135 2015 3752
+    email: admissions@bise.org
+  - header: Tes Institute
+    link: https://www.tes.com/institute/courses/international-assessment-only-route
+    name: Mikki Burns
+    telephone: +44 (0)203 194 3000
+    email: mikki.burns@tes.com
 keywords:
   - Assessment Only
   - Assessment
