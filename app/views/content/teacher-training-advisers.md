@@ -44,7 +44,7 @@ calls_to_action:
       link_target: "/tta-service"
       icon: "icon-person"
 ---
-Teacher Training Advisers give you free, one-to-one help and support. 
+Teacher training advisers give you free, one-to-one help and support. 
 
 They're all former teachers with lots of experience, so they know the process inside out.  
 
@@ -66,7 +66,7 @@ Other trainee teachers say they are particularly helpful with:
 
 Our advisers can help you at any time, even if you're a year or more away from applying.
 
-## Meet Emma, a Teacher Training Adviser
+## Meet Emma, a teacher training adviser
 
 <iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/ZaGL8c4FkLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -76,21 +76,21 @@ $q-tta-two$
 
 Teaching is an exciting career, but if you have caring responsibilities, people dependent on your earnings, or you are living with a disability you might need some help to take your next step. 
 
-Your Teacher Training Adviser can help you navigate your path into teaching, and make sure you get any additional help that is available. Your adviser will be just a call, message or email away.
+Your teacher training adviser can help you navigate your path into teaching, and make sure you get any additional help that is available. Your adviser will be just a call, message or email away.
 
-## Meet Simon, a Teacher Training Adviser
+## Meet Simon, a teacher training adviser
 
 <iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/T9Bhcaa6LJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## Already applied and been unsuccessful?
 
-Our Teacher Training Advisers can help make your next application stronger. They’ll help you:
+Our teacher training advisers can help make your next application stronger. They’ll help you:
 
 * act on any feedback
 * understand the qualifications you need to become a teacher
 * improve your personal statement
 
-## Are you ready for an Adviser? 
+## Are you ready for an adviser? 
 
 To sign up, you’ll need one of these:
 
@@ -102,4 +102,4 @@ If you're applying from overseas, [contact UK ENIC to check if your qualificatio
 
 $get-a-tta$
 
-## Find out how a Teacher Training Adviser helped:
+## Find out how a teacher training adviser helped:
