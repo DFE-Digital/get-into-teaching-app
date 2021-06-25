@@ -80,11 +80,14 @@ You usually need the equivalent of a GCSE (grade 4) in English and maths.
 
 To teach children aged 3 to 11, you also need the equivalent of a GCSE (grade 4) in a science subject.
 
-#### To make sure your qualifications are equivalent
+#### Help with international qualifications
 
-If all or part of your qualifications are from outside the UK, you should contact the schools or universities you would like to train with, as they make the final decision if your qualifications meet the minimum requirements.
+If your qualifications come from a non-UK institution, your teacher training provider may want to see a ‘[statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx)’ showing their equivalence to UK qualifications.
 
-For help understanding UK qualifications and their international equivalents, you can call us for free on [0800 389 2500](tel://08003892500). You may be able to get a free statement of comparability, showing how your overseas qualifications compare to UK qualifications. This normally costs £49.50 plus VAT.
+Call us on [0800 389 2500](tel://08003892500) for:
+
+* guidance on the UK equivalents of your qualifications
+* a free statement of comparability from UK ENIC once you’ve submitted your application, if your provider asks for this
 
 #### An offer to train
 
