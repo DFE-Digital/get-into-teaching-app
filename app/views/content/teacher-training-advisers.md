@@ -76,7 +76,7 @@ $q-tta-two$
 
 Teaching is an exciting career, but if you have caring responsibilities, people dependent on your earnings, or you are living with a disability you might need some help to take your next step. 
 
-Your teacher training adviser can help you navigate your path into teaching, and make sure you get any additional help that is available. Your adviser will be just a call, message or email away.
+Your adviser can help you navigate your path into teaching, and make sure you get any additional help that is available. Your adviser will be just a call, message or email away.
 
 ## Meet Simon, a teacher training adviser
 
@@ -84,7 +84,7 @@ Your teacher training adviser can help you navigate your path into teaching, and
 
 ## Already applied and been unsuccessful?
 
-Our teacher training advisers can help make your next application stronger. They’ll help you:
+Our advisers can help make your next application stronger. They’ll help you:
 
 * act on any feedback
 * understand the qualifications you need to become a teacher
