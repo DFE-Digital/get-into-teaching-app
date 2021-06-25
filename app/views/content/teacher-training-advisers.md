@@ -44,7 +44,9 @@ calls_to_action:
       link_target: "/tta-service"
       icon: "icon-person"
 ---
-Teacher Training Advisers give you free, one-to-one help and support. They're all former teachers with lots of experience, so they know the process inside and out.  
+Teacher Training Advisers give you free, one-to-one help and support. 
+
+They're all former teachers with lots of experience, so they know the process inside out.  
 
 
 $get-a-tta$
@@ -62,7 +64,7 @@ Other trainee teachers say they are particularly helpful with:
 * Writing a personal statement
 * Preparing for interviews
 
-Our advisers can help you at any time, even if you're a year away from applying.
+Our advisers can help you at any time, even if you're a year or more away from applying.
 
 ## Meet Emma, a Teacher Training Adviser
 
@@ -72,7 +74,7 @@ Our advisers can help you at any time, even if you're a year away from applying.
 
 $q-tta-two$
 
-Teaching is an exciting career, but figuring out if it's right for you can be more complicated if you have caring responsibilities, people dependent on your earnings, or you are living with a disability. 
+Teaching is an exciting career, but if you have caring responsibilities, people dependent on your earnings, or you are living with a disability you might need some help to take your next step. 
 
 Your Teacher Training Adviser can help you navigate your path into teaching, and make sure you get any additional help that is available. Your adviser will be just a call, message or email away.
 
@@ -96,7 +98,7 @@ To sign up, you’ll need one of these:
 * Predicted grade 2:2 or higher for your bachelor’s degree with honours, if you’re still a student
 * Overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
 
-If you're applying from overseas, [contact UK ENIC to check if your qualifications meeet this standard](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) before signing up. 
+If you're applying from overseas, [contact UK ENIC to check if your qualifications meet this standard](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) before signing up. 
 
 $get-a-tta$
 
