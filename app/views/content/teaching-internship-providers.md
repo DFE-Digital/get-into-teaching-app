@@ -164,7 +164,7 @@ providers:
       name: Ginette Hawkins
       email: shine@northernlightstsa.org
     - header: Teach North with Outwood Grange Academies Trust
-      link: "https://teachnorth.com/latest-news/2020/2/11/applications-open-for-oie-teaching-internship-programme?rq=internships"
+      link: "https://teachnorth.com/latest-news/2020/2/11/applications-open-for-oie-teaching-internship-programme"
       name: Emma Sikora
       email: e.sikora@outwood.com
     - header: The Sheffield SCITT, Notre Dame High School
