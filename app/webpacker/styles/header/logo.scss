@@ -51,6 +51,8 @@
   flex: 0 0 auto;
 
   img {
+    margin-top: .5em;
+    margin-left: .5em;
     width: 100%;
   }
 }
@@ -64,9 +66,25 @@
     display: none;
   }
 
-  button {
-    display: inline-block;
+  .menu-button__button {
+    border: 2px solid $green;
+    background: $white;
+    display: flex;
     margin-right: 2em;
+    margin-left: 1em;
     padding: .8em 1.4em;
+  }
+
+  .menu-button__text {
+    display: inline-block;
+    margin-left: .6em;
+  }
+
+  .menu-button__icon {
+    width: 2em;
+    display: inline-block;
+    background-image: url("../images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    content: "";
   }
 }
