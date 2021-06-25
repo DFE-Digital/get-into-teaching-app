@@ -60,7 +60,7 @@ As an international candidate you’ll be welcomed by many teacher training prov
 
 Train in England and you'll graduate from a world-class institution, with qualifications recognised around the world.
 
-Not looking to train in England? Consider training in [Wales](https://www.discoverteaching.wales/routes-into-teaching/), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+Not looking to train in England? Consider training in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
 ### What you need to start training
 
