@@ -5,13 +5,13 @@ export default class extends Controller {
 
   connect() {}
 
-  // toggles an individual menu on desktop
   toggleMenu(event) {
     event.preventDefault();
     event.stopPropagation();
 
     const toggle = event.target.closest('li');
     const secondary = event.target.closest('li').querySelector('ol.secondary')
+
 
     if (secondary.classList.contains(this.menuHiddenClass)) {
       this.expandMenu(secondary, toggle);
