@@ -377,7 +377,7 @@ describe Internal::EventsController do
                 end_at: params[:end_at].getutc.floor,
                 scribble_id: params[:scribble_id],
                 building: nil,
-                is_online: nil,
+                is_online: true,
                 is_virtual: nil,
                 video_url: nil,
                 message: nil,
