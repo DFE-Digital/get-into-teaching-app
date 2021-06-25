@@ -19,6 +19,8 @@ html.js-enabled {
 }
 
 .extra-navigation {
+  background-color: $grey;
+
   @include mq($from: desktop) {
     margin: 0;
     padding-right: 2em;
@@ -31,6 +33,16 @@ html.js-enabled {
     input {
       @include reset;
       padding: 0 1em;
+
+      background-color: white;
+      border: 0;
+      height: 1.6em;
+    }
+  }
+
+  &.hide-on-mobile.hide-on-tablet {
+    ul.extra-navigation__list {
+      margin: .4em auto;
     }
   }
 

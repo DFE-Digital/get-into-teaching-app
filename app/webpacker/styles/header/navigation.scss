@@ -3,6 +3,10 @@
 
   padding: .5em;
 
+  &:hover {
+    text-decoration: underline;
+  }
+
   a {
     color: $black;
     text-decoration: none;

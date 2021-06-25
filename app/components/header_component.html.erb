@@ -14,6 +14,7 @@
 </div>
 
 <header class="limit-content-width" data-controller="navigation">
+  <%= render Header::ExtraNavigationComponent.new(classes: %w[hide-on-mobile hide-on-tablet], search_input_id: "searchbox__input--desktop") %>
   <%= render Header::LogoComponent.new %>
   <div class="menu-button" id="mobile-navigation-menu-button">
     <%= tag.button(class: "menu-button__button", data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
@@ -21,7 +22,6 @@
       <span class="menu-button__text">Menu</span>
     <% end %>
   </div>
-  <%= render Header::ExtraNavigationComponent.new(classes: %w[hide-on-mobile hide-on-tablet], search_input_id: "searchbox__input--desktop") %>
   <%= render Header::NavigationComponent.new %>
 </header>
 

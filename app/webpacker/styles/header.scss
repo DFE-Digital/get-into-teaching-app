@@ -11,6 +11,10 @@ body > header {
   display: grid;
   grid-template-columns: 4fr 1fr;
 
+  .extra-navigation.hide-on-mobile.hide-on-tablet {
+    grid-column: 1/3;
+  }
+
   nav {
     grid-column: 1/3;
   }
@@ -34,12 +38,8 @@ body > header {
     grid-template-rows: repeat(2, minmax(2rem auto));
     grid-template-columns: 1fr 3fr;
 
-    .logo-wrapper {
-      grid-row: 1/3;
-    }
-
     nav {
-      grid-column: 1/3;
+      grid-column: 2/3;
     }
   }
 }
