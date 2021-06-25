@@ -106,6 +106,12 @@ module Internal
                        .new.get_teaching_event_buildings
     end
 
+    def type_id=(value)
+      super(value)
+
+      self.is_online = true if online_event?
+    end
+
     def invalid?
       invalid_building = building.present? && building.invalid?
       super || invalid_building
