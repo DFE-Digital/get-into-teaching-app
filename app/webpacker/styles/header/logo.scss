@@ -2,7 +2,7 @@
   // background-color: thistle;
 
   z-index: 0;
-  overflow-x: hidden;
+  overflow: hidden;
   top: 8px;
   padding-bottom: 20px;
   display: flex;
@@ -55,15 +55,17 @@
   }
 }
 
-#mobile-navigation-menu-button {
-  flex-grow: 1;
-  text-align: right;
+.menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
   @include mq($from: desktop) {
     display: none;
   }
 
   button {
+    display: inline-block;
     margin-right: 2em;
     padding: .8em 1.4em;
   }
