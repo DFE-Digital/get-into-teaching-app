@@ -81,8 +81,8 @@ You usually need the equivalent of a GCSE (grade 4) in English and maths.
 To teach children aged 3 to 11, you also need the equivalent of a GCSE (grade 4) in a science subject.
 
 #### Help with international qualifications
-
-If you studied overseas, your teacher training provider may want to see a ‘[statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx)’ showing how your qualifications compare to UK qualifications.
+ 
+If your qualifications come from a non-UK institution, your teacher training provider may want to see a ‘[statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx)’ showing their equivalence to UK qualifications.
 
 Call us on [0800 389 2500](tel://08003892500) for:
 
