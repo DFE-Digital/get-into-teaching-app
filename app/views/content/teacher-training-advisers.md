@@ -1,5 +1,5 @@
 ---
-title: Teacher Training Advisers
+title: Teacher training advisers
 description: |-
   What is a Teacher Training Adviser? They can help you with anything related to getting into teaching, such as writing your application, funding and interview preparation.
 date: "2021-06-18"
