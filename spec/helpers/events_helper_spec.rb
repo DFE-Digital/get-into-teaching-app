@@ -198,4 +198,27 @@ describe EventsHelper, type: "helper" do
       expect(past_category_name(222_750_001)).to eql("Past Train to Teach events")
     end
   end
+
+  describe "#display_no_ttt_events_message?" do
+    let(:performed_search) { true }
+    let(:events) { [] }
+    let(:event_search_type) { "222750001" }
+    let(:dummy_events) { [[222_750_001, []]] }
+
+    it "returns true when searching for TTT events and there are none" do
+      expect(display_no_ttt_events_message?(performed_search, events, event_search_type)).to be true
+    end
+
+    it "returns false when search was not performed" do
+      expect(display_no_ttt_events_message?(false, events, event_search_type)).to be false
+    end
+
+    it "returns false when there are TTT events" do
+      expect(display_no_ttt_events_message?(true, dummy_events, event_search_type)).to be false
+    end
+
+    it "returns false when the search is not for TTT events" do
+      expect(display_no_ttt_events_message?(true, dummy_events, "")).to be false
+    end
+  end
 end

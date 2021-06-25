@@ -99,4 +99,13 @@ module EventsHelper
     t "event_types.#{type_id}.name.past",
       default: "Past " + pluralised_category_name(type_id)
   end
+
+  def display_no_ttt_events_message?(performed_search, events, event_search_type)
+    train_to_teach_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+
+    searching_for_ttt_or_all_events = [train_to_teach_id.to_s, ""].include? event_search_type
+    no_ttt_events = events.map(&:first).exclude?(train_to_teach_id)
+
+    performed_search && searching_for_ttt_or_all_events && no_ttt_events
+  end
 end

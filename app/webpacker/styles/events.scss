@@ -62,9 +62,11 @@
     }
 
     &__heading {
-      > h3 {
+      margin-bottom: $indent-amount;
+
+      > header h3 {
         @include font-size(large);
-        margin: 0 0 $indent-amount 0;
+        margin: 0px;
         line-height: 1.25;
       }
     }
