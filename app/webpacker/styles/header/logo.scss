@@ -56,35 +56,3 @@
     width: 100%;
   }
 }
-
-.menu-button {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-
-  @include mq($from: desktop) {
-    display: none;
-  }
-
-  .menu-button__button {
-    border: 2px solid $green;
-    background: $white;
-    display: flex;
-    margin-right: 2em;
-    margin-left: 1em;
-    padding: .8em 1.4em;
-  }
-
-  .menu-button__text {
-    display: inline-block;
-    margin-left: .6em;
-  }
-
-  .menu-button__icon {
-    width: 2em;
-    display: inline-block;
-    background-image: url("../images/icon-hamburger.svg");
-    background-repeat: no-repeat;
-    content: "";
-  }
-}

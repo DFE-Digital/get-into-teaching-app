@@ -1,7 +1,7 @@
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = ['primary', 'nav'];
+  static targets = ['primary', 'nav', 'menu'];
 
   connect() {}
 
@@ -60,10 +60,12 @@ export default class extends Controller {
   }
 
   collapseNav() {
+    this.menuTarget.classList.remove('open');
     this.navTarget.classList.add(this.navHiddenClass);
   }
 
   expandNav() {
+    this.menuTarget.classList.add('open');
     this.navTarget.classList.remove(this.navHiddenClass);
   }
 

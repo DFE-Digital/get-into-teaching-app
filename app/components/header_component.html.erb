@@ -16,7 +16,7 @@
 <header class="limit-content-width" data-controller="navigation">
   <%= render Header::LogoComponent.new %>
   <div class="menu-button" id="mobile-navigation-menu-button">
-    <%= tag.button(class: "menu-button__button", data: { action: "click->navigation#toggleNav" }) do %>
+    <%= tag.button(class: "menu-button__button", data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
       <span class="menu-button__icon"></span>
       <span class="menu-button__text">Menu</span>
     <% end %>
