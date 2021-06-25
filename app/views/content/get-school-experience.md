@@ -29,7 +29,7 @@ Spending some time in a school allows you to:
 * talk to teachers
 * get an insight into day-to-day school life
 
-To find experience you can:
+To find school experience you can:
 
 * [find a school offering experience through GOV.UK](https://schoolexperience.education.gov.uk/)
 * approach schools yourself

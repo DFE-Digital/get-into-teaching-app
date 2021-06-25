@@ -2,10 +2,8 @@
 title: "Salaries and benefits"
 description: |-
   View teachers' pay scales, pay ranges table and salary bands for England and London, 
-  as well as other benefits such as holidays and pensions. This
-  also includes additional pay if you teach SEN or take on extra
-  responsibilities.
-date: "2021-06-21"
+  as well as other benefits such as holidays and the Teacher Pension Scheme. Find out the average starting salary for primary and secondary school teachers, as well as leading practictioners and headteachers.
+date: "2021-06-24"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
 navigation: 40
@@ -57,7 +55,7 @@ What you're paid will be linked to performance, not length of service - meaning 
 
 ## Qualified teachers
 
-As a newly qualified teacher (NQT) in a primary or secondary school your salary will be between £25,714 and £32,157 depending on where you teach.
+As a newly qualified teacher (NQT) in a primary or secondary school your starting salary will be between £25,714 and £32,157 depending on where you teach.
 
 As you progress in your teaching career, it's possible to move up through these pay scales:
 

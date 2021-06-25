@@ -3,8 +3,8 @@
   layout: "layouts/steps"
   description: |-
     These are the steps that people who want to become qualified teachers in
-    England need to take.
-  date: "2021-02-23"
+    England need to take. You can understand how to become a teacher, including whether to teach primary or secondary, if you have the right qualifications to teach, teaching bursaries and teaching scholarships, routes into teaching and applying for teaching training.
+  date: "2021-06-24"
   image: "media/images/content/hero-images/0017.jpg"
   backlink: "../"
   navigation: 10
