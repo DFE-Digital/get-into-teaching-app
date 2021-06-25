@@ -150,7 +150,7 @@ You may be eligible for a [training bursary of £9,000](https://www.gov.uk/gover
 
 You may also be eligible if you're studying an opt-in QTS course in secondary undergraduate computing, languages, mathematics or physics.
 
-#### If you're a former military personel
+#### If you're a former military personnel
 
 You may be eligible for a [Troops to Teachers](https://www.ucas.com/teaching-option/troops-teachers) tax-free bursary of £40,000 if you're:
 
