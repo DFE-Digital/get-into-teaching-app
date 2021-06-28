@@ -12,7 +12,7 @@ right_column:
     - title: Sign up for our event
       text: |
        Get tips from our experts on making a strong application.  
-      link_text: "sign up"
+      link_text: "Sign up"
       link_target: "/start-teacher-training-this-september"
       icon: "icon-calendar"
       hide_on_mobile: No
