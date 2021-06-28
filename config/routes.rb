@@ -68,6 +68,8 @@ Rails.application.routes.draw do
 
   resource :csp_reports, only: %i[create]
 
+  resources "blog", controller: "blog", only: %i[index show]
+
   resources "events", path: "/events", only: %i[index show search] do
     collection do
       get "search"

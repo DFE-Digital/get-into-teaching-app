@@ -1,0 +1,7 @@
+<h1>Blog</h1>
+
+<ol>
+  <% @posts.each do |path, fm| %>
+    <li><%= link_to(fm[:title], path) %></li>
+  <% end %>
+</ol>

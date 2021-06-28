@@ -7,20 +7,16 @@
 
     <main role="main" id="main-content">
       <section class="container">
-        <article class="markdown disclaimer fullwidth">
-          <% if !@front_matter["image"] %>
-            <%= tag.h1(@front_matter["title"]) %>
-          <% end %>
-
+        <div class="text-content">
           <%= yield %>
-
-          <% @front_matter["content"]&.each do |partial| %>
-            <%= render(partial) %>
-          <% end %>
-        </article>
+        </div>
       </section>
     </main>
 
-    <%= render FooterComponent.new %>
+    <%= render "sections/mailing-list-bar" %>
+    <%= render "sections/footer" %>
+    <%= render "components/videoplayer" %>
+    <%= render "sections/cookie-acceptance" %>
+    <%= render "components/analytics" %>
   <% end %>
 </html>
