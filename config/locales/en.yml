@@ -273,7 +273,7 @@ en:
         singular: "Train to Teach event"
         plural: "Train to Teach events"
       description: 
-        short: Hear from real teachers and advisers
+        short: Hear from current teachers and teacher training advisers
         long: |-
           Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training
           will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
@@ -283,7 +283,7 @@ en:
         plural: "Online Q&As"
         past: "Past online Q&As"
       description: 
-          short: Have your teacher training questions answered by our experts
+          short: Have all your teacher training questions answered by our experts
           long: |-
             In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train.
             Get fast answers to your questions so you can take the next step to becoming a teacher.
