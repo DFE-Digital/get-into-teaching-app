@@ -9,19 +9,22 @@ body > header {
 
   // mobile (default) layout
   display: grid;
-  grid-template-columns: 4fr auto;
-
-  .extra-navigation.hide-on-mobile.hide-on-tablet {
-    grid-column: 1/3;
-  }
-
-  nav {
-    grid-column: 1/3;
-  }
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
 
   // tablet
   @include mq($from: tablet, $until: desktop) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+
+    nav {
+      grid-column: 1/3;
+    }
+  }
+
+  @include mq($from: tablet) {
+    .extra-navigation.hide-on-mobile.hide-on-tablet {
+      grid-column: 1/3;
+    }
   }
 
   // desktop
@@ -30,16 +33,6 @@ body > header {
 
     nav {
       grid-column: 1/3;
-    }
-  }
-
-  // wide
-  @include mq($from: wide) {
-    grid-template-rows: repeat(2, minmax(2rem auto));
-    grid-template-columns: 1fr 3fr;
-
-    nav {
-      grid-column: 2/3;
     }
   }
 }

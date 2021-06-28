@@ -20,6 +20,11 @@
         background-image: url("../images/icon-hamburger-close.svg");
       }
     }
+
+    @include mq($until: tablet) {
+      flex: 1;
+      margin: 1em;
+    }
   }
 
   .menu-button__text {
