@@ -43,6 +43,12 @@ html.js-enabled {
   &.hide-on-mobile.hide-on-tablet {
     ul.extra-navigation__list {
       margin: .4em auto;
+
+      @include mq($from: desktop) {
+        li {
+          margin-left: 1.4em;
+        }
+      }
     }
   }
 
@@ -55,7 +61,6 @@ html.js-enabled {
     flex-wrap: wrap;
     justify-content: flex-end;
     align-items: center;
-    gap: 2em;
     padding: 0;
 
     @include mq($until: tablet) {
