@@ -7,6 +7,16 @@ description: |-
 date: "2021-06-17"
 image: "media/images/content/hero-images/0008.jpg"
 backlink: "../"
+right_column:
+  ctas:
+    - title: Sign up for our event
+      text: |
+       Get tips from our experts on making a strong application.  
+      link_text: "sign up"
+      link_target: "/start-teacher-training-this-september"
+      icon: "icon-calendar"
+      hide_on_mobile: No
+      hide_on_tablet: No
 keywords:
     - Application
     - Apply
