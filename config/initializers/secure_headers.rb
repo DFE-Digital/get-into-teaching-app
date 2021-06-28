@@ -9,7 +9,7 @@ SecureHeaders::Configuration.default do |config|
 
   tta_service_hosts = []
   tta_service_hosts << URI.parse(ENV["TTA_SERVICE_URL"]).host if ENV["TTA_SERVICE_URL"].present?
-  google_analytics = %w[www.google-analytics.com ssl.google-analytics.com *.googletagmanager.com tagmanager.google.com *.googleusercontent.com *.gstatic.com s.ytimg.com *.google.co.uk https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net]
+  google_analytics = %w[www.google-analytics.com ssl.google-analytics.com *.googletagmanager.com tagmanager.google.com *.googleusercontent.com *.gstatic.com s.ytimg.com *.google.co.uk adservice.google.com *google.com.sa https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net]
   lid_pixels = %w[pixelg.adswizz.com tracking.audio.thisisdax.com]
 
   config.csp = {
@@ -22,7 +22,7 @@ SecureHeaders::Configuration.default do |config|
     form_action: %w['self' tr.snapchat.com www.facebook.com www.gov.uk dev.visualwebsiteoptimizer.com],
     frame_ancestors: %w['self'],
     frame_src: %w['self' embed.scribblelive.com tr.snapchat.com www.facebook.com www.youtube.com www.youtube-nocookie.com *.hotjar.com *.doubleclick.net dev.visualwebsiteoptimizer.com],
-    img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com ad.doubleclick.net i.ytimg.com adservice.google.com adservice.google.co.uk] + google_analytics + lid_pixels,
+    img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com *.doubleclick.net i.ytimg.com adservice.google.com adservice.google.co.uk] + google_analytics + lid_pixels,
     manifest_src: %w['self'],
     media_src: %w['self'],
     script_src: %w['self' 'unsafe-inline' 'unsafe-eval' embed.scribblelive.com *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com *.youtube.com *.visualwebsiteoptimizer.com] + google_analytics,
