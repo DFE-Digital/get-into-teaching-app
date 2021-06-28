@@ -4,6 +4,7 @@ describe "Find an event near you" do
   include_context "stub types api"
 
   let(:no_events_regex) { /Sorry your search has not found any events/ }
+  let(:no_ttt_events_regex) { /Train to Teach events will return in September/ }
   let(:category_headings_regex) { /<h3>(Train to Teach events|Online Q&amp;As|School and University events)<\/h3>/ }
   let(:types) { Events::Search.available_event_type_ids }
   let(:events) do
@@ -89,10 +90,9 @@ describe "Find an event near you" do
 
       context "when event type is Train to Teach" do
         let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
-        let(:no_events_regex) { /Train to Teach events will return in September/ }
 
         it "displays a single no results message" do
-          no_results_messages = response.body.scan(no_events_regex).flatten
+          no_results_messages = response.body.scan(no_ttt_events_regex).flatten
           expect(no_results_messages.count).to eq(1)
         end
 
@@ -167,7 +167,12 @@ describe "Find an event near you" do
         headings = response.body.scan(category_headings_regex).flatten
         no_results_messages = response.body.scan(no_events_regex).flatten
         expect(headings.count).to eq(Events::Search.available_event_types.count)
-        expect(headings.count - 1).to eq(no_results_messages.count)
+        expect(headings.count - 2).to eq(no_results_messages.count)
+      end
+
+      it "displays the no TTT results message in the TTT category" do
+        no_results_messages = response.body.scan(no_ttt_events_regex).flatten
+        expect(no_results_messages.count).to eq(1)
       end
     end
   end
