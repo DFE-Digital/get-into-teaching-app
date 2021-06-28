@@ -1,3 +1,5 @@
+<% display_no_ttt_events_message = display_no_ttt_events_message?(@performed_search, @events_by_type, @events_search_type) %>
+
 <% @search_component = Events::SearchComponent.new(
   @event_search,
   search_events_path(anchor: "searchforevents")
@@ -5,7 +7,7 @@
 
 <% @before_search_fullwidth = true %>
 
-<% if display_no_ttt_events_message?(@performed_search, @events_by_type, @events_search_type) %>
+<% if display_no_ttt_events_message %>
   <%= render(Events::NoResultsComponent.new) do %>
     <p>DfE's Train to Teach events will return in September. Sign up for updates to be notified about spaces.</p>
     <%= link_to('Sign up for notifications', mailing_list_steps_url, class: "button") %>
@@ -18,7 +20,7 @@
       type_id: type_id,
       events: events,
       page_param_name: @performed_search ? @group_presenter.page_param_name(type_id) : nil,
-      show_see_all_events: true
+      show_see_all_events: display_no_ttt_events_message ? true : false
     %>
   <% end %>
 <% else %>
