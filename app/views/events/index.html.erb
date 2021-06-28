@@ -20,7 +20,7 @@
       type_id: type_id,
       events: events,
       page_param_name: @performed_search ? @group_presenter.page_param_name(type_id) : nil,
-      show_see_all_events: display_no_ttt_events_message
+      show_see_all_events: events.blank? && type_id == 222750001 ? false : true
     %>
   <% end %>
 <% else %>
