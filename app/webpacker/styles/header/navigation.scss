@@ -147,6 +147,7 @@ body > header nav {
 
         &.down {
           background-color: $grey;
+          border-bottom: 6px solid $grey;
         }
       }
     }
@@ -161,6 +162,7 @@ body > header nav {
       background-color: $grey;
 
       z-index: 80;
+      width: 100%;
 
       > li {
         @include list-item-nav;
