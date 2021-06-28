@@ -3,16 +3,16 @@
 
   padding: .5em;
 
-  &:hover {
-    text-decoration: underline;
-  }
-
   a {
     color: $black;
     text-decoration: none;
 
     &:hover {
       text-decoration: none;
+    }
+
+    &:focus {
+      box-shadow: none;
     }
   }
 }
@@ -43,10 +43,15 @@ body > header nav {
 
       .menu__heading {
         display: flex;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
       .menu__chevron {
         margin: 0 .4em;
+        flex-shrink: 0;
         @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
       }
 
@@ -111,6 +116,12 @@ body > header nav {
         &:hover {
           border-left: 6px solid darken($grey, 5%);
         }
+
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }
@@ -155,6 +166,16 @@ body > header nav {
         @include list-item-nav;
 
         padding: 1em;
+
+        &:hover {
+          background-color: darken($grey, 3%);
+        }
+
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
     }
   }

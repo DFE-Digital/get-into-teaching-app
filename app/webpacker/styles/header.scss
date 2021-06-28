@@ -9,7 +9,7 @@ body > header {
 
   // mobile (default) layout
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 4fr auto;
 
   .extra-navigation.hide-on-mobile.hide-on-tablet {
     grid-column: 1/3;
