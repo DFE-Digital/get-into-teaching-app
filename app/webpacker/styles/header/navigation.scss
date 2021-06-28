@@ -35,7 +35,6 @@ body > header nav {
   ol.primary {
     list-style: none;
     display: flex;
-    gap: 1.5em;
 
     > li {
       @include list-item-nav;

@@ -1,6 +1,5 @@
 ---
   title: "A day in the life of a teacher"
-  navigation: 10.1
   description: |-
     Teachers lead fulfilling and varied lives. Here we take a closer look at a
     typical day in the life of a teacher.

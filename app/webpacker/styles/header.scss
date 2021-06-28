@@ -14,7 +14,7 @@ body > header {
 
   // tablet
   @include mq($from: tablet, $until: desktop) {
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
 
     nav {
       grid-column: 1/3;
