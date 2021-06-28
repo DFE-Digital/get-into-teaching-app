@@ -14,7 +14,7 @@ body > header {
 
   // tablet
   @include mq($from: tablet, $until: desktop) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: max-content 1fr;
 
     nav {
       grid-column: 1/3;
@@ -22,6 +22,7 @@ body > header {
   }
 
   @include mq($from: tablet) {
+    grid-template-columns: max-content 2fr;
     .extra-navigation.hide-on-mobile.hide-on-tablet {
       grid-column: 1/3;
     }
@@ -29,8 +30,6 @@ body > header {
 
   // desktop
   @include mq($from: desktop, $until: wide) {
-    grid-template-columns: 1fr 2fr;
-
     nav {
       grid-column: 1/3;
     }

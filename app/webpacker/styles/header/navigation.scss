@@ -39,6 +39,7 @@ body > header nav {
     > li {
       @include list-item-nav;
       @include reset;
+      margin-bottom: 0;
 
       .menu__heading {
         display: flex;
