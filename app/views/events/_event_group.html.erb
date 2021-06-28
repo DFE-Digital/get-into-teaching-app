@@ -1,4 +1,5 @@
 <% plural_category_name = pluralised_category_name(type_id) %>
+<% ttt_type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] %>
 <% with_logo = type_id != GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"] %>
 
 <div class="types-of-event">
@@ -21,8 +22,15 @@
         <%= render partial: "event", collection: events %>
       </div>
     <% else %>
-      <%= render(Events::NoResultsComponent.new) do %>
-        Sorry your search has not found any events of this type, try a different location or month.
+      <% if type_id == ttt_type_id %>
+        <%= render(Events::NoResultsComponent.new) do %>
+          <p>DfE's Train to Teach events will return in September. Sign up for updates to be notified about spaces.</p>
+          <%= link_to('Sign up for notifications', mailing_list_steps_url, class: "button") %>
+        <% end %>
+      <% else %>
+        <%= render(Events::NoResultsComponent.new) do %>
+          Sorry your search has not found any events of this type, try a different location or month.
+        <% end %>
       <% end %>
     <% end %>
 
