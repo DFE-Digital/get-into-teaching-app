@@ -1,7 +1,13 @@
-<h1>Blog</h1>
-
-<ol>
+<ol class="blog-index">
   <% @posts.each do |path, fm| %>
-    <li><%= link_to(fm[:title], path) %></li>
+    <li>
+      <h2><%= fm[:title] %></h2>
+      <% if fm[:images].present? %>
+        <%= image_pack_tag(fm[:images]&.values&.first) %>
+      <% end %>
+      <p><%= fm[:synopsis] %></p>
+
+      <%= link_to "Read more", path %>
+    </li>
   <% end %>
 </ol>

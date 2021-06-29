@@ -1,0 +1,47 @@
+ol.blog-index {
+  list-style: none;
+  padding-left: 0;
+
+  li {
+    h2 {
+      @include font-size(medium);
+      @include reset;
+
+      margin: 2em 0 1em;
+    }
+  }
+
+  li + li {
+    margin-top: 3em;
+  }
+}
+
+.blog {
+  $blog-content-width: 65ch;
+
+  margin-bottom: 4em;
+
+  h1 {
+    @include font-size(large);
+  }
+
+  picture > img {
+    max-width: $blog-content-width;
+  }
+
+  p {
+    max-width: $blog-content-width;
+  }
+
+  blockquote {
+    padding: 1.5em;
+    background: $grey;
+    margin: 2em auto;
+  }
+
+  @include mq($until: tablet) {
+    img {
+      width: 100%;
+    }
+  }
+}

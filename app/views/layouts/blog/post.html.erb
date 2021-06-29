@@ -7,10 +7,15 @@
 
     <main role="main" id="main-content">
       <section class="container">
-        <article class="markdown disclaimer fullwidth">
-          <% if !@front_matter["image"] %>
+        <article class="markdown blog">
+          <header>
             <%= tag.h1(@front_matter["title"]) %>
-          <% end %>
+
+            <%= tag.span(format_blog_date(@front_matter["date"])) %>
+            <% if @front_matter.key?("author") %>
+              <%= tag.span(@front_matter["author"]) %>
+            <% end %>
+          </header>
 
           <%= yield %>
         </article>
