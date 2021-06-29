@@ -39,6 +39,7 @@ body > header nav {
     > li {
       @include list-item-nav;
       @include reset;
+      line-height: 2;
       margin-bottom: 0;
 
       .menu__heading {
@@ -102,6 +103,12 @@ body > header nav {
         &.active {
           border-left: 6px solid $purple;
         }
+
+        > a,
+        div {
+          display: block;
+          padding: 1em 0;
+        }
       }
     }
 
@@ -149,6 +156,10 @@ body > header nav {
         &.down {
           background-color: $grey;
           border-bottom: 6px solid $grey;
+        }
+
+        a {
+          padding: 1em 0;
         }
       }
     }
