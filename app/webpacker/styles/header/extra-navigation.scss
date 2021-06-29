@@ -20,6 +20,7 @@ html.js-enabled {
 
 .extra-navigation {
   background-color: $grey;
+  font-weight: bold;
 
   @include mq($from: desktop) {
     margin: 0;
