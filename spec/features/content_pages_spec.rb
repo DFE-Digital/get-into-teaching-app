@@ -13,7 +13,7 @@ end
 RSpec.feature "content pages check", type: :feature, content: true do
   include_context "stub types api"
 
-  let(:other_paths) { %w[/ /search /tta-service /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
+  let(:other_paths) { %w[/ /blog /search /tta-service /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
   let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}] }
 
   before do
@@ -47,6 +47,10 @@ RSpec.feature "content pages check", type: :feature, content: true do
       expect(@stored_pages.map(&:status_code)).to all(be(200))
     end
 
+    def css_to_xpath(css_selector)
+      %(//*[@id='#{css_selector.slice(1..)}'])
+    end
+
     scenario "the anchor links reference existing IDs" do
       @stored_pages.each do |sp|
         sp.body
@@ -55,7 +59,11 @@ RSpec.feature "content pages check", type: :feature, content: true do
           .select { |href| href.start_with?("#") }
           .reject { |href| href == "#" }
           .each do |href|
-            expect(sp.body).to have_css(href)
+            # we need to use XPath here because Nokogiri doesn't like selectors
+            # that contain colons, and Kramdown's footnote extension outputs
+            # footnote hyperlinks with hrefs like "#fn:1"
+
+            expect(sp.body).to have_xpath(css_to_xpath(href))
           end
       end
     end
