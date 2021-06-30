@@ -67,7 +67,7 @@ export default class extends Controller {
 
   setupAccessibleAutocomplete() {
     accessibleAutocomplete({
-      placeholder: "Search Get Into Teaching",
+      placeholder: "Site search",
       element: this.searchbarTarget,
       id: this.searchInputIdValue,
       displayMenu: 'overlay',

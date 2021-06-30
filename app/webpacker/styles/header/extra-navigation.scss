@@ -20,16 +20,23 @@ html.js-enabled {
 
 .extra-navigation {
   background-color: $grey;
-  font-weight: bold;
+  padding: .25em 0;
+  //font-weight: bold;
 
   @include mq($from: desktop) {
     margin: 0;
     padding-right: 2em;
   }
-
+  
+  .fas {
+	  padding-left: .5em;
+	  color: $grey-dark;
+  }
+  
   .extra-navigation__search {
     padding: 0;
     position: relative;
+    min-width: 240px;
 
     input {
       @include reset;
@@ -37,8 +44,9 @@ html.js-enabled {
 
       background-color: white;
       border: 0;
-      height: 1.6em;
+      height: 2.5em;
       width: 110%;
+      font-size: .9rem;
     }
   }
 
@@ -99,7 +107,7 @@ html.js-enabled {
         text-decoration: none;
 
         &:hover {
-          text-decoration: none;
+          text-decoration: underline;
         }
       }
     }
