@@ -88,13 +88,15 @@ body > header nav {
 
     ol.primary {
       flex-direction: column;
-      margin-bottom: 2em;
+      margin:0;
+      background: $grey;
 
       > li {
         padding-left: 1em;
-        border-left: 6px solid $white;
+        border-left: 6px solid $grey;
+        border-bottom: 1px solid $white;
         max-width: 80%;
-        margin-bottom: .8em;
+        //margin-bottom: .8em;
 
         .menu__text {
           flex-grow: 1;

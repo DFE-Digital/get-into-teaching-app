@@ -20,12 +20,16 @@ html.js-enabled {
 
 .extra-navigation {
   background-color: $grey;
+  border-bottom: 1px solid $green;
   padding: .25em 0;
   //font-weight: bold;
+  margin-bottom: 1em;
 
   @include mq($from: desktop) {
     margin: 0;
+    padding: 0;
     padding-right: 2em;
+    border-bottom: none;    
   }
   
   .fas {
