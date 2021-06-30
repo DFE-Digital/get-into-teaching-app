@@ -17,6 +17,6 @@ describe Header::ExtraNavigationComponent, type: "component" do
   end
 
   specify "generates a label for the accessible select box with the supplied id" do
-    expect(page).to have_css("label[for='#{custom_custom_search_input_id}']", text: "Search the Get Into Teaching website")
+    expect(page).to have_css("label[for='#{custom_custom_search_input_id}']", text: "Search")
   end
 end
