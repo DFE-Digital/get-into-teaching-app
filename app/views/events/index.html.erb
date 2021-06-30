@@ -20,11 +20,11 @@
       type_id: type_id,
       events: events,
       page_param_name: @performed_search ? @group_presenter.page_param_name(type_id) : nil,
-      show_see_all_events: events.blank? && type_id == 222750001 ? false : true
+      show_see_all_events: show_see_all_events_button?(type_id, events)
     %>
   <% end %>
 <% else %>
-  <% if @performed_search && @events_search_type != "222750001" %>
+  <% if @performed_search && @events_search_type != ttt_event_type_id.to_s %>
     <%= render(Events::NoResultsComponent.new) do %>
       Sorry your search has not found any events, try a different type, location or month.
     <% end %>
