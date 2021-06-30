@@ -116,7 +116,7 @@ module EventsHelper
   # Currently the button needs to be hidden only in
   # the TTT block and when the are no TTT events.
   def show_see_all_events_button?(type_id, events)
-    events.blank? && type_id == ttt_event_type_id ? false : true
+    events.present? || type_id != ttt_event_type_id
   end
 
   def ttt_event_type_id
