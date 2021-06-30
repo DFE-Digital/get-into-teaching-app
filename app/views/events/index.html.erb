@@ -1,3 +1,5 @@
+<% display_no_ttt_events_message = display_no_ttt_events_message?(@performed_search, @events_by_type, @events_search_type) %>
+
 <% @search_component = Events::SearchComponent.new(
   @event_search,
   search_events_path(anchor: "searchforevents")
@@ -5,44 +7,27 @@
 
 <% @before_search_fullwidth = true %>
 
-<% content_for :before_search do %>
-<h2>Types of events</h2>
-<section class="event-type-descriptions">
-  <section class="event-type-descriptions__content">
-    <% GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.each do |type_id| %>
-      <%= render Events::TypeDescriptionComponent.new(type_id) %>
-    <% end %>
-  </section>
-</section>
-<% end %>
-
-<% unless @performed_search %>
-  <div class="content-alert content-alert--left">
-    <div class="content-alert__icon">
-      <%= image_pack_tag "media/images/icon-moved-online-purple.svg", alt: "", size: "40x26" %>
-    </div>
-    <div>
-      <h4>Some events have moved online</h4>
-      <p>Until it is safe to see you in person, the Train to Teach and most of School and University events are online.</p>
-    </div>
-  </div>
+<% if display_no_ttt_events_message %>
+  <%= render(Events::NoResultsComponent.new) do %>
+    <p>DfE's Train to Teach events will return in September. Sign up for updates to be notified about spaces.</p>
+    <%= link_to('Sign up for notifications', mailing_list_steps_url, class: "button") %>
+  <% end %>
 <% end %>
 
 <% unless @no_results %>
-  <% unless @performed_search %>
-  <h2>Discover events</h2>
-  <% end %>
   <% @events_by_type.each do |type_id, events| %>
     <%= render "event_group",
       type_id: type_id,
       events: events,
       page_param_name: @performed_search ? @group_presenter.page_param_name(type_id) : nil,
-      show_see_all_events: true
+      show_see_all_events: show_see_all_events_button?(type_id, events)
     %>
   <% end %>
 <% else %>
-  <%= render(Events::NoResultsComponent.new) do %>
-    Sorry your search has not found any events, try a different type, location or month.
+  <% if @performed_search && @events_search_type != ttt_event_type_id.to_s %>
+    <%= render(Events::NoResultsComponent.new) do %>
+      Sorry your search has not found any events, try a different type, location or month.
+    <% end %>
   <% end %>
 <% end %>
 

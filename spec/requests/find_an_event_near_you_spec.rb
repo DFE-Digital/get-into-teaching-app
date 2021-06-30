@@ -4,6 +4,7 @@ describe "Find an event near you" do
   include_context "stub types api"
 
   let(:no_events_regex) { /Sorry your search has not found any events/ }
+  let(:no_ttt_events_regex) { /Train to Teach events will return in September/ }
   let(:category_headings_regex) { /<h3>(Train to Teach events|Online Q&amp;As|School and University events)<\/h3>/ }
   let(:types) { Events::Search.available_event_type_ids }
   let(:events) do
@@ -33,23 +34,6 @@ describe "Find an event near you" do
       expect(response.body).to include("Do you have a teaching event?")
     end
 
-    it "displays the events moved online notice" do
-      expect(response.body).to include("Some events have moved online")
-    end
-
-    it "displays the discover events heading" do
-      expect(response.body).to include("Discover events")
-    end
-
-    it "displays event types" do
-      expect(response.body).to include("Types of events")
-      event_types = GetIntoTeachingApiClient::Constants::EVENT_TYPES.values
-
-      event_types.each do |type|
-        expect(response.body).to include(I18n.t("event_types.#{type}.description"))
-      end
-    end
-
     it "displays all events" do
       expect(response.body.scan(/Event [1-5]/).count).to eq(5)
     end
@@ -57,15 +41,6 @@ describe "Find an event near you" do
     it "presents the events in date order, per category" do
       headings = response.body.scan(/<h4>Event (.*)<\/h4>/).flatten.take(events.count)
       expect(headings).to eq(%w[4 1 5 2 3])
-    end
-
-    context "when there are no results" do
-      let(:events) { [] }
-
-      it "displays a single no results message" do
-        no_results_messages = response.body.scan(no_events_regex).flatten
-        expect(no_results_messages.count).to eq(1)
-      end
     end
 
     context "when there are events of different types" do
@@ -89,7 +64,7 @@ describe "Find an event near you" do
   end
 
   context "when searching for an event by type" do
-    let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
+    let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
     let(:events) { [build(:event_api, type_id: type_id)] }
 
     before do
@@ -101,7 +76,7 @@ describe "Find an event near you" do
 
     it "displays only the category filtered to" do
       headings = response.body.scan(category_headings_regex).flatten
-      expected_headings = ["Train to Teach events"]
+      expected_headings = ["Online Q&amp;As"]
 
       expect(headings).to eq(expected_headings)
     end
@@ -113,14 +88,35 @@ describe "Find an event near you" do
     context "when there are no results" do
       let(:events) { [] }
 
-      it "displays a single no results message" do
-        no_results_messages = response.body.scan(no_events_regex).flatten
-        expect(no_results_messages.count).to eq(1)
+      context "when event type is Train to Teach" do
+        let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
+
+        it "displays a single no results message" do
+          no_results_messages = response.body.scan(no_ttt_events_regex).flatten
+          expect(no_results_messages.count).to eq(1)
+        end
+
+        it "displays the link to sign up for notifications" do
+          sign_up_button = response.body.scan(/Sign up for notifications/)
+          expect(sign_up_button).to include("Sign up for notifications")
+        end
+
+        it "does not display any categories" do
+          headings = response.body.scan(category_headings_regex).flatten
+          expect(headings).to be_empty
+        end
       end
 
-      it "does not display any categories" do
-        headings = response.body.scan(category_headings_regex).flatten
-        expect(headings).to be_empty
+      context "when event type is not Train to Teach" do
+        it "displays a single no results message" do
+          no_results_messages = response.body.scan(no_events_regex).flatten
+          expect(no_results_messages.count).to eq(1)
+        end
+
+        it "does not display any categories" do
+          headings = response.body.scan(category_headings_regex).flatten
+          expect(headings).to be_empty
+        end
       end
     end
   end
@@ -171,7 +167,12 @@ describe "Find an event near you" do
         headings = response.body.scan(category_headings_regex).flatten
         no_results_messages = response.body.scan(no_events_regex).flatten
         expect(headings.count).to eq(Events::Search.available_event_types.count)
-        expect(headings.count - 1).to eq(no_results_messages.count)
+        expect(headings.count - 2).to eq(no_results_messages.count)
+      end
+
+      it "displays the no TTT results message in the TTT category" do
+        no_results_messages = response.body.scan(no_ttt_events_regex).flatten
+        expect(no_results_messages.count).to eq(1)
       end
     end
   end

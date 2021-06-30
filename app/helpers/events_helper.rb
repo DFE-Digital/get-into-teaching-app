@@ -84,7 +84,7 @@ module EventsHelper
 
   def event_type_color(type_id)
     case type_id
-    when GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+    when ttt_event_type_id
       "purple"
     else
       "blue"
@@ -98,5 +98,28 @@ module EventsHelper
   def past_category_name(type_id)
     t "event_types.#{type_id}.name.past",
       default: "Past " + pluralised_category_name(type_id)
+  end
+
+  def display_no_ttt_events_message?(performed_search, events, event_search_type)
+    train_to_teach_id = ttt_event_type_id
+    searching_for_ttt = train_to_teach_id.to_s == event_search_type
+    searching_for_all = event_search_type.blank?
+
+    no_ttt_events = events.map(&:first).exclude?(train_to_teach_id)
+
+    performed_search && (searching_for_ttt || searching_for_all) && no_ttt_events
+  end
+
+  # Determines if the "see all events" button should
+  # be shown in the events blocks or not.
+  #
+  # Currently the button needs to be hidden only in
+  # the TTT block and when the are no TTT events.
+  def show_see_all_events_button?(type_id, events)
+    events.present? || type_id != ttt_event_type_id
+  end
+
+  def ttt_event_type_id
+    GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
   end
 end

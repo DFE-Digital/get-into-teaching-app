@@ -272,24 +272,30 @@ en:
       name:
         singular: "Train to Teach event"
         plural: "Train to Teach events"
-      description: |-
-        Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training
-        will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
+      description: 
+        short: Find out from schools and universities what training will be like and get one-to-one advice from our teaching experts on applying.
+        long: |-
+          Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training
+          will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
     222750008:
       name:
         singular: "Online Q&A"
         plural: "Online Q&As"
         past: "Past online Q&As"
-      description: |-
-        In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train.
-        Get fast answers to your questions so you can take the next step to becoming a teacher.
+      description: 
+          short: Get fast answers to your questions on topics such as funding or ways to train, so you can take the next step to becoming a teacher.
+          long: |-
+            In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train.
+            Get fast answers to your questions so you can take the next step to becoming a teacher.
     222750009:
       name:
         singular: "School or University event"
         plural: "School and University events"
-      description: |-
-        These events, run by schools and universities, are a great way to and find out more about a particular training provider.
-        Find out what they have to offer and help make your decision on where to apply.
+      description: 
+        short: Find out more about a particular training provider, what they offer and help you decide on where to apply.
+        long: |-
+          These events, run by schools and universities, are a great way to and find out more about a particular training provider.
+          Find out what they have to offer and help make your decision on where to apply.
   activemodel:
     errors:
       magic_link_token:
