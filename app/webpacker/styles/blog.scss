@@ -21,6 +21,12 @@ ol.blog-index {
 
   margin-bottom: 4em;
 
+  header {
+    border-bottom: 1px solid $grey;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+  }
+
   h1 {
     @include font-size(large);
   }
@@ -43,5 +49,12 @@ ol.blog-index {
     img {
       width: 100%;
     }
+  }
+
+  .footnotes {
+    border-top: 1px solid $grey;
+    margin-top: 2em;
+    padding: 1em;
+    color: darken($grey-dark, 5%); // nudge to AAA
   }
 }

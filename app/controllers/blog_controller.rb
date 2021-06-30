@@ -11,6 +11,7 @@ class BlogController < ApplicationController
       .select_by_path("/blog")
       .select { |_path, fm| fm[:date] <= Time.zone.today.iso8601 }
       .sort_by { |_path, fm| fm[:date] }
+      .reverse
   end
 
   def show

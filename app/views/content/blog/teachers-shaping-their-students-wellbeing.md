@@ -4,7 +4,7 @@ date: "2021-06-16"
 images:
   leah_kellogg: "media/images/content/blog/leah-kellogg-pe-teacher-and-professional-cricketer.jpg"
   elliot_bailey: "media/images/content/blog/elliot-bailey-pe-teacher.jpg"
-synopsis: |-
+description: |-
   We spoke to 5 teachers about how they’re promoting good mental health within their schools. Leah Kellogg teaches PE at The Bemrose School, Jack Barlow is a PE teacher and the wellbeing lead at Philips High School in Whitefield, Elliot Bailey teaches PE at Sandringham School in St Albans, Guy Foster is a primary teacher at Thurlstone Primary School, and Scott Lycett teaches PE at Bedford High School.
 ---
 

@@ -7,13 +7,13 @@
 
     <main role="main" id="main-content">
       <section class="container">
-        <article class="markdown blog">
+        <article class="markdown blog longform">
           <header>
             <%= tag.h1(@front_matter["title"]) %>
 
             <%= tag.span(format_blog_date(@front_matter["date"])) %>
             <% if @front_matter.key?("author") %>
-              <%= tag.span(@front_matter["author"]) %>
+              by <%= tag.span(@front_matter["author"]) %>
             <% end %>
           </header>
 
