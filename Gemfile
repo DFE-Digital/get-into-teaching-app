@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.3", ">= 6.1.3.2"
+gem "rails", "~> 6.1.4", ">= 6.1.3.2"
 
 # Use Puma as the app server
 gem "puma", "~> 5.3", ">= 5.3.1"
@@ -41,7 +41,7 @@ gem "faraday_middleware"
 
 gem "dotenv-rails", ">= 2.7.6"
 
-gem "govuk_design_system_formbuilder", ">= 2.5.3"
+gem "govuk_design_system_formbuilder", ">= 2.7.1"
 
 gem "loaf", ">= 0.10.0"
 
@@ -56,7 +56,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.32.0"
+gem "view_component", "~> 2.34.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
