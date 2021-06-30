@@ -57,12 +57,6 @@ html.js-enabled {
   &.hide-on-mobile.hide-on-tablet {
     ul.extra-navigation__list {
       margin: .4em auto;
-
-      @include mq($from: desktop) {
-        li {
-          margin-left: 1.4em;
-        }
-      }
     }
   }
 
@@ -76,6 +70,10 @@ html.js-enabled {
     justify-content: flex-end;
     align-items: center;
     padding: 0;
+
+    li.extra-navigation__link {
+      margin-left: 2em;
+    }
 
     @include mq($until: tablet) {
       align-items: flex-start;
