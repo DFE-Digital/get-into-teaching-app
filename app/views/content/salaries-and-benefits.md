@@ -66,7 +66,7 @@ As you progress in your teaching career, it's possible to move up through these 
 | London fringe                 | £26,948 | £42,780 |
 | The rest of England and Wales | £25,714 | £41,604 |
 
-In 2020/21, the average salary for a full time teacher was £41,800 - an increase of £1,000 since last year.
+In 2020/21, the average salary for a primary school teacher was £36,900. The average salary for a secondary school teacher was £39,900.
 
 ### Holidays
 
