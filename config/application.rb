@@ -36,7 +36,7 @@ end
 file_store = Prometheus::Client::DataStores::DirectFileStore.new(dir: PROMETHEUS_DIR)
 Prometheus::Client.config.data_store = file_store
 
-module GovukRailsBoilerplate
+module GetIntoTeachingWebsite
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
