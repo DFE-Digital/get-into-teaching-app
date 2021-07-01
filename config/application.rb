@@ -51,5 +51,7 @@ module GetIntoTeachingWebsite
     # View component previews
     config.view_component.preview_paths << Rails.root.join("spec/components/previews")
     config.view_component.default_preview_layout = "component_preview"
+
+    config.skylight.environments.append("preprod", "dev", "test", "staging", "userresearch", "rolling")
   end
 end
