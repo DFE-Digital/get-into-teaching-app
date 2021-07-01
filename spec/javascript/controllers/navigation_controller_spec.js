@@ -2,89 +2,59 @@ import { Application } from 'stimulus';
 import NavigationController from 'navigation_controller.js';
 
 describe('NavigationController', () => {
-  const navigationTemplate = `<div class="navbar__mobile" data-controller="navigation">
-        <div class="navbar__mobile__buttons">
-            <a data-action="click->navigation#navToggle" href="javascript:void(0);" class="icon">
-                <div data-navigation-target="hamburger" id='hamburger' class="icon-close"></div>
-                <div data-navigation-target="label" id="navbar-label" class="icon-hamburger-label">Close</div>
+  describe('opening and closing the nav menu', () => {
+    document.body.innerHTML = `
+    <header data-controller="navigation">
+      <div class="menu-button">
+        <button class="menu-button__button" data-action="click->navigation#toggleNav" data-navigation-target="menu">
+          <span class="menu-button__icon"></span>
+          <span class="menu-button__text">Menu</span>
+        </button>
+      </div>
+      <nav role="nav" class="hidden-mobile" data-navigation-target="nav">
+        <ol class="primary" data-navigation-target="primary">
+          <li class="active">One</li>
+          <li>Two</li>
+          <li class="menu">
+            <a class="menu__heading" data-action="click->navigation#toggleMenu" href="/what-is-teaching-like">
+              <span class="menu__text">What is teaching like?</span>
+              <div class="menu__chevron"></div>
             </a>
-        </div>
-        <div data-navigation-target="links" id="navbar-mobile-links" class="navbar__mobile__links">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/steps-to-become-a-teacher">Steps to become a teacher</a></li>
-                <li><a href="/funding-your-training">Funding your training</a></li>
-                <li><a href="/life-as-a-teacher">Teaching as a career</a></li>
-                <li><a href="/life-as-a-teacher/teachers-salaries-and-benefits">Salaries and Benefits</a></li>
-                <li><%= link_to "Find an event near you", events_path %></li>
-                <li><a href="/">Talk to us</a></li>
-            </ul>
-        </div>
-    </div>`;
+            <ol class="secondary hidden">
+              <li><a href="/what-is-teaching-like/a-day-in-the-life-of-a-teacher">A day in the life of a teacher</a></li>
+              <li><a href="/what-is-teaching-like/get-school-experience">Get school experience</a></li>
+            </ol>
+          </li>
+        </ol>
+      </nav>
+    </header>`;
 
-  const application = Application.start();
-  application.register('navigation', NavigationController);
+    const application = Application.start();
+    application.register('navigation', NavigationController);
 
-  beforeEach(() => document.body.innerHTML = navigationTemplate)
+    it("toggles the visibility of the navigation area when menu button clicked", () => {
+      expect(document.querySelector('nav').classList).toContain("hidden-mobile");
 
-  describe('when first loaded', () => {
-    it('hides the mobile navigation', () => {
-      const themobilenav = document.getElementById('navbar-mobile-links');
-      expect(themobilenav.style.display).toBe('none');
+      document.querySelector("button").click();
+
+      expect(document.querySelector('nav').classList).not.toContain("hidden-mobile");
+
+      document.querySelector("button").click();
+
+      expect(document.querySelector('nav').classList).toContain("hidden-mobile");
     });
 
-    it('sets the icon to a hamburger', () => {
-      const theicon = document.getElementById('hamburger');
-      expect(theicon.className).toBe('icon-hamburger');
-    });
+    it("toggles the menu visability when a menu item is clicked", () => {
+      const menu = document.querySelector("ol.primary > li.menu > a");
+      menu.click();
 
-    it("sets the label to read 'Menu'", () => {
-      const thelabel = document.getElementById('navbar-label');
-      expect(thelabel.innerHTML).toBe('Menu');
-    });
-  });
+      expect(document.querySelector('li.menu').classList).toContain("down");
+      expect(document.querySelector('ol.secondary').classList).not.toContain("hidden");
 
-  describe('once clicked to open', () => {
-    beforeEach(() => document.getElementById('hamburger').click())
+      menu.click();
 
-    it('shows the mobile navigation', () => {
-      const themobilenav = document.getElementById('navbar-mobile-links');
-      expect(themobilenav.style.display).toBe('block');
-    });
-
-    it('sets the icon to a cross', () => {
-      const theicon = document.getElementById('hamburger');
-      expect(theicon.className).toBe('icon-close');
-    });
-
-    it("sets the label to read 'Close'", () => {
-      const thelabel = document.getElementById('navbar-label');
-      expect(thelabel.innerHTML).toBe('Close');
+      expect(document.querySelector('li.menu').classList).toContain("up");
+      expect(document.querySelector('ol.secondary').classList).toContain("hidden");
     });
   });
-
-  describe('search bar opening', () => {
-    describe('when mobile menu already open', () => {
-      beforeEach(() => {
-        document.getElementById('hamburger').click()
-        document.dispatchEvent(new CustomEvent('navigation:search'))
-      })
-
-      it("hides the mobile navigation", () => {
-        const themobilenav = document.getElementById('navbar-mobile-links');
-        expect(themobilenav.style.display).toBe('none');
-      })
-    })
-
-    describe('when mobile menu closed', () => {
-      beforeEach(() => {
-        document.dispatchEvent(new CustomEvent('navigation:search'))
-      })
-
-      it("leaves the mobile navigation closed", () => {
-        const themobilenav = document.getElementById('navbar-mobile-links');
-        expect(themobilenav.style.display).toBe('none');
-      })
-    })
-  })
 });

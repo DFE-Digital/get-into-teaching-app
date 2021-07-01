@@ -125,7 +125,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
     end
   end
 
-  describe "navbar" do
+  describe "navigation" do
     subject { page }
 
     before { visit "/" }
@@ -134,25 +134,10 @@ RSpec.feature "content pages check", type: :feature, content: true do
     let(:navigation_pages) { Pages::Frontmatter.select(:navigation) }
 
     scenario "navigable pages appear in desktop navbar" do
-      navigation_pages.each do |url, frontmatter|
-        page.within "nav .navbar__desktop" do
+      # skip home as we've just navigated to '/'
+      navigation_pages.reject { |k, _v| k == "/home" }.each do |url, frontmatter|
+        page.within "nav ol.primary" do
           is_expected.to have_link frontmatter[:title], href: url
-        end
-      end
-    end
-
-    scenario "navigable pages appear in mobile navbar" do
-      navigation_pages.each do |url, frontmatter|
-        page.within "nav .navbar__mobile" do
-          is_expected.to have_link frontmatter[:title], href: url
-        end
-      end
-    end
-
-    scenario "mobile nav matches desktop nav" do
-      document.css("nav .navbar__desktop a").each do |desktop_link|
-        page.within "nav .navbar__mobile" do
-          is_expected.to have_link desktop_link.text, href: desktop_link["href"]
         end
       end
     end

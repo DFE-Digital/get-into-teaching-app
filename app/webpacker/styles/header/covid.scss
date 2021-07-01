@@ -1,0 +1,53 @@
+.covid {
+  @include font;
+  @include font-size("xsmall");
+  line-height: 1.25;
+  background-color: $black;
+  color: $white;
+  padding: 10px 20px;
+
+  .limit-content-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    @include font-size("xsmall");
+    line-height: 1.25;
+    margin: 0 0 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__header {
+    display: block;
+    font-weight: bold;
+    flex-grow: 1;
+  }
+
+  &__close {
+    background: url("/packs/media/images/icon-close-4b00d0952ffd57a191ae46fdf62e895d.svg");
+    display: block;
+    width: 44px;
+    height: 44px;
+    background-size: 22px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    margin-left: 20px;
+  }
+
+  a {
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:focus {
+      color: $black;
+    }
+  }
+}

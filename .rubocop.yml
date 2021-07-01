@@ -1,3 +1,4 @@
+---
 inherit_gem:
   rubocop-govuk:
     - config/default.yml
@@ -13,7 +14,7 @@ AllCops:
     - db/schema.rb
     - bin/*
     - node_modules/**/*
-    - spec/models/wizard/**/* # Separate PR splits this out into gem
+    - spec/models/wizard/**/*  # Separate PR splits this out into gem
 
 Capybara/FeatureMethods:
   Enabled: false
@@ -45,6 +46,9 @@ RSpec/ImplicitSubject:
   Enabled: false
 
 Style/SignalException:
+  Enabled: false
+
+Style/EmptyMethod:
   Enabled: false
 
 Style/ClassVars:

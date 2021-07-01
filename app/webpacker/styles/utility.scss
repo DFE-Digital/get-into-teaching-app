@@ -100,19 +100,19 @@ $chevron-direction-map: (
 
 /* stylelint-disable */
 .hide-on-desktop {
-  @include mq($from: tablet) {
+  @include mq($from: desktop) {
     display: none !important;
   }
 }
 
 .hide-on-tablet {
-  @include mq($until: tablet) {
+  @include mq($from: tablet, $until: desktop) {
     display: none !important;
   }
 }
 
 .hide-on-mobile {
-  @include mq($until: mobile) {
+  @include mq($until: tablet) {
     display: none !important;
   }
 }

@@ -13,18 +13,23 @@ RSpec.describe Pages::Navigation do
     }
   end
 
-  let(:secondary_nav) do
+  let(:page_five_subpages) do
     {
       "/page-five/part-1" => { title: "Page five: part 1", navigation: 5.1 },
       "/page-five/part-2" => { title: "Page five: part 2", navigation: 5.2 },
       "/page-five/part-3" => { title: "Page five: part 3", navigation: 5.3 },
+    }
+  end
+
+  let(:page_six_subpages) do
+    {
       "/page-six/part-1" => { title: "Page six: part 1", navigation: 6.1 },
       "/page-six/part-2" => { title: "Page six: part 2", navigation: 6.2 },
       "/page-six/part-3" => { title: "Page six: part 3", navigation: 6.3 },
     }
   end
 
-  let(:nav) { primary_nav.merge(secondary_nav) }
+  let(:nav) { primary_nav.merge(page_five_subpages, page_six_subpages) }
   let(:actual_pages) { subject.map(&:path) }
 
   describe "delegation" do
@@ -62,13 +67,14 @@ RSpec.describe Pages::Navigation do
   end
 
   describe Pages::Navigation::Node do
+    let(:outer_navigation) { Pages::Navigation.new }
     let(:path) { "/an-amazing-page" }
     let(:title) { "Page five" }
     let(:navigation) { 5 }
     let(:menu) { true }
     let(:front_matter) { { title: title, navigation: navigation, menu: menu } }
 
-    subject { described_class.new(path, front_matter) }
+    subject { described_class.new(outer_navigation, path, front_matter) }
 
     specify "assigns the path" do
       expect(subject.path).to eql(path)
@@ -84,6 +90,28 @@ RSpec.describe Pages::Navigation do
 
     specify "assigns the menu flag" do
       expect(subject.menu?).to eql(menu)
+    end
+
+    context "when the navigation path is overridden" do
+      let(:custom_navigation_path) { "/sales" }
+      let(:front_matter) { { title: title, navigation: navigation, menu: menu, navigation_path: custom_navigation_path } }
+
+      subject { described_class.new(outer_navigation, path, front_matter) }
+
+      specify "assigns the custom path to :path attr" do
+        expect(subject.path).to eql(custom_navigation_path)
+      end
+    end
+
+    context "when the navigation title is overridden" do
+      let(:custom_navigation_title) { "January sales!" }
+      let(:front_matter) { { title: title, navigation: navigation, menu: menu, navigation_title: custom_navigation_title } }
+
+      subject { described_class.new(outer_navigation, path, front_matter) }
+
+      specify "assigns the custom path to :path attr" do
+        expect(subject.title).to eql(custom_navigation_title)
+      end
     end
 
     context "when front matter is incomplete" do
@@ -119,10 +147,24 @@ RSpec.describe Pages::Navigation do
 
       examples.each do |path, expected|
         specify "path '#{path}' should #{expected ? '' : 'not '}be root" do
-          node = described_class.new(path, {})
+          node = described_class.new(outer_navigation, path, {})
 
           expect(node.root?).to eql(expected)
         end
+      end
+    end
+
+    describe "#children" do
+      let(:nav) { Pages::Navigation.new(page_five_subpages.merge(page_six_subpages)) }
+      subject { described_class.new(nav, "/page-five", { title: "Five", rank: 5, menu: true }) }
+
+      specify "contains the right number of children" do
+        expect(subject.children.size).to eql(page_five_subpages.size)
+      end
+
+      specify "contains only the nodes that start with the same path" do
+        expect(subject.children.map(&:path)).to all(start_with("/page-five"))
+        expect(subject.children.map(&:rank)).to all(be_in(5..6))
       end
     end
   end

@@ -15,7 +15,7 @@ module Pages
     def initialize(pages = Pages::Frontmatter.list)
       @nodes = pages
         .select { |_p, fm| fm.key?(:navigation) }
-        .map { |p, fm| Node.new(p, fm) }
+        .map { |p, fm| Node.new(self, p, fm) }
     end
 
     def all_pages
@@ -27,18 +27,14 @@ module Pages
     end
 
     class Node
-      attr_reader :path, :title, :rank
+      attr_reader :navigation, :path, :title, :rank
 
-      def initialize(path, front_matter)
-        @path = path
+      def initialize(navigation, path, front_matter)
+        @navigation = navigation
+        @path = front_matter[:navigation_path] || path
 
         front_matter.tap do |fm|
-          @title = fm.fetch(:title) do
-            Rails.logger.warn("page #{path} has no title")
-
-            nil
-          end
-
+          @title = fm[:navigation_title] || fm[:title] || (Rails.logger.warn("page #{path} has no title") && nil)
           @rank  = fm.fetch(:navigation, nil)
           @menu  = fm.fetch(:menu, false)
         end
@@ -46,6 +42,10 @@ module Pages
 
       def root?
         path !~ %r{\A/.*/(\S+)\z}
+      end
+
+      def children
+        navigation.all_pages.select { |page| page.path.start_with?(path) && page.path != path }
       end
 
       def menu?

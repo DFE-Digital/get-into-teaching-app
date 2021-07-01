@@ -1,0 +1,53 @@
+.logo-wrapper {
+  // background-color: thistle;
+
+  z-index: 0;
+  overflow: hidden;
+  top: 8px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: block;
+
+  a {
+    text-decoration: none;
+    display: block;
+
+    &:focus {
+      &:before {
+        content: "";
+        display: block;
+        background: $yellow;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+      }
+    }
+  }
+
+  &__image {
+    @include rotated-block;
+    background-color: $green-dark-90;
+    z-index: 1000;
+    margin: 1em 1em 0 -.5em;
+
+    img {
+      padding: 1.2em;
+      transform: rotate(3deg);
+    }
+  }
+}
+
+.dfe-logo {
+  top: 4px;
+  flex-shrink: 0;
+
+  img {
+    margin-top: .5em;
+    width: 100%;
+  }
+}

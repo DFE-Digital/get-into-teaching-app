@@ -1,0 +1,117 @@
+@import "accessible-autocomplete";
+
+html.js-enabled {
+  .extra-navigation__search-fallback {
+    display: none;
+  }
+}
+
+.autocomplete__option {
+  padding-left: 1em;
+
+  &:hover,
+  &:focus {
+    p,
+    h3 {
+      color: $white;
+    }
+  }
+}
+
+.extra-navigation {
+  background-color: $grey;
+  border-bottom: 1px solid $green;
+  padding: .25em 0;
+  //font-weight: bold;
+  margin-bottom: 1em;
+
+  @include mq($from: desktop) {
+    margin: 0;
+    padding: 0;
+    padding-right: 2em;
+    border-bottom: none;
+  }
+
+  .fas {
+    padding-left: .5em;
+    color: $grey-dark;
+  }
+
+  .extra-navigation__search {
+    padding: 0;
+    position: relative;
+    min-width: 240px;
+
+    input {
+      @include reset;
+      padding: 0 1em;
+
+      background-color: white;
+      border: 0;
+      height: 2.5em;
+      width: 110%;
+      font-size: .9rem;
+    }
+  }
+
+  &.hide-on-mobile.hide-on-tablet {
+    ul.extra-navigation__list {
+      margin: .4em auto;
+    }
+  }
+
+  ul.extra-navigation__list {
+    // @include font-size("xsmall");
+    font-size: .9rem;
+
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+
+    li.extra-navigation__link {
+      margin-left: 2em;
+    }
+
+    @include mq($until: tablet) {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+
+    // mobile and tablet
+    @include mq($until: desktop) {
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 0;
+      flex-wrap: wrap;
+      flex-direction: column;
+      text-align: left;
+      background-color: $grey;
+      padding: 1.5em 4em;
+
+      input {
+        margin: 0;
+        background-color: white;
+        width: 110%;
+      }
+
+      li.extra-navigation__link {
+        margin: .4em 0;
+        padding: .6em .2em;
+      }
+    }
+
+    li {
+      a {
+        color: $black;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
