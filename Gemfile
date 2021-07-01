@@ -50,6 +50,8 @@ gem "prometheus-client"
 gem "sentry-rails", ">= 4.3.4"
 gem "sentry-ruby"
 
+gem "skylight", "~> 5.1.1"
+
 gem "text"
 
 gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
