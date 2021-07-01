@@ -1,0 +1,6 @@
+---
+authentication: <%= ENV.fetch('SKYLIGHT_AUTH_TOKEN') %>
+production:
+  env: <%= ENV['SKYLIGHT_ENV'] %>
+deploy:
+  git_sha: <%= ENV['APP_SHA'] %>
