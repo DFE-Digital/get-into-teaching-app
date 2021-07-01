@@ -124,8 +124,6 @@ The pay scale for leading practitioners is between £42,402 and £72,480 dependi
 | London fringe                 | £43,570 | £65,631 |
 | The rest of England and Wales | £42,402 | £64,461 |
 
-In 2020/21, the average salary for a leading practitioner was £56,400.
-
 ### Headteachers
 
 Headteachers lead, motivate and manage staff.
