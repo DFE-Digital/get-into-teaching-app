@@ -66,6 +66,8 @@ As you progress in your teaching career, it's possible to move up through these 
 | London fringe                 | £26,948 | £42,780 |
 | The rest of England and Wales | £25,714 | £41,604 |
 
+In 2020/21, the average salary for a primary school teacher was £36,900. The average salary for a secondary school teacher was £39,900.
+
 ### Holidays
 
 You'll get more days than people in many other professions. Full-time teachers work for 195 days per year in school.
@@ -134,6 +136,8 @@ The pay scale for a headteacher is between £47,735 to £125,098 depending on wh
 | Outer London                  | £51,082 | £120,513 |
 | London fringe                 | £48,901 | £118,356 |
 | The rest of England and Wales | £47,735 | £117,197 |
+
+In 2020/21, the average salary for a headteacher was £73,500.
 
 #### Other leadership team positions
 
