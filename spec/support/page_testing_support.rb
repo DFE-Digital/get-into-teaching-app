@@ -44,6 +44,7 @@ class LinkChecker
     www.exetermathematicsschool.ac.uk
     www.ringwood.hants.sch.uk
     www.sjctsa.co.uk
+    tommyflowersscitt.co.uk
   ].freeze
 
   attr_reader :page, :document
