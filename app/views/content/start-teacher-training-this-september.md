@@ -13,7 +13,7 @@ right_column:
       text: |
        Get tips from our experts on making a strong application.  
       link_text: "Sign up"
-      link_target: "/start-teacher-training-this-september"
+      link_target: "https://us02web.zoom.us/webinar/register/8016246210418/WN_HaeN54dwSlOVQParj9XWQg"
       icon: "icon-calendar"
       hide_on_mobile: No
       hide_on_tablet: No
