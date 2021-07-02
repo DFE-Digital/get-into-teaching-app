@@ -7,6 +7,7 @@ module Callbacks
 
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
+    around_action :set_time_zone, only: %i[show update]
 
     layout "registration"
 
@@ -29,6 +30,14 @@ module Callbacks
     end
 
   private
+
+    def set_time_zone
+      old_time_zone = Time.zone
+      Time.zone = "London"
+      yield
+    ensure
+      Time.zone = old_time_zone
+    end
 
     def step_path(step = params[:id], urlparams = {})
       callbacks_step_path step, urlparams

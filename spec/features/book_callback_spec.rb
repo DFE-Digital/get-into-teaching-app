@@ -5,8 +5,8 @@ RSpec.feature "Book a callback", type: :feature do
 
   let(:quota) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
-      startAt: DateTime.now.utc + 2.hours,
-      endAt: DateTime.now.utc + 3.hours,
+      startAt: DateTime.new(2099, 6, 1, 10),
+      endAt: DateTime.new(2099, 6, 1, 11),
     )
   end
 
@@ -41,7 +41,8 @@ RSpec.feature "Book a callback", type: :feature do
 
     expect(page).to have_text "Choose a time for your callback"
     fill_in "Phone number", with: "123456789"
-    select_first_option "Select your preferred day and time for a callback"
+    # Select time in local time zone (London)
+    select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
     click_on "Next Step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -86,7 +87,8 @@ RSpec.feature "Book a callback", type: :feature do
 
     expect(page).to have_text "Choose a time for your callback"
     expect(find_field("Phone number").value).to eq(response.address_telephone)
-    select_first_option "Select your preferred day and time for a callback"
+    # Select time in local time zone (London)
+    select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
     click_on "Next Step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -124,7 +126,8 @@ RSpec.feature "Book a callback", type: :feature do
     click_on "Next Step"
     expect(page).to have_text "Enter a valid phone number"
     fill_in "Phone number", with: "123456789"
-    select_first_option "Select your preferred day and time for a callback"
+    # Select time in local time zone (London)
+    select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
     click_on "Next Step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -149,9 +152,5 @@ RSpec.feature "Book a callback", type: :feature do
     fill_in "First name", with: first_name if first_name
     fill_in "Last name", with: last_name if last_name
     fill_in "Email address", with: email if email
-  end
-
-  def select_first_option(field_label)
-    find_field(field_label).first("option").select_option
   end
 end
