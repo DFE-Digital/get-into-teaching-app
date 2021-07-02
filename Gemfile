@@ -41,14 +41,14 @@ gem "faraday_middleware"
 
 gem "dotenv-rails", ">= 2.7.6"
 
-gem "govuk_design_system_formbuilder", ">= 2.7.1"
+gem "govuk_design_system_formbuilder", ">= 2.7.2"
 
 gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 4.3.4"
-gem "sentry-ruby"
+gem "sentry-rails", ">= 4.6.0"
+gem "sentry-ruby", "~> 4.6.0"
 
 gem "skylight", "~> 5.1.1"
 
@@ -73,7 +73,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 3.14.0" # FIXME: stop gap fix but we should relint the codebase
 
   # Static security scanner
-  gem "brakeman", require: false
+  gem "brakeman", "~> 5.0.4", require: false
 
   # Debugging
   gem "pry-byebug"
@@ -109,7 +109,7 @@ group :rolling, :preprod, :userresearch, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"
-  gem "rails_semantic_logger", ">= 4.5.0"
+  gem "rails_semantic_logger", ">= 4.6.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
