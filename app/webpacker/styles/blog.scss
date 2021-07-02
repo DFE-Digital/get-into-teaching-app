@@ -1,3 +1,40 @@
+.popular-blog-tags {
+  background-color: $grey;
+  padding: 0 1.5em;
+
+  @include mq($from: tablet) {
+    width: 100%;
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: .4em;
+    padding: 1em 0;
+    margin: 0;
+
+    li {
+      background-color: $blue;
+      color: $white;
+      padding: .6em;
+
+      @include font-size(xsmall);
+
+      &:hover {
+        background-color: lighten($blue, 5%);
+      }
+    }
+
+    // FIXME: this can go once Safari supports gap in flex
+    @include safari-only {
+      li + li {
+        margin-left: .4em;
+      }
+    }
+  }
+}
+
 ol.blog-index {
   list-style: none;
   padding-left: 0;
