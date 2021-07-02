@@ -5,6 +5,7 @@
     "@rails/webpacker": "5.4.0",
     "@stimulus/polyfills": "^2.0.0",
     "accessible-autocomplete": "^2.0.3",
+    "flatpickr": "^4.6.9",
     "govuk-frontend": "^3.11.0",
     "is-touch-device": "^1.0.1",
     "js-cookie": "^2.2.1",
