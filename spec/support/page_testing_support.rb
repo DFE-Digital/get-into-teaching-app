@@ -45,6 +45,7 @@ class LinkChecker
     www.ringwood.hants.sch.uk
     www.sjctsa.co.uk
     tommyflowersscitt.co.uk
+    www.nett.org.uk
   ].freeze
 
   attr_reader :page, :document
