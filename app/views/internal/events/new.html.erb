@@ -36,18 +36,20 @@
     <% end %>
   <% end %>
 
-  <%= render "form/govuk_error_message", label: "Start at", field_errors: @event.errors[:start_at] do %>
-    <%= f.datetime_field :start_at,
-                         max: Date.new(9999, 01, 01),
-                         class: class_names("datetime", "govuk-input", { "govuk-input--error": @event.errors[:start_at].any? }),
-                         data: { "internal-events-target": "startAt" } %>
-  <% end %>
-  <%= render "form/govuk_error_message", label: "End at", field_errors: @event.errors[:end_at] do %>
-    <%= f.datetime_field :end_at,
-                         max: Date.new(9999, 01, 01),
-                         class: class_names("datetime", "govuk-input",
-                                            { "govuk-input--error": @event.errors[:end_at].any? }) %>
-  <% end %>
+  <label class="govuk-label">Event dates</label>
+  <span class="govuk-hint">
+    Input in the format: DD/MM/YYYY HH:MM (e.g., 01/07/2021 17:00), or click to use the selector</span>
+
+  <%= f.govuk_text_field :start_at,
+                         label: { text: "Start at" },
+                         width: 'one-third',
+                         class: "flatpickr-enhanced-field",
+                         data: { "internal-events-target": "startAt" }%>
+
+  <%= f.govuk_text_field :end_at,
+                         label: { text: "End at" },
+                         width: 'one-third',
+                         class: "flatpickr-enhanced-field" %>
 
   <%= f.govuk_text_field :readable_id,
                          label: { text: 'Event partial URL' },

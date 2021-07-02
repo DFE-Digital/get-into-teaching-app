@@ -208,8 +208,8 @@ describe Internal::EventsController do
           assert_response :success
           expect(css_select("#internal_event_id").first[:value]).to be_nil
           expect(css_select("#internal-event-readable-id-field").first[:value]).to be_nil
-          expect(css_select("#internal_event_start_at").first[:value]).to be_nil
-          expect(css_select("#internal_event_end_at").first[:value]).to be_nil
+          expect(css_select("#internal-event-end-at-field").first[:value]).to be_nil
+          expect(css_select("#internal-event-end-at-field").first[:value]).to be_nil
         end
       end
 

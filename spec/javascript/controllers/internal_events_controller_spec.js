@@ -27,7 +27,7 @@ describe('InternalEventsController', () => {
       beforeEach(
         () =>
           (document.getElementById('internal_event_start_at').value =
-            '2021-05-15T10:51')
+            '2021-05-15 10:51')
       );
 
       describe('name', () => {

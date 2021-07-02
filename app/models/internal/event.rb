@@ -45,11 +45,7 @@ module Internal
     validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
     validates :scribble_id, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { online_event? }
     validates :venue_type, inclusion: { in: VENUE_TYPES.values }
-    validates_each :start_at, :end_at do |record, attr, value|
-      unless value.nil?
-        record.errors.add attr, "Must be in the future" if value <= Time.zone.now
-      end
-    end
+    validate :dates_in_future
     validate :end_after_start
     validate :existing_building_present
 
@@ -138,6 +134,17 @@ module Internal
 
       if end_at <= start_at
         errors.add(:end_at, "Must be after the start date")
+      end
+    end
+
+    def dates_in_future
+      date_attributes = %i[start_at end_at]
+
+      date_attributes.each do |attribute_name|
+        attribute_value = send(attribute_name)
+        if attribute_value.present? && attribute_value <= Time.zone.now
+          errors.add(attribute_name, "Must be in the future")
+        end
       end
     end
 
