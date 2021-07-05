@@ -1,14 +1,21 @@
 ---
 title: How to fund your teacher training
+author: Anon
 date: "2020-11-06"
 images:
   header_image: "media/images/content/hero-images/0013.jpg"
 description: |-
   There are plenty of funding options available to support you during your teacher training year. You can access Tuition Fee and Maintenance Loans regardless of whether or not you have an existing student loan and you will only begin to repay these once you're earning more than £27,295.
 tags:
+  - salaries
+  - bursary
+  - bursaries
   - funding
-  - tuition fees
+  - maintenance loan
+  - tuition fee
   - financial support
+  - student finance
+  - scholarship
 ---
 
 $header_image$
