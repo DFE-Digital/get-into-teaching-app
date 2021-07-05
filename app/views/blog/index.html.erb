@@ -1,15 +1,12 @@
-<ol class="blog-index">
-  <%= content_for :popular_tags do %>
-    <div class="popular-blog-tags container ">
-      <h2>Popular blog tags</h2>
-      <ol class="popular-blog-tags__list">
-        <% Pages::Blog.popular_tags.each do |popular_tag| %>
-          <li><%= link_to(popular_tag, blog_tag_path(popular_tag)) %></li>
-        <% end %>
-      </ol>
-    </div>
-  <% end %>
+<%= content_for :popular_tags do %>
+  <div class="blog-tags-list blog-tags-list--grey blog-tags-list--padded container ">
+    <h2>Popular blog tags</h2>
 
+    <%= render partial: "blog/tag_list", locals: { tags: Pages::Blog.popular_tags } %>
+  </div>
+<% end %>
+
+<ol class="blog-index">
   <% @posts.each do |path, fm| %>
     <li>
       <%= render partial: "blog/post_preview", locals: { path: path, fm: fm } %>

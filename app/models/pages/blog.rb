@@ -1,7 +1,7 @@
 module Pages
   class Blog
     class << self
-      delegate :posts, :popular_tags, to: :instance
+      delegate :posts, :popular_tags, :similar_posts, to: :instance
 
     private
 
@@ -34,6 +34,16 @@ module Pages
         .sort_by { |tag, count| [-count, tag] }
         .map { |tag, _count| tag }
         .first(limit)
+    end
+
+    def similar_posts(post, limit = 3)
+      tags = post.frontmatter.tags
+
+      posts
+        .reject { |path, _fm| path == post.path }
+        .sort_by { |_path, fm| -(tags & fm[:tags]).size }
+        .first(limit)
+        .to_h
     end
   end
 end

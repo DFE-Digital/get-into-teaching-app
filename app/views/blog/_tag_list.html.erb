@@ -1,0 +1,5 @@
+<ol class="blog-tags-list">
+  <% tags.each do |popular_tag| %>
+    <li><%= link_to(popular_tag, blog_tag_path(popular_tag)) %></li>
+  <% end %>
+</ol>

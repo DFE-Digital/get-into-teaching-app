@@ -1,6 +1,11 @@
-.popular-blog-tags {
-  background-color: $grey;
-  padding: 0 1.5em;
+.blog-tags-list {
+  &--grey {
+    background-color: $grey;
+  }
+
+  &--padded {
+    padding: .5em 1.5em 1em;
+  }
 
   @include mq($from: tablet) {
     width: 100%;
@@ -11,8 +16,8 @@
     flex-wrap: wrap;
     list-style: none;
     gap: .4em;
-    padding: 1em 0;
     margin: 0;
+    padding-left: 0;
 
     li {
       background-color: $blue;
@@ -106,5 +111,16 @@ ol.blog-index {
     margin-top: 2em;
     padding: 1em;
     color: darken($grey-dark, 5%); // nudge to AAA
+  }
+
+  footer {
+    h2,
+    h3 {
+      padding-left: 0;
+    }
+
+    h3 {
+      margin: 2em 0 .5em;
+    }
   }
 }

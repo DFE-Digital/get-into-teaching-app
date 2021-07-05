@@ -18,6 +18,21 @@
           </header>
 
           <%= yield %>
+
+          <footer>
+            <h2>Related to this article</h2>
+            <div class="blog-tags-list container ">
+              <h3>Tags</h3>
+              <%= render partial: "blog/tag_list", locals: { tags: @front_matter["tags"] } %>
+            </div>
+
+            <h3>Similar articles</h3>
+            <ul>
+              <% Pages::Blog.similar_posts(@post).each do |path, fm| %>
+                <li><%= link_to(fm[:title], path) %></li>
+              <% end %>
+            </ul>
+          </footer>
         </article>
       </section>
     </main>

@@ -62,4 +62,39 @@ RSpec.describe Pages::Blog do
       end
     end
   end
+
+  describe "#similar_posts" do
+    let(:origin_tags) { %w[june july] }
+    let(:origin_path) { :f }
+    let(:origin_fm) { OpenStruct.new(tags: origin_tags) }
+    let(:origin) { OpenStruct.new(path: origin_path, frontmatter: origin_fm) }
+
+    subject { described_class.new(pages).similar_posts(origin) }
+
+    specify "returns pages that have overlapping tags" do
+      tags = subject.values.map { |fm| fm[:tags] }
+
+      tags.each do |tags_per_similar_post|
+        expect((tags_per_similar_post & origin_tags).size).to be > 0
+      end
+    end
+
+    specify "orders by the number of overlapping tags" do
+      # :i has one overlap (june), :g and :h are have two
+      expect(subject.keys.last).to be(:i)
+    end
+
+    specify "does not include the original post" do
+      expect(subject.keys).not_to include(origin_path)
+    end
+
+    context "when a limit is applied" do
+      let(:limit) { 2 }
+      subject { described_class.new(pages).similar_posts(origin, limit) }
+
+      specify "only the right number of posts are returned" do
+        expect(subject.size).to be(limit)
+      end
+    end
+  end
 end
