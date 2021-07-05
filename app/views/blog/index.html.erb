@@ -3,7 +3,7 @@
     <div class="popular-blog-tags container ">
       <h2>Popular blog tags</h2>
       <ol class="popular-blog-tags__list">
-        <% most_popular_tags.each do |popular_tag| %>
+        <% Pages::Blog.popular_tags.each do |popular_tag| %>
           <li><%= link_to(popular_tag, blog_tag_path(popular_tag)) %></li>
         <% end %>
       </ol>

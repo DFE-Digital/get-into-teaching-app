@@ -7,11 +7,7 @@ class BlogController < ApplicationController
   def index
     @front_matter = { title: "Get Into Teaching Blog" }
 
-    @posts = Pages::Frontmatter
-      .select_by_path("/blog")
-      .select { |_path, fm| fm[:date] <= Time.zone.today.iso8601 }
-      .sort_by { |_path, fm| fm[:date] }
-      .reverse
+    @posts = Pages::Blog.posts
   end
 
   def show
