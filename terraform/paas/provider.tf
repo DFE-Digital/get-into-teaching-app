@@ -32,7 +32,7 @@ terraform {
     }
     statuscake = {
       source  = "thde/statuscake"
-      version = "1.1.3"
+      version = "1.1.4"
     }
   }
 }
