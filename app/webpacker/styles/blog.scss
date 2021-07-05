@@ -21,6 +21,10 @@
 
       @include font-size(xsmall);
 
+      a {
+        color: $white;
+      }
+
       &:hover {
         background-color: lighten($blue, 5%);
       }
@@ -62,6 +66,14 @@ ol.blog-index {
     border-bottom: 1px solid $grey;
     padding-bottom: 2em;
     margin-bottom: 2em;
+
+    &.list-header {
+      border-bottom: none;
+
+      h1 {
+        margin: 0;
+      }
+    }
   }
 
   h1 {

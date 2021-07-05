@@ -1,14 +1,18 @@
 <ol class="blog-index">
+  <%= content_for :popular_tags do %>
+    <div class="popular-blog-tags container ">
+      <h2>Popular blog tags</h2>
+      <ol class="popular-blog-tags__list">
+        <% most_popular_tags.each do |popular_tag| %>
+          <li><%= link_to(popular_tag, blog_tag_path(popular_tag)) %></li>
+        <% end %>
+      </ol>
+    </div>
+  <% end %>
+
   <% @posts.each do |path, fm| %>
     <li>
-      <h2><%= fm[:title] %></h2>
-      <%= tag.p(format_blog_date(fm[:date])) %>
-      <% if fm[:images].present? %>
-        <%= image_pack_tag(fm[:images]&.values&.first) %>
-      <% end %>
-      <p><%= fm[:description] %></p>
-
-      <%= link_to "Read more", path %>
+      <%= render partial: "blog/post_preview", locals: { path: path, fm: fm } %>
     </li>
   <% end %>
 </ol>

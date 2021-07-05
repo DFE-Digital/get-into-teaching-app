@@ -1,0 +1,10 @@
+<li>
+  <h2><%= fm[:title] %></h2>
+  <%= tag.p(format_blog_date(fm[:date])) %>
+  <% if fm[:images].present? %>
+    <%= image_pack_tag(fm[:images]&.values&.first) %>
+  <% end %>
+  <p><%= fm[:description] %></p>
+
+  <%= link_to "Read more", path %>
+</li>
