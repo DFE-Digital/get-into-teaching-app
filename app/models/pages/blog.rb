@@ -29,6 +29,7 @@ module Pages
     def popular_tags(limit = 5)
       posts
         .flat_map { |_path, fm| fm[:tags] }
+        .compact
         .tally
         .sort_by { |tag, count| [-count, tag] }
         .map { |tag, _count| tag }
