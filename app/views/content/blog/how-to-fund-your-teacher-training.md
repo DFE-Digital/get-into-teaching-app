@@ -1,6 +1,5 @@
 ---
 title: How to fund your teacher training
-author: Anon
 date: "2020-11-06"
 images:
   header_image: "media/images/content/hero-images/0013.jpg"

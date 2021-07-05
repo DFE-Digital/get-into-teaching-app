@@ -1,6 +1,5 @@
 ---
 title: How to apply for teacher training
-author: Anon
 date: "2021-01-25"
 images:
   header_image: "media/images/content/blog/applying-for-teacher.jpg"
@@ -33,8 +32,8 @@ From effective preparation, to submitting your application, we’ve broken down 
 
 Although different training providers may have specific recruitment criteria, there are some basic eligibility requirements you’ll need to meet to become a qualified teacher in England. In summary, you’ll need or be working towards:
 
-  * a degree
-  * GCSE grade C / 4 in English and maths — and a science subject for primary trainees
+* a degree
+* GCSE grade C / 4 in English and maths — and a science subject for primary trainees
 
 **[Visit the Get into Teaching website](/)** for more detail, this also includes information if you have overseas qualifications.
 
