@@ -21,7 +21,7 @@ module Pages
     def posts(tag = nil)
       return @posts unless tag
 
-      @posts.select { |_path, fm| tag.in?(fm[:tags]) }
+      @posts.select { |_path, fm| tag.in?(fm[:tags].map(&:parameterize)) }
     end
 
     # return the most-frequently used tags, ordered by frequency then
