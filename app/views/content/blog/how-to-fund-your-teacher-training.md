@@ -6,7 +6,7 @@ images:
   header_image: "media/images/content/hero-images/0013.jpg"
 description: |-
   There are plenty of funding options available to support you during your teacher training year. You can access Tuition Fee and Maintenance Loans regardless of whether or not you have an existing student loan and you will only begin to repay these once you're earning more than £27,295.
-tags:
+keywords:
   - salaries
   - bursary
   - bursaries
@@ -16,6 +16,12 @@ tags:
   - financial support
   - student finance
   - scholarship
+tags:
+  - financial support
+  - maintenance loans
+  - funding
+  - bursaries
+  - salaries
 ---
 
 $header_image$

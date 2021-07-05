@@ -6,11 +6,15 @@ images:
   header_image: "media/images/content/blog/habiba-cabdi-teacher-applicant.png"
 description: |-
   Habiba Cabdi offered to speak to Teacher Training Adviser, Jane Wilkinson, about the challenges faced by someone who lives with additional needs and their progress towards achieving the dream of becoming a teacher.
-tags:
+keywords:
   - hard of hearing
   - deaf
   - deafness
   - mentor
+  - support
+tags:
+  - mentors
+  - deafness
   - support
 ---
 

@@ -6,13 +6,18 @@ images:
   header_image: "media/images/content/blog/school-aisle.jpg"
 description: |-
   Felix offered to speak to Teacher Training Adviser, Jane Wilkinson, about the challenges faced by someone who lives with additional needs and their progress towards achieving the dream of becoming a teacher.
-tags:
+keywords:
   - autism
   - autistic
   - neurodiversity
   - personal statement
   - support
   - adviser
+tags:
+  - autism
+  - neurodiversity
+  - personal statements
+  - teacher training advisers
 ---
 
 *Felix offered to speak to Teacher Training Adviser, Jane Wilkinson, about the challenges faced by someone who lives with additional needs and their progress towards achieving the dream of becoming a teacher.*

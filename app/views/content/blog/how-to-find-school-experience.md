@@ -6,13 +6,16 @@ images:
   header_image: "media/images/content/blog/schoolyard.jpg"
 description: |-
   Experiencing life in a school and a classroom can help you to decide whether teaching is right for you.
-tags:
+keywords:
   - school experience
   - classroom
   - right for me
   - what's school like
   - day in the life
   - day to day
+tags:
+  - school experience
+  - life as a teacher
 ---
 
 $header_image$

@@ -6,7 +6,7 @@ images:
   header_image: "media/images/content/blog/applying-for-teacher.jpg"
 description: |-
   From effective preparation, to submitting your application, we’ve broken down the whole process into manageable steps, so you can see exactly what’s involved.
-tags:
+keywords:
   - teacher training
   - apply
   - course
@@ -16,6 +16,11 @@ tags:
   - personal statement
   - support
   - adviser
+tags:
+  - teacher training advisers
+  - personal statements
+  - qualifications
+  - applying for teacher training
 ---
 
 $header_image$
