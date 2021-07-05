@@ -24,7 +24,7 @@ Growing up as a profoundly deaf child, I had a positive upbringing in my mainstr
 
 ## 2. How did you find the application process?
 
-The application process went smoothly thanks to the help of my mentor, Ellie, from [Get into Teaching](https://beta-adviser-getintoteaching.education.gov.uk/). She was understanding and motivated me to finish applying! My top tips for making a successful application are — be yourself! Show your authentic self, and patience is key!
+The application process went smoothly thanks to the help of my mentor, Ellie, from [Get into Teaching](https://adviser-getintoteaching.education.gov.uk/). She was understanding and motivated me to finish applying! My top tips for making a successful application are — be yourself! Show your authentic self, and patience is key!
 
 ## 3. If someone asked, ‘Should I become a Teacher?’, what might you advise?
 

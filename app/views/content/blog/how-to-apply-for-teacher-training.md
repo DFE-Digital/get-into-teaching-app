@@ -49,12 +49,12 @@ Use the Department for Education’s **‘[find postgraduate teacher training co
 
 ### 2. Write your personal statement
 
-The personal statement is your chance to make your application stand out by discussing your experience, knowledge and skills, and demonstrating how they’re transferable to the classroom. **[Read our advice on how to make yourself stand out](https://dfegit-uat.education.gov.uk/how-to-apply/apply/personal-statement)**.
+The personal statement is your chance to make your application stand out by discussing your experience, knowledge and skills, and demonstrating how they’re transferable to the classroom. **[Read our advice on how to make yourself stand out](https://getintoteaching.education.gov.uk/how-to-apply/apply/personal-statement)**.
 
 ### 3. Arrange your references
 
-Your referees can tell training providers about your qualities and abilities, so it’s important they know you well. **[Find Visit the Get into Teaching website](https://dfegit-uat.education.gov.uk/how-to-apply/apply/arranging-your-references)** to find out more about the requirements for references.
+Your referees can tell training providers about your qualities and abilities, so it’s important they know you well. **[Find Visit the Get into Teaching website](https://getintoteaching.education.gov.uk/how-to-apply/apply/arranging-your-references)** to find out more about the requirements for references.
 
 ### 4. Apply for teacher training
 
-You can apply via UCAS, or by using a new GOV.UK service called Apply for teacher training. [We’ll help you choose the service that’s right for you](https://dfegit-uat.education.gov.uk/apply-for-teacher-training).
+You can apply via UCAS, or by using a new GOV.UK service called Apply for teacher training. [We’ll help you choose the service that’s right for you](https://www.gov.uk/apply-for-teacher-training).
