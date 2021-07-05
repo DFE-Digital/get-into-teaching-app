@@ -68,7 +68,8 @@ ol.blog-index {
     margin-bottom: 2em;
 
     &.list-header {
-      border-bottom: none;
+      border-bottom: 0;
+      margin-bottom: 0;
 
       h1 {
         margin: 0;
