@@ -24,7 +24,7 @@ Growing up as a profoundly deaf child, I had a positive upbringing in my mainstr
 
 ## 2. How did you find the application process?
 
-The application process went smoothly thanks to the help of my mentor, Ellie, from [Get into Teaching](https://adviser-getintoteaching.education.gov.uk/). She was understanding and motivated me to finish applying! My top tips for making a successful application are — be yourself! Show your authentic self, and patience is key!
+The application process went smoothly thanks to the help of my mentor, Ellie, from [Get into Teaching](/tta-service). She was understanding and motivated me to finish applying! My top tips for making a successful application are — be yourself! Show your authentic self, and patience is key!
 
 ## 3. If someone asked, ‘Should I become a Teacher?’, what might you advise?
 
@@ -34,4 +34,4 @@ Habiba will begin her teacher training course in Sept 2021. We wish her all the 
 
 ---
 
-All our Teacher Training Advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Find out more and sign up](https://beta-adviser-getintoteaching.education.gov.uk/).
+All our Teacher Training Advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Find out more and sign up](/).

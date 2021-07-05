@@ -78,7 +78,7 @@ Once you've accepted your place on a non-salaried teacher training course, you c
 
 Tax-free bursaries or scholarships of up to £26,000 are available for some subjects. Your eligibility, and the amount you can expect to receive, will depend on the subject you choose to teach and your degree classification or highest relevant academic qualification.
 
-Find out more on the [Get into Teaching website](https://getintoteaching.education.gov.uk).
+Find out more on the [Get into Teaching website](/).
 
 > It is doable! I’m doing my primary PGCE (no bursary). I’m a single parent of a 4yr old boy… I live off maintenance loan and work at weekends… don’t get me wrong its tough but I know it’s only a year and will be all worth it!
 >
@@ -86,7 +86,7 @@ Find out more on the [Get into Teaching website](https://getintoteaching.educati
 
 ### Further help and support
 
-Our expert advisers can help you to make a plan and find the best funding options for your circumstances. [Register to use the service](https://adviser-getintoteaching.education.gov.uk/).
+Our expert advisers can help you to make a plan and find the best funding options for your circumstances. [Register to use the service](/tta-service).
 
 [^1]:
     If you do not already have a student loan, or you took one out on or after 1 September 2012, you are only required to make repayments when you are earning over £27,295. Your repayments will not increase if you take out a loan for teacher training.

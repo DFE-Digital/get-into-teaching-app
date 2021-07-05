@@ -31,15 +31,15 @@ Although different training providers may have specific recruitment criteria, th
   * a degree
   * GCSE grade C / 4 in English and maths — and a science subject for primary trainees
 
-**[Visit the Get into Teaching website](https://getintoteaching.education.gov.uk/)** for more detail, this also includes information if you have overseas qualifications.
+**[Visit the Get into Teaching website](/)** for more detail, this also includes information if you have overseas qualifications.
 
 ### 2. Get one-to-one support from our teaching experts
 
-Our teacher training advisers are all experienced teachers ready to support your journey into teaching. **[Register with us](https://register.getintoteaching.education.gov.uk/register)** to be allocated your very own adviser.
+Our teacher training advisers are all experienced teachers ready to support your journey into teaching. **[Register with us](/tta-service)** to be allocated your very own adviser.
 
 ### 3. Attend a virtual teacher training event
 
-Our free Train to Teach events are the perfect opportunity to find out more about teacher training and receive advice from experts and training providers in your local area. Find an event on the [Get into Teaching website](https://getintoteaching.education.gov.uk/teaching-events).
+Our free Train to Teach events are the perfect opportunity to find out more about teacher training and receive advice from experts and training providers in your local area. Find an event on the [Get into Teaching website](/events).
 
 ## Applying for teacher training
 
@@ -49,11 +49,11 @@ Use the Department for Education’s **‘[find postgraduate teacher training co
 
 ### 2. Write your personal statement
 
-The personal statement is your chance to make your application stand out by discussing your experience, knowledge and skills, and demonstrating how they’re transferable to the classroom. **[Read our advice on how to make yourself stand out](https://getintoteaching.education.gov.uk/how-to-apply/apply/personal-statement)**.
+The personal statement is your chance to make your application stand out by discussing your experience, knowledge and skills, and demonstrating how they’re transferable to the classroom. **[Read our advice on how to make yourself stand out](/steps-to-become-a-teacher)**.
 
 ### 3. Arrange your references
 
-Your referees can tell training providers about your qualities and abilities, so it’s important they know you well. **[Find Visit the Get into Teaching website](https://getintoteaching.education.gov.uk/how-to-apply/apply/arranging-your-references)** to find out more about the requirements for references.
+Your referees can tell training providers about your qualities and abilities, so it’s important they know you well. **[Find Visit the Get into Teaching website](/)** to find out more about the requirements for references.
 
 ### 4. Apply for teacher training
 
