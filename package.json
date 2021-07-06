@@ -6,7 +6,7 @@
     "@stimulus/polyfills": "^2.0.0",
     "accessible-autocomplete": "^2.0.3",
     "flatpickr": "^4.6.9",
-    "govuk-frontend": "^3.11.0",
+    "govuk-frontend": "^3.13.0",
     "is-touch-device": "^1.0.1",
     "js-cookie": "^2.2.1",
     "lazysizes": "^5.3.2",
