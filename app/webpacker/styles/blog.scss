@@ -53,7 +53,16 @@ ol.blog-index {
       @include font-size(medium);
       @include reset;
 
-      margin: 2em 0 1em;
+      a {
+        text-decoration: none;
+        color: $black;
+      }
+    }
+
+    header {
+      border-bottom: 0px;
+      padding-bottom: 0em;
+      margin-bottom: 2em;
     }
   }
 
@@ -71,6 +80,10 @@ ol.blog-index {
     border-bottom: 1px solid $grey;
     padding-bottom: 2em;
     margin-bottom: 2em;
+
+    h1 {
+      margin-bottom: 0;
+    }
 
     &.list-header {
       border-bottom: 0;
@@ -122,5 +135,10 @@ ol.blog-index {
     h3 {
       margin: 2em 0 .5em;
     }
+  }
+
+  .author-date {
+    margin-top: 1rem;
+    @include font-size(small);
   }
 }

@@ -1,10 +1,14 @@
 <li>
-  <h2><%= fm[:title] %></h2>
-  <%= tag.p(format_blog_date(fm[:date])) %>
-  <% if fm[:images].present? %>
-    <%= image_pack_tag(fm[:images]&.values&.first) %>
-  <% end %>
-  <p><%= fm[:description] %></p>
+  <article class="blog">
+    <header>
+      <h2><%= link_to fm[:title], path %></h2>
+      <%= tag.div(format_blog_date(fm[:date]), class: 'author-date') %>
+    </header>
+    <% if fm[:images].present? %>
+      <p><%= image_pack_tag(fm[:images]&.values&.first) %></p>
+    <% end %>
+    <p><%= fm[:description] %></p>
 
-  <%= link_to "Read more", path %>
+    <%= link_to "Read more", path %>
+  </article>
 </li>
