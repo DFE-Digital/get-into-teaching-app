@@ -1,6 +1,5 @@
 ---
 title: How to find school experience
-author: Anon
 date: "2021-04-22"
 images:
   header_image: "media/images/content/blog/schoolyard.jpg"
