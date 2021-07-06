@@ -14,10 +14,7 @@
               <%= tag.div(@front_matter["subtitle"], role: 'doc-subtitle') %>
             <% end %>
 
-            <%= tag.div(class: 'author-date') do %>
-              <%= (format_blog_date(@front_matter["date"])) %> by
-              <%= @front_matter["author"] || "the Department for Education" %>
-            <% end %>
+            <%= render partial: "blog/date_and_author", locals: { front_matter: @front_matter } %>
           </header>
 
           <%= yield %>

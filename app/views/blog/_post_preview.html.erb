@@ -5,13 +5,8 @@
       <% if fm[:subtitle].present? %>
         <div role="doc-subtitle"><%= fm[:subtitle] %></div>
       <% end %>
-      <div class="blog__date">
-        <i>Published</i> <%= format_blog_date(fm[:date]) %>
-      </div>
 
-      <div class="blog__author">
-        <i>By</i> <%= fm[:author] || "the Department for Education" %>
-      </div>
+      <%= render partial: "blog/date_and_author", locals: { front_matter: fm.with_indifferent_access } %>
     </header>
     <% if fm[:images].present? %>
       <p><%= image_pack_tag(fm[:images]&.values&.first) %></p>
