@@ -12,9 +12,7 @@
             <%= tag.h1(@front_matter["title"]) %>
 
             <%= tag.span(format_blog_date(@front_matter["date"])) %>
-            <% if @front_matter.key?("author") %>
-              by <%= tag.span(@front_matter["author"]) %>
-            <% end %>
+              by <%= tag.span(@front_matter["author"] || "the Department for Education") %>
           </header>
 
           <%= yield %>
