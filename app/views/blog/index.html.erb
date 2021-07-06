@@ -8,6 +8,8 @@
 
 <ol class="blog-index">
   <% @posts.each do |path, fm| %>
-    <%= render partial: "blog/post_preview", locals: { path: path, fm: fm } %>
+    <li>
+      <%= render partial: "blog/post_preview", locals: { path: path, fm: fm } %>
+    </li>
   <% end %>
 </ol>
