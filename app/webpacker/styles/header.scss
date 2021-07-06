@@ -12,6 +12,10 @@ body > header {
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
 
+  @include mq($from: tablet) {
+    border-bottom: 1px solid $grey;
+  }
+
   // tablet
   @include mq($from: tablet, $until: desktop) {
     grid-template-columns: max-content 1fr;
