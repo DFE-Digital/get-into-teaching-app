@@ -1,5 +1,6 @@
 ---
 title: How to apply for teacher training
+subtitle: A step-by-step-guide
 date: "2021-01-25"
 images:
   header_image: "media/images/content/blog/applying-for-teacher.jpg"

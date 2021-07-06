@@ -64,6 +64,10 @@ ol.blog-index {
       padding-bottom: 0em;
       margin-bottom: 2em;
     }
+
+    [role="doc-subtitle"] {
+      @include font-size(small);
+    }
   }
 
   li + li {
@@ -135,6 +139,12 @@ ol.blog-index {
     h3 {
       margin: 2em 0 .5em;
     }
+  }
+
+  [role="doc-subtitle"] {
+    margin: 0;
+    color: $grey-dark;
+    @include font-size(medium);
   }
 
   .author-date {

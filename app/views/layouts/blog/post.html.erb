@@ -10,6 +10,9 @@
         <article class="markdown blog longform">
           <header>
             <%= tag.h1(@front_matter["title"]) %>
+            <% if @front_matter.key?("subtitle") %>
+              <%= tag.div(@front_matter["subtitle"], role: 'doc-subtitle') %>
+            <% end %>
 
             <%= tag.div(class: 'author-date') do %>
               <%= (format_blog_date(@front_matter["date"])) %> by

@@ -2,6 +2,9 @@
   <article class="blog">
     <header>
       <h2><%= link_to fm[:title], path %></h2>
+      <% if fm[:subtitle].present? %>
+        <div role="doc-subtitle"><%= fm[:subtitle] %></div>
+      <% end %>
       <%= tag.div(format_blog_date(fm[:date]), class: 'author-date') %>
     </header>
     <% if fm[:images].present? %>
