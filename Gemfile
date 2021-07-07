@@ -105,6 +105,12 @@ group :test do
   gem "webmock", ">= 3.12.2"
 end
 
+group :preprod, :rolling do
+  # Look at the metrics from PUMA, needed in staging
+  # Until confident on what metrics it supplies it will not go to prodcution
+  gem "puma-metrics"
+end
+
 group :rolling, :preprod, :userresearch, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
