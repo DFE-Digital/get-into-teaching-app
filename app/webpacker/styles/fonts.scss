@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "HK Grotesk";
+  src:
+    url("../fonts/HKGrotesk-Regular.woff") format("woff"),
+    url("../fonts/HKGrotesk-Regular.woff2") format("woff2");
+
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src:
+    url("../fonts/HKGrotesk-ExtraBold.woff") format("woff"),
+    url("../fonts/HKGrotesk-ExtraBold.woff2") format("woff2");
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src:
+    url("../fonts/HKGrotesk-ExtraBoldItalic.woff") format("woff"),
+    url("../fonts/HKGrotesk-ExtraBoldItalic.woff2") format("woff2");
+
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "HK Grotesk";
+  src:
+    url("../fonts/HKGrotesk-Italic.woff") format("woff"),
+    url("../fonts/HKGrotesk-Italic.woff2") format("woff2");
+
+  font-weight: normal;
+  font-style: italic;
+}
+
+$git-font-family: "HK Grotesk", sans-serif;
+
+$govuk-font-family: $git-font-family;
