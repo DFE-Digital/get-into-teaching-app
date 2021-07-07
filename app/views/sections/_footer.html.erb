@@ -26,7 +26,6 @@
         </a>
       </div>
       <div class="site-footer-top__links-container">
-        <%= link_to("Home", root_path) %>
         <% navigation_resources.each do |resource| %>
           <a href="<%= resource.path %>"><%= resource.title %></a>
         <% end %>
