@@ -2,10 +2,12 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.3",
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@rails/webpacker": "5.4.0",
+    "@rails/webpacker": "^5.4.0",
     "@stimulus/polyfills": "^2.0.0",
     "accessible-autocomplete": "^2.0.3",
+    "cookie": "^0.4.1",
     "flatpickr": "^4.6.9",
+    "glob-parent": "^5.1.2",
     "govuk-frontend": "^3.13.0",
     "is-touch-device": "^1.0.1",
     "js-cookie": "^2.2.1",

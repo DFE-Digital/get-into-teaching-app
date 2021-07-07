@@ -55,7 +55,7 @@ gem "skylight", "~> 5.1.1"
 gem "text"
 
 gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
-gem "redis"
+gem "redis", ">= 4.3.1"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
 gem "view_component", "~> 2.35.0"
