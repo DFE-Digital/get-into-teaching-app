@@ -30,11 +30,11 @@ gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.3.1"
 gem "rinku"
 
-gem "addressable"
+gem "addressable", "~> 2.8.0"
 
 gem "rack-attack"
 
-gem "faraday"
+gem "faraday", "~> 1.5.0"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
@@ -58,7 +58,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.34.0"
+gem "view_component", "~> 2.35.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
