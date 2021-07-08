@@ -12,6 +12,10 @@ body > header {
   grid-template-columns: 1fr;
   grid-auto-rows: auto;
 
+  @include mq($from: tablet) {
+    border-bottom: 1px solid $grey;
+  }
+
   // tablet
   @include mq($from: tablet, $until: desktop) {
     grid-template-columns: max-content 1fr;
@@ -23,6 +27,7 @@ body > header {
 
   @include mq($from: tablet) {
     grid-template-columns: max-content 2fr;
+
     .extra-navigation.hide-on-mobile.hide-on-tablet {
       grid-column: 1/3;
     }

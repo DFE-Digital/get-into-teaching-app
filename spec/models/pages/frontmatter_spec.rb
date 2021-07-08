@@ -68,6 +68,17 @@ RSpec.describe Pages::Frontmatter do
     it { is_expected.to include "/page1" }
   end
 
+  describe ".select_by_path" do
+    let(:wanted_path) { "/subfolder" }
+    subject { described_class.select_by_path(wanted_path, content_dir) }
+
+    before { expect_any_instance_of(described_class).to receive(:select_by_path).and_call_original }
+
+    it "only returns pages that start with the supplied path" do
+      expect(subject.keys).to all(start_with(wanted_path))
+    end
+  end
+
   describe "#find" do
     subject { instance.find page }
 

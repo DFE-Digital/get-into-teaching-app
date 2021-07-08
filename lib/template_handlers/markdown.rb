@@ -65,7 +65,7 @@ module TemplateHandlers
       # want what's inside the capture group
 
       parsed.content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
-        safe_join([cta_component($1), component("quote", $1)].compact)
+        safe_join([cta_component($1), component("quote", $1), image($1)].compact)
       end
     end
     # rubocop:enable Style/PerlBackrefs
@@ -85,6 +85,14 @@ module TemplateHandlers
         type,
         front_matter.dig(type, placeholder),
       ).component
+
+      return unless component
+
+      ApplicationController.render(component, layout: false)
+    end
+
+    def image(placeholder)
+      component = Content::ImageComponent.new(front_matter.dig("images", placeholder))
 
       return unless component
 

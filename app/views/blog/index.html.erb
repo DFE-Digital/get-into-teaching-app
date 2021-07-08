@@ -1,0 +1,15 @@
+<%= content_for :popular_tags do %>
+  <div class="blog-tags-list blog-tags-list--grey blog-tags-list--padded container ">
+    <h2>Popular blog tags</h2>
+
+    <%= render partial: "blog/tag_list", locals: { tags: Pages::Blog.popular_tags } %>
+  </div>
+<% end %>
+
+<ol class="blog-index">
+  <% @posts.each do |path, fm| %>
+    <li>
+      <%= render partial: "blog/post_preview", locals: { path: path, fm: fm } %>
+    </li>
+  <% end %>
+</ol>

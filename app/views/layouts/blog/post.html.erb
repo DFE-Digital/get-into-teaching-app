@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
+
+    <%= render HeaderComponent.new(breadcrumbs: true) %>
+
+    <main role="main" id="main-content">
+      <section class="container">
+        <article class="markdown blog longform">
+          <header>
+            <%= tag.h1(@front_matter["title"]) %>
+            <% if @front_matter.key?("subtitle") %>
+              <%= tag.div(@front_matter["subtitle"], role: 'doc-subtitle') %>
+            <% end %>
+
+            <%= render partial: "blog/date_and_author", locals: { front_matter: @front_matter } %>
+          </header>
+
+          <%= yield %>
+
+          <footer>
+            <h2>Related to this article</h2>
+            <div class="blog-tags-list container ">
+              <h3>Tags</h3>
+              <%= render partial: "blog/tag_list", locals: { tags: @front_matter["tags"] } %>
+            </div>
+
+            <h3>Similar articles</h3>
+            <ul>
+              <% Pages::Blog.similar_posts(@post).each do |path, fm| %>
+                <li><%= link_to(fm[:title], path) %></li>
+              <% end %>
+            </ul>
+          </footer>
+        </article>
+      </section>
+    </main>
+
+    <%= render FooterComponent.new %>
+  <% end %>
+</html>

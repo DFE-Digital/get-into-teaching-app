@@ -1,4 +1,5 @@
 Date::DATE_FORMATS[:govuk] = "%d %B %Y"
+Date::DATE_FORMATS[:govuk_zero_pad] = "%-d %B %Y"
 Date::DATE_FORMATS[:default] = "%d %B %Y"
 Date::DATE_FORMATS[:yearmonth] = "%Y-%m"
 Date::DATE_FORMATS[:humanmonthyear] = "%B %Y"

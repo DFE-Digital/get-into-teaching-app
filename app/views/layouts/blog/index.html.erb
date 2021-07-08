@@ -6,18 +6,16 @@
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
     <main role="main" id="main-content">
-      <section class="container">
-        <article class="markdown disclaimer fullwidth">
-          <% if !@front_matter["image"] %>
-            <%= tag.h1(@front_matter["title"]) %>
-          <% end %>
+      <section class="container blog">
+        <header class="list-header">
+          <%= tag.h1(@front_matter[:title]) %>
+        </header>
 
+        <%= yield :popular_tags %>
+
+        <div class="text-content longform">
           <%= yield %>
-
-          <% @front_matter["content"]&.each do |partial| %>
-            <%= render(partial) %>
-          <% end %>
-        </article>
+        </div>
       </section>
     </main>
 
