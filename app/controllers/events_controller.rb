@@ -67,7 +67,7 @@ private
 
     @display_empty_types = @event_search.type.nil?
     @performed_search = true
-    @events_search_type = params["events_search"]["type"]
+    @events_search_type = params.dig("events_search", "type")
 
     @group_presenter = Events::GroupPresenter.new(search_results, @display_empty_types)
     pages = params.permit(@group_presenter.page_param_names.values)
