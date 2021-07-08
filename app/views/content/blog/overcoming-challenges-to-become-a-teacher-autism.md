@@ -44,6 +44,4 @@ My answer would be: only if it’s right for you! It’s certainly not for every
 
 *Felix will begin their teacher training course in Sept 2021. We wish them all the best for a very successful teaching career.*
 
----
-
 All our Teacher Training Advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Find out more and sign up](/).

@@ -49,4 +49,4 @@ Beyond the classroom, there are other ways to gain valuable experience of workin
 
 To start your request for school experience, head to the [Get school experience service](https://schoolexperience.education.gov.uk/) now.
 
-If you’re a school or training provider that would like to know more about joining the Get school experience service please email: [organise.school-experience@education.gov.uk](mailto:organise.school-experience@education.gov.uk)
+If you’re a school or training provider that would like to know more about joining the Get school experience service please email [organise.school-experience@education.gov.uk](mailto:organise.school-experience@education.gov.uk).

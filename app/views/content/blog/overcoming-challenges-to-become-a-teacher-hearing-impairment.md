@@ -38,6 +38,4 @@ If someone came up to me and asked if they should teach, my answer would be yes 
 
 Habiba will begin her teacher training course in Sept 2021. We wish her all the best for a very successful teaching career.
 
----
-
 All our Teacher Training Advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Find out more and sign up](/).
