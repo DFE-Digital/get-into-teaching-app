@@ -266,9 +266,9 @@ providers:
     email: vivien@e-qualitas.co.uk
   - header: George Abbot SCITT
     link: https://georgeabbottraining.co.uk/courses/
-    name: Lyndsay Cameron
+    name: Joanna Jones
     telephone: '01483 888070'
-    email: lcameron@georgeabbot.surrey.sch.uk
+    email: contactscitt@georgeabbot.surrey.sch.uk
   - header: GLF Schools’ Teacher Training
     link: http://www.glynsurreyscitt.co.uk/846/assessment-only-route
     name: Helen Shaw
