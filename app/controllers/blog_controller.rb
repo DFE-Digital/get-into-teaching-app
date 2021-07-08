@@ -13,7 +13,7 @@ class BlogController < ApplicationController
   def show
     breadcrumb "Blog", blog_index_path
 
-    @post = Pages::Page.find(request.path)
+    @post = Pages::Blog.find(request.path)
 
     render template: @post.template, layout: "layouts/blog/post"
   end

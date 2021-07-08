@@ -18,6 +18,17 @@ RSpec.describe Pages::Blog do
     }
   end
 
+  describe ".find" do
+    before { allow(Pages::Page).to receive(:find).with("/some/template").and_return("/some_template.md") }
+    subject { described_class }
+
+    specify "calls the other method" do
+      described_class.find("/some/template")
+
+      expect(Pages::Page).to have_received(:find).with("/some/template").once
+    end
+  end
+
   describe "#posts" do
     describe "retrieves pages in blog directory by default" do
       subject { described_class.new }
