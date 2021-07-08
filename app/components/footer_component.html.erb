@@ -1,32 +1,45 @@
-<%= render "sections/talk-to-us" %>
-<%= render "sections/feedback_bar" %>
+<% if talk_to_us? %>
+  <%= render Footer::TalkToUsComponent.new %>
+<% end %>
+
+<% if feedback? %>
+  <%= render Footer::FeedbackComponent.new %>
+<% end %>
+
+<% if mailing_list? %>
+  <%= render Footer::MailingListComponent.new %>
+<% end %>
+
+<%= render Footer::VideoPlayerComponent.new %>
+<%= render Footer::CookieAcceptanceComponent.new %>
+
 <footer class="site-footer">
   <div class="site-footer__wrapper limit-content-width">
     <div class="site-footer-top">
       <div class="site-footer-top__social">
         <a href="https://www.facebook.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
-          <%= fab_icon("facebook-f", "icon") %>
+          <%= helpers.fab_icon("facebook-f", "icon") %>
           <span class="visually-hidden">Facebook - opens in a new tab</span>
         </a>
         <a href="https://www.instagram.com/get_into_teaching/" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
-          <%= fab_icon("instagram", "icon") %>
+          <%= helpers.fab_icon("instagram", "icon") %>
           <span class="visually-hidden">Instagram - opens in a new tab</span>
         </a>
         <a href="https://www.linkedin.com/company/9258520?trk=tyah&trkInfo=idx%3A1-1-1%2CtarId%3A1424345327269%2Ctas%3Aget+into+teaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
-          <%= fab_icon("linkedin-in", "icon") %>
+          <%= helpers.fab_icon("linkedin-in", "icon") %>
           <span class="visually-hidden">LinkedIn - opens in a new tab</span>
         </a>
         <a href="https://twitter.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
-          <%= fab_icon("twitter", "icon") %>
+          <%= helpers.fab_icon("twitter", "icon") %>
           <span class="visually-hidden">Twitter - opens in a new tab</span>
         </a>
         <a href="http://www.youtube.com/user/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
-          <%= fab_icon("youtube", "icon") %>
+          <%= helpers.fab_icon("youtube", "icon") %>
           <span class="visually-hidden">Youtube - opens in a new tab</span>
         </a>
       </div>
       <div class="site-footer-top__links-container">
-        <% navigation_resources.each do |resource| %>
+        <% helpers.navigation_resources.each do |resource| %>
           <a href="<%= resource.path %>"><%= resource.title %></a>
         <% end %>
         <%= link_to "Find an event near you", events_path %>
@@ -51,3 +64,7 @@
     </div>
   </div>
 </footer>
+
+<% if @front_matter && @front_matter["lid_pixel_event"] %>
+  <%= tag.span(data: { "controller" => "lid", "lid-action" => "track", "lid-event" => @front_matter["lid_pixel_event"] }) %>
+<% end %>

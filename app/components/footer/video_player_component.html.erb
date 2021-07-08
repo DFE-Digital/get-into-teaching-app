@@ -1,0 +1,24 @@
+<div class="video-overlay" data-video-target="player" data-action="click->video#close">
+  <div class="video-overlay__background">
+  </div>
+  <div class='video-overlay__video-container'>
+    <div class="video-overlay__video-container__wrapper">
+      <iframe data-video-target="iframe"
+              title="Get Into Teaching Video Player"
+              width="800"
+              height="450"
+              src=""
+              alt="Watch a video for more information about becoming a teacher"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              playsinline="false">
+      </iframe>
+    </div>
+    <button id="close-button" class="video-overlay__video-container__dismiss" data-video-target="close" data-action="click->video#close">
+      <div class="icon-video-close"><span class="visually-hidden">Close video</span></div>
+    </button>
+    <a class="visually-hidden" href="#">
+      Close
+    </a>
+  </div>
+</div>
