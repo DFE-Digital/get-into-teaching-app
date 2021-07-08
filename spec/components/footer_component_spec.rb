@@ -54,4 +54,13 @@ describe FooterComponent, type: "component" do
       expect(page).not_to have_css(mailing_list_selector)
     end
   end
+
+  context "when a lid_pixel_event is supplied" do
+    let(:event) { "Success" }
+    subject! { render_inline(described_class.new(lid_pixel_event: event)) }
+
+    specify "renders the right analytics element" do
+      expect(rendered_component).to include_analytics("lid", { action: "track", event: event })
+    end
+  end
 end

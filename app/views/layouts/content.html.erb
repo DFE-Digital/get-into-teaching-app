@@ -87,7 +87,7 @@
       </section>
     </main>
 
-    <%= render FooterComponent.new %>
+    <%= render FooterComponent.new(lid_pixel_event: @front_matter["lid_pixel_event"]) %>
     <% end %>
 </html>
 
