@@ -9,7 +9,7 @@ SecureHeaders::Configuration.default do |config|
 
   tta_service_hosts = []
   tta_service_hosts << URI.parse(ENV["TTA_SERVICE_URL"]).host if ENV["TTA_SERVICE_URL"].present?
-  google_analytics = %w[www.google-analytics.com ssl.google-analytics.com *.googletagmanager.com tagmanager.google.com *.googleusercontent.com *.gstatic.com s.ytimg.com *.google.co.uk adservice.google.com *google.com.sa https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net]
+  google_analytics = %w[www.google-analytics.com ssl.google-analytics.com *.googletagmanager.com tagmanager.google.com *.googleusercontent.com *.gstatic.com s.ytimg.com *.google.co.uk adservice.google.com *.google.com.sa https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net]
   lid_pixels = %w[pixelg.adswizz.com tracking.audio.thisisdax.com]
 
   config.csp = {
