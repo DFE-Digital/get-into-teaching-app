@@ -12,6 +12,8 @@ keywords:
   - deafness
   - mentor
   - support
+  - challenge
+  - additional needs
 tags:
   - mentors
   - deafness

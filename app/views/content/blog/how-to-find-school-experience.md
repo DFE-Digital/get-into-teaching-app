@@ -6,11 +6,13 @@ images:
 description: |-
   Experiencing life in a school and a classroom can help you to decide whether teaching is right for you.
 keywords:
-  - school experience
+  - school 
+  - experience
   - classroom
   - right for me
   - what's school like
   - day in the life
+  - day
   - day to day
 tags:
   - school experience

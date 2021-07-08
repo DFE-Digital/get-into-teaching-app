@@ -12,10 +12,12 @@ keywords:
   - course
   - qualifications
   - eligibility
-  - attend an event
+  - attend
+  - event
   - personal statement
   - support
   - adviser
+  - TTA
 tags:
   - teacher training advisers
   - personal statements

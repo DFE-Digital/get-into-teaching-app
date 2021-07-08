@@ -13,6 +13,8 @@ keywords:
   - personal statement
   - support
   - adviser
+  - challenge
+  - additional needs
 tags:
   - autism
   - neurodiversity
