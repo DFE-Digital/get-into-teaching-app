@@ -85,7 +85,7 @@ Alternatively, you may have a pre-existing right to work in the UK, such as sett
 
 ### Consider getting qualified teacher status
 
-[You need 'qualified teacher status' (QTS) to teach in many schools in England](https://www.gov.uk/guidance/qualified-teacher-status-qts#overview).
+[You need 'qualified teacher status' (QTS) to teach in many schools in England](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
 
 It's not a requirement in all [types of schools](https://www.gov.uk/types-of-school), such as academy schools, free schools, private schools and independent schools. However, having QTS can help your application.
 
