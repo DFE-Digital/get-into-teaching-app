@@ -107,6 +107,14 @@ describe EventsController do
       it { is_expected.to have_http_status :success }
       it { is_expected.to have_attributes media_type: "text/html" }
     end
+
+    context "with no search params" do
+      let(:search_params) { nil }
+      let(:expected_request_attributes) { { type_id: nil } }
+
+      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_attributes media_type: "text/html" }
+    end
   end
 
   describe "#show" do
