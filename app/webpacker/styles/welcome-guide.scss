@@ -1,0 +1,118 @@
+$z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
+
+.welcome-guide {
+  max-width: $page-max-width;
+  background-color: $grey;
+  margin: 0 auto;
+
+  img {
+    display: block;
+  }
+
+  header {
+    h1 { @include reset; }
+  }
+
+  // section-specific styles
+  .landing {
+    // grid-row-start
+    // grid-column-start
+    // grid-row-end
+    // grid-column-end
+
+    &.welcome-to-teaching {
+      display: grid;
+      grid-template-rows: minmax(2em, max-content) 4em 6em 6em minmax(3em, max-content);
+      grid-template-columns: 1fr 5em 1fr;
+
+      .background {
+        background: $yellow;
+        grid-area: 1 / 1 / 4 / 4;
+
+        z-index: map-get($z-indices, "bottom");
+      }
+
+      .slant {
+        display: flex;
+        grid-area: 4 / 1 / 5 / 4;
+        overflow: clip;
+
+        .slant-area {
+          background: $yellow;
+          transform: rotate(3deg);
+          flex-grow: 1;
+          margin: 0 -2em;
+        }
+      }
+
+      * {
+        z-index: map-get($z-indices, "medium");
+      }
+
+      // desktop
+      h1 {
+        margin: 1em 0 0 2em;
+        grid-area: 1 / 1 / 3 / 3;
+        font-size: 3em;
+        z-index: map-get($z-indices, "high");
+
+        .caption {
+          margin-top: 1rem;
+        }
+
+        .caption-l {
+          @include font-size(large);
+        }
+
+        .caption-m {
+          @include font-size(medium);
+        }
+
+        .purple {
+          padding: .3rem .6rem;
+          background-color: $purple;
+        }
+
+        .welcome-to-teaching {
+          line-height: 1.2;
+
+          .purple {
+            padding-bottom: .3em;
+          }
+        }
+
+        .underline {
+          border-bottom: .1em solid $black;
+        }
+      }
+
+      picture {
+        z-index: map-get($z-indices, "medium");
+        grid-area: 2 / 2 / 6 / 4;
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    &.introduction {
+      padding: 4em 0;
+
+      .welcome-container {
+        max-width: 30em;
+        margin: 0 auto;
+      }
+
+      p {
+        font-weight: bold;
+        margin: 1em 2em;
+      }
+
+      mark {
+        background-color: $yellow;
+        padding: 0 .2em;
+      }
+    }
+  }
+}
