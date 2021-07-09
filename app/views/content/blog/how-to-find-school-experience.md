@@ -2,7 +2,9 @@
 title: How to find school experience
 date: "2021-04-22"
 images:
-  header_image: "media/images/content/blog/schoolyard.jpg"
+  header_image:
+    path: "media/images/content/blog/schoolyard.jpg"
+    alt: "A photograph of a school playground" 
 description: |-
   Experiencing life in a school and a classroom can help you to decide whether teaching is right for you.
 keywords:

@@ -3,7 +3,9 @@ title: How to apply for teacher training
 subtitle: A step-by-step-guide
 date: "2021-01-25"
 images:
-  header_image: "media/images/content/blog/applying-for-teacher.jpg"
+  header_image:
+    path: "media/images/content/blog/applying-for-teacher.jpg"
+    alt: "A stock photograph of someone filling out an application form"
 description: |-
   From effective preparation, to submitting your application, we’ve broken down the whole process into manageable steps, so you can see exactly what’s involved.
 keywords:
