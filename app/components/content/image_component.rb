@@ -1,9 +1,10 @@
 module Content
   class ImageComponent < ViewComponent::Base
-    attr_reader :path
+    attr_reader :path, :alt
 
-    def initialize(path)
+    def initialize(path:, alt:)
       @path = path
+      @alt  = alt
     end
 
     def render?
@@ -11,7 +12,7 @@ module Content
     end
 
     def call
-      helpers.image_pack_tag(path)
+      helpers.image_pack_tag(path, alt: alt)
     end
   end
 end
