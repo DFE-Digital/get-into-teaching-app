@@ -237,8 +237,8 @@ describe TemplateHandlers::Markdown, type: :view do
       {
         "title": "Page with images",
         "images" => {
-          "black" => "media/images/dfelogo-black.svg",
-          "white" => "media/images/dfelogo-white.svg",
+          "black" => { "path" => "media/images/dfelogo-black.svg", "alt" => "Dark" },
+          "white" => { "path" => "media/images/dfelogo-white.svg", "alt" => "Light" },
         },
       }
     end
@@ -268,7 +268,9 @@ describe TemplateHandlers::Markdown, type: :view do
       expect(rendered).to have_css("img", count: 2)
 
       %w[black white].each do |colour|
-        expect(rendered).to match(%r{img\ src\=\"/packs-test/media/images/dfelogo-#{colour}-.*.svg\"})
+        expect(rendered).to have_css("img")
+        expect(rendered).to match(%r{src\=\"/packs-test/media/images/dfelogo-#{colour}-.*.svg\"})
+        expect(rendered).to have_css(%(img[alt="#{front_matter_with_images.dig('images', colour, 'alt')}"]))
       end
     end
   end
