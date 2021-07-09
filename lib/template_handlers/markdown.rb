@@ -92,9 +92,11 @@ module TemplateHandlers
     end
 
     def image(placeholder)
-      component = Content::ImageComponent.new(front_matter.dig("images", placeholder))
+      image_args = front_matter.dig("images", placeholder)
 
-      return unless component
+      return unless image_args
+
+      component = Content::ImageComponent.new(**image_args.symbolize_keys)
 
       ApplicationController.render(component, layout: false)
     end

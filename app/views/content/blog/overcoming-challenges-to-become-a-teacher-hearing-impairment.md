@@ -3,7 +3,9 @@ title: Overcoming challenges to become a teacher — Hearing impairment
 author: Habiba Cabdi
 date: "2021-03-22"
 images:
-  header_image: "media/images/content/blog/habiba-cabdi-teacher-applicant.png"
+  header_image:
+    path: "media/images/content/blog/habiba-cabdi-teacher-applicant.jpg"
+    alt: "a photograph of Habiba Cabdi, a trainee teacher"
 description: |-
   Habiba Cabdi offered to speak to Teacher Training Adviser, Jane Wilkinson, about the challenges faced by someone who lives with additional needs and their progress towards achieving the dream of becoming a teacher.
 keywords:
