@@ -69,7 +69,7 @@ Find out how to get QTS if you:
 
 You can also find specialised training programmes if you're [changing career](#if-youre-changing-career) or you [have a doctorate](#if-you-have-a-doctorate).
 
-Not looking to teach in primary or secondary settings? Consider teaching [early years](/early-years-teaching-training) or [further education](/further-education-teacher-training).
+Not looking to teach in primary or secondary settings? Consider teaching [early years](/early-years-teaching-training) or [further education](/become-a-further-education-teacher).
 
 ## If you have a degree
 
