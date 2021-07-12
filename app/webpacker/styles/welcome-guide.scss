@@ -5,6 +5,14 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   padding-bottom: $padding;
 }
 
+// here we're using the darken blend mode so when we have multi-line
+// headings the background from one line won't obscure the other. this
+// picks the darkest colour so if we have any headings with light text
+// it should use `lighten` instead (https://en.wikipedia.org/wiki/Blend_modes#Darken_Only)
+@mixin multiline-heading {
+  mix-blend-mode: darken;
+}
+
 .welcome-guide {
   max-width: $page-max-width;
   background-color: $grey;
@@ -100,8 +108,9 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
 
         .purple {
+          @include multiline-heading;
+          background: $purple;
           padding: .3rem .6rem;
-          background-color: $purple;
         }
 
         .no-wrap {
@@ -109,8 +118,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
 
         .welcome-to-teaching {
-          line-height: 1.2;
-
           .purple {
             padding-bottom: .5em;
           }
@@ -146,7 +153,27 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
+    @mixin teaching-maths-is-so-rewarding-layout {
+      grid-template-rows: repeat(6, minmax(5em, max-content));
+      grid-template-columns: 1fr;
+
+      @include mq($from: desktop) {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, minmax(10em, max-content));
+
+        .section-number { grid-area: 2 / 1 / 3 / 3; }
+        .text { grid-area: 2 / 3 / 4 / 6; }
+
+        picture:nth-of-type(1) { grid-area: 3 / 1 / 5 / 4; }
+        picture:nth-of-type(2) { grid-area: 3 / 4 / 5 / 6; }
+
+        .selected-quote { grid-area: 5 / 2 / 6 / 5; }
+      }
+    }
+
     &.teaching-maths-is-so-rewarding {
+      @include teaching-maths-is-so-rewarding-layout;
+
       display: grid;
 
       h2,
@@ -155,8 +182,9 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
 
       h2 {
+        @include multiline-heading;
         @include font-size(xlarge);
-        line-height: 1.7;
+        line-height: 1.8;
 
         .caption {
           display: inline-block;
@@ -167,9 +195,38 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         @include font-size(medium);
       }
 
+      picture {
+        z-index: map-get($z-indices, "bottom");
+
+        > img {
+          width: 80%;
+        }
+
+        &:nth-of-type(1) {
+          img {
+            @include mq($from: desktop) {
+              margin-top: 5em;
+              margin-left: 1em;
+            }
+
+            transform: rotate(-3deg);
+          }
+        }
+
+        &:nth-of-type(2) {
+          img {
+            @include mq($from: desktop) {
+              margin-top: 9em;
+            }
+
+            transform: rotate(3deg);
+          }
+        }
+      }
+
       .pink {
-        padding: .6rem;
         background-color: $pink;
+        padding: 1rem;
       }
 
       .underline {
@@ -179,6 +236,61 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       .section-number {
         @include mq($until: desktop) {
           display: none;
+        }
+
+        @include font-size(xxxlarge);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: .5em;
+
+        span:before {
+          content: "\2012"; // emdash
+          margin-right: .2em;
+        }
+      }
+
+      .text {
+        z-index: map-get($z-indices, "top");
+      }
+
+      .selected-quote {
+        padding: 8em 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+        figure {
+          blockquote {
+            @include reset;
+            @include font-size(large);
+
+            position: relative;
+            font-weight: bold;
+
+            &:before {
+              content: '"';
+              content: open-quote;
+              position: absolute;
+              left: -.8em;
+              top: -.3em;
+              color: $pink;
+            }
+
+            &:after {
+              content: '"';
+              content: close-quote;
+              left: .8em;
+              top: .3em;
+              color: $pink;
+            }
+          }
+
+          figcaption {
+            margin-top: 2em;
+          }
         }
       }
     }
