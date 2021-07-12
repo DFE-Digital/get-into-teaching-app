@@ -1,5 +1,10 @@
 $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
+@mixin underline($thickness: .15em, $padding: .05em) {
+  border-bottom: $thickness solid $black;
+  padding-bottom: $padding;
+}
+
 .welcome-guide {
   max-width: $page-max-width;
   background-color: $grey;
@@ -39,6 +44,11 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
+    .welcome-container {
+      max-width: 30em;
+      margin: 0 auto;
+    }
+
     // GENERAL STYLES
     &.welcome-to-teaching {
       @include welcome-to-teaching-layout;
@@ -73,6 +83,10 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         z-index: map-get($z-indices, "high");
         margin: .4rem 0 0 .4em;
 
+        .underline {
+          @include underline;
+        }
+
         .caption {
           margin-top: 1rem;
         }
@@ -98,13 +112,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           line-height: 1.2;
 
           .purple {
-            padding-bottom: .3em;
+            padding-bottom: .5em;
           }
-        }
-
-        .underline {
-          border-bottom: .1em solid $black;
-          padding-bottom: .05em;
         }
 
         @include mq($from: desktop) {
@@ -126,11 +135,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     &.introduction {
       padding: 8em 0;
 
-      .welcome-container {
-        max-width: 30em;
-        margin: 0 auto;
-      }
-
       p {
         font-weight: bold;
         margin: 1em 2em;
@@ -139,6 +143,43 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       mark {
         background-color: $yellow;
         padding: 0 .2em;
+      }
+    }
+
+    &.teaching-maths-is-so-rewarding {
+      display: grid;
+
+      h2,
+      p {
+        margin: 1rem;
+      }
+
+      h2 {
+        @include font-size(xlarge);
+        line-height: 1.7;
+
+        .caption {
+          display: inline-block;
+        }
+      }
+
+      p {
+        @include font-size(medium);
+      }
+
+      .pink {
+        padding: .6rem;
+        background-color: $pink;
+      }
+
+      .underline {
+        @include underline($padding: 0, $thickness: .2em);
+      }
+
+      .section-number {
+        @include mq($until: desktop) {
+          display: none;
+        }
       }
     }
   }

@@ -4,5 +4,6 @@ layout: "layouts/welcome"
 content:
   - "content/welcome/landing/welcome-to-teaching"
   - "content/welcome/landing/introduction"
+  - "content/welcome/landing/teaching-maths-is-so-rewarding"
 ---
 
