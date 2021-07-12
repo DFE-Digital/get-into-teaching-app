@@ -22,8 +22,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
     &.welcome-to-teaching {
       display: grid;
-      grid-template-rows: minmax(2em, max-content) 4em 6em 6em minmax(3em, max-content);
-      grid-template-columns: 1fr 5em 1fr;
+      grid-template-rows: minmax(2em, max-content) 3em 4em 4em minmax(3em, max-content);
+      grid-template-columns: 1fr 10em 1fr;
 
       .background {
         background: $yellow;
@@ -51,9 +51,9 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       // desktop
       h1 {
-        margin: 1em 0 0 2em;
+        margin: 1rem 0 0 2em;
         grid-area: 1 / 1 / 3 / 3;
-        font-size: 3em;
+        @include font-size(xxxlarge);
         z-index: map-get($z-indices, "high");
 
         .caption {
@@ -61,16 +61,20 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
 
         .caption-l {
-          @include font-size(large);
+          @include font-size(xxxlarge);
         }
 
         .caption-m {
-          @include font-size(medium);
+          @include font-size(xlarge);
         }
 
         .purple {
           padding: .3rem .6rem;
           background-color: $purple;
+        }
+
+        .no-wrap {
+          white-space: nowrap;
         }
 
         .welcome-to-teaching {
@@ -83,6 +87,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
         .underline {
           border-bottom: .1em solid $black;
+          padding-bottom: .05em;
         }
       }
 
@@ -92,12 +97,14 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
         img {
           width: 100%;
+          max-height: 24em;
+          object-fit: cover;
         }
       }
     }
 
     &.introduction {
-      padding: 4em 0;
+      padding: 8em 0;
 
       .welcome-container {
         max-width: 30em;
