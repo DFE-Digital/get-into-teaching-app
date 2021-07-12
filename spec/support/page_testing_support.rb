@@ -46,6 +46,7 @@ class LinkChecker
     www.sjctsa.co.uk
     tommyflowersscitt.co.uk
     www.nett.org.uk
+    www.2schools.org
   ].freeze
 
   attr_reader :page, :document
