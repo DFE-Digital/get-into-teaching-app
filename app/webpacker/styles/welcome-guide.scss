@@ -15,26 +15,43 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
   // section-specific styles
   .landing {
-    // grid-row-start
-    // grid-column-start
-    // grid-row-end
-    // grid-column-end
+    // LAYOUTS
+    // grid-row-start grid-column-start grid-row-end grid-column-end
+    @mixin welcome-to-teaching-layout {
+      $mobile-overlap-amount: 2em;
 
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content $mobile-overlap-amount max-content $mobile-overlap-amount 6em;
+
+      .background { grid-area: 1 / 1 / 5 / 2; }
+      h1 { grid-area: 1 / 1 / 2 / 2; }
+      picture { grid-area: 2 / 1 / 4 / 2; }
+      .slant { grid-area: 5 / 1 / 6 / 2; }
+
+      @include mq($from: desktop) {
+        grid-template-rows: minmax(2em, max-content) 3em 4em 4em minmax(3em, max-content);
+        grid-template-columns: 1fr 10em 1fr;
+
+        .background { grid-area: 1 / 1 / 4 / 4; }
+        .slant { grid-area: 4 / 1 / 5 / 4; }
+        h1 { grid-area: 1 / 1 / 3 / 3; }
+        picture { grid-area: 2 / 2 / 6 / 4; }
+      }
+    }
+
+    // GENERAL STYLES
     &.welcome-to-teaching {
+      @include welcome-to-teaching-layout;
+
       display: grid;
-      grid-template-rows: minmax(2em, max-content) 3em 4em 4em minmax(3em, max-content);
-      grid-template-columns: 1fr 10em 1fr;
 
       .background {
         background: $yellow;
-        grid-area: 1 / 1 / 4 / 4;
-
         z-index: map-get($z-indices, "bottom");
       }
 
       .slant {
         display: flex;
-        grid-area: 4 / 1 / 5 / 4;
         overflow: clip;
 
         .slant-area {
@@ -52,7 +69,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       // desktop
       h1 {
         margin: 1rem 0 0 2em;
-        grid-area: 1 / 1 / 3 / 3;
         @include font-size(xxxlarge);
         z-index: map-get($z-indices, "high");
 
@@ -93,7 +109,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       picture {
         z-index: map-get($z-indices, "medium");
-        grid-area: 2 / 2 / 6 / 4;
 
         img {
           width: 100%;
