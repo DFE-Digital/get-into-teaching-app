@@ -328,6 +328,9 @@ redirects:
   "/explore-my-options/return-to-teaching/return-to-teaching-caring-related-career-breaks": "/returning-to-teaching"
   "/explore-my-options/return-to-teaching/practical-information-and-resources-for-returning-teachers": "/returning-to-teaching"
   "/life-as-a-teacher/rewards-of-teaching": "/my-story-into-teaching"
+  "/explore-my-options(*option)": "/ways-to-train"
+  "/life-as-a-teacher(*story)": "/my-story-into-teaching"
+  "/content/stories(*story)": "/my-story-into-teaching"
 
   # Events
   "/teaching-events/train-to-teach-events/train-to-teach-london-virtual-event-300121": "/events/train-to-teach-london-virtual-event-300121"
