@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   get "/robots.txt", to: "robots#show"
   get "/events/not-available", to: "events#not_available"
   get "/mailinglist/not-available", to: "mailing_list/steps#not_available"
+  get "/callbacks/not-available", to: "callbacks/steps#not_available"
 
   get "/404", to: "errors#not_found", via: :all
   get "/422", to: "errors#unprocessable_entity", via: :all
@@ -67,6 +68,12 @@ Rails.application.routes.draw do
 
   resource :csp_reports, only: %i[create]
 
+  resources :blog, controller: "blog", only: %i[index show] do
+    collection do
+      resources :tag, only: %i[show], as: :blog_tag, controller: "blog/tag"
+    end
+  end
+
   resources "events", path: "/events", only: %i[index show search] do
     collection do
       get "search"
@@ -78,6 +85,17 @@ Rails.application.routes.draw do
       collection do
         get :completed
         get :resend_verification
+      end
+    end
+  end
+
+  unless Rails.env.production?
+    namespace :callbacks do
+      resources :steps, path: "/book", only: %i[index show update] do
+        collection do
+          get :completed
+          get :resend_verification
+        end
       end
     end
   end

@@ -35,5 +35,10 @@ describe "Circuit breaker" do
       get mailing_list_step_path("privacy_policy")
       expect(response).to redirect_to(mailinglist_not_available_path)
     end
+
+    it "the Callbacks::StepsController redirects to an error page" do
+      get callbacks_step_path("privacy_policy")
+      expect(response).to redirect_to(callbacks_not_available_path)
+    end
   end
 end

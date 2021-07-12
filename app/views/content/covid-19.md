@@ -3,11 +3,11 @@ title: "How coronavirus is affecting teacher training"
 description: |-
   Covid 19 has had an impact on teacher training, this advice
   is aimed at applicants, trainees, schools and ITT providers.
-date: "2021-01-14"
+date: "2021-06-25"
 image: false
 backlink: "../"
 alert: |-
-  This page was updated on 14 January 2021, and will continue to be updated as
+  This page was updated on 25 June 2021, and will continue to be updated as
   new guidance is issued. Please check back regularly.
 keywords:
   - coronavirus
@@ -22,7 +22,7 @@ keywords:
 
 Contact your provider if you have any questions about how coronavirus is affecting your course.
 
-## If you're an applicant: your questions answered
+## If you're an applicant (2021 entry): your questions answered
 
 ### Can I get school experience?
 
@@ -46,7 +46,7 @@ Wait for your provider to contact you with more information.
 
 ### I am doing a GCSE to be eligible to start training but exams have been cancelled. What should I do?
 
-Details on assessment for GCSEs in summer 2021 are due to be confirmed after consultation in the spring term.
+Details on assessment for GCSEs in summer 2021 [have now been confirmed](https://www.gov.uk/government/publications/student-guide-to-awarding-summer-2021) after consultation in the spring term.
 
 Speak to your training provider to discuss your situation.
 

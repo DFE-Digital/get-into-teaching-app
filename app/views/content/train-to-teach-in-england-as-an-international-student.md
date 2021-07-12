@@ -54,13 +54,15 @@ keywords:
   - Europe
   - European
   - Settlement Scheme
+  - Statement
+  - Comparability
 ---
 
 As an international candidate you’ll be welcomed by many teacher training providers in England.
 
 Train in England and you'll graduate from a world-class institution, with qualifications recognised around the world.
 
-Not looking to train in England? Consider training in [Wales](https://www.discoverteaching.wales/routes-into-teaching/), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+Not looking to train in England? Consider training in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
 ### What you need to start training
 
@@ -78,7 +80,14 @@ You usually need the equivalent of a GCSE (grade 4) in English and maths.
 
 To teach children aged 3 to 11, you also need the equivalent of a GCSE (grade 4) in a science subject.
 
-[Contact UK ENIC to find out if your qualifications meet the standard](https://www.enic.org.uk/).
+#### Help with international qualifications
+ 
+If your qualifications come from a non-UK institution, your teacher training provider may want to see a ‘[statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx)’ showing their equivalence to UK qualifications.
+
+Call us on [0800 389 2500](tel://08003892500) for:
+
+* guidance on the UK equivalents of your qualifications
+* a free statement of comparability from UK ENIC once you’ve submitted your application, if your provider asks for this
 
 #### An offer to train
 
@@ -102,9 +111,7 @@ Your training provider will check you’re suitable for teaching in terms of you
 
 ### Get a teacher training adviser
 
-You can get an adviser for one-to-one support.
-
-Your adviser can help you get a 'statement of comparability' showing [how your overseas qualifications compare to UK qualifications](https://enic.org.uk/Qualifications/SOC/Default.aspx).
+You can get an adviser for one-to-one support. They can give you practical advice and guidance at every stage of your application.
 
 <p class="call-to-action__action">
   <a href="/tta-service">Get an <span>adviser</span></a>

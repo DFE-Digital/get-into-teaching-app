@@ -35,8 +35,19 @@ class PageLister
 end
 
 class LinkChecker
-  IGNORE = %w[127.0.0.1 localhost ::1 www.linkedin.com linkedin.com].freeze
-  GET_NOT_HEAD = %w[www.instagram.com].freeze
+  IGNORE = %w[
+    127.0.0.1
+    localhost
+    ::1
+    www.linkedin.com
+    linkedin.com
+    www.exetermathematicsschool.ac.uk
+    www.ringwood.hants.sch.uk
+    www.sjctsa.co.uk
+    tommyflowersscitt.co.uk
+    www.nett.org.uk
+    www.2schools.org
+  ].freeze
 
   attr_reader :page, :document
 
@@ -77,19 +88,20 @@ private
   end
 
   def check(link)
-    if needs_get?(link)
-      faraday(link).get.status
-    else
-      faraday(link).head.status
-    end
+    status = faraday(link).head.status
+    return status if (200..299).include?(status)
+
+    fallback_check(link)
   rescue ::Faraday::Error
-    nil
+    fallback_check(link)
   end
 
-  def needs_get?(link)
-    GET_NOT_HEAD.any? do |domain|
-      link.starts_with? %r{https?://#{domain}/}
-    end
+  def fallback_check(link)
+    # Not all websites respond to a HEAD request,
+    # so we do a GET request as a fallback check.
+    faraday(link).get.status
+  rescue ::Faraday::Error
+    nil
   end
 
   def ignored?(link)

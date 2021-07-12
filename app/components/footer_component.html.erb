@@ -1,0 +1,70 @@
+<% if talk_to_us? %>
+  <%= render Footer::TalkToUsComponent.new %>
+<% end %>
+
+<% if feedback? %>
+  <%= render Footer::FeedbackComponent.new %>
+<% end %>
+
+<% if mailing_list? %>
+  <%= render Footer::MailingListComponent.new %>
+<% end %>
+
+<%= render Footer::VideoPlayerComponent.new %>
+<%= render Footer::CookieAcceptanceComponent.new %>
+
+<footer class="site-footer">
+  <div class="site-footer__wrapper limit-content-width">
+    <div class="site-footer-top">
+      <div class="site-footer-top__social">
+        <a href="https://www.facebook.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
+          <%= helpers.fab_icon("facebook-f", "icon") %>
+          <span class="visually-hidden">Facebook - opens in a new tab</span>
+        </a>
+        <a href="https://www.instagram.com/get_into_teaching/" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
+          <%= helpers.fab_icon("instagram", "icon") %>
+          <span class="visually-hidden">Instagram - opens in a new tab</span>
+        </a>
+        <a href="https://www.linkedin.com/company/9258520?trk=tyah&trkInfo=idx%3A1-1-1%2CtarId%3A1424345327269%2Ctas%3Aget+into+teaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
+          <%= helpers.fab_icon("linkedin-in", "icon") %>
+          <span class="visually-hidden">LinkedIn - opens in a new tab</span>
+        </a>
+        <a href="https://twitter.com/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
+          <%= helpers.fab_icon("twitter", "icon") %>
+          <span class="visually-hidden">Twitter - opens in a new tab</span>
+        </a>
+        <a href="http://www.youtube.com/user/getintoteaching" class="site-footer-top__social__link" target="_blank" rel="noopener noreferrer">
+          <%= helpers.fab_icon("youtube", "icon") %>
+          <span class="visually-hidden">Youtube - opens in a new tab</span>
+        </a>
+      </div>
+      <div class="site-footer-top__links-container">
+        <% helpers.navigation_resources.each do |resource| %>
+          <a href="<%= resource.path %>"><%= resource.title %></a>
+        <% end %>
+        <%= link_to "Find an event near you", events_path %>
+        <%= link_to "Sign up for updates", mailing_list_steps_path %>
+        <%= link_to("Three things to help you get into teaching", page_path(page: "three-things-to-help-you-get-into-teaching")) %>
+        <%= link_to("COVID-19", page_path(page: "covid-19")) %>
+      </div>
+    </div>
+    <div class="site-footer-bottom">
+      <div class="site-footer-bottom__logo-container">
+        <%= image_pack_tag 'media/images/dfelogo-white.svg', alt: "Department for Education", size: "124x73" %>
+        <%= image_pack_tag 'media/images/plan-for-jobs.svg', alt: "Plan for jobs", size: "124x73" %>
+      </div>
+      <div class="site-footer-bottom__links-container">
+        <a target="_blank" rel="noopener noreferrer" href="https://docs.google.com/forms/d/e/1FAIpQLSdBXbU5nwP6_3TH7HY5rB4ehkSDNzfKqB5X2G7wG4K6LY97-g/viewform">Feedback</a>
+        <%= link_to "Cookies", cookies_path %>
+        <%= link_to "Privacy notice", privacy_policy_path %>
+        <%= link_to("Accessibility", page_path(page: :accessibility)) %>
+        <a target="_blank" rel="noopener noreferrer" href="https://form.education.gov.uk/en/AchieveForms/?form_uri=sandbox-publish://AF-Process-f1453496-7d8a-463f-9f33-1da2ac47ed76/AF-Stage-1e64d4cc-25fb-499a-a8d7-74e98203ac00/definition.json&redirectlink=%2Fen&cancelRedirectLink=%2Fen">Freedom of information</a>
+        <div class="site-footer-bottom__links-container__license">All content is available under the <a href="/">Open Government License v.3.0,</a> except where otherwise stated.</div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<% if lid_pixel_event %>
+  <%= tag.span(data: { "controller" => "lid", "lid-action" => "track", "lid-event" => lid_pixel_event }) %>
+<% end %>

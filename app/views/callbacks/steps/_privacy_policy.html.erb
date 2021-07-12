@@ -1,0 +1,16 @@
+<h1>Accept privacy policy</h1>
+
+<%
+  legend_text = t("helpers.legend.callbacks_steps_privacy_policy.accept_privacy_policy.text",
+    link: link_to(t("helpers.legend.callbacks_steps_privacy_policy.accept_privacy_policy.link"),
+    privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }))
+%>
+
+<%= f.govuk_check_boxes_fieldset :accept_privacy_policy, legend: { text: safe_html_format(legend_text) } do %>
+  <%= f.hidden_field :accept_privacy_policy, value: 0 %>
+  <%= f.govuk_check_box :accept_privacy_policy, 1,
+        multiple: false, link_errors: true,
+        label: { text: "Yes" } %>
+<% end %>
+
+  <%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>

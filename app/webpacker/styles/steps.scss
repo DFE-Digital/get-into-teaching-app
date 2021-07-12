@@ -72,50 +72,6 @@
         padding-left: 75px;
         padding-right: 20px;
       }
-
-      details {
-        summary {
-          font-weight: bold;
-          color: $blue-dark;
-          text-decoration: underline;
-          list-style: none;
-          cursor: pointer;
-
-          &::-webkit-details-marker {
-            display: none;
-          }
-
-          &:hover {
-            text-decoration: none;
-          }
-
-          &:after {
-            content: "";
-            display: inline-block;
-            width: 10px;
-            height: 10px;
-            border: 2px solid $blue-dark;
-            border-width: 0 3px 3px 0;
-            transform: rotate(45deg);
-            position: relative;
-            top: -2px;
-            margin-left: 7px;
-          }
-        }
-
-        section + section {
-          margin-top: 2em;
-        }
-
-        &[open] {
-          summary {
-            &:after {
-              transform: rotate(225deg);
-              top: 4px;
-            }
-          }
-        }
-      }
     }
   }
 }

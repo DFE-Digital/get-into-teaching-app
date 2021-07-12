@@ -7,7 +7,7 @@ module Events
     end
 
     def description
-      t("event_types.#{type}.description")
+      t("event_types.#{type}.description.long")
     end
 
     def type_name_plural

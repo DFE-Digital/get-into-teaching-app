@@ -198,4 +198,67 @@ describe EventsHelper, type: "helper" do
       expect(past_category_name(222_750_001)).to eql("Past Train to Teach events")
     end
   end
+
+  describe "#display_no_ttt_events_message?" do
+    let(:performed_search) { true }
+    let(:events) { [] }
+    let(:event_search_type) { "222750001" }
+    let(:dummy_events) { [[222_750_001, []]] }
+
+    it "returns true when searching for TTT events and there are none" do
+      expect(display_no_ttt_events_message?(performed_search, events, event_search_type)).to be true
+    end
+
+    it "returns false when search was not performed" do
+      expect(display_no_ttt_events_message?(false, events, event_search_type)).to be false
+    end
+
+    it "returns false when there are TTT events" do
+      expect(display_no_ttt_events_message?(true, dummy_events, event_search_type)).to be false
+    end
+
+    it "returns false when the search is not for TTT events" do
+      expect(display_no_ttt_events_message?(true, dummy_events, "")).to be false
+    end
+  end
+
+  describe "#show_see_all_events_button?" do
+    let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
+
+    context "when checking for TTT event type id" do
+      it "returns false when events is empty" do
+        events = []
+
+        expect(show_see_all_events_button?(type_id, events)).to be false
+      end
+
+      it "returns true when events is not empty" do
+        events = build_list(:event_api, 2, :train_to_teach_event)
+
+        expect(show_see_all_events_button?(type_id, events)).to be true
+      end
+    end
+
+    context "when checking for any other event type ids" do
+      let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
+
+      it "returns true when events is empty" do
+        events = build_list(:event_api, 2, :online_event)
+
+        expect(show_see_all_events_button?(type_id, events)).to be true
+      end
+
+      it "returns true when events is not empty" do
+        events = []
+
+        expect(show_see_all_events_button?(type_id, events)).to be true
+      end
+    end
+  end
+
+  describe "#ttt_event_type_id?" do
+    it "returns the TTT event id" do
+      expect(ttt_event_type_id).to eq GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+    end
+  end
 end

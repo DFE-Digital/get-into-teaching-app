@@ -3,7 +3,7 @@ import SearchboxController from 'searchbox_controller.js' ;
 
 describe('SearchboxController', () => {
   const searchboxTemplate = `
-    <div data-controller="searchbox" class="searchbox">
+    <div data-controller="searchbox" data-searchbox-search-input-id-value="searchbox__input" class="searchbox">
       <a href="#" data-action="searchbox#toggle">
         Toggle
       </a>

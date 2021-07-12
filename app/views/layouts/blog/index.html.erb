@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
+
+    <%= render HeaderComponent.new(breadcrumbs: true) %>
+
+    <main role="main" id="main-content">
+      <section class="container blog">
+        <header class="list-header">
+          <%= tag.h1(@front_matter[:title]) %>
+        </header>
+
+        <%= yield :popular_tags %>
+
+        <div class="text-content longform">
+          <%= yield %>
+        </div>
+      </section>
+    </main>
+
+    <%= render FooterComponent.new %>
+  <% end %>
+</html>

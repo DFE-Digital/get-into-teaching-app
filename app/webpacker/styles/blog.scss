@@ -1,0 +1,168 @@
+.blog-tags-list {
+  &--grey {
+    background-color: $grey;
+  }
+
+  &--padded {
+    padding: .5em 1.5em 1em;
+    margin-bottom: 1.5em;
+  }
+
+  @include mq($from: tablet) {
+    width: 100%;
+  }
+
+  ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: .4em;
+    margin: 0;
+    padding-left: 0;
+
+    li {
+      background-color: $blue;
+      color: $white;
+      padding: .6em;
+
+      @include font-size(xsmall);
+
+      a {
+        color: $white;
+      }
+
+      &:hover {
+        background-color: lighten($blue, 5%);
+      }
+    }
+
+    // FIXME: this can go once Safari supports gap in flex
+    @include safari-only {
+      li + li {
+        margin-left: .4em;
+      }
+    }
+  }
+}
+
+.blog {
+  $blog-content-width: 65ch;
+
+  margin-bottom: 4em;
+
+  ol.blog-index {
+    list-style: none;
+    padding-left: 0;
+
+    li {
+      h2 {
+        @include font-size(large);
+        @include reset;
+
+        a {
+          text-decoration: none;
+          color: $black;
+        }
+      }
+
+      header {
+        border-bottom: 0;
+        padding-bottom: 0;
+        margin-bottom: 2em;
+      }
+
+      article {
+        margin-bottom: 0;
+      }
+
+      [role="doc-subtitle"] {
+        @include font-size(small);
+      }
+    }
+
+    li + li {
+      margin-top: 2em;
+      padding-top: 1.5em;
+      border-top: 1px solid $grey;
+    }
+  }
+
+  header {
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+
+    h1 {
+      margin-bottom: 0;
+    }
+
+    &.list-header {
+      border-bottom: 0;
+      margin-bottom: 0;
+
+      h1 {
+        margin: 0;
+      }
+    }
+  }
+
+  h1 {
+    @include font-size(large);
+  }
+
+  picture > img {
+    max-width: $blog-content-width;
+  }
+
+  p {
+    max-width: $blog-content-width;
+  }
+
+  blockquote {
+    padding: 1.5em;
+    background: $grey;
+    margin: 2em auto;
+  }
+
+  @include mq($until: tablet) {
+    img {
+      width: 100%;
+    }
+  }
+
+  .footnotes {
+    border-top: 1px solid $grey;
+    margin-top: 2em;
+    padding: 1em;
+    color: darken($grey-dark, 5%); // nudge to AAA
+  }
+
+  footer {
+    margin-top: 4em;
+    border-top: 1px solid $grey;
+    padding-top: 1em;
+
+    h2,
+    h3 {
+      padding-left: 0;
+    }
+
+    h3 {
+      margin: 2em 0 .5em;
+    }
+  }
+
+  [role="doc-subtitle"] {
+    margin: 0;
+    color: $grey-dark;
+    @include font-size(medium);
+  }
+
+  &__date {
+    margin-top: .5rem;
+  }
+
+  &__date,
+  &__author {
+    @include font-size(xsmall);
+  }
+}

@@ -12,7 +12,7 @@ describe HeaderComponent, type: "component" do
   end
 
   specify "renders the navigation" do
-    expect(page).to have_css(".navbar")
+    expect(page).to have_css("nav > ol.primary")
   end
 
   specify "doesn't render breadcrumbs by default" do

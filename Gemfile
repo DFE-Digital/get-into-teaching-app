@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.3", ">= 6.1.3.2"
+gem "rails", "~> 6.1.4", ">= 6.1.3.2"
 
 # Use Puma as the app server
 gem "puma", "~> 5.3", ">= 5.3.1"
@@ -30,25 +30,27 @@ gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.3.1"
 gem "rinku"
 
-gem "addressable"
+gem "addressable", "~> 2.8.0"
 
 gem "rack-attack"
 
-gem "faraday"
+gem "faraday", "~> 1.5.0"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
 
 gem "dotenv-rails", ">= 2.7.6"
 
-gem "govuk_design_system_formbuilder", ">= 2.5.3"
+gem "govuk_design_system_formbuilder", ">= 2.7.2"
 
 gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 4.3.4"
-gem "sentry-ruby"
+gem "sentry-rails", ">= 4.6.0"
+gem "sentry-ruby", "~> 4.6.0"
+
+gem "skylight", "~> 5.1.1"
 
 gem "text"
 
@@ -56,7 +58,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.32.0"
+gem "view_component", "~> 2.35.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -71,7 +73,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 3.14.0" # FIXME: stop gap fix but we should relint the codebase
 
   # Static security scanner
-  gem "brakeman", require: false
+  gem "brakeman", "~> 5.0.4", require: false
 
   # Debugging
   gem "pry-byebug"
@@ -107,7 +109,7 @@ group :rolling, :preprod, :userresearch, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"
-  gem "rails_semantic_logger", ">= 4.5.0"
+  gem "rails_semantic_logger", ">= 4.6.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

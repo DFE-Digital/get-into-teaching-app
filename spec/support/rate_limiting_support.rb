@@ -4,6 +4,7 @@ shared_examples "an IP-based rate limited endpoint" do |desc, limit, period|
 
     before do
       allow(Rack::Attack.cache).to receive(:store) { memory_store }
+      freeze_time
       request_count.times { perform_request }
     end
 
@@ -22,7 +23,7 @@ shared_examples "an IP-based rate limited endpoint" do |desc, limit, period|
 
       context "when time restriction has passed" do
         it "allows another request" do
-          travel period + 1.second
+          travel period + 10.seconds
           perform_request
           expect(response.status).not_to eq(429)
         end

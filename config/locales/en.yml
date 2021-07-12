@@ -272,24 +272,30 @@ en:
       name:
         singular: "Train to Teach event"
         plural: "Train to Teach events"
-      description: |-
-        Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training
-        will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
+      description: 
+        short: Find out from schools and universities what training will be like and get one-to-one advice from our teaching experts on applying.
+        long: |-
+          Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training
+          will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
     222750008:
       name:
         singular: "Online Q&A"
         plural: "Online Q&As"
         past: "Past online Q&As"
-      description: |-
-        In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train.
-        Get fast answers to your questions so you can take the next step to becoming a teacher.
+      description: 
+          short: Get fast answers to your questions on topics such as funding or ways to train, so you can take the next step to becoming a teacher.
+          long: |-
+            In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train.
+            Get fast answers to your questions so you can take the next step to becoming a teacher.
     222750009:
       name:
         singular: "School or University event"
         plural: "School and University events"
-      description: |-
-        These events, run by schools and universities, are a great way to and find out more about a particular training provider.
-        Find out what they have to offer and help make your decision on where to apply.
+      description: 
+        short: Find out more about a particular training provider, what they offer and help you decide on where to apply.
+        long: |-
+          These events, run by schools and universities, are a great way to and find out more about a particular training provider.
+          Find out what they have to offer and help make your decision on where to apply.
   activemodel:
     errors:
       magic_link_token:
@@ -352,6 +358,28 @@ en:
               inclusion: Select how close you are to applying for teacher training
             preferred_teaching_subject_id:
               inclusion: Select the subject do you want to teach
+
+        callbacks/steps/personal_details:
+          attributes:
+            first_name:
+              blank: Enter your first name
+            last_name:
+              blank: Enter your last name
+            email:
+              blank: Enter your full email address
+              invalid: Enter a valid email address
+        callbacks/steps/callback:
+          attributes:
+            address_telephone:
+              blank: Enter your telephone number
+              invalid: Enter a valid phone number
+            phone_call_scheduled_at:
+              blank: "You need to choose a time to call"
+        callbacks/steps/privacy_policy:
+          attributes:
+            accept_privacy_policy:
+              blank: Accept the privacy policy to continue
+              accepted: Accept the privacy policy to continue
 
         mailing_list/steps/name:
           attributes:
@@ -477,6 +505,14 @@ en:
         consideration_journey_stage_id: How close are you to applying for teacher training?
         preferred_teaching_subject_id: What subject do you want to teach?
 
+      callbacks_steps_personal_details:
+        first_name: First name
+        last_name: Last name
+        email: Email address
+      callbacks_steps_callback:
+        address_telephone: Phone number
+        phone_call_scheduled_at: Select your preferred day and time for a callback
+
       mailing_list_steps_name:
         first_name: First name
         last_name: Last name
@@ -531,6 +567,10 @@ en:
         subscribe_to_mailing_list: |-
           Would you like to receive email updates to help you get into teaching? If you say no, you will still receive confirmation emails about any events you sign up to attend.
       mailing_list_steps_privacy_policy:
+        accept_privacy_policy:
+          text: Are you over 16 and do you agree to our %{link}?
+          link: privacy policy
+      callbacks_steps_privacy_policy:
         accept_privacy_policy:
           text: Are you over 16 and do you agree to our %{link}?
           link: privacy policy

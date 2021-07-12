@@ -61,7 +61,7 @@ Teach in England and you’ll benefit from working in a world-class education sy
 
 You’ll earn a [competitive salary](/salaries-and-benefits), get supported in your professional development and have varied job opportunities.
 
-Not looking to teach in England? Consider teaching in [Wales](https://www.discoverteaching.wales/), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+Not looking to teach in England? Consider teaching in [Wales](https://educators.wales), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
 ### What you need to start teaching
 
@@ -85,7 +85,7 @@ Alternatively, you may have a pre-existing right to work in the UK, such as sett
 
 ### Consider getting qualified teacher status
 
-[You need 'qualified teacher status' (QTS) to teach in many schools in England](https://www.gov.uk/guidance/qualified-teacher-status-qts#overview).
+[You need 'qualified teacher status' (QTS) to teach in many schools in England](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
 
 It's not a requirement in all [types of schools](https://www.gov.uk/types-of-school), such as academy schools, free schools, private schools and independent schools. However, having QTS can help your application.
 

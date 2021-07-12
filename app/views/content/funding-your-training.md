@@ -1,7 +1,7 @@
 ---
   title: "Funding your training"
   description: |-
-    Multiple funding options in the form of bursaries, scholarships and
+    Multiple funding options in the form of teaching bursaries, teaching scholarships and
     maintenance loans are available to support your postgraduate teacher
     training.
   date: "2021-03-11"
@@ -40,7 +40,7 @@
       name: simple
       arguments:
         icon: "icon-arrow"
-        text: "Use the student finance calculator on GOV.UK to find out how much you can get."
+        text: "Use the student finance calculator on GOV.UK to find out how much funding you can get."
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
     international-candidates:
@@ -97,7 +97,7 @@
 
 ## Tuition fee and maintenance loans
 
-To help you [train to teach](/ways-to-train), you can apply for a:
+Funding is available to help you [train to teach](/ways-to-train). You can apply for a:
 
 * tuition fee loan of up to £9,250 to cover your teacher training, so you do not need to pay course fees upfront
 * maintenance loan of up to £12,382 to help with living costs
@@ -111,7 +111,7 @@ $student-finance-calculator$
 
 ## Bursaries and scholarships
 
-You may be eligible for a bursary or scholarship when training to teach.
+You may be eligible for a teaching bursary or scholarship when training to teach.
 
 These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.
 
@@ -128,7 +128,7 @@ For a scholarship, each professional scholarship body sets its own criteria. The
 
 ### Check which subjects have bursaries and scholarships
 
-Bursaries and scholarships are only available for the subjects listed
+Teaching bursaries and scholarships are only available for the subjects listed
 below. You cannot receive both a bursary and a scholarship.
 
 | Subject       | Bursary  | Scholarship      |
@@ -150,7 +150,7 @@ You may be eligible for a [training bursary of £9,000](https://www.gov.uk/gover
 
 You may also be eligible if you're studying an opt-in QTS course in secondary undergraduate computing, languages, mathematics or physics.
 
-#### If you're a former military personel
+#### If you're a former military personnel
 
 You may be eligible for a [Troops to Teachers](https://www.ucas.com/teaching-option/troops-teachers) tax-free bursary of £40,000 if you're:
 
@@ -162,7 +162,7 @@ $chat$
 
 ## If you're a parent or carer
 
- If you have children or other caring responsibilities you may be able to get extra financial support through the following schemes:
+ If you have children or other caring responsibilities you may be able to get extra financial support through the following grants and schemes:
 
 * [Childcare Grant](https://www.gov.uk/childcare-grant)
 * [Parents' Learning Allowance](https://www.gov.uk/parents-learning-allowance)

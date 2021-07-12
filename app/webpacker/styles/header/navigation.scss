@@ -1,0 +1,203 @@
+@mixin list-item-nav {
+  @include font-size("xsmall");
+
+  padding: .5em;
+
+  a {
+    color: $black;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+@mixin active-identifier($colour) {
+  border-left: 6px solid $colour;
+  border-bottom: none;
+
+  @include mq($from: desktop) {
+    border-bottom: 6px solid $colour;
+    border-left: none;
+  }
+}
+
+body > header nav {
+  // general
+  display: flex;
+  flex-grow: 1;
+
+  ol.primary {
+    list-style: none;
+    display: flex;
+
+    > li {
+      @include list-item-nav;
+      @include reset;
+      line-height: 2;
+      margin-bottom: 0;
+
+      .menu__heading {
+        display: flex;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .menu__chevron {
+        margin: 0 .4em;
+        flex-shrink: 0;
+        @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
+      }
+
+      &.down {
+        .menu__chevron {
+          top: .4em;
+          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
+        }
+      }
+    }
+  }
+
+  ol.secondary {
+    list-style: none;
+
+    li {
+      @include list-item-nav;
+      @include reset;
+    }
+  }
+
+  li > a {
+    cursor: pointer;
+  }
+
+  // mobile and tablet
+  @include mq($until: desktop) {
+    flex-direction: column-reverse;
+
+    &.hidden-mobile {
+      display: none;
+    }
+
+    ol.primary {
+      flex-direction: column;
+      margin:0;
+      background: $grey;
+
+      > li {
+        padding-left: 1em;
+        border-left: 6px solid $grey;
+        border-bottom: 1px solid $white;
+        max-width: 80%;
+        //margin-bottom: .8em;
+
+        .menu__text {
+          flex-grow: 1;
+        }
+
+        &.active {
+          border-left: 6px solid $purple;
+        }
+
+        > a,
+        div {
+          display: block;
+          padding: 1em 0;
+        }
+      }
+    }
+
+    ol.secondary {
+      padding: 0;
+
+      > li {
+        margin: 1em;
+
+        padding-left: 1em;
+        border-left: 6px solid $white;
+
+        &:hover {
+          border-left: 6px solid darken($grey, 5%);
+        }
+
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  // desktop and wide
+  @include mq($from: desktop) {
+    ol.primary {
+      flex-grow: 1;
+      align-items: flex-end;
+      justify-content: flex-end;
+      margin: 0 1em;
+      padding: 0 1em;
+
+      > li {
+        position: relative;
+        flex-direction: row;
+        border-bottom: 6px solid $white;
+        padding: 1em;
+
+        &.active {
+          border-bottom: 6px solid $purple;
+        }
+
+        &.down {
+          background-color: $grey;
+          border-bottom: 6px solid $grey;
+        }
+
+        a {
+          padding: 1em 0 .5em;
+          border-bottom: 1px solid $white;
+
+          &:hover {
+            border-bottom: 2px solid $black;
+          }
+        }
+      }
+    }
+
+    ol.secondary {
+      display: block;
+      position: absolute;
+      left: 0;
+      margin-top: .6em;
+
+      padding-left: 0;
+      background-color: $grey;
+
+      z-index: 80;
+      width: 100%;
+
+      > li {
+        @include list-item-nav;
+
+        padding: 1em;
+
+        &:hover {
+          background-color: darken($grey, 3%);
+        }
+
+        a {
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

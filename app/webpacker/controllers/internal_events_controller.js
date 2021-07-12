@@ -32,7 +32,7 @@ export default class extends Controller {
   }
 
   formatDate(dateTimeString) {
-    return DateTime.fromISO(dateTimeString).toFormat('yyMMdd');
+    return DateTime.fromJSDate(new Date(dateTimeString)).toFormat('yyMMdd');
   }
 
   formatName(name) {

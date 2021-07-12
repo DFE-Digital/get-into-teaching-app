@@ -18,7 +18,7 @@ describe Events::TypeDescriptionComponent, type: "component" do
   end
 
   it "has a description" do
-    expect(page).to have_css("p", text: I18n.t("event_types.#{type}.description"))
+    expect(page).to have_css("p", text: I18n.t("event_types.#{type}.description.long"))
   end
 
   it "has a read more link" do

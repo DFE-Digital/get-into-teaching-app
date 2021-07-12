@@ -68,6 +68,14 @@ shared_context "stub mailing list add member api" do
   end
 end
 
+shared_context "stub book callback api" do
+  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
+
+  before do
+    stub_request(:post, "#{git_api_endpoint}/api/get_into_teaching/callbacks").to_return(status: 200, body: "", headers: {})
+  end
+end
+
 shared_context "stub upcoming events by category api" do |results_per_type|
   let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
   let(:events_by_type) { group_events_by_type(events) }

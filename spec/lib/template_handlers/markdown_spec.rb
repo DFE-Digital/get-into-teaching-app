@@ -231,4 +231,47 @@ describe TemplateHandlers::Markdown, type: :view do
       expect(rendered).not_to have_content(/one-that-does-not-exist/)
     end
   end
+
+  describe "injecting images" do
+    let(:front_matter_with_images) do
+      {
+        "title": "Page with images",
+        "images" => {
+          "black" => { "path" => "media/images/dfelogo-black.svg", "alt" => "Dark" },
+          "white" => { "path" => "media/images/dfelogo-white.svg", "alt" => "Light" },
+        },
+      }
+    end
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        $black$
+
+        Donec in leo enim. Mauris aliquet nulla dolor
+
+        $white$
+      MARKDOWN
+    end
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_images)
+    end
+
+    before do
+      stub_template "page_with_rich_content.md" => markdown
+      render template: "page_with_rich_content"
+    end
+
+    specify "the rendered output contains the specified images" do
+      expect(rendered).to have_css("img", count: 2)
+
+      %w[black white].each do |colour|
+        expect(rendered).to have_css("img")
+        expect(rendered).to match(%r{src\=\"/packs-test/media/images/dfelogo-#{colour}-.*.svg\"})
+        expect(rendered).to have_css(%(img[alt="#{front_matter_with_images.dig('images', colour, 'alt')}"]))
+      end
+    end
+  end
 end

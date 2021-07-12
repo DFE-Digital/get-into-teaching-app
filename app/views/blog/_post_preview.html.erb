@@ -1,0 +1,16 @@
+<article class="blog">
+  <header>
+    <h2><%= link_to fm[:title], path %></h2>
+    <% if fm[:subtitle].present? %>
+      <div role="doc-subtitle"><%= fm[:subtitle] %></div>
+    <% end %>
+
+    <%= render partial: "blog/date_and_author", locals: { front_matter: fm.with_indifferent_access } %>
+  </header>
+  <% if fm[:images].present? %>
+    <p><%= first_image_from_post(fm[:images]) %></p>
+  <% end %>
+  <p><%= fm[:description] %></p>
+
+  <%= link_to "Read more", path %>
+</article>

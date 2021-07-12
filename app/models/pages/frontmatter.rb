@@ -15,6 +15,10 @@ module Pages
         instance(content_dirs).select(selector)
       end
 
+      def select_by_path(path, content_dirs = nil)
+        instance(content_dirs).select_by_path(path)
+      end
+
       def default_content_dirs
         app_view_paths.map do |view_path|
           "#{view_path}/content"
@@ -89,6 +93,10 @@ module Pages
           raise UnknownSelectorType, selector
         end
       end
+    end
+
+    def select_by_path(path)
+      list.select { |k, _v| k.start_with?(path) }
     end
 
     class NotMarkdownTemplate < RuntimeError

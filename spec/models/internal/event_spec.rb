@@ -234,6 +234,15 @@ describe Internal::Event do
     end
   end
 
+  describe "#type_id=" do
+    context "when event is initialised with 'online' event_type" do
+      subject { described_class.new({ type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }) }
+      it "sets 'is_online' to true" do
+        expect(subject.is_online).to be true
+      end
+    end
+  end
+
   describe "#save" do
     subject { described_class.new }
 

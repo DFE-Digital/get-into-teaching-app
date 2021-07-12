@@ -4,7 +4,8 @@
   }
 
   .registration__event,
-  .registration__mailing-list {
+  .registration__mailing-list,
+  .registration__callback {
     margin: auto $indent-amount;
 
     @include mq($from: tablet) {

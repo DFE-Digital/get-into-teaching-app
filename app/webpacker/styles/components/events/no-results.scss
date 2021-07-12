@@ -10,7 +10,11 @@
     color: $white;
   }
 
-  @include mq($from: tablet) {
-    width: 70%;
+  p {
+    margin: 0px 0px 10px 0px;
+  }
+
+  .button {
+    padding: 10px 1.5rem;
   }
 }

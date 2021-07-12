@@ -13,9 +13,11 @@
           <%= yield :before_search %>
         </article>
       </section>
-      <div class="feature">
-        <%= render @search_component %>
-      </div>
+      <% if @search_component %>
+        <div class="feature">
+          <%= render @search_component %>
+        </div>
+      <% end %>
       <section class="container events">
         <article class="fullwidth">
           <%= yield %>
@@ -23,8 +25,6 @@
       </section>
     </main>
 
-    <%= render "sections/footer" %>
-    <%= render "sections/cookie-acceptance" %>
-    <%= render "components/videoplayer" %>
+    <%= render FooterComponent.new %>
   <% end %>
 </html>

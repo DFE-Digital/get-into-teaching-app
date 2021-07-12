@@ -1,0 +1,16 @@
+<section class="registration__callback">
+  <p>
+    <%= back_link step_path(wizard.previous_key) if wizard.previous_key %>
+  </p>
+
+  <%= govuk_form_for current_step, url: step_path do |f| %>
+    <%= f.govuk_error_summary %>
+
+    <%= render current_step.key, current_step: current_step, f: f %>
+
+    <% if wizard.can_proceed? %>
+      <% button_text = safe_html_format(wizard.last_step? ? "Book your callback <span></span>" : "Next Step <span></span>") %>
+      <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
+    <% end %>
+  <% end %>
+</section>

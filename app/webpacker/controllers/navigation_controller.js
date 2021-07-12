@@ -1,50 +1,79 @@
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = ['hamburger', 'label', 'links'];
-  static closedClass = 'navbar__mobile--closed';
+  static targets = ['primary', 'nav', 'menu'];
 
-  connect() {
-    this.navToggle()
+  connect() {}
 
-    this.searchHandler = this.hide.bind(this)
-    document.addEventListener('navigation:search', this.searchHandler)
+  toggleMenu(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const toggle = event.target.closest('li');
+    const secondary = event.target.closest('li').querySelector('ol.secondary')
+
+
+    if (secondary.classList.contains(this.menuHiddenClass)) {
+      this.expandMenu(secondary, toggle);
+    } else {
+      this.collapseMenu(secondary, toggle);
+    }
   }
 
-  disconnect() {
-    if (document && this.searchHandler)
-      document.removeEventListener('navigation:menu', this.searchHandler)
+  // toggles the entire nav on tablet/mobile
+  toggleNav(event) {
+    event.preventDefault();
+    event.stopPropagation();
+
+    const nav = this.navTarget;
+
+    if (nav.classList.contains(this.navHiddenClass)) {
+      this.expandNav();
+    } else {
+      this.collapseNav();
+    }
   }
 
-  navToggle() {
-    this.visible ? this.hide() : this.show()
+  collapseMenu(menu, item) {
+    menu.classList.add(this.menuHiddenClass);
+
+    item.classList.remove('down');
+    item.classList.add('up');
   }
 
-  show() {
-    this.element.classList.remove(this.constructor.closedClass) ;
+  expandMenu(menu, item) {
+    this.collapseAllOpenMenus();
+    menu.classList.remove(this.menuHiddenClass);
 
-    this.linksTarget.style.display = 'block';
-    this.hamburgerTarget.className = 'icon-close';
-    this.labelTarget.innerHTML = 'Close';
-
-    this.notify()
+    item.classList.remove('up');
+    item.classList.add('down');
   }
 
-  hide() {
-    this.element.classList.add(this.constructor.closedClass) ;
+  collapseAllOpenMenus() {
+    this.primaryTarget.querySelectorAll('li.menu.down').forEach((li) => {
+      const menu = li.querySelector('ol.secondary');
 
-    this.linksTarget.style.display = 'none';
-    this.hamburgerTarget.className = 'icon-hamburger';
-    this.labelTarget.innerHTML = 'Menu';
+      if (menu && li) {
+        this.collapseMenu(menu, li);
+      }
+    });
   }
 
-  get visible() {
-    return !this.element.classList.contains(this.constructor.closedClass)
+  collapseNav() {
+    this.menuTarget.classList.remove('open');
+    this.navTarget.classList.add(this.navHiddenClass);
   }
 
-  notify() {
-    const showingMenuEvent = new CustomEvent('navigation:menu');
+  expandNav() {
+    this.menuTarget.classList.add('open');
+    this.navTarget.classList.remove(this.navHiddenClass);
+  }
 
-    document.dispatchEvent(showingMenuEvent);
+  get menuHiddenClass() {
+    return 'hidden';
+  }
+
+  get navHiddenClass() {
+    return 'hidden-mobile';
   }
 }

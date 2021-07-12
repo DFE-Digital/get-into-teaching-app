@@ -2,10 +2,8 @@
 title: "Salaries and benefits"
 description: |-
   View teachers' pay scales, pay ranges table and salary bands for England and London, 
-  as well as other benefits such as holidays and pensions. This
-  also includes additional pay if you teach SEN or take on extra
-  responsibilities.
-date: "2021-06-21"
+  as well as other benefits such as holidays and the Teacher Pension Scheme. Find out the average starting salary for primary and secondary school teachers, as well as leading practictioners and headteachers.
+date: "2021-06-24"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
 navigation: 40
@@ -57,7 +55,7 @@ What you're paid will be linked to performance, not length of service - meaning 
 
 ## Qualified teachers
 
-As a newly qualified teacher (NQT) in a primary or secondary school your salary will be between £25,714 and £32,157 depending on where you teach.
+As a newly qualified teacher (NQT) in a primary or secondary school your starting salary will be between £25,714 and £32,157 depending on where you teach.
 
 As you progress in your teaching career, it's possible to move up through these pay scales:
 
@@ -67,6 +65,8 @@ As you progress in your teaching career, it's possible to move up through these 
 | Outer London                  | £29,915 | £45,766 |
 | London fringe                 | £26,948 | £42,780 |
 | The rest of England and Wales | £25,714 | £41,604 |
+
+In 2020/21, the average salary for a primary school teacher was £36,900. The average salary for a secondary school teacher was £39,900.
 
 ### Holidays
 
@@ -136,6 +136,8 @@ The pay scale for a headteacher is between £47,735 to £125,098 depending on wh
 | Outer London                  | £51,082 | £120,513 |
 | London fringe                 | £48,901 | £118,356 |
 | The rest of England and Wales | £47,735 | £117,197 |
+
+In 2020/21, the average salary for a headteacher was £73,500.
 
 #### Other leadership team positions
 
