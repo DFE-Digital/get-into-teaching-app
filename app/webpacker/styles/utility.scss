@@ -25,11 +25,7 @@
 }
 
 @mixin external-link-icon {
-  a:not(.no-external-icon) {
-    @include _external-link-icon-style;
-  }
-
-  a:not(.button--no-external-icon) {
+  a:not(.button) {
     @include _external-link-icon-style;
   }
 }

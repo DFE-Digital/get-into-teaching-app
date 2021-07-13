@@ -67,12 +67,6 @@ a {
     @include font-size("xsmall");
     padding: 8px $indent-amount;
   }
-
-  &--no-external-icon {
-    &:after {
-      content: none;
-    }
-  }
 }
 
 .call-to-action-icon-button {

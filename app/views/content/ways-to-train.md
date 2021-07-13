@@ -10,6 +10,7 @@ subtitle_link: "/start-teacher-training-this-september"
 date: "2021-06-07"
 backlink: "../"
 navigation: 20
+article_classes: ['ways-to-train']
 right_column:
   ctas:
     - title: Start your training this September
@@ -20,6 +21,19 @@ right_column:
       icon: "icon-calendar"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
+calls_to_action:
+    find-postgraduate-training:
+      name: simple
+      arguments:
+        icon: "icon-arrow"
+        text: |-
+          If you have a degree (or you're getting one), search for postgraduate courses leading to qualified teacher status (QTS). This search tool does not include <a href="https://www.teachfirst.org.uk/">Teach First</a> courses.
+        link_text: "Find postgraduate teacher training courses"
+        link_target: "https://www.gov.uk/find-postgraduate-teacher-training-courses"
+related_content:
+    Get support training to teach if you're disabled: "/tta-service"
+    Improve your subject knowledge : "/improve-your-subject-knowledge"
+    Tips on applying for teacher training : "/tips-on-applying-for-teacher-training"
 keywords:
   - QTS
   - Qualified Teacher Status
@@ -43,208 +57,155 @@ keywords:
   - Assessment-only
   - AO
   - Providers
-calls_to_action:
-  get-a-tta:
-    name: simple
-    arguments:
-      title: "Get support from a teacher training adviser"
-      text: "If you’re not sure which would be the best way to train for you, you can get personalised support from a teacher training adviser."
-      link_text: "Get a Teaching Training Adviser"
-      link_target: "/tta-service"
-      icon: "icon-person"
-      hide_on_desktop: true
-  pgce:
-    name: feature_table
-    arguments:
-      - Cost: "Up to £9,250"
-        Salary: "No"
-        Funding available: "Yes"
-        Length of training: "Typically 1 academic year"
-        Available for: "Primary, secondary"
-        Qualification: "PGCE and QTS"
-      - "Postgraduate Certificate in Education (PGCE)"
-  school-direct-fee-funded:
-    name: feature_table
-    arguments:
-      - Cost: "Up to £9,250"
-        Salary: "No"
-        Funding available: "Yes"
-        Length of training: "1 academic year"
-        Available for: "Primary, secondary"
-        Qualification: "QTS, PGCE dependent on the course"
-      - "School direct (fee-funded)"
-  school-direct-salaried:
-    name: feature_table
-    arguments:
-      - Cost: "You do not pay tuition fees"
-        Salary: "Yes"
-        Funding available: "No"
-        Length of training: "Typically 1 academic year"
-        Available for: "Primary, secondary"
-        Qualification: "QTS, PGCE dependent on the course"
-      - "School direct (salaried)"
-  postgraduate-teaching-apprenticeship:
-    name: feature_table
-    arguments:
-      - Cost: "You do not pay tuition fees"
-        Salary: "Yes"
-        Funding available: "No"
-        Length of training: "1 year"
-        Available for: "Primary, secondary"
-        Qualification: "QTS"
-      - "Postgraduate teaching apprenticeship"
-  undergraduate:
-    name: feature_table
-    arguments:
-      - Cost: "Typically £9,250 per year"
-        Salary: "No"
-        Funding available: "Yes"
-        Length of training: "1 to 4 years"
-        Available for: "Primary, secondary"
-        Qualification: "Qualifications vary. For example: Bachelor of Arts (BA) with QTS, Bachelor of Education (BEd) with QTS, or Bachelor of Science (BSc) with QTS."
-      - "Undergraduate teacher training"
-  teach-first:
-    name: feature_table
-    arguments:
-      - Cost: "You do not pay tuition fees"
-        Salary: "Yes"
-        Funding available: "No"
-        Length of training: "2 years"
-        Available for: "Primary, secondary"
-        Qualification: "PGDE with QTS"
-      - "Teach First"
-  assessment-only:
-    name: feature_table
-    arguments:
-      - Available for: "Primary, secondary, further education"
-        Qualification: "QTS"
-      - "Assessment only"
 ---
 
-You need to get 'qualified teacher status' (QTS) to teach in the majority of schools in England. This includes primary, secondary and special ‘maintained schools’ - part of the state funded schools system.
+You need 'qualified teacher status' (QTS) to work in the majority of schools in England including state maintained primary, secondary and special schools.
 
-You can get QTS in different ways.
+Find out how to get QTS if you:
 
-For example, if you already have an undergraduate degree you can do a postgraduate initial teacher training (ITT) course which leads to QTS.
+* [have a degree](#if-you-have-a-degree) (or you're getting one)
+* [do not have a degree](#if-you-do-not-have-a-degree) (and you're not already doing one)
+* [are already an experienced teacher](#if-you-are-already-an-experienced-teacher)
 
-If you do not have a degree, you can do an undergraduate degree which leads to QTS.
+You can also find specialised training programmes if you're [changing career](#if-youre-changing-career) or you [have a doctorate](#if-you-have-a-doctorate).
 
-Different types of training have different eligibility criteria, [funding options](/funding-your-training) and qualifications. Lots of courses also allow you to study part-time.
+Not looking to teach in primary or secondary settings? Consider teaching [early years](/early-years-teaching-training) or [further education](/become-a-further-education-teacher).
 
-You can also [get support to improve your subject knowledge](/improve-your-subject-knowledge) to supplement your training.
+## If you have a degree
 
-Not looking for primary or secondary training? Consider training to teach [early years](/early-years-teaching-training) or [further education](/become-a-further-education-teacher).
+### Go back to university as a postgraduate student
 
-$get-a-tta$
+With university-led training you spend about a third of your time in academic learning and the rest in school placements.
 
-$pgce$
+In addition to QTS you'll get a PGCE or PGDE (an academic qualification).
 
-PGCE programmes combine academic study with a minimum of 24 weeks spent training in schools.
+Courses typically take one year but you may be able to study part-time.
 
-You do not need an academic qualification such as a PGCE to teach in England, but it may be useful if you want to teach in another country.
+Fees are usually around £9,250 but you can:
 
-Many PGCE courses give you credits that count towards a master’s degree.
+* get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
+* apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
 
-You can also [get funding](/funding-your-training).
+<div class="training-attributes">
+  <h4>University-led training</h4>
+  <div class="badges">
+    <span class="badge pink">Costs £9,250</span>
+    <span class="badge dark-cyan">Funding available</span>
+    <span class="badge purple">Takes 1 year</span>
+    <span class="badge dark-blue">PGCE or PGDE</span>
+  </div>
+</div>
 
-#### Postgraduate Diploma in Education
+### Train as you teach at a school or group of schools
 
-Some providers offer a Postgraduate Diploma in Education (PGDE) instead of a PGCE. A PGDE sometimes offers more masters credits than a PGCE.
+On a 'school direct (fee-funded)' programme you spend less time learning about the theory of teaching than you would in [university-led training](/ways-to-train#go-back-to-university-as-a-postgraduate-student).
 
-<p class="call-to-action__action">
-  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find a PGCE or PGDE <span>course</span></a>
-</p>
+Despite the focus on training as you teach, many courses give you a PGCE or PGDE (an academic qualification) in addition to QTS.
 
-$school-direct-fee-funded$
+Courses typically take one year but you may be able to study part-time.
 
-You’ll learn as you teach while you work towards qualified teacher status (QTS).
+Fees are usually around £9,250 but you can:
 
-You’ll be based in a school but you will not be employed by them.
+* get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
+* apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)  
 
-You’ll also be taught by the university, college, or school-centred initial teacher training (SCITT) provider that the school partners with.
+<div class="training-attributes">
+  <h4>School direct<br/>(fee-funded)</h4>
+  <div class="badges">
+    <span class="badge pink">Costs £9,250</span>
+    <span class="badge dark-cyan">Funding available</span>
+    <span class="badge purple">Takes 1 year</span>
+    <span class="badge dark-blue">Often a PGCE or PGDE</span>
+  </div>
+</div>
 
-Most school direct programmes lead to a PGCE, but not all do. Check with the training provider before you apply.
+### Earn a salary
 
-You can also [get funding](/funding-your-training).
+Some training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary.
 
-<p class="call-to-action__action">
-  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find a school direct <span>course</span></a>
-</p>
+You spend less time learning about the theory of teaching than you would in [university-led training](/ways-to-train#go-back-to-university-as-a-postgraduate-student).
 
-$school-direct-salaried$
+Despite the focus on training as you teach, many 'school direct (salaried)' courses give you a PGCE or PGDE (an academic qualification) in addition to QTS.
 
-You’ll be employed by a school as an unqualified teacher while you work towards qualified teacher status (QTS).
+Courses typically take one year but you may be able to study part-time.
 
-You’ll earn a salary and do not need to pay any tuition fees.
+[Teach First](https://www.teachfirst.org.uk/) also offers a salary. It's a 2-year programme leading to a PGDE and QTS.
 
-This route typically requires 3 years of transferable work history.
+<dl>
+  <div class="training-option">
+    <dt>School direct<br/>(salaried)</dt>
+    <dd class="badges">
+      <span class="badge purple">Takes 1 year</span>
+      <span class="badge dark-blue">Often a PGCE or PGDE</span>
+    </dd>
+  </div>
 
-Most school direct programmes lead to a PGCE, but not all do. Check with the training provider before you apply.
+  <div class="training-option">
+    <dt>Postgraduate teaching apprenticeship</dt>
+    <dd class="badges">
+      <span class="badge purple">Takes 1 year</span>
+    </dd>
+  </div>
 
-<p class="call-to-action__action">
-  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find a school direct <span>course</span></a>
-</p>
+  <div class="training-option">
+    <dt>Teach First</dt>
+    <dd class="badges">
+      <span class="badge purple">Takes 2 years</span>
+      <span class="badge dark-blue">PGDE</span>
+    </dd>
+  </div>
+</dl>
 
-$postgraduate-teaching-apprenticeship$
+$find-postgraduate-training$
 
-You’ll be employed by a school and learn while you’re working.
+## If you do not have a degree
 
-You’ll split your time between school and university study, with at least 20% of your time studying.
+### Do an undergraduate teacher training degree
 
-<p class="call-to-action__action">
-  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find a postgraduate teaching <span>apprenticeship</span></a>
-</p>
+You can get QTS as part of an undergraduate degree.
 
-$teach-first$
+Courses typically cost £9,250 per year and can take up to 4 years but you can [get funding](https://www.gov.uk/student-finance-calculator).
 
-The Teach First Leadership Development Programme is a 2-year salaried programme.
+Qualifications vary depending on the course. For example, you could get QTS with a:
 
-It combines leadership development with teacher training, and focuses on training exceptional teachers to teach in challenging schools.
+* Bachelor of Arts (BA)
+* Bachelor of Education (BEd)
+* Bachelor of Science (BSc)
 
-You’ll learn on the job while you work towards qualified teacher status (QTS) and a Postgraduate Diploma in Education (PGDE).
+<div class="training-attributes">
+  <h4>Undergraduate teacher training</h4>
+  <div class="badges">
+    <span class="badge pink">Costs £9,250 per year</span>
+    <span class="badge dark-cyan">Funding available</span>
+    <span class="badge purple">Up to 4 years</span>
+    <span class="badge dark-blue">Qualifications vary</span>
+  </div>
+</div>
 
-A PGDE contains up to 120 credits at master’s degree level.
+<a href="https://digital.ucas.com/search" class="button">Find an undergraduate course</a>
 
-<p class="call-to-action__action">
-  <a href="https://www.teachfirst.org.uk/">Find a Teach First <span>course</span></a>
-</p>
+## If you are already an experienced teacher
 
-$undergraduate$
+You may be able to get QTS through a 12-week 'assessment only' programme if you also have a degree.
 
- You can get qualified teacher status (QTS) as part of an undergraduate degree course.
+You’ll need to show that you already meet the standards for QTS. For example, you may meet the standards if:
 
- This could be right for you if you do not have a degree yet.
+* you’ve already been employed as an unqualified teacher for a significant amount of time (for example, 2 years) and you’ve worked in more than one school
+* [you’re a qualified teacher who trained overseas](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk)
 
- You can also [get funding](/funding-your-training).
+Entry criteria may vary by teacher training provider. Ask them about eligibility before you apply.
 
- <p class="call-to-action__action">
-   <a href="https://digital.ucas.com/search">Find an undergraduate <span>course</span></a>
- </p>
+[Apply directly to assessment only teacher training providers](/assessment-only-providers).
 
-$assessment-only$
+## If you're changing career
 
-If you’re an experienced teacher with a degree, you can gain QTS without doing a teacher training programme.
-
-You’ll need to show evidence that you meet the standards for QTS.
-
-A number of universities and School Centred Initial Teacher Training programmes (SCITTs) offer assessment only routes. Their criteria for entry may vary.
-
-You can apply to them directly.
-
-<p class="call-to-action__action">
-  <a href="/assessment-only-providers">See assessment only <span>providers</span></a>
-</p>  
-
-## Specialised routes into teaching
-
-### Career changers
-
-A career change into teaching will give you the opportunity to use your life, work experience and passion for your subject to inspire young people.
+A career change into teaching allows you to use your experience and
+passion to inspire young people.
 
 [Now Teach](https://nowteach.org.uk/) and [Transition to Teach](https://www.transitiontoteach.co.uk/) can support you with your career change.
 
-### Researchers in schools
+## If you have a doctorate
 
-[Researchers in schools](https://thebrilliantclub.org/researchers-in-schools/) offers a route into teaching if you have or are about to get a PHD.
+If you have or are about to get a PHD you could consider the [researchers in schools](https://thebrilliantclub.org/researchers-in-schools/) programme.
 
-If you have a lot of relevant work experience you could [train and earn a salary](https://thebrilliantclub.org/researchers-in-schools/ris-applicants/ris-training-routes/salary-route/).
+If you have a lot of relevant work experience you could even earn a salary.

@@ -32,6 +32,8 @@
             </div>
           <% end %>
 
+          <%= render partial: "layouts/shared/narrow_call_to_action" %>
+
           <% if @front_matter["related_content"].present? %>
             <div class="link-block link-block--related">
               <h2 class="link-block__header">Related Content:</h2>
@@ -45,7 +47,6 @@
             </div>
           <% end %>
 
-          <%= render partial: "layouts/shared/narrow_call_to_action" %>
         </aside>
         <% end %>
 
@@ -90,4 +91,3 @@
     <%= render FooterComponent.new(lid_pixel_event: @front_matter["lid_pixel_event"]) %>
     <% end %>
 </html>
-
