@@ -270,21 +270,22 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
             position: relative;
             font-weight: bold;
 
-            &:before {
+            &:before,
+            &:after {
               content: '"';
+              color: $pink;
+            }
+
+            &:before {
               content: open-quote;
               position: absolute;
               left: -.8em;
               top: -.3em;
-              color: $pink;
             }
 
             &:after {
-              content: '"';
               content: close-quote;
-              left: .8em;
-              top: .3em;
-              color: $pink;
+              margin-left: .2em;
             }
           }
 
