@@ -31,7 +31,7 @@ calls_to_action:
         link_text: "Find postgraduate teacher training courses"
         link_target: "https://www.gov.uk/find-postgraduate-teacher-training-courses"
 related_content:
-    Get support training to teach if you're disabled: "/tta-service"
+    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
     Improve your subject knowledge : "/improve-your-subject-knowledge"
     Tips on applying for teacher training : "/tips-on-applying-for-teacher-training"
 keywords:
