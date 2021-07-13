@@ -53,14 +53,14 @@ html.js-enabled {
       font-size: .9rem;
     }
   }
-  
+
   .extra-navigation__search__icon {
-	  margin-left: 0;
-	    z-index: 0;
+    margin-left: 0;
+    z-index: 0;
+
     span {
-	    padding:0;
+      padding: 0;
     }
-    
   }
 
   &.hide-on-mobile.hide-on-tablet {
@@ -82,11 +82,10 @@ html.js-enabled {
 
     li.extra-navigation__link {
       margin-left: 2em;
-      
+
       &.extra-navigation__search__icon {
-		  margin-left: 0; 
+        margin-left: 0;
       }
-      
     }
 
     @include mq($until: tablet) {
