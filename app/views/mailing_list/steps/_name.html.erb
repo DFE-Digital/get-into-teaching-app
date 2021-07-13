@@ -1,8 +1,11 @@
-<h1>Get personalised guidance to your inbox</h1>
+<div class="signup-header">
+  <h1 class="header">Get personalised guidance to your inbox</h1>
 
-<p>
-  Get one step closer to the classroom with guidance tailored to you, including how to get:
-</p>
+  <p class="paragraph">
+    Get one step closer to the classroom with guidance tailored to you, including how to get:
+  </p>
+  <%= image_pack_tag 'content/hero-images/0027.jpg', class: 'img hide-on-desktop' %>
+</div>
 
 <ul>
   <li> a taste of teaching</li>
@@ -13,7 +16,7 @@
 
 <%= f.govuk_error_summary %>
 
-<%= f.govuk_text_field :first_name %>
-<%= f.govuk_text_field :last_name %>
-<%= f.govuk_email_field :email %>
+<%= f.govuk_text_field :first_name, class: 'govuk-!-width-two-thirds' %>
+<%= f.govuk_text_field :last_name, class: 'govuk-!-width-two-thirds' %>
+<%= f.govuk_email_field :email, class: 'govuk-!-width-two-thirds' %>
 <%= f.hidden_field :channel_id, value: params[:channel] %>

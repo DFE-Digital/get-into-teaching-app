@@ -1,0 +1,45 @@
+.attractive-layout {
+  margin-bottom: 0px;
+  padding-top: 100px;
+  padding-bottom: 200px;
+
+  background-color: $grey;
+
+  .signup-container {
+    @include mq($from: desktop) {
+      display: grid;
+      grid-template-columns: 0.5fr 2fr 0.5fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
+    }
+
+    .signup-form {
+      background-color: $white;
+      padding: 2em;
+      position: relative;
+      z-index: 2;
+
+      &:after {
+        content: "";
+        display: block;
+        width: calc(60% + 1.25em);
+        height: calc(30% + 1.25em);
+        position: absolute;
+        bottom: -1.25em;
+        right: -1.25em;
+        background-color: #159964;
+        z-index: 1;
+      }
+    }
+
+    .left-img {
+      margin-top: 4em;
+      float: right;
+    }
+
+    .right-img {
+      margin-top: 2em;
+      float: left;
+    }
+  }
+ }

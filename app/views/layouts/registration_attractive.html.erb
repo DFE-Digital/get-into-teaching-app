@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <% content_for :head do %>
+    <%= javascript_pack_tag 'govuk/error_summary', 'data-turbolinks-track': 'reload', async: true %>
+  <% end %>
+
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
+
+    <%= render HeaderComponent.new %>
+
+    <main role="main" id="main-content" class="attractive-layout">
+      <section class="signup-container">
+        <%= image_pack_tag 'content/hero-images/0025.jpg', class: 'left-img hide-on-mobile hide-on-tablet' %>
+        <div class="signup-form">
+          <%= yield %>
+        </div>
+        <%= image_pack_tag 'content/hero-images/0026.jpg', class: 'right-img hide-on-mobile hide-on-tablet' %>
+      </section>
+
+    </main>
+
+    <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
+  <% end %>
+</html>
