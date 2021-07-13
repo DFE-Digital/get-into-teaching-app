@@ -7,16 +7,6 @@ description: |-
 date: "2021-06-17"
 image: "media/images/content/hero-images/0008.jpg"
 backlink: "../"
-right_column:
-  ctas:
-    - title: Sign up for our event
-      text: |
-       Get tips from our experts on making a strong application.  
-      link_text: "Sign up"
-      link_target: "https://us02web.zoom.us/webinar/register/8016246210418/WN_HaeN54dwSlOVQParj9XWQg"
-      icon: "icon-calendar"
-      hide_on_mobile: No
-      hide_on_tablet: No
 keywords:
     - Application
     - Apply
