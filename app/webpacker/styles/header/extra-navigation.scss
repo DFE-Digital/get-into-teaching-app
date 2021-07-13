@@ -52,6 +52,14 @@ html.js-enabled {
       width: 110%;
       font-size: .9rem;
     }
+
+    div[data-searchbox-target='searchbar'] {
+      display: inline-block;
+    }
+
+    .fa-search {
+      margin-left: 1.2em;
+    }
   }
 
   .extra-navigation__search__icon {
