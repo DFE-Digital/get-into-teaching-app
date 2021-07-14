@@ -13,6 +13,14 @@ right_column:
       icon: "icon-arrow"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
+calls_to_action:
+  get-an-adviser:
+    name: simple
+    arguments:
+      text: "A teacher training adviser can help support your application for teacher training, including funding, personal statements and finding the right course for you."
+      link_text: "Get an adviser"
+      link_target: "/tta-service"
+      icon: "icon-person"
 keywords:
   - Disabled
   - Disability
@@ -54,3 +62,5 @@ You may be able to [get support if you’re a student and you’re disabled, hav
 [If you do paid training you may also be eligible for support](https://www.gov.uk/access-to-work).
 
 [AbilityNet](https://abilitynet.org.uk/about-abilitynet) or [Disability Rights UK](https://www.disabilityrightsuk.org/adjustments-disabled-students) may also be able to help you identify technology or other adjustments to help you study.
+
+$get-an-adviser$

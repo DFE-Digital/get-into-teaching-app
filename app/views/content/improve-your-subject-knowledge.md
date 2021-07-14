@@ -13,10 +13,19 @@ right_column:
       icon: "icon-arrow"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
+calls_to_action:
+  find-an-event:
+    name: simple
+    arguments:
+      text: "Ask teacher training providers any questions you have, including on subject knowledge enhancement courses, at an event."
+      link_text: "Find an event near you"
+      link_target: "/events"
+      icon: "icon-calendar"
 keywords:
   - Subject knowledge
   - Subject knowledge enhancement
   - SKE
+  - enhance
 ---
 If you're concerned about how well you know the subject you want to teach, do not worry - you may be able to do a 'subject knowledge enhancement' (SKE) course.
 
@@ -35,3 +44,5 @@ Completing a course may be a condition of your offer to train.
 [Check whether there’s a subject knowledge enhancement course for your subject](https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory). They're typically offered for subjects where there’s a particular demand for teachers.
 
 Courses are available across England and are often online. You can do them before or alongside your [teacher training](/ways-to-train). You may also be able to study part-time.
+
+$find-an-event$
