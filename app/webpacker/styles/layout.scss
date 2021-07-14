@@ -3,6 +3,10 @@
   margin: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: $git-font-family;
 
