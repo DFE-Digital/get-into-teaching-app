@@ -37,6 +37,10 @@
     "stylelint-config-gds": "^0.1.0",
     "webpack-dev-server": "^3.11.2"
   },
+  "resolutions": {
+    "glob-parent": "^5.1.2",
+    "css-what": "^5.0.1"
+  },
   "jest": {
     "testRegex": ".*_spec.js",
     "roots": [
