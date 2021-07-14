@@ -1,7 +1,9 @@
 <section class="registration__mailing-list">
-  <p>
-    <%= back_link step_path(wizard.previous_key) if wizard.previous_key %>
-  </p>
+  <% if wizard.previous_key %>
+    <p>
+      <%= back_link step_path(wizard.previous_key) %>
+    </p>
+  <% end %>
 
   <%= govuk_form_for current_step, url: step_path do |f| %>
     <%= render current_step.key, current_step: current_step, f: f %>

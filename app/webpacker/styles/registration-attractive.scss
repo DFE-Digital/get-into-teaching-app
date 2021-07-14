@@ -1,11 +1,13 @@
 .attractive-layout {
   margin-bottom: 0px;
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-top: 4rem;
+  padding-bottom: 8rem;
 
   background-color: $grey;
 
   .signup-container {
+    padding: 0 2rem;
+
     @include mq($from: desktop) {
       display: grid;
       grid-template-columns: 0.5fr 2fr 0.5fr;
@@ -17,20 +19,49 @@
       background-color: $white;
       padding: 2em;
       position: relative;
-      z-index: 2;
+      // z-index: 2;
 
-      &:after {
-        content: "";
-        display: block;
-        width: calc(60% + 1.25em);
-        height: calc(30% + 1.25em);
-        position: absolute;
-        bottom: -1.25em;
-        right: -1.25em;
-        background-color: #159964;
-        z-index: 1;
+      // &:after {
+      //   content: "";
+      //   display: block;
+      //   width: calc(60% + 1.25em);
+      //   height: calc(30% + 1.25em);
+      //   position: absolute;
+      //   bottom: -1.25em;
+      //   right: -1.25em;
+      //   background-color: #159964;
+      //   z-index: 1;
+      // }
+
+    }
+
+    .signup-form-header {
+      @include mq($until: desktop) {
+        display: grid;
+        grid-template-columns: 2fr 200px;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+      }
+
+      &-right-side {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        max-width: 20%;
+
+        img {
+          max-width: 40%;
+          top: -1rem;
+          right: -1rem;
+          position: absolute;
+        }
+      }
+
+      &-left-side {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
       }
     }
+
 
     .left-img {
       margin-top: 4em;
