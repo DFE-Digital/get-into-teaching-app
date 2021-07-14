@@ -11,7 +11,7 @@ known as cookies.
 The information below shows the cookies that are set by
 [education.gov.uk](https://www.gov.uk/government/organisations/department-for-education)
 and the third-party services we use. At the header and footer of this
-page, you can change your preferences at any time for marketing cookies.
+page, you can [change your preferences at any time](/cookie_preference) for marketing cookies.
 
 ### 1. Functional cookies
 
@@ -137,5 +137,6 @@ you can find out more about how to manage your cookies.
   - [**Mozilla Firefox**](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&redirectslug=Cookies)
   - [**Safari**](https://support.apple.com/kb/ph21411?locale=en_GB)
 
-Find out how we use your personal data when you sign up for our
-services.
+Find out [how we use your personal data](/privacy-policy) when you sign up for our services.
+
+You can [change your preferences at any time](/cookie_preference) for marketing cookies.
