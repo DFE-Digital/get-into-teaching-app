@@ -137,5 +137,4 @@ you can find out more about how to manage your cookies.
   - [**Mozilla Firefox**](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&redirectslug=Cookies)
   - [**Safari**](https://support.apple.com/kb/ph21411?locale=en_GB)
 
-Find out how we use your personal data when you sign up for our
-services.
+Find out [how we use your personal data](/privacy-policy) when you sign up for our services.
