@@ -51,14 +51,6 @@
         text: "Use the student finance calculator on GOV.UK to find out how much funding you can get."
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
-    international-candidates:
-      name: simple
-      arguments:
-        icon: "icon-arrow"
-        text: "If you come from outside England."
-        link_text: "Train to teach as an international candidate"
-        link_target: "/train-to-teach-in-england-as-an-international-student"
-
   keywords:
     - Bursaries
     - Bursary
@@ -198,4 +190,4 @@ Contact the education authority if you live in the Channel Islands ([Jersey](htt
 
 [Find out more about financial help if you're an applicant from outside the UK](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#financial-support-for-non-uk-applicants-for-unsalaried-teacher-training-in-england).
 
-$international-candidates$
+<a class ="button button--white" href ="/train-to-teach-in-england-as-an-international-student">Train to teach as an international candidate</a>
