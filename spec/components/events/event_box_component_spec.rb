@@ -25,7 +25,7 @@ describe Events::EventBoxComponent, type: "component" do
 
   describe "online/offline" do
     let(:online_heading) { "Online event" }
-    let(:moved_online_heading) { "Event has moved online" }
+    let(:moved_online_heading) { "Online event" }
 
     context "when the event is an online event type" do
       let(:event) { build(:event_api, :online_event) }
@@ -101,7 +101,7 @@ describe Events::EventBoxComponent, type: "component" do
     end
 
     specify %(the event should also be described as a 'Event has moved online') do
-      expect(page).to have_content("Event has moved online")
+      expect(page).to have_content("Online event")
     end
 
     specify %(the online icon should be purple) do

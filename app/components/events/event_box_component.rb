@@ -54,7 +54,7 @@ module Events
     end
 
     def online_text
-      return "Event has moved online" if virtual?
+      return "Online event" if virtual?
 
       "Online event"
     end
