@@ -1,4 +1,4 @@
-FROM ruby:2.7.3-alpine3.12
+FROM ruby:2.7.3-alpine3.13
 
 ENV RAILS_ENV=production \
     NODE_ENV=production \
@@ -15,15 +15,15 @@ ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server" ]
 
 RUN apk add --no-cache build-base git tzdata shared-mime-info nodejs yarn\
-    wget xvfb unzip chromium chromium-chromedriver\
-    jpegoptim=1.4.6-r0 optipng=0.7.7-r0 imagemagick=7.0.10.48-r0 parallel=20200522-r0
+    wget xvfb unzip chromium chromium-chromedriver \
+    optipng jpegoptim imagemagick parallel
 
 # install NPM packages removign artifacts
 COPY package.json yarn.lock ./
 RUN yarn install && yarn cache clean
 
 # Install bundler
-RUN gem install bundler --version=2.2.8
+RUN gem install bundler --version=2.2.23
 
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./

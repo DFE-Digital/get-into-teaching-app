@@ -62,6 +62,13 @@ gem "view_component", "~> 2.35.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
+# Fix CVE errors
+gem "delegate", ">= 0.2.0"
+gem "logger", ">= 1.4.3"
+gem "matrix", ">= 0.4.2"
+gem "observer", ">= 0.1.0"
+gem "rexml", ">= 3.2.5"
+
 # Ignore cloudfront IPs when getting customer IP address
 gem "actionpack-cloudfront", ">= 1.1.0"
 
