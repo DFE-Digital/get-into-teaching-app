@@ -32,17 +32,24 @@
       //   background-color: #159964;
       //   z-index: 1;
       // }
+    }
 
+    @include mq($until: desktop) {
+      picture {
+        position: relative;
+        float: right;
+        right: -3em;
+        top: -3em;
+        width: 40%;
+        min-width: 10em;
+
+        img {
+          width: 100%;
+        }
+      }
     }
 
     .signup-form-header {
-      @include mq($until: desktop) {
-        display: grid;
-        grid-template-columns: 2fr 200px;
-        grid-template-rows: 1fr;
-        gap: 0px 0px;
-      }
-
       &-right-side {
         grid-column: 2 / 3;
         grid-row: 1 / 2;
@@ -50,9 +57,8 @@
 
         img {
           max-width: 40%;
-          top: -1rem;
-          right: -1rem;
-          position: absolute;
+          position: relative;
+          float: right;
         }
       }
 
