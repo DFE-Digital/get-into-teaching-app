@@ -26,7 +26,7 @@
               <h2 class="link-block__header">On this page:</h2>
               <ul class="link-block__list">
                 <% @front_matter["jump_links"].each do |item, anchor| %>
-                  <%= link_to(item, anchor) %>
+                  <li><%= link_to(item, anchor) %></li>
                 <% end %>
               </ul>
             </div>
@@ -40,7 +40,7 @@
               <ul class="link-block__list">
                 <ul class="link-block__list">
                   <% @front_matter["related_content"].each do |item, anchor| %>
-                    <%= link_to(item, anchor) %>
+                    <li><%= link_to(item, anchor) %></li>
                   <% end %>
                 </ul>
               </ul>
