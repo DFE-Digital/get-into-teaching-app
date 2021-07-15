@@ -7,6 +7,13 @@
   padding-bottom: 20px;
   display: flex;
   align-items: center;
+  
+  @include mq($from: tablet) {
+	  	overflow: visible;
+	  	padding-bottom: 0;
+	  	top: -23px;
+	  	position: relative;
+  }
 }
 
 .logo {

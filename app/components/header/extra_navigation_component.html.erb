@@ -9,7 +9,7 @@
     <%= tag.li(class: %w[extra-navigation__link extra-navigation__search], data: { controller: "searchbox", "searchbox-search-input-id-value" => search_input_id }) do %>
       <%= tag.label("Search", for: search_input_id, class: %w[searchbox__label visually-hidden]) %>
       <%= tag.div(data: { "searchbox-target" => "searchbar" }) %>
+      <span class="fas fa-search"></span>
     <% end %>
-    
   </ul>
 <% end %>
