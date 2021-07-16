@@ -8,40 +8,24 @@
   .signup-container {
     padding: 0 2rem;
 
-    @include mq($from: desktop) {
-      display: grid;
-      grid-template-columns: 0.5fr 2fr 0.5fr;
-      grid-template-rows: 1fr;
-      gap: 0px 0px;
-    }
-
     .signup-form {
-      background-color: $white;
-      padding: 2em;
       position: relative;
-      // z-index: 2;
-
-      // &:after {
-      //   content: "";
-      //   display: block;
-      //   width: calc(60% + 1.25em);
-      //   height: calc(30% + 1.25em);
-      //   position: absolute;
-      //   bottom: -1.25em;
-      //   right: -1.25em;
-      //   background-color: #159964;
-      //   z-index: 1;
-      // }
+      .registration__mailing-list {
+        background-color: $white;
+        padding: 2em;
+        position: relative;
+      }
     }
 
     @include mq($until: desktop) {
       picture {
         position: relative;
         float: right;
-        right: -3em;
-        top: -3em;
-        width: 40%;
-        min-width: 10em;
+        right: -1.25em;
+        top: -1.25em;
+        width: 30%;
+        min-width: 6em;
+        z-index: 1;
 
         img {
           width: 100%;
@@ -49,34 +33,30 @@
       }
     }
 
-    .signup-form-header {
-      &-right-side {
-        grid-column: 2 / 3;
-        grid-row: 1 / 2;
-        max-width: 20%;
+    @include mq($from: desktop) {
+      display: grid;
+      grid-template-columns: 0.5fr 2fr 0.5fr;
+      grid-template-rows: 1fr;
+      gap: 0px 0px;
 
-        img {
-          max-width: 40%;
-          position: relative;
-          float: right;
-        }
+      .signup-form:before {
+        content: "";
+        width: calc(60% + 1.25em);
+        height: calc(30% + 1.25em);
+        position: absolute;
+        bottom: -1.25em;
+        right: -1.25em;
+        background-color: $green;
       }
 
-      &-left-side {
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
+      .left-img {
+        margin-top: 4em;
+        float: right;
       }
-    }
 
-
-    .left-img {
-      margin-top: 4em;
-      float: right;
-    }
-
-    .right-img {
-      margin-top: 2em;
-      float: left;
+      .right-img {
+        margin-top: 2em;
+      }
     }
   }
- }
+}
