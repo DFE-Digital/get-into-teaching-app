@@ -1,6 +1,6 @@
 <%= tag.div(class: classes) do %>
   <ul class="extra-navigation__list">
-    <li class="extra-navigation__link "><%= link_to("Register your interest", mailing_list_steps_path) %><%= helpers.fas_icon "envelope" %></li>
+    <li class="extra-navigation__link "><%= link_to("Register your interest", "/mailinglist/signup/name" ) %><%= helpers.fas_icon "envelope" %></li>
 
     <li class="extra-navigation__link extra-navigation__search-fallback">
       <%= link_to("Search", search_path) %></li>
