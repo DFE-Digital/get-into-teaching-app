@@ -211,7 +211,8 @@ describe EventsController do
         context "when the event is a 'Pending event'" do
           let(:event) { build(:event_api, web_feed_id: nil, status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]) }
 
-          it { expect(response).to have_http_status :not_found }
+          it { expect(response).to have_http_status :success }
+          it { expect(response.body).to include("Unfortunately, that event has already happened.") }
         end
 
         it "has a meta description" do
@@ -236,7 +237,8 @@ describe EventsController do
         get(event_path(id: event_readable_id))
       end
 
-      it { is_expected.to have_http_status :not_found }
+      it { is_expected.to have_http_status :success }
+      it { expect(response.body).to include("Unfortunately, that event has already happened.") }
     end
   end
 
