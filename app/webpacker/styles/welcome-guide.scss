@@ -379,7 +379,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         grid-template-rows: repeat(2, minmax(3em, max-content));
         grid-template-columns: 15em 1fr 1fr;
 
-        // .section-number { grid-area: 2 / 1 / 3 / 3; }
+        .section-number { grid-area: 1 / 1 / 2 / 2; }
         .text { grid-area: 1 / 3 / 2 / 4; }
         .carrousel { grid-area: 2 / 1 / 3 / 4; }
       }
@@ -412,6 +412,85 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         margin: 1rem;
         outline: 5px dashed $purple;
         text-align: center;
+      }
+    }
+
+    @mixin got-questions-layout {
+      grid-template-rows: repeat(2, minmax(2em, max-content)) 2em repeat(2, minmax(2em, max-content));
+      grid-template-columns: 1fr;
+
+      @include mq($from: desktop) {
+        grid-template-rows: repeat(2, minmax(3em, max-content)) 2em repeat(2, minmax(3em, max-content));
+        grid-template-columns: repeat(2, minmax(3em, max-content)) 5em repeat(2, minmax(3em, max-content));
+
+        .section-number { grid-area: 2 / 1 / 3 / 3; }
+        picture { grid-area: 2 / 3 / 4 / 6; }
+        .text { grid-area: 3 / 1 / 5 / 4; }
+        .questions { grid-area: 5 / 1 / 6 / 6; }
+      }
+    }
+
+    &.got-questions {
+      @include got-questions-layout;
+
+      display: grid;
+
+      h2,
+      p {
+        margin: 1rem;
+      }
+
+      .text {
+        h2 {
+          @include font-size(xxlarge);
+
+          position: relative;
+          z-index: map-get($z-indices, "high");
+          display: inline-block;
+        }
+      }
+
+      .blue {
+        background: $blue;
+        padding: .3rem .6rem;
+      }
+
+      .questions {
+        display: flex;
+
+        @mixin question-decoration($content) {
+          content: $content;
+          position: absolute;
+          margin-left: -2em;
+          font-weight: bold;
+          font-size: 1.2em;
+        }
+
+        .question {
+          flex: 1 0 fill;
+          padding: 0 4em;
+
+          .q {
+            font-weight: bold;
+
+            &:before {
+              @include question-decoration("Q");
+            }
+          }
+
+          .a {
+            &:before {
+              @include question-decoration("A");
+            }
+          }
+        }
+      }
+
+      picture {
+        img {
+          width: 70%;
+          transform: rotate(3deg);
+        }
       }
     }
   }
