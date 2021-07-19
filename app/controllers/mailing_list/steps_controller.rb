@@ -8,7 +8,7 @@ module MailingList
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
 
-    layout "registration"
+    layout :resolve_layout
 
     def not_available
       render "not_available"
@@ -37,6 +37,14 @@ module MailingList
 
     def crm_store
       session[:mailinglist_crm] ||= {}
+    end
+
+    def resolve_layout
+      is_first_page = @current_step.instance_of? MailingList::Steps::Name
+
+      return "registration_attractive" if is_first_page
+
+      "registration"
     end
 
     def set_step_page_title
