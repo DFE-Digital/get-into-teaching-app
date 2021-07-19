@@ -1,6 +1,7 @@
 module Events
   class SearchComponent < ViewComponent::Base
     BLANK_MONTH_TEXT = "All months".freeze
+    FILTERABLE_MONTHS_COUNT = 6
 
     attr_accessor :search, :path, :include_type, :heading, :allow_blank_month
 
@@ -22,6 +23,10 @@ module Events
       else
         {}
       end
+    end
+
+    def filterable_months
+      search.available_months.take(FILTERABLE_MONTHS_COUNT)
     end
 
     def error_messages

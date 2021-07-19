@@ -5,7 +5,7 @@ module Events
     include ActiveModel::Validations::Callbacks
 
     RESULTS_PER_TYPE = 9
-    FUTURE_MONTHS = 5
+    FUTURE_MONTHS = 24
     PAST_MONTHS = 4
     DISTANCES = [10, 25].freeze
     MONTH_FORMAT = %r{\A20[234]\d-(0[1-9]|1[012])\z}.freeze

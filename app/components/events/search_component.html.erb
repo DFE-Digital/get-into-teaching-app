@@ -26,7 +26,7 @@
 
               <%= tag.div(class: input_field_classes(:month)) do %>
                   <%= f.label :month, "Month" %>
-                  <%= f.select :month, search.available_months, **month_args %>
+                  <%= f.select :month, filterable_months, **month_args %>
               <% end %>
             </div>
 

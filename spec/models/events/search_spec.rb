@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe Events::Search do
+  before { freeze_time }
+
   describe "attributes" do
     it { is_expected.to respond_to :type }
     it { is_expected.to respond_to :distance }
@@ -37,14 +39,14 @@ describe Events::Search do
       let(:period) { :future }
 
       it {
-        is_expected.to eq([
-          ["November 2020", "2020-11"],
-          ["December 2020", "2020-12"],
-          ["January 2021", "2021-01"],
-          ["February 2021", "2021-02"],
-          ["March 2021", "2021-03"],
-          ["April 2021", "2021-04"],
-        ])
+        expected_months = (0..24).map do |i|
+          [
+            i.months.from_now.to_date.to_formatted_s(:humanmonthyear),
+            i.months.from_now.to_date.to_formatted_s(:yearmonth),
+          ]
+        end
+
+        is_expected.to eq(expected_months)
       }
     end
 
@@ -177,10 +179,10 @@ describe Events::Search do
         context "when the month is nil" do
           subject { build(:events_search, month: nil).tap(&:validate) }
 
-          it "searches from the beginning of today to the end of the next 5 months" do
+          it "searches from the beginning of today to the end of the next 24 months" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
               receive(:search_teaching_events_grouped_by_type)
-                .with(**expected_attributes.merge(start_after: travel_date.beginning_of_day, start_before: DateTime.new(2020, 6, 30).end_of_day))
+                .with(**expected_attributes.merge(start_after: travel_date.beginning_of_day, start_before: DateTime.new(2022, 1, 31).end_of_day))
           end
         end
 
