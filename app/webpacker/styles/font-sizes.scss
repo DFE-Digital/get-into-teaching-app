@@ -15,6 +15,7 @@ $fs-28: 1.75rem;
 $fs-36: 2.25rem;
 $fs-42: 2.625rem;
 $fs-54: 3.375rem;
+$fs-64: 5.333rem;
 
 @function size($device-sizes, $size) {
   @if not map-has-key($device-sizes, $size) {
@@ -23,9 +24,9 @@ $fs-54: 3.375rem;
   @return map-get($device-sizes, $size);
 }
 
-$mobile-sizes:  ("xsmall": $fs-14, "small": $fs-15, "medium": $fs-16, "large": $fs-19, "xlarge" : $fs-28, "xxlarge": $fs-36);
-$tablet-sizes:  ("xsmall": $fs-15, "small": $fs-16, "medium": $fs-19, "large": $fs-28, "xlarge" : $fs-36, "xxlarge": $fs-42);
-$desktop-sizes: ("xsmall": $fs-16, "small": $fs-19, "medium": $fs-28, "large": $fs-36, "xlarge" : $fs-42, "xxlarge": $fs-54);
+$mobile-sizes:  ("xsmall": $fs-14, "small": $fs-15, "medium": $fs-16, "large": $fs-19, "xlarge" : $fs-28, "xxlarge": $fs-36, "xxxlarge": $fs-42);
+$tablet-sizes:  ("xsmall": $fs-15, "small": $fs-16, "medium": $fs-19, "large": $fs-28, "xlarge" : $fs-36, "xxlarge": $fs-42, "xxxlarge": $fs-54);
+$desktop-sizes: ("xsmall": $fs-16, "small": $fs-19, "medium": $fs-28, "large": $fs-36, "xlarge" : $fs-42, "xxlarge": $fs-54, "xxxlarge": $fs-64);
 
 @mixin font-size($size) {
   @include mq($until: mobile) {
