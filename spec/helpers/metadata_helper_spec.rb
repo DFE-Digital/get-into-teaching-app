@@ -21,4 +21,26 @@ describe MetadataHelper, type: "helper" do
       end
     end
   end
+
+  describe "#image_meta_tags" do
+    it "returns nil when not given an image_path" do
+      expect(image_meta_tags(base_url: "https://example.com", image_path: "", alt: "")).to be_nil
+    end
+
+    it "returns image/alt meta tags when given an image_path" do
+      tags = image_meta_tags(base_url: "https://example.com", image_path: "media/images/content/hero-images/0012.jpg", alt: "An image")
+
+      expect(tags).to include(
+        <<~HTML.chomp,
+          <meta name="og:image" content="https://example.com/packs-test/media/images/content/hero-images/0012-c5b6a5e08291f24da05ca6b336ebe604.jpg">
+        HTML
+      )
+
+      expect(tags).to include(
+        <<~HTML.chomp,
+          <meta name="og:image:alt" content="An image">
+        HTML
+      )
+    end
+  end
 end
