@@ -6,6 +6,7 @@ describe Events::SearchComponent, type: "component" do
 
   let(:component) { described_class.new(search, path) }
   subject! { render_inline(component) }
+  before { freeze_time }
 
   specify "builds a search form" do
     expect(page).to have_css("form[action='#{path}'][method='get']")
@@ -53,6 +54,15 @@ describe Events::SearchComponent, type: "component" do
           expect(page).to have_css("#{field[:element]}[id='events_search_#{field[:attribute]}']")
         end
       end
+    end
+
+    it "only shows the next 6 months in the month field" do
+      months = page.find_field("Month").find_all("option").map(&:text)
+      expected_months = (0..5).map do |i|
+        i.months.from_now.to_date.to_formatted_s(:humanmonthyear)
+      end
+
+      expect(months).to eq(expected_months)
     end
 
     describe "optionally-blank month field" do
