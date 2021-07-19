@@ -28,15 +28,20 @@ class EventsController < ApplicationController
   end
 
   def show
+    breadcrumb "events.search", :events_path
+
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-    raise_not_found if @event.status_id == pending_event_status_id
+    render_not_found && return if @event.status_id == pending_event_status_id
 
     @page_title = @event.name
     @front_matter = { "description" => @event.summary }
 
-    breadcrumb "events.search", :events_path
     category_name = t("event_types.#{@event.type_id}.name.plural")
     breadcrumb category_name, event_category_path(category_name.parameterize)
+  rescue GetIntoTeachingApiClient::ApiError => e
+    raise if e.code != 404
+
+    render_not_found
   end
 
   def not_available
@@ -50,6 +55,11 @@ protected
   end
 
 private
+
+  def render_not_found
+    @fullwidth = true
+    render "not_found"
+  end
 
   def load_upcoming_events
     api = GetIntoTeachingApiClient::TeachingEventsApi.new
