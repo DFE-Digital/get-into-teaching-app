@@ -91,7 +91,7 @@ It's not a requirement in all [types of schools](https://www.gov.uk/types-of-sch
 
 If you’re a qualified teacher from outside the UK you can [work as a teacher in England for up to 4 years without QTS](https://www.gov.uk/guidance/recruit-teachers-from-overseas#employing-overseas-teachers-without-qts-the-4-year-rule).
 
-[Apply for QTS if you trained outside the UK](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+[Apply for QTS if you trained outside the UK](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
 
 ### Search for a job
 
@@ -101,7 +101,7 @@ If you’re a qualified teacher from outside the UK you can [work as a teacher i
 
 ### Talk to an adviser if you're qualified to teach maths, physics or modern languages
 
-You can get one-to-one support if you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you're qualified to teach secondary maths, physics or modern languages. Get help with:
+You can get one-to-one support if you have [qualified teacher status (QTS)](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) and you're qualified to teach secondary maths, physics or modern languages. Get help with:
 
 * the application process, such as writing a personal statement and preparing for an interview
 * accessing courses to [improve your subject knowledge](/improve-your-subject-knowledge)
