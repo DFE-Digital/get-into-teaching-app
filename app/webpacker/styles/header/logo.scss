@@ -39,11 +39,23 @@
     @include rotated-block;
     background-color: $green-dark-90;
     z-index: 1000;
+
+    // position the logo slightly off the left of the page
+    // and make sure there's a slight gap beneath the extra nav
+    // and that the DfE logo's suitably far away
     margin: 1em 1em 0 -.5em;
 
     img {
-      padding: 1.2em;
+      padding: 1em;
       transform: rotate(3deg);
+
+      // use the margin to set the size/aspect ratio of the logo's background
+
+      // from the styleguide the ratios around the checkbox in the logo should be (using the checkbox for scale)
+      // - border-at-edge-of-screen: 1.5 (the left side on the main header logo)
+      // - border-closest-to-centre-of-screen: 1 (the right side on the main header logo)
+      // - border-below: 1.5
+      margin: .3em 1em .2em 2em;
     }
   }
 }
