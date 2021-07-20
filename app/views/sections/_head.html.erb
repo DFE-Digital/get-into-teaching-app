@@ -26,4 +26,9 @@
   <%= meta_tag(key: 'site_name', value: "Get Into Teaching", opengraph: true) %>
   <%= meta_tag(key: 'locale', value: "en_GB", opengraph: true) %>
   <%= meta_tag(key: "facebook-domain-verification", value: "h1r6sd9bvqql7fyzy5jmdoniuw1rtf") %>
+  <%= image_meta_tags(
+    base_url: request.base_url,
+    image_path: @front_matter&.dig("image"),
+    alt: "Photograph of teaching taking place in a classroom"
+  ) %>
 </head>
