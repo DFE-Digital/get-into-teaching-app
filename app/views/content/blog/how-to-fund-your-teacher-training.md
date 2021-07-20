@@ -30,6 +30,8 @@ tags:
 
 $header_image$
 
+_All funding amounts below are only correct for teacher training courses starting in autumn 2021. Funding levels for courses starting in 2022 will be updated once they are confirmed._
+
 There are plenty of funding options available to support you during your teacher training year. You can access Tuition Fee and Maintenance Loans regardless of whether or not you have an existing student loan and you will only begin to repay these once you're earning more than £27,295.
 
 Extra financial support is available if you're a parent, have an adult dependant or a disability. This support does not need to be paid back.
