@@ -16,25 +16,9 @@ require "action_view/railtie"
 require "rails/test_unit/railtie"
 require "view_component/engine"
 
-require "prometheus/client/data_stores/direct_file_store"
-
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-
-PROMETHEUS_DIR = "/tmp/prometheus".freeze
-
-# Needs to clear before initializing - we don't do this in test
-# env as its not needed and also not thread-safe (specs run in parallel).
-unless Rails.env.test?
-  Dir["#{PROMETHEUS_DIR}/*.bin"].each do |file_path|
-    File.unlink(file_path)
-  end
-end
-
-# The DirectFileStore is the only way to aggregate metrics across processes.
-file_store = Prometheus::Client::DataStores::DirectFileStore.new(dir: PROMETHEUS_DIR)
-Prometheus::Client.config.data_store = file_store
 
 module GetIntoTeachingWebsite
   class Application < Rails::Application
