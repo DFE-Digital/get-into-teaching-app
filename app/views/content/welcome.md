@@ -9,4 +9,5 @@ content:
   - "content/welcome/landing/bringing-your-lessons-to-life"
   - "content/welcome/landing/got-questions"
   - "content/welcome/landing/did-you-know"
+  - "content/welcome/landing/exciting-times-ahead"
 ---

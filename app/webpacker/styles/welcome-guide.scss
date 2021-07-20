@@ -623,5 +623,111 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
       }
     }
+
+    @mixin exciting-times-ahead-layout {
+      grid-template-columns: minmax(2em, auto) auto minmax(2em, auto);
+      grid-template-rows: repeat(4, minmax(3em, max-content));
+
+      .text { grid-area: 2 / 2 / 3 / 3; }
+      .stages { grid-area: 3 / 2 / 4 / 3 }
+      .good-luck { grid-area: 4 / 2 / 5 / 3 }
+
+      @include mq($from: desktop) {
+        grid-template-columns: minmax(10em, auto) auto minmax(10em, auto);
+        grid-template-columns: minmax(10em, auto) 1fr minmax(10em, auto);
+      }
+    }
+
+    &.exciting-times-ahead {
+      @include exciting-times-ahead-layout;
+
+      display: grid;
+      background-color: $green;
+
+      .yellow {
+        background: $yellow;
+      }
+
+      .text {
+        h2 {
+          @include font-size(xxlarge);
+          display: inline-block;
+          padding: .5rem .2em;
+          margin: 0;
+        }
+
+        p {
+          max-width: 40ch;
+          padding: .5em 1em;
+          margin-top: .4em;
+        }
+      }
+
+      .stages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 2em 0;
+
+        @include mq($from: tablet) {
+          flex-direction: row;
+        }
+
+        gap: 2em;
+
+        .stage {
+          flex: 1 1 auto;
+
+          display: flex;
+
+          flex-direction: column;
+          align-items: center;
+
+          .card {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            flex-direction: column;
+            width: min-content;
+            align-items: center;
+
+            picture {
+              background: $white;
+              display: inline-block;
+              width: unset;
+
+              > img {
+                margin: 2em 1em;
+                padding: 1em 1.5em;
+                height: 2.5em;
+                max-width: 3em;
+              }
+            }
+
+            .number {
+              padding: .5rem 1rem;
+              top: -.5em;
+              left: -.5em;
+              background: $yellow;
+              position: absolute;
+              font-weight: bold;
+              @include font-size(large);
+            }
+          }
+
+          .stage-name {
+            @include font-size(xsmall);
+            text-align: center;
+            margin: 1em 0;
+          }
+        }
+      }
+
+      .good-luck > p {
+        @include font-size(xlarge);
+        text-align: center;
+        font-weight: bold;
+      }
+    }
   }
 }
