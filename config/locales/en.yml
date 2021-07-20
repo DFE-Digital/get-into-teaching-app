@@ -273,7 +273,7 @@ en:
         singular: "Train to Teach event"
         plural: "Train to Teach events"
       description: 
-        short: The main event - hear from teachers, universities and our expert advisers. Get answers to your questions and learn more about ways to train and funding.
+        short: The main event - hear from teachers, training providers and our expert advisers. Get answers to your questions and learn more about ways to train and funding.
         long: |-
           Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training
           will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
@@ -283,8 +283,8 @@ en:
         plural: "Online Q&As"
         past: "Past online Q&As"
       description: 
-          short: Join our online Q&A to ask our experts any questions about teacher training.
-          long: |-
+          short: Join our online Q&A to ask our experts about teacher training so you can take the next step.
+             long: |-
             In these online sessions, our teacher training advisers answer questions on specific topics, such as funding or ways to train.
             Get fast answers to your questions so you can take the next step to becoming a teacher.
     222750009:
@@ -292,7 +292,7 @@ en:
         singular: "School or University event"
         plural: "School and University events"
       description: 
-        short: Hear directly from teacher training providers about the courses they offer.
+        short: Hear directly from teacher training providers about the courses they offer to help you decide.
         long: |-
           These events, run by schools and universities, are a great way to and find out more about a particular training provider.
           Find out what they have to offer and help make your decision on where to apply.
