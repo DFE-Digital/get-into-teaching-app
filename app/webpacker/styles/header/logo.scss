@@ -1,13 +1,11 @@
 .logo-wrapper {
-  // background-color: thistle;
-
   z-index: 0;
   overflow: hidden;
   top: 8px;
   padding-bottom: 20px;
   display: flex;
   align-items: center;
-  
+
   @include mq($from: tablet) {
 	  	overflow: visible;
 	  	padding-bottom: 0;
@@ -18,6 +16,7 @@
 
 .logo {
   display: block;
+  overflow-x: clip;
 
   a {
     text-decoration: none;
