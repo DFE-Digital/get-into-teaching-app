@@ -33,27 +33,31 @@ en:
   find_an_event:
     types:
       222750001: |-
-        <p>Our free Train to Teach events are the perfect opportunity to find out more about teacher training and receive advice from experts and training providers.</p>
-        <p>They’ll tell you everything you need to know about:</p>
+        <p>Our Train to Teach events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom.</p>
+        <p>At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts. 
+        Some events are in person and others replicate the experience online.</p>
+        <p>Whichever event you choose to attend, you will have the chance to:</p>
         <ul>
-          <li>funding</li>
-          <li>different training courses</li>
-          <li>how to submit a successful application</li>
-          <li>what a career in teaching is really like</li>
+          <li>put your questions to expert advisers, teachers and training providers</li>
+          <li>chat with current teachers and find out what a career in teaching is really like</li>
+          <li>watch presentations which provide a step-by-step guide on how to get into teaching, the application 
+          process and funding your training</li>
         </ul>
+        <p>You need to register for Train to Teach events in advance, as spaces are 
+        limited and fill up on a first come, first served basis.</p>
         <p>
         The presentations used at these events can be found <a href="/presentations">here</a>.
         </p>
       222750008: |-
         <p>
-          Ask a panel of specialists the questions that matter to you in one of our real-time Q&A online events.
-          Whether you want general guidance, or advice tailored to your circumstances, these events offer a
-          convenient way to discuss a range of topics related to teacher training.
+          Ask a panel of specialists the questions that matter to you in one of our real-time Q&A online events. 
+          These Q&A sessions cover a range of different topics and give you the opportunity to ask specific questions 
+          and receive advice tailored to your circumstances.
         </p>
       222750009: |-
         <p>
-          Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to get a feel for what
-          their teacher training course might be like.
+          Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to 
+          get a feel for what their teacher training course might be like.
         </p>
 
         <p>Each event is different, but typically they’ll cover areas such as:</p>
@@ -64,6 +68,9 @@ en:
           <li><span>school experience</span></li>
           <li><span>a chance to talk to current trainees or staff</span></li>
         </ul>
+
+        <p>Use the search tool below to find events being held by 
+        training providers in the area you would like to train.</p>
   funding_widget:
     subjects:
       primary:
