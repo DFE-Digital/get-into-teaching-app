@@ -3,11 +3,11 @@ title: "How coronavirus is affecting teacher training"
 description: |-
   Covid 19 has had an impact on teacher training, this advice
   is aimed at applicants, trainees, schools and ITT providers.
-date: "2021-06-25"
+date: "2021-07-23"
 image: false
 backlink: "../"
 alert: |-
-  This page was updated on 25 June 2021, and will continue to be updated as
+  This page was updated on 23 July 2021, and will continue to be updated as
   new guidance is issued. Please check back regularly.
 keywords:
   - coronavirus
@@ -52,7 +52,7 @@ Speak to your training provider to discuss your situation.
 
 ### Are Train To Teach events going ahead?
 
-[Spring events have now been confirmed](/events).
+[Autumn events have now been confirmed](/events).
 
 ### What if I’m an overseas applicant?
 
