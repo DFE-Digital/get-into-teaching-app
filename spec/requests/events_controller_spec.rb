@@ -152,6 +152,7 @@ describe EventsController do
         it { is_expected.to include(event.provider_target_audience) }
         it { is_expected.to include(event.provider_organiser) }
         it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
+        it { is_expected.to include(event.building.image_url) }
 
         context "when the event can be registered for online" do
           let(:event) { build(:event_api, web_feed_id: "123", readable_id: event_readable_id) }
