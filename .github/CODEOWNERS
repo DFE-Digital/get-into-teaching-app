@@ -1,2 +1,2 @@
-app/views/content/* @MylesJarvis 
-public/assets/* @MylesJarvis 
+app/views/content/* @MylesJarvis
+app/webpacker/images/* @MylesJarvis
