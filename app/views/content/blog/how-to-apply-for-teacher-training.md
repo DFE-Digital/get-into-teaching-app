@@ -40,29 +40,29 @@ Although different training providers may have specific recruitment criteria, th
 * a degree
 * GCSE grade C / 4 in English and maths — and a science subject for primary trainees
 
-**[Visit the Get into Teaching website](/)** for more detail, this also includes information if you have overseas qualifications.
+You can find out more about [overseas qualifications](/train-to-teach-in-england-as-an-international-student).
 
 ### 2. Get one-to-one support from our teaching experts
 
-Our teacher training advisers are all experienced teachers ready to support your journey into teaching. **[Register with us](/tta-service)** to be allocated your very own adviser.
+Our teacher training advisers are all experienced teachers ready to support your journey into teaching. [Register with us](/tta-service) to be allocated your very own adviser.
 
 ### 3. Attend a virtual teacher training event
 
-Our free Train to Teach events are the perfect opportunity to find out more about teacher training and receive advice from experts and training providers in your local area. Find an event on the [Get into Teaching website](/events).
+Our free events are the perfect opportunity to find out more about teacher training and receive advice from experts and training providers in your local area. [Find an event](/events).
 
 ## Applying for teacher training
 
 ### 1. Find teacher training courses
 
-Use the Department for Education’s **‘[find postgraduate teacher training courses](https://find-postgraduate-teacher-training.education.gov.uk/)’** to search for courses in England. You’ll be able to search by location, training provider and subject. When you apply, you have three choices for teacher training providers. It’s a good idea to select three choices; the more flexible you are, the more likely it is that you’ll secure a place.
+Use the Department for Education’s ‘[find postgraduate teacher training courses](https://find-postgraduate-teacher-training.education.gov.uk/)’ to search for courses in England. You’ll be able to search by location, training provider and subject. When you apply, you have three choices for teacher training providers. It’s a good idea to select three choices; the more flexible you are, the more likely it is that you’ll secure a place.
 
 ### 2. Write your personal statement
 
-The personal statement is your chance to make your application stand out by discussing your experience, knowledge and skills, and demonstrating how they’re transferable to the classroom. **[Read our advice on how to make yourself stand out](/steps-to-become-a-teacher)**.
+The personal statement is your chance to make your application stand out by discussing your experience, knowledge and skills, and demonstrating how they’re transferable to the classroom. [Read our advice on how to make yourself stand out](/tips-on-applying-for-teacher-training).
 
 ### 3. Arrange your references
 
-Your referees can tell training providers about your qualities and abilities, so it’s important they know you well. **[Find Visit the Get into Teaching website](/)** to find out more about the requirements for references.
+Your referees can tell training providers about your qualities and abilities, so it’s important they know you well. Find out more about the requirements for references in our [tips on applying for teacher training](/tips-on-applying-for-teacher-training).
 
 ### 4. Apply for teacher training
 
