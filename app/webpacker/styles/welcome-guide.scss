@@ -607,12 +607,17 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
               appearance: none;
               border: 3px solid $black;
               background: $green;
+              width: 2em;
+              height: 2em;
               border-radius: 50%;
-              width: auto;
-              aspect-ratio: 1 / 1;
 
               &:checked {
                 background: $black;
+              }
+
+              &:focus {
+                outline: none;
+                border: 4px solid $yellow;
               }
             }
           }
