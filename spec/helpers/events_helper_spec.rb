@@ -8,6 +8,26 @@ describe EventsHelper, type: "helper" do
   let(:event) { build(:event_api, start_at: startdate, end_at: enddate) }
   let(:building_fully_populated) { build(:event_building_api, address_line3: "Line 3") }
 
+  describe "#show_events_teaching_logo" do
+    it "returns false if the index != 0" do
+      show_logo = show_events_teaching_logo(1, GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"])
+      expect(show_logo).to be_falsy
+    end
+
+    it "returns false if the type_id is School or University event" do
+      show_logo = show_events_teaching_logo(0, GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"])
+      expect(show_logo).to be_falsy
+    end
+
+    it "returns true if the index is 0 and the type_id is not chool or University event" do
+      show_logo = show_events_teaching_logo(0, GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"])
+      expect(show_logo).to be_truthy
+
+      show_logo = show_events_teaching_logo(0, GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"])
+      expect(show_logo).to be_truthy
+    end
+  end
+
   describe "#format_event_date" do
     let(:stacked) { true }
     subject { format_event_date event, stacked: stacked }

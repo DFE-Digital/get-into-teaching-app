@@ -15,12 +15,13 @@
 <% end %>
 
 <% unless @no_results %>
-  <% @events_by_type.each do |type_id, events| %>
+  <% @events_by_type.each_with_index do |(type_id, events), index| %>
     <%= render "event_group",
       type_id: type_id,
       events: events,
       page_param_name: @performed_search ? @group_presenter.page_param_name(type_id) : nil,
-      show_see_all_events: show_see_all_events_button?(type_id, events)
+      show_see_all_events: show_see_all_events_button?(type_id, events),
+      show_logo: show_events_teaching_logo(index, type_id)
     %>
   <% end %>
 <% else %>
