@@ -1,15 +1,14 @@
 <% plural_category_name = pluralised_category_name(type_id) %>
-<% with_logo = type_id != GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"] %>
 
 <div class="types-of-event">
-  <div class="events-featured <%= "events-featured--with-logo" if with_logo %>">
+  <div class="events-featured <%= "events-featured--with-logo" if show_logo %>">
     <div class="events-featured__heading">
       <header>
         <h3><%= plural_category_name %></h3>
         <div role="doc-subtitle"><%= t("event_types.#{type_id}.description.short") %></div>
       </header>
-      
-      <% if with_logo %>
+
+      <% if show_logo %>
       <div class="events-featured__logo">
         <%= image_pack_tag "media/images/getintoteachinglogo-with-bg-purple.svg", alt: "", size: "250x125" %>
       </div>
