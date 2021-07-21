@@ -7,5 +7,6 @@ FactoryBot.define do
     address_line3 { nil }
     address_city { "Manchester" }
     address_postcode { "MA1 1AM" }
+    image_url { "http:://example.com/image.png" }
   end
 end

@@ -342,6 +342,7 @@ describe Internal::EventsController do
                   address_line3: nil,
                   address_city: nil,
                   address_postcode: expected_postcode,
+                  image_url: nil,
                 })
 
               expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)

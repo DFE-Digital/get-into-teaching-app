@@ -56,6 +56,7 @@ describe Internal::EventBuilding do
         address_line3: api_building.address_line3,
         address_city: api_building.address_city,
         address_postcode: api_building.address_postcode,
+        image_url: api_building.image_url,
       )
     end
     it "should have correct attributes" do

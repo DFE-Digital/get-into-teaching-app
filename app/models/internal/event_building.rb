@@ -11,6 +11,7 @@ module Internal
     attribute :address_line3, :string
     attribute :address_city, :string
     attribute :address_postcode, :string
+    attribute :image_url, :string
 
     validates :venue, presence: true, allow_blank: false, length: { maximum: 100 }
     validates :address_line1, length: { maximum: 255 }
