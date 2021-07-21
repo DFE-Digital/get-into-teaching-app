@@ -30,6 +30,8 @@ tags:
 
 $header_image$
 
+_All funding amounts below are only correct for teacher training courses starting in autumn 2021. Funding levels for courses starting in 2022 will be updated once they are confirmed._
+
 There are plenty of funding options available to support you during your teacher training year. You can access Tuition Fee and Maintenance Loans regardless of whether or not you have an existing student loan and you will only begin to repay these once you're earning more than £27,295.
 
 Extra financial support is available if you're a parent, have an adult dependant or a disability. This support does not need to be paid back.
@@ -42,7 +44,7 @@ The key to managing financially during your training year is careful planning an
 >
 > Sophie Helen, Trainee Teacher
 
-## 1. Tuition Fee and Maintenance Loans
+## Tuition Fee and Maintenance Loans
 
 Tuition Fee and Maintenance Loans are available regardless of the subject you want to teach or your qualifications.
 
@@ -64,7 +66,7 @@ It doesn't matter if you already have a student loan — you can still apply for
 >
 > Jacqui Lynne, Teacher
 
-## 2. Extra financial support
+## Extra financial support
 
 If you have children, a disability or an adult dependant, you could get:
 
@@ -84,7 +86,7 @@ Please note this calculator is for trainees from England or the European Union (
 
 Once you've accepted your place on a non-salaried teacher training course, you can apply for Tuition Fee and Maintenance Loans, Parents' Learning Allowance, Disabled Students' Allowance, Childcare Grants and Adult Dependants' Grant online via [Student Finance England](https://www.gov.uk/apply-online-for-student-finance) (SFE). Universal Credit is claimed via [GOV.UK](https://www.gov.uk/universal-credit/how-to-claim).
 
-## 3. Tax-free bursary or scholarship
+## Tax-free bursary or scholarship
 
 Tax-free bursaries or scholarships of up to £26,000 are available for some subjects. Your eligibility, and the amount you can expect to receive, will depend on the subject you choose to teach and your degree classification or highest relevant academic qualification.
 
