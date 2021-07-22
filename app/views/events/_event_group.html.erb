@@ -22,7 +22,7 @@
     <% else %>
       <% if type_id == ttt_event_type_id %>
         <%= render(Events::NoResultsComponent.new) do %>
-          <p>DfE's Train to Teach events will return in September. Sign up for updates to be notified about spaces.</p>
+          <p>There are no Train to Teach events in your chosen month. Sign up to be notified about upcoming events.</p>
           <%= link_to('Sign up for notifications', mailing_list_steps_url, class: "button") %>
         <% end %>
       <% else %>
