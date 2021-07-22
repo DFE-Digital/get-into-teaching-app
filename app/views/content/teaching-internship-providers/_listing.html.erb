@@ -8,25 +8,21 @@
 
 <p>You'll experience the teaching profession, get new skills and be paid £300 per week.</p>
 
-<h4>The Teaching Internship Programme has now closed for 2021. Please check back on this page for future updates.</h4>
+<p><strong>The Teaching Internship Programme has now closed for 2021. Please check back on this page for future updates.</strong></p>
 
-<h4>If you are looking to gain classroom experience please use the <a href='/get-school-experience'>Get School Experience</a> service.
- </h4>
+<p><strong>If you are looking to gain classroom experience please use the <a href='/get-school-experience'>Get School Experience</a> service.<strong></p>
 
-<!--  Commented out until next cycle in 2022 --->
+<% if false %>
+  <!--  Commented out until next cycle in 2022 --->
+  <p>Check you meet the eligibility criteria with participating schools before you apply.</p>
 
-<!--
+  <p><a href='/tta-service'>Get an adviser</a> to have the best chance of succeeding in your application.</p>
 
-<p>Check you meet the eligibility criteria with participating schools before you apply.</p>
-
-<p><a href='/tta-service'>Get an adviser</a> to have the best chance of succeeding in your application.</p>
-
-<p>Apply directly to participating schools in the following regions:</p>
+  <p>Apply directly to participating schools in the following regions:</p>
 
 
 
-<section>
-<%= render GroupedCards::ListingComponent.new @front_matter["providers"] %>
-</section>
-
---->
+  <section>
+    <%= render GroupedCards::ListingComponent.new @front_matter["providers"] %>
+  </section>
+<% end %>
