@@ -1,0 +1,751 @@
+$z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
+
+@mixin underline($thickness: .15em, $padding: .05em) {
+  border-bottom: $thickness solid $black;
+  padding-bottom: $padding;
+}
+
+// here we're using the darken blend mode so when we have multi-line
+// headings the background from one line won't obscure the other. this
+// picks the darkest colour so if we have any headings with light text
+// it should use `lighten` instead (https://en.wikipedia.org/wiki/Blend_modes#Darken_Only)
+@mixin multiline-heading {
+  mix-blend-mode: darken;
+}
+
+.welcome-guide {
+  max-width: $page-max-width;
+  background-color: $grey;
+  margin: 0 auto;
+
+  img {
+    display: block;
+  }
+
+  header {
+    h1 { @include reset; }
+  }
+
+  picture {
+    @include mq($until: desktop) {
+      width: 80%;
+      margin: 0 auto;
+    }
+  }
+
+  .no-wrap {
+    white-space: nowrap;
+  }
+
+  // section-specific styles
+  .landing {
+    padding-bottom: 4em;
+
+    // LAYOUTS
+    // grid-row-start grid-column-start grid-row-end grid-column-end
+    @mixin welcome-to-teaching-layout {
+      $mobile-overlap-amount: 2em;
+
+      grid-template-columns: 1fr;
+      grid-template-rows: max-content $mobile-overlap-amount max-content $mobile-overlap-amount 1em;
+
+      .background { grid-area: 1 / 1 / 5 / 2; }
+      h1 { grid-area: 1 / 1 / 2 / 2; }
+      picture { grid-area: 2 / 1 / 4 / 2; }
+      .triangle { grid-area: 5 / 1 / 6 / 2; }
+
+      @include mq($from: desktop) {
+        grid-template-rows: minmax(2em, max-content) 3em 4em 3em minmax(3em, max-content);
+        grid-template-columns: 1fr 10em 1fr;
+
+        .background { grid-area: 1 / 1 / 4 / 4; }
+        .triangle { grid-area: 4 / 1 / 5 / 4; }
+        h1 { grid-area: 1 / 1 / 3 / 3; }
+        picture { grid-area: 2 / 2 / 6 / 4; }
+      }
+    }
+
+    .welcome-container {
+      max-width: 30em;
+      margin: 0 auto;
+    }
+
+    // GENERAL STYLES
+    &.welcome-to-teaching {
+      @include welcome-to-teaching-layout;
+
+      display: grid;
+
+      .background {
+        background: $yellow;
+        z-index: map-get($z-indices, "bottom");
+      }
+
+      // stylelint-disable selector-type-no-unknown
+      .triangle {
+        margin-top: -.03em; // ensure there's never any gap when resizing
+
+        &.yellow {
+          svg {
+            fill: $yellow;
+            stroke: $yellow;
+            stroke-width: 1;
+          }
+        }
+      }
+      // stylelint-enable selector-type-no-unknown
+
+      * {
+        z-index: map-get($z-indices, "medium");
+      }
+
+      h1 {
+        @include font-size(xxxlarge);
+        z-index: map-get($z-indices, "high");
+        margin: .4rem 0 0 .4em;
+
+        .underline {
+          @include underline;
+        }
+
+        .caption {
+          margin-top: 1rem;
+        }
+
+        .caption-l {
+          @include font-size(xxxlarge);
+        }
+
+        .caption-m {
+          @include font-size(xlarge);
+        }
+
+        .purple {
+          @include multiline-heading;
+          background: $purple;
+          padding: .3rem .6rem;
+        }
+
+        .welcome-to-teaching {
+          .purple {
+            padding-bottom: .5em;
+          }
+        }
+
+        @include mq($from: desktop) {
+          margin: 1rem 0 0 2em;
+        }
+      }
+
+      picture {
+        z-index: map-get($z-indices, "medium");
+
+        img {
+          width: 100%;
+          max-height: 24em;
+          object-fit: cover;
+        }
+      }
+    }
+
+    &.introduction {
+      padding: 8em 0;
+
+      p {
+        font-weight: bold;
+        margin: 1em 2em;
+      }
+
+      mark {
+        background-color: $yellow;
+        padding: 0 .2em;
+      }
+    }
+
+    &.numbered {
+      .section-number {
+        @include mq($until: desktop) {
+          display: none;
+        }
+
+        @include font-size(xxxlarge);
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: .5em;
+
+        span:before {
+          content: "\2012"; // emdash
+          margin-right: .2em;
+        }
+      }
+    }
+
+    @mixin teaching-maths-is-so-rewarding-layout {
+      grid-template-rows: repeat(6, minmax(5em, max-content));
+      grid-template-columns: 1fr;
+
+      @include mq($from: desktop) {
+        grid-template-columns: 15em repeat(3, 1fr) 3em;
+        grid-template-rows: repeat(5, minmax(10em, max-content));
+
+        .section-number { grid-area: 2 / 1 / 3 / 3; }
+        .text { grid-area: 2 / 3 / 4 / 6; }
+
+        picture:nth-of-type(1) { grid-area: 3 / 1 / 5 / 4; }
+        picture:nth-of-type(2) { grid-area: 3 / 4 / 5 / 6; }
+
+        .selected-quote { grid-area: 5 / 2 / 6 / 5; }
+      }
+    }
+
+    &.teaching-maths-is-so-rewarding {
+      @include teaching-maths-is-so-rewarding-layout;
+
+      display: grid;
+
+      h2,
+      p {
+        margin: 1rem;
+      }
+
+      h2 {
+        @include multiline-heading;
+        @include font-size(xlarge);
+        line-height: 1.8;
+
+        .caption {
+          display: inline-block;
+        }
+      }
+
+      p {
+        @include font-size(medium);
+      }
+
+      picture {
+        z-index: map-get($z-indices, "bottom");
+
+        > img {
+          width: 80%;
+        }
+
+        &:nth-of-type(1) {
+          img {
+            @include mq($from: desktop) {
+              margin-top: 5em;
+              margin-left: 1em;
+            }
+
+            transform: rotate(-3deg);
+          }
+        }
+
+        &:nth-of-type(2) {
+          img {
+            @include mq($from: desktop) {
+              margin-top: 12em;
+            }
+
+            transform: rotate(3deg);
+          }
+        }
+      }
+
+      .pink {
+        background-color: $pink;
+        padding: 1rem;
+        @include multiline-heading;
+      }
+
+      .underline {
+        @include underline($padding: 0, $thickness: .15em);
+      }
+
+      .text {
+        z-index: map-get($z-indices, "top");
+      }
+
+      .selected-quote {
+        padding: 8em 0 0;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+
+        figure {
+          blockquote {
+            @include reset;
+            @include font-size(large);
+
+            position: relative;
+            font-weight: bold;
+
+            &:before,
+            &:after {
+              content: '"';
+              color: $pink;
+            }
+
+            &:before {
+              content: open-quote;
+              position: absolute;
+              left: -.8em;
+              top: -.3em;
+            }
+
+            &:after {
+              content: close-quote;
+              margin-left: .2em;
+            }
+          }
+
+          figcaption {
+            margin-top: 2em;
+          }
+        }
+      }
+    }
+
+    @mixin my-journey-into-teaching-layout {
+      grid-template-rows: repeat(2, minmax(2em, max-content)) 2em repeat(2, minmax(2em, max-content));
+      grid-template-columns: 1fr;
+
+      @include mq($from: desktop) {
+        grid-template-rows: repeat(2, minmax(3em, max-content)) 2em repeat(2, minmax(3em, max-content));
+        grid-template-columns: 15em repeat(3, 1fr) 3em;
+
+        .section-number { grid-area: 2 / 1 / 3 / 3; }
+        picture { grid-area: 1 / 3 / 4 / 5; }
+        .text { grid-area: 3 / 2 / 6 / 4; }
+      }
+    }
+
+    &.my-journey-into-teaching {
+      @include my-journey-into-teaching-layout;
+
+      display: grid;
+
+      .yellow {
+        background-color: $yellow;
+        padding: 1rem;
+      }
+
+      .text {
+        margin: 0 1em;
+
+        h2 {
+          @include font-size(xxlarge);
+
+          margin-top: .4em;
+
+          .blend {
+            @include multiline-heading;
+          }
+
+          .yellow {
+            position: relative;
+            z-index: map-get($z-indices, "medium");
+          }
+        }
+
+        p {
+          margin: 3em 0 2em;
+        }
+      }
+
+      picture {
+        position: relative;
+        z-index: map-get($z-indices, "bottom");
+
+        > img {
+          width: 80%;
+          transform: rotate(3deg);
+          margin: 0 auto;
+        }
+
+        @include mq($until: desktop) {
+          top: 1em;
+        }
+      }
+    }
+
+    @mixin bringing-your-lesson-to-life-layout {
+      grid-template-rows: repeat(2, minmax(2em, max-content)) 2em repeat(2, minmax(2em, max-content));
+      grid-template-columns: 1fr;
+
+      @include mq($from: desktop) {
+        grid-template-rows: repeat(2, minmax(3em, max-content));
+        grid-template-columns: 15em 1fr 1fr;
+
+        .section-number { grid-area: 1 / 1 / 2 / 2; }
+        .text { grid-area: 1 / 3 / 2 / 4; }
+        .carrousel { grid-area: 2 / 1 / 3 / 4; }
+      }
+    }
+
+    &.bringing-your-lessons-to-life {
+      @include bringing-your-lesson-to-life-layout;
+
+      display: grid;
+
+      h2,
+      article {
+        margin: 1rem;
+      }
+
+      h2 {
+        @include font-size(xxlarge);
+
+        > span {
+          @include multiline-heading;
+        }
+      }
+
+      .purple {
+        background: $purple;
+        padding: .3rem .6rem;
+      }
+
+      .carrousel {
+        margin: 1rem;
+        outline: 5px dashed $purple;
+        text-align: center;
+      }
+    }
+
+    @mixin got-questions-layout {
+      grid-template-columns: 1fr;
+
+      @include mq($from: desktop) {
+        grid-template-rows: repeat(2, minmax(3em, max-content)) 2em repeat(2, minmax(3em, max-content));
+        grid-template-columns: repeat(2, minmax(3em, max-content)) 5em repeat(2, minmax(3em, max-content));
+
+        .section-number { grid-area: 2 / 1 / 3 / 3; }
+        picture { grid-area: 2 / 3 / 4 / 6; }
+        .text { grid-area: 3 / 1 / 5 / 4; }
+        .questions { grid-area: 5 / 1 / 6 / 6; }
+      }
+    }
+
+    &.got-questions {
+      @include got-questions-layout;
+
+      display: grid;
+
+      h2,
+      p {
+        margin: 1rem;
+      }
+
+      .text {
+        h2 {
+          @include font-size(xxlarge);
+
+          position: relative;
+          z-index: map-get($z-indices, "high");
+          display: inline-block;
+        }
+      }
+
+      .blue {
+        background: $blue;
+        padding: .3rem .6rem;
+      }
+
+      .questions {
+        display: flex;
+        flex-direction: column;
+
+        @include mq($from: desktop) {
+          flex-direction: row;
+        }
+
+        @mixin question-decoration($content) {
+          content: $content;
+          position: absolute;
+          margin-left: -2em;
+          font-weight: bold;
+          font-size: 1.2em;
+        }
+
+        .question {
+          flex: 1 0 fill;
+          padding: 0 4em;
+
+          .q {
+            font-weight: bold;
+
+            &:before {
+              @include question-decoration("Q");
+            }
+          }
+
+          .a {
+            &:before {
+              @include question-decoration("A");
+            }
+          }
+        }
+      }
+
+      picture {
+        img {
+          width: 70%;
+          transform: rotate(3deg);
+        }
+      }
+    }
+
+    @mixin did-you-know-layout {
+      grid-template-columns: 2em 1fr 2em;
+      grid-template-rows: 3em repeat(3, minmax(3em, max-content));
+
+      .triangle { grid-area: 1 / 1 / 2 / 4; }
+      .text { grid-area: 1 / 1 / 3 / 3; }
+      .challenge { grid-area: 3 / 2 / 4 / 3; }
+
+      @include mq($from: desktop) {
+        grid-template-columns: minmax(10em, auto) 1fr minmax(10em, auto);
+      }
+    }
+
+    &.did-you-know {
+      @include did-you-know-layout;
+
+      display: grid;
+      background: $green;
+
+      .triangle {
+        background: $grey;
+        margin-bottom: -.03em; // ensure there's never any gap when resizing
+
+        &.green {
+          svg {
+            fill: $green;
+            stroke: $green;
+            stroke-width: 1;
+          }
+        }
+      }
+
+      .pink {
+        background: $pink;
+        padding: .3rem .6rem;
+      }
+
+      .purple {
+        background: $purple;
+        padding: .3rem .6rem;
+      }
+
+      .text {
+        margin: 1rem;
+
+        h2 {
+          @include font-size(xxlarge);
+
+          margin: 0 0 1rem;
+          position: relative;
+          z-index: map-get($z-indices, "high");
+          display: inline-block;
+        }
+
+        p.leading {
+          @include font-size(large);
+          font-weight: bold;
+          margin: .3rem 0;
+        }
+      }
+
+      .challenge {
+        margin-top: 3em;
+        border: 3px solid black;
+
+        header {
+          text-align: right;
+
+          h3 {
+            @include font-size(xlarge);
+
+            margin: 0;
+            padding: 0;
+
+            display: inline-block;
+            position: relative;
+            top: -.7em;
+            right: -.4em;
+
+            @include mq($from: desktop) {
+              margin-top: -4em;
+              top: -.3em;
+              right: -1.8em;
+            }
+          }
+        }
+
+        fieldset {
+          border: none;
+          padding: 0;
+          margin: 0;
+
+          legend {
+            padding: 1em;
+
+            p.leading {
+              @include font-size(large);
+              margin: 0;
+            }
+
+            p {
+              @include font-size(medium);
+            }
+          }
+
+          .answer {
+            display: flex;
+            margin: .5em 0;
+            padding: 1em;
+
+            align-items: center;
+
+            label {
+              flex-grow: 1;
+            }
+
+            input {
+              flex-shrink: 1;
+
+              appearance: none;
+              border: 3px solid $black;
+              background: $green;
+              width: 2em;
+              height: 2em;
+              border-radius: 50%;
+
+              &:checked {
+                background: $black;
+              }
+
+              &:focus {
+                outline: none;
+                border: 4px solid $yellow;
+              }
+            }
+          }
+
+          .answer + .answer {
+            border-top: 3px solid black;
+          }
+        }
+      }
+    }
+
+    @mixin exciting-times-ahead-layout {
+      grid-template-columns: minmax(2em, auto) auto minmax(2em, auto);
+      grid-template-rows: repeat(4, minmax(3em, max-content));
+
+      .text { grid-area: 2 / 2 / 3 / 3; }
+      .stages { grid-area: 3 / 2 / 4 / 3 }
+      .good-luck { grid-area: 4 / 2 / 5 / 3 }
+
+      @include mq($from: desktop) {
+        grid-template-columns: minmax(10em, auto) auto minmax(10em, auto);
+        grid-template-columns: minmax(10em, auto) 1fr minmax(10em, auto);
+      }
+    }
+
+    &.exciting-times-ahead {
+      @include exciting-times-ahead-layout;
+
+      display: grid;
+      background-color: $green;
+
+      .yellow {
+        background: $yellow;
+      }
+
+      .text {
+        h2 {
+          @include font-size(xxlarge);
+          display: inline-block;
+          padding: .5rem .2em;
+          margin: 0;
+        }
+
+        p {
+          max-width: 40ch;
+          padding: .5em 1em;
+          margin-top: .4em;
+        }
+      }
+
+      .stages {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 2em 0;
+
+        @include mq($from: tablet) {
+          flex-direction: row;
+        }
+
+        gap: 2em;
+
+        .stage {
+          flex: 1 1 auto;
+
+          display: flex;
+
+          flex-direction: column;
+          align-items: center;
+
+          .card {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            flex-direction: column;
+            width: min-content;
+            align-items: center;
+
+            picture {
+              background: $white;
+              display: inline-block;
+              width: unset;
+
+              > img {
+                margin: 2em 1em;
+                padding: 1em 1.5em;
+                height: 2.5em;
+                max-width: 3em;
+              }
+            }
+
+            .number {
+              padding: .5rem 1rem;
+              top: -.5em;
+              left: -.5em;
+              background: $yellow;
+              position: absolute;
+              font-weight: bold;
+              @include font-size(large);
+            }
+          }
+
+          .stage-name {
+            @include font-size(xsmall);
+            text-align: center;
+            margin: 1em 0;
+          }
+        }
+      }
+
+      .good-luck > p {
+        @include font-size(xlarge);
+        text-align: center;
+        font-weight: bold;
+      }
+    }
+  }
+}

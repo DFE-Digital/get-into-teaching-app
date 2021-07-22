@@ -10,6 +10,7 @@ class PagesController < ApplicationController
     "layouts/stories/landing",
     "layouts/stories/list",
     "layouts/stories/story",
+    "layouts/welcome",
     "layouts/campaigns/landing_page_with_hero_nav",
   ].freeze
 
