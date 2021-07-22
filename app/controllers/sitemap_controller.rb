@@ -22,7 +22,7 @@ private
   def build
     Nokogiri::XML::Builder.new(encoding: "UTF-8") do |xml|
       xml.urlset(xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9") do
-        Pages::Frontmatter.list.each do |path, metadata|
+        published_pages.each do |path, metadata|
           xml.url do
             xml.loc(request.base_url + page_location(path))
             xml.lastmod(metadata.fetch(:date) { DEFAULT_LASTMOD })
@@ -38,6 +38,10 @@ private
         end
       end
     end
+  end
+
+  def published_pages
+    Pages::Frontmatter.list.reject { |_path, fm| fm[:draft] }
   end
 
   def page_location(path)
