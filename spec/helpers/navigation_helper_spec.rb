@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe SitemapHelper, type: :helper do
+describe NavigationHelperSpec, type: :helper do
   describe "#navigation_resources" do
     before { allow(Pages::Navigation).to receive(:root_pages) }
 
