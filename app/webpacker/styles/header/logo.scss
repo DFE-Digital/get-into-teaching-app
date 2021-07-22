@@ -12,6 +12,10 @@
 	  	position: relative;
   }
 
+  @include mq($from: tablet) {
+    top: -8px;
+  }
+
   @include mq($from: desktop) {
     top: -23px;
   }
