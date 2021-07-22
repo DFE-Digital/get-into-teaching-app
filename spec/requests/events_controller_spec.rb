@@ -163,7 +163,7 @@ describe EventsController do
           context "when the event is online" do
             let(:event) { build(:event_api, :online, web_feed_id: "123", readable_id: event_readable_id) }
 
-            it { is_expected.to match(/to access this event you will require a laptop\/desktop pc/) }
+            it { is_expected.to match(/to access this event you will require a laptop\/desktop PC/) }
           end
         end
 
