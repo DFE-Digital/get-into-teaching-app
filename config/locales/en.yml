@@ -387,6 +387,10 @@ en:
             accept_privacy_policy:
               blank: Accept the privacy policy to continue
               accepted: Accept the privacy policy to continue
+        callbacks/steps/talking_points:
+          attributes:
+            talking_points:
+              inclusion: Choose an option
 
         mailing_list/steps/name:
           attributes:
@@ -519,6 +523,8 @@ en:
       callbacks_steps_callback:
         address_telephone: Phone number
         phone_call_scheduled_at: Select your preferred day and time for a callback
+      callbacks_steps_talking_points:
+        talking_points: Choose an option
 
       mailing_list_steps_name:
         first_name: First name
