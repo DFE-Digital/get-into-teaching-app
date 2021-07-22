@@ -78,7 +78,7 @@ If you have children, a disability or an adult dependant, you could get:
 
 ### Student Finance Calculator
 
-You can use the student finance calculator to estimate Tuition Fee and Maintenance Loans and extra funding that may be available.
+You can use the [student finance calculator](https://www.gov.uk/student-finance-calculator) to estimate Tuition Fee and Maintenance Loans and extra funding that may be available.
 
 Please note this calculator is for trainees from England or the European Union (EU) undertaking a new course in the 2020 to 2021 and 2021 to 2022 academic years.
 
@@ -90,7 +90,7 @@ Once you've accepted your place on a non-salaried teacher training course, you c
 
 Tax-free bursaries or scholarships of up to £26,000 are available for some subjects. Your eligibility, and the amount you can expect to receive, will depend on the subject you choose to teach and your degree classification or highest relevant academic qualification.
 
-Find out more on the [Get into Teaching website](/).
+Find out more about [funding your training](/funding-your-training).
 
 > It is doable! I’m doing my primary PGCE (no bursary). I’m a single parent of a 4yr old boy… I live off maintenance loan and work at weekends… don’t get me wrong its tough but I know it’s only a year and will be all worth it!
 >
