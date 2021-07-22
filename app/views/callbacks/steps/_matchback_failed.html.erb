@@ -1,0 +1,13 @@
+<% if f.object.crm_unavailable? %>
+  <h1>Sorry, a technical problem means we can’t book your callback right now.</h1>
+  <p>We are working to fix the problem, please try again later.</p>
+<% elsif f.object.try_again? %>
+  <h1>We didn’t recognise the first name, last name or email address you entered</h1>
+  <p><%= link_to("Try entering your details again.", :back) %></p>
+<% else %>
+  <h1>We didn’t recognise your first name, last name or email address</h1>
+  <p>To book a callback, you need to be registered with us.</p>
+  <p>Once you’re registered, you can try again.</p>
+<% end %>
+
+
