@@ -189,6 +189,6 @@ If you live in [Wales](https://www.studentfinancewales.co.uk/), [Scotland](https
 
 Contact the education authority if you live in the Channel Islands ([Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx) and [Guernsey](https://www.gov.gg/article/152744/Policies)) or on the [Isle of Man](https://www.gov.im/student-grants).
 
-[Find out more about financial help if you're an applicant from outside the UK](/guidance/financial-support-for-international-applicants).
+[Find out more about financial help if you're an applicant from outside the UK](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#financial-support-for-non-uk-applicants-for-unsalaried-teacher-training-in-england).
 
 $international-candidates$
