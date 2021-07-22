@@ -1,5 +1,6 @@
 ---
 title: Welcome to teaching
+draft: true
 layout: "layouts/welcome"
 content:
   - "content/welcome/landing/welcome-to-teaching"
