@@ -68,10 +68,16 @@
   <% if event_status_open?(@event) || event_status_pending?(@event) %>
     <% if can_sign_up_online?(@event) %>
       <h2>How to attend</h2>
-      <p>
-        To attend this event, you must register for a place. Once registered, you will receive log-in information and joining instructions via email.
-        Please note: to access this event you will require a laptop/desktop pc and be using chrome as your browser.
-      </p>
+      <% if @event.is_online %>
+        <p>
+          To attend this event, you must register for a place. Once registered, you will receive log-in information and joining instructions via email.
+          Please note: to access this event you will require a laptop/desktop PC and be using Google Chrome as your browser.
+        </p>
+      <% else %>
+        <p>
+          Registration for this event is free, and by registering you will receive information about what to expect and how to make the most of your experience at the event.
+        </p>
+      <% end %>
       <p>
         <%= link_to event_steps_path(@event.readable_id), class: "call-to-action-button button" do %>
             Sign up for this event

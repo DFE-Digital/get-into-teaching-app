@@ -157,7 +157,14 @@ describe EventsController do
         context "when the event can be registered for online" do
           let(:event) { build(:event_api, web_feed_id: "123", readable_id: event_readable_id) }
 
+          it { is_expected.to match(/by registering you will receive information about what to expect/) }
           it { is_expected.to match(/Sign up for this event/) }
+
+          context "when the event is online" do
+            let(:event) { build(:event_api, :online, web_feed_id: "123", readable_id: event_readable_id) }
+
+            it { is_expected.to match(/to access this event you will require a laptop\/desktop PC/) }
+          end
         end
 
         context "when the event can be registered for by email" do
