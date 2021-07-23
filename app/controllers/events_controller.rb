@@ -90,7 +90,7 @@ private
   end
 
   def event_search_params
-    defaults = ActionController::Parameters.new(month: Time.zone.today.to_formatted_s(:yearmonth))
+    defaults = ActionController::Parameters.new
 
     (params[Events::Search.model_name.param_key] || defaults)
       .permit(:type, :distance, :postcode, :month)

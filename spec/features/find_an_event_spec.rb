@@ -20,6 +20,23 @@ RSpec.feature "Finding an event", type: :feature do
       receive(:get_teaching_event) { event }
   end
 
+  scenario "Landing on the find an event page and searching" do
+    visit events_path
+
+    expect(find_field("Event type").value).to be_empty # All events
+    expect(find_field("Location").value).to be_empty # Nationwide
+    expect(find_field("Month").value).to be_empty # All months
+
+    click_on "Update results"
+
+    expect(page.current_url).to include("/events/search")
+
+    expect(page.current_url).to include("events_search[type]=")
+    expect(page.current_url).to include("events_search[distance]=")
+    expect(page.current_url).to include("events_search[postcode]=")
+    expect(page.current_url).to include("events_search[month]=")
+  end
+
   scenario "Finding an event by the list of featured events" do
     visit events_path
 
