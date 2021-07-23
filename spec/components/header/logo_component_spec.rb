@@ -7,7 +7,6 @@ describe Header::LogoComponent, type: "component" do
   specify "renders the logo wrapper with the get into teaching and DfE logos" do
     expect(page).to have_css(".logo-wrapper") do |wrapper|
       expect(wrapper).to have_css(".logo")
-      expect(wrapper).to have_css(".dfe-logo")
     end
   end
 end
