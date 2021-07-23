@@ -1,5 +1,6 @@
 ---
 title: Financial support for international applicants
+draft: true
 ---
 
 This page has moved.

@@ -72,5 +72,28 @@ RSpec.describe SitemapController do
         end
       end
     end
+
+    context "when a page is set to draft" do
+      let(:content_pages) do
+        {
+          "/draft" => {
+            name: "Draft page",
+            draft: true,
+          },
+          "/published" => {
+            name: "Published page",
+            draft: false,
+          },
+        }
+      end
+
+      specify "draft pages aren't included in the sitemap" do
+        expect(subject).not_to match(/draft/)
+      end
+
+      specify "published pages are included in the sitemap" do
+        expect(subject).to match(/published/)
+      end
+    end
   end
 end
