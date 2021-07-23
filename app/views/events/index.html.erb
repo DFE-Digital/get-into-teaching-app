@@ -2,7 +2,8 @@
 
 <% @search_component = Events::SearchComponent.new(
   @event_search,
-  search_events_path(anchor: "searchforevents")
+  search_events_path(anchor: "searchforevents"),
+  allow_blank_month: true,
 ) %>
 
 <% @before_search_fullwidth = true %>
