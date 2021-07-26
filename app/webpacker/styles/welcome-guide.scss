@@ -13,6 +13,45 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   mix-blend-mode: darken;
 }
 
+@mixin selected-quote($color: pink, $size: large) {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  figure {
+    blockquote {
+      @include reset;
+      @include font-size($size);
+
+      position: relative;
+      font-weight: bold;
+
+      &:before,
+      &:after {
+        content: '"';
+        color: $color;
+      }
+
+      &:before {
+        content: open-quote;
+        position: absolute;
+        left: -.8em;
+        top: -.3em;
+      }
+
+      &:after {
+        content: close-quote;
+        margin-left: .2em;
+      }
+    }
+
+    figcaption {
+      margin-top: 2em;
+    }
+  }
+}
+
 .welcome-guide {
   max-width: $page-max-width;
   background-color: $grey;
@@ -22,8 +61,16 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     display: block;
   }
 
+  svg {
+    @include reset;
+  }
+
   header {
     h1 { @include reset; }
+  }
+
+  .blend {
+    @include multiline-heading;
   }
 
   picture {
@@ -269,42 +316,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       .selected-quote {
         padding: 8em 0 0;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-
-        figure {
-          blockquote {
-            @include reset;
-            @include font-size(large);
-
-            position: relative;
-            font-weight: bold;
-
-            &:before,
-            &:after {
-              content: '"';
-              color: $pink;
-            }
-
-            &:before {
-              content: open-quote;
-              position: absolute;
-              left: -.8em;
-              top: -.3em;
-            }
-
-            &:after {
-              content: close-quote;
-              margin-left: .2em;
-            }
-          }
-
-          figcaption {
-            margin-top: 2em;
-          }
-        }
+        @include selected-quote($color: $pink);
       }
     }
 
@@ -339,10 +351,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           @include font-size(xxlarge);
 
           margin-top: .4em;
-
-          .blend {
-            @include multiline-heading;
-          }
 
           .yellow {
             position: relative;
@@ -746,6 +754,159 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         text-align: center;
         font-weight: bold;
       }
+    }
+  }
+
+  .story {
+
+    @mixin header-layout {
+      grid-template-columns: 1.5em repeat(3, minmax(1em, auto)) 1.5em;
+      grid-template-rows: repeat(2, minmax(3em, max-content)) 2em 2em 2em repeat(2, minmax(3em, max-content));
+
+      .background { grid-area: 1 / 1 / 5 / 6; }
+      .triangle { grid-area: 5 / 1 / 6 / 6; }
+      .back { grid-area: 1 / 2 / 2 / 4; }
+      h1 { grid-area: 3 / 2 / 7 / 5; }
+      picture { grid-area: 2 / 1 / 4 / 6; }
+
+      @include mq($from: desktop) {
+        grid-template-columns: minmax(10em, auto) auto minmax(10em, auto);
+        grid-template-columns: minmax(10em, auto) 1fr minmax(10em, auto);
+      }
+    }
+
+    &.header {
+      @include header-layout;
+
+      display: grid;
+
+      .triangle {
+        @include reset;
+        margin-top: -.03em; // ensure there's never any gap when resizing
+
+        svg {
+          stroke-width: 1;
+        }
+      }
+
+      h1 {
+        z-index: map-get($z-indices, "top");
+
+        .yellow,
+        .blue {
+          padding: .4rem .6rem;
+          display: inline-block;
+
+          em {
+            font-style: normal;
+            text-decoration: underline;
+            text-decoration-thickness: .15em;
+            text-underline-offset: .15em;
+          }
+        }
+
+        .yellow {
+          background-color: $yellow;
+        }
+
+        .blue {
+          background-color: $blue;
+        }
+
+        .caption-l {
+          @include font-size(xxlarge);
+        }
+
+        .caption-m {
+          @include font-size(large);
+          margin-top: .5em;
+        }
+      }
+
+      .back {
+        display: flex;
+
+        align-items: center;
+
+        a {
+          color: $black;
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      picture {
+        width: 100%;
+
+        img {
+          position: relative;
+          overflow: hidden;
+          object-fit: cover;
+          max-height: 15em;
+          width: 100%;
+        }
+      }
+    }
+
+    &.pink,
+    &.blue {
+      @include multiline-heading;
+    }
+
+    &.pink {
+      .background { background: $pink; }
+
+      svg {
+        fill: $pink;
+        stroke: $pink;
+      }
+    }
+
+    &.blue {
+      .background { background: $blue; }
+
+      svg {
+        fill: $blue;
+        stroke: $blue;
+      }
+    }
+  }
+
+  article {
+    max-width: 60ch;
+    margin: 1em auto 0;
+    padding: 1em;
+
+    .featured {
+      @include selected-quote($color: $yellow, $size: medium);
+    }
+  }
+
+  // TODO: finish this off
+  .three-things-youll-never-hear-me-say {
+    max-width: 60ch;
+    margin: 1em auto 0;
+    padding: 1em;
+  }
+
+  .advice {
+    @include selected-quote($color: $yellow, $size: medium);
+    max-width: 60ch;
+    padding: 1em;
+    margin: 1em auto 0;
+
+    p {
+      font-weight: bold;
+      margin-bottom: 2em;
+    }
+
+    figure {
+      max-width: 65ch;
+      margin: auto;
     }
   }
 }
