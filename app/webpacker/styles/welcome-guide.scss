@@ -966,6 +966,65 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
   }
 
+  @mixin special-shout-out-layout {
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-rows: 1em repeat(2, minmax(2em, max-content));
+
+    .background { grid-area: 2 / 1 / 4 / 4; }
+    .triangle { grid-area: 1 / 1 / 2 / 4; }
+    .text { grid-area: 1 / 2 / 3 / 3; }
+  }
+
+  .background {
+    background: $yellow;
+  }
+
+  .special-shout-out {
+    @include special-shout-out-layout;
+
+    .pink {
+      display: inline-block;
+      background: $pink;
+      padding: .4rem .6rem;
+    }
+
+    .triangle {
+
+      &.yellow {
+        svg {
+          fill: $yellow;
+          stroke: $yellow;
+          stroke-width: 1;
+        }
+      }
+    }
+
+    .text {
+      margin: 0 auto;
+      max-width: 60ch;
+
+      h2 {
+        margin: 0;
+        @include font-size(xlarge);
+
+        .caption + .caption {
+          margin-top: .2em;
+        }
+
+        .caption-l {
+          @include font-size(large);
+        }
+      }
+
+      @include selected-quote($color: $pink, $size: medium);
+
+      figure {
+        margin-top: 2em;
+      }
+    }
+  }
+
   .advice {
     @include selected-quote($color: $yellow, $size: medium);
     max-width: 60ch;
