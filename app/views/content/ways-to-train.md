@@ -13,7 +13,7 @@ navigation: 20
 article_classes: ['ways-to-train']
 right_column:
   ctas:
-    - title: Start your training this September
+    - title: Start your teacher training this September
       text: |
        Places fill up quickly, but many courses are still available.  
       link_text: "Find a course"
@@ -57,6 +57,10 @@ keywords:
   - Assessment-only
   - AO
   - Providers
+  - Teaching
+  - Teacher training
+  - How to become a teacher
+  - Teacher training courses
 ---
 
 You need 'qualified teacher status' (QTS) to work in the majority of schools in England including state maintained primary, secondary and special schools.
@@ -67,7 +71,7 @@ Find out how to get QTS if you:
 * [do not have a degree](#if-you-do-not-have-a-degree) (and you're not already doing one)
 * [are already an experienced teacher](#if-you-are-already-an-experienced-teacher)
 
-You can also find specialised training programmes if you're [changing career](#if-youre-changing-career) or you [have a doctorate](#if-you-have-a-doctorate).
+You can also find specialised teacher training programmes if you're [changing career](#if-youre-changing-career) or you [have a doctorate](#if-you-have-a-doctorate).
 
 Not looking to teach in primary or secondary settings? Consider teaching [early years](/early-years-teaching-training) or [further education](/become-a-further-education-teacher).
 
@@ -75,7 +79,7 @@ Not looking to teach in primary or secondary settings? Consider teaching [early 
 
 ### Go back to university as a postgraduate student
 
-With university-led training you spend about a third of your time in academic learning and the rest in school placements.
+With university-led teacher training you spend about a third of your time in academic learning and the rest in school placements.
 
 In addition to QTS you'll get a PGCE or PGDE (an academic qualification).
 
@@ -121,7 +125,7 @@ Fees are usually around £9,250 but you can:
 
 ### Earn a salary
 
-Some training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary.
+Some teacher training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary.
 
 You spend less time learning about the theory of teaching than you would in [university-led training](/ways-to-train#go-back-to-university-as-a-postgraduate-student).
 
@@ -186,7 +190,7 @@ Qualifications vary depending on the course. For example, you could get QTS with
 
 ## If you are already an experienced teacher
 
-You may be able to get QTS through a 12-week 'assessment only' programme if you also have a degree.
+You may be able to get 'qualified teacher status' (QTS) through a 12-week 'assessment only' programme if you also have a degree.
 
 You’ll need to show that you already meet the standards for QTS. For example, you may meet the standards if:
 
