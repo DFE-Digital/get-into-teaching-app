@@ -758,7 +758,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   }
 
   .story {
-
     @mixin header-layout {
       grid-template-columns: 1.5em repeat(3, minmax(1em, auto)) 1.5em;
       grid-template-rows: repeat(2, minmax(3em, max-content)) 2em 2em 2em repeat(2, minmax(3em, max-content));
@@ -770,8 +769,14 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       picture { grid-area: 2 / 1 / 4 / 6; }
 
       @include mq($from: desktop) {
-        grid-template-columns: minmax(10em, auto) auto minmax(10em, auto);
-        grid-template-columns: minmax(10em, auto) 1fr minmax(10em, auto);
+        grid-template-columns: minmax(10em, auto) 1fr 4em 2fr;
+
+
+        .background { grid-area: 1 / 1 / 5 / 5; }
+        .triangle { grid-area: 5 / 1 / 6 / 5; }
+        .back { grid-area: 1 / 2 / 2 / 5; }
+        h1 { grid-area: 3 / 2 / 7 / 5; }
+        picture { grid-area: 2 / 3 / 4 / 5; }
       }
     }
 
