@@ -8,6 +8,7 @@ describe Callbacks::Wizard do
         "email" => "email@address.com",
         "first_name" => "John",
         "last_name" => "Doe",
+        "talking_points" => "Something",
       },
     }
   end
@@ -20,8 +21,10 @@ describe Callbacks::Wizard do
     it do
       is_expected.to eql [
         Callbacks::Steps::PersonalDetails,
+        Callbacks::Steps::MatchbackFailed,
         ::Wizard::Steps::Authenticate,
         Callbacks::Steps::Callback,
+        Callbacks::Steps::TalkingPoints,
         Callbacks::Steps::PrivacyPolicy,
       ]
     end
@@ -30,7 +33,7 @@ describe Callbacks::Wizard do
   describe "#complete!" do
     let(:request) do
       GetIntoTeachingApiClient::GetIntoTeachingCallback.new(
-        { email: "email@address.com", firstName: "John", lastName: "Doe" },
+        email: "email@address.com", firstName: "John", lastName: "Doe", talkingPoints: "Something",
       )
     end
 
@@ -46,7 +49,7 @@ describe Callbacks::Wizard do
     it { expect(store[uuid]).to eql({}) }
 
     it "logs the request model (filtering sensitive attributes)" do
-      filtered_json = { "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]" }.to_json
+      filtered_json = { "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]", "talkingPoints" => "Something" }.to_json
       expect(Rails.logger).to have_received(:info).with("Callbacks::Wizard#book_get_into_teaching_callback: #{filtered_json}")
     end
   end

@@ -6,8 +6,10 @@ module Callbacks
 
     self.steps = [
       Steps::PersonalDetails,
+      Steps::MatchbackFailed,
       ::Wizard::Steps::Authenticate,
       Steps::Callback,
+      Steps::TalkingPoints,
       Steps::PrivacyPolicy,
     ].freeze
 

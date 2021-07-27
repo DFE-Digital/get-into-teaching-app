@@ -21,49 +21,18 @@ RSpec.feature "Book a callback", type: :feature do
       address_telephone: "123456789",
       phone_call_scheduled_at: "#{quota.start_at.strftime('%Y-%m-%dT%H:%M:%S')}.000Z",
       accepted_policy_id: "123",
+      talking_points: "Routes into teaching",
     }
-    expect_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
       receive(:book_get_into_teaching_callback)
         .with(having_attributes(callback_attrs))
   end
 
-  scenario "Full journey as a new candidate" do
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
-
-    visit callbacks_steps_path
-
-    expect(page).to have_title("Get Into Teaching: Book a callback, personal details step")
-
-    expect(page).to have_text "Book a callback"
-    fill_in_personal_details_step
-    click_on "Next Step"
-
-    expect(page).to have_text "Choose a time for your callback"
-    fill_in "Phone number", with: "123456789"
-    # Select time in local time zone (London)
-    select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
-    click_on "Next Step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
-    click_on "Book your callback"
-
-    expect(page).to have_title("Get Into Teaching: Callback confirmed")
-    expect(page).to have_text "Callback confirmed"
-
-    date = quota.start_at.to_date.to_formatted_s(:govuk)
-    time = quota.start_at.to_formatted_s(:govuk_time_with_period)
-    expect(page).to have_text "call you on #{date} at #{time}"
-  end
-
-  scenario "Full journey as an existing candidate (that resends the verification code)" do
+  scenario "Full journey as an existing candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::GetIntoTeachingCallback.new(addressTelephone: "123456789")
-    allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
-      receive(:exchange_access_token_for_get_into_teaching_callback).with("654321", anything).and_raise(GetIntoTeachingApiClient::ApiError)
     allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
       receive(:exchange_access_token_for_get_into_teaching_callback).with("123456", anything) { response }
 
@@ -74,14 +43,6 @@ RSpec.feature "Book a callback", type: :feature do
     click_on "Next Step"
 
     expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to email@address.com", with: "654321"
-    click_on "Next Step"
-
-    expect(page).to have_text "Please enter the latest verification code"
-
-    click_link "resend verification"
-    expect(page).to have_text "We've sent you another email."
-
     fill_in "Check your email and enter the verification code sent to email@address.com", with: "123456"
     click_on "Next Step"
 
@@ -89,6 +50,10 @@ RSpec.feature "Book a callback", type: :feature do
     expect(find_field("Phone number").value).to eq(response.address_telephone)
     # Select time in local time zone (London)
     select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
+    click_on "Next Step"
+
+    expect(page).to have_text "Tell us what you’d like to talk to an adviser about"
+    select "Routes into teaching", from: "Choose an option"
     click_on "Next Step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -105,7 +70,14 @@ RSpec.feature "Book a callback", type: :feature do
 
   scenario "Journey encountering errors" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+      receive(:create_candidate_access_token)
+
+    allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
+      receive(:exchange_access_token_for_get_into_teaching_callback).with("654321", anything).and_raise(GetIntoTeachingApiClient::ApiError)
+    allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
+      receive(:exchange_access_token_for_get_into_teaching_callback).with("123456", anything) do
+        GetIntoTeachingApiClient::GetIntoTeachingCallback.new
+      end
 
     visit callbacks_steps_path
 
@@ -119,6 +91,18 @@ RSpec.feature "Book a callback", type: :feature do
     fill_in_personal_details_step
     click_on "Next Step"
 
+    expect(page).to have_text "Verify your email address"
+    fill_in "Check your email and enter the verification code sent to email@address.com", with: "654321"
+    click_on "Next Step"
+
+    expect(page).to have_text "Please enter the latest verification code"
+
+    click_link "resend verification"
+    expect(page).to have_text "We've sent you another email."
+
+    fill_in "Check your email and enter the verification code sent to email@address.com", with: "123456"
+    click_on "Next Step"
+
     expect(page).to have_text "Choose a time for your callback"
     click_on "Next Step"
     expect(page).to have_text "Enter your telephone number"
@@ -128,6 +112,12 @@ RSpec.feature "Book a callback", type: :feature do
     fill_in "Phone number", with: "123456789"
     # Select time in local time zone (London)
     select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
+    click_on "Next Step"
+
+    expect(page).to have_text "Tell us what you’d like to talk to an adviser about"
+    click_on "Next Step"
+    expect(page).to have_text "Choose an option"
+    select "Routes into teaching", from: "Choose an option"
     click_on "Next Step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -142,6 +132,41 @@ RSpec.feature "Book a callback", type: :feature do
     date = quota.start_at.to_date.to_formatted_s(:govuk)
     time = quota.start_at.to_formatted_s(:govuk_time_with_period)
     expect(page).to have_text "call you on #{date} at #{time}"
+  end
+
+  scenario "Journey when candidate has issues signing in" do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError.new(code: 404))
+
+    visit callbacks_steps_path
+
+    expect(page).to have_title("Get Into Teaching: Book a callback, personal details step")
+
+    expect(page).to have_text "Book a callback"
+    fill_in_personal_details_step
+    click_on "Next Step"
+
+    expect(page).to have_text "We didn’t recognise the first name, last name or email address you entered"
+
+    click_link "Try entering your details again"
+    click_on "Next Step"
+
+    expect(page).to have_text "We didn’t recognise the first name, last name or email address you entered"
+    expect(page).to have_text "Try entering your details again"
+
+    click_link "Try entering your details again"
+    click_on "Next Step"
+
+    expect(page).to have_text "We didn’t recognise your first name, last name or email address"
+    expect(page).to have_text "Once you’re registered, you can try again"
+
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError.new(code: 500))
+
+    visit callbacks_steps_path
+    click_on "Next Step"
+
+    expect(page).to have_text "Sorry, a technical problem means we can’t book your callback right now."
   end
 
   def fill_in_personal_details_step(
