@@ -916,7 +916,15 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     h2 {
       @include font-size(xlarge);
       z-index: map-get($z-indices, "top");
-      line-height: 1.1;
+      line-height: 1.3;
+
+      em {
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: .15em;
+        text-decoration-thickness: .15em;
+        font-style: normal;
+      }
     }
 
     ol {
@@ -925,6 +933,10 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       li {
         &::marker {
           font-weight: bold;
+
+          @include mq($from: desktop) {
+            display: inline;
+          }
         }
       }
     }
