@@ -31,4 +31,17 @@
       margin: .2em 0 1em;
     }
   }
+
+  .mailing-list__actions {
+    display: flex;
+    flex-direction: row;
+    gap: $indent-amount;
+
+    .telephone {
+      display: block;
+      font-weight: bold;
+      text-decoration: none;
+      color: $black;
+    }
+  }
 }
