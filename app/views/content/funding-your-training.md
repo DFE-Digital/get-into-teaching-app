@@ -91,6 +91,10 @@
     - Adult Dependants’ Grant
     - Disabled students
     - Disabled Students’ Allowances
+    - Teaching
+    - Teacher training
+    - How to become a teacher
+    - Teacher training courses
 
 ---
 
@@ -102,7 +106,7 @@ Funding is available to help you [train to teach](/ways-to-train). You can apply
 * tuition fee loan of up to £9,250 to cover your teacher training, so you do not need to pay course fees upfront
 * maintenance loan of up to £12,382 to help with living costs
 
-You can still apply for a tuition fee and a maintenance loan if you already have a student loan, and regardless of whether you get a bursary or scholarship.
+You can still apply for a tuition fee and a maintenance loan if you already have a student loan, and regardless of whether you get a teaching bursary or scholarship.
 
 You will only have to make loan repayments once you're earning. Your repayments will not increase if you already have a student loan and take an additional loan for teacher training.
 
@@ -117,7 +121,7 @@ These are tax-free amounts of money you receive to train in certain subjects. Yo
 
 You’ll need a first, 2:1, 2:2 degree or a PhD or master's degree to be eligible for a bursary, as well as meeting the bursary scheme's individual terms and conditions.
 
-[Find out more about your eligibility for bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2021-to-2022).
+[Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2021-to-2022).
 
 For a scholarship, each professional scholarship body sets its own criteria. These bodies include:
 
@@ -129,7 +133,7 @@ For a scholarship, each professional scholarship body sets its own criteria. The
 ### Check which subjects have bursaries and scholarships
 
 Teaching bursaries and scholarships are only available for the subjects listed
-below. You cannot receive both a bursary and a scholarship.
+below. You cannot receive both a teaching bursary and a scholarship.
 
 | Subject       | Bursary  | Scholarship      |
 | ------------- | -------: | ---------------: |
