@@ -2,7 +2,7 @@
 layout: "layouts/stories/landing"
 title: My story into teaching
 description: |-
-  Teachers offer an insight into day-to-day school life and the satisfaction
+  Teachers offer an insight into how to become a teacher, day-to-day school life and the satisfaction
   that comes with making a difference to young people's lives.
 date: "2021-02-02"
 image: "media/images/content/hero-images/0010.jpg"
@@ -43,9 +43,7 @@ sections:
   International returning teachers:
     link: /my-story-into-teaching/international-career-changers
     text: >
-      It’s a great time to train to teach, with a wide array of training
-      options and support available. Find out what you can expect from current
-      trainees and teachers.
+      It’s a great time to bring your international teaching experience into the classroom. Find out more from others who have returned to teaching from overseas.   
     stories:
       - name: Katie
         link: /my-story-into-teaching/international-career-changers/returning-to-teaching-with-international-experience
@@ -58,8 +56,8 @@ sections:
   Teacher training:
     link: /my-story-into-teaching/teacher-training-stories
     text: >
-      It’s a great time to train to teach, with a wide array of training
-      options and support available. Find out what you can expect from current
+      It’s a great time start your training, with a wide array of teacher training courses
+      and support available. Find out what you can expect from current
       trainees and teachers.
     stories:
       - name: Emma
@@ -148,4 +146,8 @@ keywords:
   - case study
   - case studies
   - examples
+  - Teaching
+  - Teacher training
+  - How to become a teacher
+  - Teacher training courses
 ---
