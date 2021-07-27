@@ -2,7 +2,7 @@
 title: "Salaries and benefits"
 description: |-
   View teachers' pay scales, pay ranges table and salary bands for England and London, 
-  as well as other benefits such as holidays and the Teacher Pension Scheme. Find out the average starting salary for primary and secondary school teachers, as well as leading practictioners and headteachers.
+  as well as other benefits such as holidays and the Teacher Pension Scheme. Find out the average starting salary for teaching primary and secondary school, as well as leading practictioners and headteachers.
 date: "2021-06-24"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
@@ -10,7 +10,7 @@ navigation: 40
 lid_pixel_event: "SalaryBenefits"
 right_column:
   ctas:
-    - title: How to train to teach
+    - title: How to become a teacher
       text: |
        Find out how to train to become a qualified primary or secondary teacher in England.
       link_text: "Ways to train"
@@ -47,6 +47,10 @@ keywords:
   - Support
   - Training
   - ECF
+  - Teaching
+  - Teacher training
+  - How to become a teacher
+  - Teacher training courses
 ---
 
 Schools develop their own pay scales to attract and retain teachers that have the greatest impact on their pupils' learning.
@@ -55,7 +59,7 @@ What you're paid will be linked to performance, not length of service - meaning 
 
 ## Qualified teachers
 
-As a newly qualified teacher (NQT) in a primary or secondary school your starting salary will be between £25,714 and £32,157 depending on where you teach.
+As a 'newly qualified teacher' (NQT) in a primary or secondary school your starting salary will be between £25,714 and £32,157 depending on where you teach.
 
 As you progress in your teaching career, it's possible to move up through these pay scales:
 
@@ -79,7 +83,7 @@ A 2-year package to support teachers at the start of their career, based on the 
 The support package includes:
 
 * funded 5% time off timetable in the second year of teaching, in addition to the existing 10% in the first year
-* a range of high-quality, freely available curricula and training materials underpinned by the early career framework
+* a range of high-quality, freely available curricula and teacher training materials underpinned by the early career framework
 * funded training for mentors of early career teachers
 * funded time for mentors to support early career teachers
 
@@ -90,7 +94,7 @@ You may be able to get 'teaching and learning responsibility' (TLR) payments if 
 * progressing the education of people beyond your assigned pupils
 * leading, developing and enhancing the teaching practice of others
 
-TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on your responsibilities. For example, the higher payment involves taking on line management responsibilities.
+TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on your teaching responsibilities. For example, the higher payment involves taking on line management responsibilities.
 
 | Level   | Minimum | Maximum |
 | ------- | -----   | -----   |
