@@ -80,6 +80,26 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
   }
 
+  .back {
+    display: flex;
+
+    align-items: center;
+
+    a {
+      color: $black;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    &.bottom {
+      margin: 4em 0;
+    }
+  }
+
   .no-wrap {
     white-space: nowrap;
   }
@@ -918,22 +938,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         .caption-m {
           @include font-size(large);
           margin-top: .5em;
-        }
-      }
-
-      .back {
-        display: flex;
-
-        align-items: center;
-
-        a {
-          color: $black;
-          text-decoration: none;
-          font-weight: bold;
-
-          &:hover {
-            text-decoration: underline;
-          }
         }
       }
 
