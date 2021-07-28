@@ -13,6 +13,45 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   mix-blend-mode: darken;
 }
 
+@mixin selected-quote($color: pink, $size: large) {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+
+  figure {
+    blockquote {
+      @include reset;
+      @include font-size($size);
+
+      position: relative;
+      font-weight: bold;
+
+      &:before,
+      &:after {
+        content: '"';
+        color: $color;
+      }
+
+      &:before {
+        content: open-quote;
+        position: absolute;
+        left: -.8em;
+        top: -.3em;
+      }
+
+      &:after {
+        content: close-quote;
+        margin-left: .2em;
+      }
+    }
+
+    figcaption {
+      margin-top: 2em;
+    }
+  }
+}
+
 .welcome-guide {
   max-width: $page-max-width;
   background-color: $grey;
@@ -22,8 +61,16 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     display: block;
   }
 
+  svg {
+    @include reset;
+  }
+
   header {
     h1 { @include reset; }
+  }
+
+  .blend {
+    @include multiline-heading;
   }
 
   picture {
@@ -269,42 +316,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       .selected-quote {
         padding: 8em 0 0;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-
-        figure {
-          blockquote {
-            @include reset;
-            @include font-size(large);
-
-            position: relative;
-            font-weight: bold;
-
-            &:before,
-            &:after {
-              content: '"';
-              color: $pink;
-            }
-
-            &:before {
-              content: open-quote;
-              position: absolute;
-              left: -.8em;
-              top: -.3em;
-            }
-
-            &:after {
-              content: close-quote;
-              margin-left: .2em;
-            }
-          }
-
-          figcaption {
-            margin-top: 2em;
-          }
-        }
+        @include selected-quote($color: $pink);
       }
     }
 
@@ -340,10 +352,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
           margin-top: .4em;
 
-          .blend {
-            @include multiline-heading;
-          }
-
           .yellow {
             position: relative;
             z-index: map-get($z-indices, "medium");
@@ -372,16 +380,19 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
 
     @mixin bringing-your-lesson-to-life-layout {
-      grid-template-rows: repeat(2, minmax(2em, max-content)) 2em repeat(2, minmax(2em, max-content));
+      grid-template-rows: repeat(2, minmax(2em, max-content)) 2em minmax(2em, max-content);
       grid-template-columns: 1fr;
 
+      .text { grid-area: 2 / 1 / 4 / 2; }
+      .carrousel { grid-area: 3 / 1 / 5 / 2; }
+
       @include mq($from: desktop) {
-        grid-template-rows: repeat(2, minmax(3em, max-content));
-        grid-template-columns: 15em 1fr 1fr;
+        grid-template-rows: minmax(3em, max-content) 3em minmax(3em, max-content);
+        grid-template-columns: 15em 1fr 3fr;
 
         .section-number { grid-area: 1 / 1 / 2 / 2; }
-        .text { grid-area: 1 / 3 / 2 / 4; }
-        .carrousel { grid-area: 2 / 1 / 3 / 4; }
+        .text { grid-area: 1 / 3 / 3 / 4; }
+        .carrousel { grid-area: 2 / 1 / 4 / 4; }
       }
     }
 
@@ -408,10 +419,100 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         padding: .3rem .6rem;
       }
 
+      .text {
+        z-index: map-get($z-indices, "top");
+      }
+
       .carrousel {
-        margin: 1rem;
-        outline: 5px dashed $purple;
-        text-align: center;
+        margin: 1rem 0 6rem;
+        gap: 2em;
+        flex-direction: column;
+        padding: 0 4em;
+
+        .items {
+          display: flex;
+          @include mq($from: desktop) {
+            flex-direction: row;
+            flex-wrap: wrap;
+          }
+
+          .item {
+            display: flex;
+            flex-direction: column;
+            @include mq($from: desktop) {
+              width: 40em;
+            }
+
+            .caption {
+              margin: 2em 1em;
+
+              @include mq($from: desktop) {
+                margin: 2em 4em;
+              }
+            }
+
+            picture {
+              flex-grow: 1;
+              display: flex;
+              width: 100%;
+              margin: 0;
+
+              img {
+                z-index: map-get($z-indices, "bottom");
+                position: relative;
+                overflow: hidden;
+                object-fit: cover;
+                align-self: flex-end;
+                width: 90%;
+                margin: 0 auto;
+
+                &.tilt-left {
+                  transform: rotate(3deg);
+                }
+
+                &.tilt-right {
+                  transform: rotate(-3deg);
+                }
+              }
+            }
+          }
+        }
+
+        .controls {
+          $slightly-dark-grey: darken($grey, 15%);
+
+          margin-left: 2em;
+          ul {
+            display: flex;
+            align-items: center;
+
+            list-style: none;
+            li {
+              color: $slightly-dark-grey;
+              display: inline;
+              @include font-size(medium);
+
+              &.current {
+                color: $purple;
+              }
+
+              &.arrow {
+                @include font-size(xxlarge);
+                color: $black;
+                margin-left: .1em;
+
+                &.grey {
+                  margin-left: 1em;
+                  color: $slightly-dark-grey;
+                }
+              }
+            }
+
+            li + li {
+              margin-left: .5em;
+            }
+          }
+        }
       }
     }
 
@@ -746,6 +847,291 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         text-align: center;
         font-weight: bold;
       }
+    }
+  }
+
+  .story {
+    @mixin header-layout {
+      grid-template-columns: 1.5em repeat(3, minmax(1em, auto)) 1.5em;
+      grid-template-rows: repeat(2, minmax(3em, max-content)) 2em 2em 2em repeat(2, minmax(3em, max-content));
+
+      .background { grid-area: 1 / 1 / 5 / 6; }
+      .triangle { grid-area: 5 / 1 / 6 / 6; }
+      .back { grid-area: 1 / 2 / 2 / 4; }
+      h1 { grid-area: 3 / 2 / 7 / 5; }
+      picture { grid-area: 2 / 1 / 4 / 6; }
+
+      @include mq($from: desktop) {
+        grid-template-columns: minmax(10em, auto) 1fr 4em 2fr;
+
+
+        .background { grid-area: 1 / 1 / 5 / 5; }
+        .triangle { grid-area: 5 / 1 / 6 / 5; }
+        .back { grid-area: 1 / 2 / 2 / 5; }
+        h1 { grid-area: 3 / 2 / 7 / 5; }
+        picture { grid-area: 2 / 3 / 4 / 5; }
+      }
+    }
+
+    &.header {
+      @include header-layout;
+
+      display: grid;
+
+      .triangle {
+        @include reset;
+        margin-top: -.03em; // ensure there's never any gap when resizing
+
+        svg {
+          stroke-width: 1;
+        }
+      }
+
+      h1 {
+        z-index: map-get($z-indices, "top");
+
+        .yellow,
+        .blue {
+          padding: .4rem .6rem;
+          display: inline-block;
+
+          em {
+            font-style: normal;
+            text-decoration: underline;
+            text-decoration-thickness: .15em;
+            text-underline-offset: .15em;
+          }
+        }
+
+        .yellow {
+          background-color: $yellow;
+        }
+
+        .blue {
+          background-color: $blue;
+        }
+
+        .caption-l {
+          @include font-size(xxlarge);
+        }
+
+        .caption-m {
+          @include font-size(large);
+          margin-top: .5em;
+        }
+      }
+
+      .back {
+        display: flex;
+
+        align-items: center;
+
+        a {
+          color: $black;
+          text-decoration: none;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      picture {
+        width: 100%;
+
+        img {
+          position: relative;
+          overflow: hidden;
+          object-fit: cover;
+          max-height: 15em;
+          width: 100%;
+        }
+      }
+    }
+
+    &.pink,
+    &.blue {
+      @include multiline-heading;
+    }
+
+    &.pink {
+      .background { background: $pink; }
+
+      svg {
+        fill: $pink;
+        stroke: $pink;
+      }
+    }
+
+    &.blue {
+      .background { background: $blue; }
+
+      svg {
+        fill: $blue;
+        stroke: $blue;
+      }
+    }
+  }
+
+  article {
+    max-width: 60ch;
+    margin: 1em auto 0;
+    padding: 1em;
+
+    .featured {
+      @include selected-quote($color: $yellow, $size: medium);
+    }
+  }
+
+  @mixin three-things-youll-never-hear-me-say-layout {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: max-content 3em max-content;
+
+    picture { grid-area: 1 / 1 / 3 / 3; }
+    h2 { grid-area: 2 / 1 / 4 / 3; }
+    ol { grid-area: 4 / 1 / 5 / 3; }
+
+    @include mq($from: desktop) {
+      grid-template-rows: 16em 3em max-content;
+      picture { grid-area: 1 / 2 / 3 / 3; }
+    }
+  }
+
+  .three-things-youll-never-hear-me-say {
+    @include three-things-youll-never-hear-me-say-layout;
+
+    max-width: 60ch;
+    margin: 1em auto 0;
+    padding: 1em;
+
+    h2 {
+      @include font-size(xlarge);
+      z-index: map-get($z-indices, "top");
+      line-height: 1.3;
+
+      em {
+        text-transform: uppercase;
+        text-decoration: underline;
+        text-underline-offset: .15em;
+        text-decoration-thickness: .15em;
+        font-style: normal;
+      }
+    }
+
+    ol {
+      margin: 0;
+
+      li {
+        &::marker {
+          font-weight: bold;
+
+          @include mq($from: desktop) {
+            display: inline;
+          }
+        }
+      }
+    }
+
+    .purple {
+      background: $purple;
+      padding: .4rem .6rem;
+    }
+
+    picture {
+      width: 100%;
+      display: flex;
+
+      img {
+        align-self: flex-end;
+        position: relative;
+        overflow: hidden;
+        object-fit: cover;
+        max-height: 20em;
+        transform: rotate(3deg);
+        width: 100%;
+
+        @include mq($from: desktop) {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  @mixin special-shout-out-layout {
+    display: grid;
+    grid-template-columns: 1em 1fr 1em;
+    grid-template-rows: 1em repeat(2, minmax(2em, max-content));
+
+    .background { grid-area: 2 / 1 / 4 / 4; }
+    .triangle { grid-area: 1 / 1 / 2 / 4; }
+    .text { grid-area: 1 / 2 / 3 / 3; }
+  }
+
+  .background {
+    background: $yellow;
+  }
+
+  .special-shout-out {
+    @include special-shout-out-layout;
+
+    .pink {
+      display: inline-block;
+      background: $pink;
+      padding: .4rem .6rem;
+    }
+
+    .triangle {
+
+      &.yellow {
+        svg {
+          fill: $yellow;
+          stroke: $yellow;
+          stroke-width: 1;
+        }
+      }
+    }
+
+    .text {
+      margin: 0 auto;
+      max-width: 60ch;
+
+      h2 {
+        margin: 0;
+        @include font-size(xlarge);
+
+        .caption + .caption {
+          margin-top: .2em;
+        }
+
+        .caption-l {
+          @include font-size(large);
+        }
+      }
+
+      @include selected-quote($color: $pink, $size: medium);
+
+      figure {
+        margin-top: 2em;
+      }
+    }
+  }
+
+  .advice {
+    @include selected-quote($color: $yellow, $size: medium);
+    max-width: 60ch;
+    padding: 1em;
+    margin: 1em auto 0;
+
+    p {
+      font-weight: bold;
+      margin-bottom: 2em;
+    }
+
+    figure {
+      max-width: 65ch;
+      margin: auto;
     }
   }
 }

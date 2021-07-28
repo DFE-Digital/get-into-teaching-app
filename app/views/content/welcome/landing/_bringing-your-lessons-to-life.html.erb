@@ -1,39 +1,65 @@
 
 <section class="landing bringing-your-lessons-to-life numbered">
-    <div class="section-number">
-      <span>03</span>
+  <div class="section-number">
+    <span>03</span>
+  </div>
+
+  <div class="text">
+    <h2>
+      <span class="purple no-wrap">
+        Bringing your
+      </span>
+
+      <br>
+
+      <span class="purple no-wrap blend">
+        lessons to life.
+      </span>
+    </h2>
+
+    <article class="purple">
+      <p>
+        Whether it’s getting students to open up with a mental health podcast
+        or using rap music to teach English literature, every teacher is
+        different. And you&apos;ll soon find ways to bring your own passions
+        and interests to the classroom.
+      </p>
+
+      <p>
+        Meet <strong>Jack</strong>, <strong>Yvonne</strong> and
+        <strong>Andrew</strong>. All teachers, but with three very different
+        passions.
+      </p>
+    </article>
+  </div>
+
+  <div class="carrousel">
+    <div class="items">
+      <div class="item">
+        <%= image_pack_tag("media/images/content/hero-images/0009.jpg", class: "tilt-right") %>
+
+
+        <div class="caption">
+          <p>
+            Jack is a PE teacher from Leeds, with a passion for opening up conversations around mental health in schools.
+          </p>
+
+          <a class="button" href="/welcome/bring-your-lessons-to-life">Read Jack's story</a>
+        </div>
+      </div>
     </div>
 
-    <div class="text">
-      <h2>
-        <span class="purple no-wrap">
-          Bringing your
-        </span>
+    <div class="controls">
+      <ul>
+        <li class="current">●</li>
 
-        <br>
+        <% 2.times do %>
+          <li>●</li>
+        <% end %>
 
-        <span class="purple no-wrap blend">
-          lessons to life.
-        </span>
-      </h2>
-
-      <article class="purple">
-        <p>
-          Whether it’s getting students to open up with a mental health podcast
-          or using rap music to teach English literature, every teacher is
-          different. And you&apos;ll soon find ways to bring your own passions
-          and interests to the classroom.
-        </p>
-
-        <p>
-          Meet <strong>Jack</strong>, <strong>Yvonne</strong> and
-          <strong>Andrew</strong>. All teachers, but with three very different
-          passions.
-        </p>
-      </article>
+        <li class="arrow grey">&larr;</li>
+        <li class="arrow">&rarr;</li>
+      </ul>
     </div>
-
-    <div class="carrousel">
-      <span class="placeholder" style="font-size: 15rem;">🎠<span>
-    </div>
+  </div>
 </section>
