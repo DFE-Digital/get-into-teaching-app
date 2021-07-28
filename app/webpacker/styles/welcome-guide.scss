@@ -380,16 +380,19 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
 
     @mixin bringing-your-lesson-to-life-layout {
-      grid-template-rows: repeat(2, minmax(2em, max-content)) 2em repeat(2, minmax(2em, max-content));
+      grid-template-rows: repeat(2, minmax(2em, max-content)) 2em minmax(2em, max-content);
       grid-template-columns: 1fr;
 
+      .text { grid-area: 2 / 1 / 4 / 2; }
+      .carrousel { grid-area: 3 / 1 / 5 / 2; }
+
       @include mq($from: desktop) {
-        grid-template-rows: repeat(2, minmax(3em, max-content));
-        grid-template-columns: 15em 1fr 1fr;
+        grid-template-rows: minmax(3em, max-content) 3em minmax(3em, max-content);
+        grid-template-columns: 15em 1fr 3fr;
 
         .section-number { grid-area: 1 / 1 / 2 / 2; }
-        .text { grid-area: 1 / 3 / 2 / 4; }
-        .carrousel { grid-area: 2 / 1 / 3 / 4; }
+        .text { grid-area: 1 / 3 / 3 / 4; }
+        .carrousel { grid-area: 2 / 1 / 4 / 4; }
       }
     }
 
@@ -416,10 +419,100 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         padding: .3rem .6rem;
       }
 
+      .text {
+        z-index: map-get($z-indices, "top");
+      }
+
       .carrousel {
-        margin: 1rem;
-        outline: 5px dashed $purple;
-        text-align: center;
+        margin: 1rem 0 6rem;
+        gap: 2em;
+        flex-direction: column;
+        padding: 0 4em;
+
+        .items {
+          display: flex;
+          @include mq($from: desktop) {
+            flex-direction: row;
+            flex-wrap: wrap;
+          }
+
+          .item {
+            display: flex;
+            flex-direction: column;
+            @include mq($from: desktop) {
+              width: 40em;
+            }
+
+            .caption {
+              margin: 2em 1em;
+
+              @include mq($from: desktop) {
+                margin: 2em 4em;
+              }
+            }
+
+            picture {
+              flex-grow: 1;
+              display: flex;
+              width: 100%;
+              margin: 0;
+
+              img {
+                z-index: map-get($z-indices, "bottom");
+                position: relative;
+                overflow: hidden;
+                object-fit: cover;
+                align-self: flex-end;
+                width: 90%;
+                margin: 0 auto;
+
+                &.tilt-left {
+                  transform: rotate(3deg);
+                }
+
+                &.tilt-right {
+                  transform: rotate(-3deg);
+                }
+              }
+            }
+          }
+        }
+
+        .controls {
+          $slightly-dark-grey: darken($grey, 15%);
+
+          margin-left: 2em;
+          ul {
+            display: flex;
+            align-items: center;
+
+            list-style: none;
+            li {
+              color: $slightly-dark-grey;
+              display: inline;
+              @include font-size(medium);
+
+              &.current {
+                color: $purple;
+              }
+
+              &.arrow {
+                @include font-size(xxlarge);
+                color: $black;
+                margin-left: .1em;
+
+                &.grey {
+                  margin-left: 1em;
+                  color: $slightly-dark-grey;
+                }
+              }
+            }
+
+            li + li {
+              margin-left: .5em;
+            }
+          }
+        }
       }
     }
 
