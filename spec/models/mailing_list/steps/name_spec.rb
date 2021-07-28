@@ -27,11 +27,11 @@ describe MailingList::Steps::Name do
   end
 
   describe "validations for first_name" do
-    it { is_expected.not_to allow_value("a" * 257).for :first_name }
+    it { is_expected.to validate_length_of(:first_name).is_at_most(256) }
   end
 
   describe "validations for last_name" do
-    it { is_expected.not_to allow_value("a" * 257).for :last_name }
+    it { is_expected.to validate_length_of(:last_name).is_at_most(256) }
   end
 
   describe "validations for email address" do
