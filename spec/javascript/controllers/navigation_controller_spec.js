@@ -32,29 +32,39 @@ describe('NavigationController', () => {
     const application = Application.start();
     application.register('navigation', NavigationController);
 
-    it("toggles the visibility of the navigation area when menu button clicked", () => {
-      expect(document.querySelector('nav').classList).toContain("hidden-mobile");
+    it('toggles the visibility of the navigation area when menu button clicked', () => {
+      expect(document.querySelector('nav').classList).toContain(
+        'hidden-mobile'
+      );
 
-      document.querySelector("button").click();
+      document.querySelector('button').click();
 
-      expect(document.querySelector('nav').classList).not.toContain("hidden-mobile");
+      expect(document.querySelector('nav').classList).not.toContain(
+        'hidden-mobile'
+      );
 
-      document.querySelector("button").click();
+      document.querySelector('button').click();
 
-      expect(document.querySelector('nav').classList).toContain("hidden-mobile");
+      expect(document.querySelector('nav').classList).toContain(
+        'hidden-mobile'
+      );
     });
 
-    it("toggles the menu visability when a menu item is clicked", () => {
-      const menu = document.querySelector("ol.primary > li.menu > a");
+    it('toggles the menu visability when a menu item is clicked', () => {
+      const menu = document.querySelector('ol.primary > li.menu > a');
       menu.click();
 
-      expect(document.querySelector('li.menu').classList).toContain("down");
-      expect(document.querySelector('ol.secondary').classList).not.toContain("hidden");
+      expect(document.querySelector('li.menu').classList).toContain('down');
+      expect(document.querySelector('ol.secondary').classList).not.toContain(
+        'hidden'
+      );
 
       menu.click();
 
-      expect(document.querySelector('li.menu').classList).toContain("up");
-      expect(document.querySelector('ol.secondary').classList).toContain("hidden");
+      expect(document.querySelector('li.menu').classList).toContain('up');
+      expect(document.querySelector('ol.secondary').classList).toContain(
+        'hidden'
+      );
     });
   });
 });

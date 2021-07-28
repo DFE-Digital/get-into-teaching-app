@@ -27,4 +27,7 @@ module.exports = {
       },
     },
   ],
+  globals: {
+    Turbolinks: 'readonly',
+  },
 };

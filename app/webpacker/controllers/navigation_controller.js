@@ -10,8 +10,7 @@ export default class extends Controller {
     event.stopPropagation();
 
     const toggle = event.target.closest('li');
-    const secondary = event.target.closest('li').querySelector('ol.secondary')
-
+    const secondary = event.target.closest('li').querySelector('ol.secondary');
 
     if (secondary.classList.contains(this.menuHiddenClass)) {
       this.expandMenu(secondary, toggle);
