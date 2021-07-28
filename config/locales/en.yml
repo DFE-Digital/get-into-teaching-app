@@ -34,29 +34,29 @@ en:
     types:
       222750001: |-
         <p>Our Train to Teach events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom.</p>
-        <p>At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts. 
+        <p>At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts.
         Some events are in person and others replicate the experience online.</p>
         <p>Whichever event you choose to attend, you will have the chance to:</p>
         <ul>
           <li>put your questions to expert advisers, teachers and training providers</li>
           <li>chat with current teachers and find out what a career in teaching is really like</li>
-          <li>watch presentations which provide a step-by-step guide on how to get into teaching, the application 
+          <li>watch presentations which provide a step-by-step guide on how to get into teaching, the application
           process and funding your training</li>
         </ul>
-        <p>You need to register for Train to Teach events in advance, as spaces are 
+        <p>You need to register for Train to Teach events in advance, as spaces are
         limited and fill up on a first come, first served basis.</p>
         <p>
         The presentations used at these events can be found <a href="/presentations">here</a>.
         </p>
       222750008: |-
         <p>
-          Ask a panel of specialists the questions that matter to you in one of our real-time Q&A online events. 
-          These Q&A sessions cover a range of different topics and give you the opportunity to ask specific questions 
+          Ask a panel of specialists the questions that matter to you in one of our real-time Q&A online events.
+          These Q&A sessions cover a range of different topics and give you the opportunity to ask specific questions
           and receive advice tailored to your circumstances.
         </p>
       222750009: |-
         <p>
-          Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to 
+          Schools and universities that run teacher training courses often hold their own events giving you a valuable opportunity to
           get a feel for what their teacher training course might be like.
         </p>
 
@@ -69,7 +69,7 @@ en:
           <li><span>a chance to talk to current trainees or staff</span></li>
         </ul>
 
-        <p>Use the search tool below to find events being held by 
+        <p>Use the search tool below to find events being held by
         training providers in the area you would like to train.</p>
   funding_widget:
     subjects:
@@ -284,6 +284,10 @@ en:
         long: |-
           Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training
           will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
+    222750007: # Question Time (displayed as Train to Teach)
+      name:
+        singular: "Train to Teach event"
+        plural: "Train to Teach events"
     222750008:
       name:
         singular: "Online Q&A"

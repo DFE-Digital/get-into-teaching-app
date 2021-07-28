@@ -67,7 +67,12 @@ private
       quantity_per_type: UPCOMING_EVENTS_PER_TYPE,
       start_after: DateTime.now.utc.beginning_of_day,
     )
-    @group_presenter = Events::GroupPresenter.new(search_results)
+    @group_presenter = Events::GroupPresenter.new(
+      search_results,
+      display_empty: false,
+      ascending: true,
+      limit_per_type: UPCOMING_EVENTS_PER_TYPE,
+    )
     @events_by_type = @group_presenter.sorted_events_by_type
     @no_results = @events_by_type.all? { |_, events| events.empty? }
   end
@@ -79,7 +84,7 @@ private
     @performed_search = true
     @events_search_type = params.dig("events_search", "type")
 
-    @group_presenter = Events::GroupPresenter.new(search_results, @display_empty_types)
+    @group_presenter = Events::GroupPresenter.new(search_results, display_empty: @display_empty_types)
     pages = params.permit(@group_presenter.page_param_names.values)
     @events_by_type = @group_presenter.paginated_events_by_type(pages)
     @no_results = @events_by_type.all? { |_, events| events.empty? }

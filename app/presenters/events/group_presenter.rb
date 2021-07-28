@@ -2,12 +2,16 @@ module Events
   class GroupPresenter
     EVENTS_PER_TYPE = 9
 
-    def initialize(events_by_type, display_empty_types = false, ascending = true)
-      @display_empty_types = display_empty_types
+    def initialize(events_by_type, display_empty: false, ascending: true, limit_per_type: nil)
+      @display_empty_types = display_empty
+
+      events_by_type = merge_question_time_events(events_by_type)
+
       @events_by_type = events_by_type
         .index_by(&:type_id)
         .transform_values do |v|
           events = v.teaching_events.sort_by { |e| [e.start_at] }
+          events = events.take(limit_per_type) if limit_per_type.present?
           events.reverse! unless ascending
           events
         end
@@ -42,11 +46,31 @@ module Events
     end
 
     def page_param_name(type_id)
-      category_name = GetIntoTeachingApiClient::Constants::EVENT_TYPES.key(type_id)
+      category_name = event_types.key(type_id)
       "#{category_name.parameterize(separator: '_')}_page"
     end
 
   private
+
+    def merge_question_time_events(events_by_type)
+      types = [event_types["Train to Teach event"], event_types["Question Time"]]
+
+      combined_events = events_by_type
+        .select { |e| types.include?(e.type_id) }
+        .map(&:teaching_events)
+        .flatten
+
+      return events_by_type if combined_events.blank?
+
+      combined_events_type = GetIntoTeachingApiClient::TeachingEventsByType.new(
+        typeId: event_types["Train to Teach event"],
+        teachingEvents: combined_events,
+      )
+
+      events_by_type
+        .reject { |e| types.include?(e.type_id) }
+        .push(combined_events_type)
+    end
 
     def populate_events_by_type
       return @events_by_type unless @display_empty_types
@@ -60,7 +84,11 @@ module Events
     end
 
     def event_type_ids
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES.values
+      event_types.except("Question Time").values
+    end
+
+    def event_types
+      GetIntoTeachingApiClient::Constants::EVENT_TYPES
     end
   end
 end

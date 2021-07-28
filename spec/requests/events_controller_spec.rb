@@ -58,7 +58,7 @@ describe EventsController do
     end
 
     context "with valid search params" do
-      let(:event_type_name) { "Train to Teach event" }
+      let(:event_type_name) { "School or University event" }
       let(:event_type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES[event_type_name] }
       let(:search_params) do
         attributes_for(
@@ -75,7 +75,7 @@ describe EventsController do
           radius: nil,
           start_after: date.beginning_of_day,
           start_before: date.end_of_month,
-          type_id: event_type,
+          type_ids: [event_type],
         }
       end
       let(:expected_description) { "Get your questions answered at an event." }
@@ -110,7 +110,7 @@ describe EventsController do
 
     context "with no search params" do
       let(:search_params) { nil }
-      let(:expected_request_attributes) { { type_id: nil } }
+      let(:expected_request_attributes) { { type_ids: nil } }
 
       it { is_expected.to have_http_status :success }
       it { is_expected.to have_attributes media_type: "text/html" }
