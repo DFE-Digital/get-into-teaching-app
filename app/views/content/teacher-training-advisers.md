@@ -30,7 +30,6 @@ keywords:
 quote:
     q-tta-one:
       text: "It's tailor-made to individual needs. I received an abundance of help."
-      image: media/images/content/stories/stories-will.jpg
       inline: right
     q-tta-two:
       text: "[My adviser] was extremely helpful as well as thoughtful and understanding."
