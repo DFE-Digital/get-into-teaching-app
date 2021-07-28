@@ -2,7 +2,7 @@ import { Application } from 'stimulus';
 import ScrollController from 'scroll_controller';
 
 describe('ScrollController', () => {
-  var application;
+  let application;
 
   beforeEach(() => {
     document.body.innerHTML = `<div id="controller" data-controller="scroll" style="height: 10000px;">
@@ -21,7 +21,9 @@ describe('ScrollController', () => {
       application.register('scroll', ScrollController);
 
       expect(window.scrollTo).toHaveBeenCalledWith(0, '7000');
-      expect(window.localStorage.getItem(ScrollController.previousTopKey)).toBeNull();
+      expect(
+        window.localStorage.getItem(ScrollController.previousTopKey)
+      ).toBeNull();
     });
   });
 
@@ -36,7 +38,9 @@ describe('ScrollController', () => {
       const link = document.getElementById('link');
       link.click();
 
-      expect(window.localStorage.getItem(ScrollController.previousTopKey)).toEqual('5000');
+      expect(
+        window.localStorage.getItem(ScrollController.previousTopKey)
+      ).toEqual('5000');
     });
   });
 });

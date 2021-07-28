@@ -8,7 +8,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  parser: 'babel-eslint',
+  parser: '@babel/eslint-parser',
   plugins: ['prettier'],
   rules: {
     'prettier/prettier': [
@@ -27,4 +27,7 @@ module.exports = {
       },
     },
   ],
+  globals: {
+    Turbolinks: 'readonly',
+  },
 };

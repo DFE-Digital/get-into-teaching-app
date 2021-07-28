@@ -31,11 +31,7 @@ export default class {
     application.register(name, controller);
   }
 
-  static describeWithCookieSet(
-    name,
-    controller,
-    serviceFunctionName
-  ) {
+  static describeWithCookieSet(name, controller, serviceFunctionName) {
     beforeEach(() => {
       window._vwo_code = {};
     });

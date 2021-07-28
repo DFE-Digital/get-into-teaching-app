@@ -1,9 +1,9 @@
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = ['form']
+  static targets = ['form'];
 
-  submitForm(e){
+  submitForm(e) {
     this.formTarget.submit();
   }
 }
