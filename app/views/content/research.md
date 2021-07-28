@@ -5,6 +5,14 @@ description: |-
 date: "2021-05-17"
 image: false
 calls_to_action:
+  breakthrough-moments:
+    name: attachment
+    arguments:
+      text: Read the summary of findings
+      file_path: media/documents/breakthrough-moments.pdf
+      file_type: PDF
+      file_size: 274KB
+      published_at: 29 July 2021
   my-favourite-subject:
     name: attachment
     arguments:
@@ -89,6 +97,12 @@ calls_to_action:
 keywords:
   - Research
 ---
+
+## Breakthrough Moments – exploring what personal achievement means to young adults
+
+Kindred Agency commissioned research company Censuswide to carry out a survey on behalf of the Get Into Teaching campaign exploring the views of university students and recent graduates. The purpose of the survey was to gain further insights on what achievement means to this group when it comes to their career path, and what breakthrough moments might mean in a future job role, as well as the extent to which they feel that their school teachers helped to equip them to achieve breakthrough moments in their life so far.
+
+$breakthrough-moments$
 
 ## My favourite subject – exploring people’s favourite subjects and the lasting impact of teachers
 
