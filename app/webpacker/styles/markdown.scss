@@ -103,7 +103,8 @@
 
   p,
   ol,
-  ul {
+  ul,
+  td {
     abbr {
       @include abbr-styles;
       cursor: help;
