@@ -16,6 +16,7 @@
       align-items: center;
 
       .step-header__text {
+        color: $white;
         text-align: left;
         margin: 0;
         @include font-size("medium");
