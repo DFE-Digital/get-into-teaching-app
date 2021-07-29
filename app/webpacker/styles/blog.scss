@@ -24,7 +24,7 @@
       background-color: $blue;
       color: $white;
 
-      @include font-size(xsmall);
+      @include font-size(xsmall, $adjust: .5rem);
 
       a {
         display: block;
