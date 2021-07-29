@@ -715,7 +715,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
             padding: 1em;
 
             p.leading {
-              @include font-size(large);
+              font-weight: bold;
               margin: 0;
             }
 
@@ -758,6 +758,52 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
           .answer + .answer {
             border-top: 3px solid black;
+          }
+
+          .results {
+            .result {
+              margin: .5em 0;
+              padding: 1em;
+
+              p {
+
+                a {
+                  color: $black;
+                }
+              }
+
+              p + p {
+                margin-top: .2em;
+              }
+            }
+
+            .result--correct {
+              display: none;
+
+              p {
+                @include font-size(large);
+              }
+            }
+
+            .result--incorrect {
+              display: none;
+
+              p {
+                @include font-size(medium);
+              }
+            }
+
+            &.correct {
+              .result--correct {
+                display: block;
+              }
+            }
+
+            &.incorrect {
+              .result--incorrect {
+                display: block;
+              }
+            }
           }
         }
       }
