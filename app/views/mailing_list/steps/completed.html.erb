@@ -3,9 +3,28 @@
 <section class="text-content">
   <h2 class="green">You've signed up</h2>
 
-  <p>You'll receive a welcome email shortly. If your circumstances change, you can let us know at any time. Call us for free on <a href="tel:08003892500" class="telephone-number"
-    aria-label="Telephone">0800 389 2500</a>, Monday to Friday between 8.30am and 5.30pm.
+  <p>
+    You'll receive a welcome email shortly. If your circumstances change, you can let us know at any time.
+    <% if Rails.env.production? %>
+    Call us for free on <a href="tel:08003892500" class="telephone-number" aria-label="Telephone">0800 389 2500</a>, Monday to Friday between 8.30am and 5.30pm.
+    <% end %>
   </p>
+
+  <% unless Rails.env.production? %>
+    <h3>Get in touch with an agent</h3>
+
+    <p>They're experts who can answer questions about qualifications, funding or your application.</p>
+
+    <div class="mailing-list__actions">
+      <%= link_to("Book a callback", callbacks_steps_path, class: "button button--secondary") %>
+      <div>
+        <small>or call us now:</small>
+        <a class="telephone" href="tel:08003892500" aria-label="Telephone">0800 389 2500</a>
+      </div>
+    </div>
+
+    <p>Monday - Friday between 8:30am and 5:00pm.</p>
+  <% end %>
 
   <span data-controller="pinterest"
         data-pinterest-action="track"
