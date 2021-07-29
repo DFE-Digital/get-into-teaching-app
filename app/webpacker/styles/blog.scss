@@ -30,6 +30,10 @@
         display: block;
         color: $white;
         padding: .4em .6em;
+
+        &:focus {
+          color: $black;
+        }
       }
 
       &:hover {
