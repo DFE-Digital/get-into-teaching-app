@@ -3,33 +3,6 @@
   padding: 0;
 }
 
-@mixin suppress-external-link-icon {
-  &[href*="//"] {
-    &:after {
-      content: none;
-      margin-left: unset;
-    }
-  }
-}
-
-@mixin _external-link-icon-style {
-  &[href*="//"] {
-    &:after {
-      content: url('../images/icon-external.svg');
-      content: url('../images/icon-external.svg') / "External link icon";
-      margin-left: .2em;
-      display: inline-block;
-      background-repeat: no-repeat;
-    }
-  }
-}
-
-@mixin external-link-icon {
-  a:not(.button) {
-    @include _external-link-icon-style;
-  }
-}
-
 // these are typically headers or section headings, often
 // placed over images or other sections
 @mixin rotated-block($degrees: -3deg, $blur: 4px) {

@@ -1,5 +1,4 @@
 @mixin button($bg: $green, $fg: $white) {
-  @include suppress-external-link-icon;
   display: block;
   font-weight: bold;
   background-color: $bg;
@@ -30,6 +29,10 @@ a {
     color: darken($blue-dark, 15%);
     text-decoration: none;
   }
+}
+
+.external-link-icon {
+  margin-left: .2em;
 }
 
 .button {

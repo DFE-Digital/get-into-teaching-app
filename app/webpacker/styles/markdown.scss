@@ -1,7 +1,6 @@
 .markdown,
 .text-content {
   @mixin overhang { margin-left: auto; margin-right: auto; }
-  @include external-link-icon;
 
   word-break: break-word;
 
@@ -74,19 +73,13 @@
     margin-left: 0;
   }
 
-  // stop the external icon from appearing inside CTA 'button' style links
-  // and the home page featured content video thumbnail links
   .call-to-action__action,
   .featured-content__item {
-    a { @include suppress-external-link-icon; }
-
     // this is added by Kramdown when using the ToC (table of contents) plugin
     #markdown-toc {
       margin-bottom: 3em;
     }
   }
-
-  a.button { @include suppress-external-link-icon; }
 
   ul,
   ol {
