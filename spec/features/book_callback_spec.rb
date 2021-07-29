@@ -52,7 +52,7 @@ RSpec.feature "Book a callback", type: :feature do
     select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
     click_on "Next Step"
 
-    expect(page).to have_text "Tell us what you’d like to talk to an agent about"
+    expect(page).to have_text "Tell us what you’d like to talk to us about"
     select "Routes into teaching", from: "Choose an option"
     click_on "Next Step"
 
@@ -114,7 +114,7 @@ RSpec.feature "Book a callback", type: :feature do
     select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
     click_on "Next Step"
 
-    expect(page).to have_text "Tell us what you’d like to talk to an agent about"
+    expect(page).to have_text "Tell us what you’d like to talk to us about"
     click_on "Next Step"
     expect(page).to have_text "Choose an option"
     select "Routes into teaching", from: "Choose an option"
