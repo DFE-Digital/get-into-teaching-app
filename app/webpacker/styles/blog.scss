@@ -12,6 +12,10 @@
     width: 100%;
   }
 
+  h2 {
+    @include font-size(medium);
+  }
+
   ol {
     display: flex;
     flex-wrap: wrap;
@@ -23,12 +27,18 @@
     li {
       background-color: $blue;
       color: $white;
-      padding: .6em;
+      font-weight: bold;
 
-      @include font-size(xsmall);
+      @include font-size(xsmall, $adjust: .2rem);
 
       a {
+        display: block;
         color: $white;
+        padding: .4em .6em;
+
+        &:focus {
+          color: $black;
+        }
       }
 
       &:hover {

@@ -28,17 +28,15 @@ $mobile-sizes:  ("xsmall": $fs-14, "small": $fs-15, "medium": $fs-16, "large": $
 $tablet-sizes:  ("xsmall": $fs-15, "small": $fs-16, "medium": $fs-19, "large": $fs-28, "xlarge" : $fs-36, "xxlarge": $fs-42, "xxxlarge": $fs-54);
 $desktop-sizes: ("xsmall": $fs-16, "small": $fs-19, "medium": $fs-28, "large": $fs-36, "xlarge" : $fs-42, "xxlarge": $fs-54, "xxxlarge": $fs-64);
 
-@mixin font-size($size) {
-  @include mq($until: mobile) {
-    font-size: size($mobile-sizes, $size);
+@mixin font-size($size, $adjust: 0rem) {
+  font-size: size($mobile-sizes, $size) + $adjust;
+
+  @include mq($from: tablet, $until: desktop) {
+    font-size: size($tablet-sizes, $size) + $adjust;
   }
 
-  @include mq($from: mobile, $until: tablet) {
-    font-size: size($tablet-sizes, $size);
-  }
-
-  @include mq($from: tablet) {
-    font-size: size($desktop-sizes, $size);
+  @include mq($from: desktop) {
+    font-size: size($desktop-sizes, $size) + $adjust;
   }
 
   // debug util
