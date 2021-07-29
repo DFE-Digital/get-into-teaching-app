@@ -23,12 +23,13 @@
     li {
       background-color: $blue;
       color: $white;
-      padding: .6em;
 
       @include font-size(xsmall);
 
       a {
+        display: block;
         color: $white;
+        padding: .4em .6em;
       }
 
       &:hover {
