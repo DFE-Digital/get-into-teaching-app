@@ -56,7 +56,6 @@ $space-between-sections: 3.7em;
       padding: 0;
 
       li > a {
-        @include suppress-external-link-icon;
         @include font-size('xsmall');
         color: $black;
         line-height: 1.8em;
