@@ -57,12 +57,17 @@ private
     doc = Nokogiri::HTML(body)
     markdown_links = doc.css(".markdown a")
     classes_to_suppress = %w[button]
+
     markdown_links.each do |anchor|
       classes = anchor.attr("class")&.split
-      if anchor[:href].include?("//") && classes_to_suppress.none? { |klass| classes&.include?(klass) }
+
+      next if classes && (classes & classes_to_suppress).any?
+
+      if anchor[:href].include?("//")
         anchor.add_child(helpers.image_pack_tag("media/images/icon-external.svg", class: "external-link-icon", alt: ""))
       end
     end
+
     doc.to_html(encoding: "UTF-8", indent: 2)
   end
 
