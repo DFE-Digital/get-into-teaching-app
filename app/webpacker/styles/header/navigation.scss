@@ -6,6 +6,7 @@
   a {
     color: $black;
     text-decoration: none;
+    display: inline-block;
 
     &:hover {
       text-decoration: none;
@@ -92,11 +93,9 @@ body > header nav {
       background: $grey;
 
       > li {
-        padding-left: 1em;
         border-left: 6px solid $grey;
         border-bottom: 1px solid $white;
         max-width: 80%;
-        //margin-bottom: .8em;
 
         .menu__text {
           flex-grow: 1;
@@ -109,7 +108,7 @@ body > header nav {
         > a,
         div {
           display: block;
-          padding: 1em 0;
+          padding: 1em;
         }
       }
     }
@@ -120,7 +119,6 @@ body > header nav {
       > li {
         margin: 1em;
 
-        padding-left: 1em;
         border-left: 6px solid $white;
 
         &:hover {
@@ -161,14 +159,14 @@ body > header nav {
         }
 
         a {
-          padding: 1em 0 0 0;
-          border-bottom: 1px solid $white;
+          padding: 1em .2em 0;
+          border-bottom: 2px solid $white;
 
           &:hover {
             border-bottom: 2px solid $black;
           }
         }
-        
+
         div {
 	        line-height: 1.5;
         }
