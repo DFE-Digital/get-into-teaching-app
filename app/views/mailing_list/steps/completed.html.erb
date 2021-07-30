@@ -11,6 +11,14 @@
   </p>
 
   <% unless Rails.env.production? %>
+
+    <p>
+      In the meantime you can explore your personalised welcome guide to give you a flavour of what the world of teaching is like.
+    </p>
+
+    <%= link_to("View your personalised Welcome Guide", "/welcome", class: "button button--secondary button--inline") %>
+
+
     <h3>Get in touch with an agent</h3>
 
     <p>They're experts who can answer questions about qualifications, funding or your application.</p>

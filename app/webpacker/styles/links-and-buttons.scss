@@ -70,6 +70,10 @@ a {
     @include font-size("xsmall");
     padding: 8px $indent-amount;
   }
+
+  &--inline {
+    display: inline;
+  }
 }
 
 .call-to-action-icon-button {
