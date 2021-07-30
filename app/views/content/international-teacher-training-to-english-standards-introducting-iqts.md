@@ -77,7 +77,7 @@ iQTS application opens in September 2021 for study commencing September 2022. Pl
 
 If you already have a teaching qualification, you should consider alternative routes to QTS, which are outlined in [Qualified teacher status: routes to QTS for teachers and those with teaching experience outside the UK](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
 
-[Come to England to teach if you're a teacher from outside the UK](https://getintoteaching.education.gov.uk/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) gives information and advice to international teachers who’d like to teach in England.
+[Come to England to teach if you're a teacher from outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) gives information and advice to international teachers who’d like to teach in England.
 
 ## Contact
 
