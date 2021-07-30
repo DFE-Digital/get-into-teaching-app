@@ -58,7 +58,10 @@ Candidates complete the iQTS training programme without visiting the UK. Your tr
 
 Successful graduates of the iQTS programme will be able to apply to England’s Teaching Regulation Agency for [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS) without doing any further training. They will then have the correct qualification to teach in all schools in England. iQTS graduates who wish to apply for QTS will be able to apply online to the Teaching Regulation Agency (TRA), alongside other teachers who are already eligible for QTS on the basis of having an overseas qualification. 
 
-If an iQTS trainee applies for QTS, they will need to complete the Early career framework (ECF) induction in order to become a fully qualified teacher in England. They will be able to complete their ECF induction either in an accredited British School Overseas (BSO), or in a state-funded school in England. During the ECF, they will be assessed against [E]nglish Teachers' standards](https://www.gov.uk/government/publications/teachers-standards).
+If an iQTS trainee applies for QTS, they will need to complete the Early career framework (ECF) induction in order to become a fully qualified teacher in England. They will be able to complete their ECF induction either in an accredited British School Overseas (BSO), or in a state-funded school in England. During the ECF, they will be assessed against [English Teachers' standards](https://www.gov.uk/government/publications/teachers-standards).
+
+This guidance relates to teaching in England. Different rules apply to teaching in [Wales](https://www.ewc.wales/site/index.php/en/registration/practitioners-trained-outside-wales.html), [Scotland](https://www.ewc.wales/site/index.php/en/registration/practitioners-trained-outside-wales.html) and [Northern Ireland](https://gtcni.org.uk/registration/getting-registered).
+
 
 ## Fees
 
