@@ -22,5 +22,6 @@ $yellow-dark: #f9b400;
 $yellow-dark-90: rgba($yellow-dark, .9);
 $red: #d4351c;
 
-// not part of the official colourscheme but used for tags
-$dark-cyan: #008b8b;
+// NOT PART OF THE OFFICIAL COLOUR SCHEME
+$dark-cyan: #008b8b; // used for tags
+$blue-very-dark: #0062A3; // passes accessibility contrast check on $grey

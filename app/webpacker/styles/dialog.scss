@@ -68,14 +68,6 @@
       margin-top: 0;
     }
 
-    a {
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
     .secondary-link {
       @include chevron($color: $blue);
 
