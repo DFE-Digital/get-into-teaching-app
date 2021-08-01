@@ -919,7 +919,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   .story {
     @mixin header-layout {
       grid-template-columns: 1.5em repeat(3, minmax(1em, auto)) 1.5em;
-      grid-template-rows: repeat(2, minmax(3em, max-content)) 2em 2em 2em repeat(2, minmax(3em, max-content));
+      grid-template-rows: repeat(2, minmax(3em, max-content)) 5em 2em 2em repeat(2, minmax(3em, max-content));
 
       .background { grid-area: 1 / 1 / 5 / 6; }
       .triangle { grid-area: 5 / 1 / 6 / 6; }
@@ -935,7 +935,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         .triangle { grid-area: 5 / 1 / 6 / 5; }
         .back { grid-area: 1 / 2 / 2 / 5; }
         h1 { grid-area: 3 / 2 / 7 / 5; }
-        picture { grid-area: 2 / 3 / 4 / 5; }
+        picture { grid-area: 2 / 3 / 6 / 5; }
       }
     }
 
@@ -978,7 +978,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
 
         .caption-l {
-          @include font-size(xxlarge);
+          @include font-size(xxxlarge);
         }
 
         .caption-m {
@@ -994,7 +994,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           position: relative;
           overflow: hidden;
           object-fit: cover;
-          max-height: 15em;
+          max-height: 20em;
           width: 100%;
         }
       }
