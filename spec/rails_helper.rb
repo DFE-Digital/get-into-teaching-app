@@ -75,6 +75,10 @@ RSpec.configure do |config|
   config.include ActiveSupport::Testing::TimeHelpers
   config.include SpecHelpers::Events
   config.include SpecHelpers::BasicAuth
+
+  config.before(:suite) do
+    Webpacker.compile
+  end
 end
 
 Shoulda::Matchers.configure do |config|
