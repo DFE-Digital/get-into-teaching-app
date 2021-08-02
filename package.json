@@ -57,6 +57,7 @@
   "scripts": {
     "spec": "jest",
     "scss-lint": "npx stylelint app/webpacker/styles",
-    "prettier": "yarn prettier app/webpacker/controllers"
+    "js-lint": "yarn eslint app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js",
+    "js-lint-fix": "yarn prettier --write app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js && yarn eslint --fix app/webpacker/controllers/*js app/webpacker/javascript/*js spec/javascript/*js"
   }
 }
