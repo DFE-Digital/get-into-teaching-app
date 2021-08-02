@@ -106,19 +106,18 @@ fi
 
 ### JavaScript
 
-[Prettier](https://prettier.io/) is used for code formatting.
-To enforce stylistic rules with Prettier (note: this overwrites the file), run:
+[Prettier](https://prettier.io/) is used for code formatting. [ESLint](https://eslint.org/) is used for static analysis of JavaScript code quality. It is configured to ignore stylistic rules that conflict with Prettier, and uses the [JavaScript Standard style](https://standardjs.com/).
+
+To list any violations in the project's JavaScript:
 
 ```bash
-yarn prettier --write <path to your file>
+yarn js-lint
 ```
 
-[ESLint](https://eslint.org/) is used for static analysis of JavaScript code quality. It is configured to ignore stylistic rules that conflict with Prettier, and uses the [JavaScript Standard style](https://standardjs.com/).
-
-To check a file:
+To automatically fix any violations. Any violations that cannot be automatically fixed will be listed in the output (note: this will overwrite any file that needs formatting):
 
 ```bash
-yarn eslint <path to your file>
+yarn js-lint-fix
 ```
 
 ### CSS

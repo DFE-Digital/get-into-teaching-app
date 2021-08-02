@@ -144,6 +144,11 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
+      - name: ESLint - JavaScript linting
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
+            ${{needs.build.outputs.DOCKER_IMAGE}} "yarn && yarn js-lint"
+
       - name: Run Javascript Tests
         run: |-
           docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
