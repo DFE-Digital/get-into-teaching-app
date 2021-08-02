@@ -73,8 +73,7 @@ describe Internal::Event do
       before { allow(subject).to receive(:online_event?).and_return(true) }
 
       describe "#scribble_id" do
-        it { is_expected.to allow_value("test").for :scribble_id }
-        it { is_expected.to_not allow_values("", nil).for :scribble_id }
+        it { is_expected.to allow_values("test", "", nil).for :scribble_id }
         it { is_expected.to validate_length_of(:scribble_id).is_at_most(300) }
       end
     end

@@ -43,7 +43,7 @@ module Internal
     validates :provider_organiser, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
     validates :provider_target_audience, presence: true, allow_blank: false, length: { maximum: 500 }, if: -> { provider_event? }
     validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
-    validates :scribble_id, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { online_event? }
+    validates :scribble_id, length: { maximum: 300 }, if: -> { online_event? }
     validates :venue_type, inclusion: { in: VENUE_TYPES.values }
     validate :dates_in_future
     validate :end_after_start

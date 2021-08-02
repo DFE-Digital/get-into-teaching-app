@@ -177,8 +177,6 @@ private
 
   def expect_online_validation_errors
     expect_common_validation_errors
-
-    expect(page).to have_text "Enter a Scribble ID"
   end
 
   def expect_provider_validation_errors
