@@ -2,19 +2,25 @@
   <div class="dialog" data-cookie-acceptance-target="overlay">
     <div class="dialog__background"></div>
     <div class="dialog__content">
-      <div>
-        <div class="logo__image">
-          <span href="/">
-            <%= image_pack_tag "media/images/getintoteachinglogo.svg", alt: "Get Into Teaching", size: "140x48" %>
-          </span>
+      <div class="logo-wrapper">
+        <div class="logo">
+          <a href="/" class="logo__image">
+            <%= image_pack_tag 'media/images/getintoteachinglogo.svg', alt: "Go to Home page", size: "180x62", data: { "lazy-disable": true } %>
+          </a>
         </div>
-        <h2>Tell us whether you accept cookies</h2>
       </div>
-      <p>
-        We use <a href="/cookies" class="dark-link">cookies</a> to collect information about how you use this website.
-        We use this information to make the website work as well as possible, and improve this website.
-        We also share some of this information with our social media, advertising and analytics partners.
-      </p>
+
+      <div class="dialog__text">
+
+        <h2>Tell us whether you accept cookies</h2>
+
+        <p>
+          We use <a href="/cookies" class="dark-link">cookies</a> to collect information about how you use this website.
+          We use this information to make the website work as well as possible, and improve this website.
+          We also share some of this information with our social media, advertising and analytics partners.
+        </p>
+
+      </div>
 
       <div class="dialog__buttons">
         <!--
