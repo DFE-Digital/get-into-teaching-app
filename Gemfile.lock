@@ -17,9 +17,9 @@ GIT
 
 GIT
   remote: https://github.com/waiting-for-dev/front_matter_parser.git
-  revision: 1157fa1406b285ebad807d2d4c9742f50c320d44
+  revision: 09a839ab9c04237df203af22c1c84f2a45a10ab6
   specs:
-    front_matter_parser (1.0.0)
+    front_matter_parser (1.0.1)
 
 GEM
   remote: https://rubygems.org/
