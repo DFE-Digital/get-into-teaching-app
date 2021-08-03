@@ -112,8 +112,7 @@
       align-items: center;
 
       @mixin pagination-item {
-        font-weight: bold;
-        @include font-size("xsmall");
+        @include font-size(medium);
         padding: .8em;
         text-decoration: none;
         margin: 1em 0;
@@ -129,6 +128,11 @@
         @include pagination-item;
         border: 2px solid $pink-dark;
         color: $pink-dark;
+
+        &:hover {
+          background-color: $pink-dark;
+          color: $white;
+        }
       }
 
       .page {
