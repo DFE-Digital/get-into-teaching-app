@@ -11,7 +11,6 @@
   subtitle_link: "/event-categories/train-to-teach-events"
   backlink: "../"
   navigation: 25
-  title: New events added.
   lid_pixel_event: "Funding"
   jump_links:
     Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"
