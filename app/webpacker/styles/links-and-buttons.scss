@@ -66,11 +66,6 @@ a {
     padding: 0;
   }
 
-  &--smaller {
-    @include font-size("xsmall");
-    padding: 8px $indent-amount;
-  }
-
   &--inline {
     display: inline;
   }
@@ -93,11 +88,6 @@ a {
 .survey-button {
   @include button($bg: $blue-dark);
   margin-bottom: 0.5rem;
-
-  &--smaller {
-    @include font-size("xsmall");
-    padding: 8px $indent-amount;
-  }
 
   @include mq($from: tablet) {
     display: inline-block;
