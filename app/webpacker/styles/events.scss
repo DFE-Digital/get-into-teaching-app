@@ -133,6 +133,12 @@
           background-color: $pink-dark;
           color: $white;
         }
+
+        &:focus {
+          background-color: $yellow;
+          border: 2px solid $yellow-dark;
+          color: $black;
+        }
       }
 
       .page {
