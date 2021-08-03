@@ -63,9 +63,10 @@ RSpec.feature "Book a callback", type: :feature do
     expect(page).to have_title("Get Into Teaching: Callback confirmed")
     expect(page).to have_text "Callback confirmed"
 
-    date = quota.start_at.to_date.to_formatted_s(:govuk)
-    time = quota.start_at.to_formatted_s(:govuk_time_with_period)
-    expect(page).to have_text "call you on #{date} at #{time}"
+    start_at = quota.start_at.in_time_zone("London")
+    date = start_at.to_date.to_formatted_s(:govuk)
+    time = start_at.to_formatted_s(:govuk_time_with_period)
+    expect(page).to have_text "call you within 30 minutes of #{date} at #{time}"
   end
 
   scenario "Journey encountering errors" do
@@ -129,9 +130,10 @@ RSpec.feature "Book a callback", type: :feature do
     expect(page).to have_title("Get Into Teaching: Callback confirmed")
     expect(page).to have_text "Callback confirmed"
 
-    date = quota.start_at.to_date.to_formatted_s(:govuk)
-    time = quota.start_at.to_formatted_s(:govuk_time_with_period)
-    expect(page).to have_text "call you on #{date} at #{time}"
+    start_at = quota.start_at.in_time_zone("London")
+    date = start_at.to_date.to_formatted_s(:govuk)
+    time = start_at.to_formatted_s(:govuk_time_with_period)
+    expect(page).to have_text "call you within 30 minutes of #{date} at #{time}"
   end
 
   scenario "Journey when candidate has issues signing in" do
