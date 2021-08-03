@@ -14,10 +14,39 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:get_teaching_event).with(event_readable_id).and_return(event)
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:add_teaching_event_attendee)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_teaching_event_types) { [] }
+  end
+
+  scenario "Full journey as a walk-in candidate (closed event)" do
+    event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"]
+
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+
+    visit event_steps_path(event_id: event_readable_id, walk_in: true)
+
+    expect(page).to have_title("Get Into Teaching: Sign up for #{event.name}, personal details step")
+    expect(page).to have_text "Sign up for this event"
+    expect(page).to have_text event_name
+    fill_in_personal_details_step
+    click_on "Next Step"
+
+    fill_in "Phone number (optional)", with: "01234567890"
+    click_on "Next Step"
+
+    within_fieldset "Would you like to receive email updates" do
+      choose "No"
+    end
+    within_fieldset "Are you over 16 and do you agree" do
+      check "Yes"
+    end
+
+    expect_sign_up_with_attributes(base_attributes.merge({ is_walk_in: true }))
+
+    click_on "Complete sign up"
+
+    expect(page).to have_title("Get Into Teaching: Sign up complete")
   end
 
   scenario "Full journey as a new candidate" do
@@ -49,6 +78,9 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Complete sign up"
 
     fill_in_personalised_updates
+
+    expect_sign_up_with_attributes(base_attributes.merge(personalised_attributes))
+
     click_on "Complete sign up"
 
     expect(page).to have_title("Get Into Teaching: Sign up complete")
@@ -80,6 +112,9 @@ RSpec.feature "Event wizard", type: :feature do
     within_fieldset "Are you over 16 and do you agree" do
       check "Yes"
     end
+
+    expect_sign_up_with_attributes(base_attributes)
+
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
@@ -91,7 +126,7 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-      eventId: "abc-123",
+      eventId: event.id,
       addressPostcode: "TE57 1NG",
       addressTelephone: "1234567890",
     )
@@ -127,6 +162,16 @@ RSpec.feature "Event wizard", type: :feature do
 
     expect(page).to_not have_text("What is your postcode? (optional)")
     fill_in_personalised_updates
+
+    expect_sign_up_with_attributes(
+      base_attributes
+        .merge(personalised_attributes,
+               {
+                 address_telephone: response.address_telephone,
+                 address_postcode: response.address_postcode,
+               }),
+    )
+
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
@@ -170,7 +215,8 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-      eventId: "abc-123",
+      eventId: event.id,
+      addressTelephone: nil,
       alreadySubscribedToMailingList: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -201,6 +247,9 @@ RSpec.feature "Event wizard", type: :feature do
     within_fieldset "Are you over 16 and do you agree" do
       check "Yes"
     end
+
+    expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: nil }))
+
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
@@ -212,7 +261,8 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-      eventId: "abc-123",
+      eventId: event.id,
+      addressTelephone: nil,
       alreadySubscribedToTeacherTrainingAdviser: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -243,6 +293,9 @@ RSpec.feature "Event wizard", type: :feature do
     within_fieldset "Are you over 16 and do you agree" do
       check "Yes"
     end
+
+    expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: nil }))
+
     click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
@@ -280,5 +333,31 @@ RSpec.feature "Event wizard", type: :feature do
       # choosing second option because first is 'Please select'
       find_field(label).find("option:nth-of-type(2)").select_option
     end
+  end
+
+  def base_attributes
+    {
+      event_id: event.id,
+      first_name: "Test",
+      last_name: "User",
+      email: "test@user.com",
+      is_walk_in: false,
+      address_telephone: "01234567890",
+    }
+  end
+
+  def personalised_attributes
+    {
+      degree_status_id: 222_750_000,
+      consideration_journey_stage_id: 222_750_000,
+      address_postcode: "TE57 1NG",
+      preferred_teaching_subject_id: "7e2655a1-2afa-e811-a981-000d3a276620",
+    }
+  end
+
+  def expect_sign_up_with_attributes(request_attributes)
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      receive(:add_teaching_event_attendee)
+      .with(having_attributes(request_attributes))
   end
 end
