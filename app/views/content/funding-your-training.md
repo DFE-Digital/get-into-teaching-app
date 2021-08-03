@@ -6,9 +6,9 @@
     training.
   date: "2021-03-11"
   image: "media/images/content/hero-images/0013.jpg"
-  subtitle: There’s still time to apply and start your training this September. 
-  subtitle_button: "Find a course"
-  subtitle_link: "/start-teacher-training-this-september"
+  subtitle: New events added - join an event near you and get all the info you need to become a teacher. 
+  subtitle_button: "Book your place"
+  subtitle_link: "/event-categories/train-to-teach-events"
   backlink: "../"
   navigation: 25
   lid_pixel_event: "Funding"
