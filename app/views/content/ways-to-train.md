@@ -13,11 +13,10 @@ navigation: 20
 article_classes: ['ways-to-train']
 right_column:
   ctas:
-    - title: Start your teacher training this September
-      text: |
-       Places fill up quickly, but many courses are still available.  
-      link_text: "Find a course"
-      link_target: "/start-teacher-training-this-september"
+    - title: New events added.
+      text: Join our next event to decide which training suits you best.  
+      link_text: "Events near you"
+      link_target: "/event-categories/train-to-teach"
       icon: "icon-calendar"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
