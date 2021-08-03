@@ -6,9 +6,9 @@ description: |-
   that comes with making a difference to young people's lives.
 date: "2021-02-02"
 image: "media/images/content/hero-images/0010.jpg"
-  subtitle: New events added - join an event near you and get all the info you need to become a teacher. 
-  subtitle_button: "Book your place"
-  subtitle_link: "/event-categories/train-to-teach-events"
+subtitle: New events added - join an event near you and get all the info you need to become a teacher. 
+subtitle_button: "Book your place"
+subtitle_link: "/event-categories/train-to-teach-events"
 hide_page_helpful_question: true
 navigation: 35
 fullwidth: true
