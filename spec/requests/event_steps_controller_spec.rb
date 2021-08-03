@@ -38,6 +38,12 @@ describe EventStepsController do
       let(:event) { build :event_api, :closed, readable_id: readable_event_id }
 
       it { is_expected.to redirect_to(event_path(id: event.readable_id)) }
+
+      context "when the candidate is a 'walk-in'" do
+        let(:step_path) { event_step_path readable_event_id, model.key, walk_in: true }
+
+        it { is_expected.to have_http_status :success }
+      end
     end
 
     context "with an invalid step" do

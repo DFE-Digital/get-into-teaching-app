@@ -96,7 +96,7 @@ shared_examples "an issue verification code wizard step" do
         subject.save
         expect_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).not_to receive(:create_candidate_access_token)
         expect(wizardstore["authenticate"]).to be_falsy
-        expect(wizardstore["matchback_failures"]).to eq(0)
+        expect(wizardstore["matchback_failures"]).to be_nil
         expect(wizardstore["last_matchback_failure_code"]).to be_nil
       end
     end

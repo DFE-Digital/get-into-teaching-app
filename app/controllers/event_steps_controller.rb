@@ -1,6 +1,7 @@
 class EventStepsController < ApplicationController
   include CircuitBreaker
 
+  before_action :set_is_walk_in, only: %i[show update]
   before_action :load_event
 
   include WizardSteps
@@ -21,9 +22,12 @@ protected
 private
 
   def redirect_closed_events
-    return unless @event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"]
+    event_is_closed = @event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"]
+    candidate_is_walk_in = wizard_store[:is_walk_in]
 
-    redirect_to event_path(id: @event.readable_id)
+    if event_is_closed && !candidate_is_walk_in
+      redirect_to event_path(id: @event.readable_id)
+    end
   end
 
   def step_path(step = params[:id], urlparams = {})
@@ -66,5 +70,9 @@ private
 
   def set_completed_page_title
     @page_title = "Sign up complete"
+  end
+
+  def set_is_walk_in
+    wizard_store[:is_walk_in] = true if params.key?(:walk_in)
   end
 end
