@@ -12,7 +12,7 @@
   backlink: "../"
   navigation: 25
   title: New events added.
-      text: Decide how you will fund your training at our next training event.  
+      text: Find out how to fund your training at our next training event.  
       link_text: "Events near you"
       link_target: "/event-categories/train-to-teach"
   lid_pixel_event: "Funding"
