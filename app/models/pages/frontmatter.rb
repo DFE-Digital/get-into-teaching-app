@@ -1,4 +1,6 @@
 module Pages
+  class BadFrontmatterError < RuntimeError; end
+
   class Frontmatter
     attr_reader :content_dirs
 
@@ -145,6 +147,8 @@ module Pages
 
     def extract_frontmatter(file)
       FrontMatterParser::Parser.parse_file(file).front_matter.symbolize_keys
+    rescue Psych::SyntaxError => e
+      fail(BadFrontmatterError, "error in #{file}: #{e}")
     end
 
     def file_from_template(template)
