@@ -1,3 +1,4 @@
 <%= f.govuk_text_field :first_name %>
 <%= f.govuk_text_field :last_name %>
 <%= f.govuk_email_field :email %>
+<%= f.hidden_field :is_walk_in, value: f.object.is_walk_in? %>

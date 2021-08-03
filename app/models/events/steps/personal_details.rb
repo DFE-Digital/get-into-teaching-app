@@ -6,10 +6,15 @@ module Events
       attribute :email
       attribute :first_name
       attribute :last_name
+      attribute :is_walk_in, :boolean
 
       validates :email, presence: true, email_format: true
       validates :first_name, presence: true, length: { maximum: 256 }
       validates :last_name, presence: true, length: { maximum: 256 }
+
+      def is_walk_in?
+        is_walk_in.present?
+      end
 
       before_validation if: :email do
         self.email = email.to_s.strip
