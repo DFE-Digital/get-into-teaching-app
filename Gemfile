@@ -80,7 +80,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 3.14.0" # FIXME: stop gap fix but we should relint the codebase
 
   # Static security scanner
-  gem "brakeman", "~> 5.0.4", require: false
+  gem "brakeman", "~> 5.1.1", require: false
 
   # Debugging
   gem "pry-byebug"
