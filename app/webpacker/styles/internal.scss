@@ -37,18 +37,6 @@ $grey-very-light: #f3f2f1;
     display: none;
   }
 
-  .confirmation-panel-container {
-    background-color: $grey-very-light;
-    padding-bottom: 30px;
-    margin: 0;
-
-    a {
-      color: $white;
-    }
-  }
-
-  // Tab navigation
-
   $grey-very-dark: #202124;
   $light-greyish-blue: #e8eaed;
   $very-dark-greyish-blue: #5f6368;
@@ -57,7 +45,16 @@ $grey-very-light: #f3f2f1;
     background-color: $grey-very-light;
     max-width: none;
 
-    .container {
+    .confirmation-panel-container {
+      padding-bottom: 30px;
+      margin: 0;
+
+      a {
+        color: $white;
+      }
+    }
+
+    .events-listing {
       background-color: $white;
 
       .tab-bar {
@@ -99,6 +96,15 @@ $grey-very-light: #f3f2f1;
 
       .event-pagination {
         min-height: 50px;
+      }
+    }
+
+    .withdraw-box-container {
+      padding-top: 45px;
+
+      .withdraw-box {
+        background-color: $white;
+        display: inline-block;
       }
     }
   }

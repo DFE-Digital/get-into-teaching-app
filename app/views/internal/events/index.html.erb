@@ -1,23 +1,23 @@
-<div class="markdown events-index">
-  <% if @success %>
-    <div class="confirmation-panel-container">
-      <div class="govuk-panel govuk-panel--confirmation">
-        <h1 class="govuk-panel__title">
-          <%= @pending ? "Event submitted for review" : "Event published" %>
-        </h1>
-        <% if @readable_id %>
-          <div class="govuk-panel__body">
-            <%= @pending ? "Pending event" : "Published event" %><br>
-            <strong>
-              <%= link_to @readable_id,
-                          @pending ? internal_event_path(@readable_id) : event_path(@readable_id) %>
-            </strong>
-          </div>
-        <% end %>
-      </div>
+<% if @success %>
+  <div class="confirmation-panel-container">
+    <div class="govuk-panel govuk-panel--confirmation">
+      <h1 class="govuk-panel__title">
+        <%= @pending ? "Event submitted for review" : "Event published" %>
+      </h1>
+      <% if @readable_id %>
+        <div class="govuk-panel__body">
+          <%= @pending ? "Pending event" : "Published event" %><br>
+          <strong>
+            <%= link_to @readable_id,
+                        @pending ? internal_event_path(@readable_id) : event_path(@readable_id) %>
+          </strong>
+        </div>
+      <% end %>
     </div>
-  <% end %>
+  </div>
+<% end %>
 
+<div class="markdown events-listing">
   <div class="tab-bar">
     <%= link_to "Provider events",
                 internal_events_path(event_type: "provider"),
@@ -57,3 +57,13 @@
     </div>
   <% end %>
 </div>
+
+<% if @user.publisher? %>
+  <div class="withdraw-box-container">
+    <div class="withdraw-box markdown">
+      <h3>Edit a published event?</h3>
+      <p>Withdraw the event <%= link_to "here", internal_live_events_path %>. The event will be removed from from the
+        live site while it is edited and will need to be re-approved.</p>
+    </div>
+  </div>
+<% end %>

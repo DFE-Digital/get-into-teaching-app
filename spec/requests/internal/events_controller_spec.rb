@@ -106,6 +106,34 @@ describe Internal::EventsController do
         include_examples "no pending events", default_event_type
       end
     end
+
+    context "when publisher user type" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+          .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+      end
+
+      it "shows a 'withdraw event' box" do
+        get internal_events_path, headers: generate_auth_headers(:publisher)
+
+        assert_response :success
+        expect(response.body).to include("Edit a published event?")
+      end
+    end
+
+    context "when author user type" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+          .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+      end
+
+      it "shows a 'withdraw event' box" do
+        get internal_events_path, headers: generate_auth_headers(:author)
+
+        assert_response :success
+        expect(response.body).to_not include("Edit a published event?")
+      end
+    end
   end
 
   describe "#show" do
