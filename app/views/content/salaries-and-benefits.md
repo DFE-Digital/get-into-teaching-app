@@ -2,7 +2,7 @@
 title: "Salaries and benefits"
 description: |-
   View teachers' pay scales, pay ranges table and salary bands for England and London, 
-  as well as other benefits such as holidays and the Teacher Pension Scheme. Find out the average starting salary for teaching primary and secondary school, as well as leading practictioners and headteachers.
+  as well as other benefits such as holidays and the Teacher Pension Scheme. Find out the average starting salary for teaching primary and secondary school, as well as leading practitioners and headteachers.
 date: "2021-06-24"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
