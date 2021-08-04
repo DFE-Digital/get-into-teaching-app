@@ -14,7 +14,7 @@
   </div>
 
 
-  <main role="main" id="main-content" class="<%= class_names("internal", { "index": current_page?(action: 'index') }) %>">
+  <main role="main" id="main-content" class="<%= class_names("internal", action_name ) %>">
     <section class="container internal-container">
       <article class="fullwidth">
         <%= yield %>

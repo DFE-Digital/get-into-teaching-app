@@ -4,6 +4,7 @@ $govuk-include-default-font-face: false;
 @import "~trix";
 @import "~flatpickr";
 @import "colours";
+@import "font-sizes";
 $grey-very-light: #f3f2f1;
 
 .internal {
@@ -35,6 +36,23 @@ $grey-very-light: #f3f2f1;
 
   .hidden {
     display: none;
+  }
+
+  &.live_events {
+    background-color: $grey-very-light;
+    max-width: none;
+
+    .live-events-container {
+      background-color: $white;
+      padding: 1.5rem;
+
+      .table-header {
+        margin-bottom: 30px;
+        text-align: left;
+        font-weight: bold;
+        @include font-size('xlarge');
+      }
+    }
   }
 
   $grey-very-dark: #202124;
