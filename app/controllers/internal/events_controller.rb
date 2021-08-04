@@ -1,7 +1,7 @@
 module Internal
   class EventsController < ::InternalController
     layout "internal"
-    before_action :authorize_publisher, only: %i[approve]
+    before_action :authorize_publisher, only: %i[approve withdraw]
     helper_method :event_type_name
 
     DEFAULT_EVENT_TYPE = "provider".freeze
@@ -14,6 +14,8 @@ module Internal
       @no_results = @events.blank?
 
       @success = params[:success]
+      @withdrawn = params[:success] == "withdrawn"
+      @published = params[:success] == "published"
       @pending = params[:success] == "pending"
       @readable_id = params[:readable_id]
     end
@@ -42,7 +44,19 @@ module Internal
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - publish - #{api_event.to_json}")
       redirect_to internal_events_path(
-        success: :open,
+        success: :published,
+        event_type: determine_event_type_from_id(api_event.type_id),
+        readable_id: api_event.readable_id,
+      )
+    end
+
+    def withdraw
+      api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+      api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+      GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
+      Rails.logger.info("#{@user.username} - withdrawn - #{api_event.to_json}")
+      redirect_to internal_events_path(
+        success: :withdrawn,
         event_type: determine_event_type_from_id(api_event.type_id),
         readable_id: api_event.readable_id,
       )
