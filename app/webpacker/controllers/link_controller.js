@@ -4,20 +4,20 @@ export default class extends Controller {
   static targets = ['content'];
 
   connect() {
-    // this.preventTurboLinksOnJumpLinks();
+    this.preventTurboLinksOnJumpLinks();
     this.prepareChevronOnButtonLinks();
     this.openExternalContentLinksInNewWindow();
   }
 
-  // preventTurboLinksOnJumpLinks() {
-  //   const links = this.contentTarget.querySelectorAll('a');
+  preventTurboLinksOnJumpLinks() {
+    const links = this.contentTarget.querySelectorAll('a');
 
-  //   links.forEach((l) => {
-  //     if (l.getAttribute('href')?.includes('#')) {
-  //       l.dataset.turbolinks = 'false';
-  //     }
-  //   });
-  // }
+    links.forEach((l) => {
+      if (l.getAttribute('href')?.includes('#')) {
+        l.dataset.turbolinks = 'false';
+      }
+    });
+  }
 
   openExternalContentLinksInNewWindow() {
     const links = this.contentTarget.querySelectorAll('a');
