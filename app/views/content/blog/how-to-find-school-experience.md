@@ -37,7 +37,7 @@ Once you have selected a school, you can view more information about their place
 
 You can request a booking by inputting your details for your chosen school to review. They may contact you for further information.
 
-> “I volunteered at a local primary school for two days a week and from the moment I walked into my first class, it felt very natural to be interacting with children.”
+> I volunteered at a local primary school for two days a week and from the moment I walked into my first class, it felt very natural to be interacting with children.
 >
 > Zainab Kasmani, trainee primary school teacher.
 
