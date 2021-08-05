@@ -216,7 +216,7 @@ SecureHeaders::Configuration.default do |config|
     font_src: %w['self' *.gov.uk fonts.gstatic.com],
     form_action: %w['self' *.snapchat.com *.facebook.com www.gov.uk dev.visualwebsiteoptimizer.com],
     frame_ancestors: %w['self'],
-    frame_src: %w['self' embed.scribblelive.com *.snapchat.com *.facebook.com www.youtube.com www.youtube-nocookie.com *.hotjar.com *.doubleclick.net dev.visualwebsiteoptimizer.com],
+    frame_src: %w['self' embed.scribblelive.com *.snapchat.com *.facebook.com www.youtube.com www.youtube-nocookie.com *.hotjar.com *.doubleclick.net dev.visualwebsiteoptimizer.com] + google_analytics,
     img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com *.pinterest.com t.co *.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com *.doubleclick.net i.ytimg.com adservice.google.com adservice.google.co.uk] + google_analytics + lid_pixels,
     manifest_src: %w['self'],
     media_src: %w['self'],
