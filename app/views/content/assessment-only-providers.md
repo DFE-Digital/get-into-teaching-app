@@ -456,19 +456,20 @@ providers:
     name: Mikki Burns
     telephone: 0203 194 3200
     email: Institute@tesglobal.com
-  Overseas AO Providers:
+  Teacher training providers offering assessment only QTS to international teachers:
   - header: University of Sunderland
     link: https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/
     name: Ian Elliott
     telephone: 0191 515 2159
     email: ian.elliott@sunderland.ac.uk
   - header: Educational Success Partners (ESP)
-    link: https://www.espeducation.co.uk/assessment-only-route-to-qts
+    link: https://www.espeducation.co.uk/ao-route
     name: Mark Bignell
     telephone: 07425 555142
     email: mark@espeducation.co.uk
   - header: Buckingham International School of Education
     link: https://www.bise.org
+    name: Admissions Team
     telephone: +86 135 2015 3752
     email: admissions@bise.org
   - header: Tes Institute
@@ -486,6 +487,21 @@ keywords:
 
 If you’re an experienced teacher with a degree, you may be able to get qualified teacher status (QTS) through a 12-week assessment only (AO) programme.
 
-The following accredited teacher training providers offer the AO programme.
+The accredited teacher training providers listed on this page offer the AO programme.
 
 Contact them directly to ask them about entry criteria and to apply.
+
+### Teachers from outside the UK
+
+If you trained as a teacher outside the UK, you can apply to certain training providers for an assessment only QTS without visiting or training in England. 
+
+[View teaching training providers offering assessment only QTS to international teachers.](#Teacher training providers offering assessment only QTS to international teachers)
+
+### Teacher training providers offering assessment only QTS to international teachers
+
+The following providers offer assessment only QTS to international teachers. You will not have to visit or train in England, but you may be assessed at your place of work by an examiner from your teaching training provider. Contact the training provider directly to ask them about entry criteria and how to apply.
+
+[Learn more about working in England if you’re a teacher from outside the UK.](https://getintoteaching.education.gov.uk/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk#consider-getting-qualified-teacher-status)
+
+If you're a provider and need to update the details on your record, please contact us at: getintoteaching.helpdesk@education.gov.uk.
+
