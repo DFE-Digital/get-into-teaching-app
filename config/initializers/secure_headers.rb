@@ -9,7 +9,7 @@ SecureHeaders::Configuration.default do |config|
 
   tta_service_hosts = []
   tta_service_hosts << URI.parse(ENV["TTA_SERVICE_URL"]).host if ENV["TTA_SERVICE_URL"].present?
-  google_analytics = %w[*.google-analytics.com *.googletagmanager.com *.googleusercontent.com *.gstatic.com s.ytimg.com *.googleadservices.com *.googleads.g.doubleclick.net https://googleads.g.doubleclick.net]
+  google_analytics = %w[*.google-analytics.com *.googletagmanager.com *.googleusercontent.com *.gstatic.com s.ytimg.com *.googleadservices.com *.googleads.g.doubleclick.net https://googleads.g.doubleclick.net *.googlesyndication.com]
 
   # curl https://www.google.com/supported_domains | sed 's!\(.*\)!"*\1",!g'
   google_analytics += [
@@ -217,7 +217,7 @@ SecureHeaders::Configuration.default do |config|
     form_action: %w['self' *.snapchat.com *.facebook.com www.gov.uk dev.visualwebsiteoptimizer.com],
     frame_ancestors: %w['self'],
     frame_src: %w['self' embed.scribblelive.com *.snapchat.com *.facebook.com www.youtube.com www.youtube-nocookie.com *.hotjar.com *.doubleclick.net dev.visualwebsiteoptimizer.com],
-    img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com ct.pinterest.com t.co *.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com *.doubleclick.net i.ytimg.com adservice.google.com adservice.google.co.uk] + google_analytics + lid_pixels,
+    img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com *.pinterest.com t.co *.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com *.doubleclick.net i.ytimg.com adservice.google.com adservice.google.co.uk] + google_analytics + lid_pixels,
     manifest_src: %w['self'],
     media_src: %w['self'],
     script_src: %w['self' 'unsafe-inline' 'unsafe-eval' embed.scribblelive.com *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com *.youtube.com *.visualwebsiteoptimizer.com] + google_analytics + lid_pixels,
