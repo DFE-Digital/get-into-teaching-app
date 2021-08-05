@@ -3,9 +3,9 @@ module Wizard
     extend ActiveSupport::Concern
 
     def save
-      purge_store_retaining_matchback_failures
-
       if valid?
+        purge_store_retaining_matchback_failures
+
         Rails.logger.info("#{self.class} requesting access code")
 
         begin
