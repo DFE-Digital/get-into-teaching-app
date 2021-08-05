@@ -9,7 +9,7 @@ SecureHeaders::Configuration.default do |config|
 
   tta_service_hosts = []
   tta_service_hosts << URI.parse(ENV["TTA_SERVICE_URL"]).host if ENV["TTA_SERVICE_URL"].present?
-  google_analytics = %w[*.google-analytics.com *.googletagmanager.com *.googleusercontent.com *.gstatic.com s.ytimg.com *.googleadservices.com *.googleads.g.doubleclick.net https://googleads.g.doubleclick.net *.googlesyndication.com]
+  google_analytics = %w[*.google-analytics.com *.googletagmanager.com https://ssl.google-analytics.com https://fonts.googleapis.com https://tagmanager.google.com *.googleusercontent.com *.gstatic.com s.ytimg.com *.googleadservices.com *.googleads.g.doubleclick.net https://googleads.g.doubleclick.net *.googlesyndication.com]
 
   # curl https://www.google.com/supported_domains | sed 's!\(.*\)!"*\1",!g'
   google_analytics += [
@@ -213,10 +213,10 @@ SecureHeaders::Configuration.default do |config|
     block_all_mixed_content: true, # see http://www.w3.org/TR/mixed-content/
     child_src: %w['self' *.youtube.com ct.pinterest.com *.snapchat.com *.hotjar.com],
     connect_src: %w['self' ct.pinterest.com *.hotjar.com vc.hotjar.io wss://*.hotjar.com *.facebook.com *.visualwebsiteoptimizer.com stats.g.doubleclick.net] + google_analytics + tta_service_hosts,
-    font_src: %w['self' *.gov.uk fonts.gstatic.com],
+    font_src: %w['self' *.gov.uk fonts.gstatic.com data:],
     form_action: %w['self' *.snapchat.com *.facebook.com www.gov.uk dev.visualwebsiteoptimizer.com],
     frame_ancestors: %w['self'],
-    frame_src: %w['self' embed.scribblelive.com *.snapchat.com *.facebook.com www.youtube.com www.youtube-nocookie.com *.hotjar.com *.doubleclick.net dev.visualwebsiteoptimizer.com *.googlesyndication.com],
+    frame_src: %w['self' embed.scribblelive.com *.snapchat.com *.facebook.com www.youtube.com www.youtube-nocookie.com *.hotjar.com *.doubleclick.net dev.visualwebsiteoptimizer.com *.googlesyndication.com https://bid.g.doubleclick.net],
     img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com *.pinterest.com t.co *.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com *.doubleclick.net i.ytimg.com adservice.google.com adservice.google.co.uk] + google_analytics + lid_pixels,
     manifest_src: %w['self'],
     media_src: %w['self'],
