@@ -89,13 +89,11 @@ Rails.application.routes.draw do
     end
   end
 
-  unless Rails.env.production?
-    namespace :callbacks do
-      resources :steps, path: "/book", only: %i[index show update] do
-        collection do
-          get :completed
-          get :resend_verification
-        end
+  namespace :callbacks do
+    resources :steps, path: "/book", only: %i[index show update] do
+      collection do
+        get :completed
+        get :resend_verification
       end
     end
   end
