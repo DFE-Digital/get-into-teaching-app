@@ -14,7 +14,7 @@ article_classes: ['ways-to-train']
 right_column:
   ctas:
     - title: New events added.
-      text: Join our next event to decide which training suits you best.  
+      text: Turn your questions into confidence. Join our next event to decide which training suits you best.  
       link_text: "Events near you"
       link_target: "/event-categories/train-to-teach"
       icon: "icon-calendar"
