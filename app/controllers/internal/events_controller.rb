@@ -13,10 +13,10 @@ module Internal
       load_pending_events(@event_type)
       @no_results = @events.blank?
 
-      @success = params[:success]
-      @withdrawn = params[:success] == "withdrawn"
-      @published = params[:success] == "published"
-      @pending = params[:success] == "pending"
+      @successful = params[:status]
+      @withdrawn = params[:status] == "withdrawn"
+      @published = params[:status] == "published"
+      @pending = params[:status] == "pending"
       @readable_id = params[:readable_id]
     end
 
@@ -44,7 +44,7 @@ module Internal
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - publish - #{api_event.to_json}")
       redirect_to internal_events_path(
-        success: :published,
+        status: :published,
         event_type: determine_event_type_from_id(api_event.type_id),
         readable_id: api_event.readable_id,
       )
@@ -56,7 +56,7 @@ module Internal
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - withdrawn - #{api_event.to_json}")
       redirect_to internal_events_path(
-        success: :withdrawn,
+        status: :withdrawn,
         event_type: determine_event_type_from_id(api_event.type_id),
         readable_id: api_event.readable_id,
       )
@@ -82,7 +82,7 @@ module Internal
       if @event.save
         Rails.logger.info("#{@user.username} - create/update - #{@event.to_api_event.to_json}")
         redirect_to internal_events_path(
-          success: :pending,
+          status: :pending,
           readable_id: @event.readable_id,
           event_type: determine_event_type_from_id(@event.type_id),
         )

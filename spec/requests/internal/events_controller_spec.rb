@@ -316,7 +316,7 @@ describe Internal::EventsController do
                  headers: generate_auth_headers(:author),
                  params: { internal_event: params }
 
-            expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "provider"))
+            expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
             expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
           end
 
@@ -336,7 +336,7 @@ describe Internal::EventsController do
                    headers: generate_auth_headers(:author),
                    params: { internal_event: params }
 
-              expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "provider"))
+              expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
               expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
             end
           end
@@ -373,7 +373,7 @@ describe Internal::EventsController do
                    headers: generate_auth_headers(:author),
                    params: { internal_event: params }
 
-              expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "provider"))
+              expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
               expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
             end
           end
@@ -413,7 +413,7 @@ describe Internal::EventsController do
                headers: generate_auth_headers(:author),
                params: { internal_event: params }
 
-          expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "online"))
+          expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "online"))
           expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
         end
       end
@@ -455,7 +455,7 @@ describe Internal::EventsController do
                 params: params
 
             expect(response).to redirect_to(internal_events_path(
-                                              success: :published,
+                                              status: :published,
                                               event_type: :provider,
                                               readable_id: event.readable_id,
                                             ))
@@ -477,7 +477,7 @@ describe Internal::EventsController do
                 params: params
 
             expect(response).to redirect_to(internal_events_path(
-                                              success: :published,
+                                              status: :published,
                                               event_type: :provider,
                                               readable_id: event.readable_id,
                                             ))
@@ -499,14 +499,12 @@ describe Internal::EventsController do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event).with(expected_request_body)
 
-
-
           put internal_approve_path,
               headers: generate_auth_headers(:publisher),
               params: params
 
           expect(response).to redirect_to(internal_events_path(
-                                            success: :published,
+                                            status: :published,
                                             event_type: :online,
                                             readable_id: event.readable_id,
                                           ))
@@ -558,7 +556,7 @@ describe Internal::EventsController do
               params: params
 
           expect(response).to redirect_to(internal_events_path(
-                                            success: :withdrawn,
+                                            status: :withdrawn,
                                             event_type: :provider,
                                             readable_id: event.readable_id,
                                           ))
@@ -584,7 +582,7 @@ describe Internal::EventsController do
               params: params
 
           expect(response).to redirect_to(internal_events_path(
-                                            success: :withdrawn,
+                                            status: :withdrawn,
                                             event_type: :online,
                                             readable_id: event.readable_id,
                                           ))
