@@ -120,7 +120,8 @@ export default class extends Controller {
     if (chosen && chosen.link) {
       if (this.analyticsSubmitter) this.sendToAnalytics();
 
-      Turbolinks.visit(chosen.link);
+      // Turbolinks.visit(chosen.link);
+      window.location.href = chosen.link;
     }
   }
 
