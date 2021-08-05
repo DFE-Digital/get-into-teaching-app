@@ -129,7 +129,7 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    faraday (1.5.1)
+    faraday (1.6.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
@@ -137,6 +137,7 @@ GEM
       faraday-net_http (~> 1.0)
       faraday-net_http_persistent (~> 1.1)
       faraday-patron (~> 1.0)
+      faraday-rack (~> 1.0)
       multipart-post (>= 1.2, < 3)
       ruby2_keywords (>= 0.0.4)
     faraday-em_http (1.0.0)
@@ -150,6 +151,7 @@ GEM
     faraday-net_http (1.0.1)
     faraday-net_http_persistent (1.2.0)
     faraday-patron (1.0.0)
+    faraday-rack (1.0.0)
     faraday_middleware (1.1.0)
       faraday (~> 1.0)
     faraday_middleware-circuit_breaker (0.4.1)
@@ -453,7 +455,7 @@ DEPENDENCIES
   delegate (>= 0.2.0)
   dotenv-rails (>= 2.7.6)
   factory_bot_rails (>= 6.1.0)
-  faraday (~> 1.5.0)
+  faraday (~> 1.6.0)
   faraday-encoding
   faraday-http-cache
   faraday_middleware
