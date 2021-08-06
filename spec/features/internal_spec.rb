@@ -165,8 +165,8 @@ RSpec.feature "Internal section", type: :feature do
 
   context "when there are live events" do
     start_at = Time.zone.today.at_beginning_of_month + 1.day
-    let(:live_online_event) { build(:event_api, name: "Live online event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]) }
-    let(:live_provider_event) { build(:event_api, name: "Live provider event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]) }
+    let(:live_online_event) { build(:event_api, :online_event, name: "Open online event") }
+    let(:live_provider_event) { build(:event_api, :school_or_university_event, name: "Open provider event", start_at: start_at) }
     let(:events) { [live_online_event, live_provider_event] }
     let(:events_by_type) { group_events_by_type(events) }
 
@@ -184,11 +184,11 @@ RSpec.feature "Internal section", type: :feature do
 
       click_link "here"
 
-      expect(page).to have_text("Live events")
-      expect(page).to have_link("Live online event")
-      expect(page).to have_link("Live provider event")
+      expect(page).to have_text("Open events")
+      expect(page).to have_link("Open online event")
+      expect(page).to have_link("Open provider event")
 
-      within find("td", text: "Live provider event").find(:xpath, "..") do
+      within find("td", text: "Open provider event").find(:xpath, "..") do
         click_link "select"
       end
 

@@ -2,16 +2,16 @@
             internal_events_path, method: :get,
             class: "govuk-back-link" %>
 
-<% if @live_events.nil? %>
+<% if @open_events.empty? %>
   <div class="pending-no-results">
     <%= render(Events::NoResultsComponent.new) do %>
-      No live events
+      No open events
     <% end %>
   </div>
 <% else %>
-  <div class="live-events-container">
+  <div class="open-events-container">
     <table class="govuk-table">
-      <caption class="table-header">Live events</caption>
+      <caption class="table-header">Open events</caption>
       <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th scope="col" class="govuk-table__header">Event</th>
@@ -22,7 +22,7 @@
       </tr>
       </thead>
       <tbody class="govuk-table__body">
-      <% @live_events.each do |event| %>
+      <% @open_events.each do |event| %>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell">
             <%= link_to event.name, event_path(event.readable_id) %>

@@ -51,7 +51,7 @@ Rails.application.routes.draw do
     resources :events, only: %i[index show new create edit]
     put "/approve", to: "events#approve"
     put "/withdraw", to: "events#withdraw"
-    get "/live_events", to: "events#live_events"
+    get "/open_events", to: "events#open_events"
   end
 
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy

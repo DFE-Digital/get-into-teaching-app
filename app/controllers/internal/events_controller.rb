@@ -62,18 +62,17 @@ module Internal
       )
     end
 
-    def live_events
+    def open_events
       events = GetIntoTeachingApiClient::TeachingEventsApi
                  .new
                  .search_teaching_events_grouped_by_type(quantity_per_type: 1_000,
                                                          start_after: DateTime.now.utc.beginning_of_day,
                                                          status_ids: [open_event_status_id])
+
       events = events.select do |key|
         key.type_id == event_types[:provider] || key.type_id == event_types[:online]
       end
-      if events[0] && events[1]
-        @live_events = events[0].teaching_events.concat(events[1].teaching_events)
-      end
+      @open_events = events.map(&:teaching_events).flatten
     end
 
     def create

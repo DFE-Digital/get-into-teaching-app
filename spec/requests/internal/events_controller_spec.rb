@@ -668,7 +668,7 @@ describe Internal::EventsController do
     end
   end
 
-  describe "#live_events" do
+  describe "#open_events" do
     let(:events_by_type) { group_events_by_type(pen) }
 
     context "when there a no events" do
@@ -677,11 +677,11 @@ describe Internal::EventsController do
           .to receive(:search_teaching_events_grouped_by_type) { [] }
       end
 
-      it "shows 'no live events'" do
-        get internal_live_events_path, headers: generate_auth_headers(:author)
+      it "shows 'no open events'" do
+        get internal_open_events_path, headers: generate_auth_headers(:author)
 
         assert_response :success
-        expect(response.body).to include("No live events")
+        expect(response.body).to include("No open events")
       end
     end
 
@@ -689,9 +689,9 @@ describe Internal::EventsController do
       let(:events) do
         start_at = Time.zone.today.at_beginning_of_month + 1.day
         [
-          build(:event_api, name: "Live online event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]),
-          build(:event_api, name: "Live provider event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]),
-          build(:event_api, name: "Live train to teach event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]),
+          build(:event_api, name: "Open online event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]),
+          build(:event_api, name: "Open provider event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]),
+          build(:event_api, name: "Open train to teach event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]),
         ]
       end
       let(:events_by_type) { group_events_by_type(events) }
@@ -702,14 +702,14 @@ describe Internal::EventsController do
       end
 
       it "shows a table of events" do
-        get internal_live_events_path, headers: generate_auth_headers(:author)
+        get internal_open_events_path, headers: generate_auth_headers(:author)
 
         assert_response :success
 
-        expect(response.body).to include("Live events")
-        expect(response.body).to include("Live online event")
-        expect(response.body).to include("Live provider event")
-        expect(response.body).to_not include("Live train to teach event")
+        expect(response.body).to include("Open events")
+        expect(response.body).to include("Open online event")
+        expect(response.body).to include("Open provider event")
+        expect(response.body).to_not include("Open train to teach event")
       end
     end
   end

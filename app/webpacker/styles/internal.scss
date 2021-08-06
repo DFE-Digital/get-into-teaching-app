@@ -38,11 +38,11 @@ $grey-very-light: #f3f2f1;
     display: none;
   }
 
-  &.live_events {
+  &.open_events {
     background-color: $grey-very-light;
     max-width: none;
 
-    .live-events-container {
+    .open-events-container {
       background-color: $white;
       padding: 1.5rem;
 
