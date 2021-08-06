@@ -34,7 +34,7 @@ gem "addressable", "~> 2.8.0"
 
 gem "rack-attack"
 
-gem "faraday", "~> 1.5.0"
+gem "faraday", "~> 1.6.0"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
@@ -58,7 +58,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.35.0"
+gem "view_component", "~> 2.36.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -80,7 +80,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 3.14.0" # FIXME: stop gap fix but we should relint the codebase
 
   # Static security scanner
-  gem "brakeman", "~> 5.0.4", require: false
+  gem "brakeman", "~> 5.1.1", require: false
 
   # Debugging
   gem "pry-byebug"
@@ -98,7 +98,7 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem "listen", ">= 3.0.5", "< 3.6"
+  gem "listen", "~> 3.6.0"
   gem "web-console", ">= 4.1.0"
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
