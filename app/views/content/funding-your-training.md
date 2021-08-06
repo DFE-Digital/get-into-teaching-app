@@ -6,11 +6,20 @@
     training.
   date: "2021-03-11"
   image: "media/images/content/hero-images/0013.jpg"
-  subtitle: There’s still time to apply and start your training this September. 
-  subtitle_button: "Find a course"
-  subtitle_link: "/start-teacher-training-this-september"
+  subtitle: New events added - join an event near you and get all the info you need to become a teacher. 
+  subtitle_button: "Book your place"
+  subtitle_link: "/event-categories/train-to-teach-events"
   backlink: "../"
   navigation: 25
+  right_column:
+  ctas:
+    - title: New events added.
+      text: Turn your questions into confidence. Decide how to fund your training at our next event.  
+      link_text: "Events near you"
+      link_target: "/event-categories/train-to-teach"
+      icon: "icon-calendar"
+      hide_on_mobile: Yes
+      hide_on_tablet: Yes
   lid_pixel_event: "Funding"
   jump_links:
     Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"

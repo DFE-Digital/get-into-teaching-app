@@ -4,20 +4,19 @@ image: "media/images/content/hero-images/0003.jpg"
 description: |-
   To teach in England you must have a degree and Qualified Teacher Status. You can
   get QTS by doing a PGCE, Postgraduate Teaching Apprenticeship, School Direct (which can be fee-funded or salaried) or one of the other routes listed here. 
-subtitle: There’s still time to apply and start your training this September. 
-subtitle_button: "Find a course"
-subtitle_link: "/start-teacher-training-this-september"
+subtitle: New events added - join an event near you and get all the info you need to become a teacher. 
+subtitle_button: "Book your place"
+subtitle_link: "event-categories/train-to-teach-events"
 date: "2021-06-07"
 backlink: "../"
 navigation: 20
 article_classes: ['ways-to-train']
 right_column:
   ctas:
-    - title: Start your teacher training this September
-      text: |
-       Places fill up quickly, but many courses are still available.  
-      link_text: "Find a course"
-      link_target: "/start-teacher-training-this-september"
+    - title: New events added.
+      text: Turn your questions into confidence. Join our next event to decide which training suits you best.  
+      link_text: "Events near you"
+      link_target: "/event-categories/train-to-teach"
       icon: "icon-calendar"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
