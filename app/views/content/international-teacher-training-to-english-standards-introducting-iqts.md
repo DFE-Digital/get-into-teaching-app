@@ -2,7 +2,7 @@
 title: International teacher training to English standards - introducing iQTS
 description: |-
  International qualified teacher status (iQTS) is a new teaching qualification backed by England’s Department for Education (DfE). iQTS is now open to applications from candidates outside the UK who wish to train to internationally recognised English teaching standards. 
-date: "2021-07-30"
+date: "2021-08-06"
 image: "media/images/content/hero-images/0003.jpg"
 article_classes: ['longform']
 backlink: "../"
