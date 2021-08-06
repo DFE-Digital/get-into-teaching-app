@@ -13,10 +13,7 @@ module Internal
       load_pending_events(@event_type)
       @no_results = @events.blank?
 
-      @successful = params[:status]
-      @withdrawn = params[:status] == "withdrawn"
-      @published = params[:status] == "published"
-      @pending = params[:status] == "pending"
+      @status = params[:status]
       @readable_id = params[:readable_id]
     end
 

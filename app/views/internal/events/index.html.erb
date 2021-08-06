@@ -1,18 +1,15 @@
-<% if @successful %>
+<% if @status %>
   <div class="confirmation-panel-container">
     <div class="govuk-panel govuk-panel--confirmation">
       <h1 class="govuk-panel__title">
-        <%= "Event submitted for review" if @pending %>
-        <%= "Event published" if @published %>
-        <%= "Event withdrawn" if @withdrawn %>
+        <%= t("internal.status.#{@status}.title") %>
       </h1>
       <% if @readable_id %>
         <div class="govuk-panel__body">
-          <%= "Pending event" if @pending || @withdrawn %>
-          <%= "Published event" if @published %>
+          <%= t("internal.status.#{@status}.body") %>
           <strong>
             <%= link_to @readable_id,
-                        @pending || @withdrawn ? internal_event_path(@readable_id) : event_path(@readable_id) %>
+                        @status == "published" ? event_path(@readable_id) : internal_event_path(@readable_id) %>
           </strong>
         </div>
       <% end %>
