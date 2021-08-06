@@ -495,13 +495,13 @@ Contact them directly to ask them about entry criteria and to apply.
 
 If you trained as a teacher outside the UK, you can apply to certain training providers for an assessment only QTS without visiting or training in England. 
 
-[View teaching training providers offering assessment only QTS to international teachers.](#Teacher training providers offering assessment only QTS to international teachers)
+[View teaching training providers offering assessment only QTS to international teachers.](#group--overseas-ao-providers)
 
 ### Teacher training providers offering assessment only QTS to international teachers
 
 The following providers offer assessment only QTS to international teachers. You will not have to visit or train in England, but you may be assessed at your place of work by an examiner from your teaching training provider. Contact the training provider directly to ask them about entry criteria and how to apply.
 
-[Learn more about working in England if you’re a teacher from outside the UK.](https://getintoteaching.education.gov.uk/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk#consider-getting-qualified-teacher-status)
+[Learn more about working in England if you’re a teacher from outside the UK.](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk#consider-getting-qualified-teacher-status)
 
-If you're a provider and need to update the details on your record, please contact us at: getintoteaching.helpdesk@education.gov.uk.
+
 
