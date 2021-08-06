@@ -587,3 +587,15 @@ en:
         accept_privacy_policy:
           text: Are you over 16 and do you agree to our %{link}?
           link: privacy policy
+
+  internal:
+    status:
+      pending:
+        title: Event submitted for review
+        body: Pending event
+      published:
+        title: Event published
+        body: Published event
+      withdrawn:
+        title: Event withdrawn
+        body: Pending event

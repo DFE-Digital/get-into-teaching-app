@@ -4,6 +4,7 @@ $govuk-include-default-font-face: false;
 @import "~trix";
 @import "~flatpickr";
 @import "colours";
+@import "font-sizes";
 $grey-very-light: #f3f2f1;
 
 .internal {
@@ -37,17 +38,22 @@ $grey-very-light: #f3f2f1;
     display: none;
   }
 
-  .confirmation-panel-container {
+  &.open_events {
     background-color: $grey-very-light;
-    padding-bottom: 30px;
-    margin: 0;
+    max-width: none;
 
-    a {
-      color: $white;
+    .open-events-container {
+      background-color: $white;
+      padding: 1.5rem;
+
+      .table-header {
+        margin-bottom: 30px;
+        text-align: left;
+        font-weight: bold;
+        @include font-size('xlarge');
+      }
     }
   }
-
-  // Tab navigation
 
   $grey-very-dark: #202124;
   $light-greyish-blue: #e8eaed;
@@ -57,7 +63,16 @@ $grey-very-light: #f3f2f1;
     background-color: $grey-very-light;
     max-width: none;
 
-    .container {
+    .confirmation-panel-container {
+      padding-bottom: 30px;
+      margin: 0;
+
+      a {
+        color: $white;
+      }
+    }
+
+    .events-listing {
       background-color: $white;
 
       .tab-bar {
@@ -99,6 +114,15 @@ $grey-very-light: #f3f2f1;
 
       .event-pagination {
         min-height: 50px;
+      }
+    }
+
+    .withdraw-box-container {
+      padding-top: 45px;
+
+      .withdraw-box {
+        background-color: $white;
+        display: inline-block;
       }
     }
   }
