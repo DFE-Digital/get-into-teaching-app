@@ -58,5 +58,16 @@ FactoryBot.define do
     trait :no_location do
       building { nil }
     end
+
+    trait :pending do
+      status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"] }
+    end
+
+    trait :without_train_to_teach_fields do
+      is_virtual { nil }
+      video_url { nil }
+      message { nil }
+      web_feed_id { nil }
+    end
   end
 end

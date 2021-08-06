@@ -4,25 +4,18 @@ describe Internal::EventsController do
   let(:pending_provider_event) do
     build(:event_api,
           :with_provider_info,
-          name: "Pending provider event",
-          status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
-          type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-          is_virtual: nil,
-          video_url: nil,
-          message: nil,
-          web_feed_id: nil)
+          :pending,
+          :school_or_university_event,
+          :without_train_to_teach_fields,
+          name: "Pending provider event")
   end
   let(:pending_online_event) do
     build(:event_api,
+          :pending,
+          :online_event,
+          :without_train_to_teach_fields,
           name: "Pending online event",
-          status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
-          type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
           scribble_id: "/scribble/id/12345",
-          is_virtual: nil,
-          is_online: nil,
-          video_url: nil,
-          message: nil,
-          web_feed_id: nil,
           building: nil)
   end
   let(:events) { [pending_provider_event, build(:event_api, name: "Open event"), pending_online_event] }
@@ -286,11 +279,11 @@ describe Internal::EventsController do
         let(:building_id) { pending_provider_event.building.id }
         let(:expected_request_body) do
           build(:event_api,
+                :pending,
+                :school_or_university_event,
                 id: params[:id],
                 name: params[:name],
                 readable_id: params[:readable_id],
-                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
                 summary: params[:summary],
                 description: params[:description],
                 is_online: params[:is_online],
@@ -395,18 +388,17 @@ describe Internal::EventsController do
         end
         let(:expected_request_body) do
           build(:event_api,
+                :pending,
+                :online_event,
                 id: params[:id],
                 name: params[:name],
                 readable_id: params[:readable_id],
-                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
-                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
                 summary: params[:summary],
                 description: params[:description],
                 start_at: params[:start_at].getutc.floor,
                 end_at: params[:end_at].getutc.floor,
                 scribble_id: params[:scribble_id],
                 building: nil,
-                is_online: true,
                 is_virtual: nil,
                 video_url: nil,
                 message: nil,
@@ -443,25 +435,9 @@ describe Internal::EventsController do
         end
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
-          build(:event_api,
-                id: event.id,
-                name: event.name,
-                readable_id: event.readable_id,
-                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
-                summary: event.summary,
-                description: event.description,
-                is_online: event.is_online,
-                start_at: event.start_at,
-                end_at: event.end_at,
-                provider_contact_email: event.provider_contact_email,
-                provider_organiser: event.provider_organiser,
-                provider_target_audience: event.provider_target_audience,
-                provider_website_url: event.provider_website_url,
-                is_virtual: nil,
-                video_url: nil,
-                message: nil,
-                web_feed_id: nil)
+          event.tap do |event|
+            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+          end
         end
 
         context "when event has no building" do
@@ -514,28 +490,16 @@ describe Internal::EventsController do
         let(:event) { pending_online_event }
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
-          build(:event_api,
-                id: event.id,
-                name: event.name,
-                readable_id: event.readable_id,
-                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
-                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
-                summary: event.summary,
-                description: event.description,
-                start_at: event.start_at,
-                end_at: event.end_at,
-                scribble_id: event.scribble_id,
-                building: nil,
-                is_online: nil,
-                is_virtual: nil,
-                video_url: nil,
-                message: nil,
-                web_feed_id: nil)
+          event.tap do |event|
+            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+          end
         end
 
         it "posts event with event status open" do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event).with(expected_request_body)
+
+
 
           put internal_approve_path,
               headers: generate_auth_headers(:publisher),
@@ -575,32 +539,16 @@ describe Internal::EventsController do
         end
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
-          build(:event_api,
-                id: event.id,
-                name: event.name,
-                readable_id: event.readable_id,
-                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
-                summary: event.summary,
-                description: event.description,
-                is_online: event.is_online,
-                start_at: event.start_at,
-                end_at: event.end_at,
-                provider_contact_email: event.provider_contact_email,
-                provider_organiser: event.provider_organiser,
-                provider_target_audience: event.provider_target_audience,
-                provider_website_url: event.provider_website_url,
-                is_virtual: nil,
-                video_url: nil,
-                message: nil,
-                web_feed_id: nil)
+          event.tap do |event|
+            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+            event.building = nil
+          end
         end
 
         let(:params) { { "id": event.id } }
 
         it "posts the event with event status pending" do
           event.building = nil
-          expected_request_body.building = nil
 
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event).with(expected_request_body)
@@ -622,23 +570,9 @@ describe Internal::EventsController do
         let(:event) { pending_online_event }
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
-          build(:event_api,
-                id: event.id,
-                name: event.name,
-                readable_id: event.readable_id,
-                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
-                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
-                summary: event.summary,
-                description: event.description,
-                start_at: event.start_at,
-                end_at: event.end_at,
-                scribble_id: event.scribble_id,
-                building: nil,
-                is_online: nil,
-                is_virtual: nil,
-                video_url: nil,
-                message: nil,
-                web_feed_id: nil)
+          event.tap do |event|
+            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+          end
         end
 
         it "posts event with event status pending" do
@@ -686,12 +620,12 @@ describe Internal::EventsController do
     end
 
     context "when there are events" do
+      let(:start_at) { Time.zone.today.at_beginning_of_month + 1.day }
       let(:events) do
-        start_at = Time.zone.today.at_beginning_of_month + 1.day
         [
-          build(:event_api, name: "Open online event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]),
-          build(:event_api, name: "Open provider event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]),
-          build(:event_api, name: "Open train to teach event", start_at: start_at, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]),
+          build(:event_api, :online_event, name: "Open online event", start_at: start_at),
+          build(:event_api, :school_or_university_event, name: "Open provider event", start_at: start_at),
+          build(:event_api, :train_to_teach_event, name: "Open train to teach event", start_at: start_at),
         ]
       end
       let(:events_by_type) { group_events_by_type(events) }

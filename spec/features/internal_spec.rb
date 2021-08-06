@@ -163,8 +163,8 @@ RSpec.feature "Internal section", type: :feature do
     end
   end
 
-  context "when there are live events" do
-    start_at = Time.zone.today.at_beginning_of_month + 1.day
+  context "when there are open events" do
+    let(:start_at) { Time.zone.today.at_beginning_of_month + 1.day }
     let(:live_online_event) { build(:event_api, :online_event, name: "Open online event") }
     let(:live_provider_event) { build(:event_api, :school_or_university_event, name: "Open provider event", start_at: start_at) }
     let(:events) { [live_online_event, live_provider_event] }

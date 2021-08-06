@@ -217,7 +217,7 @@ describe EventsController do
         end
 
         context "when the event is a 'Pending event'" do
-          let(:event) { build(:event_api, web_feed_id: nil, status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]) }
+          let(:event) { build(:event_api, :pending, web_feed_id: nil) }
 
           it { expect(response).to have_http_status :success }
           it { expect(response.body).to include("Unfortunately, that event has already happened.") }
