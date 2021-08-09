@@ -4,45 +4,45 @@ html {
   @include mq($from: tablet) { font-size: 100%; }
 }
 
-$relative-font-sizes: .9rem,     // 1
-                      .95rem,    // 2
-                      1rem,      // 3
-                      1.1875rem, // 4
-                      1.75rem,   // 5
-                      2.25rem,   // 6
-                      2.625rem,  // 7
-                      3.375rem,  // 8
-                      5.333rem;  // 9
+$_relative-font-sizes: .9rem,     // 1
+                       .95rem,    // 2
+                       1rem,      // 3
+                       1.1875rem, // 4
+                       1.75rem,   // 5
+                       2.25rem,   // 6
+                       2.625rem,  // 7
+                       3.375rem,  // 8
+                       5.333rem;  // 9
 
-$font-sizes: (
+$_font-sizes: (
   mobile: (
-    "xsmall":   nth($relative-font-sizes, 1),
-    "small":    nth($relative-font-sizes, 2),
-    "medium":   nth($relative-font-sizes, 3),
-    "large":    nth($relative-font-sizes, 4),
-    "xlarge":   nth($relative-font-sizes, 5),
-    "xxlarge":  nth($relative-font-sizes, 6),
-    "xxxlarge": nth($relative-font-sizes, 7),
+    "xsmall":   nth($_relative-font-sizes, 1),
+    "small":    nth($_relative-font-sizes, 2),
+    "medium":   nth($_relative-font-sizes, 3),
+    "large":    nth($_relative-font-sizes, 4),
+    "xlarge":   nth($_relative-font-sizes, 5),
+    "xxlarge":  nth($_relative-font-sizes, 6),
+    "xxxlarge": nth($_relative-font-sizes, 7),
   ),
 
   tablet: (
-    "xsmall":   nth($relative-font-sizes, 2),
-    "small":    nth($relative-font-sizes, 3),
-    "medium":   nth($relative-font-sizes, 4),
-    "large":    nth($relative-font-sizes, 5),
-    "xlarge":   nth($relative-font-sizes, 6),
-    "xxlarge":  nth($relative-font-sizes, 7),
-    "xxxlarge": nth($relative-font-sizes, 8),
+    "xsmall":   nth($_relative-font-sizes, 2),
+    "small":    nth($_relative-font-sizes, 3),
+    "medium":   nth($_relative-font-sizes, 4),
+    "large":    nth($_relative-font-sizes, 5),
+    "xlarge":   nth($_relative-font-sizes, 6),
+    "xxlarge":  nth($_relative-font-sizes, 7),
+    "xxxlarge": nth($_relative-font-sizes, 8),
   ),
 
   desktop: (
-    "xsmall":   nth($relative-font-sizes, 3),
-    "small":    nth($relative-font-sizes, 4),
-    "medium":   nth($relative-font-sizes, 5),
-    "large":    nth($relative-font-sizes, 6),
-    "xlarge":   nth($relative-font-sizes, 7),
-    "xxlarge":  nth($relative-font-sizes, 8),
-    "xxxlarge": nth($relative-font-sizes, 9),
+    "xsmall":   nth($_relative-font-sizes, 3),
+    "small":    nth($_relative-font-sizes, 4),
+    "medium":   nth($_relative-font-sizes, 5),
+    "large":    nth($_relative-font-sizes, 6),
+    "xlarge":   nth($_relative-font-sizes, 7),
+    "xxlarge":  nth($_relative-font-sizes, 8),
+    "xxxlarge": nth($_relative-font-sizes, 9),
   )
 );
 
@@ -51,13 +51,13 @@ $font-sizes: (
 }
 
 @mixin font-size($size, $adjust: 0rem) {
-  font-size: size($font-sizes, mobile, $size) + $adjust;
+  font-size: size($_font-sizes, mobile, $size) + $adjust;
 
   @include mq($from: tablet, $until: desktop) {
-    font-size: size($font-sizes, tablet, $size) + $adjust;
+    font-size: size($_font-sizes, tablet, $size) + $adjust;
   }
 
   @include mq($from: desktop) {
-    font-size: size($font-sizes, desktop, $size) + $adjust;
+    font-size: size($_font-sizes, desktop, $size) + $adjust;
   }
 }
