@@ -4,52 +4,60 @@ html {
   @include mq($from: tablet) { font-size: 100%; }
 }
 
-// Numbers refer to pixel size when the base font
-// size of the broswer is 16px (most broswers)
+$_relative-font-sizes: .9rem,     // 1
+                       .95rem,    // 2
+                       1rem,      // 3
+                       1.1875rem, // 4
+                       1.75rem,   // 5
+                       2.25rem,   // 6
+                       2.625rem,  // 7
+                       3.375rem,  // 8
+                       5.333rem;  // 9
 
-$fs-14: .9rem;
-$fs-15: .95rem;
-$fs-16: 1rem;
-$fs-19: 1.1875rem;
-$fs-28: 1.75rem;
-$fs-36: 2.25rem;
-$fs-42: 2.625rem;
-$fs-54: 3.375rem;
-$fs-64: 5.333rem;
+$_font-sizes: (
+  mobile: (
+    "xsmall":   nth($_relative-font-sizes, 1),
+    "small":    nth($_relative-font-sizes, 2),
+    "medium":   nth($_relative-font-sizes, 3),
+    "large":    nth($_relative-font-sizes, 4),
+    "xlarge":   nth($_relative-font-sizes, 5),
+    "xxlarge":  nth($_relative-font-sizes, 6),
+    "xxxlarge": nth($_relative-font-sizes, 7),
+  ),
 
-@function size($device-sizes, $size) {
-  @if not map-has-key($device-sizes, $size) {
-    @error "Unknown font size `#{$size}` in #{$device-sizes}";
-  }
-  @return map-get($device-sizes, $size);
+  tablet: (
+    "xsmall":   nth($_relative-font-sizes, 2),
+    "small":    nth($_relative-font-sizes, 3),
+    "medium":   nth($_relative-font-sizes, 4),
+    "large":    nth($_relative-font-sizes, 5),
+    "xlarge":   nth($_relative-font-sizes, 6),
+    "xxlarge":  nth($_relative-font-sizes, 7),
+    "xxxlarge": nth($_relative-font-sizes, 8),
+  ),
+
+  desktop: (
+    "xsmall":   nth($_relative-font-sizes, 3),
+    "small":    nth($_relative-font-sizes, 4),
+    "medium":   nth($_relative-font-sizes, 5),
+    "large":    nth($_relative-font-sizes, 6),
+    "xlarge":   nth($_relative-font-sizes, 7),
+    "xxlarge":  nth($_relative-font-sizes, 8),
+    "xxxlarge": nth($_relative-font-sizes, 9),
+  )
+);
+
+@function size($font-sizes, $device-size, $size) {
+  @return map-get($font-sizes, $device-size, $size);
 }
 
-$mobile-sizes:  ("xsmall": $fs-14, "small": $fs-15, "medium": $fs-16, "large": $fs-19, "xlarge" : $fs-28, "xxlarge": $fs-36, "xxxlarge": $fs-42);
-$tablet-sizes:  ("xsmall": $fs-15, "small": $fs-16, "medium": $fs-19, "large": $fs-28, "xlarge" : $fs-36, "xxlarge": $fs-42, "xxxlarge": $fs-54);
-$desktop-sizes: ("xsmall": $fs-16, "small": $fs-19, "medium": $fs-28, "large": $fs-36, "xlarge" : $fs-42, "xxlarge": $fs-54, "xxxlarge": $fs-64);
-
 @mixin font-size($size, $adjust: 0rem) {
-  font-size: size($mobile-sizes, $size) + $adjust;
+  font-size: size($_font-sizes, mobile, $size) + $adjust;
 
   @include mq($from: tablet, $until: desktop) {
-    font-size: size($tablet-sizes, $size) + $adjust;
+    font-size: size($_font-sizes, tablet, $size) + $adjust;
   }
 
   @include mq($from: desktop) {
-    font-size: size($desktop-sizes, $size) + $adjust;
+    font-size: size($_font-sizes, desktop, $size) + $adjust;
   }
-
-  // debug util
-  //
-  // $debug-colours: (
-  //   "xsmall": powderblue,
-  //   "small": plum,
-  //   "medium": coral,
-  //   "large": lawngreen,
-  //   "xlarge" : fuchsia,
-  //   "xxlarge": mediumspringgreen);
-
-  // @each $name, $whatever in $desktop-sizes {
-  //   outline: 1px dashed map-get($debug-colours, $size);
-  // }
 }
