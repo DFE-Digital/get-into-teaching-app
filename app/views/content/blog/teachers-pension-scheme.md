@@ -1,5 +1,7 @@
 ---
 title: The benefits of the Teachers' Pension Scheme
+description: |-
+  A teaching career offers a range of benefits including a secure pension that will help you save for your future. Here are six things that you need to know about the Teachers’ Pension Scheme.
 images:
   whiteboard:
     path: "media/images/content/blog/whiteboard.jpg"
