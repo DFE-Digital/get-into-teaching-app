@@ -15,8 +15,6 @@ tags:
   - pensions
   - benefits
   - salaries
-description:
-  (Add a description here)
 ---
 
 $whiteboard$
