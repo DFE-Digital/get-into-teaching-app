@@ -21,9 +21,6 @@ $whiteboard$
 
 A teaching career offers a range of benefits, including a [competitive salary](/salaries-and-benefits), opportunities for career progression, and a support package for [early career teachers](https://www.gov.uk/government/collections/early-career-framework-reforms). It also comes with a secure pension that will help you save for your future. Here are six things that you need to know about the Teachers’ Pension Scheme.
 
-> The benefits of being a teacher is that it does provide you with a stable income.
->
-> _Graham, Head of Computing_
 
 ## 1. All teachers are automatically enrolled
 You will be enrolled automatically in the Teachers’ Pension Scheme from the start of your career and each time you start a new contract. The pension is yours, so you can add to it throughout your career, even when you move teaching jobs. You also have the flexibility to opt out of the scheme if you wish to. It’s important to take independent financial advice when making any decisions regarding your pension.
@@ -31,7 +28,7 @@ You will be enrolled automatically in the Teachers’ Pension Scheme from the st
 ## 2. Your employer and the government contribute too
 Each time you are paid, you contribute part of your salary to your pension. In addition, your employer also puts a percentage of your salary into the Scheme. As the Scheme is registered with HM Revenue and Customs, your contributions are tax-free, so you are able to keep more of your income.
 
-> We also have a superb pension package.
+> We have a superb pension package.
 >
 > _Katie, Assistant Principal_
 
@@ -43,16 +40,8 @@ _Find out more about the benefits of the [Teachers’ Pension Scheme](https://ww
 ## 4. The Scheme is very secure
 The Teachers’ Pension Scheme is one of only eight schemes backed by the government. This means that it is not reliant on your money being invested elsewhere.
 
-> It is a nice feeling inside that you feel totally secure.
->
-> _Rachel, primary teacher_
-
 ## 5. The Scheme is flexible
 If you wish to, you can convert part of your pension early as a tax-free lump sum. If you were to become ill during your career, you could apply for early ill-health retirement. You can also manage your pension online in a way that suits you.
-
-> It’s put me in a place now where I love my job and it helps support me and my family.
->
-> _Addison, science teacher_
 
 ## 6. Your family will be protected
 If you were to die while actively paying into your pension, a nominated beneficiary would receive a death grant. After two years of paying in to your pension, a nominated beneficiary would also receive a pension after you die.
