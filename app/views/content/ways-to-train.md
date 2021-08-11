@@ -2,8 +2,7 @@
 title: "Ways to train"
 image: "media/images/content/hero-images/0003.jpg"
 description: |-
-  To teach in England you must have a degree and Qualified Teacher Status. You can
-  get QTS by doing a PGCE, Postgraduate Teaching Apprenticeship, School Direct (which can be fee-funded or salaried) or one of the other routes listed here. 
+  Official Department for Education guidance on teacher training. Find out how to become a teacher, get qualified teacher status (QTS) through a PGCE or school direct and the salaries and funding available. 
 subtitle: New events added - join an event near you and get all the info you need to become a teacher. 
 subtitle_button: "Book your place"
 subtitle_link: "event-categories/train-to-teach-events"

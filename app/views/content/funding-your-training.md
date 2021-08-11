@@ -1,9 +1,8 @@
 ---
   title: "Funding your training"
   description: |-
-    Multiple funding options in the form of teaching bursaries, teaching scholarships and
-    maintenance loans are available to support your postgraduate teacher
-    training.
+    Search the bursaries, scholarships and loans available to fund your teacher training. See funding available for specific subjects and for training through PGCE or 
+    school direct.
   date: "2021-03-11"
   image: "media/images/content/hero-images/0013.jpg"
   subtitle: New events added - join an event near you and get all the info you need to become a teacher. 

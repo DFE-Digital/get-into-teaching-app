@@ -2,8 +2,8 @@
 layout: "layouts/stories/landing"
 title: My story into teaching
 description: |-
-  Teachers offer an insight into how to become a teacher, day-to-day school life and the satisfaction
-  that comes with making a difference to young people's lives.
+  Real teachers and trainees share their experiences. Find out how to become a teacher, handle a class full of teenagers, 
+  change careers and pay for your training.
 date: "2021-02-02"
 image: "media/images/content/hero-images/0010.jpg"
 subtitle: New events added - join an event near you and get all the info you need to become a teacher. 
