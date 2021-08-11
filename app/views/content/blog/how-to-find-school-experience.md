@@ -43,7 +43,7 @@ You can request a booking by inputting your details for your chosen school to re
 
 ## Other opportunities
 
-If none of the search results are quite right for you, you might consider finding virtual experiences and other online opportunities. Many school and training provider websites have helpful information like ‘day in the life’ videos and recorded lessons. You can find out more on the [Get into Teaching website](/steps-to-become-a-teacher).
+If none of the search results are quite right for you, you might consider finding virtual experiences and other online opportunities. Many school and training provider websites have helpful information like ‘day in the life’ videos and recorded lessons. You can find out more about [school experience options and what to do if you cannot get into the classroom right now](/get-school-experience).
 
 You can also arrange school experience independently, by contacting your old school or, if you’re a student, checking whether your university has any existing links with local schools. Alternatively, you could contact a school directly. Start by using the [Get information about schools service](https://get-information-schools.service.gov.uk/) to find schools in your area. Try to find out who is responsible for school experience to make sure your request goes to the right person. Bear in mind that schools are busy places, so they may not always respond quickly and you may need to be flexible about when you visit.
 
