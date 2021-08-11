@@ -466,7 +466,7 @@ provider_groups:
       name: Mikki Burns
       telephone: 0203 194 3200
       email: Institute@tesglobal.com
-  Teacher training providers offering assessment only QTS to international teachers:
+  Providers offering assessment only QTS to international teachers:
     description: content/assessment-only-providers/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
     - header: University of Sunderland
