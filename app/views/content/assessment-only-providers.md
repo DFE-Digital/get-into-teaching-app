@@ -507,4 +507,4 @@ Contact them directly to ask them about entry criteria and to apply.
 
 If you trained as a teacher outside the UK, you can apply to certain training providers for an assessment only QTS without visiting or training in England. 
 
-[View teaching training providers offering assessment only QTS to international teachers.](#group--teacher-training-providers-offering-assessment-only-qts-to-international-teachers)
+[View teaching training providers offering assessment only QTS to international teachers.](#group--providers-offering-assessment-only-qts-to-international-teachers)
