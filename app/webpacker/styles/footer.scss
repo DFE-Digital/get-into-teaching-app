@@ -30,6 +30,10 @@ footer.site-footer {
 
         color: $grey-mid;
         margin-bottom: .5em;
+
+        &:focus {
+          color: $black;
+        }
       }
 
       // column-gap: 1.5em;
@@ -69,6 +73,10 @@ footer.site-footer {
       a,
       a:hover {
         text-decoration: none;
+      }
+
+      a:focus {
+        color: $black;
       }
     }
   }
