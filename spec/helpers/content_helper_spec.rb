@@ -29,4 +29,19 @@ describe ContentHelper, type: :helper do
       end
     end
   end
+
+  describe "#root_page?" do
+    {
+      "/" => true,
+      "/one" => true,
+      "/one/two" => false,
+      "/one/two/three" => false,
+    }.each do |path, expected_result|
+      context "path: #{path}" do
+        specify "returns #{expected_result}" do
+          expect(root_page?(path)).to be expected_result
+        end
+      end
+    end
+  end
 end

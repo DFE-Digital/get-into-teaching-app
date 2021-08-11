@@ -35,46 +35,10 @@ RSpec.feature "Breadcrumbs", type: :feature do
     end
   end
 
-  context "when query params are present" do
-    let(:path) { page_path("ways-to-train", amazing: "yes") }
-
-    it { is_expected.to have_css(".breadcrumb") }
-
-    it "includes the parent page" do
-      page.within ".breadcrumb" do
-        is_expected.to have_link "Home", href: "/"
-      end
-    end
-
-    it "doesn't include the current page" do
-      page.within ".breadcrumb" do
-        is_expected.not_to have_link "Ways to train"
-      end
-    end
-  end
-
   context "when visiting a content page without a title" do
     let(:path) { page_path("no-title") }
 
     it { is_expected.to have_http_status(:success) }
-  end
-
-  context "when visiting a disclaimer page" do
-    let(:path) { page_path("disclaimer") }
-
-    it { is_expected.to have_css(".breadcrumb") }
-  end
-
-  context "when visiting the stories landing page" do
-    let(:path) { page_path("stories/landing-page") }
-
-    it { is_expected.to have_css(".breadcrumb") }
-  end
-
-  context "when visiting the story listing page" do
-    let(:path) { page_path("stories/list-page") }
-
-    it { is_expected.to have_css(".breadcrumb") }
   end
 
   context "when visiting the story page" do

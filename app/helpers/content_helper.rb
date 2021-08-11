@@ -4,4 +4,8 @@ module ContentHelper
       classes << "fullwidth" if front_matter["fullwidth"]
     end
   end
+
+  def root_page?(path)
+    path.count("/") == 1
+  end
 end
