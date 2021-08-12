@@ -63,12 +63,12 @@ On average, established teachers earn more than this.
 
 Average teaching salaries for 2021/22 are:
 
-|                                                  | Minimum |
-| -------                                          | -----   | 
-| Primary school teachers                          | £36,000 |
-| Secondary school teachers                        | £39,000 |
-| Leadership teachers (e.g. head of department)    | £56,400 |
-| Headteachers                                     | £73,500 |
+|                                               | Average salary |
+| -------                                       | -----          | 
+| Primary school teachers                       | £36,000        |
+| Secondary school teachers                     | £39,000        |
+| Leadership teachers (e.g. head of department) | £56,400        |
+| Headteachers                                  | £73,500        |
 
 ### Holidays
 
@@ -133,7 +133,7 @@ Annual salary ranges for senior teachers are:
 
 In 2020/21, the average salary for a headteacher was £73,500.
 
-#### Leading practitioner pay
+### Leading practitioner pay
 
 If you’re an established and exceptional teacher, and regularly show the highest standards of classroom teaching, you can be put onto a higher pay scale.
 
