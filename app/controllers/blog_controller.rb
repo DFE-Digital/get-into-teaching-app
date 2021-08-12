@@ -5,7 +5,7 @@ class BlogController < ApplicationController
   layout "layouts/blog/index"
 
   def index
-    @front_matter = { "title" => "Blog" }
+    @front_matter = { "title" => "Get Into Teaching Blog" }
 
     @posts = Pages::Blog.posts
   end

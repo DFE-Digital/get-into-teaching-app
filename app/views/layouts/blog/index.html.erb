@@ -8,7 +8,7 @@
     <main role="main" id="main-content">
       <section class="container blog">
         <header class="list-header">
-          <%= tag.h1(@front_matter[:title]) %>
+          <%= tag.h1(@front_matter["title"]) %>
         </header>
 
         <%= yield :popular_tags %>
