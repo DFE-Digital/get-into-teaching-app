@@ -121,6 +121,12 @@ RSpec.feature "content pages check", type: :feature, content: true do
       end
     end
 
+    scenario "every page has a main heading" do
+      @stored_pages_by_path.each do |path, sp|
+        expect(sp.body).to(have_css("h1", count: 1), "#{path} has no heading")
+      end
+    end
+
     scenario "there are no internal links that contain the site's domain" do
       @stored_pages.each do |sp|
         sp.body
