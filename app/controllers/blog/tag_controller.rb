@@ -8,7 +8,7 @@ class Blog::TagController < ApplicationController
     breadcrumb "Blog", blog_index_path
 
     @front_matter = {
-      title: "Blog posts about #{params[:id].tr('-', ' ')}",
+      "title" => "Blog posts about #{params[:id].tr('-', ' ')}",
     }
 
     @tag = params[:id]
