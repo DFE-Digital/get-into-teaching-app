@@ -65,18 +65,18 @@ Average teaching salaries for 2021/22 are:
 
 |                                               | Average salary |
 | -------                                       | -----          | 
-| Primary school teachers                       | £36,000        |
-| Secondary school teachers                     | £39,000        |
-| Leadership teachers (e.g. head of department) | £56,400        |
-| Headteachers                                  | £73,500        |
+| Primary school teachers                       |    £36,000     |
+| Secondary school teachers                     |    £39,000     |
+| Leadership teachers (e.g. head of department) |    £56,400     |
+| Headteachers                                  |    £73,500     |
 
-### Holidays
+## Holidays
 
 You'll get more days than people in many other professions. Full-time teachers work for 195 days per year in school. 
 
 On average, people working 9-5, Monday to Friday work 227 days a year.
 
-### Teacher's pension scheme
+## Teacher's pension scheme
 
 The Teachers’ Pension Scheme is one of the most generous in the country. It is a ‘final salary’ scheme, which gives you a regular source of income when you retire. It is:
 
@@ -84,7 +84,7 @@ The Teachers’ Pension Scheme is one of the most generous in the country. It is
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
-### Establishing yourself as a teacher
+## Establishing yourself as a teacher
 
 As well as pay, holidays and a pension, all teachers are given extra support during their first 2 years in teaching. 
 
@@ -114,8 +114,8 @@ Annual salary ranges for qualified teachers are:
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| Greater London                           | £32,157 | £50,953 |
-| Rest of England and Wales                | £25,714 | £41,604 |
+| Greater London                           | £26,948 | £42,624 |
+| Rest of England and Wales                | £25,714 | £36,961 |
 
 
 ### Senior teacher pay
