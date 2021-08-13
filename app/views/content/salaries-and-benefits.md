@@ -76,9 +76,9 @@ You'll get more days than people in many other professions. Full-time teachers w
 
 On average, people working 9-5, Monday to Friday work 227 days a year.
 
-## Teacher's pension scheme
+## Teachers' pension scheme
 
-The Teachers’ Pension Scheme is one of the most generous in the country. It is a ‘final salary’ scheme, which gives you a regular source of income when you retire. It is:
+The teachers’ pension scheme is one of the most generous in the country. It is a ‘final salary’ scheme, which gives you a regular source of income when you retire. It is:
 
 * based on your teaching salary rather than the amount of money you pay in
 * registered with HM Revenue and Customs - so your contributions are tax-free
@@ -122,7 +122,7 @@ Annual salary ranges for qualified teachers are:
 
 If you take on extra responsibilities, like being a head of department, you can be put onto a higher pay scale.
 
-Teachers in this pay scale are important members of a School’s leadership team, and they often work closely with Headteachers.
+Teachers in this pay scale are important members of a school’s leadership team, and they often work closely with Headteachers.
 
 Annual salary ranges for senior teachers are:
 
