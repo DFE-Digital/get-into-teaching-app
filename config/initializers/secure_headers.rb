@@ -220,7 +220,7 @@ SecureHeaders::Configuration.default do |config|
     img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com *.pinterest.com t.co *.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com *.doubleclick.net i.ytimg.com adservice.google.com adservice.google.co.uk https://pixelg.adswizz.com] + google_analytics + lid_pixels,
     manifest_src: %w['self'],
     media_src: %w['self'],
-    script_src: %w['self' 'unsafe-inline' 'unsafe-eval' embed.scribblelive.com *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com *.youtube.com *.visualwebsiteoptimizer.com https://www.googletagmanager.com/gtm.js?id=GTM-K7TK4WM] + google_analytics + lid_pixels,
+    script_src: %w['self' 'unsafe-inline' 'unsafe-eval' embed.scribblelive.com *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com *.youtube.com *.visualwebsiteoptimizer.com https://www.googletagmanager.com/gtm.js] + google_analytics + lid_pixels,
     style_src: %w['self' 'unsafe-inline' *.gov.uk *.googleapis.com] + google_analytics,
     worker_src: %w['self' *.visualwebsiteoptimizer.com blob:],
     upgrade_insecure_requests: !Rails.env.development?, # see https://www.w3.org/TR/upgrade-insecure-requests/
