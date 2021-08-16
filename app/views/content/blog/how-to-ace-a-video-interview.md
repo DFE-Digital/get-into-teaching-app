@@ -6,7 +6,7 @@ images:
     path: "media/images/content/blog/anna-shirley.jpg"
     alt: "A photograph of Sheffield SCITT communciations manager, Anna Shirley"
 description: |-
-  Good prep and a bit of practice will put you in a great position to show off your potential and enthusiasm for the profession.
+  From logistics to presentation, Sheffield SCITT communications manager Anna Shirley shares her top tips for video interviews. 
 keywords:
   - applications
   - interviews
@@ -19,15 +19,15 @@ tags:
 
 $anna_shirley$
 
-Despite the challenges of Covid-19, Teacher Training organisations are still accepting applications, and in a lot of cases asking interviews to take place by video call.
+While some teacher training providers may be returning to face-to-face interviews, others are continuing to ask that interviews take place by video call. 
 
-The Sheffield SCITT is doing just this, and we have put together a guide on how to smash a video interview!
+The [Sheffield SCITT](https://www.sheffieldscitt.org.uk/) has done virtual interviews this year, and we have put together a guide on how to smash a video interview!
 
 ## Logistics
 
 * Make sure you have access to the software that the interviewers will be using. At The Sheffield SCITT we are using Zoom, for example.
 * Test it out by making a video call to a friend to check your sound and speakers are working.
-* Consider the best place in your house to set up for the interview. You want a spot you where won’t be interrupted, with good lighting. Avoid positioning yourself right in front of a window otherwise we’ll end up with a lovely view of outside, but not of your face!
+* Consider the best place in your house to set up for the interview. You want a spot you where you won’t be interrupted, with good lighting. Avoid positioning yourself right in front of a window otherwise we’ll end up with a lovely view of outside, but not of your face!
 * Be mindful of your environment — remove anything from view that could potentially portray you in a negative way.
 * If you can, hide any small children or pets away so that they can’t make any unexpected guest appearances.
 
@@ -35,7 +35,7 @@ The Sheffield SCITT is doing just this, and we have put together a guide on how 
 
 Make sure you present yourself in a professional manner.
 
-* Dress as you would for a face to face interview, in smart attire.
+* Dress as you would for a face-to-face interview, in smart attire.
 * Try to keep eye contact and look directly into the camera. This can be tricky via video, but it’ll really help your interviewers to engage with you.
 * Have a print-out of your application or a list of your key points nearby. You can use it as a platform to spark ideas and prompts to keep the interview flowing well.
 
