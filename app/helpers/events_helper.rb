@@ -126,4 +126,8 @@ module EventsHelper
   def ttt_event_type_id
     GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
   end
+
+  def event_list_id(name)
+    name.parameterize + "-list"
+  end
 end
