@@ -6,7 +6,7 @@ images:
     path: "media/images/content/blog/calculator.jpg"
     alt: "A photograph of a calculator and maths worksheet"
 description: |-
-  Bring your valuable experience back to the classroom with help from the Department for Education.
+  Do you already hold Qualified Teacher Status? Bring your valuable experience back to the classroom with help from the Department for Education.
 keywords:
   - returning to teaching
 tags:
@@ -69,4 +69,4 @@ Once you have made the decision to return to teaching what’s the best way of f
 
 Remember though that teacher recruitment goes in cycles, with most teaching roles being advertised from January onwards. Setting up a job alert will mean you don’t miss out on your perfect role.
 
-_[Find out more about returning to teaching](/returning-to-teaching). If you’re a qualified maths, physics or languages teacher, get your Return to Teaching Adviser now._
+_[Find out more about returning to teaching](/returning-to-teaching). If you’re a qualified maths, physics or languages teacher, [get your Return to Teaching Adviser now](https://adviser-getintoteaching.education.gov.uk/)._
