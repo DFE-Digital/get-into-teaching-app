@@ -72,9 +72,9 @@ Average teaching salaries for 2021/22 are:
 
 ## Holidays
 
-You'll get more days than people in many other professions. Full-time teachers work for 195 days per year in school. 
+You'll get more days holiday than people in many other professions. In school, full-time teachers work 195 days per year. 
 
-On average, people working 9-5, Monday to Friday work 227 days a year.
+For comparison, you'd work 227 days per year (on average) if you worked full time in an office.
 
 ## Teachers' pension scheme
 
@@ -94,7 +94,7 @@ The support includes:
 
 * 15% paid time away from classroom teaching to focus on learning
 * access to a range of high-quality, freely available training materials
-* A mentor who will give you guidance and support
+* a mentor who will give you guidance and support
 
 
 ## Career progression
@@ -169,7 +169,7 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 * leading, developing and enhancing the teaching practice of others
 * TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on your responsibilities.
 
-| Level         | Minimum | Maximum   |
+| Level         | Minimum | Maximum |
 | -------       | -----   | -----  |
 | TLR 1         | £8,291 | £14,030 |
 | TLR 2         | £2,873 | £7,017  |
