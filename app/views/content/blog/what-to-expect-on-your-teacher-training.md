@@ -7,7 +7,7 @@ images:
     path: "media/images/content/blog/jan-ashbridge.jpg"
     alt: "A photograph of teacher training programme lead, Jan Ashbridge"
 description: |-
-  A university-based PGCE year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. It is also a busy one!
+  A university-based PGCE year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. Find out more about what you can expect on your teacher training course.
     
 keywords:
   - teacher training advisers
@@ -39,7 +39,7 @@ The university timetable is, as far as possible, designed to fit into the workin
 
 ## What is the coursework like?
 
-You will usually assessed through essays. The content of these will be linked to work that you are doing in school, which gives you lots of scope for you to think about themes that really interest and motivate you. The school holidays are often a good time to get ahead on your coursework without distractions.
+You will usually be assessed through essays. The content of these will be linked to work that you are doing in school, which gives you lots of scope for you to think about themes that really interest and motivate you. The school holidays are often a good time to get ahead on your coursework without distractions.
 
 ## Is a PGCE manageable if I have a family?
 
