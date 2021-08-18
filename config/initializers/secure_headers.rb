@@ -40,7 +40,7 @@ SecureHeaders::Configuration.default do |config|
   scribble  = %w[embed.scribblelive.com]
   snapchat  = %w[*.snapchat.com sc-static.net]
   twitter   = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
-  vwo       = %w[*.visualwebsiteoptimizer.com, dev.visualwebsiteoptimizer.com]
+  vwo       = %w[*.visualwebsiteoptimizer.com dev.visualwebsiteoptimizer.com]
   youtube   = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
 
   quoted_none          = ["'none'"]
