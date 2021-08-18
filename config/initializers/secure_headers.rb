@@ -26,7 +26,7 @@ SecureHeaders::Configuration.default do |config|
   ]
 
   # curl https://www.google.com/supported_domains > config/csp/google_supported_domains.csv
-  google_supported = File.readlines(Rails.root.join("config/csp/google_supported_domains.csv"), chomp: true)
+  google_supported = File.readlines(Rails.root.join("config/csp/google_supported_domains.csv"), chomp: true).map { |domain| "*#{domain}" }
 
   google_adservice = %w[adservice.google.com adservice.google.co.uk]
   google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net stats.g.doubleclick.net]
