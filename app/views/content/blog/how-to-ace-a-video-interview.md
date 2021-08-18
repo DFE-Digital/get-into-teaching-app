@@ -1,6 +1,7 @@
 ---
 title: How to ace a video interview
 date: "2021-04-06"
+author: Anna Shirley
 images:
   anna_shirley:
     path: "media/images/content/blog/anna-shirley.jpg"
