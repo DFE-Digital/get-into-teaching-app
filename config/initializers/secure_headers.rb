@@ -28,20 +28,20 @@ SecureHeaders::Configuration.default do |config|
   # curl https://www.google.com/supported_domains > config/csp/google_supported_domains.csv
   google_supported = File.readlines(Rails.root.join("config/csp/google_supported_domains.csv"), chomp: true).map { |domain| "*#{domain}" }
 
-  google_adservice = %w[adservice.google.com adservice.google.co.uk]
+  google_adservice   = %w[adservice.google.com adservice.google.co.uk]
   google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net stats.g.doubleclick.net]
-  google_apis = %w[*.googleapis.com https://fonts.googleapis.com]
+  google_apis        = %w[*.googleapis.com https://fonts.googleapis.com]
 
-  facebook = %w[*.facebook.com]
-  govuk = %w[*.gov.uk www.gov.uk]
-  hotjar = %w[*.hotjar.com vc.hotjar.io wss://*.hotjar.com]
-  jquery = %w[code.jquery.com]
+  facebook  = %w[*.facebook.com]
+  govuk     = %w[*.gov.uk www.gov.uk]
+  hotjar    = %w[*.hotjar.com vc.hotjar.io wss://*.hotjar.com]
+  jquery    = %w[code.jquery.com]
   pinterest = %w[*.pinterest.com ct.pinterest.com]
-  scribble = %w[embed.scribblelive.com]
-  snapchat = %w[*.snapchat.com sc-static.net]
-  twitter = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
-  vwo = %w[*.visualwebsiteoptimizer.com, dev.visualwebsiteoptimizer.com]
-  youtube = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
+  scribble  = %w[embed.scribblelive.com]
+  snapchat  = %w[*.snapchat.com sc-static.net]
+  twitter   = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
+  vwo       = %w[*.visualwebsiteoptimizer.com, dev.visualwebsiteoptimizer.com]
+  youtube   = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
 
   quoted_none          = ["'none'"]
   quoted_unsafe_inline = ["'unsafe-inline'"]
