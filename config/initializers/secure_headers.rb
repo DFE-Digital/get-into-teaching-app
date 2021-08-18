@@ -43,10 +43,8 @@ SecureHeaders::Configuration.default do |config|
   vwo       = %w[*.visualwebsiteoptimizer.com dev.visualwebsiteoptimizer.com]
   youtube   = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
 
-  quoted_none          = ["'none'"]
   quoted_unsafe_inline = ["'unsafe-inline'"]
   quoted_unsafe_eval   = ["'unsafe-eval'"]
-  quoted_self          = ["'self'"]
   data                 = ["data:"]
   blob                 = ["blob:"]
 
@@ -55,20 +53,20 @@ SecureHeaders::Configuration.default do |config|
     upgrade_insecure_requests: !Rails.env.development?, # see https://www.w3.org/TR/upgrade-insecure-requests/
     report_uri: %w[/csp_reports],
 
-    default_src: quoted_none,
-    base_uri: quoted_self,
-    child_src: quoted_self.concat(youtube, pinterest, snapchat, hotjar),
-    connect_src: quoted_self.concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, vwo, facebook, tta_service_hosts),
-    font_src: quoted_self.concat(govuk, data, %w[fonts.gstatic.com]),
-    form_action: quoted_self.concat(snapchat, facebook, vwo, govuk),
-    frame_src: quoted_self.concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, vwo, google_analytics),
-    frame_ancestors: quoted_self,
-    img_src: quoted_self.concat(govuk, pinterest, facebook, vwo, youtube, twitter, google_adservice, google_apis, data, lid_pixels, %w[cx.atdmt.com linkbam.uk]),
-    manifest_src: quoted_self,
-    media_src: quoted_self,
-    script_src: quoted_self.concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, vwo, youtube),
-    style_src: quoted_self.concat(quoted_unsafe_inline, govuk, google_apis, google_supported),
-    worker_src: quoted_self.concat(vwo, blob),
+    default_src: %w['none'],
+    base_uri: ["'self'"],
+    child_src: ["'self'"].concat(youtube, pinterest, snapchat, hotjar),
+    connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, vwo, facebook, tta_service_hosts),
+    font_src: ["'self'"].concat(govuk, data, %w[fonts.gstatic.com]),
+    form_action: ["'self'"].concat(snapchat, facebook, vwo, govuk),
+    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, vwo, google_analytics),
+    frame_ancestors: ["'self'"],
+    img_src: ["'self'"].concat(govuk, pinterest, facebook, vwo, youtube, twitter, google_adservice, google_apis, data, lid_pixels, %w[cx.atdmt.com linkbam.uk]),
+    manifest_src: ["'self'"],
+    media_src: ["'self'"],
+    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, vwo, youtube),
+    style_src: ["'self'"].concat(quoted_unsafe_inline, govuk, google_apis, google_supported),
+    worker_src: ["'self'"].concat(vwo, blob),
   }
 
   if Rails.env.development?
