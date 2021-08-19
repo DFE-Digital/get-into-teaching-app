@@ -29,14 +29,14 @@ SecureHeaders::Configuration.default do |config|
   google_supported = File.readlines(Rails.root.join("config/csp/google_supported_domains.csv"), chomp: true).map { |domain| "*#{domain}" }
 
   google_adservice   = %w[adservice.google.com adservice.google.co.uk]
-  google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net stats.g.doubleclick.net]
+  google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net *.ad.doubleclick.net *.fls.doubleclick.net stats.g.doubleclick.net]
   google_apis        = %w[*.googleapis.com https://fonts.googleapis.com]
 
-  facebook  = %w[*.facebook.com]
+  facebook  = %w[*.facebook.com *.connect.facebook.net]
   govuk     = %w[*.gov.uk www.gov.uk]
   hotjar    = %w[*.hotjar.com vc.hotjar.io wss://*.hotjar.com]
   jquery    = %w[code.jquery.com]
-  pinterest = %w[*.pinterest.com ct.pinterest.com]
+  pinterest = %w[*.pinterest.com ct.pinterest.com *.s.pinimg.com]
   scribble  = %w[embed.scribblelive.com]
   snapchat  = %w[*.snapchat.com sc-static.net]
   twitter   = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
