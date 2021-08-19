@@ -17,6 +17,13 @@ describe "Redirects" do
         specify "redirects successfully" do
           expect(subject).to be 301
           expect(response).to redirect_to(to)
+
+          target = Nokogiri.parse(response.body).at_css("a")["href"].gsub(root_url, "/")
+
+          # skip events stuff and the privacy policy because they're pulled from the CRM
+          next if target =~ /event|privacy/
+
+          expect(get(target)).to be_in([200, 301, 302])
         end
       end
 
