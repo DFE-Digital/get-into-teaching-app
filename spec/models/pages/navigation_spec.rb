@@ -103,14 +103,27 @@ RSpec.describe Pages::Navigation do
       end
     end
 
-    context "when the navigation title is overridden" do
-      let(:custom_navigation_title) { "January sales!" }
-      let(:front_matter) { { title: title, navigation: navigation, menu: menu, navigation_title: custom_navigation_title } }
+    context "when the title is overridden" do
+      context "when a 'navigation_title' is set" do
+        let(:custom_navigation_title) { "January sales!" }
+        let(:front_matter) { { title: title, navigation: navigation, menu: menu, navigation_title: custom_navigation_title } }
 
-      subject { described_class.new(outer_navigation, path, front_matter) }
+        subject { described_class.new(outer_navigation, path, front_matter) }
 
-      specify "assigns the custom path to :path attr" do
-        expect(subject.title).to eql(custom_navigation_title)
+        specify "assigns the custom path to :path attr" do
+          expect(subject.title).to eql(custom_navigation_title)
+        end
+      end
+
+      context "when the page 'heading' has been set" do
+        let(:custom_heading) { "Sale on nowheading" }
+        let(:front_matter) { { title: title, navigation: navigation, menu: menu, heading: custom_heading } }
+
+        subject { described_class.new(outer_navigation, path, front_matter) }
+
+        specify "assigns the custom path to :path attr" do
+          expect(subject.title).to eql(custom_heading)
+        end
       end
     end
 
@@ -165,6 +178,32 @@ RSpec.describe Pages::Navigation do
       specify "contains only the nodes that start with the same path" do
         expect(subject.children.map(&:path)).to all(start_with("/page-five"))
         expect(subject.children.map(&:rank)).to all(be_in(5..6))
+      end
+    end
+
+    describe "#extract_title" do
+      [
+        OpenStruct.new(
+          description: "only a title is provided",
+          front_matter: { title: "Just a title" },
+          expected_key: :title,
+        ),
+        OpenStruct.new(
+          description: "a heading and title are provided",
+          front_matter: { heading: "Heading", title: "Unused title" },
+          expected_key: :heading,
+        ),
+        OpenStruct.new(
+          description: "a navigation title, heading and title are provided",
+          front_matter: { navigation_title: "Navigation title", heading: "Heading", title: "Unused title" },
+          expected_key: :navigation_title,
+        ),
+      ].each do |options|
+        context "when #{options.description}" do
+          specify "the title matches the frontmatter's #{options.expected_key}" do
+            expect(subject.send(:extract_title, options.front_matter)).to eql(options.front_matter[options.expected_key])
+          end
+        end
       end
     end
   end

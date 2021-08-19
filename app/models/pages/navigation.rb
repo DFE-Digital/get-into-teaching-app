@@ -34,7 +34,7 @@ module Pages
         @path = front_matter[:navigation_path] || path
 
         front_matter.tap do |fm|
-          @title = fm[:navigation_title] || fm[:title] || (Rails.logger.warn("page #{path} has no title") && nil)
+          @title = extract_title(fm) || (Rails.logger.warn("page #{path} has no title") && nil)
           @rank  = fm.fetch(:navigation, nil)
           @menu  = fm.fetch(:menu, false)
         end
@@ -50,6 +50,12 @@ module Pages
 
       def menu?
         @menu
+      end
+
+    private
+
+      def extract_title(front_matter)
+        front_matter.values_at(:navigation_title, :heading, :title).find(&:presence)
       end
     end
   end
