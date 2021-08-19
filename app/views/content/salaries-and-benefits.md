@@ -159,6 +159,7 @@ Annual salary ranges for headteachers are:
 | Greater London                | £43,356 | £125,098  |
 | Rest of England and Wales     | £47,195 | £117,197  |
 
+
 ### Other payments
 
 You might also get extra payments for taking on extra responsibilities.
@@ -173,3 +174,15 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 | -------       | -----   | -----  |
 | TLR 1         | £8,291 | £14,030 |
 | TLR 2         | £2,873 | £7,017  |
+
+### Unqualified teacher pay
+
+Many schools in England require teachers to have 'qualified teacher status' (QTS). If you do not have this, you can work
+in some schools as an unqualified teacher.
+
+Annual salary ranges for unqualified teachers are:
+
+| Area                          | Minimum | Maximum   |
+| -------                       | -----   | -----     |
+| Greater London                | £19,363 | £33,410   |
+| Rest of England and Wales     | £18,169 | £28,735   |
