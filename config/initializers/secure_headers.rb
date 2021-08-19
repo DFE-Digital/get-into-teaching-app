@@ -36,7 +36,7 @@ SecureHeaders::Configuration.default do |config|
   govuk     = %w[*.gov.uk www.gov.uk]
   hotjar    = %w[*.hotjar.com vc.hotjar.io wss://*.hotjar.com]
   jquery    = %w[code.jquery.com]
-  pinterest = %w[*.pinterest.com ct.pinterest.com *.s.pinimg.com]
+  pinterest = %w[*.pinterest.com ct.pinterest.com *.pinimg.com]
   scribble  = %w[embed.scribblelive.com]
   snapchat  = %w[*.snapchat.com sc-static.net]
   twitter   = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
