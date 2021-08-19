@@ -32,7 +32,7 @@ SecureHeaders::Configuration.default do |config|
   google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net *.ad.doubleclick.net *.fls.doubleclick.net stats.g.doubleclick.net]
   google_apis        = %w[*.googleapis.com https://fonts.googleapis.com]
 
-  facebook  = %w[*.facebook.com *.connect.facebook.net]
+  facebook  = %w[*.facebook.com *.facebook.net *.connect.facebook.net]
   govuk     = %w[*.gov.uk www.gov.uk]
   hotjar    = %w[*.hotjar.com vc.hotjar.io wss://*.hotjar.com]
   jquery    = %w[code.jquery.com]
