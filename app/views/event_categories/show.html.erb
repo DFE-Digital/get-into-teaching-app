@@ -12,7 +12,7 @@
 <% end %>
 
 <% if @events.any? %>
-<section class="types-of-event">
+<section id="event-category-list" class="types-of-event">
   <div class="events-featured">
     <div class="events-featured__list">
       <%= render partial: "events/event", collection: @events %>
@@ -21,7 +21,7 @@
 </section>
 
 <div class="event-pagination">
-  <%= paginate @events %>
+  <%= paginate @events, params: { anchor: "event-category-list" } %>
 </div>
 <% else %>
   <%= render(Events::NoResultsComponent.new) do %>

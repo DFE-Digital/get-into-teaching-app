@@ -281,4 +281,10 @@ describe EventsHelper, type: "helper" do
       expect(ttt_event_type_id).to eq GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
     end
   end
+
+  describe "#event_list_id" do
+    it "paramaterizes the name and adds a '-list' suffix" do
+      expect(event_list_id("plenty of events")).to eql("plenty-of-events-list")
+    end
+  end
 end
