@@ -230,7 +230,7 @@
         margin-right: -58px;
 
         @include mq($until: tablet) {
-          align-self: end;
+          align-self: flex-end;
         }
       }
     }
