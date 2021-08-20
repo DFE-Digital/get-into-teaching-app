@@ -74,6 +74,6 @@ Speak to an adviser on [0300 303 1877](tel:0300 303 1877) or by emailing feadvic
 
 Search for [further education jobs](https://www.aocjobs.com/jobs/).
 
-Visit [Further Education Advice](https://www.feadvice.org.uk/).
+Visit the [Teach in Further Education website](https://www.teach-in-further-education.campaign.gov.uk/).
 
 Hear more about further education on the Education and Training Foundation [YouTube channel](https://www.youtube.com/channel/UCEKM_NnfNB-XPosOENe9uJg).
