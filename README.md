@@ -6,6 +6,13 @@
 - NodeJS 12.22.x
 - Yarn 1.22.x
 
+## Status
+
+[![View performance data on Skylight](https://badges.skylight.io/status/cCXe4O12iXtO.svg?token=dmQT0j0nuvDKRWL0RSr5ZMr-ARd25yfRzTePxnMsLYU)](https://www.skylight.io/app/applications/cCXe4O12iXtO)
+[![View traffic data on Skylight](https://badges.skylight.io/rpm/cCXe4O12iXtO.svg?token=dmQT0j0nuvDKRWL0RSr5ZMr-ARd25yfRzTePxnMsLYU)](https://www.skylight.io/app/applications/cCXe4O12iXtO)
+[![View typical response times on Skylight](https://badges.skylight.io/typical/cCXe4O12iXtO.svg?token=dmQT0j0nuvDKRWL0RSr5ZMr-ARd25yfRzTePxnMsLYU)](https://www.skylight.io/app/applications/cCXe4O12iXtO)
+[![View problem response times on Skylight](https://badges.skylight.io/problem/cCXe4O12iXtO.svg?token=dmQT0j0nuvDKRWL0RSr5ZMr-ARd25yfRzTePxnMsLYU)](https://www.skylight.io/app/applications/cCXe4O12iXtO)
+
 ## Mac Setup (as of Catalina 11-07-20)
 
 1. install homebrew, this will ask to install the xcode command line tools if you dont have it already
