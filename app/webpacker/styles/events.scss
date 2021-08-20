@@ -216,6 +216,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mq($until: tablet) {
+          flex-direction: column-reverse;
+        }
       }
 
       &__logo {
@@ -224,6 +228,10 @@
         left: auto;
         transform: scale(.7);
         margin-right: -58px;
+
+        @include mq($until: tablet) {
+          align-self: end;
+        }
       }
     }
   }
