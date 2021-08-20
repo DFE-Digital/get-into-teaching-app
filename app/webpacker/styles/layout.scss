@@ -1,9 +1,15 @@
 %content-width-limiter-shared {
+  width: 100%;
   max-width: $page-max-width;
   margin: auto;
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-items: flex-start;
+  min-height: 100vh;
+
   font-family: $git-font-family;
 
   &.govuk-body {
@@ -37,10 +43,12 @@ main,
 
 // new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
 
-$content-max-width: 1000px;
+$content-max-width: 1200px;
 
 main {
   margin-bottom: 3em;
+
+  flex-grow: 1;
 
   @include mq($from: tablet) {
     margin-bottom: 4em;
