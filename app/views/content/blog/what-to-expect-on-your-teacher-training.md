@@ -23,7 +23,7 @@ $jan_ashbridge$
 
 _Jan Ashbridge is a Principal Lecturer with responsibility for primary PGCE at the University of Cumbria. She has particular expertise in early literacy and systematic synthetic phonics._
 
-A university-based PGCE year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. It is also a busy one!
+A university-based PGCE year is an exciting and exhilarating one — a real roller coaster of an experience. It is also a busy one!
 
 ## How is the course delivered?
 
