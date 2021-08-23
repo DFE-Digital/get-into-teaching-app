@@ -1,5 +1,7 @@
 .breadcrumbs {
-  min-width: $content-max-width;
+  width: 100%;
+  max-width: $page-max-width;
+  margin: auto;
 
   .breadcrumb {
     ol {
