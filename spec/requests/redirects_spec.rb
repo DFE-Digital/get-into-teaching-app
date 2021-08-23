@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Redirects" do
+describe "Redirects", content: true do
   let(:query_string) { "abc=def&ghi=jkl" }
 
   redirects = YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects")
@@ -17,6 +17,13 @@ describe "Redirects" do
         specify "redirects successfully" do
           expect(subject).to be 301
           expect(response).to redirect_to(to)
+
+          target = Nokogiri.parse(response.body).at_css("a")["href"].gsub(root_url, "/")
+
+          # skip events stuff and the privacy policy because they're pulled from the CRM
+          next if target =~ /event|privacy/
+
+          expect(get(target)).to be_in([200, 301, 302])
         end
       end
 
