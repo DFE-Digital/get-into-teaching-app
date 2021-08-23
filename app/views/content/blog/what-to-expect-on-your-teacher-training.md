@@ -3,9 +3,9 @@ title: What to expect on your teacher training
 date: "2020-03-06"
 author: Jan Ashbridge
 images:
-  jan_ashbridge:
-    path: "media/images/content/blog/jan-ashbridge.jpg"
-    alt: "A photograph of teacher training programme lead, Jan Ashbridge"
+  seminar_room:
+    path: "media/images/content/blog/seminar-room.jpg"
+    alt: "A photograph of a seminar room with students sat around a table"
 description: |-
   A university-based PGCE year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. Find out more about what you can expect on your teacher training course.
     
@@ -19,7 +19,7 @@ tags:
   - teacher training advisers
 ---
 
-$jan_ashbridge$
+$seminar_room$
 
 _Jan Ashbridge is a Principal Lecturer with responsibility for primary PGCE at the University of Cumbria. She has particular expertise in early literacy and systematic synthetic phonics._
 
