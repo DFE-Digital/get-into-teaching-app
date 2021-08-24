@@ -14,7 +14,8 @@
       <%= image_pack_tag("content/event-signup/birmingham-event-1.jpg") %>
 
       <div class="event-info">
-        <%= render Events::EventBoxComponent.new(@event) %>
+        <%= render Events::DesktopSignupInfo.new(@event) %>
+        <%= render Events::MobileSignupInfo.new(@event) %>
       </div>
 
       <section class="feature registration">

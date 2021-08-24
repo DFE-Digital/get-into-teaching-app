@@ -1,0 +1,39 @@
+<div class="event-box signup-info desktop">
+  <p class="registering-for">Registering for:</p>
+
+  <header class="event-box__header">
+    <h4><%= title %></h4>
+  </header>
+
+  <div class="event-box__datetime">
+    <%= datetime %>
+  </div>
+
+  <%= divider %>
+
+  <footer class="event-box__footer">
+    <% if show_category? %>
+      <div class="event-box__footer__item">
+        <div class="event-box__footer__icon-wrapper">
+          <%= event_type_icon %>
+        </div>
+        <div class="event-box__footer__meta">
+          <%= type_name %>
+        </div>
+      </div>
+    <% end %>
+
+    <% if online? %>
+      <div class="event-box__footer__item">
+        <%= online_icon %>
+        <div class="event-box__footer__meta">
+          <%= online_text %>
+        </div>
+      </div>
+    <% end %>
+  </footer>
+
+  <%= divider_thin %>
+
+  <p>Your attendance will be added to a register and an email will be sent.</p>
+</div>

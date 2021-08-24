@@ -57,6 +57,10 @@
     height: 8px;
     background-color: $blue;
     margin: 6px 0;
+
+    &.thin {
+      height: 2px;
+    }
   }
 
   &__divider--train-to-teach-event {
