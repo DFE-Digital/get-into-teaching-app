@@ -11,7 +11,7 @@ class EventStepsController < ApplicationController
   before_action :set_step_page_title, only: [:show]
   before_action :set_completed_page_title, only: [:completed]
 
-  layout "registration"
+  layout :resolve_layout
 
 protected
 
@@ -74,5 +74,11 @@ private
 
   def set_is_walk_in
     wizard_store[:is_walk_in] = true if params.key?(:walk_in)
+  end
+
+  def resolve_layout
+    return "registration_with_image_above" if @current_step.instance_of?(Events::Steps::PersonalDetails)
+
+    "registration"
   end
 end
