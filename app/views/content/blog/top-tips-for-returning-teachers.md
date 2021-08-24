@@ -19,7 +19,15 @@ If you’re thinking of returning to the classroom, now could be a great time. A
 
 ## Not sure where to start? Watch our helpful guide
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_oQ4DTXkGHk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
+  <iframe 
+    class="lazyload"
+    data-src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen
+  ></iframe>
+</div>
 
 > Having a designated person to talk to and to check in with is a huge help.
 >
@@ -43,7 +51,15 @@ If you hold [Qualified Teacher Status](https://www.gov.uk/guidance/qualified-tea
 
 From helping you to brush up on your subject knowledge to preparing for interviews, our advisers will be with you every step of the way and help you get back in the classroom.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/2NrLm_XId4k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
+  <iframe 
+    class="lazyload"
+    data-src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen
+  ></iframe>
+</div>
 
 > Kathryn [RTTA] has been central in my engagement in the programme. She made it incredibly easy to find all the information needed and is always on hand with first class advice.
 >
