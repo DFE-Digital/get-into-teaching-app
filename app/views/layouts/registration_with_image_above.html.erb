@@ -10,7 +10,14 @@
     <%= render HeaderComponent.new %>
 
     <main role="main" id="main-content" class="registration-with-image-above">
-      <section class="feature registration container">
+
+      <%= image_pack_tag("content/event-signup/birmingham-event-1.jpg") %>
+
+      <div class="event-info">
+        <%= render Events::EventBoxComponent.new(@event) %>
+      </div>
+
+      <section class="feature registration">
         <%= yield %>
       </section>
     </main>
