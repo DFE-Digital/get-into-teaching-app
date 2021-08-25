@@ -29,6 +29,10 @@ Rails/LexicallyScopedActionFilter:
   Exclude:
     - 'app/controllers/**/*steps_controller.rb'
 
+Naming/MethodParameterName:
+  Exclude:
+    - 'app/components/arrow_component.rb'
+
 Rails/UnknownEnv:
   Environments:
     - development
