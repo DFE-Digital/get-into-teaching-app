@@ -30,7 +30,7 @@
     </div>
   </h1>
 
-  <div class="arrow-container">
+  <div class="arrow-container mobile">
     <%=
     render ArrowComponent.new(
         width: 80,
@@ -42,6 +42,38 @@
         cx: -0.1,
         cy: 0.35,
         arrow_size: 0.065
+      )
+    %>
+  </div>
+
+  <div class="arrow-container top desktop">
+    <%=
+    render ArrowComponent.new(
+        width: 300,
+        height: 300,
+        x1: 1,
+        y1: 1,
+        x2: 0.1,
+        y2: 0.1,
+        cx: 0.9,
+        cy: 0.25,
+        arrow_size: 0.03
+      )
+    %>
+  </div>
+
+  <div class="arrow-container bottom desktop">
+    <%=
+    render ArrowComponent.new(
+        width: 300,
+        height: 300,
+        x1: 1,
+        y1: 0,
+        x2: 0.3,
+        y2: 1,
+        cx: 0.1,
+        cy: 0.1,
+        arrow_size: 0.03
       )
     %>
   </div>

@@ -3,7 +3,7 @@
     <span>02</span>
   </div>
 
-  <div class="arrow-container">
+  <div class="arrow-container mobile">
     <%=
       render ArrowComponent.new(
         width: 150,
@@ -15,6 +15,22 @@
         cx: 0.3,
         cy: 0.6,
         arrow_size: 0.1
+      )
+    %>
+  </div>
+
+  <div class="arrow-container desktop">
+    <%=
+      render ArrowComponent.new(
+        width: 350,
+        height: 100,
+        x1: 0,
+        y1: 0,
+        x2: 0.9,
+        y2: 0.8,
+        cx: 0.3,
+        cy: 0.88,
+        arrow_size: 0.055
       )
     %>
   </div>
