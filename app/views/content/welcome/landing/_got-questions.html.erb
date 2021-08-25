@@ -1,4 +1,20 @@
 <section class="landing got-questions numbered">
+  <div class="arrow-container top">
+    <%=
+      render ArrowComponent.new(
+        width: 150,
+        height: 200,
+        x1: 0,
+        y1: 0,
+        x2: 0.9,
+        y2: 0.9,
+        cx: 0.7,
+        cy: 0.2,
+        arrow_size: 0.06
+      )
+    %>
+  </div>
+
   <%= image_pack_tag("media/images/content/welcome-guide/girl-with-raised-hand.jpg") %>
 
   <div class="section-number">
@@ -39,5 +55,21 @@
         not alone, last year thousands of students like you went on to become teachers.
       </p>
     </div>
+  </div>
+
+  <div class="arrow-container bottom">
+    <%=
+      render ArrowComponent.new(
+        width: 200,
+        height: 200,
+        x1: 1,
+        y1: 0,
+        x2: 0.1,
+        y2: 0.9,
+        cx: 0.3,
+        cy: 0.3,
+        arrow_size: 0.065
+      )
+    %>
   </div>
 </section>

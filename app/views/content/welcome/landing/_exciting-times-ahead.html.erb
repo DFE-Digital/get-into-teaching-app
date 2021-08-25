@@ -54,5 +54,20 @@
     <p>
       Good luck <span class="yellow">Simon!</span> You've got this.
     </p>
+    <div class="arrow-container">
+      <%=
+        render ArrowComponent.new(
+          width: 200,
+          height: 120,
+          x1: 1,
+          y1: 1,
+          x2: 0.1,
+          y2: 0.1,
+          cx: 0.3,
+          cy: 0.9,
+          arrow_size: 0.1
+        )
+      %>
+    </div>
   </div>
 </div>

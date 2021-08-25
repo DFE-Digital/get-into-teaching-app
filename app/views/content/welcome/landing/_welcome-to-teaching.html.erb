@@ -30,4 +30,19 @@
     </div>
   </h1>
 
+  <div class="arrow-container">
+    <%=
+    render ArrowComponent.new(
+        width: 80,
+        height: 200,
+        x1: 0.5,
+        y1: 0,
+        x2: 0.5,
+        y2: 1,
+        cx: -0.1,
+        cy: 0.35,
+        arrow_size: 0.065
+      )
+    %>
+  </div>
 </header>

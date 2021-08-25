@@ -3,6 +3,22 @@
     <span>02</span>
   </div>
 
+  <div class="arrow-container">
+    <%=
+      render ArrowComponent.new(
+        width: 150,
+        height: 100,
+        x1: 0,
+        y1: 0,
+        x2: 0.9,
+        y2: 0.9,
+        cx: 0.3,
+        cy: 0.6,
+        arrow_size: 0.1
+      )
+    %>
+  </div>
+
   <%= image_pack_tag("media/images/content/welcome-guide/dimitra-desert-crop.jpg") %>
 
   <div class="text">
