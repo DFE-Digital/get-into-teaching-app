@@ -13,25 +13,25 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to_not have_text "Tell us more about you so that you only get emails relevant to your circumstances."
 
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm a first year student"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
     choose "I’m not sure and finding out more"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Which subject do you want to teach"
     select "Maths"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "events in your area"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
     click_on "Complete sign up"
@@ -55,23 +55,23 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm a first year student"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
     choose "I’m not sure and finding out more"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Which subject do you want to teach"
     select "Maths"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "events in your area"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
     click_on "Complete sign up"
@@ -102,30 +102,30 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Verify your email address"
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
     expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
       response.degree_status_id.to_s,
     )
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
     expect(find("[name=\"mailing_list_steps_teacher_training[consideration_journey_stage_id]\"][checked]").value).to eq(
       response.consideration_journey_stage_id.to_s,
     )
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Which subject do you want to teach"
     expect(page).to have_select(
       "Which subject do you want to teach?",
       selected: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.key(response.preferred_teaching_subject_id),
     )
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
     click_on "Complete sign up"
@@ -153,11 +153,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Verify your email address"
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "654321"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Please enter the latest verification code"
 
@@ -165,7 +165,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "We've sent you another email."
 
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
   end
@@ -184,14 +184,14 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Verify your email address"
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "You’ve already signed up"
-    expect(page).not_to have_button("Next Step")
+    expect(page).not_to have_button("Next step")
   end
 
   scenario "Full journey as an existing candidate that has already subscribed to a teacher training adviser" do
@@ -208,11 +208,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Verify your email address"
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
   end
@@ -237,21 +237,21 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
       response.degree_status_id.to_s,
     )
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
     expect(find("[name=\"mailing_list_steps_teacher_training[consideration_journey_stage_id]\"][checked]").value).to eq(
       response.consideration_journey_stage_id.to_s,
     )
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Which subject do you want to teach"
     select "Maths"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "events in your area"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
     check "Yes"
@@ -288,11 +288,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Verify your email address"
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "You’ve already signed up"
     click_link("Back")
@@ -305,7 +305,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step(email: "test2@user.com")
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
   end
@@ -321,7 +321,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_title(expected_title)
 
     # try incorrectly first so we can check error state
-    click_on "Next Step"
+    click_on "Next step"
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Enter your first name"
     expect(page).to have_text "Enter your last name"

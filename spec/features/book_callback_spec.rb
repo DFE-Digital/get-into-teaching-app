@@ -40,21 +40,21 @@ RSpec.feature "Book a callback", type: :feature do
 
     expect(page).to have_text "Book a callback"
     fill_in_personal_details_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Verify your email address"
     fill_in "Check your email and enter the verification code sent to email@address.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Choose a time for your callback"
     expect(find_field("Phone number").value).to eq(response.address_telephone)
     # Select time in local time zone (London)
     select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Tell us what you’d like to talk to us about"
     select "Routes into teaching", from: "Choose an option"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
     check "Yes"
@@ -84,17 +84,17 @@ RSpec.feature "Book a callback", type: :feature do
 
     expect(page).to have_text "Book a callback"
 
-    click_on "Next Step"
+    click_on "Next step"
     expect(page).to have_text "There is a problem"
     expect(page).to have_text "Enter your first name"
     expect(page).to have_text "Enter your last name"
     expect(page).to have_text "Enter your full email address"
     fill_in_personal_details_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Verify your email address"
     fill_in "Check your email and enter the verification code sent to email@address.com", with: "654321"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Please enter the latest verification code"
 
@@ -102,24 +102,24 @@ RSpec.feature "Book a callback", type: :feature do
     expect(page).to have_text "We've sent you another email."
 
     fill_in "Check your email and enter the verification code sent to email@address.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Choose a time for your callback"
-    click_on "Next Step"
+    click_on "Next step"
     expect(page).to have_text "Enter your telephone number"
     fill_in "Phone number", with: "12"
-    click_on "Next Step"
+    click_on "Next step"
     expect(page).to have_text "Enter a valid phone number"
     fill_in "Phone number", with: "123456789"
     # Select time in local time zone (London)
     select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Tell us what you’d like to talk to us about"
-    click_on "Next Step"
+    click_on "Next step"
     expect(page).to have_text "Choose an option"
     select "Routes into teaching", from: "Choose an option"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
     click_on "Book your callback"
@@ -146,18 +146,18 @@ RSpec.feature "Book a callback", type: :feature do
 
     expect(page).to have_text "Book a callback"
     fill_in_personal_details_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "We didn’t recognise the first name, last name or email address you entered"
 
     click_link "Try entering your details again"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "We didn’t recognise the first name, last name or email address you entered"
     expect(page).to have_text "Try entering your details again"
 
     click_link "Try entering your details again"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "We didn’t recognise your first name, last name or email address"
     expect(page).to have_text "Once you’re registered, you can try again"
@@ -166,7 +166,7 @@ RSpec.feature "Book a callback", type: :feature do
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError.new(code: 500))
 
     visit callbacks_steps_path
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Sorry, a technical problem means we can’t book your callback right now."
   end
