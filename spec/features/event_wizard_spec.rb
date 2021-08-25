@@ -30,10 +30,10 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
     fill_in_personal_details_step
-    click_on "Next Step"
+    click_on "Next step"
 
     fill_in "Phone number (optional)", with: "01234567890"
-    click_on "Next Step"
+    click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
       choose "No"
@@ -59,10 +59,10 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
     fill_in_personal_details_step
-    click_on "Next Step"
+    click_on "Next step"
 
     fill_in "Phone number (optional)", with: "01234567890"
-    click_on "Next Step"
+    click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
       choose "Yes"
@@ -97,10 +97,10 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
     fill_in_personal_details_step
-    click_on "Next Step"
+    click_on "Next step"
 
     fill_in "Phone number (optional)", with: "01234567890"
-    click_on "Next Step"
+    click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
       choose "No"
@@ -138,11 +138,11 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
     fill_in_personal_details_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Check your email and enter the verification code sent to test@user.com"
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Are you over 16 and do you agree"
     expect(page).to have_text "Would you like to receive email updates"
@@ -193,11 +193,11 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
     fill_in_personal_details_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Check your email and enter the verification code sent to test@user.com"
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "654321"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Please enter the latest verification code"
 
@@ -205,7 +205,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "We've sent you another email."
 
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text("Phone number (optional)")
   end
@@ -227,14 +227,14 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
     fill_in_personal_details_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Check your email and enter the verification code sent to test@user.com"
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text("Phone number (optional)")
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text("Are you over 16 and do you agree")
     expect(page).not_to have_text("Would you like to receive email updates")
@@ -273,14 +273,14 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
     fill_in_personal_details_step
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text "Check your email and enter the verification code sent to test@user.com"
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text("Phone number (optional)")
-    click_on "Next Step"
+    click_on "Next step"
 
     expect(page).to have_text("Are you over 16 and do you agree")
     expect(page).not_to have_text("Would you like to receive email updates")

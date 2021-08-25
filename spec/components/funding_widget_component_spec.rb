@@ -48,8 +48,8 @@ RSpec.describe FundingWidgetComponent, type: :component do
         expect(page).to have_css("h3", text: "Biology - Secondary")
       end
 
-      it "has the 'Next Steps' info" do
-        expect(page).to have_css("h3", text: "Next Steps")
+      it "has the 'Next steps' info" do
+        expect(page).to have_css("h3", text: "Next steps")
       end
 
       it "has additional info for extra support" do
