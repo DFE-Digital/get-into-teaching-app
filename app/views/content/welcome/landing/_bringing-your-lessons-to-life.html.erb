@@ -4,6 +4,38 @@
     <span>03</span>
   </div>
 
+  <div class="arrow-container mobile">
+    <%=
+      render ArrowComponent.new(
+        width: 200,
+        height: 200,
+        x1: 1,
+        y1: 0,
+        x2: 0.1,
+        y2: 1,
+        cx: 0.3,
+        cy: 0.1,
+        arrow_size: 0.055
+      )
+    %>
+  </div>
+
+  <div class="arrow-container desktop">
+    <%=
+      render ArrowComponent.new(
+        width: 320,
+        height: 230,
+        x1: 1,
+        y1: 0,
+        x2: 0.1,
+        y2: 1,
+        cx: 0.1,
+        cy: 0,
+        arrow_size: 0.045
+      )
+    %>
+  </div>
+
   <div class="text">
     <h2>
       <span class="purple no-wrap">

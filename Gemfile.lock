@@ -16,6 +16,13 @@ GIT
       get_into_teaching_api_client
 
 GIT
+  remote: https://github.com/bfoz/geometry.git
+  revision: 3054ccba59f184c172be52a6f0b7cf4a33f617a5
+  ref: 3054ccb
+  specs:
+    geometry (6.5)
+
+GIT
   remote: https://github.com/waiting-for-dev/front_matter_parser.git
   revision: 09a839ab9c04237df203af22c1c84f2a45a10ab6
   specs:
@@ -414,6 +421,7 @@ GEM
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
     unicode-display_width (1.7.0)
+    victor (0.3.3)
     view_component (2.36.0)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
@@ -461,6 +469,7 @@ DEPENDENCIES
   faraday_middleware
   foreman
   front_matter_parser!
+  geometry!
   get_into_teaching_api_client_faraday!
   google-api-client (>= 0.53.0)
   govuk_design_system_formbuilder (>= 2.7.2)
@@ -496,6 +505,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   text
   tzinfo-data
+  victor
   view_component (~> 2.36.0)
   web-console (>= 4.1.0)
   webmock (>= 3.12.2)

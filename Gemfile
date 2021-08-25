@@ -69,6 +69,10 @@ gem "matrix", ">= 0.4.2"
 gem "observer", ">= 0.1.0"
 gem "rexml", ">= 3.2.5"
 
+# Drawing curved arrow SVGs
+gem "geometry", github: "bfoz/geometry", ref: "3054ccb"
+gem "victor"
+
 # Ignore cloudfront IPs when getting customer IP address
 gem "actionpack-cloudfront", ">= 1.1.0"
 
