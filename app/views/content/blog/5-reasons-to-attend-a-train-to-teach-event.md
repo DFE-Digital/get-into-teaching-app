@@ -23,7 +23,7 @@ tags:
 If you’re interested in training to teach but not sure on your next steps, then our popular Train to Teach events are for you. Whether you’re ready to apply or it’s just an idea, here are five reasons why a Train to Teach event can help you on your journey to the classroom.
 
 ## 1. Save some time
-A Train to Teach event offers you a one stop shop of information and support.  There are a number of different zones you can visit where our expert advisers will help you understand the qualifications you need and the range of different ways you can train.  
+A Train to Teach event offers you a one-stop shop of information and support.  There are a number of different zones you can visit where our expert advisers will help you understand the qualifications you need and the range of different ways you can train.  
 
 Whether you’ve recently graduated or you’re looking to change your career, in as little as two hours you will be able to gain clarity and confidence in your steps to becoming a teacher.
 
