@@ -33,7 +33,7 @@ We understand that everyone’s journey into the classroom is different and your
 At a Train to Teach event we can answer all your questions and maybe some you didn’t know you had!  
 
 ## 3. Make connections
-A Train to Teach event is a great way of making new connections.   You can meet like-minded individuals on their teaching journey and stay in touch with each other through one of our Facebook groups – just search for the 'Aspiring Teacher Forum' or 'Career Change to Teaching' group. 
+A Train to Teach event is a great way of making new connections. You can meet like-minded individuals on their teaching journey and stay in touch with each other through our [Aspiring Teacher Forum](https://www.facebook.com/groups/1357146377672255) or [Career Change to Teaching](https://www.facebook.com/groups/CareerChangetoTeaching) Facebook groups. 
 
 You can also speak to teacher training providers for advice on how to find the right course for you, as well as meeting potential future course leaders or employers. These connections could help you in your journey to a rewarding career in teaching.
 
