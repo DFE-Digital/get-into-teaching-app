@@ -92,7 +92,7 @@ This is part of the Department for Education’s early career framework.
 
 The support includes:
 
-* in your first year, 10% paid time away from classroom teaching to focus on learning (and 5% in your second year)
+* paid time away from the classroom teaching to focus on learning
 * access to a range of high-quality training
 * a mentor who will give you guidance and support
 
