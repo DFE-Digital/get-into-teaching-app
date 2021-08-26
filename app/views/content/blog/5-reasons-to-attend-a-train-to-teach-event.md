@@ -20,6 +20,9 @@ tags:
   - train to teach events
   - applications
 ---
+
+$train_to_teach$
+
 If you’re interested in training to teach but not sure on your next steps, then our popular Train to Teach events are for you. Whether you’re ready to apply or it’s just an idea, here are five reasons why a Train to Teach event can help you on your journey to the classroom.
 
 ## 1. Save some time
