@@ -4,7 +4,7 @@
   grid-auto-rows: auto;
 
   @include mq($from: desktop) {
-    grid-template-rows: 12em 6em min-content;
+    grid-template-rows: 14em 4em min-content;
 
     $right-center-col: ($content-max-width / 3);
     $left-center-col: $right-center-col * 2;
