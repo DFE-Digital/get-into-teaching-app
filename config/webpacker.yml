@@ -90,5 +90,8 @@ production:
   # Extract and emit a css file
   extract_css: true
 
+  # Output path
+  public_output_path: "packs/v1"
+
   # Cache manifest.json for performance
   cache_manifest: true
