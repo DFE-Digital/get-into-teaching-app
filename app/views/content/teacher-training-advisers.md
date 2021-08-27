@@ -67,7 +67,15 @@ Our advisers can help you at any time, even if you're a year or more away from a
 
 ## Meet Emma, a teacher training adviser
 
-<iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/ZaGL8c4FkLA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
+  <iframe 
+    class="lazyload"
+    data-src="https://www.youtube-nocookie.com/embed/ZaGL8c4FkLA" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen
+  ></iframe>
+</div>
 
 ## Helping you decide if teaching is right for you
 
@@ -79,7 +87,15 @@ Your adviser can help you navigate your path into teaching, and make sure you ge
 
 ## Meet Simon, a teacher training adviser
 
-<iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/T9Bhcaa6LJ4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
+  <iframe 
+    class="lazyload"
+    data-src="https://www.youtube-nocookie.com/embed/T9Bhcaa6LJ4" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen
+  ></iframe>
+</div>
 
 ## Already applied and been unsuccessful?
 
