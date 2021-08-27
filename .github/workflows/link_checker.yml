@@ -28,14 +28,10 @@ jobs:
            keyvault: ${{ secrets.KEY_VAULT}}
            secrets: 'SLACK-WEBHOOK'
 
-      - name: Determine latest master build
-        id: sha
-        run: echo ::set-output name=short::$(cat .git/refs/heads/master | cut -c -7)
-
       - name: Check for broken links
         run: |
           docker run -t --rm -e RAILS_ENV=test \
-            ${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }} \
+            ${{ env.DOCKER_REPOSITORY }}:master \
             rspec --format documentation -t onschedule spec/features/external_links_spec.rb
 
       - name: Slack Notification
