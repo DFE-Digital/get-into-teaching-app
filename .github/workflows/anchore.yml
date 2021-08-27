@@ -28,7 +28,7 @@ jobs:
       - name: Scan image
         uses: anchore/scan-action@v2.0.4
         with:
-          image: ${{needs.build.outputs.DOCKER_IMAGE}}
+          image: ${{ env.DOCKER_REPOSITORY }}:master
           fail-build: false
           severity-cutoff: high
           acs-report-enable: true
@@ -41,4 +41,14 @@ jobs:
 
       - name: Run Brakeman static security scanner
         run: |-
-          docker run -t --rm -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}}  brakeman --no-pager
+          docker run -t --rm -e RAILS_ENV=test ${{ env.DOCKER_REPOSITORY }}:master brakeman --no-pager
+      
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_ERROR}}
+          SLACK_TITLE: Failure with Nightly Anchore Security Scan
+          SLACK_MESSAGE: Failure Nightly Anchore Security Scan for ${{env.APPLICATION}}
+          SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
+          
