@@ -1,5 +1,4 @@
 import { Controller } from 'stimulus';
-import { DateTime } from 'luxon';
 
 export default class extends Controller {
   static targets = ['name', 'startAt', 'partialUrl', 'errorMessage'];
@@ -32,7 +31,12 @@ export default class extends Controller {
   }
 
   formatDate(dateTimeString) {
-    return DateTime.fromJSDate(new Date(dateTimeString)).toFormat('yyMMdd');
+    const date = new Date(dateTimeString);
+    const year = date.getFullYear().toString().slice(-2);
+    const month = `0${date.getMonth() + 1}`.slice(-2);
+    const day = `0${date.getDate()}`.slice(-2);
+
+    return `${year}${month}${day}`;
   }
 
   formatName(name) {
