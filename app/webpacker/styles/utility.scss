@@ -115,3 +115,8 @@ $chevron-direction-map: (
 img.lazyload:not([src]) {
   visibility: hidden;
 }
+
+div.scrbbl-embed {
+  height: 380px;
+  overflow-y: scroll;
+}
