@@ -16,7 +16,7 @@ CMD ["rails", "server" ]
 
 RUN apk add --no-cache build-base git tzdata shared-mime-info nodejs yarn\
     wget xvfb unzip chromium chromium-chromedriver \
-    optipng jpegoptim imagemagick parallel
+    pngquant jpegoptim imagemagick parallel
 
 # install NPM packages removign artifacts
 COPY package.json yarn.lock ./
@@ -35,11 +35,12 @@ RUN bundle install --jobs=$(nproc --all) && \
 COPY . .
 RUN bundle exec rake assets:precompile
 
+# Cap images to have a max width of 1000px
+RUN find public -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -exec convert --resize '1000' {} \;
 # Lossless optimize PNGs
-RUN find public -type f -iname "*.png" -exec optipng -nb -nc -np {} \;
+RUN find public -type f -iname "*.png" -exec pngquant --quality=65-80 {} \;
 # Optimize JPEG at 90% quality
-RUN find public -type f \( -iname "*.jpg" -o -iname "*.jpg" \) -exec jpegoptim -m90 --strip-all {} \;
-RUN find public -type f \( -iname "*.jpeg" -o -iname "*.jpeg" \) -exec jpegoptim -m90 --strip-all {} \;
+RUN find public -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec jpegoptim -m75 --strip-all {} \;
 
 # Convert to WebP/JPEG-2000 formats (size constraint avoids an error on empty images)
 # At 75% quality the images still look good and they are roughly half the size.
