@@ -114,7 +114,7 @@ Annual salary ranges for qualified teachers are:
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
-| Greater London                           | £26,948 | £42,624 |
+| London                                   | £26,948 | £42,624 |
 | Rest of England and Wales                | £25,714 | £36,961 |
 
 
@@ -128,7 +128,7 @@ Annual salary ranges for senior teachers are:
 
 | Area                          | Minimum | Maximum  |
 | -------                       | -----   | -----    |
-| Greater London                | £39,864 | £50,935  |
+| London                        | £39,864 | £50,935  |
 | Rest of England and Wales     | £38,690 | £41,604  |
 
 In 2020/21, the average salary for a headteacher was £73,500.
@@ -143,7 +143,7 @@ The pay scales for leading practitioners are:
 
 | Area                          | Minimum | Maximum  |
 | -------                       | -----   | -----    |
-| Greater London                | £43,750 | £72,480  |
+| London                        | £43,750 | £72,480  |
 | Rest of England and Wales     | £42,402 | £64,461  |
 
 ### Headteacher pay
@@ -156,7 +156,7 @@ Annual salary ranges for headteachers are:
 
 | Area                          | Minimum | Maximum   |
 | -------                       | -----   | -----     |
-| Greater London                | £43,356 | £125,098  |
+| London                        | £43,356 | £125,098  |
 | Rest of England and Wales     | £47,195 | £117,197  |
 
 
@@ -184,5 +184,5 @@ Annual salary ranges for unqualified teachers are:
 
 | Area                          | Minimum | Maximum   |
 | -------                       | -----   | -----     |
-| Greater London                | £19,363 | £33,410   |
+| London                        | £19,363 | £33,410   |
 | Rest of England and Wales     | £18,169 | £28,735   |
