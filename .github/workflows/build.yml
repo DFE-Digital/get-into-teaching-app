@@ -225,48 +225,10 @@ jobs:
            -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/coverage.json
            -Dsonar.ruby.rubocop.reportPaths=${PWD}/out/rubocop-result.json
 
-  security_tests:
-    name: Security Tests
-    runs-on: ubuntu-latest
-    needs: [ build ]
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2.3.4
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - uses: Azure/get-keyvault-secrets@v1.2
-        id:   azSecret
-        with:
-           keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'SLACK-WEBHOOK'
-
-      - name: Scan image
-        uses: anchore/scan-action@v2.0.4
-        with:
-          image: ${{needs.build.outputs.DOCKER_IMAGE}}
-          fail-build: false
-          severity-cutoff: high
-          acs-report-enable: true
-
-      - name: upload Anchore scan SARIF report
-        if: always()
-        uses: github/codeql-action/upload-sarif@v1
-        with:
-          sarif_file: results.sarif
-
-      - name: Run Brakeman static security scanner
-        run: |-
-          docker run -t --rm -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}}  brakeman --no-pager
 
   review:
     name: Review Deployment Process
-    needs: [  javascript_tests , feature_tests , security_tests ]
+    needs: [  javascript_tests , feature_tests  ]
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
@@ -324,7 +286,7 @@ jobs:
 
   development:
     name: Development Deployment
-    needs: [  master_tests , security_tests ]
+    needs: [  master_tests  ]
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
     outputs:
