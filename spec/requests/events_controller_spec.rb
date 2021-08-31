@@ -234,6 +234,13 @@ describe EventsController do
 
           expect(actual_description).to eql(event.summary)
         end
+
+        it "has structured data" do
+          json = parsed_response.at_css("script[type='application/ld+json']").content
+          structured_data = JSON.parse(json, symbolize_names: true)
+
+          expect(structured_data).to include("@type": "Event", name: event.name)
+        end
       end
     end
 
