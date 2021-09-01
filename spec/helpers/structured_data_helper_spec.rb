@@ -35,6 +35,63 @@ describe StructuredDataHelper, type: "helper" do
     end
   end
 
+  describe ".breadcrumbs_structured_data" do
+    let(:html) { breadcrumbs_structured_data(breadcrumbs) }
+
+    context "when there are breadcrumbs" do
+      let(:breadcrumbs) do
+        [
+          Loaf::Breadcrumb.new("Page 1", "/page1", false),
+          Loaf::Breadcrumb.new("Page 2", "/page2", true),
+        ]
+      end
+      let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
+
+      subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
+
+      it "returns nil when in production" do
+        allow(Rails).to receive(:env) { "production".inquiry }
+        expect(script_tag).to be_nil
+      end
+
+      it "includes breadcrumb information" do
+        expect(data).to include({
+          "@type": "BreadcrumbList",
+          itemListElement: [
+            {
+              "@type": "ListItem",
+              item: "http://test.host/page1",
+              name: "Page 1",
+              position: 1,
+            },
+            {
+              "@type": "ListItem",
+              item: "http://test.host/page2",
+              name: "Page 2",
+              position: 2,
+            },
+          ],
+        })
+      end
+    end
+
+    context "when there are no breadcrumbs" do
+      subject { html }
+
+      context "when empty array" do
+        let(:breadcrumbs) { [] }
+
+        it { is_expected.to be_nil }
+      end
+
+      context "when nil" do
+        let(:breadcrumbs) { nil }
+
+        it { is_expected.to be_nil }
+      end
+    end
+  end
+
   describe ".event_structured_data" do
     let(:event) { build(:event_api, building: nil) }
     let(:html) { event_structured_data(event) }
@@ -49,6 +106,7 @@ describe StructuredDataHelper, type: "helper" do
 
     it "includes event information" do
       expect(data).to include({
+        "@type": "Event",
         name: event.name,
         startDate: event.start_at,
         endDate: event.end_at,
