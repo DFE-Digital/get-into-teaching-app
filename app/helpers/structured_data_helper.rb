@@ -6,6 +6,8 @@ module StructuredDataHelper
   EVENT_SCHEDULED = "https://schema.org/EventScheduled".freeze
 
   def structured_data(type, data)
+    return if Rails.env.production?
+
     output = {
       "@context": "https://schema.org",
       "@type": type,
