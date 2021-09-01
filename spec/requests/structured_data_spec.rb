@@ -34,4 +34,20 @@ describe "Google Structured Data" do
 
     it { is_expected.to include(a_hash_including("@type": "Organization")) }
   end
+
+  context "when viewing the home page" do
+    let(:path) { root_path }
+
+    before { get path }
+
+    it { is_expected.to include(a_hash_including("@type": "WebSite")) }
+  end
+
+  context "when not viewing the home page" do
+    let(:path) { "/ways-to-train" }
+
+    before { get path }
+
+    it { is_expected.not_to include(a_hash_including("@type": "WebSite")) }
+  end
 end
