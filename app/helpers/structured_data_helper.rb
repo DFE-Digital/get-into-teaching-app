@@ -18,6 +18,15 @@ module StructuredDataHelper
     end
   end
 
+  def logo_structured_data
+    data = {
+      url: root_url,
+      logo: asset_pack_path("media/images/getintoteachinglogo.svg"),
+    }
+
+    structured_data("Organization", data)
+  end
+
   def breadcrumbs_structured_data(breadcrumbs)
     return if breadcrumbs.blank?
 

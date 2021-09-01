@@ -2,9 +2,9 @@ require "rails_helper"
 
 describe "Google Structured Data" do
   let(:parsed_response) { Nokogiri.parse(response.body) }
-  let(:json) { parsed_response.at_css("script[type='application/ld+json']").content }
+  let(:json_contents) { parsed_response.css("script[type='application/ld+json']").map(&:content) }
 
-  subject(:structured_data) { JSON.parse(json, symbolize_names: true) }
+  subject(:structured_data) { json_contents.map { |json| JSON.parse(json, symbolize_names: true) } }
 
   context "when viewing an event page" do
     let(:event) { build(:event_api) }
@@ -16,7 +16,7 @@ describe "Google Structured Data" do
       get path
     end
 
-    it { is_expected.to include("@type": "Event") }
+    it { is_expected.to include(a_hash_including("@type": "Event")) }
   end
 
   context "when viewing a nested content page" do
@@ -24,6 +24,14 @@ describe "Google Structured Data" do
 
     before { get path }
 
-    it { is_expected.to include("@type": "BreadcrumbList") }
+    it { is_expected.to include(a_hash_including("@type": "BreadcrumbList")) }
+  end
+
+  context "when viewing a page" do
+    let(:path) { root_path }
+
+    before { get path }
+
+    it { is_expected.to include(a_hash_including("@type": "Organization")) }
   end
 end

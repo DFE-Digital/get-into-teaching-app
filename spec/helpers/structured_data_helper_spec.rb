@@ -3,6 +3,7 @@ require "rails_helper"
 describe StructuredDataHelper, type: "helper" do
   include ERB::Util
   include EventsHelper
+  include Webpacker::Helper
 
   describe ".structured_data" do
     let(:malicious_text) { "</script><script>alert('PWNED!')</script>" }
@@ -32,6 +33,26 @@ describe StructuredDataHelper, type: "helper" do
     it "outputs escaped JSON" do
       escaped_malicious_text = json_escape(malicious_text)
       expect(script_tag.content).to include(escaped_malicious_text)
+    end
+  end
+
+  describe ".logo_structured_data" do
+    let(:html) { logo_structured_data }
+    let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
+
+    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
+
+    it "returns nil when in production" do
+      allow(Rails).to receive(:env) { "production".inquiry }
+      expect(script_tag).to be_nil
+    end
+
+    it "includes logo information" do
+      expect(data).to include({
+        "@type": "Organization",
+        url: root_url,
+        logo: asset_pack_path("media/images/getintoteachinglogo.svg"),
+      })
     end
   end
 
