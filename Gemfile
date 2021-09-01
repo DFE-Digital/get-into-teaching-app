@@ -91,7 +91,7 @@ group :development, :test do
   gem "pry-rails"
 
   # Testing framework
-  gem "rspec-rails", "~> 5.0.1"
+  gem "rspec-rails", "~> 5.0.2"
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.35", ">= 3.35.3"
   gem "factory_bot_rails", ">= 6.1.0"
