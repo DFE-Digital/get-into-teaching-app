@@ -7,7 +7,7 @@ images:
     path: "media/images/content/blog/notepad.jpg"
     alt: "Someone making notes with a pen on a pad while using a laptop"
 description: |-
-  
+  Applications for teacher training courses starting in 2022 open on 12 October, but there is plenty you can be doing right now to get ready.
 keywords:
   - teacher training
   - apply
