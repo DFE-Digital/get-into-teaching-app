@@ -34,7 +34,7 @@
     "prettier": "^2.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-gds": "^0.1.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^4.1.0"
   },
   "resolutions": {
     "glob-parent": "^5.1.2",
