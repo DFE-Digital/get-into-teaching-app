@@ -113,7 +113,7 @@ end
 group :test do
   gem "selenium-webdriver", "~> 3.142"
   gem "shoulda-matchers"
-  gem "webmock", ">= 3.12.2"
+  gem "webmock", ">= 3.14.0"
 end
 
 group :rolling, :preprod, :userresearch, :production, :pagespeed do
