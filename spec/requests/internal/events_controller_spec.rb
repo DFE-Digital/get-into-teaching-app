@@ -75,14 +75,28 @@ describe Internal::EventsController do
       include_examples "pending events", "provider" do
         before(:each) do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+            .to receive(:search_teaching_events_grouped_by_type)
+                  # .with({
+                  #   type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+                  #   status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
+                  #   start_after: DateTime.now.utc.beginning_of_day,
+                  #   quantity_per_type: 1_000,
+                  # })
+                  .and_return provider_events_by_type
         end
       end
 
       include_examples "pending events", "online" do
         before(:each) do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type) { online_events_by_type }
+            .to receive(:search_teaching_events_grouped_by_type)
+                  # .with({
+                  #   type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
+                  #   status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
+                  #   start_after: DateTime.now.utc.beginning_of_day,
+                  #   quantity_per_type: 1_000,
+                  # })
+                  .and_return online_events_by_type
         end
       end
 
