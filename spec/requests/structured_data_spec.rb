@@ -58,4 +58,20 @@ describe "Google Structured Data" do
 
     it { is_expected.to include(a_hash_including("@type": "BlogPosting")) }
   end
+
+  context "when viewing a page with a how_to section of frontmatter" do
+    let(:path) { "/steps-to-become-a-teacher" }
+
+    before { get path }
+
+    it { is_expected.to include(a_hash_including("@type": "HowTo")) }
+  end
+
+  context "when viewing a page without a how_to section of frontmatter" do
+    let(:path) { "/ways-to-train" }
+
+    before { get path }
+
+    it { is_expected.not_to include(a_hash_including("@type": "HowTo")) }
+  end
 end
