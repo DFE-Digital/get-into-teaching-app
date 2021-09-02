@@ -18,6 +18,21 @@ module StructuredDataHelper
     end
   end
 
+  def breadcrumbs_structured_data(breadcrumbs)
+    return if breadcrumbs.blank?
+
+    items = breadcrumbs.each_with_index.map do |crumb, index|
+      {
+        "@type": "ListItem",
+        position: index + 1,
+        name: crumb.name,
+        item: root_url.chomp("/") + crumb.path,
+      }
+    end
+
+    structured_data("BreadcrumbList", { itemListElement: items })
+  end
+
   def event_structured_data(event)
     building_data = event_building_data(event)
     provider_data = event_provider_data(event)
