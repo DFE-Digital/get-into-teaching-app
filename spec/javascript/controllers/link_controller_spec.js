@@ -70,12 +70,12 @@ describe('LinkController', () => {
         expect(contentExternalLink.getAttribute('target')).toEqual('_blank');
       });
 
-      it("adds rel='noopener noreferrer' to the content external link", () => {
+      it("adds rel='noopener' to the content external link", () => {
         const contentExternalLink = document.getElementById(
           'content-external-link'
         );
         expect(contentExternalLink.getAttribute('rel')).toEqual(
-          'noopener noreferrer'
+          'noopener'
         );
       });
 
