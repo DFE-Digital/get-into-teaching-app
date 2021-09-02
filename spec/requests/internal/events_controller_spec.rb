@@ -55,7 +55,7 @@ describe Internal::EventsController do
 
       context "when there are pending #{event_params || default_event_type} events" do
         before do
-          get internal_events_path, headers: generate_auth_headers(:author), params: event_type
+          get internal_events_path, headers: generate_auth_headers(:author), params: { event_type: event_type }
         end
 
         it "shows pending #{event_params || default_event_type} events" do
@@ -76,12 +76,12 @@ describe Internal::EventsController do
         before(:each) do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type)
-                  # .with({
-                  #   type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-                  #   status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
-                  #   start_after: DateTime.now.utc.beginning_of_day,
-                  #   quantity_per_type: 1_000,
-                  # })
+                  .with({
+                    type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+                    status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
+                    start_after: DateTime.now.utc.beginning_of_day,
+                    quantity_per_type: 1_000,
+                  })
                   .and_return provider_events_by_type
         end
       end
@@ -90,12 +90,12 @@ describe Internal::EventsController do
         before(:each) do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type)
-                  # .with({
-                  #   type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
-                  #   status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
-                  #   start_after: DateTime.now.utc.beginning_of_day,
-                  #   quantity_per_type: 1_000,
-                  # })
+                  .with({
+                    type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
+                    status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
+                    start_after: DateTime.now.utc.beginning_of_day,
+                    quantity_per_type: 1_000,
+                  })
                   .and_return online_events_by_type
         end
       end
