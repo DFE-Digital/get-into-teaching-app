@@ -36,6 +36,33 @@ describe StructuredDataHelper, type: "helper" do
     end
   end
 
+  describe ".search_structured_data" do
+    let(:html) { search_structured_data }
+    let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
+
+    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
+
+    it "returns nil when in production" do
+      allow(Rails).to receive(:env) { "production".inquiry }
+      expect(script_tag).to be_nil
+    end
+
+    it "includes search information" do
+      expect(data).to include({
+        "@type": "WebSite",
+        url: root_url,
+        potentialAction: {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "http://test.host/search?search[search]={search_term_string}",
+          },
+          "query-input": "required name=search_term_string",
+        },
+      })
+    end
+  end
+
   describe ".logo_structured_data" do
     let(:html) { logo_structured_data }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }

@@ -18,6 +18,22 @@ module StructuredDataHelper
     end
   end
 
+  def search_structured_data
+    data = {
+      url: root_url,
+      potentialAction: {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": CGI.unescape(search_url(search: { search: "{search_term_string}" })),
+        },
+        "query-input": "required name=search_term_string",
+      },
+    }
+
+    structured_data("WebSite", data)
+  end
+
   def logo_structured_data
     data = {
       url: root_url,
