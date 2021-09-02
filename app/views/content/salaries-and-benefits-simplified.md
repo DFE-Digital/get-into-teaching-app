@@ -58,7 +58,7 @@ This is part of the Department for Education’s early career framework.
 
 The support includes:
 
-* paid time away from the classroom teaching to focus on learning
+* paid time away from classroom teaching to focus on learning
 * access to a range of high-quality training
 * a mentor who will give you guidance and support
 
@@ -97,7 +97,7 @@ Annual salary ranges for senior teachers are:
 | London                        | £39,864 | £50,935  |
 | Rest of England and Wales     | £38,690 | £41,604  |
 
-In 2020/21, the average salary for a headteacher was £73,500.
+
 
 ### Leading practitioner pay
 
