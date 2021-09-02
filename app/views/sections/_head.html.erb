@@ -16,6 +16,7 @@
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
   <%= yield :head %>
   <%= breadcrumbs_structured_data(breadcrumb_trail) %>
+  <%= logo_structured_data %>
 
   <% if @front_matter && @front_matter['description'] %>
     <%= meta_tag(key: 'description', value: @front_matter['description']) %>
