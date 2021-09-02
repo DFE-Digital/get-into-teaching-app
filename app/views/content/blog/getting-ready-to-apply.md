@@ -1,3 +1,30 @@
+---
+title: Getting ready to apply - 9 things you can do now
+date: "2021-09-03"
+author: Get Into Teaching
+images:
+  train_to_teach:
+    path: "media/images/content/blog/notepad.jpg"
+    alt: "Someone making notes with a pen on a pad while using a laptop"
+description: |-
+  Whether you’re ready to apply or it’s just an idea, here are five reasons why a Train to Teach event can help you on your journey to the classroom.
+keywords:
+  - teacher training
+  - apply
+  - qualifications
+  - eligibility
+  - support
+  - teacher training adviser
+  - TTA
+  - course
+  - references
+tags:
+  - becoming a teacher
+  - teacher training advisers
+  - train to teach events
+  - applications
+  - references
+---
 Applications for teacher training courses starting in 2022 open on 12 October, but there is plenty you can be doing right now to get ready.
 
 ## 1. Check your eligibility
