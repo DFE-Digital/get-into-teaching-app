@@ -135,6 +135,7 @@ module Internal
       {
         type_id: event_type,
         status_ids: [pending_event_status_id],
+        start_after: DateTime.now.utc.beginning_of_day,
         quantity_per_type: 1_000,
       }
     end
