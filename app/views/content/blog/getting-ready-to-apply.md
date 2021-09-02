@@ -7,7 +7,7 @@ images:
     path: "media/images/content/blog/notepad.jpg"
     alt: "Someone making notes with a pen on a pad while using a laptop"
 description: |-
-  Whether you’re ready to apply or it’s just an idea, here are five reasons why a Train to Teach event can help you on your journey to the classroom.
+  
 keywords:
   - teacher training
   - apply
@@ -32,7 +32,7 @@ Applications for teacher training courses starting in 2022 open on 12 October, b
 
 ## 1. Check your eligibility
 
-Before you apply for teacher training you’ll need to make sure you’re eligible. Although different training providers may have specific recruitment criteria, there are some basic eligibility requirements you’ll need to meet to become a teacher in England. [Check your eligibility](https://getintoteaching.education.gov.uk/steps-to-become-a-teacher).
+Before you apply for teacher training you’ll need to make sure you’re eligible. Although different training providers may have specific recruitment criteria, there are some basic eligibility requirements you’ll need to meet to become a teacher in England. [Check your eligibility](/steps-to-become-a-teacher).
 
 ## 2. Get personalised guidance to your inbox
 
@@ -43,13 +43,13 @@ Get one step closer to the classroom with guidance tailored to you, including ho
 * one-to-one support
 * advice from trainees or newly qualified teachers
 
-[Sign up](https://getintoteaching.education.gov.uk/mailinglist/signup/name).
+[Sign up](/mailinglist/signup/name).
 
 ## 3. Get a Teacher Training Adviser
 
 An experienced teaching professional can help if you're ready to get into teaching or if you're returning to teaching and qualified to teach maths, physics or languages.
 
-[Get an adviser](https://adviser-getintoteaching.education.gov.uk/).
+[Get an adviser](/tta-service).
 
 ## 4. Research training courses
 
@@ -69,7 +69,7 @@ Something that many teacher trainer providers will be looking for in an applicat
 
 ## 8. Get some advice at an event
 
-Our Train to Teach events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom. At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts. Some events are in person and others replicate the experience online. [Book your place](https://getintoteaching.education.gov.uk/event-categories/train-to-teach-events).
+Our Train to Teach events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom. At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts. Some events are in person and others replicate the experience online. [Book your place](/event-categories/train-to-teach-events).
 
 ## 9.  Join our support networks on social media
 
