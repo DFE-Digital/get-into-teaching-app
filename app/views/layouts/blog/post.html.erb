@@ -1,3 +1,7 @@
+<% content_for(:head) do %>
+  <%= blog_structured_data(@post) %>
+<% end %>
+
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
