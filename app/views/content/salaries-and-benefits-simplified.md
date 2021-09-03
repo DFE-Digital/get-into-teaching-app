@@ -52,9 +52,7 @@ The teachers’ pension scheme is one of the most generous in the country. It is
 
 ## Establishing yourself as a teacher
 
-As well as pay, holidays and a pension, all teachers are given extra support during their first 2 years in teaching. 
-
-This is part of the Department for Education’s early career framework.
+As well as pay, holidays and a pension, all teachers are given extra support during their first 2 years in teaching. During this time, teachers are called 'early career teachers' (ECTs). 
 
 The support includes:
 
@@ -62,6 +60,7 @@ The support includes:
 * access to a range of high-quality training
 * a mentor who will give you guidance and support
 
+This extra support used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs).
 
 ## Career progression
 
@@ -103,7 +102,7 @@ Annual salary ranges for senior teachers are:
 
 If you’re an established and exceptional teacher, and regularly show the highest standards of classroom teaching, you can be put onto a higher pay scale.
 
-Although they may not lead departments, leading practitioners coach and mentor other teachers and induct trainees and newly qualified teachers (NQTs).
+Although they may not lead departments, leading practitioners coach and mentor other teachers and induct trainees and early career teachers (ECTs).
 
 The pay scales for leading practitioners are:
 
