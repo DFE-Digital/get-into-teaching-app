@@ -4,4 +4,4 @@ After 25 years in industry, Matt wanted to switch careers and do something where
 
 “I wouldn’t have known where to go or what to do without my adviser, Simon. He took me through the requirements of my teacher training application. Additionally, I received significant advice on the two routes into teaching and the tax-free bursaries. Importantly, I was provided with advice on my personal statement where you have to write about why you want to become a teacher."
 
-The advice provided was invaluable. The service took my application from good to excellent.
+“The advice provided was invaluable. The service took my application from good to excellent."
