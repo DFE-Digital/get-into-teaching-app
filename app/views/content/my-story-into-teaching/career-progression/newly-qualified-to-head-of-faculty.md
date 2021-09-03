@@ -38,3 +38,10 @@ As I have progressed, I do less teaching and more leadership and management. I s
 The best thing about teaching is the independence you have in your classroom to create an inspiring environment, and having a positive impact on students' lives whilst engaging and motivating pupils in the subject I love to teach.
 
 Above all, you can't develop a vision that staff can buy into and deliver if you are not fully involved in the school.
+
+### GREY CALLOUT BOX HERE
+
+For the first 2 years in the classroom, during their induction, teachers are called 'early career teachers' (ECTs). 
+It's a time when you get lots of extra support to help establish yourself as a teacher.
+
+Induction used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs).
