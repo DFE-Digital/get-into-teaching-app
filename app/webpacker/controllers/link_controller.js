@@ -25,7 +25,7 @@ export default class extends Controller {
     links.forEach((l) => {
       if (l.getAttribute('href')?.startsWith('http')) {
         l.setAttribute('target', '_blank');
-        l.setAttribute('rel', 'noopener noreferrer');
+        l.setAttribute('rel', 'noopener');
 
         // add hidden text to inform screen reader users that
         // link will open in a new window
