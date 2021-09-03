@@ -44,3 +44,11 @@ I love being able to work with teachers of all backgrounds, experienced to newly
 ### My advice
 
 I would recommend hard work, maintaining your love for the job, and a want to bring about positive change to young peoples' lives. Undeniably, teaching is hard work – but the knowledge that you have helped to motivate young people and helped shape their future brings more satisfaction than any other job I can think of.
+
+### GREY CALLOUT BOX HERE
+
+For the first 2 years in the classroom, during their induction, teachers are called 'early career teachers' (ECTs). 
+It's a time when you get lots of extra support to help establish yourself as a teacher.
+
+Induction used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs).
+
