@@ -50,4 +50,12 @@ describe "Google Structured Data" do
 
     it { is_expected.not_to include(a_hash_including("@type": "WebSite")) }
   end
+
+  context "when viewing a blog page" do
+    let(:path) { "/blog/how-to-ace-a-video-interview" }
+
+    before { get path }
+
+    it { is_expected.to include(a_hash_including("@type": "BlogPosting")) }
+  end
 end

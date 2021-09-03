@@ -18,6 +18,26 @@ module StructuredDataHelper
     end
   end
 
+  def blog_structured_data(page)
+    frontmatter = page.frontmatter
+    author_name = frontmatter[:author]
+
+    data = {
+      headline: frontmatter[:title],
+      image: frontmatter[:images].values.map { |h| h["path"] },
+      datePublished: frontmatter[:date],
+      keywords: frontmatter[:keywords],
+      author: [
+        {
+          "@type": author_name.present? ? "Person" : "Organization",
+          name: author_name || "Get Into Teaching",
+        },
+      ],
+    }
+
+    structured_data("BlogPosting", data)
+  end
+
   def search_structured_data
     data = {
       url: root_url,
