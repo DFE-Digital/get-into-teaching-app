@@ -47,7 +47,7 @@ describe StructuredDataHelper, type: "helper" do
         },
         date: "2021-01-25",
         keywords: %w[one two],
-        author: "Get into Teaching",
+        author: "Ronald McDonald",
       }
     end
     let(:page) { Pages::Page.new("/blog/post", frontmatter) }
@@ -70,11 +70,26 @@ describe StructuredDataHelper, type: "helper" do
         keywords: frontmatter[:keywords],
         author: [
           {
-            "@type": "Organization",
+            "@type": "Person",
             name: frontmatter[:author],
           },
         ],
       })
+    end
+
+    context "when author is not present" do
+      before { frontmatter[:author] = nil }
+
+      it "defaults to the Get Into Teaching organization" do
+        expect(data).to include({
+          author: [
+            {
+              "@type": "Organization",
+              name: "Get Into Teaching",
+            },
+          ],
+        })
+      end
     end
   end
 

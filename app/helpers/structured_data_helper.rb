@@ -20,6 +20,7 @@ module StructuredDataHelper
 
   def blog_structured_data(page)
     frontmatter = page.frontmatter
+    author_name = frontmatter[:author]
 
     data = {
       headline: frontmatter[:title],
@@ -28,8 +29,8 @@ module StructuredDataHelper
       keywords: frontmatter[:keywords],
       author: [
         {
-          "@type": "Organization",
-          name: frontmatter[:author],
+          "@type": author_name.present? ? "Person" : "Organization",
+          name: author_name || "Get Into Teaching",
         },
       ],
     }

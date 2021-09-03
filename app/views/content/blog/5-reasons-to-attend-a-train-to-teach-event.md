@@ -1,7 +1,6 @@
 ---
 title: 5 reasons to attend a Train to Teach event
 date: "2021-08-26"
-author: Get Into Teaching
 images:
   train_to_teach:
     path: "media/images/content/blog/train-to-teach.jpg"
