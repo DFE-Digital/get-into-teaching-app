@@ -76,7 +76,7 @@ In 2020/21, the average salary for a primary school teacher was £36,900. The av
 
 You'll get more days than people in many other professions. Full-time teachers work for 195 days per year in school.
 
-### Early career teachers (ECTs) benefits
+### Early career teacher (ECTs) benefits
 
 All teachers are given extra support during their first 2 years in teaching. During this time, teachers are called 'early career teachers' (ECTs). It is based on the [early career framework](https://www.gov.uk/government/publications/supporting-early-career-teachers).
 
