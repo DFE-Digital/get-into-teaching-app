@@ -38,3 +38,10 @@ Having the opportunity to teach in another school was a very valuable experience
 Most weeks during the first term I spent one day at university developing knowledge on how to improve my teaching against the teaching standards. This time was extremely useful, providing valuable ideas to take back and use instantly in the classroom.
 
 I gained a PGCE which included qualified teacher status and which I could use as the first third of a Master's degree. Teaching has always been an ambition of mine for as long as I can remember because I had such great role models as teachers at school. Without a salaried course, it would not have been possible.
+
+### GREY CALLOUT BOX HERE
+
+For the first 2 years in the classroom, during their induction, teachers are called 'early career teachers' (ECTs). 
+It's a time when you get lots of extra support to help establish yourself as a teacher.
+
+Induction used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs).
