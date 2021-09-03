@@ -19,6 +19,10 @@ quote:
   q-jon:
     text: The best thing about teaching is the independence you have in your classroom to create an inspiring environment
     inline: left
+calls_to_action:
+  ect:
+    name: ect
+    arguments: {}
 ---
 
 I've enjoyed rapid career progression. I made the most of the opportunities and prospects that teaching offered me, and was head of department for geography at The Toynbee School in Chandler's Ford within two years of my NQT year.
@@ -39,9 +43,4 @@ The best thing about teaching is the independence you have in your classroom to 
 
 Above all, you can't develop a vision that staff can buy into and deliver if you are not fully involved in the school.
 
-### GREY CALLOUT BOX HERE
-
-For the first 2 years in the classroom, during their induction, teachers are called 'early career teachers' (ECTs). 
-It's a time when you get lots of extra support to help establish yourself as a teacher.
-
-Induction used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs).
+$ect$
