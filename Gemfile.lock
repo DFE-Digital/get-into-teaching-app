@@ -252,7 +252,7 @@ GEM
     observer (0.1.1)
     os (1.1.1)
     parallel (1.20.1)
-    parallel_split_test (0.9.1)
+    parallel_split_test (0.10.0)
       parallel (>= 0.5.13)
       rspec-core (>= 3.9.0)
     parser (3.0.2.0)
