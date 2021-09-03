@@ -26,7 +26,7 @@ jobs:
            secrets: 'SLACK-WEBHOOK'
 
       - name: Scan image
-        uses: anchore/scan-action@v2.0.4
+        uses: anchore/scan-action@v3
         with:
           image: ${{ env.DOCKER_REPOSITORY }}:master
           fail-build: false
