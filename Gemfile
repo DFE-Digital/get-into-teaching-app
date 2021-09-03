@@ -24,7 +24,7 @@ gem "foreman"
 gem "secure_headers"
 
 # Canonical meta tag
-gem "canonical-rails", ">= 0.2.11"
+gem "canonical-rails", ">= 0.2.12"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.3.1"
@@ -34,14 +34,14 @@ gem "addressable", "~> 2.8.0"
 
 gem "rack-attack"
 
-gem "faraday", "~> 1.6.0"
+gem "faraday", "~> 1.7.1"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
 
 gem "dotenv-rails", ">= 2.7.6"
 
-gem "govuk_design_system_formbuilder", ">= 2.7.2"
+gem "govuk_design_system_formbuilder", ">= 2.7.3"
 
 gem "loaf", ">= 0.10.0"
 
@@ -120,7 +120,7 @@ group :rolling, :preprod, :userresearch, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"
-  gem "rails_semantic_logger", ">= 4.6.0"
+  gem "rails_semantic_logger", ">= 4.6.1"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
