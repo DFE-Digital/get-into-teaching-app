@@ -120,7 +120,7 @@ group :rolling, :preprod, :userresearch, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"
-  gem "rails_semantic_logger", ">= 4.6.0"
+  gem "rails_semantic_logger", ">= 4.6.1"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
