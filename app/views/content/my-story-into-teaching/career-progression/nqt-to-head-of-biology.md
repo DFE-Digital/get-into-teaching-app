@@ -19,6 +19,10 @@ quote:
   q-sarah:
     text: The best part of teaching is being in front of my 32 students and seeing how my passion for the subject I teach rubs off on them
     inline: left
+calls_to_action:
+  ect:
+    name: ect
+    arguments: {}
 ---
 
 Two years after qualifying as a teacher, I progressed to head of biology, climbing the career ladder. I always had an inkling that teaching was the right direction.
@@ -44,3 +48,5 @@ I love being able to work with teachers of all backgrounds, experienced to newly
 ### My advice
 
 I would recommend hard work, maintaining your love for the job, and a want to bring about positive change to young peoples' lives. Undeniably, teaching is hard work – but the knowledge that you have helped to motivate young people and helped shape their future brings more satisfaction than any other job I can think of.
+
+$ect$

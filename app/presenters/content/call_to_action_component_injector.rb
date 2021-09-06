@@ -7,6 +7,7 @@ module Content
       "story" => CallsToAction::StoryComponent,
       "next_steps" => CallsToAction::NextStepsComponent,
       "multiple_buttons" => CallsToAction::MultipleButtonsComponent,
+      "ect" => CallsToAction::EctComponent,
       "feature_table" => Content::FeatureTableComponent,
     }.freeze
 

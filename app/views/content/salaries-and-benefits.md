@@ -59,7 +59,7 @@ What you're paid will be linked to performance, not length of service - meaning 
 
 ## Qualified teachers
 
-As a 'newly qualified teacher' (NQT) in a primary or secondary school your starting salary will be between £25,714 and £32,157 depending on where you teach.
+Starting salaries in a primary or secondary school will be between £25,714 and £32,157 depending on where you teach.
 
 As you progress in your teaching career, it's possible to move up through these pay scales:
 
@@ -76,9 +76,9 @@ In 2020/21, the average salary for a primary school teacher was £36,900. The av
 
 You'll get more days than people in many other professions. Full-time teachers work for 195 days per year in school.
 
-### Newly qualified teacher (NQT) benefits
+### Early career teacher (ECT) benefits
 
-A 2-year package to support teachers at the start of their career, based on the [early career framework](https://www.gov.uk/government/publications/supporting-early-career-teachers), launches nationally in September 2021.
+All teachers are given extra support during their first 2 years in teaching. During this time, teachers are called 'early career teachers' (ECTs). It is based on the [early career framework](https://www.gov.uk/government/publications/supporting-early-career-teachers).
 
 The support package includes:
 
@@ -86,6 +86,8 @@ The support package includes:
 * a range of high-quality, freely available curricula and teacher training materials underpinned by the early career framework
 * funded training for mentors of early career teachers
 * funded time for mentors to support early career teachers
+
+This extra support used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs).
 
 ### Get a salary uplift for taking on extra responsibilities
 
@@ -117,7 +119,7 @@ The Teachers’ Pension Scheme gives you a regular source of income when you ret
 
 A 'leading practitioner' is an excellent and highly skilled teacher who consistently demonstrates the highest standards of classroom practice.
 
-They share their skills and experience through the coaching, mentoring and induction of teachers, including trainees and newly qualified teachers (NQTs).
+They share their skills and experience through the coaching, mentoring and induction of teachers, including trainees and early career teachers (ECTs).
 
 The pay scale for leading practitioners is between £42,402 and £72,480 depending on where you teach.
 
