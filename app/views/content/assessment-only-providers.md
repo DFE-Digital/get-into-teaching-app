@@ -462,9 +462,9 @@ provider_groups:
   National:
     providers:
     - header: TES Institute
-      link: https://www.tes.com/institute/courses/international-assessment-only-route
-      name: TI Enrolment team
-      telephone: 0203 194 3000
+      link: https://www.tes.com/institute/assessment-only-route
+      name: Mikki Burns
+      telephone: 0203 194 3200
       email: institute@tesglobal.com
   Providers offering assessment only QTS to international teachers:
     description: content/assessment-only-providers/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
@@ -484,11 +484,11 @@ provider_groups:
       name: Admissions Team
       telephone: +86 135 2015 3752
       email: admissions@bise.org
-    - header: Tes Institute
+    - header: TES Institute
       link: https://www.tes.com/institute/courses/international-assessment-only-route
-      name: Mikki Burns
+      name: TI Enrolment team
       telephone: +44 (0)203 194 3000
-      email: mikki.burns@tes.com
+      email: institute@tesglobal.com
 keywords:
   - Assessment Only
   - Assessment
