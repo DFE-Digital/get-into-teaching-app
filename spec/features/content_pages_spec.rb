@@ -151,8 +151,10 @@ RSpec.feature "content pages check", type: :feature, content: true do
     scenario "navigable pages appear in desktop navbar" do
       # skip home as we've just navigated to '/'
       navigation_pages.reject { |k, _v| k == "/home" }.each do |url, frontmatter|
+        expected_title = frontmatter[:navigation_title] || frontmatter[:heading] || frontmatter[:title]
+
         page.within "nav ol.primary" do
-          is_expected.to have_link frontmatter[:title], href: url
+          is_expected.to have_link expected_title, href: url
         end
       end
     end

@@ -15,7 +15,7 @@
               <%= tag.span(@front_matter["title_caption"], class: "caption") %>
             <% end %>
 
-            <%= tag.h1(@front_matter["title"]) %>
+            <%= tag.h1(@front_matter["heading"] || @front_matter["title"]) %>
           </header>
         <% end %>
 

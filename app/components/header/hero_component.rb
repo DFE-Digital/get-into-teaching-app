@@ -6,7 +6,7 @@ module Header
       return if front_matter.blank?
 
       front_matter.with_indifferent_access.tap do |fm|
-        @title           = fm["title"]
+        @title           = fm["heading"] || fm["title"]
         @subtitle        = fm["subtitle"]
         @subtitle_link   = fm["subtitle_link"]
         @subtitle_button = fm["subtitle_button"]
