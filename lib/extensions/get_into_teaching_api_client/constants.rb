@@ -3,6 +3,7 @@ module GetIntoTeachingApiClient
     EVENT_TYPES =
       {
         "Train to Teach event" => 222_750_001,
+        "Question Time" => 222_750_007,
         "Online event" => 222_750_008,
         "School or University event" => 222_750_009,
       }.freeze

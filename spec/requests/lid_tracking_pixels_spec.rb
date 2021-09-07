@@ -3,7 +3,7 @@ require "rails_helper"
 describe "LID tracking pixels" do
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_grouped_by_type) { {} }
+      receive(:search_teaching_events_grouped_by_type) { [] }
   end
 
   before { get path }

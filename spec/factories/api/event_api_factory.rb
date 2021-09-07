@@ -31,6 +31,10 @@ FactoryBot.define do
       type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
     end
 
+    trait :question_time_event do
+      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"] }
+    end
+
     trait :virtual do
       is_online { true }
       is_virtual { true }
