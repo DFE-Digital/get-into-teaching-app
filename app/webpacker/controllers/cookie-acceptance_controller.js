@@ -2,7 +2,7 @@ import CookiePreferences from '../javascript/cookie_preferences';
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = ['modal', 'overlay', 'agree', 'disagree'];
+  static targets = ['modal', 'overlay', 'agree', 'disagree', 'info'];
 
   connect() {
     if (!this.isPrivacyPage()) {
@@ -27,16 +27,51 @@ export default class extends Controller {
 
   showDialog() {
     this.overlayTarget.style.display = 'flex';
-    document.getElementById('biscuits-agree').focus();
 
-    this.disagreeTarget.addEventListener('blur', function (e) {
-      e.preventDefault();
-      document.getElementById('biscuits-agree').focus();
+    const tabKey = 9;
+    const agreeButtonID = 'biscuits-agree';
+    const disagreeButtonID = 'cookies-disagree';
+    const infoLinkID = 'cookies-info';
+
+    // agree button is focussed on the first tab
+    // cookies (link) on the second
+    // disagree button on the third
+    // back to agree on the fourth, and so on
+
+    this.agreeTarget.addEventListener('keydown', function (e) {
+      if (e.keyCode === tabKey) {
+        e.preventDefault();
+
+        if (e.shiftKey) {
+          document.getElementById(disagreeButtonID).focus();
+        } else {
+          document.getElementById(infoLinkID).focus();
+        }
+      }
     });
 
-    this.agreeTarget.addEventListener('blur', function (e) {
-      e.preventDefault();
-      document.getElementById('cookies-disagree').focus();
+    this.infoTarget.addEventListener('keydown', function (e) {
+      if (e.keyCode === tabKey) {
+        e.preventDefault();
+
+        if (e.shiftKey) {
+          document.getElementById(agreeButtonID).focus();
+        } else {
+          document.getElementById(disagreeButtonID).focus();
+        }
+      }
+    });
+
+    this.disagreeTarget.addEventListener('keydown', function (e) {
+      if (e.keyCode === tabKey) {
+        e.preventDefault();
+
+        if (e.shiftKey) {
+          document.getElementById(infoLinkID).focus();
+        } else {
+          document.getElementById(agreeButtonID).focus();
+        }
+      }
     });
   }
 

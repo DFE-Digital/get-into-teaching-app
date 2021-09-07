@@ -5,6 +5,7 @@ import CookieAcceptanceController from 'cookie-acceptance_controller.js';
 describe('CookieAcceptanceController', () => {
   document.body.innerHTML = `<div data-controller="cookie-acceptance">
         <div id="overlay" class="cookie-acceptance" data-cookie-acceptance-target="overlay">
+            <a class="cookies-info" href="#" data-cookie-acceptance-target="info">some-link</a>
             <div class="cookie-acceptance__background"></div>
             <div class="cookie-acceptance__dialog">
                 <div class="cookie-acceptance__dialog__header">
