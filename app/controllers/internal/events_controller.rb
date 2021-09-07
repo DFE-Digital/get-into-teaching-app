@@ -64,11 +64,9 @@ module Internal
                  .new
                  .search_teaching_events_grouped_by_type(quantity_per_type: 1_000,
                                                          start_after: DateTime.now.utc.beginning_of_day,
-                                                         status_ids: [open_event_status_id])
+                                                         status_ids: [open_event_status_id],
+                                                         type_ids: [event_types[:provider], event_types[:online]])
 
-      events = events.select do |key|
-        key.type_id == event_types[:provider] || key.type_id == event_types[:online]
-      end
       @open_events = events.map(&:teaching_events).flatten
     end
 
@@ -133,7 +131,7 @@ module Internal
 
     def events_search_params(event_type)
       {
-        type_id: event_type,
+        type_ids: [event_type],
         status_ids: [pending_event_status_id],
         start_after: DateTime.now.utc.beginning_of_day,
         quantity_per_type: 1_000,

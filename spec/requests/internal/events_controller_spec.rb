@@ -77,7 +77,7 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type)
                   .with({
-                    type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+                    type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]],
                     status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
                     start_after: DateTime.now.utc.beginning_of_day,
                     quantity_per_type: 1_000,
@@ -91,7 +91,7 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type)
                   .with({
-                    type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
+                    type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]],
                     status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
                     start_after: DateTime.now.utc.beginning_of_day,
                     quantity_per_type: 1_000,
@@ -637,14 +637,21 @@ describe Internal::EventsController do
         [
           build(:event_api, :online_event, name: "Open online event", start_at: start_at),
           build(:event_api, :school_or_university_event, name: "Open provider event", start_at: start_at),
-          build(:event_api, :train_to_teach_event, name: "Open train to teach event", start_at: start_at),
         ]
       end
       let(:events_by_type) { group_events_by_type(events) }
 
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:search_teaching_events_grouped_by_type) { events_by_type }
+          .to receive(:search_teaching_events_grouped_by_type)
+                .with({
+                  type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+                             GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]],
+                  status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]],
+                  start_after: DateTime.now.utc.beginning_of_day,
+                  quantity_per_type: 1_000,
+                })
+                .and_return events_by_type
       end
 
       it "shows a table of events" do
@@ -655,7 +662,6 @@ describe Internal::EventsController do
         expect(response.body).to include("Open events")
         expect(response.body).to include("Open online event")
         expect(response.body).to include("Open provider event")
-        expect(response.body).to_not include("Open train to teach event")
       end
     end
   end
