@@ -1,6 +1,5 @@
 ---
-title: "Teacher salaries and benefits"
-heading: "Salaries and benefits"
+title: "Salaries and benefits"
 description: |-
   Pay scales for teachers in England and Wales. Find the pay ranges for different roles, how many days holiday teachers get each year, 
   and what to expect from the generous teacher pension scheme.
