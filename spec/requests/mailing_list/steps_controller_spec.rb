@@ -52,7 +52,7 @@ describe MailingList::StepsController, type: :request do
       end
 
       before do
-        expect_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+        allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
           receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { stub_response }
         allow(Rails.logger).to receive(:info)
         get step_path
@@ -71,7 +71,7 @@ describe MailingList::StepsController, type: :request do
       let(:exchange_result) { GetIntoTeachingApiClient::CandidateMagicLinkExchangeResult.new(success: false, status: status) }
 
       before do
-        expect_any_instance_of(MailingList::Wizard).to \
+        allow_any_instance_of(MailingList::Wizard).to \
           receive(:exchange_magic_link_token).with(token)
             .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 401, response_body: exchange_result.to_json))
         get step_path

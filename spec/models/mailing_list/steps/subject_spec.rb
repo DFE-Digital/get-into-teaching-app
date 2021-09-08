@@ -2,17 +2,17 @@ require "rails_helper"
 
 describe MailingList::Steps::Subject do
   include_context "with wizard step"
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
+      receive(:get_teaching_subjects).and_return(teaching_subject_types)
+  end
+
   it_behaves_like "a with wizard step"
 
   let(:teaching_subject_types) do
     GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map do |k, v|
       GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k })
     end
-  end
-
-  before do
-    allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
-      receive(:get_teaching_subjects).and_return(teaching_subject_types)
   end
 
   it { is_expected.to respond_to :preferred_teaching_subject_id }

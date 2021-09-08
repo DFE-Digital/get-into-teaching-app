@@ -16,7 +16,7 @@ describe PageSpeedScore do
     let(:prometheus) { Prometheus::Client.registry }
 
     before do
-      expect(Rails.application.credentials).to \
+      allow(Rails.application.credentials).to \
         receive(:page_speed_insights_key) { "12345" }
     end
 

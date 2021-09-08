@@ -37,8 +37,8 @@ describe Events::Wizard do
 
     before do
       allow(subject).to receive(:valid?) { true }
-      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:add_teaching_event_attendee).with(request).once
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:add_teaching_event_attendee).with(request)
       allow(Rails.logger).to receive(:info)
       subject.complete!
     end
@@ -58,7 +58,7 @@ describe Events::Wizard do
     let(:response) { GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidateId: "123", addressTelephone: "12345") }
 
     before do
-      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:exchange_access_token_for_teaching_event_add_attendee)
         .with(totp, request) { response }
     end

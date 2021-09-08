@@ -64,18 +64,6 @@ RSpec/ExampleLength:
   Exclude:
     - spec/**/*.rb
 
-RSpec/ExpectInHook:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/HookArgument:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/HooksBeforeExamples:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/InstanceVariable:
   Exclude:
     - spec/**/*.rb

@@ -12,7 +12,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
 
   context "with category" do
     before do
-      expect(page_data).to receive(:latest_event_for_category)
+      allow(page_data).to receive(:latest_event_for_category)
         .with("train to teach event")
         .and_return event
     end
@@ -45,7 +45,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
 
     let(:card) { { "category" => "unknown" } }
 
-    before { expect(Sentry).to receive(:capture_exception).and_call_original }
+    before { allow(Sentry).to receive(:capture_exception).and_call_original }
 
     it { is_expected.to have_css ".card header", text: find_events_header }
   end
@@ -55,7 +55,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
 
     let(:card) { {} }
 
-    before { expect(Sentry).to receive(:capture_exception).and_call_original }
+    before { allow(Sentry).to receive(:capture_exception).and_call_original }
 
     it { is_expected.to have_css ".card header", text: find_events_header }
   end

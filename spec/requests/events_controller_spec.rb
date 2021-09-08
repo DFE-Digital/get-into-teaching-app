@@ -47,7 +47,7 @@ describe EventsController, type: :request do
     let(:parsed_response) { Nokogiri.parse(response.body) }
 
     before do
-      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type)
         .with(a_hash_including(expected_request_attributes)) { events_by_type }
     end

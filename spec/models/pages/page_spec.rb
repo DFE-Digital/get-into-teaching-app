@@ -74,7 +74,7 @@ RSpec.describe Pages::Page do
 
       before do
         page = described_class.find("/subfolder/page2")
-        expect(page).to receive(:path) { deep_path }
+        allow(page).to receive(:path) { deep_path }
         allow(described_class).to receive(:find).and_raise(described_class::PageNotFoundError)
         page.parent
       end

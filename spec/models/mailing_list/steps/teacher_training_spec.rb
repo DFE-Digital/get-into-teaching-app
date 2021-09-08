@@ -2,17 +2,17 @@ require "rails_helper"
 
 describe MailingList::Steps::TeacherTraining do
   include_context "with wizard step"
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
+      receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
+  end
+
   it_behaves_like "a with wizard step"
 
   let(:consideration_journey_stage_types) do
     GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
-  end
-
-  before do
-    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
   end
 
   it { is_expected.to respond_to :consideration_journey_stage_id }

@@ -13,7 +13,7 @@ describe NumberOfWordsValidator do
     described_class.new attributes: :description, less_than: 150
   end
 
-  before :each do
+  before do
     validator.validate_each model, :description, description
   end
 
