@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe SearchesController do
+RSpec.describe SearchesController, type: :request do
   subject { response }
 
   describe "#show" do

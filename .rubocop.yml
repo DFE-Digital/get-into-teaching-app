@@ -60,10 +60,6 @@ Style/ClassVars:
 
 # FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
-RSpec/DescribeClass:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/ExampleLength:
   Exclude:
     - spec/**/*.rb

@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Google Structured Data" do
+describe "Google Structured Data", type: :request do
   let(:parsed_response) { Nokogiri.parse(response.body) }
   let(:json_contents) { parsed_response.css("script[type='application/ld+json']").map(&:content) }
 

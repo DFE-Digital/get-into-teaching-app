@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Redirects", content: true do
+describe "Redirects", content: true, type: :request do
   let(:query_string) { "abc=def&ghi=jkl" }
 
   redirects = YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects")

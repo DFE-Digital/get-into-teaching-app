@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe PagesController do
+describe PagesController, type: :request do
   describe "#show" do
     context "without caching enabled" do
       it "does not have cache headers" do

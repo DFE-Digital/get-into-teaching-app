@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Circuit breaker" do
+describe "Circuit breaker", type: :request do
   let(:error) { GetIntoTeachingApiClient::CircuitBrokenError }
 
   before do

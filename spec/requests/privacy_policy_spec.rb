@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "GET /privacy-policy" do
+describe "GET /privacy-policy", type: :request do
   let(:policy) { GetIntoTeachingApiClient::PrivacyPolicy.new(id: "123", text: "Latest privacy policy") }
 
   context "when viewing the latest privacy policy" do

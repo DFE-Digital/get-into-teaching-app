@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe RobotsController do
+describe RobotsController, type: :request do
   before { get("/robots.txt") }
 
   subject { response.body }

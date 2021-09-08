@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe HealthchecksController do
+describe HealthchecksController, type: :request do
   before do
     allow_any_instance_of(Healthcheck).to receive(:test_api) { true }
     allow_any_instance_of(Healthcheck).to receive(:test_redis) { false }

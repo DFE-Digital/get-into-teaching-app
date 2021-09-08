@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "ensuring frontmatter from content pages is rendered" do
+describe "ensuring frontmatter from content pages is rendered", type: :request do
   context "with an accordion layout" do
     before { get "/content-page" }
 

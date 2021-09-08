@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe SitemapController do
+RSpec.describe SitemapController, type: :request do
   subject { Nokogiri::XML(response.body) }
 
   let(:content_pages) do

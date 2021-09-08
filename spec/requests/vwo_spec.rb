@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "VWO" do
+describe "VWO", type: :request do
   let(:config_path) { Rails.root.join("config/vwo.yml") }
   let(:yaml) do
     <<-YAML
