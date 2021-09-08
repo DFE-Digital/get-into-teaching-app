@@ -3,7 +3,7 @@ require "rails_helper"
 describe PagesController do
   describe "#show" do
     context "without caching enabled" do
-      it "Should not have cache headers" do
+      it "does not have cache headers" do
         get "/test"
 
         expect(response).to have_http_status 200
@@ -25,7 +25,7 @@ describe PagesController do
         allow(cache_config).to receive(:last_modified).and_return 2.minutes.ago
       end
 
-      it "should utilise cached version" do
+      it "utilises cached version" do
         get "/test"
         expect(response).to have_http_status 200
 
@@ -76,7 +76,7 @@ describe PagesController do
   end
 
   describe "redirect to TTA site" do
-    include_context "stub env vars", "TTA_SERVICE_URL" => "https://tta-service/"
+    include_context "with stubbed env vars", "TTA_SERVICE_URL" => "https://tta-service/"
     subject { response }
 
     context "with /tta-service url" do

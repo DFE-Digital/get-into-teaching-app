@@ -1,10 +1,10 @@
 require "rails_helper"
 
 describe Events::Steps::PersonalisedUpdates do
-  include_context "wizard step"
-  include_context "stub types api"
+  include_context "with wizard step"
+  include_context "with stubbed types api"
 
-  it_behaves_like "a wizard step"
+  it_behaves_like "a with wizard step"
 
   describe "attributes" do
     it { is_expected.to respond_to :address_postcode }

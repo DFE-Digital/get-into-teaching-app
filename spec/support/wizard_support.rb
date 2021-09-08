@@ -1,11 +1,11 @@
-shared_context "wizard store" do
+shared_context "with wizard store" do
   let(:backingstore) { { "name" => "Joe", "age" => 35 } }
   let(:crm_backingstore) { {} }
   let(:wizardstore) { Wizard::Store.new backingstore, crm_backingstore }
 end
 
-shared_context "wizard step" do
-  include_context "wizard store"
+shared_context "with wizard step" do
+  include_context "with wizard store"
   let(:attributes) { {} }
   let(:wizard) { TestWizard.new(wizardstore, TestWizard::Name.key) }
   let(:instance) do
@@ -14,7 +14,7 @@ shared_context "wizard step" do
   subject { instance }
 end
 
-shared_context "wizard data" do
+shared_context "with wizard data" do
   let(:degree_status_option_types) do
     GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
@@ -57,12 +57,12 @@ shared_context "wizard data" do
   end
 end
 
-shared_examples "a wizard step" do
+shared_examples "a with wizard step" do
   it { expect(subject.class).to respond_to :key }
   it { is_expected.to respond_to :save }
 end
 
-shared_examples "an issue verification code wizard step" do
+shared_examples "an issue verification code with wizard step" do
   describe "#save" do
     before do
       subject.email = "email@address.com"

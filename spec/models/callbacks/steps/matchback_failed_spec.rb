@@ -1,8 +1,8 @@
 require "rails_helper"
 
 describe Callbacks::Steps::MatchbackFailed do
-  include_context "wizard step"
-  it_behaves_like "a wizard step"
+  include_context "with wizard step"
+  it_behaves_like "a with wizard step"
 
   describe "#can_proceed?" do
     it "returns false" do

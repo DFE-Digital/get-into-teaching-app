@@ -60,19 +60,11 @@ Style/ClassVars:
 
 # FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
-RSpec/ContextWording:
-  Exclude:
-    - spec/support/*.rb
-
 RSpec/DescribeClass:
   Exclude:
     - spec/**/*.rb
 
 RSpec/ExampleLength:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/ExampleWording:
   Exclude:
     - spec/**/*.rb
 

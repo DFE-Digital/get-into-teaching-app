@@ -1,9 +1,9 @@
 require "rails_helper"
 
 describe Events::Steps::ContactDetails do
-  include_context "wizard step"
+  include_context "with wizard step"
 
-  it_behaves_like "a wizard step"
+  it_behaves_like "a with wizard step"
 
   it { is_expected.to respond_to :address_telephone }
   it { expect(subject).to be_optional }

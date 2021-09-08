@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "View events by category" do
-  include_context "stub types api"
+  include_context "with stubbed types api"
 
   let(:expected_limit) { EventCategoriesController::MAXIMUM_EVENTS_IN_CATEGORY }
 

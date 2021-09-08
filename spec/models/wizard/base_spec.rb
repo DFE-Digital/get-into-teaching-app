@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Wizard::Base do
-  include_context "wizard store"
+  include_context "with wizard store"
 
   let(:wizardclass) { TestWizard }
   let(:wizard) { wizardclass.new wizardstore, "age" }

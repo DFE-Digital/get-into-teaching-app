@@ -1,8 +1,8 @@
 require "rails_helper"
 
 describe MailingList::Steps::TeacherTraining do
-  include_context "wizard step"
-  it_behaves_like "a wizard step"
+  include_context "with wizard step"
+  it_behaves_like "a with wizard step"
 
   let(:consideration_journey_stage_types) do
     GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|

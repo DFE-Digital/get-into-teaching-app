@@ -41,7 +41,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
   end
 
   context "with unknown category" do
-    include_context "stub types api"
+    include_context "with stubbed types api"
 
     let(:card) { { "category" => "unknown" } }
 
@@ -51,7 +51,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
   end
 
   context "with no category" do
-    include_context "stub types api"
+    include_context "with stubbed types api"
 
     let(:card) { {} }
 

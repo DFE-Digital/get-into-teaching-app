@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Wizard::Step do
-  include_context "wizard store"
+  include_context "with wizard store"
 
   class FirstStep < Wizard::Step
     attribute :name

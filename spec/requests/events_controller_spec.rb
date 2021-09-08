@@ -1,10 +1,10 @@
 require "rails_helper"
 
 describe EventsController do
-  include_context "stub types api"
+  include_context "with stubbed types api"
 
   describe "#index" do
-    include_context "stub upcoming events by category api", EventsController::UPCOMING_EVENTS_PER_TYPE
+    include_context "with stubbed upcoming events by category api", EventsController::UPCOMING_EVENTS_PER_TYPE
     let(:parsed_response) { Nokogiri.parse(response.body) }
     let(:expected_description) { "Get your questions answered at an event." }
 

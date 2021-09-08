@@ -1,8 +1,8 @@
 require "rails_helper"
 
 describe Callbacks::Steps::TalkingPoints do
-  include_context "wizard step"
-  it_behaves_like "a wizard step"
+  include_context "with wizard step"
+  it_behaves_like "a with wizard step"
 
   describe "attributes" do
     it { is_expected.to respond_to :talking_points }

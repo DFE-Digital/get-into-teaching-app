@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Mailing list wizard", type: :feature do
-  include_context "wizard data"
+  include_context "with wizard data"
 
   scenario "Full journey as a new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \

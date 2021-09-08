@@ -1,8 +1,8 @@
 require "rails_helper"
 
 describe MailingList::Steps::Name do
-  include_context "wizard step"
-  it_behaves_like "a wizard step"
+  include_context "with wizard step"
+  it_behaves_like "a with wizard step"
 
   let(:channels) do
     GetIntoTeachingApiClient::Constants::CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS.map do |k, v|
@@ -50,6 +50,6 @@ describe MailingList::Steps::Name do
   end
 
   context "when the step is valid" do
-    it_behaves_like "an issue verification code wizard step"
+    it_behaves_like "an issue verification code with wizard step"
   end
 end
