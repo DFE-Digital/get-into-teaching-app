@@ -30,6 +30,6 @@ You do not need a degree to start teaching in further education.
 
 ## Training to teach in further education
 
-To find out more, visit the[teach in further education website]https://www.teach-in-further-education.campaign.gov.uk/).
+To find out more, visit the [teach in further education website](https://www.teach-in-further-education.campaign.gov.uk/).
 
 Or, speak to an adviser on [0300 303 1877](tel:0300 303 1877) or by emailing feadviceline@etfoundation.co.uk.
