@@ -6,7 +6,7 @@ module StructuredDataHelper
   EVENT_SCHEDULED = "https://schema.org/EventScheduled".freeze
 
   def structured_data(type, data)
-    return if Rails.env.production?
+    return unless Rails.application.config.x.structured_data.send(type.underscore)
 
     output = {
       "@context": "https://schema.org",

@@ -6,6 +6,13 @@ describe "Google Structured Data" do
 
   subject(:structured_data) { json_contents.map { |json| JSON.parse(json, symbolize_names: true) } }
 
+  before do
+    %i[how_to event blog_posting organization breadcrumb_list web_site].each do |type|
+      allow(Rails.application.config.x.structured_data).to \
+        receive(type) { true }
+    end
+  end
+
   context "when viewing an event page" do
     let(:event) { build(:event_api) }
     let(:path) { event_path(id: event.readable_id) }
