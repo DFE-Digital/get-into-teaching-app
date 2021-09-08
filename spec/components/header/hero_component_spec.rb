@@ -14,6 +14,7 @@ describe Header::HeroComponent, type: "component" do
     }.merge(extra_front_matter)
   end
   let(:component) { described_class.new(front_matter) }
+
   subject! { render_inline(component) }
 
   describe "rendering a hero section" do

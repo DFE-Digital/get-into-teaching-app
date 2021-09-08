@@ -11,7 +11,9 @@ describe Callbacks::Steps::PersonalDetails do
 
   describe "validations" do
     before { instance.valid? }
+
     subject { instance.errors.messages }
+
     it { is_expected.to include(:first_name) }
     it { is_expected.to include(:last_name) }
     it { is_expected.to include(:email) }

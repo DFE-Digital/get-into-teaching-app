@@ -12,7 +12,9 @@ describe Events::Steps::PersonalDetails do
 
   describe "validations" do
     before { instance.valid? }
+
     subject { instance.errors.messages }
+
     it { is_expected.to include(:first_name) }
     it { is_expected.to include(:last_name) }
     it { is_expected.to include(:email) }
@@ -41,16 +43,19 @@ describe Events::Steps::PersonalDetails do
 
     context "when is_walk_in is nil" do
       before { instance.is_walk_in = nil }
+
       it { is_expected.to be(false) }
     end
 
     context "when is_walk_in is false" do
       before { instance.is_walk_in = false }
+
       it { is_expected.to be(false) }
     end
 
     context "when is_walk_in is true" do
       before { instance.is_walk_in = true }
+
       it { is_expected.to be(true) }
     end
   end

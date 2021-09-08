@@ -73,11 +73,13 @@ describe Events::Steps::PersonalisedUpdates do
 
     context "with mailing_list question answered as yes" do
       let(:mailing_list) { true }
+
       it { is_expected.not_to be_skipped }
     end
 
     context "with mailing_list question answered as no" do
       let(:mailing_list) { false }
+
       it { is_expected.to be_skipped }
     end
   end

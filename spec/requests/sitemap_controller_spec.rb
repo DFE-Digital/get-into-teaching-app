@@ -28,6 +28,7 @@ RSpec.describe SitemapController do
 
   describe "#show" do
     let(:sitemap_namespace) { "http://www.sitemaps.org/schemas/sitemap/0.9" }
+
     specify "the document should have the correct namespace" do
       expect(subject.at_xpath("/xmlns:urlset").namespace.href).to eql(sitemap_namespace)
     end

@@ -53,31 +53,37 @@ describe Content::QuoteComponent, type: :component do
 
   context "when name is not specified" do
     let(:name) { nil }
+
     it { is_expected.not_to have_css(".author cite.name") }
   end
 
   context "when job_title is not specified" do
     let(:job_title) { nil }
+
     it { is_expected.not_to have_css(".author cite.job-title") }
   end
 
   context "when cta is not specified" do
     let(:cta) { nil }
+
     it { is_expected.not_to have_link }
   end
 
   context "when image is not specified" do
     let(:image) { nil }
+
     it { is_expected.not_to have_css("img") }
   end
 
   context "when inline right" do
     let(:inline) { "right" }
+
     it { is_expected.to have_css(".quote--inline-right") }
   end
 
   context "when inline left" do
     let(:inline) { "left" }
+
     it { is_expected.to have_css(".quote--inline-left") }
   end
 
@@ -86,6 +92,7 @@ describe Content::QuoteComponent, type: :component do
     let(:job_title) { nil }
     let(:image) { nil }
     let(:cta) { nil }
+
     it { is_expected.not_to have_css(".footer") }
   end
 

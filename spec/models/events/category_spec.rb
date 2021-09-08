@@ -54,6 +54,7 @@ RSpec.describe Events::Category do
 
     context "with no events for category id" do
       let(:category_name) { "Online event" }
+
       it { is_expected.to be_nil }
     end
   end

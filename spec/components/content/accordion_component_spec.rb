@@ -47,6 +47,7 @@ describe Content::AccordionComponent, type: "component" do
 
     context "when there are no steps" do
       let(:steps) { {} }
+
       specify "nothing is rendered" do
         expect(page).not_to have_css(".accordions")
       end
@@ -65,6 +66,7 @@ describe Content::AccordionComponent, type: "component" do
 
       describe "when a call to action is specified" do
         let(:call_to_action) { "chat_online" }
+
         before { subject }
 
         specify "the title and content are rendered" do

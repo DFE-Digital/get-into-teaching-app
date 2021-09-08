@@ -19,6 +19,7 @@ describe MailingList::Steps::TeacherTraining do
 
   describe "#consideration_journey_stage_id" do
     let(:options) { consideration_journey_stage_types.map(&:id) }
+
     it { is_expected.to allow_value(options.first).for :consideration_journey_stage_id }
     it { is_expected.to allow_value(options.last).for :consideration_journey_stage_id }
     it { is_expected.not_to allow_value(nil).for :consideration_journey_stage_id }

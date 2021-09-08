@@ -57,6 +57,7 @@ RSpec.describe Pages::Navigation do
 
   describe "#root_pages" do
     subject { described_class.new(nav).root_pages }
+
     let(:actual_pages) { subject.map(&:path) }
 
     specify "contains only the root pages" do
@@ -169,6 +170,7 @@ RSpec.describe Pages::Navigation do
 
     describe "#children" do
       let(:nav) { Pages::Navigation.new(page_five_subpages.merge(page_six_subpages)) }
+
       subject { described_class.new(nav, "/page-five", { title: "Five", rank: 5, menu: true }) }
 
       specify "contains the right number of children" do

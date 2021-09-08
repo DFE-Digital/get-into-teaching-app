@@ -2,6 +2,7 @@ require "rails_helper"
 
 RSpec.describe CallsToAction::ChatOnlineComponent, type: :component do
   let(:component) { described_class.new }
+
   before { render_inline(component) }
 
   specify "renders a call to action" do

@@ -144,6 +144,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
     subject { page }
 
     before { visit "/" }
+
     let(:document) { Nokogiri.parse(page.body) }
 
     let(:navigation_pages) { Pages::Frontmatter.select(:navigation) }

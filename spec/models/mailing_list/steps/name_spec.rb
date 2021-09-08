@@ -21,6 +21,7 @@ describe MailingList::Steps::Name do
 
   describe "validations" do
     subject { instance.tap(&:valid?).errors.messages }
+
     it { is_expected.to include(:first_name) }
     it { is_expected.to include(:last_name) }
     it { is_expected.to include(:email) }
@@ -42,6 +43,7 @@ describe MailingList::Steps::Name do
 
   describe "validations for channel_id" do
     let(:options) { channels.map(&:id) }
+
     it { is_expected.to allow_values(options).for :channel_id }
     it { is_expected.to allow_value(nil, "").for :channel_id }
     it { is_expected.not_to allow_value(12_345).for :channel_id }

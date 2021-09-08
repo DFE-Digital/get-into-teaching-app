@@ -138,6 +138,7 @@ describe EventsController do
 
       describe "the response body" do
         subject { response.body }
+
         let(:parsed_response) { Nokogiri.parse(response.body) }
 
         it { is_expected.to include(event.name) }

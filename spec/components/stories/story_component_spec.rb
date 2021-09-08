@@ -92,6 +92,7 @@ describe Stories::StoryComponent, type: "component" do
 
   describe "content" do
     let(:content) { "The quick brown fox" }
+
     subject do
       render_inline(described_class.new(front_matter)) do
         content

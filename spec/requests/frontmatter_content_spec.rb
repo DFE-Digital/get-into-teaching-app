@@ -3,6 +3,7 @@ require "rails_helper"
 describe "ensuring frontmatter from content pages is rendered" do
   context "with an accordion layout" do
     before { get "/content-page" }
+
     subject { response.body }
 
     it { expect(response).to have_http_status(200) }
@@ -23,7 +24,9 @@ describe "ensuring frontmatter from content pages is rendered" do
 
   context "with a different heading and title" do
     before { get "/custom-heading" }
+
     subject { response.body }
+
     let(:document) { Nokogiri.parse(response.body) }
 
     it { expect(response).to have_http_status(200) }

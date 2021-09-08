@@ -13,16 +13,19 @@ describe Events::Search do
 
   describe "#period" do
     subject { described_class.new.period }
+
     it { is_expected.to eq(:future) }
   end
 
   describe ".available_distance_keys" do
     subject { described_class.new.available_distance_keys }
+
     it { is_expected.to eql [nil, 10, 25] }
   end
 
   describe ".available_event_type_ids" do
     subject { described_class.new.available_event_type_ids }
+
     it { is_expected.to eql GetIntoTeachingApiClient::Constants::EVENT_TYPES.except("Question Time").values }
   end
 
@@ -33,6 +36,7 @@ describe Events::Search do
 
   describe "#available_months" do
     before { travel_to(DateTime.new(2020, 11, 10)) }
+
     subject { described_class.new(period: period).available_months }
 
     context "when period is future" do
@@ -141,6 +145,7 @@ describe Events::Search do
     let(:default_limit) { described_class::RESULTS_PER_TYPE }
 
     subject { build :events_search }
+
     before { allow(subject).to receive(:valid?).and_return is_valid }
 
     let(:expected_attributes) do
@@ -156,6 +161,7 @@ describe Events::Search do
 
     context "when valid" do
       let(:is_valid) { true }
+
       after { subject.send(:query_events) }
 
       it "calls the API" do
@@ -186,6 +192,7 @@ describe Events::Search do
 
       context "when searching a future period" do
         let(:travel_date) { DateTime.new(2020, 1, 10).utc }
+
         before { travel_to(travel_date) }
 
         context "when the month is nil" do
@@ -200,6 +207,7 @@ describe Events::Search do
 
         context "when the month is the current month" do
           let(:date) { travel_date }
+
           subject { build(:events_search, month: date.to_formatted_s(:humanmonthyear)).tap(&:validate) }
 
           it "searches from the beginning of today to the end of the current month" do
@@ -211,6 +219,7 @@ describe Events::Search do
 
         context "when the month is the next month" do
           let(:date) { travel_date.advance(months: 1) }
+
           subject { build(:events_search, month: date.to_formatted_s(:humanmonthyear)).tap(&:validate) }
 
           it "searches from the start of the next month to the end" do
@@ -224,6 +233,7 @@ describe Events::Search do
       context "when searching a past period" do
         let(:travel_date) { DateTime.new(2020, 1, 10).utc }
         let(:day_before_travel_date) { travel_date.advance(days: -1) }
+
         before { travel_to(travel_date) }
 
         context "when the month is nil" do
@@ -238,6 +248,7 @@ describe Events::Search do
 
         context "when the month is the current month" do
           let(:date) { travel_date }
+
           subject { build(:events_search, month: date.to_formatted_s(:humanmonthyear), period: :past).tap(&:validate) }
 
           it "searches from the beginning of the month to the end of yesterday" do
@@ -249,6 +260,7 @@ describe Events::Search do
 
         context "when the month is the previous month" do
           let(:date) { travel_date.advance(months: -1) }
+
           subject { build(:events_search, month: date.to_formatted_s(:humanmonthyear), period: :past).tap(&:validate) }
 
           it "searches from the start of the previous month to the end" do

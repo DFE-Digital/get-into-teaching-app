@@ -70,6 +70,7 @@ RSpec.describe Pages::Frontmatter do
 
   describe ".select_by_path" do
     let(:wanted_path) { "/subfolder" }
+
     subject { described_class.select_by_path(wanted_path, content_dir) }
 
     before { expect_any_instance_of(described_class).to receive(:select_by_path).and_call_original }

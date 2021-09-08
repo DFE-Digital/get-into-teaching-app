@@ -12,6 +12,7 @@ RSpec.describe BasicAuth do
 
   describe ".env_requires_auth?" do
     before { allow(Rails.application.config.x).to receive(:basic_auth) { basic_auth } }
+
     subject { instance.env_requires_auth? }
 
     basic_auth_values = {

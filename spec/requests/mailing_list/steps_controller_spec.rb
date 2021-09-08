@@ -17,13 +17,17 @@ describe MailingList::StepsController do
 
   describe "#index" do
     before { get mailing_list_steps_path(query: "param") }
+
     subject { response }
+
     it { is_expected.to redirect_to(mailing_list_step_path({ id: :name, query: "param" })) }
   end
 
   describe "#show" do
     before { get step_path }
+
     subject { response }
+
     it { is_expected.to have_http_status :success }
 
     context "with an invalid step" do
@@ -91,16 +95,19 @@ describe MailingList::StepsController do
 
     context "with valid data" do
       let(:details_params) { attributes_for(:mailing_list_name) }
+
       it { is_expected.to redirect_to mailing_list_step_path("authenticate") }
     end
 
     context "with invalid data" do
       let(:details_params) { { "first_name" => "test" } }
+
       it { is_expected.to have_http_status :success }
     end
 
     context "with no data" do
       let(:details_params) { {} }
+
       it { is_expected.to have_http_status :success }
     end
 
@@ -126,7 +133,9 @@ describe MailingList::StepsController do
         before do
           allow_any_instance_of(model).to receive(:valid?).and_return true
         end
+
         let(:details_params) { attributes_for :"mailing_list_#{model.key}" }
+
         it { is_expected.to redirect_to mailing_list_step_path steps.first.key }
       end
     end
@@ -137,6 +146,7 @@ describe MailingList::StepsController do
       get completed_mailing_list_steps_path
       response
     end
+
     it { is_expected.to have_http_status :success }
   end
 end

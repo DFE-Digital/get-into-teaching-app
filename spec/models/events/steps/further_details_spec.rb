@@ -30,6 +30,7 @@ describe Events::Steps::FurtherDetails do
 
     describe "#already_subscribed_to_mailing_list" do
       let(:backingstore) { { "already_subscribed_to_mailing_list" => true } }
+
       it { is_expected.to allow_value("1").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("0").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("").for :subscribe_to_mailing_list }
@@ -37,6 +38,7 @@ describe Events::Steps::FurtherDetails do
 
     describe "#already_subscribed_to_teacher_training_adviser" do
       let(:backingstore) { { "already_subscribed_to_teacher_training_adviser" => true } }
+
       it { is_expected.to allow_value("1").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("0").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("").for :subscribe_to_mailing_list }

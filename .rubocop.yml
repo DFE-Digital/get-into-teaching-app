@@ -68,18 +68,6 @@ RSpec/DescribeClass:
   Exclude:
     - spec/**/*.rb
 
-RSpec/EmptyLineAfterFinalLet:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/EmptyLineAfterHook:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/EmptyLineAfterSubject:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/ExampleLength:
   Exclude:
     - spec/**/*.rb

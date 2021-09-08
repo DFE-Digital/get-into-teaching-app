@@ -75,42 +75,52 @@ describe StaticPages do
 
   describe "#filtered_page_template" do
     let(:params) { { page: template } }
+
     before { allow(tester).to receive(:params).and_return params }
+
     subject { tester.send :filtered_page_template }
 
     context "with valid page template" do
       let(:template) { "hello" }
+
       it { is_expected.to eql "hello" }
     end
 
     context "with nested template" do
       let(:template) { "hello/world" }
+
       it { is_expected.to eql "hello/world" }
     end
 
     context "with invalid page template" do
       let(:template) { "invalid!" }
+
       it { expect { subject }.to raise_exception StaticPages::InvalidTemplateName }
     end
 
     context "with param linking to parent page" do
       let(:template) { "../../secrets.txt" }
+
       it { expect { subject }.to raise_exception StaticPages::InvalidTemplateName }
     end
 
     context "with file extension" do
       let(:template) { "stories/how-i-got-into-teaching.html" }
+
       it { is_expected.to eql "stories/how-i-got-into-teaching.html" }
     end
 
     context "with numbers in name" do
       let(:template) { "stories/my-top-10" }
+
       it { is_expected.to eql "stories/my-top-10" }
     end
 
     context "with custom page value" do
       let(:params) { { story: "hello" } }
+
       subject { tester.send :filtered_page_template, :story }
+
       it { is_expected.to eql "hello" }
     end
   end

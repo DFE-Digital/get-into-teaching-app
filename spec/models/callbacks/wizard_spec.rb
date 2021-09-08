@@ -13,6 +13,7 @@ describe Callbacks::Wizard do
     }
   end
   let(:wizardstore) { Wizard::Store.new store[uuid], {} }
+
   subject { described_class.new wizardstore, "privacy_policy" }
 
   describe ".steps" do

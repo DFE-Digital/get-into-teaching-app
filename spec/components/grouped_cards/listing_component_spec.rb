@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe GroupedCards::ListingComponent, type: "component" do
   subject { render_inline(instance) && page }
+
   let(:custom_description) { "a very nice card indeed" }
 
   let(:instance) { described_class.new data }

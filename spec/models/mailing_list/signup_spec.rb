@@ -38,6 +38,7 @@ describe MailingList::Signup do
 
     describe "#channel_id" do
       let(:options) { channels.map(&:id) }
+
       it { is_expected.to allow_values(options).for(:channel_id) }
       it { is_expected.to allow_value(nil, "").for(:channel_id) }
       it { is_expected.not_to allow_value(12_345).for(:channel_id) }
@@ -96,6 +97,7 @@ describe MailingList::Signup do
 
     describe "#accept_privacy_policy" do
       let(:message) { "Accept the terms and conditions to continue" }
+
       it { is_expected.to validate_presence_of(:accept_privacy_policy).with_message(message) }
       it { is_expected.to validate_acceptance_of(:accept_privacy_policy).with_message(message) }
     end
