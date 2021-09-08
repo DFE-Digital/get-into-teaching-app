@@ -39,8 +39,8 @@ describe MailingList::Wizard do
 
     before do
       allow(subject).to receive(:valid?) { true }
-      expect_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-        receive(:add_mailing_list_member).with(request).once
+      allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+        receive(:add_mailing_list_member).with(request)
       allow(Rails.logger).to receive(:info)
       subject.complete!
     end
@@ -60,7 +60,7 @@ describe MailingList::Wizard do
     let(:response) { GetIntoTeachingApiClient::MailingListAddMember.new(candidateId: "123", email: "12345") }
 
     before do
-      expect_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+      allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
         receive(:exchange_access_token_for_mailing_list_add_member)
         .with(totp, request) { response }
     end

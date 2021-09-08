@@ -62,7 +62,7 @@ describe PagesController, type: :request do
 
     context "with invalid page" do
       before do
-        expect_any_instance_of(described_class).to \
+        allow_any_instance_of(described_class).to \
           receive(:render).with(status: :not_found, body: nil).and_call_original
 
         get "/../../secrets.txt"

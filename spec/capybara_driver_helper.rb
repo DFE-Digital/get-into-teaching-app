@@ -22,13 +22,13 @@ end
 
 Capybara.default_max_wait_time = 2
 RSpec.configure do |config|
-  config.before(:each) do |example|
+  config.before do |example|
     Capybara.current_driver = JS_DRIVER if example.metadata[:js]
     Capybara.current_driver = :selenium if example.metadata[:selenium]
     Capybara.current_driver = :selenium_chrome if example.metadata[:selenium_chrome]
   end
 
-  config.after(:each) do
+  config.after do
     Capybara.use_default_driver
   end
 end

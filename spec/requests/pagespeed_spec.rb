@@ -18,7 +18,7 @@ describe "Page Speed Task", type: :request do
     let(:pagespeed_env) { true }
 
     before do
-      expect_any_instance_of(PageSpeedScore).to receive(:fetch)
+      allow_any_instance_of(PageSpeedScore).to receive(:fetch)
     end
 
     it "returns 204" do

@@ -49,11 +49,12 @@ describe Events::Steps::FurtherDetails do
     context "when invalid" do
       before do
         subject.privacy_policy = nil
-        expect_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).not_to \
-          receive(:get_latest_privacy_policy)
       end
 
       it "does not update the store" do
+        expect_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).not_to \
+          receive(:get_latest_privacy_policy)
+
         expect(subject).not_to be_valid
         subject.save
         expect(wizardstore["subscribe_to_mailing_list"]).to be_nil
