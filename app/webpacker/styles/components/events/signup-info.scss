@@ -29,10 +29,6 @@
 
   p {
     @include font-size("xsmall");
-
-    &.sign-up-for {
-      margin: .2em 0 1em;
-    }
   }
 
   .event-box__divider.thin {
