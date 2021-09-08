@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Mailing list calls to action" do
+describe "Mailing list calls to action", type: :request do
   describe "banner" do
     before { get root_path }
 

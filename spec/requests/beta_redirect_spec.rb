@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Redirecting beta-getintoteaching.education.gov.uk to getintoteaching.education.gov.uk", type: "request" do
+describe "Redirecting beta-getintoteaching.education.gov.uk to getintoteaching.education.gov.uk", type: :request do
   before { allow(Rails.configuration.x).to receive(:enable_beta_redirects).and_return(true) }
 
   before { host!("beta-getintoteaching.education.gov.uk") }

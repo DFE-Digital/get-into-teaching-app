@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Find an event near you" do
+describe "Find an event near you", type: :request do
   include_context "with stubbed types api"
 
   let(:no_events_regex) { /Sorry your search has not found any events/ }

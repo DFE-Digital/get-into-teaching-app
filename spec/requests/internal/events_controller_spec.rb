@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Internal::EventsController do
+describe Internal::EventsController, type: :request do
   let(:pending_provider_event) do
     build(:event_api,
           :with_provider_info,

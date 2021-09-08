@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "reading the blog" do
+describe "reading the blog", type: :feature do
   let(:tag) { Pages::Blog.popular_tags(1).first }
 
   scenario "browsing to a popular tag" do

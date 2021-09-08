@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "rendering pages with a custom layout" do
+describe "rendering pages with a custom layout", type: :request do
   context "with a home page layout" do
     before { get "/home-page" }
 

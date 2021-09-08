@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Next Gen Images" do
+describe "Next Gen Images", type: :request do
   before do
     allow(File).to receive(:exist?).and_call_original
     allow(File).to receive(:exist?).with(/.*\.svg/) { true }

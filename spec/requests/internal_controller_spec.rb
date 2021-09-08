@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe InternalController do
+describe InternalController, type: :request do
   let(:publisher_username) { "publisher_username" }
   let(:publisher_password) { "publisher_password" }
   let(:author_username) { "author_username" }

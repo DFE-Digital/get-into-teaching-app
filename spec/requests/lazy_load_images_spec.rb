@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Lazy Load Images" do
+describe "Lazy Load Images", type: :request do
   before do
     get root_path
   end

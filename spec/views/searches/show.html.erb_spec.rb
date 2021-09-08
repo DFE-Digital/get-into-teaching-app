@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "searches/show.html.erb" do
+describe "searches/show.html.erb", type: :view do
   subject { rendered }
 
   before { allow(model).to receive(:results).and_return results }

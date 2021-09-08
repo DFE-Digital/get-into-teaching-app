@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe CookiePreferencesController do
+describe CookiePreferencesController, type: :request do
   subject { response }
 
   describe "#show" do

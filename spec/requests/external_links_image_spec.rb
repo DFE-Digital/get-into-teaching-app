@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "External link images" do
+describe "External link images", type: :request do
   excluded_classes = %w[button]
   before { get "/ways-to-train" }
 

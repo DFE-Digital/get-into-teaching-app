@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "CSP violation reporting" do
+describe "CSP violation reporting", type: :request do
   let(:params) { { "csp-report" => { "blocked-uri" => "https://malicious.com/script.js" } } }
 
   before do

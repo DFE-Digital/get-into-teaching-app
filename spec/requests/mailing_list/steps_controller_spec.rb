@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe MailingList::StepsController do
+describe MailingList::StepsController, type: :request do
   include_context "with stubbed types api"
   include_context "with stubbed candidate create access token api"
   include_context "with stubbed latest privacy policy api"
