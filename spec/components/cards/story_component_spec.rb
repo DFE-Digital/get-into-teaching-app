@@ -57,6 +57,7 @@ describe Cards::StoryComponent, type: "component" do
 
   context "with no header and unknown page" do
     let(:page_data) { Pages::Data.new }
+
     it { is_expected.not_to have_css ".card header" }
   end
 end

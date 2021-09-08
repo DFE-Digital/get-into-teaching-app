@@ -43,6 +43,7 @@ describe Internal::EventsController do
 
           get internal_events_path, headers: generate_auth_headers(:author), params: { event_type: event_type }
         end
+
         it "shows a no events banner" do
           assert_response :success
           expect(response.body).to include("No pending events")
@@ -145,6 +146,7 @@ describe Internal::EventsController do
 
   describe "#show" do
     let(:event_to_get_readable_id) { "1" }
+
     context "when any user type" do
       context "when the event is pending" do
         before do
@@ -153,6 +155,7 @@ describe Internal::EventsController do
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
+
         it "shows pending events" do
           assert_response :success
           expect(response.body).to include("This is a pending event")
@@ -167,6 +170,7 @@ describe Internal::EventsController do
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
+
         it "redirects to not found" do
           assert_response :not_found
           expect(response.body).to include "Page not found"
@@ -182,6 +186,7 @@ describe Internal::EventsController do
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
+
         it "does not have a final submit button" do
           assert_response :success
           expect(response.body).to_not include "Submit this provider event"
@@ -197,6 +202,7 @@ describe Internal::EventsController do
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:publisher)
         end
+
         it "has a final submit button" do
           assert_response :success
           expect(response.body).to include "Set event status to Open"
@@ -223,6 +229,7 @@ describe Internal::EventsController do
     context "when any user type" do
       context "when event is duplicated" do
         let(:event_to_duplicate_readable_id) { "1" }
+
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [] }
@@ -264,6 +271,7 @@ describe Internal::EventsController do
 
   describe "#edit" do
     let(:event_to_edit_readable_id) { "1" }
+
     context "when any user type" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
@@ -290,6 +298,7 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
         end
+
         let(:building_id) { pending_provider_event.building.id }
         let(:expected_request_body) do
           build(:event_api,
@@ -319,6 +328,7 @@ describe Internal::EventsController do
                            :provider_event,
                            { "venue_type": Internal::Event::VENUE_TYPES[:existing], "building": { "id": building_id } }
           end
+
           it "posts the event and an existing building" do
             expected_request_body.building =
               build(:event_building_api, { id: params[:building][:id] })
@@ -340,6 +350,7 @@ describe Internal::EventsController do
                              :provider_event,
                              { "venue_type": Internal::Event::VENUE_TYPES[:none], "building": { "id": "" } })
             end
+
             it "does not post a building" do
               expected_request_body.building = nil
 
@@ -367,6 +378,7 @@ describe Internal::EventsController do
                                    "venue": expected_venue,
                                    "address_postcode": expected_postcode } }
             end
+
             it "does not post a building" do
               expected_request_body.building =
                 build(:event_building_api, {
@@ -447,6 +459,7 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [] }
         end
+
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
           event.tap do |event|
@@ -549,6 +562,7 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [] }
         end
+
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
           event.tap do |event|

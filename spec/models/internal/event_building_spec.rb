@@ -59,6 +59,7 @@ describe Internal::EventBuilding do
         image_url: api_building.image_url,
       )
     end
+
     it "should have correct attributes" do
       expect(described_class.initialize_with_api_building(api_building)).to have_attributes(expected_attributes)
     end
@@ -78,6 +79,7 @@ describe Internal::EventBuilding do
         address_postcode: internal_building.address_postcode,
       )
     end
+
     it "should have correct attributes" do
       expect(internal_building.to_api_building).to have_attributes(expected_api_building_attributes)
     end

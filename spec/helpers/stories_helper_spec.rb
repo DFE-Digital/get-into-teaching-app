@@ -18,6 +18,7 @@ describe StoriesHelper, type: "helper" do
 
   describe "#story_image_alt" do
     let(:name) { "David" }
+
     subject { helper.story_image_alt(name) }
 
     specify %(returns string 'A photograph of' followed by the supplied name) do
@@ -27,6 +28,7 @@ describe StoriesHelper, type: "helper" do
 
   describe "#youtube" do
     let(:url) { "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
+
     subject { helper.youtube(url) }
 
     specify %(should generate an iframe with the data-src attribute set to the video's URL) do
@@ -36,6 +38,7 @@ describe StoriesHelper, type: "helper" do
 
   describe "#more_stories_thumbnail" do
     let(:path) { "/assets/mugshots/elizabeth_hoover.jpg" }
+
     subject { helper.more_stories_thumbnail(path) }
 
     specify %(should generate a div with the background image set to the provided path) do

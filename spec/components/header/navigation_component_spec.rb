@@ -12,6 +12,7 @@ describe Header::NavigationComponent, type: "component" do
   end
 
   let(:component) { described_class.new(resources: resources, extra_resources: extra_resources) }
+
   subject! { render_inline(component) }
 
   specify "renders a primary navigation list" do

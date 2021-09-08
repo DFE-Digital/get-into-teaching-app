@@ -13,6 +13,7 @@ RSpec.feature "Breadcrumbs", type: :feature do
   end
 
   before { visit path }
+
   subject { page }
 
   context "when visiting the home page" do

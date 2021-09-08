@@ -20,6 +20,7 @@ describe "View events by category" do
 
   context "when viewing a category archive" do
     let(:category) { "online-q-as" }
+
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type) { events_by_type }

@@ -75,6 +75,7 @@ describe Events::GroupPresenter do
 
       context "when descending" do
         let(:ascending) { false }
+
         it "sorts events of the same type by date, descending" do
           expect(subject.sorted_events_by_type.to_h[type_id]).to eql([late, middle, early])
         end

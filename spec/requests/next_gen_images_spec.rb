@@ -6,6 +6,7 @@ describe "Next Gen Images" do
     allow(File).to receive(:exist?).with(/.*\.svg/) { true }
     get root_path
   end
+
   subject { response.body }
 
   it do

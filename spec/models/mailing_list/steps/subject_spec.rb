@@ -19,6 +19,7 @@ describe MailingList::Steps::Subject do
 
   describe "#preferred_teaching_subject_id" do
     let(:options) { teaching_subject_types.map(&:id) }
+
     it { is_expected.to allow_value(options.first).for :preferred_teaching_subject_id }
     it { is_expected.to allow_value(options.last).for :preferred_teaching_subject_id }
     it { is_expected.not_to allow_value(nil).for :preferred_teaching_subject_id }

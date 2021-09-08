@@ -14,6 +14,7 @@ describe EmailFormatValidator do
   end
 
   before { instance.valid? }
+
   subject { instance.errors.to_hash }
 
   context "with invalid addresses" do

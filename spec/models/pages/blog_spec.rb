@@ -20,6 +20,7 @@ RSpec.describe Pages::Blog do
 
   describe ".find" do
     before { allow(Pages::Page).to receive(:find).with("/some/template").and_return("/some_template.md") }
+
     subject { described_class }
 
     specify "calls the other method" do
@@ -44,6 +45,7 @@ RSpec.describe Pages::Blog do
 
     context "when filtering by a single tag" do
       let(:wanted_tag) { "august" }
+
       subject { described_class.new(pages) }
 
       specify "return the right number of posts" do
@@ -101,6 +103,7 @@ RSpec.describe Pages::Blog do
 
     context "when a limit is applied" do
       let(:limit) { 2 }
+
       subject { described_class.new(pages).similar_posts(origin, limit) }
 
       specify "only the right number of posts are returned" do

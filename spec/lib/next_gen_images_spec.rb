@@ -8,6 +8,7 @@ describe NextGenImages do
     let(:instance) { described_class.new(body) }
 
     before { allow(File).to receive(:exist?) { false } }
+
     before { allow(File).to receive(:exist?).with("#{Rails.public_path}/#{original_src}") { true } }
 
     subject { instance.html }

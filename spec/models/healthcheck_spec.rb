@@ -92,12 +92,14 @@ describe Healthcheck do
 
     context "with no configured connection" do
       before { allow(ENV).to receive(:[]).with("REDIS_URL").and_return nil }
+
       it { is_expected.to be nil }
     end
   end
 
   describe "#to_h" do
     subject { described_class.new.to_h }
+
     it { is_expected.to include :app_sha }
     it { is_expected.to include :content_sha }
     it { is_expected.to include :api }
@@ -106,6 +108,7 @@ describe Healthcheck do
 
   describe "#to_json" do
     subject { JSON.parse described_class.new.to_json }
+
     it { is_expected.to include "app_sha" }
     it { is_expected.to include "content_sha" }
     it { is_expected.to include "api" }

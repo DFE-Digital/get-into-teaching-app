@@ -32,6 +32,7 @@ RSpec.describe Search do
 
     context "with mismatched case" do
       let(:search) { "tEaCh" }
+
       it { is_expected.to have_attributes length: 3 }
       it { is_expected.to include(a_hash_including(path: "/first")) }
       it { is_expected.to include(a_hash_including(path: "/second")) }

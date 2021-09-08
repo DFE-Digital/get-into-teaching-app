@@ -3,6 +3,7 @@ require "rails_helper"
 describe "External link images" do
   excluded_classes = %w[button]
   before { get "/ways-to-train" }
+
   subject { response.body }
 
   context "when external link and not #{excluded_classes.join(' ')}" do

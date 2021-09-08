@@ -11,6 +11,7 @@ describe Events::Wizard do
     } }
   end
   let(:wizardstore) { Wizard::Store.new store[uuid], {} }
+
   subject { described_class.new wizardstore, "personalised_updates" }
 
   describe ".steps" do

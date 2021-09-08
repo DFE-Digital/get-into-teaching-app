@@ -7,6 +7,7 @@ describe "LID tracking pixels" do
   end
 
   before { get path }
+
   subject { response.body }
 
   context "when visiting /events" do

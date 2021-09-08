@@ -150,6 +150,7 @@ describe Internal::Event do
           provider_website_url: api_event.provider_website_url,
         ).slice(described_class.attribute_names)
       end
+
       context "with building" do
         let(:expected_building_attributes) { attributes_for(:event_building_api, id: api_event.building.id) }
 
@@ -236,6 +237,7 @@ describe Internal::Event do
   describe "#type_id=" do
     context "when event is initialised with 'online' event_type" do
       subject { described_class.new({ type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }) }
+
       it "sets 'is_online' to true" do
         expect(subject.is_online).to be true
       end
@@ -319,6 +321,7 @@ describe Internal::Event do
       context "when id is present" do
         let(:building) { build(:event_building_api) }
         let(:attributes) { attributes_for(:event_building_api, id: building.id) }
+
         it "sets building based on id" do
           event = described_class.new
           event.venue_type = described_class::VENUE_TYPES[:existing]
@@ -329,6 +332,7 @@ describe Internal::Event do
 
         context "when id is not present" do
           let(:building) { build(:event_building_api, id: nil) }
+
           it "returns nil" do
             event = described_class.new
             event.venue_type = described_class::VENUE_TYPES[:existing]
@@ -340,6 +344,7 @@ describe Internal::Event do
 
     context "when the venue type is add and an id is present" do
       let(:building) { attributes_for(:event_building) }
+
       it "sets building with no id" do
         event = described_class.new
         event.venue_type = described_class::VENUE_TYPES[:add]
@@ -351,6 +356,7 @@ describe Internal::Event do
 
     context "when the venue type is none" do
       let(:building) { attributes_for(:event_building) }
+
       it "returns nil" do
         event = described_class.new
         event.venue_type = described_class::VENUE_TYPES[:none]

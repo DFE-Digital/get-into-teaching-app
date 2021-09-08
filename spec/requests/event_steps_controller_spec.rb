@@ -25,13 +25,17 @@ describe EventStepsController do
 
   describe "#index" do
     before { get event_steps_path("123", query: "param") }
+
     subject { response }
+
     it { is_expected.to redirect_to(event_step_path("123", { id: :personal_details, query: "param" })) }
   end
 
   describe "#show" do
     before { get step_path }
+
     subject { response }
+
     it { is_expected.to have_http_status :success }
 
     context "when the event is closed" do
@@ -60,6 +64,7 @@ describe EventStepsController do
       end
 
       before { get event_steps_path("456") }
+
       subject { response }
 
       it { is_expected.to have_http_status :not_found }
@@ -68,6 +73,7 @@ describe EventStepsController do
 
   describe "#update" do
     let(:key) { model.model_name.param_key }
+
     subject do
       patch step_path, params: { key => details_params }
       response
@@ -75,16 +81,19 @@ describe EventStepsController do
 
     context "with valid data" do
       let(:details_params) { attributes_for(:events_personal_details) }
+
       it { is_expected.to redirect_to authenticate_path }
     end
 
     context "with invalid data" do
       let(:details_params) { { "first_name" => "test" } }
+
       it { is_expected.to have_http_status :success }
     end
 
     context "with no data" do
       let(:details_params) { {} }
+
       it { is_expected.to have_http_status :success }
     end
 
@@ -106,14 +115,17 @@ describe EventStepsController do
           allow_any_instance_of(Events::Wizard).to \
             receive(:add_attendee_to_event).and_return true
         end
+
         let(:model) { Events::Steps::PersonalisedUpdates }
         let(:details_params) { attributes_for(:events_personalised_updates) }
+
         it { is_expected.to redirect_to completed_event_steps_path(readable_event_id) }
       end
 
       context "when invalid steps" do
         let(:model) { Events::Steps::PersonalisedUpdates }
         let(:details_params) { attributes_for(:events_personalised_updates) }
+
         it do
           is_expected.to redirect_to \
             event_step_path(readable_event_id, "personal_details")
@@ -127,6 +139,7 @@ describe EventStepsController do
       get completed_event_steps_path(readable_event_id)
       response
     end
+
     it { is_expected.to have_http_status :success }
   end
 end

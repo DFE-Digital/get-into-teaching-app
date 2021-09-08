@@ -3,6 +3,7 @@ require "rails_helper"
 describe "Mailing list calls to action" do
   describe "banner" do
     before { get root_path }
+
     subject { Nokogiri.parse(response.body) }
 
     it "the mailing list banner has a close link" do

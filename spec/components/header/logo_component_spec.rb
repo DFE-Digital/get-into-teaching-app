@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe Header::LogoComponent, type: "component" do
   let(:component) { described_class.new }
+
   subject! { render_inline(component) }
 
   specify "renders the logo wrapper with the get into teaching and DfE logos" do

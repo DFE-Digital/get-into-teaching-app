@@ -45,14 +45,18 @@ describe PagesController do
 
     context "with unknown page" do
       before { get "/testing/unknown" }
+
       subject { response }
+
       it { is_expected.to have_http_status :not_found }
       it { is_expected.to have_attributes body: %r{Page not found} }
     end
 
     context "with cookies page" do
       before { get "/cookies" }
+
       subject { response }
+
       it { is_expected.to have_http_status(:success) }
     end
 
@@ -77,16 +81,19 @@ describe PagesController do
 
     context "with /tta-service url" do
       before { get "/tta-service" }
+
       it { is_expected.to redirect_to "https://tta-service/" }
     end
 
     context "with /tta url" do
       before { get "/tta" }
+
       it { is_expected.to redirect_to "https://tta-service/" }
     end
 
     context "with utm params" do
       before { get "/tta-service?utm_test=abc&test=def" }
+
       it { is_expected.to redirect_to "https://tta-service/?utm_test=abc" }
     end
   end

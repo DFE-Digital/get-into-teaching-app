@@ -4,6 +4,7 @@ describe "searches/show.html.erb" do
   subject { rendered }
 
   before { allow(model).to receive(:results).and_return results }
+
   before { assign(:search, model) && render }
 
   let(:model) { Search.new }

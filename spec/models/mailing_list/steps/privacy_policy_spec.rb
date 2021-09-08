@@ -9,6 +9,7 @@ describe MailingList::Steps::PrivacyPolicy do
 
   describe "validations" do
     subject { instance.tap(&:valid?).errors.messages }
+
     it { is_expected.to include(:accept_privacy_policy) }
   end
 

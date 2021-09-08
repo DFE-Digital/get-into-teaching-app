@@ -39,6 +39,7 @@ describe ApplicationHelper do
 
       context "with additional stimulus controller" do
         subject { analytics_body_tag(data: { controller: "atest" }) { tag.hr } }
+
         it { is_expected.to have_css "body[data-controller~=gtm]" }
         it { is_expected.to have_css "body[data-controller~=pinterest]" }
         it { is_expected.to have_css "body[data-controller~=snapchat]" }
@@ -61,6 +62,7 @@ describe ApplicationHelper do
 
       context "with blank service ids" do
         let(:id) { "" }
+
         it { is_expected.to have_css "body[data-analytics-gtm-id=\"\"]" }
         it { is_expected.to have_css "body[data-analytics-ga-id=\"\"]" }
         it { is_expected.to have_css "body[data-analytics-adwords-id=\"\"]" }
@@ -74,6 +76,7 @@ describe ApplicationHelper do
 
       context "with no service ids" do
         let(:id) { nil }
+
         it { is_expected.not_to have_css "body[data-analytics-gtm-id]" }
         it { is_expected.not_to have_css "body[data-analytics-ga-id]" }
         it { is_expected.not_to have_css "body[data-analytics-adwords-id]" }
@@ -97,6 +100,7 @@ describe ApplicationHelper do
 
     context "with other data attributes" do
       subject { analytics_body_tag(data: { timefmt: "24" }) { tag.hr } }
+
       it { is_expected.to have_css "body[data-controller~=gtm]" }
       it { is_expected.to have_css "body[data-analytics-gtm-id=1234]" }
       it { is_expected.to have_css "body[data-timefmt=24]" }
@@ -104,6 +108,7 @@ describe ApplicationHelper do
 
     context "with other attributes" do
       subject { analytics_body_tag(class: "homepage") { tag.hr } }
+
       it { is_expected.to have_css "body[data-controller~=gtm]" }
       it { is_expected.to have_css "body.homepage" }
     end
@@ -135,6 +140,7 @@ describe ApplicationHelper do
 
   describe "#fa_icon" do
     let(:icon_name) { "myspace" }
+
     subject { helper.fa_icon(icon_name) }
 
     it "returns an empty span with the default classes" do
@@ -143,6 +149,7 @@ describe ApplicationHelper do
 
     context "with FA styles" do
       let(:style) { "fad" }
+
       subject { helper.fa_icon(icon_name, style: style) }
 
       it "returns an empty span with provided style class" do
@@ -152,6 +159,7 @@ describe ApplicationHelper do
 
     context "with extra classes" do
       let(:extra_classes) { %w[abc def] }
+
       subject { helper.fa_icon(icon_name, *extra_classes) }
 
       it "returns an empty span with the extra classes" do
@@ -162,7 +170,9 @@ describe ApplicationHelper do
 
   describe "#fab_icon" do
     let(:icon_name) { "friendster" }
+
     subject { helper.fab_icon(icon_name) }
+
     after { subject }
 
     it %(it returns a span with class 'fab') do
@@ -172,7 +182,9 @@ describe ApplicationHelper do
 
   describe "#fas_icon" do
     let(:icon_name) { "orkut" }
+
     subject { helper.fas_icon(icon_name) }
+
     after { subject }
 
     it %(it returns a span with class 'fas') do
@@ -206,6 +218,7 @@ describe ApplicationHelper do
   describe "#chat_link" do
     let(:text) { "Chat with us" }
     let(:extra_class) { "button" }
+
     subject { helper.chat_link(text, classes: extra_class) }
 
     it %(generates a hyperlink) do

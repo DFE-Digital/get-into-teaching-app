@@ -6,6 +6,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
     let(:path) { "/example-page" }
 
     let(:component) { described_class.new(funding_widget, path) }
+
     before { render_inline(component) }
 
     it "builds a funding_widget form" do

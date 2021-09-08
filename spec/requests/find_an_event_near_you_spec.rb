@@ -20,6 +20,7 @@ describe "Find an event near you" do
 
   context "when landing on the page initially" do
     let(:expected_request_attributes) { { start_after: DateTime.now.utc.beginning_of_day } }
+
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type)

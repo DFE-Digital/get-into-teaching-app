@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe RobotsController do
   before { get("/robots.txt") }
+
   subject { response.body }
 
   it do
