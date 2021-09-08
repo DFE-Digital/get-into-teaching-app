@@ -49,12 +49,6 @@ interviews. A [teacher training adviser](/tta-service) can help you with all of 
 
 You can [search for most postgraduate teacher training courses on GOV.UK](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
-## Where to apply
-
-You can use [Apply for teacher training](https://www.gov.uk/apply-for-teacher-training) to apply for any postgraduate teacher training course.
-
-This service has replaced the UCAS postgraduate teacher training application. 
-
 ## When to apply
 
 Courses usually open for applications in October for entry the following year
