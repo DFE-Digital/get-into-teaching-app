@@ -1,8 +1,8 @@
 require "rails_helper"
 
 describe Wizard::Steps::Authenticate do
-  include_context "wizard step"
-  it_behaves_like "a wizard step"
+  include_context "with wizard step"
+  it_behaves_like "a with wizard step"
 
   before { allow(wizard).to receive(:exchange_access_token) { {} } }
 

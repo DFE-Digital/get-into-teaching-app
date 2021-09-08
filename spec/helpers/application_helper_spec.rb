@@ -175,7 +175,7 @@ describe ApplicationHelper do
 
     after { subject }
 
-    it %(it returns a span with class 'fab') do
+    it "returns a span with class 'fab'" do
       expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fab")
     end
   end
@@ -187,7 +187,7 @@ describe ApplicationHelper do
 
     after { subject }
 
-    it %(it returns a span with class 'fas') do
+    it "returns a span with class 'fas'" do
       expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fas")
     end
   end
@@ -221,19 +221,19 @@ describe ApplicationHelper do
 
     subject { helper.chat_link(text, classes: extra_class) }
 
-    it %(generates a hyperlink) do
+    it "generates a hyperlink" do
       expect(subject).to have_css("a")
     end
 
-    it %(has the right data controller) do
+    it "has the right data controller" do
       expect(subject).to have_css(%(a[data-controller="talk-to-us"]))
     end
 
-    it %(has the right data action) do
+    it "has the right data action" do
       expect(subject).to have_css(%(a[data-action="talk-to-us#startChat"]))
     end
 
-    it %(applies the correct class) do
+    it "applies the correct class" do
       expect(subject).to have_css(%(a.button))
     end
   end

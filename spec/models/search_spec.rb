@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Search do
-  include_context "use fixture markdown pages"
+  include_context "with fixture markdown pages"
 
   describe "#results" do
     subject { described_class.new(search: search).results }

@@ -11,7 +11,7 @@ class StoredPage
 end
 
 RSpec.feature "content pages check", type: :feature, content: true do
-  include_context "stub types api"
+  include_context "with stubbed types api"
 
   let(:other_paths) { %w[/ /blog /search /tta-service /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
   let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}] }

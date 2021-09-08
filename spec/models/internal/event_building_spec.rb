@@ -60,7 +60,7 @@ describe Internal::EventBuilding do
       )
     end
 
-    it "should have correct attributes" do
+    it "has correct attributes" do
       expect(described_class.initialize_with_api_building(api_building)).to have_attributes(expected_attributes)
     end
   end
@@ -80,7 +80,7 @@ describe Internal::EventBuilding do
       )
     end
 
-    it "should have correct attributes" do
+    it "has correct attributes" do
       expect(internal_building.to_api_building).to have_attributes(expected_api_building_attributes)
     end
   end

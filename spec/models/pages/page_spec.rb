@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Pages::Page do
-  include_context "use fixture markdown pages"
+  include_context "with fixture markdown pages"
 
   shared_examples "a page" do |title, path, template|
     it { is_expected.to be_instance_of described_class }

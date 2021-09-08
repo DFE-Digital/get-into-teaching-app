@@ -1,8 +1,8 @@
 require "rails_helper"
 
 describe MailingList::Steps::DegreeStatus do
-  include_context "wizard step"
-  it_behaves_like "a wizard step"
+  include_context "with wizard step"
+  it_behaves_like "a with wizard step"
 
   let(:degree_status_option_types) do
     GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|

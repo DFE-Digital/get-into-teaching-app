@@ -1,9 +1,9 @@
 require "rails_helper"
 
 describe Events::Steps::PersonalDetails do
-  include_context "wizard step"
-  it_behaves_like "a wizard step"
-  it_behaves_like "an issue verification code wizard step"
+  include_context "with wizard step"
+  it_behaves_like "a with wizard step"
+  it_behaves_like "an issue verification code with wizard step"
 
   it { is_expected.to respond_to :first_name }
   it { is_expected.to respond_to :last_name }

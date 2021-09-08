@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Breadcrumbs", type: :feature do
-  include_context "stub types api"
+  include_context "with stubbed types api"
 
   let(:event) { GetIntoTeachingApiClient::TeachingEvent.new(statusId: 1) }
 

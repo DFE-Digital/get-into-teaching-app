@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Event wizard", type: :feature do
-  include_context "stub types api"
+  include_context "with stubbed types api"
 
   let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
   let(:event_readable_id) { "123" }

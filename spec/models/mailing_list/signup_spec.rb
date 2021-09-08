@@ -14,7 +14,7 @@ describe MailingList::Signup do
   end
 
   describe "validation" do
-    include_context "wizard data"
+    include_context "with wizard data"
 
     describe "#email" do
       it { is_expected.to validate_presence_of(:email) }

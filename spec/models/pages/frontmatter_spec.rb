@@ -20,7 +20,7 @@ RSpec.describe Pages::Frontmatter do
     context "with unknown page" do
       let(:page) { "/unknown" }
 
-      it "should raise an exception" do
+      it "raises an exception" do
         expect { subject }.to raise_exception Pages::Frontmatter::NotMarkdownTemplate
       end
     end

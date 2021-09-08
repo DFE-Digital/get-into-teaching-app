@@ -1,4 +1,4 @@
-shared_context "stub env vars" do |envvars|
+shared_context "with stubbed env vars" do |envvars|
   before do
     allow(ENV).to receive(:[]).and_call_original
 

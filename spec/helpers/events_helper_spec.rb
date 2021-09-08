@@ -125,11 +125,11 @@ describe EventsHelper, type: "helper" do
     let(:non_matching_type) { "Online event" }
     let(:event) { build(:event_api, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES[matching_type]) }
 
-    it "should be truthy when the type matches" do
+    it "is truthy when the type matches" do
       expect(is_event_type?(event, matching_type)).to be_truthy
     end
 
-    it "should be falsy when the type matches" do
+    it "is falsy when the type matches" do
       expect(is_event_type?(event, non_matching_type)).to be_falsy
     end
   end

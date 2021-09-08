@@ -1,4 +1,4 @@
-shared_context "stub types api" do
+shared_context "with stubbed types api" do
   let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
   let(:stub_types) { [{ "id" => 1, "value" => "First type" }] }
 
@@ -35,7 +35,7 @@ shared_context "stub types api" do
   end
 end
 
-shared_context "stub candidate create access token api" do
+shared_context "with stubbed candidate create access token api" do
   let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
 
   before do
@@ -43,7 +43,7 @@ shared_context "stub candidate create access token api" do
   end
 end
 
-shared_context "stub latest privacy policy api" do
+shared_context "with stubbed latest privacy policy api" do
   let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
   let(:policy) { [{ "id" => "abc123" }] }
 
@@ -52,7 +52,7 @@ shared_context "stub latest privacy policy api" do
   end
 end
 
-shared_context "stub event add attendee api" do
+shared_context "with stubbed event add attendee api" do
   let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
 
   before do
@@ -60,7 +60,7 @@ shared_context "stub event add attendee api" do
   end
 end
 
-shared_context "stub mailing list add member api" do
+shared_context "with stubbed mailing list add member api" do
   let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
 
   before do
@@ -68,7 +68,7 @@ shared_context "stub mailing list add member api" do
   end
 end
 
-shared_context "stub book callback api" do
+shared_context "with stubbed book callback api" do
   let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
 
   before do
@@ -76,7 +76,7 @@ shared_context "stub book callback api" do
   end
 end
 
-shared_context "stub upcoming events by category api" do |results_per_type|
+shared_context "with stubbed upcoming events by category api" do |results_per_type|
   let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
   let(:events_by_type) { group_events_by_type(events) }
   let(:expected_request_attributes) do
@@ -91,21 +91,5 @@ shared_context "stub upcoming events by category api" do |results_per_type|
     expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:search_teaching_events_grouped_by_type)
       .with(a_hash_including(expected_request_attributes)) { events_by_type }
-  end
-end
-
-shared_context "api support" do
-  let(:token) { "test123" }
-  let(:endpoint) { "http://my.api/api" }
-  let(:response_headers) { { "Content-Type" => "application/json" } }
-  let(:client) { described_class.new(token: token, endpoint: endpoint) }
-
-  subject { client.call }
-
-  before do
-    stub_request(:get, "#{endpoint}/#{apicall}").to_return \
-      status: 200,
-      headers: response_headers,
-      body: testdata.to_json
   end
 end

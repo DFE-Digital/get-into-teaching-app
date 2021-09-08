@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Finding an event", type: :feature do
-  include_context "stub types api"
+  include_context "with stubbed types api"
 
   let(:events) do
     11.times.collect do |index|

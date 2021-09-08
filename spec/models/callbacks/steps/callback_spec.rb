@@ -2,8 +2,8 @@ require "rails_helper"
 
 describe Callbacks::Steps::Callback do
   it_behaves_like "exposes callback booking quotas"
-  include_context "wizard step"
-  it_behaves_like "a wizard step"
+  include_context "with wizard step"
+  it_behaves_like "a with wizard step"
   include_context "sanitize fields", %i[address_telephone]
 
   describe "attributes" do

@@ -1,10 +1,10 @@
 require "rails_helper"
 
 describe MailingList::StepsController do
-  include_context "stub types api"
-  include_context "stub candidate create access token api"
-  include_context "stub latest privacy policy api"
-  include_context "stub mailing list add member api"
+  include_context "with stubbed types api"
+  include_context "with stubbed candidate create access token api"
+  include_context "with stubbed latest privacy policy api"
+  include_context "with stubbed mailing list add member api"
 
   it_behaves_like "a controller with a #resend_verification action" do
     def perform_request

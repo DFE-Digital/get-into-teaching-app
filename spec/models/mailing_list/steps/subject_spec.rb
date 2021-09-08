@@ -1,8 +1,8 @@
 require "rails_helper"
 
 describe MailingList::Steps::Subject do
-  include_context "wizard step"
-  it_behaves_like "a wizard step"
+  include_context "with wizard step"
+  it_behaves_like "a with wizard step"
 
   let(:teaching_subject_types) do
     GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map do |k, v|

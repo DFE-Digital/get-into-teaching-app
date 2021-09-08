@@ -1,12 +1,12 @@
 require "rails_helper"
 
 RSpec.describe Pages::Data do
-  include_context "use fixture markdown pages"
+  include_context "with fixture markdown pages"
 
   let(:instance) { described_class.new }
 
   describe "#find_page" do
-    include_context "use fixture markdown pages"
+    include_context "with fixture markdown pages"
 
     subject { instance.find_page "/page1" }
 
@@ -14,8 +14,8 @@ RSpec.describe Pages::Data do
   end
 
   describe "#latest_event_for_category" do
-    include_context "stub types api"
-    include_context "stub upcoming events by category api", 1
+    include_context "with stubbed types api"
+    include_context "with stubbed upcoming events by category api", 1
 
     subject { instance.latest_event_for_category category }
 

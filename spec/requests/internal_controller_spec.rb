@@ -17,19 +17,19 @@ describe InternalController do
     end
   end
 
-  it "should reject unauthenticated users" do
+  it "rejects unauthenticated users" do
     get internal_events_path, headers: generate_auth_headers(:bad_credentials)
 
     assert_response :unauthorized
   end
 
-  it "should reject no authentication" do
+  it "rejects no authentication" do
     get internal_events_path
 
     assert_response :unauthorized
   end
 
-  it "should set the account role of publishers" do
+  it "sets the account role of publishers" do
     get internal_events_path, headers: generate_auth_headers(:publisher)
 
     expect(session[:user].username).to eq(publisher_username)
@@ -37,7 +37,7 @@ describe InternalController do
     assert_response :success
   end
 
-  it "should set the account role of authors" do
+  it "sets the account role of authors" do
     get internal_events_path, headers: generate_auth_headers(:author)
 
     expect(session[:user].username).to eq(author_username)

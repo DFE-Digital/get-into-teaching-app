@@ -1,8 +1,8 @@
 require "rails_helper"
 
 RSpec.feature "Mailing list signup", type: :feature do
-  include_context "stub types api"
-  include_context "stub candidate create access token api"
+  include_context "with stubbed types api"
+  include_context "with stubbed candidate create access token api"
 
   let(:qualification_id) { "QQQ" }
   let(:candidate_id) { "CCC" }
