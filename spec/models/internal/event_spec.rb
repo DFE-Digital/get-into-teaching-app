@@ -22,45 +22,45 @@ describe Internal::Event do
 
     describe "#name" do
       it { is_expected.to allow_value("test").for :name }
-      it { is_expected.to_not allow_values("", nil).for :name }
+      it { is_expected.not_to allow_values("", nil).for :name }
       it { is_expected.to validate_length_of(:name).is_at_most(300) }
     end
 
     describe "#readable_id" do
       it { is_expected.to allow_value("test").for :readable_id }
-      it { is_expected.to_not allow_values("", nil).for :readable_id }
+      it { is_expected.not_to allow_values("", nil).for :readable_id }
       it { is_expected.to validate_length_of(:readable_id).is_at_most(300) }
     end
 
     describe "#summary" do
       it { is_expected.to allow_value("test").for :summary }
-      it { is_expected.to_not allow_values("", nil).for :summary }
+      it { is_expected.not_to allow_values("", nil).for :summary }
       it { is_expected.to validate_length_of(:summary).is_at_most(1000) }
     end
 
     describe "#description" do
       it { is_expected.to allow_value("test").for :description }
-      it { is_expected.to_not allow_values("", nil).for :description }
+      it { is_expected.not_to allow_values("", nil).for :description }
       it { is_expected.to validate_length_of(:description).is_at_most(2000) }
     end
 
     describe "#start_at" do
-      it { is_expected.to_not allow_values(nil, now - 1.minute, now).for :start_at }
+      it { is_expected.not_to allow_values(nil, now - 1.minute, now).for :start_at }
       it { is_expected.to allow_value(Time.zone.now + 1.minute).for :start_at }
     end
 
     describe "#end_at" do
-      it { is_expected.to_not allow_values(nil, now - 1.minute, now).for :end_at }
+      it { is_expected.not_to allow_values(nil, now - 1.minute, now).for :end_at }
       it { is_expected.to allow_value(now + 1.minute).for :end_at }
 
       it "is expected not to allow end at to be the same as start at" do
         subject.start_at = now + 1.minute
-        is_expected.to_not allow_value(subject.start_at).for :end_at
+        is_expected.not_to allow_value(subject.start_at).for :end_at
       end
 
       it "is expected not to allow end at to be earlier than start at" do
         subject.start_at = now + 2.minutes
-        is_expected.to_not allow_value(now + 1.minute).for :end_at
+        is_expected.not_to allow_value(now + 1.minute).for :end_at
       end
 
       it "is expected to allow end at to be later than start at" do
@@ -83,30 +83,30 @@ describe Internal::Event do
 
       describe "#is_online" do
         it { is_expected.to allow_values(true, false).for :is_online }
-        it { is_expected.to_not allow_value(nil).for :is_online }
+        it { is_expected.not_to allow_value(nil).for :is_online }
       end
 
       describe "#provider contact email" do
         it { is_expected.to allow_value("test@test.com").for :provider_contact_email }
-        it { is_expected.to_not allow_values("test", "", nil).for :provider_contact_email }
+        it { is_expected.not_to allow_values("test", "", nil).for :provider_contact_email }
         it { is_expected.to validate_length_of(:provider_contact_email).is_at_most(100) }
       end
 
       describe "#provider organiser" do
         it { is_expected.to allow_value("test").for :provider_organiser }
-        it { is_expected.to_not allow_value("", nil).for :provider_organiser }
+        it { is_expected.not_to allow_value("", nil).for :provider_organiser }
         it { is_expected.to validate_length_of(:provider_organiser).is_at_most(300) }
       end
 
       describe "#provider target audience" do
         it { is_expected.to allow_value("test").for :provider_target_audience }
-        it { is_expected.to_not allow_value("", nil).for :provider_target_audience }
+        it { is_expected.not_to allow_value("", nil).for :provider_target_audience }
         it { is_expected.to validate_length_of(:provider_target_audience).is_at_most(500) }
       end
 
       describe "#provider website url" do
         it { is_expected.to allow_value("test").for :provider_website_url }
-        it { is_expected.to_not allow_value("", nil).for :provider_website_url }
+        it { is_expected.not_to allow_value("", nil).for :provider_website_url }
         it { is_expected.to validate_length_of(:provider_website_url).is_at_most(300) }
       end
     end
@@ -118,13 +118,13 @@ describe Internal::Event do
       context "when building is nil" do
         before { subject.building = nil }
 
-        it { is_expected.to_not allow_value(described_class::VENUE_TYPES[:existing]).for :venue_type }
+        it { is_expected.not_to allow_value(described_class::VENUE_TYPES[:existing]).for :venue_type }
       end
 
       context "when building.id is nil" do
         before { subject.building = build(:event_building, id: nil) }
 
-        it { is_expected.to_not allow_value(described_class::VENUE_TYPES[:existing]).for :venue_type }
+        it { is_expected.not_to allow_value(described_class::VENUE_TYPES[:existing]).for :venue_type }
       end
     end
   end

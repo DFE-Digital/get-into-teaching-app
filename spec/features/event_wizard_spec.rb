@@ -160,7 +160,7 @@ RSpec.feature "Event wizard", type: :feature do
     end
     click_on "Complete sign up"
 
-    expect(page).to_not have_text("What is your postcode? (optional)")
+    expect(page).not_to have_text("What is your postcode? (optional)")
     fill_in_personalised_updates
 
     expect_sign_up_with_attributes(

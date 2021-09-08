@@ -139,7 +139,7 @@ describe "Find an event near you", type: :request do
     end
 
     it "does not display the discover events heading" do
-      expect(response.body).to_not include("Discover events")
+      expect(response.body).not_to include("Discover events")
     end
 
     it "categorises the results" do

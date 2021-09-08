@@ -19,7 +19,7 @@ RSpec.feature "Breadcrumbs", type: :feature do
   context "when visiting the home page" do
     let(:path) { "/home-page" }
 
-    it { is_expected.to_not have_css(".breadcrumb") }
+    it { is_expected.not_to have_css(".breadcrumb") }
   end
 
   context "when visiting a content page" do

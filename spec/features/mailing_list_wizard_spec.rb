@@ -15,7 +15,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to_not have_text "Tell us more about you so that you only get emails relevant to your circumstances."
+    expect(page).not_to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
 
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm a first year student"

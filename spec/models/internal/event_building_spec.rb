@@ -14,8 +14,8 @@ describe Internal::EventBuilding do
   describe "validations" do
     describe "#venue" do
       it { is_expected.to allow_value("test").for :venue }
-      it { is_expected.to_not allow_value("").for :venue }
-      it { is_expected.to_not allow_value(nil).for :venue }
+      it { is_expected.not_to allow_value("").for :venue }
+      it { is_expected.not_to allow_value(nil).for :venue }
       it { is_expected.to validate_length_of(:venue).is_at_most(100) }
     end
 
@@ -37,9 +37,9 @@ describe Internal::EventBuilding do
 
     describe "#address_postcode" do
       it { is_expected.to allow_value("M1 7AX").for :address_postcode }
-      it { is_expected.to_not allow_value("not a postcode").for :address_postcode }
-      it { is_expected.to_not allow_value("").for :address_postcode }
-      it { is_expected.to_not allow_value(nil).for :address_postcode }
+      it { is_expected.not_to allow_value("not a postcode").for :address_postcode }
+      it { is_expected.not_to allow_value("").for :address_postcode }
+      it { is_expected.not_to allow_value(nil).for :address_postcode }
       it { is_expected.to validate_length_of(:address_postcode).is_at_most(100) }
     end
   end

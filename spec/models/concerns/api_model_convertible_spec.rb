@@ -30,7 +30,7 @@ describe ApiModelConvertible do
     end
 
     it "only returns attributes which are present on the model that includes ApiModelConvertable" do
-      expect(converted_hash).to_not have_key("readable_id")
+      expect(converted_hash).not_to have_key("readable_id")
     end
   end
 
@@ -44,7 +44,7 @@ describe ApiModelConvertible do
     it "only returns attributes that are present" do
       tester.status_id = ""
       hash = tester.convert_attributes_for_api_model
-      expect(hash).to_not have_key("statusId")
+      expect(hash).not_to have_key("statusId")
     end
   end
 end

@@ -311,8 +311,8 @@ describe StructuredDataHelper, type: "helper" do
         },
       })
 
-      expect(data).to_not have_key(:organizer)
-      expect(data).to_not have_key(:location)
+      expect(data).not_to have_key(:organizer)
+      expect(data).not_to have_key(:location)
     end
 
     context "when the event is online" do
