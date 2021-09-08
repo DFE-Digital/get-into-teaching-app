@@ -5,6 +5,8 @@ describe StructuredDataHelper, type: "helper" do
   include EventsHelper
   include Webpacker::Helper
 
+  let(:image_path) { "media/images/getintoteachinglogo.svg" }
+
   describe ".structured_data" do
     let(:malicious_text) { "</script><script>alert('PWNED!')</script>" }
     let(:html) { structured_data("Type", { text: malicious_text }) }
@@ -36,13 +38,77 @@ describe StructuredDataHelper, type: "helper" do
     end
   end
 
+  describe ".how_to_structured_data" do
+    let(:frontmatter) do
+      {
+        title: "Title",
+        description: "Description",
+        image: image_path,
+        how_to: {
+          "Decide who to teach": {
+            id: "step-1",
+            image: image_path,
+            directions: [
+              "Get school experience or attend events.",
+            ],
+          },
+        },
+      }
+    end
+    let(:page) { Pages::Page.new("/how-to-page", frontmatter) }
+    let(:html) { how_to_structured_data(page) }
+    let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
+
+    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
+
+    it "returns nil when in production" do
+      allow(Rails).to receive(:env) { "production".inquiry }
+      expect(script_tag).to be_nil
+    end
+
+    it "includes how to information" do
+      expect(data).to include({
+        "@type": "HowTo",
+        name: frontmatter[:title],
+        description: frontmatter[:description],
+        image: {
+          "@type": "ImageObject",
+          url: asset_pack_url(frontmatter[:image]),
+        },
+        step: [
+          {
+            "@type": "HowToStep",
+            url: "http://test.host/how-to-page#step-1",
+            name: "Decide who to teach",
+            itemListElement: [
+              {
+                "@type": "HowToDirection",
+                text: "Get school experience or attend events.",
+              },
+            ],
+            image: {
+              "@type": "ImageObject",
+              url: asset_pack_url(image_path),
+            },
+          },
+        ],
+      })
+    end
+
+    context "when the image is not specified" do
+      before { frontmatter[:image] = nil }
+
+      it { is_expected.not_to have_key(:image) }
+    end
+  end
+
   describe ".blog_structured_data" do
     let(:frontmatter) do
       {
         title: "A title",
         images: {
           an_image: {
-            path: "/an/image.png",
+            "path" => image_path,
           },
         },
         date: "2021-01-25",
@@ -65,7 +131,7 @@ describe StructuredDataHelper, type: "helper" do
       expect(data).to include({
         "@type": "BlogPosting",
         headline: frontmatter[:title],
-        image: frontmatter[:images].values.map { |h| h["path"] },
+        image: frontmatter[:images].values.map { |h| asset_pack_url(h["path"]) },
         datePublished: frontmatter[:date],
         keywords: frontmatter[:keywords],
         author: [
@@ -135,7 +201,7 @@ describe StructuredDataHelper, type: "helper" do
       expect(data).to include({
         "@type": "Organization",
         url: root_url,
-        logo: asset_pack_path("media/images/getintoteachinglogo.svg"),
+        logo: asset_pack_url(image_path),
       })
     end
   end

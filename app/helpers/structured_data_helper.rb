@@ -24,7 +24,7 @@ module StructuredDataHelper
 
     data = {
       headline: frontmatter[:title],
-      image: frontmatter[:images].values.map { |h| h["path"] },
+      image: frontmatter[:images].values.map { |h| asset_pack_url(h["path"]) },
       datePublished: frontmatter[:date],
       keywords: frontmatter[:keywords],
       author: [
@@ -36,6 +36,38 @@ module StructuredDataHelper
     }
 
     structured_data("BlogPosting", data)
+  end
+
+  def how_to_structured_data(page)
+    frontmatter = page.frontmatter
+
+    steps = frontmatter[:how_to].with_indifferent_access.map do |name, step|
+      {
+        "@type": "HowToStep",
+        url: "#{root_url.chomp('/')}#{page.path}##{step[:id]}",
+        name: name,
+        itemListElement: step[:directions].map { |text| { "@type": "HowToDirection", text: text } },
+        image: {
+          "@type": "ImageObject",
+          url: asset_pack_url(step[:image]),
+        },
+      }
+    end
+
+    data = {
+      name: frontmatter[:title],
+      description: frontmatter[:description],
+      step: steps,
+    }
+
+    if frontmatter[:image]
+      data[:image] = {
+        "@type": "ImageObject",
+        url: asset_pack_url(frontmatter[:image]),
+      }
+    end
+
+    structured_data("HowTo", data)
   end
 
   def search_structured_data
@@ -57,7 +89,7 @@ module StructuredDataHelper
   def logo_structured_data
     data = {
       url: root_url,
-      logo: asset_pack_path("media/images/getintoteachinglogo.svg"),
+      logo: asset_pack_url("media/images/getintoteachinglogo.svg"),
     }
 
     structured_data("Organization", data)
