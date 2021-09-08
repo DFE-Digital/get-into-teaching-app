@@ -9,6 +9,14 @@
     @include mq($from: desktop) {
       display: block;
     }
+
+    h4 {
+      .caption {
+        display: block;
+        font-size: .8em;
+        color: $grey-dark;
+      }
+    }
   }
 
   &.mobile {
@@ -22,8 +30,8 @@
   p {
     @include font-size("xsmall");
 
-    &.registering-for {
-      margin: .2em 0 2em;
+    &.sign-up-for {
+      margin: .2em 0 1em;
     }
   }
 
