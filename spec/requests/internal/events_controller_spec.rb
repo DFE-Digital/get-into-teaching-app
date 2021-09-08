@@ -139,7 +139,7 @@ describe Internal::EventsController, type: :request do
         get internal_events_path, headers: generate_auth_headers(:author)
 
         assert_response :success
-        expect(response.body).to_not include("Edit a published event?")
+        expect(response.body).not_to include("Edit a published event?")
       end
     end
   end
@@ -189,7 +189,7 @@ describe Internal::EventsController, type: :request do
 
         it "does not have a final submit button" do
           assert_response :success
-          expect(response.body).to_not include "Submit this provider event"
+          expect(response.body).not_to include "Submit this provider event"
         end
       end
     end

@@ -69,7 +69,7 @@ RSpec.feature "Finding an event", type: :feature do
     visit events_path
 
     expect(page).to have_text "Search for events"
-    expect(page).to_not have_css ".pagination"
+    expect(page).not_to have_css ".pagination"
 
     click_on "Update results"
 

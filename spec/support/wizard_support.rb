@@ -113,7 +113,7 @@ shared_examples "an issue verification code with wizard step" do
 
     it "will skip the authenticate step for new candidates" do
       expect(Rails.logger).to receive(:info).with("#{described_class} requesting access code")
-      expect(Rails.logger).to_not receive(:info).with("#{described_class} potential duplicate (response code 404)")
+      expect(Rails.logger).not_to receive(:info).with("#{described_class} potential duplicate (response code 404)")
       allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
         .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 404))
       subject.save

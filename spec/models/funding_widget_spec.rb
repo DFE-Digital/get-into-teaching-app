@@ -8,7 +8,7 @@ describe FundingWidget do
   describe "validations" do
     describe "#subject" do
       it { is_expected.to allow_value("test").for :subject }
-      it { is_expected.to_not allow_values("", nil).for :subject }
+      it { is_expected.not_to allow_values("", nil).for :subject }
     end
   end
 end

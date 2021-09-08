@@ -12,12 +12,12 @@ describe Callbacks::Steps::Callback do
   end
 
   describe "#phone_call_scheduled_at" do
-    it { is_expected.to_not allow_values("", nil, "invalid_date").for :phone_call_scheduled_at }
+    it { is_expected.not_to allow_values("", nil, "invalid_date").for :phone_call_scheduled_at }
     it { is_expected.to allow_value(Time.zone.now).for :phone_call_scheduled_at }
   end
 
   describe "#address_telephone" do
-    it { is_expected.to_not allow_values(nil, "", "abc12345", "12", "1" * 21).for :address_telephone }
+    it { is_expected.not_to allow_values(nil, "", "abc12345", "12", "1" * 21).for :address_telephone }
     it { is_expected.to allow_values("123456789").for :address_telephone }
   end
 end
