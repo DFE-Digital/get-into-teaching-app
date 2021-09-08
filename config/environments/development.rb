@@ -64,4 +64,11 @@ Rails.application.configure do
   config.x.api_client_cache_store = ActiveSupport::Cache::MemoryStore.new
 
   config.x.basic_auth = ENV["BASIC_AUTH"]
+
+  config.x.structured_data.blog_posting = true
+  config.x.structured_data.web_site = true
+  config.x.structured_data.organization = true
+  config.x.structured_data.breadcrumb_list = true
+  config.x.structured_data.event = true
+  config.x.structured_data.how_to = true
 end

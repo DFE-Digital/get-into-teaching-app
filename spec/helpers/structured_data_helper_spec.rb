@@ -13,8 +13,15 @@ describe StructuredDataHelper, type: "helper" do
 
     subject(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
 
-    it "returns nil when in production" do
-      allow(Rails).to receive(:env) { "production".inquiry }
+    before { enable_structured_data(:type) }
+
+    it "returns nil when disabled by config" do
+      disable_structured_data(:type)
+      expect(script_tag).to be_nil
+    end
+
+    it "returns nil when not set in config" do
+      disable_structured_data(:type, nil)
       expect(script_tag).to be_nil
     end
 
@@ -61,8 +68,10 @@ describe StructuredDataHelper, type: "helper" do
 
     subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
-    it "returns nil when in production" do
-      allow(Rails).to receive(:env) { "production".inquiry }
+    before { enable_structured_data(:how_to) }
+
+    it "returns nil when disabled by config" do
+      disable_structured_data(:how_to)
       expect(script_tag).to be_nil
     end
 
@@ -122,8 +131,10 @@ describe StructuredDataHelper, type: "helper" do
 
     subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
-    it "returns nil when in production" do
-      allow(Rails).to receive(:env) { "production".inquiry }
+    before { enable_structured_data(:blog_posting) }
+
+    it "returns nil when disabled by config" do
+      disable_structured_data(:blog_posting)
       expect(script_tag).to be_nil
     end
 
@@ -165,8 +176,10 @@ describe StructuredDataHelper, type: "helper" do
 
     subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
-    it "returns nil when in production" do
-      allow(Rails).to receive(:env) { "production".inquiry }
+    before { enable_structured_data(:web_site) }
+
+    it "returns nil when disabled by config" do
+      disable_structured_data(:web_site)
       expect(script_tag).to be_nil
     end
 
@@ -192,8 +205,10 @@ describe StructuredDataHelper, type: "helper" do
 
     subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
-    it "returns nil when in production" do
-      allow(Rails).to receive(:env) { "production".inquiry }
+    before { enable_structured_data(:organization) }
+
+    it "returns nil when disabled by config" do
+      disable_structured_data(:organization)
       expect(script_tag).to be_nil
     end
 
@@ -220,8 +235,10 @@ describe StructuredDataHelper, type: "helper" do
 
       subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
-      it "returns nil when in production" do
-        allow(Rails).to receive(:env) { "production".inquiry }
+      before { enable_structured_data(:breadcrumb_list) }
+
+      it "returns nil when disabled by config" do
+        disable_structured_data(:breadcrumb_list)
         expect(script_tag).to be_nil
       end
 
@@ -270,8 +287,10 @@ describe StructuredDataHelper, type: "helper" do
 
     subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
-    it "returns nil when in production" do
-      allow(Rails).to receive(:env) { "production".inquiry }
+    before { enable_structured_data(:event) }
+
+    it "returns nil when disabled by config" do
+      disable_structured_data(:event)
       expect(script_tag).to be_nil
     end
 
@@ -356,5 +375,15 @@ describe StructuredDataHelper, type: "helper" do
         end
       end
     end
+  end
+
+  def enable_structured_data(type)
+    allow(Rails.application.config.x.structured_data).to \
+      receive(type) { true }
+  end
+
+  def disable_structured_data(type, value = false)
+    allow(Rails.application.config.x.structured_data).to \
+      receive(type) { value }
   end
 end
