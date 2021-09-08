@@ -2,17 +2,17 @@ require "rails_helper"
 
 describe MailingList::Steps::Name do
   include_context "with wizard step"
+  before do
+    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
+      receive(:get_candidate_mailing_list_subscription_channels).and_return(channels)
+  end
+
   it_behaves_like "a with wizard step"
 
   let(:channels) do
     GetIntoTeachingApiClient::Constants::CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
-  end
-
-  before do
-    allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_candidate_mailing_list_subscription_channels).and_return(channels)
   end
 
   it { is_expected.to respond_to :first_name }

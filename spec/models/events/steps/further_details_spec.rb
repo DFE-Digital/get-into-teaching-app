@@ -49,7 +49,7 @@ describe Events::Steps::FurtherDetails do
     context "when invalid" do
       before do
         subject.privacy_policy = nil
-        expect_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).not_to \
+        allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).not_to \
           receive(:get_latest_privacy_policy)
       end
 

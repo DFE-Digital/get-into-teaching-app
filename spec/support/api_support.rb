@@ -88,7 +88,7 @@ shared_context "with stubbed upcoming events by category api" do |results_per_ty
   before { travel_to(DateTime.new(2020, 11, 1, 10)) }
 
   before do
-    expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:search_teaching_events_grouped_by_type)
       .with(a_hash_including(expected_request_attributes)) { events_by_type }
   end

@@ -121,11 +121,11 @@ describe MailingList::Signup do
 
   describe "methods" do
     describe "#query_degree_status" do
+      before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
+
       it { is_expected.to respond_to(:query_channels) }
 
       let(:api) { instance_double(GetIntoTeachingApiClient::PickListItemsApi) }
-
-      before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
 
       specify "should call the PickListItemsApi" do
         expect(api).to receive(:get_qualification_degree_status)
@@ -134,11 +134,11 @@ describe MailingList::Signup do
     end
 
     describe "#query_channels" do
+      before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
+
       it { is_expected.to respond_to(:query_channels) }
 
       let(:api) { instance_double(GetIntoTeachingApiClient::PickListItemsApi) }
-
-      before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
 
       specify "should call the PickListItemsApi" do
         expect(api).to receive(:get_candidate_mailing_list_subscription_channels)
@@ -147,11 +147,11 @@ describe MailingList::Signup do
     end
 
     describe "#teaching_subjects" do
+      before { allow(GetIntoTeachingApiClient::LookupItemsApi).to receive(:new).and_return(api) }
+
       it { is_expected.to respond_to(:teaching_subjects) }
 
       let(:api) { instance_double(GetIntoTeachingApiClient::LookupItemsApi, get_teaching_subjects: []) }
-
-      before { allow(GetIntoTeachingApiClient::LookupItemsApi).to receive(:new).and_return(api) }
 
       specify "should call the LookupItemsApi" do
         expect(api).to receive(:get_teaching_subjects)
@@ -160,11 +160,11 @@ describe MailingList::Signup do
     end
 
     describe "#consideration_journey_stages" do
+      before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
+
       it { is_expected.to respond_to(:consideration_journey_stages) }
 
       let(:api) { instance_double(GetIntoTeachingApiClient::PickListItemsApi, get_candidate_journey_stages: []) }
-
-      before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
 
       specify "should call the PickListItemsApi" do
         expect(api).to receive(:get_candidate_journey_stages)

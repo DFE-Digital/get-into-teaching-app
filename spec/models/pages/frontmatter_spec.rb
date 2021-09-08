@@ -47,7 +47,7 @@ RSpec.describe Pages::Frontmatter do
     context "when caching" do
       before do
         allow(described_class).to receive(:instance) { instance.preload }
-        expect(instance).to receive(:find_from_preloaded).and_call_original
+        allow(instance).to receive(:find_from_preloaded).and_call_original
       end
 
       it_behaves_like "page loading"
@@ -63,7 +63,7 @@ RSpec.describe Pages::Frontmatter do
   describe ".select" do
     subject { described_class.select :title, content_dir }
 
-    before { expect_any_instance_of(described_class).to receive(:select).and_call_original }
+    before { allow_any_instance_of(described_class).to receive(:select).and_call_original }
 
     it { is_expected.to include "/page1" }
   end
@@ -73,7 +73,7 @@ RSpec.describe Pages::Frontmatter do
 
     subject { described_class.select_by_path(wanted_path, content_dir) }
 
-    before { expect_any_instance_of(described_class).to receive(:select_by_path).and_call_original }
+    before { allow_any_instance_of(described_class).to receive(:select_by_path).and_call_original }
 
     it "only returns pages that start with the supplied path" do
       expect(subject.keys).to all(start_with(wanted_path))
@@ -87,7 +87,7 @@ RSpec.describe Pages::Frontmatter do
 
     context "when preloaded" do
       before do
-        expect(instance).to receive(:find_from_preloaded).and_call_original
+        allow(instance).to receive(:find_from_preloaded).and_call_original
         instance.preload
       end
 

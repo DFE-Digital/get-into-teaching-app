@@ -74,7 +74,7 @@ describe Internal::EventsController, type: :request do
       include_examples "no pending events", "online"
 
       include_examples "pending events", "provider" do
-        before(:each) do
+        before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type)
                   .with({
@@ -88,7 +88,7 @@ describe Internal::EventsController, type: :request do
       end
 
       include_examples "pending events", "online" do
-        before(:each) do
+        before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type)
                   .with({
@@ -105,7 +105,7 @@ describe Internal::EventsController, type: :request do
         default_event_type = "provider".freeze
 
         include_examples "pending events", nil, default_event_type do
-          before(:each) do
+          before do
             allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
               .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
           end

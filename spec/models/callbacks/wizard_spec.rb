@@ -40,7 +40,7 @@ describe Callbacks::Wizard do
 
     before do
       allow(subject).to receive(:valid?) { true }
-      expect_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
+      allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
         receive(:book_get_into_teaching_callback).with(request).once
       allow(Rails.logger).to receive(:info)
       subject.complete!
@@ -61,7 +61,7 @@ describe Callbacks::Wizard do
     let(:response) { GetIntoTeachingApiClient::GetIntoTeachingCallback.new(candidateId: "123", email: "12345") }
 
     before do
-      expect_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
+      allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
         receive(:exchange_access_token_for_get_into_teaching_callback)
         .with(totp, request) { response }
     end

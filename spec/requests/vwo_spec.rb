@@ -16,7 +16,7 @@ describe "VWO", type: :request do
     allow(ENV).to receive(:[]).with("VWO_ID").and_return("12345")
 
     allow(File).to receive(:read).and_call_original
-    expect(File).to receive(:read).with(config_path) { yaml }
+    allow(File).to receive(:read).with(config_path) { yaml }
   end
 
   subject { response.body }
