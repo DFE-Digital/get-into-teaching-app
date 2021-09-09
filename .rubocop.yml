@@ -82,11 +82,10 @@ RSpec/MultipleExpectations:
   Exclude:
     - spec/**/*.rb
 
-# FIXME Temporary whilst updating specs - to be removed in subsequent PRs
-
 RSpec/NestedGroups:
-  Exclude:
-    - spec/**/*.rb
+  Max: 6
+
+# FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
 RSpec/ScatteredLet:
   Exclude:
