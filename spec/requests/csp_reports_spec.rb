@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe "CSP violation reporting", type: :request do
   let(:params) { { "csp-report" => { "blocked-uri" => "https://malicious.com/script.js" } } }
+  let(:events) { [] }
 
   before do
     record_csp_violation_events
@@ -33,17 +34,16 @@ describe "CSP violation reporting", type: :request do
   end
 
   def has_recorded_csp_violation?(report = nil)
-    return @events.any? if report.nil?
+    return events.any? if report.nil?
 
-    @events.any? { |event| event.payload == report }
+    events.any? { |event| event.payload == report }
   end
 
 private
 
   def record_csp_violation_events
-    @events = []
     ActiveSupport::Notifications.subscribe("app.csp_violation") do |*args|
-      @events << ActiveSupport::Notifications::Event.new(*args)
+      events << ActiveSupport::Notifications::Event.new(*args)
     end
   end
 end
