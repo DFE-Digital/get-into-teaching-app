@@ -121,9 +121,9 @@ describe MailingList::Signup do
     describe "#query_degree_status" do
       before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
 
-      it { is_expected.to respond_to(:query_channels) }
-
       let(:api) { instance_double(GetIntoTeachingApiClient::PickListItemsApi) }
+
+      it { is_expected.to respond_to(:query_channels) }
 
       specify "should call the PickListItemsApi" do
         expect(api).to receive(:get_qualification_degree_status)
@@ -134,9 +134,9 @@ describe MailingList::Signup do
     describe "#query_channels" do
       before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
 
-      it { is_expected.to respond_to(:query_channels) }
-
       let(:api) { instance_double(GetIntoTeachingApiClient::PickListItemsApi) }
+
+      it { is_expected.to respond_to(:query_channels) }
 
       specify "should call the PickListItemsApi" do
         expect(api).to receive(:get_candidate_mailing_list_subscription_channels)
@@ -147,9 +147,9 @@ describe MailingList::Signup do
     describe "#teaching_subjects" do
       before { allow(GetIntoTeachingApiClient::LookupItemsApi).to receive(:new).and_return(api) }
 
-      it { is_expected.to respond_to(:teaching_subjects) }
-
       let(:api) { instance_double(GetIntoTeachingApiClient::LookupItemsApi, get_teaching_subjects: []) }
+
+      it { is_expected.to respond_to(:teaching_subjects) }
 
       specify "should call the LookupItemsApi" do
         expect(api).to receive(:get_teaching_subjects)
@@ -160,9 +160,9 @@ describe MailingList::Signup do
     describe "#consideration_journey_stages" do
       before { allow(GetIntoTeachingApiClient::PickListItemsApi).to receive(:new).and_return(api) }
 
-      it { is_expected.to respond_to(:consideration_journey_stages) }
-
       let(:api) { instance_double(GetIntoTeachingApiClient::PickListItemsApi, get_candidate_journey_stages: []) }
+
+      it { is_expected.to respond_to(:consideration_journey_stages) }
 
       specify "should call the PickListItemsApi" do
         expect(api).to receive(:get_candidate_journey_stages)
@@ -172,8 +172,6 @@ describe MailingList::Signup do
 
     describe "export_data" do
       subject { described_class.new(**attributes) }
-
-      it { is_expected.to respond_to(:consideration_journey_stages) }
 
       let(:attributes) do
         {
@@ -189,6 +187,8 @@ describe MailingList::Signup do
           address_postcode: "M1 2EJ",
         }
       end
+
+      it { is_expected.to respond_to(:consideration_journey_stages) }
 
       specify "returns a hash with correct data" do
         expect(subject.export_data).to eql(attributes.transform_keys(&:to_s))

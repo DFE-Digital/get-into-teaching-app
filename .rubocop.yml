@@ -76,10 +76,6 @@ RSpec/ExampleLength:
   Exclude:
     - spec/**/*.rb
 
-RSpec/LetBeforeExamples:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/MessageSpies:
   Exclude:
     - spec/**/*.rb
