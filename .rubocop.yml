@@ -87,10 +87,6 @@ RSpec/NestedGroups:
 
 # FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
-RSpec/ScatteredLet:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/ScatteredSetup:
   Exclude:
     - spec/**/*.rb
