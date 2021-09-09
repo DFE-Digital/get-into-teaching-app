@@ -74,11 +74,11 @@ RSpec/ExampleLength:
   Exclude:
     - spec/**/*.rb
 
-# FIXME Temporary whilst updating specs - to be removed in subsequent PRs
-
 RSpec/MessageSpies:
   Exclude:
     - spec/**/*.rb
+
+# FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
 RSpec/MultipleExpectations:
   Exclude:
