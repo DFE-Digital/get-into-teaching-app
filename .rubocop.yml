@@ -107,7 +107,3 @@ RSpec/ScatteredSetup:
 RSpec/SubjectStub:
   Exclude:
     - spec/**/*.rb
-
-RSpec/VerifiedDoubles:
-  Exclude:
-    - spec/**/*.rb
