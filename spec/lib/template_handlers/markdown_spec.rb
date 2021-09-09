@@ -98,9 +98,8 @@ describe TemplateHandlers::Markdown, type: :view do
       MARKDOWN
     end
 
-    before { view.instance_variable_set("@front_matter", original_front_matter) }
-
     before do
+      view.instance_variable_set("@front_matter", original_front_matter)
       stub_template "test.md" => markdown
       render template: "test"
     end
@@ -216,9 +215,6 @@ describe TemplateHandlers::Markdown, type: :view do
 
     before do
       allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_calls_to_action)
-    end
-
-    before do
       stub_template "page_with_rich_content.md" => markdown
       render template: "page_with_rich_content"
     end
@@ -257,9 +253,6 @@ describe TemplateHandlers::Markdown, type: :view do
 
     before do
       allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_images)
-    end
-
-    before do
       stub_template "page_with_rich_content.md" => markdown
       render template: "page_with_rich_content"
     end

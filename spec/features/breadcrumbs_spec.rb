@@ -12,9 +12,9 @@ RSpec.feature "Breadcrumbs", type: :feature do
       receive(:get_teaching_event) { event }
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:search_teaching_events_grouped_by_type).and_return([])
-  end
 
-  before { visit path }
+    visit path
+  end
 
   context "when visiting the home page" do
     let(:path) { "/home-page" }

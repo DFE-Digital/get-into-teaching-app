@@ -25,9 +25,8 @@ describe "Find an event near you", type: :request do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type)
         .with(a_hash_including(expected_request_attributes)) { events_by_type }
+      get events_path
     end
-
-    before { get events_path }
 
     it { is_expected.to have_http_status :success }
 
@@ -71,9 +70,8 @@ describe "Find an event near you", type: :request do
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type) { events_by_type }
+      get search_events_path(events_search: { type: type_id, month: "2020-07" })
     end
-
-    before { get search_events_path(events_search: { type: type_id, month: "2020-07" }) }
 
     it "displays only the category filtered to" do
       headings = response.body.scan(category_headings_regex).flatten
@@ -126,9 +124,8 @@ describe "Find an event near you", type: :request do
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type) { events_by_type }
+      get search_events_path(events_search: { month: "2020-07" })
     end
-
-    before { get search_events_path(events_search: { month: "2020-07" }) }
 
     it "displays events" do
       expect(response.body.scan(/Event \d/).count).to eq(events.count)

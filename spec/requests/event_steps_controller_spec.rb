@@ -63,9 +63,8 @@ describe EventStepsController, type: :request do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
           receive(:get_teaching_event).with("456")
           .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 404))
+        get event_steps_path("456")
       end
-
-      before { get event_steps_path("456") }
 
       it { is_expected.to have_http_status :not_found }
     end

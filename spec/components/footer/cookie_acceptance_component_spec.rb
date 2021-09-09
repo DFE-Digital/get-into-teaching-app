@@ -20,9 +20,8 @@ describe Footer::CookieAcceptanceComponent, type: "component" do
       allow_any_instance_of(ActionDispatch::TestRequest).to(
         receive(:user_agent).and_return("a-user-agent-string-that-ends-in-Silktide"),
       )
+      subject
     end
-
-    before { subject }
 
     specify "nothing is rendered" do
       expect(rendered_component).to be_empty

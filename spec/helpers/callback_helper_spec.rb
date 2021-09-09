@@ -2,7 +2,9 @@ require "rails_helper"
 
 RSpec.describe CallbackHelper, type: :helper do
   around do |example|
-    travel_to(utc_today) { example.run }
+    travel_to(utc_today) do
+      Time.use_zone(time_zone) { example.run }
+    end
   end
 
   let(:time_zone) { "UTC" }
@@ -21,10 +23,6 @@ RSpec.describe CallbackHelper, type: :helper do
     )
   end
   let(:quotas) { [quota_today, quota_tomorrow] }
-
-  around do |example|
-    Time.use_zone(time_zone) { example.run }
-  end
 
   describe "#callback_options" do
     subject { callback_options(quotas) }
