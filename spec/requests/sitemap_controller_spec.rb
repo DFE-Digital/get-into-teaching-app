@@ -22,9 +22,10 @@ RSpec.describe SitemapController, type: :request do
     }
   end
 
-  before { allow(Pages::Frontmatter).to receive(:list) { content_pages } }
-
-  before { get("/sitemap.xml") }
+  before do
+    allow(Pages::Frontmatter).to receive(:list) { content_pages }
+    get("/sitemap.xml")
+  end
 
   describe "#show" do
     let(:sitemap_namespace) { "http://www.sitemaps.org/schemas/sitemap/0.9" }

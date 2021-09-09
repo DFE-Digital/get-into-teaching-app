@@ -5,10 +5,9 @@ describe "LID tracking pixels", type: :request do
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_grouped_by_type) { [] }
+      receive(:search_teaching_events_grouped_by_type).and_return([])
+    get path
   end
-
-  before { get path }
 
   context "when visiting /events" do
     let(:path) { events_path }

@@ -9,7 +9,7 @@ describe "Google Structured Data", type: :request do
   before do
     %i[how_to event blog_posting organization breadcrumb_list web_site].each do |type|
       allow(Rails.application.config.x.structured_data).to \
-        receive(type) { true }
+        receive(type).and_return(true)
     end
   end
 

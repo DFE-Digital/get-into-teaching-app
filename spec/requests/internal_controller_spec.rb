@@ -10,7 +10,7 @@ describe InternalController, type: :request do
     BasicAuth.class_variable_set(:@@credentials, nil)
 
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-      .to receive(:search_teaching_events_grouped_by_type) { [] }
+      .to receive(:search_teaching_events_grouped_by_type).and_return([])
 
     allow(Rails.application.config.x).to receive(:http_auth) do
       "#{publisher_username}|#{publisher_password}|publisher,#{author_username}|#{author_password}|author"

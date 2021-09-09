@@ -70,13 +70,7 @@ RSpec/SubjectStub:
   Exclude:
     - spec/**/*.rb
 
-# FIXME Temporary whilst updating specs - to be removed in subsequent PRs
-
 RSpec/ExampleLength:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/LetBeforeExamples:
   Exclude:
     - spec/**/*.rb
 
@@ -89,19 +83,4 @@ RSpec/MultipleExpectations:
     - spec/**/*.rb
 
 RSpec/NestedGroups:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/ReturnFromStub:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/ScatteredLet:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/ScatteredSetup:
-  Exclude:
-    - spec/**/*.rb
-
-
+  Max: 6

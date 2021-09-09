@@ -70,7 +70,7 @@ describe EventsHelper, type: "helper" do
     subject { event_location_map(event) }
 
     before do
-      allow(Rails.application.config.x).to receive(:google_maps_key) { "12345" }
+      allow(Rails.application.config.x).to receive(:google_maps_key).and_return("12345")
     end
 
     it { is_expected.to match(/data-map-description=\"Line 1,\nLine 2,\nManchester,\nMA1 1AM\" /) }

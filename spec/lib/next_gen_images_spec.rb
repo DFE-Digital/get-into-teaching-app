@@ -9,9 +9,10 @@ describe NextGenImages do
     let(:body) { "<img src=\"#{original_src}\">" }
     let(:instance) { described_class.new(body) }
 
-    before { allow(File).to receive(:exist?) { false } }
-
-    before { allow(File).to receive(:exist?).with("#{Rails.public_path}/#{original_src}") { true } }
+    before do
+      allow(File).to receive(:exist?).and_return(false)
+      allow(File).to receive(:exist?).with("#{Rails.public_path}/#{original_src}").and_return(true)
+    end
 
     context "when the original image is a jpg" do
       let(:original_src) { "path/to/image.jpg" }
@@ -37,7 +38,7 @@ describe NextGenImages do
 
         before do
           next_gen_imgs.values.each do |src|
-            allow(File).to receive(:exist?).with("#{Rails.public_path}/#{src}") { true }
+            allow(File).to receive(:exist?).with("#{Rails.public_path}/#{src}").and_return(true)
           end
         end
 

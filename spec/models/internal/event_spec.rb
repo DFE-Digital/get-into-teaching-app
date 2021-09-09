@@ -249,7 +249,7 @@ describe Internal::Event do
 
     context "when the result is invalid" do
       it "returns false" do
-        allow_any_instance_of(described_class).to receive(:invalid?) { true }
+        allow_any_instance_of(described_class).to receive(:invalid?).and_return(true)
         expect(described_class.new.save).to be false
       end
     end
@@ -261,7 +261,7 @@ describe Internal::Event do
         let(:api_error) { GetIntoTeachingApiClient::ApiError.new(code: 400, response_body: json_error) }
 
         before do
-          allow_any_instance_of(described_class).to receive(:invalid?) { false }
+          allow_any_instance_of(described_class).to receive(:invalid?).and_return(false)
 
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event) { raise api_error }
@@ -284,7 +284,7 @@ describe Internal::Event do
         let(:api_error) { GetIntoTeachingApiClient::ApiError.new(code: 500) }
 
         before do
-          allow_any_instance_of(described_class).to receive(:invalid?) { false }
+          allow_any_instance_of(described_class).to receive(:invalid?).and_return(false)
 
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event).and_raise(api_error)
@@ -370,7 +370,7 @@ describe Internal::Event do
 
     context "when event is valid" do
       it "returns false when building is invalid" do
-        allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?) { true }
+        allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?).and_return(true)
         expect(event.invalid?).to be true
       end
 
@@ -381,14 +381,14 @@ describe Internal::Event do
 
       it "returns false when building is valid" do
         event.venue_type = described_class::VENUE_TYPES[:existing]
-        allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?) { false }
+        allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?).and_return(false)
         expect(event.invalid?).to be false
       end
     end
 
     context "when event is invalid" do
       it "returns true" do
-        allow_any_instance_of(described_class).to receive(:invalid?) { true }
+        allow_any_instance_of(described_class).to receive(:invalid?).and_return(true)
         expect(event.invalid?).to be true
       end
     end

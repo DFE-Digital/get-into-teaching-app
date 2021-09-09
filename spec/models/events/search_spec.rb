@@ -145,9 +145,6 @@ describe Events::Search do
     subject { build :events_search }
 
     let(:default_limit) { described_class::RESULTS_PER_TYPE }
-
-    before { allow(subject).to receive(:valid?).and_return is_valid }
-
     let(:expected_attributes) do
       {
         type_ids: [subject.type],
@@ -158,6 +155,8 @@ describe Events::Search do
         quantity_per_type: default_limit,
       }
     end
+
+    before { allow(subject).to receive(:valid?).and_return is_valid }
 
     context "when valid" do
       let(:is_valid) { true }

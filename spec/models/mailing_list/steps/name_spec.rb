@@ -7,13 +7,13 @@ describe MailingList::Steps::Name do
       receive(:get_candidate_mailing_list_subscription_channels).and_return(channels)
   end
 
-  it_behaves_like "a with wizard step"
-
   let(:channels) do
     GetIntoTeachingApiClient::Constants::CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
+
+  it_behaves_like "a with wizard step"
 
   it { is_expected.to respond_to :first_name }
   it { is_expected.to respond_to :last_name }

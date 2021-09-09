@@ -15,7 +15,7 @@ RSpec.feature "Event wizard", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
       receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
-      receive(:get_teaching_event_types) { [] }
+      receive(:get_teaching_event_types).and_return([])
   end
 
   scenario "Full journey as a walk-in candidate (closed event)" do

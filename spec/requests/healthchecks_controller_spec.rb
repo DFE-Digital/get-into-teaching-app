@@ -2,10 +2,10 @@ require "rails_helper"
 
 describe HealthchecksController, type: :request do
   before do
-    allow_any_instance_of(Healthcheck).to receive(:test_api) { true }
-    allow_any_instance_of(Healthcheck).to receive(:test_redis) { false }
-    allow_any_instance_of(Healthcheck).to receive(:content_sha) { "abc" }
-    allow_any_instance_of(Healthcheck).to receive(:app_sha) { "123" }
+    allow_any_instance_of(Healthcheck).to receive(:test_api).and_return(true)
+    allow_any_instance_of(Healthcheck).to receive(:test_redis).and_return(false)
+    allow_any_instance_of(Healthcheck).to receive(:content_sha).and_return("abc")
+    allow_any_instance_of(Healthcheck).to receive(:app_sha).and_return("123")
     allow(Rails.logger).to receive(:info)
   end
 

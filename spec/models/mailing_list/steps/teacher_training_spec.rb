@@ -7,13 +7,13 @@ describe MailingList::Steps::TeacherTraining do
       receive(:get_candidate_journey_stages).and_return(consideration_journey_stage_types)
   end
 
-  it_behaves_like "a with wizard step"
-
   let(:consideration_journey_stage_types) do
     GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
+
+  it_behaves_like "a with wizard step"
 
   it { is_expected.to respond_to :consideration_journey_stage_id }
 

@@ -3,9 +3,10 @@ require "rails_helper"
 describe "searches/show.html.erb", type: :view do
   subject { rendered }
 
-  before { allow(model).to receive(:results).and_return results }
-
-  before { assign(:search, model) && render }
+  before do
+    allow(model).to receive(:results).and_return results
+    assign(:search, model) && render
+  end
 
   let(:model) { Search.new }
   let(:results) { nil }

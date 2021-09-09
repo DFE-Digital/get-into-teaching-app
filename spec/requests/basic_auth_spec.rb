@@ -9,7 +9,7 @@ RSpec.describe "Basic auth", type: :request do
   end
 
   context "when basic auth is disabled" do
-    before { allow(Rails.application.config.x).to receive(:basic_auth) { "0" } }
+    before { allow(Rails.application.config.x).to receive(:basic_auth).and_return("0") }
 
     it "is not enforced" do
       get root_path
@@ -18,7 +18,7 @@ RSpec.describe "Basic auth", type: :request do
   end
 
   context "when basic auth is enabled" do
-    before { allow(Rails.application.config.x).to receive(:basic_auth) { "1" } }
+    before { allow(Rails.application.config.x).to receive(:basic_auth).and_return("1") }
 
     it "returns unauthorized if credentials do not match" do
       get root_path, params: {}, headers: basic_auth_headers(username, "wrong-password")

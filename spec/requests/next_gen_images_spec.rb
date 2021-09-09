@@ -5,7 +5,7 @@ describe "Next Gen Images", type: :request do
 
   before do
     allow(File).to receive(:exist?).and_call_original
-    allow(File).to receive(:exist?).with(/.*\.svg/) { true }
+    allow(File).to receive(:exist?).with(/.*\.svg/).and_return(true)
     get root_path
   end
 

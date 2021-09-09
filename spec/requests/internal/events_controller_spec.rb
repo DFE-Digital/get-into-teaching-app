@@ -39,7 +39,7 @@ describe Internal::EventsController, type: :request do
       context "when there are no pending #{event_type || default_event_type} events" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type) { [] }
+            .to receive(:search_teaching_events_grouped_by_type).and_return([])
 
           get internal_events_path, headers: generate_auth_headers(:author), params: { event_type: event_type }
         end
@@ -214,7 +214,7 @@ describe Internal::EventsController, type: :request do
   describe "#new" do
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-        .to receive(:get_teaching_event_buildings) { [] }
+        .to receive(:get_teaching_event_buildings).and_return([])
     end
 
     shared_examples "new event" do |event_params|
@@ -232,7 +232,7 @@ describe Internal::EventsController, type: :request do
 
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [] }
+            .to receive(:get_teaching_event_buildings).and_return([])
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event_to_duplicate_readable_id) { pending_online_event }
         end
@@ -275,7 +275,7 @@ describe Internal::EventsController, type: :request do
     context "when any user type" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-          .to receive(:get_teaching_event_buildings) { [] }
+          .to receive(:get_teaching_event_buildings).and_return([])
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
           .to receive(:get_teaching_event).with(event_to_edit_readable_id) { pending_provider_event }
 
@@ -457,7 +457,7 @@ describe Internal::EventsController, type: :request do
       context "when provider event" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [] }
+            .to receive(:get_teaching_event_buildings).and_return([])
         end
 
         let(:event) { pending_provider_event }
@@ -560,7 +560,7 @@ describe Internal::EventsController, type: :request do
       context "when provider event" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [] }
+            .to receive(:get_teaching_event_buildings).and_return([])
         end
 
         let(:event) { pending_provider_event }
@@ -634,7 +634,7 @@ describe Internal::EventsController, type: :request do
     context "when there a no events" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:search_teaching_events_grouped_by_type) { [] }
+          .to receive(:search_teaching_events_grouped_by_type).and_return([])
       end
 
       it "shows 'no open events'" do

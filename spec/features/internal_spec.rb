@@ -36,10 +36,10 @@ RSpec.feature "Internal section", type: :feature do
     end
 
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi).to \
-      receive(:get_teaching_event_buildings) { [] }
+      receive(:get_teaching_event_buildings).and_return([])
 
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:upsert_teaching_event) { [] }
+      receive(:upsert_teaching_event).and_return([])
 
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event) { pending_provider_event }
