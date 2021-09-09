@@ -58,13 +58,13 @@ Style/EmptyMethod:
 Style/ClassVars:
   Enabled: false
 
+RSpec/InstanceVariable:
+  Exclude:
+    - spec/features/content_pages_spec.rb
+
 # FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
 RSpec/ExampleLength:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/InstanceVariable:
   Exclude:
     - spec/**/*.rb
 
