@@ -62,6 +62,10 @@ RSpec/InstanceVariable:
   Exclude:
     - spec/features/content_pages_spec.rb
 
+RSpec/NamedSubject:
+  Exclude:
+    - spec/**/*.rb
+
 # FIXME Temporary whilst updating specs - to be removed in subsequent PRs
 
 RSpec/ExampleLength:
@@ -77,10 +81,6 @@ RSpec/MessageSpies:
     - spec/**/*.rb
 
 RSpec/MultipleExpectations:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/NamedSubject:
   Exclude:
     - spec/**/*.rb
 
