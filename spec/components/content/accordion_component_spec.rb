@@ -5,20 +5,20 @@ describe Content::AccordionComponent, type: "component" do
   let(:text) { "some text" }
 
   describe "Rending the accordion" do
-    let(:steps) do
-      {
-        "Step one" => "some content",
-        "Step two" => "some other content",
-        "Step three" => "even more content",
-      }
-    end
-
     subject! do
       render_inline(described_class.new) do |accordion|
         steps.each do |title, content|
           accordion.step(title: title) { content }
         end
       end
+    end
+
+    let(:steps) do
+      {
+        "Step one" => "some content",
+        "Step two" => "some other content",
+        "Step three" => "even more content",
+      }
     end
 
     specify "renders an accordion container" do
@@ -135,8 +135,6 @@ describe Content::AccordionComponent, type: "component" do
   end
 
   describe "Setting the active step via a data attribute" do
-    let(:active_step) { 3 }
-
     subject! do
       render_inline(described_class.new(active_step: active_step)) do |accordion|
         1.upto(3).each do |i|
@@ -144,6 +142,8 @@ describe Content::AccordionComponent, type: "component" do
         end
       end
     end
+
+    let(:active_step) { 3 }
 
     specify "the active step data attribute is set" do
       expect(page).to have_css(%(.accordions[data-accordion-active-step-value="#{active_step}"]))

@@ -6,12 +6,13 @@ end
 
 shared_context "with wizard step" do
   include_context "with wizard store"
+  subject { instance }
+
   let(:attributes) { {} }
   let(:wizard) { TestWizard.new(wizardstore, TestWizard::Name.key) }
   let(:instance) do
     described_class.new wizard, wizardstore, attributes
   end
-  subject { instance }
 end
 
 shared_context "with wizard data" do

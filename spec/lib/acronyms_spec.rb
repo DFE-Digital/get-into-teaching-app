@@ -2,10 +2,10 @@ require "rails_helper"
 require "acronyms"
 
 describe Acronyms, type: :helper do
+  subject { described_class.new(content, acronyms).render }
+
   let(:content) { "All prices include VAT except where marked exVAT" }
   let(:acronyms) { { "VAT" => "Value added tax", "HMRC" => "Her Majesty's Revenue and Customs" } }
-
-  subject { described_class.new(content, acronyms).render }
 
   it { is_expected.to match "marked exVAT" }
   it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }

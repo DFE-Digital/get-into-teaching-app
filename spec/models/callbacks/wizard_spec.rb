@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe Callbacks::Wizard do
+  subject { described_class.new wizardstore, "privacy_policy" }
+
   let(:uuid) { SecureRandom.uuid }
   let(:store) do
     {
@@ -13,8 +15,6 @@ describe Callbacks::Wizard do
     }
   end
   let(:wizardstore) { Wizard::Store.new store[uuid], {} }
-
-  subject { described_class.new wizardstore, "privacy_policy" }
 
   describe ".steps" do
     subject { described_class.steps }

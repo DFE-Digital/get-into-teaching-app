@@ -28,14 +28,14 @@ describe MailingList::Steps::Subject do
   end
 
   describe "#teaching_subject_ids" do
+    subject { instance.teaching_subject_ids }
+
     let(:teaching_subject_types) do
       subjects = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.merge(
         GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS,
       )
       subjects.map { |k, v| GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k }) }
     end
-
-    subject { instance.teaching_subject_ids }
 
     it { is_expected.to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.values) }
   end

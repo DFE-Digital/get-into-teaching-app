@@ -85,10 +85,10 @@ describe Events::Steps::PersonalisedUpdates do
   end
 
   describe "#export" do
+    subject { instance.export["address_postcode"] }
+
     let(:backingstore) { { "subscribe_to_mailing_list" => true, "address_postcode" => "app-postcode" } }
     let(:crm_backingstore) { {} }
-
-    subject { instance.export["address_postcode"] }
 
     it { is_expected.to eq("app-postcode") }
 
@@ -100,6 +100,8 @@ describe Events::Steps::PersonalisedUpdates do
   end
 
   describe "#teaching_subject_options" do
+    subject { instance.teaching_subject_options }
+
     let(:teaching_subject_types) do
       subjects = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.merge(
         GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS,
@@ -111,8 +113,6 @@ describe Events::Steps::PersonalisedUpdates do
       allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
         receive(:get_teaching_subjects).and_return(teaching_subject_types)
     end
-
-    subject { instance.teaching_subject_options }
 
     it { expect(subject.map(&:id)).to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.values) }
     it { expect(subject.map(&:value)).to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.keys) }

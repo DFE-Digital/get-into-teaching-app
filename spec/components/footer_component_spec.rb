@@ -56,9 +56,9 @@ describe FooterComponent, type: "component" do
   end
 
   context "when a lid_pixel_event is supplied" do
-    let(:event) { "Success" }
-
     subject! { render_inline(described_class.new(lid_pixel_event: event)) }
+
+    let(:event) { "Success" }
 
     specify "renders the right analytics element" do
       expect(rendered_component).to include_analytics("lid", { action: "track", event: event })

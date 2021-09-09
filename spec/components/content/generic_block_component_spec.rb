@@ -1,19 +1,19 @@
 require "rails_helper"
 
 describe Content::GenericBlockComponent, type: "component" do
-  let(:title) { "Block of content" }
-  let(:content) { "Some content" }
-  let(:icon_image) { "icon-school-black.svg" }
-  let(:icon_alt) { "description of image" }
-  let(:custom_class) { "purple" }
-  let(:icon_size) { "30x50" }
-
   subject! do
     render_inline(described_class.new(title: title, icon_image: icon_image, icon_alt: icon_alt, icon_size: icon_size, classes: Array.wrap(custom_class))) do
       content
     end
     page
   end
+
+  let(:title) { "Block of content" }
+  let(:content) { "Some content" }
+  let(:icon_image) { "icon-school-black.svg" }
+  let(:icon_alt) { "description of image" }
+  let(:custom_class) { "purple" }
+  let(:icon_size) { "30x50" }
 
   it { is_expected.to have_css("div.#{custom_class}") }
   it { is_expected.to have_css("h3", text: title) }

@@ -32,14 +32,14 @@ describe HeaderComponent, type: "component" do
   end
 
   context "when the hero slot is called with valid front matter" do
-    let(:front_matter) do
-      { title: "What a nice page", image: "media/images/content/hero-images/0012.jpg" }
-    end
-
     subject! do
       render_inline(described_class.new) do |component|
         component.hero(front_matter)
       end
+    end
+
+    let(:front_matter) do
+      { title: "What a nice page", image: "media/images/content/hero-images/0012.jpg" }
     end
 
     specify "renders the hero" do

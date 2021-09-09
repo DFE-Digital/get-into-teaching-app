@@ -19,9 +19,9 @@ RSpec.describe Pages::Blog do
   end
 
   describe ".find" do
-    before { allow(Pages::Page).to receive(:find).with("/some/template").and_return("/some_template.md") }
-
     subject { described_class }
+
+    before { allow(Pages::Page).to receive(:find).with("/some/template").and_return("/some_template.md") }
 
     specify "calls the other method" do
       described_class.find("/some/template")
@@ -44,9 +44,9 @@ RSpec.describe Pages::Blog do
     end
 
     context "when filtering by a single tag" do
-      let(:wanted_tag) { "august" }
-
       subject { described_class.new(pages) }
+
+      let(:wanted_tag) { "august" }
 
       specify "return the right number of posts" do
         expect(subject.posts(wanted_tag).size).to be 2
@@ -77,12 +77,12 @@ RSpec.describe Pages::Blog do
   end
 
   describe "#similar_posts" do
+    subject { described_class.new(pages).similar_posts(origin) }
+
     let(:origin_tags) { %w[june july] }
     let(:origin_path) { :f }
     let(:origin_fm) { OpenStruct.new(tags: origin_tags) }
     let(:origin) { OpenStruct.new(path: origin_path, frontmatter: origin_fm) }
-
-    subject { described_class.new(pages).similar_posts(origin) }
 
     specify "returns pages that have overlapping tags" do
       tags = subject.values.map { |fm| fm[:tags] }
@@ -102,9 +102,9 @@ RSpec.describe Pages::Blog do
     end
 
     context "when a limit is applied" do
-      let(:limit) { 2 }
-
       subject { described_class.new(pages).similar_posts(origin, limit) }
+
+      let(:limit) { 2 }
 
       specify "only the right number of posts are returned" do
         expect(subject.size).to be(limit)

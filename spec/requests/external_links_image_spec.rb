@@ -2,9 +2,9 @@ require "rails_helper"
 
 describe "External link images", type: :request do
   excluded_classes = %w[button]
-  before { get "/ways-to-train" }
-
   subject { response.body }
+
+  before { get "/ways-to-train" }
 
   context "when external link and not #{excluded_classes.join(' ')}" do
     it "adds an external link icon" do

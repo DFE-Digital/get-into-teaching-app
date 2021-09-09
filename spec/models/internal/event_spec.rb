@@ -279,6 +279,8 @@ describe Internal::Event do
       end
 
       context "when the API raises a server error" do
+        subject { described_class.new }
+
         let(:api_error) { GetIntoTeachingApiClient::ApiError.new(code: 500) }
 
         before do
@@ -287,8 +289,6 @@ describe Internal::Event do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event).and_raise(api_error)
         end
-
-        subject { described_class.new }
 
         it "re-raises the error" do
           expect { subject.save }.to raise_error api_error

@@ -44,31 +44,31 @@ describe PagesController, type: :request do
     end
 
     context "with unknown page" do
-      before { get "/testing/unknown" }
-
       subject { response }
+
+      before { get "/testing/unknown" }
 
       it { is_expected.to have_http_status :not_found }
       it { is_expected.to have_attributes body: %r{Page not found} }
     end
 
     context "with cookies page" do
-      before { get "/cookies" }
-
       subject { response }
+
+      before { get "/cookies" }
 
       it { is_expected.to have_http_status(:success) }
     end
 
     context "with invalid page" do
+      subject { response }
+
       before do
         allow_any_instance_of(described_class).to \
           receive(:render).with(status: :not_found, body: nil).and_call_original
 
         get "/../../secrets.txt"
       end
-
-      subject { response }
 
       it { is_expected.to have_http_status :not_found }
       it { is_expected.to have_attributes body: "" }

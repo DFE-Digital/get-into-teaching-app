@@ -68,14 +68,14 @@ RSpec.describe Pages::Navigation do
   end
 
   describe Pages::Navigation::Node do
+    subject { described_class.new(outer_navigation, path, front_matter) }
+
     let(:outer_navigation) { Pages::Navigation.new }
     let(:path) { "/an-amazing-page" }
     let(:title) { "Page five" }
     let(:navigation) { 5 }
     let(:menu) { true }
     let(:front_matter) { { title: title, navigation: navigation, menu: menu } }
-
-    subject { described_class.new(outer_navigation, path, front_matter) }
 
     specify "assigns the path" do
       expect(subject.path).to eql(path)
@@ -94,10 +94,10 @@ RSpec.describe Pages::Navigation do
     end
 
     context "when the navigation path is overridden" do
+      subject { described_class.new(outer_navigation, path, front_matter) }
+
       let(:custom_navigation_path) { "/sales" }
       let(:front_matter) { { title: title, navigation: navigation, menu: menu, navigation_path: custom_navigation_path } }
-
-      subject { described_class.new(outer_navigation, path, front_matter) }
 
       specify "assigns the custom path to :path attr" do
         expect(subject.path).to eql(custom_navigation_path)
@@ -106,10 +106,10 @@ RSpec.describe Pages::Navigation do
 
     context "when the title is overridden" do
       context "when a 'navigation_title' is set" do
+        subject { described_class.new(outer_navigation, path, front_matter) }
+
         let(:custom_navigation_title) { "January sales!" }
         let(:front_matter) { { title: title, navigation: navigation, menu: menu, navigation_title: custom_navigation_title } }
-
-        subject { described_class.new(outer_navigation, path, front_matter) }
 
         specify "assigns the custom path to :path attr" do
           expect(subject.title).to eql(custom_navigation_title)
@@ -117,10 +117,10 @@ RSpec.describe Pages::Navigation do
       end
 
       context "when the page 'heading' has been set" do
+        subject { described_class.new(outer_navigation, path, front_matter) }
+
         let(:custom_heading) { "Sale on nowheading" }
         let(:front_matter) { { title: title, navigation: navigation, menu: menu, heading: custom_heading } }
-
-        subject { described_class.new(outer_navigation, path, front_matter) }
 
         specify "assigns the custom path to :path attr" do
           expect(subject.title).to eql(custom_heading)
@@ -169,9 +169,9 @@ RSpec.describe Pages::Navigation do
     end
 
     describe "#children" do
-      let(:nav) { Pages::Navigation.new(page_five_subpages.merge(page_six_subpages)) }
-
       subject { described_class.new(nav, "/page-five", { title: "Five", rank: 5, menu: true }) }
+
+      let(:nav) { Pages::Navigation.new(page_five_subpages.merge(page_six_subpages)) }
 
       specify "contains the right number of children" do
         expect(subject.children.size).to eql(page_five_subpages.size)

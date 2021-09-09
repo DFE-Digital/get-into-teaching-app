@@ -35,9 +35,9 @@ describe Events::Search do
   end
 
   describe "#available_months" do
-    before { travel_to(DateTime.new(2020, 11, 10)) }
-
     subject { described_class.new(period: period).available_months }
+
+    before { travel_to(DateTime.new(2020, 11, 10)) }
 
     context "when period is future" do
       let(:period) { :future }
@@ -115,11 +115,11 @@ describe Events::Search do
       end
 
       context "with assigned distance" do
-        let(:msg) { "Enter valid full postcode or first part" }
-
         subject do
           described_class.new distance: described_class::DISTANCES.first
         end
+
+        let(:msg) { "Enter valid full postcode or first part" }
 
         it { is_expected.not_to allow_value("").for :postcode }
         it { is_expected.not_to allow_value(nil).for :postcode }
@@ -142,9 +142,9 @@ describe Events::Search do
   end
 
   describe "#query_events" do
-    let(:default_limit) { described_class::RESULTS_PER_TYPE }
-
     subject { build :events_search }
+
+    let(:default_limit) { described_class::RESULTS_PER_TYPE }
 
     before { allow(subject).to receive(:valid?).and_return is_valid }
 
@@ -206,9 +206,9 @@ describe Events::Search do
         end
 
         context "when the month is the current month" do
-          let(:date) { travel_date }
-
           subject { build(:events_search, month: date.to_formatted_s(:humanmonthyear)).tap(&:validate) }
+
+          let(:date) { travel_date }
 
           it "searches from the beginning of today to the end of the current month" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -218,9 +218,9 @@ describe Events::Search do
         end
 
         context "when the month is the next month" do
-          let(:date) { travel_date.advance(months: 1) }
-
           subject { build(:events_search, month: date.to_formatted_s(:humanmonthyear)).tap(&:validate) }
+
+          let(:date) { travel_date.advance(months: 1) }
 
           it "searches from the start of the next month to the end" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -247,9 +247,9 @@ describe Events::Search do
         end
 
         context "when the month is the current month" do
-          let(:date) { travel_date }
-
           subject { build(:events_search, month: date.to_formatted_s(:humanmonthyear), period: :past).tap(&:validate) }
+
+          let(:date) { travel_date }
 
           it "searches from the beginning of the month to the end of yesterday" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -259,9 +259,9 @@ describe Events::Search do
         end
 
         context "when the month is the previous month" do
-          let(:date) { travel_date.advance(months: -1) }
-
           subject { build(:events_search, month: date.to_formatted_s(:humanmonthyear), period: :past).tap(&:validate) }
+
+          let(:date) { travel_date.advance(months: -1) }
 
           it "searches from the start of the previous month to the end" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \

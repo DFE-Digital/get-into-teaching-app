@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe Events::Wizard do
+  subject { described_class.new wizardstore, "personalised_updates" }
+
   let(:uuid) { SecureRandom.uuid }
   let(:store) do
     { uuid => {
@@ -11,8 +13,6 @@ describe Events::Wizard do
     } }
   end
   let(:wizardstore) { Wizard::Store.new store[uuid], {} }
-
-  subject { described_class.new wizardstore, "personalised_updates" }
 
   describe ".steps" do
     subject { described_class.steps }

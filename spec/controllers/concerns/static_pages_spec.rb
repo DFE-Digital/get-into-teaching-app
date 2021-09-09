@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe StaticPages do
+  subject { tester.tap(&:render) }
+
   let(:testing_class) do
     Class.new do
       include StaticPages
@@ -45,8 +47,6 @@ describe StaticPages do
     allow(tester).to receive(:fetch_content).and_call_original
   end
 
-  subject { tester.tap(&:render) }
-
   context "with caching disabled" do
     it { is_expected.to have_received :fetch_content }
     it { is_expected.not_to have_received :stale? }
@@ -74,11 +74,11 @@ describe StaticPages do
   end
 
   describe "#filtered_page_template" do
+    subject { tester.send :filtered_page_template }
+
     let(:params) { { page: template } }
 
     before { allow(tester).to receive(:params).and_return params }
-
-    subject { tester.send :filtered_page_template }
 
     context "with valid page template" do
       let(:template) { "hello" }
@@ -117,9 +117,9 @@ describe StaticPages do
     end
 
     context "with custom page value" do
-      let(:params) { { story: "hello" } }
-
       subject { tester.send :filtered_page_template, :story }
+
+      let(:params) { { story: "hello" } }
 
       it { is_expected.to eql "hello" }
     end

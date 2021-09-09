@@ -1,6 +1,11 @@
 require "rails_helper"
 
 describe Content::FeatureTableComponent, type: "component" do
+  subject! do
+    render_inline(described_class.new(data, title))
+    page
+  end
+
   let(:title) { "Features" }
   let(:data) do
     {
@@ -8,11 +13,6 @@ describe Content::FeatureTableComponent, type: "component" do
       "Feature 2" => "Value 2",
       "Feature 3" => "Value 3",
     }
-  end
-
-  subject! do
-    render_inline(described_class.new(data, title))
-    page
   end
 
   it { is_expected.to have_css(".feature-table") }

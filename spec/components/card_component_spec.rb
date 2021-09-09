@@ -1,6 +1,11 @@
 require "rails_helper"
 
 describe CardComponent, type: "component" do
+  subject do
+    render_inline described_class.new(card: card)
+    page
+  end
+
   let(:base) do
     {
       "snippet" => "Lorem ipsum ....",
@@ -12,11 +17,6 @@ describe CardComponent, type: "component" do
   end
 
   let(:card) { base }
-
-  subject do
-    render_inline described_class.new(card: card)
-    page
-  end
 
   specify "renders a card" do
     is_expected.to have_css(".card")

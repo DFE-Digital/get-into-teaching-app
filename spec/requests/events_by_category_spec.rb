@@ -19,6 +19,8 @@ describe "View events by category", type: :request do
   end
 
   context "when viewing a category archive" do
+    subject { response }
+
     let(:category) { "online-q-as" }
 
     before do
@@ -26,8 +28,6 @@ describe "View events by category", type: :request do
         receive(:search_teaching_events_grouped_by_type) { events_by_type }
       get archive_event_category_path(category)
     end
-
-    subject { response }
 
     it { is_expected.to have_http_status :success }
     it { expect(response.body).to include "Past online Q&amp;As" }
@@ -44,13 +44,13 @@ describe "View events by category", type: :request do
   end
 
   context "when viewing a category" do
+    subject { response }
+
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type) { events_by_type }
       get event_category_path("train-to-teach-events")
     end
-
-    subject { response }
 
     it { is_expected.to have_http_status :success }
 
@@ -164,10 +164,10 @@ describe "View events by category", type: :request do
     end
 
     context "when there are no results" do
+      subject { parsed_response.css(".no-results").first }
+
       let(:path) { event_category_path("train-to-teach-events") }
       let(:events) { [] }
-
-      subject { parsed_response.css(".no-results").first }
 
       it { is_expected.not_to be_nil }
       it { expect(subject.text).to include("Sorry your search has not found any events") }
@@ -175,11 +175,11 @@ describe "View events by category", type: :request do
   end
 
   context "when a category does not exist" do
+    subject { response }
+
     before do
       get event_category_path("non-existant")
     end
-
-    subject { response }
 
     it { is_expected.to have_http_status :not_found }
   end

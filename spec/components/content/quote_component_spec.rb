@@ -1,6 +1,11 @@
 require "rails_helper"
 
 describe Content::QuoteComponent, type: :component do
+  subject do
+    render_inline(component)
+    page
+  end
+
   let(:component) do
     described_class.new(
       text: text,
@@ -19,11 +24,6 @@ describe Content::QuoteComponent, type: :component do
   let(:image) { "media/images/featured-3.jpg" }
   let(:hang) { "left" }
   let(:inline) { nil }
-
-  subject do
-    render_inline(component)
-    page
-  end
 
   describe "quote classes" do
     it { is_expected.to have_css(".quote.quote--hang-#{hang}") }

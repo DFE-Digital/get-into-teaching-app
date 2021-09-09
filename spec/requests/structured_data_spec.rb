@@ -1,10 +1,10 @@
 require "rails_helper"
 
 describe "Google Structured Data", type: :request do
+  subject(:structured_data) { json_contents.map { |json| JSON.parse(json, symbolize_names: true) } }
+
   let(:parsed_response) { Nokogiri.parse(response.body) }
   let(:json_contents) { parsed_response.css("script[type='application/ld+json']").map(&:content) }
-
-  subject(:structured_data) { json_contents.map { |json| JSON.parse(json, symbolize_names: true) } }
 
   before do
     %i[how_to event blog_posting organization breadcrumb_list web_site].each do |type|

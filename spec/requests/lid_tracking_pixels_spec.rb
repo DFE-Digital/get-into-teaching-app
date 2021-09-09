@@ -1,14 +1,14 @@
 require "rails_helper"
 
 describe "LID tracking pixels", type: :request do
+  subject { response.body }
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:search_teaching_events_grouped_by_type) { [] }
   end
 
   before { get path }
-
-  subject { response.body }
 
   context "when visiting /events" do
     let(:path) { events_path }

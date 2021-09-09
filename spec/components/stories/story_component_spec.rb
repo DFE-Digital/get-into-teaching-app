@@ -1,6 +1,11 @@
 require "rails_helper"
 
 describe Stories::StoryComponent, type: "component" do
+  subject do
+    render_inline(described_class.new(front_matter))
+    page
+  end
+
   let(:default_front_matter) do
     {
       "title" => "Swapping senior management for students",
@@ -35,11 +40,6 @@ describe Stories::StoryComponent, type: "component" do
   end
 
   let(:front_matter) { default_front_matter }
-
-  subject do
-    render_inline(described_class.new(front_matter))
-    page
-  end
 
   describe "layout elements" do
     it { is_expected.to have_css(".container .markdown") }
@@ -91,8 +91,6 @@ describe Stories::StoryComponent, type: "component" do
   end
 
   describe "content" do
-    let(:content) { "The quick brown fox" }
-
     subject do
       render_inline(described_class.new(front_matter)) do
         content
@@ -100,6 +98,8 @@ describe Stories::StoryComponent, type: "component" do
 
       page
     end
+
+    let(:content) { "The quick brown fox" }
 
     specify "the content is rendered" do
       is_expected.to have_content(content)

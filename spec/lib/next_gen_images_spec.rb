@@ -3,6 +3,8 @@ require "next_gen_images"
 
 describe NextGenImages do
   describe "#html" do
+    subject { instance.html }
+
     let(:original_ext) { File.extname(original_src) }
     let(:body) { "<img src=\"#{original_src}\">" }
     let(:instance) { described_class.new(body) }
@@ -10,8 +12,6 @@ describe NextGenImages do
     before { allow(File).to receive(:exist?) { false } }
 
     before { allow(File).to receive(:exist?).with("#{Rails.public_path}/#{original_src}") { true } }
-
-    subject { instance.html }
 
     context "when the original image is a jpg" do
       let(:original_src) { "path/to/image.jpg" }

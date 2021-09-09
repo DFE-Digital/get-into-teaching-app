@@ -3,6 +3,8 @@ require "rails_helper"
 describe "Find an event near you", type: :request do
   include_context "with stubbed types api"
 
+  subject { response }
+
   let(:no_events_regex) { /Sorry your search has not found any events/ }
   let(:no_ttt_events_regex) { /There are no Train to Teach events in your chosen month/ }
   let(:category_headings_regex) { /<h3>(Train to Teach events|Online Q&amp;As|School and University events)<\/h3>/ }
@@ -15,8 +17,6 @@ describe "Find an event near you", type: :request do
     end
   end
   let(:events_by_type) { group_events_by_type(events) }
-
-  subject { response }
 
   context "when landing on the page initially" do
     let(:expected_request_attributes) { { start_after: DateTime.now.utc.beginning_of_day } }

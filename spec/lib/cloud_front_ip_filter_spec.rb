@@ -2,12 +2,12 @@ require "rails_helper"
 require "cloud_front_ip_filter"
 
 RSpec.describe CloudFrontIpFilter do
+  subject { described_class.new original }
+
   before do
     stub_request(:get, "https://ip-ranges.amazonaws.com/ip-ranges.json")
       .to_return(status: 401) # will fallback to copy in Gem
   end
-
-  subject { described_class.new original }
 
   let(:original) { ->(ip) { /192\.168\.1\./.match?(ip) } }
 

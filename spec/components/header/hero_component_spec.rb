@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe Header::HeroComponent, type: "component" do
+  subject! { render_inline(component) }
+
   let(:extra_front_matter) { {} }
   let(:front_matter) do
     {
@@ -14,8 +16,6 @@ describe Header::HeroComponent, type: "component" do
     }.merge(extra_front_matter)
   end
   let(:component) { described_class.new(front_matter) }
-
-  subject! { render_inline(component) }
 
   describe "rendering a hero section" do
     describe "title and subtitle" do
@@ -36,6 +36,8 @@ describe Header::HeroComponent, type: "component" do
       end
 
       context "when a subtitle link exists" do
+        subject! { render_inline(component) }
+
         let(:front_matter) do
           {
             "title" => "Teaching, it's pretty awesome",
@@ -45,8 +47,6 @@ describe Header::HeroComponent, type: "component" do
             "image" => "media/images/content/hero-images/0012.jpg",
           }
         end
-
-        subject! { render_inline(component) }
 
         specify "renders the subtitle button" do
           expect(page).to have_css(".hero__subtitle") do |div|
@@ -74,13 +74,13 @@ describe Header::HeroComponent, type: "component" do
     end
 
     describe "rendering block content" do
+      subject! do
+        render_inline(component) { sample }
+      end
+
       let(:sample) { "some content" }
       let(:component) do
         described_class.new(front_matter)
-      end
-
-      subject! do
-        render_inline(component) { sample }
       end
 
       specify "the block content should be rendered by the component" do

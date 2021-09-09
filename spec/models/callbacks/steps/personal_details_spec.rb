@@ -10,9 +10,9 @@ describe Callbacks::Steps::PersonalDetails do
   it { is_expected.to respond_to :email }
 
   describe "validations" do
-    before { instance.valid? }
-
     subject { instance.errors.messages }
+
+    before { instance.valid? }
 
     it { is_expected.to include(:first_name) }
     it { is_expected.to include(:last_name) }

@@ -3,6 +3,8 @@ require "responsive_images"
 
 describe ResponsiveImages do
   describe "#html" do
+    subject { instance.html }
+
     let(:fingerprint) { "-fingerprint1" }
     let(:src) { "media/images/content/an-image#{fingerprint}.jpg" }
     let(:body) do
@@ -14,8 +16,6 @@ describe ResponsiveImages do
     let(:instance) { described_class.new(body) }
 
     before { allow(Dir).to receive(:glob).and_call_original }
-
-    subject { instance.html }
 
     it { is_expected.to include(body) }
 

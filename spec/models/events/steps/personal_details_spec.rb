@@ -11,9 +11,9 @@ describe Events::Steps::PersonalDetails do
   it { is_expected.to respond_to :is_walk_in }
 
   describe "validations" do
-    before { instance.valid? }
-
     subject { instance.errors.messages }
+
+    before { instance.valid? }
 
     it { is_expected.to include(:first_name) }
     it { is_expected.to include(:last_name) }

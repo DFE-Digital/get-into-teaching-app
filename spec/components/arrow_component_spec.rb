@@ -1,6 +1,11 @@
 require "rails_helper"
 
 describe ArrowComponent, type: :component do
+  subject(:render) do
+    render_inline(component)
+    page
+  end
+
   let(:component) do
     described_class.new(
       width: 200,
@@ -13,11 +18,6 @@ describe ArrowComponent, type: :component do
       cy: 0.1,
       arrow_size: 0.1,
     )
-  end
-
-  subject(:render) do
-    render_inline(component)
-    page
   end
 
   it "draws an SVG arrow" do
