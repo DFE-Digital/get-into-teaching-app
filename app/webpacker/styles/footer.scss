@@ -30,6 +30,7 @@ footer.site-footer {
 
         color: $grey-mid;
         margin-bottom: .5em;
+        padding: .5em 0;
 
         &:focus {
           color: $black;
@@ -64,6 +65,12 @@ footer.site-footer {
     &__social {
       flex: 33% 0 0;
       display: flex;
+      margin-right: 1em;
+
+      a {
+        max-height: 2em;
+        padding: .5em;
+      }
 
       // gap: 1em;
       a + a {
