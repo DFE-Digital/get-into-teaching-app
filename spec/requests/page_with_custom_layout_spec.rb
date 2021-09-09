@@ -2,9 +2,9 @@ require "rails_helper"
 
 describe "rendering pages with a custom layout", type: :request do
   context "with a home page layout" do
-    before { get "/home-page" }
-
     subject { response.body }
+
+    before { get "/home-page" }
 
     it { expect(response).to have_http_status(200) }
     it { is_expected.to include("Home Page Test") }
@@ -14,9 +14,9 @@ describe "rendering pages with a custom layout", type: :request do
   end
 
   context "with a stories/story layout" do
-    before { get "/stories/story-page" }
-
     subject { response.body }
+
+    before { get "/stories/story-page" }
 
     it { expect(response).to have_http_status(200) }
     it { is_expected.to include("Story Page Test") }
@@ -25,9 +25,9 @@ describe "rendering pages with a custom layout", type: :request do
   end
 
   context "with a stories/list layout" do
-    before { get "/stories/list-page" }
-
     subject { response.body }
+
+    before { get "/stories/list-page" }
 
     it { expect(response).to have_http_status(200) }
     it { is_expected.to include("List Page Test") }
@@ -39,9 +39,9 @@ describe "rendering pages with a custom layout", type: :request do
   end
 
   context "with a stories/landing layout" do
-    before { get "/stories/landing-page" }
-
     subject { response.body }
+
+    before { get "/stories/landing-page" }
 
     it { expect(response).to have_http_status(200) }
     it { is_expected.to include("Landing Page Test") }

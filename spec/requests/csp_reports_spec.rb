@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe "CSP violation reporting", type: :request do
+  subject { response }
+
   let(:params) { { "csp-report" => { "blocked-uri" => "https://malicious.com/script.js" } } }
   let(:events) { [] }
 
@@ -9,8 +11,6 @@ describe "CSP violation reporting", type: :request do
     allow(Rails.logger).to receive(:error)
     post csp_reports_path, params: params.to_json
   end
-
-  subject { response }
 
   it { is_expected.to have_http_status(:success) }
   it { expect(Rails.logger).to have_received(:error).with(params).once }

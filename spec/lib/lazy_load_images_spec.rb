@@ -3,13 +3,13 @@ require "lazy_load_images"
 
 describe LazyLoadImages do
   describe "#html" do
+    subject { instance.html }
+
     let(:original_src) { "image.jpg" }
     let(:original_ext) { File.extname(original_src) }
     let(:img) { "<img class=\"test\" src=\"#{original_src}\">" }
     let(:picture) { "<picture>#{img}<source srcset=\"#{original_src}\"></source></picture>" }
     let(:instance) { described_class.new(picture) }
-
-    subject { instance.html }
 
     it do
       lazy_image = "<img class=\"test lazyload\" data-src=\"#{original_src}\">"

@@ -1,12 +1,12 @@
 require "rails_helper"
 
 describe Events::SearchComponent, type: "component" do
+  subject! { render_inline(component) }
+
   let(:search) { build(:events_search, :invalid) }
   let(:path) { "/some/path" }
 
   let(:component) { described_class.new(search, path) }
-
-  subject! { render_inline(component) }
 
   before { freeze_time }
 
@@ -22,9 +22,9 @@ describe Events::SearchComponent, type: "component" do
     end
 
     context "when overridden" do
-      let(:new_heading) { "Search for Awesome events" }
-
       subject! { render_inline(described_class.new(search, path, heading: new_heading)) }
+
+      let(:new_heading) { "Search for Awesome events" }
 
       specify %(the title is overridden) do
         expect(page).to have_css("h2", text: new_heading)

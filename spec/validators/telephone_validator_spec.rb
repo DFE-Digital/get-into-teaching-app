@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe TelephoneValidator do
+  subject { instance.errors.to_hash }
+
   let :test_model do
     Class.new do
       include ActiveModel::Model
@@ -15,8 +17,6 @@ describe TelephoneValidator do
   end
 
   before { instance.valid? }
-
-  subject { instance.errors.to_hash }
 
   %w[1234 123456789123456789123 1feg313153gewg1 random].each do |number|
     context "checking '#{number}'" do

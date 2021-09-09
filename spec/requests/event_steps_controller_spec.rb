@@ -24,17 +24,17 @@ describe EventStepsController, type: :request do
   end
 
   describe "#index" do
-    before { get event_steps_path("123", query: "param") }
-
     subject { response }
+
+    before { get event_steps_path("123", query: "param") }
 
     it { is_expected.to redirect_to(event_step_path("123", { id: :personal_details, query: "param" })) }
   end
 
   describe "#show" do
-    before { get step_path }
-
     subject { response }
+
+    before { get step_path }
 
     it { is_expected.to have_http_status :success }
 
@@ -57,6 +57,8 @@ describe EventStepsController, type: :request do
     end
 
     context "when the event does not exist" do
+      subject { response }
+
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
           receive(:get_teaching_event).with("456")
@@ -65,19 +67,17 @@ describe EventStepsController, type: :request do
 
       before { get event_steps_path("456") }
 
-      subject { response }
-
       it { is_expected.to have_http_status :not_found }
     end
   end
 
   describe "#update" do
-    let(:key) { model.model_name.param_key }
-
     subject do
       patch step_path, params: { key => details_params }
       response
     end
+
+    let(:key) { model.model_name.param_key }
 
     context "with valid data" do
       let(:details_params) { attributes_for(:events_personal_details) }

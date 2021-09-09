@@ -5,13 +5,13 @@ describe EventsController, type: :request do
 
   describe "#index" do
     include_context "with stubbed upcoming events by category api", EventsController::UPCOMING_EVENTS_PER_TYPE
-    let(:parsed_response) { Nokogiri.parse(response.body) }
-    let(:expected_description) { "Get your questions answered at an event." }
-
     subject! do
       get(events_path)
       response
     end
+
+    let(:parsed_response) { Nokogiri.parse(response.body) }
+    let(:expected_description) { "Get your questions answered at an event." }
 
     it { is_expected.to have_http_status :success }
 
@@ -37,6 +37,11 @@ describe EventsController, type: :request do
   end
 
   describe "#search" do
+    subject(:perform_request) do
+      get(search_path)
+      response
+    end
+
     let(:results_per_type) { EventsController::MAXIMUM_EVENTS_PER_CATEGORY }
     let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
     let(:events_by_type) { group_events_by_type(events) }
@@ -50,11 +55,6 @@ describe EventsController, type: :request do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type)
         .with(a_hash_including(expected_request_attributes)) { events_by_type }
-    end
-
-    subject! do
-      get(search_path)
-      response
     end
 
     context "with valid search params" do
@@ -84,16 +84,19 @@ describe EventsController, type: :request do
       it { is_expected.to have_attributes media_type: "text/html" }
 
       it "renders all events" do
+        perform_request
         expect(parsed_response.css(".events-featured__list__item").count).to eql(events.count)
       end
 
       it "has a meta description" do
+        perform_request
         actual_description = parsed_response.at_css("head meta[name='description']")["content"]
 
         expect(actual_description).to eql(expected_description)
       end
 
       it "has a meta og:description" do
+        perform_request
         actual_description = parsed_response.at_css("head meta[name='og:description']")["content"]
 
         expect(actual_description).to eql(expected_description)
@@ -118,13 +121,13 @@ describe EventsController, type: :request do
   end
 
   describe "#show" do
+    subject { response }
+
     let(:event_readable_id) { "123" }
 
     let(:event) do
       build(:event_api, :with_provider_info, readable_id: event_readable_id)
     end
-
-    subject { response }
 
     context "with known event" do
       before do

@@ -2,6 +2,8 @@ require "rails_helper"
 
 describe ApplicationHelper do
   describe "#analytics_body_tag" do
+    subject { analytics_body_tag { "<h1>TEST</h1>".html_safe } }
+
     let(:id) { "1234" }
     let(:gtm_id) { id }
     let(:ga_id) { id }
@@ -25,8 +27,6 @@ describe ApplicationHelper do
       allow(ENV).to receive(:[]).with("BAM_ID").and_return bam_id
       allow(ENV).to receive(:[]).with("LID_ID").and_return lid_id
     end
-
-    subject { analytics_body_tag { "<h1>TEST</h1>".html_safe } }
 
     it { is_expected.to have_css "body h1" }
 
@@ -139,18 +139,18 @@ describe ApplicationHelper do
   end
 
   describe "#fa_icon" do
-    let(:icon_name) { "myspace" }
-
     subject { helper.fa_icon(icon_name) }
+
+    let(:icon_name) { "myspace" }
 
     it "returns an empty span with the default classes" do
       expect(subject).to have_css("span.fas.fa-#{icon_name}")
     end
 
     context "with FA styles" do
-      let(:style) { "fad" }
-
       subject { helper.fa_icon(icon_name, style: style) }
+
+      let(:style) { "fad" }
 
       it "returns an empty span with provided style class" do
         expect(subject).to have_css("span.#{style}.fa-#{icon_name}")
@@ -158,9 +158,9 @@ describe ApplicationHelper do
     end
 
     context "with extra classes" do
-      let(:extra_classes) { %w[abc def] }
-
       subject { helper.fa_icon(icon_name, *extra_classes) }
+
+      let(:extra_classes) { %w[abc def] }
 
       it "returns an empty span with the extra classes" do
         expect(subject).to have_css(%(span.fa-#{icon_name}.#{extra_classes.join('.')}))
@@ -169,9 +169,9 @@ describe ApplicationHelper do
   end
 
   describe "#fab_icon" do
-    let(:icon_name) { "friendster" }
-
     subject { helper.fab_icon(icon_name) }
+
+    let(:icon_name) { "friendster" }
 
     after { subject }
 
@@ -181,9 +181,9 @@ describe ApplicationHelper do
   end
 
   describe "#fas_icon" do
-    let(:icon_name) { "orkut" }
-
     subject { helper.fas_icon(icon_name) }
+
+    let(:icon_name) { "orkut" }
 
     after { subject }
 
@@ -216,10 +216,10 @@ describe ApplicationHelper do
   end
 
   describe "#chat_link" do
+    subject { helper.chat_link(text, classes: extra_class) }
+
     let(:text) { "Chat with us" }
     let(:extra_class) { "button" }
-
-    subject { helper.chat_link(text, classes: extra_class) }
 
     it "generates a hyperlink" do
       expect(subject).to have_css("a")

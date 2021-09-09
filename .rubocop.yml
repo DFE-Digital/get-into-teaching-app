@@ -68,10 +68,6 @@ RSpec/ExampleLength:
   Exclude:
     - spec/**/*.rb
 
-RSpec/LeadingSubject:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/LetBeforeExamples:
   Exclude:
     - spec/**/*.rb

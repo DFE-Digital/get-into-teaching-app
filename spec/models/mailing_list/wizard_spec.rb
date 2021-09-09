@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe MailingList::Wizard do
+  subject { described_class.new wizardstore, "privacy_policy" }
+
   let(:uuid) { SecureRandom.uuid }
   let(:store) do
     { uuid => {
@@ -10,8 +12,6 @@ describe MailingList::Wizard do
     } }
   end
   let(:wizardstore) { Wizard::Store.new store[uuid], {} }
-
-  subject { described_class.new wizardstore, "privacy_policy" }
 
   describe ".steps" do
     subject { described_class.steps }

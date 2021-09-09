@@ -8,10 +8,10 @@ describe StructuredDataHelper, type: "helper" do
   let(:image_path) { "media/images/getintoteachinglogo.svg" }
 
   describe ".structured_data" do
+    subject(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
+
     let(:malicious_text) { "</script><script>alert('PWNED!')</script>" }
     let(:html) { structured_data("Type", { text: malicious_text }) }
-
-    subject(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
 
     before { enable_structured_data(:type) }
 
@@ -46,6 +46,8 @@ describe StructuredDataHelper, type: "helper" do
   end
 
   describe ".how_to_structured_data" do
+    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
+
     let(:frontmatter) do
       {
         title: "Title",
@@ -65,8 +67,6 @@ describe StructuredDataHelper, type: "helper" do
     let(:page) { Pages::Page.new("/how-to-page", frontmatter) }
     let(:html) { how_to_structured_data(page) }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
-
-    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
     before { enable_structured_data(:how_to) }
 
@@ -112,6 +112,8 @@ describe StructuredDataHelper, type: "helper" do
   end
 
   describe ".blog_structured_data" do
+    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
+
     let(:frontmatter) do
       {
         title: "A title",
@@ -128,8 +130,6 @@ describe StructuredDataHelper, type: "helper" do
     let(:page) { Pages::Page.new("/blog/post", frontmatter) }
     let(:html) { blog_structured_data(page) }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
-
-    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
     before { enable_structured_data(:blog_posting) }
 
@@ -171,10 +171,10 @@ describe StructuredDataHelper, type: "helper" do
   end
 
   describe ".search_structured_data" do
+    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
+
     let(:html) { search_structured_data }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
-
-    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
     before { enable_structured_data(:web_site) }
 
@@ -200,10 +200,10 @@ describe StructuredDataHelper, type: "helper" do
   end
 
   describe ".logo_structured_data" do
+    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
+
     let(:html) { logo_structured_data }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
-
-    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
     before { enable_structured_data(:organization) }
 
@@ -225,6 +225,8 @@ describe StructuredDataHelper, type: "helper" do
     let(:html) { breadcrumbs_structured_data(breadcrumbs) }
 
     context "when there are breadcrumbs" do
+      subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
+
       let(:breadcrumbs) do
         [
           Loaf::Breadcrumb.new("Page 1", "/page1", false),
@@ -232,8 +234,6 @@ describe StructuredDataHelper, type: "helper" do
         ]
       end
       let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
-
-      subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
       before { enable_structured_data(:breadcrumb_list) }
 
@@ -281,11 +281,11 @@ describe StructuredDataHelper, type: "helper" do
   end
 
   describe ".event_structured_data" do
+    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
+
     let(:event) { build(:event_api, building: nil) }
     let(:html) { event_structured_data(event) }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
-
-    subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
     before { enable_structured_data(:event) }
 

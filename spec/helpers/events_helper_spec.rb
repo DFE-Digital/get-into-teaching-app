@@ -29,9 +29,9 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#format_event_date" do
-    let(:stacked) { true }
-
     subject { format_event_date event, stacked: stacked }
+
+    let(:stacked) { true }
 
     context "with a single day event" do
       it { is_expected.to eql "1 June 2020 <br> 10:00 - 12:00" }

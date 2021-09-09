@@ -66,13 +66,13 @@ describe Healthcheck do
   end
 
   describe "#test_redis" do
+    subject { described_class.new.test_redis }
+
     before do
       allow(ENV).to receive(:[]).and_call_original
       allow(ENV).to receive(:[]).with("REDIS_URL").and_return \
         "redis://localhost:6379/1"
     end
-
-    subject { described_class.new.test_redis }
 
     context "with working connection" do
       before do

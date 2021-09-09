@@ -3,6 +3,8 @@ require "rails_helper"
 RSpec.feature "Breadcrumbs", type: :feature do
   include_context "with stubbed types api"
 
+  subject { page }
+
   let(:event) { GetIntoTeachingApiClient::TeachingEvent.new(statusId: 1) }
 
   before do
@@ -13,8 +15,6 @@ RSpec.feature "Breadcrumbs", type: :feature do
   end
 
   before { visit path }
-
-  subject { page }
 
   context "when visiting the home page" do
     let(:path) { "/home-page" }

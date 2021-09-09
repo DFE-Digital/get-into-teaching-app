@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe PostcodeValidator do
+  subject { instance.errors.to_hash }
+
   let(:test_model) do
     Class.new do
       include ActiveModel::Model
@@ -14,8 +16,6 @@ describe PostcodeValidator do
   end
 
   before { instance.valid? }
-
-  subject { instance.errors.to_hash }
 
   context "with invalid full postcodes" do
     ["F00BAR", "123ABC", "TE57 ING"].each do |postcode|

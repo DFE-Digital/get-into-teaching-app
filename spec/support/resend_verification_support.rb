@@ -6,8 +6,6 @@ shared_examples "a controller with a #resend_verification action" do
     end
 
     context "when the API returns 429 too many requests" do
-      let(:too_many_requests_error) { GetIntoTeachingApiClient::ApiError.new(code: 429) }
-
       subject! do
         allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
           receive(:create_candidate_access_token).and_raise(too_many_requests_error)
@@ -15,18 +13,20 @@ shared_examples "a controller with a #resend_verification action" do
         response.body
       end
 
+      let(:too_many_requests_error) { GetIntoTeachingApiClient::ApiError.new(code: 429) }
+
       it { is_expected.to match(/Error 429/) }
       it { is_expected.to match(/Too many requests/) }
     end
 
     context "when the API returns 400 bad request" do
-      let(:bad_request_error) { GetIntoTeachingApiClient::ApiError.new(code: 400) }
-
       subject! do
         allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
           receive(:create_candidate_access_token).and_raise(bad_request_error)
         perform_request
       end
+
+      let(:bad_request_error) { GetIntoTeachingApiClient::ApiError.new(code: 400) }
 
       it { is_expected.to redirect_to(controller.send(:step_path, controller.wizard_class.steps.first.key)) }
     end

@@ -16,17 +16,17 @@ describe MailingList::StepsController, type: :request do
   let(:step_path) { mailing_list_step_path model.key }
 
   describe "#index" do
-    before { get mailing_list_steps_path(query: "param") }
-
     subject { response }
+
+    before { get mailing_list_steps_path(query: "param") }
 
     it { is_expected.to redirect_to(mailing_list_step_path({ id: :name, query: "param" })) }
   end
 
   describe "#show" do
-    before { get step_path }
-
     subject { response }
+
+    before { get step_path }
 
     it { is_expected.to have_http_status :success }
 
@@ -86,12 +86,12 @@ describe MailingList::StepsController, type: :request do
   end
 
   describe "#update" do
-    let(:key) { model.model_name.param_key }
-
     subject do
       patch step_path, params: { key => details_params }
       response
     end
+
+    let(:key) { model.model_name.param_key }
 
     context "with valid data" do
       let(:details_params) { attributes_for(:mailing_list_name) }

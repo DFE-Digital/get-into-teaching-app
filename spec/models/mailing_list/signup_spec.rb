@@ -173,6 +173,8 @@ describe MailingList::Signup do
     end
 
     describe "export_data" do
+      subject { described_class.new(**attributes) }
+
       it { is_expected.to respond_to(:consideration_journey_stages) }
 
       let(:attributes) do
@@ -189,8 +191,6 @@ describe MailingList::Signup do
           address_postcode: "M1 2EJ",
         }
       end
-
-      subject { described_class.new(**attributes) }
 
       specify "returns a hash with correct data" do
         expect(subject.export_data).to eql(attributes.transform_keys(&:to_s))

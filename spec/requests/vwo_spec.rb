@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe "VWO", type: :request do
+  subject { response.body }
+
   let(:config_path) { Rails.root.join("config/vwo.yml") }
   let(:yaml) do
     <<-YAML
@@ -18,8 +20,6 @@ describe "VWO", type: :request do
     allow(File).to receive(:read).and_call_original
     allow(File).to receive(:read).with(config_path) { yaml }
   end
-
-  subject { response.body }
 
   context "when the path exists in the VWO config" do
     before { get "/vwo-test" }

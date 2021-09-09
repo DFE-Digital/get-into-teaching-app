@@ -2,10 +2,10 @@ require "rails_helper"
 require "page_speed_score"
 
 describe PageSpeedScore do
+  subject { described_class.new(sitemap_url) }
+
   let(:host) { "https://example.com" }
   let(:sitemap_url) { "#{host}/sitemap.xml" }
-
-  subject { described_class.new(sitemap_url) }
 
   describe "#sitemap_url" do
     it { expect(subject.sitemap_url).to eq(sitemap_url) }

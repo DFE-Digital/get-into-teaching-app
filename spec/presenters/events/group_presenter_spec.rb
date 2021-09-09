@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe Events::GroupPresenter do
+  subject { described_class.new(events_by_type, display_empty: display_empty_types) }
+
   let(:train_to_teach_events) { build_list(:event_api, 5, :train_to_teach_event) }
   let(:question_time_events) { build_list(:event_api, 5, :question_time_event) }
   let(:online_events) { build_list(:event_api, 2, :online_event) }
@@ -8,8 +10,6 @@ describe Events::GroupPresenter do
   let(:all_events) { [train_to_teach_events, online_events, school_and_university_events, question_time_events].flatten }
   let(:events_by_type) { group_events_by_type(all_events) }
   let(:display_empty_types) { false }
-
-  subject { described_class.new(events_by_type, display_empty: display_empty_types) }
 
   describe "#sorted_events_by_type" do
     let(:type_ids) { subject.sorted_events_by_type.map(&:first) }
@@ -60,14 +60,14 @@ describe Events::GroupPresenter do
     end
 
     describe "sorting within an event type" do
+      subject { described_class.new(group_events_by_type(unsorted_events), display_empty: false, ascending: ascending) }
+
       let(:early) { build(:event_api, :online_event, start_at: 1.week.from_now) }
       let(:middle) { build(:event_api, :online_event, start_at: 2.weeks.from_now) }
       let(:late) { build(:event_api, :online_event, start_at: 3.weeks.from_now) }
       let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
       let(:unsorted_events) { [middle, late, early] }
       let(:ascending) { true }
-
-      subject { described_class.new(group_events_by_type(unsorted_events), display_empty: false, ascending: ascending) }
 
       it "sorts events of the same type by date, ascending" do
         expect(subject.sorted_events_by_type.to_h[type_id]).to eql([early, middle, late])
