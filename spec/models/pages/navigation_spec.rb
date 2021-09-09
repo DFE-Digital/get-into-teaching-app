@@ -132,7 +132,7 @@ RSpec.describe Pages::Navigation do
       let(:front_matter) { {} }
 
       before do
-        allow(Rails.logger).to receive(:warn) { true }
+        allow(Rails.logger).to receive(:warn).and_return(true)
       end
 
       specify "title is nil and warning logged" do

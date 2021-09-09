@@ -80,7 +80,7 @@ describe "Rate limiting", type: :request do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:upsert_teaching_event).and_return event
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-        .to receive(:get_teaching_event_buildings) { [] }
+        .to receive(:get_teaching_event_buildings).and_return([])
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
         .to receive(:get_teaching_event).with(event[:id]) { build(:event_api) }
 

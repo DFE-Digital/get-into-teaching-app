@@ -6,7 +6,7 @@ RSpec.describe MapsHelper, type: :helper do
   let(:zoom) { 8 }
 
   before do
-    allow(Rails.application.config.x).to receive(:google_maps_key) { "12345" }
+    allow(Rails.application.config.x).to receive(:google_maps_key).and_return("12345")
   end
 
   describe ".static_map_url" do

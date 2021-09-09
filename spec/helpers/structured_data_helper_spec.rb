@@ -379,7 +379,7 @@ describe StructuredDataHelper, type: "helper" do
 
   def enable_structured_data(type)
     allow(Rails.application.config.x.structured_data).to \
-      receive(type) { true }
+      receive(type).and_return(true)
   end
 
   def disable_structured_data(type, value = false)

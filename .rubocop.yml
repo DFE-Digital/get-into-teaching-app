@@ -92,10 +92,6 @@ RSpec/NestedGroups:
   Exclude:
     - spec/**/*.rb
 
-RSpec/ReturnFromStub:
-  Exclude:
-    - spec/**/*.rb
-
 RSpec/ScatteredLet:
   Exclude:
     - spec/**/*.rb

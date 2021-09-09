@@ -39,7 +39,7 @@ describe Callbacks::Wizard do
     end
 
     before do
-      allow(subject).to receive(:valid?) { true }
+      allow(subject).to receive(:valid?).and_return(true)
       allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
         receive(:book_get_into_teaching_callback).with(request)
       allow(Rails.logger).to receive(:info)

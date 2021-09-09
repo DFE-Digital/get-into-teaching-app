@@ -106,9 +106,7 @@ describe MailingList::Signup do
       subject { described_class.new(email: "test@test.org") }
 
       before do
-        allow_any_instance_of(described_class).to receive(:verify_timed_one_password_and_update_identification_info) do
-          true
-        end
+        allow_any_instance_of(described_class).to receive(:verify_timed_one_password_and_update_identification_info).and_return(true)
       end
 
       it { is_expected.to allow_value("000000").for(:timed_one_time_password).on(:verify) }

@@ -36,7 +36,7 @@ describe Events::Wizard do
     end
 
     before do
-      allow(subject).to receive(:valid?) { true }
+      allow(subject).to receive(:valid?).and_return(true)
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:add_teaching_event_attendee).with(request)
       allow(Rails.logger).to receive(:info)
