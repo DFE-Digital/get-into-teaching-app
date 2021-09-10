@@ -1,15 +1,7 @@
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static values = { zendeskEnabled: Boolean }
-
-  connect() {
-    this.show();
-  }
-
-  show() {
-    this.element.classList.add('visible');
-  }
+  static values = { zendeskEnabled: Boolean };
 
   startChat(e) {
     e.preventDefault();

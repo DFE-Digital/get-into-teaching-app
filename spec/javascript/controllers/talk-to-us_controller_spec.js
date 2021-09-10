@@ -31,10 +31,6 @@ describe('TalkToUsController', () => {
       registerController();
     });
 
-    it('makes the button visible', () => {
-      expect(button.classList).toContain('visible');
-    });
-
     it('opens the klick2contact chat when clicking the button', () => {
       const button = document.querySelector('a');
       button.click();
@@ -57,10 +53,6 @@ describe('TalkToUsController', () => {
 
       setBody(true);
       registerController();
-    });
-
-    it('makes the button visible', () => {
-      expect(button.classList).toContain('visible');
     });
 
     it('opens the Zendesk Chat widget when clicking the button', () => {

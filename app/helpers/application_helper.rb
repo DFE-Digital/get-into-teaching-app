@@ -88,17 +88,23 @@ module ApplicationHelper
     link_to text, path, **options
   end
 
-  def chat_link(text = "Chat to us", classes: nil)
-    link_to(
-      text,
-      "#",
-      class: classes,
-      data: {
-        controller: "talk-to-us",
-        action: "talk-to-us#startChat",
-        "talk-to-us-zendesk-enabled-value": Rails.application.config.x.zendesk_chat
-      }
-    )
+  def chat_link(text = "Chat online", classes: nil, fallback_text: "Chat to us")
+    links = [
+      link_to(
+        text,
+        "#",
+        class: "#{classes} chat-button #{'with-fallback' if fallback_text.present?}",
+        data: {
+          controller: "talk-to-us",
+          action: "talk-to-us#startChat",
+          "talk-to-us-zendesk-enabled-value": Rails.application.config.x.zendesk_chat,
+        },
+      ),
+    ]
+
+    links << link_to(fallback_text, "#talk-to-us", class: "#{classes} chat-button-no-js") if fallback_text.present?
+
+    safe_join(links)
   end
 
   def internal_referer

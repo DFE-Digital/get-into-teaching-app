@@ -3,7 +3,7 @@
     <%= truncated_header %>
   </header>
 
-  <%= helpers.chat_link(thumbnail_image_tag, classes: "card__thumb") %>
+  <%= helpers.chat_link(thumbnail_image_tag, classes: "card__thumb", fallback_text: nil) %>
 
   <div class="card__snippet">
     <p><%= snippet %><p>
@@ -11,9 +11,5 @@
 
   <footer class="card__footer">
     <%= helpers.chat_link(link_text, classes: "git-link") %>
-
-    <a href="#" class="git-link no-js-fallback">
-      Chat to us
-    </a>
   </footer>
 </div>

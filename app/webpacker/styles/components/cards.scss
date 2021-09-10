@@ -120,13 +120,3 @@
     }
   }
 }
-
-.card-chat-online {
-  footer:not(.visible) a:not(.no-js-fallback) {
-    display: none;
-  }
-
-  footer.visible a.no-js-fallback {
-    display: none;
-  }
-}
