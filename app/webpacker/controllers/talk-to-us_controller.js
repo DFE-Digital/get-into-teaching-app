@@ -1,6 +1,8 @@
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
+  static values = { zendeskEnabled: Boolean }
+
   connect() {
     this.show();
   }
@@ -11,6 +13,19 @@ export default class extends Controller {
 
   startChat(e) {
     e.preventDefault();
+
+    if (this.zendeskEnabledValue) {
+      this.showZendeskChat();
+    } else {
+      this.openKlick2ContactWindow();
+    }
+  }
+
+  showZendeskChat() {
+    window.$zopim.livechat.window.show();
+  }
+
+  openKlick2ContactWindow() {
     const windowFeatures =
       'menubar=no,location=yes,resizable=yes,scrollbars=no,status=yes,width=340,height=480';
     window.open(
