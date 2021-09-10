@@ -16,6 +16,7 @@
     display: flex;
     gap: .4em;
     padding-block: .8em;
+    padding-right: 2em;
     flex-direction: column;
     align-items: flex-start;
     border-left: 1px solid $grey-mid;
@@ -33,11 +34,9 @@
     margin-left: -1em;
     padding-left: 1.5em;
     padding-right: 1em;
-    @include font-size("xsmall");
 
     .badge-text {
       transform: skew($unskew-amount);
-      font-weight: 900;
     }
 
     &.pink {
