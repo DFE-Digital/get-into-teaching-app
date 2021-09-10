@@ -5,7 +5,7 @@
     gap: 1em;
 
     h4 {
-      margin-top: 0;
+      margin-top: .6em;
       padding-top: 0;
       flex-shrink: 0;
       flex-basis: 33%;
@@ -15,48 +15,58 @@
   .badges {
     display: flex;
     gap: .4em;
+    padding-block: .8em;
     flex-direction: column;
     align-items: flex-start;
+    border-left: 1px solid $grey-mid;
+    overflow-x: hidden;
+    min-width: 20em;
   }
 
   .badge {
-    padding: .2em .4em;
+    $skew-amount: -10deg;
+    $unskew-amount: 10deg;
+
+    padding: .4em;
     display: inline-block;
-    border-radius: 5px;
+    transform: skewx($skew-amount);
+    margin-left: -1em;
+    padding-left: 1.5em;
+    padding-right: 1em;
     @include font-size("xsmall");
+
+    .badge-text {
+      transform: skew($unskew-amount);
+      font-weight: 900;
+    }
 
     &.pink {
       color: $white;
       border: 1px solid $pink-dark;
-      font-weight: 900;
       background: $pink-dark;
     }
 
     &.dark-cyan {
       color: $white;
       border: 1px solid $dark-cyan;
-      font-weight: 900;
       background: $dark-cyan;
     }
 
     &.yellow {
       color: $black;
       border: 1px solid $yellow;
-      font-weight: 900;
       background: $yellow;
     }
 
     &.dark-blue {
       color: $white;
       border: 1px solid $blue-dark;
-      font-weight: 900;
       background: $blue-dark;
     }
 
     &.purple {
       color: $white;
       border: 1px solid $purple;
-      font-weight: 900;
       background: $purple;
     }
   }

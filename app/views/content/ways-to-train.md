@@ -91,10 +91,20 @@ Fees are usually around £9,250 but you can:
 <div class="training-attributes">
   <h4>University-led training</h4>
   <div class="badges">
-    <span class="badge pink">Costs £9,250</span>
-    <span class="badge dark-cyan">Funding available</span>
-    <span class="badge purple">Takes 1 year</span>
-    <span class="badge dark-blue">PGCE or PGDE</span>
+    <div class="badge pink">
+      <div class="badge-text">Costs £9,250</div>
+    </div>
+    <div class="badge dark-cyan">
+      <div class="badge-text">Funding available</div>
+    </div>
+
+    <div class="badge purple">
+      <div class="badge-text">Takes 1 year</div>
+    </div>
+
+    <div class="badge dark-blue">
+      <div class="badge-text">PGCE or PGDE</div>
+    </div>
   </div>
 </div>
 
