@@ -37,6 +37,10 @@
 
     .badge-text {
       transform: skew($unskew-amount);
+
+      abbr {
+        text-underline-offset: .2em;
+      }
     }
 
     &.pink {
