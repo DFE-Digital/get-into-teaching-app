@@ -18,8 +18,6 @@
   </div>
 
   <footer class="card__footer">
-    <%= link_to(link, class: "git-link") do %>
-      <%= link_text %> <%= helpers.fas_icon("chevron-right") %>
-    <% end %>
+    <%= link_to(link_text, link, class: "git-link") %>
   </footer>
 </div>

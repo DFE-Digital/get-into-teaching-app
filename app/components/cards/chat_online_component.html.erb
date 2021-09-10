@@ -12,12 +12,10 @@
   </div>
 
   <footer class="card__footer" data-controller="talk-to-us">
-    <a href="#" data-action="talk-to-us#startChat" class="git-link">
-      <%= link_text %> <%= helpers.fas_icon("chevron-right") %>
-    </a>
+    <%= helpers.chat_link(link_text, classes: "git-link") %>
 
     <a href="#" class="git-link no-js-fallback">
-      Chat to us <%= helpers.fas_icon("chevron-right") %>
+      Chat to us
     </a>
   </footer>
 </div>
