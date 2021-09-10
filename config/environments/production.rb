@@ -136,4 +136,6 @@ Rails.application.configure do
   config.x.structured_data.breadcrumb_list = true
   config.x.structured_data.event = false
   config.x.structured_data.how_to = false
+
+  config.x.zendesk_chat = false
 end

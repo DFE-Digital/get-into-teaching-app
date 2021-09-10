@@ -32,6 +32,7 @@ SecureHeaders::Configuration.default do |config|
   google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net *.ad.doubleclick.net *.fls.doubleclick.net stats.g.doubleclick.net]
   google_apis        = %w[*.googleapis.com https://fonts.googleapis.com]
 
+  zendesk   = %w[static.zdassets.com https://*.zopim.com wss://*.zopim.com dfesupport-tpuk.zendesk.com ekr.zdassets.com]
   facebook  = %w[*.facebook.com *.facebook.net *.connect.facebook.net]
   govuk     = %w[*.gov.uk www.gov.uk]
   hotjar    = %w[*.hotjar.com vc.hotjar.io wss://*.hotjar.com]
@@ -56,15 +57,15 @@ SecureHeaders::Configuration.default do |config|
     default_src: %w['none'],
     base_uri: ["'self'"],
     child_src: ["'self'"].concat(youtube, pinterest, snapchat, hotjar),
-    connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, vwo, facebook, tta_service_hosts),
+    connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, vwo, facebook, tta_service_hosts, zendesk),
     font_src: ["'self'"].concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: ["'self'"].concat(snapchat, facebook, vwo, govuk),
     frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, vwo, google_analytics),
     frame_ancestors: ["'self'"],
     img_src: ["'self'"].concat(govuk, pinterest, facebook, vwo, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, %w[cx.atdmt.com linkbam.uk]),
     manifest_src: ["'self'"],
-    media_src: ["'self'"],
-    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, vwo, youtube),
+    media_src: ["'self'"].concat(zendesk),
+    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, vwo, youtube, zendesk),
     style_src: ["'self'"].concat(quoted_unsafe_inline, govuk, google_apis, google_supported),
     worker_src: ["'self'"].concat(vwo, blob),
   }
