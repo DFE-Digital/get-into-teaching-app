@@ -1,5 +1,5 @@
 <div>
-  <section class="talk-to-us" data-controller="talk-to-us">
+  <section class="talk-to-us">
     <section class="container">
       <div>
         <h2 class="purple" id="talk-to-us">Talk to us</h2>
@@ -9,9 +9,7 @@
             <div class="options">
               <div>
                 <p>Live chat</p>
-                <a href="#" class="button" data-action="click->talk-to-us#startChat">
-                  Chat online
-                </a>
+                <%= helpers.chat_link("Chat online", classes: "button") %>
               </div>
               <div>
                 <p>Call us</p>

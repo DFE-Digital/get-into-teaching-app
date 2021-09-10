@@ -89,7 +89,16 @@ module ApplicationHelper
   end
 
   def chat_link(text = "Chat to us", classes: nil)
-    link_to(text, "#", class: classes, data: { controller: "talk-to-us", action: "talk-to-us#startChat" })
+    link_to(
+      text,
+      "#",
+      class: classes,
+      data: {
+        controller: "talk-to-us",
+        action: "talk-to-us#startChat",
+        "talk-to-us-zendesk-enabled-value": Rails.application.config.x.zendesk_chat
+      }
+    )
   end
 
   def internal_referer
