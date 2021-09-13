@@ -1,4 +1,4 @@
-name: Nightly Anchore Security Scan
+name: Nightly Snyk Security Scan
 on:
   workflow_dispatch:
   schedule:
@@ -6,7 +6,7 @@ on:
 
 jobs:
   security_tests:
-    name: Anchore Security Scan
+    name: Snyk Security Scan
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,21 +23,15 @@ jobs:
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'SLACK-WEBHOOK'
-
-      - name: Scan image
-        uses: anchore/scan-action@v3
+           secrets: 'SLACK-WEBHOOK, SNYK-TOKEN'
+      
+      - name: Run Snyk to check Docker image for vulnerabilities
+        uses: snyk/actions/docker@master
+        env:
+          SNYK_TOKEN: ${{ env.DOCKER_REPOSITORY }}:master
         with:
-          image: ${{ env.DOCKER_REPOSITORY }}:master
-          fail-build: false
-          severity-cutoff: high
-          acs-report-enable: true
-
-      - name: upload Anchore scan SARIF report
-        if: always()
-        uses: github/codeql-action/upload-sarif@v1
-        with:
-          sarif_file: results.sarif
+          image: ${{needs.build.outputs.DOCKER_IMAGE}}
+          args: --severity-threshold=high --file=Dockerfile
 
       - name: Run Brakeman static security scanner
         run: |-
