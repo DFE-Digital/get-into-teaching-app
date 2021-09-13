@@ -8,4 +8,6 @@ Rails.application.configure do
   config.x.enable_beta_redirects = false
 
   config.view_component.show_previews = true
+
+  config.x.zendesk_chat = true
 end

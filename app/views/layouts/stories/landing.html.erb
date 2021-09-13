@@ -16,9 +16,7 @@
                 <%= tag.h2(@front_matter.dig("featured_page", "heading")) %>
                 <%= tag.span(@front_matter.dig("featured_page", "subheading"), class: "stories-feature__subheading") %>
                 <%= tag.p(@front_matter.dig("featured_page", "text")) %>
-                <%= link_to(@front_matter.dig("featured_page", "link", "path"), class: "git-link") do %>
-                  <%= @front_matter.dig("featured_page", "link", "text") %> <%= fas_icon("chevron-right") %>
-                <% end %>
+                <%= link_to(@front_matter.dig("featured_page", "link", "text"), @front_matter.dig("featured_page", "link", "path"), class: "git-link") %>
               </div>
             </section>
           <% end %>

@@ -64,4 +64,23 @@ describe FooterComponent, type: "component" do
       expect(rendered_component).to include_analytics("lid", { action: "track", event: event })
     end
   end
+
+  describe "Zendesk Chat snippet" do
+    subject! do
+      allow(Rails.application.config.x).to receive(:zendesk_chat) { enabled }
+      render_inline(described_class.new)
+    end
+
+    context "when disabled" do
+      let(:enabled) { false }
+
+      it { expect(page).not_to have_css("script#ze-snippet", visible: :all) }
+    end
+
+    context "when enabled" do
+      let(:enabled) { true }
+
+      it { expect(page).to have_css("script#ze-snippet[src='https://static.zdassets.com/ekr/snippet.js?key=34a8599c-cfec-4014-99bd-404a91839e37']", visible: :all) }
+    end
+  end
 end

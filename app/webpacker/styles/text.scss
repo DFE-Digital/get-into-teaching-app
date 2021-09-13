@@ -68,6 +68,16 @@ a {
     margin-left: 4px;
     vertical-align: middle;
   }
+
+  &:after {
+    @extend .fas;
+    @extend .fa-chevron-right;
+
+    content: '';
+    width: 12px;
+    height: 19px;
+    margin-left: 8px;
+  }
 }
 
 .telephone-number {
