@@ -28,9 +28,9 @@ jobs:
       - name: Run Snyk to check Docker image for vulnerabilities
         uses: snyk/actions/docker@master
         env:
-          SNYK_TOKEN: ${{ env.DOCKER_REPOSITORY }}:master
+          SNYK_TOKEN: ${{ steps.azSecret.outputs.SNYK-TOKEN }}
         with:
-          image: ${{needs.build.outputs.DOCKER_IMAGE}}
+          image:  ${{ env.DOCKER_REPOSITORY }}:master
           args: --severity-threshold=high --file=Dockerfile
 
       - name: Run Brakeman static security scanner
