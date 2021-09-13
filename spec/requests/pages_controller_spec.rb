@@ -83,6 +83,7 @@ describe PagesController, type: :request do
       before { get "/tta-service" }
 
       it { is_expected.to redirect_to "https://tta-service/" }
+      it { expect(response).to have_http_status(:moved_permanently) }
     end
 
     context "with /tta url" do
