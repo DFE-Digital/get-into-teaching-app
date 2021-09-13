@@ -68,3 +68,7 @@
 <% if lid_pixel_event %>
   <%= tag.span(data: { "controller" => "lid", "lid-action" => "track", "lid-event" => lid_pixel_event }) %>
 <% end %>
+
+<% if Rails.application.config.x.zendesk_chat %>
+  <%= javascript_include_tag("https://static.zdassets.com/ekr/snippet.js?key=34a8599c-cfec-4014-99bd-404a91839e37", id: "ze-snippet", async: true) %>
+<% end %>
