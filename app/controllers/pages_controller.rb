@@ -58,7 +58,7 @@ class PagesController < ApplicationController
       url += "?" + session[:utm].to_param
     end
 
-    redirect_to(url, turbolinks: false)
+    redirect_to(url, turbolinks: false, status: :moved_permanently)
   end
 
 private
