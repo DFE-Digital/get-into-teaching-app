@@ -215,59 +215,20 @@ describe ApplicationHelper do
     end
   end
 
-  describe "#chat_available?" do
-    subject { helper.chat_available? }
-
-    around do |example|
-      travel_to(time.in_time_zone("London")) { example.run }
-    end
-
-    context "when the current time is within opening hours" do
-      let(:time) { DateTime.new(2021, 1, 1, 12, 30) }
-
-      it { is_expected.to be(true) }
-    end
-
-    context "when the current time is the opening time" do
-      let(:time) { DateTime.new(2021, 1, 1, 8, 30) }
-
-      it { is_expected.to be(true) }
-    end
-
-    context "when the current time is the closing time time" do
-      let(:time) { DateTime.new(2021, 1, 1, 17, 30) }
-
-      it { is_expected.to be(true) }
-    end
-
-    context "when the current time is before the opening time" do
-      let(:time) { DateTime.new(2021, 1, 1, 8, 29) }
-
-      it { is_expected.to be(false) }
-    end
-
-    context "when the current time is after the closing time time" do
-      let(:time) { DateTime.new(2021, 1, 1, 17, 31) }
-
-      it { is_expected.to be(false) }
-    end
-  end
-
   describe "#chat_link" do
     subject { helper.chat_link(text, classes: extra_class, fallback_text: fallback_text, offline_text: offline_text) }
 
-    before { allow(helper).to receive(:chat_available?) { chat_available } }
-
     let(:text) { "Chat with us" }
     let(:extra_class) { "button" }
-    let(:chat_available) { true }
     let(:fallback_text) { "Chat to us" }
     let(:offline_text) { "Chat closed." }
 
-    it { is_expected.to have_css(%(a[data-controller="talk-to-us"])) }
+    it { is_expected.to have_css(%(span[data-controller="talk-to-us"])) }
     it { is_expected.to have_css(%(a[data-action="talk-to-us#startChat"])) }
     it { is_expected.to have_css(%(a.chat-button.button.with-fallback)) }
     it { is_expected.to have_link(fallback_text, href: "#talk-to-us", class: "button chat-button-no-js") }
+    it { is_expected.to have_text(offline_text) }
+    it { is_expected.to have_css(".chat-button-offline") }
 
     context "when there is no fallback_text" do
       let(:fallback_text) { nil }
@@ -275,17 +236,10 @@ describe ApplicationHelper do
       it { is_expected.not_to have_css(".chat-button-no-js") }
     end
 
-    context "when chat is not available" do
-      let(:chat_available) { false }
+    context "when there is no offline_text" do
+      let(:offline_text) { nil }
 
-      it { is_expected.not_to have_css("a") }
-      it { is_expected.to have_text(offline_text) }
-
-      context "when there is no offline_text" do
-        let(:offline_text) { nil }
-
-        it { is_expected.to be_nil }
-      end
+      it { is_expected.not_to have_css(".chat-button-offline") }
     end
   end
 end

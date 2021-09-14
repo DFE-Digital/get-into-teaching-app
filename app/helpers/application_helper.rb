@@ -88,33 +88,23 @@ module ApplicationHelper
     link_to text, path, **options
   end
 
-  def chat_available?
-    timezone = "London"
-    open_time = DateTime.now.change(hour: 8, min: 30).in_time_zone(timezone)
-    close_time = DateTime.now.change(hour: 17, min: 30).in_time_zone(timezone)
-    now = DateTime.now.in_time_zone(timezone)
-
-    (open_time..close_time).cover?(now)
-  end
-
   def chat_link(text = "Chat online", classes: nil, fallback_text: "Chat to us", offline_text: "Chat closed.")
-    if chat_available?
-      links = [
-        link_to(text, "#",
-                class: "#{classes} chat-button #{'with-fallback' if fallback_text.present?}",
-                data: {
-                  controller: "talk-to-us",
-                  action: "talk-to-us#startChat",
-                  "talk-to-us-zendesk-enabled-value": Rails.application.config.x.zendesk_chat,
-                }),
-      ]
+    elements = [
+      link_to(text, "#",
+              class: "#{classes} chat-button #{'with-fallback' if fallback_text.present?}",
+              data: {
+                action: "talk-to-us#startChat",
+                "talk-to-us-target": "button",
+              }),
+    ]
 
-      links << link_to(fallback_text, "#talk-to-us", class: "#{classes} chat-button-no-js") if fallback_text.present?
+    elements << link_to(fallback_text, "#talk-to-us", class: "#{classes} chat-button-no-js") if fallback_text.present?
+    elements << tag.p(offline_text, class: "chat-button-offline", data: { "talk-to-us-target": "offlineText" }) if offline_text.present?
 
-      safe_join(links)
-    else
-      tag.p(offline_text) if offline_text.present?
-    end
+    tag.span(safe_join(elements), data: {
+      controller: "talk-to-us",
+      "talk-to-us-zendesk-enabled-value": Rails.application.config.x.zendesk_chat,
+    })
   end
 
   def internal_referer

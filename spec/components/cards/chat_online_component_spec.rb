@@ -13,14 +13,7 @@ describe Cards::ChatOnlineComponent, type: "component" do
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }
   it { is_expected.to have_css ".card header", text: "Get the answers you need" }
-  it { is_expected.to have_css "a[data-controller='talk-to-us'] img[alt='A photograph of a child with their hand raised']" }
+  it { is_expected.to have_css "img[alt='A photograph of a child with their hand raised']" }
   it { is_expected.to have_content "If you have questions" }
-  it { is_expected.to have_css("a[data-controller='talk-to-us']", text: "Chat online") }
-
-  context "when the chat is offline" do
-    let(:time) { DateTime.new(2021, 1, 1, 19) }
-
-    it { is_expected.not_to have_css("a") }
-    it { is_expected.to have_css "img[alt='A photograph of a child with their hand raised']" }
-  end
+  it { is_expected.to have_css("span[data-controller='talk-to-us']", text: "Chat online") }
 end

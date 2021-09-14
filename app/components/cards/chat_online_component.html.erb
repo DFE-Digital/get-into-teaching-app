@@ -3,11 +3,7 @@
     <%= truncated_header %>
   </header>
 
-  <% if helpers.chat_available? %>
-    <%= helpers.chat_link(thumbnail_image_tag, classes: "card__thumb", fallback_text: nil) %>
-  <% else %>
-    <span class="card__thumb"><%= thumbnail_image_tag %></span>
-  <% end %>
+  <span class="card__thumb"><%= thumbnail_image_tag %></span>
 
   <div class="card__snippet">
     <p><%= snippet %><p>
