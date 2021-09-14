@@ -99,3 +99,8 @@ a {
 .dark-link {
   color: #005487;
 }
+
+// Default Zendesk chat button (hidden as we use our own).
+iframe#launcher {
+  display: none;
+}
