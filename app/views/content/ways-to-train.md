@@ -15,7 +15,7 @@ right_column:
     - title: New events added.
       text: Turn your questions into confidence. Join our next event to decide which training suits you best.  
       link_text: "Events near you"
-      link_target: "/event-categories/train-to-teach"
+      link_target: "/event-categories/train-to-teach-events"
       icon: "icon-calendar"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
