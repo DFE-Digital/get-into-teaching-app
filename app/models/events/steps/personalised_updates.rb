@@ -61,7 +61,7 @@ module Events
     private
 
       def postcode_in_crm
-        @store.crm(:address_postcode)
+        @store.preexisting(:address_postcode)
       end
     end
   end
