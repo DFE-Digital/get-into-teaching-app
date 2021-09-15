@@ -1,6 +1,6 @@
 module Callbacks
   module Steps
-    class PersonalDetails < ::Wizard::Step
+    class PersonalDetails < ::DFEWizard::Step
       include ::Wizard::IssueVerificationCode
 
       attribute :email

@@ -1,38 +1,11 @@
 module WizardSteps
   extend ActiveSupport::Concern
 
+  include DFEWizard::Controller
+
   included do
-    class_attribute :wizard_class
-    before_action :load_wizard, only: %i[show update]
-    before_action :process_magic_link_token, :process_skip_verification, only: %i[show]
-    before_action :load_current_step, only: %i[show update]
+    before_action :process_magic_link_token, only: %i[show]
     before_action :display_magic_link_token_error, only: %i[show]
-  end
-
-  def index
-    query_params = request.query_parameters
-    redirect_to step_path(wizard_class.first_key, query_params)
-  end
-
-  def show
-    # current_step loaded via before_action
-  end
-
-  def update
-    @current_step.assign_attributes step_params
-
-    if @current_step.save
-      redirect_to next_step_path
-
-      # Needs to occur after redirect because it purges data after submission
-      @wizard.complete!
-    else
-      render :show, status: :unprocessable_entity
-    end
-  end
-
-  def completed
-    # current_step is loaded via before_action
   end
 
   def resend_verification
@@ -87,51 +60,17 @@ private
   end
 
   def load_wizard
-    @wizard = wizard_class.new(wizard_store, params[:id])
-  rescue Wizard::UnknownStep
+    super
+  rescue DFEWizard::UnknownStep
     raise_not_found
-  end
-
-  def load_current_step
-    @current_step = @wizard.find_current_step
-  end
-
-  def next_step_path
-    if (next_key = @wizard.next_key)
-      step_path next_key
-    elsif (invalid_step = @wizard.first_invalid_step)
-      step_path invalid_step
-    else # all steps valid so completed
-      completed_step_path
-    end
-  end
-
-  def first_step_path(opts = {})
-    step_path(wizard_class.steps.first.key, opts)
   end
 
   def authenticate_path(params = {})
     step_path :authenticate, params
   end
 
-  def step_after_authenticate_path
-    step_path(@wizard.next_key(Wizard::Steps::Authenticate.key))
-  end
-
-  def completed_step_path
-    step_path :completed
-  end
-
-  def step_params
-    params.fetch(step_param_key, {}).permit @current_step.attributes.keys
-  end
-
-  def step_param_key
-    @current_step.class.model_name.param_key
-  end
-
   def camelized_identity_data
     Wizard::Steps::Authenticate.new(nil, wizard_store)
-      .candidate_identity_data
+                               .candidate_identity_data
   end
 end

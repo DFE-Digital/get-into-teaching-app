@@ -1,6 +1,6 @@
 module Wizard
   module Steps
-    class Authenticate < ::Wizard::Step
+    class Authenticate < ::DFEWizard::Step
       include ActiveModel::Dirty
 
       IDENTITY_ATTRS = %i[email first_name last_name date_of_birth].freeze

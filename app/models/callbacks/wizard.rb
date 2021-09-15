@@ -1,7 +1,7 @@
 require "attribute_filter"
 
 module Callbacks
-  class Wizard < ::Wizard::Base
+  class Wizard < ::DFEWizard::Base
     include ::Wizard::ApiClientSupport
 
     self.steps = [
