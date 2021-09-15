@@ -15,6 +15,10 @@ module MailingList
       Steps::PrivacyPolicy,
     ].freeze
 
+    def matchback_attributes
+      %i[candidate_id qualification_id].freeze
+    end
+
     def complete!
       super.tap do |result|
         break unless result

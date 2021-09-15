@@ -14,7 +14,7 @@ describe Callbacks::Wizard do
       },
     }
   end
-  let(:wizardstore) { Wizard::Store.new store[uuid], {} }
+  let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
 
   describe ".steps" do
     subject { described_class.steps }
@@ -28,6 +28,12 @@ describe Callbacks::Wizard do
         Callbacks::Steps::TalkingPoints,
         Callbacks::Steps::PrivacyPolicy,
       ]
+    end
+  end
+
+  describe "#matchback_attributes" do
+    it do
+      expect(subject.matchback_attributes).to match_array(%i[candidate_id qualification_id])
     end
   end
 

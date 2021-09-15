@@ -28,6 +28,12 @@ describe Events::Wizard do
     end
   end
 
+  describe "#matchback_attributes" do
+    it do
+      expect(subject.matchback_attributes).to match_array(%i[candidate_id qualification_id])
+    end
+  end
+
   describe "#complete!" do
     let(:request) do
       GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
