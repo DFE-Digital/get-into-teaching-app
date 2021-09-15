@@ -386,8 +386,9 @@ provider_groups:
       email: schater@stjosephsmail.com
     - header: Staffordshire University
       link: https://www.staffs.ac.uk/
-      name: Cath Hickling
-      email: c.hickling@staffs.ac.uk
+      name: Jayne Bartrop
+      telephone: '01782 295977'
+      email: J.Bartrop@staffs.ac.uk
     - header: The Coventry SCITT
       link: https://www.coventryscitt.org.uk
       email: info@coventryscitt.org.uk
