@@ -4,6 +4,10 @@
     padding: 1em 0 2em;
     gap: 1em;
 
+    @include mq($until: mobile) {
+      flex-direction: column;
+    }
+
     h4 {
       margin-top: 1em;
       padding-top: 0;
