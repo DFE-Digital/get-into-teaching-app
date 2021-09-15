@@ -34,79 +34,120 @@ class PageLister
   end
 end
 
-class LinkChecker
-  IGNORE = %w[
-    127.0.0.1
-    localhost
-    ::1
-    www.linkedin.com
-    linkedin.com
-    www.exetermathematicsschool.ac.uk
-    www.ringwood.hants.sch.uk
-    www.sjctsa.co.uk
-    tommyflowersscitt.co.uk
-    www.nett.org.uk
-    www.2schools.org
-  ].freeze
-
-  attr_reader :page, :document
-
+module LinkChecker
   class Results < Hash; end
   Result = Struct.new(:status, :pages)
 
-  def initialize(page, body)
-    @page = page
-    @document = Nokogiri.parse(body)
-  end
+  class Base
+    attr_reader :page, :document
 
-  def check_links(results = Results.new)
-    external_links.each do |link|
-      next if ignored?(link)
+    IGNORE = %w[
+      127.0.0.1
+      localhost
+      ::1
+      www.linkedin.com
+      linkedin.com
+      www.exetermathematicsschool.ac.uk
+      www.ringwood.hants.sch.uk
+      www.sjctsa.co.uk
+      tommyflowersscitt.co.uk
+      www.nett.org.uk
+      www.2schools.org
+    ].freeze
 
-      results[link] ||= Result.new(check(link), [])
-      results[link].pages << page
+    def initialize(page, body)
+      @page = page
+      @document = Nokogiri.parse(body)
     end
 
-    results
-  end
+  private
 
-private
+    def links
+      document.css("a").pluck("href")
+    end
 
-  def links
-    document.css("a").pluck("href")
-  end
+    def faraday(link)
+      ::Faraday.new(link) do |f|
+        f.request :retry, max: 2
+        f.use ::FaradayMiddleware::FollowRedirects
+      end
+    end
 
-  def external_links
-    links.select { |href| href.starts_with? %r{https?://} }
-  end
+    def check(link)
+      status = faraday(link).head.status
+      return status if (200..299).include?(status)
 
-  def faraday(link)
-    ::Faraday.new(link) do |f|
-      f.request :retry, max: 2
-      f.use ::FaradayMiddleware::FollowRedirects
+      fallback_check(link)
+    rescue ::Faraday::Error
+      fallback_check(link)
+    end
+
+    def fallback_check(link)
+      # Not all websites respond to a HEAD request,
+      # so we do a GET request as a fallback check.
+      faraday(link).get.status
+    rescue ::Faraday::Error
+      nil
     end
   end
 
-  def check(link)
-    status = faraday(link).head.status
-    return status if (200..299).include?(status)
+  class External < Base
+    def check_links(results = Results.new)
+      external_links.each do |link|
+        next if ignored?(link)
 
-    fallback_check(link)
-  rescue ::Faraday::Error
-    fallback_check(link)
+        results[link] ||= Result.new(check(link), [])
+        results[link].pages << page
+      end
+
+      results
+    end
+
+    def ignored?(link)
+      IGNORE.any? do |ignore|
+        link.starts_with? %r{https?://#{ignore}/}
+      end
+    end
+
+    def external_links
+      links.select { |href| href.starts_with? %r{https?://} }
+    end
   end
 
-  def fallback_check(link)
-    # Not all websites respond to a HEAD request,
-    # so we do a GET request as a fallback check.
-    faraday(link).get.status
-  rescue ::Faraday::Error
-    nil
-  end
+  class Internal < Base
+    IGNORE_PREFIX = %r{^/welcome}.freeze
 
-  def ignored?(link)
-    IGNORE.any? do |ignore|
-      link.starts_with? %r{https?://#{ignore}/}
+    def initialize(page, body, adjust_packs_path: [])
+      @page = page
+      @document = Nokogiri.parse(body)
+
+      # we need to adjust the packs URL when testing against prod
+      @adjust_packs_path = adjust_packs_path
+    end
+
+    def check_links(host, results = Results.new)
+      internal_links.each do |link|
+        next if link =~ IGNORE_PREFIX
+
+        results[link] ||= Result.new(check(build_url(host, link)), [])
+        results[link].pages << page
+      end
+
+      results
+    end
+
+    def internal_links
+      links.select { |href| href.starts_with?("/") }
+    end
+
+  private
+
+    def build_url(host, link)
+      url = host + link
+
+      return url if @adjust_packs_path.blank?
+
+      url.gsub(*@adjust_packs_path)
     end
   end
 end
