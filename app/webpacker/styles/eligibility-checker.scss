@@ -1,16 +1,23 @@
 .eligibility-checker {
   background-color: $grey;
   padding: 1em;
+  overflow: hidden;
 
-  h1 {
+  header {
     @include rotated-block;
+
     background-color: $purple-dark;
     color: $white;
-    @include font-size("medium");
-    padding: .3em;
     margin-left: -2em;
     padding-left: 2em;
-    overflow: hidden;
+    margin-block: 1em;
+
+    h1 {
+      @include font-size("large");
+      @include reset;
+      margin-block: 1em 2em;
+      padding: .3em;
+    }
   }
 
   p.eligibility-checker-disclaimer {
