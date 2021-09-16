@@ -38,7 +38,7 @@ module ApplicationHelper
 
   def prefix_title(title)
     if title
-      "Get Into Teaching: #{title}"
+      "#{title} | Get Into Teaching"
     else
       "Get Into Teaching"
     end

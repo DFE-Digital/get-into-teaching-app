@@ -8,6 +8,8 @@ RSpec.feature "Event wizard", type: :feature do
   let(:event_name) { "Event Name" }
   let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
   let(:event) { build(:event_api, readable_id: event_readable_id, name: event_name) }
+  let(:individual_event_page_title) { "Sign up for #{event.name}, personal details step | Get Into Teaching" }
+  let(:sign_up_complete_page_title) { "Sign up complete | Get Into Teaching" }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -26,7 +28,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id, walk_in: true)
 
-    expect(page).to have_title("Get Into Teaching: Sign up for #{event.name}, personal details step")
+    expect(page).to have_title(individual_event_page_title)
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
     fill_in_personal_details_step
@@ -46,7 +48,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     click_on "Complete sign up"
 
-    expect(page).to have_title("Get Into Teaching: Sign up complete")
+    expect(page).to have_title(sign_up_complete_page_title)
   end
 
   scenario "Full journey as a new candidate" do
@@ -55,7 +57,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_title("Get Into Teaching: Sign up for #{event.name}, personal details step")
+    expect(page).to have_title(individual_event_page_title)
     expect(page).to have_text "Sign up for this event"
     expect(page).to have_text event_name
     fill_in_personal_details_step
@@ -83,7 +85,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     click_on "Complete sign up"
 
-    expect(page).to have_title("Get Into Teaching: Sign up complete")
+    expect(page).to have_title(sign_up_complete_page_title)
     expect(page).to have_text "What happens next"
     expect(page).to have_text "signed up for email updates"
   end
