@@ -36,6 +36,10 @@
               border-bottom: 1px solid $purple;
               padding-bottom: $indent-amount;
               margin-bottom: $indent-amount;
+
+              span > span {
+                font-weight: bold;
+              }
             }
 
             p {

@@ -88,7 +88,7 @@ module ApplicationHelper
     link_to text, path, **options
   end
 
-  def chat_link(text = "Chat online", classes: nil, fallback_text: "Chat to us", offline_text: "Chat closed.")
+  def chat_link(text = "Chat online", classes: nil, fallback_text: "Chat to us", offline_text: "Chat available Monday to Friday between 8:30am and 5:30pm.")
     elements = [
       link_to(text, "#",
               class: "#{classes} chat-button #{'with-fallback' if fallback_text.present?}",
@@ -99,7 +99,7 @@ module ApplicationHelper
     ]
 
     elements << link_to(fallback_text, "#talk-to-us", class: "#{classes} chat-button-no-js") if fallback_text.present?
-    elements << tag.p(offline_text, class: "chat-button-offline", data: { "talk-to-us-target": "offlineText" }) if offline_text.present?
+    elements << tag.span(offline_text, class: "chat-button-offline", data: { "talk-to-us-target": "offlineText" }) if offline_text.present?
 
     tag.span(safe_join(elements), data: {
       controller: "talk-to-us",
