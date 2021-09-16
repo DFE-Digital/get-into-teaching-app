@@ -2,7 +2,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@rails/webpacker": "5.4.0",
+    "@rails/webpacker": "5.4.2",
     "@stimulus/polyfills": "^2.0.0",
     "accessible-autocomplete": "^2.0.3",
     "flatpickr": "^4.6.9",
