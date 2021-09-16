@@ -56,13 +56,23 @@ keywords:
   - Settlement Scheme
   - Statement
   - Comparability
+  – Overseas degree equivalency
 ---
 
-As an international candidate you’ll be welcomed by many teacher training providers in England.
+Teacher training in England is practical, hands-on and supportive. You’ll train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. You’ll leave with qualified teacher status (QTS), a professional qualification valued globally. 
 
-Train in England and you'll graduate from a world-class institution, with qualifications recognised around the world.
+You can apply to train to teach in England from any country in the world. 
 
-Not looking to train in England? Consider training in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+You can also train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+
+### Get a teacher training adviser
+
+You can get an adviser for one-to-one support. They can give you practical advice and guidance at every stage of your application.
+
+<p class="call-to-action__action">
+  <a href="/tta-service">Get an <span>adviser</span></a>
+</p>
+
 
 ### What you need to start training
 
@@ -76,11 +86,11 @@ If you do not have a degree yet, you can apply to an [undergraduate teacher trai
 
 #### English and maths qualifications
 
-You usually need the equivalent of a GCSE (grade 4) in English and maths.
+You will need the equivalent of a GCSE (grade 4) in English and maths.
 
 To teach children aged 3 to 11, you also need the equivalent of a GCSE (grade 4) in a science subject.
 
-#### Help with international qualifications
+##### Get help with international qualifications
  
 If your qualifications come from a non-UK institution, your teacher training provider may want to see a ‘[statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx)’ showing their equivalence to UK qualifications.
 
@@ -91,11 +101,17 @@ Call us on [0800 389 2500](tel://08003892500) for:
 
 #### An offer to train
 
-Explore different [ways to train](/ways-to-train) and consider whether you want do a training programme which leads to [qualified teacher status (QTS)](/ways-to-train). QTS allows you to apply to all teaching jobs in England.
+Contact your [Get into teaching adviser](https://adviser-getintoteaching.education.gov.uk/) for guidance on the different types of courses available. You can choose between a fee-paying course, or one which pays a salary. You can also train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years).  
 
-Fees may be higher for international trainees but you may be able to [get financial support](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#financial-support-for-non-uk-applicants-for-unsalaried-teacher-training-in-england).
+[Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lets you search for teacher training courses in England by location, teaching subject and age group. You can also search for courses which pay a salary, and courses which can sponsor a visa.  
 
-Contact providers before you [apply](#apply-for-a-place) to get their advice about eligibility and the application process.
+You will be able to apply for a teaching training place without visiting the UK. Some providers also conduct interviews using remote technology – check with your provider when you apply. 
+
+##### Learn about financial support
+
+Fees are usually higher for international trainees but you may be able to [get financial support](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#financial-support-for-non-uk-applicants-for-unsalaried-teacher-training-in-england).
+
+Contact providers before you apply to get their advice about eligibility and the application process.
 
 #### The right visa or status
 
@@ -109,13 +125,6 @@ You usually need a confirmed offer on a course to apply for a visa.
 
 Your training provider will check you’re suitable for teaching in terms of your health, whether you're safe to work with children and your level of maths and English.
 
-### Get a teacher training adviser
-
-You can get an adviser for one-to-one support. They can give you practical advice and guidance at every stage of your application.
-
-<p class="call-to-action__action">
-  <a href="/tta-service">Get an <span>adviser</span></a>
-</p>
 
 ### Apply for a place
 
@@ -125,13 +134,14 @@ You can get an adviser for one-to-one support. They can give you practical advic
 
 Or [search for an undergraduate teacher training course](https://digital.ucas.com/search).
 
+#### Learn more
+
+[Train to teach in England: non-UK applicants](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants) gives detailed guidance about applying for teacher training in England.
+
 ### If you cannot come to England
 
-You do not necessarily have to be in England to study with an English institution. You can do an international Postgraduate Certificate of Education (PGCEi) outside the UK.
-
-A PGCEi will help you develop your teaching skills and knowledge.
-
-However, it does not lead to 'qualified teacher status'. This means you will not be able to teach in [the types of schools which require qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts#overview).
+[Apply for qualified teacher status (QTS) if you teach outside the UK](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk)
+ explains other routes to QTS for teachers and those with teaching experience outside the UK. 
 
 ### Get support
 
