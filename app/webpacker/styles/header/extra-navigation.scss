@@ -22,8 +22,15 @@ html.js-enabled {
   background-color: $grey;
   border-bottom: 1px solid $green;
   padding: .25em 0;
-  //font-weight: bold;
   margin-bottom: 1em;
+
+  // Avoids content layout shift when autocomplete
+  // search input is injected into the navigation bar.
+  height: 48px;
+
+  .fas {
+    width: 22px;
+  }
 
   @include mq($from: desktop) {
     margin: 0;
@@ -41,6 +48,8 @@ html.js-enabled {
     padding: 0;
     position: relative;
     min-width: 240px;
+    width: 240px;
+    height: 36px;
 
     input {
       @include reset;
