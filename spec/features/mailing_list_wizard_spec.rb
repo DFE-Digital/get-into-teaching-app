@@ -3,13 +3,15 @@ require "rails_helper"
 RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
 
+  let(:mailing_list_page_title) { "Get personalised guidance to your inbox, name step | Get Into Teaching" }
+
   scenario "Full journey as a new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
     visit mailing_list_steps_path
 
-    expect(page).to have_title("Get Into Teaching: Get personalised guidance to your inbox, name step")
+    expect(page).to have_title(mailing_list_page_title)
 
     expect(page).to have_text "Get personalised guidance to your inbox"
     fill_in_name_step
@@ -42,7 +44,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     check "Yes"
     click_on "Complete sign up"
 
-    expect(page).to have_title("Get Into Teaching: You've signed up")
+    expect(page).to have_title("You've signed up | Get Into Teaching")
     expect(page).to have_text "You've signed up"
   end
 
@@ -311,14 +313,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
   end
 
   scenario "Partial journey with candidate encountering an error" do
-    expected_title = "Get Into Teaching: Get personalised guidance to your inbox, name step"
-
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
     visit mailing_list_steps_path
 
-    expect(page).to have_title(expected_title)
+    expect(page).to have_title(mailing_list_page_title)
 
     # try incorrectly first so we can check error state
     click_on "Next step"
@@ -326,7 +326,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Enter your first name"
     expect(page).to have_text "Enter your last name"
     expect(page).to have_text "Enter your full email address"
-    expect(page).to have_title(expected_title)
+    expect(page).to have_title(mailing_list_page_title)
   end
 
   def fill_in_name_step(

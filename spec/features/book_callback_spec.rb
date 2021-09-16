@@ -10,6 +10,8 @@ RSpec.feature "Book a callback", type: :feature do
     )
   end
 
+  let(:callback_page_title) { "Callback confirmed | Get Into Teaching" }
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::CallbackBookingQuotasApi).to \
       receive(:get_callback_booking_quotas) { [quota] }
@@ -25,7 +27,7 @@ RSpec.feature "Book a callback", type: :feature do
     }
     allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
       receive(:book_get_into_teaching_callback)
-        .with(having_attributes(callback_attrs))
+      .with(having_attributes(callback_attrs))
   end
 
   scenario "Full journey as an existing candidate" do
@@ -60,7 +62,7 @@ RSpec.feature "Book a callback", type: :feature do
     check "Yes"
     click_on "Book your callback"
 
-    expect(page).to have_title("Get Into Teaching: Callback confirmed")
+    expect(page).to have_title(callback_page_title)
     expect(page).to have_text "Callback confirmed"
 
     start_at = quota.start_at.in_time_zone("London")
@@ -77,8 +79,8 @@ RSpec.feature "Book a callback", type: :feature do
       receive(:exchange_access_token_for_get_into_teaching_callback).with("654321", anything).and_raise(GetIntoTeachingApiClient::ApiError)
     allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
       receive(:exchange_access_token_for_get_into_teaching_callback).with("123456", anything) do
-        GetIntoTeachingApiClient::GetIntoTeachingCallback.new
-      end
+      GetIntoTeachingApiClient::GetIntoTeachingCallback.new
+    end
 
     visit callbacks_steps_path
 
@@ -127,7 +129,7 @@ RSpec.feature "Book a callback", type: :feature do
     check "Yes"
     click_on "Book your callback"
 
-    expect(page).to have_title("Get Into Teaching: Callback confirmed")
+    expect(page).to have_title(callback_page_title)
     expect(page).to have_text "Callback confirmed"
 
     start_at = quota.start_at.in_time_zone("London")
@@ -142,7 +144,7 @@ RSpec.feature "Book a callback", type: :feature do
 
     visit callbacks_steps_path
 
-    expect(page).to have_title("Get Into Teaching: Book a callback, personal details step")
+    expect(page).to have_title("Book a callback, personal details step | Get Into Teaching")
 
     expect(page).to have_text "Book a callback"
     fill_in_personal_details_step
