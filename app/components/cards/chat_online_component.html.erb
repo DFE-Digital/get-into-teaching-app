@@ -3,13 +3,13 @@
     <%= truncated_header %>
   </header>
 
-  <%= helpers.chat_link(thumbnail_image_tag, classes: "card__thumb", fallback_text: nil) %>
+  <span class="card__thumb"><%= thumbnail_image_tag %></span>
 
   <div class="card__snippet">
     <p><%= snippet %><p>
   </div>
 
   <footer class="card__footer">
-    <%= helpers.chat_link(link_text, classes: "git-link") %>
+    <%= helpers.chat_link(link_text, classes: "git-link", offline_text: nil) %>
   </footer>
 </div>

@@ -36,6 +36,10 @@
               border-bottom: 1px solid $purple;
               padding-bottom: $indent-amount;
               margin-bottom: $indent-amount;
+
+              span > span {
+                font-weight: bold;
+              }
             }
 
             p {
@@ -90,17 +94,5 @@
         }
       }
     }
-  }
-}
-
-.js-enabled {
-  .chat-button-no-js {
-    display: none;
-  }
-}
-
-html:not(.js-enabled) {
-  .chat-button.with-fallback, .live-chat {
-    display: none;
   }
 }

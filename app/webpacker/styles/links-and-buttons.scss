@@ -104,3 +104,26 @@ a {
 iframe#launcher {
   display: none;
 }
+.chat-button.hidden {
+  display: none;
+}
+
+.chat-button-offline {
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
+
+.js-enabled {
+  .chat-button-no-js {
+    display: none;
+  }
+}
+
+html:not(.js-enabled) {
+  .chat-button.with-fallback, .live-chat {
+    display: none;
+  }
+}

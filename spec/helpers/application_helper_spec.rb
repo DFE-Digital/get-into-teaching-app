@@ -216,25 +216,30 @@ describe ApplicationHelper do
   end
 
   describe "#chat_link" do
-    subject { helper.chat_link(text, classes: extra_class) }
+    subject { helper.chat_link(text, classes: extra_class, fallback_text: fallback_text, offline_text: offline_text) }
 
     let(:text) { "Chat with us" }
     let(:extra_class) { "button" }
+    let(:fallback_text) { "Chat to us" }
+    let(:offline_text) { "Chat closed." }
 
-    it "generates a hyperlink" do
-      expect(subject).to have_css("a")
+    it { is_expected.to have_css(%(span[data-controller="talk-to-us"])) }
+    it { is_expected.to have_css(%(a[data-action="talk-to-us#startChat"])) }
+    it { is_expected.to have_css(%(a.chat-button.button.with-fallback)) }
+    it { is_expected.to have_link(fallback_text, href: "#talk-to-us", class: "button chat-button-no-js") }
+    it { is_expected.to have_text(offline_text) }
+    it { is_expected.to have_css(".chat-button-offline") }
+
+    context "when there is no fallback_text" do
+      let(:fallback_text) { nil }
+
+      it { is_expected.not_to have_css(".chat-button-no-js") }
     end
 
-    it "has the right data controller" do
-      expect(subject).to have_css(%(a[data-controller="talk-to-us"]))
-    end
+    context "when there is no offline_text" do
+      let(:offline_text) { nil }
 
-    it "has the right data action" do
-      expect(subject).to have_css(%(a[data-action="talk-to-us#startChat"]))
-    end
-
-    it "applies the correct class" do
-      expect(subject).to have_css(%(a.button))
+      it { is_expected.not_to have_css(".chat-button-offline") }
     end
   end
 end
