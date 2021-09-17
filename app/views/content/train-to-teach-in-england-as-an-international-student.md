@@ -147,6 +147,4 @@ You usually need a confirmed offer on a course to apply for a visa.
 
 Or [search for an undergraduate teacher training course](https://digital.ucas.com/search).
 
-### Get support
 
-Get in touch with the international teacher recruitment team at international.teacherrecruitment@education.gov.uk. We aim to respond within 5 working days.
