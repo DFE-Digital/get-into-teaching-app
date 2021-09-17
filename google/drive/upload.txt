@@ -37,7 +37,7 @@ function uploadImagesToAzureStorage( imagesSubFolder, imagesFolderId){
         'x-ms-blob-type': 'BlockBlob'
       }
     };
-    let azureStorageUrl =`https://s146p01gitiscontent.blob.core.windows.net/content/${imagesSubFolder}/${file.getName()}?sp=racwdl&st=2021-03-01T13:59:29Z&se=2022-03-01T21:59:29Z&spr=https&sv=2020-02-10&sr=c&sig=5ZhNZh9dxbjYPt5DGtccfjY1Bt0ngW6SciMse5kipNw%3D`
+    let azureStorageUrl =`https://s146p01gitiscontent.blob.core.windows.net/content/${imagesSubFolder}/${file.getName()}?sp=racwdl&st=2021-03-01T13:59:29Z&se=2022-03-01T21:59:29Z&spr=https&sv=2020-02-10&sr=c&sig=xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx`
     let response = UrlFetchApp.fetch(azureStorageUrl, options);
     Logger.log(response.getContentText());
   }
