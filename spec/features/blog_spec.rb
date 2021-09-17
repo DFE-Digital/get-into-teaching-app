@@ -13,6 +13,5 @@ describe "reading the blog", type: :feature do
     expect(page).to have_current_path("/blog/tag/#{tag.parameterize}")
 
     expect(page).to have_content("Blog posts about #{tag}")
-    expect(page).to have_link("Read more", minimum: 1)
   end
 end
