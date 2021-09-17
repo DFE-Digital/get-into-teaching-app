@@ -1,7 +1,7 @@
 ---
 title: My first week as a trainee teacher
 author: Cindy Ventura
-date: "2021-09-20"
+date: "2021-09-17"
 images:
   cindy-ventura:
     path: "media/images/content/blog/cindy-ventura.jpg"
