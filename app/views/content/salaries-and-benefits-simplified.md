@@ -149,5 +149,5 @@ Annual salary ranges for unqualified teachers are:
 
 | Area                          | Minimum | Maximum   |
 | -------                       | -----   | -----     |
-| London                        | £19,363 | £33,410   |
-| Rest of England and Wales     | £18,169 | £28,735   |
+| London                        | £00,000 | £00,000   |
+| Rest of England and Wales     | £00,000 | £00,000   |
