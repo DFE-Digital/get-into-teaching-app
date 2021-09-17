@@ -38,7 +38,7 @@ My day begins with a lecture on teaching skills and the different course program
 
 I enjoy the variety of information given during the morning events as it increases my understanding of the abilities and skills that schools are looking for when employing teachers.
 
-In the afternoon, I attend two subject seminars on the History of the British curriculum, which explain the differences and similarities between European and British secondary education.
+In the afternoon, I attend two subject seminars on the history of the British curriculum, which explain the differences and similarities between European and British secondary education.
 
 ## Wednesday
 
