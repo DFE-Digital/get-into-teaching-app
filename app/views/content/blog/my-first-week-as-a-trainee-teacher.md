@@ -58,7 +58,7 @@ Reflecting on this experience, I admit that this practice presentation was a goo
 
 ## Friday
 
-My day starts differently to previous days. I spend the morning at home reading an article and watching a pre-recorded seminar on children and poverty. I then read some papers and watch two short documentaries on education and poverty. After completing these tasks, I met my subject group on Google Meet and we spent the rest of the morning discussing what we have seen.
+My day starts differently to previous days. I spend the morning at home reading an article and watching a pre-recorded seminar on children and poverty. I then read some papers and watch two short documentaries on education and poverty. After completing these tasks, I meet my subject group on Google Meet and we spend the rest of the morning discussing what we have seen.
 
 In the afternoon I attended a seminar on GCSE and A-level assessment. In this session we worked in a group to identify and discuss the different assessment specifications for languages.
 
