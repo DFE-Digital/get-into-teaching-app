@@ -1,3 +1,9 @@
+html.js-enabled {
+  .embedded-map .embedded-map__inner-container img.embedded-map__nojs-img {
+    display: none;
+  }
+}
+
 .embedded-map {
   box-sizing: border-box;
   position: relative;
