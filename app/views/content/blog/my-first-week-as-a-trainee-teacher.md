@@ -34,7 +34,7 @@ I enjoy my first day because I meet many different people from different PGDE su
 
 ## Tuesday
 
-My day begins with a lecture on teaching skills and the different course programs available for teachers’ development, such as computing. We also hear a skills and job application talk by the recruitment company Hays. They present us with information on job applications and how to write a thriving, supportive statement for our CVs. They also share the different platforms where teaching jobs can be found and talk to us about the job market for teachers.
+My day begins with a lecture on teaching skills and the different course programmes available for teachers’ development, such as computing. We also hear a skills and job application talk by the recruitment company Hays. They present us with information on job applications and how to write a thriving, supportive statement for our CVs. They also share the different platforms where teaching jobs can be found and talk to us about the job market for teachers.
 
 I enjoy the variety of information given during the morning events as it increases my understanding of the abilities and skills that schools are looking for when employing teachers.
 
