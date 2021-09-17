@@ -24,7 +24,7 @@ Throughout my time at university, I knew I wanted a career that would make a dif
 
 ## Monday
 
-I start at 9:30am with an introductory lecture to the entire PGDE cohort, where further information about the course is given; the assessments and societies that we can join.
+I start at 9:30am with an introductory lecture to the entire PGDE cohort, where further information is given about the course, the assessments and societies that we can join.
 
 After lunch, the PGDE course leader has organised ice breakers to introduce the students to each other. I enjoy this informal activity as it helps me to get to know my colleagues better, but also to understand what their reasons are for becoming teachers.
 
