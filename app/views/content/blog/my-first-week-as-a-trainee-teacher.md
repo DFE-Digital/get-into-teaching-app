@@ -62,7 +62,7 @@ My day starts differently to previous days. I spend the morning at home reading 
 
 In the afternoon I attend a seminar on GCSE and A-level assessment. In this session we work in a group to identify and discuss the different assessment specifications for languages.
 
-The group work is important because it aimed to familiarise us with the different subjects’ language specifications and syllabus, particularly interesting for me as I didn’t attend school in the UK, so learning about specifications and the curriculum was exciting to me.
+The group work is important because it aimed to familiarise us with the different subjects’ language specifications and syllabus, particularly interesting for me as I didn’t attend school in the UK, so learning about specifications and the curriculum is exciting to me.
 
 My first week was hectic, which I didn’t expect, but it gave me many things to reflect upon and I learned a lot – it enabled me to see the importance and the challenges of education from different sides. In addition, I met new people from other countries and learned their views and approaches on teaching and learning, which was very enriching.
 
