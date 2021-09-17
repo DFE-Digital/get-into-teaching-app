@@ -16,9 +16,9 @@ tags:
   - becoming a teacher
 ---
 
-$cindy-ventura$
-
 Cindy recently started the Postgraduate Diploma in Education (PGDE) teacher training course at Sheffield University. She kept a diary during her first week on the course and shares her experiences here.
+
+$cindy-ventura$
 
 Throughout my time at university, I knew I wanted a career that would make a difference and give me opportunities for lifelong learning. I was interested in languages and worked as a language assistant in different schools in Sheffield, which developed my interest in teaching. I applied for the PGDE programme at Sheffield University and since my interview in March, the time has passed so fast that I now find myself preparing my backpack for my first day.
 
