@@ -60,10 +60,10 @@ Rails.application.routes.draw do
   get "/tta", to: "pages#tta_service", as: nil
 
   resource :search, only: %i[show]
-  resource :eligibility_checker,
-           only: %i[show],
-           controller: "eligibility_checker",
-           path: "eligibility-checker"
+  # resource :eligibility_checker,
+  #          only: %i[show],
+  #          controller: "eligibility_checker",
+  #          path: "eligibility-checker"
 
   resource "cookie_preference", only: %i[show]
   get "/cookie-policy", to: redirect("/cookies")
