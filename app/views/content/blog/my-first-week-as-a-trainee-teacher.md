@@ -50,7 +50,7 @@ I enjoy these seminars because they are more practical and give me the chance to
 
 This morning, all the students enrolled on the course attend an informative lecture on the different master components that are part of the PGDE, as well as information about school placements.
 
-Similar to previous days, my lessons continue in the afternoon with a session focused on preparing us for the group master assignment. We are divided into small groups of four and asked to consult a newspaper article focused on the topic: ’issues in education’. We then work together on a 10-minute presentation to deliver to the rest of the class.
+Similar to previous days, my lessons continue in the afternoon with a session focused on preparing us for the group master assignment. We are divided into small groups of four and asked to consult a newspaper article focused on the topic 'issues in education'. We then work together on a 10-minute presentation to deliver to the rest of the class.
 
 I don’t enjoy this activity because I am nervous about presenting in front of so many people, especially on a topic that I don’t know much about. However, even though I am nervous, the presentation goes well, and I overcome the challenge with the support of my group, who encourage me throughout the presentation.
 
