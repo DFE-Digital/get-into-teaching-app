@@ -19,7 +19,7 @@ RSpec.describe CallsToAction::ChatOnlineComponent, type: :component do
 
   specify %(the "Chat online" button will start a chat) do
     expect(page).to have_css(
-      %(.call-to-action__action > a[data-action="talk-to-us#startChat"]),
+      %(.call-to-action__action > span > a[data-action="talk-to-us#startChat"]),
       text: "Chat online",
     )
   end

@@ -91,10 +91,20 @@ Fees are usually around £9,250 but you can:
 <div class="training-attributes">
   <h4>University-led training</h4>
   <div class="badges">
-    <span class="badge pink">Costs £9,250</span>
-    <span class="badge dark-cyan">Funding available</span>
-    <span class="badge purple">Takes 1 year</span>
-    <span class="badge dark-blue">PGCE or PGDE</span>
+    <div class="badge pink">
+      <div class="badge-text">Costs £9,250</div>
+    </div>
+    <div class="badge dark-cyan">
+      <div class="badge-text">Funding available</div>
+    </div>
+
+    <div class="badge purple">
+      <div class="badge-text">Takes 1 year</div>
+    </div>
+
+    <div class="badge dark-blue">
+      <div class="badge-text">PGCE or PGDE</div>
+    </div>
   </div>
 </div>
 
@@ -114,10 +124,26 @@ Fees are usually around £9,250 but you can:
 <div class="training-attributes">
   <h4>School direct<br/>(fee-funded)</h4>
   <div class="badges">
-    <span class="badge pink">Costs £9,250</span>
-    <span class="badge dark-cyan">Funding available</span>
-    <span class="badge purple">Takes 1 year</span>
-    <span class="badge dark-blue">Often a PGCE or PGDE</span>
+    <div class="badge pink">
+      <div class="badge-text">
+        Costs £9,250
+      </div>
+    </div>
+    <div class="badge dark-cyan">
+      <div class="badge-text">
+        Funding available
+      </div>
+    </div>
+    <div class="badge purple">
+      <div class="badge-text">
+        Takes 1 year
+      </div>
+    </div>
+    <div class="badge dark-blue">
+      <div class="badge-text">
+        Often a PGCE or PGDE
+      </div>
+    </div>
   </div>
 </div>
 
@@ -137,23 +163,43 @@ Courses typically take one year but you may be able to study part-time.
   <div class="training-option">
     <dt>School direct<br/>(salaried)</dt>
     <dd class="badges">
-      <span class="badge purple">Takes 1 year</span>
-      <span class="badge dark-blue">Often a PGCE or PGDE</span>
+      <div class="badge purple">
+        <div class="badge-text">
+          Takes 1 year
+        </div>
+      </div>
+      <div class="badge dark-blue">
+        <div class="badge-text">
+          Often a PGCE or PGDE
+        </div>
+      </div>
     </dd>
   </div>
 
   <div class="training-option">
     <dt>Postgraduate teaching apprenticeship</dt>
     <dd class="badges">
-      <span class="badge purple">Takes 1 year</span>
+      <div class="badge purple">
+        <div class="badge-text">
+          Takes 1 year
+        </div>
+      </div>
     </dd>
   </div>
 
   <div class="training-option">
     <dt>Teach First</dt>
     <dd class="badges">
-      <span class="badge purple">Takes 2 years</span>
-      <span class="badge dark-blue">PGDE</span>
+      <div class="badge purple">
+        <div class="badge-text">
+          Takes 2 years
+        </div>
+      </div>
+      <div class="badge dark-blue">
+        <div class="badge-text">
+          PGDE
+        </div>
+      </div>
     </dd>
   </div>
 </dl>
@@ -177,10 +223,26 @@ Qualifications vary depending on the course. For example, you could get QTS with
 <div class="training-attributes">
   <h4>Undergraduate teacher training</h4>
   <div class="badges">
-    <span class="badge pink">Costs £9,250 per year</span>
-    <span class="badge dark-cyan">Funding available</span>
-    <span class="badge purple">Up to 4 years</span>
-    <span class="badge dark-blue">Qualifications vary</span>
+    <div class="badge pink">
+      <div class="badge-text">
+        Costs £9,250 per year
+      </div>
+    </div>
+    <div class="badge dark-cyan">
+      <div class="badge-text">
+        Funding available
+      </div>
+    </div>
+    <div class="badge purple">
+      <div class="badge-text">
+        Up to 4 years
+      </div>
+    </div>
+    <div class="badge dark-blue">
+      <div class="badge-text">
+        Qualifications vary
+      </div>
+    </div>
   </div>
 </div>
 

@@ -1,17 +1,20 @@
+import MockDate from 'mockdate'
 import { Application } from 'stimulus';
 import TalkToUsController from 'talk-to-us_controller.js';
 
 describe('TalkToUsController', () => {
   let button;
 
-  const setBody = (zendeskEnabled) => {
+  const setBody = (zendeskEnabled, offlineText = null) => {
     document.body.innerHTML = `
-      <a
-        href="#"
-        data-controller="talk-to-us"
-        data-action="click->talk-to-us#startChat"
-        data-talk-to-us-zendesk-enabled-value="${zendeskEnabled}"
-      >Chat Online</a>
+      <span data-controller="talk-to-us" data-talk-to-us-zendesk-enabled-value="${zendeskEnabled}">
+        <a
+          href="#"
+          data-action="click->talk-to-us#startChat"
+          data-talk-to-us-target="button"
+        >Chat Online</a>
+        ${offlineText ? `<p data-talk-to-us-target="offlineText">${offlineText}</p>` : ''}
+      </span>
     `;
   }
 
@@ -21,12 +24,17 @@ describe('TalkToUsController', () => {
     button = document.querySelector('a');
   }
 
+  const setCurrentTime = (time) => {
+    MockDate.set(time);
+  }
+
   describe("when Zendesk Chat is disabled", () => {
     const openSpy = jest.fn();
 
     beforeEach(() => {
       jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ open: openSpy }));
 
+      setCurrentTime('2021-01-01 10:00');
       setBody(false);
       registerController();
     });
@@ -52,6 +60,7 @@ describe('TalkToUsController', () => {
       jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ $zopim: { livechat: { window: { show: chatShowSpy } } } }));
 
       setBody(true);
+      setCurrentTime('2021-01-01 10:00');
       registerController();
     });
 
@@ -62,4 +71,32 @@ describe('TalkToUsController', () => {
       expect(chatShowSpy).toBeCalledWith();
     });
   });
+
+  describe("when the chat is offline (too early) and there is no offline text", () => {
+    beforeEach(() => {
+      setBody(true);
+      setCurrentTime('2021-01-01 08:29');
+      registerController();
+    });
+
+    it('hides the chat button', () => {
+      const button = document.querySelector('a');
+
+      expect(button.classList.contains('hidden')).toBe(true)
+    });
+  })
+
+  describe("when the chat is offline (too late) and there is offline text", () => {
+    beforeEach(() => {
+      setBody(true, "Chat offline.");
+      setCurrentTime('2021-01-01 17:31');
+      registerController();
+    });
+
+    it('shows the offline text', () => {
+      const offlineText = document.querySelector('p');
+
+      expect(offlineText.classList.contains('visible')).toBe(true)
+    })
+  })
 });

@@ -4,8 +4,12 @@
     padding: 1em 0 2em;
     gap: 1em;
 
+    @include mq($until: mobile) {
+      flex-direction: column;
+    }
+
     h4 {
-      margin-top: 0;
+      margin-top: 1em;
       padding-top: 0;
       flex-shrink: 0;
       flex-basis: 33%;
@@ -15,48 +19,62 @@
   .badges {
     display: flex;
     gap: .4em;
+    padding-block: .8em;
+    padding-right: 2em;
     flex-direction: column;
     align-items: flex-start;
+    border-left: 1px solid $grey-mid;
+    overflow-x: hidden;
+    min-height: 4em;
   }
 
   .badge {
-    padding: .2em .4em;
+    $skew-amount: -10deg;
+    $unskew-amount: 10deg;
+
+    padding: .4em;
     display: inline-block;
-    border-radius: 5px;
-    @include font-size("xsmall");
+    transform: skewx($skew-amount);
+    margin-left: -1em;
+    padding-left: 1.5em;
+    padding-right: 1em;
+    font-weight: bold;
+
+    .badge-text {
+      transform: skew($unskew-amount);
+
+      abbr {
+        text-underline-offset: .2em;
+      }
+    }
 
     &.pink {
       color: $white;
       border: 1px solid $pink-dark;
-      font-weight: 900;
       background: $pink-dark;
     }
 
     &.dark-cyan {
       color: $white;
       border: 1px solid $dark-cyan;
-      font-weight: 900;
       background: $dark-cyan;
     }
 
     &.yellow {
       color: $black;
       border: 1px solid $yellow;
-      font-weight: 900;
       background: $yellow;
     }
 
     &.dark-blue {
       color: $white;
       border: 1px solid $blue-dark;
-      font-weight: 900;
       background: $blue-dark;
     }
 
     &.purple {
       color: $white;
       border: 1px solid $purple;
-      font-weight: 900;
       background: $purple;
     }
   }
@@ -68,7 +86,6 @@
     margin-bottom: 3em;
 
     .training-option {
-      align-items: baseline;
       display: flex;
       padding-bottom: $space-between-definitions;
 
@@ -86,6 +103,7 @@
       }
 
       dt {
+        margin-top: 1em;
         flex-basis: 30%;
         @include font-size(small);
         font-weight: 900;

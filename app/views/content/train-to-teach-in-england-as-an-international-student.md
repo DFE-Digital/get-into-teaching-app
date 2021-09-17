@@ -56,7 +56,7 @@ keywords:
   - Settlement Scheme
   - Statement
   - Comparability
-  – Overseas degree equivalency
+  - Overseas degree equivalency
 ---
 
 Teacher training in England is practical, hands-on and supportive. You’ll train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. You’ll leave with qualified teacher status (QTS), a professional qualification valued globally. 
