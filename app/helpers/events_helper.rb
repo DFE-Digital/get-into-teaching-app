@@ -80,7 +80,7 @@ module EventsHelper
     ajax_map(
       address,
       zoom: 10,
-      mapsize: [628, 420],
+      mapsize: [732, 490],
       title: event.name,
       description: address,
     )
