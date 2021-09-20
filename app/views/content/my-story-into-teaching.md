@@ -8,7 +8,7 @@ date: "2021-02-02"
 image: "media/images/content/hero-images/0010.jpg"
 subtitle: Get information and support to help you become a teacher. 
 subtitle_button: "Register your interest"
-subtitle_link: "/event-categories/train-to-teach-events"
+subtitle_link: "/mailinglist/signup/name"
 hide_page_helpful_question: true
 navigation: 35
 fullwidth: true
