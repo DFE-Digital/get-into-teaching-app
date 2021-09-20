@@ -19,14 +19,14 @@ export default class extends Controller {
 
   accept(event) {
     event.preventDefault();
-    this.overlayTarget.style.display = 'none';
+    this.overlayTarget.classList.remove('visible');
 
     const cookiePrefs = new CookiePreferences();
     cookiePrefs.allowAll();
   }
 
   showDialog() {
-    this.overlayTarget.style.display = 'flex';
+    this.overlayTarget.classList.add('visible');
 
     const tabKey = 9;
     const agreeButtonID = 'biscuits-agree';

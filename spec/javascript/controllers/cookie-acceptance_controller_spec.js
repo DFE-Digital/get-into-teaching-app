@@ -41,7 +41,7 @@ describe('CookieAcceptanceController', () => {
 
     it('does not show the cookie acceptance dialog', () => {
       const overlay = document.getElementById('overlay');
-      expect(overlay.style.display).toBe('');
+      expect(overlay.classList.contains('visible')).toBe(false);
     });
   });
 
@@ -52,7 +52,7 @@ describe('CookieAcceptanceController', () => {
 
     it('shows the cookie acceptance dialog', () => {
       const overlay = document.getElementById('overlay');
-      expect(overlay.style.display).toBe('flex');
+      expect(overlay.classList.contains('visible')).toBe(true);
     });
   });
 
@@ -70,7 +70,7 @@ describe('CookieAcceptanceController', () => {
 
     it('hides the dialog', () => {
       const overlay = document.getElementById('overlay');
-      expect(overlay.style.display).toBe('none');
+      expect(overlay.classList.contains('visible')).toBe(false);
     });
   });
 });
