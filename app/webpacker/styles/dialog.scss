@@ -1,13 +1,27 @@
+@keyframes slide-up {
+  0% {
+    transform: translateY(110vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
 .dialog {
-  display: none;
+  display: flex;
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%;
   min-height: 100vh;
   z-index: 1000;
   justify-content: center;
   align-items: center;
+  transform: translateY(110vh);
+
+  &.visible {
+    animation: slide-up 0s forwards;
+  }
 
   &__background {
     opacity: .8;
