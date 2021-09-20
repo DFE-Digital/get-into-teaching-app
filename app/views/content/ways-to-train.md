@@ -77,7 +77,7 @@ Not looking to teach in primary or secondary settings? Consider teaching [early 
 
 ### Go back to university as a postgraduate student
 
-With university-led teacher training you spend about a third of your time in academic learning and the rest in school placements.
+With university-led teacher training you spend some of your time in academic learning, but the majority in school placements.
 
 In addition to QTS you'll get a PGCE or PGDE (an academic qualification).
 
@@ -110,9 +110,9 @@ Fees are usually around £9,250 but you can:
 
 ### Train as you teach at a school or group of schools
 
-On a 'school direct (fee-funded)' programme you spend less time learning about the theory of teaching than you would in [university-led training](/ways-to-train#go-back-to-university-as-a-postgraduate-student).
+On a 'school direct (fee-funded)' programme, your learning will be centred on a particular school, but you will also be placed in different schools during your course.
 
-Despite the focus on training as you teach, many courses give you a PGCE or PGDE (an academic qualification) in addition to QTS.
+Many school direct programmes give you a PGCE or PGDE (an academic qualification) in addition to QTS.
 
 Courses typically take one year but you may be able to study part-time.
 
@@ -151,9 +151,9 @@ Fees are usually around £9,250 but you can:
 
 Some teacher training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary.
 
-You spend less time learning about the theory of teaching than you would in [university-led training](/ways-to-train#go-back-to-university-as-a-postgraduate-student).
+These courses are usually suitable for people who already have relevant teaching experience, or are already working as unqualified teachers. 
 
-Despite the focus on training as you teach, many 'school direct (salaried)' courses give you a PGCE or PGDE (an academic qualification) in addition to QTS.
+Many 'school direct (salaried)' programmes give you a PGCE or PGDE (an academic qualification) in addition to QTS.
 
 Courses typically take one year but you may be able to study part-time.
 
