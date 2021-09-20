@@ -24,10 +24,6 @@ html.js-enabled {
   padding: .25em 0;
   margin-bottom: 1em;
 
-  // Avoids content layout shift when autocomplete
-  // search input is injected into the navigation bar.
-  height: 48px;
-
   .fas {
     width: 22px;
   }
@@ -37,6 +33,9 @@ html.js-enabled {
     padding: 0;
     padding-right: 2em;
     border-bottom: none;
+    // Avoids content layout shift when autocomplete
+    // search input is injected into the navigation bar.
+    height: 48px;
   }
 
   .fas {
