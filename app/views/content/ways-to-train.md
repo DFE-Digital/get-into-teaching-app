@@ -5,7 +5,7 @@ description: |-
   Official Department for Education guidance on teacher training. Find out how to become a teacher, get qualified teacher status (QTS) through a PGCE or school direct and the salaries and funding available. 
 subtitle: Get information and support to help you become a teacher. 
 subtitle_button: "Register for updates"
-subtitle_link: "event-categories/train-to-teach-events"
+subtitle_link: "/mailinglist/signup/name"
 date: "2021-06-07"
 backlink: "../"
 navigation: 20
