@@ -7,7 +7,7 @@
   image: "media/images/content/hero-images/0013.jpg"
   subtitle: Get information and support to help you become a teacher. 
   subtitle_button: "Register for updates"
-  subtitle_link: "/event-categories/train-to-teach-events"
+  subtitle_link: "/mailinglist/signup/name"
   backlink: "../"
   navigation: 25
   right_column:
