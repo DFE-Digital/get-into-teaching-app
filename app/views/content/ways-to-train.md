@@ -3,22 +3,13 @@ title: "Ways to train"
 image: "media/images/content/hero-images/0003.jpg"
 description: |-
   Official Department for Education guidance on teacher training. Find out how to become a teacher, get qualified teacher status (QTS) through a PGCE or school direct and the salaries and funding available. 
-subtitle: New events added - join an event near you and get all the info you need to become a teacher. 
-subtitle_button: "Book your place"
+subtitle: Get information and support to help you become a teacher. 
+subtitle_button: "Register for updates"
 subtitle_link: "event-categories/train-to-teach-events"
 date: "2021-06-07"
 backlink: "../"
 navigation: 20
 article_classes: ['ways-to-train']
-right_column:
-  ctas:
-    - title: New events added.
-      text: Turn your questions into confidence. Join our next event to decide which training suits you best.  
-      link_text: "Events near you"
-      link_target: "/event-categories/train-to-teach-events"
-      icon: "icon-calendar"
-      hide_on_mobile: Yes
-      hide_on_tablet: Yes
 calls_to_action:
     find-postgraduate-training:
       name: simple
