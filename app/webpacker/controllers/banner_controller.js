@@ -3,15 +3,17 @@ import CookiePreferences from '../javascript/cookie_preferences';
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
+  static values = { name: String };
+
   cookieCategory = 'functional';
 
   connect() {
-    this.hideOnLoad();
+    this.showOnLoad();
   }
 
-  hideOnLoad() {
-    if (Cookies.get(this.cookieName) === 'Hidden') {
-      this.hideBanner();
+  showOnLoad() {
+    if (Cookies.get(this.cookieName) !== 'Hidden') {
+      this.showBanner();
     }
   }
 
@@ -22,19 +24,20 @@ export default class extends Controller {
   }
 
   hideBanner() {
-    this.element.style.display = 'none';
+    this.element.classList.remove('visible');
+  }
+
+  showBanner() {
+    this.element.classList.add('visible');
   }
 
   setCookie() {
-    if (new CookiePreferences().allowed(this.cookieCategory))
+    if (new CookiePreferences().allowed(this.cookieCategory)) {
       Cookies.set(this.cookieName, 'Hidden');
+    }
   }
 
   get cookieName() {
-    return `GiTBetaBanner${this.name}`;
-  }
-
-  get name() {
-    return this.data.get('name');
+    return `GiTBetaBanner${this.nameValue}`;
   }
 }
