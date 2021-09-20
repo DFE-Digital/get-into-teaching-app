@@ -112,7 +112,7 @@ Fees are usually around £9,250 but you can:
 
 On a 'school direct (fee-funded)' programme, your learning will be centred on a particular school, but you will also be placed in different schools during your course.
 
-Many school direct programmes give you a PGCE or PGDE (an academic qualification) in addition to QTS.
+Many 'school direct (fee-funded)' programmes give you a PGCE or PGDE (an academic qualification) in addition to QTS.
 
 Courses typically take one year but you may be able to study part-time.
 
