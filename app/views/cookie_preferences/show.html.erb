@@ -174,7 +174,12 @@
         </span>
 
         <br />
-        <%= link_to "Back to page", internal_referer || root_path, class: "secondary-button" %>
+
+        <% if internal_referer.present? && internal_referer != root_path %>
+          <%= link_to "Back to page", internal_referer, class: "secondary-button" %>
+        <% else %>
+          <%= link_to "Go to home page", root_path, class: "secondary-button" %>
+        <% end %>
       </p>
 
       <p>
