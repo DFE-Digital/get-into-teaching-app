@@ -137,5 +137,5 @@ Rails.application.configure do
   config.x.structured_data.event = false
   config.x.structured_data.how_to = false
 
-  config.x.zendesk_chat = false
+  config.x.zendesk_chat = true
 end
