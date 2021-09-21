@@ -11,14 +11,14 @@
   backlink: "../"
   navigation: 25
   right_column:
-  ctas:
-    - title: New events added.
-      text: Turn your questions into confidence. Decide how to fund your training at our next event.  
-      link_text: "Events near you"
-      link_target: "/event-categories/train-to-teach"
-      icon: "icon-calendar"
-      hide_on_mobile: Yes
-      hide_on_tablet: Yes
+    ctas:
+      - title: New events added.
+        text: Turn your questions into confidence. Decide how to fund your training at our next event.
+        link_text: "Events near you"
+        link_target: "/event-categories/train-to-teach"
+        icon: "icon-calendar"
+        hide_on_mobile: Yes
+        hide_on_tablet: Yes
   lid_pixel_event: "Funding"
   jump_links:
     Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"
