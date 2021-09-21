@@ -131,7 +131,7 @@ Rails.application.configure do
     formatter: config.rails_semantic_logger.format
 
   config.x.structured_data.blog_posting = false
-  config.x.structured_data.web_site = false
+  config.x.structured_data.web_site = true
   config.x.structured_data.organization = false
   config.x.structured_data.breadcrumb_list = true
   config.x.structured_data.event = false
