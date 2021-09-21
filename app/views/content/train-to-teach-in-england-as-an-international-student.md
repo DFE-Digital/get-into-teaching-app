@@ -97,7 +97,7 @@ If your qualifications come from a non-UK institution, your teacher training pro
 Call us on [0800 389 2500](tel://08003892500) for:
 
 * guidance on the UK equivalents of your qualifications
-* a free statement of comparability from UK ENIC once you’ve submitted your application, if your provider asks for this
+* a free statement of comparability detailing overseas degree equivalency from UK ENIC once you’ve submitted your application, if your provider asks for this
 
 ### 3. Learn about financial support
 
