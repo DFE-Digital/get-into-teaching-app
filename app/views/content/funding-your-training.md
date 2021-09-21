@@ -5,9 +5,9 @@
     school direct.
   date: "2021-03-11"
   image: "media/images/content/hero-images/0013.jpg"
-  subtitle: New events added - join an event near you and get all the info you need to become a teacher. 
-  subtitle_button: "Book your place"
-  subtitle_link: "/event-categories/train-to-teach-events"
+  subtitle: Get information and support to help you become a teacher. 
+  subtitle_button: "Register for updates"
+  subtitle_link: "/mailinglist/signup/name"
   backlink: "../"
   navigation: 25
   right_column:
