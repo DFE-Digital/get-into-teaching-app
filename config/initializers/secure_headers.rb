@@ -64,6 +64,7 @@ SecureHeaders::Configuration.default do |config|
     manifest_src: ["'self'"],
     media_src: ["'self'"].concat(zendesk),
     script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, vwo, youtube, zendesk),
+    script_src_elem: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, vwo, youtube, zendesk),
     style_src: ["'self'"].concat(quoted_unsafe_inline, govuk, google_apis, google_supported),
     worker_src: ["'self'"].concat(vwo, blob),
   }
