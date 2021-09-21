@@ -128,16 +128,16 @@ You usually need a confirmed offer on a course to apply for a visa.
 
 
 
-### Read more detailed information and guidance
+#### Learn more about training to teach in England
 
 [Train to teach in England: non-UK applicants](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants) gives detailed guidance about applying for teacher training in England.
 
-### If you cannot come to England
+#### Train to teach outside the UK
 
 [Apply for qualified teacher status (QTS) if you teach outside the UK](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk)
  explains other routes to QTS for teachers and those with teaching experience outside the UK. 
 
- ### Next steps
+### Next steps
 
  Ready to apply for a teacher training place? 
 
@@ -145,6 +145,5 @@ You usually need a confirmed offer on a course to apply for a visa.
   <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find a postgraduate teacher training <span>course</span></a>
 </p>
 
-Or [search for an undergraduate teacher training course](https://digital.ucas.com/search).
 
 
