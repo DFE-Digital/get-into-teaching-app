@@ -11,6 +11,7 @@
   <%= tag :link, rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' %>
   <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
   <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
+  <%= javascript_pack_tag 'google_tag_manager', 'data-turbolinks-track': 'reload', async: true, nonce: true %>
   <%= javascript_pack_tag 'js_enabled', 'data-turbolinks-track': 'reload', async: true %>
   <%= javascript_pack_tag 'lazy_images', 'data-turbolinks-track': 'reload', async: true %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
