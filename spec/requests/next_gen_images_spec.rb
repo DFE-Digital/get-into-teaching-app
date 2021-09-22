@@ -11,7 +11,7 @@ describe "Next Gen Images", type: :request do
 
   it do
     is_expected.to match(
-      /<picture><source .*><img .*><noscript><img .*><\/noscript><\/picture>/,
+      /<picture><source .*><img .*><\/picture><noscript><picture class="no-js"><source .*><img .*><\/picture><\/noscript>/,
     )
   end
 end

@@ -8,19 +8,22 @@ describe LazyLoadImages do
     let(:original_src) { "image.jpg" }
     let(:original_ext) { File.extname(original_src) }
     let(:img) { "<img class=\"test\" src=\"#{original_src}\">" }
-    let(:picture) { "<picture>#{img}<source srcset=\"#{original_src}\"></source></picture>" }
+    let(:source) { "<source srcset=\"#{original_src}\"></source>" }
+    let(:picture) { "<picture>#{img}#{source}</picture>" }
+    let(:no_js_picture) { "<noscript><picture class=\"no-js\">#{img}#{source}</picture></noscript>" }
     let(:instance) { described_class.new(picture) }
 
     it do
       lazy_image = "<img class=\"test lazyload\" src=\"#{LazyLoadImages::TINY_GIF}\" data-src=\"#{original_src}\">"
       lazy_source = "<source srcset=\"#{LazyLoadImages::TINY_GIF}\" data-srcset=\"#{original_src}\"></source>"
-      is_expected.to include("<picture>#{lazy_image}<noscript>#{img}</noscript>#{lazy_source}</picture>")
+      is_expected.to include("<picture>#{lazy_image}#{lazy_source}</picture>#{no_js_picture}")
     end
 
     context "when lazy-loading is disabled on the image" do
       let(:img) { "<img class=\"test\" src=\"#{original_src}\" data-lazy-disable=\"true\">" }
 
       it { is_expected.to include(picture) }
+      it { is_expected.not_to include(no_js_picture) }
     end
   end
 end
