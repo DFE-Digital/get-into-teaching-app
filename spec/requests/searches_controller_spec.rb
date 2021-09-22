@@ -23,6 +23,14 @@ RSpec.describe SearchesController, type: :request do
         it { is_expected.to have_attributes media_type: "application/json" }
         it { expect(json).to be_empty }
       end
+
+      context "with a search key but no value" do
+        before { get search_path(search: "", format: :json), xhr: true }
+
+        it { is_expected.to have_http_status :success }
+        it { is_expected.to have_attributes media_type: "application/json" }
+        it { expect(json).to be_empty }
+      end
     end
 
     describe "HTML format" do
@@ -35,6 +43,13 @@ RSpec.describe SearchesController, type: :request do
 
       context "without search term" do
         before { get search_path }
+
+        it { is_expected.to have_http_status :success }
+        it { is_expected.to have_attributes media_type: "text/html" }
+      end
+
+      context "with a search key but no value" do
+        before { get search_path(search: "") }
 
         it { is_expected.to have_http_status :success }
         it { is_expected.to have_attributes media_type: "text/html" }
