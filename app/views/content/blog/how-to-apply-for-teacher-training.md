@@ -66,4 +66,4 @@ Your referees can tell training providers about your qualities and abilities, so
 
 ### 4. Apply for teacher training
 
-You can apply via UCAS, or by using a new GOV.UK service called Apply for teacher training. [We’ll help you choose the service that’s right for you](https://www.gov.uk/apply-for-teacher-training).
+You're now ready to submit your application! You can apply via the new GOV.UK service called [Apply for teacher training.](https://www.gov.uk/apply-for-teacher-training).
