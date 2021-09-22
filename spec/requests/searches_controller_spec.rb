@@ -8,12 +8,12 @@ RSpec.describe SearchesController, type: :request do
       let(:json) { JSON.parse response.body }
 
       context "with search term" do
-        before { get search_path(q: "teaching", format: :json), xhr: true }
+        before { get search_path(search: { search: "teaching" }, format: :json), xhr: true }
 
         it { is_expected.to have_http_status :success }
         it { is_expected.to have_attributes media_type: "application/json" }
         it { expect(json).to be_kind_of Array }
-        it { expect(json).to all be_kind_of String }
+        it { expect(json).to all be_kind_of Hash }
       end
 
       context "without search term" do
@@ -27,7 +27,7 @@ RSpec.describe SearchesController, type: :request do
 
     describe "HTML format" do
       context "with search term" do
-        before { get search_path(q: "teaching") }
+        before { get search_path(search: { search: "teaching" }) }
 
         it { is_expected.to have_http_status :success }
         it { is_expected.to have_attributes media_type: "text/html" }
