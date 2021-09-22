@@ -174,12 +174,16 @@
         </span>
 
         <br />
-        <%= link_to "Back to page", internal_referer || root_path, class: "secondary-button" %>
+
+        <% if internal_referer.present? && internal_referer != root_path %>
+          <%= link_to "Back to page", internal_referer, class: "secondary-button" %>
+        <% else %>
+          <%= link_to "Go to home page", root_path, class: "secondary-button" %>
+        <% end %>
       </p>
 
       <p>
-        <%= link_to "Find out more", cookies_path %>
-        about cookies on this service
+        <%= link_to "Find out more about cookies on this service", cookies_path %>
       </p>
     </div>
   </form>
