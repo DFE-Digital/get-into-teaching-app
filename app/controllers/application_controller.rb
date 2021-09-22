@@ -45,6 +45,11 @@ private
     response.body = NextGenImages.new(response.body).html
     response.body = ResponsiveImages.new(response.body).html
     response.body = LazyLoadImages.new(response.body).html
+
+    # <source> has no content so should be self-closing; configuring Nokogiri
+    # to remove the closing tags results in breakages elsewhere in the document,
+    # so we have to remove them manually post image processing.
+    response.body = response.body.gsub("</source>", "")
   end
 
   def process_links
