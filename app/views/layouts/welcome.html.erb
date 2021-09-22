@@ -8,7 +8,7 @@
     <%# FIXME: remove this to enable the page in prod %>
     <% raise(ActionController::RoutingError.new("Not found")) if Rails.env.production? %>
 
-    <main class="welcome-guide" role="main" id="main-content">
+    <main class="welcome-guide" id="main-content">
       <%= yield %>
 
       <% @front_matter["content"]&.each do |partial| %>

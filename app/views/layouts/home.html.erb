@@ -7,7 +7,7 @@
       <%= c.hero(@front_matter) %>
     <% end %>
 
-    <main class="home" role="main" id="main-content">
+    <main class="home" id="main-content">
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
       <% end %>
