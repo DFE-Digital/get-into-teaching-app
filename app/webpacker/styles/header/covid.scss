@@ -11,7 +11,7 @@ html:not(.js-enabled) {
   padding: 10px 20px;
   display: none;
 
-  .visible {
+  &.visible {
     display: block;
   }
 
