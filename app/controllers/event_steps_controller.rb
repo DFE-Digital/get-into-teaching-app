@@ -4,7 +4,7 @@ class EventStepsController < ApplicationController
   before_action :set_is_walk_in, only: %i[show update]
   before_action :load_event
 
-  include WizardSteps
+  include DFEWizard::Controller
   self.wizard_class = Events::Wizard
 
   before_action :redirect_closed_events, only: %i[show update]

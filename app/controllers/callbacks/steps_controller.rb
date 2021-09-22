@@ -2,7 +2,7 @@ module Callbacks
   class StepsController < ApplicationController
     include CircuitBreaker
 
-    include WizardSteps
+    include DFEWizard::Controller
     self.wizard_class = Callbacks::Wizard
 
     before_action :set_step_page_title, only: %i[show update]

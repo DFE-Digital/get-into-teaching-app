@@ -28,7 +28,6 @@ Naming/MemoizedInstanceVariableName:
 Rails/LexicallyScopedActionFilter:
   Exclude:
     - 'app/controllers/**/*steps_controller.rb'
-    - 'app/controllers/concerns/wizard_steps.rb'
 
 Naming/MethodParameterName:
   Exclude:
