@@ -71,8 +71,8 @@ If you’re considering coming back to the profession, or if you’re qualified 
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
   <iframe 
-    class="lazyload"
-    data-src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" 
+    loading="lazy"
+    src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" 
     frameborder="0" 
     allow="autoplay; encrypted-media" 
     allowfullscreen
@@ -106,8 +106,8 @@ If you have '[qualified teacher status](https://www.gov.uk/guidance/qualified-te
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
   <iframe 
-    class="lazyload"
-    data-src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" 
+    loading="lazy"
+    src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" 
     frameborder="0" 
     allow="autoplay; encrypted-media" 
     allowfullscreen

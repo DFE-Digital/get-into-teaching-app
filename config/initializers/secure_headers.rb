@@ -58,7 +58,7 @@ SecureHeaders::Configuration.default do |config|
     connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, vwo, facebook, tta_service_hosts, zendesk),
     font_src: ["'self'"].concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: ["'self'"].concat(snapchat, facebook, vwo, govuk),
-    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, vwo, google_analytics),
+    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, vwo, google_analytics, data),
     frame_ancestors: ["'self'"],
     img_src: ["'self'"].concat(govuk, pinterest, facebook, vwo, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, %w[cx.atdmt.com linkbam.uk]),
     manifest_src: ["'self'"],
