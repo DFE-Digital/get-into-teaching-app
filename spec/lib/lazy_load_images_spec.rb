@@ -12,8 +12,8 @@ describe LazyLoadImages do
     let(:instance) { described_class.new(picture) }
 
     it do
-      lazy_image = "<img class=\"test lazyload\" data-src=\"#{original_src}\">"
-      lazy_source = "<source data-srcset=\"#{original_src}\"></source>"
+      lazy_image = "<img class=\"test lazyload\" src=\"#{LazyLoadImages::TINY_GIF}\" data-src=\"#{original_src}\">"
+      lazy_source = "<source srcset=\"#{LazyLoadImages::TINY_GIF}\" data-srcset=\"#{original_src}\"></source>"
       is_expected.to include("<picture>#{lazy_image}<noscript>#{img}</noscript>#{lazy_source}</picture>")
     end
 

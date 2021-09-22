@@ -1,4 +1,7 @@
 class LazyLoadImages
+  # Used as a placeholder to prevent invalid HTML.
+  TINY_GIF = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=".freeze
+
   def initialize(page)
     @page = page
   end
@@ -12,7 +15,7 @@ class LazyLoadImages
       img.after(noscript_image(img, doc))
 
       img["data-src"] = img.attribute("src")
-      img.remove_attribute("src")
+      img["src"] = TINY_GIF
 
       img["class"] ||= ""
       img["class"] = img["class"] << " lazyload"
@@ -23,7 +26,7 @@ class LazyLoadImages
 
       picture.css("source").each do |source|
         source["data-srcset"] = source.attribute("srcset")
-        source.remove_attribute("srcset")
+        source["srcset"] = TINY_GIF
       end
     end
 
