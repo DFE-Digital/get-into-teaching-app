@@ -1,4 +1,7 @@
 class LazyLoadImages
+  # Used as a placeholder to prevent invalid HTML.
+  TINY_GIF = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=".freeze
+
   def initialize(page)
     @page = page
   end
@@ -6,25 +9,25 @@ class LazyLoadImages
   def html
     doc = Nokogiri::HTML(@page)
 
-    doc.css("img").each do |img|
-      next if img["data-lazy-disable"].present?
-
-      img.after(noscript_image(img, doc))
-
-      img["data-src"] = img.attribute("src")
-      img.remove_attribute("src")
-
-      img["class"] ||= ""
-      img["class"] = img["class"] << " lazyload"
-    end
-
     doc.css("picture").each do |picture|
       next if picture.css("img[data-lazy-disable]").any?
 
+      picture.after(noscript_picture(picture, doc))
+
       picture.css("source").each do |source|
         source["data-srcset"] = source.attribute("srcset")
-        source.remove_attribute("srcset")
+        source["srcset"] = TINY_GIF
       end
+    end
+
+    doc.css("picture:not(.no-js) img").each do |img|
+      next if img["data-lazy-disable"].present?
+
+      img["data-src"] = img.attribute("src")
+      img["src"] = TINY_GIF
+
+      img["class"] ||= ""
+      img["class"] = img["class"] << " lazyload"
     end
 
     doc.to_html(encoding: "UTF-8", indent: 2)
@@ -32,9 +35,11 @@ class LazyLoadImages
 
 private
 
-  def noscript_image(img, doc)
+  def noscript_picture(picture, doc)
     Nokogiri::XML::Node.new("noscript", doc) do |noscript|
-      noscript.add_child(img.dup)
+      no_js_picture = picture.dup
+      no_js_picture["class"] = "no-js"
+      noscript.add_child(no_js_picture)
     end
   end
 end

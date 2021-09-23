@@ -4,7 +4,7 @@
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
       <%= render HeaderComponent.new %>
 
-      <main role="main" id="main-content">
+      <main id="main-content">
         <%= render Stories::StoryComponent.new(@front_matter, @page.data) do %>
           <%= render Header::BreadcrumbComponent.new %>
           <%= yield %>

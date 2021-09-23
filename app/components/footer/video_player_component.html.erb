@@ -3,19 +3,18 @@
   </div>
   <div class='video-overlay__video-container'>
     <div class="video-overlay__video-container__wrapper">
+      <!-- 'about:blank' as a placeholder src to avoid HTML 5 validation error -->
       <iframe data-video-target="iframe"
               title="Get Into Teaching Video Player"
               width="800"
               height="450"
-              src=""
-              alt="Watch a video for more information about becoming a teacher"
+              src="about:blank"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              playsinline="false">
+              allowfullscreen>
       </iframe>
     </div>
     <button id="close-button" class="video-overlay__video-container__dismiss" data-video-target="close" data-action="click->video#close">
-      <div class="icon-video-close"><span class="visually-hidden">Close video</span></div>
+      <span class="icon-video-close"><span class="visually-hidden">Close video</span></span>
     </button>
     <a class="visually-hidden" href="#">
       Close
