@@ -59,22 +59,19 @@ keywords:
   - Overseas degree equivalency
 ---
 
-Teacher training in England is practical, hands-on and supportive. You’ll train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. You’ll leave with qualified teacher status (QTS), a professional qualification valued globally. 
+
+
+
+
+Teacher training in England is practical, hands-on and supportive. You’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. You’ll leave with qualified teacher status (QTS), a professional qualification valued globally. 
 
 You can apply to train to teach in England from any country in the world. 
 
 You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
-### 1. Get a teacher training adviser
-
-You can get an adviser for one-to-one support. They can give you practical advice and guidance at every stage of your application.
-
-<p class="call-to-action__action">
-  <a href="/tta-service">Get an <span>adviser</span></a>
-</p>
 
 
-### 2. Check your qualifications
+### 1. Check your qualifications
 
 To start postgraduate teacher training in England, you need:
 
@@ -99,19 +96,30 @@ Call us on [0800 389 2500](tel://08003892500) for:
 * guidance on the UK equivalents of your qualifications
 * a free statement of comparability detailing overseas degree equivalency from UK ENIC once you’ve submitted your application, if your provider asks for this
 
+### 2. Get a teacher training adviser
+
+You can get an adviser for one-to-one support. They can give you practical advice and guidance at every stage of your application.
+
+<p class="call-to-action__action">
+  <a href="/tta-service">Get an <span>adviser</span></a>
+</p>
+
 ### 3. Learn about financial support
 
 Fees are usually higher for international trainees but you may be able to [get financial support](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#financial-support-for-non-uk-applicants-for-unsalaried-teacher-training-in-england).
 
-Contact providers before you apply to get their advice about eligibility and the application process.
 
 ### 4. Choose a training provider and get an offer to train
 
 Contact your [Get into teaching adviser](https://adviser-getintoteaching.education.gov.uk/) for guidance on the different types of courses available. You can choose between a fee-paying course, or one which pays a salary. You can also train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years).  
 
+[Learn more about ways to train to teach in England.](https://getintoteaching.education.gov.uk/ways-to-train)
+
 [Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lets you search for teacher training courses in England by location, teaching subject and age group. You can also search for courses which pay a salary, and courses which can sponsor a visa.  
 
-You will be able to apply for a teaching training place without visiting the UK. Some providers also conduct interviews using remote technology – check with your provider when you apply. 
+Contact providers before you apply to get their advice about eligibility and the application process.
+
+You will be able to apply for a teacher training place without visiting the UK. Some providers also conduct interviews using remote technology – check with your provider when you apply. 
 
 #### Your suitability for teaching
 
@@ -125,8 +133,13 @@ You usually need a confirmed offer on a course to apply for a visa.
 
 [If you're an Irish citizen you do not need a visa](https://www.gov.uk/government/publications/common-travel-area-guidance).
 
+### Next steps
 
+ Ready to apply for a teacher training place? 
 
+<p class="call-to-action__action">
+  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find a postgraduate teacher training <span>course</span></a>
+</p>
 
 #### Learn more about training to teach in England
 
@@ -136,14 +149,6 @@ You usually need a confirmed offer on a course to apply for a visa.
 
 [Apply for qualified teacher status (QTS) if you teach outside the UK](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk)
  explains other routes to QTS for teachers and those with teaching experience outside the UK. 
-
-### Next steps
-
- Ready to apply for a teacher training place? 
-
-<p class="call-to-action__action">
-  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find a postgraduate teacher training <span>course</span></a>
-</p>
 
 
 
