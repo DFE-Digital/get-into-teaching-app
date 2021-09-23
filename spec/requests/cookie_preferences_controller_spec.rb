@@ -9,6 +9,7 @@ describe CookiePreferencesController, type: :request do
     it { expect(response).to have_http_status :success }
     it { expect(response.body).to match "Cookie settings" }
     it { expect(response.body).to include("Go to home page") }
+    it { expect(response.body).not_to include("Live chat") }
 
     context "when there is an internal referrer" do
       let(:referer) { "http://www.example.com/ways-to-train" }

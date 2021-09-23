@@ -7,10 +7,12 @@
           <div class="contact">
             <p>Monday to Friday between <strong>8:30am and 5:30pm</strong></p>
             <div class="options">
+              <% unless helpers.privacy_page?(request.path) %>
               <div class="live-chat">
                 <p>Live chat</p>
                 <%= helpers.chat_link("Chat online", classes: "button", fallback_text: nil, offline_text: "Chat closed") %>
               </div>
+              <% end %>
               <div>
                 <p>Call us</p>
                 <a class="telephone" href="tel:08003892500" aria-label="Telephone">0800 389 2500</a>

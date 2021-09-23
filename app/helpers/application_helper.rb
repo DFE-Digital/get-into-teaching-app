@@ -120,4 +120,8 @@ module ApplicationHelper
       ' href="https://getintoteaching.education.gov.uk/how-we-use-your-information"',
       " href=\"#{cookies_path}\""
   end
+
+  def privacy_page?(path)
+    ["/cookie_preference", "/cookies", "/privacy-policy"].include?(path)
+  end
 end

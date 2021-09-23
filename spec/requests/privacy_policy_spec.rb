@@ -16,6 +16,7 @@ describe "GET /privacy-policy", type: :request do
 
     it { is_expected.to have_http_status :success }
     it { expect(subject.body).to include(policy.text) }
+    it { expect(subject.body).not_to include("Live chat") }
   end
 
   context "when viewing a privacy policy by id" do
