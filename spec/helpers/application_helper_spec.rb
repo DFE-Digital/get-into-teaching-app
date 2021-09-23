@@ -243,7 +243,7 @@ describe ApplicationHelper do
 
     it { is_expected.to have_css(%(span[data-controller="talk-to-us"])) }
     it { is_expected.to have_css(%(a[data-action="talk-to-us#startChat"])) }
-    it { is_expected.to have_css(%(a.chat-button.button.with-fallback)) }
+    it { is_expected.to have_css(%(a.chat-button.button.with-fallback span)) }
     it { is_expected.to have_link(fallback_text, href: "#talk-to-us", class: "button chat-button-no-js") }
     it { is_expected.to have_text(offline_text) }
     it { is_expected.to have_css(".chat-button-offline") }

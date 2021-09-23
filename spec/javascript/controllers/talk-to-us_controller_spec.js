@@ -1,9 +1,10 @@
-import MockDate from 'mockdate'
 import { Application } from 'stimulus';
 import TalkToUsController from 'talk-to-us_controller.js';
 
 describe('TalkToUsController', () => {
-  let button;
+
+  beforeAll(() => registerController());
+  afterEach(() => jest.useRealTimers());
 
   const setBody = (zendeskEnabled, offlineText = null) => {
     document.body.innerHTML = `
@@ -12,7 +13,7 @@ describe('TalkToUsController', () => {
           href="#"
           data-action="click->talk-to-us#startChat"
           data-talk-to-us-target="button"
-        >Chat Online</a>
+        ><span>Chat Online</span></a>
         ${offlineText ? `<p data-talk-to-us-target="offlineText">${offlineText}</p>` : ''}
       </span>
     `;
@@ -21,11 +22,14 @@ describe('TalkToUsController', () => {
   const registerController = () => {
     const application = Application.start();
     application.register('talk-to-us', TalkToUsController);
-    button = document.querySelector('a');
   }
 
   const setCurrentTime = (time) => {
-    MockDate.set(time);
+    jest.useFakeTimers().setSystemTime(new Date(time).getTime())
+  }
+
+  const getButtonText = () => {
+    return document.querySelector('a span').textContent;
   }
 
   describe("when Zendesk Chat is disabled", () => {
@@ -34,9 +38,8 @@ describe('TalkToUsController', () => {
     beforeEach(() => {
       jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ open: openSpy }));
 
-      setCurrentTime('2021-01-01 10:00');
       setBody(false);
-      registerController();
+      setCurrentTime('2021-01-01 10:00');
     });
 
     it('opens the klick2contact chat when clicking the button', () => {
@@ -61,27 +64,30 @@ describe('TalkToUsController', () => {
 
       setBody(true);
       setCurrentTime('2021-01-01 10:00');
-      registerController();
-      jest.useFakeTimers();
     });
 
-    afterEach(() => {
-      jest.useRealTimers();
-    })
-
-    it('appends the Zendesk snippet and opens the chat window when clicking the button', () => {
+    it('appends the Zendesk snippet, opens the chat window and shows a loading message when clicking the button', () => {
       const button = document.querySelector('a');
       button.click();
       expect(document.querySelector('#ze-snippet')).not.toBeNull();
-      jest.runAllTimers();
-      expect(chatShowSpy).toBeCalledWith();
+      expect(getButtonText()).toEqual("Starting chat...");
+      jest.runOnlyPendingTimers(); // Timer for script loading,
+      jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
+      expect(chatShowSpy).toHaveBeenCalled();
+      expect(getButtonText()).toEqual("Chat Online");
     });
 
     describe('when clicking the chat button twice', () => {
-      it('only appends the Zendesk snippet once', () => {
+      it('only appends the Zendesk snippet once and does not show the loading message for the second click', () => {
         const button = document.querySelector('a');
         button.click();
+        expect(button.textContent).toEqual("Starting chat...");
+        jest.runOnlyPendingTimers(); // Timer for script loading,
+        jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
+        expect(chatShowSpy).toHaveBeenCalled();
+        expect(button.textContent).toEqual("Chat Online");
         button.click();
+        expect(button.textContent).toEqual("Chat Online");
         expect(document.querySelectorAll('#ze-snippet').length).toEqual(1);
       });
     });
@@ -89,9 +95,9 @@ describe('TalkToUsController', () => {
 
   describe("when the chat is offline (too early) and there is no offline text", () => {
     beforeEach(() => {
+      registerController();
       setBody(true);
       setCurrentTime('2021-01-01 08:29');
-      registerController();
     });
 
     it('hides the chat button', () => {
@@ -103,9 +109,9 @@ describe('TalkToUsController', () => {
 
   describe("when the chat is offline (too late) and there is offline text", () => {
     beforeEach(() => {
+      registerController();
       setBody(true, "Chat offline.");
       setCurrentTime('2021-01-01 17:31');
-      registerController();
     });
 
     it('shows the offline text', () => {

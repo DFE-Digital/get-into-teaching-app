@@ -46,14 +46,29 @@ export default class extends Controller {
   }
 
   showZendeskChat() {
+    const originalText = this.setLoadingButtonText();
     this.appendZendeskScript();
     this.waitForZendesk(() => {
       window.$zopim.livechat.window.show();
+
+      setTimeout(() => {
+        this.buttonTarget.querySelector('span').innerHTML = originalText;
+      }, 500); // Small delay to account for the chat box animating in.
     });
   }
 
+  setLoadingButtonText() {
+    const originalText = this.buttonTarget.querySelector('span').textContent;
+
+    if (!this.zendeskScriptLoaded) {
+      this.buttonTarget.querySelector('span').textContent = 'Starting chat...';
+    }
+
+    return originalText;
+  }
+
   appendZendeskScript() {
-    if (document.querySelector('#ze-snippet') !== null) {
+    if (this.zendeskScriptLoaded) {
       return;
     }
 
@@ -81,5 +96,9 @@ export default class extends Controller {
       'Get Into Teaching: Chat online',
       windowFeatures
     );
+  }
+
+  get zendeskScriptLoaded() {
+    return document.querySelector('#ze-snippet') !== null;
   }
 }
