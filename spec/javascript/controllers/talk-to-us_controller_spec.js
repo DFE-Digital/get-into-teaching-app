@@ -62,13 +62,28 @@ describe('TalkToUsController', () => {
       setBody(true);
       setCurrentTime('2021-01-01 10:00');
       registerController();
+      jest.useFakeTimers();
     });
 
-    it('opens the Zendesk Chat widget when clicking the button', () => {
+    afterEach(() => {
+      jest.useRealTimers();
+    })
+
+    it('appends the Zendesk snippet and opens the chat window when clicking the button', () => {
       const button = document.querySelector('a');
       button.click();
-
+      expect(document.querySelector('#ze-snippet')).not.toBeNull();
+      jest.runAllTimers();
       expect(chatShowSpy).toBeCalledWith();
+    });
+
+    describe('when clicking the chat button twice', () => {
+      it('only appends the Zendesk snippet once', () => {
+        const button = document.querySelector('a');
+        button.click();
+        button.click();
+        expect(document.querySelectorAll('#ze-snippet').length).toEqual(1);
+      });
     });
   });
 

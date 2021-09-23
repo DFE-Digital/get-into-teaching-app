@@ -46,7 +46,31 @@ export default class extends Controller {
   }
 
   showZendeskChat() {
-    window.$zopim.livechat.window.show();
+    this.appendZendeskScript();
+    this.waitForZendesk(() => {
+      window.$zopim.livechat.window.show();
+    });
+  }
+
+  appendZendeskScript() {
+    if (document.querySelector('#ze-snippet') !== null) {
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.setAttribute('id', 'ze-snippet');
+    script.src =
+      'https://static.zdassets.com/ekr/snippet.js?key=34a8599c-cfec-4014-99bd-404a91839e37';
+    document.body.appendChild(script);
+  }
+
+  waitForZendesk(callback) {
+    const interval = setInterval(() => {
+      if (window.$zopim && window.$zopim.livechat) {
+        clearInterval(interval);
+        callback();
+      }
+    }, 100);
   }
 
   openKlick2ContactWindow() {
