@@ -17,7 +17,7 @@
     display: flex;
     flex-direction: column;
 
-    section {
+    > div {
       flex: 1 0;
       margin: $indent-amount;
 
@@ -69,7 +69,7 @@
     .content {
       flex-direction: row;
 
-      section {
+      > div {
         &:first-child {
           margin: 0 $indent-amount $indent-amount 0;
         }
