@@ -27,7 +27,6 @@ You could teach a diverse set of learners, including young people and adults.
 
 You do not need a degree to start teaching in further education. 
 
-
 ## Training to teach in further education
 
 To find out more, visit the [teach in further education website](https://www.teach-in-further-education.campaign.gov.uk/).

@@ -68,20 +68,16 @@ There are different ways to progress and increase your salary.
 
 For example, you can move into a more senior role, or take on additional responsibilities that help your school.
 
-
-
 ### Qualified teacher pay
 
 The school you teach in will have their own pay scales for qualified teachers. Pay increases will always be linked to performance, not length of service.
 
 Annual salary ranges for qualified teachers are:
 
-
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
 | London                                   | £26,948 | £42,624 |
 | Rest of England and Wales                | £25,714 | £36,961 |
-
 
 ### Senior teacher pay
 
@@ -95,8 +91,6 @@ Annual salary ranges for senior teachers are:
 | -------                       | -----   | -----    |
 | London                        | £39,864 | £50,935  |
 | Rest of England and Wales     | £38,690 | £41,604  |
-
-
 
 ### Leading practitioner pay
 
@@ -123,7 +117,6 @@ Annual salary ranges for headteachers are:
 | -------                       | -----   | -----     |
 | London                        | £43,356 | £125,098  |
 | Rest of England and Wales     | £47,195 | £117,197  |
-
 
 ### Other payments
 

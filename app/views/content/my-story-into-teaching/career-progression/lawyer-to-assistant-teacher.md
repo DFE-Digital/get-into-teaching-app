@@ -28,6 +28,7 @@ I was instantly hooked after gaining school experience. The inspirational teache
 $q-helen$
 
 ### 100% job satisfaction
+
 It is the only job where I can honestly say you get 100% job satisfaction. It is lovely to watch your pupils grow into young adults and when they receive their exam results, and realise it was all worthwhile, there is no greater pleasure. Being part of helping shape a young person's future is very humbling as well as fulfilling.
 
 Two years after I qualified as a teacher, I was head of a department and learning to learn coordinator. The following 2 years I continued to progress and now I'm the director of teaching school and assistant headteacher.

@@ -47,7 +47,6 @@ Teacher training advisers give you free, one-to-one help and support.
 
 They're all former teachers with lots of experience, so they know the process inside out.  
 
-
 $get-a-tta$
 
 ## What an adviser can do for you

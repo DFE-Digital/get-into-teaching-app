@@ -120,7 +120,6 @@ You will only have to make loan repayments once you're earning. Your repayments 
 
 $student-finance-calculator$
 
-
 ## Bursaries and scholarships
 
 You may be eligible for a teaching bursary or scholarship when training to teach.
@@ -153,7 +152,6 @@ below. You cannot receive both a teaching bursary and a scholarship.
 | **Languages** | £10,000  | *N/A*            |
 | **Biology**   | £7,000   | *N/A*            |
 
-
 ### Non-graduate bursaries
 
 #### If you're a final year undergraduate student
@@ -169,7 +167,6 @@ You may be eligible for a [Troops to Teachers](https://www.ucas.com/teaching-opt
 * training to teach secondary biology, physics, chemistry, computing, maths or modern foreign languages
 * doing an undergraduate degree leading to QTS in England
 
-
 $chat$
 
 ## If you're a parent or carer
@@ -180,7 +177,6 @@ $chat$
 * [Parents' Learning Allowance](https://www.gov.uk/parents-learning-allowance)
 * [Adult Dependants’ Grant](https://www.gov.uk/adult-dependants-grant)
 
-
 ## If you're disabled
 
 You may be able to [get support if you’re a student and you’re disabled, have a learning difficulty or health problem](https://www.gov.uk/disabled-students-allowance-dsa/how-to-claim).
@@ -188,7 +184,6 @@ You may be able to [get support if you’re a student and you’re disabled, hav
 [If you do paid training you may also be eligible for support](https://www.gov.uk/access-to-work).
 
 [Learn more about training to teach if you're disabled](/get-support-training-to-teach-if-you-are-disabled).
-
 
 ## If you come from outside England
 
