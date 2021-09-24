@@ -9,7 +9,7 @@ right_column:
   ctas:
     - title: Already a teacher?
       text: |
-        If you're already a teacher from outside the UK, come to England to teach. 
+        If you're already a teacher from outside the UK, come to England to teach.
       link_text: "Come to England to teach"
       link_target: "/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk"
       icon: "icon-person"
@@ -63,9 +63,9 @@ keywords:
 
 
 
-Teacher training in England is practical, hands-on and supportive. You’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. You’ll leave with qualified teacher status (QTS), a professional qualification valued globally. 
+Teacher training in England is practical, hands-on and supportive. You’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. You’ll leave with qualified teacher status (QTS), a professional qualification valued globally.
 
-You can apply to train to teach in England from any country in the world. 
+You can apply to train to teach in England from any country in the world.
 
 You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
@@ -88,7 +88,7 @@ You will need the equivalent of a GCSE (grade 4) in English and maths.
 To teach children aged 3 to 11, you also need the equivalent of a GCSE (grade 4) in a science subject.
 
 #### We can help if you have international qualifications
- 
+
 If your qualifications come from a non-UK institution, your teacher training provider may want to see a ‘[statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx)’ showing their equivalence to UK qualifications.
 
 Call us on [0800 389 2500](tel://08003892500) for:
@@ -111,15 +111,15 @@ Fees are usually higher for international trainees but you may be able to [get f
 
 ### 4. Choose a training provider and get an offer to train
 
-Contact your [Get into teaching adviser](/tta-service) for guidance on the different types of courses available. You can choose between a fee-paying course, or one which pays a salary. You can also train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years).  
+Contact your [Get into teaching adviser](/tta-service) for guidance on the different types of courses available. You can choose between a fee-paying course, or one which pays a salary. You can also train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years).
 
 [Learn more about ways to train to teach in England.](/ways-to-train)
 
-[Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lets you search for teacher training courses in England by location, teaching subject and age group. You can also search for courses which pay a salary, and courses which can sponsor a visa.  
+[Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lets you search for teacher training courses in England by location, teaching subject and age group. You can also search for courses which pay a salary, and courses which can sponsor a visa.
 
 Contact providers before you apply to get their advice about eligibility and the application process.
 
-You will be able to apply for a teacher training place without visiting the UK. Some providers also conduct interviews using remote technology – check with your provider when you apply. 
+You will be able to apply for a teacher training place without visiting the UK. Some providers also conduct interviews using remote technology – check with your provider when you apply.
 
 #### Your suitability for teaching
 
@@ -135,7 +135,7 @@ You usually need a confirmed offer on a course to apply for a visa.
 
 ### Next steps
 
- Ready to apply for a teacher training place? 
+ Ready to apply for a teacher training place?
 
 <p class="call-to-action__action">
   <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find a postgraduate teacher training <span>course</span></a>
@@ -148,7 +148,7 @@ You usually need a confirmed offer on a course to apply for a visa.
 #### Train to teach outside the UK
 
 [Apply for qualified teacher status (QTS) if you teach outside the UK](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk)
- explains other routes to QTS for teachers and those with teaching experience outside the UK. 
+ explains other routes to QTS for teachers and those with teaching experience outside the UK.
 
 
 
