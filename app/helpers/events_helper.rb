@@ -11,7 +11,7 @@ module EventsHelper
     if event.start_at.to_date == event.end_at.to_date
       safe_html_format(
         sprintf(
-          "%{startdate} #{stacked ? '<br />' : 'at'} %{starttime} - %{endtime}",
+          "%{startdate} #{stacked ? '<br>' : 'at'} %{starttime} - %{endtime}",
           startdate: event.start_at.to_date.to_formatted_s(:long),
           starttime: event.start_at.to_formatted_s(:time),
           endtime: event.end_at.to_formatted_s(:time),

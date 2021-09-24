@@ -113,7 +113,7 @@ Fees are usually around £9,250 but you can:
 * apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)  
 
 <div class="training-attributes">
-  <h4>School direct<br/>(fee-funded)</h4>
+  <h4>School direct<br>(fee-funded)</h4>
   <div class="badges">
     <div class="badge pink">
       <div class="badge-text">
@@ -152,7 +152,7 @@ Courses typically take one year but you may be able to study part-time.
 
 <dl>
   <div class="training-option">
-    <dt>School direct<br/>(salaried)</dt>
+    <dt>School direct<br>(salaried)</dt>
     <dd class="badges">
       <div class="badge purple">
         <div class="badge-text">
