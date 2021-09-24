@@ -4,7 +4,7 @@
 
     <div class="call-to-action__text">
       <div class="call-to-action__form">
-        <%= form_with(model: form, url: path, method: :get, local: true, html: { data: { "controller": "funding-widget" ,"funding-widget-target": 'form'}}) do |f| %>
+        <%= form_with(model: form, url: path, method: :get, local: true, html: { data: { "controller": "funding-widget", "funding-widget-target": 'form'}}) do |f| %>
           <div class="field">
             <%= tag.div(class: input_field_classes(:subject)) do %>
               <%= f.label :subject, 'Choose the subject you want to teach' %>
