@@ -107,9 +107,9 @@ provider_groups:
       email: applications@ntu.ac.uk
     - header: The Grand Union Training Partnership
       link: https://www.gutp.co.uk/
-      name: Tracey Oakley
+      name: Kate Martin
       telephone: 01327 350284 ext. 251
-      email: gutp@sponne.org.uk
+      email: gutprecruitment@sponne.org.uk
     - header: University of Derby
       link: https://www.derby.ac.uk/
       name: Aneesa Akhtar
@@ -299,6 +299,11 @@ provider_groups:
       name: Laura Whitty
       telephone: '01280 827 377'
       email: lwhitty@royallatin.org
+    - header: The Grand Union Training Partnership
+      link: https://www.gutp.co.uk/
+      name: Kate Martin
+      telephone: 01327 350284 ext. 251
+      email: gutprecruitment@sponne.org.uk
     - header: The Tommy Flowers SCITT
       link: https://tommyflowersscitt.co.uk/assessment-only/
       name: Catherine Brown (senior administrator)
