@@ -68,11 +68,6 @@
       h2 {
         @include font-size(large);
         @include reset;
-
-        a {
-          text-decoration: none;
-          color: $black;
-        }
       }
 
       header {
