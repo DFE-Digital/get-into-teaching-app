@@ -1,0 +1,47 @@
+---
+EnableDefaultLinters: true
+linters:
+  ErbSafety:
+    enabled: true
+    better_html_config: .better-html.yml
+  HardCodedString:
+    enabled: false
+  ClosingErbTagIndent:
+    enabled: false
+  Naming/FileName:
+    enabled: false
+  Rubocop:
+    enabled: true
+    rubocop_config:
+      inherit_from:
+        - .rubocop.yml
+      Layout/InitialIndentation:
+        Enabled: false
+      Layout/TrailingEmptyLines:
+        Enabled: false
+      Layout/FirstArgumentIndentation:
+        Enabled: false
+      Layout/ArgumentAlignment:
+        Enabled: false
+      Style/StringLiterals:
+        Enabled: false
+      Style/TrailingCommaInArguments:
+        Enabled: false
+      Lint/UselessAssignment: # This one gives false-positives
+        Enabled: false
+      Style/TrailingCommaInArrayLiteral:
+        Enabled: false
+      Layout/LeadingEmptyLines:
+        Enabled: false
+      Layout/TrailingWhitespace:
+        Enabled: false
+      Layout/HashAlignment:
+        Enabled: false
+      Layout/MultilineMethodCallBraceLayout:
+        Enabled: false
+      Layout/SpaceInsideHashLiteralBraces:
+        Enabled: false
+      Layout/SpaceInsideParens:
+        Enabled: false
+      Naming/FileName:
+        Enabled: false

@@ -101,6 +101,9 @@ group :development, :test do
   gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false
   gem "simplecov"
+
+  # Linting
+  gem "erb_lint", require: false
 end
 
 group :development do
@@ -111,9 +114,6 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "spring"
   gem "spring-watcher-listen", "~> 2.0.0"
-
-  # Linting
-  gem "erb_lint", require: false
 end
 
 group :test do
