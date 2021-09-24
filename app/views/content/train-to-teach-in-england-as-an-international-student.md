@@ -111,9 +111,9 @@ Fees are usually higher for international trainees but you may be able to [get f
 
 ### 4. Choose a training provider and get an offer to train
 
-Contact your [Get into teaching adviser](https://adviser-getintoteaching.education.gov.uk/) for guidance on the different types of courses available. You can choose between a fee-paying course, or one which pays a salary. You can also train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years).  
+Contact your [Get into teaching adviser](/tta-service) for guidance on the different types of courses available. You can choose between a fee-paying course, or one which pays a salary. You can also train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years).  
 
-[Learn more about ways to train to teach in England.](https://getintoteaching.education.gov.uk/ways-to-train)
+[Learn more about ways to train to teach in England.](/ways-to-train)
 
 [Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lets you search for teacher training courses in England by location, teaching subject and age group. You can also search for courses which pay a salary, and courses which can sponsor a visa.  
 
