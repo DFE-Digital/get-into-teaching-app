@@ -100,9 +100,7 @@ Call us on [0800 389 2500](tel://08003892500) for:
 
 You can get an adviser for one-to-one support. They can give you practical advice and guidance at every stage of your application.
 
-<p class="call-to-action__action">
-  <a href="/tta-service">Get an <span>adviser</span></a>
-</p>
+<a class="button" href="/tta-service">Get an adviser</a>
 
 ### 3. Learn about financial support
 
@@ -137,9 +135,7 @@ You usually need a confirmed offer on a course to apply for a visa.
 
  Ready to apply for a teacher training place?
 
-<p class="call-to-action__action">
-  <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find a postgraduate teacher training <span>course</span></a>
-</p>
+<a class="button" href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find a postgraduate teacher training course</a>
 
 #### Learn more about training to teach in England
 
