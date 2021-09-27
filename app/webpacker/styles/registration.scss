@@ -44,4 +44,15 @@
       color: $black;
     }
   }
+
+  .mailing-list__completed {
+    * + p {
+      margin-top: 2em;
+      max-width: 60ch;
+    }
+
+    .button {
+      margin-top: 1em;
+    }
+  }
 }
