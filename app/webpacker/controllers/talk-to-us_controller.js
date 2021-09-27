@@ -46,7 +46,46 @@ export default class extends Controller {
   }
 
   showZendeskChat() {
-    window.$zopim.livechat.window.show();
+    const originalText = this.setLoadingButtonText();
+    this.appendZendeskScript();
+    this.waitForZendesk(() => {
+      window.$zopim.livechat.window.show();
+
+      setTimeout(() => {
+        this.buttonTarget.querySelector('span').innerHTML = originalText;
+      }, 500); // Small delay to account for the chat box animating in.
+    });
+  }
+
+  setLoadingButtonText() {
+    const originalText = this.buttonTarget.querySelector('span').textContent;
+
+    if (!this.zendeskScriptLoaded) {
+      this.buttonTarget.querySelector('span').textContent = 'Starting chat...';
+    }
+
+    return originalText;
+  }
+
+  appendZendeskScript() {
+    if (this.zendeskScriptLoaded) {
+      return;
+    }
+
+    const script = document.createElement('script');
+    script.setAttribute('id', 'ze-snippet');
+    script.src =
+      'https://static.zdassets.com/ekr/snippet.js?key=34a8599c-cfec-4014-99bd-404a91839e37';
+    document.body.appendChild(script);
+  }
+
+  waitForZendesk(callback) {
+    const interval = setInterval(() => {
+      if (window.$zopim && window.$zopim.livechat) {
+        clearInterval(interval);
+        callback();
+      }
+    }, 100);
   }
 
   openKlick2ContactWindow() {
@@ -57,5 +96,9 @@ export default class extends Controller {
       'Get Into Teaching: Chat online',
       windowFeatures
     );
+  }
+
+  get zendeskScriptLoaded() {
+    return document.querySelector('#ze-snippet') !== null;
   }
 }

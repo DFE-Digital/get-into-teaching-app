@@ -89,13 +89,17 @@ module ApplicationHelper
   end
 
   def chat_link(text = "Chat online", classes: nil, fallback_text: "Chat to us", offline_text: "Chat available Monday to Friday between 8:30am and 5:30pm.")
+    # Text is wrapped in a <span> so it can be easily replaced
+    # without losing the > icon that gets appended by JS.
+    main_link = link_to("#",
+                        class: "#{classes} chat-button #{'with-fallback' if fallback_text.present?}",
+                        data: {
+                          action: "talk-to-us#startChat",
+                          "talk-to-us-target": "button",
+                        }) { tag.span(text) }
+
     elements = [
-      link_to(text, "#",
-              class: "#{classes} chat-button #{'with-fallback' if fallback_text.present?}",
-              data: {
-                action: "talk-to-us#startChat",
-                "talk-to-us-target": "button",
-              }),
+      main_link,
     ]
 
     elements << link_to(fallback_text, "#talk-to-us", class: "#{classes} chat-button-no-js") if fallback_text.present?
@@ -119,5 +123,9 @@ module ApplicationHelper
     html_content&.gsub \
       ' href="https://getintoteaching.education.gov.uk/how-we-use-your-information"',
       " href=\"#{cookies_path}\""
+  end
+
+  def privacy_page?(path)
+    ["/cookie_preference", "/cookies", "/privacy-policy"].include?(path)
   end
 end

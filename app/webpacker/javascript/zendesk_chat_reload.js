@@ -3,4 +3,5 @@
 // appear if you change page and try and open it.
 window.addEventListener('turbolinks:before-render', function () {
   window.zEACLoaded = undefined;
+  window.$zopim = undefined;
 });

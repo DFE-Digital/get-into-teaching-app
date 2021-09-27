@@ -32,7 +32,7 @@
           > div {
             flex: 1 0;
 
-            &:first-child {
+            &.live-chat {
               border-bottom: 1px solid $purple;
               padding-bottom: $indent-amount;
               margin-bottom: $indent-amount;
@@ -84,7 +84,7 @@
           > div {
             flex: initial;
 
-            &:first-child {
+            &.live-chat {
               border: 0;
               border-right: 1px solid $purple;
               padding: 0 $indent-amount 0 0;

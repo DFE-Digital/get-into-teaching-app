@@ -32,7 +32,6 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.1.0",
     "jest": "^27.0.6",
-    "mockdate": "^3.0.5",
     "prettier": "^2.3.2",
     "stylelint": "^13.13.1",
     "stylelint-config-gds": "^0.1.0",

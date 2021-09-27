@@ -215,6 +215,24 @@ describe ApplicationHelper do
     end
   end
 
+  describe "#privacy_page?" do
+    subject { helper.privacy_page?(path) }
+
+    ["/cookie_preference", "/cookies", "/privacy-policy"].each do |privacy_path|
+      context "when #{privacy_path}" do
+        let(:path) { privacy_path }
+
+        it { is_expected.to be(true) }
+      end
+    end
+
+    context "when not a privacy path" do
+      let(:path) { "/a-page" }
+
+      it { is_expected.to be(false) }
+    end
+  end
+
   describe "#chat_link" do
     subject { helper.chat_link(text, classes: extra_class, fallback_text: fallback_text, offline_text: offline_text) }
 
@@ -225,7 +243,7 @@ describe ApplicationHelper do
 
     it { is_expected.to have_css(%(span[data-controller="talk-to-us"])) }
     it { is_expected.to have_css(%(a[data-action="talk-to-us#startChat"])) }
-    it { is_expected.to have_css(%(a.chat-button.button.with-fallback)) }
+    it { is_expected.to have_css(%(a.chat-button.button.with-fallback span)) }
     it { is_expected.to have_link(fallback_text, href: "#talk-to-us", class: "button chat-button-no-js") }
     it { is_expected.to have_text(offline_text) }
     it { is_expected.to have_css(".chat-button-offline") }

@@ -69,4 +69,4 @@
   <%= tag.span(data: { "controller" => "lid", "lid-action" => "track", "lid-event" => lid_pixel_event }) %>
 <% end %>
 
-<%= render "sections/zendesk_chat" if Rails.application.config.x.zendesk_chat %>
+<%= render "sections/zendesk_chat_settings" if Rails.application.config.x.zendesk_chat %>
