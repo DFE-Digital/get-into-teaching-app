@@ -124,11 +124,24 @@ describe Wizard::Store do
   end
 
   describe "#purge!" do
-    before { instance.purge! }
     subject { instance.keys }
+
+    before { instance.purge! }
 
     it "will remove all keys" do
       is_expected.to have_attributes empty?: true
+    end
+  end
+
+  describe "#prune!" do
+    subject { instance.keys }
+    let(:leave) { "age" }
+
+    before { instance.prune!(leave: leave) }
+
+    it "will remove all keys that aren't marked as 'leave'" do
+      expect(instance.keys).to include(leave)
+      expect(instance.keys).not_to include(app_data.keys.excluding(leave))
     end
   end
 end

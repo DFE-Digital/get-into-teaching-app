@@ -46,7 +46,7 @@ describe MailingList::Wizard do
     end
 
     it { is_expected.to have_received(:valid?) }
-    it { expect(store[uuid]).to eql({}) }
+    it { expect(store[uuid]).to eql({ "first_name" => "Joe", "last_name" => "Joseph" }) }
 
     it "logs the request model (filtering sensitive attributes)" do
       filtered_json = { "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]" }.to_json

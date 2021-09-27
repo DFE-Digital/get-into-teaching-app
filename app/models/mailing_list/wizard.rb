@@ -20,7 +20,11 @@ module MailingList
         break unless result
 
         add_member_to_mailing_list
-        @store.purge!
+
+        # we're taking the last name too so if people restart the wizard
+        # both are filled rather than just their first name, which looks
+        # a bit odd
+        @store.prune!(leave: %w[first_name last_name])
       end
     end
 
