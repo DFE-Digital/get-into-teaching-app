@@ -3,8 +3,8 @@ title: Back to school as a trainee teacher
 date: "2021-09-28"
 author: Jane Wilkinson
 images:
-  Jacob:
-    path: "media/images/content/blog/Jacob.jpg"
+  jacob:
+    path: "media/images/content/blog/jacob.jpg"
     alt: "A photograph of Jacob in a field"
 description: |-
   This September, trainee teachers across the country began their courses. Jacob describes their last-minute application and their first few days as a trainee.
@@ -19,7 +19,7 @@ tags:
   - applications
 ---
 
-$Jacob$
+$jacob$
 
 Over the last few weeks, pupils across the country have been returning to the classroom. At universities and schools trainee teachers are also experiencing those first day nerves and feelings of excitement. 
 
