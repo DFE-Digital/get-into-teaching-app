@@ -194,7 +194,14 @@ jobs:
 
       - name: Lint Markdown
         run: |-
-          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec mdl app/views/**/*.md"
+          docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
+
+      - name: Keep Lint Markdown output
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: Rubocop_results
+          path: ${{ github.workspace }}/out/mdl-result.txt
 
       - name: Run Specs
         run: |-
