@@ -1,4 +1,4 @@
-<%= tag.div(class: %w[call-to-action call-to-action--simple].append(responsive_classes)) do %>
+<%= tag.div(class: %w[call-to-action call-to-action--simple] << responsive_classes) do %>
   <%= icon %>
 
   <div class="call-to-action__content">
@@ -8,7 +8,7 @@
 
     <% if text.present? %>
       <p class="call-to-action__text">
-        <%= text.html_safe %>
+        <%= helpers.safe_html_format(text) %>
       </p>
     <% end %>
 

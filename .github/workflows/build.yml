@@ -188,6 +188,10 @@ jobs:
           name: Rubocop_results
           path: ${{ github.workspace }}/out/rubocop-result.json
 
+      - name: Lint ERB Templates
+        run: |-
+          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec erblint --lint-all"
+
       - name: Run Specs
         run: |-
           docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \

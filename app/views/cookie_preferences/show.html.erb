@@ -71,13 +71,13 @@
         </div>
         <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
           <div class="govuk-radios__item">
-            <input id="cookies-non-functional-yes" class="govuk-radios__input" type="radio" value="1" name="cookies-non-functional" data-action="cookie-preferences#toggle" />
+            <input id="cookies-non-functional-yes" class="govuk-radios__input" type="radio" value="1" name="cookies-non-functional" data-action="cookie-preferences#toggle">
             <label for="cookies-non-functional-yes" class="govuk-label govuk-radios__label">
               Yes
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input id="cookies-non-functional-no" class="govuk-radios__input" type="radio" value="0" name="cookies-non-functional" data-action="cookie-preferences#toggle" />
+            <input id="cookies-non-functional-no" class="govuk-radios__input" type="radio" value="0" name="cookies-non-functional" data-action="cookie-preferences#toggle">
             <label for="cookies-non-functional-no" class="govuk-label govuk-radios__label">
               No
             </label>
@@ -85,7 +85,7 @@
         </div>
       </fieldset>
 
-      <hr />
+      <hr>
 
       <fieldset class="govuk-fieldset"
         aria-describedby="cookies-marketing-hint"
@@ -113,13 +113,13 @@
         </div>
         <div class="govuk-radios govuk-radios--inline" data-module="govuk-radios">
           <div class="govuk-radios__item">
-            <input id="cookies-marketing-yes" class="govuk-radios__input" type="radio" value="1" name="cookies-marketing" data-action="cookie-preferences#toggle" />
+            <input id="cookies-marketing-yes" class="govuk-radios__input" type="radio" value="1" name="cookies-marketing" data-action="cookie-preferences#toggle">
             <label for="cookies-marketing-yes" class="govuk-label govuk-radios__label">
               Yes
             </label>
           </div>
           <div class="govuk-radios__item">
-            <input id="cookies-marketing-no" class="govuk-radios__input" type="radio" value="0" name="cookies-marketing" data-action="cookie-preferences#toggle" />
+            <input id="cookies-marketing-no" class="govuk-radios__input" type="radio" value="0" name="cookies-marketing" data-action="cookie-preferences#toggle">
             <label for="cookies-marketing-no" class="govuk-label govuk-radios__label">
               No
             </label>
@@ -127,7 +127,7 @@
         </div>
       </fieldset>
 
-      <hr />
+      <hr>
 
       <fieldset class="govuk-fieldset"
         aria-describedby="cookies-functional-hint"
@@ -156,8 +156,6 @@
           </ul>
 
           <p>They always need to be on.</p>
-
-
         </div>
       </fieldset>
 
@@ -173,7 +171,7 @@
           Your cookie preferences have been saved
         </span>
 
-        <br />
+        <br>
 
         <% if internal_referer.present? && internal_referer != root_path %>
           <%= link_to "Back to page", internal_referer, class: "secondary-button" %>

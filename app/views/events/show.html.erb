@@ -38,7 +38,7 @@
   <p><%= link_to("Open in Google Maps", "https://maps.google.com/?q=#{event_address(@event)}", target: "blank") %></p>
   <% if @event.provider_website_url %>
     <p><%= link_to("Visit venue website", @event.provider_website_url, { target: "blank" }) %><i class="icon"></i></p>
-  <%end %>
+  <% end %>
   <p><%= event_location_map(@event) %></p>
   <% if @event.building.image_url %>
     <%= image_tag(@event.building.image_url, alt: "A photograph of the venue", class: "event-info__venue_img") %>
@@ -48,16 +48,16 @@
   <% if event_has_provider_info?(@event) %>
     <h2>Provider information</h2>
     <% if @event.provider_website_url %>
-      <p><strong>Event website</strong><br /><%= link_to(@event.provider_website_url, @event.provider_website_url, { target: "blank" }) %><i class="icon"></i></p>
+      <p><strong>Event website</strong><br><%= link_to(@event.provider_website_url, @event.provider_website_url, { target: "blank" }) %><em class="icon"></em></p>
     <% end %>
     <% if @event.provider_target_audience %>
-      <p><strong>Target audience</strong><br /><%= @event.provider_target_audience %></p>
+      <p><strong>Target audience</strong><br><%= @event.provider_target_audience %></p>
     <% end %>
     <% if @event.provider_organiser %>
-      <p><strong>Organiser</strong><br /><%= @event.provider_organiser %></p>
+      <p><strong>Organiser</strong><br><%= @event.provider_organiser %></p>
     <% end %>
     <% if @event.provider_contact_email %>
-      <p><strong>Contact email</strong><br /><%= mail_to(@event.provider_contact_email) %></p>
+      <p><strong>Contact email</strong><br><%= mail_to(@event.provider_contact_email) %></p>
     <% end %>
   <% end %>
 
@@ -66,7 +66,7 @@
   <div class="responsive-video">
     <iframe title="An event preview" class="responsive-video__iframe" class="lazyload" data-src="<%= embed_event_video_url(@event.video_url) %>"></iframe>
   </div>
-  <br />
+  <br>
   <% end %>
 
   <% if event_status_open?(@event) || event_status_pending?(@event) %>

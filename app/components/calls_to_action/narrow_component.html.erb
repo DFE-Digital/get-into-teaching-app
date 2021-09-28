@@ -1,4 +1,4 @@
-<%= tag.div(class: %w[call-to-action call-to-action--narrow].append(responsive_classes)) do %>
+<%= tag.div(class: %w[call-to-action call-to-action--narrow] << responsive_classes) do %>
   <header>
     <%= icon %>
     <% if title.present? %>

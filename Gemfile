@@ -76,6 +76,9 @@ gem "victor"
 # Ignore cloudfront IPs when getting customer IP address
 gem "actionpack-cloudfront", ">= 1.1.0"
 
+# HTML-aware ERB parsing
+gem "better_html"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: %i[mri mingw x64_mingw]
@@ -98,6 +101,9 @@ group :development, :test do
   gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false
   gem "simplecov"
+
+  # Linting
+  gem "erb_lint", require: false
 end
 
 group :development do

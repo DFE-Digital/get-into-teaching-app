@@ -1,8 +1,8 @@
 <!-- Start VWO Async SmartCode -->
-<script type="text/javascript">
-<%- if ENV["VWO_ID"].present? -%>
+<% if ENV["VWO_ID"].present? %>
+<script>
   window._vwo_code = window._vwo_code || (function(){
-  var account_id="<%= ENV["VWO_ID"] %>",
+  var account_id=<%= raw ENV["VWO_ID"].to_json %>,
   settings_tolerance=2000,
   library_tolerance=2500,
   use_existing_jquery=false,
@@ -70,8 +70,10 @@
       document.dispatchEvent(new CustomEvent("vwo:completed")) ;
     }
   }], 5000 /*MAXIMUM TIME IN SECONDS IN WHICH GA CODE WILL EXECUTE ANYWAY*/ );
-<%- else -%>
-  window.willRedirectionOccurByVWO = false ;
-<%- end -%>
 </script>
+<% else %>
+<script>
+  window.willRedirectionOccurByVWO = false;
+</script>
+<% end %>
 <!-- End VWO Async SmartCode -->
