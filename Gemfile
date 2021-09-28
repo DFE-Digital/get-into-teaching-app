@@ -77,7 +77,7 @@ gem "victor"
 gem "actionpack-cloudfront", ">= 1.1.0"
 
 # HTML-aware ERB parsing
-gem "better_html"
+gem "better_html", ">= 1.0.16"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -97,13 +97,13 @@ group :development, :test do
   gem "rspec-rails", "~> 5.0.2"
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.35", ">= 3.35.3"
-  gem "factory_bot_rails", ">= 6.1.0"
+  gem "factory_bot_rails", ">= 6.2.0"
   gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false
   gem "simplecov"
 
   # Linting
-  gem "erb_lint", require: false
+  gem "erb_lint", ">= 0.1.1", require: false
 end
 
 group :development do
