@@ -1,11 +1,11 @@
 ---
   title: "Funding your training"
   description: |-
-    Search the bursaries, scholarships and loans available to fund your teacher training. See funding available for specific subjects and for training through PGCE or 
+    Search the bursaries, scholarships and loans available to fund your teacher training. See funding available for specific subjects and for training through PGCE or
     school direct.
   date: "2021-03-11"
   image: "media/images/content/hero-images/0013.jpg"
-  subtitle: Get information and support to help you become a teacher. 
+  subtitle: Get information and support to help you become a teacher.
   subtitle_button: "Register for updates"
   subtitle_link: "/mailinglist/signup/name"
   backlink: "../"
@@ -105,7 +105,6 @@
     - Teacher training courses
 
 ---
-
 
 ## Tuition fee and maintenance loans
 
