@@ -1,6 +1,6 @@
 module StructuredDataHelper
-  ONLINE_EVENT = "https://schema.org/OfflineEventAttendanceMode".freeze
-  OFFLINE_EVENT = "https://schema.org/OnlineEventAttendanceMode".freeze
+  ONLINE_EVENT = "https://schema.org/OnlineEventAttendanceMode".freeze
+  OFFLINE_EVENT = "https://schema.org/OfflineEventAttendanceMode".freeze
   IN_STOCK = "https://schema.org/InStock".freeze
   SOLD_OUT = "https://schema.org/SoldOut".freeze
   EVENT_SCHEDULED = "https://schema.org/EventScheduled".freeze
