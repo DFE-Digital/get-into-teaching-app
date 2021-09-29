@@ -7,7 +7,7 @@
     "accessible-autocomplete": "^2.0.3",
     "dayjs": "^1.10.7",
     "flatpickr": "^4.6.9",
-    "govuk-frontend": "^3.13.0",
+    "govuk-frontend": "^3.13.1",
     "is-touch-device": "^1.0.1",
     "js-cookie": "^3.0.0",
     "lazysizes": "^5.3.2",
