@@ -27,6 +27,7 @@ Your drive to become a teacher needs to inform your choice of provider. If you h
 You can find the available postgraduate teacher training courses in your area via the [Department for Education’s Find service](https://www.gov.uk/find-postgraduate-teacher-training-courses). Consider selecting 4-5 that you feel might be suitable for you, and then make contact with them to check that they are. Aim to shortlist these down to 3. 
 
 Alongside online research, think about calling or emailing these providers, or try to arrange a visit. Your questions may include:
+
 * How do you arrange the academic work alongside the practical teaching practice?
 * Who will my mentor be, and how often will I be able to meet them?
 * What schools will I have access to for teaching practice? 
