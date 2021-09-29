@@ -70,22 +70,7 @@
   </div>
 
 <% else %>
-
-  <section class="text-content mailing-list__completed">
-    <%= tag.h2(%(#{mailing_list_session["first_name"]}, you're signed up), class: 'green') %>
-
-    <p>
-      We'll send your first email shortly. From teacher stories to practical
-      information, we've got all the info you need to become a teacher.
-    </p>
-
-    <p>
-      You can unsubscribe at any time.
-    </p>
-
-    <%= link_to "Continue your journey", "/welcome", class: "button" %>
-  </section>
-
+  <%= render(Registration::MailingListSignupConfirmationComponent.new(mailing_list_session)) %>
 <% end %>
 
 <span data-controller="pinterest"
