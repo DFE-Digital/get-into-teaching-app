@@ -27,8 +27,8 @@ describe Internal::Event do
     end
 
     describe "#readable_id" do
-      it { is_expected.to allow_value("test").for :readable_id }
-      it { is_expected.not_to allow_values("", nil).for :readable_id }
+      it { is_expected.to allow_value("test_event-url").for :readable_id }
+      it { is_expected.not_to allow_values("test@event", "test?event", "test:event", "test(event)", nil).for :readable_id }
       it { is_expected.to validate_length_of(:readable_id).is_at_most(300) }
     end
 
