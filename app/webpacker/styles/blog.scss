@@ -132,7 +132,6 @@
 
     p {
       position: relative;
-      @include font-size(medium);
 
       // some extra rules to make the quotes a bit nicer. this 'smart' css
       // unfortunately has the side affect of requiring attribution for
