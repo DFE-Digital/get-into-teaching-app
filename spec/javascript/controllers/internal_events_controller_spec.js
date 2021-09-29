@@ -69,14 +69,28 @@ describe('InternalEventsController', () => {
 
         it('removes extra hyphens', () => {
           document.getElementById('internal-event-name-field').value =
-            'event - name - with - hyphens';
+            'event - name - with-hyphens';
 
           document.getElementById('generate').click();
 
           const partialUrlFieldValue = document.getElementById(
             'internal-event-readable-id-field'
           ).value;
-          expect(partialUrlFieldValue).toBe('210515-event-name-with-hyphens');
+          expect(partialUrlFieldValue).toBe('210515-event-name-withhyphens');
+        });
+
+        it('removes characters that are not alphanumeric or whitespace', () => {
+          document.getElementById('internal-event-name-field').value =
+            'event?name:with (extra@characters)_';
+
+          document.getElementById('generate').click();
+
+          const partialUrlFieldValue = document.getElementById(
+            'internal-event-readable-id-field'
+          ).value;
+          expect(partialUrlFieldValue).toBe(
+            '210515-eventnamewith-extracharacters'
+          );
         });
       });
 

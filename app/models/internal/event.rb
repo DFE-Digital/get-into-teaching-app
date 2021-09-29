@@ -29,7 +29,7 @@ module Internal
     attribute :venue_type, default: VENUE_TYPES[:none]
 
     validates :name, presence: true, allow_blank: false, length: { maximum: 300 }
-    validates :readable_id, presence: true, allow_blank: false, length: { maximum: 300 }
+    validates :readable_id, presence: true, allow_blank: false, length: { maximum: 300 }, format: { with: /\A[\w-]+\Z/ }
     validates :summary, presence: true, allow_blank: false, length: { maximum: 1000 }
     validates :description, presence: true, allow_blank: false, length: { maximum: 2000 }
     validates :is_online, inclusion: { in: [true, false] }, if: -> { provider_event? }

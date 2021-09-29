@@ -40,6 +40,11 @@ export default class extends Controller {
   }
 
   formatName(name) {
-    return name.trim().toLowerCase().replace(/-/g, '').split(/\s+/).join('-');
+    return name
+      .trim()
+      .toLowerCase()
+      .replace(/[^A-Za-z0-9\s]/g, '')
+      .split(/\s+/)
+      .join('-');
   }
 }
