@@ -121,6 +121,8 @@ GEM
       rack-test (>= 0.6.3)
       regexp_parser (>= 1.5, < 3.0)
       xpath (~> 3.2)
+    chef-utils (17.5.22)
+      concurrent-ruby
     childprocess (3.0.0)
     coderay (1.1.3)
     concurrent-ruby (1.1.9)
@@ -239,6 +241,8 @@ GEM
     kaminari-core (1.2.1)
     kramdown (2.3.1)
       rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     listen (3.7.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -252,11 +256,22 @@ GEM
       mini_mime (>= 0.1.1)
     marcel (1.0.1)
     matrix (0.4.2)
+    mdl (0.11.0)
+      kramdown (~> 2.3)
+      kramdown-parser-gfm (~> 1.1)
+      mixlib-cli (~> 2.1, >= 2.1.1)
+      mixlib-config (>= 2.2.1, < 4)
+      mixlib-shellout
     memoist (0.16.2)
     method_source (1.0.0)
     mini_mime (1.1.1)
     mini_portile2 (2.6.1)
     minitest (5.14.4)
+    mixlib-cli (2.1.8)
+    mixlib-config (3.0.9)
+      tomlrb
+    mixlib-shellout (3.2.5)
+      chef-utils
     msgpack (1.4.2)
     multi_json (1.15.0)
     multipart-post (2.1.1)
@@ -432,6 +447,7 @@ GEM
     stoplight (2.2.1)
     text (1.3.1)
     thor (1.1.0)
+    tomlrb (2.0.1)
     trailblazer-option (0.1.1)
     typhoeus (1.4.0)
       ethon (>= 0.9.0)
@@ -499,6 +515,7 @@ DEPENDENCIES
   loaf (>= 0.10.0)
   logger (>= 1.4.3)
   matrix (>= 0.4.2)
+  mdl
   observer (>= 0.1.0)
   parallel_split_test
   prometheus-client

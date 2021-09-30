@@ -65,7 +65,7 @@ As an early years teacher you'll work with young children up to the age of 5. Yo
 
 The early years are critical in children's development. You’ll use your knowledge and skills to help young children enjoy high standards of teaching and open their minds to new ideas every day.
 
-###How to become an early years teacher
+### How to become an early years teacher
 
 You’ll need to do 'early years initial teacher training' (EYITT) to achieve 'early years teacher status' (EYTS).
 
@@ -96,9 +96,9 @@ $EY-graduate$
 
 Bursaries are available, including:
 
- * £5,000 if you have a first class degree
- * £4,000 if you have a 2:1 degree
- * £2,000 if you have a 2:2 degree
+* £5,000 if you have a first class degree
+* £4,000 if you have a 2:1 degree
+* £2,000 if you have a 2:2 degree
 
 $EY-graduate-employment$
 
