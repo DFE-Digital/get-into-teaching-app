@@ -46,6 +46,13 @@ module Wizard
       @crm_data.clear
     end
 
+    # purges the CRM data but leaves a subset of app data
+    # that might be used on or after the completion page
+    def prune!(leave: [])
+      @app_data.slice!(*Array.wrap(leave))
+      @crm_data.clear
+    end
+
   private
 
     def store(source)
