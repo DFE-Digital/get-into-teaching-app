@@ -187,7 +187,6 @@ describe EventsController, type: :request do
           let(:event) { build(:event_api, :closed, web_feed_id: "123", readable_id: event_readable_id) }
 
           it { is_expected.not_to match(/How to attend/) }
-          it { is_expected.to match(/This event is now closed/) }
         end
 
         context "when the event has a scribble_id" do
