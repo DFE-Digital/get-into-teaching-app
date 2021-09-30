@@ -43,6 +43,9 @@ Rails/UnknownEnv:
     - production
     - pagespeed
 
+Rails/HelperInstanceVariable:
+  Enabled: false
+
 RSpec/AnyInstance:
   Enabled: false
 
@@ -56,6 +59,9 @@ Style/EmptyMethod:
   Enabled: false
 
 Style/ClassVars:
+  Enabled: false
+
+Style/EmptyCaseCondition:
   Enabled: false
 
 RSpec/InstanceVariable:
