@@ -6,7 +6,7 @@ export default class extends Controller {
     const cookiePrefs = new CookiePreferences();
     const cookiesAccepted = cookiePrefs.allowed(this.cookieCategory);
 
-    if (!this.waitForVwo && cookiesAccepted) {
+    if (cookiesAccepted) {
       this.triggerEvent();
     }
 
@@ -17,11 +17,6 @@ export default class extends Controller {
         this.cookiesAcceptedHandler
       );
     }
-
-    if (this.waitForVwo) {
-      this.vwoCompletedHandler = this.vwoCompleted.bind(this);
-      document.addEventListener('vwo:completed', this.vwoCompletedHandler);
-    }
   }
 
   disconnect() {
@@ -30,10 +25,6 @@ export default class extends Controller {
         'cookies:accepted',
         this.cookiesAcceptedHandler
       );
-    }
-
-    if (document && this.vwoCompletedHandler) {
-      document.removeEventListener('vwo:completed', this.vwoCompletedHandler);
     }
   }
 
@@ -46,9 +37,6 @@ export default class extends Controller {
   }
 
   triggerEvent() {
-    // No-op as being redirected away
-    if (window.willRedirectionOccurByVWO) return;
-
     if (document.documentElement.hasAttribute('data-turbolinks-preview'))
       return;
 
@@ -60,16 +48,9 @@ export default class extends Controller {
   }
 
   cookiesAcceptedChecker(event) {
-    if (
-      event.detail?.cookies?.includes(this.cookieCategory) &&
-      !this.waitForVwo
-    )
+    if (event.detail?.cookies?.includes(this.cookieCategory)) {
       this.triggerEvent();
-  }
-
-  vwoCompleted(event) {
-    const cookiePrefs = new CookiePreferences();
-    if (cookiePrefs.allowed(this.cookieCategory)) this.triggerEvent();
+    }
   }
 
   getServiceId(attribute) {
@@ -103,17 +84,5 @@ export default class extends Controller {
     else if (this.eventName)
       this.serviceFunction(this.serviceAction, this.eventName);
     else this.serviceFunction(this.serviceAction);
-  }
-
-  get waitForVwo() {
-    return this.isVwoEnabled && !this.hasVwoCompleted;
-  }
-
-  get isVwoEnabled() {
-    return typeof window._vwo_code !== 'undefined';
-  }
-
-  get hasVwoCompleted() {
-    return typeof window.willRedirectionOccurByVWO !== 'undefined';
   }
 }

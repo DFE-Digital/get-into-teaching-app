@@ -33,7 +33,6 @@ Some examples of these cookies include:
 | ---------------------------- | -------------------------------------------------- | ------------------------- |
 | `_dfe_session`               | temporary session data                             | End of browser session    |
 | `git-cookie-preferences-v1`  | Record acceptance of beta site cookie policy       | 90 days                   |
-| `_vwo_uuid_v2`               | Redirection from original site to new Beta site    | 1 year                    |
 | `GiTBetaFeedbackPrompt`      | Record response to our request for feedback        | End of browser session    |
 | `__zlcmid`                   | Store unique ID for chat widget authentication     | 365 days                  |
 

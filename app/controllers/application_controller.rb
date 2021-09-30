@@ -16,7 +16,6 @@ class ApplicationController < ActionController::Base
   before_action :set_api_client_request_id
   before_action :record_utm_codes
   before_action :add_home_breadcrumb
-  before_action :toggle_vwo
 
   after_action :process_images
   after_action :process_links
@@ -29,14 +28,6 @@ private
 
   def authenticate?
     BasicAuth.env_requires_auth?
-  end
-
-  def toggle_vwo
-    @render_vwo = vwo_config[:paths]&.include?(request.path)
-  end
-
-  def vwo_config
-    @@vwo_config ||= YAML.safe_load(File.read(Rails.root.join("config/vwo.yml"))).deep_symbolize_keys
   end
 
   def process_images

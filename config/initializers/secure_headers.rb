@@ -39,7 +39,6 @@ SecureHeaders::Configuration.default do |config|
   scribble  = %w[embed.scribblelive.com]
   snapchat  = %w[*.snapchat.com sc-static.net]
   twitter   = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
-  vwo       = %w[*.visualwebsiteoptimizer.com dev.visualwebsiteoptimizer.com]
   youtube   = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
 
   quoted_unsafe_inline = ["'unsafe-inline'"]
@@ -55,17 +54,17 @@ SecureHeaders::Configuration.default do |config|
     default_src: %w['none'],
     base_uri: ["'self'"],
     child_src: ["'self'"].concat(youtube, pinterest, snapchat, hotjar),
-    connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, vwo, facebook, tta_service_hosts, zendesk),
+    connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk),
     font_src: ["'self'"].concat(govuk, data, %w[fonts.gstatic.com]),
-    form_action: ["'self'"].concat(snapchat, facebook, vwo, govuk),
-    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, vwo, google_analytics, data),
+    form_action: ["'self'"].concat(snapchat, facebook, govuk),
+    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data),
     frame_ancestors: ["'self'"],
-    img_src: ["'self'"].concat(govuk, pinterest, facebook, vwo, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, %w[cx.atdmt.com linkbam.uk]),
+    img_src: ["'self'"].concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, %w[cx.atdmt.com linkbam.uk]),
     manifest_src: ["'self'"],
     media_src: ["'self'"].concat(zendesk),
-    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, vwo, youtube, zendesk),
+    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, youtube, zendesk),
     style_src: ["'self'"].concat(quoted_unsafe_inline, govuk, google_apis, google_supported),
-    worker_src: ["'self'"].concat(vwo, blob),
+    worker_src: ["'self'"].concat(blob),
   }
 
   if Rails.env.development?
