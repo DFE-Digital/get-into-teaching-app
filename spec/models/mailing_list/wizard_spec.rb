@@ -52,6 +52,28 @@ describe MailingList::Wizard do
       filtered_json = { "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]" }.to_json
       expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_json}")
     end
+
+    describe "pruning" do
+      let(:fake_store) { instance_double(Wizard::Store, prune!: true) }
+
+      before do
+        allow(subject).to receive(:add_member_to_mailing_list).and_return(true)
+        allow(subject).to receive(:store).and_return(fake_store)
+        subject.complete!
+      end
+
+      it "omits the fields we want to keep for the welcome guide from the pruning" do
+        expect(fake_store).to have_received(:prune!).with(
+          leave: %w[
+            first_name
+            last_name
+            preferred_teaching_subject_id
+            consideration_journey_stage_id
+            degree_status_id
+          ],
+        )
+      end
+    end
   end
 
   describe "#exchange_access_token" do
