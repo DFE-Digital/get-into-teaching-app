@@ -106,7 +106,7 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.8.1)
+    bootsnap (1.9.1)
       msgpack (~> 1.0)
     brakeman (5.1.1)
     builder (3.2.4)
@@ -400,21 +400,21 @@ GEM
     ruby-progressbar (1.11.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
-    secure_headers (6.3.2)
+    secure_headers (6.3.3)
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
     semantic_logger (4.8.2)
       concurrent-ruby (~> 1.0)
     semantic_range (3.0.0)
-    sentry-rails (4.7.1)
+    sentry-rails (4.7.3)
       railties (>= 5.0)
       sentry-ruby-core (~> 4.7.0)
-    sentry-ruby (4.7.1)
+    sentry-ruby (4.7.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       faraday (>= 1.0)
-      sentry-ruby-core (= 4.7.1)
-    sentry-ruby-core (4.7.1)
+      sentry-ruby-core (= 4.7.3)
+    sentry-ruby-core (4.7.3)
       concurrent-ruby
       faraday
     shoulda-matchers (5.0.0)
@@ -468,7 +468,7 @@ GEM
       addressable (>= 2.8.0)
       crack (>= 0.3.2)
       hashdiff (>= 0.4.0, < 2.0.0)
-    webpacker (5.4.2)
+    webpacker (5.4.3)
       activesupport (>= 5.2)
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
@@ -490,7 +490,7 @@ DEPENDENCIES
   addressable (~> 2.8.0)
   amazing_print
   better_html
-  bootsnap (>= 1.8.1)
+  bootsnap (>= 1.9.1)
   brakeman (~> 5.1.1)
   byebug
   canonical-rails (>= 0.2.12)
@@ -533,8 +533,8 @@ DEPENDENCIES
   rubocop-govuk (~> 3.14.0)
   secure_headers
   selenium-webdriver (~> 3.142)
-  sentry-rails (>= 4.7.1)
-  sentry-ruby (~> 4.7.1)
+  sentry-rails (>= 4.7.3)
+  sentry-ruby (~> 4.7.3)
   shoulda-matchers
   simplecov
   skylight (~> 5.1.1)
@@ -546,7 +546,7 @@ DEPENDENCIES
   view_component (~> 2.39.0)
   web-console (>= 4.1.0)
   webmock (>= 3.14.0)
-  webpacker (>= 5.4.2)
+  webpacker (>= 5.4.3)
 
 RUBY VERSION
    ruby 2.7.4p191
