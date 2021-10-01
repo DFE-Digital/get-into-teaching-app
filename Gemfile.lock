@@ -490,7 +490,7 @@ DEPENDENCIES
   addressable (~> 2.8.0)
   amazing_print
   better_html
-  bootsnap (>= 1.8.1)
+  bootsnap (>= 1.9.1)
   brakeman (~> 5.1.1)
   byebug
   canonical-rails (>= 0.2.12)
