@@ -7,12 +7,6 @@
 
   <p class="event-info__date"><%= format_event_date(@event, stacked: false) %></p>
 
-  <% unless event_status_open?(@event) || event_status_pending?(@event) %>
-    <div class="content-alert content-alert--fullwidth">
-      <p>This event is now closed. Search <%= link_to("here", events_path) %> for our other events.</p>
-    </div>
-  <% end %>
-
   <% if @event.message %>
     <div class="content-alert content-alert--fullwidth">
       <p><%= @event.message %></p>
