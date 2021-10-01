@@ -10,13 +10,13 @@ gem "rails", "~> 6.1.4.1"
 gem "puma", "~> 5.4"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem "webpacker", ">= 5.4.2"
+gem "webpacker", ">= 5.4.3"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.8.1", require: false
+gem "bootsnap", ">= 1.9.1", require: false
 
 # Manage multiple processes i.e. web server and webpack
 gem "foreman"
@@ -47,8 +47,8 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 4.7.1"
-gem "sentry-ruby", "~> 4.7.1"
+gem "sentry-rails", ">= 4.7.3"
+gem "sentry-ruby", "~> 4.7.3"
 
 gem "skylight", "~> 5.1.1"
 
@@ -84,7 +84,7 @@ group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
 
   # GOV.UK interpretation of rubocop for linting Ruby
-  gem "rubocop-govuk", "~> 3.14.0" # FIXME: stop gap fix but we should relint the codebase
+  gem "rubocop-govuk", "~> 4.1.0" # FIXME: stop gap fix but we should relint the codebase
 
   # Static security scanner
   gem "brakeman", "~> 5.1.1", require: false
