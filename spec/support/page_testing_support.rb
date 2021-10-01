@@ -53,6 +53,7 @@ module LinkChecker
       tommyflowersscitt.co.uk
       www.nett.org.uk
       www.2schools.org
+      www.iop.org
     ].freeze
 
     def initialize(page, body)
