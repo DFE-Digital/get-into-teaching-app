@@ -13,7 +13,7 @@
   }
 
   a {
-    color: $blue-very-dark;
+    @include dark-link;
   }
 
   p:first-child {

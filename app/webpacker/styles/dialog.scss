@@ -57,6 +57,12 @@
     padding: .2em 2em;
   }
 
+  &__text {
+    a {
+      @include dark-link;
+    }
+  }
+
   &__buttons {
     display: flex;
     flex-wrap: wrap;

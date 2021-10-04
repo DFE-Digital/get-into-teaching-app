@@ -5,7 +5,7 @@
   display: flex;
 
   a {
-    color: $blue-very-dark;
+    @include dark-link;
   }
 
   @include mq($until: tablet) {
