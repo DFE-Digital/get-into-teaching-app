@@ -55,6 +55,7 @@ describe MailingList::StepsController, type: :request do
         allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
           receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { stub_response }
         allow(Rails.logger).to receive(:info)
+        allow(Rails.application.config.x).to receive(:mailing_list_age_step).and_return(false)
         get step_path
         follow_redirect!
       end

@@ -72,6 +72,8 @@ Rails.application.configure do
   config.x.structured_data.event = true
   config.x.structured_data.how_to = true
 
+  config.x.mailing_list_age_step = true
+
   config.x.zendesk_chat = true
 
   config.x.legacy_tracking_pixels = false
