@@ -80,6 +80,7 @@ gem "actionpack-cloudfront", ">= 1.1.0"
 gem "better_html"
 
 gem "dfe_wizard", github: "DFE-Digital/dfe_wizard"
+gem "validates_timeliness"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
