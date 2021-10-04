@@ -12,6 +12,10 @@
     color: $black;
   }
 
+  a {
+    @include dark-link;
+  }
+
   p:first-child {
     margin-top: 0;
   }

@@ -7,6 +7,10 @@
   padding: 1em;
   margin: 1em auto;
 
+  a {
+    @include dark-link
+  }
+
   h3,
   &__description {
     margin: .2em auto 1em;
@@ -14,6 +18,10 @@
 
   .group__cards {
     @include cards-grid;
+
+    a {
+      color: $blue-dark;
+    }
 
     .group__card {
       box-sizing: border-box;
