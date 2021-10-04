@@ -4,6 +4,10 @@
   margin-bottom: 2em;
   display: flex;
 
+  a {
+    color: $blue-very-dark;
+  }
+
   @include mq($until: tablet) {
     flex-direction: column;
   }
