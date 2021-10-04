@@ -21,6 +21,7 @@ describe MailingList::Wizard do
         MailingList::Steps::Name,
         ::DFEWizard::Steps::Authenticate,
         MailingList::Steps::AlreadySubscribed,
+        MailingList::Steps::Age,
         MailingList::Steps::DegreeStatus,
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,

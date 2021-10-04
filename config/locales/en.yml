@@ -391,6 +391,17 @@ en:
             accept_privacy_policy:
               blank: Accept the privacy policy to continue
               accepted: Accept the privacy policy to continue
+        mailing_list/steps/age:
+          attributes:
+            age_range:
+              blank: Choose an age range from the list
+            year_of_birth:
+              blank: Choose a year from the list
+            date_of_birth:
+              blank: "You need to enter your date of birth"
+              on_or_before: "You must be 18 years or older to use this service"
+              on_or_after: "You must be less than 70 years old"
+              invalid: "You did not enter a valid date of birth"
 
         # one-page mailing list
         mailing_list/signup:
@@ -504,6 +515,8 @@ en:
         preferred_teaching_subject_id: Which subject do you want to teach?
       mailing_list_steps_postcode:
         address_postcode: Your postcode (optional)
+      mailing_list_steps_age:
+        title: How old are you?
 
       search:
         search: Search for ...

@@ -1,0 +1,39 @@
+<%= f.govuk_error_summary %>
+
+<% if f.object.display_date_of_birth? %>
+  <%= f.govuk_date_field :date_of_birth,
+    date_of_birth: true,
+    legend: { tag: 'h1', size: 'xl', text: t("helpers.label.mailing_list_steps_age.title") } do
+  %>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  <% end %>
+<% end %>
+
+<% if f.object.display_year_of_birth? %>
+  <%= f.govuk_collection_select :year_of_birth,
+        f.object.class.years,
+        :to_i,
+        :to_i,
+        options: { prompt: true },
+        label: { tag: 'h1', size: 'xl', text: t("helpers.label.mailing_list_steps_age.title") } do
+  %>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  <% end %>
+<% end %>
+
+<% if f.object.display_age_range? %>
+  <%= f.govuk_collection_radio_buttons :age_range,
+    f.object.class.age_ranges,
+    :to_s,
+    :to_s,
+    legend: { tag: 'h1', size: 'xl', text: t("helpers.label.mailing_list_steps_age.title") } do
+  %>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    </p>
+  <% end %>
+<% end %>

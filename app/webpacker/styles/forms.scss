@@ -106,3 +106,8 @@ form {
     border-color: $red;
   }
 }
+
+.govuk-date-input {
+  display: flex;
+  gap: 1.5rem;
+}
