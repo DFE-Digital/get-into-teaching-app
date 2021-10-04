@@ -5,6 +5,92 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
   let(:mailing_list_page_title) { "Get personalised guidance to your inbox, name step | Get Into Teaching" }
 
+  before { allow(Rails.application.config.x).to receive(:mailing_list_age_step).and_return(false) }
+
+  context "when mailing_list_age_step is true" do
+    subject { page }
+
+    before do
+      allow(Rails.application.config.x).to receive(:mailing_list_age_step).and_return(true)
+
+      allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+        receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+    end
+
+    context "when restarting the form" do
+      it "shows the same age step consistently" do
+        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:date_of_birth))
+        visit mailing_list_steps_path
+
+        fill_in_name_step
+        click_on "Next step"
+
+        expect(page).to have_text "How old are you?"
+        expect(page).to have_field("Day")
+        expect(page).to have_field("Month")
+        expect(page).to have_field("Year")
+
+        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:date_of_birth))
+        visit mailing_list_steps_path
+        fill_in_name_step
+        click_on "Next step"
+
+        expect(page).to have_text "How old are you?"
+        expect(page).to have_field("Day")
+        expect(page).to have_field("Month")
+        expect(page).to have_field("Year")
+      end
+    end
+
+    context "when age_dislay_option is 'none'" do
+      scenario "after completing the name step" do
+        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:none))
+        visit mailing_list_steps_path
+        fill_in_name_step
+        click_on "Next step"
+        expect(page).not_to have_text "How old are you?"
+      end
+    end
+
+    context "when age_dislay_option is 'date_of_birth'" do
+      scenario "after completing the name step" do
+        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:date_of_birth))
+        visit mailing_list_steps_path
+        fill_in_name_step
+        click_on "Next step"
+        expect(page).to have_text "How old are you?"
+        fill_in "Day", with: 1
+        fill_in "Month", with: 8
+        fill_in "Year", with: 1982
+        click_on "Next step"
+      end
+    end
+
+    context "when age_dislay_option is 'year_of_birth'" do
+      scenario "after completing the name step" do
+        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:year_of_birth))
+        visit mailing_list_steps_path
+        fill_in_name_step
+        click_on "Next step"
+        expect(page).to have_text "How old are you?"
+        select "1967"
+        click_on "Next step"
+      end
+    end
+
+    context "when age_dislay_option is 'age_range'" do
+      scenario "after completing the name step" do
+        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:age_range))
+        visit mailing_list_steps_path
+        fill_in_name_step
+        click_on "Next step"
+        expect(page).to have_text "How old are you?"
+        choose "62 or older"
+        click_on "Next step"
+      end
+    end
+  end
+
   scenario "Full journey as a new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
@@ -341,5 +427,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in "First name", with: first_name if first_name
     fill_in "Last name", with: last_name if last_name
     fill_in "Email address", with: email if email
+  end
+
+  def stub_age_display_option(age_display_option)
+    stub_const(
+      "MailingList::Steps::Age::DISPLAY_OPTIONS",
+      age_display_option,
+    )
   end
 end

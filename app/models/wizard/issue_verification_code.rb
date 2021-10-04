@@ -4,7 +4,7 @@ module Wizard
 
     def save
       if valid?
-        purge_store_retaining_matchback_failures
+        purge_retaining_global_state
 
         Rails.logger.info("#{self.class} requesting access code")
 
@@ -30,14 +30,14 @@ module Wizard
 
   private
 
-    def purge_store_retaining_matchback_failures
-      matchback_failures = @store["matchback_failures"] || 0
-      last_matchback_failure_code = @store["last_matchback_failure_code"]
+    def purge_retaining_global_state
+      @store["matchback_failures"] ||= 0
 
-      @store.purge!
-
-      @store["matchback_failures"] = matchback_failures
-      @store["last_matchback_failure_code"] = last_matchback_failure_code
+      @store.prune!(leave: %w[
+        age_display_option
+        matchback_failures
+        last_matchback_failure_code
+      ])
     end
 
     def request_attributes

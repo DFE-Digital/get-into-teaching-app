@@ -88,15 +88,16 @@ shared_examples "an issue verification code with wizard step" do
       )
     end
 
-    it "purges previous data from the store" do
+    it "purges previous data from the store, retaining global state" do
       allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
       wizardstore["candidate_id"] = "abc123"
       wizardstore["extra_data"] = "data"
+      wizardstore["age_display_option"] = MailingList::Steps::Age::DISPLAY_OPTIONS[:date_of_birth]
       subject.save
       expect(wizardstore.to_hash).to eq(subject.attributes.merge({
         "authenticate" => true,
         "matchback_failures" => 0,
-        "last_matchback_failure_code" => nil,
+        "age_display_option" => MailingList::Steps::Age::DISPLAY_OPTIONS[:date_of_birth],
       }))
     end
 

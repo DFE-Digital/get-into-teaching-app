@@ -33,6 +33,8 @@ module MailingList
 
     def app_store
       session[:mailinglist] ||= {}
+      session[:mailinglist]["age_display_option"] ||= Steps::Age::DISPLAY_OPTIONS.values.sample
+      session[:mailinglist]
     end
 
     def crm_store
