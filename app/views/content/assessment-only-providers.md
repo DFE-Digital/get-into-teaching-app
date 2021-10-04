@@ -100,6 +100,11 @@ provider_groups:
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
+    - header: Lincolnshire SCITT
+      link: https://www.lincolnshirescitt.co.uk/aor
+      name: Angela Murphy
+      telephone: 01522 889297
+      email: scittenquiries@prioryacademies.co.uk      
     - header: Nottingham Trent University
       link: https://www.ntu.ac.uk/
       name: Admissions team
@@ -431,9 +436,9 @@ provider_groups:
       email: ssplant@ttsonline.net
   Yorkshire and the Humber:
     providers:
-    - header: The Sheffield SCITT
-      link: https://www.sheffieldscitt.org.uk/
-      email: admin@sheffieldscitt.org.uk
+    - header: Bradford Birth to 19 SCITT
+      link: https://www.bradfordbirthto19.co.uk/scitt
+      email: scitt@bradfordbirthto19.org
     - header: Bradford College
       link: https://www.bradfordcollege.ac.uk/courses/course/qualified-teacher-status-qts-assessment-only-programme/
       name: Lee Parsell
@@ -451,6 +456,9 @@ provider_groups:
       name: Jo Leedham
       telephone: 01724 297950
       email: jo.leedham@northlincs.gov.uk
+    - header: The Sheffield SCITT
+      link: https://www.sheffieldscitt.org.uk/
+      email: admin@sheffieldscitt.org.uk
     - header: Three Counties Alliance SCITT
       link: https://ytcascitt.co.uk/
       name: Rebecca Turner-Loisel
