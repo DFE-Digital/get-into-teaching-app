@@ -3,430 +3,239 @@ require "rails_helper"
 RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
 
-  let(:mailing_list_page_title) { "Get personalised guidance to your inbox, name step | Get Into Teaching" }
+  before do
+    allow(Rails.application.config.x).to \
+      receive(:mailing_list_age_step).and_return(age_step_enabled)
+  end
 
-  before { allow(Rails.application.config.x).to receive(:mailing_list_age_step).and_return(false) }
+  context "when the age step is enabled" do
+    let(:age_step_enabled) { true }
+    let(:candidate_identity) { new_candidate_identity }
 
-  context "when mailing_list_age_step is true" do
-    subject { page }
+    scenario "age_dislay_option is 'none'" do
+      stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:none))
+      visit mailing_list_steps_path
 
-    before do
-      allow(Rails.application.config.x).to receive(:mailing_list_age_step).and_return(true)
-
-      allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-        receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+      submit_name_step(candidate_identity)
+      expect_not_current_step(:age)
     end
 
-    context "when restarting the form" do
-      it "shows the same age step consistently" do
-        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:date_of_birth))
-        visit mailing_list_steps_path
+    scenario "age_dislay_option is 'date_of_birth'" do
+      stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:date_of_birth))
+      visit mailing_list_steps_path
 
-        fill_in_name_step
-        click_on "Next step"
-
-        expect(page).to have_text "How old are you?"
-        expect(page).to have_field("Day")
-        expect(page).to have_field("Month")
-        expect(page).to have_field("Year")
-
-        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:date_of_birth))
-        visit mailing_list_steps_path
-        fill_in_name_step
-        click_on "Next step"
-
-        expect(page).to have_text "How old are you?"
-        expect(page).to have_field("Day")
-        expect(page).to have_field("Month")
-        expect(page).to have_field("Year")
-      end
+      submit_name_step(candidate_identity)
+      submit_age_date_of_birth_step
     end
 
-    context "when age_dislay_option is 'none'" do
-      scenario "after completing the name step" do
-        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:none))
-        visit mailing_list_steps_path
-        fill_in_name_step
-        click_on "Next step"
-        expect(page).not_to have_text "How old are you?"
-      end
+    scenario "age_dislay_option is 'year_of_birth'" do
+      stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:year_of_birth))
+      visit mailing_list_steps_path
+
+      submit_name_step(candidate_identity)
+      submit_select_step("1967", :age)
     end
 
-    context "when age_dislay_option is 'date_of_birth'" do
-      scenario "after completing the name step" do
-        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:date_of_birth))
-        visit mailing_list_steps_path
-        fill_in_name_step
-        click_on "Next step"
-        expect(page).to have_text "How old are you?"
-        fill_in "Day", with: 1
-        fill_in "Month", with: 8
-        fill_in "Year", with: 1982
-        click_on "Next step"
-      end
+    scenario "age_dislay_option is 'age_range'" do
+      stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:age_range))
+      visit mailing_list_steps_path
+
+      submit_name_step(candidate_identity)
+      submit_choice_step("62 or older", :age)
     end
 
-    context "when age_dislay_option is 'year_of_birth'" do
-      scenario "after completing the name step" do
-        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:year_of_birth))
-        visit mailing_list_steps_path
-        fill_in_name_step
-        click_on "Next step"
-        expect(page).to have_text "How old are you?"
-        select "1967"
-        click_on "Next step"
-      end
-    end
+    scenario "restarting the form retains the age display option" do
+      stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:date_of_birth))
+      visit mailing_list_steps_path
 
-    context "when age_dislay_option is 'age_range'" do
-      scenario "after completing the name step" do
-        stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:age_range))
-        visit mailing_list_steps_path
-        fill_in_name_step
-        click_on "Next step"
-        expect(page).to have_text "How old are you?"
-        choose "62 or older"
-        click_on "Next step"
-      end
+      submit_name_step(candidate_identity)
+      expect(page.body).to include("age-step-display-option-value=\"date_of_birth\"")
+
+      stub_age_display_option(MailingList::Steps::Age::DISPLAY_OPTIONS.slice(:age_range))
+      visit mailing_list_steps_path
+
+      submit_name_step(candidate_identity)
+      expect(page.body).to include("age-step-display-option-value=\"date_of_birth\"")
     end
   end
 
-  scenario "Full journey as a new candidate" do
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+  context "with a new candidate" do
+    let(:age_step_enabled) { false }
+    let(:candidate_identity) { new_candidate_identity }
 
-    visit mailing_list_steps_path
+    scenario "full journey" do
+      visit mailing_list_steps_path
 
-    expect(page).to have_title(mailing_list_page_title)
+      submit_name_step(candidate_identity)
+      submit_choice_step("Not yet, I'm a first year student", :degree_status)
+      submit_choice_step("I’m not sure and finding out more", :teacher_training)
+      submit_select_step("Maths", :subject)
+      submit_input_step("mailing_list_steps_postcode[address_postcode]", "TE51NG", :postcode)
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
-    fill_in_name_step
-    click_on "Next step"
+      expect_sign_up_with_attributes(candidate_attributes)
+      submit_privacy_policy_step
+    end
 
-    expect(page).not_to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
+    scenario "full journey (on-campus sign up)" do
+      channel_id = GetIntoTeachingApiClient::Constants::\
+        CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS["GITIS - On Campus - Students Union Media"]
 
-    expect(page).to have_text "Do you have a degree?"
-    choose "Not yet, I'm a first year student"
-    click_on "Next step"
+      visit mailing_list_step_path(:name, channel: channel_id)
 
-    expect(page).to have_text "How close are you to applying"
-    choose "I’m not sure and finding out more"
-    click_on "Next step"
+      submit_name_step(candidate_identity)
+      submit_choice_step("Not yet, I'm a first year student", :degree_status)
+      submit_choice_step("I’m not sure and finding out more", :teacher_training)
+      submit_select_step("Maths", :subject)
+      submit_input_step("mailing_list_steps_postcode[address_postcode]", "TE51NG", :postcode)
 
-    expect(page).to have_text "Which subject do you want to teach"
-    select "Maths"
-    click_on "Next step"
+      expect_sign_up_with_attributes(candidate_attributes.merge(channel_id: channel_id))
+      submit_privacy_policy_step
+    end
 
-    expect(page).to have_text "events in your area"
-    fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
+    scenario "partial journey encountering an error" do
+      visit mailing_list_steps_path
 
-    expect(page).to have_text "Accept privacy policy"
-    click_on "Complete sign up"
+      click_on "Next step"
 
-    expect(page).to have_text "Accept privacy policy"
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    check "Yes"
-    click_on "Complete sign up"
-
-    expect(page).to have_title("You've signed up | Get Into Teaching")
-    expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
+      expect(page).to have_text "There is a problem"
+      expect(page).to have_text "Enter your first name"
+      expect(page).to have_text "Enter your last name"
+      expect(page).to have_text "Enter your full email address"
+    end
   end
 
-  scenario "Full journey as an on-campus candidate" do
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+  context "with an existing candidate" do
+    let(:age_step_enabled) { false }
+    let(:candidate_identity) { existing_candidate_identity }
 
-    channel_id = channels.first.id
-    visit mailing_list_steps_path({ id: :name, channel: channel_id })
+    scenario "full journey, changing an answer (re-sends verification code)" do
+      visit mailing_list_steps_path
 
-    expect(page).to have_text "Get personalised guidance to your inbox"
-    fill_in_name_step
-    click_on "Next step"
+      submit_name_step(candidate_identity)
+      mock_exchange_code_for_candidate("123456")
+      enter_verification_code_and_continue(candidate_identity[:email], "123456", "000000")
+      submit_pre_filled_choice_step("Not yet, I'm a first year student", :degree_status)
+      submit_pre_filled_choice_step("I’m not sure and finding out more", :teacher_training)
+      submit_select_step("Physics", :subject)
 
-    expect(page).to have_text "Do you have a degree?"
-    choose "Not yet, I'm a first year student"
-    click_on "Next step"
+      request_attributes = candidate_attributes.merge({
+        preferred_teaching_subject_id: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["Physics"],
+      })
+      expect_sign_up_with_attributes(request_attributes)
+      submit_privacy_policy_step
+    end
 
-    expect(page).to have_text "How close are you to applying"
-    choose "I’m not sure and finding out more"
-    click_on "Next step"
+    scenario "already subscribed to mailing list" do
+      visit mailing_list_steps_path
 
-    expect(page).to have_text "Which subject do you want to teach"
-    select "Maths"
-    click_on "Next step"
+      submit_name_step(candidate_identity)
+      mock_exchange_code_for_candidate("123456", { already_subscribed_to_mailing_list: true })
+      enter_verification_code_and_continue(candidate_identity[:email], "123456")
+      expect_exit_step("You’ve already signed up")
+    end
 
-    expect(page).to have_text "events in your area"
-    fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
+    scenario "already subscribed to teacher training adviser service" do
+      visit mailing_list_steps_path
 
-    expect(page).to have_text "Accept privacy policy"
-    click_on "Complete sign up"
+      submit_name_step(candidate_identity)
+      mock_exchange_code_for_candidate("123456", { already_subscribed_to_teacher_training_adviser: true })
+      enter_verification_code_and_continue(candidate_identity[:email], "123456")
+      expect_current_step(:degree_status)
+    end
 
-    expect(page).to have_text "Accept privacy policy"
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    check "Yes"
-    click_on "Complete sign up"
+    scenario "using a magic link" do
+      token = "magic-link-token"
+      mock_exchange_magic_link_token_for_candidate(token)
 
-    expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
+      visit mailing_list_steps_path(magic_link_token: token)
+
+      expect(page).to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
+
+      submit_pre_filled_choice_step("Not yet, I'm a first year student", :degree_status)
+      submit_pre_filled_choice_step("I’m not sure and finding out more", :teacher_training)
+      submit_pre_filled_select_step("Maths", :subject)
+
+      expect_sign_up_with_attributes(candidate_attributes)
+      submit_privacy_policy_step
+    end
+
+    scenario "using invalid magic links" do
+      visit mailing_list_steps_path(magic_link_token_error: GetIntoTeachingApiClient::ExchangeStatus::INVALID)
+      expect(page).to have_text "We could not find this link"
+
+      visit mailing_list_steps_path(magic_link_token_error: GetIntoTeachingApiClient::ExchangeStatus::EXPIRED)
+      expect(page).to have_text "This link has expired"
+
+      visit mailing_list_steps_path(magic_link_token_error: GetIntoTeachingApiClient::ExchangeStatus::ALREADY_EXCHANGED)
+      expect(page).to have_text "This link has been used already"
+
+      visit mailing_list_steps_path(magic_link_token_error: "UnknownError")
+      expect(page).to have_text "We could not find this link"
+    end
+
+    scenario "switching to a new candidate" do
+      visit mailing_list_steps_path
+
+      submit_name_step(candidate_identity)
+      mock_exchange_code_for_candidate("123456", { already_subscribed_to_mailing_list: true })
+      enter_verification_code_and_continue(candidate_identity[:email], "123456")
+      expect_exit_step("You’ve already signed up")
+
+      visit mailing_list_steps_path
+
+      candidate_identity[:existing] = false
+      submit_name_step(candidate_identity)
+      submit_choice_step("Not yet, I'm a first year student", :degree_status)
+      submit_choice_step("I’m not sure and finding out more", :teacher_training)
+      submit_select_step("Maths", :subject)
+      submit_input_step("mailing_list_steps_postcode[address_postcode]", "", :postcode)
+
+      expect_sign_up_with_attributes(candidate_attributes.merge({ address_postcode: nil }))
+      submit_privacy_policy_step
+    end
   end
 
-  scenario "Full journey as an existing candidate" do
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token)
-
-    response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      preferredTeachingSubjectId: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["Maths"],
-      considerationJourneyStageId: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m very sure and think I’ll apply"],
-      degreeStatusId: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"],
-      addressPostcode: "TE57 1NG",
-    )
+  def mock_exchange_code_for_candidate(valid_code, response_attributes = {})
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything) { response }
+      receive(:exchange_access_token_for_mailing_list_add_member).with(anything, anything) do |_, code|
+      raise GetIntoTeachingApiClient::ApiError unless code == valid_code
 
-    visit mailing_list_steps_path
-
-    expect(page).to have_text "Get personalised guidance to your inbox"
-    fill_in_name_step
-    click_on "Next step"
-
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next step"
-
-    expect(page).to have_text "Do you have a degree?"
-    expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
-      response.degree_status_id.to_s,
-    )
-    click_on "Next step"
-
-    expect(page).to have_text "How close are you to applying"
-    expect(find("[name=\"mailing_list_steps_teacher_training[consideration_journey_stage_id]\"][checked]").value).to eq(
-      response.consideration_journey_stage_id.to_s,
-    )
-    click_on "Next step"
-
-    expect(page).to have_text "Which subject do you want to teach"
-    expect(page).to have_select(
-      "Which subject do you want to teach?",
-      selected: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.key(response.preferred_teaching_subject_id),
-    )
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    click_on "Complete sign up"
-
-    expect(page).to have_text "Accept privacy policy"
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    check "Yes"
-    click_on "Complete sign up"
-
-    expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
+      attributes = candidate_attributes.merge(response_attributes).transform_keys { |k| k.to_s.camelize(:lower) }
+      GetIntoTeachingApiClient::MailingListAddMember.new(attributes)
+    end
   end
 
-  scenario "Full journey as an existing candidate that resends the verification code" do
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token)
-
-    response = GetIntoTeachingApiClient::MailingListAddMember.new
+  def mock_exchange_magic_link_token_for_candidate(valid_token, response_attributes = {})
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:exchange_access_token_for_mailing_list_add_member).with("654321", anything).and_raise(GetIntoTeachingApiClient::ApiError)
-    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
-
-    visit mailing_list_steps_path
-
-    expect(page).to have_text "Get personalised guidance to your inbox"
-    fill_in_name_step
-    click_on "Next step"
-
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "654321"
-    click_on "Next step"
-
-    expect(page).to have_text "Please enter the latest verification code"
-
-    click_link "resend verification"
-    expect(page).to have_text "We've sent you another email."
-
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next step"
-
-    expect(page).to have_text "Do you have a degree?"
+      receive(:exchange_magic_link_token_for_mailing_list_add_member).with(valid_token) do
+      attributes = candidate_attributes.merge(response_attributes).transform_keys { |k| k.to_s.camelize(:lower) }
+      GetIntoTeachingApiClient::MailingListAddMember.new(attributes)
+    end
   end
 
-  scenario "Full journey as an existing candidate that has already subscribed to the mailing list" do
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token)
-
-    response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      alreadySubscribedToMailingList: true,
-    )
-    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
-
-    visit mailing_list_steps_path
-
-    expect(page).to have_text "Get personalised guidance to your inbox"
-    fill_in_name_step
-    click_on "Next step"
-
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next step"
-
-    expect(page).to have_text "You’ve already signed up"
-    expect(page).not_to have_button("Next step")
+  def expect_sign_up_with_attributes(attributes)
+    expect_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+      receive(:add_mailing_list_member)
+      .with(having_attributes(attributes))
+      .once
   end
 
-  scenario "Full journey as an existing candidate that has already subscribed to a teacher training adviser" do
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token)
-
-    response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      alreadySubscribedToTeacherTrainingAdviser: true,
-    )
-    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
-
-    visit mailing_list_steps_path
-
-    expect(page).to have_text "Get personalised guidance to your inbox"
-    fill_in_name_step
-    click_on "Next step"
-
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next step"
-
-    expect(page).to have_text "Do you have a degree?"
+  def candidate_attributes
+    candidate_identity.except(:existing).merge({
+      degree_status_id: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["First year"],
+      consideration_journey_stage_id: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m not sure and finding out more"],
+      preferred_teaching_subject_id: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["Maths"],
+      address_postcode: "TE51NG",
+      accepted_policy_id: "123",
+    })
   end
 
-  scenario "Full journey as an existing candidate using a magic link" do
-    token = "magic-link-token"
-    response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      firstName: "Test",
-      lastName: "User",
-      email: "test@user.com",
-      considerationJourneyStageId: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m very sure and think I’ll apply"],
-      degreeStatusId: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"],
-    )
-    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }
-
-    visit mailing_list_steps_path(magic_link_token: token)
-
-    expect(page).to have_text "Tell us more about you so that you only get emails relevant to your circumstances."
-
-    expect(page).to have_text "Do you have a degree?"
-    expect(find("[name=\"mailing_list_steps_degree_status[degree_status_id]\"][checked]").value).to eq(
-      response.degree_status_id.to_s,
-    )
-    click_on "Next step"
-
-    expect(page).to have_text "How close are you to applying"
-    expect(find("[name=\"mailing_list_steps_teacher_training[consideration_journey_stage_id]\"][checked]").value).to eq(
-      response.consideration_journey_stage_id.to_s,
-    )
-    click_on "Next step"
-
-    expect(page).to have_text "Which subject do you want to teach"
-    select "Maths"
-    click_on "Next step"
-
-    expect(page).to have_text "events in your area"
-    fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
-    click_on "Complete sign up"
-
-    expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
-  end
-
-  scenario "Invalid magic link tokens" do
-    visit mailing_list_steps_path(magic_link_token_error: GetIntoTeachingApiClient::ExchangeStatus::INVALID)
-    expect(page).to have_text "We could not find this link"
-
-    visit mailing_list_steps_path(magic_link_token_error: GetIntoTeachingApiClient::ExchangeStatus::EXPIRED)
-    expect(page).to have_text "This link has expired"
-
-    visit mailing_list_steps_path(magic_link_token_error: GetIntoTeachingApiClient::ExchangeStatus::ALREADY_EXCHANGED)
-    expect(page).to have_text "This link has been used already"
-
-    visit mailing_list_steps_path(magic_link_token_error: "UnknownError")
-    expect(page).to have_text "We could not find this link"
-  end
-
-  scenario "Start as an existing candidate then switch to new candidate" do
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token)
-
-    response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      alreadySubscribedToMailingList: true,
-    )
-    allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
-      receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
-
-    visit mailing_list_steps_path
-
-    expect(page).to have_text "Get personalised guidance to your inbox"
-    fill_in_name_step
-    click_on "Next step"
-
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
-    click_on "Next step"
-
-    expect(page).to have_text "You’ve already signed up"
-    click_link("Back")
-
-    expect(page).to have_text "Verify your email address"
-    click_link("Back")
-
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
-
-    expect(page).to have_text "Get personalised guidance to your inbox"
-    fill_in_name_step(email: "test2@user.com")
-    click_on "Next step"
-
-    expect(page).to have_text "Do you have a degree?"
-  end
-
-  scenario "Partial journey with candidate encountering an error" do
-    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
-      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
-
-    visit mailing_list_steps_path
-
-    expect(page).to have_title(mailing_list_page_title)
-
-    # try incorrectly first so we can check error state
-    click_on "Next step"
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Enter your first name"
-    expect(page).to have_text "Enter your last name"
-    expect(page).to have_text "Enter your full email address"
-    expect(page).to have_title(mailing_list_page_title)
-  end
-
-  def fill_in_name_step(
-    first_name: "Test",
-    last_name: "User",
-    email: "test@user.com"
-  )
-    fill_in "First name", with: first_name if first_name
-    fill_in "Last name", with: last_name if last_name
-    fill_in "Email address", with: email if email
+  def submit_age_date_of_birth_step
+    expect_current_step(:age)
+    fill_in("Day", with: 1)
+    fill_in("Month", with: 2)
+    fill_in("Year", with: 1993)
+    click_on_next_step
   end
 
   def stub_age_display_option(age_display_option)
