@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").chomp
 gem "rails", "~> 6.1.4.1"
 
 # Use Puma as the app server
-gem "puma", "~> 5.4"
+gem "puma", "~> 5.5"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker", ">= 5.4.3"
@@ -34,7 +34,7 @@ gem "addressable", "~> 2.8.0"
 
 gem "rack-attack"
 
-gem "faraday", "~> 1.7.1"
+gem "faraday", "~> 1.8.0"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
@@ -58,7 +58,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.39.0"
+gem "view_component", "~> 2.40.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
