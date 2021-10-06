@@ -3,7 +3,7 @@ title: Maria's return to teaching story
 author: Maria Bateson
 date: "2021-04-21"
 images:
-    maria:
+  maria:
     path: "media/images/content/blog/maria.jpg"
     alt: "A photograph of Maria's face"
 description: |-
