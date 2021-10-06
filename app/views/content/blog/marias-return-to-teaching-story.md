@@ -5,7 +5,7 @@ date: "2021-04-21"
 images:
   maria:
     path: "media/images/content/blog/maria.jpg"
-    alt: "A photograph of Maria's face"
+    alt: "Returning teacher, Maria Bateson"
 description: |-
   After more than 10 years outside of the profession, Maria re-entered the classroom in November 2020. She describes how and why she returned to teaching.
     
