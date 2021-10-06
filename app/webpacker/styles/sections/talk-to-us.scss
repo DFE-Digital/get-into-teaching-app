@@ -1,3 +1,15 @@
+html:not(.js-enabled) {
+  .talk-to-us .content > div.contact .options > div.live-chat {
+    .js-enabled-title {
+      display: none;
+    }
+
+    .js-disabled-title {
+      display: block;
+    }
+  }
+}
+
 .talk-to-us {
   background-color: $grey;
 
@@ -32,10 +44,14 @@
           > div {
             flex: 1 0;
 
-            &.live-chat {
+            &.live-chat, &.email-us {
               border-bottom: 1px solid $purple;
               padding-bottom: $indent-amount;
               margin-bottom: $indent-amount;
+
+              .js-disabled-title {
+                display: none
+              }
 
               span > span {
                 font-weight: bold;
@@ -84,7 +100,7 @@
           > div {
             flex: initial;
 
-            &.live-chat {
+            &.live-chat, &.email-us {
               border: 0;
               border-right: 1px solid $purple;
               padding: 0 $indent-amount 0 0;

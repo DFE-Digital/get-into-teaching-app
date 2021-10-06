@@ -103,11 +103,19 @@ module ApplicationHelper
     link_to text, path, **options
   end
 
-  def chat_link(text = "Chat online", classes: nil, fallback_text: "Chat to us", offline_text: "Chat available Monday to Friday between 8:30am and 5:30pm.")
+  def chat_link(
+    text = "Chat online",
+    classes: nil,
+    fallback_text: "Chat to us",
+    fallback_email: nil,
+    offline_text: "Chat available Monday to Friday between 8:30am and 5:30pm."
+  )
+    raise ArgumentError, "Specify fallback text or email, not both" if [fallback_text, fallback_email].all?(&:present?)
+
     # Text is wrapped in a <span> so it can be easily replaced
     # without losing the > icon that gets appended by JS.
     main_link = link_to("#",
-                        class: "#{classes} chat-button #{'with-fallback' if fallback_text.present?}",
+                        class: "#{classes} chat-button #{'with-fallback' if [fallback_text, fallback_email].any?(&:present?)}",
                         data: {
                           action: "talk-to-us#startChat",
                           "talk-to-us-target": "button",
@@ -118,6 +126,7 @@ module ApplicationHelper
     ]
 
     elements << link_to(fallback_text, "#talk-to-us", class: "#{classes} chat-button-no-js") if fallback_text.present?
+    elements << mail_to(fallback_email, fallback_email, class: "chat-button-no-js") if fallback_email.present?
     elements << tag.span(offline_text, class: "chat-button-offline", data: { "talk-to-us-target": "offlineText" }) if offline_text.present?
 
     tag.span(safe_join(elements), data: {
