@@ -114,7 +114,7 @@ If you have '[qualified teacher status](https://www.gov.uk/guidance/qualified-te
   ></iframe>
 </div>
 
-Return to teaching advisers also run [events](/event-categories/online-q-as) to support returners.
+Return to teaching advisers also run [events to support returners](/event-categories/online-q-as).
 
 $get-a-tta$
 
@@ -141,6 +141,7 @@ If you’re unsure about taking on a teacher role at this time, [consider applyi
 There’s lots you can do to re-familiarise yourself with teaching. For example, you can:  
 
 * attend an [online return to teaching event](/event-categories/online-q-as)
+* read [blog posts about returning to teaching](/blog/tag/returning-to-teaching)
 * read [Jill's journey](/my-story-into-teaching/returners/getting-back-into-the-classroom) to become a teacher again
 * review the latest [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards)
 * catch up on changes to the [national curriculum and qualifications](https://www.gov.uk/topic/schools-colleges-childrens-services/curriculum-qualifications)
