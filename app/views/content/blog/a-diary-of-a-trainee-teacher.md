@@ -27,7 +27,7 @@ $mel_oconnor$
 
 I completed my undergraduate degree in Business in 2014. Since then, I have worked in the technology industry in a range of product and customer facing roles. I’d always loved being in the school environment and took advantage of various work experience and school-based roles during my time at university. 
 
-When lockdown hit in 2020, I began to reassess my career choices as I knew I had fallen into an industry that I wasn’t particularly engaged with. I knew I needed to move to a purposeful and rewarding environment, so I applied for the Mathematics PGDE programme ready to start in September 2021. I completed an SKE in maths over the summer to refresh my subject knowledge. Suddenly it was time to leave my previous career behind and get started with my new life as a teacher!
+When lockdown hit in 2020, I began to reassess my career choices as I knew I had fallen into an industry that I wasn’t particularly engaged with. I knew I needed to move to a purposeful and rewarding environment, so I applied for the Mathematics PGDE programme ready to start in September 2021. I completed a subject knowledge enhancement course (SKE) in maths over the summer to refresh my subject knowledge. Suddenly it was time to leave my previous career behind and get started with my new life as a teacher!
 
 ## The first few days
 
