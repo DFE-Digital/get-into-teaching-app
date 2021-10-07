@@ -151,4 +151,4 @@ There’s lots you can do to re-familiarise yourself with teaching. For example,
 * read up on [teaching interview tips](https://www.teachertoolkit.co.uk/2019/04/04/job-interviews)
   and [get pointers on remote interviews](https://www.tes.com/news/coronavirus-10-tips-acing-remote-job-interview)
 * ensure your [pension is up to date](https://www.teacherspensions.co.uk/members/working-life/life-events/moving-abroad.aspx)
-* read [blog posts about returning to teaching](https://getintoteaching.education.gov.uk/blog/tag/returning-to-teaching)
+* read [blog posts about returning to teaching](/blog/tag/returning-to-teaching)
