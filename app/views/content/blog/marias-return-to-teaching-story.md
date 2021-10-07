@@ -10,11 +10,11 @@ description: |-
   After more than 10 years outside of the profession, Maria re-entered the classroom in November 2020. She describes how and why she returned to teaching.
     
 keywords:
-  - return to teaching
+  - returning to teaching
   - teacher training advisers
 
 tags:
-  - return to teaching
+  - returning to teaching
   - teacher training advisers
 ---
 
