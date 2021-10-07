@@ -23,7 +23,7 @@ describe Callbacks::Wizard do
       is_expected.to eql [
         Callbacks::Steps::PersonalDetails,
         Callbacks::Steps::MatchbackFailed,
-        ::Wizard::Steps::Authenticate,
+        ::DFEWizard::Steps::Authenticate,
         Callbacks::Steps::Callback,
         Callbacks::Steps::TalkingPoints,
         Callbacks::Steps::PrivacyPolicy,

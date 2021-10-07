@@ -20,7 +20,7 @@ describe Events::Wizard do
     it do
       is_expected.to eql [
         Events::Steps::PersonalDetails,
-        ::Wizard::Steps::Authenticate,
+        ::DFEWizard::Steps::Authenticate,
         Events::Steps::ContactDetails,
         Events::Steps::FurtherDetails,
         Events::Steps::PersonalisedUpdates,

@@ -19,7 +19,7 @@ describe MailingList::Wizard do
     it do
       is_expected.to eql [
         MailingList::Steps::Name,
-        ::Wizard::Steps::Authenticate,
+        ::DFEWizard::Steps::Authenticate,
         MailingList::Steps::AlreadySubscribed,
         MailingList::Steps::DegreeStatus,
         MailingList::Steps::TeacherTraining,

@@ -7,7 +7,7 @@ module Callbacks
     self.steps = [
       Steps::PersonalDetails,
       Steps::MatchbackFailed,
-      ::Wizard::Steps::Authenticate,
+      ::DFEWizard::Steps::Authenticate,
       Steps::Callback,
       Steps::TalkingPoints,
       Steps::PrivacyPolicy,

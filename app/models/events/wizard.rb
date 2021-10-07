@@ -6,7 +6,7 @@ module Events
 
     self.steps = [
       Steps::PersonalDetails,
-      ::Wizard::Steps::Authenticate,
+      ::DFEWizard::Steps::Authenticate,
       Steps::ContactDetails,
       Steps::FurtherDetails,
       Steps::PersonalisedUpdates,

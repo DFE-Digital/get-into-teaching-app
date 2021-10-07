@@ -147,7 +147,7 @@ describe EventStepsController, type: :request do
           allow_any_instance_of(Events::Steps::PersonalDetails).to \
             receive(:valid?).and_return true
 
-          allow_any_instance_of(Wizard::Steps::Authenticate).to \
+          allow_any_instance_of(::DFEWizard::Steps::Authenticate).to \
             receive(:valid?).and_return true
 
           allow_any_instance_of(Events::Steps::ContactDetails).to \

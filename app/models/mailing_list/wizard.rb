@@ -6,7 +6,7 @@ module MailingList
 
     self.steps = [
       Steps::Name,
-      ::Wizard::Steps::Authenticate,
+      ::DFEWizard::Steps::Authenticate,
       Steps::AlreadySubscribed,
       Steps::DegreeStatus,
       Steps::TeacherTraining,

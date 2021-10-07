@@ -288,13 +288,6 @@ en:
             subject:
               blank: Select a subject
 
-        wizard/steps/authenticate:
-          attributes:
-            timed_one_time_password:
-              blank: Enter the verification code sent to your email address
-              invalid: The verification code should be 6 digits
-              wrong_code: Please enter the latest verification code sent to your email address
-
         events/search:
           attributes:
             type:
