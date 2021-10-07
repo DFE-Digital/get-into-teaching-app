@@ -464,7 +464,7 @@ en:
               blank: Enter a name
             readable_id:
               blank: Enter a partial URL
-              invalid: Partial URL can only contain alphanumeric characters, hyphens, and underscores
+              invalid: Partial URL can only contain alphanumeric characters, hyphens, and underscores. Must begin and end with an alphanumeric character.
             summary:
               blank: Enter a summary
             description:
