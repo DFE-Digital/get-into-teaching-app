@@ -53,6 +53,7 @@ export default class extends Controller {
 
       setTimeout(() => {
         this.buttonTarget.querySelector('span').innerHTML = originalText;
+        document.getElementById('webWidget').focus();
       }, 500); // Small delay to account for the chat box animating in.
     });
   }
