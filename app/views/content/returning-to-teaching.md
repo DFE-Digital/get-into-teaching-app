@@ -141,6 +141,7 @@ If you’re unsure about taking on a teacher role at this time, [consider applyi
 There’s lots you can do to re-familiarise yourself with teaching. For example, you can:  
 
 * attend an [online return to teaching event](/event-categories/online-q-as)
+* read [blog posts about returning to teaching](/blog/tag/returning-to-teaching)
 * read [Jill's journey](/my-story-into-teaching/returners/getting-back-into-the-classroom) to become a teacher again
 * review the latest [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards)
 * catch up on changes to the [national curriculum and qualifications](https://www.gov.uk/topic/schools-colleges-childrens-services/curriculum-qualifications)
@@ -151,4 +152,3 @@ There’s lots you can do to re-familiarise yourself with teaching. For example,
 * read up on [teaching interview tips](https://www.teachertoolkit.co.uk/2019/04/04/job-interviews)
   and [get pointers on remote interviews](https://www.tes.com/news/coronavirus-10-tips-acing-remote-job-interview)
 * ensure your [pension is up to date](https://www.teacherspensions.co.uk/members/working-life/life-events/moving-abroad.aspx)
-* read [blog posts about returning to teaching](/blog/tag/returning-to-teaching)
