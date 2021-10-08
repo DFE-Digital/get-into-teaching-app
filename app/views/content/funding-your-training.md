@@ -27,7 +27,6 @@
     If you're disabled: "#if-youre-disabled"
     If you come from outside England: "#if-you-come-from-outside-england"
   before-content:
-    - content/funding-your-training/end-of-year-warning
     - content/funding-your-training/funding-widget
   calls_to_action:
     chat:
