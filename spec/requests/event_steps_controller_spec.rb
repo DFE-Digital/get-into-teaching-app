@@ -70,6 +70,51 @@ describe EventStepsController, type: :request do
     end
   end
 
+  describe "#show when skipping verification" do
+    let(:step_path) { event_steps_path(readable_event_id, :authenticate, { skip_verification: true }) }
+    let(:camelized_identity_data) do
+      {
+        candidateId: "abc123",
+        firstName: "John",
+        lastName: "Doe",
+        email: "john@doe.com",
+      }
+    end
+
+    before do
+      allow_any_instance_of(Events::Steps::PersonalDetails).to \
+        receive(:is_walk_in?).and_return(true)
+      allow_any_instance_of(Wizard::Steps::Authenticate).to \
+        receive(:candidate_identity_data) { camelized_identity_data }
+    end
+
+    context "when a candidate was previously matched" do
+      let(:request) { GetIntoTeachingApiClient::ExistingCandidateRequest.new(camelized_identity_data) }
+      let(:response) { GetIntoTeachingApiClient::TeachingEventAddAttendee.new(camelized_identity_data) }
+
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+          receive(:exchange_unverified_request_for_teaching_event_add_attendee).with(request) { response }
+        get step_path
+        follow_redirect!
+      end
+
+      it { is_expected.to redirect_to(event_step_path(readable_event_id, :contact_details)) }
+    end
+
+    context "when the candidate was not previously matched" do
+      before do
+        not_found_error = GetIntoTeachingApiClient::ApiError.new(code: 404)
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+          receive(:exchange_unverified_request_for_teaching_event_add_attendee).and_raise(not_found_error)
+        get step_path
+        follow_redirect!
+      end
+
+      it { is_expected.to redirect_to(event_step_path(readable_event_id, :personal_details)) }
+    end
+  end
+
   describe "#update" do
     subject do
       patch step_path, params: { key => details_params }
