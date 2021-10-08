@@ -142,15 +142,16 @@ For a scholarship, each professional scholarship body sets its own criteria. The
 Teaching bursaries and scholarships are only available for the subjects listed
 below. You cannot receive both a teaching bursary and a scholarship.
 
-| Subject       | Bursary  | Scholarship      |
-| ------------- | -------: | ---------------: |
-| **Chemistry** | £24,000  | £26,000          |
-| **Computing** | £24,000  | £26,000          |
-| **Maths**     | £24,000  | £26,000          |
-| **Physics**   | £24,000  | £26,000          |
-| **Classics**  | £10,000  | *N/A*            |
-| **Languages** | £10,000  | *N/A*            |
-| **Biology**   | £7,000   | *N/A*            |
+| Subject                                          | Bursary  | Scholarship      |
+| -------------                                    | -------: | ---------------: |
+| **Biology**                                      | £10,000  |                  |
+| **Chemistry**                                    | £24,000  | £26,000          |
+| **Computing**                                    | £24,000  | £26,000          |
+| **Design and technology**                        | £15,000  |                  |
+| **Geography**                                    | £15,000  |                  |
+| **Languages**<br/> (including ancient languages) | £15,000  |                  |
+| **Maths**                                        | £24,000  | £26,000          |
+| **Physics**                                      | £24,000  | £26,000          |
 
 ### Non-graduate bursaries
 
