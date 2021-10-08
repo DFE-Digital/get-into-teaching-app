@@ -72,7 +72,7 @@ To start postgraduate teacher training in England, you need:
 
 Your degree can be from outside the UK.
 
-If you do not have a degree yet, you can apply to an [undergraduate teacher training course](https://www.ucas.com/postgraduate/teacher-training/train-teach-england/undergraduate-teacher-training-england) instead of a postgraduate course.
+If you do not have a degree yet, you can apply to an [undergraduate teacher training course](https://digital.ucas.com/search) instead of a postgraduate course.
 
 #### English and maths qualifications
 
