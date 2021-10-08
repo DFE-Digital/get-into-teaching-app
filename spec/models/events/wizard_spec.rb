@@ -73,4 +73,37 @@ describe Events::Wizard do
       subject.exchange_access_token(totp, request)
     end
   end
+
+  describe "#exchange_unverified_request" do
+    let(:request) { GetIntoTeachingApiClient::ExistingCandidateRequest.new }
+    let(:response) { GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidateId: "123", addressTelephone: "12345") }
+
+    before do
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:exchange_unverified_request_for_teaching_event_add_attendee)
+        .with(request) { response }
+    end
+
+    context "when candidate is not a walk in" do
+      before { wizardstore[:is_walk_in] = false }
+
+      it "raises an exception" do
+        expect { subject.exchange_unverified_request(request) }.to raise_error(Wizard::ContinueUnverifiedNotSupportedError)
+      end
+    end
+
+    context "when candidate is a walk in" do
+      before { wizardstore[:is_walk_in] = true }
+
+      it "calls exchange_unverified_request_for_teaching_event_add_attendee" do
+        expect(subject.exchange_unverified_request(request)).to eq(response)
+      end
+
+      it "logs the response model (filtering sensitive attributes)" do
+        filtered_json = { "candidateId" => "123", "addressTelephone" => "[FILTERED]" }.to_json
+        expect(Rails.logger).to receive(:info).with("Events::Wizard#exchange_unverified_request: #{filtered_json}")
+        subject.exchange_unverified_request(request)
+      end
+    end
+  end
 end
