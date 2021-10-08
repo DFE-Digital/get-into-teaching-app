@@ -51,6 +51,42 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_title(sign_up_complete_page_title)
   end
 
+  scenario "Full journey as a walk-in candidate, skipping verification" do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token)
+
+    response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
+      eventId: event.id,
+      isVerified: false,
+    )
+    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      receive(:exchange_unverified_request_for_teaching_event_add_attendee).with(anything) { response }
+
+    visit event_steps_path(event_id: event_readable_id, walk_in: true)
+
+    fill_in_personal_details_step
+    click_on "Next step"
+
+    expect(page).to have_text "Check your email and enter the verification code sent to test@user.com"
+    click_on "continue without verifying your identity"
+
+    fill_in "Phone number (optional)", with: "01234567890"
+    click_on "Next step"
+
+    within_fieldset "Would you like to receive email updates" do
+      choose "No"
+    end
+    within_fieldset "Are you over 16 and do you agree" do
+      check "Yes"
+    end
+
+    expect_sign_up_with_attributes(base_attributes.merge({ is_walk_in: true, is_verified: false }))
+
+    click_on "Complete sign up"
+
+    expect(page).to have_title(sign_up_complete_page_title)
+  end
+
   scenario "Full journey as a new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
