@@ -162,7 +162,7 @@ You may also be eligible if you're studying an opt-in QTS course in secondary un
 
 #### If you're a former military personnel
 
-You may be eligible for a [Troops to Teachers](https://www.ucas.com/teaching-option/troops-teachers) tax-free bursary of £40,000 if you're:
+You may be eligible for a [Troops to Teachers](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2021-to-2022#troops-to-teachers-undergraduate-bursary) tax-free bursary of £40,000 if you're:
 
 * training to teach secondary biology, physics, chemistry, computing, maths or modern foreign languages
 * doing an undergraduate degree leading to QTS in England
