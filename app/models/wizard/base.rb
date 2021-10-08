@@ -2,14 +2,16 @@ module Wizard
   class UnknownStep < RuntimeError; end
   class MagicLinkTokenNotSupportedError < RuntimeError; end
   class AccessTokenNotSupportedError < RuntimeError; end
+  class ContinueUnverifiedNotSupportedError < RuntimeError; end
 
   class Base
     module Auth
       ACCESS_TOKEN = 0
       MAGIC_LINK_TOKEN = 1
+      UNVERIFIED = 2
     end
 
-    MATCHBACK_ATTRS = %i[candidate_id qualification_id].freeze
+    MATCHBACK_ATTRS = %i[candidate_id qualification_id is_verified].freeze
 
     class_attribute :steps
 
@@ -103,6 +105,10 @@ module Wizard
       @store["auth_method"] == Auth::ACCESS_TOKEN
     end
 
+    def unverified?
+      @store["auth_method"] == Auth::UNVERIFIED
+    end
+
     def earlier_keys(key = current_key)
       index = key_index(key)
       return [] unless index.positive?
@@ -129,6 +135,11 @@ module Wizard
       prepopulate_store(response, Auth::ACCESS_TOKEN)
     end
 
+    def process_unverified_request(request)
+      response = exchange_unverified_request(request)
+      prepopulate_store(response, Auth::UNVERIFIED)
+    end
+
   protected
 
     def exchange_magic_link_token(_token)
@@ -137,6 +148,10 @@ module Wizard
 
     def exchange_access_token(_timed_one_time_password, _request)
       raise(AccessTokenNotSupportedError)
+    end
+
+    def exchange_unverified_request(_request)
+      raise(ContinueUnverifiedNotSupportedError)
     end
 
   private
