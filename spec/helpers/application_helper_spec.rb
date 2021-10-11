@@ -16,6 +16,7 @@ describe ApplicationHelper do
     let(:twitter_id) { id }
 
     before do
+      allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(true)
       allow(ENV).to receive(:[]).and_call_original
       allow(ENV).to receive(:[]).with("GOOGLE_TAG_MANAGER_ID").and_return gtm_id
       allow(ENV).to receive(:[]).with("GOOGLE_ANALYTICS_ID").and_return ga_id
@@ -110,6 +111,16 @@ describe ApplicationHelper do
       subject { analytics_body_tag(class: "homepage") { tag.hr } }
 
       it { is_expected.to have_css "body[data-controller~=gtm]" }
+      it { is_expected.to have_css "body.homepage" }
+    end
+
+    context "when legacy tracking is disabled" do
+      subject { analytics_body_tag(data: { timefmt: "24" }, class: "homepage") { tag.hr } }
+
+      before { allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(false) }
+
+      it { is_expected.not_to have_css "body[data-controller~=gtm]" }
+      it { is_expected.to have_css "body[data-timefmt=24]" }
       it { is_expected.to have_css "body.homepage" }
     end
   end

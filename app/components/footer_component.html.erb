@@ -65,7 +65,7 @@
   </div>
 </footer>
 
-<% if lid_pixel_event %>
+<% if lid_pixel_event && Rails.application.config.x.legacy_tracking_pixels %>
   <%= tag.span(data: { "controller" => "lid", "lid-action" => "track", "lid-event" => lid_pixel_event }) %>
 <% end %>
 

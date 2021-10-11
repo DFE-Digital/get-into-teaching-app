@@ -73,6 +73,7 @@
   <%= render(Registration::MailingListSignupConfirmationComponent.new(mailing_list_session)) %>
 <% end %>
 
+<% if Rails.application.config.x.legacy_tracking_pixels %>
 <span data-controller="pinterest"
       data-pinterest-action="track"
       data-pinterest-event="lead"
@@ -89,3 +90,4 @@
 <span data-controller="bam" data-bam-action="track"></span>
 
 <span data-controller="lid" data-lid-action="track" data-lid-event="MailingList"></span>
+<% end %>
