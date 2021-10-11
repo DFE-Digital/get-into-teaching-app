@@ -73,4 +73,6 @@ Rails.application.configure do
   config.x.structured_data.how_to = true
 
   config.x.zendesk_chat = true
+
+  config.x.legacy_tracking_pixels = false
 end

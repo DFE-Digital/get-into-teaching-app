@@ -1,5 +1,7 @@
 module ApplicationHelper
   def analytics_body_tag(attributes = {}, &block)
+    return tag.body(**attributes, &block) unless Rails.application.config.x.legacy_tracking_pixels
+
     attributes = attributes.symbolize_keys
 
     analytics = {

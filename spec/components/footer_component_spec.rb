@@ -1,8 +1,14 @@
 require "rails_helper"
 
 describe FooterComponent, type: "component" do
-  subject! { render_inline(described_class.new) }
+  subject(:render) { render_inline(described_class.new) }
 
+  before do
+    allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(legacy_tracking_pixels)
+    render
+  end
+
+  let(:legacy_tracking_pixels) { true }
   let(:feedback_selector) { ".feedback-bar" }
   let(:talk_to_us_selector) { ".talk-to-us" }
   let(:mailing_list_selector) { ".mailing-list-bar" }
@@ -56,12 +62,20 @@ describe FooterComponent, type: "component" do
   end
 
   context "when a lid_pixel_event is supplied" do
-    subject! { render_inline(described_class.new(lid_pixel_event: event)) }
+    subject(:render) { render_inline(described_class.new(lid_pixel_event: event)) }
 
     let(:event) { "Success" }
 
     specify "renders the right analytics element" do
       expect(rendered_component).to include_analytics("lid", { action: "track", event: event })
+    end
+
+    context "when legacy tracking is disabled" do
+      let(:legacy_tracking_pixels) { false }
+
+      specify "does not render the analytics element" do
+        expect(rendered_component).not_to include_analytics("lid", { action: "track", event: event })
+      end
     end
   end
 
