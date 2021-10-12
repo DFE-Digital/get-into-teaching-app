@@ -127,7 +127,7 @@ These are tax-free amounts of money you receive to train in certain subjects. Yo
 
 You’ll need a first, 2:1, 2:2 degree or a PhD or master's degree to be eligible for a bursary, as well as meeting the bursary scheme's individual terms and conditions.
 
-[Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2021-to-2022).
+[Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023).
 
 For a scholarship, each professional scholarship body sets its own criteria. These bodies include:
 
