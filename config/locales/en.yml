@@ -117,7 +117,7 @@ en:
         name: "Biology"
         group: "Secondary"
         sub_head: "Biology - Secondary"
-        funding: "Bursaries of £7,000 are available for trainee biology teachers."
+        funding: "Bursaries of £10,000 are available for trainee biology teachers."
       business_studies:
         name: "Business studies"
         group: "Secondary"
@@ -137,7 +137,7 @@ en:
         name: "Classics"
         group: "Secondary"
         sub_head: "Classics - Secondary"
-        funding: "Bursaries of £10,000 are available for trainee classics teachers."
+        funding: "Bursaries of £15,000 are available for trainee classics teachers."
       communication_and_media_studies:
         name: "Communication and media studies"
         group: "Secondary"
@@ -157,7 +157,7 @@ en:
         name: "Design and technology"
         group: "Secondary"
         sub_head: "Design and technology - Secondary"
-        funding: ""
+        funding: "Bursaries of £15,000 are available for trainee design and technology teachers."
       drama:
         name: "Drama"
         group: "Secondary"
@@ -177,7 +177,7 @@ en:
         name: "Geography"
         group: "Secondary"
         sub_head: "Geography - Secondary"
-        funding: ""
+        funding: "Bursaries of £15,000 are available for trainee geography teachers."
       health_and_social_care:
         name: "Health and social care"
         group: "Secondary"
@@ -237,42 +237,42 @@ en:
         name: "French"
         group: "Secondary: Modern languages"
         sub_head: "French - Secondary"
-        funding: "Bursaries of £10,000 are available for trainee French language teachers."
+        funding: "Bursaries of £15,000 are available for trainee French language teachers."
       german:
         name: "German"
         group: "Secondary: Modern languages"
         sub_head: "German - Secondary"
-        funding: "Bursaries of £10,000 are available for trainee German language teachers."
+        funding: "Bursaries of £15,000 are available for trainee German language teachers."
       italian:
         name: "Italian"
         group: "Secondary: Modern languages"
         sub_head: "Italian - Secondary"
-        funding: "Bursaries of £10,000 are available for trainee Italian language teachers."
+        funding: "Bursaries of £15,000 are available for trainee Italian language teachers."
       japanese:
         name: "Japanese"
         group: "Secondary: Modern languages"
         sub_head: "Japanese - Secondary"
-        funding: "Bursaries of £10,000 are available for trainee Japanese language teachers."
+        funding: "Bursaries of £15,000 are available for trainee Japanese language teachers."
       mandarin:
         name: "Mandarin"
         group: "Secondary: Modern languages"
         sub_head: "Mandarin - Secondary"
-        funding: "Bursaries of £10,000 are available for trainee Mandarin language teachers."
+        funding: "Bursaries of £15,000 are available for trainee Mandarin language teachers."
       modern_languages_other:
         name: "Modern languages (other)"
         group: "Secondary: Modern languages"
         sub_head: "Modern languages (other) - Secondary"
-        funding: "Bursaries of £10,000 are available for trainee Modern languages (other) teachers."
+        funding: "Bursaries of £15,000 are available for trainee Modern languages (other) teachers."
       russian:
         name: "Russian"
         group: "Secondary: Modern languages"
         sub_head: "Russian - Secondary"
-        funding: "Bursaries of £10,000 are available for trainee Russian language teachers."
+        funding: "Bursaries of £15,000 are available for trainee Russian language teachers."
       spanish:
         name: "Spanish"
         group: "Secondary: Modern languages"
         sub_head: "Spanish - Secondary"
-        funding: "Bursaries of £10,000 are available for trainee Spanish language teachers."
+        funding: "Bursaries of £15,000 are available for trainee Spanish language teachers."
 
   event_types:
     222750001:
