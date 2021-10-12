@@ -157,7 +157,7 @@ An unqualified teacher's salary can be between £18,169 and £33,410 depending o
 
 | Area                          | Minimum | Maximum |
 | -------                       | -----   | -----   |
-| Inner London                  | £22,849 | £33,410 |
-| Outer London                  | £21,582 | £32,151 |
-| London fringe                 | £19,363 | £29,924 |
-| The rest of England and Wales | £18,169 | £28,735 |
+| Inner London                  | £23,099 | £33,410 |
+| Outer London                  | £21,832 | £32,151 |
+| London fringe                 | £19,613 | £29,924 |
+| The rest of England and Wales | £18,419 | £28,735 |
