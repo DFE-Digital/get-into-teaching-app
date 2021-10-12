@@ -29,9 +29,14 @@
           <div class="call-to-action__text">
             <h3><%= sub_head %></h3>
             <div>
-              Tuition fee and maintenance loans are available.<br>
-              Adding loans for teacher training will not increase your monthly payments.<br>
-              Currently, no scholarships or bursaries are offered for this subject.
+              <p>
+                Tuition fee and maintenance loans are available.
+              </p>
+
+              <p>
+                Adding loans for teacher training will not increase your monthly payments.
+                Currently, no scholarships or bursaries are offered for this subject.
+              </p>
             </div>
           </div>
           <div>
@@ -45,8 +50,9 @@
           <div class="call-to-action__text">
             <h3><%= sub_head %></h3>
             <div>
-              <%= funding_results %><br>
-              Tuition fee and maintenance loans are also available.
+              <%= helpers.safe_format(funding_results) %>
+
+              <p>Tuition fee and maintenance loans are also available.</p>
             </div>
           </div>
           <div>

@@ -137,7 +137,10 @@ en:
         name: "Classics"
         group: "Secondary"
         sub_head: "Classics - Secondary"
-        funding: ""
+        funding: |-
+          Bursaries of £15,000 may be available for trainee classics teachers when more than 50% of the course content covers an ancient language.
+
+          Your course provider will confirm if this applies.
       communication_and_media_studies:
         name: "Communication and media studies"
         group: "Secondary"
@@ -173,6 +176,11 @@ en:
         group: "Secondary"
         sub_head: "English - Secondary"
         funding: ""
+      english_as_a_second_or_other_language:
+        name: "English as a second or other language"
+        group: "Secondary"
+        sub_head: "English as a second or other language - Secondary"
+        funding: ""
       geography:
         name: "Geography"
         group: "Secondary"
@@ -188,6 +196,11 @@ en:
         group: "Secondary"
         sub_head: "History - Secondary"
         funding: ""
+      languages:
+        name: "Languages (including ancient languages)"
+        group: "Secondary"
+        sub_head: "Languages (including ancient languages)"
+        funding: "Bursaries of £15,000 are available for trainee language teachers."
       mathematics:
         name: "Mathematics"
         group: "Secondary"
@@ -228,51 +241,6 @@ en:
         group: "Secondary"
         sub_head: "Social sciences - Secondary"
         funding: ""
-      english_as_a_second_or_other_language:
-        name: "English as a second or other language"
-        group: "Secondary: Modern languages"
-        sub_head: "English as a second or other language - Secondary"
-        funding: ""
-      french:
-        name: "French"
-        group: "Secondary: Modern languages"
-        sub_head: "French - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee French language teachers."
-      german:
-        name: "German"
-        group: "Secondary: Modern languages"
-        sub_head: "German - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee German language teachers."
-      italian:
-        name: "Italian"
-        group: "Secondary: Modern languages"
-        sub_head: "Italian - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee Italian language teachers."
-      japanese:
-        name: "Japanese"
-        group: "Secondary: Modern languages"
-        sub_head: "Japanese - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee Japanese language teachers."
-      mandarin:
-        name: "Mandarin"
-        group: "Secondary: Modern languages"
-        sub_head: "Mandarin - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee Mandarin language teachers."
-      modern_languages_other:
-        name: "Modern languages (other)"
-        group: "Secondary: Modern languages"
-        sub_head: "Modern languages (other) - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee Modern languages (other) teachers."
-      russian:
-        name: "Russian"
-        group: "Secondary: Modern languages"
-        sub_head: "Russian - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee Russian language teachers."
-      spanish:
-        name: "Spanish"
-        group: "Secondary: Modern languages"
-        sub_head: "Spanish - Secondary"
-        funding: "Bursaries of £15,000 are available for trainee Spanish language teachers."
 
   event_types:
     222750001:
