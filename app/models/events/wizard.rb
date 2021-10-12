@@ -28,6 +28,15 @@ module Events
       response
     end
 
+    def exchange_unverified_request(request)
+      super unless find(Steps::PersonalDetails.key).is_walk_in?
+
+      @api ||= GetIntoTeachingApiClient::TeachingEventsApi.new
+      response = @api.exchange_unverified_request_for_teaching_event_add_attendee(request)
+      Rails.logger.info("Events::Wizard#exchange_unverified_request: #{AttributeFilter.filtered_json(response)}")
+      response
+    end
+
   private
 
     def add_attendee_to_event
