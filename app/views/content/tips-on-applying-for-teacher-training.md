@@ -1,7 +1,7 @@
 ---
 title: Tips on applying for teacher training
 description: |-
-  Read these tips on applying for teacher training to maximise your chances of 
+  Read these tips on applying for teacher training to maximise your chances of
   being accepted on to initial teacher training, including when to apply for teaching training, how to write a good application, how to ensure you choose the right references, your personal statement and what to do if you get invited to interview.
 date: "2021-06-24"
 keywords:
@@ -51,9 +51,9 @@ You can [search for most postgraduate teacher training courses on GOV.UK](https:
 
 ## Where to apply
 
-You can use [Apply for teacher training](https://www.gov.uk/apply-for-teacher-training) to apply for any postgraduate teacher training course.
+You can use [Apply for teacher training](https://www.gov.uk/apply-for-teacher-training) to apply for postgraduate teacher training.
 
-This service has replaced the UCAS postgraduate teacher training application. 
+This service has replaced the UCAS postgraduate teacher training application.
 
 ## When to apply
 
@@ -94,7 +94,7 @@ personal statement.
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
 
-[Talk to an adviser for help preparing your application.](/tta-service)
+[Talk to an adviser for help preparing your application](/tta-service).
 
 ## Choose your referees
 
@@ -170,14 +170,12 @@ You can [get support preparing a personal statement from an adviser](/tta-servic
 
 ## If you’re invited to interview
 
-Interviews usually last a day and may include time spent teaching real pupils.
+Interviews usually last a day and may include time spent teaching pupils.
 
 You can [get support preparing for an interview from an adviser](/tta-service).
 
 Interviews vary from provider to provider – you’ll be given all the information
 you need when you’re invited to attend.
-
-Some providers are doing interviews online due to COVID-19 restrictions.
 
 ## If you get an offer
 
