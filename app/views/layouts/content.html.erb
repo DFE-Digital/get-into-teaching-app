@@ -2,6 +2,7 @@
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") unless Rails.application.config.x.legacy_tracking_pixels %>
 
     <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
       <%= c.hero(@front_matter) %>
@@ -63,8 +64,8 @@
             <%= render(partial) %>
           <% end %>
 
-          <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>
-            <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered"), active_step: accordion_fm.dig("active_step")) do |accordion| %>
+          <% @front_matter.key?("accordion") && @front_matter["accordion"].tap do |accordion_fm| %>
+            <%= render Content::AccordionComponent.new(numbered: accordion_fm["numbered"], active_step: accordion_fm["active_step"]) do |accordion| %>
               <% accordion.content_before_accordion(
                 partial: accordion_fm.dig("content_before_accordion", "partial"),
                 call_to_action: accordion_fm.dig("content_before_accordion", "cta")

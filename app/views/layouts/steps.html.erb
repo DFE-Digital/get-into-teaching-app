@@ -2,6 +2,7 @@
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content" }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") unless Rails.application.config.x.legacy_tracking_pixels %>
 
     <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
       <%= c.hero(@front_matter) %>
@@ -23,7 +24,7 @@
 
           <%= yield %>
 
-          <% @front_matter.key?("steps") && @front_matter.dig("steps").tap do |steps_fm| %>
+          <% @front_matter.key?("steps") && @front_matter["steps"].tap do |steps_fm| %>
 
             <div class="steps">
               <% steps_fm.each.with_index(1) do |(title, contents), i| %>
