@@ -1,49 +1,101 @@
-<% display_no_ttt_events_message = display_no_ttt_events_message?(@performed_search, @events_by_type, @events_search_type) %>
+<div class="events">
+  <div class="events__filter">
+    <h2>Filters</h2>
 
-<% @search_component = Events::SearchComponent.new(
-  @event_search,
-  search_events_path(anchor: "searchforevents"),
-  allow_blank_month: true,
-) %>
+    <%= govuk_form_for(@event_search, method: :get, url: "/events") do |f| %>
 
-<% @before_search_fullwidth = true %>
+      <div class="events__filter--group">
+        <%= f.govuk_text_field(:postcode, label: { text: "Location" }, form_group: { classes: 'reduce-bottom-margin' }) %>
+        <a href="#">Use my current location</a>
+      </div>
 
-<% if display_no_ttt_events_message %>
-  <%= render(Events::NoResultsComponent.new) do %>
-    <p>There are no Train to Teach events in your chosen month. Sign up to be notified about upcoming events.</p>
-    <%= link_to('Sign up for notifications', mailing_list_steps_url, class: "button") %>
-  <% end %>
-<% end %>
+      <div class="events__filter--group">
+        <%= f.govuk_check_boxes_fieldset(:setting, legend: nil) do %>
+          <%= f.govuk_check_box :setting, "online", label: { text: "Online" } %>
+          <%= f.govuk_check_box :setting, "in_person", label: { text: "In person" } %>
+        <% end %>
+      </div>
 
-<% unless @no_results %>
-  <% @events_by_type.each_with_index do |(type_id, events), index| %>
-    <%= render "event_group",
-      type_id: type_id,
-      events: events,
-      page_param_name: @performed_search ? @group_presenter.page_param_name(type_id) : nil,
-      show_see_all_events: show_see_all_events_button?(type_id, events),
-      show_logo: show_events_teaching_logo(index, type_id)
-    %>
-  <% end %>
-<% else %>
-  <% if @performed_search && @events_search_type != ttt_event_type_id.to_s %>
-    <%= render(Events::NoResultsComponent.new) do %>
-      Sorry your search has not found any events, try a different type, location or month.
+      <div class="events__filter--group">
+        <%= f.govuk_check_boxes_fieldset(:type, legend: { text: "Event type", tag: nil }) do %>
+          <%= f.govuk_check_box :type, "train_to_teach", label: { text: "Train to teach" } %>
+          <%= f.govuk_check_box :type, "online_forum", label: { text: "Online forum" } %>
+          <%= f.govuk_check_box :type, "school_and_university", label: { text: "School and university" } %>
+        <% end %>
+      </div>
     <% end %>
-  <% end %>
-<% end %>
+  </div>
 
-<section class="content-cta">
-  <h3>Do you have a teaching event?</h3>
-  <p>
-    If you'd like to advertise your teaching event in this listing, <a href="https://form.education.gov.uk/service/Provider-event-details---Get-into-Teaching-website"
-      title="Submit your event details on GOV.UK"
-      target="_blank"
-      rel="noopener norefferer">
-    please fill in our online form</a>.
-  </p>
-</section>
+  <div class="events__lists">
+    <div class="promoted">
+      <h2>Upcoming train to teach events</h2>
 
-<% if Rails.application.config.x.legacy_tracking_pixels %>
-<span data-controller="lid" data-lid-action="track" data-lid-event="Events"></span>
-<% end %>
+      <ol class="events__sublist">
+        <li class="event train-to-teach">
+          <div class="event__info">
+            <div class="event__info--date">
+              Friday 18 October 2022
+            </div>
+
+            <div class="event__info--time">
+              17:00 - 19:00 (2 hours)
+            </div>
+
+            <div class="event__info--name">
+              Train to teach question time London
+            </div>
+
+            <div class="event__info--location">
+              Hackney, London, E2 9BN
+            </div>
+
+            <div class="event__info--setting">
+              In person
+            </div>
+          </div>
+
+          <div class="event__meta">
+            <%= image_pack_tag "media/images/content/welcome-guide/jack-rowing-crop-face.jpg" %>
+          </div>
+        </li>
+
+        <li class="event train-to-teach">
+          <div class="event__info">
+            <div class="event__info--date">
+              Friday 19 October 2022
+            </div>
+
+            <div class="event__info--time">
+              16:00 - 17:00 (1 hour)
+            </div>
+
+            <div class="event__info--name">
+              Train to teach question time Manchester
+            </div>
+
+            <div class="event__info--location">
+              Piccadilly Hotel, Manchester, M1 2EJ
+            </div>
+
+            <div class="event__info--setting">
+              In person
+            </div>
+          </div>
+
+          <div class="event__meta">
+            <%= image_pack_tag "media/images/content/welcome-guide/jack-rowing-crop-face.jpg" %>
+          </div>
+        </li>
+      </ol>
+    </div>
+
+    <ol class="events__sublist">
+      <li class="event">
+        Three
+      </li>
+      <li class="event">
+        Four
+      </li>
+    </ol>
+  </div>
+</div>

@@ -18,6 +18,9 @@ module Events
     attribute :month, :string
     attribute :period, default: :future
 
+    # dummy attributes for pretend new search functionality
+    attribute :setting
+
     validates :type, presence: false, inclusion: { in: :available_event_type_ids, allow_nil: true }
     validates :distance, inclusion: { in: :available_distance_keys }, allow_nil: true
     validates :postcode, presence: true, postcode: { allow_blank: true, accept_partial_postcode: true }, if: :distance

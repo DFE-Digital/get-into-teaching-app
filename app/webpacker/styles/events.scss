@@ -1,247 +1,97 @@
 .events {
-  h2 {
-    @include content-heading;
-    @include font-size(xlarge);
-    margin-top: 1.5em;
-  }
+  display: flex;
 
-  .types-of-event__header__icon {
-    margin-bottom: 5px;
-  }
+  &__filter {
+    flex-basis: 33%;
 
-  .event-type-descriptions {
-    text-align: left;
-    padding-bottom: 60px;
+    form {
+      label,
+      legend {
+        font-size: 1rem;
+      }
 
-    .event-type-descriptions__content {
-      @include cards-grid;
-      padding: $indent-amount $indent-amount 0 $indent-amount;
-      margin-bottom: 0;
-    }
-  }
-
-  .search-for-events-results {
-    display: flex;
-    flex-wrap: wrap;
-
-    > a {
-      width: 33.333%;
-      margin-bottom: 30px;
-      padding: 0 15px;
-      box-sizing: border-box;
-      text-decoration: none;
-    }
-
-    .event-box {
-      height: 100%;
-    }
-  }
-
-  .events-featured {
-    background: $grey;
-    position: relative;
-    padding: $indent-amount;
-    width: 100%;
-    margin-top: 30px;
-    box-sizing: border-box;
-
-    + .events-featured {
-      margin-top: 30px;
-    }
-
-    .no-results {
-      width: 66.6%;
-
-      @include mq($until: tablet) {
-        width: 100%;
+      .reduce-bottom-margin {
+        margin-bottom: .3em;
       }
     }
 
-    &--with-logo {
-      margin-top: 90px;
-    }
-
-    &__heading {
-      margin-bottom: $indent-amount;
-
-      > header h3 {
-        @include font-size(large);
-        margin: 0px;
-        line-height: 1.25;
-      }
-    }
-
-    &__text {
-      max-width: 70%;
-      margin-bottom: 30px;
-    }
-
-    &__list {
-      padding: 0;
-      @include cards-grid;
-
-      &__item {
-
-        list-style: none;
-        display: flex;
-        text-decoration: none;
-      }
-    }
-
-    .call-to-action-button {
-      margin-top: 1.5em;
-      white-space: normal;
-    }
-
-    &__logo {
-      position: absolute;
-      top: 0;
-      left: 100%;
-      transform: translate(-100%, -65%);
-    }
-  }
-
-  .event-pagination {
-    &.content {
-      overflow: inherit;
-    }
-
-    .pagination {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-
-      @mixin pagination-item {
-        @include font-size(medium);
-        padding: .8em;
-        text-decoration: none;
-        margin: 1em 0;
-      }
-
-      // kaminari selectors
-      * {
-        display: block;
-        line-height: 1;
-      }
-
+    &--group {
       a {
-        @include pagination-item;
-        border: 2px solid $pink-dark;
-        color: $pink-dark;
+        @include font-size(xsmall);
+      };
+    }
 
-        &:hover {
-          background-color: $pink-dark;
-          color: $white;
-        }
-
-        &:focus {
-          background-color: $yellow;
-          border: 2px solid $yellow-dark;
-          color: $black;
-        }
-      }
-
-      .page {
-        text-align: center;
-        min-width: .8em;
-
-        &.current,
-        &.gap {
-          padding: .8em .6em;
-        }
-
-        &.current {
-          @include pagination-item;
-          background-color: $pink-dark;
-          color: $white;
-          border: 2px solid $pink-dark;
-        }
-      }
-
-      .prev {
-        margin-right: .2em;
-      }
-
-      .prev + .page,
-      .page + .page {
-        margin-left: .2em;
-        margin-right: .2em;
-      }
+    &--group + &--group {
+      margin-top: 2em;
     }
   }
 
-  @include mq($until: tablet) {
-    .event-type-descriptions {
-      padding-bottom: 0;
+  &__lists {
+    flex-basis: 66%;
+    padding: 1em;
+  }
+
+  .promoted {
+    padding: 2em;
+    background-color: $grey;
+
+    h2 {
+      @include font-size(medium);
+      margin-block: 0 2.5em;
     }
 
-    .types-of-event {
-      &__left {
-
-        padding-left: 0;
-        padding-right: 0;
-        display: block;
-        width: 100%;
-        margin-right: 40px;
-      }
-
-      &__right {
-        margin: 0;
-        padding: 0;
-        display: block;
-        width: 100%;
-      }
-    }
-
-    .search-for-events-results {
-      > a {
-        width: 50%;
-      }
-    }
-
-    .events-featured {
-      &__text {
-        max-width: 100%;
-      }
-
-      &--with-logo {
-        margin-top: 60px;
-
-        @include mq($until: tablet) {
-          margin-top: 30px;
-        }
-      }
-
-      &__heading {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        @include mq($until: tablet) {
-          flex-direction: column-reverse;
-        }
-      }
-
-      &__logo {
-        position: relative;
-        top: auto;
-        left: auto;
-        transform: scale(.7);
-        margin-right: -58px;
-
-        @include mq($until: tablet) {
-          align-self: flex-end;
-        }
-      }
+    .event {
+      background: $white;
     }
   }
 
-  @include mq($until: mobile) {
-    .search-for-events-results {
-      > a {
-        width: 100%;
-        padding: 0;
-      }
+  &__sublist {
+    display: flex;
+    flex-direction: column;
+    gap: 6em;
+    list-style: none;
+    margin: 0;
+    padding: 0em;
+  }
+}
+
+.event {
+  display: flex;
+  margin: 0;
+  gap: 3em;
+  padding: 2em 1em 1em;
+  position: relative;
+
+  &__info {
+    flex-basis: 60%;
+    @include font-size(xsmall);
+
+    &--name {
+      @include font-size(small, $adjust: .2rem);
+      font-weight: bold;
+    }
+  }
+
+  &__meta {
+    flex-basis: 40%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &.train-to-teach {
+    border: 2px solid $pink;
+
+    &::after {
+      @include font-size(medium, $adjust: -.3rem);
+      position: absolute;
+      content: "✅ Train to teach event";
+      right: 1rem;
+      top: -1em;
+      background: $pink;
+      font-weight: bold;
+      padding: .2em .4em;
     }
   }
 }
