@@ -31,71 +31,13 @@
       <h2>Upcoming train to teach events</h2>
 
       <ol class="events__sublist">
-        <li class="event train-to-teach">
-          <div class="event__info">
-            <div class="event__info--date">
-              Friday 18 October 2022
-            </div>
-
-            <div class="event__info--time">
-              17:00 - 19:00 (2 hours)
-            </div>
-
-            <div class="event__info--name">
-              Train to teach question time London
-            </div>
-
-            <div class="event__info--location">
-              Hackney, London, E2 9BN
-            </div>
-
-            <div class="event__info--setting">
-              In person
-            </div>
-          </div>
-
-          <div class="event__meta">
-            <%= image_pack_tag "media/images/content/welcome-guide/jack-rowing-crop-face.jpg" %>
-          </div>
-        </li>
-
-        <li class="event train-to-teach">
-          <div class="event__info">
-            <div class="event__info--date">
-              Friday 19 October 2022
-            </div>
-
-            <div class="event__info--time">
-              16:00 - 17:00 (1 hour)
-            </div>
-
-            <div class="event__info--name">
-              Train to teach question time Manchester
-            </div>
-
-            <div class="event__info--location">
-              Piccadilly Hotel, Manchester, M1 2EJ
-            </div>
-
-            <div class="event__info--setting">
-              In person
-            </div>
-          </div>
-
-          <div class="event__meta">
-            <%= image_pack_tag "media/images/content/welcome-guide/jack-rowing-crop-face.jpg" %>
-          </div>
-        </li>
+        <% @events.each do |event| %>
+          <%= render(Events::CardComponent.new(event)) %>
+        <% end %>
       </ol>
     </div>
 
     <ol class="events__sublist">
-      <li class="event">
-        Three
-      </li>
-      <li class="event">
-        Four
-      </li>
     </ol>
   </div>
 </div>

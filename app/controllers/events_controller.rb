@@ -1,9 +1,11 @@
 class EventsController < ApplicationController
   include CircuitBreaker
 
-  before_action :load_event_search, only: %i[search index]
-  before_action :search_events, only: %i[search]
-  before_action :load_upcoming_events, only: %i[index]
+  # before_action :load_event_search, only: %i[search index]
+  # before_action :search_events, only: %i[search]
+  # before_action :load_upcoming_events, only: %i[index]
+
+  before_action :load_events
   layout "application"
 
   UPCOMING_EVENTS_PER_TYPE = 3
@@ -55,6 +57,13 @@ protected
   end
 
 private
+
+  def load_events
+    # ignore this for the moment, the filter form is bound to it
+    @event_search = Events::Search.new
+
+    @events = Events::Search.new.query_events(10).flat_map(&:teaching_events)
+  end
 
   def render_not_found
     @fullwidth = true
