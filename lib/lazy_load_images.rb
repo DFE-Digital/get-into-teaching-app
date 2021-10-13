@@ -12,7 +12,7 @@ class LazyLoadImages
     doc.css("picture").each do |picture|
       next if picture.css("img[data-lazy-disable]").any?
 
-      picture.after(noscript_picture(picture, doc))
+      picture.parent.add_child(noscript_picture(picture, doc))
 
       picture.css("source").each do |source|
         source["data-srcset"] = source.attribute("srcset")
