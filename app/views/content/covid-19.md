@@ -22,7 +22,7 @@ keywords:
 
 Contact your provider if you have any questions about how coronavirus is affecting your course.
 
-## If you're an applicant (2021 entry): your questions answered
+## If you're an applicant
 
 ### Can I get school experience?
 
@@ -50,7 +50,7 @@ Although global travel, including to the UK, is affected by coronavirus, we stil
 
 Check your country’s advice as well as the UK's advice to keep up to date with travel restrictions and self-isolation requirements.
 
-The UK government has also published guidance about [what to do if you need a visa to travel to the UK](https://www.gov.uk/guidance/coronavirus-covid-19-advice-for-uk-visa-applicants-and-temporary-uk-residents#outside-uk) and has a coronavirus immigration [help centre](https://www.gov.uk/guidance/coronavirus-covid-19-advice-for-uk-visa-applicants-and-temporary-uk-residents#helpline).
+The UK government has also published guidance about [what to do if you need a visa to travel to the UK](https://www.gov.uk/guidance/coronavirus-covid-19-advice-for-uk-visa-applicants-and-temporary-uk-residents#outside-uk) and has a [coronavirus immigration help centre](https://www.gov.uk/guidance/coronavirus-covid-19-advice-for-uk-visa-applicants-and-temporary-uk-residents#helpline).
 
 Further information is available if you are affected by [changes to UK immigration and borders due to coronavirus](https://www.gov.uk/government/collections/coronavirus-covid-19-immigration-and-borders).
 
