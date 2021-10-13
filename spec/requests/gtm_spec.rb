@@ -38,7 +38,7 @@ describe "Google Tag Manager", type: :request do
     it "has the GTM and fallback scripts" do
       layout_paths.each do |layout_path|
         get layout_path
-        expect(response.body).to include("https://www.googletagmanager.com/gtm.js"), "#{layout_path} does not include GTM"
+        expect(response.body).to include("data-gtm-id=\"123-ABC\""), "#{layout_path} does not include GTM"
         expect(response.body).to include("https://www.googletagmanager.com/ns.html"), "#{layout_path} does not include GTM fallback"
       end
     end
@@ -50,7 +50,7 @@ describe "Google Tag Manager", type: :request do
     it "does not have the GTM and fallback scripts" do
       layout_paths.each do |layout_path|
         get layout_path
-        expect(response.body).not_to include("https://www.googletagmanager.com/gtm.js"), "#{layout_path} does not include GTM"
+        expect(response.body).not_to include("data-gtm-id"), "#{layout_path} does not include GTM"
         expect(response.body).not_to include("https://www.googletagmanager.com/ns.html"), "#{layout_path} does not include GTM fallback"
       end
     end
