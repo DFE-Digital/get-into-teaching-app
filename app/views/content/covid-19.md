@@ -7,7 +7,7 @@ date: "2021-07-23"
 image: false
 backlink: "../"
 alert: |-
-  This page was updated on 23 July 2021, and will continue to be updated as
+  This page was updated on 13 October 2021 and will continue to be updated as
   new guidance is issued. Please check back regularly.
 keywords:
   - coronavirus
@@ -32,10 +32,6 @@ Some schools are offering school experience both in school and virtually.
 
 Sign up to [get school experience](https://schoolexperience.education.gov.uk/).
 
-### How long do teacher training providers have to make a decision on my application?
-
-40 days.
-
 ### Do I have to have a face-to-face interview?
 
 There is no requirement for a face-to-face interview. Your interview may take place online.
@@ -44,15 +40,9 @@ You may be asked to send your degree or GCSE certificates digitally too.
 
 Wait for your provider to contact you with more information.
 
-### I am doing a GCSE to be eligible to start training but exams have been cancelled. What should I do?
-
-Details on assessment for GCSEs in summer 2021 [have now been confirmed](https://www.gov.uk/government/publications/student-guide-to-awarding-summer-2021) after consultation in the spring term.
-
-Speak to your training provider to discuss your situation.
-
 ### Are Train To Teach events going ahead?
 
-[Autumn events have now been confirmed](/events).
+[Train to Teach events](/events) are going ahead.
 
 ### What if I’m an overseas applicant?
 
