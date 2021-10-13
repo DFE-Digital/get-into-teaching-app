@@ -50,10 +50,12 @@ export default class extends Controller {
     this.appendZendeskScript();
     this.waitForZendesk(() => {
       window.$zopim.livechat.window.show();
-
-      setTimeout(() => {
-        this.buttonTarget.querySelector('span').innerHTML = originalText;
-      }, 500); // Small delay to account for the chat box animating in.
+      this.waitForWidget(() => {
+        setTimeout(() => {
+          document.getElementById('webWidget').focus();
+          this.buttonTarget.querySelector('span').innerHTML = originalText;
+        }, 500); // Small delay to account for the chat box animating in.
+      });
     });
   }
 
@@ -77,6 +79,15 @@ export default class extends Controller {
     script.src =
       'https://static.zdassets.com/ekr/snippet.js?key=34a8599c-cfec-4014-99bd-404a91839e37';
     document.body.appendChild(script);
+  }
+
+  waitForWidget(callback) {
+    const interval = setInterval(() => {
+      if (document.getElementById('webWidget')) {
+        clearInterval(interval);
+        callback();
+      }
+    }, 100);
   }
 
   waitForZendesk(callback) {

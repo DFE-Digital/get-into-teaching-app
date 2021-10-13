@@ -8,14 +8,19 @@ describe('TalkToUsController', () => {
 
   const setBody = (zendeskEnabled, offlineText = null) => {
     document.body.innerHTML = `
-      <span data-controller="talk-to-us" data-talk-to-us-zendesk-enabled-value="${zendeskEnabled}">
-        <a
-          href="#"
-          data-action="click->talk-to-us#startChat"
-          data-talk-to-us-target="button"
-        ><span>Chat Online</span></a>
-        ${offlineText ? `<p data-talk-to-us-target="offlineText">${offlineText}</p>` : ''}
-      </span>
+      <div>
+        <span data-controller="talk-to-us" data-talk-to-us-zendesk-enabled-value="${zendeskEnabled}">
+          <a
+            href="#"
+            data-action="click->talk-to-us#startChat"
+            data-talk-to-us-target="button"
+          ><span>Chat Online</span></a>
+          ${offlineText ? `<p data-talk-to-us-target="offlineText">${offlineText}</p>` : ''}
+        </span>
+        <div> // Represents the Zendesk modal
+          <iframe id="webWidget"></iframe>
+        </div>
+      </div>
     `;
   }
 
@@ -68,13 +73,16 @@ describe('TalkToUsController', () => {
 
     it('appends the Zendesk snippet, opens the chat window and shows a loading message when clicking the button', () => {
       const button = document.querySelector('a');
+      expect(document.activeElement.id).not.toEqual("webWidget");
       button.click();
       expect(document.querySelector('#ze-snippet')).not.toBeNull();
       expect(getButtonText()).toEqual("Starting chat...");
       jest.runOnlyPendingTimers(); // Timer for script loading,
+      jest.runOnlyPendingTimers(); // Timer to wait for the widget to load.
       jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
       expect(chatShowSpy).toHaveBeenCalled();
       expect(getButtonText()).toEqual("Chat Online");
+      expect(document.activeElement.id).toEqual("webWidget");
     });
 
     describe('when clicking the chat button twice', () => {
@@ -83,6 +91,7 @@ describe('TalkToUsController', () => {
         button.click();
         expect(button.textContent).toEqual("Starting chat...");
         jest.runOnlyPendingTimers(); // Timer for script loading,
+        jest.runOnlyPendingTimers(); // Timer to wait for the widget to load.
         jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
         expect(chatShowSpy).toHaveBeenCalled();
         expect(button.textContent).toEqual("Chat Online");
