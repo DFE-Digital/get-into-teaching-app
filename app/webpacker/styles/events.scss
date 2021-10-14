@@ -1,8 +1,14 @@
 .events {
   display: flex;
+  flex-direction: column;
+
+  @include mq($from: desktop) {
+    flex-direction: row;
+  }
 
   &__filter {
     flex-basis: 33%;
+    padding: 1em;
 
     form {
       label,
@@ -33,6 +39,7 @@
 
   .promoted {
     padding: 2em;
+    margin-bottom: 2em;
     background-color: $grey;
 
     h2 {
@@ -62,8 +69,9 @@
   padding: 2em 1em 1em;
   position: relative;
 
+  border: 2px solid $grey;
+
   &__info {
-    flex-basis: 60%;
     @include font-size(xsmall);
 
     &--name {
@@ -73,8 +81,6 @@
   }
 
   &__meta {
-    flex-basis: 40%;
-
     img {
       width: 100%;
     }
@@ -93,5 +99,8 @@
       font-weight: bold;
       padding: .2em .4em;
     }
+
+    .event__info { flex-basis: 60%; }
+    .event__meta { flex-basis: 40%; }
   }
 }

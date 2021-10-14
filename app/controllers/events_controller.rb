@@ -63,6 +63,7 @@ private
     @event_search = Events::Search.new
 
     @events = Events::Search.new.query_events(10).flat_map(&:teaching_events)
+    @featured_events = @events.shift(2)
   end
 
   def render_not_found

@@ -23,6 +23,10 @@
           <%= f.govuk_check_box :type, "school_and_university", label: { text: "School and university" } %>
         <% end %>
       </div>
+
+      <div class="events__filter--group">
+        <%= tag.button("Update results", class: "button") %>
+      </div>
     <% end %>
   </div>
 
@@ -31,13 +35,16 @@
       <h2>Upcoming train to teach events</h2>
 
       <ol class="events__sublist">
-        <% @events.each do |event| %>
-          <%= render(Events::CardComponent.new(event)) %>
+        <% @featured_events.each do |event| %>
+          <%= render(Events::Cards::TttCardComponent.new(event)) %>
         <% end %>
       </ol>
     </div>
 
     <ol class="events__sublist">
+      <% @events.each do |event| %>
+        <%= render(Events::Cards::CardComponent.new(event)) %>
+      <% end %>
     </ol>
   </div>
 </div>

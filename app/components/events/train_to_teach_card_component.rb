@@ -1,8 +1,10 @@
 module Events
-  class CardComponent < ViewComponent::Base
-    attr_reader :title
+  class TrainToTeachCardComponent < ViewComponent::Base
+    with_collection_parameter :event
 
-    def initialize(event)
+    attr_reader :title, :type
+
+    def initialize(event:)
       @event       = event
       @title       = event.name
       @type        = event.type_id
@@ -30,6 +32,14 @@ module Events
 
     def time_and_duration
       "TODO"
+    end
+
+    def train_to_teach?
+      type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+    end
+
+    def train_to_teach_class
+      "train-to-teach" if train_to_teach?
     end
   end
 end
