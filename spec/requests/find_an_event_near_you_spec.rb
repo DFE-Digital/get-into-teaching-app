@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Find an event near you", type: :request do
+xdescribe "Find an event near you", type: :request do
   include_context "with stubbed types api"
 
   subject { response }

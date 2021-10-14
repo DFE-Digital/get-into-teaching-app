@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "LID tracking pixels", type: :request do
+xdescribe "LID tracking pixels", type: :request do
   subject do
     get path
     response.body

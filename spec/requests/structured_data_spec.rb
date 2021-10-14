@@ -23,7 +23,7 @@ describe "Google Structured Data", type: :request do
       get path
     end
 
-    it { is_expected.to include(a_hash_including("@type": "Event")) }
+    xit { is_expected.to include(a_hash_including("@type": "Event")) }
   end
 
   context "when viewing a nested content page" do

@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe EventsController, type: :request do
+xdescribe EventsController, type: :request do
   include_context "with stubbed types api"
 
   describe "#index" do
