@@ -23,7 +23,7 @@ provider_groups:
       name: Karen Bateman
       telephone: '01582 599921'
       email: kbateman@challneyboys.luton.sch.uk
-    - header: Essex and Thames Primary SCITT
+    - header: Essex and Thames SCITT
       link: https://etpscitt.co.uk/
       name: Fan Attwood
       telephone: '01268 570215'
@@ -260,7 +260,7 @@ provider_groups:
       telephone: '01494 787573'
       email: sro@challoners.org
     - header: Boleyn Trust
-      # link: https://www.elascitt.com
+      link: https://www.londondistricteast.org/scitt
       email: elascitt@tollgate.boleyntrust.org
     - header: Bourton Meadow Initial Teacher Training Centre
       # link: https://www.bourtonmeadowittc.co.uk
