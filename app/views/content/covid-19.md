@@ -60,10 +60,8 @@ Further information is available if you are affected by [changes to UK immigrati
 
 ## If you're an initial teacher training provider
 
-See the government's [guidance for schools](https://www.gov.uk/government/publications/actions-for-schools-during-the-coronavirus-outbreak#school-workforce).
+Read the government's [guidance for schools](https://www.gov.uk/government/publications/actions-for-schools-during-the-coronavirus-outbreak#school-workforce).
 
-We have been working closely across government to [develop guidance to support initial teacher training providers during this time](https://www.gov.uk/government/publications/coronavirus-covid-19-initial-teacher-training-itt).
-
-You can also find [amended ITT criteria](https://www.gov.uk/government/publications/initial-teacher-training-criteria) and guidance on [assessing for QTS](https://www.gov.uk/government/publications/coronavirus-covid-19-initial-teacher-training-itt/coronavirus-covid-19-initial-teacher-training-itt#recommendation-for-qualified-teacher-status-qts--progress-assessments-for-202021-trainees).
+Amendments made to the [ITT criteria](https://www.gov.uk/government/publications/initial-teacher-training-criteria) in 2019/20 and 2020/21 no longer apply for 2021/22.
 
 If you have further urgent questions you can [email our coronavirus inbox](mailto:DfE.coronavirushelpline@education.gov.uk).
