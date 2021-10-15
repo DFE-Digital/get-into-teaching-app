@@ -84,8 +84,6 @@ Annual salary ranges for senior teachers are:
 | London                        | £39,864 | £50,935  |
 | Rest of England and Wales     | £38,690 | £41,604  |
 
-The average salary for a leadership teachers (e.g. head of department) is £56,400.
-
 ### Leading practitioner pay
 
 If you’re an established and exceptional teacher, and regularly show the highest standards of classroom teaching, you can be put onto a higher pay scale.
@@ -112,8 +110,6 @@ Annual salary ranges for headteachers are:
 | -------                       | -----   | -----     |
 | London                        | £43,356 | £125,098  |
 | Rest of England and Wales     | £47,195 | £117,197  |
-
-The average salary for a headteacher is £73,500.
 
 ### Other payments
 
