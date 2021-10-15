@@ -25,7 +25,7 @@ provider_groups:
       email: kbateman@challneyboys.luton.sch.uk
     - header: Essex and Thames SCITT
       link: https://etpscitt.co.uk/
-      name: Fan Attwood
+      name: Fran Attwood
       telephone: '01268 570215'
       email: Fran@etpscitt.co.uk
     - header: Essex Teacher Training
