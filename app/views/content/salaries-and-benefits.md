@@ -26,8 +26,6 @@ For teaching the next generation of citizens you’re entitled to a competitive 
 
 As a new teacher, your salary will be between £25,714 and £32,157, depending on where you teach.
 
-On average, established teachers earn more than this.
-
 The school you teach in will have their own pay scales for qualified teachers. Pay increases will always be linked to performance, not length of service.
 
 Annual salary ranges for qualified teachers are:
@@ -36,6 +34,8 @@ Annual salary ranges for qualified teachers are:
 | -------                                  | -----   | -----   |
 | London                                   | £26,948 | £42,624 |
 | Rest of England and Wales                | £25,714 | £36,961 |
+
+On average, established teachers earn more than this.
 
 ## Holidays
 
