@@ -18,6 +18,39 @@ right_column:
       icon: "icon-person"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
+keywords:
+  - Salary
+  - Salaries
+  - Band
+  - Pay
+  - Pay scale
+  - Scale
+  - Teacher Salary
+  - Teacher Salaries
+  - Leading Practitioner
+  - Headteacher
+  - Progression
+  - Unqualified Teacher
+  - Teaching and learning responsibility
+  - TLR
+  - Holiday
+  - Annual Leave
+  - Pension
+  - Additional
+  - Responsibility
+  - Responsibilities
+  - Career
+  - Benefits
+  - Earnings
+  - Leadership
+  - Early Career Framework
+  - Support
+  - Training
+  - ECF
+  - Teaching
+  - Teacher training
+  - How to become a teacher
+  - Teacher training courses
 ---
 
 For teaching the next generation of citizens you’re entitled to a competitive salary, generous holidays, and a substantial pension.
