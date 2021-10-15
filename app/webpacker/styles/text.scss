@@ -80,17 +80,6 @@ a {
   }
 }
 
-.telephone-number {
-  @include font;
-  color: $blue;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.telephone-number:hover {
-  text-decoration: none;
-}
-
 .strong {
   font-weight: bold;
 }

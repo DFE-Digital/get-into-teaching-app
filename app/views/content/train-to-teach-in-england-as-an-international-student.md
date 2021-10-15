@@ -84,7 +84,7 @@ To teach children aged 3 to 11, you also need the equivalent of a GCSE (grade 4)
 
 If your qualifications come from a non-UK institution, your teacher training provider may want to see a ‘[statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx)’ showing their equivalence to UK qualifications.
 
-Call us on [0800 389 2500](tel://08003892500) for:
+Call us on 0800 389 2500 for:
 
 * guidance on the UK equivalents of your qualifications
 * a free statement of comparability from UK ENIC once you’ve submitted your application, if your provider asks for this
