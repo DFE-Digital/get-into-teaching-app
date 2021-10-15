@@ -1,7 +1,20 @@
 module ApplicationHelper
   def analytics_body_tag(attributes = {}, &block)
-    return tag.body(**attributes, &block) unless Rails.application.config.x.legacy_tracking_pixels
+    if Rails.application.config.x.legacy_tracking_pixels
+      legacy_analytics_body_tag(attributes, &block)
+    else
+      gtm_consent_body_tag(attributes, &block)
+    end
+  end
 
+  def gtm_consent_body_tag(attributes = {}, &block)
+    attributes[:data] ||= {}
+    attributes[:data][:controller] = "gtm-consent"
+
+    tag.body(**attributes, &block)
+  end
+
+  def legacy_analytics_body_tag(attributes = {}, &block)
     attributes = attributes.symbolize_keys
 
     analytics = {
