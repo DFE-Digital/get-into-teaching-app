@@ -28,14 +28,14 @@ As a new teacher, your salary will be between £25,714 and £32,157, depending o
 
 On average, established teachers earn more than this.
 
-Average teaching salaries for 2021/22 are:
+The school you teach in will have their own pay scales for qualified teachers. Pay increases will always be linked to performance, not length of service.
 
-|                                               | Average salary |
-| -------                                       | -----          | 
-| Primary school teachers                       |    £36,000     |
-| Secondary school teachers                     |    £39,000     |
-| Leadership teachers (e.g. head of department) |    £56,400     |
-| Headteachers                                  |    £73,500     |
+Annual salary ranges for qualified teachers are:
+
+| Area                                     | Minimum | Maximum |
+| -------                                  | -----   | -----   |
+| London                                   | £26,948 | £42,624 |
+| Rest of England and Wales                | £25,714 | £36,961 |
 
 ## Holidays
 
@@ -51,9 +51,11 @@ The teachers’ pension scheme is one of the most generous in the country. It is
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
+[Find our more about the teachers' pension scheme](https://www.teacherspensions.co.uk/members/new-starter.aspx)
+
 ## Establishing yourself as a teacher
 
-As well as pay, holidays and a pension, all teachers are given extra support during their first 2 years in teaching. During this time, teachers are called 'early career teachers' (ECTs). 
+As well as pay, holidays and a pension, all teachers are given extra support during their first 2 years in teaching. This is part of the ['early career framework'](https://www.gov.uk/government/collections/early-career-framework-reforms). 
 
 The support includes:
 
@@ -69,17 +71,6 @@ There are different ways to progress and increase your salary.
 
 For example, you can move into a more senior role, or take on additional responsibilities that help your school.
 
-### Qualified teacher pay
-
-The school you teach in will have their own pay scales for qualified teachers. Pay increases will always be linked to performance, not length of service.
-
-Annual salary ranges for qualified teachers are:
-
-| Area                                     | Minimum | Maximum |
-| -------                                  | -----   | -----   |
-| London                                   | £26,948 | £42,624 |
-| Rest of England and Wales                | £25,714 | £36,961 |
-
 ### Senior teacher pay
 
 If you take on extra responsibilities, like being a head of department, you can be put onto a higher pay scale.
@@ -92,6 +83,8 @@ Annual salary ranges for senior teachers are:
 | -------                       | -----   | -----    |
 | London                        | £39,864 | £50,935  |
 | Rest of England and Wales     | £38,690 | £41,604  |
+
+The average salary for a leadership teachers (e.g. head of department) is £56,400.
 
 ### Leading practitioner pay
 
@@ -106,6 +99,7 @@ The pay scales for leading practitioners are:
 | London                        | £43,750 | £72,480  |
 | Rest of England and Wales     | £42,402 | £64,461  |
 
+
 ### Headteacher pay
 
 A headteacher is the most senior person in a school. They are ultimately responsible for all teachers and pupils. 
@@ -118,6 +112,8 @@ Annual salary ranges for headteachers are:
 | -------                       | -----   | -----     |
 | London                        | £43,356 | £125,098  |
 | Rest of England and Wales     | £47,195 | £117,197  |
+
+The average salary for a headteacher is £73,500.
 
 ### Other payments
 
