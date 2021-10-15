@@ -190,4 +190,4 @@ Contact the education authority if you live in the Channel Islands ([Jersey](htt
 
 [Find out more about financial help if you're an applicant from outside the UK](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#financial-support-for-non-uk-applicants-for-unsalaried-teacher-training-in-england).
 
-<a class ="button button--white" href ="/train-to-teach-in-england-as-an-international-student">Train to teach as an international candidate</a>
+<a class="button" href ="/train-to-teach-in-england-as-an-international-student">Train to teach as an international candidate</a>
