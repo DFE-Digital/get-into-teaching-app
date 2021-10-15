@@ -11,6 +11,12 @@ export default class CookiePreferences {
     marketing: true,
   };
 
+  static functionalCookies = [
+    'git-cookie-preferences-v1',
+    '_dfe_session',
+    'GiTBetaBannerCovid',
+  ];
+
   settings = null;
   cookieSet = false;
 
@@ -73,12 +79,25 @@ export default class CookiePreferences {
     this.emitEvent(newlyAllowed);
   }
 
+  clearNonEssentialCookies() {
+    Object.keys(Cookies.get()).forEach((key) => {
+      if (!CookiePreferences.functionalCookies.includes(key))
+        Cookies.remove(key);
+    });
+  }
+
   setCategory(category, value) {
     const strValue = value.toString();
     const boolValue =
       strValue === '1' || strValue === 'true' || strValue === 'yes';
 
     const newSettings = Object.assign({}, this.settings);
+    const optingOut = newSettings[category] === true && !boolValue;
+
+    if (optingOut) {
+      this.clearNonEssentialCookies();
+    }
+
     newSettings[category] = boolValue;
 
     this.all = newSettings;
