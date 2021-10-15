@@ -75,4 +75,6 @@ Rails.application.configure do
   config.x.zendesk_chat = true
 
   config.x.legacy_tracking_pixels = false
+
+  config.x.covid_banner = false
 end
