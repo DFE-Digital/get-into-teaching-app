@@ -141,7 +141,7 @@ Annual salary ranges for headteachers are:
 
 | Area                          | Minimum | Maximum   |
 | -------                       | -----   | -----     |
-| London                        | £43,356 | £125,098  |
+| London                        | £48,901 | £125,098  |
 | Rest of England and Wales     | £47,195 | £117,197  |
 
 ### Other payments
