@@ -99,11 +99,17 @@ Fees are usually around £9,250 but you can:
   </div>
 </div>
 
-### Train as you teach at a school or group of schools
+### Train with a school or group of schools
 
-On a 'school direct (fee-funded)' programme, your learning will be centred on a particular school, but you will also be placed in different schools during your course.
+#### School-centred initial teacher training (SCITT)
 
-Many 'school direct (fee-funded)' programmes give you a PGCE or PGDE (an academic qualification) in addition to QTS.
+SCITT programmes are delivered by a network of schools and focus on training as you teach.
+
+#### School Direct (fee-funded)
+
+School Direct (fee-funded) programmes are delivered by groups of schools in collaboration with a SCITT or university. The content and structure of a School Direct course is broadly similar to a SCITT course, each providing school-based training.
+
+Many SCITT and School Direct (fee-funded) programmes give you a PGCE or PGDE (an academic qualification) in addition to QTS.
 
 Courses typically take one year but you may be able to study part-time.
 
