@@ -142,7 +142,7 @@ teacher training adviser](/tta-service).
 Explaining why you want to be a teacher is an essential part of your application - so
 it’s worth taking your time on it.
 
-A personal statement is usually about 500 words. It’s your chance to show your
+A personal statement is usually about 1,000 words. It’s your chance to show your
 motivation, commitment and teaching potential.
 
 You may want to cover some of the following:
