@@ -99,7 +99,7 @@ Fees are usually around £9,250 but you can:
   </div>
 </div>
 
-### Train as you teach at a school or group of schools
+### Train with a school or group of schools
 
 ### School-centred initial teacher training (SCITT)
 
