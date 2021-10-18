@@ -4,6 +4,12 @@ data "cloudfoundry_route" "app_route_internet" {
   domain   = data.cloudfoundry_domain.internet.id
 }
 
+data "cloudfoundry_route" "app_route_assets" {
+  for_each = toset(var.paas_asset_hostnames)
+  hostname = each.value
+  domain   = data.cloudfoundry_domain.internet.id
+}
+
 resource "cloudfoundry_route" "app_route_cloud" {
   domain   = data.cloudfoundry_domain.cloudapps.id
   hostname = var.paas_app_route_name

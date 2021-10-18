@@ -1,7 +1,9 @@
 locals {
   environment_map = { HTTPAUTH_PASSWORD = data.azurerm_key_vault_secret.http_password.value,
                       HTTPAUTH_USERNAME = data.azurerm_key_vault_secret.http_username.value,
-                      BASIC_AUTH        = var.basic_auth}
+                      BASIC_AUTH        = var.basic_auth,
+                      APP_URL           = length( var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_internet_hostnames[0]}.${data.cloudfoundry_domain.internet.name}",
+                      APP_ASSETS_URL    = length( var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_asset_hostnames[0]}.${data.cloudfoundry_domain.internet.name}" }
 }
 
 resource "cloudfoundry_app" "app_application" {
@@ -14,6 +16,7 @@ resource "cloudfoundry_app" "app_application" {
   disk_quota   = 3072
   timeout      = var.timeout
   instances    = var.instances
+
   dynamic "service_binding" {
     for_each = data.cloudfoundry_user_provided_service.logging
     content {
@@ -40,8 +43,12 @@ resource "cloudfoundry_app" "app_application" {
     }
   }
 
-  environment = merge(local.application_secrets, local.environment_map)
+  dynamic "routes" {
+    for_each = data.cloudfoundry_route.app_route_assets
+    content {
+      route = routes.value["id"]
+    }
+  }
+
+  environment = { for i, v in merge(local.application_secrets, local.environment_map) : i => v if v != "" }
 }
-
-
-
