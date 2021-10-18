@@ -616,7 +616,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
-    @mixin got-questions-layout {
+    @mixin youre-not-the-only-one-with-questions-layout {
       grid-template-columns: 1fr;
       padding-bottom: 0;
 
@@ -631,8 +631,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
-    &.got-questions {
-      @include got-questions-layout;
+    &.youre-not-the-only-one-with-questions {
+      @include youre-not-the-only-one-with-questions-layout;
 
       display: grid;
 
