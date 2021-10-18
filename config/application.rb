@@ -39,3 +39,6 @@ module GetIntoTeachingWebsite
     config.skylight.environments.append("preprod", "dev", "test", "staging", "userresearch", "rolling")
   end
 end
+
+# Prevent Rails from attempting to auto-load JS/assets.
+Rails.autoloaders.main.ignore(Rails.root.join("app/webpacker"))
