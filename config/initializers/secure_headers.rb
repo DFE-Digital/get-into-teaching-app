@@ -35,7 +35,7 @@ SecureHeaders::Configuration.default do |config|
   govuk     = %w[*.gov.uk www.gov.uk]
   hotjar    = %w[*.hotjar.com vc.hotjar.io wss://*.hotjar.com]
   jquery    = %w[code.jquery.com]
-  pinterest = %w[*.pinterest.com ct.pinterest.com *.pinimg.com]
+  pinterest = %w[*.pinterest.com *.pinterest.co.uk *.pinimg.com]
   scribble  = %w[embed.scribblelive.com]
   snapchat  = %w[*.snapchat.com sc-static.net]
   twitter   = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
@@ -57,7 +57,7 @@ SecureHeaders::Configuration.default do |config|
     connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk),
     font_src: ["'self'"].concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: ["'self'"].concat(snapchat, facebook, govuk),
-    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data),
+    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data, pinterest),
     frame_ancestors: ["'self'"],
     img_src: ["'self'"].concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, %w[cx.atdmt.com linkbam.uk]),
     manifest_src: ["'self'"],
