@@ -101,11 +101,11 @@ Fees are usually around £9,250 but you can:
 
 ### Train with a school or group of schools
 
-### School-centred initial teacher training (SCITT)
+#### School-centred initial teacher training (SCITT)
 
 SCITT programmes are delivered by a network of schools and focus on training as you teach.
 
-### School Direct (fee-funded)
+#### School Direct (fee-funded)
 
 School Direct (fee-funded) programmes are delivered by groups of schools in collaboration with a SCITT or university. The content and structure of a School Direct course is broadly similar to a SCITT course, each providing school-based training.
 
