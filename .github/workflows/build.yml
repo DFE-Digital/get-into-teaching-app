@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -102,7 +102,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -139,7 +139,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -161,7 +161,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -248,7 +248,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -309,7 +309,7 @@ jobs:
       release_sha: ${{github.sha }}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -393,7 +393,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -451,7 +451,7 @@ jobs:
     needs: [ qa ]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -496,7 +496,7 @@ jobs:
     needs: [ cypress, development ]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.3.5
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
