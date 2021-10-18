@@ -12,7 +12,7 @@
     <%= javascript_pack_tag 'fake_browser_time', 'data-turbolinks-track': 'reload', id: "fake-browser-time" %>
   <% end %>
   <%= google_optimize_script %>
-  <%= javascript_pack_tag 'gtm', 'data-turbolinks-track': 'reload', data: { "gtm-id": ENV["GTM_ID"] }, async: true unless Rails.application.config.x.legacy_tracking_pixels %>
+  <%= javascript_pack_tag 'gtm', 'data-turbolinks-track': 'reload', data: { "gtm-id": ENV["GTM_ID"] }, async: true if new_gtm_enabled? %>
   <%= javascript_pack_tag 'js_enabled', 'data-turbolinks-track': 'reload', async: true %>
   <%= javascript_pack_tag 'lazy_images', 'data-turbolinks-track': 'reload', async: true %>
   <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', async: true %>

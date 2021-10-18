@@ -18,7 +18,10 @@ describe "Google Tag Manager", type: :request do
       blog_index_path,
       event_path(event.readable_id),
       event_step_path(event.readable_id, :personal_details),
+      event_step_path(event.readable_id, :further_details),
       events_path,
+      teaching_events_path,
+      teaching_event_path(event.readable_id),
       root_path,
     ]
   end
@@ -39,6 +42,21 @@ describe "Google Tag Manager", type: :request do
         get layout_path
         expect(response.body).to include("data-gtm-id=\"123-ABC\""), "#{layout_path} does not include GTM"
         expect(response.body).to include("https://www.googletagmanager.com/ns.html"), "#{layout_path} does not include GTM fallback"
+      end
+    end
+
+    context "when the GTM_ID is not set" do
+      before do
+        allow(ENV).to receive(:[]).and_call_original
+        allow(ENV).to receive(:[]).with("GTM_ID").and_return(nil)
+      end
+
+      it "does not have the GTM and fallback scripts" do
+        layout_paths.each do |layout_path|
+          get layout_path
+          expect(response.body).not_to include("data-gtm-id"), "#{layout_path} does not include GTM"
+          expect(response.body).not_to include("https://www.googletagmanager.com/ns.html"), "#{layout_path} does not include GTM fallback"
+        end
       end
     end
   end
