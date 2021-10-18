@@ -37,8 +37,7 @@ export default class extends Controller {
   }
 
   triggerEvent() {
-    if (document.documentElement.hasAttribute('data-turbolinks-preview'))
-      return;
+    if (document.documentElement.hasAttribute('data-turbo-preview')) return;
 
     if (!this.isEnabled) return;
 
