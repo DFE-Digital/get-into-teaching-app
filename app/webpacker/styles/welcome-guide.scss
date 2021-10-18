@@ -637,7 +637,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       display: grid;
 
       h2,
-      p {
+      p,
+      figure {
         margin-block: .2em;
 
         @include mq($from: desktop) {
@@ -701,13 +702,21 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         .intro {
           padding: 2em 4em;
           font-weight: bold;
-          flex-basis: 50%;
+          flex-basis: 40%;
+          @include font-size(small, $adjust: .2rem);
         }
 
         .questions-and-answers {
-          flex-basis: 50%;
+          flex-basis: 60%;
           flex: 1 0 fill;
           padding: 0 4em;
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+
+          .question-and-answer {
+            margin-block: 1em;
+          }
 
           .q {
             font-weight: bold;
@@ -718,6 +727,30 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           }
 
           .a {
+            figcaption,
+            blockquote {
+              @include reset;
+            }
+
+            blockquote {
+              &:before {
+                content: open-quote;
+              }
+
+              &:after {
+                content: close-quote;
+              }
+            }
+
+            figcaption {
+              font-style: italic;
+
+              &:before {
+                content: "\2014 "; // emdash
+                margin-right: .3em;
+              }
+            }
+
             &:before {
               @include question-decoration("A");
             }
