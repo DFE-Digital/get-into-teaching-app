@@ -8,7 +8,7 @@ module WelcomeHelper
   end
 
   def welcome_guide_subject(leave_capitalised: false)
-    subject_by_uuid(welcome_guide_subject_id, leave_capitalised: leave_capitalised)
+    retrieve_subject(welcome_guide_subject_id, leave_capitalised: leave_capitalised)
   end
 
   def teaching_subject(leave_capitalised: false, mark_subject: false)
@@ -44,7 +44,7 @@ private
 
   # return the subject name from its uuid, downcasing all except
   # proper nouns
-  def subject_by_uuid(uuid, leave_capitalised:)
+  def retrieve_subject(uuid, leave_capitalised:)
     subject = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.invert[uuid]
 
     return if subject.blank?

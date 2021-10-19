@@ -38,7 +38,11 @@
     <div class="text">
       <h2>
         <span class="pink nowrap">
-          Teaching <span class="underline">maths</span>
+          <% if welcome_guide_subject.present? %>
+            Teaching <span class="underline"><%= welcome_guide_subject %></span>
+          <% else %>
+            <span class="underline">Teaching </span>
+          <% end %>
         </span>
 
         <br>

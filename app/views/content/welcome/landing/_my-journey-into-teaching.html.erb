@@ -35,58 +35,5 @@
     %>
   </div>
 
-  <%
-    maths = {
-      name: "Dimitra",
-      subject: "maths",
-      image: "dimitra-desert-crop.jpg",
-      text: "Meet Dimitra, find out how she got into teaching maths and what she's looking forward to next.",
-    }
-
-    sciences = {
-      name: "Holly",
-      subject: "science",
-      image: "dimitra-desert-crop.jpg",
-      text: "Meet Holly - find out how she got into teaching science and what she's looking forward to next.",
-    }
-
-    english = {
-      name: "Laura",
-      subject: "English",
-      image: "dimitra-desert-crop.jpg",
-      text: "Meet Laura - find out how she got into teaching English and how she became Head of Department in under 5 years.",
-    }
-
-    mfl = {
-      name: "Tom",
-      subject: "languages",
-      image: "dimitra-desert-crop.jpg",
-      text: "Meet Tom - find out how he got into teaching Spanish and what he's looking forward to next.",
-    }
-
-    subject_specific_args = {
-      "a42655a1-2afa-e811-a981-000d3a276620" => maths,
-      "942655a1-2afa-e811-a981-000d3a276620" => english,
-
-      "802655a1-2afa-e811-a981-000d3a276620" => sciences,  # biology
-      "842655a1-2afa-e811-a981-000d3a276620" => sciences,  # chemistry
-      "ac2655a1-2afa-e811-a981-000d3a276620" => sciences,  # physics
-      "ae2655a1-2afa-e811-a981-000d3a276620" => sciences,  # physics with maths
-      "982655a1-2afa-e811-a981-000d3a276620" => sciences,  # general science
-
-      "962655a1-2afa-e811-a981-000d3a276620" => mfl,       # french
-      "9c2655a1-2afa-e811-a981-000d3a276620" => mfl,       # german
-      "b82655a1-2afa-e811-a981-000d3a276620" => mfl,       # spanish
-      "a22655a1-2afa-e811-a981-000d3a276620" => mfl,       # languages (other)
-    }.fetch(welcome_guide_subject_id) do
-      {
-        name: "Helen",
-        subject: nil,
-        image: "dimitra-desert-crop.jpg",
-        text: "Meet Helen - find out how she went from trainee to Assistant Headteacher and what she's looking forward to next.",
-      }
-    end
-  %>
-
   <%= render partial: 'content/welcome/landing/subject-specific-story', locals: subject_specific_args %>
 </section>
