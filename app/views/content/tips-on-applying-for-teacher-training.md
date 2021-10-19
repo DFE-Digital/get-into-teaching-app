@@ -143,30 +143,37 @@ teacher training adviser](/tta-service).
 
 ## Your personal statement
 
-Explaining why you want to be a teacher is an essential part of your application - so
-it’s worth taking your time on it.
+Your personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it. 
 
-A personal statement is usually about 1,000 words. It’s your chance to show your
-motivation, commitment and teaching potential.
+Personal statements are split into two sections. In total they are usually around 1,000 words.
 
-You may want to cover some of the following:
+### Section 1: Why do you want to teach?
 
-* why you want to teach
+Up to 600 words.
+
+This is the place to talk about why you think you would make a great teacher. You can include:
+
 * what inspired you to choose teaching
-* your understanding of the demands and rewards of teaching
-* the personal qualities that will make you a good teacher
-* your contribution to the life of the school outside the classroom – for
-  example, running extra-curricular activities and clubs
-* details of any experience you have working with children and what you learnt
-* your suitability to teach a subject or group
+* your understanding of the demands and rewards of the profession
+* personal qualities that will make you a good teacher
+* your contribution to the life of the school outside the classroom – for example, running extra-curricular activities and clubs
+* any experience you have working with children and what you learnt
 * your thoughts on children’s wellbeing and the education system
 
-As part of your personal statement you'll need to demonstrate your suitability to teach a subject or age group. You could talk about:
 
-* the subject of your undergraduate degree and the modules you studied
-* postgraduate degrees (for example, a Masters or PhD)
-* your A level subjects
-* expertise you’ve gained at work
+### Section 2: Your suitability to teach a subject or age group.
+
+Up to 400 words.
+
+If you’re applying for secondary teacher training, use this section to demonstrate your interest in and knowledge of the subject(s) you’ve chosen. 
+
+If you’re applying for primary teacher training, demonstrate why teaching that age group is suited to you.
+ 
+You could talk about:
+ 
+* any relevant work experience or unpaid experience
+* your degree(s) and other studies, such as your A levels
+* any relevant skills, interests or achievements
 
 [If you're concerned about your subject knowledge](/improve-your-subject-knowledge), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
 
