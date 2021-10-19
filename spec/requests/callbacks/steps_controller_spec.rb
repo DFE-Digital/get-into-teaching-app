@@ -53,13 +53,13 @@ describe Callbacks::StepsController, type: :request do
     context "with invalid data" do
       let(:details_params) { { "first_name" => "test" } }
 
-      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_http_status :unprocessable_entity }
     end
 
     context "with no data" do
       let(:details_params) { {} }
 
-      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_http_status :unprocessable_entity }
     end
 
     context "with last step" do

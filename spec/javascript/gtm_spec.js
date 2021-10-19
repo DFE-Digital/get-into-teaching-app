@@ -44,7 +44,7 @@ describe('Google Tag Manager', () => {
     });
   });
 
-  describe('on Turbolinks page changes', () => {
+  describe('on Turbo page changes', () => {
     beforeEach(() => {
       mockGtag();
       run();
@@ -53,7 +53,7 @@ describe('Google Tag Manager', () => {
     it('updates the page_path in GTM', () => {
       window.location.path = '/new-path';
 
-      document.dispatchEvent(new Event('turbolinks:load'));
+      document.dispatchEvent(new Event('turbo:load'));
 
       expect(window.gtag).toHaveBeenCalledWith('set', 'page_path', '/new-path');
       expect(window.gtag).toHaveBeenCalledWith('event', 'page_view');

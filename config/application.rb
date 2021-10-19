@@ -23,7 +23,7 @@ Bundler.require(*Rails.groups)
 module GetIntoTeachingWebsite
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.2
+    config.load_defaults 6.0
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -39,3 +39,6 @@ module GetIntoTeachingWebsite
     config.skylight.environments.append("preprod", "dev", "test", "staging", "userresearch", "rolling")
   end
 end
+
+# Prevent Rails from attempting to auto-load JS/assets.
+Rails.autoloaders.main.ignore(Rails.root.join("app/webpacker"))
