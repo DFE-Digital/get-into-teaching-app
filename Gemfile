@@ -73,7 +73,7 @@ gem "rexml", ">= 3.2.5"
 gem "geometry", github: "bfoz/geometry", ref: "3054ccb"
 gem "victor"
 
-gem "turbo-rails"
+gem "turbo-rails", ">= 7.1.0"
 
 # Ignore cloudfront IPs when getting customer IP address
 gem "actionpack-cloudfront", ">= 1.1.0"
