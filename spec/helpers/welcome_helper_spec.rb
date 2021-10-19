@@ -1,6 +1,8 @@
 require "rails_helper"
 
 RSpec.describe WelcomeHelper, type: :helper do
+  let(:physics_uuid) { "ac2655a1-2afa-e811-a981-000d3a276620" }
+
   describe "#greeting" do
     context "when the first name is known" do
       let(:name) { "Joey" }
@@ -19,42 +21,70 @@ RSpec.describe WelcomeHelper, type: :helper do
     end
   end
 
+  describe "#welcome_guide_subject" do
+    subject { welcome_guide_subject }
+
+    context "when overridden by the 'subject' query parameter" do
+      before { allow_any_instance_of(ActionController::Parameters).to receive(:[]).and_return("842655a1-2afa-e811-a981-000d3a276620") }
+
+      specify "returns the subject from the query param" do
+        expect(subject).to eql("chemistry")
+      end
+    end
+
+    context "when the subject is known" do
+      context "when the subject name is a common noun" do
+        GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.slice("Art and design", "Biology", "Chemistry", "General science", "Languages (other)", "Maths", "Physics with maths", "Physics")
+          .each do |subject_name, subject_id|
+            describe "#{subject_name} is lowercased" do
+              before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id") { subject_id } }
+
+              it { is_expected.to eql(subject_name.downcase) }
+            end
+          end
+      end
+
+      context "when the subject name is a proper noun" do
+        GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.slice("English", "German", "Spanish", "French")
+          .each do |subject_name, subject_id|
+            describe "#{subject_name} is not lowercased" do
+              before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id") { subject_id } }
+
+              it { is_expected.to eql(subject_name) }
+            end
+          end
+      end
+    end
+
+    context "when leave_capitalised is true" do
+      subject { welcome_guide_subject(leave_capitalised: true) }
+
+      before do
+        allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return(physics_uuid)
+      end
+
+      specify { is_expected.to eql("Physics") }
+    end
+  end
+
   describe "#teaching_subject" do
     subject { teaching_subject }
 
-    context "when the subject is known" do
-      context "when the subject name is a proper noun" do
-        {
-          "Art and design" => "7e2655a1-2afa-e811-a981-000d3a276620",
-          "Biology" => "802655a1-2afa-e811-a981-000d3a276620",
-          "Chemistry" => "842655a1-2afa-e811-a981-000d3a276620",
-          "General science" => "982655a1-2afa-e811-a981-000d3a276620",
-          "Languages (other)" => "a22655a1-2afa-e811-a981-000d3a276620",
-          "Maths" => "a42655a1-2afa-e811-a981-000d3a276620",
-          "Physics with maths" => "ae2655a1-2afa-e811-a981-000d3a276620",
-          "Physics" => "ac2655a1-2afa-e811-a981-000d3a276620",
-        }.each do |subject_name, subject_id|
-          describe "#{subject_name} is lowercased" do
-            before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id") { subject_id } }
+    context "when the subject is recognised" do
+      before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return(physics_uuid) }
 
-            it { is_expected.to eql("teaching <mark>#{subject_name.downcase}.</mark>") }
-          end
-        end
+      it { is_expected.to eql("teaching physics.") }
+
+      context "when the subject is recognised and left capitalised" do
+        subject { teaching_subject(leave_capitalised: true) }
+
+        it { is_expected.to eql("teaching Physics.") }
       end
 
-      context "when the subject name is a common noun" do
-        {
-          "English" => "942655a1-2afa-e811-a981-000d3a276620",
-          "German" => "9c2655a1-2afa-e811-a981-000d3a276620",
-          "Spanish" => "b82655a1-2afa-e811-a981-000d3a276620",
-          "French" => "962655a1-2afa-e811-a981-000d3a276620",
-        }.each do |subject_name, subject_id|
-          describe "#{subject_name} is not lowercased" do
-            before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id") { subject_id } }
+      context "when the mark subject is true" do
+        subject { teaching_subject(mark_subject: true) }
 
-            it { is_expected.to eql("teaching <mark>#{subject_name}.</mark>") }
-          end
-        end
+        it { is_expected.to eql("teaching <mark>physics.</mark>") }
       end
     end
 
@@ -63,9 +93,37 @@ RSpec.describe WelcomeHelper, type: :helper do
     end
 
     context "when the subject isn't recognised" do
-      before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return("11111111-2222-3333-4444-555555555555") }
+      let(:fake_uuid) { "11111111-2222-3333-4444-555555555555" }
+
+      before do
+        allow(session).to(receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return(fake_uuid))
+      end
 
       it { is_expected.to eql("<mark>teaching.</mark>") }
+    end
+  end
+
+  describe "#welcome_guide_subject_id" do
+    subject { welcome_guide_subject }
+
+    context "when overridden by the 'subject' query parameter" do
+      let(:languages_uuid) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["Languages (other)"] }
+
+      before { allow_any_instance_of(ActionController::Parameters).to receive(:[]).and_return(languages_uuid) }
+
+      specify "returns the subject from the query param" do
+        expect(subject).to eql("languages (other)")
+      end
+    end
+
+    context "when the subject id is in the mailinglist session param" do
+      let(:german_uuid) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["German"] }
+
+      before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return(german_uuid) }
+
+      specify "returns the subject from the query param" do
+        expect(subject).to eql("German")
+      end
     end
   end
 end

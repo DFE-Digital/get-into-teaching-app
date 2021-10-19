@@ -7,11 +7,15 @@ module WelcomeHelper
     end
   end
 
-  def teaching_subject
-    subject_id = session.dig("mailinglist", "preferred_teaching_subject_id")
+  def welcome_guide_subject(leave_capitalised: false)
+    subject_by_uuid(welcome_guide_subject_id, leave_capitalised: leave_capitalised)
+  end
 
-    if (subject = retrrieve_subject(subject_id))
-      safe_join(["teaching", tag.mark("#{subject}.")], " ")
+  def teaching_subject(leave_capitalised: false, mark_subject: false)
+    if (subject = welcome_guide_subject(leave_capitalised: leave_capitalised))
+      subject_name = mark_subject ? tag.mark("#{subject}.") : "#{subject}."
+
+      safe_join(["teaching", subject_name], " ")
     else
       tag.mark("teaching.")
     end
@@ -28,16 +32,20 @@ module WelcomeHelper
     end
   end
 
+  def welcome_guide_subject_id
+    params[:subject_id] || session.dig("mailinglist", "preferred_teaching_subject_id")
+  end
+
 private
 
   # return the subject name from its uuid, downcasing all except
   # proper nouns
-  def retrrieve_subject(uuid)
+  def subject_by_uuid(uuid, leave_capitalised:)
     subject = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.invert[uuid]
 
     return if subject.blank?
 
-    return subject if uuid.in?([
+    return subject if leave_capitalised || uuid.in?([
       "942655a1-2afa-e811-a981-000d3a276620", # English
       "962655a1-2afa-e811-a981-000d3a276620", # French
       "9c2655a1-2afa-e811-a981-000d3a276620", # German
