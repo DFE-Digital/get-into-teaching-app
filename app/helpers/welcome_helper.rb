@@ -1,6 +1,6 @@
 module WelcomeHelper
   def greeting
-    if (first_name = session.dig("mailinglist", "first_name"))
+    if first_name
       "Hey #{first_name}"
     else
       "Hello"
@@ -34,6 +34,10 @@ module WelcomeHelper
 
   def welcome_guide_subject_id
     params[:subject_id] || session.dig("mailinglist", "preferred_teaching_subject_id")
+  end
+
+  def first_name
+    session.dig("mailinglist", "first_name")
   end
 
 private

@@ -52,7 +52,11 @@
 
   <div class="good-luck">
     <p>
-      Good luck <span class="yellow">Simon!</span> You've got this.
+      <% if first_name.present? %>
+        Good luck <span class="yellow"><%= first_name %>!</span> You've got this.
+      <% else %>
+        <span class="yellow">Good luck!</span> You've got this.
+      <% end %>
     </p>
     <div class="arrow-container">
       <%=
