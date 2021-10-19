@@ -134,6 +134,10 @@ It’s important to have at least one academic or professional reference.
 If you’re applying for a salaried course, one of your references must be from
 an employer.
 
+You can request as many references as you like to increase the chances of getting 2 quickly.
+
+Once you've recieved 2 or more references, you can select the 2 you want to include in your application.
+
 If you’re struggling to choose your referees, [get free one-on-one support from a
 teacher training adviser](/tta-service).
 
@@ -149,13 +153,13 @@ You may want to cover some of the following:
 
 * why you want to teach
 * what inspired you to choose teaching
-* your thoughts on children’s wellbeing and the education system
-* your understanding of the demands and rewards of the profession
-* personal qualities that will make you a good teacher
+* your understanding of the demands and rewards of teaching
+* the personal qualities that will make you a good teacher
 * your contribution to the life of the school outside the classroom – for
   example, running extra-curricular activities and clubs
 * details of any experience you have working with children and what you learnt
 * your suitability to teach a subject or group
+* your thoughts on children’s wellbeing and the education system
 
 As part of your personal statement you'll need to demonstrate your suitability to teach a subject or age group. You could talk about:
 
