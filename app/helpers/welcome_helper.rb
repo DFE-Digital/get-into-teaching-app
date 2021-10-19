@@ -11,13 +11,13 @@ module WelcomeHelper
     retrieve_subject(welcome_guide_subject_id, leave_capitalised: leave_capitalised)
   end
 
-  def teaching_subject(leave_capitalised: false, mark_subject: false)
+  def teaching_subject(leave_capitalised: false, mark_tag: false)
     if (subject = welcome_guide_subject(leave_capitalised: leave_capitalised))
-      subject_name = mark_subject ? tag.mark("#{subject}.") : "#{subject}."
+      subject_name = mark_tag ? tag.mark("#{subject}.") : "#{subject}."
 
       safe_join(["teaching", subject_name], " ")
     else
-      tag.mark("teaching.")
+      mark_tag ? tag.mark("teaching.") : "teaching."
     end
   end
 

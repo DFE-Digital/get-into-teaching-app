@@ -82,7 +82,7 @@ RSpec.describe WelcomeHelper, type: :helper do
       end
 
       context "when the mark subject is true" do
-        subject { teaching_subject(mark_subject: true) }
+        subject { teaching_subject(mark_tag: true) }
 
         it { is_expected.to eql("teaching <mark>physics.</mark>") }
       end
