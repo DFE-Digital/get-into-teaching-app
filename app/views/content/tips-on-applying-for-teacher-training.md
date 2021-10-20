@@ -163,14 +163,14 @@ This is the place to talk about why you think you would make a great teacher. Yo
 
 Up to 400 words.
 
-If you’re applying for secondary teacher training, use this section to demonstrate your interest in and knowledge of the subject(s) you’ve chosen.
+If you’re applying for secondary teacher training, use this section to describe your knowledge of the subjects you’ve chosen.
 
-If you’re applying for primary teacher training, demonstrate why teaching that age group is suited to you.
+If you’re applying for primary teacher training, say why you'd like to teach this age group.
 
 You could talk about:
 
 * any relevant work or unpaid experience
-* your degree(s) and other studies, such as your A levels
+* your degree and other relevant qualifications, such as your A levels
 * any relevant skills, interests or achievements
 * your understanding of the national curriculum
 
