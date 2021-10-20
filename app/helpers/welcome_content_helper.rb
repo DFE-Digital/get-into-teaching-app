@@ -34,7 +34,7 @@ module WelcomeContentHelper
     text: "Meet Helen - find out how she went from trainee to Assistant Headteacher and what she's looking forward to next.",
   }.freeze
 
-  def subject_specific_args
+  def subject_specific_story_args(id = welcome_guide_subject_id)
     {
       "a42655a1-2afa-e811-a981-000d3a276620" => MATHS,
       "942655a1-2afa-e811-a981-000d3a276620" => ENGLISH,
@@ -49,6 +49,6 @@ module WelcomeContentHelper
       "9c2655a1-2afa-e811-a981-000d3a276620" => MFL,       # german
       "b82655a1-2afa-e811-a981-000d3a276620" => MFL,       # spanish
       "a22655a1-2afa-e811-a981-000d3a276620" => MFL,       # languages (other)
-    }.fetch(welcome_guide_subject_id) { GENERIC }
+    }.fetch(id) { GENERIC }
   end
 end
