@@ -1,6 +1,6 @@
 module Callbacks
   module Steps
-    class Callback < ::Wizard::Step
+    class Callback < ::DFEWizard::Step
       extend CallbackBookingQuotas
 
       attribute :address_telephone, :string

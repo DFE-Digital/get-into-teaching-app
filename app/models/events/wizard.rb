@@ -1,16 +1,20 @@
 require "attribute_filter"
 
 module Events
-  class Wizard < ::Wizard::Base
+  class Wizard < ::DFEWizard::Base
     include ::Wizard::ApiClientSupport
 
     self.steps = [
       Steps::PersonalDetails,
-      ::Wizard::Steps::Authenticate,
+      ::DFEWizard::Steps::Authenticate,
       Steps::ContactDetails,
       Steps::FurtherDetails,
       Steps::PersonalisedUpdates,
     ].freeze
+
+    def matchback_attributes
+      %i[candidate_id qualification_id is_verified].freeze
+    end
 
     def complete!
       super.tap do |result|

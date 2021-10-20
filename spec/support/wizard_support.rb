@@ -1,7 +1,16 @@
 shared_context "with wizard store" do
   let(:backingstore) { { "name" => "Joe", "age" => 35 } }
   let(:crm_backingstore) { {} }
-  let(:wizardstore) { Wizard::Store.new backingstore, crm_backingstore }
+  let(:wizardstore) { DFEWizard::Store.new backingstore, crm_backingstore }
+end
+
+class TestWizard < DFEWizard::Base
+  class Name < DFEWizard::Step
+    attribute :name
+    validates :name, presence: true
+  end
+
+  self.steps = [Name].freeze
 end
 
 shared_context "with wizard step" do
@@ -173,29 +182,4 @@ shared_examples "an issue verification code with wizard step" do
       expect(wizardstore["matchback_failures"]).to eq(2)
     end
   end
-end
-
-class TestWizard < Wizard::Base
-  class Name < Wizard::Step
-    attribute :name
-    validates :name, presence: true
-  end
-
-  # To simulate two steps writing to the same attribute.
-  class OtherAge < Wizard::Step
-    attribute :age, :integer
-    validates :age, presence: false
-  end
-
-  class Age < Wizard::Step
-    attribute :age, :integer
-    validates :age, presence: true
-  end
-
-  class Postcode < Wizard::Step
-    attribute :postcode
-    validates :postcode, presence: true
-  end
-
-  self.steps = [Name, OtherAge, Age, Postcode].freeze
 end

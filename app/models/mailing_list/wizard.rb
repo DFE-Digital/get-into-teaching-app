@@ -1,12 +1,12 @@
 require "attribute_filter"
 
 module MailingList
-  class Wizard < ::Wizard::Base
+  class Wizard < ::DFEWizard::Base
     include ::Wizard::ApiClientSupport
 
     self.steps = [
       Steps::Name,
-      ::Wizard::Steps::Authenticate,
+      ::DFEWizard::Steps::Authenticate,
       Steps::AlreadySubscribed,
       Steps::DegreeStatus,
       Steps::TeacherTraining,
@@ -14,6 +14,10 @@ module MailingList
       Steps::Postcode,
       Steps::PrivacyPolicy,
     ].freeze
+
+    def matchback_attributes
+      %i[candidate_id qualification_id].freeze
+    end
 
     def complete!
       super.tap do |result|

@@ -1,17 +1,21 @@
 require "attribute_filter"
 
 module Callbacks
-  class Wizard < ::Wizard::Base
+  class Wizard < ::DFEWizard::Base
     include ::Wizard::ApiClientSupport
 
     self.steps = [
       Steps::PersonalDetails,
       Steps::MatchbackFailed,
-      ::Wizard::Steps::Authenticate,
+      ::DFEWizard::Steps::Authenticate,
       Steps::Callback,
       Steps::TalkingPoints,
       Steps::PrivacyPolicy,
     ].freeze
+
+    def matchback_attributes
+      %i[candidate_id qualification_id].freeze
+    end
 
     def complete!
       super.tap do |result|

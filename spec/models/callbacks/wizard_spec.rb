@@ -14,7 +14,7 @@ describe Callbacks::Wizard do
       },
     }
   end
-  let(:wizardstore) { Wizard::Store.new store[uuid], {} }
+  let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
 
   describe ".steps" do
     subject { described_class.steps }
@@ -23,11 +23,17 @@ describe Callbacks::Wizard do
       is_expected.to eql [
         Callbacks::Steps::PersonalDetails,
         Callbacks::Steps::MatchbackFailed,
-        ::Wizard::Steps::Authenticate,
+        ::DFEWizard::Steps::Authenticate,
         Callbacks::Steps::Callback,
         Callbacks::Steps::TalkingPoints,
         Callbacks::Steps::PrivacyPolicy,
       ]
+    end
+  end
+
+  describe "#matchback_attributes" do
+    it do
+      expect(subject.matchback_attributes).to match_array(%i[candidate_id qualification_id])
     end
   end
 
@@ -40,6 +46,7 @@ describe Callbacks::Wizard do
 
     before do
       allow(subject).to receive(:valid?).and_return(true)
+      allow(subject).to receive(:can_proceed?).and_return(true)
       allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
         receive(:book_get_into_teaching_callback).with(request)
       allow(Rails.logger).to receive(:info)
