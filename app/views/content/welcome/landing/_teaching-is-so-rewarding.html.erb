@@ -52,11 +52,7 @@
         </span>
       </h2>
 
-      <p class="pink">
-        Gaming, sport, travelling… it’s all about helping young people understand
-        the world they live in. And setting them up to be skilled problem
-        solvers. Who wouldn’t want to be part of that?
-      </p>
+      <%= tag.p(subject_specific_quote_data.fetch(:headline), class: "pink") %>
     </div>
 
     <%= image_pack_tag("media/images/content/hero-images/0017.jpg") %>
@@ -64,9 +60,8 @@
 
     <div class="selected-quote">
       <figure>
-        <blockquote>The highs are immeasurable – like when a student who was struggling with maths suddenly puts their hand up to answer a question. That light-bulb moment really gives you a buzz</blockquote>
-
-        <figcaption>Peter, maths teacher</figcaption>
+        <%= tag.blockquote(subject_specific_quote_data.fetch(:text)) %>
+        <%= tag.figcaption(subject_specific_quote_data.fetch(:attribution)) %>
       </figure>
     </div>
 </section>
