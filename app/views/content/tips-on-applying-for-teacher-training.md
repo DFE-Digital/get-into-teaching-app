@@ -89,7 +89,7 @@ You can [find and apply to most postgraduate teacher training courses on GOV.UK]
 If you do not find what you were looking for, there are [other ways to train](/ways-to-train).
 
 Before you start, it’s particularly important to think about your referees and
-personal statement.
+[personal statement](#your-personal-statement).
 
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
@@ -104,18 +104,18 @@ Unlike a standard work reference, your references for teacher training need to
 be named individuals rather than (for example) a human resources team or
 academic department.
 
-Your referees will be asked to write 500 words about your character and
-suitability for teaching.
+Your referees will be asked to write up to 500 words about your character and
+potential to teach.
 
-They’ll have 2 weeks to respond, so it’s worth contacting them before you apply
-so they understand why you’re applying and what they’ll be asked to do.
+It’s worth contacting them before you apply so they understand why you’re applying and what they’ll be asked to do.
 
-Choose referees who’ll endorse your:
+Choose referees who could comment on things like your:
 
-* teaching passion and potential
-* suitability for working with children
-* academic abilities
+* communication skills
 * reliability and professionalism
+* ability to work with children
+* transferable skills
+* academic skills
 
 Ideal referees could include:
 
@@ -127,9 +127,9 @@ Ideal referees could include:
 
 Referees should not be family members, partners or friends.
 
-Training providers will only accept a character reference as a second reference.
-
 It’s important to have at least one academic or professional reference.
+
+Training providers will accept a character reference, such as a mentor or someone you know from volunteering, as a second reference.
 
 If you’re applying for a salaried course, one of your references must be from
 an employer.
@@ -143,9 +143,9 @@ teacher training adviser](/tta-service).
 
 ## Your personal statement
 
-Your personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it. 
+Your personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it.
 
-Personal statements are split into two sections. In total they are usually around 1,000 words.
+Personal statements are split into 2 sections. In total they are usually around 1,000 words.
 
 ### Section 1: Why do you want to teach?
 
@@ -153,27 +153,26 @@ Up to 600 words.
 
 This is the place to talk about why you think you would make a great teacher. You can include:
 
-* what inspired you to choose teaching
-* your understanding of the demands and rewards of the profession
-* personal qualities that will make you a good teacher
-* your contribution to the life of the school outside the classroom – for example, running extra-curricular activities and clubs
+* the demands and rewards of teaching
+* the personal qualities that would make you a good teacher
+* how you could contribute to a school outside of the classroom
 * any experience you have working with children and what you learnt
-* your thoughts on children’s wellbeing and the education system
+* your thoughts on welfare and education
 
-
-### Section 2: Your suitability to teach a subject or age group.
+### Section 2: Why are you suited to teach your subject(s) or age group?
 
 Up to 400 words.
 
-If you’re applying for secondary teacher training, use this section to demonstrate your interest in and knowledge of the subject(s) you’ve chosen. 
+If you’re applying for secondary teacher training, use this section to demonstrate your interest in and knowledge of the subject(s) you’ve chosen.
 
 If you’re applying for primary teacher training, demonstrate why teaching that age group is suited to you.
- 
+
 You could talk about:
- 
-* any relevant work experience or unpaid experience
+
+* any relevant work or unpaid experience
 * your degree(s) and other studies, such as your A levels
 * any relevant skills, interests or achievements
+* your understanding of the national curriculum
 
 [If you're concerned about your subject knowledge](/improve-your-subject-knowledge), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
 
