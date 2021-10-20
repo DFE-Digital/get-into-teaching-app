@@ -1,3 +1,23 @@
+---
+title: Stephen
+date: "2021-10-22"
+author: Stephen
+images:
+  stephen:
+    path: "media/images/content/blog/stephen.jpg"
+    alt: "Returning maths teacher and Methodist Minister Stephen, in the school library"
+description: |-
+  Stephen gave up a 20-year career as a secondary maths teacher to pursue a call into full time Methodist Ministry. However, his love of maths never left him and 12 years later he returned to teaching part-time.
+keywords:
+  - returning to teaching
+  - teacher training advisers
+tags:
+  - returning to teaching
+  - teacher training advisers
+---
+
+$stephen$
+
 ## Why did you originally want to be a teacher?
 
 My sheer love of the subject and an enthusiasm for sharing this sense of enjoyment with others. This was motivated in no small part by my own maths teacher and by my subsequent reading of Martin Gardner books on Mathematical Recreations.
@@ -32,8 +52,6 @@ Every teaching day I come home grinning ear to ear! I am loving the work. I am i
 
 ## What would your advice be for someone looking to return to the classroom on a flexible or part-time basis?
 
-Absolutely crack on and apply. It’s the most exhausting and rewarding job in the world.
+Absolutely, crack on and apply. It’s the most exhausting and rewarding job in the world.
 
----
-
-If you are considering a return to teaching, find out more about [the resources available to support your return](https://getintoteaching.education.gov.uk/returning-to-teaching).
+_If you are considering a return to teaching, find out more about [the resources available to support your return](https://getintoteaching.education.gov.uk/returning-to-teaching)._
