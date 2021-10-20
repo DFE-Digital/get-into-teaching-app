@@ -153,11 +153,12 @@ Up to 600 words.
 
 This is the place to talk about why you think you would make a great teacher. You can include:
 
-* the demands and rewards of teaching
-* the personal qualities that would make you a good teacher
-* how you could contribute to a school outside of the classroom
-* any experience you have working with children and what you learnt
-* your thoughts on welfare and education
+* what inspired you to choose teaching
+* your understanding of the demands and rewards of teaching
+* the personal qualities that will make you a good teacher
+* your contribution to the life of the school outside the classroom – for example, running extra-curricular activities and clubs
+* details of any experience you have working with children and what you learnt
+* your thoughts on children’s wellbeing and the education system
 
 ### Section 2: Why are you suited to teach your subject(s) or age group?
 
