@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/DFE-Digital/dfe_wizard.git
-  revision: 3b8fb44c760a0e342d89ed7a4824733a224646b0
-  branch: move-extra-controller-code
+  revision: 27c34d9ba46ee963668a39e9e69bc67496740481
   specs:
     dfe_wizard (0.1.0)
       activemodel (>= 6.0.3.4)

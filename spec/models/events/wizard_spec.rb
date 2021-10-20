@@ -30,7 +30,7 @@ describe Events::Wizard do
 
   describe "#matchback_attributes" do
     it do
-      expect(subject.matchback_attributes).to match_array(%i[candidate_id qualification_id])
+      expect(subject.matchback_attributes).to match_array(%i[candidate_id qualification_id is_verified])
     end
   end
 
@@ -94,7 +94,7 @@ describe Events::Wizard do
       before { wizardstore[:is_walk_in] = false }
 
       it "raises an exception" do
-        expect { subject.exchange_unverified_request(request) }.to raise_error(Wizard::ContinueUnverifiedNotSupportedError)
+        expect { subject.exchange_unverified_request(request) }.to raise_error(DFEWizard::ContinueUnverifiedNotSupportedError)
       end
     end
 

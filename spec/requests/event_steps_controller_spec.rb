@@ -84,7 +84,7 @@ describe EventStepsController, type: :request do
     before do
       allow_any_instance_of(Events::Steps::PersonalDetails).to \
         receive(:is_walk_in?).and_return(true)
-      allow_any_instance_of(Wizard::Steps::Authenticate).to \
+      allow_any_instance_of(DFEWizard::Steps::Authenticate).to \
         receive(:candidate_identity_data) { camelized_identity_data }
     end
 
