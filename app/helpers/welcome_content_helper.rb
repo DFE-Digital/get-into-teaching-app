@@ -2,6 +2,7 @@ module WelcomeContentHelper
   MATHS = {
     story: {
       name: "Dimitra",
+      job_title_and_location: "maths teacher, London",
       subject: "maths",
       image: "dimitra-desert-crop.jpg",
       text: "Meet Dimitra, find out how she got into teaching maths and what she's looking forward to next.",
@@ -16,6 +17,7 @@ module WelcomeContentHelper
   SCIENCES = {
     story: {
       name: "Holly",
+      job_title_and_location: "science teacher, Essex",
       subject: "science",
       image: "dimitra-desert-crop.jpg",
       text: "Meet Holly - find out how she got into teaching science and what she's looking forward to next.",
@@ -31,6 +33,7 @@ module WelcomeContentHelper
   ENGLISH = {
     story: {
       name: "Laura",
+      job_title_and_location: "English teacher, Doncaster",
       subject: "English",
       image: "dimitra-desert-crop.jpg",
       text: "Meet Laura - find out how she got into teaching English and how she became Head of Department in under 5 years.",
@@ -45,6 +48,7 @@ module WelcomeContentHelper
   MFL = {
     story: {
       name: "Tom",
+      job_title_and_location: "Spanish teacher, Coventry",
       subject: "languages",
       image: "dimitra-desert-crop.jpg",
       text: "Meet Tom - find out how he got into teaching Spanish and what he's looking forward to next.",
@@ -59,6 +63,7 @@ module WelcomeContentHelper
   GENERIC = {
     story: {
       name: "Helen",
+      job_title_and_location: "assistant headteacher, London",
       subject: nil,
       image: "dimitra-desert-crop.jpg",
       text: "Meet Helen - find out how she went from trainee to Assistant Headteacher and what she's looking forward to next.",
@@ -77,6 +82,10 @@ module WelcomeContentHelper
 
   def subject_specific_quote_data(id = welcome_guide_subject_id)
     mappings(id).fetch(:quote)
+  end
+
+  def subject_category(id = welcome_guide_subject_id)
+    mappings(id).dig(:story, :subject)
   end
 
 private

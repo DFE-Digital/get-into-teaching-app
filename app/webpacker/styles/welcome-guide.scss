@@ -882,7 +882,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
   }
 
-  .story {
+  .case-study {
     @mixin header-layout {
       grid-template-columns: 1.5em repeat(3, minmax(1em, auto)) 1.5em;
       grid-template-rows: repeat(2, minmax(3em, max-content)) 5em 2em 2em repeat(2, minmax(3em, max-content));
