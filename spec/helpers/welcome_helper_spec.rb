@@ -89,7 +89,7 @@ RSpec.describe WelcomeHelper, type: :helper do
     end
 
     context "when the subject is unset" do
-      it { is_expected.to eql("<mark>teaching.</mark>") }
+      it { is_expected.to eql("teaching.") }
     end
 
     context "when the subject isn't recognised" do
@@ -99,7 +99,7 @@ RSpec.describe WelcomeHelper, type: :helper do
         allow(session).to(receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return(fake_uuid))
       end
 
-      it { is_expected.to eql("<mark>teaching.</mark>") }
+      it { is_expected.to eql("teaching.") }
     end
   end
 
