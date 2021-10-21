@@ -136,7 +136,7 @@ an employer.
 
 You can request as many references as you like to increase the chances of getting 2 quickly.
 
-Once you've recieved 2 or more references, you can select the 2 you want to include in your application.
+Once you've received 2 or more references, you can select the 2 you want to include in your application.
 
 If you’re struggling to choose your referees, [get free one-on-one support from a
 teacher training adviser](/tta-service).
