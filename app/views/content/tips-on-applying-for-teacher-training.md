@@ -160,13 +160,15 @@ This is the place to talk about why you think you would make a great teacher. Yo
 * details of any experience you have working with children and what you learnt
 * your thoughts on children’s wellbeing and the education system
 
-### Section 2: Why are you suited to teach your subject(s) or age group?
+### Section 2: Why are you suited to teach your subjects or age group?
 
 Up to 400 words.
 
 If you’re applying for secondary teacher training, use this section to describe your knowledge of the subjects you’ve chosen.
 
 If you’re applying for primary teacher training, say why you'd like to teach this age group.
+
+If you're applying for a primary course with a subject specialism, or you're particularly interested in certain primary subjects, you can talk about that here too.
 
 You could talk about:
 
