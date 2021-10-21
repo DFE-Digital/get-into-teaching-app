@@ -1,6 +1,6 @@
 ---
-title: Stephen
-date: "2021-10-22"
+title: Stephen's return to teaching story
+date: "2021-10-21"
 author: Stephen
 images:
   stephen:
@@ -32,7 +32,7 @@ The challenge initially was to get ‘permission’ from the church to leave f
 
 ## How did the Return to Teaching service help you back into the classroom?
 
-In Zaid, my Return to Teaching Adviser, I found a sympathetic and wise counsel. He took considerable time to understand my situation and was keen to review my various applications. The Return to Teaching Adviser service provided specific help in its training videos and learning materials via their Facebook page, which helped not only to remind me of the basics, but also to point out some of the things which are different from when I left 12years ago.
+In Zaid, my Return to Teaching Adviser, I found a sympathetic and wise counsel. He took considerable time to understand my situation and was keen to review my various applications. The Return to Teaching Adviser service provided specific help in its training videos and learning materials via their Facebook page, which helped not only to remind me of the basics, but also to point out some of the things which are different from when I left 12 years ago.
 
 ## How easy was it for you to find a part time teaching post with a view to going full time after one year?
 
