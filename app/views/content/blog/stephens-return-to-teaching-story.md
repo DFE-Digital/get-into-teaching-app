@@ -54,4 +54,4 @@ Every teaching day I come home grinning ear to ear! I am loving the work. I am i
 
 Absolutely, crack on and apply. It’s the most exhausting and rewarding job in the world.
 
-_If you are considering a return to teaching, find out more about [the resources available to support your return](https://getintoteaching.education.gov.uk/returning-to-teaching)._
+_If you are considering a return to teaching, find out more about [the resources available to support your return](/returning-to-teaching)._
