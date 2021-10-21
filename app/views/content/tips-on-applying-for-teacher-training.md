@@ -156,7 +156,7 @@ This is the place to talk about why you think you would make a great teacher. Yo
 * what inspired you to choose teaching
 * your understanding of the demands and rewards of teaching
 * the personal qualities that will make you a good teacher
-* your contribution to the life of the school outside the classroom – for example, running extra-curricular activities and clubs
+* your contribution to the life of a school outside the classroom – for example, running extra-curricular activities and clubs
 * details of any experience you have working with children and what you learnt
 * your thoughts on children’s wellbeing and the education system
 
