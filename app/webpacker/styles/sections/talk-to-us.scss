@@ -1,5 +1,7 @@
 html:not(.js-enabled) {
   .talk-to-us .content > div.contact .options > div.live-chat {
+    flex-basis: 50%;
+
     .js-enabled-title {
       display: none;
     }
@@ -44,7 +46,8 @@ html:not(.js-enabled) {
           > div {
             flex: 1 0;
 
-            &.live-chat, &.email-us {
+            &.live-chat {
+              word-break: break-all;
               border-bottom: 1px solid $purple;
               padding-bottom: $indent-amount;
               margin-bottom: $indent-amount;
@@ -100,7 +103,7 @@ html:not(.js-enabled) {
           > div {
             flex: initial;
 
-            &.live-chat, &.email-us {
+            &.live-chat {
               border: 0;
               border-right: 1px solid $purple;
               padding: 0 $indent-amount 0 0;

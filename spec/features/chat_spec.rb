@@ -100,7 +100,7 @@ RSpec.feature "Chat", type: :feature do
 
         within(".talk-to-us") do
           expect(page).to have_text("Email us")
-          expect(page).to have_link("getintoteaching@education.gov.uk")
+          expect(page).to have_link("getintoteaching.getintoteaching@education.gov.uk")
         end
       end
 
@@ -137,7 +137,7 @@ RSpec.feature "Chat", type: :feature do
 
         within(".talk-to-us") do
           expect(page).to have_text("Email us")
-          expect(page).to have_link("getintoteaching@education.gov.uk")
+          expect(page).to have_link("getintoteaching.getintoteaching@education.gov.uk")
         end
       end
 
