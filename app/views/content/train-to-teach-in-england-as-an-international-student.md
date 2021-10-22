@@ -65,7 +65,7 @@ You can apply to train to teach in England from any country in the world. This p
 You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
 ### Already a qualified teacher?
-Visit [Come to England to teach if you're a teacher from outside the UK](https://getintoteaching.education.gov.uk/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) to learn more. 
+Visit [Come to England to teach if you're a teacher from outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) to learn more. 
 
 ## 1. Check your qualifications
 
@@ -125,7 +125,7 @@ Visit [Find postgraduate teacher training](https://www.find-postgraduate-teacher
 
 ### Ways to train
 
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](2.-Get-help-and-advice) for guidance on the different types of courses available, or see [Ways to train to teach in England](https://getintoteaching.education.gov.uk/ways-to-train).
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](2.-Get-help-and-advice) for guidance on the different types of courses available, or see [Ways to train to teach in England](/ways-to-train).
 
 You can apply for a teacher training place without visiting the UK, and some providers also conduct interviews using remote technology. Due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
 
@@ -191,7 +191,7 @@ Learn more about about your first teaching job in England
 
 <a href="https://www.facebook.com/groups/1357146377672255/" class="button">Join the Aspiring Teachers Forum on Facebook </a>
 
-[Read interviews with real teachers](https://getintoteaching.education.gov.uk/my-story-into-teaching) 
+[Read interviews with real teachers](/my-story-into-teaching) 
 
 Visit the following websites for more about English education:
 
@@ -207,11 +207,3 @@ Visit the following websites for more about English education:
 Remember that you can register with the [Get an adviser service](https://adviser-getintoteaching.education.gov.uk/) for personalised advice about teaching in England over email, phone or online chat and browse this website to learn more about life as a teacher in England.
 
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. However, for general enquiries, you can email us at international.teacherrecruitment@education.gov.uk. 
- 
- 
- 
- 
-
-
-
-
