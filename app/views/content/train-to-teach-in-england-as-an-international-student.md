@@ -58,7 +58,7 @@ keywords:
   - Comparability
 ---
 
-Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. You’ll leave with qualified teacher status (QTS), a professional qualification valued globally.
+Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. You’ll leave with qualified teacher status (QTS, or PGCE + QTS), professional qualifications valued globally.
 
 You can apply to train to teach in England from any country in the world. This page explains how, step by step.
 
@@ -97,25 +97,25 @@ Call Get into Teaching on 0800 389 2500 for:
 * a free statement of comparability detailing overseas degree equivalency from UK ENIC once you’ve submitted your application, if your provider asks for this
 
 ### Get an adviser
-You can also register with our Get an adviser service for personalised advice about teaching in England over email, phone or online chat.
+You can also register with our Get an adviser service for personalised advice about teaching in England over email and phone, or use the online chat service on this page.
 
 <a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get an adviser</a>
 
-## 3. Find out about financial support
-
-Course fees for international students on fee-paying teacher training courses are usually  between £11,000 and £16,000 – costs vary, so check with individual providers for more information.
+## 3. Find out about fees and financial support
 
 Most international students will not be eligible for financial support.
 
-You can also apply for a salaried teacher training course, when you’ll earn money while you train in a school. However, these courses are competitive and you will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
+Course fees for international students on fee-paying teacher training courses are between about £9,250 and £16,000 – fees vary between training providers and any financial support is dependent on your immigration status. You will also need to pay for your living costs while you train.
+
+You can apply for a salaried teacher training course, when you’ll earn money while you train in a school. However, these courses are competitive and you will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
 
 ### Already living in the UK?
 
 You may be eligible to get financial support with your teacher training course if you:
 
-• have settled or pre-settled status under the EU Settlement Scheme
+• have settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families)
 
-• don’t fall under the EU Settlement Scheme, but have settled status, for example indefinite leave to remain
+• don’t fall under the EU Settlement Scheme, but have settled status, for example [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk)
 
 
 CTA:
@@ -133,7 +133,7 @@ You can apply for a teacher training place without visiting the UK, and some pro
 
 ### Already living in the UK?
 
-If you have settled or pre-settled status under the EU Settlement Scheme, or indefinite leave to remain, you can apply to any teacher training provider in England.
+If you have settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families), or [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk), you can apply to any teacher training provider in England.
 
 ### Your suitability for teaching
 
@@ -152,13 +152,13 @@ You will need a visa or an alternative immigration status allowing you to train 
 
 ## Already living in the UK?
 
-If you have settled or pre-settled status under the EU Settlement Scheme (EUSS), or indefinite leave to remain, you will not need a visa to train to teach in the UK.
+If you have settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families), or [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk), you will not need a visa to train to teach in the UK.
 
-Some people can still apply for settled or pre-settled status – check your eligibility.
+[Some people can still apply for settled or pre-settled status – check your eligibility](url to come).
 
-If you are currently studying in the UK on a student visa, you may be able to apply for a graduate visa.
+If you are currently studying in the UK on a student visa, you may be able to apply for a [graduate visa](url to come).
 
-If you don’t already have an immigration status allowing you to train to teach in the UK, you’ll need to apply for a student visa, once you have a confirmed offer of a fee-paying training place from a training provider who can sponsor visas. If you have a place on a salaried training course, you’ll need a skilled worker visa.
+If you don’t already have an immigration status allowing you to train to teach in the UK, you’ll need to apply for a [student visa](url to come), once you have a confirmed offer of a fee-paying training place from a training provider who can sponsor visas. If you have a place on a salaried training course, you’ll need a [skilled worker visa](url to come).
 
 Alternatively, you may be eligible for a different type of visa which allows you to study without being sponsored by your training provider or employer.
 
@@ -180,7 +180,7 @@ If you’re accepted on to an English teacher training course, you’ll train fo
 
 When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England.
 
-You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](#) (Updated URL) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
+You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](#) (https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
 
 CTA:
 Learn more about about your first teaching job in England
@@ -197,15 +197,18 @@ Learn more about about your first teaching job in England
 
 Visit the following websites for more about English education:
 
-[Types of English school](https://www.gov.uk/types-of-school)
-[Curriculum and qualifications](https://www.gov.uk/national-curriculum)
-[Behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
-[Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
-[The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/about) – a charity gathering international evidence on teaching 5- to 16-year-olds
-[Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
+• [Types of English school](https://www.gov.uk/types-of-school)
+
+• [Curriculum and qualifications](https://www.gov.uk/national-curriculum)
+
+• [Behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
+
+• [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
+
+• [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/about) – a charity gathering international evidence on teaching 5- to 16-year-olds
+
+• [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
 
 ## Contact
-
-Remember that you can register with the [Get an adviser service](https://adviser-getintoteaching.education.gov.uk/) for personalised advice about teaching in England over email, phone or online chat and browse this website to learn more about life as a teacher in England.
 
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. However, for general enquiries, you can email us at international.teacherrecruitment@education.gov.uk.
