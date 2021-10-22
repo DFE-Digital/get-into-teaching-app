@@ -119,7 +119,7 @@ You may be eligible to get financial support with your teacher training course i
 
 
 CTA:
-[Check your eligibility for financial support](Updated url to come)
+[Check your eligibility for financial support](#) Awaiting URL
 
 ## 4. Search and apply for teacher training courses
 
@@ -139,7 +139,7 @@ If you have settled or pre-settled status under the EU Settlement Scheme, or ind
 
 As part of the application process, your training provider will check you’re suitable for teaching in terms of your health, whether you’re safe to work with children and your level of maths and English.
 
-[Learn more about fee-paying and salaried courses and qualified teacher status](updated url)
+[Learn more about fee-paying and salaried courses and qualified teacher status](#) Awaiting URL
 
 <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses" class="button">Find postgraduate teacher training</a>
 
@@ -163,7 +163,7 @@ If you don’t already have an immigration status allowing you to train to teach
 Alternatively, you may be eligible for a different type of visa which allows you to study without being sponsored by your training provider or employer.
 
 CTA
-[Learn more about applying for the right visa for your teacher training course](updated url)
+[Learn more about applying for the right visa for your teacher training course](#) Awaiting URL
 
 ## 6. Plan your move to the UK
 
@@ -180,7 +180,7 @@ If you’re accepted on to an English teacher training course, you’ll train fo
 
 When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England.
 
-You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](updated url) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
+You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](#) (Updated URL) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
 
 CTA:
 Learn more about about your first teaching job in England
