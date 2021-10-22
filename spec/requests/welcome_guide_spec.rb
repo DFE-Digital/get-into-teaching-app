@@ -27,7 +27,7 @@ describe "Welcome guide landing page", type: :request do
       quote_body: "I get to travel still and can keep up with my languages",
     ),
   }.each do |subject_id, metadata|
-    specify "shows #{metadata.subject}-specific content" do
+    specify "shows #{metadata.subject || 'non'}-specific content" do
       get("/welcome?preferred_teaching_subject_id=#{subject_id}")
 
       expect(response.body).to match(%r{teaching <mark>#{metadata.subject}.</mark>}i)
@@ -67,7 +67,7 @@ describe "Welcome guide landing page", type: :request do
       story_text: "Some of my friends were going into office jobs",
     ),
   }.each do |subject_id, metadata|
-    specify "shows #{metadata.subject}-specific case study content" do
+    specify "shows #{metadata.subject || 'non'}-specific case study content" do
       get("/welcome/my-journey-into-teaching?preferred_teaching_subject_id=#{subject_id}")
 
       expect(response.body).to match(metadata.name)
