@@ -125,7 +125,7 @@ module WelcomeContentHelper
   end
 
   def subject_category(id = welcome_guide_subject_id)
-    mappings(id).dig(:story, :subject)
+    mappings(id).dig(:story, :subject).downcase
   end
 
 private
