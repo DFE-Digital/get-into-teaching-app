@@ -6,6 +6,11 @@ module WelcomeContentHelper
       subject: "maths",
       image: "dimitra-desert-crop.jpg",
       text: "Meet Dimitra, find out how she got into teaching maths and what she's looking forward to next.",
+      three_things_youll_never_hear_me_say: {
+        "Every day is the same" => "One day I’ll be playing bingo to make maths fun, the next exploring how maths underpins the economy.",
+        "I miss adult conversation" => "One day I’ll be playing bingo to make maths fun, the next exploring how maths underpins the economy.",
+        "Work never stops" => "One day I’ll be playing bingo to make maths fun, the next exploring how maths underpins the economy.",
+      },
     },
     quote: {
       headline: "Gaming, sport, travelling… it’s all about helping young people understand the world they live in. And setting them up to be skilled problem solvers. Who wouldn’t want to be part of that?",
@@ -21,6 +26,11 @@ module WelcomeContentHelper
       subject: "science",
       image: "dimitra-desert-crop.jpg",
       text: "Meet Holly - find out how she got into teaching science and what she's looking forward to next.",
+      three_things_youll_never_hear_me_say: {
+        "Every day is the same" => "From practical experiments to acting out elements in the classroom, I love exploring new ways to teach. The kids love getting involved and seeing them enjoying it always makes me smile",
+        "I miss adult conversation" => "My colleagues are great. We spend breaks and lunchtimes catching up in the staff room. It is really a family dynamic and we’ve had some great socials – bowling is a personal favourite.",
+        "Work never stops" => "When the school day ends, I get to switch off. I love to sail and I play in a netball league (strictly no students allowed!). It’s important to have a life outside of the classroom.",
+      },
     },
     quote: {
       headline: "Plants, planets, protons… it’s all about sparking curiosity and challenging young minds to think about how the world works. You’ll be amazed at the questions students will start asking.",
@@ -37,6 +47,11 @@ module WelcomeContentHelper
       subject: "English",
       image: "dimitra-desert-crop.jpg",
       text: "Meet Laura - find out how she got into teaching English and how she became Head of Department in under 5 years.",
+      three_things_youll_never_hear_me_say: {
+        "Every day is the same" => "Not! I’m always looking for ways to get my class excited, whether it's acting out Blood Brothers or discussing the many different interpretations of Alice in Wonderland.",
+        "I miss adult conversation" => "I get on so well with the other teachers, we’re great friends and we're always chatting on WhatsApp. We’ve even got a karaoke night coming up, I can’t wait!",
+        "Work never stops" => "My school has a great policy of no emails after 6pm, so it means when the school day ends, I can shut my laptop and get back to being me (and mum!).",
+      },
     },
     quote: {
       headline: "From delving into literature to exploring important life themes, it’s all about taking young minds on a journey as you encourage students to think for themselves. So, get set for some thought-provoking conversations you’ll never forget!",
@@ -52,6 +67,11 @@ module WelcomeContentHelper
       subject: "languages",
       image: "dimitra-desert-crop.jpg",
       text: "Meet Tom - find out how he got into teaching Spanish and what he's looking forward to next.",
+      three_things_youll_never_hear_me_say: {
+        "Every day is the same" => "From exploring Latin American culture to reading Spanish literature, every lesson is different. And with 30 different personalities in one room, it’s never dull",
+        "I miss adult conversation" => "Some of my closest friends are my colleagues, and having someone to talk to makes work life so much easier. Our trips to the pub at the end of the week are something I always look forward to.",
+        "Work never stops" => "It’s important to relax after school,  I can’t resist watching a good Spanish film on Netflix.  And I'm still an avid traveller, I love exploring other cultures.",
+      },
     },
     quote: {
       headline: "From delving into different cultures to discussing new ways of thinking, it’s all about taking young minds on a journey out of the classroom. So, get set for some fun and memorable conversations!",
