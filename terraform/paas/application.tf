@@ -6,6 +6,7 @@ locals {
                       APP_ASSETS_URL    = length( var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_asset_hostnames[0]}.${data.cloudfoundry_domain.internet.name}" }
 }
 
+
 resource "cloudfoundry_app" "app_application" {
   name         = var.paas_app_application_name
   space        = data.cloudfoundry_space.space.id
