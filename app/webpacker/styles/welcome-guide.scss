@@ -468,7 +468,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       padding-bottom: 0;
 
       .text { grid-area: 2 / 1 / 4 / 2; }
-      .carrousel { grid-area: 3 / 1 / 5 / 2; }
+      .featured-stories { grid-area: 3 / 1 / 5 / 2; }
 
       @include mq($from: desktop) {
         grid-template-rows: minmax(3em, max-content) 3em minmax(3em, max-content);
@@ -476,7 +476,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
         .section-number { grid-area: 1 / 1 / 2 / 2; }
         .text { grid-area: 1 / 3 / 3 / 4; }
-        .carrousel { grid-area: 2 / 1 / 4 / 4; }
+        .featured-stories { grid-area: 2 / 1 / 4 / 4; }
       }
     }
 
@@ -523,93 +523,31 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
       }
 
-      .carrousel {
-        margin-top: 1rem;
-        gap: 2em;
-        flex-direction: column;
-        padding: 0 4em;
+      .featured-stories {
+        list-style: none;
+        margin: 1em 3em 0;
+        padding: 0;
 
-        .items {
-          display: flex;
-          @include mq($from: desktop) {
-            flex-direction: row;
-            flex-wrap: wrap;
-          }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 6em;
+        column-gap: 2em;
 
-          .item {
-            display: flex;
-            flex-direction: column;
-            @include mq($from: desktop) {
-              width: 40em;
-            }
+        li {
+          flex: 0 1 30%;
 
-            .caption {
-              margin: 2em 1em;
+          picture {
+            img {
+              max-width: 16em;
 
-              @include mq($from: desktop) {
-                margin: 2em 4em;
-              }
-            }
-
-            picture {
-              flex-grow: 1;
-              display: flex;
-              width: 100%;
-              margin: 0;
-
-              img {
-                z-index: map-get($z-indices, "bottom");
-                position: relative;
-                overflow: hidden;
-                object-fit: cover;
-                align-self: flex-end;
-                width: 90%;
-                margin: 0 auto;
-
-                &.tilt-left {
-                  transform: rotate(3deg);
-                }
-
-                &.tilt-right {
-                  transform: rotate(-3deg);
-                }
-              }
-            }
-          }
-        }
-
-        .controls {
-          $slightly-dark-grey: darken($grey, 15%);
-
-          margin-left: 2em;
-          ul {
-            display: flex;
-            align-items: center;
-
-            list-style: none;
-            li {
-              color: $slightly-dark-grey;
-              display: inline;
-              @include font-size(medium);
-
-              &.current {
-                color: $purple;
+              &.tilt-right {
+                transform: rotate(2deg);
               }
 
-              &.arrow {
-                @include font-size(xxlarge);
-                color: $black;
-                margin-left: .1em;
-
-                &.grey {
-                  margin-left: 1em;
-                  color: $slightly-dark-grey;
-                }
+              &.tilt-left {
+                transform: rotate(-2deg);
               }
-            }
-
-            li + li {
-              margin-left: .5em;
             }
           }
         }
