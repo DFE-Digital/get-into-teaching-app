@@ -11,6 +11,11 @@ module WelcomeContentHelper
         "I miss adult conversation" => "One day I’ll be playing bingo to make maths fun, the next exploring how maths underpins the economy.",
         "Work never stops" => "One day I’ll be playing bingo to make maths fun, the next exploring how maths underpins the economy.",
       },
+      shoutout: {
+        name: "Alison Conner",
+        relationship: "my mentor",
+        text: "When I doubted myself, she believed in me. She’s a maths teacher too, and has always been so supportive. I’m lucky that we still work in the same school!",
+      },
     },
     quote: {
       headline: "Gaming, sport, travelling… it’s all about helping young people understand the world they live in. And setting them up to be skilled problem solvers. Who wouldn’t want to be part of that?",
@@ -30,6 +35,11 @@ module WelcomeContentHelper
         "Every day is the same" => "From practical experiments to acting out elements in the classroom, I love exploring new ways to teach. The kids love getting involved and seeing them enjoying it always makes me smile",
         "I miss adult conversation" => "My colleagues are great. We spend breaks and lunchtimes catching up in the staff room. It is really a family dynamic and we’ve had some great socials – bowling is a personal favourite.",
         "Work never stops" => "When the school day ends, I get to switch off. I love to sail and I play in a netball league (strictly no students allowed!). It’s important to have a life outside of the classroom.",
+      },
+      shoutout: {
+        name: "Mr Eaves",
+        relationship: "my maths teacher",
+        text: "Even if it took extra time and effort, he would never give up until everyone in the class ‘got it’. This was my motivation; I want to be able to do that for my students. Thank you!",
       },
     },
     quote: {
@@ -52,6 +62,11 @@ module WelcomeContentHelper
         "I miss adult conversation" => "I get on so well with the other teachers, we’re great friends and we're always chatting on WhatsApp. We’ve even got a karaoke night coming up, I can’t wait!",
         "Work never stops" => "My school has a great policy of no emails after 6pm, so it means when the school day ends, I can shut my laptop and get back to being me (and mum!).",
       },
+      shoutout: {
+        name: "Ms Colley",
+        relationship: "my English teacher at school",
+        text: "Ms Colley, my English teacher at school. She left such a strong imprint on me and really instilled a love of reading. I’ll never forget her, she showed me what I could achieve.",
+      },
     },
     quote: {
       headline: "From delving into literature to exploring important life themes, it’s all about taking young minds on a journey as you encourage students to think for themselves. So, get set for some thought-provoking conversations you’ll never forget!",
@@ -71,6 +86,11 @@ module WelcomeContentHelper
         "Every day is the same" => "From exploring Latin American culture to reading Spanish literature, every lesson is different. And with 30 different personalities in one room, it’s never dull",
         "I miss adult conversation" => "Some of my closest friends are my colleagues, and having someone to talk to makes work life so much easier. Our trips to the pub at the end of the week are something I always look forward to.",
         "Work never stops" => "It’s important to relax after school,  I can’t resist watching a good Spanish film on Netflix.  And I'm still an avid traveller, I love exploring other cultures.",
+      },
+      shoutout: {
+        name: "Ms Langley and Ms Meredith",
+        relationship: "my Spanish teachers at school",
+        text: "I was totally in awe of my GCSE and A Level Spanish teachers. I loved hearing about their experiences and love of language. It definitely had an impact on my decision to study Spanish at university. We’ve stayed in touch and I still turn to them for advice or ideas when I need. Thank you!",
       },
     },
     quote: {
