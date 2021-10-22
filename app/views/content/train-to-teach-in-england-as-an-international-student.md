@@ -65,6 +65,7 @@ You can apply to train to teach in England from any country in the world. This p
 You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
 ### Already a qualified teacher?
+
 Visit [Come to England to teach if you're a teacher from outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) to learn more.
 
 ## 1. Check your qualifications
@@ -79,6 +80,7 @@ To teach children aged 3 to 11 in primary school, you will also need to meet a s
 A GCSE (General Certificate of Secondary Education) is an academic qualification awarded for exams in England, usually taken at age 16. [Get help understanding GCSEs, other English qualifications and their international equivalents.]<a href="#2.-Get-help-and-advice">Get help understanding GCSEs, other English qualifications and their international equivalents.</a>
 
 ### If you do not have a university degree
+
 If you do not have a degree, you can [apply to study a 3 to 4 year undergraduate course in England](https://www.ucas.com/teaching-in-the-uk) which combines a teaching degree with a professional teaching qualification ([qualified teacher status, or QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts)). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
 Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for lots of helpful information about studying at an English university.
