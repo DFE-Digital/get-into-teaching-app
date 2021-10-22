@@ -124,7 +124,7 @@ For a scholarship, each professional scholarship body sets its own criteria. The
 
 * the [Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
 * [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
-* the [Institute of Mathematics and its Applications](https://ima.org.uk/support/mathematics-teacher-training-scholarship/) (maths)
+* the [Institute of Mathematics and its Applications](http://teachingmathsscholars.org/home) (maths)
 * the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
 
 ### Check which subjects have bursaries and scholarships
