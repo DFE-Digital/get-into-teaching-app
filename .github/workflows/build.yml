@@ -244,7 +244,7 @@ jobs:
 
   review:
     name: Review Deployment Process
-    needs: [  javascript_tests , feature_tests  ]
+    needs: [  build  ]
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
