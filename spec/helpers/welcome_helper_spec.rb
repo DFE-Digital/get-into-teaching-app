@@ -3,11 +3,26 @@ require "rails_helper"
 RSpec.describe WelcomeHelper, type: :helper do
   let(:physics_uuid) { "ac2655a1-2afa-e811-a981-000d3a276620" }
 
+  shared_context "with first name" do
+    before { allow(session).to receive(:dig).with("mailinglist", "first_name") { name } }
+  end
+
+  shared_context "with preferred teaching subject set in welcome_guide" do
+    before { allow(session).to receive(:dig).with("welcome_guide", "preferred_teaching_subject_id") { subject_id } }
+  end
+
+  shared_context "with preferred teaching subject set in welcome_guide and mailinglist" do
+    before do
+      allow(session).to receive(:dig).with("welcome_guide", "preferred_teaching_subject_id").and_return(nil)
+      allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id") { subject_id }
+    end
+  end
+
   describe "#greeting" do
     context "when the first name is known" do
       let(:name) { "Joey" }
 
-      before { allow(session).to receive(:dig).with("mailinglist", "first_name") { name } }
+      include_context "with first name"
 
       specify "returns a personalised greeting" do
         expect(greeting).to eql("Hey #{name}")
@@ -24,20 +39,26 @@ RSpec.describe WelcomeHelper, type: :helper do
   describe "#welcome_guide_subject" do
     subject { welcome_guide_subject }
 
-    context "when overridden by the 'subject' query parameter" do
-      before { allow_any_instance_of(ActionController::Parameters).to receive(:[]).and_return("842655a1-2afa-e811-a981-000d3a276620") }
+    include_context "with preferred teaching subject set in welcome_guide"
 
-      specify "returns the subject from the query param" do
+    context "when set by query param and stored in the welcome_guide session store" do
+      include_context "with preferred teaching subject set in welcome_guide"
+
+      let(:subject_id) { "842655a1-2afa-e811-a981-000d3a276620" }
+
+      specify "returns the correct subject" do
         expect(subject).to eql("chemistry")
       end
     end
 
-    context "when the subject is known" do
+    context "when stored in the mailinglist session store" do
       context "when the subject name is a common noun" do
         GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.slice("Art and design", "Biology", "Chemistry", "General science", "Languages (other)", "Maths", "Physics with maths", "Physics")
           .each do |subject_name, subject_id|
             describe "#{subject_name} is lowercased" do
-              before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id") { subject_id } }
+              let(:subject_id) { subject_id }
+
+              include_context "with preferred teaching subject set in welcome_guide"
 
               it { is_expected.to eql(subject_name.downcase) }
             end
@@ -48,7 +69,9 @@ RSpec.describe WelcomeHelper, type: :helper do
         GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.slice("English", "German", "Spanish", "French")
           .each do |subject_name, subject_id|
             describe "#{subject_name} is not lowercased" do
-              before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id") { subject_id } }
+              let(:subject_id) { subject_id }
+
+              include_context "with preferred teaching subject set in welcome_guide"
 
               it { is_expected.to eql(subject_name) }
             end
@@ -58,6 +81,8 @@ RSpec.describe WelcomeHelper, type: :helper do
 
     context "when leave_capitalised is true" do
       subject { welcome_guide_subject(leave_capitalised: true) }
+
+      let(:subject_id) { physics_uuid }
 
       before do
         allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return(physics_uuid)
@@ -70,8 +95,10 @@ RSpec.describe WelcomeHelper, type: :helper do
   describe "#teaching_subject" do
     subject { teaching_subject }
 
+    let(:subject_id) { physics_uuid }
+
     context "when the subject is recognised" do
-      before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return(physics_uuid) }
+      include_context "with preferred teaching subject set in welcome_guide"
 
       it { is_expected.to eql("teaching physics.") }
 
@@ -97,6 +124,7 @@ RSpec.describe WelcomeHelper, type: :helper do
 
       before do
         allow(session).to(receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return(fake_uuid))
+        allow(session).to(receive(:dig).with("welcome_guide", "preferred_teaching_subject_id").and_return(fake_uuid))
       end
 
       it { is_expected.to eql("teaching.") }
@@ -106,20 +134,20 @@ RSpec.describe WelcomeHelper, type: :helper do
   describe "#welcome_guide_subject_id" do
     subject { welcome_guide_subject }
 
-    context "when overridden by the 'subject' query parameter" do
-      let(:languages_uuid) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["Languages (other)"] }
+    context "when the subject id is in the welcome_guide session store" do
+      let(:subject_id) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["Languages (other)"] }
 
-      before { allow_any_instance_of(ActionController::Parameters).to receive(:[]).and_return(languages_uuid) }
+      include_context "with preferred teaching subject set in welcome_guide"
 
       specify "returns the subject from the query param" do
         expect(subject).to eql("languages (other)")
       end
     end
 
-    context "when the subject id is in the mailinglist session param" do
-      let(:german_uuid) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["German"] }
+    context "when the subject id is in the mailinglist session store" do
+      let(:subject_id) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["German"] }
 
-      before { allow(session).to receive(:dig).with("mailinglist", "preferred_teaching_subject_id").and_return(german_uuid) }
+      include_context "with preferred teaching subject set in welcome_guide and mailinglist"
 
       specify "returns the subject from the query param" do
         expect(subject).to eql("German")

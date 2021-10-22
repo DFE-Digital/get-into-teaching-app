@@ -1,5 +1,6 @@
 class PagesController < ApplicationController
   include StaticPages
+  before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && request.query_parameters.any? }
   around_action :cache_static_page, only: %i[show]
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
@@ -65,6 +66,10 @@ private
 
   def funding_widget_params
     params.require(:funding_widget).permit(:subject)
+  end
+
+  def set_welcome_guide_info
+    session["welcome_guide"] = request.query_parameters.slice("preferred_teaching_subject_id", "degree_status_id")
   end
 
   def page_layout

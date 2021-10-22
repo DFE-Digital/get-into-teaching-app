@@ -22,18 +22,20 @@ module WelcomeHelper
   end
 
   def degree_stage_based_encouragement
-    degree_stage_id = session.dig("mailinglist", "degree_status_id")
-
     # degree stage:         final year , second year
-    if degree_stage_id.in?([222_750_001, 222_750_002])
+    if degree_status_id.in?([222_750_001, 222_750_002])
       "Especially as you get closer to graduating."
     else
       "Now's a great time to make the move"
     end
   end
 
+  def degree_status_id
+    session.dig("welcome_guide", "degree_status_id") || session.dig("mailinglist", "degree_status_id")
+  end
+
   def welcome_guide_subject_id
-    params[:subject_id] || session.dig("mailinglist", "preferred_teaching_subject_id")
+    session.dig("welcome_guide", "preferred_teaching_subject_id") || session.dig("mailinglist", "preferred_teaching_subject_id")
   end
 
   def first_name

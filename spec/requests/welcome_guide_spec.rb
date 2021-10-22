@@ -8,7 +8,7 @@ describe "Find an event near you", type: :request do
     "962655a1-2afa-e811-a981-000d3a276620" => OpenStruct.new(subject: "French", name: "Tom"),
   }.each do |subject_id, metadata|
     specify "shows #{metadata.subject}-specific content" do
-      get("/welcome?subject_id=#{subject_id}")
+      get("/welcome?preferred_teaching_subject_id=#{subject_id}")
 
       expect(response.body).to match(%r{teaching <mark>#{metadata.subject}.</mark>}i)
       expect(response.body).to match("Read #{metadata.name}'s story")

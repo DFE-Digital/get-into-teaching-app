@@ -75,6 +75,28 @@ describe PagesController, type: :request do
     end
   end
 
+  describe "persisting welcome guide data in the session" do
+    subject { response }
+
+    let(:params) do
+      {
+        "preferred_teaching_subject_id" => "802655a1-2afa-e811-a981-000d3a276620",
+        "degree_status_id" => "222_750_003",
+        "a_key_that_shouldnt_be_accepted" => "abc123",
+      }
+    end
+
+    let(:joined_params) do
+      params.map { |k, v| "#{k}=#{v}" }.join("&")
+    end
+
+    before { get %(/welcome?#{joined_params}) }
+
+    specify "the params are saved to the session" do
+      expect(session["welcome_guide"]).to eql(params.except("a_key_that_shouldnt_be_accepted"))
+    end
+  end
+
   describe "redirect to TTA site" do
     include_context "with stubbed env vars", "TTA_SERVICE_URL" => "https://tta-service/"
     subject { response }
