@@ -77,7 +77,7 @@ To teach children aged 11 to 18 in secondary school, you’ll need:
 
 To teach children aged 3 to 11 in primary school, you will also need to meet a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 
-A GCSE (General Certificate of Secondary Education) is an academic qualification awarded for exams in England, usually taken at age 16. [Get help understanding GCSEs, other English qualifications and their international equivalents.]<a href="#2.-Get-help-and-advice">Get help understanding GCSEs, other English qualifications and their international equivalents.</a>
+A GCSE (General Certificate of Secondary Education) is an academic qualification awarded for exams in England, usually taken at age 16. [Get help understanding GCSEs, other English qualifications and their international equivalents.](#get-help-and-advice).
 
 ### If you do not have a university degree
 
@@ -127,7 +127,7 @@ Visit [Find postgraduate teacher training](https://www.find-postgraduate-teacher
 
 ### Ways to train
 
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](2.-Get-help-and-advice) for guidance on the different types of courses available, or see [Ways to train to teach in England](/ways-to-train).
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](#get-help-and-advice) for guidance on the different types of courses available, or see [Ways to train to teach in England](/ways-to-train).
 
 You can apply for a teacher training place without visiting the UK, and some providers also conduct interviews using remote technology. Due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
 
