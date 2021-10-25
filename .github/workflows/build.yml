@@ -121,7 +121,7 @@ jobs:
         run: |-
           docker run -t --rm -e RAILS_ENV=test \
             ${{ needs.build.outputs.DOCKER_IMAGE }} \
-            rspec --format documentation spec/features/content_pages_spec.rb
+            rspec --format progress spec/features/content_pages_spec.rb
 
       - name: Slack Notification
         if: failure()
@@ -206,7 +206,7 @@ jobs:
       - name: Run Specs
         run: |-
           docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
-            bundle exec parallel_split_test spec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
+            bundle exec parallel_split_test spec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress
 
       - name: Fixup report file paths
         run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/coverage.json
