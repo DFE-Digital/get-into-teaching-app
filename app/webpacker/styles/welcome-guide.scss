@@ -465,7 +465,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     @mixin bringing-your-lesson-to-life-layout {
       grid-template-rows: repeat(2, minmax(2em, max-content)) 2em minmax(2em, max-content);
       grid-template-columns: 1fr;
-      padding-bottom: 0;
 
       .text { grid-area: 2 / 1 / 4 / 2; }
       .featured-stories { grid-area: 3 / 1 / 5 / 2; }
@@ -482,6 +481,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
     &.bringing-your-lessons-to-life {
       @include bringing-your-lesson-to-life-layout;
+      padding-bottom: 8em;
 
       display: grid;
 
