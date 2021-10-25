@@ -53,14 +53,14 @@ keywords:
   - teachers standards
   - standards
   - chartered college of teaching
- right_column:
+right_column:
   ctas:
-  - title: Take the next step
-    text: |
-      Get support to take the next step at an event.
-    link_text: "Attend an event"
-    link_target: "/events"
-    icon: "icon-calendar"
+    - title: Take the next step
+      text: |
+        Get support to take the next step at an event.
+      link_text: "Attend an event"
+      link_target: "/events"
+      icon: "icon-calendar"
 ---
 
 Are you a UK-trained teacher and UK citizen currently working abroad? Our
