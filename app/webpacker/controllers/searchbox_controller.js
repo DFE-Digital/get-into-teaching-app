@@ -120,7 +120,7 @@ export default class extends Controller {
     if (chosen && chosen.link) {
       if (this.analyticsSubmitter) this.sendToAnalytics();
 
-      Turbo.visit(chosen.link);
+      Turbolinks.visit(chosen.link);
     }
   }
 
