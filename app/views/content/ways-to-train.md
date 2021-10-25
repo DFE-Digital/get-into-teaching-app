@@ -264,9 +264,3 @@ A career change into teaching allows you to use your experience and
 passion to inspire young people.
 
 [Now Teach](https://nowteach.org.uk/) and [Transition to Teach](https://www.transitiontoteach.co.uk/) can support you with your career change.
-
-## If you have a doctorate
-
-If you have or are about to get a PHD you could consider the [researchers in schools](https://thebrilliantclub.org/researchers-in-schools/) programme.
-
-If you have a lot of relevant work experience you could even earn a salary.
