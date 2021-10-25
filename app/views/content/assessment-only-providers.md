@@ -14,7 +14,7 @@ provider_groups:
   East of England:
     providers:
     - header: BEC Teacher Training
-      link: http://secondary.billericayscitt.com/assessment-only-route-2/
+      link: https://www.billericayscitt.com/
       name: Fiona Manby
       telephone: 01268 477611 (extn 471)
       email: fiona@billericayscitt.com
