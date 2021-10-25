@@ -41,7 +41,7 @@ export default class Gtm {
   }
 
   listenForHistoryChange() {
-    document.addEventListener('turbo:load', () => {
+    document.addEventListener('turbolinks:load', () => {
       window.gtag('set', 'page_path', window.location.path);
       window.gtag('event', 'page_view');
     });
