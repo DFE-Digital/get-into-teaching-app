@@ -60,7 +60,7 @@ Find out how to get QTS if you:
 * [do not have a degree](#if-you-do-not-have-a-degree) (and you're not already doing one)
 * [are already an experienced teacher](#if-you-are-already-an-experienced-teacher)
 
-You can also find specialised teacher training programmes if you're [changing career](#if-youre-changing-career) or you [have a doctorate](#if-you-have-a-doctorate).
+You can also find specialised teacher training programmes if you're [changing career](#if-youre-changing-career).
 
 Not looking to teach in primary or secondary settings? Consider teaching [early years](/early-years-teaching-training) or [further education](/become-a-further-education-teacher).
 
@@ -264,9 +264,3 @@ A career change into teaching allows you to use your experience and
 passion to inspire young people.
 
 [Now Teach](https://nowteach.org.uk/) and [Transition to Teach](https://www.transitiontoteach.co.uk/) can support you with your career change.
-
-## If you have a doctorate
-
-If you have or are about to get a PHD you could consider the [researchers in schools](https://thebrilliantclub.org/researchers-in-schools/) programme.
-
-If you have a lot of relevant work experience you could even earn a salary.
