@@ -124,8 +124,10 @@ module WelcomeContentHelper
     mappings(id).fetch(:quote)
   end
 
-  def subject_category(id = welcome_guide_subject_id)
-    mappings(id).dig(:story, :subject)&.downcase
+  def subject_category(id = welcome_guide_subject_id, downcase: true)
+    category = mappings(id).dig(:story, :subject)
+
+    category && downcase ? category.downcase : category
   end
 
 private

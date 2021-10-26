@@ -14,4 +14,18 @@ RSpec.describe WelcomeContentHelper, type: :helper do
       end
     end
   end
+
+  describe "subject_category" do
+    let(:id) { "942655a1-2afa-e811-a981-000d3a276620" }
+
+    specify "returns the subject's category in lower case" do
+      expect(subject_category(id)).to eql("english")
+    end
+
+    context "when downcase: false" do
+      specify "returns the subject's category capitalised" do
+        expect(subject_category(id, downcase: false)).to eql("English")
+      end
+    end
+  end
 end
