@@ -211,4 +211,4 @@ Visit the following websites for more about English education:
 
 ## Contact
 
-The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. However, for general enquiries, you can email us at international.teacherrecruitment@education.gov.uk.
+The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. However, for help with the information on this page, you can email us at international.teacherrecruitment@education.gov.uk.
