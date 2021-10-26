@@ -260,7 +260,7 @@ You may be able to get 'qualified teacher status' (QTS) through a 12-week 'asses
 You’ll need to show that you already meet the standards for QTS. For example, you may meet the standards if:
 
 * you’ve already been employed as an unqualified teacher for a significant amount of time (for example, 2 years) and you’ve worked in more than one school
-* [you’re a qualified teacher who trained overseas](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk)
+* [you’re a qualified teacher who trained overseas](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk)
 
 Entry criteria may vary by teacher training provider. Ask them about eligibility before you apply.
 
