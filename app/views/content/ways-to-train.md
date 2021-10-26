@@ -64,6 +64,14 @@ You can also find specialised teacher training programmes if you're [changing ca
 
 Not looking to teach in primary or secondary settings? Consider teaching [early years](/early-years-teaching-training) or [further education](/become-a-further-education-teacher).
 
+#### International teachers and trainees
+
+If you're from outside the UK and interested in teaching or training to teach in England, please refer to our dedicated guidance for international applicants. 
+
+[Come to England to teach if you're a teacher from outside the UK.](https://review-get-into-teaching-app-1887.london.cloudapps.digital/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk)
+
+[Apply for teacher training as an international applicant.](https://getintoteaching.education.gov.uk/train-to-teach-in-england-as-an-international-student)
+
 ## If you have a degree
 
 ### Go back to university as a postgraduate student
