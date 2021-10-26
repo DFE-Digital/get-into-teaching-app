@@ -81,7 +81,7 @@ A GCSE (General Certificate of Secondary Education) is an academic qualification
 
 ### If you do not have a university degree
 
-If you do not have a degree, you can [apply to study a 3 to 4 year undergraduate course in England](https://www.ucas.com/teaching-in-the-uk) which combines a teaching degree with a professional teaching qualification ([qualified teacher status, or QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts)). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
+If you do not have a degree, you can [apply to study a 3 to 4 year undergraduate course in England](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) which combines a teaching degree with a professional teaching qualification ([qualified teacher status, or QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts)). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
 Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for lots of helpful information about studying at an English university.
 
@@ -103,9 +103,9 @@ You can also register with our Get an adviser service for personalised advice ab
 
 ## 3. Find out about fees and financial support
 
-Most international students will not be eligible for financial support.
+Most international candidates will not be eligible for financial support.
 
-Course fees for international students on fee-paying teacher training courses are between about £9,250 and £16,000 – fees vary between training providers and any financial support is dependent on your immigration status. You will also need to pay for your living costs while you train.
+You can expect to pay between about £11,000 and £16,000 plus living costs to train; fees vary between training providers. Any financial support, including a potential reduction to the home fee rate of up to £9,250, is dependent on your immigration status.
 
 You can apply for a salaried teacher training course, when you’ll earn money while you train in a school. However, these courses are competitive and you will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
 
