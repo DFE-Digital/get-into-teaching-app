@@ -36,7 +36,7 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           yaml_secret: INFRA-KEYS
-          secret: SLACK-WEBHOOK
+          secrets: 'SLACK-WEBHOOK, PROD-RAILS-MASTER-KEY'
 
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@master
@@ -92,6 +92,7 @@ jobs:
           push: true
           build-args: |
                       SHA=${{ steps.sha.outputs.short }}
+                      RAILS_MASTER_KEY=${{ steps.azSecret.outputs.PROD-RAILS-MASTER-KEY }}
 
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'

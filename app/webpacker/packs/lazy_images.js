@@ -1,8 +1,6 @@
 import lazySizes from 'lazysizes';
 lazySizes.cfg.init = false;
 
-lazySizes.init();
-
-document.addEventListener('turbolinks:load', function () {
+document.addEventListener('turbo:load', function () {
   lazySizes.init();
 });

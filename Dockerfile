@@ -33,7 +33,8 @@ RUN bundle install --jobs=$(nproc --all) && \
 
 # Add code and compile assets
 COPY . .
-RUN bundle exec rake assets:precompile
+ARG RAILS_MASTER_KEY
+RUN RAILS_MASTER_KEY="${RAILS_MASTER_KEY}" bundle exec rake assets:precompile
 
 # Cap images to have a max width of 1000px
 RUN find public -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -exec convert --resize '1000' {} \;
