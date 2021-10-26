@@ -173,7 +173,8 @@ If you're applying for a primary course with a subject specialism, or you're par
 You could talk about:
 
 * any relevant work or unpaid experience
-* your degree and other relevant qualifications, such as your A levels
+* your degree and degree modules
+* your other relevant qualifications, such as A levels
 * any relevant skills, interests or achievements
 * your understanding of the national curriculum
 
