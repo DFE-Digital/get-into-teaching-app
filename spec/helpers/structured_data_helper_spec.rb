@@ -300,7 +300,7 @@ describe StructuredDataHelper, type: "helper" do
         name: event.name,
         startDate: event.start_at,
         endDate: event.end_at,
-        description: strip_tags(event.description).strip,
+        description: strip_tags(event.summary).strip,
         eventStatus: described_class::EVENT_SCHEDULED,
         eventAttendanceMode: described_class::OFFLINE_EVENT,
         offers: {
