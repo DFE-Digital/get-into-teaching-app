@@ -92,6 +92,8 @@ Rails.application.routes.draw do
     end
   end
 
+  resources "teaching_events", path: "/teaching-events"
+
   namespace :callbacks do
     resources :steps, path: "/book", only: %i[index show update] do
       collection do
