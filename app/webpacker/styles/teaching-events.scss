@@ -11,6 +11,12 @@
     }
   }
 
+  &__filter,
+  &__listing {
+    padding: 1em;
+    margin: 1em;
+  }
+
   &__filter {
     outline: 2px dashed blue;
 

@@ -5,9 +5,9 @@
   </div>
 
   <div class="events__filter--group">
-    <%= f.govuk_check_boxes_fieldset(:setting, legend: nil) do %>
-      <%= f.govuk_check_box :setting, "online", label: { text: "Online" } %>
-      <%= f.govuk_check_box :setting, "in_person", label: { text: "In person" } %>
+    <%= f.govuk_check_boxes_fieldset(:online, legend: nil) do %>
+      <%= f.govuk_check_box :online, "true", label: { text: "Online" } %>
+      <%= f.govuk_check_box :online, "false", label: { text: "In person" } %>
     <% end %>
   </div>
 

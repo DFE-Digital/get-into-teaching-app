@@ -12,6 +12,6 @@ class TeachingEventsController < ApplicationController
 private
 
   def search_params
-    params.permit(teaching_events_search: %i[postcode setting type])[:teaching_events_search]
+    params.permit(teaching_events_search: [:postcode, { online: [], type: [] }])[:teaching_events_search]
   end
 end

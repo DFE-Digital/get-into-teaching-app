@@ -12,6 +12,7 @@
         <% @events.each do |e| %>
           <li>
             <ul>
+              <li><%= e.start_at %></li>
               <li><%= e.id %></li>
               <li><%= e.name %></li>
               <li><%= e.summary %></li>
