@@ -4,6 +4,7 @@ class TeachingEventsController < ApplicationController
   layout "teaching_events"
 
   def index
+    @page_title = "Find an event near you"
     @event_search = TeachingEvents::Search.new(search_params)
   end
 
