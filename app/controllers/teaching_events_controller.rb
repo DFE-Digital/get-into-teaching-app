@@ -9,6 +9,11 @@ class TeachingEventsController < ApplicationController
     @events = @event_search.results
   end
 
+  def show
+    @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+    @page_title = @event.name
+  end
+
 private
 
   def search_params

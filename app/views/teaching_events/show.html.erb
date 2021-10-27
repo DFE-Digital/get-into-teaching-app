@@ -1,0 +1,16 @@
+<h1><%= @event.name %></h1>
+
+<ul>
+  <li><%= @event.start_at %></li>
+  <li><%= @event.readable_id %></li>
+  <li><%= @event.name %></li>
+  <li><%= @event.summary %></li>
+  <li>online: <%= @event.is_online %></li>
+  <li>virtual: <%= @event.is_virtual %></li>
+  <li><%= @event.building&.venue %></li>
+  <li><%= @event.building&.address_postcode %></li>
+</ul>
+
+<%= link_to event_steps_path(@event.readable_id), class: "button" do %>
+  Sign up for this event
+<% end %>

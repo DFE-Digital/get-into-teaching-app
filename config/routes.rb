@@ -92,7 +92,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources "teaching_events", path: "/teaching-events"
+  resources "teaching_events", path: "/teaching-events", controller: "teaching_events"
 
   namespace :callbacks do
     resources :steps, path: "/book", only: %i[index show update] do

@@ -13,7 +13,7 @@
           <li>
             <ul>
               <li><%= e.start_at %></li>
-              <li><%= e.id %></li>
+              <li><%= link_to(e.id, teaching_event_path(e.readable_id)) %></li>
               <li><%= e.name %></li>
               <li><%= e.summary %></li>
               <li>online: <%= e.is_online %></li>
