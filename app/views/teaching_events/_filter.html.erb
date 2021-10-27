@@ -5,6 +5,10 @@
   </div>
 
   <div class="events__filter--group">
+    <%= f.govuk_collection_select(:distance, @distances, :value, :key, abel: { text: "Search area" }) %>
+  </div>
+
+  <div class="events__filter--group">
     <%= f.govuk_check_boxes_fieldset(:online, legend: nil) do %>
       <%= f.govuk_check_box :online, "true", label: { text: "Online" } %>
       <%= f.govuk_check_box :online, "false", label: { text: "In person" } %>
@@ -13,9 +17,9 @@
 
   <div class="events__filter--group">
     <%= f.govuk_check_boxes_fieldset(:type, legend: { text: "Event type", tag: nil }) do %>
-      <%= f.govuk_check_box :type, "train_to_teach", label: { text: "Train to teach" } %>
-      <%= f.govuk_check_box :type, "online_forum", label: { text: "Online forum" } %>
-      <%= f.govuk_check_box :type, "school_and_university", label: { text: "School and university" } %>
+      <%= f.govuk_check_box :type, "222_750_001,222_750_007", label: { text: "Train to teach" } %>
+      <%= f.govuk_check_box :type, "222_750_008", label: { text: "Online forum" } %>
+      <%= f.govuk_check_box :type, "222_750_009", label: { text: "School and university" } %>
     <% end %>
   </div>
 
