@@ -6,6 +6,7 @@ class TeachingEventsController < ApplicationController
   def index
     @page_title = "Find an event near you"
     @event_search = TeachingEvents::Search.new(search_params)
+    @events = @event_search.results
   end
 
 private

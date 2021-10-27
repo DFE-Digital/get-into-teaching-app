@@ -8,7 +8,21 @@
     </div>
 
     <div class="teaching-events__listing">
-      Events list
+      <ol>
+        <% @events.each do |e| %>
+          <li>
+            <ul>
+              <li><%= e.id %></li>
+              <li><%= e.name %></li>
+              <li><%= e.summary %></li>
+              <li>online: <%= e.is_online %></li>
+              <li>virtual: <%= e.is_virtual %></li>
+              <li><%= e.building&.venue %></li>
+              <li><%= e.building&.address_postcode %></li>
+            </ul>
+          </li>
+        <% end %>
+      </ol>
     </div>
   </div>
 </section>
