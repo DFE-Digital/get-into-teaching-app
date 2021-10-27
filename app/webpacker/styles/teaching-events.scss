@@ -1,0 +1,29 @@
+.teaching-events {
+  margin-inline: 1.5em;
+
+  &__container {
+    outline: 2px dashed red;
+    display: flex;
+    flex-direction: column;
+
+    @include mq($from: desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__filter {
+    outline: 2px dashed blue;
+
+    @include mq($from: desktop) {
+      flex-basis: 33%;
+    }
+  }
+
+  &__listing {
+    outline: 2px dashed purple;
+
+    @include mq($from: desktop) {
+      flex-basis: 66%;
+    }
+  }
+}
