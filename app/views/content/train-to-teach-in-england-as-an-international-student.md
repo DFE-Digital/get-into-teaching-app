@@ -109,13 +109,16 @@ You can expect to pay between about £11,000 and £16,000 plus living costs to t
 
 You can apply for a salaried teacher training course, when you’ll earn money while you train in a school. However, these courses are competitive and you will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
 
-### Already living in the UK?
+<div class="inset">
+  <h3>Already living in the UK?</h3>
 
-You may be eligible to get financial support with your teacher training course if you:
+  <p>You may be eligible to get financial support with your teacher training course if you:</p>
 
-• have settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families)
-
-• don’t fall under the EU Settlement Scheme, but have settled status, for example [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk)
+  <ul>
+    <li>have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a></li>
+    <li>don’t fall under the EU Settlement Scheme, but have settled status, for example <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a></li>
+  </ul>
+</div>
 
 
 CTA:
@@ -131,9 +134,13 @@ You can train in a school or in a university setting, and study full-time (over 
 
 You can apply for a teacher training place without visiting the UK, and some providers also conduct interviews using remote technology. Due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
 
-### Already living in the UK?
+<div class="inset">
+  <h3>Already living in the UK?</h3>
 
-If you have settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families), or [indefinite leave to remain](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk), you can apply to any teacher training provider in England.
+  <p>
+If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any teacher training provider in England.
+  </p>
+</div>
 
 ### Your suitability for teaching
 

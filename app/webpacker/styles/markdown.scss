@@ -131,6 +131,13 @@
     }
   }
 
+  .inset {
+    @include font-size(xsmall);
+    border-left: 6px solid $pink;
+    padding: .8em 1em;
+    background: $grey;
+  }
+
   &.longform {
     // undo the blue background
     h2 {
