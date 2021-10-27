@@ -12,17 +12,11 @@
 <% end %>
 
 <% if f.object.display_year_of_birth? %>
-  <%= f.govuk_collection_select :year_of_birth,
-        f.object.class.years,
-        :to_i,
-        :to_i,
-        options: { prompt: true },
-        label: { tag: 'h1', size: 'xl', text: t("helpers.label.mailing_list_steps_age.title") } do
-  %>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    </p>
-  <% end %>
+  <h1><%= t("helpers.label.mailing_list_steps_age.title") %></h1>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  </p>
+  <%= f.govuk_text_field :year_of_birth %>
 <% end %>
 
 <% if f.object.display_age_range? %>

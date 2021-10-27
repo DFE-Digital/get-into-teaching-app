@@ -33,7 +33,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       visit mailing_list_steps_path
 
       submit_name_step(candidate_identity)
-      submit_select_step("1967", :age)
+      submit_input_step("Year", "1967", :age)
     end
 
     scenario "age_dislay_option is 'age_range'" do
@@ -41,7 +41,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       visit mailing_list_steps_path
 
       submit_name_step(candidate_identity)
-      submit_choice_step("62 or older", :age)
+      submit_choice_step("50+", :age)
     end
 
     scenario "restarting the form retains the age display option" do

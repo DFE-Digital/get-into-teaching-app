@@ -6,7 +6,7 @@ module MailingList
       require "active_record/attribute_assignment"
       include ::ActiveRecord::AttributeAssignment
 
-      MIN_AGE = 18.years.ago.to_date
+      MIN_AGE = 16.years.ago.to_date
       MAX_AGE = 70.years.ago.to_date
       DISPLAY_OPTIONS = {
         none: "none",
@@ -14,7 +14,6 @@ module MailingList
         year_of_birth: "year_of_birth",
         age_range: "age_range",
       }.freeze
-      AGE_RANGE_BRACKETS = 5
 
       attribute :age_display_option, :string
       attribute :year_of_birth, :integer
@@ -22,7 +21,10 @@ module MailingList
       attribute :age_range, :string
 
       validates :age_display_option, inclusion: { in: DISPLAY_OPTIONS.values }
-      validates :year_of_birth, inclusion: { in: ->(age) { age.class.years } }, allow_blank: true
+      validates :year_of_birth, format: { with: /\d{4}/ }, numericality: {
+        greater_than_or_equal_to: ->(_) { MAX_AGE.year },
+        less_than_or_equal_to: ->(_) { MIN_AGE.year },
+      }, allow_blank: true
       validates :year_of_birth, presence: true, if: :display_year_of_birth?
       validates :age_range, inclusion: { in: ->(age) { age.class.age_ranges } }, allow_blank: true
       validates :age_range, presence: true, if: :display_age_range?
@@ -35,23 +37,15 @@ module MailingList
       before_validation :date_of_birth, :add_invalid_error
 
       class << self
-        def years
-          MIN_AGE.year.downto(MAX_AGE.year).to_a
-        end
-
         def age_ranges
-          year_groups = years.each_slice((years.count / AGE_RANGE_BRACKETS.to_f).round).to_a
-          current_year = Time.zone.now.year
-
-          year_groups.map do |years|
-            if years == year_groups.first
-              "#{current_year - years.last} or younger"
-            elsif years == year_groups.last
-              "#{current_year - years.first} or older"
-            else
-              "#{current_year - years.first} - #{current_year - years.last}"
-            end
-          end
+          [
+            "16-17",
+            "18-24",
+            "25-29",
+            "30-39",
+            "40-49",
+            "50+",
+          ]
         end
       end
 

@@ -4,22 +4,17 @@ describe MailingList::Steps::Age do
   include_context "with wizard step"
   it_behaves_like "a with wizard step"
 
-  describe ".years" do
-    subject { described_class.years }
-
-    it { is_expected.to eq(described_class::MIN_AGE.year.downto(described_class::MAX_AGE.year).to_a) }
-  end
-
   describe ".age_ranges" do
     subject { described_class.age_ranges }
 
     it do
       is_expected.to match_array([
-        "28 or younger",
-        "29 - 39",
-        "40 - 50",
-        "51 - 61",
-        "62 or older",
+        "16-17",
+        "18-24",
+        "25-29",
+        "30-39",
+        "40-49",
+        "50+",
       ])
     end
   end
@@ -29,7 +24,8 @@ describe MailingList::Steps::Age do
   end
 
   describe "validations for year_of_birth" do
-    it { is_expected.to validate_inclusion_of(:year_of_birth).in_array(described_class.years).allow_blank }
+    it { is_expected.to allow_values(described_class::MAX_AGE.year, described_class::MIN_AGE.year, 1999, 2005, nil).for(:year_of_birth) }
+    it { is_expected.not_to allow_values(described_class::MAX_AGE.year - 1, described_class::MIN_AGE.year + 1, 1900, "abc", Time.zone.today.year).for(:year_of_birth) }
     it { is_expected.not_to validate_presence_of(:year_of_birth) }
 
     context "when age_display_options is 'year_of_birth'" do

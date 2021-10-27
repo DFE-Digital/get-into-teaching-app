@@ -396,7 +396,11 @@ en:
             age_range:
               blank: Choose an age range from the list
             year_of_birth:
-              blank: Choose a year from the list
+              blank: Enter your year of birth
+              invalid: Enter a valid year, for example 1989
+              greater_than_or_equal_to: Enter a year later than %{count}
+              less_than_or_equal_to: You must be at least 16 years old to use this service
+
             date_of_birth:
               blank: "You need to enter your date of birth"
               on_or_before: "You must be 18 years or older to use this service"
@@ -517,6 +521,7 @@ en:
         address_postcode: Your postcode (optional)
       mailing_list_steps_age:
         title: How old are you?
+        year_of_birth: Year
 
       search:
         search: Search for ...
