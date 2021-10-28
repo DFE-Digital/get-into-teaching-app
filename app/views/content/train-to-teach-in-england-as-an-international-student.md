@@ -1,5 +1,5 @@
 ---
-title: "Apply for teacher training as an international applicant"
+title: "Apply for teacher training as an international candidate"
 description: |-
   Train to teach in England as an international student
 date: "2021-05-27"
@@ -111,7 +111,7 @@ You can also register with our Get an adviser service for personalised advice ab
 
 ## 3. Find out about fees and financial support
 
-Most international candidates will not be eligible for financial support.
+Many international candidates will not be eligible for financial support.
 
 You can expect to pay between about £11,000 and £16,000 plus living costs to train; fees vary between training providers. Any financial support, including a potential reduction to the home fee rate (which is set at a maximum of £9,250) is dependent on your immigration status.
 
@@ -196,11 +196,11 @@ Your teacher training provider may also be able to help you plan your move to th
 
 If you’re accepted on to an English teacher training course, you’ll train for one year (or longer if you’re part-time) to gain [QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts).
 
+You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
+
 ## 8. Apply for your first teaching job
 
 When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England.
-
-You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
 
 <a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants" class="button">Learn more about about your first teaching job in England</a>
 
