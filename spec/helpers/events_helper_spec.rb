@@ -170,6 +170,22 @@ describe EventsHelper, type: "helper" do
     end
   end
 
+  describe "#display_event_provider_info?" do
+    it "returns false if train to teach or question time" do
+      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+      expect(display_event_provider_info?(event)).to be(false)
+      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
+      expect(display_event_provider_info?(event)).to be(false)
+    end
+
+    it "returns true if not train to teach or question time" do
+      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
+      expect(display_event_provider_info?(event)).to be(true)
+      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Schools or University event"]
+      expect(display_event_provider_info?(event)).to be(true)
+    end
+  end
+
   describe "#event_has_provider_info?" do
     it "returns true if the event has provider information" do
       event = build(:event_api, :with_provider_info)
