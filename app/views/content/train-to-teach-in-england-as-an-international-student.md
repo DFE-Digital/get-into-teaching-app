@@ -81,11 +81,11 @@ provider and immigration status)
 To teach children aged 11 to 18 in secondary school, you’ll need:
 
 * a bachelor’s degree (this can be from a university outside the UK)
-* a standard in English and mathematics equivalent to a grade 4 GCSE
+* a standard in English and mathematics equivalent to a grade 4 GCSE 
 
 To teach children aged 3 to 11 in primary school, you will also need a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 
-A GCSE (General Certificate of Secondary Education) is an academic qualification awarded for exams in England, usually taken at age 16. [Get help understanding English qualifications and their international equivalents](#get-help-and-advice).
+A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. [Get help understanding English qualifications and their international equivalents](#get-help-and-advice).
 
 ### If you do not have a university degree
 
