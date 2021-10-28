@@ -681,8 +681,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
             }
 
             figcaption {
-              font-style: italic;
-
               &:before {
                 content: "\2014 "; // emdash
                 margin-right: .3em;
