@@ -78,7 +78,7 @@ For comparison, you'd work 227 days per year (on average) if you worked full tim
 
 ## Teachers' pension scheme
 
-The teachers’ pension scheme is one of the most generous in the country. It is a ‘final salary’ scheme, which gives you a regular source of income when you retire. It is:
+The teachers’ pension scheme is one of the most generous in the country. It is:
 
 * based on your teaching salary rather than the amount of money you pay in
 * registered with HM Revenue and Customs - so your contributions are tax-free
