@@ -133,9 +133,8 @@
 
   .inset {
     @include font-size(xsmall);
-    border-left: 6px solid $pink;
-    padding: .8em 1em;
-    background: $grey;
+    border-left: 6px solid $grey-mid;
+    padding: .4em 1.5em;
   }
 
   &.longform {
