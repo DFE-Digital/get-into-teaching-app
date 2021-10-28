@@ -702,6 +702,69 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
       }
     }
+    @mixin did-you-know-layout {
+      grid-template-columns: 2em 1fr 2em;
+      grid-template-rows: 3em minmax(3em, max-content);
+
+      .triangle { grid-area: 1 / 1 / 2 / 4; }
+      .text { grid-area: 1 / 1 / 3 / 3; }
+      .challenge { grid-area: 3 / 2 / 4 / 3; }
+
+      @include mq($from: desktop) {
+        grid-template-columns: minmax(10em, auto) 1fr minmax(10em, auto);
+      }
+    }
+
+    &.did-you-know {
+      @include did-you-know-layout;
+
+      display: grid;
+      background: $green;
+
+      .triangle {
+        background: $grey;
+        margin-bottom: -.03em; // ensure there's never any gap when resizing
+
+        &.green {
+          svg {
+            fill: $green;
+            stroke: $green;
+            stroke-width: 1;
+          }
+        }
+      }
+
+      .pink {
+        background: $pink;
+        padding: .3rem .6rem;
+      }
+
+      .purple {
+        background: $purple;
+        padding: .3rem .6rem;
+      }
+
+      .text {
+        margin: 1rem;
+        max-width: 65ch;
+
+        h2 {
+          @include font-size(xxlarge);
+
+          margin: 0 0 1rem;
+          position: relative;
+          z-index: map-get($z-indices, "high");
+          display: inline-block;
+        }
+
+        p.leading {
+          @include font-size(large);
+          font-weight: bold;
+          margin: .3rem 0;
+        }
+      }
+    }
+
 
     @mixin exciting-times-ahead-layout {
       grid-template-columns: minmax(2em, auto) auto minmax(2em, auto);

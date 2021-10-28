@@ -9,5 +9,6 @@ content:
   - "content/welcome/landing/my-journey-into-teaching"
   - "content/welcome/landing/bringing-your-lessons-to-life"
   - "content/welcome/landing/youre-not-the-only-one-with-questions"
+  - "content/welcome/landing/did-you-know"
   - "content/welcome/landing/exciting-times-ahead"
 ---
