@@ -113,7 +113,7 @@ You can also register with our Get an adviser service for personalised advice ab
 
 Most international candidates will not be eligible for financial support.
 
-You can expect to pay between about £11,000 and £16,000 plus living costs to train; fees vary between training providers. Any financial support, including a potential reduction to the home fee rate of up to £9,250, is dependent on your immigration status.
+You can expect to pay between about £11,000 and £16,000 plus living costs to train; fees vary between training providers. Any financial support, including a potential reduction to the home fee rate (which is set at a maximum of £9,250) is dependent on your immigration status.
 
 You can apply for a salaried teacher training course, when you’ll earn money while you train in a school. However, these courses are competitive and you will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
 
@@ -133,7 +133,7 @@ You can apply for a salaried teacher training course, when you’ll earn money w
 
 ## 4. Search and apply for teacher training courses
 
-Visit [Find postgraduate teacher training](https://www.find-postgraduate-teacher-training.service.gov.uk/) for teacher training courses in England leading to qualified teacher status [(QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
+Visit [Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) for teacher training courses in England leading to qualified teacher status [(QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
 
 You can search by location, teaching subject and age group. You can also search for courses which pay a salary, and courses where visa sponsorship is available.
 
@@ -141,7 +141,7 @@ You can search by location, teaching subject and age group. You can also search 
 
 You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](#get-help-and-advice) for guidance on the different types of courses available, or see [Ways to train to teach in England](/ways-to-train).
 
-You can apply for a teacher training place without visiting the UK. Some providers also conduct interviews using remote technology. Due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
+You can apply for a teacher training place without visiting the UK. However, due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
 
 <div class="inset">
   <h3>Already living in the UK?</h3>
@@ -163,8 +163,6 @@ As part of the application process, your training provider will check you’re s
 
 
 ## 5. Apply for your visa
-
-You will need a visa or an alternative immigration status allowing you to train as a teacher in the UK.
 
 <div class="inset">
   <h3>Already living in the UK?</h3>
@@ -210,7 +208,7 @@ You may need to apply for a different visa to work in England as a qualified tea
 <a href="https://teaching-vacancies.service.gov.uk/" class="button">Search Teaching Vacancies to see what teaching jobs are available</a>
 
 
-# Further reading: learn more about life as a teacher and the English education system
+### Further reading: learn more about life as a teacher and the English education system
 
 [Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
 
@@ -230,7 +228,7 @@ Visit the following websites for more about English education:
 
 • [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
 
-# Contact
+### Contact
 
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. 
 
