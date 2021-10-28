@@ -128,7 +128,7 @@ You can apply for a salaried teacher training course, when you’ll earn money w
   </ul>
 </div>
 
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants" class="button">Check your eligibility for financial support</a>
+<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#rate" class="button">Check your eligibility for financial support</a>
 
 
 ## 4. Search and apply for teacher training courses
@@ -155,7 +155,7 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
 
 As part of the application process, your training provider will check you’re suitable for teaching in terms of your health, whether you’re safe to work with children and your level of maths and English.
 
-[Learn more about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants)
+[Learn more about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train)
 
 <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses" class="button">Find postgraduate teacher training</a>
 
@@ -171,19 +171,19 @@ As part of the application process, your training provider will check you’re s
   <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
   you will not need a visa to train to teach in the UK.</p>
 
-  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants">Some people can still apply for settled or pre-settled status – check your eligibility</a></p>
+  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">Some people can still apply for settled or pre-settled status – check your eligibility</a></p>
 
-  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants">If you are currently studying in the UK on a student visa, you may be able to apply for a graduate visa</a></p>  
+  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">If you are currently studying in the UK on a student visa, you may be able to apply for a graduate visa</a></p>  
 </div>
 
 
-If you don’t already have an immigration status allowing you to train to teach in the UK, you’ll need to apply for a [student visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants), once you have a confirmed offer of a fee-paying training place from a training provider who can sponsor visas. 
+If you don’t already have an immigration status allowing you to train to teach in the UK, you’ll need to apply for a [student visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa), once you have a confirmed offer of a fee-paying training place from a training provider who can sponsor visas. 
 
-If you have a place on a salaried training course, you’ll need a [skilled worker visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants).
+If you have a place on a salaried training course, you’ll need a [skilled worker visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa).
 
 Alternatively, you may be eligible for a different type of visa which allows you to study without being sponsored by your training provider or employer.
 
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants" class="button">Learn more about applying for the right visa for your teacher training course</a>
+<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa" class="button">Learn more about applying for the right visa for your teacher training course</a>
 
 ## 6. Plan your move to the UK
 
@@ -202,7 +202,7 @@ You may need to apply for a different visa to work in England as a qualified tea
 
 When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England.
 
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants" class="button">Learn more about about your first teaching job in England</a>
+<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job" class="button">Learn more about about your first teaching job in England</a>
 
 
 <a href="https://teaching-vacancies.service.gov.uk/" class="button">Search Teaching Vacancies to see what teaching jobs are available</a>
