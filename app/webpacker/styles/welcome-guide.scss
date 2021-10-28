@@ -819,12 +819,11 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         flex-wrap: wrap;
         flex-direction: column;
         margin: 2em 0;
-
-        @include mq($from: tablet) {
-          flex-direction: row;
-        }
-
         gap: 2em;
+
+        @include mq($until: desktop) {
+          margin-inline: 2em;
+        }
 
         .stage {
           flex: 1 1 auto;
@@ -836,22 +835,34 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
           .card {
             display: flex;
+            padding: 1em 2em;
+            gap: 1em;
             justify-content: center;
             position: relative;
             flex-direction: column;
-            width: min-content;
+            width: 100%;
             align-items: center;
+            background: $white;
+
+            @include mq($from: mobile) {
+              gap: 2em;
+              flex-direction: row;
+              padding: .5em 2em;
+            }
 
             picture {
-              background: $white;
               display: inline-block;
               width: unset;
+              margin: 0;
 
               > img {
                 margin: 2em 1em;
-                padding: 1em 1.5em;
-                height: 2.5em;
-                max-width: 3em;
+                padding: 1em .2em;
+                @include mq($from: desktop) {
+                  flex-direction: row;
+                  height: 4em;
+                  max-width: 4em;
+                }
               }
             }
 
@@ -866,10 +877,13 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
             }
           }
 
-          .stage-name {
-            @include font-size(xsmall);
-            text-align: center;
-            margin: 1em 0;
+          .stage-info {
+            flex-grow: 1;
+
+            .stage-name {
+              @include font-size(medium);
+              margin-block: .2em;
+            }
           }
         }
       }
