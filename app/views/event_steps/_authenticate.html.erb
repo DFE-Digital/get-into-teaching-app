@@ -1,3 +1,5 @@
+<%= tag.h1("Verify your email address") %>
+
 <%= render "wizard/steps/authenticate", f: f, email: event_session["email"], resend_verification_path: resend_verification_event_steps_path %>
 
 <% if event_session["is_walk_in"] %>
