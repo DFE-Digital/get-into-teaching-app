@@ -480,6 +480,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
 
     &.bringing-your-lessons-to-life {
+      $accessible-purple: lighten($purple, 5%);
       @include bringing-your-lesson-to-life-layout;
       padding-bottom: 8em;
 
@@ -499,7 +500,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
 
       .purple {
-        background: $purple;
+        background: $accessible-purple;
         padding: .3rem .6rem;
       }
 
@@ -507,7 +508,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         text-align: right;
 
         svg.arrow {
-          stroke: $purple;
+          stroke: $accessible-purple;
         }
 
         &.desktop {
