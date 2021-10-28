@@ -1,7 +1,6 @@
 @mixin content-heading {
   display: inline-block;
   margin-top: 0;
-  margin-bottom: .1rem;
   padding: .4rem $indent-amount;
   background: $blue;
   @include font-size("medium");
