@@ -216,17 +216,12 @@ You may need to apply for a different visa to work in England as a qualified tea
 
 Visit the following websites for more about English education:
 
-• [Types of English school](https://www.gov.uk/types-of-school)
-
-• [Curriculum and qualifications](https://www.gov.uk/national-curriculum)
-
-• [Behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
-
-• [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
-
-• [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/about) – a charity gathering international evidence on teaching 5- to 16-year-olds
-
-• [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
+* [Types of English school](https://www.gov.uk/types-of-school)
+* [Curriculum and qualifications](https://www.gov.uk/national-curriculum)
+* [Behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
+* [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
+* [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/about) – a charity gathering international evidence on teaching 5- to 16-year-olds
+* [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
 
 ### Contact
 
