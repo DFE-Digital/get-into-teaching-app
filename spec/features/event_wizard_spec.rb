@@ -29,7 +29,7 @@ RSpec.feature "Event wizard", type: :feature do
     visit event_steps_path(event_id: event_readable_id, walk_in: true)
 
     expect(page).to have_title(individual_event_page_title)
-    expect(page).to have_css("h1", text: "About you")
+    expect(page).to have_css("h1", text: "Sign up for this event")
     expect(page).to have_text event_name
     expect(page).to have_css(".registration-with-image-above")
 
@@ -96,7 +96,7 @@ RSpec.feature "Event wizard", type: :feature do
     visit event_steps_path(event_id: event_readable_id)
 
     expect(page).to have_title(individual_event_page_title)
-    expect(page).to have_css("h1", text: "About you")
+    expect(page).to have_css("h1", text: "Sign up for this event")
     expect(page).to have_text event_name
     expect(page).to have_css(".registration-with-image-above")
 
@@ -136,7 +136,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_css("h1", text: "About you")
+    expect(page).to have_css("h1", text: "Sign up for this event")
     expect(page).to have_text event_name
     expect(page).to have_css(".registration-with-image-above")
 
@@ -179,7 +179,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_css("h1", text: "About you")
+    expect(page).to have_css("h1", text: "Sign up for this event")
     expect(page).to have_css(".registration-with-image-above")
 
     fill_in_personal_details_step
@@ -235,7 +235,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_css("h1", text: "About you")
+    expect(page).to have_css("h1", text: "Sign up for this event")
     expect(page).to have_text event_name
     expect(page).to have_css(".registration-with-image-above")
 
@@ -271,7 +271,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_css("h1", text: "About you")
+    expect(page).to have_css("h1", text: "Sign up for this event")
     fill_in_personal_details_step
     click_on "Next step"
 
@@ -316,7 +316,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_css("h1", text: "About you")
+    expect(page).to have_css("h1", text: "Sign up for this event")
     fill_in_personal_details_step
     click_on "Next step"
 
