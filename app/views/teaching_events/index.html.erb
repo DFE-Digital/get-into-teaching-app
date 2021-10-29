@@ -8,7 +8,24 @@
     </div>
 
     <div class="teaching-events__listing">
-      <ol>
+      <ol class="teaching-events__events teaching-events__events--featured">
+        <% @featured_events.each do |e| %>
+          <li>
+            <ul>
+              <li><%= e.start_at %></li>
+              <li><%= link_to(e.id, teaching_event_path(e.readable_id)) %></li>
+              <li><%= e.name %></li>
+              <li><%= e.summary %></li>
+              <li>online: <%= e.is_online %></li>
+              <li>virtual: <%= e.is_virtual %></li>
+              <li><%= e.building&.venue %></li>
+              <li><%= e.building&.address_postcode %></li>
+            </ul>
+          </li>
+        <% end %>
+      </ol>
+
+      <ol class="teaching-events__events">
         <% @events.each do |e| %>
           <li>
             <ul>
