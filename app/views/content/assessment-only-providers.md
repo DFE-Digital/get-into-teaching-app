@@ -170,7 +170,7 @@ provider_groups:
       telephone: '0208 2404326'
       email: ao@stmarys.ac.uk
     - header: 'Teaching London: LDBS SCITT'
-      link: https://teachinglondon.org
+      # link: https://teachinglondon.org
       name: Saskia Rossi
       telephone: 0207 932 1126
       email: admin@teachinglondon.org
