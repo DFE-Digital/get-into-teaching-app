@@ -220,7 +220,7 @@ Visit the following websites for more about English education:
 * [Curriculum and qualifications](https://www.gov.uk/national-curriculum)
 * [Behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
 * [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
-* [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/about) – a charity gathering international evidence on teaching 5- to 16-year-olds
+* [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/about) – a charity gathering international evidence on teaching 5 to 16-year-olds
 * [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
 
 ### Contact
