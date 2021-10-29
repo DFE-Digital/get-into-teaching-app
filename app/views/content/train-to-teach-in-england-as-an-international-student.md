@@ -60,7 +60,7 @@ keywords:
 
 Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. 
 
-You’ll leave with qualified teacher status (QTS, or PGCE + QTS), professional qualifications valued globally.
+You’ll complete your training with qualified teacher status (QTS, or PGCE + QTS), professional qualifications valued globally.
 
 You can apply to train to teach in England from any country in the world. This page explains how, step by step.
 
@@ -81,7 +81,7 @@ provider and immigration status)
 To teach children aged 11 to 18 in secondary school, you’ll need:
 
 * a bachelor’s degree (this can be from a university outside the UK)
-* a standard in English and mathematics equivalent to a grade 4 GCSE 
+* a standard in English and maths equivalent to a grade 4 GCSE 
 
 To teach children aged 3 to 11 in primary school, you will also need a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 
@@ -153,7 +153,7 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
 
 ### Your suitability for teaching
 
-As part of the application process, your training provider will check you’re suitable for teaching in terms of your health, whether you’re safe to work with children and your level of maths and English.
+As part of the application process, your training provider will check you’re suitable for teaching in terms of your health, whether you’re safe to work with children and the standards you meet in maths and English.
 
 [Learn more about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train)
 
@@ -194,7 +194,7 @@ Your teacher training provider may also be able to help you plan your move to th
 
 ## 7. Complete your teacher training and gain qualified teacher status (QTS)
 
-If you’re accepted on to an English teacher training course, you’ll train for one year (or longer if you’re part-time) to gain [QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts).
 
 You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
 
@@ -202,7 +202,7 @@ You may need to apply for a different visa to work in England as a qualified tea
 
 When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England.
 
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job" class="button">Learn more about about your first teaching job in England</a>
+<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job" class="button">Learn more about your first teaching job in England</a>
 
 
 <a href="https://teaching-vacancies.service.gov.uk/" class="button">Search Teaching Vacancies to see what teaching jobs are available</a>
