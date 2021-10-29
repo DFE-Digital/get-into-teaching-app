@@ -131,6 +131,12 @@
     }
   }
 
+  .inset {
+    @include font-size(xsmall);
+    border-left: 6px solid $grey-mid;
+    padding: .4em 1.5em;
+  }
+
   &.longform {
     // undo the blue background
     h2 {
