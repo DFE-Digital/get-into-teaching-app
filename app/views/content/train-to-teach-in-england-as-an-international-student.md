@@ -68,7 +68,7 @@ You can also apply to train to teach in [Wales](https://educators.wales/home), [
 
 ## Key facts
 
-* Apply now for courses starting Sept 2022
+* Apply now for courses starting September 2022
 * Train 1 year full-time, or longer part-time
 * International candidates can expect to pay between about £9,250 and £16,000 plus
 living costs to train (with fees and any financial support dependent on your training
