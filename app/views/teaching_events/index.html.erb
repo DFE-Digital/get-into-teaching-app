@@ -1,46 +1,21 @@
 <section class="teaching-events">
-  <h1>Events</h1>
+  <h1>Teaching events</h1>
 
   <div class="teaching-events__container">
-
     <div class="teaching-events__filter">
       <%= render partial: "filter" %>
     </div>
 
     <div class="teaching-events__listing">
-      <ol class="teaching-events__events teaching-events__events--featured">
-        <% @featured_events.each do |e| %>
-          <li>
-            <ul>
-              <li><%= e.start_at %></li>
-              <li><%= link_to(e.id, teaching_event_path(e.readable_id)) %></li>
-              <li><%= e.name %></li>
-              <li><%= e.summary %></li>
-              <li>online: <%= e.is_online %></li>
-              <li>virtual: <%= e.is_virtual %></li>
-              <li><%= e.building&.venue %></li>
-              <li><%= e.building&.address_postcode %></li>
-            </ul>
-          </li>
-        <% end %>
-      </ol>
+      <div class="teaching-events__events teaching-events__events--featured">
+        <h2>Upcoming train to teach events</h2>
 
-      <ol class="teaching-events__events">
-        <% @events.each do |e| %>
-          <li>
-            <ul>
-              <li><%= e.start_at %></li>
-              <li><%= link_to(e.id, teaching_event_path(e.readable_id)) %></li>
-              <li><%= e.name %></li>
-              <li><%= e.summary %></li>
-              <li>online: <%= e.is_online %></li>
-              <li>virtual: <%= e.is_virtual %></li>
-              <li><%= e.building&.venue %></li>
-              <li><%= e.building&.address_postcode %></li>
-            </ul>
-          </li>
-        <% end %>
-      </ol>
+        <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>
+      </div>
+
+      <div class="teaching-events__events">
+        <ol><%= render TeachingEvents::EventComponent.with_collection(@events) %></ol>
+      </div>
     </div>
   </div>
 </section>

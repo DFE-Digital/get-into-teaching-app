@@ -1,0 +1,59 @@
+<%= tag.li(class: classes) %>
+  <% if train_to_teach? %>
+
+    <div class="event__info">
+      <div class="event__info__date-and-time">
+        <%= date_and_time %>
+      </div>
+
+      <div class="event__info__name">
+        <%= link_to(title, teaching_event_path(slug)) %>
+      </div>
+
+      <div class="event__info__location">
+        <%= location %>
+      </div>
+
+      <div class="event__info__setting">
+        <%= setting %>
+      </div>
+    </div>
+
+    <div class="event__meta">
+      <%= image_pack_tag "media/images/content/welcome-guide/jack-rowing-crop-face.jpg" %>
+    </div>
+
+  <% else %>
+
+    <div class="event__top-bar">
+      <div class="event__top-bar--left">
+        <%= date_and_time %>
+      </div>
+
+      <div class="event__top-bar--right">
+        <%= event_type %>
+      </div>
+    </div>
+
+    <div class="event__info">
+      <div class="event__info__name">
+        <%= link_to(title, teaching_event_path(slug)) %>
+      </div>
+    </div>
+
+    <div class="event__bottom-bar">
+      <% if location.present? %>
+        <div class="event__bottom-bar--left">
+          <div class="event__info__location">
+            <%= location %>
+          </div>
+
+          <div class="event__info__setting">
+            <%= setting %>
+          </div>
+        </div>
+      <% end %>
+
+    </div>
+  <% end %>
+</li>
