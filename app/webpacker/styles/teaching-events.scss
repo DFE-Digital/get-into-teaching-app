@@ -112,13 +112,20 @@
 
       &--right {
         $adjust: 1em;
+        $unskew-amount: 12deg;
+        $skew-amount: -12deg;
+
         background: $yellow;
         text-align: center;
         padding: 1.2rem;
 
-        transform: skew(-12deg) translate($adjust);
+        transform: skew($skew-amount) translate($adjust);
         padding-right: 1em + $adjust;
         font-weight: bold;
+
+        .event__info__type {
+          transform: skew($unskew-amount);
+        }
       }
     }
 
