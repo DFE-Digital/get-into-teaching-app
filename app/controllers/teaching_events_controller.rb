@@ -3,12 +3,15 @@ class TeachingEventsController < ApplicationController
 
   layout "teaching_events"
 
-  before_action :setup_filter, only: :index
+  before_action :setup_filter, :setup_results, only: :index
+
+  FEATURED_EVENT_TYPES = [
+    222_750_001, # Train to teach
+    222_750_007, # Question time
+  ].freeze
 
   def index
     @page_title = "Find an event near you"
-    @event_search = TeachingEvents::Search.new(search_params)
-    @events = @event_search.results
   end
 
   def show
@@ -29,5 +32,14 @@ private
       OpenStruct.new(value: 10, key: "10 miles"),
       OpenStruct.new(value: 25, key: "25 miles"),
     ]
+  end
+
+  def setup_results
+    @event_search = TeachingEvents::Search.new(search_params)
+    all_events = @event_search.results.sort_by(&:start_at)
+
+    # featured events will go in a special grey box
+    @featured_events = all_events.select { |e| e.type_id.in?(FEATURED_EVENT_TYPES) }.first(2)
+    @events = all_events - @featured_events
   end
 end

@@ -29,6 +29,8 @@ module TeachingEvents
     end
 
     def online_condition
+      return nil if online.blank?
+
       # online is a pair of checkboxes for 'online' (true) and 'in_person' (false), so the
       # param will be something like: ["", "true", "false"]
       selection = online.reject(&:blank?).map { |r| ActiveModel::Type::Boolean.new.cast(r) }
@@ -51,6 +53,8 @@ module TeachingEvents
     end
 
     def type_condition
+      return nil if type.blank?
+
       type.reject(&:blank?).flat_map { |t| t.split(",") }.map(&:to_i).presence
     end
   end
