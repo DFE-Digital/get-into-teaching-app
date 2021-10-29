@@ -102,17 +102,19 @@
 
       &--left,
       &--right {
-        padding: 1.2rem;
       }
 
       &--left {
+        @include font-size(xsmall);
         flex: 1 1 30%;
+        padding: .2em 1em;
       }
 
       &--right {
         $adjust: 1em;
         background: $yellow;
         text-align: center;
+        padding: 1.2rem;
 
         transform: skew(-12deg) translate($adjust);
         padding-right: 1em + $adjust;
@@ -154,7 +156,7 @@
       }
 
       &::after {
-        @include font-size(medium, $adjust: -.3rem);
+        @include font-size(large);
         position: absolute;
         content: "✅ Train to teach event";
         right: 1rem;
@@ -162,6 +164,14 @@
         background: $pink;
         font-weight: bold;
         padding: .2em .4em;
+
+        @include mq($from: mobile) {
+          @include font-size(medium);
+        }
+
+        @include mq($from: desktop) {
+          @include font-size(small);
+        }
       }
 
       .event__info {

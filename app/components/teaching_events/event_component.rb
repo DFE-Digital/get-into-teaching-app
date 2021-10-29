@@ -9,6 +9,7 @@ module TeachingEvents
       @online   = event.is_online
       @virtual  = event.is_virtual
       @start_at = event.start_at
+      @end_at   = event.end_at
       @slug     = event.readable_id
 
       super
@@ -35,8 +36,12 @@ module TeachingEvents
       @event&.building&.address_city
     end
 
-    def date_and_time
+    def date
       @start_at.to_formatted_s(:event)
+    end
+
+    def times
+      safe_join([@start_at.to_formatted_s(:time), @end_at.to_formatted_s(:time)], "&ndash;".html_safe)
     end
 
     def classes
