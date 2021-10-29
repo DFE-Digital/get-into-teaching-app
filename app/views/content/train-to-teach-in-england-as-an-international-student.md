@@ -73,7 +73,7 @@ You can also apply to train to teach in [Wales](https://educators.wales/home), [
 * International candidates can expect to pay between about £9,250 and £16,000 plus
 living costs to train (with fees and any financial support dependent on your training
 provider and immigration status)
-* Earn at least £25k, and £32k in London, when you qualify
+* Earn at least £25,000, and £32,000 in London, when you qualify
 * Update, extend or switch your visa to live and work in the UK long-term
 
 ## 1. Check your qualifications
