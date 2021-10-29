@@ -207,8 +207,9 @@ When you have qualified teacher status, you will be able to apply for paid teach
 
 <a href="https://teaching-vacancies.service.gov.uk/" class="button">Search Teaching Vacancies to see what teaching jobs are available</a>
 
+## Further information
 
-### Further reading: learn more about life as a teacher and the English education system
+### Learn more about life as a teacher and the English education system
 
 [Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
 
@@ -222,6 +223,7 @@ Visit the following websites for more about English education:
 * [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
 * [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/about) – a charity gathering international evidence on teaching 5 to 16-year-olds
 * [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
+
 
 ### Contact
 
