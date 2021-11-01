@@ -1,5 +1,5 @@
 ---
-title: "Thank you."
+title: "Thank you"
 description: |-
   Thank you to candidates who have filled in a Get Into Teaching survey.
 date: "2021-11-01"
