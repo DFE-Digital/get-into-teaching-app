@@ -51,6 +51,7 @@
 @import './components/colored-stripe';
 @import './components/type-description';
 @import './components/events/no-results';
+@import './components/events/signup-info';
 @import './components/turbolinks-progress-bar';
 @import './components/grouped-cards';
 
@@ -62,5 +63,7 @@
 @import 'stories';
 
 @import 'registration';
-@import 'registration-attractive';
+@import 'registration/with-side-images';
+@import 'registration/with-image-above';
+@import 'internal';
 @import 'widget';

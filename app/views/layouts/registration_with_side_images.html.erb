@@ -10,9 +10,8 @@
 
     <%= render HeaderComponent.new %>
 
-    <main id="main-content" class="attractive-layout">
+    <main id="main-content" class="registration-with-side-images">
       <section class="signup-container">
-
         <%= image_pack_tag 'content/mailing-list-signup/left.jpg', class: 'left-img hide-on-mobile hide-on-tablet', alt: "" %>
         <div class="signup-form">
           <%= image_pack_tag 'content/mailing-list-signup/mobile.jpg', class: 'hide-on-desktop', alt: "" %>
@@ -20,7 +19,6 @@
         </div>
         <%= image_pack_tag 'content/mailing-list-signup/right.jpg', class: 'right-img hide-on-mobile hide-on-tablet', alt: "" %>
       </section>
-
     </main>
 
     <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
