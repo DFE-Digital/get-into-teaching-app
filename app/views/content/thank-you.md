@@ -1,12 +1,12 @@
 ---
-title: "Survey complete"
+title: "Thank you."
 description: |-
-  Completion page for Get Into Teaching survey.
+  Thank you to candidates who have filled in a Get Into Teaching survey.
 date: "2021-11-01"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
 navigation: 40
-lid_pixel_event: "Thank you for completeing our survey"
+lid_pixel_event: "Thank you for letting us know"
 ---
 ### Thank you for letting us know. 
 
