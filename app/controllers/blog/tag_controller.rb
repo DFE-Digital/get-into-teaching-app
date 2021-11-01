@@ -1,8 +1,6 @@
 class Blog::TagController < ApplicationController
   layout "layouts/blog/index"
 
-  before_action :mark_as_cacheable
-
   def show
     breadcrumb "Blog", blog_index_path
 
@@ -12,6 +10,6 @@ class Blog::TagController < ApplicationController
 
     @tag = params[:id]
 
-    @posts = Pages::Blog.posts(@tag)
+    @posts = ::Pages::Blog.posts(@tag)
   end
 end

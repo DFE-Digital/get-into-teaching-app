@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Pages::Page do
+RSpec.describe ::Pages::Page do
   include_context "with fixture markdown pages"
 
   shared_examples "a page" do |title, path, template|
@@ -20,7 +20,7 @@ RSpec.describe Pages::Page do
 
     context "with non markdown page" do
       it "raises an exception" do
-        expect { described_class.find "/unknown" }.to raise_error(Pages::Page::PageNotFoundError)
+        expect { described_class.find "/unknown" }.to raise_error(::Pages::Page::PageNotFoundError)
       end
     end
   end
@@ -40,7 +40,7 @@ RSpec.describe Pages::Page do
         }
       end
 
-      it { expect { subject }.to raise_exception Pages::Page::MultipleFeatured }
+      it { expect { subject }.to raise_exception ::Pages::Page::MultipleFeatured }
     end
   end
 

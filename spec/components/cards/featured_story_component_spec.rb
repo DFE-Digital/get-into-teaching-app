@@ -13,11 +13,11 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
   end
 
   let(:frontmatter) { original }
-  let(:featured_page) { Pages::Page.new "/stories/featured", frontmatter }
+  let(:featured_page) { ::Pages::Page.new "/stories/featured", frontmatter }
   let(:page_data) { Pages::Data.new }
   let(:instance) { described_class.new card: {}, page_data: page_data }
 
-  before { allow(Pages::Page).to receive(:featured).and_return featured_page }
+  before { allow(::Pages::Page).to receive(:featured).and_return featured_page }
 
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }

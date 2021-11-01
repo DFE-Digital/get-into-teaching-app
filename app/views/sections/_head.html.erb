@@ -2,7 +2,6 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
 
-  <%= csrf_meta_tags unless @cacheable_static_page %>
   <%= csp_meta_tag %>
   <%#= canonical_tag %>
   <%= tag :meta, name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' %>
