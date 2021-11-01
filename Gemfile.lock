@@ -131,7 +131,7 @@ GEM
       xpath (~> 3.2)
     chef-utils (17.5.22)
       concurrent-ruby
-    childprocess (3.0.0)
+    childprocess (4.1.0)
     coderay (1.1.3)
     concurrent-ruby (1.1.9)
     crack (0.4.5)
@@ -409,8 +409,9 @@ GEM
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
     secure_headers (6.3.3)
-    selenium-webdriver (3.142.7)
-      childprocess (>= 0.5, < 4.0)
+    selenium-webdriver (4.0.3)
+      childprocess (>= 0.5, < 5.0)
+      rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2)
     semantic_logger (4.8.2)
       concurrent-ruby (~> 1.0)
@@ -541,7 +542,7 @@ DEPENDENCIES
   rspec-sonarqube-formatter (~> 1.5)
   rubocop-govuk (~> 3.14.0)
   secure_headers
-  selenium-webdriver (~> 3.142)
+  selenium-webdriver (~> 4.0)
   sentry-rails (>= 4.7.3)
   sentry-ruby (~> 4.7.3)
   shoulda-matchers

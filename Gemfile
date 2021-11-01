@@ -120,7 +120,7 @@ group :development do
 end
 
 group :test do
-  gem "selenium-webdriver", "~> 3.142"
+  gem "selenium-webdriver", "~> 4.0"
   gem "shoulda-matchers"
   gem "webmock", ">= 3.14.0"
 end
