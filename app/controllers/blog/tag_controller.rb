@@ -1,5 +1,5 @@
 class Blog::TagController < ApplicationController
-  include StaticPages
+  include StaticPageCache
   around_action :cache_static_page, only: %i[show]
 
   layout "layouts/blog/index"
