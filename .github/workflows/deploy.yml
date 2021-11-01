@@ -147,7 +147,7 @@ jobs:
           continue-after-seconds: 180
 
       - name: Start ${{ github.event.inputs.environment }} Deployment
-        uses: bobheadxi/deployments@v0.6.0
+        uses: bobheadxi/deployments@v0.6.1
         id: deployment
         with:
           step: start
@@ -177,7 +177,7 @@ jobs:
 
       - name: Update ${{ github.event.inputs.environment }} status
         if: always()
-        uses: bobheadxi/deployments@v0.6.0
+        uses: bobheadxi/deployments@v0.6.1
         with:
           step: finish
           token: ${{ secrets.GITHUB_TOKEN }}
