@@ -8,6 +8,11 @@ class PagesController < ApplicationController
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
 
+  # TODO: fix this hideousness
+  skip_after_action :process_images, :process_links
+  caches_page :show, :cookies, :privacy_policy
+  after_action :process_images, :process_links
+
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
   PAGE_LAYOUTS = [
