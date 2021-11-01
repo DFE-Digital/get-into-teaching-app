@@ -10,4 +10,4 @@ lid_pixel_event: "Thank you for letting us know"
 ---
 ### Thank you for letting us know. 
 
-If you are still interested in teaching, here are [5 steps to get you into the classroom](https://getintoteaching.education.gov.uk/steps-to-become-a-teacher).
+If you are still interested in teaching, here are [5 steps to get you into the classroom](/steps-to-become-a-teacher).
