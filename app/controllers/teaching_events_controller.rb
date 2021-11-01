@@ -1,8 +1,6 @@
 class TeachingEventsController < ApplicationController
   include CircuitBreaker
 
-  layout "teaching_events"
-
   before_action :setup_filter, :setup_results, only: :index
 
   FEATURED_EVENT_COUNT = 2
@@ -16,8 +14,12 @@ class TeachingEventsController < ApplicationController
   end
 
   def show
+    breadcrumb "Teaching events", "/teaching-events"
+
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
     @page_title = @event.name
+
+    render layout: "teaching_event"
   end
 
 private

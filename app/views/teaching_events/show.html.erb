@@ -1,16 +1,67 @@
-<h1><%= @event.name %></h1>
+<div class="teaching-event">
 
-<ul>
-  <li><%= @event.start_at %></li>
-  <li><%= @event.readable_id %></li>
-  <li><%= @event.name %></li>
-  <li><%= @event.summary %></li>
-  <li>online: <%= @event.is_online %></li>
-  <li>virtual: <%= @event.is_virtual %></li>
-  <li><%= @event.building&.venue %></li>
-  <li><%= @event.building&.address_postcode %></li>
-</ul>
+  <header class="yellow">
 
-<%= link_to event_steps_path(@event.readable_id), class: "button" do %>
-  Sign up for this event
-<% end %>
+      <div class="breadcrumbs-and-heading">
+        <%= render Header::BreadcrumbComponent.new %>
+        <h1><%= @event.name %></h1>
+      </div>
+
+      <div class="event-details">
+
+        <div class="date-and-time">
+          <%= @event.start_at.to_formatted_s(:event) %>
+          at
+          <%= @event.start_at.to_formatted_s(:time) %> - <%= @event.end_at.to_formatted_s(:time) %>
+        </div>
+
+        <div class="location">
+          <% if @event.building.present? %>
+            <%= @event.building.venue %>
+            <%= @event.building.address_postcode %>
+          <% end %>
+
+          <% if @event.is_online %>
+            <div>
+              Online
+            </div>
+          <% end %>
+
+          <% if @event.is_virtual %>
+            <div>
+              Virtual
+            </div>
+          <% end %>
+        </div>
+
+        <div class="register">
+          <%= link_to event_steps_path(@event.readable_id), class: "button" do %>
+            Register your attendence
+          <% end %>
+        </div>
+
+      </div>
+
+      <div class="image">
+        <%= image_pack_tag("media/images/content/hero-images/0017.jpg", alt: "A photograph of the venue", class: "event-info__venue_img") %>
+      </div>
+    </section>
+  </header>
+
+  <section>
+    <ul>
+      <li><%= @event.start_at %></li>
+      <li><%= @event.readable_id %></li>
+      <li><%= @event.name %></li>
+      <li><%= @event.summary %></li>
+      <li>online: <%= @event.is_online %></li>
+      <li>virtual: <%= @event.is_virtual %></li>
+      <li><%= @event.building&.venue %></li>
+      <li><%= @event.building&.address_postcode %></li>
+    </ul>
+  </section>
+
+  <section>
+  </section>
+
+</div>

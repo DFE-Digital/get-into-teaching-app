@@ -190,3 +190,86 @@
     }
   }
 }
+
+.teaching-event {
+  @mixin teaching-event-header-layout {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+
+    @include mq($from: tablet) {
+      grid-template-rows: minmax(2em, auto) 2em minmax(2em, auto) 2em;
+      grid-template-columns: minmax(3em, auto) max-content 2em max-content minmax(3em, auto);
+
+      .breadcrumbs-and-heading {
+        grid-area: 1 / 2 / 3 / 4;
+      }
+
+      .event-details {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+
+      .image {
+        grid-area: 2 / 3 / 4 / 5;
+      }
+    }
+  }
+
+  header {
+    @include teaching-event-header-layout;
+
+    display: grid;
+    padding-inline: 1rem;
+
+    @include mq($from: tablet) {
+      padding-inline: 0;
+    }
+
+    &.yellow {
+      background: $yellow;
+    }
+
+    .breadcrumbs-and-heading {
+      z-index: 5;
+
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .breadcrumbs > .breadcrumb > ol {
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      h1 {
+        $overhang: .4em;
+
+        background: white;
+        display: inline-block;
+        margin: 0;
+        padding: .2em $overhang;
+        margin-left: -$overhang;
+      }
+    }
+
+    .event-details {
+      padding-block: 1.5em;
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .image {
+      padding-block: 1rem;
+
+      @include mq($from: tablet) {
+        img {
+          max-width: 14em;
+        }
+        padding-block: 0;
+      }
+    }
+  }
+}
