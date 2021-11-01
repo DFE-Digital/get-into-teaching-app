@@ -98,4 +98,57 @@ describe PagesController, type: :request do
       it { is_expected.to redirect_to "https://tta-service/?utm_test=abc" }
     end
   end
+
+  describe "#filtered_page_template" do
+    subject { controller.send :filtered_page_template }
+
+    let(:controller) { described_class.new }
+    let(:params) { { page: template } }
+
+    before { allow(controller).to receive(:params).and_return params }
+
+    context "with valid page template" do
+      let(:template) { "hello" }
+
+      it { is_expected.to eql "hello" }
+    end
+
+    context "with nested template" do
+      let(:template) { "hello/world" }
+
+      it { is_expected.to eql "hello/world" }
+    end
+
+    context "with invalid page template" do
+      let(:template) { "invalid!" }
+
+      it { expect { subject }.to raise_exception described_class::InvalidTemplateName }
+    end
+
+    context "with param linking to parent page" do
+      let(:template) { "../../secrets.txt" }
+
+      it { expect { subject }.to raise_exception described_class::InvalidTemplateName }
+    end
+
+    context "with file extension" do
+      let(:template) { "stories/how-i-got-into-teaching.html" }
+
+      it { is_expected.to eql "stories/how-i-got-into-teaching.html" }
+    end
+
+    context "with numbers in name" do
+      let(:template) { "stories/my-top-10" }
+
+      it { is_expected.to eql "stories/my-top-10" }
+    end
+
+    context "with custom page value" do
+      subject { controller.send :filtered_page_template, :story }
+
+      let(:params) { { story: "hello" } }
+
+      it { is_expected.to eql "hello" }
+    end
+  end
 end

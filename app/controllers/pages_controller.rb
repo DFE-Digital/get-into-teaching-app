@@ -1,5 +1,15 @@
 class PagesController < ApplicationController
-  include StaticPages
+  include StaticPageCache
+
+  class InvalidTemplateName < RuntimeError; end
+
+  MISSING_TEMPLATE_EXCEPTIONS = [
+    ActionView::MissingTemplate,
+    InvalidTemplateName,
+  ].freeze
+
+  PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
+
   around_action :cache_static_page, only: %i[show]
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
@@ -76,6 +86,12 @@ private
 
   def content_template
     "/#{filtered_page_template}"
+  end
+
+  def filtered_page_template(page_param = :page)
+    params[page_param].to_s.tap do |page|
+      raise InvalidTemplateName if page !~ PAGE_TEMPLATE_FILTER
+    end
   end
 
   def rescue_missing_template
