@@ -19,7 +19,6 @@ describe "Google Tag Manager", type: :request do
       event_path(event.readable_id),
       event_step_path(event.readable_id, :personal_details),
       events_path,
-      new_mailing_list_signup_path,
       root_path,
     ]
   end
