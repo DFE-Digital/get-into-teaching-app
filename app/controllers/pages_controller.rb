@@ -1,6 +1,4 @@
 class PagesController < ApplicationController
-  include StaticPageCache
-
   class InvalidTemplateName < RuntimeError; end
 
   MISSING_TEMPLATE_EXCEPTIONS = [
@@ -10,7 +8,7 @@ class PagesController < ApplicationController
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
 
-  around_action :cache_static_page, only: %i[show]
+  before_action :mark_as_cacheable
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
   PAGE_LAYOUTS = [

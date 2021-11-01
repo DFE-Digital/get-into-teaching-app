@@ -22,6 +22,10 @@ class ApplicationController < ActionController::Base
 
 private
 
+  def mark_as_cacheable
+    @cacheable_static_page = true
+  end
+
   def raise_not_found
     raise ActionController::RoutingError, "Not Found"
   end

@@ -1,8 +1,7 @@
 class BlogController < ApplicationController
-  include StaticPageCache
-  around_action :cache_static_page, only: %i[show]
-
   layout "layouts/blog/index"
+
+  before_action :mark_as_cacheable
 
   def index
     @front_matter = { "title" => "Get Into Teaching Blog" }
