@@ -524,7 +524,7 @@ en:
     hint:
       events_steps_contact_details:
         address_telephone: |-
-           We'll only use this to let you know about any last-minute cancellations.
+           We'll use this to send you a reminder and let you know about any last-minute cancellations.
       wizard_steps_authenticate:
         timed_one_time_password:
           text: Check your junk mail folder or %{link}.
