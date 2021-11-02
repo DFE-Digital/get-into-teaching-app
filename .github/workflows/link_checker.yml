@@ -22,11 +22,12 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1.2
-        id:   azSecret
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: SLACK-WEBHOOK
         with:
-           keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'SLACK-WEBHOOK'
+          keyvault: ${{ secrets.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: SLACK-WEBHOOK
 
       - name: Check for broken links
         run: |
@@ -41,4 +42,4 @@ jobs:
           SLACK_COLOR: ${{env.SLACK_ERROR}}
           SLACK_MESSAGE: Broken links found on Get into Teaching
           SLACK_TITLE: Broken links on GiT ${{ github.workflow }}
-          SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
+          SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}
