@@ -1,10 +1,8 @@
 class BlogController < ApplicationController
   layout "layouts/blog/index"
 
-  # TODO: fix this hideousness
-  skip_after_action :process_images, :process_links
-  caches_page :index, :show
-  after_action :process_images, :process_links
+  include StaticPageCache
+  cache_actions :show, :index
 
   def index
     @front_matter = { "title" => "Get Into Teaching Blog" }
