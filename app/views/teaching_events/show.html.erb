@@ -35,7 +35,7 @@
         </div>
 
         <div class="register">
-          <%= link_to event_steps_path(@event.readable_id), class: "button" do %>
+          <%= link_to event_steps_path(@event.readable_id), class: %w(button button--black-chevron) do %>
             Register your attendence
           <% end %>
         </div>
@@ -44,6 +44,13 @@
 
       <div class="image">
         <%= image_pack_tag("media/images/content/hero-images/0017.jpg", alt: "A photograph of the venue", class: "event-info__venue_img") %>
+      </div>
+
+
+      <div class="triangle yellow">
+        <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0,100 0,0 100,0" />
+        </svg>
       </div>
     </section>
   </header>

@@ -194,11 +194,11 @@
 .teaching-event {
   @mixin teaching-event-header-layout {
     grid-template-columns: 1fr;
-    grid-auto-rows: auto;
+    grid-template-rows: repeat(3, auto) 1em;
 
     @include mq($from: tablet) {
       grid-template-rows: minmax(2em, auto) 2em minmax(2em, auto) 2em;
-      grid-template-columns: minmax(3em, auto) max-content 2em max-content minmax(3em, auto);
+      grid-template-columns: minmax(5em, auto) auto 4em auto minmax(5em, auto);
 
       .breadcrumbs-and-heading {
         grid-area: 1 / 2 / 3 / 4;
@@ -211,14 +211,23 @@
       .image {
         grid-area: 2 / 3 / 4 / 5;
       }
+
+      .triangle {
+        grid-area: 4 / 1 / 5 / 6;
+      }
     }
   }
 
   header {
+    $overhang: .4em;
+
     @include teaching-event-header-layout;
 
     display: grid;
-    padding-inline: 1rem;
+
+    > *:not(.triangle) {
+      padding-inline: 1rem;
+    }
 
     @include mq($from: tablet) {
       padding-inline: 0;
@@ -226,6 +235,16 @@
 
     &.yellow {
       background: $yellow;
+
+      .register .button {
+        background: $yellow;
+        color: $black;
+
+        &:focus {
+          color: $yellow;
+          background: $black;
+        }
+      }
     }
 
     .breadcrumbs-and-heading {
@@ -243,13 +262,21 @@
       }
 
       h1 {
-        $overhang: .4em;
-
         background: white;
         display: inline-block;
         margin: 0;
         padding: .2em $overhang;
         margin-left: -$overhang;
+
+        @include mq($from: tablet) {
+          max-width: 20em;
+        }
+      }
+    }
+
+    .register {
+      .button {
+        border: 2px solid black;
       }
     }
 
@@ -262,13 +289,25 @@
     }
 
     .image {
-      padding-block: 1rem;
+      padding-bottom: 1rem;
 
       @include mq($from: tablet) {
         img {
           max-width: 14em;
         }
-        padding-block: 0;
+        padding-bottom: 0;
+      }
+    }
+
+    .triangle {
+      background-color: white;
+
+      &.yellow {
+        svg {
+          fill: $yellow;
+          stroke: $yellow;
+          stroke-width: 1;
+        }
       }
     }
   }
