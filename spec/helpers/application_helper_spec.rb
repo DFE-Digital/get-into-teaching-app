@@ -115,12 +115,12 @@ describe ApplicationHelper do
     end
 
     context "when legacy tracking is disabled" do
-      subject { analytics_body_tag(data: { timefmt: "24" }, class: "homepage") { tag.hr } }
+      subject { analytics_body_tag(data: { timefmt: "24", controller: "something" }, class: "homepage") { tag.hr } }
 
       before { allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(false) }
 
       it { is_expected.not_to have_css "body[data-controller=gtm]" }
-      it { is_expected.to have_css "body[data-controller=gtm-consent]" }
+      it { is_expected.to have_css "body[data-controller='something gtm-consent']" }
       it { is_expected.to have_css "body[data-timefmt=24]" }
       it { is_expected.to have_css "body.homepage" }
       it { is_expected.to have_css "body hr" }
