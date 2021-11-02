@@ -10,6 +10,7 @@
       <div class="event-details">
 
         <div class="date-and-time">
+          📅
           <%= @event.start_at.to_formatted_s(:event) %>
           at
           <%= @event.start_at.to_formatted_s(:time) %> - <%= @event.end_at.to_formatted_s(:time) %>
@@ -35,7 +36,7 @@
         </div>
 
         <div class="register">
-          <%= link_to event_steps_path(@event.readable_id), class: %w(button button--black-chevron) do %>
+          <%= link_to event_steps_path(@event.readable_id), class: %w[button button--black-chevron] do %>
             Register your attendence
           <% end %>
         </div>
@@ -46,7 +47,6 @@
         <%= image_pack_tag("media/images/content/hero-images/0017.jpg", alt: "A photograph of the venue", class: "event-info__venue_img") %>
       </div>
 
-
       <div class="triangle yellow">
         <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
           <polygon points="0,100 0,0 100,0" />
@@ -55,20 +55,89 @@
     </section>
   </header>
 
-  <section>
-    <ul>
-      <li><%= @event.start_at %></li>
-      <li><%= @event.readable_id %></li>
-      <li><%= @event.name %></li>
-      <li><%= @event.summary %></li>
-      <li>online: <%= @event.is_online %></li>
-      <li>virtual: <%= @event.is_virtual %></li>
-      <li><%= @event.building&.venue %></li>
-      <li><%= @event.building&.address_postcode %></li>
-    </ul>
+  <section class="event-info">
+    <h2>What to expect from a <%= event_type_name(@event.type_id) %> event</h2>
+
+    <div class="event-summary">
+      <div class="about-ttt-events">
+        Watch presentations, ask questions, speak to advisers one-to-one.
+      </div>
+
+      <figure>
+        <blockquote>
+          Absolutely loved this day. Very informative, inspiring and I'm
+          excited to change career. Thank you.
+        </blockquote>
+        <figcaption>Sarah, trainee teacher, London</figcaption>
+      </figure>
+    </div>
+
+    <%# <ul> %>
+    <%#   <li><%= @event.start_at %1></li> %>
+    <%#   <li><%= @event.readable_id %1></li> %>
+    <%#   <li><%= @event.name %1></li> %>
+    <%#   <li><%= @event.summary %1></li> %>
+    <%#   <li>online: <%= @event.is_online %1></li> %>
+    <%#   <li>virtual: <%= @event.is_virtual %1></li> %>
+    <%#   <li><%= @event.building&.venue %1></li> %>
+    <%#   <li><%= @event.building&.address_postcode %1></li> %>
+    <%# </ul> %>
   </section>
 
-  <section>
+  <section class="event-attributes">
+    <div class="event-attribute organisers">
+      <h3>Organisers</h3>
+
+      <p>DfE</p>
+    </div>
+
+    <div class="event-attribute price">
+      <h3>Price</h3>
+
+      <p>Free</p>
+    </div>
+
+    <div class="event-attribute event-type">
+      <h3>Event type</h3>
+
+      <p>Train to teach</p>
+    </div>
+
+    <div class="event-attribute location">
+      <h3>Location</h3>
+
+      <p>Online</p>
+    </div>
   </section>
 
+  <% if @event.building.present? %>
+    <section class="venue-information">
+      <div class="venue-information-summary">
+        <h3>Venue information</h3>
+
+        <p>
+          <%= @event.building.venue %>
+          <%= @event.building.address_postcode %>
+        </p>
+      </div>
+    </section>
+  <% end %>
+
+  <section class="what-theyre-saying">
+    <div class="triangle yellow">
+      <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="0,100 100,0 100,100" />
+      </svg>
+    </div>
+    <div class="subheading">
+      <h3>What they're saying</h3>
+    </div>
+    <figure>
+      <blockquote>
+        Absolutely loved this day. Very informative, inspiring and I'm
+        excited to change career. Thank you.
+      </blockquote>
+      <figcaption>Sarah, trainee teacher, London</figcaption>
+    </figure>
+  </section>
 </div>

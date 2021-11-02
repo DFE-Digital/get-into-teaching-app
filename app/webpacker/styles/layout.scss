@@ -53,6 +53,10 @@ main {
   @include mq($from: tablet) {
     margin-bottom: 4em;
   }
+
+  &--no-bottom-margin {
+    bottom-margin: 0;
+  }
 }
 
 section.container {

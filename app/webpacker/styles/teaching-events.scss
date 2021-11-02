@@ -1,3 +1,27 @@
+@mixin train-to-teach-event-box {
+  border: 2px solid $pink;
+  padding: 2rem 1rem 1rem;
+
+  &::after {
+    @include font-size(large);
+    position: absolute;
+    content: "✅ Train to teach event";
+    right: 1rem;
+    top: -1em;
+    background: $pink;
+    font-weight: bold;
+    padding: .2em .4em;
+
+    @include mq($from: mobile) {
+      @include font-size(medium);
+    }
+
+    @include mq($from: desktop) {
+      @include font-size(small);
+    }
+  }
+}
+
 .teaching-events {
   h1 {
     margin: 1rem;
@@ -153,32 +177,13 @@
     }
 
     &--train-to-teach {
+      @include train-to-teach-event-box;
+
       flex-direction: column-reverse;
-      border: 2px solid $pink;
-      padding: 2rem 1rem 1rem;
 
       @include mq($from: mobile) {
         gap: 3rem;
         flex-direction: row;
-      }
-
-      &::after {
-        @include font-size(large);
-        position: absolute;
-        content: "✅ Train to teach event";
-        right: 1rem;
-        top: -1em;
-        background: $pink;
-        font-weight: bold;
-        padding: .2em .4em;
-
-        @include mq($from: mobile) {
-          @include font-size(medium);
-        }
-
-        @include mq($from: desktop) {
-          @include font-size(small);
-        }
       }
 
       .event__info {
@@ -197,8 +202,8 @@
     grid-template-rows: repeat(3, auto) 1em;
 
     @include mq($from: tablet) {
-      grid-template-rows: minmax(2em, auto) 2em minmax(2em, auto) 2em;
-      grid-template-columns: minmax(5em, auto) auto 4em auto minmax(5em, auto);
+      grid-template-rows: minmax(2rem, auto) 2rem minmax(2rem, auto) 2rem;
+      grid-template-columns: minmax(5rem, auto) minmax(auto, 40rem) 10rem minmax(auto, 15rem) minmax(5rem, auto);
 
       .breadcrumbs-and-heading {
         grid-area: 1 / 2 / 3 / 4;
@@ -274,18 +279,25 @@
       }
     }
 
-    .register {
-      .button {
-        border: 2px solid black;
-      }
-    }
-
     .event-details {
       padding-block: 1.5em;
       display: flex;
       gap: 1em;
       flex-direction: column;
       justify-content: space-between;
+      align-items: flex-start;
+
+      .date-and-time {
+        display: inline-block;
+        border-bottom: 1px solid black;
+        padding-bottom: 1em;
+      }
+
+      .register {
+        .button {
+          border: 1px solid black;
+        }
+      }
     }
 
     .image {
@@ -308,6 +320,175 @@
           stroke: $yellow;
           stroke-width: 1;
         }
+      }
+    }
+  }
+
+  .event-info,
+  .event-attributes {
+    max-width: 65rem;
+    margin: 2em auto;
+    padding-inline: 1em;
+    padding: 1em;
+  }
+
+  .event-info {
+    h2 {
+      @include font-size(medium);
+      margin-bottom: 2em;
+    }
+
+    .event-summary {
+      display: flex;
+      flex-direction: column;
+      padding-block: 2em;
+
+      @include mq($from: tablet) {
+        flex-direction: row;
+        padding-block: 0em;
+      }
+
+      align-items: center;
+      gap: 2em;
+
+      .about-ttt-events {
+        position: relative;
+        @include train-to-teach-event-box;
+
+        flex-basis: 40%;
+      }
+
+
+      figure {
+        flex-basis: 60%;
+        position: relative;
+        margin: 0;
+
+        blockquote {
+          @include font-size(small);
+
+          font-weight: bold;
+          margin: 0;
+          padding: 0;
+
+          &:before,
+          &:after {
+            @include font-size(xlarge);
+            color: $pink-dark;
+          }
+
+          &:before {
+            content: open-quote;
+            position: absolute;
+            left: -.6em;
+            top: -.3em;
+          }
+
+          &:after {
+            position: absolute;
+            content: close-quote;
+            margin-left: .02em;
+            margin-top: -.1em;
+          }
+        }
+
+        figcaption {
+          margin-top: .6em;
+          @include font-size(xsmall);
+        }
+      }
+    }
+  }
+
+  .event-attributes {
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    .event-attribute {
+      h3 {
+        @include font-size(medium);
+      }
+
+      flex: 1 1 20%;
+    }
+  }
+
+  .what-theyre-saying {
+    display: grid;
+    background: $yellow;
+
+    grid-template-columns: auto minmax(2em, 30em) auto;
+    grid-template-rows: 1em auto;
+
+    @include mq($from: tablet) {
+      grid-template-rows: 2em auto;
+    }
+
+    .triangle {
+      grid-area: 1 / 1 / 2 / 4;
+      background-color: white;
+      margin-bottom: -5px;
+
+      &.yellow {
+        svg {
+          fill: $yellow;
+          stroke: $yellow;
+          stroke-width: 1;
+        }
+      }
+    }
+
+    .subheading {
+      grid-area: 1 / 2 / 2 / 3;
+
+      h3 {
+        @include font-size(large);
+        @include reset;
+        background-color: $pink;
+        color: $black;
+        display: inline-block;
+        padding: .2em .5em;
+      }
+    }
+
+    figure {
+      grid-area: 2 / 2 / 3 / 3;
+      margin-bottom: 1.5em;
+
+      blockquote {
+        @include font-size(small);
+
+        font-weight: bold;
+        margin: 2em 0 1em;
+        padding: 0;
+        position: relative;
+
+        &:before,
+        &:after {
+          @include font-size(xlarge);
+          color: $pink-dark;
+        }
+
+        &:before {
+          content: open-quote;
+          position: absolute;
+          left: -.6em;
+          top: -.3em;
+        }
+
+        &:after {
+          position: absolute;
+          content: close-quote;
+          margin-left: .02em;
+          margin-top: -.1em;
+        }
+      }
+
+      figcaption {
+        margin-top: .6em;
+        @include font-size(xsmall);
       }
     }
   }
