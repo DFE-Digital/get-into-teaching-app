@@ -29,7 +29,7 @@ module TeachingEvents
     end
 
     def event_type
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[type]
+      helpers.event_type_name(type)
     end
 
     def location
