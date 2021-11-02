@@ -436,9 +436,6 @@ provider_groups:
       email: ssplant@ttsonline.net
   Yorkshire and the Humber:
     providers:
-    - header: Bradford Birth to 19 SCITT
-      link: https://www.bradfordbirthto19.co.uk/scitt
-      email: scitt@bradfordbirthto19.org
     - header: Bradford College
       link: https://www.bradfordcollege.ac.uk/courses/course/qualified-teacher-status-qts-assessment-only-programme/
       name: Lee Parsell
