@@ -315,6 +315,12 @@ describe StructuredDataHelper, type: "helper" do
       expect(data).not_to have_key(:location)
     end
 
+    context "when event summary is nil" do
+      let(:event) { build(:event_api, summary: nil) }
+
+      it { is_expected.to include({ description: nil }) }
+    end
+
     context "when the event is online" do
       let(:event) { build(:event_api, :online) }
 
