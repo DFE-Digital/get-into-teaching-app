@@ -66,7 +66,7 @@ gem "actionpack-page_caching"
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
-gem "logger", ">= 1.4.3"
+gem "logger", ">= 1.4.4"
 gem "matrix", ">= 0.4.2"
 gem "observer", ">= 0.1.0"
 gem "rexml", ">= 3.2.5"
@@ -91,7 +91,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 3.14.0" # FIXME: stop gap fix but we should relint the codebase
 
   # Static security scanner
-  gem "brakeman", "~> 5.1.1", require: false
+  gem "brakeman", "~> 5.1.2", require: false
 
   # Debugging
   gem "pry-byebug"
