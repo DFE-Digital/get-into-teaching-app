@@ -60,7 +60,7 @@ module WelcomeContentHelper
       three_things_youll_never_hear_me_say: {
         "Every day is the same" => "Not! I’m always looking for ways to get my class excited, whether it's acting out Blood Brothers or discussing the many different interpretations of Alice in Wonderland.",
         "I miss adult conversation" => "I get on so well with the other teachers, we’re great friends and we're always chatting on WhatsApp. We’ve even got a karaoke night coming up, I can’t wait!",
-        "Work never stops" => "My school has a great policy of no emails after 6pm, so it means when the school day ends, I can shut my laptop and get back to being me (and mum!).",
+        "Work never stops" => "My school has a great policy of no emails after 6pm, so it means when the school day ends, I can shut my laptop and get back to being me (and mum!)",
       },
       shoutout: {
         name: "Ms Colley",
