@@ -1,7 +1,7 @@
 ---
 title: My experience with the National Tutoring Programme
 author: Farooq Ahmad
-date: "2021-11-03"
+date: "2021-09-29"
 images:
   farooq:
     path: "media/images/content/blog/farooq-ahmad.jpg"
