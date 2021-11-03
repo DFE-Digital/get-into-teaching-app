@@ -66,7 +66,7 @@ gem "actionpack-page_caching"
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
-gem "logger", ">= 1.4.3"
+gem "logger", ">= 1.4.4"
 gem "matrix", ">= 0.4.2"
 gem "observer", ">= 0.1.0"
 gem "rexml", ">= 3.2.5"
@@ -91,7 +91,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 3.14.0" # FIXME: stop gap fix but we should relint the codebase
 
   # Static security scanner
-  gem "brakeman", "~> 5.1.1", require: false
+  gem "brakeman", "~> 5.1.2", require: false
 
   # Debugging
   gem "pry-byebug"
@@ -100,7 +100,7 @@ group :development, :test do
   # Testing framework
   gem "rspec-rails", "~> 5.0.2"
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.35", ">= 3.35.3"
+  gem "capybara", "~> 3.36"
   gem "factory_bot_rails", ">= 6.1.0"
   gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false
