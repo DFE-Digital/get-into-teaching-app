@@ -41,7 +41,7 @@ gem "faraday_middleware"
 
 gem "dotenv-rails", ">= 2.7.6"
 
-gem "govuk_design_system_formbuilder", ">= 2.7.3"
+gem "govuk_design_system_formbuilder", ">= 2.7.5"
 
 gem "loaf", ">= 0.10.0"
 
@@ -58,11 +58,11 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.40.0"
+gem "view_component", "~> 2.42.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
-gem "actionpack-page_caching"
+gem "actionpack-page_caching", ">= 1.2.4"
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
@@ -100,7 +100,7 @@ group :development, :test do
   # Testing framework
   gem "rspec-rails", "~> 5.0.2"
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.35", ">= 3.35.3"
+  gem "capybara", "~> 3.36"
   gem "factory_bot_rails", ">= 6.1.0"
   gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false
