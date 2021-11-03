@@ -1,9 +1,6 @@
 class BlogController < ApplicationController
   layout "layouts/blog/index"
 
-  include StaticPageCache
-  cache_actions :show, :index
-
   def index
     @front_matter = { "title" => "Get Into Teaching Blog" }
 
@@ -16,5 +13,11 @@ class BlogController < ApplicationController
     @post = ::Pages::Blog.find(request.path)
 
     render template: @post.template, layout: "layouts/blog/post"
+  end
+
+protected
+
+  def static_page_actions
+    %i[show index]
   end
 end
