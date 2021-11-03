@@ -100,7 +100,7 @@ group :development, :test do
   # Testing framework
   gem "rspec-rails", "~> 5.0.2"
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.35", ">= 3.35.3"
+  gem "capybara", "~> 3.36"
   gem "factory_bot_rails", ">= 6.1.0"
   gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false
