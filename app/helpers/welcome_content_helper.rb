@@ -5,6 +5,7 @@ module WelcomeContentHelper
       job_title_and_location: "maths teacher, London",
       subject: "maths",
       image: "dimitra-desert-crop.jpg",
+      alt: "Maths teacher Dimitra standing in front of some sand dunes",
       text: "Meet Dimitra, find out how she got into teaching maths and what she's looking forward to next.",
       three_things_youll_never_hear_me_say: {
         "Every day is the same" => "One day I’ll be playing bingo to make maths fun, the next exploring how maths underpins the economy.",
@@ -30,6 +31,7 @@ module WelcomeContentHelper
       job_title_and_location: "science teacher, Essex",
       subject: "science",
       image: "dimitra-desert-crop.jpg",
+      alt: "Science teacher Holly",
       text: "Meet Holly - find out how she got into teaching science and what she's looking forward to next.",
       three_things_youll_never_hear_me_say: {
         "Every day is the same" => "From practical experiments to acting out elements in the classroom, I love exploring new ways to teach. The kids love getting involved and seeing them enjoying it always makes me smile",
@@ -56,6 +58,7 @@ module WelcomeContentHelper
       job_title_and_location: "English teacher, Doncaster",
       subject: "English",
       image: "dimitra-desert-crop.jpg",
+      alt: "English teacher Laura",
       text: "Meet Laura - find out how she got into teaching English and how she became Head of Department in under 5 years.",
       three_things_youll_never_hear_me_say: {
         "Every day is the same" => "Not! I’m always looking for ways to get my class excited, whether it's acting out Blood Brothers or discussing the many different interpretations of Alice in Wonderland.",
@@ -81,6 +84,7 @@ module WelcomeContentHelper
       job_title_and_location: "Spanish teacher, Coventry",
       subject: "languages",
       image: "dimitra-desert-crop.jpg",
+      alt: "Spanish teacher Tom",
       text: "Meet Tom - find out how he got into teaching Spanish and what he's looking forward to next.",
       three_things_youll_never_hear_me_say: {
         "Every day is the same" => "From exploring Latin American culture to reading Spanish literature, every lesson is different. And with 30 different personalities in one room, it’s never dull",
@@ -106,6 +110,7 @@ module WelcomeContentHelper
       job_title_and_location: "assistant headteacher, London",
       subject: nil,
       image: "dimitra-desert-crop.jpg",
+      alt: "Assistant headteacher Helen",
       text: "Meet Helen - find out how she went from trainee to Assistant Headteacher and what she's looking forward to next.",
     },
     quote: {
