@@ -20,16 +20,6 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - uses: Azure/get-keyvault-secrets@v1.2
-        id:   azSecret
-        with:
-           keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'SLACK-WEBHOOK'
-
       - name: Setup Environment Variables
         id: variables
         run: |
