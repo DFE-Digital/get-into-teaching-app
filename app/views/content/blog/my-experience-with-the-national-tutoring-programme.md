@@ -1,3 +1,24 @@
+---
+title: My experience with the National Tutoring Programme
+author: Farooq Ahmad
+date: "2021-11-03"
+images:
+  farooq:
+    path: "media/images/content/blog/farooq-ahmad.jpg"
+    alt: "Former ICT teacher, Farooq Ahmad"
+description: |-
+  When former ICT teacher Farooq Ahmad decided to return to the classroom, the National Tutoring Programme provided the perfect opportunity to update his knowledge and experience.
+keywords:
+  - returning to teaching
+  - teacher training advisers
+
+tags:
+  - returning to teaching
+  - teacher training advisers
+---
+
+$farooq$
+
 Having spent some time away from the classroom, I had decided to return to teaching when the pandemic hit. With schools closed, and no way to gain much-needed work experience, my [Return to Teaching Adviser](/returning-to-teaching) (RTTA) encouraged me to apply for the National Tutoring Programme.
 
 The programme seemed like the perfect opportunity, not only to gain the necessary experience to support my return to teaching, but to get back to doing what I love – sharing my knowledge and helping to inspire the next generation. 
@@ -12,4 +33,4 @@ I have been able to develop my lesson planning skills and my ability to deliver 
 
 I’ve proved I can work with pupils to improve grades and meet school needs and I now feel better equipped to step back into the classroom. 
 
-*italicized text* You can work with the [National Tutoring Programme](https://nationaltutoring.org.uk/) to help provide support to disadvantaged students and help with education recovery. The programme gives you the option of returning to a school environment as either an academic mentor or tutor without taking on a full-time classroom role.
+_You can work with the [National Tutoring Programme](https://nationaltutoring.org.uk/) to help provide support to disadvantaged students and help with education recovery. The programme gives you the option of returning to a school environment as either an academic mentor or tutor without taking on a full-time classroom role._
