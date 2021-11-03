@@ -11,7 +11,7 @@ jobs:
     environment: Development
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
         with:
           ref: master
 
