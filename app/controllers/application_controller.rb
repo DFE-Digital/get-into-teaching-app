@@ -33,9 +33,10 @@ private
     process_images
     process_links
 
-    if perform_caching? && action_name.to_sym.in?(static_page_actions)
-      cache_page(nil, nil, Zlib::BEST_COMPRESSION)
-    end
+    # TODO: turn back on once the funding widget is fixed.
+    # if perform_caching? && action_name.to_sym.in?(static_page_actions)
+    #   cache_page(nil, nil, Zlib::BEST_COMPRESSION)
+    # end
   end
 
   def raise_not_found
