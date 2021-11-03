@@ -4,7 +4,7 @@ module Pages
       delegate :posts, :popular_tags, :similar_posts, to: :instance
 
       def find(path)
-        ::Pages::Page.find(path)
+        Pages::Page.find(path)
       end
 
     private

@@ -64,7 +64,7 @@ describe StructuredDataHelper, type: "helper" do
         },
       }
     end
-    let(:page) { ::Pages::Page.new("/how-to-page", frontmatter) }
+    let(:page) { Pages::Page.new("/how-to-page", frontmatter) }
     let(:html) { how_to_structured_data(page) }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
 
@@ -127,7 +127,7 @@ describe StructuredDataHelper, type: "helper" do
         author: "Ronald McDonald",
       }
     end
-    let(:page) { ::Pages::Page.new("/blog/post", frontmatter) }
+    let(:page) { Pages::Page.new("/blog/post", frontmatter) }
     let(:html) { blog_structured_data(page) }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
 

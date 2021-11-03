@@ -62,8 +62,6 @@ gem "view_component", "~> 2.40.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
-gem "actionpack-page_caching"
-
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
 gem "logger", ">= 1.4.4"

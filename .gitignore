@@ -25,7 +25,6 @@
 /config/master.key
 /public/packs
 /public/packs-test
-/public/cached_pages
 /node_modules
 /vendor/cache
 yarn-debug.log*

@@ -68,8 +68,6 @@ GEM
     actionpack-cloudfront (1.1.0)
       actionpack (>= 4.2)
       railties (>= 4.2)
-    actionpack-page_caching (1.2.4)
-      actionpack (>= 4.0.0)
     actiontext (6.1.4.1)
       actionpack (= 6.1.4.1)
       activerecord (= 6.1.4.1)
@@ -497,7 +495,6 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack-cloudfront (>= 1.1.0)
-  actionpack-page_caching
   addressable (~> 2.8.0)
   amazing_print
   better_html

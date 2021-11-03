@@ -1,6 +1,5 @@
 class PagesController < ApplicationController
   include StaticPageCache
-  cache_actions :show, :privacy_policy, :cookies
 
   class InvalidTemplateName < RuntimeError; end
 
@@ -11,6 +10,7 @@ class PagesController < ApplicationController
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
 
+  around_action :cache_static_page, only: %i[show]
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
   PAGE_LAYOUTS = [
@@ -42,7 +42,7 @@ class PagesController < ApplicationController
   end
 
   def show
-    @page = ::Pages::Page.find content_template
+    @page = Pages::Page.find content_template
 
     (@page.ancestors.reverse + [@page]).each do |page|
       breadcrumb page.title, page.path if @page.title.present?

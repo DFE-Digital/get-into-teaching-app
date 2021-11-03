@@ -37,8 +37,8 @@ RSpec.describe Pages::Data do
   describe "#featured_page" do
     subject { instance.featured_page }
 
-    before { allow(::Pages::Page).to receive(:featured).and_call_original }
+    before { allow(Pages::Page).to receive(:featured).and_call_original }
 
-    it { is_expected.to be_kind_of ::Pages::Page }
+    it { is_expected.to be_kind_of Pages::Page }
   end
 end

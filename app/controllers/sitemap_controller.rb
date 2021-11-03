@@ -41,7 +41,7 @@ private
   end
 
   def published_pages
-    ::Pages::Frontmatter.list.reject { |_path, fm| fm[:draft] }
+    Pages::Frontmatter.list.reject { |_path, fm| fm[:draft] }
   end
 
   def page_location(path)
