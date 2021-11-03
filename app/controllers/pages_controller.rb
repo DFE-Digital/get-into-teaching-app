@@ -1,7 +1,4 @@
 class PagesController < ApplicationController
-  include StaticPageCache
-  cache_actions :show, :privacy_policy, :cookies
-
   class InvalidTemplateName < RuntimeError; end
 
   MISSING_TEMPLATE_EXCEPTIONS = [
@@ -69,6 +66,12 @@ class PagesController < ApplicationController
     end
 
     redirect_to(url, turbolinks: false, status: :moved_permanently)
+  end
+
+protected
+
+  def static_page_actions
+    %i[show cookies privacy_policy]
   end
 
 private
