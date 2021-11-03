@@ -8,7 +8,7 @@ module WelcomeContentHelper
       text: "Meet Dimitra, find out how she got into teaching maths and what she's looking forward to next.",
       three_things_youll_never_hear_me_say: {
         "Every day is the same" => "One day I’ll be playing bingo to make maths fun, the next exploring how maths underpins the economy.",
-        "I miss adult conversation" => "One day I’ll be playing bingo to make maths fun, the next exploring how maths underpins the economy.",
+        "I miss adult conversation" => "At every school I’ve worked in, the teachers have always been super supportive. We love to have a laugh too. Weekly pub visits are the norm!",
         "Work never stops" => "One day I’ll be playing bingo to make maths fun, the next exploring how maths underpins the economy.",
       },
       shoutout: {
