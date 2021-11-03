@@ -29,12 +29,14 @@ learn more.
 
 ### Contact us for help
 
+[Download our information pack](https://drive.google.com/file/d/1OP89ZGelBLU_T3ds4c-BFeMzyhA4OpBK/view?usp=sharing).
+
+Sign up for one of our [online events to support returners](/events).
+
+Email us at international.teacherrecruitment@education.gov.uk
+
 #### Join us on social media
 
 Join us on [Facebook](https://www.facebook.com/getintoteaching),
 [Instagram](https://www.instagram.com/get_into_teaching/) and
 [Twitter](https://twitter.com/getintoteaching)
-
-[Download our information pack](https://drive.google.com/file/d/1OP89ZGelBLU_T3ds4c-BFeMzyhA4OpBK/view?usp=sharing).
-
-Email us at international.teacherrecruitment@education.gov.uk

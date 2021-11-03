@@ -1,8 +1,8 @@
 class Blog::TagController < ApplicationController
-  include StaticPages
-  around_action :cache_static_page, only: %i[show]
-
   layout "layouts/blog/index"
+
+  include StaticPageCache
+  cache_actions :show
 
   def show
     breadcrumb "Blog", blog_index_path
@@ -13,6 +13,6 @@ class Blog::TagController < ApplicationController
 
     @tag = params[:id]
 
-    @posts = Pages::Blog.posts(@tag)
+    @posts = ::Pages::Blog.posts(@tag)
   end
 end

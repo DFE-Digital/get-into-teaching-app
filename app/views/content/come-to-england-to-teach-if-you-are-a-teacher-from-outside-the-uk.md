@@ -61,7 +61,9 @@ Teach in England and you’ll benefit from working in a world-class education sy
 
 You’ll earn a [competitive salary](/salaries-and-benefits), get supported in your professional development and have varied job opportunities.
 
-Not looking to teach in England? Consider teaching in [Wales](https://educators.wales), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+You could also consider teaching in [Wales](https://educators.wales), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+
+Not qualified as a teacher yet? Find out [how to train to teach in England as an international applicant](/train-to-teach-in-england-as-an-international-student). 
 
 ### What you need to start teaching
 

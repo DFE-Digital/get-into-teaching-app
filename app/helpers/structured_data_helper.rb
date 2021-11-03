@@ -118,7 +118,7 @@ module StructuredDataHelper
       name: event.name,
       startDate: event.start_at,
       endDate: event.end_at,
-      description: strip_tags(event.description).strip,
+      description: strip_tags(event.summary)&.strip,
       eventAttendanceMode: event.is_online ? ONLINE_EVENT : OFFLINE_EVENT,
       eventStatus: EVENT_SCHEDULED,
       offers: {

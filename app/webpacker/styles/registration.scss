@@ -8,13 +8,8 @@
   .registration__callback {
     margin: auto $indent-amount;
 
-    @include mq($from: tablet) {
-      max-width: 55%;
-      width: 55%;
-    }
-
     h1 {
-      @include font-size("xlarge");
+      @include font-size("large");
     }
 
     h2 {
@@ -23,12 +18,32 @@
   }
 
   .registration__event {
-    h1 {
-      margin-bottom: 0;
-    }
-
     h2 {
       margin: .2em 0 1em;
+    }
+
+    &--first-page {
+      h1 {
+        margin-bottom: 1em;
+      }
+    }
+
+    &--container {
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 2em;
+
+      @include mq($from: desktop) {
+        flex-direction: row;
+
+        form {
+          flex-basis: 66%;
+        }
+
+        .event-info {
+          flex-basis: 33%;
+        }
+      }
     }
   }
 

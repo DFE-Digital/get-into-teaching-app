@@ -11,7 +11,7 @@ jobs:
     environment: Development
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
         with:
           ref: master
 
@@ -32,7 +32,7 @@ jobs:
         run: |
           docker run -t --rm -e RAILS_ENV=test \
             ${{ env.DOCKER_REPOSITORY }}:master \
-            rspec --format documentation -t onschedule spec/features/external_links_spec.rb
+            rspec --format progress -t onschedule spec/features/external_links_spec.rb
 
       - name: Slack Notification
         if: failure()

@@ -41,7 +41,7 @@ gem "faraday_middleware"
 
 gem "dotenv-rails", ">= 2.7.6"
 
-gem "govuk_design_system_formbuilder", ">= 2.7.3"
+gem "govuk_design_system_formbuilder", ">= 2.7.5"
 
 gem "loaf", ">= 0.10.0"
 
@@ -58,13 +58,15 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.40.0"
+gem "view_component", "~> 2.42.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
+gem "actionpack-page_caching", ">= 1.2.4"
+
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
-gem "logger", ">= 1.4.3"
+gem "logger", ">= 1.4.4"
 gem "matrix", ">= 0.4.2"
 gem "observer", ">= 0.1.0"
 gem "rexml", ">= 3.2.5"
@@ -72,8 +74,6 @@ gem "rexml", ">= 3.2.5"
 # Drawing curved arrow SVGs
 gem "geometry", github: "bfoz/geometry", ref: "3054ccb"
 gem "victor"
-
-gem "turbo-rails"
 
 # Ignore cloudfront IPs when getting customer IP address
 gem "actionpack-cloudfront", ">= 1.1.0"
@@ -91,7 +91,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 3.14.0" # FIXME: stop gap fix but we should relint the codebase
 
   # Static security scanner
-  gem "brakeman", "~> 5.1.1", require: false
+  gem "brakeman", "~> 5.1.2", require: false
 
   # Debugging
   gem "pry-byebug"
@@ -100,7 +100,7 @@ group :development, :test do
   # Testing framework
   gem "rspec-rails", "~> 5.0.2"
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.35", ">= 3.35.3"
+  gem "capybara", "~> 3.36"
   gem "factory_bot_rails", ">= 6.1.0"
   gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false

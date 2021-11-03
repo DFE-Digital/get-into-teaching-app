@@ -21,12 +21,12 @@ RSpec.describe Pages::Blog do
   describe ".find" do
     subject { described_class }
 
-    before { allow(Pages::Page).to receive(:find).with("/some/template").and_return("/some_template.md") }
+    before { allow(::Pages::Page).to receive(:find).with("/some/template").and_return("/some_template.md") }
 
     specify "calls the other method" do
       described_class.find("/some/template")
 
-      expect(Pages::Page).to have_received(:find).with("/some/template").once
+      expect(::Pages::Page).to have_received(:find).with("/some/template").once
     end
   end
 

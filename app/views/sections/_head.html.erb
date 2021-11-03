@@ -2,18 +2,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
 
-  <%= csrf_meta_tags unless @cacheable_static_page %>
   <%= csp_meta_tag %>
   <%#= canonical_tag %>
   <%= tag :meta, name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' %>
   <%= tag :meta, name: "google-site-verification", content: "uoqqF4yGEjHx9klftx3ch2fCBpmgI6hHYBS69w17_-g" %>
   <%= tag :link, rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' %>
-  <%= stylesheet_pack_tag 'application', 'data-turbo-track': 'reload', media: 'all' %>
-  <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbo-track': 'reload', media: 'all' %></noscript>
-  <%= javascript_pack_tag 'gtm', 'data-turbo-track': 'reload', data: { "gtm-id": ENV["GTM_ID"] }, async: true unless Rails.application.config.x.legacy_tracking_pixels %>
-  <%= javascript_pack_tag 'js_enabled', 'data-turbo-track': 'reload', async: true %>
-  <%= javascript_pack_tag 'lazy_images', 'data-turbo-track': 'reload', async: true %>
-  <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload', async: true %>
+  <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
+  <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
+  <%= javascript_pack_tag 'gtm', 'data-turbolinks-track': 'reload', data: { "gtm-id": ENV["GTM_ID"] }, async: true unless Rails.application.config.x.legacy_tracking_pixels %>
+  <%= javascript_pack_tag 'js_enabled', 'data-turbolinks-track': 'reload', async: true %>
+  <%= javascript_pack_tag 'lazy_images', 'data-turbolinks-track': 'reload', async: true %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
   <%= yield :head %>
   <%= breadcrumbs_structured_data(breadcrumb_trail) %>
   <%= logo_structured_data %>

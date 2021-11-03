@@ -5,6 +5,11 @@ describe Footer::CookieAcceptanceComponent, type: "component" do
 
   let(:cookie_acceptance_selector) { ".cookie-acceptance" }
 
+  specify "all anchor links are excluded from tab sequence" do
+    subject
+    expect(page.all("a").map { |e| e[:tabindex] }).to all(eq("-1"))
+  end
+
   specify "renders the cookie acceptance component" do
     subject
     expect(page).to have_css(cookie_acceptance_selector)

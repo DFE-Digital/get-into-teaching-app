@@ -4,7 +4,7 @@
     <div class="dialog__content">
       <div class="logo-wrapper">
         <div class="logo">
-          <a href="/" class="logo__image">
+          <a tabindex="-1" href="/" class="logo__image">
             <%= image_pack_tag 'media/images/getintoteachinglogo.svg', alt: "Go to Home page", size: "180x62", data: { "lazy-disable": true } %>
           </a>
         </div>
@@ -13,7 +13,7 @@
       <div class="dialog__text">
 
         <p>
-          We use <a id="cookies-info" href="/cookies" class="dark-link" data-cookie-acceptance-target="info">cookies</a> to collect information about how you use this website.
+          We use <a tabindex="-1" id="cookies-info" href="/cookies" class="dark-link" data-cookie-acceptance-target="info">cookies</a> to collect information about how you use this website.
           We use this information to make the website work as well as possible, and improve this website.
           We also share some of this information with our social media, advertising and analytics partners.
         </p>
@@ -25,10 +25,10 @@
           The id is `biscuits-agrees` instead of `cookies-agree`
           to prevent ad blockers from removing the button.
         -->
-        <a tabindex="1" href="#" class="button call-to-action-button" data-action="click->cookie-acceptance#accept" data-cookie-acceptance-target="agree" id="biscuits-agree">
+        <a tabindex="-1" href="#" class="button call-to-action-button" data-action="click->cookie-acceptance#accept" data-cookie-acceptance-target="agree" id="biscuits-agree">
           <span>Accept all cookies</span>
         </a>
-        <a class="button button--secondary" href="/cookie_preference" data-cookie-acceptance-target="disagree" id="cookies-disagree">
+        <a tabindex="-1" class="button button--secondary" href="/cookie_preference" data-cookie-acceptance-target="disagree" id="cookies-disagree">
           <span>Set cookie preferences</span>
         </a>
       </div>

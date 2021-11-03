@@ -53,6 +53,14 @@ keywords:
   - teachers standards
   - standards
   - chartered college of teaching
+right_column:
+  ctas:
+    - title: Take the next step
+      text: |
+        Get support to take the next step at an event.
+      link_text: "Attend an event"
+      link_target: "/events"
+      icon: "icon-calendar"
 ---
 
 Are you a UK-trained teacher and UK citizen currently working abroad? Our
@@ -63,7 +71,7 @@ If you're thinking about coming home to teach, we want to help.
 
 If you are a non-UK citizen interested in teaching or training to teach in
 England, please read our
-[guidance for international teachers and trainees](/train-to-teach-in-england-as-an-international-student)
+[guidance for international teachers and trainees](/train-to-teach-in-england-as-an-international-student) and [register for our next online event](/event-categories/online-q-as)
 to learn how we can support your journey to the UK.
 
 ### Return to teaching success stories

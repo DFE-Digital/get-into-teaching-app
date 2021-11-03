@@ -60,9 +60,11 @@ Find out how to get QTS if you:
 * [do not have a degree](#if-you-do-not-have-a-degree) (and you're not already doing one)
 * [are already an experienced teacher](#if-you-are-already-an-experienced-teacher)
 
-You can also find specialised teacher training programmes if you're [changing career](#if-youre-changing-career) or you [have a doctorate](#if-you-have-a-doctorate).
+You can also find specialised teacher training programmes if you're [changing career](#if-youre-changing-career).
 
 Not looking to teach in primary or secondary settings? Consider teaching [early years](/early-years-teaching-training) or [further education](/become-a-further-education-teacher).
+
+If you're from outside the UK, find out how you can [come to England to teach](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
 
 ## If you have a degree
 
@@ -252,7 +254,7 @@ You may be able to get 'qualified teacher status' (QTS) through a 12-week 'asses
 You’ll need to show that you already meet the standards for QTS. For example, you may meet the standards if:
 
 * you’ve already been employed as an unqualified teacher for a significant amount of time (for example, 2 years) and you’ve worked in more than one school
-* [you’re a qualified teacher who trained overseas](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk)
+* [you’re a qualified teacher who trained overseas](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk)
 
 Entry criteria may vary by teacher training provider. Ask them about eligibility before you apply.
 
@@ -264,9 +266,3 @@ A career change into teaching allows you to use your experience and
 passion to inspire young people.
 
 [Now Teach](https://nowteach.org.uk/) and [Transition to Teach](https://www.transitiontoteach.co.uk/) can support you with your career change.
-
-## If you have a doctorate
-
-If you have or are about to get a PHD you could consider the [researchers in schools](https://thebrilliantclub.org/researchers-in-schools/) programme.
-
-If you have a lot of relevant work experience you could even earn a salary.

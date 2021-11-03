@@ -3,17 +3,21 @@
     <%= back_link step_path(wizard.previous_key) if wizard.previous_key %>
   </p>
 
-  <h1>Sign up for this event:</h1>
-  <h2><%= event.name %></h2>
+  <div class="registration__event--container">
+    <%= govuk_form_for current_step, url: step_path do |f| %>
+      <%= f.govuk_error_summary %>
 
-  <%= govuk_form_for current_step, url: step_path do |f| %>
-    <%= f.govuk_error_summary %>
+      <%= render current_step.key, current_step: current_step, f: f %>
 
-    <%= render current_step.key, current_step: current_step, f: f %>
-
-    <% if wizard.step_can_proceed? %>
-      <% button_text = safe_html_format(wizard.last_step? ? "Complete sign up <span></span>" : "Next step <span></span>") %>
-      <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
+      <% if wizard.step_can_proceed? %>
+        <% button_text = safe_html_format(wizard.last_step? ? "Complete sign up <span></span>" : "Next step <span></span>") %>
+        <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
+      <% end %>
     <% end %>
-  <% end %>
+
+    <div class="event-info">
+      <%= render Events::DesktopSignupInfo.new(@event) %>
+      <%= render Events::MobileSignupInfo.new(@event) %>
+    </div>
+  </div>
 </section>

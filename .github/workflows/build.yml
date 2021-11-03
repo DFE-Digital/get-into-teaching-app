@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -28,7 +28,7 @@ jobs:
         id:   azSecret
         with:
            keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK, PROD-RAILS-MASTER-KEY'
+           secrets: 'ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK'
 
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@master
@@ -84,7 +84,6 @@ jobs:
           push: true
           build-args: |
                       SHA=${{ steps.sha.outputs.short }}
-                      RAILS_MASTER_KEY=${{ steps.azSecret.outputs.PROD-RAILS-MASTER-KEY }}
 
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'
@@ -103,7 +102,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -122,7 +121,7 @@ jobs:
         run: |-
           docker run -t --rm -e RAILS_ENV=test \
             ${{ needs.build.outputs.DOCKER_IMAGE }} \
-            rspec --format documentation spec/features/content_pages_spec.rb
+            rspec --format progress spec/features/content_pages_spec.rb
 
       - name: Slack Notification
         if: failure()
@@ -140,7 +139,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -162,7 +161,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -207,7 +206,7 @@ jobs:
       - name: Run Specs
         run: |-
           docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
-            bundle exec parallel_split_test spec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format documentation
+            bundle exec parallel_split_test spec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress
 
       - name: Fixup report file paths
         run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/coverage.json
@@ -244,12 +243,12 @@ jobs:
 
   review:
     name: Review Deployment Process
-    needs: [  javascript_tests , feature_tests  ]
+    needs: [  build  ]
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -310,7 +309,7 @@ jobs:
       release_sha: ${{github.sha }}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -394,7 +393,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -452,7 +451,7 @@ jobs:
     needs: [ qa ]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -497,7 +496,7 @@ jobs:
     needs: [ cypress, development ]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master

@@ -53,6 +53,10 @@ module EventsHelper
     end
   end
 
+  def display_event_provider_info?(event)
+    !event.type_id.in?([qt_event_type_id, ttt_event_type_id])
+  end
+
   def event_has_provider_info?(event)
     event.provider_website_url ||
       event.provider_target_audience ||
@@ -125,6 +129,10 @@ module EventsHelper
 
   def ttt_event_type_id
     GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+  end
+
+  def qt_event_type_id
+    GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
   end
 
   def event_list_id(name)

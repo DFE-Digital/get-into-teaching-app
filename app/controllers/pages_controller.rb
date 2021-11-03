@@ -1,7 +1,17 @@
 class PagesController < ApplicationController
-  include StaticPages
+  include StaticPageCache
+  cache_actions :show, :privacy_policy, :cookies
+
+  class InvalidTemplateName < RuntimeError; end
+
+  MISSING_TEMPLATE_EXCEPTIONS = [
+    ActionView::MissingTemplate,
+    InvalidTemplateName,
+  ].freeze
+
+  PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
+
   before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && request.query_parameters.any? }
-  around_action :cache_static_page, only: %i[show]
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
   PAGE_LAYOUTS = [
@@ -33,7 +43,7 @@ class PagesController < ApplicationController
   end
 
   def show
-    @page = Pages::Page.find content_template
+    @page = ::Pages::Page.find content_template
 
     (@page.ancestors.reverse + [@page]).each do |page|
       breadcrumb page.title, page.path if @page.title.present?
@@ -59,7 +69,7 @@ class PagesController < ApplicationController
       url += "?" + session[:utm].to_param
     end
 
-    redirect_to(url, status: :moved_permanently)
+    redirect_to(url, turbolinks: false, status: :moved_permanently)
   end
 
 private
@@ -81,6 +91,12 @@ private
 
   def content_template
     "/#{filtered_page_template}"
+  end
+
+  def filtered_page_template(page_param = :page)
+    params[page_param].to_s.tap do |page|
+      raise InvalidTemplateName if page !~ PAGE_TEMPLATE_FILTER
+    end
   end
 
   def rescue_missing_template

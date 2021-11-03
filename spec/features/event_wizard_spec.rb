@@ -29,12 +29,14 @@ RSpec.feature "Event wizard", type: :feature do
     visit event_steps_path(event_id: event_readable_id, walk_in: true)
 
     expect(page).to have_title(individual_event_page_title)
-    expect(page).to have_text "Sign up for this event"
+    expect(page).to have_css("h1", text: "Sign up for this event")
     expect(page).to have_text event_name
+    expect(page).to have_css(".registration-with-image-above")
+
     fill_in_personal_details_step
     click_on "Next step"
 
-    fill_in "Phone number (optional)", with: "01234567890"
+    fill_in "What is your telephone number? (optional)", with: "01234567890"
     click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
@@ -70,7 +72,7 @@ RSpec.feature "Event wizard", type: :feature do
     expect(page).to have_text "Check your email and enter the verification code sent to test@user.com"
     click_on "continue without verifying your identity"
 
-    fill_in "Phone number (optional)", with: "01234567890"
+    fill_in "What is your telephone number? (optional)", with: "01234567890"
     click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
@@ -94,12 +96,14 @@ RSpec.feature "Event wizard", type: :feature do
     visit event_steps_path(event_id: event_readable_id)
 
     expect(page).to have_title(individual_event_page_title)
-    expect(page).to have_text "Sign up for this event"
+    expect(page).to have_css("h1", text: "Sign up for this event")
     expect(page).to have_text event_name
+    expect(page).to have_css(".registration-with-image-above")
+
     fill_in_personal_details_step
     click_on "Next step"
 
-    fill_in "Phone number (optional)", with: "01234567890"
+    fill_in "What is your telephone number? (optional)", with: "01234567890"
     click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
@@ -132,12 +136,14 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_text "Sign up for this event"
+    expect(page).to have_css("h1", text: "Sign up for this event")
     expect(page).to have_text event_name
+    expect(page).to have_css(".registration-with-image-above")
+
     fill_in_personal_details_step
     click_on "Next step"
 
-    fill_in "Phone number (optional)", with: "01234567890"
+    fill_in "What is your telephone number? (optional)", with: "01234567890"
     click_on "Next step"
 
     within_fieldset "Would you like to receive email updates" do
@@ -173,8 +179,9 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_text "Sign up for this event"
-    expect(page).to have_text event_name
+    expect(page).to have_css("h1", text: "Sign up for this event")
+    expect(page).to have_css(".registration-with-image-above")
+
     fill_in_personal_details_step
     click_on "Next step"
 
@@ -228,8 +235,10 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_text "Sign up for this event"
+    expect(page).to have_css("h1", text: "Sign up for this event")
     expect(page).to have_text event_name
+    expect(page).to have_css(".registration-with-image-above")
+
     fill_in_personal_details_step
     click_on "Next step"
 
@@ -245,7 +254,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text("Phone number (optional)")
+    expect(page).to have_text("What is your telephone number? (optional)")
   end
 
   scenario "Full journey as an existing candidate that has already subscribed to the mailing list" do
@@ -262,8 +271,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_text "Sign up for this event"
-    expect(page).to have_text event_name
+    expect(page).to have_css("h1", text: "Sign up for this event")
     fill_in_personal_details_step
     click_on "Next step"
 
@@ -271,7 +279,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text("Phone number (optional)")
+    expect(page).to have_text("What is your telephone number? (optional)")
     click_on "Next step"
 
     expect(page).to have_text("Are you over 16 and do you agree")
@@ -308,8 +316,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     visit event_steps_path(event_id: event_readable_id)
 
-    expect(page).to have_text "Sign up for this event"
-    expect(page).to have_text event_name
+    expect(page).to have_css("h1", text: "Sign up for this event")
     fill_in_personal_details_step
     click_on "Next step"
 
@@ -317,7 +324,7 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text("Phone number (optional)")
+    expect(page).to have_text("What is your telephone number? (optional)")
     click_on "Next step"
 
     expect(page).to have_text("Are you over 16 and do you agree")

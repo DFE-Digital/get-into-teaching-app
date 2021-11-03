@@ -14,7 +14,7 @@ provider_groups:
   East of England:
     providers:
     - header: BEC Teacher Training
-      link: http://secondary.billericayscitt.com/assessment-only-route-2/
+      link: https://www.billericayscitt.com/
       name: Fiona Manby
       telephone: 01268 477611 (extn 471)
       email: fiona@billericayscitt.com
@@ -170,7 +170,7 @@ provider_groups:
       telephone: '0208 2404326'
       email: ao@stmarys.ac.uk
     - header: 'Teaching London: LDBS SCITT'
-      link: https://teachinglondon.org
+      # link: https://teachinglondon.org
       name: Saskia Rossi
       telephone: 0207 932 1126
       email: admin@teachinglondon.org
@@ -436,9 +436,6 @@ provider_groups:
       email: ssplant@ttsonline.net
   Yorkshire and the Humber:
     providers:
-    - header: Bradford Birth to 19 SCITT
-      link: https://www.bradfordbirthto19.co.uk/scitt
-      email: scitt@bradfordbirthto19.org
     - header: Bradford College
       link: https://www.bradfordcollege.ac.uk/courses/course/qualified-teacher-status-qts-assessment-only-programme/
       name: Lee Parsell

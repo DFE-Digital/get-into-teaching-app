@@ -42,7 +42,7 @@ module MailingList
     def resolve_layout
       is_first_page = @current_step.instance_of? MailingList::Steps::Name
 
-      return "registration_attractive" if is_first_page
+      return "registration_with_side_images" if is_first_page
 
       "registration"
     end

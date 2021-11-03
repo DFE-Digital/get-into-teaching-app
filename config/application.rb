@@ -23,7 +23,7 @@ Bundler.require(*Rails.groups)
 module GetIntoTeachingWebsite
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 6.0
+    config.load_defaults 5.2
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -37,8 +37,11 @@ module GetIntoTeachingWebsite
     config.view_component.default_preview_layout = "component_preview"
 
     config.skylight.environments.append("preprod", "dev", "test", "staging", "userresearch", "rolling")
+
+    # Static page cache
+    config.action_controller.page_cache_directory = Rails.root.join("public/cached_pages")
+    config.middleware.insert_before \
+      ActionDispatch::Static, ActionDispatch::Static, File.join(config.root, "public", "cached_pages"),
+      headers: { "Cache-Control" => "max-age=#{5.minutes.to_i}, public, immutable" }
   end
 end
-
-# Prevent Rails from attempting to auto-load JS/assets.
-Rails.autoloaders.main.ignore(Rails.root.join("app/webpacker"))

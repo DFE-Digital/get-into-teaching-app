@@ -64,7 +64,7 @@ describe StructuredDataHelper, type: "helper" do
         },
       }
     end
-    let(:page) { Pages::Page.new("/how-to-page", frontmatter) }
+    let(:page) { ::Pages::Page.new("/how-to-page", frontmatter) }
     let(:html) { how_to_structured_data(page) }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
 
@@ -127,7 +127,7 @@ describe StructuredDataHelper, type: "helper" do
         author: "Ronald McDonald",
       }
     end
-    let(:page) { Pages::Page.new("/blog/post", frontmatter) }
+    let(:page) { ::Pages::Page.new("/blog/post", frontmatter) }
     let(:html) { blog_structured_data(page) }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
 
@@ -300,7 +300,7 @@ describe StructuredDataHelper, type: "helper" do
         name: event.name,
         startDate: event.start_at,
         endDate: event.end_at,
-        description: strip_tags(event.description).strip,
+        description: strip_tags(event.summary).strip,
         eventStatus: described_class::EVENT_SCHEDULED,
         eventAttendanceMode: described_class::OFFLINE_EVENT,
         offers: {
@@ -313,6 +313,12 @@ describe StructuredDataHelper, type: "helper" do
 
       expect(data).not_to have_key(:organizer)
       expect(data).not_to have_key(:location)
+    end
+
+    context "when event summary is nil" do
+      let(:event) { build(:event_api, summary: nil) }
+
+      it { is_expected.to include({ description: nil }) }
     end
 
     context "when the event is online" do

@@ -1,0 +1,37 @@
+.event-box.signup-info {
+  background: $grey;
+  padding: 1em;
+  border: none;
+
+  &.desktop {
+    display: none;
+
+    @include mq($from: desktop) {
+      display: block;
+    }
+
+    h4 {
+      .caption {
+        display: block;
+        font-size: .8em;
+        color: $grey-dark;
+      }
+    }
+  }
+
+  &.mobile {
+    display: none;
+
+    @include mq($until: desktop) {
+      display: block;
+    }
+  }
+
+  p {
+    @include font-size("xsmall");
+  }
+
+  .event-box__divider.thin {
+    margin-top: 2em;
+  }
+}

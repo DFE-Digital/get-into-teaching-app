@@ -1,8 +1,0 @@
-<section class="registration__mailing-list">
-  <h1>We've emailed you a code to check it's you</h1>
-
-  <%= govuk_form_for(@signup, url: mailing_list_signup_path, method: :patch) do |f| %>
-    <%= f.govuk_text_field(:timed_one_time_password) %>
-    <button class="button">Verify</button>
-  <% end %>
-</section>

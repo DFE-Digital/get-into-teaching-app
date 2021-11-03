@@ -153,10 +153,17 @@ describe EventsController, type: :request do
         it { is_expected.to match(/#{event.building.address_postcode}/) }
         it { is_expected.to match(/iframe.+src="#{event.video_url}"/) }
         it { is_expected.to include(event.provider_website_url) }
-        it { is_expected.to include(event.provider_target_audience) }
-        it { is_expected.to include(event.provider_organiser) }
-        it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
+        it { is_expected.not_to include("Provider information") }
         it { is_expected.to include(event.building.image_url) }
+
+        context "when the type is not TTT or QT" do
+          let(:event) { build(:event_api, :online_event, :with_provider_info, readable_id: event_readable_id) }
+
+          it { is_expected.to include("Provider information") }
+          it { is_expected.to include(event.provider_target_audience) }
+          it { is_expected.to include(event.provider_organiser) }
+          it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
+        end
 
         context "when the event can be registered for online" do
           let(:event) { build(:event_api, web_feed_id: "123", readable_id: event_readable_id) }
