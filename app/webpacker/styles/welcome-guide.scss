@@ -131,7 +131,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       grid-template-rows: max-content $mobile-overlap-amount max-content $mobile-overlap-amount 1em;
 
       .background { grid-area: 1 / 1 / 5 / 2; }
-      h1 { grid-area: 1 / 1 / 2 / 2; }
+      .main-heading { grid-area: 1 / 1 / 2 / 2; }
       video { grid-area: 2 / 1 / 4 / 2; }
       .triangle { grid-area: 5 / 1 / 6 / 2; }
 
@@ -141,7 +141,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
         .background { grid-area: 1 / 1 / 4 / 4; }
         .triangle { grid-area: 4 / 1 / 5 / 4; }
-        h1 { grid-area: 1 / 1 / 3 / 3; }
+        .main-heading { grid-area: 1 / 1 / 3 / 3; }
         video { grid-area: 2 / 2 / 6 / 4; }
       }
     }
@@ -180,10 +180,11 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         z-index: map-get($z-indices, "medium");
       }
 
-      h1 {
+      .main-heading {
         @include font-size(xxxlarge);
         z-index: map-get($z-indices, "high");
         margin: .4rem 0 0 .4em;
+        font-weight: bold;
 
         .underline {
           @include underline;
@@ -207,10 +208,21 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           padding: .3rem .6rem;
         }
 
-        .welcome-to-teaching {
+        .welcome-to-teaching-text {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+
+          @include font-size(xxxlarge);
+
           .purple {
             padding-bottom: .5em;
+
+            &.no-wrap {
+              max-height: .8em;
+            }
           }
+
         }
 
         @include mq($from: desktop) {
