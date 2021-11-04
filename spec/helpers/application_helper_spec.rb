@@ -247,14 +247,18 @@ describe ApplicationHelper do
   end
 
   describe "#chat_link" do
-    subject { helper.chat_link(text, classes: extra_class, fallback_text: fallback_text, offline_text: offline_text) }
+    subject { helper.chat_link(text, classes: extra_class, fallback_text: fallback_text, fallback_email: fallback_email, offline_text: offline_text) }
+
+    before { allow(Rails.application.config.x).to receive(:zendesk_chat).and_return(true) }
 
     let(:text) { "Chat with us" }
     let(:extra_class) { "button" }
     let(:fallback_text) { "Chat to us" }
     let(:offline_text) { "Chat closed." }
+    let(:fallback_email) { nil }
 
     it { is_expected.to have_css(%(span[data-controller="talk-to-us"])) }
+    it { is_expected.to have_css(%(span[data-talk-to-us-zendesk-enabled-value="true"])) }
     it { is_expected.to have_css(%(a[data-action="talk-to-us#startChat"])) }
     it { is_expected.to have_css(%(a.chat-button.button.with-fallback span)) }
     it { is_expected.to have_link(fallback_text, href: "#talk-to-us", class: "button chat-button-no-js") }
@@ -271,6 +275,25 @@ describe ApplicationHelper do
       let(:offline_text) { nil }
 
       it { is_expected.not_to have_css(".chat-button-offline") }
+    end
+
+    context "when there is a fallback_email" do
+      let(:fallback_text) { nil }
+      let(:fallback_email) { "fallback@email.com" }
+
+      it { is_expected.to have_link(fallback_email, href: "mailto:#{fallback_email}", class: "chat-button-no-js") }
+    end
+
+    context "when there is both a fallback text and email" do
+      let(:fallback_email) { "fallback@email.com" }
+
+      it { expect { is_expected }.to raise_error(ArgumentError, "Specify fallback text or email, not both") }
+    end
+
+    context "when zendesk is disabled" do
+      before { allow(Rails.application.config.x).to receive(:zendesk_chat).and_return(false) }
+
+      it { is_expected.to have_css(%(span[data-talk-to-us-zendesk-enabled-value="false"])) }
     end
   end
 end

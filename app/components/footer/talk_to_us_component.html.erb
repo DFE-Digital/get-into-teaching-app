@@ -9,8 +9,9 @@
             <div class="options">
               <% unless helpers.privacy_page?(request.path) %>
               <div class="live-chat">
-                <p>Live chat</p>
-                <%= helpers.chat_link("Chat online", classes: "button", fallback_text: nil, offline_text: "Chat closed") %>
+                <p class="js-enabled-title">Live chat</p>
+                <p class="js-disabled-title">Email us</p>
+                <%= helpers.chat_link("Chat online", classes: "button", fallback_text: nil, fallback_email: "getintoteaching.getintoteaching@education.gov.uk", offline_text: "Chat closed") %>
               </div>
               <% end %>
               <div>
