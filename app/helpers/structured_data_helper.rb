@@ -111,6 +111,8 @@ module StructuredDataHelper
   end
 
   def event_structured_data(event)
+    return unless event.type_id.in?([qt_event_type_id, ttt_event_type_id])
+
     building_data = event_building_data(event)
     provider_data = event_provider_data(event)
 
