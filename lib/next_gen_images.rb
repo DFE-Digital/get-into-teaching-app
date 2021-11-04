@@ -46,13 +46,6 @@ private
 
   def mime_type(src)
     ext = File.extname(src)
-
-    case ext
-    when ".webp"
-      # Rack::Mime.mime_type is returning the wrong mime type for webp.
-      "image/webp"
-    else
-      Rack::Mime.mime_type(ext)
-    end
+    Rack::Mime.mime_type(ext)
   end
 end
