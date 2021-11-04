@@ -54,6 +54,7 @@ Rails.application.routes.draw do
     get "/open_events", to: "events#open_events"
   end
 
+  get "/funding-your-training", to: "pages#funding_your_training", as: :funding_your_training
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/tta-service", to: "pages#tta_service", as: :tta_service

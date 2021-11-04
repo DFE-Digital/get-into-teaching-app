@@ -59,12 +59,9 @@ describe PagesController, type: :request do
   end
 
   describe "#filtered_page_template" do
-    subject { controller.send :filtered_page_template }
+    subject { controller.send(:filtered_page_template, template) }
 
     let(:controller) { described_class.new }
-    let(:params) { { page: template } }
-
-    before { allow(controller).to receive(:params).and_return params }
 
     context "with valid page template" do
       let(:template) { "hello" }
@@ -100,14 +97,6 @@ describe PagesController, type: :request do
       let(:template) { "stories/my-top-10" }
 
       it { is_expected.to eql "stories/my-top-10" }
-    end
-
-    context "with custom page value" do
-      subject { controller.send :filtered_page_template, :story }
-
-      let(:params) { { story: "hello" } }
-
-      it { is_expected.to eql "hello" }
     end
   end
 end
