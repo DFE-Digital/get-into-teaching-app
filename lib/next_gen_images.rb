@@ -32,13 +32,15 @@ private
   end
 
   def source(original_src, ext, doc)
-    src = "#{original_src.chomp(File.extname(original_src))}#{ext}"
+    src_uri = URI.parse(original_src)
+    base_url = src_uri.absolute ? "#{src_uri.scheme}://#{src_uri.host}" : ""
+    src_path = "#{src_uri.path.chomp(File.extname(original_src))}#{ext}"
 
-    return nil unless File.exist?("#{Rails.public_path}/#{src}")
+    return nil unless File.exist?("#{Rails.public_path}#{src_path}")
 
     Nokogiri::XML::Node.new("source", doc) do |source|
-      source["srcset"] = src
-      source["type"] = mime_type(src)
+      source["srcset"] = "#{base_url}#{src_path}"
+      source["type"] = mime_type(src_path)
     end
   end
 
