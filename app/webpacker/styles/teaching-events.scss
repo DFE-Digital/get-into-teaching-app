@@ -404,6 +404,8 @@
     display: grid;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
     gap: 2em;
 
     .event-attribute {
@@ -412,6 +414,41 @@
       }
 
       flex: 1 1 20%;
+    }
+
+    @include mq($from: mobile) {
+      flex-direction: row;
+    }
+  }
+
+  .venue-information {
+    max-width: 65rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+    }
+
+    .venue-information-summary {
+      margin: 2em;
+    }
+
+    .venue-image {
+      @include mq($from: tablet) {
+        margin: auto;
+      }
+
+      picture {
+        margin: 2em;
+        img {
+          max-width: 20em;
+          max-height: 12em;
+        }
+      }
     }
   }
 
