@@ -143,4 +143,10 @@
       <figcaption>Sarah, trainee teacher, London</figcaption>
     </figure>
   </section>
+
+  <% if @event.scribble_id %>
+    <section class="scribble">
+      <div data-controller="scribble" data-scribble-id="<%= @event.scribble_id %>"></div>
+    </section>
+  <% end %>
 </div>
