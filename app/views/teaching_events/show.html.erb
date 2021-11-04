@@ -56,12 +56,23 @@
   </header>
 
   <section class="event-info">
-    <h2>What to expect from a <%= event_type_name(@event.type_id) %> event</h2>
+    <h2>What to expect from a <%= event_type_name(@event.type_id) %></h2>
 
     <div class="event-summary">
-      <div class="about-ttt-events">
-        Watch presentations, ask questions, speak to advisers one-to-one.
-      </div>
+
+      <% if is_event_type?(@event, "Train to teach event") %>
+
+        <div class="about-ttt-event">
+          Watch presentations, ask questions, speak to advisers one-to-one.
+        </div>
+
+      <% else %>
+
+        <div class="about-event">
+          Watch presentations, ask questions, speak to advisers one-to-one.
+        </div>
+
+      <% end %>
 
       <figure>
         <blockquote>
@@ -89,13 +100,13 @@
     <div class="event-attribute event-type">
       <h3>Event type</h3>
 
-      <p>Train to teach</p>
+      <p><%= event_type_name(@event.type_id) %></p>
     </div>
 
-    <div class="event-attribute location">
-      <h3>Location</h3>
+    <div class="event-attribute format">
+      <h3>Format</h3>
 
-      <p>Online</p>
+      <p><%= format(@event) %></p>
     </div>
   </section>
 

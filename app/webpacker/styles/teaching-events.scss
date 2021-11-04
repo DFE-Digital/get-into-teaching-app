@@ -351,13 +351,19 @@
       align-items: center;
       gap: 2em;
 
-      .about-ttt-events {
+      .about-ttt-event {
         position: relative;
         @include train-to-teach-event-box;
 
         flex-basis: 40%;
       }
 
+      .about-event {
+        flex-basis: 40%;
+
+        border: 2px solid $grey;
+        padding: 1.5rem 1rem;
+      }
 
       figure {
         flex-basis: 60%;
