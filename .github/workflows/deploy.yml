@@ -45,7 +45,9 @@ jobs:
         with:
           continue-after-seconds: 300
           same-branch-only: false
-
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
   deploy:
     name: Deploy ${{ github.event.inputs.environment }}
     environment: 
