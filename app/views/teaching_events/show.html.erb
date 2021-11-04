@@ -66,21 +66,22 @@
           Watch presentations, ask questions, speak to advisers one-to-one.
         </div>
 
+        <figure>
+          <blockquote>
+            Absolutely loved this day. Very informative, inspiring and I'm
+            excited to change career. Thank you.
+          </blockquote>
+          <figcaption>Sarah, trainee teacher, London</figcaption>
+        </figure>
       <% else %>
 
         <div class="about-event">
-          Watch presentations, ask questions, speak to advisers one-to-one.
+          <%= tag.p(@event.summary, class: "leading") %>
+
+          <%= tag.div(@event.description.html_safe) %>
         </div>
 
       <% end %>
-
-      <figure>
-        <blockquote>
-          Absolutely loved this day. Very informative, inspiring and I'm
-          excited to change career. Thank you.
-        </blockquote>
-        <figcaption>Sarah, trainee teacher, London</figcaption>
-      </figure>
     </div>
   </section>
 

@@ -335,7 +335,8 @@
   .event-info {
     h2 {
       @include font-size(medium);
-      margin-bottom: 2em;
+      padding: .5em;
+      margin-bottom: 1rem;
     }
 
     .event-summary {
@@ -359,10 +360,13 @@
       }
 
       .about-event {
-        flex-basis: 40%;
+        flex-basis: 100%;
 
-        border: 2px solid $grey;
         padding: 1.5rem 1rem;
+
+        .leading {
+          font-weight: strong;
+        }
       }
 
       figure {
