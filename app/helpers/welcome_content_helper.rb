@@ -1,5 +1,6 @@
 module WelcomeContentHelper
   MATHS = {
+    video: "welcome-guide-generic.webm",
     story: {
       name: "Dimitra",
       job_title_and_location: "maths teacher, London",
@@ -26,6 +27,7 @@ module WelcomeContentHelper
   }.freeze
 
   SCIENCES = {
+    video: "welcome-guide-science.webm",
     story: {
       name: "Holly",
       job_title_and_location: "science teacher, Essex",
@@ -53,6 +55,7 @@ module WelcomeContentHelper
   }.freeze
 
   ENGLISH = {
+    video: "welcome-guide-generic.webm",
     story: {
       name: "Laura",
       job_title_and_location: "English teacher, Doncaster",
@@ -79,6 +82,7 @@ module WelcomeContentHelper
   }.freeze
 
   MFL = {
+    video: "welcome-guide-mfl.webm",
     story: {
       name: "Tom",
       job_title_and_location: "Spanish teacher, Coventry",
@@ -105,6 +109,7 @@ module WelcomeContentHelper
   }.freeze
 
   GENERIC = {
+    video: "welcome-guide-generic.webm",
     story: {
       name: "Helen",
       job_title_and_location: "assistant headteacher, London",
@@ -127,6 +132,10 @@ module WelcomeContentHelper
 
   def subject_specific_quote_data(id = welcome_guide_subject_id)
     mappings(id).fetch(:quote)
+  end
+
+  def subject_specific_video_path(id = welcome_guide_subject_id, prefix: "/videos/")
+    prefix + mappings(id).fetch(:video)
   end
 
   def subject_category(id = welcome_guide_subject_id, downcase: true)
