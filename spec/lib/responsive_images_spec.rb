@@ -6,7 +6,8 @@ describe ResponsiveImages do
     subject { instance.html }
 
     let(:fingerprint) { "-fingerprint1" }
-    let(:src) { "media/images/content/an-image#{fingerprint}.jpg" }
+    let(:asset_host) { "" }
+    let(:src) { "#{asset_host}/media/images/content/an-image#{fingerprint}.jpg" }
     let(:body) do
       "<picture>
         <source srcset=\"#{src}\" type=\"image/jpeg\"></source>
@@ -27,6 +28,16 @@ describe ResponsiveImages do
           is_expected.to include(
             "<source srcset=\"#{responsive_src}\" type=\"image/jpeg\" media=\"(max-width: #{max_width})\"></source>",
           )
+        end
+
+        context "when the src is absolute (assets are hosted on a different domain)" do
+          let(:asset_host) { "https://domain.com" }
+
+          it do
+            is_expected.to include(
+              "<source srcset=\"#{responsive_src}\" type=\"image/jpeg\" media=\"(max-width: #{max_width})\"></source>",
+            )
+          end
         end
       end
     end
@@ -60,11 +71,12 @@ describe ResponsiveImages do
   def setup_responsive_img(breakpoint)
     fingerprint = "1234abc"
     responsive_src = "media/images/content/an-image--#{breakpoint}-#{fingerprint}.jpg"
-    responsive_file = "#{Rails.public_path}#{responsive_src}"
-    responsive_pattern = "#{Rails.public_path}media/images/content/an-image--#{breakpoint}*.jpg"
+    public_path = Rails.public_path
+    responsive_file = "#{public_path}/#{responsive_src}"
+    responsive_pattern = "#{public_path}/media/images/content/an-image--#{breakpoint}*.jpg"
 
     allow(Dir).to receive(:glob).with(responsive_pattern) { [responsive_file] }
 
-    responsive_src
+    "#{asset_host}/#{responsive_src}"
   end
 end

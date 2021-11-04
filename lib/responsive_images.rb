@@ -49,8 +49,16 @@ private
   end
 
   def responsive_src(src, breakpoint)
-    file = responsive_file(src, breakpoint)
-    file&.sub(Rails.public_path.to_s, "")
+    src_uri = URI.parse(src)
+
+    file = responsive_file(src_uri.path, breakpoint)
+
+    return nil if file.nil?
+
+    file_path = file.sub(Rails.public_path.to_s, "")
+    base_url = src_uri.absolute ? "#{src_uri.scheme}://#{src_uri.host}" : ""
+
+    "#{base_url}#{file_path}"
   end
 
   def responsive_file(src, breakpoint)
