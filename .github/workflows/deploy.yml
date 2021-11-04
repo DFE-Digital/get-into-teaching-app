@@ -99,7 +99,7 @@ jobs:
                  echo ::set-output name=control::$(echo "test" )
                  echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-test" )
                  echo ::set-output name=key::"app.test.terraform"
-                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
+                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:review-${{ steps.sha.outputs.short}}
              fi
 
              if [ "${{github.event.inputs.environment }}" == "Speed" ]
