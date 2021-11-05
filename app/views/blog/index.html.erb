@@ -1,15 +1,22 @@
-<%= content_for :popular_tags do %>
-  <div class="blog-tags-list blog-tags-list--grey blog-tags-list--padded container ">
-    <h2>Popular blog tags</h2>
-
+<%= content_for :aside do %>
+  <div>
+    <h2>Popular tags</h2>
     <%= render partial: "blog/tag_list", locals: { tags: Pages::Blog.popular_tags } %>
   </div>
+
+  <div>
+    <h2>Topics</h2>
+    <%= render partial: "blog/topic_list" %>
+  </div>
+
+  <hr>
 <% end %>
 
 <ol class="blog-index">
   <% @posts.each do |path, fm| %>
     <li>
       <%= render partial: "blog/post_preview", locals: { path: path, fm: fm } %>
+      <hr>
     </li>
   <% end %>
 </ol>

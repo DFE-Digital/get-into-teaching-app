@@ -6,6 +6,18 @@
 h1 {
   @include font;
   @include font-size("large");
+
+  // Multi-line padded highlight effect without horizontal
+  // gabs between lines.
+  &.yellow {
+    margin: 0 1rem;
+
+    span {
+      padding: 0.1em 0;
+      background: $yellow-dark;
+      box-shadow: 1rem 0 0 $yellow-dark, -1rem 0 0 $yellow-dark;
+    }
+  }
 }
 
 h2 {

@@ -2,6 +2,7 @@
   <% @posts.each do |path, fm| %>
     <li>
       <%= render partial: "blog/post_preview", locals: { path: path, fm: fm } %>
+      <hr>
     </li>
   <% end %>
 </ol>

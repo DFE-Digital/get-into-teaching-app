@@ -1,5 +1,5 @@
-<ol class="blog-tags-list">
-  <% tags.each do |popular_tag| %>
-    <li><%= link_to(popular_tag, blog_tag_path(popular_tag.parameterize)) %></li>
+<ol class="blog-tags">
+  <% tags.each do |tag| %>
+    <li><%= link_to(tag, blog_tag_path(tag.parameterize)) %></li>
   <% end %>
 </ol>
