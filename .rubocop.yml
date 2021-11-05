@@ -82,5 +82,8 @@ RSpec/MultipleExpectations:
   Exclude:
     - spec/**/*.rb
 
+RSpec/LeadingSubject:
+  Enabled: false
+
 RSpec/NestedGroups:
   Max: 6
