@@ -1,4 +1,8 @@
 module TeachingEventsHelper
+  def is_a_train_to_teach_event?(event)
+    event.type_id.in?(GetIntoTeachingApiClient::Constants::EVENT_TYPES.values_at("Train to Teach event", "Question Time"))
+  end
+
   def event_list_id(name)
     %(#{name.parameterize}-list)
   end

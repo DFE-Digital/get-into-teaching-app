@@ -35,7 +35,7 @@
           <% end %>
         </div>
 
-        <% if true # FIXME if TTT %>
+        <% if is_a_train_to_teach_event?(@event) %>
           <div class="register">
             <%= link_to event_steps_path(@event.readable_id), class: %w[button button--black-chevron] do %>
               Register your attendance
@@ -62,7 +62,7 @@
 
     <div class="event-summary">
 
-      <% if is_event_type?(@event, "Train to teach event") %>
+      <% if is_a_train_to_teach_event?(@event) %>
 
         <div class="about-ttt-event">
           Watch presentations, ask questions, speak to advisers one-to-one.

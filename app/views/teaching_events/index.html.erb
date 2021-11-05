@@ -21,7 +21,7 @@
         <% end %>
 
         <% if @events.any? %>
-          <div class="teaching-events__events">
+          <div class="teaching-events__events teaching-events__events--regular">
             <ol><%= render TeachingEvents::EventComponent.with_collection(@events) %></ol>
           </div>
         <% end %>
