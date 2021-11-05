@@ -1,7 +1,7 @@
 class TeachingEventsController < ApplicationController
   include CircuitBreaker
 
-  before_action :setup_filter, :setup_results, only: :index
+  before_action :setup_filter, only: :index
 
   FEATURED_EVENT_COUNT = 2
   FEATURED_EVENT_TYPES = [
@@ -11,6 +11,21 @@ class TeachingEventsController < ApplicationController
 
   def index
     @page_title = "Find an event near you"
+
+    setup_results
+
+    if @event_search.valid?
+      all_events = @event_search.results.sort_by(&:start_at)
+
+      # featured events will go in a special grey box
+      @featured_events = all_events.select { |e| e.type_id.in?(FEATURED_EVENT_TYPES) }.first(FEATURED_EVENT_COUNT)
+      @events = all_events - @featured_events
+    else
+      @featured_events = []
+      @events = []
+
+      render :index
+    end
   end
 
   def show
@@ -39,10 +54,5 @@ private
 
   def setup_results
     @event_search = TeachingEvents::Search.new(search_params)
-    all_events = @event_search.results.sort_by(&:start_at)
-
-    # featured events will go in a special grey box
-    @featured_events = all_events.select { |e| e.type_id.in?(FEATURED_EVENT_TYPES) }.first(FEATURED_EVENT_COUNT)
-    @events = all_events - @featured_events
   end
 end

@@ -1,10 +1,16 @@
 module TeachingEvents
   class Search
     include ActiveModel::Model
+    include ActiveModel::Validations::Callbacks
 
     FUTURE_MONTHS = 6
 
     attr_accessor :postcode, :online, :type, :distance
+
+    validates :postcode, presence: true, postcode: { allow_blank: true, accept_partial_postcode: true }, if: :distance
+
+    before_validation { self.distance = nil if distance.blank? }
+    before_validation { self.postcode = postcode.to_s.strip.upcase.presence }
 
     def results
       query.flat_map(&:teaching_events).sort_by(&:start_at)

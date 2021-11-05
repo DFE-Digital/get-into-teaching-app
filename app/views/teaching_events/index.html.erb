@@ -6,16 +6,27 @@
       <%= render partial: "filter" %>
     </div>
 
-    <div class="teaching-events__listing">
-      <div class="teaching-events__events teaching-events__events--featured">
-        <h2>Upcoming train to teach events</h2>
 
-        <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>
+    <% if @featured_events.blank? && @events.blank? %>
+      <div role="alert">
+        No events were found.
       </div>
+    <% else %>
+      <div class="teaching-events__listing">
+        <% if @featured_events.any? %>
+          <div class="teaching-events__events teaching-events__events--featured">
+            <h2>Upcoming train to teach events</h2>
 
-      <div class="teaching-events__events">
-        <ol><%= render TeachingEvents::EventComponent.with_collection(@events) %></ol>
+            <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>
+          </div>
+        <% end %>
+
+        <% if @events.any? %>
+          <div class="teaching-events__events">
+            <ol><%= render TeachingEvents::EventComponent.with_collection(@events) %></ol>
+          </div>
+        <% end %>
       </div>
-    </div>
+    <% end %>
   </div>
 </section>
