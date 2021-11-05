@@ -138,15 +138,4 @@ module EventsHelper
   def qt_event_type_id
     GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
   end
-
-  def event_list_id(name)
-    name.parameterize + "-list"
-  end
-
-  def format(event)
-    [].tap do |formats|
-      formats << "in-person" if event.is_in_person
-      formats << "online" if event.is_in_person || event.is_virtual
-    end.to_sentence.capitalize
-  end
 end

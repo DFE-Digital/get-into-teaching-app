@@ -35,11 +35,13 @@
           <% end %>
         </div>
 
-        <div class="register">
-          <%= link_to event_steps_path(@event.readable_id), class: %w[button button--black-chevron] do %>
-            Register your attendance
-          <% end %>
-        </div>
+        <% if true # FIXME if TTT %>
+          <div class="register">
+            <%= link_to event_steps_path(@event.readable_id), class: %w[button button--black-chevron] do %>
+              Register your attendance
+            <% end %>
+          </div>
+        <% end %>
 
       </div>
 
@@ -78,7 +80,7 @@
         <div class="about-event">
           <%= tag.p(@event.summary, class: "leading") %>
 
-          <%= tag.div(@event.description.html_safe) %>
+          <%= tag.div(safe_html_format(@event.description)) %>
         </div>
 
       <% end %>
@@ -107,7 +109,7 @@
     <div class="event-attribute format">
       <h3>Format</h3>
 
-      <p><%= format(@event) %></p>
+      <p><%= event_format(@event) %></p>
     </div>
   </section>
 
