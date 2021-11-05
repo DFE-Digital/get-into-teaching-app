@@ -4,7 +4,7 @@ default: &default
   source_path: app/webpacker
   source_entry_path: packs
   public_root_path: public
-  public_output_path: packs
+  public_output_path: packs/v1
   cache_path: tmp/cache/webpacker
   webpack_compile_output: true
 
