@@ -131,7 +131,6 @@ module ApplicationHelper
 
     tag.span(safe_join(elements), data: {
       controller: "talk-to-us",
-      "talk-to-us-zendesk-enabled-value": Rails.application.config.x.zendesk_chat,
     })
   end
 
