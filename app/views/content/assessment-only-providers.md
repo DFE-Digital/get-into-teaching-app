@@ -66,7 +66,7 @@ provider_groups:
       telephone: 01462 817445
       email: office@bedsscitt.org.uk
     - header: The Cambridge Partnership
-      link: http://www.thecambridgepartnership.co.uk/
+      link: https://campartnership.org/
       name: Claire Mott
       telephone: '01487 833707'
       email: cmott@campartnership.org

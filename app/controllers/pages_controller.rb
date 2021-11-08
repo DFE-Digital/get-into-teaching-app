@@ -1,7 +1,4 @@
 class PagesController < ApplicationController
-  include StaticPageCache
-  cache_actions :show, :privacy_policy, :cookies
-
   class InvalidTemplateName < RuntimeError; end
 
   MISSING_TEMPLATE_EXCEPTIONS = [
@@ -43,22 +40,18 @@ class PagesController < ApplicationController
   end
 
   def show
-    @page = ::Pages::Page.find content_template
+    render_page(params[:page])
+  end
 
-    (@page.ancestors.reverse + [@page]).each do |page|
-      breadcrumb page.title, page.path if @page.title.present?
-    end
+  def funding_your_training
+    @funding_widget =
+      if params[:funding_widget].blank?
+        FundingWidget.new
+      else
+        FundingWidget.new(funding_widget_params).tap(&:valid?)
+      end
 
-    if @page.path.match?(/funding-your-training/)
-      @funding_widget =
-        if params[:funding_widget].blank?
-          FundingWidget.new
-        else
-          FundingWidget.new(funding_widget_params).tap(&:valid?)
-        end
-    end
-
-    render template: @page.template, layout: page_layout
+    render_page("funding-your-training")
   end
 
   def tta_service
@@ -72,7 +65,23 @@ class PagesController < ApplicationController
     redirect_to(url, turbolinks: false, status: :moved_permanently)
   end
 
+protected
+
+  def static_page_actions
+    %i[show cookies privacy_policy]
+  end
+
 private
+
+  def render_page(path)
+    @page = ::Pages::Page.find content_template(path)
+
+    (@page.ancestors.reverse + [@page]).each do |page|
+      breadcrumb page.title, page.path if @page.title.present?
+    end
+
+    render template: @page.template, layout: page_layout
+  end
 
   def funding_widget_params
     params.require(:funding_widget).permit(:subject)
@@ -89,12 +98,12 @@ private
     "layouts/content"
   end
 
-  def content_template
-    "/#{filtered_page_template}"
+  def content_template(path)
+    "/#{filtered_page_template(path)}"
   end
 
-  def filtered_page_template(page_param = :page)
-    params[page_param].to_s.tap do |page|
+  def filtered_page_template(path)
+    path.to_s.tap do |page|
       raise InvalidTemplateName if page !~ PAGE_TEMPLATE_FILTER
     end
   end

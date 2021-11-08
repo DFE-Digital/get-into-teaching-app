@@ -81,21 +81,10 @@ describe FooterComponent, type: "component" do
 
   describe "Zendesk Chat settings snippet" do
     subject! do
-      allow(Rails.application.config.x).to receive(:zendesk_chat) { enabled }
       render_inline(described_class.new)
       page.native.inner_html
     end
 
-    context "when disabled" do
-      let(:enabled) { false }
-
-      it { is_expected.not_to include("window.zESettings") }
-    end
-
-    context "when enabled" do
-      let(:enabled) { true }
-
-      it { is_expected.to include("window.zESettings") }
-    end
+    it { is_expected.to include("window.zESettings") }
   end
 end

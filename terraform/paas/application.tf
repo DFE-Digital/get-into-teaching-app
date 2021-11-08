@@ -1,9 +1,9 @@
 locals {
-  environment_map = { HTTPAUTH_PASSWORD = data.azurerm_key_vault_secret.http_password.value,
-                      HTTPAUTH_USERNAME = data.azurerm_key_vault_secret.http_username.value,
-                      BASIC_AUTH        = var.basic_auth,
-                      APP_URL           = length( var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_internet_hostnames[0]}.${data.cloudfoundry_domain.internet.name}",
-                      APP_ASSETS_URL    = length( var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_asset_hostnames[0]}.${data.cloudfoundry_domain.internet.name}" }
+  environment_map = { HTTPAUTH_PASSWORD = local.infrastructure_secrets.HTTP-PASSWORD,
+    HTTPAUTH_USERNAME = local.infrastructure_secrets.HTTP-USERNAME,
+    BASIC_AUTH        = var.basic_auth,
+    APP_URL           = length(var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_internet_hostnames[0]}.${data.cloudfoundry_domain.internet.name}",
+  APP_ASSETS_URL = length(var.paas_asset_hostnames) == 0 ? "" : "https://${var.paas_asset_hostnames[0]}.${data.cloudfoundry_domain.internet.name}" }
 }
 
 

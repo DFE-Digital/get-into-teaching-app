@@ -247,12 +247,13 @@ describe ApplicationHelper do
   end
 
   describe "#chat_link" do
-    subject { helper.chat_link(text, classes: extra_class, fallback_text: fallback_text, offline_text: offline_text) }
+    subject { helper.chat_link(text, classes: extra_class, fallback_text: fallback_text, fallback_email: fallback_email, offline_text: offline_text) }
 
     let(:text) { "Chat with us" }
     let(:extra_class) { "button" }
     let(:fallback_text) { "Chat to us" }
     let(:offline_text) { "Chat closed." }
+    let(:fallback_email) { nil }
 
     it { is_expected.to have_css(%(span[data-controller="talk-to-us"])) }
     it { is_expected.to have_css(%(a[data-action="talk-to-us#startChat"])) }
@@ -271,6 +272,19 @@ describe ApplicationHelper do
       let(:offline_text) { nil }
 
       it { is_expected.not_to have_css(".chat-button-offline") }
+    end
+
+    context "when there is a fallback_email" do
+      let(:fallback_text) { nil }
+      let(:fallback_email) { "fallback@email.com" }
+
+      it { is_expected.to have_link(fallback_email, href: "mailto:#{fallback_email}", class: "chat-button-no-js") }
+    end
+
+    context "when there is both a fallback text and email" do
+      let(:fallback_email) { "fallback@email.com" }
+
+      it { expect { is_expected }.to raise_error(ArgumentError, "Specify fallback text or email, not both") }
     end
   end
 end

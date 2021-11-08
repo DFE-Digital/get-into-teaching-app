@@ -9,7 +9,5 @@ Rails.application.configure do
 
   config.view_component.show_previews = true
 
-  config.x.zendesk_chat = true
-
   config.x.legacy_tracking_pixels = false
 end

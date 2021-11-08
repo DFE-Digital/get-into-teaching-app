@@ -124,7 +124,7 @@ iframe#launcher {
 }
 
 html:not(.js-enabled) {
-  .chat-button.with-fallback, .live-chat {
+  .chat-button.with-fallback {
     display: none;
   }
 }

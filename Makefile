@@ -19,9 +19,10 @@ help:
 	echo "        make  development edit-app-secrets"
 	echo ""
 
-APPLICATION_SECRETS=APP-KEYS
+APPLICATION_SECRETS=CONTENT-KEYS
 CONTENT_SECRETS=CONTENT-KEYS
 PAGESPEED_SECRETS=PAGE-SPEED-KEYS
+INFRA_SECRETS=INFRA-KEYS
 DOCKER_IMAGE=get-into-teaching-app
 
 .PHONY: development
@@ -77,6 +78,13 @@ edit-ps-secrets: install-fetch-config set-azure-account
 
 print-ps-secrets: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${PAGESPEED_SECRETS}  -f yaml
+
+edit-infra-secrets: install-fetch-config set-azure-account
+	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${INFRA_SECRETS} -e -d azure-key-vault-secret:${KEY_VAULT}/${INFRA_SECRETS} -f yaml -c
+
+print-infra-secrets: install-fetch-config set-azure-account
+	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${INFRA_SECRETS}  -f yaml
+
 
 docker:
 	docker build . -t ${DOCKER_IMAGE}

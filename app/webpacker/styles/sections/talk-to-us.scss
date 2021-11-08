@@ -1,3 +1,17 @@
+html:not(.js-enabled) {
+  .talk-to-us .content > div.contact .options > div.live-chat {
+    flex-basis: 50%;
+
+    .js-enabled-title {
+      display: none;
+    }
+
+    .js-disabled-title {
+      display: block;
+    }
+  }
+}
+
 .talk-to-us {
   background-color: $grey;
 
@@ -33,9 +47,14 @@
             flex: 1 0;
 
             &.live-chat {
+              word-break: break-all;
               border-bottom: 1px solid $purple;
               padding-bottom: $indent-amount;
               margin-bottom: $indent-amount;
+
+              .js-disabled-title {
+                display: none
+              }
 
               span > span {
                 font-weight: bold;
