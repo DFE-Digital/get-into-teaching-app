@@ -5,12 +5,14 @@
   &::after {
     @include font-size(large);
     position: absolute;
-    content: "✅ Train to teach event";
+    content: "Train to Teach event";
     right: 1rem;
     top: -1em;
-    background: $pink;
+    background: $pink url(../images/icon-ttt-white.svg) no-repeat left center;
+    background-size: 1.2em;
+    background-position: .4em;
     font-weight: bold;
-    padding: .2em .4em;
+    padding: .4em .4em .4em 2em;
 
     @include mq($from: mobile) {
       @include font-size(medium);

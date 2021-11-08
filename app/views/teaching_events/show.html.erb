@@ -27,7 +27,6 @@
     <h2>What to expect from a <%= event_type_name(@event.type_id) %></h2>
 
     <div class="event-summary">
-
       <% if is_a_train_to_teach_event?(@event) %>
         <%= render(partial: 'teaching_events/show/train-to-teach-event-summary') %>
       <% else %>
