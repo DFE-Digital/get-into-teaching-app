@@ -4,6 +4,7 @@ date: "2021-06-15"
 images:
   calculator:
     path: "media/images/content/blog/calculator.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/calculator.jpg"
     alt: "A photograph of a calculator and maths worksheet"
 description: |-
   Do you already hold Qualified Teacher Status? Bring your valuable experience back to the classroom with help from the Department for Education.

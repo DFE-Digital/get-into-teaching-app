@@ -9,7 +9,7 @@
       <%= render partial: "blog/date_and_author", locals: { front_matter: fm.with_indifferent_access } %>
     </header>
     <% if fm[:images].present? %>
-      <p><%= first_image_from_post(fm[:images]) %></p>
+      <p><%= thumbnail_image_from_post(fm[:images]) %></p>
     <% end %>
   </div>
   <p><%= fm[:description] %></p>

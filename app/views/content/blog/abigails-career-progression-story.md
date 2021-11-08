@@ -4,6 +4,7 @@ date: "2021-07-05"
 images:
   abigail_beeley:
     path: "media/images/content/blog/abigail-beeley.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/abigail-beeley.jpg"
     alt: "A photograph of Abigail Beeley in a classroom" 
 description: |-
   Abigail Beeley is a maths teacher at St John Fisher Catholic High School in
