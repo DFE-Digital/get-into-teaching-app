@@ -5,9 +5,20 @@ description: |-
 date: "2021-11-01"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
-lid_pixel_event: "What is a PGCE?"
+lid_pixel_event: "What is QTS?"
+keywords:
+  - PGCE
+  - Post-graduate
+  - Post-grad
+  - Certificate
+  - Diploma
+  - Education
+  - QTS
+  - Qualified-teacher
+  - Teaching
+  - Qualification
+  - State-school
 ---
-### What is QTS? 
 
 Qualified teacher status, ‘QTS’, is what you need to teach in a state school in England. 
 

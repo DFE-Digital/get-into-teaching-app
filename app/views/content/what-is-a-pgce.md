@@ -6,8 +6,18 @@ date: "2021-11-01"
 image: "media/images/content/hero-images/0015.jpg"
 backlink: "../../"
 lid_pixel_event: "What is a PGCE?"
+keywords:
+  - PGCE
+  - Post-graduate
+  - Post-grad
+  - Certificate
+  - Education
+  - QTS
+  - Qualified-teacher
+  - Teaching
+  - Qualification
+  - State-school
 ---
-### PGCE. 
 
 A PGCE is a teaching qualification. It stands for ‘postgraduate certificate in education’. 
 
