@@ -60,7 +60,7 @@
       margin-bottom: $indent-amount;
     }
 
-    .blog-topics li {
+    .blog-highlights li {
       margin-top: .4em;
     }
   }
@@ -106,8 +106,15 @@
       }
     }
 
-    header h2 {
-      padding: 0;
+    header {
+      h2 {
+        padding: 0;
+        margin-bottom: 0;
+      }
+
+      .published-date {
+        margin-top: $indent-amount;
+      }
     }
 
     img {
