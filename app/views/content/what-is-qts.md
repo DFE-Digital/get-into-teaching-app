@@ -28,6 +28,6 @@ Getting QTS usually comes after you have completed your initial teacher training
 
 As well as being a respected standard across the world, having QTS means you can move around the country and teach in any state school.
 
-Some PGCE or PGDE courses can award you QTS with your course. You can check the qualifications a course offers by [searching for postgraduate teacher training](www.gov.uk/find-postgraduate-teacher-training-courses).
+Some PGCE or PGDE courses can award you QTS with your course. You can check the qualifications a course offers by [searching for postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
 <a class="button button--secondary" href="/ways-to-train">Discover the different ways to train</a>
