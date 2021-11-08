@@ -28,6 +28,14 @@ module TeachingEvents
       end
     end
 
+    def setting_classes
+      if @online || @virtual
+        "online"
+      else
+        "in-person"
+      end
+    end
+
     def event_type
       helpers.event_type_name(type)
     end
@@ -45,7 +53,11 @@ module TeachingEvents
     end
 
     def classes
-      class_names("event", "event--train-to-teach" => train_to_teach?)
+      class_names(
+        "event",
+        "event--train-to-teach" => train_to_teach?,
+        "event--regular" => !train_to_teach?,
+      )
     end
   end
 end

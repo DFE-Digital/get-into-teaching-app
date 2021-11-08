@@ -15,9 +15,9 @@
         <%= location %>
       </div>
 
-      <div class="event__info__setting">
+      <%= tag.div(class: [setting_classes, "event__info__setting"]) do %>
         <%= setting %>
-      </div>
+      <% end %>
     </div>
 
     <div class="event__meta">
@@ -44,18 +44,16 @@
     </div>
 
     <div class="event__bottom-bar">
-      <% if location.present? %>
-        <div class="event__bottom-bar--left">
-          <div class="event__info__location">
+      <div class="event__bottom-bar--left">
+        <% if location.present? %>
+          <div class="event__bottom-bar--left__location">
             <%= location %>
           </div>
-
-          <div class="event__info__setting">
-            <%= setting %>
-          </div>
-        </div>
-      <% end %>
-
+        <% end %>
+        <%= tag.div(class: [setting_classes, "event__bottom-bar--left__setting"]) do %>
+          <%= setting %>
+        <% end %>
+      </div>
     </div>
   <% end %>
 </li>

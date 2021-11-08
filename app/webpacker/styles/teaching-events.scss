@@ -113,6 +113,7 @@
         @include font-size(small, $adjust: .2rem);
         font-weight: bold;
       }
+
     }
 
     &__meta {
@@ -157,7 +158,7 @@
 
     &__bottom-bar {
       background: $grey;
-      padding: 1em;
+      padding: .2em 1em;
       display: flex;
 
       &--left {
@@ -191,9 +192,62 @@
       .event__info {
         flex-basis: 60%;
         padding: 0;
+
+        &__date-and-time,
+        &__name,
+        &__setting {
+          padding-left: 3rem;
+        }
+
+        &__date-and-time {
+          background: url(../images/icon-calendar.svg) no-repeat left center;
+          background-size: 2em;
+        }
+
+        // &__name {}
+
+        &__setting {
+          background-size: 2.4em;
+
+          &.online {
+            background: url(../images/icon-online-black.svg) no-repeat left center;
+          }
+
+          &.in-person {
+            background: url(../images/icon-building.svg) no-repeat left center;
+          }
+        }
       }
 
       .event__meta { flex-basis: 40%; }
+    }
+
+    &--regular {
+      .event__bottom-bar--left {
+        &__setting,
+        &__location {
+          @include font-size(xsmall);
+
+          padding: 1em 1em 1em 3.5rem;
+        }
+
+        &__setting {
+          &.online {
+            background: url(../images/icon-online-black.svg) no-repeat left center;
+            background-size: 1.4em;
+          }
+
+          &.in-person {
+            background: url(../images/icon-building.svg) no-repeat left center;
+            background-size: 1.6em;
+          }
+        }
+
+        &__location {
+          background: url(../images/icon-pin.svg) no-repeat left center;
+          background-size: 1.4em;
+        }
+      }
     }
   }
 }
