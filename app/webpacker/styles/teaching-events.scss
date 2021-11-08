@@ -334,23 +334,26 @@
 
   .event-info {
     h2 {
-      @include font-size(medium);
+      @include font-size(large);
       padding: .5em;
-      margin-bottom: 1rem;
+      @include mq($from: tablet) {
+        margin-bottom: 2.5rem;
+      }
     }
 
     .event-summary {
       display: flex;
       flex-direction: column;
       padding-block: 2em;
+      gap: 3em;
 
       @include mq($from: tablet) {
         flex-direction: row;
         padding-block: 0em;
+        gap: 6em;
       }
 
       align-items: center;
-      gap: 2em;
 
       .about-ttt-event {
         position: relative;
