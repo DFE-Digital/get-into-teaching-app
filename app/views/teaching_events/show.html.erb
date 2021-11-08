@@ -1,60 +1,26 @@
 <div class="teaching-event">
 
   <header class="yellow">
+    <div class="breadcrumbs-and-heading">
+      <%= render Header::BreadcrumbComponent.new %>
+      <h1><%= @event.name %></h1>
+    </div>
 
-      <div class="breadcrumbs-and-heading">
-        <%= render Header::BreadcrumbComponent.new %>
-        <h1><%= @event.name %></h1>
-      </div>
+    <div class="event-details">
+      <%= render(partial: 'teaching_events/show/date-and-time') %>
+      <%= render(partial: 'teaching_events/show/location-and-setting') %>
+      <%= render(partial: 'teaching_events/show/register-button') if is_a_train_to_teach_event?(@event) %>
+    </div>
 
-      <div class="event-details">
+    <div class="image">
+      <%= image_pack_tag("media/images/content/hero-images/0017.jpg", alt: "A photograph of the venue", class: "event-info__venue_img") %>
+    </div>
 
-        <div class="date-and-time">
-          📅
-          <%= @event.start_at.to_formatted_s(:event) %>
-          at
-          <%= @event.start_at.to_formatted_s(:time) %> - <%= @event.end_at.to_formatted_s(:time) %>
-        </div>
-
-        <div class="location">
-          <% if @event.building.present? %>
-            <%= @event.building.venue %>
-            <%= @event.building.address_postcode %>
-          <% end %>
-
-          <% if @event.is_online %>
-            <div>
-              Online
-            </div>
-          <% end %>
-
-          <% if @event.is_virtual %>
-            <div>
-              Virtual
-            </div>
-          <% end %>
-        </div>
-
-        <% if is_a_train_to_teach_event?(@event) %>
-          <div class="register">
-            <%= link_to event_steps_path(@event.readable_id), class: %w[button button--black-chevron] do %>
-              Register your attendance
-            <% end %>
-          </div>
-        <% end %>
-
-      </div>
-
-      <div class="image">
-        <%= image_pack_tag("media/images/content/hero-images/0017.jpg", alt: "A photograph of the venue", class: "event-info__venue_img") %>
-      </div>
-
-      <div class="triangle yellow">
-        <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0,100 0,0 100,0" />
-        </svg>
-      </div>
-    </section>
+    <div class="triangle yellow">
+      <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="0,100 0,0 100,0" />
+      </svg>
+    </div>
   </header>
 
   <section class="event-info">
@@ -63,93 +29,15 @@
     <div class="event-summary">
 
       <% if is_a_train_to_teach_event?(@event) %>
-
-        <div class="about-ttt-event">
-          Watch presentations, ask questions, speak to advisers one-to-one.
-        </div>
-
-        <figure>
-          <blockquote>
-            Absolutely loved this day. Very informative, inspiring and I'm
-            excited to change career. Thank you.
-          </blockquote>
-          <figcaption>Sarah, trainee teacher, London</figcaption>
-        </figure>
+        <%= render(partial: 'teaching_events/show/train-to-teach-event-summary') %>
       <% else %>
-
-        <div class="about-event">
-          <%= tag.p(@event.summary, class: "leading") %>
-
-          <%= tag.div(safe_html_format(@event.description)) %>
-        </div>
-
+        <%= render(partial: 'teaching_events/show/event-summary') %>
       <% end %>
     </div>
   </section>
 
-  <section class="event-attributes">
-    <div class="event-attribute organisers">
-      <h3>Organisers</h3>
-
-      <p>DfE</p>
-    </div>
-
-    <div class="event-attribute price">
-      <h3>Price</h3>
-
-      <p>Free</p>
-    </div>
-
-    <div class="event-attribute event-type">
-      <h3>Event type</h3>
-
-      <p><%= event_type_name(@event.type_id) %></p>
-    </div>
-
-    <div class="event-attribute format">
-      <h3>Format</h3>
-
-      <p><%= event_format(@event) %></p>
-    </div>
-  </section>
-
-  <% if @event.building.present? %>
-    <section class="venue-information">
-      <div class="venue-information-summary">
-        <h3>Venue information</h3>
-
-        <p>
-          <%= @event.building.venue %>
-          <%= @event.building.address_postcode %>
-        </p>
-      </div>
-      <div class="venue-image">
-        <%= image_pack_tag "media/images/content/blog/seminar-room.jpg", alt: "A seminar with people sitting around a large table looking at a whiteboard" %>
-      </div>
-    </section>
-  <% end %>
-
-  <section class="what-theyre-saying">
-    <div class="triangle yellow">
-      <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0,100 100,0 100,100" />
-      </svg>
-    </div>
-    <div class="subheading">
-      <h3>What they're saying</h3>
-    </div>
-    <figure>
-      <blockquote>
-        Absolutely loved this day. Very informative, inspiring and I'm
-        excited to change career. Thank you.
-      </blockquote>
-      <figcaption>Sarah, trainee teacher, London</figcaption>
-    </figure>
-  </section>
-
-  <% if @event.scribble_id %>
-    <section class="scribble">
-      <div data-controller="scribble" data-scribble-id="<%= @event.scribble_id %>"></div>
-    </section>
-  <% end %>
+  <%= render(partial: "teaching_events/show/event-attributes") %>
+  <%= render(partial: "teaching_events/show/venue-information") if @event.building.present? %>
+  <%= render(partial: "teaching_evetns/show/scribble") if @event.scribble_id.present? %>
+  <%= render(partial: "teaching_events/show/what-theyre-saying") %>
 </div>

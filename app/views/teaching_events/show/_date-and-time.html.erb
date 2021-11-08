@@ -1,0 +1,6 @@
+<div class="date-and-time">
+  📅
+  <%= @event.start_at.to_formatted_s(:event) %>
+  at
+  <%= @event.start_at.to_formatted_s(:time) %> - <%= @event.end_at.to_formatted_s(:time) %>
+</div>
