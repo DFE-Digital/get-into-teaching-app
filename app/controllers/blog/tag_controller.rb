@@ -1,5 +1,9 @@
 class Blog::TagController < ApplicationController
+  include PaginatablePosts
+
   layout "layouts/blog/index"
+
+  POSTS_PER_PAGE = 10
 
   def show
     breadcrumb "Blog", blog_index_path
@@ -9,8 +13,7 @@ class Blog::TagController < ApplicationController
     }
 
     @tag = params[:id]
-
-    @posts = ::Pages::Blog.posts(@tag)
+    @posts = paginate_posts(::Pages::Blog.posts(@tag))
   end
 
 protected

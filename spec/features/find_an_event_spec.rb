@@ -90,14 +90,14 @@ RSpec.feature "Finding an event", type: :feature do
     expect(page).to have_css("h2", text: "Search for Train to Teach events")
 
     expect(page).to have_link("2", href: event_category_path(event_category_slug, page: 2, anchor: "event-category-list"))
-    expect(page).to have_link("Next ›", href: event_category_path(event_category_slug, page: 2, anchor: "event-category-list"))
+    expect(page).to have_link("Next page", href: event_category_path(event_category_slug, page: 2, anchor: "event-category-list"))
 
     # there are 11 events and 9 per page
     expect(page).to have_css(".event-box", count: 9)
 
     click_on("2")
     expect(page).to have_css(".event-box", count: 2)
-    expect(page).to have_link("‹ Prev", href: event_category_path(event_category_slug, anchor: "event-category-list"))
+    expect(page).to have_link("Previous page", href: event_category_path(event_category_slug, anchor: "event-category-list"))
   end
 
   scenario "Searching events within a category" do

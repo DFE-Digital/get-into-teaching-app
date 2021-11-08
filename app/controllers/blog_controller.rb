@@ -1,10 +1,12 @@
 class BlogController < ApplicationController
+  include PaginatablePosts
+
   layout "layouts/blog/index"
 
   def index
     @front_matter = { "title" => "Get Into Teaching Blog" }
 
-    @posts = ::Pages::Blog.posts
+    @posts = paginate_posts(::Pages::Blog.posts)
   end
 
   def show

@@ -1,4 +1,32 @@
 .blog {
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2 * $indent-amount;
+
+    a {
+      text-decoration: none;
+    }
+
+    .prev, .first {
+      padding-right: 8px;
+    }
+
+    .next, .last {
+      padding-left: 8px;
+    }
+
+    .page a, .current, .gap {
+      padding: 0 8px;
+    }
+
+    .current {
+      font-weight: bold;
+    }
+  }
+
   header
   {
     h1 {
