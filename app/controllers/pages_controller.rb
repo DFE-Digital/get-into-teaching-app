@@ -43,6 +43,8 @@ class PagesController < ApplicationController
     render_page(params[:page])
   end
 
+  # Avoid caching by rendering these pages manually:
+
   def funding_your_training
     @funding_widget =
       if params[:funding_widget].blank?
@@ -52,6 +54,14 @@ class PagesController < ApplicationController
       end
 
     render_page("funding-your-training")
+  end
+
+  def welcome
+    render_page("welcome")
+  end
+
+  def welcome_my_journey_into_teaching
+    render_page("welcome/my-journey-into-teaching")
   end
 
   def tta_service
