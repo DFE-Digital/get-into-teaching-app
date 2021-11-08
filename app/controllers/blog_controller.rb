@@ -20,6 +20,6 @@ class BlogController < ApplicationController
 protected
 
   def static_page_actions
-    %i[show index]
+    %i[show]
   end
 end

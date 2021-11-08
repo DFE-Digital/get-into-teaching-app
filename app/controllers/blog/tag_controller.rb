@@ -15,10 +15,4 @@ class Blog::TagController < ApplicationController
     @tag = params[:id]
     @posts = paginate_posts(::Pages::Blog.posts(@tag))
   end
-
-protected
-
-  def static_page_actions
-    %i[show]
-  end
 end
