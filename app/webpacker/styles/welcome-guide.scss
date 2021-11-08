@@ -1020,6 +1020,20 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   }
 
   article {
+    @include selected-quote($color: $pink, $size: small);
+
+    figure > blockquote {
+      font-weight: 500;
+
+      &.bigger {
+        @include font-size(medium);
+      }
+
+      &.last-on-page {
+        margin-bottom: 2em;
+      }
+    }
+
     max-width: 60ch;
     margin: 1em auto 0;
     padding: 1em;

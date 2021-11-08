@@ -111,12 +111,12 @@ module WelcomeContentHelper
   GENERIC = {
     video: "welcome-guide-generic.webm",
     story: {
-      name: "Helen",
-      job_title_and_location: "assistant headteacher, London",
+      name: "Abigail Beeley",
+      job_title_and_location: "head of maths, Wigan",
       subject: nil,
       image: "dimitra-desert-crop.jpg",
-      alt: "Assistant headteacher Helen",
-      text: "Meet Helen - find out how she went from trainee to Assistant Headteacher and what she's looking forward to next.",
+      alt: "Head of maths, Abigail Beeley",
+      text: "Meet Abigail - find out how she went from trainee to head of department and what she’s looking forward to next.",
     },
     quote: {
       headline: "It’s all about sparking curiosity and challenging young minds, inspiring them to really think about how the world works. You’ll be amazed at the questions students will start asking, all because of you.",
