@@ -27,4 +27,4 @@ A similar course is a PGDE, or ‘post graduate diploma in education’. A PGDE 
 
 If you want to teach in a state school in England, you will also need to get ‘qualified teacher status’ (QTS) alongside your PGCE or PGDE course.
 
-<a href="https://digital.ucas.com/search" class="button">Find out more about QTS</a>
+<a href="https:/what-is-qts" class="button">Find out more about QTS</a>
