@@ -30,4 +30,4 @@ As well as being a respected standard across the world, having QTS means you can
 
 Some PGCE or PGDE courses can award you QTS with your course. You can check the qualifications a course offers by [searching for postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
-<a class="button button--secondary" href="/ways-to-train">Discover the different ways to train</a>
+<a href="https://digital.ucas.com/search" class="button">Discover the different ways to train</a>
