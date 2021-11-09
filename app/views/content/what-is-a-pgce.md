@@ -1,5 +1,5 @@
 ---
-title: "What is a PGCE?"
+title: "PGCEs and PGDEs?"
 description: |-
   PGCEs and PGDEs are teacher training qualifications. Alongside QTS they enable you to teach in a state school in England.
 date: "2021-11-01"
