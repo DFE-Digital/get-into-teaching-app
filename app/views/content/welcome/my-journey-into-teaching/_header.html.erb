@@ -1,6 +1,9 @@
 <header class="case-study header blue">
   <div class="background"></div>
-  <%= image_pack_tag "media/images/content/welcome-guide/dimitra-desert-crop.jpg" %>
+  <%= image_pack_tag(
+    "media/images/content/welcome-guide/#{subject_specific_story_data[:image]}",
+    alt: subject_specific_story_data[:alt]
+  ) %>
   <div class="back">
     <%= link_to("/welcome") do %>
       &#8592; Back to welcome
