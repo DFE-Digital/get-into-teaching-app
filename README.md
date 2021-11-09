@@ -203,6 +203,3 @@ If a user does not require a role (site-wide authentication), the role credentia
 ```yaml
 username|password
 ```
-
-
-
