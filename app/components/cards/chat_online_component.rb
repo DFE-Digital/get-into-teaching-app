@@ -16,13 +16,8 @@ module Cards
 
     def snippet
       @snippet ||= <<~SNIPPET
-        If you have questions about getting into teaching, we can help you get
-        the answers
+        Chat online with one of our teacher training experts. They're available Monday-Friday between 8:30am and 5:30pm.
       SNIPPET
-    end
-
-    def link_text
-      @link_text ||= "Chat online"
     end
 
     def image

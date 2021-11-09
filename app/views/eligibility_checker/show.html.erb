@@ -37,10 +37,12 @@
           </div>
         </fieldset>
       </div>
-      <p>
-        Got different qualifications? We can help. <%= chat_link("Chat to us.", fallback_text: "Chat to us.") %>
-      <p>
       <button class="button">See results</button>
+      <p>
+        Got different qualifications? Chat to our teacher training experts online. They're available Monday-Friday between 8:30am and 5:30pm.
+
+        <%= render ChatComponent.new %>
+      <p>
     <% end %>
 
     <p class="eligibility-checker-disclaimer">These are minimum requirements, some courses will ask for more qualifications.</p>
