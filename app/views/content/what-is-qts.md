@@ -28,4 +28,4 @@ Some PGCE or PGDE courses can award you QTS. You can check the qualifications a 
 
 As well as being a respected standard across the world, having QTS means you can move around the country and teach in any state school.
 
-<a href="https://digital.ucas.com/search" class="button">Discover the different ways to train</a>
+<a href="/what-is-qts" class="button">Discover the different ways to train</a>
