@@ -2,7 +2,7 @@
 title: Being myself in the classroom
 date: "2020-10-15"
 images:
-  Olivia:
+  olivia:
     path: "media/images/content/blog/olivia.jpg"
     alt: "Olivia smiling in her home" 
 description: |-
