@@ -120,7 +120,7 @@ module WelcomeContentHelper
       subject: nil,
       thumbnail: "abigail-classroom-crop.jpg",
       image: "abigail-classroom.jpg",
-      alt: "Head of maths, Abigail",
+      alt: "Maths teacher Abigail standing in front of a brightly coloured classroom wall",
       text: "Meet Abigail - find out how she went from trainee to head of department and what she’s looking forward to next.",
     },
     quote: {
