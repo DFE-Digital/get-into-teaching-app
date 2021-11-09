@@ -3,7 +3,7 @@
   padding: 2rem 1rem 1rem;
 
   &::after {
-    @include font-size(large);
+    @include font-size(medium);
     position: absolute;
     content: "Train to Teach event";
     right: 1rem;
@@ -13,14 +13,6 @@
     background-position: .4em;
     font-weight: bold;
     padding: .4em .4em .4em 2em;
-
-    @include mq($from: mobile) {
-      @include font-size(medium);
-    }
-
-    @include mq($from: desktop) {
-      @include font-size(small);
-    }
   }
 }
 
