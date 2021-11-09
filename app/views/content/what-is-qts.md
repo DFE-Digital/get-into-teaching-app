@@ -20,7 +20,7 @@ keywords:
   - State-school
 ---
 
-Qualified teacher status, ‘QTS’, is what you need to teach in a state school in England. 
+Qualified teacher status (QTS) is what you need to teach in a state school in England. 
 
 It is not a course, but a confirmation that you have the right training and meet the standards required to be a teacher. 
 
