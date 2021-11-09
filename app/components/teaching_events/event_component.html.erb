@@ -11,9 +11,11 @@
         <%= link_to(title, teaching_event_path(slug)) %>
       </div>
 
-      <div class="event__info__location">
-        <%= location %>
-      </div>
+      <% if location.present? %>
+        <div class="event__info__location">
+          <%= location %>
+        </div>
+      <% end %>
 
       <%= tag.div(class: [setting_classes, "event__info__setting"]) do %>
         <%= setting %>
