@@ -5,6 +5,7 @@ author: Get Into Teaching
 images:
   notepad:
     path: "media/images/content/blog/notepad.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/notepad.jpg"
     alt: "Someone making notes with a pen on a pad while using a laptop"
 description: |-
   Applications for teacher training courses starting in 2022 open on 12 October, but there is plenty you can be doing right now to get ready.

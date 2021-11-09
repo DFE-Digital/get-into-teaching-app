@@ -4,6 +4,7 @@ date: "2021-04-22"
 images:
   header_image:
     path: "media/images/content/blog/schoolyard.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/schoolyard.jpg"
     alt: "A photograph of a school playground" 
 description: |-
   Experiencing life in a school and a classroom can help you to decide whether teaching is right for you.

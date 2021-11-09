@@ -5,6 +5,7 @@ date: "2021-09-17"
 images:
   cindy-ventura:
     path: "media/images/content/blog/cindy-ventura.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/cindy-ventura.jpg"
     alt: "Trainee teacher Cindy Ventura wearing a red polo shirt"
 description: |-
   Cindy recently started the Postgraduate Diploma in Education (PGDE) teacher training course at Sheffield University. She kept a diary during her first week on the course and shares her experiences here.

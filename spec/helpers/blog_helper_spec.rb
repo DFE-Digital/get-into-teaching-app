@@ -11,7 +11,8 @@ describe BlogHelper, type: "helper" do
     end
   end
 
-  describe "#first_image_from_post" do
+  describe "#thumbnail_image_from_post" do
+    let(:image_component) { class_double("Content::ImageComponent").as_stubbed_const }
     let(:images) do
       {
         "first" => { "path" => "one.jpg", "alt" => "a nice image" },
@@ -20,11 +21,21 @@ describe BlogHelper, type: "helper" do
     end
 
     specify "initializes an Content::ImageComponent with the attributes from the first image" do
-      image_component = class_double("Content::ImageComponent").as_stubbed_const
-
       expect(image_component).to receive(:new).with(path: "one.jpg", alt: "a nice image").and_return(inline: "doesn't matter")
 
-      first_image_from_post(images)
+      thumbnail_image_from_post(images)
+    end
+
+    context "when the first image has a thumbnail_path" do
+      before do
+        images["first"]["thumbnail_path"] = "thumbnail.jpg"
+      end
+
+      specify "initializes an Content::ImageComponent with the thumbnail_path" do
+        expect(image_component).to receive(:new).with(path: "thumbnail.jpg", alt: "a nice image").and_return(inline: "doesn't matter")
+
+        thumbnail_image_from_post(images)
+      end
     end
   end
 end

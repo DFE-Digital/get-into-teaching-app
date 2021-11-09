@@ -1,125 +1,131 @@
-.blog-tags-list {
-  &--grey {
-    background-color: $grey;
+.blog {
+  .pagination {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2 * $indent-amount;
+
+    a {
+      text-decoration: none;
+    }
+
+    .prev, .first {
+      padding-right: 8px;
+    }
+
+    .next, .last {
+      padding-left: 8px;
+    }
+
+    .page a, .current, .gap {
+      padding: 0 8px;
+    }
+
+    .current {
+      font-weight: bold;
+    }
   }
 
-  &--padded {
-    padding: .5em 1.5em 1em;
-    margin-bottom: 1.5em;
+  header
+  {
+    h1 {
+      @include font-size(large);
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
-  @include mq($from: tablet) {
-    width: 100%;
-  }
-
-  h2 {
-    @include font-size(medium);
+  hr, header p {
+    margin-top: 2 * $indent-amount;
   }
 
   ol {
+    padding-left: 0;
+    list-style: none;
+  }
+
+  aside {
+    padding: 0 $indent-amount;
+
+    @include mq($from: tablet) {
+      padding: 0;
+
+      hr {
+        display: none;
+      }
+    }
+
+    > div {
+      margin-bottom: $indent-amount;
+    }
+
+    .blog-highlights li {
+      margin-top: .4em;
+    }
+  }
+
+  .blog-tags {
     display: flex;
     flex-wrap: wrap;
-    list-style: none;
-    gap: .4em;
+    grid-gap: .8em;
+    gap: .8em;
     margin: 0;
-    padding-left: 0;
 
     li {
-      background-color: $blue;
-      color: $white;
-      font-weight: bold;
-
-      @include font-size(xsmall, $adjust: .2rem);
+      background-color: $grey;
 
       a {
         display: block;
-        color: $white;
-        padding: .4em .6em;
-
-        &:focus {
-          color: $black;
-        }
-      }
-
-      &:hover {
-        background-color: lighten($blue, 5%);
-      }
-    }
-
-    // FIXME: this can go once Safari supports gap in flex
-    @include safari-only {
-      li + li {
-        margin-left: .4em;
+        padding: .4em .8em;
+        @include dark-link;
       }
     }
   }
-}
 
-.blog {
-  $blog-content-width: 65ch;
+  .blog-index {
+    margin-top: 0;
 
-  margin-bottom: 4em;
+    li:last-child hr {
+      display: none;
+    }
+  }
 
-  ol.blog-index {
-    list-style: none;
-    padding-left: 0;
+  .blog-article {
+    @include mq($from: tablet) {
+      > div {
+        display: flex;
 
-    li {
+        header {
+          flex-grow: 1;
+        }
+
+        img {
+          width: 170px;
+        }
+      }
+    }
+
+    header {
       h2 {
-        @include font-size(large);
-        @include reset;
-      }
-
-      header {
-        border-bottom: 0;
-        padding-bottom: 0;
-        margin-bottom: 2em;
-      }
-
-      article {
+        padding: 0;
         margin-bottom: 0;
       }
 
-      [role="doc-subtitle"] {
-        @include font-size(small);
+      .published-date {
+        margin-top: $indent-amount;
       }
     }
 
-    li + li {
-      margin-top: 2em;
-      padding-top: 1.5em;
-      border-top: 1px solid $grey;
+    img {
+      width: 100%;
     }
   }
 
-  header {
-    padding-bottom: 2em;
-    margin-bottom: 2em;
-
-    h1 {
-      margin-bottom: 0;
+  footer {
+    h2, h3 {
+      padding-left: 0;
     }
-
-    &.list-header {
-      border-bottom: 0;
-      margin-bottom: 0;
-
-      h1 {
-        margin: 0;
-      }
-    }
-  }
-
-  h1 {
-    @include font-size(large);
-  }
-
-  picture > img {
-    max-width: $blog-content-width;
-  }
-
-  p {
-    max-width: $blog-content-width;
   }
 
   blockquote {
@@ -175,46 +181,14 @@
     }
   }
 
-  @include mq($until: tablet) {
-    img {
-      width: 100%;
+  @include mq($from: tablet) {
+    .text-content.longform {
+      padding-right: 1.5em;
+      box-sizing: border-box;
+
+      &.with-aside {
+        border-right: 1px solid $grey-mid;
+      }
     }
-  }
-
-  .footnotes {
-    border-top: 1px solid $grey;
-    margin-top: 2em;
-    padding: 1em;
-    color: darken($grey-dark, 5%); // nudge to AAA
-  }
-
-  footer {
-    margin-top: 4em;
-    border-top: 1px solid $grey;
-    padding-top: 1em;
-
-    h2,
-    h3 {
-      padding-left: 0;
-    }
-
-    h3 {
-      margin: 2em 0 .5em;
-    }
-  }
-
-  [role="doc-subtitle"] {
-    margin: 0;
-    color: $grey-dark;
-    @include font-size(medium);
-  }
-
-  &__date {
-    margin-top: .5rem;
-  }
-
-  &__date,
-  &__author {
-    @include font-size(xsmall);
   }
 }

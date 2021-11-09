@@ -5,6 +5,7 @@ author: Mel O'Connor
 images:
   mel_oconnor:
     path: "media/images/content/blog/mel-oconnor.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/mel-oconnor.jpg"
     alt: "A photograph of PGDE trainee Mel O'Connor"
   mel_stta_screen:
     path: "media/images/content/blog/mel-stta-screen.jpg"

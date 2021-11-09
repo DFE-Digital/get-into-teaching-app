@@ -8,15 +8,14 @@
 
     <main id="main-content">
       <section class="container blog">
-        <header class="list-header">
-          <%= tag.h1(@front_matter["title"]) %>
-        </header>
-
-        <%= yield :popular_tags %>
-
-        <div class="text-content longform">
+        <%= render(partial: "blog/header", locals: { mobile: true }) %>
+        <aside>
+          <%= yield :aside %>
+        </aside>
+        <article class="text-content longform<%= " with-aside" if content_for?(:aside) %>">
+          <%= render(partial: "blog/header", locals: { mobile: false }) %>
           <%= yield %>
-        </div>
+        </article>
       </section>
     </main>
 
