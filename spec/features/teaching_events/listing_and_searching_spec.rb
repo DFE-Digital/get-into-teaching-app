@@ -48,6 +48,20 @@ RSpec.feature "Searching for teaching events", type: :feature do
         expect(page).to have_css(".teaching-events__events--regular > ol > li", count: event_count)
       end
     end
+
+    context "when there's more than one page of events" do
+      let(:event_count) { 20 }
+
+      scenario "pagination links should be visible" do
+        visit teaching_events_path
+
+        expect(page).to have_css(".pagination")
+
+        click_on "2"
+
+        expect(page).to have_current_path("/teaching-events?page=2")
+      end
+    end
   end
 
   describe "page contents when there's one of each kind of event" do

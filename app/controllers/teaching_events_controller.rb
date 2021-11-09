@@ -3,7 +3,9 @@ class TeachingEventsController < ApplicationController
 
   before_action :setup_filter, only: :index
 
-  FEATURED_EVENT_COUNT = 2
+  FEATURED_EVENT_COUNT = 2 # 2 featured events max on the first page
+  EVENT_COUNT = 15 # 15 regular ones per page
+
   FEATURED_EVENT_TYPES = [
     222_750_001, # Train to teach
     222_750_007, # Question time
@@ -19,7 +21,7 @@ class TeachingEventsController < ApplicationController
 
       # featured events will go in a special grey box
       @featured_events = all_events.select { |e| e.type_id.in?(FEATURED_EVENT_TYPES) }.first(FEATURED_EVENT_COUNT)
-      @events = all_events - @featured_events
+      @events = Kaminari.paginate_array(all_events - @featured_events).page(params[:page]).per(EVENT_COUNT)
     else
       @featured_events = []
       @events = []
