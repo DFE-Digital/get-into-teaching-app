@@ -6,6 +6,10 @@
 
   a {
     @include dark-link;
+
+    &.git-link {
+      color: $black;
+    }
   }
 
   @include mq($until: tablet) {
