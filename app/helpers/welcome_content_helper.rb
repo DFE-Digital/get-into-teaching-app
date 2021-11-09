@@ -114,7 +114,7 @@ module WelcomeContentHelper
       name: "Abigail",
       job_title_and_location: "head of maths, Wigan",
       subject: nil,
-      image: "dimitra-desert-crop.jpg",
+      image: "abigail-classroom-crop.jpg",
       alt: "Head of maths, Abigail",
       text: "Meet Abigail - find out how she went from trainee to head of department and what she’s looking forward to next.",
     },
