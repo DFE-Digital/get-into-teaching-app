@@ -111,11 +111,11 @@ module WelcomeContentHelper
   GENERIC = {
     video: "welcome-guide-generic.webm",
     story: {
-      name: "Abigail Beeley",
+      name: "Abigail",
       job_title_and_location: "head of maths, Wigan",
       subject: nil,
       image: "dimitra-desert-crop.jpg",
-      alt: "Head of maths, Abigail Beeley",
+      alt: "Head of maths, Abigail",
       text: "Meet Abigail - find out how she went from trainee to head of department and what she’s looking forward to next.",
     },
     quote: {
