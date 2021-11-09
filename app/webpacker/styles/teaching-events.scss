@@ -27,6 +27,9 @@
 .teaching-events {
   h1 {
     margin: 1rem;
+    background: $yellow;
+    display: inline-block;
+    padding: .4rem;
 
     @include mq($from: desktop) {
       padding: 1rem;
