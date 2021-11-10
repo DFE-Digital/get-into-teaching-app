@@ -42,6 +42,19 @@ class PagesController < ApplicationController
     render_page(params[:page])
   end
 
+  # TEMP: routes to try an A/B test in production
+  def temp_test_a
+    response.headers["X-Robots-Tag"] = "noindex"
+
+    render_page("steps-to-become-a-teacher")
+  end
+
+  def temp_test_b
+    response.headers["X-Robots-Tag"] = "noindex"
+
+    render_page("ways-to-train")
+  end
+
   def funding_your_training
     @funding_widget =
       if params[:funding_widget].blank?
