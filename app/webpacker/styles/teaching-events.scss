@@ -1,4 +1,4 @@
-@mixin train-to-teach-event-box {
+@mixin train-to-teach-event-box($small: false) {
   border: 2px solid $pink;
   padding: 2rem 1rem 1rem;
 
@@ -13,6 +13,12 @@
     background-position: .4em;
     font-weight: bold;
     padding: .4em .4em .4em 2em;
+
+    @if $small {
+      @include mq($from: tablet) {
+        @include font-size(small);
+      }
+    }
   }
 }
 
@@ -510,7 +516,7 @@
 
       .about-ttt-event {
         position: relative;
-        @include train-to-teach-event-box;
+        @include train-to-teach-event-box($small: true);
 
         flex-basis: 40%;
       }
