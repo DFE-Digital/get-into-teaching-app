@@ -159,16 +159,16 @@ body > header nav {
         }
 
         a {
-          padding: 1em .2em 0;
-          border-bottom: 2px solid $white;
-
           &:hover {
             border-bottom: 2px solid $black;
           }
         }
 
-        div {
-	        line-height: 1.5;
+        a, div {
+          line-height: 1.2;
+          display: inline-block;
+          padding: 1em .2em 0;
+          border-bottom: 2px solid $white;
         }
       }
     }
