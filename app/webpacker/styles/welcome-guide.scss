@@ -308,7 +308,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
-    @mixin teaching-maths-is-so-rewarding-layout {
+    @mixin teaching-is-so-rewarding-layout {
       grid-template-rows: repeat(6, minmax(5em, max-content));
       grid-template-columns: 1fr;
       padding-bottom: 0;
@@ -328,8 +328,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
-    &.teaching-maths-is-so-rewarding {
-      @include teaching-maths-is-so-rewarding-layout;
+    &.teaching-is-so-rewarding {
+      @include teaching-is-so-rewarding-layout;
 
       display: grid;
 
@@ -537,6 +537,10 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         @include mq($from: desktop) {
           margin-top: 250px
         }
+
+        article > p {
+          @include font-size(medium);
+        }
       }
 
       .featured-stories {
@@ -610,6 +614,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
 
         p {
+          @include font-size(medium);
+
           margin-right: 2em;
         }
       }
@@ -774,10 +780,14 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           display: inline-block;
         }
 
-        p.leading {
-          @include font-size(large);
-          font-weight: bold;
-          margin: .3rem 0;
+        p {
+          @include font-size(medium);
+
+          &.leading {
+            @include font-size(large);
+            font-weight: bold;
+            margin: .3rem 0;
+          }
         }
       }
     }
