@@ -26,6 +26,10 @@ html:not(.js-enabled) {
     margin-top: 0;
   }
 
+  > .container {
+    margin-top: 0;
+  }
+
   .content {
     width: 100%;
     display: flex;
