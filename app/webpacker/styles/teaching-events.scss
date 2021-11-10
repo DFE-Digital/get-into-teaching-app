@@ -184,8 +184,31 @@
     }
 
     &__meta {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-bottom: 1em;
+
+      picture {
+        align-self: baseline;
+      }
+
       img {
         width: 100%;
+      }
+
+      .dfelogo {
+        max-height: 6em;
+
+        @include mq($from: tablet) {
+          width: 60%;
+        }
+      }
+
+      @include mq($from: tablet) {
+        picture {
+          align-self: auto;
+        }
       }
     }
 
@@ -193,10 +216,6 @@
       display: flex;
       overflow: clip;
       align-items: center;
-
-      &--left,
-      &--right {
-      }
 
       &--left {
         @include font-size(xsmall);
@@ -231,11 +250,15 @@
       &--left {
         display: flex;
         flex-direction: column;
+        flex: 1 0 60%;
       }
 
       &--right{
         display: flex;
         flex-direction: column;
+        justify-items: center;
+        padding: 1em;
+        flex: 0 1 40%;
       }
     }
 

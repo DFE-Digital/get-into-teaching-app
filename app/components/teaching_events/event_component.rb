@@ -20,6 +20,10 @@ module TeachingEvents
       type.in?([222_750_001, 222_750_007])
     end
 
+    def school_and_university?
+      type == 222_750_009
+    end
+
     def setting
       if @online || @virtual
         "Online"

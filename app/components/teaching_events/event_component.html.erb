@@ -24,6 +24,8 @@
 
     <div class="event__meta">
       <%= image_pack_tag "media/images/content/welcome-guide/jack-rowing-crop-face.jpg" %>
+
+      <%= image_pack_tag "media/images/dfelogo-black.svg", class: "dfelogo", alt: "This is an official Department for Education event" %>
     </div>
 
   <% else %>
@@ -56,6 +58,12 @@
           <%= setting %>
         <% end %>
       </div>
+
+      <% unless school_and_university? %>
+        <div class="event__bottom-bar--right">
+          <%= image_pack_tag "media/images/dfelogo-black.svg", class: "dfelogo", alt: "This is an official Department for Education event" %>
+        </div>
+      <% end %>
     </div>
   <% end %>
 </li>
