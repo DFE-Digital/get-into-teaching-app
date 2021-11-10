@@ -25,7 +25,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       within(".event-info > .event-summary") do
         expect(page).to have_css(".about-ttt-event", text: /Watch presentations, ask questions/)
-        expect(page).to have_css("figure", text: "Absolutely loved this day")
+        expect(page).to have_css("figure", text: "It was exactly what I needed")
 
         expect(page).not_to have_css(".about-event")
       end
