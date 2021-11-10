@@ -36,7 +36,7 @@
           <p>If you're unsure about whether you qualify for a bursary or
           scholarship you can chat to us, or call us on <a href="tel:08003892500">0800 389 2500</a>.</p>
 
-          <p>Open Monday-Friday between 8:30am and 5:30pm.</p>
+          <p>Open Monday to Friday between 8:30am and 5:30pm.</p>
     get-school-experience:
       name: simple
       arguments:

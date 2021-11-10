@@ -16,7 +16,7 @@ module Cards
 
     def snippet
       @snippet ||= <<~SNIPPET
-        Chat online with one of our teacher training experts. They're available Monday-Friday between 8:30am and 5:30pm.
+        Chat online with one of our teacher training experts. They're available Monday to Friday between 8:30am and 5:30pm.
       SNIPPET
     end
 
