@@ -117,7 +117,7 @@ Choose referees who could comment on things like your:
 * transferable skills
 * academic skills
 
-Your referee will aslo be asked if they know of any reason why you should not work with children.
+Your referee will also be asked if they know of any reason why you should not work with children.
 
 Ideal referees could include:
 
