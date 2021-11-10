@@ -287,6 +287,7 @@
         &__name,
         &__setting {
           padding-left: 3rem;
+          min-height: 2em;
         }
 
         &__date-and-time {
@@ -294,7 +295,13 @@
           background-size: 2em;
         }
 
-        // &__name {}
+        &__name {
+          min-height: 4rem;
+
+          @include mq($from: tablet) {
+            min-height: initial;
+          }
+        }
 
         &__setting {
           background-size: 2.4em;

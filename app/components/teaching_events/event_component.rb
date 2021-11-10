@@ -3,14 +3,15 @@ module TeachingEvents
     attr_reader :title, :type, :slug
 
     def initialize(event:)
-      @event    = event
-      @title    = event.name
-      @type     = event.type_id
-      @online   = event.is_online
-      @virtual  = event.is_virtual
-      @start_at = event.start_at
-      @end_at   = event.end_at
-      @slug     = event.readable_id
+      @event     = event
+      @title     = event.name
+      @type      = event.type_id
+      @online    = event.is_online
+      @virtual   = event.is_virtual
+      @in_person = event.building.present?
+      @start_at  = event.start_at
+      @end_at    = event.end_at
+      @slug      = event.readable_id
 
       super
     end
@@ -24,20 +25,12 @@ module TeachingEvents
       type == 222_750_009
     end
 
-    def setting
-      if @online || @virtual
-        "Online"
-      else
-        "In person"
-      end
+    def online?
+      @online || @virtual
     end
 
-    def setting_classes
-      if @online || @virtual
-        "online"
-      else
-        "in-person"
-      end
+    def in_person?
+      @in_person
     end
 
     def event_type

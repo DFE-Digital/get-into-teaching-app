@@ -17,8 +17,16 @@
         </div>
       <% end %>
 
-      <%= tag.div(class: [setting_classes, "event__info__setting"]) do %>
-        <%= setting %>
+      <% if in_person? %>
+        <%= tag.div(class: %w[event__info__setting in-person]) do %>
+          In person
+        <% end %>
+      <% end %>
+
+      <% if online? %>
+        <%= tag.div(class: %w[event__info__setting online]) do %>
+          Online
+        <% end %>
       <% end %>
     </div>
 
@@ -54,8 +62,17 @@
             <%= location %>
           </div>
         <% end %>
-        <%= tag.div(class: [setting_classes, "event__bottom-bar--left__setting"]) do %>
-          <%= setting %>
+
+        <% if in_person? %>
+          <%= tag.div(class: %w[event__bottom-bar--left__setting in-person]) do %>
+            In person
+          <% end %>
+        <% end %>
+
+        <% if online? %>
+          <%= tag.div(class: %w[event__bottom-bar--left__setting online]) do %>
+            Online
+          <% end %>
         <% end %>
       </div>
 
