@@ -648,9 +648,9 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         @mixin question-decoration($content) {
           content: $content;
           position: absolute;
-          margin-left: -2em;
+          margin-left: -2rem;
           font-weight: bold;
-          font-size: 1.2em;
+          font-size: 1.2rem;
         }
 
         .intro {
@@ -681,6 +681,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           }
 
           .a {
+            margin: 0;
+
             figcaption,
             blockquote {
               @include reset;
