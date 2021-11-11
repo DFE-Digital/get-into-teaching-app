@@ -83,6 +83,8 @@ gem "better_html"
 
 gem "dfe_wizard", github: "DFE-Digital/dfe_wizard"
 
+gem "rack-host-redirect"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem "byebug", platforms: %i[mri mingw x64_mingw]

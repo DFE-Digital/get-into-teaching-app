@@ -56,7 +56,6 @@ Rails.application.configure do
     "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
   config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence || \
     Rails.application.credentials.google_maps_key.presence
-  config.x.enable_beta_redirects = false
 
   config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence || \
     Rails.application.credentials.basic_auth_credentials.presence

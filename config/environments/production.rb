@@ -108,7 +108,6 @@ Rails.application.configure do
     "https://get-into-teaching-api-prod.london.cloudapps.digital/api"
   config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence || \
     Rails.application.credentials.google_maps_key.presence
-  config.x.enable_beta_redirects = true
 
   config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence || \
     Rails.application.credentials.basic_auth_credentials.presence
@@ -144,4 +143,9 @@ Rails.application.configure do
   config.x.legacy_tracking_pixels = true
 
   config.x.covid_banner = false
+
+  # Ensure beta redirect happens before static page cache.
+  config.middleware.insert_before ActionDispatch::Static, Rack::HostRedirect, {
+    "beta-getintoteaching.education.gov.uk" => "getintoteaching.education.gov.uk",
+  }
 end
