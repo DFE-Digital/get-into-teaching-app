@@ -67,10 +67,16 @@ describe TeachingEvents::EventComponent, type: "component" do
     end
 
     describe "#in_person?" do
-      context "when the event is a school and university event" do
-        let(:event) { build(:event_api, :virtual) }
+      context "when the event has a location" do
+        let(:event) { build(:event_api) }
 
-        it { expect(subject).to be_online }
+        it { expect(subject).to be_in_person }
+      end
+
+      context "when the event has no location" do
+        let(:event) { build(:event_api, :no_location) }
+
+        it { expect(subject).not_to be_in_person }
       end
     end
 
