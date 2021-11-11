@@ -6,13 +6,11 @@
     </svg>
   </div>
 
-  <%= image_pack_tag "media/images/content/hero-images/0014.jpg" %>
+  <%= tag.video(controls: true, src: subject_specific_video_path) %>
 
-  <h1>
+  <div class="main-heading">
     <div class="caption caption-l">
-      <span class="purple">
-        Hi Simon.
-      </span>
+      <%= tag.span(greeting, class: "purple") %>
     </div>
 
     <div class="caption caption-m">
@@ -21,14 +19,14 @@
       </span>
     </div>
 
-    <div class="caption welcome-to-teaching">
+    <h1 class="caption welcome-to-teaching-text">
       <span class="purple no-wrap">
         Welcome to
       </span>
 
       <span class="purple"><span class="underline">Teaching</span>.</span>
-    </div>
-  </h1>
+    </h1>
+  </div>
 
   <div class="arrow-container mobile">
     <%=

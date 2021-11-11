@@ -48,11 +48,13 @@ describe MailingList::Wizard do
       allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
         receive(:add_mailing_list_member).with(request)
       allow(Rails.logger).to receive(:info)
+      allow(wizardstore).to receive(:prune!).and_call_original
       subject.complete!
     end
 
     it { is_expected.to have_received(:valid?) }
     it { expect(store[uuid]).to eql({ "first_name" => "Joe", "last_name" => "Joseph" }) }
+    it { expect(wizardstore).to have_received(:prune!).with({ leave: MailingList::Wizard::ATTRIBUTES_TO_LEAVE }).once }
 
     it "logs the request model (filtering sensitive attributes)" do
       filtered_json = { "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]" }.to_json

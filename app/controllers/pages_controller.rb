@@ -8,6 +8,7 @@ class PagesController < ApplicationController
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
 
+  before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && request.query_parameters.any? }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
   PAGE_LAYOUTS = [
@@ -55,6 +56,8 @@ class PagesController < ApplicationController
     render_page("ways-to-train")
   end
 
+  # Avoid caching by rendering these pages manually:
+
   def funding_your_training
     @funding_widget =
       if params[:funding_widget].blank?
@@ -64,6 +67,14 @@ class PagesController < ApplicationController
       end
 
     render_page("funding-your-training")
+  end
+
+  def welcome
+    render_page("welcome")
+  end
+
+  def welcome_my_journey_into_teaching
+    render_page("welcome/my-journey-into-teaching")
   end
 
   def tta_service
@@ -97,6 +108,10 @@ private
 
   def funding_widget_params
     params.require(:funding_widget).permit(:subject)
+  end
+
+  def set_welcome_guide_info
+    session["welcome_guide"] = request.query_parameters.slice("preferred_teaching_subject_id", "degree_status_id")
   end
 
   def page_layout

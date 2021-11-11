@@ -65,32 +65,42 @@
     </article>
   </div>
 
-  <div class="carrousel">
-    <div class="items">
-      <div class="item">
-        <%= image_pack_tag("media/images/content/welcome-guide/jack-rowing-crop.jpg", class: "tilt-right") %>
+  <ul class="featured-stories">
+    <li>
+      <%= image_pack_tag("media/images/content/welcome-guide/jack-rowing-crop.jpg", class: "tilt-right", alt: "PE teacher Jack in a rowing boat") %>
 
-        <div class="caption">
-          <p>
-            Jack is a PE teacher from Leeds, with a passion for opening up conversations around mental health in schools.
-          </p>
+      <h3>Jack</h3>
 
-          <a class="button" href="/welcome/bring-your-lessons-to-life">Read Jack's story</a>
-        </div>
-      </div>
-    </div>
+      <p>
+        Jack is a PE teacher from Leeds, with a passion for opening up
+        conversations around mental health in schools.
+      </p>
 
-    <div class="controls">
-      <ul>
-        <li class="current">●</li>
+      <%= link_to "Read Jack's story", "/welcome/jacks-story", class: "button" %>
+    </li>
+    <li>
+      <%= image_pack_tag("media/images/content/welcome-guide/yvonne-photoshoot-crop.jpg", class: "tilt-left", alt: "English teacher Yvonne standing in front of a brightly painted wall") %>
 
-        <% 2.times do %>
-          <li>●</li>
-        <% end %>
+      <h3>Yvonne</h3>
 
-        <li class="arrow grey">&larr;</li>
-        <li class="arrow">&rarr;</li>
-      </ul>
-    </div>
-  </div>
+      <p>
+        Yvonne is an English teacher in London. She uses her love of rap music
+        to engage and inspire her students.
+      </p>
+
+      <%= link_to "Read Yvonne's story", "/welcome/yvonnes-story", class: "button" %>
+    </li>
+    <li>
+      <%= image_pack_tag("media/images/content/welcome-guide/andrew-in-school-crop.jpg", class: "tilt-right", alt: "Food and technology teacher Andrew") %>
+
+      <h3>Andrew</h3>
+
+      <p>
+        Andrew is a food technology teacher from Birmingham who uses cooking to
+        teach teenagers important life lessons.
+      </p>
+
+      <%= link_to "Read Andrew's story", "/welcome/andrews-story", class: "button" %>
+    </li>
+  </ul>
 </section>

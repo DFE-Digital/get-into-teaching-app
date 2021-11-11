@@ -131,8 +131,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       grid-template-rows: max-content $mobile-overlap-amount max-content $mobile-overlap-amount 1em;
 
       .background { grid-area: 1 / 1 / 5 / 2; }
-      h1 { grid-area: 1 / 1 / 2 / 2; }
-      picture { grid-area: 2 / 1 / 4 / 2; }
+      .main-heading { grid-area: 1 / 1 / 2 / 2; }
+      video { grid-area: 2 / 1 / 4 / 2; }
       .triangle { grid-area: 5 / 1 / 6 / 2; }
 
       @include mq($from: desktop) {
@@ -141,8 +141,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
         .background { grid-area: 1 / 1 / 4 / 4; }
         .triangle { grid-area: 4 / 1 / 5 / 4; }
-        h1 { grid-area: 1 / 1 / 3 / 3; }
-        picture { grid-area: 2 / 2 / 6 / 4; }
+        .main-heading { grid-area: 1 / 1 / 3 / 3; }
+        video { grid-area: 2 / 2 / 6 / 4; }
       }
     }
 
@@ -180,10 +180,11 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         z-index: map-get($z-indices, "medium");
       }
 
-      h1 {
+      .main-heading {
         @include font-size(xxxlarge);
         z-index: map-get($z-indices, "high");
         margin: .4rem 0 0 .4em;
+        font-weight: bold;
 
         .underline {
           @include underline;
@@ -207,10 +208,21 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           padding: .3rem .6rem;
         }
 
-        .welcome-to-teaching {
+        .welcome-to-teaching-text {
+          display: flex;
+          flex-direction: column;
+          align-items: baseline;
+
+          @include font-size(xxxlarge);
+
           .purple {
             padding-bottom: .5em;
+
+            &.no-wrap {
+              max-height: .8em;
+            }
           }
+
         }
 
         @include mq($from: desktop) {
@@ -218,13 +230,16 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
       }
 
-      picture {
+      video {
         z-index: map-get($z-indices, "medium");
 
-        img {
-          width: 100%;
-          max-height: 24em;
-          object-fit: cover;
+        width: 80%;
+        max-height: 24em;
+        object-fit: cover;
+        margin-inline: auto;
+
+        @include mq($from: desktop) {
+          margin-inline: 0;
         }
       }
 
@@ -293,7 +308,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
-    @mixin teaching-maths-is-so-rewarding-layout {
+    @mixin teaching-is-so-rewarding-layout {
       grid-template-rows: repeat(6, minmax(5em, max-content));
       grid-template-columns: 1fr;
       padding-bottom: 0;
@@ -313,8 +328,8 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
-    &.teaching-maths-is-so-rewarding {
-      @include teaching-maths-is-so-rewarding-layout;
+    &.teaching-is-so-rewarding {
+      @include teaching-is-so-rewarding-layout;
 
       display: grid;
 
@@ -405,7 +420,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       @include mq($from: desktop) {
         grid-template-rows: repeat(3, minmax(3em, max-content)) 2em repeat(3, minmax(3em, max-content));
-        grid-template-columns: 15em repeat(3, 1fr) 3em;
+        grid-template-columns: 15em 1fr 3em 1fr 3em;
 
         .section-number { grid-area: 2 / 1 / 3 / 3; }
         picture { grid-area: 1 / 3 / 4 / 5; }
@@ -465,10 +480,9 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     @mixin bringing-your-lesson-to-life-layout {
       grid-template-rows: repeat(2, minmax(2em, max-content)) 2em minmax(2em, max-content);
       grid-template-columns: 1fr;
-      padding-bottom: 0;
 
       .text { grid-area: 2 / 1 / 4 / 2; }
-      .carrousel { grid-area: 3 / 1 / 5 / 2; }
+      .featured-stories { grid-area: 3 / 1 / 5 / 2; }
 
       @include mq($from: desktop) {
         grid-template-rows: minmax(3em, max-content) 3em minmax(3em, max-content);
@@ -476,12 +490,14 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
         .section-number { grid-area: 1 / 1 / 2 / 2; }
         .text { grid-area: 1 / 3 / 3 / 4; }
-        .carrousel { grid-area: 2 / 1 / 4 / 4; }
+        .featured-stories { grid-area: 2 / 1 / 4 / 4; }
       }
     }
 
     &.bringing-your-lessons-to-life {
+      $accessible-purple: lighten($purple, 5%);
       @include bringing-your-lesson-to-life-layout;
+      padding-bottom: 8em;
 
       display: grid;
 
@@ -499,7 +515,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
 
       .purple {
-        background: $purple;
+        background: $accessible-purple;
         padding: .3rem .6rem;
       }
 
@@ -507,7 +523,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         text-align: right;
 
         svg.arrow {
-          stroke: $purple;
+          stroke: $accessible-purple;
         }
 
         &.desktop {
@@ -521,102 +537,44 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         @include mq($from: desktop) {
           margin-top: 250px
         }
+
+        article > p {
+          @include font-size(medium);
+        }
       }
 
-      .carrousel {
-        margin-top: 1rem;
-        gap: 2em;
-        flex-direction: column;
-        padding: 0 4em;
+      .featured-stories {
+        list-style: none;
+        margin: 1em 3em 0;
+        padding: 0;
 
-        .items {
-          display: flex;
-          @include mq($from: desktop) {
-            flex-direction: row;
-            flex-wrap: wrap;
-          }
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 6em;
+        column-gap: 2em;
 
-          .item {
-            display: flex;
-            flex-direction: column;
-            @include mq($from: desktop) {
-              width: 40em;
-            }
+        li {
+          flex: 0 1 30%;
 
-            .caption {
-              margin: 2em 1em;
+          picture {
+            img {
+              max-width: 16em;
 
-              @include mq($from: desktop) {
-                margin: 2em 4em;
-              }
-            }
-
-            picture {
-              flex-grow: 1;
-              display: flex;
-              width: 100%;
-              margin: 0;
-
-              img {
-                z-index: map-get($z-indices, "bottom");
-                position: relative;
-                overflow: hidden;
-                object-fit: cover;
-                align-self: flex-end;
-                width: 90%;
-                margin: 0 auto;
-
-                &.tilt-left {
-                  transform: rotate(3deg);
-                }
-
-                &.tilt-right {
-                  transform: rotate(-3deg);
-                }
-              }
-            }
-          }
-        }
-
-        .controls {
-          $slightly-dark-grey: darken($grey, 15%);
-
-          margin-left: 2em;
-          ul {
-            display: flex;
-            align-items: center;
-
-            list-style: none;
-            li {
-              color: $slightly-dark-grey;
-              display: inline;
-              @include font-size(medium);
-
-              &.current {
-                color: $purple;
+              &.tilt-right {
+                transform: rotate(2deg);
               }
 
-              &.arrow {
-                @include font-size(xxlarge);
-                color: $black;
-                margin-left: .1em;
-
-                &.grey {
-                  margin-left: 1em;
-                  color: $slightly-dark-grey;
-                }
+              &.tilt-left {
+                transform: rotate(-2deg);
               }
-            }
-
-            li + li {
-              margin-left: .5em;
             }
           }
         }
       }
     }
 
-    @mixin got-questions-layout {
+    @mixin youre-not-the-only-one-with-questions-layout {
       grid-template-columns: 1fr;
       padding-bottom: 0;
 
@@ -631,14 +589,19 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
-    &.got-questions {
-      @include got-questions-layout;
+    &.youre-not-the-only-one-with-questions {
+      @include youre-not-the-only-one-with-questions-layout;
 
       display: grid;
 
       h2,
-      p {
-        margin: 1rem;
+      p,
+      figure {
+        margin-block: .2em;
+
+        @include mq($from: desktop) {
+          margin: .3rem 1rem;
+        }
       }
 
       .text {
@@ -648,6 +611,12 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           position: relative;
           z-index: map-get($z-indices, "high");
           display: inline-block;
+        }
+
+        p {
+          @include font-size(medium);
+
+          margin-right: 2em;
         }
       }
 
@@ -675,22 +644,39 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       .questions {
         display: flex;
         flex-direction: column;
+        line-height: 1.6;
 
         @include mq($from: desktop) {
           flex-direction: row;
+          margin-top: 4em;
         }
 
         @mixin question-decoration($content) {
           content: $content;
           position: absolute;
-          margin-left: -2em;
+          margin-left: -2rem;
           font-weight: bold;
-          font-size: 1.2em;
+          font-size: 1.2rem;
         }
 
-        .question {
+        .intro {
+          padding: 2em 4em;
+          font-weight: bold;
+          flex-basis: 40%;
+          @include font-size(small, $adjust: .2rem);
+        }
+
+        .questions-and-answers {
+          flex-basis: 60%;
           flex: 1 0 fill;
           padding: 0 4em;
+          display: flex;
+          flex-direction: column;
+          gap: 1em;
+
+          .question-and-answer {
+            margin-block: 1em;
+          }
 
           .q {
             font-weight: bold;
@@ -701,6 +687,30 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           }
 
           .a {
+            margin: 0;
+
+            figcaption,
+            blockquote {
+              @include reset;
+            }
+
+            blockquote {
+              &:before {
+                content: open-quote;
+              }
+
+              &:after {
+                content: close-quote;
+              }
+            }
+
+            figcaption {
+              &:before {
+                content: "\2014 "; // emdash
+                margin-right: .3em;
+              }
+            }
+
             &:before {
               @include question-decoration("A");
             }
@@ -715,10 +725,9 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
       }
     }
-
     @mixin did-you-know-layout {
       grid-template-columns: 2em 1fr 2em;
-      grid-template-rows: 3em repeat(3, minmax(3em, max-content));
+      grid-template-rows: 3em minmax(3em, max-content);
 
       .triangle { grid-area: 1 / 1 / 2 / 4; }
       .text { grid-area: 1 / 1 / 3 / 3; }
@@ -760,6 +769,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       .text {
         margin: 1rem;
+        max-width: 65ch;
 
         h2 {
           @include font-size(xxlarge);
@@ -770,141 +780,18 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           display: inline-block;
         }
 
-        p.leading {
-          @include font-size(large);
-          font-weight: bold;
-          margin: .3rem 0;
-        }
-      }
+        p {
+          @include font-size(medium);
 
-      .challenge {
-        margin-top: 3em;
-        border: 3px solid black;
-
-        header {
-          text-align: right;
-
-          h3 {
-            @include font-size(xlarge);
-
-            margin: 0;
-            padding: 0;
-
-            display: inline-block;
-            position: relative;
-            top: -.7em;
-            right: -.4em;
-
-            @include mq($from: desktop) {
-              margin-top: -4em;
-              top: -.3em;
-              right: -1.8em;
-            }
-          }
-        }
-
-        fieldset {
-          border: none;
-          padding: 0;
-          margin: 0;
-
-          legend {
-            padding: 1em;
-
-            p.leading {
-              font-weight: bold;
-              margin: 0;
-            }
-
-            p {
-              @include font-size(medium);
-            }
-          }
-
-          .answer {
-            display: flex;
-            margin: .5em 0;
-            padding: 1em;
-
-            align-items: center;
-
-            label {
-              flex-grow: 1;
-            }
-
-            input {
-              flex-shrink: 1;
-
-              appearance: none;
-              border: 3px solid $black;
-              background: $green;
-              width: 2em;
-              height: 2em;
-              border-radius: 50%;
-
-              &:checked {
-                background: $black;
-              }
-
-              &:focus {
-                outline: none;
-                border: 4px solid $yellow;
-              }
-            }
-          }
-
-          .answer + .answer {
-            border-top: 3px solid black;
-          }
-
-          .results {
-            .result {
-              margin: .5em 0;
-              padding: 1em;
-
-              p {
-
-                a {
-                  color: $black;
-                }
-              }
-
-              p + p {
-                margin-top: .2em;
-              }
-            }
-
-            .result--correct {
-              display: none;
-
-              p {
-                @include font-size(large);
-              }
-            }
-
-            .result--incorrect {
-              display: none;
-
-              p {
-                @include font-size(medium);
-              }
-            }
-
-            &.correct {
-              .result--correct {
-                display: block;
-              }
-            }
-
-            &.incorrect {
-              .result--incorrect {
-                display: block;
-              }
-            }
+          &.leading {
+            @include font-size(large);
+            font-weight: bold;
+            margin: .3rem 0;
           }
         }
       }
     }
+
 
     @mixin exciting-times-ahead-layout {
       grid-template-columns: minmax(2em, auto) auto minmax(2em, auto);
@@ -959,12 +846,11 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         flex-wrap: wrap;
         flex-direction: column;
         margin: 2em 0;
-
-        @include mq($from: tablet) {
-          flex-direction: row;
-        }
-
         gap: 2em;
+
+        @include mq($until: desktop) {
+          margin-inline: 2em;
+        }
 
         .stage {
           flex: 1 1 auto;
@@ -976,22 +862,34 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
           .card {
             display: flex;
+            padding: 1em 2em;
+            gap: 1em;
             justify-content: center;
             position: relative;
             flex-direction: column;
-            width: min-content;
+            width: 100%;
             align-items: center;
+            background: $white;
+
+            @include mq($from: mobile) {
+              gap: 2em;
+              flex-direction: row;
+              padding: .5em 2em;
+            }
 
             picture {
-              background: $white;
               display: inline-block;
               width: unset;
+              margin: 0;
 
               > img {
                 margin: 2em 1em;
-                padding: 1em 1.5em;
-                height: 2.5em;
-                max-width: 3em;
+                padding: 1em .2em;
+                @include mq($from: desktop) {
+                  flex-direction: row;
+                  height: 4em;
+                  max-width: 4em;
+                }
               }
             }
 
@@ -1006,10 +904,13 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
             }
           }
 
-          .stage-name {
-            @include font-size(xsmall);
-            text-align: center;
-            margin: 1em 0;
+          .stage-info {
+            flex-grow: 1;
+
+            .stage-name {
+              @include font-size(medium);
+              margin-block: .2em;
+            }
           }
         }
       }
@@ -1022,7 +923,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
   }
 
-  .story {
+  .case-study {
     @mixin header-layout {
       grid-template-columns: 1.5em repeat(3, minmax(1em, auto)) 1.5em;
       grid-template-rows: repeat(2, minmax(3em, max-content)) 5em 2em 2em repeat(2, minmax(3em, max-content));
@@ -1128,15 +1029,37 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         stroke: $blue;
       }
     }
+
+    .back {
+      margin-block: 1em 3em;
+    }
   }
 
   article {
+    @include selected-quote($color: $pink, $size: small);
+
+    figure > blockquote {
+      font-weight: 500;
+
+      &.bigger {
+        @include font-size(medium);
+      }
+
+      &.last-on-page {
+        margin-bottom: 2em;
+      }
+    }
+
     max-width: 60ch;
     margin: 1em auto 0;
     padding: 1em;
 
     .featured {
       @include selected-quote($color: $yellow, $size: medium);
+    }
+
+    .intro {
+      font-weight: bold;
     }
   }
 
@@ -1168,7 +1091,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       line-height: 1.3;
 
       em {
-        text-transform: uppercase;
         text-decoration: underline;
         text-underline-offset: .15em;
         text-decoration-thickness: .15em;

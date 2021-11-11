@@ -3,8 +3,10 @@
     <h2 class="yellow">Exciting times ahead.</h2>
 
     <p class="yellow">
-      Look out for our emails over the next few weeks. They’ll be packed with
-      loads more tips and advice about each step of the application process.
+      Look out for our emails over the next few weeks. They're packed with
+      advice and support, as well as more inspiring teacher stories. In the
+      meantime, our website has lots of great content to help you as you
+      consider a career in teaching.
     </p>
   </div>
 
@@ -12,47 +14,79 @@
     <div class="stage">
       <div class="card">
         <div class="number">1</div>
-        <%= image_pack_tag("media/images/content/welcome-guide/school.svg") %>
-        <div class="stage-name">Get experience.</div>
+        <%= image_pack_tag("media/images/content/welcome-guide/school.svg", alt: "") %>
+        <div class="stage-info">
+          <h3 class="stage-name">Get experience.</h3>
+          <p>
+            School experience can help you decide whether teaching is right for
+            you. Some students are able to fit this in during term breaks.
+          </p>
+          <a href="/get-school-experience">
+            Find out how to get school experience
+          </a>
+        </div>
       </div>
     </div>
 
     <div class="stage">
       <div class="card">
         <div class="number">2</div>
-        <%= image_pack_tag("media/images/content/welcome-guide/money-icon.svg") %>
-        <div class="stage-name">Think about funding.</div>
+        <%= image_pack_tag("media/images/content/welcome-guide/money-icon.svg", alt: "") %>
+        <div class="stage-info">
+          <h3 class="stage-name">Think about funding.</h3>
+          <p>
+            You can get funding that you don’t have to pay back if you train to
+            teach certain subjects.
+          </p>
+          <a href="/funding-your-training">
+            Find out about funding options
+          </a>
+        </div>
       </div>
     </div>
 
     <div class="stage">
       <div class="card">
         <div class="number">3</div>
-        <%= image_pack_tag("media/images/content/welcome-guide/click-person.svg") %>
-        <div class="stage-name">Choose your training provider.</div>
+        <%= image_pack_tag("media/images/content/welcome-guide/click-person.svg", alt: "") %>
+        <div class="stage-info">
+          <h3 class="stage-name">Choose your training provider.</h3>
+          <p>
+            It’s important you find the right fit. Think about where you want to
+            train and what type of learning environment works for you.
+          </p>
+          <a href="/ways-to-train">
+            Find out about training providers
+          </a>
+        </div>
       </div>
     </div>
 
     <div class="stage">
       <div class="card">
         <div class="number">4</div>
-        <%= image_pack_tag("media/images/content/welcome-guide/paper-and-pencil.svg") %>
-        <div class="stage-name">Write your application.</div>
-      </div>
-    </div>
-
-    <div class="stage">
-      <div class="card">
-        <div class="number">5</div>
-        <%= image_pack_tag("media/images/content/welcome-guide/person-paper.svg") %>
-        <div class="stage-name">Prepare for interviews.</div>
+        <%= image_pack_tag("media/images/content/welcome-guide/paper-and-pencil.svg", alt: "") %>
+        <div class="stage-info">
+          <h3 class="stage-name">Apply for your course</h3>
+          <p>
+            Get tips on applying, including finding the right referees and
+            writing a personal statement.
+          </p>
+          <a href="/tips-on-applying-for-teacher-training">
+            Find out how to write your application
+          </a>
+        </div>
       </div>
     </div>
   </div>
 
   <div class="good-luck">
     <p>
-      Good luck <span class="yellow">Simon!</span> You've got this.
+      <% if first_name.present? %>
+        Good luck <span class="yellow"><%= first_name %>!</span> You've got this.
+      <% else %>
+        <span class="yellow">Good luck!</span> You've got this.
+      <% end %>
     </p>
     <div class="arrow-container">
       <%=

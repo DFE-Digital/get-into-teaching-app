@@ -1,4 +1,4 @@
-<div class="landing did-you-know" data-controller="welcome-guide-quiz">
+<div class="landing did-you-know">
   <div class="triangle green">
     <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
       <polygon points="0,100 100,0 100,100" />
@@ -19,57 +19,5 @@
         than ever before.
       </p>
     </div>
-  </div>
-
-  <div class="challenge">
-    <header>
-      <h3 class="purple">Challenge time!</h3>
-    </header>
-
-    <fieldset tabstop="0">
-      <legend>
-        <p class="leading">Can you solve this GCSE maths question?</p>
-
-        <p>What is <sup>3</sup>&frasl;<sub>2</sub> as a decimal?</p>
-      </legend>
-
-      <div class="answers">
-        <div class="answer">
-          <label for="maths-answer-1">1.05</label>
-          <input id="maths-answer-1" name="maths-answer" type="radio" value="1.05" data-action="click->welcome-guide-quiz#selectWrongAnswer">
-        </div>
-
-        <div class="answer">
-          <label for="maths-answer-2">1.1</label>
-          <input id="maths-answer-2" name="maths-answer" type="radio" value="1.1" data-action="click->welcome-guide-quiz#selectWrongAnswer">
-        </div>
-
-        <div class="answer">
-          <label for="maths-answer-3">1.5</label>
-          <input id="maths-answer-3" name="maths-answer" type="radio" value="1.5" data-action="click->welcome-guide-quiz#selectRightAnswer">
-        </div>
-
-        <div class="answer">
-          <label for="maths-answer-4">3.2</label>
-          <input id="maths-answer-4" name="maths-answer" type="radio" value="3.2" data-action="click->welcome-guide-quiz#selectWrongAnswer">
-        </div>
-      </div>
-      <div class="results" data-welcome-guide-quiz-target="results">
-        <div class="result result--correct">
-          <p>
-            Correct. Well done! You're well on your way to becoming a maths teacher.
-          </p>
-        </div>
-        <div class="result result--incorrect">
-          <p>
-            Oh no, you chose the wrong answer.
-          </p>
-          <p>
-            Don't worry, <a href="/improve-your-subject-knowledge">we can help you brush up on your knowledge!</a>
-          </p>
-        </div>
-      </div>
-    </fieldset>
-
   </div>
 </div>

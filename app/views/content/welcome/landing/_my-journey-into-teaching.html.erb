@@ -35,26 +35,5 @@
     %>
   </div>
 
-  <%= image_pack_tag("media/images/content/welcome-guide/dimitra-desert-crop.jpg") %>
-
-  <div class="text">
-    <h2>
-      <span class="yellow no-wrap">
-        My journey into
-      </span>
-
-      <br>
-
-      <span class="yellow no-wrap blend">
-        teaching.
-      </span>
-    </h2>
-
-    <p>
-      Meet Dimitra, find out how she got into teaching maths and what she's
-      looking forward to next.
-    </p>
-
-    <a href="/welcome/my-journey-into-teaching" class="button">Read Dimitra's story</a>
-  </div>
+  <%= render partial: 'content/welcome/landing/subject-specific-story', locals: subject_specific_story_data %>
 </section>
