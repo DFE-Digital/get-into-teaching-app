@@ -20,7 +20,7 @@
       <div class="teaching-events__listing">
         <% if @featured_events.any? %>
           <div class="teaching-events__events teaching-events__events--featured">
-            <h2>Upcoming train to teach events</h2>
+            <h2>Upcoming Train to Teach events</h2>
 
             <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>
           </div>
