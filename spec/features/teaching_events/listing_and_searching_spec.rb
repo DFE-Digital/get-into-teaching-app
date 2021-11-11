@@ -108,7 +108,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       visit teaching_events_path
 
       fill_in "Postcode", with: "M1 2WD"
-      select "5 miles", from: "Distance"
+      select "5 miles", from: "Search area"
       click_on "Update results"
 
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(postcode: "M1 2WD", radius: 5, online: nil)).once

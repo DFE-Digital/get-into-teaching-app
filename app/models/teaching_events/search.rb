@@ -1,22 +1,26 @@
 module TeachingEvents
   class Search
     include ActiveModel::Model
+    include ActiveModel::Attributes
     include ActiveModel::Validations::Callbacks
 
     FUTURE_MONTHS = 6
 
-    DISTANCES = [
-      OpenStruct.new(value: nil, key: "Nationwide"),
-      OpenStruct.new(value: 5, key: "5 miles"),
-      OpenStruct.new(value: 10, key: "10 miles"),
-      OpenStruct.new(value: 30, key: "30 miles"),
-      OpenStruct.new(value: 50, key: "50 miles"),
-    ].freeze
+    DISTANCES = {
+      "Nationwide" => nil,
+      "5 miles" => 5,
+      "10 miles" => 10,
+      "30 miles" => 30,
+      "50 miles" => 50,
+    }.freeze
 
-    attr_accessor :postcode, :online, :type, :distance
+    attr_accessor :online, :type
+
+    attribute :postcode, :string
+    attribute :distance, :integer
 
     validates :postcode, presence: true, postcode: { allow_blank: true, accept_partial_postcode: true }, if: :distance
-    validates :distance, inclusion: { in: DISTANCES.map(&:key), message: "Choose a distance from the list" }, allow_nil: true
+    validates :distance, inclusion: { in: DISTANCES.values }, allow_nil: true
 
     before_validation { self.distance = nil if distance.blank? }
     before_validation { self.postcode = postcode.to_s.strip.upcase.presence }

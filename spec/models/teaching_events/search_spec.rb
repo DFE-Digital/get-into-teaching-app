@@ -42,7 +42,7 @@ describe TeachingEvents::Search do
     describe "distance" do
       subject { described_class.new(postcode: "M1 2WD") }
 
-      let(:allowed_distances) { described_class::DISTANCES.map(&:key) }
+      let(:allowed_distances) { described_class::DISTANCES.values }
 
       it { is_expected.to allow_values(allowed_distances).for(:distance) }
     end

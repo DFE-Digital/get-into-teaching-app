@@ -5,7 +5,7 @@
   </div>
 
   <div class="events__filter--group">
-    <%= f.govuk_collection_select(:distance, @distances, :value, :key, abel: { text: "Search area" }) %>
+    <%= f.govuk_select(:distance, options_for_select(TeachingEvents::Search::DISTANCES, selected: @event_search.distance), label: { text: "Search area" }) %>
   </div>
 
   <div class="events__filter--group">
