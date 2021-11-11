@@ -22,10 +22,10 @@ keywords:
 
 Qualified teacher status (QTS) is what you need to teach in a state school in England. 
 
-It is not a course, but a confirmation that you have the right training and meet the standards required to be a teacher. 
+It is a confirmation that you have the right training and meet the standards required to be a teacher. 
 
-Some PGCE or PGDE courses can award you QTS. You can check the qualifications a course offers by [searching for postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses).
+All postgraduate teacher training courses in England lead to QTS. You can see the different types of courses available by [searching for postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
-As well as being a respected standard across the world, having QTS means you can move around the country and teach in any state school.
+QTS is a teaching standard that is respected across the world. Having QTS means you can move around the country and teach in any state school.
 
 <a href="/ways-to-train" class="button">Discover the different ways to train</a>
