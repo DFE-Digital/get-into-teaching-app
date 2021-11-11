@@ -74,7 +74,7 @@ module WelcomeContentHelper
       shoutout: {
         name: "Ms Colley",
         relationship: "my English teacher at school",
-        text: "Ms Colley, my English teacher at school. She left such a strong imprint on me and really instilled a love of reading. I’ll never forget her, she showed me what I could achieve.",
+        text: "She left such a strong imprint on me and really instilled a love of reading. I’ll never forget her, she showed me what I could achieve.",
       },
     },
     quote: {
