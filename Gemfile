@@ -58,7 +58,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.42.0"
+gem "view_component", "~> 2.43.1"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -82,6 +82,8 @@ gem "actionpack-cloudfront", ">= 1.1.0"
 gem "better_html"
 
 gem "dfe_wizard", github: "DFE-Digital/dfe_wizard"
+
+gem "rack-host-redirect"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
