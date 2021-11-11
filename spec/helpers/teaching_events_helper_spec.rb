@@ -81,4 +81,23 @@ describe TeachingEventsHelper, type: "helper" do
       expect(event_type_name(987_654_321)).to be nil
     end
   end
+
+  describe "#is_a_train_to_teach_event?" do
+    let(:event_types) { GetIntoTeachingApiClient::Constants::EVENT_TYPES }
+
+    let(:ttt_event) { OpenStruct.new(type_id: event_types["Train to Teach event"]) }
+    let(:qt_event) { OpenStruct.new(type_id: event_types["Question Time"]) }
+    let(:online_event) { OpenStruct.new(type_id: event_types["Online event"]) }
+    let(:school_or_university_event) { OpenStruct.new(type_id: event_types["School or University event"]) }
+
+    specify "returns true when the event is either Train to Teach or Question Time" do
+      expect(is_a_train_to_teach_event?(ttt_event)).to be true
+      expect(is_a_train_to_teach_event?(qt_event)).to be true
+    end
+
+    specify "returns false when the event is online or school and university" do
+      expect(is_a_train_to_teach_event?(online_event)).to be false
+      expect(is_a_train_to_teach_event?(school_or_university_event)).to be false
+    end
+  end
 end
