@@ -290,8 +290,6 @@ GEM
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
-    nokogiri (1.12.5-x86_64-linux)
-      racc (~> 1.4)
     observer (0.1.1)
     os (1.1.1)
     parallel (1.20.1)
@@ -316,6 +314,8 @@ GEM
     rack (2.2.3)
     rack-attack (6.5.0)
       rack (>= 1.0, < 3)
+    rack-host-redirect (1.3.0)
+      rack
     rack-proxy (0.7.0)
       rack
     rack-test (1.1.0)
@@ -536,6 +536,7 @@ DEPENDENCIES
   pry-rails
   puma (~> 5.5)
   rack-attack
+  rack-host-redirect
   rails (~> 6.1.4.1)
   rails_semantic_logger (>= 4.6.1)
   redis
