@@ -151,4 +151,10 @@ module ApplicationHelper
   def privacy_page?(path)
     ["/cookie_preference", "/cookies", "/privacy-policy"].include?(path)
   end
+
+  def google_optimize_config
+    @@google_optimize_config ||=
+      YAML.safe_load(File.read(Rails.root.join("config/google_optimize.yml")))
+        .deep_symbolize_keys
+  end
 end
