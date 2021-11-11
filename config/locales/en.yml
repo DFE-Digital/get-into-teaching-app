@@ -30,6 +30,13 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
+  views:
+    pagination:
+      first: "&laquo; First page"
+      last: "Last page &raquo;"
+      previous: "<i class=\"fas fa-arrow-left\"></i> Prev<span class=\"hide-on-mobile\">ious page</span>"
+      next: "Next <span class=\"hide-on-mobile\">page</span> <i class=\"fas fa-arrow-right\"></i>"
+      truncate: "&hellip;"
   find_an_event:
     types:
       222750001: |-

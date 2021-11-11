@@ -19,6 +19,7 @@ SecureHeaders::Configuration.default do |config|
     *.googletagmanager.com
     *.googleusercontent.com
     *.gstatic.com
+    *.googleanalytics.com
     https://googleads.g.doubleclick.net
     https://ssl.google-analytics.com
     https://tagmanager.google.com
@@ -30,6 +31,7 @@ SecureHeaders::Configuration.default do |config|
   google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net *.ad.doubleclick.net *.fls.doubleclick.net stats.g.doubleclick.net]
   google_apis        = %w[*.googleapis.com https://fonts.googleapis.com]
 
+  optimize  = %w[optimize.google.com www.googleoptimize.com]
   zendesk   = %w[static.zdassets.com https://*.zopim.com wss://*.zopim.com dfesupport-tpuk.zendesk.com ekr.zdassets.com]
   facebook  = %w[*.facebook.com *.facebook.net *.connect.facebook.net]
   govuk     = %w[*.gov.uk www.gov.uk]
@@ -57,13 +59,13 @@ SecureHeaders::Configuration.default do |config|
     connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk, snapchat),
     font_src: ["'self'"].concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: ["'self'"].concat(snapchat, facebook, govuk),
-    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data, pinterest),
+    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data, pinterest, optimize),
     frame_ancestors: ["'self'"],
-    img_src: ["'self'"].concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, %w[cx.atdmt.com linkbam.uk]),
+    img_src: ["'self'"].concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, %w[cx.atdmt.com linkbam.uk]),
     manifest_src: ["'self'"],
     media_src: ["'self'"].concat(zendesk),
-    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, youtube, zendesk),
-    style_src: ["'self'"].concat(quoted_unsafe_inline, govuk, google_apis, google_supported),
+    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, youtube, zendesk, optimize),
+    style_src: ["'self'"].concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize),
     worker_src: ["'self'"].concat(blob),
   }
 

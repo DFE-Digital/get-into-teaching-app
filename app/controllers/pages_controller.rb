@@ -43,6 +43,19 @@ class PagesController < ApplicationController
     render_page(params[:page])
   end
 
+  # TEMP: routes to try an A/B test in production
+  def temp_test_a
+    response.headers["X-Robots-Tag"] = "noindex"
+
+    render_page("steps-to-become-a-teacher")
+  end
+
+  def temp_test_b
+    response.headers["X-Robots-Tag"] = "noindex"
+
+    render_page("ways-to-train")
+  end
+
   # Avoid caching by rendering these pages manually:
 
   def funding_your_training

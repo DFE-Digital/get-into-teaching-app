@@ -5,6 +5,7 @@ author: Jane Wilkinson
 images:
   jacob:
     path: "media/images/content/blog/jacob.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/jacob.jpg"
     alt: "A photograph of Jacob in a field"
 description: |-
   This September, trainee teachers across the country began their courses. Jacob describes their last-minute application and their first few days as a trainee.

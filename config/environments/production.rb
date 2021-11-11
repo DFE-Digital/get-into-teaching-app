@@ -138,7 +138,7 @@ Rails.application.configure do
   config.x.structured_data.web_site = true
   config.x.structured_data.organization = false
   config.x.structured_data.breadcrumb_list = true
-  config.x.structured_data.event = false
+  config.x.structured_data.event = true
   config.x.structured_data.how_to = false
 
   config.x.legacy_tracking_pixels = true

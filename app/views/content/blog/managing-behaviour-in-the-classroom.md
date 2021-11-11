@@ -4,6 +4,7 @@ date: "2020-10-09"
 images:
   header_image:
     path: "media/images/content/blog/pupil-chatting-to-teacher-in-classroom.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/pupil-chatting-to-teacher-in-classroom.jpg"
     alt: "A photograph of a teacher chatting with their student in a classroom" 
 description: |-
   Teacher training adviser Jane Wilkinson answers some common questions from

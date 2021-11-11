@@ -233,8 +233,8 @@ describe TemplateHandlers::Markdown, type: :view do
       {
         "title": "Page with images",
         "images" => {
-          "black" => { "path" => "media/images/dfelogo-black.svg", "alt" => "Dark" },
-          "white" => { "path" => "media/images/dfelogo-white.svg", "alt" => "Light" },
+          "black" => { "path" => "media/images/dfelogo-black.svg", "other_attr" => "ignore", "alt" => "Dark" },
+          "white" => { "path" => "media/images/dfelogo-white.svg", "other_attr" => "ignore", "alt" => "Light" },
         },
       }
     end

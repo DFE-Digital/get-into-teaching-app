@@ -11,8 +11,8 @@
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
     <main id="main-content">
-      <section class="container">
-        <article class="markdown blog longform">
+      <section class="container blog">
+        <article class="markdown longform blog-article">
           <header>
             <%= tag.h1(@front_matter["title"]) %>
             <% if @front_matter.key?("subtitle") %>
@@ -23,6 +23,8 @@
           </header>
 
           <%= yield %>
+
+          <hr>
 
           <footer>
             <h2>Related to this article</h2>

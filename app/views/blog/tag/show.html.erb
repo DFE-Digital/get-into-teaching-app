@@ -1,7 +1,10 @@
 <ol class="blog-index">
-  <% @posts.each do |path, fm| %>
+  <% @posts.each do |post| %>
     <li>
-      <%= render partial: "blog/post_preview", locals: { path: path, fm: fm } %>
+      <%= render partial: "blog/post_preview", locals: { path: post[:path], fm: post[:fm] } %>
+      <hr>
     </li>
   <% end %>
 </ol>
+
+<%= paginate @posts, window: 2 %>
