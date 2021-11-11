@@ -6,10 +6,10 @@ class TeachingEventsController < ApplicationController
   FEATURED_EVENT_COUNT = 2 # 2 featured events max on the first page
   EVENT_COUNT = 15 # 15 regular ones per page
 
-  FEATURED_EVENT_TYPES = [
-    222_750_001, # Train to teach
-    222_750_007, # Question time
-  ].freeze
+  FEATURED_EVENT_TYPES = GetIntoTeachingApiClient::Constants::EVENT_TYPES.values_at(
+    "Train to Teach event",
+    "Question Time"
+  ).freeze
 
   def index
     @page_title = "Find an event near you"
