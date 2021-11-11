@@ -16,13 +16,12 @@ module TeachingEvents
       super
     end
 
-    # check if event is 'train to teach' or 'question time'
     def train_to_teach?
-      type.in?([222_750_001, 222_750_007])
+      type.in?(GetIntoTeachingApiClient::Constants::EVENT_TYPES.values_at("Train to Teach event", "Question Time"))
     end
 
     def school_and_university?
-      type == 222_750_009
+      type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
     end
 
     def online?
