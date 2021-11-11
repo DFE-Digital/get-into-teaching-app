@@ -462,7 +462,11 @@
 
       .register {
         .button {
-          border: 1px solid black;
+          outline: 1px solid black;
+
+          &:hover {
+            outline: 2px solid black;
+          }
         }
       }
     }
