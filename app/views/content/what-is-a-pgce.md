@@ -23,7 +23,7 @@ A PGCE is a teaching qualification. It stands for ‘postgraduate certificate in
 
 The course you take to get a PGCE is a mixture of learning education theory, and being placed in a school classroom to learn from experience.
 
-Another qualification is a PGDE, which stand for ‘postgraduate diploma in education’. A PGDE course is very similar to a PGCE, the difference being the amount of academic credits you are awarded at the end of your course. 
+Another qualification is a PGDE, which stands for ‘postgraduate diploma in education’. A PGDE course is very similar to a PGCE, the difference being the amount of academic credits you are awarded at the end of your course. 
 
 If you want to teach in a state school in England, you will also need to get ‘qualified teacher status’ (QTS) alongside your PGCE or PGDE course.
 
