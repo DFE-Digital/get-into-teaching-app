@@ -50,7 +50,8 @@ private
       OpenStruct.new(value: nil, key: "Nationwide"),
       OpenStruct.new(value: 5, key: "5 miles"),
       OpenStruct.new(value: 10, key: "10 miles"),
-      OpenStruct.new(value: 25, key: "25 miles"),
+      OpenStruct.new(value: 30, key: "30 miles"),
+      OpenStruct.new(value: 50, key: "50 miles"),
     ]
   end
 
