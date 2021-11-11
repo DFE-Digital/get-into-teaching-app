@@ -8,7 +8,7 @@ class TeachingEventsController < ApplicationController
 
   FEATURED_EVENT_TYPES = GetIntoTeachingApiClient::Constants::EVENT_TYPES.values_at(
     "Train to Teach event",
-    "Question Time"
+    "Question Time",
   ).freeze
 
   def index
@@ -46,13 +46,7 @@ private
   end
 
   def setup_filter
-    @distances = [
-      OpenStruct.new(value: nil, key: "Nationwide"),
-      OpenStruct.new(value: 5, key: "5 miles"),
-      OpenStruct.new(value: 10, key: "10 miles"),
-      OpenStruct.new(value: 30, key: "30 miles"),
-      OpenStruct.new(value: 50, key: "50 miles"),
-    ]
+    @distances = TeachingEvents::Search::DISTANCES
   end
 
   def setup_results

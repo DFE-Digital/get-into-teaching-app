@@ -5,9 +5,18 @@ module TeachingEvents
 
     FUTURE_MONTHS = 6
 
+    DISTANCES = [
+      OpenStruct.new(value: nil, key: "Nationwide"),
+      OpenStruct.new(value: 5, key: "5 miles"),
+      OpenStruct.new(value: 10, key: "10 miles"),
+      OpenStruct.new(value: 30, key: "30 miles"),
+      OpenStruct.new(value: 50, key: "50 miles"),
+    ].freeze
+
     attr_accessor :postcode, :online, :type, :distance
 
     validates :postcode, presence: true, postcode: { allow_blank: true, accept_partial_postcode: true }, if: :distance
+    validates :distance, inclusion: { in: DISTANCES.map(&:key), message: "Choose a distance from the list" }, allow_nil: true
 
     before_validation { self.distance = nil if distance.blank? }
     before_validation { self.postcode = postcode.to_s.strip.upcase.presence }
@@ -25,13 +34,19 @@ module TeachingEvents
         online: online_condition,
         quantity_per_type: limit,
         radius: distance_condition,
-        start_after: Time.zone.now,
-        start_before: FUTURE_MONTHS.months.from_now,
+        start_after: start_after,
+        start_before: start_before,
       }
 
-      Rails.logger.debug("search conditions: #{conditions}")
-
       GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events_grouped_by_type(**conditions)
+    end
+
+    def start_after
+      Time.zone.now
+    end
+
+    def start_before
+      FUTURE_MONTHS.months.from_now
     end
 
     def online_condition
