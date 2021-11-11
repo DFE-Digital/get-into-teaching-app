@@ -7,6 +7,7 @@ class PagesController < ApplicationController
   ].freeze
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
+  DYNAMIC_PAGE_PATHS = [].freeze
 
   before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && request.query_parameters.any? }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
@@ -91,7 +92,9 @@ class PagesController < ApplicationController
 protected
 
   def static_page_actions
-    %i[show cookies privacy_policy]
+    %i[cookies privacy_policy].tap do |actions|
+      actions << :show unless DYNAMIC_PAGE_PATHS.include?(request.path)
+    end
   end
 
 private
