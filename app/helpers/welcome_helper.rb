@@ -1,4 +1,17 @@
 module WelcomeHelper
+  def show_welcome_guide?(degree_status = degree_status_id, consideration_journey_stage = consideration_journey_stage_id)
+    gradudate_or_postgraduate = retrieve_degree_status_ids("Graduate or postgraduate")
+    allowed_graduate_consideration_stages = retrieve_consideration_journey_stage_ids(
+      "It’s just an idea",
+      "I’m not sure and finding out more",
+    )
+    final_year_student = retrieve_degree_status_ids("Final year")
+
+    degree_status.in?(final_year_student) || (
+      degree_status.in?(gradudate_or_postgraduate) && consideration_journey_stage.in?(allowed_graduate_consideration_stages)
+    )
+  end
+
   def greeting
     if first_name
       "Hey #{first_name}"
@@ -34,6 +47,10 @@ module WelcomeHelper
     session.dig("welcome_guide", "degree_status_id") || session.dig("mailinglist", "degree_status_id")
   end
 
+  def consideration_journey_stage_id
+    session.dig("welcome_guide", "consideration_journey_stage_id") || session.dig("mailinglist", "consideration_journey_stage_id")
+  end
+
   def welcome_guide_subject_id
     session.dig("welcome_guide", "preferred_teaching_subject_id") || session.dig("mailinglist", "preferred_teaching_subject_id")
   end
@@ -59,5 +76,13 @@ private
     ])
 
     subject.downcase
+  end
+
+  def retrieve_degree_status_ids(*names)
+    GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.values_at(*names)
+  end
+
+  def retrieve_consideration_journey_stage_ids(*names)
+    GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.values_at(*names)
   end
 end
