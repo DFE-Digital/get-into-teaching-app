@@ -47,12 +47,6 @@ describe TeachingEvents::EventComponent, type: "component" do
         it { expect(subject).to be_online }
       end
 
-      context "when the event is marked as virtual and not online" do
-        let(:event) { build(:event_api, is_online: false, is_virtual: true) }
-
-        it { expect(subject).to be_online }
-      end
-
       context "when the event has a location" do
         let(:event) { build(:event_api) }
 

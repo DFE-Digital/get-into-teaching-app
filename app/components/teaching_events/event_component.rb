@@ -7,7 +7,6 @@ module TeachingEvents
       @title     = event.name
       @type      = event.type_id
       @online    = event.is_online
-      @virtual   = event.is_virtual
       @in_person = event.building.present?
       @start_at  = event.start_at
       @end_at    = event.end_at
@@ -25,7 +24,7 @@ module TeachingEvents
     end
 
     def online?
-      @online || @virtual
+      @online
     end
 
     def in_person?
