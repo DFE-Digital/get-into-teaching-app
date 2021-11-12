@@ -90,6 +90,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
   end
 
   scenario "Full journey as an existing candidate" do
+    first_name = "Joey"
+
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)
 
@@ -105,7 +107,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     visit mailing_list_steps_path
 
     expect(page).to have_text "Get personalised guidance to your inbox"
-    fill_in_name_step
+    fill_in_name_step(first_name: first_name)
     click_on "Next step"
 
     expect(page).to have_text "Verify your email address"
@@ -140,8 +142,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     check "Yes"
     click_on "Complete sign up"
 
-    expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
+    expect(page).to have_text "#{first_name}, you're signed up"
+    expect(page).to have_text("We'll send your first email shortly")
   end
 
   scenario "Full journey as an existing candidate that resends the verification code" do
@@ -263,7 +265,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
-    expect(page).to have_text("You'll receive a welcome email shortly")
+    expect(page).to have_text("We'll send your first email shortly")
   end
 
   scenario "Invalid magic link tokens" do
