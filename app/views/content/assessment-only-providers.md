@@ -349,11 +349,6 @@ provider_groups:
       email: a.harper@sjb.surrey.sch.uk
   South West:
     providers:
-    - header: Bath Spa University
-      link: https://www.bathspa.ac.uk/
-      name: Clare Furlonger
-      telephone: 01225 875650
-      email: assessmentonly@bathspa.ac.uk
     - header: Cornwall School Centred Initial Teacher Training (Cornwall SCITT)
       link: https://www.cornwallscitt.org/
       name: Julie Bennett
