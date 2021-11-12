@@ -18,6 +18,42 @@ RSpec.describe WelcomeHelper, type: :helper do
     end
   end
 
+  describe "#show_welcome_guide?" do
+    context "when degree_status is second year" do
+      let(:second_year) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Second year"] }
+
+      it { expect(show_welcome_guide?(second_year)).to be false }
+    end
+
+    context "when degree_status is final year" do
+      let(:final_year) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"] }
+
+      it { expect(show_welcome_guide?(final_year)).to be true }
+    end
+
+    context "when degree_status is 'graduate or postgraduate'" do
+      let(:graduate) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Graduate or postgraduate"] }
+
+      context "when consideration journey stage is 'it's just an idea'" do
+        let(:just_an_idea) { GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["It’s just an idea"] }
+
+        it { expect(show_welcome_guide?(graduate, just_an_idea)).to be true }
+      end
+
+      context "when consideration journey stage is 'I’m not sure and finding out more'" do
+        let(:finding_out_more) { GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m not sure and finding out more"] }
+
+        it { expect(show_welcome_guide?(graduate, finding_out_more)).to be true }
+      end
+
+      context "when consideration journey stage is 'I’m fairly sure and exploring my options'" do
+        let(:fairly_sure) { GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m fairly sure and exploring my options"] }
+
+        it { expect(show_welcome_guide?(graduate, fairly_sure)).to be false }
+      end
+    end
+  end
+
   describe "#greeting" do
     context "when the first name is known" do
       let(:name) { "Joey" }
@@ -152,6 +188,19 @@ RSpec.describe WelcomeHelper, type: :helper do
       specify "returns the subject from the query param" do
         expect(subject).to eql("German")
       end
+    end
+  end
+
+  describe "#consideration_journey_stage_id" do
+    before do
+      allow(session).to receive(:dig).with("welcome_guide", "consideration_journey_stage_id").and_return(nil)
+      allow(session).to receive(:dig).with("mailinglist", "consideration_journey_stage_id").and_return(nil)
+      consideration_journey_stage_id
+    end
+
+    specify "checks the welcome guide and mailing list session values" do
+      expect(session).to have_received(:dig).with("welcome_guide", "consideration_journey_stage_id")
+      expect(session).to have_received(:dig).with("mailinglist", "consideration_journey_stage_id")
     end
   end
 end

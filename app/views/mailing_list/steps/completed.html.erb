@@ -1,6 +1,6 @@
 <% @hide_page_helpful_question = true %>
 
-<% if Rails.env.test? || Rails.env.production? %>
+<% if Rails.env.test? || Rails.env.production? || !show_welcome_guide? %>
 
   <section class="text-content">
     <h2 class="green">You've signed up</h2>
