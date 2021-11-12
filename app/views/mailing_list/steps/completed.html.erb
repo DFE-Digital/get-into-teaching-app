@@ -1,6 +1,8 @@
 <% @hide_page_helpful_question = true %>
 
-<% if Rails.env.test? || Rails.env.production? || !show_welcome_guide? %>
+<% if show_welcome_guide? && !Rails.env.production? %>
+  <%= render(Registration::MailingListSignupConfirmationComponent.new(mailing_list_session)) %>
+<% else %>
 
   <section class="text-content">
     <h2 class="green">You've signed up</h2>
@@ -68,9 +70,6 @@
       <%= link_to "Find an event", events_path, class: "button button--white button--unpadded" %>
     <% end %>
   </div>
-
-<% else %>
-  <%= render(Registration::MailingListSignupConfirmationComponent.new(mailing_list_session)) %>
 <% end %>
 
 <% if Rails.application.config.x.legacy_tracking_pixels %>
