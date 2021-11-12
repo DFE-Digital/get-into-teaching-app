@@ -287,4 +287,10 @@ describe ApplicationHelper do
       it { expect { is_expected }.to raise_error(ArgumentError, "Specify fallback text or email, not both") }
     end
   end
+
+  describe "#google_optimize_config" do
+    subject { google_optimize_config }
+
+    it { is_expected.to eq({ paths: ["/test/a", "/test/b"] }) }
+  end
 end

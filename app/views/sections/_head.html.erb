@@ -1,7 +1,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
-
   <%= csp_meta_tag %>
   <%#= canonical_tag %>
   <%= tag :meta, name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' %>
@@ -12,6 +11,7 @@
   <% if Rails.env.test? && params.key?(:fake_browser_time) %>
     <%= javascript_pack_tag 'fake_browser_time', 'data-turbolinks-track': 'reload', id: "fake-browser-time" %>
   <% end %>
+  <%= render(partial: "sections/google_optimize") %>
   <%= javascript_pack_tag 'gtm', 'data-turbolinks-track': 'reload', data: { "gtm-id": ENV["GTM_ID"] }, async: true unless Rails.application.config.x.legacy_tracking_pixels %>
   <%= javascript_pack_tag 'js_enabled', 'data-turbolinks-track': 'reload', async: true %>
   <%= javascript_pack_tag 'lazy_images', 'data-turbolinks-track': 'reload', async: true %>
