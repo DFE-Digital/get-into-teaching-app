@@ -211,7 +211,7 @@ provider_groups:
       telephone: 01642 527675
       email: scitt@stockton.gov.uk
     - header: University of Sunderland
-      link: https://www.sunderland.ac.uk/
+      link: https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/
       name: Jill Wilkinson
       telephone: '0191 5153099'
       email: jill.wilkinson@sunderland.ac.uk
@@ -249,8 +249,8 @@ provider_groups:
       email: j.simmonds@chester.ac.uk
     - header: University of Cumbria
       link: https://www.cumbria.ac.uk/study/academic-departments/institute-of-education/qts-direct-assessment-only-route/
-      name: Carolyn Reade
-      email: arolyn.reade@cumbria.ac.uk
+      name: Ian Todd
+      email: qtsdirect@cumbria.ac.uk
   South East:
     providers:
     - header: Astra School Centred Initial Teacher Training / Dr Challoner's Grammar
@@ -349,11 +349,6 @@ provider_groups:
       email: a.harper@sjb.surrey.sch.uk
   South West:
     providers:
-    - header: Bath Spa University
-      link: https://www.bathspa.ac.uk/
-      name: Clare Furlonger
-      telephone: 01225 875650
-      email: assessmentonly@bathspa.ac.uk
     - header: Cornwall School Centred Initial Teacher Training (Cornwall SCITT)
       link: https://www.cornwallscitt.org/
       name: Julie Bennett
@@ -495,7 +490,7 @@ provider_groups:
       name: Admissions Team
       telephone: +86 135 2015 3752
       email: admissions@bise.org
-    - header: TES Institute
+    - header: TES Institute (International)
       link: https://www.tes.com/institute/courses/international-assessment-only-route
       name: TI Enrolment team
       telephone: +44 (0)203 194 3000
