@@ -14,10 +14,12 @@ describe ApplicationHelper do
     let(:snapchat_id) { id }
     let(:facebook_id) { id }
     let(:twitter_id) { id }
+    let(:google_optimize_id) { id }
 
     before do
       allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(true)
       allow(ENV).to receive(:[]).and_call_original
+      allow(ENV).to receive(:[]).with("GOOGLE_OPTIMIZE_ID").and_return google_optimize_id
       allow(ENV).to receive(:[]).with("GOOGLE_TAG_MANAGER_ID").and_return gtm_id
       allow(ENV).to receive(:[]).with("GOOGLE_ANALYTICS_ID").and_return ga_id
       allow(ENV).to receive(:[]).with("GOOGLE_AD_WORDS_ID").and_return adwords_id
@@ -37,6 +39,7 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-controller~=snapchat]" }
       it { is_expected.to have_css "body[data-controller~=facebook]" }
       it { is_expected.to have_css "body[data-controller~=twitter]" }
+      it { is_expected.to have_css "body[data-controller~=google-optimize]" }
 
       context "with additional stimulus controller" do
         subject { analytics_body_tag(data: { controller: "atest" }) { tag.hr } }
@@ -47,6 +50,7 @@ describe ApplicationHelper do
         it { is_expected.to have_css "body[data-controller~=facebook]" }
         it { is_expected.to have_css "body[data-controller~=twitter]" }
         it { is_expected.to have_css "body[data-controller~=atest]" }
+        it { is_expected.to have_css "body[data-controller~=google-optimize]" }
       end
     end
 
@@ -60,6 +64,7 @@ describe ApplicationHelper do
       it { is_expected.to have_css "body[data-analytics-twitter-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-bam-id=1234]" }
       it { is_expected.to have_css "body[data-analytics-lid-id=1234]" }
+      it { is_expected.to have_css "body[data-analytics-google-optimize-id=1234]" }
 
       context "with blank service ids" do
         let(:id) { "" }
@@ -73,6 +78,7 @@ describe ApplicationHelper do
         it { is_expected.to have_css "body[data-analytics-twitter-id=\"\"]" }
         it { is_expected.to have_css "body[data-analytics-bam-id=\"\"]" }
         it { is_expected.to have_css "body[data-analytics-lid-id=\"\"]" }
+        it { is_expected.to have_css "body[data-analytics-google-optimize-id=\"\"]" }
       end
 
       context "with no service ids" do
@@ -87,6 +93,7 @@ describe ApplicationHelper do
         it { is_expected.not_to have_css "body[data-analytics-twitter-id]" }
         it { is_expected.not_to have_css "body[data-analytics-bam-id]" }
         it { is_expected.not_to have_css "body[data-analytics-lid-id]" }
+        it { is_expected.not_to have_css "body[data-google-optimize-id]" }
       end
     end
 
@@ -286,11 +293,5 @@ describe ApplicationHelper do
 
       it { expect { is_expected }.to raise_error(ArgumentError, "Specify fallback text or email, not both") }
     end
-  end
-
-  describe "#google_optimize_config" do
-    subject { google_optimize_config }
-
-    it { is_expected.to eq({ paths: ["/test/a", "/test/b"] }) }
   end
 end

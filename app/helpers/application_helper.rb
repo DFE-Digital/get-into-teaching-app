@@ -18,6 +18,7 @@ module ApplicationHelper
     attributes = attributes.symbolize_keys
 
     analytics = {
+      "analytics-google-optimize-id": ENV["GOOGLE_OPTIMIZE_ID"],
       "analytics-gtm-id": ENV["GOOGLE_TAG_MANAGER_ID"],
       "analytics-ga-id": ENV["GOOGLE_ANALYTICS_ID"],
       "analytics-adwords-id": ENV["GOOGLE_AD_WORDS_ID"],
@@ -41,7 +42,7 @@ module ApplicationHelper
     attributes[:data] = attributes[:data].merge(analytics)
 
     attributes[:data][:controller] =
-      "gtm pinterest snapchat facebook hotjar twitter #{attributes[:data][:controller]}"
+      "gtm pinterest snapchat facebook hotjar twitter google-optimize #{attributes[:data][:controller]}"
 
     tag.body **attributes, &block
   end
@@ -150,11 +151,5 @@ module ApplicationHelper
 
   def privacy_page?(path)
     ["/cookie_preference", "/cookies", "/privacy-policy"].include?(path)
-  end
-
-  def google_optimize_config
-    @@google_optimize_config ||=
-      YAML.safe_load(File.read(Rails.root.join("config/google_optimize.yml")))
-        .deep_symbolize_keys
   end
 end
