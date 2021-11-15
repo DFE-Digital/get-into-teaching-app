@@ -37,6 +37,6 @@
 
   <%= render(partial: "teaching_events/show/event-attributes") %>
   <%= render(partial: "teaching_events/show/venue-information") if @event.building.present? %>
-  <%= render(partial: "teaching_evetns/show/scribble") if @event.scribble_id.present? %>
+  <%= render(partial: "teaching_events/show/scribble") if @event.scribble_id.present? %>
   <%= render(partial: "teaching_events/show/what-theyre-saying") %>
 </div>
