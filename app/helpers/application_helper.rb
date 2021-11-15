@@ -9,7 +9,8 @@ module ApplicationHelper
 
   def gtm_consent_body_tag(attributes = {}, &block)
     attributes[:data] ||= {}
-    attributes[:data][:controller] = "gtm-consent"
+    attributes[:data][:controller] = "gtm-consent google-optimize"
+    attributes[:data]["analytics-google-optimize-id"] = ENV["GOOGLE_OPTIMIZE_ID"]
 
     tag.body(**attributes, &block)
   end

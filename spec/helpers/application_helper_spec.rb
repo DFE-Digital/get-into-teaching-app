@@ -124,10 +124,15 @@ describe ApplicationHelper do
     context "when legacy tracking is disabled" do
       subject { analytics_body_tag(data: { timefmt: "24" }, class: "homepage") { tag.hr } }
 
-      before { allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(false) }
+      before do
+        allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(false)
+        allow(ENV).to receive(:[]).and_call_original
+        allow(ENV).to receive(:[]).with("GOOGLE_OPTIMIZE_ID").and_return("123")
+      end
 
       it { is_expected.not_to have_css "body[data-controller=gtm]" }
-      it { is_expected.to have_css "body[data-controller=gtm-consent]" }
+      it { is_expected.to have_css "body[data-controller='gtm-consent google-optimize']" }
+      it { is_expected.to have_css "body[data-analytics-google-optimize-id=123]" }
       it { is_expected.to have_css "body[data-timefmt=24]" }
       it { is_expected.to have_css "body.homepage" }
       it { is_expected.to have_css "body hr" }
