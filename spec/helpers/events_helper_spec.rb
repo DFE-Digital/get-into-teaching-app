@@ -134,6 +134,19 @@ describe EventsHelper, type: "helper" do
     end
   end
 
+  describe "#event_type_name" do
+    GetIntoTeachingApiClient::Constants::EVENT_TYPES.each do |name, id|
+      describe %(when the id is #{id}) do
+        let(:name) { name }
+        let(:id) { id }
+
+        specify %(the returned name is '#{name}') do
+          expect(event_type_name(id)).to eql(name)
+        end
+      end
+    end
+  end
+
   describe "#event_type_color" do
     it "returns purple for train to teach events" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
@@ -297,12 +310,6 @@ describe EventsHelper, type: "helper" do
   describe "#ttt_event_type_id?" do
     it "returns the TTT event id" do
       expect(ttt_event_type_id).to eq GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
-    end
-  end
-
-  describe "#event_list_id" do
-    it "paramaterizes the name and adds a '-list' suffix" do
-      expect(event_list_id("plenty of events")).to eql("plenty-of-events-list")
     end
   end
 end

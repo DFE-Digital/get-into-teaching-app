@@ -295,6 +295,12 @@ en:
             subject:
               blank: Select a subject
 
+        teaching_events/search:
+          attributes:
+            postcode:
+              blank: Enter a postcode
+              invalid: Enter a valid postcode
+
         events/search:
           attributes:
             type:

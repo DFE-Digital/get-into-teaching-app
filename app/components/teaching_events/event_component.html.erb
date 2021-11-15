@@ -1,0 +1,86 @@
+<%= tag.li(class: classes) %>
+  <% if train_to_teach? %>
+
+    <div class="event__info">
+      <div class="event__info__date-and-time">
+        <div><%= date %></div>
+        <div><%= times %></div>
+      </div>
+
+      <div class="event__info__name">
+        <%= link_to(title, teaching_event_path(slug)) %>
+      </div>
+
+      <% if location.present? %>
+        <div class="event__info__location">
+          <%= location %>
+        </div>
+      <% end %>
+
+      <% if in_person? %>
+        <%= tag.div(class: %w[event__info__setting in-person]) do %>
+          In person
+        <% end %>
+      <% end %>
+
+      <% if online? %>
+        <%= tag.div(class: %w[event__info__setting online]) do %>
+          Online
+        <% end %>
+      <% end %>
+    </div>
+
+    <div class="event__meta">
+      <%= image_pack_tag "media/images/content/welcome-guide/jack-rowing-crop-face.jpg" %>
+
+      <%= image_pack_tag "media/images/dfelogo-black.svg", class: "dfelogo", alt: "This is an official Department for Education event" %>
+    </div>
+
+  <% else %>
+
+    <div class="event__top-bar">
+      <div class="event__top-bar--left">
+        <div><%= date %></div>
+        <div><%= times %></div>
+      </div>
+
+      <div class="event__top-bar--right">
+        <div class="event__info__type"><%= event_type %></div>
+      </div>
+    </div>
+
+    <div class="event__info">
+      <div class="event__info__name">
+        <%= link_to(title, teaching_event_path(slug)) %>
+      </div>
+    </div>
+
+    <div class="event__bottom-bar">
+      <div class="event__bottom-bar--left">
+        <% if location.present? %>
+          <div class="event__bottom-bar--left__location">
+            <%= location %>
+          </div>
+        <% end %>
+
+        <% if in_person? %>
+          <%= tag.div(class: %w[event__bottom-bar--left__setting in-person]) do %>
+            In person
+          <% end %>
+        <% end %>
+
+        <% if online? %>
+          <%= tag.div(class: %w[event__bottom-bar--left__setting online]) do %>
+            Online
+          <% end %>
+        <% end %>
+      </div>
+
+      <% unless school_and_university? %>
+        <div class="event__bottom-bar--right">
+          <%= image_pack_tag "media/images/dfelogo-black.svg", class: "dfelogo", alt: "This is an official Department for Education event" %>
+        </div>
+      <% end %>
+    </div>
+  <% end %>
+</li>

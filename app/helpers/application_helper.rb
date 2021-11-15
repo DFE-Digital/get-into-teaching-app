@@ -9,7 +9,8 @@ module ApplicationHelper
 
   def gtm_consent_body_tag(attributes = {}, &block)
     attributes[:data] ||= {}
-    attributes[:data][:controller] = "gtm-consent"
+    attributes[:data][:controller] ||= ""
+    attributes[:data][:controller] << " gtm-consent"
 
     tag.body(**attributes, &block)
   end

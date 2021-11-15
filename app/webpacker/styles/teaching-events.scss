@@ -1,0 +1,716 @@
+@mixin train-to-teach-event-box($small: false) {
+  border: 2px solid $pink;
+  padding: 2rem 1rem 1rem;
+
+  &::after {
+    @include font-size(medium);
+    position: absolute;
+    content: "Train to Teach event";
+    right: 1rem;
+    top: -1em;
+    background: $pink url(../images/icon-ttt-white.svg) no-repeat left center;
+    background-size: 1.2em;
+    background-position: .4em;
+    font-weight: bold;
+    padding: .4em .4em .4em 2em;
+
+    @if $small {
+      @include mq($from: tablet) {
+        @include font-size(small);
+      }
+    }
+  }
+}
+
+.teaching-events {
+  header {
+    margin: 1rem;
+
+    h1 {
+      @include reset;
+      background: $yellow;
+      display: inline-block;
+      padding: .4rem;
+
+      @include mq($from: desktop) {
+        padding: 1rem;
+      }
+    }
+
+    p {
+      padding: 0 1rem;
+    }
+  }
+
+  @include mq($from: desktop) {
+    margin-inline: 1.5rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @include mq($from: desktop) {
+      flex-direction: row;
+    }
+  }
+
+  &__filter,
+  &__listing {
+    @include mq($from: desktop) {
+      margin: 1rem;
+    }
+  }
+
+  &__filter {
+    padding: 1rem;
+    @include mq($from: desktop) {
+      flex-basis: 25%;
+    }
+  }
+
+  &__listing {
+    @include mq($from: desktop) {
+      flex-basis: 75%;
+    }
+
+  }
+
+  &__pagination {
+    margin-inline: 1rem;
+
+    &.content {
+      overflow: inherit;
+    }
+
+    .pagination {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+
+      @mixin pagination-item {
+        @include font-size(medium);
+        padding: .8em;
+        text-decoration: none;
+        margin: 1em 0;
+      }
+
+      // kaminari selectors
+      * {
+        display: block;
+        line-height: 1;
+      }
+
+      a {
+        @include pagination-item;
+        border: 2px solid $pink-dark;
+        color: $pink-dark;
+
+        &:hover {
+          background-color: $pink-dark;
+          color: $white;
+        }
+
+        &:focus {
+          background-color: $yellow;
+          border: 2px solid $yellow-dark;
+          color: $black;
+        }
+      }
+
+      .page {
+        text-align: center;
+        min-width: .8em;
+
+        &.current,
+        &.gap {
+          padding: .8em .6em;
+        }
+
+        &.current {
+          @include pagination-item;
+          background-color: $pink-dark;
+          color: $white;
+          border: 2px solid $pink-dark;
+        }
+      }
+
+      .prev {
+        margin-right: .2em;
+      }
+
+      .prev + .page,
+      .page + .page {
+        margin-left: .2em;
+        margin-right: .2em;
+      }
+    }
+  }
+
+  &__events {
+    @include reset;
+
+    padding: 1rem;
+
+    ol {
+      list-style: none;
+      padding: 0;
+
+      @include mq($from: desktop) {
+        padding: 1rem;
+      }
+
+      li.event + li.event {
+        margin-top: 2em;
+      }
+    }
+
+    &--featured {
+      background: $grey;
+      padding: 2rem 1rem 2rem;
+      margin-bottom: 1rem;
+
+      h2 {
+        @include font-size(medium);
+        margin-block: 1rem 2rem;
+        padding-inline: 1rem;
+      }
+    }
+  }
+
+  .event {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    background: white;
+    border: 2px solid $grey;
+    padding: 0;
+
+    &__info {
+      @include font-size(xsmall);
+
+      &__name {
+        @include font-size(small, $adjust: .2rem);
+        font-weight: bold;
+      }
+
+    }
+
+    &__meta {
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      margin-bottom: 1em;
+
+      picture {
+        align-self: baseline;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .dfelogo {
+        max-height: 6em;
+
+        @include mq($from: tablet) {
+          width: 60%;
+        }
+      }
+
+      @include mq($from: tablet) {
+        picture {
+          align-self: auto;
+        }
+      }
+    }
+
+    &__top-bar {
+      display: flex;
+      overflow: clip;
+      align-items: center;
+
+      &--left {
+        @include font-size(xsmall);
+        flex: 1 1 30%;
+        padding: .2em 1em;
+      }
+
+      &--right {
+        $adjust: 1em;
+        $unskew-amount: 12deg;
+        $skew-amount: -12deg;
+
+        background: $yellow;
+        text-align: center;
+        padding: 1.2rem;
+
+        transform: skew($skew-amount) translate($adjust);
+        padding-right: 1em + $adjust;
+        font-weight: bold;
+
+        .event__info__type {
+          transform: skew($unskew-amount);
+        }
+      }
+    }
+
+    &__bottom-bar {
+      background: $grey;
+      padding: .2em 1em;
+      display: flex;
+
+      &--left {
+        display: flex;
+        flex-direction: column;
+        flex: 1 0 60%;
+      }
+
+      &--right{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        padding: 1em;
+        flex: 0 1 40%;
+      }
+    }
+
+    &__info {
+      padding: 2em 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &--train-to-teach {
+      @include train-to-teach-event-box;
+
+      flex-direction: column-reverse;
+
+      @include mq($from: mobile) {
+        gap: 3rem;
+        flex-direction: row;
+      }
+
+      .event__info {
+        flex-basis: 60%;
+        padding: 0;
+
+        &__date-and-time,
+        &__name,
+        &__setting {
+          padding-left: 3rem;
+          min-height: 2em;
+        }
+
+        &__date-and-time {
+          background: url(../images/icon-calendar.svg) no-repeat left center;
+          background-size: 2em;
+        }
+
+        &__name {
+          min-height: 4rem;
+
+          @include mq($from: tablet) {
+            min-height: initial;
+          }
+        }
+
+        &__setting {
+          background-size: 2.4em;
+
+          &.online {
+            background: url(../images/icon-online-black.svg) no-repeat left center;
+          }
+
+          &.in-person {
+            background: url(../images/icon-building.svg) no-repeat left center;
+          }
+        }
+      }
+
+      .event__meta { flex-basis: 40%; }
+    }
+
+    &--regular {
+      .event__bottom-bar--left {
+        &__setting,
+        &__location {
+          @include font-size(xsmall);
+
+          padding: 1em 1em 1em 3.5rem;
+        }
+
+        &__setting {
+          &.online {
+            background: url(../images/icon-online-black.svg) no-repeat left center;
+            background-size: 1.4em;
+          }
+
+          &.in-person {
+            background: url(../images/icon-building.svg) no-repeat left center;
+            background-size: 1.6em;
+          }
+        }
+
+        &__location {
+          background: url(../images/icon-pin.svg) no-repeat left center;
+          background-size: 1.4em;
+        }
+      }
+    }
+  }
+}
+
+.teaching-event {
+  @mixin teaching-event-header-layout {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, auto) 1em;
+
+    @include mq($from: tablet) {
+      grid-template-rows: minmax(2rem, auto) 2rem minmax(2rem, auto) 2rem;
+      grid-template-columns: minmax(5rem, auto) minmax(auto, 40rem) 10rem minmax(auto, 15rem) minmax(5rem, auto);
+
+      .breadcrumbs-and-heading {
+        grid-area: 1 / 2 / 3 / 4;
+      }
+
+      .event-details {
+        grid-area: 3 / 2 / 4 / 3;
+      }
+
+      .image {
+        grid-area: 2 / 3 / 4 / 5;
+      }
+
+      .triangle {
+        grid-area: 4 / 1 / 5 / 6;
+      }
+    }
+  }
+
+  header {
+    $overhang: .4em;
+
+    @include teaching-event-header-layout;
+
+    display: grid;
+
+    > *:not(.triangle) {
+      padding-inline: 1rem;
+    }
+
+    @include mq($from: tablet) {
+      padding-inline: 0;
+    }
+
+    &.yellow {
+      background: $yellow;
+
+      .register .button {
+        background: $yellow;
+        color: $black;
+
+        &:focus {
+          color: $yellow;
+          background: $black;
+        }
+      }
+    }
+
+    .breadcrumbs-and-heading {
+      z-index: 5;
+
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .breadcrumbs > .breadcrumb > ol {
+        margin-top: 0;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+      h1 {
+        background: white;
+        display: inline-block;
+        margin: 0;
+        padding: .2em $overhang;
+        margin-left: -$overhang;
+
+        @include mq($from: tablet) {
+          max-width: 20em;
+        }
+      }
+    }
+
+    .event-details {
+      padding-block: 1.5em;
+      display: flex;
+      gap: 1em;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+
+      .date-and-time {
+        display: inline-block;
+        border-bottom: 1px solid black;
+        padding-bottom: 1em;
+      }
+
+      .register {
+        .button {
+          outline: 1px solid black;
+
+          &:hover {
+            outline: 2px solid black;
+          }
+        }
+      }
+    }
+
+    .image {
+      padding-bottom: 1rem;
+
+      @include mq($from: tablet) {
+        img {
+          max-width: 14em;
+        }
+        padding-bottom: 0;
+      }
+    }
+
+    .triangle {
+      background-color: white;
+
+      &.yellow {
+        svg {
+          fill: $yellow;
+          stroke: $yellow;
+          stroke-width: 1;
+        }
+      }
+    }
+  }
+
+  .event-info,
+  .event-attributes {
+    max-width: 65rem;
+    margin: 2em auto;
+    padding-inline: 1em;
+    padding: 1em;
+  }
+
+  .event-info {
+    h2 {
+      @include font-size(large);
+      padding: .5em;
+      @include mq($from: tablet) {
+        margin-bottom: 2.5rem;
+      }
+    }
+
+    .event-summary {
+      display: flex;
+      flex-direction: column;
+      padding-block: 2em;
+      gap: 3em;
+
+      @include mq($from: tablet) {
+        flex-direction: row;
+        padding-block: 0em;
+        gap: 6em;
+      }
+
+      align-items: center;
+
+      .about-ttt-event {
+        position: relative;
+        @include train-to-teach-event-box($small: true);
+
+        flex-basis: 40%;
+      }
+
+      .about-event {
+        flex-basis: 100%;
+
+        padding: 1.5rem 1rem;
+
+        .leading {
+          font-weight: strong;
+        }
+      }
+
+      figure {
+        flex-basis: 60%;
+        position: relative;
+        margin: 0;
+
+        blockquote {
+          @include font-size(small);
+
+          font-weight: bold;
+          margin: 0;
+          padding: 0;
+
+          &:before,
+          &:after {
+            @include font-size(xlarge);
+            color: $pink-dark;
+          }
+
+          &:before {
+            content: open-quote;
+            position: absolute;
+            left: -.6em;
+            top: -.3em;
+          }
+
+          &:after {
+            position: absolute;
+            content: close-quote;
+            margin-left: .02em;
+            margin-top: -.1em;
+          }
+        }
+
+        figcaption {
+          margin-top: .6em;
+          @include font-size(xsmall);
+        }
+      }
+    }
+  }
+
+  .event-attributes {
+    display: grid;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
+    gap: 2em;
+
+    .event-attribute {
+      h3 {
+        @include font-size(medium);
+      }
+
+      flex: 1 1 20%;
+    }
+
+    @include mq($from: mobile) {
+      flex-direction: row;
+    }
+  }
+
+  .venue-information {
+    max-width: 65rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+    }
+
+    .venue-information-summary {
+      margin: 2em;
+    }
+
+    .venue-image {
+      @include mq($from: tablet) {
+        margin: auto;
+      }
+
+      picture {
+        margin: 2em;
+        img {
+          max-width: 20em;
+          max-height: 12em;
+        }
+      }
+    }
+  }
+
+  .what-theyre-saying {
+    display: grid;
+    background: $yellow;
+
+    grid-template-columns: auto minmax(2em, 30em) auto;
+    grid-template-rows: 1em auto;
+
+    @include mq($from: tablet) {
+      grid-template-rows: 2em auto;
+    }
+
+    .triangle {
+      grid-area: 1 / 1 / 2 / 4;
+      background-color: white;
+      margin-bottom: -5px;
+
+      &.yellow {
+        svg {
+          fill: $yellow;
+          stroke: $yellow;
+          stroke-width: 1;
+        }
+      }
+    }
+
+    .subheading {
+      grid-area: 1 / 2 / 2 / 3;
+
+      h3 {
+        @include font-size(large);
+        @include reset;
+        background-color: $pink;
+        color: $black;
+        display: inline-block;
+        padding: .2em .5em;
+      }
+    }
+
+    figure {
+      grid-area: 2 / 2 / 3 / 3;
+      margin-bottom: 1.5em;
+
+      blockquote {
+        @include font-size(small);
+
+        font-weight: bold;
+        margin: 2em 0 1em;
+        padding: 0;
+        position: relative;
+
+        &:before,
+        &:after {
+          @include font-size(xlarge);
+          color: $pink-dark;
+        }
+
+        &:before {
+          content: open-quote;
+          position: absolute;
+          left: -.6em;
+          top: -.3em;
+        }
+
+        &:after {
+          position: absolute;
+          content: close-quote;
+          margin-left: .02em;
+          margin-top: -.1em;
+        }
+      }
+
+      figcaption {
+        margin-top: .6em;
+        @include font-size(xsmall);
+      }
+    }
+  }
+}

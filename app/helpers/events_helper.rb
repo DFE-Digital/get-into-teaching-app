@@ -38,7 +38,11 @@ module EventsHelper
   end
 
   def is_event_type?(event, type_name)
-    event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES.dig(type_name)
+    event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES[type_name]
+  end
+
+  def event_type_name(id)
+    GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[id]
   end
 
   def embed_event_video_url(video_url)
@@ -133,9 +137,5 @@ module EventsHelper
 
   def qt_event_type_id
     GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
-  end
-
-  def event_list_id(name)
-    name.parameterize + "-list"
   end
 end
