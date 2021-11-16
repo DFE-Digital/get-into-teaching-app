@@ -79,7 +79,7 @@ gem "victor"
 gem "actionpack-cloudfront", ">= 1.1.0"
 
 # HTML-aware ERB parsing
-gem "better_html"
+gem "better_html", ">= 1.0.16"
 
 gem "dfe_wizard", github: "DFE-Digital/dfe_wizard"
 
@@ -102,14 +102,14 @@ group :development, :test do
   # Testing framework
   gem "rspec-rails", "~> 5.0.2"
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.36"
-  gem "factory_bot_rails", ">= 6.1.0"
+  gem "capybara", "~> 3.36", ">= 3.36.0"
+  gem "factory_bot_rails", ">= 6.2.0"
   gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false
   gem "simplecov"
 
   # Linting
-  gem "erb_lint", require: false
+  gem "erb_lint", ">= 0.1.1", require: false
   gem "mdl"
 end
 
