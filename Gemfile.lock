@@ -312,7 +312,7 @@ GEM
     public_suffix (4.0.6)
     puma (5.5.2)
       nio4r (~> 2.0)
-    racc (1.5.2)
+    racc (1.6.0)
     rack (2.2.3)
     rack-attack (6.5.0)
       rack (>= 1.0, < 3)
@@ -420,14 +420,14 @@ GEM
     semantic_logger (4.8.2)
       concurrent-ruby (~> 1.0)
     semantic_range (3.0.0)
-    sentry-rails (4.7.3)
+    sentry-rails (4.8.0)
       railties (>= 5.0)
-      sentry-ruby-core (~> 4.7.0)
-    sentry-ruby (4.7.3)
+      sentry-ruby-core (~> 4.8.0)
+    sentry-ruby (4.8.0)
       concurrent-ruby (~> 1.0, >= 1.0.2)
       faraday (>= 1.0)
-      sentry-ruby-core (= 4.7.3)
-    sentry-ruby-core (4.7.3)
+      sentry-ruby-core (= 4.8.0)
+    sentry-ruby-core (4.8.0)
       concurrent-ruby
       faraday
     shoulda-matchers (5.0.0)
@@ -550,7 +550,7 @@ DEPENDENCIES
   secure_headers
   selenium-webdriver (~> 3.142)
   sentry-rails (>= 4.7.3)
-  sentry-ruby (~> 4.7.3)
+  sentry-ruby (~> 4.8.0)
   shoulda-matchers
   simplecov
   skylight (~> 5.1.1)
