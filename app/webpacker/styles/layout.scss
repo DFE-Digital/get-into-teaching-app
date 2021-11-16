@@ -37,8 +37,16 @@ main,
   width: 1px;
 }
 
-.js-enabled .hidden {
-  display: none;
+.js-enabled {
+  .hidden-when-js-enabled {
+    display: none;
+  }
+}
+
+.hidden {
+  // We use important! to ensure any component-level
+  // display values (such as flex) are still hidden.
+  display: none !important;
 }
 
 // new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
@@ -55,7 +63,7 @@ main {
   }
 
   &--no-bottom-margin {
-    bottom-margin: 0;
+    margin-bottom: 0;
   }
 }
 
