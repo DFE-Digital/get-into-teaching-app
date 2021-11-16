@@ -59,10 +59,28 @@ module MailingList
   private
 
     def add_member_to_mailing_list
-      request = GetIntoTeachingApiClient::MailingListAddMember.new(export_camelized_hash)
+      request = GetIntoTeachingApiClient::MailingListAddMember.new(construct_export)
       api = GetIntoTeachingApiClient::MailingListApi.new
       Rails.logger.info("MailingList::Wizard#add_mailing_list_member: #{AttributeFilter.filtered_json(request)}")
       api.add_mailing_list_member(request)
+    end
+
+    def construct_export
+      export = export_camelized_hash
+
+      show_welcome_guide = ApplicationController.helpers.show_welcome_guide?(
+        export[:degreeStatusId],
+        export[:preferredTeachingSubjectId],
+      )
+
+      return export unless show_welcome_guide
+
+      export.tap do |h|
+        h[:welcomeGuideVariant] = export_data.slice(
+          "degree_status_id",
+          "preferred_teaching_subject_id",
+        ).to_query
+      end
     end
   end
 end

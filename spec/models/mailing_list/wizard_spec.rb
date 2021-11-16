@@ -4,11 +4,14 @@ describe MailingList::Wizard do
   subject { described_class.new wizardstore, "privacy_policy" }
 
   let(:uuid) { SecureRandom.uuid }
+  let(:degree_status_id) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"] }
   let(:store) do
     { uuid => {
       "email" => "email@address.com",
       "first_name" => "Joe",
       "last_name" => "Joseph",
+      "degree_status_id" => degree_status_id,
+      "preferred_teaching_subject_id" => "456",
     } }
   end
   let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
@@ -37,10 +40,16 @@ describe MailingList::Wizard do
   end
 
   describe "#complete!" do
+    let(:variant) { "degree_status_id=#{degree_status_id}&preferred_teaching_subject_id=456" }
     let(:request) do
-      GetIntoTeachingApiClient::MailingListAddMember.new(
-        { email: "email@address.com", firstName: "Joe", lastName: "Joseph" },
-      )
+      GetIntoTeachingApiClient::MailingListAddMember.new({
+        email: wizardstore[:email],
+        firstName: wizardstore[:first_name],
+        lastName: wizardstore[:last_name],
+        degreeStatusId: degree_status_id,
+        preferredTeachingSubjectId: wizardstore[:preferred_teaching_subject_id],
+        welcomeGuideVariant: variant,
+      })
     end
 
     before do
@@ -49,16 +58,47 @@ describe MailingList::Wizard do
         receive(:add_mailing_list_member).with(request)
       allow(Rails.logger).to receive(:info)
       allow(wizardstore).to receive(:prune!).and_call_original
-      subject.complete!
     end
 
-    it { is_expected.to have_received(:valid?) }
-    it { expect(store[uuid]).to eql({ "first_name" => "Joe", "last_name" => "Joseph" }) }
-    it { expect(wizardstore).to have_received(:prune!).with({ leave: MailingList::Wizard::ATTRIBUTES_TO_LEAVE }).once }
+    it "checks the wizard is valid" do
+      subject.complete!
+      is_expected.to have_received(:valid?)
+    end
+
+    it "prunes the store, retaining certain attributes" do
+      subject.complete!
+      expect(store[uuid]).to eql({
+        "first_name" => wizardstore[:first_name],
+        "last_name" => wizardstore[:last_name],
+        "degree_status_id" => wizardstore[:degree_status_id],
+        "preferred_teaching_subject_id" => wizardstore[:preferred_teaching_subject_id],
+      })
+      expect(wizardstore).to have_received(:prune!).with({ leave: MailingList::Wizard::ATTRIBUTES_TO_LEAVE }).once
+    end
 
     it "logs the request model (filtering sensitive attributes)" do
-      filtered_json = { "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]" }.to_json
+      subject.complete!
+      filtered_json = {
+        "preferredTeachingSubjectId" => request.preferred_teaching_subject_id,
+        "degreeStatusId" => request.degree_status_id,
+        "email" => "[FILTERED]",
+        "firstName" => "[FILTERED]",
+        "lastName" => "[FILTERED]",
+        "welcomeGuideVariant" => request.welcome_guide_variant,
+      }.to_json
+
       expect(Rails.logger).to have_received(:info).with("MailingList::Wizard#add_mailing_list_member: #{filtered_json}")
+    end
+
+    context "when not qualified for the welcome guide" do
+      let(:degree_status_id) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["First year"] }
+      let(:variant) { nil }
+
+      it "does not populate the welcome_guide_variant field" do
+        allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+          receive(:add_mailing_list_member).with(request)
+        subject.complete!
+      end
     end
   end
 
