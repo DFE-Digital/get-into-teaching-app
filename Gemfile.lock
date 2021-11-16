@@ -290,8 +290,6 @@ GEM
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
-    nokogiri (1.12.5-x86_64-linux)
-      racc (~> 1.4)
     observer (0.1.1)
     os (1.1.1)
     parallel (1.20.1)
@@ -503,17 +501,17 @@ DEPENDENCIES
   actionpack-page_caching (>= 1.2.4)
   addressable (~> 2.8.0)
   amazing_print
-  better_html
+  better_html (>= 1.0.16)
   bootsnap (>= 1.9.1)
   brakeman (~> 5.1.2)
   byebug
   canonical-rails (>= 0.2.13)
-  capybara (~> 3.36)
+  capybara (~> 3.36, >= 3.36.0)
   delegate (>= 0.2.0)
   dfe_wizard!
   dotenv-rails (>= 2.7.6)
-  erb_lint
-  factory_bot_rails (>= 6.1.0)
+  erb_lint (>= 0.1.1)
+  factory_bot_rails (>= 6.2.0)
   faraday (~> 1.8.0)
   faraday-encoding
   faraday-http-cache
