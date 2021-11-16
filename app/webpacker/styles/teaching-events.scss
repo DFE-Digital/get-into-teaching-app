@@ -719,3 +719,68 @@
     }
   }
 }
+
+.teaching-events__about-ttt-banner {
+  $desktop-unskew-amount: 12deg;
+  $desktop-skew-amount: -12deg;
+
+  $mobile-unskew-amount: 2deg;
+  $mobile-skew-amount: -2deg;
+
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  @include font-size(xsmall);
+  background: $white;
+
+  @include mq($from: mobile) {
+    flex-direction: row;
+  }
+
+  &--message {
+    background: $pink;
+
+    flex-basis: 60%;
+
+    p {
+      // transform: skew($unskew-amount);
+    }
+
+    @include mq($until: mobile) {
+      padding-top: 1em;
+      margin-top: -.5em;
+      transform: skewY($mobile-skew-amount);
+
+      p {
+        margin: .5em;
+        transform: skewY($mobile-unskew-amount);
+      }
+    }
+
+    @include mq($from: mobile) {
+      margin: auto 1rem;
+      padding-left: 3em;
+      margin-left: -2em;
+      transform: skew($desktop-skew-amount);
+
+      p {
+        transform: skew($desktop-unskew-amount);
+      }
+    }
+  }
+
+  &--link {
+    display: flex;
+    flex-basis: 40%;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      margin: 2em 1em;
+
+      @include mq($from: mobile) {
+        margin: 1em;
+      }
+    }
+  }
+}

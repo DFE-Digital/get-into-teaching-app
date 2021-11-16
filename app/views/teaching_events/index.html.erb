@@ -23,6 +23,21 @@
             <h2>Upcoming Train to Teach events</h2>
 
             <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>
+
+            <div class="teaching-events__about-ttt-banner">
+              <div class="teaching-events__about-ttt-banner--message">
+                <p>
+                  The main event. Designed by the Department for Education to
+                  give you everything you need to get into teaching.
+                </p>
+              </div>
+
+              <div class="teaching-events__about-ttt-banner--link">
+                <a href="#">
+                  What happens at a Train to Teach event?
+                </a>
+              </div>
+            </div>
           </div>
         <% end %>
 
