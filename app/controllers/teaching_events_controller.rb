@@ -39,6 +39,10 @@ class TeachingEventsController < ApplicationController
     render layout: "teaching_event"
   end
 
+  def about_ttt_events
+    breadcrumb "Teaching events", "/teaching-events"
+  end
+
 private
 
   def search_params
