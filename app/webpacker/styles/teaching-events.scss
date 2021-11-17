@@ -259,16 +259,20 @@
 
       &--left {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
         flex: 1 0 60%;
+        align-content: center;
+        gap: .5em 2em;
       }
 
       &--right{
         display: flex;
         flex-direction: column;
         justify-items: center;
-        padding: 1em;
+        padding: .2em 1em;
         flex: 0 1 40%;
+        text-align: right;
       }
     }
 
@@ -345,7 +349,7 @@
         &__location {
           @include font-size(xsmall);
 
-          padding: 1em 1em 1em 3.5rem;
+          padding: 1em 1em 1em 2.5rem;
         }
 
         &__setting {
