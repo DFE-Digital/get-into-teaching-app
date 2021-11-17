@@ -212,15 +212,11 @@
       }
 
       .dfelogo {
-        max-height: 6em;
-
-        @include mq($from: tablet) {
-          width: 60%;
-        }
+        max-height: 3em;
       }
 
       @include mq($from: tablet) {
-        picture {
+        .event-image {
           align-self: auto;
         }
       }
@@ -280,7 +276,7 @@
       padding: 2em 1em;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 2em;
     }
 
     &--train-to-teach {
@@ -330,7 +326,17 @@
         }
       }
 
-      .event__meta { flex-basis: 40%; }
+      .event__meta {
+        flex-basis: 40%;
+
+        .event-image {
+          object-position: center;
+
+          @include mq($from: tablet) {
+            max-height: 8em;
+          }
+        }
+      }
     }
 
     &--regular {
