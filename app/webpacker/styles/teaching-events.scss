@@ -184,7 +184,7 @@
     margin: 0;
     position: relative;
     background: white;
-    border: 2px solid $grey;
+    border: 2px solid darken($grey, 10%);
     padding: 0;
 
     &__info {
