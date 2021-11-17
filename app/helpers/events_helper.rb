@@ -41,10 +41,6 @@ module EventsHelper
     event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES[type_name]
   end
 
-  def event_type_name(id)
-    GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[id]
-  end
-
   def embed_event_video_url(video_url)
     video_url&.sub("watch?v=", "embed/")
   end

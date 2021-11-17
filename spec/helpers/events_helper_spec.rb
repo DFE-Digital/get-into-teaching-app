@@ -134,19 +134,6 @@ describe EventsHelper, type: "helper" do
     end
   end
 
-  describe "#event_type_name" do
-    GetIntoTeachingApiClient::Constants::EVENT_TYPES.each do |name, id|
-      describe %(when the id is #{id}) do
-        let(:name) { name }
-        let(:id) { id }
-
-        specify %(the returned name is '#{name}') do
-          expect(event_type_name(id)).to eql(name)
-        end
-      end
-    end
-  end
-
   describe "#event_type_color" do
     it "returns purple for train to teach events" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
