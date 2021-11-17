@@ -230,7 +230,10 @@
       &--left {
         @include font-size(xsmall);
         flex: 1 1 30%;
-        padding: .2em 1em;
+        padding: .2em 1em .2em 3em;
+        background: url(../images/icon-calendar.svg) no-repeat left center;
+        background-size: 2em;
+        background-position: .5em;
       }
 
       &--right {
