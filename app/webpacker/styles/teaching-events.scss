@@ -678,7 +678,7 @@
     }
 
     @include mq($from: mobile) {
-      margin: auto 1rem;
+      margin: 0 1rem;
       padding-left: 3em;
       margin-left: -2em;
       transform: skew($desktop-skew-amount);
@@ -694,10 +694,11 @@
     flex-basis: 40%;
     align-items: center;
     justify-content: center;
+    margin-block: 1em;
 
     a {
-      @include mq($from: tablet) {
-        margin-block: 1em;
+      @include mq($from: mobile) {
+        margin-block: 0;
       }
     }
   }
