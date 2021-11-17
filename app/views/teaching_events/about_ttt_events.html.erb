@@ -4,13 +4,13 @@
 <div class="about-ttt-events">
   <header>
     <h1>
-      <span>What is a</span><br/>
+      <span>What is a</span>
+      <br>
       <span>Train to Teach event?</span>
     </h1>
 
     <%= image_pack_tag "media/images/content/event-signup/birmingham-event-3.jpg", alt: "A popular train to teach event in a hall with stalls and banners" %>
   </header>
-
 
   <article>
     <p>
@@ -46,10 +46,5 @@
     </ul>
   </article>
 
-  <%= render(
-      partial: "teaching_events/show/what-theyre-saying",
-      locals: {
-        quote: "It was exactly what I needed to give me guidance on the next steps to be taken"
-      }
-    ) %>
+  <%= render(partial: "teaching_events/show/what-theyre-saying", locals: { quote: "It was exactly what I needed to give me guidance on the next steps to be taken" }) %>
 </div>
