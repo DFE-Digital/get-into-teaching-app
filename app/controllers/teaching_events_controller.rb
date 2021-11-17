@@ -45,6 +45,10 @@ class TeachingEventsController < ApplicationController
 
 private
 
+  def static_page_actions
+    %i[about_ttt_events]
+  end
+
   def search_params
     params.permit(teaching_events_search: [:postcode, :distance, { online: [], type: [] }])[:teaching_events_search]
   end
