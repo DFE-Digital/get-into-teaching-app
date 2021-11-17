@@ -29,6 +29,12 @@ RSpec.describe WelcomeHelper, type: :helper do
       let(:final_year) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"] }
 
       it { expect(show_welcome_guide?(final_year)).to be true }
+
+      context "when production" do
+        before { allow(Rails).to receive(:env) { "production".inquiry } }
+
+        it { expect(show_welcome_guide?(final_year)).to be false }
+      end
     end
 
     context "when degree_status is 'graduate or postgraduate'" do
