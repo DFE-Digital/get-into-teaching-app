@@ -641,81 +641,207 @@
     }
   }
 
-  .what-theyre-saying {
-    display: grid;
-    background: $yellow;
+}
 
-    grid-template-columns: auto minmax(2em, 30em) auto;
-    grid-template-rows: 1em auto;
+.teaching-events__about-ttt-banner {
+  $desktop-unskew-amount: 12deg;
+  $desktop-skew-amount: -12deg;
+
+  $mobile-unskew-amount: 2deg;
+  $mobile-skew-amount: -2deg;
+
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+  @include font-size(xsmall);
+  background: $white;
+
+  @include mq($from: mobile) {
+    flex-direction: row;
+    margin-inline: 1em;
+  }
+
+  &--message {
+    background: $pink;
+
+    flex-basis: 60%;
+
+    p {
+      padding-inline: 1em;
+    }
+
+    @include mq($until: mobile) {
+      padding-top: 1em;
+      margin-top: -.5em;
+      transform: skewY($mobile-skew-amount);
+
+      p {
+        margin: .5em;
+        transform: skewY($mobile-unskew-amount);
+      }
+    }
+
+    @include mq($from: mobile) {
+      margin: 0 1rem;
+      padding-left: 3em;
+      margin-left: -2em;
+      transform: skew($desktop-skew-amount);
+
+      p {
+        transform: skew($desktop-unskew-amount);
+      }
+    }
+  }
+
+  &--link {
+    display: flex;
+    flex-basis: 40%;
+    align-items: center;
+    justify-content: center;
+    margin-block: 1em;
+
+    a {
+      @include mq($from: mobile) {
+        margin-block: 0;
+      }
+    }
+  }
+}
+
+.about-ttt-events {
+  header {
+    display: grid;
+    margin: 1em 2em;
+
+    grid-template-rows: min-content 1em min-content;
+    grid-template-columns: auto;
+
+    h1 {
+      grid-area: 1 / 1 / 3 / 2;
+    }
+
+    picture {
+      transform: rotate(3deg);
+      grid-area: 2 / 1 / 4 / 2;
+      text-align: right;
+    }
 
     @include mq($from: tablet) {
-      grid-template-rows: 2em auto;
-    }
+      grid-template-rows: auto;
+      grid-template-columns: 2fr 3em 1fr;
 
-    .triangle {
-      grid-area: 1 / 1 / 2 / 4;
-      background-color: white;
-      margin-bottom: -5px;
+      h1 {
+        grid-area: 1 / 1 / 2 / 3;
+      }
 
-      &.yellow {
-        svg {
-          fill: $yellow;
-          stroke: $yellow;
-          stroke-width: 1;
-        }
+      picture {
+        grid-area: 1 / 2 / 2 / 4;
+        text-align: left;
       }
     }
 
-    .subheading {
-      grid-area: 1 / 2 / 2 / 3;
 
-      h3 {
-        @include font-size(large);
-        @include reset;
-        background-color: $pink;
-        color: $black;
-        display: inline-block;
-        padding: .2em .5em;
+    h1 {
+      @include font-size(xxlarge);
+      margin: 0;
+      z-index: 100;
+
+      span {
+        background: $pink;
       }
     }
 
-    figure {
-      grid-area: 2 / 2 / 3 / 3;
-      margin-bottom: 1.5em;
+    picture {
+      img {
+        max-height: 12em;
+      }
+    }
+  }
 
-      blockquote {
-        @include font-size(small);
+  article {
+    max-width: 65ch;
+    margin: 2em;
 
-        font-weight: bold;
-        margin: 2em 0 1em;
-        padding: 0;
-        position: relative;
+    .button {
+      margin-block: 2em;
+    }
+  }
+}
 
-        &:before,
-        &:after {
-          @include font-size(xlarge);
-          color: $pink-dark;
-        }
+.what-theyre-saying {
+  display: grid;
+  background: $yellow;
 
-        &:before {
-          content: open-quote;
-          position: absolute;
-          left: -.6em;
-          top: -.3em;
-        }
+  grid-template-columns: auto minmax(2em, 30em) auto;
+  grid-template-rows: 1em auto;
 
-        &:after {
-          position: absolute;
-          content: close-quote;
-          margin-left: .02em;
-          margin-top: -.1em;
-        }
+  @include mq($from: tablet) {
+    grid-template-rows: 2em auto;
+  }
+
+  .triangle {
+    grid-area: 1 / 1 / 2 / 4;
+    background-color: white;
+    margin-bottom: -5px;
+
+    &.yellow {
+      svg {
+        fill: $yellow;
+        stroke: $yellow;
+        stroke-width: 1;
+      }
+    }
+  }
+
+  .subheading {
+    grid-area: 1 / 2 / 2 / 3;
+
+    h3 {
+      @include font-size(medium);
+      @include reset;
+      background-color: $pink;
+      color: $black;
+      display: inline-block;
+      padding: .2em .5em;
+    }
+  }
+
+  figure {
+    grid-area: 2 / 2 / 3 / 3;
+    margin-bottom: 1.5em;
+
+    blockquote {
+      @include font-size(small);
+
+      font-weight: bold;
+      margin: 2em 0 1em;
+      padding: 0;
+      position: relative;
+
+      &:before,
+      &:after {
+        @include font-size(xlarge);
+        color: $pink-dark;
       }
 
-      figcaption {
-        margin-top: .6em;
-        @include font-size(xsmall);
+      &:before {
+        content: open-quote;
+        position: absolute;
+        left: -.6em;
+        top: -.3em;
       }
+
+      &:after {
+        position: absolute;
+        content: close-quote;
+        margin-left: .02em;
+        margin-top: -.1em;
+      }
+    }
+
+    figcaption {
+      margin-top: .6em;
+      @include font-size(xsmall);
     }
   }
 }
