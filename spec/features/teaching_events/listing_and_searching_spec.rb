@@ -159,7 +159,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expected_type_ids = event_types.values_at("School or University event")
 
-      check "School and university"
+      check "Training provider"
       click_on "Update results"
 
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
@@ -171,7 +171,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expected_type_ids = event_types.values_at("Train to Teach event", "Question Time", "School or University event")
 
       check "Train to Teach"
-      check "School and university"
+      check "Training provider"
       click_on "Update results"
 
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
