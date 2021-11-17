@@ -666,6 +666,10 @@
 
     flex-basis: 60%;
 
+    p {
+      padding-inline: 1em;
+    }
+
     @include mq($until: mobile) {
       padding-top: 1em;
       margin-top: -.5em;
