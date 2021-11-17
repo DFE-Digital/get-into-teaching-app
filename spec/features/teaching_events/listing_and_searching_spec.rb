@@ -86,8 +86,8 @@ RSpec.feature "Searching for teaching events", type: :feature do
     scenario "each event should be listed with the appropriate details" do
       expect(page).to have_css(".event.event--train-to-teach", count: 2)
 
-      expect(page).to have_css(".event .event__info__type", text: "Online event")
-      expect(page).to have_css(".event .event__info__type", text: "School or University event")
+      expect(page).to have_css(".event .event__info__type", text: "Online forum")
+      expect(page).to have_css(".event .event__info__type", text: "Training provider")
 
       events.each do |event|
         expect(page).to have_link(event.name, href: teaching_event_path(event.readable_id))
@@ -137,7 +137,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expected_type_ids = event_types.values_at("Train to Teach event", "Question Time")
 
-      check "Train to teach"
+      check "Train to Teach"
       click_on "Update results"
 
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
@@ -159,7 +159,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expected_type_ids = event_types.values_at("School or University event")
 
-      check "School and university"
+      check "Training provider"
       click_on "Update results"
 
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
@@ -170,8 +170,8 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expected_type_ids = event_types.values_at("Train to Teach event", "Question Time", "School or University event")
 
-      check "Train to teach"
-      check "School and university"
+      check "Train to Teach"
+      check "Training provider"
       click_on "Update results"
 
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
