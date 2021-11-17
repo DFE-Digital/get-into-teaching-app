@@ -86,8 +86,8 @@ RSpec.feature "Searching for teaching events", type: :feature do
     scenario "each event should be listed with the appropriate details" do
       expect(page).to have_css(".event.event--train-to-teach", count: 2)
 
-      expect(page).to have_css(".event .event__info__type", text: "Online event")
-      expect(page).to have_css(".event .event__info__type", text: "School or University event")
+      expect(page).to have_css(".event .event__info__type", text: "Online forum")
+      expect(page).to have_css(".event .event__info__type", text: "Training provider")
 
       events.each do |event|
         expect(page).to have_link(event.name, href: teaching_event_path(event.readable_id))
