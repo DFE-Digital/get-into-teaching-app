@@ -76,7 +76,7 @@ gem "geometry", github: "bfoz/geometry", ref: "3054ccb"
 gem "victor"
 
 # Ignore cloudfront IPs when getting customer IP address
-gem "actionpack-cloudfront", ">= 1.1.0"
+gem "actionpack-cloudfront", ">= 1.2.0"
 
 # HTML-aware ERB parsing
 gem "better_html"
