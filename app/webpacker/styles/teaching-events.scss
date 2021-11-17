@@ -666,10 +666,6 @@
 
     flex-basis: 60%;
 
-    p {
-      // transform: skew($unskew-amount);
-    }
-
     @include mq($until: mobile) {
       padding-top: 1em;
       margin-top: -.5em;
@@ -700,10 +696,8 @@
     justify-content: center;
 
     a {
-      margin: 2em 1em;
-
-      @include mq($from: mobile) {
-        margin: 1em;
+      @include mq($from: tablet) {
+        margin-block: 1em;
       }
     }
   }
