@@ -793,7 +793,7 @@
     grid-area: 1 / 2 / 2 / 3;
 
     h3 {
-      @include font-size(large);
+      @include font-size(medium);
       @include reset;
       background-color: $pink;
       color: $black;
