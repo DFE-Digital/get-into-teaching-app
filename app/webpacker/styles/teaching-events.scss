@@ -63,6 +63,10 @@ $slightly-darker-grey: darken($grey, 10%);
     @include mq($from: desktop) {
       flex-basis: 25%;
     }
+
+    h2 {
+      @include font-size(medium);
+    }
   }
 
   &__listing {

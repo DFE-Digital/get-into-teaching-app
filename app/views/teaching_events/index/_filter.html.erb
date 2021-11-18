@@ -1,4 +1,5 @@
 <%= govuk_form_for(@event_search, method: :get, url: "/teaching-events") do |f| %>
+  <h2>Filters</h2>
 
   <div class="events__filter--group">
     <%= f.govuk_text_field(:postcode, label: { text: "Postcode" }, form_group: { classes: 'reduce-bottom-margin' }) %>
