@@ -39,7 +39,15 @@ class TeachingEventsController < ApplicationController
     render layout: "teaching_event"
   end
 
+  def about_ttt_events
+    breadcrumb "Teaching events", "/teaching-events"
+  end
+
 private
+
+  def static_page_actions
+    %i[about_ttt_events]
+  end
 
   def search_params
     params.permit(teaching_events_search: [:postcode, :distance, { online: [], type: [] }])[:teaching_events_search]

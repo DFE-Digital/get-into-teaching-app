@@ -10,6 +10,15 @@ A service for candidates to [get-into-teaching](https://getintoteaching.educatio
 [![View problem response times on Skylight](https://badges.skylight.io/problem/cCXe4O12iXtO.svg?token=dmQT0j0nuvDKRWL0RSr5ZMr-ARd25yfRzTePxnMsLYU)](https://www.skylight.io/app/applications/cCXe4O12iXtO)
 [![Build and Deploy](https://github.com/DFE-Digital/get-into-teaching-app/actions/workflows/build.yml/badge.svg)](https://github.com/DFE-Digital/get-into-teaching-app/actions/workflows/build.yml)
 
+
+## Table of Contents
+
+- [Documentation](#documentation)
+- [Environments](#environments)
+- [Guides](#guides)
+- [Application Specific](#guides)
+- [License](#license)
+
 ## Environments
 
 | Name       | URL                                                                     | Description                                                                     | PaaS space                          | 
@@ -20,17 +29,12 @@ A service for candidates to [get-into-teaching](https://getintoteaching.educatio
 | UR         | [UR](https://get-into-teaching-app-ur.london.cloudapps.digital)         | For internal use by DFE for User Research sessions                              | `get-into-teaching-test`            |   
 | PageSpeed  | [PS](https://get-into-teaching-app-pagespeed.london.cloudapps.digital)  | Analysis system to gather metrics about the performance of the web application  | `get-into-teaching-test`            |   
 
-## Table of Contents
-
-- [Documentation](#documentation)
-- [Guides](#guides)
-- [License](#license)
 
 ## Guides
 
 - [Dfe Technical Guidence](https://technical-guidance.education.gov.uk/)
 
-### Application Specific
+## Application Specific Guides
 - [Configuration](/docs/configuration.md)
 - [Mac Setup](/docs/mac-setup.md)
 - [Setting up the application in development](/docs/setup-development.md)
@@ -41,3 +45,4 @@ A service for candidates to [get-into-teaching](https://getintoteaching.educatio
 ## License
 
 [MIT Licence](LICENCE)
+

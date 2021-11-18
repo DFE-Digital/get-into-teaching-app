@@ -74,11 +74,29 @@ describe TeachingEventsHelper, type: "helper" do
 
   describe "#event_type_name" do
     specify "returns the event name given a valid id" do
-      expect(event_type_name(222_750_008)).to eql("Online event")
+      expect(event_type_name(222_750_007)).to eql("Question Time")
     end
 
     specify "returns nil when given an invalid id" do
       expect(event_type_name(987_654_321)).to be nil
+    end
+
+    context "when overriding values" do
+      let(:custom_event) { "Bingo night" }
+
+      specify "returns online forum instead of online event by default" do
+        expect(GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[222_750_008]).to eql("Online event")
+        expect(event_type_name(222_750_008)).to eql("Online forum")
+      end
+
+      specify "returns training provider instead of school or uni event by default" do
+        expect(GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[222_750_009]).to eql("School or University event")
+        expect(event_type_name(222_750_009)).to eql("Training provider")
+      end
+
+      specify "allows the arbitrary overriding of event types" do
+        expect(event_type_name(123, overrides: { custom_event => 123 })).to eql(custom_event)
+      end
     end
   end
 

@@ -1,0 +1,50 @@
+<% @page_title = "About train to teach events" %>
+<%= render Header::BreadcrumbComponent.new %>
+
+<div class="about-ttt-events">
+  <header>
+    <h1>
+      <span>What is a</span>
+      <br>
+      <span>Train to Teach event?</span>
+    </h1>
+
+    <%= image_pack_tag "media/images/content/event-signup/birmingham-event-3.jpg", alt: "A popular train to teach event in a hall with stalls and banners" %>
+  </header>
+
+  <article>
+    <p>
+      Train to Teach events are designed to give you an insight into what it’s
+      like to be a teacher, as well as the practical information you need to get
+      onto a teacher training course.
+    </p>
+
+    <p>
+      Events are run by the Department for Education and are impartial. We do
+      invite local training providers along to give you an idea of what they
+      offer, but our goal is to answer your questions and give you the confidence
+      to take your next step.
+    </p>
+
+    <p>
+      To attend, you need to register. Spaces are limited, so the sooner you sign
+      up, the better.
+    </p>
+
+    <p>
+    <%= link_to("Register for a Train to Teach event", teaching_events_path("teaching_events_search[type][]" => "222_750_001,222_750_007"), class: "button") %>
+    </p>
+
+    <h2>What to expect on the day:</h2>
+
+    <p>Events last a few hours. In that time, you’ll have a chance to:</p>
+
+    <ul>
+      <li>put your questions to expert advisers, teachers and training providers</li>
+      <li>chat with current teachers and find out what a career in teaching is really like</li>
+      <li>listen to a step-by-step guide on how to get into teaching, the application process and funding your training</li>
+    </ul>
+  </article>
+
+  <%= render(partial: "teaching_events/show/what-theyre-saying", locals: { quote: "It was exactly what I needed to give me guidance on the next steps to be taken." }) %>
+</div>

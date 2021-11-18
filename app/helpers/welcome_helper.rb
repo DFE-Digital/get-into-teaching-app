@@ -1,5 +1,7 @@
 module WelcomeHelper
   def show_welcome_guide?(degree_status = degree_status_id, consideration_journey_stage = consideration_journey_stage_id)
+    return false if Rails.env.production?
+
     gradudate_or_postgraduate = retrieve_degree_status_ids("Graduate or postgraduate")
     allowed_graduate_consideration_stages = retrieve_consideration_journey_stage_ids(
       "It’s just an idea",
