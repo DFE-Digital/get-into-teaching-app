@@ -67,6 +67,17 @@ $slightly-darker-grey: darken($grey, 10%);
     h2 {
       @include font-size(medium);
     }
+
+    &--group {
+      p {
+        @include reset;
+      }
+    }
+
+    &--group.with-top-border {
+      border-top: 1px solid $slightly-darker-grey;
+      padding-top: 2rem;
+    }
   }
 
   &__listing {
