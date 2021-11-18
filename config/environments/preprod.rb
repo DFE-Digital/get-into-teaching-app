@@ -8,9 +8,9 @@ require File.expand_path("production.rb", __dir__)
 #
 # We can only set one domain in this header, which means fonts don't work
 # on the other. To get around this we need to use a wildcard in test.
-config.public_file_server.headers["Access-Control-Allow-Origin"] = "*"
-
 Rails.application.configure do
+  config.public_file_server.headers["Access-Control-Allow-Origin"] = "*"
+
   # Override any production defaults here
   config.x.git_api_endpoint = \
     "https://get-into-teaching-api-test.london.cloudapps.digital/api"
