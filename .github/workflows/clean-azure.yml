@@ -43,7 +43,7 @@ jobs:
       - name: Remove old Review Terraform Files
         run:  |
             cf target -s get-into-teaching
-            BLOBS=$(az storage blob list -o json --container-name pass-tfstate --account-name s146d01sgtfstate  | jq -r '.[] | select(.name | contains( "review-get-into-teaching-app-")) | .name' )
+            BLOBS=$(az storage blob list -o json --container-name pass-tfstate --account-key ${{secrets.ARM_ACCESS_KEY}} --account-name s146d01sgtfstate  | jq -r '.[] | select(.name | contains( "review-get-into-teaching-app-")) | .name' )
             APPS=$(cf apps | cut -d ' ' -f1 | grep 'review')
 
             for i in $(echo $BLOBS)
@@ -51,6 +51,6 @@ jobs:
                 name=$(echo $i |  cut -f1  -d '.' )
                 if ! [[ $APPS =~ (^|[[:space:]])"$name"($|[[:space:]]) ]] ; then
                      echo "....." $name
-                     az storage blob delete --container-name  pass-tfstate --account-name s146d01sgtfstate -n ${i}
+                     az storage blob delete --container-name  pass-tfstate --account-name s146d01sgtfstate --account-key ${{secrets.ARM_ACCESS_KEY}} -n ${i}
                 fi
             done
