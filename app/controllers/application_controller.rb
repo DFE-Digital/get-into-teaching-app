@@ -75,7 +75,10 @@ private
 
       next if classes && (classes & classes_to_suppress).any?
 
-      if anchor[:href].include?("//")
+      external_link = anchor[:href].include?("//")
+      externally_hosted_internal_asset = ENV["APP_ASSETS_URL"].present? && anchor[:href].start_with?(ENV["APP_ASSETS_URL"])
+
+      if external_link && !externally_hosted_internal_asset
         anchor.add_child(helpers.image_pack_tag("media/images/icon-external.svg", class: "external-link-icon", alt: ""))
       end
     end
