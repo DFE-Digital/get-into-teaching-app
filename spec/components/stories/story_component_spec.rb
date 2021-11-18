@@ -56,7 +56,7 @@ describe Stories::StoryComponent, type: "component" do
     end
 
     specify "the story's image is rendered" do
-      is_expected.to have_css(%(img[src*="/packs-test/media/images/content/stories/stories-karen"]))
+      is_expected.to have_css(%(img[src*="/packs-test/v1/media/images/content/stories/stories-karen"]))
     end
 
     specify "the teacher name and position are in secondary heading" do
