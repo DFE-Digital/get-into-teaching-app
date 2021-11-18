@@ -21,6 +21,7 @@ RSpec.feature "link checks", :onschedule do
       # comparing to hash instead of checking .empty? so the failures dump
       # the difference in the hashes
       expect(failures).to eql({})
+
     end
   end
 
