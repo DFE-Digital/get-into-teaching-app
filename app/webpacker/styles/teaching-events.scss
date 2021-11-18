@@ -1,24 +1,18 @@
-@mixin train-to-teach-event-box($small: false) {
+@mixin train-to-teach-event-box {
   border: 2px solid $pink;
   padding: 2rem 1rem 1rem;
 
   &::after {
-    @include font-size(medium);
+    @include font-size(small);
     position: absolute;
     content: "Train to Teach event";
-    right: 1rem;
+    right: 5%;
     top: -1em;
     background: $pink url(../images/icon-ttt-white.svg) no-repeat left center;
     background-size: 1.2em;
     background-position: .4em;
     font-weight: bold;
     padding: .4em .4em .4em 2em;
-
-    @if $small {
-      @include mq($from: tablet) {
-        @include font-size(small);
-      }
-    }
   }
 }
 
@@ -542,7 +536,7 @@
 
       .about-ttt-event {
         position: relative;
-        @include train-to-teach-event-box($small: true);
+        @include train-to-teach-event-box;
 
         flex-basis: 40%;
       }
