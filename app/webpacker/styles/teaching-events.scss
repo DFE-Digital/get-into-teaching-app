@@ -1,3 +1,5 @@
+$slightly-darker-grey: darken($grey, 10%);
+
 @mixin train-to-teach-event-box {
   border: 2px solid $pink;
   padding: 2rem 1rem 1rem;
@@ -68,6 +70,9 @@
       flex-basis: 75%;
     }
 
+    @include mq($from: tablet) {
+      border-left: 1px solid $slightly-darker-grey;
+    }
   }
 
   &__pagination {
@@ -179,7 +184,7 @@
     margin: 0;
     position: relative;
     background: white;
-    border: 2px solid darken($grey, 10%);
+    border: 2px solid $slightly-darker-grey;
     padding: 0;
 
     &__info {
