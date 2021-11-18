@@ -28,7 +28,7 @@ describe Cards::StoryComponent, type: "component" do
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }
   it { is_expected.not_to have_css ".card header" }
-  it { is_expected.to have_css(%(img[src*="packs-test/media/images/dfelogo"])) }
+  it { is_expected.to have_css(%(img[src*="packs-test/v1/media/images/dfelogo"])) }
   it { is_expected.to have_content story["snippet"] }
 
   specify "includes the name in a link" do
