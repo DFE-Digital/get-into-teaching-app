@@ -28,6 +28,9 @@ A service for candidates to [get-into-teaching](https://getintoteaching.educatio
 
 ## Guides
 
+- [Dfe Technical Guidence](https://technical-guidance.education.gov.uk/)
+
+### Application Specific
 - [Configuration](/docs/configuration.md)
 - [Mac Setup](/docs/mac-setup.md)
 - [Setting up the application in development](/docs/setup-development.md)
