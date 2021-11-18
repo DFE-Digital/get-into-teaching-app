@@ -47,4 +47,4 @@ jobs:
           TF_VAR_AZURE_CREDENTIALS:     ${{ secrets.AZURE_CREDENTIALS }}
 
       - name: Delete Terraform Storage File
-        run:  az storage blob delete --container-name  pass-tfstate --account-name s105d01devstorage --account-key ${{secrets.ARM_ACCESS_KEY}} -n ${{steps.variables.outputs.pr_name}}.tfstate
+        run:  az storage blob delete --container-name  pass-tfstate --account-name s146d01sgtfstate --account-key ${{secrets.ARM_ACCESS_KEY}} -n ${{steps.variables.outputs.pr_name}}.tfstate
