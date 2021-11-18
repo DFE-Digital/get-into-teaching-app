@@ -20,7 +20,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(page).to have_css(".date-and-time", text: event.end_at.to_formatted_s(:time))
 
       within(".register") do
-        expect(page).to have_link("Register your attendance", href: event_steps_path(event.readable_id))
+        expect(page).to have_link("Register for this event", href: event_steps_path(event.readable_id))
       end
 
       within(".event-info > .event-summary") do
