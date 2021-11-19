@@ -47,7 +47,6 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(page).not_to have_css(".register")
 
       within(".event-info") do
-        expect(page).to have_css(".about-event", text: Regexp.new(event.summary))
         expect(page).to have_css(".about-event", text: Regexp.new(Nokogiri.parse(event.description).text))
 
         expect(page).not_to have_css(".about-ttt-event")

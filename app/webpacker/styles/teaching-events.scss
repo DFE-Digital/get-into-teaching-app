@@ -532,6 +532,7 @@ $slightly-darker-grey: darken($grey, 10%);
       flex-direction: column;
       padding-block: 2em;
       gap: 3em;
+      margin-bottom: 4em;
 
       @include mq($from: tablet) {
         flex-direction: row;
@@ -546,16 +547,6 @@ $slightly-darker-grey: darken($grey, 10%);
         @include train-to-teach-event-box;
 
         flex-basis: 40%;
-      }
-
-      .about-event {
-        flex-basis: 100%;
-
-        padding: 1.5rem 1rem;
-
-        .leading {
-          font-weight: strong;
-        }
       }
 
       figure {
@@ -595,6 +586,22 @@ $slightly-darker-grey: darken($grey, 10%);
           margin-top: .6em;
           @include font-size(xsmall);
         }
+      }
+    }
+
+    .about-event {
+      flex-basis: 100%;
+      max-width: 65ch;
+      padding: 1.5rem auto;
+      margin: auto;
+
+      @include mq($from: tablet) {
+        padding: 1.5rem 1rem;
+      }
+
+      ul {
+        list-style-position: outside;
+        padding-left: 1.5em;
       }
     }
   }

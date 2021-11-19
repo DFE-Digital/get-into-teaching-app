@@ -28,10 +28,10 @@
     <div class="event-summary">
       <% if is_a_train_to_teach_event?(@event) %>
         <%= render(partial: 'teaching_events/show/train-to-teach-event-summary') %>
-      <% else %>
-        <%= render(partial: 'teaching_events/show/event-summary') %>
       <% end %>
     </div>
+
+    <%= render(partial: 'teaching_events/show/event-summary') %>
   </section>
 
   <%= render(partial: "teaching_events/show/event-attributes") %>
