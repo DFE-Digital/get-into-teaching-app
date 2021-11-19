@@ -22,45 +22,50 @@ describe Internal::Event do
 
     describe "#name" do
       it { is_expected.to allow_value("test").for :name }
-      it { is_expected.to_not allow_values("", nil).for :name }
+      it { is_expected.not_to allow_values("", nil).for :name }
       it { is_expected.to validate_length_of(:name).is_at_most(300) }
     end
 
     describe "#readable_id" do
-      it { is_expected.to allow_value("test").for :readable_id }
-      it { is_expected.to_not allow_values("", nil).for :readable_id }
       it { is_expected.to validate_length_of(:readable_id).is_at_most(300) }
+      it { is_expected.to allow_value("test_event-url").for :readable_id }
+
+      it do
+        is_expected.not_to allow_values(
+          "test@event", "test?event", "test:event", "test(event)", "_test", "test_", "-test", "test-", nil
+        ).for :readable_id
+      end
     end
 
     describe "#summary" do
       it { is_expected.to allow_value("test").for :summary }
-      it { is_expected.to_not allow_values("", nil).for :summary }
+      it { is_expected.not_to allow_values("", nil).for :summary }
       it { is_expected.to validate_length_of(:summary).is_at_most(1000) }
     end
 
     describe "#description" do
       it { is_expected.to allow_value("test").for :description }
-      it { is_expected.to_not allow_values("", nil).for :description }
+      it { is_expected.not_to allow_values("", nil).for :description }
       it { is_expected.to validate_length_of(:description).is_at_most(2000) }
     end
 
     describe "#start_at" do
-      it { is_expected.to_not allow_values(nil, now - 1.minute, now).for :start_at }
+      it { is_expected.not_to allow_values(nil, now - 1.minute, now).for :start_at }
       it { is_expected.to allow_value(Time.zone.now + 1.minute).for :start_at }
     end
 
     describe "#end_at" do
-      it { is_expected.to_not allow_values(nil, now - 1.minute, now).for :end_at }
+      it { is_expected.not_to allow_values(nil, now - 1.minute, now).for :end_at }
       it { is_expected.to allow_value(now + 1.minute).for :end_at }
 
       it "is expected not to allow end at to be the same as start at" do
         subject.start_at = now + 1.minute
-        is_expected.to_not allow_value(subject.start_at).for :end_at
+        is_expected.not_to allow_value(subject.start_at).for :end_at
       end
 
       it "is expected not to allow end at to be earlier than start at" do
         subject.start_at = now + 2.minutes
-        is_expected.to_not allow_value(now + 1.minute).for :end_at
+        is_expected.not_to allow_value(now + 1.minute).for :end_at
       end
 
       it "is expected to allow end at to be later than start at" do
@@ -73,8 +78,7 @@ describe Internal::Event do
       before { allow(subject).to receive(:online_event?).and_return(true) }
 
       describe "#scribble_id" do
-        it { is_expected.to allow_value("test").for :scribble_id }
-        it { is_expected.to_not allow_values("", nil).for :scribble_id }
+        it { is_expected.to allow_values("test", "", nil).for :scribble_id }
         it { is_expected.to validate_length_of(:scribble_id).is_at_most(300) }
       end
     end
@@ -84,30 +88,30 @@ describe Internal::Event do
 
       describe "#is_online" do
         it { is_expected.to allow_values(true, false).for :is_online }
-        it { is_expected.to_not allow_value(nil).for :is_online }
+        it { is_expected.not_to allow_value(nil).for :is_online }
       end
 
       describe "#provider contact email" do
         it { is_expected.to allow_value("test@test.com").for :provider_contact_email }
-        it { is_expected.to_not allow_values("test", "", nil).for :provider_contact_email }
+        it { is_expected.not_to allow_values("test", "", nil).for :provider_contact_email }
         it { is_expected.to validate_length_of(:provider_contact_email).is_at_most(100) }
       end
 
       describe "#provider organiser" do
         it { is_expected.to allow_value("test").for :provider_organiser }
-        it { is_expected.to_not allow_value("", nil).for :provider_organiser }
+        it { is_expected.not_to allow_value("", nil).for :provider_organiser }
         it { is_expected.to validate_length_of(:provider_organiser).is_at_most(300) }
       end
 
       describe "#provider target audience" do
         it { is_expected.to allow_value("test").for :provider_target_audience }
-        it { is_expected.to_not allow_value("", nil).for :provider_target_audience }
+        it { is_expected.not_to allow_value("", nil).for :provider_target_audience }
         it { is_expected.to validate_length_of(:provider_target_audience).is_at_most(500) }
       end
 
       describe "#provider website url" do
         it { is_expected.to allow_value("test").for :provider_website_url }
-        it { is_expected.to_not allow_value("", nil).for :provider_website_url }
+        it { is_expected.not_to allow_value("", nil).for :provider_website_url }
         it { is_expected.to validate_length_of(:provider_website_url).is_at_most(300) }
       end
     end
@@ -119,13 +123,13 @@ describe Internal::Event do
       context "when building is nil" do
         before { subject.building = nil }
 
-        it { is_expected.to_not allow_value(described_class::VENUE_TYPES[:existing]).for :venue_type }
+        it { is_expected.not_to allow_value(described_class::VENUE_TYPES[:existing]).for :venue_type }
       end
 
       context "when building.id is nil" do
         before { subject.building = build(:event_building, id: nil) }
 
-        it { is_expected.to_not allow_value(described_class::VENUE_TYPES[:existing]).for :venue_type }
+        it { is_expected.not_to allow_value(described_class::VENUE_TYPES[:existing]).for :venue_type }
       end
     end
   end
@@ -151,6 +155,7 @@ describe Internal::Event do
           provider_website_url: api_event.provider_website_url,
         ).slice(described_class.attribute_names)
       end
+
       context "with building" do
         let(:expected_building_attributes) { attributes_for(:event_building_api, id: api_event.building.id) }
 
@@ -237,6 +242,7 @@ describe Internal::Event do
   describe "#type_id=" do
     context "when event is initialised with 'online' event_type" do
       subject { described_class.new({ type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }) }
+
       it "sets 'is_online' to true" do
         expect(subject.is_online).to be true
       end
@@ -248,7 +254,7 @@ describe Internal::Event do
 
     context "when the result is invalid" do
       it "returns false" do
-        allow_any_instance_of(described_class).to receive(:invalid?) { true }
+        allow_any_instance_of(described_class).to receive(:invalid?).and_return(true)
         expect(described_class.new.save).to be false
       end
     end
@@ -260,7 +266,7 @@ describe Internal::Event do
         let(:api_error) { GetIntoTeachingApiClient::ApiError.new(code: 400, response_body: json_error) }
 
         before do
-          allow_any_instance_of(described_class).to receive(:invalid?) { false }
+          allow_any_instance_of(described_class).to receive(:invalid?).and_return(false)
 
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event) { raise api_error }
@@ -278,16 +284,16 @@ describe Internal::Event do
       end
 
       context "when the API raises a server error" do
+        subject { described_class.new }
+
         let(:api_error) { GetIntoTeachingApiClient::ApiError.new(code: 500) }
 
         before do
-          allow_any_instance_of(described_class).to receive(:invalid?) { false }
+          allow_any_instance_of(described_class).to receive(:invalid?).and_return(false)
 
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:upsert_teaching_event).and_raise(api_error)
         end
-
-        subject { described_class.new }
 
         it "re-raises the error" do
           expect { subject.save }.to raise_error api_error
@@ -320,6 +326,7 @@ describe Internal::Event do
       context "when id is present" do
         let(:building) { build(:event_building_api) }
         let(:attributes) { attributes_for(:event_building_api, id: building.id) }
+
         it "sets building based on id" do
           event = described_class.new
           event.venue_type = described_class::VENUE_TYPES[:existing]
@@ -330,6 +337,7 @@ describe Internal::Event do
 
         context "when id is not present" do
           let(:building) { build(:event_building_api, id: nil) }
+
           it "returns nil" do
             event = described_class.new
             event.venue_type = described_class::VENUE_TYPES[:existing]
@@ -341,6 +349,7 @@ describe Internal::Event do
 
     context "when the venue type is add and an id is present" do
       let(:building) { attributes_for(:event_building) }
+
       it "sets building with no id" do
         event = described_class.new
         event.venue_type = described_class::VENUE_TYPES[:add]
@@ -352,6 +361,7 @@ describe Internal::Event do
 
     context "when the venue type is none" do
       let(:building) { attributes_for(:event_building) }
+
       it "returns nil" do
         event = described_class.new
         event.venue_type = described_class::VENUE_TYPES[:none]
@@ -365,7 +375,7 @@ describe Internal::Event do
 
     context "when event is valid" do
       it "returns false when building is invalid" do
-        allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?) { true }
+        allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?).and_return(true)
         expect(event.invalid?).to be true
       end
 
@@ -376,14 +386,14 @@ describe Internal::Event do
 
       it "returns false when building is valid" do
         event.venue_type = described_class::VENUE_TYPES[:existing]
-        allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?) { false }
+        allow_any_instance_of(Internal::EventBuilding).to receive(:invalid?).and_return(false)
         expect(event.invalid?).to be false
       end
     end
 
     context "when event is invalid" do
       it "returns true" do
-        allow_any_instance_of(described_class).to receive(:invalid?) { true }
+        allow_any_instance_of(described_class).to receive(:invalid?).and_return(true)
         expect(event.invalid?).to be true
       end
     end

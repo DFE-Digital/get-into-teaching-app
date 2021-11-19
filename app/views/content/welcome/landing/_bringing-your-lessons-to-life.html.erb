@@ -4,6 +4,38 @@
     <span>03</span>
   </div>
 
+  <div class="arrow-container mobile">
+    <%=
+      render ArrowComponent.new(
+        width: 200,
+        height: 200,
+        x1: 1,
+        y1: 0,
+        x2: 0.1,
+        y2: 1,
+        cx: 0.3,
+        cy: 0.1,
+        arrow_size: 0.055
+      )
+    %>
+  </div>
+
+  <div class="arrow-container desktop">
+    <%=
+      render ArrowComponent.new(
+        width: 320,
+        height: 230,
+        x1: 1,
+        y1: 0,
+        x2: 0.1,
+        y2: 1,
+        cx: 0.1,
+        cy: 0,
+        arrow_size: 0.045
+      )
+    %>
+  </div>
+
   <div class="text">
     <h2>
       <span class="purple no-wrap">
@@ -33,33 +65,42 @@
     </article>
   </div>
 
-  <div class="carrousel">
-    <div class="items">
-      <div class="item">
-        <%= image_pack_tag("media/images/content/hero-images/0009.jpg", class: "tilt-right") %>
+  <ul class="featured-stories">
+    <li>
+      <%= image_pack_tag("media/images/content/welcome-guide/jack-rowing-crop.jpg", class: "tilt-right", alt: "PE teacher Jack in a rowing boat") %>
 
+      <h3>Jack</h3>
 
-        <div class="caption">
-          <p>
-            Jack is a PE teacher from Leeds, with a passion for opening up conversations around mental health in schools.
-          </p>
+      <p>
+        Jack is a PE teacher from Leeds, with a passion for opening up
+        conversations around mental health in schools.
+      </p>
 
-          <a class="button" href="/welcome/bring-your-lessons-to-life">Read Jack's story</a>
-        </div>
-      </div>
-    </div>
+      <%= link_to "Read Jack's story", "/welcome/jacks-story", class: "button" %>
+    </li>
+    <li>
+      <%= image_pack_tag("media/images/content/welcome-guide/yvonne-photoshoot-crop.jpg", class: "tilt-left", alt: "English teacher Yvonne standing in front of a brightly painted wall") %>
 
-    <div class="controls">
-      <ul>
-        <li class="current">●</li>
+      <h3>Yvonne</h3>
 
-        <% 2.times do %>
-          <li>●</li>
-        <% end %>
+      <p>
+        Yvonne is an English teacher in London. She uses her love of rap music
+        to engage and inspire her students.
+      </p>
 
-        <li class="arrow grey">&larr;</li>
-        <li class="arrow">&rarr;</li>
-      </ul>
-    </div>
-  </div>
+      <%= link_to "Read Yvonne's story", "/welcome/yvonnes-story", class: "button" %>
+    </li>
+    <li>
+      <%= image_pack_tag("media/images/content/welcome-guide/andrew-in-school-crop.jpg", class: "tilt-right", alt: "Food and technology teacher Andrew") %>
+
+      <h3>Andrew</h3>
+
+      <p>
+        Andrew is a food technology teacher from Birmingham who uses cooking to
+        teach teenagers important life lessons.
+      </p>
+
+      <%= link_to "Read Andrew's story", "/welcome/andrews-story", class: "button" %>
+    </li>
+  </ul>
 </section>

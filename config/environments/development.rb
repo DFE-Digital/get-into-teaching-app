@@ -56,7 +56,6 @@ Rails.application.configure do
     "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
   config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence || \
     Rails.application.credentials.google_maps_key.presence
-  config.x.enable_beta_redirects = false
 
   config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence || \
     Rails.application.credentials.basic_auth_credentials.presence
@@ -64,4 +63,15 @@ Rails.application.configure do
   config.x.api_client_cache_store = ActiveSupport::Cache::MemoryStore.new
 
   config.x.basic_auth = ENV["BASIC_AUTH"]
+
+  config.x.structured_data.blog_posting = true
+  config.x.structured_data.web_site = true
+  config.x.structured_data.organization = true
+  config.x.structured_data.breadcrumb_list = true
+  config.x.structured_data.event = true
+  config.x.structured_data.how_to = true
+
+  config.x.legacy_tracking_pixels = false
+
+  config.x.covid_banner = false
 end

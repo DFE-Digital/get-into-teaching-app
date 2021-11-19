@@ -5,6 +5,7 @@ date: "2021-03-22"
 images:
   header_image:
     path: "media/images/content/blog/habiba-cabdi-teacher-applicant.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/habiba-cabdi-teacher-applicant.jpg"
     alt: "a photograph of Habiba Cabdi, a trainee teacher"
 description: |-
   Habiba Cabdi offered to speak to Teacher Training Adviser, Jane Wilkinson, about the challenges faced by someone who lives with additional needs and their progress towards achieving the dream of becoming a teacher.
@@ -40,4 +41,4 @@ If someone came up to me and asked if they should teach, my answer would be yes 
 
 Habiba will begin her teacher training course in Sept 2021. We wish her all the best for a very successful teaching career.
 
-All our Teacher Training Advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Find out more and sign up](/).
+All our Teacher Training Advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Find out more and sign up](/teacher-training-advisers).

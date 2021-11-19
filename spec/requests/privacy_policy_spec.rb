@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "GET /privacy-policy" do
+describe "GET /privacy-policy", type: :request do
   let(:policy) { GetIntoTeachingApiClient::PrivacyPolicy.new(id: "123", text: "Latest privacy policy") }
 
   context "when viewing the latest privacy policy" do
@@ -16,6 +16,7 @@ describe "GET /privacy-policy" do
 
     it { is_expected.to have_http_status :success }
     it { expect(subject.body).to include(policy.text) }
+    it { expect(subject.body).not_to include("Live chat") }
   end
 
   context "when viewing a privacy policy by id" do

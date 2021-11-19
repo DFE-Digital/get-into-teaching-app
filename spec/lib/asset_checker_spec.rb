@@ -18,11 +18,11 @@ describe AssetChecker do
   let(:instance) { described_class.new(root_url) }
 
   describe "#run" do
+    subject(:run) { instance.run }
+
     before do
       stub_request(:get, root_url).to_return(status: 200, body: html)
     end
-
-    subject(:run) { instance.run }
 
     context "when the assets are available" do
       before do

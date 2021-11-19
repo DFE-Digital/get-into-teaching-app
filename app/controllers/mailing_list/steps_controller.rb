@@ -2,7 +2,7 @@ module MailingList
   class StepsController < ApplicationController
     include CircuitBreaker
 
-    include WizardSteps
+    include DFEWizard::Controller
     self.wizard_class = MailingList::Wizard
 
     before_action :set_step_page_title, only: %i[show update]
@@ -28,7 +28,7 @@ module MailingList
     helper_method :step_path
 
     def wizard_store
-      ::Wizard::Store.new app_store, crm_store
+      ::DFEWizard::Store.new app_store, crm_store
     end
 
     def app_store
@@ -42,7 +42,7 @@ module MailingList
     def resolve_layout
       is_first_page = @current_step.instance_of? MailingList::Steps::Name
 
-      return "registration_attractive" if is_first_page
+      return "registration_with_side_images" if is_first_page
 
       "registration"
     end

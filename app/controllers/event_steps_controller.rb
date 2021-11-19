@@ -1,16 +1,17 @@
 class EventStepsController < ApplicationController
   include CircuitBreaker
 
+  before_action :set_is_walk_in, only: %i[show update]
   before_action :load_event
 
-  include WizardSteps
+  include DFEWizard::Controller
   self.wizard_class = Events::Wizard
 
   before_action :redirect_closed_events, only: %i[show update]
   before_action :set_step_page_title, only: [:show]
   before_action :set_completed_page_title, only: [:completed]
 
-  layout "registration"
+  layout :resolve_layout
 
 protected
 
@@ -21,9 +22,12 @@ protected
 private
 
   def redirect_closed_events
-    return unless @event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"]
+    event_is_closed = @event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"]
+    candidate_is_walk_in = wizard_store[:is_walk_in]
 
-    redirect_to event_path(id: @event.readable_id)
+    if event_is_closed && !candidate_is_walk_in
+      redirect_to event_path(id: @event.readable_id)
+    end
   end
 
   def step_path(step = params[:id], urlparams = {})
@@ -40,7 +44,7 @@ private
   end
 
   def wizard_store
-    ::Wizard::Store.new app_store, crm_store
+    ::DFEWizard::Store.new app_store, crm_store
   end
 
   def app_store
@@ -66,5 +70,15 @@ private
 
   def set_completed_page_title
     @page_title = "Sign up complete"
+  end
+
+  def set_is_walk_in
+    wizard_store[:is_walk_in] = true if params.key?(:walk_in)
+  end
+
+  def resolve_layout
+    return "registration_with_image_above" if @current_step.instance_of?(Events::Steps::PersonalDetails)
+
+    "registration"
   end
 end

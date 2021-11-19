@@ -1,9 +1,10 @@
 require "rails_helper"
 
-describe "ensuring frontmatter from content pages is rendered" do
+describe "ensuring frontmatter from content pages is rendered", type: :request do
   context "with an accordion layout" do
-    before { get "/content-page" }
     subject { response.body }
+
+    before { get "/content-page" }
 
     it { expect(response).to have_http_status(200) }
 
@@ -18,6 +19,21 @@ describe "ensuring frontmatter from content pages is rendered" do
       "Right column CTA",
     ].each do |expected|
       it { is_expected.to include(expected) }
+    end
+  end
+
+  context "with a different heading and title" do
+    subject { response.body }
+
+    before { get "/custom-heading" }
+
+    let(:document) { Nokogiri.parse(response.body) }
+
+    it { expect(response).to have_http_status(200) }
+
+    specify "sets both the title and heading correctly" do
+      expect(document.css("title").text).to start_with("Title goes here")
+      expect(document.css("h1").text).to eql("Heading goes here")
     end
   end
 end

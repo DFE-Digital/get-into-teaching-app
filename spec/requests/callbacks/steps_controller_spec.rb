@@ -1,9 +1,9 @@
 require "rails_helper"
 
-describe Callbacks::StepsController do
-  include_context "stub candidate create access token api"
-  include_context "stub latest privacy policy api"
-  include_context "stub book callback api"
+describe Callbacks::StepsController, type: :request do
+  include_context "with stubbed candidate create access token api"
+  include_context "with stubbed latest privacy policy api"
+  include_context "with stubbed book callback api"
 
   it_behaves_like "a controller with a #resend_verification action" do
     def perform_request
@@ -15,14 +15,18 @@ describe Callbacks::StepsController do
   let(:step_path) { callbacks_step_path model.key }
 
   describe "#index" do
-    before { get callbacks_steps_path(query: "param") }
     subject { response }
+
+    before { get callbacks_steps_path(query: "param") }
+
     it { is_expected.to redirect_to(callbacks_step_path({ id: :personal_details, query: "param" })) }
   end
 
   describe "#show" do
-    before { get step_path }
     subject { response }
+
+    before { get step_path }
+
     it { is_expected.to have_http_status :success }
 
     context "with an invalid step" do
@@ -33,26 +37,29 @@ describe Callbacks::StepsController do
   end
 
   describe "#update" do
-    let(:key) { model.model_name.param_key }
-
     subject do
       patch step_path, params: { key => details_params }
       response
     end
 
+    let(:key) { model.model_name.param_key }
+
     context "with valid data" do
       let(:details_params) { attributes_for(:callbacks_personal_details) }
+
       it { is_expected.to redirect_to callbacks_step_path("authenticate") }
     end
 
     context "with invalid data" do
       let(:details_params) { { "first_name" => "test" } }
-      it { is_expected.to have_http_status :success }
+
+      it { is_expected.to have_http_status :unprocessable_entity }
     end
 
     context "with no data" do
       let(:details_params) { {} }
-      it { is_expected.to have_http_status :success }
+
+      it { is_expected.to have_http_status :unprocessable_entity }
     end
 
     context "with last step" do
@@ -80,7 +87,9 @@ describe Callbacks::StepsController do
         before do
           allow_any_instance_of(model).to receive(:valid?).and_return true
         end
+
         let(:details_params) { attributes_for :"callbacks_#{model.key}" }
+
         it { is_expected.to redirect_to callbacks_step_path steps.first.key }
       end
     end
@@ -91,6 +100,7 @@ describe Callbacks::StepsController do
       get completed_callbacks_steps_path
       response
     end
+
     it { is_expected.to have_http_status :success }
   end
 end

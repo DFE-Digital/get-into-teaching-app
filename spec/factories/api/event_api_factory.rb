@@ -31,6 +31,10 @@ FactoryBot.define do
       type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
     end
 
+    trait :question_time_event do
+      type_id { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"] }
+    end
+
     trait :virtual do
       is_online { true }
       is_virtual { true }
@@ -57,6 +61,17 @@ FactoryBot.define do
 
     trait :no_location do
       building { nil }
+    end
+
+    trait :pending do
+      status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"] }
+    end
+
+    trait :without_train_to_teach_fields do
+      is_virtual { nil }
+      video_url { nil }
+      message { nil }
+      web_feed_id { nil }
     end
   end
 end

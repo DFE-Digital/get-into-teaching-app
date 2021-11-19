@@ -1,6 +1,6 @@
 module Events
   module Steps
-    class PersonalisedUpdates < ::Wizard::Step
+    class PersonalisedUpdates < ::DFEWizard::Step
       attribute :degree_status_id, :integer
       attribute :consideration_journey_stage_id, :integer
       attribute :address_postcode
@@ -61,7 +61,7 @@ module Events
     private
 
       def postcode_in_crm
-        @store.crm(:address_postcode)
+        @store.preexisting(:address_postcode)
       end
     end
   end

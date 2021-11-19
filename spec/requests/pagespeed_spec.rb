@@ -1,7 +1,7 @@
 require "rails_helper"
 require "page_speed_score"
 
-describe "Page Speed Task" do
+describe "Page Speed Task", type: :request do
   let(:run_pagespeed_path) { "/pagespeed/run" }
 
   before { allow(Rails.env).to receive(:pagespeed?) { pagespeed_env } }
@@ -18,7 +18,7 @@ describe "Page Speed Task" do
     let(:pagespeed_env) { true }
 
     before do
-      expect_any_instance_of(PageSpeedScore).to receive(:fetch)
+      allow_any_instance_of(PageSpeedScore).to receive(:fetch)
     end
 
     it "returns 204" do

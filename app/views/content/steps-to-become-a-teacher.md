@@ -2,8 +2,7 @@
   title: "Steps to become a teacher"
   layout: "layouts/steps"
   description: |-
-    These are the steps that people who want to become qualified teachers in
-    England need to take. You can understand how to become a teacher, including whether to teach primary or secondary, if you have the right qualifications to teach, teaching bursaries and teaching scholarships, routes into teaching and applying for teaching training.
+    Step-by-step guide to how you can become a teacher in a primary or secondary school in England. Understand the qualifications you need, the bursaries available and the ways you can do your teacher training.
   date: "2021-06-24"
   image: "media/images/content/hero-images/0017.jpg"
   backlink: "../"
@@ -20,6 +19,32 @@
       partial: content/steps-to-become-a-teacher/step_4_find_the_right_training
     Apply for your course:
       partial: content/steps-to-become-a-teacher/step_5_apply_for_your_course
+  how_to:
+    Decide who to teach:
+      id: "step-1"
+      image: "media/images/content/hero-images/0017.jpg"
+      directions:
+        - Get school experience or attend events.
+    Check your qualifications:
+      id: "step-2"
+      image: "media/images/content/hero-images/0017.jpg"
+      directions:
+        - Once you have a degree or equivalent qualification you’re ready for postgraduate primary or secondary initial teacher training courses.
+    Learn about funding:
+      id: "step-3"
+      image: "media/images/content/hero-images/0017.jpg"
+      directions:
+        - You can get funding that you do not have to pay back if you train to teach certain subjects.
+    Find the right training:
+      id: "step-4"
+      image: "media/images/content/hero-images/0017.jpg"
+      directions:
+        - Explore your options, find out how to train to teach primary or secondary (for example a PGCE or directly in a school).
+    Apply for your course:
+      id: "step-5"
+      image: "media/images/content/hero-images/0017.jpg"
+      directions:
+        - Get tips on applying, including finding the right referees and writing a personal statement.
   keywords:
     - QTS
     - Qualified Teacher Status

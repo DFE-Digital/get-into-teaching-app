@@ -20,7 +20,7 @@ RSpec.describe Pages::Frontmatter do
     context "with unknown page" do
       let(:page) { "/unknown" }
 
-      it "should raise an exception" do
+      it "raises an exception" do
         expect { subject }.to raise_exception Pages::Frontmatter::NotMarkdownTemplate
       end
     end
@@ -30,7 +30,7 @@ RSpec.describe Pages::Frontmatter do
     it { expect(subject.keys).to include "/page1" }
     it { expect(subject.keys).to include "/subfolder/page2" }
     it { expect(subject["/page1"]).to include title: "Hello World 1 Upwards" }
-    it { expect(subject.keys).to_not include "/_partial" }
+    it { expect(subject.keys).not_to include "/_partial" }
   end
 
   describe ".perform_caching" do
@@ -47,7 +47,7 @@ RSpec.describe Pages::Frontmatter do
     context "when caching" do
       before do
         allow(described_class).to receive(:instance) { instance.preload }
-        expect(instance).to receive(:find_from_preloaded).and_call_original
+        allow(instance).to receive(:find_from_preloaded).and_call_original
       end
 
       it_behaves_like "page loading"
@@ -63,16 +63,17 @@ RSpec.describe Pages::Frontmatter do
   describe ".select" do
     subject { described_class.select :title, content_dir }
 
-    before { expect_any_instance_of(described_class).to receive(:select).and_call_original }
+    before { allow_any_instance_of(described_class).to receive(:select).and_call_original }
 
     it { is_expected.to include "/page1" }
   end
 
   describe ".select_by_path" do
-    let(:wanted_path) { "/subfolder" }
     subject { described_class.select_by_path(wanted_path, content_dir) }
 
-    before { expect_any_instance_of(described_class).to receive(:select_by_path).and_call_original }
+    let(:wanted_path) { "/subfolder" }
+
+    before { allow_any_instance_of(described_class).to receive(:select_by_path).and_call_original }
 
     it "only returns pages that start with the supplied path" do
       expect(subject.keys).to all(start_with(wanted_path))
@@ -86,7 +87,7 @@ RSpec.describe Pages::Frontmatter do
 
     context "when preloaded" do
       before do
-        expect(instance).to receive(:find_from_preloaded).and_call_original
+        allow(instance).to receive(:find_from_preloaded).and_call_original
         instance.preload
       end
 

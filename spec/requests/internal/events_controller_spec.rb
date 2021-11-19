@@ -1,28 +1,21 @@
 require "rails_helper"
 
-describe Internal::EventsController do
+describe Internal::EventsController, type: :request do
   let(:pending_provider_event) do
     build(:event_api,
           :with_provider_info,
-          name: "Pending provider event",
-          status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
-          type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-          is_virtual: nil,
-          video_url: nil,
-          message: nil,
-          web_feed_id: nil)
+          :pending,
+          :school_or_university_event,
+          :without_train_to_teach_fields,
+          name: "Pending provider event")
   end
   let(:pending_online_event) do
     build(:event_api,
+          :pending,
+          :online_event,
+          :without_train_to_teach_fields,
           name: "Pending online event",
-          status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
-          type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
           scribble_id: "/scribble/id/12345",
-          is_virtual: nil,
-          is_online: nil,
-          video_url: nil,
-          message: nil,
-          web_feed_id: nil,
           building: nil)
   end
   let(:events) { [pending_provider_event, build(:event_api, name: "Open event"), pending_online_event] }
@@ -46,10 +39,11 @@ describe Internal::EventsController do
       context "when there are no pending #{event_type || default_event_type} events" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type) { [] }
+            .to receive(:search_teaching_events_grouped_by_type).and_return([])
 
           get internal_events_path, headers: generate_auth_headers(:author), params: { event_type: event_type }
         end
+
         it "shows a no events banner" do
           assert_response :success
           expect(response.body).to include("No pending events")
@@ -62,7 +56,7 @@ describe Internal::EventsController do
 
       context "when there are pending #{event_params || default_event_type} events" do
         before do
-          get internal_events_path, headers: generate_auth_headers(:author), params: event_type
+          get internal_events_path, headers: generate_auth_headers(:author), params: { event_type: event_type }
         end
 
         it "shows pending #{event_params || default_event_type} events" do
@@ -80,16 +74,30 @@ describe Internal::EventsController do
       include_examples "no pending events", "online"
 
       include_examples "pending events", "provider" do
-        before(:each) do
+        before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+            .to receive(:search_teaching_events_grouped_by_type)
+                  .with({
+                    type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]],
+                    status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
+                    start_after: DateTime.now.utc.beginning_of_day,
+                    quantity_per_type: 1_000,
+                  })
+                  .and_return provider_events_by_type
         end
       end
 
       include_examples "pending events", "online" do
-        before(:each) do
+        before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type) { online_events_by_type }
+            .to receive(:search_teaching_events_grouped_by_type)
+                  .with({
+                    type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]],
+                    status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
+                    start_after: DateTime.now.utc.beginning_of_day,
+                    quantity_per_type: 1_000,
+                  })
+                  .and_return online_events_by_type
         end
       end
 
@@ -97,7 +105,7 @@ describe Internal::EventsController do
         default_event_type = "provider".freeze
 
         include_examples "pending events", nil, default_event_type do
-          before(:each) do
+          before do
             allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
               .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
           end
@@ -106,10 +114,39 @@ describe Internal::EventsController do
         include_examples "no pending events", default_event_type
       end
     end
+
+    context "when publisher user type" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+          .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+      end
+
+      it "shows a 'withdraw event' box" do
+        get internal_events_path, headers: generate_auth_headers(:publisher)
+
+        assert_response :success
+        expect(response.body).to include("Edit a published event?")
+      end
+    end
+
+    context "when author user type" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+          .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+      end
+
+      it "shows a 'withdraw event' box" do
+        get internal_events_path, headers: generate_auth_headers(:author)
+
+        assert_response :success
+        expect(response.body).not_to include("Edit a published event?")
+      end
+    end
   end
 
   describe "#show" do
     let(:event_to_get_readable_id) { "1" }
+
     context "when any user type" do
       context "when the event is pending" do
         before do
@@ -118,6 +155,7 @@ describe Internal::EventsController do
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
+
         it "shows pending events" do
           assert_response :success
           expect(response.body).to include("This is a pending event")
@@ -132,6 +170,7 @@ describe Internal::EventsController do
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
+
         it "redirects to not found" do
           assert_response :not_found
           expect(response.body).to include "Page not found"
@@ -147,9 +186,10 @@ describe Internal::EventsController do
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:author)
         end
+
         it "does not have a final submit button" do
           assert_response :success
-          expect(response.body).to_not include "Submit this provider event"
+          expect(response.body).not_to include "Submit this provider event"
         end
       end
     end
@@ -162,6 +202,7 @@ describe Internal::EventsController do
 
           get internal_event_path(event_to_get_readable_id), headers: generate_auth_headers(:publisher)
         end
+
         it "has a final submit button" do
           assert_response :success
           expect(response.body).to include "Set event status to Open"
@@ -173,7 +214,7 @@ describe Internal::EventsController do
   describe "#new" do
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-        .to receive(:get_teaching_event_buildings) { [] }
+        .to receive(:get_teaching_event_buildings).and_return([])
     end
 
     shared_examples "new event" do |event_params|
@@ -188,9 +229,10 @@ describe Internal::EventsController do
     context "when any user type" do
       context "when event is duplicated" do
         let(:event_to_duplicate_readable_id) { "1" }
+
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [] }
+            .to receive(:get_teaching_event_buildings).and_return([])
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:get_teaching_event).with(event_to_duplicate_readable_id) { pending_online_event }
         end
@@ -229,10 +271,11 @@ describe Internal::EventsController do
 
   describe "#edit" do
     let(:event_to_edit_readable_id) { "1" }
+
     context "when any user type" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-          .to receive(:get_teaching_event_buildings) { [] }
+          .to receive(:get_teaching_event_buildings).and_return([])
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
           .to receive(:get_teaching_event).with(event_to_edit_readable_id) { pending_provider_event }
 
@@ -255,14 +298,15 @@ describe Internal::EventsController do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
             .to receive(:get_teaching_event_buildings) { [pending_provider_event.building] }
         end
+
         let(:building_id) { pending_provider_event.building.id }
         let(:expected_request_body) do
           build(:event_api,
+                :pending,
+                :school_or_university_event,
                 id: params[:id],
                 name: params[:name],
                 readable_id: params[:readable_id],
-                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
                 summary: params[:summary],
                 description: params[:description],
                 is_online: params[:is_online],
@@ -284,6 +328,7 @@ describe Internal::EventsController do
                            :provider_event,
                            { "venue_type": Internal::Event::VENUE_TYPES[:existing], "building": { "id": building_id } }
           end
+
           it "posts the event and an existing building" do
             expected_request_body.building =
               build(:event_building_api, { id: params[:building][:id] })
@@ -295,7 +340,7 @@ describe Internal::EventsController do
                  headers: generate_auth_headers(:author),
                  params: { internal_event: params }
 
-            expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "provider"))
+            expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
             expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
           end
 
@@ -305,6 +350,7 @@ describe Internal::EventsController do
                              :provider_event,
                              { "venue_type": Internal::Event::VENUE_TYPES[:none], "building": { "id": "" } })
             end
+
             it "does not post a building" do
               expected_request_body.building = nil
 
@@ -315,7 +361,7 @@ describe Internal::EventsController do
                    headers: generate_auth_headers(:author),
                    params: { internal_event: params }
 
-              expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "provider"))
+              expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
               expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
             end
           end
@@ -332,6 +378,7 @@ describe Internal::EventsController do
                                    "venue": expected_venue,
                                    "address_postcode": expected_postcode } }
             end
+
             it "does not post a building" do
               expected_request_body.building =
                 build(:event_building_api, {
@@ -352,7 +399,7 @@ describe Internal::EventsController do
                    headers: generate_auth_headers(:author),
                    params: { internal_event: params }
 
-              expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "provider"))
+              expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
               expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
             end
           end
@@ -367,18 +414,17 @@ describe Internal::EventsController do
         end
         let(:expected_request_body) do
           build(:event_api,
+                :pending,
+                :online_event,
                 id: params[:id],
                 name: params[:name],
                 readable_id: params[:readable_id],
-                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
-                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
                 summary: params[:summary],
                 description: params[:description],
                 start_at: params[:start_at].getutc.floor,
                 end_at: params[:end_at].getutc.floor,
                 scribble_id: params[:scribble_id],
                 building: nil,
-                is_online: true,
                 is_virtual: nil,
                 video_url: nil,
                 message: nil,
@@ -393,7 +439,7 @@ describe Internal::EventsController do
                headers: generate_auth_headers(:author),
                params: { internal_event: params }
 
-          expect(response).to redirect_to(internal_events_path(success: :pending, readable_id: "Test", event_type: "online"))
+          expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "online"))
           expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
         end
       end
@@ -411,29 +457,14 @@ describe Internal::EventsController do
       context "when provider event" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-            .to receive(:get_teaching_event_buildings) { [] }
+            .to receive(:get_teaching_event_buildings).and_return([])
         end
+
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
-          build(:event_api,
-                id: event.id,
-                name: event.name,
-                readable_id: event.readable_id,
-                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
-                summary: event.summary,
-                description: event.description,
-                is_online: event.is_online,
-                start_at: event.start_at,
-                end_at: event.end_at,
-                provider_contact_email: event.provider_contact_email,
-                provider_organiser: event.provider_organiser,
-                provider_target_audience: event.provider_target_audience,
-                provider_website_url: event.provider_website_url,
-                is_virtual: nil,
-                video_url: nil,
-                message: nil,
-                web_feed_id: nil)
+          event.tap do |event|
+            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+          end
         end
 
         context "when event has no building" do
@@ -451,7 +482,7 @@ describe Internal::EventsController do
                 params: params
 
             expect(response).to redirect_to(internal_events_path(
-                                              success: :open,
+                                              status: :published,
                                               event_type: :provider,
                                               readable_id: event.readable_id,
                                             ))
@@ -473,7 +504,7 @@ describe Internal::EventsController do
                 params: params
 
             expect(response).to redirect_to(internal_events_path(
-                                              success: :open,
+                                              status: :published,
                                               event_type: :provider,
                                               readable_id: event.readable_id,
                                             ))
@@ -486,23 +517,9 @@ describe Internal::EventsController do
         let(:event) { pending_online_event }
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
-          build(:event_api,
-                id: event.id,
-                name: event.name,
-                readable_id: event.readable_id,
-                type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
-                status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
-                summary: event.summary,
-                description: event.description,
-                start_at: event.start_at,
-                end_at: event.end_at,
-                scribble_id: event.scribble_id,
-                building: nil,
-                is_online: nil,
-                is_virtual: nil,
-                video_url: nil,
-                message: nil,
-                web_feed_id: nil)
+          event.tap do |event|
+            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+          end
         end
 
         it "posts event with event status open" do
@@ -514,7 +531,7 @@ describe Internal::EventsController do
               params: params
 
           expect(response).to redirect_to(internal_events_path(
-                                            success: :open,
+                                            status: :published,
                                             event_type: :online,
                                             readable_id: event.readable_id,
                                           ))
@@ -528,6 +545,137 @@ describe Internal::EventsController do
         put internal_approve_path, headers: generate_auth_headers(:author)
 
         expect(response).to have_http_status(:forbidden)
+      end
+    end
+  end
+
+  describe "#withdraw" do
+    context "when publisher user type" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+          .to receive(:get_teaching_event).with(event.id) { event }
+        allow(Rails.logger).to receive(:info)
+      end
+
+      context "when provider event" do
+        before do
+          allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
+            .to receive(:get_teaching_event_buildings).and_return([])
+        end
+
+        let(:event) { pending_provider_event }
+        let(:expected_request_body) do
+          event.tap do |event|
+            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+            event.building = nil
+          end
+        end
+
+        let(:params) { { "id": event.id } }
+
+        it "posts the event with event status pending" do
+          event.building = nil
+
+          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+            .to receive(:upsert_teaching_event).with(expected_request_body)
+
+          put internal_withdraw_path,
+              headers: generate_auth_headers(:publisher),
+              params: params
+
+          expect(response).to redirect_to(internal_events_path(
+                                            status: :withdrawn,
+                                            event_type: :provider,
+                                            readable_id: event.readable_id,
+                                          ))
+          expect(Rails.logger).to have_received(:info).with("#{publisher_username} - withdrawn - #{event.to_json}")
+        end
+      end
+
+      context "when online event" do
+        let(:event) { pending_online_event }
+        let(:params) { { "id": event.id } }
+        let(:expected_request_body) do
+          event.tap do |event|
+            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+          end
+        end
+
+        it "posts event with event status pending" do
+          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+            .to receive(:upsert_teaching_event).with(expected_request_body)
+
+          put internal_withdraw_path,
+              headers: generate_auth_headers(:publisher),
+              params: params
+
+          expect(response).to redirect_to(internal_events_path(
+                                            status: :withdrawn,
+                                            event_type: :online,
+                                            readable_id: event.readable_id,
+                                          ))
+          expect(Rails.logger).to have_received(:info).with("#{publisher_username} - withdrawn - #{event.to_json}")
+        end
+      end
+    end
+
+    context "when author user type" do
+      it "responds with forbidden" do
+        put internal_approve_path, headers: generate_auth_headers(:author)
+
+        expect(response).to have_http_status(:forbidden)
+      end
+    end
+  end
+
+  describe "#open_events" do
+    let(:events_by_type) { group_events_by_type(pen) }
+
+    context "when there a no events" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+          .to receive(:search_teaching_events_grouped_by_type).and_return([])
+      end
+
+      it "shows 'no open events'" do
+        get internal_open_events_path, headers: generate_auth_headers(:author)
+
+        assert_response :success
+        expect(response.body).to include("No open events")
+      end
+    end
+
+    context "when there are events" do
+      let(:start_at) { Time.zone.today.at_beginning_of_month + 1.day }
+      let(:events) do
+        [
+          build(:event_api, :online_event, name: "Open online event", start_at: start_at),
+          build(:event_api, :school_or_university_event, name: "Open provider event", start_at: start_at),
+        ]
+      end
+      let(:events_by_type) { group_events_by_type(events) }
+
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
+          .to receive(:search_teaching_events_grouped_by_type)
+                .with({
+                  type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
+                             GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]],
+                  status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]],
+                  start_after: DateTime.now.utc.beginning_of_day,
+                  quantity_per_type: 1_000,
+                })
+                .and_return events_by_type
+      end
+
+      it "shows a table of events" do
+        get internal_open_events_path, headers: generate_auth_headers(:author)
+
+        assert_response :success
+
+        expect(response.body).to include("Open events")
+        expect(response.body).to include("Open online event")
+        expect(response.body).to include("Open provider event")
       end
     end
   end

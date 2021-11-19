@@ -1,6 +1,6 @@
 <% plural_category_name = pluralised_category_name(type_id) %>
 
-<div class="types-of-event">
+<%= tag.div(class: "types-of-event", id: event_list_id(plural_category_name)) do %>
   <div class="events-featured <%= "events-featured--with-logo" if show_logo %>">
     <div class="events-featured__heading">
       <header>
@@ -34,7 +34,7 @@
 
     <% if page_param_name.present? %>
       <div class="event-pagination">
-        <%= paginate events, param_name: page_param_name %>
+        <%= paginate events, param_name: page_param_name, params: { anchor: event_list_id(plural_category_name) } %>
       </div>
     <% end %>
 
@@ -46,4 +46,4 @@
       <% end %>
     <% end %>
   </div>
-</div>
+<% end %>

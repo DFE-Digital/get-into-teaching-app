@@ -14,8 +14,8 @@ describe Internal::EventBuilding do
   describe "validations" do
     describe "#venue" do
       it { is_expected.to allow_value("test").for :venue }
-      it { is_expected.to_not allow_value("").for :venue }
-      it { is_expected.to_not allow_value(nil).for :venue }
+      it { is_expected.not_to allow_value("").for :venue }
+      it { is_expected.not_to allow_value(nil).for :venue }
       it { is_expected.to validate_length_of(:venue).is_at_most(100) }
     end
 
@@ -37,9 +37,9 @@ describe Internal::EventBuilding do
 
     describe "#address_postcode" do
       it { is_expected.to allow_value("M1 7AX").for :address_postcode }
-      it { is_expected.to_not allow_value("not a postcode").for :address_postcode }
-      it { is_expected.to_not allow_value("").for :address_postcode }
-      it { is_expected.to_not allow_value(nil).for :address_postcode }
+      it { is_expected.not_to allow_value("not a postcode").for :address_postcode }
+      it { is_expected.not_to allow_value("").for :address_postcode }
+      it { is_expected.not_to allow_value(nil).for :address_postcode }
       it { is_expected.to validate_length_of(:address_postcode).is_at_most(100) }
     end
   end
@@ -59,7 +59,8 @@ describe Internal::EventBuilding do
         image_url: api_building.image_url,
       )
     end
-    it "should have correct attributes" do
+
+    it "has correct attributes" do
       expect(described_class.initialize_with_api_building(api_building)).to have_attributes(expected_attributes)
     end
   end
@@ -78,7 +79,8 @@ describe Internal::EventBuilding do
         address_postcode: internal_building.address_postcode,
       )
     end
-    it "should have correct attributes" do
+
+    it "has correct attributes" do
       expect(internal_building.to_api_building).to have_attributes(expected_api_building_attributes)
     end
   end

@@ -1,0 +1,29 @@
+<%= govuk_form_for(@event_search, method: :get, url: "/teaching-events") do |f| %>
+
+  <div class="events__filter--group">
+    <%= f.govuk_text_field(:postcode, label: { text: "Postcode" }, form_group: { classes: 'reduce-bottom-margin' }) %>
+  </div>
+
+  <div class="events__filter--group">
+    <%= f.govuk_select(:distance, options_for_select(TeachingEvents::Search::DISTANCES, selected: @event_search.distance), label: { text: "Search area" }) %>
+  </div>
+
+  <div class="events__filter--group">
+    <%= f.govuk_check_boxes_fieldset(:online, legend: nil) do %>
+      <%= f.govuk_check_box :online, "true", label: { text: "Online" } %>
+      <%= f.govuk_check_box :online, "false", label: { text: "In person" } %>
+    <% end %>
+  </div>
+
+  <div class="events__filter--group">
+    <%= f.govuk_check_boxes_fieldset(:type, legend: { text: "Event type", tag: nil }) do %>
+      <%= f.govuk_check_box :type, "222_750_001,222_750_007", label: { text: "Train to Teach" } %>
+      <%= f.govuk_check_box :type, "222_750_008", label: { text: "Online forum" } %>
+      <%= f.govuk_check_box :type, "222_750_009", label: { text: "Training provider" } %>
+    <% end %>
+  </div>
+
+  <div class="events__filter--group">
+    <%= tag.button("Update results", class: "button") %>
+  </div>
+<% end %>

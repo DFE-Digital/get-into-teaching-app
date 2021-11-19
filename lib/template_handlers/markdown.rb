@@ -96,7 +96,7 @@ module TemplateHandlers
 
       return unless image_args
 
-      component = Content::ImageComponent.new(**image_args.symbolize_keys)
+      component = Content::ImageComponent.new(**image_args.symbolize_keys.slice(:path, :alt))
 
       ApplicationController.render(component, layout: false)
     end

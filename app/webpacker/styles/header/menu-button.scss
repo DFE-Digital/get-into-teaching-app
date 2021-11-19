@@ -14,11 +14,10 @@
     margin-right: 2em;
     margin-left: 1em;
     padding: .8em 1.4em;
-    
+
     &:hover {
 	    cursor: pointer;
 	    background: $green;
-	    
     }
 
     &.open {
@@ -36,6 +35,7 @@
   .menu-button__text {
     display: inline-block;
     margin-left: .6em;
+    color: $black;
   }
 
   .menu-button__icon {

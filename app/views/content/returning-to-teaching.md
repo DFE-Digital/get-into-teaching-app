@@ -69,7 +69,15 @@ After a period of disruption for so many pupils, you could help those most affec
 
 If you’re considering coming back to the profession, or if you’re qualified to teach but have never taught in a state school in England, we’re here to help.  
 
-<iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
+  <iframe 
+    loading="lazy"
+    src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen
+  ></iframe>
+</div>
 
 ## Why now
 
@@ -96,9 +104,17 @@ If you have '[qualified teacher status](https://www.gov.uk/guidance/qualified-te
 * accessing courses to enhance your subject knowledge
 * finding teaching vacancies
 
-<iframe class="lazyload" data-src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
+  <iframe 
+    loading="lazy"
+    src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" 
+    frameborder="0" 
+    allow="autoplay; encrypted-media" 
+    allowfullscreen
+  ></iframe>
+</div>
 
-Return to teaching advisers also run [events](/event-categories/online-q-as) to support returners.
+Return to teaching advisers also run [events to support returners](/event-categories/online-q-as).
 
 $get-a-tta$
 
@@ -125,6 +141,7 @@ If you’re unsure about taking on a teacher role at this time, [consider applyi
 There’s lots you can do to re-familiarise yourself with teaching. For example, you can:  
 
 * attend an [online return to teaching event](/event-categories/online-q-as)
+* read [blog posts about returning to teaching](/blog/tag/returning-to-teaching)
 * read [Jill's journey](/my-story-into-teaching/returners/getting-back-into-the-classroom) to become a teacher again
 * review the latest [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards)
 * catch up on changes to the [national curriculum and qualifications](https://www.gov.uk/topic/schools-colleges-childrens-services/curriculum-qualifications)

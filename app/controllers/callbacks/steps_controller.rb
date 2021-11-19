@@ -2,7 +2,7 @@ module Callbacks
   class StepsController < ApplicationController
     include CircuitBreaker
 
-    include WizardSteps
+    include DFEWizard::Controller
     self.wizard_class = Callbacks::Wizard
 
     before_action :set_step_page_title, only: %i[show update]
@@ -16,7 +16,7 @@ module Callbacks
     end
 
     def completed_step_path
-      phone_call_scheduled_at = @wizard.find("callback").phone_call_scheduled_at
+      phone_call_scheduled_at = @wizard.find("callback").phone_call_scheduled_at.in_time_zone(Time.zone)
       date = phone_call_scheduled_at.to_date.to_formatted_s(:govuk)
       time = phone_call_scheduled_at.to_formatted_s(:govuk_time_with_period)
 
@@ -45,7 +45,7 @@ module Callbacks
     helper_method :step_path
 
     def wizard_store
-      ::Wizard::Store.new app_store, crm_store
+      ::DFEWizard::Store.new app_store, crm_store
     end
 
     def app_store

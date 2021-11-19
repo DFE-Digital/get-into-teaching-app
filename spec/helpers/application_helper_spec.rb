@@ -2,6 +2,8 @@ require "rails_helper"
 
 describe ApplicationHelper do
   describe "#analytics_body_tag" do
+    subject { analytics_body_tag { "<h1>TEST</h1>".html_safe } }
+
     let(:id) { "1234" }
     let(:gtm_id) { id }
     let(:ga_id) { id }
@@ -14,6 +16,7 @@ describe ApplicationHelper do
     let(:twitter_id) { id }
 
     before do
+      allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(true)
       allow(ENV).to receive(:[]).and_call_original
       allow(ENV).to receive(:[]).with("GOOGLE_TAG_MANAGER_ID").and_return gtm_id
       allow(ENV).to receive(:[]).with("GOOGLE_ANALYTICS_ID").and_return ga_id
@@ -26,8 +29,6 @@ describe ApplicationHelper do
       allow(ENV).to receive(:[]).with("LID_ID").and_return lid_id
     end
 
-    subject { analytics_body_tag { "<h1>TEST</h1>".html_safe } }
-
     it { is_expected.to have_css "body h1" }
 
     describe "the stimulus controllers" do
@@ -39,6 +40,7 @@ describe ApplicationHelper do
 
       context "with additional stimulus controller" do
         subject { analytics_body_tag(data: { controller: "atest" }) { tag.hr } }
+
         it { is_expected.to have_css "body[data-controller~=gtm]" }
         it { is_expected.to have_css "body[data-controller~=pinterest]" }
         it { is_expected.to have_css "body[data-controller~=snapchat]" }
@@ -61,6 +63,7 @@ describe ApplicationHelper do
 
       context "with blank service ids" do
         let(:id) { "" }
+
         it { is_expected.to have_css "body[data-analytics-gtm-id=\"\"]" }
         it { is_expected.to have_css "body[data-analytics-ga-id=\"\"]" }
         it { is_expected.to have_css "body[data-analytics-adwords-id=\"\"]" }
@@ -74,6 +77,7 @@ describe ApplicationHelper do
 
       context "with no service ids" do
         let(:id) { nil }
+
         it { is_expected.not_to have_css "body[data-analytics-gtm-id]" }
         it { is_expected.not_to have_css "body[data-analytics-ga-id]" }
         it { is_expected.not_to have_css "body[data-analytics-adwords-id]" }
@@ -97,6 +101,7 @@ describe ApplicationHelper do
 
     context "with other data attributes" do
       subject { analytics_body_tag(data: { timefmt: "24" }) { tag.hr } }
+
       it { is_expected.to have_css "body[data-controller~=gtm]" }
       it { is_expected.to have_css "body[data-analytics-gtm-id=1234]" }
       it { is_expected.to have_css "body[data-timefmt=24]" }
@@ -104,13 +109,26 @@ describe ApplicationHelper do
 
     context "with other attributes" do
       subject { analytics_body_tag(class: "homepage") { tag.hr } }
+
       it { is_expected.to have_css "body[data-controller~=gtm]" }
       it { is_expected.to have_css "body.homepage" }
+    end
+
+    context "when legacy tracking is disabled" do
+      subject { analytics_body_tag(data: { timefmt: "24", controller: "something" }, class: "homepage") { tag.hr } }
+
+      before { allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(false) }
+
+      it { is_expected.not_to have_css "body[data-controller=gtm]" }
+      it { is_expected.to have_css "body[data-controller='something gtm-consent']" }
+      it { is_expected.to have_css "body[data-timefmt=24]" }
+      it { is_expected.to have_css "body.homepage" }
+      it { is_expected.to have_css "body hr" }
     end
   end
 
   describe "#internal_referer" do
-    before { helper.request = double("request") }
+    before { helper.request = instance_double("ActionDispatch::Request") }
 
     it "returns nil if the referrer is not set" do
       allow(helper.request).to receive(:referer).and_return nil
@@ -134,16 +152,18 @@ describe ApplicationHelper do
   end
 
   describe "#fa_icon" do
-    let(:icon_name) { "myspace" }
     subject { helper.fa_icon(icon_name) }
+
+    let(:icon_name) { "myspace" }
 
     it "returns an empty span with the default classes" do
       expect(subject).to have_css("span.fas.fa-#{icon_name}")
     end
 
     context "with FA styles" do
-      let(:style) { "fad" }
       subject { helper.fa_icon(icon_name, style: style) }
+
+      let(:style) { "fad" }
 
       it "returns an empty span with provided style class" do
         expect(subject).to have_css("span.#{style}.fa-#{icon_name}")
@@ -151,8 +171,9 @@ describe ApplicationHelper do
     end
 
     context "with extra classes" do
-      let(:extra_classes) { %w[abc def] }
       subject { helper.fa_icon(icon_name, *extra_classes) }
+
+      let(:extra_classes) { %w[abc def] }
 
       it "returns an empty span with the extra classes" do
         expect(subject).to have_css(%(span.fa-#{icon_name}.#{extra_classes.join('.')}))
@@ -161,21 +182,25 @@ describe ApplicationHelper do
   end
 
   describe "#fab_icon" do
-    let(:icon_name) { "friendster" }
     subject { helper.fab_icon(icon_name) }
+
+    let(:icon_name) { "friendster" }
+
     after { subject }
 
-    it %(it returns a span with class 'fab') do
+    it "returns a span with class 'fab'" do
       expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fab")
     end
   end
 
   describe "#fas_icon" do
-    let(:icon_name) { "orkut" }
     subject { helper.fas_icon(icon_name) }
+
+    let(:icon_name) { "orkut" }
+
     after { subject }
 
-    it %(it returns a span with class 'fas') do
+    it "returns a span with class 'fas'" do
       expect(helper).to receive(:fa_icon).once.with(icon_name, style: "fas")
     end
   end
@@ -203,25 +228,69 @@ describe ApplicationHelper do
     end
   end
 
+  describe "#privacy_page?" do
+    subject { helper.privacy_page?(path) }
+
+    ["/cookie_preference", "/cookies", "/privacy-policy"].each do |privacy_path|
+      context "when #{privacy_path}" do
+        let(:path) { privacy_path }
+
+        it { is_expected.to be(true) }
+      end
+    end
+
+    context "when not a privacy path" do
+      let(:path) { "/a-page" }
+
+      it { is_expected.to be(false) }
+    end
+  end
+
   describe "#chat_link" do
+    subject { helper.chat_link(text, classes: extra_class, fallback_text: fallback_text, fallback_email: fallback_email, offline_text: offline_text) }
+
     let(:text) { "Chat with us" }
     let(:extra_class) { "button" }
-    subject { helper.chat_link(text, classes: extra_class) }
+    let(:fallback_text) { "Chat to us" }
+    let(:offline_text) { "Chat closed." }
+    let(:fallback_email) { nil }
 
-    it %(generates a hyperlink) do
-      expect(subject).to have_css("a")
+    it { is_expected.to have_css(%(span[data-controller="talk-to-us"])) }
+    it { is_expected.to have_css(%(a[data-action="talk-to-us#startChat"])) }
+    it { is_expected.to have_css(%(a.chat-button.button.with-fallback span)) }
+    it { is_expected.to have_link(fallback_text, href: "#talk-to-us", class: "button chat-button-no-js") }
+    it { is_expected.to have_text(offline_text) }
+    it { is_expected.to have_css(".chat-button-offline") }
+
+    context "when there is no fallback_text" do
+      let(:fallback_text) { nil }
+
+      it { is_expected.not_to have_css(".chat-button-no-js") }
     end
 
-    it %(has the right data controller) do
-      expect(subject).to have_css(%(a[data-controller="talk-to-us"]))
+    context "when there is no offline_text" do
+      let(:offline_text) { nil }
+
+      it { is_expected.not_to have_css(".chat-button-offline") }
     end
 
-    it %(has the right data action) do
-      expect(subject).to have_css(%(a[data-action="talk-to-us#startChat"]))
+    context "when there is a fallback_email" do
+      let(:fallback_text) { nil }
+      let(:fallback_email) { "fallback@email.com" }
+
+      it { is_expected.to have_link(fallback_email, href: "mailto:#{fallback_email}", class: "chat-button-no-js") }
     end
 
-    it %(applies the correct class) do
-      expect(subject).to have_css(%(a.button))
+    context "when there is both a fallback text and email" do
+      let(:fallback_email) { "fallback@email.com" }
+
+      it { expect { is_expected }.to raise_error(ArgumentError, "Specify fallback text or email, not both") }
     end
+  end
+
+  describe "#google_optimize_config" do
+    subject { google_optimize_config }
+
+    it { is_expected.to eq({ paths: ["/test/a", "/test/b"] }) }
   end
 end

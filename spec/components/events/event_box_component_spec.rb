@@ -1,13 +1,13 @@
 require "rails_helper"
 
 describe Events::EventBoxComponent, type: "component" do
-  include_context "stub types api"
+  include_context "with stubbed types api"
+  subject! { render_inline(described_class.new(event)) }
+
   let(:event) { build(:event_api) }
   let(:date_text) { event.start_at.to_date.to_formatted_s(:long) }
   let(:start_at_text) { event.start_at.to_formatted_s(:time) }
   let(:end_at_text) { event.end_at.to_formatted_s(:time) }
-
-  subject! { render_inline(described_class.new(event)) }
 
   specify "renders an event box" do
     expect(page).to have_css(".event-box")

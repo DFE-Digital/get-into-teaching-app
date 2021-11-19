@@ -1,0 +1,67 @@
+<section class="landing teaching-is-so-rewarding numbered">
+    <div class="section-number">
+      <span>01</span>
+    </div>
+
+    <div class="arrow-container mobile">
+      <%=
+        render ArrowComponent.new(
+          width: 250,
+          height: 200,
+          x1: 1,
+          y1: 0.1,
+          x2: 0.2,
+          y2: 0.8,
+          cx: 0.2,
+          cy: -0.1,
+          arrow_size: 0.05
+        )
+      %>
+    </div>
+
+    <div class="arrow-container desktop">
+      <%=
+        render ArrowComponent.new(
+          width: 320,
+          height: 230,
+          x1: 1,
+          y1: 0,
+          x2: 0.1,
+          y2: 1,
+          cx: 0.1,
+          cy: 0,
+          arrow_size: 0.045
+        )
+      %>
+    </div>
+
+    <div class="text">
+      <h2>
+        <span class="pink nowrap">
+          <% if welcome_guide_subject.present? %>
+            Teaching <span class="underline"><%= welcome_guide_subject %></span>
+          <% else %>
+            <span class="underline">Teaching </span>
+          <% end %>
+        </span>
+
+        <br>
+
+        <span class="pink nowrap">
+          is so rewarding.
+        </span>
+      </h2>
+
+      <%= tag.p(subject_specific_quote_data.fetch(:headline), class: "pink") %>
+    </div>
+
+    <%= image_pack_tag("media/images/content/hero-images/0017.jpg", alt: "A teacher supporting a pupil with work in the classroom") %>
+    <%= image_pack_tag("media/images/content/hero-images/0004.jpg", alt: "A teacher standing at the front of her classroom teaching a class") %>
+
+    <div class="selected-quote">
+      <figure>
+        <%= tag.blockquote(subject_specific_quote_data.fetch(:text)) %>
+        <%= tag.figcaption(subject_specific_quote_data.fetch(:attribution)) %>
+      </figure>
+    </div>
+</section>

@@ -1,12 +1,12 @@
 provider "cloudfoundry" {
   api_url  = var.api_url
-  user     = data.azurerm_key_vault_secret.paas_username.value
-  password = data.azurerm_key_vault_secret.paas_password.value
+  user     = local.infrastructure_secrets.PAAS-USERNAME
+  password = local.infrastructure_secrets.PAAS-PASSWORD
 }
 
 provider "statuscake" {
-  username = data.azurerm_key_vault_secret.statuscake_username.value
-  apikey   = data.azurerm_key_vault_secret.statuscake_password.value
+  username = local.infrastructure_secrets.SC-USERNAME
+  apikey   = local.infrastructure_secrets.SC-PASSWORD
 }
 
 locals {
@@ -31,8 +31,8 @@ terraform {
       version = "0.14.2"
     }
     statuscake = {
-      source  = "thde/statuscake"
-      version = "1.1.4"
+      source  = "StatusCakeDev/statuscake"
+      version = "1.0.1"
     }
   }
 }

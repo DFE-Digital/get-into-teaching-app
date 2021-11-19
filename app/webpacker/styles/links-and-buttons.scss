@@ -33,6 +33,8 @@ a {
 
 .external-link-icon {
   margin-left: .2em;
+  width: .8em !important;
+  height: .8em !important;
 }
 
 .button {
@@ -58,6 +60,10 @@ a {
     @include chevron($color: $black);
   }
 
+  &--black-chevron {
+    @include chevron($color: $black);
+  }
+
   &--nowrap {
     white-space: nowrap;
   }
@@ -66,9 +72,8 @@ a {
     padding: 0;
   }
 
-  &--smaller {
-    @include font-size("xsmall");
-    padding: 8px $indent-amount;
+  &--inline {
+    display: inline;
   }
 }
 
@@ -90,17 +95,37 @@ a {
   @include button($bg: $blue-dark);
   margin-bottom: 0.5rem;
 
-  &--smaller {
-    @include font-size("xsmall");
-    padding: 8px $indent-amount;
-  }
-
   @include mq($from: tablet) {
     display: inline-block;
   }
 }
 
 // passes accessibility contrast check on grey background
-.dark-link {
-  color: #005487;
+@mixin dark-link {
+  color: $blue-very-dark;
+}
+
+// Default Zendesk chat button (hidden as we use our own).
+iframe#launcher {
+  display: none;
+}
+
+.chat-button-offline {
+  display: none;
+
+  &.visible {
+    display: block;
+  }
+}
+
+.js-enabled {
+  .chat-button-no-js {
+    display: none;
+  }
+}
+
+html:not(.js-enabled) {
+  .chat-button.with-fallback {
+    display: none;
+  }
 }

@@ -11,8 +11,9 @@ RSpec.describe BasicAuth do
   end
 
   describe ".env_requires_auth?" do
-    before { allow(Rails.application.config.x).to receive(:basic_auth) { basic_auth } }
     subject { instance.env_requires_auth? }
+
+    before { allow(Rails.application.config.x).to receive(:basic_auth) { basic_auth } }
 
     basic_auth_values = {
       nil => false,
@@ -51,10 +52,10 @@ RSpec.describe BasicAuth do
   end
 
   describe ".authenticate" do
+    subject { instance.authenticate(username, password) }
+
     let(:username) { "" }
     let(:password) { "" }
-
-    subject { instance.authenticate(username, password) }
 
     it { is_expected.to be_falsy }
 

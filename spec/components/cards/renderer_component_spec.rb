@@ -40,7 +40,7 @@ RSpec.describe Cards::RendererComponent, type: :component do
   context "with card type specified" do
     let(:card) { { "category" => "Train to Teach event", "card_type" => "latest_event" } }
     let(:event) { build(:event_api, name: "Test event") }
-    let(:page_data) { double Pages::Data, latest_event_for_category: event }
+    let(:page_data) { instance_double(Pages::Data, latest_event_for_category: event) }
 
     it { is_expected.to have_css ".card" }
     it { is_expected.to have_css ".card.card--no-border" }

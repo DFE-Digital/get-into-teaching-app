@@ -1,8 +1,8 @@
 require "rails_helper"
 
 describe MailingList::Steps::AlreadySubscribed do
-  include_context "wizard step"
-  it_behaves_like "a wizard step"
+  include_context "with wizard step"
+  it_behaves_like "a with wizard step"
 
   it { is_expected.not_to be_can_proceed }
 

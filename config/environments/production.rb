@@ -22,16 +22,19 @@ Rails.application.configure do
   # Apache or NGINX already handles this.
   config.public_file_server.enabled = ENV["RAILS_SERVE_STATIC_FILES"].present?
 
-  config.public_file_server.headers = {
-    "Cache-Control" => "public, max-age=#{365.days.to_i}",
-    "Expires" => 365.days.from_now.to_formatted_s(:rfc822),
-  }
+  config.public_file_server.headers =
+    {
+      "Cache-Control" => "max-age=31536000, public, immutable",
+      "Access-Control-Allow-Origin" => ENV["APP_URL"],
+    }
 
   # Compress CSS using a preprocessor.
   # config.assets.css_compressor = :sass
 
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
-  # config.action_controller.asset_host = 'http://assets.example.com'
+  if ENV["APP_ASSETS_URL"].present?
+    config.action_controller.asset_host = ENV["APP_ASSETS_URL"]
+  end
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = 'X-Sendfile' # for Apache
@@ -105,7 +108,6 @@ Rails.application.configure do
     "https://get-into-teaching-api-prod.london.cloudapps.digital/api"
   config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence || \
     Rails.application.credentials.google_maps_key.presence
-  config.x.enable_beta_redirects = true
 
   config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence || \
     Rails.application.credentials.basic_auth_credentials.presence
@@ -130,4 +132,20 @@ Rails.application.configure do
     io: STDOUT,
     level: Rails.application.config.log_level,
     formatter: config.rails_semantic_logger.format
+
+  config.x.structured_data.blog_posting = false
+  config.x.structured_data.web_site = true
+  config.x.structured_data.organization = false
+  config.x.structured_data.breadcrumb_list = true
+  config.x.structured_data.event = true
+  config.x.structured_data.how_to = false
+
+  config.x.legacy_tracking_pixels = true
+
+  config.x.covid_banner = false
+
+  # Ensure beta redirect happens before static page cache.
+  config.middleware.insert_before ActionDispatch::Static, Rack::HostRedirect, {
+    "beta-getintoteaching.education.gov.uk" => "getintoteaching.education.gov.uk",
+  }
 end

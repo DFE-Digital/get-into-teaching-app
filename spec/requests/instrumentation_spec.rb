@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Instrumentation" do
+describe "Instrumentation", type: :request do
   let(:registry) { Prometheus::Client.registry }
 
   describe "process_action.action_controller" do

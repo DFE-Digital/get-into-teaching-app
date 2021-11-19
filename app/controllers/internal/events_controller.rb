@@ -1,7 +1,7 @@
 module Internal
   class EventsController < ::InternalController
     layout "internal"
-    before_action :authorize_publisher, only: %i[approve]
+    before_action :authorize_publisher, only: %i[approve withdraw]
     helper_method :event_type_name
 
     DEFAULT_EVENT_TYPE = "provider".freeze
@@ -13,8 +13,7 @@ module Internal
       load_pending_events(@event_type)
       @no_results = @events.blank?
 
-      @success = params[:success]
-      @pending = params[:success] == "pending"
+      @status = params[:status]
       @readable_id = params[:readable_id]
     end
 
@@ -42,10 +41,33 @@ module Internal
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - publish - #{api_event.to_json}")
       redirect_to internal_events_path(
-        success: :open,
+        status: :published,
         event_type: determine_event_type_from_id(api_event.type_id),
         readable_id: api_event.readable_id,
       )
+    end
+
+    def withdraw
+      api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+      api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+      GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
+      Rails.logger.info("#{@user.username} - withdrawn - #{api_event.to_json}")
+      redirect_to internal_events_path(
+        status: :withdrawn,
+        event_type: determine_event_type_from_id(api_event.type_id),
+        readable_id: api_event.readable_id,
+      )
+    end
+
+    def open_events
+      events = GetIntoTeachingApiClient::TeachingEventsApi
+                 .new
+                 .search_teaching_events_grouped_by_type(quantity_per_type: 1_000,
+                                                         start_after: DateTime.now.utc.beginning_of_day,
+                                                         status_ids: [open_event_status_id],
+                                                         type_ids: [event_types[:provider], event_types[:online]])
+
+      @open_events = events.map(&:teaching_events).flatten
     end
 
     def create
@@ -55,7 +77,7 @@ module Internal
       if @event.save
         Rails.logger.info("#{@user.username} - create/update - #{@event.to_api_event.to_json}")
         redirect_to internal_events_path(
-          success: :pending,
+          status: :pending,
           readable_id: @event.readable_id,
           event_type: determine_event_type_from_id(@event.type_id),
         )
@@ -109,14 +131,19 @@ module Internal
 
     def events_search_params(event_type)
       {
-        type_id: event_type,
+        type_ids: [event_type],
         status_ids: [pending_event_status_id],
+        start_after: DateTime.now.utc.beginning_of_day,
         quantity_per_type: 1_000,
       }
     end
 
     def pending_event_status_id
       GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+    end
+
+    def open_event_status_id
+      GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
     end
 
     def event_types

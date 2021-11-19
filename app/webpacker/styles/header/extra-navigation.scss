@@ -22,14 +22,20 @@ html.js-enabled {
   background-color: $grey;
   border-bottom: 1px solid $green;
   padding: .25em 0;
-  //font-weight: bold;
   margin-bottom: 1em;
+
+  .fas {
+    width: 22px;
+  }
 
   @include mq($from: desktop) {
     margin: 0;
     padding: 0;
     padding-right: 2em;
     border-bottom: none;
+    // Avoids content layout shift when autocomplete
+    // search input is injected into the navigation bar.
+    height: 48px;
   }
 
   .fas {
@@ -41,6 +47,7 @@ html.js-enabled {
     padding: 0;
     position: relative;
     min-width: 240px;
+    height: 36px;
 
     input {
       @include reset;
@@ -110,7 +117,7 @@ html.js-enabled {
       flex-direction: column;
       text-align: left;
       background-color: $grey;
-      padding: 1.5em 4em;
+      padding: 1.5em 0 1.5em 4em;
 
       input {
         margin: 0;

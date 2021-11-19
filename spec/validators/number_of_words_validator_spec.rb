@@ -1,19 +1,26 @@
 require "rails_helper"
 
+class TestModel
+  include ActiveModel::Model
+  include ActiveModel::Attributes
+
+  attribute :description, :string
+end
+
 describe NumberOfWordsValidator do
   let :errors do
-    double "errors", add: true
+    instance_double(ActiveModel::Errors, add: true)
   end
 
   let :model do
-    double "model", description: description, errors: errors
+    instance_double(TestModel, description: description, errors: errors)
   end
 
   let :validator do
     described_class.new attributes: :description, less_than: 150
   end
 
-  before :each do
+  before do
     validator.validate_each model, :description, description
   end
 

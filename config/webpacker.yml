@@ -4,7 +4,7 @@ default: &default
   source_path: app/webpacker
   source_entry_path: packs
   public_root_path: public
-  public_output_path: packs
+  public_output_path: packs/v1
   cache_path: tmp/cache/webpacker
   webpack_compile_output: true
 
@@ -52,6 +52,8 @@ default: &default
 development:
   <<: *default
   compile: true
+  extract_css: true
+
 
   # Reference: https://webpack.js.org/configuration/dev-server/
   dev_server:
@@ -76,10 +78,12 @@ development:
 
 test:
   <<: *default
-  compile: true
+  compile: false
 
-  # Compile test packs to a separate directory
-  public_output_path: packs-test
+  # Compile test packs to a separate directory, note the
+  # version must match production for the external link checker
+  # to work!
+  public_output_path: packs-test/v1
 
 production:
   <<: *default

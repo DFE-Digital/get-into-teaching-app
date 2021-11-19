@@ -45,4 +45,9 @@ Rails.application.configure do
 
   # Raises error for missing translations.
   # config.action_view.raise_on_missing_translations = true
+
+  # Ensure beta redirect happens before static page cache.
+  config.middleware.insert_before ActionDispatch::Static, Rack::HostRedirect, {
+    "beta-getintoteaching.education.gov.uk" => "getintoteaching.education.gov.uk",
+  }
 end

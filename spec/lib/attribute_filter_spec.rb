@@ -3,10 +3,10 @@ require "attribute_filter"
 
 describe AttributeFilter, type: :helper do
   describe ".filtered_json" do
+    subject { described_class.filtered_json(input) }
+
     let(:model) { GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidateId: "123", addressTelephone: "1234567") }
     let(:expected_json) { { "candidateId" => "123", "addressTelephone" => "[FILTERED]" }.to_json }
-
-    subject { described_class.filtered_json(input) }
 
     context "with an object" do
       let(:input) { model }

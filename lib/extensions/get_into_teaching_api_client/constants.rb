@@ -3,6 +3,7 @@ module GetIntoTeachingApiClient
     EVENT_TYPES =
       {
         "Train to Teach event" => 222_750_001,
+        "Question Time" => 222_750_007,
         "Online event" => 222_750_008,
         "School or University event" => 222_750_009,
       }.freeze
@@ -49,8 +50,17 @@ module GetIntoTeachingApiClient
     TEACHING_SUBJECTS =
       {
         "Art and design" => "7e2655a1-2afa-e811-a981-000d3a276620",
+        "Biology" => "802655a1-2afa-e811-a981-000d3a276620",
+        "Chemistry" => "842655a1-2afa-e811-a981-000d3a276620",
+        "English" => "942655a1-2afa-e811-a981-000d3a276620",
+        "French" => "962655a1-2afa-e811-a981-000d3a276620",
+        "General science" => "982655a1-2afa-e811-a981-000d3a276620",
+        "German" => "9c2655a1-2afa-e811-a981-000d3a276620",
+        "Languages (other)" => "a22655a1-2afa-e811-a981-000d3a276620",
         "Maths" => "a42655a1-2afa-e811-a981-000d3a276620",
+        "Physics with maths" => "ae2655a1-2afa-e811-a981-000d3a276620",
         "Physics" => "ac2655a1-2afa-e811-a981-000d3a276620",
+        "Spanish" => "b82655a1-2afa-e811-a981-000d3a276620",
       }.freeze
 
     IGNORED_PREFERRED_TEACHING_SUBJECTS =

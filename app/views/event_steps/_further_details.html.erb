@@ -1,3 +1,5 @@
+<%= tag.h1("Accept privacy policy") %>
+
 <%
   legend_text = t("helpers.legend.events_steps_further_details.privacy_policy.text",
     link: link_to(t("helpers.legend.events_steps_further_details.privacy_policy.link"),
@@ -12,7 +14,7 @@
 <% end %>
 
 <% if f.object.can_subscribe_to_mailing_list? %>
-  <div data-controller="last-step" data-last-step-complete="Complete sign up<span></span>" data-last-step-continue="Next Step<span></span>">
+  <div data-controller="last-step" data-last-step-complete="Complete sign up<span></span>" data-last-step-continue="Next step<span></span>">
     <div data-action="click->last-step#updateSubmit">
       <%= f.govuk_radio_buttons_fieldset :subscribe_to_mailing_list, inline: true do %>
         <%= f.govuk_radio_button :subscribe_to_mailing_list, true, label: { text: "Yes" } %>

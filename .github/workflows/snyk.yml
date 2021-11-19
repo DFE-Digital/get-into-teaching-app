@@ -1,0 +1,56 @@
+name: Nightly Snyk Security Scan
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 5 * * *'  # 5:30am daily
+
+jobs:
+  security_tests:
+    name: Snyk Security Scan
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: SLACK-WEBHOOK
+        with:
+          keyvault: ${{ secrets.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: SLACK-WEBHOOK
+
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: SNYK-TOKEN
+        with:
+          keyvault: ${{ secrets.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: SNYK-TOKEN
+
+      - name: Run Snyk to check Docker image for vulnerabilities
+        uses: snyk/actions/docker@master
+        env:
+          SNYK_TOKEN: ${{ steps.SNYK-TOKEN.outputs.secret-value }}
+        with:
+          image:  ${{ env.DOCKER_REPOSITORY }}:master
+          args: --severity-threshold=high --file=Dockerfile
+
+      - name: Run Brakeman static security scanner
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test ${{ env.DOCKER_REPOSITORY }}:master brakeman --no-pager
+      
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_ERROR}}
+          SLACK_TITLE: Failure with Nightly Anchore Security Scan
+          SLACK_MESSAGE: Failure Nightly Anchore Security Scan for ${{env.APPLICATION}}
+          SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}
+          

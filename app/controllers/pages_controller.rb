@@ -1,6 +1,15 @@
 class PagesController < ApplicationController
-  include StaticPages
-  around_action :cache_static_page, only: %i[show]
+  class InvalidTemplateName < RuntimeError; end
+
+  MISSING_TEMPLATE_EXCEPTIONS = [
+    ActionView::MissingTemplate,
+    InvalidTemplateName,
+  ].freeze
+
+  PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
+  DYNAMIC_PAGE_PATHS = [].freeze
+
+  before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && request.query_parameters.any? }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
   PAGE_LAYOUTS = [
@@ -32,22 +41,41 @@ class PagesController < ApplicationController
   end
 
   def show
-    @page = Pages::Page.find content_template
+    render_page(params[:page])
+  end
 
-    (@page.ancestors.reverse + [@page]).each do |page|
-      breadcrumb page.title, page.path if @page.title.present?
-    end
+  # TEMP: routes to try an A/B test in production
+  def temp_test_a
+    response.headers["X-Robots-Tag"] = "noindex"
 
-    if @page.path.match?(/funding-your-training/)
-      @funding_widget =
-        if params[:funding_widget].blank?
-          FundingWidget.new
-        else
-          FundingWidget.new(funding_widget_params).tap(&:valid?)
-        end
-    end
+    render_page("steps-to-become-a-teacher")
+  end
 
-    render template: @page.template, layout: page_layout
+  def temp_test_b
+    response.headers["X-Robots-Tag"] = "noindex"
+
+    render_page("ways-to-train")
+  end
+
+  # Avoid caching by rendering these pages manually:
+
+  def funding_your_training
+    @funding_widget =
+      if params[:funding_widget].blank?
+        FundingWidget.new
+      else
+        FundingWidget.new(funding_widget_params).tap(&:valid?)
+      end
+
+    render_page("funding-your-training")
+  end
+
+  def welcome
+    render_page("welcome")
+  end
+
+  def welcome_my_journey_into_teaching
+    render_page("welcome/my-journey-into-teaching")
   end
 
   def tta_service
@@ -58,13 +86,35 @@ class PagesController < ApplicationController
       url += "?" + session[:utm].to_param
     end
 
-    redirect_to(url, turbolinks: false)
+    redirect_to(url, turbolinks: false, status: :moved_permanently)
+  end
+
+protected
+
+  def static_page_actions
+    %i[cookies privacy_policy].tap do |actions|
+      actions << :show unless DYNAMIC_PAGE_PATHS.include?(request.path)
+    end
   end
 
 private
 
+  def render_page(path)
+    @page = ::Pages::Page.find content_template(path)
+
+    (@page.ancestors.reverse + [@page]).each do |page|
+      breadcrumb page.title, page.path if @page.title.present?
+    end
+
+    render template: @page.template, layout: page_layout
+  end
+
   def funding_widget_params
     params.require(:funding_widget).permit(:subject)
+  end
+
+  def set_welcome_guide_info
+    session["welcome_guide"] = request.query_parameters.slice("preferred_teaching_subject_id", "degree_status_id")
   end
 
   def page_layout
@@ -74,8 +124,14 @@ private
     "layouts/content"
   end
 
-  def content_template
-    "/#{filtered_page_template}"
+  def content_template(path)
+    "/#{filtered_page_template(path)}"
+  end
+
+  def filtered_page_template(path)
+    path.to_s.tap do |page|
+      raise InvalidTemplateName if page !~ PAGE_TEMPLATE_FILTER
+    end
   end
 
   def rescue_missing_template

@@ -20,7 +20,7 @@ describe('AccordionController', () => {
         <div id="the-video-player" class="video-overlay" data-video-target="player" data-action="click->video#close">
             <div class="video-overlay__background">
             </div>
-            <div class='video-overlay__video-container'>
+            <div class="video-overlay__video-container">
                 <div class="video-overlay__video-container__wrapper">
                     <iframe data-video-target="iframe"
                         width="800"

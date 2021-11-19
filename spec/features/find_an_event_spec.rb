@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Finding an event", type: :feature do
-  include_context "stub types api"
+  include_context "with stubbed types api"
 
   let(:events) do
     11.times.collect do |index|
@@ -69,11 +69,14 @@ RSpec.feature "Finding an event", type: :feature do
     visit events_path
 
     expect(page).to have_text "Search for events"
-    expect(page).to_not have_css ".pagination"
+    expect(page).not_to have_css ".pagination"
 
     click_on "Update results"
 
     expect(page).to have_css ".pagination"
+
+    # the pagination anchor is present
+    expect(page).to have_css("#train-to-teach-events-list")
 
     # there are 11 events and 9 per page
     expect(page).to have_css(".event-box", count: 9)
@@ -86,15 +89,15 @@ RSpec.feature "Finding an event", type: :feature do
 
     expect(page).to have_css("h2", text: "Search for Train to Teach events")
 
-    expect(page).to have_link("2", href: event_category_path(event_category_slug, page: 2))
-    expect(page).to have_link("Next ›", href: event_category_path(event_category_slug, page: 2))
+    expect(page).to have_link("2", href: event_category_path(event_category_slug, page: 2, anchor: "event-category-list"))
+    expect(page).to have_link("Next page", href: event_category_path(event_category_slug, page: 2, anchor: "event-category-list"))
 
     # there are 11 events and 9 per page
     expect(page).to have_css(".event-box", count: 9)
 
     click_on("2")
     expect(page).to have_css(".event-box", count: 2)
-    expect(page).to have_link("‹ Prev", href: event_category_path(event_category_slug))
+    expect(page).to have_link("Previous page", href: event_category_path(event_category_slug, anchor: "event-category-list"))
   end
 
   scenario "Searching events within a category" do

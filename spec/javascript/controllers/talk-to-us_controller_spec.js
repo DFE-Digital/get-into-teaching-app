@@ -2,37 +2,106 @@ import { Application } from 'stimulus';
 import TalkToUsController from 'talk-to-us_controller.js';
 
 describe('TalkToUsController', () => {
-  document.body.innerHTML = `
-    <section data-controller="talk-to-us" id="element">
-        <div data-talk-to-us-target="chat" id="chat">
-            <a href="#" data-action="click->talk-to-us#startChat" id="startChat">Chat Online</a>
-        </div>
-    </section>
-    `;
 
-  const open = jest.fn();
-  const application = Application.start();
-  application.register('talk-to-us', TalkToUsController);
+  beforeAll(() => registerController());
+  afterEach(() => jest.useRealTimers());
+
+  let chatShowSpy;
+
+  const setBody = (offlineText = null) => {
+    document.body.innerHTML = `
+      <div>
+        <span data-controller="talk-to-us">
+          <a
+            href="#"
+            data-action="click->talk-to-us#startChat"
+            data-talk-to-us-target="button"
+          ><span>Chat Online</span></a>
+          ${offlineText ? `<p data-talk-to-us-target="offlineText">${offlineText}</p>` : ''}
+        </span>
+        <div> // Represents the Zendesk modal
+          <iframe id="webWidget"></iframe>
+        </div>
+      </div>
+    `;
+  }
+
+  const registerController = () => {
+    const application = Application.start();
+    application.register('talk-to-us', TalkToUsController);
+  }
+
+  const setCurrentTime = (time) => {
+    jest.useFakeTimers().setSystemTime(new Date(time).getTime())
+  }
+
+  const getButtonText = () => {
+    return document.querySelector('a span').textContent;
+  }
 
   beforeEach(() => {
-    jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ open }));
+    chatShowSpy = jest.fn();
+    jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ $zopim: { livechat: { window: { show: chatShowSpy } } } }));
+
+    setBody();
+    setCurrentTime('2021-01-01 10:00');
   });
 
-  it('makes the controller element visible', () => {
-    const element = document.getElementById('element');
-    expect(element.classList).toContain('visible');
+  it('appends the Zendesk snippet, opens the chat window and shows a loading message when clicking the button', () => {
+    const button = document.querySelector('a');
+    expect(document.activeElement.id).not.toEqual("webWidget");
+    button.click();
+    expect(document.querySelector('#ze-snippet')).not.toBeNull();
+    expect(getButtonText()).toEqual("Starting chat...");
+    jest.runOnlyPendingTimers(); // Timer for script loading,
+    jest.runOnlyPendingTimers(); // Timer to wait for the widget to load.
+    jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
+    expect(chatShowSpy).toHaveBeenCalled();
+    expect(getButtonText()).toEqual("Chat Online");
+    expect(document.activeElement.id).toEqual("webWidget");
   });
 
-  describe('startChat', () => {
-    it('opens the chat session', () => {
-      const startChat = document.getElementById('startChat');
-      startChat.click();
-      const url =
-        'https://gov.klick2contact.com/v03/launcherV3.php?p=DfE&d=971&ch=CH&psk=chat_a2&iid=STC&srbp=0&fcl=0&r=Static&s=https://gov.klick2contact.com/v03&u=&wo=&uh=&pid=82&iif=0';
-      const target = 'Get Into Teaching: Chat online';
-      const features =
-        'menubar=no,location=yes,resizable=yes,scrollbars=no,status=yes,width=340,height=480';
-      expect(open).toBeCalledWith(url, target, features);
+  describe('when clicking the chat button twice', () => {
+    it('only appends the Zendesk snippet once and does not show the loading message for the second click', () => {
+      const button = document.querySelector('a');
+      button.click();
+      expect(button.textContent).toEqual("Starting chat...");
+      jest.runOnlyPendingTimers(); // Timer for script loading,
+      jest.runOnlyPendingTimers(); // Timer to wait for the widget to load.
+      jest.runOnlyPendingTimers(); // Timer to wait for chat window to open.
+      expect(chatShowSpy).toHaveBeenCalled();
+      expect(button.textContent).toEqual("Chat Online");
+      button.click();
+      expect(button.textContent).toEqual("Chat Online");
+      expect(document.querySelectorAll('#ze-snippet').length).toEqual(1);
     });
   });
+
+  describe("when the chat is offline (too early) and there is no offline text", () => {
+    beforeEach(() => {
+      registerController();
+      setBody();
+      setCurrentTime('2021-01-01 08:29');
+    });
+
+    it('hides the chat button', () => {
+      const button = document.querySelector('a');
+
+      expect(button.classList.contains('hidden')).toBe(true)
+    });
+  })
+
+  describe("when the chat is offline (too late) and there is offline text", () => {
+    beforeEach(() => {
+      registerController();
+      setBody("Chat offline.");
+      setCurrentTime('2021-01-01 17:31');
+    });
+
+    it('shows the offline text', () => {
+      const offlineText = document.querySelector('p');
+
+      expect(offlineText.classList.contains('visible')).toBe(true)
+    })
+  })
 });

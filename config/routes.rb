@@ -1,10 +1,4 @@
 Rails.application.routes.draw do
-  if Rails.configuration.x.enable_beta_redirects
-    constraints(host: "beta-getintoteaching.education.gov.uk") do
-      get "/(*path)", to: redirect(host: "getintoteaching.education.gov.uk")
-    end
-  end
-
   root to: "pages#show", page: "home"
 
   get "/robots.txt", to: "robots#show"
@@ -50,18 +44,25 @@ Rails.application.routes.draw do
   namespace :internal do
     resources :events, only: %i[index show new create edit]
     put "/approve", to: "events#approve"
+    put "/withdraw", to: "events#withdraw"
+    get "/open_events", to: "events#open_events"
   end
 
+  get "/test/a", to: "pages#temp_test_a"
+  get "/test/b", to: "pages#temp_test_b"
+  get "/funding-your-training", to: "pages#funding_your_training", as: :funding_your_training
+  get "/welcome", to: "pages#welcome", as: :welcome_guide
+  get "/welcome/my-journey-into-teaching", to: "pages#welcome_my_journey_into_teaching", as: :welcome_my_journey_into_teaching
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/tta-service", to: "pages#tta_service", as: :tta_service
   get "/tta", to: "pages#tta_service", as: nil
 
   resource :search, only: %i[show]
-  resource :eligibility_checker,
-           only: %i[show],
-           controller: "eligibility_checker",
-           path: "eligibility-checker"
+  # resource :eligibility_checker,
+  #          only: %i[show],
+  #          controller: "eligibility_checker",
+  #          path: "eligibility-checker"
 
   resource "cookie_preference", only: %i[show]
   get "/cookie-policy", to: redirect("/cookies")
@@ -90,12 +91,18 @@ Rails.application.routes.draw do
   end
 
   unless Rails.env.production?
-    namespace :callbacks do
-      resources :steps, path: "/book", only: %i[index show update] do
-        collection do
-          get :completed
-          get :resend_verification
-        end
+    resources "teaching_events", path: "/teaching-events", controller: "teaching_events" do
+      collection do
+        get :about_ttt_events, path: "about-ttt-events", as: "about_ttt"
+      end
+    end
+  end
+
+  namespace :callbacks do
+    resources :steps, path: "/book", only: %i[index show update] do
+      collection do
+        get :completed
+        get :resend_verification
       end
     end
   end
@@ -126,12 +133,6 @@ Rails.application.routes.draw do
       end
     end
   end
-
-  resource :mailing_list_signup,
-           path: "personalised-updates",
-           path_names: { new: "register", edit: "verify" },
-           as: "mailing_list_signup",
-           only: %w[new create edit update]
 
   get "*page", to: "pages#show", as: :page, constraints: ->(request) { !request.path.start_with?("/rails/") }
 end

@@ -33,9 +33,13 @@ module Events
 
     class << self
       def available_event_types
-        @available_event_types ||= GetIntoTeachingApiClient::Constants::EVENT_TYPES.map do |key, value|
-          GetIntoTeachingApiClient::PickListItem.new(id: value, value: key)
-        end
+        # We can't search for Question Time events explicitly. Instead, they
+        # are returned as Train to Teach events.
+        @available_event_types ||= GetIntoTeachingApiClient::Constants::EVENT_TYPES
+          .except("Question Time")
+          .map do |key, value|
+            GetIntoTeachingApiClient::PickListItem.new(id: value, value: key)
+          end
       end
 
       def available_event_type_ids
@@ -72,6 +76,17 @@ module Events
 
   private
 
+    def type_ids
+      type_ids = [type]
+
+      # We combine Question Time events with Train to Teach events
+      if type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+        type_ids << GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
+      end
+
+      type_ids.compact.presence
+    end
+
     def month_range
       return 0..FUTURE_MONTHS if future?
 
@@ -89,7 +104,7 @@ module Events
 
     def query_events_api(limit)
       GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events_grouped_by_type(
-        type_id: type,
+        type_ids: type_ids,
         radius: distance,
         postcode: postcode&.strip,
         start_after: start_of_month,

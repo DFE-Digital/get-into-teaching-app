@@ -18,9 +18,7 @@
     <%= content %>
 
     <% if show_more_information? %>
-      <%= link_to(more_information_link, class: "git-link") do %>
-        <%= more_information_text %> <%= helpers.fas_icon "chevron-right" %>
-      <% end %>
+      <%= link_to(more_information_text, more_information_link, class: "git-link") %>
     <% end %>
   </article>
   <section class="feature">

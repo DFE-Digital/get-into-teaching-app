@@ -6,7 +6,6 @@ Rails.application.configure do
   config.x.git_api_endpoint = \
     "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
   config.x.static_pages.disable_caching = true
-  config.x.enable_beta_redirects = false
   config.x.utm_codes = true
 
   Rack::Attack.enabled = false

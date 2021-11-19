@@ -11,7 +11,7 @@ class StoredPage
 end
 
 RSpec.feature "content pages check", type: :feature, content: true do
-  include_context "stub types api"
+  include_context "with stubbed types api"
 
   let(:other_paths) { %w[/ /blog /search /tta-service /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
   let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}] }
@@ -121,6 +121,12 @@ RSpec.feature "content pages check", type: :feature, content: true do
       end
     end
 
+    scenario "every page has a main heading" do
+      @stored_pages_by_path.each do |path, sp|
+        expect(sp.body).to(have_css("h1", count: 1), "#{path} has no heading")
+      end
+    end
+
     scenario "there are no internal links that contain the site's domain" do
       @stored_pages.each do |sp|
         sp.body
@@ -138,6 +144,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
     subject { page }
 
     before { visit "/" }
+
     let(:document) { Nokogiri.parse(page.body) }
 
     let(:navigation_pages) { Pages::Frontmatter.select(:navigation) }
@@ -145,8 +152,10 @@ RSpec.feature "content pages check", type: :feature, content: true do
     scenario "navigable pages appear in desktop navbar" do
       # skip home as we've just navigated to '/'
       navigation_pages.reject { |k, _v| k == "/home" }.each do |url, frontmatter|
+        expected_title = frontmatter[:navigation_title] || frontmatter[:heading] || frontmatter[:title]
+
         page.within "nav ol.primary" do
-          is_expected.to have_link frontmatter[:title], href: url
+          is_expected.to have_link expected_title, href: url
         end
       end
     end

@@ -17,8 +17,9 @@ describe StoriesHelper, type: "helper" do
   end
 
   describe "#story_image_alt" do
-    let(:name) { "David" }
     subject { helper.story_image_alt(name) }
+
+    let(:name) { "David" }
 
     specify %(returns string 'A photograph of' followed by the supplied name) do
       is_expected.to match("A photograph of #{name}")
@@ -26,8 +27,9 @@ describe StoriesHelper, type: "helper" do
   end
 
   describe "#youtube" do
-    let(:url) { "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
     subject { helper.youtube(url) }
+
+    let(:url) { "https://www.youtube.com/watch?v=dQw4w9WgXcQ" }
 
     specify %(should generate an iframe with the data-src attribute set to the video's URL) do
       expect(subject).to have_css(%(iframe[data-src='#{url}']), class: "story__video lazyload")
@@ -35,8 +37,9 @@ describe StoriesHelper, type: "helper" do
   end
 
   describe "#more_stories_thumbnail" do
-    let(:path) { "/assets/mugshots/elizabeth_hoover.jpg" }
     subject { helper.more_stories_thumbnail(path) }
+
+    let(:path) { "/assets/mugshots/elizabeth_hoover.jpg" }
 
     specify %(should generate a div with the background image set to the provided path) do
       expect(subject).to have_css(%(div[style="background-image:url('#{path}')"]), class: "stories__thumbs__thumb__img")

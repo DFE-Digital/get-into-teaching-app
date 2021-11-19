@@ -10,18 +10,33 @@ class ApplicationController < ActionController::Base
 
   rescue_from ActionController::RoutingError, with: :render_not_found
   rescue_from GetIntoTeachingApiClient::ApiError, with: :handle_api_error
-  rescue_from Pages::Page::PageNotFoundError, with: :render_not_found
+  rescue_from ::Pages::Page::PageNotFoundError, with: :render_not_found
 
   before_action :http_basic_authenticate, if: :authenticate?
   before_action :set_api_client_request_id
   before_action :record_utm_codes
   before_action :add_home_breadcrumb
-  before_action :toggle_vwo
 
-  after_action :process_images
-  after_action :process_links
+  after_action :post_processing
+
+protected
+
+  def static_page_actions
+    # Override to specify which actions are serving
+    # static page content and can therefore be cached.
+    []
+  end
 
 private
+
+  def post_processing
+    process_images
+    process_links
+
+    if perform_caching? && action_name.to_sym.in?(static_page_actions)
+      cache_page(nil, nil, Zlib::BEST_COMPRESSION)
+    end
+  end
 
   def raise_not_found
     raise ActionController::RoutingError, "Not Found"
@@ -31,20 +46,17 @@ private
     BasicAuth.env_requires_auth?
   end
 
-  def toggle_vwo
-    @render_vwo = vwo_config[:paths]&.include?(request.path)
-  end
-
-  def vwo_config
-    @@vwo_config ||= YAML.safe_load(File.read(Rails.root.join("config/vwo.yml"))).deep_symbolize_keys
-  end
-
   def process_images
     return unless response_is_html?
 
     response.body = NextGenImages.new(response.body).html
     response.body = ResponsiveImages.new(response.body).html
     response.body = LazyLoadImages.new(response.body).html
+
+    # <source> has no content so should be self-closing; configuring Nokogiri
+    # to remove the closing tags results in breakages elsewhere in the document,
+    # so we have to remove them manually post image processing.
+    response.body = response.body.gsub("</source>", "")
   end
 
   def process_links
@@ -63,7 +75,10 @@ private
 
       next if classes && (classes & classes_to_suppress).any?
 
-      if anchor[:href].include?("//")
+      external_link = anchor[:href].include?("//")
+      externally_hosted_internal_asset = ENV["APP_ASSETS_URL"].present? && anchor[:href].start_with?(ENV["APP_ASSETS_URL"])
+
+      if external_link && !externally_hosted_internal_asset
         anchor.add_child(helpers.image_pack_tag("media/images/icon-external.svg", class: "external-link-icon", alt: ""))
       end
     end

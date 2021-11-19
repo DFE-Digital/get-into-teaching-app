@@ -1,0 +1,43 @@
+<%= link_to "Return to pending events",
+            internal_events_path, method: :get,
+            class: "govuk-back-link" %>
+
+<% if @open_events.empty? %>
+  <div class="pending-no-results">
+    <%= render(Events::NoResultsComponent.new) do %>
+      No open events
+    <% end %>
+  </div>
+<% else %>
+  <div class="open-events-container">
+    <table class="govuk-table">
+      <caption class="table-header">Open events</caption>
+      <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th scope="col" class="govuk-table__header">Event</th>
+        <th scope="col" class="govuk-table__header">Partial URL</th>
+        <% if @user.publisher? %>
+          <th scope="col" class="govuk-table__header">Withdraw</th>
+        <% end %>
+      </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+      <% @open_events.each do |event| %>
+        <tr class="govuk-table__row">
+          <td class="govuk-table__cell">
+            <%= link_to event.name, event_path(event.readable_id) %>
+          </td>
+          <td class="govuk-table__cell">
+            <%= event.readable_id %>
+          </td>
+          <% if @user.publisher? %>
+            <td class="govuk-table__cell">
+              <%= link_to "select", internal_withdraw_path(id: event.readable_id), method: :put %>
+            </td>
+          <% end %>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+<% end %>

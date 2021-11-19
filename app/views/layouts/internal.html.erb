@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
 <% content_for :head do %>
+  <%= csrf_meta_tags %>
   <%= stylesheet_pack_tag 'internal', 'data-turbolinks-track': 'reload', media: 'all' %>
   <%= javascript_pack_tag 'internal', 'data-turbolinks-track': 'reload', async: true %>
 <% end %>
 
 <%= render "sections/head" %>
-<%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video internal-events", "link-target": "content" }, id: "body" do %>
+<%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video internal-events", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
   <div id="skiplink-container">
     <div>
       <a href="#main-content" class="skiplink govuk-link">Skip to main content</a>
     </div>
   </div>
 
-
-  <main role="main" id="main-content" class="<%= class_names("internal", { "index": current_page?(action: 'index') }) %>">
+  <main id="main-content" class="<%= class_names("internal", action_name ) %>">
     <section class="container internal-container">
       <article class="fullwidth">
         <%= yield %>

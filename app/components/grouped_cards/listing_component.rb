@@ -13,7 +13,11 @@ module GroupedCards
     end
 
     def items(group)
-      @data[group]
+      @data.dig(group, "providers")
+    end
+
+    def description(group)
+      @data.dig(group, "description")
     end
   end
 end

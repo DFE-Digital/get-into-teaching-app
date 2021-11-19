@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe Footer::FeedbackComponent, type: "component" do
   subject! { render_inline(described_class.new) }
+
   let(:feedback_selector) { ".feedback-bar" }
 
   specify "renders the talk to us component" do

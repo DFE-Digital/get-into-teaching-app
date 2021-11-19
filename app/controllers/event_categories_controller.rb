@@ -55,7 +55,11 @@ private
   def load_events(period)
     @event_search = Events::Search.new(event_filter_params.merge(type: @type.id, period: period))
     events_by_type = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
-    group_presenter = Events::GroupPresenter.new(events_by_type, false, @event_search.future?)
+    group_presenter = Events::GroupPresenter.new(
+      events_by_type,
+      display_empty: false,
+      ascending: @event_search.future?,
+    )
     @events = group_presenter.paginated_events_of_type(@type.id, params[:page]) || []
   end
 

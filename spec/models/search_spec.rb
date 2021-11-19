@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Search do
-  include_context "use fixture markdown pages"
+  include_context "with fixture markdown pages"
 
   describe "#results" do
     subject { described_class.new(search: search).results }
@@ -32,6 +32,7 @@ RSpec.describe Search do
 
     context "with mismatched case" do
       let(:search) { "tEaCh" }
+
       it { is_expected.to have_attributes length: 3 }
       it { is_expected.to include(a_hash_including(path: "/first")) }
       it { is_expected.to include(a_hash_including(path: "/second")) }

@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe SitemapController do
+RSpec.describe SitemapController, type: :request do
   subject { Nokogiri::XML(response.body) }
 
   let(:content_pages) do
@@ -22,12 +22,14 @@ RSpec.describe SitemapController do
     }
   end
 
-  before { allow(Pages::Frontmatter).to receive(:list) { content_pages } }
-
-  before { get("/sitemap.xml") }
+  before do
+    allow(Pages::Frontmatter).to receive(:list) { content_pages }
+    get("/sitemap.xml")
+  end
 
   describe "#show" do
     let(:sitemap_namespace) { "http://www.sitemaps.org/schemas/sitemap/0.9" }
+
     specify "the document should have the correct namespace" do
       expect(subject.at_xpath("/xmlns:urlset").namespace.href).to eql(sitemap_namespace)
     end

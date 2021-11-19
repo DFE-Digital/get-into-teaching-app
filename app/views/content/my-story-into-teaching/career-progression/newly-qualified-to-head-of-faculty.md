@@ -19,6 +19,10 @@ quote:
   q-jon:
     text: The best thing about teaching is the independence you have in your classroom to create an inspiring environment
     inline: left
+calls_to_action:
+  ect:
+    name: ect
+    arguments: {}
 ---
 
 I've enjoyed rapid career progression. I made the most of the opportunities and prospects that teaching offered me, and was head of department for geography at The Toynbee School in Chandler's Ford within two years of my NQT year.
@@ -38,3 +42,5 @@ As I have progressed, I do less teaching and more leadership and management. I s
 The best thing about teaching is the independence you have in your classroom to create an inspiring environment, and having a positive impact on students' lives whilst engaging and motivating pupils in the subject I love to teach.
 
 Above all, you can't develop a vision that staff can buy into and deliver if you are not fully involved in the school.
+
+$ect$

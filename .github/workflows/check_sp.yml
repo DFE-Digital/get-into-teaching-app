@@ -1,0 +1,23 @@
+name: Check Service Principle
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "35 6 * * *"
+    
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Azure CLI script
+        uses: azure/CLI@v1
+        with:
+          azcliversion: 2.0.72
+          inlineScript: |
+            az ad sp credential list   --id 4bf0b603-073c-47fd-992c-2b03c21fcdab
+

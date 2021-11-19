@@ -1,6 +1,11 @@
 require "rails_helper"
 
 RSpec.describe CallsToAction::AttachmentComponent, type: :component do
+  subject do
+    render_inline described_class.new(args)
+    page
+  end
+
   let(:basic_args) do
     {
       text: "Lorem ipsum ....",
@@ -10,18 +15,13 @@ RSpec.describe CallsToAction::AttachmentComponent, type: :component do
 
   let(:args) { basic_args }
 
-  subject do
-    render_inline described_class.new(args)
-    page
-  end
-
   specify "renders the component" do
     is_expected.to have_css(".attachment")
   end
 
   context "with the basic arguments" do
     specify "includes a link to the attachment" do
-      is_expected.to have_css(%(a[href*="packs-test/media/documents/ICT_skills_audit_returners"]))
+      is_expected.to have_css(%(a[href*="packs-test/v1/media/documents/ICT_skills_audit_returners"]))
     end
 
     specify "includes the text in the link" do

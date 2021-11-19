@@ -44,7 +44,7 @@
                          label: { text: "Start at" },
                          width: 'one-third',
                          class: "flatpickr-enhanced-field",
-                         data: { "internal-events-target": "startAt" }%>
+                         data: { "internal-events-target": "startAt" } %>
 
   <%= f.govuk_text_field :end_at,
                          label: { text: "End at" },
@@ -56,7 +56,7 @@
                          hint: { text: 'You can generate the partial URL from the event name and start at date' },
                          data: { "internal-events-target": "partialUrl" } %>
 
-  <span class="govuk-error-message hidden" id="internal-generate-url-error" data-internal-events-target="errorMessage" }>
+  <span class="govuk-error-message hidden" id="internal-generate-url-error" data-internal-events-target="errorMessage">
     <span class="govuk-visually-hidden">Error: </span>Name and Start at fields must have values in order to generate partial URL
   </span>
   <%= f.button "Generate partial URL",

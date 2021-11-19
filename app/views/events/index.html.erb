@@ -36,7 +36,7 @@
 <section class="content-cta">
   <h3>Do you have a teaching event?</h3>
   <p>
-    If you'd like to advertise your teaching event in this listing, <a class="dark-link" href="https://form.education.gov.uk/service/Provider-event-details---Get-into-Teaching-website"
+    If you'd like to advertise your teaching event in this listing, <a href="https://form.education.gov.uk/service/Provider-event-details---Get-into-Teaching-website"
       title="Submit your event details on GOV.UK"
       target="_blank"
       rel="noopener norefferer">
@@ -44,4 +44,6 @@
   </p>
 </section>
 
+<% if Rails.application.config.x.legacy_tracking_pixels %>
 <span data-controller="lid" data-lid-action="track" data-lid-event="Events"></span>
+<% end %>

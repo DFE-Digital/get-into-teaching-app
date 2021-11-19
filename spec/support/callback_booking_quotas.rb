@@ -20,9 +20,9 @@ RSpec.shared_examples "exposes callback booking quotas" do
   let(:quotas) { [quota_in_30_minutes, quota_in_90_minutes] }
 
   describe "#callback_booking_quotas" do
-    let(:time_zone) { "UTC" }
-
     subject { described_class.callback_booking_quotas }
+
+    let(:time_zone) { "UTC" }
 
     around do |example|
       Time.use_zone(time_zone) { example.run }

@@ -1,9 +1,10 @@
 require "rails_helper"
 
-describe "Mailing list calls to action" do
+describe "Mailing list calls to action", type: :request do
   describe "banner" do
-    before { get root_path }
     subject { Nokogiri.parse(response.body) }
+
+    before { get root_path }
 
     it "the mailing list banner has a close link" do
       link = subject.at_css("#mailing-list-bar-dismiss")

@@ -1,6 +1,11 @@
 require "rails_helper"
 
 describe Cards::StoryComponent, type: "component" do
+  subject do
+    render_inline(described_class.new(card: story, page_data: page_data))
+    page
+  end
+
   let :edna do
     {
       title: "Edna's career in teaching",
@@ -20,15 +25,10 @@ describe Cards::StoryComponent, type: "component" do
   let(:story) { base }
   let(:page_data) { nil }
 
-  subject do
-    render_inline(described_class.new(card: story, page_data: page_data))
-    page
-  end
-
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }
   it { is_expected.not_to have_css ".card header" }
-  it { is_expected.to have_css(%(img[src*="packs-test/media/images/dfelogo"])) }
+  it { is_expected.to have_css(%(img[src*="packs-test/v1/media/images/dfelogo"])) }
   it { is_expected.to have_content story["snippet"] }
 
   specify "includes the name in a link" do
@@ -57,6 +57,7 @@ describe Cards::StoryComponent, type: "component" do
 
   context "with no header and unknown page" do
     let(:page_data) { Pages::Data.new }
+
     it { is_expected.not_to have_css ".card header" }
   end
 end

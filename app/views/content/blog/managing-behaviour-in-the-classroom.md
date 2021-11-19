@@ -4,6 +4,7 @@ date: "2020-10-09"
 images:
   header_image:
     path: "media/images/content/blog/pupil-chatting-to-teacher-in-classroom.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/pupil-chatting-to-teacher-in-classroom.jpg"
     alt: "A photograph of a teacher chatting with their student in a classroom" 
 description: |-
   Teacher training adviser Jane Wilkinson answers some common questions from
@@ -43,4 +44,4 @@ Knowing a child’s name is a really powerful behaviour management tool, so lear
 
 Making sure pupils put their names on the top of their page provides a helpful prompt for you. You can also make a seating plan and keep that handy. Doing an ice-breaker activity with new classes where pupils say their names and something that is unique to them is a great technique too.
 
-_Have a concern about the classroom? Join our [Aspiring Teacher Forum on Facebook](https://www.facebook.com/groups/1357146377672255) for advice from teacher training advisers and new and aspiring teachers. For free one-to-one support from a teacher training adviser, register on the [Get Into Teaching website](/tta-service)._
+_Have a concern about the classroom? Join our [Aspiring Teacher Forum on Facebook](https://www.facebook.com/groups/1357146377672255) for advice from teacher training advisers and new and aspiring teachers. For free one-to-one support from a teacher training adviser, [register now](/tta-service)._

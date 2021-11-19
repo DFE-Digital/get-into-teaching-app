@@ -5,6 +5,7 @@ date: "2021-03-22"
 images:
   header_image:
     path: "media/images/content/blog/school-aisle.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/school-aisle.jpg"
     alt: "A photograph of a school playground with children playing"
 description: |-
   Felix offered to speak to Teacher Training Adviser, Jane Wilkinson, about the challenges faced by someone who lives with additional needs and their progress towards achieving the dream of becoming a teacher.
@@ -46,4 +47,4 @@ My answer would be: only if it’s right for you! It’s certainly not for every
 
 *Felix will begin their teacher training course in Sept 2021. We wish them all the best for a very successful teaching career.*
 
-All our Teacher Training Advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Find out more and sign up](/).
+All our Teacher Training Advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Find out more and sign up](/teacher-training-advisers).

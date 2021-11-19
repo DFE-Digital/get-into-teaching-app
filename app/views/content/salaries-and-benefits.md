@@ -1,8 +1,8 @@
 ---
 title: "Salaries and benefits"
 description: |-
-  View teachers' pay scales, pay ranges table and salary bands for England and London, 
-  as well as other benefits such as holidays and the Teacher Pension Scheme. Find out the average starting salary for teaching primary and secondary school, as well as leading practictioners and headteachers.
+  Pay scales for teachers in England and Wales. Find the pay ranges for different roles, how many days holiday teachers get each year, 
+  and what to expect from the generous teacher pension scheme.
 date: "2021-06-24"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
@@ -53,109 +53,120 @@ keywords:
   - Teacher training courses
 ---
 
-Schools develop their own pay scales to attract and retain teachers that have the greatest impact on their pupils' learning.
+For teaching the next generation of citizens you’re entitled to a competitive salary, generous holidays, and a substantial pension.
 
-What you're paid will be linked to performance, not length of service - meaning your salary can increase as you go through your career.
+## Teaching salaries
 
-## Qualified teachers
+As a new teacher, your salary will be between £25,714 and £32,157, depending on where you teach.
 
-As a 'newly qualified teacher' (NQT) in a primary or secondary school your starting salary will be between £25,714 and £32,157 depending on where you teach.
+The school you teach in will have their own pay scales for qualified teachers. Pay increases will always be linked to performance, not length of service.
 
-As you progress in your teaching career, it's possible to move up through these pay scales:
+Annual salary ranges for qualified teachers are:
 
-| Area                          | Minimum | Maximum |
-| -------                       | -----   | -----   |
-| Inner London                  | £32,157 | £50,953 |
-| Outer London                  | £29,915 | £45,766 |
-| London fringe                 | £26,948 | £42,780 |
-| The rest of England and Wales | £25,714 | £41,604 |
+| Area                                     | Minimum | Maximum |
+| -------                                  | -----   | -----   |
+| London                                   | £26,948 | £42,624 |
+| Rest of England and Wales                | £25,714 | £36,961 |
 
-In 2020/21, the average salary for a primary school teacher was £36,900. The average salary for a secondary school teacher was £39,900.
+On average, established teachers earn more than this.
 
-### Holidays
+## Holidays
 
-You'll get more days than people in many other professions. Full-time teachers work for 195 days per year in school.
+You'll get more days holiday than people in many other professions. In school, full-time teachers work 195 days per year. 
 
-### Newly qualified teacher (NQT) benefits
+For comparison, you'd work 227 days per year (on average) if you worked full time in an office.
 
-A 2-year package to support teachers at the start of their career, based on the [early career framework](https://www.gov.uk/government/publications/supporting-early-career-teachers), launches nationally in September 2021.
+## Teachers' pension scheme
 
-The support package includes:
+The teachers’ pension scheme is one of the most generous in the country. It is:
 
-* funded 5% time off timetable in the second year of teaching, in addition to the existing 10% in the first year
-* a range of high-quality, freely available curricula and teacher training materials underpinned by the early career framework
-* funded training for mentors of early career teachers
-* funded time for mentors to support early career teachers
-
-### Get a salary uplift for taking on extra responsibilities
-
-You may be able to get 'teaching and learning responsibility' (TLR) payments if you take on extra responsibilities such as:
-
-* progressing the education of people beyond your assigned pupils
-* leading, developing and enhancing the teaching practice of others
-
-TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on your teaching responsibilities. For example, the higher payment involves taking on line management responsibilities.
-
-| Level   | Minimum | Maximum |
-| ------- | -----   | -----   |
-| TLR 1   | £8,291  | £14,030 |
-| TLR 2   | £2,873  | £7,017  |
-
-### Teachers’ Pension Scheme
-
-The Teachers’ Pension Scheme gives you a regular source of income when you retire. It is:
-
-* based on your teaching salary and service rather than investments
+* based on your teaching salary rather than the amount of money you pay in
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
-[Find out more about the Teachers’ Pension Scheme](https://www.teacherspensions.co.uk/members/new-starter.aspx)
+[Find our more about the teachers' pension scheme](https://www.teacherspensions.co.uk/members/new-starter.aspx)
+
+## Establishing yourself as a teacher
+
+As well as pay, holidays and a pension, all teachers are given extra support during their first 2 years in teaching. This is part of the ['early career framework'](https://www.gov.uk/government/collections/early-career-framework-reforms). 
+
+The support includes:
+
+* paid time away from classroom teaching to focus on learning
+* access to a range of high-quality training
+* a mentor who will give you guidance and support
+
+This extra support used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs).
 
 ## Career progression
 
-### Leading practitioners
+There are different ways to progress and increase your salary.
 
-A 'leading practitioner' is an excellent and highly skilled teacher who consistently demonstrates the highest standards of classroom practice.
+For example, you can move into a more senior role, or take on additional responsibilities that help your school.
 
-They share their skills and experience through the coaching, mentoring and induction of teachers, including trainees and newly qualified teachers (NQTs).
+### Senior teacher pay
 
-The pay scale for leading practitioners is between £42,402 and £72,480 depending on where you teach.
+If you take on extra responsibilities, like being a head of department, you can be put onto a higher pay scale.
 
-| Area                          | Minimum | Maximum |
-| -------                       | -----   | -----   |
-| Inner London                  | £50,415 | £72,480 |
-| Outer London                  | £45,766 | £67,828 |
-| London fringe                 | £43,570 | £65,631 |
-| The rest of England and Wales | £42,402 | £64,461 |
+Teachers in this pay scale are important members of a school’s leadership team, and they often work closely with Headteachers.
 
-### Headteachers
-
-Headteachers lead, motivate and manage staff.
-
-The pay scale for a headteacher is between £47,735 to £125,098 depending on where you teach.
+Annual salary ranges for senior teachers are:
 
 | Area                          | Minimum | Maximum  |
 | -------                       | -----   | -----    |
-| Inner London                  | £55,715 | £125,098 |
-| Outer London                  | £51,082 | £120,513 |
-| London fringe                 | £48,901 | £118,356 |
-| The rest of England and Wales | £47,735 | £117,197 |
+| London                        | £39,864 | £50,935  |
+| Rest of England and Wales     | £38,690 | £41,604  |
 
-In 2020/21, the average salary for a headteacher was £73,500.
+### Leading practitioner pay
 
-#### Other leadership team positions
+If you’re an established and exceptional teacher, and regularly show the highest standards of classroom teaching, you can be put onto a higher pay scale.
 
-Headteachers work with other leadership teachers.
+Although they may not lead departments, leading practitioners coach and mentor other teachers and induct trainees and early career teachers (ECTs).
 
-The average salary for leadership teachers (excluding headteachers) in 2019 was £54,911.
+The pay scales for leading practitioners are:
 
-### Unqualified teachers
+| Area                          | Minimum | Maximum  |
+| -------                       | -----   | -----    |
+| London                        | £43,750 | £72,480  |
+| Rest of England and Wales     | £42,402 | £64,461  |
 
-An unqualified teacher's salary can be between £18,169 and £33,410 depending on where you teach and your level of experience.
 
-| Area                          | Minimum | Maximum |
-| -------                       | -----   | -----   |
-| Inner London                  | £22,849 | £33,410 |
-| Outer London                  | £21,582 | £32,151 |
-| London fringe                 | £19,363 | £29,924 |
-| The rest of England and Wales | £18,169 | £28,735 |
+### Headteacher pay
+
+A headteacher is the most senior person in a school. They are ultimately responsible for all teachers and pupils. 
+
+Their role is wide ranging, but includes leading and motivating teachers, and ensuring all pupils get a good education.
+
+Annual salary ranges for headteachers are:
+
+| Area                          | Minimum | Maximum   |
+| -------                       | -----   | -----     |
+| London                        | £48,901 | £125,098  |
+| Rest of England and Wales     | £47,735 | £117,197  |
+
+### Other payments
+
+You might also get extra payments for taking on extra responsibilities.
+
+These payments are called ‘teaching and learning responsibility’ (TLR) payments. The extra responsibilities you might take on are:
+
+* progressing the education of people beyond your assigned pupils
+* leading, developing and enhancing the teaching practice of others
+* TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on your responsibilities.
+
+| Level         | Minimum | Maximum |
+| -------       | -----   | -----  |
+| TLR 1         | £8,291 | £14,030 |
+| TLR 2         | £2,873 | £7,017  |
+
+### Unqualified teacher pay
+
+Many schools in England require teachers to have 'qualified teacher status' (QTS). If you do not have this, you can work
+in some schools as an unqualified teacher.
+
+Annual salary ranges for unqualified teachers are:
+
+| Area                          | Minimum | Maximum   |
+| -------                       | -----   | -----     |
+| London                        | £19,613 | £33,410   |
+| Rest of England and Wales     | £18,419 | £28,735   |

@@ -112,8 +112,7 @@
       align-items: center;
 
       @mixin pagination-item {
-        font-weight: bold;
-        @include font-size("xsmall");
+        @include font-size(medium);
         padding: .8em;
         text-decoration: none;
         margin: 1em 0;
@@ -121,7 +120,7 @@
 
       // kaminari selectors
       * {
-        display: block;
+        display: inline-block;
         line-height: 1;
       }
 
@@ -129,6 +128,17 @@
         @include pagination-item;
         border: 2px solid $pink-dark;
         color: $pink-dark;
+
+        &:hover {
+          background-color: $pink-dark;
+          color: $white;
+        }
+
+        &:focus {
+          background-color: $yellow;
+          border: 2px solid $yellow-dark;
+          color: $black;
+        }
       }
 
       .page {
@@ -206,6 +216,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mq($until: tablet) {
+          flex-direction: column-reverse;
+        }
       }
 
       &__logo {
@@ -214,6 +228,10 @@
         left: auto;
         transform: scale(.7);
         margin-right: -58px;
+
+        @include mq($until: tablet) {
+          align-self: flex-end;
+        }
       }
     }
   }

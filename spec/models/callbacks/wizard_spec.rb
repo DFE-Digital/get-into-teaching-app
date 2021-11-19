@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe Callbacks::Wizard do
+  subject { described_class.new wizardstore, "privacy_policy" }
+
   let(:uuid) { SecureRandom.uuid }
   let(:store) do
     {
@@ -12,8 +14,7 @@ describe Callbacks::Wizard do
       },
     }
   end
-  let(:wizardstore) { Wizard::Store.new store[uuid], {} }
-  subject { described_class.new wizardstore, "privacy_policy" }
+  let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
 
   describe ".steps" do
     subject { described_class.steps }
@@ -22,11 +23,17 @@ describe Callbacks::Wizard do
       is_expected.to eql [
         Callbacks::Steps::PersonalDetails,
         Callbacks::Steps::MatchbackFailed,
-        ::Wizard::Steps::Authenticate,
+        ::DFEWizard::Steps::Authenticate,
         Callbacks::Steps::Callback,
         Callbacks::Steps::TalkingPoints,
         Callbacks::Steps::PrivacyPolicy,
       ]
+    end
+  end
+
+  describe "#matchback_attributes" do
+    it do
+      expect(subject.matchback_attributes).to match_array(%i[candidate_id qualification_id])
     end
   end
 
@@ -38,9 +45,10 @@ describe Callbacks::Wizard do
     end
 
     before do
-      allow(subject).to receive(:valid?) { true }
-      expect_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
-        receive(:book_get_into_teaching_callback).with(request).once
+      allow(subject).to receive(:valid?).and_return(true)
+      allow(subject).to receive(:can_proceed?).and_return(true)
+      allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
+        receive(:book_get_into_teaching_callback).with(request)
       allow(Rails.logger).to receive(:info)
       subject.complete!
     end
@@ -60,7 +68,7 @@ describe Callbacks::Wizard do
     let(:response) { GetIntoTeachingApiClient::GetIntoTeachingCallback.new(candidateId: "123", email: "12345") }
 
     before do
-      expect_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
+      allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
         receive(:exchange_access_token_for_get_into_teaching_callback)
         .with(totp, request) { response }
     end

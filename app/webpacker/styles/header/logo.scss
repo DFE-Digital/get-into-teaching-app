@@ -44,7 +44,7 @@
 
   &__image {
     @include rotated-block;
-    background-color: $green-dark-90;
+    background-color: $green-dark;
     z-index: 1000;
 
     // position the logo slightly off the left of the page

@@ -1,15 +1,13 @@
-<%= tag.div(class: %w[call-to-action call-to-action--chat-online], data: { controller: "talk-to-us" }) do %>
+<%= tag.div(class: %w[call-to-action call-to-action--chat-online]) do %>
   <%= icon %>
 
   <div class="call-to-action__content">
     <%= tag.span(title, class: "call-to-action__heading") %>
 
-    <%= tag.p(text.html_safe, class:"call-to-action__text") %>
+    <%= tag.p(helpers.safe_html_format(text), class: "call-to-action__text") %>
 
     <div class="call-to-action__action">
-      <button data-action="click->talk-to-us#startChat" class="button">
-        <%= button_text %>
-      </button>
+      <%= helpers.chat_link(button_text, classes: "button") %>
     </div>
   </div>
 <% end %>

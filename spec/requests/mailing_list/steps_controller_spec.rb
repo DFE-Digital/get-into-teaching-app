@@ -1,10 +1,10 @@
 require "rails_helper"
 
-describe MailingList::StepsController do
-  include_context "stub types api"
-  include_context "stub candidate create access token api"
-  include_context "stub latest privacy policy api"
-  include_context "stub mailing list add member api"
+describe MailingList::StepsController, type: :request do
+  include_context "with stubbed types api"
+  include_context "with stubbed candidate create access token api"
+  include_context "with stubbed latest privacy policy api"
+  include_context "with stubbed mailing list add member api"
 
   it_behaves_like "a controller with a #resend_verification action" do
     def perform_request
@@ -16,14 +16,18 @@ describe MailingList::StepsController do
   let(:step_path) { mailing_list_step_path model.key }
 
   describe "#index" do
-    before { get mailing_list_steps_path(query: "param") }
     subject { response }
+
+    before { get mailing_list_steps_path(query: "param") }
+
     it { is_expected.to redirect_to(mailing_list_step_path({ id: :name, query: "param" })) }
   end
 
   describe "#show" do
-    before { get step_path }
     subject { response }
+
+    before { get step_path }
+
     it { is_expected.to have_http_status :success }
 
     context "with an invalid step" do
@@ -48,7 +52,7 @@ describe MailingList::StepsController do
       end
 
       before do
-        expect_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
+        allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
           receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { stub_response }
         allow(Rails.logger).to receive(:info)
         get step_path
@@ -67,7 +71,7 @@ describe MailingList::StepsController do
       let(:exchange_result) { GetIntoTeachingApiClient::CandidateMagicLinkExchangeResult.new(success: false, status: status) }
 
       before do
-        expect_any_instance_of(MailingList::Wizard).to \
+        allow_any_instance_of(MailingList::Wizard).to \
           receive(:exchange_magic_link_token).with(token)
             .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 401, response_body: exchange_result.to_json))
         get step_path
@@ -82,26 +86,29 @@ describe MailingList::StepsController do
   end
 
   describe "#update" do
-    let(:key) { model.model_name.param_key }
-
     subject do
       patch step_path, params: { key => details_params }
       response
     end
 
+    let(:key) { model.model_name.param_key }
+
     context "with valid data" do
       let(:details_params) { attributes_for(:mailing_list_name) }
+
       it { is_expected.to redirect_to mailing_list_step_path("authenticate") }
     end
 
     context "with invalid data" do
       let(:details_params) { { "first_name" => "test" } }
-      it { is_expected.to have_http_status :success }
+
+      it { is_expected.to have_http_status :unprocessable_entity }
     end
 
     context "with no data" do
       let(:details_params) { {} }
-      it { is_expected.to have_http_status :success }
+
+      it { is_expected.to have_http_status :unprocessable_entity }
     end
 
     context "with last step" do
@@ -126,7 +133,9 @@ describe MailingList::StepsController do
         before do
           allow_any_instance_of(model).to receive(:valid?).and_return true
         end
+
         let(:details_params) { attributes_for :"mailing_list_#{model.key}" }
+
         it { is_expected.to redirect_to mailing_list_step_path steps.first.key }
       end
     end
@@ -137,6 +146,7 @@ describe MailingList::StepsController do
       get completed_mailing_list_steps_path
       response
     end
+
     it { is_expected.to have_http_status :success }
   end
 end

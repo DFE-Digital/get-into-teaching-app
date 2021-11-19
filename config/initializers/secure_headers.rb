@@ -9,27 +9,64 @@ SecureHeaders::Configuration.default do |config|
 
   tta_service_hosts = []
   tta_service_hosts << URI.parse(ENV["TTA_SERVICE_URL"]).host if ENV["TTA_SERVICE_URL"].present?
-  google_analytics = %w[www.google-analytics.com ssl.google-analytics.com *.googletagmanager.com tagmanager.google.com *.googleusercontent.com *.gstatic.com s.ytimg.com *.google.co.uk adservice.google.com *.google.com.sa https://www.googleadservices.com https://www.google.com https://googleads.g.doubleclick.net]
+
   lid_pixels = %w[pixelg.adswizz.com tracking.audio.thisisdax.com]
 
+  google_analytics = %w[
+    *.google-analytics.com
+    *.googleadservices.com
+    *.googlesyndication.com
+    *.googletagmanager.com
+    *.googleusercontent.com
+    *.gstatic.com
+    *.googleanalytics.com
+    https://googleads.g.doubleclick.net
+    https://ssl.google-analytics.com
+    https://tagmanager.google.com
+    https://www.googletagmanager.com/gtm.js
+  ]
+
+  google_supported   = %w[*.google.com *.google.co.uk]
+  google_adservice   = %w[adservice.google.com adservice.google.co.uk]
+  google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net *.ad.doubleclick.net *.fls.doubleclick.net stats.g.doubleclick.net]
+  google_apis        = %w[*.googleapis.com https://fonts.googleapis.com]
+
+  optimize  = %w[optimize.google.com www.googleoptimize.com]
+  zendesk   = %w[static.zdassets.com https://*.zopim.com wss://*.zopim.com dfesupport-tpuk.zendesk.com ekr.zdassets.com]
+  facebook  = %w[*.facebook.com *.facebook.net *.connect.facebook.net]
+  govuk     = %w[*.gov.uk www.gov.uk]
+  hotjar    = %w[*.hotjar.com vc.hotjar.io wss://*.hotjar.com]
+  jquery    = %w[code.jquery.com]
+  pinterest = %w[*.pinterest.com *.pinterest.co.uk *.pinimg.com]
+  scribble  = %w[embed.scribblelive.com]
+  snapchat  = %w[*.snapchat.com sc-static.net]
+  twitter   = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
+  youtube   = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
+
+  quoted_unsafe_inline = ["'unsafe-inline'"]
+  quoted_unsafe_eval   = ["'unsafe-eval'"]
+  data                 = ["data:"]
+  blob                 = ["blob:"]
+
   config.csp = {
-    default_src: %w['none'],
-    base_uri: %w['self'],
-    block_all_mixed_content: true, # see http://www.w3.org/TR/mixed-content/
-    child_src: %w['self' *.youtube.com ct.pinterest.com tr.snapchat.com *.hotjar.com],
-    connect_src: %w['self' ct.pinterest.com *.hotjar.com vc.hotjar.io wss://*.hotjar.com www.facebook.com *.visualwebsiteoptimizer.com stats.g.doubleclick.net] + google_analytics + tta_service_hosts,
-    font_src: %w['self' *.gov.uk fonts.gstatic.com],
-    form_action: %w['self' tr.snapchat.com www.facebook.com www.gov.uk dev.visualwebsiteoptimizer.com],
-    frame_ancestors: %w['self'],
-    frame_src: %w['self' embed.scribblelive.com tr.snapchat.com www.facebook.com www.youtube.com www.youtube-nocookie.com *.hotjar.com *.doubleclick.net dev.visualwebsiteoptimizer.com],
-    img_src: %w['self' linkbam.uk *.gov.uk data: *.googleapis.com www.facebook.com ct.pinterest.com t.co www.facebook.com cx.atdmt.com *.visualwebsiteoptimizer.com *.doubleclick.net i.ytimg.com adservice.google.com adservice.google.co.uk] + google_analytics + lid_pixels,
-    manifest_src: %w['self'],
-    media_src: %w['self'],
-    script_src: %w['self' 'unsafe-inline' 'unsafe-eval' embed.scribblelive.com *.googleapis.com *.gov.uk code.jquery.com *.facebook.net *.hotjar.com *.pinimg.com sc-static.net static.ads-twitter.com analytics.twitter.com *.youtube.com *.visualwebsiteoptimizer.com] + google_analytics,
-    style_src: %w['self' 'unsafe-inline' *.gov.uk *.googleapis.com] + google_analytics,
-    worker_src: %w['self' *.visualwebsiteoptimizer.com blob:],
+    block_all_mixed_content: true,
     upgrade_insecure_requests: !Rails.env.development?, # see https://www.w3.org/TR/upgrade-insecure-requests/
     report_uri: %w[/csp_reports],
+
+    default_src: %w['none'],
+    base_uri: ["'self'"],
+    child_src: ["'self'"].concat(youtube, pinterest, snapchat, hotjar),
+    connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk, snapchat),
+    font_src: ["'self'"].concat(govuk, data, %w[fonts.gstatic.com]),
+    form_action: ["'self'"].concat(snapchat, facebook, govuk),
+    frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data, pinterest, optimize),
+    frame_ancestors: ["'self'"],
+    img_src: ["'self'"].concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, %w[cx.atdmt.com linkbam.uk]),
+    manifest_src: ["'self'"],
+    media_src: ["'self'"].concat(zendesk),
+    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, youtube, zendesk, optimize),
+    style_src: ["'self'"].concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize),
+    worker_src: ["'self'"].concat(blob),
   }
 
   if Rails.env.development?

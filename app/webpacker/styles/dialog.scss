@@ -1,140 +1,72 @@
+@keyframes slide-up {
+  0% {
+    transform: translateY(110vh);
+  }
+  100% {
+    transform: translateY(0vh);
+  }
+}
+
 .dialog {
-  display: none;
+  display: flex;
   position: fixed;
-  top: 0;
   left: 0;
+  top: 0;
   width: 100%;
   min-height: 100vh;
   z-index: 1000;
   justify-content: center;
   align-items: center;
+  transform: translateY(110vh);
+
+  &.visible {
+    animation: slide-up 0s forwards;
+  }
 
   &__background {
-    opacity: .4;
+    opacity: .8;
     background-color: $black;
     width: 100%;
     min-height: 100vh;
     box-sizing: border-box;
-    padding: $indent-amount;
     position: absolute;
-    top: 0;
-    left: 0;
   }
 
   &__content {
     width: 100%;
-    max-width: 700px;
+    max-width: 40em;
     background-color: $grey;
-    padding: 40px;
     box-sizing: border-box;
     position: relative;
-    margin: $indent-amount;
-    overflow: hidden;
+    overflow-x: clip;
+    padding-bottom: 1em;
 
-    .logo__image {
-      display: inline-block;
-      top: 0;
-      left: -45px;
-      width: 240px;
-      margin-bottom: $indent-amount;
+    .logo-wrapper {
+      padding: 0;
+      top: -30px;
 
-      a {
-        margin-left: 8px;
-
-        &:focus {
-          &:before {
-            content: "";
-            display: block;
-            background: $yellow;
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-          }
-        }
-      }
-
-      div {
-        margin-left: 48px;
+      @include mq($until: desktop) {
+        top: 0;
+        padding: 0 0 1em;
       }
     }
+  }
 
-    h2,
-    h3 {
-      @include font-size("large");
-    }
+  &__text,
+  &__buttons {
+    padding: .2em 2em;
+  }
 
-    h3 {
-      margin-top: 0;
-    }
-
-    .secondary-link {
-      @include chevron($color: $blue);
-
-      display: inline-block;
-      cursor: pointer;
-      font-weight: bold;
-      margin-top: $indent-amount;
-      padding: 0 $indent-amount;
+  &__text {
+    a {
+      @include dark-link;
     }
   }
 
   &__buttons {
     display: flex;
-    gap: .4em;
-
-    @include mq($until: tablet) {
-      flex-direction: column;
-    }
-  }
-}
-
-@include mq($until: tablet) {
-  .dialog {
-    &__content {
-      padding: $indent-amount;
-      max-height: calc(100vh - 40px);
-      overflow: auto;
-
-      &__header {
-        margin-bottom: 25px;
-      }
-
-      .logo__image {
-        width: 220px;
-        margin-left: $indent-amount;
-
-        div {
-          margin-left: 39px;
-          margin-top: -3px;
-        }
-      }
-
-      h2 {
-        display: block;
-        margin: .3em 0;
-        @include font-size("small");
-      }
-
-      p {
-        line-height: 1.25;
-        @include font-size("xsmall");
-      }
-
-      a {
-        &.button {
-          @include font-size("xsmall");
-        }
-
-        .git-link {
-          margin: 8px 0 0;
-          padding: 0 12px;
-        }
-
-        .visually-hidden {
-          padding: 0;
-        }
-      }
-    }
+    flex-wrap: wrap;
+    gap: .5em;
+    margin: .5em;
   }
 }

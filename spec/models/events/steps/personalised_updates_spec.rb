@@ -1,10 +1,10 @@
 require "rails_helper"
 
 describe Events::Steps::PersonalisedUpdates do
-  include_context "wizard step"
-  include_context "stub types api"
+  include_context "with wizard step"
+  include_context "with stubbed types api"
 
-  it_behaves_like "a wizard step"
+  it_behaves_like "a with wizard step"
 
   describe "attributes" do
     it { is_expected.to respond_to :address_postcode }
@@ -73,20 +73,22 @@ describe Events::Steps::PersonalisedUpdates do
 
     context "with mailing_list question answered as yes" do
       let(:mailing_list) { true }
+
       it { is_expected.not_to be_skipped }
     end
 
     context "with mailing_list question answered as no" do
       let(:mailing_list) { false }
+
       it { is_expected.to be_skipped }
     end
   end
 
   describe "#export" do
+    subject { instance.export["address_postcode"] }
+
     let(:backingstore) { { "subscribe_to_mailing_list" => true, "address_postcode" => "app-postcode" } }
     let(:crm_backingstore) { {} }
-
-    subject { instance.export["address_postcode"] }
 
     it { is_expected.to eq("app-postcode") }
 
@@ -98,6 +100,8 @@ describe Events::Steps::PersonalisedUpdates do
   end
 
   describe "#teaching_subject_options" do
+    subject { instance.teaching_subject_options }
+
     let(:teaching_subject_types) do
       subjects = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.merge(
         GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS,
@@ -109,8 +113,6 @@ describe Events::Steps::PersonalisedUpdates do
       allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
         receive(:get_teaching_subjects).and_return(teaching_subject_types)
     end
-
-    subject { instance.teaching_subject_options }
 
     it { expect(subject.map(&:id)).to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.values) }
     it { expect(subject.map(&:value)).to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.keys) }

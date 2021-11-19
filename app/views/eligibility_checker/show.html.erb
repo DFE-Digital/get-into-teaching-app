@@ -3,6 +3,7 @@
     <header>
       <h1>Are you qualified to start teacher training?</h1>
     </header>
+
     <p>Find out instantly if you have what you need to start postgraduate training for teaching in English primary or secondary schools. You'll also see your next steps for qualifying.</p>
 
     <%= form_with(object: @eligibility, method: :get, url: "#", data: { remote: false }) do |form| %>
@@ -23,13 +24,11 @@
               <div class="govuk-hint govuk-checkboxes__hint">Grade 4 (C) or above</div>
             </div>
 
-
             <div class="govuk-checkboxes__item">
               <%= form.check_box :gcse_science, checked: @eligibility.gcse_science, class: "govuk-checkboxes__input" %>
               <%= form.label :gcse_science, "GCSE Science", class: "govuk-label govuk-checkboxes__label" %>
               <div class="govuk-hint govuk-checkboxes__hint">Grade 4 (C) or above</div>
             </div>
-
 
             <div class="govuk-checkboxes__item">
               <%= form.check_box :degree, checked: @eligibility.degree, class: "govuk-checkboxes__input" %>
@@ -39,7 +38,7 @@
         </fieldset>
       </div>
       <p>
-        Got different qualifications? We can help. <%= chat_link("Chat to us") %>.
+        Got different qualifications? We can help. <%= chat_link("Chat to us.", fallback_text: "Chat to us.") %>
       <p>
       <button class="button">See results</button>
     <% end %>
@@ -125,7 +124,6 @@
 <% if @eligibility.any_checked? %>
   <%= link_to("Start again", eligibility_checker_path, class: "secondary-button govuk-!-margin-top-9") %>
 <% end %>
-
 
 <h3>Not sure if you're qualified?</h3>
 

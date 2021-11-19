@@ -1,37 +1,254 @@
-<article class="story">
-  <h2>
-    It all started with my love of maths
-  </h2>
+<article class="case-study">
+  <% if subject_category == "maths" %>
+    <h2>It all started with my love of maths</h2>
 
-  <p>
-    I've always found it fascinating learning how maths shapes the world we
-    live in, but it was my passionate, down-to-earth teachers who had the
-    biggest impact on me.
-  </p>
+    <p>
+      I've always found it fascinating learning how maths shapes the world we
+      live in, but it was my passionate, down-to-earth teachers who had the
+      biggest impact on me.
+    </p>
 
-  <h2>After Uni I knew I wanted to teach</h2>
+    <h2>After uni I knew I wanted to teach</h2>
 
-  <p>
-    I started off by tutoring, which was a great way to get to grips with
-    teaching quickly. Although I’m from Greece, I chose to do a PGCE in the UK
-    because it has one of the best educational systems in the world.
-  </p>
+    <p>
+      I started off by tutoring, which was a great way to get to grips with
+      teaching quickly. Although I’m from Greece, I chose to do a PGCE in the UK
+      because it has one of the best educational systems in the world.
+    </p>
 
-  <h2>I’ve worked out how to get every student interested in maths</h2>
+    <h2>I’ve worked out how to get every student interested in maths</h2>
 
-  <p>
-    Some kids will say &quot;I can’t do algebra&quot; or &quot;I don’t like numbers.&quot;
-    And to be honest, I know how that feels. I&apos;m definitely more a fan of Pure
-    maths than other topics. I try to find out what they’re interested in – whether
-    it’s card games, football or whatever – and use this to make maths relevant.
-  </p>
+    <p>
+      Some kids will say &quot;I can’t do algebra&quot; or &quot;I don’t like numbers&quot;.
+      And to be honest, I know how that feels. I&apos;m definitely more a fan of pure
+      maths than other topics. I try to find out what they’re interested in – whether
+      it’s card games, football or whatever – and use this to make maths relevant.
+    </p>
 
-  <div class="featured">
-    <h2>This year I'm looking forward to&hellip;</h2>
+    <h2>What may surprise you?</h2>
+
+    <p>
+      I didn’t always love maths – it wasn’t until later in secondary school
+      that I discovered my potential.
+    </p>
+
+    <h2>It’s not always easy</h2>
+
+    <p>
+      The relationship that you have with the students is so special, and I did
+      struggle with remote learning during lockdown as it was harder to connect
+      with them. I missed them making jokes!
+    </p>
+
+    <div class="featured">
+      <h2>This year I'm looking forward to&hellip;</h2>
+
+      <figure>
+        <blockquote>Witnessing the progress of my students. I have such a great relationship with them and can't wait to spend more time in the classroom again.</blockquote>
+      </figure>
+    </div>
+
+  <% elsif subject_category == "science" %>
+
+    <h2>It all started with my degree in sports science</h2>
+
+    <p>
+      I really enjoyed the coaching aspect of the degree and getting to see the
+      kids improve. After uni, I did a few odd jobs from bathroom selling to
+      recruitment. But nothing had that ‘feel good factor.’ But then I took a
+      cover job in a local school and I fell in love with teaching.
+    </p>
+
+    <h2>The move from basketball to biology was easier than I thought</h2>
+
+    <p>
+      When the assistant head suggested teaching science, I wasn’t sure I was cut
+      out for it, I’d never been that academic myself. It turned out my degree
+      covered a lot of the science curriculum, so I decided to give it a go. I’ve
+      never looked back.
+    </p>
+
+    <h2>I discovered that science is all about making connections</h2>
+
+    <p>
+      I’m always showing my students how science relates to everything they’re
+      learning. From enzymes in cooking to the surprising history of a lot of
+      medical discoveries. I love it when they ask a question that I’ve never
+      even thought of.
+    </p>
+
+    <h2>What may surprise you?</h2>
+
+    <p>
+      I didn’t always want to teach. When I first graduated, I was determined not
+      to go back into education – I didn’t think I would enjoy the setting.
+    </p>
+
+    <h2>It’s not always easy</h2>
+
+    <p>
+      I think I’m firm but fair. You have to be able to establish a strong
+      relationship with the class where they respect you.
+    </p>
+
+    <h2>This year it’s all about developing new skills</h2>
+
+    <p>
+      I’m doing training to make sure I can support the kids both practically and
+      emotionally this year. I want to build their confidence.
+    </p>
+
+  <% elsif subject_category == "english" %>
+
+    <h2>It all started with my own experiences</h2>
+
+    <p>
+      Going to uni wasn't the norm where I'm from, but my teachers always
+      encouraged me. They made me believe that I could achieve anything. Plus,
+      I've always loved English. Believe me, I'm a proper library nerd.
+    </p>
+
+    <h2>I couldn’t wait to teach English</h2>
+
+    <p>
+      After uni, I completed my PGCE and started teaching at an academy.
+      I threw myself into the job and focused on developing a real reading
+      culture at the school. I knew that improving the literacy rates of every
+      student would make a huge difference, especially with kids who aren’t from
+      privileged backgrounds.
+    </p>
+
+    <h2>I realised that teaching English gives every student a voice</h2>
+
+    <p>
+      When a student can read and talk about their views, it opens them up to so
+      many opportunities. It’s all about having confidence, and I can actually
+      play a part in making that happen.
+    </p>
+
+    <h2>It’s not always easy</h2>
+
+    <p>
+      I teach in a school where some kids come from quite difficult
+      backgrounds. One girl I taught was convinced that she couldn’t study
+      English, but now she’s doing incredibly well and has the GCSEs to prove
+      it!
+    </p>
+
+    <h2>I’ve risen through the ranks quickly</h2>
+
+    <p>
+      I've gone from trainee teacher to head of English in less than 5 years. I
+      had a bit of imposter syndrome at first, but I've quickly realised that
+      even though it’s a big role, the focus on the students hasn’t changed at
+      all.
+    </p>
+
+  <% elsif subject_category == "languages" %>
+
+    <h2>I knew I wanted to use my degree after graduating</h2>
+
+    <p>
+      Some of my friends were going into office jobs, but that just wasn’t for
+      me. Speaking another language is such a gift – you can connect with other
+      people and cultures. And after 4 years studying Spanish at uni, I wanted to
+      share that passion with others.
+    </p>
+
+    <h2>Teaching abroad was a great experience</h2>
+
+    <p>
+      I taught English for a year whilst living in northern Spain, which really
+      took me out of my comfort zone. Seeing the students' enthusiasm for
+      languages made me want to continue teaching when I returned home so I
+      decided to train to teach at a school in Coventry, where I still work now.
+    </p>
+
+    <h2>I quickly realised how creative I could be in the classroom</h2>
+
+    <p>
+      There are loads of fun ways to bring languages to life. For a challenging
+      GCSE class, speed dating in Spanish really got their attention! For the
+      younger students, they love pretending to order off the restaurant menus
+      that I bring back from my holidays in Spain.
+    </p>
+
+    <h2>What may surprise you?</h2>
+
+    <p>
+      Teaching Spanish is about much more than grammar and vocab, it’s about
+      exploring another culture and sharing different ideas.
+    </p>
+
+    <h2>It’s not always easy</h2>
+
+    <p>
+      Every student is different and there will be some in each class who aren’t
+      as passionate about learning languages and they don’t understand why it’s
+      important. I always try to use different techniques or games to get them
+      excited.
+    </p>
+
+    <h2>This year I’m taking on new responsibilities</h2>
+
+    <p>
+      I’m going to be leading on new tech initiatives at my school, to support
+      students to learn in new and exciting ways. I think being able to speak
+      another language has made me a natural communicator, which really helps in
+      these types of roles.
+    </p>
+
+  <% else %>
+
+    <h2>From trainee teacher to head of maths, see how Abigail’s career progressed.</h2>
+
+    <p>
+      Abigail wasn’t sure what she wanted to do when she graduated with a maths
+      and management degree. She knew she wanted to go into a leadership role
+      but it was after attending a Train to Teach event that she realised
+      teaching was right for her.
+    </p>
+
+    <h2>Influencing from the beginning</h2>
+
+    <p>
+      As a newly qualified teacher, she had lots of ideas she wanted to try out
+      and became numeracy coordinator within a few months.
+    </p>
 
     <figure>
-      <blockquote>Witnessing the progress of my students. I have such a great relationship with them and can't wait to spend more time in the classroom again.</blockquote>
+      <blockquote>This was a new role in the school, so I could really make it my own.</blockquote>
     </figure>
-  </div>
-</article>
 
+    <h2>Rising through the ranks</h2>
+
+    <p>
+      In her third year as a teacher, Abigail was promoted to senior leadership.
+    </p>
+
+    <figure>
+      <blockquote>What I like most about being in a leadership role is having more responsibility for key decisions and empowering others. I’m ultimately impacting on pupils’ lives and the experience that they have at school.</blockquote>
+    </figure>
+
+    <h2>What’s next?</h2>
+
+    <p>
+      After getting a National Professional Qualification for Senior Leadership
+      (NPQSL), she plans to continue to progress and shape the lives of the
+      future generation.
+    </p>
+
+    <h2>A final word of advice:</h2>
+
+    <figure>
+      <blockquote class="bigger last-on-page">Remember that you’ll make a difference - growing the minds of your students and improving their understanding of the world. It might be challenging at times, but it’s worth it!</blockquote>
+    </figure>
+
+    <div class="back">
+      <%# Abigail has no shoutout so manually add a link here %>
+      <%= link_to("/welcome") do %>
+        &#8592; Back to welcome
+      <% end %>
+    </div>
+  <% end %>
+</article>

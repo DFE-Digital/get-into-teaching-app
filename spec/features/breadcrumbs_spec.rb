@@ -1,7 +1,9 @@
 require "rails_helper"
 
 RSpec.feature "Breadcrumbs", type: :feature do
-  include_context "stub types api"
+  include_context "with stubbed types api"
+
+  subject { page }
 
   let(:event) { GetIntoTeachingApiClient::TeachingEvent.new(statusId: 1) }
 
@@ -9,16 +11,15 @@ RSpec.feature "Breadcrumbs", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event) { event }
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_grouped_by_type) { [] }
-  end
+      receive(:search_teaching_events_grouped_by_type).and_return([])
 
-  before { visit path }
-  subject { page }
+    visit path
+  end
 
   context "when visiting the home page" do
     let(:path) { "/home-page" }
 
-    it { is_expected.to_not have_css(".breadcrumb") }
+    it { is_expected.not_to have_css(".breadcrumb") }
   end
 
   context "when visiting a content page" do

@@ -8,8 +8,8 @@
   <%= govuk_form_for current_step, url: step_path do |f| %>
     <%= render current_step.key, current_step: current_step, f: f %>
 
-    <% if wizard.can_proceed? %>
-      <% button_text = safe_html_format(wizard.last_step? ? "Complete sign up <span></span>" : "Next Step <span></span>") %>
+    <% if wizard.step_can_proceed? %>
+      <% button_text = safe_html_format(wizard.last_step? ? "Complete sign up <span></span>" : "Next step <span></span>") %>
       <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
     <% end %>
   <% end %>

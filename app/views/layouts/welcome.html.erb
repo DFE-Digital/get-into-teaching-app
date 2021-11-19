@@ -1,14 +1,15 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") unless Rails.application.config.x.legacy_tracking_pixels %>
 
     <%= render HeaderComponent.new %>
 
     <%# FIXME: remove this to enable the page in prod %>
-    <% raise(ActionController::RoutingError.new("Not found")) if Rails.env.production? %>
+    <% raise(ActionController::RoutingError, "Not found") if Rails.env.production? %>
 
-    <main class="welcome-guide" role="main" id="main-content">
+    <main class="welcome-guide" id="main-content">
       <%= yield %>
 
       <% @front_matter["content"]&.each do |partial| %>
@@ -16,6 +17,6 @@
       <% end %>
     </main>
 
-    <%= render FooterComponent.new(talk_to_us: false, mailing_list: false, feedback: false) %>
+    <%= render FooterComponent.new(talk_to_us: true, mailing_list: false, feedback: false) %>
   <% end %>
 </html>

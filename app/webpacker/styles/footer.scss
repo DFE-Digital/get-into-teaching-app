@@ -30,6 +30,11 @@ footer.site-footer {
 
         color: $grey-mid;
         margin-bottom: .5em;
+        padding: .5em 0;
+
+        &:focus {
+          color: $black;
+        }
       }
 
       // column-gap: 1.5em;
@@ -60,6 +65,12 @@ footer.site-footer {
     &__social {
       flex: 33% 0 0;
       display: flex;
+      margin-right: 1em;
+
+      a {
+        max-height: 2em;
+        padding: .5em;
+      }
 
       // gap: 1em;
       a + a {
@@ -69,6 +80,10 @@ footer.site-footer {
       a,
       a:hover {
         text-decoration: none;
+      }
+
+      a:focus {
+        color: $black;
       }
     }
   }
@@ -80,13 +95,24 @@ footer.site-footer {
 
     &__logo-container {
       flex: 33% 0 0;
+      flex-direction: column;
 
       display: flex;
       align-content: center;
 
-      // gap: 3em;
       picture + picture {
-        margin-left: 3em;
+        margin-top: 1em;
+      }
+
+
+      @include mq($from: tablet) {
+        // gap: 3em;
+        picture + picture {
+          margin-top: 0;
+          margin-left: 3em;
+        }
+
+        flex-direction: row;
       }
     }
 

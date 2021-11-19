@@ -7,5 +7,5 @@
     remote:        data-remote
 -%>
 <span class="prev">
-  <%= link_to_unless current_page.first?, t('views.pagination.previous').html_safe, url, rel: 'prev', remote: remote, data: { action: "click->scroll#preserve" } %>
+  <%= link_to_unless current_page.first?, simple_format(t('views.pagination.previous'), {}, wrapper_tag: "span"), url, rel: 'prev', remote: remote %>
 </span>

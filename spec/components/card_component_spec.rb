@@ -1,6 +1,11 @@
 require "rails_helper"
 
 describe CardComponent, type: "component" do
+  subject do
+    render_inline described_class.new(card: card)
+    page
+  end
+
   let(:base) do
     {
       "snippet" => "Lorem ipsum ....",
@@ -13,18 +18,13 @@ describe CardComponent, type: "component" do
 
   let(:card) { base }
 
-  subject do
-    render_inline described_class.new(card: card)
-    page
-  end
-
   specify "renders a card" do
     is_expected.to have_css(".card")
   end
 
   specify "includes a link wrapping the story image" do
     is_expected.to have_link(href: card["link"]) do |anchor|
-      expect(anchor).to have_css(%(img[src*="packs-test/media/images/dfelogo"]))
+      expect(anchor).to have_css(%(img[src*="packs-test/v1/media/images/dfelogo"]))
     end
   end
 
@@ -93,7 +93,7 @@ describe CardComponent, type: "component" do
 
     specify "the image links to the video instead of the card" do
       is_expected.to have_link(href: card["video"]) do |anchor|
-        expect(anchor).to have_css(%(img[src*="packs-test/media/images/dfelogo"]))
+        expect(anchor).to have_css(%(img[src*="packs-test/v1/media/images/dfelogo"]))
       end
     end
 

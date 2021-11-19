@@ -1,16 +1,17 @@
-<article class="blog">
-  <header>
-    <h2><%= link_to fm[:title], path %></h2>
-    <% if fm[:subtitle].present? %>
-      <div role="doc-subtitle"><%= fm[:subtitle] %></div>
+<article class="blog-article">
+  <div>
+    <header>
+      <h2><%= link_to fm[:title], path %></h2>
+      <% if fm[:subtitle].present? %>
+        <div role="doc-subtitle"><%= fm[:subtitle] %></div>
+      <% end %>
+
+      <%= render partial: "blog/date_and_author", locals: { front_matter: fm.with_indifferent_access } %>
+    </header>
+    <% if fm[:images].present? %>
+      <p><%= thumbnail_image_from_post(fm[:images]) %></p>
     <% end %>
-
-    <%= render partial: "blog/date_and_author", locals: { front_matter: fm.with_indifferent_access } %>
-  </header>
-  <% if fm[:images].present? %>
-    <p><%= first_image_from_post(fm[:images]) %></p>
-  <% end %>
+  </div>
   <p><%= fm[:description] %></p>
-
-  <%= link_to "Read more", path %>
+  <%= render partial: "blog/tag_list", locals: { tags: fm[:tags] } %>
 </article>

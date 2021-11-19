@@ -13,27 +13,42 @@ jobs:
     environment: Development
     steps:
       - name: Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@v2.4.0
 
       - uses: Azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: Azure/get-keyvault-secrets@v1.2
-        id:   azSecret
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: SLACK-WEBHOOK
         with:
-           keyvault: ${{ secrets.KEY_VAULT}}
-           secrets: 'HTTP-PASSWORD, HTTP-USERNAME, SLACK-WEBHOOK'
+          keyvault: ${{ secrets.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: SLACK-WEBHOOK
+
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: HTTP-PASSWORD
+        with:
+          keyvault: ${{ secrets.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: HTTP-PASSWORD
+
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: HTTP-USERNAME
+        with:
+          keyvault: ${{ secrets.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: HTTP-USERNAME
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - name: ZAP Scan
-        uses: zaproxy/action-full-scan@v0.2.0
+        uses: zaproxy/action-full-scan@v0.3.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           docker_name: 'owasp/zap2docker-stable'
-          target: 'https://${{ steps.azSecret.outputs.HTTP-USERNAME }}:${{ steps.azSecret.outputs.HTTP-PASSWORD }}@${{env.PAAS_APPLICATION_NAME}}-${{ github.event.inputs.environment }}.${{env.DOMAIN}}/'
+          target: 'https://${{ steps.HTTP-USERNAME.outputs.secret-value }}:${{ steps.HTTP-PASSWORD.outputs.secret-value }}@${{env.PAAS_APPLICATION_NAME}}-${{ github.event.inputs.environment }}.${{env.DOMAIN}}/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
 
@@ -44,4 +59,4 @@ jobs:
            SLACK_COLOR: ${{env.SLACK_FAILURE}}
            SLACK_MESSAGE: 'Pipeline Failure carrying out OWASP Testing on https://${{env.PAAS_APPLICATION_NAME}}-${{ github.event.inputs.environment }}.${{env.DOMAIN}}/'
            SLACK_TITLE: 'Failure: OWSAP Testing has failed on ${{ github.event.inputs.environment }}'
-           SLACK_WEBHOOK: ${{ steps.azSecret.outputs.SLACK-WEBHOOK }}
+           SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}

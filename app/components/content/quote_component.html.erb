@@ -16,7 +16,7 @@
         </div>
       </div>
       <% if cta.present? %>
-        <%= link_to(cta[:link], class: "button button--smaller") do %>
+        <%= link_to(cta[:link], class: "button") do %>
           <%= cta_title_sans_last_word %> <span><%= cta_title_last_word %></span>
         <% end %>
       <% end %>

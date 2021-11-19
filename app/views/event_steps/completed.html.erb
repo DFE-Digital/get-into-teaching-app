@@ -35,6 +35,7 @@
     ]
   ) %>
 
+  <% if Rails.application.config.x.legacy_tracking_pixels %>
   <span data-controller="pinterest"
         data-pinterest-action="track"
         data-pinterest-event="custom"></span>
@@ -46,6 +47,7 @@
   <span data-controller="facebook"
         data-pinterest-action="track"
         data-pinterest-event="Event_Registrations"></span>
+  <% end %>
 </section>
 
 <div class="blocks">

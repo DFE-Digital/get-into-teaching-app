@@ -6,6 +6,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
     let(:path) { "/example-page" }
 
     let(:component) { described_class.new(funding_widget, path) }
+
     before { render_inline(component) }
 
     it "builds a funding_widget form" do
@@ -34,9 +35,8 @@ RSpec.describe FundingWidgetComponent, type: :component do
         it "is populated correclty" do
           expect(page).to have_css("optgroup[label='Primary']")
           expect(page).to have_css("optgroup[label='Secondary']")
-          expect(page).to have_css("optgroup[label='Secondary: Modern languages']")
           expect(page).to have_css("option[value='primary_with_english']", text: "Primary with English")
-          expect(page).to have_css("option[value='french']", text: "French")
+          expect(page).to have_css("option[value='languages']", text: "Languages (including ancient languages)")
         end
       end
     end
@@ -48,18 +48,12 @@ RSpec.describe FundingWidgetComponent, type: :component do
         expect(page).to have_css("h3", text: "Biology - Secondary")
       end
 
-      it "has the 'Next Steps' info" do
-        expect(page).to have_css("h3", text: "Next Steps")
+      it "has the 'Next steps' info" do
+        expect(page).to have_css("h3", text: "Next steps")
       end
 
       it "has additional info for extra support" do
         expect(page).to have_css("p", text: "You may be able to get extra support")
-      end
-
-      it "has the urgency notice" do
-        expect(page).to have_css("h3", text: "Start your teacher training this September")
-        expect(page).to have_css("div", text: "There's still time to apply.")
-        expect(page).to have_link(href: "/start-teacher-training-this-september")
       end
     end
   end

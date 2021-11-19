@@ -1,8 +1,9 @@
 require "rails_helper"
 
-describe RobotsController do
-  before { get("/robots.txt") }
+describe RobotsController, type: :request do
   subject { response.body }
+
+  before { get("/robots.txt") }
 
   it do
     is_expected.to eq(

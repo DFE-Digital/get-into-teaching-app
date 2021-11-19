@@ -1,0 +1,47 @@
+.registration-with-image-above {
+  display: grid;
+
+  grid-auto-rows: auto;
+
+  @include mq($from: desktop) {
+    grid-template-rows: 14em 4em min-content;
+
+    $right-center-col: ($content-max-width / 3);
+    $left-center-col: $right-center-col * 2;
+
+    grid-template-columns: auto minmax(min-content, $left-center-col) minmax(min-content, 300px) auto;
+
+    picture { grid-area: 1 / 1 / 3 /5; }
+    .event-info { grid-area: 2 / 3 / 4 / 3; }
+    .registration { grid-area: 3 / 2 / 4 / 3; }
+  }
+
+  picture {
+    display: none;
+
+    @include mq($from: desktop) {
+      display: block;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  form {
+    input {
+      max-width: 20em;
+    }
+  }
+
+  // .event-info {}
+
+  .registration {
+    .registration__event {
+      width: unset;
+      max-width: unset;
+    }
+  }
+}

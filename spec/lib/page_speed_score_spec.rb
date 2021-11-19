@@ -2,10 +2,10 @@ require "rails_helper"
 require "page_speed_score"
 
 describe PageSpeedScore do
+  subject { described_class.new(sitemap_url) }
+
   let(:host) { "https://example.com" }
   let(:sitemap_url) { "#{host}/sitemap.xml" }
-
-  subject { described_class.new(sitemap_url) }
 
   describe "#sitemap_url" do
     it { expect(subject.sitemap_url).to eq(sitemap_url) }
@@ -16,8 +16,8 @@ describe PageSpeedScore do
     let(:prometheus) { Prometheus::Client.registry }
 
     before do
-      expect(Rails.application.credentials).to \
-        receive(:page_speed_insights_key) { "12345" }
+      allow(Rails.application.credentials).to \
+        receive(:page_speed_insights_key).and_return("12345")
     end
 
     it "retrieves the scores for each page/strategy combination and sends them to prometheus" do

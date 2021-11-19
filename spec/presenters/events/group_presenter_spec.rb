@@ -1,29 +1,30 @@
 require "rails_helper"
 
 describe Events::GroupPresenter do
+  subject { described_class.new(events_by_type, display_empty: display_empty_types) }
+
   let(:train_to_teach_events) { build_list(:event_api, 5, :train_to_teach_event) }
+  let(:question_time_events) { build_list(:event_api, 5, :question_time_event) }
   let(:online_events) { build_list(:event_api, 2, :online_event) }
   let(:school_and_university_events) { build_list(:event_api, 15, :school_or_university_event) }
-  let(:all_events) { [train_to_teach_events, online_events, school_and_university_events].flatten }
+  let(:all_events) { [train_to_teach_events, online_events, school_and_university_events, question_time_events].flatten }
   let(:events_by_type) { group_events_by_type(all_events) }
   let(:display_empty_types) { false }
-
-  subject { described_class.new(events_by_type, display_empty_types) }
 
   describe "#sorted_events_by_type" do
     let(:type_ids) { subject.sorted_events_by_type.map(&:first) }
     let(:online_event_type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
 
-    it "returns events_by_type as an array of [type_id, events] tuples" do
+    it "returns events_by_type as an array of [type_id, events] tuples (with TTT and QT events combined)" do
       expect(subject.sorted_events_by_type).to eq([
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"], train_to_teach_events],
+        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"], train_to_teach_events + question_time_events],
         [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"], online_events],
         [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"], school_and_university_events],
       ])
     end
 
     it "sorts event types according to GetIntoTeachingApiClient::Constants::EVENT_TYPES" do
-      expect(type_ids).to eq(GetIntoTeachingApiClient::Constants::EVENT_TYPES.values)
+      expect(type_ids).to eq(GetIntoTeachingApiClient::Constants::EVENT_TYPES.except("Question Time").values)
     end
 
     context "when there are no events for a type" do
@@ -41,9 +42,26 @@ describe Events::GroupPresenter do
       it "contains a key for types that have no events" do
         expect(type_ids).to include(online_event_type_id)
       end
+
+      context "when there are Question Time or Train to Teach events" do
+        let(:train_to_teach_events) { [] }
+        let(:question_time_events) { [] }
+
+        it "still contains a key for Train to Teach events" do
+          train_to_teach_type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+          expect(type_ids).to include(train_to_teach_type_id)
+        end
+
+        it "does not contain a key for Question Time events" do
+          question_time_type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
+          expect(type_ids).not_to include(question_time_type_id)
+        end
+      end
     end
 
     describe "sorting within an event type" do
+      subject { described_class.new(group_events_by_type(unsorted_events), display_empty: false, ascending: ascending) }
+
       let(:early) { build(:event_api, :online_event, start_at: 1.week.from_now) }
       let(:middle) { build(:event_api, :online_event, start_at: 2.weeks.from_now) }
       let(:late) { build(:event_api, :online_event, start_at: 3.weeks.from_now) }
@@ -51,17 +69,24 @@ describe Events::GroupPresenter do
       let(:unsorted_events) { [middle, late, early] }
       let(:ascending) { true }
 
-      subject { described_class.new(group_events_by_type(unsorted_events), false, ascending) }
-
       it "sorts events of the same type by date, ascending" do
         expect(subject.sorted_events_by_type.to_h[type_id]).to eql([early, middle, late])
       end
 
       context "when descending" do
         let(:ascending) { false }
+
         it "sorts events of the same type by date, descending" do
           expect(subject.sorted_events_by_type.to_h[type_id]).to eql([late, middle, early])
         end
+      end
+    end
+
+    describe "limiting the events by type" do
+      subject { described_class.new(events_by_type, limit_per_type: 1) }
+
+      it "limits the number of events returned per type" do
+        expect(subject.sorted_events_by_type.map(&:last).map(&:count)).to all(be(1))
       end
     end
   end
@@ -119,10 +144,18 @@ describe Events::GroupPresenter do
   end
 
   describe "#sorted_events_of_type" do
-    let(:type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
+    let(:type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
 
     it "returns the events of the given type" do
-      expect(subject.sorted_events_of_type(type)).to eq(train_to_teach_events)
+      expect(subject.sorted_events_of_type(type)).to eq(online_events)
+    end
+
+    context "when type is Train to Teach event" do
+      let(:type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
+
+      it "returns the Train to Teach and Question Time events" do
+        expect(subject.sorted_events_of_type(type)).to eq(train_to_teach_events + question_time_events)
+      end
     end
   end
 end

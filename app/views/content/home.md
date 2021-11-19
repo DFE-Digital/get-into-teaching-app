@@ -2,14 +2,12 @@
   layout: "layouts/home"
   title: "Inspire the next generation"
   description: |-
-    If you want to get into teaching, we can help. Get information on training
-    courses, funding, salaries and benefits - everything you need to take
-    the next step.
+    Official Department for Education information to help you become a teacher. Covering funding, teacher training, salaries, benefits and how to apply.
   date: "2021-06-16"
   fullwidth: true
   lid_pixel_event: "Homepage"
-  subtitle: "Get one step closer to the classroom with personalised guidance to your inbox."
-  subtitle_button: "Sign up"
+  subtitle: "Get information and support to help you become a teacher."
+  subtitle_button: "Register for updates"
   subtitle_link: "/mailinglist/signup/name"
   image: "media/images/content/hero-images/0012.jpg"
   navigation: 5

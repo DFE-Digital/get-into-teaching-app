@@ -21,20 +21,20 @@ information about you.
 
 Some examples of these cookies include:
 
-  - enabling a service to recognise your device so you don’t have to
-    give the same information several times during one task
-  - recognising that you may already have given a username and password
-    so that you don’t need to do so for every webpage requested
-  - measuring how many people are using our services so that we can make
-    them easier to use and ensure that there is enough capacity to make
-    sure they are fast
+- enabling a service to recognise your device so you don’t have to
+  give the same information several times during one task
+- recognising that you may already have given a username and password
+  so that you don’t need to do so for every webpage requested
+- measuring how many people are using our services so that we can make
+  them easier to use and ensure that there is enough capacity to make
+  sure they are fast
 
 | Name                         | Purpose                                            | Expires                   |
 | ---------------------------- | -------------------------------------------------- | ------------------------- |
 | `_dfe_session`               | temporary session data                             | End of browser session    |
 | `git-cookie-preferences-v1`  | Record acceptance of beta site cookie policy       | 90 days                   |
-| `_vwo_uuid_v2`               | Redirection from original site to new Beta site    | 1 year                    |
 | `GiTBetaFeedbackPrompt`      | Record response to our request for feedback        | End of browser session    |
+| `__zlcmid`                   | Store unique ID for chat widget authentication     | 365 days                  |
 
 ### 2. Non-functional cookies
 
@@ -63,7 +63,6 @@ gather this data.
 | `_ga`            | Helps count how many people visit this site by tracking if you’ve visited before | 2 years  |
 | `UA-179982899-1` | Registers a unique ID to generate statistics about how you use the website       | 1 minute |
 | `_gid`           | Helps count how many people visit this site by tracking if you’ve visited before | 24 hours |
-
 
 #### Hotjar cookies
 
@@ -131,11 +130,11 @@ You can delete or manage all cookies from your browser. The links below
 take you to the ‘Help' sections for each of the major browsers, so that
 you can find out more about how to manage your cookies.
 
-  - [**Google Chrome**](https://support.google.com/chrome/answer/95647?hl=en-GB&p=cpn_cookies)
-  - [**Microsoft Edge**](https://support.microsoft.com/en-us/help/4468242/microsoft-edge-browsing-data-and-privacy)
-  - [**Microsoft Internet Explorer**](https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-11)
-  - [**Mozilla Firefox**](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&redirectslug=Cookies)
-  - [**Safari**](https://support.apple.com/kb/ph21411?locale=en_GB)
+- [**Google Chrome**](https://support.google.com/chrome/answer/95647?hl=en-GB&p=cpn_cookies)
+- [**Microsoft Edge**](https://support.microsoft.com/en-us/help/4468242/microsoft-edge-browsing-data-and-privacy)
+- [**Microsoft Internet Explorer**](https://support.microsoft.com/en-us/help/17442/windows-internet-explorer-delete-manage-cookies#ie=ie-11)
+- [**Mozilla Firefox**](https://support.mozilla.org/en-US/kb/cookies-information-websites-store-on-your-computer?redirectlocale=en-US&redirectslug=Cookies)
+- [**Safari**](https://support.apple.com/kb/ph21411?locale=en_GB)
 
 Find out [how we use your personal data](/privacy-policy) when you sign up for our services.
 

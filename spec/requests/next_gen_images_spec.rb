@@ -1,16 +1,17 @@
 require "rails_helper"
 
-describe "Next Gen Images" do
+describe "Next Gen Images", type: :request do
+  subject { response.body }
+
   before do
     allow(File).to receive(:exist?).and_call_original
-    allow(File).to receive(:exist?).with(/.*\.svg/) { true }
+    allow(File).to receive(:exist?).with(/.*\.svg/).and_return(true)
     get root_path
   end
-  subject { response.body }
 
   it do
     is_expected.to match(
-      /<picture><source .*><\/source><img .*><noscript><img .*><\/noscript><\/picture>/,
+      /<picture><source .*><img .*><\/picture><noscript><picture class="no-js"><source .*><img .*><\/picture><\/noscript>/,
     )
   end
 end

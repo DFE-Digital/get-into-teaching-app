@@ -2,6 +2,9 @@ import { Controller } from 'stimulus';
 
 export default class extends Controller {
   static targets = ['content'];
+  static values = {
+    assetsUrl: String,
+  };
 
   connect() {
     this.preventTurboLinksOnJumpLinks();
@@ -23,9 +26,9 @@ export default class extends Controller {
     const links = this.contentTarget.querySelectorAll('a');
 
     links.forEach((l) => {
-      if (l.getAttribute('href')?.startsWith('http')) {
+      if (this.isExternal(l)) {
         l.setAttribute('target', '_blank');
-        l.setAttribute('rel', 'noopener noreferrer');
+        l.setAttribute('rel', 'noopener');
 
         // add hidden text to inform screen reader users that
         // link will open in a new window
@@ -36,6 +39,12 @@ export default class extends Controller {
         l.appendChild(linkOpensInNewWindow);
       }
     });
+  }
+
+  isExternal(link) {
+    const href = link.getAttribute('href');
+
+    return href?.startsWith('http') && !href?.includes(this.assetsUrlValue);
   }
 
   prepareChevronOnButtonLinks() {

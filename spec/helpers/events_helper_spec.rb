@@ -29,8 +29,9 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#format_event_date" do
-    let(:stacked) { true }
     subject { format_event_date event, stacked: stacked }
+
+    let(:stacked) { true }
 
     context "with a single day event" do
       it { is_expected.to eql "1 June 2020 <br> 10:00 - 12:00" }
@@ -38,6 +39,7 @@ describe EventsHelper, type: "helper" do
 
     context "with a multi day event" do
       let(:enddate) { DateTime.new(2020, 6, 4, 14) }
+
       it { is_expected.to eql "1 June 2020 10:00 to 4 June 2020 14:00" }
     end
 
@@ -68,7 +70,7 @@ describe EventsHelper, type: "helper" do
     subject { event_location_map(event) }
 
     before do
-      allow(Rails.application.config.x).to receive(:google_maps_key) { "12345" }
+      allow(Rails.application.config.x).to receive(:google_maps_key).and_return("12345")
     end
 
     it { is_expected.to match(/data-map-description=\"Line 1,\nLine 2,\nManchester,\nMA1 1AM\" /) }
@@ -123,11 +125,11 @@ describe EventsHelper, type: "helper" do
     let(:non_matching_type) { "Online event" }
     let(:event) { build(:event_api, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES[matching_type]) }
 
-    it "should be truthy when the type matches" do
+    it "is truthy when the type matches" do
       expect(is_event_type?(event, matching_type)).to be_truthy
     end
 
-    it "should be falsy when the type matches" do
+    it "is falsy when the type matches" do
       expect(is_event_type?(event, non_matching_type)).to be_falsy
     end
   end
@@ -165,6 +167,22 @@ describe EventsHelper, type: "helper" do
     it "returns the address, when all fields have values" do
       event.building = building_fully_populated
       expect(event_address(event)).to eq("Line 1,\nLine 2,\nLine 3,\nManchester,\nMA1 1AM")
+    end
+  end
+
+  describe "#display_event_provider_info?" do
+    it "returns false if train to teach or question time" do
+      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+      expect(display_event_provider_info?(event)).to be(false)
+      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
+      expect(display_event_provider_info?(event)).to be(false)
+    end
+
+    it "returns true if not train to teach or question time" do
+      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
+      expect(display_event_provider_info?(event)).to be(true)
+      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Schools or University event"]
+      expect(display_event_provider_info?(event)).to be(true)
     end
   end
 

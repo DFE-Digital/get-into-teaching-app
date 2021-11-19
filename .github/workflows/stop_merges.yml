@@ -1,0 +1,14 @@
+name: Prevent Merges
+
+on:
+  pull_request:
+    types: [ unlabeled, labeled, opened, synchronize , reopened]
+
+jobs:
+  build:
+    if: contains(github.event.pull_request.labels.*.name, 'Do Not Merge' )
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Raise an Error
+        run: exit 1

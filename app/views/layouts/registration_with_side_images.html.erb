@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <% content_for :head do %>
+    <%= csrf_meta_tags %>
+    <%= javascript_pack_tag 'govuk/error_summary', 'data-turbolinks-track': 'reload', async: true %>
+  <% end %>
+
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") unless Rails.application.config.x.legacy_tracking_pixels %>
+
+    <%= render HeaderComponent.new %>
+
+    <main id="main-content" class="registration-with-side-images">
+      <section class="signup-container">
+        <%= image_pack_tag 'content/mailing-list-signup/left.jpg', class: 'left-img hide-on-mobile hide-on-tablet', alt: "" %>
+        <div class="signup-form">
+          <%= image_pack_tag 'content/mailing-list-signup/mobile.jpg', class: 'hide-on-desktop', alt: "" %>
+          <%= yield %>
+        </div>
+        <%= image_pack_tag 'content/mailing-list-signup/right.jpg', class: 'right-img hide-on-mobile hide-on-tablet', alt: "" %>
+      </section>
+    </main>
+
+    <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
+  <% end %>
+</html>

@@ -1,7 +1,7 @@
 ---
 title: Tips on applying for teacher training
 description: |-
-  Read these tips on applying for teacher training to maximise your chances of 
+  Read these tips on applying for teacher training to maximise your chances of
   being accepted on to initial teacher training, including when to apply for teaching training, how to write a good application, how to ensure you choose the right references, your personal statement and what to do if you get invited to interview.
 date: "2021-06-24"
 keywords:
@@ -49,6 +49,12 @@ interviews. A [teacher training adviser](/tta-service) can help you with all of 
 
 You can [search for most postgraduate teacher training courses on GOV.UK](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
+## Where to apply
+
+You can use [Apply for teacher training](https://www.gov.uk/apply-for-teacher-training) to apply for postgraduate teacher training.
+
+This service has replaced the UCAS postgraduate teacher training application.
+
 ## When to apply
 
 Courses usually open for applications in October for entry the following year
@@ -83,12 +89,12 @@ You can [find and apply to most postgraduate teacher training courses on GOV.UK]
 If you do not find what you were looking for, there are [other ways to train](/ways-to-train).
 
 Before you start, it’s particularly important to think about your referees and
-personal statement.
+[personal statement](#your-personal-statement).
 
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
 
-[Talk to an adviser for help preparing your application.](/tta-service)
+[Talk to an adviser for help preparing your application](/tta-service).
 
 ## Choose your referees
 
@@ -98,18 +104,20 @@ Unlike a standard work reference, your references for teacher training need to
 be named individuals rather than (for example) a human resources team or
 academic department.
 
-Your referees will be asked to write 500 words about your character and
-suitability for teaching.
+Your referees will be asked to write up to 500 words about your character and
+potential to teach.
 
-They’ll have 2 weeks to respond, so it’s worth contacting them before you apply
-so they understand why you’re applying and what they’ll be asked to do.
+It’s worth contacting them before you apply so they understand why you’re applying and what they’ll be asked to do.
 
-Choose referees who’ll endorse your:
+Choose referees who could comment on things like your:
 
-* teaching passion and potential
-* suitability for working with children
-* academic abilities
+* communication skills
 * reliability and professionalism
+* ability to work with children
+* transferable skills
+* academic skills
+
+Your referee will also be asked if they know of any reason why you should not work with children.
 
 Ideal referees could include:
 
@@ -121,42 +129,56 @@ Ideal referees could include:
 
 Referees should not be family members, partners or friends.
 
-Training providers will only accept a character reference as a second reference.
-
 It’s important to have at least one academic or professional reference.
+
+Training providers will accept a character reference, such as a mentor or someone you know from volunteering, as a second reference.
 
 If you’re applying for a salaried course, one of your references must be from
 an employer.
+
+You can request as many references as you like to increase the chances of getting 2 quickly.
+
+Once you've received 2 or more references, you can select the 2 you want to include in your application.
 
 If you’re struggling to choose your referees, [get free one-on-one support from a
 teacher training adviser](/tta-service).
 
 ## Your personal statement
 
-Explaining why you want to be a teacher is an essential part of your application - so
-it’s worth taking your time on it.
+Your personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it.
 
-A personal statement is usually about 500 words. It’s your chance to show your
-motivation, commitment and teaching potential.
+Personal statements are split into 2 sections. In total they are usually around 1,000 words.
 
-You may want to cover some of the following:
+### Section 1: Why do you want to teach?
 
-* why you want to teach
+Up to 600 words.
+
+This is the place to talk about why you think you would make a great teacher. You can include:
+
 * what inspired you to choose teaching
-* your thoughts on children’s wellbeing and the education system
-* your understanding of the demands and rewards of the profession
-* personal qualities that will make you a good teacher
-* your contribution to the life of the school outside the classroom – for
-  example, running extra-curricular activities and clubs
+* your understanding of the demands and rewards of teaching
+* the personal qualities that will make you a good teacher
+* your contribution to the life of a school outside the classroom – for example, running extra-curricular activities and clubs
 * details of any experience you have working with children and what you learnt
-* your suitability to teach a subject or group
+* your thoughts on children’s wellbeing and the education system
 
-As part of your personal statement you'll need to demonstrate your suitability to teach a subject or age group. You could talk about:
+### Section 2: Why are you suited to teach your subjects or age group?
 
-* the subject of your undergraduate degree and the modules you studied
-* postgraduate degrees (for example, a Masters or PhD)
-* your A level subjects
-* expertise you’ve gained at work
+Up to 400 words.
+
+If you’re applying for secondary teacher training, use this section to describe your knowledge of the subjects you’ve chosen.
+
+If you’re applying for primary teacher training, say why you'd like to teach this age group.
+
+If you're applying for a primary course with a subject specialism, or you're particularly interested in certain primary subjects, you can talk about that here too.
+
+You could talk about:
+
+* any relevant work or unpaid experience
+* your degree and degree modules
+* your other relevant qualifications, such as A levels
+* any relevant skills, interests or achievements
+* your understanding of the national curriculum
 
 [If you're concerned about your subject knowledge](/improve-your-subject-knowledge), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
 
@@ -164,14 +186,12 @@ You can [get support preparing a personal statement from an adviser](/tta-servic
 
 ## If you’re invited to interview
 
-Interviews usually last a day and may include time spent teaching real pupils.
+Interviews usually last a day and may include time spent teaching pupils.
 
 You can [get support preparing for an interview from an adviser](/tta-service).
 
 Interviews vary from provider to provider – you’ll be given all the information
 you need when you’re invited to attend.
-
-Some providers are doing interviews online due to COVID-19 restrictions.
 
 ## If you get an offer
 

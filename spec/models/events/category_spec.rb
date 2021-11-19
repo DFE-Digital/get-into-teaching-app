@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe Events::Category do
-  include_context "stub types api"
+  include_context "with stubbed types api"
 
   let(:category_name) { "Train to Teach event" }
   let(:type_id) do
@@ -42,7 +42,7 @@ RSpec.describe Events::Category do
   end
 
   describe "#latest" do
-    include_context "stub upcoming events by category api", 1
+    include_context "with stubbed upcoming events by category api", 1
 
     subject { instance.latest }
 
@@ -54,6 +54,7 @@ RSpec.describe Events::Category do
 
     context "with no events for category id" do
       let(:category_name) { "Online event" }
+
       it { is_expected.to be_nil }
     end
   end

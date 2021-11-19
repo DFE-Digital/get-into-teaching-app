@@ -1,7 +1,7 @@
 require "rails_helper"
 
-RSpec.describe Pages::Page do
-  include_context "use fixture markdown pages"
+RSpec.describe ::Pages::Page do
+  include_context "with fixture markdown pages"
 
   shared_examples "a page" do |title, path, template|
     it { is_expected.to be_instance_of described_class }
@@ -20,7 +20,7 @@ RSpec.describe Pages::Page do
 
     context "with non markdown page" do
       it "raises an exception" do
-        expect { described_class.find "/unknown" }.to raise_error(Pages::Page::PageNotFoundError)
+        expect { described_class.find "/unknown" }.to raise_error(::Pages::Page::PageNotFoundError)
       end
     end
   end
@@ -40,7 +40,7 @@ RSpec.describe Pages::Page do
         }
       end
 
-      it { expect { subject }.to raise_exception Pages::Page::MultipleFeatured }
+      it { expect { subject }.to raise_exception ::Pages::Page::MultipleFeatured }
     end
   end
 
@@ -74,7 +74,7 @@ RSpec.describe Pages::Page do
 
       before do
         page = described_class.find("/subfolder/page2")
-        expect(page).to receive(:path) { deep_path }
+        allow(page).to receive(:path) { deep_path }
         allow(described_class).to receive(:find).and_raise(described_class::PageNotFoundError)
         page.parent
       end

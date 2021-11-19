@@ -1,20 +1,30 @@
-shared_context "wizard store" do
+shared_context "with wizard store" do
   let(:backingstore) { { "name" => "Joe", "age" => 35 } }
   let(:crm_backingstore) { {} }
-  let(:wizardstore) { Wizard::Store.new backingstore, crm_backingstore }
+  let(:wizardstore) { DFEWizard::Store.new backingstore, crm_backingstore }
 end
 
-shared_context "wizard step" do
-  include_context "wizard store"
+class TestWizard < DFEWizard::Base
+  class Name < DFEWizard::Step
+    attribute :name
+    validates :name, presence: true
+  end
+
+  self.steps = [Name].freeze
+end
+
+shared_context "with wizard step" do
+  include_context "with wizard store"
+  subject { instance }
+
   let(:attributes) { {} }
   let(:wizard) { TestWizard.new(wizardstore, TestWizard::Name.key) }
   let(:instance) do
     described_class.new wizard, wizardstore, attributes
   end
-  subject { instance }
 end
 
-shared_context "wizard data" do
+shared_context "with wizard data" do
   let(:degree_status_option_types) do
     GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
@@ -57,12 +67,12 @@ shared_context "wizard data" do
   end
 end
 
-shared_examples "a wizard step" do
+shared_examples "a with wizard step" do
   it { expect(subject.class).to respond_to :key }
   it { is_expected.to respond_to :save }
 end
 
-shared_examples "an issue verification code wizard step" do
+shared_examples "an issue verification code with wizard step" do
   describe "#save" do
     before do
       subject.email = "email@address.com"
@@ -96,7 +106,7 @@ shared_examples "an issue verification code wizard step" do
         subject.save
         expect_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).not_to receive(:create_candidate_access_token)
         expect(wizardstore["authenticate"]).to be_falsy
-        expect(wizardstore["matchback_failures"]).to eq(0)
+        expect(wizardstore["matchback_failures"]).to be_nil
         expect(wizardstore["last_matchback_failure_code"]).to be_nil
       end
     end
@@ -113,7 +123,7 @@ shared_examples "an issue verification code wizard step" do
 
     it "will skip the authenticate step for new candidates" do
       expect(Rails.logger).to receive(:info).with("#{described_class} requesting access code")
-      expect(Rails.logger).to_not receive(:info).with("#{described_class} potential duplicate (response code 404)")
+      expect(Rails.logger).not_to receive(:info).with("#{described_class} potential duplicate (response code 404)")
       allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
         .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 404))
       subject.save
@@ -172,29 +182,4 @@ shared_examples "an issue verification code wizard step" do
       expect(wizardstore["matchback_failures"]).to eq(2)
     end
   end
-end
-
-class TestWizard < Wizard::Base
-  class Name < Wizard::Step
-    attribute :name
-    validates :name, presence: true
-  end
-
-  # To simulate two steps writing to the same attribute.
-  class OtherAge < Wizard::Step
-    attribute :age, :integer
-    validates :age, presence: false
-  end
-
-  class Age < Wizard::Step
-    attribute :age, :integer
-    validates :age, presence: true
-  end
-
-  class Postcode < Wizard::Step
-    attribute :postcode
-    validates :postcode, presence: true
-  end
-
-  self.steps = [Name, OtherAge, Age, Postcode].freeze
 end

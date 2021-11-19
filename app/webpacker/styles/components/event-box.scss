@@ -25,6 +25,7 @@
     width: 100%;
     overflow: hidden;
 
+    h2,
     h4 {
       line-height: 1.3em;
       margin: 0 0 .4em;
@@ -57,6 +58,10 @@
     height: 8px;
     background-color: $blue;
     margin: 6px 0;
+
+    &.thin {
+      height: 2px;
+    }
   }
 
   &__divider--train-to-teach-event {

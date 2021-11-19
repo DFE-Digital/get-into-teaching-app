@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "Circuit breaker" do
+describe "Circuit breaker", type: :request do
   let(:error) { GetIntoTeachingApiClient::CircuitBrokenError }
 
   before do
@@ -14,7 +14,7 @@ describe "Circuit breaker" do
   end
 
   context "when the API returns a CircuitBrokenError" do
-    before { expect(Sentry).to receive(:capture_exception).with(error) }
+    before { allow(Sentry).to receive(:capture_exception).with(error) }
 
     it "the EventsController redirects to an error page" do
       get event_path("event-id")

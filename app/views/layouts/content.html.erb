@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
-    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
+    <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") unless Rails.application.config.x.legacy_tracking_pixels %>
 
     <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
       <%= c.hero(@front_matter) %>
     <% end %>
 
-    <main role="main" id="main-content">
+    <main id="main-content">
       <section class="container">
         <% if !@front_matter["image"] %>
           <header>
@@ -15,7 +16,7 @@
               <%= tag.span(@front_matter["title_caption"], class: "caption") %>
             <% end %>
 
-            <%= tag.h1(@front_matter["title"]) %>
+            <%= tag.h1(@front_matter["heading"] || @front_matter["title"]) %>
           </header>
         <% end %>
 
@@ -38,11 +39,9 @@
             <div class="link-block link-block--related">
               <h2 class="link-block__header">Related Content:</h2>
               <ul class="link-block__list">
-                <ul class="link-block__list">
-                  <% @front_matter["related_content"].each do |item, anchor| %>
-                    <li><%= link_to(item, anchor) %></li>
-                  <% end %>
-                </ul>
+                <% @front_matter["related_content"].each do |item, anchor| %>
+                  <li><%= link_to(item, anchor) %></li>
+                <% end %>
               </ul>
             </div>
           <% end %>
@@ -65,8 +64,8 @@
             <%= render(partial) %>
           <% end %>
 
-          <% @front_matter.key?("accordion") && @front_matter.dig("accordion").tap do |accordion_fm| %>
-            <%= render Content::AccordionComponent.new(numbered: accordion_fm.dig("numbered"), active_step: accordion_fm.dig("active_step")) do |accordion| %>
+          <% @front_matter.key?("accordion") && @front_matter["accordion"].tap do |accordion_fm| %>
+            <%= render Content::AccordionComponent.new(numbered: accordion_fm["numbered"], active_step: accordion_fm["active_step"]) do |accordion| %>
               <% accordion.content_before_accordion(
                 partial: accordion_fm.dig("content_before_accordion", "partial"),
                 call_to_action: accordion_fm.dig("content_before_accordion", "cta")

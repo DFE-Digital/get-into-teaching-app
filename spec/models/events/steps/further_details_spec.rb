@@ -1,9 +1,9 @@
 require "rails_helper"
 
 describe Events::Steps::FurtherDetails do
-  include_context "wizard step"
+  include_context "with wizard step"
 
-  it_behaves_like "a wizard step"
+  it_behaves_like "a with wizard step"
 
   describe "attributes" do
     it { is_expected.to respond_to :event_id }
@@ -30,6 +30,7 @@ describe Events::Steps::FurtherDetails do
 
     describe "#already_subscribed_to_mailing_list" do
       let(:backingstore) { { "already_subscribed_to_mailing_list" => true } }
+
       it { is_expected.to allow_value("1").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("0").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("").for :subscribe_to_mailing_list }
@@ -37,6 +38,7 @@ describe Events::Steps::FurtherDetails do
 
     describe "#already_subscribed_to_teacher_training_adviser" do
       let(:backingstore) { { "already_subscribed_to_teacher_training_adviser" => true } }
+
       it { is_expected.to allow_value("1").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("0").for :subscribe_to_mailing_list }
       it { is_expected.to allow_value("").for :subscribe_to_mailing_list }
@@ -47,11 +49,12 @@ describe Events::Steps::FurtherDetails do
     context "when invalid" do
       before do
         subject.privacy_policy = nil
-        expect_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).not_to \
-          receive(:get_latest_privacy_policy)
       end
 
       it "does not update the store" do
+        expect_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).not_to \
+          receive(:get_latest_privacy_policy)
+
         expect(subject).not_to be_valid
         subject.save
         expect(wizardstore["subscribe_to_mailing_list"]).to be_nil

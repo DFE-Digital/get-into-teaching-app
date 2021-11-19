@@ -29,6 +29,10 @@ Rails/LexicallyScopedActionFilter:
   Exclude:
     - 'app/controllers/**/*steps_controller.rb'
 
+Naming/MethodParameterName:
+  Exclude:
+    - 'app/components/arrow_component.rb'
+
 Rails/UnknownEnv:
   Environments:
     - development
@@ -54,57 +58,19 @@ Style/EmptyMethod:
 Style/ClassVars:
   Enabled: false
 
-# FIXME Temporary whilst updating specs - to be removed in subsequent PRs
-
-RSpec/ContextWording:
+RSpec/InstanceVariable:
   Exclude:
-    - spec/support/*.rb
+    - spec/features/content_pages_spec.rb
 
-RSpec/DescribeClass:
+RSpec/NamedSubject:
   Exclude:
     - spec/**/*.rb
 
-RSpec/EmptyLineAfterFinalLet:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/EmptyLineAfterHook:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/EmptyLineAfterSubject:
+RSpec/SubjectStub:
   Exclude:
     - spec/**/*.rb
 
 RSpec/ExampleLength:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/ExampleWording:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/ExpectInHook:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/HookArgument:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/HooksBeforeExamples:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/InstanceVariable:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/LeadingSubject:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/LetBeforeExamples:
   Exclude:
     - spec/**/*.rb
 
@@ -116,34 +82,8 @@ RSpec/MultipleExpectations:
   Exclude:
     - spec/**/*.rb
 
-RSpec/NamedSubject:
-  Exclude:
-    - spec/**/*.rb
+RSpec/LeadingSubject:
+  Enabled: false
 
 RSpec/NestedGroups:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/ReturnFromStub:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/ScatteredLet:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/ScatteredSetup:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/SubjectStub:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/VerifiedDoubles:
-  Exclude:
-    - spec/**/*.rb
-
-RSpec/NotToNot:
-  Exclude:
-    - spec/**/*.rb
+  Max: 6

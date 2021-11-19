@@ -29,7 +29,7 @@ module Internal
     attribute :venue_type, default: VENUE_TYPES[:none]
 
     validates :name, presence: true, allow_blank: false, length: { maximum: 300 }
-    validates :readable_id, presence: true, allow_blank: false, length: { maximum: 300 }
+    validates :readable_id, presence: true, allow_blank: false, length: { maximum: 300 }, format: { with: /\A[^_\W][\w-]+[^_\W]\Z/ }
     validates :summary, presence: true, allow_blank: false, length: { maximum: 1000 }
     validates :description, presence: true, allow_blank: false, length: { maximum: 2000 }
     validates :is_online, inclusion: { in: [true, false] }, if: -> { provider_event? }
@@ -43,7 +43,7 @@ module Internal
     validates :provider_organiser, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
     validates :provider_target_audience, presence: true, allow_blank: false, length: { maximum: 500 }, if: -> { provider_event? }
     validates :provider_website_url, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { provider_event? }
-    validates :scribble_id, presence: true, allow_blank: false, length: { maximum: 300 }, if: -> { online_event? }
+    validates :scribble_id, length: { maximum: 300 }, if: -> { online_event? }
     validates :venue_type, inclusion: { in: VENUE_TYPES.values }
     validate :dates_in_future
     validate :end_after_start

@@ -6,13 +6,11 @@
     </svg>
   </div>
 
-  <%= image_pack_tag "media/images/content/hero-images/0014.jpg" %>
+  <%= tag.video(controls: true, src: subject_specific_video_path) %>
 
-  <h1>
+  <div class="main-heading">
     <div class="caption caption-l">
-      <span class="purple">
-        Hi Simon.
-      </span>
+      <%= tag.span(greeting, class: "purple") %>
     </div>
 
     <div class="caption caption-m">
@@ -21,13 +19,60 @@
       </span>
     </div>
 
-    <div class="caption welcome-to-teaching">
+    <h1 class="caption welcome-to-teaching-text">
       <span class="purple no-wrap">
         Welcome to
       </span>
 
       <span class="purple"><span class="underline">Teaching</span>.</span>
-    </div>
-  </h1>
+    </h1>
+  </div>
 
+  <div class="arrow-container mobile">
+    <%=
+    render ArrowComponent.new(
+        width: 80,
+        height: 200,
+        x1: 0.5,
+        y1: 0,
+        x2: 0.5,
+        y2: 1,
+        cx: -0.1,
+        cy: 0.35,
+        arrow_size: 0.065
+      )
+    %>
+  </div>
+
+  <div class="arrow-container top desktop">
+    <%=
+    render ArrowComponent.new(
+        width: 300,
+        height: 300,
+        x1: 1,
+        y1: 1,
+        x2: 0.1,
+        y2: 0.1,
+        cx: 0.9,
+        cy: 0.25,
+        arrow_size: 0.03
+      )
+    %>
+  </div>
+
+  <div class="arrow-container bottom desktop">
+    <%=
+    render ArrowComponent.new(
+        width: 300,
+        height: 300,
+        x1: 1,
+        y1: 0,
+        x2: 0.3,
+        y2: 1,
+        cx: 0.1,
+        cy: 0.1,
+        arrow_size: 0.03
+      )
+    %>
+  </div>
 </header>

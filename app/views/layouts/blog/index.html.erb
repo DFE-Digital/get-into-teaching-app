@@ -1,21 +1,21 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link scroll", "link-target": "content" }, id: "body" do %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") unless Rails.application.config.x.legacy_tracking_pixels %>
 
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main role="main" id="main-content">
+    <main id="main-content">
       <section class="container blog">
-        <header class="list-header">
-          <%= tag.h1(@front_matter[:title]) %>
-        </header>
-
-        <%= yield :popular_tags %>
-
-        <div class="text-content longform">
+        <%= render(partial: "blog/header", locals: { mobile: true }) %>
+        <aside>
+          <%= yield :aside %>
+        </aside>
+        <article class="text-content longform<%= " with-aside" if content_for?(:aside) %>">
+          <%= render(partial: "blog/header", locals: { mobile: false }) %>
           <%= yield %>
-        </div>
+        </article>
       </section>
     </main>
 

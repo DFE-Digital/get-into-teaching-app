@@ -11,7 +11,7 @@ describe('NavigationController', () => {
           <span class="menu-button__text">Menu</span>
         </button>
       </div>
-      <nav role="nav" class="hidden-mobile" data-navigation-target="nav">
+      <nav class="hidden-mobile" data-navigation-target="nav">
         <ol class="primary" data-navigation-target="primary">
           <li class="active">One</li>
           <li>Two</li>

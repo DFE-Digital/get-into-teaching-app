@@ -1,17 +1,17 @@
 require "rails_helper"
 
-describe EventsController do
-  include_context "stub types api"
+describe EventsController, type: :request do
+  include_context "with stubbed types api"
 
   describe "#index" do
-    include_context "stub upcoming events by category api", EventsController::UPCOMING_EVENTS_PER_TYPE
-    let(:parsed_response) { Nokogiri.parse(response.body) }
-    let(:expected_description) { "Get your questions answered at an event." }
-
+    include_context "with stubbed upcoming events by category api", EventsController::UPCOMING_EVENTS_PER_TYPE
     subject! do
       get(events_path)
       response
     end
+
+    let(:parsed_response) { Nokogiri.parse(response.body) }
+    let(:expected_description) { "Get your questions answered at an event." }
 
     it { is_expected.to have_http_status :success }
 
@@ -37,6 +37,11 @@ describe EventsController do
   end
 
   describe "#search" do
+    subject(:perform_request) do
+      get(search_path)
+      response
+    end
+
     let(:results_per_type) { EventsController::MAXIMUM_EVENTS_PER_CATEGORY }
     let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
     let(:events_by_type) { group_events_by_type(events) }
@@ -47,18 +52,13 @@ describe EventsController do
     let(:parsed_response) { Nokogiri.parse(response.body) }
 
     before do
-      expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type)
         .with(a_hash_including(expected_request_attributes)) { events_by_type }
     end
 
-    subject! do
-      get(search_path)
-      response
-    end
-
     context "with valid search params" do
-      let(:event_type_name) { "Train to Teach event" }
+      let(:event_type_name) { "School or University event" }
       let(:event_type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES[event_type_name] }
       let(:search_params) do
         attributes_for(
@@ -75,7 +75,7 @@ describe EventsController do
           radius: nil,
           start_after: date.beginning_of_day,
           start_before: date.end_of_month,
-          type_id: event_type,
+          type_ids: [event_type],
         }
       end
       let(:expected_description) { "Get your questions answered at an event." }
@@ -84,16 +84,19 @@ describe EventsController do
       it { is_expected.to have_attributes media_type: "text/html" }
 
       it "renders all events" do
+        perform_request
         expect(parsed_response.css(".events-featured__list__item").count).to eql(events.count)
       end
 
       it "has a meta description" do
+        perform_request
         actual_description = parsed_response.at_css("head meta[name='description']")["content"]
 
         expect(actual_description).to eql(expected_description)
       end
 
       it "has a meta og:description" do
+        perform_request
         actual_description = parsed_response.at_css("head meta[name='og:description']")["content"]
 
         expect(actual_description).to eql(expected_description)
@@ -110,7 +113,7 @@ describe EventsController do
 
     context "with no search params" do
       let(:search_params) { nil }
-      let(:expected_request_attributes) { { type_id: nil } }
+      let(:expected_request_attributes) { { type_ids: nil } }
 
       it { is_expected.to have_http_status :success }
       it { is_expected.to have_attributes media_type: "text/html" }
@@ -118,13 +121,13 @@ describe EventsController do
   end
 
   describe "#show" do
+    subject { response }
+
     let(:event_readable_id) { "123" }
 
     let(:event) do
       build(:event_api, :with_provider_info, readable_id: event_readable_id)
     end
-
-    subject { response }
 
     context "with known event" do
       before do
@@ -138,6 +141,7 @@ describe EventsController do
 
       describe "the response body" do
         subject { response.body }
+
         let(:parsed_response) { Nokogiri.parse(response.body) }
 
         it { is_expected.to include(event.name) }
@@ -149,10 +153,17 @@ describe EventsController do
         it { is_expected.to match(/#{event.building.address_postcode}/) }
         it { is_expected.to match(/iframe.+src="#{event.video_url}"/) }
         it { is_expected.to include(event.provider_website_url) }
-        it { is_expected.to include(event.provider_target_audience) }
-        it { is_expected.to include(event.provider_organiser) }
-        it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
+        it { is_expected.not_to include("Provider information") }
         it { is_expected.to include(event.building.image_url) }
+
+        context "when the type is not TTT or QT" do
+          let(:event) { build(:event_api, :online_event, :with_provider_info, readable_id: event_readable_id) }
+
+          it { is_expected.to include("Provider information") }
+          it { is_expected.to include(event.provider_target_audience) }
+          it { is_expected.to include(event.provider_organiser) }
+          it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
+        end
 
         context "when the event can be registered for online" do
           let(:event) { build(:event_api, web_feed_id: "123", readable_id: event_readable_id) }
@@ -183,7 +194,6 @@ describe EventsController do
           let(:event) { build(:event_api, :closed, web_feed_id: "123", readable_id: event_readable_id) }
 
           it { is_expected.not_to match(/How to attend/) }
-          it { is_expected.to match(/This event is now closed/) }
         end
 
         context "when the event has a scribble_id" do
@@ -217,7 +227,7 @@ describe EventsController do
         end
 
         context "when the event is a 'Pending event'" do
-          let(:event) { build(:event_api, web_feed_id: nil, status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]) }
+          let(:event) { build(:event_api, :pending, web_feed_id: nil) }
 
           it { expect(response).to have_http_status :success }
           it { expect(response.body).to include("Unfortunately, that event has already happened.") }

@@ -1,16 +1,20 @@
 require "attribute_filter"
 
 module Events
-  class Wizard < ::Wizard::Base
+  class Wizard < ::DFEWizard::Base
     include ::Wizard::ApiClientSupport
 
     self.steps = [
       Steps::PersonalDetails,
-      ::Wizard::Steps::Authenticate,
+      ::DFEWizard::Steps::Authenticate,
       Steps::ContactDetails,
       Steps::FurtherDetails,
       Steps::PersonalisedUpdates,
     ].freeze
+
+    def matchback_attributes
+      %i[candidate_id qualification_id is_verified].freeze
+    end
 
     def complete!
       super.tap do |result|
@@ -25,6 +29,15 @@ module Events
       @api ||= GetIntoTeachingApiClient::TeachingEventsApi.new
       response = @api.exchange_access_token_for_teaching_event_add_attendee(timed_one_time_password, request)
       Rails.logger.info("Events::Wizard#exchange_access_token: #{AttributeFilter.filtered_json(response)}")
+      response
+    end
+
+    def exchange_unverified_request(request)
+      super unless find(Steps::PersonalDetails.key).is_walk_in?
+
+      @api ||= GetIntoTeachingApiClient::TeachingEventsApi.new
+      response = @api.exchange_unverified_request_for_teaching_event_add_attendee(request)
+      Rails.logger.info("Events::Wizard#exchange_unverified_request: #{AttributeFilter.filtered_json(response)}")
       response
     end
 

@@ -1,5 +1,21 @@
 module ApplicationHelper
   def analytics_body_tag(attributes = {}, &block)
+    if Rails.application.config.x.legacy_tracking_pixels
+      legacy_analytics_body_tag(attributes, &block)
+    else
+      gtm_consent_body_tag(attributes, &block)
+    end
+  end
+
+  def gtm_consent_body_tag(attributes = {}, &block)
+    attributes[:data] ||= {}
+    attributes[:data][:controller] ||= ""
+    attributes[:data][:controller] << " gtm-consent"
+
+    tag.body(**attributes, &block)
+  end
+
+  def legacy_analytics_body_tag(attributes = {}, &block)
     attributes = attributes.symbolize_keys
 
     analytics = {
@@ -38,7 +54,7 @@ module ApplicationHelper
 
   def prefix_title(title)
     if title
-      "Get Into Teaching: #{title}"
+      "#{title} | Get Into Teaching"
     else
       "Get Into Teaching"
     end
@@ -88,8 +104,35 @@ module ApplicationHelper
     link_to text, path, **options
   end
 
-  def chat_link(text = "Chat to us", classes: nil)
-    link_to(text, "#", class: classes, data: { controller: "talk-to-us", action: "talk-to-us#startChat" })
+  def chat_link(
+    text = "Chat online",
+    classes: nil,
+    fallback_text: "Chat to us",
+    fallback_email: nil,
+    offline_text: "Chat available Monday to Friday between 8:30am and 5:30pm."
+  )
+    raise ArgumentError, "Specify fallback text or email, not both" if [fallback_text, fallback_email].all?(&:present?)
+
+    # Text is wrapped in a <span> so it can be easily replaced
+    # without losing the > icon that gets appended by JS.
+    main_link = link_to("#",
+                        class: "#{classes} chat-button #{'with-fallback' if [fallback_text, fallback_email].any?(&:present?)}",
+                        data: {
+                          action: "talk-to-us#startChat",
+                          "talk-to-us-target": "button",
+                        }) { tag.span(text) }
+
+    elements = [
+      main_link,
+    ]
+
+    elements << link_to(fallback_text, "#talk-to-us", class: "#{classes} chat-button-no-js") if fallback_text.present?
+    elements << mail_to(fallback_email, fallback_email, class: "chat-button-no-js") if fallback_email.present?
+    elements << tag.span(offline_text, class: "chat-button-offline", data: { "talk-to-us-target": "offlineText" }) if offline_text.present?
+
+    tag.span(safe_join(elements), data: {
+      controller: "talk-to-us",
+    })
   end
 
   def internal_referer
@@ -104,5 +147,15 @@ module ApplicationHelper
     html_content&.gsub \
       ' href="https://getintoteaching.education.gov.uk/how-we-use-your-information"',
       " href=\"#{cookies_path}\""
+  end
+
+  def privacy_page?(path)
+    ["/cookie_preference", "/cookies", "/privacy-policy"].include?(path)
+  end
+
+  def google_optimize_config
+    @@google_optimize_config ||=
+      YAML.safe_load(File.read(Rails.root.join("config/google_optimize.yml")))
+        .deep_symbolize_keys
   end
 end

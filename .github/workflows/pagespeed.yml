@@ -8,20 +8,31 @@ jobs:
   pagespeed:
     runs-on: ubuntu-latest
     steps:
+
     - uses: Azure/login@v1
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
-    - uses: Azure/get-keyvault-secrets@v1.2
-      id: azSecret
+
+    - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+      id: HTTP-USERNAME
       with:
-          keyvault: ${{ secrets.KEY_VAULT }}
-          secrets: 'HTTP-USERNAME, HTTP-PASSWORD'
+         keyvault: ${{ secrets.KEY_VAULT}}
+         yaml_secret: INFRA-KEYS
+         secret: HTTP-USERNAME
+
+    - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+      id: HTTP-PASSWORD
+      with:
+         keyvault: ${{ secrets.KEY_VAULT}}
+         yaml_secret: INFRA-KEYS
+         secret: HTTP-PASSWORD
+
     - name: Run Page Speed Tas
       uses: fjogeleit/http-request-action@master
       with:
         url: 'https://get-into-teaching-app-pagespeed.london.cloudapps.digital/pagespeed/run'
         method: 'POST'
-        username: ${{ steps.azSecret.outputs.HTTP-USERNAME }}
-        password: ${{ steps.azSecret.outputs.HTTP-PASSWORD }}
+        username: ${{ steps.HTTP-USERNAME.outputs.secret-value }}
+        password: ${{ steps.HTTP-PASSWORD.outputs.secret-value }}
         timeout: 3600000 # 1hr in ms
         preventFailureOnNoResponse: true

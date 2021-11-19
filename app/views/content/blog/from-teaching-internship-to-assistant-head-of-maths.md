@@ -4,6 +4,7 @@ date: "2021-07-05"
 images:
   ben_breen:
     path: "media/images/content/blog/ben-breen.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/ben-breen.jpg"
     alt: "A photograph of Ben Breen in his home office" 
 description: |-
   Within three years Ben Breen went from a teaching intern to the assistant head of maths.
@@ -62,4 +63,4 @@ One of the most rewarding moments of this year was when a student chose to come 
 
 One of the most gratifying things about being a teacher is when a student, who at 11 years old was asking you what would happen if there was no gravity, leaves school at 18 to do a physics, maths or engineering degree. You know you’ve shaped their life by making them passionate about your subject. I’ve also had cards at the end of one school year from students not going on to study anything to do with physics, but saying they would continue to read about and engage with it for the rest of their lives.
 
-_If you’ve been inspired by Ben’s story, find out more about how you can start your teaching career on the [Get Into Teaching website](/)._
+_If you’ve been inspired by Ben’s story, find out more about [career progression opportunities and teacher pay scales](/salaries-and-benefits#career-progression)._

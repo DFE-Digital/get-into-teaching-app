@@ -1,0 +1,125 @@
+<section class="landing youre-not-the-only-one-with-questions numbered">
+  <div class="arrow-container top mobile">
+    <%=
+      render ArrowComponent.new(
+        width: 150,
+        height: 200,
+        x1: 0,
+        y1: 0,
+        x2: 0.9,
+        y2: 0.9,
+        cx: 0.7,
+        cy: 0.2,
+        arrow_size: 0.06
+      )
+    %>
+  </div>
+
+  <div class="arrow-container top desktop">
+    <%=
+      render ArrowComponent.new(
+        width: 300,
+        height: 100,
+        x1: 0,
+        y1: 0,
+        x2: 0.9,
+        y2: 0.9,
+        cx: 0.3,
+        cy: 1,
+        arrow_size: 0.05
+      )
+    %>
+  </div>
+
+  <%= image_pack_tag("media/images/content/welcome-guide/girl-with-raised-hand.jpg", alt: "Classroom of pupils with their hands up") %>
+
+  <div class="section-number">
+    <span>04</span>
+  </div>
+
+  <div class="text">
+    <h2 class="blue">You're not the only one with questions.</h2>
+
+    <p class="blue">
+      We know you’re sure to have questions - maybe even a few concerns – about
+      teaching. It’s only natural. But you’re not alone. It’s a big decision
+      and every year, thousands of people like you ask the same questions.
+    </p>
+  </div>
+
+  <div class="questions">
+    <div class="intro">
+      Here’s what some recently qualified teachers have to say about
+      these questions.
+    </div>
+    <div class="questions-and-answers">
+      <div class="question-and-answer">
+        <p class="q">
+          What's the salary like?
+        </p>
+
+        <figure class="a">
+          <blockquote>I know some people worry about the pay, especially when they start out. But my career progression has been really fast. Becoming a teacher is worth it.</blockquote>
+
+          <figcaption>Jacqui</figcaption>
+        </figure>
+      </div>
+
+      <div class="question-and-answer">
+        <p class="q">
+          What’s the work balance like?
+        </p>
+
+        <figure class="a">
+          <blockquote>I sometimes do a couple of hours at the weekend so I'm ready for the week ahead. But I try to keep my weekends free to make sure I have some real downtime.</blockquote>
+
+          <figcaption>Sarah</figcaption>
+        </figure>
+      </div>
+
+      <div class="question-and-answer">
+        <p class="q">
+          Will I have the confidence?
+        </p>
+
+        <figure class="a">
+          <blockquote>At the start of my training I felt like I didn’t have the authority to be standing up here and asking them to behave a certain way for me&hellip; but it is a confidence thing and now going into my last placement, I feel completely confident with it&hellip; it just comes with time. There’s so much support along the way.</blockquote>
+
+          <figcaption>Amy</figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <div class="arrow-container bottom mobile">
+    <%=
+      render ArrowComponent.new(
+        width: 200,
+        height: 200,
+        x1: 1,
+        y1: 0,
+        x2: 0.1,
+        y2: 0.9,
+        cx: 0.3,
+        cy: 0.3,
+        arrow_size: 0.065
+      )
+    %>
+  </div>
+
+  <div class="arrow-container bottom desktop">
+    <%=
+      render ArrowComponent.new(
+        width: 500,
+        height: 400,
+        x1: 1,
+        y1: 0.25,
+        x2: 0.3,
+        y2: 0.85,
+        cx: 0.4,
+        cy: 0.1,
+        arrow_size: 0.04
+      )
+    %>
+  </div>
+</section>

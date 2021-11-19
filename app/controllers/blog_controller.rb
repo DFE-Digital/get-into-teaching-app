@@ -1,20 +1,25 @@
 class BlogController < ApplicationController
-  include StaticPages
-  around_action :cache_static_page, only: %i[show]
+  include PaginatablePosts
 
   layout "layouts/blog/index"
 
   def index
-    @front_matter = { title: "Get Into Teaching Blog" }
+    @front_matter = { "title" => "Get Into Teaching Blog" }
 
-    @posts = Pages::Blog.posts
+    @posts = paginate_posts(::Pages::Blog.posts)
   end
 
   def show
     breadcrumb "Blog", blog_index_path
 
-    @post = Pages::Blog.find(request.path)
+    @post = ::Pages::Blog.find(request.path)
 
     render template: @post.template, layout: "layouts/blog/post"
+  end
+
+protected
+
+  def static_page_actions
+    %i[show]
   end
 end

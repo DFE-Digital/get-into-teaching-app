@@ -10,7 +10,7 @@ resource "statuscake_test" "alert" {
   confirmations = each.value.confirmations
   custom_header = each.value.custom_header
   status_codes  = each.value.status_codes
-  basic_user    = data.azurerm_key_vault_secret.http_username.value
-  basic_pass    = data.azurerm_key_vault_secret.http_password.value
+  basic_user    = local.infrastructure_secrets.HTTP-USERNAME
+  basic_pass    = local.infrastructure_secrets.HTTP-PASSWORD
   test_tags     = ["GIT", "BETA"]
 }

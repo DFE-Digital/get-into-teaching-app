@@ -11,6 +11,7 @@ RSpec.describe CallsToAction::SimpleComponent, type: :component do
     let(:kwargs) { { icon: icon, title: title, text: text, link_text: link_text, link_target: link_target } }
 
     let(:component) { described_class.new(kwargs) }
+
     before { render_inline(component) }
 
     specify "renders the call to action" do

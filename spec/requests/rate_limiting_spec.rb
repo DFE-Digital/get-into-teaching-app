@@ -1,8 +1,8 @@
 require "rails_helper"
 
-describe "Rate limiting" do
-  include_context "stub types api"
-  include_context "stub candidate create access token api"
+describe "Rate limiting", type: :request do
+  include_context "with stubbed types api"
+  include_context "with stubbed candidate create access token api"
 
   let(:ip) { "1.2.3.4" }
 
@@ -80,7 +80,7 @@ describe "Rate limiting" do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:upsert_teaching_event).and_return event
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventBuildingsApi)
-        .to receive(:get_teaching_event_buildings) { [] }
+        .to receive(:get_teaching_event_buildings).and_return([])
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
         .to receive(:get_teaching_event).with(event[:id]) { build(:event_api) }
 

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   id="location_icon_small"
+   data-name="location icon small"
+   width="37"
+   height="59.49"
+   viewBox="0 0 37 59.49"
+   version="1.1"
+   sodipodi:docname="icon-pin.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs6" />
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="14.674735"
+     inkscape:cx="18.501186"
+     inkscape:cy="29.710929"
+     inkscape:window-width="2560"
+     inkscape:window-height="1371"
+     inkscape:window-x="0"
+     inkscape:window-y="32"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="location_icon_small" />
+  <path
+     id="Subtraction_10"
+     data-name="Subtraction 10"
+     d="M17.915,59.49v0L12.108,47.3V36.089A18.617,18.617,0,0,1,0,18.615,18.552,18.552,0,0,1,5.419,5.452a18.419,18.419,0,0,1,26.163,0,18.65,18.65,0,0,1-7.859,31.026V47.3L17.917,59.487ZM15.823,37.037v9.417l2.092,4.393,2.092-4.393V37.169c-.5.041-1.009.062-1.507.062A18.6,18.6,0,0,1,15.823,37.037ZM18.5,4.38A14.236,14.236,0,1,0,32.647,18.615,14.207,14.207,0,0,0,18.5,4.38Z"
+     fill="#db5393"
+     style="fill:#000000" />
+</svg>

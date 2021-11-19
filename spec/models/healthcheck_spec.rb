@@ -26,9 +26,6 @@ describe Healthcheck do
     end
   end
 
-  include_examples "reading git shas", "app_sha", "/etc/get-into-teaching-app-sha"
-  include_examples "reading git shas", "content_sha", "/etc/get-into-teaching-content-sha"
-
   before do
     stub_request(:get, "#{git_api_endpoint}/api/lookup_items/teaching_subjects")
       .to_return \
@@ -36,6 +33,9 @@ describe Healthcheck do
         headers: { "Content-type" => "application/json" },
         body: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map { |k, v| { id: v, value: k } }.to_json
   end
+
+  include_examples "reading git shas", "app_sha", "/etc/get-into-teaching-app-sha"
+  include_examples "reading git shas", "content_sha", "/etc/get-into-teaching-content-sha"
 
   describe "test_api" do
     subject { described_class.new.test_api }
@@ -57,7 +57,7 @@ describe Healthcheck do
 
     context "with an API error" do
       before do
-        expect_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
+        allow_any_instance_of(GetIntoTeachingApiClient::LookupItemsApi).to \
           receive(:get_teaching_subjects).and_raise(GetIntoTeachingApiClient::ApiError)
       end
 
@@ -66,17 +66,17 @@ describe Healthcheck do
   end
 
   describe "#test_redis" do
+    subject { described_class.new.test_redis }
+
     before do
       allow(ENV).to receive(:[]).and_call_original
       allow(ENV).to receive(:[]).with("REDIS_URL").and_return \
         "redis://localhost:6379/1"
     end
 
-    subject { described_class.new.test_redis }
-
     context "with working connection" do
       before do
-        allow(Redis).to receive(:current).and_return double(Redis, ping: "PONG")
+        allow(Redis).to receive(:current).and_return instance_double(Redis, ping: "PONG")
       end
 
       it { is_expected.to be true }
@@ -92,12 +92,14 @@ describe Healthcheck do
 
     context "with no configured connection" do
       before { allow(ENV).to receive(:[]).with("REDIS_URL").and_return nil }
+
       it { is_expected.to be nil }
     end
   end
 
   describe "#to_h" do
     subject { described_class.new.to_h }
+
     it { is_expected.to include :app_sha }
     it { is_expected.to include :content_sha }
     it { is_expected.to include :api }
@@ -106,6 +108,7 @@ describe Healthcheck do
 
   describe "#to_json" do
     subject { JSON.parse described_class.new.to_json }
+
     it { is_expected.to include "app_sha" }
     it { is_expected.to include "content_sha" }
     it { is_expected.to include "api" }

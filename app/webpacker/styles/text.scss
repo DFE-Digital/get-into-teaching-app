@@ -6,6 +6,19 @@
 h1 {
   @include font;
   @include font-size("large");
+
+  // Multi-line padded highlight effect without horizontal
+  // gabs between lines.
+  &.yellow {
+    margin: 0 1rem;
+
+    span {
+      box-decoration-break: clone;
+      padding: 0.15em 0;
+      background: $yellow-dark;
+      box-shadow: 1rem 0 0 $yellow-dark, -1rem 0 0 $yellow-dark;
+    }
+  }
 }
 
 h2 {
@@ -68,19 +81,23 @@ a {
     margin-left: 4px;
     vertical-align: middle;
   }
-}
 
-.telephone-number {
-  @include font;
-  color: $blue;
-  text-decoration: underline;
-  font-weight: bold;
-}
+  &:after {
+    @extend .fas;
+    @extend .fa-chevron-right;
 
-.telephone-number:hover {
-  text-decoration: none;
+    content: '';
+    width: 12px;
+    height: 19px;
+    margin-left: 8px;
+  }
 }
 
 .strong {
   font-weight: bold;
 }
+
+.extra-bottom-margin {
+  margin-bottom: 3em;
+}
+

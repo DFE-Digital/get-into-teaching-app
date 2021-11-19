@@ -2,6 +2,8 @@ require "rails_helper"
 
 describe Header::NavigationComponent, type: "component" do
   # these are built from the markdown frontmatter
+  subject! { render_inline(component) }
+
   let(:resources) do
     [OpenStruct.new(path: "/one", title: "One"), OpenStruct.new(path: "/two", title: "Two")]
   end
@@ -12,7 +14,6 @@ describe Header::NavigationComponent, type: "component" do
   end
 
   let(:component) { described_class.new(resources: resources, extra_resources: extra_resources) }
-  subject! { render_inline(component) }
 
   specify "renders a primary navigation list" do
     expect(page).to have_css("nav > ol.primary")
@@ -29,6 +30,8 @@ describe Header::NavigationComponent, type: "component" do
   end
 
   describe "rendering menus" do
+    subject! { render_inline(component) }
+
     let(:children) do
       [
         OpenStruct.new(path: "/five/part-one", title: "Five: part one"),
@@ -41,8 +44,6 @@ describe Header::NavigationComponent, type: "component" do
     end
 
     let(:component) { described_class.new(resources: resources) }
-
-    subject! { render_inline(component) }
 
     specify "the secondary navigatoin has right number of links" do
       expect(page).to have_css("ol.primary > li > ol.secondary > li", count: children.size)

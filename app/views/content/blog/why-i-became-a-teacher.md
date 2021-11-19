@@ -5,6 +5,7 @@ author: Giorgio Rubbo
 images:
   giorgio_rubbo:
     path: "media/images/content/blog/giorgio-rubbo.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/giorgio-rubbo.jpg"
     alt: "A photograph of biology teacher, Giorgio Rubbo"
 description: |-
   Giorgio Rubbo talks about what inspired him to become a teacher, his
@@ -32,7 +33,7 @@ My inspiration to teach was my love of biology and science in general. I am pass
 
 ## How did you find the application process?
 
-I found the application process long! It isn’t a difficult process but there are a lot of forms and hoops to jump through. My best advice would be to [get a Teacher Training Adviser](/tta-service), they are fantastically knowledgeable and helpful at all stages of the application. Another tip would be to make a list of all the things you need to do (there will be lots — UCAS forms, personal statements, finding GCSE and A Level Certificates, sorting referees out). Whilst I found the paperwork stages stressful, I found the interview process quite enjoyable! My best advice for a successful application is to be reflective in your personal statement and interview, think about why you want to teach, about the sort of classroom you envisage yourself in (and why) and talk about it!
+I found the application process long! It isn’t a difficult process but there are a lot of forms and hoops to jump through. My best advice would be to [get a Teacher Training Adviser](/tta-service), they are fantastically knowledgeable and helpful at all stages of the application. Another tip would be to make a list of all the things you need to do (there will be lots — application forms, personal statements, finding GCSE and A Level Certificates, sorting referees out). Whilst I found the paperwork stages stressful, I found the interview process quite enjoyable! My best advice for a successful application is to be reflective in your personal statement and interview, think about why you want to teach, about the sort of classroom you envisage yourself in (and why) and talk about it!
 
 ## What were your concerns prior to beginning the course
 

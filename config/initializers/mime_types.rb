@@ -2,3 +2,7 @@
 
 # Add new mime types for use in respond_to blocks:
 # Mime::Type.register "text/richtext", :rtf
+
+Rack::Mime::MIME_TYPES.merge!({
+  ".webp" => "image/webp",
+})

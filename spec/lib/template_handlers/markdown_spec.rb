@@ -98,9 +98,8 @@ describe TemplateHandlers::Markdown, type: :view do
       MARKDOWN
     end
 
-    before { view.instance_variable_set("@front_matter", original_front_matter) }
-
     before do
+      view.instance_variable_set("@front_matter", original_front_matter)
       stub_template "test.md" => markdown
       render template: "test"
     end
@@ -216,9 +215,6 @@ describe TemplateHandlers::Markdown, type: :view do
 
     before do
       allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_calls_to_action)
-    end
-
-    before do
       stub_template "page_with_rich_content.md" => markdown
       render template: "page_with_rich_content"
     end
@@ -237,8 +233,8 @@ describe TemplateHandlers::Markdown, type: :view do
       {
         "title": "Page with images",
         "images" => {
-          "black" => { "path" => "media/images/dfelogo-black.svg", "alt" => "Dark" },
-          "white" => { "path" => "media/images/dfelogo-white.svg", "alt" => "Light" },
+          "black" => { "path" => "media/images/dfelogo-black.svg", "other_attr" => "ignore", "alt" => "Dark" },
+          "white" => { "path" => "media/images/dfelogo-white.svg", "other_attr" => "ignore", "alt" => "Light" },
         },
       }
     end
@@ -257,9 +253,6 @@ describe TemplateHandlers::Markdown, type: :view do
 
     before do
       allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_images)
-    end
-
-    before do
       stub_template "page_with_rich_content.md" => markdown
       render template: "page_with_rich_content"
     end
@@ -269,7 +262,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
       %w[black white].each do |colour|
         expect(rendered).to have_css("img")
-        expect(rendered).to match(%r{src\=\"/packs-test/media/images/dfelogo-#{colour}-.*.svg\"})
+        expect(rendered).to match(%r{src\=\"/packs-test/v1/media/images/dfelogo-#{colour}-.*.svg\"})
         expect(rendered).to have_css(%(img[alt="#{front_matter_with_images.dig('images', colour, 'alt')}"]))
       end
     end

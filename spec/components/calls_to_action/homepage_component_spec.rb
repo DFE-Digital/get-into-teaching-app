@@ -11,6 +11,7 @@ RSpec.describe CallsToAction::HomepageComponent, type: :component do
     let(:kwargs) { { icon: icon, title: title, link_text: link_text, link_target: link_target, image: image } }
 
     let(:component) { described_class.new(kwargs) }
+
     before { render_inline(component) }
 
     specify "renders the call to action" do
@@ -31,7 +32,7 @@ RSpec.describe CallsToAction::HomepageComponent, type: :component do
     end
 
     specify "the image is present" do
-      expect(page.find(".call-to-action__image")["style"]).to include("packs-test/media/images/dfelogo")
+      expect(page.find(".call-to-action__image")["style"]).to include("packs-test/v1/media/images/dfelogo")
     end
   end
 end

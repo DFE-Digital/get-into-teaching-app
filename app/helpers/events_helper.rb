@@ -11,7 +11,7 @@ module EventsHelper
     if event.start_at.to_date == event.end_at.to_date
       safe_html_format(
         sprintf(
-          "%{startdate} #{stacked ? '<br />' : 'at'} %{starttime} - %{endtime}",
+          "%{startdate} #{stacked ? '<br>' : 'at'} %{starttime} - %{endtime}",
           startdate: event.start_at.to_date.to_formatted_s(:long),
           starttime: event.start_at.to_formatted_s(:time),
           endtime: event.end_at.to_formatted_s(:time),
@@ -38,7 +38,7 @@ module EventsHelper
   end
 
   def is_event_type?(event, type_name)
-    event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES.dig(type_name)
+    event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES[type_name]
   end
 
   def embed_event_video_url(video_url)
@@ -51,6 +51,10 @@ module EventsHelper
     else
       safe_format(description)
     end
+  end
+
+  def display_event_provider_info?(event)
+    !event.type_id.in?([qt_event_type_id, ttt_event_type_id])
   end
 
   def event_has_provider_info?(event)
@@ -80,7 +84,7 @@ module EventsHelper
     ajax_map(
       address,
       zoom: 10,
-      mapsize: [628, 420],
+      mapsize: [732, 490],
       title: event.name,
       description: address,
     )
@@ -125,5 +129,9 @@ module EventsHelper
 
   def ttt_event_type_id
     GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+  end
+
+  def qt_event_type_id
+    GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
   end
 end

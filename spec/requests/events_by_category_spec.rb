@@ -1,7 +1,7 @@
 require "rails_helper"
 
-describe "View events by category" do
-  include_context "stub types api"
+describe "View events by category", type: :request do
+  include_context "with stubbed types api"
 
   let(:expected_limit) { EventCategoriesController::MAXIMUM_EVENTS_IN_CATEGORY }
 
@@ -19,14 +19,15 @@ describe "View events by category" do
   end
 
   context "when viewing a category archive" do
+    subject { response }
+
     let(:category) { "online-q-as" }
+
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type) { events_by_type }
       get archive_event_category_path(category)
     end
-
-    subject { response }
 
     it { is_expected.to have_http_status :success }
     it { expect(response.body).to include "Past online Q&amp;As" }
@@ -43,13 +44,13 @@ describe "View events by category" do
   end
 
   context "when viewing a category" do
+    subject { response }
+
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type) { events_by_type }
       get event_category_path("train-to-teach-events")
     end
-
-    subject { response }
 
     it { is_expected.to have_http_status :success }
 
@@ -89,12 +90,12 @@ describe "View events by category" do
   context "when viewing the schools and university events category" do
     let(:start_after) { DateTime.now.utc.beginning_of_day }
     let(:start_before) { start_after.advance(months: 24).end_of_month }
-    let(:blank_search) { { postcode: nil, quantity_per_type: nil, radius: nil, start_after: start_after, start_before: start_before, type_id: nil } }
+    let(:blank_search) { { postcode: nil, quantity_per_type: nil, radius: nil, start_after: start_after, start_before: start_before, type_ids: nil } }
 
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_grouped_by_type).with(blank_search.merge(type_id: type_id, quantity_per_type: expected_limit))
+        receive(:search_teaching_events_grouped_by_type).with(blank_search.merge(type_ids: [type_id], quantity_per_type: expected_limit))
       get event_category_path("school-and-university-events")
     end
   end
@@ -104,12 +105,12 @@ describe "View events by category" do
     let(:radius) { 25 }
     let(:start_after) { DateTime.now.utc.beginning_of_day }
     let(:start_before) { start_after.advance(months: 24).end_of_month }
-    let(:filter) { { postcode: "TE57 1NG", quantity_per_type: nil, radius: radius, start_after: start_after, start_before: start_before, type_id: nil } }
+    let(:filter) { { postcode: "TE57 1NG", quantity_per_type: nil, radius: radius, start_after: start_after, start_before: start_before, type_ids: nil } }
 
     it "queries events for the correct category" do
       type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_grouped_by_type).with(filter.merge(type_id: type_id, quantity_per_type: expected_limit))
+        receive(:search_teaching_events_grouped_by_type).with(filter.merge(type_ids: [type_id], quantity_per_type: expected_limit))
       get event_category_path("school-and-university-events", events_search: { distance: radius, postcode: postcode })
     end
   end
@@ -163,10 +164,10 @@ describe "View events by category" do
     end
 
     context "when there are no results" do
+      subject { parsed_response.css(".no-results").first }
+
       let(:path) { event_category_path("train-to-teach-events") }
       let(:events) { [] }
-
-      subject { parsed_response.css(".no-results").first }
 
       it { is_expected.not_to be_nil }
       it { expect(subject.text).to include("Sorry your search has not found any events") }
@@ -174,11 +175,11 @@ describe "View events by category" do
   end
 
   context "when a category does not exist" do
+    subject { response }
+
     before do
       get event_category_path("non-existant")
     end
-
-    subject { response }
 
     it { is_expected.to have_http_status :not_found }
   end

@@ -1,6 +1,8 @@
 require "rails_helper"
 
 describe EmailFormatValidator do
+  subject { instance.errors.to_hash }
+
   let :test_model do
     Class.new do
       include ActiveModel::Model
@@ -14,7 +16,6 @@ describe EmailFormatValidator do
   end
 
   before { instance.valid? }
-  subject { instance.errors.to_hash }
 
   context "with invalid addresses" do
     %w[test.com test@@test.com test@test test@test.].each do |email|

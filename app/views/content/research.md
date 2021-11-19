@@ -5,6 +5,14 @@ description: |-
 date: "2021-05-17"
 image: false
 calls_to_action:
+  bringit-report:
+    name: attachment
+    arguments:
+      text: Read the summary of findings
+      file_path: media/documents/bringit-report.pdf
+      file_type: PDF
+      file_size: 258KB
+      published_at: 18 November 2021
   breakthrough-moments:
     name: attachment
     arguments:
@@ -97,6 +105,12 @@ calls_to_action:
 keywords:
   - Research
 ---
+
+## Bring it - exploring the extent to which people feel they can be themselves at work
+
+Kindred Agency commissioned Censuswide to carry out a survey on behalf of Get Into Teaching exploring the views of the working population in England. The purpose was to gain insights on how much people feel they can be themselves and express their true personality in their workplace.
+
+$bringit-report$
 
 ## Breakthrough Moments – exploring what personal achievement means to young adults
 

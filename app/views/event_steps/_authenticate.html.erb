@@ -1,1 +1,7 @@
+<%= tag.h1("Verify your email address") %>
+
 <%= render "wizard/steps/authenticate", f: f, email: event_session["email"], resend_verification_path: resend_verification_event_steps_path %>
+
+<% if event_session["is_walk_in"] %>
+<p>If you cannot access your verification code, you can still <%= link_to("continue without verifying your identity", event_step_path(params[:event_id], :authenticate, { skip_verification: true })) %>.</p>
+<% end %>

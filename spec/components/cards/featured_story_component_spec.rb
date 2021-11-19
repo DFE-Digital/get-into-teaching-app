@@ -13,17 +13,17 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
   end
 
   let(:frontmatter) { original }
-  let(:featured_page) { Pages::Page.new "/stories/featured", frontmatter }
+  let(:featured_page) { ::Pages::Page.new "/stories/featured", frontmatter }
   let(:page_data) { Pages::Data.new }
   let(:instance) { described_class.new card: {}, page_data: page_data }
 
-  before { allow(Pages::Page).to receive(:featured).and_return featured_page }
+  before { allow(::Pages::Page).to receive(:featured).and_return featured_page }
 
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }
   it { is_expected.to have_css ".card header", text: "Teacher's story" }
 
-  it { is_expected.to have_css 'img[src*="packs-test/media/images/dfelogo"][alt="A photograph of a teacher"]' }
+  it { is_expected.to have_css 'img[src*="packs-test/v1/media/images/dfelogo"][alt="A photograph of a teacher"]' }
   it { is_expected.to have_content "Page title" }
 
   it "includes the footer link" do

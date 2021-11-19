@@ -1,0 +1,41 @@
+<div class="teaching-event">
+  <header class="yellow">
+    <div class="breadcrumbs-and-heading">
+      <%= render Header::BreadcrumbComponent.new %>
+      <h1><%= @event.name %></h1>
+    </div>
+
+    <div class="event-details">
+      <%= render(partial: 'teaching_events/show/date-and-time') %>
+      <%= render(partial: 'teaching_events/show/location-and-setting') %>
+      <%= render(partial: 'teaching_events/show/register-button') if is_a_train_to_teach_event?(@event) %>
+    </div>
+
+    <div class="image">
+      <%= image_pack_tag("media/images/content/hero-images/0017.jpg", alt: "A photograph of the venue", class: "event-info__venue_img") %>
+    </div>
+
+    <div class="triangle yellow">
+      <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="0,100 0,0 100,0" />
+      </svg>
+    </div>
+  </header>
+
+  <section class="event-info">
+    <h2>What to expect from this event</h2>
+
+    <div class="event-summary">
+      <% if is_a_train_to_teach_event?(@event) %>
+        <%= render(partial: 'teaching_events/show/train-to-teach-event-summary') %>
+      <% else %>
+        <%= render(partial: 'teaching_events/show/event-summary') %>
+      <% end %>
+    </div>
+  </section>
+
+  <%= render(partial: "teaching_events/show/event-attributes") %>
+  <%= render(partial: "teaching_events/show/venue-information") if @event.building.present? %>
+  <%= render(partial: "teaching_events/show/scribble") if @event.scribble_id.present? %>
+  <%= render(partial: "teaching_events/show/what-theyre-saying") %>
+</div>

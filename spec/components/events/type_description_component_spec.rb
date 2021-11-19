@@ -1,9 +1,9 @@
 require "rails_helper"
 
 describe Events::TypeDescriptionComponent, type: "component" do
-  let(:type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
-
   subject! { render_inline(described_class.new(type)) }
+
+  let(:type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
 
   it "has a containing div" do
     expect(page).to have_css("div.type-description")

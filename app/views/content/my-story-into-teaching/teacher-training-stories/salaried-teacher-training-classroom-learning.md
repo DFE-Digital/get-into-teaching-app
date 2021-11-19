@@ -19,6 +19,10 @@ quote:
   q-nathan:
     text: Throughout my training year I was regularly supported by a mentor, who I met weekly
     inline: left
+calls_to_action:
+  ect:
+    name: ect
+    arguments: {}
 ---
 
 Salaried teacher training offered the best option for me, earning an income while I trained towards qualified teacher status (QTS). My course also included a postgraduate certificate in education (PGCE), and Masters-level credits.
@@ -38,3 +42,5 @@ Having the opportunity to teach in another school was a very valuable experience
 Most weeks during the first term I spent one day at university developing knowledge on how to improve my teaching against the teaching standards. This time was extremely useful, providing valuable ideas to take back and use instantly in the classroom.
 
 I gained a PGCE which included qualified teacher status and which I could use as the first third of a Master's degree. Teaching has always been an ambition of mine for as long as I can remember because I had such great role models as teachers at school. Without a salaried course, it would not have been possible.
+
+$ect$

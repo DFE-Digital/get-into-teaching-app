@@ -4,6 +4,7 @@ date: "2021-07-05"
 images:
   abigail_beeley:
     path: "media/images/content/blog/abigail-beeley.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/abigail-beeley.jpg"
     alt: "A photograph of Abigail Beeley in a classroom" 
 description: |-
   Abigail Beeley is a maths teacher at St John Fisher Catholic High School in
@@ -60,4 +61,9 @@ And finally, I do love the holidays! I try to switch off outside of term time an
 
 My advice for anyone thinking of getting into teaching is to remember that you will make a difference, even though it might be challenging at times! When pupils are in your classroom, you have the opportunity to grow their minds and improve their understanding of the world. You are responsible for helping pupils achieve the best possible outcomes and for inspiring them to build their resilience and determination.
 
-_If you’ve been inspired by Abigail’s story, find out more about how you can start your teaching career on the [Get Into Teaching website](/)._
+_For the first 2 years in the classroom, during their induction, teachers are called 'early career teachers' (ECTs). 
+It's a time when you get lots of extra support to help establish yourself as a teacher._
+
+_Induction used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs)._
+
+_If you’ve been inspired by Abigail’s story, find out more about [career progression opportunities and teacher pay scales](/salaries-and-benefits#career-progression)._

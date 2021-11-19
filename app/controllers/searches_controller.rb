@@ -17,7 +17,13 @@ private
   end
 
   def search_params
-    params.fetch(:search, {}).permit(:search)
+    search_param = params.fetch(:search, {})
+
+    # Covers the case when someone manually enters
+    # /search?search or /search?search= into the address bar.
+    return nil unless search_param.is_a?(ActionController::Parameters)
+
+    search_param.permit(:search)
   end
 
   def autocomplete_results(results)
