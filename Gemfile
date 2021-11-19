@@ -24,7 +24,7 @@ gem "foreman"
 gem "secure_headers"
 
 # Canonical meta tag
-gem "canonical-rails", ">= 0.2.12"
+gem "canonical-rails", ">= 0.2.13"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.3.1"
@@ -47,8 +47,8 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 4.7.3"
-gem "sentry-ruby", "~> 4.7.3"
+gem "sentry-rails", ">= 4.8.0"
+gem "sentry-ruby", "~> 4.8.0"
 
 gem "skylight", "~> 5.1.1"
 
@@ -58,7 +58,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.42.0"
+gem "view_component", "~> 2.43.1"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -76,10 +76,10 @@ gem "geometry", github: "bfoz/geometry", ref: "3054ccb"
 gem "victor"
 
 # Ignore cloudfront IPs when getting customer IP address
-gem "actionpack-cloudfront", ">= 1.1.0"
+gem "actionpack-cloudfront", ">= 1.2.0"
 
 # HTML-aware ERB parsing
-gem "better_html"
+gem "better_html", ">= 1.0.16"
 
 gem "dfe_wizard", github: "DFE-Digital/dfe_wizard"
 
@@ -102,14 +102,14 @@ group :development, :test do
   # Testing framework
   gem "rspec-rails", "~> 5.0.2"
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.36"
-  gem "factory_bot_rails", ">= 6.1.0"
+  gem "capybara", "~> 3.36", ">= 3.36.0"
+  gem "factory_bot_rails", ">= 6.2.0"
   gem "parallel_split_test"
   gem "rspec-sonarqube-formatter", "~> 1.5", require: false
   gem "simplecov"
 
   # Linting
-  gem "erb_lint", require: false
+  gem "erb_lint", ">= 0.1.1", require: false
   gem "mdl"
 end
 
