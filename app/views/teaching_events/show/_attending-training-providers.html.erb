@@ -1,0 +1,7 @@
+<% if @event.providers_list %>
+  <section class="attending-providers">
+    <h3>Providers attending this event:</h3>
+
+    <%= safe_html_format(@event.providers_list) %>
+  </section>
+<% end %>

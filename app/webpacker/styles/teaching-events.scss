@@ -511,8 +511,7 @@ $slightly-darker-grey: darken($grey, 10%);
     }
   }
 
-  .event-info,
-  .event-attributes {
+  section {
     max-width: 65rem;
     margin: 2em auto;
     padding-inline: 1em;
