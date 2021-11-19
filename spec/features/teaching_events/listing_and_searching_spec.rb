@@ -176,5 +176,16 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
     end
+
+    context "when no events are found" do
+      let(:event_count) { 0 }
+
+      scenario "a useful message is shown" do
+        visit teaching_events_path
+
+        expect(page).to have_css(".teaching-events__none", text: "No events found")
+        expect(page).to have_link("Sign up to be notified about events in your area", href: "/mailinglist/signup")
+      end
+    end
   end
 end

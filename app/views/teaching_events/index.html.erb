@@ -13,8 +13,14 @@
     </div>
 
     <% if @featured_events.blank? && @events.blank? %>
-      <div role="alert">
-        No events were found.
+      <div class="teaching-events__none" role="alert">
+        <div class="teaching-events__none--message">
+          <h3>
+            No events found.
+          </h3>
+
+          <a class="button" href="/mailinglist/signup">Sign up to be notified about events in your area</a>
+        </div>
       </div>
     <% else %>
       <div class="teaching-events__listing">

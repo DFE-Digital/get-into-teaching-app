@@ -90,6 +90,18 @@ $slightly-darker-grey: darken($grey, 10%);
     }
   }
 
+  &__none {
+    &--message {
+      padding: 1rem 1rem 2rem;
+      background: $grey;
+
+      h3 {
+        margin: 1em 0;
+        @include font-size(large);
+      }
+    }
+  }
+
   &__pagination {
     margin-inline: 1rem;
 
