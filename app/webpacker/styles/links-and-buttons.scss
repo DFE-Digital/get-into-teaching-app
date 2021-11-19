@@ -60,10 +60,6 @@ a {
     @include chevron($color: $black);
   }
 
-  &--black-chevron {
-    @include chevron($color: $black);
-  }
-
   &--nowrap {
     white-space: nowrap;
   }

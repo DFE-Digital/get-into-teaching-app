@@ -436,14 +436,8 @@ $slightly-darker-grey: darken($grey, 10%);
     &.yellow {
       background: $yellow;
 
-      .register .button {
-        background: $yellow;
-        color: $black;
-
-        &:focus {
-          color: $yellow;
-          background: $black;
-        }
+      .button:focus {
+        outline: 1px solid black;
       }
     }
 
@@ -486,16 +480,6 @@ $slightly-darker-grey: darken($grey, 10%);
         display: inline-block;
         border-bottom: 1px solid black;
         padding-bottom: 1em;
-      }
-
-      .register {
-        .button {
-          outline: 1px solid black;
-
-          &:hover {
-            outline: 2px solid black;
-          }
-        }
       }
     }
 
