@@ -449,10 +449,14 @@ $slightly-darker-grey: darken($grey, 10%);
       flex-direction: column;
       justify-content: space-between;
 
-      .breadcrumbs > .breadcrumb > ol {
-        margin-top: 0;
-        margin-left: 0;
-        padding-left: 0;
+      .breadcrumbs {
+        margin-top: .5em;
+
+        > .breadcrumb > ol {
+          margin-top: 0;
+          margin-left: 0;
+          padding-left: 0;
+        }
       }
 
       h1 {
