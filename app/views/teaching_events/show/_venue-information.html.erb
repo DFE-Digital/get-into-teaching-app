@@ -3,10 +3,11 @@
     <h3>Venue information</h3>
 
     <p>
-      <%= @event.building.venue %>
-      <%= @event.building.address_postcode %>
+      <%= @event.building.venue %>,
+      <%= event_address(@event) %>
     </p>
   </div>
+
   <% if @event.building.image_url %>
     <div class="venue-image">
       <%= image_tag(@event.building.image_url, alt: @event.building.venue) %>
