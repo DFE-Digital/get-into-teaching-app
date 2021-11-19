@@ -41,7 +41,7 @@ keywords:
 
 ## Who is iQTS for?
 
-iQTS is a teaching qualification designed for UK and non-UK citizens living outside the UK. If you are a UK or non-UK citizen living in England, you should [apply for teacher training in England](https://getintoteaching.education.gov.uk/steps-to-become-a-teacher). 
+iQTS is a teaching qualification designed for UK and non-UK citizens living outside the UK. If you are a UK or non-UK citizen living in England, you should [apply for teacher training in England](/steps-to-become-a-teacher). 
 
 iQTS is for you if:
  
@@ -141,9 +141,9 @@ Learn more about [iQTS policy](https://www.gov.uk/government/publications/intern
 
 Learn more about [other routes to qualified teacher status (QTS)and teaching in England](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk#apply-to-the-teaching-regulation-agency-tra).
 
-[Come to England to teach if you're a teacher from outside the UK](https://getintoteaching.education.gov.uk/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) gives information and advice to international teachers who’d like to teach in England.
+[Come to England to teach if you're a teacher from outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) gives information and advice to international teachers who’d like to teach in England.
 
-If you already live in the UK, you should consider [applying for teacher training leading to QTS in England](https://getintoteaching.education.gov.uk/steps-to-become-a-teacher). 
+If you already live in the UK, you should consider [applying for teacher training leading to QTS in England](/steps-to-become-a-teacher). 
 
 This guidance relates to teaching in England. Different rules apply to teaching in [Wales](https://www.ewc.wales/site/index.php/en/registration/practitioners-trained-outside-wales.html), [Scotland](https://teachinscotland.scot/become-a-teacher/qualified-outside-scotland/) and [Northern Ireland](https://gtcni.org.uk/registration/getting-registered).
 
