@@ -30,20 +30,27 @@ jobs:
           yaml_secret: INFRA-KEYS
           secret: SLACK-WEBHOOK
 
-      - name: Check for broken links
+      - name: List Broken Links
+        run: |
+              docker run -t --rm -e RAILS_ENV=test -v ${PWD}/out:/app/out  ${{ env.DOCKER_REPOSITORY }}:master  rspec --format json \
+                            --out /app/out/result.json -t onschedule spec/features/external_links_spec.rb || true
+
+      - name: Process broken links
         id:   links
         shell: pwsh
         run: |
-              echo '::set-output name=urls::""'
-              bundle exec rspec --format json --out result.json -t onschedule spec/features/external_links_spec.rb
-              $results=$(Get-Content result.json | ConvertFrom-Json )
+              echo "::set-output name=urls::''"
+              $results=$(Get-Content ${PWD}/out/result.json | ConvertFrom-Json )
+              echo "Test results are:" $results.summary_line
               $failures=$( $results.examples | where { $_.status -eq "failed" } )
-              [regex]$regex = '(http[s]?|[s]?ftp[s]?)(:\/\/)([^\s,]+")
-              $links=$( $regex.Matches($failures.exception.message).Value -replace '/"' , '' | get-unique )
-              echo '::set-output name=urls::$links'
+              echo "Failures are:" $failures.full_description
+              [regex]$regex = '(http[s]?|[s]?ftp[s]?)(:\/\/)([^\s,]+")'
+              $links=$( $regex.Matches($failures.exception.message).Value | get-unique ) -replace '"' 
+              echo "Links are:" $links
+              echo "::set-output name=urls::$links"
 
       - name: Slack Notification
-        if: steps.links.outputs.urls != ""
+        if: steps.links.outputs.urls != ''
         uses: rtCamp/action-slack-notify@master
         env:
           SLACK_COLOR: ${{env.SLACK_ERROR}}
