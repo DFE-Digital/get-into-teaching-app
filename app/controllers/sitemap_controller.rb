@@ -23,6 +23,8 @@ private
     Nokogiri::XML::Builder.new(encoding: "UTF-8") do |xml|
       xml.urlset(xmlns: "http://www.sitemaps.org/schemas/sitemap/0.9") do
         published_pages.each do |path, metadata|
+          next if metadata[:noindex]
+
           xml.url do
             xml.loc(request.base_url + page_location(path))
             xml.lastmod(metadata.fetch(:date) { DEFAULT_LASTMOD })

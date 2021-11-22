@@ -14,7 +14,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
   include_context "with stubbed types api"
 
   let(:other_paths) { %w[/ /blog /search /tta-service /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
-  let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}] }
+  let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}, %r{/test}] }
 
   before do
     # we don't care about the contents of the events pages here, just
