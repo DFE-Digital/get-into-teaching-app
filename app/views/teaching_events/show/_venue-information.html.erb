@@ -3,11 +3,14 @@
     <h3>Venue information</h3>
 
     <p>
-      <%= @event.building.venue %>
-      <%= @event.building.address_postcode %>
+      <%= @event.building.venue %>,
+      <%= event_address(@event) %>
     </p>
   </div>
-  <div class="venue-image">
-    <%= image_pack_tag "media/images/content/blog/seminar-room.jpg", alt: "A seminar with people sitting around a large table looking at a whiteboard" %>
-  </div>
+
+  <% if @event.building.image_url %>
+    <div class="venue-image">
+      <%= image_tag(@event.building.image_url, alt: @event.building.venue) %>
+    </div>
+  <% end %>
 </section>

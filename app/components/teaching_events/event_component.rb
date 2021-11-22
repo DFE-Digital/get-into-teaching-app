@@ -28,7 +28,7 @@ module TeachingEvents
     end
 
     def in_person?
-      @in_person
+      @in_person && !online?
     end
 
     def event_type
