@@ -3,6 +3,8 @@ module Content
     attr_reader :path, :alt
 
     def initialize(path:, alt:)
+      super
+
       @path = path
       @alt  = alt
     end

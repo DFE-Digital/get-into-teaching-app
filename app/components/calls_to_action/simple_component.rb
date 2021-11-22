@@ -3,6 +3,8 @@ module CallsToAction
     attr_accessor :icon, :title, :text, :link
 
     def initialize(icon:, link_text:, link_target:, title: nil, text: nil, hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
+      super
+
       @icon_filename = icon
       @title         = title
       @text          = text

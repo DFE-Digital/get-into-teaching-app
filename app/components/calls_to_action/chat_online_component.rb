@@ -3,6 +3,8 @@ module CallsToAction
     attr_accessor :title, :text, :button_text
 
     def initialize(title: default_title, text: default_text, button_text: default_button_text)
+      super
+
       @title       = title
       @text        = text
       @button_text = button_text

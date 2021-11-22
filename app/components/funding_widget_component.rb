@@ -4,6 +4,8 @@ class FundingWidgetComponent < ViewComponent::Base
   attr_reader :path, :form
 
   def initialize(form, path)
+    super
+
     @form = form
     @path = path
   end

@@ -3,6 +3,8 @@ module Header
     attr_reader :resources, :extra_resources
 
     def initialize(resources: nil, extra_resources: {})
+      super
+
       @resources       = resources
       @extra_resources = build_additional_resource_nodes(extra_resources)
     end

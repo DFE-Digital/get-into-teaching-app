@@ -11,6 +11,8 @@ module Content
       hang: "left",
       inline: nil
     )
+      super
+
       @text = text
       @name = name
       @job_title = job_title

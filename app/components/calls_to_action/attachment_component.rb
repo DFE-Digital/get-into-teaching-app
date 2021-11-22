@@ -4,6 +4,8 @@ class CallsToAction::AttachmentComponent < ViewComponent::Base
   attr_reader :text, :file_path, :file_type, :file_size, :published_at, :updated_at
 
   def initialize(text:, file_path:, file_type: nil, file_size: nil, published_at: nil, updated_at: nil)
+    super
+
     @text = text
     @file_path = file_path
     @file_type = file_type
