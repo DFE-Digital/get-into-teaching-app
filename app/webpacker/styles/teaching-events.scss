@@ -36,6 +36,23 @@ $slightly-darker-grey: darken($grey, 10%);
     p {
       padding: 0 1rem;
     }
+
+    details {
+      padding: 0 1rem;
+
+      summary {
+        color: $blue-dark;
+        text-decoration: underline;
+      }
+
+      dl {
+        dt { font-weight: bold; }
+
+        dl + dt {
+          margin-top: 1em;
+        }
+      }
+    }
   }
 
   @include mq($from: desktop) {
