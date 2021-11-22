@@ -21,7 +21,7 @@ describe StructuredDataHelper, type: "helper" do
     end
 
     it "returns nil when not set in config" do
-      disable_structured_data(:type, nil)
+      disable_structured_data(:type, value: nil)
       expect(script_tag).to be_nil
     end
 
@@ -410,7 +410,7 @@ describe StructuredDataHelper, type: "helper" do
       receive(type).and_return(true)
   end
 
-  def disable_structured_data(type, value = false)
+  def disable_structured_data(type, value: false)
     allow(Rails.application.config.x.structured_data).to \
       receive(type) { value }
   end
