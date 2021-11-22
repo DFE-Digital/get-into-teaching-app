@@ -9,5 +9,10 @@
 
   a {
     word-break: break-all;
+
+    &.button {
+      color: $white;
+      margin-bottom: 0;
+    }
   }
 }
