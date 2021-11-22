@@ -21,39 +21,34 @@ keywords:
   - oak national academy
 ---
 
-School experience can help you decide whether teaching is right for you.
+School experience allows you to learn more about teaching by visiting schools. 
 
-Spending some time in a school allows you to:
+It can help you:
 
-* observe a range of lessons and other teacher responsibilities
-* talk to teachers
-* get an insight into day-to-day school life
+* observe lessons
+* see how teachers manage a classroom
+* find out how specific subjects are taught
+* speak to teachers and interact with pupils
+* learn more about teacher training - including the application and interview process
 
-To find school experience you can:
+## Find school experience
 
-* [find a school offering experience through GOV.UK](https://schoolexperience.education.gov.uk/)
-* approach schools yourself
+Use the [Get school experience service](https://schoolexperience.education.gov.uk/) to search for and request experience in England.
 
-Many schools offer virtual experience. This could include talking to teachers and reviewing videos of lessons, for example.
-
-## Approach schools yourself
-
-[Find schools near you](https://get-information-schools.service.gov.uk/) and give them a ring to find out who to talk to about getting school experience.
-
-It's normal to have to try a few schools before you find one that can help.
-
-They may be limiting visitors due to coronavirus (COVID-19) and may need to organise a [DBS check](https://www.gov.uk/government/organisations/disclosure-and-barring-service/about).
-
-Be flexible with your availability if possible and persevere with your search.
+If you cannot find what you’re looking for, you can contact schools yourself. [Find schools near you](https://get-information-schools.service.gov.uk/) and give them a ring to find out who to talk to about getting school experience. They may ask you to have a DBS check before attending.
 
 ## Maths or physics teaching internships
 
-You may be eligible for a [maths or physics teaching internship earning £300 a week if you're doing a undergraduate degree in science, technology, engineering or maths](/teaching-internship-providers).
+You may be eligible for a [maths or physics teaching internship](/teaching-internship-providers) earning £300 a week if you're doing a undergraduate degree in science, technology, engineering or maths.
 
-## If you cannot get into the classroom right now
+## Attend teaching events
+
+[Teaching events](/events) can also give you an insight into teaching. You can find Train to Teach events, online ‘Q and A’ sessions as well as university events.
+
+## Watch pre-recorded lessons
 
 [Observe teachers’ lessons and analysis of their lessons on the Oak National Academy website](https://teachers.thenational.academy/lessons-for-itt).
 
 These videos are not a claim of best practice but can help you get to know teaching better.
 
-[Events](/events) can also give you an insight into teaching.
+
