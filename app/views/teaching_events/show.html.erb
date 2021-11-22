@@ -23,6 +23,12 @@
   </header>
 
   <section class="event-info">
+    <% if @event.message %>
+      <div class="event-alert">
+        <%= tag.p(@event.message) %>
+      </div>
+    <% end %>
+
     <h2>What to expect from this event</h2>
 
     <div class="event-summary">

@@ -539,6 +539,19 @@ $slightly-darker-grey: darken($grey, 10%);
       }
     }
 
+    .event-alert {
+      background-color: $purple;
+      color: $white;
+      max-width: 65ch;
+      padding: .5em;
+      margin: auto;
+
+      p {
+        padding: .2em 1em;
+        @include font-size(small);
+      }
+    }
+
     .event-summary {
       display: flex;
       flex-direction: column;
