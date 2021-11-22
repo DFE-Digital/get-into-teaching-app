@@ -290,6 +290,8 @@ GEM
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
       racc (~> 1.4)
+    nokogiri (1.12.5-x86_64-linux)
+      racc (~> 1.4)
     observer (0.1.1)
     os (1.1.1)
     parallel (1.20.1)
@@ -470,7 +472,7 @@ GEM
     view_component (2.43.1)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
-    web-console (4.1.0)
+    web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
@@ -558,7 +560,7 @@ DEPENDENCIES
   tzinfo-data
   victor
   view_component (~> 2.43.1)
-  web-console (>= 4.1.0)
+  web-console (>= 4.2.0)
   webmock (>= 3.14.0)
   webpacker (>= 5.4.3)
 
