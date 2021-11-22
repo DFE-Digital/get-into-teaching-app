@@ -87,3 +87,6 @@ RSpec/LeadingSubject:
 
 RSpec/NestedGroups:
   Max: 6
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 15
