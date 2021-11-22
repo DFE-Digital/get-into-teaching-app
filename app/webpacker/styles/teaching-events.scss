@@ -648,6 +648,13 @@ $slightly-darker-grey: darken($grey, 10%);
     }
   }
 
+  .attending-providers {
+    div {
+      max-width: 65ch;
+      margin: auto;
+    }
+  }
+
   .event-attributes {
     display: grid;
     display: flex;
@@ -833,6 +840,7 @@ $slightly-darker-grey: darken($grey, 10%);
 }
 
 .what-theyre-saying {
+  margin-top: 4em;
   display: grid;
   background: $yellow;
 
