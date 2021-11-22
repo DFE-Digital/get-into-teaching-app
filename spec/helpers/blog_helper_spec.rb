@@ -21,7 +21,7 @@ describe BlogHelper, type: "helper" do
     end
 
     specify "initializes an Content::ImageComponent with the attributes from the first image" do
-      expect(image_component).to receive(:new).with(path: "one.jpg", alt: "a nice image").and_return(inline: "doesn't matter")
+      allow(image_component).to receive(:new).with(path: "one.jpg", alt: "a nice image").and_return(inline: "doesn't matter")
 
       thumbnail_image_from_post(images)
     end
@@ -32,7 +32,7 @@ describe BlogHelper, type: "helper" do
       end
 
       specify "initializes an Content::ImageComponent with the thumbnail_path" do
-        expect(image_component).to receive(:new).with(path: "thumbnail.jpg", alt: "a nice image").and_return(inline: "doesn't matter")
+        allow(image_component).to receive(:new).with(path: "thumbnail.jpg", alt: "a nice image").and_return(inline: "doesn't matter")
 
         thumbnail_image_from_post(images)
       end
