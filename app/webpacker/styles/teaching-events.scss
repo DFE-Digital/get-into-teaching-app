@@ -40,6 +40,23 @@
     p {
       padding: 0 1rem;
     }
+
+    details {
+      padding: 0 1rem;
+
+      summary {
+        color: $blue;
+        text-decoration: underline;
+      }
+
+      dl {
+        dt { font-weight: bold; }
+
+        dl + dt {
+          margin-top: 1em;
+        }
+      }
+    }
   }
 
   @include mq($from: desktop) {
