@@ -92,7 +92,7 @@ shared_examples "an issue verification code with wizard step" do
       allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
       wizardstore["candidate_id"] = "abc123"
       wizardstore["extra_data"] = "data"
-      subject.save
+      subject.save!
       expect(wizardstore.to_hash).to eq(subject.attributes.merge({
         "authenticate" => true,
         "matchback_failures" => 0,
@@ -103,7 +103,7 @@ shared_examples "an issue verification code with wizard step" do
     context "when invalid" do
       it "does not call the API" do
         subject.email = nil
-        subject.save
+        subject.save!
         expect_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).not_to receive(:create_candidate_access_token)
         expect(wizardstore["authenticate"]).to be_falsy
         expect(wizardstore["matchback_failures"]).to be_nil
@@ -114,7 +114,7 @@ shared_examples "an issue verification code with wizard step" do
     context "when an existing candidate" do
       it "sends verification code and sets authenticate to true" do
         allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
-        subject.save
+        subject.save!
         expect(wizardstore["authenticate"]).to be_truthy
         expect(wizardstore["matchback_failures"]).to eq(0)
         expect(wizardstore["last_matchback_failure_code"]).to be_nil
@@ -126,7 +126,7 @@ shared_examples "an issue verification code with wizard step" do
       expect(Rails.logger).not_to receive(:info).with("#{described_class} potential duplicate (response code 404)")
       allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
         .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 404))
-      subject.save
+      subject.save!
       expect(wizardstore["authenticate"]).to be_falsy
       expect(wizardstore["matchback_failures"]).to eq(1)
       expect(wizardstore["last_matchback_failure_code"]).to eq(404)
@@ -137,7 +137,7 @@ shared_examples "an issue verification code with wizard step" do
       expect(Rails.logger).to receive(:info).with("#{described_class} potential duplicate (response code 500)")
       allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to receive(:create_candidate_access_token).with(request)
         .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 500))
-      subject.save
+      subject.save!
       expect(wizardstore["authenticate"]).to be_falsy
       expect(wizardstore["matchback_failures"]).to eq(1)
       expect(wizardstore["last_matchback_failure_code"]).to eq(500)
@@ -161,7 +161,7 @@ shared_examples "an issue verification code with wizard step" do
         receive(:create_candidate_access_token).with(request)
         .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 404))
 
-      subject.save
+      subject.save!
       expect(wizardstore["authenticate"]).to be_falsy
       expect(wizardstore["matchback_failures"]).to eq(1)
       expect(wizardstore["last_matchback_failure_code"]).to eq(404)
@@ -170,14 +170,14 @@ shared_examples "an issue verification code with wizard step" do
         receive(:create_candidate_access_token).with(request)
         .and_raise(GetIntoTeachingApiClient::ApiError.new(code: 500))
 
-      subject.save
+      subject.save!
       expect(wizardstore["matchback_failures"]).to eq(2)
       expect(wizardstore["last_matchback_failure_code"]).to eq(500)
 
       allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
         receive(:create_candidate_access_token).with(request)
 
-      subject.save
+      subject.save!
       expect(wizardstore["authenticate"]).to be_truthy
       expect(wizardstore["matchback_failures"]).to eq(2)
     end

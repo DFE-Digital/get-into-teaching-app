@@ -27,7 +27,7 @@ module Internal
     def new
       if params[:duplicate]
         @event = get_event_by_id(params[:duplicate])
-        @event.assign_attributes(NILIFY_ON_DUPLICATE.to_h { |attribute| [attribute, nil] })
+        @event.assign_attributes(NILIFY_ON_DUPLICATE.index_with { |_attribute| nil })
       else
         @event_type = determine_event_type_from_name(params[:event_type])
         @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
@@ -63,7 +63,7 @@ module Internal
       events = GetIntoTeachingApiClient::TeachingEventsApi
                  .new
                  .search_teaching_events_grouped_by_type(quantity_per_type: 1_000,
-                                                         start_after: DateTime.now.utc.beginning_of_day,
+                                                         start_after: Time.zone.now.utc.beginning_of_day,
                                                          status_ids: [open_event_status_id],
                                                          type_ids: [event_types[:provider], event_types[:online]])
 
@@ -133,7 +133,7 @@ module Internal
       {
         type_ids: [event_type],
         status_ids: [pending_event_status_id],
-        start_after: DateTime.now.utc.beginning_of_day,
+        start_after: Time.zone.now.utc.beginning_of_day,
         quantity_per_type: 1_000,
       }
     end

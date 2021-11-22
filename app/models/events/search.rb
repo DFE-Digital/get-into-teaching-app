@@ -95,11 +95,11 @@ module Events
     end
 
     def month_at_index(index)
-      DateTime.now.utc.advance(months: index)
+      Time.zone.now.utc.advance(months: index)
     end
 
     def today_start_of_month?
-      DateTime.now.utc.day == 1
+      Time.zone.now.utc.day == 1
     end
 
     def query_events_api(limit)
@@ -116,7 +116,7 @@ module Events
     def start_of_month
       return earliest_date_for_period if month.blank?
 
-      date = DateTime.parse("#{month}-01 00:00:00").in_time_zone("UTC")
+      date = Time.zone.parse("#{month}-01 00:00:00").in_time_zone("UTC")
 
       [date.beginning_of_month, earliest_date_for_period].max
     end
@@ -129,7 +129,7 @@ module Events
 
     def earliest_date_for_period
       if future?
-        DateTime.now.utc.beginning_of_day
+        Time.zone.now.utc.beginning_of_day
       else
         month_at_index(month_range.last).beginning_of_month
       end
@@ -139,7 +139,7 @@ module Events
       if future?
         month_at_index(month_range.last).end_of_month
       else
-        DateTime.now.utc.advance(days: -1).end_of_day
+        Time.zone.now.utc.advance(days: -1).end_of_day
       end
     end
   end

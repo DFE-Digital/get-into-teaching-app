@@ -16,13 +16,11 @@ module TemplateHandlers
       end
 
       def global_front_matter
-        @global_front_matter ||= begin
-          if GLOBAL_FRONT_MATTER.exist?
-            YAML.load_file GLOBAL_FRONT_MATTER
-          else
-            {}
-          end
-        end
+        @global_front_matter ||= if GLOBAL_FRONT_MATTER.exist?
+                                   YAML.load_file GLOBAL_FRONT_MATTER
+                                 else
+                                   {}
+                                 end
       end
     end
 

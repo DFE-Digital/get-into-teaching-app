@@ -105,7 +105,7 @@ module EventsHelper
 
   def past_category_name(type_id)
     t "event_types.#{type_id}.name.past",
-      default: "Past " + pluralised_category_name(type_id)
+      default: "Past #{pluralised_category_name(type_id)}"
   end
 
   def display_no_ttt_events_message?(performed_search, events, event_search_type)

@@ -82,10 +82,10 @@ shared_context "with stubbed upcoming events by category api" do |results_per_ty
   let(:expected_request_attributes) do
     {
       quantity_per_type: results_per_type,
-      start_after: DateTime.now.utc.beginning_of_day,
+      start_after: Time.zone.now.utc.beginning_of_day,
     }
   end
-  before { travel_to(DateTime.new(2020, 11, 1, 10)) }
+  before { travel_to(Time.zone.local(2020, 11, 1, 10)) }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \

@@ -80,7 +80,7 @@ describe Internal::EventsController, type: :request do
                   .with({
                     type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]],
                     status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
-                    start_after: DateTime.now.utc.beginning_of_day,
+                    start_after: Time.zone.now.utc.beginning_of_day,
                     quantity_per_type: 1_000,
                   })
                   .and_return provider_events_by_type
@@ -94,7 +94,7 @@ describe Internal::EventsController, type: :request do
                   .with({
                     type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]],
                     status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
-                    start_after: DateTime.now.utc.beginning_of_day,
+                    start_after: Time.zone.now.utc.beginning_of_day,
                     quantity_per_type: 1_000,
                   })
                   .and_return online_events_by_type
@@ -662,7 +662,7 @@ describe Internal::EventsController, type: :request do
                   type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
                              GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]],
                   status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]],
-                  start_after: DateTime.now.utc.beginning_of_day,
+                  start_after: Time.zone.now.utc.beginning_of_day,
                   quantity_per_type: 1_000,
                 })
                 .and_return events_by_type

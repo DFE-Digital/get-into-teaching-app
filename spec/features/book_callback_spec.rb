@@ -5,8 +5,8 @@ RSpec.feature "Book a callback", type: :feature do
 
   let(:quota) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
-      startAt: DateTime.new(2099, 6, 1, 10),
-      endAt: DateTime.new(2099, 6, 1, 11),
+      startAt: Time.zone.local(2099, 6, 1, 10),
+      endAt: Time.zone.local(2099, 6, 1, 11),
     )
   end
 

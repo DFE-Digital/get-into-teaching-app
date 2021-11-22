@@ -9,7 +9,7 @@ module GroupedCards
     end
 
     def group_link_anchor(group)
-      "group--" + group.parameterize
+      "group--#{group.parameterize}"
     end
 
     def items(group)

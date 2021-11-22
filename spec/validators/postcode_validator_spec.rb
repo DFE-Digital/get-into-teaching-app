@@ -7,6 +7,7 @@ describe PostcodeValidator do
     Class.new do
       include ActiveModel::Model
       attr_accessor :postcode, :accept_partial_postcode
+
       validates :postcode, postcode: { accept_partial_postcode: :accept_partial_postcode }
 
       def self.model_name

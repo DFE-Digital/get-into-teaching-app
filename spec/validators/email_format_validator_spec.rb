@@ -7,6 +7,7 @@ describe EmailFormatValidator do
     Class.new do
       include ActiveModel::Model
       attr_accessor :email
+
       validates :email, email_format: true
 
       def self.model_name

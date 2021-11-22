@@ -2,7 +2,7 @@ module CallsToAction
   class SimpleComponent < ViewComponent::Base
     attr_accessor :icon, :title, :text, :link
 
-    def initialize(icon:, title: nil, text: nil, link_text:, link_target:, hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
+    def initialize(icon:, link_text:, link_target:, title: nil, text: nil, hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
       @icon_filename = icon
       @title         = title
       @text          = text

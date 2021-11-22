@@ -3,7 +3,7 @@
 class SingleQuestionSurveyComponent < ViewComponent::Base
   attr_reader :question, :hint, :answers
 
-  def initialize(question:, hint: "", answers:)
+  def initialize(question:, answers:, hint: "")
     @question = question
     @hint = hint
     @answers = answers

@@ -47,7 +47,7 @@ module Events
       events_api
         .search_teaching_events_grouped_by_type(
           quantity_per_type: limit,
-          start_after: DateTime.now.utc.beginning_of_day,
+          start_after: Time.zone.now.utc.beginning_of_day,
         )
         .index_by(&:type_id)
         .transform_values(&:teaching_events)

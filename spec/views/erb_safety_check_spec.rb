@@ -2,7 +2,7 @@ require "better_html"
 require "better_html/test_helper/safe_erb_tester"
 require "rails_helper"
 
-describe "ERB Safety Check" do # rubocop:disable RSpec/DescribeClass
+describe "ERB Safety Check" do
   include BetterHtml::TestHelper::SafeErbTester
 
   erb_glob = Rails.root.join(

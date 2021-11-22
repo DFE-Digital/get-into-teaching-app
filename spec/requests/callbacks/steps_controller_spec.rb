@@ -73,7 +73,7 @@ describe Callbacks::StepsController, type: :request do
             receive(:book_callback).and_return true
 
           allow_any_instance_of(Callbacks::Steps::Callback).to \
-            receive(:phone_call_scheduled_at) { DateTime.new(2021, 1, 1, 10) }
+            receive(:phone_call_scheduled_at) { Time.zone.local(2021, 1, 1, 10) }
 
           steps.each do |step|
             allow_any_instance_of(step).to receive(:valid?).and_return true
