@@ -229,8 +229,27 @@ describe EventsController, type: :request do
         context "when the event is a 'Pending event'" do
           let(:event) { build(:event_api, :pending, web_feed_id: nil) }
 
-          it { expect(response).to have_http_status :success }
+          it { expect(response).to have_http_status :not_found }
           it { expect(response.body).to include("Unfortunately, that event has already happened.") }
+        end
+
+        event_types_with_archive = GetIntoTeachingApiClient::Constants::EVENT_TYPES_WITH_ARCHIVE
+        event_types_with_archive.each do |type, id|
+          context "when the event is a past #{type} type" do
+            let(:event) { build(:event_api, type_id: id, start_at: DateTime.now.utc - 1.day) }
+
+            it { expect(response).to have_http_status :success }
+            it { expect(response.body).to include(event.name) }
+          end
+        end
+
+        GetIntoTeachingApiClient::Constants::EVENT_TYPES.except(*event_types_with_archive.keys).each do |type, id|
+          context "when the event is a past #{type} type" do
+            let(:event) { build(:event_api, type_id: id, start_at: DateTime.now.utc - 1.day) }
+
+            it { expect(response).to have_http_status :not_found }
+            it { expect(response.body).to include("Unfortunately, that event has already happened.") }
+          end
         end
 
         it "has a meta description" do
@@ -255,7 +274,7 @@ describe EventsController, type: :request do
         get(event_path(id: event_readable_id))
       end
 
-      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_http_status :not_found }
       it { expect(response.body).to include("Unfortunately, that event has already happened.") }
     end
   end

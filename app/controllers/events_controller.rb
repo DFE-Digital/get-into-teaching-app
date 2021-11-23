@@ -31,7 +31,7 @@ class EventsController < ApplicationController
     breadcrumb "events.search", :events_path
 
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-    render_not_found && return if @event.status_id == pending_event_status_id
+    render_not_found && return unless viewable_event?(@event)
 
     @page_title = @event.name
     @front_matter = { "description" => @event.summary }
@@ -56,9 +56,17 @@ protected
 
 private
 
+  def viewable_event?(event)
+    not_pending = event.status_id != pending_event_status_id
+    in_future = event.start_at.to_date >= DateTime.now.utc.to_date
+    online_q_a = event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
+
+    not_pending && (in_future || online_q_a)
+  end
+
   def render_not_found
     @fullwidth = true
-    render "not_found"
+    render "not_found", status: :not_found
   end
 
   def load_upcoming_events
