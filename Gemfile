@@ -41,7 +41,7 @@ gem "faraday_middleware"
 
 gem "dotenv-rails", ">= 2.7.6"
 
-gem "govuk_design_system_formbuilder", ">= 2.7.5"
+gem "govuk_design_system_formbuilder", ">= 2.7.6"
 
 gem "loaf", ">= 0.10.0"
 
@@ -58,7 +58,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.43.1"
+gem "view_component", "~> 2.44.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -116,7 +116,7 @@ end
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
   gem "listen", "~> 3.7.0"
-  gem "web-console", ">= 4.1.0"
+  gem "web-console", ">= 4.2.0"
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem "spring"

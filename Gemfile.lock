@@ -225,7 +225,7 @@ GEM
       multi_json (~> 1.11)
       os (>= 0.9, < 2.0)
       signet (~> 0.14)
-    govuk_design_system_formbuilder (2.7.5)
+    govuk_design_system_formbuilder (2.7.6)
       actionview (>= 6.0)
       activemodel (>= 6.0)
       activesupport (>= 6.0)
@@ -289,6 +289,8 @@ GEM
     nio4r (2.5.8)
     nokogiri (1.12.5)
       mini_portile2 (~> 2.6.1)
+      racc (~> 1.4)
+    nokogiri (1.12.5-x86_64-linux)
       racc (~> 1.4)
     observer (0.1.1)
     os (1.1.1)
@@ -467,10 +469,10 @@ GEM
     uber (0.1.0)
     unicode-display_width (1.7.0)
     victor (0.3.3)
-    view_component (2.43.1)
+    view_component (2.44.0)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
-    web-console (4.1.0)
+    web-console (4.2.0)
       actionview (>= 6.0.0)
       activemodel (>= 6.0.0)
       bindex (>= 0.4.0)
@@ -521,7 +523,7 @@ DEPENDENCIES
   geometry!
   get_into_teaching_api_client_faraday!
   google-api-client (>= 0.53.0)
-  govuk_design_system_formbuilder (>= 2.7.5)
+  govuk_design_system_formbuilder (>= 2.7.6)
   kaminari (~> 1.2, >= 1.2.1)
   kramdown (>= 2.3.1)
   listen (~> 3.7.0)
@@ -557,8 +559,8 @@ DEPENDENCIES
   text
   tzinfo-data
   victor
-  view_component (~> 2.43.1)
-  web-console (>= 4.1.0)
+  view_component (~> 2.44.0)
+  web-console (>= 4.2.0)
   webmock (>= 3.14.0)
   webpacker (>= 5.4.3)
 
