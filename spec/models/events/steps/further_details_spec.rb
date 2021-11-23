@@ -56,7 +56,7 @@ describe Events::Steps::FurtherDetails do
           receive(:get_latest_privacy_policy)
 
         expect(subject).not_to be_valid
-        subject.save!
+        subject.save
         expect(wizardstore["subscribe_to_mailing_list"]).to be_nil
       end
     end
@@ -75,14 +75,14 @@ describe Events::Steps::FurtherDetails do
       it "updates the store if the candidate subscribes" do
         subject.subscribe_to_mailing_list = true
         expect(subject).to be_valid
-        subject.save!
+        subject.save
         expect(wizardstore["subscribe_to_mailing_list"]).to be_truthy
       end
 
       it "updates the store if the candidate does not subscribe" do
         subject.subscribe_to_mailing_list = false
         expect(subject).to be_valid
-        subject.save!
+        subject.save
         expect(wizardstore["subscribe_to_mailing_list"]).to be_falsy
       end
     end

@@ -90,3 +90,7 @@ RSpec/NestedGroups:
 
 RSpec/MultipleMemoizedHelpers:
   Max: 15
+
+Rails/SaveBang:
+  Exclude:
+    - spec/**/*.rb

@@ -273,7 +273,7 @@ describe Internal::Event do
         end
 
         it "adds the error to the correct attribute" do
-          subject.save!
+          subject.save
 
           expect(subject.errors["readable_id"].first).to eq(error_message)
         end
