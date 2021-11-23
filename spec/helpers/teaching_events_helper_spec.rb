@@ -86,7 +86,7 @@ describe TeachingEventsHelper, type: "helper" do
 
       specify "returns online forum instead of online event by default" do
         expect(GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[222_750_008]).to eql("Online event")
-        expect(event_type_name(222_750_008)).to eql("Online forum")
+        expect(event_type_name(222_750_008)).to eql("DfE Online Q&A")
       end
 
       specify "returns training provider instead of school or uni event by default" do

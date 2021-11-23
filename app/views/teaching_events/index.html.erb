@@ -5,6 +5,24 @@
     <p>
       All events listed here are designed to help you get into teacher training. They are all free to attend.
     </p>
+
+    <details>
+      <summary>What are the event types?</summary>
+
+      <dl>
+        <dt>DfE Train to Teach events</dt>
+
+        <dl>Watch presentations, hear from teachers and speak to advisers one-to-one.</dl>
+
+        <dt>DfE Online Q&amp;As</dt>
+
+        <dl>Get answers to your specific questions from an online panel.</dl>
+
+        <dt>Training provider events</dt>
+
+        <dl>Find out about local courses and how to apply; hosted by teacher training providers.</dl>
+      </dl>
+    </details>
   </header>
 
   <div class="teaching-events__container">
@@ -13,8 +31,14 @@
     </div>
 
     <% if @featured_events.blank? && @events.blank? %>
-      <div role="alert">
-        No events were found.
+      <div class="teaching-events__none" role="alert">
+        <div class="teaching-events__none--message">
+          <h3>
+            No events found.
+          </h3>
+
+          <a class="button" href="/mailinglist/signup">Sign up to be notified about events in your area</a>
+        </div>
       </div>
     <% else %>
       <div class="teaching-events__listing">

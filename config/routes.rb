@@ -48,8 +48,6 @@ Rails.application.routes.draw do
     get "/open_events", to: "events#open_events"
   end
 
-  get "/test/a", to: "pages#temp_test_a"
-  get "/test/b", to: "pages#temp_test_b"
   get "/funding-your-training", to: "pages#funding_your_training", as: :funding_your_training
   get "/welcome", to: "pages#welcome", as: :welcome_guide
   get "/welcome/my-journey-into-teaching", to: "pages#welcome_my_journey_into_teaching", as: :welcome_my_journey_into_teaching

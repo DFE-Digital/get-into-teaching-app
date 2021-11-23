@@ -19,6 +19,14 @@ describe PagesController, type: :request do
       it { is_expected.to have_http_status(:success) }
     end
 
+    context "when the page is noindexed" do
+      before { get "/test/a" }
+
+      subject { response.headers["X-Robots-Tag"] }
+
+      it { is_expected.to eq("noindex") }
+    end
+
     context "with invalid page" do
       subject { response }
 

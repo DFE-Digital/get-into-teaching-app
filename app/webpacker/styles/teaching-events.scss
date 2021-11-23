@@ -1,24 +1,20 @@
-@mixin train-to-teach-event-box($small: false) {
+$slightly-darker-grey: darken($grey, 10%);
+
+@mixin train-to-teach-event-box {
   border: 2px solid $pink;
   padding: 2rem 1rem 1rem;
 
   &::after {
-    @include font-size(medium);
+    @include font-size(small);
     position: absolute;
     content: "Train to Teach event";
-    right: 1rem;
+    right: 5%;
     top: -1em;
     background: $pink url(../images/icon-ttt-white.svg) no-repeat left center;
     background-size: 1.2em;
     background-position: .4em;
     font-weight: bold;
     padding: .4em .4em .4em 2em;
-
-    @if $small {
-      @include mq($from: tablet) {
-        @include font-size(small);
-      }
-    }
   }
 }
 
@@ -39,6 +35,23 @@
 
     p {
       padding: 0 1rem;
+    }
+
+    details {
+      padding: 0 1rem;
+
+      summary {
+        color: $blue-dark;
+        text-decoration: underline;
+      }
+
+      dl {
+        dt { font-weight: bold; }
+
+        dl + dt {
+          margin-top: 1em;
+        }
+      }
     }
   }
 
@@ -67,6 +80,21 @@
     @include mq($from: desktop) {
       flex-basis: 25%;
     }
+
+    h2 {
+      @include font-size(medium);
+    }
+
+    &--group {
+      p {
+        @include reset;
+      }
+    }
+
+    &--group.with-top-border {
+      border-top: 1px solid $slightly-darker-grey;
+      padding-top: 2rem;
+    }
   }
 
   &__listing {
@@ -74,6 +102,21 @@
       flex-basis: 75%;
     }
 
+    @include mq($from: tablet) {
+      border-left: 1px solid $slightly-darker-grey;
+    }
+  }
+
+  &__none {
+    &--message {
+      padding: 1rem 1rem 2rem;
+      background: $grey;
+
+      h3 {
+        margin: 1em 0;
+        @include font-size(large);
+      }
+    }
   }
 
   &__pagination {
@@ -185,7 +228,7 @@
     margin: 0;
     position: relative;
     background: white;
-    border: 2px solid darken($grey, 10%);
+    border: 2px solid $slightly-darker-grey;
     padding: 0;
 
     &__info {
@@ -422,14 +465,8 @@
     &.yellow {
       background: $yellow;
 
-      .register .button {
-        background: $yellow;
-        color: $black;
-
-        &:focus {
-          color: $yellow;
-          background: $black;
-        }
+      .button:focus {
+        outline: 1px solid black;
       }
     }
 
@@ -441,10 +478,14 @@
       flex-direction: column;
       justify-content: space-between;
 
-      .breadcrumbs > .breadcrumb > ol {
-        margin-top: 0;
-        margin-left: 0;
-        padding-left: 0;
+      .breadcrumbs {
+        margin-top: .5em;
+
+        > .breadcrumb > ol {
+          margin-top: 0;
+          margin-left: 0;
+          padding-left: 0;
+        }
       }
 
       h1 {
@@ -473,16 +514,6 @@
         border-bottom: 1px solid black;
         padding-bottom: 1em;
       }
-
-      .register {
-        .button {
-          outline: 1px solid black;
-
-          &:hover {
-            outline: 2px solid black;
-          }
-        }
-      }
     }
 
     .image {
@@ -509,8 +540,7 @@
     }
   }
 
-  .event-info,
-  .event-attributes {
+  section {
     max-width: 65rem;
     margin: 2em auto;
     padding-inline: 1em;
@@ -526,11 +556,25 @@
       }
     }
 
+    .event-alert {
+      background-color: $purple;
+      color: $white;
+      max-width: 65ch;
+      padding: .5em;
+      margin: auto;
+
+      p {
+        padding: .2em 1em;
+        @include font-size(small);
+      }
+    }
+
     .event-summary {
       display: flex;
       flex-direction: column;
       padding-block: 2em;
       gap: 3em;
+      margin-bottom: 4em;
 
       @include mq($from: tablet) {
         flex-direction: row;
@@ -542,19 +586,9 @@
 
       .about-ttt-event {
         position: relative;
-        @include train-to-teach-event-box($small: true);
+        @include train-to-teach-event-box;
 
         flex-basis: 40%;
-      }
-
-      .about-event {
-        flex-basis: 100%;
-
-        padding: 1.5rem 1rem;
-
-        .leading {
-          font-weight: strong;
-        }
       }
 
       figure {
@@ -595,6 +629,29 @@
           @include font-size(xsmall);
         }
       }
+    }
+
+    .about-event {
+      flex-basis: 100%;
+      max-width: 65ch;
+      padding: 1.5rem auto;
+      margin: auto;
+
+      @include mq($from: tablet) {
+        padding: 1.5rem 1rem;
+      }
+
+      ul {
+        list-style-position: outside;
+        padding-left: 1.5em;
+      }
+    }
+  }
+
+  .attending-providers {
+    div {
+      max-width: 65ch;
+      margin: auto;
     }
   }
 
@@ -783,6 +840,7 @@
 }
 
 .what-theyre-saying {
+  margin-top: 4em;
   display: grid;
   background: $yellow;
 

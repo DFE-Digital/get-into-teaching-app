@@ -47,10 +47,17 @@ describe TeachingEvents::EventComponent, type: "component" do
         it { expect(subject).to be_online }
       end
 
-      context "when the event has a location" do
-        let(:event) { build(:event_api) }
+      context "when the event has a location and is not online" do
+        let(:event) { build(:event_api, is_online: false) }
 
         it { expect(subject).to be_in_person }
+      end
+
+      # this is the new 'virtual', event has an address/building but nobody's invited!
+      context "when the event has a location and is online" do
+        let(:event) { build(:event_api, is_online: true) }
+
+        it { expect(subject).not_to be_in_person }
       end
 
       context "when the event has no location" do
