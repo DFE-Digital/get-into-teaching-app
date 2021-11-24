@@ -20,7 +20,15 @@ describe('Google Tag Manager', () => {
     gtm.init();
   };
 
+  const mockWindowLocation = () => {
+    Object.defineProperty(window, 'location', {
+      configurable: true,
+      value: {},
+    });
+  };
+
   beforeEach(() => {
+    mockWindowLocation();
     clearCookies();
     setupHtml();
   });
@@ -51,7 +59,7 @@ describe('Google Tag Manager', () => {
     });
 
     it('updates the page_path in GTM', () => {
-      window.location.path = '/new-path';
+      window.location.pathname = '/new-path';
 
       document.dispatchEvent(new Event('turbolinks:load'));
 
