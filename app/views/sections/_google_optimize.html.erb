@@ -1,3 +1,0 @@
-<% if ENV["GOOGLE_OPTIMIZE_ID"].present? && request.path.in?(google_optimize_config[:paths]) %>
-<script src="https://www.googleoptimize.com/optimize.js?id=<%= ENV["GOOGLE_OPTIMIZE_ID"] %>"></script>
-<% end %>

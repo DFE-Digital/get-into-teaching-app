@@ -245,4 +245,67 @@ describe ApplicationHelper do
       it { is_expected.to be(false) }
     end
   end
+
+  describe "#google_optimize_script" do
+    before do
+      allow(ENV).to receive(:[]).and_call_original
+      allow(ENV).to receive(:[]).with("GOOGLE_OPTIMIZE_ID") { id }
+      described_class.class_variable_set(:@@google_optimize_config, { paths: paths })
+    end
+
+    after do
+      described_class.class_variable_set(:@@google_optimize_config, nil)
+    end
+
+    subject { google_optimize_script }
+
+    context "when the GOOGLE_OPTIMIZE_ID is not set" do
+      let(:id) { nil }
+
+      context "when there are experiment paths" do
+        let(:paths) { ["/experiment"] }
+
+        it { is_expected.to be_nil }
+      end
+
+      context "when there are no experiment paths" do
+        let(:paths) { [] }
+
+        it { is_expected.to be_nil }
+      end
+    end
+
+    context "when the GOOGLE_OPTIMIZE_ID is set" do
+      let(:id) { "ABC-123" }
+
+      context "when there are experiment paths" do
+        let(:paths) { ["/experiment"] }
+
+        it "renders the Google Optimize script" do
+          regex = %r{
+            <script\s
+            src="/packs-test/v1/js/google_optimize.*\.js"\s
+            data-turbolinks-track="reload"\s
+            data-google-optimize-id="ABC-123"\s
+            data-google-optimize-paths="\[&quot;/experiment&quot;\]"
+            ></script>
+          }x
+
+          is_expected.to match(regex)
+        end
+      end
+
+      context "when there are no experiment paths" do
+        let(:paths) { [] }
+
+        it { is_expected.to be_nil }
+      end
+    end
+  end
+
+  describe "#google_optimize_config" do
+    subject { google_optimize_config }
+
+    it { is_expected.to eq({ paths: ["/test/a", "/test/b"] }) }
+  end
 end
