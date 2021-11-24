@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   ].freeze
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
-  DYNAMIC_PAGE_PATHS = [].freeze
+  DYNAMIC_PAGE_PATHS = ["/test/a", "/test/b"].freeze
 
   before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && request.query_parameters.any? }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
