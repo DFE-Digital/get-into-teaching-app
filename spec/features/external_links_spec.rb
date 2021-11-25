@@ -8,7 +8,7 @@ RSpec.feature "link checks", :onschedule do
 
         after { WebMock.disable_net_connect! }
 
-        specify "returns a 200..299 status" do
+        specify "all links return a 200..299 status" do
           visit(current_page)
           results = LinkChecker::Results.new
           LinkChecker::External.new(current_page, page.body).check_links(results)
@@ -32,7 +32,7 @@ RSpec.feature "link checks", :onschedule do
 
         after { WebMock.disable_net_connect! }
 
-        specify "returns a 200..299 status" do
+        specify "all links return a 200..299 status" do
           visit(current_page)
           results = LinkChecker::Results.new
 
