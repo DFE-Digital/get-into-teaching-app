@@ -19,7 +19,7 @@ calls_to_action:
       arguments:
         icon: "icon-arrow"
         text: |-
-          Find and organise school experience
+          Use our Get school experience service to search for and request experience in England.
         link_text: "Get school experience"
         link_target: "https://schoolexperience.education.gov.uk"
 keywords:
