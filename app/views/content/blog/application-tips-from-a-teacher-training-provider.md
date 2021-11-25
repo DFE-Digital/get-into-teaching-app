@@ -41,7 +41,7 @@ Attending a [Train to Teach event](/event-categories/train-to-teach-events) is a
 
 ## The personal statement
 
-The personal statement is your shopwindow. You will be asked to focus on why you have decided to train to teach and why you are suited to your chosen age group or subject. You can also talk about any relevant work experience you have had, what you learned or observed and how you might apply this to your own teaching practice.
+The personal statement is your shop window. You will be asked to focus on why you have decided to train to teach and why you are suited to your chosen age group or subject. You can also talk about any relevant work experience you have had, what you learned or observed and how you might apply this to your own teaching practice.
 
 Remember to tailor your statement to either the phase or the subject you are wanting to teach. Trying to adapt it to cover both primary and secondary, or two different subjects, is not advised.
 
