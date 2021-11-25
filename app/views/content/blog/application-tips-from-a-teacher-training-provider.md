@@ -3,26 +3,25 @@ title: Application tips from a teacher training provider
 date: "2021-11-29"
 author: Michelle Borders
 images:
-	an_image:
-		path: "media/images/content/blog/CAT-IoE.jpg"
-		thumbnail_path: "media/images/content/blog/thumbnails/CAT-IoE-thumbnail.jpg"
-		alt: "A teacher shows a rocket to a young girl at the front of a classroom as other students watch"
-	another_image:
-		path: "media/images/content/blog/another_image.jpg"
-		alt: "A teacher shows a rocket to a young girl at the front of a classroom as other students watch"
+  rocket:
+    path: "media/images/content/blog/rocket.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/rocket.jpg"
+    alt: "A teacher shows a rocket to a young girl at the front of a classroom as other students watch"
 description: |-
-	Michelle Borders from the Community Academies Trust Institute of Education has recruited trainee teachers for eight years. Here she shares her top tips on the application process.
+  Michelle Borders from the Community Academies Trust Institute of Education has recruited trainee teachers for eight years. Here she shares her top tips on the application process.
 keywords:
-	- applications
-	- personal statements
+  - applications
+  - personal statements
 tags:
-	- applications
-	- becoming a teacher
-    - teacher training
-    - personal statements
+  - applications
+  - becoming a teacher
+  - teacher training
+  - personal statements
 ---
 
 _Michelle Borders works for the Community Academies Trust Institute of Education (CAT IoE). Michelle has recruited trainee teachers for eight years for schools across the Midlands and chairs the regional hub for School Direct lead schools who are located in Coventry, Warwickshire and Solihull. She regularly shares advice on the [Aspiring Teacher Forum on Facebook](https://www.facebook.com/groups/1357146377672255). The CAT IoE is also a national Subject Knowledge Enhancement (SKE) provider._
+
+$rocket$
 
 It’s important to make an excellent first impression if you want to secure that interview, and time spent on a well-thought-out application is never wasted. 
 
