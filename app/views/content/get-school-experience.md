@@ -13,6 +13,15 @@ right_column:
       icon: "icon-calendar"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
+calls_to_action:
+    get-school-experience:
+      name: simple
+      arguments:
+        icon: "icon-arrow"
+        text: |-
+          Find and organise school experience
+        link_text: "Get school experience"
+        link_target: "https://schoolexperience.education.gov.uk"
 keywords:
   - School experience
   - Teaching experience
