@@ -21,7 +21,7 @@ keywords:
   - oak national academy
 ---
 
-School experience allows you to learn more about teaching by visiting schools. 
+You can visit schools to get experience in the classroom.
 
 It can help you:
 
@@ -47,7 +47,7 @@ You may be eligible for a [maths or physics teaching internship](/teaching-inter
 
 ## Watch pre-recorded lessons
 
-[Observe teachers’ lessons and analysis of their lessons on the Oak National Academy website](https://teachers.thenational.academy/lessons-for-itt).
+[Observe teachers’ lessons on the Oak National Academy website](https://teachers.thenational.academy/lessons-for-itt).
 
 These videos are not a claim of best practice but can help you get to know teaching better.
 
