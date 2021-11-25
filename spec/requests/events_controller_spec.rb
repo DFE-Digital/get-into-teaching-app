@@ -236,7 +236,7 @@ describe EventsController, type: :request do
         event_types_with_archive = GetIntoTeachingApiClient::Constants::EVENT_TYPES_WITH_ARCHIVE
         event_types_with_archive.each do |type, id|
           context "when the event is a past #{type} type" do
-            let(:event) { build(:event_api, type_id: id, start_at: DateTime.now.utc - 1.day) }
+            let(:event) { build(:event_api, type_id: id, start_at: Time.zone.now.utc - 1.day) }
 
             it { expect(response).to have_http_status :success }
             it { expect(response.body).to include(event.name) }
@@ -245,7 +245,7 @@ describe EventsController, type: :request do
 
         GetIntoTeachingApiClient::Constants::EVENT_TYPES.except(*event_types_with_archive.keys).each do |type, id|
           context "when the event is a past #{type} type" do
-            let(:event) { build(:event_api, type_id: id, start_at: DateTime.now.utc - 1.day) }
+            let(:event) { build(:event_api, type_id: id, start_at: Time.zone.now.utc - 1.day) }
 
             it { expect(response).to have_http_status :not_found }
             it { expect(response.body).to include("Unfortunately, that event has already happened.") }
