@@ -9,8 +9,8 @@ RSpec.describe CallsToAction::ChatOnlineComponent, type: :component do
     expect(page).to have_css(".call-to-action")
   end
 
-  specify "the call to action invokes the talk-to-us Stimulus controller" do
-    expect(page).to have_css(%(.call-to-action [data-controller="talk-to-us"]))
+  specify "the call to action invokes the chat Stimulus controller" do
+    expect(page).to have_css(%(.call-to-action [data-controller=chat]))
   end
 
   specify "some useful text is included" do
@@ -19,7 +19,7 @@ RSpec.describe CallsToAction::ChatOnlineComponent, type: :component do
 
   specify %(the "Chat online" button will start a chat) do
     expect(page).to have_css(
-      %(.call-to-action__action > span > a[data-action="talk-to-us#startChat"]),
+      %(a[data-action="chat#start"]),
       text: "Chat online",
     )
   end
@@ -39,15 +39,6 @@ RSpec.describe CallsToAction::ChatOnlineComponent, type: :component do
 
     specify "some useful text is included" do
       expect(page).to have_css(".call-to-action .call-to-action__text", text: content)
-    end
-  end
-
-  context "when custom button text is passed in" do
-    let(:button_text) { "Gossip instantly" }
-    let(:component) { described_class.new(button_text: button_text) }
-
-    specify "some useful text is included" do
-      expect(page).to have_css(".call-to-action .call-to-action__action", text: button_text)
     end
   end
 end

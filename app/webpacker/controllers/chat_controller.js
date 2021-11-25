@@ -2,7 +2,7 @@ import dayjs from 'dayjs';
 import { Controller } from 'stimulus';
 
 export default class extends Controller {
-  static targets = ['button', 'offlineText'];
+  static targets = ['online', 'offline', 'unavailable', 'chat'];
 
   initialize() {
     const utc = require('dayjs/plugin/utc');
@@ -12,12 +12,16 @@ export default class extends Controller {
   }
 
   connect() {
-    if (!this.isChatAvailable()) {
-      this.chatOffline();
+    this.unavailableTarget.classList.add('hidden');
+
+    if (this.isChatOnline()) {
+      this.onlineTarget.classList.remove('hidden');
+    } else {
+      this.offlineTarget.classList.remove('hidden');
     }
   }
 
-  isChatAvailable() {
+  isChatOnline() {
     const timeZone = 'Europe/London';
     const openTime = dayjs().set('hour', 8).set('minute', 30).tz(timeZone);
     const closeTime = dayjs().set('hour', 17).set('minute', 30).tz(timeZone);
@@ -26,41 +30,25 @@ export default class extends Controller {
     return now >= openTime && now <= closeTime;
   }
 
-  chatOffline() {
-    if (this.hasOfflineTextTarget) {
-      this.offlineTextTarget.classList.add('visible');
+  start(e) {
+    e.preventDefault();
+    this.loadChat();
+  }
+
+  loadChat() {
+    if (!this.zendeskScriptLoaded) {
+      this.chatTarget.textContent = 'Starting chat...';
     }
 
-    this.buttonTarget.classList.add('hidden');
-  }
-
-  startChat(e) {
-    e.preventDefault();
-    this.showZendeskChat();
-  }
-
-  showZendeskChat() {
-    const originalText = this.setLoadingButtonText();
     this.appendZendeskScript();
-    this.waitForZendesk(() => {
-      window.$zopim.livechat.window.show();
-      this.waitForWidget(() => {
-        setTimeout(() => {
-          document.getElementById('webWidget').focus();
-          this.buttonTarget.querySelector('span').innerHTML = originalText;
-        }, 500); // Small delay to account for the chat box animating in.
+
+    this.waitForZendeskScript(() => {
+      this.showWebWidget();
+      this.waitForWebWidget(() => {
+        document.getElementById('webWidget').focus();
+        this.chatTarget.textContent = 'Chat online';
       });
     });
-  }
-
-  setLoadingButtonText() {
-    const originalText = this.buttonTarget.querySelector('span').textContent;
-
-    if (!this.zendeskScriptLoaded) {
-      this.buttonTarget.querySelector('span').textContent = 'Starting chat...';
-    }
-
-    return originalText;
   }
 
   appendZendeskScript() {
@@ -75,22 +63,29 @@ export default class extends Controller {
     document.body.appendChild(script);
   }
 
-  waitForWidget(callback) {
+  waitForWebWidget(callback) {
     const interval = setInterval(() => {
       if (document.getElementById('webWidget')) {
         clearInterval(interval);
-        callback();
+        // Small delay to account for the chat box animating in.
+        setTimeout(() => {
+          callback();
+        }, 500);
       }
     }, 100);
   }
 
-  waitForZendesk(callback) {
+  waitForZendeskScript(callback) {
     const interval = setInterval(() => {
       if (window.$zopim && window.$zopim.livechat) {
         clearInterval(interval);
         callback();
       }
     }, 100);
+  }
+
+  showWebWidget() {
+    window.$zopim.livechat.window.show();
   }
 
   get zendeskScriptLoaded() {

@@ -1,0 +1,19 @@
+<div data-controller="chat" class="chat">
+  <div data-chat-target="online" class="hidden">
+    <p>
+      <a class="button" href="javascript:void(0)" data-action="chat#start" data-chat-target="chat">Chat online</a>
+    </p>
+  </div>
+  <div data-chat-target="offline" class="hidden">
+    <p>
+      Chat is <strong>closed</strong>
+    </p>
+  </div>
+  <div data-chat-target="unavailable">
+    <p>
+      <strong>Chat not available</strong>
+      <br>
+      Email: <%= mail_to("getintoteaching.getintoteaching@education.gov.uk") %>
+    </p>
+  </div>
+</div>
