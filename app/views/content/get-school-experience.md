@@ -43,7 +43,7 @@ You may be eligible for a [maths or physics teaching internship](/teaching-inter
 
 ## Attend teaching events
 
-[Teaching events](/events) can also give you an insight into teaching. You can find Train to Teach events, online ‘Q and A’ sessions as well as university events.
+[Teaching events](/events) can also give you an insight into teaching. You can choose from our Train to Teach events, online Q&A sessions and events run by training providers.
 
 ## Watch pre-recorded lessons
 
