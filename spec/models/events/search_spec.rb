@@ -37,7 +37,7 @@ describe Events::Search do
   describe "#available_months" do
     subject { described_class.new(period: period).available_months }
 
-    before { travel_to(DateTime.new(2020, 11, 10)) }
+    before { travel_to(Time.zone.local(2020, 11, 10)) }
 
     context "when period is future" do
       let(:period) { :future }
@@ -67,7 +67,7 @@ describe Events::Search do
       }
 
       context "when today is first day of month" do
-        before { travel_to(DateTime.new(2020, 11, 1)) }
+        before { travel_to(Time.zone.local(2020, 11, 1)) }
 
         it {
           is_expected.to eq([
@@ -150,8 +150,8 @@ describe Events::Search do
         type_ids: [subject.type],
         radius: subject.distance,
         postcode: subject.postcode,
-        start_after: DateTime.now.utc.beginning_of_day,
-        start_before: DateTime.now.utc.end_of_month.end_of_month,
+        start_after: Time.zone.now.utc.beginning_of_day,
+        start_before: Time.zone.now.utc.end_of_month.end_of_month,
         quantity_per_type: default_limit,
       }
     end
@@ -190,7 +190,7 @@ describe Events::Search do
       end
 
       context "when searching a future period" do
-        let(:travel_date) { DateTime.new(2020, 1, 10).utc }
+        let(:travel_date) { Time.zone.local(2020, 1, 10).utc }
 
         before { travel_to(travel_date) }
 
@@ -200,7 +200,7 @@ describe Events::Search do
           it "searches from the beginning of today to the end of the next 24 months" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
               receive(:search_teaching_events_grouped_by_type)
-                .with(**expected_attributes.merge(start_after: travel_date.beginning_of_day, start_before: DateTime.new(2022, 1, 31).end_of_day))
+                .with(**expected_attributes.merge(start_after: travel_date.beginning_of_day, start_before: Time.zone.local(2022, 1, 31).end_of_day))
           end
         end
 
@@ -230,7 +230,7 @@ describe Events::Search do
       end
 
       context "when searching a past period" do
-        let(:travel_date) { DateTime.new(2020, 1, 10).utc }
+        let(:travel_date) { Time.zone.local(2020, 1, 10).utc }
         let(:day_before_travel_date) { travel_date.advance(days: -1) }
 
         before { travel_to(travel_date) }
@@ -241,7 +241,7 @@ describe Events::Search do
           it "searches from the start of 4 months ago to the end of yesterday" do
             expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
               receive(:search_teaching_events_grouped_by_type)
-                .with(**expected_attributes.merge(start_after: DateTime.new(2019, 10, 1).beginning_of_day, start_before: day_before_travel_date.end_of_day))
+                .with(**expected_attributes.merge(start_after: Time.zone.local(2019, 10, 1).beginning_of_day, start_before: day_before_travel_date.end_of_day))
           end
         end
 

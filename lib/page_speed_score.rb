@@ -45,7 +45,7 @@ private
   end
 
   def urls
-    sitemap_xml = Nokogiri::XML(URI.open(sitemap_url))
+    sitemap_xml = Nokogiri::XML(URI.parse(sitemap_url).open)
     sitemap_xml.css("loc").map(&:text)
   end
 

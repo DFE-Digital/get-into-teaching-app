@@ -67,7 +67,7 @@ private
     basename = if Rails.env.development?
                  src.sub(/#{ext}$/, "")
                else
-                 src.sub(/\-[^-]*#{ext}$/, "")
+                 src.sub(/-[^-]*#{ext}$/, "")
                end
 
     Dir.glob("#{Rails.public_path}#{basename}--#{breakpoint}*#{ext}").first

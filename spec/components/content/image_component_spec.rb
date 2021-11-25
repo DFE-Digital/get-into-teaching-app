@@ -8,7 +8,7 @@ describe Content::ImageComponent, type: "component" do
   before { render_inline(described_class.new(**example_args)) }
 
   specify "image has the right path" do
-    expect(rendered_component).to match(%r{src=\"/packs-test/v1/media/images/#{image_name}-.*.svg\"})
+    expect(rendered_component).to match(%r{src="/packs-test/v1/media/images/#{image_name}-.*.svg"})
   end
 
   specify "image has the right alt text" do

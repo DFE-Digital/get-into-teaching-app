@@ -7,7 +7,7 @@ RSpec.feature "Chat", type: :feature do
 
   context "when Javascript is enabled", js: true do
     context "when chat is online" do
-      let(:date) { DateTime.new(2021, 1, 1, 9) }
+      let(:date) { Time.zone.local(2021, 1, 1, 9) }
 
       scenario "viewing the chat section of the talk to us component" do
         visit_on_date root_path
@@ -51,7 +51,7 @@ RSpec.feature "Chat", type: :feature do
     end
 
     context "when chat is offline" do
-      let(:date) { DateTime.new(2021, 1, 1, 5) }
+      let(:date) { Time.zone.local(2021, 1, 1, 5) }
 
       scenario "viewing the chat section of the talk to us component" do
         visit_on_date root_path
@@ -93,7 +93,7 @@ RSpec.feature "Chat", type: :feature do
 
   context "when Javascript is disabled" do
     context "when chat is online" do
-      let(:date) { DateTime.new(2021, 1, 1, 9) }
+      let(:date) { Time.zone.local(2021, 1, 1, 9) }
 
       scenario "viewing the chat section of the talk to us component" do
         visit_on_date root_path
@@ -130,7 +130,7 @@ RSpec.feature "Chat", type: :feature do
     end
 
     context "when chat is offline" do
-      let(:date) { DateTime.new(2021, 1, 1, 7) }
+      let(:date) { Time.zone.local(2021, 1, 1, 7) }
 
       scenario "viewing the chat section of the talk to us component" do
         visit_on_date root_path

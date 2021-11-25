@@ -19,7 +19,7 @@ describe "Find an event near you", type: :request do
   let(:events_by_type) { group_events_by_type(events) }
 
   context "when landing on the page initially" do
-    let(:expected_request_attributes) { { start_after: DateTime.now.utc.beginning_of_day } }
+    let(:expected_request_attributes) { { start_after: Time.zone.now.utc.beginning_of_day } }
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -46,7 +46,7 @@ describe "Find an event near you", type: :request do
     context "when there are events of different types" do
       let(:events) do
         GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.map do |type_id|
-          build(:event_api, start_at: DateTime.now, type_id: type_id)
+          build(:event_api, start_at: Time.zone.now, type_id: type_id)
         end
       end
 

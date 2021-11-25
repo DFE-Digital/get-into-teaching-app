@@ -15,6 +15,8 @@ class ArrowComponent < ViewComponent::Base
   # cx, cy: control point of the line (determines curvature)
   # arrow_size: between 0 (no arrow) and 1 (arrow head lines equal to arrow length)
   def initialize(width:, height:, x1:, y1:, x2:, y2:, cx:, cy:, arrow_size: 0.1)
+    super
+
     @svg = Victor::SVG.new(width: width, height: height, class: :arrow)
     @from = Geometry::Point[x1 * width, y1 * height]
     @to = Geometry::Point[x2 * width, y2 * height]

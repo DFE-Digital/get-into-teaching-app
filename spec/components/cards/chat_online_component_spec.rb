@@ -8,7 +8,7 @@ describe Cards::ChatOnlineComponent, type: "component" do
   end
 
   let(:instance) { described_class.new card: {} }
-  let(:time) { DateTime.new(2021, 1, 1, 12, 30) }
+  let(:time) { Time.zone.local(2021, 1, 1, 12, 30) }
 
   it { is_expected.to have_css ".card" }
   it { is_expected.to have_css ".card.card--no-border" }

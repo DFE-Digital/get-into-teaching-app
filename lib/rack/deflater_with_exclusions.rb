@@ -1,6 +1,8 @@
 module Rack
   class DeflaterWithExclusions < Deflater
     def initialize(app, options = {})
+      super
+
       @app = app
 
       @exclude = options[:exclude]

@@ -14,6 +14,7 @@ module Events
       #   - is_online == true && is_virtual == true
       # - Online (fully online with no building)
       #   - is_online == true && is_virtual == false
+      super
 
       @event       = event
       @title       = event.name

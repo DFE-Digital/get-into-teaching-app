@@ -8,6 +8,8 @@ module Content
     attr_reader :numbered
 
     def initialize(numbered: false, active_step: nil)
+      super
+
       @numbered    = numbered
       @active_step = active_step
     end
@@ -38,6 +40,8 @@ module Content
       attr_accessor :title, :partial
 
       def initialize(title:, call_to_action: nil)
+        super
+
         @title = title
         @call_to_action = Content::CallToActionComponentInjector.new(call_to_action).component
       end
@@ -51,6 +55,8 @@ module Content
       attr_accessor :partial
 
       def initialize(call_to_action: nil, partial: nil)
+        super
+
         @call_to_action = Content::CallToActionComponentInjector.new(call_to_action).component
         @partial = partial
       end

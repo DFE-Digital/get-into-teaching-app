@@ -73,7 +73,7 @@ private
     api = GetIntoTeachingApiClient::TeachingEventsApi.new
     search_results = api.search_teaching_events_grouped_by_type(
       quantity_per_type: UPCOMING_EVENTS_PER_TYPE,
-      start_after: DateTime.now.utc.beginning_of_day,
+      start_after: Time.zone.now.utc.beginning_of_day,
     )
     @group_presenter = Events::GroupPresenter.new(
       search_results,

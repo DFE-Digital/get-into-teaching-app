@@ -3,6 +3,8 @@ module Content
     attr_reader :data, :title
 
     def initialize(data, title = nil)
+      super
+
       @data = data
       @title = title
 

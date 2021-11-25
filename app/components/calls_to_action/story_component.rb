@@ -3,6 +3,8 @@ module CallsToAction
     attr_reader :name, :heading, :image, :link, :text
 
     def initialize(name:, heading:, image:, link:, text:)
+      super
+
       @name    = name
       @heading = heading
       @image   = image

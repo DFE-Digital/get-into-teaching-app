@@ -262,7 +262,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
       %w[black white].each do |colour|
         expect(rendered).to have_css("img")
-        expect(rendered).to match(%r{src\=\"/packs-test/v1/media/images/dfelogo-#{colour}-.*.svg\"})
+        expect(rendered).to match(%r{src="/packs-test/v1/media/images/dfelogo-#{colour}-.*.svg"})
         expect(rendered).to have_css(%(img[alt="#{front_matter_with_images.dig('images', colour, 'alt')}"]))
       end
     end

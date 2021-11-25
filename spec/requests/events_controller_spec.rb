@@ -47,7 +47,7 @@ describe EventsController, type: :request do
     let(:events_by_type) { group_events_by_type(events) }
     let(:search_key) { Events::Search.model_name.param_key }
     let(:search_path) { search_events_path(search_key => search_params) }
-    let(:date) { DateTime.now.utc }
+    let(:date) { Time.zone.now.utc }
     let(:search_month) { date.strftime("%Y-%m") }
     let(:parsed_response) { Nokogiri.parse(response.body) }
 

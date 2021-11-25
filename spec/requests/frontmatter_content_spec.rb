@@ -6,7 +6,7 @@ describe "ensuring frontmatter from content pages is rendered", type: :request d
 
     before { get "/content-page" }
 
-    it { expect(response).to have_http_status(200) }
+    it { expect(response).to have_http_status(:ok) }
 
     [
       "Sample content page",
@@ -29,7 +29,7 @@ describe "ensuring frontmatter from content pages is rendered", type: :request d
 
     let(:document) { Nokogiri.parse(response.body) }
 
-    it { expect(response).to have_http_status(200) }
+    it { expect(response).to have_http_status(:ok) }
 
     specify "sets both the title and heading correctly" do
       expect(document.css("title").text).to start_with("Title goes here")

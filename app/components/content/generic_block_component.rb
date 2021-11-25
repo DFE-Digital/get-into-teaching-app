@@ -3,6 +3,8 @@ module Content
     attr_reader :title, :classes
 
     def initialize(title:, icon_image:, icon_alt:, icon_size: nil, classes: [])
+      super
+
       @title      = title
       @icon_image = icon_image
       @icon_alt   = icon_alt

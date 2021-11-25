@@ -3,8 +3,8 @@ require "rails_helper"
 describe EventsHelper, type: "helper" do
   include MapsHelper
 
-  let(:startdate) { DateTime.new(2020, 6, 1, 10) }
-  let(:enddate) { DateTime.new(2020, 6, 1, 12) }
+  let(:startdate) { Time.zone.local(2020, 6, 1, 10) }
+  let(:enddate) { Time.zone.local(2020, 6, 1, 12) }
   let(:event) { build(:event_api, start_at: startdate, end_at: enddate) }
   let(:building_fully_populated) { build(:event_building_api, address_line3: "Line 3") }
 
@@ -38,7 +38,7 @@ describe EventsHelper, type: "helper" do
     end
 
     context "with a multi day event" do
-      let(:enddate) { DateTime.new(2020, 6, 4, 14) }
+      let(:enddate) { Time.zone.local(2020, 6, 4, 14) }
 
       it { is_expected.to eql "1 June 2020 10:00 to 4 June 2020 14:00" }
     end
@@ -73,9 +73,9 @@ describe EventsHelper, type: "helper" do
       allow(Rails.application.config.x).to receive(:google_maps_key).and_return("12345")
     end
 
-    it { is_expected.to match(/data-map-description=\"Line 1,\nLine 2,\nManchester,\nMA1 1AM\" /) }
+    it { is_expected.to match(/data-map-description="Line 1,\nLine 2,\nManchester,\nMA1 1AM" /) }
     it { is_expected.to match(/zoom=10/) }
-    it { is_expected.to match(/alt=\"Map showing #{event.name}\"/) }
+    it { is_expected.to match(/alt="Map showing #{event.name}"/) }
   end
 
   describe "#event_status_open?" do

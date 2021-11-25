@@ -5,6 +5,8 @@ module Header
     def initialize(front_matter)
       return if front_matter.blank?
 
+      super
+
       front_matter.with_indifferent_access.tap do |fm|
         @title           = fm["heading"] || fm["title"]
         @subtitle        = fm["subtitle"]

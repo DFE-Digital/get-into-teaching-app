@@ -88,7 +88,7 @@ describe "View events by category", type: :request do
   end
 
   context "when viewing the schools and university events category" do
-    let(:start_after) { DateTime.now.utc.beginning_of_day }
+    let(:start_after) { Time.zone.now.utc.beginning_of_day }
     let(:start_before) { start_after.advance(months: 24).end_of_month }
     let(:blank_search) { { postcode: nil, quantity_per_type: nil, radius: nil, start_after: start_after, start_before: start_before, type_ids: nil } }
 
@@ -103,7 +103,7 @@ describe "View events by category", type: :request do
   describe "filtering the results" do
     let(:postcode) { "TE57 1NG" }
     let(:radius) { 25 }
-    let(:start_after) { DateTime.now.utc.beginning_of_day }
+    let(:start_after) { Time.zone.now.utc.beginning_of_day }
     let(:start_before) { start_after.advance(months: 24).end_of_month }
     let(:filter) { { postcode: "TE57 1NG", quantity_per_type: nil, radius: radius, start_after: start_after, start_before: start_before, type_ids: nil } }
 

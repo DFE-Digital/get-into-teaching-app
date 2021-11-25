@@ -4,6 +4,8 @@ class CardComponent < ViewComponent::Base
   attr_accessor :snippet, :link, :link_text, :image, :video, :header, :border, :title
 
   def initialize(card:)
+    super
+
     @card = card
 
     @snippet           = card["snippet"]

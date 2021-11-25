@@ -70,7 +70,7 @@ class PagesController < ApplicationController
 
     url = ENV["TTA_SERVICE_URL"]
     if Rails.application.config.x.utm_codes && session[:utm]
-      url += "?" + session[:utm].to_param
+      url += "?#{session[:utm].to_param}"
     end
 
     redirect_to(url, turbolinks: false, status: :moved_permanently)

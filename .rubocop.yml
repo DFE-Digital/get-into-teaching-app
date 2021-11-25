@@ -16,7 +16,7 @@ AllCops:
     - node_modules/**/*
     - spec/models/wizard/**/*  # Separate PR splits this out into gem
 
-Capybara/FeatureMethods:
+RSpec/Capybara/FeatureMethods:
   Enabled: false
 
 Lint/AmbiguousOperator:
@@ -87,3 +87,10 @@ RSpec/LeadingSubject:
 
 RSpec/NestedGroups:
   Max: 6
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 15
+
+Rails/SaveBang:
+  Exclude:
+    - spec/**/*.rb
