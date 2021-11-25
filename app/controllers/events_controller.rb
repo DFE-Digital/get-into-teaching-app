@@ -58,7 +58,7 @@ private
 
   def viewable_event?(event)
     not_pending = event.status_id != pending_event_status_id
-    in_future = event.start_at.to_date >= DateTime.now.utc.to_date
+    in_future = event.start_at.to_date >= Time.zone.now.utc.to_date
     online_q_a = event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
 
     not_pending && (in_future || online_q_a)
