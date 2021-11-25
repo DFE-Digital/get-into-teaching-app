@@ -33,7 +33,7 @@ It can help you:
 
 ## Find school experience
 
-Use the [Get school experience service](https://schoolexperience.education.gov.uk/) to search for and request experience in England.
+Use our [Get school experience service](https://schoolexperience.education.gov.uk/) to search for and request experience in England.
 
 If you cannot find what you’re looking for, you can contact schools yourself. [Find schools near you](https://get-information-schools.service.gov.uk/) and give them a ring to find out who to talk to about getting school experience. They may ask you to have a DBS check before attending.
 
