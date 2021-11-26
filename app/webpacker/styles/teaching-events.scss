@@ -37,19 +37,46 @@ $slightly-darker-grey: darken($grey, 10%);
       padding: 0 1rem;
     }
 
-    details {
-      padding: 0 1rem;
+    dl {
+      margin: 2em 0 1em;
 
-      summary {
-        color: $blue-dark;
-        text-decoration: underline;
+      div {
+        display: flex;
+        flex-direction: column;
+
+        @include mq($from: tablet) {
+          flex-direction: row;
+          gap: 2rem;
+          padding-inline: 1rem;
+        }
+      }
+
+      div + div {
+        margin-top: 2em;
+      }
+
+      dt {
+        font-weight: bold;
+
+        flex: 0 0 30%;
       }
 
       dl {
-        dt { font-weight: bold; }
+        flex: 1 0 70%;
+      }
 
-        dl + dt {
-          margin-top: 1em;
+      dd {
+        margin-left: 0;
+      }
+
+      dd + dt {
+        margin-top: 1em;
+      }
+
+      @include mq($from: tablet) {
+        dt,
+        dd {
+          display: inline-block;
         }
       }
     }
