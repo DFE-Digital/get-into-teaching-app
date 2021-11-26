@@ -11,8 +11,8 @@
 
   <div class="teaching-events__filter--group with-top-border">
     <%= f.govuk_check_boxes_fieldset(:online, legend: nil) do %>
-      <%= f.govuk_check_box :online, "true", label: { text: "Online" } %>
       <%= f.govuk_check_box :online, "false", label: { text: "In person" } %>
+      <%= f.govuk_check_box :online, "true", label: { text: "Online" } %>
     <% end %>
   </div>
 
