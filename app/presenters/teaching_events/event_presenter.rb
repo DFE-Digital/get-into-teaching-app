@@ -7,24 +7,22 @@ module TeachingEvents
     end
 
     delegate(
-      :name,
-      :start_at,
-      :end_at,
       :building,
-      :is_online,
-      :type_id,
-      :readable_id,
       :description,
+      :end_at,
       :is_in_person,
       :is_online,
+      :is_online,
+      :message,
+      :name,
       :provider_website_url,
+      :providers_list,
+      :readable_id,
       :scribble_id,
+      :start_at,
+      :type_id,
       to: :event,
     )
-
-    def message
-      @event.message
-    end
 
     def venue_address
       building = @event.building
@@ -41,8 +39,21 @@ module TeachingEvents
       ].compact
     end
 
-    def providers_list
-      @event.providers_list
+    def event_type
+      GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[type_id]
+    end
+
+    def quote
+      case event_type
+      when "Train to Teach event", "Question Time"
+        "So useful! I got answers to questions I didn't know I had yet and I'm so inspired and excited."
+
+      # FIXME: the alternatives quotes might be added later
+      when "Online event"
+        nil
+      when "School or University event"
+        nil
+      end
     end
   end
 end
