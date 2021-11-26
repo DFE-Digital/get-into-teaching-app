@@ -240,7 +240,6 @@ $slightly-darker-grey: darken($grey, 10%);
         $unskew-amount: 12deg;
         $skew-amount: -12deg;
 
-        background: $yellow;
         text-align: center;
         padding: 1.2rem;
 
@@ -346,6 +345,10 @@ $slightly-darker-grey: darken($grey, 10%);
     }
 
     &--regular {
+      .event__top-bar--right {
+        background: $yellow;
+      }
+
       .event__bottom-bar--left {
         &__setting,
         &__location {
@@ -370,6 +373,12 @@ $slightly-darker-grey: darken($grey, 10%);
           background: url(../images/icon-pin.svg) no-repeat left center;
           background-size: 1.4em;
         }
+      }
+    }
+
+    &--training-provider {
+      .event__top-bar--right {
+        background: $grey;
       }
     }
   }
