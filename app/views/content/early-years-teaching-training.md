@@ -17,9 +17,7 @@ keywords:
  - year one
 date: "2021-03-29"
 description: |-
-  As an early years teacher you'll use your knowledge and skills to help younger children
-  enjoy high standards of teaching. Your input will have a long and positive
-  impact on their development and wellbeing. Find out how to get Early Years Teacher Status (EYTS).
+  Discover how to get Early Years Teacher Status (EYTS) and help to educate and inspire future generations. Official guidance on early years teacher training.
 calls_to_action:
   EY-undergraduate:
     name: feature_table
