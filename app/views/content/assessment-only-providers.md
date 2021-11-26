@@ -141,7 +141,7 @@ provider_groups:
       name: Clare Hunton
       telephone: '0208 5203142'
       email: training@henrymaynard.waltham.sch.uk
-    - header: London School of Jewish Studies
+    - header: London School of Jewish Studies (LSJS)
       link: https://www.lsjs.ac.uk/
       name: Galia Segal
       telephone: 020 8203 6427
