@@ -17,7 +17,7 @@ describe Events::EventBoxComponent, type: "component" do
     specify "places the date and time in the datetime div" do
       page.find(".event-box__datetime") do |datetime_div|
         expect(datetime_div.native.inner_html).to include(
-          "#{date_text} <br> #{start_at_text} - #{end_at_text}",
+          "#{date_text} <br> #{start_at_text} to #{end_at_text}",
         )
       end
     end
