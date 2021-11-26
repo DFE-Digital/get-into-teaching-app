@@ -572,7 +572,8 @@ $slightly-darker-grey: darken($grey, 10%);
   }
 
   &__attending-providers,
-  &__scribble {
+  &__scribble,
+  &__how-to-attend {
     margin-top: 2em;
   }
 }

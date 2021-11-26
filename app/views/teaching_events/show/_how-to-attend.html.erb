@@ -1,0 +1,12 @@
+<section class="teaching-event__how-to-attend">
+  <h2>How to attend</h2>
+
+  <p>Registration for this event is free.</p>
+
+  <p>
+    By registering, you will receive information about what to expect and how
+    to make the most of your experience at the event.
+  </p>
+
+  <%= render(partial: 'teaching_events/show/register-button') if is_a_train_to_teach_event?(@event) %>
+</section>
