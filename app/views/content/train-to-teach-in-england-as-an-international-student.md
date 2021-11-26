@@ -1,7 +1,7 @@
 ---
 title: "Apply for teacher training as an international candidate"
 description: |-
-  Train to teach in England as an international student
+  Find out about teacher training courses in the UK for international students, and get help and advice on getting your QTS and PGCE with this guidance.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
