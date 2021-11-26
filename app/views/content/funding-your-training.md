@@ -1,8 +1,7 @@
 ---
   title: "Funding your training"
   description: |-
-    Search the bursaries, scholarships and loans available to fund your teacher training. See funding available for specific subjects and for training through PGCE or
-    school direct.
+    Teacher training bursaries and other funding are available. Read this Department for Education page to find teaching bursaries, PGCE funding and loans.
   date: "2021-03-11"
   image: "media/images/content/hero-images/0013.jpg"
   subtitle: Get information and support to help you become a teacher.
