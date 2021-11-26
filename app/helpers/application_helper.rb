@@ -60,19 +60,6 @@ module ApplicationHelper
     end
   end
 
-  def header_image
-    # FIXME: needs to parse frontpatter
-    "media/images/main-header.jpg"
-  end
-
-  def hero_image_path(imgpath)
-    if imgpath =~ %r{^/assets/}
-      imgpath
-    else
-      asset_pack_path(imgpath)
-    end
-  end
-
   # FA supports several styles:
   # fas = solid, fab = brand, far = regular, fal = light, fad = duotone
   # https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use

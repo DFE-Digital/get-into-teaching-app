@@ -40,11 +40,11 @@ module Header
   private
 
     def image_path
-      helpers.hero_image_path(image)
+      helpers.asset_pack_path(image)
     end
 
     def mobile_image_path
-      helpers.hero_image_path(mobile_image)
+      helpers.asset_pack_path(mobile_image)
     end
   end
 end
