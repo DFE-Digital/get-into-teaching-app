@@ -2,7 +2,7 @@
   title: "Steps to become a teacher"
   layout: "layouts/steps"
   description: |-
-    Step-by-step guide to how you can become a teacher in a primary or secondary school in England. Understand the qualifications you need, the bursaries available and the ways you can do your teacher training.
+    Find out how to become a teacher with our step-by-step guide. Decide who to teach, check your qualifications, and find out how to train to be a teacher.
   date: "2021-06-24"
   image: "media/images/content/hero-images/0017.jpg"
   backlink: "../"
