@@ -28,6 +28,7 @@
       <%= render(partial: "teaching_events/show/attending-training-providers") %>
       <%= render(partial: "teaching_events/show/scribble") if @event.scribble_id.present? %>
       <%= render(partial: "teaching_events/show/how-to-attend") if is_a_train_to_teach_event?(@event) %>
+      <%= render(partial: "teaching_events/show/provider-info") %>
     </article>
 
     <aside>

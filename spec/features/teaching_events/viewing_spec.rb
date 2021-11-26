@@ -67,4 +67,28 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
     include_examples "regular teaching event"
   end
+
+  describe "provider events" do
+    let(:event) { build(:event_api, :with_provider_info) }
+
+    before { visit teaching_event_path(event.readable_id) }
+
+    specify "the provider info is included on the page" do
+      within(".teaching-event__provider-info") do
+        expect(page).to have_css("h2", text: "Provider information")
+
+        expect(page).to have_content("Event website")
+        expect(page).to have_link(event.provider_website_url)
+
+        expect(page).to have_content("Target audience")
+        expect(page).to have_content(event.provider_target_audience)
+
+        expect(page).to have_content("Organiser")
+        expect(page).to have_content(event.provider_organiser)
+
+        expect(page).to have_content("Contact email")
+        expect(page).to have_link(event.provider_contact_email)
+      end
+    end
+  end
 end

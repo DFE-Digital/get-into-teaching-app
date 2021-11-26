@@ -17,6 +17,10 @@ describe TeachingEvents::EventPresenter do
       name
       provider_website_url
       providers_list
+      provider_contact_email
+      provider_organiser
+      provider_target_audience
+      provider_website_url
       readable_id
       scribble_id
       start_at
