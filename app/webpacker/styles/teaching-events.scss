@@ -391,7 +391,7 @@ $slightly-darker-grey: darken($grey, 10%);
 
     @include mq($from: tablet) {
       grid-template-rows: minmax(2rem, auto) 2rem minmax(2rem, auto) 2rem;
-      grid-template-columns: minmax(5rem, auto) minmax(auto, 40rem) 10rem minmax(auto, 15rem) minmax(5rem, auto);
+      grid-template-columns: minmax(5rem, auto) minmax(auto, 50rem) 10rem minmax(auto, 20rem) minmax(5rem, auto);
 
       .breadcrumbs-and-heading {
         grid-area: 1 / 2 / 3 / 4;
@@ -504,178 +504,77 @@ $slightly-darker-grey: darken($grey, 10%);
     }
   }
 
-  section {
-    max-width: 65rem;
-    margin: 2em auto;
-    padding-inline: 1em;
-    padding: 1em;
-  }
-
-  .event-info {
-    h2 {
-      @include font-size(large);
-      padding: .5em;
-      @include mq($from: tablet) {
-        margin-bottom: 2.5rem;
-      }
-    }
-
-    .event-alert {
-      background-color: $purple;
-      color: $white;
-      max-width: 65ch;
-      padding: .5em;
-      margin: auto;
-
-      p {
-        padding: .2em 1em;
-        @include font-size(small);
-      }
-    }
-
-    .event-summary {
-      display: flex;
-      flex-direction: column;
-      padding-block: 2em;
-      gap: 3em;
-      margin-bottom: 4em;
-
-      @include mq($from: tablet) {
-        flex-direction: row;
-        padding-block: 0em;
-        gap: 6em;
-      }
-
-      align-items: center;
-
-      .about-ttt-event {
-        position: relative;
-        @include train-to-teach-event-box;
-
-        flex-basis: 40%;
-      }
-
-      figure {
-        flex-basis: 60%;
-        position: relative;
-        margin: 0;
-
-        blockquote {
-          @include font-size(small);
-
-          font-weight: bold;
-          margin: 0;
-          padding: 0;
-
-          &:before,
-          &:after {
-            @include font-size(xlarge);
-            color: $pink-dark;
-          }
-
-          &:before {
-            content: open-quote;
-            position: absolute;
-            left: -.6em;
-            top: -.3em;
-          }
-
-          &:after {
-            position: absolute;
-            content: close-quote;
-            margin-left: .02em;
-            margin-top: -.1em;
-          }
-        }
-
-        figcaption {
-          margin-top: .6em;
-          @include font-size(xsmall);
-        }
-      }
-    }
-
-    .about-event {
-      flex-basis: 100%;
-      max-width: 65ch;
-      padding: 1.5rem auto;
-      margin: auto;
-
-      @include mq($from: tablet) {
-        padding: 1.5rem 1rem;
-      }
-
-      ul {
-        list-style-position: outside;
-        padding-left: 1.5em;
-      }
-    }
-  }
-
-  .attending-providers {
-    div {
-      max-width: 65ch;
-      margin: auto;
-    }
-  }
-
-  .event-attributes {
-    display: grid;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    flex-direction: column;
-    gap: 2em;
-
-    .event-attribute {
-      h3 {
-        @include font-size(medium);
-      }
-
-      flex: 1 1 20%;
-    }
-
-    @include mq($from: mobile) {
-      flex-direction: row;
-    }
-  }
-
-  .scribble {
-    max-width: 65rem;
-    margin: 2em auto;
-  }
-
-  .venue-information {
-    max-width: 65rem;
+  &__info {
+    max-width: $content-max-width;
     margin: auto;
+
     display: flex;
+    gap: 1em;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 3em;
+
+    article,
+    aside {
+      margin: 0 1em;
+    }
 
     @include mq($from: tablet) {
       flex-direction: row;
-    }
 
-    .venue-information-summary {
-      margin: 2em;
-    }
-
-    .venue-image {
-      @include mq($from: tablet) {
-        margin: auto;
+      article {
+        flex: 0 1 66%;
       }
 
-      picture {
-        margin: 2em;
-        img {
-          max-width: 20em;
-          max-height: 12em;
-        }
+      aside {
+        flex: 0 0 32%;
+      }
+    }
+
+    h2 {
+      // standardise so smaller h2 in right col lines up
+      margin-top: 2rem;
+    }
+
+    article > h2 {
+      @include font-size(large);
+    }
+  }
+
+  &__message {
+    background: $purple;
+    color: $white;
+    padding: .2em 1em;
+    margin-bottom: 1em;
+
+    p {
+      @include reset;
+    }
+  }
+
+  &__venue-information {
+    .embedded-map {
+      width: 80%;
+      margin: unset;
+    }
+
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+
+  &__venue-image {
+    margin-top: 2em;
+    picture {
+      img {
+        max-width: 80%;
       }
     }
   }
 
+  &__attending-providers,
+  &__scribble {
+    margin-top: 2em;
+  }
 }
 
 .teaching-events__about-ttt-banner {

@@ -23,12 +23,8 @@ RSpec.feature "Searching for teaching events", type: :feature do
         expect(page).to have_link("Register for this event", href: event_steps_path(event.readable_id))
       end
 
-      within(".event-info > .event-summary") do
-        expect(page).to have_css(".about-ttt-event", text: /Watch presentations, ask questions/)
-        expect(page).to have_css("figure", text: "It was exactly what I needed")
-
-        expect(page).not_to have_css(".about-event")
-      end
+      expect(page).to have_css("h2", text: "Event information")
+      expect(page).to have_css("h2", text: "Venue information")
     end
   end
 
@@ -46,11 +42,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expect(page).not_to have_css(".register")
 
-      within(".event-info") do
-        expect(page).to have_css(".about-event", text: Regexp.new(Nokogiri.parse(event.description).text))
-
-        expect(page).not_to have_css(".about-ttt-event")
-      end
+      expect(page).to have_css("h2", text: "Event information")
     end
   end
 

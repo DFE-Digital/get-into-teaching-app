@@ -22,27 +22,17 @@
     </div>
   </header>
 
-  <section class="event-info">
-    <% if @event.message %>
-      <div class="event-alert">
-        <%= tag.p(@event.message) %>
-      </div>
-    <% end %>
+  <div class="container teaching-event__info">
+    <article>
+      <%= render(partial: "teaching_events/show/event-summary") %>
+      <%= render(partial: "teaching_events/show/attending-training-providers") %>
+      <%= render(partial: "teaching_events/show/scribble") if @event.scribble_id.present? %>
+    </article>
 
-    <h2>What to expect from this event</h2>
+    <aside>
+      <%= render(partial: "teaching_events/show/venue-information") if @event.building.present? %>
+    </aside>
+  </div>
 
-    <div class="event-summary">
-      <% if is_a_train_to_teach_event?(@event) %>
-        <%= render(partial: 'teaching_events/show/train-to-teach-event-summary') %>
-      <% end %>
-    </div>
-
-    <%= render(partial: 'teaching_events/show/event-summary') %>
-  </section>
-
-  <%= render(partial: "teaching_events/show/event-attributes") %>
-  <%= render(partial: "teaching_events/show/venue-information") if @event.building.present? %>
-  <%= render(partial: "teaching_events/show/attending-training-providers") %>
-  <%= render(partial: "teaching_events/show/scribble") if @event.scribble_id.present? %>
-  <%= render(partial: "teaching_events/show/what-theyre-saying") %>
+  <%# <%= render(partial: "teaching_events/show/what-theyre-saying") %1> %>
 </div>
