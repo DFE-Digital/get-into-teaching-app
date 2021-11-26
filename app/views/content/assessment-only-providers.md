@@ -141,7 +141,7 @@ provider_groups:
       name: Clare Hunton
       telephone: '0208 5203142'
       email: training@henrymaynard.waltham.sch.uk
-    - header: Jewish Teacher Training Partnership
+    - header: London School of Jewish Studies
       link: https://www.lsjs.ac.uk/
       name: Galia Segal
       telephone: 020 8203 6427
@@ -334,8 +334,8 @@ provider_groups:
       email: m.l.jacobs@reading.ac.uk
     - header: University of Sussex
       link: https://www.sussex.ac.uk/
-      name: Janet Steadman
-      email: l.harknett@sussex.ac.uk
+      name: Mike Lambert
+      email: mike.lambert@sussex.ac.uk
     - header: University of Winchester
       link: https://www.winchester.ac.uk/pages/home.aspx
       name: Keith Smith
