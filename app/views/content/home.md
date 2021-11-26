@@ -2,7 +2,7 @@
   layout: "layouts/home"
   title: "Inspire the next generation"
   description: |-
-    Official Department for Education information to help you become a teacher. Covering funding, teacher training, salaries, benefits and how to apply.
+    Read official Department for Education information to help you become a teacher. Learn about funding, teacher training, and steps to become a teacher. 
   date: "2021-06-16"
   fullwidth: true
   lid_pixel_event: "Homepage"
