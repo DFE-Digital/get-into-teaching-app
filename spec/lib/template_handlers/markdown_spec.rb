@@ -1,5 +1,13 @@
 require "rails_helper"
 
+module CallsToAction
+  class WithWhiteSpaceComponent < ViewComponent::Base
+    def call
+      "  text  "
+    end
+  end
+end
+
 describe TemplateHandlers::Markdown, type: :view do
   subject { rendered }
 
@@ -225,6 +233,24 @@ describe TemplateHandlers::Markdown, type: :view do
 
     specify "unregistered calls to action should be omitted" do
       expect(rendered).not_to have_content(/one-that-does-not-exist/)
+    end
+
+    context "when the rich content has surrounding white space" do
+      let(:front_matter_with_calls_to_action) do
+        {
+          "title": "Page with rich content (calls to action)",
+          "calls_to_action" => {
+            "big-warning" => "with_white_space",
+            "small-warning" => "with_white_space",
+          },
+        }
+      end
+
+      it "strips the white space" do
+        rendered_component = CallsToAction::WithWhiteSpaceComponent.new.call
+        expect(rendered).to include(rendered_component.strip)
+        expect(rendered).not_to include(rendered_component)
+      end
     end
   end
 

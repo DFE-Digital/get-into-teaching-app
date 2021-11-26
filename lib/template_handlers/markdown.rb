@@ -61,9 +61,8 @@ module TemplateHandlers
       # use $1 rather than a block argument here because gsub assigns the
       # entire placeholder to the arg (including dollar symbols) but we only
       # want what's inside the capture group
-
       parsed.content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
-        safe_join([cta_component($1), component("quote", $1), image($1)].compact)
+        safe_join([cta_component($1), component("quote", $1), image($1)].compact).strip
       end
     end
     # rubocop:enable Style/PerlBackrefs
