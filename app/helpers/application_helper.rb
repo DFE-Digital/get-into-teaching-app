@@ -122,6 +122,18 @@ module ApplicationHelper
     ["/cookie_preference", "/cookies", "/privacy-policy"].include?(path)
   end
 
+  def google_optimize_script
+    paths = google_optimize_config[:paths]
+    id = ENV["GOOGLE_OPTIMIZE_ID"]
+
+    return unless paths.present? && id.present?
+
+    javascript_pack_tag "google_optimize", 'data-turbolinks-track': "reload", data: {
+      "google-optimize-id": id,
+      "google-optimize-paths": paths,
+    }
+  end
+
   def google_optimize_config
     @@google_optimize_config ||=
       YAML.safe_load(File.read(Rails.root.join("config/google_optimize.yml")))

@@ -1,0 +1,17 @@
+body.blur > *:not(.cookie-acceptance, .optimize-overlay) {
+  // Any browser which supports CSS3
+  filter: blur(10px);
+  // Firefox version 34 and earlier
+  filter: url("../images/blur.svg#gaussian_blur");
+  // Webkit in Chrome 52, Safari 9, Opera 39, and earlier
+  -webkit-filter: blur(10px);
+}
+
+body.anti-flicker {
+  opacity: 0 !important;
+}
+
+.optimize-overlay {
+  @extend .dialog__background;
+  position: fixed !important;
+}
