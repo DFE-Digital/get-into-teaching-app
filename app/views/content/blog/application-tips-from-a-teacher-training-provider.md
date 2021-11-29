@@ -59,7 +59,7 @@ Whoever you choose, you should contact your references before you start writing 
 
 ## Responses
 
-The good news is that as soon as you press the Submit button on your application then it will appear in your chosen providers’ inboxes. Please do not expect an instant response, particularly if you are applying for School Direct places, as the lead school who handles the application process on behalf of a partnership may have to contact your chosen school and wait for them to consider your application and set up an interview. This can take some time to organise, particularly when some schools have two-week timetables.
+The good news is that as soon as you press the Submit button on your application then it will appear in your chosen providers’ inbox. Please do not expect an instant response, particularly if you are applying for School Direct places, as the lead school who handles the application process on behalf of a partnership may have to contact your chosen school and wait for them to consider your application and set up an interview. This can take some time to organise, particularly when some schools have two-week timetables.
 
 Please be patient and do attend all of your interviews, if you have been offered them, before making any final decisions. You never know – your first choice of school may not be your best choice and one of your other choices may prove to be a better fit for you.
 
