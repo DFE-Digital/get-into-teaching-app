@@ -224,8 +224,12 @@ $slightly-darker-grey: darken($grey, 10%);
 
     &__top-bar {
       display: flex;
-      overflow: clip;
       align-items: center;
+      overflow: hidden;
+
+      @supports(overflow: clip) {
+        overflow: clip;
+      }
 
       &--left {
         @include font-size(xsmall);
