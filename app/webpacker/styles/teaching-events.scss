@@ -20,6 +20,7 @@ $slightly-darker-grey: darken($grey, 10%);
 
 .teaching-events {
   header {
+    max-width: 65ch;
     margin: 1rem;
 
     h1 {
@@ -28,13 +29,15 @@ $slightly-darker-grey: darken($grey, 10%);
       display: inline-block;
       padding: .4rem;
 
-      @include mq($from: desktop) {
+      @include mq($from: tablet) {
         padding: 1rem;
       }
     }
 
-    p {
-      padding: 0 1rem;
+    @include mq($from: tablet) {
+      p {
+        padding: 0 1rem;
+      }
     }
 
     dl {
@@ -46,7 +49,7 @@ $slightly-darker-grey: darken($grey, 10%);
 
         @include mq($from: tablet) {
           flex-direction: row;
-          gap: 2rem;
+          gap: 1rem;
           padding-inline: 1rem;
         }
       }
@@ -58,15 +61,13 @@ $slightly-darker-grey: darken($grey, 10%);
       dt {
         font-weight: bold;
 
-        flex: 0 0 30%;
-      }
-
-      dl {
-        flex: 1 0 70%;
+        flex: 0 0 40%;
       }
 
       dd {
         margin-left: 0;
+
+        flex: 1 0 60%;
       }
 
       dd + dt {
