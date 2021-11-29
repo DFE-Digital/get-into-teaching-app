@@ -701,6 +701,11 @@ $slightly-darker-grey: darken($grey, 10%);
       margin-block: 2em;
     }
   }
+
+  .youtube-video-container {
+    max-width: 40em;
+    margin-block: 2em;
+  }
 }
 
 .what-theyre-saying {
