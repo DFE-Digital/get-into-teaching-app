@@ -70,6 +70,7 @@ $grey-very-light: #f3f2f1;
 
     .events-listing {
       background-color: $white;
+      padding-bottom: 1.5rem;
 
       .tab-bar {
         background-color: $white;
@@ -106,10 +107,6 @@ $grey-very-light: #f3f2f1;
         .username {
           margin: 0 30px 0 auto;
         }
-      }
-
-      .event-pagination {
-        min-height: 50px;
       }
     }
 
