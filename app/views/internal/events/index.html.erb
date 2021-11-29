@@ -50,9 +50,7 @@
             <%= render partial: "event", collection: @events %>
           </div>
         </div>
-        <div class="event-pagination">
-          <%= paginate @events %>
-        </div>
+        <%= paginate @events %>
       </section>
     </div>
   <% end %>
