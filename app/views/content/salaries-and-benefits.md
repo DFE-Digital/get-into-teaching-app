@@ -84,7 +84,7 @@ The teachers’ pension scheme is one of the most generous in the country. It is
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
-[Find our more about the teachers' pension scheme](https://www.teacherspensions.co.uk/members/new-starter.aspx)
+[Find out more about the teachers' pension scheme](https://www.teacherspensions.co.uk/members/new-starter.aspx)
 
 ## Establishing yourself as a teacher
 
