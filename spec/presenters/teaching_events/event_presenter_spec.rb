@@ -12,7 +12,7 @@ describe TeachingEvents::EventPresenter do
       end_at
       is_in_person
       is_online
-      is_online
+      is_virtual
       message
       name
       provider_website_url
