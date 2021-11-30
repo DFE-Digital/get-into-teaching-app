@@ -1,0 +1,24 @@
+<% if [
+    @event.provider_website_url,
+    @event.provider_target_audience,
+    @event.provider_organiser,
+    @event.provider_contact_email,
+  ].any?
+%>
+  <section class="teaching-event__provider-info">
+    <h2>Provider information</h2>
+
+    <% if @event.provider_website_url %>
+      <p><strong>Event website</strong><br><%= link_to(@event.provider_website_url, @event.provider_website_url, { target: "blank" }) %><em class="icon"></em></p>
+    <% end %>
+    <% if @event.provider_target_audience %>
+      <p><strong>Target audience</strong><br><%= @event.provider_target_audience %></p>
+    <% end %>
+    <% if @event.provider_organiser %>
+      <p><strong>Organiser</strong><br><%= @event.provider_organiser %></p>
+    <% end %>
+    <% if @event.provider_contact_email %>
+      <p><strong>Contact email</strong><br><%= mail_to(@event.provider_contact_email) %></p>
+    <% end %>
+  </section>
+<% end %>

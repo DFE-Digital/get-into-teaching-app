@@ -1,3 +1,9 @@
-<div class="about-event">
-  <%= tag.div(safe_html_format(@event.description)) %>
-</div>
+<h2>Event information</h2>
+
+<% if @event.message %>
+  <div class="teaching-event__message">
+    <%= tag.p(@event.message) %>
+  </div>
+<% end %>
+
+<%= tag.div(safe_html_format(@event.description)) %>

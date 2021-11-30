@@ -33,7 +33,9 @@ class TeachingEventsController < ApplicationController
   def show
     breadcrumb "Teaching events", "/teaching-events"
 
-    @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+    api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+    @event = TeachingEvents::EventPresenter.new(api_event)
+
     @page_title = @event.name
 
     render layout: "teaching_event"

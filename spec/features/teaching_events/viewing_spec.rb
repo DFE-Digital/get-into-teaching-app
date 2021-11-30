@@ -19,16 +19,12 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(page).to have_css(".date-and-time", text: event.start_at.to_formatted_s(:time))
       expect(page).to have_css(".date-and-time", text: event.end_at.to_formatted_s(:time))
 
-      within(".register") do
-        expect(page).to have_link("Register for this event", href: event_steps_path(event.readable_id))
-      end
+      expect(page).to have_link("Register for this event", href: event_steps_path(event.readable_id), count: 2)
 
-      within(".event-info > .event-summary") do
-        expect(page).to have_css(".about-ttt-event", text: /Watch presentations, ask questions/)
-        expect(page).to have_css("figure", text: "It was exactly what I needed")
+      expect(page).to have_css("h2", text: "Event information")
+      expect(page).to have_css("h2", text: "Venue information")
 
-        expect(page).not_to have_css(".about-event")
-      end
+      expect(page).not_to have_css("h2", text: "Provider information")
     end
   end
 
@@ -46,35 +42,56 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expect(page).not_to have_css(".register")
 
-      within(".event-info") do
-        expect(page).to have_css(".about-event", text: Regexp.new(Nokogiri.parse(event.description).text))
-
-        expect(page).not_to have_css(".about-ttt-event")
-      end
+      expect(page).to have_css("h2", text: "Event information")
+      expect(page).to have_css("h2", text: "Provider information")
     end
   end
 
   describe "viewing a train to teach event" do
-    let(:event) { build(:event_api) }
+    let(:event) { build(:event_api, :with_provider_info) }
 
     include_examples "train-to-teach teaching event"
   end
 
   describe "viewing a question time event" do
-    let(:event) { build(:event_api, :question_time_event) }
+    let(:event) { build(:event_api, :question_time_event, :with_provider_info) }
 
     include_examples "train-to-teach teaching event"
   end
 
   describe "viewing a online event" do
-    let(:event) { build(:event_api, :online_event) }
+    let(:event) { build(:event_api, :online_event, :with_provider_info) }
 
     include_examples "regular teaching event"
   end
 
   describe "viewing a school or university event" do
-    let(:event) { build(:event_api, :school_or_university_event) }
+    let(:event) { build(:event_api, :school_or_university_event, :with_provider_info) }
 
     include_examples "regular teaching event"
+  end
+
+  describe "provider information" do
+    let(:event) { build(:event_api, :school_or_university_event, :with_provider_info) }
+
+    before { visit teaching_event_path(event.readable_id) }
+
+    specify "the provider info is included on the page" do
+      within(".teaching-event__provider-info") do
+        expect(page).to have_css("h2", text: "Provider information")
+
+        expect(page).to have_content("Event website")
+        expect(page).to have_link(event.provider_website_url)
+
+        expect(page).to have_content("Target audience")
+        expect(page).to have_content(event.provider_target_audience)
+
+        expect(page).to have_content("Organiser")
+        expect(page).to have_content(event.provider_organiser)
+
+        expect(page).to have_content("Contact email")
+        expect(page).to have_link(event.provider_contact_email)
+      end
+    end
   end
 end

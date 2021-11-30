@@ -89,9 +89,15 @@ describe TeachingEvents::EventComponent, type: "component" do
       end
 
       context "when not train to teach" do
-        let(:event) { build(:event_api, :school_or_university_event) }
+        let(:event) { build(:event_api, :online_event) }
 
         it { expect(subject.classes).to eql("event event--regular") }
+      end
+
+      context "when training provider" do
+        let(:event) { build(:event_api, :school_or_university_event) }
+
+        it { expect(subject.classes).to eql("event event--regular event--training-provider") }
       end
     end
   end

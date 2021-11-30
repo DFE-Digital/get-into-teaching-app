@@ -93,6 +93,11 @@ RSpec.feature "Searching for teaching events", type: :feature do
         expect(page).to have_link(event.name, href: teaching_event_path(event.readable_id))
       end
     end
+
+    scenario "there is a link for event organisers to add their own events" do
+      expect(page).to have_content("Do you have a teaching event?")
+      expect(page).to have_link("please fill in our online form", href: "https://form.education.gov.uk/service/Provider-event-details---Get-into-Teaching-website")
+    end
   end
 
   describe "searching for events" do

@@ -52,6 +52,7 @@ module TeachingEvents
         "event",
         "event--train-to-teach" => train_to_teach?,
         "event--regular" => !train_to_teach?,
+        "event--training-provider" => school_and_university?,
       )
     end
   end
