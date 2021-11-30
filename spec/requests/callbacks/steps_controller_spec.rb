@@ -80,7 +80,7 @@ describe Callbacks::StepsController, type: :request do
           end
         end
 
-        it { is_expected.to redirect_to completed_callbacks_steps_path(date: "01 January 2021", time: "10:00 am") }
+        it { is_expected.to redirect_to completed_callbacks_steps_path(date: "01 January 2021", time: "10:00am") }
       end
 
       context "when invalid steps" do

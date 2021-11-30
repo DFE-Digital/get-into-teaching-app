@@ -29,8 +29,8 @@ RSpec.describe CallbackHelper, type: :helper do
 
     it {
       is_expected.to eq({
-        "Monday 6 April" => [["10:30 am - 11:00 am", utc_today]],
-        "Tuesday 7 April" => [["10:00 am - 10:30 am", utc_tomorrow]],
+        "Monday 6 April" => [["10:30am to 11:00am", utc_today]],
+        "Tuesday 7 April" => [["10:00am to 10:30am", utc_tomorrow]],
       })
     }
 
@@ -39,8 +39,8 @@ RSpec.describe CallbackHelper, type: :helper do
 
       it {
         is_expected.to eq({
-          "Monday 6 April" => [["12:30 pm - 1:00 pm", utc_today]],
-          "Tuesday 7 April" => [["12:00 pm - 12:30 pm", utc_tomorrow]],
+          "Monday 6 April" => [["12:30pm to 1:00pm", utc_today]],
+          "Tuesday 7 April" => [["12:00pm to 12:30pm", utc_tomorrow]],
         })
       }
     end

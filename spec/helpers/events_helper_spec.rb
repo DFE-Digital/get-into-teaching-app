@@ -34,7 +34,7 @@ describe EventsHelper, type: "helper" do
     let(:stacked) { true }
 
     context "with a single day event" do
-      it { is_expected.to eql "1 June 2020 <br> 10:00 - 12:00" }
+      it { is_expected.to eql "1 June 2020 <br> 10:00 to 12:00" }
     end
 
     context "with a multi day event" do
@@ -46,7 +46,7 @@ describe EventsHelper, type: "helper" do
     context "when not stacked" do
       let(:stacked) { false }
 
-      it { is_expected.to eql "1 June 2020 at 10:00 - 12:00" }
+      it { is_expected.to eql "1 June 2020 at 10:00 to 12:00" }
     end
   end
 

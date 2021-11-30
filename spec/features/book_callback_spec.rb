@@ -51,7 +51,7 @@ RSpec.feature "Book a callback", type: :feature do
     expect(page).to have_text "Choose a time for your callback"
     expect(find_field("Phone number").value).to eq(response.address_telephone)
     # Select time in local time zone (London)
-    select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
+    select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"
     click_on "Next step"
 
     expect(page).to have_text "Tell us what you’d like to talk to us about"
@@ -114,7 +114,7 @@ RSpec.feature "Book a callback", type: :feature do
     expect(page).to have_text "Enter a valid phone number"
     fill_in "Phone number", with: "123456789"
     # Select time in local time zone (London)
-    select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
+    select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"
     click_on "Next step"
 
     expect(page).to have_text "Tell us what you’d like to talk to us about"
