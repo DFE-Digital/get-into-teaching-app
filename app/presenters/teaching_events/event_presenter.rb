@@ -64,6 +64,10 @@ module TeachingEvents
       !type_id.in?([qt_event_type_id, ttt_event_type_id])
     end
 
+    def show_venue_information?
+      !@event.is_virtual && @event.building.present?
+    end
+
   private
 
     def ttt_event_type_id

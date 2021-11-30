@@ -32,7 +32,7 @@
     </article>
 
     <aside>
-      <%= render(partial: "teaching_events/show/venue-information") if @event.building.present? %>
+      <%= render(partial: "teaching_events/show/venue-information") if @event.show_venue_information? %>
     </aside>
   </div>
 
