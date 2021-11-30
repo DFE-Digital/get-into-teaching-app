@@ -77,13 +77,13 @@ For comparison, you'd work 227 days per year (on average) if you worked full tim
 
 ## Teachers' pension scheme
 
-The teachers’ pension scheme is one of the most generous in the country. It is:
+The teachers’ pension scheme is one of the most generous in the country. It is a 'defined benefit' pension and is:
 
 * based on your teaching salary rather than the amount of money you pay in
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
-[Find out more about the teachers' pension scheme](https://www.teacherspensions.co.uk/members/new-starter.aspx)
+You also get other insurance benefits too. You can find out more on [the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
 
 ## Establishing yourself as a teacher
 
