@@ -83,8 +83,8 @@ describe Events::Search do
 
   describe "validations" do
     describe "event #type" do
-      it { is_expected.to allow_value(GetIntoTeachingApiClient::Constants::EVENT_TYPES["Teain to Teach event"]).for :type }
-      it { is_expected.to allow_value(GetIntoTeachingApiClient::Constants::EVENT_TYPES["Teain to Teach event"].to_s).for :type }
+      it { is_expected.to allow_value(EventType.train_to_teach_event_id).for :type }
+      it { is_expected.to allow_value(EventType.train_to_teach_event_id.to_s).for :type }
       it { is_expected.to allow_value(nil).for :type }
       it { is_expected.to allow_value("").for :type }
       it { is_expected.not_to allow_value("2").for :type }
@@ -179,8 +179,8 @@ describe Events::Search do
 
       context "when searching Train to Teach events" do
         before do
-          subject.type = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
-          expected_attributes[:type_ids] << GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
+          subject.type = EventType.train_to_teach_event_id
+          expected_attributes[:type_ids] << EventType.question_time_event_id
         end
 
         it "queries Question Time and Train to Teach events" do

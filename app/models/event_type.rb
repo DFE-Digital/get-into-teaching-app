@@ -7,7 +7,7 @@ class EventType
     :school_or_university_event_id,
     :train_to_teach_event_id,
     :question_time_event_id,
-    to: :class
+    to: :class,
   )
 
   class << self
@@ -50,7 +50,7 @@ class EventType
   end
 
   def type
-    self.lookup_by_id(type_id)
+    lookup_by_id(type_id)
   end
 
   # this name might be confusing...

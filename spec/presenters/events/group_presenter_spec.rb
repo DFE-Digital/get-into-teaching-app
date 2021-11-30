@@ -13,13 +13,13 @@ describe Events::GroupPresenter do
 
   describe "#sorted_events_by_type" do
     let(:type_ids) { subject.sorted_events_by_type.map(&:first) }
-    let(:online_event_type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
+    let(:online_event_type_id) { EventType.online_event_id }
 
     it "returns events_by_type as an array of [type_id, events] tuples (with TTT and QT events combined)" do
       expect(subject.sorted_events_by_type).to eq([
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"], train_to_teach_events + question_time_events],
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"], online_events],
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"], school_and_university_events],
+        [EventType.train_to_teach_event_id, train_to_teach_events + question_time_events],
+        [EventType.online_event_id, online_events],
+        [EventType.school_or_university_event_id, school_and_university_events],
       ])
     end
 
@@ -48,13 +48,11 @@ describe Events::GroupPresenter do
         let(:question_time_events) { [] }
 
         it "still contains a key for Train to Teach events" do
-          train_to_teach_type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
-          expect(type_ids).to include(train_to_teach_type_id)
+          expect(type_ids).to include(EventType.train_to_teach_event_id)
         end
 
         it "does not contain a key for Question Time events" do
-          question_time_type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
-          expect(type_ids).not_to include(question_time_type_id)
+          expect(type_ids).not_to include(EventType.question_time_event_id)
         end
       end
     end
@@ -65,7 +63,7 @@ describe Events::GroupPresenter do
       let(:early) { build(:event_api, :online_event, start_at: 1.week.from_now) }
       let(:middle) { build(:event_api, :online_event, start_at: 2.weeks.from_now) }
       let(:late) { build(:event_api, :online_event, start_at: 3.weeks.from_now) }
-      let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
+      let(:type_id) { EventType.online_event_id }
       let(:unsorted_events) { [middle, late, early] }
       let(:ascending) { true }
 
@@ -101,9 +99,9 @@ describe Events::GroupPresenter do
       paginated_events_by_type = subject.paginated_events_by_type(pages_by_type, 3)
 
       expect(paginated_events_by_type).to eq([
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"], train_to_teach_events[0...3]],
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"], online_events[0...2]],
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"], school_and_university_events[3...6]],
+        [EventType.train_to_teach_event_id, train_to_teach_events[0...3]],
+        [EventType.online_event_id, online_events[0...2]],
+        [EventType.school_or_university_event_id, school_and_university_events[3...6]],
       ])
     end
 
@@ -112,13 +110,13 @@ describe Events::GroupPresenter do
       paginated_events_by_type = subject.paginated_events_by_type(pages_by_type)
 
       expect(paginated_events_by_type).to include(
-        [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"], school_and_university_events[0...9]],
+        [EventType.school_or_university_event_id, school_and_university_events[0...9]],
       )
     end
   end
 
   describe "#paginated_events_of_type" do
-    let(:type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
+    let(:type) { EventType.train_to_teach_event_id }
     let(:page) { 2 }
     let(:per_page) { 2 }
 
@@ -144,14 +142,14 @@ describe Events::GroupPresenter do
   end
 
   describe "#sorted_events_of_type" do
-    let(:type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
+    let(:type) { EventType.online_event_id }
 
     it "returns the events of the given type" do
       expect(subject.sorted_events_of_type(type)).to eq(online_events)
     end
 
     context "when type is Train to Teach event" do
-      let(:type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
+      let(:type) { EventType.train_to_teach_event_id }
 
       it "returns the Train to Teach and Question Time events" do
         expect(subject.sorted_events_of_type(type)).to eq(train_to_teach_events + question_time_events)

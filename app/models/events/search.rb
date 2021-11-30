@@ -80,8 +80,8 @@ module Events
       type_ids = [type]
 
       # We combine Question Time events with Train to Teach events
-      if type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
-        type_ids << GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
+      if type == EventType.train_to_teach_event_id
+        type_ids << EventType.question_time_event_id
       end
 
       type_ids.compact.presence

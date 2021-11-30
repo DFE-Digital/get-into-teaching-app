@@ -13,7 +13,7 @@ module Internal
               default: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
     attribute :type_id,
               :integer,
-              default: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+              default: EventType.school_or_university_event_id
     attribute :name, :string
     attribute :summary, :string
     attribute :description, :string
@@ -114,11 +114,11 @@ module Internal
     end
 
     def provider_event?
-      type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+      type_id == EventType.school_or_university_event_id
     end
 
     def online_event?
-      type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
+      type_id == EventType.online_event_id
     end
 
   private

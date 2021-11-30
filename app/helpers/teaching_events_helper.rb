@@ -1,6 +1,6 @@
 module TeachingEventsHelper
   def is_a_train_to_teach_event?(event)
-    event.type_id.in?(GetIntoTeachingApiClient::Constants::EVENT_TYPES.values_at("Train to Teach event", "Question Time"))
+    event.type_id.in?(EventType.lookup_by_names("Train to Teach event", "Question Time"))
   end
 
   def event_list_id(name)
@@ -15,7 +15,7 @@ module TeachingEventsHelper
   end
 
   def is_event_type?(event, type_name)
-    event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES[type_name]
+    event.type_id == EventType.lookup_by_name(type_name)
   end
 
   # override:

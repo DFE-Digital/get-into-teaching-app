@@ -59,7 +59,7 @@ describe EventsController, type: :request do
 
     context "with valid search params" do
       let(:event_type_name) { "School or University event" }
-      let(:event_type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES[event_type_name] }
+      let(:event_type) { EventType.lookup_by_name(event_type_name) }
       let(:search_params) do
         attributes_for(
           :events_search,
@@ -221,7 +221,7 @@ describe EventsController, type: :request do
         end
 
         context %(when the event is a 'School or University event') do
-          let(:event) { build(:event_api, web_feed_id: nil, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]) }
+          let(:event) { build(:event_api, web_feed_id: nil, type_id: EventType.school_or_university_event_id) }
 
           it { is_expected.to match(%r{To register for this event, follow the instructions in the event information section}) }
           it { is_expected.not_to match(%r{Sign up for this}) }

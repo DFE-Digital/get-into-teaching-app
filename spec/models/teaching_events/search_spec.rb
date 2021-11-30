@@ -49,11 +49,10 @@ describe TeachingEvents::Search do
   end
 
   describe "#results" do
-    event_types   = GetIntoTeachingApiClient::Constants::EVENT_TYPES
-    ttt           = event_types["Train to Teach event"]
-    qt            = event_types["Question Time"]
-    online        = event_types["Online event"]
-    school_or_uni = event_types["School or University event"]
+    ttt           = EventType.train_to_teach_event_id
+    qt            = EventType.question_time_event_id
+    online        = EventType.online_event_id
+    school_or_uni = EventType.school_or_university_event_id
 
     let(:fake_api) do
       instance_double(

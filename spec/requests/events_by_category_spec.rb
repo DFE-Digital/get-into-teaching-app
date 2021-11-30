@@ -93,7 +93,7 @@ describe "View events by category", type: :request do
     let(:blank_search) { { postcode: nil, quantity_per_type: nil, radius: nil, start_after: start_after, start_before: start_before, type_ids: nil } }
 
     it "queries events for the correct category" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+      type_id = EventType.school_or_university_event_id
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type).with(blank_search.merge(type_ids: [type_id], quantity_per_type: expected_limit))
       get event_category_path("school-and-university-events")
@@ -108,7 +108,7 @@ describe "View events by category", type: :request do
     let(:filter) { { postcode: "TE57 1NG", quantity_per_type: nil, radius: radius, start_after: start_after, start_before: start_before, type_ids: nil } }
 
     it "queries events for the correct category" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+      type_id = EventType.school_or_university_event_id
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type).with(filter.merge(type_ids: [type_id], quantity_per_type: expected_limit))
       get event_category_path("school-and-university-events", events_search: { distance: radius, postcode: postcode })

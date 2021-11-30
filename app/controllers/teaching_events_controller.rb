@@ -6,7 +6,7 @@ class TeachingEventsController < ApplicationController
   FEATURED_EVENT_COUNT = 2 # 2 featured events max on the first page
   EVENT_COUNT = 15 # 15 regular ones per page
 
-  FEATURED_EVENT_TYPES = GetIntoTeachingApiClient::Constants::EVENT_TYPES.values_at(
+  FEATURED_EVENT_TYPES = EventType.lookup_by_names(
     "Train to Teach event",
     "Question Time",
   ).freeze
