@@ -23,6 +23,8 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expect(page).to have_css("h2", text: "Event information")
       expect(page).to have_css("h2", text: "Venue information")
+
+      expect(page).not_to have_css("h2", text: "Provider information")
     end
   end
 
@@ -41,35 +43,36 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(page).not_to have_css(".register")
 
       expect(page).to have_css("h2", text: "Event information")
+      expect(page).to have_css("h2", text: "Provider information")
     end
   end
 
   describe "viewing a train to teach event" do
-    let(:event) { build(:event_api) }
+    let(:event) { build(:event_api, :with_provider_info) }
 
     include_examples "train-to-teach teaching event"
   end
 
   describe "viewing a question time event" do
-    let(:event) { build(:event_api, :question_time_event) }
+    let(:event) { build(:event_api, :question_time_event, :with_provider_info) }
 
     include_examples "train-to-teach teaching event"
   end
 
   describe "viewing a online event" do
-    let(:event) { build(:event_api, :online_event) }
+    let(:event) { build(:event_api, :online_event, :with_provider_info) }
 
     include_examples "regular teaching event"
   end
 
   describe "viewing a school or university event" do
-    let(:event) { build(:event_api, :school_or_university_event) }
+    let(:event) { build(:event_api, :school_or_university_event, :with_provider_info) }
 
     include_examples "regular teaching event"
   end
 
-  describe "provider events" do
-    let(:event) { build(:event_api, :with_provider_info) }
+  describe "provider information" do
+    let(:event) { build(:event_api, :school_or_university_event, :with_provider_info) }
 
     before { visit teaching_event_path(event.readable_id) }
 

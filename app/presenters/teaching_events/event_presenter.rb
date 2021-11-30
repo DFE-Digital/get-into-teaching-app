@@ -59,5 +59,19 @@ module TeachingEvents
         nil
       end
     end
+
+    def show_provider_information?
+      !type_id.in?([qt_event_type_id, ttt_event_type_id])
+    end
+
+  private
+
+    def ttt_event_type_id
+      GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+    end
+
+    def qt_event_type_id
+      GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
+    end
   end
 end

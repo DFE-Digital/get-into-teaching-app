@@ -46,28 +46,58 @@ describe TeachingEvents::EventPresenter do
     end
 
     describe "#quote" do
+      subject { described_class.new(event).quote }
+
       context "when event is a Train to Teach event" do
         let(:event) { build(:event_api, :train_to_teach_event) }
 
-        specify { expect(subject.quote).to match(/I got answers to questions/) }
+        specify { expect(subject).to match(/I got answers to questions/) }
       end
 
       context "when event is a Question Time event" do
         let(:event) { build(:event_api, :question_time_event) }
 
-        specify { expect(subject.quote).to match(/I got answers to questions/) }
+        specify { expect(subject).to match(/I got answers to questions/) }
       end
 
       context "when event is a School or University event" do
         let(:event) { build(:event_api, :school_or_university_event) }
 
-        specify { expect(subject.quote).to be_nil }
+        specify { expect(subject).to be_nil }
       end
 
       context "when event is a Online event" do
         let(:event) { build(:event_api, :online_event) }
 
-        specify { expect(subject.quote).to be_nil }
+        specify { expect(subject).to be_nil }
+      end
+    end
+
+    describe "#show_provider_information?" do
+      subject { described_class.new(event).show_provider_information? }
+
+      context "when event is a Train to Teach event" do
+        let(:event) { build(:event_api, :train_to_teach_event) }
+
+        specify { expect(subject).to be false }
+      end
+
+      context "when event is a Question Time event" do
+        let(:event) { build(:event_api, :question_time_event) }
+
+        specify { expect(subject).to be false }
+      end
+
+      context "when event is a School or University event" do
+        let(:event) { build(:event_api, :school_or_university_event) }
+
+        specify { expect(subject).to be true }
+      end
+
+      context "when event is a Online event" do
+        let(:event) { build(:event_api, :online_event) }
+
+        specify { expect(subject).to be true }
       end
     end
   end
