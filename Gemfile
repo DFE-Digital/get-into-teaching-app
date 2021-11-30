@@ -16,7 +16,7 @@ gem "webpacker", ">= 5.4.3"
 # gem 'mini_magick', '~> 4.8'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.9.1", require: false
+gem "bootsnap", ">= 1.9.3", require: false
 
 # Manage multiple processes i.e. web server and webpack
 gem "foreman"
@@ -58,7 +58,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.44.0"
+gem "view_component", "~> 2.45.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
