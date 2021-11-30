@@ -22,6 +22,10 @@
   <%= search_structured_data if current_page?(root_path) %>
   <%= how_to_structured_data(@page) if @page.present? && @front_matter.key?("how_to") %>
 
+  <% if @front_matter&.dig("noindex") %>
+    <%= meta_tag(key: "robots", value: "noindex") %>
+  <% end %>
+
   <% if @front_matter && @front_matter['description'] %>
     <%= meta_tag(key: 'description', value: @front_matter['description']) %>
     <%= meta_tag(key: 'description', value: @front_matter['description'], opengraph: true) %>
