@@ -20,7 +20,6 @@ $slightly-darker-grey: darken($grey, 10%);
 
 .teaching-events {
   header {
-    max-width: 65ch;
     margin: 1rem;
 
     h1 {
@@ -61,13 +60,13 @@ $slightly-darker-grey: darken($grey, 10%);
       dt {
         font-weight: bold;
 
-        flex: 0 0 40%;
+        flex: 0 1 25%;
       }
 
       dd {
         margin-left: 0;
 
-        flex: 1 0 60%;
+        flex: 1 0 75%;
       }
 
       dd + dt {
