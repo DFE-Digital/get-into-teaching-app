@@ -85,7 +85,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     before { visit teaching_event_path(event.readable_id) }
 
     specify "the provider info is included on the page" do
-      within(".teaching-event__provider-info") do
+      within(".teaching-event__provider-information") do
         expect(page).to have_css("h2", text: "Provider information")
 
         expect(page).to have_content("Event website")

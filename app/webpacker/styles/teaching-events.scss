@@ -580,6 +580,12 @@ $slightly-darker-grey: darken($grey, 10%);
   &__how-to-attend {
     margin-top: 2em;
   }
+
+  &__provider-information {
+    h2 {
+      @include font-size(medium);
+    }
+  }
 }
 
 .teaching-events__about-ttt-banner {
