@@ -16,6 +16,7 @@ class ApplicationController < ActionController::Base
   before_action :set_api_client_request_id
   before_action :record_utm_codes
   before_action :add_home_breadcrumb
+  before_action :declare_frontmatter
 
   after_action :post_processing
 
@@ -28,6 +29,12 @@ protected
   end
 
 private
+
+  def declare_frontmatter
+    # Not all pages have frontmatter, but ensuring it
+    # is declared everywhere simplifies its use throughout.
+    @front_matter ||= {}
+  end
 
   def post_processing
     process_images
