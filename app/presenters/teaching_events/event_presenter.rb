@@ -25,6 +25,7 @@ module TeachingEvents
       :scribble_id,
       :start_at,
       :type_id,
+      :status_id,
       to: :event,
     )
 

@@ -25,6 +25,7 @@ describe TeachingEvents::EventPresenter do
       scribble_id
       start_at
       type_id
+      status_id
     ].each { |attribute| it { is_expected.to delegate_method(attribute).to(:event) } }
   end
 
