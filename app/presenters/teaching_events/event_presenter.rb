@@ -61,12 +61,20 @@ module TeachingEvents
       end
     end
 
+    def allow_registration?
+      open? && type_id.in?([qt_event_type_id, ttt_event_type_id])
+    end
+
     def show_provider_information?
       !type_id.in?([qt_event_type_id, ttt_event_type_id])
     end
 
     def show_venue_information?
       !@event.is_virtual && @event.building.present?
+    end
+
+    def open?
+      (start_at >= Time.zone.now && status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"])
     end
 
   private

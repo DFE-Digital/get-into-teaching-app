@@ -45,6 +45,8 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(page).to have_css("h2", text: "Event information")
       expect(page).to have_css("h2", text: "Provider information")
 
+      expect(page).not_to have_link("Register for this event")
+
       if expect_venue
         expect(page).to have_css("h2", text: "Venue information")
       else

@@ -129,5 +129,55 @@ describe TeachingEvents::EventPresenter do
         it { is_expected.to be true }
       end
     end
+
+    describe "#open?" do
+      subject { described_class.new(event).open? }
+
+      context "when the event's status is open and it's in the future" do
+        let(:event) { build(:event_api) }
+
+        it { is_expected.to be true }
+      end
+
+      context "when the event's status is open and it's in the past" do
+        let(:event) { build(:event_api, :past) }
+
+        it { is_expected.to be false }
+      end
+
+      context "when the event's status is closed and it's in the future" do
+        let(:event) { build(:event_api, :closed) }
+
+        it { is_expected.to be false }
+      end
+    end
+
+    describe "#allow_registration?" do
+      subject { described_class.new(event).allow_registration? }
+
+      context "when event is a future Train to Teach event" do
+        let(:event) { build(:event_api, :train_to_teach_event) }
+
+        specify { expect(subject).to be true }
+      end
+
+      context "when event is a future Question Time event" do
+        let(:event) { build(:event_api, :question_time_event) }
+
+        specify { expect(subject).to be true }
+      end
+
+      context "when event is a past Train to Teach event" do
+        let(:event) { build(:event_api, :past, :question_time_event) }
+
+        specify { expect(subject).to be false }
+      end
+
+      context "when event is a future non-Train to Teach event" do
+        let(:event) { build(:event_api, :school_or_university_event) }
+
+        specify { expect(subject).to be false }
+      end
+    end
   end
 end

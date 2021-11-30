@@ -20,6 +20,10 @@ FactoryBot.define do
       status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"] }
     end
 
+    trait :past do
+      start_at { 2.weeks.ago }
+    end
+
     trait :with_provider_info do
       provider_website_url { "https://event-provider.com" }
       provider_target_audience { "Anyone interested in teaching from Sept 2021" }
