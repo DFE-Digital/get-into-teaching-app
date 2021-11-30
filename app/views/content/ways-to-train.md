@@ -2,7 +2,7 @@
 title: "Ways to train"
 image: "media/images/content/hero-images/0003.jpg"
 description: |-
-  Official Department for Education guidance on teacher training. Find out how to become a teacher, get qualified teacher status (QTS) through a PGCE or school direct and the salaries and funding available. 
+  Read this Department for Education guidance to find out about teacher training courses, PGCEs, School Direct, and the different routes into teaching.
 subtitle: Get information and support to help you become a teacher. 
 subtitle_button: "Register for updates"
 subtitle_link: "/mailinglist/signup/name"

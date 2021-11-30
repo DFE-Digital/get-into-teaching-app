@@ -1,8 +1,7 @@
 ---
 title: Tips on applying for teacher training
 description: |-
-  Read these tips on applying for teacher training to maximise your chances of
-  being accepted on to initial teacher training, including when to apply for teaching training, how to write a good application, how to ensure you choose the right references, your personal statement and what to do if you get invited to interview.
+  Read these tips on completing your teacher training application and choosing teacher training references. With advice on personal statements and when to apply.
 date: "2021-06-24"
 keywords:
   - adviser

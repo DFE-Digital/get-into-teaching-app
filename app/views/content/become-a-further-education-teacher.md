@@ -3,7 +3,7 @@ title: Become a further education teacher
 article_classes: ['longform']
 image: "media/images/content/hero-images/0015.jpg"
 description: |-
-  Further education is any study that takes place after secondary school but outside of higher education (e.g. university). 
+  Find out how to become a college teacher in the UK. This Department for Education page has links to advice and support on teacher training in further education.
 date: "2021-06-18"
 keywords:
   - Further
