@@ -32,11 +32,11 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.2.0",
-    "jest": "^27.4.2",
-    "prettier": "^2.4.1",
+    "jest": "^27.4.3",
+    "prettier": "^2.5.0",
     "stylelint": "^13.13.1",
     "stylelint-config-gds": "^0.1.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.3"
   },
   "resolutions": {
     "glob-parent": "^5.1.2",
