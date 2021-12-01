@@ -127,6 +127,27 @@ describe ApplicationHelper do
     end
   end
 
+  describe "#new_gtm_enabled?" do
+    it "returns true when GTM_ID is present and legacy_tracking_pixels is false" do
+      allow(ENV).to receive(:[]).with("GTM_ID").and_return("ABC-123")
+      allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(false)
+
+      expect(helper).to be_new_gtm_enabled
+    end
+
+    it "returns false when GTM_ID is blank or legacy_tracking_pixels is true" do
+      allow(ENV).to receive(:[]).with("GTM_ID").and_return("ABC-123")
+      allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(true)
+
+      expect(helper).not_to be_new_gtm_enabled
+
+      allow(ENV).to receive(:[]).with("GTM_ID").and_return(nil)
+      allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(false)
+
+      expect(helper).not_to be_new_gtm_enabled
+    end
+  end
+
   describe "#internal_referer" do
     before { helper.request = instance_double("ActionDispatch::Request") }
 

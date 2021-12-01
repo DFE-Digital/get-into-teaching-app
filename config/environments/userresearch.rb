@@ -8,5 +8,7 @@ Rails.application.configure do
   config.x.static_pages.disable_caching = true
   config.x.utm_codes = true
 
+  config.x.legacy_tracking_pixels = true
+
   Rack::Attack.enabled = false
 end
