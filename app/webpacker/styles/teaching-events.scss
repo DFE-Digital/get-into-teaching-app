@@ -394,7 +394,7 @@ $slightly-darker-grey: darken($grey, 10%);
     grid-template-rows: repeat(3, auto) 1em;
 
     @include mq($from: tablet) {
-      grid-template-rows: minmax(2rem, auto) 2rem minmax(2rem, auto) 2rem;
+      grid-template-rows: minmax(2rem, auto) 5rem minmax(2rem, auto) 2rem;
       grid-template-columns: minmax(5rem, auto) minmax(auto, 50rem) 10rem minmax(auto, 20rem) minmax(5rem, auto);
 
       .breadcrumbs-and-heading {
@@ -486,16 +486,24 @@ $slightly-darker-grey: darken($grey, 10%);
 
     .image {
       padding-bottom: 1rem;
+      img {
+        width: 100%;
+      }
 
       @include mq($from: tablet) {
         img {
-          max-width: 14em;
+          margin: 1em;
+          max-height: 14em;
+          object-position: center;
         }
         padding-bottom: 0;
       }
     }
 
     .triangle {
+      // slight hack, but helps ensure there's no gap between
+      // the triangle and the block above
+      margin-top: -2px;
       background-color: white;
 
       &.yellow {
