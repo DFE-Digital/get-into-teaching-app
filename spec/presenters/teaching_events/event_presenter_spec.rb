@@ -74,6 +74,36 @@ describe TeachingEvents::EventPresenter do
       end
     end
 
+    describe "#image" do
+      subject { described_class.new(event).image }
+
+      context "when event is a Train to Teach event" do
+        let(:event) { build(:event_api, :train_to_teach_event) }
+
+        specify { expect(subject.first).to end_with(".jpg") }
+        specify { expect(subject.second).to have_key(:alt) }
+      end
+
+      context "when event is a Question Time event" do
+        let(:event) { build(:event_api, :question_time_event) }
+
+        specify { expect(subject.first).to end_with(".jpg") }
+        specify { expect(subject.second).to have_key(:alt) }
+      end
+
+      context "when event is a School or University event" do
+        let(:event) { build(:event_api, :school_or_university_event) }
+
+        specify { expect(subject).to be_nil }
+      end
+
+      context "when event is a Online event" do
+        let(:event) { build(:event_api, :online_event) }
+
+        specify { expect(subject).to be_nil }
+      end
+    end
+
     describe "#show_provider_information?" do
       subject { described_class.new(event).show_provider_information? }
 

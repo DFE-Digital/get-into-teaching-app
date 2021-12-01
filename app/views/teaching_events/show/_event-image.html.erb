@@ -1,3 +1,7 @@
-<div class="image">
-  <%= image_pack_tag("media/images/content/event-signup/birmingham-event-1.jpg", alt: "A bustling Train to Teach event in action") %>
-</div>
+<% image_args = @event.image %>
+
+<% if image_args %>
+  <div class="image">
+    <%= image_pack_tag(*image_args) %>
+  </div>
+<% end %>

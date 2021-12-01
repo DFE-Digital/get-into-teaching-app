@@ -53,7 +53,20 @@ module TeachingEvents
       when "Train to Teach event", "Question Time"
         "So useful! I got answers to questions I didn't know I had yet and I'm so inspired and excited."
 
-      # FIXME: the alternatives quotes might be added later
+      when "Online event"
+        nil
+      when "School or University event"
+        nil
+      end
+    end
+
+    def image
+      case event_type
+      when "Train to Teach event", "Question Time"
+        [
+          "media/images/content/event-signup/birmingham-event-1.jpg",
+          { alt: "A bustling Train to Teach event taking place in a church, busy with stalls and visitors" },
+        ]
       when "Online event"
         nil
       when "School or University event"
