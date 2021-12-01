@@ -32,7 +32,17 @@ keywords:
 
 You can visit schools to get experience in the classroom.
 
-It can help you:
+It can help you: 
+
+* decide if you want to do teacher training
+* discover which setting you’d like to teach in (primary or secondary)
+* build a relationship with a school you might want to work for later
+
+## What to expect
+
+You can do virtual or in-school experience. Placements are usually one or 2 days long, but some can be as long as 3 weeks.
+
+During your experience, you’ll get to do things like: 
 
 * observe lessons
 * see how teachers manage a classroom
