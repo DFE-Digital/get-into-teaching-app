@@ -656,6 +656,11 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
             margin-block: 1em;
           }
 
+          .q,
+          .a {
+            margin: 0;
+          }
+
           .q {
             font-weight: bold;
 
@@ -665,8 +670,6 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           }
 
           .a {
-            margin: 0;
-
             figcaption,
             blockquote {
               @include reset;
