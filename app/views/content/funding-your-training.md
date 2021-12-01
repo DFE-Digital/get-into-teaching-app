@@ -36,6 +36,8 @@
           scholarship you can chat to us, or call us on <a href="tel:08003892500">0800 389 2500</a>.</p>
 
           <p>Open Monday to Friday between 8:30am and 5:30pm.</p>
+          
+          <p>Please note that the contact centre will be shut on bank holidays over the Christmas period, on Monday 27th December, Tuesday 28th December, and Monday 3rd January. There will also be an early close of 1pm on Christmas Eve. Responses may be slower during this period.</p>
     get-school-experience:
       name: simple
       arguments:
