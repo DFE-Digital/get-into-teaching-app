@@ -164,7 +164,6 @@ $mobile-cutoff: 800px;
 
       > span {
         @include font-size("large");
-        border-bottom: 3px solid $black;
 
         &:after {
           content: ".";
@@ -172,7 +171,6 @@ $mobile-cutoff: 800px;
 
         @include mq($from: tablet) {
           @include font-size("xxlarge");
-          border-bottom: 5px solid $black;
         }
       }
     }
