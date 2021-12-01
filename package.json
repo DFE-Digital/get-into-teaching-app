@@ -32,7 +32,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.1.1",
-    "jest": "^27.3.1",
+    "jest": "^27.4.2",
     "prettier": "^2.4.1",
     "stylelint": "^13.13.1",
     "stylelint-config-gds": "^0.1.0",
