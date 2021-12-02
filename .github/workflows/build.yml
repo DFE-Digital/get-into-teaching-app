@@ -38,13 +38,6 @@ jobs:
           yaml_secret: INFRA-KEYS
           secrets: 'SLACK-WEBHOOK'
 
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: PROD-RAILS-MASTER-KEY
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secrets: 'PROD-RAILS-MASTER-KEY'
-          
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@master
         with:
@@ -99,7 +92,6 @@ jobs:
           push: true
           build-args: |
                       SHA=${{ steps.sha.outputs.short }}
-                      RAILS_MASTER_KEY=${{ steps.PROD-RAILS-MASTER-KEY.outputs.secret-value }}
 
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'

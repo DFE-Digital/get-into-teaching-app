@@ -132,8 +132,7 @@ export default class GoogleOptimize {
   }
 
   listenForTurboBeforeVisit() {
-    this.turboBeforeVisitHandler =
-      this.handleTurboBeforeVisit.bind(this);
+    this.turboBeforeVisitHandler = this.handleTurboBeforeVisit.bind(this);
     document.addEventListener(
       'turbo:before-visit',
       this.turboBeforeVisitHandler
