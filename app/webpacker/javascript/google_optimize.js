@@ -120,14 +120,14 @@ export default class GoogleOptimize {
   }
 
   handleTurboBeforeVisit(event) {
-    const path = new URL(event.data.url).pathname;
+    const path = new URL(event.detail.url).pathname;
 
     if (this.canExperiment(path)) {
       // Cancel Turbo page change.
       event.preventDefault();
       // Force a full page reload to initialize the optimize script
       // and serve the correct variant.
-      window.location.href = event.data.url;
+      window.location.href = event.detail.url;
     }
   }
 

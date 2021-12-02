@@ -35,10 +35,9 @@ describe('Google Optimize', () => {
   };
 
   const dispatchBeforeVisit = (url) => {
-    const event = document.createEvent('Events');
-    event.initEvent('turbo:before-visit', true, true);
-    event.data = { url: url };
-
+    const event = new CustomEvent('turbo:before-visit', {
+      detail: { url: url },
+    });
     document.dispatchEvent(event);
   };
 

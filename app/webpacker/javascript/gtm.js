@@ -18,7 +18,7 @@ export default class Gtm {
 
     // We use this to retain Google Ads tracking parameters in the
     // URL of the landing page (or they are subsequently lost when
-    // Turbolinks transitions).
+    // Turbo transitions).
     window.dataLayer.push({ originalLocation: this.originalLocation });
 
     function gtag() {
