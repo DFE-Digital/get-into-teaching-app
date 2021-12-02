@@ -34,13 +34,13 @@ You can visit schools to get experience in the classroom.
 
 It can help you: 
 
-* decide if you want to do teacher training
+* decide if you want to train to be a teacher
 * discover which setting you’d like to teach in (primary or secondary)
 * build a relationship with a school you might want to work for later
 
 ## What to expect
 
-You can do virtual or in-school experience. Placements are usually one or 2 days long, but some can be as long as 3 weeks.
+Your experience will either be in a school or joining classes and meeting teachers online. Placements usually last one or 2 days, but some can last up to 3 weeks.
 
 During your experience, you’ll get to do things like: 
 
@@ -54,7 +54,7 @@ During your experience, you’ll get to do things like:
 
 Use our [Get school experience service](https://schoolexperience.education.gov.uk/) to search for and request experience in England.
 
-If you cannot find what you’re looking for, you can contact schools yourself. [Find schools near you](https://get-information-schools.service.gov.uk/) and give them a ring to find out who to talk to about getting school experience. They may ask you to have a DBS check before attending.
+If you cannot find what you’re looking for, you can call a school directly. You can [find schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience. They may ask you to have a DBS check before attending.
 
 <!--- ## Maths or physics teaching internships
 
