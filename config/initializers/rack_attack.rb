@@ -98,6 +98,7 @@ module Rack
 
     html = ApplicationController.render(
       template: "errors/too_many_requests",
+      assigns: { front_matter: {} },
     )
 
     [429, { "Content-Type" => "text/html" }, [html]]

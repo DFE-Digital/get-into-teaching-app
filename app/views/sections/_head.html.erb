@@ -22,11 +22,11 @@
   <%= search_structured_data if current_page?(root_path) %>
   <%= how_to_structured_data(@page) if @page.present? && @front_matter.key?("how_to") %>
 
-  <% if @front_matter&.dig("noindex") %>
+  <% if @front_matter["noindex"] %>
     <%= meta_tag(key: "robots", value: "noindex") %>
   <% end %>
 
-  <% if @front_matter && @front_matter['description'] %>
+  <% if @front_matter['description'] %>
     <%= meta_tag(key: 'description', value: @front_matter['description']) %>
     <%= meta_tag(key: 'description', value: @front_matter['description'], opengraph: true) %>
   <% end %>
@@ -38,7 +38,7 @@
   <%= meta_tag(key: "facebook-domain-verification", value: "h1r6sd9bvqql7fyzy5jmdoniuw1rtf") %>
   <%= image_meta_tags(
     base_url: request.base_url,
-    image_path: @front_matter&.dig("image"),
+    image_path: @front_matter["image"],
     alt: "Photograph of teaching taking place in a classroom"
   ) %>
 </head>
