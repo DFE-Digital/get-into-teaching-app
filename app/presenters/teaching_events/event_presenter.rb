@@ -26,6 +26,7 @@ module TeachingEvents
       :start_at,
       :type_id,
       :status_id,
+      :video_url,
       to: :event,
     )
 

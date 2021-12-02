@@ -26,6 +26,7 @@ describe TeachingEvents::EventPresenter do
       start_at
       type_id
       status_id
+      video_url
     ].each { |attribute| it { is_expected.to delegate_method(attribute).to(:event) } }
   end
 

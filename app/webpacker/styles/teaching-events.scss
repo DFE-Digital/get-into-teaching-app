@@ -594,6 +594,10 @@ $slightly-darker-grey: darken($grey, 10%);
       @include font-size(medium);
     }
   }
+
+  &__video {
+    margin-block: 2em;
+  }
 }
 
 .teaching-events__about-ttt-banner {

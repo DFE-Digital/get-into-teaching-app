@@ -7,3 +7,9 @@
 <% end %>
 
 <%= tag.div(safe_html_format(@event.description)) %>
+
+<% if @event.video_url %>
+  <div class="teaching-event__video youtube-video-container">
+    <%= tag.iframe(src: embed_event_video_url(@event.video_url), frameborder: "0", allowfullscreen: true, title: "Train to Teach Events: Take your next step towards teaching") %>
+  </div>
+<% end %>

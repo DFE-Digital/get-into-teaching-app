@@ -8,16 +8,11 @@
     <div class="event-details">
       <%= render(partial: 'teaching_events/show/date-and-time') %>
       <%= render(partial: 'teaching_events/show/location-and-setting') %>
-      <%= render(partial: 'teaching_events/show/register-button') if is_a_train_to_teach_event?(@event) %>
+      <%= render(partial: 'teaching_events/show/register-button') if @event.allow_registration? %>
     </div>
 
     <%= render(partial: 'teaching_events/show/event-image') %>
-
-    <div class="triangle yellow">
-      <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0,100 0,0 100,0" />
-      </svg>
-    </div>
+    <%= render(partial: 'teaching_events/show/triangle') %>
   </header>
 
   <div class="container teaching-event__info">
