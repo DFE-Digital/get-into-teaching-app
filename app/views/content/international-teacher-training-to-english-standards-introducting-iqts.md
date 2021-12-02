@@ -42,7 +42,7 @@ International qualified teacher status (iQTS) is a new teaching qualification ba
 
 6. Unlike an iPGCE, iQTS is a UK-government backed professional qualification which qualifies you to teach in all schools in England
 
-## Who is iQTS for?
+## Learn who iQTS is for
 
 iQTS is a teaching qualification designed for UK and non-UK citizens living outside the UK. If you are a UK or non-UK citizen living in England, you should [apply for teacher training in England](/steps-to-become-a-teacher). 
 
