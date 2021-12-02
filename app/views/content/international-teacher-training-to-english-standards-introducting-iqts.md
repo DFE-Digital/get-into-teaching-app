@@ -161,9 +161,6 @@ You can apply for teaching jobs in England using the [Teaching Vacancies](https:
 As a newly qualified teacher, you’ll find some schools in England will require you to complete a 2-year induction period. During this time you’ll work and be assessed as a paid teacher as part of DfE’s [Early Career Framework](https://www.gov.uk/government/publications/early-career-framework). You’ll be expected to show you meet the Teachers’ Standards and you’ll also benefit from training and mentoring.
 You can complete your induction in a relevant school in England (see [Induction for early career teachers (England), para 2.1](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/972316/Statutory_Induction_Guidance_2021_final__002_____1___1_.pdf)) or a [DfE-accredited British School Overseas](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#stat).
 
-#### Extending your visa to stay in the UK
-Visa routes are open to international teachers wishing to extend their stay in the UK. For example, a [skilled worker visa](https://www.gov.uk/skilled-worker-visa) lasts 5 years and can be extended as many times as you like. 
-
 ## Further information
 Learn more about [iQTS policy](https://www.gov.uk/government/publications/international-qualified-teacher-status-iqts/introducing-the-international-qualified-teacher-status-iqts-pilot) and [Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards). 
 
