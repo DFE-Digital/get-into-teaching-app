@@ -8,18 +8,11 @@
     <div class="event-details">
       <%= render(partial: 'teaching_events/show/date-and-time') %>
       <%= render(partial: 'teaching_events/show/location-and-setting') %>
-      <%= render(partial: 'teaching_events/show/register-button') if is_a_train_to_teach_event?(@event) %>
+      <%= render(partial: 'teaching_events/show/register-button') if @event.allow_registration? %>
     </div>
 
-    <div class="image">
-      <%= image_pack_tag("media/images/content/hero-images/0017.jpg", alt: "A photograph of the venue", class: "event-info__venue_img") %>
-    </div>
-
-    <div class="triangle yellow">
-      <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
-        <polygon points="0,100 0,0 100,0" />
-      </svg>
-    </div>
+    <%= render(partial: 'teaching_events/show/event-image') %>
+    <%= render(partial: 'teaching_events/show/triangle') %>
   </header>
 
   <div class="container teaching-event__info">
@@ -27,12 +20,12 @@
       <%= render(partial: "teaching_events/show/event-summary") %>
       <%= render(partial: "teaching_events/show/attending-training-providers") %>
       <%= render(partial: "teaching_events/show/scribble") if @event.scribble_id.present? %>
-      <%= render(partial: "teaching_events/show/how-to-attend") if is_a_train_to_teach_event?(@event) %>
+      <%= render(partial: "teaching_events/show/how-to-attend") if @event.allow_registration? %>
       <%= render(partial: "teaching_events/show/provider-info") if @event.show_provider_information? %>
     </article>
 
     <aside>
-      <%= render(partial: "teaching_events/show/venue-information") if @event.building.present? %>
+      <%= render(partial: "teaching_events/show/venue-information") if @event.show_venue_information? %>
     </aside>
   </div>
 

@@ -12,7 +12,7 @@ module TeachingEvents
       :end_at,
       :is_in_person,
       :is_online,
-      :is_online,
+      :is_virtual,
       :message,
       :name,
       :provider_contact_email,
@@ -25,6 +25,8 @@ module TeachingEvents
       :scribble_id,
       :start_at,
       :type_id,
+      :status_id,
+      :video_url,
       to: :event,
     )
 
@@ -52,7 +54,6 @@ module TeachingEvents
       when "Train to Teach event", "Question Time"
         "So useful! I got answers to questions I didn't know I had yet and I'm so inspired and excited."
 
-      # FIXME: the alternatives quotes might be added later
       when "Online event"
         nil
       when "School or University event"
@@ -60,8 +61,34 @@ module TeachingEvents
       end
     end
 
+    def image
+      case event_type
+      when "Train to Teach event", "Question Time"
+        [
+          "media/images/content/event-signup/birmingham-event-1.jpg",
+          { alt: "A bustling Train to Teach event taking place in a church, busy with stalls and visitors" },
+        ]
+      when "Online event"
+        nil
+      when "School or University event"
+        nil
+      end
+    end
+
+    def allow_registration?
+      open? && type_id.in?([qt_event_type_id, ttt_event_type_id])
+    end
+
     def show_provider_information?
       !type_id.in?([qt_event_type_id, ttt_event_type_id])
+    end
+
+    def show_venue_information?
+      !@event.is_virtual && @event.building.present?
+    end
+
+    def open?
+      (start_at >= Time.zone.now && status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"])
     end
 
   private

@@ -28,7 +28,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
   end
 
-  shared_examples "regular teaching event" do
+  shared_examples "regular teaching event" do |expect_venue|
     scenario "the page has the right contents" do
       visit teaching_event_path(event.readable_id)
 
@@ -44,6 +44,14 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
       expect(page).to have_css("h2", text: "Event information")
       expect(page).to have_css("h2", text: "Provider information")
+
+      expect(page).not_to have_link("Register for this event")
+
+      if expect_venue
+        expect(page).to have_css("h2", text: "Venue information")
+      else
+        expect(page).not_to have_css("h2", text: "Venue information")
+      end
     end
   end
 
@@ -62,13 +70,13 @@ RSpec.feature "Searching for teaching events", type: :feature do
   describe "viewing a online event" do
     let(:event) { build(:event_api, :online_event, :with_provider_info) }
 
-    include_examples "regular teaching event"
+    include_examples "regular teaching event", false
   end
 
   describe "viewing a school or university event" do
     let(:event) { build(:event_api, :school_or_university_event, :with_provider_info) }
 
-    include_examples "regular teaching event"
+    include_examples "regular teaching event", true
   end
 
   describe "provider information" do
@@ -77,7 +85,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     before { visit teaching_event_path(event.readable_id) }
 
     specify "the provider info is included on the page" do
-      within(".teaching-event__provider-info") do
+      within(".teaching-event__provider-information") do
         expect(page).to have_css("h2", text: "Provider information")
 
         expect(page).to have_content("Event website")
