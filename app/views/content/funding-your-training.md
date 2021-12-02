@@ -18,7 +18,6 @@
         icon: "icon-calendar"
         hide_on_mobile: Yes
         hide_on_tablet: Yes
-  lid_pixel_event: "Funding"
   jump_links:
     Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"
     Bursaries and scholarships: "#bursaries-and-scholarships"

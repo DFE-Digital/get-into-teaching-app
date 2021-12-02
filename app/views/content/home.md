@@ -5,7 +5,6 @@
     Read official Department for Education information to help you become a teacher. Learn about funding, teacher training, and steps to become a teacher. 
   date: "2021-06-16"
   fullwidth: true
-  lid_pixel_event: "Homepage"
   subtitle: "Get information and support to help you become a teacher."
   subtitle_button: "Register for updates"
   subtitle_link: "/mailinglist/signup/name"

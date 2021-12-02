@@ -2,149 +2,27 @@ require "rails_helper"
 
 describe ApplicationHelper do
   describe "#analytics_body_tag" do
-    subject { analytics_body_tag { "<h1>TEST</h1>".html_safe } }
+    subject { analytics_body_tag(data: { timefmt: "24", controller: "something" }, class: "homepage") { tag.hr } }
 
-    let(:id) { "1234" }
-    let(:gtm_id) { id }
-    let(:ga_id) { id }
-    let(:adwords_id) { id }
-    let(:bam_id) { id }
-    let(:lid_id) { id }
-    let(:pinterest_id) { id }
-    let(:snapchat_id) { id }
-    let(:facebook_id) { id }
-    let(:twitter_id) { id }
-
-    before do
-      allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(true)
-      allow(ENV).to receive(:[]).and_call_original
-      allow(ENV).to receive(:[]).with("GOOGLE_TAG_MANAGER_ID").and_return gtm_id
-      allow(ENV).to receive(:[]).with("GOOGLE_ANALYTICS_ID").and_return ga_id
-      allow(ENV).to receive(:[]).with("GOOGLE_AD_WORDS_ID").and_return adwords_id
-      allow(ENV).to receive(:[]).with("PINTEREST_ID").and_return pinterest_id
-      allow(ENV).to receive(:[]).with("SNAPCHAT_ID").and_return snapchat_id
-      allow(ENV).to receive(:[]).with("FACEBOOK_ID").and_return facebook_id
-      allow(ENV).to receive(:[]).with("TWITTER_ID").and_return twitter_id
-      allow(ENV).to receive(:[]).with("BAM_ID").and_return bam_id
-      allow(ENV).to receive(:[]).with("LID_ID").and_return lid_id
-    end
-
-    it { is_expected.to have_css "body h1" }
-
-    describe "the stimulus controllers" do
-      it { is_expected.to have_css "body[data-controller~=gtm]" }
-      it { is_expected.to have_css "body[data-controller~=pinterest]" }
-      it { is_expected.to have_css "body[data-controller~=snapchat]" }
-      it { is_expected.to have_css "body[data-controller~=facebook]" }
-      it { is_expected.to have_css "body[data-controller~=twitter]" }
-
-      context "with additional stimulus controller" do
-        subject { analytics_body_tag(data: { controller: "atest" }) { tag.hr } }
-
-        it { is_expected.to have_css "body[data-controller~=gtm]" }
-        it { is_expected.to have_css "body[data-controller~=pinterest]" }
-        it { is_expected.to have_css "body[data-controller~=snapchat]" }
-        it { is_expected.to have_css "body[data-controller~=facebook]" }
-        it { is_expected.to have_css "body[data-controller~=twitter]" }
-        it { is_expected.to have_css "body[data-controller~=atest]" }
-      end
-    end
-
-    describe "the service ids" do
-      it { is_expected.to have_css "body[data-analytics-gtm-id=1234]" }
-      it { is_expected.to have_css "body[data-analytics-ga-id=1234]" }
-      it { is_expected.to have_css "body[data-analytics-adwords-id=1234]" }
-      it { is_expected.to have_css "body[data-analytics-pinterest-id=1234]" }
-      it { is_expected.to have_css "body[data-analytics-snapchat-id=1234]" }
-      it { is_expected.to have_css "body[data-analytics-facebook-id=1234]" }
-      it { is_expected.to have_css "body[data-analytics-twitter-id=1234]" }
-      it { is_expected.to have_css "body[data-analytics-bam-id=1234]" }
-      it { is_expected.to have_css "body[data-analytics-lid-id=1234]" }
-
-      context "with blank service ids" do
-        let(:id) { "" }
-
-        it { is_expected.to have_css "body[data-analytics-gtm-id=\"\"]" }
-        it { is_expected.to have_css "body[data-analytics-ga-id=\"\"]" }
-        it { is_expected.to have_css "body[data-analytics-adwords-id=\"\"]" }
-        it { is_expected.to have_css "body[data-analytics-pinterest-id=\"\"]" }
-        it { is_expected.to have_css "body[data-analytics-snapchat-id=\"\"]" }
-        it { is_expected.to have_css "body[data-analytics-facebook-id=\"\"]" }
-        it { is_expected.to have_css "body[data-analytics-twitter-id=\"\"]" }
-        it { is_expected.to have_css "body[data-analytics-bam-id=\"\"]" }
-        it { is_expected.to have_css "body[data-analytics-lid-id=\"\"]" }
-      end
-
-      context "with no service ids" do
-        let(:id) { nil }
-
-        it { is_expected.not_to have_css "body[data-analytics-gtm-id]" }
-        it { is_expected.not_to have_css "body[data-analytics-ga-id]" }
-        it { is_expected.not_to have_css "body[data-analytics-adwords-id]" }
-        it { is_expected.not_to have_css "body[data-analytics-pinterest-id]" }
-        it { is_expected.not_to have_css "body[data-analytics-snapchat-id]" }
-        it { is_expected.not_to have_css "body[data-analytics-facebook-id]" }
-        it { is_expected.not_to have_css "body[data-analytics-twitter-id]" }
-        it { is_expected.not_to have_css "body[data-analytics-bam-id]" }
-        it { is_expected.not_to have_css "body[data-analytics-lid-id]" }
-      end
-    end
-
-    describe "the default events" do
-      it { is_expected.to have_css "body[data-snapchat-action=track]" }
-      it { is_expected.to have_css "body[data-snapchat-event=PAGE_VIEW]" }
-      it { is_expected.to have_css "body[data-facebook-action=track]" }
-      it { is_expected.to have_css "body[data-facebook-event=PageView]" }
-      it { is_expected.to have_css "body[data-twitter-action=track]" }
-      it { is_expected.to have_css "body[data-twitter-event=PageView]" }
-    end
-
-    context "with other data attributes" do
-      subject { analytics_body_tag(data: { timefmt: "24" }) { tag.hr } }
-
-      it { is_expected.to have_css "body[data-controller~=gtm]" }
-      it { is_expected.to have_css "body[data-analytics-gtm-id=1234]" }
-      it { is_expected.to have_css "body[data-timefmt=24]" }
-    end
-
-    context "with other attributes" do
-      subject { analytics_body_tag(class: "homepage") { tag.hr } }
-
-      it { is_expected.to have_css "body[data-controller~=gtm]" }
-      it { is_expected.to have_css "body.homepage" }
-    end
-
-    context "when legacy tracking is disabled" do
-      subject { analytics_body_tag(data: { timefmt: "24", controller: "something" }, class: "homepage") { tag.hr } }
-
-      before { allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(false) }
-
-      it { is_expected.not_to have_css "body[data-controller=gtm]" }
-      it { is_expected.to have_css "body[data-controller='something gtm-consent']" }
-      it { is_expected.to have_css "body[data-timefmt=24]" }
-      it { is_expected.to have_css "body.homepage" }
-      it { is_expected.to have_css "body hr" }
-    end
+    it { is_expected.not_to have_css "body[data-controller=gtm]" }
+    it { is_expected.to have_css "body[data-controller='something gtm-consent']" }
+    it { is_expected.to have_css "body[data-timefmt=24]" }
+    it { is_expected.to have_css "body.homepage" }
+    it { is_expected.to have_css "body hr" }
   end
 
   describe "#new_gtm_enabled?" do
-    it "returns true when GTM_ID is present and legacy_tracking_pixels is false" do
+    it "returns true when GTM_ID is present" do
       allow(ENV).to receive(:[]).with("GTM_ID").and_return("ABC-123")
-      allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(false)
-
-      expect(helper).to be_new_gtm_enabled
+      expect(helper).to be_gtm_enabled
     end
 
-    it "returns false when GTM_ID is blank or legacy_tracking_pixels is true" do
-      allow(ENV).to receive(:[]).with("GTM_ID").and_return("ABC-123")
-      allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(true)
-
-      expect(helper).not_to be_new_gtm_enabled
+    it "returns false when GTM_ID is blank" do
+      allow(ENV).to receive(:[]).with("GTM_ID").and_return("")
+      expect(helper).not_to be_gtm_enabled
 
       allow(ENV).to receive(:[]).with("GTM_ID").and_return(nil)
-      allow(Rails.application.config.x).to receive(:legacy_tracking_pixels).and_return(false)
-
-      expect(helper).not_to be_new_gtm_enabled
+      expect(helper).not_to be_gtm_enabled
     end
   end
 

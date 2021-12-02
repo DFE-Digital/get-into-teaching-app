@@ -1,17 +1,5 @@
 module ApplicationHelper
   def analytics_body_tag(attributes = {}, &block)
-    if Rails.application.config.x.legacy_tracking_pixels
-      legacy_analytics_body_tag(attributes, &block)
-    else
-      gtm_consent_body_tag(attributes, &block)
-    end
-  end
-
-  def new_gtm_enabled?
-    ENV["GTM_ID"].present? && !Rails.application.config.x.legacy_tracking_pixels
-  end
-
-  def gtm_consent_body_tag(attributes = {}, &block)
     attributes[:data] ||= {}
     attributes[:data][:controller] ||= ""
     attributes[:data][:controller] << " gtm-consent"
@@ -19,36 +7,8 @@ module ApplicationHelper
     tag.body(**attributes, &block)
   end
 
-  def legacy_analytics_body_tag(attributes = {}, &block)
-    attributes = attributes.symbolize_keys
-
-    analytics = {
-      "analytics-gtm-id": ENV["GOOGLE_TAG_MANAGER_ID"],
-      "analytics-ga-id": ENV["GOOGLE_ANALYTICS_ID"],
-      "analytics-adwords-id": ENV["GOOGLE_AD_WORDS_ID"],
-      "analytics-pinterest-id": ENV["PINTEREST_ID"],
-      "analytics-snapchat-id": ENV["SNAPCHAT_ID"],
-      "analytics-facebook-id": ENV["FACEBOOK_ID"],
-      "analytics-hotjar-id": ENV["HOTJAR_ID"],
-      "analytics-twitter-id": ENV["TWITTER_ID"],
-      "analytics-bam-id": ENV["BAM_ID"],
-      "analytics-lid-id": ENV["LID_ID"],
-      "pinterest-action": "page",
-      "snapchat-action": "track",
-      "snapchat-event": "PAGE_VIEW",
-      "facebook-action": "track",
-      "facebook-event": "PageView",
-      "twitter-action": "track",
-      "twitter-event": "PageView",
-    }
-
-    attributes[:data] ||= {}
-    attributes[:data] = attributes[:data].merge(analytics)
-
-    attributes[:data][:controller] =
-      "gtm pinterest snapchat facebook hotjar twitter #{attributes[:data][:controller]}"
-
-    tag.body **attributes, &block
+  def gtm_enabled?
+    ENV["GTM_ID"].present?
   end
 
   def page_title(title, frontmatter)
