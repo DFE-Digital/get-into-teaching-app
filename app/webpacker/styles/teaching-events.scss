@@ -395,7 +395,7 @@ $slightly-darker-grey: darken($grey, 10%);
 
     @include mq($from: tablet) {
       grid-template-rows: minmax(2rem, auto) 5rem minmax(2rem, auto) 2rem;
-      grid-template-columns: minmax(5rem, auto) minmax(auto, 50rem) 10rem minmax(auto, 20rem) minmax(5rem, auto);
+      grid-template-columns: minmax(5rem, auto) minmax(auto, 40rem) 14rem minmax(auto, 20rem) minmax(5rem, auto);
 
       .breadcrumbs-and-heading {
         grid-area: 1 / 2 / 3 / 4;
