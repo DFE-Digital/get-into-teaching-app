@@ -13,6 +13,15 @@ right_column:
       icon: "icon-calendar"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
+calls_to_action:
+    get-school-experience:
+      name: simple
+      arguments:
+        icon: "icon-arrow"
+        text: |-
+          Use our Get school experience service to search for and request experience in England.
+        link_text: "Get school experience"
+        link_target: "https://schoolexperience.education.gov.uk"
 keywords:
   - School experience
   - Teaching experience
@@ -21,39 +30,44 @@ keywords:
   - oak national academy
 ---
 
-School experience can help you decide whether teaching is right for you.
+You can visit schools to get experience in the classroom.
 
-Spending some time in a school allows you to:
+It can help you: 
 
-* observe a range of lessons and other teacher responsibilities
-* talk to teachers
-* get an insight into day-to-day school life
+* decide if you want to train to be a teacher
+* discover which setting you’d like to teach in (primary or secondary)
+* build a relationship with a school you might want to work for later
 
-To find school experience you can:
+## What to expect
 
-* [find a school offering experience through GOV.UK](https://schoolexperience.education.gov.uk/)
-* approach schools yourself
+Your experience will either be in a school or joining classes and meeting teachers online. Placements usually last one or 2 days, but some can last up to 3 weeks.
 
-Many schools offer virtual experience. This could include talking to teachers and reviewing videos of lessons, for example.
+During your experience, you’ll get to do things like: 
 
-## Approach schools yourself
+* observe lessons
+* see how teachers manage a classroom
+* find out how specific subjects are taught
+* speak to teachers and interact with pupils
+* learn more about teacher training - including the application and interview process
 
-[Find schools near you](https://get-information-schools.service.gov.uk/) and give them a ring to find out who to talk to about getting school experience.
+## Find school experience
 
-It's normal to have to try a few schools before you find one that can help.
+Use our [Get school experience service](https://schoolexperience.education.gov.uk/) to search for and request experience in England.
 
-They may be limiting visitors due to coronavirus (COVID-19) and may need to organise a [DBS check](https://www.gov.uk/government/organisations/disclosure-and-barring-service/about).
+If you cannot find what you’re looking for, you can call a school directly. You can [find schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience. They may ask you to have a DBS check before attending.
 
-Be flexible with your availability if possible and persevere with your search.
+<!--- ## Maths or physics teaching internships
 
-## Maths or physics teaching internships
+You may be eligible for a [maths or physics teaching internship](/teaching-internship-providers) earning £300 a week if you're doing a undergraduate degree in science, technology, engineering or maths. --->
 
-You may be eligible for a [maths or physics teaching internship earning £300 a week if you're doing a undergraduate degree in science, technology, engineering or maths](/teaching-internship-providers).
+## Attend teaching events
 
-## If you cannot get into the classroom right now
+[Teaching events](/events) can also give you an insight into teaching. You can choose from our Train to Teach events, online Q&A sessions and events run by training providers.
 
-[Observe teachers’ lessons and analysis of their lessons on the Oak National Academy website](https://teachers.thenational.academy/lessons-for-itt).
+## Watch pre-recorded lessons
+
+[Observe teachers’ lessons on the Oak National Academy website](https://teachers.thenational.academy/lessons-for-itt).
 
 These videos are not a claim of best practice but can help you get to know teaching better.
 
-[Events](/events) can also give you an insight into teaching.
+$get-school-experience$
