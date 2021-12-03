@@ -32,7 +32,7 @@ class EventType
     end
 
     def lookup_by_names(*names)
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES.values_at(*names)
+      GetIntoTeachingApiClient::Constants::EVENT_TYPES.fetch_values(*names)
     end
 
     def lookup_by_id(id)
@@ -40,7 +40,7 @@ class EventType
     end
 
     def lookup_by_ids(*ids)
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert.values_at(*ids)
+      GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert.fetch_values(*ids)
     end
   end
 
