@@ -78,6 +78,7 @@ describe EventStepsController, type: :request do
         firstName: "John",
         lastName: "Doe",
         email: "john@doe.com",
+        reference: "events_wizard-unverified",
       }
     end
 
