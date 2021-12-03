@@ -76,12 +76,12 @@ describe EventType do
       it { is_expected.to delegate_method(delegated_method).to(:class).as(delegated_method) }
     end
 
-  describe "#online_event?" do
+  describe "#online_qa_event?" do
     subject { described_class.new(build(:event_api, :online_event)) }
 
-    it { is_expected.to be_an_online_event }
+    it { is_expected.to be_a_online_qa_event }
 
-    it { is_expected.not_to be_a_school_or_university_event }
+    it { is_expected.not_to be_a_provider_event }
     it { is_expected.not_to be_a_question_time_event }
     it { is_expected.not_to be_a_train_to_teach_event }
   end
@@ -91,18 +91,18 @@ describe EventType do
 
     it { is_expected.to be_a_train_to_teach_event }
 
-    it { is_expected.not_to be_a_school_or_university_event }
+    it { is_expected.not_to be_a_provider_event }
     it { is_expected.not_to be_a_question_time_event }
-    it { is_expected.not_to be_a_online_event }
+    it { is_expected.not_to be_a_online_qa_event }
   end
 
   describe "#school_or_university_event?" do
     subject { described_class.new(build(:event_api, :school_or_university_event)) }
 
-    it { is_expected.to be_a_school_or_university_event }
+    it { is_expected.to be_a_provider_event }
 
     it { is_expected.not_to be_a_question_time_event }
-    it { is_expected.not_to be_a_online_event }
+    it { is_expected.not_to be_a_online_qa_event }
     it { is_expected.not_to be_a_train_to_teach_event }
   end
 
@@ -111,9 +111,9 @@ describe EventType do
 
     it { is_expected.to be_a_question_time_event }
 
-    it { is_expected.not_to be_a_online_event }
+    it { is_expected.not_to be_a_online_qa_event }
     it { is_expected.not_to be_a_train_to_teach_event }
-    it { is_expected.not_to be_a_school_or_university_event }
+    it { is_expected.not_to be_a_provider_event }
   end
 
   describe "#train_to_teach_or_question_time_event?" do

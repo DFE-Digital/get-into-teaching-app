@@ -53,12 +53,11 @@ class EventType
     lookup_by_id(type_id)
   end
 
-  # this name might be confusing...
-  def online_event?
+  def online_qa_event?
     type_id == online_event_id
   end
 
-  def school_or_university_event?
+  def provider_event?
     type_id == school_or_university_event_id
   end
 

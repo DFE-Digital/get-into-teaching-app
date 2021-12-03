@@ -15,12 +15,10 @@ module TeachingEvents
       super
     end
 
+    delegate :provider_event?, to: :type
+
     def train_to_teach?
       type.train_to_teach_or_question_time_event?
-    end
-
-    def school_and_university?
-      type.school_or_university_event?
     end
 
     def online?
@@ -52,7 +50,7 @@ module TeachingEvents
         "event",
         "event--train-to-teach" => train_to_teach?,
         "event--regular" => !train_to_teach?,
-        "event--training-provider" => school_and_university?,
+        "event--training-provider" => provider_event?,
       )
     end
   end
