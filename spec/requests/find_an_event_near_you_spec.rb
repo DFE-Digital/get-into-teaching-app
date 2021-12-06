@@ -64,7 +64,7 @@ describe "Find an event near you", type: :request do
   end
 
   context "when searching for an event by type" do
-    let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
+    let(:type_id) { EventType.online_event_id }
     let(:events) { [build(:event_api, type_id: type_id)] }
 
     before do
@@ -88,7 +88,7 @@ describe "Find an event near you", type: :request do
       let(:events) { [] }
 
       context "when event type is Train to Teach" do
-        let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
+        let(:type_id) { EventType.train_to_teach_event_id }
 
         it "displays a single no results message" do
           no_results_messages = response.body.scan(no_ttt_events_regex).flatten
@@ -158,7 +158,7 @@ describe "Find an event near you", type: :request do
     end
 
     context "when there are results for a subset of categories" do
-      let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
+      let(:type_id) { EventType.online_event_id }
       let(:events) { [build(:event_api, type_id: type_id)] }
 
       it "displays the no results message per category" do

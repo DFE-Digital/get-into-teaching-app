@@ -10,20 +10,20 @@ describe EventsHelper, type: "helper" do
 
   describe "#show_events_teaching_logo" do
     it "returns false if the index != 0" do
-      show_logo = show_events_teaching_logo(1, GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"])
+      show_logo = show_events_teaching_logo(1, EventType.train_to_teach_event_id)
       expect(show_logo).to be_falsy
     end
 
     it "returns false if the type_id is School or University event" do
-      show_logo = show_events_teaching_logo(0, GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"])
+      show_logo = show_events_teaching_logo(0, EventType.school_or_university_event_id)
       expect(show_logo).to be_falsy
     end
 
-    it "returns true if the index is 0 and the type_id is not chool or University event" do
-      show_logo = show_events_teaching_logo(0, GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"])
+    it "returns true if the index is 0 and the type_id is not School or University event" do
+      show_logo = show_events_teaching_logo(0, EventType.train_to_teach_event_id)
       expect(show_logo).to be_truthy
 
-      show_logo = show_events_teaching_logo(0, GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"])
+      show_logo = show_events_teaching_logo(0, EventType.online_event_id)
       expect(show_logo).to be_truthy
     end
   end
@@ -123,7 +123,7 @@ describe EventsHelper, type: "helper" do
   describe "#is_event_type?" do
     let(:matching_type) { "School or University event" }
     let(:non_matching_type) { "Online event" }
-    let(:event) { build(:event_api, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES[matching_type]) }
+    let(:event) { build(:event_api, type_id: EventType.lookup_by_name(matching_type)) }
 
     it "is truthy when the type matches" do
       expect(is_event_type?(event, matching_type)).to be_truthy
@@ -136,15 +136,12 @@ describe EventsHelper, type: "helper" do
 
   describe "#event_type_color" do
     it "returns purple for train to teach events" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
-      expect(event_type_color(type_id)).to eq("purple")
+      expect(event_type_color(EventType.train_to_teach_event_id)).to eq("purple")
     end
 
     it "returns blue for non-train to teach events" do
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
-      expect(event_type_color(type_id)).to eq("blue")
-      type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Schools or University event"]
-      expect(event_type_color(type_id)).to eq("blue")
+      expect(event_type_color(EventType.online_event_id)).to eq("blue")
+      expect(event_type_color(EventType.school_or_university_event_id)).to eq("blue")
     end
   end
 
@@ -172,16 +169,16 @@ describe EventsHelper, type: "helper" do
 
   describe "#display_event_provider_info?" do
     it "returns false if train to teach or question time" do
-      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+      event.type_id = EventType.train_to_teach_event_id
       expect(display_event_provider_info?(event)).to be(false)
-      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
+      event.type_id = EventType.question_time_event_id
       expect(display_event_provider_info?(event)).to be(false)
     end
 
     it "returns true if not train to teach or question time" do
-      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
+      event.type_id = EventType.online_event_id
       expect(display_event_provider_info?(event)).to be(true)
-      event.type_id = GetIntoTeachingApiClient::Constants::EVENT_TYPES["Schools or University event"]
+      event.type_id = EventType.school_or_university_event_id
       expect(display_event_provider_info?(event)).to be(true)
     end
   end
@@ -278,7 +275,7 @@ describe EventsHelper, type: "helper" do
     end
 
     context "when checking for any other event type ids" do
-      let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"] }
+      let(:type_id) { EventType.online_event_id }
 
       it "returns true when events is empty" do
         events = build_list(:event_api, 2, :online_event)
@@ -296,7 +293,7 @@ describe EventsHelper, type: "helper" do
 
   describe "#ttt_event_type_id?" do
     it "returns the TTT event id" do
-      expect(ttt_event_type_id).to eq GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+      expect(ttt_event_type_id).to eq EventType.train_to_teach_event_id
     end
   end
 end

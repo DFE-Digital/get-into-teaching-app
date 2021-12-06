@@ -26,17 +26,17 @@ describe TeachingEvents::EventComponent, type: "component" do
       end
     end
 
-    describe "#school_and_university?" do
+    describe "#provider_event?" do
       context "when the event is a school and university event" do
         let(:event) { build(:event_api, :school_or_university_event) }
 
-        it { expect(subject.school_and_university?).to be(true) }
+        it { expect(subject.provider_event?).to be(true) }
       end
 
       context "when the event is a train to teach event" do
         let(:event) { build(:event_api) }
 
-        it { expect(subject.school_and_university?).to be(false) }
+        it { expect(subject.provider_event?).to be(false) }
       end
     end
 

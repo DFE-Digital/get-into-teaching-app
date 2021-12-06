@@ -60,7 +60,7 @@ describe TeachingEventsHelper, type: "helper" do
     let(:qt) { "Question Time" }
 
     let(:ttt_event) do
-      OpenStruct.new(type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES[ttt])
+      OpenStruct.new(type_id: EventType.lookup_by_name(ttt))
     end
 
     specify "returns true when there's a match" do
@@ -85,12 +85,12 @@ describe TeachingEventsHelper, type: "helper" do
       let(:custom_event) { "Bingo night" }
 
       specify "returns online forum instead of online event by default" do
-        expect(GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[222_750_008]).to eql("Online event")
+        expect(EventType.lookup_by_id(222_750_008)).to eql("Online event")
         expect(event_type_name(222_750_008)).to eql("DfE Online Q&A")
       end
 
       specify "returns training provider instead of school or uni event by default" do
-        expect(GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[222_750_009]).to eql("School or University event")
+        expect(EventType.lookup_by_id(222_750_009)).to eql("School or University event")
         expect(event_type_name(222_750_009)).to eql("Training provider")
       end
 

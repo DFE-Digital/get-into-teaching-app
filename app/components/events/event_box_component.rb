@@ -71,7 +71,7 @@ module Events
     end
 
     def is_online_event_category?
-      type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
+      type == EventType.online_event_id
     end
   end
 end

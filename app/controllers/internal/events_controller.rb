@@ -148,8 +148,8 @@ module Internal
 
     def event_types
       {
-        provider: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-        online: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
+        provider: EventType.school_or_university_event_id,
+        online: EventType.online_event_id,
       }
         .with_indifferent_access
         .freeze
