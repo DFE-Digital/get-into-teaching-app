@@ -92,6 +92,12 @@
     img {
       width: 100%;
     }
+
+    > p:last-of-type {
+      border-left: .4em solid $grey-mid;
+      padding: .5em 0 .5em 1em;
+      margin-top: 2.5em;
+    }
   }
 
   footer {
