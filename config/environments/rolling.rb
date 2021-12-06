@@ -7,6 +7,4 @@ Rails.application.configure do
     "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
 
   config.view_component.show_previews = true
-
-  config.x.legacy_tracking_pixels = true
 end
