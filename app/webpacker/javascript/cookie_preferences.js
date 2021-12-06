@@ -81,8 +81,9 @@ export default class CookiePreferences {
 
   clearNonEssentialCookies() {
     Object.keys(Cookies.get()).forEach((key) => {
-      if (!CookiePreferences.functionalCookies.includes(key))
-        Cookies.remove(key);
+      if (!CookiePreferences.functionalCookies.includes(key)) {
+        this.cookieDomains.forEach((domain) => Cookies.remove(key, { domain }));
+      }
     });
   }
 
@@ -101,6 +102,13 @@ export default class CookiePreferences {
     newSettings[category] = boolValue;
 
     this.all = newSettings;
+  }
+
+  get cookieDomains() {
+    const subdomain = window.location.hostname;
+    const parent = subdomain.replace(/(.*?)\./, '');
+
+    return [subdomain, `.${subdomain}`, parent, `.${parent}`];
   }
 
   get allowedCategories() {
