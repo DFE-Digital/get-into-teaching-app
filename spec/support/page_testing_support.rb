@@ -119,7 +119,7 @@ module LinkChecker
     IGNORE_PREFIX = %r{^/welcome}.freeze
 
     def initialize(page, body, adjust_packs_path: [])
-      super
+      super(page, body)
 
       @page = page
       @document = Nokogiri.parse(body)
