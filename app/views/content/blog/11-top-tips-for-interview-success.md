@@ -1,3 +1,29 @@
+---
+title: 11 top tips for interview succes11 top tips for interview success
+author: Caroline Downing
+date: "2021-12-06"
+description: |-
+  You've taken that first step in making an Initial Teacher Training
+  application and providers have been in touch to offer you an interview. So,
+  what next? Thorough preparation can make or break a successful interview.
+  Here are my simple top ten winning tips for securing that Initial Teacher
+  Training place.
+images:
+  interview:
+    path: "media/images/content/blog/interview.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/interview.jpg"
+    alt: "A teacher training candidate being interviewed by a provider sitting at opposite sides of a desk"
+keywords:
+  - becoming a teacher
+  - applications
+  - interviews
+tags:
+  - becoming a teacher
+  - applications
+---
+
+$interview$
+
 ## 1. Pre-interview 
 
 Confirm your attendance to any interview invitation and pay attention to what is being asked of you on the day. Interview formats can vary. If in doubt, make a phone call to the provider to ask for clarification.
@@ -5,8 +31,8 @@ Confirm your attendance to any interview invitation and pay attention to what is
 ## 2. Professional dialogue 
 
 Often email correspondence is your first line of professional dialogue with providers. Be mindful of using formal language to support your application. Text speak in emails may not go down too well! Follow the tone set by the provider in any written communication. 
-## 3. Be informed
 
+## 3. Be informed
 
 Know what you are applying for. Routes and training programmes differ, and you may have applied to several providers. Training provider websites will give you key information that you can refer to at interview. Make a note of any key personnel names and who to ask for on your arrival. This will give a positive first impression. You are applying to train to teach - invest some time finding out about The Teachers' Standards, Safeguarding in Schools and The National Curriculum. 
 
@@ -32,7 +58,7 @@ Understandably, candidates are often nervous at interview and either say very li
 
 ## 9. To say or not to say
 
-Teaching is all about effective communication. Think about your verbal contributions — articulation, pronunciation, pace, tone, and pitch will provide an interview panel with a dialogue of interest suitable for the classroom. Non-verbal communication is just as important. Consider your body language and facial expression. Not always easy when you are nervous, but confidence and a warm smile speak volumes when you first meet someone, particularly if you are meeting through a screen.  
+Teaching is all about effective communication. Think about your verbal contributions — articulation, pronunciation, pace, tone, and pitch will provide an interview panel with a dialogue of interest suitable for the classroom. Non-verbal communication is just as important. Consider your body language and facial expression. Not always easy when you are nervous, but confidence and a warm smile speak volumes when you first meet someone, particularly if you are meeting through a screen.
 
 ## 10 . Showtime
 
