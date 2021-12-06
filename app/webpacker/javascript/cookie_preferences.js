@@ -105,10 +105,10 @@ export default class CookiePreferences {
   }
 
   get cookieDomains() {
-    const subdomain = window.location.hostname;
-    const parent = subdomain.replace(/(.*?)\./, '');
+    const hostname = window.location.hostname;
+    const rootDomain = hostname.replace(/(.*?)\./, '');
 
-    return [subdomain, `.${subdomain}`, parent, `.${parent}`];
+    return [hostname, `.${hostname}`, rootDomain, `.${rootDomain}`];
   }
 
   get allowedCategories() {
