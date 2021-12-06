@@ -24,6 +24,8 @@ tags:
 
 $interview$
 
+_Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). Her responsibilities include interviewing applicants and assessing their potential to become successful classroom professionals. She believes the key to being offered that sought after training place lies in effective interview preparation._
+
 ## 1. Pre-interview 
 
 Confirm your attendance to any interview invitation and pay attention to what is being asked of you on the day. Interview formats can vary. If in doubt, make a phone call to the provider to ask for clarification.
