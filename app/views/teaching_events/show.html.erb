@@ -1,3 +1,7 @@
+<%= content_for(:head) do %>
+  <%= tag.link(rel: "canonical", href: event_url(@event.readable_id)) %>
+<% end %>
+
 <div class="teaching-event">
   <header class="yellow">
     <div class="breadcrumbs-and-heading">
