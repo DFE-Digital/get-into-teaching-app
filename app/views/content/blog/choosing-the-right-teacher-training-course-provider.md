@@ -25,7 +25,7 @@ When choosing a course provider for your teacher training, it’s important to c
 
 Your drive to become a teacher needs to inform your choice of provider. If you have a particular interest, make sure that the school placements you will be offered for your teaching practice will allow you to develop it. For example, there are providers that work with fully comprehensive and inclusive schools, faith-based schools, special schools, grammar schools, schools in challenging social or economic areas, rural schools and so on.
 
-Take a look at the available [postgraduate teaching training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in your area. Consider selecting 4-5 that you feel might be suitable for you, and then make contact with them to check that they are. Aim to shortlist these down to 3. 
+Search the available [postgraduate teaching training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in your area. Consider selecting 4-5 that you feel might be suitable for you, and then make contact with them to check that they are. Aim to shortlist these down to 3. 
 
 Alongside online research, think about calling or emailing these providers, or try to arrange a visit. Your questions may include:
 
