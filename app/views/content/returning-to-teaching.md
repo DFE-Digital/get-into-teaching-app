@@ -63,11 +63,11 @@ quote:
     job_title: "Returning teacher"
 ---
 
-Returning to teaching might be easier than you expect.
+Returning to teaching can be easier than you expect.
 
-After a period of disruption for so many pupils, you could help those most affected to get back on track, including engaging with the [National Tutoring Programme](#national-tutoring-programme). Bring your valuable experience back to the classroom with help from the Department for Education.
+More than ever, our children and young people need your skills and experience back in the classroom.  
 
-If you’re considering coming back to the profession, or if you’re qualified to teach but have never taught in a state school in England, we’re here to help.  
+If you’re thinking about returning to teaching, or if you’re qualified to teach but have never taught in a state school in England, we can help.  
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
   <iframe 
@@ -79,7 +79,9 @@ If you’re considering coming back to the profession, or if you’re qualified 
   ></iframe>
 </div>
 
-## Why now
+If you’re thinking about returning to the classroom, you might want to [get a return to teaching advisor](https://adviser-getintoteaching.education.gov.uk/). They can give you free one-to-one support, helping you get back into teaching. 
+
+## Why now?
 
 Thousands of former teachers return to teaching each year.
 
@@ -92,9 +94,15 @@ Here at the Department for Education, we’re taking action to address some of t
 * [enable flexible working](https://www.gov.uk/government/collections/flexible-working-resources-for-teachers-and-schools)
 * [manage behaviour](https://www.gov.uk/guidance/behaviour-hubs)
 
-The education sector promotes inclusivity and diversity. There are many organisations that support teachers with protected characteristics, such as [WomenEd](https://www.womened.org/), [BAMEed](https://www.bameednetwork.com/), [LGBTed](https://lgbted.uk/) and [DisabilityEd](https://www.twitter.com/disability_ed).
+The education sector promotes inclusivity and diversity. There are many organisations that support teachers with protected characteristics, such as [WomenEd](https://www.womened.org/), [BAMEed](https://www.bameednetwork.com/), [LGBTed](http://www.outteacher.org/) and [DisabilityEd](https://www.twitter.com/disability_ed).
 
 [Search for jobs, including those with flexible working patterns, on Teaching Vacancies](https://teaching-vacancies.service.gov.uk/).
+
+## Join the National Tutoring Programme
+
+The National Tutoring Programme supports schools with helping children get back up to speed after the disruption of the coronavirus pandemic. It also provides different options to return to a school without taking on a full-time or part-time classroom role. 
+
+If you’re looking for an alternative to taking on a teaching role, the [National Tutoring Programme](https://nationaltutoring.org.uk/) could be it. Through it, you can tutor or mentor children and help provide support to disadvantaged pupils.
 
 ## Get a return to teaching adviser
 
@@ -130,25 +138,26 @@ $q-helen-returner$
 
 [Read Helen's top tips for returning teachers](/my-story-into-teaching/returners/top-tips-for-returning-teachers).
 
-## National Tutoring Programme
-
-The National Tutoring Programme supports schools to close the attainment gap in light of the coronavirus pandemic and provides different options to return to a school environment without taking on a full-time or part-time classroom role.
-
-If you’re unsure about taking on a teacher role at this time, [consider applying to tutor or mentor through the National Tutoring Programme](https://nationaltutoring.org.uk/) and help provide support to disadvantaged pupils.
-
 ## If you've been out of teaching for a while
 
-There’s lots you can do to re-familiarise yourself with teaching. For example, you can:  
+If you’re returning to teaching, you might want to re-familiarise yourself with life in a classroom. Here are lots of ways that you can do it.
 
-* attend an [online return to teaching event](/event-categories/online-q-as)
-* read [blog posts about returning to teaching](/blog/tag/returning-to-teaching)
-* read [Jill's journey](/my-story-into-teaching/returners/getting-back-into-the-classroom) to become a teacher again
+#### Reading teachers' stories and tips
+
+* browse [inspirational stories](https://getintoteaching.education.gov.uk/blog/tag/returning-to-teaching) from Stephen, Farooq and Maria who returned to the classroom successfully after a break
+* read up on [teaching interview tips](https://www.teachertoolkit.co.uk/2019/04/04/job-interviews) and get [pointers on remote interviews](https://www.tes.com/news/coronavirus-10-tips-acing-remote-job-interview)
+
+#### Catching up on changes
+
 * review the latest [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards)
 * catch up on changes to the [national curriculum and qualifications](https://www.gov.uk/topic/schools-colleges-childrens-services/curriculum-qualifications)
 * [read through current behaviour management guidelines](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
+* learn about how DfE have improved the [National Professional Qualifications (NPQs)](https://www.gov.uk/government/publications/national-professional-qualifications-npqs-reforms/national-professional-qualifications-npqs-reforms) and if you may be eligible for a fully funded scholarship 
+
+#### Things to do
+
+* attend an [online return to teaching event](/event-categories/online-q-as)
 * join the [Chartered College of Teaching](https://chartered.college/), the
   professional body for teachers
 * join a [teaching union](https://www.tes.com/jobs/careers-advice/pay-and-conditions/which-teachers-union)
-* read up on [teaching interview tips](https://www.teachertoolkit.co.uk/2019/04/04/job-interviews)
-  and [get pointers on remote interviews](https://www.tes.com/news/coronavirus-10-tips-acing-remote-job-interview)
-* ensure your [pension is up to date](https://www.teacherspensions.co.uk/members/working-life/life-events/moving-abroad.aspx)
+* ensure your [pension](https://www.teacherspensions.co.uk/members/working-life/life-events/moving-abroad.aspx), one of your key benefits, is up to date
