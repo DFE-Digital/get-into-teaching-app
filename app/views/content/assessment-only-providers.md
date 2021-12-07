@@ -50,10 +50,10 @@ provider_groups:
       link: http://www.nett.org.uk/
       telephone: '01255431949'
       email: teach@nett.org.uk
-    - header: SAF ITT
-      name: Su Bernard
-      telephone: 01234 827145
-      email: SBernard@saf.org.uk
+    - header: The Pilgrim Partnership 
+      name: Bev Collier
+      telephone: 01234 907896
+      email: bcollier@pilgrimpartnership.org
     - header: Suffolk and Norfolk ITT
       link: https://www.suffolkandnorfolkscitt.co.uk
       name: Lucinda James
