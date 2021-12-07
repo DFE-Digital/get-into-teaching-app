@@ -1,17 +1,12 @@
 ---
-layout: "layouts/stories/story"
 title: Getting back into the classroom
 date: "2021-01-01"
 author: Jill
-image: media/images/content/stories/stories-jill.jpg
-explore:
-  - card_type: find events
-  - card_type: featured story
-  - card_type: chat online
-more_information:
-  link: /returning-to-teaching
-  text: Read further guidance if you're returning to teaching
-build_layout_from_frontmatter: true
+images:
+  jill:
+    path: media/images/content/stories/stories-jill.jpg
+    thumbnail_path: media/images/content/stories/stories-jill.jpg
+    alt: Returning teacher Jill
 description: |-
   Jill's route into teaching
 keywords:
@@ -20,7 +15,10 @@ keywords:
 tags:
   - returning to teaching
   - teacher training advisers
+closing_paragraph: enriching-the-lives-of-young-people
 ---
+
+$jill$
 
 After almost a decade of teaching science, I Ieft the job in 2001 when my husband and I started a family. During my time out of the classroom, I did quite a lot of work for an exam board and lots of private tuition. This kept me occupied for many years.
 
