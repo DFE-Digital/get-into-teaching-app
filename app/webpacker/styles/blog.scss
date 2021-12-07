@@ -1,3 +1,34 @@
+@mixin blog-article {
+  @include mq($from: tablet) {
+    > div {
+      display: flex;
+
+      header {
+        flex-grow: 1;
+      }
+
+      img {
+        width: 170px;
+      }
+    }
+  }
+
+  header {
+    h2 {
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    .published-date {
+      margin-top: $indent-amount;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
 .blog {
   header
   {
@@ -63,40 +94,17 @@
     margin-top: 0;
     list-style: none;
 
+    li > .blog-article {
+      @include blog-article;
+    }
+
     li:last-child hr {
       display: none;
     }
   }
 
-  .blog-article {
-    @include mq($from: tablet) {
-      > div {
-        display: flex;
-
-        header {
-          flex-grow: 1;
-        }
-
-        img {
-          width: 170px;
-        }
-      }
-    }
-
-    header {
-      h2 {
-        padding: 0;
-        margin-bottom: 0;
-      }
-
-      .published-date {
-        margin-top: $indent-amount;
-      }
-    }
-
-    img {
-      width: 100%;
-    }
+  > .blog-article {
+    @include blog-article;
 
     > p:last-of-type {
       border-left: .4em solid $grey-mid;
