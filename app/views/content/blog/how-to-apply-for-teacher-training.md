@@ -26,6 +26,7 @@ tags:
   - personal statements
   - qualifications
   - applying for teacher training
+closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $header_image$

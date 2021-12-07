@@ -63,4 +63,4 @@ The good news is that as soon as you press the Submit button on your application
 
 Please be patient and do attend all of your interviews, if you have been offered them, before making any final decisions. You never know – your first choice of school may not be your best choice and one of your other choices may prove to be a better fit for you.
 
-_If you have questions about the different routes into teaching and specific queries about your own application, you should sign up for a [Teacher Training Adviser.](https://adviser-getintoteaching.education.gov.uk/) These advisers are teaching experts who are able to provide you with personalised assistance._
+If you have questions about the different routes into teaching and specific queries about your own application, you should sign up for a [Teacher Training Adviser.](https://adviser-getintoteaching.education.gov.uk/) These advisers are teaching experts who are able to provide you with personalised assistance.

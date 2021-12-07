@@ -20,6 +20,7 @@ keywords:
 tags:
   - school experience
   - life as a teacher
+closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $header_image$

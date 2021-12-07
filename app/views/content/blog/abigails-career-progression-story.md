@@ -66,4 +66,4 @@ It's a time when you get lots of extra support to help establish yourself as a t
 
 _Induction used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs)._
 
-_If you’ve been inspired by Abigail’s story, find out more about [career progression opportunities and teacher pay scales](/salaries-and-benefits#career-progression)._
+If you’ve been inspired by Abigail’s story, find out more about [career progression opportunities and teacher pay scales](/salaries-and-benefits#career-progression).
