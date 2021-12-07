@@ -327,6 +327,6 @@ describe ApplicationHelper do
   describe "#google_optimize_config" do
     subject { google_optimize_config }
 
-    it { is_expected.to eq({ paths: ["/test/a", "/test/b"] }) }
+    it { is_expected.to eq({ paths: ["/test/a", "/test/b", "/events", "/teaching-events"] }) }
   end
 end
