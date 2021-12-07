@@ -46,7 +46,7 @@ interviews. A [teacher training adviser](/tta-service) can help you with all of 
 
 ## Browse courses
 
-Take a look through most [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses).
+Search [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
 ## Where to apply
 
