@@ -6,9 +6,6 @@
 
     <%= render HeaderComponent.new %>
 
-    <%# FIXME: remove this to enable the page in prod %>
-    <% raise(ActionController::RoutingError, "Not found") if Rails.env.production? %>
-
     <main class="welcome-guide" id="main-content">
       <%= yield %>
 
