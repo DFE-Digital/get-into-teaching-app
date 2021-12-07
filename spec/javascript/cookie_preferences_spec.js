@@ -334,4 +334,26 @@ describe('CookiePreferences', () => {
       });
     });
   });
+
+  describe('clearCookie', () => {
+    it('clears the cookie from all domains', () => {
+      Object.defineProperty(window, 'location', {
+        configurable: true,
+        value: new URL('https://getintoteaching.education.gov.uk/'),
+      });
+
+      const spy = jest.spyOn(Cookies, 'remove');
+
+      CookiePreferences.clearCookie('key');
+
+      expect(spy).toHaveBeenCalledWith('key', {
+        domain: 'getintoteaching.education.gov.uk',
+      });
+      expect(spy).toHaveBeenCalledWith('key', {
+        domain: '.getintoteaching.education.gov.uk',
+      });
+      expect(spy).toHaveBeenCalledWith('key', { domain: 'education.gov.uk' });
+      expect(spy).toHaveBeenCalledWith('key', { domain: '.education.gov.uk' });
+    });
+  });
 });

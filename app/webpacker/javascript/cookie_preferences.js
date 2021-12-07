@@ -30,6 +30,19 @@ export default class CookiePreferences {
     );
   }
 
+  static get cookieDomains() {
+    const hostname = window.location.hostname;
+    const rootDomain = hostname.replace(/(.*?)\./, '');
+
+    return [hostname, `.${hostname}`, rootDomain, `.${rootDomain}`];
+  }
+
+  static clearCookie(key) {
+    CookiePreferences.cookieDomains.forEach((domain) =>
+      Cookies.remove(key, { domain })
+    );
+  }
+
   readCookie() {
     const cookie = Cookies.get(CookiePreferences.cookieName);
     if (typeof cookie === 'undefined' || !cookie) {
@@ -82,7 +95,7 @@ export default class CookiePreferences {
   clearNonEssentialCookies() {
     Object.keys(Cookies.get()).forEach((key) => {
       if (!CookiePreferences.functionalCookies.includes(key)) {
-        this.cookieDomains.forEach((domain) => Cookies.remove(key, { domain }));
+        CookiePreferences.clearCookie(key);
       }
     });
   }
@@ -102,13 +115,6 @@ export default class CookiePreferences {
     newSettings[category] = boolValue;
 
     this.all = newSettings;
-  }
-
-  get cookieDomains() {
-    const hostname = window.location.hostname;
-    const rootDomain = hostname.replace(/(.*?)\./, '');
-
-    return [hostname, `.${hostname}`, rootDomain, `.${rootDomain}`];
   }
 
   get allowedCategories() {
