@@ -36,4 +36,18 @@ describe "reading the blog", type: :feature do
 
   include_context "paginating blog posts", "/blog"
   include_context "paginating blog posts", "/blog/tag/teacher-training-advisers"
+
+  scenario "viewing a post" do
+    path = "getting-ready-to-apply"
+    fm = Pages::Frontmatter.list.fetch("/blog/#{path}")
+    visit blog_path(path)
+
+    expect(page).to have_css("h1", text: fm["title"])
+    expect(page).to have_content("Get one step closer to the classroom with guidance tailored to you")
+
+    fm[:tags].all? { |tag| expect(page).to have_css("ol.blog-tags > li", text: tag) }
+
+    # ensure we're pulling in and including the generic closing paragraph named in the front matter
+    expect(page).to have_css("article > p:last-of-type", text: "enriching the lives of young people")
+  end
 end
