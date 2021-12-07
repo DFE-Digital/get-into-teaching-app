@@ -54,6 +54,8 @@ jobs:
         uses: rtCamp/action-slack-notify@master
         env:
           SLACK_COLOR: ${{env.SLACK_ERROR}}
-          SLACK_MESSAGE: ${{ steps.links.outputs.urls }}
+          SLACK_MESSAGE: |
+                         "Broken Links are:" 
+                         "${{ steps.links.outputs.urls }}"
           SLACK_TITLE: Broken links on GiT ${{ github.workflow }}
           SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}
