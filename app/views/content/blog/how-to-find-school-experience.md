@@ -20,7 +20,6 @@ keywords:
 tags:
   - school experience
   - life as a teacher
-closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $header_image$
@@ -51,6 +50,4 @@ You can also arrange school experience independently, by contacting your old sch
 
 Beyond the classroom, there are other ways to gain valuable experience of working with young people. Sports coaching, youth groups, after-school clubs or other volunteering activities are great opportunities that may be easier to fit around work and other commitments.
 
-To start your request for school experience, head to the [Get school experience service](https://schoolexperience.education.gov.uk/) now.
-
-If you’re a school or training provider that would like to know more about joining the Get school experience service please email [organise.school-experience@education.gov.uk](mailto:organise.school-experience@education.gov.uk).
+To start your request for school experience, head to the [Get school experience service](https://schoolexperience.education.gov.uk/) now. If you’re a school or training provider that would like to know more about joining the Get school experience service please email [organise.school-experience@education.gov.uk](mailto:organise.school-experience@education.gov.uk).
