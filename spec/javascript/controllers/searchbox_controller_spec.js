@@ -8,6 +8,7 @@ describe('SearchboxController', () => {
         Toggle
       </a>
 
+      <label for="searchbox__input" data-searchbox-target="label">Search</label>
       <div data-searchbox-target="searchbar">
       </div>
     </div>
@@ -23,6 +24,17 @@ describe('SearchboxController', () => {
       const autocompletes = document.querySelectorAll('.autocomplete__wrapper');
 
       expect(autocompletes.length).toBe(1);
+    });
+
+    it('adds an aria-label attribute to the input', () => {
+      const input = document.querySelector('input');
+      expect(input.ariaLabel).toEqual('Search');
+    });
+
+    it('co-locates the label with the autocomplete input', () => {
+      const label = document.querySelector('label');
+      const input = document.querySelector('input');
+      expect(label.nextSibling).toEqual(input);
     });
   });
 
