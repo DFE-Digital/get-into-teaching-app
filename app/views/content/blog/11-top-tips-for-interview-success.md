@@ -4,7 +4,7 @@ author: Caroline Downing
 date: "2021-12-06"
 description: |-
   Thorough preparation can make or break a successful interview.
-  Here are my simple top ten winning tips for securing that Initial Teacher
+  Here are my simple top eleven winning tips for securing that Initial Teacher
   Training place.
 images:
   interview:
