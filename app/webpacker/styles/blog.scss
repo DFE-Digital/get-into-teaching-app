@@ -111,6 +111,14 @@
       padding: .5em 0 .5em 1em;
       margin-top: 2.5em;
     }
+
+    img {
+      max-height: 25em;
+      max-width: 100%;
+      object-position: center;
+      width: fit-content;
+      object-fit: cover;
+    }
   }
 
   footer {
