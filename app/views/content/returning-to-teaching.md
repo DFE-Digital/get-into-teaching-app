@@ -79,7 +79,7 @@ If you’re thinking about returning to teaching, or if you’re qualified to te
   ></iframe>
 </div>
 
-If you’re thinking about returning to the classroom, you might want to [get a return to teaching advisor](https://adviser-getintoteaching.education.gov.uk/). They can give you free one-to-one support, helping you get back into teaching. 
+If you’re thinking about returning to the classroom, you might want to [get a return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/). They can give you free one-to-one support, helping you get back into teaching. 
 
 ## Why now?
 
