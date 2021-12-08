@@ -81,7 +81,7 @@ If you’re thinking about returning to teaching, or if you’re qualified to te
 
 If you’re thinking about returning to the classroom, you might want to [get a return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/). They can give you free one-to-one support, helping you get back into teaching. 
 
-## Why now?
+## Why now
 
 Thousands of former teachers return to teaching each year.
 
