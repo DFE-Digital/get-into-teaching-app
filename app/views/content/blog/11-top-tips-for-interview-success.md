@@ -22,7 +22,9 @@ tags:
 
 $interview$
 
-_Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). She interviews applicants and assesses their potential to become successful classroom professionals. She believes the key to receiving and offer for a training place lies in effective interview preparation._
+<p class="introduction">
+  Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). She interviews applicants and assesses their potential to become successful classroom professionals. She believes the key to receiving and offer for a training place lies in effective interview preparation.
+</p>
 
 ## 1. Pre-interview 
 
