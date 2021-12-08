@@ -106,7 +106,7 @@ If you’re looking for an alternative to taking on a teaching role, the [Nation
 
 ## Get a return to teaching adviser
 
-If you have '[qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts)' and you want to return to teach modern foreign languages, maths or physics at secondary school in England, a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/) can give free one-to-one support with:
+If you have [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach modern foreign languages, maths or physics at secondary school in England, a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/) can give free one-to-one support with:
 
 * the applications process, such as writing personal statements and preparing for interviews
 * accessing courses to enhance your subject knowledge
