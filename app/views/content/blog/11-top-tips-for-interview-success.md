@@ -35,11 +35,13 @@ Often email is your first line of professional dialogue with providers. Be mindf
 ## 3. Be informed
 
 Know what you are applying for. Routes and training programmes differ, and you may have applied to several providers. Training provider websites will give you key information. You can refer to this information at interview. 
+
 Make a note of any key staff names and who to ask for on your arrival. This will give a positive first impression. Take some time to find out about The Teachers' Standards, Safeguarding in Schools and The National Curriculum. 
 
 ## 4. Remote or face-to-face
 
 In times of COVID 19, interviews may take place via an online platform. Check that your camera and sound are working beforehand. Join the 'call' on time and consider your screen background beforehand. 
+
 If you are travelling to an interview venue, allow yourself plenty of time on the day. Scope the area beforehand as you might not be able to park right outside. Some sites are large and will require you to walk some distance. If need be, do a practice run to reduce stress levels on the day.
 
 ## 5. Be organised
@@ -61,6 +63,7 @@ Candidates are often nervous at interview and either say very little or talk too
 ## 9. To say or not to say
 
 Teaching is all about effective communication. Think about your verbal contributions — articulation, pronunciation, pace, tone, and pitch will provide an interview panel with an idea of how you would communcate in front of a classroom. 
+
 Non-verbal communication is just as important. Consider your body language and facial expression. It's not always easy when you are nervous, but confidence and a warm smile speak volumes when you first meet someone, particularly if you are meeting through a screen.
 
 ## 10 . Showtime
