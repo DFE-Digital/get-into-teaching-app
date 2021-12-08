@@ -145,7 +145,7 @@ If you’re returning to teaching, you might want to re-familiarise yourself wit
 #### Reading teachers' stories and tips
 
 * browse [inspirational stories](/blog/tag/returning-to-teaching) from Stephen, Farooq and Maria who returned to the classroom successfully after a break
-* read up on [teaching interview tips](https://www.teachertoolkit.co.uk/2019/04/04/job-interviews) and get [pointers on remote interviews](https://www.tes.com/news/coronavirus-10-tips-acing-remote-job-interview)
+* read up on [teaching interview tips](https://www.teachertoolkit.co.uk/2019/04/04/job-interviews) and get [pointers on remote interviews](/blog/how-to-ace-a-video-interview)
 
 #### Catching up on changes
 
