@@ -67,6 +67,10 @@ describe Callbacks::StepsController, type: :request do
       let(:model) { steps.last }
       let(:details_params) { attributes_for :"callbacks_#{model.key}" }
 
+      before do
+        allow_any_instance_of(Callbacks::Steps::MatchbackFailed).to receive(:skipped?).and_return true
+      end
+
       context "when all valid" do
         before do
           allow_any_instance_of(Callbacks::Wizard).to \

@@ -3,7 +3,8 @@ require "rails_helper"
 describe Callbacks::Steps::PersonalDetails do
   include_context "with wizard step"
   it_behaves_like "a with wizard step"
-  it_behaves_like "an issue verification code with wizard step"
+
+  it { expect(described_class).to include(::DFEWizard::IssueVerificationCode) }
 
   it { is_expected.to respond_to :first_name }
   it { is_expected.to respond_to :last_name }

@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe MailingList::Steps::Name do
   include_context "with wizard step"
+
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_candidate_mailing_list_subscription_channels).and_return(channels)
@@ -14,6 +15,8 @@ describe MailingList::Steps::Name do
   end
 
   it_behaves_like "a with wizard step"
+
+  it { expect(described_class).to include(::DFEWizard::IssueVerificationCode) }
 
   it { is_expected.to respond_to :first_name }
   it { is_expected.to respond_to :last_name }
@@ -47,9 +50,5 @@ describe MailingList::Steps::Name do
     it { is_expected.to allow_values(options).for :channel_id }
     it { is_expected.to allow_value(nil, "").for :channel_id }
     it { is_expected.not_to allow_value(12_345).for :channel_id }
-  end
-
-  context "when the step is valid" do
-    it_behaves_like "an issue verification code with wizard step"
   end
 end
