@@ -3,6 +3,7 @@
 <%= govuk_form_for Search.new, url: search_path, method: :get do |f| %>
   <%= f.govuk_text_field :search,
         width: "two-thirds",
+        autocomplete: "on",
         label: { text: "Enter your search term" },
         placeholder: "Enter your search term" %>
 
