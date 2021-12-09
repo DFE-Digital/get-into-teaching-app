@@ -154,10 +154,10 @@ If you’re returning to teaching, you might want to re-familiarise yourself wit
 * [read through current behaviour management guidelines](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
 * learn about how DfE have improved the [National Professional Qualifications (NPQs)](https://www.gov.uk/government/publications/national-professional-qualifications-npqs-reforms/national-professional-qualifications-npqs-reforms) and if you may be eligible for a fully funded scholarship 
 
-#### Things to do
+#### Other things to consider
 
 * attend an [online return to teaching event](/event-categories/online-q-as)
 * join the [Chartered College of Teaching](https://chartered.college/), the
   professional body for teachers
 * join a [teaching union](https://www.tes.com/jobs/careers-advice/pay-and-conditions/which-teachers-union)
-* ensure your [pension](https://www.teacherspensions.co.uk/members/working-life/life-events/moving-abroad.aspx), one of your key benefits, is up to date
+* ensure your [pension](https://www.teacherspensions.co.uk/members/working-life/deferring-your-pension/return-to-pensionable-service.aspx), one of your key benefits, is up to date
