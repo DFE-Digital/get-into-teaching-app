@@ -19,7 +19,7 @@ keywords:
   - School Direct
 tags:
   - becoming a teacher
-  
+closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 Mel recently started a Postgraduate Diploma in Education (PGDE) teacher training course in maths with the Sheffield Teacher Training Alliance and the University of Sheffield. She kept a diary of her first days on the course.

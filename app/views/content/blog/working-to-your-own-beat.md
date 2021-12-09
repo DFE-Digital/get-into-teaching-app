@@ -12,6 +12,7 @@ keywords:
   - becoming a teacher
 tags:
   - becoming a teacher
+closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $staff-room$
@@ -47,4 +48,3 @@ Commenting on the findings, English teacher Chloe Carrubba, 24, said:
 
 [^4]:
     This finding combines respondents who said, “Very important” and “Somewhat important”
-

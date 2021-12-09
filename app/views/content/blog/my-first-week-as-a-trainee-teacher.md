@@ -69,4 +69,4 @@ The group work is important because it aimed to familiarise us with the differen
 
 My first week was hectic, which I didn’t expect, but it gave me many things to reflect upon and I learned a lot – it enabled me to see the importance and the challenges of education from different sides. In addition, I met new people from other countries and learned their views and approaches on teaching and learning, which was very enriching.
 
-_If you’d like to be in Cindy’s shoes this time next year, [find out more about your next steps to becoming a teacher](/steps-to-become-a-teacher)._
+If you’d like to be in Cindy’s shoes this time next year, [find out more about your next steps to becoming a teacher](/steps-to-become-a-teacher).

@@ -24,6 +24,10 @@
 
           <%= yield %>
 
+          <% if @front_matter.key?("closing_paragraph") %>
+            <%= render(partial: %(blog/closing-paragraphs/#{@front_matter['closing_paragraph']})) %>
+          <% end %>
+
           <hr>
 
           <footer>

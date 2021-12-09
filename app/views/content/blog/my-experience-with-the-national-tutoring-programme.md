@@ -34,4 +34,4 @@ I have been able to develop my lesson planning skills and my ability to deliver 
 
 I’ve proved I can work with pupils to improve grades and meet school needs and I now feel better equipped to step back into the classroom. 
 
-_You can work with the [National Tutoring Programme](https://nationaltutoring.org.uk/) to help provide support to disadvantaged students and help with education recovery. The programme gives you the option of returning to a school environment as either an academic mentor or tutor without taking on a full-time classroom role._
+You can work with the [National Tutoring Programme](https://nationaltutoring.org.uk/) to help provide support to disadvantaged students and help with education recovery. The programme gives you the option of returning to a school environment as either an academic mentor or tutor without taking on a full-time classroom role.

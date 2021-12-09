@@ -27,6 +27,7 @@ tags:
   - funding
   - bursaries
   - salaries
+closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $header_image$

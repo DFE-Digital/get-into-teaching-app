@@ -19,6 +19,7 @@ tags:
   - teacher training advisers
   - train to teach events
   - applications
+closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $train_to_teach$
@@ -56,4 +57,3 @@ You can have a one-to-one chat with a current teacher who can provide you with i
 They can also talk about why they love teaching and how rewarding it is, giving you a balanced view and insight into what the life of a teacher is really like.
 
 [Find a Train to Teach event near you.](/event-categories/train-to-teach-events)
-
