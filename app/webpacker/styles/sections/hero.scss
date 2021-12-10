@@ -164,7 +164,20 @@ $mobile-cutoff: 800px;
 
       > span {
         @include font-size("large");
+
+        // user a border bottom to simulate a underline that
+        // looks like the branding. It's not perfect as the line
+        // extends beyond the edges of the text by a few px
         border-bottom: 3px solid $black;
+
+        // proper underline styles - switch to this when (if) we
+        // start using a standard font. while we're relying on
+        // user-installed default sans fonts we run the risk
+        // of descenders breaking up the line
+        //
+        // text-decoration: underline;
+        // text-underline-offset: .3em;
+        // text-decoration-thickness: .1em;
 
         &:after {
           content: ".";
@@ -172,7 +185,7 @@ $mobile-cutoff: 800px;
 
         @include mq($from: tablet) {
           @include font-size("xxlarge");
-          border-bottom: 5px solid $black;
+          border-bottom: 6px solid $black;
         }
       }
     }
