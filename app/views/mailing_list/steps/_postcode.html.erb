@@ -1,6 +1,6 @@
 <%= f.govuk_error_summary %>
 
-<%= f.govuk_text_field :address_postcode, label: { tag: 'h1', size: "xl", text: t('helpers.label.mailing_list_steps_postcode.address_postcode') } do %>
+<%= f.govuk_text_field :address_postcode, autocomplete: "postal-code", label: { tag: 'h1', size: "xl", text: t('helpers.label.mailing_list_steps_postcode.address_postcode') } do %>
 
 <p>
   Stay up to date about events in your area.
