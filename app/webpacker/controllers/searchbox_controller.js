@@ -4,13 +4,14 @@ import Redacter from '../javascript/redacter';
 
 export default class extends Controller {
   static openedClass = 'searchbox--opened';
-  static targets = ['searchbar'];
+  static targets = ['searchbar', 'label'];
   static values = { searchInputId: String };
 
   searchQuery = null;
 
   connect() {
     this.setupAccessibleAutocomplete();
+    this.fixLabelAccessibility();
 
     this.mobileMenuHandler = this.hide.bind(this);
     document.addEventListener('navigation:menu', this.mobileMenuHandler);
@@ -79,6 +80,16 @@ export default class extends Controller {
         suggestion: this.formatResults.bind(this),
       },
     });
+  }
+
+  fixLabelAccessibility() {
+    // We see a warning on Silktide that the input has no label.
+    // To fix this we're going to try adding an aria-label to the
+    // auto-complete input and also co-locate the label next to the
+    // input. One or both of these may not be necessary, but we won't
+    // know until the next Silktide report.
+    this.input.ariaLabel = this.labelTarget.textContent;
+    this.input.parentNode.insertBefore(this.labelTarget, this.input);
   }
 
   searchParams(query) {
@@ -177,5 +188,9 @@ export default class extends Controller {
     const showingSearchEvent = new CustomEvent('navigation:search');
 
     document.dispatchEvent(showingSearchEvent);
+  }
+
+  get input() {
+    return this.searchbarTarget.querySelector('input');
   }
 }
