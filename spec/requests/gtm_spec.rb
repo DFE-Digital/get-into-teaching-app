@@ -31,38 +31,21 @@ describe "Google Tag Manager", type: :request do
       receive(:get_teaching_event).with(event.readable_id) { event }
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:search_teaching_events_grouped_by_type).and_return([])
-    allow(Rails.application.config.x).to receive(:legacy_tracking_pixels) { legacy_tracking_pixels }
   end
 
-  context "when legacy tracking pixels are disabled" do
-    let(:legacy_tracking_pixels) { false }
-
-    it "has the GTM and fallback scripts" do
-      layout_paths.each do |layout_path|
-        get layout_path
-        expect(response.body).to include("data-gtm-id=\"123-ABC\""), "#{layout_path} does not include GTM"
-        expect(response.body).to include("https://www.googletagmanager.com/ns.html"), "#{layout_path} does not include GTM fallback"
-      end
-    end
-
-    context "when the GTM_ID is not set" do
-      before do
-        allow(ENV).to receive(:[]).and_call_original
-        allow(ENV).to receive(:[]).with("GTM_ID").and_return(nil)
-      end
-
-      it "does not have the GTM and fallback scripts" do
-        layout_paths.each do |layout_path|
-          get layout_path
-          expect(response.body).not_to include("data-gtm-id"), "#{layout_path} does not include GTM"
-          expect(response.body).not_to include("https://www.googletagmanager.com/ns.html"), "#{layout_path} does not include GTM fallback"
-        end
-      end
+  it "has the GTM and fallback scripts" do
+    layout_paths.each do |layout_path|
+      get layout_path
+      expect(response.body).to include("data-gtm-id=\"123-ABC\""), "#{layout_path} does not include GTM"
+      expect(response.body).to include("https://www.googletagmanager.com/ns.html"), "#{layout_path} does not include GTM fallback"
     end
   end
 
-  context "when legacy tracking pixels are enabled" do
-    let(:legacy_tracking_pixels) { true }
+  context "when the GTM_ID is not set" do
+    before do
+      allow(ENV).to receive(:[]).and_call_original
+      allow(ENV).to receive(:[]).with("GTM_ID").and_return(nil)
+    end
 
     it "does not have the GTM and fallback scripts" do
       layout_paths.each do |layout_path|

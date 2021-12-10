@@ -7,7 +7,6 @@
   image: "media/images/content/hero-images/0017.jpg"
   backlink: "../"
   navigation: 10
-  lid_pixel_event: "Steps"
   steps:
     Decide who to teach:
       partial: content/steps-to-become-a-teacher/step_1_decide_who_to_teach

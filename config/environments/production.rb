@@ -140,8 +140,6 @@ Rails.application.configure do
   config.x.structured_data.event = true
   config.x.structured_data.how_to = false
 
-  config.x.legacy_tracking_pixels = false
-
   config.x.covid_banner = false
 
   # Ensure beta redirect happens before static page cache.

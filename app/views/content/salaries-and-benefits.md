@@ -6,7 +6,6 @@ date: "2021-06-24"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
 navigation: 40
-lid_pixel_event: "SalaryBenefits"
 right_column:
   ctas:
     - title: How to become a teacher
