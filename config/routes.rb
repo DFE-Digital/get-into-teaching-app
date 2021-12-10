@@ -66,6 +66,7 @@ Rails.application.routes.draw do
   get "/cookie-policy", to: redirect("/cookies")
 
   resource :csp_reports, only: %i[create]
+  resource :client_metrics, only: %i[create]
 
   resources :blog, controller: "blog", only: %i[index show] do
     collection do

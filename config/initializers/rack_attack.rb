@@ -15,6 +15,11 @@ module Rack
       req.ip if req.path == "/csp_reports"
     end
 
+    # Throttle /client_metrics requests by IP (5rpm)
+    throttle("client_metrics req/ip", limit: 5, period: 1.minute) do |req|
+      req.ip if req.path == "/client_metrics"
+    end
+
     unless ENV["SKIP_REQ_LIMITS"].to_s.in? %w[true yes 1]
       # Throttle requests that issue a verification code by IP (5rpm)
       throttle("issue_verification_code req/ip", limit: 5, period: 1.minute) do |req|

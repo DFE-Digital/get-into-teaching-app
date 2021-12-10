@@ -93,6 +93,15 @@ describe Prometheus::Metrics do
     it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
   end
 
+  describe "app_client_cookie_consent_total" do
+    subject { registry.get(:app_client_cookie_consent_total) }
+
+    it { is_expected.not_to be_nil }
+    it { is_expected.to have_attributes(docstring: "A counter of cookie consent") }
+    it { expect { subject.get(labels: %i[non_functional marketing]) }.not_to raise_error }
+    it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
+  end
+
   def expected_preset_labels
     {
       app: "app-name",
