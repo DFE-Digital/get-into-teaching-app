@@ -7,7 +7,7 @@ module Pages
 
     attr_reader :path, :frontmatter
 
-    delegate :title, :image, :noindex, to: :frontmatter
+    delegate :title, :image, to: :frontmatter
 
     class << self
       def find(path)

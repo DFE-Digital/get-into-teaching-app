@@ -7,6 +7,7 @@ class EventStepsController < ApplicationController
   include DFEWizard::Controller
   self.wizard_class = Events::Wizard
 
+  before_action :noindex
   before_action :redirect_closed_events, only: %i[show update]
   before_action :set_step_page_title, only: [:show]
   before_action :set_completed_page_title, only: [:completed]
@@ -20,6 +21,10 @@ protected
   end
 
 private
+
+  def noindex
+    @noindex = true
+  end
 
   def redirect_closed_events
     event_is_closed = @event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"]

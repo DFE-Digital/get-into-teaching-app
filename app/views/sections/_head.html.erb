@@ -22,7 +22,7 @@
   <%= search_structured_data if current_page?(root_path) %>
   <%= how_to_structured_data(@page) if @page.present? && @front_matter.key?("how_to") %>
 
-  <% if @front_matter["noindex"] %>
+  <% if @front_matter["noindex"] || @noindex %>
     <%= meta_tag(key: "robots", value: "noindex") %>
   <% end %>
 
