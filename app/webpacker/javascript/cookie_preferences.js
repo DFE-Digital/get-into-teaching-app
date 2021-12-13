@@ -90,6 +90,7 @@ export default class CookiePreferences {
     );
 
     this.emitEvent(newlyAllowed);
+    this.sendMetric();
   }
 
   clearNonEssentialCookies() {
@@ -124,6 +125,21 @@ export default class CookiePreferences {
   boolValue(value) {
     const strValue = value.toString();
     return strValue === '1' || strValue === 'true' || strValue === 'yes';
+  }
+
+  sendMetric() {
+    const xhr = new XMLHttpRequest();
+    const data = JSON.stringify({
+      key: 'app_client_cookie_consent_total',
+      labels: {
+        non_functional: this.allowed('non-functional'),
+        marketing: this.allowed('marketing'),
+      },
+    });
+
+    xhr.open('POST', '/client_metrics', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(data);
   }
 
   emitEvent(newCategories) {
