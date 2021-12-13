@@ -471,7 +471,7 @@ provider_groups:
       name: Mikki Burns
       telephone: 0203 194 3200
       email: institute@tesglobal.com
-  Providers offering assessment only QTS to international teachers:
+  International:
     description: content/assessment-only-providers/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
     - header: University of Sunderland
@@ -502,7 +502,7 @@ keywords:
   - experienced
 ---
 
-If you’re an experienced teacher with a degree, you may be able to get qualified teacher status (QTS) through a 12-week assessment only (AO) programme.
+If you have a degree and enough classroom experience, you may be able to get qualified teacher status (QTS) through a 12-week assessment only (AO) programme.
 
 The accredited teacher training providers listed on this page offer the AO programme.
 
