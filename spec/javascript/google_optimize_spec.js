@@ -89,10 +89,9 @@ describe('Google Optimize', () => {
 
       describe('when cookies are accepted', () => {
         it('reloads the page', () => {
-          new CookiePreferences().setCategory(
-            GoogleOptimize.cookieCategory,
-            true
-          );
+          new CookiePreferences().setCategories({
+            [GoogleOptimize.cookieCategory]: true,
+          });
           expect(window.location.reload).toHaveBeenCalled();
         });
       });
@@ -127,10 +126,9 @@ describe('Google Optimize', () => {
 
       describe('when cookies are accepted', () => {
         it('does not reload the page', () => {
-          new CookiePreferences().setCategory(
-            GoogleOptimize.cookieCategory,
-            true
-          );
+          new CookiePreferences().setCategories({
+            [GoogleOptimize.cookieCategory]: true,
+          });
           expect(window.location.reload).not.toHaveBeenCalled();
         });
       });
@@ -139,7 +137,7 @@ describe('Google Optimize', () => {
 
   describe('when cookies have already been accepted', () => {
     beforeEach(() => {
-      new CookiePreferences().setCategory('non-functional', true);
+      new CookiePreferences().setCategories({ 'non-functional': true });
     });
 
     describe('when on an experiment path', () => {
@@ -218,7 +216,7 @@ describe('Google Optimize', () => {
 
   describe('when cookies have been accepted but the category was not opted-in to', () => {
     beforeEach(() => {
-      new CookiePreferences().setCategory('marketing', true);
+      new CookiePreferences().setCategories({ marketing: true });
     });
 
     describe('when on an experiment path', () => {

@@ -29,16 +29,18 @@ export default class extends Controller {
   save(event) {
     event.preventDefault();
 
-    for (const categoryFieldset of this.categoryTargets) {
-      const category = categoryFieldset.getAttribute('data-category');
-      const field = categoryFieldset.querySelector(
-        'input[type="radio"]:checked'
-      );
+    const categories = this.categoryTargets.reduce((acc, fieldset) => {
+      const category = fieldset.getAttribute('data-category');
+      const field = fieldset.querySelector('input[type="radio"]:checked');
 
       if (field) {
-        this.cookiePreferences.setCategory(category, field.value);
+        return { ...acc, [category]: field.value };
+      } else {
+        return acc;
       }
-    }
+    }, {});
+
+    this.cookiePreferences.setCategories(categories);
 
     this.data.set('save-state', 'saving');
     window.setTimeout(this.finishSave.bind(this), 600);

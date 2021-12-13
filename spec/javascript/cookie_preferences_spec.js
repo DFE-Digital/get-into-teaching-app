@@ -77,6 +77,30 @@ describe('CookiePreferences', () => {
       });
     });
 
+    describe('#setCategories', () => {
+      it('casts values to boolean', () => {
+        prefs.setCategories({
+          marketing: 'yes',
+          test: 1,
+          other: 'true',
+        });
+
+        expect(prefs.allowed('marketing')).toBe(true);
+        expect(prefs.allowed('test')).toBe(true);
+        expect(prefs.allowed('other')).toBe(true);
+
+        prefs.setCategories({
+          marketing: 'no',
+          test: 0,
+          other: 'false',
+        });
+
+        expect(prefs.allowed('marketing')).toBe(false);
+        expect(prefs.allowed('test')).toBe(false);
+        expect(prefs.allowed('other')).toBe(false);
+      });
+    });
+
     describe('assigning #all', () => {
       beforeEach(() => {
         prefs.all = { required: false, features: true };
@@ -112,7 +136,7 @@ describe('CookiePreferences', () => {
 
     describe('assigning existing category', () => {
       beforeEach(() => {
-        prefs.setCategory('marketing', true);
+        prefs.setCategories({ marketing: true });
       });
 
       it('updates allowed value', () => {
@@ -150,7 +174,7 @@ describe('CookiePreferences', () => {
 
     describe('assigning functional to false', () => {
       beforeEach(() => {
-        prefs.setCategory('functional', false);
+        prefs.setCategories({ functional: false });
       });
 
       it('leaves the value as true', () => {
@@ -168,7 +192,7 @@ describe('CookiePreferences', () => {
 
     describe('assigning new category', () => {
       beforeEach(() => {
-        prefs.setCategory('features', true);
+        prefs.setCategories({ features: true });
       });
 
       it('updates allowed value', () => {
@@ -282,7 +306,7 @@ describe('CookiePreferences', () => {
 
     describe('assigning new category', () => {
       beforeEach(() => {
-        prefs.setCategory('functional', true);
+        prefs.setCategories({ functional: true });
       });
 
       it('updates allowed value', () => {
@@ -304,7 +328,7 @@ describe('CookiePreferences', () => {
 
     describe('opting out of a category', () => {
       beforeEach(() => {
-        prefs.setCategory('marketing', true);
+        prefs.setCategories({ marketing: true });
       });
 
       it('retains essential cookies and clears non-essential cookies', () => {
@@ -313,7 +337,7 @@ describe('CookiePreferences', () => {
         const essentialCookieKey = CookiePreferences.functionalCookies[2];
         Cookies.set(essentialCookieKey, 'essential');
 
-        prefs.setCategory('marketing', false);
+        prefs.setCategories({ marketing: false });
 
         expect(Cookies.get('non-essential')).toBeUndefined();
         expect(Cookies.get(essentialCookieKey)).toEqual('essential');
