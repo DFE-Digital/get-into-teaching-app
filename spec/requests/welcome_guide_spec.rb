@@ -7,24 +7,28 @@ describe "Welcome guide landing page", type: :request do
       name: "Dimitra",
       quote_headline: "The highs are immeasurable",
       quote_body: "Gaming, sport, travelling",
+      we_need_subject_teachers: "we need maths teachers",
     ),
     english: OpenStruct.new(
       subject: "English",
       name: "Laura",
       quote_headline: "From delving into literature",
       quote_body: "Those moments when kids suddenly get it",
+      we_need_subject_teachers: "we need English teachers",
     ),
     biology: OpenStruct.new(
       subject: "Biology",
       name: "Holly",
       quote_headline: "Plants, planets, protons",
       quote_body: "I value the way science teaches a clear thought process",
+      we_need_subject_teachers: "we need biology teachers",
     ),
     french: OpenStruct.new(
       subject: "French",
       name: "Tom",
       quote_headline: "From delving into different cultures to discussing new ways of thinking",
       quote_body: "I get to travel still and can keep up with my languages",
+      we_need_subject_teachers: "we need French teachers",
     ),
   }.each do |subject_key, metadata|
     specify "shows #{metadata.subject || 'non'}-specific content" do
@@ -35,6 +39,7 @@ describe "Welcome guide landing page", type: :request do
       expect(response.body).to match("Read #{metadata.name}'s story")
       expect(response.body).to match(metadata.quote_headline)
       expect(response.body).to match(metadata.quote_body)
+      expect(response.body).to match(metadata.we_need_subject_teachers)
     end
   end
 
