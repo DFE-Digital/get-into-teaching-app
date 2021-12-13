@@ -83,7 +83,7 @@ describe('Google Tag Manager', () => {
 
     describe('when cookies are accepted', () => {
       it('updates GTM of all cookie preferences', () => {
-        new CookiePreferences().setCategory('marketing', true);
+        new CookiePreferences().setCategories({ marketing: true });
         expect(window.gtag).toHaveBeenCalledWith('consent', 'update', {
           analytics_storage: 'denied',
           ad_storage: 'granted',
@@ -94,7 +94,7 @@ describe('Google Tag Manager', () => {
 
   describe('when cookies have already been accepted', () => {
     beforeEach(() => {
-      new CookiePreferences().setCategory('non-functional', true);
+      new CookiePreferences().setCategories({ 'non-functional': true });
       mockGtag();
       run();
     });

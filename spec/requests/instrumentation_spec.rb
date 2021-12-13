@@ -81,4 +81,35 @@ describe "Instrumentation", type: :request do
         }).once
     end
   end
+
+  describe "app.client_metrics" do
+    let(:params) do
+      {
+        key: "app_client_cookie_consent_total",
+        labels: {
+          non_functional: true,
+          marketing: false,
+        },
+      }
+    end
+
+    it "increments the client metric" do
+      metric = registry.get(:app_client_cookie_consent_total)
+      expect(metric).to receive(:increment).with(labels:
+        {
+          non_functional: true,
+          marketing: false,
+        }).once
+      post client_metrics_path, params: params.to_json
+    end
+
+    context "when attempting to increment a non-client app metric" do
+      before { params[:key] = "app_metric" }
+
+      it "raises an error" do
+        expect { post client_metrics_path, params: params.to_json }.to \
+          raise_error(ArgumentError, "attempted to increment non-client metric")
+      end
+    end
+  end
 end

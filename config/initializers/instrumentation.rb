@@ -81,3 +81,15 @@ ActiveSupport::Notifications.subscribe "app.csp_violation" do |*args|
   metric = prometheus.get(:app_csp_violations_total)
   metric.increment(labels: labels)
 end
+
+ActiveSupport::Notifications.subscribe "app.client_metric" do |*args|
+  event = ActiveSupport::Notifications::Event.new(*args)
+  metric_details = event.payload.deep_symbolize_keys
+
+  fail(ArgumentError, "attempted to increment non-client metric") unless metric_details[:key].start_with?("app_client_")
+
+  prometheus = Prometheus::Client.registry
+
+  metric = prometheus.get(metric_details[:key])
+  metric.increment(labels: metric_details[:labels])
+end
