@@ -95,7 +95,7 @@ module WelcomeContentHelper
       alt: "Spanish teacher Tom standing in a modern foreign languages classroom",
       text: "Meet Tom - find out how he got into teaching Spanish and what he's looking forward to next.",
       three_things_youll_never_hear_me_say: {
-        "Every day is the same" => "From exploring Latin American culture to reading Spanish literature, every lesson is different. And with 30 different personalities in one room, it’s never dull",
+        "Every day is the same" => "From exploring Latin American culture to reading Spanish literature, every lesson is different. And with 30 different personalities in one room, it’s never dull.",
         "I miss adult conversation" => "Some of my closest friends are my colleagues, and having someone to talk to makes work life so much easier. Our get togethers at the end of the week are something I always look forward to.",
         "Work never stops" => "It’s important to relax after school,  I can’t resist watching a good Spanish film on Netflix.  And I'm still an avid traveller, I love exploring other cultures.",
       },
