@@ -59,4 +59,4 @@ What have you found challenging and how did you deal with it? Find an example of
 
 Have confidence in yourself and remember that training providers are on your side! We always enjoy reading about your experiences from school, family, jobs and volunteering, and look forward to meeting you at interview where you can demonstrate further how well-informed and interested you are in becoming a TEACHER.
 
-> Whatever stage you’re at with your application, our expert advisers can help. [Sign up for a Teacher Training Adviser](https://adviser-getintoteaching.education.gov.uk/) who can give you free, one-to-one support.
+Whatever stage you’re at with your application, our expert advisers can help. [Sign up for a Teacher Training Adviser](https://adviser-getintoteaching.education.gov.uk/) who can give you free, one-to-one support.
