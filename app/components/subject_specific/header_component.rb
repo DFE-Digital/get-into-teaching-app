@@ -11,7 +11,7 @@ module SubjectSpecific
     end
 
     def header_image
-      image_pack_tag(@image) if @image
+      image_pack_tag(@image, alt: "A teacher standing in a classroom") if @image
     end
 
     def classes

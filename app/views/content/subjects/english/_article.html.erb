@@ -1,0 +1,48 @@
+<article>
+  <section class="statement">
+    <div>
+      <span class="yellow xlarge bold">English is&hellip;</span>
+    </div>
+
+    <div>
+      <span class="yellow medium bold">
+        Etiam sed enim in magna tempor blandit. Praesent nunc lorem, maximus
+        tincidunt augue vel, commodo elementum mi.
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <h2>Suspendisse sollicitudin</h2>
+
+    <p>
+      Etiam sed enim in magna tempor blandit. Praesent nunc lorem, maximus
+      tincidunt augue vel, commodo elementum mi. Vivamus eu risus in nulla
+      gravida lacinia et quis magna. Quisque eu felis a ante auctor porta.
+    </p>
+
+    <p>
+      Vestibulum efficitur eros sed tincidunt efficitur. Cras malesuada lacus
+      in est commodo, in interdum quam convallis.
+    </p>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithTwoImagesComponent.new(
+    heading: "English is for everyone",
+    colour: "yellow",
+    image_1_path: "x",
+    image_1_alt: "x",
+    image_2_path: "x",
+    image_2_alt: "x",
+  ) do %>
+    <p>
+      Ego cum teneam sententiam, quid est enim in vita tantopere quaerendum quam
+      cum omnia in philosophia, tum id, quod ipsi statuerunt, non possunt, victi
+      et debilitati obiecta specie voluptatis tradunt se libidinibus
+      constringendos nec quid eventurum sit provident ob eamque causam propter
+      voluptatem et dolorem.
+    </p>
+
+    <p>ad haec et quae vel aliter pararetur et qua etiam carere.</p>
+  <% end %>
+</article>

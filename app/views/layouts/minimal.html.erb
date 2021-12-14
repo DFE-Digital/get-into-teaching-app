@@ -10,9 +10,7 @@
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
       <% end %>
-      <article class="container">
-        <%= yield %>
-      </article>
+      <%= yield %>
     <% end %>
 
     <%= render FooterComponent.new(talk_to_us: true, mailing_list: false, feedback: false) %>
