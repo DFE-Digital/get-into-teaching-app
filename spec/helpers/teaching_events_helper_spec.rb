@@ -101,12 +101,10 @@ describe TeachingEventsHelper, type: "helper" do
   end
 
   describe "#is_a_train_to_teach_event?" do
-    let(:event_types) { GetIntoTeachingApiClient::Constants::EVENT_TYPES }
-
-    let(:ttt_event) { OpenStruct.new(type_id: event_types["Train to Teach event"]) }
-    let(:qt_event) { OpenStruct.new(type_id: event_types["Question Time"]) }
-    let(:online_event) { OpenStruct.new(type_id: event_types["Online event"]) }
-    let(:school_or_university_event) { OpenStruct.new(type_id: event_types["School or University event"]) }
+    let(:ttt_event) { OpenStruct.new(type_id: EventType.train_to_teach_event_id) }
+    let(:qt_event) { OpenStruct.new(type_id: EventType.question_time_event_id) }
+    let(:online_event) { OpenStruct.new(type_id: EventType.online_event_id) }
+    let(:school_or_university_event) { OpenStruct.new(type_id: EventType.school_or_university_event_id) }
 
     specify "returns true when the event is either Train to Teach or Question Time" do
       expect(is_a_train_to_teach_event?(ttt_event)).to be true

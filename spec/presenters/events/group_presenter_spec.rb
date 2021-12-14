@@ -23,8 +23,12 @@ describe Events::GroupPresenter do
       ])
     end
 
-    it "sorts event types according to GetIntoTeachingApiClient::Constants::EVENT_TYPES" do
-      expect(type_ids).to eq(GetIntoTeachingApiClient::Constants::EVENT_TYPES.except("Question Time").values)
+    it "sorts event types" do
+      expect(type_ids).to eq([
+        EventType.train_to_teach_event_id,
+        EventType.online_event_id,
+        EventType.school_or_university_event_id,
+      ])
     end
 
     context "when there are no events for a type" do
@@ -106,7 +110,7 @@ describe Events::GroupPresenter do
     end
 
     it "defaults to 9 events per page" do
-      pages_by_type = GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.product([nil]).to_h
+      pages_by_type = EventType.all_ids.product([nil]).to_h
       paginated_events_by_type = subject.paginated_events_by_type(pages_by_type)
 
       expect(paginated_events_by_type).to include(

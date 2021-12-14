@@ -46,14 +46,14 @@ module Events
     end
 
     def page_param_name(type_id)
-      category_name = event_types.key(type_id)
+      category_name = EventType.lookup_by_id(type_id)
       "#{category_name.parameterize(separator: '_')}_page"
     end
 
   private
 
     def merge_question_time_events(events_by_type)
-      types = [event_types["Train to Teach event"], event_types["Question Time"]]
+      types = [EventType.train_to_teach_event_id, EventType.question_time_event_id]
 
       combined_events = events_by_type
         .select { |e| types.include?(e.type_id) }
@@ -63,7 +63,7 @@ module Events
       return events_by_type if combined_events.blank?
 
       combined_events_type = GetIntoTeachingApiClient::TeachingEventsByType.new(
-        typeId: event_types["Train to Teach event"],
+        typeId: EventType.train_to_teach_event_id,
         teachingEvents: combined_events,
       )
 
@@ -84,11 +84,7 @@ module Events
     end
 
     def event_type_ids
-      event_types.except("Question Time").values
-    end
-
-    def event_types
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES
+      EventType.all_ids - [EventType.question_time_event_id]
     end
   end
 end

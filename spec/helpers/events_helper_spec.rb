@@ -258,7 +258,7 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#show_see_all_events_button?" do
-    let(:type_id) { GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"] }
+    let(:type_id) { EventType.train_to_teach_event_id }
 
     context "when checking for TTT event type id" do
       it "returns false when events is empty" do

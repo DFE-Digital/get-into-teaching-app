@@ -45,7 +45,7 @@ describe "Find an event near you", type: :request do
 
     context "when there are events of different types" do
       let(:events) do
-        GetIntoTeachingApiClient::Constants::EVENT_TYPES.values.map do |type_id|
+        EventType.all_ids.map do |type_id|
           build(:event_api, start_at: Time.zone.now, type_id: type_id)
         end
       end

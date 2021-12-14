@@ -77,7 +77,7 @@ private
   end
 
   def has_archive?(type)
-    GetIntoTeachingApiClient::Constants::EVENT_TYPES_WITH_ARCHIVE.values.include?(type.id)
+    EventType.has_archive?(type.id)
   end
 
   # filtering is like searching but limited to a single event type. A custom
