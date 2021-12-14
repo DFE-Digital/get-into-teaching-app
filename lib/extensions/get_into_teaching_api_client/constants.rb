@@ -1,14 +1,6 @@
 module GetIntoTeachingApiClient
   module Constants
     # This is not a complete list.
-    EVENT_STATUS =
-      {
-        "Open" => 222_750_000,
-        "Closed" => 222_750_001,
-        "Pending" => 222_750_003,
-      }.freeze
-
-    # This is not a complete list.
     CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS =
       {
         "GITIS - On Campus - Careers Services activity" => 222_750_037,

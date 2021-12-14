@@ -4,7 +4,7 @@ FactoryBot.define do
     sequence(:readable_id, &:to_s)
     type_id { EventType.train_to_teach_event_id }
     web_feed_id { "123" }
-    status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"] }
+    status_id { EventStatus.open_id }
     sequence(:name) { |i| "Become a Teacher #{i}" }
     sequence(:description) { |i| "<b>Become a Teacher #{i} event description</b>" }
     sequence(:summary) { |i| "Become a Teacher #{i} event summary" }
@@ -17,7 +17,7 @@ FactoryBot.define do
     building { build :event_building_api }
 
     trait :closed do
-      status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"] }
+      status_id { EventStatus.closed_id }
     end
 
     trait :past do
@@ -68,7 +68,7 @@ FactoryBot.define do
     end
 
     trait :pending do
-      status_id { GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"] }
+      status_id { EventStatus.pending_id }
     end
 
     trait :without_train_to_teach_fields do

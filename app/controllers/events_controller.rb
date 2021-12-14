@@ -31,7 +31,7 @@ class EventsController < ApplicationController
     breadcrumb "events.search", :events_path
 
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-    render_not_found && return unless viewable_event?(@event)
+    render_not_found && return unless EventStatus.new(@event).viewable?
 
     @page_title = @event.name
     @front_matter = { "description" => @event.summary }
@@ -55,14 +55,6 @@ protected
   end
 
 private
-
-  def viewable_event?(event)
-    not_pending = event.status_id != pending_event_status_id
-    in_future = event.start_at.to_date >= Time.zone.now.utc.to_date
-    online_q_a = EventType.new(event).online_qa_event?
-
-    not_pending && (in_future || online_q_a)
-  end
 
   def render_not_found
     @fullwidth = true
@@ -107,9 +99,5 @@ private
 
     (params[Events::Search.model_name.param_key] || defaults)
       .permit(:type, :distance, :postcode, :month)
-  end
-
-  def pending_event_status_id
-    GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
   end
 end

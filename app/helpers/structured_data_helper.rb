@@ -128,7 +128,7 @@ module StructuredDataHelper
         "@type": "Offer",
         price: 0,
         priceCurrency: "GBP",
-        availability: event_status_open?(event) ? IN_STOCK : SOLD_OUT,
+        availability: EventStatus.new(event).open? ? IN_STOCK : SOLD_OUT,
       },
     }.merge(building_data, provider_data, image_data)
 
