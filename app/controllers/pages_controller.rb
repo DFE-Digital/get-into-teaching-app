@@ -93,8 +93,6 @@ private
       breadcrumb page.title, page.path if @page.title.present?
     end
 
-    response.headers["X-Robots-Tag"] = "noindex" if @page.noindex
-
     render template: @page.template, layout: page_layout
   end
 
