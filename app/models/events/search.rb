@@ -35,7 +35,7 @@ module Events
       def available_event_types
         # We can't search for Question Time events explicitly. Instead, they
         # are returned as Train to Teach events.
-        @available_event_types ||= GetIntoTeachingApiClient::Constants::EVENT_TYPES
+        @available_event_types ||= EventType::ALL
           .except("Question Time")
           .map do |key, value|
             GetIntoTeachingApiClient::PickListItem.new(id: value, value: key)

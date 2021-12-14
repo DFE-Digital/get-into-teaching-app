@@ -25,7 +25,7 @@ shared_context "with stubbed types api" do
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApiClient::Constants::EVENT_TYPES.map { |k, v| { id: v, value: k } }.to_json
+        body: EventType::ALL.map { |k, v| { id: v, value: k } }.to_json
 
     stub_request(:get, "#{git_api_endpoint}/api/lookup_items/teaching_subjects")
       .to_return \

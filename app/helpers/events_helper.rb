@@ -2,7 +2,7 @@ module EventsHelper
   include TextFormattingHelper
 
   def show_events_teaching_logo(index, type_id)
-    index.zero? && type_id != GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+    index.zero? && type_id != EventType.school_or_university_event_id
   end
 
   def format_event_date(event, stacked: true)

@@ -234,8 +234,7 @@ describe EventsController, type: :request do
           it { expect(response.body).to include("Unfortunately, that event has already happened.") }
         end
 
-        event_types_with_archive = GetIntoTeachingApiClient::Constants::EVENT_TYPES_WITH_ARCHIVE
-        event_types_with_archive.each do |type, id|
+        EventType::WITH_ARCHIVE.each do |type, id|
           context "when the event is a past #{type} type" do
             let(:event) { build(:event_api, type_id: id, start_at: Time.zone.now.utc - 1.day) }
 
@@ -244,7 +243,7 @@ describe EventsController, type: :request do
           end
         end
 
-        GetIntoTeachingApiClient::Constants::EVENT_TYPES.except(*event_types_with_archive.keys).each do |type, id|
+        EventType::ALL.except(*EventType::WITH_ARCHIVE.keys).each do |type, id|
           context "when the event is a past #{type} type" do
             let(:event) { build(:event_api, type_id: id, start_at: Time.zone.now.utc - 1.day) }
 

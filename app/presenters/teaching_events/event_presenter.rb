@@ -46,7 +46,7 @@ module TeachingEvents
     end
 
     def event_type
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[type_id]
+      EventType.lookup_by_id(type_id)
     end
 
     def quote
@@ -76,11 +76,11 @@ module TeachingEvents
     end
 
     def allow_registration?
-      open? && type_id.in?([qt_event_type_id, ttt_event_type_id])
+      open? && type_id.in?([EventType.question_time_event_id, EventType.train_to_teach_event_id])
     end
 
     def show_provider_information?
-      !type_id.in?([qt_event_type_id, ttt_event_type_id])
+      !type_id.in?([EventType.question_time_event_id, EventType.train_to_teach_event_id])
     end
 
     def show_venue_information?
@@ -89,16 +89,6 @@ module TeachingEvents
 
     def open?
       (start_at >= Time.zone.now && status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"])
-    end
-
-  private
-
-    def ttt_event_type_id
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
-    end
-
-    def qt_event_type_id
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
     end
   end
 end

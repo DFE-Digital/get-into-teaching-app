@@ -1,4 +1,17 @@
 class EventType
+  ALL =
+    {
+      "Train to Teach event" => 222_750_001,
+      "Question Time" => 222_750_007,
+      "Online event" => 222_750_008,
+      "School or University event" => 222_750_009,
+    }.freeze
+
+  WITH_ARCHIVE =
+    {
+      "Online event" => 222_750_008,
+    }.freeze
+
   attr_accessor :type_id
 
   delegate(
@@ -28,19 +41,27 @@ class EventType
     end
 
     def lookup_by_name(name)
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES.fetch(name)
+      ALL.fetch(name)
     end
 
     def lookup_by_names(*names)
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES.fetch_values(*names)
+      ALL.fetch_values(*names)
     end
 
     def lookup_by_id(id)
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert.fetch(id)
+      ALL.invert.fetch(id)
     end
 
     def lookup_by_ids(*ids)
-      GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert.fetch_values(*ids)
+      ALL.invert.fetch_values(*ids)
+    end
+
+    def has_archive?(id)
+      WITH_ARCHIVE.values.include?(id)
+    end
+
+    def all_ids
+      ALL.values
     end
   end
 

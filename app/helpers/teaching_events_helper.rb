@@ -22,8 +22,6 @@ module TeachingEventsHelper
   # * Online event               => Online forum
   # * School or University event => Training provider
   def event_type_name(id, overrides: { "DfE Online Q&A" => 222_750_008, "Training provider" => 222_750_009 })
-    GetIntoTeachingApiClient::Constants::EVENT_TYPES
-      .merge(overrides)
-      .invert[id]
+    EventType::ALL.merge(overrides).invert[id]
   end
 end

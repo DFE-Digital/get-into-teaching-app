@@ -410,7 +410,7 @@ describe Internal::EventsController, type: :request do
         let(:params) do
           attributes_for :internal_event,
                          :online_event,
-                         type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
+                         type_id: EventType.online_event_id
         end
         let(:expected_request_body) do
           build(:event_api,

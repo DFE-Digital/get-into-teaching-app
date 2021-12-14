@@ -26,7 +26,7 @@ describe Events::Search do
   describe ".available_event_type_ids" do
     subject { described_class.new.available_event_type_ids }
 
-    it { is_expected.to eql GetIntoTeachingApiClient::Constants::EVENT_TYPES.except("Question Time").values }
+    it { is_expected.to eq(EventType.all_ids - [EventType.question_time_event_id]) }
   end
 
   describe "#future?" do

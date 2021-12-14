@@ -2,6 +2,24 @@ require "rails_helper"
 
 describe EventType do
   describe "class_methods" do
+    describe ".has_archive" do
+      specify "returns true if the event type has an archive" do
+        expect(described_class).to have_archive(222_750_008)
+      end
+
+      specify "returns false if the event type does not have an archive" do
+        expect(described_class).not_to have_archive(222_750_001)
+        expect(described_class).not_to have_archive(222_750_007)
+        expect(described_class).not_to have_archive(222_750_009)
+      end
+    end
+
+    describe ".all_ids" do
+      subject { described_class.all_ids }
+
+      it { is_expected.to eq([222_750_001, 222_750_007, 222_750_008, 222_750_009]) }
+    end
+
     describe ".school_or_university_event_id" do
       subject { described_class.school_or_university_event_id }
 
