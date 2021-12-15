@@ -1,5 +1,6 @@
 figure {
   margin-block: 2em;
+  margin-inline: 0;
 
   @include mq($from: tablet) {
     margin-block: 0;

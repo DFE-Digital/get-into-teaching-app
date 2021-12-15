@@ -32,13 +32,15 @@
   }
 
   .content {
+    padding-block: 1em;
+
     @include mq($from: tablet) {
       grid-area: 4 / 2 / 5 / 4;
     }
   }
 
   picture {
-    transform: rotate(4deg);
+    transform: rotate(-4deg);
 
     @include mq($from: tablet) {
       grid-area: 2 / 3 / 4 / 5;
