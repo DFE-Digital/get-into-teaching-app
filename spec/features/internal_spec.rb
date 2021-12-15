@@ -8,7 +8,7 @@ RSpec.feature "Internal section", type: :feature do
           :with_provider_info,
           name: "Pending provider event",
           readable_id: "Readable_id",
-          status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
+          status_id: EventStatus.pending_id,
           type_id: EventType.school_or_university_event_id)
   end
   let(:pending_online_event) do
@@ -16,7 +16,7 @@ RSpec.feature "Internal section", type: :feature do
           :with_provider_info,
           name: "Pending online event",
           readable_id: "Readable_id",
-          status_id: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"],
+          status_id: EventStatus.pending_id,
           type_id: EventType.online_event_id)
   end
   let(:provider_events_by_type) { group_events_by_type([pending_provider_event]) }

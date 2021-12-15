@@ -10,7 +10,7 @@ module Internal
     attribute :readable_id, :string
     attribute :status_id,
               :integer,
-              default: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+              default: EventStatus.pending_id
     attribute :type_id,
               :integer,
               default: EventType.school_or_university_event_id

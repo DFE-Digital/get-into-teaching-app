@@ -79,7 +79,7 @@ describe Internal::EventsController, type: :request do
             .to receive(:search_teaching_events_grouped_by_type)
                   .with({
                     type_ids: [EventType.school_or_university_event_id],
-                    status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
+                    status_ids: [EventStatus.pending_id],
                     start_after: Time.zone.now.utc.beginning_of_day,
                     quantity_per_type: 1_000,
                   })
@@ -93,7 +93,7 @@ describe Internal::EventsController, type: :request do
             .to receive(:search_teaching_events_grouped_by_type)
                   .with({
                     type_ids: [EventType.online_event_id],
-                    status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
+                    status_ids: [EventStatus.pending_id],
                     start_after: Time.zone.now.utc.beginning_of_day,
                     quantity_per_type: 1_000,
                   })
@@ -463,7 +463,7 @@ describe Internal::EventsController, type: :request do
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+            event.status_id = EventStatus.open_id
           end
         end
 
@@ -518,7 +518,7 @@ describe Internal::EventsController, type: :request do
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+            event.status_id = EventStatus.open_id
           end
         end
 
@@ -566,7 +566,7 @@ describe Internal::EventsController, type: :request do
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+            event.status_id = EventStatus.pending_id
             event.building = nil
           end
         end
@@ -597,7 +597,7 @@ describe Internal::EventsController, type: :request do
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+            event.status_id = EventStatus.pending_id
           end
         end
 
@@ -660,7 +660,7 @@ describe Internal::EventsController, type: :request do
           .to receive(:search_teaching_events_grouped_by_type)
                 .with({
                   type_ids: [EventType.school_or_university_event_id, EventType.online_event_id],
-                  status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]],
+                  status_ids: [EventStatus.open_id],
                   start_after: Time.zone.now.utc.beginning_of_day,
                   quantity_per_type: 1_000,
                 })

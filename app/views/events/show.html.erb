@@ -63,7 +63,7 @@
   <br>
   <% end %>
 
-  <% if event_status_open?(@event) || event_status_pending?(@event) %>
+  <% unless EventStatus.new(@event).closed? %>
     <% if can_sign_up_online?(@event) %>
       <h2>How to attend</h2>
       <% if @event.is_online %>

@@ -161,28 +161,6 @@ describe TeachingEvents::EventPresenter do
       end
     end
 
-    describe "#open?" do
-      subject { described_class.new(event).open? }
-
-      context "when the event's status is open and it's in the future" do
-        let(:event) { build(:event_api) }
-
-        it { is_expected.to be true }
-      end
-
-      context "when the event's status is open and it's in the past" do
-        let(:event) { build(:event_api, :past) }
-
-        it { is_expected.to be false }
-      end
-
-      context "when the event's status is closed and it's in the future" do
-        let(:event) { build(:event_api, :closed) }
-
-        it { is_expected.to be false }
-      end
-    end
-
     describe "#allow_registration?" do
       subject { described_class.new(event).allow_registration? }
 

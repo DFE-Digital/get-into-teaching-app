@@ -78,27 +78,11 @@ describe EventsHelper, type: "helper" do
     it { is_expected.to match(/alt="Map showing #{event.name}"/) }
   end
 
-  describe "#event_status_open?" do
-    it "returns true for events that have a status of open" do
-      event = GetIntoTeachingApiClient::TeachingEvent.new(
-        statusId: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
-      )
-      expect(event_status_open?(event)).to be_truthy
-    end
-
-    it "returns false for closed events" do
-      event = GetIntoTeachingApiClient::TeachingEvent.new(
-        statusId: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"],
-      )
-      expect(event_status_open?(event)).to be_falsy
-    end
-  end
-
   describe "#can_sign_up_online?" do
     it "returns true for events with a web_feed_id that are not closed" do
       event = GetIntoTeachingApiClient::TeachingEvent.new(
         webFeedId: "abc-123",
-        statusId: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
+        statusId: EventStatus.open_id,
       )
       expect(can_sign_up_online?(event)).to be_truthy
     end
@@ -106,7 +90,7 @@ describe EventsHelper, type: "helper" do
     it "returns false for events without a web_feed_id" do
       event = GetIntoTeachingApiClient::TeachingEvent.new(
         webFeedId: nil,
-        statusId: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"],
+        statusId: EventStatus.open_id,
       )
       expect(can_sign_up_online?(event)).to be_falsy
     end
@@ -114,23 +98,9 @@ describe EventsHelper, type: "helper" do
     it "returns false for closed events" do
       event = GetIntoTeachingApiClient::TeachingEvent.new(
         webFeedId: "abc-123",
-        statusId: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"],
+        statusId: EventStatus.closed_id,
       )
       expect(can_sign_up_online?(event)).to be_falsy
-    end
-  end
-
-  describe "#is_event_type?" do
-    let(:matching_type) { "School or University event" }
-    let(:non_matching_type) { "Online event" }
-    let(:event) { build(:event_api, type_id: EventType.lookup_by_name(matching_type)) }
-
-    it "is truthy when the type matches" do
-      expect(is_event_type?(event, matching_type)).to be_truthy
-    end
-
-    it "is falsy when the type matches" do
-      expect(is_event_type?(event, non_matching_type)).to be_falsy
     end
   end
 

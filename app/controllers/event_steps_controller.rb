@@ -27,7 +27,7 @@ private
   end
 
   def redirect_closed_events
-    event_is_closed = @event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Closed"]
+    event_is_closed = EventStatus.new(@event).closed?
     candidate_is_walk_in = wizard_store[:is_walk_in]
 
     if event_is_closed && !candidate_is_walk_in
