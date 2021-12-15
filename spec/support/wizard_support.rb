@@ -26,13 +26,13 @@ end
 
 shared_context "with wizard data" do
   let(:degree_status_option_types) do
-    GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
+    OptionSet::DEGREE_STATUSES.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
 
   let(:consideration_journey_stage_types) do
-    GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
+    OptionSet::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end
@@ -44,7 +44,7 @@ shared_context "with wizard data" do
   end
 
   let(:channels) do
-    GetIntoTeachingApiClient::Constants::CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS.map do |k, v|
+    OptionSet::MAILING_LIST_CHANNELS.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end

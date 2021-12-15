@@ -13,13 +13,13 @@ shared_context "with stubbed types api" do
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map { |k, v| { id: v, value: k } }.to_json
+        body: OptionSet::DEGREE_STATUSES.map { |k, v| { id: v, value: k } }.to_json
 
     stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/candidate/consideration_journey_stages")
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map { |k, v| { id: v, value: k } }.to_json
+        body: OptionSet::CONSIDERATION_JOURNEY_STAGES.map { |k, v| { id: v, value: k } }.to_json
 
     stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/teaching_event/types")
       .to_return \

@@ -1,11 +1,12 @@
 module WelcomeHelper
   def show_welcome_guide?(degree_status = degree_status_id, consideration_journey_stage = consideration_journey_stage_id)
-    gradudate_or_postgraduate = retrieve_degree_status_ids("Graduate or postgraduate")
-    allowed_graduate_consideration_stages = retrieve_consideration_journey_stage_ids(
-      "It’s just an idea",
-      "I’m not sure and finding out more",
+    gradudate_or_postgraduate = OptionSet.lookup_by_keys(:degree_status, :graduate_or_postgraduate)
+    allowed_graduate_consideration_stages = OptionSet.lookup_by_keys(
+      :consideration_journey_stage,
+      :it_s_just_an_idea,
+      :i_m_not_sure_and_finding_out_more,
     )
-    final_year_student = retrieve_degree_status_ids("Final year")
+    final_year_student = OptionSet.lookup_by_keys(:degree_status, :final_year)
 
     degree_status.in?(final_year_student) || (
       degree_status.in?(gradudate_or_postgraduate) && consideration_journey_stage.in?(allowed_graduate_consideration_stages)
@@ -73,13 +74,5 @@ private
     return subject if leave_capitalised || uuid.in?(proper_nouns)
 
     subject.downcase
-  end
-
-  def retrieve_degree_status_ids(*names)
-    GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.values_at(*names)
-  end
-
-  def retrieve_consideration_journey_stage_ids(*names)
-    GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.values_at(*names)
   end
 end
