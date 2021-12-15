@@ -100,14 +100,13 @@ footer.site-footer {
       display: flex;
       align-content: center;
 
-      picture + picture {
+      * + picture, a {
         margin-top: 1em;
       }
 
-
       @include mq($from: tablet) {
         // gap: 3em;
-        picture + picture {
+        * + picture, a {
           margin-top: 0;
           margin-left: 3em;
         }
