@@ -31,7 +31,7 @@ describe Healthcheck do
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map { |k, v| { id: v, value: k } }.to_json
+        body: TeachingSubject::ALL.map { |k, v| { id: v, value: k } }.to_json
   end
 
   include_examples "reading git shas", "app_sha", "/etc/get-into-teaching-app-sha"

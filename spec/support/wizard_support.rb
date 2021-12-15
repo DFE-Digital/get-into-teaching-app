@@ -38,7 +38,7 @@ shared_context "with wizard data" do
   end
 
   let(:teaching_subject_types) do
-    GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map do |k, v|
+    TeachingSubject::ALL.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end

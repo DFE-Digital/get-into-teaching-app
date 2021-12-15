@@ -50,7 +50,7 @@ module Events
       def teaching_subject_options
         @teaching_subject_options ||=
           GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject do |type|
-            GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS.values.include?(type.id)
+            TeachingSubject.ignore?(type.id)
           end
       end
 

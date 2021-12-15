@@ -8,9 +8,7 @@ describe MailingList::Steps::Subject do
   end
 
   let(:teaching_subject_types) do
-    GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map do |k, v|
-      GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k })
-    end
+    TeachingSubject::ALL.map { |k, v| GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k }) }
   end
 
   it_behaves_like "a with wizard step"
@@ -31,12 +29,10 @@ describe MailingList::Steps::Subject do
     subject { instance.teaching_subject_ids }
 
     let(:teaching_subject_types) do
-      subjects = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.merge(
-        GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS,
-      )
+      subjects = TeachingSubject::ALL.merge(TeachingSubject::IGNORED)
       subjects.map { |k, v| GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k }) }
     end
 
-    it { is_expected.to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.values) }
+    it { is_expected.to eq(TeachingSubject.all_uuids) }
   end
 end
