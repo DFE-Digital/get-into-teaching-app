@@ -55,7 +55,7 @@ An experienced teaching professional can help if you're ready to get into teachi
 
 ## 4. Research training courses
 
-From 5 October 2021, search for training courses by using the Department for Education’s [Find postgraduate teacher training service](https://www.find-postgraduate-teacher-training.service.gov.uk/). You can search by location, training provider and subject to find the course best suited to you.
+[Find postgraduate teacher training.](https://www.find-postgraduate-teacher-training.service.gov.uk/). You can search by location, training provider and subject to find the course best suited to you.
 
 ## 5. Reflect on (or get some) school experience
 

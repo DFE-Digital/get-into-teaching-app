@@ -133,7 +133,7 @@ You can apply for a salaried teacher training course, when you’ll earn money w
 
 ## 4. Search and apply for teacher training courses
 
-Visit [Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) for teacher training courses in England leading to qualified teacher status [(QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
+[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in England leading to qualified teacher status [(QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
 
 You can search by location, teaching subject and age group. You can also search for courses which pay a salary, and courses where visa sponsorship is available.
 
