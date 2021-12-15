@@ -1,0 +1,69 @@
+article {
+  margin-inline: 1em;
+
+  $colours: ("pink": $pink, "blue": $blue, "yellow": $yellow, "purple": $purple);
+
+  @each $name, $val in $colours {
+    .#{$name} {
+      padding: 1rem .7rem;
+      background: $val;
+      display: inline-block;
+
+      p {
+        margin-block: 0;
+      }
+
+      @include mq($from: tablet) {
+        max-width: 50%;
+      }
+    }
+
+    .#{$name} + .#{$name} {
+      margin-top: .5rem;
+    }
+  }
+
+  $sizes: "xlarge", "xxlarge", "xxxlarge";
+
+  @each $name in $sizes {
+    .#{$name} {
+      @include font-size($name);
+      padding-block: .5rem;
+    }
+  }
+
+  > * {
+    max-width: 65ch;
+    margin: auto;
+  }
+
+  > section {
+    padding-inline: 1rem;
+  }
+
+  > section + section {
+    margin-top: 3em;
+  }
+
+  @include mq($from: tablet) {
+    margin: auto;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .statement {
+    h2 {
+      margin: 0;
+    }
+
+    div + div {
+      margin-top: .5rem;
+    }
+
+    p + p {
+      margin-top: .5rem;
+    }
+  }
+}

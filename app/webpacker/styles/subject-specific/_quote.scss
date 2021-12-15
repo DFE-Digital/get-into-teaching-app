@@ -1,0 +1,64 @@
+figure {
+  margin-block: 2em;
+
+  @include mq($from: tablet) {
+    margin-block: 0;
+  }
+
+  blockquote,
+  figcaption {
+    padding-inline: 0em;
+    margin-inline: 1em;
+
+    @include mq($from: tablet) {
+      padding-inline: 2em;
+    }
+  }
+
+  blockquote {
+    $color: $pink-dark;
+    $blog-content-width: 50ch;
+
+    p {
+      @include font-size(medium);
+      position: relative;
+
+      // some extra rules to make the quotes a bit nicer. this 'smart' css
+      // unfortunately has the side affect of requiring attribution for
+      // multi-paragraph quotes; to get around it we'll need to implement
+      // something more powerful like the regular quote module that wraps
+      // the <blockquote> in a <figure> with a <figcaption>
+
+      &:before,
+      &:after {
+        @include font-size(xlarge);
+        color: $pink-dark;
+      }
+
+      // always open the quote on the first paragraph
+      &:first-child {
+        &:before {
+          content: open-quote;
+          position: absolute;
+          left: -.6em;
+          top: -.3em;
+        }
+      }
+
+      // close the quote on the only paragraph (if there's no attribution)
+      // or the second last if there is
+      &:last-child {
+        &:after {
+          position: absolute;
+          content: close-quote;
+          margin-left: .02em;
+          margin-top: -.1em;
+        }
+      }
+    }
+  }
+
+  figcaption {
+    margin-inline: 1em;
+  }
+}

@@ -1,0 +1,88 @@
+header {
+  // the two ratios don't overlap exactly because we'd get a jagged
+  // edge - instead adjust the second slightly so it blurs smoothly
+
+  @mixin slanted-bottom($accent) {
+    $accent-ratio: 75%;
+    $white-ratio: $accent_ratio + 0.5%;
+    background: linear-gradient(182deg, $accent $accent-ratio, $white $white-ratio);
+  }
+
+  min-height: 15em;
+
+  .container {
+    max-width: 65ch;
+    margin-top: 0;
+    flex-direction: column;
+    align-items: center;
+    padding-block: 1em;
+
+    @include mq($from: mobile) {
+      flex-direction: row;
+    }
+  }
+
+  &.yellow {
+    @include slanted-bottom($yellow);
+
+    background-color: $yellow;
+    color: $black;
+
+    h1 > span {
+      background: $purple;
+    }
+  }
+
+  &.blue {
+    @include slanted-bottom($blue);
+
+    background-color: $blue;
+    color: $black;
+
+    h1 > span {
+      background: $pink;
+    }
+  }
+
+  &.pink {
+    @include slanted-bottom($pink);
+
+    background-color: $pink;
+    color: $black;
+
+    h1 > span {
+      background: $yellow;
+    }
+  }
+
+  h1 {
+    flex: 1 0 60%;
+    margin: 1em auto;
+
+    @include mq($from: tablet) {
+      margin: 1em inherit;
+    }
+
+    span {
+      @include font-size(xlarge);
+
+      padding: .05rem .7rem;
+    }
+
+    span:last-of-type {
+      @include font-size(xxxlarge);
+    }
+  }
+
+  picture {
+    flex: 0 1 40%;
+
+    img {
+      max-width: 90%;
+
+      @include mq($from: tablet) {
+        max-width: 90%;
+      }
+    }
+  }
+}
