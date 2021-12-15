@@ -50,7 +50,7 @@ Search [postgraduate teacher training courses](https://www.gov.uk/find-postgradu
 
 ## Where to apply
 
-[Apply for teacher training](https://www.gov.uk/apply-for-teacher-training).
+When you're ready, you can [apply for teacher training](https://www.gov.uk/apply-for-teacher-training).
 
 This service has replaced the UCAS postgraduate teacher training application.
 
