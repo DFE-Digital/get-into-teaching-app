@@ -23,7 +23,12 @@ describe('Google Tag Manager', () => {
   const mockWindowLocation = () => {
     Object.defineProperty(window, 'location', {
       configurable: true,
-      value: {},
+      value: {
+        protocol: 'https',
+        hostname: 'localhost',
+        pathname: '/path',
+        search: '?utm=tag',
+      },
     });
   };
 
@@ -34,7 +39,9 @@ describe('Google Tag Manager', () => {
   });
 
   describe('initialisation', () => {
-    beforeEach(() => run());
+    beforeEach(() => {
+      run();
+    });
 
     it('defines window.dataLayer', () => {
       expect(window.gtag).toBeDefined();
@@ -42,6 +49,16 @@ describe('Google Tag Manager', () => {
 
     it('defines window.gtag', () => {
       expect(window.dataLayer).toBeDefined();
+    });
+
+    it('pushes the original location onto the dataLayer', () => {
+      expect(window.dataLayer).toEqual(
+        expect.arrayContaining([
+          expect.objectContaining({
+            originalLocation: 'https://localhost/path?utm=tag',
+          }),
+        ])
+      );
     });
 
     it('appends the GTM script', () => {

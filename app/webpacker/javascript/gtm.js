@@ -15,9 +15,16 @@ export default class Gtm {
 
   initWindow() {
     window.dataLayer = window.dataLayer || [];
+
+    // We use this to retain Google Ads tracking parameters in the
+    // URL of the landing page (or they are subsequently lost when
+    // Turbolinks transitions).
+    window.dataLayer.push({ originalLocation: this.originalLocation });
+
     function gtag() {
       window.dataLayer.push(arguments);
     }
+
     window.gtag = window.gtag || gtag;
   }
 
@@ -62,5 +69,10 @@ export default class Gtm {
     return new CookiePreferences().allowedCategories.includes(category)
       ? 'granted'
       : 'denied';
+  }
+
+  get originalLocation() {
+    const l = window.location;
+    return `${l.protocol}://${l.hostname}${l.pathname}${l.search}`;
   }
 }
