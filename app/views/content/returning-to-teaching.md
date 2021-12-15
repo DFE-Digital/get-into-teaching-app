@@ -94,7 +94,7 @@ Here at the Department for Education, we’re taking action to address some of t
 * [enable flexible working](https://www.gov.uk/government/collections/flexible-working-resources-for-teachers-and-schools)
 * [manage behaviour](https://www.gov.uk/guidance/behaviour-hubs)
 
-The education sector promotes inclusivity and diversity. There are many organisations that support teachers with protected characteristics, such as [WomenEd](https://www.womened.org/), [BAMEed](https://www.bameednetwork.com/), [LGBTed](http://www.outteacher.org/) and [DisabilityEd](https://www.twitter.com/disability_ed).
+The education sector promotes inclusivity and diversity. There are many organisations that support teachers with protected characteristics, such as [WomenEd](https://www.womened.org/), [BAMEed](https://www.bameednetwork.com/), [LGBTed](https://www.outteacher.org/) and [DisabilityEd](https://www.twitter.com/disability_ed).
 
 [Search for jobs, including those with flexible working patterns, on Teaching Vacancies](https://teaching-vacancies.service.gov.uk/).
 
