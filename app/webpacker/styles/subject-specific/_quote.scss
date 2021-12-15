@@ -19,20 +19,26 @@ figure {
     $color: $pink-dark;
     $blog-content-width: 50ch;
 
+    $colours: ("pink": $pink-dark, "blue": $blue-dark, "yellow": $yellow-dark, "purple": $purple-dark);
+
+    @each $name, $val in $colours {
+      &.#{$name}-quotes {
+        p {
+          &:before,
+          &:after {
+            color: $val;
+          }
+        }
+      }
+    }
+
     p {
       @include font-size(medium);
       position: relative;
 
-      // some extra rules to make the quotes a bit nicer. this 'smart' css
-      // unfortunately has the side affect of requiring attribution for
-      // multi-paragraph quotes; to get around it we'll need to implement
-      // something more powerful like the regular quote module that wraps
-      // the <blockquote> in a <figure> with a <figcaption>
-
       &:before,
       &:after {
         @include font-size(xlarge);
-        color: $pink-dark;
       }
 
       // always open the quote on the first paragraph
