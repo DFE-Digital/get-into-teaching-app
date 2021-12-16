@@ -10,10 +10,19 @@
             <%= tag.dd(a["name"]) %>
           </div>
 
-          <div>
-            <dt>Contact:</dt>
-            <%= tag.dd(a["contact"]) %>
-          </div>
+          <% if a["contact"].present? %>
+            <div>
+              <dt>Contact:</dt>
+              <%= tag.dd(a["contact"]) %>
+            </div>
+          <% end %>
+
+          <% if a["website"].present? %>
+            <div>
+              <dt>Website:</dt>
+              <%= tag.dd(link_to(a["website"])) %>
+            </div>
+          <% end %>
 
           <div>
             <dt>Email:</dt>
