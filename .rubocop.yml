@@ -55,6 +55,9 @@ Style/SignalException:
 Style/EmptyMethod:
   Enabled: false
 
+Style/StringConcatenation:
+  Enabled: false
+
 Style/ClassVars:
   Enabled: false
 
