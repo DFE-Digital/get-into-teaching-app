@@ -6,35 +6,61 @@ content:
   - content/urgent-call-for-qualified-teachers/list
 agencies:
 
-  South East:
-  - name: 3D RECRUIT LIMITED
-    website: https://www.3drecruit.com
-    email: amy@3drecruit.com
-    address: Regent House, Mitre Way, Battle, TN33 0BQ
-  - name: ENGAGE EDUCATION
-    website: https://www.engage-education.com
-    email: ccs@engage-education.com
-    address: 2nd Floor, Meridien House, 71 Clarendon Road, Watford, WD17 1DS
-  - name: GRAY AGENCY LIMITED
-    website: https://www.grayagency.com
-    email: christina@grayagency.com
-    address: 7-9 The Avenue, Eastbourne, BN21 3YA
-  - name: KENT TEACHING SOLUTIONS LTD
-    website: https://www.kentteachingsolutions.com
-    email: marc@kentteachingsolutions.com
-    address: 3 Queen Street, Ashford, TN23 1RF
-  - name: SIMPLY SUPPLY LIMITED
-    website: https://www.simplysupply.co.uk
-    email: emma@simplysupply.co.uk
-    address: 119b West Street, Fareham, PO16 0DU
-  - name: SUPPLY TEACHING LIMITED
-    website: https://www.supplyteaching.net
-    email: mail@supplyteaching.net
-    address: 8 Cadeby Court, Broughton, Milton Keynes, MK10 9LE
-  - name: THE STAFFROOM AGENCY LTD
-    website: https://www.thestaffroom.org.uk
-    email: chris.wood@thestaffroom.org.uk
-    address: 15 Towcester Road, Old Stratford, Milton Keynes, MK19 6AN
+  East Midlands:
+  - name: AQUINAS EDUCATION LIMITED
+    website: https://www.aquinaseducation.co.uk
+    email: nicola@aquinaseducation.co.uk
+    address: Unit 2 Poplars Court, Lenton Lane, Nottingham, NG7 2PW
+  - name: EDUCATION RECRUITMENT LIMITED
+    website:
+    email: work@travaileducation.com
+    address: Unit 30, The George Shopping Centre, Grantham, NG31 6LH
+  - name: Mana Resourcing Ltd t/a Mana Education
+    website: https://www.manaeducation.co.uk
+    email: maria@manaeducation.co.uk
+    address: Glaston Hall, Spring Lane, Oakham, LE15 9BX
+  - name: SMART EDUCATION LIMITED
+    website: https://www.smartteachers.co.uk
+    email: andrea.musty@smartteachers.co.uk
+    address: Lake View Drive, Sherwood Park, Nottingham, NG15 0DT
+  - name: TEACHING FORCE
+    website: https://www.protocol.co.uk
+    email: bcurtis@protocol.co.uk
+    address: The Point, Nottingham, NG2 7QW
+  - name: TEXTBOOK TEACHERS RECRUITMENT AND EDUCATION SERVICES LIMITED
+    website: https://www.textbookteachers.co.uk
+    email: sharon@textbookteachers.co.uk
+    address: 6 Saddlers Court, Oakham, LE15 7GH
+  East of England:
+  - name: CAREER TEACHERS LIMITED
+    website: https://www.careerteachers.co.uk
+    email: kellie.page-brown@careerteachers.co.uk
+    address: 800 Capability Green, Luton, LU1 3BA
+  - name: CHOICE TEACHERS (SOUTH) LTD
+    website:
+    email: info@choiceteachers.com
+    address: Unit M, Pixmore Business Centre, Pixmore Avenue, Letchworth Garden City,
+      SG6 1JG
+  - name: EDUCATION LINE LTD
+    website: https://www.educationlinerecruitment.co.uk
+    email: james@educationlinerecruitment.co.uk
+    address: Bedford Heights, Brickhill Drive, Bedford, MK41 7PH
+  - name: GRADE A RECRUITMENT LIMITED
+    website:
+    email: admin@gradearecruitment.co.uk
+    address: Unit 6, Orton Enterprise Centre, Bakewell Road, Peterborough, PE2 6XU
+  - name: KEY EDUCATION SERVICES LIMITED
+    website: https://www.key-education.co.uk
+    email: sam.dyson@key-education.co.uk
+    address: Crowland House, Witherfield Road, Haverhill, CB9 9LA
+  - name: SIMPLY EDUCATION LIMITED
+    website: https://www.simplyeducation.co.uk
+    email: hollie@simplyeducation.co.uk
+    address: Brickhill Drive, Bedford, MK41 7PH
+  - name: STRATEGY EDUCATION LTD
+    website: https://www.strategyeducation.co.uk
+    email: lorraine@strategyeducation.co.uk
+    address: Lgj House Knowles Farm Estate, Wycke Hill, Maldon, CM9 6SH
   Greater London:
   - name: 4MYSCHOOLS LTD
     website: https://www.4myschools.org
@@ -162,6 +188,129 @@ agencies:
     website: https://www.zeneducate.com
     email: slava@zeneducate.com
     address: Unit 3.19 Canterbury Court, 1-3 Brixton Rd, London, SW9 6DE
+  North East:
+  - name: EDUCATION WORLD LIMITED
+    website: https://www.education-world.co.uk
+    email: graham.simms@education-world.co.uk
+    address: Yours Business Network, Delta Bank Road, Metro Riverside Park, Gateshead,
+      NE11 9DJ
+  - name: EXACT EDUCATION LIMITED
+    website: https://www.exacteducation.com
+    email: info@exacteducation.com
+    address: 29 Seafield View, North Shields, NE30 4LE
+  - name: SCHOOL HOUSE RECRUITMENT LTD
+    website: https://www.schoolhouserecruitment.co.uk
+    email: claire@schoolhouserecruitment.co.uk
+    address: Stockton Business Centre, Stockton-on-Tees, TS18 1DW
+  North West:
+  - name: CHOICE TEACHERS LIMITED
+    website:
+    email: info@choiceteachers.com
+    address: 26 Union Street, Leigh, WN7 1AT
+  - name: CONNEX EDUCATION, THE CLASSROOM PARTNERSHIP
+    website: https://www.bluestonesgroup.co.uk
+    email: paul.broderick@bluestonesgroup.co.uk
+    address: Military House, 24 Castle Street, Chester, CH1 3DS
+  - name: EDISON POPE LTD.
+    website: https://www.edisonpope.com
+    email: phil@edisonpope.com
+    address: Unit 32, The Colony Buildings, Altrincham Road, Wilmslow, SK9 4LY
+  - name: EDSTAFF LIMITED
+    website: https://www.edstaff.co.uk
+    email: abailey@edstaff.co.uk
+    address: 10 High Street, Newton-Le-Willows, WA12 9SN
+  - name: M2 EDUCATION LIMITED
+    website: https://www.m2education.co.uk
+    email: mark.birnie@m2education.co.uk
+    address: Unit 5, Navigation Business Villa, Preston, PR2 2YP
+  - name: RED APPLE EDUCATION LTD
+    website: https://www.redappleeducation.co.uk
+    email: jamie@redappleeducation.co.uk
+    address: The Turret, Wirral, CH63 1JL
+  - name: SCHOOL IMPROVEMENT LIVERPOOL LIMITED
+    website:
+    email: recruitment@si.liverpool.gov.uk
+    address: Toxteth Annexe, Aigburth Road, Liverpool, L17 7BN
+  - name: SMART EDUCATION RECRUITMENT LTD
+    website: https://www.smarted.co.uk
+    email: fran@smarted.co.uk
+    address: 1-3 The Courtyard, Calvin Street, Bolton, BL1 8PB
+  - name: STEP BY STEP EDUCATION LTD
+    website: https://www.stepbystepeducation.co.uk
+    email: phil@stepbystepeducation.co.uk
+    address: 80 Lytham Road, Fulwood, Preston, PR2 3AQ
+  - name: THE EDUCATION SPECIALISTS LTD.
+    website: https://www.tessupply.co.uk
+    email: barry@tessupply.co.uk
+    address: 1 Paramount Business Park, Liverpool, L36 6AW
+  South East:
+  - name: 3D RECRUIT LIMITED
+    website: https://www.3drecruit.com
+    email: amy@3drecruit.com
+    address: Regent House, Mitre Way, Battle, TN33 0BQ
+  - name: ENGAGE EDUCATION
+    website: https://www.engage-education.com
+    email: ccs@engage-education.com
+    address: 2nd Floor, Meridien House, 71 Clarendon Road, Watford, WD17 1DS
+  - name: GRAY AGENCY LIMITED
+    website: https://www.grayagency.com
+    email: christina@grayagency.com
+    address: 7-9 The Avenue, Eastbourne, BN21 3YA
+  - name: KENT TEACHING SOLUTIONS LTD
+    website: https://www.kentteachingsolutions.com
+    email: marc@kentteachingsolutions.com
+    address: 3 Queen Street, Ashford, TN23 1RF
+  - name: SIMPLY SUPPLY LIMITED
+    website: https://www.simplysupply.co.uk
+    email: emma@simplysupply.co.uk
+    address: 119b West Street, Fareham, PO16 0DU
+  - name: SUPPLY TEACHING LIMITED
+    website: https://www.supplyteaching.net
+    email: mail@supplyteaching.net
+    address: 8 Cadeby Court, Broughton, Milton Keynes, MK10 9LE
+  - name: THE STAFFROOM AGENCY LTD
+    website: https://www.thestaffroom.org.uk
+    email: chris.wood@thestaffroom.org.uk
+    address: 15 Towcester Road, Old Stratford, Milton Keynes, MK19 6AN
+  South West:
+  - name: CLASS PEOPLE
+    website: https://www.classpeople.co.uk
+    email: lynis@classpeople.co.uk
+    address: Eagle Tower, Montpellier Drive, Cheltenham, GL50 1TA
+  - name: PRO EDUCATION
+    website:
+    email: jasonw@wiseemployment.com
+    address: 104 Commercial Road, Swindon, SN1 5PL
+  - name: SESAME EDUCATION LIMITED
+    website: https://www.sesame-education.co.uk
+    email: david@sesame-education.co.uk
+    address: Monarch House, 1-7 Smyth Road, Bristol, BS3 2BX
+  - name: WEST COUNTRY EDUCATIONAL AGENCY LIMITED
+    website: https://www.westcountryagency.co.uk
+    email: staff@westcountryagency.co.uk
+    address: 1 Canon Square, Melksham, SN12 6LX
+  Wales:
+  - name: APOLLO TEACHING SERVICES LTD
+    website:
+    email: maxine@apolloteaching.com
+    address: Apollo Business Village, Heol Persondy, Bridgend, CF32 9TF
+  - name: EDUCATE RESOURCING, PREMIER TEACHERS
+    website: https://www.educate-group.co.uk
+    email: mark.jones@educate-group.co.uk
+    address: 12 12 Edison Court, Wrexham Technology Park, Wrexham, LL13 7YT
+  - name: EQUAL EDUCATION PARTNERS LTD
+    website: https://www.equalrecruitment.co.uk
+    email: education@equalrecruitment.co.uk
+    address: No 6 Dragon 24, North Dock, Llanelli, SA15 2LF
+  - name: EXCELL SUPPLY LTD.
+    website:
+    email: info@excell-supply.com
+    address: Unit 17, Mold Business Park, Mold, CH7 1XP
+  - name: VETRO RECRUITMENT LTD
+    website:
+    email: alastair@vrecruitment.co.uk
+    address: Suites 2 and 5, DeClare House, 4 Sir Alfred Owen Way,, Caerphilly, CF83
+      3HU
   West Midlands:
   - name: ABC TEACHERS LIMITED
     website: https://www.abc-teachers.co.uk
@@ -213,6 +362,10 @@ agencies:
     website: https://www.academicappointments.co.uk
     email: pete@academicappointments.co.uk
     address: Thorpe Park, Leeds, LS15 8GB
+  - name: JUST TEACHERS LIMITED
+    website: https://www.justteachers.co.uk
+    email: caroline.cafferty@justteachers.co.uk
+    address: High Corn Mill, Skipton, BD23 1NL
   - name: PRINCIPAL RESOURCING LIMITED
     website: https://www.principalresourcing.co.uk
     email: kate.mennell@principalresourcing.co.uk
@@ -237,160 +390,7 @@ agencies:
     website: https://www.yorkshire-education.co.uk
     email: claire@yorkshire-education.co.uk
     address: C/o Mollan & Co, Holtby Manor, Stamford Bridge Road, York, YO19 5LL
-  Wales:
-  - name: APOLLO TEACHING SERVICES LTD
-    website:
-    email: maxine@apolloteaching.com
-    address: Apollo Business Village, Heol Persondy, Bridgend, CF32 9TF
-  - name: EDUCATE RESOURCING, PREMIER TEACHERS
-    website: https://www.educate-group.co.uk
-    email: mark.jones@educate-group.co.uk
-    address: 12 12 Edison Court, Wrexham Technology Park, Wrexham, LL13 7YT
-  - name: EQUAL EDUCATION PARTNERS LTD
-    website: https://www.equalrecruitment.co.uk
-    email: education@equalrecruitment.co.uk
-    address: No 6 Dragon 24, North Dock, Llanelli, SA15 2LF
-  - name: EXCELL SUPPLY LTD.
-    website:
-    email: info@excell-supply.com
-    address: Unit 17, Mold Business Park, Mold, CH7 1XP
-  - name: VETRO RECRUITMENT LTD
-    website:
-    email: alastair@vrecruitment.co.uk
-    address: Suites 2 and 5, DeClare House, 4 Sir Alfred Owen Way,, Caerphilly, CF83
-      3HU
-  East Midlands:
-  - name: AQUINAS EDUCATION LIMITED
-    website: https://www.aquinaseducation.co.uk
-    email: nicola@aquinaseducation.co.uk
-    address: Unit 2 Poplars Court, Lenton Lane, Nottingham, NG7 2PW
-  - name: EDUCATION RECRUITMENT LIMITED
-    website:
-    email: work@travaileducation.com
-    address: Unit 30, The George Shopping Centre, Grantham, NG31 6LH
-  - name: Mana Resourcing Ltd t/a Mana Education
-    website: https://www.manaeducation.co.uk
-    email: maria@manaeducation.co.uk
-    address: Glaston Hall, Spring Lane, Oakham, LE15 9BX
-  - name: SMART EDUCATION LIMITED
-    website: https://www.smartteachers.co.uk
-    email: andrea.musty@smartteachers.co.uk
-    address: Lake View Drive, Sherwood Park, Nottingham, NG15 0DT
-  - name: TEACHING FORCE
-    website: https://www.protocol.co.uk
-    email: bcurtis@protocol.co.uk
-    address: The Point, Nottingham, NG2 7QW
-  - name: TEXTBOOK TEACHERS RECRUITMENT AND EDUCATION SERVICES LIMITED
-    website: https://www.textbookteachers.co.uk
-    email: sharon@textbookteachers.co.uk
-    address: 6 Saddlers Court, Oakham, LE15 7GH
-  East of England:
-  - name: CAREER TEACHERS LIMITED
-    website: https://www.careerteachers.co.uk
-    email: kellie.page-brown@careerteachers.co.uk
-    address: 800 Capability Green, Luton, LU1 3BA
-  - name: CHOICE TEACHERS (SOUTH) LTD
-    website:
-    email: info@choiceteachers.com
-    address: Unit M, Pixmore Business Centre, Pixmore Avenue, Letchworth Garden City,
-      SG6 1JG
-  - name: EDUCATION LINE LTD
-    website: https://www.educationlinerecruitment.co.uk
-    email: james@educationlinerecruitment.co.uk
-    address: Bedford Heights, Brickhill Drive, Bedford, MK41 7PH
-  - name: GRADE A RECRUITMENT LIMITED
-    website:
-    email: admin@gradearecruitment.co.uk
-    address: Unit 6, Orton Enterprise Centre, Bakewell Road, Peterborough, PE2 6XU
-  - name: KEY EDUCATION SERVICES LIMITED
-    website: https://www.key-education.co.uk
-    email: sam.dyson@key-education.co.uk
-    address: Crowland House, Witherfield Road, Haverhill, CB9 9LA
-  - name: SIMPLY EDUCATION LIMITED
-    website: https://www.simplyeducation.co.uk
-    email: hollie@simplyeducation.co.uk
-    address: Brickhill Drive, Bedford, MK41 7PH
-  - name: STRATEGY EDUCATION LTD
-    website: https://www.strategyeducation.co.uk
-    email: lorraine@strategyeducation.co.uk
-    address: Lgj House Knowles Farm Estate, Wycke Hill, Maldon, CM9 6SH
-  North West:
-  - name: CHOICE TEACHERS LIMITED
-    website:
-    email: info@choiceteachers.com
-    address: 26 Union Street, Leigh, WN7 1AT
-  - name: CONNEX EDUCATION, THE CLASSROOM PARTNERSHIP
-    website: https://www.bluestonesgroup.co.uk
-    email: paul.broderick@bluestonesgroup.co.uk
-    address: Military House, 24 Castle Street, Chester, CH1 3DS
-  - name: EDISON POPE LTD.
-    website: https://www.edisonpope.com
-    email: phil@edisonpope.com
-    address: Unit 32, The Colony Buildings, Altrincham Road, Wilmslow, SK9 4LY
-  - name: EDSTAFF LIMITED
-    website: https://www.edstaff.co.uk
-    email: abailey@edstaff.co.uk
-    address: 10 High Street, Newton-Le-Willows, WA12 9SN
-  - name: M2 EDUCATION LIMITED
-    website: https://www.m2education.co.uk
-    email: mark.birnie@m2education.co.uk
-    address: Unit 5, Navigation Business Villa, Preston, PR2 2YP
-  - name: RED APPLE EDUCATION LTD
-    website: https://www.redappleeducation.co.uk
-    email: jamie@redappleeducation.co.uk
-    address: The Turret, Wirral, CH63 1JL
-  - name: SCHOOL IMPROVEMENT LIVERPOOL LIMITED
-    website:
-    email: recruitment@si.liverpool.gov.uk
-    address: Toxteth Annexe, Aigburth Road, Liverpool, L17 7BN
-  - name: SMART EDUCATION RECRUITMENT LTD
-    website: https://www.smarted.co.uk
-    email: fran@smarted.co.uk
-    address: 1-3 The Courtyard, Calvin Street, Bolton, BL1 8PB
-  - name: STEP BY STEP EDUCATION LTD
-    website: https://www.stepbystepeducation.co.uk
-    email: phil@stepbystepeducation.co.uk
-    address: 80 Lytham Road, Fulwood, Preston, PR2 3AQ
-  - name: THE EDUCATION SPECIALISTS LTD.
-    website: https://www.tessupply.co.uk
-    email: barry@tessupply.co.uk
-    address: 1 Paramount Business Park, Liverpool, L36 6AW
-  South West:
-  - name: CLASS PEOPLE
-    website: https://www.classpeople.co.uk
-    email: lynis@classpeople.co.uk
-    address: Eagle Tower, Montpellier Drive, Cheltenham, GL50 1TA
-  - name: PRO EDUCATION
-    website:
-    email: jasonw@wiseemployment.com
-    address: 104 Commercial Road, Swindon, SN1 5PL
-  - name: SESAME EDUCATION LIMITED
-    website: https://www.sesame-education.co.uk
-    email: david@sesame-education.co.uk
-    address: Monarch House, 1-7 Smyth Road, Bristol, BS3 2BX
-  - name: WEST COUNTRY EDUCATIONAL AGENCY LIMITED
-    website: https://www.westcountryagency.co.uk
-    email: staff@westcountryagency.co.uk
-    address: 1 Canon Square, Melksham, SN12 6LX
-  North East:
-  - name: EDUCATION WORLD LIMITED
-    website: https://www.education-world.co.uk
-    email: graham.simms@education-world.co.uk
-    address: Yours Business Network, Delta Bank Road, Metro Riverside Park, Gateshead,
-      NE11 9DJ
-  - name: EXACT EDUCATION LIMITED
-    website: https://www.exacteducation.com
-    email: info@exacteducation.com
-    address: 29 Seafield View, North Shields, NE30 4LE
-  - name: SCHOOL HOUSE RECRUITMENT LTD
-    website: https://www.schoolhouserecruitment.co.uk
-    email: claire@schoolhouserecruitment.co.uk
-    address: Stockton Business Centre, Stockton-on-Tees, TS18 1DW
-  Yorkshire and The Humber:
-  - name: JUST TEACHERS LIMITED
-    website: https://www.justteachers.co.uk
-    email: caroline.cafferty@justteachers.co.uk
-    address: High Corn Mill, Skipton, BD23 1NL
+
 
 ---
 
