@@ -394,27 +394,24 @@ agencies:
 
 ---
 
-Are you a qualified teacher not currently working the sector? 
-Please support children and help schools stay open
+## Are you a qualified teacher not currently working in the sector?
 
-Thank you for helping your teaching colleagues and the nation’s children and learners, through some difficult months ahead. 
+We are asking for your help to support your teaching colleagues and the nation’s children and young people through this difficult time.
 
-Your support as a qualified teacher will help schools and colleges stay open and give children and learners the support they need. 
+Covid continues to impact schools and colleges in England. We want to make sure that as many supply staff as possible are available in the new year.
 
 ## Who can help?
 
-We’re inviting qualified teachers from primary, secondary and further education to step in and help teach our children and young people on a temporary basis. You may retired, taking time off to care for children or others, or currently working in a different area, for example. 
+We’re inviting qualified ex-teachers from primary, secondary and further education to step in and help teach children and young people in school and college on a temporary basis. You may be retired, taking time off to care for children or others, or currently working in a different area, but you may be able to spare some time to help.
 
 ## What’s required?
 
-Your time will be invaluable, whatever you can spare - whether it is one day a week or five. You will be helping secure children and young people’s education. 
+Your time will be invaluable, whatever you can spare - whether it is one day a week or five. You will be helping protect children and young people’s education.
 
+## Please register with a supply agency now.
 
-## Please register with a supply agency now
+This will enable the agencies to be ready to use you as soon as possible.
 
-This will enable the agencies to be ready to use you from the new year. 
+## Finding an agency
 
-## Choosing an agency
-
-Find an agency near you from the list below, and then please contact the agency directly. This list of education supply agencies are part of the government framework and offer schools the best value for money. You can also find additional agencies here. 
-
+Find an agency near you from the list below, and then please contact the agency directly. This list of education supply agencies are part of the government framework and offer schools the best value for money. The agency will help you with what you need, for example updating your DBS.
