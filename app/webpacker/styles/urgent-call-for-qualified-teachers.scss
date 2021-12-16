@@ -1,0 +1,19 @@
+ul.agencies-list {
+  li {
+    dl > div {
+      display: flex;
+
+      dt {
+        flex-basis: 40%;
+      }
+
+      dd {
+        flex-basis: 60%;
+      }
+    }
+
+    div + div {
+      margin-top: .5em;
+    }
+  }
+}

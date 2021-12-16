@@ -1,0 +1,32 @@
+<% @front_matter["agencies"].each do |region, agencies| %>
+  <%= tag.h2(region) %>
+
+  <ul class="agencies-list">
+    <% agencies.each do |a| %>
+      <li>
+        <dl>
+          <div>
+            <dt>Name:</dt>
+            <%= tag.dd(a["name"]) %>
+          </div>
+
+          <div>
+            <dt>Contact:</dt>
+            <%= tag.dd(a["contact"]) %>
+          </div>
+
+          <div>
+            <dt>Email:</dt>
+            <%= tag.dd(a["email"]) %>
+          </div>
+
+          <div>
+            <dt>Address:</dt>
+            <%= tag.dd(a["address"]) %>
+          </div>
+        </dl>
+      </li>
+
+    <% end %>
+  </ul>
+<% end %>
