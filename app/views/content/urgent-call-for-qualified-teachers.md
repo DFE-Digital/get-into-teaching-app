@@ -414,4 +414,4 @@ This will enable the agencies to be ready to use you as soon as possible.
 
 ## Finding an agency
 
-Find an agency near you from the list below, and then please contact the agency directly. This list of education supply agencies are part of the government framework and offer schools the best value for money. The agency will help you with what you need, for example updating your DBS.
+Find an agency near you from the list below, and then please contact the agency directly. This list of education supply agencies are part of the government framework and offer schools the best value for money. You can also contact other supply agencies you know of if they are not on the list. The agency will help you with what you need, for example updating your DBS.
