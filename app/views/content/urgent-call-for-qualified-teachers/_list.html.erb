@@ -27,10 +27,10 @@
             </div>
           <% end %>
 
-          <% if a["website"].present? %>
+          <% if a["phone"].present? %>
             <div>
-              <dt>Website:</dt>
-              <%= tag.dd(link_to(a["website"], a["website"])) %>
+              <dt>Telephone:</dt>
+              <%= tag.dd(a["phone"]) %>
             </div>
           <% end %>
 
