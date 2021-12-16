@@ -1,14 +1,42 @@
+article.urgent-call-for-qualified-teachers {
+  p {
+    max-width: 65ch;
+  }
+}
+
 ul.agencies-list {
+  display: grid;
+  list-style: none;
+  gap: 3em;
+  column-gap: 5em;
+  padding-left: 0;
+
+  @include mq($from: tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   li {
+    outline: 2px solid $grey;
+    padding: 1em;
+
     dl > div {
       display: flex;
+      flex-direction: column;
+
+      @include mq($from: tablet) {
+        flex-direction: row;
+      }
 
       dt {
-        flex-basis: 40%;
+        font-weight: bold;
+        flex-basis: 25%;
+        @include font-size("xsmall");
       }
 
       dd {
-        flex-basis: 60%;
+        @include font-size("xsmall");
+        flex-basis: 75%;
+        margin-left: 0;
       }
     }
 

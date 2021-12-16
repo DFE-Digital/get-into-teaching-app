@@ -1,11 +1,31 @@
 ---
 title: Urgent call for qualified teachers
 noindex: true
-article_classes: ['longform']
+article_classes: ['longform', 'fullwidth', 'urgent-call-for-qualified-teachers']
 content:
   - content/urgent-call-for-qualified-teachers/list
 agencies:
   London:
+    - name: 3D RECRUIT LIMITED
+      contact: Amy Gudgeon
+      email: amy@3drecruit.com
+      address: Regent House, Mitre Way, Battle, TN33 0BQ
+    - name: 3D RECRUIT LIMITED
+      contact: Amy Gudgeon
+      email: amy@3drecruit.com
+      address: Regent House, Mitre Way, Battle, TN33 0BQ
+    - name: 3D RECRUIT LIMITED
+      contact: Amy Gudgeon
+      email: amy@3drecruit.com
+      address: Regent House, Mitre Way, Battle, TN33 0BQ
+    - name: 3D RECRUIT LIMITED
+      contact: Amy Gudgeon
+      email: amy@3drecruit.com
+      address: Regent House, Mitre Way, Battle, TN33 0BQ
+    - name: 3D RECRUIT LIMITED
+      contact: Amy Gudgeon
+      email: amy@3drecruit.com
+      address: Regent House, Mitre Way, Battle, TN33 0BQ
     - name: 3D RECRUIT LIMITED
       contact: Amy Gudgeon
       email: amy@3drecruit.com
