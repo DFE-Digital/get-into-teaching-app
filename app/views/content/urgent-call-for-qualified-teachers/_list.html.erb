@@ -30,7 +30,7 @@
           <% if a["website"].present? %>
             <div>
               <dt>Website:</dt>
-              <%= tag.dd(link_to(a["website"])) %>
+              <%= tag.dd(link_to(a["website"], a["website"])) %>
             </div>
           <% end %>
 
