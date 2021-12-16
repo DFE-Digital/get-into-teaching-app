@@ -402,7 +402,7 @@ Covid continues to impact schools and colleges in England. We want to make sure 
 
 ## Who can help?
 
-We’re inviting qualified ex-teachers from primary, secondary and further education to step in and help teach children and young people in school and college on a temporary basis. You may be retired, taking time off to care for children or others, or currently working in a different area, but you may be able to spare some time to help.
+We’re inviting qualified teachers from primary, secondary and further education to step in and help teach children and young people in school and college on a temporary basis. You may be retired, taking time off to care for children or others, or currently working in a different area, but you may be able to spare some time to help.
 
 ## What’s required?
 
