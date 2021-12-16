@@ -2,6 +2,17 @@ article.urgent-call-for-qualified-teachers {
   p {
     max-width: 65ch;
   }
+
+  .region-heading {
+    @include content-heading;
+
+    margin-top: 2em;
+  }
+}
+
+ul.agencies-toc {
+  margin-bottom: 3em;
+  list-style: none;
 }
 
 ul.agencies-list {

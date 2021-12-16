@@ -1,5 +1,15 @@
+<h2>Supply agencies in England and Wales</h2>
+
+<ul class="agencies-toc">
+  <% @front_matter["agencies"].each_key do |region| %>
+    <li>
+      <%= link_to(region, "#" + region.parameterize) %>
+    </li>
+  <% end %>
+</ul>
+
 <% @front_matter["agencies"].each do |region, agencies| %>
-  <%= tag.h2(region) %>
+  <%= tag.h3(region, id: region.parameterize, class: "region-heading") %>
 
   <ul class="agencies-list">
     <% agencies.each do |a| %>
