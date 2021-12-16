@@ -16,7 +16,7 @@ module Cards
 
     def snippet
       @snippet ||= <<~SNIPPET
-        Chat online with one of our teacher training experts. They're available Monday to Friday between 8:30am and 5:30pm. Chat will be unavailable from 1pm on 24 December until 29 December. It will also be closed on 3 January. Responses may be slower over the Christmas period.
+        Chat online with one of our teacher training experts. They're available Monday to Friday between 8:30am and 5:30pm. Chat will be unavailable from 1pm on 24 December until 29 December. It will also be unavailable from 1pm on 31 December and be closed on 3 January. Responses may be slower over the Christmas period.
       SNIPPET
     end
 
