@@ -23,9 +23,7 @@ closing_paragraph: enriching-the-lives-of-young-people
 
 $interview$
 
-<p class="introduction">
-  Caroline Downing is the Primary Programme Leader at the <a href="https://bedsscitt.org.uk">Bedfordshire Schools' Training Partnership</a>. She interviews applicants and assesses their potential to become successful classroom professionals. She believes the key to receiving and offer for a training place lies in effective interview preparation.
-</p>
+Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). She interviews applicants and assesses their potential to become successful classroom professionals. She believes the key to receiving and offer for a training place lies in effective interview preparation.
 
 ## 1. Pre-interview 
 

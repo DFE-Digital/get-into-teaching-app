@@ -23,7 +23,7 @@ tags:
   - support
 ---
 
-*Habiba Cabdi offered to speak to Teacher Training Adviser, Jane Wilkinson, about the challenges faced by someone who lives with additional needs and their progress towards achieving the dream of becoming a teacher.*
+Habiba Cabdi offered to speak to Teacher Training Adviser, Jane Wilkinson, about the challenges faced by someone who lives with additional needs and their progress towards achieving the dream of becoming a teacher.
 
 $header_image$
 

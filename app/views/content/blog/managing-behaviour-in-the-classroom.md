@@ -20,7 +20,7 @@ tags:
 
 $header_image$
 
-_Teacher Training Adviser, Jane Wilkinson, asked aspiring teachers about their top classroom concerns. Here she tackles questions about behaviour management._
+Teacher Training Adviser, Jane Wilkinson, asked aspiring teachers about their top classroom concerns. Here she tackles questions about behaviour management.
 
 ## While I know that the majority of students will be well-mannered and well-behaved, how do I manage more disruptive behaviour?
 

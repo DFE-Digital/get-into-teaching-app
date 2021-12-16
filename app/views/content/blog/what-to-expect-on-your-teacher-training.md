@@ -23,7 +23,7 @@ closing_paragraph: enriching-the-lives-of-young-people
 
 $seminar_room$
 
-_Jan Ashbridge is a Principal Lecturer with responsibility for primary PGCE at the University of Cumbria. She has particular expertise in early literacy and systematic synthetic phonics._
+Jan Ashbridge is a Principal Lecturer with responsibility for primary PGCE at the University of Cumbria. She has particular expertise in early literacy and systematic synthetic phonics.
 
 A university-based PGCE year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. It is also a busy one!
 
