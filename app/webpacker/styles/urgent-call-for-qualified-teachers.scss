@@ -4,7 +4,7 @@ article.urgent-call-for-qualified-teachers {
   }
 
   .region-heading {
-    @include content-heading;
+    @include content-heading($add_full_stops: false);
 
     margin-top: 2em;
   }
