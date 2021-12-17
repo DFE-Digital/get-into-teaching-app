@@ -8,6 +8,33 @@ article.urgent-call-for-qualified-teachers {
 
     margin-top: 2em;
   }
+
+  details {
+    max-width: 65ch;
+    padding: .5em;
+    summary {
+      cursor: pointer;
+    }
+
+    &:last-of-type {
+      margin-bottom: 4em;
+    }
+
+    p,
+    ol,
+    h4 {
+      margin-left: .1em;
+      padding-left: 1.5em;
+    }
+
+    &[open] {
+      outline: 4px solid $grey;
+    }
+  }
+
+  details + details {
+    margin-top: 1em;
+  }
 }
 
 ul.agencies-toc {

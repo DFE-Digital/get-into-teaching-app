@@ -2469,7 +2469,7 @@ We're inviting qualified ex-teachers from primary, secondary and further educati
 
 Your time will be invaluable, whatever you can spare - whether it is one day a week or five. You will be helping protect children and young people's education.
 
-[Answering your questions](#faq).
+[Find out more about becoming a supply teacher.](#find-out-more).
 
 ## Please register with a teaching supply agency now
 
