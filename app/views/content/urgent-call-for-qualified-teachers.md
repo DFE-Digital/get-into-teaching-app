@@ -9,6 +9,17 @@ article_classes: ['longform', 'fullwidth', 'urgent-call-for-qualified-teachers']
 content:
   - content/urgent-call-for-qualified-teachers/list
   - content/urgent-call-for-qualified-teachers/faq
+keywords:
+  - supply teaching
+  - supply teaching agencies
+  - teach supply
+  - supply teacher job
+  - supply teaching agencies near me
+  - teaching supply agencies near me
+  - how to become a supply teacher
+  - supply teaching assistant agencies
+  - supply work
+  - supply teacher uk
 agencies:
 
   East Midlands:
