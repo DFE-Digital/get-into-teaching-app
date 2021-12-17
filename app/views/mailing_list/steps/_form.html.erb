@@ -12,5 +12,9 @@
       <% button_text = safe_html_format(wizard.last_step? ? "Complete sign up <span></span>" : "Next step <span></span>") %>
       <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
     <% end %>
+
+    <% if content_for?(:form_help) %>
+      <div class="form-help"><%= yield(:form_help) %></div>
+    <% end %>
   <% end %>
 </section>
