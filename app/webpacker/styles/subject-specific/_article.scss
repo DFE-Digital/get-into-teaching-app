@@ -43,16 +43,17 @@ article {
     &.columns {
       display: flex;
       flex-direction: column;
+      gap: 2em;
 
       @include mq($from: tablet) {
         flex-direction: row;
 
         div:nth-of-type(1) {
-          flex-basis: 60%;
+          flex-basis: 50%;
         }
 
         div:nth-of-type(2) {
-          flex-basis: 40%;
+          flex-basis: 50%;
         }
       }
     }
@@ -81,6 +82,22 @@ article {
 
     p + p {
       margin-top: .5rem;
+    }
+
+    .slashed-list {
+      @include reset;
+      list-style: none;
+
+      li {
+        display: inline;
+      }
+
+      li + li {
+        &:before {
+          content: "/";
+          margin-inline: .3em .5em;
+        }
+      }
     }
   }
 }
