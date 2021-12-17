@@ -148,13 +148,17 @@ Fees are usually around £9,250 but you can:
 
 ### Earn a salary
 
-Some teacher training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary.
+Some teacher training programmes offer you a salary as you train. These include 'school direct (salaried)' and 'postgraduate teaching apprenticeships'.
 
-These courses are usually suitable for people who already have relevant teaching experience, or are already working as unqualified teachers. 
+These salaried routes are usually suitable for people with a degree and relevant school experience. 
 
 Many 'school direct (salaried)' programmes give you a PGCE or PGDE (an academic qualification) in addition to QTS.
 
-Courses typically take one year but you may be able to study part-time.
+It can be easy to confuse the 'school direct (salaried)' programme with the non-salaried 'school direct' programme. Make sure you check with your chosen provider before applying.
+
+Courses usually take one year but you may be able to study part-time.
+
+Places for salaried routes into teaching are limited and are very competitive.
 
 [Teach First](https://www.teachfirst.org.uk/) also offers a salary. It's a 2-year programme leading to a PGDE and QTS.
 
