@@ -37,7 +37,7 @@
 
           <p>Open Monday to Friday between 8:30am and 5:30pm.</p>
           
-          <p>Chat will be unavailable from 1pm on 24 December until 29 December. It will also be unavailable from 1pm on 31 December and closed on 3 January. Responses may be slower over the Christmas period.</p>
+          <p>Chat will be unavailable from 1pm on 24 December until 29 December. It will also be unavailable from 1pm on 31 December until 4 January. Responses may be slower over the Christmas period.</p>
     get-school-experience:
       name: simple
       arguments:
