@@ -42,6 +42,15 @@ calls_to_action:
       link_text: "Get a return to teaching adviser"
       link_target: "/tta-service"
       icon: "icon-person"
+
+  urgent-call-for-qualified-teachers:
+    name: simple
+    arguments:
+      text: "There's an urgent call for qualified teachers to get back into the classroom."
+      link_text: "Find supply teaching agencies"
+      link_target: "/urgent-call-for-qualified-teachers"
+      icon: "icon-school-black"
+
 right_column:
   ctas:
   - title: Return from overseas
@@ -62,6 +71,8 @@ quote:
     name: "Helen"
     job_title: "Returning teacher"
 ---
+
+$urgent-call-for-qualified-teachers$
 
 Returning to teaching can be easier than you expect.
 
