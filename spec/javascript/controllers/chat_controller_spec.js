@@ -102,10 +102,22 @@ describe('ChatController', () => {
     })
   })
 
-  describe("when the chat is offline (too late) and there is offline text", () => {
+  describe("when the chat is offline (too late)", () => {
     beforeEach(() => {
       setBody();
       setCurrentTime('2021-01-01 17:31');
+    });
+
+    it('displays the chat offline message', () => {
+      const button = document.querySelector('[data-chat-target="offline"]')
+      expect(button.classList.contains('hidden')).toBe(false)
+    })
+  })
+
+  describe("when the chat is offline (weekend)", () => {
+    beforeEach(() => {
+      setBody();
+      setCurrentTime('2021-12-18 11:00');
     });
 
     it('displays the chat offline message', () => {
