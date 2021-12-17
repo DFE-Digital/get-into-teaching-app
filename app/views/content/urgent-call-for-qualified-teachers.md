@@ -4,6 +4,7 @@ noindex: true
 article_classes: ['longform', 'fullwidth', 'urgent-call-for-qualified-teachers']
 content:
   - content/urgent-call-for-qualified-teachers/list
+  - content/urgent-call-for-qualified-teachers/faq
 agencies:
 
   East Midlands:
@@ -2666,18 +2667,22 @@ We are asking for your help to support your teaching colleagues and the nation's
 
 Covid continues to impact schools and colleges in England. We want to make sure that as many supply staff as possible are available in the new year.
 
-## Who can help?
+### Who can help?
 
 We're inviting qualified ex-teachers from primary, secondary and further education to step in and help teach children and young people in school and college on a temporary basis. You may be retired, taking time off to care for children or others, or currently working in a different area, but you may be able to spare some time to help.
 
-## What's required?
+### What's required?
 
 Your time will be invaluable, whatever you can spare - whether it is one day a week or five. You will be helping protect children and young people's education.
+
+[Answering your questions](#faq).
 
 ## Please register with a supply agency now
 
 This will enable the agencies to be ready to use you as soon as possible.
 
-## Finding an agency
+### Finding an agency
 
-Find an agency near you from the list below, and contact the agency directly. This list of education supply agencies are part of the government framework and offer schools value for money. You can also contact other supply agencies you know of if they are not on the list. The agency will help you with what you need, for example updating your DBS.
+Find an agency near you from the list below, and contact the agency directly. This list of education supply agencies are part of the government framework and offer schools value for money.
+
+You can also contact other supply agencies you know of if they are not on the list. The agency will help you with what you need, for example updating your DBS.

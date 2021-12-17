@@ -55,4 +55,8 @@ ul.agencies-list {
       margin-top: .5em;
     }
   }
+
+  &:last-of-type {
+    margin-bottom: 4em;
+  }
 }
