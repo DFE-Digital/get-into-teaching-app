@@ -4,7 +4,6 @@ heading: Urgent call for qualified teachers
 description: |-
   Find supply teaching agencies and help shape a life. Answer the urgent call
   for qualified teachers to support children and young people.
-noindex: true
 article_classes: ['longform', 'fullwidth', 'urgent-call-for-qualified-teachers']
 content:
   - content/urgent-call-for-qualified-teachers/list
