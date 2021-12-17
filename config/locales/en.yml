@@ -521,19 +521,6 @@ en:
       search:
         search: Search for ...
 
-      # one-page mailing list
-      mailing_list_signup:
-        first_name: First name
-        last_name: Last name
-        email: Email address
-        address_postcode: What is your postcode? (optional)
-        degree_status_id: Do you have a degree?
-        preferred_teaching_subject_id: What would you like to teach?
-        consideration_journey_stage_id: How close are you to applying for teacher training?
-        timed_one_time_password: Verification code
-        accept_privacy_policy_options:
-          1_html: I am over 16 years old and accept the <a target="_blank" href="/privacy-policy">privacy policy</a>
-
     hint:
       events_steps_contact_details:
         address_telephone: |-
