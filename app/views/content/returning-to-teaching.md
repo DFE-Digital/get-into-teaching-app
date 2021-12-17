@@ -46,7 +46,7 @@ calls_to_action:
   urgent-call-for-qualified-teachers:
     name: simple
     arguments:
-      text: "There's an urgent call for qualified teachers to get back into the classroom."
+      text: "There's an urgent call for qualified teachers to get back into the classroom. If you're eager to return to teaching, register to help."
       link_text: "Find supply teaching agencies"
       link_target: "/urgent-call-for-qualified-teachers"
       icon: "icon-school-black"
