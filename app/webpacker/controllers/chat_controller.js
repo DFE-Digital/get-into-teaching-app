@@ -26,8 +26,9 @@ export default class extends Controller {
     const openTime = dayjs().set('hour', 8).set('minute', 30).tz(timeZone);
     const closeTime = dayjs().set('hour', 17).set('minute', 30).tz(timeZone);
     const now = dayjs().tz(timeZone);
+    const weekend = [6, 0].includes(now.get('day'));
 
-    return now >= openTime && now <= closeTime;
+    return !weekend && now >= openTime && now <= closeTime;
   }
 
   start(e) {
