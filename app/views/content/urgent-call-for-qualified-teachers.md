@@ -33,14 +33,15 @@ agencies:
     email: birmingham@academicsltd.co.uk
     branch: Birmingham
     phone: 0121 616 7610
-    address: Alpha Tower, Suffolk Street, Birmingham, West Midlands, B1 1TT
+    address: 1st Floor, 30 St Pauls Square, Birmingham, West Midlands, B3 1QZ
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: Sophie.Spicer@monarcheducation.com
+    email: Sophy.green@monarcheducation.com
     branch: Monarch Education Nottingham
     phone: 0115 986 9834
-    address: City Gate East, Tollhouse Hill, Nottingham, Nottinghamshire, NG1 5FS
+    address: 10th Floor, Temple Point, Tollhouse Hill, Nottingham, Nottinghamshire,
+      NG1 5FS
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: Christopher.Williams@cer.co.uk
+    email: Sophy.green@monarcheducation.com
     branch: CER Leicester
     phone: 0116 255 4414
     address: Part Ground Floor, 86-92 Regent Road, Leicester, Leicestershire, LE1 7DD
@@ -90,8 +91,7 @@ agencies:
     email: leicester@careerteachers.co.uk
     branch: Leicester
     phone: 0116 2776400
-    address: 1st Floor, Old School House, 65A London Road, Oadby, Leicestershire, LE2
-      5DN
+    address: first floor,, 3 Pocklington walk, leicester, Leicestershire, LE1 6BU
   - name: Coyle Personnel plc
     email: ashley.mullin@coyles.co.uk
     branch: Milton Keynes
@@ -109,16 +109,6 @@ agencies:
     phone: 01476 570716
     address: Office 13, Autumn Business Park, Dysart Road, Grantham, Lincolnshire, NG31
       7EU
-  - name: Engage Education Services
-    email: ben.matthews@engageeducation.co.uk
-    branch: Engage Education East Midlands
-    phone: 0173 387 3030
-    address: Suite 13 Cross Street Court, Peterborough, Cambridgeshire, PE1 1XA
-  - name: Engage Education Services
-    email: ben.matthews@iday.co.uk
-    branch: Engage Education Services East Midlands
-    phone: 0173 387 3030
-    address: Suite 13 Cross Street Court, Peterborough, Cambridgeshire, PE1 1XA
   - name: Guardian Selection Limited, trading as GSL Education
     email: judith@gsleducation.com
     branch: Leicester
@@ -126,39 +116,34 @@ agencies:
     address: Business Box, 3 Oswin Road, Braunstone, Leicester, Leicestershire, LE3
       1HR
   - name: Hays Specialist Recruitment Limited
-    email: Sonya.Grocott@Hays.com
-    branch: Chesterfield
-    phone: 01142 721 470
-    address: Unit 4, 26 Lordsmill Street, Chesterfield, Derbyshire, S41 7RW
-  - name: Hays Specialist Recruitment Limited
-    email: Lewis.Smith@Hays.com
+    email: neil.jones2@hays.com
     branch: Derby
     phone: '01159 242562'
     address: 2nd Floor, 64 - 70 St Peters Street, Derby, Derbyshire, DE1 1SN
   - name: Hays Specialist Recruitment Limited
-    email: James.Jarvis@Hays.com
+    email: mike.sherwin@hays.com
     branch: Leicester
     phone: 0116 253 2389
     address: 1st and 2nd Floor, 2 Colton Square, Leicester, Leicestershire, LE1 1QH
   - name: Hays Specialist Recruitment Limited
-    email: Adam.Lee@hays.com
+    email: ryan.chadwick@hays.com
     branch: Northampton
     phone: 01604 258 772
     address: 3rd Floor Charles House, 61 - 69 Derngate, Northampton, Northamptonshire,
       NN1 1UE
   - name: Hays Specialist Recruitment Limited
-    email: Lewis.Smith@Hays.com
+    email: neil.jones2@hays.com
     branch: Nottingham
     phone: 0115 924 2562
     address: 2nd Floor Alan House, 5 Clumber Street, Nottingham, Nottinghamshire, NG1
       3ED
   - name: Mana Education
-    email: Demetrious@manaeducation.co.uk
+    email: Kelly@manaeducation.co.uk
     branch: Leicestershire
     phone: 01162 505459
     address: Mana House No 33, Overdale Road, Leicester, Leicestershire, LE2 3YJ
   - name: Mana Education
-    email: Andrea@manaeducation.co.uk
+    email: Maja@manaeducation.co.uk
     branch: Northamptonshire
     phone: 01604 549448
     address: Carlton House, High Street, Higham Ferrers, Rushden, Northamptonshire,
@@ -178,13 +163,8 @@ agencies:
     branch: Now Education Ltd
     phone: 0116 216 8186
     address: Rutland House,, 23-25 Friar Lane, Leicester, Leicestershire, LE1 5QQ
-  - name: Prospero Group Ltd
-    email: AdamH@prosperoteaching.com
-    branch: Prospero Teaching Nottingham
-    phone: 0115 697 3973
-    address: 15 Wheeler Gate, Nottingham, Nottinghamshire, NG1 2NA
   - name: Protocol t/a Teaching Force
-    email: dmell@protocol.co.uk
+    email: sevans@protocol.co.uk
     branch: Head Office
     phone: 0115 911 1100
     address: The Point, Welbeck Road, Nottingham, Nottinghamshire, NG2 7QW
@@ -194,110 +174,105 @@ agencies:
     phone: 0115 9775532
     address: Stamford College, Drift Road, Stamford, Lincolnshire, PE9 1XA
   - name: Provide Education Ltd
-    email: info@provide-education.co.uk
+    email: eastmids@provide-education.co.uk
     branch: East Midlands
-    phone: '01909 512190'
-    address: Worksop Turbine, Coach Close, Worksop, Nottinghamshire, S81 8AP
+    phone: '01909 390390'
+    address: Edwinstowe House, High Street, Edwinstowe, Nottinghamshire, NG21 9PR
   - name: Randstad Education
     email: leicester@randstadeducation.co.uk
     branch: Leicester
     phone: 0116 208 1110
-    address: 3rd Floor, 108 New Walk, Leicester, Leicestershire, LE1 7EA
+    address: 3rd Floor Livery Place, 35 Livery Street, Birmingham, West Midlands, B3
+      2PB
   - name: Randstad Education
     email: nottingham@randstadeducation.co.uk
     branch: Nottingham
     phone: 0115 950 6200
-    address: 10 Castle Quay, Castle Boulevard, Nottingham, Nottinghamshire, NG7 1FW
+    address: level 12, The Pinnacle, 67 Albion St, Leeds, West Yorkshire, LS1 5AA
   - name: Reed Education
-    email: jo.mangat@reedglobal.com
+    email: mya.price@reed.com
     branch: FE Midlands
     phone: '01159 888 864'
     address: Floor 4, Pearl House, Friar Lane, Nottingham, NG1 6BT
   - name: Simply Education Ltd
-    email: sinead.mooney@simplyeducation.co.uk
+    email: jovita@simplyeducation.co.uk
     branch: Lincoln
     phone: 01522 370 172
     address: Lindum Business Park, Station Road, North Hykeham, Lincoln, Lincolnshire,
       LN6 3QX
-  - name: Simply Education Ltd
-    email: sinead.mooney@simplyeducation.co.uk
-    branch: Scunthorpe
-    phone: 01522 370 172
-    address: The Admin Centre, Sovereign House, Arkwright Way, Scunthorpe, Lincolnshire,
-      DN16 1AL
   - name: Simply Education Ltd
     email: parjeet@simplyeducation.co.uk
     branch: Northampton
     phone: 01604 372495
     address: 400 Pavillion Drive, Northampton, Northamptonshire, NN4 7PA
   - name: Simply Education Ltd
-    email: susi.buttifant@simplyeducation.co.uk
+    email: parjeet@simplyeducation.co.uk
     branch: Coventry
     phone: '01926 935 053'
-    address: Citibase, 101 Lockhurst Lane, Coventry, Warwickshire, CV6 5SF
+    address: 400 Pavillion Drive, Northampton, Northamptonshire, NN4 7PA
   - name: Simply Education Ltd
-    email: susi.buttifant@simplyeducation.co.uk
+    email: parjeet@simplyeducation.co.uk
     branch: Leicester
     phone: 01163 120 067
     address: Rutland House, Executive Business Centre, 23-25 Friar Lane, Leicester,
       Leicestershire, LE1 5QQ
   - name: Supply Desk
-    email: Richard.Ansell@supplydeks.co.uk
+    email: leanne.clark@supplydesk.co.uk
     branch: Lincolnshire
     phone: 01724 843 443
     address: 1st Floor, Princess House, Queensway Court Business Park, Arkwright Way,
       Scunthorpe, North Lincolnshire, DN16 1AD
   - name: Textbook Teachers Ltd
-    email: sharon@textbookteachers.co.uk
+    email: kat@textbookteachers.co.uk
     branch: Oakham
     phone: 01572 756888
     address: 6 Saddlers Court, Oakham Office Park, Oakham, Rutland, LE15 7GH
   - name: Textbook Teachers Ltd
     email: kat@textbookteachers.co.uk
     branch: Newark
-    phone: 01636 653007
-    address: Newark Beacon, Beacon Hill Office Park, Newark, Nottinghamshire, NG24 2JJ
-  - name: Textbook Teachers Ltd
-    email: kirsty@textbookteachers.co.uk
-    branch: Corby
-    phone: 01536 560444
-    address: Corby Enterprise Park, Corby Borough Council, Corby, Northamptonshire,
-      NN17 5EU
+    phone: 01636 312300
+    address: Office 1, Newark Beacon, Cafferata Way, Newark, Nottinghamshire, NG24 2TN
   - name: The Staff Room Agency Limited
     email: chris.wood@thestaffroom.org.uk
     branch: Northampton
     phone: 01604 633234
-    address: Victory House, 400 Pavilion Drive, Northampton, Northamptonshire, NN4 7PA
+    address: Newton House, Kings Park Road, Moulton Park, Northampton, Northamptonshire,
+      NN3 6LG
+  - name: Vision for Education
+    email: darren.starling@visionforeducation.co.uk
+    branch: Northampton
+    phone: 01604 386800
+    address: 400 Pavillion Drive, Northampton, East Midlands, NN4 7PA
   East of England:
   - name: 4myschools
     email: info@4myschools.org
     branch: Essex
     phone: 01245 353808
-    address: 35-37 Moulsham Street, Chelmsford, Essex, CM2 0HY
+    address: 62 Waterhouse Business Centre, Chelmsford, Essex, CM1 2QE
   - name: 4myschools
     email: info@4myschools.org
     branch: Norfolk
     phone: 01245 353808
-    address: 3.11 St George's Work, 51 Colegate, Norwich, Norfolk, NR3 1DD
+    address: 62 Waterhouse Business Centre, Chelmsford, Essex, CM1 2QE
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: primaryeast@academicsltd.co.uk
     branch: Primary East- Essex&East Anglia
     phone: '0208 518 3550'
-    address: 4th Floor, Solar House, Romford Road, Stratford, London, E15 4LJ
+    address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: secondaryteam@academicsltd.co.uk
     branch: Secondary - Essex & East Anglia
     phone: 0203 031 4861
-    address: 4th Floor, Solar House, Romford Road, Stratford, London, E15 4LJ
+    address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: Danni.Foster@cer.co.uk
+    email: chris.carter@cer.co.uk
     branch: CER Chelmsford
     phone: 01245 255482
-    address: 2nd Floor, 1 Moulsham St, Chelmsford, Essex, CM2 0HR
+    address: 2nd Floor, Chelmsford, Essex, CM2 0HR
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: Ed.Groombridge@cer.co.uk
+    email: chris.carter@cer.co.uk
     branch: CER Luton
     phone: '01582 958615'
     address: 4th Floor, AW House, 6-8 Stuart Street, Luton, LU1 2SJ
@@ -333,69 +308,37 @@ agencies:
     branch: Grantham
     phone: 01476 512780
     address: The Priory, 7 Market Place, Grantham, Lincolnshire, NG31 6LJ
-  - name: Engage Education Services
-    email: alex.taylor@engageeducation.co.uk
-    branch: Engage Education East Anglia
-    phone: 0160 351 8400
-    address: 8 Exchange Street, Norwich, Norfolk, NR2 1AT
-  - name: Engage Education Services
-    email: alex.taylor@iday.co.uk
-    branch: Engage Education Services East Anglia
-    phone: 0160 351 8400
-    address: 8 Exchange Street, Norwich, Norwich, Norfolk, NR2 1AT
   - name: Grade A Recruitment Limited
     email: tina.watson@gradearecruitment.co.uk
     branch: Peterborough Branch
     phone: 01733 797222
     address: Unit 6, Orton Enterprise Centre, Bakewell Road, Peterborough, Cambridgeshire,
       PE2 6XU
+  - name: Grade A Recruitment Limited
+    email: david.appleyard@gradearecruitment.co.uk
+    branch: Nrowich Branch
+    phone: 01603 959999
+    address: Carvell House, Stannard Place, Norwich, Norfolk, NR3 1YE
   - name: Hays Specialist Recruitment Limited
-    email: Emma.Lines@Hays.com
-    branch: Bury St Edmunds
-    phone: 0203 818 7041
-    address: 1 Cornhill, Bury St. Edmunds, Suffolk, IP33 1BE
-  - name: Hays Specialist Recruitment Limited
-    email: Emma.Lines@Hays.com
+    email: andrew.testa@hays.com
     branch: Cambridge
-    phone: 0203 818 7041
+    phone: '01098 870257'
     address: Terrington House, 13 - 15 Hills Road, Cambridge, Cambridgeshire, CB2 1NL
   - name: Hays Specialist Recruitment Limited
-    email: Catherine.Barwick@Hays.com
-    branch: Grimsby
-    phone: '01482 227 128'
-    address: Ground Floor Unit 2 Acorn Business Park, Moss Road, Grimsby, Lincolnshire,
-      DN32 0LT
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: Heathrow
-    phone: 0207 259 8770
-    address: 1035 - 1037 D'Albiac House, Cromer Road, Heathrow Airport, Middlesex, TW6
-      1SD
-  - name: Hays Specialist Recruitment Limited
-    email: Penny.Semmer@Hays.com
+    email: julia.peat1@hays.com
     branch: Lincoln
-    phone: 01522 313 301
+    phone: 0114 272 1470
     address: 1st Floor Grosvenor Buildings, 5 Corporation Street, Lincoln, Lincolnshire,
       LN2 1HL
   - name: Hays Specialist Recruitment Limited
-    email: Emma.Lines@Hays.com
-    branch: Luton
-    phone: 0203 818 7041
-    address: Raglan House, 28 - 34 Alma Street, Luton, LU1 2PL
-  - name: Hays Specialist Recruitment Limited
-    email: Penny.Semmer@Hays.com
+    email: andrew.testa@hays.com
     branch: Norwich
     phone: 01522 313 301
     address: 1 Prince of Wales Road, Norwich, Norfolk, NR1 1BD
-  - name: Hays Specialist Recruitment Limited
-    email: Adam.Lee@Hays.com
-    branch: Peterborough
-    phone: 01604 258 772
-    address: Britannic House, 11 - 13 Cowgate, Peterborough, Cambridgeshire, PE1 1LZ
   - name: Key Education Services Ltd
     email: sam.dyson@key-education.co.uk
-    branch: Suffolk
-    phone: 01440 764430
+    branch: East of England
+    phone: 01440 764430 / 01603 904800
     address: Unit 1 Cherry Gardens, Helions Bumpstead Road, Haverhill, Suffolk, CB9
       7AA
   - name: London Teaching Pool Limited
@@ -404,12 +347,12 @@ agencies:
     phone: '0208 709 6540'
     address: Mydat, Capital Gate, 320 New North Road, Hainault, Essex, IG6 3BZ
   - name: Mana Education
-    email: Jodi@manaeducation.co.uk
+    email: Josie@manaeducation.co.uk
     branch: Peterborough & South Lincs
     phone: 01733 286199
     address: Mana Education, 2 Meadow Road, Peterborough, Cambridgeshire, PE6 7NX
   - name: Mana Education
-    email: Emily@manaeducation.co.uk
+    email: Luke@manaeducation.co.uk
     branch: Mid and North Lincoln
     phone: 01522 898259
     address: Bishop Grosseteste University, Longdales Road, Lincoln, Lincolnshire, LN1
@@ -429,47 +372,31 @@ agencies:
     branch: Prospero Teaching Chelmsford
     phone: 01245 207280
     address: 4th Floor, Victoria House, Victoria Road, Chelmsford, CM1 1JR
-  - name: Prospero Group Ltd
-    email: Luci@prosperoteaching.com
-    branch: Prospero Teaching Ipswich
-    phone: 01473 917050
-    address: 70-72 The Havens,, Ransomes Europark, Ipswich, Essex, IP3 9BF
-  - name: Prospero Group Ltd
-    email: Luci@prosperoteaching.com
-    branch: Prospero Teaching Norwich
-    phone: 01603 974380
-    address: Cavell House Stannard Place, St Crispins Road, Norwich, Norfolk, NR3 1YE
   - name: Randstad Education
     email: cambridge@randstadeducation.co.uk
     branch: Cambridge
     phone: 01223 368836
-    address: 8 Dukes Court, 54-62 Newmarket Road, Cambridge, Cambridgeshire, CB5 8DZ
+    address: Francis Court, High Ditch Rd, Cambridge, Cambridgeshire, CB5 8TE
   - name: Randstad Education
     email: chelmsford@randstadeducation.co.uk
     branch: Chelmsford
     phone: 01245 260100
-    address: 2nd Floor, Ford House, 31-34 Railway Street, Chelmsford, Essex, CM1 1QS
+    address: 2nd Floor, 10 Throgmorton Avenue, Chelmsford, Essex, CM1 1QS
   - name: Randstad Education
     email: luton@randstadeducation.co.uk
     branch: Luton
     phone: '01582 811878'
-    address: Office 17/18, 960 Capability Green, Luton, LU1 3PE
+    address: Office 17/18, 960 Capability Green, Luton, London, LU1 3PE
   - name: Randstad Education
     email: welwyn@randstadeducation.co.uk
     branch: Welwyn Garden City
     phone: '0845 600 1234'
-    address: Floor 1, Roasanne House, Park Way, Welwyn Garden City, Hertfordshire, AL8
-      6HG
+    address: 2nd Floor, 10 Throgmorton Avenue, London, Hertfordshire, EC2N 2DL
   - name: Reed Education
-    email: justin.aves@reedglobal.com
+    email: justin.aves@reed.com
     branch: Cambridge
     phone: 01223 463 305
     address: Unit 1, Clifton Court, Clifton Road, Cambridge, CB1 7BN
-  - name: Reed Education
-    email: richard.mills@reedglobal.com
-    branch: Chelmsford
-    phone: 01245 245 501
-    address: Ground Floor, 5 New London Road, Chelmsford, CM2 0NA
   - name: Simply Education Ltd
     email: daniel@simplyeducation.co.uk
     branch: Bedford
@@ -477,16 +404,16 @@ agencies:
     address: Bedford Heights, Manton Lane, Bedford, Bedfordshire, MK41 7PH
   - name: Simply Education Ltd
     email: daniel@simplyeducation.co.uk
-    branch: Watford
+    branch: Hertfordshire
     phone: '01923 640 481'
-    address: 69-71 Meridian House, Clarendon Road, Watford, Hertfordshire, WD17 1LB
+    address: 56 Clarendon Road, Clarendon Road, Watford, Hertfordshire, WD17 1DB
   - name: Simply Education Ltd
-    email: marshah@simpleducation.co.uk
+    email: yvonne@simpleducation.co.uk
     branch: Cambridge
     phone: 01223 459 714
     address: CB1 Business Centre, 20 Station Road, Cambridge, Cambridgeshire, CB1 2JD
   - name: Simply Education Ltd
-    email: david.creighton@simplyeducation.co.uk
+    email: tommy@simplyeducation.co.uk
     branch: Essex
     phone: 01245 570 079
     address: 214 Waterhouse Business Centre, Cromar Way, Chelmsford, Essex, CM1 2QE
@@ -507,12 +434,12 @@ agencies:
     phone: 020 8620 0209
     address: Fullbridge Mill, Maldon, Essex, CM9 4LE
   - name: Supply Desk
-    email: Lyn.Hamblin@supplydesk.co.uk
+    email: navjit.panesar@supplydesk.co.uk
     branch: Buckinghamshire
     phone: '01923 295 304'
     address: Suite 2.2, 34 Clarendon Road, Watford, Hertfordshire, WD17 1JJ
   - name: Supply Desk
-    email: Lyn.Hamblin@supplydesk.co.uk
+    email: navjit.panesar@supplydesk.co.uk
     branch: Herts, Beds & Bucks
     phone: '01923 295 304'
     address: Suite 2.2, 34 Clarendon Road, Watford, Hertfordshire, WD17 1JJ
@@ -527,7 +454,7 @@ agencies:
     phone: 01621 929353
     address: Essex Road, Burnham on Crouch, Burnham on Crouch, Essex, CM0 8EQ
   - name: Vision for Education
-    email: sarah.waller@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Peterborough
     phone: 01733 371371
     address: Unit 2, Forward House,, Aston Business Park, Shrewsbury Avenue, Peterborough,
@@ -538,31 +465,31 @@ agencies:
     email: primaryeast@academicsltd.co.uk
     branch: Primary East - London
     phone: '0208 518 3550'
-    address: 4th Floor, Solar House, Romford Road, Stratford, London, E15 4LJ
+    address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: primarywest@academicsltd.co.uk
     branch: Primary West - London
     phone: 0203 031 4860
-    address: 4th Floor, Solar House, Romford Road, Stratford, London, E15 4LJ
+    address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: secondaryteam@academicsltd.co.uk
     branch: Secondary - London
     phone: 0203 031 4861
-    address: 4th Floor, Solar House, Romford Road, Stratford, London, E15 4LJ
+    address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: SENteam@academicsltd.co.uk
     branch: SEN - London
     phone: 0203 031 4864
-    address: 4th Floor, Solar House, Romford Road, Stratford, London, E15 4LJ
+    address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: office@classiceducation.co.uk
     branch: Kent
     phone: 01474 359333
-    address: Longferry House, 82 High Street, Gravesend, Kent, DA11 0BH
+    address: Epsilon House Unit 5, Culpeper Close, Rochester, Kent, ME2 4HU
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: london@servocaeducation.com
@@ -570,15 +497,20 @@ agencies:
     phone: 0207 747 3033
     address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: James.Murphy@cer.co.uk
+    email: Alex.Champion@monarcheducation.com
     branch: CER London
     phone: 0203 957 8002
     address: Ground and Lower Ground Floors, 17 Devonshire Square, London, EC2M 4SQ
+  - name: Anzuk Education Ltd
+    email: ben.g@anzuk.education
+    branch: London
+    phone: 0203 384 6110
+    address: 5 Maidstone Buildings Mews, 72 Borough High Street, London, SE1 1GN
   - name: Aquinas Education Ltd
     email: sam@aquinaseducation.co.uk
     branch: London Head Office
-    phone: '0208 449 6262'
-    address: 2, Leman Street, Aldgate, London, E1 8FA
+    phone: 020 3890 6767
+    address: Argyle Works, 29-31 Euston Road, London, London, NW1 2SD
   - name: Athona Education Limited
     email: terry.irish-jones@athona.com
     branch:
@@ -588,13 +520,17 @@ agencies:
     email: julie@aureliaeducation.com
     branch:
     phone: 07710 518306
+    address: 18 Woodlands Way, Surrey, KT21 1LH
+  - name: Aurelia Education Ltd.
+    email: julie@aureliaeducation.com
+    branch:
+    phone: 07710 518306
     address: 25 Lavender Sweep, London, SW11 1DY
   - name: Axcis Education
-    email: Catherine@axcis.co.uk; Martin@axcis.co.uk
+    email: Catherine@axcis.co.uk; Louise@axcis.co.uk
     branch: London
     phone: 0207 580 2956
-    address: Axcis, Circus House, Fourth Floor, 26 Little Portland Street, London, W1W
-      8BX
+    address: Axcis, 3rd floor, 66-68 Margaret Street, London, W1W 8SR
   - name: Balfor Recruitment a trading name of Boston Clark Ltd
     email: n.priest@balfor.co.uk
     branch: London
@@ -635,19 +571,19 @@ agencies:
     email: sean.packer@engageeducation.co.uk
     branch: Engage Education London
     phone: 0333 150 8020
-    address: Second Floor - Irongate House, 22-30 Dukes Place, London, EC3A 7LP
+    address: Floor 1, 35 New Broad St, London, London, EC2M 1NH
   - name: Engage Education Services
-    email: sean.packer@iday.co.uk
+    email: sean.packer@engageeducation.co.uk
     branch: Engage Education Services London
     phone: 0333 150 8020
-    address: Second Floor - Irongate House, 22-30 Dukes Place, London, EC3A 7LP
+    address: Floor 1, 35 New Broad St, London, London, EC2M 1NH
   - name: Envision Education
     email: balraj.guraya@envisioneducation.co.uk
     branch: Envision Education
     phone: 0203 771 1138
     address: UBC, The Mille, 1000 Great West Road, Brentford, London, TW8 9DW
   - name: Exact Education
-    email: kirsty@eyps.com
+    email: info@exacteducation.com
     branch: London
     phone: 0203 9599293
     address: 344-354 Gray's Inn Road, London, WC1X 8BP
@@ -661,18 +597,6 @@ agencies:
     branch: London (Head Office)
     phone: 02077 392 211
     address: 15 Cotton's Gardens, Shoreditch, London, E2 8DN
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: Aylesbury
-    phone: 0207 259 8770
-    address: Suite A 1st Floor Elsinore House, 43 Buckingham Street, Aylesbury, Buckinghamshire,
-      HP20 2NQ
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: Bishop Stortford
-    phone: 0207 259 8770
-    address: 1 Riverside Walk, South Street, Bishop's Stortford, Hertfordshire, CM23
-      3AG
   - name: Hays Specialist Recruitment Limited
     email: Tim.Field@Hays.com
     branch: Bromley
@@ -691,62 +615,19 @@ agencies:
       EN2 7JA
   - name: Hays Specialist Recruitment Limited
     email: Tim.Field@Hays.com
-    branch: High Wycombe
-    phone: 0207 259 8770
-    address: Suite 1, Ground Floor Old Bank House, 39 High Street, High Wycombe, Buckinghamshire,
-      HP11 2AG
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: London - Cheapside
-    phone: 0207 259 8770
-    address: 107 Cheapside, London, EC2V 6DN
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
     branch: London - Ebury Gate
     phone: 0207 259 8770
-    address: Ebury Gate, 23 Lower Belgrave Street, London, SW1W 0NT
+    address: Ebury Gate, 23 Lower Belgrave Street, London, London, SW1W 0NT
   - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: London - Hammersmith
-    phone: 0207 259 8770
-    address: 30a Broadway Shopping Centre, Hammersmith Broadway, Hammersmith, Greater
-      London, W6 9YD
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
+    email: andrew.testa@hays.com
     branch: Milton Keynes
-    phone: 0207 259 8770
-    address: Suite T1, 3rd Floor, Medina House, Silbury Boulevard, Milton Keynes, Buckinghamshire,
-      MK9 2AE
+    phone: '01098 870257'
+    address: First Floor, 11 Exchange Square, Milton Keynes, Buckinghamshire, MK9 1HL
   - name: Hays Specialist Recruitment Limited
     email: Tim.Field@Hays.com
     branch: Oxford
     phone: 0207 259 8770
     address: 133 - 134 High Street, Oxford, Oxfordshire, OX1 4DN
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: Richmond
-    phone: 0207 259 8770
-    address: Vestry House, 21 Paradise Road, Richmond, Greater London, TW9 1SA
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: Romford
-    phone: 0207 259 8770
-    address: 3 - 5 Eastern Road, Romford, Greater London, RM1 3NH
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: Watford
-    phone: 0207 259 8770
-    address: Victoria House, 49 Clarendon Road, Watford, Hertfordshire, WD17 1HX
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: Head Office Plc
-    phone: 0207 259 8770
-    address: 250 Euston Road, London, NW1 2AF
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: Head Office Service Centre
-    phone: 0207 259 8770
-    address: Hays House, 40 - 44 Coombe Road, New Malden, Greater London, KT3 4QF
   - name: Horizon Teachers
     email: matthewhill@horizonteachers.com
     branch:
@@ -763,15 +644,15 @@ agencies:
     phone: 0203 735 2329
     address: 109 / 113 Cranbrook Road, Ferguson House, Ilford, Essex, IG1 4PU
   - name: Opogo Limited
-    email: jo@thamesteachers.com
+    email: bruce.dutton@opogo.com
     branch: London
-    phone: 020 7264 4919
-    address: 8 Devonshire Square, London, EC2M 4PL
+    phone: 0330 0586700
+    address: Floor 3, 168 Shoreditch High Street, London, E1 6JE
   - name: Pro Education t/a Wise Employment
     email: maidenhead@pro-education.co.uk
     branch: Maidenhead
     phone: '01628 591800'
-    address: 34 King Street, Maidenhead, Berkshire, SL6 1EF
+    address: Concorde Park, Concorde Road, Maidenhead, Berkshire, SL6 4BY
   - name: Prospero Group Ltd
     email: richardm@prosperoteaching.com
     branch: Prospero Teaching London
@@ -793,10 +674,10 @@ agencies:
     phone: 0203 912 6450
     address: Saunders House, 52 - 53 The Mall, London, W5 3TA
   - name: Protocol t/a Teaching Force
-    email: kwebster@protocol.co.uk
+    email: cschofield@protocol.co.uk
     branch: London
     phone: 0115 9111124
-    address: Hamilton House, Mabledon Place, Bloomsbury, London, WC1H 9BB
+    address: CTB, West London College, Bloomsbury, London, W14 9BL
   - name: Protocol t/a Teaching Force
     email: schamberlain@protocol.co.uk
     branch: Hertford
@@ -807,6 +688,11 @@ agencies:
     branch: Hammersmith
     phone: 0203 848 0777
     address: 26-28 Hammersmith Grove, Hammersmith, London, W6 7HA
+  - name: REESON Education
+    email: gareth@reesoneducation.com
+    branch: Liverpool Street
+    phone: 020 3841 0770
+    address: Finsbury House, 23 Finsbury Circus, East Street, London, EC2M 7EA
   - name: Randstad Education
     email: crawley@randstadeducation.co.uk
     branch: Crawley
@@ -816,67 +702,47 @@ agencies:
     email: london@randstadeducation.co.uk
     branch: London
     phone: 0203 870 6353
-    address: 7th Floor, 120 Holborn, London, EC1N 2TD
+    address: 7th Floor, 10 Throgmorton Avenue, London, London, EC1N 2TD
   - name: Randstad Education
     email: eastlondon@randstadeducation.co.uk
     branch: Wanstead
     phone: '0208 530 0393'
-    address: 2nd Floor, 34-40 High Street, Wanstead, Essex, E11 2RJ
+    address: 2nd Floor, 10 Throgmorton Avenue, London, Essex, EC2N 2DL
   - name: Reed Education
-    email: fern.lapper@reedglobal.com
+    email: fern.lapper@reed.com
     branch: Croydon Primary
     phone: '0208 680 4282'
     address: 2nd Floor, Stephenson House, Cherry Orchard Road, Croydon, CR0 6BA
   - name: Reed Education
-    email: ben.brownm@reedglobal.com
+    email: debbie.archer@reed.com
     branch: Croydon Secondary
     phone: '0208 680 4282'
     address: 2nd Floor, Stephenson House, Cherry Orchard Road, Croydon, CR0 6BA
   - name: Reed Education
-    email: josephine.youssefi@reedglobal.com
-    branch: Enfield
-    phone: '0208 884 9802'
-    address: Refuge House, 9-10 River Front, Enfield, EN1 3SZ
-  - name: Reed Education
-    email: richard.dennis@reedglobal.com
-    branch: Farringdon
-    phone: 0207 014 2860
-    address: 50 Farringdon Road, London, EC1M 3HE
-  - name: Reed Education
-    email: bharvi.patel@reedglobal.com
+    email: bharvi.patel@reed.com
     branch: FE South
     phone: '0208 256 1343'
     address: 2nd Floor, Stephenson House, Cherry Orchard Road, Croydon, CR0 6BA
   - name: Reed Education
-    email: debbie.archer@reedglobal.com
-    branch: Guildford
-    phone: '01483 529 905'
-    address: Carriage House, Walnut Tree Close, Guildford, GU1 4TX
-  - name: Reed Education
-    email: josephine.youssefi@reedglobal.com
+    email: victoria.faulkner@reed.com
     branch: Hammersmith
     phone: '0208 237 6401'
     address: 2nd Floor, 4 Lyric Square, Hammersmith, W6 0ED
   - name: Reed Education
-    email: preeti.kahlon@reedglobal.com
-    branch: Hounslow
-    phone: '0208 538 2065'
-    address: Quest House, 125-135 Staines Road, Hounslow, TW3 3JB
-  - name: Reed Education
-    email: jack.curtis@reedglobal.com
+    email: nikita.jackson@reed.com
     branch: Stratford
-    phone: '0208 555 0557'
-    address: Unex Tower, 2nd Floor, 5 Station Street, Stratford, E15 1DA
-  - name: Reed Education
-    email: dina.sage@reedglobal.com
-    branch: National Permanents Division
-    phone: 020 7932 2765
-    address: Unex Tower, 2nd Floor, 5 Station Street, Stratford, E15 1DA
+    phone: '0208 1672510'
+    address: 2nd Floor, Unex Tower, 5 Station Street, Stratford, E15 1DA
   - name: Remedy Recruitment Group t/a Remedy Education
-    email: megan@remedyrecruitmentgroup.co.uk
+    email: craig@remedymedical.co.uk
     branch: Loughton
-    phone: 020 8418 7675
+    phone: 020 8418 9441
     address: Connaught House, 112-120 High Road, Loughton, Essex, IG10 4HJ
+  - name: Smart Teachers
+    email: darren.starling@V4e.co.uk
+    branch: London
+    phone: 020 7065 7500
+    address: Salisbury House, 29 Finsbury Circus, London, EC2M 5QQ
   - name: Smart Teachers
     email: andrea.musty@smartteachers.co.uk
     branch: London
@@ -898,12 +764,12 @@ agencies:
     phone: 020 3951 0080
     address: Three Tuns House, 109 Borough High Street, London, SE1 1NL
   - name: Supply Desk
-    email: Lyn.Hamblin@supplydesk.co.uk
+    email: navjit.panesar@supplydesk.co.uk
     branch: London
     phone: 0330 333 4330
     address: 6th Floor, 10 Lloyds Avenue, London, EC3N 3AJ
   - name: Supply Desk
-    email: Lyn.Hamblin@supplydesk.co.uk
+    email: navjit.panesar@supplydesk.co.uk
     branch: North & NW London, Havering & Thurrock
     phone: '01923 295 300'
     address: Suite 2.2, 34 Clarendon Road, Watford, Hertfordshire, WD17 1JJ
@@ -913,10 +779,15 @@ agencies:
     phone: 020 8577 2442
     address: Supreme House, 2 Kingsley Road, Hounslow, Greater London, TW3 1NP
   - name: Tempest Resoucing Limited
-    email: paulbromwich@tempestresourcing.co.uk
+    email: rachaelmatthes@tempestresourcing.co.uk
     branch: Head Office
     phone: 0203 6513181
-    address: 6 Gracechurch Street, London, EC3V 0AT
+    address: WeWork. 51 Eastcheap, London, EC3M 1JP
+  - name: Tempest Resoucing Limited
+    email: rachaelmatthes@tempestresourcing.co.uk
+    branch: Head Office
+    phone: 0203 6513181
+    address: WeWork. 51 Eastcheap, London, EC3M 1JP
   - name: Uniform Education
     email: davido@uniformeducation.co.uk
     branch: London - Head office
@@ -975,18 +846,8 @@ agencies:
   - name: Zen Educate Limited
     email: support@zeneducate.com
     branch: London Head Office
-    phone: 020 3870 4413
-    address: Unit 3.19, Canterbury Court, 1-3 Brixton Road, London, SW9 6DE
-  - name: anzuk Education Ltd
-    email: ben.g@anzuk.education
-    branch: London
-    phone: 0203 384 6110
-    address: 5 Maidstone Buildings Mews, 72 Borough High Street, London, SE1 1GN
-  - name: justteachers
-    email: Helen.Gibbons@justteachers.co.uk
-    branch: London
-    phone: 0207 100 2440
-    address: 6th Floor, 10 Lloyds Avenue, London, EC3N 3AJ
+    phone: 0203 870 4413
+    address: Unit 3.12, Canterbury Court, 1-3 Brixton Road, London, SW9 6DE
   North East:
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
     email: Jamil.Albarq@cer.co.uk
@@ -1008,6 +869,12 @@ agencies:
     branch: Leeds
     phone: 0121 464 6856
     address: No1 Leeds, 26 Whitehall Rd, Leeds, Yorkshire, LS12 1BE
+  - name: Bluestones Investment Group Limited
+    email: david.jones@connex-education.com
+    branch: Connex Education Partnership Middlesbrough
+    phone: '01489 297 050'
+    address: Suite 7, Ground Floor,, Cargo Fleet Offices, Middlesbrough Road,, Middlesbrough.,
+      Tees Valley, TS6 6XJ
   - name: Coyle Personnel plc
     email: ashley.mullin@coyles.co.uk
     branch: York
@@ -1024,25 +891,25 @@ agencies:
     phone: '0191 440 9993'
     address: YBN Building, Delta Bank Road, Gateshead, Tyne and Wear, NE11 9DJ
   - name: Exact Education
-    email: alex@eyps.com
+    email: info@exacteducation.com
     branch: Newcastle
     phone: '0191 212 1111'
-    address: 105 St Georges Terrace, Jesmond, Newcastle upon Tyne, NE2 2DN
+    address: Cobalt Business Exchange, Cobalt Park Way, North Tyneside, NE28 9NZ
   - name: Exact Education
-    email: nick@eyps.com
+    email: info@exacteducation.com
     branch: Durham
     phone: '0191 300 1880'
     address: The Rivergreen Centre, Aykley Heads, Durham, DH1 5TS
   - name: Exact Education
-    email: nick@eyps.com
+    email: info@exacteducation.com
     branch: Tees Valley
     phone: 01642 130 858
     address: 20 Woodland Road, Darlington, Tees Valley, DL3 7PL
-  - name: Hays Specialist Recruitment Limited
-    email: Lindsay.Bell@Hays.com
-    branch: Darlington
-    phone: 01642 243 503
-    address: 4 - 6 Horsemarket, Darlington, County Durham, DL1 5PW
+  - name: Guardian Selection Limited, trading as GSL Education
+    email: sarah.elliott@gsleducation.com
+    branch: Newcastle
+    phone: '0191 933 7888'
+    address: 26 Mosley Street, Newcstle upon tyne, Newcaslte, NE1 1DF
   - name: Hays Specialist Recruitment Limited
     email: James.Hall@Hays.com
     branch: Newcastle
@@ -1054,18 +921,23 @@ agencies:
     phone: '0191 261 3980'
     address: 17 Fawcett Street, Sunderland, Tyne and Wear, SR1 1RH
   - name: M2 Education Ltd
-    email: daniel.murphy@m2education.co.uk
+    email: linda.cross@m2education.co.uk
     branch: Newcastle
-    phone: '0191 229 3439'
-    address: Gateway House, Gateway West, Newburn Riverside, Newcastle, Tyne and Wear,
-      NE15 8NX
+    phone: '0191 280 5660'
+    address: Cobalt Business Exchange, Cobalt Parkway, Wallsend, Tyne and Wear, NE28
+      9NZ
   - name: Prospero Group Ltd
     email: andrewb@prosperoteaching.com
     branch: Prospero Teaching Newcastle
     phone: '0191 917 0400'
     address: Merchant House, 30 Cloth Market, Newcastle-upon-Tyne, NE1 1EE
+  - name: Prospero Group Ltd
+    email: Ed Brewer <Ed@prosperorecruitment.com>
+    branch: Prospero Teaching Hull
+    phone: '01482 428580'
+    address: 1st floor Norwich House, Savile Street, Hull, HU1 3ES
   - name: Protocol t/a Teaching Force
-    email: aliddell@protocol.co.uk
+    email: tryan@protocol.co.uk
     branch: North East Office
     phone: '0191 501 8577'
     address: 4 Admiral Way, Duxford International Business Park, Sunderland, Tyne and
@@ -1074,13 +946,7 @@ agencies:
     email: newcastle@randstadeducation.co.uk
     branch: Newcastle-upon-Tyne
     phone: '0845 600 1234'
-    address: 4th Floor St. Nicholas Building, St. Nicholas Street, Newcastle-upon-Tyne,
-      NE1 1RF
-  - name: Reed Education
-    email: helen.poole@reed.com
-    branch: Middlesbrough
-    phone: 01642 256 401
-    address: 2nd Floor, Boho 6, Linthorpe Road, Middlesbrough, TS1 1RE
+    address: level 12, The Pinnacle, 67 Albion St, Leeds, West Yorkshire, LS1 5AA
   - name: School House Recruitment Ltd
     email: claire@schoolhouserecruitment.co.uk
     branch: Teesside
@@ -1088,29 +954,29 @@ agencies:
     address: Stockton Business Centre, 70-74 Brunswick Street, Stockton on Tees, Cleveland,
       TS18 1DW
   - name: Supply Desk
-    email: Richard.Ansell@supplydeks.co.uk
+    email: leanne.clark@supplydesk.co.uk
     branch: North East Office
     phone: '0191 917 8888'
     address: Room 302, St Peter's Gate, Charles Street, Monkwearmouth, Sunderland, Tyne
       and Wear, SR6 0AN
   - name: Vision for Education
-    email: elouise.fisher@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Durham
-    phone: '0191 384 4615'
+    phone: '0191 267 4555'
     address: Rivergreen Centre, Aykley Heads, Durham, DH1 5TS
   - name: Vision for Education
-    email: gareth.gaston@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Newcastle
     phone: '0191 267 5900'
     address: Gateway House, Gateway West, Greenfinch Way, Newburn Riverside, Newcastle-upon-Tyne,
       Tyne and Wear, NE15 8NX
   - name: Vision for Education
-    email: chris.martin@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Teesside
     phone: 0164 224 3843
     address: Co-operative Buildings, 251-255 Linthorpe Rd, Middlesbrough, TS1 4AT
   - name: Vision for Education
-    email: steve.mcgurk@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Teesside SEND
     phone: 0164 269 4117
     address: Fusion Hive, North Shore Road, Stockton on Tees, Cleveland, TS18 2NB
@@ -1126,40 +992,33 @@ agencies:
     email: liverpool@academicsltd.co.uk
     branch: Wirral
     phone: 0151 232 0332
-    address: Oaklands Office Park, Hooton Road, Hooton, Ellesmere Port, CH66 7NZ
-  - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
-      Advance and Term Time Teachers
-    email: warrington@academicsltd.co.uk
-    branch: Warrington
-    phone: '01925 231375'
-    address: Dallam Court, Dallam Lane, Warrington, Cheshire, WA2 7LT
+    address: The Technology Centre, Inward Way, Ellesmere Port, CH65 3EN
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: Jordan.Robinson@monarcheducation.com
+    email: elena.dyball@monarcheducation.com
     branch: Monarch Education Manchester
     phone: 0161 870 8221
-    address: 6th Floor Lowry House, 17 Marble Street, Manchester, Greater Manchester,
-      M2 3AW
+    address: 76 King Street, Manchester, M2 4NH, 17 Marble Street, Manchester, Greater
+      Manchester, M2 3AW
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
     email: Elaine.Berry@cer.co.uk
     branch: CER Liverpool
     phone: 0151 242 6036
     address: 8th Floor, Walker House, Exchange Flags, Liverpool, Merseyside, L2 3YL
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: Scott.Wilkinson@cer.co.uk
+    email: Elaine.Berry@cer.co.uk
     branch: CER Preston
     phone: 01772 842 100
     address: 5 Albert Edward House, The Pavillions, Preston, Lancashire, PR2 2YB
   - name: Axcis Education
-    email: Susanna@axcis.co.uk; Emmab@axcis.co.uk
+    email: Catherine@axcis.co.uk; Louise@axcis.co.uk
     branch: Manchester
-    phone: 0161 413 6043
-    address: 13th Floor, City Tower, Piccadilly Plaza, Manchester, Manchester, M1 4BT
+    phone: 0161 529 9200
+    address: Axcis, Spaces, Peter House, Oxford Street, Manchester, M1 5AN
   - name: Axcis Education
-    email: Susanna@axcis.co.uk; Emmab@axcis.co.uk
+    email: Catherine@axcis.co.uk; Louise@axcis.co.uk
     branch: Liverpool
-    phone: 0151 448 2810
-    address: Block A, Business First Business Centre, 25 Goodlass Road, Liverpool, L24
-      9HJ
+    phone: 0151 459 9299
+    address: Axcis, 45 Meridian Business Village, Hansby Drive, Liverpool, L24 9LG
   - name: Balfor Recruitment a trading name of Boston Clark Ltd
     email: ambenagra@balfor.co.uk
     branch: Manchester
@@ -1181,20 +1040,16 @@ agencies:
     phone: '01925 320 421'
     address: Flag House, Barbauld Street, Warrington, Cheshire, WA1 1EX
   - name: Bluestones Investment Group Limited
-    email: gail@theclassroompartnership.co.uk
-    branch: The Classroom Partnership North West Regional Hub
-    phone: '01925 363 053'
-    address: Rutherford House, Warrington Road, Birchwood, Cheshire, WA3 6ZH
+    email: Gail.Andrews@connex-education.com
+    branch: Connex Education Partnership Manchester
+    phone: 0161 518 9000
+    address: Room K101, Pembroke House, Carrington Business Park, Manchester Road, Birchwood,
+      Manchester, M31 4DD
   - name: Career Teachers Limited
     email: manchester@careerteachers.co.uk
     branch: Manchester
     phone: 0161 839 8005
     address: Suite 5, 3rd Floor, 1 King Street, Manchester, Greater Manchester, M2 6AW
-  - name: Choice Teachers Limited
-    email: mark@choiceteachers.com
-    branch: Leigh
-    phone: '01942 670745'
-    address: 26 Union Street, Leigh, Lancashire, WN7 1AT
   - name: Coyle Personnel plc
     email: ashley.mullin@coyles.co.uk
     branch: Manchester
@@ -1220,8 +1075,14 @@ agencies:
     branch: Chester
     phone: '01978 281881'
     address: Sedan House, Stanley Place, Chester, Cheshire, CH1 2LU
+  - name: Educate Resourcing
+    email: matt.lewis@educate-group.co.uk
+    branch: Chester
+    phone: '01978 281881'
+    address: Sedan House, Stanley place, Chester, CH12LU, Stanley Place, Chester, Cheshire,
+      CH12LU
   - name: Exact Education
-    email: robert@eyps.com
+    email: info@exacteducation.com
     branch: Manchester
     phone: 0161 2419719
     address: 53 Fountain Street, Manchester, M2 2AN
@@ -1231,31 +1092,30 @@ agencies:
     phone: 0151 329 2123
     address: Unit 17 Mold Buisness Park, Mold, Flintshire, CH7 1XP
   - name: Excell Supply
-    email: lyndsay.andrews@excell-supply.com
+    email: kate@excell-supply.com
     branch: Chehsire
-    phone: '01925 321 221'
-    address: Suite 19, St James Business Park, Wilderspool Causeway, Warrington, Cheshire,
-      WA4 6PS
+    phone: 01244 455321
+    address: Pulford House, Bell Meadow Business Park, Chester, Cheshire, CH4 9EP
   - name: Eyears Ltd
     email: rachelowen@eyears.co.uk
     branch: Manchester
     phone: 0161 334 0105
-    address: Citibase, 40 Princess Street, Manchester, Greater Manchester, M1 6DE
+    address: Arrive Blue, Blue Media City, Salford, Greater Manchester, M50 2ST
   - name: Guardian Selection Limited, trading as GSL Education
-    email: sheldon@gsleducation.com
+    email: alison.wellman@gsleducation.com
     branch: Manchester
     phone: 01612 093 692
     address: Office 917, Peter House, Oxford Street, Manchester, Greater Manchester,
       M1 5AN
   - name: Hays Specialist Recruitment Limited
-    email: Chris.Davidson@Hays.com
+    email: scott.garman@hays.com
     branch: Altrincham
-    phone: 0161 941 4533
+    phone: 0161 228 7300
     address: 5a Grafton Street, Altrincham, Greater Manchester, WA14 1DU
   - name: Hays Specialist Recruitment Limited
-    email: Neil.McGregor@Hays.com
+    email: Isobel.Grieve@hays.com
     branch: Burnley
-    phone: 01772 201 513
+    phone: '01942 303992'
     address: Suite B Part 2nd Floor St James House, 3a St James Row, Burnley, Lancashire,
       BB11 1DR
   - name: Hays Specialist Recruitment Limited
@@ -1264,27 +1124,27 @@ agencies:
     phone: 01772 201 513
     address: 8a Lowther Street, Carlisle, Cumbria, CA3 8DA
   - name: Hays Specialist Recruitment Limited
-    email: Fern.Kearney@hays.com
+    email: alex.brayton@hays.com
     branch: Chester
-    phone: 01244 401 677
+    phone: 0151 242 5100
     address: 8a Friarsgate, Grosvenor Street, Chester, Cheshire, CH1 1XG
   - name: Hays Specialist Recruitment Limited
     email: Neil.McGregor@Hays.com
     branch: Lancaster
-    phone: 01524 532 334
+    phone: 01772 201513
     address: 2nd Floor Rosemary House, North Road, Lancaster, Lancashire, LA1 1LU
   - name: Hays Specialist Recruitment Limited
-    email: Andrew.Wainwright@hays.com
+    email: alex.brayton@hays.com
     branch: Liverpool
     phone: 0151 242 5100
     address: Part 2nd Floor, 5 St Pauls Square, Liverpool, Merseyside, L3 9SJ
   - name: Hays Specialist Recruitment Limited
-    email: Chris.Davidson@Hays.com
+    email: scott.garman@hays.com
     branch: Manchester
     phone: 0161 228 7300
     address: City Tower, Piccadilly Plaza, Manchester, Greater Manchester, M1 4BT
   - name: Hays Specialist Recruitment Limited
-    email: Chris.Davidson@Hays.com
+    email: scott.garman@hays.com
     branch: Oldham
     phone: 0161 228 7300
     address: 1st Floor Block D Brunswick Square, Union Street, Oldham, Greater Manchester,
@@ -1321,27 +1181,16 @@ agencies:
     address: Rutherford House, Warrington Road, Birchwood, Cheshire, WA3 6ZH
   - name: Prospero Group Ltd
     email: AnthonyL@prosperoteaching.com
-    branch: Prospero Teaching Chester
-    phone: 01244 621790
-    address: 1st Floor Management Suite, Broughton Shopping Park Flintshire, Chester,
-      Cheshire, CH4 0DE
-  - name: Prospero Group Ltd
-    email: AnthonyL@prosperoteaching.com
     branch: Prospero Teaching Liverpool
     phone: 01513 057260
     address: 4th Floor,, Merchants Court, 2-12 Lord Street, Liverpool, L2 1TS
   - name: Prospero Group Ltd
-    email: Adam.Dawood@prosperoteaching.com
+    email: ClaireF@prosperoteaching.com
     branch: Prospero Teaching Manchester
     phone: 01613 936725
     address: We Works, 1 Spinningfields, Quay Street, Manchester, M3 3JE
-  - name: Protocol t/a Teaching Force
-    email: kclark@protocol.co.uk
-    branch: North West Office
-    phone: 0161 952 4252
-    address: Lowry Mill, Lees Street, Swinton, Manchester, M27 6DB
   - name: Provide Education Ltd
-    email: support@provide-education.co.uk
+    email: westyorks@provide-education.co.uk
     branch: North West
     phone: 0161 8507893
     address: Thornhill Brigg Mills, Thornhill Beck Lane, Brighouse, West Yorkshire,
@@ -1361,7 +1210,7 @@ agencies:
     email: manchester@randstadeducation.co.uk
     branch: Manchester
     phone: 0161 200 1906
-    address: 5th Floor St Martins Building, 79 Oxford Street, Manchester, Greater Manchester,
+    address: 5th Floor St Martins Building, 79 Oxford Street, Manchester, Manchester,
       M1 6FQ
   - name: Randstad Education
     email: preston@randstadeducation.co.uk
@@ -1376,47 +1225,42 @@ agencies:
   - name: Red Apple Education Ltd
     email: Jamie@redappleeducation.co.uk
     branch: Liverpool Branch
-    phone: 0151 336 8454
+    phone: 0151 708 6789
     address: Unit 25, Britannia Pavilion, Albert Dock, Liverpool, L3 4AD
   - name: Reed Education
-    email: rebecca.chui@reedglobal.com
+    email: rebecca.chui@reed.com
     branch: FE North
     phone: 0161 817 2682
     address: 37 King Street, Manchester, M2 7AT
   - name: Reed Education
-    email: michael.stubbington@reedglobal.com
+    email: michael.stubbington@reed.com
     branch: Lancaster
     phone: 01524 843 347
     address: Units 7-4-1, Cameron House, White Cross Industrial Estate, Lancaster, LA1
       4XF
   - name: Reed Education
-    email: simon.edwards@reedglobal.com
-    branch: Liverpool
-    phone: 0151 227 1873
-    address: Part 1st Floor, One Derby Square, Liverpool, L2 9QR
+    email: stephanie.grandon@reed.com
+    branch: Nantwich
+    phone: 01270 619314
+    address: 1st Floor, Burford House, 46 Beam Street, Nantwich, CW5 5LJ
   - name: Reed Education
-    email: david.carter@reedglobal.com
+    email: david.carter@reed.com
     branch: Preston
     phone: 01772 200 845
     address: 81 Fishergate, Preston, PR1 2UH
   - name: School Improvement Liverpool Limited
-    email: recruitment@si.liverpool.gov.uk
+    email: supply@si.liverpool.gov.uk
     branch: School Improvement Liverpool Recruitment
     phone: 0151 233 3949
     address: Toxteth Annexe, Aigburth Road, Liverpool, Merseyside, L17 7BN
   - name: Simply Education Ltd
-    email: helen.davies@simplyeducation.co.uk
+    email: helen@simplyeducation.co.uk
     branch: Cheshire
     phone: 01270 382 101
     address: 4 Georges House, Princes Court, Beam Heath Way, Nantwich, Cheshire, CW5
       6GD
   - name: Simply Education Ltd
-    email: Marnie@mcginleyeducation.co.uk
-    branch: Liverpool
-    phone: 0151 556 7097
-    address: Room 125, Eden Building, Liverpool Hope University, Liverpool, L16 9JD
-  - name: Simply Education Ltd
-    email: Paul@mcginleyeducation.co.uk
+    email: orien@simplyeducation.co.uk
     branch: Manchester
     phone: 0161 413 7929
     address: 53 King Street, Manchester, Lancashire, M2 4LQ
@@ -1426,17 +1270,17 @@ agencies:
     phone: 01772 713819
     address: 80 Lytham Road, Fulwood, Preston, Lancashire, PR2 3AQ
   - name: Supply Desk
-    email: Richard.Ansell@supplydeks.co.uk
+    email: rick.axon@supplydesk.co.uk
     branch: North West Office
     phone: 0161 832 8092
     address: Suite 1, 5th Floor, 90 Deansgate, Manchester, M3 2GP
   - name: The Education Specialists Ltd
-    email: Claire@tessupply.co.uk
+    email: jill.wood@tessupply.co.uk
     branch: Manchester
     phone: 0161 838 5767
     address: Centurion House, 129 Deansgate, Manchester, Greater Manchester, M3 3WR
   - name: The Education Specialists Ltd
-    email: jill@tessupply.co.uk
+    email: jill.wood@tessupply.co.uk
     branch: Liverpool
     phone: 0151 480 8818
     address: 11 Paramount Business Park, Wilson Road, Liverpool, Merseyside, L36 6AW
@@ -1452,28 +1296,34 @@ agencies:
     address: 301 Tea Factory, St Peters Square, Fleet Street, Liverpool, Merseyside,
       L1 4DQ
   - name: Vision for Education
-    email: hayley.fenlon@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Cheshire
-    phone: '0192 564 8131'
+    phone: 0161 273 7475
     address: Ground Floor Unit 3/4, Tannery Court, Tanners Lane, Warrington, WA2 7NA
   - name: Vision for Education
-    email: kieran.mulqueen@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Liverpool
     phone: 0151 363 2266
     address: Liverpool Innovation Park, Edge Lane, Liverpool, L7 9NJ
   - name: Vision for Education
-    email: gary.thorman@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Manchester
     phone: 0161 273 7475
     address: Building 3, Universal Square, Devonshire Street, Manchester, M12 6JH
+  - name: Vision for Education
+    email: darren.starling@visionforeducation.co.uk
+    branch: Preston
+    phone: 01772 669322
+    address: Regus, Albert Edward House,, The Pavilions, Preston, PR2 2YB, Preston,
+      Lancashire, PR22YB
   - name: Zen Educate Limited
     email: support@zeneducate.com
     branch: Manchester
-    phone: 020 3870 4413
+    phone: 0161 504 0521
     address: Accelerate Manchester, 101 Princess Street, Manchester, Greater Manchester,
-      M1 6DP
+      M1 6DD
   - name: justteachers
-    email: Jane.Embury@justteachers.co.uk
+    email: Helen.Gibbons@justteachers.co.uk
     branch: Greater Manchester
     phone: 0161 850 0310
     address: New Maxdov House, 130 Bury New Road, Prestwich, Manchester, M25 0AA
@@ -1483,25 +1333,25 @@ agencies:
     email: primaryeast@academicsltd.co.uk
     branch: Primary East - Home Counties
     phone: '0208 518 3550'
-    address: 4th Floor, Solar House, Romford Road, Stratford, London, E15 4LJ
+    address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: primarywest@academicsltd.co.uk
     branch: Primary West - Home Counties
     phone: 0203 031 4860
-    address: 4th Floor, Solar House, Romford Road, Stratford, London, E15 4LJ
+    address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: secondaryteam@academicsltd.co.uk
     branch: Secondary - Home Counties
     phone: 0203 031 4861
-    address: 4th Floor, Solar House, Romford Road, Stratford, London, E15 4LJ
+    address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: SENteam@academicsltd.co.uk
     branch: SEN - Home Counties
     phone: 0203 031 4864
-    address: 4th Floor, Solar House, Romford Road, Stratford, London, E15 4LJ
+    address: Audrey House, 16-20 Ely Place, London, EC1N 6SN
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: berkhamsted@academicsltd.co.uk
@@ -1513,7 +1363,7 @@ agencies:
     email: iow@academicsltd.co.uk
     branch: Isle of Wight
     phone: '01983 212199'
-    address: Office 4, Baring Chambers, Denmark Road, Cowes, Isle of Wight, PO31 7SY
+    address: Office 54, Northwood House, Ward Avenue, Cowes, Isle of Wight, PO31 8AZ
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: portsmouth@academicsltd.co.uk
@@ -1525,13 +1375,13 @@ agencies:
     email: office@classiceducation.co.uk
     branch: Kent
     phone: 01474 359333
-    address: Longferry House, 82 High Street, Gravesend, Kent, DA11 0BH
+    address: Epsilon House Unit 5, Culpeper Close, Rochester, Kent, ME2 4HU
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: office@classiceducation.co.uk
     branch: Kent
     phone: 01474 359333
-    address: Longferry House, 82 High Street, Gravesend, Kent, DA11 0BH
+    address: Epsilon House Unit 5, Culpeper Close, Rochester, Kent, ME2 4HU
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: london@servocaeducation.com
@@ -1544,18 +1394,37 @@ agencies:
     branch: Tunbridge Wells
     phone: '01892 676076'
     address: The Toll House, 16 St Johns Road, Tunbridge Wells, Kent, TN4 9NP
+  - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
+      Advance and Term Time Teachers
+    email: southampton@academicsltd.co.uk
+    branch: Southampton
+    phone: '02382 025516'
+    address: Office 1, Ocean Village Innovation Centre, 4 Ocean Way, Southampton, SO14
+      3JZ
+  - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
+      Advance and Term Time Teachers
+    email: M4@academicsltd.co.uk
+    branch: Berkshire
+    phone: '0118 214 5080'
+    address: Wharfedale Road, Building 220, Wokingham, RG41 5TP
+  - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
+      Advance and Term Time Teachers
+    email: guildford@academicsltd.co.uk
+    branch: Guildford
+    phone: '01483 366433'
+    address: Kings College, Southway, Guildford, GU2 8DU
   - name: Academic Choice Limited
     email: info@academicchoice.co.uk
     branch: Academic Choice Limited
-    phone: 01323 885321
-    address: Cortlandt, George Street, Hailsham, East Sussex, BN27 1AE
+    phone: 01562 882008
+    address: C/oThe White House, 7 Station Road, West Hagley, West Midlands, DY9 0NU
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: Steve.Brennan@cer.co.uk
+    email: chris.carter@cer.co.uk
     branch: CER Maidstone
     phone: 01622 693545
     address: FB2 - FB5 The Old Library, St Faiths Street, Maidstone, Kent, ME14 1LH
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: Alison.Lester@cer.co.uk
+    email: Chris.Carter@cer.co.uk
     branch: CER Southampton
     phone: '02380 381997'
     address: Ocean Village Innovation Centre, Ocean Way, Southampton, Hampshire, SO14
@@ -1570,11 +1439,6 @@ agencies:
     branch: Oxford
     phone: '01865 368034'
     address: John Eccles House, Robinson Avenue, Oxford, Oxfordshire, SR3 3XW
-  - name: Bluestones Investment Group Limited
-    email: steve@theclassroompartnership.co.uk
-    branch: The Classroom Partnership Southern Regional Hub
-    phone: '01489 297 050'
-    address: Building 1000, Lakeside North, Portsmouth, Hampshire, PO6 3EZ
   - name: Coyle Personnel plc
     email: ashley.mullin@coyles.co.uk
     branch: Ashford
@@ -1598,24 +1462,19 @@ agencies:
     address: Second Floor Meridien House, 69-71 Clarendon Road, Watford, Hertfordshire,
       WD17 1DS
   - name: Engage Education Services
-    email: moynul.islam@engageeducation.co.uk
-    branch: Engage Education Berkshire
-    phone: 01753 336 468
-    address: Second floor Atrium Court, The Ring, Bracknell, Reading, RG12 1BW
+    email: paul.tricker@engageeducation.co.uk
+    branch: Engage Education Brighton
+    phone: 01273 447633
+    address: Trafalgar Place, Mocatta House, Brighton, East Sussex, BN1 4DU
   - name: Engage Education Services
-    email: darren.healey@iday.co.uk
+    email: darren.healey@engageeducation.co.uk
     branch: Engage Education Services Watford
     phone: 0333 800 7800
     address: Second Floor Meridien House, 69-71 Clarendon Road, Watford, Hertfordshire,
       WD17 1DS
   - name: Engage Education Services
-    email: moynul.islam@iday.co.uk
-    branch: Engage Education Services Berkshire
-    phone: 01753 336 468
-    address: Second floor Atrium Court, The Ring, Bracknell, Reading, RG12 1BW
-  - name: Engage Education Services
     email: paul.tricker@engageeducation.co.uk
-    branch: Engage Education Brighton
+    branch: Engage Education Services Brighton
     phone: 01273 447633
     address: Trafalgar Place, Mocatta House, Brighton, East Sussex, BN1 4DU
   - name: Guardian Selection Limited, trading as GSL Education
@@ -1623,10 +1482,15 @@ agencies:
     branch: Kent
     phone: 01227 937 181
     address: Suites F9A/B, 75 Stour Street, Canterbury, Kent, CT1 2NR
+  - name: Guardian Selection Limited, trading as GSL Education
+    email: moynul.islam@gsleducation.com
+    branch: Watford
+    phone: '01923 954070'
+    address: 1st Floor Building 2, Croxley Business Park, Watford, WD18 8YA
   - name: Hays Specialist Recruitment Limited
-    email: Lucy.Cox@Hays.com
+    email: ryan.feldman@hays.com
     branch: Basingstoke
-    phone: '02392 970 165'
+    phone: 01273 729465
     address: Copenhagen Court, 32 New Street, Basingstoke, Hampshire, RG21 7DT
   - name: Hays Specialist Recruitment Limited
     email: Ryan.Feldman@Hays.com
@@ -1637,59 +1501,39 @@ agencies:
   - name: Hays Specialist Recruitment Limited
     email: Amy.McDonald@Hays.com
     branch: Canterbury
-    phone: 01227 783 891
+    phone: 01227 783891
     address: 81 - 82 Castle Street, Canterbury, Kent, CT1 2QD
   - name: Hays Specialist Recruitment Limited
-    email: Emma.Lines@Hays.com
+    email: nirenderi.stewart@hays.com
     branch: Chelmsford
-    phone: 0203 818 7041
+    phone: 01245 782138
     address: 1st Floor Rear, Summit House, Waterloo Lane, Chelmsford, Essex, CM1 1BD
   - name: Hays Specialist Recruitment Limited
-    email: Amy.McDonald@Hays.com
+    email: nirenderi.stewart@hays.com
     branch: Colchester
-    phone: 01227 783 891
+    phone: 01245 782138
     address: The Old Exchange, 64 West Stockwell Street, Colchester, Essex, CO1 1HE
   - name: Hays Specialist Recruitment Limited
-    email: Ryan.Feldman@Hays.com
-    branch: Crawley
-    phone: 01273 729465
-    address: 2nd Floor Sterling House, 103 High Street, Crawley, West Sussex, RH10 1GE
-  - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: Guildford
-    phone: 0207 259 8770
-    address: 256 High Street, Guildford, Surrey, GU1 3YL
-  - name: Hays Specialist Recruitment Limited
-    email: Helen.Kirk-Brown@Hays.com
+    email: Amy.McDonald@Hays.com
     branch: Maidstone
-    phone: 01622 235 680
+    phone: 01227 783891
     address: Part 6th Floor Colman House, King Street, Maidstone, Kent, ME14 1DN
   - name: Hays Specialist Recruitment Limited
-    email: Lucy.Cox@Hays.com
+    email: ryan.feldman@hays.com
     branch: Portsmouth
-    phone: '02392 970 165'
+    phone: 01273 729465
     address: 12 Edinburgh Road, Portsmouth, Hampshire, PO1 1DE
   - name: Hays Specialist Recruitment Limited
-    email: Tom.Legrand@Hays.com
+    email: kris.taylor@hays.com
     branch: Reading
     phone: '01793 688 614'
     address: The Blade, Abbey Square, Reading, Berkshire, RG1 3BE
   - name: Hays Specialist Recruitment Limited
-    email: Tim.Field@Hays.com
-    branch: Slough
-    phone: 0207 259 8770
-    address: Ground Floor Aquasulis, 10 - 14 Bath Road, Slough, Berkshire, SL1 3SA
-  - name: Hays Specialist Recruitment Limited
-    email: Lucy.Cox@Hays.com
+    email: ryan.feldman@hays.com
     branch: Southampton
-    phone: '02392 970 165'
+    phone: 01273 729465
     address: 3rd Floor Mountbatten House, Grosvenor Square, Southampton, Hampshire,
       SO15 2JU
-  - name: Hays Specialist Recruitment Limited
-    email: Helen.Kirk-Brown@Hays.com
-    branch: Southend
-    phone: 01622 235 680
-    address: 19 Clifftown Road, Southend-on-Sea, Essex, SS1 1AB
   - name: Kent Teaching Solutions
     email: marc@kentteachingsolutions.com
     branch: Kent
@@ -1712,125 +1556,90 @@ agencies:
     address: Basepoint Business Centre, Little High Street, Shoreham, West Sussex, BN43
       5EG
   - name: Prospero Group Ltd
-    email: Beng-Yela@prosperoteaching.com
-    branch: Prospero Teaching Basingstoke
-    phone: 01256 587820
-    address: Pinewood Chineham Business Park, Crockford Lane, Basingstoke, Hampshire,
-      RG24 8AL
-  - name: Prospero Group Ltd
-    email: BenB@prosperoteaching.com
+    email: RachelB@prosperoteaching.com
     branch: Prospero Teaching Brighton
     phone: 01273 069045
     address: 3rd Floor Queensberry House, 106 Queens Road, Brighton, East Sussex, BN1
       3XF
   - name: Prospero Group Ltd
-    email: Beng-Yela@prosperoteaching.com
-    branch: Prospero Teaching Christchurch
-    phone: '02394 217655'
-    address: Aviation Business Park, Enterprise Close, Christchurch, Dorset, BH23 6NX
-  - name: Prospero Group Ltd
-    email: Beng-Yela@prosperoteaching.com
-    branch: Prospero Teaching Hampshire
-    phone: '02394 217655'
-    address: Ground Floor, Building 1000, Lakeside North Harbour, Western Road, Portsmouth,
-      Hampshire, PO6 3EZ
-  - name: Prospero Group Ltd
-    email: Beng-Yela@prosperoteaching.com
+    email: LeeH@prosperoteaching.com
     branch: Prospero Teaching Southampton
     phone: '02382 029900'
     address: Enterprise House, Ocean Village, Southampton, SO14 3XB
-  - name: Prospero Group Ltd
-    email: Beng-Yela@prosperoteaching.com
-    branch: Prospero Teaching Winchester
-    phone: '01962 676010'
-    address: 1 Winnal Valley Road, Winchester, Hampshire, SO23 0LD
   - name: Randstad Education
     email: southampton@randstadeducation.co.uk
     branch: Fareham
     phone: '0845 600 1234'
-    address: Second Floor, Forum 4, Parkway, Solent Business Park, Fareham, Hampshire,
-      PO15 7AD
+    address: 1st Floor, 13a The Broadway, Crawley, West Sussex, RH11 7AE
   - name: Randstad Education
     email: maidstone@randstadeducation.co.uk
     branch: Maidstone
     phone: '0845 600 1234'
-    address: Ground Floor, 2 County Gate, Staceys Street, Maidstone, Kent, ME14 1ST
+    address: 2nd Floor, 10 Throgmorton Avenue, London, Kent, EC2N 2DL
   - name: Randstad Education
     email: reading@randstadeducation.co.uk
     branch: Reading
     phone: '0845 600 1234'
-    address: Fourth Floor, Dukesbridges Chambers, 1 Duke Street, Reading, Berkshire,
-      RG1 4SA
+    address: 2nd Floor, 10 Throgmorton Avenue, London, Berkshire, EC2N 2DL
   - name: Randstad Education
     email: brighton@randstadeducation.co.uk
     branch: Brighton
     phone: '0845 600 1234'
-    address: Brighton Business Centre, 95 Ditchling Road, Brighton, West Sussex, BN1
-      4ST
+    address: 1st Floor, 13a The Broadway, Crawley, West Sussex, RH11 7AE
   - name: Reed Education
-    email: james.graesser@reedglobal.com
-    branch: Bournemouth
-    phone: 01202 585 583
-    address: 106 Old Christchurch Road, Bournemouth, BH1 1LR
-  - name: Reed Education
-    email: melanie.maher@reedglobal.com
+    email: david.j.anderson@reed,com
     branch: Brighton
     phone: 01273 554 427
     address: 132 Queens Road, Brighton, BN1 3WB
   - name: Reed Education
-    email: alison.whitmore@reedglobal.com
+    email: alison.whitmore@reed.com
     branch: Maidstone
     phone: 01622 608 295
     address: 4 Earl Street, Maidstone, ME14 1PP
   - name: Reed Education
-    email: sarah.shakespeare@reedglobal.com
+    email: renee.burn@reed.com
     branch: Milton Keynes
     phone: '01908 680 602'
     address: 2nd Floor, Exchange House, 484 Midsummer Boulevard, Milton Keynes, MK9
       2EA
   - name: Reed Education
-    email: katy.miklausic@reedglobal.com
+    email: suzie.murray@reed.com
     branch: Oxford
     phone: '01865 812 780'
     address: Second Floor, West Wing, Seacourt Tower, West Way, Oxford, OX2 0JJ
   - name: Reed Education
-    email: phil.mead@reedglobal.com
+    email: phil.mead@reed.com
     branch: Reading
     phone: '0118 952 0017'
     address: 66-68 St Mary's Butts, Reading, RG1 2LG
-  - name: Reed Education
-    email: steven.king@reedglobal.com
-    branch: Southampton
-    phone: '02380 828 605'
-    address: Unit 2, 51 Commercial Road, Southampton, SO15 1GG
   - name: Simply Education Ltd
-    email: amy@simplyeducation.co.uk
+    email: kealie@simplyeducation.co.uk
     branch: Oxford
     phone: '01844 355 581'
     address: Sandford Gate, East Point Business Park, Oxford, Oxfordshire, OX4 6LB
   - name: Simply Education Ltd
-    email: amy@simplyeducation.co.uk
+    email: sam.w@simplyeducation.co.uk
     branch: High Wycombe
     phone: '01494 980147'
     address: Oakridge House, Wellington Road, High Wycombe, Buckinghamshire, HP12 3PR
   - name: Simply Education Ltd
-    email: michael.taylor@simplyeducation.co.uk
+    email: michael@simplyeducation.co.uk
     branch: Kent
     phone: 01634 926 067
     address: 5 Empire House, Sunderland Quay, Culpeper Close, Medway City Estate, Rochester,
       Kent, ME2 4HN
   - name: Simply Education Ltd
-    email: michael.taylor@simplyeducation.co.uk
+    email: michael@simplyeducation.co.uk
     branch: Canterbury
     phone: 01227 903 696
     address: Lombard House, Canterbury, Kent, CT1 2NF
   - name: Simply Education Ltd
-    email: radha.pindoria@simplyeducation.co.uk
-    branch: Slough
+    email: tom@simplyeducation.co.uk
+    branch: Berkshire
     phone: 01753 373 067
-    address: Regal Court, 42-44 High Street, Slough, Berkshire, SL1 1EL
+    address: Bedford Heights, Manton Lane, Bedford, Bedfordshire, MK41 7PH
   - name: Simply Education Ltd
-    email: michael.taylor@simplyeducation.co.uk
+    email: michael@simplyeducation.co.uk
     branch: East Sussex
     phone: 01273 978 003
     address: 3rd Floor, Queensbury House, Queens Road, Brighton, East Sussex, BN1 3XF
@@ -1838,26 +1647,26 @@ agencies:
     email: emma@simplysupply.co.uk
     branch: Hampshire
     phone: '01329 560600'
-    address: 119b West Street, Fareham, Hampshire, PO16 0DU
+    address: The Main Barn, Cams Hall Estate, Fareham, Hampshire, PO16 8UT
   - name: Supply Desk
-    email: Lyn.Hamblin@supplydesk.co.uk
+    email: justin.parker@supplydesk.co.uk
     branch: Brighton
     phone: 01273 022 222
     address: Unit 4 , Hove Business Centre, Fonthill Road, Fonthill Road, Hove, East
       Sussex, BN3 6HA
   - name: Supply Desk
-    email: Lyn.Hamblin@supplydesk.co.uk
+    email: hannah.robinson@supplydesk.co.uk
     branch: Kent
     phone: 01227 450995
     address: Suite 2, 1st Floor, River House, Stour Street, Canterbury, Kent, CT1 2NZ
   - name: Supply Desk
-    email: Lyn.Hamblin@supplydesk.co.uk
+    email: justin.parker@supplydesk.co.uk
     branch: Southampton
     phone: '02380 230 340'
     address: Unit 28, Basepoint Business and Enterprise Centre, Andersons Road, Southampton,
       Hampshire, SO14 5FE
   - name: Supply Desk
-    email: Lyn.Hamblin@supplydesk.co.uk
+    email: navjit.panesar@supplydesk.co.uk
     branch: Thames Valley
     phone: '01189 115 381'
     address: Innovation House, 4, Molly Millars Close, Wokingham, Berkshire, RG41 2RX
@@ -1872,10 +1681,10 @@ agencies:
     phone: '01908 662655'
     address: 2 Highley Grove, Broughton, Milton Keynes, Buckinghamshire, MK10 9LN
   - name: Tempest Resoucing Limited
-    email: patricialorde@tempestrespurcing.co.uk
+    email: davidcreighton@tempestresourcing.co.uk
     branch: Sub Branch
-    phone: 0203 6513181
-    address: Mocatta House, Trafalgar Place, Brighton, BN1 4DU
+    phone: 01245 408 939
+    address: Saxon House, Duke Street, Chelmsford, CM1 1HT
   - name: The Staff Room Agency Limited
     email: stephen.mccabe@thestaffroom.org.uk
     branch: Milton Keynes
@@ -1897,17 +1706,23 @@ agencies:
     branch: Southampton
     phone: '02382 123355'
     address: 14 Chichester Close, Hedge End, Southampton, Hampshire, SO30 2GQ
-  - name: justteachers
-    email: Tara.Dunn@justetachers.co.uk
-    branch: Bournemouth
-    phone: 01202 912 127
-    address: Platinum Business Centre, 23 Hinton Road, Bournemouth, Dorset, BH1 2EF
+  - name: Vision for Education
+    email: darren.starling@visionforeducation.co.uk
+    branch: Kent
+    phone: 01622 584900
+    address: Office 209, Kestrel House, Knightrider Street, Maidstone, Kent, ME15 6LU
+  - name: Vision for Education
+    email: darren.starling@visionforeducation.co.uk
+    branch: Brighton
+    phone: 01273 952488
+    address: Trafalgar Place, Mocatta House, Brighton, BN1 4DU
   South West:
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: Warren.Brewster@monarcheducation.com
+    email: luke.cocking@monarcheducation.com
     branch: Monarch Education Bristol
     phone: 0117 938 2100
-    address: Suite 301 CityPoint, Temple Gate, Bristol, BS1 6PL
+    address: The Quorum, Bond Street South, Bristol, BS1 3AE, Temple Gate, Bristol,
+      BS1 6PL
   - name: Apollo Teaching Services
     email: bristolrec@apolloteaching.com
     branch: Bristol
@@ -1919,10 +1734,16 @@ agencies:
     phone: '01793 441803'
     address: Windmill Hill Business Park, Whitehill Way, Swindon, Wiltshire, SN5 6QR
   - name: Axcis Education
-    email: susanna@axcis.co.uk; Kathryn@axcis.co.uk
+    email: Catherine@axcis.co.uk; Louise@axcis.co.uk
     branch: South West and Wales Office
-    phone: 0117 373 6127
-    address: Axcis, City Point, Temple Gate, Bristol, Bristol, BS1 6PL
+    phone: 0117 472 2400
+    address: Axcis, HERE Building, 470 Bath Road, Arnos Vale, Bristol, BS4 3AP
+  - name: Axcis Education
+    email: Catherine@axcis.co.uk; Louise@axcis.co.uk
+    branch: Devon & Cornwall
+    phone: '0139 294 9022'
+    address: Axcis, Basepoint Business Centre, Yeoford Way, Marsh Barton, Exeter, EX2
+      8LB
   - name: Balfor Recruitment a trading name of Boston Clark Ltd
     email: s.russell@balfor.co.uk
     branch: Bristol
@@ -1933,63 +1754,47 @@ agencies:
     branch: Liverpool
     phone: 0151 244 5400
     address: Horton House, Exchange Flags, Liverpool, L2 3PF
+  - name: Bluestones Investment Group Limited
+    email: kevin.moyes@connex-education.com
+    branch: Connex Education Partnership Bristol
+    phone: 0117 472 3000
+    address: Redwood House, Greeat Park Rd,, Bradley Stoke, Bristol, BS31 4QW
   - name: Coyle Personnel plc
     email: ashley.mullin@coyles.co.uk
     branch: Cardiff
     phone: '029 2046 4545'
     address: St Hilary Court, Copthorne Way, Cardiff, South Glamorgan, CF5 6ES
   - name: Equal Education Partners Ltd
-    email: liam@equalrecruitment.co.uk
+    email: hello@equaleducationpartners.com
     branch: Bristol
     phone: 0117 203 4000
     address: 160, Aztec West, Avon, Bristol, BS32 4TU
   - name: Hays Specialist Recruitment Limited
-    email: Kristopher.Taylor@Hays.com
-    branch: Bath
-    phone: 01225 337 676
-    address: 25 Queen Square, Bath, Somerset, BA1 2HX
-  - name: Hays Specialist Recruitment Limited
-    email: Ryan.Tresidder@Hays.com
-    branch: Bournemouth
-    phone: '01392 348875'
-    address: Ground Floor Waverley House, 115 - 119 Holdenhurst Road, Bournemouth, Dorset,
-      BH8 8DY
-  - name: Hays Specialist Recruitment Limited
-    email: Kristopher.Taylor@Hays.com
+    email: danielle.chittenden@hays.com
     branch: Bristol
-    phone: 0117 925 5455
+    phone: 0117 374 6260
     address: Hartwell House, 55 - 61 Victoria Street, Bristol, BS1 6AD
   - name: Hays Specialist Recruitment Limited
-    email: Claire.Cooke@Hays.com
+    email: adam.titmus@hays.com
     branch: Cheltenham
-    phone: 01242 252 800
+    phone: 01242 244549
     address: 53 - 57 Rodney Road, Cheltenham, Gloucestershire, GL50 1HX
   - name: Hays Specialist Recruitment Limited
-    email: Ryan.Tresidder@Hays.com
+    email: leeanne.horner@hays.com
     branch: Exeter
-    phone: '01392 348 872'
+    phone: '01392 348 870'
     address: 11 - 15 Dix's Field, Exeter, Devon, EX1 1QA
   - name: Hays Specialist Recruitment Limited
-    email: Eveline.Rhodes@Hays.com
+    email: leeanne.horner@hays.com
     branch: Plymouth
-    phone: 01752 255 545
+    phone: 01752 236 680
     address: 1st Floor Royal London House, 153 - 155 Armada Way, Plymouth, Devon, PL1
       1HY
   - name: Hays Specialist Recruitment Limited
-    email: Tom.Legrand@Hays.com
+    email: kelly.colborne@hays.com
     branch: Swindon
     phone: '01793 688 614'
     address: 3rd Floor SN1 Building, Station Road, Swindon, Wiltshire, SN1 1DG
-  - name: Hays Specialist Recruitment Limited
-    email: Ryan.Tresidder@Hays.com
-    branch: Taunton
-    phone: '01823 277 161'
-    address: Bridgwater House, 3 - 5 Corporation Street, Taunton, Devon, TA1 4AJ
-  - name: Hays Specialist Recruitment Limited
-    email: Eveline.Rhodes@Hays.com
-    branch: Truro
-    phone: '01872 321 346'
-    address: Truro Technology Park, Heron Way, Newham, Truro, TR1 2XN
   - name: LB Education Services Limited (t/a Class People)
     email: naomi@classpeople.co.uk
     branch: Gloucestershire
@@ -2021,17 +1826,12 @@ agencies:
     email: swindon@pro-education.co.uk
     branch: Swindon
     phone: '01793 294540'
-    address: 104 Commercial Road, Swindon, Wiltshire, SN1 5PL
+    address: Unit 5 Kingsdown Orchard, Hyde Road, Swindon, Wiltshire, SN2 7RR
   - name: Pro Education t/a Wise Employment
     email: exeter@pro-education.co.uk
     branch: Exeter
     phone: '01392 520025'
     address: 1st Floor, 176 Fore Street, Exeter, EX4 3AX
-  - name: Pro Education t/a Wise Employment
-    email: torquay@pro-education.co.uk
-    branch: Torquay
-    phone: '01803 211500'
-    address: Unit 7 Tor Hill House, Union Street, Torquay, Devon, TQ2 5QW
   - name: Pro Education t/a Wise Employment
     email: plymouth@pro-education.co.uk
     branch: Plymouth
@@ -2041,45 +1841,22 @@ agencies:
     email: dorchester@pro-education.co.uk
     branch: Dorchester
     phone: 01305 234220
-    address: 57 High West Street, Dorchester, Dorset, DT1 1UT
+    address: Peverell Avenue East, Poundbury, Dorchester, Dorset, DT1 3WE
   - name: Pro Education t/a Wise Employment
     email: yeovil@pro-education.co.uk
     branch: Yeovil
     phone: '01935 310010'
     address: Waterloo House, Waterloo Lane, Yeovil, Somerset, BA20 1TF
-  - name: Pro Education t/a Wise Employment
-    email: truro@pro-education.co.uk
-    branch: Truro
-    phone: '01872 274688'
-    address: 10 St Mary's Mews, Truro, Cornwall, TR1 2BE
   - name: Prospero Group Ltd
-    email: alexs@prosperoteaching.com
+    email: Ashley@prosperoteaching.com
     branch: Prospero Teaching Bristol
     phone: 0117 332 2575
     address: 1 Friary, Temple Quay, Bristol, BS1 6EA.
-  - name: Prospero Group Ltd
-    email: Kirk.ryan@prosperoteaching.com
-    branch: Prospero Teaching Gloucester
-    phone: 01452 222945
-    address: Ground Floor North Warehouse, Gloucester Docks, Gloucester, Gloucestershire,
-      GL1 2EP
-  - name: Prospero Group Ltd
-    email: Beng-Yela@prosperoteaching.com
-    branch: Prospero Teaching Salisbury
-    phone: 01722 442540
-    address: Cross Keys House 3rd Floor, 22 Queen Street, Salisbury, Wiltshire, SP1
-      1EY
-  - name: Prospero Group Ltd
-    email: alexs@prosperoteaching.com
-    branch: Prospero Teaching Swindon
-    phone: '01793 957265'
-    address: Regus House Windmill Hill Business Park, Whitehill Way, Swindon, Wiltshire,
-      SN5 6QR
   - name: Randstad Education
     email: bristol@randstadeducation.co.uk
     branch: Bristol
     phone: 0117 929 9882
-    address: 1st Floor Embassy House, Queens Road, Bristol, BS8 1SB
+    address: 4th Floor, Salt Quay House, Sutton Harbour, Plymouth, Devon, PL4 0HP
   - name: Randstad Education
     email: plymouth@randstadeducation.co.uk
     branch: Plymouth
@@ -2089,18 +1866,23 @@ agencies:
     email: exeter@randstadeducation.co.uk
     branch: Exeter
     phone: '0845 600 1234'
-    address: The Senate, 3rd Floor Regius, Southernhay Gardens, Exeter, EX1 1UG
+    address: 4th Floor, Salt Quay House, Sutton Harbour, Plymouth, Devon, PL4 0HP
   - name: Reed Education
-    email: katherine.godsmark@reedglobal.com
-    branch: Bristol
-    phone: '01179 303 015'
-    address: Prudential Building, 5-19 Wine Street, Bristol, BS1 2PH
+    email: ben.holtom@reed.com
+    branch: MSP Team
+    phone: '0800 0855 016'
+    address: Ocean Village Innovation Centre, Ocean Way, Southampton, SO14 3JZ
   - name: Reed Education
-    email: ben.bailie@reedglobal.com
+    email: elly.barnes@reed.com
     branch: Plymouth
     phone: 01752 230 018
     address: Suite 4E, Ground Floor, Princess Court, Princess Street, Plymouth, PL1
       2EX
+  - name: Reed Education
+    email: sonia.watton@reed.com
+    branch: Southampton
+    phone: '02380 828 605'
+    address: Ocean Village Innovation Centre, Ocean Way, Southampton, SO14 3JZ
   - name: Sesame Education Limited
     email: david@sesame-education.co.uk
     branch: South West
@@ -2122,15 +1904,21 @@ agencies:
     email: birmingham@academicsltd.co.uk
     branch: Birmingham
     phone: 0121 616 7610
-    address: Alpha Tower, Suffolk Street, Birmingham, West Midlands, B1 1TT
+    address: 1st Floor, 30 St Pauls Square, Birmingham, West Midlands, B3 1QZ
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
     email: stoke@academicsltd.co.uk
     branch: Stoke
     phone: '01782 444058'
     address: Genesis Centre, Innovation Way, Stoke-on-Trent, Staffordshire, ST6 4BF
+  - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
+      Advance and Term Time Teachers
+    email: Worcester@academicsltd.co.uk
+    branch: Worcester
+    phone: '01905 20600'
+    address: 1st Floor, 30 St Pauls Square, Birmingham, B3 1QZ
   - name: ABC Teachers
-    email: jbetteley@abc-teachers.co.uk
+    email: darren.starling@v4e.co.uk
     branch: Lichfield
     phone: 01543 410 500
     address: St Chad's House, Cross Keys, Lichfield, Staffordshire, WS13 6DN
@@ -2178,10 +1966,11 @@ agencies:
     phone: 0330 221 1226
     address: Regus Offices, M6 Southbound, Sandbach, Stoke, Staffordshire, CW11 2FZ
   - name: Axcis Education
-    email: Sara@axcis.co.uk; Louise@axcis.co.uk
+    email: Catherine@axcis.co.uk; Louise@axcis.co.uk
     branch: Midlands
-    phone: 0121 647 7386
-    address: Colemore Gate, Snow Hill, Birmingham, B3 2QD
+    phone: 0121 827 2030
+    address: Axcis, Level 1 Spaces, Lewis Building, 35 Bull Street, Snow Hill, Birmingham,
+      B4 6AF
   - name: Balfor Recruitment a trading name of Boston Clark Ltd
     email: j.hoskins@balfor.co.uk
     branch: Birmingham
@@ -2193,18 +1982,18 @@ agencies:
     phone: 0121 456 4040
     address: Edmund House, 12-22 Newhall Street, Birmingham, B3 3EW
   - name: Bluestones Investment Group Limited
-    email: matt@theclassroompartnership.co.uk
-    branch: The Classroom Partnership Midlands Regional Hub
+    email: matt.yorke@connex-education.com
+    branch: Connex Education Partnership Derby
     phone: 01332 913 151
     address: 42 Friar Gate, Derby, Derbyshire, DE1 1DA
   - name: Career Teachers Limited
     email: birmingham@careerteachers.co.uk
     branch: Birmingham
     phone: 0121 633 4698
-    address: 1st Floor, Victoria Square, 81 New Street, Birmingham, West Midlands, B2
-      4BA
+    address: Suite 102, Somerset House, 37 Temple street, Birmingham, West Midlands,
+      B2 5DP
   - name: Exact Education
-    email: steve@eyps.com
+    email: info@exacteducation.com
     branch: Birmingham
     phone: 0121 7286663
     address: 43 Temple Row, Birmingham, B2 5LS
@@ -2219,20 +2008,35 @@ agencies:
     branch: Head Office
     phone: '01384 444 222'
     address: 1 Worcester Street, Stourbridge, West Midlands, DY8 1AH
+  - name: First for Education Ltd.
+    email: greg@firstforeducation.co.uk
+    branch: Worcester
+    phone: '01905 701 101'
+    address: County house, St Mary's street, Worcester, Worcestershire, WR1 1HB
+  - name: First for Education Ltd.
+    email: greg@firstforeducation.co.uk
+    branch: Birmingham
+    phone: 0121 285 4840
+    address: 1 Victoria square, Birmingham, West Midlands, B1 1BD
+  - name: First for Education Ltd.
+    email: greg@firstforeducation.co.uk
+    branch: Wolverhampton
+    phone: '01902 505 560'
+    address: Kings house, St. John's square, Wolverhampton, West Midlands, WV2 4DT
   - name: Flourish Education LTD
     email: amy.philpot@flourisheducation.co.uk
     branch: West Midlands Office
     phone: 0121 423 3557
-    address: Seven House, 18 High Street, Longbridge, West Midlands, B31 2UQ
+    address: 1102 Bristol Road South, Northfield, Birmingham, B31 2RE
   - name: Hays Specialist Recruitment Limited
-    email: Manoj.Parekh@Hays.com
+    email: Sukh.Powar@Hays.com
     branch: Birmingham
-    phone: 0121 236 3312
+    phone: 0121 236 4476
     address: Pt 3rd Floor, No 1 Colmore Square, Birmingham, West Midlands, B4 6AJ
   - name: Hays Specialist Recruitment Limited
     email: Charlotte.Mann@Hays.com
     branch: Coventry
-    phone: 02476 902 023
+    phone: 02476 902 022
     address: Part 2nd Floor Friars House, Manor House Drive, Coventry, West Midlands,
       CV1 2TE
   - name: Hays Specialist Recruitment Limited
@@ -2253,7 +2057,7 @@ agencies:
     phone: '01782 958 914'
     address: Padmore House Hall Court, Hall Park Way, Telford, Shropshire, TF3 4LX
   - name: Hays Specialist Recruitment Limited
-    email: Sukh.Powar@Hays.com
+    email: claire.cochrane@hays.com
     branch: Wolverhampton
     phone: '01902 429 867'
     address: Derwent House, 42 - 46 Waterloo Road, Wolverhampton, West Midlands, WV1
@@ -2264,10 +2068,10 @@ agencies:
     phone: 01242 244 549
     address: Trinity Passage, Worcester, Worcestershire, WR1 2PQ
   - name: Hoople Recruitment
-    email: sheila.thompson@hoopleltd.co.uk; kerry.donativo@hoopleltd.co.uk
+    email: Kelly Hughes
     branch: Hereford
-    phone: 01432 383003
-    address: 57-59 Blueschool Street, Hereford, Herefordshire, HR1 2AR
+    phone: 01432 38378
+    address: Plough Lane, Hereford, Herefordshire, HR4 0LE
   - name: LB Education Services Limited (t/a Class People)
     email: alicia@classpeople.co.uk
     branch: Worcestershire
@@ -2281,18 +2085,12 @@ agencies:
     address: 7th Floor, Cobalt Square, 83 Hagley Road, Birmingham, West Midlands, B16
       8QG
   - name: Prospero Group Ltd
-    email: Jason@prosperoteaching.com
+    email: Gemmaw@prosperoteaching.com
     branch: Prospero Teaching Birmingham
     phone: 0121 227 2430
     address: The Colmore Building, 20 Colmore Circus, Queensway, Birmingham, B4 6AT.
-  - name: Prospero Group Ltd
-    email: gemmaw@prosperoteaching.com
-    branch: Prospero Teaching West Midlands
-    phone: 0121 227 2430
-    address: Watling Court Orbital Plaza Watling Street, Bridgtown, Birmingham, West
-      Midlands, WS11 0DQ
   - name: Protocol t/a Teaching Force
-    email: ehowells@protocol.co.uk
+    email: aobrien@protocol.co.uk
     branch: Birmingham
     phone: 0121 644 2929
     address: South and City College Birmingham, Digbeth Campus, Birmingham, West Midlands,
@@ -2304,35 +2102,25 @@ agencies:
     address: 3rd Floor Livery Place, 35 Livery Street, Birmingham, West Midlands, B3
       2PB
   - name: Reed Education
-    email: chris.ward@reedglobal.com
+    email: chris.ward@reed.com
     branch: Birmingham
     phone: 0121 237 2623
     address: Interchange Place, 151-156 Edmund Street, Birmingham, B3 2TA
-  - name: Reed Education
-    email: claire.seeley@reedglobal.com
-    branch: Stoke
-    phone: '01782 343 116 / 01332 973 249'
-    address: Unit 3, Fellgate Court, Froghall, Newcastle-Under-Lyme, ST5 2UA
-  - name: Reed Education
-    email: sara.jordan@reedglobal.com
-    branch: Wolverhampton
-    phone: '01902 719 780'
-    address: Waterloo Court, 31 Waterloo Road, Wolverhampton, WV1 4DJ
   - name: Smart Education Recruitment Limited
     email: fran@smarted.co.uk
     branch: Birmingham
     phone: 0121 392 7114
     address: Trigate, Hagley Road West, Birmingham, West Midlands, B68 0NP
   - name: Smile Education
-    email: Katy@smile-education.co.uk
+    email: Katy@smile-education.co.uk; mark@smile-education.co.uk
     branch: Birmingham
-    phone: 0121 210 5000
+    phone:
     address: The Colmore Building, 20 Colmore Circus Queensway, Birmingham, West Midlands,
       B4 6AT
   - name: Smile Education
-    email: Katy@smile-education.co.uk
+    email: Katy@smile-education.co.uk; mark@smile-education.co.uk
     branch: Cannock
-    phone: 0121 210 5000
+    phone:
     address: Watling Court, Orbital Plaza, Watling Street, Birmingham, West Midlands,
       WS11 0EL
   - name: Zest Education
@@ -2346,7 +2134,7 @@ agencies:
     phone: 01543 756 796
     address: Unit 10, City Arcade, Bore Street, Lichfield, Staffordshire, WS13 6LZ
   - name: justteachers
-    email: Tara.Dunn@justetachers.co.uk
+    email: Mark.Little@justetachers.co.uk
     branch: Midlands
     phone: 02476 463 555
     address: 8, Westwood House, Westwood Business Park, Coventry, West Midlands, CV4
@@ -2360,16 +2148,22 @@ agencies:
     address: Suite 432, G-Mill, Dean Clough Mills, Halifax, West Yorkshire, HX3 5AX
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
-    email: barnsley@academicsltd.co.uk
-    branch: Barnsley
-    phone: 01226 446960
-    address: The Core, County Way, Barnsley, South Yorkshire, S70 2JW
-  - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
-      Advance and Term Time Teachers
     email: hull@academicsltd.co.uk
     branch: Hull
     phone: '01482 425400'
     address: The Bloc, 38 Springfield Way, Anlaby, Hull, East Yorkshire, HU10 6RJ
+  - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
+      Advance and Term Time Teachers
+    email: doncaster@academicsltd.co.uk
+    branch: Doncaster
+    phone: 01302 294522
+    address: Office G11, Gresley House, Ten Pound Walk, Doncaster, DN4 5HX
+  - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
+      Advance and Term Time Teachers
+    email: leeds@academicsltd.co.uk
+    branch: Leeds
+    phone: 0113 331 5005
+    address: 4th Floor, St Andrews House, 119 The Headrow, Leeds, LS1 5JW
   - name: Academic Appointments Ltd
     email: matthew@academicappointments.co.uk
     branch: Leeds
@@ -2377,18 +2171,24 @@ agencies:
     address: Templar House, 4225 Park Approach, Thorpe Park, Leeds, West Yorkshire,
       LS15 8GB
   - name: Academic Appointments Ltd
-    email: scott@academicappointments.co.uk
+    email: cameron@academicappointments.co.uk
     branch: Bradford
     phone: 01274 505 400
-    address: 1st floor East Suite Waterfront, Salts Mill Road, Shipley, West Yorkshire,
+    address: 1st floor East Suite Waterfront, Salts Mill Road, Bradford, West Yorkshire,
       BD17 7TD
   - name: Academic Appointments Ltd
-    email: clare.oram@academicappointments.co.uk
+    email: chrisr@academicappointments.co.uk
     branch: Doncaster
     phone: 01302 243 060
     address: Gresley House, Ten Pound Walk, Doncaster, South Yorkshire, DN4 5HX
+  - name: Academic Appointments Ltd
+    email: andrew@academicappointments.co.uk
+    branch: Harrogate
+    phone: 01423 608 655
+    address: hammerain House, Hookstone Avenue, Harrogate, Harrogate, North Yorkshire,
+      HG2 8ER
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
-    email: Vikki.Lowrey@cer.co.uk
+    email: chris.carter@cer.co.uk
     branch: CER Leeds
     phone: 0113 323 0480
     address: 1st Floor, 32 Park Cross Street, Leeds, West Yorkshire, LS1 2QH
@@ -2398,8 +2198,8 @@ agencies:
     phone: 0114 241 2800
     address: 1st Floor, St James House, Vicar Lane, Sheffield, South Yorkshire, S1 2EX
   - name: Bluestones Investment Group Limited
-    email: jenni@theclassroompartnership.co.uk
-    branch: The Classroom Partnership Yorkshire/North East Region Hub
+    email: rosanna.rogers@connex-education.com
+    branch: Connex Education Partnership West Yorkshire
     phone: '01484 819 265'
     address: 46 Bradford Road, Brighouse, West Yorkshire, HD6 1RY
   - name: Career Teachers Limited
@@ -2414,69 +2214,74 @@ agencies:
     address: 1st Floor, Wharf House, Victoria Quays, Sheffield, South Yorkshire, S2
       5SY
   - name: City of York Trading Limited Trading as WorkwithSchools
-    email: ellis.campbell@workwithschools.co.uk
-    branch: Kings Court
-    phone: '01904 551397'
-    address: Top Floor, 5/6 Kings Court, The Shambles, York, North Yorkshire, YO1 7LD
-  - name: City of York Trading Limited Trading as WorkwithSchools
     email: bookings@workwithschools.co.uk
-    branch: The Pavement
+    branch: Kings Court
     phone: '01904 554195'
-    address: 22 The Pavement, York, North Yorkshire, YO1 9UP
+    address: Top Floor, 5/6 Kings Court, The Shambles, York, North Yorkshire, YO1 7LD
   - name: Engage Education Services
-    email: tom.haygarth@iday.co.uk
+    email: charley.alexander@engage-education.com
+    branch: Engage Education Leeds
+    phone: 0113 323 7633
+    address: 7 Park Row, Leeds, Leeds, LS1 5HD
+  - name: Engage Education Services
+    email: charley.alexander@engage-education.com
     branch: Engage Education Services Leeds
-    phone: 0113 323 7630
-    address: Platform, New Street Station, Leeds, LS1 4JB
+    phone: 0113 323 7633
+    address: 7 Park Row, Leeds, Leeds, LS1 5HD
   - name: Exact Education
-    email: rachel@eyps.com
+    email: info@exacteducation.com
     branch: Leeds
     phone: 0113 3237652
     address: Princes Exchange, Princes Square, Leeds, LS1 4HY
+  - name: Guardian Selection Limited, trading as GSL Education
+    email: kerry.fowler@gsleducation.com
+    branch: Hull
+    phone: '01482 739633'
+    address: 1011 K2 Building, Bond Street, Hull, HU1 3EN
   - name: Hays Specialist Recruitment Limited
-    email: Stephanie.Croxford@Hays.com
+    email: nicole.walkley@hays.com
     branch: Bradford
     phone: 0113 200 3710
     address: The Wool Exchange Mezzanine Offices, 18 Bank Street, Bradford, West Yorkshire,
       BD1 1PR
   - name: Hays Specialist Recruitment Limited
-    email: Sonya.Grocott@Hays.com
+    email: julia.peat1@hays.com
     branch: Doncaster
     phone: 01142 721 470
     address: 3 Portland Place, Doncaster, South Yorkshire, DN1 3DF
   - name: Hays Specialist Recruitment Limited
-    email: James.Hardcastle@Hays.co.uk
+    email: michelle.audis@hays.com
     branch: Huddersfield
     phone: '01484 517 968'
     address: 14 St Georges Square, Huddersfield, West Yorkshire, HD1 1JF
   - name: Hays Specialist Recruitment Limited
-    email: Catherine.Barwick@Hays.com
+    email: nicole.walkley@hays.com
     branch: Hull
-    phone: '01482 227 128'
+    phone: 0113 200 3710
     address: 25 South Street, Hull, East Riding of Yorkshire, HU1 3QD
   - name: Hays Specialist Recruitment Limited
-    email: Stephanie.Croxford@Hays.com
+    email: nicole.walkley@hays.com
     branch: Leeds
     phone: 0113 200 3710
-    address: Sovereign House, South Parade, Leeds, West Yorkshire, LS1 5QL
+    address: 5th Floor, 1 Broadgate, Leeds, West Yorkshire, LS1 8EQ
   - name: Hays Specialist Recruitment Limited
-    email: Lindsay.Bell@Hays.com
+    email: emma.phillips@hays.com
     branch: Middlesbrough
     phone: 01642 243 503
     address: 16 - 26 Albert Road, Middlesbrough, TS1 1QA
   - name: Hays Specialist Recruitment Limited
-    email: Sonya.Grocott@Hays.com
+    email: julia.peat1@hays.com
     branch: Sheffield
     phone: 0114 272 1470
     address: Ruskin Buildings, Tudor Square, Sheffield, Yorkshire, S1 2LA
   - name: Hays Specialist Recruitment Limited
-    email: Stephanie.Croxford@Hays.com
+    email: nicole.walkley@hays.com
     branch: Wakefield
     phone: 0113 200 3710
     address: Part 2nd Floor Holdsworth House, 11A Wood Street, Wakefield, West Yorkshire,
       WF1 2EL
   - name: Hays Specialist Recruitment Limited
-    email: Stephanie.Croxford@Hays.com
+    email: nicole.walkley@hays.com
     branch: York
     phone: 0113 200 3710
     address: 8a Coney Street, York, North Yorkshire, YO1 9NA
@@ -2519,12 +2324,7 @@ agencies:
     phone: 01274 905150
     address: Malik House, Oakwood Court, City Road, Bradford, West Yorkshire, BD8 8JY
   - name: Prospero Group Ltd
-    email: andrewb@prosperoteaching.com
-    branch: Prospero Teaching Hull
-    phone: '01482 428580'
-    address: 1st floor Norwich House, Savile Street, Hull, HU1 3ES
-  - name: Prospero Group Ltd
-    email: andrewb@prosperoteaching.com
+    email: Ed Brewer <Ed@prosperorecruitment.com>
     branch: Prospero Teaching Leeds
     phone: '01138 872160'
     address: 2nd Floor, Princes Exchange, Princes Square, Leeds, LS1 4HY
@@ -2533,24 +2333,14 @@ agencies:
     branch: Prospero Teaching Sheffield
     phone: 0114 399 1740
     address: Blades Enterprise Centre, John Street, Sheffield, South Yorkshire, S2 4SW
-  - name: Protocol t/a Teaching Force
-    email: amyers@protocol.co.uk
-    branch: Doncaster
-    phone: 0115 911 1278
-    address: Doncaster College, Chappell Drive, Doncaster, South Yorkshire, DN1 2RF
-  - name: Protocol t/a Teaching Force
-    email: vedgar@protocol.co.uk
-    branch: Leeds
-    phone: 0115 9775541
-    address: Leeds City College, Park Lane, Leeds, Yorkshire, LS3 1AA
   - name: Provide Education Ltd
-    email: supply@provide-education.co.uk
+    email: southyorks@provide-education.co.uk
     branch: South Yorkshire
     phone: 01226 729080
     address: 3 Morston Claycliffe Office Park, Whaley Road, Barnsley, South Yorkshire,
       S75 1HQ
   - name: Provide Education Ltd
-    email: teach@provide-education.co.uk
+    email: westyorks@provide-education.co.uk
     branch: West Yorkshire
     phone: '01484 722705'
     address: Thornhill Brigg Mills, Thornhill Beck Lane, Brighouse, West Yorkshire,
@@ -2559,33 +2349,27 @@ agencies:
     email: sheffield@randstadeducation.co.uk
     branch: Sheffield
     phone: 0114 274 3765
-    address: 7th Floor, The Balance, 2 Pinfold Street, Sheffield, South Yorkshire, S1
-      2GU
+    address: level 12, The Pinnacle, 67 Albion St, Leeds, West Yorkshire, LS1 5AA
   - name: Randstad Education
     email: leeds@randstadeducation.co.uk
     branch: Leeds
     phone: 0113 246 2500
-    address: 2nd Floor, 14 King Street, Leeds, West Yorkshire, LS1 2HL
+    address: level 12, The Pinnacle, 67 Albion St, Leeds, West Yorkshire, LS1 5AA
   - name: Reed Education
-    email: tom.raven-hill@reedglobal.com
-    branch: Bradford
-    phone: 01274 377 620
-    address: 29-31 Kirkgate, Bradford, BD1 1QB
-  - name: Reed Education
-    email: andrea.raven-hill@reedglobal.com
-    branch: Leeds
-    phone: 01132 368 960
+    email: vicki.edgar@reed.com
+    branch: FE Leeds
+    phone: 0161 817 2682
     address: Ground Floor, Toronto Square, Infirmary Street, Leeds, LS1 2HJ
   - name: Reed Education
-    email: beverley.monaghan@reedglobal.com
+    email: joseph.james@reed.com
     branch: Scunthorpe
     phone: 01724 749 550
     address: Suite 1A, Haldenby House, Berkeley Business Centre, Scunthorpe, DN15 7DQ
   - name: Reed Education
-    email: andrea.raven-hill@reedglobal.com
-    branch: Sheffield
-    phone: 0114 273 3940
-    address: The Shard, Unit 7B, Leopold Square, Sheffield, S1 2JG
+    email: tom.raven-hill@reed.com
+    branch: Yorkshire
+    phone: 01132 368 960
+    address: Ground Floor, Toronto Square, Infirmary Street, Leeds, LS1 2HJ
   - name: School House Recruitment Ltd
     email: lucy@schoolhouserecruitment.co.uk
     branch: South Yorkshire
@@ -2598,61 +2382,56 @@ agencies:
     phone: '01484 351 010'
     address: International House, Chapel Hill, Huddersfield, West Yorkshire, HD1 3EE
   - name: Supply Desk
-    email: Richard.Ansell@supplydeks.co.uk
+    email: leanne.clark@supplydesk.co.uk
     branch: Leeds
     phone: 01133 670991
     address: 4th Floor, Wellington House,, Thirsk Row, Leeds, West Yorkshire, LS1 4WG
   - name: Supply Desk
-    email: Richard.Ansell@supplydeks.co.uk
+    email: leanne.clark@supplydesk.co.uk
     branch: Sheffield
     phone: 0114 272 5535
     address: 2nd Floor, Sir Wilfred House, Thorncliffe Park, Chapeltown, Sheffield,
       S35 2PH
-  - name: Total Assist Education
-    email: education@totalassist.co.uk
-    branch: Sheffield
-    phone: '01708 388 088'
-    address: Building 3, Hawke Street Business Park, Hawke Street, Sheffield, S9 2SU
   - name: Veritas Education Recruitment
     email: Leeds@veritas-education.com
     branch: Leeds
     phone: 0113 403 2200
     address: Citibase, 1 City Square, Leeds, West Yorkshire, LS1 2ES
   - name: Vision for Education
-    email: claire.darling@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Huddersfield
     phone: '0148 464 2889'
     address: The Heritage Exchange, Wellington Mills, 70 Plover Rd, Huddersfield, West
       Yorkshire, HD3 3HR
   - name: Vision for Education
-    email: richie.halls@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Leeds
     phone: 0113 426 5330
     address: Regus, 1200 Century Way, Thorpe Park Business Park, Colton, Leeds, West
       Yorkshire, LS15 8ZA
   - name: Vision for Education
-    email: rachael.moyse@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Lincolnshire
     phone: 01724 857540
     address: Unit 2, Queensway Business Centre, Dunlop Way, Queensway Industrial Estate,
       Scunthorpe, Lincolnshire, DN16 3RN
   - name: Vision for Education
-    email: chris.martin@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: York
     phone: '01904 557627'
     address: Tower Court Business Centre, Oakdale Road, York, North Yorkshire, YO30
       4XL
   - name: Vision for Education
-    email: laura.wilkinson@visionforeducation.co.uk
+    email: darren.starling@visionforeducation.co.uk
     branch: Sheffield
     phone: 0114 243 5555
     address: The Quadrant, 99 Parkway Avenue, Sheffield, South Yorkshire, S9 4WG
   - name: Vision for Education
-    email: allan.calder@visionforeducation.co.uk
-    branch: Sheffield
-    phone: 0114 272 2485
-    address: First Floor, Concept House, 5 Young Street, Sheffield, South Yorkshire,
-      S1 4UP
+    email: darren.starling@visionforeducation.co.uk
+    branch: Hull
+    phone: '01482 529451'
+    address: Unit 2, Queensway Business Centre, Dunlop Way, Queensway Industrial Estate,
+      Scunthorpe, Lincolnshire, DN16 3RN
   - name: Yorkshire Education Recruitment Ltd
     email: office@yorkshire-education.co.uk
     branch: York
@@ -2661,17 +2440,17 @@ agencies:
   - name: justteachers
     email: Helen.Gibbons@justteachers.co.uk
     branch: Lancashire
-    phone: '0800 832 243'
-    address: High Corn Mill, Skipton, North Yorkshire, BD23 1NL
+    phone: 01756 243125
+    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
   - name: justteachers
     email: Helen.Gibbons@justteachers.co.uk
-    branch: Cambridgeshire, Lincolnshire, Norfolk
-    phone: '0800 832 243'
+    branch: Cambridgeshire, Lincolnshire, Nottingham Norfolk
+    phone: 01775 233116
     address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
   - name: justteachers
     email: Helen.Gibbons@justteachers.co.uk
     branch: Yorkshire
-    phone: '0800 832 243'
+    phone: 01274 905440
     address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
 
 ---
