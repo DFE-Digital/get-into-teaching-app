@@ -152,20 +152,22 @@ module WelcomeContentHelper
 private
 
   def mappings(id)
+    key = TeachingSubject.key_with_uuid(id)
+
     {
-      "a42655a1-2afa-e811-a981-000d3a276620" => MATHS,
-      "942655a1-2afa-e811-a981-000d3a276620" => ENGLISH,
+      maths: MATHS,
+      english: ENGLISH,
 
-      "802655a1-2afa-e811-a981-000d3a276620" => SCIENCES,  # biology
-      "842655a1-2afa-e811-a981-000d3a276620" => SCIENCES,  # chemistry
-      "ac2655a1-2afa-e811-a981-000d3a276620" => SCIENCES,  # physics
-      "ae2655a1-2afa-e811-a981-000d3a276620" => SCIENCES,  # physics with maths
-      "982655a1-2afa-e811-a981-000d3a276620" => SCIENCES,  # general science
+      biology: SCIENCES,
+      chemistry: SCIENCES,
+      physics: SCIENCES,
+      physics_with_maths: SCIENCES,
+      general_science: SCIENCES,
 
-      "962655a1-2afa-e811-a981-000d3a276620" => MFL,       # french
-      "9c2655a1-2afa-e811-a981-000d3a276620" => MFL,       # german
-      "b82655a1-2afa-e811-a981-000d3a276620" => MFL,       # spanish
-      "a22655a1-2afa-e811-a981-000d3a276620" => MFL,       # languages (other)
-    }.fetch(id) { GENERIC }
+      french: MFL,
+      german: MFL,
+      spanish: MFL,
+      languages_other: MFL,
+    }.fetch(key) { GENERIC }
   end
 end

@@ -24,28 +24,5 @@ module GetIntoTeachingApiClient
         "I’m fairly sure and exploring my options" => 222_750_002,
         "I’m very sure and think I’ll apply" => 222_750_003,
       }.freeze
-
-    # This is not a complete list.
-    TEACHING_SUBJECTS =
-      {
-        "Art and design" => "7e2655a1-2afa-e811-a981-000d3a276620",
-        "Biology" => "802655a1-2afa-e811-a981-000d3a276620",
-        "Chemistry" => "842655a1-2afa-e811-a981-000d3a276620",
-        "English" => "942655a1-2afa-e811-a981-000d3a276620",
-        "French" => "962655a1-2afa-e811-a981-000d3a276620",
-        "General science" => "982655a1-2afa-e811-a981-000d3a276620",
-        "German" => "9c2655a1-2afa-e811-a981-000d3a276620",
-        "Languages (other)" => "a22655a1-2afa-e811-a981-000d3a276620",
-        "Maths" => "a42655a1-2afa-e811-a981-000d3a276620",
-        "Physics with maths" => "ae2655a1-2afa-e811-a981-000d3a276620",
-        "Physics" => "ac2655a1-2afa-e811-a981-000d3a276620",
-        "Spanish" => "b82655a1-2afa-e811-a981-000d3a276620",
-      }.freeze
-
-    IGNORED_PREFERRED_TEACHING_SUBJECTS =
-      {
-        "Other" => "bc2655a1-2afa-e811-a981-000d3a276620",
-        "No Preference" => "bc68e0c1-7212-e911-a974-000d3a206976",
-      }.freeze
   end
 end

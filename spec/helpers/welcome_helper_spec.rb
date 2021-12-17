@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe WelcomeHelper, type: :helper do
-  let(:physics_uuid) { "ac2655a1-2afa-e811-a981-000d3a276620" }
+  let(:physics_uuid) { TeachingSubject.lookup_by_key(:physics) }
 
   shared_context "with first name" do
     before { allow(session).to receive(:dig).with("mailinglist", "first_name") { name } }
@@ -80,7 +80,7 @@ RSpec.describe WelcomeHelper, type: :helper do
     context "when set by query param and stored in the welcome_guide session store" do
       include_context "with preferred teaching subject set in welcome_guide"
 
-      let(:subject_id) { "842655a1-2afa-e811-a981-000d3a276620" }
+      let(:subject_id) { TeachingSubject.lookup_by_key(:chemistry) }
 
       specify "returns the correct subject" do
         expect(subject).to eql("chemistry")
@@ -89,29 +89,27 @@ RSpec.describe WelcomeHelper, type: :helper do
 
     context "when stored in the mailinglist session store" do
       context "when the subject name is a common noun" do
-        GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.slice("Art and design", "Biology", "Chemistry", "General science", "Languages (other)", "Maths", "Physics with maths", "Physics")
-          .each do |subject_name, subject_id|
-            describe "#{subject_name} is lowercased" do
-              let(:subject_id) { subject_id }
+        %i[art_and_design biology chemistry general_science languages_other maths physics_with_maths physics].each do |subject_key|
+          describe "#{subject_key} is lowercased" do
+            let(:subject_id) { TeachingSubject.lookup_by_key(subject_key) }
 
-              include_context "with preferred teaching subject set in welcome_guide"
+            include_context "with preferred teaching subject set in welcome_guide"
 
-              it { is_expected.to eql(subject_name.downcase) }
-            end
+            it { is_expected.to eql(TeachingSubject.lookup_by_uuid(subject_id).downcase) }
           end
+        end
       end
 
       context "when the subject name is a proper noun" do
-        GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.slice("English", "German", "Spanish", "French")
-          .each do |subject_name, subject_id|
-            describe "#{subject_name} is not lowercased" do
-              let(:subject_id) { subject_id }
+        %i[english german spanish french].each do |subject_key|
+          describe "#{subject_key} is not lowercased" do
+            let(:subject_id) { TeachingSubject.lookup_by_key(subject_key) }
 
-              include_context "with preferred teaching subject set in welcome_guide"
+            include_context "with preferred teaching subject set in welcome_guide"
 
-              it { is_expected.to eql(subject_name) }
-            end
+            it { is_expected.to eql(TeachingSubject.lookup_by_uuid(subject_id)) }
           end
+        end
       end
     end
 
@@ -171,7 +169,7 @@ RSpec.describe WelcomeHelper, type: :helper do
     subject { welcome_guide_subject }
 
     context "when the subject id is in the welcome_guide session store" do
-      let(:subject_id) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["Languages (other)"] }
+      let(:subject_id) { TeachingSubject.lookup_by_key(:languages_other) }
 
       include_context "with preferred teaching subject set in welcome_guide"
 
@@ -181,7 +179,7 @@ RSpec.describe WelcomeHelper, type: :helper do
     end
 
     context "when the subject id is in the mailinglist session store" do
-      let(:subject_id) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["German"] }
+      let(:subject_id) { TeachingSubject.lookup_by_key(:german) }
 
       include_context "with preferred teaching subject set in welcome_guide and mailinglist"
 

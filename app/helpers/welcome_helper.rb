@@ -64,16 +64,13 @@ private
   # return the subject name from its uuid, downcasing all except
   # proper nouns
   def retrieve_subject(uuid, leave_capitalised:)
-    subject = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.invert[uuid]
+    subject = TeachingSubject.lookup_by_uuid(uuid)
 
     return if subject.blank?
 
-    return subject if leave_capitalised || uuid.in?([
-      "942655a1-2afa-e811-a981-000d3a276620", # English
-      "962655a1-2afa-e811-a981-000d3a276620", # French
-      "9c2655a1-2afa-e811-a981-000d3a276620", # German
-      "b82655a1-2afa-e811-a981-000d3a276620", # Spanish
-    ])
+    proper_nouns = TeachingSubject.lookup_by_keys(:english, :french, :german, :spanish)
+
+    return subject if leave_capitalised || uuid.in?(proper_nouns)
 
     subject.downcase
   end

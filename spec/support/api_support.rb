@@ -31,7 +31,7 @@ shared_context "with stubbed types api" do
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map { |k, v| { id: v, value: k } }.to_json
+        body: TeachingSubject::ALL.map { |k, v| { id: v, value: k } }.to_json
   end
 end
 

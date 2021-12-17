@@ -18,7 +18,7 @@ module MailingList
 
       def query_teaching_subjects
         GetIntoTeachingApiClient::LookupItemsApi.new.get_teaching_subjects.reject do |type|
-          GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS.values.include?(type.id)
+          TeachingSubject.ignore?(type.id)
         end
       end
     end

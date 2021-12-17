@@ -396,7 +396,7 @@ RSpec.feature "Event wizard", type: :feature do
       degree_status_id: 222_750_000,
       consideration_journey_stage_id: 222_750_000,
       address_postcode: "TE57 1NG",
-      preferred_teaching_subject_id: "7e2655a1-2afa-e811-a981-000d3a276620",
+      preferred_teaching_subject_id: TeachingSubject.lookup_by_key(:art_and_design),
     }
   end
 
