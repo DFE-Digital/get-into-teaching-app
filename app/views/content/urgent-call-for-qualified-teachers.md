@@ -1,5 +1,9 @@
 ---
-title: Urgent call for qualified teachers
+title: Get back into the classroom and teach supply
+heading: Urgent call for qualified teachers
+description: |-
+  Find supply teaching agencies and help shape a life. Answer the urgent call
+  for qualified teachers to support children and young people.
 noindex: true
 article_classes: ['longform', 'fullwidth', 'urgent-call-for-qualified-teachers']
 content:
