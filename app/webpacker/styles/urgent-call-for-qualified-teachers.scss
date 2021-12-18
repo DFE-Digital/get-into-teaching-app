@@ -20,15 +20,10 @@ article.urgent-call-for-qualified-teachers {
       margin-bottom: 4em;
     }
 
-    p,
-    ol,
-    h4 {
+    &[open] > div {
+      padding: .2em 1em;
       margin-left: .1em;
-      padding-left: 1.5em;
-    }
-
-    &[open] {
-      outline: 4px solid $grey;
+      border-left: 4px solid $grey-mid;
     }
   }
 
