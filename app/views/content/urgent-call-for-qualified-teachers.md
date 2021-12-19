@@ -2472,12 +2472,12 @@ Your time will be invaluable, whatever you can spare - whether it is one day a w
 
 [Find out more about becoming a supply teacher.](#find-out-more)
 
-## Please register with a teaching supply agency now
+## Please register with a supply teaching agency now
 
-This will enable the agencies to be ready to use you as soon as possible.
+This will enable an agency to be ready to use you as soon as possible.
 
 ### Finding an agency
 
-Find a teaching supply agency near you from the list below, and contact the agency directly. This list of education supply agencies are part of the government framework and offer schools value for money.
+Find a supply teaching agency near you from the list below, and contact the agency directly. This list of education supply agencies are part of the government framework and offer schools value for money.
 
 You can also contact other supply agencies you know of if they are not on the list. The agency will help you with what you need, for example updating your DBS.
