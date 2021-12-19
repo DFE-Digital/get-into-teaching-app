@@ -2462,11 +2462,11 @@ We are asking for your help to support your teaching colleagues and the nation's
 
 Covid continues to impact schools and colleges in England. We want to make sure that as many supply staff as possible are available in the new year.
 
-### Who can help?
+## Who can help?
 
 We're inviting qualified ex-teachers from primary, secondary and further education to step in and help teach children and young people in school and college on a temporary basis. You may be retired, taking time off to care for children or others, or currently working in a different area, but you may be able to spare some time to help.
 
-### What's required?
+## What's required?
 
 Your time will be invaluable, whatever you can spare - whether it is one day a week or five. You will be helping protect children and young people's education.
 

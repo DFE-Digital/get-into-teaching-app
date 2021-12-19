@@ -142,7 +142,7 @@
     h2 {
       background-color: unset;
       color: $black;
-      margin-top: 1rem;
+      margin: 1rem auto .5rem;
       font-size: 1.4rem;
 
       &:after {
@@ -152,6 +152,16 @@
 
     h3 {
       font-size: 1.2rem;
+    }
+
+    p + h2,
+    p + h3 {
+      margin-top: 2em;
+    }
+
+    h2 + p,
+    h3 + p {
+      margin-top: .2em;
     }
   }
 
