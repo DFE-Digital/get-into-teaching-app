@@ -2472,8 +2472,6 @@ We're inviting qualified ex-teachers from primary, secondary and further educati
 
 Your time will be invaluable, whatever you can spare - whether it is one day a week or five. You will be helping protect children and young people's education.
 
-[Got questions? Find out more about supply teaching.](#find-out-more)
-
 ## Please register with a supply teaching agency now
 
 This will enable an agency to be ready to use you as soon as possible.
@@ -2482,4 +2480,6 @@ This will enable an agency to be ready to use you as soon as possible.
 
 Find a supply teaching agency near you from the list below, and contact the agency directly. This list of education supply agencies are part of the government framework and offer schools value for money.
 
-You can also contact other supply agencies you know of if they are not on the list. The agency will help you with what you need, for example updating your DBS.
+You can also contact other supply agencies you know of if they are not on the list. The agency will help you with what you need, for example updating your DBS. [Got questions? Find out more about supply teaching.](#find-out-more)
+
+----
