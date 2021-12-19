@@ -5,6 +5,8 @@ description: |-
   Find supply teaching agencies and help shape a life. Answer the urgent call
   for qualified teachers to support children and young people.
 article_classes: ['longform', 'fullwidth', 'urgent-call-for-qualified-teachers']
+before-content:
+  - content/urgent-call-for-qualified-teachers/preamble
 content:
   - content/urgent-call-for-qualified-teachers/list
   - content/urgent-call-for-qualified-teachers/faq
