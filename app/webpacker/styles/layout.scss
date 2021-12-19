@@ -93,14 +93,20 @@ section.container {
   // we forego the hero we want it to span both the article
   // and the aside.
   > header {
-    flex: 0 0 100%;
+    flex: 0 1 100%;
     max-width: $content-max-width;
     @include indent-left-and-right;
 
     h1 {
-
       @include font-size(xxlarge);
       margin-bottom: 3rem;
+      max-width: 30ch;
+
+      .subheading {
+        @include font-size(medium);
+
+        margin-top: .2em;
+      }
     }
 
     span.caption {

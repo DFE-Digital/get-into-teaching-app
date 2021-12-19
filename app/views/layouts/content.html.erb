@@ -16,7 +16,14 @@
               <%= tag.span(@front_matter["title_caption"], class: "caption") %>
             <% end %>
 
-            <%= tag.h1(@front_matter["heading"] || @front_matter["title"]) %>
+            <%= tag.h1 do %>
+              <%= @front_matter["heading"] || @front_matter["title"] %>
+
+              <% if @front_matter["subheading"].present? || @front_matter["subtitle"].present? %>
+                <%= tag.div(@front_matter["subheading"] || @front_matter["subtitle"], class: "subheading") %>
+              <% end %>
+            <% end %>
+
           </header>
         <% end %>
 
