@@ -2457,7 +2457,7 @@ agencies:
 
 ---
 
-## Are you a qualified teacher not currently working in the sector?
+## Be part of the national effort to support face-to-face education in schools and colleges in the New Year
 
 We are asking for your help to support your teaching colleagues and the nation's children and young people through this difficult time.
 
