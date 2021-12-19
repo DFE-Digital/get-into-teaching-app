@@ -101,6 +101,12 @@ section.container {
 
       @include font-size(xxlarge);
       margin-bottom: 3rem;
+
+      .subheading {
+        @include font-size(medium);
+
+        margin-top: .2em;
+      }
     }
 
     span.caption {

@@ -1,6 +1,7 @@
 ---
 title: Get back into the classroom and teach supply
 heading: Urgent call for qualified teachers
+subheading: Be part of the national effort to support face-to-face education in schools and colleges in the New Year
 description: |-
   Find supply teaching agencies and help shape a life. Answer the urgent call
   for qualified teachers to support children and young people.
