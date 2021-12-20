@@ -11,6 +11,7 @@ before-content:
 content:
   - content/urgent-call-for-qualified-teachers/list
   - content/urgent-call-for-qualified-teachers/faq
+meta_image: "media/images/calling-all-ex-teachers.jpg"
 keywords:
   - supply teaching
   - supply teaching agencies
