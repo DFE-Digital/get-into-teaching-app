@@ -81,24 +81,24 @@ describe EventsHelper, type: "helper" do
   describe "#can_sign_up_online?" do
     it "returns true for events with a web_feed_id that are not closed" do
       event = GetIntoTeachingApiClient::TeachingEvent.new(
-        webFeedId: "abc-123",
-        statusId: EventStatus.open_id,
+        web_feed_id: "abc-123",
+        status_id: EventStatus.open_id,
       )
       expect(can_sign_up_online?(event)).to be_truthy
     end
 
     it "returns false for events without a web_feed_id" do
       event = GetIntoTeachingApiClient::TeachingEvent.new(
-        webFeedId: nil,
-        statusId: EventStatus.open_id,
+        web_feed_id: nil,
+        status_id: EventStatus.open_id,
       )
       expect(can_sign_up_online?(event)).to be_falsy
     end
 
     it "returns false for closed events" do
       event = GetIntoTeachingApiClient::TeachingEvent.new(
-        webFeedId: "abc-123",
-        statusId: EventStatus.closed_id,
+        web_feed_id: "abc-123",
+        status_id: EventStatus.closed_id,
       )
       expect(can_sign_up_online?(event)).to be_falsy
     end

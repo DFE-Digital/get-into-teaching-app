@@ -58,8 +58,8 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-      eventId: event.id,
-      isVerified: false,
+      event_id: event.id,
+      is_verified: false,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:exchange_unverified_request_for_teaching_event_add_attendee).with(anything) { response }
@@ -170,9 +170,9 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-      eventId: event.id,
-      addressPostcode: "TE57 1NG",
-      addressTelephone: "1234567890",
+      event_id: event.id,
+      address_postcode: "TE57 1NG",
+      address_telephone: "1234567890",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:exchange_access_token_for_teaching_event_add_attendee).with("123456", anything).and_return(response)
@@ -262,9 +262,9 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-      eventId: event.id,
-      addressTelephone: nil,
-      alreadySubscribedToMailingList: true,
+      event_id: event.id,
+      address_telephone: nil,
+      already_subscribed_to_mailing_list: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:exchange_access_token_for_teaching_event_add_attendee).with("123456", anything).and_return(response)
@@ -307,9 +307,9 @@ RSpec.feature "Event wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-      eventId: event.id,
-      addressTelephone: nil,
-      alreadySubscribedToTeacherTrainingAdviser: true,
+      event_id: event.id,
+      address_telephone: nil,
+      already_subscribed_to_teacher_training_adviser: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:exchange_access_token_for_teaching_event_add_attendee).with("123456", anything).and_return(response)

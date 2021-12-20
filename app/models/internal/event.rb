@@ -73,7 +73,8 @@ module Internal
     end
 
     def to_api_event
-      hash = convert_attributes_for_api_model
+      attributes = *GetIntoTeachingApiClient::TeachingEvent.attribute_map.keys
+      hash = convert_attributes_for_api_model.slice(*attributes.map(&:to_s))
       api_event = GetIntoTeachingApiClient::TeachingEvent.new(hash)
       api_event.building = building.to_api_building if building.present?
       api_event

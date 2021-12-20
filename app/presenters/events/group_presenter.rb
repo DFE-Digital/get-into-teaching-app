@@ -63,8 +63,8 @@ module Events
       return events_by_type if combined_events.blank?
 
       combined_events_type = GetIntoTeachingApiClient::TeachingEventsByType.new(
-        typeId: EventType.train_to_teach_event_id,
-        teachingEvents: combined_events,
+        type_id: EventType.train_to_teach_event_id,
+        teaching_events: combined_events,
       )
 
       events_by_type

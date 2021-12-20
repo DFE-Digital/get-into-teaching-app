@@ -35,10 +35,10 @@ describe ApiModelConvertible do
   end
 
   describe "#convert_attributes_for_api_model" do
-    it "returns a hash of camel case attributes" do
+    it "returns a hash of attributes" do
       tester.type_id = "test"
       hash = tester.convert_attributes_for_api_model
-      expect(hash).to have_key("typeId")
+      expect(hash).to have_key("type_id")
     end
 
     it "only returns attributes that are present" do

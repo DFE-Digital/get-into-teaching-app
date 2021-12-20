@@ -40,7 +40,7 @@ describe Callbacks::Wizard do
   describe "#complete!" do
     let(:request) do
       GetIntoTeachingApiClient::GetIntoTeachingCallback.new(
-        email: "email@address.com", firstName: "John", lastName: "Doe", talkingPoints: "Something",
+        email: "email@address.com", first_name: "John", last_name: "Doe", talking_points: "Something",
       )
     end
 
@@ -57,7 +57,14 @@ describe Callbacks::Wizard do
     it { expect(store[uuid]).to eql({}) }
 
     it "logs the request model (filtering sensitive attributes)" do
-      filtered_json = { "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]", "talkingPoints" => "Something" }.to_json
+      filtered_json = {
+        "candidateId" => nil,
+        "email" => "[FILTERED]",
+        "firstName" => "[FILTERED]",
+        "lastName" => "[FILTERED]",
+        "talkingPoints" => "Something",
+      }.to_json
+
       expect(Rails.logger).to have_received(:info).with("Callbacks::Wizard#book_get_into_teaching_callback: #{filtered_json}")
     end
   end
@@ -65,7 +72,7 @@ describe Callbacks::Wizard do
   describe "#exchange_access_token" do
     let(:totp) { "123456" }
     let(:request) { GetIntoTeachingApiClient::ExistingCandidateRequest.new }
-    let(:response) { GetIntoTeachingApiClient::GetIntoTeachingCallback.new(candidateId: "123", email: "12345") }
+    let(:response) { GetIntoTeachingApiClient::GetIntoTeachingCallback.new(candidate_id: "123", email: "12345") }
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \

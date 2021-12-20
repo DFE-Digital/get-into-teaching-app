@@ -2,8 +2,6 @@ require "attribute_filter"
 
 module MailingList
   class Wizard < ::DFEWizard::Base
-    include ::Wizard::ApiClientSupport
-
     ATTRIBUTES_TO_LEAVE = %w[
       first_name
       last_name
@@ -66,17 +64,18 @@ module MailingList
     end
 
     def construct_export
-      export = export_camelized_hash
+      attributes = GetIntoTeachingApiClient::MailingListAddMember.attribute_map.keys
+      export = export_data.slice(*attributes.map(&:to_s))
 
       show_welcome_guide = ApplicationController.helpers.show_welcome_guide?(
-        export[:degreeStatusId],
-        export[:preferredTeachingSubjectId],
+        export["degree_status_id"],
+        export["preferred_teaching_subject_id"],
       )
 
       return export unless show_welcome_guide
 
       export.tap do |h|
-        h[:welcomeGuideVariant] = export_data.slice(
+        h[:welcome_guide_variant] = export_data.slice(
           "degree_status_id",
           "preferred_teaching_subject_id",
         ).to_query

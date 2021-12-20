@@ -73,13 +73,11 @@ describe EventStepsController, type: :request do
 
   describe "#show when skipping verification" do
     let(:step_path) { event_steps_path(readable_event_id, :authenticate, { skip_verification: true }) }
-    let(:camelized_identity_data) do
+    let(:identity_data) do
       {
-        candidateId: "abc123",
-        firstName: "John",
-        lastName: "Doe",
+        first_name: "John",
+        last_name: "Doe",
         email: "john@doe.com",
-        reference: "events_wizard-unverified",
       }
     end
 
@@ -87,12 +85,12 @@ describe EventStepsController, type: :request do
       allow_any_instance_of(Events::Steps::PersonalDetails).to \
         receive(:is_walk_in?).and_return(true)
       allow_any_instance_of(DFEWizard::Steps::Authenticate).to \
-        receive(:candidate_identity_data) { camelized_identity_data }
+        receive(:candidate_identity_data) { identity_data }
     end
 
     context "when a candidate was previously matched" do
-      let(:request) { GetIntoTeachingApiClient::ExistingCandidateRequest.new(camelized_identity_data) }
-      let(:response) { GetIntoTeachingApiClient::TeachingEventAddAttendee.new(camelized_identity_data) }
+      let(:request) { GetIntoTeachingApiClient::ExistingCandidateRequest.new(identity_data.merge({ reference: "events_wizard-unverified" })) }
+      let(:response) { GetIntoTeachingApiClient::TeachingEventAddAttendee.new(identity_data.merge({ candidate_id: "abc123" })) }
 
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
