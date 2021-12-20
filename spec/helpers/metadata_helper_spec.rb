@@ -24,15 +24,15 @@ describe MetadataHelper, type: "helper" do
 
   describe "#image_meta_tags" do
     it "returns nil when not given an image_path" do
-      expect(image_meta_tags(base_url: "https://example.com", image_path: "", alt: "")).to be_nil
+      expect(image_meta_tags(image_path: "", alt: "")).to be_nil
     end
 
     it "returns image/alt meta tags when given an image_path" do
-      tags = image_meta_tags(base_url: "https://example.com", image_path: "media/images/content/hero-images/0012.jpg", alt: "An image")
+      tags = image_meta_tags(image_path: "media/images/content/hero-images/0012.jpg", alt: "An image")
 
       expect(tags).to include(
         <<~HTML.chomp,
-          <meta name="og:image" content="https://example.com/packs-test/v1/media/images/content/hero-images/0012-cb6435a02b879e8df922882afba620a8.jpg">
+          <meta name="og:image" content="/packs-test/v1/media/images/content/hero-images/0012-cb6435a02b879e8df922882afba620a8.jpg">
         HTML
       )
 
@@ -41,6 +41,16 @@ describe MetadataHelper, type: "helper" do
           <meta name="og:image:alt" content="An image">
         HTML
       )
+    end
+
+    it "uses asset_pack_url internally" do
+      fake_host = "https://fake.com/123"
+
+      allow_any_instance_of(described_class).to receive(:asset_pack_url) { fake_host }
+
+      tags = image_meta_tags(image_path: "media/images/content/hero-images/0012.jpg", alt: "An image")
+
+      expect(tags).to match(fake_host)
     end
   end
 end
