@@ -935,7 +935,7 @@ agencies:
     phone: '0191 917 0400'
     address: Merchant House, 30 Cloth Market, Newcastle-upon-Tyne, NE1 1EE
   - name: Prospero Group Ltd
-    email: Ed Brewer <Ed@prosperorecruitment.com>
+    email: Ed@prosperorecruitment.com
     branch: Prospero Teaching Hull
     phone: '01482 428580'
     address: 1st floor Norwich House, Savile Street, Hull, HU1 3ES
@@ -1590,7 +1590,7 @@ agencies:
     phone: '0845 600 1234'
     address: 1st Floor, 13a The Broadway, Crawley, West Sussex, RH11 7AE
   - name: Reed Education
-    email: david.j.anderson@reed,com
+    email: david.j.anderson@reed.com
     branch: Brighton
     phone: 01273 554 427
     address: 132 Queens Road, Brighton, BN1 3WB
@@ -2071,7 +2071,7 @@ agencies:
     phone: 01242 244 549
     address: Trinity Passage, Worcester, Worcestershire, WR1 2PQ
   - name: Hoople Recruitment
-    email: Kelly Hughes
+    email:
     branch: Hereford
     phone: 01432 38378
     address: Plough Lane, Hereford, Herefordshire, HR4 0LE
@@ -2137,7 +2137,7 @@ agencies:
     phone: 01543 756 796
     address: Unit 10, City Arcade, Bore Street, Lichfield, Staffordshire, WS13 6LZ
   - name: justteachers
-    email: Mark.Little@justetachers.co.uk
+    email: Mark.Little@justteachers.co.uk
     branch: Midlands
     phone: 02476 463 555
     address: 8, Westwood House, Westwood Business Park, Coventry, West Midlands, CV4
@@ -2327,7 +2327,7 @@ agencies:
     phone: 01274 905150
     address: Malik House, Oakwood Court, City Road, Bradford, West Yorkshire, BD8 8JY
   - name: Prospero Group Ltd
-    email: Ed Brewer <Ed@prosperorecruitment.com>
+    email: Ed@prosperorecruitment.com
     branch: Prospero Teaching Leeds
     phone: '01138 872160'
     address: 2nd Floor, Princes Exchange, Princes Square, Leeds, LS1 4HY
@@ -2475,8 +2475,14 @@ Your time will be invaluable, whatever you can spare - whether it is one day a w
 
 This will enable an agency to be ready to use you as soon as possible.
 
-Find a supply teaching agency near you from the list below, and contact the agency directly. This list of education supply agencies are part of the government framework and offer schools value for money.
+You can use any supply teaching agency you choose. You might, for example, have
+worked through an agency before or know which agencies local schools use. 
 
-You can also contact other supply agencies you know of if they are not on the list. The agency will help you with what you need, for example updating your DBS.
+You can also find a supply teaching agency from the list below. These supply
+agencies are part of the government framework and offer schools value for
+money.
+
+Please contact agencies directly. They will help you with what you need, for
+example updating your DBS.
 
 [Got questions? Find out more about supply teaching.](#find-out-more)
