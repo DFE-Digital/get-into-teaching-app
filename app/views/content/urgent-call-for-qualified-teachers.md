@@ -2475,8 +2475,14 @@ Your time will be invaluable, whatever you can spare - whether it is one day a w
 
 This will enable an agency to be ready to use you as soon as possible.
 
-Find a supply teaching agency near you from the list below, and contact the agency directly. This list of education supply agencies are part of the government framework and offer schools value for money.
+You can use any supply teaching agency you choose. You might, for example, have
+worked through an agency before or know which agencies local schools use. 
 
-You can also contact other supply agencies you know of if they are not on the list. The agency will help you with what you need, for example updating your DBS.
+You can also find a supply teaching agency from the list below. These supply
+agencies are part of the government framework and offer schools value for
+money.
+
+Please contact agencies directly. They will help you with what you need, for
+example updating your DBS.
 
 [Got questions? Find out more about supply teaching.](#find-out-more)
