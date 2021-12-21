@@ -30,6 +30,12 @@ article.urgent-call-for-qualified-teachers {
   details + details {
     margin-top: 1em;
   }
+
+  .post-list-links {
+    margin-block: 3em;
+
+    a { display: inline; }
+  }
 }
 
 ul.agencies-toc {
