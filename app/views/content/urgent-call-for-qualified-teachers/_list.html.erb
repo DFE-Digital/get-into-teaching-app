@@ -48,10 +48,12 @@
             </div>
           <% end %>
 
-          <div>
-            <dt>Email:</dt>
-            <%= tag.dd(mail_to(a["email"])) %>
-          </div>
+          <% if a["email"].present? %>
+            <div>
+              <dt>Email:</dt>
+              <%= tag.dd(mail_to(a["email"])) %>
+            </div>
+          <% end %>
 
           <div>
             <dt>Address:</dt>
