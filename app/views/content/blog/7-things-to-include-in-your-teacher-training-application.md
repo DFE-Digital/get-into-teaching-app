@@ -25,7 +25,7 @@ _Not sure what to include in your teacher training application? Just think of th
 
 So you want to be a teacher — why? Were you taught by someone amazing? Do you love a specific subject? Do you want to give something back?
 
-Many people who join the teaching profession want to inspire the next generation in some way. However getting this across in your application and interview can be tricky. Remember that teacher training providers are looking for your potential to be a teacher, not just what you have already done. It is also really important to get across a feeling of positive energy about your goals and aspirations. Although different training providers will adopt different approaches to the interview process, all are looking for a self-motivated, passionate individual.
+Many people who join the teaching profession want to inspire the next generation in some way. However, getting this across in your application and interview can be tricky. Remember that teacher training providers are looking for your potential to be a teacher, not just what you have already done. It is also really important to get across a feeling of positive energy about your goals and aspirations. Although different training providers will adopt different approaches to the interview process, all are looking for a self-motivated, passionate individual.
 
 You can use the acronym TEACHER to help you present yourself at your very best in your application and interview.
 
