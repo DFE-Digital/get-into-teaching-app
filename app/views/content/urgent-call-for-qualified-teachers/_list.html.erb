@@ -41,15 +41,26 @@
             </div>
           <% end %>
 
-          <div>
-            <dt>Email:</dt>
-            <%= tag.dd(mail_to(a["email"])) %>
-          </div>
+          <% if a["website"].present? %>
+            <div>
+              <dt>Website:</dt>
+              <%= tag.dd(link_to(a["website"], a["website"])) %>
+            </div>
+          <% end %>
 
-          <div>
-            <dt>Address:</dt>
-            <%= tag.dd(a["address"]) %>
-          </div>
+          <% if a["email"].present? %>
+            <div>
+              <dt>Email:</dt>
+              <%= tag.dd(mail_to(a["email"])) %>
+            </div>
+          <% end %>
+
+          <% if a["address"].present? %>
+            <div>
+              <dt>Address:</dt>
+              <%= tag.dd(a["address"]) %>
+            </div>
+          <% end %>
         </dl>
       </li>
 
