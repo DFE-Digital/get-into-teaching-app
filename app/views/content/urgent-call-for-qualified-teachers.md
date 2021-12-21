@@ -2300,13 +2300,6 @@ agencies:
     phone: 01225 706726
     website: https://www.westcountryagency.co.uk/
     address: 1 Canon Square, Melksham, Wiltshire, SN12 6LX
-  Wales:
-  - name: Now Education Ltd
-    email: Kirsty.McLaughlin@noweducation.co.uk
-    branch: Cardiff
-    phone: '0292 274 7508'
-    website: https://noweducation.co.uk/
-    address: Now Education, 2nd Floor, Columbus Walk, Cardiff, Glamorgan,  CF10 4BY
   West Midlands:
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
