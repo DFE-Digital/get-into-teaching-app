@@ -57,6 +57,6 @@ Why are you passionate about joining the teaching profession? Come up with your 
 
 What have you found challenging and how did you deal with it? Find an example of a challenge you’ve overcome, and explain what you learnt and how you can apply this to future challenges.
 
-Have confidence in yourself and remember that training providers are on your side! We always enjoy reading about your experiences from school, family, jobs and volunteering, and look forward to meeting you at interview where you can demonstrate further how well-informed and interested you are in becoming a TEACHER.
+Have confidence in yourself and remember that training providers are on your side! We always enjoy reading about your experiences from school, family, jobs and volunteering. We look forward to meeting you at interview where you can show us how well-informed and interested you are in becoming a TEACHER.
 
 Whatever stage you’re at with your application, our expert advisers can help. [Sign up for a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/) who can give you free, one-to-one support.
