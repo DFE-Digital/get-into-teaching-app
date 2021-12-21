@@ -8,7 +8,7 @@ calls_to_action:
   bringit-report:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read the Bring it report summary
       file_path: media/documents/bringit-report.pdf
       file_type: PDF
       file_size: 258KB
@@ -16,7 +16,7 @@ calls_to_action:
   breakthrough-moments:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read the Breakthrough moments report summary
       file_path: media/documents/breakthrough-moments.pdf
       file_type: PDF
       file_size: 274KB
@@ -24,7 +24,7 @@ calls_to_action:
   my-favourite-subject:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read the My favourite subject report summary
       file_path: media/documents/my-favourite-subject.pdf
       file_type: PDF
       file_size: 266KB
@@ -32,7 +32,7 @@ calls_to_action:
   exploring-career-aspirations-in-the-wake-of-2020:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read the Decade dilemmas report summary
       file_path: media/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf
       file_type: PDF
       file_size: 754KB
@@ -40,7 +40,7 @@ calls_to_action:
   it-takes-you-to-teach:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read a summary of the career aspirations and what it takes to teach survey
       file_path: media/documents/it-takes-you-to-teach.pdf
       file_type: PDF
       file_size: 764KB
@@ -48,7 +48,7 @@ calls_to_action:
   thank-a-teacher:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read a summary of the appreciation for teachers survey
       file_path: media/documents/thank-a-teacher.pdf
       file_type: PDF
       file_size: 754KB
@@ -56,7 +56,7 @@ calls_to_action:
   millenial-career-crossroads:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read the Millennial Career Crossroads report summary
       file_path: media/documents/millenial-career-crossroads.pdf
       file_type: PDF
       file_size: 752KB
@@ -64,7 +64,7 @@ calls_to_action:
   career-conundrum:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read a summary of the career change conundrum survey
       file_path: media/documents/career-conundrum.pdf
       file_type: PDF
       file_size: 460KB
@@ -72,7 +72,7 @@ calls_to_action:
   career-change-research:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read a summary of the switching careers survey
       file_path: media/documents/career-change-research.pdf
       file_type: PDF
       file_size: 450KB
@@ -80,7 +80,7 @@ calls_to_action:
   perceptions-of-influence:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read a summary of the perceptions of influence survey
       file_path: media/documents/perceptions-of-influence.pdf
       file_type: PDF
       file_size: 450KB
@@ -88,7 +88,7 @@ calls_to_action:
   career-survey-summary:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read a summary of the careers survey
       file_path: media/documents/career-survey-summary.pdf
       file_type: PDF
       file_size: 424KB
@@ -97,7 +97,7 @@ calls_to_action:
   soft-messaging:
     name: attachment
     arguments:
-      text: Read the summary of findings
+      text: Read a summary of the soft messaging survey
       file_path: media/documents/soft-messaging.pdf
       file_type: PDF
       file_size: 459KB 
