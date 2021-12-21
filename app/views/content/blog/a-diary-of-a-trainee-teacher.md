@@ -22,9 +22,11 @@ tags:
 closing_paragraph: enriching-the-lives-of-young-people
 ---
 
+$mel_oconnor$
+
 Mel recently started a Postgraduate Diploma in Education (PGDE) teacher training course in maths with the Sheffield Teacher Training Alliance and the University of Sheffield. She kept a diary of her first days on the course.
 
-$mel_oconnor$
+## Choosing teaching
 
 I completed my undergraduate degree in Business in 2014. Since then, I have worked in the technology industry in a range of product and customer facing roles. I’d always loved being in the school environment and took advantage of various work experience and school-based roles during my time at university. 
 
