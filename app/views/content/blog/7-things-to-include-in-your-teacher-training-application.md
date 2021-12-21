@@ -39,7 +39,7 @@ Why do you want to become a teacher? Consider the experiences that have inspired
 
 ## Aptitude
 
-What skills do you have that will make you a good teacher? Think about the qualities your favourite teachers have and research the classroom practice of being a great teacher.
+What skills do you have that will make you a good teacher? Think about the qualities your favourite teachers had and research the classroom practice of being a great teacher.
 
 ## Collaboration
 
