@@ -55,10 +55,12 @@
             </div>
           <% end %>
 
-          <div>
-            <dt>Address:</dt>
-            <%= tag.dd(a["address"]) %>
-          </div>
+          <% if a["address"].present? %>
+            <div>
+              <dt>Address:</dt>
+              <%= tag.dd(a["address"]) %>
+            </div>
+          <% end %>
         </dl>
       </li>
 
