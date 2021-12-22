@@ -1,7 +1,7 @@
 ---
 title: Get back into the classroom and teach supply
 heading: Urgent call for qualified teachers
-subheading: Be part of the national effort to support face-to-face education in schools and colleges in the New Year
+subheading: Be part of the national effort to support face-to-face education in schools and colleges
 description: |-
   Find supply teaching agencies and help shape a life. Answer the urgent call
   for qualified teachers to support children and young people.
@@ -2956,7 +2956,7 @@ agencies:
 Are you a qualified teacher not currently working in the sector?
 We are asking for your help to support your teaching colleagues and the nation's children and young people through this difficult time.
 
-Covid continues to impact schools and colleges in England. We want to make sure that as many supply staff as possible are available in the new year.
+Covid continues to impact schools and colleges in England. We want to make sure that as many supply staff as possible are available.
 
 ## Who can help?
 
