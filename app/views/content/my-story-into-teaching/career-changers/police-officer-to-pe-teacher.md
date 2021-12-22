@@ -1,7 +1,7 @@
 ---
 layout: "layouts/stories/story"
 title: "Police officer to PE teacher (primary)"
-image: "media/images/content/victoria.jpg"
+image: "media/images/content/stories/stories-victoria.jpg"
 backlink: "./"
 backlink_text: Career changers' stories
 story:

@@ -13,7 +13,7 @@ hide_page_helpful_question: true
 navigation: 35
 fullwidth: true
 featured_page:
-  image: media/images/content/a-day-in-the-life-of-a-teacher.jpg
+  image: media/images/content/stories/a-day-in-the-life-of-a-teacher.jpg
   heading: Day in the life of a teacher
   subheading: “Every day is so different”
   text: >
