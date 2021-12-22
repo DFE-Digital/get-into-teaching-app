@@ -161,6 +161,12 @@ agencies:
     website: https://www.hays.com/
     address: 2nd Floor Alan House, 5 Clumber Street, Nottingham, Nottinghamshire, NG1
       3ED
+  - name: Just Teachers
+    email: Peterborough@justteachers.co.uk
+    branch: Cambridgeshire, Lincolnshire, Nottingham Norfolk
+    phone: 01775 233116
+    website: https://www.justteachers.co.uk/
+    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
   - name: Mana Education
     email: Kelly@manaeducation.co.uk
     branch: Leicestershire
@@ -288,12 +294,6 @@ agencies:
     phone: 01604 386800
     website: https://www.visionforeducation.co.uk/
     address: 400 Pavillion Drive, Northampton, East Midlands, NN4 7PA
-  - name: justteachers
-    email: Peterborough@justteachers.co.uk
-    branch: Cambridgeshire, Lincolnshire, Nottingham Norfolk
-    phone: 01775 233116
-    website: https://www.justteachers.co.uk/
-    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
   East of England:
   - name: 4myschools
     email: info@4myschools.org
@@ -403,6 +403,12 @@ agencies:
     phone: 01522 313 301
     website: https://www.hays.com/
     address: 1 Prince of Wales Road, Norwich, Norfolk, NR1 1BD
+  - name: Just Teachers
+    email: Peterborough@justteachers.co.uk
+    branch: Cambridgeshire, Lincolnshire, Nottingham Norfolk
+    phone: 01775 233116
+    website: https://www.justteachers.co.uk/
+    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
   - name: Key Education Services Ltd
     email: sam.dyson@key-education.co.uk
     branch: East of England
@@ -551,16 +557,10 @@ agencies:
     website: https://www.visionforeducation.co.uk/
     address: Unit 2, Forward House,, Aston Business Park, Shrewsbury Avenue, Peterborough,
       Cambridgeshire, PE2 7BX
-  - name: justteachers
-    email: Peterborough@justteachers.co.uk
-    branch: Cambridgeshire, Lincolnshire, Nottingham Norfolk
-    phone: 01775 233116
-    website: https://www.justteachers.co.uk/
-    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
   Greater London:
   - name: 3D Recruit
     email: education@3drecruit.com
-    branch: 3D Recruit Central
+    branch: 3D Recruit South
     phone: '01296 826 120'
     website: https://www.3drecruit.com/
     address: Regent House, Mitre Way, Battle, East Sussex, TN33 0TE
@@ -1405,6 +1405,18 @@ agencies:
     phone: '01942 303 992'
     website: https://www.hays.com/
     address: Part 2nd Floor, Elizabeth House, Wigan, Greater Manchester, WN3 4EX
+  - name: Just Teachers
+    email: Northwest@justteachers.co.uk
+    branch: Greater Manchester
+    phone: 0161 850 0310
+    website: https://www.justteachers.co.uk/
+    address: New Maxdov House, 130 Bury New Road, Prestwich, Manchester, M25 0AA
+  - name: Just Teachers
+    email: lancashire@justteachers.co.uk
+    branch: Lancashire
+    phone: 01756 243125
+    website: https://www.justteachers.co.uk/
+    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
   - name: M2 Education Ltd
     email: mark.birnie@m2education.co.uk
     branch: Preston
@@ -1593,22 +1605,10 @@ agencies:
     website: https://www.zeneducate.com/
     address: Accelerate Manchester, 101 Princess Street, Manchester, Greater Manchester,
       M1 6DD
-  - name: justteachers
-    email: Northwest@justteachers.co.uk
-    branch: Greater Manchester
-    phone: 0161 850 0310
-    website: https://www.justteachers.co.uk/
-    address: New Maxdov House, 130 Bury New Road, Prestwich, Manchester, M25 0AA
-  - name: justteachers
-    email: lancashire@justteachers.co.uk
-    branch: Lancashire
-    phone: 01756 243125
-    website: https://www.justteachers.co.uk/
-    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
   South East:
   - name: 3D Recruit
     email: education@3drecruit.com
-    branch: 3D Recruit Central
+    branch: 3D Recruit South
     phone: '01296 826 120'
     website: https://www.3drecruit.com/
     address: Regent House, Mitre Way, Battle, East Sussex, TN33 0TE
@@ -1753,6 +1753,12 @@ agencies:
     phone: '0118 955 0600'
     website: https://www.coyles.co.uk/
     address: 118-128 London Street, Reading, Berkshire, RG1 4SJ
+  - name: Edison Pope Ltd.
+    email: hello@edisonpope.com
+    branch: London
+    phone: 0161 9145738
+    website:
+    address: 85 Great Portland Street, First Floor, London, W1W 7LT
   - name: Educationline Limited
     email: steve@educationlinerecruitment.co.uk; stuart@educationlinerecruitment.co.uk;
       james@educationlinerecruitment.co.uk; alex@educationlinerecruitment.co.uk
@@ -2506,6 +2512,13 @@ agencies:
     phone: 01432 38378
     website: https://www.hoopleltd.co.uk/
     address: Plough Lane, Hereford, Herefordshire, HR4 0LE
+  - name: Just Teachers
+    email: Coventry@justteachers.co.uk
+    branch: Midlands
+    phone: 02476 463 555
+    website: https://www.justteachers.co.uk/
+    address: 8, Westwood House, Westwood Business Park, Coventry, West Midlands, CV4
+      8HS
   - name: LB Education Services Limited (t/a Class People)
     email: admin@classpeople.co.uk
     branch: Worcestershire
@@ -2578,13 +2591,6 @@ agencies:
     phone: 01543 756 796
     website: https://www.zesteducation.co.uk/
     address: Unit 10, City Arcade, Bore Street, Lichfield, Staffordshire, WS13 6LZ
-  - name: justteachers
-    email: Coventry@justteachers.co.uk
-    branch: Midlands
-    phone: 02476 463 555
-    website: https://www.justteachers.co.uk/
-    address: 8, Westwood House, Westwood Business Park, Coventry, West Midlands, CV4
-      8HS
   Yorkshire and the Humber:
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
@@ -2758,6 +2764,18 @@ agencies:
     phone: 0113 200 3710
     website: https://www.hays.com/
     address: 8a Coney Street, York, North Yorkshire, YO1 9NA
+  - name: Just Teachers
+    email: Peterborough@justteachers.co.uk
+    branch: Cambridgeshire, Lincolnshire, Nottingham Norfolk
+    phone: 01775 233116
+    website: https://www.justteachers.co.uk/
+    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
+  - name: Just Teachers
+    email: Helen.Gibbons@justteachers.co.uk
+    branch: Yorkshire
+    phone: 01274 905440
+    website: https://www.justteachers.co.uk/
+    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
   - name: MasterClass Education LTD
     email: yorkshire@mcegroup.co.uk
     branch: Barnsley
@@ -2938,18 +2956,6 @@ agencies:
     phone: '01904 481800'
     website: https://www.yorkshire-education.co.uk/
     address: The Steading, Holtby Manor, York, North Yorkshire, YO19 5LL
-  - name: justteachers
-    email: Peterborough@justteachers.co.uk
-    branch: Cambridgeshire, Lincolnshire, Nottingham Norfolk
-    phone: 01775 233116
-    website: https://www.justteachers.co.uk/
-    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
-  - name: justteachers
-    email: Helen.Gibbons@justteachers.co.uk
-    branch: Yorkshire
-    phone: 01274 905440
-    website: https://www.justteachers.co.uk/
-    address: High Corn Mill, Chapel Hill, Skipton, North Yorkshire, BD23 1NL
 
 ---
 
