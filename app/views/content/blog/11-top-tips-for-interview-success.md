@@ -23,8 +23,6 @@ closing_paragraph: enriching-the-lives-of-young-people
 
 $interview$
 
-Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). She interviews applicants and assesses their potential to become successful classroom professionals. She believes the key to receiving and offer for a training place lies in effective interview preparation.
-
 ## 1. Pre-interview 
 
 Confirm your attendance to any interview invitation and pay attention to what is being asked of you on the day. Interview formats can vary. If in doubt, make a phone call to the provider to ask for clarification.
@@ -76,3 +74,7 @@ Remember that you are ‘on show’ for the entire interview. Many providers int
 …get a good night’s sleep the night before, eat well and stay hydrated on the day. Breathe, stay calm, be confident and positive. Above all enjoy the enriching experience of interview. Your teacher training journey is about to begin!
 
 Good luck everyone!
+
+## About the author
+
+Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). She interviews applicants and assesses their potential to become successful classroom professionals. She believes the key to receiving and offer for a training place lies in effective interview preparation.

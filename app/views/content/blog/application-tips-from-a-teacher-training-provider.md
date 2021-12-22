@@ -19,8 +19,6 @@ tags:
   - personal statements
 ---
 
-Michelle Borders works for the Community Academies Trust Institute of Education (CAT IoE). Michelle has recruited trainee teachers for eight years for schools across the Midlands and chairs the regional hub for School Direct lead schools who are located in Coventry, Warwickshire and Solihull. She regularly shares advice on the [Aspiring Teacher Forum on Facebook](https://www.facebook.com/groups/1357146377672255). The CAT IoE is also a national Subject Knowledge Enhancement (SKE) provider.
-
 $rocket$
 
 It’s important to make an excellent first impression if you want to secure that interview, and time spent on a well-thought-out application is never wasted.
@@ -62,5 +60,9 @@ Whoever you choose, you should contact your references before you start writing 
 The good news is that as soon as you press the Submit button on your application then it will appear in your chosen providers’ inbox. Please do not expect an instant response, particularly if you are applying for School Direct places, as the lead school who handles the application process on behalf of a partnership may have to contact your chosen school and wait for them to consider your application and set up an interview. This can take some time to organise, particularly when some schools have two-week timetables.
 
 Please be patient and do attend all of your interviews, if you have been offered them, before making any final decisions. You never know – your first choice of school may not be your best choice and one of your other choices may prove to be a better fit for you.
+
+## About the author
+
+Michelle Borders works for the Community Academies Trust Institute of Education (CAT IoE). Michelle has recruited trainee teachers for eight years for schools across the Midlands and chairs the regional hub for School Direct lead schools who are located in Coventry, Warwickshire and Solihull. She regularly shares advice on the [Aspiring Teacher Forum on Facebook](https://www.facebook.com/groups/1357146377672255). The CAT IoE is also a national Subject Knowledge Enhancement (SKE) provider.
 
 If you have questions about the different routes into teaching and specific queries about your own application, you should sign up for a [Teacher Training Adviser.](https://adviser-getintoteaching.education.gov.uk/) These advisers are teaching experts who are able to provide you with personalised assistance.
