@@ -169,24 +169,15 @@ main.home {
 
   &__content {
     color: $fg;
-    display: flex;
-    gap: 2em;
-    flex-direction: column;
     padding: 1em;
-    margin: .4em auto;
-    max-width: 50em;
+    margin-block: .4em;
 
     @include mq($from: tablet) {
-      gap: 4em;
-      padding: .5em;
-      align-items: center;
-      flex-direction: row;
+      text-align: center;
     }
   }
 
   &__text {
-    flex: 1 0;
-
     font-weight: bold;
 
     a {
