@@ -119,7 +119,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.9.3)
       msgpack (~> 1.0)
-    brakeman (5.1.2)
+    brakeman (5.2.0)
     builder (3.2.4)
     byebug (11.1.3)
     canonical-rails (0.2.13)
@@ -511,7 +511,7 @@ DEPENDENCIES
   amazing_print
   better_html (>= 1.0.16)
   bootsnap (>= 1.9.3)
-  brakeman (~> 5.1.2)
+  brakeman (~> 5.2.0)
   byebug
   canonical-rails (>= 0.2.13)
   capybara (~> 3.36, >= 3.36.0)
