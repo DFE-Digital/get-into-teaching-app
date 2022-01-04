@@ -49,6 +49,7 @@ describe HeaderComponent, type: "component" do
 
   context "when content is added above the hero" do
     let(:above_hero_content) { "some above hero content" }
+
     subject! do
       render_inline(described_class.new) do |component|
         component.above_hero { above_hero_content }

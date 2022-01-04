@@ -162,10 +162,13 @@ main.home {
 
 .urgent-call-for-qualified-teachers-cta {
   margin-block: .2em;
-  background: $black;
+  $bg: $black;
+  $fg: $white;
+
+  background: $bg;
 
   &__content {
-    color: white;
+    color: $fg;
     display: flex;
     gap: 2em;
     flex-direction: column;
@@ -183,9 +186,18 @@ main.home {
 
   &__text {
     flex: 1 0;
-    p {
-      @include font-size('small');
-      margin: 0;
+
+    font-weight: bold;
+
+    a {
+      color: $fg;
+      text-decoration: underline;
+      text-underline-offset: .3em;
+      text-decoration-thickness: .1em;
+
+      &:focus {
+        color: $black;
+      }
     }
   }
 }
