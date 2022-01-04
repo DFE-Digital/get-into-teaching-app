@@ -66,7 +66,7 @@ gem "actionpack-page_caching", ">= 1.2.4"
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
-gem "logger", ">= 1.4.4"
+gem "logger", ">= 1.5.0"
 gem "matrix", ">= 0.4.2"
 gem "observer", ">= 0.1.0"
 gem "rexml", ">= 3.2.5"

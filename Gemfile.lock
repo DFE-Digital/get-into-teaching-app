@@ -260,7 +260,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     loaf (0.10.0)
       railties (>= 3.2)
-    logger (1.4.4)
+    logger (1.5.0)
     loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -534,7 +534,7 @@ DEPENDENCIES
   kramdown (>= 2.3.1)
   listen (~> 3.7.0)
   loaf (>= 0.10.0)
-  logger (>= 1.4.4)
+  logger (>= 1.5.0)
   matrix (>= 0.4.2)
   mdl
   observer (>= 0.1.0)
