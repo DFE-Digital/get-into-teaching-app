@@ -159,3 +159,33 @@ main.home {
     &__cta { grid-area: 4 / 1 / 5 / 2; }
   }
 }
+
+.urgent-call-for-qualified-teachers-cta {
+  margin-block: .2em;
+  background: $black;
+
+  &__content {
+    color: white;
+    display: flex;
+    gap: 2em;
+    flex-direction: column;
+    padding: 1em;
+    margin: .4em auto;
+    max-width: 50em;
+
+    @include mq($from: tablet) {
+      gap: 4em;
+      padding: .5em;
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+  &__text {
+    flex: 1 0;
+    p {
+      @include font-size('small');
+      margin: 0;
+    }
+  }
+}

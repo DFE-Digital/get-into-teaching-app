@@ -1,5 +1,6 @@
 class HeaderComponent < ViewComponent::Base
   renders_one :hero, Header::HeroComponent
+  renders_one :above_hero
 
   attr_reader :breadcrumbs
 
