@@ -39,7 +39,7 @@ We've also made the service text as simple as possible to understand.
 
 For advice on making your device easier to use if you have a disability visit [AbilityNet](https://mcmw.abilitynet.org.uk/).
 
-You can also find advice on GOV.UK at [Accessibility](https://www.gov.uk/help/accessibility).
+You can also find [accessibility advice on GOV.UK](https://www.gov.uk/help/accessibility).
 
 ## Service accessibility
 
