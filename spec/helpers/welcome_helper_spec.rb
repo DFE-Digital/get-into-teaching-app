@@ -20,34 +20,34 @@ RSpec.describe WelcomeHelper, type: :helper do
 
   describe "#show_welcome_guide?" do
     context "when degree_status is second year" do
-      let(:second_year) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Second year"] }
+      let(:second_year) { OptionSet.lookup_by_key(:degree_status, :second_year) }
 
       it { expect(show_welcome_guide?(second_year)).to be false }
     end
 
     context "when degree_status is final year" do
-      let(:final_year) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"] }
+      let(:final_year) { OptionSet.lookup_by_key(:degree_status, :final_year) }
 
       it { expect(show_welcome_guide?(final_year)).to be true }
     end
 
     context "when degree_status is 'graduate or postgraduate'" do
-      let(:graduate) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Graduate or postgraduate"] }
+      let(:graduate) { OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate) }
 
       context "when consideration journey stage is 'it's just an idea'" do
-        let(:just_an_idea) { GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["It’s just an idea"] }
+        let(:just_an_idea) { OptionSet.lookup_by_key(:consideration_journey_stage, :it_s_just_an_idea) }
 
         it { expect(show_welcome_guide?(graduate, just_an_idea)).to be true }
       end
 
       context "when consideration journey stage is 'I’m not sure and finding out more'" do
-        let(:finding_out_more) { GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m not sure and finding out more"] }
+        let(:finding_out_more) { OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_not_sure_and_finding_out_more) }
 
         it { expect(show_welcome_guide?(graduate, finding_out_more)).to be true }
       end
 
       context "when consideration journey stage is 'I’m fairly sure and exploring my options'" do
-        let(:fairly_sure) { GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m fairly sure and exploring my options"] }
+        let(:fairly_sure) { OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_fairly_sure_and_exploring_my_options) }
 
         it { expect(show_welcome_guide?(graduate, fairly_sure)).to be false }
       end

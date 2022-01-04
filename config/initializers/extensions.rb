@@ -1,1 +1,0 @@
-require "extensions/get_into_teaching_api_client/constants"

@@ -9,7 +9,7 @@ describe MailingList::Steps::Name do
   end
 
   let(:channels) do
-    GetIntoTeachingApiClient::Constants::CANDIDATE_MAILING_LIST_SUBSCRIPTION_CHANNELS.map do |k, v|
+    OptionSet::MAILING_LIST_CHANNELS.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end

@@ -4,7 +4,7 @@ describe MailingList::Wizard do
   subject { described_class.new wizardstore, "privacy_policy" }
 
   let(:uuid) { SecureRandom.uuid }
-  let(:degree_status_id) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"] }
+  let(:degree_status_id) { OptionSet.lookup_by_key(:degree_status, :final_year) }
   let(:store) do
     { uuid => {
       "email" => "email@address.com",
@@ -91,7 +91,7 @@ describe MailingList::Wizard do
     end
 
     context "when not qualified for the welcome guide" do
-      let(:degree_status_id) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["First year"] }
+      let(:degree_status_id) { OptionSet.lookup_by_key(:degree_status, :first_year) }
       let(:variant) { nil }
 
       it "does not populate the welcome_guide_variant field" do

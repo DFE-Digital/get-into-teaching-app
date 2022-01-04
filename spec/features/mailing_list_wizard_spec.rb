@@ -24,7 +24,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
-    choose "I’m not sure and finding out more"
+    choose "I'm not sure and finding out more"
     click_on "Next step"
 
     expect(page).to have_text "Which subject do you want to teach"
@@ -65,7 +65,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
-    choose "I’m not sure and finding out more"
+    choose "I'm not sure and finding out more"
     click_on "Next step"
 
     expect(page).to have_text "Which subject do you want to teach"
@@ -97,8 +97,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
       preferredTeachingSubjectId: TeachingSubject.lookup_by_key(:maths),
-      considerationJourneyStageId: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m very sure and think I’ll apply"],
-      degreeStatusId: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"],
+      considerationJourneyStageId: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
+      degreeStatusId: OptionSet.lookup_by_key(:degree_status, :final_year),
       addressPostcode: "TE57 1NG",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
@@ -230,8 +230,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
       firstName: "Test",
       lastName: "User",
       email: "test@user.com",
-      considerationJourneyStageId: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m very sure and think I’ll apply"],
-      degreeStatusId: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"],
+      considerationJourneyStageId: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
+      degreeStatusId: OptionSet.lookup_by_key(:degree_status, :final_year),
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }
