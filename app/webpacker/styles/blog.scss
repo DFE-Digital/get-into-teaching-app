@@ -9,6 +9,9 @@
 
       img {
         width: 170px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        object-position: center;
       }
     }
   }
@@ -110,6 +113,14 @@
       border-left: .4em solid $grey-mid;
       padding: .5em 0 .5em 1em;
       margin-top: 2.5em;
+    }
+
+    img {
+      aspect-ratio: 4 / 3;
+      max-width: 100%;
+      object-position: center;
+      width: fit-content;
+      object-fit: cover;
     }
   }
 

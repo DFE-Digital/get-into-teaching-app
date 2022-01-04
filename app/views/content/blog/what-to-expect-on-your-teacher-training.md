@@ -23,8 +23,6 @@ closing_paragraph: enriching-the-lives-of-young-people
 
 $seminar_room$
 
-_Jan Ashbridge is a Principal Lecturer with responsibility for primary PGCE at the University of Cumbria. She has particular expertise in early literacy and systematic synthetic phonics._
-
 A university-based PGCE year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. It is also a busy one!
 
 ## How is the course delivered?
@@ -46,3 +44,7 @@ You will usually be assessed through essays. The content of these will be linked
 ## Is a PGCE manageable if I have a family?
 
 Many of our students train to teach later in life, either because they’ve had a career break to look after children or because they want a change of direction. This means that you’ll have plenty of support from people facing similar challenges. You’ll also be assigned a personal tutor who can provide academic, professional and pastoral support.
+
+## About the author
+
+Jan Ashbridge is a Principal Lecturer with responsibility for primary PGCE at the University of Cumbria. She has particular expertise in early literacy and systematic synthetic phonics.
