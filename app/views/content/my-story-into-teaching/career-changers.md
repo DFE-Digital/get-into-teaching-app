@@ -62,7 +62,7 @@ stories:
   - name: Karen
     snippet: Swapping senior management for students
     video: https://www.youtube.com/watch?v=riY-1DUkLVk
-    image: media/images/content/stories-karen.jpg
+    image: media/images/content/stories/stories-karen.jpg
     image_description: Photograph of languages teacher Karen Roberts
     link: /my-story-into-teaching/career-changers/swapping-senior-management-for-students
   - name: Luke

@@ -156,7 +156,7 @@ private
 
   def image
     {
-      image: "media/images/featured-3.jpg",
+      image: "media/images/homepage/science-teacher.jpg",
     }
   end
 
