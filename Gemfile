@@ -58,7 +58,7 @@ gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teachi
 gem "redis"
 
 gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.46.0"
+gem "view_component", "~> 2.47.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -66,7 +66,7 @@ gem "actionpack-page_caching", ">= 1.2.4"
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
-gem "logger", ">= 1.4.4"
+gem "logger", ">= 1.5.0"
 gem "matrix", ">= 0.4.2"
 gem "observer", ">= 0.1.0"
 gem "rexml", ">= 3.2.5"
@@ -93,7 +93,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 4.2.0"
 
   # Static security scanner
-  gem "brakeman", "~> 5.1.2", require: false
+  gem "brakeman", "~> 5.2.0", require: false
 
   # Debugging
   gem "pry-byebug"
@@ -133,7 +133,7 @@ group :rolling, :preprod, :userresearch, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"
-  gem "rails_semantic_logger", ">= 4.6.1"
+  gem "rails_semantic_logger", ">= 4.9.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
