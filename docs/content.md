@@ -254,6 +254,12 @@ The first image (`an_image` in the above example) will be displayed at the top o
 
 Ideally you should also provide a `thumbnail_path` for the first image; this should be as close to `340px x 260px` as possible. If a `thumbnail_path` is not provided the `path` image will be used and scaled-down to display at a width of `170px` (maintaining the image aspect ratio - thumbnail images should be `340px` wide to look clear on retina devices).
 
+### Content
+
+Introduction paragraphs (where used) should go underneath the first image rather than above it. Use normal text rather than italics for the introduction paragraph as this is better for accessibility. If it is necessary to separate this introduction paragraph from subsequent paragraphs, you can use a heading.
+
+Biographical information about the author should go at the end of the article above the footer, with a heading of 'About the author'.
+
 ### Footers
 
 The final paragraph in each blog post will be formatted so it stands out from the rest. It's intended to be used as a closing or summary paragrah that directs users on which step to take next if the post has inspired them. To reduce duplication there is a collection of generic ones listed in `app/views/blog/closing-paragraphs`.
