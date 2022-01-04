@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/DFE-Digital/dfe_wizard.git
-  revision: 008d5208bca4f3969aaa1cae259596813dd75083
+  revision: 68278550c0a4771300d697e845ed213e58921009
   branch: main
   specs:
     dfe_wizard (1.0.0)
@@ -119,7 +119,7 @@ GEM
     bindex (0.8.1)
     bootsnap (1.9.3)
       msgpack (~> 1.0)
-    brakeman (5.1.2)
+    brakeman (5.2.0)
     builder (3.2.4)
     byebug (11.1.3)
     canonical-rails (0.2.13)
@@ -260,7 +260,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     loaf (0.10.0)
       railties (>= 3.2)
-    logger (1.4.4)
+    logger (1.5.0)
     loofah (2.13.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -278,7 +278,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.1)
     mini_portile2 (2.6.1)
-    minitest (5.14.4)
+    minitest (5.15.0)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
       tomlrb
@@ -343,10 +343,10 @@ GEM
       nokogiri (>= 1.6)
     rails-html-sanitizer (1.4.2)
       loofah (~> 2.3)
-    rails_semantic_logger (4.6.1)
+    rails_semantic_logger (4.9.0)
       rack
-      railties (>= 3.2)
-      semantic_logger (~> 4.8)
+      railties (>= 5.1)
+      semantic_logger (~> 4.9)
     railties (6.1.4.1)
       actionpack (= 6.1.4.1)
       activesupport (= 6.1.4.1)
@@ -423,7 +423,7 @@ GEM
     selenium-webdriver (3.142.7)
       childprocess (>= 0.5, < 4.0)
       rubyzip (>= 1.2.2)
-    semantic_logger (4.8.2)
+    semantic_logger (4.9.0)
       concurrent-ruby (~> 1.0)
     semantic_range (3.0.0)
     sentry-rails (4.8.1)
@@ -436,7 +436,7 @@ GEM
     sentry-ruby-core (4.8.1)
       concurrent-ruby
       faraday
-    shoulda-matchers (5.0.0)
+    shoulda-matchers (5.1.0)
       activesupport (>= 5.2.0)
     signet (0.15.0)
       addressable (~> 2.3)
@@ -498,7 +498,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.5.1)
+    zeitwerk (2.5.3)
 
 PLATFORMS
   ruby
@@ -511,7 +511,7 @@ DEPENDENCIES
   amazing_print
   better_html (>= 1.0.16)
   bootsnap (>= 1.9.3)
-  brakeman (~> 5.1.2)
+  brakeman (~> 5.2.0)
   byebug
   canonical-rails (>= 0.2.13)
   capybara (~> 3.36, >= 3.36.0)
@@ -534,7 +534,7 @@ DEPENDENCIES
   kramdown (>= 2.3.1)
   listen (~> 3.7.0)
   loaf (>= 0.10.0)
-  logger (>= 1.4.4)
+  logger (>= 1.5.0)
   matrix (>= 0.4.2)
   mdl
   observer (>= 0.1.0)
@@ -546,7 +546,7 @@ DEPENDENCIES
   rack-attack
   rack-host-redirect
   rails (~> 6.1.4.1)
-  rails_semantic_logger (>= 4.6.1)
+  rails_semantic_logger (>= 4.9.0)
   redis
   rexml (>= 3.2.5)
   rinku
