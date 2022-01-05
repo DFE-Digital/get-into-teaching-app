@@ -199,18 +199,6 @@ agencies:
     phone: 0116 216 8186
     website: https://noweducation.co.uk/
     address: Rutland House,, 23-25 Friar Lane, Leicester, Leicestershire, LE1 5QQ
-  - name: Protocol t/a Teaching Force
-    email: sevans@protocol.co.uk
-    branch: Head Office
-    phone: 0115 911 1100
-    website: https://www.protocol.co.uk/
-    address: The Point, Welbeck Road, Nottingham, Nottinghamshire, NG2 7QW
-  - name: Protocol t/a Teaching Force
-    email: dgiddings@protocol.co.uk
-    branch: Stamford
-    phone: 0115 9775532
-    website: https://www.protocol.co.uk/
-    address: Stamford College, Drift Road, Stamford, Lincolnshire, PE9 1XA
   - name: Provide Education Ltd
     email: eastmids@provide-education.co.uk
     branch: East Midlands
@@ -514,12 +502,11 @@ agencies:
     website: https://www.stepteachers.co.uk/
     address: 7 Chalk Hill House, 19 Rosary Road, Norwich, Norfolk, NR1 1SZ
   - name: Step Teachers Ltd
-    email: bradleyg@stepteachers.co.uk
+    email: kierena@stepteachers.co.uk
     branch: Hertfordshire
-    phone: '01438 525830'
+    phone: '01707 527430 '
     website: https://www.stepteachers.co.uk/
-    address: Business and Technology Centre, Bessemer Drive, Stevenage, Hertfordshire,
-      SG1 2DX
+    address: 2 Mountview Court, Bessemer Drive, Stevenage, Hertfordshire, SG1 2DX
   - name: Strategy Education Ltd
     email: lorraine@strategyeducation.co.uk
     branch: Head Office
@@ -818,18 +805,6 @@ agencies:
     phone: 0203 912 6450
     website: https://prosperoteaching.com/
     address: Saunders House, 52 - 53 The Mall, London, W5 3TA
-  - name: Protocol t/a Teaching Force
-    email: cschofield@protocol.co.uk
-    branch: London
-    phone: 0115 9111124
-    website: https://www.protocol.co.uk/
-    address: CTB, West London College, Bloomsbury, London, W14 9BL
-  - name: Protocol t/a Teaching Force
-    email: schamberlain@protocol.co.uk
-    branch: Hertford
-    phone: '01992 411444'
-    website: https://www.protocol.co.uk/
-    address: Hertford Regional College, London Road, Ware, Hertfordshire, SG12 9JF
   - name: REESON Education
     email: gareth@reesoneducation.com
     branch: Hammersmith
@@ -909,23 +884,17 @@ agencies:
     website: https://www.smartteachers.co.uk/
     address: Salisbury House, 29 Finsbury Circus, London, EC2M 5QQ
   - name: Step Teachers Ltd
-    email: andrewp@stepteachers.co.uk
-    branch: North London Primary
-    phone: 020 8343 5464
+    email: adamg@stepteachers.co.uk
+    branch: London Primary
+    phone: 020 8920 2016
     website: https://www.stepteachers.co.uk/
     address: 2 Mountview Court, 310 Friern Barnet Lane, London, N20 0LD
   - name: Step Teachers Ltd
-    email: chrisk@stepteachers.co.uk
-    branch: North London Secondary
-    phone: 020 8343 5465
+    email: miguelr@stepteachers.co.uk
+    branch: London Secondary
+    phone: 020 8920 2035
     website: https://www.stepteachers.co.uk/
     address: 2 Mountview Court, 310 Friern Barnet Lane, London, N20 0LD
-  - name: Step Teachers Ltd
-    email: chrisk@stepteachers.co.uk
-    branch: London Bridge
-    phone: 020 3951 0080
-    website: https://www.stepteachers.co.uk/
-    address: Three Tuns House, 109 Borough High Street, London, SE1 1NL
   - name: Supply Desk
     email: navjit.panesar@supplydesk.co.uk
     branch: London
@@ -1042,12 +1011,6 @@ agencies:
     phone: '0191 244 2600'
     website: https://cer.co.uk/
     address: Cross House, Westgate Road, Newcastle, Tyne & Wear, NE1 4XX
-  - name: Apollo Teaching Services
-    email: raluca@apolloteaching.com
-    branch: Middlesborough
-    phone: 01642 244866
-    website: https://www.apolloteaching.co.uk/
-    address: Queensway Business Park, Queensway House, Middlesbrough, TS3 8TF
   - name: Balfor Recruitment a trading name of Boston Clark Ltd
     email: c.adams@balfor.co.uk
     branch: Leeds
@@ -1134,13 +1097,6 @@ agencies:
     phone: '01482 428580'
     website: https://prosperoteaching.com/
     address: 1st floor Norwich House, Savile Street, Hull, HU1 3ES
-  - name: Protocol t/a Teaching Force
-    email: tryan@protocol.co.uk
-    branch: North East Office
-    phone: '0191 501 8577'
-    website: https://www.protocol.co.uk/
-    address: 4 Admiral Way, Duxford International Business Park, Sunderland, Tyne and
-      Wear, SR3 3XW
   - name: Randstad Education
     email: newcastle@randstadeducation.co.uk
     branch: Newcastle-upon-Tyne
@@ -1282,17 +1238,18 @@ agencies:
     website: https://www.edstaff.co.uk/
     address: 10 High Street, Newton-le-Willows, Merseyside, WA12 9SN
   - name: Edison Pope Ltd
-    email: phil@edisonpope.com
+    email: hello@edisonpope.com
     branch: Manchester
     phone: 0161 9145738
     website: https://www.edisonpope.com/
     address: 113-115 Portland St, Manchester, Greater Manchester, M1 6DW
   - name: Edison Pope Ltd
-    email: damien@edisonpope.com
+    email: hello@edisonpope.com
     branch: Preston
     phone: 0161 9145738
     website: https://www.edisonpope.com/
-    address: 1st Floor Office, 290 Blackpool Road, Preston, Lancashire, PR2 3AE
+    address: The Union Carriage Works, 48 Guildhall Street, Preston, Lancashire, PR1
+      3AS
   - name: Educate Resourcing
     email: Matt.lewis@educate-group.co.uk
     branch: Chester
@@ -1729,18 +1686,6 @@ agencies:
     phone: '02380 381997'
     website: https://cer.co.uk/
     address: ''
-  - name: Apollo Teaching Services
-    email: readingrec@apolloteaching.com
-    branch: Reading
-    phone: '0118 334 0100'
-    website: https://www.apolloteaching.co.uk/
-    address: Reading Green Park 247, 200 Brook Drive, Reading, RG2 6UB
-  - name: Apollo Teaching Services
-    email: oxfordrec@apolloteaching.com
-    branch: Oxford
-    phone: '01865 368034'
-    website: https://www.apolloteaching.co.uk/
-    address: John Eccles House, Robinson Avenue, Oxford, Oxfordshire, SR3 3XW
   - name: Coyle Personnel plc
     email: ashley.mullin@coyles.co.uk
     branch: Ashford
@@ -1753,11 +1698,11 @@ agencies:
     phone: '0118 955 0600'
     website: https://www.coyles.co.uk/
     address: 118-128 London Street, Reading, Berkshire, RG1 4SJ
-  - name: Edison Pope Ltd.
+  - name: Edison Pope Ltd
     email: hello@edisonpope.com
     branch: London
     phone: 0161 9145738
-    website:
+    website: https://www.edisonpope.com/
     address: 85 Great Portland Street, First Floor, London, W1W 7LT
   - name: Educationline Limited
     email: steve@educationlinerecruitment.co.uk; stuart@educationlinerecruitment.co.uk;
@@ -2091,18 +2036,6 @@ agencies:
     website: https://www.monarcheducation.co.uk/
     address: The Quorum, Bond Street South, Bristol, BS1 3AE, Temple Gate, Bristol,
       BS1 6PL
-  - name: Apollo Teaching Services
-    email: bristolrec@apolloteaching.com
-    branch: Bristol
-    phone: 01173 634395
-    website: https://www.apolloteaching.co.uk/
-    address: Broad Quay House, Prince Street, Bristol, BS1 4DJ
-  - name: Apollo Teaching Services
-    email: swindonrec@apolloteaching.com
-    branch: Swindon
-    phone: '01793 441803'
-    website: https://www.apolloteaching.co.uk/
-    address: Windmill Hill Business Park, Whitehill Way, Swindon, Wiltshire, SN5 6QR
   - name: Axcis Education
     email: Catherine@axcis.co.uk; Louise@axcis.co.uk
     branch: South West and Wales Office
@@ -2539,13 +2472,6 @@ agencies:
     phone: 0121 227 2430
     website: https://prosperoteaching.com/
     address: The Colmore Building, 20 Colmore Circus, Queensway, Birmingham, B4 6AT.
-  - name: Protocol t/a Teaching Force
-    email: aobrien@protocol.co.uk
-    branch: Birmingham
-    phone: 0121 644 2929
-    website: https://www.protocol.co.uk/
-    address: South and City College Birmingham, Digbeth Campus, Birmingham, West Midlands,
-      B5 5SU
   - name: Randstad Education
     email: birmingham@randstadeducation.co.uk
     branch: Birmingham
@@ -2885,7 +2811,7 @@ agencies:
     address: Khepera One Business Centre, Orgreave Road, Sheffield, South Yorkshire,
       S13 9LQ
   - name: Stafflex
-    email: 'brian@stafflex.co.uk; peter@stafflex.co.uk '
+    email: brian@stafflex.co.uk; peter@stafflex.co.uk
     branch: Huddersfield
     phone: '01484 351 010'
     website: https://www.stafflex.co.uk/
