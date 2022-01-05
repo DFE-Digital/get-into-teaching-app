@@ -21,7 +21,7 @@ tags:
 
 $bedfordshire$
 
-_Not sure what to include in your teacher training application? Just think of the word TEACHER! Juliet Fern, Mieka Harris and Kate Hudson-Glynn from the University of Bedfordshire explain all._
+Not sure what to include in your teacher training application? Just think of the word TEACHER! Juliet Fern, Mieka Harris and Kate Hudson-Glynn from the University of Bedfordshire explain all.
 
 So you want to be a teacher — why? Were you taught by someone amazing? Do you love a specific subject? Do you want to give something back?
 
