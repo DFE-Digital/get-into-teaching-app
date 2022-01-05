@@ -44,9 +44,9 @@ describe MailingList::StepsController, type: :request do
     context "when the token is valid" do
       let(:stub_response) do
         GetIntoTeachingApiClient::MailingListAddMember.new(
-          candidateId: "abc123",
-          firstName: "John",
-          lastName: "Doe",
+          candidate_id: "abc123",
+          first_name: "John",
+          last_name: "Doe",
           email: "john@doe.com",
         )
       end

@@ -341,7 +341,7 @@ describe Internal::EventsController, type: :request do
                  params: { internal_event: params }
 
             expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
-            expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+            expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
           end
 
           context "when \"no venue\" is selected" do
@@ -362,7 +362,7 @@ describe Internal::EventsController, type: :request do
                    params: { internal_event: params }
 
               expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
-              expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+              expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
             end
           end
 
@@ -400,7 +400,7 @@ describe Internal::EventsController, type: :request do
                    params: { internal_event: params }
 
               expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
-              expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+              expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
             end
           end
         end
@@ -440,7 +440,7 @@ describe Internal::EventsController, type: :request do
                params: { internal_event: params }
 
           expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "online"))
-          expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+          expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
         end
       end
     end

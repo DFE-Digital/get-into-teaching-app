@@ -96,10 +96,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      preferredTeachingSubjectId: TeachingSubject.lookup_by_key(:maths),
-      considerationJourneyStageId: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degreeStatusId: OptionSet.lookup_by_key(:degree_status, :final_year),
-      addressPostcode: "TE57 1NG",
+      preferred_teaching_subject_id: TeachingSubject.lookup_by_key(:maths),
+      consideration_journey_stage_id: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
+      degree_status_id: OptionSet.lookup_by_key(:degree_status, :final_year),
+      address_postcode: "TE57 1NG",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything) { response }
@@ -182,7 +182,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      alreadySubscribedToMailingList: true,
+      already_subscribed_to_mailing_list: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
@@ -206,7 +206,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      alreadySubscribedToTeacherTrainingAdviser: true,
+      already_subscribed_to_teacher_training_adviser: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
@@ -227,11 +227,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
   scenario "Full journey as an existing candidate using a magic link" do
     token = "magic-link-token"
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      firstName: "Test",
-      lastName: "User",
+      first_name: "Test",
+      last_name: "User",
       email: "test@user.com",
-      considerationJourneyStageId: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
-      degreeStatusId: OptionSet.lookup_by_key(:degree_status, :final_year),
+      consideration_journey_stage_id: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
+      degree_status_id: OptionSet.lookup_by_key(:degree_status, :final_year),
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }
@@ -287,7 +287,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      alreadySubscribedToMailingList: true,
+      already_subscribed_to_mailing_list: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)

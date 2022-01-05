@@ -7,14 +7,14 @@ RSpec.shared_examples "exposes callback booking quotas" do
   let(:utc_now) { Time.zone.now.utc }
   let(:quota_in_30_minutes) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
-      startAt: utc_now + 30.minutes,
-      endAt: utc_now + 60.minutes,
+      start_at: utc_now + 30.minutes,
+      end_at: utc_now + 60.minutes,
     )
   end
   let(:quota_in_90_minutes) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
-      startAt: utc_now + 90.minutes,
-      endAt: utc_now + 120.minutes,
+      start_at: utc_now + 90.minutes,
+      end_at: utc_now + 120.minutes,
     )
   end
   let(:quotas) { [quota_in_30_minutes, quota_in_90_minutes] }

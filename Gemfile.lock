@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/DFE-Digital/dfe_wizard.git
-  revision: 008d5208bca4f3969aaa1cae259596813dd75083
-  branch: main
+  revision: 68278550c0a4771300d697e845ed213e58921009
   specs:
     dfe_wizard (1.0.0)
       activemodel (>= 6.0.3.4)
@@ -9,13 +8,11 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: f31165f8773798a88358e793661c9c25923ca6be
+  revision: dc673e63f1ee99c53fbf0e1d7db873dea3bad783
   specs:
-    get_into_teaching_api_client (1.1.17)
-      addressable (~> 2.3, >= 2.3.0)
-      json (~> 2.1, >= 2.1.0)
-      typhoeus (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (0.1.48)
+    get_into_teaching_api_client (2.0.0)
+      faraday (~> 1.0, >= 1.0.1)
+    get_into_teaching_api_client_faraday (2.0.0)
       activesupport
       faraday
       faraday-encoding
@@ -159,8 +156,6 @@ GEM
       rubocop
       smart_properties
     erubi (1.10.0)
-    ethon (0.15.0)
-      ffi (>= 1.15.0)
     factory_bot (6.2.0)
       activesupport (>= 5.0.0)
     factory_bot_rails (6.2.0)
@@ -237,7 +232,6 @@ GEM
     httpclient (2.8.3)
     i18n (1.8.11)
       concurrent-ruby (~> 1.0)
-    json (2.6.1)
     jwt (2.2.3)
     kaminari (1.2.1)
       activesupport (>= 4.1.0)
@@ -468,8 +462,6 @@ GEM
     thor (1.1.0)
     tomlrb (2.0.1)
     trailblazer-option (0.1.1)
-    typhoeus (1.4.0)
-      ethon (>= 0.9.0)
     tzinfo (2.0.4)
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
@@ -574,4 +566,4 @@ RUBY VERSION
    ruby 2.7.5p203
 
 BUNDLED WITH
-   2.2.25
+   2.3.4

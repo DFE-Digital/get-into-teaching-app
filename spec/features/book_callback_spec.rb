@@ -5,8 +5,8 @@ RSpec.feature "Book a callback", type: :feature do
 
   let(:quota) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
-      startAt: Time.zone.local(2099, 6, 1, 10),
-      endAt: Time.zone.local(2099, 6, 1, 11),
+      start_at: Time.zone.local(2099, 6, 1, 10),
+      end_at: Time.zone.local(2099, 6, 1, 11),
     )
   end
 
@@ -34,7 +34,7 @@ RSpec.feature "Book a callback", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)
 
-    response = GetIntoTeachingApiClient::GetIntoTeachingCallback.new(addressTelephone: "123456789")
+    response = GetIntoTeachingApiClient::GetIntoTeachingCallback.new(address_telephone: "123456789")
     allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
       receive(:exchange_access_token_for_get_into_teaching_callback).with("123456", anything) { response }
 

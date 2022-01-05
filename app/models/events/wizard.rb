@@ -2,8 +2,6 @@ require "attribute_filter"
 
 module Events
   class Wizard < ::DFEWizard::Base
-    include ::Wizard::ApiClientSupport
-
     self.steps = [
       Steps::PersonalDetails,
       ::DFEWizard::Steps::Authenticate,
@@ -44,10 +42,15 @@ module Events
   private
 
     def add_attendee_to_event
-      request = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(export_camelized_hash)
+      request = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(construct_export)
       api = GetIntoTeachingApiClient::TeachingEventsApi.new
       Rails.logger.info("Events::Wizard#add_attendee_to_event: #{AttributeFilter.filtered_json(request)}")
       api.add_teaching_event_attendee(request)
+    end
+
+    def construct_export
+      attributes = GetIntoTeachingApiClient::TeachingEventAddAttendee.attribute_map.keys
+      export_data.slice(*attributes.map(&:to_s))
     end
   end
 end

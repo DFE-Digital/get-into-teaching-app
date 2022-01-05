@@ -5,7 +5,7 @@ RSpec.feature "Breadcrumbs", type: :feature do
 
   subject { page }
 
-  let(:event) { GetIntoTeachingApiClient::TeachingEvent.new(statusId: 1) }
+  let(:event) { GetIntoTeachingApiClient::TeachingEvent.new(status_id: 1) }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \

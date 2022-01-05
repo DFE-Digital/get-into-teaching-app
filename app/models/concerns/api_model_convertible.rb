@@ -14,7 +14,6 @@ module ApiModelConvertible
   def convert_attributes_for_api_model
     attributes
       .filter { |k| attribute_names.include?(k) }
-      .transform_keys { |k| k.to_s.camelize(:lower) }
       .filter { |_, v| v.presence }
       .with_indifferent_access
   end

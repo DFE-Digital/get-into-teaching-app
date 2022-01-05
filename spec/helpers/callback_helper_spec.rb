@@ -12,14 +12,14 @@ RSpec.describe CallbackHelper, type: :helper do
   let(:utc_tomorrow) { Time.utc(2020, 4, 7, 10) }
   let(:quota_today) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
-      startAt: utc_today,
-      endAt: utc_today + 30.minutes,
+      start_at: utc_today,
+      end_at: utc_today + 30.minutes,
     )
   end
   let(:quota_tomorrow) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
-      startAt: utc_tomorrow,
-      endAt: utc_tomorrow + 30.minutes,
+      start_at: utc_tomorrow,
+      end_at: utc_tomorrow + 30.minutes,
     )
   end
   let(:quotas) { [quota_today, quota_tomorrow] }

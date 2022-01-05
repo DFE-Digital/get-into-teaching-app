@@ -12,6 +12,7 @@ describe MailingList::Wizard do
       "last_name" => "Joseph",
       "degree_status_id" => degree_status_id,
       "preferred_teaching_subject_id" => "456",
+      "accepted_policy_id" => "789",
     } }
   end
   let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
@@ -44,11 +45,12 @@ describe MailingList::Wizard do
     let(:request) do
       GetIntoTeachingApiClient::MailingListAddMember.new({
         email: wizardstore[:email],
-        firstName: wizardstore[:first_name],
-        lastName: wizardstore[:last_name],
-        degreeStatusId: degree_status_id,
-        preferredTeachingSubjectId: wizardstore[:preferred_teaching_subject_id],
-        welcomeGuideVariant: variant,
+        first_name: wizardstore[:first_name],
+        last_name: wizardstore[:last_name],
+        degree_status_id: degree_status_id,
+        preferred_teaching_subject_id: wizardstore[:preferred_teaching_subject_id],
+        welcome_guide_variant: variant,
+        accepted_policy_id: wizardstore[:accepted_policy_id],
       })
     end
 
@@ -78,12 +80,18 @@ describe MailingList::Wizard do
 
     it "logs the request model (filtering sensitive attributes)" do
       subject.complete!
+
       filtered_json = {
+        "candidateId" => nil,
+        "qualificationId" => nil,
         "preferredTeachingSubjectId" => request.preferred_teaching_subject_id,
+        "acceptedPolicyId" => request.accepted_policy_id,
         "degreeStatusId" => request.degree_status_id,
+        "channelId" => nil,
         "email" => "[FILTERED]",
         "firstName" => "[FILTERED]",
         "lastName" => "[FILTERED]",
+        "addressPostcode" => nil,
         "welcomeGuideVariant" => request.welcome_guide_variant,
       }.to_json
 
@@ -105,7 +113,7 @@ describe MailingList::Wizard do
   describe "#exchange_access_token" do
     let(:totp) { "123456" }
     let(:request) { GetIntoTeachingApiClient::ExistingCandidateRequest.new }
-    let(:response) { GetIntoTeachingApiClient::MailingListAddMember.new(candidateId: "123", email: "12345") }
+    let(:response) { GetIntoTeachingApiClient::MailingListAddMember.new(candidate_id: "123", email: "12345") }
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
