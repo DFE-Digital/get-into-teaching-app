@@ -47,4 +47,18 @@ RSpec.describe WelcomeContentHelper, type: :helper do
       end
     end
   end
+
+  describe "#is_featured_subject?" do
+    context "when the subject has a mapping" do
+      subject { featured_subject?(TeachingSubject.lookup_by_key(:physics)) }
+
+      specify { expect(subject).to be(true) }
+    end
+
+    context "when the subject has no mapping" do
+      subject { featured_subject?(TeachingSubject.lookup_by_key(:music)) }
+
+      specify { expect(subject).to be(false) }
+    end
+  end
 end

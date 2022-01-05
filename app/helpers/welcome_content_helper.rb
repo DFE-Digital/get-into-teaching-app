@@ -132,28 +132,34 @@ module WelcomeContentHelper
   }.freeze
 
   def subject_specific_story_data(id = welcome_guide_subject_id)
-    mappings(id).fetch(:story)
+    find_mapping(id).fetch(:story)
   end
 
   def subject_specific_quote_data(id = welcome_guide_subject_id)
-    mappings(id).fetch(:quote)
+    find_mapping(id).fetch(:quote)
   end
 
   def subject_specific_video_path(id = welcome_guide_subject_id, prefix: "/videos/")
-    prefix + mappings(id).fetch(:video)
+    prefix + find_mapping(id).fetch(:video)
   end
 
   def subject_category(id = welcome_guide_subject_id, downcase: true)
-    category = mappings(id).dig(:story, :subject)
+    category = find_mapping(id).dig(:story, :subject)
 
     category && downcase ? category.downcase : category
   end
 
+  def featured_subject?(id)
+    mappings.key?(TeachingSubject.key_with_uuid(id))
+  end
+
 private
 
-  def mappings(id)
-    key = TeachingSubject.key_with_uuid(id)
+  def find_mapping(id)
+    mappings.fetch(TeachingSubject.key_with_uuid(id)) { GENERIC }
+  end
 
+  def mappings
     {
       maths: MATHS,
       english: ENGLISH,
@@ -168,6 +174,6 @@ private
       german: MFL,
       spanish: MFL,
       languages_other: MFL,
-    }.fetch(key) { GENERIC }
+    }
   end
 end
