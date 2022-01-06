@@ -44,8 +44,8 @@ RSpec.feature "Book a callback", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to email@address.com", with: "123456"
+    expect(page).to have_text "You're already registered with us"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Choose a time for your callback"
@@ -94,16 +94,16 @@ RSpec.feature "Book a callback", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to email@address.com", with: "654321"
+    expect(page).to have_text "You're already registered with us"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "654321"
     click_on "Next step"
 
     expect(page).to have_text "Please enter the latest verification code"
 
-    click_link "resend verification"
-    expect(page).to have_text "We've sent you another email."
+    click_link "Send another code to verify my details."
+    expect(page).to have_text "We've sent you another email"
 
-    fill_in "Check your email and enter the verification code sent to email@address.com", with: "123456"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Choose a time for your callback"

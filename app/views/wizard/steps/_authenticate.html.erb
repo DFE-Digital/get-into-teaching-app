@@ -1,10 +1,15 @@
 <%
-  hint_text = t("helpers.hint.wizard_steps_authenticate.timed_one_time_password.text",
-    link: link_to(t("helpers.hint.wizard_steps_authenticate.timed_one_time_password.link"), resend_verification_path))
+  hint_text = t("helpers.hint.wizard_steps_authenticate.timed_one_time_password.text")
   hint_text += "<br><b>#{t('helpers.hint.wizard_steps_authenticate.timed_one_time_password.resent')}</b>" if params[:verification_resent]
 %>
 
 <%= f.govuk_text_field :timed_one_time_password,
 autocomplete: "off",
-label: { text: t('helpers.label.wizard_steps_authenticate.timed_one_time_password', email: email) },
+label: { text: t('helpers.label.wizard_steps_authenticate.timed_one_time_password'), class: "govuk-hint" },
 hint: { text: safe_html_format(hint_text) } %>
+
+<% content_for(:form_help) do %>
+  <p>The code expires in 15 minutes.</p>
+  <p>Check your spam or junk folder if you cannot find the email.</p>
+  <p><%= link_to("Send another code to verify my details.", resend_verification_path) %></p>
+<% end %>

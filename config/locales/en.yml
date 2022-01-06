@@ -481,7 +481,7 @@ en:
 
     label:
       wizard_steps_authenticate:
-        timed_one_time_password: Check your email and enter the verification code sent to %{email}
+        timed_one_time_password: "To verify your details, we've sent a code to your email address."
 
       events_steps_personal_details:
         first_name: First name
@@ -521,28 +521,14 @@ en:
       search:
         search: Search for ...
 
-      # one-page mailing list
-      mailing_list_signup:
-        first_name: First name
-        last_name: Last name
-        email: Email address
-        address_postcode: What is your postcode? (optional)
-        degree_status_id: Do you have a degree?
-        preferred_teaching_subject_id: What would you like to teach?
-        consideration_journey_stage_id: How close are you to applying for teacher training?
-        timed_one_time_password: Verification code
-        accept_privacy_policy_options:
-          1_html: I am over 16 years old and accept the <a target="_blank" href="/privacy-policy">privacy policy</a>
-
     hint:
       events_steps_contact_details:
         address_telephone: |-
            We'll use this to send you a reminder and let you know about any last-minute cancellations.
       wizard_steps_authenticate:
         timed_one_time_password:
-          text: Check your junk mail folder or %{link}.
-          resent: We've sent you another email.
-          link: resend verification
+          text: "Enter your code here:"
+          resent: We've sent you another email
       events_steps_personalised_updates:
         address_postcode: |-
           We want to send you relevant information about events in your area.

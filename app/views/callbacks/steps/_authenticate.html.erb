@@ -1,5 +1,5 @@
-<h1>Verify your email address</h1>
+<%= tag.h1("You're already registered with us") %>
 
 <p>Before you can book a callback, you need to verify your email address.</p>
 
-<%= render "wizard/steps/authenticate", f: f, email: callbacks_session["email"], resend_verification_path: resend_verification_callbacks_steps_path %>
+<%= render "wizard/steps/authenticate", f: f, resend_verification_path: resend_verification_callbacks_steps_path %>
