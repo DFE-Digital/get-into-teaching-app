@@ -32,8 +32,7 @@ describe "Welcome guide landing page", type: :request do
     ),
   }.each do |subject_key, metadata|
     specify "shows #{metadata.subject || 'non'}-specific content" do
-      subject_id = TeachingSubject.lookup_by_key(subject_key)
-      get("/welcome?preferred_teaching_subject_id=#{subject_id}")
+      get("/welcome/email/subject/#{subject_key}")
 
       expect(response.body).to match(%r{teaching <mark>#{metadata.subject}.</mark>}i)
       expect(response.body).to match("Read #{metadata.name}'s story")
@@ -71,8 +70,8 @@ describe "Welcome guide landing page", type: :request do
     ),
   }.each do |subject_key, metadata|
     specify "shows #{metadata.subject || 'non'}-specific case study content" do
-      subject_id = TeachingSubject.lookup_by_key(subject_key)
-      get("/welcome/my-journey-into-teaching?preferred_teaching_subject_id=#{subject_id}")
+      get("/welcome/email/subject/#{subject_key}")
+      get("/welcome/my-journey-into-teaching")
 
       expect(response.body).to match(metadata.name)
       expect(response.body).to match(metadata.shoutout_name)

@@ -44,7 +44,7 @@ module WelcomeHelper
   end
 
   def degree_stage_based_encouragement
-    # degree stage:         final year , second year
+    # degree stage:          final year , second year
     if degree_status_id.in?([222_750_001, 222_750_002])
       "Especially as you get closer to graduating"
     else
