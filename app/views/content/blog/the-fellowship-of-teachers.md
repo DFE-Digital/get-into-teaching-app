@@ -18,7 +18,7 @@ tags:
   - support
 ---
 
-$bedfordshire$
+$fellowship$
 
 There’s another side to teaching that only the teachers can tell you about. While you’ll spend a lot of your time in the classroom with the students, you’ll also become part of a tight-knit team of teachers just like you. You’ll find camaraderie, support, make lifelong friendships and, of course, have a lot of fun. So, to give you the low down on what goes on outside the classroom, we’ve asked fellow teachers Mike Halton and Phil Young to share their experiences. 
 
