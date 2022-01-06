@@ -35,6 +35,14 @@ module WelcomeHelper
     end
   end
 
+  def subject_teachers
+    if (subject = welcome_guide_subject)
+      "#{subject} teachers"
+    else
+      "teachers"
+    end
+  end
+
   def degree_stage_based_encouragement
     # degree stage:         final year , second year
     if degree_status_id.in?([222_750_001, 222_750_002])

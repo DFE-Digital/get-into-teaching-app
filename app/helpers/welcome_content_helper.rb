@@ -95,7 +95,7 @@ module WelcomeContentHelper
       alt: "Spanish teacher Tom standing in a modern foreign languages classroom",
       text: "Meet Tom - find out how he got into teaching Spanish and what he's looking forward to next.",
       three_things_youll_never_hear_me_say: {
-        "Every day is the same" => "From exploring Latin American culture to reading Spanish literature, every lesson is different. And with 30 different personalities in one room, it’s never dull",
+        "Every day is the same" => "From exploring Latin American culture to reading Spanish literature, every lesson is different. And with 30 different personalities in one room, it’s never dull.",
         "I miss adult conversation" => "Some of my closest friends are my colleagues, and having someone to talk to makes work life so much easier. Our get togethers at the end of the week are something I always look forward to.",
         "Work never stops" => "It’s important to relax after school,  I can’t resist watching a good Spanish film on Netflix.  And I'm still an avid traveller, I love exploring other cultures.",
       },
@@ -132,28 +132,34 @@ module WelcomeContentHelper
   }.freeze
 
   def subject_specific_story_data(id = welcome_guide_subject_id)
-    mappings(id).fetch(:story)
+    find_mapping(id).fetch(:story)
   end
 
   def subject_specific_quote_data(id = welcome_guide_subject_id)
-    mappings(id).fetch(:quote)
+    find_mapping(id).fetch(:quote)
   end
 
   def subject_specific_video_path(id = welcome_guide_subject_id, prefix: "/videos/")
-    prefix + mappings(id).fetch(:video)
+    prefix + find_mapping(id).fetch(:video)
   end
 
   def subject_category(id = welcome_guide_subject_id, downcase: true)
-    category = mappings(id).dig(:story, :subject)
+    category = find_mapping(id).dig(:story, :subject)
 
     category && downcase ? category.downcase : category
   end
 
+  def featured_subject?(id)
+    mappings.key?(TeachingSubject.key_with_uuid(id))
+  end
+
 private
 
-  def mappings(id)
-    key = TeachingSubject.key_with_uuid(id)
+  def find_mapping(id)
+    mappings.fetch(TeachingSubject.key_with_uuid(id)) { GENERIC }
+  end
 
+  def mappings
     {
       maths: MATHS,
       english: ENGLISH,
@@ -168,6 +174,6 @@ private
       german: MFL,
       spanish: MFL,
       languages_other: MFL,
-    }.fetch(key) { GENERIC }
+    }
   end
 end

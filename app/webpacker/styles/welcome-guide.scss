@@ -1035,6 +1035,10 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     .intro {
       font-weight: bold;
     }
+
+    a {
+      color: darken($blue-dark, 15%);
+    }
   }
 
   @mixin three-things-youll-never-hear-me-say-layout {

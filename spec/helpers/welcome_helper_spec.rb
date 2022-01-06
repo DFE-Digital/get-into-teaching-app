@@ -126,6 +126,23 @@ RSpec.describe WelcomeHelper, type: :helper do
     end
   end
 
+  describe "#subject_teachers" do
+    let(:subject_id) { physics_uuid }
+
+    context "when subject is set in the session" do
+      include_context "with preferred teaching subject set in welcome_guide"
+      subject { subject_teachers }
+
+      specify { is_expected.to eql("physics teachers") }
+    end
+
+    context "when no subject is set" do
+      subject { subject_teachers }
+
+      specify { is_expected.to eql("teachers") }
+    end
+  end
+
   describe "#teaching_subject" do
     subject { teaching_subject }
 

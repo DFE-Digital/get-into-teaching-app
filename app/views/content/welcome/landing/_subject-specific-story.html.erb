@@ -9,7 +9,7 @@
     <br>
 
     <span class="yellow no-wrap blend">
-      <% if welcome_guide_subject_id %>
+      <% if featured_subject?(welcome_guide_subject_id) %>
         teaching <%= subject_category(welcome_guide_subject_id, downcase: false) %>.
       <% else %>
         teaching.
