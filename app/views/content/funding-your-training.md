@@ -185,4 +185,4 @@ Contact the education authority if you live in the Channel Islands ([Jersey](htt
 
 If you're a non-UK citizen, you are unlikely to get help funding your training – although there are some exceptions.
 
-<a class="button" href ="/train-to-teach-in-england-as-an-international-student">Learn more about training to teach as a non-UK citizen.</a>
+<a class="button" href ="/train-to-teach-in-england-as-an-international-student">Learn more about training to teach as a non-UK citizen</a>
