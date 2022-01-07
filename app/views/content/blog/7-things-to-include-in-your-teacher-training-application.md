@@ -5,7 +5,7 @@ author: Juliet Fern, Mieka Harris and Kate Hudson-Glynn
 images:
   bedfordshire:
     path: "media/images/content/blog/bedfordshire.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/bedfordshire-thumbnail.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/bedfordshire.jpg"
     alt: "Teacher training students sit at desks with a number of resources such as paper, games and dice"
 description: |-
    Juliet Fern, Mieka Harris and Kate Hudson-Glynn from the University of Bedfordshire share seven key things to include in your teacher training application.

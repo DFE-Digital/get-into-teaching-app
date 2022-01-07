@@ -1,25 +1,296 @@
 ---
-"media/images/content/hero-images/0001.jpg": "Maths teacher standing in front of a whiteboard with maths equations."
-"media/images/content/hero-images/0002.jpg": "Teacher in a staff room talking to two colleagues sat on a sofa."
-"media/images/content/hero-images/0003.jpg": "Male and female teacher talking in a staff room."
-"media/images/content/hero-images/0004.jpg": "Maths teacher explaining a problem to a classroom of students using calculators."
-"media/images/content/hero-images/0005.jpg": "Teacher helping a pupil with their work in a classroom."
-"media/images/content/hero-images/0006.jpg": "Classroom full of pupils."
-"media/images/content/hero-images/0007.jpg": "Teacher talking to a pupil in a classroom."
-"media/images/content/hero-images/0008.jpg": "Teacher helping a child with their reading."
-"media/images/content/hero-images/0009.jpg": "Teacher smiling in front of a maths display board."
-"media/images/content/hero-images/0010.jpg": "Child raising their hand in a classroom to answer a question."
-"media/images/content/hero-images/0011.jpg": "Child pointing something out to a teacher in the classroom."
-"media/images/content/hero-images/0012.jpg": "Pupils listening to a science lesson."
-"media/images/content/hero-images/0013.jpg": "Physics teacher explaining the concept of time to pupils on a whiteboard."
-"media/images/content/hero-images/0014.jpg": "Geography teacher laughing in a classroom in front of a map display."
-"media/images/content/hero-images/0015.jpg": "Teacher working alongside another teacher, writing in a notebook."
-"media/images/content/hero-images/0016.jpg": "Young boy listening in a classroom."
-"media/images/content/hero-images/0017.jpg": "Maths teacher helping a pupil work out a problem."
-"media/images/content/hero-images/0018.jpg": "Young boy with a pencil behind his ear listening to a teacher."
-"media/images/content/hero-images/0019.jpg": "Student in a science lesson."
-"media/images/content/hero-images/0020.jpg": "Child standing in a classroom in front of a brightly coloured wall display."
-"media/images/content/hero-images/0021.jpg": "Maths teacher explaining how to work out the area of a trapezium on a whiteboard."
-"media/images/content/hero-images/0022.jpg": "Pupils listening to a maths teacher at the front of a classroom."
-"media/images/content/hero-images/0023.jpg": "Classroom of smiling primary school children."
-"media/images/content/hero-images/0024.jpg": "Maths teacher and pupil discussing a problem in a classroom."
+# hero
+"media/images/content/hero-images/0001.jpg":
+  alt: "Maths teacher standing in front of a whiteboard with maths equations."
+  variants:
+    - "media/images/content/hero-images/0001--mobile.jpg"
+    - "media/images/content/hero-images/0001--tablet.jpg"
+
+"media/images/content/hero-images/0002.jpg":
+  alt: "Teacher in a staff room talking to two colleagues sat on a sofa."
+  variants:
+    - "media/images/content/hero-images/0002--mobile.jpg"
+    - "media/images/content/hero-images/0002--tablet.jpg"
+
+"media/images/content/hero-images/0003.jpg":
+  alt: "Male and female teacher talking in a staff room."
+  variants:
+    - "media/images/content/hero-images/0003--mobile.jpg"
+    - "media/images/content/hero-images/0003--tablet.jpg"
+
+"media/images/content/hero-images/0004.jpg":
+  alt: "Maths teacher explaining a problem to a classroom of students using calculators."
+  variants:
+    - "media/images/content/hero-images/0004--mobile.jpg"
+    - "media/images/content/hero-images/0004--tablet.jpg"
+
+"media/images/content/hero-images/0005.jpg":
+  alt: "Teacher helping a pupil with their work in a classroom."
+  variants:
+    - "media/images/content/hero-images/0005--mobile.jpg"
+    - "media/images/content/hero-images/0005--tablet.jpg"
+
+"media/images/content/hero-images/0006.jpg":
+  alt: "Classroom full of pupils."
+  variants:
+    - "media/images/content/hero-images/0006--mobile.jpg"
+    - "media/images/content/hero-images/0006--tablet.jpg"
+
+"media/images/content/hero-images/0007.jpg":
+  alt: "Teacher talking to a pupil in a classroom."
+  variants:
+    - "media/images/content/hero-images/0007--mobile.jpg"
+    - "media/images/content/hero-images/0007--tablet.jpg"
+
+"media/images/content/hero-images/0008.jpg":
+  alt: "Teacher helping a child with their reading."
+  variants:
+    - "media/images/content/hero-images/0008--mobile.jpg"
+    - "media/images/content/hero-images/0008--tablet.jpg"
+
+"media/images/content/hero-images/0009.jpg":
+  alt: "Teacher smiling in front of a maths display board."
+  variants:
+    - "media/images/content/hero-images/0009--mobile.jpg"
+    - "media/images/content/hero-images/0009--tablet.jpg"
+
+"media/images/content/hero-images/0010.jpg":
+  alt: "Child raising their hand in a classroom to answer a question."
+  variants:
+    - "media/images/content/hero-images/0010--mobile.jpg"
+    - "media/images/content/hero-images/0010--tablet.jpg"
+
+"media/images/content/hero-images/0011.jpg":
+  alt: "Child pointing something out to a teacher in the classroom."
+  variants:
+    - "media/images/content/hero-images/0011--mobile.jpg"
+    - "media/images/content/hero-images/0011--tablet.jpg"
+
+"media/images/content/hero-images/0012.jpg":
+  alt: "Pupils listening to a science lesson."
+  variants:
+    - "media/images/content/hero-images/0012--mobile.jpg"
+    - "media/images/content/hero-images/0012--tablet.jpg"
+
+"media/images/content/hero-images/0013.jpg":
+  alt: "Physics teacher explaining the concept of time to pupils on a whiteboard."
+  variants:
+    - "media/images/content/hero-images/0013--mobile.jpg"
+    - "media/images/content/hero-images/0013--tablet.jpg"
+    - "media/images/content/blog/thumbnails/0013.jpg"
+
+"media/images/content/hero-images/0014.jpg":
+  alt: "Geography teacher laughing in a classroom in front of a map display."
+  variants:
+    - "media/images/content/hero-images/0014--mobile.jpg"
+    - "media/images/content/hero-images/0014--tablet.jpg"
+
+"media/images/content/hero-images/0015.jpg":
+  alt: "Teacher working alongside another teacher, writing in a notebook."
+  variants:
+    - "media/images/content/hero-images/0015--mobile.jpg"
+    - "media/images/content/hero-images/0015--tablet.jpg"
+
+"media/images/content/hero-images/0016.jpg":
+  alt: "Young boy listening in a classroom."
+  variants:
+    - "media/images/content/hero-images/0016--mobile.jpg"
+    - "media/images/content/hero-images/0016--tablet.jpg"
+
+"media/images/content/hero-images/0017.jpg":
+  alt: "Maths teacher helping a pupil work out a problem."
+  variants:
+    - "media/images/content/hero-images/0017--mobile.jpg"
+    - "media/images/content/hero-images/0017--tablet.jpg"
+
+"media/images/content/hero-images/0018.jpg":
+  alt: "Young boy with a pencil behind his ear listening to a teacher."
+  variants:
+    - "media/images/content/hero-images/0018--mobile.jpg"
+    - "media/images/content/hero-images/0018--tablet.jpg"
+"media/images/content/hero-images/0019.jpg":
+
+  alt: "Student in a science lesson."
+  variants:
+    - "media/images/content/hero-images/0019--mobile.jpg"
+    - "media/images/content/hero-images/0019--tablet.jpg"
+"media/images/content/hero-images/0020.jpg":
+  alt: "Child standing in a classroom in front of a brightly coloured wall display."
+  variants:
+    - "media/images/content/hero-images/0020--mobile.jpg"
+    - "media/images/content/hero-images/0020--tablet.jpg"
+
+"media/images/content/hero-images/0021.jpg":
+  alt: "Maths teacher explaining how to work out the area of a trapezium on a whiteboard."
+  variants:
+    - "media/images/content/hero-images/0021--mobile.jpg"
+    - "media/images/content/hero-images/0021--tablet.jpg"
+
+"media/images/content/hero-images/0022.jpg":
+  alt: "Pupils listening to a maths teacher at the front of a classroom."
+  variants:
+    - "media/images/content/hero-images/0022--mobile.jpg"
+    - "media/images/content/hero-images/0022--tablet.jpg"
+
+"media/images/content/hero-images/0023.jpg":
+  alt: "Classroom of smiling primary school children."
+  variants:
+    - "media/images/content/hero-images/0023--mobile.jpg"
+    - "media/images/content/hero-images/0023--tablet.jpg"
+
+"media/images/content/hero-images/0024.jpg":
+  alt: "Maths teacher and pupil discussing a problem in a classroom."
+  variants:
+    - "media/images/content/hero-images/0024--mobile.jpg"
+    - "media/images/content/hero-images/0024--tablet.jpg"
+
+# blog
+"media/images/content/blog/abigail-beeley.jpg":
+  alt: "Maths teacher Abigail Beeley in front of a maths display board."
+  variants:
+    - "media/images/content/blog/thumbnails/abigail-beeley.jpg"
+
+"media/images/content/blog/anna-shirley.jpg":
+  alt: "Sheffield SCITT communciations manager Anna Shirley."
+  variants:
+    - "media/images/content/blog/thumbnails/anna-shirley.jpg"
+
+"media/images/content/blog/applying-for-teacher.jpg":
+  alt: ""
+  variants:
+    - "media/images/content/blog/thumbnails/applying-for-teacher.jpg"
+
+"media/images/content/blog/ben-breen.jpg":
+  alt: "Maths and science teacher Ben Breen marking work at home."
+  variants:
+    - "media/images/content/blog/thumbnails/ben-breen.jpg"
+
+"media/images/content/blog/bedfordshire.jpg":
+  alt: "TODO"
+  variants:
+    - "media/images/content/blog/thumbnails/bedfordshire.jpg"
+
+"media/images/content/blog/calculator.jpg":
+  alt: "A calculator on top of maths homework and a pencil case."
+  variants:
+    - "media/images/content/blog/thumbnails/calculator.jpg"
+
+"media/images/content/blog/cindy-ventura.jpg":
+  alt: "Trainee teacher Cindy Ventura in her first week on a PGDE teacher training course."
+  variants:
+    - "media/images/content/blog/thumbnails/cindy-ventura.jpg"
+
+"media/images/content/blog/elliot-bailey-pe-teacher.jpg":
+  alt: ""
+  variants:
+    - "media/images/content/blog/thumbnails/elliot-bailey-pe-teacher.jpg"
+
+"media/images/content/blog/farooq-ahmad.jpg":
+  alt: "Former ICT teacher Farooq Ahmad on the National Tutoring Programme."
+  variants:
+    - "media/images/content/blog/thumbnails/farooq-ahmad.jpg"
+
+"media/images/content/blog/giorgio-rubbo.jpg":
+  alt: "Biology teacher Giorgio Rubbo wearing a suit and tie."
+  variants:
+    - "media/images/content/blog/thumbnails/giorgio-rubbo.jpg"
+
+"media/images/content/blog/habiba-cabdi-teacher-applicant.jpg":
+  alt: "Teacher training course student Habiba Cabdi with a hearing impairment."
+  variants:
+    - "media/images/content/blog/thumbnails/habiba-cabdi-teacher-applicant.jpg"
+
+"media/images/content/blog/interview.jpg":
+  alt: "A teacher training candidate being interviewed by a provider sitting at opposite sides of a desk."
+  variants:
+    - "media/images/content/blog/thumbnails/interview.jpg"
+
+"media/images/content/blog/jacob.jpg":
+  alt: "Teacher training course student and biology graduate Jacob."
+  variants:
+    - "media/images/content/blog/thumbnails/jacob.jpg"
+
+"media/images/content/blog/jan-ashbridge.jpg":
+  alt: ""
+  variants:
+    - "media/images/content/blog/thumbnails/jan-ashbridge.jpg"
+
+"media/images/content/blog/leah-kellogg-pe-teacher-and-professional-cricketer.jpg":
+  alt: ""
+  variants:
+    - "media/images/content/blog/thumbnails/leah-kellogg-pe-teacher-and-professional-cricketer.jpg"
+
+"media/images/content/blog/maria.jpg":
+  alt: "Maria Bateson, a science teacher who returned to teaching after ten years."
+  variants:
+    - "media/images/content/blog/thumbnails/maria.jpg"
+
+"media/images/content/blog/mel-oconnor.jpg":
+  alt: "Trainee teacher Mel O'Connor taking a PGDE teacher training course in maths."
+  variants:
+    - "media/images/content/blog/thumbnails/mel-oconnor.jpg"
+
+"media/images/content/blog/mel-stta-screen.jpg":
+  alt: "Conference room with tables and a projector for a Sheffield Teacher Training Alliance PGDE course."
+  variants:
+    - "media/images/content/blog/thumbnails/mel-stta-screen.jpg"
+
+"media/images/content/blog/notepad.jpg":
+  alt: ""
+  variants:
+    - "media/images/content/blog/thumbnails/notepad.jpg"
+
+"media/images/content/blog/olivia.jpg":
+  alt: "Teacher training course student Olivia with the Outwood Grange Academies Trust."
+  variants:
+    - "media/images/content/blog/thumbnails/olivia.jpg"
+
+"media/images/content/blog/pupil-chatting-to-teacher-in-classroom.jpg":
+  alt: "Languages teacher talking to a student in front of a whiteboard with Spanish phrases written on it."
+  variants:
+    - "media/images/content/blog/thumbnails/pupil-chatting-to-teacher-in-classroom.jpg"
+
+"media/images/content/blog/right_provider.jpg":
+  alt: ""
+  variants:
+    - "media/images/content/blog/thumbnails/right_provider.jpg"
+
+"media/images/content/blog/rocket.jpg":
+  alt: "A primary teacher showing a rocket to a girl at the front of a classroom as other students watch."
+  variants:
+    - "media/images/content/blog/thumbnails/rocket.jpg"
+
+"media/images/content/blog/school-aisle.jpg":
+  alt: "The corridor of a school filled with children."
+  variants:
+    - "media/images/content/blog/thumbnails/school-aisle.jpg"
+
+"media/images/content/blog/schoolyard.jpg":
+  alt: "A school playground with secondary school children playing outdoors."
+  variants:
+    - "media/images/content/blog/thumbnails/schoolyard.jpg"
+
+"media/images/content/blog/seminar-room.jpg":
+  alt: "PGCE lecturer at a whiteboard in a seminar room with teacher training students sitting at a table."
+  variants:
+    - "media/images/content/blog/thumbnails/seminar-room.jpg"
+
+"media/images/content/blog/staff-room.jpg":
+  alt: ""
+  variants:
+    - "media/images/content/blog/thumbnails/staff-room.jpg"
+
+"media/images/content/blog/stephen.jpg":
+  alt: "Returning maths teacher and Methodist Minister Stephen, in the school library."
+  variants:
+    - "media/images/content/blog/thumbnails/stephen.jpg"
+
+"media/images/content/blog/train-to-teach.jpg":
+  alt: "A busy Train to Teach event with attendees having conversations with Teacher Training Advisers."
+  variants:
+    - "media/images/content/blog/thumbnails/train-to-teach.jpg"
+
+"media/images/content/blog/whiteboard.jpg":
+  alt: ""
+  variants:
+    - "media/images/content/blog/thumbnails/whiteboard.jpg"

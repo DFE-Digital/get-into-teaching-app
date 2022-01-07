@@ -10,6 +10,6 @@ module BlogHelper
       first_image_params[:path] = first_image_params[:thumbnail_path]
     end
 
-    render Content::ImageComponent.new(**first_image_params.slice(:path, :alt))
+    render Content::ImageComponent.new(**first_image_params.slice(:path))
   end
 end

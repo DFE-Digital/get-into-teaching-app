@@ -15,13 +15,13 @@ describe BlogHelper, type: "helper" do
     let(:image_component) { class_double("Content::ImageComponent").as_stubbed_const }
     let(:images) do
       {
-        "first" => { "path" => "one.jpg", "alt" => "a nice image" },
-        "second" => { "path" => "two.jpg", "alt" => "a nicer image" },
+        "first" => { "path" => "one.jpg" },
+        "second" => { "path" => "two.jpg" },
       }
     end
 
     specify "initializes an Content::ImageComponent with the attributes from the first image" do
-      allow(image_component).to receive(:new).with(path: "one.jpg", alt: "a nice image").and_return(inline: "doesn't matter")
+      allow(image_component).to receive(:new).with(path: "one.jpg").and_return(inline: "doesn't matter")
 
       thumbnail_image_from_post(images)
     end
@@ -32,7 +32,7 @@ describe BlogHelper, type: "helper" do
       end
 
       specify "initializes an Content::ImageComponent with the thumbnail_path" do
-        allow(image_component).to receive(:new).with(path: "thumbnail.jpg", alt: "a nice image").and_return(inline: "doesn't matter")
+        allow(image_component).to receive(:new).with(path: "thumbnail.jpg").and_return(inline: "doesn't matter")
 
         thumbnail_image_from_post(images)
       end

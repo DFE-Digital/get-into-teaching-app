@@ -2,7 +2,14 @@ class Image
   class UnregisteredImageError < KeyError; end
 
   def self.image_data
-    @@image_data ||= YAML.load_file(Rails.root.join("config/images.yml"))
+    @@image_data ||= YAML
+      .load_file(Rails.root.join("config/images.yml"))
+      .each
+      .with_object({}) do |(main_file, metadata), mapping|
+        mapping[main_file] = metadata["alt"]
+
+        metadata["variants"]&.each { |v| mapping[v] = metadata["alt"] }
+      end
   end
   delegate :image_data, to: :class
 
