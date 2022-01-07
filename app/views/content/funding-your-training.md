@@ -179,15 +179,10 @@ You may be able to [get support if you’re a student and you’re disabled, hav
 
 ## If you come from outside England
 
-If you live outside England you may still be eligible for funding to train to teach via:
-
-* a [bursary or scholarship](#bursaries-and-scholarships)
-* [student finance](#tuition-fee-and-maintenance-loans)
-
-If you live in [Wales](https://www.studentfinancewales.co.uk/), [Scotland](https://www.saas.gov.uk/) or [Northern Ireland](https://www.studentfinanceni.co.uk/) you’ll need to contact your country’s student finance body.
+If you live in [Wales](https://www.studentfinancewales.co.uk/), [Scotland](https://www.saas.gov.uk/) or [Northern Ireland](https://www.studentfinanceni.co.uk/) you’ll need to contact your country’s student finance body to learn more about your eligibility for funding.
 
 Contact the education authority if you live in the Channel Islands ([Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx) and [Guernsey](https://www.gov.gg/article/152744/Policies)) or on the [Isle of Man](https://www.gov.im/student-grants).
 
-[Find out more about financial help if you're an applicant from outside the UK](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#financial-support-for-non-uk-applicants-for-unsalaried-teacher-training-in-england).
+If you're a non-UK citizen you are unlikely to get help funding your training – although there are some exceptions.
 
-<a class="button" href ="/train-to-teach-in-england-as-an-international-student">Train to teach as an international candidate</a>
+<a class="button" href ="/train-to-teach-in-england-as-an-international-student">Learn more about funding your training to teach as a non-UK citizen.</a>
