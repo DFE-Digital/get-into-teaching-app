@@ -6,7 +6,7 @@
   </div>
 <% end %>
 
-<%= tag.div(safe_html_format(@event.description)) %>
+<%= tag.div(formatted_event_description(@event.description)) %>
 
 <% if @event.video_url %>
   <div class="teaching-event__video youtube-video-container">
