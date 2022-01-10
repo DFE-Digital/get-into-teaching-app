@@ -50,7 +50,7 @@ Mike: My teaching assistant suggested giving out different badges at the end of 
 
 Mike: I think Phil is probably more vigilant than me…
 
-Phil: Underneath it I’m a big softie though!
+Phil: Underneath it, I’m a big softie though!
  
 ## Advice to someone thinking about becoming a teacher?
 
