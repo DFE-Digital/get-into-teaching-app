@@ -40,7 +40,7 @@ Phil: We really look out for each other. I formed a bubble with one of the other
 
 Phil: Seeing the students arrive and knowing they can’t wait to get to my class. There’s no feeling like it. 
 
-Mike: Lunch!! No, just kidding…. Every day is different, so I never know what’s really going to happen, that’s what makes it great. 
+Mike: Lunch!! No, just kidding … Every day is different, so I never know what’s really going to happen, that’s what makes it great. 
  
 ## What have you learnt from your colleagues?
 
