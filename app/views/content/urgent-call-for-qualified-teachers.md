@@ -219,11 +219,36 @@ agencies:
     website: https://www.randstadeducation.co.uk/
     address: level 12, The Pinnacle, 67 Albion St, Leeds, West Yorkshire, LS1 5AA
   - name: Reed Education
-    email: mya.price@reed.com
+    email: Mya.Price@reed.com
     branch: FE Midlands
     phone: '01159 888 864'
     website: https://www.reed.com/
     address: Floor 4, Pearl House, Friar Lane, Nottingham, NG1 6BT
+  - name: Reed Education
+    email: Chris.Ward@reed.com
+    branch: Leicester
+    phone: 0121 237 2623
+    website: https://www.reed.com/
+    address: Norwich House, 26 Horsefair Street, Leicester, LE1 5BD
+  - name: Reed Education
+    email: Renee.Burn@reed.com
+    branch: Northampton
+    phone: '01908 680 602'
+    website: https://www.reed.com/
+    address: 1st Floor, Brackmills Business Park, 900 Pavilion Drive, Northampton, NN4
+      7RG
+  - name: Reed Education
+    email: Chris.Ward@reed.com
+    branch: Nottingham
+    phone: 0121 237 2623
+    website: https://www.reed.com/
+    address: Floor 4, Pearl House, Friar Lane, Nottingham, NG1 6BT
+  - name: Reed Education
+    email: Justin.Aves@reed.com
+    branch: Peterborough
+    phone: 01223 463 305
+    website: https://www.reed.com/
+    address: 6 Cathedral Square, Peterborough, PE1 1XH
   - name: Simply Education Ltd
     email: jovita@simplyeducation.co.uk
     branch: Lincoln
@@ -466,11 +491,35 @@ agencies:
     website: https://www.randstadeducation.co.uk/
     address: 2nd Floor, 10 Throgmorton Avenue, London, Hertfordshire, EC2N 2DL
   - name: Reed Education
-    email: justin.aves@reed.com
+    email: Justin.Aves@reed.com
     branch: Cambridge
     phone: 01223 463 305
     website: https://www.reed.com/
     address: Unit 1, Clifton Court, Clifton Road, Cambridge, CB1 7BN
+  - name: Reed Education
+    email: Justin.Aves@reed.com
+    branch: Chelmsford
+    phone: 01223 463 305
+    website: https://www.reed.com/
+    address: 1st/2nd Floor, 1-1a Moulsham Street, Chelmsford, CM2 0HR
+  - name: Reed Education
+    email: Justin.Aves@reed.com
+    branch: Harlow
+    phone: 01223 463 305
+    website: https://www.reed.com/
+    address: Suite 2, Astra Centre, Edinburgh Way, Harlow, CM20 2BN
+  - name: Reed Education
+    email: Justin.Aves@reed.com
+    branch: Norwich
+    phone: 01223 463 305
+    website: https://www.reed.com/
+    address: Seebohm House, 2-4 Queen Street, Norwich, NR2 4SQ
+  - name: Reed Education
+    email: Justin.Aves@reed.com
+    branch: Ipswitch
+    phone: 01223 463 305
+    website: https://www.reed.com/
+    address: Ground Floor, Connections G4, 159 Princes Street, Ipswitch, IP1 1QJ
   - name: Simply Education Ltd
     email: daniel@simplyeducation.co.uk
     branch: Bedford
@@ -504,7 +553,7 @@ agencies:
   - name: Step Teachers Ltd
     email: kierena@stepteachers.co.uk
     branch: Hertfordshire
-    phone: '01707 527430 '
+    phone: 01707 527430
     website: https://www.stepteachers.co.uk/
     address: 2 Mountview Court, Bessemer Drive, Stevenage, Hertfordshire, SG1 2DX
   - name: Strategy Education Ltd
@@ -836,35 +885,90 @@ agencies:
     website: https://www.randstadeducation.co.uk/
     address: 2nd Floor, 10 Throgmorton Avenue, London, Essex, EC2N 2DL
   - name: Reed Education
-    email: fern.lapper@reed.com
+    email: Nikita.Jackson@reed.com
+    branch: Bury Street
+    phone: '0208 167 2510'
+    website: https://www.reed.com/
+    address: Copenhagen House, 5-10 Bry Street, London, EC3A 5AT
+  - name: Reed Education
+    email: Fern.Lapper@reed.com
     branch: Croydon Primary
     phone: '0208 680 4282'
     website: https://www.reed.com/
     address: 2nd Floor, Stephenson House, Cherry Orchard Road, Croydon, CR0 6BA
   - name: Reed Education
-    email: debbie.archer@reed.com
+    email: Debbie.Archer@reed.com
     branch: Croydon Secondary
     phone: '0208 680 4282'
     website: https://www.reed.com/
     address: 2nd Floor, Stephenson House, Cherry Orchard Road, Croydon, CR0 6BA
   - name: Reed Education
-    email: bharvi.patel@reed.com
+    email: Fern.Lapper@reed.com
+    branch: Dartford
+    phone: '0208 680 4282'
+    website: https://www.reed.com/
+    address: 5 Waterside Court Galleon Boulevard, Crossways Business Park, Dartford,
+      DA2 6NX
+  - name: Reed Education
+    email: Victoria.Faulkner@reed.com
+    branch: Enfield
+    phone: '0208 237 6401'
+    website: https://www.reed.com/
+    address: Regus Offices, 5th Floor, The Grange, 100 High Street, London, N14 6BN
+  - name: Reed Education
+    email: Victoria.Faulkner@reed.com
+    branch: Farringdon
+    phone: '0208 237 6401'
+    website: https://www.reed.com/
+    address: 50 Farringdon Road, London, EC1M 3HE
+  - name: Reed Education
+    email: Bharvi.Patel@reed.com
     branch: FE South
     phone: '0208 256 1343'
     website: https://www.reed.com/
     address: 2nd Floor, Stephenson House, Cherry Orchard Road, Croydon, CR0 6BA
   - name: Reed Education
-    email: victoria.faulkner@reed.com
+    email: Victoria.Faulkner@reed.com
     branch: Hammersmith
     phone: '0208 237 6401'
     website: https://www.reed.com/
     address: 2nd Floor, 4 Lyric Square, Hammersmith, W6 0ED
   - name: Reed Education
-    email: nikita.jackson@reed.com
+    email: Victoria.Faulkner@reed.com
+    branch: Hounslow
+    phone: '0208 237 6401'
+    website: https://www.reed.com/
+    address: Quest House, 125-135 Staines Road, Hounslow, TW3 3JB
+  - name: Reed Education
+    email: Debbie.Archer@reed.com
+    branch: London Victoria
+    phone: '0208 538 2065'
+    website: https://www.reed.com/
+    address: The Peak, 5 Wilton Road, London, SW1V 1AN
+  - name: Reed Education
+    email: Fern.Lapper@reed.com
+    branch: Raynes Park
+    phone: '0208 680 4282'
+    website: https://www.reed.com/
+    address: 120 Coombe Lane, Raynes Park, London, SW20 0BA
+  - name: Reed Education
+    email: Victoria.Faulkner@reed.com
+    branch: Richmond
+    phone: '0208 237 6401'
+    website: https://www.reed.com/
+    address: 9-11 The Quadrant, Richmond, TW9 1BP
+  - name: Reed Education
+    email: Nikita.Jackson@reed.com
     branch: Stratford
     phone: '0208 1672510'
     website: https://www.reed.com/
     address: 2nd Floor, Unex Tower, 5 Station Street, Stratford, E15 1DA
+  - name: Reed Education
+    email: Victoria.Faulkner@reed.com
+    branch: Uxbridge
+    phone: '0208 237 6401'
+    website: https://www.reed.com/
+    address: The Charter Building, Charter Place, Windsor Street, Uxbridge, UB8 1JG
   - name: Remedy Recruitment Group t/a Remedy Education
     email: craig@remedymedical.co.uk
     branch: Loughton
@@ -1103,6 +1207,18 @@ agencies:
     phone: '0845 600 1234'
     website: https://www.randstadeducation.co.uk/
     address: level 12, The Pinnacle, 67 Albion St, Leeds, West Yorkshire, LS1 5AA
+  - name: Reed Education
+    email: Andrea.Raven-Hill@reed.com
+    branch: Middlesbrough
+    phone: 01132 368 960
+    website: https://www.reed.com/
+    address: 2nd Floor, Boho 6, Linthorpe Road, Middlesbrough, TS1 1RE
+  - name: Reed Education
+    email: Andrea.Raven-Hill@reed.com
+    branch: Newcastle-Upon-Tyne
+    phone: 01132 368 960
+    website: https://www.reed.com/
+    address: New England House, 10 Ridley Place, Newcastle-Upon-Tyne, NE1 8JW
   - name: School House Recruitment Ltd
     email: claire@schoolhouserecruitment.co.uk
     branch: Teesside
@@ -1450,30 +1566,54 @@ agencies:
     website: https://www.redappleeducation.co.uk/
     address: Unit 25, Britannia Pavilion, Albert Dock, Liverpool, L3 4AD
   - name: Reed Education
-    email: rebecca.chui@reed.com
+    email: Stephanie.Grandon@reed.com
+    branch: Chester
+    phone: 01270 619 314
+    website: https://www.reed.com/
+    address: Refuge House, 33-37 Watergate Street, Chester, CH1 2LB
+  - name: Reed Education
+    email: Rebecca.Chui@reed.com
     branch: FE North
     phone: 0161 817 2682
     website: https://www.reed.com/
     address: 37 King Street, Manchester, M2 7AT
   - name: Reed Education
-    email: michael.stubbington@reed.com
+    email: Michael.Stubbington@reed.com
     branch: Lancaster
     phone: 01524 843 347
     website: https://www.reed.com/
     address: Units 7-4-1, Cameron House, White Cross Industrial Estate, Lancaster, LA1
       4XF
   - name: Reed Education
-    email: stephanie.grandon@reed.com
+    email: Stephanie.Grandon@reed.com
+    branch: Liverpool
+    phone: 01270 619 314
+    website: https://www.reed.com/
+    address: Part 1, 1st Floor, One Derby Square, Liverpool, L2 9QR
+  - name: Reed Education
+    email: Stephanie.Grandon@reed.com
+    branch: Manchester
+    phone: 01270 619 314
+    website: https://www.reed.com/
+    address: The Exchange, 3 York Street, Manchester, M1 4HN
+  - name: Reed Education
+    email: Stephanie.Grandon@reed.com
     branch: Nantwich
     phone: 01270 619314
     website: https://www.reed.com/
     address: 1st Floor, Burford House, 46 Beam Street, Nantwich, CW5 5LJ
   - name: Reed Education
-    email: david.carter@reed.com
+    email: David.Carter@reed.com
     branch: Preston
     phone: 01772 200 845
     website: https://www.reed.com/
     address: 81 Fishergate, Preston, PR1 2UH
+  - name: Reed Education
+    email: Stephanie.Grandon@reed.com
+    branch: Warrington
+    phone: 01270 619 314
+    website: https://www.reed.com/
+    address: Bank Quay House, Sankey Street, Warrington, WA1 1NN
   - name: School Improvement Liverpool Limited
     email: supply@si.liverpool.gov.uk
     branch: School Improvement Liverpool Recruitment
@@ -1873,36 +2013,96 @@ agencies:
     website: https://www.randstadeducation.co.uk/
     address: 1st Floor, 13a The Broadway, Crawley, West Sussex, RH11 7AE
   - name: Reed Education
-    email: david.j.anderson@reed.com
+    email: Sonia.Watton@reed.com
+    branch: Basingstoke
+    phone: '02380 828 605'
+    website: https://www.reed.com/
+    address: 7.1 Network House, Basing View, Basingstoke, RG21 4HG
+  - name: Reed Education
+    email: Phil.Mead@reed.com
+    branch: Bracknell
+    phone: '0118 952 0017'
+    website: https://www.reed.com/
+    address: Columbia Centre, Station Road, Bracknell, RG12 1LP
+  - name: Reed Education
+    email: Faye.Davies@reed.com
     branch: Brighton
     phone: 01273 554 427
     website: https://www.reed.com/
     address: 132 Queens Road, Brighton, BN1 3WB
   - name: Reed Education
-    email: alison.whitmore@reed.com
+    email: Faye.Davies@reed.com
+    branch: Crawley
+    phone: 01273 748 451
+    website: https://www.reed.com/
+    address: 1st Floor, 1 Peverill Court, London Road, Crawley, RH10 8JE
+  - name: Reed Education
+    email: Fern.Lapper@reed.com
+    branch: Epsom
+    phone: '0208 680 4282'
+    website: https://www.reed.com/
+    address: 12-22 Oaks House, West Street, Epsom, KT18 7RG
+  - name: Reed Education
+    email: Debbie.Archer@reed.com
+    branch: Guildford
+    phone: '0208 538 2065'
+    website: https://www.reed.com/
+    address: 1st Floor, Building 2, Guildford Business Park, Guildford, GU2 8XG
+  - name: Reed Education
+    email: Alison.Whitmore-Ryan@reed.com
     branch: Maidstone
     phone: 01622 608 295
     website: https://www.reed.com/
     address: 4 Earl Street, Maidstone, ME14 1PP
   - name: Reed Education
-    email: renee.burn@reed.com
+    email: Renee.Burn@reed.com
     branch: Milton Keynes
     phone: '01908 680 602'
     website: https://www.reed.com/
     address: 2nd Floor, Exchange House, 484 Midsummer Boulevard, Milton Keynes, MK9
       2EA
   - name: Reed Education
-    email: suzie.murray@reed.com
+    email: Ben.Holtom@reed.com
+    branch: Hampshire Supply Service
+    phone: '0800 0855 016'
+    website: https://www.reed.com/
+    address: Ocean Village Innovation Centre, Ocean Way, Hampshire, SO14 3JZ
+  - name: Reed Education
+    email: Suzie.Murray@reed.com
     branch: Oxford
     phone: '01865 812 780'
     website: https://www.reed.com/
     address: Second Floor, West Wing, Seacourt Tower, West Way, Oxford, OX2 0JJ
   - name: Reed Education
-    email: phil.mead@reed.com
+    email: Phil.Mead@reed.com
     branch: Reading
     phone: '0118 952 0017'
     website: https://www.reed.com/
     address: 66-68 St Mary's Butts, Reading, RG1 2LG
+  - name: Reed Education
+    email: Debbie.Archer@reed.com
+    branch: Redhill
+    phone: '0208 538 2065'
+    website: https://www.reed.com/
+    address: Suite B, 2nd Floor, Redhill Chambers, Redhill, RH1 1RJ
+  - name: Reed Education
+    email: Phil.Mead@reed.com
+    branch: Slough
+    phone: '0118 952 0017'
+    website: https://www.reed.com/
+    address: Ground Floor, The Urban Building, 3-9 Albert Street, Slough, SL1 2BE
+  - name: Reed Education
+    email: Sonia.Watton@reed.com
+    branch: Southampton
+    phone: '02380 828 605'
+    website: https://www.reed.com/
+    address: Ocean Village Innovation Centre, Ocean Way, Southampton, SO14 3JZ
+  - name: Reed Education
+    email: Justin.Aves@reed.com
+    branch: Southend-On-Sea
+    phone: 01223 463 305
+    website: https://www.reed.com/
+    address: 3rd Floor, Tyler House, Southend-On-Sea, SS1 2BB
   - name: Simply Education Ltd
     email: kealie@simplyeducation.co.uk
     branch: Oxford
@@ -2197,24 +2397,60 @@ agencies:
     website: https://www.randstadeducation.co.uk/
     address: 4th Floor, Salt Quay House, Sutton Harbour, Plymouth, Devon, PL4 0HP
   - name: Reed Education
-    email: ben.holtom@reed.com
-    branch: MSP Team
+    email: Sonia.Watton@reed.com
+    branch: Bournemouth
+    phone: '02380 828 605'
+    website: https://www.reed.com/
+    address: 106 Old Christchurch Road, Bournemouth, BH1 1LR
+  - name: Reed Education
+    email: Emma.Thomas@reed.com
+    branch: Bristol
+    phone: '02920 386 515'
+    website: https://www.reed.com/
+    address: Pridential Building, 5-19 Wine Street, Bristol, BS1 2PH
+  - name: Reed Education
+    email: Debbie.Archer@reed.com
+    branch: Camberley
+    phone: '0208 538 2065'
+    website: https://www.reed.com/
+    address: Marlborough House, 82 Park Street, Camberley, GU15 3NY
+  - name: Reed Education
+    email: Emma.Thomas@reed.com
+    branch: Cheltenham
+    phone: '02920 386 515'
+    website: https://www.reed.com/
+    address: 2D Regent Street, Cheltenham, GL50 1HE
+  - name: Reed Education
+    email: Elly.Barnes@reed.com
+    branch: Exeter
+    phone: 01752 230 018
+    website: https://www.reed.com/
+    address: 50-52 High Street, Exeter, EX4 3DJ
+  - name: Reed Education
+    email: Ben.Holtom@reed.com
+    branch: Hampshire Supply Service
     phone: '0800 0855 016'
     website: https://www.reed.com/
-    address: Ocean Village Innovation Centre, Ocean Way, Southampton, SO14 3JZ
+    address: Ocean Village Innovation Centre, Ocean Way, Hampshire, SO14 3JZ
   - name: Reed Education
-    email: elly.barnes@reed.com
+    email: Elly.Barnes@reed.com
     branch: Plymouth
     phone: 01752 230 018
     website: https://www.reed.com/
     address: Suite 4E, Ground Floor, Princess Court, Princess Street, Plymouth, PL1
       2EX
   - name: Reed Education
-    email: sonia.watton@reed.com
+    email: Sonia.Watton@reed.com
     branch: Southampton
     phone: '02380 828 605'
     website: https://www.reed.com/
     address: Ocean Village Innovation Centre, Ocean Way, Southampton, SO14 3JZ
+  - name: Reed Education
+    email: Emma.Thomas@reed.com
+    branch: Swindon
+    phone: '02920 386 515'
+    website: https://www.reed.com/
+    address: Milford Wing, Station Square, One Gloucester Street, Swindon, SN1 1GW
   - name: Sesame Education Limited
     email: david@sesame-education.co.uk
     branch: South West
@@ -2480,11 +2716,30 @@ agencies:
     address: 3rd Floor Livery Place, 35 Livery Street, Birmingham, West Midlands, B3
       2PB
   - name: Reed Education
-    email: chris.ward@reed.com
+    email: Chris.Ward@reed.com
     branch: Birmingham
     phone: 0121 237 2623
     website: https://www.reed.com/
     address: Interchange Place, 151-156 Edmund Street, Birmingham, B3 2TA
+  - name: Reed Education
+    email: Chris.Ward@reed.com
+    branch: Coventry
+    phone: 0121 237 2623
+    website: https://www.reed.com/
+    address: 3rd Floor Front, Sun Alliance House, Little Park Street, Coventry, CV1
+      2JZ
+  - name: Reed Education
+    email: Stephanie.Grandon@reed.com
+    branch: Stoke
+    phone: 01270 619 314
+    website: https://www.reed.com/
+    address: Unit 3, Fellgate Court, Froghall, Newcastle-Under-Lyme, ST5 2UA
+  - name: Reed Education
+    email: Chris.Ward@reed.com
+    branch: Wolverhampton
+    phone: 0121 237 2623
+    website: https://www.reed.com/
+    address: Waterloo Court, 31 Waterloo Road, Wolverhampton, WV1 4DJ
   - name: Smart Education Recruitment Limited
     email: fran@smarted.co.uk
     branch: Birmingham
@@ -2786,19 +3041,49 @@ agencies:
     website: https://www.randstadeducation.co.uk/
     address: level 12, The Pinnacle, 67 Albion St, Leeds, West Yorkshire, LS1 5AA
   - name: Reed Education
-    email: vicki.edgar@reed.com
+    email: Tom.Raven-Hill@reed.com
+    branch: Bradford
+    phone: '01924 203 061'
+    website: https://www.reed.com/
+    address: Ground Floor, Toronto Square, Infirmary Street, Leeds, LS1 2HJ
+  - name: Reed Education
+    email: Vicki.Edgar@reed.com
     branch: FE Leeds
     phone: 0161 817 2682
     website: https://www.reed.com/
     address: Ground Floor, Toronto Square, Infirmary Street, Leeds, LS1 2HJ
   - name: Reed Education
-    email: joseph.james@reed.com
+    email: Andrea.Raven-Hill@reed.com
+    branch: Harrogate
+    phone: 01132 368 960
+    website: https://www.reed.com/
+    address: 12 Raglan Street, Harrogate, HG1 1LE
+  - name: Reed Education
+    email: Andrea.Raven-Hill@reed.com
+    branch: Leeds
+    phone: 01132 368 960
+    website: https://www.reed.com/
+    address: Ground Floor, Toronto Square, Infirmary Street, Leeds, LS1 2HJ
+  - name: Reed Education
+    email: Joseph.James@reed.com
     branch: Scunthorpe
     phone: 01724 749 550
     website: https://www.reed.com/
     address: Suite 1A, Haldenby House, Berkeley Business Centre, Scunthorpe, DN15 7DQ
   - name: Reed Education
-    email: tom.raven-hill@reed.com
+    email: Andrea.Raven-Hill@reed.com
+    branch: Sheffield
+    phone: 01132 368 960
+    website: https://www.reed.com/
+    address: Unit 7B, Leopold Street, Sheffield, S1 2JG
+  - name: Reed Education
+    email: Tom.Raven-Hill@reed.com
+    branch: Wakefield
+    phone: 01274 377 620
+    website: https://www.reed.com/
+    address: Suite 3, First Floor, Bullring House, Wakefield, WF1 3BJ
+  - name: Reed Education
+    email: Tom.Raven-Hill@reed.com
     branch: Yorkshire
     phone: 01132 368 960
     website: https://www.reed.com/
