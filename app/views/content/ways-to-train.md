@@ -298,5 +298,5 @@ Entry criteria may vary by teacher training provider. Ask them about eligibility
 A career change into teaching allows you to use your experience and
 passion to inspire young people.
 
-As well as the options above, [Now Teach](https://nowteach.org.uk/) and [Transition to Teach](https://www.transitiontoteach.co.uk/) are services that can specifically help those changing careers.
+As well as the options above, [Now Teach](https://nowteach.org.uk/) and [Transition to Teach](https://www.transitiontoteach.co.uk/) are services that can specifically help you with changing careers.
 
