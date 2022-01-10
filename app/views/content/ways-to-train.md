@@ -222,7 +222,7 @@ Courses typically take one year but you may be able to study part-time.
           Takes 2 years
         </div>
       </div>
-      <div="badge yellow">
+      <div class="badge yellow">
         <div class="badge-text">
           QTS
         </div>
