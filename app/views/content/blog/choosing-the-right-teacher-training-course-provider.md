@@ -5,7 +5,6 @@ images:
   right_provider:
     path: "media/images/content/blog/right_provider.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/right_provider.jpg"
-    alt: "A photograph of books and a tablet computer on a desk in an empty classroom"
 description: |-
   When choosing a course provider for your teacher training, it’s important to consider what will suit your individual circumstances. Here are some tips on what you may wish to research.
     

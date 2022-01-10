@@ -5,7 +5,6 @@ images:
   olivia:
     path: "media/images/content/blog/olivia.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/olivia.jpg"
-    alt: "Olivia smiling in her home" 
 description: |-
   Early Career Teacher (ECT), Olivia Lee, did her teacher training in Drama with the Outwood Grange Academies Trust. Here she explains how being herself in the classroom has made her the teacher she has become.
 keywords:

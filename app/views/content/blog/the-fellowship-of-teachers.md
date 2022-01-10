@@ -6,7 +6,6 @@ images:
   fellowship:
     path: "media/images/content/blog/fellowship.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/fellowship.jpg"
-    alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
 description: |-
    Fellow teachers Mike Halton and Phil Young describe the friendships and fun they have outside of the classroom.
 keywords:

@@ -10,7 +10,6 @@ images:
   interview:
     path: "media/images/content/blog/interview.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/interview.jpg"
-    alt: "A teacher training candidate being interviewed by a provider sitting at opposite sides of a desk"
 keywords:
   - becoming a teacher
   - applications

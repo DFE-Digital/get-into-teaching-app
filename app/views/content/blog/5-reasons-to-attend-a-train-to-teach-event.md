@@ -5,7 +5,6 @@ images:
   train_to_teach:
     path: "media/images/content/blog/train-to-teach.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/train-to-teach.jpg"
-    alt: "A photograph of a busy event with banners and attendees having conversations with advisers"
 description: |-
   Whether you’re ready to apply or it’s just an idea, here are five reasons why a Train to Teach event can help you on your journey to the classroom.
     

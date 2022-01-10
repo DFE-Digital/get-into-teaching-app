@@ -6,7 +6,6 @@ images:
   header_image:
     path: "media/images/content/blog/school-aisle.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/school-aisle.jpg"
-    alt: "A photograph of a school playground with children playing"
 description: |-
   Felix offered to speak to Teacher Training Adviser, Jane Wilkinson, about the challenges faced by someone who lives with additional needs and their progress towards achieving the dream of becoming a teacher.
 keywords:

@@ -6,10 +6,8 @@ images:
   mel_oconnor:
     path: "media/images/content/blog/mel-oconnor.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/mel-oconnor.jpg"
-    alt: "A photograph of PGDE trainee Mel O'Connor"
   mel_stta_screen:
     path: "media/images/content/blog/mel-stta-screen.jpg"
-    alt: "A photograph of several large round tables covered in pens and paper, surrounded by chairs. A projector at the front of the room projects photographs of previous trainees."
 description: |- 
   Mel recently started a Postgraduate Diploma in Education (PGDE) teacher training course in maths with the Sheffield Teacher Training Alliance and the University of Sheffield. She kept a diary of her first days on the course.
 keywords:
