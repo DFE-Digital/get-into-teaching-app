@@ -52,7 +52,7 @@ keywords:
   - Teacher training courses
 ---
 
-You need 'qualified teacher status' (QTS) to work in the majority of schools in England including state maintained primary, secondary and special schools.
+You need 'qualified teacher status' (QTS) to work as a qualified teacher in the majority of schools in England including state maintained primary, secondary and special schools.
 
 Find out how to get QTS if you:
 
@@ -76,7 +76,7 @@ In addition to QTS you'll get a PGCE or PGDE (an academic qualification).
 
 Courses typically take one year but you may be able to study part-time.
 
-Fees are usually around £9,250 but you can:
+Fees for full-time courses are usually around £9,250 but you can:
 
 * get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
 * apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
@@ -85,7 +85,7 @@ Fees are usually around £9,250 but you can:
   <h4>University-led training</h4>
   <div class="badges">
     <div class="badge pink">
-      <div class="badge-text">Costs £9,250</div>
+      <div class="badge-text">Costs up to £9,250</div>
     </div>
     <div class="badge dark-cyan">
       <div class="badge-text">Funding available</div>
@@ -95,11 +95,19 @@ Fees are usually around £9,250 but you can:
       <div class="badge-text">Takes 1 year</div>
     </div>
 
+    <div class="badge yellow">
+      <div class="badge-text">QTS</div>
+    </div>
+  
     <div class="badge dark-blue">
       <div class="badge-text">PGCE or PGDE</div>
     </div>
   </div>
 </div>
+
+Fees are higher for [international students](/train-to-teach-in-england-as-an-international-student).
+
+You can check the fees for a particular course with the course provider.
 
 ### Train with a school or group of schools
 
@@ -125,7 +133,7 @@ Fees are usually around £9,250 but you can:
   <div class="badges">
     <div class="badge pink">
       <div class="badge-text">
-        Costs £9,250
+        Costs up to £9,250
       </div>
     </div>
     <div class="badge dark-cyan">
@@ -138,6 +146,11 @@ Fees are usually around £9,250 but you can:
         Takes 1 year
       </div>
     </div>
+    <div class="badge yellow">
+      <div class="badge-text">
+        QTS
+      </div>
+    </div>
     <div class="badge dark-blue">
       <div class="badge-text">
         Often a PGCE or PGDE
@@ -148,7 +161,7 @@ Fees are usually around £9,250 but you can:
 
 ### Earn a salary
 
-Some teacher training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary.
+Some teacher training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary for those with the right experience.
 
 These courses are usually suitable for people who already have relevant teaching experience, or are already working as unqualified teachers. 
 
@@ -156,7 +169,7 @@ Many 'school direct (salaried)' programmes give you a PGCE or PGDE (an academic 
 
 Courses typically take one year but you may be able to study part-time.
 
-[Teach First](https://www.teachfirst.org.uk/) also offers a salary. It's a 2-year programme leading to a PGDE and QTS.
+[Teach First](https://www.teachfirst.org.uk/) also offers a salary. It's a 2-year programme leading to a PGDE and QTS. At the end of your first year, you’ll have your QTS. At the end of your second year, you’ll have your PGDE.
 
 <dl>
   <div class="training-option">
@@ -165,6 +178,11 @@ Courses typically take one year but you may be able to study part-time.
       <div class="badge purple">
         <div class="badge-text">
           Takes 1 year
+        </div>
+      </div>
+      <div class="badge yellow">
+        <div class="badge-text">
+          QTS
         </div>
       </div>
       <div class="badge dark-blue">
@@ -183,6 +201,16 @@ Courses typically take one year but you may be able to study part-time.
           Takes 1 year
         </div>
       </div>
+      <div class="badge yellow">
+        <div class="badge-text">
+          QTS
+        </div>
+      </div>
+      <div class="badge dark-blue">
+        <div class="badge-text">
+          May offer a PGCE or equivalent
+        </div>
+      </div>
     </dd>
   </div>
 
@@ -192,6 +220,11 @@ Courses typically take one year but you may be able to study part-time.
       <div class="badge purple">
         <div class="badge-text">
           Takes 2 years
+        </div>
+      </div>
+      <div class="badge yellow">
+        <div class="badge-text">
+          QTS
         </div>
       </div>
       <div class="badge dark-blue">
@@ -224,7 +257,7 @@ Qualifications vary depending on the course. For example, you could get QTS with
   <div class="badges">
     <div class="badge pink">
       <div class="badge-text">
-        Costs £9,250 per year
+        Costs up to £9,250 per year
       </div>
     </div>
     <div class="badge dark-cyan">
@@ -265,4 +298,5 @@ Entry criteria may vary by teacher training provider. Ask them about eligibility
 A career change into teaching allows you to use your experience and
 passion to inspire young people.
 
-[Now Teach](https://nowteach.org.uk/) and [Transition to Teach](https://www.transitiontoteach.co.uk/) can support you with your career change.
+As well as the options above, [Now Teach](https://nowteach.org.uk/) and [Transition to Teach](https://www.transitiontoteach.co.uk/) are services that can specifically help you with changing careers.
+
