@@ -166,7 +166,7 @@
     - "media/images/content/blog/thumbnails/ben-breen.jpg"
 
 "media/images/content/blog/bedfordshire.jpg":
-  alt: "TODO"
+  alt: "Students learning English by playing educational board games in a classroom."
   variants:
     - "media/images/content/blog/thumbnails/bedfordshire.jpg"
 
@@ -179,11 +179,6 @@
   alt: "Trainee teacher Cindy Ventura in her first week on a PGDE teacher training course."
   variants:
     - "media/images/content/blog/thumbnails/cindy-ventura.jpg"
-
-"media/images/content/blog/elliot-bailey-pe-teacher.jpg":
-  alt: ""
-  variants:
-    - "media/images/content/blog/thumbnails/elliot-bailey-pe-teacher.jpg"
 
 "media/images/content/blog/farooq-ahmad.jpg":
   alt: "Former ICT teacher Farooq Ahmad on the National Tutoring Programme."
@@ -209,16 +204,6 @@
   alt: "Teacher training course student and biology graduate Jacob."
   variants:
     - "media/images/content/blog/thumbnails/jacob.jpg"
-
-"media/images/content/blog/jan-ashbridge.jpg":
-  alt: ""
-  variants:
-    - "media/images/content/blog/thumbnails/jan-ashbridge.jpg"
-
-"media/images/content/blog/leah-kellogg-pe-teacher-and-professional-cricketer.jpg":
-  alt: ""
-  variants:
-    - "media/images/content/blog/thumbnails/leah-kellogg-pe-teacher-and-professional-cricketer.jpg"
 
 "media/images/content/blog/maria.jpg":
   alt: "Maria Bateson, a science teacher who returned to teaching after ten years."
@@ -276,7 +261,7 @@
     - "media/images/content/blog/thumbnails/seminar-room.jpg"
 
 "media/images/content/blog/staff-room.jpg":
-  alt: ""
+  alt: "Teacher in a staff room talking to two colleagues sat on a sofa."
   variants:
     - "media/images/content/blog/thumbnails/staff-room.jpg"
 
