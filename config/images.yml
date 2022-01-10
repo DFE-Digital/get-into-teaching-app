@@ -279,3 +279,8 @@
   alt: ""
   variants:
     - "media/images/content/blog/thumbnails/whiteboard.jpg"
+
+"media/images/content/blog/fellowship.jpg":
+  alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
+  variants:
+    - "media/images/content/blog/thumbnails/fellowship.jpg"
