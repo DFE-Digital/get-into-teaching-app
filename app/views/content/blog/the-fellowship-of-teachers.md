@@ -48,7 +48,7 @@ Mike: My teaching assistant suggested giving out different badges at the end of 
  
 ## Dare we ask, who’s stricter?
 
-Mike: I think Phil is probably more vigilant than me…
+Mike: I think Phil is probably more vigilant than me …
 
 Phil: Underneath it, I’m a big softie though!
  
