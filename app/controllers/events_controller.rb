@@ -10,10 +10,10 @@ class EventsController < ApplicationController
   MAXIMUM_EVENTS_PER_CATEGORY = 1_000
 
   def index
-    @page_title = "Find an event near you"
+    @page_title = "Teacher training events"
     @front_matter = {
       "description" => "Get your questions answered at an event.",
-      "title" => "Find an event near you",
+      "title" => "Teacher training events",
       "image" => "media/images/content/hero-images/0002.jpg",
     }
 
@@ -21,7 +21,7 @@ class EventsController < ApplicationController
   end
 
   def search
-    @page_title = "Find an event near you"
+    @page_title = "Teacher training events"
     @front_matter = { "description" => "Get your questions answered at an event." }
 
     render "index", layout: "events"
