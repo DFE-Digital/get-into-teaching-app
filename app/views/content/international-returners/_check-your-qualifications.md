@@ -1,5 +1,5 @@
 If you completed your initial teacher training in England, you should already
-have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+have [qualified teacher status (QTS)](/what-is-qts).
 You can check your [QTS on the Database of Qualified Teachers (DQT)](https://teacherservices.education.gov.uk/SelfService/Login).
 
 If you have been working as an unqualified teacher overseas, you should be
