@@ -233,16 +233,22 @@ $slightly-darker-grey: darken($grey, 10%);
       &--left {
         @include font-size(xsmall);
         flex: 1 1 30%;
-        padding: .2em 1em .2em 4.3em;
-        background: url(../images/icon-calendar.svg) no-repeat left center;
-        background-size: 2em;
-        background-position: 1em;
+        padding: .4em 1em;
+
+        @include mq($from: mobile) {
+          padding: .2em 1em .2em 4.3em;
+          background: url(../images/icon-calendar.svg) no-repeat left center;
+          background-size: 2em;
+          background-position: 1em;
+        }
       }
 
       &--right {
         $adjust: 1em;
         $unskew-amount: 12deg;
         $skew-amount: -12deg;
+
+        align-self: flex-start;
 
         text-align: center;
         padding: 1.2rem;
@@ -301,37 +307,42 @@ $slightly-darker-grey: darken($grey, 10%);
       .event__info {
         flex-basis: 60%;
         padding: 0;
+        gap: 1em;
 
-        &__date-and-time,
-        &__name,
-        &__location,
-        &__setting {
-          padding-left: 3rem;
-          min-height: 2em;
-        }
+        @include mq($from: mobile) {
+          gap: 2em;
 
-        &__date-and-time {
-          background: url(../images/icon-calendar.svg) no-repeat left center;
-          background-size: 2em;
-        }
-
-        &__name {
-          min-height: 4rem;
-
-          @include mq($from: tablet) {
-            min-height: initial;
-          }
-        }
-
-        &__setting {
-          background-size: 2.4em;
-
-          &.online {
-            background: url(../images/icon-online-black.svg) no-repeat left center;
+          &__date-and-time,
+          &__name,
+          &__location,
+          &__setting {
+            padding-left: 3rem;
+            min-height: 2em;
           }
 
-          &.in-person {
-            background: url(../images/icon-building.svg) no-repeat left center;
+          &__date-and-time {
+            background: url(../images/icon-calendar.svg) no-repeat left center;
+            background-size: 2em;
+          }
+
+          &__name {
+            min-height: 4rem;
+
+            @include mq($from: tablet) {
+              min-height: initial;
+            }
+          }
+
+          &__setting {
+            background-size: 2.4em;
+
+            &.online {
+              background: url(../images/icon-online-black.svg) no-repeat left center;
+            }
+
+            &.in-person {
+              background: url(../images/icon-building.svg) no-repeat left center;
+            }
           }
         }
       }
@@ -359,24 +370,29 @@ $slightly-darker-grey: darken($grey, 10%);
         &__location {
           @include font-size(xsmall);
 
-          padding: 1em 1em 1em 2.5rem;
-        }
-
-        &__setting {
-          &.online {
-            background: url(../images/icon-online-black.svg) no-repeat left center;
-            background-size: 2em;
-          }
-
-          &.in-person {
-            background: url(../images/icon-building.svg) no-repeat left center;
-            background-size: 1.6em;
+          @include mq($from: mobile) {
+            padding: 1em 1em 1em 2.5rem;
           }
         }
 
-        &__location {
-          background: url(../images/icon-pin.svg) no-repeat left center;
-          background-size: 1.2em;
+        @include mq($from: mobile) {
+
+          &__setting {
+            &.online {
+              background: url(../images/icon-online-black.svg) no-repeat left center;
+              background-size: 2em;
+            }
+
+            &.in-person {
+              background: url(../images/icon-building.svg) no-repeat left center;
+              background-size: 1.6em;
+            }
+          }
+
+          &__location {
+            background: url(../images/icon-pin.svg) no-repeat left center;
+            background-size: 1.2em;
+          }
         }
       }
     }
