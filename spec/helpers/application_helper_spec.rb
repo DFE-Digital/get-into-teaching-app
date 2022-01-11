@@ -207,4 +207,22 @@ describe ApplicationHelper do
 
     it { is_expected.to eq({ paths: ["/test/a", "/test/b", "/events", "/teaching-events"] }) }
   end
+
+  describe "#sentry_dsn" do
+    subject { sentry_dsn }
+
+    it { is_expected.to be_nil }
+
+    context "when sentry dsn exist" do
+      before { allow(Sentry.configuration).to receive(:dsn).and_return(OpenStruct.new(raw_value: "1234")) }
+
+      it { is_expected.to eq("1234") }
+
+      context "when production" do
+        before { allow(Rails).to receive(:env) { "production".inquiry } }
+
+        it { is_expected.to be_nil }
+      end
+    end
+  end
 end
