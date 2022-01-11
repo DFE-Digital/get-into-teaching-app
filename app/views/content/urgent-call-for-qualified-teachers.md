@@ -40,6 +40,12 @@ agencies:
     phone: 0121 616 7610
     website: https://www.academicsltd.co.uk/
     address: 1st Floor, 30 St Pauls Square, Birmingham, West Midlands, B3 1QZ
+  - name: ABC Teachers
+    email: Darren.starling@visinoforeducation.co.uk
+    branch: East Midlands
+    phone: 01543 410 500
+    website: https://www.abc-teachers.co.uk/
+    address: St Chad's House, Cross Keys, Lichfield, WS13 6DN
   - name: Affinity Workforce Solutions Ltd t/a Monarch Education and CER Education Recruitment
     email: Sophy.green@monarcheducation.com
     branch: Monarch Education Nottingham
@@ -593,6 +599,13 @@ agencies:
     website: https://www.visionforeducation.co.uk/
     address: Unit 2, Forward House,, Aston Business Park, Shrewsbury Avenue, Peterborough,
       Cambridgeshire, PE2 7BX
+  - name: Vision for Education
+    email: darren.starling@visionforeducation.co.uk
+    branch: Cambridge
+    phone: 01223 608 140
+    website: https://www.visionforeducation.co.uk/
+    address: Suite 6B, Enterprise House, Vision Park, Chivers Way, Histon, Cambridge,
+      CB24 9ZR
   Greater London:
   - name: 3D Recruit
     email: education@3drecruit.com
@@ -976,13 +989,7 @@ agencies:
     website: https://schoolhouserecruitment.co.uk/
     address: Connaught House, 112-120 High Road, Loughton, Essex, IG10 4HJ
   - name: Smart Teachers
-    email: darren.starling@V4e.co.uk
-    branch: London
-    phone: 020 7065 7500
-    website: https://www.smartteachers.co.uk/
-    address: Salisbury House, 29 Finsbury Circus, London, EC2M 5QQ
-  - name: Smart Teachers
-    email: andrea.musty@smartteachers.co.uk
+    email: Darren.starling@visionforeducation.co.uk
     branch: London
     phone: 020 7065 7500
     website: https://www.smartteachers.co.uk/
@@ -1235,12 +1242,6 @@ agencies:
       and Wear, SR6 0AN
   - name: Vision for Education
     email: darren.starling@visionforeducation.co.uk
-    branch: Durham
-    phone: '0191 267 4555'
-    website: https://www.visionforeducation.co.uk/
-    address: Rivergreen Centre, Aykley Heads, Durham, DH1 5TS
-  - name: Vision for Education
-    email: darren.starling@visionforeducation.co.uk
     branch: Newcastle
     phone: '0191 267 5900'
     website: https://www.visionforeducation.co.uk/
@@ -1251,13 +1252,8 @@ agencies:
     branch: Teesside
     phone: 0164 224 3843
     website: https://www.visionforeducation.co.uk/
-    address: Co-operative Buildings, 251-255 Linthorpe Rd, Middlesbrough, TS1 4AT
-  - name: Vision for Education
-    email: darren.starling@visionforeducation.co.uk
-    branch: Teesside SEND
-    phone: 0164 269 4117
-    website: https://www.visionforeducation.co.uk/
-    address: Fusion Hive, North Shore Road, Stockton on Tees, Cleveland, TS18 2NB
+    address: Level Q, Sheraton House, Unit 2A Surtees Business Park, Stockton-on-Tees,
+      TS18 3HR
   North West:
   - name: A-Day Consultants t/a Academics, Servoca Education, Classic Education, Academics
       Advance and Term Time Teachers
@@ -1341,6 +1337,12 @@ agencies:
     phone: 0161 839 8005
     website: https://www.careerteachers.co.uk/
     address: Suite 5, 3rd Floor, 1 King Street, Manchester, Greater Manchester, M2 6AW
+  - name: Choice Teachers Limited
+    email: mark@choiceteachers.com
+    branch: Leigh
+    phone: '01942 670745'
+    website:
+    address: 26 Union Street, Leigh, Lancashire, WN7 1AT
   - name: Coyle Personnel plc
     email: ashley.mullin@coyles.co.uk
     branch: Manchester
@@ -1670,12 +1672,6 @@ agencies:
     website: https://www.vetrorecruitment.co.uk/
     address: 301 Tea Factory, St Peters Square, Fleet Street, Liverpool, Merseyside,
       L1 4DQ
-  - name: Vision for Education
-    email: darren.starling@visionforeducation.co.uk
-    branch: Cheshire
-    phone: 0161 273 7475
-    website: https://www.visionforeducation.co.uk/
-    address: Ground Floor Unit 3/4, Tannery Court, Tanners Lane, Warrington, WA2 7NA
   - name: Vision for Education
     email: darren.starling@visionforeducation.co.uk
     branch: Liverpool
@@ -2469,6 +2465,12 @@ agencies:
     phone: 0117 313 3361
     website: https://www.vetrorecruitment.co.uk/
     address: The Quadrant, Aztec West, Bristol, Bristol, BS32 4AQ
+  - name: Vision for Education
+    email: darren.starling@visionforeducation.co.uk
+    branch: Bristol
+    phone: 0117 248 2600
+    website: https://www.visionforeducation.co.uk/
+    address: Regus Castlemead, Lower Castle Street, Bristol, BS1 3AG
   - name: West Country Educational Agency Ltd
     email: staff@westcountryagency.co.uk
     branch: Head Office
@@ -2497,12 +2499,6 @@ agencies:
     phone: '01905 20600'
     website: https://www.academicsltd.co.uk/
     address: 1st Floor, 30 St Pauls Square, Birmingham, B3 1QZ
-  - name: ABC Teachers
-    email: darren.starling@v4e.co.uk
-    branch: Lichfield
-    phone: 01543 410 500
-    website: https://www.abc-teachers.co.uk/
-    address: St Chad's House, Cross Keys, Lichfield, Staffordshire, WS13 6DN
   - name: Academic Choice Limited
     email: info@academicchoice.co.uk
     branch: Academic Choice Limited
@@ -3141,13 +3137,6 @@ agencies:
     website: https://www.visionforeducation.co.uk/
     address: Unit 2, Queensway Business Centre, Dunlop Way, Queensway Industrial Estate,
       Scunthorpe, Lincolnshire, DN16 3RN
-  - name: Vision for Education
-    email: darren.starling@visionforeducation.co.uk
-    branch: York
-    phone: '01904 557627'
-    website: https://www.visionforeducation.co.uk/
-    address: Tower Court Business Centre, Oakdale Road, York, North Yorkshire, YO30
-      4XL
   - name: Vision for Education
     email: darren.starling@visionforeducation.co.uk
     branch: Sheffield
