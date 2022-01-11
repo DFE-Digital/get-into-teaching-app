@@ -233,10 +233,10 @@ $slightly-darker-grey: darken($grey, 10%);
       &--left {
         @include font-size(xsmall);
         flex: 1 1 30%;
-        padding: .2em 1em .2em 3em;
+        padding: .2em 1em .2em 4.3em;
         background: url(../images/icon-calendar.svg) no-repeat left center;
         background-size: 2em;
-        background-position: .5em;
+        background-position: 1em;
       }
 
       &--right {
@@ -365,7 +365,7 @@ $slightly-darker-grey: darken($grey, 10%);
         &__setting {
           &.online {
             background: url(../images/icon-online-black.svg) no-repeat left center;
-            background-size: 1.4em;
+            background-size: 2em;
           }
 
           &.in-person {
@@ -376,7 +376,7 @@ $slightly-darker-grey: darken($grey, 10%);
 
         &__location {
           background: url(../images/icon-pin.svg) no-repeat left center;
-          background-size: 1.4em;
+          background-size: 1.2em;
         }
       }
     }
