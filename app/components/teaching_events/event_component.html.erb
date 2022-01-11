@@ -31,9 +31,13 @@
     </div>
 
     <div class="event__meta">
-      <%= image_pack_tag("media/images/content/event-signup/birmingham-event-2.jpg", class: "event-image", alt: "A popular train to teach event in a hall with stalls and banners" ) %>
+      <div class="event-image">
+        <%= image_pack_tag("media/images/content/event-signup/birmingham-event-2.jpg", alt: "A popular train to teach event in a hall with stalls and banners" ) %>
+      </div>
 
-      <%= image_pack_tag("media/images/dfelogo-black.svg", class: "dfelogo", alt: "This is an official Department for Education event") %>
+      <div class="dfelogo">
+        <%= image_pack_tag("media/images/dfelogo-black.svg", alt: "This is an official Department for Education event") %>
+      </div>
     </div>
 
   <% else %>

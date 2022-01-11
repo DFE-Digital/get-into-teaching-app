@@ -202,21 +202,23 @@ $slightly-darker-grey: darken($grey, 10%);
       gap: 1em;
       margin-bottom: 1em;
 
-      picture {
-        align-self: baseline;
+      @include mq($from: mobile) {
+        gap: 2em;
       }
 
-      img {
-        width: 100%;
-      }
+      .event-image {
+        picture {
+          img {
+            width: 100%;
+            max-height: 8em;
+            object-position: center;
+            object-fit: cover;
 
-      .dfelogo {
-        max-height: 3em;
-      }
-
-      @include mq($from: tablet) {
-        .event-image {
-          align-self: auto;
+            @include mq($from: mobile) {
+              width: 90%;
+              max-height: auto;
+            }
+          }
         }
       }
     }
@@ -252,6 +254,7 @@ $slightly-darker-grey: darken($grey, 10%);
 
         text-align: center;
         padding: 1.2rem;
+        max-height: 3em;
 
         transform: skew($skew-amount) translate($adjust);
         padding-right: 1em + $adjust;
@@ -265,7 +268,7 @@ $slightly-darker-grey: darken($grey, 10%);
 
     &__bottom-bar {
       background: $grey;
-      padding: .2em 1em;
+      padding: .4em 1em;
       display: flex;
 
       &--left {
