@@ -2,6 +2,7 @@ class TeachingEventsController < ApplicationController
   include CircuitBreaker
 
   before_action :setup_filter, only: :index
+  before_action :set_front_matter
 
   FEATURED_EVENT_COUNT = 2 # 2 featured events max on the first page
   EVENT_COUNT = 15 # 15 regular ones per page
@@ -61,5 +62,9 @@ private
 
   def setup_results
     @event_search = TeachingEvents::Search.new(search_params)
+  end
+
+  def set_front_matter
+    @front_matter = { "noindex" => true }
   end
 end
