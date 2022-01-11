@@ -89,11 +89,9 @@ Rails.application.routes.draw do
     end
   end
 
-  unless Rails.env.production?
-    resources "teaching_events", path: "/teaching-events", controller: "teaching_events" do
-      collection do
-        get :about_ttt_events, path: "about-ttt-events", as: "about_ttt"
-      end
+  resources "teaching_events", path: "/teaching-events", controller: "teaching_events" do
+    collection do
+      get :about_ttt_events, path: "about-ttt-events", as: "about_ttt"
     end
   end
 
