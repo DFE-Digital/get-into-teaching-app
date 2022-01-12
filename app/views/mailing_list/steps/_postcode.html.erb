@@ -1,9 +1,14 @@
+<h1>Would you like to hear about teacher training events?</h1>
+
 <%= f.govuk_error_summary %>
 
-<%= f.govuk_text_field :address_postcode, autocomplete: "postal-code", label: { tag: 'h1', size: "xl", text: t('helpers.label.mailing_list_steps_postcode.address_postcode') } do %>
-
 <p>
-  Stay up to date about events in your area.
+  We'll let you know via email about upcoming teacher training events near you
 </p>
 
+<%= f.govuk_radio_buttons_fieldset(:send_event_emails, legend: nil) do %>
+  <%= f.govuk_radio_button :send_event_emails, "true", link_errors: true do %>
+    <%= f.govuk_text_field :address_postcode, autocomplete: "postal-code", label: { text: t('helpers.label.mailing_list_steps_postcode.address_postcode') } %>
+  <% end %>
+  <%= f.govuk_radio_button :send_event_emails, "false" %>
 <% end %>
