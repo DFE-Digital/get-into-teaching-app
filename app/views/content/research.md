@@ -17,7 +17,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Be the career change report summary
-      file_path: media/documents/BeTheCareerChangeCampaign_TeachingJan_Report_vFINAL.pdf 
+      file_path: media/documents/be-the-career-change.pdf
       file_type: PDF
       file_size: 244KB
       published_at: 13 January 2022
