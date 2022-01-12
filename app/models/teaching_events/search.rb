@@ -19,7 +19,9 @@ module TeachingEvents
     attribute :postcode, :string
     attribute :distance, :integer
 
-    validates :postcode, presence: true, postcode: { allow_blank: true, accept_partial_postcode: true }, if: :distance
+    validates :postcode, postcode: { allow_blank: true, accept_partial_postcode: true }
+    validates :postcode, presence: true, if: -> { distance.present? }
+
     validates :distance, inclusion: { in: DISTANCES.values }, allow_nil: true
 
     before_validation { self.distance = nil if distance.blank? }

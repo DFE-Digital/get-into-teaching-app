@@ -37,6 +37,13 @@ describe TeachingEvents::Search do
       context "when distance isn't set" do
         it { is_expected.to allow_value(nil).for(:postcode) }
       end
+
+      context "when distance isn't set but postcode is" do
+        subject { described_class.new(distance: nil) }
+
+        it { is_expected.not_to allow_values("M", "Manchester", "M1-2WD").for(:postcode) }
+        it { is_expected.to allow_value(nil, "").for(:postcode) }
+      end
     end
 
     describe "distance" do
