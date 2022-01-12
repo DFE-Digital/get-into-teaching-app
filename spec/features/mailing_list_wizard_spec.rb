@@ -31,7 +31,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "Would you like to hear about teacher training events?"
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
     choose "Yes"
     fill_in "Your postcode", with: "TE57 1NG"
     click_on "Next step"
@@ -73,7 +73,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "Would you like to hear about teacher training events?"
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
     choose "Yes"
     fill_in "Your postcode", with: "TE57 1NG"
     click_on "Next step"
@@ -135,7 +135,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     )
     click_on "Next step"
 
-    expect(page).to have_text "Would you like to hear about teacher training events?"
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
     choose "Yes"
     click_on "Next step"
 
@@ -262,7 +262,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "Would you like to hear about teacher training events?"
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
     choose "No"
     click_on "Next step"
 
