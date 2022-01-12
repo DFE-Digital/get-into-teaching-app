@@ -3,8 +3,9 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: The environment to deploy to Development/Test/Production/Review/Speed/UR etc
+        description: The environment to deploy to
         required: true
+        type: environment
       sha:
         description: Commit sha to be deployed
         required: true

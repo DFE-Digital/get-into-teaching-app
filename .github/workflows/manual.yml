@@ -4,8 +4,9 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: Development/Test/Production/Speed/UR
+        description: Environment to deploy to
         required: true
+        type: environment
       tag:
         description: Release Tag
         required: true

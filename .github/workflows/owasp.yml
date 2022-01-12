@@ -3,7 +3,8 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: 'The environment to test to eg: dev/test/prod etc'
+        description: 'The environment to test'
+        type: environment
         required: true
 
 jobs:
