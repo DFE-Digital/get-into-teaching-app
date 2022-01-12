@@ -42,6 +42,7 @@ SecureHeaders::Configuration.default do |config|
   snapchat  = %w[*.snapchat.com sc-static.net]
   twitter   = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
   youtube   = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
+  sentry    = %w[*.ingest.sentry.io]
 
   quoted_unsafe_inline = ["'unsafe-inline'"]
   quoted_unsafe_eval   = ["'unsafe-eval'"]
@@ -56,7 +57,7 @@ SecureHeaders::Configuration.default do |config|
     default_src: %w['none'],
     base_uri: ["'self'"],
     child_src: ["'self'"].concat(youtube, pinterest, snapchat, hotjar),
-    connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk, snapchat),
+    connect_src: ["'self'"].concat(pinterest, hotjar, google_analytics, google_supported, google_doubleclick, facebook, tta_service_hosts, zendesk, snapchat, sentry),
     font_src: ["'self'"].concat(govuk, data, %w[fonts.gstatic.com]),
     form_action: ["'self'"].concat(snapchat, facebook, govuk),
     frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data, pinterest, optimize),

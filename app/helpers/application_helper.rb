@@ -90,4 +90,10 @@ module ApplicationHelper
       YAML.safe_load(File.read(Rails.root.join("config/google_optimize.yml")))
         .deep_symbolize_keys
   end
+
+  def sentry_dsn
+    return nil if Rails.env.production?
+
+    Sentry.configuration.dsn&.to_s
+  end
 end
