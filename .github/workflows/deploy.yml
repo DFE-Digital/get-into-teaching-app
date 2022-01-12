@@ -34,26 +34,13 @@ jobs:
                 CONTENT-KEYS 
                 INFRA-KEYS
 
-  turnstyle:
-    name: Wait for any previous deployments
-    timeout-minutes: 20
-    runs-on: ubuntu-latest
-    needs: validate
-    steps:
-      - name: Turnstyle
-        uses: softprops/turnstyle@v1
-        with:
-          continue-after-seconds: 300
-          same-branch-only: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
   deploy:
     name: Deploy ${{ github.event.inputs.environment }}
     environment: 
        name: ${{ github.event.inputs.environment }}
     runs-on: ubuntu-latest
-    needs: turnstyle
+    needs: validate
+    concurrency: ${{github.event.inputs.environment}}_${{github.event.inputs.pr}}
 
     defaults:
       run:
@@ -156,13 +143,6 @@ jobs:
       - uses: hashicorp/setup-terraform@v1.3.2
         with:
           terraform_version: 0.14.9
-
-      - name: Wait for any previous runs to complete
-        uses: softprops/turnstyle@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          continue-after-seconds: 180
 
       - name: Start ${{ github.event.inputs.environment }} Deployment
         uses: bobheadxi/deployments@v0.6.2
