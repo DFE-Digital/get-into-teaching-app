@@ -1,16 +1,25 @@
 name: Deploy to PaaS
 on:
-  workflow_dispatch:
+  workflow_call:
+    secrets:
+      AZURE_CREDENTIALS:
+        required: true
+      KEY_VAULT:
+        required: true
+      ARM_ACCESS_KEY:
+        required: true
     inputs:
       environment:
         description: The environment to deploy to
+        type: string
         required: true
-        type: environment
       sha:
         description: Commit sha to be deployed
+        type: string
         required: true
       pr:
         description: Pull Request Reference
+        type: string
         required: false
 
 jobs:

@@ -14,14 +14,48 @@ on:
 jobs:
   manual:
     name: Deploy to ${{github.event.inputs.environment}}
-    environment:
-       name: ${{github.event.inputs.environment}}
+    outputs:
+      release_sha:  ${{ steps.tag_id.outputs.release_sha }}
+      release_id:   ${{ steps.tag_id.outputs.release_id }}
+      release_name: ${{ steps.tag_id.outputs.release_name }}
+      release_body: ${{ steps.tag_id.outputs.release_body }}
 
     runs-on: ubuntu-latest
     defaults:
       run:
         shell: bash
     steps:
+      - name: Get Release Id from Tag
+        id: tag_id
+        uses: DFE-Digital/github-actions/DraftReleaseByTag@master
+        with:
+          TAG: ${{ github.event.inputs.tag }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Check if found
+        if: steps.tag_id.outputs.release_id == ''
+        run: |
+             echo "::error ::Tag ${{ github.event.inputs.tag }} cannot be found in releases"
+             exit 1
+
+  deploy:
+    needs: manual
+    name: Trigger Deployment to ${{github.event.inputs.environment}}
+    uses: DFE-Digital/get-into-teaching-app/.github/workflows/deploy.yml@workflow/improvements
+    with:
+       environment: ${{github.event.inputs.environment}}
+       sha:         ${{needs.manual.outputs.release_sha}}
+    secrets:
+       AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+       KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+       ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY}}
+
+  inform:
+    if:      success()
+    runs-on: ubuntu-latest
+    needs:   [manual , deploy]
+    steps:
+
       - name: Checkout
         uses: actions/checkout@v2.4.0
 
@@ -33,11 +67,37 @@ jobs:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: ACTIONS-API-ACCESS-TOKEN
+        id: SLACK-RELEASE-NOTE-WEBHOOK
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           yaml_secret: INFRA-KEYS
-          secret: ACTIONS-API-ACCESS-TOKEN
+          secret: SLACK-RELEASE-NOTE-WEBHOOK
+
+      - name: Slack Release Notification
+        if: needs.manual.outputs.release_id && github.event.inputs.environment == 'Production'
+        uses: rtCamp/action-slack-notify@master
+        env:
+          SLACK_COLOR: ${{env.SLACK_SUCCESS}}
+          SLACK_TITLE: "Release Published to ${{github.event.inputs.environment}}: ${{needs.manual.outputs.release_name}}"
+          SLACK_MESSAGE: ${{ fromJson( needs.manual.outputs.release_body) }}
+          SLACK_WEBHOOK: ${{ steps.SLACK-RELEASE-NOTE-WEBHOOK.outputs.secret-value }}
+          MSG_MINIMAL: true
+
+  alert:
+    if:      failure()
+    runs-on: ubuntu-latest
+    needs:   [manual , deploy]
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
         id: SLACK-WEBHOOK
@@ -46,65 +106,11 @@ jobs:
           yaml_secret: INFRA-KEYS
           secret: SLACK-WEBHOOK
 
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: SLACK-RELEASE-NOTE-WEBHOOK
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: SLACK-RELEASE-NOTE-WEBHOOK
-
-      - name: Get Release Id from Tag
-        id: tag_id
-        uses: DFE-Digital/github-actions/DraftReleaseByTag@master
-        with:
-          TAG: ${{ github.event.inputs.tag }}
-          TOKEN: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-
-      - name: Check if found
-        if: steps.tag_id.outputs.release_id == ''
-        run: |
-             echo "::error ::Tag ${{ github.event.inputs.tag }} cannot be found in releases"
-             exit 1
-
-      - name: Trigger Deployment to ${{github.event.inputs.environment}}
-        uses: benc-uk/workflow-dispatch@v1.1
-        with:
-          workflow: Deploy to PaaS
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          inputs: '{"environment": "${{github.event.inputs.environment}}" , "sha": "${{steps.tag_id.outputs.release_sha}}"  }'
-          ref: "${{github.ref}}"
-
-      - name: Wait for Deployment to ${{github.event.inputs.environment}}
-        uses: fountainhead/action-wait-for-check@v1.0.0
-        id: wait-for-deploy
-        with:
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          checkName: Deploy ${{github.event.inputs.environment}}
-          ref: "${{github.ref}}"
-
-      - name: Check if ${{github.event.inputs.environment}} Deployment has returned with a failure
-        if: steps.wait-for-deploy.outputs.conclusion == 'failure'
-        run: exit 1
-
-      - name: Check if ${{github.event.inputs.environment}} Deployment has returned with a time out
-        if: steps.wait-for-deploy.outputs.conclusion == 'timed_out'
-        run: exit 1
-
-      - name: Slack Release Notification
-        if: steps.tag_id.outputs.release_id && github.event.inputs.environment == 'Production'
-        uses: rtCamp/action-slack-notify@master
-        env:
-          SLACK_COLOR: ${{env.SLACK_SUCCESS}}
-          SLACK_TITLE: "Release Published to ${{github.event.inputs.environment}}: ${{steps.tag_id.outputs.release_name}}"
-          SLACK_MESSAGE: ${{ fromJson( steps.tag_id.outputs.release_body) }}
-          SLACK_WEBHOOK: ${{ steps.SLACK-RELEASE-NOTE-WEBHOOK.outputs.secret-value }}
-          MSG_MINIMAL: true
-
       - name: Slack Notification
-        if: failure() && github.event.inputs.environment == 'Production'
+        if: github.event.inputs.environment == 'Production'
         uses: rtCamp/action-slack-notify@master
         env:
           SLACK_COLOR: ${{env.SLACK_FAILURE}}
-          SLACK_TITLE: "Manual Release Failed: ${{steps.tag_id.outputs.release_name}}"
+          SLACK_TITLE: "Manual Release Failed: ${{needs.manual.outputs.release_name}}"
           SLACK_MESSAGE: Failure deploying ${{github.event.inputs.environment}} release
           SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}
