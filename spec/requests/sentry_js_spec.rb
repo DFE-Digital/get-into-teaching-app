@@ -14,11 +14,5 @@ describe "Sentry JS", type: :request do
 
     it { is_expected.to include(%(data-sentry-dsn="1234")) }
     it { is_expected.to include(%(data-sentry-environment="test")) }
-
-    context "when production" do
-      before { allow(Rails).to receive(:env) { "production".inquiry } }
-
-      it { is_expected.not_to include("data-sentry-dsn") }
-    end
   end
 end

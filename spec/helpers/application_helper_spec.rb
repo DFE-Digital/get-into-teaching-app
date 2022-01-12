@@ -217,12 +217,6 @@ describe ApplicationHelper do
       before { allow(Sentry.configuration).to receive(:dsn).and_return("1234") }
 
       it { is_expected.to eq("1234") }
-
-      context "when production" do
-        before { allow(Rails).to receive(:env) { "production".inquiry } }
-
-        it { is_expected.to be_nil }
-      end
     end
   end
 end
