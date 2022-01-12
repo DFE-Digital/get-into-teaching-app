@@ -94,6 +94,6 @@ module ApplicationHelper
   def sentry_dsn
     return nil if Rails.env.production?
 
-    Sentry.configuration.dsn&.raw_value
+    Sentry.configuration.dsn&.to_s
   end
 end

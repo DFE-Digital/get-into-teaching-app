@@ -10,7 +10,7 @@ describe "Sentry JS", type: :request do
   it { is_expected.to include(%(data-sentry-environment="test")) }
 
   context "when a Sentry DSN is set" do
-    before { allow(Sentry.configuration).to receive(:dsn).and_return(OpenStruct.new(raw_value: "1234")) }
+    before { allow(Sentry.configuration).to receive(:dsn).and_return("1234") }
 
     it { is_expected.to include(%(data-sentry-dsn="1234")) }
     it { is_expected.to include(%(data-sentry-environment="test")) }
