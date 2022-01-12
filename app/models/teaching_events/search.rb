@@ -31,7 +31,7 @@ module TeachingEvents
 
   private
 
-    def query(limit: 12)
+    def query(limit: 100)
       conditions = {
         type_ids: type_condition,
         postcode: postcode_condition,
