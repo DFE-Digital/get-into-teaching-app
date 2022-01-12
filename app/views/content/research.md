@@ -116,7 +116,7 @@ keywords:
 
 ## Be The Career Change: exploring how people are feeling about their careers
 
-Kindred Agency commissioned Censuswide to carry out a survey on behalf of the Get Into Teaching campaign exploring the views of the working population in England. The purpose was to gain insights on how people are feeling about their careers two years on from the onset of the pandemic
+Kindred Agency commissioned Censuswide to carry out a survey on behalf of the Get Into Teaching campaign exploring the views of the working population in England. The purpose was to gain insights on how people are feeling about their careers two years on from the onset of the pandemic.
 
 $be-the-career-change$
 
