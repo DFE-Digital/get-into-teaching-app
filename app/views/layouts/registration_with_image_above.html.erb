@@ -2,7 +2,6 @@
 <html lang="en" class="govuk-template">
   <% content_for :head do %>
     <%= csrf_meta_tags %>
-    <%= javascript_pack_tag 'govuk/error_summary', 'data-turbolinks-track': 'reload', async: true %>
   <% end %>
 
   <%= render "sections/head" %>
@@ -26,5 +25,6 @@
     </main>
 
     <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
+    <%= javascript_pack_tag 'govuk/frontend', 'data-turbolinks-track': 'reload', async: true %>
   <% end %>
 </html>
