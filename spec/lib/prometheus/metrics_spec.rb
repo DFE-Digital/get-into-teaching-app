@@ -107,6 +107,7 @@ describe Prometheus::Metrics do
       app: "app-name",
       organisation: "org-name",
       space: "space-name",
+      app_instance: "app-instance",
     }
   end
 end
