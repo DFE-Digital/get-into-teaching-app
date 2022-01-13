@@ -48,6 +48,9 @@ interviews. A [teacher training adviser](/tta-service) can help you with all of 
 
 Search [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
+Course providers will help you gain your [qualified teacher status (QTS)](/what-is-qts) which is what you need to teach in most schools in England. Many also help you work 
+towards a [PGCE or PGDE](/what-is-a-pgce).
+
 ## Where to apply
 
 When you're ready, you can [apply for teacher training](https://www.gov.uk/apply-for-teacher-training).
