@@ -128,7 +128,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
         All prices include VAT unless marked as exVAT
 
-        Find out more about <span id="vat" title="VAT">VAT</a>
+        Find out more about <span id="vat" title="VAT">VAT</span>
       MARKDOWN
     end
 
@@ -137,13 +137,8 @@ describe TemplateHandlers::Markdown, type: :view do
       render template: "frontmatter"
     end
 
-    it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
+    it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT", count: 1 }
     it { is_expected.to match "exVAT" } # check it honours word boundaries
-
-    it do
-      is_expected.to have_css \
-        "span[title=\"VAT\"] abbr[title=\"Value added tax\"]", text: "VAT"
-    end
   end
 
   describe "global frontmatter" do
