@@ -185,4 +185,4 @@ Contact the education authority if you live in the Channel Islands ([Jersey](htt
 
 If you’re not a UK citizen, you are unlikely to get help funding your training unless you have permission to [live permanently in the UK](https://www.gov.uk/browse/visas-immigration/settle-in-the-uk), for example under the EU Settlement Scheme. You will also need to meet some other eligibility requirements.
 
-<a class="button" href ="/train-to-teach-in-england-as-an-international-student">Find out about funding for non-UK citizens.</a>
+<a class="button" href ="/train-to-teach-in-england-as-an-international-student">Find out about funding for non-UK citizens</a>
