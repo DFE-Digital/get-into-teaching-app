@@ -21,7 +21,7 @@ keywords:
 
 PGCEs and PGDEs are teaching qualifications. They stand for ‘postgraduate certificate in education’, and 'postgraduate diploma in education'.
 
-## Getting your PGCE
+## PGCE
 
 The course you take to get a PGCE is a mixture of learning education theory, and school placements where you will be put in a classroom to learn from experience.
 
@@ -35,7 +35,7 @@ You can do a PGCE course at a university, or through a school-led teacher traini
 
 You can do a PGCE in primary education, secondary education, or further/adult education.
 
-## Postgraduate diploma in education (PGDE)
+## PGDE
 
 A PGDE course is very similar to a PGCE, the difference being the amount of academic credits you are awarded at the end of your course.
 
