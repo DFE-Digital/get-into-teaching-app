@@ -1,7 +1,6 @@
 ActiveSupport::Notifications.subscribe "process_action.action_controller" do |*args|
   event = ActiveSupport::Notifications::Event.new(*args)
   payload = event.payload.symbolize_keys.reject { |_, v| v.nil? }
-
   prometheus = Prometheus::Client.registry
 
   labels = { path: nil, method: nil, status: nil }

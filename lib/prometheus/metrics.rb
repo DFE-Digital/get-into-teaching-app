@@ -5,6 +5,7 @@ module Prometheus
         app: Rails.application.config.x.vcap_app["application_name"],
         organisation: Rails.application.config.x.vcap_app["organization_name"],
         space: Rails.application.config.x.vcap_app["space_name"],
+        app_instance: ENV["CF_INSTANCE_INDEX"],
       }
     end
 
