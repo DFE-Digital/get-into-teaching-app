@@ -1,0 +1,11 @@
+<%= tag.header(class: classes) do %>
+  <section class="container">
+    <%= tag.h1 do %>
+      <% Array.wrap(title).each do |p| %>
+        <%= tag.span(p) %><br>
+      <% end %>
+    <% end %>
+
+    <%= header_image %>
+  </section>
+<% end %>

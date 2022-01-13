@@ -16,69 +16,6 @@
     }
   }
 
-  .badges {
-    display: flex;
-    gap: .4em;
-    padding-block: .8em;
-    padding-right: 2em;
-    flex-direction: column;
-    align-items: flex-start;
-    border-left: 1px solid $grey-mid;
-    overflow-x: hidden;
-    min-height: 4em;
-  }
-
-  .badge {
-    $skew-amount: -10deg;
-    $unskew-amount: 10deg;
-
-    padding: .4em;
-    display: inline-block;
-    transform: skewx($skew-amount);
-    margin-left: -1em;
-    padding-left: 1.5em;
-    padding-right: 1em;
-    font-weight: bold;
-
-    .badge-text {
-      transform: skew($unskew-amount);
-
-      abbr {
-        text-underline-offset: .2em;
-      }
-    }
-
-    &.pink {
-      color: $white;
-      border: 1px solid $pink-dark;
-      background: $pink-dark;
-    }
-
-    &.dark-cyan {
-      color: $white;
-      border: 1px solid $dark-cyan;
-      background: $dark-cyan;
-    }
-
-    &.yellow {
-      color: $black;
-      border: 1px solid $yellow;
-      background: $yellow;
-    }
-
-    &.dark-blue {
-      color: $white;
-      border: 1px solid $blue-dark;
-      background: $blue-dark;
-    }
-
-    &.purple {
-      color: $white;
-      border: 1px solid $purple;
-      background: $purple;
-    }
-  }
-
   $space-between-definitions: 1.5em;
 
   dl {

@@ -1,0 +1,197 @@
+<article>
+  <section class="statement">
+    <div>
+      <span class="pink xlarge bold">Maths is&hellip;</span>
+    </div>
+
+    <div>
+      <span class="pink medium bold">
+        <ul class="slashed-list">
+          <li>going into space</li>
+          <li>getting a mortgage</li>
+          <li>predicting the future</li>
+        </ul>
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <h2>The language of everything</h2>
+
+    <p>
+      Maths is the language we use to find patterns and understand the world
+      around us. It has provided the solutions to some of history's most
+      intriguing problems.
+    </p>
+
+    <p>
+      Maths is essential to everyday life, critical to science, technology and
+      engineering as well as being fundamental for most jobs.
+    </p>
+
+    <p>
+      Maths has a critical role to play in the future of the UK economy. There is
+      significant evidence that adults with numeracy skills earn higher wages and
+      are more likely to be in employment than those who do not master these skills.
+    </p>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithTwoImagesComponent.new(
+    heading: "Maths is for everyone",
+    colour: "pink",
+    image_1_path: "media/images/content/hero-images/0017.jpg",
+    image_1_alt: "A teacher sitting with a student helping them with a maths problem",
+    image_2_path: "media/images/content/hero-images/0004.jpg",
+    image_2_alt: "A maths teacher standing at the front of a full classroom delivering a lesson",
+  ) do %>
+
+    <p>
+      If maths is your passion, you know that it is not just learning formulas or
+      equations. It is a way of thinking, and problem solving, that’s important
+      in every walk of life.
+    </p>
+
+    <p>
+      An exciting career spent passing your passion on to the next generation
+      could be the career for you.
+    </p>
+  <% end %>
+
+  <section>
+    <figure>
+      <blockquote class="pink-quotes">
+        <p class="bold">
+          You can literally change young people’s lives by being a maths teacher.
+          Be the person who helps them see the beauty and importance of maths.
+          It is the best job ever!
+        </p>
+      </blockquote>
+
+      <figcaption>Kevin, maths teacher in Sheffield</figcaption>
+    </figure>
+  </section>
+
+  <section class="columns">
+    <div>
+      <h2>What you'll be teaching</h2>
+
+      <p>
+        In England, there are important aspects of maths to teach each age
+        group. As a secondary school teacher, maths education means teaching
+        pupils:
+      </p>
+    </div>
+
+    <div>
+      <div class="badges">
+        <div class="badge pink">
+          <div class="badge-text">
+            Numbers
+          </div>
+        </div>
+        <div class="badge dark-cyan">
+          <div class="badge-text">
+            Algebra
+          </div>
+        </div>
+        <div class="badge purple">
+          <div class="badge-text">
+            Ratio, portion and rates of change
+          </div>
+        </div>
+        <div class="badge pink">
+          <div class="badge-text">
+            Geometry and measures
+          </div>
+        </div>
+        <div class="badge dark-cyan">
+          <div class="badge-text">
+            Probability
+          </div>
+        </div>
+        <div class="badge purple">
+          <div class="badge-text">
+            Statistics
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Some examples of what you teach 11 to 14 year olds:</h2>
+
+    <ul>
+      <li>
+        understand that the probabilities of all possible outcomes sum to 1
+      </li>
+      <li>
+        work with terminating decimals and their equivalent fractions (such as
+        0.25 and 1/4, or 3.5 and 7/2)
+      </li>
+      <li>
+        recognise, sketch and produce graphs of linear and quadratic functions.
+        Use appropriate scaling with equations in <var>x</var> and <var>y</var>
+        and the Cartesian plane
+      </li>
+      <li>
+        use Pythagoras' Theorem and trigonometric ratios in similar triangles.
+        Solve problems involving right-angled triangles
+      </li>
+      <li>
+        describe simple mathematical relationships between 2 variables in
+        observational and experimental contexts. Show this using scatter graphs
+      </li>
+    </ul>
+
+    <p>
+      <a href="https://www.gov.uk/government/publications/national-curriculum-in-england-mathematics-programmes-of-study/national-curriculum-in-england-mathematics-programmes-of-study#key-stage-3">
+        Read the full national curriculum for more information about teaching maths in secondary schools.
+      </a>
+    </p>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithOneImageComponent.new(
+    heading: "Getting into teacher training",
+    colour: "yellow",
+    image_path: "media/images/content/hero-images/0009.jpg",
+    image_alt: "A teacher standing at the front of her classroom teaching a class",
+  ) %>
+
+  <section>
+    <h2>Funding for teaching maths</h2>
+
+    <p>
+      <a href="/funding-your-training">Funding (money you do not have to pay
+      back)</a> is available for training to be a maths teacher.
+    </p>
+  </section>
+
+  <section>
+    <h2>Improving your maths subject knowledge</h2>
+
+    <p>
+      If you need to brush up on how well you know your subject before you
+      become a maths teacher, you can do a subject knowledge enhancement
+      course.
+    </p>
+
+    <a href="/improve-your-subject-knowledge">
+      Find out about subject knowledge enhancement courses.
+    </a>
+  </section>
+
+  <section>
+    <h2>Pass on your passion</h2>
+
+    <p>Sign up to our mailing list for regular updates on:</p>
+
+    <ul>
+      <li>what it's like to be a teacher</li>
+      <li>different ways to train</li>
+      <li>teacher training events you can attend</li>
+    </ul>
+
+    <%= link_to("Register for updates", mailing_list_steps_path, class: "button") %>
+  </section>
+</article>

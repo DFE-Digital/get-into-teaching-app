@@ -16,6 +16,7 @@ class PagesController < ApplicationController
     "layouts/home",
     "layouts/accordion",
     "layouts/steps",
+    "layouts/minimal",
     "layouts/stories/landing",
     "layouts/stories/list",
     "layouts/stories/story",
