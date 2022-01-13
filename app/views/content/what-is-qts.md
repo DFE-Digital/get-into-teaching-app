@@ -24,15 +24,16 @@ Qualified teacher status (QTS) is what you need to teach in most primary and sec
 
 It is a confirmation that you have the right training and meet the standards required to be a teacher.
 
+QTS is a teaching standard that is respected across the world. Having QTS means you can move around the country and teach in any state school.
+
 ## How to get QTS
 
-All postgraduate teacher training courses in England lead to QTS. You can see the different types of courses available by [searching for postgraduate teacher training]
-(https://www.gov.uk/find-postgraduate-teacher-training-courses).
+All postgraduate teacher training courses in England lead to QTS. You can see the different types of courses available by [searching for postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
 Entry requirements for QTS courses include having an undergraduate degree and GCSEs at level 4/grade C or above in Maths and English. You’ll also need a level 4/grade C or above
-in Science if you want to be a primary school teacher. As well as offering QTS, many courses also offer a PGCE or PGDE. Find out about [PGCE and PGDE](/what-is-a-pgce).
+in Science if you want to be a primary school teacher.
 
-QTS is a teaching standard that is respected across the world. Having QTS means you can move around the country and teach in any state school.
+As well as offering QTS, many courses also offer a PGCE or PGDE. Find out about [PGCE and PGDE](/what-is-a-pgce).
 
 ## Assessment only route to QTS
 
