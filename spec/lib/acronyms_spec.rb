@@ -4,17 +4,17 @@ require "acronyms"
 describe Acronyms, type: :helper do
   subject { described_class.new(content, acronyms).render }
 
-  let(:content) { "All prices include VAT except where marked exVAT" }
+  let(:content) { "<p>All prices include VAT except where marked exVAT</p>" }
   let(:acronyms) { { "VAT" => "Value added tax", "HMRC" => "Her Majesty's Revenue and Customs" } }
 
   it { is_expected.to match "marked exVAT" }
   it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
 
   context "with HTML content" do
-    let(:content) { "<span id=\"#vat\" title=\"VAT information\">VAT</span>" }
+    let(:content) { "<p id=\"#vat\" title=\"VAT information\">VAT</p>" }
 
-    it { is_expected.to have_css "span abbr[title=\"Value added tax\"]", text: "VAT" }
-    it { is_expected.to have_css "span[title=\"VAT information\"]" }
+    it { is_expected.to have_css "p abbr[title=\"Value added tax\"]", text: "VAT" }
+    it { is_expected.to have_css "p[title=\"VAT information\"]" }
   end
 
   context "with unknown acronym" do
@@ -30,7 +30,7 @@ describe Acronyms, type: :helper do
   end
 
   context "with multiple acronyms in the same node" do
-    let(:content) { "Taxes you may encounter include VAT and PAYE" }
+    let(:content) { "<p>Taxes you may encounter include VAT and PAYE</p>" }
 
     it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
     it { is_expected.to match "and PAYE" }
@@ -44,10 +44,17 @@ describe Acronyms, type: :helper do
     end
   end
 
-  context "when the acronym is within a hyperlink" do
-    let(:content) { "<span><a href=\"#hmrc\" title=\"Her Majesty's Revenue and Customs\">HMRC</a> have a new VAT system</span>" }
+  describe "only applies the substitution in <p> tags" do
+    { span: 0, div: 0, article: 0, a: 0, p: 2 }.each do |tag, count|
+      context "tag: #{tag}" do
+        let(:content) { "<#{tag}>HMRC have a new VAT system</#{tag}>" }
 
-    it { is_expected.to have_css("abbr", count: 1) }
-    it { is_expected.not_to have_css("abbr", text: "HMRC") }
+        if count > 0
+          it { is_expected.to have_css("abbr", count: count) }
+        else
+          it { is_expected.not_to have_css("abbr") }
+        end
+      end
+    end
   end
 end
