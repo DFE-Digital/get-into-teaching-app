@@ -72,7 +72,7 @@ If you're from outside the UK, find out how you can [come to England to teach](/
 
 With university-led teacher training you spend some of your time in academic learning, but the majority in school placements.
 
-In addition to QTS you'll get a [PGCE or PGDE (an academic qualification)](/what-is-a-pgce).
+In addition to [QTS](/what-is-qts) you'll get a [PGCE or PGDE (an academic qualification)](/what-is-a-pgce).
 
 Courses typically take one year but you may be able to study part-time.
 
