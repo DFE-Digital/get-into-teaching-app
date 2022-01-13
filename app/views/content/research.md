@@ -13,6 +13,14 @@ calls_to_action:
       file_type: PDF
       file_size: 258KB
       published_at: 18 November 2021
+  be-the-career-change:
+    name: attachment
+    arguments:
+      text: Read the Be the career change report summary
+      file_path: media/documents/be-the-career-change.pdf
+      file_type: PDF
+      file_size: 244KB
+      published_at: 13 January 2022
   breakthrough-moments:
     name: attachment
     arguments:
@@ -105,6 +113,12 @@ calls_to_action:
 keywords:
   - Research
 ---
+
+## Be The Career Change: exploring how people are feeling about their careers
+
+Kindred Agency commissioned Censuswide to carry out a survey on behalf of the Get Into Teaching campaign exploring the views of the working population in England. The purpose was to gain insights on how people are feeling about their careers two years on from the onset of the pandemic.
+
+$be-the-career-change$
 
 ## Bring it - exploring the extent to which people feel they can be themselves at work
 
