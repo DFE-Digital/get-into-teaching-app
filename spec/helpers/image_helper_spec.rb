@@ -2,27 +2,17 @@ require "rails_helper"
 
 describe ImageHelper, type: "helper" do
   let(:path) { "a/b/c" }
-  let(:image_double) { instance_double(Image, build_args: {}, alt: "xyz") }
+  let(:alt) { "some alt text" }
+  let(:args) { { some: "args" } }
+  let(:image_double) { instance_double(Image, build_args: [path, args], alt: alt) }
 
-  describe "#image_args" do
-    before do
-      allow(Image).to receive(:new).and_return(image_double)
-      image_args(path)
-    end
+  before { allow(Image).to receive(:new).and_return(image_double) }
 
-    specify "passes the path to Image#build_args" do
-      expect(image_double).to have_received(:build_args).with(path).once
-    end
+  describe "#image_alt" do
+    it { expect(image_alt(path)).to eq(alt) }
   end
 
-  describe "#alt" do
-    before do
-      allow(Image).to receive(:new).and_return(image_double)
-      image_alt(path)
-    end
-
-    specify "passes the path to Image#alt" do
-      expect(image_double).to have_received(:alt).with(path).once
-    end
+  describe "#image_args" do
+    it { expect(image_args(path)).to eq([path, args]) }
   end
 end
