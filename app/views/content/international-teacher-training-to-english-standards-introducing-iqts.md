@@ -116,8 +116,7 @@ To learn more, visit participating iQTS training provider websites.
 
 #### Your placement school
 
-Some iQTs training providers will be able to match you with a placement school in your region. However, others will ask you to find a school as a condition of entry to their course. For more info, check [participating iQTS training provider websites](#choose-your-iQTS-teacher-training-provider).
-
+Some iQTs training providers will be able to match you with a placement school in your region. However, others will ask you to find a school as a condition of entry to their course. For more info, check participating iQTS training provider websites.
 
 ### 3. Apply 
 
@@ -139,7 +138,7 @@ When you have successfully completed your iQTS training, you can apply to Englan
 
 You can apply for teaching jobs in England using the [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service.
 
-To work in England you’ll also need a visa. You will usually need to find a job before you apply for a visa.[Learn more about applying for the correct visa to teach in England](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).
+To work in England you’ll also need a visa. You will usually need to find a job before you apply for a visa. [Learn more about applying for the correct visa to teach in England](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).
 
 #### Complete your induction
 
