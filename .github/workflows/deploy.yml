@@ -13,46 +13,33 @@ on:
         required: false
 
 jobs:
-  validate:
-    name: Validate Secrets
+  deploy:
+    name: Deploy ${{ github.event.inputs.environment }}
     runs-on: ubuntu-latest
     environment:
        name: ${{ github.event.inputs.environment }}
-    steps:
-       - name: Checkout
-         uses: actions/checkout@v2.4.0
-
-       - uses: azure/login@v1
-         with:
-           creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-       - name: Validate Key Vault Secrets
-         uses: DFE-Digital/github-actions/validate-key-vault-secrets@master
-         with:
-           KEY_VAULT: ${{ secrets.KEY_VAULT }}
-           SECRETS: |
-                CONTENT-KEYS 
-                INFRA-KEYS
-
-  deploy:
-    name: Deploy ${{ github.event.inputs.environment }}
-    environment: 
-       name: ${{ github.event.inputs.environment }}
-    runs-on: ubuntu-latest
-    needs: validate
-
     concurrency: ${{github.event.inputs.environment}}_${{github.event.inputs.pr}}
-
     defaults:
       run:
         shell: bash
     steps:
-
       - name: Checkout
         uses: actions/checkout@v2.4.0
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: azure/login@v1
+        with:
+           creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Validate Key Vault Secrets
+        uses: DFE-Digital/github-actions/validate-key-vault-secrets@master
+        with:
+          KEY_VAULT: ${{ secrets.KEY_VAULT }}
+          SECRETS: |
+              CONTENT-KEYS 
+              INFRA-KEYS
 
       - name: Get Short SHA
         id: sha
@@ -115,10 +102,6 @@ jobs:
                  echo ::set-output name=key::"app.production.terraform"
                  echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
              fi
-
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
         id: HTTP-USERNAME
