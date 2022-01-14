@@ -5,6 +5,7 @@ on:
       environment:
         description: 'The environment to test to eg: dev/test/prod etc'
         required: true
+        type: environment
 
 jobs:
   owasp:
