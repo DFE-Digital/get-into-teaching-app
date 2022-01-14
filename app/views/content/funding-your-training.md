@@ -148,7 +148,7 @@ below. You cannot receive both a teaching bursary and a scholarship.
 
 #### If you're a final year undergraduate student
 
-You may be eligible for a [training bursary of £9,000](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2021-to-2022-academic-year#undergraduate-bursary) if you're on a secondary maths or physics course leading to '[qualified teacher status](/ways-to-train)' (QTS).
+You may be eligible for a [training bursary of £9,000](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2021-to-2022-academic-year#undergraduate-bursary) if you're on a secondary maths or physics course leading to '[qualified teacher status](/what-is-qts)' (QTS).
 
 You may also be eligible if you're studying an opt-in QTS course in secondary undergraduate computing, languages, mathematics or physics.
 

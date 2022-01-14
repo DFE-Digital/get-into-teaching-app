@@ -52,7 +52,7 @@ keywords:
   - Teacher training courses
 ---
 
-You need 'qualified teacher status' (QTS) to work as a qualified teacher in the majority of schools in England including state maintained primary, secondary and special schools.
+You need ['qualified teacher status'](/what-is-qts) (QTS) to work in the majority of schools in England including state maintained primary, secondary and special schools.
 
 Find out how to get QTS if you:
 
