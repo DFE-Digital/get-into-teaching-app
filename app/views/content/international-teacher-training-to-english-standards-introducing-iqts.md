@@ -116,17 +116,17 @@ To learn more, visit participating iQTS training provider websites.
 
 #### Your placement school
 
-Some iQTs training providers will be able to match you with a placement school in your region. However, others will ask you to find a school as a condition of entry to their course. For more info, check participating iQTS training provider websites.
+Some iQTS training providers will be able to match you with a placement school in your region. However, others will ask you to find a school as a condition of entry to their course. For more info, check participating iQTS training provider websites.
 
-### 3. Apply 
+### 4. Apply 
 
 To apply for iQTS, visit [participating iQTS training provider websites](#choose-your-iQTS-teacher-training-provider), where you’ll be able to complete your application. 
 
-### 4. Complete your training
+### 5. Complete your training
 
 Your iQTS provider will assess you throughout your training to check you meet iQTS [Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards#:~:text=The%20iQTS%20Teachers'%20Standards%20define,for%20application%20in%20international%20contexts.). Passing your training provider's assessment gives you international qualified teacher status. If you wish, you can then apply to England's Department for Education for qualified teacher status (QTS). You can apply for QTS even if you don’t want to teach in England. 
  
-### 5. Next steps for candidates wishing to teach in England
+### 6. Next steps for candidates wishing to teach in England
 
 #### Apply for QTS
 
