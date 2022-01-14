@@ -21,7 +21,7 @@ International qualified teacher status (iQTS) is a new teaching qualification ba
 1. Apply now for courses starting September 2022
 2. Train over the course of an academic year
 3. Learn via remote technology and at a school in your region 
-4. Fees for iQTS vary – check with [participating iQTS training providers](#choose-your-iQTS-teacher-training-provider)
+4. Fees for iQTS vary – check with [participating iQTS training providers](#choose-your-iqts-teacher-training-provider)
 5. Gain a professional teaching qualification recognised as equivalent to QTS
 
 ## Six reasons to apply for iQTS
@@ -142,7 +142,7 @@ To work in England you’ll also need a visa. You will usually need to find a jo
 
 #### Complete your induction
 
-As a newly qualified teacher, you’ll find some schools in England will require you to complete a 2-year induction period. During this time you’ll work and earn a salary as a teacher, and be assessed as part of DfE’s [Early Career Framework](https://www.gov.uk/government/publications/early-career-framework). You’ll be expected to show you meet the Teachers’ Standards and you’ll also benefit from training and mentoring.
+As a newly qualified teacher, you’ll find some schools in England will require you to complete a 2-year induction period. During this time you’ll work and earn a salary as a teacher, and be assessed as part of DfE’s [Early Career Framework](https://www.gov.uk/government/publications/early-career-framework). You’ll be expected to show you meet English [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards) and you’ll also benefit from training and mentoring.
 
 You can complete your induction in a relevant school in England (see [Induction for early career teachers (England), para 2.1](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/972316/Statutory_Induction_Guidance_2021_final__002_____1___1_.pdf)) or a [DfE-accredited British School Overseas](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#stat).
 
