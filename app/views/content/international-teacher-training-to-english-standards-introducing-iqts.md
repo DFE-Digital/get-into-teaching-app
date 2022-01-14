@@ -100,7 +100,7 @@ iQTS is currently offered by the following training providers:
 
 * list to come
 
-Over time, iQTS will become more widely available. To be kept informed about new iQTS training providers, regions and placement schools, please join our mailing list. 
+Over time, iQTS will become more widely available. To be kept informed about new iQTS training providers, regions and placement schools, please contact us at iqts.pilot@education.gov.uk. 
 
 All iQTS training providers offer:
 
