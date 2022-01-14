@@ -34,26 +34,14 @@ jobs:
                 CONTENT-KEYS 
                 INFRA-KEYS
 
-  turnstyle:
-    name: Wait for any previous deployments
-    timeout-minutes: 20
-    runs-on: ubuntu-latest
-    needs: validate
-    steps:
-      - name: Turnstyle
-        uses: softprops/turnstyle@v1
-        with:
-          continue-after-seconds: 300
-          same-branch-only: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
   deploy:
     name: Deploy ${{ github.event.inputs.environment }}
     environment: 
        name: ${{ github.event.inputs.environment }}
     runs-on: ubuntu-latest
-    needs: turnstyle
+    needs: validate
+
+    concurrency: ${{github.event.inputs.environment}}_${{github.event.inputs.pr}}
 
     defaults:
       run:
@@ -157,22 +145,6 @@ jobs:
         with:
           terraform_version: 0.14.9
 
-      - name: Wait for any previous runs to complete
-        uses: softprops/turnstyle@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          continue-after-seconds: 180
-
-      - name: Start ${{ github.event.inputs.environment }} Deployment
-        uses: bobheadxi/deployments@v0.6.2
-        id: deployment
-        with:
-          step: start
-          token: ${{ secrets.GITHUB_TOKEN }}
-          env: ${{ github.event.inputs.environment }}
-          ref: ${{ github.event.inputs.sha }}
-
       - name: Terraform ( ${{github.event.inputs.environment}} )
         run: |
             cd terraform/paas && pwd
@@ -192,15 +164,6 @@ jobs:
         env:
           HTTPAUTH_PASSWORD: ${{ steps.HTTP-PASSWORD.outputs.secret-value }}
           HTTPAUTH_USERNAME: ${{ steps.HTTP-USERNAME.outputs.secret-value }}
-
-      - name: Update ${{ github.event.inputs.environment }} status
-        if: always()
-        uses: bobheadxi/deployments@v0.6.2
-        with:
-          step: finish
-          token: ${{ secrets.GITHUB_TOKEN }}
-          status: ${{ job.status }}
-          deployment_id: ${{ steps.deployment.outputs.deployment_id }}
 
       - name: Log Deployment
         if: always()
