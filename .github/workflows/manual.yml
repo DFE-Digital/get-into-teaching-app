@@ -6,6 +6,7 @@ on:
       environment:
         description: Development/Test/Production/Speed/UR
         required: true
+        type: environment
       tag:
         description: Release Tag
         required: true

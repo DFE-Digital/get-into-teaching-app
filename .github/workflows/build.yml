@@ -315,14 +315,12 @@ jobs:
         if: steps.wait-for-review.outputs.conclusion == 'failure'
         run: exit 1
 
-      - name: Post PR comment
-        run: |
-          curl --silent  \
-               --header "Accept: application/vnd.github.v3+json" \
-               --header "Authorization: Bearer ${{ github.token }}" \
-               --request POST \
-               --data '{"body": "Review app deployed to https://${{env.REVIEW_APPLICATION}}-${{github.event.number}}.${{env.DOMAIN}} "}'  \
-               https://api.github.com/repos/${{ github.repository }}/issues/${{github.event.number }}/comments
+      - name: Post sticky pull request comment
+        if: matrix.environment == 'Review' 
+        uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          recreate: true
+          message:  Review app deployed to https://${{env.REVIEW_APPLICATION}}-${{github.event.number}}.${{env.DOMAIN}}
 
       - name: Add Review Label
         if: contains(github.event.pull_request.user.login, 'dependabot') == false

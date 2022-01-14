@@ -10,6 +10,8 @@ jobs:
        name: Review
     runs-on: ubuntu-latest
 
+    concurrency: Review_${{github.event.number}}
+
     defaults:
       run:
         shell: bash
@@ -29,13 +31,6 @@ jobs:
       - uses: hashicorp/setup-terraform@v1.3.2
         with:
           terraform_version: 0.14.9
-
-      - name: Wait for any previous runs to complete
-        uses: softprops/turnstyle@v1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          continue-after-seconds: 180
 
       - name: Terraform Destroy
         run: |
