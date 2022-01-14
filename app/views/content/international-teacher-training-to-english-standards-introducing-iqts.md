@@ -112,7 +112,7 @@ All iQTS training providers offer:
 
 * regular feedback and rigorous quality control
 
-To learn more, visit [participating iQTS training provider websites](#choose-your-iQTS-teacher-training-provider).
+To learn more, visit participating iQTS training provider websites.
 
 #### Your placement school
 
