@@ -1,9 +1,11 @@
 .badges {
+  $divider-colour: #0b0c0c;
+
   display: flex;
   gap: .4em;
   flex-direction: column;
   align-items: flex-start;
-  border-left: 1px solid $grey-mid;
+  border-left: 1px solid $divider-colour;
   overflow-x: hidden;
   min-height: 4em;
 
