@@ -124,6 +124,7 @@ group :development do
 end
 
 group :test do
+  gem "rspec-retry"
   gem "selenium-webdriver", "~> 3.142"
   gem "shoulda-matchers"
   gem "webmock", ">= 3.14.0"
