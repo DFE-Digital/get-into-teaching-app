@@ -131,7 +131,7 @@ agencies:
     email: Jason@travaileducation.com
     branch: Travail Education
     phone: 01476 570716
-    website:
+    website: https://www.education-world.co.uk/
     address: Office 13, Autumn Business Park, Dysart Road, Grantham, Lincolnshire, NG31
       7EU
   - name: Guardian Selection Limited, trading as GSL Education
@@ -1152,7 +1152,7 @@ agencies:
     branch: Gateshead
     phone: '0191 440 9993'
     website: https://www.education-world.co.uk/
-    address: YBN Building, Delta Bank Road, Gateshead, Tyne and Wear, NE11 9DJ
+    address: Metro House, Marconi Way, Gateshead, Tyne and Wear, NE119NH
   - name: Exact Education
     email: info@exacteducation.com
     branch: Newcastle
