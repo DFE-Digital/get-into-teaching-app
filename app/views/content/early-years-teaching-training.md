@@ -67,7 +67,7 @@ The early years are critical in children's development. You’ll use your knowle
 
 You’ll need to do 'early years initial teacher training' (EYITT) to achieve 'early years teacher status' (EYTS).
 
-EYTS is different from '[qualified teacher status](/ways-to-train)' (QTS), which is the equivalent for teaching children aged 3 to 18.
+EYTS is different from '[qualified teacher status](/what-is-qts)' (QTS), which is the equivalent for teaching children aged 3 to 18.
 
 Your training will enable you to meet the [early years teachers' standards](https://www.gov.uk/government/publications/early-years-teachers-standards).
 

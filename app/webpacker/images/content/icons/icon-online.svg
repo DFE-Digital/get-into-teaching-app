@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-icon-online">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="icon-online" clip-path="url(#clip-icon-online)">
+    <g id="Group_951" data-name="Group 951" transform="translate(9 16.999)">
+      <path id="Path_1329" data-name="Path 1329" d="M1189.925,594.837h29.353l2.474,4.807h-34.74Zm.684-19h27.932v15.791h-27.932Zm31.125,16.808V572.625h-34.319v20.16l-6.071,10.053h45.67Z" transform="translate(-1181.345 -572.625)"/>
+    </g>
+  </g>
+</svg>

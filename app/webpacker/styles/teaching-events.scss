@@ -1,4 +1,5 @@
 $slightly-darker-grey: darken($grey, 10%);
+$icon-size: 3rem;
 
 @mixin train-to-teach-event-box {
   border: 2px solid $pink;
@@ -239,9 +240,9 @@ $slightly-darker-grey: darken($grey, 10%);
 
         @include mq($from: mobile) {
           padding: .2em 1em .2em 4.3em;
-          background: url(../images/icon-calendar.svg) no-repeat left center;
-          background-size: 2em;
-          background-position: 1em;
+          background: url(../images/content/icons/icon-calendar.svg) no-repeat left center;
+          background-position: .7em;
+          background-size: $icon-size;
         }
       }
 
@@ -268,7 +269,7 @@ $slightly-darker-grey: darken($grey, 10%);
 
     &__bottom-bar {
       background: $grey;
-      padding: .4em 1em;
+      padding: .4em .5em;
       display: flex;
 
       &--left {
@@ -321,11 +322,17 @@ $slightly-darker-grey: darken($grey, 10%);
           &__setting {
             padding-left: 3rem;
             min-height: 2em;
+
+            // vertical centre
+            display: flex;
+            align-items: center;
           }
 
           &__date-and-time {
-            background: url(../images/icon-calendar.svg) no-repeat left center;
-            background-size: 2em;
+            background: url(../images/content/icons/icon-calendar.svg) no-repeat left center;
+            background-size: $icon-size;
+            flex-direction: column;
+            align-items: baseline;
           }
 
           &__name {
@@ -336,15 +343,21 @@ $slightly-darker-grey: darken($grey, 10%);
             }
           }
 
+          &__location {
+            background: url(../images/content/icons/icon-location.svg) no-repeat left center;
+            background-size: $icon-size;
+          }
+
           &__setting {
-            background-size: 2.4em;
 
             &.online {
-              background: url(../images/icon-online-black.svg) no-repeat left center;
+              background: url(../images/content/icons/icon-online.svg) no-repeat left center;
+              background-size: $icon-size;
             }
 
             &.in-person {
               background: url(../images/icon-building.svg) no-repeat left center;
+              background-size: 2em; // using 2em because it's an old icon and is bigger than the others
             }
           }
         }
@@ -374,7 +387,7 @@ $slightly-darker-grey: darken($grey, 10%);
           @include font-size(xsmall);
 
           @include mq($from: mobile) {
-            padding: 1em 1em 1em 2.5rem;
+            padding: 1em 1em 1em 3.2rem;
           }
         }
 
@@ -382,19 +395,19 @@ $slightly-darker-grey: darken($grey, 10%);
 
           &__setting {
             &.online {
-              background: url(../images/icon-online-black.svg) no-repeat left center;
-              background-size: 2em;
+              background: url(../images/content/icons/icon-online.svg) no-repeat left center;
+              background-size: $icon-size;
             }
 
             &.in-person {
               background: url(../images/icon-building.svg) no-repeat left center;
-              background-size: 1.6em;
+              background-size: 2em; // using 2em because it's an old icon and is bigger than the others
             }
           }
 
           &__location {
-            background: url(../images/icon-pin.svg) no-repeat left center;
-            background-size: 1.2em;
+            background: url(../images/content/icons/icon-location.svg) no-repeat left center;
+            background-size: $icon-size;
           }
         }
       }
