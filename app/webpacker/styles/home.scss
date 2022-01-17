@@ -31,35 +31,34 @@ main.home {
 
   &__purple-box {
     display: none;
+    padding: 1em;
   }
 
   // general styles (grid fallback)
   &__heading {
-    @include rotated-block;
-    @include font-size('large');
-    display: inline-block;
-    color: $black;
-    background-color: $white;
+    @include font-size('medium');
+    color: $white;
 
-    padding: .4em .4em .4em 1.4em;
-    margin: 1em 0 0 -.4em;
     line-height: 1.25em;
     max-width: 80%;
   }
 
   &__text {
     color: $white;
-    padding: 1em 1.5em 0;
   }
 
   &__cta {
-    padding: 1.5em;
-    margin: 1em 0;
 
     > a {
       @include chevron;
       white-space: inherit;
     }
+  }
+
+  &__heading,
+  &__text,
+  &__cta {
+    margin-inline: 2rem;
   }
 
   @mixin background-image($size: 85%, $align: center, $image: "desktop") {
@@ -84,6 +83,8 @@ main.home {
     grid-template-columns: $px-either-side-of-content repeat(2, 1.2fr) repeat(2, .8fr) $px-either-side-of-content;
     grid-template-rows: repeat(3, minmax(min-content, max-content));
 
+    gap: 1em 0;
+
     padding: inherit;
     background-color: inherit;
 
@@ -96,21 +97,25 @@ main.home {
     &__heading {
       grid-area: 1 / 2 / 2 / 4;
       align-self: center;
+      margin-block: 3em 0;
     }
 
-    &__text { grid-area: 2 / 2 / 3 / 4; }
+    &__text {
+      grid-area: 2 / 2 / 3 / 4;
+      margin-block: 0;
+    }
 
     &__graphic {
       grid-area: 1 / 4 / 4 / 7;
       @include background-image($align: right, $image: "desktop");
       background-size: contain;
+      margin-block: 1em;
     }
 
     &__cta {
       grid-area: 3 / 2 / 3 / 4;
       align-self: center;
-
-      padding: 0 1em;
+      margin-block: 2em;
 
       a {
         @include chevron;
@@ -139,6 +144,8 @@ main.home {
   @include mq($until: mobile) {
     grid-template-columns: auto;
     grid-template-rows: .5fr .5fr 2fr .5fr;
+
+    gap: 2em;
 
     &__purple-box { grid-area: 1 / 1 / 6 / 2; }
 
