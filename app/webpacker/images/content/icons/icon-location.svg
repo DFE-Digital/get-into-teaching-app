@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-icon-location">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="icon-location" clip-path="url(#clip-icon-location)">
+    <g id="icon.location" transform="translate(19 12)">
+      <path id="Subtraction_10" data-name="Subtraction 10" d="M12.208,40v0L8.251,31.805V24.266A12.565,12.565,0,0,1,2.32,19.754,12.452,12.452,0,0,1,3.692,3.666a12.671,12.671,0,0,1,17.828,0,12.452,12.452,0,0,1,1.13,16.417,12.7,12.7,0,0,1-6.485,4.445v7.278L12.209,40ZM10.782,24.9v6.332l1.426,2.954,1.426-2.954V24.992c-.342.028-.688.041-1.027.041A12.839,12.839,0,0,1,10.782,24.9ZM12.607,2.945a9.572,9.572,0,1,0,9.64,9.572A9.617,9.617,0,0,0,12.607,2.945Z" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>
