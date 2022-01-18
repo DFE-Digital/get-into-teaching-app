@@ -270,6 +270,9 @@ jobs:
     needs: [  build  ]
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
+    concurrency: Review_${{github.event.inputs.pr}}
+    environment:
+       name: Review 
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
@@ -295,25 +298,16 @@ jobs:
           yaml_secret: INFRA-KEYS
           secret: SLACK-WEBHOOK
 
-      - name: Trigger Review Deployment
-        uses: benc-uk/workflow-dispatch@v1.1
+      - name: Deploy to Review
+        uses: ./.github/workflows/actions/deploy
+        id: deploy
         with:
-          workflow: Deploy to PaaS
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          inputs: '{"environment": "Review", "sha": "${{ github.sha }}" , "pr": "${{github.event.number}}"  }'
-          ref: ${{ github.event.pull_request.head.ref }}
-
-      - name: Wait for Deployment to Review
-        uses: fountainhead/action-wait-for-check@v1.0.0
-        id: wait-for-review
-        with:
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          checkName: Deploy Review
-          ref: ${{ github.event.pull_request.head.ref }}
-
-      - name: Check if Review Deployment has returned with a failure
-        if: steps.wait-for-review.outputs.conclusion == 'failure'
-        run: exit 1
+          environment: Review
+          sha:  ${{ github.sha }}
+          pr:   ${{github.event.number}}
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
 
       - name: Post sticky pull request comment
         uses: marocchino/sticky-pull-request-comment@v2
@@ -361,36 +355,16 @@ jobs:
           yaml_secret: INFRA-KEYS
           secret: SLACK-WEBHOOK
 
-      - name: Trigger Development Deployment
-        uses: benc-uk/workflow-dispatch@v1.1
+      - name: Deploy to Development
+        uses: ./.github/workflows/actions/deploy
+        id: deploy
         with:
-          workflow: Deploy to PaaS
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          inputs: '{"environment": "Development", "sha": "${{ github.sha }}"}'
-          ref: ${{github.ref}}
-
-      - name: Wait for Deployment to Development
-        uses: fountainhead/action-wait-for-check@v1.0.0
-        id: wait-for-deploy
-        with:
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          checkName: Deploy Development
-          ref: ${{github.ref}}
-
-      - name: Check if Development Deployment has returned with a failure
-        if: steps.wait-for-deploy.outputs.conclusion == 'failure'
-        run: exit 1
-
-      - name: Trigger OWASP Testing
-        uses: benc-uk/workflow-dispatch@v1.1
-        # FIXME: disabled to allow deployments until we can
-        # fix this step.
-        continue-on-error: true
-        with:
-          workflow: owasp
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          inputs: '{"environment": "dev"}'
-
+          environment: Development
+          sha:  ${{ github.sha }}
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
+          
       - name: Trigger Development Fix Network Policies
         uses: benc-uk/workflow-dispatch@v1.1
         with:
@@ -426,6 +400,23 @@ jobs:
           RELEASE_ID: ${{ steps.release.outputs.id }}
           TOKEN: ${{secrets.GITHUB_TOKEN}}
 
+  owasp:
+    name: OWASP Checks 
+    needs: [ development ]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2.4.0
+
+      - name: Deploy to Test
+        uses: ./.github/workflows/actions/owasp
+        id: deploy
+        with:
+          environment: Development
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
+
   qa:
     name: Quality Assurance Deployment
     needs: [ development ]
@@ -456,21 +447,15 @@ jobs:
           yaml_secret: INFRA-KEYS
           secret: SLACK-WEBHOOK
 
-      - name: Trigger Deployment to QA
-        uses: benc-uk/workflow-dispatch@v1.1
+      - name: Deploy to Test
+        uses: ./.github/workflows/actions/deploy
+        id: deploy
         with:
-          workflow: Deploy to PaaS
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          inputs: '{"environment": "Test", "sha": "${{ github.sha }}" }'
-          ref: ${{github.ref}}
-
-      - name: Wait for Deployment to QA
-        uses: fountainhead/action-wait-for-check@v1.0.0
-        id: wait-for-deploy
-        with:
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          checkName: Deploy Test
-          ref: ${{github.ref}}
+          environment: Test
+          sha:  ${{ github.sha }}
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
 
       - name: Trigger Test Fix Network Policies
         uses: benc-uk/workflow-dispatch@v1.1
@@ -479,10 +464,6 @@ jobs:
          workflow: Fix Network policies
          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
          inputs: '{"environment": "Test" }'
-
-      - name: Check if QA Deployment has returned with a failure
-        if: steps.wait-for-deploy.outputs.conclusion == 'failure'
-        run: exit 1
 
       - name: Slack Notification
         if: failure()
@@ -590,25 +571,15 @@ jobs:
         with:
           release_id: ${{steps.tag_id.outputs.release_id}}
 
-      - name: Trigger Deployment to Production
-        uses: benc-uk/workflow-dispatch@v1.1
+      - name: Deploy to Production
+        uses: ./.github/workflows/actions/deploy
+        id: deploy
         with:
-          workflow: Deploy to PaaS
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          inputs: '{"environment": "Production", "sha": "${{ github.sha }}" }'
-          ref: ${{github.ref}}
-
-      - name: Wait for Deployment to Production
-        uses: fountainhead/action-wait-for-check@v1.0.0
-        id: wait-for-deploy
-        with:
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          checkName: Deploy Production
-          ref: ${{github.ref}}
-
-      - name: Check if Production Deployment has returned with a failure
-        if: steps.wait-for-deploy.outputs.conclusion == 'failure'
-        run: exit 1
+          environment: Production
+          sha:  ${{ github.sha }}
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
 
       - name: Trigger Production Fix Network Policies
         uses: benc-uk/workflow-dispatch@v1.1
