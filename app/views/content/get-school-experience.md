@@ -60,9 +60,9 @@ If you cannot find what you’re looking for, you can call a school directly. Yo
 
 You may be eligible for a [maths or physics teaching internship](/teaching-internship-providers) earning £300 a week if you're doing a undergraduate degree in science, technology, engineering or maths. --->
 
-## Attend teaching events
+## Attend teacher training events
 
-[Teaching events](/events) can also give you an insight into teaching. You can choose from our Train to Teach events, online Q&A sessions and events run by training providers.
+[Teacher training events](/events) can also give you an insight into teaching. You can choose from our Train to Teach events, online Q&A sessions and events run by training providers.
 
 ## Watch pre-recorded lessons
 
