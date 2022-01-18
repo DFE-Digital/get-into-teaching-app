@@ -648,6 +648,9 @@ $icon-size: 3rem;
 
   @include mq($from: mobile) {
     flex-direction: row;
+  }
+
+  @include mq($from: tablet) {
     margin-inline: 1em;
   }
 
