@@ -81,28 +81,15 @@ Fees for full-time courses are usually around £9,250 but you can:
 * get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
 * apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
 
-<div class="training-attributes">
-  <h4>University-led training</h4>
-  <div class="badges">
-    <div class="badge pink">
-      <div class="badge-text">Costs up to £9,250</div>
-    </div>
-    <div class="badge dark-cyan">
-      <div class="badge-text">Funding available</div>
-    </div>
-
-    <div class="badge purple">
-      <div class="badge-text">Takes 1 year</div>
-    </div>
-
-    <div class="badge yellow">
-      <div class="badge-text">QTS</div>
-    </div>
-  
-    <div class="badge dark-blue">
-      <div class="badge-text">PGCE or PGDE</div>
-    </div>
-  </div>
+<div class="training-option">
+  <h4 class="training-option__title">University-led training</h4>
+  <ul class="training-option__options badges">
+    <li class="badge">Costs up to £9,250</li>
+    <li class="badge">Funding available</li>
+    <li class="badge">Takes 1 year</li>
+    <li class="badge">QTS</li>
+    <li class="badge">PGCE or PGDE</li>
+  </ul>
 </div>
 
 Fees are higher for [international students](/train-to-teach-in-england-as-an-international-student).
@@ -128,35 +115,15 @@ Fees are usually around £9,250 but you can:
 * get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
 * apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)  
 
-<div class="training-attributes">
-  <h4>School direct<br>(fee-funded)</h4>
-  <div class="badges">
-    <div class="badge pink">
-      <div class="badge-text">
-        Costs up to £9,250
-      </div>
-    </div>
-    <div class="badge dark-cyan">
-      <div class="badge-text">
-        Funding available
-      </div>
-    </div>
-    <div class="badge purple">
-      <div class="badge-text">
-        Takes 1 year
-      </div>
-    </div>
-    <div class="badge yellow">
-      <div class="badge-text">
-        QTS
-      </div>
-    </div>
-    <div class="badge dark-blue">
-      <div class="badge-text">
-        Often a PGCE or PGDE
-      </div>
-    </div>
-  </div>
+<div class="training-option">
+  <h4 class="training-option__title">School direct<br>(fee-funded)</h4>
+  <ul class="training-option__options badges">
+    <li class="badge">Costs up to £9,250</li>
+    <li class="badge">Funding available</li>
+    <li class="badge">Takes 1 year</li>
+    <li class="badge">QTS</li>
+    <li class="badge">Often a PGCE or PGDE</li>
+  </ul>
 </div>
 
 ### Earn a salary
@@ -171,67 +138,37 @@ Courses typically take one year but you may be able to study part-time.
 
 [Teach First](https://www.teachfirst.org.uk/) also offers a salary. It's a 2-year programme leading to a PGDE and QTS. At the end of your first year, you’ll have your QTS. At the end of your second year, you’ll have your PGDE.
 
-<dl>
+<dl class="training-options">
   <div class="training-option">
-    <dt>School direct<br>(salaried)</dt>
-    <dd class="badges">
-      <div class="badge purple">
-        <div class="badge-text">
-          Takes 1 year
-        </div>
-      </div>
-      <div class="badge yellow">
-        <div class="badge-text">
-          QTS
-        </div>
-      </div>
-      <div class="badge dark-blue">
-        <div class="badge-text">
-          Often a PGCE or PGDE
-        </div>
-      </div>
+    <dt class="training-option__title">School direct<br>(salaried)</dt>
+    <dd class="training-option__options">
+      <ul class="badges">
+        <li class="badge">Takes 1 year</li>
+        <li class="badge">Often a PGCE or PGDE</li>
+        <li class="badge">QTS</li>
+      </ul>
     </dd>
   </div>
 
   <div class="training-option">
-    <dt>Postgraduate teaching apprenticeship</dt>
-    <dd class="badges">
-      <div class="badge purple">
-        <div class="badge-text">
-          Takes 1 year
-        </div>
-      </div>
-      <div class="badge yellow">
-        <div class="badge-text">
-          QTS
-        </div>
-      </div>
-      <div class="badge dark-blue">
-        <div class="badge-text">
-          May offer a PGCE or equivalent
-        </div>
-      </div>
+    <dt class="training-option__title">Postgraduate teaching apprenticeship</dt>
+    <dd class="training-option__options">
+      <ul class="badges">
+        <li class="badge">Takes 1 year</li>
+        <li class="badge">May offer a PGCE or equivalent</li>
+        <li class="badge">QTS</li>
+      </ul>
     </dd>
   </div>
 
   <div class="training-option">
-    <dt>Teach First</dt>
-    <dd class="badges">
-      <div class="badge purple">
-        <div class="badge-text">
-          Takes 2 years
-        </div>
-      </div>
-      <div class="badge yellow">
-        <div class="badge-text">
-          QTS
-        </div>
-      </div>
-      <div class="badge dark-blue">
-        <div class="badge-text">
-          PGDE
-        </div>
-      </div>
+    <dt class="training-option__title">Teach First</dt>
+    <dd class="training-option__options">
+      <ul class="badges">
+        <li class="badge">Takes 2 years</li>
+        <li class="badge">QTS</li>
+        <li class="badge">PGDE</li>
+      </ul>
     </dd>
   </div>
 </dl>
@@ -252,30 +189,14 @@ Qualifications vary depending on the course. For example, you could get QTS with
 * Bachelor of Education (BEd)
 * Bachelor of Science (BSc)
 
-<div class="training-attributes">
-  <h4>Undergraduate teacher training</h4>
-  <div class="badges">
-    <div class="badge pink">
-      <div class="badge-text">
-        Costs up to £9,250 per year
-      </div>
-    </div>
-    <div class="badge dark-cyan">
-      <div class="badge-text">
-        Funding available
-      </div>
-    </div>
-    <div class="badge purple">
-      <div class="badge-text">
-        Up to 4 years
-      </div>
-    </div>
-    <div class="badge dark-blue">
-      <div class="badge-text">
-        Qualifications vary
-      </div>
-    </div>
-  </div>
+<div class="training-option">
+  <h4 class="training-option__title">Undergraduate teacher training</h4>
+  <ul class="training-option__options badges">
+    <li class="badge">Costs up to £9,250 per year</li>
+    <li class="badge">Funding available</li>
+    <li class="badge">Up to 4 years</li>
+    <li class="badge">Qualifications vary</li>
+  </ul>
 </div>
 
 <a href="https://digital.ucas.com/search" class="button">Find an undergraduate course</a>
