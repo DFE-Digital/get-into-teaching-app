@@ -31,8 +31,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "events in your area"
-    fill_in "Your postcode (optional)", with: "TE57 1NG"
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
+    choose "Yes"
+    fill_in "Your postcode", with: "TE57 1NG"
     click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -72,8 +73,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "events in your area"
-    fill_in "Your postcode (optional)", with: "TE57 1NG"
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
+    choose "Yes"
+    fill_in "Your postcode", with: "TE57 1NG"
     click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -131,6 +133,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
       "Which subject do you want to teach?",
       selected: TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
     )
+    click_on "Next step"
+
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -256,8 +262,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "events in your area"
-    fill_in "Your postcode (optional)", with: "TE57 1NG"
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
