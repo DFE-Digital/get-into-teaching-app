@@ -12,7 +12,6 @@
 
     .pink-rotated-number {
       background-color: $pink-dark;
-      @include rotated-block;
       color: $white;
       padding: .6em .8em;
       font-weight: bold;

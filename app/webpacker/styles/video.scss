@@ -47,7 +47,6 @@
     margin: 40px;
 
     &__dismiss {
-      @include rotated-block($degrees: 3px);
       position: absolute;
       top: -25px;
       right: -25px;
