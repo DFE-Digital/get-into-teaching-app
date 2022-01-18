@@ -326,6 +326,7 @@ jobs:
     name: Development Deployment
     needs: [  master_tests  ]
     if: github.ref == 'refs/heads/master'
+    concurrency: Development   
     runs-on: ubuntu-latest
     outputs:
       release_tag: ${{steps.tag_version.outputs.pr_number}}
@@ -421,6 +422,7 @@ jobs:
     name: Quality Assurance Deployment
     needs: [ development ]
     if: github.ref == 'refs/heads/master'
+    concurrency: QA     
     runs-on: ubuntu-latest
     environment:
        name: Test 
@@ -479,6 +481,7 @@ jobs:
   cypress:
     name: Run Cypress Tests on QA
     runs-on: ubuntu-latest
+    concurrency: Cypress     
     needs: [ qa ]
     steps:
       - name: Check out the repo
@@ -526,6 +529,7 @@ jobs:
     name: Production Deployment
     runs-on: ubuntu-latest
     needs: [ cypress, development ]
+    concurrency: Production     
     environment:
        name: Production 
     steps:
