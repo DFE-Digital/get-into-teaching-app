@@ -99,11 +99,11 @@ This extra support used to last 1 year, and teachers would be called 'newly qual
 
 ## Career progression
 
-There are different ways to progress and increase your teacher salary.
+There are different ways to progress and increase your teaching salary.
 
 For example, you can move into a more senior role, or take on additional responsibilities that help your school.
 
-### Senior teacher salary
+### Senior teacher salaries
 
 If you take on extra responsibilities, like being a head of department, you can be put onto a higher teacher pay scale.
 
@@ -116,7 +116,7 @@ Annual salary ranges for senior teachers are:
 | London                        | £39,864 | £50,935  |
 | Rest of England and Wales     | £38,690 | £41,604  |
 
-### Leading practitioner salary
+### Leading practitioner salaries
 
 If you’re an established and exceptional teacher, and regularly show the highest standards of classroom teaching, you can be put onto a higher pay scale.
 
@@ -130,7 +130,7 @@ The teacher pay scales for leading practitioners are:
 | Rest of England and Wales     | £42,402 | £64,461  |
 
 
-### Headteacher salary
+### Headteacher salaries
 
 A headteacher is the most senior person in a school. They are ultimately responsible for all teachers and pupils. 
 
@@ -158,7 +158,7 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 | TLR 1         | £8,291 | £14,030 |
 | TLR 2         | £2,873 | £7,017  |
 
-### Unqualified teacher salary
+### Unqualified teacher salaries
 
 Many schools in England require teachers to have 'qualified teacher status' (QTS). If you do not have this, you can work
 in some schools as an unqualified teacher.
