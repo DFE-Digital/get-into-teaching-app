@@ -13,6 +13,11 @@ main.home {
   .homepage-feature {
     &.steps-to-become-a-teacher {
       width: 100%;
+      margin-top: 0;
+
+      @include mq($from: tablet) {
+        margin-top: $space-between-sections;
+      }
     }
   }
 }
@@ -36,7 +41,7 @@ main.home {
 
   // general styles (grid fallback)
   &__heading {
-    @include font-size('medium');
+    @include font-size('large');
     color: $white;
 
     line-height: 1.25em;
@@ -97,7 +102,7 @@ main.home {
     &__heading {
       grid-area: 1 / 2 / 2 / 4;
       align-self: center;
-      margin-block: 3em 0;
+      margin-block: 1em .2em;
     }
 
     &__text {
@@ -115,7 +120,7 @@ main.home {
     &__cta {
       grid-area: 3 / 2 / 3 / 4;
       align-self: center;
-      margin-block: 2em;
+      margin-block: 1em;
 
       a {
         @include chevron;
@@ -130,8 +135,15 @@ main.home {
     grid-template-columns: 60% repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
 
+    gap: .5em;
+
     &__purple-box { grid-area: 1 / 1 / 4 / 4; }
-    &__heading { grid-area: 1 / 1 / 2 / 2; }
+
+    &__heading {
+      margin-block: 1em 0;
+      grid-area: 1 / 1 / 2 / 2;
+    }
+
     &__text { grid-area: 2 / 1 / 3 / 2; }
     &__cta { grid-area: 3 / 1 / 4 / 2; }
 
@@ -144,8 +156,6 @@ main.home {
   @include mq($until: mobile) {
     grid-template-columns: auto;
     grid-template-rows: .5fr .5fr 2fr .5fr;
-
-    gap: 2em;
 
     &__purple-box { grid-area: 1 / 1 / 6 / 2; }
 
