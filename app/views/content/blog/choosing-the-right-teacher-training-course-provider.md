@@ -43,4 +43,4 @@ Alongside online research, think about calling or emailing these providers, or t
 >
 >_Jane Wilkinson, former teacher and teacher training adviser._
 
-Due to the individual nature of teacher training courses, what might be a good fit for others you know may not be the best fit for you, so doing careful research is vital! Speak to one of our [teacher training advisers](/teacher-training-advisers), who can help you personalise your choices.
+Due to the individual nature of teacher training courses, what might be a good fit for others you know may not be the best fit for you, so doing careful research is vital! [Speak to one of our teacher training advisers](/teacher-training-advisers), who can help you personalise your choices.
