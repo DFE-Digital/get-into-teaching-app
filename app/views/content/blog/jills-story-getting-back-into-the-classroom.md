@@ -6,7 +6,7 @@ images:
   jill:
     path: media/images/content/stories/stories-jill.jpg
     thumbnail_path: media/images/content/stories/stories-jill.jpg
-    alt: Returning teacher Jill
+    alt: Jill, a returning teacher who used the return to teaching adviser service.
 description: |-
   Jill's route into teaching
 keywords:
@@ -32,7 +32,7 @@ I was given the opportunity to teach maths to year nine pupils and the school ve
 
 My return to teaching adviser then arranged for me to attend Manchester Metropolitan University's (MMU) teacher engagement programme. Here, I accessed further DfE funded training in computing in the classroom, job application writing, interview tips, and much more.
 
-I was fortunate enough to land a job before the course even finished – and I would have been unlikely to be successful were it not for the training I had received as a result of my contact with the Return to Teaching Adviser service. MMU also worked to place other candidates in partner schools for work experience with the potential for a job offer.
+I was fortunate enough to land a job before the course even finished – and I would have been unlikely to be successful were it not for the training I had received as a result of my contact with the [return to teaching adviser service](/tta-service). MMU also worked to place other candidates in partner schools for work experience with the potential for a job offer.
 
 Throughout the academic year, there was always Laura, my return to teaching adviser, at the end of the phone offering advice and support. Laura would review my applications and lesson plans and discuss interview feedback with me. It can be discouraging to attend interview after interview with what feels like no success - but Laura would always be positive and identify key learning points.
 
