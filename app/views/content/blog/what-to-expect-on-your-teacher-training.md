@@ -6,7 +6,6 @@ images:
   seminar_room:
     path: "media/images/content/blog/seminar-room.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/seminar-room.jpg"
-    alt: "A photograph of a seminar room with an instructor at a whiteboard and students sat around a table"
 description: |-
   A university-based PGCE year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. Find out more about what you can expect on your teacher training course.
     

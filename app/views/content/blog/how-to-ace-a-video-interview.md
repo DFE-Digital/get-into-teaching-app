@@ -6,7 +6,6 @@ images:
   anna_shirley:
     path: "media/images/content/blog/anna-shirley.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/anna-shirley.jpg"
-    alt: "A photograph of Sheffield SCITT communciations manager, Anna Shirley"
 description: |-
   From logistics to presentation, Sheffield SCITT communications manager Anna Shirley shares her top tips for video interviews. 
 keywords:

@@ -95,6 +95,12 @@ RSpec.feature "content pages check", type: :feature, content: true do
       end
     end
 
+    scenario "all images have alt text" do
+      @stored_pages.each do |sp|
+        expect(sp.body.css("img")).to all(have_attribute("alt"))
+      end
+    end
+
     scenario "the internal links reference existing pages" do
       paths = other_paths.concat(@stored_pages.map(&:path))
       @stored_pages.each do |sp|

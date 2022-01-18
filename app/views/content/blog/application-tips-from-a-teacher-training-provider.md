@@ -6,7 +6,6 @@ images:
   rocket:
     path: "media/images/content/blog/rocket.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/rocket.jpg"
-    alt: "A teacher shows a rocket to a young girl at the front of a classroom as other students watch"
 description: |-
   Michelle Borders from the Community Academies Trust Institute of Education has recruited trainee teachers for eight years. Here she shares her top tips on the application process.
 keywords:

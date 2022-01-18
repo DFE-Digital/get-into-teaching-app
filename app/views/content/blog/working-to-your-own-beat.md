@@ -5,7 +5,6 @@ images:
   staff-room:
     path: "media/images/content/blog/staff-room.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/staff-room.jpg"
-    alt: "Three teachers chatting in a school staff room"
 description: |-
   A recent survey has revealed the extent to which people feel they can be their true selves in the workplace.
 keywords:

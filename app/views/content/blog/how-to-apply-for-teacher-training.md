@@ -6,7 +6,6 @@ images:
   header_image:
     path: "media/images/content/blog/applying-for-teacher.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/applying-for-teacher.jpg"
-    alt: "A stock photograph of someone filling out an application form"
 description: |-
   From effective preparation, to submitting your application, we’ve broken down the whole process into manageable steps, so you can see exactly what’s involved.
 keywords:

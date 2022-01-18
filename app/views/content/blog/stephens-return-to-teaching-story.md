@@ -6,7 +6,6 @@ images:
   stephen:
     path: "media/images/content/blog/stephen.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/stephen.jpg"
-    alt: "Returning maths teacher and Methodist Minister Stephen, in the school library"
 description: |-
   Stephen gave up a 20-year career as a secondary maths teacher to pursue a call into full time Methodist Ministry. However, his love of maths never left him and 12 years later he returned to teaching part-time.
 keywords:
