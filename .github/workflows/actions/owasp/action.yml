@@ -48,6 +48,7 @@ runs:
 
       - name: Setup Application Name
         id:   app_name
+        shell: bash
         run: |
              if [[ "${{ inputs.environment }}" == "Production" ]] ; then 
                  rval="${{env.PAAS_APPLICATION_NAME}}-prod.${{env.DOMAIN}}"
