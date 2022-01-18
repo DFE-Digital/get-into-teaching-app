@@ -8,7 +8,7 @@ images:
     thumbnail_path: media/images/content/stories/stories-jill.jpg
     alt: Jill, a returning teacher who used the return to teaching adviser service.
 description: |-
-  Jill's route into teaching
+  Read about how Jill got back into teaching maths using the return to teaching adviser service to gain school experience and up to date references.
 keywords:
   - returning to teaching
   - teacher training advisers
