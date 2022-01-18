@@ -422,6 +422,8 @@ jobs:
     needs: [ development ]
     if: github.ref == 'refs/heads/master'
     runs-on: ubuntu-latest
+    environment:
+       name: Test 
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
@@ -524,6 +526,8 @@ jobs:
     name: Production Deployment
     runs-on: ubuntu-latest
     needs: [ cypress, development ]
+    environment:
+       name: Production 
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
