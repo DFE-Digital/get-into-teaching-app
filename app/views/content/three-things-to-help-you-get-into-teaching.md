@@ -8,7 +8,7 @@
   layout: layouts/campaigns/landing_page_with_hero_nav
   hero_nav:
     Receive personalised email updates and tips: "#receive-personalised-email-updates-and-tips"
-    Speak to current teachers at a teaching event: "#speak-to-current-teachers-at-a-teaching-event"
+    Speak to current teachers at a teacher training event: "#speak-to-current-teachers-at-a-teaching-event"
     Get free one-to-one advice from a teacher training adviser: "#get-free-one-to-one-advice-from-a-teacher-training-adviser"
     
   keywords:
