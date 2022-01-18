@@ -409,7 +409,7 @@ jobs:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
 
-      - name: Deploy to Test
+      - name: Vunerability Test 
         uses: ./.github/workflows/actions/owasp
         id: deploy
         with:
@@ -417,6 +417,7 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
+          GITHUB_TOKEN:      ${{secrets.GITHUB_TOKEN}}
 
   qa:
     name: Quality Assurance Deployment
