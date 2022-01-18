@@ -77,6 +77,13 @@ RSpec.configure do |config|
   config.include SpecHelpers::BasicAuth
   config.include Webpacker::Helper, type: :helper
 
+  config.verbose_retry = true
+  config.default_retry_count = 2
+  # We occasionally see timeout errors on features/chat_spec.rb.
+  # The source of the flakiness isn't clear, so allowing retries
+  # for now to hopefully avoid it failing builds outright.
+  config.exceptions_to_retry = [Net::ReadTimeout]
+
   config.before(:suite) do
     Webpacker.compile
   end
