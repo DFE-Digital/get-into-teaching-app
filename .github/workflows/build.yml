@@ -403,13 +403,13 @@ jobs:
 
   owasp:
     name: OWASP Checks 
-    needs: [ development ]
+    needs: [ development  ]
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
 
-      - name: Deploy to Test
+      - name: Run OWASP Testing
         uses: ./.github/workflows/actions/owasp
         id: deploy
         with:
@@ -417,6 +417,7 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
   qa:
     name: Quality Assurance Deployment
@@ -478,57 +479,34 @@ jobs:
           SLACK_MESSAGE: Failure with initialising QA deployment for ${{env.APPLICATION}}
           SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}
 
+
+  test_cypress:
+    name: Run Cypress Tests on QA
+    needs: [ qa ]
+    uses: DFE-Digital/get-into-teaching-frontend-tests/.github/workflows/cypress.yml@master
+    with:
+        application: APP
+        reference: ${{ github.sha }}
+    secrets:
+        AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+        KEY_VAULT: ${{ secrets.KEY_VAULT }}
+
   cypress:
     name: Run Cypress Tests on QA
-    runs-on: ubuntu-latest
     concurrency: Cypress     
-    needs: [ qa ]
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2.4.0
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: ACTIONS-API-ACCESS-TOKEN
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: ACTIONS-API-ACCESS-TOKEN
-
-      - name: Trigger Cypress Tests (DFE-Digital/get-into-teaching-frontend-tests )
-        uses: benc-uk/workflow-dispatch@v1.1
-        with:
-          repo: DFE-Digital/get-into-teaching-frontend-tests
-          workflow: Cypress
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          inputs: '{"application": "APP" , "reference": "${{ github.sha }}" }'
-          ref: refs/heads/master
-
-      - name: Wait for Cypress Tests
-        uses: fountainhead/action-wait-for-check@v1.0.0
-        id: wait-for-tests
-        with:
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          checkName: ${{ github.sha }}
-          ref: refs/heads/master
-          repo: get-into-teaching-frontend-tests
-          intervalSeconds: 30
-          timeoutSeconds: 600
-
-      - name: Check for test failure
-        if: steps.wait-for-tests.outputs.conclusion == 'failure'
-        run: exit 1
+    needs: [ review ]
+    uses: DFE-Digital/get-into-teaching-frontend-tests/.github/workflows/cypress.yml@master
+    with:
+        application: APP
+        reference: ${{ github.sha }}
+    secrets:
+        AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+        KEY_VAULT: ${{ secrets.KEY_VAULT }}
 
   production:
     name: Production Deployment
     runs-on: ubuntu-latest
-    needs: [ cypress, development ]
+    needs: [  cypress , development ]
     concurrency: Production     
     environment:
        name: Production 
