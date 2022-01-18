@@ -10,6 +10,8 @@ inputs:
         required: true
       ARM_ACCESS_KEY:
         required: true
+      GITHUB_TOKEN:
+        required: true
 
 runs:
     using: composite
@@ -20,26 +22,26 @@ runs:
 
       - uses: Azure/login@v1
         with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
+            creds: ${{ inputs.AZURE_CREDENTIALS }}
 
       - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
         id: SLACK-WEBHOOK
         with:
-          keyvault: ${{ secrets.KEY_VAULT}}
+          keyvault: ${{ inputs.KEY_VAULT}}
           yaml_secret: INFRA-KEYS
           secret: SLACK-WEBHOOK
 
       - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
         id: HTTP-PASSWORD
         with:
-          keyvault: ${{ secrets.KEY_VAULT}}
+          keyvault: ${{ inputs.KEY_VAULT}}
           yaml_secret: INFRA-KEYS
           secret: HTTP-PASSWORD
 
       - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
         id: HTTP-USERNAME
         with:
-          keyvault: ${{ secrets.KEY_VAULT}}
+          keyvault: ${{ inputs.KEY_VAULT}}
           yaml_secret: INFRA-KEYS
           secret: HTTP-USERNAME
 
@@ -62,7 +64,7 @@ runs:
       - name: ZAP Scan
         uses: zaproxy/action-full-scan@v0.3.0
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ inputs.GITHUB_TOKEN }}
           docker_name: 'owasp/zap2docker-stable'
           target: 'https://${{ steps.HTTP-USERNAME.outputs.secret-value }}:${{ steps.HTTP-PASSWORD.outputs.secret-value }}@${{steps.app_name.outputs.SCAN}}/'
           rules_file_name: '.zap/rules.tsv'
