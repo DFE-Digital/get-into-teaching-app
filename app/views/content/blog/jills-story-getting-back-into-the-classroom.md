@@ -15,7 +15,6 @@ keywords:
 tags:
   - returning to teaching
   - teacher training advisers
-closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $jill$
@@ -37,3 +36,5 @@ I was fortunate enough to land a job before the course even finished – and I w
 Throughout the academic year, there was always Laura, my return to teaching adviser, at the end of the phone offering advice and support. Laura would review my applications and lesson plans and discuss interview feedback with me. It can be discouraging to attend interview after interview with what feels like no success - but Laura would always be positive and identify key learning points.
 
 I'm now in my second year of teaching maths GCSE at an 11 to 16 alternative provision school and I am really enjoying it. I am very pleased to have been able to resume my career and very grateful to all concerned with the Return to Teaching Adviser service.
+
+If you're a trained teacher interested in getting back in the classroom, find out how we can help you [return to teaching](/returning-to-teaching).
