@@ -36,7 +36,7 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           yaml_secret: INFRA-KEYS
-          secret: SLACK-WEBHOOK
+          secrets: 'SLACK-WEBHOOK'
 
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@master

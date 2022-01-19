@@ -35,10 +35,9 @@ describe('Google Optimize', () => {
   };
 
   const dispatchBeforeVisit = (url) => {
-    const event = document.createEvent('Events');
-    event.initEvent('turbolinks:before-visit', true, true);
-    event.data = { url: url };
-
+    const event = new CustomEvent('turbo:before-visit', {
+      detail: { url: url },
+    });
     document.dispatchEvent(event);
   };
 
@@ -188,7 +187,7 @@ describe('Google Optimize', () => {
         ).toBeNull();
       });
 
-      describe('when Turbolinks transitions to an experiment path', () => {
+      describe('when Turbo transitions to an experiment path', () => {
         beforeEach(() =>
           dispatchBeforeVisit(`https://test.com${experimentPath}`)
         );
@@ -200,7 +199,7 @@ describe('Google Optimize', () => {
         });
       });
 
-      describe('when Turbolinks transitions to a non-experiment path', () => {
+      describe('when Turbo transitions to a non-experiment path', () => {
         beforeEach(() => dispatchBeforeVisit('https://test.com/no-experiment'));
 
         it('does not hijack the transition', () => {

@@ -7,19 +7,8 @@ export default class extends Controller {
   };
 
   connect() {
-    this.preventTurboLinksOnJumpLinks();
     this.prepareChevronOnButtonLinks();
     this.openExternalContentLinksInNewWindow();
-  }
-
-  preventTurboLinksOnJumpLinks() {
-    const links = this.contentTarget.querySelectorAll('a');
-
-    links.forEach((l) => {
-      if (l.getAttribute('href')?.includes('#')) {
-        l.dataset.turbolinks = 'false';
-      }
-    });
   }
 
   openExternalContentLinksInNewWindow() {
