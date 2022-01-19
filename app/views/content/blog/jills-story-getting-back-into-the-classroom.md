@@ -4,9 +4,8 @@ date: "2021-01-01"
 author: Jill
 images:
   jill:
-    path: media/images/content/stories/stories-jill.jpg
-    thumbnail_path: media/images/content/stories/stories-jill.jpg
-    alt: Jill, a returning teacher who used the return to teaching adviser service.
+    path: media/images/content/blog/jill.jpg
+    thumbnail_path: media/images/content/blog/thumbnails/jill.jpg
 description: |-
   Read about how Jill got back into teaching maths using the return to teaching adviser service to gain school experience and up to date references.
 keywords:
