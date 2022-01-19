@@ -41,7 +41,7 @@ agencies:
     website: https://www.academicsltd.co.uk/
     address: 1st Floor, 30 St Pauls Square, Birmingham, West Midlands, B3 1QZ
   - name: ABC Teachers
-    email: Darren.starling@visinoforeducation.co.uk
+    email: Darren.starling@visionforeducation.co.uk
     branch: East Midlands
     phone: 01543 410 500
     website: https://www.abc-teachers.co.uk/
@@ -131,7 +131,7 @@ agencies:
     email: Jason@travaileducation.com
     branch: Travail Education
     phone: 01476 570716
-    website:
+    website: https://www.travail.co.uk/sector/education
     address: Office 13, Autumn Business Park, Dysart Road, Grantham, Lincolnshire, NG31
       7EU
   - name: Guardian Selection Limited, trading as GSL Education
@@ -734,6 +734,12 @@ agencies:
     phone: '0208 191 0645'
     website: https://www.premierteachers.co.uk/
     address: Summit Way, Southgate, London, N14 7NP
+  - name: Educate Staffing Ltd
+    email: stephanie@educatestaffing.london
+    branch: London
+    phone: 0203 861 8999
+    website: https://www.educatestaffing.co.uk/
+    address: New London House, 6 London Street, London, London, EC3R 7LP
   - name: Engage Education Services
     email: sean.packer@engageeducation.co.uk
     branch: Engage Education London
@@ -1152,7 +1158,7 @@ agencies:
     branch: Gateshead
     phone: '0191 440 9993'
     website: https://www.education-world.co.uk/
-    address: YBN Building, Delta Bank Road, Gateshead, Tyne and Wear, NE11 9DJ
+    address: Metro House, Marconi Way, Gateshead, Tyne and Wear, NE119NH
   - name: Exact Education
     email: info@exacteducation.com
     branch: Newcastle
@@ -1381,6 +1387,12 @@ agencies:
     website: https://educate-group.co.uk/
     address: Sedan House, Stanley place, Chester, CH12LU, Stanley Place, Chester, Cheshire,
       CH12LU
+  - name: Educate Staffing Ltd
+    email: stephanie@educatestaffing.london
+    branch: Manchester
+    phone: 0203 861 8999
+    website: https://www.educatestaffing.co.uk/
+    address: 1, St Peter's Square, Manchester, M2 3DE
   - name: Exact Education
     email: info@exacteducation.com
     branch: Manchester
@@ -1689,8 +1701,8 @@ agencies:
     branch: Preston
     phone: 01772 669322
     website: https://www.visionforeducation.co.uk/
-    address: Regus, Albert Edward House,, The Pavilions, Preston, PR2 2YB, Preston,
-      Lancashire, PR22YB
+    address: Unit 8, Ferry Road Office Park, Ferry Road, Riversway, Preston, Lancashire,
+      PR2 2YH
   - name: Zen Educate Limited
     email: support@zeneducate.com
     branch: Manchester
@@ -2499,6 +2511,12 @@ agencies:
     phone: '01905 20600'
     website: https://www.academicsltd.co.uk/
     address: 1st Floor, 30 St Pauls Square, Birmingham, B3 1QZ
+  - name: ABC Teachers
+    email: Darren.starling@visionforeducation.co.uk
+    branch: West Midlands
+    phone: 01543 410 500
+    website: https://www.abc-teachers.co.uk/
+    address: St Chad's House, Cross Keys, Lichfield, WS13 6DN
   - name: Academic Choice Limited
     email: info@academicchoice.co.uk
     branch: Academic Choice Limited
@@ -3128,8 +3146,8 @@ agencies:
     branch: Leeds
     phone: 0113 426 5330
     website: https://www.visionforeducation.co.uk/
-    address: Regus, 1200 Century Way, Thorpe Park Business Park, Colton, Leeds, West
-      Yorkshire, LS15 8ZA
+    address: Suite one, Floor one, Cross Gates House, Station Road, Leeds, West Yorkshire,
+      LS15 7JY
   - name: Vision for Education
     email: darren.starling@visionforeducation.co.uk
     branch: Lincolnshire
