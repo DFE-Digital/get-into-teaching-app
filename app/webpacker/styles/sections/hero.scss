@@ -142,18 +142,11 @@ $mobile-cutoff: 800px;
   background-color: $grey;
   overflow: hidden;
 
-  &__title,
-  &__subtitle {
-    > * {
-      @include rotated-block;
-    }
-  }
-
   &__title {
     z-index: 20;
 
     h1 {
-      background-color: $yellow-dark-90;
+      background-color: $yellow-dark;
       padding: .8em .75em 1.2em 1.75em;
       margin-left: -1em;
 

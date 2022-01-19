@@ -25,13 +25,11 @@ module CallsToAction
     end
 
     def icon_element(icon)
-      img = image_pack_tag("media/images/#{icon}.svg",
-                           width: 50,
-                           height: 50,
-                           alt: "#{icon} icon",
-                           class: "call-to-action__icon")
-
-      tag.div(img, class: "call-to-action__icon__box")
+      image_pack_tag("media/images/#{icon}.svg",
+                     width: 50,
+                     height: 50,
+                     alt: "#{icon} icon",
+                     class: "call-to-action__icon")
     end
   end
 end

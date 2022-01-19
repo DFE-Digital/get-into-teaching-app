@@ -15,7 +15,6 @@
         &:before {
           content: counter(item);
           flex: 0 0 1.5em;
-          @include rotated-block;
           background-color: $pink-dark;
           text-align: center;
           color: $white;

@@ -4,8 +4,6 @@
   overflow: hidden;
 
   header {
-    @include rotated-block;
-
     background-color: $purple-dark;
     color: $white;
     margin-left: -2em;
