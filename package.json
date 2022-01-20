@@ -2,7 +2,7 @@
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
-    "@hotwired/turbo-rails": "^7.0.1",
+    "@hotwired/turbo-rails": "^7.1.0",
     "@rails/webpacker": "5.4.3",
     "@sentry/browser": "^6.16.1",
     "@sentry/tracing": "^6.16.1",
