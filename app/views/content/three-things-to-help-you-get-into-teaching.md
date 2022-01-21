@@ -8,7 +8,7 @@
   layout: layouts/campaigns/landing_page_with_hero_nav
   hero_nav:
     Receive personalised email updates and tips: "#receive-personalised-email-updates-and-tips"
-    Speak to current teachers at a teaching event: "#speak-to-current-teachers-at-a-teaching-event"
+    Speak to current teachers at a teacher training event: "#speak-to-current-teachers-at-a-teaching-event"
     Get free one-to-one advice from a teacher training adviser: "#get-free-one-to-one-advice-from-a-teacher-training-adviser"
     
   keywords:
@@ -46,7 +46,7 @@ Get personalised information straight to your inbox with everything you need to 
 
 <div id="speak-to-current-teachers-at-a-teaching-event" class="numbered-heading">
   <span class="pink-number">2</span>
-  <h2>Speak to current teachers at a teaching event</h2>
+  <h2>Speak to current teachers at a teacher training event</h2>
 </div>
 
 Chat with teachers, experts and training providers about every aspect of teaching and teacher training at an event. There are a variety of events available that cover everything from funding your training, what a career in teaching is really like, to submitting a successful application.

@@ -32,7 +32,7 @@ class TeachingEventsController < ApplicationController
   end
 
   def show
-    breadcrumb "Teaching events", "/teaching-events"
+    breadcrumb "Get into Teaching events", "/teaching-events"
 
     api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
     @event = TeachingEvents::EventPresenter.new(api_event)
@@ -43,7 +43,7 @@ class TeachingEventsController < ApplicationController
   end
 
   def about_ttt_events
-    breadcrumb "Teaching events", "/teaching-events"
+    breadcrumb "Get into Teaching events", "/teaching-events"
   end
 
 private
