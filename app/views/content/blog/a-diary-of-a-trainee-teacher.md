@@ -17,7 +17,6 @@ keywords:
   - School Direct
 tags:
   - becoming a teacher
-closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $mel_oconnor$
@@ -61,3 +60,5 @@ I attended the first EPS group discussion and debate. This took place remotely w
 ## Final thoughts
 
 The first week and a half was jam-packed with new information and a variety of activities. It can be a challenge to keep up with the volume of information initially, but I stayed organised by downloading all the materials to my laptop and taking notes electronically. There is a heavy workload and lots of independent work in the evenings, however I felt energised and engaged throughout the week, confirming I had made the right career choice! I am excited to visit my local primary school next week and observe how maths is taught in the younger year groups, before returning to university and preparing for my first placement in a secondary school which starts in a few weeks’ time.
+
+If you're interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). If you have a passion for maths, find out more about [becoming a maths teacher](/subjects/maths).
