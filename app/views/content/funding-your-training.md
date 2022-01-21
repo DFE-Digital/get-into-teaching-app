@@ -121,7 +121,7 @@ You’ll need a first, 2:1, 2:2 degree or a PhD or master's degree to be eligibl
 
 [Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023).
 
-For a scholarship, each professional scholarship body sets its own criteria. These bodies include:
+For a scholarship, each professional scholarship body sets its own criteria. You can find out how to apply for a scholarship by looking at each individual provider:
 
 * the [Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
 * [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
