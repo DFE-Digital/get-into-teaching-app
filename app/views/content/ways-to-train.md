@@ -100,7 +100,7 @@ You can check the fees for a particular course with the course provider.
 
 #### School-centred initial teacher training (SCITT)
 
-SCITT programmes are delivered by a network of schools and focus on training as you teach.
+SCITT programmes are delivered by a network of schools and colleges. They focus on training as you teach.
 
 #### School Direct (fee-funded)
 
