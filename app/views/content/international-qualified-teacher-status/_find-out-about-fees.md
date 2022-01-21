@@ -1,4 +1,4 @@
-Fees for iQTS vary – check with [participating iQTS training providers](#choose-your-iQTS-teacher-training-provider)
+Fees for iQTS vary – check with [participating iQTS training providers](#step-3)
 
 If you are already employed in a school, you can discuss with your training provider whether you can continue working in that school while you complete your iQTS studies.  
 
