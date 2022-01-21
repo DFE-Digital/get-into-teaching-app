@@ -19,6 +19,13 @@ keywords:
     - QTS
     - iQTS
     - Qualified teacher status
+accordion:
+  numbered: true
+  content_after_accordion:
+    partial: content/international-qualified-teacher-status/after-accordion
+  steps:
+    Check your eligibility:
+      partial: content/international-qualified-teacher-status/check-your-eligibility
 ---
 
 ## Introducing iQTS
@@ -66,33 +73,6 @@ iQTS is for you if:
 
 ## Apply for iQTS, step by step
 
-### 1. Check your eligibility
-
-To apply for iQTS you will need to have: 
-
-* a bachelor’s degree from a UK or non-UK university (or other institution)
-
-* a maths qualification equivalent to GCSE grade 4 
-
-* for teaching children aged 3 to 11, a science qualification equivalent to GCSE grade 4 
-
-* excellent written and verbal English language skills
-
-You do not need any teaching experience or to be working in a school to apply for iQTS. 
-
-#### More about qualifications
-A GCSE (General Certificate of Secondary Education) is an academic qualification awarded for exams in England, usually taken at age 16. 
-
-If you’re not sure of the status of your degree in England, or whether your science qualification is equivalent to an English GCSE grade 4, visit [UK ENIC](https://www.ecctis.com/Default.aspx), the UK National Information Centre for global qualifications and skills.
-
-To show you meet the required standard in the English language, you’ll need one of the following:
-
-* an [IELTS](https://www.ielts.org/) score of 6.5 or higher
-
-* the equivalent score in another English language testing system
-
-* to have completed some of your education in English, for example, a degree studied in English
- 
 ### 2. Find out about fees
 
 Fees for iQTS vary – check with [participating iQTS training providers](#choose-your-iQTS-teacher-training-provider)
@@ -139,9 +119,7 @@ Your iQTS provider will assess you throughout your training to check you meet iQ
 
 #### Apply for QTS
 
-
 When you have successfully completed your iQTS training, you can apply to England’s Department for Education for QTS. You can do this without further fees or training. 
-
 
 #### Apply for your teaching job and visa
 
@@ -154,18 +132,3 @@ To work in England you’ll also need a visa. You will usually need to find a jo
 As a newly qualified teacher, you’ll find some schools in England will require you to complete a 2-year induction period. During this time you’ll work and earn a salary as a teacher, and be assessed as part of DfE’s [Early Career Framework](https://www.gov.uk/government/publications/early-career-framework). You’ll be expected to show you meet English [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards) and you’ll also benefit from training and mentoring.
 
 You can complete your induction in a relevant school in England (see [Induction for early career teachers (England), para 2.1](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/972316/Statutory_Induction_Guidance_2021_final__002_____1___1_.pdf)) or a [DfE-accredited British School Overseas](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#stat).
-
-## Further information
-Learn more about [iQTS policy](https://www.gov.uk/government/publications/international-qualified-teacher-status-iqts/introducing-the-international-qualified-teacher-status-iqts-pilot) and [Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards). 
-
-Learn more about [other routes to qualified teacher status (QTS) and teaching in England](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk#apply-to-the-teaching-regulation-agency-tra).
-
-[Come to England to teach if you're a teacher from outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) gives information and advice to international teachers who’d like to teach in England.
-
-If you already live in the UK, you should consider [applying for teacher training leading to QTS in England](/steps-to-become-a-teacher). 
-
-This guidance relates to teaching in England. Different rules apply to teaching in [Wales](https://www.ewc.wales/site/index.php/en/registration/practitioners-trained-outside-wales.html), [Scotland](https://teachinscotland.scot/become-a-teacher/qualified-outside-scotland/) and [Northern Ireland](https://gtcni.org.uk/registration/getting-registered).
-
-## Contact
-
-For help applying for iQTS or more information, contact us on iqts.pilot@education.gov.uk
