@@ -27,6 +27,7 @@ module TeachingEvents
       :type_id,
       :status_id,
       :video_url,
+      :web_feed_id,
       to: :event,
     )
 
@@ -77,6 +78,14 @@ module TeachingEvents
 
     def allow_registration?
       EventStatus.new(@event).accepts_online_registration?
+    end
+
+    def open?
+      EventStatus.new(@event).open?
+    end
+
+    def closed?
+      EventStatus.new(@event).closed?
     end
 
     def show_provider_information?

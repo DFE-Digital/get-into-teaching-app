@@ -1,12 +1,36 @@
-<section class="teaching-event__how-to-attend">
-  <h2>How to attend</h2>
+<%
+    if @event.open? && [
+      can_sign_up_online?(@event),
+      is_event_type?(@event, "School or University event"),
+      @event.provider_website_url,
+      @event.provider_contact_email
+    ].any?
+%>
+  <section class="teaching-event__how-to-attend">
+    <h2>How to attend</h2>
 
-  <p>Registration for this event is free.</p>
+    <% if can_sign_up_online?(@event) %>
+      <p>
+        To attend this event, you must register for a place. Once registered,
+        you will receive log-in information and joining instructions via email.
+        Please note: to access this event you will require a laptop/desktop PC
+        and be using Google Chrome as your browser.
+      </p>
+    <% elsif is_event_type?(@event, "School or University event") %>
+      <p>
+        To register for this event, follow the instructions in the event information section.
+      </p>
+    <% elsif @event.provider_website_url %>
+      <p>
+        To attend this event, please <%= link_to("visit this website", @event.provider_website_url) %>.
+      </p>
+    <% elsif @event.provider_contact_email %>
+      <p>
+        To attend this event, please
+        <%= mail_to(@event.provider_contact_email, "email us") %>.
+      </p>
+    <% end %>
 
-  <p>
-    By registering, you will receive information about what to expect and how
-    to make the most of your experience at the event.
-  </p>
-
-  <%= render(partial: 'teaching_events/show/register-button') %>
-</section>
+    <%= render(partial: 'teaching_events/show/register-button') %>
+  </section>
+<% end %>
