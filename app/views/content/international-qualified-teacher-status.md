@@ -28,6 +28,21 @@ accordion:
       partial: content/international-qualified-teacher-status/check-your-eligibility
     Find out about fees:
       partial: content/international-qualified-teacher-status/find-out-about-fees
+    Choose your iQTS teacher training provider:
+      partial: content/international-qualified-teacher-status/choose-your-training-provider
+    Apply:
+      partial: content/international-qualified-teacher-status/apply
+    Complete your training:
+      partial: content/international-qualified-teacher-status/complete-your-training
+    Next steps for candidates wishing to teach in England:
+      partial: content/international-qualified-teacher-status/next-steps-for-candidates
+
+
+
+
+
+
+
 
 ---
 
@@ -75,53 +90,4 @@ iQTS is for you if:
 * you are already a teacher, and would benefit from a professional teaching qualification allowing you to teach in all schools in England
 
 ## Apply for iQTS, step by step
-
-### 3. Choose your iQTS teacher training provider 
-
-iQTS is currently offered by the following training providers:
-
-* list to come
-
-Over time, iQTS will become more widely available. To be kept informed about new iQTS training providers, regions and placement schools, please contact us at iqts.pilot@education.gov.uk. 
-
-All iQTS training providers offer:
-
-* 1 academic year of training, including at least 120 days in a placement school and further academic tuition delivered using remote working technology or in person
-
-* teaching and assessment from an experienced, UK government-approved English teacher training provider
-
-* face-to-face mentoring at your placement school 
-
-* regular feedback and rigorous quality control
-
-To learn more, visit participating iQTS training provider websites.
-
-#### Your placement school
-
-Some iQTS training providers will be able to match you with a placement school in your region. However, others will ask you to find a school as a condition of entry to their course. For more info, check participating iQTS training provider websites.
-
-### 4. Apply 
-
-To apply for iQTS, visit [participating iQTS training provider websites](#choose-your-iQTS-teacher-training-provider), where you’ll be able to complete your application. 
-
-### 5. Complete your training
-
-Your iQTS provider will assess you throughout your training to check you meet iQTS [Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards#:~:text=The%20iQTS%20Teachers'%20Standards%20define,for%20application%20in%20international%20contexts.). Passing your training provider's assessment gives you international qualified teacher status. If you wish, you can then apply to England's Department for Education for qualified teacher status (QTS). You can apply for QTS even if you don’t want to teach in England. 
  
-### 6. Next steps for candidates wishing to teach in England
-
-#### Apply for QTS
-
-When you have successfully completed your iQTS training, you can apply to England’s Department for Education for QTS. You can do this without further fees or training. 
-
-#### Apply for your teaching job and visa
-
-You can apply for teaching jobs in England using the [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service.
-
-To work in England you’ll also need a visa. You will usually need to find a job before you apply for a visa. [Learn more about applying for the correct visa to teach in England](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).
-
-#### Complete your induction
-
-As a newly qualified teacher, you’ll find some schools in England will require you to complete a 2-year induction period. During this time you’ll work and earn a salary as a teacher, and be assessed as part of DfE’s [Early Career Framework](https://www.gov.uk/government/publications/early-career-framework). You’ll be expected to show you meet English [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards) and you’ll also benefit from training and mentoring.
-
-You can complete your induction in a relevant school in England (see [Induction for early career teachers (England), para 2.1](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/972316/Statutory_Induction_Guidance_2021_final__002_____1___1_.pdf)) or a [DfE-accredited British School Overseas](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#stat).

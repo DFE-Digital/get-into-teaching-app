@@ -1,0 +1,1 @@
+To apply for iQTS, visit [participating iQTS training provider websites](#choose-your-iQTS-teacher-training-provider), where you’ll be able to complete your application. 
