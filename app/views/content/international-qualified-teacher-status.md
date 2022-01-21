@@ -36,14 +36,6 @@ accordion:
       partial: content/international-qualified-teacher-status/complete-your-training
     Next steps for candidates wishing to teach in England:
       partial: content/international-qualified-teacher-status/next-steps-for-candidates
-
-
-
-
-
-
-
-
 ---
 
 ## Introducing iQTS
@@ -62,7 +54,7 @@ International qualified teacher status (iQTS) is a new teaching qualification ba
 
 1. Gain the skills, experience and knowledge to become an excellent teacher, with an internationally transferable qualification backed by the UK government 
 
-2. Apply from anywhere in the world, as long as you meet the [eligibility criteria](#check-your-eligibility)
+2. Apply from anywhere in the world, as long as you meet the [eligibility criteria](#step-1)
 
 3. Train to teach where you live or work, with no need to visit the UK
 
