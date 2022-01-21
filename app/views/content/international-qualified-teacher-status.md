@@ -26,6 +26,9 @@ accordion:
   steps:
     Check your eligibility:
       partial: content/international-qualified-teacher-status/check-your-eligibility
+    Find out about fees:
+      partial: content/international-qualified-teacher-status/find-out-about-fees
+
 ---
 
 ## Introducing iQTS
@@ -72,16 +75,6 @@ iQTS is for you if:
 * you are already a teacher, and would benefit from a professional teaching qualification allowing you to teach in all schools in England
 
 ## Apply for iQTS, step by step
-
-### 2. Find out about fees
-
-Fees for iQTS vary – check with [participating iQTS training providers](#choose-your-iQTS-teacher-training-provider)
-
-If you are already employed in a school, you can discuss with your training provider whether you can continue working in that school while you complete your iQTS studies.  
-
-You might be able to get a salary for your work in a placement school – this will vary between schools and between providers. 
-
-To learn more, contact your chosen iQTS provider directly.
 
 ### 3. Choose your iQTS teacher training provider 
 
