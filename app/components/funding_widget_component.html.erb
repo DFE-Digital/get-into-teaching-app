@@ -62,7 +62,7 @@
               Explore <a href="/ways-to-train">ways to train</a>.
             </div>
 
-            <%= helpers.safe_format(next_steps) if next_steps.present? %>
+            <%= helpers.safe_html_format(next_steps) if next_steps.present? %>
           </div>
         <% end %>
         <p>You may be able to get extra support <a href="#if-youre-disabled">if you're disabled</a>, <a href="#if-youre-a-parent-or-carer">if you're a parent or carer</a>. You may still be eligible for funding <a href="#if-you-come-from-outside-england">if you're an international candidate</a>.</p>
