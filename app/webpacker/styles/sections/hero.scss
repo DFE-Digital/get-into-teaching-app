@@ -172,10 +172,6 @@ $mobile-cutoff: 800px;
         // text-underline-offset: .3em;
         // text-decoration-thickness: .1em;
 
-        &:after {
-          content: ".";
-        }
-
         @include mq($from: tablet) {
           @include font-size("xxlarge");
           border-bottom: 6px solid $black;
