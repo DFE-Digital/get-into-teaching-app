@@ -10,12 +10,15 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
        result: '${{ steps.pwsh_check_expire.outputs.json_data }}'
+    strategy:
+      matrix: 
+         run: ['s146d01-keyvault-readonlyaccess' , 's14td01-keyvault-readonlyaccess' , 's146p01-keyvault-readonlyaccess'] 
     steps:
       - uses: DFE-Digital/github-actions/CheckServicePrincipal@master
         id: pwsh_check_expire
         with:
             AzureCredentials: ${{ secrets.AZURE_CREDENTIALS }}
-            ServicePrincipal: s146d01-keyvault-readonlyaccess
+            ServicePrincipal: ${{ matrix.run }}
             ExpiresWithinDays: 30
 
   alert:
