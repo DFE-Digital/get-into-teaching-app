@@ -66,7 +66,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
     end
 
     it "contains subject-specific next steps content" do
-      expect(page).to have_text("Custom maths content goes here")
+      expect(page).to have_text("If you have a passion for maths")
     end
   end
 end
