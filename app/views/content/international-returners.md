@@ -64,8 +64,7 @@ right_column:
 ---
 
 Are you a UK-trained teacher and UK citizen currently working abroad? Our
-children and young people need your international skills, experience and
-perspective.
+children and young people need your international skills, perspective and experience.
 
 If you're thinking about coming home to teach, we want to help.
 
