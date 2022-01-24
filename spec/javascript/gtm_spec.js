@@ -78,6 +78,9 @@ describe('Google Tag Manager', () => {
     it('updates the page_path in GTM', () => {
       window.location.pathname = '/new-path';
 
+      // We receive a turbo:load call on the initial (non-turbo) page load.
+      document.dispatchEvent(new Event('turbo:load'));
+      // And then on the turbo page load for the subsequent page change.
       document.dispatchEvent(new Event('turbo:load'));
 
       expect(window.gtag).toHaveBeenCalledWith('set', 'page_path', '/new-path');
