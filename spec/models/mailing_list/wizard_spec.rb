@@ -42,7 +42,7 @@ describe MailingList::Wizard do
   end
 
   describe "#complete!" do
-    let(:variant) { "/welcome/email/subject/maths/degree-status/final_year" }
+    let(:variant) { "/email/subject/maths/degree-status/final_year" }
     let(:request) do
       GetIntoTeachingApiClient::MailingListAddMember.new({
         email: wizardstore[:email],

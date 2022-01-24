@@ -82,7 +82,7 @@ module MailingList
     end
 
     def welcome_guide_variant(degree_status_id: nil, preferred_teaching_subject_id: nil)
-      %w[/welcome email].tap { |path|
+      %w[/email].tap { |path|
         if preferred_teaching_subject_id
           path << ["subject", TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id).downcase]
         end
