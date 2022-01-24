@@ -1,14 +1,14 @@
 require "rails_helper"
 
 RSpec.describe FundingWidgetComponent, type: :component do
+  let(:funding_widget) { FundingWidget.new }
+  let(:path) { "/example-page" }
+
+  let(:component) { described_class.new(funding_widget, path) }
+
+  before { render_inline(component) }
+
   describe "rendering the component" do
-    let(:funding_widget) { FundingWidget.new }
-    let(:path) { "/example-page" }
-
-    let(:component) { described_class.new(funding_widget, path) }
-
-    before { render_inline(component) }
-
     it "builds a funding_widget form" do
       expect(page).to have_css("form[action='#{path}'][method='get']")
     end
@@ -55,6 +55,18 @@ RSpec.describe FundingWidgetComponent, type: :component do
       it "has additional info for extra support" do
         expect(page).to have_css("p", text: "You may be able to get extra support")
       end
+    end
+  end
+
+  describe "custom content" do
+    let(:funding_widget) { FundingWidget.new(subject: "mathematics") }
+
+    it "contains subject-specific funding content" do
+      expect(page).to have_text("Scholarships of £26,000 and bursaries of £24,000 are available for trainee maths teachers.")
+    end
+
+    it "contains subject-specific next steps content" do
+      expect(page).to have_text("Custom maths content goes here")
     end
   end
 end

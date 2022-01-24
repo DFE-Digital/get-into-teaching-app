@@ -28,6 +28,10 @@ class FundingWidgetComponent < ViewComponent::Base
     subject_data&.fetch(:funding, "")
   end
 
+  def next_steps
+    subject_data&.fetch(:next_steps, "")
+  end
+
   def sub_head
     subject_data&.fetch(:sub_head, "")
   end
