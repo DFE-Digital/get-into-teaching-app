@@ -27,6 +27,7 @@ describe TeachingEvents::EventPresenter do
       type_id
       status_id
       video_url
+      web_feed_id
     ].each { |attribute| it { is_expected.to delegate_method(attribute).to(:event) } }
   end
 
@@ -102,6 +103,34 @@ describe TeachingEvents::EventPresenter do
         let(:event) { build(:event_api, :online_event) }
 
         specify { expect(subject).to be_nil }
+      end
+    end
+
+    describe "#open?" do
+      context "when event is open" do
+        let(:event) { build(:event_api) }
+
+        it { is_expected.to be_open }
+      end
+
+      context "when event is closed" do
+        let(:event) { build(:event_api, :closed) }
+
+        it { is_expected.not_to be_open }
+      end
+    end
+
+    describe "#closed?" do
+      context "when event is closed" do
+        let(:event) { build(:event_api, :closed) }
+
+        it { is_expected.to be_closed }
+      end
+
+      context "when event is open" do
+        let(:event) { build(:event_api) }
+
+        it { is_expected.not_to be_closed }
       end
     end
 

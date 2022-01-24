@@ -40,12 +40,8 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(page).to have_css(".date-and-time", text: event.start_at.to_formatted_s(:time))
       expect(page).to have_css(".date-and-time", text: event.end_at.to_formatted_s(:time))
 
-      expect(page).not_to have_css(".register")
-
       expect(page).to have_css("h2", text: "Event information")
       expect(page).to have_css("h2", text: "Provider information")
-
-      expect(page).not_to have_link("Register for this event")
 
       if expect_venue
         expect(page).to have_css("h2", text: "Venue information")
@@ -99,6 +95,44 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
         expect(page).to have_content("Contact email")
         expect(page).to have_link(event.provider_contact_email)
+      end
+    end
+  end
+
+  describe "instructions on attending" do
+    before { visit teaching_event_path(event.readable_id) }
+
+    subject { page }
+
+    context "when can the event can be signed up for online" do
+      let(:event) { build(:event_api) }
+
+      it { is_expected.to have_content("To attend this event, you must register for a place") }
+    end
+
+    context "when can the event can't be signed up for online" do
+      context "when it's a School or University event" do
+        let(:event) { build(:event_api, :school_or_university_event, web_feed_id: nil) }
+
+        it { is_expected.to have_content("To register for this event, follow the instructions in the event information section.") }
+      end
+
+      context "when it's not a School or University event" do
+        context "when the provider has a website" do
+          let(:url) { "https://event-provider.com" }
+          let(:event) { build(:event_api, :question_time_event, web_feed_id: nil, provider_website_url: url) }
+
+          it { is_expected.to have_content("To attend this event, please visit this website") }
+          it { is_expected.to have_link("visit this website", href: url) }
+        end
+
+        context "when the provider has an email address" do
+          let(:email) { "events@event-provider.com" }
+          let(:event) { build(:event_api, :question_time_event, web_feed_id: nil, provider_contact_email: email) }
+
+          it { is_expected.to have_content("To attend this event, please email us") }
+          it { is_expected.to have_link("email us", href: "mailto:" + email) }
+        end
       end
     end
   end
