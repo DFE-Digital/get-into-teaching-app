@@ -100,6 +100,8 @@ RSpec.feature "Searching for teaching events", type: :feature do
   end
 
   describe "instructions on attending" do
+    let(:register_link_text) { "Register for this event" }
+
     before { visit teaching_event_path(event.readable_id) }
 
     subject { page }
@@ -108,6 +110,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       let(:event) { build(:event_api) }
 
       it { is_expected.to have_content("To attend this event, you must register for a place") }
+      it { is_expected.to have_link(register_link_text) }
     end
 
     context "when can the event can't be signed up for online" do
@@ -115,23 +118,26 @@ RSpec.feature "Searching for teaching events", type: :feature do
         let(:event) { build(:event_api, :school_or_university_event, web_feed_id: nil) }
 
         it { is_expected.to have_content("To register for this event, follow the instructions in the event information section.") }
+        it { is_expected.not_to have_link(register_link_text) }
       end
 
       context "when it's not a School or University event" do
         context "when the provider has a website" do
           let(:url) { "https://event-provider.com" }
-          let(:event) { build(:event_api, :question_time_event, web_feed_id: nil, provider_website_url: url) }
+          let(:event) { build(:event_api, :online_event, web_feed_id: nil, provider_website_url: url) }
 
           it { is_expected.to have_content("To attend this event, please visit this website") }
           it { is_expected.to have_link("visit this website", href: url) }
+          it { is_expected.not_to have_link(register_link_text) }
         end
 
         context "when the provider has an email address" do
           let(:email) { "events@event-provider.com" }
-          let(:event) { build(:event_api, :question_time_event, web_feed_id: nil, provider_contact_email: email) }
+          let(:event) { build(:event_api, :online_event, web_feed_id: nil, provider_contact_email: email) }
 
           it { is_expected.to have_content("To attend this event, please email us") }
           it { is_expected.to have_link("email us", href: "mailto:" + email) }
+          it { is_expected.not_to have_link(register_link_text) }
         end
       end
     end
