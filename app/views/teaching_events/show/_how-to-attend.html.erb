@@ -16,6 +16,8 @@
         Please note: to access this event you will require a laptop/desktop PC
         and be using Google Chrome as your browser.
       </p>
+
+      <%= render(partial: 'teaching_events/show/register-button') %>
     <% elsif is_event_type?(@event, "School or University event") %>
       <p>
         To register for this event, follow the instructions in the event information section.
@@ -30,7 +32,5 @@
         <%= mail_to(@event.provider_contact_email, "email us") %>.
       </p>
     <% end %>
-
-    <%= render(partial: 'teaching_events/show/register-button') %>
   </section>
 <% end %>
