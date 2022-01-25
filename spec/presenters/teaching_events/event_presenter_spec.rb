@@ -48,6 +48,35 @@ describe TeachingEvents::EventPresenter do
       specify { expect(subject.venue_address).to include(*address_parts.compact) }
     end
 
+    describe "#has_location?" do
+      context "when the event has no building" do
+        let(:event) { build(:event_api, :no_location) }
+
+        it { is_expected.not_to have_location }
+      end
+
+      context "when the event has a building" do
+        let(:event) { build(:event_api) }
+
+        it { is_expected.to have_location }
+      end
+    end
+
+    describe "#location" do
+      context "when show_venue_information? is false" do
+        let(:event) { build(:event_api, :virtual) }
+
+        specify { expect(subject.location).to eql("#{event.building.venue}, #{event.building.address_city}") }
+      end
+
+      context "when show_venue_information? is true" do
+        let(:event) { build(:event_api) }
+        let(:expected_location) { "#{event.building.venue}, #{event.building.address_city}, #{event.building.address_postcode}" }
+
+        specify { expect(subject.location).to eql(expected_location) }
+      end
+    end
+
     describe "#quote" do
       subject { described_class.new(event).quote }
 

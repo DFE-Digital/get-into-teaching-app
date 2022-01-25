@@ -32,18 +32,28 @@ module TeachingEvents
     )
 
     def venue_address
-      building = @event.building
-
-      return if building.blank?
+      return if event_building.blank?
 
       [
-        building.venue,
-        building.address_line1,
-        building.address_line2,
-        building.address_line3,
-        building.address_city,
-        building.address_postcode,
+        event_building.venue,
+        event_building.address_line1,
+        event_building.address_line2,
+        event_building.address_line3,
+        event_building.address_city,
+        event_building.address_postcode,
       ].compact
+    end
+
+    def has_location?
+      event_building.present?
+    end
+
+    def location
+      [
+        event_building.venue,
+        event_building.address_city,
+        (event_building.address_postcode if show_venue_information?),
+      ].compact.join(", ")
     end
 
     def event_type
@@ -94,6 +104,12 @@ module TeachingEvents
 
     def show_venue_information?
       !@event.is_virtual && @event.building.present?
+    end
+
+  private
+
+    def event_building
+      @event.building
     end
   end
 end

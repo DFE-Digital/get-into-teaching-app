@@ -1,7 +1,6 @@
 <div class="location-and-setting">
-  <% if @event.building.present? && !@event.is_online %>
-    <%= @event.building.venue %>,
-    <%= @event.building.address_postcode %>
+  <% if @event.has_location? %>
+    <%= @event.location %>
   <% end %>
 
   <% if @event.is_online %>
