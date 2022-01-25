@@ -6,8 +6,6 @@ export default class Gtm {
   }
 
   init() {
-    this.firstLoad = true;
-
     this.initWindow();
     this.sendDefaultConsent();
     this.initContainer();
@@ -20,7 +18,7 @@ export default class Gtm {
 
     // We use this to retain Google Ads tracking parameters in the
     // URL of the landing page (or they are subsequently lost when
-    // Turbo transitions).
+    // Turbolinks transitions).
     window.dataLayer.push({ originalLocation: this.originalLocation });
 
     function gtag() {
@@ -50,14 +48,7 @@ export default class Gtm {
   }
 
   listenForHistoryChange() {
-    document.addEventListener('turbo:load', () => {
-      // Ignore the first turbo:load call, as the GA script will
-      // track that page view for us.
-      if (this.firstLoad) {
-        this.firstLoad = false;
-        return;
-      }
-
+    document.addEventListener('turbolinks:load', () => {
       window.gtag('set', 'page_path', window.location.pathname);
       window.gtag('event', 'page_view');
     });

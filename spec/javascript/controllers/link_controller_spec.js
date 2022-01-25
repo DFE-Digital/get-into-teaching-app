@@ -2,6 +2,47 @@ import { Application } from 'stimulus';
 import LinkController from 'link_controller.js';
 
 describe('LinkController', () => {
+  describe('disabling turbolinks for links containing anchors', () => {
+    beforeEach(() => {
+      document.body.innerHTML = `
+      <div data-controller="link" data-link-target="content">
+        <a href="path/to#position">Jump Link</a>
+        <div id="level-1" class="video-overlay" data-video-target="player" data-action="click->video#close">
+          <a href="#level-3" />
+          <div id="level-2">
+            <a href="#level-1" />
+            <div id="level-3">
+              <a href="#level-1" />
+            </div>
+          </div>
+        </div>
+      </div>`;
+    });
+
+    beforeEach(() => {
+      const application = Application.start();
+      application.register('link', LinkController);
+    });
+
+    describe('when first loaded', () => {
+      it('adds data-turbolinks attribute to all jump links', () => {
+        const linkNodes = [...document.getElementsByTagName('a')];
+
+        linkNodes.forEach((link) => {
+          expect(link.hasAttribute('data-turbolinks')).toBe(true);
+        });
+      });
+
+      it('sets data-turbolinks attribute to value of false', () => {
+        const linkNodes = [...document.getElementsByTagName('a')];
+
+        linkNodes.forEach((link) => {
+          expect(link.getAttribute('data-turbolinks')).toEqual('false');
+        });
+      });
+    });
+  });
+
   describe('making external links open in new windows', () => {
     beforeEach(() => {
       document.body.innerHTML = `

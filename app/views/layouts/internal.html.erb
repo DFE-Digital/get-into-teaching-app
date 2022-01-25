@@ -2,8 +2,8 @@
 <html lang="en" class="govuk-template">
 <% content_for :head do %>
   <%= csrf_meta_tags %>
-  <%= stylesheet_pack_tag 'internal', 'data-turbo-track': 'reload', media: 'all' %>
-  <%= javascript_pack_tag 'internal', 'data-turbo-track': 'reload', async: true %>
+  <%= stylesheet_pack_tag 'internal', 'data-turbolinks-track': 'reload', media: 'all' %>
+  <%= javascript_pack_tag 'internal', 'data-turbolinks-track': 'reload', async: true %>
 <% end %>
 
 <%= render "sections/head" %>

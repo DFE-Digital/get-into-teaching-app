@@ -28,6 +28,6 @@ module.exports = {
     },
   ],
   globals: {
-    Turbo: 'readonly',
+    Turbolinks: 'readonly',
   },
 };

@@ -17,6 +17,6 @@
     </main>
 
     <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
-    <%= javascript_pack_tag 'govuk/frontend', 'data-turbo-track': 'reload', async: true %>
+    <%= javascript_pack_tag 'govuk/frontend', 'data-turbolinks-track': 'reload', async: true %>
   <% end %>
 </html>
