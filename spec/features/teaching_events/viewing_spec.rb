@@ -142,4 +142,19 @@ RSpec.feature "Searching for teaching events", type: :feature do
       end
     end
   end
+
+  describe "viewing a past event" do
+    let(:event) { build(:event_api) }
+
+    before do
+      allow_any_instance_of(EventStatus).to receive(:viewable?).and_return(false)
+    end
+
+    scenario do
+      visit teaching_event_path(event.readable_id)
+
+      expect(page).to have_css("h1", text: "Unfortunately that event has already happened")
+      expect(page).to have_link("All events", href: "/teaching-events", class: "button")
+    end
+  end
 end
