@@ -48,7 +48,7 @@ describe PagesController, type: :request do
     let(:params) do
       {
         "preferred_teaching_subject_id" => TeachingSubject.lookup_by_key(:biology),
-        "degree_status_id" => "222_750_003",
+        "degree_status_id" => 222_750_003,
         "a_key_that_shouldnt_be_accepted" => "abc123",
       }
     end
@@ -57,7 +57,7 @@ describe PagesController, type: :request do
       params.map { |k, v| "#{k}=#{v}" }.join("&")
     end
 
-    before { get %(/welcome?#{joined_params}) }
+    before { get %(/welcome/email/subject/biology/degree-status/first_year) }
 
     specify "the params are saved to the session" do
       expect(session["welcome_guide"]).to eql(params.except("a_key_that_shouldnt_be_accepted"))

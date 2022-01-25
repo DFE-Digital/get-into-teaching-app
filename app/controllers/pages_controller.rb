@@ -9,7 +9,7 @@ class PagesController < ApplicationController
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
   DYNAMIC_PAGE_PATHS = ["/test/a", "/test/b"].freeze
 
-  before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && request.query_parameters.any? }
+  before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && (params[:subject] || params[:degree_status]) }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
   PAGE_LAYOUTS = [
@@ -102,7 +102,12 @@ private
   end
 
   def set_welcome_guide_info
-    session["welcome_guide"] = request.query_parameters.slice("preferred_teaching_subject_id", "degree_status_id")
+    wg_params = params.permit(:subject, :degree_status)
+
+    session["welcome_guide"] = {
+      "preferred_teaching_subject_id" => TeachingSubject.keyed_subjects[wg_params[:subject]&.to_sym],
+      "degree_status_id" => OptionSet.lookup_const(:degree_status)[wg_params[:degree_status]&.to_sym],
+    }
   end
 
   def page_layout

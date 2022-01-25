@@ -49,12 +49,18 @@ Rails.application.routes.draw do
   end
 
   get "/funding-your-training", to: "pages#funding_your_training", as: :funding_your_training
-  get "/welcome", to: "pages#welcome", as: :welcome_guide
-  get "/welcome/my-journey-into-teaching", to: "pages#welcome_my_journey_into_teaching", as: :welcome_my_journey_into_teaching
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/tta-service", to: "pages#tta_service", as: :tta_service
   get "/tta", to: "pages#tta_service", as: nil
+
+  get "/welcome", to: "pages#welcome", as: :welcome_guide
+  get "/welcome/my-journey-into-teaching", to: "pages#welcome_my_journey_into_teaching", as: :welcome_my_journey_into_teaching
+
+  # param paths for welcome guide customisation
+  get "/welcome/email/subject/:subject", to: "pages#welcome"
+  get "/welcome/email/degree-status/:degree_status", to: "pages#welcome"
+  get "/welcome/email/subject/:subject/degree-status/:degree_status", to: "pages#welcome"
 
   resource :search, only: %i[show]
   # resource :eligibility_checker,

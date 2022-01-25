@@ -32,6 +32,14 @@ class OptionSet
       lookup_const(category).fetch_values(*keys)
     end
 
+    def lookup_by_value(category, value)
+      lookup_const(category).invert.fetch(value)
+    end
+
+    def lookup_by_values(category, *values)
+      lookup_const(category).invert.fetch_values(*values)
+    end
+
     def lookup_const(category)
       const = const_get(category.to_s.pluralize.upcase)
       const.transform_keys { |k| k.parameterize(separator: "_").to_sym }

@@ -74,12 +74,23 @@ module MailingList
 
       return export unless show_welcome_guide
 
-      export.tap do |h|
-        h[:welcome_guide_variant] = export_data.slice(
-          "degree_status_id",
-          "preferred_teaching_subject_id",
-        ).to_query
-      end
+      wg_params = export_data
+        .slice("degree_status_id", "preferred_teaching_subject_id")
+        .symbolize_keys
+
+      export.tap { |h| h[:welcome_guide_variant] = welcome_guide_variant(**wg_params) }
+    end
+
+    def welcome_guide_variant(degree_status_id: nil, preferred_teaching_subject_id: nil)
+      %w[/email].tap { |path|
+        if preferred_teaching_subject_id
+          path << ["subject", TeachingSubject.lookup_by_uuid(preferred_teaching_subject_id).downcase]
+        end
+
+        if degree_status_id
+          path << ["degree-status", OptionSet.lookup_by_value(:degree_status, degree_status_id).downcase]
+        end
+      }.join("/")
     end
   end
 end

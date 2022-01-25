@@ -5,13 +5,14 @@ describe MailingList::Wizard do
 
   let(:uuid) { SecureRandom.uuid }
   let(:degree_status_id) { OptionSet.lookup_by_key(:degree_status, :final_year) }
+  let(:preferred_teaching_subject_id) { TeachingSubject.lookup_by_key(:maths) }
   let(:store) do
     { uuid => {
       "email" => "email@address.com",
       "first_name" => "Joe",
       "last_name" => "Joseph",
       "degree_status_id" => degree_status_id,
-      "preferred_teaching_subject_id" => "456",
+      "preferred_teaching_subject_id" => preferred_teaching_subject_id.to_s,
       "accepted_policy_id" => "789",
     } }
   end
@@ -41,7 +42,7 @@ describe MailingList::Wizard do
   end
 
   describe "#complete!" do
-    let(:variant) { "degree_status_id=#{degree_status_id}&preferred_teaching_subject_id=456" }
+    let(:variant) { "/email/subject/maths/degree-status/final_year" }
     let(:request) do
       GetIntoTeachingApiClient::MailingListAddMember.new({
         email: wizardstore[:email],
