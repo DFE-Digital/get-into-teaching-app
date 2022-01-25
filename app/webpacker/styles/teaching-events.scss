@@ -48,8 +48,6 @@ $icon-size: 3rem;
         flex-direction: column;
 
         @include mq($from: tablet) {
-          flex-direction: row;
-          gap: 1rem;
           padding-inline: 1rem;
         }
       }
