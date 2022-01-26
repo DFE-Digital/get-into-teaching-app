@@ -1,6 +1,6 @@
 ---
   layout: "layouts/home"
-  title: "Inspire the next generation"
+  title: "Become a teacher today!"
   description: |-
     Read official Department for Education information to help you become a teacher. Learn about funding, teacher training, and steps to become a teacher. 
   date: "2021-06-16"
