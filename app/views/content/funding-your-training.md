@@ -117,7 +117,7 @@ You may be eligible for a teaching bursary or scholarship when training to teach
 
 These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.
 
-You’ll need an bachelor's degree, class 2:2 (honours) or higher, a PhD or a master's degree to be eligible for a bursary, as well as meeting the bursary scheme's individual terms and conditions.
+You’ll need a bachelor's degree, class 2:2 (honours) or higher, a PhD or a master's degree to be eligible for a bursary, as well as meeting the bursary scheme's individual terms and conditions.
 
 [Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023).
 
