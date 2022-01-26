@@ -213,6 +213,8 @@ en:
         group: "Secondary"
         sub_head: "Mathematics - Secondary"
         funding: "Scholarships of £26,000 and bursaries of £24,000 are available for trainee maths teachers."
+        next_steps: |-
+          If you have a passion for maths, find out more about <a href="/subjects/maths">becoming a maths teacher</a>.
       music:
         name: "Music"
         group: "Secondary"

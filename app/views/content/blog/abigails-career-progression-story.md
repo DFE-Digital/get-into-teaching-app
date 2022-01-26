@@ -66,4 +66,4 @@ My advice for anyone thinking of getting into teaching is to remember that you w
 
     Induction used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs).
 
-If you’ve been inspired by Abigail’s story, find out more about [career progression opportunities and teacher pay scales](/salaries-and-benefits#career-progression).
+If you’ve been inspired by Abigail’s story, find out more about [career progression opportunities and teacher pay scales](/salaries-and-benefits#career-progression). Or, find out more about [becoming a maths teacher](/subjects/maths).
