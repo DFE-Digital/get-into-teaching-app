@@ -79,7 +79,7 @@ module ApplicationHelper
 
     return unless paths.present? && id.present?
 
-    javascript_pack_tag "google_optimize", 'data-turbo-track': "reload", data: {
+    javascript_pack_tag "google_optimize", 'data-turbolinks-track': "reload", data: {
       "google-optimize-id": id,
       "google-optimize-paths": paths,
     }
