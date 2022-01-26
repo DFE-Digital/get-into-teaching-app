@@ -184,7 +184,7 @@ describe ApplicationHelper do
           regex = %r{
             <script\s
             src="/packs-test/v1/js/google_optimize.*\.js"\s
-            data-turbo-track="reload"\s
+            data-turbolinks-track="reload"\s
             data-google-optimize-id="ABC-123"\s
             data-google-optimize-paths="\[&quot;/experiment&quot;\]"
             ></script>

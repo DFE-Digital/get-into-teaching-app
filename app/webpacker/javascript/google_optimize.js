@@ -9,13 +9,11 @@ export default class GoogleOptimize {
   }
 
   init() {
-    this.applyRedirectExperimentFix();
-
     if (this.canExperiment()) {
       this.initGoogleOptimize();
     }
 
-    this.listenForTurboBeforeVisit();
+    this.listenForTurbolinksBeforeVisit();
     this.listenForConsentChange();
 
     if (!this.seenCookieDialog && this.isExperimentPath()) {
@@ -39,20 +37,9 @@ export default class GoogleOptimize {
     );
 
     document.removeEventListener(
-      'turbo:before-visit',
-      this.turboBeforeVisitHandler
+      'turbolinks:before-visit',
+      this.turbolinksBeforeVisitHandler
     );
-  }
-
-  applyRedirectExperimentFix() {
-    // Google Optimize drops a cookie for 5 seconds that prevents it redirecting
-    // again. This is designed to avoid redirect loops, however it means if a user
-    // navigates to a redirect experiment twice in quick succession they don't get
-    // redirected the second time (and can end up seeing the control instead of the
-    // variant). Manually removing this cookie prevents that happening, but will
-    // leave us vulnerable to redirect loops if we don't set up experiments correctly;
-    // as we run few experiments this seems like the lesser of two evils.
-    CookiePreferences.clearCookie('_gaexp_rc');
   }
 
   initGoogleOptimize() {
@@ -119,23 +106,24 @@ export default class GoogleOptimize {
     }
   }
 
-  handleTurboBeforeVisit(event) {
-    const path = new URL(event.detail.url).pathname;
+  handleTurbolinksBeforeVisit(event) {
+    const path = new URL(event.data.url).pathname;
 
     if (this.canExperiment(path)) {
-      // Cancel Turbo page change.
+      // Cancel Turbolinks page change.
       event.preventDefault();
       // Force a full page reload to initialize the optimize script
       // and serve the correct variant.
-      window.location.href = event.detail.url;
+      window.location.href = event.data.url;
     }
   }
 
-  listenForTurboBeforeVisit() {
-    this.turboBeforeVisitHandler = this.handleTurboBeforeVisit.bind(this);
+  listenForTurbolinksBeforeVisit() {
+    this.turbolinksBeforeVisitHandler =
+      this.handleTurbolinksBeforeVisit.bind(this);
     document.addEventListener(
-      'turbo:before-visit',
-      this.turboBeforeVisitHandler
+      'turbolinks:before-visit',
+      this.turbolinksBeforeVisitHandler
     );
   }
 

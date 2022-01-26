@@ -9,6 +9,7 @@ export default class extends Controller {
   connect() {
     this.prepareChevronOnButtonLinks();
     this.openExternalContentLinksInNewWindow();
+    this.preventTurboLinksOnJumpLinks();
   }
 
   openExternalContentLinksInNewWindow() {
@@ -26,6 +27,16 @@ export default class extends Controller {
         linkOpensInNewWindow.classList.add('govuk-visually-hidden');
         linkOpensInNewWindow.appendChild(text);
         l.appendChild(linkOpensInNewWindow);
+      }
+    });
+  }
+
+  preventTurboLinksOnJumpLinks() {
+    const links = this.contentTarget.querySelectorAll('a');
+
+    links.forEach((l) => {
+      if (l.getAttribute('href')?.includes('#')) {
+        l.dataset.turbolinks = 'false';
       }
     });
   }

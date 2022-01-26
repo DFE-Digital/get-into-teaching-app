@@ -35,14 +35,10 @@ describe('Google Optimize', () => {
   };
 
   const dispatchBeforeVisit = (url) => {
-    const event = new CustomEvent('turbo:before-visit', {
-      detail: { url: url },
-    });
+    const event = document.createEvent('Events');
+    event.initEvent('turbolinks:before-visit', true, true);
+    event.data = { url: url };
     document.dispatchEvent(event);
-  };
-
-  const setGoogleOptimizeRedirectLoopCookie = () => {
-    Cookies.set('_gaexp_rc', '1');
   };
 
   beforeEach(() => {
@@ -50,7 +46,6 @@ describe('Google Optimize', () => {
     clearCookies();
     setupHtml();
     mockWindowLocation();
-    setGoogleOptimizeRedirectLoopCookie();
   });
 
   afterEach(() => {
@@ -65,10 +60,6 @@ describe('Google Optimize', () => {
   describe('when cookies have not yet been accepted', () => {
     describe('when on an experiment path', () => {
       beforeEach(() => run(experimentPath));
-
-      it('clears the _gaexp_rc cookie', () => {
-        expect(Cookies.get('_gaexp_rc')).toBeUndefined();
-      });
 
       it('blurs the cookie acceptance background to obscure the content', () => {
         expect(
@@ -98,10 +89,6 @@ describe('Google Optimize', () => {
 
     describe('when not on an experiment path', () => {
       beforeEach(() => run('/no-experiment'));
-
-      it('clears the _gaexp_rc cookie', () => {
-        expect(Cookies.get('_gaexp_rc')).toBeUndefined();
-      });
 
       it('does not blur the cookie acceptance background', () => {
         expect(
@@ -142,10 +129,6 @@ describe('Google Optimize', () => {
     describe('when on an experiment path', () => {
       beforeEach(() => run(experimentPath));
 
-      it('clears the _gaexp_rc cookie', () => {
-        expect(Cookies.get('_gaexp_rc')).toBeUndefined();
-      });
-
       it('does not blur the cookie acceptance background', () => {
         expect(
           document.querySelector('.cookie-acceptance .dialog__background')
@@ -175,10 +158,6 @@ describe('Google Optimize', () => {
     describe('when not on an experiment path', () => {
       beforeEach(() => run('/no-experiment'));
 
-      it('clears the _gaexp_rc cookie', () => {
-        expect(Cookies.get('_gaexp_rc')).toBeUndefined();
-      });
-
       it('does not append the Google Optimize script to the head', () => {
         expect(
           document.head.querySelector(
@@ -187,7 +166,7 @@ describe('Google Optimize', () => {
         ).toBeNull();
       });
 
-      describe('when Turbo transitions to an experiment path', () => {
+      describe('when Turbolinks transitions to an experiment path', () => {
         beforeEach(() =>
           dispatchBeforeVisit(`https://test.com${experimentPath}`)
         );
@@ -199,7 +178,7 @@ describe('Google Optimize', () => {
         });
       });
 
-      describe('when Turbo transitions to a non-experiment path', () => {
+      describe('when Turbolinks transitions to a non-experiment path', () => {
         beforeEach(() => dispatchBeforeVisit('https://test.com/no-experiment'));
 
         it('does not hijack the transition', () => {
@@ -220,10 +199,6 @@ describe('Google Optimize', () => {
 
     describe('when on an experiment path', () => {
       beforeEach(() => run(experimentPath));
-
-      it('clears the _gaexp_rc cookie', () => {
-        expect(Cookies.get('_gaexp_rc')).toBeUndefined();
-      });
 
       it('does not blur the cookie acceptance background', () => {
         expect(
