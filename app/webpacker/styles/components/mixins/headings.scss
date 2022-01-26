@@ -1,4 +1,4 @@
-@mixin content-heading($add_full_stops: true) {
+@mixin content-heading {
   display: inline-block;
   margin-top: 0;
   padding: .4rem $indent-amount;
@@ -8,12 +8,6 @@
   box-sizing: border-box;
   max-width: calc(100% - 1.25rem);
   color: $white;
-
-  @if $add_full_stops {
-    &:after {
-      content: ".";
-    }
-  }
 
   &.purple {
     background-color: $purple;
