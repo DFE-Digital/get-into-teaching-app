@@ -69,7 +69,7 @@ describe('Google Tag Manager', () => {
     });
   });
 
-  describe('on Turbolinks page changes', () => {
+  describe('on Turbo page changes', () => {
     beforeEach(() => {
       mockGtag();
       run();
@@ -78,8 +78,10 @@ describe('Google Tag Manager', () => {
     it('updates the page_path in GTM', () => {
       window.location.pathname = '/new-path';
 
-      // We receive a turbolinks:load call on the initial (non-turbolinks) page load.
-      document.dispatchEvent(new Event('turbolinks:load'));
+      // We receive a turbo:load call on the initial (non-turbo) page load.
+      document.dispatchEvent(new Event('turbo:load'));
+      // And then on the turbo page load for the subsequent page change.
+      document.dispatchEvent(new Event('turbo:load'));
 
       expect(window.gtag).toHaveBeenCalledWith('set', 'page_path', '/new-path');
       expect(window.gtag).toHaveBeenCalledWith('event', 'page_view');
