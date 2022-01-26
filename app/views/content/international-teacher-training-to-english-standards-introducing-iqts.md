@@ -23,7 +23,7 @@ keywords:
 
 ## Introducing iQTS
 
-International qualified teacher status (iQTS) is a new teaching qualification backed by England’s Department for Education (DfE). iQTS is equivalent to [English qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS). You can train where you live and work. 
+International qualified teacher status (iQTS) is a new teaching qualification backed by the UK government. iQTS is equivalent to [English qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS). You can train where you live and work, with no need to visit the UK. 
 
 ## Need to know
 
@@ -57,8 +57,6 @@ iQTS is for you if:
 * you have no previous teaching qualifications or experience, and would like to gain a professional teaching qualification equivalent to QTS
 
 * you have some experience teaching, and would benefit from training and mentoring leading to a professional teaching qualification equivalent to QTS
-
-* you wish to teach in England, and you have a qualification (for example, an iPGCE, PGCE or PGDE) that does not allow you to teach in all schools in England
 
 * you are already a teacher, and you wish to develop professionally and enhance your global employability with an internationally recognised teaching qualification
 
@@ -107,7 +105,12 @@ To learn more, contact your chosen iQTS provider directly.
 
 iQTS is currently offered by the following training providers:
 
-* list to come
+* [e-Qualitas](https://www.e-qualitas.co.uk/)
+* [Sheffield Hallam University](https://www.shu.ac.uk/)
+* [The University of Warwick](https://warwick.ac.uk/)
+* [University of Birmingham Dubai](https://www.birmingham.ac.uk/dubai/index.aspx)
+* [University of Derby](https://www.derby.ac.uk/)
+* [University of Sunderland](https://www.sunderland.ac.uk/)
 
 Over time, iQTS will become more widely available. To be kept informed about new iQTS training providers, regions and placement schools, please contact us at iqts.pilot@education.gov.uk. 
 
