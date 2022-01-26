@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-icon-calendar">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="icon-calendar" clip-path="url(#clip-icon-calendar)">
+    <g id="Group_950" data-name="Group 950" transform="translate(14 14)">
+      <path id="Path_1313" data-name="Path 1313" d="M1348.875,445.282c-.611-1.221-1.1-2.443-1.71-3.664-.611,1.221-1.1,2.443-1.71,3.664l-4.03.366c.977.855,2.076,1.832,3.053,2.687-.244,1.344-.611,2.687-.855,4.031,1.221-.733,2.321-1.344,3.542-2.076,1.222.733,2.321,1.344,3.542,2.076-.244-1.344-.611-2.687-.855-4.031.977-.855,2.076-1.832,3.053-2.687a22.488,22.488,0,0,1-4.031-.366" transform="translate(-1329.578 -423.786)"/>
+      <path id="Path_1314" data-name="Path 1314" d="M1333.221,394.328v-3.664h-3.664v3.664h-8.55v-3.664h-3.664v3.664h-9.771v31.756h35.42V394.328Zm-15.878,3.664v2.443h3.664v-2.443h8.55v2.443h3.664v-2.443h6.107v4.885h-28.092v-4.885Zm-6.107,8.55h28.092V422.42h-28.092Z" transform="translate(-1307.572 -390.664)"/>
+    </g>
+  </g>
+</svg>

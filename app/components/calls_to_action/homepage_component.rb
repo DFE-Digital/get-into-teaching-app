@@ -2,7 +2,9 @@ module CallsToAction
   class HomepageComponent < ViewComponent::Base
     attr_accessor :icon, :image, :title, :link
 
-    def initialize(icon:, title: nil, link_text:, link_target:, image:)
+    def initialize(icon:, link_text:, link_target:, image:, title: nil)
+      super
+
       @title         = title
       @image         = image
       @icon_filename = icon
@@ -23,13 +25,11 @@ module CallsToAction
     end
 
     def icon_element(icon)
-      img = image_pack_tag("media/images/#{icon}.svg",
-                           width: 50,
-                           height: 50,
-                           alt: "#{icon} icon",
-                           class: "call-to-action__icon")
-
-      tag.div(img, class: "call-to-action__icon__box")
+      image_pack_tag("media/images/#{icon}.svg",
+                     width: 50,
+                     height: 50,
+                     alt: "#{icon} icon",
+                     class: "call-to-action__icon")
     end
   end
 end

@@ -60,10 +60,6 @@ a {
     @include chevron($color: $black);
   }
 
-  &--black-chevron {
-    @include chevron($color: $black);
-  }
-
   &--nowrap {
     white-space: nowrap;
   }
@@ -108,24 +104,4 @@ a {
 // Default Zendesk chat button (hidden as we use our own).
 iframe#launcher {
   display: none;
-}
-
-.chat-button-offline {
-  display: none;
-
-  &.visible {
-    display: block;
-  }
-}
-
-.js-enabled {
-  .chat-button-no-js {
-    display: none;
-  }
-}
-
-html:not(.js-enabled) {
-  .chat-button.with-fallback {
-    display: none;
-  }
 }

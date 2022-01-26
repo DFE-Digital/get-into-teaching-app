@@ -5,7 +5,6 @@ images:
   header_image:
     path: "media/images/content/hero-images/0013.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/0013.jpg"
-    alt: "A photograph of a teacher teaching physics"
 description: |-
   There are plenty of funding options available to support you during your teacher training year. You can access Tuition Fee and Maintenance Loans regardless of whether or not you have an existing student loan and you will only begin to repay these once you're earning more than £27,295.
 keywords:
@@ -27,11 +26,12 @@ tags:
   - funding
   - bursaries
   - salaries
+closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $header_image$
 
-_All funding amounts below are only correct for teacher training courses starting in autumn 2021. Funding levels for courses starting in 2022 will be updated once they are confirmed._
+All funding amounts below are only correct for teacher training courses starting in autumn 2021. Funding levels for courses starting in 2022 will be updated once they are confirmed.
 
 There are plenty of funding options available to support you during your teacher training year. You can access Tuition Fee and Maintenance Loans regardless of whether or not you have an existing student loan and you will only begin to repay these once you're earning more than £27,295.
 

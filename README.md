@@ -10,7 +10,6 @@ A service for candidates to [get-into-teaching](https://getintoteaching.educatio
 [![View problem response times on Skylight](https://badges.skylight.io/problem/cCXe4O12iXtO.svg?token=dmQT0j0nuvDKRWL0RSr5ZMr-ARd25yfRzTePxnMsLYU)](https://www.skylight.io/app/applications/cCXe4O12iXtO)
 [![Build and Deploy](https://github.com/DFE-Digital/get-into-teaching-app/actions/workflows/build.yml/badge.svg)](https://github.com/DFE-Digital/get-into-teaching-app/actions/workflows/build.yml)
 
-
 ## Table of Contents
 
 - [Documentation](#documentation)

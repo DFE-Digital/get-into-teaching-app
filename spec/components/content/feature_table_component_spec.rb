@@ -21,11 +21,11 @@ describe Content::FeatureTableComponent, type: "component" do
 
   describe "within the definition list" do
     it "displays headings" do
-      data.keys.each { |heading| expect(page).to have_css("dl dt", text: heading) }
+      data.each_key { |heading| expect(page).to have_css("dl dt", text: heading) }
     end
 
     it "displays values" do
-      data.values.each { |value| expect(page).to have_css("dl dd", text: value) }
+      data.each_value { |value| expect(page).to have_css("dl dd", text: value) }
     end
   end
 

@@ -7,7 +7,7 @@ class PagesController < ApplicationController
   ].freeze
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
-  DYNAMIC_PAGE_PATHS = [].freeze
+  DYNAMIC_PAGE_PATHS = ["/test/a", "/test/b"].freeze
 
   before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && request.query_parameters.any? }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
@@ -16,6 +16,7 @@ class PagesController < ApplicationController
     "layouts/home",
     "layouts/accordion",
     "layouts/steps",
+    "layouts/minimal",
     "layouts/stories/landing",
     "layouts/stories/list",
     "layouts/stories/story",
@@ -44,19 +45,6 @@ class PagesController < ApplicationController
     render_page(params[:page])
   end
 
-  # TEMP: routes to try an A/B test in production
-  def temp_test_a
-    response.headers["X-Robots-Tag"] = "noindex"
-
-    render_page("steps-to-become-a-teacher")
-  end
-
-  def temp_test_b
-    response.headers["X-Robots-Tag"] = "noindex"
-
-    render_page("ways-to-train")
-  end
-
   # Avoid caching by rendering these pages manually:
 
   def funding_your_training
@@ -83,10 +71,10 @@ class PagesController < ApplicationController
 
     url = ENV["TTA_SERVICE_URL"]
     if Rails.application.config.x.utm_codes && session[:utm]
-      url += "?" + session[:utm].to_param
+      url += "?#{session[:utm].to_param}"
     end
 
-    redirect_to(url, turbolinks: false, status: :moved_permanently)
+    redirect_to(url, status: :moved_permanently)
   end
 
 protected

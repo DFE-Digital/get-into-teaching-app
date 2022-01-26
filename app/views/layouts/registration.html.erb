@@ -2,12 +2,11 @@
 <html lang="en" class="govuk-template">
   <% content_for :head do %>
     <%= csrf_meta_tags %>
-    <%= javascript_pack_tag 'govuk/error_summary', 'data-turbolinks-track': 'reload', async: true %>
   <% end %>
 
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") unless Rails.application.config.x.legacy_tracking_pixels %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
     <%= render HeaderComponent.new %>
 
@@ -18,5 +17,6 @@
     </main>
 
     <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
+    <%= javascript_pack_tag 'govuk/frontend', 'data-turbo-track': 'reload', async: true %>
   <% end %>
 </html>

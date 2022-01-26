@@ -103,9 +103,7 @@ describe Events::Steps::PersonalisedUpdates do
     subject { instance.teaching_subject_options }
 
     let(:teaching_subject_types) do
-      subjects = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.merge(
-        GetIntoTeachingApiClient::Constants::IGNORED_PREFERRED_TEACHING_SUBJECTS,
-      )
+      subjects = TeachingSubject::ALL.merge(TeachingSubject::IGNORED)
       subjects.map { |k, v| GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k }) }
     end
 
@@ -114,7 +112,7 @@ describe Events::Steps::PersonalisedUpdates do
         receive(:get_teaching_subjects).and_return(teaching_subject_types)
     end
 
-    it { expect(subject.map(&:id)).to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.values) }
-    it { expect(subject.map(&:value)).to eq(GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.keys) }
+    it { expect(subject.map(&:id)).to eq(TeachingSubject.all_uuids) }
+    it { expect(subject.map(&:value)).to eq(TeachingSubject.all_subjects) }
   end
 end

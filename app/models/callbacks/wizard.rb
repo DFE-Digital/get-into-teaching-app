@@ -2,8 +2,6 @@ require "attribute_filter"
 
 module Callbacks
   class Wizard < ::DFEWizard::Base
-    include ::Wizard::ApiClientSupport
-
     self.steps = [
       Steps::PersonalDetails,
       Steps::MatchbackFailed,
@@ -36,10 +34,15 @@ module Callbacks
   private
 
     def book_callback
-      callback = GetIntoTeachingApiClient::GetIntoTeachingCallback.new(export_camelized_hash)
+      callback = GetIntoTeachingApiClient::GetIntoTeachingCallback.new(construct_export)
       api = GetIntoTeachingApiClient::GetIntoTeachingApi.new
       Rails.logger.info("Callbacks::Wizard#book_get_into_teaching_callback: #{AttributeFilter.filtered_json(callback)}")
       api.book_get_into_teaching_callback(callback)
+    end
+
+    def construct_export
+      attributes = GetIntoTeachingApiClient::GetIntoTeachingCallback.attribute_map.keys
+      export_data.slice(*attributes.map(&:to_s))
     end
   end
 end

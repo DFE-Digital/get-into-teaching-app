@@ -71,7 +71,8 @@ Rails.application.configure do
   config.x.structured_data.event = true
   config.x.structured_data.how_to = true
 
-  config.x.legacy_tracking_pixels = false
-
   config.x.covid_banner = false
+
+  # Allow access from Codespaces
+  config.hosts << /[a-z0-9\-]+\.githubpreview\.dev/
 end

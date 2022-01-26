@@ -6,9 +6,12 @@ module Cards
     DEFAULT_TYPE = Cards::StoryComponent
 
     attr_reader :card, :page_data
+
     with_collection_parameter :card
 
     def initialize(card:, page_data: nil)
+      super
+
       @card_type = card["card_type"].to_s
       @card = card.without("card_type")
       @page_data = page_data

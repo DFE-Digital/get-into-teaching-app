@@ -10,6 +10,7 @@ describe Events::Wizard do
       "email" => "email@address.com",
       "first_name" => "Joe",
       "last_name" => "Joseph",
+      "accepted_policy_id" => "789",
     } }
   end
   let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
@@ -37,7 +38,7 @@ describe Events::Wizard do
   describe "#complete!" do
     let(:request) do
       GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-        { eventId: "abc123", email: "email@address.com", firstName: "Joe", lastName: "Joseph" },
+        { event_id: "abc123", email: "email@address.com", first_name: "Joe", last_name: "Joseph", accepted_policy_id: "789" },
       )
     end
 
@@ -53,7 +54,20 @@ describe Events::Wizard do
     it { expect(store[uuid]).to eql({}) }
 
     it "logs the request model (filtering sensitive attributes)" do
-      filtered_json = { "eventId" => "abc123", "email" => "[FILTERED]", "firstName" => "[FILTERED]", "lastName" => "[FILTERED]" }.to_json
+      filtered_json = {
+        "candidateId" => nil,
+        "qualificationId" => nil,
+        "eventId" => "abc123",
+        "acceptedPolicyId" => "789",
+        "preferredTeachingSubjectId" => nil,
+        "considerationJourneyStageId" => nil,
+        "degreeStatusId" => nil,
+        "email" => "[FILTERED]",
+        "firstName" => "[FILTERED]",
+        "lastName" => "[FILTERED]",
+        "addressPostcode" => nil,
+        "addressTelephone" => "[FILTERED]",
+      }.to_json
       expect(Rails.logger).to have_received(:info).with("Events::Wizard#add_attendee_to_event: #{filtered_json}")
     end
   end
@@ -61,7 +75,7 @@ describe Events::Wizard do
   describe "#exchange_access_token" do
     let(:totp) { "123456" }
     let(:request) { GetIntoTeachingApiClient::ExistingCandidateRequest.new }
-    let(:response) { GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidateId: "123", addressTelephone: "12345") }
+    let(:response) { GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidate_id: "123", address_telephone: "12345") }
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -82,7 +96,7 @@ describe Events::Wizard do
 
   describe "#exchange_unverified_request" do
     let(:request) { GetIntoTeachingApiClient::ExistingCandidateRequest.new }
-    let(:response) { GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidateId: "123", addressTelephone: "12345") }
+    let(:response) { GetIntoTeachingApiClient::TeachingEventAddAttendee.new(candidate_id: "123", address_telephone: "12345") }
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \

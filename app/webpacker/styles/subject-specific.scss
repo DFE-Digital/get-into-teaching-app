@@ -1,0 +1,6 @@
+.subject-specific {
+  @import "subject-specific/header";
+  @import "subject-specific/article";
+  @import "subject-specific/quote";
+  @import "subject-specific/text-blocks-with-images";
+}

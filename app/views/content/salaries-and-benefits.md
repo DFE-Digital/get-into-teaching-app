@@ -1,13 +1,12 @@
 ---
-title: "Salaries and benefits"
+title: "Teaching salaries and benefits"
+heading: "Salaries and benefits"
 description: |-
-  Pay scales for teachers in England and Wales. Find the pay ranges for different roles, how many days holiday teachers get each year, 
-  and what to expect from the generous teacher pension scheme.
+  Teacher starting salaries are between £25,714 and £32,157, depending where you teach. Find out about teacher pay scales, pensions and benefits here.
 date: "2021-06-24"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
 navigation: 40
-lid_pixel_event: "SalaryBenefits"
 right_column:
   ctas:
     - title: How to become a teacher
@@ -61,7 +60,7 @@ As a new teacher, your salary will be between £25,714 and £32,157, depending o
 
 The school you teach in will have their own pay scales for qualified teachers. Pay increases will always be linked to performance, not length of service.
 
-Annual salary ranges for qualified teachers are:
+Annual teacher pay scales for qualified teachers are:
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
@@ -78,13 +77,13 @@ For comparison, you'd work 227 days per year (on average) if you worked full tim
 
 ## Teachers' pension scheme
 
-The teachers’ pension scheme is one of the most generous in the country. It is:
+The teachers’ pension scheme is one of the most generous in the country. It is a 'defined benefit' pension and is:
 
 * based on your teaching salary rather than the amount of money you pay in
 * registered with HM Revenue and Customs - so your contributions are tax-free
 * flexible and allows you to take some of it as a tax-free lump sum
 
-[Find our more about the teachers' pension scheme](https://www.teacherspensions.co.uk/members/new-starter.aspx)
+You also get other insurance benefits too. You can find out more on [the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
 
 ## Establishing yourself as a teacher
 
@@ -100,13 +99,13 @@ This extra support used to last 1 year, and teachers would be called 'newly qual
 
 ## Career progression
 
-There are different ways to progress and increase your salary.
+There are different ways to progress and increase your teaching salary.
 
 For example, you can move into a more senior role, or take on additional responsibilities that help your school.
 
-### Senior teacher pay
+### Senior teacher salaries
 
-If you take on extra responsibilities, like being a head of department, you can be put onto a higher pay scale.
+If you take on extra responsibilities, like being a head of department, you can be put onto a higher teacher pay scale.
 
 Teachers in this pay scale are important members of a school’s leadership team, and they often work closely with Headteachers.
 
@@ -117,13 +116,13 @@ Annual salary ranges for senior teachers are:
 | London                        | £39,864 | £50,935  |
 | Rest of England and Wales     | £38,690 | £41,604  |
 
-### Leading practitioner pay
+### Leading practitioner salaries
 
 If you’re an established and exceptional teacher, and regularly show the highest standards of classroom teaching, you can be put onto a higher pay scale.
 
 Although they may not lead departments, leading practitioners coach and mentor other teachers and induct trainees and early career teachers (ECTs).
 
-The pay scales for leading practitioners are:
+The teacher pay scales for leading practitioners are:
 
 | Area                          | Minimum | Maximum  |
 | -------                       | -----   | -----    |
@@ -131,7 +130,7 @@ The pay scales for leading practitioners are:
 | Rest of England and Wales     | £42,402 | £64,461  |
 
 
-### Headteacher pay
+### Headteacher salaries
 
 A headteacher is the most senior person in a school. They are ultimately responsible for all teachers and pupils. 
 
@@ -159,12 +158,12 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 | TLR 1         | £8,291 | £14,030 |
 | TLR 2         | £2,873 | £7,017  |
 
-### Unqualified teacher pay
+### Unqualified teacher salaries
 
 Many schools in England require teachers to have 'qualified teacher status' (QTS). If you do not have this, you can work
 in some schools as an unqualified teacher.
 
-Annual salary ranges for unqualified teachers are:
+Annual unqualified teacher salary ranges are:
 
 | Area                          | Minimum | Maximum   |
 | -------                       | -----   | -----     |

@@ -7,10 +7,10 @@ module MetadataHelper
     tag.meta(name: prepend_opengraph(key, opengraph), content: value)
   end
 
-  def image_meta_tags(base_url:, image_path:, alt:, opengraph: true)
+  def image_meta_tags(image_path:, alt:, opengraph: true)
     return if image_path.blank?
 
-    image_url = "#{base_url}#{asset_pack_path(image_path)}"
+    image_url = asset_pack_url(image_path)
 
     safe_join([
       meta_tag(key: "image", value: image_url, opengraph: opengraph),

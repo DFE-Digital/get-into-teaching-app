@@ -1,8 +1,7 @@
 ---
 title: Tips on applying for teacher training
 description: |-
-  Read these tips on applying for teacher training to maximise your chances of
-  being accepted on to initial teacher training, including when to apply for teaching training, how to write a good application, how to ensure you choose the right references, your personal statement and what to do if you get invited to interview.
+  Read these tips on completing your teacher training application and choosing teacher training references. With advice on personal statements and when to apply.
 date: "2021-06-24"
 keywords:
   - adviser
@@ -47,11 +46,14 @@ interviews. A [teacher training adviser](/tta-service) can help you with all of 
 
 ## Browse courses
 
-You can [search for most postgraduate teacher training courses on GOV.UK](https://www.gov.uk/find-postgraduate-teacher-training-courses).
+Search [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses).
+
+Course providers will help you gain your [qualified teacher status (QTS)](/what-is-qts) which is what you need to teach in most schools in England. Many also help you work 
+towards a [PGCE or PGDE](/what-is-a-pgce).
 
 ## Where to apply
 
-You can use [Apply for teacher training](https://www.gov.uk/apply-for-teacher-training) to apply for postgraduate teacher training.
+When you're ready, you can [apply for teacher training](https://www.gov.uk/apply-for-teacher-training).
 
 This service has replaced the UCAS postgraduate teacher training application.
 

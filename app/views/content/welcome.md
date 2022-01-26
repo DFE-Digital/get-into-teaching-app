@@ -2,6 +2,7 @@
 title: Welcome to teaching
 draft: true
 layout: "layouts/welcome"
+noindex: true
 content:
   - "content/welcome/landing/welcome-to-teaching"
   - "content/welcome/landing/introduction"

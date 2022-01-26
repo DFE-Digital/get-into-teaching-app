@@ -24,15 +24,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
-    choose "I’m not sure and finding out more"
+    choose "I'm not sure and finding out more"
     click_on "Next step"
 
     expect(page).to have_text "Which subject do you want to teach"
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "events in your area"
-    fill_in "Your postcode (optional)", with: "TE57 1NG"
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
+    choose "Yes"
+    fill_in "Your postcode", with: "TE57 1NG"
     click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -65,15 +66,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "How close are you to applying"
-    choose "I’m not sure and finding out more"
+    choose "I'm not sure and finding out more"
     click_on "Next step"
 
     expect(page).to have_text "Which subject do you want to teach"
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "events in your area"
-    fill_in "Your postcode (optional)", with: "TE57 1NG"
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
+    choose "Yes"
+    fill_in "Your postcode", with: "TE57 1NG"
     click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -96,10 +98,10 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      preferredTeachingSubjectId: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["Maths"],
-      considerationJourneyStageId: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m very sure and think I’ll apply"],
-      degreeStatusId: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"],
-      addressPostcode: "TE57 1NG",
+      preferred_teaching_subject_id: TeachingSubject.lookup_by_key(:maths),
+      consideration_journey_stage_id: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
+      degree_status_id: OptionSet.lookup_by_key(:degree_status, :final_year),
+      address_postcode: "TE57 1NG",
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything) { response }
@@ -110,8 +112,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step(first_name: first_name)
     click_on "Next step"
 
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
+    expect(page).to have_text "You're already registered with us"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
@@ -129,8 +131,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Which subject do you want to teach"
     expect(page).to have_select(
       "Which subject do you want to teach?",
-      selected: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.key(response.preferred_teaching_subject_id),
+      selected: TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
     )
+    click_on "Next step"
+
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
+    choose "Yes"
     click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -162,16 +168,16 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "654321"
+    expect(page).to have_text "You're already registered with us"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "654321"
     click_on "Next step"
 
     expect(page).to have_text "Please enter the latest verification code"
 
-    click_link "resend verification"
-    expect(page).to have_text "We've sent you another email."
+    click_link "Send another code to verify my details."
+    expect(page).to have_text "We've sent you another email"
 
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
@@ -182,7 +188,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      alreadySubscribedToMailingList: true,
+      already_subscribed_to_mailing_list: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
@@ -193,11 +199,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
+    expect(page).to have_text "You're already registered with us"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "You’ve already signed up"
+    expect(page).to have_text "You've already signed up"
     expect(page).not_to have_button("Next step")
   end
 
@@ -206,7 +212,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      alreadySubscribedToTeacherTrainingAdviser: true,
+      already_subscribed_to_teacher_training_adviser: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
@@ -217,8 +223,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
+    expect(page).to have_text "You're already registered with us"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Do you have a degree?"
@@ -227,11 +233,11 @@ RSpec.feature "Mailing list wizard", type: :feature do
   scenario "Full journey as an existing candidate using a magic link" do
     token = "magic-link-token"
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      firstName: "Test",
-      lastName: "User",
+      first_name: "Test",
+      last_name: "User",
       email: "test@user.com",
-      considerationJourneyStageId: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m very sure and think I’ll apply"],
-      degreeStatusId: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"],
+      consideration_journey_stage_id: OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_very_sure_and_think_i_ll_apply),
+      degree_status_id: OptionSet.lookup_by_key(:degree_status, :final_year),
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_magic_link_token_for_mailing_list_add_member).with(token) { response }
@@ -256,8 +262,8 @@ RSpec.feature "Mailing list wizard", type: :feature do
     select "Maths"
     click_on "Next step"
 
-    expect(page).to have_text "events in your area"
-    fill_in "Your postcode (optional)", with: "TE57 1NG"
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
+    choose "No"
     click_on "Next step"
 
     expect(page).to have_text "Accept privacy policy"
@@ -287,7 +293,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
       receive(:create_candidate_access_token)
 
     response = GetIntoTeachingApiClient::MailingListAddMember.new(
-      alreadySubscribedToMailingList: true,
+      already_subscribed_to_mailing_list: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::MailingListApi).to \
       receive(:exchange_access_token_for_mailing_list_add_member).with("123456", anything).and_return(response)
@@ -298,14 +304,14 @@ RSpec.feature "Mailing list wizard", type: :feature do
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to test@user.com", with: "123456"
+    expect(page).to have_text "You're already registered with us"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "You’ve already signed up"
+    expect(page).to have_text "You've already signed up"
     click_link("Back")
 
-    expect(page).to have_text "Verify your email address"
+    expect(page).to have_text "You're already registered with us"
     click_link("Back")
 
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \

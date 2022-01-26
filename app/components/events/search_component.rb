@@ -6,6 +6,8 @@ module Events
     attr_accessor :search, :path, :include_type, :heading, :allow_blank_month
 
     def initialize(search, path, include_type: true, heading: "Search for events", allow_blank_month: false)
+      super
+
       @search            = search
       @path              = path
       @include_type      = include_type

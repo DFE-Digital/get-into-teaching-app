@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.describe WelcomeHelper, type: :helper do
-  let(:physics_uuid) { "ac2655a1-2afa-e811-a981-000d3a276620" }
+  let(:physics_uuid) { TeachingSubject.lookup_by_key(:physics) }
 
   shared_context "with first name" do
     before { allow(session).to receive(:dig).with("mailinglist", "first_name") { name } }
@@ -20,40 +20,34 @@ RSpec.describe WelcomeHelper, type: :helper do
 
   describe "#show_welcome_guide?" do
     context "when degree_status is second year" do
-      let(:second_year) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Second year"] }
+      let(:second_year) { OptionSet.lookup_by_key(:degree_status, :second_year) }
 
       it { expect(show_welcome_guide?(second_year)).to be false }
     end
 
     context "when degree_status is final year" do
-      let(:final_year) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Final year"] }
+      let(:final_year) { OptionSet.lookup_by_key(:degree_status, :final_year) }
 
       it { expect(show_welcome_guide?(final_year)).to be true }
-
-      context "when production" do
-        before { allow(Rails).to receive(:env) { "production".inquiry } }
-
-        it { expect(show_welcome_guide?(final_year)).to be false }
-      end
     end
 
     context "when degree_status is 'graduate or postgraduate'" do
-      let(:graduate) { GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS["Graduate or postgraduate"] }
+      let(:graduate) { OptionSet.lookup_by_key(:degree_status, :graduate_or_postgraduate) }
 
       context "when consideration journey stage is 'it's just an idea'" do
-        let(:just_an_idea) { GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["It’s just an idea"] }
+        let(:just_an_idea) { OptionSet.lookup_by_key(:consideration_journey_stage, :it_s_just_an_idea) }
 
         it { expect(show_welcome_guide?(graduate, just_an_idea)).to be true }
       end
 
       context "when consideration journey stage is 'I’m not sure and finding out more'" do
-        let(:finding_out_more) { GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m not sure and finding out more"] }
+        let(:finding_out_more) { OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_not_sure_and_finding_out_more) }
 
         it { expect(show_welcome_guide?(graduate, finding_out_more)).to be true }
       end
 
       context "when consideration journey stage is 'I’m fairly sure and exploring my options'" do
-        let(:fairly_sure) { GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES["I’m fairly sure and exploring my options"] }
+        let(:fairly_sure) { OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_fairly_sure_and_exploring_my_options) }
 
         it { expect(show_welcome_guide?(graduate, fairly_sure)).to be false }
       end
@@ -86,7 +80,7 @@ RSpec.describe WelcomeHelper, type: :helper do
     context "when set by query param and stored in the welcome_guide session store" do
       include_context "with preferred teaching subject set in welcome_guide"
 
-      let(:subject_id) { "842655a1-2afa-e811-a981-000d3a276620" }
+      let(:subject_id) { TeachingSubject.lookup_by_key(:chemistry) }
 
       specify "returns the correct subject" do
         expect(subject).to eql("chemistry")
@@ -95,29 +89,27 @@ RSpec.describe WelcomeHelper, type: :helper do
 
     context "when stored in the mailinglist session store" do
       context "when the subject name is a common noun" do
-        GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.slice("Art and design", "Biology", "Chemistry", "General science", "Languages (other)", "Maths", "Physics with maths", "Physics")
-          .each do |subject_name, subject_id|
-            describe "#{subject_name} is lowercased" do
-              let(:subject_id) { subject_id }
+        %i[art_and_design biology chemistry general_science languages_other maths physics_with_maths physics].each do |subject_key|
+          describe "#{subject_key} is lowercased" do
+            let(:subject_id) { TeachingSubject.lookup_by_key(subject_key) }
 
-              include_context "with preferred teaching subject set in welcome_guide"
+            include_context "with preferred teaching subject set in welcome_guide"
 
-              it { is_expected.to eql(subject_name.downcase) }
-            end
+            it { is_expected.to eql(TeachingSubject.lookup_by_uuid(subject_id).downcase) }
           end
+        end
       end
 
       context "when the subject name is a proper noun" do
-        GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.slice("English", "German", "Spanish", "French")
-          .each do |subject_name, subject_id|
-            describe "#{subject_name} is not lowercased" do
-              let(:subject_id) { subject_id }
+        %i[english german spanish french].each do |subject_key|
+          describe "#{subject_key} is not lowercased" do
+            let(:subject_id) { TeachingSubject.lookup_by_key(subject_key) }
 
-              include_context "with preferred teaching subject set in welcome_guide"
+            include_context "with preferred teaching subject set in welcome_guide"
 
-              it { is_expected.to eql(subject_name) }
-            end
+            it { is_expected.to eql(TeachingSubject.lookup_by_uuid(subject_id)) }
           end
+        end
       end
     end
 
@@ -131,6 +123,23 @@ RSpec.describe WelcomeHelper, type: :helper do
       end
 
       specify { is_expected.to eql("Physics") }
+    end
+  end
+
+  describe "#subject_teachers" do
+    let(:subject_id) { physics_uuid }
+
+    context "when subject is set in the session" do
+      include_context "with preferred teaching subject set in welcome_guide"
+      subject { subject_teachers }
+
+      specify { is_expected.to eql("physics teachers") }
+    end
+
+    context "when no subject is set" do
+      subject { subject_teachers }
+
+      specify { is_expected.to eql("teachers") }
     end
   end
 
@@ -177,7 +186,7 @@ RSpec.describe WelcomeHelper, type: :helper do
     subject { welcome_guide_subject }
 
     context "when the subject id is in the welcome_guide session store" do
-      let(:subject_id) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["Languages (other)"] }
+      let(:subject_id) { TeachingSubject.lookup_by_key(:languages_other) }
 
       include_context "with preferred teaching subject set in welcome_guide"
 
@@ -187,7 +196,7 @@ RSpec.describe WelcomeHelper, type: :helper do
     end
 
     context "when the subject id is in the mailinglist session store" do
-      let(:subject_id) { GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS["German"] }
+      let(:subject_id) { TeachingSubject.lookup_by_key(:german) }
 
       include_context "with preferred teaching subject set in welcome_guide and mailinglist"
 

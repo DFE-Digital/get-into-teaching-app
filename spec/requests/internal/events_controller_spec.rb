@@ -78,9 +78,9 @@ describe Internal::EventsController, type: :request do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type)
                   .with({
-                    type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]],
-                    status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
-                    start_after: DateTime.now.utc.beginning_of_day,
+                    type_ids: [EventType.school_or_university_event_id],
+                    status_ids: [EventStatus.pending_id],
+                    start_after: Time.zone.now.utc.beginning_of_day,
                     quantity_per_type: 1_000,
                   })
                   .and_return provider_events_by_type
@@ -92,9 +92,9 @@ describe Internal::EventsController, type: :request do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
             .to receive(:search_teaching_events_grouped_by_type)
                   .with({
-                    type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]],
-                    status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]],
-                    start_after: DateTime.now.utc.beginning_of_day,
+                    type_ids: [EventType.online_event_id],
+                    status_ids: [EventStatus.pending_id],
+                    start_after: Time.zone.now.utc.beginning_of_day,
                     quantity_per_type: 1_000,
                   })
                   .and_return online_events_by_type
@@ -341,7 +341,7 @@ describe Internal::EventsController, type: :request do
                  params: { internal_event: params }
 
             expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
-            expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+            expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
           end
 
           context "when \"no venue\" is selected" do
@@ -362,7 +362,7 @@ describe Internal::EventsController, type: :request do
                    params: { internal_event: params }
 
               expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
-              expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+              expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
             end
           end
 
@@ -400,7 +400,7 @@ describe Internal::EventsController, type: :request do
                    params: { internal_event: params }
 
               expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "provider"))
-              expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+              expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
             end
           end
         end
@@ -410,7 +410,7 @@ describe Internal::EventsController, type: :request do
         let(:params) do
           attributes_for :internal_event,
                          :online_event,
-                         type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
+                         type_id: EventType.online_event_id
         end
         let(:expected_request_body) do
           build(:event_api,
@@ -440,7 +440,7 @@ describe Internal::EventsController, type: :request do
                params: { internal_event: params }
 
           expect(response).to redirect_to(internal_events_path(status: :pending, readable_id: "Test", event_type: "online"))
-          expect(Rails.logger).to have_received(:info).with("#{author_username} - create/update - #{expected_request_body.to_json}")
+          expect(Rails.logger).to have_received(:info).with(%r{#{author_username} - create/update - .*#{expected_request_body.id}.*})
         end
       end
     end
@@ -463,7 +463,7 @@ describe Internal::EventsController, type: :request do
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+            event.status_id = EventStatus.open_id
           end
         end
 
@@ -518,7 +518,7 @@ describe Internal::EventsController, type: :request do
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+            event.status_id = EventStatus.open_id
           end
         end
 
@@ -566,7 +566,7 @@ describe Internal::EventsController, type: :request do
         let(:event) { pending_provider_event }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+            event.status_id = EventStatus.pending_id
             event.building = nil
           end
         end
@@ -597,7 +597,7 @@ describe Internal::EventsController, type: :request do
         let(:params) { { "id": event.id } }
         let(:expected_request_body) do
           event.tap do |event|
-            event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+            event.status_id = EventStatus.pending_id
           end
         end
 
@@ -659,10 +659,9 @@ describe Internal::EventsController, type: :request do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
           .to receive(:search_teaching_events_grouped_by_type)
                 .with({
-                  type_ids: [GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-                             GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]],
-                  status_ids: [GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]],
-                  start_after: DateTime.now.utc.beginning_of_day,
+                  type_ids: [EventType.school_or_university_event_id, EventType.online_event_id],
+                  status_ids: [EventStatus.open_id],
+                  start_after: Time.zone.now.utc.beginning_of_day,
                   quantity_per_type: 1_000,
                 })
                 .and_return events_by_type

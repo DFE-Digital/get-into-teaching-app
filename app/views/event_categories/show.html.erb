@@ -20,9 +20,7 @@
   </div>
 </section>
 
-<div class="event-pagination">
-  <%= paginate @events, params: { anchor: "event-category-list" } %>
-</div>
+<%= paginate @events, params: { anchor: "event-category-list" } %>
 <% else %>
   <%= render(Events::NoResultsComponent.new) do %>
     Sorry your search has not found any events, try a different location or month.

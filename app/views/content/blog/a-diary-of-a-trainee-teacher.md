@@ -6,10 +6,8 @@ images:
   mel_oconnor:
     path: "media/images/content/blog/mel-oconnor.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/mel-oconnor.jpg"
-    alt: "A photograph of PGDE trainee Mel O'Connor"
   mel_stta_screen:
     path: "media/images/content/blog/mel-stta-screen.jpg"
-    alt: "A photograph of several large round tables covered in pens and paper, surrounded by chairs. A projector at the front of the room projects photographs of previous trainees."
 description: |- 
   Mel recently started a Postgraduate Diploma in Education (PGDE) teacher training course in maths with the Sheffield Teacher Training Alliance and the University of Sheffield. She kept a diary of her first days on the course.
 keywords:
@@ -19,12 +17,14 @@ keywords:
   - School Direct
 tags:
   - becoming a teacher
-  
+closing_paragraph: enriching-the-lives-of-young-people
 ---
+
+$mel_oconnor$
 
 Mel recently started a Postgraduate Diploma in Education (PGDE) teacher training course in maths with the Sheffield Teacher Training Alliance and the University of Sheffield. She kept a diary of her first days on the course.
 
-$mel_oconnor$
+## Choosing teaching
 
 I completed my undergraduate degree in Business in 2014. Since then, I have worked in the technology industry in a range of product and customer facing roles. I’d always loved being in the school environment and took advantage of various work experience and school-based roles during my time at university. 
 

@@ -60,7 +60,7 @@ describe TeachingEventsHelper, type: "helper" do
     let(:qt) { "Question Time" }
 
     let(:ttt_event) do
-      OpenStruct.new(type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES[ttt])
+      OpenStruct.new(type_id: EventType.lookup_by_name(ttt))
     end
 
     specify "returns true when there's a match" do
@@ -85,12 +85,12 @@ describe TeachingEventsHelper, type: "helper" do
       let(:custom_event) { "Bingo night" }
 
       specify "returns online forum instead of online event by default" do
-        expect(GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[222_750_008]).to eql("Online event")
-        expect(event_type_name(222_750_008)).to eql("Online forum")
+        expect(EventType.lookup_by_id(222_750_008)).to eql("Online event")
+        expect(event_type_name(222_750_008)).to eql("DfE Online Q&A")
       end
 
       specify "returns training provider instead of school or uni event by default" do
-        expect(GetIntoTeachingApiClient::Constants::EVENT_TYPES.invert[222_750_009]).to eql("School or University event")
+        expect(EventType.lookup_by_id(222_750_009)).to eql("School or University event")
         expect(event_type_name(222_750_009)).to eql("Training provider")
       end
 
@@ -101,12 +101,10 @@ describe TeachingEventsHelper, type: "helper" do
   end
 
   describe "#is_a_train_to_teach_event?" do
-    let(:event_types) { GetIntoTeachingApiClient::Constants::EVENT_TYPES }
-
-    let(:ttt_event) { OpenStruct.new(type_id: event_types["Train to Teach event"]) }
-    let(:qt_event) { OpenStruct.new(type_id: event_types["Question Time"]) }
-    let(:online_event) { OpenStruct.new(type_id: event_types["Online event"]) }
-    let(:school_or_university_event) { OpenStruct.new(type_id: event_types["School or University event"]) }
+    let(:ttt_event) { OpenStruct.new(type_id: EventType.train_to_teach_event_id) }
+    let(:qt_event) { OpenStruct.new(type_id: EventType.question_time_event_id) }
+    let(:online_event) { OpenStruct.new(type_id: EventType.online_event_id) }
+    let(:school_or_university_event) { OpenStruct.new(type_id: EventType.school_or_university_event_id) }
 
     specify "returns true when the event is either Train to Teach or Question Time" do
       expect(is_a_train_to_teach_event?(ttt_event)).to be true

@@ -1,8 +1,7 @@
 ---
   title: "Funding your training"
   description: |-
-    Search the bursaries, scholarships and loans available to fund your teacher training. See funding available for specific subjects and for training through PGCE or
-    school direct.
+    Teacher training bursaries and other funding are available. Read this Department for Education page to find teaching bursaries, PGCE funding and loans.
   date: "2021-03-11"
   image: "media/images/content/hero-images/0013.jpg"
   subtitle: Get information and support to help you become a teacher.
@@ -19,7 +18,6 @@
         icon: "icon-calendar"
         hide_on_mobile: Yes
         hide_on_tablet: Yes
-  lid_pixel_event: "Funding"
   jump_links:
     Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"
     Bursaries and scholarships: "#bursaries-and-scholarships"
@@ -33,8 +31,11 @@
       name: chat_online
       arguments:
         text: |-
-          If you're unsure about whether you qualify for a bursary or
-          scholarship you can chat to us, or call us on 0800 389 2500.
+          <p>If you're unsure about whether you qualify for a bursary or
+          scholarship you can chat to us, or call us on <a href="tel:08003892500">0800 389 2500</a>.</p>
+
+          <p>Open Monday to Friday between 8:30am and 5:30pm.</p>
+          
     get-school-experience:
       name: simple
       arguments:
@@ -147,7 +148,7 @@ below. You cannot receive both a teaching bursary and a scholarship.
 
 #### If you're a final year undergraduate student
 
-You may be eligible for a [training bursary of £9,000](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2021-to-2022-academic-year#undergraduate-bursary) if you're on a secondary maths or physics course leading to '[qualified teacher status](/ways-to-train)' (QTS).
+You may be eligible for a [training bursary of £9,000](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2021-to-2022-academic-year#undergraduate-bursary) if you're on a secondary maths or physics course leading to '[qualified teacher status](/what-is-qts)' (QTS).
 
 You may also be eligible if you're studying an opt-in QTS course in secondary undergraduate computing, languages, mathematics or physics.
 
@@ -178,15 +179,10 @@ You may be able to [get support if you’re a student and you’re disabled, hav
 
 ## If you come from outside England
 
-If you live outside England you may still be eligible for funding to train to teach via:
-
-* a [bursary or scholarship](#bursaries-and-scholarships)
-* [student finance](#tuition-fee-and-maintenance-loans)
-
-If you live in [Wales](https://www.studentfinancewales.co.uk/), [Scotland](https://www.saas.gov.uk/) or [Northern Ireland](https://www.studentfinanceni.co.uk/) you’ll need to contact your country’s student finance body.
+If you live in [Wales](https://www.studentfinancewales.co.uk/), [Scotland](https://www.saas.gov.uk/) or [Northern Ireland](https://www.studentfinanceni.co.uk/) you’ll need to contact your country’s student finance body to learn more about your eligibility for funding.
 
 Contact the education authority if you live in the Channel Islands ([Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx) and [Guernsey](https://www.gov.gg/article/152744/Policies)) or on the [Isle of Man](https://www.gov.im/student-grants).
 
-[Find out more about financial help if you're an applicant from outside the UK](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-non-uk-applicants#financial-support-for-non-uk-applicants-for-unsalaried-teacher-training-in-england).
+If you’re not a UK citizen, you are unlikely to get help funding your training unless you have permission to [live permanently in the UK](https://www.gov.uk/browse/visas-immigration/settle-in-the-uk), for example under the EU Settlement Scheme. You will also need to meet some other eligibility requirements.
 
-<a class="button" href ="/train-to-teach-in-england-as-an-international-student">Train to teach as an international candidate</a>
+<a class="button" href ="/train-to-teach-in-england-as-an-international-student">Find out about funding for non-UK citizens</a>

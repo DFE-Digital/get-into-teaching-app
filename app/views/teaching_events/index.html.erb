@@ -1,3 +1,7 @@
+<%= content_for(:head) do %>
+  <%= tag.link(rel: "canonical", href: events_url) %>
+<% end %>
+
 <section class="teaching-events">
   <header>
     <h1>Get Into Teaching events</h1>
@@ -5,6 +9,23 @@
     <p>
       All events listed here are designed to help you get into teacher training. They are all free to attend.
     </p>
+
+    <dl>
+      <div>
+        <dt>DfE Train to Teach events</dt>
+        <dd>Watch presentations, hear from teachers, speak to advisers and meet local training providers.</dd>
+      </div>
+
+      <div>
+        <dt>DfE Online Q&amp;As</dt>
+        <dd>Get answers to your specific questions from an online panel of teacher training advisers.</dd>
+      </div>
+
+      <div>
+        <dt>Training provider events</dt>
+        <dd>Find out about local courses and how to apply. Hosted by teacher training providers.</dd>
+      </div>
+    </dl>
   </header>
 
   <div class="teaching-events__container">
@@ -13,8 +34,14 @@
     </div>
 
     <% if @featured_events.blank? && @events.blank? %>
-      <div role="alert">
-        No events were found.
+      <div class="teaching-events__none" role="alert">
+        <div class="teaching-events__none--message">
+          <h3>
+            No events found.
+          </h3>
+
+          <a class="button" href="/mailinglist/signup">Sign up to be notified about events in your area</a>
+        </div>
       </div>
     <% else %>
       <div class="teaching-events__listing">
@@ -51,4 +78,15 @@
       </div>
     <% end %>
   </div>
+</section>
+
+<section class="content-cta">
+  <h3>Do you have a teaching event?</h3>
+  <p>
+    If you'd like to advertise your teaching event in this listing, <a href="https://form.education.gov.uk/service/Provider-event-details---Get-into-Teaching-website"
+      title="Submit your event details on GOV.UK"
+      target="_blank"
+      rel="noopener norefferer">
+    please fill in our online form</a>.
+  </p>
 </section>

@@ -39,7 +39,7 @@ describe NextGenImages do
         end
 
         before do
-          next_gen_imgs.values.each do |src|
+          next_gen_imgs.each_value do |src|
             allow(File).to receive(:exist?).with("#{Rails.public_path}#{src}").and_return(true)
           end
         end

@@ -1,7 +1,7 @@
 ---
 title: "Apply for teacher training as an international candidate"
 description: |-
-  Train to teach in England as an international student
+  Find out about teacher training courses in the UK for international students, and get help and advice on getting your QTS and PGCE with this guidance.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
@@ -60,7 +60,7 @@ keywords:
 
 Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. 
 
-You’ll complete your training with qualified teacher status (QTS, or PGCE + QTS), professional qualifications valued globally.
+You’ll complete your training with [qualified teacher status](/what-is-qts) (QTS, or [PGCE](/what-is-a-pgce) + QTS), professional qualifications valued globally.
 
 You can apply to train to teach in England from any country in the world. This page explains how, step by step.
 
@@ -133,7 +133,7 @@ You can apply for a salaried teacher training course, when you’ll earn money w
 
 ## 4. Search and apply for teacher training courses
 
-Visit [Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) for teacher training courses in England leading to qualified teacher status [(QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
+[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in England leading to qualified teacher status [(QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). 
 
 You can search by location, teaching subject and age group. You can also search for courses which pay a salary, and courses where visa sponsorship is available.
 
@@ -187,7 +187,7 @@ Alternatively, you may be eligible for a different type of visa which allows you
 
 ## 6. Plan your move to the UK
 
-The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/Information--Advice) delivers independent advice about all aspects of the international student experience, including immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
+The [UK Council for International Student Affairs delivers independent advice](https://www.ukcisa.org.uk/Information--Advice) about all aspects of the international student experience, including immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
 
 Your teacher training provider may also be able to help you plan your move to the UK  – contact them directly to ask.
 

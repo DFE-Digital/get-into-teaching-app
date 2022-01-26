@@ -6,7 +6,6 @@ images:
   giorgio_rubbo:
     path: "media/images/content/blog/giorgio-rubbo.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/giorgio-rubbo.jpg"
-    alt: "A photograph of biology teacher, Giorgio Rubbo"
 description: |-
   Giorgio Rubbo talks about what inspired him to become a teacher, his
   application process, concerns he had, and why you should become a teacher if
@@ -19,6 +18,7 @@ keywords:
 tags:
   - becoming a teacher
   - teacher training advisers
+closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $giorgio_rubbo$

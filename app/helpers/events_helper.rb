@@ -2,7 +2,7 @@ module EventsHelper
   include TextFormattingHelper
 
   def show_events_teaching_logo(index, type_id)
-    index.zero? && type_id != GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+    index.zero? && type_id != EventType.school_or_university_event_id
   end
 
   def format_event_date(event, stacked: true)
@@ -11,7 +11,7 @@ module EventsHelper
     if event.start_at.to_date == event.end_at.to_date
       safe_html_format(
         sprintf(
-          "%{startdate} #{stacked ? '<br>' : 'at'} %{starttime} - %{endtime}",
+          "%{startdate} #{stacked ? '<br>' : 'at'} %{starttime} to %{endtime}",
           startdate: event.start_at.to_date.to_formatted_s(:long),
           starttime: event.start_at.to_formatted_s(:time),
           endtime: event.end_at.to_formatted_s(:time),
@@ -25,20 +25,8 @@ module EventsHelper
     end
   end
 
-  def event_status_open?(event)
-    event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
-  end
-
-  def event_status_pending?(event)
-    event.status_id == GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
-  end
-
   def can_sign_up_online?(event)
-    event.web_feed_id && event_status_open?(event) && !is_event_type?(event, "School or University event")
-  end
-
-  def is_event_type?(event, type_name)
-    event.type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES[type_name]
+    event.web_feed_id && EventStatus.new(event).open? && !EventType.new(event).provider_event?
   end
 
   def embed_event_video_url(video_url)
@@ -105,7 +93,7 @@ module EventsHelper
 
   def past_category_name(type_id)
     t "event_types.#{type_id}.name.past",
-      default: "Past " + pluralised_category_name(type_id)
+      default: "Past #{pluralised_category_name(type_id)}"
   end
 
   def display_no_ttt_events_message?(performed_search, events, event_search_type)
@@ -128,10 +116,10 @@ module EventsHelper
   end
 
   def ttt_event_type_id
-    GetIntoTeachingApiClient::Constants::EVENT_TYPES["Train to Teach event"]
+    EventType.train_to_teach_event_id
   end
 
   def qt_event_type_id
-    GetIntoTeachingApiClient::Constants::EVENT_TYPES["Question Time"]
+    EventType.question_time_event_id
   end
 end

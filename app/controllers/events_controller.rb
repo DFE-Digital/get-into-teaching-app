@@ -10,10 +10,10 @@ class EventsController < ApplicationController
   MAXIMUM_EVENTS_PER_CATEGORY = 1_000
 
   def index
-    @page_title = "Find an event near you"
+    @page_title = "Teacher training events"
     @front_matter = {
       "description" => "Get your questions answered at an event.",
-      "title" => "Find an event near you",
+      "title" => "Teacher training events",
       "image" => "media/images/content/hero-images/0002.jpg",
     }
 
@@ -21,7 +21,7 @@ class EventsController < ApplicationController
   end
 
   def search
-    @page_title = "Find an event near you"
+    @page_title = "Teacher training events"
     @front_matter = { "description" => "Get your questions answered at an event." }
 
     render "index", layout: "events"
@@ -31,7 +31,7 @@ class EventsController < ApplicationController
     breadcrumb "events.search", :events_path
 
     @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-    render_not_found && return if @event.status_id == pending_event_status_id
+    render_not_found && return unless EventStatus.new(@event).viewable?
 
     @page_title = @event.name
     @front_matter = { "description" => @event.summary }
@@ -58,14 +58,14 @@ private
 
   def render_not_found
     @fullwidth = true
-    render "not_found"
+    render "not_found", status: :not_found
   end
 
   def load_upcoming_events
     api = GetIntoTeachingApiClient::TeachingEventsApi.new
     search_results = api.search_teaching_events_grouped_by_type(
       quantity_per_type: UPCOMING_EVENTS_PER_TYPE,
-      start_after: DateTime.now.utc.beginning_of_day,
+      start_after: Time.zone.now.utc.beginning_of_day,
     )
     @group_presenter = Events::GroupPresenter.new(
       search_results,
@@ -99,9 +99,5 @@ private
 
     (params[Events::Search.model_name.param_key] || defaults)
       .permit(:type, :distance, :postcode, :month)
-  end
-
-  def pending_event_status_id
-    GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
   end
 end

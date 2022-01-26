@@ -6,7 +6,6 @@ images:
   header_image:
     path: "media/images/content/blog/applying-for-teacher.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/applying-for-teacher.jpg"
-    alt: "A stock photograph of someone filling out an application form"
 description: |-
   From effective preparation, to submitting your application, we’ve broken down the whole process into manageable steps, so you can see exactly what’s involved.
 keywords:
@@ -26,6 +25,7 @@ tags:
   - personal statements
   - qualifications
   - applying for teacher training
+closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $header_image$
@@ -55,7 +55,7 @@ Our free events are the perfect opportunity to find out more about teacher train
 
 ### 1. Find teacher training courses
 
-Use the Department for Education’s [find postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/) service to search for courses in England. You’ll be able to search by location, training provider and subject. When you apply, you have three choices for teacher training providers. It’s a good idea to select three choices; the more flexible you are, the more likely it is that you’ll secure a place.
+[Find postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/) available in England. You’ll be able to search by location, training provider and subject. When you apply, you have three choices for teacher training providers. It’s a good idea to select three choices; the more flexible you are, the more likely it is that you’ll secure a place.
 
 ### 2. Write your personal statement
 
@@ -67,4 +67,4 @@ Your referees can tell training providers about your qualities and abilities, so
 
 ### 4. Apply for teacher training
 
-You're now ready to submit your application! You can apply using a GOV.UK service called [Apply for teacher training](https://www.gov.uk/apply-for-teacher-training).
+You're now ready to submit your application and [apply for teacher training](https://www.gov.uk/apply-for-teacher-training).

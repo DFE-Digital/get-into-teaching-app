@@ -14,6 +14,8 @@ module Stories
                   :page_data
 
     def initialize(front_matter, page_data = nil)
+      super
+
       front_matter.tap do |fm|
         @title         = fm["title"]
         @image         = fm["image"]

@@ -30,7 +30,7 @@ private
   def replace_acronyms(document)
     document.traverse do |node|
       next unless node.text?
-      next if node.parent.name == "a"
+      next unless node.parent.name == "p"
 
       replacements = 0
       replacement = node.content.gsub(ABBR_REGEXP) do |acronym|

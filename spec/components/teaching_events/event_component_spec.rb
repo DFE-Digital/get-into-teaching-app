@@ -26,17 +26,17 @@ describe TeachingEvents::EventComponent, type: "component" do
       end
     end
 
-    describe "#school_and_university?" do
+    describe "#provider_event?" do
       context "when the event is a school and university event" do
         let(:event) { build(:event_api, :school_or_university_event) }
 
-        it { expect(subject.school_and_university?).to be(true) }
+        it { expect(subject.provider_event?).to be(true) }
       end
 
       context "when the event is a train to teach event" do
         let(:event) { build(:event_api) }
 
-        it { expect(subject.school_and_university?).to be(false) }
+        it { expect(subject.provider_event?).to be(false) }
       end
     end
 
@@ -47,10 +47,17 @@ describe TeachingEvents::EventComponent, type: "component" do
         it { expect(subject).to be_online }
       end
 
-      context "when the event has a location" do
-        let(:event) { build(:event_api) }
+      context "when the event has a location and is not online" do
+        let(:event) { build(:event_api, is_online: false) }
 
         it { expect(subject).to be_in_person }
+      end
+
+      # this is the new 'virtual', event has an address/building but nobody's invited!
+      context "when the event has a location and is online" do
+        let(:event) { build(:event_api, is_online: true) }
+
+        it { expect(subject).not_to be_in_person }
       end
 
       context "when the event has no location" do
@@ -82,9 +89,15 @@ describe TeachingEvents::EventComponent, type: "component" do
       end
 
       context "when not train to teach" do
-        let(:event) { build(:event_api, :school_or_university_event) }
+        let(:event) { build(:event_api, :online_event) }
 
         it { expect(subject.classes).to eql("event event--regular") }
+      end
+
+      context "when training provider" do
+        let(:event) { build(:event_api, :school_or_university_event) }
+
+        it { expect(subject.classes).to eql("event event--regular event--training-provider") }
       end
     end
   end

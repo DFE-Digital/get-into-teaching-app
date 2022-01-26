@@ -14,7 +14,6 @@ require "action_view/railtie"
 # require "action_cable/engine"
 # require "sprockets/railtie"
 require "rails/test_unit/railtie"
-require "view_component/engine"
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
@@ -23,7 +22,7 @@ Bundler.require(*Rails.groups)
 module GetIntoTeachingWebsite
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
-    config.load_defaults 5.2
+    config.load_defaults 6.0
 
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
@@ -45,3 +44,6 @@ module GetIntoTeachingWebsite
       headers: { "Cache-Control" => "max-age=#{5.minutes.to_i}, public, immutable" }
   end
 end
+
+# Prevent Rails from attempting to auto-load JS/assets.
+Rails.autoloaders.main.ignore(Rails.root.join("app/webpacker"))

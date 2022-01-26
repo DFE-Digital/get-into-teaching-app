@@ -30,7 +30,7 @@
   <h2>Venue information</h2>
   <p><%= @event.building.venue %>, <%= event_address(@event) %>.</p>
   <p><%= link_to("Open in Google Maps", "https://maps.google.com/?q=#{event_address(@event)}", target: "blank") %></p>
-  <% if @event.provider_website_url %>
+  <% if display_event_provider_info?(@event) && @event.provider_website_url %>
     <p><%= link_to("Visit venue website", @event.provider_website_url, { target: "blank" }) %><i class="icon"></i></p>
   <% end %>
   <p><%= event_location_map(@event) %></p>
@@ -63,7 +63,7 @@
   <br>
   <% end %>
 
-  <% if event_status_open?(@event) || event_status_pending?(@event) %>
+  <% unless EventStatus.new(@event).closed? %>
     <% if can_sign_up_online?(@event) %>
       <h2>How to attend</h2>
       <% if @event.is_online %>

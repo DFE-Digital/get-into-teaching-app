@@ -8,6 +8,7 @@ describe TelephoneValidator do
       include ActiveModel::Model
 
       attr_accessor :telephone
+
       validates :telephone, telephone: true
 
       def self.model_name

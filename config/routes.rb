@@ -48,8 +48,6 @@ Rails.application.routes.draw do
     get "/open_events", to: "events#open_events"
   end
 
-  get "/test/a", to: "pages#temp_test_a"
-  get "/test/b", to: "pages#temp_test_b"
   get "/funding-your-training", to: "pages#funding_your_training", as: :funding_your_training
   get "/welcome", to: "pages#welcome", as: :welcome_guide
   get "/welcome/my-journey-into-teaching", to: "pages#welcome_my_journey_into_teaching", as: :welcome_my_journey_into_teaching
@@ -68,6 +66,7 @@ Rails.application.routes.draw do
   get "/cookie-policy", to: redirect("/cookies")
 
   resource :csp_reports, only: %i[create]
+  resource :client_metrics, only: %i[create]
 
   resources :blog, controller: "blog", only: %i[index show] do
     collection do
@@ -90,11 +89,9 @@ Rails.application.routes.draw do
     end
   end
 
-  unless Rails.env.production?
-    resources "teaching_events", path: "/teaching-events", controller: "teaching_events" do
-      collection do
-        get :about_ttt_events, path: "about-ttt-events", as: "about_ttt"
-      end
+  resources "teaching_events", path: "/teaching-events", controller: "teaching_events" do
+    collection do
+      get :about_ttt_events, path: "about-ttt-events", as: "about_ttt"
     end
   end
 

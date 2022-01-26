@@ -1,8 +1,7 @@
 ---
 title: Get qualified teacher status through an 'assessment only' programme
 description: |-
-  A number of accredited providers have been approved to offer the
-  'assessment only' (AO) teacher training route to qualified teacher status (QTS). If you are an experienced teacher, you can contact these providers directly.
+  Find accredited providers who offer the assessment only teacher training route to qualified teacher status (QTS) for experienced teachers with a degree.
 date: "2021-06-08"
 image: false
 backlink: /
@@ -51,10 +50,10 @@ provider_groups:
       link: http://www.nett.org.uk/
       telephone: '01255431949'
       email: teach@nett.org.uk
-    - header: SAF ITT
-      name: Su Bernard
-      telephone: 01234 827145
-      email: SBernard@saf.org.uk
+    - header: The Pilgrim Partnership 
+      name: Bev Collier
+      telephone: 01234 907896
+      email: bcollier@pilgrimpartnership.org
     - header: Suffolk and Norfolk ITT
       link: https://www.suffolkandnorfolkscitt.co.uk
       name: Lucinda James
@@ -141,7 +140,7 @@ provider_groups:
       name: Clare Hunton
       telephone: '0208 5203142'
       email: training@henrymaynard.waltham.sch.uk
-    - header: Jewish Teacher Training Partnership
+    - header: London School of Jewish Studies (LSJS)
       link: https://www.lsjs.ac.uk/
       name: Galia Segal
       telephone: 020 8203 6427
@@ -334,8 +333,8 @@ provider_groups:
       email: m.l.jacobs@reading.ac.uk
     - header: University of Sussex
       link: https://www.sussex.ac.uk/
-      name: Janet Steadman
-      email: l.harknett@sussex.ac.uk
+      name: Mike Lambert
+      email: mike.lambert@sussex.ac.uk
     - header: University of Winchester
       link: https://www.winchester.ac.uk/pages/home.aspx
       name: Keith Smith
@@ -472,7 +471,7 @@ provider_groups:
       name: Mikki Burns
       telephone: 0203 194 3200
       email: institute@tesglobal.com
-  Providers offering assessment only QTS to international teachers:
+  International:
     description: content/assessment-only-providers/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
     - header: University of Sunderland
@@ -503,7 +502,7 @@ keywords:
   - experienced
 ---
 
-If you’re an experienced teacher with a degree, you may be able to get qualified teacher status (QTS) through a 12-week assessment only (AO) programme.
+If you have a degree and enough classroom experience, you may be able to get qualified teacher status (QTS) through a 12-week assessment only (AO) programme.
 
 The accredited teacher training providers listed on this page offer the AO programme.
 
@@ -511,6 +510,6 @@ Contact them directly to ask them about entry criteria and to apply.
 
 ### Teachers from outside the UK
 
-If you trained as a teacher outside the UK, you can apply to certain training providers for an assessment only QTS without visiting or training in England. 
+If you have experience of teaching outside the UK, some training providers will let you apply for an assessment only QTS without visiting or training in England.
 
-[View teaching training providers offering assessment only QTS to international teachers.](#group--providers-offering-assessment-only-qts-to-international-teachers)
+[See the training providers who offer assessment only QTS to international teachers.](#group--international)

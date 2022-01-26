@@ -1,0 +1,18 @@
+.chat {
+  p {
+    margin-top: 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  a {
+    word-break: break-all;
+
+    &.button {
+      color: $white;
+      margin-bottom: 0;
+    }
+  }
+}

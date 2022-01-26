@@ -6,8 +6,6 @@
 
     <%= tag.p(helpers.safe_html_format(text), class: "call-to-action__text") %>
 
-    <div class="call-to-action__action">
-      <%= helpers.chat_link(button_text, classes: "button") %>
-    </div>
+    <%= render ChatComponent.new %>
   </div>
 <% end %>

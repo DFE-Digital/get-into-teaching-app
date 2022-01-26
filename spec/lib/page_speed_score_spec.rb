@@ -35,7 +35,7 @@ end
 def expect_page_scores(page)
   described_class::STRATEGIES.each do |strategy|
     scores = { performance: rand(100), accessibility: rand(100), seo: rand(100) }
-    expect_page_speed_score_request(page, strategy, scores)
+    allow_page_speed_score_request(page, strategy, scores)
     expect_metric_set(page, strategy, scores)
   end
 end
@@ -47,8 +47,8 @@ def expect_metric_set(page, strategy, scores)
   end
 end
 
-def expect_page_speed_score_request(page, strategy, scores)
-  expect_any_instance_of(Google::Apis::PagespeedonlineV5::PagespeedInsightsService)
+def allow_page_speed_score_request(page, strategy, scores)
+  allow_any_instance_of(Google::Apis::PagespeedonlineV5::PagespeedInsightsService)
     .to receive(:runpagespeed_pagespeedapi).with(
       "#{host}/#{page}",
       {

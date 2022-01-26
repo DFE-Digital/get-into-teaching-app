@@ -1,6 +1,6 @@
 class LazyLoadImages
   # Used as a placeholder to prevent invalid HTML.
-  TINY_GIF = "data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=".freeze
+  TINY_GIF = "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==".freeze
 
   def initialize(page)
     @page = page

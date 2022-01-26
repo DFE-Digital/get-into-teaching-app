@@ -33,9 +33,7 @@
     <% end %>
 
     <% if page_param_name.present? %>
-      <div class="event-pagination">
-        <%= paginate events, param_name: page_param_name, params: { anchor: event_list_id(plural_category_name) } %>
-      </div>
+      <%= paginate events, param_name: page_param_name, params: { anchor: event_list_id(plural_category_name) } %>
     <% end %>
 
     <% show_see_all_events ||= false %>

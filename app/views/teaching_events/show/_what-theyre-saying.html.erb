@@ -1,15 +1,18 @@
-<% quote ||= "So useful! I got answers to questions I didn't know I had yet and I'm so inspired and excited." %>
+<%# the quote can be overridden by locals or derrived from the event presenter %>
+<% featured_quote = defined?(quote) ? quote : @event.quote %>
 
-<section class="what-theyre-saying">
-  <div class="triangle yellow">
-    <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
-      <polygon points="0,100 100,0 100,100" />
-    </svg>
+<% if featured_quote %>
+  <div class="what-theyre-saying">
+    <div class="triangle yellow">
+      <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="0,100 100,0 100,100" />
+      </svg>
+    </div>
+    <div class="subheading">
+      <h3>What they're saying</h3>
+    </div>
+    <figure>
+      <blockquote><%= featured_quote %></blockquote>
+    </figure>
   </div>
-  <div class="subheading">
-    <h3>What they're saying</h3>
-  </div>
-  <figure>
-    <blockquote><%= quote %></blockquote>
-  </figure>
-</section>
+<% end %>

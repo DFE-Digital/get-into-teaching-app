@@ -3,7 +3,6 @@
 <% if show_welcome_guide? %>
   <%= render(Registration::MailingListSignupConfirmationComponent.new(mailing_list_session)) %>
 <% else %>
-
   <section class="text-content">
     <h2 class="green">You've signed up</h2>
 
@@ -23,7 +22,8 @@
       </div>
     </div>
 
-    <p>Monday - Friday between 8:30am and 5:30pm.</p>
+    <p>Monday to Friday between 8:30am and 5:30pm.</p>
+
   </section>
 
   <div class="blocks">
@@ -70,23 +70,4 @@
       <%= link_to "Find an event", events_path, class: "button button--white button--unpadded" %>
     <% end %>
   </div>
-<% end %>
-
-<% if Rails.application.config.x.legacy_tracking_pixels %>
-<span data-controller="pinterest"
-      data-pinterest-action="track"
-      data-pinterest-event="lead"
-      data-pinterest-event-data="{'lead-type' : 'Newsletter'}"></span>
-
-<span data-controller="snapchat"
-      data-snapchat-action="track"
-      data-snapchat-event="SUBSCRIBE"></span>
-
-<span data-controller="facebook"
-      data-facebook-action="trackCustom"
-      data-facebook-event="Newsletter_Subscribers"></span>
-
-<span data-controller="bam" data-bam-action="track"></span>
-
-<span data-controller="lid" data-lid-action="track" data-lid-event="MailingList"></span>
 <% end %>

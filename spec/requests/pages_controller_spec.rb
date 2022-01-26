@@ -19,6 +19,14 @@ describe PagesController, type: :request do
       it { is_expected.to have_http_status(:success) }
     end
 
+    context "when the page is noindexed" do
+      before { get "/test/a" }
+
+      subject { response.body }
+
+      it { is_expected.to include(%(<meta name="robots" content="noindex">)) }
+    end
+
     context "with invalid page" do
       subject { response }
 
@@ -39,7 +47,7 @@ describe PagesController, type: :request do
 
     let(:params) do
       {
-        "preferred_teaching_subject_id" => "802655a1-2afa-e811-a981-000d3a276620",
+        "preferred_teaching_subject_id" => TeachingSubject.lookup_by_key(:biology),
         "degree_status_id" => "222_750_003",
         "a_key_that_shouldnt_be_accepted" => "abc123",
       }

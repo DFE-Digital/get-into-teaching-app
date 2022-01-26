@@ -1,0 +1,80 @@
+name: owasp
+
+inputs:
+      environment:
+        description: The environment to deploy to Development/Test/Production/Review/Speed/UR etc
+        required: true
+      AZURE_CREDENTIALS:
+        required: true
+      KEY_VAULT:
+        required: true
+      ARM_ACCESS_KEY:
+        required: true
+      GITHUB_TOKEN:
+        required: true
+
+runs:
+    using: composite
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ inputs.AZURE_CREDENTIALS }}
+
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: SLACK-WEBHOOK
+        with:
+          keyvault: ${{ inputs.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: SLACK-WEBHOOK
+
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: HTTP-PASSWORD
+        with:
+          keyvault: ${{ inputs.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: HTTP-PASSWORD
+
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: HTTP-USERNAME
+        with:
+          keyvault: ${{ inputs.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: HTTP-USERNAME
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - name: Setup Application Name
+        id:   app_name
+        shell: bash
+        run: |
+             if [[ "${{ inputs.environment }}" == "Production" ]] ; then 
+                 rval="${{env.PAAS_APPLICATION_NAME}}-prod.${{env.DOMAIN}}"
+             elif [[ "${{ inputs.environment }}" == "Test" ]] ; then 
+                 rval="${{env.PAAS_APPLICATION_NAME}}-test.${{env.DOMAIN}}"
+             elif [[ "${{ inputs.environment }}" == "Development" ]] ; then 
+                 rval="${{env.PAAS_APPLICATION_NAME}}-dev.${{env.DOMAIN}}"
+             fi
+             echo ::set-output name=SCAN::$rval
+
+      - name: ZAP Scan
+        uses: zaproxy/action-full-scan@v0.3.0
+        with:
+          token: ${{ inputs.GITHUB_TOKEN }}
+          docker_name: 'owasp/zap2docker-stable'
+          target: 'https://${{ steps.HTTP-USERNAME.outputs.secret-value }}:${{ steps.HTTP-PASSWORD.outputs.secret-value }}@${{steps.app_name.outputs.SCAN}}/'
+          rules_file_name: '.zap/rules.tsv'
+          cmd_options: '-a'
+
+      - name: Slack Notification
+        if: failure()
+        uses: rtCamp/action-slack-notify@master
+        env:
+           SLACK_COLOR: ${{env.SLACK_FAILURE}}
+           SLACK_MESSAGE: 'Pipeline Failure carrying out OWASP Testing on https://${{env.PAAS_APPLICATION_NAME}}-${{ inputs.environment }}.${{env.DOMAIN}}/'
+           SLACK_TITLE: 'Failure: OWSAP Testing has failed on ${{ inputs.environment }}'
+           SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}

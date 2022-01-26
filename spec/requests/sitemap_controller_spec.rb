@@ -19,8 +19,13 @@ RSpec.describe SitemapController, type: :request do
         priority: 0.7,
         date: "2020-10-10",
       },
+      "/test/a" => {
+        name: "A/B Test",
+        noindex: true,
+      },
     }
   end
+  let(:sitemap_pages) { content_pages.except("/test/a") }
 
   before do
     allow(Pages::Frontmatter).to receive(:list) { content_pages }
@@ -35,8 +40,8 @@ RSpec.describe SitemapController, type: :request do
     end
 
     describe "content_pages" do
-      let(:expected) { SitemapController::OTHER_PATHS.count + content_pages.count }
-      let(:paths) { content_pages.keys.concat(SitemapController::OTHER_PATHS) }
+      let(:expected) { SitemapController::OTHER_PATHS.count + sitemap_pages.count }
+      let(:paths) { sitemap_pages.keys.concat(SitemapController::OTHER_PATHS) }
 
       specify "should have the right number of content_pages" do
         expect(expected).to eql(subject.xpath("/xmlns:urlset/xmlns:url").size)
@@ -53,7 +58,7 @@ RSpec.describe SitemapController, type: :request do
 
     describe "priority" do
       specify "priority should be assinged from frontmatter" do
-        content_pages.each do |path, data|
+        sitemap_pages.each do |path, data|
           importance = subject.at_xpath(
             %(/xmlns:urlset/xmlns:url[xmlns:loc = 'http://www.example.com#{path}']/xmlns:priority),
           ).text
@@ -65,13 +70,19 @@ RSpec.describe SitemapController, type: :request do
 
     describe "lastmod" do
       specify "last modified date should be assinged from frontmatter" do
-        content_pages.each do |path, data|
+        sitemap_pages.each do |path, data|
           last_modified = subject.at_xpath(
             %(/xmlns:urlset/xmlns:url[xmlns:loc = 'http://www.example.com#{path}']/xmlns:lastmod),
           ).text
 
           expect(last_modified).to eql((data[:date] || SitemapController::DEFAULT_LASTMOD).to_s)
         end
+      end
+    end
+
+    describe "noindex" do
+      specify "skips pages that have noindex in the frontmatter" do
+        expect(subject.to_s).not_to include("/test/a")
       end
     end
 

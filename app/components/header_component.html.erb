@@ -24,9 +24,10 @@
       <span class="menu-button__text">Menu</span>
     <% end %>
   </div>
-  <%= render Header::NavigationComponent.new(extra_resources: { "/events" => "Teaching events", "/blog" => "Blog" }) %>
+  <%= render Header::NavigationComponent.new(extra_resources: { "/events" => "Teacher training events", "/blog" => "Blog" }) %>
 </header>
 
+<%= above_hero %>
 <%= hero %>
 
 <% if breadcrumbs %>

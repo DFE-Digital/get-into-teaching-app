@@ -5,8 +5,8 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") unless Rails.application.config.x.legacy_tracking_pixels %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
@@ -23,6 +23,10 @@
           </header>
 
           <%= yield %>
+
+          <% if @front_matter.key?("closing_paragraph") %>
+            <%= render(partial: %(blog/closing-paragraphs/#{@front_matter['closing_paragraph']})) %>
+          <% end %>
 
           <hr>
 

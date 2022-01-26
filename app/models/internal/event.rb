@@ -10,10 +10,10 @@ module Internal
     attribute :readable_id, :string
     attribute :status_id,
               :integer,
-              default: GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+              default: EventStatus.pending_id
     attribute :type_id,
               :integer,
-              default: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+              default: EventType.school_or_university_event_id
     attribute :name, :string
     attribute :summary, :string
     attribute :description, :string
@@ -73,7 +73,8 @@ module Internal
     end
 
     def to_api_event
-      hash = convert_attributes_for_api_model
+      attributes = *GetIntoTeachingApiClient::TeachingEvent.attribute_map.keys
+      hash = convert_attributes_for_api_model.slice(*attributes.map(&:to_s))
       api_event = GetIntoTeachingApiClient::TeachingEvent.new(hash)
       api_event.building = building.to_api_building if building.present?
       api_event
@@ -114,11 +115,11 @@ module Internal
     end
 
     def provider_event?
-      type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+      type_id == EventType.school_or_university_event_id
     end
 
     def online_event?
-      type_id == GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"]
+      type_id == EventType.online_event_id
     end
 
   private

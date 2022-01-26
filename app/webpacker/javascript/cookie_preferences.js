@@ -30,6 +30,19 @@ export default class CookiePreferences {
     );
   }
 
+  static get cookieDomains() {
+    const hostname = window.location.hostname;
+    const rootDomain = hostname.replace(/(.*?)\./, '');
+
+    return [hostname, `.${hostname}`, rootDomain, `.${rootDomain}`];
+  }
+
+  static clearCookie(key) {
+    CookiePreferences.cookieDomains.forEach((domain) =>
+      Cookies.remove(key, { domain })
+    );
+  }
+
   readCookie() {
     const cookie = Cookies.get(CookiePreferences.cookieName);
     if (typeof cookie === 'undefined' || !cookie) {
@@ -77,34 +90,56 @@ export default class CookiePreferences {
     );
 
     this.emitEvent(newlyAllowed);
+    this.sendMetric();
   }
 
   clearNonEssentialCookies() {
     Object.keys(Cookies.get()).forEach((key) => {
-      if (!CookiePreferences.functionalCookies.includes(key))
-        Cookies.remove(key);
+      if (!CookiePreferences.functionalCookies.includes(key)) {
+        CookiePreferences.clearCookie(key);
+      }
     });
   }
 
-  setCategory(category, value) {
-    const strValue = value.toString();
-    const boolValue =
-      strValue === '1' || strValue === 'true' || strValue === 'yes';
+  setCategories(categories) {
+    for (const [key, value] of Object.entries(categories)) {
+      categories[key] = this.boolValue(value);
+    }
 
-    const newSettings = Object.assign({}, this.settings);
-    const optingOut = newSettings[category] === true && !boolValue;
+    const newSettings = { ...this.settings, ...categories };
+    const optingOut = Object.keys(categories).some((category) => {
+      return !categories[category] && this.settings[category];
+    });
 
     if (optingOut) {
       this.clearNonEssentialCookies();
     }
-
-    newSettings[category] = boolValue;
 
     this.all = newSettings;
   }
 
   get allowedCategories() {
     return this.categories.filter((category) => this.allowed(category));
+  }
+
+  boolValue(value) {
+    const strValue = value.toString();
+    return strValue === '1' || strValue === 'true' || strValue === 'yes';
+  }
+
+  sendMetric() {
+    const xhr = new XMLHttpRequest();
+    const data = JSON.stringify({
+      key: 'app_client_cookie_consent_total',
+      labels: {
+        non_functional: this.allowed('non-functional'),
+        marketing: this.allowed('marketing'),
+      },
+    });
+
+    xhr.open('POST', '/client_metrics', true);
+    xhr.setRequestHeader('Content-Type', 'application/json');
+    xhr.send(data);
   }
 
   emitEvent(newCategories) {

@@ -1,5 +1,5 @@
 class EmailFormatValidator < ActiveModel::EachValidator
-  EMAIL_WITH_FULLY_QUALIFIED_HOSTNAME = %r{\A[^\s@]+@[^\.\s]+\.[^\s]+\z}.freeze
+  EMAIL_WITH_FULLY_QUALIFIED_HOSTNAME = %r{\A[^\s@]+@[^.\s]+\.[^\s]+\z}.freeze
   MAXIMUM_LENGTH = 100 # As specified by the CRM
 
   def validate_each(record, attribute, value)

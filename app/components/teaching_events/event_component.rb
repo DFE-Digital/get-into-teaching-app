@@ -5,7 +5,7 @@ module TeachingEvents
     def initialize(event:)
       @event     = event
       @title     = event.name
-      @type      = event.type_id
+      @type      = EventType.new(event)
       @online    = event.is_online
       @in_person = event.building.present?
       @start_at  = event.start_at
@@ -15,12 +15,10 @@ module TeachingEvents
       super
     end
 
-    def train_to_teach?
-      type.in?(GetIntoTeachingApiClient::Constants::EVENT_TYPES.values_at("Train to Teach event", "Question Time"))
-    end
+    delegate :provider_event?, to: :type
 
-    def school_and_university?
-      type == GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]
+    def train_to_teach?
+      type.train_to_teach_or_question_time_event?
     end
 
     def online?
@@ -28,11 +26,11 @@ module TeachingEvents
     end
 
     def in_person?
-      @in_person
+      @in_person && !online?
     end
 
     def event_type
-      helpers.event_type_name(type)
+      helpers.event_type_name(type.type_id)
     end
 
     def location
@@ -52,6 +50,7 @@ module TeachingEvents
         "event",
         "event--train-to-teach" => train_to_teach?,
         "event--regular" => !train_to_teach?,
+        "event--training-provider" => provider_event?,
       )
     end
   end

@@ -8,7 +8,7 @@ describe MailingList::Steps::TeacherTraining do
   end
 
   let(:consideration_journey_stage_types) do
-    GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
+    OptionSet::CONSIDERATION_JOURNEY_STAGES.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end

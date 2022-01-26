@@ -14,7 +14,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
   include_context "with stubbed types api"
 
   let(:other_paths) { %w[/ /blog /search /tta-service /mailinglist/signup /mailinglist/signup/name /cookies /cookie_preference] }
-  let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}] }
+  let(:ignored_path_patterns) { [%r{/assets/documents/}, %r{/event-categories}, %r{/test}] }
 
   before do
     # we don't care about the contents of the events pages here, just
@@ -95,6 +95,12 @@ RSpec.feature "content pages check", type: :feature, content: true do
       end
     end
 
+    scenario "all images have alt text" do
+      @stored_pages.each do |sp|
+        expect(sp.body.css("img")).to all(have_attribute("alt"))
+      end
+    end
+
     scenario "the internal links reference existing pages" do
       paths = other_paths.concat(@stored_pages.map(&:path))
       @stored_pages.each do |sp|
@@ -115,7 +121,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
             expect(paths).to include(uri.path)
 
             if (fragment = uri.fragment)
-              expect(@stored_pages_by_path[uri.path].body).to(have_css("#" + fragment), "invalid link on #{sp.path} - #{href}, (missing fragment #{fragment})")
+              expect(@stored_pages_by_path[uri.path].body).to(have_css("##{fragment}"), "invalid link on #{sp.path} - #{href}, (missing fragment #{fragment})")
             end
           end
       end

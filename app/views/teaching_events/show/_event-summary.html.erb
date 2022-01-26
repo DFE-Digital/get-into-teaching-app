@@ -1,5 +1,15 @@
-<div class="about-event">
-  <%= tag.p(@event.summary, class: "leading") %>
+<h2>Event information</h2>
 
-  <%= tag.div(safe_html_format(@event.description)) %>
-</div>
+<% if @event.message %>
+  <div class="teaching-event__message">
+    <%= tag.p(@event.message) %>
+  </div>
+<% end %>
+
+<%= tag.div(formatted_event_description(@event.description)) %>
+
+<% if @event.video_url %>
+  <div class="teaching-event__video youtube-video-container">
+    <%= tag.iframe(src: embed_event_video_url(@event.video_url), frameborder: "0", allowfullscreen: true, title: "Train to Teach Events: Take your next step towards teaching") %>
+  </div>
+<% end %>

@@ -47,7 +47,7 @@ describe EventsController, type: :request do
     let(:events_by_type) { group_events_by_type(events) }
     let(:search_key) { Events::Search.model_name.param_key }
     let(:search_path) { search_events_path(search_key => search_params) }
-    let(:date) { DateTime.now.utc }
+    let(:date) { Time.zone.now.utc }
     let(:search_month) { date.strftime("%Y-%m") }
     let(:parsed_response) { Nokogiri.parse(response.body) }
 
@@ -59,7 +59,7 @@ describe EventsController, type: :request do
 
     context "with valid search params" do
       let(:event_type_name) { "School or University event" }
-      let(:event_type) { GetIntoTeachingApiClient::Constants::EVENT_TYPES[event_type_name] }
+      let(:event_type) { EventType.lookup_by_name(event_type_name) }
       let(:search_params) do
         attributes_for(
           :events_search,
@@ -152,7 +152,7 @@ describe EventsController, type: :request do
         it { is_expected.to match(/#{event.building.address_line2}/) }
         it { is_expected.to match(/#{event.building.address_postcode}/) }
         it { is_expected.to match(/iframe.+src="#{event.video_url}"/) }
-        it { is_expected.to include(event.provider_website_url) }
+        it { is_expected.not_to include(event.provider_website_url) }
         it { is_expected.not_to include("Provider information") }
         it { is_expected.to include(event.building.image_url) }
 
@@ -160,6 +160,7 @@ describe EventsController, type: :request do
           let(:event) { build(:event_api, :online_event, :with_provider_info, readable_id: event_readable_id) }
 
           it { is_expected.to include("Provider information") }
+          it { is_expected.to include(event.provider_website_url) }
           it { is_expected.to include(event.provider_target_audience) }
           it { is_expected.to include(event.provider_organiser) }
           it { is_expected.to match(/mailto:#{event.provider_contact_email}/) }
@@ -220,7 +221,7 @@ describe EventsController, type: :request do
         end
 
         context %(when the event is a 'School or University event') do
-          let(:event) { build(:event_api, web_feed_id: nil, type_id: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"]) }
+          let(:event) { build(:event_api, web_feed_id: nil, type_id: EventType.school_or_university_event_id) }
 
           it { is_expected.to match(%r{To register for this event, follow the instructions in the event information section}) }
           it { is_expected.not_to match(%r{Sign up for this}) }
@@ -229,8 +230,26 @@ describe EventsController, type: :request do
         context "when the event is a 'Pending event'" do
           let(:event) { build(:event_api, :pending, web_feed_id: nil) }
 
-          it { expect(response).to have_http_status :success }
+          it { expect(response).to have_http_status :not_found }
           it { expect(response.body).to include("Unfortunately, that event has already happened.") }
+        end
+
+        EventType::WITH_ARCHIVE.each do |type, id|
+          context "when the event is a past #{type} type" do
+            let(:event) { build(:event_api, type_id: id, start_at: Time.zone.now.utc - 1.day) }
+
+            it { expect(response).to have_http_status :success }
+            it { expect(response.body).to include(event.name) }
+          end
+        end
+
+        EventType::ALL.except(*EventType::WITH_ARCHIVE.keys).each do |type, id|
+          context "when the event is a past #{type} type" do
+            let(:event) { build(:event_api, type_id: id, start_at: Time.zone.now.utc - 1.day) }
+
+            it { expect(response).to have_http_status :not_found }
+            it { expect(response.body).to include("Unfortunately, that event has already happened.") }
+          end
         end
 
         it "has a meta description" do
@@ -255,7 +274,7 @@ describe EventsController, type: :request do
         get(event_path(id: event_readable_id))
       end
 
-      it { is_expected.to have_http_status :success }
+      it { is_expected.to have_http_status :not_found }
       it { expect(response.body).to include("Unfortunately, that event has already happened.") }
     end
   end

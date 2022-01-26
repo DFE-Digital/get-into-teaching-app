@@ -16,13 +16,11 @@ module TemplateHandlers
       end
 
       def global_front_matter
-        @global_front_matter ||= begin
-          if GLOBAL_FRONT_MATTER.exist?
-            YAML.load_file GLOBAL_FRONT_MATTER
-          else
-            {}
-          end
-        end
+        @global_front_matter ||= if GLOBAL_FRONT_MATTER.exist?
+                                   YAML.load_file GLOBAL_FRONT_MATTER
+                                 else
+                                   {}
+                                 end
       end
     end
 
@@ -63,9 +61,8 @@ module TemplateHandlers
       # use $1 rather than a block argument here because gsub assigns the
       # entire placeholder to the arg (including dollar symbols) but we only
       # want what's inside the capture group
-
       parsed.content.gsub(COMPONENT_PLACEHOLDER_REGEX) do
-        safe_join([cta_component($1), component("quote", $1), image($1)].compact)
+        safe_join([cta_component($1), component("quote", $1), image($1)].compact).strip
       end
     end
     # rubocop:enable Style/PerlBackrefs
@@ -96,7 +93,7 @@ module TemplateHandlers
 
       return unless image_args
 
-      component = Content::ImageComponent.new(**image_args.symbolize_keys.slice(:path, :alt))
+      component = Content::ImageComponent.new(path: image_args["path"])
 
       ApplicationController.render(component, layout: false)
     end

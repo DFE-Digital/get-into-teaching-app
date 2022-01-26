@@ -1,0 +1,71 @@
+figure {
+  margin-block: 2em;
+  margin-inline: 0;
+
+  @include mq($from: tablet) {
+    margin-block: 0;
+  }
+
+  blockquote,
+  figcaption {
+    padding-inline: 0em;
+    margin-inline: 1em;
+
+    @include mq($from: tablet) {
+      padding-inline: 2em;
+    }
+  }
+
+  blockquote {
+    $color: $pink-dark;
+    $blog-content-width: 50ch;
+
+    $colours: ("pink": $pink-dark, "blue": $blue-dark, "yellow": $yellow-dark, "purple": $purple-dark);
+
+    @each $name, $val in $colours {
+      &.#{$name}-quotes {
+        p {
+          &:before,
+          &:after {
+            color: $val;
+          }
+        }
+      }
+    }
+
+    p {
+      @include font-size(medium);
+      position: relative;
+
+      &:before,
+      &:after {
+        @include font-size(xlarge);
+      }
+
+      // always open the quote on the first paragraph
+      &:first-child {
+        &:before {
+          content: open-quote;
+          position: absolute;
+          left: -.6em;
+          top: -.3em;
+        }
+      }
+
+      // close the quote on the only paragraph (if there's no attribution)
+      // or the second last if there is
+      &:last-child {
+        &:after {
+          position: absolute;
+          content: close-quote;
+          margin-left: .02em;
+          margin-top: -.1em;
+        }
+      }
+    }
+  }
+
+  figcaption {
+    margin-inline: 1em;
+  }
+}

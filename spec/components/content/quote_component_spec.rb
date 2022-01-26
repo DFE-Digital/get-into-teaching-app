@@ -21,7 +21,7 @@ describe Content::QuoteComponent, type: :component do
   let(:name) { "name" }
   let(:job_title) { "job-title" }
   let(:cta) { { title: "click this", link: "/cta" } }
-  let(:image) { "media/images/featured-3.jpg" }
+  let(:image) { "media/images/content/homepage/science-teacher.jpg" }
   let(:hang) { "left" }
   let(:inline) { nil }
 

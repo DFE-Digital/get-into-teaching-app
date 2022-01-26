@@ -94,7 +94,7 @@ $q-sarah-geography-2$
 
   <ul>
     <li>Speak to a current teacher at one of our <a href="/event-categories/train-to-teach-events">Train to Teach events</a></li>
-    <li>Find a <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">postgraduate teacher training course</a></li>
+    <li>Find a <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">postgraduate teacher training course</a> to help you get your <a href="/what-is-qts">QTS</a> and possibly <a href="/what-is-a-pgce">PGCE</a></li>
     <li>Find a <a href="https://teaching-vacancies.service.gov.uk/">role</a></li>
   </ul>
 </section>

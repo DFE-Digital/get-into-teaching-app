@@ -6,7 +6,7 @@ describe "rendering pages with a custom layout", type: :request do
 
     before { get "/home-page" }
 
-    it { expect(response).to have_http_status(200) }
+    it { expect(response).to have_http_status(:ok) }
     it { is_expected.to include("Home Page Test") }
 
     it { is_expected.to include("Discover the steps to become a teacher") }
@@ -18,7 +18,7 @@ describe "rendering pages with a custom layout", type: :request do
 
     before { get "/stories/story-page" }
 
-    it { expect(response).to have_http_status(200) }
+    it { expect(response).to have_http_status(:ok) }
     it { is_expected.to include("Story Page Test") }
     it { is_expected.to include("John Doe") }
     it { is_expected.to include("Head of Everything") }
@@ -29,7 +29,7 @@ describe "rendering pages with a custom layout", type: :request do
 
     before { get "/stories/list-page" }
 
-    it { expect(response).to have_http_status(200) }
+    it { expect(response).to have_http_status(:ok) }
     it { is_expected.to include("List Page Test") }
 
     it { is_expected.to include("Story") }
@@ -43,7 +43,7 @@ describe "rendering pages with a custom layout", type: :request do
 
     before { get "/stories/landing-page" }
 
-    it { expect(response).to have_http_status(200) }
+    it { expect(response).to have_http_status(:ok) }
     it { is_expected.to include("Landing Page Test") }
 
     it { is_expected.to include("A heading") }

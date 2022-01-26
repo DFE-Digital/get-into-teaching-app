@@ -2,11 +2,12 @@ class TeachingEventsController < ApplicationController
   include CircuitBreaker
 
   before_action :setup_filter, only: :index
+  before_action :set_front_matter
 
   FEATURED_EVENT_COUNT = 2 # 2 featured events max on the first page
   EVENT_COUNT = 15 # 15 regular ones per page
 
-  FEATURED_EVENT_TYPES = GetIntoTeachingApiClient::Constants::EVENT_TYPES.values_at(
+  FEATURED_EVENT_TYPES = EventType.lookup_by_names(
     "Train to Teach event",
     "Question Time",
   ).freeze
@@ -31,16 +32,18 @@ class TeachingEventsController < ApplicationController
   end
 
   def show
-    breadcrumb "Teaching events", "/teaching-events"
+    breadcrumb "Get into Teaching events", "/teaching-events"
 
-    @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+    api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+    @event = TeachingEvents::EventPresenter.new(api_event)
+
     @page_title = @event.name
 
     render layout: "teaching_event"
   end
 
   def about_ttt_events
-    breadcrumb "Teaching events", "/teaching-events"
+    breadcrumb "Get into Teaching events", "/teaching-events"
   end
 
 private
@@ -59,5 +62,9 @@ private
 
   def setup_results
     @event_search = TeachingEvents::Search.new(search_params)
+  end
+
+  def set_front_matter
+    @front_matter = { "noindex" => true }
   end
 end

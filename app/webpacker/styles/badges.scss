@@ -1,0 +1,26 @@
+.badges {
+  $divider-colour: #0b0c0c;
+
+  display: flex;
+  gap: .4em;
+  flex-direction: column;
+  align-items: flex-start;
+  border-left: 1px solid $divider-colour;
+  overflow-x: hidden;
+  min-height: 4em;
+
+  flex-direction: column;
+
+  padding-left: .8em;
+  padding-block: 1em;
+
+  .badge {
+    padding: .4em 1em .4em 2em !important;
+    display: inline-block;
+    margin-left: -2em;
+
+    color: $white;
+    border: 1px solid $purple;
+    background: $purple;
+  }
+}

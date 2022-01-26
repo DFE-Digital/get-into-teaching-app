@@ -1,13 +1,12 @@
 module WelcomeHelper
   def show_welcome_guide?(degree_status = degree_status_id, consideration_journey_stage = consideration_journey_stage_id)
-    return false if Rails.env.production?
-
-    gradudate_or_postgraduate = retrieve_degree_status_ids("Graduate or postgraduate")
-    allowed_graduate_consideration_stages = retrieve_consideration_journey_stage_ids(
-      "It’s just an idea",
-      "I’m not sure and finding out more",
+    gradudate_or_postgraduate = OptionSet.lookup_by_keys(:degree_status, :graduate_or_postgraduate)
+    allowed_graduate_consideration_stages = OptionSet.lookup_by_keys(
+      :consideration_journey_stage,
+      :it_s_just_an_idea,
+      :i_m_not_sure_and_finding_out_more,
     )
-    final_year_student = retrieve_degree_status_ids("Final year")
+    final_year_student = OptionSet.lookup_by_keys(:degree_status, :final_year)
 
     degree_status.in?(final_year_student) || (
       degree_status.in?(gradudate_or_postgraduate) && consideration_journey_stage.in?(allowed_graduate_consideration_stages)
@@ -33,6 +32,14 @@ module WelcomeHelper
       safe_join(["teaching", subject_name], " ")
     else
       mark_tag ? tag.mark("teaching.") : "teaching."
+    end
+  end
+
+  def subject_teachers
+    if (subject = welcome_guide_subject)
+      "#{subject} teachers"
+    else
+      "teachers"
     end
   end
 
@@ -66,25 +73,14 @@ private
   # return the subject name from its uuid, downcasing all except
   # proper nouns
   def retrieve_subject(uuid, leave_capitalised:)
-    subject = GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.invert[uuid]
+    subject = TeachingSubject.lookup_by_uuid(uuid)
 
     return if subject.blank?
 
-    return subject if leave_capitalised || uuid.in?([
-      "942655a1-2afa-e811-a981-000d3a276620", # English
-      "962655a1-2afa-e811-a981-000d3a276620", # French
-      "9c2655a1-2afa-e811-a981-000d3a276620", # German
-      "b82655a1-2afa-e811-a981-000d3a276620", # Spanish
-    ])
+    proper_nouns = TeachingSubject.lookup_by_keys(:english, :french, :german, :spanish)
+
+    return subject if leave_capitalised || uuid.in?(proper_nouns)
 
     subject.downcase
-  end
-
-  def retrieve_degree_status_ids(*names)
-    GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.values_at(*names)
-  end
-
-  def retrieve_consideration_journey_stage_ids(*names)
-    GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.values_at(*names)
   end
 end

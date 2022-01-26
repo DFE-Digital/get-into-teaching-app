@@ -6,6 +6,6 @@
 
 <p>This is a free service.</p>
 
-<%= f.govuk_text_field :first_name %>
-<%= f.govuk_text_field :last_name %>
-<%= f.govuk_email_field :email %>
+<%= f.govuk_text_field :first_name, autocomplete: "given-name" %>
+<%= f.govuk_text_field :last_name, autocomplete: "family-name" %>
+<%= f.govuk_email_field :email, autocomplete: "email" %>

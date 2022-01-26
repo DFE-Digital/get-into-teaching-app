@@ -22,7 +22,6 @@
     overflow: auto;
 
     .more-stories__thumbs__thumb__play {
-      @include rotated-block(-3deg, $blur: 4px);
       background-color: $pink-dark-90;
       padding: 1em 1em 1em 1.5em;
       position: absolute;

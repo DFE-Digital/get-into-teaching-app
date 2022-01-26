@@ -1,11 +1,15 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") unless Rails.application.config.x.legacy_tracking_pixels %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
     <%= render HeaderComponent.new do |c| %>
       <%= c.hero(@front_matter) %>
+
+      <% c.above_hero do %>
+        <%= render(partial: "/content/home/urgent-call") %>
+      <% end %>
     <% end %>
 
     <main class="home" id="main-content">
@@ -14,6 +18,6 @@
       <% end %>
     </main>
 
-    <%= render FooterComponent.new(lid_pixel_event: @front_matter["lid_pixel_event"]) %>
+    <%= render FooterComponent.new %>
   <% end %>
 </html>

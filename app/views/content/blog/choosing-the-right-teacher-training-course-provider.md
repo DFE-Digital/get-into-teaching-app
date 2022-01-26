@@ -5,7 +5,6 @@ images:
   right_provider:
     path: "media/images/content/blog/right_provider.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/right_provider.jpg"
-    alt: "A photograph of books and a tablet computer on a desk in an empty classroom"
 description: |-
   When choosing a course provider for your teacher training, it’s important to consider what will suit your individual circumstances. Here are some tips on what you may wish to research.
     
@@ -25,7 +24,7 @@ When choosing a course provider for your teacher training, it’s important to c
 
 Your drive to become a teacher needs to inform your choice of provider. If you have a particular interest, make sure that the school placements you will be offered for your teaching practice will allow you to develop it. For example, there are providers that work with fully comprehensive and inclusive schools, faith-based schools, special schools, grammar schools, schools in challenging social or economic areas, rural schools and so on.
 
-You can find the available postgraduate teacher training courses in your area via the [Department for Education’s Find service](https://www.gov.uk/find-postgraduate-teacher-training-courses). Consider selecting 4-5 that you feel might be suitable for you, and then make contact with them to check that they are. Aim to shortlist these down to 3. 
+Search the available [postgraduate teaching training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in your area. Consider selecting 4-5 that you feel might be suitable for you, and then make contact with them to check that they are. Aim to shortlist these down to 3. 
 
 Alongside online research, think about calling or emailing these providers, or try to arrange a visit. Your questions may include:
 
@@ -43,4 +42,4 @@ Alongside online research, think about calling or emailing these providers, or t
 >
 >_Jane Wilkinson, former teacher and teacher training adviser._
 
-Due to the individual nature of teacher training courses, what might be a good fit for others you know may not be the best fit for you, so doing careful research is vital! Speak to one of our [teacher training advisers](/teacher-training-advisers), who can help you personalise your choices.
+Due to the individual nature of teacher training courses, what might be a good fit for others you know may not be the best fit for you, so doing careful research is vital! [Speak to one of our teacher training advisers](/teacher-training-advisers), who can help you personalise your choices.

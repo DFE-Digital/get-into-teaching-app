@@ -8,7 +8,7 @@ describe MailingList::Steps::DegreeStatus do
   end
 
   let(:degree_status_option_types) do
-    GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map do |k, v|
+    OptionSet::DEGREE_STATUSES.map do |k, v|
       GetIntoTeachingApiClient::PickListItem.new({ id: v, value: k })
     end
   end

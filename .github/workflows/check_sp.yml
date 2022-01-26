@@ -1,4 +1,4 @@
-name: Check Service Principle
+name: Check Service Principal
 
 on:
   workflow_dispatch:
@@ -6,18 +6,49 @@ on:
     - cron: "35 6 * * *"
     
 jobs:
-  build:
+  check_expires:
     runs-on: ubuntu-latest
-
+    outputs:
+       result: '${{ steps.pwsh_check_expire.outputs.json_data }}'
     steps:
+      - uses: DFE-Digital/github-actions/CheckServicePrincipal@master
+        id: pwsh_check_expire
+        with:
+            AzureCredentials: ${{ secrets.AZURE_CREDENTIALS }}
+            ServicePrincipal: s146d01-keyvault-readonlyaccess
+            ExpiresWithinDays: 30
+
+  alert:
+    name: ${{matrix.data.Application}}/${{ matrix.data.Name }}
+    runs-on: ubuntu-latest
+    needs: check_expires 
+    strategy:
+      fail-fast: false 
+      matrix: '${{ fromJSON(needs.check_expires.outputs.result) }}' 
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
       - uses: Azure/login@v1
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - name: Azure CLI script
-        uses: azure/CLI@v1
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: SLACK-WEBHOOK
         with:
-          azcliversion: 2.0.72
-          inlineScript: |
-            az ad sp credential list   --id 4bf0b603-073c-47fd-992c-2b03c21fcdab
+          keyvault: ${{ secrets.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: SLACK-WEBHOOK
 
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@master
+        env:
+           SLACK_COLOR: ${{env.SLACK_ERROR}}
+           SLACK_TITLE: ${{ matrix.data.Application }}/${{ matrix.data.Name }}  
+           SLACK_MESSAGE: |
+                         Expires in ${{matrix.data.ExpiresDays}} days
+                         Please follow the process in https://dfe-technical-guidance-90.london.cloudapps.digital/how-to/security/managing-secrets/#access-key-expiration to renew.
+           SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}

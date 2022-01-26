@@ -6,7 +6,6 @@ images:
   cindy-ventura:
     path: "media/images/content/blog/cindy-ventura.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/cindy-ventura.jpg"
-    alt: "Trainee teacher Cindy Ventura wearing a red polo shirt"
 description: |-
   Cindy recently started the Postgraduate Diploma in Education (PGDE) teacher training course at Sheffield University. She kept a diary during her first week on the course and shares her experiences here.
 keywords:
@@ -17,9 +16,11 @@ tags:
   - becoming a teacher
 ---
 
+$cindy-ventura$
+
 Cindy recently started the Postgraduate Diploma in Education (PGDE) teacher training course at Sheffield University. She kept a diary during her first week on the course and shares her experiences here.
 
-$cindy-ventura$
+## Applying for teacher training
 
 Throughout my time at university, I knew I wanted a career that would make a difference and give me opportunities for lifelong learning. I was interested in languages and worked as a language assistant in different schools in Sheffield, which developed my interest in teaching. I applied for the PGDE programme at Sheffield University and since my interview in March, the time has passed so fast that I now find myself preparing my backpack for my first day.
 
@@ -69,4 +70,4 @@ The group work is important because it aimed to familiarise us with the differen
 
 My first week was hectic, which I didn’t expect, but it gave me many things to reflect upon and I learned a lot – it enabled me to see the importance and the challenges of education from different sides. In addition, I met new people from other countries and learned their views and approaches on teaching and learning, which was very enriching.
 
-_If you’d like to be in Cindy’s shoes this time next year, [find out more about your next steps to becoming a teacher](/steps-to-become-a-teacher)._
+If you’d like to be in Cindy’s shoes this time next year, [find out more about your next steps to becoming a teacher](/steps-to-become-a-teacher).

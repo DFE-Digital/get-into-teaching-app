@@ -19,7 +19,7 @@ module Internal
 
     def show
       @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      raise_not_found unless @event.status_id == pending_event_status_id
+      raise_not_found unless EventStatus.new(@event).pending?
 
       @page_title = @event.name
     end
@@ -27,7 +27,7 @@ module Internal
     def new
       if params[:duplicate]
         @event = get_event_by_id(params[:duplicate])
-        @event.assign_attributes(NILIFY_ON_DUPLICATE.to_h { |attribute| [attribute, nil] })
+        @event.assign_attributes(NILIFY_ON_DUPLICATE.index_with { |_attribute| nil })
       else
         @event_type = determine_event_type_from_name(params[:event_type])
         @event = Event.new(venue_type: Event::VENUE_TYPES[:existing], type_id: @event_type)
@@ -37,7 +37,7 @@ module Internal
 
     def approve
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
+      api_event.status_id = EventStatus.open_id
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - publish - #{api_event.to_json}")
       redirect_to internal_events_path(
@@ -49,7 +49,7 @@ module Internal
 
     def withdraw
       api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      api_event.status_id = GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
+      api_event.status_id = EventStatus.pending_id
       GetIntoTeachingApiClient::TeachingEventsApi.new.upsert_teaching_event(api_event)
       Rails.logger.info("#{@user.username} - withdrawn - #{api_event.to_json}")
       redirect_to internal_events_path(
@@ -63,8 +63,8 @@ module Internal
       events = GetIntoTeachingApiClient::TeachingEventsApi
                  .new
                  .search_teaching_events_grouped_by_type(quantity_per_type: 1_000,
-                                                         start_after: DateTime.now.utc.beginning_of_day,
-                                                         status_ids: [open_event_status_id],
+                                                         start_after: Time.zone.now.utc.beginning_of_day,
+                                                         status_ids: [EventStatus.open_id],
                                                          type_ids: [event_types[:provider], event_types[:online]])
 
       @open_events = events.map(&:teaching_events).flatten
@@ -132,24 +132,16 @@ module Internal
     def events_search_params(event_type)
       {
         type_ids: [event_type],
-        status_ids: [pending_event_status_id],
-        start_after: DateTime.now.utc.beginning_of_day,
+        status_ids: [EventStatus.pending_id],
+        start_after: Time.zone.now.utc.beginning_of_day,
         quantity_per_type: 1_000,
       }
     end
 
-    def pending_event_status_id
-      GetIntoTeachingApiClient::Constants::EVENT_STATUS["Pending"]
-    end
-
-    def open_event_status_id
-      GetIntoTeachingApiClient::Constants::EVENT_STATUS["Open"]
-    end
-
     def event_types
       {
-        provider: GetIntoTeachingApiClient::Constants::EVENT_TYPES["School or University event"],
-        online: GetIntoTeachingApiClient::Constants::EVENT_TYPES["Online event"],
+        provider: EventType.school_or_university_event_id,
+        online: EventType.online_event_id,
       }
         .with_indifferent_access
         .freeze

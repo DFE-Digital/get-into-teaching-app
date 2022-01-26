@@ -1,0 +1,163 @@
+name: Deploy to PaaS
+
+inputs:
+      environment:
+        description: The environment to deploy to Development/Test/Production/Review/Speed/UR etc
+        required: true
+      sha:
+        description: Commit sha to be deployed
+        required: true
+      pr:
+        description: Pull Request Reference
+        required: false
+      AZURE_CREDENTIALS:
+        required: true
+      KEY_VAULT:
+        required: true
+      ARM_ACCESS_KEY:
+        required: true
+
+runs:
+    using: composite
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: azure/login@v1
+        with:
+           creds: ${{ inputs.AZURE_CREDENTIALS }}
+
+      - name: Validate Key Vault Secrets
+        uses: DFE-Digital/github-actions/validate-key-vault-secrets@master
+        with:
+          KEY_VAULT: ${{ inputs.KEY_VAULT }}
+          SECRETS: |
+              CONTENT-KEYS 
+              INFRA-KEYS
+
+      - name: Get Short SHA
+        id: sha
+        shell: bash
+        run: echo ::set-output name=short::$(echo "${{ inputs.sha }}" | cut -c -7)
+
+      - name: Setup Environment Variables
+        id: variables
+        shell: bash
+        run: |
+             echo ::set-output name=RUN_TEST::"true"
+             if [ "${{inputs.environment }}" == "Review" ]
+             then
+                 echo ::set-output name=control::$(echo "review" )
+                 pr_name="${{env.REVIEW_APPLICATION}}-${{inputs.pr}}"
+                 echo ::set-output name=pr_name::${pr_name}
+                 echo ::set-output name=healthcheck::${pr_name}
+                 echo ::set-output name=key::${pr_name}
+                 echo "TF_VAR_paas_app_application_name=${pr_name}" >> $GITHUB_ENV
+                 echo "TF_VAR_paas_app_route_name=${pr_name}"       >> $GITHUB_ENV
+                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:review-${{steps.sha.outputs.short}}
+             fi
+
+             if [ "${{inputs.environment }}" == "Development" ]
+             then
+                 echo ::set-output name=control::$(echo "dev" )
+                 echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-dev" )
+                 echo ::set-output name=key::"app.dev.terraform"
+                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
+             fi
+
+             if [ "${{inputs.environment }}" == "Test" ]
+             then
+                 echo ::set-output name=control::$(echo "test" )
+                 echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-test" )
+                 echo ::set-output name=key::"app.test.terraform"
+                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
+             fi
+
+             if [ "${{inputs.environment }}" == "Speed" ]
+             then
+                 echo ::set-output name=RUN_TEST::"false"
+                 echo ::set-output name=control::$(echo "pagespeed" )
+                 echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-pagespeed" )
+                 echo ::set-output name=key::"app.pagespeed.terraform"
+                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
+             fi
+
+             if [ "${{inputs.environment }}" == "UR" ]
+             then
+                 echo ::set-output name=RUN_TEST::"true"
+                 echo ::set-output name=control::$(echo "ur" )
+                 echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-UR" )
+                 echo ::set-output name=key::"app.ur.terraform"
+                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
+             fi
+
+             if [ "${{inputs.environment }}" == "Production" ]
+             then
+                 echo ::set-output name=control::$(echo "production" )
+                 echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-prod" )
+                 echo ::set-output name=key::"app.production.terraform"
+                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
+             fi
+
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: HTTP-USERNAME
+        with:
+          keyvault: ${{ inputs.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: HTTP-USERNAME 
+
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: HTTP-PASSWORD
+        with:
+          keyvault: ${{ inputs.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: HTTP-PASSWORD 
+
+      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+        id: LOGIT-API
+        with:
+          keyvault: ${{ inputs.KEY_VAULT}}
+          yaml_secret: INFRA-KEYS
+          secret: LOGIT-API
+
+      - uses: hashicorp/setup-terraform@v1.3.2
+        with:
+          terraform_version: 0.14.9
+
+      - name: Terraform ( ${{inputs.environment}} )
+        shell: bash
+        run: |
+            cd terraform/paas && pwd
+            terraform init -backend-config=${{steps.variables.outputs.control}}.bk.vars -backend-config="key=${{steps.variables.outputs.key}}.tfstate"
+            terraform apply -var-file=${{steps.variables.outputs.control}}.env.tfvars -auto-approve
+        env:
+          ARM_ACCESS_KEY:               ${{ inputs.ARM_ACCESS_KEY  }}
+          TF_VAR_paas_app_docker_image: ${{ steps.variables.outputs.docker_image}}
+          TF_VAR_AZURE_CREDENTIALS:     ${{ inputs.AZURE_CREDENTIALS }}
+
+      - name: Smoke tests
+        shell: bash
+        run: |
+            if [ "${{steps.variables.outputs.RUN_TEST}}" == "true" ]
+            then
+                   tests/confidence/healthcheck.sh  "${{steps.variables.outputs.healthcheck}}"  "sha-${{ steps.sha.outputs.short }}"
+            fi
+        env:
+          HTTPAUTH_PASSWORD: ${{ steps.HTTP-PASSWORD.outputs.secret-value }}
+          HTTPAUTH_USERNAME: ${{ steps.HTTP-USERNAME.outputs.secret-value }}
+
+      - name: Log Deployment
+        if: always()
+        uses: DFE-Digital/github-actions/SendToLogit@master
+        with:
+           LOGIT-API-KEY: ${{ steps.LOGIT-API.outputs.secret-value }}
+           logtype: "github"
+           JSON: |
+                '{"Application" : "${{env.PAAS_APPLICATION_NAME}}", 
+                  "Status"      : "${{ job.status }}",
+                  "Action"      : "Deploy",                        
+                  "Environment" : "${{inputs.environment}}",              
+                  "Version"     : "${{ inputs.sha }}" }'

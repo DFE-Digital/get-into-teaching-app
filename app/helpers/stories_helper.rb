@@ -1,6 +1,6 @@
 module StoriesHelper
   def story_heading(teacher, position)
-    delimiter = ("," + tag.br + "\n").html_safe
+    delimiter = ",#{tag.br}\n".html_safe
 
     tag.h2 { safe_join([teacher, position].compact, delimiter) }
   end

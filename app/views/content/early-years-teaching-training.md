@@ -17,9 +17,7 @@ keywords:
  - year one
 date: "2021-03-29"
 description: |-
-  As an early years teacher you'll use your knowledge and skills to help younger children
-  enjoy high standards of teaching. Your input will have a long and positive
-  impact on their development and wellbeing. Find out how to get Early Years Teacher Status (EYTS).
+  Discover how to get Early Years Teacher Status (EYTS) and help to educate and inspire future generations. Official guidance on early years teacher training.
 calls_to_action:
   EY-undergraduate:
     name: feature_table
@@ -69,7 +67,7 @@ The early years are critical in children's development. You’ll use your knowle
 
 You’ll need to do 'early years initial teacher training' (EYITT) to achieve 'early years teacher status' (EYTS).
 
-EYTS is different from '[qualified teacher status](/ways-to-train)' (QTS), which is the equivalent for teaching children aged 3 to 18.
+EYTS is different from '[qualified teacher status](/what-is-qts)' (QTS), which is the equivalent for teaching children aged 3 to 18.
 
 Your training will enable you to meet the [early years teachers' standards](https://www.gov.uk/government/publications/early-years-teachers-standards).
 

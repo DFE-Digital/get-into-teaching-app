@@ -4,6 +4,7 @@ import CookiePreferences from 'cookie_preferences';
 describe('CookiePreferences', () => {
   let prefs = null;
   let newCategoriesEvent = null;
+  let xhrMock = null;
 
   function setCookie(name, content) {
     Cookies.set(name, content);
@@ -13,6 +14,29 @@ describe('CookiePreferences', () => {
     setCookie(name, JSON.stringify(data));
   }
 
+  function mockXMLHttpRequest() {
+    xhrMock = {
+      open: jest.fn(),
+      send: jest.fn(),
+      setRequestHeader: jest.fn(),
+    };
+    window.XMLHttpRequest = jest.fn().mockImplementation(() => xhrMock);
+  }
+
+  function expectMetric(labels) {
+    expect(xhrMock.open).toHaveBeenCalledWith('POST', '/client_metrics', true);
+    expect(xhrMock.setRequestHeader).toHaveBeenCalledWith(
+      'Content-Type',
+      'application/json'
+    );
+    expect(xhrMock.send).toHaveBeenCalledWith(
+      JSON.stringify({
+        key: 'app_client_cookie_consent_total',
+        labels: labels,
+      })
+    );
+  }
+
   document.addEventListener('cookies:accepted', (event) => {
     newCategoriesEvent = event.detail.cookies;
   });
@@ -20,6 +44,7 @@ describe('CookiePreferences', () => {
   beforeEach(() => {
     Cookies.remove(CookiePreferences.cookieName);
     newCategoriesEvent = null;
+    mockXMLHttpRequest();
   });
 
   describe('cookieName', () => {
@@ -77,6 +102,30 @@ describe('CookiePreferences', () => {
       });
     });
 
+    describe('#setCategories', () => {
+      it('casts values to boolean', () => {
+        prefs.setCategories({
+          marketing: 'yes',
+          test: 1,
+          other: 'true',
+        });
+
+        expect(prefs.allowed('marketing')).toBe(true);
+        expect(prefs.allowed('test')).toBe(true);
+        expect(prefs.allowed('other')).toBe(true);
+
+        prefs.setCategories({
+          marketing: 'no',
+          test: 0,
+          other: 'false',
+        });
+
+        expect(prefs.allowed('marketing')).toBe(false);
+        expect(prefs.allowed('test')).toBe(false);
+        expect(prefs.allowed('other')).toBe(false);
+      });
+    });
+
     describe('assigning #all', () => {
       beforeEach(() => {
         prefs.all = { required: false, features: true };
@@ -108,11 +157,15 @@ describe('CookiePreferences', () => {
       it('emits event', () => {
         expect(newCategoriesEvent).toEqual(['features']);
       });
+
+      it('sends a metric', () => {
+        expectMetric({ non_functional: false, marketing: false });
+      });
     });
 
     describe('assigning existing category', () => {
       beforeEach(() => {
-        prefs.setCategory('marketing', true);
+        prefs.setCategories({ marketing: true });
       });
 
       it('updates allowed value', () => {
@@ -146,11 +199,15 @@ describe('CookiePreferences', () => {
       it('emits event', () => {
         expect(newCategoriesEvent).toEqual(['marketing']);
       });
+
+      it('sends a metric', () => {
+        expectMetric({ non_functional: false, marketing: true });
+      });
     });
 
     describe('assigning functional to false', () => {
       beforeEach(() => {
-        prefs.setCategory('functional', false);
+        prefs.setCategories({ functional: false });
       });
 
       it('leaves the value as true', () => {
@@ -168,7 +225,7 @@ describe('CookiePreferences', () => {
 
     describe('assigning new category', () => {
       beforeEach(() => {
-        prefs.setCategory('features', true);
+        prefs.setCategories({ features: true });
       });
 
       it('updates allowed value', () => {
@@ -203,6 +260,10 @@ describe('CookiePreferences', () => {
 
       it('emits event', () => {
         expect(newCategoriesEvent).toEqual(['features']);
+      });
+
+      it('sends a metric', () => {
+        expectMetric({ non_functional: false, marketing: false });
       });
     });
 
@@ -258,31 +319,48 @@ describe('CookiePreferences', () => {
 
     describe('assigning #all', () => {
       beforeEach(() => {
-        prefs.all = { required: false, functional: true };
+        prefs.all = {
+          required: false,
+          functional: true,
+          'non-functional': true,
+        };
       });
 
       it('should update', () => {
-        expect(prefs.all).toEqual({ required: false, functional: true });
+        expect(prefs.all).toEqual({
+          required: false,
+          functional: true,
+          'non-functional': true,
+        });
       });
 
       it('should return new values for #allowed', () => {
         expect(prefs.allowed('required')).toBe(false);
         expect(prefs.allowed('functional')).toBe(true);
+        expect(prefs.allowed('non-functional')).toBe(true);
         expect(prefs.allowed('marketing')).toBe(false);
       });
 
       it('should update #categories list', () => {
-        expect(prefs.categories).toEqual(['required', 'functional']);
+        expect(prefs.categories).toEqual([
+          'required',
+          'functional',
+          'non-functional',
+        ]);
       });
 
       it('emits event', () => {
-        expect(newCategoriesEvent).toEqual([]);
+        expect(newCategoriesEvent).toEqual(['non-functional']);
+      });
+
+      it('sends a metric', () => {
+        expectMetric({ non_functional: true, marketing: false });
       });
     });
 
     describe('assigning new category', () => {
       beforeEach(() => {
-        prefs.setCategory('functional', true);
+        prefs.setCategories({ functional: true });
       });
 
       it('updates allowed value', () => {
@@ -300,11 +378,15 @@ describe('CookiePreferences', () => {
       it('emits event', () => {
         expect(newCategoriesEvent).toEqual([]);
       });
+
+      it('sends a metric', () => {
+        expectMetric({ non_functional: false, marketing: false });
+      });
     });
 
     describe('opting out of a category', () => {
       beforeEach(() => {
-        prefs.setCategory('marketing', true);
+        prefs.setCategories({ marketing: true });
       });
 
       it('retains essential cookies and clears non-essential cookies', () => {
@@ -313,7 +395,7 @@ describe('CookiePreferences', () => {
         const essentialCookieKey = CookiePreferences.functionalCookies[2];
         Cookies.set(essentialCookieKey, 'essential');
 
-        prefs.setCategory('marketing', false);
+        prefs.setCategories({ marketing: false });
 
         expect(Cookies.get('non-essential')).toBeUndefined();
         expect(Cookies.get(essentialCookieKey)).toEqual('essential');
@@ -332,6 +414,28 @@ describe('CookiePreferences', () => {
           'marketing',
         ]);
       });
+    });
+  });
+
+  describe('clearCookie', () => {
+    it('clears the cookie from all domains', () => {
+      Object.defineProperty(window, 'location', {
+        configurable: true,
+        value: new URL('https://getintoteaching.education.gov.uk/'),
+      });
+
+      const spy = jest.spyOn(Cookies, 'remove');
+
+      CookiePreferences.clearCookie('key');
+
+      expect(spy).toHaveBeenCalledWith('key', {
+        domain: 'getintoteaching.education.gov.uk',
+      });
+      expect(spy).toHaveBeenCalledWith('key', {
+        domain: '.getintoteaching.education.gov.uk',
+      });
+      expect(spy).toHaveBeenCalledWith('key', { domain: 'education.gov.uk' });
+      expect(spy).toHaveBeenCalledWith('key', { domain: '.education.gov.uk' });
     });
   });
 });

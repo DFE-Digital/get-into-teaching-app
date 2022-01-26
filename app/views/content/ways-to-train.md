@@ -2,7 +2,7 @@
 title: "Ways to train"
 image: "media/images/content/hero-images/0003.jpg"
 description: |-
-  Official Department for Education guidance on teacher training. Find out how to become a teacher, get qualified teacher status (QTS) through a PGCE or school direct and the salaries and funding available. 
+  Read this Department for Education guidance to find out about teacher training courses, PGCEs, School Direct, and the different routes into teaching.
 subtitle: Get information and support to help you become a teacher. 
 subtitle_button: "Register for updates"
 subtitle_link: "/mailinglist/signup/name"
@@ -52,7 +52,7 @@ keywords:
   - Teacher training courses
 ---
 
-You need 'qualified teacher status' (QTS) to work in the majority of schools in England including state maintained primary, secondary and special schools.
+You need ['qualified teacher status'](/what-is-qts) (QTS) to work in the majority of schools in England including state maintained primary, secondary and special schools.
 
 Find out how to get QTS if you:
 
@@ -72,34 +72,29 @@ If you're from outside the UK, find out how you can [come to England to teach](/
 
 With university-led teacher training you spend some of your time in academic learning, but the majority in school placements.
 
-In addition to QTS you'll get a PGCE or PGDE (an academic qualification).
+In addition to [QTS](/what-is-qts) you'll get a [PGCE or PGDE (an academic qualification)](/what-is-a-pgce).
 
 Courses typically take one year but you may be able to study part-time.
 
-Fees are usually around £9,250 but you can:
+Fees for full-time courses are usually around £9,250 but you can:
 
 * get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
 * apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
 
-<div class="training-attributes">
-  <h4>University-led training</h4>
-  <div class="badges">
-    <div class="badge pink">
-      <div class="badge-text">Costs £9,250</div>
-    </div>
-    <div class="badge dark-cyan">
-      <div class="badge-text">Funding available</div>
-    </div>
-
-    <div class="badge purple">
-      <div class="badge-text">Takes 1 year</div>
-    </div>
-
-    <div class="badge dark-blue">
-      <div class="badge-text">PGCE or PGDE</div>
-    </div>
-  </div>
+<div class="training-option">
+  <h4 class="training-option__title">University-led training</h4>
+  <ul class="training-option__options badges">
+    <li class="badge">Costs up to £9,250</li>
+    <li class="badge">Funding available</li>
+    <li class="badge">Takes 1 year</li>
+    <li class="badge">QTS</li>
+    <li class="badge">PGCE or PGDE</li>
+  </ul>
 </div>
+
+Fees are higher for [international students](/train-to-teach-in-england-as-an-international-student).
+
+You can check the fees for a particular course with the course provider.
 
 ### Train with a school or group of schools
 
@@ -120,35 +115,20 @@ Fees are usually around £9,250 but you can:
 * get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
 * apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)  
 
-<div class="training-attributes">
-  <h4>School direct<br>(fee-funded)</h4>
-  <div class="badges">
-    <div class="badge pink">
-      <div class="badge-text">
-        Costs £9,250
-      </div>
-    </div>
-    <div class="badge dark-cyan">
-      <div class="badge-text">
-        Funding available
-      </div>
-    </div>
-    <div class="badge purple">
-      <div class="badge-text">
-        Takes 1 year
-      </div>
-    </div>
-    <div class="badge dark-blue">
-      <div class="badge-text">
-        Often a PGCE or PGDE
-      </div>
-    </div>
-  </div>
+<div class="training-option">
+  <h4 class="training-option__title">School direct<br>(fee-funded)</h4>
+  <ul class="training-option__options badges">
+    <li class="badge">Costs up to £9,250</li>
+    <li class="badge">Funding available</li>
+    <li class="badge">Takes 1 year</li>
+    <li class="badge">QTS</li>
+    <li class="badge">Often a PGCE or PGDE</li>
+  </ul>
 </div>
 
 ### Earn a salary
 
-Some teacher training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary.
+Some teacher training programmes like 'school direct (salaried)' and 'postgraduate teaching apprenticeships' offer a salary for those with the right experience.
 
 These courses are usually suitable for people who already have relevant teaching experience, or are already working as unqualified teachers. 
 
@@ -156,49 +136,39 @@ Many 'school direct (salaried)' programmes give you a PGCE or PGDE (an academic 
 
 Courses typically take one year but you may be able to study part-time.
 
-[Teach First](https://www.teachfirst.org.uk/) also offers a salary. It's a 2-year programme leading to a PGDE and QTS.
+[Teach First](https://www.teachfirst.org.uk/) also offers a salary. It's a 2-year programme leading to a PGDE and QTS. At the end of your first year, you’ll have your QTS. At the end of your second year, you’ll have your PGDE.
 
-<dl>
+<dl class="training-options">
   <div class="training-option">
-    <dt>School direct<br>(salaried)</dt>
-    <dd class="badges">
-      <div class="badge purple">
-        <div class="badge-text">
-          Takes 1 year
-        </div>
-      </div>
-      <div class="badge dark-blue">
-        <div class="badge-text">
-          Often a PGCE or PGDE
-        </div>
-      </div>
+    <dt class="training-option__title">School direct<br>(salaried)</dt>
+    <dd class="training-option__options">
+      <ul class="badges">
+        <li class="badge">Takes 1 year</li>
+        <li class="badge">Often a PGCE or PGDE</li>
+        <li class="badge">QTS</li>
+      </ul>
     </dd>
   </div>
 
   <div class="training-option">
-    <dt>Postgraduate teaching apprenticeship</dt>
-    <dd class="badges">
-      <div class="badge purple">
-        <div class="badge-text">
-          Takes 1 year
-        </div>
-      </div>
+    <dt class="training-option__title">Postgraduate teaching apprenticeship</dt>
+    <dd class="training-option__options">
+      <ul class="badges">
+        <li class="badge">Takes 1 year</li>
+        <li class="badge">May offer a PGCE or equivalent</li>
+        <li class="badge">QTS</li>
+      </ul>
     </dd>
   </div>
 
   <div class="training-option">
-    <dt>Teach First</dt>
-    <dd class="badges">
-      <div class="badge purple">
-        <div class="badge-text">
-          Takes 2 years
-        </div>
-      </div>
-      <div class="badge dark-blue">
-        <div class="badge-text">
-          PGDE
-        </div>
-      </div>
+    <dt class="training-option__title">Teach First</dt>
+    <dd class="training-option__options">
+      <ul class="badges">
+        <li class="badge">Takes 2 years</li>
+        <li class="badge">QTS</li>
+        <li class="badge">PGDE</li>
+      </ul>
     </dd>
   </div>
 </dl>
@@ -219,30 +189,14 @@ Qualifications vary depending on the course. For example, you could get QTS with
 * Bachelor of Education (BEd)
 * Bachelor of Science (BSc)
 
-<div class="training-attributes">
-  <h4>Undergraduate teacher training</h4>
-  <div class="badges">
-    <div class="badge pink">
-      <div class="badge-text">
-        Costs £9,250 per year
-      </div>
-    </div>
-    <div class="badge dark-cyan">
-      <div class="badge-text">
-        Funding available
-      </div>
-    </div>
-    <div class="badge purple">
-      <div class="badge-text">
-        Up to 4 years
-      </div>
-    </div>
-    <div class="badge dark-blue">
-      <div class="badge-text">
-        Qualifications vary
-      </div>
-    </div>
-  </div>
+<div class="training-option">
+  <h4 class="training-option__title">Undergraduate teacher training</h4>
+  <ul class="training-option__options badges">
+    <li class="badge">Costs up to £9,250 per year</li>
+    <li class="badge">Funding available</li>
+    <li class="badge">Up to 4 years</li>
+    <li class="badge">Qualifications vary</li>
+  </ul>
 </div>
 
 <a href="https://digital.ucas.com/search" class="button">Find an undergraduate course</a>
@@ -265,4 +219,5 @@ Entry criteria may vary by teacher training provider. Ask them about eligibility
 A career change into teaching allows you to use your experience and
 passion to inspire young people.
 
-[Now Teach](https://nowteach.org.uk/) and [Transition to Teach](https://www.transitiontoteach.co.uk/) can support you with your career change.
+As well as the options above, [Now Teach](https://nowteach.org.uk/) is a service that can specifically help you with changing careers.
+

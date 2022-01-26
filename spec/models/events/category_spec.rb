@@ -5,7 +5,7 @@ RSpec.describe Events::Category do
 
   let(:category_name) { "Train to Teach event" }
   let(:type_id) do
-    GetIntoTeachingApiClient::Constants::EVENT_TYPES[category_name]
+    EventType.lookup_by_name(category_name)
   end
 
   describe "#new" do

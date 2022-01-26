@@ -13,25 +13,25 @@ shared_context "with stubbed types api" do
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApiClient::Constants::DEGREE_STATUS_OPTIONS.map { |k, v| { id: v, value: k } }.to_json
+        body: OptionSet::DEGREE_STATUSES.map { |k, v| { id: v, value: k } }.to_json
 
     stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/candidate/consideration_journey_stages")
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApiClient::Constants::CONSIDERATION_JOURNEY_STAGES.map { |k, v| { id: v, value: k } }.to_json
+        body: OptionSet::CONSIDERATION_JOURNEY_STAGES.map { |k, v| { id: v, value: k } }.to_json
 
     stub_request(:get, "#{git_api_endpoint}/api/pick_list_items/teaching_event/types")
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApiClient::Constants::EVENT_TYPES.map { |k, v| { id: v, value: k } }.to_json
+        body: EventType::ALL.map { |k, v| { id: v, value: k } }.to_json
 
     stub_request(:get, "#{git_api_endpoint}/api/lookup_items/teaching_subjects")
       .to_return \
         status: 200,
         headers: { "Content-type" => "application/json" },
-        body: GetIntoTeachingApiClient::Constants::TEACHING_SUBJECTS.map { |k, v| { id: v, value: k } }.to_json
+        body: TeachingSubject::ALL.map { |k, v| { id: v, value: k } }.to_json
   end
 end
 
@@ -82,10 +82,10 @@ shared_context "with stubbed upcoming events by category api" do |results_per_ty
   let(:expected_request_attributes) do
     {
       quantity_per_type: results_per_type,
-      start_after: DateTime.now.utc.beginning_of_day,
+      start_after: Time.zone.now.utc.beginning_of_day,
     }
   end
-  before { travel_to(DateTime.new(2020, 11, 1, 10)) }
+  before { travel_to(Time.zone.local(2020, 11, 1, 10)) }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \

@@ -3,26 +3,31 @@
   <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
   <%= csp_meta_tag %>
   <%#= canonical_tag %>
-  <%= tag :meta, name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no' %>
-  <%= tag :meta, name: "google-site-verification", content: "uoqqF4yGEjHx9klftx3ch2fCBpmgI6hHYBS69w17_-g" %>
-  <%= tag :link, rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' %>
-  <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
-  <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
+  <%= tag.meta(name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no') %>
+  <%= tag.meta(name: "google-site-verification", content: "uoqqF4yGEjHx9klftx3ch2fCBpmgI6hHYBS69w17_-g") %>
+  <%= tag.link(rel: 'icon', type: 'image/x-icon', href: '/favicon.ico') %>
+  <%= stylesheet_pack_tag 'application', 'data-turbo-track': 'reload', media: 'all' %>
+  <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbo-track': 'reload', media: 'all' %></noscript>
   <% if Rails.env.test? && params.key?(:fake_browser_time) %>
-    <%= javascript_pack_tag 'fake_browser_time', 'data-turbolinks-track': 'reload', id: "fake-browser-time" %>
+    <%= javascript_pack_tag 'fake_browser_time', 'data-turbo-track': 'reload', id: "fake-browser-time" %>
   <% end %>
-  <%= render(partial: "sections/google_optimize") %>
-  <%= javascript_pack_tag 'gtm', 'data-turbolinks-track': 'reload', data: { "gtm-id": ENV["GTM_ID"] }, async: true unless Rails.application.config.x.legacy_tracking_pixels %>
-  <%= javascript_pack_tag 'js_enabled', 'data-turbolinks-track': 'reload', async: true %>
-  <%= javascript_pack_tag 'lazy_images', 'data-turbolinks-track': 'reload', async: true %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
+  <%= google_optimize_script %>
+  <%= javascript_pack_tag 'sentry', 'data-turbo-track': 'reload', data: { "sentry-dsn": sentry_dsn, "sentry-environment": Rails.env } %>
+  <%= javascript_pack_tag 'gtm', 'data-turbo-track': 'reload', data: { "gtm-id": ENV["GTM_ID"] }, async: true if gtm_enabled? %>
+  <%= javascript_pack_tag 'js_enabled', 'data-turbo-track': 'reload', async: true %>
+  <%= javascript_pack_tag 'lazy_images', 'data-turbo-track': 'reload', async: true %>
+  <%= javascript_pack_tag 'application', 'data-turbo-track': 'reload', async: true %>
   <%= yield :head %>
   <%= breadcrumbs_structured_data(breadcrumb_trail) %>
   <%= logo_structured_data %>
   <%= search_structured_data if current_page?(root_path) %>
   <%= how_to_structured_data(@page) if @page.present? && @front_matter.key?("how_to") %>
 
-  <% if @front_matter && @front_matter['description'] %>
+  <% if @front_matter["noindex"] || @noindex %>
+    <%= meta_tag(key: "robots", value: "noindex") %>
+  <% end %>
+
+  <% if @front_matter['description'] %>
     <%= meta_tag(key: 'description', value: @front_matter['description']) %>
     <%= meta_tag(key: 'description', value: @front_matter['description'], opengraph: true) %>
   <% end %>
@@ -33,8 +38,7 @@
   <%= meta_tag(key: 'locale', value: "en_GB", opengraph: true) %>
   <%= meta_tag(key: "facebook-domain-verification", value: "h1r6sd9bvqql7fyzy5jmdoniuw1rtf") %>
   <%= image_meta_tags(
-    base_url: request.base_url,
-    image_path: @front_matter&.dig("image"),
+    image_path: @front_matter["image"] || @front_matter["meta_image"],
     alt: "Photograph of teaching taking place in a classroom"
   ) %>
 </head>

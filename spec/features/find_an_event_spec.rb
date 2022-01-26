@@ -3,9 +3,10 @@ require "rails_helper"
 RSpec.feature "Finding an event", type: :feature do
   include_context "with stubbed types api"
 
+  let(:beginning_of_month) { Time.zone.today.at_beginning_of_month }
   let(:events) do
     11.times.collect do |index|
-      start_at = Time.zone.today.at_beginning_of_month + index.days
+      start_at = beginning_of_month + index.days
       build(:event_api, name: "Event #{index + 1}", start_at: start_at)
     end
   end
@@ -18,6 +19,12 @@ RSpec.feature "Finding an event", type: :feature do
       receive(:search_teaching_events_grouped_by_type) { events_by_type }
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event) { event }
+  end
+
+  around do |example|
+    travel_to(beginning_of_month) do
+      example.run
+    end
   end
 
   scenario "Landing on the find an event page and searching" do

@@ -1,32 +1,38 @@
-.blog {
-  .pagination {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2 * $indent-amount;
+@mixin blog-article {
+  @include mq($from: tablet) {
+    > div {
+      display: flex;
 
-    a {
-      text-decoration: none;
-    }
+      header {
+        flex-grow: 1;
+      }
 
-    .prev, .first {
-      padding-right: 8px;
-    }
-
-    .next, .last {
-      padding-left: 8px;
-    }
-
-    .page a, .current, .gap {
-      padding: 0 8px;
-    }
-
-    .current {
-      font-weight: bold;
+      img {
+        width: 170px;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        object-position: center;
+      }
     }
   }
 
+  header {
+    h2 {
+      padding: 0;
+      margin-bottom: 0;
+    }
+
+    .published-date {
+      margin-top: $indent-amount;
+    }
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.blog {
   header
   {
     h1 {
@@ -42,7 +48,6 @@
 
   ol {
     padding-left: 0;
-    list-style: none;
   }
 
   aside {
@@ -60,8 +65,12 @@
       margin-bottom: $indent-amount;
     }
 
-    .blog-highlights li {
-      margin-top: .4em;
+    .blog-highlights {
+      list-style: none;
+
+      li {
+        margin-top: .4em;
+      }
     }
   }
 
@@ -71,6 +80,7 @@
     grid-gap: .8em;
     gap: .8em;
     margin: 0;
+    list-style: none;
 
     li {
       background-color: $grey;
@@ -85,40 +95,32 @@
 
   .blog-index {
     margin-top: 0;
+    list-style: none;
+
+    li > .blog-article {
+      @include blog-article;
+    }
 
     li:last-child hr {
       display: none;
     }
   }
 
-  .blog-article {
-    @include mq($from: tablet) {
-      > div {
-        display: flex;
+  > .blog-article {
+    @include blog-article;
 
-        header {
-          flex-grow: 1;
-        }
-
-        img {
-          width: 170px;
-        }
-      }
-    }
-
-    header {
-      h2 {
-        padding: 0;
-        margin-bottom: 0;
-      }
-
-      .published-date {
-        margin-top: $indent-amount;
-      }
+    > p:last-of-type {
+      border-left: .4em solid $grey-mid;
+      padding: .5em 0 .5em 1em;
+      margin-top: 2.5em;
     }
 
     img {
-      width: 100%;
+      aspect-ratio: 4 / 3;
+      max-width: 100%;
+      object-position: center;
+      width: fit-content;
+      object-fit: cover;
     }
   }
 

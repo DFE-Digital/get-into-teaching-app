@@ -5,8 +5,8 @@ RSpec.feature "Book a callback", type: :feature do
 
   let(:quota) do
     GetIntoTeachingApiClient::CallbackBookingQuota.new(
-      startAt: DateTime.new(2099, 6, 1, 10),
-      endAt: DateTime.new(2099, 6, 1, 11),
+      start_at: Time.zone.local(2099, 6, 1, 10),
+      end_at: Time.zone.local(2099, 6, 1, 11),
     )
   end
 
@@ -34,7 +34,7 @@ RSpec.feature "Book a callback", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token)
 
-    response = GetIntoTeachingApiClient::GetIntoTeachingCallback.new(addressTelephone: "123456789")
+    response = GetIntoTeachingApiClient::GetIntoTeachingCallback.new(address_telephone: "123456789")
     allow_any_instance_of(GetIntoTeachingApiClient::GetIntoTeachingApi).to \
       receive(:exchange_access_token_for_get_into_teaching_callback).with("123456", anything) { response }
 
@@ -44,14 +44,14 @@ RSpec.feature "Book a callback", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to email@address.com", with: "123456"
+    expect(page).to have_text "You're already registered with us"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Choose a time for your callback"
     expect(find_field("Phone number").value).to eq(response.address_telephone)
     # Select time in local time zone (London)
-    select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
+    select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"
     click_on "Next step"
 
     expect(page).to have_text "Tell us what you’d like to talk to us about"
@@ -94,16 +94,16 @@ RSpec.feature "Book a callback", type: :feature do
     fill_in_personal_details_step
     click_on "Next step"
 
-    expect(page).to have_text "Verify your email address"
-    fill_in "Check your email and enter the verification code sent to email@address.com", with: "654321"
+    expect(page).to have_text "You're already registered with us"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "654321"
     click_on "Next step"
 
     expect(page).to have_text "Please enter the latest verification code"
 
-    click_link "resend verification"
-    expect(page).to have_text "We've sent you another email."
+    click_link "Send another code to verify my details."
+    expect(page).to have_text "We've sent you another email"
 
-    fill_in "Check your email and enter the verification code sent to email@address.com", with: "123456"
+    fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
     expect(page).to have_text "Choose a time for your callback"
@@ -114,7 +114,7 @@ RSpec.feature "Book a callback", type: :feature do
     expect(page).to have_text "Enter a valid phone number"
     fill_in "Phone number", with: "123456789"
     # Select time in local time zone (London)
-    select "11:00 am - 12:00 pm", from: "Select your preferred day and time for a callback"
+    select "11:00am to 12:00pm", from: "Select your preferred day and time for a callback"
     click_on "Next step"
 
     expect(page).to have_text "Tell us what you’d like to talk to us about"

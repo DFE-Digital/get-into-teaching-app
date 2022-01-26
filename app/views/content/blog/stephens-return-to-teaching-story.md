@@ -6,7 +6,6 @@ images:
   stephen:
     path: "media/images/content/blog/stephen.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/stephen.jpg"
-    alt: "Returning maths teacher and Methodist Minister Stephen, in the school library"
 description: |-
   Stephen gave up a 20-year career as a secondary maths teacher to pursue a call into full time Methodist Ministry. However, his love of maths never left him and 12 years later he returned to teaching part-time.
 keywords:
@@ -55,4 +54,4 @@ Every teaching day I come home grinning ear to ear! I am loving the work. I am i
 
 Absolutely, crack on and apply. It’s the most exhausting and rewarding job in the world.
 
-_If you are considering a return to teaching, find out more about [the resources available to support your return](/returning-to-teaching)._
+If you are considering a return to teaching, find out more about [the resources available to support your return](/returning-to-teaching).

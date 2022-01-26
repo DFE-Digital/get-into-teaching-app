@@ -7,6 +7,7 @@
 
 @import 'icons';
 @import 'breakpoints';
+@import 'google-optimize';
 @import 'font-sizes';
 @import 'utility';
 @import 'text';
@@ -31,7 +32,11 @@
 @import 'steps';
 @import 'ways-to-train';
 @import 'blog';
+@import 'badges';
 @import 'welcome-guide';
+@import 'urgent-call-for-qualified-teachers';
+
+@import 'subject-specific';
 
 @import './sections/hero';
 @import './sections/hero/content';
@@ -41,18 +46,20 @@
 @import './components/aspect-ratio';
 @import './components/breadcrumb';
 @import './components/cards';
+@import './components/chat';
 @import './components/event-box';
 @import './components/content-cta';
 @import './components/content-alert';
 @import './components/feature-table';
 @import './components/link-block';
+@import './components/pagination';
 @import './components/quote';
 @import './components/search';
 @import './components/colored-stripe';
 @import './components/type-description';
 @import './components/events/no-results';
 @import './components/events/signup-info';
-@import './components/turbolinks-progress-bar';
+@import './components/turbo-progress-bar';
 @import './components/grouped-cards';
 
 @import './campaigns/numbered-headings';

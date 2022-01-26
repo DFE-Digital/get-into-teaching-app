@@ -2,7 +2,7 @@ require "better_html"
 require "better_html/better_erb/erubi_implementation"
 require "rails_helper"
 
-describe "ERB Implementation Check" do # rubocop:disable RSpec/DescribeClass
+describe "ERB Implementation Check" do
   erb_glob = Rails.root.join(
     "app/views/**/{*.htm,*.html,*.htm.erb,*.html.erb,*.html+*.erb}",
   )

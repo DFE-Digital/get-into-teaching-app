@@ -1,5 +1,13 @@
 require "rails_helper"
 
+module CallsToAction
+  class WithWhiteSpaceComponent < ViewComponent::Base
+    def call
+      "  text  "
+    end
+  end
+end
+
 describe TemplateHandlers::Markdown, type: :view do
   subject { rendered }
 
@@ -120,7 +128,7 @@ describe TemplateHandlers::Markdown, type: :view do
 
         All prices include VAT unless marked as exVAT
 
-        Find out more about <span id="vat" title="VAT">VAT</a>
+        Find out more about <span id="vat" title="VAT">VAT</span>
       MARKDOWN
     end
 
@@ -129,13 +137,8 @@ describe TemplateHandlers::Markdown, type: :view do
       render template: "frontmatter"
     end
 
-    it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
+    it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT", count: 1 }
     it { is_expected.to match "exVAT" } # check it honours word boundaries
-
-    it do
-      is_expected.to have_css \
-        "span[title=\"VAT\"] abbr[title=\"Value added tax\"]", text: "VAT"
-    end
   end
 
   describe "global frontmatter" do
@@ -226,6 +229,24 @@ describe TemplateHandlers::Markdown, type: :view do
     specify "unregistered calls to action should be omitted" do
       expect(rendered).not_to have_content(/one-that-does-not-exist/)
     end
+
+    context "when the rich content has surrounding white space" do
+      let(:front_matter_with_calls_to_action) do
+        {
+          "title": "Page with rich content (calls to action)",
+          "calls_to_action" => {
+            "big-warning" => "with_white_space",
+            "small-warning" => "with_white_space",
+          },
+        }
+      end
+
+      it "strips the white space" do
+        rendered_component = CallsToAction::WithWhiteSpaceComponent.new.call
+        expect(rendered).to include(rendered_component.strip)
+        expect(rendered).not_to include(rendered_component)
+      end
+    end
   end
 
   describe "injecting images" do
@@ -233,8 +254,8 @@ describe TemplateHandlers::Markdown, type: :view do
       {
         "title": "Page with images",
         "images" => {
-          "black" => { "path" => "media/images/dfelogo-black.svg", "other_attr" => "ignore", "alt" => "Dark" },
-          "white" => { "path" => "media/images/dfelogo-white.svg", "other_attr" => "ignore", "alt" => "Light" },
+          "first" => { "path" => "media/images/content/hero-images/0001.jpg", "other_attr" => "ignore" },
+          "second" => { "path" => "media/images/content/hero-images/0002.jpg", "other_attr" => "ignore" },
         },
       }
     end
@@ -243,11 +264,11 @@ describe TemplateHandlers::Markdown, type: :view do
       <<~MARKDOWN
         # Some page
 
-        $black$
+        $first$
 
         Donec in leo enim. Mauris aliquet nulla dolor
 
-        $white$
+        $second$
       MARKDOWN
     end
 
@@ -260,10 +281,11 @@ describe TemplateHandlers::Markdown, type: :view do
     specify "the rendered output contains the specified images" do
       expect(rendered).to have_css("img", count: 2)
 
-      %w[black white].each do |colour|
+      %w[0001 0002].each do |photo|
         expect(rendered).to have_css("img")
-        expect(rendered).to match(%r{src\=\"/packs-test/v1/media/images/dfelogo-#{colour}-.*.svg\"})
-        expect(rendered).to have_css(%(img[alt="#{front_matter_with_images.dig('images', colour, 'alt')}"]))
+        expect(rendered).to match(%r{src="/packs-test/v1/media/images/content/hero-images/#{photo}-.*.jpg"})
+        key = Image.new.alt("media/images/content/hero-images/#{photo}.jpg")
+        expect(rendered).to have_css(%(img[alt="#{key}"]))
       end
     end
   end

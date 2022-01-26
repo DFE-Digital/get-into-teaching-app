@@ -21,7 +21,7 @@
 
               <%= tag.div(class: input_field_classes(:postcode), data: { "conditional-field-target": "showhide" }) do %>
                 <%= f.label :postcode, "Postcode" %>
-                <%= f.text_field :postcode %>
+                <%= f.text_field :postcode, autocomplete: "postal-code" %>
               <% end %>
 
               <%= tag.div(class: input_field_classes(:month)) do %>

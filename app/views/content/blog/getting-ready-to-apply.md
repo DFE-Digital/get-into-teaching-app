@@ -6,7 +6,6 @@ images:
   notepad:
     path: "media/images/content/blog/notepad.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/notepad.jpg"
-    alt: "Someone making notes with a pen on a pad while using a laptop"
 description: |-
   Applications for teacher training courses starting in 2022 open on 12 October, but there is plenty you can be doing right now to get ready.
 keywords:
@@ -25,6 +24,7 @@ tags:
   - train to teach events
   - applications
   - references
+closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $notepad$
@@ -54,7 +54,7 @@ An experienced teaching professional can help if you're ready to get into teachi
 
 ## 4. Research training courses
 
-From 5 October 2021, search for training courses by using the Department for Education’s [Find postgraduate teacher training service](https://www.find-postgraduate-teacher-training.service.gov.uk/). You can search by location, training provider and subject to find the course best suited to you.
+[Find postgraduate teacher training.](https://www.find-postgraduate-teacher-training.service.gov.uk/). You can search by location, training provider and subject to find the course best suited to you.
 
 ## 5. Reflect on (or get some) school experience
 

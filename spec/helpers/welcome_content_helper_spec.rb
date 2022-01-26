@@ -3,20 +3,25 @@ require "rails_helper"
 RSpec.describe WelcomeContentHelper, type: :helper do
   describe "#subject_specific_story_data" do
     {
-      "a42655a1-2afa-e811-a981-000d3a276620" => "Dimitra", # meths
-      "942655a1-2afa-e811-a981-000d3a276620" => "Laura",   # english
-      "802655a1-2afa-e811-a981-000d3a276620" => "Holly",   # science
-      "962655a1-2afa-e811-a981-000d3a276620" => "Tom",     # mfl
-      "aaaaaaaa-bbbb-cccc-dddd-eeeeeeeeeeee" => "Abigail", # generic
-    }.each do |input, output|
+      maths: "Dimitra",
+      english: "Laura",
+      biology: "Holly",
+      french: "Tom",
+    }.each do |key, name|
       specify "returns the right content for each subject category" do
-        expect(subject_specific_story_data(input).fetch(:name)).to eql(output)
+        uuid = TeachingSubject.lookup_by_key(key)
+        expect(subject_specific_story_data(uuid).fetch(:name)).to eql(name)
       end
+    end
+
+    specify "returns the generic content when the subject is not recognised" do
+      uuid = "00000000-0000-0000-0000-000000000000"
+      expect(subject_specific_story_data(uuid).fetch(:name)).to eql("Abigail")
     end
   end
 
   describe "#subject_category" do
-    let(:id) { "942655a1-2afa-e811-a981-000d3a276620" }
+    let(:id) { TeachingSubject.lookup_by_key(:english) }
 
     specify "returns the subject's category in lower case" do
       expect(subject_category(id)).to eql("english")
@@ -31,13 +36,29 @@ RSpec.describe WelcomeContentHelper, type: :helper do
 
   describe "#subject_specific_video_path" do
     specify "returns the given path for the matching subject" do
-      expect(subject_specific_video_path("ac2655a1-2afa-e811-a981-000d3a276620")).to eql("/videos/welcome-guide-science.webm")
+      physics_uuid = TeachingSubject.lookup_by_key(:physics)
+      expect(subject_specific_video_path(physics_uuid)).to eql("/videos/welcome-guide-science.webm")
     end
 
     context "when the path is overridden" do
       specify "returns the given path for the matching subject" do
-        expect(subject_specific_video_path("962655a1-2afa-e811-a981-000d3a276620", prefix: "/blockbusters/")).to eql("/blockbusters/welcome-guide-mfl.webm")
+        french_uuid = TeachingSubject.lookup_by_key(:french)
+        expect(subject_specific_video_path(french_uuid, prefix: "/blockbusters/")).to eql("/blockbusters/welcome-guide-mfl.webm")
       end
+    end
+  end
+
+  describe "#is_featured_subject?" do
+    context "when the subject has a mapping" do
+      subject { featured_subject?(TeachingSubject.lookup_by_key(:physics)) }
+
+      specify { expect(subject).to be(true) }
+    end
+
+    context "when the subject has no mapping" do
+      subject { featured_subject?(TeachingSubject.lookup_by_key(:music)) }
+
+      specify { expect(subject).to be(false) }
     end
   end
 end

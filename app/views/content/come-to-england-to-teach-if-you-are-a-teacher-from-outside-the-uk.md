@@ -123,6 +123,7 @@ There are [specific salary requirements for a skilled worker visa](https://www.g
 
 [Read other teachers’ stories](/my-story-into-teaching) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
-### Get support
+### Contact
+The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.
 
-Get in touch with the international teacher recruitment team at international.teacherrecruitment@education.gov.uk. We aim to respond within 5 working days.   
+However, for help with the information on this page, you can email us at international.teacherrecruitment@education.gov.uk.  

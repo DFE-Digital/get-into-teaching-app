@@ -122,14 +122,14 @@ Rails.application.configure do
   #
   # The rails_semantic_logger gem overwrites the log initializer code and by
   # this point its too late to monkey patch that
-  STDOUT.sync = true
+  $stdout.sync = true
   SemanticLogger.application = ENV["SEMANTIC_LOGGER_APP"].presence || "Get into Teaching App"
   config.rails_semantic_logger.started = false
   config.rails_semantic_logger.processing = false
   config.rails_semantic_logger.format = :json
   config.rails_semantic_logger.add_file_appender = false
   config.semantic_logger.add_appender \
-    io: STDOUT,
+    io: $stdout,
     level: Rails.application.config.log_level,
     formatter: config.rails_semantic_logger.format
 
@@ -139,8 +139,6 @@ Rails.application.configure do
   config.x.structured_data.breadcrumb_list = true
   config.x.structured_data.event = true
   config.x.structured_data.how_to = false
-
-  config.x.legacy_tracking_pixels = true
 
   config.x.covid_banner = false
 
