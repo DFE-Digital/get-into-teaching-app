@@ -9,8 +9,6 @@ export default class GoogleOptimize {
   }
 
   init() {
-    this.applyRedirectExperimentFix();
-
     if (this.canExperiment()) {
       this.initGoogleOptimize();
     }
@@ -42,17 +40,6 @@ export default class GoogleOptimize {
       'turbolinks:before-visit',
       this.turbolinksBeforeVisitHandler
     );
-  }
-
-  applyRedirectExperimentFix() {
-    // Google Optimize drops a cookie for 5 seconds that prevents it redirecting
-    // again. This is designed to avoid redirect loops, however it means if a user
-    // navigates to a redirect experiment twice in quick succession they don't get
-    // redirected the second time (and can end up seeing the control instead of the
-    // variant). Manually removing this cookie prevents that happening, but will
-    // leave us vulnerable to redirect loops if we don't set up experiments correctly;
-    // as we run few experiments this seems like the lesser of two evils.
-    CookiePreferences.clearCookie('_gaexp_rc');
   }
 
   initGoogleOptimize() {

@@ -41,16 +41,11 @@ describe('Google Optimize', () => {
     document.dispatchEvent(event);
   };
 
-  const setGoogleOptimizeRedirectLoopCookie = () => {
-    Cookies.set('_gaexp_rc', '1');
-  };
-
   beforeEach(() => {
     jest.useFakeTimers();
     clearCookies();
     setupHtml();
     mockWindowLocation();
-    setGoogleOptimizeRedirectLoopCookie();
   });
 
   afterEach(() => {
@@ -65,10 +60,6 @@ describe('Google Optimize', () => {
   describe('when cookies have not yet been accepted', () => {
     describe('when on an experiment path', () => {
       beforeEach(() => run(experimentPath));
-
-      it('clears the _gaexp_rc cookie', () => {
-        expect(Cookies.get('_gaexp_rc')).toBeUndefined();
-      });
 
       it('blurs the cookie acceptance background to obscure the content', () => {
         expect(
@@ -98,10 +89,6 @@ describe('Google Optimize', () => {
 
     describe('when not on an experiment path', () => {
       beforeEach(() => run('/no-experiment'));
-
-      it('clears the _gaexp_rc cookie', () => {
-        expect(Cookies.get('_gaexp_rc')).toBeUndefined();
-      });
 
       it('does not blur the cookie acceptance background', () => {
         expect(
@@ -142,10 +129,6 @@ describe('Google Optimize', () => {
     describe('when on an experiment path', () => {
       beforeEach(() => run(experimentPath));
 
-      it('clears the _gaexp_rc cookie', () => {
-        expect(Cookies.get('_gaexp_rc')).toBeUndefined();
-      });
-
       it('does not blur the cookie acceptance background', () => {
         expect(
           document.querySelector('.cookie-acceptance .dialog__background')
@@ -174,10 +157,6 @@ describe('Google Optimize', () => {
 
     describe('when not on an experiment path', () => {
       beforeEach(() => run('/no-experiment'));
-
-      it('clears the _gaexp_rc cookie', () => {
-        expect(Cookies.get('_gaexp_rc')).toBeUndefined();
-      });
 
       it('does not append the Google Optimize script to the head', () => {
         expect(
@@ -220,10 +199,6 @@ describe('Google Optimize', () => {
 
     describe('when on an experiment path', () => {
       beforeEach(() => run(experimentPath));
-
-      it('clears the _gaexp_rc cookie', () => {
-        expect(Cookies.get('_gaexp_rc')).toBeUndefined();
-      });
 
       it('does not blur the cookie acceptance background', () => {
         expect(
