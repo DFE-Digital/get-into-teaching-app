@@ -15,7 +15,7 @@ export default class GoogleOptimize {
       this.initGoogleOptimize();
     }
 
-    this.listenForTurbolinksBeforeVisit();
+    this.listenForTurboBeforeVisit();
     this.listenForConsentChange();
 
     if (!this.seenCookieDialog && this.isExperimentPath()) {
@@ -39,8 +39,8 @@ export default class GoogleOptimize {
     );
 
     document.removeEventListener(
-      'turbolinks:before-visit',
-      this.turbolinksBeforeVisitHandler
+      'turbo:before-visit',
+      this.turboBeforeVisitHandler
     );
   }
 
@@ -119,24 +119,23 @@ export default class GoogleOptimize {
     }
   }
 
-  handleTurbolinksBeforeVisit(event) {
-    const path = new URL(event.data.url).pathname;
+  handleTurboBeforeVisit(event) {
+    const path = new URL(event.detail.url).pathname;
 
     if (this.canExperiment(path)) {
-      // Cancel Turbolinks page change.
+      // Cancel Turbo page change.
       event.preventDefault();
       // Force a full page reload to initialize the optimize script
       // and serve the correct variant.
-      window.location.href = event.data.url;
+      window.location.href = event.detail.url;
     }
   }
 
-  listenForTurbolinksBeforeVisit() {
-    this.turbolinksBeforeVisitHandler =
-      this.handleTurbolinksBeforeVisit.bind(this);
+  listenForTurboBeforeVisit() {
+    this.turboBeforeVisitHandler = this.handleTurboBeforeVisit.bind(this);
     document.addEventListener(
-      'turbolinks:before-visit',
-      this.turbolinksBeforeVisitHandler
+      'turbo:before-visit',
+      this.turboBeforeVisitHandler
     );
   }
 
