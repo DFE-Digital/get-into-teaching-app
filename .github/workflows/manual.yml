@@ -32,33 +32,21 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: ACTIONS-API-ACCESS-TOKEN
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        id:  keyvault-yaml-secret
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: ACTIONS-API-ACCESS-TOKEN
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: SLACK-WEBHOOK
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: SLACK-WEBHOOK
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: SLACK-RELEASE-NOTE-WEBHOOK
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: SLACK-RELEASE-NOTE-WEBHOOK
+          secret: INFRA-KEYS
+          key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK, SLACK-RELEASE-NOTE-WEBHOOK
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Get Release Id from Tag
         id: tag_id
         uses: DFE-Digital/github-actions/DraftReleaseByTag@master
         with:
           TAG: ${{ github.event.inputs.tag }}
-          TOKEN: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
+          TOKEN: ${{ steps.keyvault-yaml-secret.outputs.ACTIONS-API-ACCESS-TOKEN }}
 
       - name: Check if found
         if: steps.tag_id.outputs.release_id == ''
@@ -75,6 +63,7 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Slack Release Notification
         if: steps.tag_id.outputs.release_id && github.event.inputs.environment == 'Production'
@@ -83,7 +72,7 @@ jobs:
           SLACK_COLOR: ${{env.SLACK_SUCCESS}}
           SLACK_TITLE: "Release Published to ${{github.event.inputs.environment}}: ${{steps.tag_id.outputs.release_name}}"
           SLACK_MESSAGE: ${{ fromJson( steps.tag_id.outputs.release_body) }}
-          SLACK_WEBHOOK: ${{ steps.SLACK-RELEASE-NOTE-WEBHOOK.outputs.secret-value }}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-RELEASE-NOTE-WEBHOOK }}
           MSG_MINIMAL: true
 
       - name: Slack Notification
@@ -93,4 +82,4 @@ jobs:
           SLACK_COLOR: ${{env.SLACK_FAILURE}}
           SLACK_TITLE: "Manual Release Failed: ${{steps.tag_id.outputs.release_name}}"
           SLACK_MESSAGE: Failure deploying ${{github.event.inputs.environment}} release
-          SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}
+          SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}

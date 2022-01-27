@@ -16,6 +16,8 @@ inputs:
         required: true
       ARM_ACCESS_KEY:
         required: true
+      GITHUB_TOKEN:
+        required: true
 
 runs:
     using: composite
@@ -102,26 +104,14 @@ runs:
                  echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
              fi
 
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: HTTP-USERNAME
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        id:  keyvault-yaml-secret
         with:
           keyvault: ${{ inputs.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: HTTP-USERNAME 
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: HTTP-PASSWORD
-        with:
-          keyvault: ${{ inputs.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: HTTP-PASSWORD 
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: LOGIT-API
-        with:
-          keyvault: ${{ inputs.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: LOGIT-API
+          secret: INFRA-KEYS
+          key: HTTP-USERNAME, HTTP-PASSWORD, LOGIT-API 
+        env:
+          GITHUB_TOKEN: ${{inputs.GITHUB_TOKEN}}
 
       - uses: hashicorp/setup-terraform@v1.3.2
         with:
@@ -146,14 +136,14 @@ runs:
                    tests/confidence/healthcheck.sh  "${{steps.variables.outputs.healthcheck}}"  "sha-${{ steps.sha.outputs.short }}"
             fi
         env:
-          HTTPAUTH_PASSWORD: ${{ steps.HTTP-PASSWORD.outputs.secret-value }}
-          HTTPAUTH_USERNAME: ${{ steps.HTTP-USERNAME.outputs.secret-value }}
+          HTTPAUTH_PASSWORD: ${{ steps.keyvault-yaml-secret.outputs.HTTP-PASSWORD }}
+          HTTPAUTH_USERNAME: ${{ steps.keyvault-yaml-secret.outputs.HTTP-USERNAME }}
 
       - name: Log Deployment
         if: always()
         uses: DFE-Digital/github-actions/SendToLogit@master
         with:
-           LOGIT-API-KEY: ${{ steps.LOGIT-API.outputs.secret-value }}
+           LOGIT-API-KEY: ${{ steps.keyvault-yaml-secret.outputs.LOGIT-API }}
            logtype: "github"
            JSON: |
                 '{"Application" : "${{env.PAAS_APPLICATION_NAME}}", 

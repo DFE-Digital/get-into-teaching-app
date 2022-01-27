@@ -14,24 +14,19 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: TRELLO-KEY
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        id:  keyvault-yaml-secret
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: TRELLO-KEY
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: TRELLO-TOKEN
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: TRELLO-TOKEN
+          secret: INFRA-KEYS
+          key: TRELLO-KEY , TRELLO-TOKEN
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Add Trello Comment 
         uses: DFE-Digital/github-actions/AddTrelloComment@master
         with:
           MESSAGE:      ${{ github.event.pull_request.html_url }} 
           CARD:         "${{ github.event.pull_request.body }}"           
-          TRELLO-KEY:   ${{ steps.TRELLO-KEY.outputs.secret-value }}
-          TRELLO-TOKEN: ${{ steps.TRELLO-TOKEN.outputs.secret-value }}
+          TRELLO-KEY:   ${{ steps.keyvault-yaml-secret.outputs.TRELLO-KEY }}
+          TRELLO-TOKEN: ${{ steps.keyvault-yaml-secret.outputs.TRELLO-TOKEN }}

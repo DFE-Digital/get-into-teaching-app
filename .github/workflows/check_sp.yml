@@ -53,13 +53,15 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
         if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
-        id: SLACK-WEBHOOK
+        id:  keyvault-yaml-secret
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: SLACK-WEBHOOK
+          secret: INFRA-KEYS
+          key: SLACK-WEBHOOK
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Slack Notification
         if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
@@ -72,4 +74,4 @@ jobs:
                          key ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Name }} is due to
                          expires in ${{fromJson(steps.pwsh_check_expire.outputs.json_data).data.ExpiresDays}} days
                          Please follow the process in https://dfe-technical-guidance.london.cloudapps.digital/how-to/security/managing-secrets/#access-key-expiration to renew.
-           SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}
+           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
