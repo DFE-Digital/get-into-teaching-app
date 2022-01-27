@@ -30,7 +30,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check ${{ steps.serviceprinciple.outputs.name }}
-        uses: DFE-Digital/github-actions/CheckServicePrincipal@SP-FIX
+        uses: DFE-Digital/github-actions/CheckServicePrincipal@master
         id: pwsh_check_expire
         with:
             AzureCredentials: ${{ secrets.AZURE_CREDENTIALS }}
