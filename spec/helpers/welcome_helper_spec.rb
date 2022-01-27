@@ -22,13 +22,13 @@ RSpec.describe WelcomeHelper, type: :helper do
     context "when degree_status is second year" do
       let(:second_year) { OptionSet.lookup_by_key(:degree_status, :second_year) }
 
-      it { expect(show_welcome_guide?(second_year)).to be false }
+      it { expect(show_welcome_guide?(degree_status: second_year)).to be false }
     end
 
     context "when degree_status is final year" do
       let(:final_year) { OptionSet.lookup_by_key(:degree_status, :final_year) }
 
-      it { expect(show_welcome_guide?(final_year)).to be true }
+      it { expect(show_welcome_guide?(degree_status: final_year)).to be true }
     end
 
     context "when degree_status is 'graduate or postgraduate'" do
@@ -37,19 +37,19 @@ RSpec.describe WelcomeHelper, type: :helper do
       context "when consideration journey stage is 'it's just an idea'" do
         let(:just_an_idea) { OptionSet.lookup_by_key(:consideration_journey_stage, :it_s_just_an_idea) }
 
-        it { expect(show_welcome_guide?(graduate, just_an_idea)).to be true }
+        it { expect(show_welcome_guide?(degree_status: graduate, consideration_journey_stage: just_an_idea)).to be true }
       end
 
       context "when consideration journey stage is 'I’m not sure and finding out more'" do
         let(:finding_out_more) { OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_not_sure_and_finding_out_more) }
 
-        it { expect(show_welcome_guide?(graduate, finding_out_more)).to be true }
+        it { expect(show_welcome_guide?(degree_status: graduate, consideration_journey_stage: finding_out_more)).to be true }
       end
 
       context "when consideration journey stage is 'I’m fairly sure and exploring my options'" do
         let(:fairly_sure) { OptionSet.lookup_by_key(:consideration_journey_stage, :i_m_fairly_sure_and_exploring_my_options) }
 
-        it { expect(show_welcome_guide?(graduate, fairly_sure)).to be false }
+        it { expect(show_welcome_guide?(degree_status: graduate, consideration_journey_stage: fairly_sure)).to be false }
       end
     end
   end

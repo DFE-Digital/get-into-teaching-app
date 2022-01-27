@@ -1,5 +1,5 @@
 module WelcomeHelper
-  def show_welcome_guide?(degree_status = degree_status_id, consideration_journey_stage = consideration_journey_stage_id)
+  def show_welcome_guide?(degree_status: degree_status_id, consideration_journey_stage: consideration_journey_stage_id)
     gradudate_or_postgraduate = OptionSet.lookup_by_keys(:degree_status, :graduate_or_postgraduate)
     allowed_graduate_consideration_stages = OptionSet.lookup_by_keys(
       :consideration_journey_stage,
