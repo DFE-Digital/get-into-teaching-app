@@ -29,8 +29,6 @@ learn more.
 
 ### Contact us for help
 
-[Download our information pack](https://drive.google.com/file/d/1OP89ZGelBLU_T3ds4c-BFeMzyhA4OpBK/view?usp=sharing).
-
 Sign up for one of our [online events to support returners](/events).
 
 Email us at international.teacherrecruitment@education.gov.uk
