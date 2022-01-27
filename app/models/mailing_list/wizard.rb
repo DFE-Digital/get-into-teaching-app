@@ -68,8 +68,8 @@ module MailingList
       export = export_data.slice(*attributes.map(&:to_s))
 
       show_welcome_guide = ApplicationController.helpers.show_welcome_guide?(
-        export["degree_status_id"],
-        export["preferred_teaching_subject_id"],
+        degree_status: export["degree_status_id"],
+        consideration_journey_stage: export["consideration_journey_stage_id"],
       )
 
       return export unless show_welcome_guide
