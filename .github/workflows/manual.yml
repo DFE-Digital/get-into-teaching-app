@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       environment:
-        description: Development/Test/Production/Speed/UR
+        description: Environment
         required: true
         type: environment
       tag:
@@ -66,29 +66,15 @@ jobs:
              echo "::error ::Tag ${{ github.event.inputs.tag }} cannot be found in releases"
              exit 1
 
-      - name: Trigger Deployment to ${{github.event.inputs.environment}}
-        uses: benc-uk/workflow-dispatch@v1.1
+      - name: Deploy to Development
+        uses: ./.github/workflows/actions/deploy
+        id: deploy
         with:
-          workflow: Deploy to PaaS
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          inputs: '{"environment": "${{github.event.inputs.environment}}" , "sha": "${{steps.tag_id.outputs.release_sha}}"  }'
-          ref: "${{github.ref}}"
-
-      - name: Wait for Deployment to ${{github.event.inputs.environment}}
-        uses: fountainhead/action-wait-for-check@v1.0.0
-        id: wait-for-deploy
-        with:
-          token: ${{ steps.ACTIONS-API-ACCESS-TOKEN.outputs.secret-value }}
-          checkName: Deploy ${{github.event.inputs.environment}}
-          ref: "${{github.ref}}"
-
-      - name: Check if ${{github.event.inputs.environment}} Deployment has returned with a failure
-        if: steps.wait-for-deploy.outputs.conclusion == 'failure'
-        run: exit 1
-
-      - name: Check if ${{github.event.inputs.environment}} Deployment has returned with a time out
-        if: steps.wait-for-deploy.outputs.conclusion == 'timed_out'
-        run: exit 1
+          environment: ${{ github.event.inputs.environment }}
+          sha:  ${{ steps.tag_id.outputs.release_sha }}
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
 
       - name: Slack Release Notification
         if: steps.tag_id.outputs.release_id && github.event.inputs.environment == 'Production'
