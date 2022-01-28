@@ -75,8 +75,6 @@ iQTS is for you if:
 
 * you have some experience teaching, and would benefit from training and mentoring leading to a professional teaching qualification equivalent to QTS
 
-* you wish to teach in England, and you have a qualification (for example, an iPGCE, PGCE or PGDE) that does not allow you to teach in all schools in England
-
 * you are already a teacher, and you wish to develop professionally and enhance your global employability with an internationally recognised teaching qualification
 
 * you are already a teacher, and would benefit from a professional teaching qualification allowing you to teach in all schools in England
