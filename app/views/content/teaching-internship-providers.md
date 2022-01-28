@@ -1,8 +1,7 @@
 ---
-title: Maths and physics teaching internships
+title: Teaching internships
 description: |-
-  A number of accredited providers have been approved to offer Teaching
-  Internships. You can find them listed on this page.
+  Find teaching internships to gain new skills and see what classroom life is like for £300 per week. Explore languages, computing, maths and physics internships.
 date: "2021-04-14"
 image: false
 backlink: /
