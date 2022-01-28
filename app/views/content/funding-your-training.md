@@ -121,11 +121,11 @@ You’ll need a bachelor's degree, class 2:2 (honours) or higher, a PhD or a mas
 
 [Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023).
 
-For a scholarship, each professional scholarship body sets its own criteria. These bodies include:
+You can apply for a scholarship to help pay for your teacher training course. The scholarships are offered by independent institutions. Each institution has their own eligibility criteria:
 
 * the [Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
 * [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
-* the [Institute of Mathematics and its Applications](http://teachingmathsscholars.org/home) (maths)
+* the [Institute of Mathematics and its Applications](http://teachingmathsscholars.org/about) (maths)
 * the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
 
 ### Check which subjects have bursaries and scholarships
