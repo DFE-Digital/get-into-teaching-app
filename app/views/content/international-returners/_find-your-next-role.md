@@ -14,7 +14,3 @@ and set up your job alerts.
 Schools and heads in England recognise the value of your overseas experience.
 Due to the COVID-19 pandemic, they are also increasingly familiar and
 comfortable with remote recruitment and assessment.
-
-[Download our information pack](https://drive.google.com/file/d/1OP89ZGelBLU_T3ds4c-BFeMzyhA4OpBK/view?usp=sharing)
-for lots of helpful hints and tips about preparing your application and getting
-ready for an interview.

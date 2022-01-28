@@ -17,8 +17,6 @@ accordion:
   content_after_accordion:
     partial: content/international-returners/after-accordion
   steps:
-    Download our information pack:
-      partial: content/international-returners/download-info-pack
     Check your qualifications:
       partial: content/international-returners/check-your-qualifications
     Find your next role:
@@ -76,9 +74,6 @@ to learn how we can support your journey to the UK.
 
 ### Return to teaching success stories
 
-Read [inspiring case studies](/my-story-into-teaching/international-career-changers)
-and [access the slides from our recent webinar](https://drive.google.com/file/d/1kqQPsjW45JjXgBA6A5KnxyTU_RHstzG8/view?usp=sharing)
-which included a live Q&A with a headteacher who has successfully made the move
-back home.
+Read [inspiring case studies from returning teachers](/my-story-into-teaching/international-career-changers).
 
 ## Return to teach in England: step by step
