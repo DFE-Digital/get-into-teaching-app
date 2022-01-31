@@ -23,10 +23,6 @@
 
 <p>To have the best chance of succeeding in your application, you can <a href="/teacher-training-advisers">get an adviser</a>. They offer one-to-one support, and are all experienced teachers.</p>
 
-<% if false %>
-  <!--  Commented out until next cycle in 2022 --->
-
-  <section>
-    <%= render GroupedCards::ListingComponent.new @front_matter["providers"] %>
-  </section>
-<% end %>
+<section>
+  <%= render GroupedCards::ListingComponent.new @front_matter["providers"] %>
+</section>
