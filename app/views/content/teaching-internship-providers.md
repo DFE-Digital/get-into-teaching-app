@@ -4,6 +4,7 @@ description: |-
   Find teaching internships to gain new skills and see what classroom life is like for £300 per week. Explore languages, computing, maths and physics internships.
 date: "2021-04-14"
 image: false
+article_classes: ['longform']
 backlink: /
 fullwidth: true
 content:
