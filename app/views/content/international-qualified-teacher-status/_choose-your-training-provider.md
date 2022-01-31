@@ -2,12 +2,12 @@ iQTS is currently offered by the following training providers:
 
 * [e-Qualitas](https://www.e-qualitas.co.uk/)
 * [Sheffield Hallam University](https://www.shu.ac.uk/)
+* [The University of Birmingham Dubai](https://www.birmingham.ac.uk/dubai/index.aspx)
+* [The University of Derby](https://www.derby.ac.uk/)
+* [The University of Sunderland](https://www.sunderland.ac.uk/)
 * [The University of Warwick](https://warwick.ac.uk/)
-* [University of Birmingham Dubai](https://www.birmingham.ac.uk/dubai/index.aspx)
-* [University of Derby](https://www.derby.ac.uk/)
-* [University of Sunderland](https://www.sunderland.ac.uk/)
 
-Over time, iQTS will become more widely available. To be kept informed about new iQTS training providers, regions and placement schools, please contact us at iqts.pilot@education.gov.uk. 
+Over time, iQTS will become more widely available. 
 
 All iQTS training providers offer:
 
