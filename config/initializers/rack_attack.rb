@@ -97,8 +97,8 @@ module Rack
     end
   end
 
-  Rack::Attack.throttled_response = lambda do |env|
-    accept_html = env["HTTP_ACCEPT"].include?("text/html")
+  Rack::Attack.throttled_responder = lambda do |env|
+    accept_html = env["HTTP_ACCEPT"]&.include?("text/html")
     return [429, {}, ["Rate limit exceeded"]] unless accept_html
 
     html = ApplicationController.render(
