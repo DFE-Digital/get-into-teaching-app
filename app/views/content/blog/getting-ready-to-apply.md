@@ -60,6 +60,8 @@ An experienced teaching professional can help if you're ready to get into teachi
 
 Demonstrating how any voluntary time you have spent in school has shaped your view of teaching is vital to a good application. If you haven’t managed to get some time in a school yet, some schools are offering the opportunity for candidates to undertake school experience both in school and virtually. You can search for schools and apply using our [Get School Experience](https://schoolexperience.education.gov.uk/) service.
 
+If you’re an undergraduate student interested in teaching physics, maths, computing or modern languages, you might also be able to apply for some paid teaching experience. Find out how you might be eligible for a [teaching internship](/teaching-internship-providers).
+
 ## 6. Start lining up your references
 
 You’ll need a couple of referees to provide references for your application. Now is a good time to start approaching people who might be able to provide these for you. Getting references in place is one of the most common causes of delay in the application process, so any preparation you can do now could speed things up considerably when you make your application.

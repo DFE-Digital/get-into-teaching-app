@@ -56,9 +56,9 @@ Use our [Get school experience](https://schoolexperience.education.gov.uk/) serv
 
 If you cannot find what you’re looking for, you can call a school directly. You can [find schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience. They may ask you to have a DBS check before attending.
 
-<!--- ## Maths or physics teaching internships
+## Teaching internships
 
-You may be eligible for a [maths or physics teaching internship](/teaching-internship-providers) earning £300 a week if you're doing a undergraduate degree in science, technology, engineering or maths. --->
+If you’re currently doing an undergraduate degree and are interested in teaching maths, physics, computing or modern languages, you could apply for a paid [teaching internship](/teaching-internship-providers).
 
 ## Attend teacher training events
 

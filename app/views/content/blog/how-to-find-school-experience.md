@@ -41,6 +41,10 @@ You can request a booking by inputting your details for your chosen school to re
 >
 > Zainab Kasmani, trainee primary school teacher.
 
+## Teaching internships
+
+If you’re an undergraduate student interested in teaching physics, maths, computing or modern languages, you might also be able to apply for some paid teaching experience. Find out how you might be eligible for a [teaching internship](/teaching-internship-providers).
+
 ## Other opportunities
 
 If none of the search results are quite right for you, you might consider finding virtual experiences and other online opportunities. Many school and training provider websites have helpful information like ‘day in the life’ videos and recorded lessons. You can find out more about [school experience options and what to do if you cannot get into the classroom right now](/get-school-experience).
