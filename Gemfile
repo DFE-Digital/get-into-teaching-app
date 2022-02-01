@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").chomp
 gem "rails", "~> 6.1.4.4"
 
 # Use Puma as the app server
-gem "puma", "~> 5.5"
+gem "puma", "~> 5.6"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker", ">= 5.4.3"
@@ -34,7 +34,7 @@ gem "addressable", "~> 2.8.0"
 
 gem "rack-attack"
 
-gem "faraday", "~> 1.8.0"
+gem "faraday", "~> 1.9.3"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
@@ -57,8 +57,8 @@ gem "text"
 gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
 
-gem "kaminari", "~> 1.2", ">= 1.2.1"
-gem "view_component", "~> 2.47.0"
+gem "kaminari", "~> 1.2", ">= 1.2.2"
+gem "view_component", "~> 2.48.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -93,14 +93,14 @@ group :development, :test do
   gem "rubocop-govuk", "~> 4.2.0"
 
   # Static security scanner
-  gem "brakeman", "~> 5.2.0", require: false
+  gem "brakeman", "~> 5.2.1", require: false
 
   # Debugging
   gem "pry-byebug"
   gem "pry-rails"
 
   # Testing framework
-  gem "rspec-rails", "~> 5.0.2"
+  gem "rspec-rails", "~> 5.1.0"
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.36", ">= 3.36.0"
   gem "factory_bot_rails", ">= 6.2.0"
