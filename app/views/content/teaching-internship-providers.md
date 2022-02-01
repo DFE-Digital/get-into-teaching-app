@@ -95,7 +95,7 @@ providers:
   North East:
     providers:
     - header: Cardinal Hume Catholic School
-      link: www.cardinalhume.com/centre-for-teaching/ 
+      link: https://www.cardinalhume.com/centre-for-teaching/
       name: Tracy Cernik
       email: tcernik@chs.bwcet.com
       subjects: maths, physics, computing, languages
@@ -147,7 +147,7 @@ providers:
       email: Rizwana.mayat@tibhs.staracademies.org
       subjects: maths, physics, computing
     - header: William Howard School
-      link: www.williamhoward.cumbria.sch.uk
+      link: https://www.williamhoward.cumbria.sch.uk
       name: Katy Birks
       email: kbirks@williamhoward.cumbria.sch.uk
       subjects: maths, physics, computing
@@ -179,7 +179,7 @@ providers:
       email: k.cornforth@xaviercet.org.uk
       subjects: maths, physics, computing
     - header: Thomas Aveling School
-      link: www.thomasaveling.co.uk
+      link: https://www.thomasaveling.co.uk
       name: Paul Jackson
       email: pjackson@thomasaveling.co.uk
       subjects: maths, physics, computing
@@ -211,7 +211,7 @@ providers:
       email: admintsa@stjohns.excalibur.org.uk
       subjects: maths, physics, computing
     - header: The Roseland Academy
-      link: www.theroseland.co.uk
+      link: https://www.theroseland.co.uk
       name: Lenka Chanter / Greg Pankhurst
       email: internship@theroseland.co.uk
       subjects: maths, physics, computing
@@ -223,7 +223,7 @@ providers:
       email: twilson@centralrsaacademies.co.uk
       subjects: maths, physics, computing
     - header: Bishop Challoner Catholic College
-      link: www.bctsa.org/teaching-internship-programme
+      link: https://www.bctsa.org/teaching-internship-programme
       name: Catherine Haines
       email: internships@bishopchalloner.bham.sch.uk
       subjects: maths, physics, computing
@@ -233,7 +233,7 @@ providers:
       email: nraggett@haybridge.worcs.sch.uk
       subjects: maths, physics, computing
     - header: Painsley Catholic College
-      link: www.goldenthreadtsh.co.uk
+      link: https://www.goldenthreadtsh.co.uk
       name: Louise Bullock
       email: LBU@painsley.staffs.sch.uk
       subjects: maths, physics
@@ -275,12 +275,12 @@ providers:
       email: smithh@sghs.org.uk
       subjects: maths, physics, computing
     - header: South Hunsley School & Sixth Form College (Yorkshire Wolds Teacher Training)
-      link: www.ywtt.org.uk
+      link: https://www.ywtt.org.uk
       name: Sarah Barley
       email: sarah.barley@theeducationalliance.org.uk
       subjects: maths, physics, computing
     - header: St Mary's College
-      link: www.schooldirecthull.co.uk
+      link: http://www.schooldirecthull.co.uk
       name: Kerry Kirby
       email: KKirby@smchull.org
       subjects: maths, physics, computing
