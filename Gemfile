@@ -16,7 +16,7 @@ gem "webpacker", ">= 5.4.3"
 # gem 'mini_magick', '~> 4.8'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.9.3", require: false
+gem "bootsnap", ">= 1.10.2", require: false
 
 # Manage multiple processes i.e. web server and webpack
 gem "foreman"
@@ -34,7 +34,7 @@ gem "addressable", "~> 2.8.0"
 
 gem "rack-attack"
 
-gem "faraday", "~> 1.8.0"
+gem "faraday", "~> 1.9.3"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
