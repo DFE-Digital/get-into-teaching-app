@@ -114,8 +114,8 @@ GEM
       parser (>= 2.4)
       smart_properties
     bindex (0.8.1)
-    bootsnap (1.9.3)
-      msgpack (~> 1.0)
+    bootsnap (1.10.2)
+      msgpack (~> 1.2)
     brakeman (5.2.0)
     builder (3.2.4)
     byebug (11.1.3)
@@ -278,7 +278,7 @@ GEM
       tomlrb
     mixlib-shellout (3.2.5)
       chef-utils
-    msgpack (1.4.2)
+    msgpack (1.4.4)
     multi_json (1.15.0)
     multipart-post (2.1.1)
     nio4r (2.5.8)
@@ -504,7 +504,7 @@ DEPENDENCIES
   addressable (~> 2.8.0)
   amazing_print
   better_html (>= 1.0.16)
-  bootsnap (>= 1.9.3)
+  bootsnap (>= 1.10.2)
   brakeman (~> 5.2.0)
   byebug
   canonical-rails (>= 0.2.13)
