@@ -1,15 +1,13 @@
 <%= tag.div(class: classes) do %>
   <ul class="extra-navigation__list">
-    <li class="extra-navigation__link "><%= link_to("Register your interest", "/mailinglist/signup/name" ) %><%= helpers.fas_icon "envelope" %></li>
-
-    <li class="extra-navigation__link extra-navigation__search-fallback">
-      <%= link_to("Search", search_path) %></li>
+    <li class="extra-navigation__link">
+      <%= link_to("Register your interest", "/mailinglist/signup/name" ) %><%= helpers.fas_icon "envelope" %>
     </li>
 
     <%= tag.li(class: %w[extra-navigation__link extra-navigation__search], data: { controller: "searchbox", "searchbox-search-input-id-value" => search_input_id }) do %>
       <%= tag.label("Search", for: search_input_id, class: %w[searchbox__label visually-hidden], data: { "searchbox-target": "label" }) %>
       <%= tag.div(data: { "searchbox-target" => "searchbar" }) %>
-      <span class="fas fa-search"></span>
+      <%= helpers.fas_icon "search" %>
     <% end %>
   </ul>
 <% end %>
