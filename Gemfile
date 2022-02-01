@@ -7,7 +7,7 @@ ruby File.read(".ruby-version").chomp
 gem "rails", "~> 6.1.4.4"
 
 # Use Puma as the app server
-gem "puma", "~> 5.5"
+gem "puma", "~> 5.6"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker", ">= 5.4.3"
@@ -16,7 +16,7 @@ gem "webpacker", ">= 5.4.3"
 # gem 'mini_magick', '~> 4.8'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.9.3", require: false
+gem "bootsnap", ">= 1.10.2", require: false
 
 # Manage multiple processes i.e. web server and webpack
 gem "foreman"
