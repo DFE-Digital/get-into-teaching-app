@@ -426,14 +426,14 @@ GEM
     semantic_logger (4.9.0)
       concurrent-ruby (~> 1.0)
     semantic_range (3.0.0)
-    sentry-rails (4.8.1)
+    sentry-rails (4.8.3)
       railties (>= 5.0)
-      sentry-ruby-core (~> 4.8.1)
-    sentry-ruby (4.8.1)
+      sentry-ruby-core (~> 4.8.3)
+    sentry-ruby (4.8.3)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      faraday (>= 1.0)
-      sentry-ruby-core (= 4.8.1)
-    sentry-ruby-core (4.8.1)
+      faraday (~> 1.0)
+      sentry-ruby-core (= 4.8.3)
+    sentry-ruby-core (4.8.3)
       concurrent-ruby
       faraday
     shoulda-matchers (5.1.0)
@@ -554,8 +554,8 @@ DEPENDENCIES
   rubocop-govuk (~> 4.2.0)
   secure_headers
   selenium-webdriver (~> 3.142)
-  sentry-rails (>= 4.8.1)
-  sentry-ruby (~> 4.8.1)
+  sentry-rails (>= 4.8.3)
+  sentry-ruby (~> 4.8.3)
   shoulda-matchers
   simplecov
   skylight (~> 5.1.1)
