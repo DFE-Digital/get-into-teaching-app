@@ -24,26 +24,14 @@ runs:
         with:
             creds: ${{ inputs.AZURE_CREDENTIALS }}
 
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: SLACK-WEBHOOK
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        id:  keyvault-yaml-secret
         with:
           keyvault: ${{ inputs.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: SLACK-WEBHOOK
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: HTTP-PASSWORD
-        with:
-          keyvault: ${{ inputs.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: HTTP-PASSWORD
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: HTTP-USERNAME
-        with:
-          keyvault: ${{ inputs.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: HTTP-USERNAME
+          secret: INFRA-KEYS
+          key: SLACK-WEBHOOK, HTTP-PASSWORD, HTTP-USERNAME
+        env:
+          GITHUB_TOKEN: ${{inputs.GITHUB_TOKEN}}
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -66,7 +54,7 @@ runs:
         with:
           token: ${{ inputs.GITHUB_TOKEN }}
           docker_name: 'owasp/zap2docker-stable'
-          target: 'https://${{ steps.HTTP-USERNAME.outputs.secret-value }}:${{ steps.HTTP-PASSWORD.outputs.secret-value }}@${{steps.app_name.outputs.SCAN}}/'
+          target: 'https://${{ steps.keyvault-yaml-secret.outputs.HTTP-USERNAME }}:${{ steps.keyvault-yaml-secret.outputs.HTTP-PASSWORD }}@${{steps.app_name.outputs.SCAN}}/'
           rules_file_name: '.zap/rules.tsv'
           cmd_options: '-a'
 
@@ -77,4 +65,4 @@ runs:
            SLACK_COLOR: ${{env.SLACK_FAILURE}}
            SLACK_MESSAGE: 'Pipeline Failure carrying out OWASP Testing on https://${{env.PAAS_APPLICATION_NAME}}-${{ inputs.environment }}.${{env.DOMAIN}}/'
            SLACK_TITLE: 'Failure: OWSAP Testing has failed on ${{ inputs.environment }}'
-           SLACK_WEBHOOK: ${{ steps.SLACK-WEBHOOK.outputs.secret-value }}
+           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}

@@ -13,26 +13,21 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-      id: HTTP-USERNAME
+    - uses: DfE-Digital/keyvault-yaml-secret@v1
+      id:  keyvault-yaml-secret
       with:
-         keyvault: ${{ secrets.KEY_VAULT}}
-         yaml_secret: INFRA-KEYS
-         secret: HTTP-USERNAME
-
-    - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-      id: HTTP-PASSWORD
-      with:
-         keyvault: ${{ secrets.KEY_VAULT}}
-         yaml_secret: INFRA-KEYS
-         secret: HTTP-PASSWORD
+        keyvault: ${{ secrets.KEY_VAULT}}
+        secret: INFRA-KEYS
+        key: HTTP-USERNAME, HTTP-PASSWORD
+      env:
+        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
     - name: Run Page Speed Tas
       uses: fjogeleit/http-request-action@master
       with:
         url: 'https://get-into-teaching-app-pagespeed.london.cloudapps.digital/pagespeed/run'
         method: 'POST'
-        username: ${{ steps.HTTP-USERNAME.outputs.secret-value }}
-        password: ${{ steps.HTTP-PASSWORD.outputs.secret-value }}
+        username: ${{ steps.keyvault-yaml-secret.outputs.HTTP-USERNAME }}
+        password: ${{ steps.keyvault-yaml-secret.outputs.HTTP-PASSWORD }}
         timeout: 3600000 # 1hr in ms
         preventFailureOnNoResponse: true

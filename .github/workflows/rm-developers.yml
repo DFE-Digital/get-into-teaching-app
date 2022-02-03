@@ -16,46 +16,20 @@ jobs:
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: PAAS-USERNAME
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        id:  keyvault-yaml-secret
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: PAAS-USERNAME
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: PAAS-PASSWORD
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: PAAS-PASSWORD
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: SLACK-WEBHOOK
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: SLACK-WEBHOOK
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: PAAS-USER-WHITELIST
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: PAAS-USER-WHITELIST
-
-      - uses: DFE-Digital/github-actions/keyvault-yaml-secret@master
-        id: PAAS-SPACE
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          yaml_secret: INFRA-KEYS
-          secret: PAAS-SPACE
+          secret: INFRA-KEYS
+          key: PAAS-USERNAME, PAAS-PASSWORD, SLACK-WEBHOOK,  PAAS-USER-WHITELIST, PAAS-SPACE
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - uses: DFE-Digital/github-actions/setup-cf-cli@master
         with:
-          CF_USERNAME: ${{ steps.PAAS-USERNAME.outputs.secret-value }}
-          CF_PASSWORD: ${{ steps.PAAS-PASSWORD.outputs.secret-value }}
-          CF_SPACE_NAME: ${{ steps.PAAS-SPACE.outputs.secret-value }}
+          CF_USERNAME: ${{ steps.keyvault-yaml-secret.outputs.PAAS-USERNAME }}
+          CF_PASSWORD: ${{ steps.keyvault-yaml-secret.outputs.PAAS-PASSWORD }}
+          CF_SPACE_NAME: ${{ steps.keyvault-yaml-secret.outputs.PAAS-SPACE }}
           CF_ORG_NAME: dfe
           CF_API_URL:  https://api.london.cloud.service.gov.uk
           INSTALL_CONDUIT: false
@@ -69,7 +43,7 @@ jobs:
       - name: Run powershell script
         run: |
           ./remote-checkout/scripts/check-users-in-space-developer-role.ps1 \
-            -space "${{ steps.PAAS-SPACE.outputs.secret-value }}" \
-            -slack_webhook "${{ steps.SLACK-WEBHOOK.outputs.secret-value }}" \
+            -space "${{ steps.keyvault-yaml-secret.outputs.PAAS-SPACE }}" \
+            -slack_webhook "${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}" \
             -unset true \
-            -whitelist "${{ steps.PAAS-USER-WHITELIST.outputs.secret-value }}"
+            -whitelist "${{ steps.keyvault-yaml-secret.outputs.PAAS-USER-WHITELIST }}"
