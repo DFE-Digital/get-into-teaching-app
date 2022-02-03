@@ -1,6 +1,6 @@
 iQTS is currently offered by the following training providers:
 
-* [e-Qualitas](www.e-qualitas.co.uk)
+* [e-Qualitas](https://www.e-qualitas.co.uk/)
 * [Sheffield Hallam University](https://www.shu.ac.uk/Study-here/options/Teach)
 * [The University of Birmingham Dubai](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx)
 * [The University of Derby](https://www.derby.ac.uk/online/education-courses/international-qualified-teacher-status-iqts-online/)
