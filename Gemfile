@@ -47,8 +47,8 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 4.8.1"
-gem "sentry-ruby", "~> 4.8.1"
+gem "sentry-rails", ">= 4.8.3"
+gem "sentry-ruby", "~> 4.8.3"
 
 gem "skylight", "~> 5.1.1"
 
@@ -100,7 +100,7 @@ group :development, :test do
   gem "pry-rails"
 
   # Testing framework
-  gem "rspec-rails", "~> 5.0.2"
+  gem "rspec-rails", "~> 5.1.0"
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.36", ">= 3.36.0"
   gem "factory_bot_rails", ">= 6.2.0"
@@ -115,7 +115,7 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem "listen", "~> 3.7.0"
+  gem "listen", "~> 3.7.1"
   gem "web-console", ">= 4.2.0"
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
