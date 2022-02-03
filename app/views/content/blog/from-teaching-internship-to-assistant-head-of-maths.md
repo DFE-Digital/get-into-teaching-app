@@ -15,7 +15,7 @@ keywords:
   - teaching internship
 tags:
   - teaching internships
-  - career progressoin
+  - career progression
 ---
 
 $ben_breen$
