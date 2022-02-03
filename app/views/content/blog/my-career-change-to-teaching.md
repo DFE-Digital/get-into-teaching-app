@@ -1,3 +1,27 @@
+---
+title: My career change to teaching
+author: Ian Wallace
+date: "2022-02-03"
+images:
+  ian:
+    path: "media/images/content/blog/ian-wallace.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/ian-wallace.jpg"
+description: |-
+  Ian Wallace had always wanted to be a teacher but didn’t feel ready when he finished university. After several different jobs and careers he finally took the plunge and hasn’t looked back.
+    
+keywords:
+  - teacher training
+  - trainee teacher course
+  - SCITT
+  - career change
+
+tags:
+  - becoming a teacher
+  - career change to teaching
+---
+
+$ian$
+
 When I was at school I always wanted to be a teacher, after the obvious football career, but when I finished university I didn’t think it was right for me. I had been in education a long time and worried I wasn’t mature enough. I went away and had several different jobs and careers at various levels of responsibility in retail, food and sports, including being self-employed a couple of times. 
 
 Time had passed and I had moved back to Newcastle, met my now wife and was contemplating my future. I was sat having a meal with my wife and she said ‘why don’t you teach?’ My wife is a primary school teacher and she knew that it was what I should be doing with the skill set and experience that my career had given me so far. In particular, I had skills in communication, listening, collaboration, adaptability, empathy and patience, all of which come with maturity and experience.
