@@ -28,7 +28,7 @@ Time had passed and I had moved back to Newcastle, met my now wife and was conte
 
 I took the bull by the horns and looked into the qualification routes that were available, settling on a SCITT as this suited me personally. With a SCITT you are in school from the start and that appealed to my work style and ethic. Being in my late 30s and having financial responsibilities for my family I needed to have support and fortunately I was to study science, which was funded and allowed me to concentrate on my training.
 
-I had made a conscious decision in discussion with my wife that I wouldn’t work at home in the evenings if I could avoid it. I treated my training as if I was going to work every day. I was at the school at 7am and stayed each night until 6pm or later if needed.. This worked brilliantly for me.
+I had made a conscious decision in discussion with my wife that I wouldn’t work at home in the evenings if I could avoid it. I treated my training as if I was going to work every day. I was at the school at 7am and stayed each night until 6pm or later if needed. This worked brilliantly for me.
 
 For me, the decision to apply to teach later on in life meant I felt even more capable of balancing the demands of the course, dealing with stressful moments, and having successful strategies for coping with competing demands. I knew that having been in stressful job roles and having dealt with difficult situations previously I would be emotionally strong and able to deal with any situation that occurred. I also knew that I was old enough and definitely secure enough in my own character and personality to be open and honest with the students, about both my life and my career to date. 
 
