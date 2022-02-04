@@ -327,10 +327,10 @@ provider_groups:
       link: https://www.chi.ac.uk/institute-education/degrees-qts/assessment-only-route
       email: ao@chi.ac.uk
     - header: University of Reading
-      link: https://www.reading.ac.uk/
-      name: Marc Jacobs
+      link: https://www.reading.ac.uk/education/pgce-qts-and-eyts/assessment-only
+      # name: Marc Jacobs
       telephone: '0118 378 2672'
-      email: m.l.jacobs@reading.ac.uk
+      email: vrs17a3@reading.ac.uk
     - header: University of Sussex
       link: https://www.sussex.ac.uk/
       name: Mike Lambert
