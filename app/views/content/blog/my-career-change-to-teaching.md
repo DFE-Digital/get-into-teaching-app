@@ -22,7 +22,7 @@ tags:
 
 $ian$
 
-When I was at school I always wanted to be a teacher, after the obvious football career, but when I finished university I didn’t think it was right for me. I had been in education a long time and worried I wasn’t mature enough. I went away and had several different jobs and careers at various levels of responsibility in retail, food and sports, including being self-employed a couple of times. 
+I always wanted to be a teacher when I was at school, after the obvious football career. But when I finished university I didn’t think it was right for me. I had been in education a long time and worried I wasn’t mature enough. I went away and had several different jobs and careers at various levels of responsibility in retail, food and sports, including being self-employed a couple of times. 
 
 Time had passed and I had moved back to Newcastle, met my now wife and was contemplating my future. I was sat having a meal with my wife and she said ‘why don’t you teach?’ My wife is a primary school teacher and she knew that it was what I should be doing with the skill set and experience that my career had given me so far. In particular, I had skills in communication, listening, collaboration, adaptability, empathy and patience, all of which come with maturity and experience.
 
