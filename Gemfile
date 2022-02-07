@@ -16,7 +16,7 @@ gem "webpacker", ">= 5.4.3"
 # gem 'mini_magick', '~> 4.8'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.10.2", require: false
+gem "bootsnap", ">= 1.10.3", require: false
 
 # Manage multiple processes i.e. web server and webpack
 gem "foreman"
@@ -47,8 +47,8 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 4.8.3"
-gem "sentry-ruby", "~> 4.8.3"
+gem "sentry-rails", ">= 5.0.2"
+gem "sentry-ruby", "~> 5.0.2"
 
 gem "skylight", "~> 5.1.1"
 
@@ -115,7 +115,7 @@ end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
-  gem "listen", "~> 3.7.0"
+  gem "listen", "~> 3.7.1"
   gem "web-console", ">= 4.2.0"
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
