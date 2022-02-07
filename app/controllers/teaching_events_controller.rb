@@ -1,8 +1,12 @@
 class TeachingEventsController < ApplicationController
+  class EventNotViewableError < StandardError; end
+
   include CircuitBreaker
 
   before_action :setup_filter, only: :index
   before_action :set_front_matter
+
+  rescue_from EventNotViewableError, with: :render_not_found
 
   FEATURED_EVENT_COUNT = 2 # 2 featured events max on the first page
   EVENT_COUNT = 15 # 15 regular ones per page
@@ -34,8 +38,7 @@ class TeachingEventsController < ApplicationController
   def show
     breadcrumb "Get into Teaching events", "/teaching-events"
 
-    api_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-    @event = TeachingEvents::EventPresenter.new(api_event)
+    @event = TeachingEvents::EventPresenter.new(retrieve_event)
 
     @page_title = @event.name
 
@@ -47,6 +50,12 @@ class TeachingEventsController < ApplicationController
   end
 
 private
+
+  def retrieve_event
+    GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]).tap do |event|
+      raise(EventNotViewableError) unless EventStatus.new(event).viewable?
+    end
+  end
 
   def static_page_actions
     %i[about_ttt_events]
@@ -66,5 +75,9 @@ private
 
   def set_front_matter
     @front_matter = { "noindex" => true }
+  end
+
+  def render_not_found
+    render("not_found", status: :not_found, layout: "content")
   end
 end
