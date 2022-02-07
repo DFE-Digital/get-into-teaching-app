@@ -66,7 +66,7 @@ describe TeachingEvents::EventPresenter do
       context "when show_venue_information? is false" do
         let(:event) { build(:event_api, :virtual) }
 
-        specify { expect(subject.location).to eql("#{event.building.venue}, #{event.building.address_city}") }
+        specify { expect(subject.location).to eql(event.building.address_city) }
       end
 
       context "when show_venue_information? is true" do

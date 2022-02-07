@@ -49,11 +49,13 @@ module TeachingEvents
     end
 
     def location
-      [
-        event_building.venue,
-        event_building.address_city,
-        (event_building.address_postcode if show_venue_information?),
-      ].compact.join(", ")
+      if show_venue_information?
+        [event_building.venue,
+         event_building.address_city,
+         event_building.address_postcode].compact.join(", ")
+      else
+        event_building.address_city
+      end
     end
 
     def event_type
