@@ -50,7 +50,7 @@ gem "prometheus-client"
 gem "sentry-rails", ">= 5.0.2"
 gem "sentry-ruby", "~> 5.0.2"
 
-gem "skylight", "~> 5.1.1"
+gem "skylight", "~> 5.2.0"
 
 gem "text"
 
@@ -134,7 +134,7 @@ group :rolling, :preprod, :userresearch, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"
-  gem "rails_semantic_logger", ">= 4.9.0"
+  gem "rails_semantic_logger", ">= 4.10.0"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
