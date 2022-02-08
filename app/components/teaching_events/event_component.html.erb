@@ -1,4 +1,4 @@
-<%= tag.li(class: classes) %>
+<%= tag.li(class: classes) do %>
   <% if train_to_teach? %>
 
     <div class="event__info">
@@ -87,4 +87,4 @@
       <% end %>
     </div>
   <% end %>
-</li>
+<% end %>
