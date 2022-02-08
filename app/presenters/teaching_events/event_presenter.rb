@@ -105,7 +105,7 @@ module TeachingEvents
     end
 
     def show_venue_information?
-      !@event.is_virtual && @event.building.present?
+      !@event.is_online && @event.building.present?
     end
 
   private

@@ -194,26 +194,26 @@ describe TeachingEvents::EventPresenter do
     describe "#show_venue_information?" do
       subject { described_class.new(event).show_venue_information? }
 
-      context "when the event is virtual and has no building" do
-        let(:event) { build(:event_api, :virtual, :no_location) }
+      context "when the event is online and has no building" do
+        let(:event) { build(:event_api, :no_location, is_online: true) }
 
         it { is_expected.to be false }
       end
 
-      context "when the event is virtual and has a building" do
-        let(:event) { build(:event_api, :virtual) }
+      context "when the event is online and has a building" do
+        let(:event) { build(:event_api, is_online: true) }
 
         it { is_expected.to be false }
       end
 
-      context "when the event not virtual and has no building" do
-        let(:event) { build(:event_api, :online, :no_location) }
+      context "when the event not online and has no building" do
+        let(:event) { build(:event_api, :no_location, is_online: false) }
 
         it { is_expected.to be false }
       end
 
-      context "when the event not virtual and has a building" do
-        let(:event) { build(:event_api) }
+      context "when the event not online and has a building" do
+        let(:event) { build(:event_api, is_online: false) }
 
         it { is_expected.to be true }
       end
