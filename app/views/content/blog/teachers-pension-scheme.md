@@ -6,7 +6,6 @@ images:
   whiteboard:
     path: "media/images/content/blog/whiteboard.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/whiteboard.jpg"
-    alt: "A photograph of a blank whiteboard and coloured marker pens"
 date: "2021-08-10"
 keywords:
   - pensions
