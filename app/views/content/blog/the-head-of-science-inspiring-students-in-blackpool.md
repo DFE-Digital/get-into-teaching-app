@@ -3,10 +3,9 @@ title: The Head of Science inspiring students in Blackpool
 date: "2022-02-09"
 author: Jessica Walmsley
 images:
-an_image:
-  path: "media/images/content/blog/jessica-walmsley.jpg"
-  thumbnail_path: "media/images/content/blog/thumbnails/jessica.jpg"
-  alt: "Jessica Walmsley against a plain background"
+  jessica-walmsley:
+    path: "media/images/content/blog/jessica-walmsley.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/jessica.jpg"
 description: |-
   Head of Science Jessica Walmsley shares how she brings her passion for science into her Blackpool classroom.
 keywords:
