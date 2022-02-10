@@ -17,4 +17,3 @@ If you trained as a teacher outside the UK, depending on where you qualified, yo
 
 If you have fewer than 2 years' teaching experience, you will need to [apply
 for a teacher training course leading to QTS in England](https://www.gov.uk/find-postgraduate-teacher-training-courses)
- 

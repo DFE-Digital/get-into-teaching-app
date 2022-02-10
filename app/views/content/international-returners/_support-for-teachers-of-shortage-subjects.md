@@ -9,5 +9,4 @@ This includes:
 * online courses and webinars
 * membership of our closed Facebook group
 
-[Get an adviser](/tta-service) or call the return to teaching helpline on 0800 085
-0971 (charges may apply for calls made from overseas).
+[Get an adviser](/tta-service) or call the return to teaching helpline on 0800 085.
