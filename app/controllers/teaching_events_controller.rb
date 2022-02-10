@@ -6,7 +6,7 @@ class TeachingEventsController < ApplicationController
   before_action :setup_filter, only: :index
   before_action :set_front_matter
 
-  rescue_from EventNotViewableError, with: :render_not_found
+  rescue_from EventNotViewableError, with: :render_gone
 
   FEATURED_EVENT_COUNT = 2 # 2 featured events max on the first page
   EVENT_COUNT = 15 # 15 regular ones per page
@@ -53,7 +53,10 @@ private
 
   def retrieve_event
     GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]).tap do |event|
-      raise(EventNotViewableError) unless EventStatus.new(event).viewable?
+      status = EventStatus.new(event)
+
+      raise ActionController::RoutingError, "Not Found" if status.pending?
+      raise(EventNotViewableError) unless status.viewable?
     end
   end
 
@@ -77,7 +80,7 @@ private
     @front_matter = { "noindex" => true }
   end
 
-  def render_not_found
-    render("not_found", status: :not_found, layout: "content")
+  def render_gone
+    render("gone", status: :gone, layout: "content")
   end
 end

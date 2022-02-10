@@ -231,7 +231,7 @@ describe EventsController, type: :request do
           let(:event) { build(:event_api, :pending, web_feed_id: nil) }
 
           it { expect(response).to have_http_status :not_found }
-          it { expect(response.body).to include("Unfortunately, that event has already happened.") }
+          it { expect(response.body).to include("Page not found") }
         end
 
         EventType::WITH_ARCHIVE.each do |type, id|
@@ -247,7 +247,7 @@ describe EventsController, type: :request do
           context "when the event is a past #{type} type" do
             let(:event) { build(:event_api, type_id: id, start_at: Time.zone.now.utc - 1.day) }
 
-            it { expect(response).to have_http_status :not_found }
+            it { expect(response).to have_http_status :gone }
             it { expect(response.body).to include("Unfortunately, that event has already happened.") }
           end
         end
@@ -275,7 +275,7 @@ describe EventsController, type: :request do
       end
 
       it { is_expected.to have_http_status :not_found }
-      it { expect(response.body).to include("Unfortunately, that event has already happened.") }
+      it { expect(response.body).to include("Page not found") }
     end
   end
 
