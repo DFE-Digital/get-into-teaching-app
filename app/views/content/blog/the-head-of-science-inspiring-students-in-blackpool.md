@@ -28,7 +28,7 @@ I work better in the morning so I arrive at school between 7:15am and 7:30am. Sc
 
 ## How do you bring your passion for science to the classroom?
 
-For any subject, particularly at secondary, I think it’s important to show students how the subject is relevant to their everyday life. In Science especially, the discipline outside of school is always evolving and changing. I love bringing real life science stories into the classroom so students can have discussions and build knowledge of the world around them.
+For any subject, particularly at secondary, I think it’s important to show students how the subject is relevant to their everyday life. In science especially, the discipline outside of school is always evolving and changing. I love bringing real life science stories into the classroom so students can have discussions and build knowledge of the world around them.
 
 ## What are your biggest challenges?
 
