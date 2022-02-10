@@ -110,7 +110,7 @@ $mobile-cutoff: 800px;
           4,
           minmax(100px, 1fr)
         );
-      grid-template-rows: 2em fit-content(1em) fit-content(1em) fit-content(1em) fit-content(1em) fit-content(1em) 2em;
+      grid-template-rows: 2em repeat(5, fit-content(0)) 2em;
 
       &__title {
         grid-area: 3 / 1 / 5 / 5;

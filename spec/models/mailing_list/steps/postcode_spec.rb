@@ -25,7 +25,7 @@ describe MailingList::Steps::Postcode do
 
   describe "validations for send_event_emails" do
     it { is_expected.not_to allow_value(nil).for(:send_event_emails) }
-    it { is_expected.to validate_inclusion_of(:send_event_emails).in_array([true, false]) }
+    it { is_expected.to allow_values(true, false).for(:send_event_emails) }
   end
 
   describe "#export" do

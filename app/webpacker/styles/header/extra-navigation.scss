@@ -1,7 +1,7 @@
 @import "accessible-autocomplete";
 
-html.js-enabled {
-  .extra-navigation__search-fallback {
+html:not(.js-enabled) {
+  .extra-navigation__search {
     display: none;
   }
 }
@@ -47,7 +47,6 @@ html.js-enabled {
     padding: 0;
     position: relative;
     min-width: 240px;
-    height: 36px;
 
     input {
       @include reset;
@@ -60,8 +59,12 @@ html.js-enabled {
       font-size: .9rem;
     }
 
-    div[data-searchbox-target='searchbar'] {
+    &.ready div[data-searchbox-target='searchbar'] {
       display: inline-block;
+    }
+
+    &:not(.ready) > * {
+      display: none;
     }
 
     .fa-search {
@@ -85,7 +88,6 @@ html.js-enabled {
   }
 
   ul.extra-navigation__list {
-    // @include font-size("xsmall");
     font-size: .9rem;
 
     list-style: none;
@@ -94,6 +96,7 @@ html.js-enabled {
     justify-content: flex-end;
     align-items: center;
     padding: 0;
+    height: 36px;
 
     li.extra-navigation__link {
       margin-left: 2em;
@@ -101,11 +104,6 @@ html.js-enabled {
       &.extra-navigation__search__icon {
         margin-left: 0;
       }
-    }
-
-    @include mq($until: tablet) {
-      align-items: flex-start;
-      flex-direction: column;
     }
 
     // mobile and tablet
@@ -118,6 +116,7 @@ html.js-enabled {
       text-align: left;
       background-color: $grey;
       padding: 1.5em 0 1.5em 4em;
+      height: auto;
 
       input {
         margin: 0;

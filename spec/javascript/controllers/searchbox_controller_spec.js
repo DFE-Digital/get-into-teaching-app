@@ -3,7 +3,7 @@ import SearchboxController from 'searchbox_controller.js';
 
 describe('SearchboxController', () => {
   const searchboxTemplate = `
-    <div data-controller="searchbox" data-searchbox-search-input-id-value="searchbox__input" class="searchbox">
+    <div id="search" data-controller="searchbox" data-searchbox-search-input-id-value="searchbox__input" class="searchbox">
       <a href="#" data-action="searchbox#toggle">
         Toggle
       </a>
@@ -25,6 +25,11 @@ describe('SearchboxController', () => {
 
       expect(autocompletes.length).toBe(1);
     });
+
+    it('adds the ready class to the controller element', () => {
+      const element = document.getElementById('search');
+      expect(element.classList).toContain('ready');
+    })
 
     it('adds an aria-label attribute to the input', () => {
       const input = document.querySelector('input');

@@ -6,13 +6,6 @@
       header {
         flex-grow: 1;
       }
-
-      img {
-        width: 170px;
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-        object-position: center;
-      }
     }
   }
 
@@ -25,10 +18,6 @@
     .published-date {
       margin-top: $indent-amount;
     }
-  }
-
-  img {
-    width: 100%;
   }
 }
 
@@ -99,6 +88,13 @@
 
     li > .blog-article {
       @include blog-article;
+
+      img {
+        width: 170px;
+        height: 120px;
+        object-fit: cover;
+        object-position: center;
+      }
     }
 
     li:last-child hr {
@@ -116,11 +112,18 @@
     }
 
     img {
-      aspect-ratio: 4 / 3;
-      max-width: 100%;
+      width: 100%;
+      height: 300px;
       object-position: center;
-      width: fit-content;
       object-fit: cover;
+
+      @include mq($from: mobile) {
+        height: 450px;
+      }
+
+      @include mq($from: desktop) {
+        height: 550px;
+      }
     }
   }
 

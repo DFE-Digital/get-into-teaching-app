@@ -13,6 +13,8 @@ export default class extends Controller {
     this.setupAccessibleAutocomplete();
     this.fixLabelAccessibility();
 
+    this.element.classList.add('ready');
+
     this.mobileMenuHandler = this.hide.bind(this);
     document.addEventListener('navigation:menu', this.mobileMenuHandler);
   }
