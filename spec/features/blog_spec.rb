@@ -8,7 +8,7 @@ describe "reading the blog", type: :feature do
 
     expect(page).to have_css(".blog-tags")
 
-    first(".blog-article").click_link(tag)
+    first("aside .blog-tags").click_link(tag)
 
     expect(page).to have_current_path("/blog/tag/#{tag.parameterize}")
 
