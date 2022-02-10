@@ -7,7 +7,7 @@ images:
     path: "media/images/content/blog/jessica-walmsley.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/jessica-walmsley.jpg"
 description: |-
-  Head of Science Jessica Walmsley shares how she brings her passion for science into her Blackpool classroom. She explains why she became a teacher and what a typical day in the classroom looks like.
+  Head of Science Jessica Walmsley shares how she brings her passion for science into her Blackpool classroom and why she decided to become a teacher.
 keywords:
   - life as a teacher
   - day in the life
