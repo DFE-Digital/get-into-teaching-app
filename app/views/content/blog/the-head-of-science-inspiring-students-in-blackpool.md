@@ -24,7 +24,7 @@ I wanted a job that would have a genuine impact on the lives of others. As a tea
 
 ## What does a typical day look like for you?
 
-I work better in the morning so I arrive at school between 7:15-7:30. School starts at 8:50am with my Year 11 form, followed by 5 lessons during the day. As Head of Department I’m lucky that I get time to go in to science lessons throughout the day to experience the learning taking place and to talk to the students. I also spend a lot of time during lesson change overs welcoming students to their lessons and checking if they are having a good day. Those little conversations and being visible to students are so important.
+I work better in the morning so I arrive at school between 7:15am and 7:30am. School starts at 8:50am with my year 11 form, followed by 5 lessons during the day. As Head of Department, I’m lucky that I get time to go in to science lessons throughout the day to experience the learning taking place and to talk to the students. I also spend a lot of time during lesson change overs welcoming students to their lessons and checking if they are having a good day. Those little conversations and being visible to students are so important.
 
 ## How do you bring your passion for science to the classroom?
 
