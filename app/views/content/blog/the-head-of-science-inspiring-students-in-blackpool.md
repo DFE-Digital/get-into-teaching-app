@@ -20,7 +20,7 @@ $jessica-walmsley$
 
 ## Why did you decide to become a teacher?
 
-I wanted a job that would have a genuine impact on the lives of others. As a teacher you have the opportunity to greatly influence the path a child takes in life and this is particularly important to me working in Blackpool. I wanted to share my love of learning and education and give the children I teach in Blackpool the best possible start to their adult lives – preparing them for their futures, finding their passion to set them on a career path, and giving them the confidence to pursue and achieve their goals.
+I wanted a job that would have a genuine impact on the lives of others. As a teacher you have the opportunity to greatly influence the path a child takes in life and this is particularly important to me working in Blackpool. I wanted to share my love of learning and education and give the children I teach in Blackpool the best possible start to their adult lives. I wanted to help prepare them for their futures, find their passions to set them on a career path, and give them the confidence to pursue and achieve their goals.
 
 ## What does a typical day look like for you?
 
