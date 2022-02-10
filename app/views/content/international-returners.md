@@ -9,7 +9,7 @@ date: "2020-04-07"
 jump_links-dt:
   Help finding your next role: "#using-dfes-teaching-vacancies-service-to-find-your-next-role"
   Return to teaching success stories: "#return-to-teaching-success-stories"
-  Extra support for shortage subjects: "#extra-support-for-shortage-subjects"
+  Extra support for teachers of shortage subjects: "#extra-support-for-teachers-of-shortage-subjects"
   Information on support, CPD and salaries: "#continuous-professional-development-cpd-and-teaching-salaries"
   A step-by-step guide on coming home to teach: "#return-to-teach-in-england-step-by-step"
 accordion:
@@ -25,8 +25,8 @@ accordion:
       partial: content/international-returners/support-for-shortage-subjects
     Get ready to apply:
       partial: content/international-returners/get-ready-to-apply
-    Read up on changes to English schools:
-      partial: content/international-returners/read-up-on-changes-to-english-schools
+    Read up on changes to English education:
+      partial: content/international-returners/read-up-on-changes-to-english-education
     Get started on your personal and professional admin:
       partial: content/international-returners/get-started-on-your-personal-and-professional-admin
     Research visas and immigration:
@@ -68,9 +68,8 @@ perspective.
 If you're thinking about coming home to teach, we want to help.
 
 If you are a non-UK citizen interested in teaching or training to teach in
-England, please read our
-[guidance for international teachers and trainees](/train-to-teach-in-england-as-an-international-student) and [register for our next online event](/event-categories/online-q-as)
-to learn how we can support your journey to the UK.
+England, please read our [guidance for international teachers](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) or
+[guidance for international trainees](/train-to-teach-in-england-as-an-international-student). 
 
 ### Return to teaching success stories
 

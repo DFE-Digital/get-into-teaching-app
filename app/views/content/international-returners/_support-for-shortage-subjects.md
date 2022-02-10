@@ -1,6 +1,6 @@
 If you teach chemistry, computing, maths, modern foreign languages or physics, you're eligible for a return to teaching adviser.
 
-You can get:
+This includes:
 
 * help and advice from an experienced teaching professional over phone and email
 * information on vacancies in your local area
@@ -9,6 +9,5 @@ You can get:
 * online courses and webinars
 * membership of our closed Facebook group
 
-Register with [Get an adviser](/tta-service) to get help from the Return to
-teaching support service, or call the Return to teaching helpline on 0800 085
+To sign up for personalised support, register with [Get an adviser](/tta-service) or call the Return to teaching helpline on 0800 085
 0971 (charges may apply for calls made from overseas).

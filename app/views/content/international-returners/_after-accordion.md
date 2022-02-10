@@ -1,10 +1,10 @@
-### What can you expect from the Department for Education?
+### What you can expect from the Department for Education
 
 #### Continuous professional development (CPD) and competitive teaching salaries
 
-DfE can support your CPD through [National Professional Qualifications (NPQs)](https://www.gov.uk/government/publications/national-professional-qualifications-npqs-list-of-providers)
+DfE can support your CPD through [national professional qualifications (NPQs)](https://www.gov.uk/government/publications/national-professional-qualifications-npqs-list-of-providers)
 for middle and senior leadership, headship and executive leadership.
-[We'll be introducing improved NPQs from September 2021](https://www.gov.uk/government/publications/national-professional-qualifications-frameworks-from-september-2021).
+[Learn more national professional qualifications frameworks.](https://www.gov.uk/government/publications/national-professional-qualifications-frameworks-from-september-2021)
 
 In July 2020, [competitive new salary increases](https://www.gov.uk/government/news/teachers-set-for-biggest-pay-rise-in-fifteen-years) for teachers were agreed.
 
@@ -19,7 +19,7 @@ grateful for the hard work of everyone in the profession.
 We’re taking action to address some of the common issues that teachers face in the classroom and have collaborated with schools to:
 
 * [develop a workload reduction kit](https://www.gov.uk/guidance/school-workload-reduction-toolkit)
-* [invest £10m in Behaviour hubs](https://www.gov.uk/guidance/behaviour-hubs)
+* [invest £10m in behaviour hubs](https://www.gov.uk/guidance/behaviour-hubs)
   so schools with exemplary pupil behaviour can help other schools improve
 * increase [flexible working opportunities](https://www.gov.uk/government/collections/flexible-working-resources-for-teachers-and-schools)
   for teachers
@@ -27,9 +27,11 @@ We’re taking action to address some of the common issues that teachers face in
 Teacher mental health is an important focus for DfE. Read our [Teaching blog](https://teaching.blog.gov.uk/) to
 learn more.
 
-### Contact us for help
+### Contact
 
-Sign up for one of our [online events to support returners](/events).
+Sign up for an [online Q&A for returners](/events).
+
+Download our [information pack for returners](https://docs.google.com/presentation/d/1YioJ_sU6eqF70CJDoGmsRnEyGylWcgMg/edit#slide=id.p1) 
 
 Email us at international.teacherrecruitment@education.gov.uk
 
