@@ -36,7 +36,7 @@ Being a teacher does not simply involve being in the classroom teaching – you�
 
 ## What’s your favourite part of your job?
 
-My favourite part of the job is being in the classroom, without a doubt. There’s nothing better than those light bulb moments when students just ‘get it’, or when they are successful at a task or score amazingly on a test and they’re really proud of themselves. Making progress with some of your hardest to reach students is also one of the main reasons I love my job. Often when Year 11 leave, they thank you for your help in getting them the grades to go to college or get an apprenticeship, and you know that all the hard work was worth it.
+My favourite part of the job is being in the classroom, without a doubt. There’s nothing better than those light bulb moments when students just ‘get it’, or when they are successful at a task or score amazingly on a test and they’re really proud of themselves. Making progress with some of your hardest to reach students is also one of the main reasons I love my job. Often when year 11 leave, they thank you for your help in getting them the grades to go to college or get an apprenticeship, and you know that all the hard work was worth it.
 
 ## Who is your science heroine? 
 
