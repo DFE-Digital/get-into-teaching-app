@@ -32,7 +32,7 @@ For any subject, particularly at secondary, I think it’s important to show stu
 
 ## What are your biggest challenges?
 
-Being a teacher does not simply involve being in the classroom teaching – you’re a mentor, a counsellor, a shoulder to cry on, a mediator, a first-aider, a role model. It is a challenge at first to become effective in all of these areas on top of your everyday role, but it eventually becomes just part of your job and it’s incredibly rewarding to be able to support students’ wellbeing as well as providing them with a quality education.
+Being a teacher does not simply involve being in the classroom teaching – you’re a mentor, a counsellor, a shoulder to cry on, a mediator, a first-aider, a role model. It is a challenge at first to become effective in all of these areas on top of your everyday role. It eventually becomes just part of your job and it’s incredibly rewarding to be able to support students’ wellbeing as well as providing them with a quality education.
 
 ## What’s your favourite part of your job?
 
