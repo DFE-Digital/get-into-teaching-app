@@ -35,8 +35,6 @@ Download our [information pack for returners](https://docs.google.com/presentati
 
 Email us at international.teacherrecruitment@education.gov.uk
 
-#### Join us on social media
-
 Join us on [Facebook](https://www.facebook.com/getintoteaching),
 [Instagram](https://www.instagram.com/get_into_teaching/) and
 [Twitter](https://twitter.com/getintoteaching)
