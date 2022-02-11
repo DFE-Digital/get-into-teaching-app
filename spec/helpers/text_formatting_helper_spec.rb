@@ -43,5 +43,11 @@ describe TextFormattingHelper, type: :helper do
 
       it { is_expected.to eql html }
     end
+
+    context "with href containing disallowed protocol" do
+      let(:html) { "<a href=\"file://test.com\" target=\"blank\">open</a>" }
+
+      it { is_expected.to eql "<a target=\"blank\">open</a>" }
+    end
   end
 end
