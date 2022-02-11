@@ -21,8 +21,8 @@ accordion:
       partial: content/international-returners/check-your-qualifications
     Find your next role:
       partial: content/international-returners/find-your-next-role
-    Support for shortage subjects:
-      partial: content/international-returners/support-for-shortage-subjects
+    Support for teachers of shortage subjects:
+      partial: content/international-returners/support-for-teachers-of-shortage-subjects
     Get ready to apply:
       partial: content/international-returners/get-ready-to-apply
     Read up on changes to English education:
@@ -61,7 +61,7 @@ right_column:
       icon: "icon-calendar"
 ---
 
-Are you a UK-trained teacher and UK citizen currently working abroad? Our
+Are you a UK-trained teacher and UK citizen currently teaching abroad? Our
 children and young people need your international skills, experience and
 perspective.
 
