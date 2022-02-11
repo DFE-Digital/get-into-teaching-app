@@ -81,6 +81,7 @@ private
       classes = anchor.attr("class")&.split
 
       next if classes && (classes & classes_to_suppress).any?
+      next anchor && Sentry.capture_message("#{request.url} contains invalid anchor link") if anchor[:href].nil?
 
       external_link = anchor[:href].include?("//")
       externally_hosted_internal_asset = ENV["APP_ASSETS_URL"].present? && anchor[:href].start_with?(ENV["APP_ASSETS_URL"])
