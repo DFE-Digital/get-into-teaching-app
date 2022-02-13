@@ -4,10 +4,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.4.4"
+gem "rails", "~> 6.1.4.6"
 
 # Use Puma as the app server
-gem "puma", "~> 5.6"
+gem "puma", "~> 5.6", ">= 5.6.2"
 
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
 gem "webpacker", ">= 5.4.3"
