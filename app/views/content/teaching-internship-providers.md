@@ -16,7 +16,7 @@ providers:
     - header: Beauchamp College
       link: https://www.beauchampteach.org.uk/opportunities/internships/
       name: Emma Lowe
-      email: emma.lowe@beauchamp.org.Uk
+      email: emma.lowe@beauchamp.org.uk
       subjects: maths, physics, computing
     - header: Bluecoat Aspley Academy
       link: https://www.bluecoatscittalliance.uk.com/vacancies/paid-graduate-internship/
@@ -33,11 +33,31 @@ providers:
       name: Claire Hallam
       email: challam@diverse-ac.org.uk
       subjects: maths, physics, computing
-    - header: Wrenn School
+    - header: George Spencer Academy
+      link: http://spencerteachingschoolhub.com
+      name: Lisa Harrison
+      email: lharrison@satrust.com
+      subjects: maths, physics, computing
+    - header: The Priory Academy LSST
+      link: https://www.lincolnshirescitt.co.uk/scitt
+      name: Angela Murphy
+      email: anmurphy@prioryacademies.co.uk
+      subjects: maths, physics, computing
+    - header: Outwood Grange Academies Trust
+      link: https://teachnorth.com/internships
+      name: Emma Sikora
+      email: e.sikora@outwood.com   
+      subjects: maths, physics, computing
+    - header: Creative Education Trust
       link: https://www.creativeeducationtrust.org.uk/internship
       name: Claire Amed
       email: teachertraining@creativeeducationtrust.org.uk
       subjects: maths, physics
+    - header: Rushey Mead Academy
+      link: https://www.leicestershiresecondaryscitt.org/
+      name: Craig Benham
+      email: CBenham@rushey-tmet.uk
+      subjects: maths, physics, computing
   East of England:
     providers:
     - header: Farlingaye High School
@@ -51,7 +71,7 @@ providers:
       email: vboreham@lyonshall.org.uk
       subjects: maths, physics, computing
     - header: Northgate High School, Ipswich
-      link: https://www.northgate.suffolk.sch.uk/
+      link: https://www.northgate.suffolk.sch.uk/staff/current-vacancies/teaching-internship-programme-opportunity-summer-2022/
       name: Miss Mary Hallett
       email: mch@northgate.suffolk.sch.uk
       subjects: maths, physics, computing
@@ -63,13 +83,28 @@ providers:
     - header: Saffron Walden County High School
       link: https://ctsnscitt.info/stem-internships/
       name: Jane Catley
-      email: jcatley@camteach.org.uk
+      email: jcatley@camteach.org.uk 
       subjects: maths, physics, computing
     - header: The Appleton School
       link: http://www.btsa.uk/internship-scheme/
       name: Maxine Howard
       email: mhoward@theappletonschool.org
       subjects: maths, physics, computing
+    - header: Cardinal Newman School Luton
+      link: https://www.stcat.co.uk/careers-and-training/internships
+      name: Joe Richardson 
+      email: jrichardson@stcat.co.uk 
+      subjects: maths, physics, computing
+    - header: Samuel Whitbread Academy
+      link: https://www.bestteachingschool.org.uk/page/?title=Internship&pid=90&action=saved
+      name: Susanne Combe
+      email: scombe@bestacademies.org.uk
+      subjects: maths, physics, computing
+    - header: Creative Education Trust
+      link: https://www.creativeeducationtrust.org.uk/internship
+      name: Claire Amed
+      email: teachertraining@creativeeducationtrust.org.uk
+      subjects: maths, physics
   London:
     providers:
     - header: Avanti House Secondary School
@@ -80,24 +115,29 @@ providers:
     - header: Kings College London Mathematics School (KCLMS)
       link: https://www.kingsmathsschool.com/
       name: Dan Abramson
-      email: dan.abramson@kcl.ac.uk
+      email: dan.abramson@kcl.ac.uk 
       subjects: maths, physics, computing
     - header: Paddington Academy
       link: https://www.paddington-academy.org/
       name: Alice Neil
-      email: Alice.Neil@paddington-academy.org
+      email: alice.neil@paddington-academy.org
       subjects: maths, physics
     - header: Riverside School
       link: http://www.riversidecampus.com/secondary/?page_id=10636
       name: Serena Madhvani
       email: TeachingInternships@riverside.bardaglea.org.uk
       subjects: maths, physics, computing
+    - header: The Cardinal Vaughan Memorial School
+      link: https://www.stbons.org/adcsa/internship-in-computing-maths-physics/
+      name: Emma Templeman
+      email: e.templeman@stbons.org
+      subjects: maths, physics, computing
   North East:
     providers:
     - header: Cardinal Hume Catholic School
       link: https://www.cardinalhume.com/centre-for-teaching/
-      name: Tracy Cernik
-      email: tcernik@chs.bwcet.com
+      name: Tracy Cernik 
+      email: tcernik@chs.bwcet.com 
       subjects: maths, physics, computing, languages
     - header: Carmel College
       link: https://carmelteachertraining.com/teaching-internships/
@@ -109,20 +149,20 @@ providers:
       name: Richard Whitfield
       email: r.whitfield@northerneducationtrust.org
       subjects: maths, physics, computing, languages
-    - header: Outwood Academy Bydales
-      link: https://teachnorth.com/internships
-      name: Emma Sikora
-      email: e.sikora@outwood.com 
-      subjects: maths, physics, computing, languages
     - header: The Academy at Shotton Hall
-      link: https://www.northeastscitt.co.uk/
+      link: https://www.northeastscitt.co.uk/intern
       name: Susan Ingram
       email: susan.ingram@nelt.co.uk
+      subjects: maths, physics, computing, languages
+    - header: Outwood Grange Academies Trust
+      link: https://teachnorth.com/internships
+      name: Emma Sikora
+      email: e.sikora@outwood.com   
       subjects: maths, physics, computing, languages
   North West:
     providers:
     - header: Altrincham Grammar School for Girls
-      link: http://www.bfet.co.uk/scitt/
+      link: https://www.bfet.co.uk/scitt/our-programmes/paid-undergraduate-internship-scheme/
       name: Hilary Langmead-Jones
       email: HLangmead-Jones@bright-futures.co.uk
       subjects: maths, physics, computing
@@ -144,17 +184,27 @@ providers:
     - header: Tauheedal Islamic Boys' High School
       link: https://www.tibhs.com/
       name: Rizwana Mayat
-      email: Rizwana.mayat@tibhs.staracademies.org
+      email: rizwana.mayat@tibhs.staracademies.org
       subjects: maths, physics, computing
     - header: William Howard School
-      link: https://www.williamhoward.cumbria.sch.uk
+      link: https://www.williamhoward.cumbria.sch.uk/
       name: Katy Birks
       email: kbirks@williamhoward.cumbria.sch.uk
+      subjects: maths, physics, computing
+    - header: Outwood Grange Academies Trust
+      link: https://teachnorth.com/internships
+      name: Emma Sikora
+      email: e.sikora@outwood.com   
+      subjects: maths, physics, computing
+    - header: Deyes High School
+      link: https://www.amp-scitt.lydiatelearningtrust.co.uk/teaching-internship/
+      name: Michael Boyle
+      email: teachertraining@deyeshigh.co.uk
       subjects: maths, physics, computing
   South East:
     providers:
     - header: Invicta Grammar School
-      link: https://www.viat.org.uk/925/about-valley-invicta-teacher-training
+      link: https://www.viat.org.uk/1051/teaching-internship-programme-2022
       name: Alison Donovan
       email: a.donovan@viat.org.uk
       subjects: maths, physics, computing
@@ -166,10 +216,10 @@ providers:
     - header: Ringwood School
       link: https://www.ringwood.hants.sch.uk/teacher-training/ringwood-school-teaching-alliance-paid-internships/
       name: Ani Costello
-      email: acostello@ringwood.hants.sch.uk
+      email: acostello@ringwood.hants.sch.uk 
       subjects: maths, physics, computing
     - header: Rosebery School
-      link: https://www.glfscitt.org/
+      link: https://www.glfscitt.org/259/teaching-internship-programme-mathematics-computing-or-physics-3-wks-paid
       name: GLF Teacher Training
       email: info@glftt.org
       subjects: maths, physics, computing
@@ -179,7 +229,7 @@ providers:
       email: k.cornforth@xaviercet.org.uk
       subjects: maths, physics, computing
     - header: Thomas Aveling School
-      link: https://www.thomasaveling.co.uk
+      link: https://www.thomasaveling.co.uk/page/?title=Teaching+Internships&pid=280
       name: Paul Jackson
       email: pjackson@thomasaveling.co.uk
       subjects: maths, physics, computing
@@ -192,6 +242,16 @@ providers:
       link: https://www.i2ipartnership.co.uk/
       name: Krissy Taylor
       email: ktaylor@i2ipartnership.co.uk
+      subjects: maths, physics, computing
+    - header: The Cherwell School
+      link: https://www.cherwell.oxon.sch.uk/
+      name: Tracey Parish
+      email: tparish@cherwellschool.org
+      subjects: maths, physics, computing
+    - header: Bitterne Park School
+      link: https://www.bitterneparkschool.org.uk/
+      name: Victoria Holland
+      email: alliance.office@bitterneparkschool.org.uk
       subjects: maths, physics, computing
   South West:
     providers:
@@ -211,7 +271,7 @@ providers:
       email: admintsa@stjohns.excalibur.org.uk
       subjects: maths, physics, computing
     - header: The Roseland Academy
-      link: https://www.theroseland.co.uk
+      link: https://www.theroseland.co.uk/
       name: Lenka Chanter / Greg Pankhurst
       email: internship@theroseland.co.uk
       subjects: maths, physics, computing
@@ -223,19 +283,19 @@ providers:
       email: twilson@centralrsaacademies.co.uk
       subjects: maths, physics, computing
     - header: Bishop Challoner Catholic College
-      link: https://www.bctsa.org/teaching-internship-programme
+      link: https://www.bctsa.org/605/teaching-internship-programme
       name: Catherine Haines
       email: internships@bishopchalloner.bham.sch.uk
       subjects: maths, physics, computing
     - header: Haybridge High School and Sixth Form
-      link: https://www.teachwithhaybridge.co.uk
+      link: https://www.teachwithhaybridge.co.uk/internships/
       name: Nicholas Raggett
       email: nraggett@haybridge.worcs.sch.uk
       subjects: maths, physics, computing
     - header: Painsley Catholic College
-      link: https://www.goldenthreadtsh.co.uk
+      link: https://www.goldenthreadtsh.co.uk/
       name: Louise Bullock
-      email: LBU@painsley.staffs.sch.uk
+      email: LBU@painsley.staffs.sch.uk;
       subjects: maths, physics
     - header: St Joseph's College
       link: https://www.cheshiretsh.co.uk/
@@ -243,12 +303,12 @@ providers:
       email: tsa@stjosephsmail.com
       subjects: maths, physics, computing
     - header: The Arthur Terry School
-      link: https://arthurterryteachingschool.atlp.org.uk
+      link: https://arthurterryteachingschool.atlp.org.uk/
       name: Cathryn Mortimer
       email: cmortimer@arthurterry.bham.sch.uk
       subjects: maths, physics, computing
     - header: The Polesworth School
-      link: https://catteachingschool.org/paid-internship-programme/
+      link: http://catteachingschool.org/paid-internship-programme/
       name: Michelle Borders
       email: m.borders@thepolesworthschool.com
       subjects: maths, physics, computing
@@ -256,6 +316,26 @@ providers:
       link: https://www.windsoracademytrust.org.uk/professional-development/teacher-training/
       name: Nathalie Gotting
       email: ngotting@kingswinford.windsoracademytrust.org.uk
+      subjects: maths, physics, computing
+    - header: Barr Beacon School
+      link: https://barrbeaconschool.co.uk/
+      name: Michael Eszrenyi
+      email: info@bbscitt.co.uk
+      subjects: maths, physics, computing
+    - header: Prince Henry's High School
+      link: https://www.princehenrys.worcs.sch.uk/
+      name: Andy Duffy
+      email: ad@princehenrys.worcs.sch.uk
+      subjects: maths, physics, computing
+    - header: Creative Education Trust
+      link: https://www.creativeeducationtrust.org.uk/internship
+      name: Claire Amed
+      email: teachertraining@creativeeducationtrust.org.uk
+      subjects: maths, physics
+    - header: Eden Boys Birmingham
+      link: https://www.starinstitute.org.uk/internships/
+      name: Sumeya Bhikhu
+      email: info@staracademies.org
       subjects: maths, physics, computing
   Yorkshire and Humber:
     providers:
@@ -275,17 +355,17 @@ providers:
       email: smithh@sghs.org.uk
       subjects: maths, physics, computing
     - header: South Hunsley School & Sixth Form College (Yorkshire Wolds Teacher Training)
-      link: https://www.ywtt.org.uk
-      name: Sarah Barley
-      email: sarah.barley@theeducationalliance.org.uk
+      link: https://ywtt.org.uk/ywtt-paid-internship-programme/
+      name: Sarah Barley 
+      email: sarah.barley@theeducationalliance.org.uk 
       subjects: maths, physics, computing
     - header: St Mary's College
-      link: http://www.schooldirecthull.co.uk
+      link: https://www.schooldirecthull.co.uk/
       name: Kerry Kirby
-      email: KKirby@smchull.org
+      email: kkirby@smchull.org   
       subjects: maths, physics, computing
     - header: Wickersley School and Sports College
-      link: https://www.learnersfirst.net/
+      link: https://www.learnersfirst.net/teaching-internships/
       name: Georgina Osborne / Claire Garbutt
       email: teachertraining@learnersfirst.org
       subjects: maths, physics, computing
@@ -293,6 +373,16 @@ providers:
       link: https://wlp.education/vacancies/
       name: Kirsten Russell
       email: krussell@woldgate.net
+      subjects: maths, physics, computing
+    - header: Brighouse High School
+      link: https://www.brighouse.calderdale.sch.uk/
+      name: Janet Brierley
+      email: j.brierley@brighouse.calderdale.sch.uk
+      subjects: maths, physics, computing
+    - header: Outwood Grange Academies Trust
+      link: https://teachnorth.com/internships
+      name: Emma Sikora
+      email: e.sikora@outwood.com   
       subjects: maths, physics, computing
 
 keywords:
