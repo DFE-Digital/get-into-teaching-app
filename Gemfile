@@ -56,7 +56,7 @@ gem "text"
 
 gem "get_into_teaching_api_client_faraday", github: "DFE-Digital/get-into-teaching-api-ruby-client", require: "api/client"
 gem "redis"
-gem "redis-session-store"
+gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
 gem "view_component", "~> 2.48.0"
