@@ -22,6 +22,11 @@ provider_groups:
       name: Karen Bateman
       telephone: '01582 599921'
       email: kbateman@challneyboys.luton.sch.uk
+    - header: Educate Group Initial Teacher Training
+      link: https://educate-group.co.uk/itt/
+      name: Claire King
+      telephone: 01476 512793
+      email: aor@educate-group.co.uk
     - header: Essex and Thames SCITT
       link: https://etpscitt.co.uk/
       name: Fran Attwood
@@ -94,7 +99,7 @@ provider_groups:
       name: Julie Woolley
       telephone: '07919 568841'
       email: jwoolley@cfbt.com
-    - header: Educate Teacher Training
+    - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/itt/
       name: Claire King
       telephone: 01476 512793
@@ -204,6 +209,11 @@ provider_groups:
       email: thonnartm@carmel.bhcet.org.uk
     - header: Durham University
       email: ed.ite@durham.ac.uk
+    - header: Educate Group Initial Teacher Training
+      link: https://educate-group.co.uk/itt/
+      name: Claire King
+      telephone: 01476 512793
+      email: aor@educate-group.co.uk     
     - header: Stockton-on-Tees Teacher Training Partnership
       link: https://www.stocktonscitt.uk
       name: Kirsten Webber
@@ -224,6 +234,11 @@ provider_groups:
     - header: Cumbria Teacher Training
       link: http://www.ctt.ac.uk
       email: scittlead@ctt.ac.uk
+    - header: Educate Group Initial Teacher Training
+      link: https://educate-group.co.uk/itt/
+      name: Claire King
+      telephone: 01476 512793
+      email: aor@educate-group.co.uk
     - header: Kingsbridge EIP SCITT
       name: Gail Thomson
       telephone: '01942 510712 ext 500'
@@ -435,6 +450,11 @@ provider_groups:
       name: Julian White
       telephone: 01274 088 368
       email: j.white@bradfordcollege.ac.uk
+    - header: Educate Group Initial Teacher Training
+      link: https://educate-group.co.uk/itt/
+      name: Claire King
+      telephone: 01476 512793
+      email: aor@educate-group.co.uk
     - header: GORSE SCITT
       name: Stephen McKenzie
       telephone: '01134871777'
