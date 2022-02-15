@@ -138,6 +138,39 @@ jobs:
            SLACK_TITLE: 'Failure Unit Testing Application'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
 
+  linting:
+    name: Linting
+    runs-on: ubuntu-latest
+    needs: [ build ]
+    if: github.ref != 'refs/heads/master'
+    steps:
+      - name: ESLint - JavaScript linting
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
+            ${{needs.build.outputs.DOCKER_IMAGE}} "yarn && yarn js-lint"
+      - name: Lint Ruby
+        run: |-
+          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
+            rubocop --format json --out=/app/out/rubocop-result.json
+      - name: Keep Rubocop output
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: Rubocop_results
+          path: ${{ github.workspace }}/out/rubocop-result.json
+      - name: Lint ERB Templates
+        run: |-
+          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec erblint --lint-all"
+      - name: Lint Markdown
+        run: |-
+          docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
+      - name: Keep Lint Markdown output
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: Rubocop_results
+          path: ${{ github.workspace }}/out/mdl-result.txt
+
   javascript_tests:
     name: Javascript Tests
     runs-on: ubuntu-latest
@@ -149,11 +182,6 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - name: ESLint - JavaScript linting
-        run: |-
-          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{needs.build.outputs.DOCKER_IMAGE}} "yarn && yarn js-lint"
 
       - name: Run Javascript Tests
         run: |-
@@ -184,33 +212,6 @@ jobs:
           key: SONAR-TOKEN, SLACK-WEBHOOK
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-      - name: Lint Ruby
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
-            rubocop --format json --out=/app/out/rubocop-result.json
-
-      - name: Keep Rubocop output
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Rubocop_results
-          path: ${{ github.workspace }}/out/rubocop-result.json
-
-      - name: Lint ERB Templates
-        run: |-
-          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec erblint --lint-all"
-
-      - name: Lint Markdown
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
-
-      - name: Keep Lint Markdown output
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Rubocop_results
-          path: ${{ github.workspace }}/out/mdl-result.txt
 
       - name: Run Specs
         run: |-
@@ -257,7 +258,7 @@ jobs:
     runs-on: ubuntu-latest
     concurrency: Review_${{github.event.inputs.pr}}
     environment:
-       name: Review 
+       name: Review
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
@@ -288,7 +289,7 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Post sticky pull request comment
         uses: marocchino/sticky-pull-request-comment@v2
@@ -307,7 +308,7 @@ jobs:
     name: Development Deployment
     needs: [  master_tests  ]
     if: github.ref == 'refs/heads/master'
-    concurrency: Development   
+    concurrency: Development
     runs-on: ubuntu-latest
     outputs:
       release_tag: ${{steps.tag_version.outputs.pr_number}}
@@ -341,8 +342,8 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }} 
-          
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
+
       - name: Trigger Development Fix Network Policies
         uses: benc-uk/workflow-dispatch@v1.1
         with:
@@ -379,14 +380,14 @@ jobs:
           TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   owasp:
-    name: OWASP Checks 
+    name: OWASP Checks
     needs: [ development ]
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
 
-      - name: Vunerability Test 
+      - name: Vunerability Test
         uses: ./.github/workflows/actions/owasp
         id: deploy
         with:
@@ -400,10 +401,10 @@ jobs:
     name: Quality Assurance Deployment
     needs: [ development ]
     if: github.ref == 'refs/heads/master'
-    concurrency: QA     
+    concurrency: QA
     runs-on: ubuntu-latest
     environment:
-       name: Test 
+       name: Test
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
@@ -433,7 +434,7 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Trigger Test Fix Network Policies
         uses: benc-uk/workflow-dispatch@v1.1
@@ -455,7 +456,7 @@ jobs:
   cypress:
     name: Run Cypress Tests on QA
     runs-on: ubuntu-latest
-    concurrency: Cypress     
+    concurrency: Cypress
     needs: [ qa ]
     steps:
       - name: Check out the repo
@@ -505,9 +506,9 @@ jobs:
     name: Production Deployment
     runs-on: ubuntu-latest
     needs: [ cypress, development ]
-    concurrency: Production     
+    concurrency: Production
     environment:
-       name: Production 
+       name: Production
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
@@ -552,7 +553,7 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Trigger Production Fix Network Policies
         uses: benc-uk/workflow-dispatch@v1.1
