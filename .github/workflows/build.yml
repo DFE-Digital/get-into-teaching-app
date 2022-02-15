@@ -59,7 +59,6 @@ jobs:
                 echo ::set-output name=DOCKER_EVENT::${{ env.DOCKER_REPOSITORY }}:PR-${{ github.event.number }}
              fi
 
-
       - name: Cache Docker layers
         uses: actions/cache@v2.1.7
         with:
@@ -97,11 +96,26 @@ jobs:
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
 
+  cache_docker_image:
+    name: Cache Docker Image
+    runs-on: ubuntu-latest
+    needs: [ build ]
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - name: Pull the docker image to cache
+        run: |-
+          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} \
+            bundle exec rails -v
 
   master_tests:
     name: Unit Tests (Master Branch)
     runs-on: ubuntu-latest
-    needs: [ build ]
+    needs: [ build, cache_docker_image ]
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Check out the repo
@@ -138,43 +152,10 @@ jobs:
            SLACK_TITLE: 'Failure Unit Testing Application'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
 
-  linting:
-    name: Linting
+  ruby_linting:
+    name: Ruby Linting
     runs-on: ubuntu-latest
-    needs: [ build ]
-    if: github.ref != 'refs/heads/master'
-    steps:
-      - name: ESLint - JavaScript linting
-        run: |-
-          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{needs.build.outputs.DOCKER_IMAGE}} "yarn && yarn js-lint"
-      - name: Lint Ruby
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
-            rubocop --format json --out=/app/out/rubocop-result.json
-      - name: Keep Rubocop output
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Rubocop_results
-          path: ${{ github.workspace }}/out/rubocop-result.json
-      - name: Lint ERB Templates
-        run: |-
-          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec erblint --lint-all"
-      - name: Lint Markdown
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
-      - name: Keep Lint Markdown output
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Rubocop_results
-          path: ${{ github.workspace }}/out/mdl-result.txt
-
-  javascript_tests:
-    name: Javascript Tests
-    runs-on: ubuntu-latest
-    needs: [ build ]
+    needs: [ build, cache_docker_image ]
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
@@ -182,6 +163,50 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - name: Lint Ruby
+        run: |-
+          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
+            rubocop --format json --out=/app/out/rubocop-result.json
+
+      - name: Keep Rubocop output
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: rubocop_results
+          path: ${{ github.workspace }}/out/rubocop-result.json
+
+      - name: Lint ERB Templates
+        run: |-
+          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec erblint --lint-all"
+
+      - name: Lint Markdown
+        run: |-
+          docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
+
+      - name: Keep Lint Markdown output
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: rubocop_results
+          path: ${{ github.workspace }}/out/mdl-result.txt
+
+  javascript_tests:
+    name: Javascript Tests
+    runs-on: ubuntu-latest
+    needs: [ build, cache_docker_image ]
+    if: github.ref != 'refs/heads/master'
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - name: ESLint - JavaScript linting
+        run: |-
+          docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
+            ${{needs.build.outputs.DOCKER_IMAGE}} "yarn && yarn js-lint"
 
       - name: Run Javascript Tests
         run: |-
@@ -191,7 +216,70 @@ jobs:
   feature_tests:
     name: Unit Tests (Feature Branch)
     runs-on: ubuntu-latest
-    needs: [ build ]
+    needs: [ build, cache_docker_image ]
+    if: github.ref != 'refs/heads/master'
+    strategy:
+      fail-fast: false
+      matrix:
+        ci_node_total: [4]
+        ci_node_index: [0, 1, 2, 3]
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        id:  keyvault-yaml-secret
+        with:
+          keyvault: ${{ secrets.KEY_VAULT}}
+          secret: INFRA-KEYS
+          key: SLACK-WEBHOOK, KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Run Specs
+        run: |-
+          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e KNAPSACK_PRO_FIXED_QUEUE_SPLIT -e KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC -e KNAPSACK_PRO_COMMIT_HASH -e KNAPSACK_PRO_BRANCH -e KNAPSACK_PRO_CI_NODE_TOTAL -e KNAPSACK_PRO_CI_NODE_INDEX -e KNAPSACK_PRO_LOG_LEVEL -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
+            "bundle exec rake 'knapsack_pro:queue:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report-${{ matrix.ci_node_index }}.xml --format progress]' spec"
+        env:
+          KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC: ${{ steps.keyvault-yaml-secret.outputs.KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC }}
+          KNAPSACK_PRO_CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
+          KNAPSACK_PRO_CI_NODE_INDEX: ${{ matrix.ci_node_index }}
+          KNAPSACK_PRO_COMMIT_HASH: ${{ github.sha }}
+          KNAPSACK_PRO_BRANCH: ${{ github.ref }}
+          KNAPSACK_PRO_LOG_LEVEL: info
+          KNAPSACK_PRO_FIXED_QUEUE_SPLIT: true
+
+      - name: Fix report file paths
+        run: |
+          sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/coverage.json
+          sudo mv coverage/coverage.json coverage/coverage-${{ matrix.ci_node_index }}.json
+
+      - name:  Keep Code Coverage Report
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: code_coverage
+          path: ${{ github.workspace }}/coverage/*
+
+      - name:  Keep Unit Tests Results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: unit_tests
+          path: ${{ github.workspace }}/out/*
+
+
+  sonarscanner:
+    name: Sonar Scanner
+    runs-on: ubuntu-latest
+    needs: [ feature_tests ]
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
@@ -209,34 +297,17 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
-          key: SONAR-TOKEN, SLACK-WEBHOOK
+          key: SONAR-TOKEN
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Run Specs
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
-            bundle exec parallel_split_test spec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress
-
-      - name: Fixup report file paths
-        run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/coverage.json
-
-      - name:  Keep Code Coverage Report
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Code_Coverage
-          path: ${{ github.workspace }}/coverage/*
-
-      - name:  Keep Unit Tests Results
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: unit_tests
-          path: ${{ github.workspace }}/out/*
-
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v3
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@master
+        with:
+          path: ${{ github.workspace }}
 
       - name: Run sonarqube
         env:
@@ -246,14 +317,13 @@ jobs:
            -Dsonar.organization=dfe-digital
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
-           -Dsonar.testExecutionReportPaths=out/test-report.xml
-           -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/coverage.json
-           -Dsonar.ruby.rubocop.reportPaths=${PWD}/out/rubocop-result.json
-
+           -Dsonar.testExecutionReportPaths=${{github.workspace}}/unit_tests/test-report-0.xml,${{github.workspace}}/unit_tests/test-report-1.xml,${{github.workspace}}/unit_tests/test-report-2.xml,${{github.workspace}}/unit_tests/test-report-3.xml
+           -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/code_coverage/coverage-0.json,${{github.workspace}}/code_coverage/coverage-1.json,${{github.workspace}}/code_coverage/coverage-2.json,${{github.workspace}}/code_coverage/coverage-3.json
+           -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/rubocop_results/rubocop-result.json
 
   review:
     name: Review Deployment Process
-    needs: [  build  ]
+    needs: [ build ]
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     concurrency: Review_${{github.event.inputs.pr}}

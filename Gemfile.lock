@@ -29,6 +29,15 @@ GIT
     geometry (6.5)
 
 GIT
+  remote: https://github.com/otherguy/rspec-sonarqube-formatter.git
+  revision: 13fe436921e1442a09c23d9e46055773d1511638
+  ref: 13fe436
+  specs:
+    rspec-sonarqube-formatter (1.0.0.pre.local)
+      htmlentities (~> 4.3.3)
+      rspec (~> 3.0)
+
+GIT
   remote: https://github.com/waiting-for-dev/front_matter_parser.git
   revision: 09a839ab9c04237df203af22c1c84f2a45a10ab6
   specs:
@@ -249,6 +258,8 @@ GEM
       activerecord
       kaminari-core (= 1.2.2)
     kaminari-core (1.2.2)
+    knapsack_pro (3.1.3)
+      rake
     kramdown (2.3.1)
       rexml
     kramdown-parser-gfm (1.1.0)
@@ -294,9 +305,6 @@ GEM
     observer (0.1.1)
     os (1.1.1)
     parallel (1.21.0)
-    parallel_split_test (0.10.0)
-      parallel (>= 0.5.13)
-      rspec-core (>= 3.9.0)
     parser (3.0.2.0)
       ast (~> 2.4.1)
     prometheus-client (2.1.0)
@@ -390,9 +398,6 @@ GEM
       rspec-support (~> 3.10)
     rspec-retry (0.6.2)
       rspec-core (> 3.3)
-    rspec-sonarqube-formatter (1.5.0)
-      htmlentities (~> 4.3.3)
-      rspec (~> 3.0)
     rspec-support (3.10.2)
     rubocop (1.23.0)
       parallel (~> 1.10)
@@ -530,6 +535,7 @@ DEPENDENCIES
   google-api-client (>= 0.53.0)
   govuk_design_system_formbuilder (>= 2.7.6)
   kaminari (~> 1.2, >= 1.2.2)
+  knapsack_pro
   kramdown (>= 2.3.1)
   listen (~> 3.7.1)
   loaf (>= 0.10.0)
@@ -537,7 +543,6 @@ DEPENDENCIES
   matrix (>= 0.4.2)
   mdl
   observer (>= 0.1.0)
-  parallel_split_test
   prometheus-client
   pry-byebug
   pry-rails
@@ -552,7 +557,7 @@ DEPENDENCIES
   rinku
   rspec-rails (~> 5.1.0)
   rspec-retry
-  rspec-sonarqube-formatter (~> 1.5)
+  rspec-sonarqube-formatter!
   rubocop-govuk (~> 4.2.0)
   secure_headers
   selenium-webdriver (~> 3.142)

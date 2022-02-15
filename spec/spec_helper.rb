@@ -13,6 +13,9 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require "knapsack_pro"
+KnapsackPro::Adapters::RSpecAdapter.bind
+
 require "webmock/rspec"
 
 require "simplecov"
@@ -27,6 +30,10 @@ SimpleCov.start "rails" do
     SimpleCov::Formatter::HTMLFormatter,
     SimpleCov::Formatter::JSONFormatter,
   ]
+end
+
+KnapsackPro::Hooks::Queue.before_queue do |queue_id|
+  SimpleCov.command_name("rspec_ci_node_#{KnapsackPro::Config::Env.ci_node_index}")
 end
 
 RSpec.configure do |config|
