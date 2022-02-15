@@ -82,6 +82,7 @@ If you’re thinking about returning to teaching, or if you’re qualified to te
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
   <iframe 
+    title="A video about returning to teaching"
     loading="lazy"
     src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" 
     frameborder="0" 
@@ -125,6 +126,7 @@ If you have [qualified teacher status](https://www.gov.uk/guidance/qualified-tea
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
   <iframe 
+    title="A video about what Return to Teaching Advisers do"
     loading="lazy"
     src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" 
     frameborder="0" 

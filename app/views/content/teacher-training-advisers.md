@@ -68,6 +68,7 @@ Our advisers can help you at any time, even if you're a year or more away from a
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
   <iframe 
+    title="A video about what Teacher Training Advisers do"
     loading="lazy"
     src="https://www.youtube-nocookie.com/embed/ZaGL8c4FkLA" 
     frameborder="0" 
@@ -88,6 +89,7 @@ Your adviser can help you navigate your path into teaching, and make sure you ge
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
   <iframe 
+    title="A video about what teaching experience our Teacher Training Advisers have"
     loading="lazy"
     src="https://www.youtube-nocookie.com/embed/T9Bhcaa6LJ4" 
     frameborder="0" 
