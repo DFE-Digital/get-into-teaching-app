@@ -15,6 +15,8 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Calls to Action](#calls-to-action)
 		* [Main Content](#main-content)
 		* [Sidebar](#sidebar)
+  * [Accessibility](#accessibility)
+    * [iframe](#iframe)
 3. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
@@ -201,7 +203,7 @@ The above example would render out as follows:
 
 <img src="images/content_cta_examples.png" alt="Example Content CTAs" style="width: 500px;">
 
-### Sidebar
+#### Sidebar
 
 It is also possible to place multiple CTAs in the right column of the page:
 
@@ -231,6 +233,19 @@ This is the main content.
 The above example would render out as follows:
 
 <img src="images/sidebar_cta_examples.png" alt="Example Sidebar CTAs" style="width: 500px;">
+
+### Accessibility
+
+#### iframe
+
+When adding an iFrame elemet as part of Markdown content or a HTML page we should ensure it has an appropriate `title` attribute that explains the contents of the iFrame (in most of our cases we are showing a video). For example:
+
+```
+<iframe 
+  title="A video about returning to teaching"
+  ...
+></iframe>
+```
 
 ## Creating a Blog Post
 
