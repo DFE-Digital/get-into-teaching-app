@@ -367,8 +367,8 @@ provider_groups:
       telephone: 01726 891 745
       email: info@learninginstitute.co.uk
     - header: Wessex Schools Training Partnership
-      name: Mike Petrus
-      telephone: 01202 662044
+      name: Claire Porter
+      telephone: 01202 662038
       email: WSTP@poolehigh.poole.sch.uk
   West Midlands:
     providers:
@@ -432,9 +432,9 @@ provider_groups:
     providers:
     - header: Bradford College
       link: https://www.bradfordcollege.ac.uk/courses/course/qualified-teacher-status-qts-assessment-only-programme/
-      name: Lee Parsell
+      name: Julian White
       telephone: 01274 088 368
-      email: l.parsell@bradfordcollege.ac.uk
+      email: j.white@bradfordcollege.ac.uk
     - header: GORSE SCITT
       name: Stephen McKenzie
       telephone: '01134871777'
