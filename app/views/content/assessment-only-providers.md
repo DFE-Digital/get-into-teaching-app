@@ -272,8 +272,8 @@ provider_groups:
       email: pgadmissions@canterbury.ac.uk
     - header: e-Qualitas
       link: https://www.e-qualitas.co.uk/for-schools/training-routes/assessment-only/
-      name: Vivien Johnston
-      email: vivien@e-qualitas.co.uk
+      name: Helen Gregory
+      email: helen.gregory@e-Qualitas.co.uk
     - header: George Abbot SCITT
       link: https://georgeabbottraining.co.uk/courses/
       name: Joanna Jones
