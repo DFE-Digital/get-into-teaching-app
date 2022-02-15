@@ -10,12 +10,7 @@ describe Footer::FeedbackComponent, type: "component" do
   end
 
   specify "the content is present" do
-    expect(page).to have_content(/Is this page helpful\?/)
-    expect(page).to have_link("Tell us what you think")
-  end
-
-  specify "Has valid GTM targets" do
-    expect(page).to have_css(".page-question__answer", text: "Yes")
-    expect(page).to have_css(".page-question__answer", text: "No")
+    href = "https://docs.google.com/forms/d/e/1FAIpQLSdBXbU5nwP6_3TH7HY5rB4ehkSDNzfKqB5X2G7wG4K6LY97-g/viewform"
+    expect(page).to have_link("Tell us what you think about this service", href: href)
   end
 end

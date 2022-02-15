@@ -147,8 +147,4 @@ section.container {
     flex: 0 1 100%;
     @include indent-left-and-right;
   }
-
-  >.page-helpful {
-    flex: 0 1 65%;
-  }
 }

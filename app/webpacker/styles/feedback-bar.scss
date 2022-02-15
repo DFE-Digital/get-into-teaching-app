@@ -1,71 +1,18 @@
 .feedback-bar {
-  background-color: $white;
-  padding: 40px;
-  bottom: 0;
+  margin-bottom: $indent-amount;
 
-  @include mq($until: tablet) {
-    padding: 1.5em;
-  }
-
-  &__inner {
-    max-width: $content-max-width;
+  .container {
+    padding: 0 $indent-amount;
+    flex-direction: row;
     align-items: center;
-    display: flex;
-    margin: 0 auto;
-
-    h2 {
-      @include content-heading;
-      max-width: 100%;
-
-      &:after {
-        content: "";
-      }
-    }
-
-    @include mq($until: tablet) {
-      flex-direction: column;
-      align-items: flex-start;
-    }
+    column-gap: $indent-amount;
+    justify-content: flex-start;
   }
 
-  &__left {
-    margin-right: 1em;
-    @include font-size(small);
-    font-weight: bold;
-
-    @include mq($until: tablet) {
-      padding: .2em 0 1em;
-    }
-  }
-
-  &__right {
-    justify-items: left;
-    align-items: left;
-    display: flex;
-    flex-direction: column;
-
-    #page-helpful {
-      a {
-        margin-left: .5em;
-        padding: 2em .5em;
-      }
-    }
-
-    #tell-us-what-you-think {
-      margin: .5em 0;
-
-      a {
-        padding: .5em 0;
-        line-height: 2.6;
-      }
-    }
-
-    @include mq($until: tablet) {
-      padding: .2em 0 1em;
-
-      #page-helpful {
-        margin-bottom: .5em;
-      }
-    }
+  h2 {
+    background: $blue;
+    color: $white;
+    display: inline-block;
+    padding: .4rem $indent-amount;
   }
 }
