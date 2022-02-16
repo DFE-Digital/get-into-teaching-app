@@ -45,9 +45,9 @@ It’s also a good idea to read up on the latest [Teachers’ Standards](https:/
 >
 > _Lara Griffiths, returning maths teacher_
 
-## Teaching maths, physics or languages? Get free one-to-one support
+## Get free one-to-one support
 
-If you hold [Qualified Teacher Status](https://www.gov.uk/guidance/qualified-teacher-status-qts) to teach maths, physics or languages, you can access a wealth of personalised guidance from a [Return to Teaching Adviser](https://adviser-getintoteaching.education.gov.uk/) (RTTA).
+If you have [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) and want to return to teach maths, physics, chemistry, computing or languages, you can get a [Return to Teaching Adviser](https://adviser-getintoteaching.education.gov.uk/) (RTTA). They can provide a wealth of personalised guidance.
 
 From helping you to brush up on your subject knowledge to preparing for interviews, our advisers will be with you every step of the way and help you get back in the classroom.
 
@@ -85,4 +85,4 @@ Once you have made the decision to return to teaching what’s the best way of f
 
 Remember though that teacher recruitment goes in cycles, with most teaching roles being advertised from January onwards. Setting up a job alert will mean you don’t miss out on your perfect role.
 
-[Find out more about returning to teaching](/returning-to-teaching). If you’re a qualified maths, physics or languages teacher, [get your Return to Teaching Adviser now](https://adviser-getintoteaching.education.gov.uk/).
+[Find out more about returning to teaching](/returning-to-teaching). If you’re a qualified maths, physics, chemistry, computing or languages teacher, [get your Return to Teaching Adviser now](https://adviser-getintoteaching.education.gov.uk/).
