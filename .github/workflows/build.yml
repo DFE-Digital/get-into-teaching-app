@@ -59,14 +59,6 @@ jobs:
                 echo ::set-output name=DOCKER_EVENT::${{ env.DOCKER_REPOSITORY }}:PR-${{ github.event.number }}
              fi
 
-      - name: Cache Docker layers
-        uses: actions/cache@v2.1.7
-        with:
-          path: /tmp/.buildx-cache
-          key: ${{ runner.os }}-buildx-${{ github.sha }}
-          restore-keys: |
-             ${{ runner.os }}-buildx-
-
       - name: Login to Docker Hub
         uses: docker/login-action@v1.12.0
         with:
@@ -77,28 +69,28 @@ jobs:
       - name: Build and push to Docker Hub
         uses: docker/build-push-action@v2.9.0
         with:
-          builder: ${{ steps.buildx.outputs.name }}
-          cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache
+          context: .
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           tags: |
-                 ${{ steps.docker.outputs.DOCKER_IMAGE }}
-                 ${{ steps.docker.outputs.DOCKER_EVENT }}
+            ${{ steps.docker.outputs.DOCKER_IMAGE }}
+            ${{ steps.docker.outputs.DOCKER_EVENT }}
           push: true
           build-args: |
-                      SHA=${{ steps.sha.outputs.short }}
+            SHA=${{ steps.sha.outputs.short }}
 
       - name: Build and output locally
         uses: docker/build-push-action@v2.9.0
         with:
           outputs: type=docker,dest=/tmp/image.tar
-          builder: ${{ steps.buildx.outputs.name }}
-          cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache
+          context: .
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           tags: |
-                 ${{ steps.docker.outputs.DOCKER_IMAGE }}
-                 ${{ steps.docker.outputs.DOCKER_EVENT }}
+            ${{ steps.docker.outputs.DOCKER_IMAGE }}
+            ${{ steps.docker.outputs.DOCKER_EVENT }}
           build-args: |
-                      SHA=${{ steps.sha.outputs.short }}
+            SHA=${{ steps.sha.outputs.short }}
 
 
       - name: Upload artifact
@@ -168,7 +160,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - name: Download Docker image from previous workflow
+      - name: Download Artifacts
         uses: actions/download-artifact@v2
 
       - name: Load Docker Image
@@ -194,13 +186,6 @@ jobs:
         run: |-
           docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
 
-      - name: Keep Lint Markdown output
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: rubocop_results
-          path: ${{ github.workspace }}/out/mdl-result.txt
-
   javascript_tests:
     name: Javascript Tests
     runs-on: ubuntu-latest
@@ -213,7 +198,7 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - name: Download Docker image from previous workflow
+      - name: Download Artifacts
         uses: actions/download-artifact@v2
 
       - name: Load Docker Image
@@ -237,8 +222,6 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        # If you update this ensure you also update the Sonar Scanner step
-        # to reference additional coverage/test reports!
         ci_node_total: [4]
         ci_node_index: [0, 1, 2, 3]
     steps:
@@ -261,7 +244,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Download Docker image from previous workflow
+      - name: Download Artifacts
         uses: actions/download-artifact@v2
 
       - name: Load Docker Image
@@ -269,7 +252,9 @@ jobs:
 
       - name: Run Specs
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e KNAPSACK_PRO_FIXED_QUEUE_SPLIT -e KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC -e KNAPSACK_PRO_COMMIT_HASH -e KNAPSACK_PRO_BRANCH -e KNAPSACK_PRO_CI_NODE_TOTAL -e KNAPSACK_PRO_CI_NODE_INDEX -e KNAPSACK_PRO_LOG_LEVEL -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
+          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage/coverage-${{ matrix.ci_node_index }}:/app/coverage -e TEST_REPORT_FILE -e TEST_REPORT_FINAL_FILE -e KNAPSACK_PRO_FIXED_QUEUE_SPLIT \
+            -e KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC -e KNAPSACK_PRO_COMMIT_HASH -e KNAPSACK_PRO_BRANCH -e KNAPSACK_PRO_CI_NODE_TOTAL -e KNAPSACK_PRO_CI_NODE_INDEX -e \
+            KNAPSACK_PRO_LOG_LEVEL -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
             "bundle exec rake 'knapsack_pro:queue:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress]' spec"
         env:
           KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC: ${{ steps.keyvault-yaml-secret.outputs.KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC }}
@@ -279,18 +264,15 @@ jobs:
           KNAPSACK_PRO_BRANCH: ${{ github.ref }}
           KNAPSACK_PRO_LOG_LEVEL: info
           KNAPSACK_PRO_FIXED_QUEUE_SPLIT: true
-
-      - name: Fix report file paths
-        run: |
-          sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/coverage.json
-          sudo mv coverage/coverage.json coverage/coverage-${{ matrix.ci_node_index }}.json
+          TEST_REPORT_FILE: /app/out/test-report.xml
+          TEST_REPORT_FINAL_FILE: /app/out/test-report-final.xml
 
       - name:  Keep Code Coverage Report
         if: always()
         uses: actions/upload-artifact@v2
         with:
           name: code_coverage
-          path: ${{ github.workspace }}/coverage/*
+          path: ${{ github.workspace }}/coverage
 
       - name:  Keep Unit Tests Results
         if: always()
@@ -303,7 +285,7 @@ jobs:
   sonarscanner:
     name: Sonar Scanner
     runs-on: ubuntu-latest
-    needs: [ feature_tests ]
+    needs: [ build, feature_tests ]
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
@@ -328,23 +310,22 @@ jobs:
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v3
 
-      - name: Download Artifacts (unit_tests)
-        uses: actions/download-artifact@master
-        with:
-          name: unit_tests
-          path: ${{ github.workspace }}
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
 
-      - name: Download Artifacts (code_coverage)
-        uses: actions/download-artifact@master
-        with:
-          name: code_coverage
-          path: ${{ github.workspace }}
+      - name: Load Docker Image
+        run: docker load --input app/image.tar
 
-      - name: Download Artifacts (rubocop_results)
-        uses: actions/download-artifact@master
-        with:
-          name: rubocop_results
-          path: ${{ github.workspace }}
+      - name: Combine Coverage Reports
+        run: |-
+          docker run -t --rm -v ${{github.workspace}}/code_coverage:/app/coverage -e RAILS_ENV=test -e COVERAGE_DIR \
+            ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec rake coverage:collate"
+        env:
+          COVERAGE_DIR: /app/coverage
+
+      - name: Fix report file paths
+        run: |
+          sudo sed -i "s?\"/app/?\"${PWD}/?" ${{github.workspace}}/code_coverage/coverage.json
 
       - name: Run sonarqube
         env:
@@ -354,9 +335,9 @@ jobs:
            -Dsonar.organization=dfe-digital
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
-           -Dsonar.testExecutionReportPaths=${{github.workspace}}/test-report-final.xml
-           -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/coverage-0.json,${{github.workspace}}/coverage-1.json,${{github.workspace}}/coverage-2.json,${{github.workspace}}/coverage-3.json
-           -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/rubocop-result.json
+           -Dsonar.testExecutionReportPaths=${{github.workspace}}/unit_tests/test-report-final.xml
+           -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/code_coverage/coverage.json
+           -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/rubocop_results/rubocop-result.json
 
   review:
     name: Review Deployment Process

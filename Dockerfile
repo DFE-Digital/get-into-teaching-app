@@ -20,10 +20,14 @@ RUN apk add --no-cache build-base git tzdata shared-mime-info nodejs yarn\
 
 # install NPM packages removign artifacts
 COPY package.json yarn.lock ./
-RUN yarn install && yarn cache clean
+# hadolint ignore=DL3060
+RUN yarn install
+
+# hadolint ignore=DL3022
+COPY --from=ghcr.io/dfe-digital/get-into-teaching-frontend:master /usr/local/bundle /usr/local/bundle
 
 # Install bundler
-RUN gem install bundler --version=2.2.23
+RUN gem install bundler --version=2.3.4
 
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./
@@ -40,7 +44,7 @@ RUN SECRET_KEY_BASE=1 RAILS_BUILD=1 bundle exec rake assets:precompile
 # Cap images to have a max width of 1000px
 # Lossless optimize PNGs
 # Optimize JPEG at 90% quality
-RUN find public -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -exec convert --resize '1000' {} \; \
+RUN find public -type f \( -iname "*.png" -o -iname "*.jpg" -o -iname "*.jpeg" \) -exec magick {} -resize 1000\> {} \; \
     && find public -type f -iname "*.png" -exec pngquant --quality=65-80 {} \; \
     && find public -type f \( -iname "*.jpg" -o -iname "*.jpeg" \) -exec jpegoptim -m75 --strip-all {} \;
 
