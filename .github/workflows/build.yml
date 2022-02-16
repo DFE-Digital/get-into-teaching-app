@@ -87,6 +87,26 @@ jobs:
           build-args: |
                       SHA=${{ steps.sha.outputs.short }}
 
+      - name: Build and output locally
+        uses: docker/build-push-action@v2.9.0
+        with:
+          outputs: type=docker,dest=/tmp/image.tar
+          builder: ${{ steps.buildx.outputs.name }}
+          cache-from: type=local,src=/tmp/.buildx-cache
+          cache-to: type=local,dest=/tmp/.buildx-cache
+          tags: |
+                 ${{ steps.docker.outputs.DOCKER_IMAGE }}
+                 ${{ steps.docker.outputs.DOCKER_EVENT }}
+          build-args: |
+                      SHA=${{ steps.sha.outputs.short }}
+
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: app
+          path: /tmp/image.tar
+
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'
         uses: rtCamp/action-slack-notify@master
@@ -96,26 +116,10 @@ jobs:
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
 
-  cache_docker_image:
-    name: Cache Docker Image
-    runs-on: ubuntu-latest
-    needs: [ build ]
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v2.4.0
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - name: Pull the docker image to cache
-        run: |-
-          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} \
-            bundle exec rails -v
-
   master_tests:
     name: Unit Tests (Master Branch)
     runs-on: ubuntu-latest
-    needs: [ build, cache_docker_image ]
+    needs: [ build ]
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Check out the repo
@@ -155,7 +159,7 @@ jobs:
   ruby_linting:
     name: Ruby Linting
     runs-on: ubuntu-latest
-    needs: [ build, cache_docker_image ]
+    needs: [ build ]
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
@@ -163,6 +167,12 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - name: Download Docker image from previous workflow
+        uses: actions/download-artifact@v2
+
+      - name: Load Docker Image
+        run: docker load --input app/image.tar
 
       - name: Lint Ruby
         run: |-
@@ -194,7 +204,7 @@ jobs:
   javascript_tests:
     name: Javascript Tests
     runs-on: ubuntu-latest
-    needs: [ build, cache_docker_image ]
+    needs: [ build ]
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
@@ -202,6 +212,12 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - name: Download Docker image from previous workflow
+        uses: actions/download-artifact@v2
+
+      - name: Load Docker Image
+        run: docker load --input app/image.tar
 
       - name: ESLint - JavaScript linting
         run: |-
@@ -216,11 +232,13 @@ jobs:
   feature_tests:
     name: Unit Tests (Feature Branch)
     runs-on: ubuntu-latest
-    needs: [ build, cache_docker_image ]
+    needs: [ build ]
     if: github.ref != 'refs/heads/master'
     strategy:
       fail-fast: false
       matrix:
+        # If you update this ensure you also update the Sonar Scanner step
+        # to reference additional coverage/test reports!
         ci_node_total: [4]
         ci_node_index: [0, 1, 2, 3]
     steps:
@@ -243,10 +261,16 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
+      - name: Download Docker image from previous workflow
+        uses: actions/download-artifact@v2
+
+      - name: Load Docker Image
+        run: docker load --input app/image.tar
+
       - name: Run Specs
         run: |-
           docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e KNAPSACK_PRO_FIXED_QUEUE_SPLIT -e KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC -e KNAPSACK_PRO_COMMIT_HASH -e KNAPSACK_PRO_BRANCH -e KNAPSACK_PRO_CI_NODE_TOTAL -e KNAPSACK_PRO_CI_NODE_INDEX -e KNAPSACK_PRO_LOG_LEVEL -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
-            "bundle exec rake 'knapsack_pro:queue:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report-${{ matrix.ci_node_index }}.xml --format progress]' spec"
+            "bundle exec rake 'knapsack_pro:queue:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress]' spec"
         env:
           KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC: ${{ steps.keyvault-yaml-secret.outputs.KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC }}
           KNAPSACK_PRO_CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
@@ -304,9 +328,22 @@ jobs:
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v3
 
-      - name: Download Artifacts
+      - name: Download Artifacts (unit_tests)
         uses: actions/download-artifact@master
         with:
+          name: unit_tests
+          path: ${{ github.workspace }}
+
+      - name: Download Artifacts (code_coverage)
+        uses: actions/download-artifact@master
+        with:
+          name: code_coverage
+          path: ${{ github.workspace }}
+
+      - name: Download Artifacts (rubocop_results)
+        uses: actions/download-artifact@master
+        with:
+          name: rubocop_results
           path: ${{ github.workspace }}
 
       - name: Run sonarqube
@@ -317,9 +354,9 @@ jobs:
            -Dsonar.organization=dfe-digital
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
-           -Dsonar.testExecutionReportPaths=${{github.workspace}}/unit_tests/test-report-0.xml,${{github.workspace}}/unit_tests/test-report-1.xml,${{github.workspace}}/unit_tests/test-report-2.xml,${{github.workspace}}/unit_tests/test-report-3.xml
-           -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/code_coverage/coverage-0.json,${{github.workspace}}/code_coverage/coverage-1.json,${{github.workspace}}/code_coverage/coverage-2.json,${{github.workspace}}/code_coverage/coverage-3.json
-           -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/rubocop_results/rubocop-result.json
+           -Dsonar.testExecutionReportPaths=${{github.workspace}}/test-report-final.xml
+           -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/coverage-0.json,${{github.workspace}}/coverage-1.json,${{github.workspace}}/coverage-2.json,${{github.workspace}}/coverage-3.json
+           -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/rubocop-result.json
 
   review:
     name: Review Deployment Process
