@@ -214,7 +214,7 @@ providers:
       email: s.nawaz@maidenerleghtrust.org
       subjects: maths, physics, computing
     - header: Ringwood School
-      link: https://www.ringwood.hants.sch.uk/teacher-training/ringwood-school-teaching-alliance-paid-internships/
+      link: https://www.ringwood.hants.sch.uk/teacher-training/paid-internships/
       name: Ani Costello
       email: acostello@ringwood.hants.sch.uk 
       subjects: maths, physics, computing
@@ -360,7 +360,7 @@ providers:
       email: sarah.barley@theeducationalliance.org.uk 
       subjects: maths, physics, computing
     - header: St Mary's College
-      link: https://www.schooldirecthull.co.uk/
+      link: http://www.schooldirecthull.co.uk/
       name: Kerry Kirby
       email: kkirby@smchull.org   
       subjects: maths, physics, computing
