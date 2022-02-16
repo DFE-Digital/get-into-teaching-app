@@ -14,16 +14,22 @@ EXPOSE 3000
 ENTRYPOINT ["bundle", "exec"]
 CMD ["rails", "server" ]
 
+
 RUN apk add --no-cache build-base git tzdata shared-mime-info nodejs yarn\
     wget xvfb unzip chromium chromium-chromedriver \
     pngquant jpegoptim imagemagick parallel
 
 # install NPM packages removign artifacts
 COPY package.json yarn.lock ./
-RUN yarn install && yarn cache clean
+# hadolint ignore=DL3060
+RUN yarn install
+
+
+# hadolint ignore=DL3022
+COPY --from=ghcr.io/dfe-digital/get-into-teaching-frontend:master /usr/local/bundle /usr/local/bundle
 
 # Install bundler
-RUN gem install bundler --version=2.2.23
+RUN gem install bundler --version=2.3.4
 
 # Install Gems removing artifacts
 COPY .ruby-version Gemfile Gemfile.lock ./
