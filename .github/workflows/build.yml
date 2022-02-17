@@ -487,7 +487,7 @@ jobs:
 
   qa:
     name: Quality Assurance Deployment
-    needs: [ development ]
+    needs: [ master_tests ]
     if: github.ref == 'refs/heads/master'
     concurrency: QA
     runs-on: ubuntu-latest
