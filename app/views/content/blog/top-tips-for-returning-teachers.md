@@ -47,7 +47,7 @@ It’s also a good idea to read up on the latest [Teachers’ Standards](https:/
 
 ## Get free one-to-one support
 
-If you have [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) and want to return to teach maths, physics, chemistry, computing or languages, you can get a [Return to Teaching Adviser](https://adviser-getintoteaching.education.gov.uk/) (RTTA). They can provide a wealth of personalised guidance.
+If you have [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) and want to return to teach maths, physics, chemistry, computing or languages, you're eligible for a [Return to Teaching Adviser](https://adviser-getintoteaching.education.gov.uk/) (RTTA). You can get personalised guidance and support from an experienced teaching professional.
 
 From helping you to brush up on your subject knowledge to preparing for interviews, our advisers will be with you every step of the way and help you get back in the classroom.
 
