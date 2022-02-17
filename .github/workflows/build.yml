@@ -59,15 +59,6 @@ jobs:
                 echo ::set-output name=DOCKER_EVENT::${{ env.DOCKER_REPOSITORY }}:PR-${{ github.event.number }}
              fi
 
-
-      - name: Cache Docker layers
-        uses: actions/cache@v2.1.7
-        with:
-          path: /tmp/.buildx-cache
-          key: ${{ runner.os }}-buildx-${{ github.sha }}
-          restore-keys: |
-             ${{ runner.os }}-buildx-
-
       - name: Login to Docker Hub
         uses: docker/login-action@v1.12.0
         with:
@@ -78,15 +69,35 @@ jobs:
       - name: Build and push to Docker Hub
         uses: docker/build-push-action@v2.9.0
         with:
-          builder: ${{ steps.buildx.outputs.name }}
-          cache-from: type=local,src=/tmp/.buildx-cache
-          cache-to: type=local,dest=/tmp/.buildx-cache
+          context: .
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
           tags: |
-                 ${{ steps.docker.outputs.DOCKER_IMAGE }}
-                 ${{ steps.docker.outputs.DOCKER_EVENT }}
+            ${{ steps.docker.outputs.DOCKER_IMAGE }}
+            ${{ steps.docker.outputs.DOCKER_EVENT }}
           push: true
           build-args: |
-                      SHA=${{ steps.sha.outputs.short }}
+            SHA=${{ steps.sha.outputs.short }}
+
+      - name: Build and output locally
+        uses: docker/build-push-action@v2.9.0
+        with:
+          outputs: type=docker,dest=/tmp/image.tar
+          context: .
+          cache-from: type=gha
+          cache-to: type=gha,mode=max
+          tags: |
+            ${{ steps.docker.outputs.DOCKER_IMAGE }}
+            ${{ steps.docker.outputs.DOCKER_EVENT }}
+          build-args: |
+            SHA=${{ steps.sha.outputs.short }}
+
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: app
+          path: /tmp/image.tar
 
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'
@@ -96,7 +107,6 @@ jobs:
            SLACK_MESSAGE: 'There has been a failure building the application'
            SLACK_TITLE: 'Failure Building Application'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
-
 
   master_tests:
     name: Unit Tests (Master Branch)
@@ -138,6 +148,44 @@ jobs:
            SLACK_TITLE: 'Failure Unit Testing Application'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
 
+  ruby_linting:
+    name: Ruby Linting
+    runs-on: ubuntu-latest
+    needs: [ build ]
+    if: github.ref != 'refs/heads/master'
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+
+      - name: Load Docker Image
+        run: docker load --input app/image.tar
+
+      - name: Lint Ruby
+        run: |-
+          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
+            rubocop --format json --out=/app/out/rubocop-result.json
+
+      - name: Keep Rubocop output
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: rubocop_results
+          path: ${{ github.workspace }}/out/rubocop-result.json
+
+      - name: Lint ERB Templates
+        run: |-
+          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec erblint --lint-all"
+
+      - name: Lint Markdown
+        run: |-
+          docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
+
   javascript_tests:
     name: Javascript Tests
     runs-on: ubuntu-latest
@@ -149,6 +197,12 @@ jobs:
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+
+      - name: Load Docker Image
+        run: docker load --input app/image.tar
 
       - name: ESLint - JavaScript linting
         run: |-
@@ -164,6 +218,74 @@ jobs:
     name: Unit Tests (Feature Branch)
     runs-on: ubuntu-latest
     needs: [ build ]
+    if: github.ref != 'refs/heads/master'
+    strategy:
+      fail-fast: false
+      matrix:
+        ci_node_total: [5]
+        ci_node_index: [0, 1, 2, 3, 4]
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        id:  keyvault-yaml-secret
+        with:
+          keyvault: ${{ secrets.KEY_VAULT}}
+          secret: INFRA-KEYS
+          key: SLACK-WEBHOOK, KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+
+      - name: Load Docker Image
+        run: docker load --input app/image.tar
+
+      - name: Run Specs
+        run: |-
+          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage/coverage-${{ matrix.ci_node_index }}:/app/coverage -e TEST_REPORT_FILE -e TEST_REPORT_FINAL_FILE -e KNAPSACK_PRO_FIXED_QUEUE_SPLIT \
+            -e KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC -e KNAPSACK_PRO_COMMIT_HASH -e KNAPSACK_PRO_BRANCH -e KNAPSACK_PRO_CI_NODE_TOTAL -e KNAPSACK_PRO_CI_NODE_INDEX -e \
+            KNAPSACK_PRO_LOG_LEVEL -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
+            "bundle exec rake 'knapsack_pro:queue:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress]' spec"
+        env:
+          KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC: ${{ steps.keyvault-yaml-secret.outputs.KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC }}
+          KNAPSACK_PRO_CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
+          KNAPSACK_PRO_CI_NODE_INDEX: ${{ matrix.ci_node_index }}
+          KNAPSACK_PRO_COMMIT_HASH: ${{ github.sha }}
+          KNAPSACK_PRO_BRANCH: ${{ github.ref }}
+          KNAPSACK_PRO_LOG_LEVEL: info
+          KNAPSACK_PRO_FIXED_QUEUE_SPLIT: true
+          TEST_REPORT_FILE: /app/out/test-report.xml
+          TEST_REPORT_FINAL_FILE: /app/out/test-report-final.xml
+
+      - name:  Keep Code Coverage Report
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: code_coverage
+          path: ${{ github.workspace }}/coverage
+
+      - name:  Keep Unit Tests Results
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: unit_tests
+          path: ${{ github.workspace }}/out/*
+
+
+  sonarscanner:
+    name: Sonar Scanner
+    runs-on: ubuntu-latest
+    needs: [ build, feature_tests ]
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
@@ -181,61 +303,29 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
-          key: SONAR-TOKEN, SLACK-WEBHOOK
+          key: SONAR-TOKEN
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Lint Ruby
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
-            rubocop --format json --out=/app/out/rubocop-result.json
-
-      - name: Keep Rubocop output
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Rubocop_results
-          path: ${{ github.workspace }}/out/rubocop-result.json
-
-      - name: Lint ERB Templates
-        run: |-
-          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec erblint --lint-all"
-
-      - name: Lint Markdown
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
-
-      - name: Keep Lint Markdown output
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Rubocop_results
-          path: ${{ github.workspace }}/out/mdl-result.txt
-
-      - name: Run Specs
-        run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage:/app/coverage -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
-            bundle exec parallel_split_test spec --format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress
-
-      - name: Fixup report file paths
-        run: sudo sed -i "s?\"/app/?\"${PWD}/?" coverage/coverage.json
-
-      - name:  Keep Code Coverage Report
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: Code_Coverage
-          path: ${{ github.workspace }}/coverage/*
-
-      - name:  Keep Unit Tests Results
-        if: always()
-        uses: actions/upload-artifact@v2
-        with:
-          name: unit_tests
-          path: ${{ github.workspace }}/out/*
-
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v3
+
+      - name: Download Artifacts
+        uses: actions/download-artifact@v2
+
+      - name: Load Docker Image
+        run: docker load --input app/image.tar
+
+      - name: Combine Coverage Reports
+        run: |-
+          docker run -t --rm -v ${{github.workspace}}/code_coverage:/app/coverage -e RAILS_ENV=test -e COVERAGE_DIR \
+            ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec rake coverage:collate"
+        env:
+          COVERAGE_DIR: /app/coverage
+
+      - name: Fix report file paths
+        run: |
+          sudo sed -i "s?\"/app/?\"${PWD}/?" ${{github.workspace}}/code_coverage/coverage.json
 
       - name: Run sonarqube
         env:
@@ -245,19 +335,18 @@ jobs:
            -Dsonar.organization=dfe-digital
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
-           -Dsonar.testExecutionReportPaths=out/test-report.xml
-           -Dsonar.ruby.coverage.reportPaths=${PWD}/coverage/coverage.json
-           -Dsonar.ruby.rubocop.reportPaths=${PWD}/out/rubocop-result.json
-
+           -Dsonar.testExecutionReportPaths=${{github.workspace}}/unit_tests/test-report-final.xml
+           -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/code_coverage/coverage.json
+           -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/rubocop_results/rubocop-result.json
 
   review:
     name: Review Deployment Process
-    needs: [  build  ]
+    needs: [ build ]
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     concurrency: Review_${{github.event.inputs.pr}}
     environment:
-       name: Review 
+       name: Review
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
@@ -288,7 +377,7 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Post sticky pull request comment
         uses: marocchino/sticky-pull-request-comment@v2
@@ -307,7 +396,7 @@ jobs:
     name: Development Deployment
     needs: [  master_tests  ]
     if: github.ref == 'refs/heads/master'
-    concurrency: Development   
+    concurrency: Development
     runs-on: ubuntu-latest
     outputs:
       release_tag: ${{steps.tag_version.outputs.pr_number}}
@@ -341,8 +430,8 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }} 
-          
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
+
       - name: Trigger Development Fix Network Policies
         uses: benc-uk/workflow-dispatch@v1.1
         with:
@@ -379,14 +468,14 @@ jobs:
           TOKEN: ${{secrets.GITHUB_TOKEN}}
 
   owasp:
-    name: OWASP Checks 
+    name: OWASP Checks
     needs: [ development ]
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
 
-      - name: Vunerability Test 
+      - name: Vunerability Test
         uses: ./.github/workflows/actions/owasp
         id: deploy
         with:
@@ -398,12 +487,12 @@ jobs:
 
   qa:
     name: Quality Assurance Deployment
-    needs: [ development ]
+    needs: [ master_tests ]
     if: github.ref == 'refs/heads/master'
-    concurrency: QA     
+    concurrency: QA
     runs-on: ubuntu-latest
     environment:
-       name: Test 
+       name: Test
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
@@ -433,7 +522,7 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Trigger Test Fix Network Policies
         uses: benc-uk/workflow-dispatch@v1.1
@@ -455,7 +544,7 @@ jobs:
   cypress:
     name: Run Cypress Tests on QA
     runs-on: ubuntu-latest
-    concurrency: Cypress     
+    concurrency: Cypress
     needs: [ qa ]
     steps:
       - name: Check out the repo
@@ -505,9 +594,9 @@ jobs:
     name: Production Deployment
     runs-on: ubuntu-latest
     needs: [ cypress, development ]
-    concurrency: Production     
+    concurrency: Production
     environment:
-       name: Production 
+       name: Production
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
@@ -552,7 +641,7 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }} 
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Trigger Production Fix Network Policies
         uses: benc-uk/workflow-dispatch@v1.1
