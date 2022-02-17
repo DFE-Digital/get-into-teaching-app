@@ -117,7 +117,7 @@ If you’re looking for an alternative to taking on a teaching role, the [Nation
 
 ## Get a return to teaching adviser
 
-If you have [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach at a secondary school in England, you could get a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/). You'll need to be qualified to teach (one of the following):
+If you have [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach at a secondary school in England, you could be eligible for a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/). You should be interested in teaching (one of the following):
 
 * modern foreign languages
 * maths
