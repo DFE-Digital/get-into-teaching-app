@@ -222,8 +222,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        ci_node_total: [4]
-        ci_node_index: [0, 1, 2, 3]
+        ci_node_total: [5]
+        ci_node_index: [0, 1, 2, 3, 4]
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0

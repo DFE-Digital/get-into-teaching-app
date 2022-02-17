@@ -1,18 +1,15 @@
-FROM ruby:2.7.5-alpine3.14
+FROM ruby:2.7.5-alpine3.14 as build-env
 
 ENV RAILS_ENV=production \
     NODE_ENV=production \
     RAILS_SERVE_STATIC_FILES=true \
     RAILS_LOG_TO_STDOUT=true \
     RACK_TIMEOUT_SERVICE_TIMEOUT=60 \
-    BUNDLE_WITHOUT=development
+    BUNDLE_WITHOUT=development \
+    BUNDLE_JOBS=4
 
 RUN mkdir /app
 WORKDIR /app
-
-EXPOSE 3000
-ENTRYPOINT ["bundle", "exec"]
-CMD ["rails", "server" ]
 
 RUN apk add --no-cache build-base git tzdata shared-mime-info nodejs yarn\
     wget xvfb unzip chromium chromium-chromedriver \
@@ -58,6 +55,27 @@ RUN find public -name "*.jpg" -size "+1b" | parallel -eta magick {} -quality 75 
     && find public -name "*.jpg" -size "+1b" | parallel -eta magick {} -quality 75 "{.}.jp2" \
     && find public -name "*.jpeg" -size "+1b" | parallel -eta magick {} -quality 75 "{.}.jp2"
 
+FROM ruby:2.7.5-alpine3.14
+
+ENV RAILS_ENV=production \
+    NODE_ENV=production \
+    RAILS_SERVE_STATIC_FILES=true \
+    RAILS_LOG_TO_STDOUT=true \
+    RACK_TIMEOUT_SERVICE_TIMEOUT=60
+
+EXPOSE 3000
+ENTRYPOINT ["bundle", "exec"]
+CMD ["rails", "server" ]
+
+RUN apk add --no-cache tzdata nodejs yarn shared-mime-info chromium chromium-chromedriver \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN mkdir /app
+WORKDIR /app
+
+COPY --from=build-env /usr/local/bundle/ /usr/local/bundle/
+
+COPY --from=build-env /app .
+
 ARG SHA
 RUN echo "sha-${SHA}" > /etc/get-into-teaching-app-sha
-
