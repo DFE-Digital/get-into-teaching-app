@@ -80,7 +80,7 @@ class PagesController < ApplicationController
 protected
 
   def static_page_actions
-    %i[cookies privacy_policy].tap do |actions|
+    %i[cookies].tap do |actions|
       actions << :show unless DYNAMIC_PAGE_PATHS.include?(request.path)
     end
   end
