@@ -1,4 +1,4 @@
-If you teach maths, physics, computing, chemistry or modern foreign languages, you could get a return to teaching adviser.
+If you teach maths, physics, computing, chemistry or modern foreign languages, you're eligible for a return to teaching adviser.
 
 You can get:
 
