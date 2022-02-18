@@ -6,7 +6,7 @@ You can set up a job alert to search by:
 * location
 * subject
 * role
-* educational phase (primary, middle, secondary, 16-19)
+* educational phase (primary, middle, secondary, 16 to 19)
 
 Schools and heads in England recognise the value of your overseas experience.
 Due to the COVID-19 pandemic, they are also increasingly familiar and
