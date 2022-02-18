@@ -24,7 +24,7 @@ We’re taking action to address some of the common issues that teachers face in
 * increase [flexible working opportunities](https://www.gov.uk/government/collections/flexible-working-resources-for-teachers-and-schools)
   for teachers
 
-Teacher mental health is an important focus for DfE. Read our [Teaching blog](https://teaching.blog.gov.uk/) to
+Teacher mental health is an important focus for DfE. Read our [teaching blog](https://teaching.blog.gov.uk/) to
 learn more.
 
 ### Contact
