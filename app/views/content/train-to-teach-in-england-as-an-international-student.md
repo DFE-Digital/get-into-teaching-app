@@ -66,6 +66,8 @@ You can apply to train to teach in England from any country in the world. This p
 
 You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
+If you don't want to come to England to train, but would like to gain a professional teaching qualification which is equivalent to English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/international-qualified-teacher-status).
+
 ## Key facts
 
 * Apply now for courses starting September 2022
