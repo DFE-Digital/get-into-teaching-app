@@ -7,8 +7,8 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-    name: Build
+  build_release:
+    name: Build (Release)
     runs-on: ubuntu-latest
     outputs:
       DOCKER_IMAGE: ${{ steps.docker.outputs.DOCKER_IMAGE }}
@@ -32,11 +32,6 @@ jobs:
           key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-
-      - name: Lint Dockerfile
-        uses: brpaz/hadolint-action@master
-        with:
-             dockerfile: "Dockerfile"
 
       - name: Set up Docker Buildx
         id: buildx
@@ -78,6 +73,75 @@ jobs:
           push: true
           build-args: |
             SHA=${{ steps.sha.outputs.short }}
+            BUILD_TYPE=release
+
+      - name: Slack Notification
+        if: failure() && github.ref == 'refs/heads/master'
+        uses: rtCamp/action-slack-notify@master
+        env:
+           SLACK_COLOR: ${{env.SLACK_ERROR}}
+           SLACK_MESSAGE: 'There has been a failure building the application'
+           SLACK_TITLE: 'Failure Building Application'
+           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
+
+  build_test:
+    name: Build (Test)
+    runs-on: ubuntu-latest
+    outputs:
+      DOCKER_IMAGE_TEST: ${{ steps.docker.outputs.DOCKER_IMAGE_TEST }}
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        id:  keyvault-yaml-secret
+        with:
+          keyvault: ${{ secrets.KEY_VAULT}}
+          secret: INFRA-KEYS
+          key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Lint Dockerfile
+        uses: brpaz/hadolint-action@master
+        with:
+             dockerfile: "Dockerfile"
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@master
+
+      - name: Get Short SHA
+        id: sha
+        run: |
+             echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
+
+      - name: Set DOCKER_IMAGE_TEST environment variable
+        id:   docker
+        run: |
+             if [ "${{github.ref}}" == "refs/heads/master" ]
+             then
+                echo ::set-output name=DOCKER_IMAGE_TEST::${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
+                echo ::set-output name=DOCKER_EVENT_TEST::${{ env.DOCKER_REPOSITORY }}:master
+             else
+                echo ::set-output name=DOCKER_IMAGE_TEST::${{ env.DOCKER_REPOSITORY }}:review-${{steps.sha.outputs.short }}
+                echo ::set-output name=DOCKER_EVENT_TEST::${{ env.DOCKER_REPOSITORY }}:PR-${{ github.event.number }}
+             fi
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v1.13.0
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ steps.keyvault-yaml-secret.outputs.ACTIONS-API-ACCESS-TOKEN }}
 
       - name: Build and output locally
         uses: docker/build-push-action@v2.9.0
@@ -87,16 +151,16 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           tags: |
-            ${{ steps.docker.outputs.DOCKER_IMAGE }}
-            ${{ steps.docker.outputs.DOCKER_EVENT }}
+            ${{ steps.docker.outputs.DOCKER_IMAGE_TEST }}
+            ${{ steps.docker.outputs.DOCKER_EVENT_TEST }}
           build-args: |
             SHA=${{ steps.sha.outputs.short }}
-
+            BUILD_TYPE=test
 
       - name: Upload artifact
         uses: actions/upload-artifact@v2
         with:
-          name: app
+          name: app_test
           path: /tmp/image.tar
 
       - name: Slack Notification
@@ -111,7 +175,7 @@ jobs:
   ruby_linting:
     name: Ruby Linting
     runs-on: ubuntu-latest
-    needs: [ build ]
+    needs: [ build_test ]
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
@@ -124,11 +188,11 @@ jobs:
         uses: actions/download-artifact@v2
 
       - name: Load Docker Image
-        run: docker load --input app/image.tar
+        run: docker load --input app_test/image.tar
 
       - name: Lint Ruby
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
+          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} \
             rubocop --format json --out=/app/out/rubocop-result.json
 
       - name: Keep Rubocop output
@@ -140,16 +204,16 @@ jobs:
 
       - name: Lint ERB Templates
         run: |-
-          docker run -t --rm ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec erblint --lint-all"
+          docker run -t --rm ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "bundle exec erblint --lint-all"
 
       - name: Lint Markdown
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
+          docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
 
   javascript_tests:
     name: Javascript Tests
     runs-on: ubuntu-latest
-    needs: [ build ]
+    needs: [ build_test ]
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
@@ -161,27 +225,27 @@ jobs:
         uses: actions/download-artifact@v2
 
       - name: Load Docker Image
-        run: docker load --input app/image.tar
+        run: docker load --input app_test/image.tar
 
       - name: ESLint - JavaScript linting
         run: |-
           docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{needs.build.outputs.DOCKER_IMAGE}} "yarn && yarn js-lint"
+            ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "yarn && yarn js-lint"
 
       - name: Run Javascript Tests
         run: |-
           docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{needs.build.outputs.DOCKER_IMAGE}} "yarn && yarn spec"
+            ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "yarn && yarn spec"
 
   feature_tests:
-    name: Unit Tests (Feature Branch)
+    name: Unit Tests
     runs-on: ubuntu-latest
-    needs: [ build ]
+    needs: [ build_test ]
     strategy:
       fail-fast: false
       matrix:
-        ci_node_total: [5]
-        ci_node_index: [0, 1, 2, 3, 4]
+        ci_node_total: [6]
+        ci_node_index: [0, 1, 2, 3, 4, 5]
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
@@ -206,13 +270,13 @@ jobs:
         uses: actions/download-artifact@v2
 
       - name: Load Docker Image
-        run: docker load --input app/image.tar
+        run: docker load --input app_test/image.tar
 
       - name: Run Specs
         run: |-
           docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage/coverage-${{ matrix.ci_node_index }}:/app/coverage -e TEST_REPORT_FILE -e TEST_REPORT_FINAL_FILE -e KNAPSACK_PRO_FIXED_QUEUE_SPLIT \
             -e KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC -e KNAPSACK_PRO_COMMIT_HASH -e KNAPSACK_PRO_BRANCH -e KNAPSACK_PRO_CI_NODE_TOTAL -e KNAPSACK_PRO_CI_NODE_INDEX -e \
-            KNAPSACK_PRO_LOG_LEVEL -e RAILS_ENV=test ${{needs.build.outputs.DOCKER_IMAGE}} \
+            KNAPSACK_PRO_LOG_LEVEL -e RAILS_ENV=test ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} \
             "bundle exec rake 'knapsack_pro:queue:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress]' spec"
         env:
           KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC: ${{ steps.keyvault-yaml-secret.outputs.KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC }}
@@ -243,7 +307,7 @@ jobs:
   sonarscanner:
     name: Sonar Scanner
     runs-on: ubuntu-latest
-    needs: [ build, feature_tests ]
+    needs: [ build_test, feature_tests ]
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
@@ -272,12 +336,12 @@ jobs:
         uses: actions/download-artifact@v2
 
       - name: Load Docker Image
-        run: docker load --input app/image.tar
+        run: docker load --input app_test/image.tar
 
       - name: Combine Coverage Reports
         run: |-
           docker run -t --rm -v ${{github.workspace}}/code_coverage:/app/coverage -e RAILS_ENV=test -e COVERAGE_DIR \
-            ${{needs.build.outputs.DOCKER_IMAGE}} "bundle exec rake coverage:collate"
+            ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "bundle exec rake coverage:collate"
         env:
           COVERAGE_DIR: /app/coverage
 
@@ -299,7 +363,7 @@ jobs:
 
   review:
     name: Review Deployment Process
-    needs: [ build ]
+    needs: [ build_release ]
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
     concurrency: Review_${{github.event.inputs.pr}}
