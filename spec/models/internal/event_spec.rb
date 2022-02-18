@@ -74,7 +74,7 @@ describe Internal::Event do
       end
 
       it "is expected to ensure events start and end on the same day" do
-        subject.start_at = Time.zone.now.at_midday
+        subject.start_at = Time.zone.tomorrow.at_midday
         is_expected.to allow_value(subject.start_at + 1.hour).for :end_at
         is_expected.not_to allow_value(subject.start_at + 1.day).for :end_at
       end
