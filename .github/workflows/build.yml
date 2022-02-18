@@ -354,7 +354,7 @@ jobs:
 
   development:
     name: Development Deployment
-    needs: [  feature_tests, javascript_tests, ruby_linting  ]
+    needs: [  feature_tests, javascript_tests  ]
     if: github.ref == 'refs/heads/master'
     concurrency: Development
     runs-on: ubuntu-latest
@@ -447,7 +447,7 @@ jobs:
 
   qa:
     name: Quality Assurance Deployment
-    needs: [  feature_tests, javascript_tests, ruby_linting  ]
+    needs: [  feature_tests, javascript_tests  ]
     if: github.ref == 'refs/heads/master'
     concurrency: QA
     runs-on: ubuntu-latest
