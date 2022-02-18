@@ -72,6 +72,12 @@ describe Internal::Event do
         subject.start_at = now + 1.minute
         is_expected.to allow_value(now + 2.minutes).for :end_at
       end
+
+      it "is expected to ensure events start and end on the same day" do
+        subject.start_at = Time.zone.now.at_midday
+        is_expected.to allow_value(subject.start_at + 1.hour).for :end_at
+        is_expected.not_to allow_value(subject.start_at + 1.day).for :end_at
+      end
     end
 
     context "when online event" do
