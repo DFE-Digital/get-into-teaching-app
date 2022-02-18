@@ -71,7 +71,7 @@ If you are a non-UK citizen interested in teaching or training to teach in
 England, please read our [guidance for international teachers](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) or
 [guidance for international trainees](/train-to-teach-in-england-as-an-international-student). 
 
-### Return to teaching success stories
+## Return to teaching success stories
 
 Read [inspiring case studies from returning teachers](/my-story-into-teaching/international-career-changers).
 
