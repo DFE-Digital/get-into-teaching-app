@@ -47,6 +47,7 @@ module Internal
     validates :venue_type, inclusion: { in: VENUE_TYPES.values }
     validate :dates_in_future
     validate :end_after_start
+    validate :starts_and_ends_on_same_day
     validate :existing_building_present
 
     def self.initialize_with_api_event(api_event)
@@ -135,6 +136,14 @@ module Internal
 
       if end_at <= start_at
         errors.add(:end_at, "Must be after the start date")
+      end
+    end
+
+    def starts_and_ends_on_same_day
+      return if end_at.blank? || start_at.blank?
+
+      unless end_at.to_date == start_at.to_date
+        errors.add(:end_at, "Events must start and end on the same day")
       end
     end
 

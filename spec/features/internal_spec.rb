@@ -278,7 +278,7 @@ private
     find(:id, "internal_event_description", visible: false)
       .click
       .set "test"
-    fill_in "internal_event[start_at]", with: Time.zone.now + 1.day
-    fill_in "internal_event[end_at]", with: Time.zone.now + 2.days
+    fill_in "internal_event[start_at]", with: Time.zone.now.at_midday + 1.hour
+    fill_in "internal_event[end_at]", with: Time.zone.now.at_midday + 2.hours
   end
 end

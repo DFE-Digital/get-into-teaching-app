@@ -5,8 +5,8 @@ FactoryBot.define do
     name { "Test" }
     summary { "Test" }
     description { "Test" }
-    start_at { Time.zone.now + 1.day }
-    end_at { Time.zone.now + 2.days }
+    start_at { 1.day.from_now.at_midday }
+    end_at { start_at + 1.hour }
   end
 
   trait :online_event do
