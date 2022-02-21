@@ -55,6 +55,7 @@ jobs:
                 echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
                 echo ::set-output name=DOCKER_EVENT::${{ env.DOCKER_REPOSITORY }}:master
              else
+                echo ::set-output name=DOCKER_SHA::${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
                 echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:review-${{steps.sha.outputs.short }}
                 echo ::set-output name=DOCKER_EVENT::${{ env.DOCKER_REPOSITORY }}:PR-${{ github.event.number }}
              fi
@@ -74,6 +75,7 @@ jobs:
           cache-to: type=gha,mode=max
           tags: |
             ${{ steps.docker.outputs.DOCKER_IMAGE }}
+            ${{ steps.docker.outputs.DOCKER_SHA }}
             ${{ steps.docker.outputs.DOCKER_EVENT }}
           push: true
           build-args: |
