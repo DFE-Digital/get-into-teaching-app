@@ -10,7 +10,7 @@ To apply for iQTS you will need to have:
 
 You do not need any teaching experience or to be working in a school to apply for iQTS. 
 
-#### More about qualifications
+### More about qualifications
 
 A GCSE (General Certificate of Secondary Education) is an academic qualification awarded for exams in England, usually taken at age 16. 
 

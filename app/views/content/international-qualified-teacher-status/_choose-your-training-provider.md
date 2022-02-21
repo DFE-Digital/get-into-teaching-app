@@ -21,6 +21,6 @@ All iQTS training providers offer:
 
 To learn more, visit participating iQTS training provider websites.
 
-#### Your placement school
+### Your placement school
 
 Some iQTS training providers will be able to match you with a placement school in your region. However, others will ask you to find a school as a condition of entry to their course. For more info, check participating iQTS training provider websites.
