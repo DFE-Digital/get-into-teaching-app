@@ -1,0 +1,54 @@
+---
+name: SHA Release
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Environment
+        required: true
+        type: environment
+      sha:
+        description: SHA
+        required: true
+
+jobs:
+  manual:
+    name: Deploy to ${{github.event.inputs.environment}}
+    environment:
+       name: ${{github.event.inputs.environment}}
+
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.4.0
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - uses: Azure/login@v1
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        id:  keyvault-yaml-secret
+        with:
+          keyvault: ${{ secrets.KEY_VAULT}}
+          secret: INFRA-KEYS
+          key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK, SLACK-RELEASE-NOTE-WEBHOOK
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Deploy to ${{github.event.inputs.environment}}
+        uses: ./.github/workflows/actions/deploy
+        id: deploy
+        with:
+          environment: ${{ github.event.inputs.environment }}
+          sha:  ${{ github.event.inputs.sha }}
+          AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+          KEY_VAULT:         ${{ secrets.KEY_VAULT }}
+          ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
+          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
+
