@@ -51,7 +51,7 @@ Get one step closer to the classroom with guidance tailored to you, including ho
 An experienced teaching professional can help you if you're (one of the following):
 
 * ready to get into teaching
-* returning to teach maths, physics, chemistry, computing or languages and have qualified teacher status (QTS)
+* returning to teach chemistry, computing, maths, modern foreign languages or physics and have qualified teacher status (QTS)
 
 [Get an adviser](/tta-service).
 
