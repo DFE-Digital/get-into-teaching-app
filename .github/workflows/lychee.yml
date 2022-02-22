@@ -33,9 +33,18 @@ jobs:
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
-      - name: Upload to Slack
-        uses: adrey/slack-file-upload-action@master
-        with:
-          token: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
-          path: ./lychee/out.md
-          channel: getintoteaching_tech
+      - name: Read Lychee output into var
+        id: lychee-output
+        if: ${{ steps.lychee.outputs.exit_code != 0 }}
+        run: |
+          echo "::set-output name=LYCHEE_OUTPUT::$(cat ./lychee/out.md)"
+
+      - name: Slack Notification
+        if: ${{ steps.lychee.outputs.exit_code != 0 }}
+        uses: rtCamp/action-slack-notify@master
+        env:
+           SLACK_COLOR: ${{env.SLACK_ERROR}}
+           SLACK_MESSAGE: |
+             ${{ steps.lychee-output.outputs.LYCHEE_OUTPUT }}
+           SLACK_TITLE: 'External link check results:'
+           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
