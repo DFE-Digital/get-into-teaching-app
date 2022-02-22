@@ -1,9 +1,8 @@
-If you teach maths, physics or modern foreign languages, you're eligible for
-personalised support from the Return to teaching support service.
+If you teach chemistry, computing, maths, modern foreign languages or physics, you're eligible for a return to teaching adviser.
 
 You can get:
 
-* help and advice from a teaching adviser over phone and email
+* help and advice from an experienced teaching professional over phone and email
 * information on vacancies in your local area
 * tips on application and interview prep
 * advice on subject specialist training courses

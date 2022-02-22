@@ -48,7 +48,10 @@ Get one step closer to the classroom with guidance tailored to you, including ho
 
 ## 3. Get a Teacher Training Adviser
 
-An experienced teaching professional can help if you're ready to get into teaching or if you're returning to teaching and qualified to teach maths, physics or languages.
+An experienced teaching professional can help you if you're (one of the following):
+
+* ready to get into teaching
+* returning to teach chemistry, computing, maths, modern foreign languages or physics and have qualified teacher status (QTS)
 
 [Get an adviser](/tta-service).
 
