@@ -90,7 +90,7 @@ You can [find and apply to most postgraduate teacher training courses on GOV.UK]
 If you do not find what you were looking for, there are [other ways to train](/ways-to-train).
 
 Before you start, it’s particularly important to think about your referees and
-[teacher training personal statement](#writing-your-teacher-training-personal-statement).
+[teacher training personal statement](/tips-on-applying-for-teacher-training/#writing-your-teacher-training-personal-statement).
 
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.

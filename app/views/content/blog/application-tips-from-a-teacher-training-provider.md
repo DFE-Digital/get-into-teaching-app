@@ -46,7 +46,7 @@ Your personal statement is also an opportunity to acknowledge any gaps in your s
 
 You may wish to demonstrate your awareness of the hard work and commitment required to undertake teaching as a career but also demonstrate how excited you are to start your journey.
 
-I can’t emphasise enough how important it is to avoid spelling mistakes. Make sure to run it through a spell check before copying it into your application, as demonstrating good communication skills is vital. Read our advice on [writing your teacher training personal statement.](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement)
+I can’t emphasise enough how important it is to avoid spelling mistakes. Make sure to run it through a spell check before copying it into your application, as demonstrating good communication skills is vital. Read our advice on [writing your teacher training personal statement.](/tips-on-applying-for-teacher-training/#writing-your-teacher-training-personal-statement)
 
 ## References
 
