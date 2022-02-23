@@ -21,8 +21,8 @@ accordion:
       partial: content/international-returners/check-your-qualifications
     Find your next role:
       partial: content/international-returners/find-your-next-role
-    Support for teachers of shortage subjects:
-      partial: content/international-returners/support-for-teachers-of-shortage-subjects
+    Get help if you teach a shortage subject:
+      partial: content/international-returners/get-help-if-you-teach-a-shortage-subject
     Get ready to apply:
       partial: content/international-returners/get-ready-to-apply
     Read up on changes to English education:

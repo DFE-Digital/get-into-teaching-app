@@ -6,7 +6,7 @@ DfE can support your CPD through [national professional qualifications (NPQs)](h
 for middle and senior leadership, headship and executive leadership.
 [Learn more national professional qualifications frameworks.](https://www.gov.uk/government/publications/national-professional-qualifications-frameworks-from-september-2021)
 
-In July 2020, [competitive new salary increases](https://www.gov.uk/government/news/teachers-set-for-biggest-pay-rise-in-fifteen-years) for teachers were agreed.
+[Salaries and benefits](/salaries-and-benefits) explains teaching salaries for newly qualified and more experienced teachers.
 
 #### Supporting our critical workers in education
 
