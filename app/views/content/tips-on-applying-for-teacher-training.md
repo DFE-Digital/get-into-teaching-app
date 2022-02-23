@@ -1,7 +1,7 @@
 ---
 title: Tips on applying for teacher training
 description: |-
-  Read these tips on completing your teacher training application and choosing teacher training references. With advice on personal statements and when to apply.
+  Read about the teacher training application process. Find advice on writing your teacher training personal statement, choosing your references, and applying.
 date: "2021-06-24"
 keywords:
   - adviser
@@ -41,8 +41,7 @@ right_column:
 
 Give yourself the best chance of getting on the course you want.
 
-Discover tips on writing your application, finding referees and preparing for
-interviews. A [teacher training adviser](/tta-service) can help you with all of these.
+Discover tips on completing your application, including writing your teacher training personal statement, finding referees and preparing for interviews. A [teacher training adviser](/tta-service) can help you with all of these.
 
 ## Browse courses
 
@@ -91,7 +90,7 @@ You can [find and apply to most postgraduate teacher training courses on GOV.UK]
 If you do not find what you were looking for, there are [other ways to train](/ways-to-train).
 
 Before you start, it’s particularly important to think about your referees and
-[personal statement](#your-personal-statement).
+[teacher training personal statement](#writing-your-teacher-training-personal-statement).
 
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
@@ -145,11 +144,13 @@ Once you've received 2 or more references, you can select the 2 you want to incl
 If you’re struggling to choose your referees, [get free one-on-one support from a
 teacher training adviser](/tta-service).
 
-## Your personal statement
+## Writing your teacher training personal statement
 
-Your personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it.
+Your teacher training personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it.
 
 Personal statements are split into 2 sections. In total they are usually around 1,000 words.
+
+It’s your opportunity to show your enthusiasm for teaching a particular subject. It’s also the place to say why you feel passionate about teaching either primary or secondary.
 
 ### Section 1: Why do you want to teach?
 
@@ -161,16 +162,16 @@ This is the place to talk about why you think you would make a great teacher. Yo
 * your understanding of the demands and rewards of teaching
 * the personal qualities that will make you a good teacher
 * your contribution to the life of a school outside the classroom – for example, running extra-curricular activities and clubs
-* details of any experience you have working with children and what you learnt
+* details of any paid or unpaid work experience you have working with young people and what you learnt
 * your thoughts on children’s wellbeing and the education system
 
 ### Section 2: Why are you suited to teach your subjects or age group?
 
 Up to 400 words.
 
-If you’re applying for secondary teacher training, use this section to describe your knowledge of the subjects you’ve chosen.
+If you’re writing a personal statement for secondary teacher training, use this section to describe your knowledge of the subjects you’ve chosen.
 
-If you’re applying for primary teacher training, say why you'd like to teach this age group.
+If you’re writing a personal statement for primary teacher training, say why you'd like to teach this age group.
 
 If you're applying for a primary course with a subject specialism, or you're particularly interested in certain primary subjects, you can talk about that here too.
 
