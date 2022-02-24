@@ -1,4 +1,6 @@
 paas_space                = "get-into-teaching"
+paas_monitoring_space     = "get-into-teaching"
+paas_monitoring_app       = "prometheus-dev-get-into-teaching"
 paas_app_application_name = "get-into-teaching-app-dev"
 paas_app_route_name       = "get-into-teaching-app-dev"
 paas_redis_1_name         = "get-into-teaching-dev-redis-svc"

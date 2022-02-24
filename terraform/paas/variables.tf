@@ -21,9 +21,13 @@ variable "azure_vault_secret" {
   default = "CONTENT-KEYS"
 }
 
+variable "paas_monitoring_space" { }
+
 variable "paas_space" {
   default = "sandbox"
 }
+
+variable "paas_monitoring_app" { }
 
 variable "paas_org_name" {
   default = "dfe"

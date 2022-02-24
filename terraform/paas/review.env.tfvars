@@ -1,4 +1,6 @@
 paas_space           = "get-into-teaching"
+paas_monitoring_space= "get-into-teaching"
+paas_monitoring_app  = "prometheus-dev-get-into-teaching"
 paas_redis_1_name    = "get-into-teaching-dev-redis-svc"
 logging              = 0
 instances            = 1
