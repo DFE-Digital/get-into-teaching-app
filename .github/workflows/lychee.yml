@@ -37,14 +37,25 @@ jobs:
         id: lychee-output
         if: ${{ steps.lychee.outputs.exit_code != 0 }}
         run: |
-          echo "::set-output name=LYCHEE_OUTPUT::$(cat ./lychee/out.md)"
+          DATA=$(cat  ./lychee/out.md)
+          echo "LYCHEE_OUTPUT<<EOF" >> $GITHUB_ENV
+          echo "$DATA" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Slack Markdown Converter
+        id: convert
+        if: ${{ steps.lychee.outputs.exit_code != 0 }}
+        uses: LoveToKnow/slackify-markdown-action@v1.0.0
+        with: 
+          text: |  
+                ${{ env.LYCHEE_OUTPUT }} 
 
       - name: Slack Notification
         if: ${{ steps.lychee.outputs.exit_code != 0 }}
         uses: rtCamp/action-slack-notify@master
         env:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: |
-             ${{ steps.lychee-output.outputs.LYCHEE_OUTPUT }}
+           SLACK_MESSAGE: | 
+                         ${{ steps.convert.outputs.text }}
            SLACK_TITLE: 'External link check results:'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
