@@ -456,14 +456,6 @@ jobs:
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
           GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Trigger Development Fix Network Policies
-        uses: benc-uk/workflow-dispatch@v1.1
-        with:
-          repo: DFE-Digital/get-into-teaching-api
-          workflow: Fix Network policies
-          token: ${{ steps.keyvault-yaml-secret.outputs.ACTIONS-API-ACCESS-TOKEN }}
-          inputs: '{"environment": "Development" }'
-
       - name: Generate Tag from PR Number
         id: tag_version
         uses: DFE-Digital/github-actions/GenerateReleaseFromSHA@master
@@ -547,14 +539,6 @@ jobs:
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
           GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Trigger Test Fix Network Policies
-        uses: benc-uk/workflow-dispatch@v1.1
-        with:
-         repo: DFE-Digital/get-into-teaching-api
-         workflow: Fix Network policies
-         token: ${{ steps.keyvault-yaml-secret.outputs.ACTIONS-API-ACCESS-TOKEN }}
-         inputs: '{"environment": "Test" }'
 
       - name: Slack Notification
         if: failure()
@@ -666,14 +650,6 @@ jobs:
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
           GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Trigger Production Fix Network Policies
-        uses: benc-uk/workflow-dispatch@v1.1
-        with:
-         repo: DFE-Digital/get-into-teaching-api
-         workflow: Fix Network policies
-         token: ${{ steps.keyvault-yaml-secret.outputs.ACTIONS-API-ACCESS-TOKEN }}
-         inputs: '{"environment": "Production" }'
 
       - name: Slack Release Notification
         if: steps.tag_id.outputs.release_id
