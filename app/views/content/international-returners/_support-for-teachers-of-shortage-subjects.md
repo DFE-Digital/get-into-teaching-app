@@ -1,4 +1,4 @@
-If you teach chemistry, computing, maths, modern foreign languages or physics, you're eligible for a return to teaching adviser.
+If you teach chemistry, computing, maths, modern foreign languages or physics, and you have [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts), you're eligible for a return to teaching adviser.
 
 This includes:
 
