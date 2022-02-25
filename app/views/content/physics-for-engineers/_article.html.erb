@@ -1,0 +1,112 @@
+
+<article>
+  <section class="statement">
+    <div>
+      <span class="pink xlarge bold">Physics is&hellip;</span>
+    </div>
+
+    <div>
+      <span class="pink medium bold">
+        <ul class="slashed-list">
+          <li>rocket science</li>
+          <li>the Big Bang Theory</li>
+          <li>understanding the universe</li>
+        </ul>
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <h2>‘Physics for engineers’ ITT pilot programme</h2>
+
+    <p>
+      This initial teacher training (ITT) pilot programme is aimed at helping engineering graduates become physics teachers. Engineers can bring valuable skills and experience into the physics classroom, passing on their knowledge through a career in teaching.
+    </p>
+
+    <p>
+      Through this programme, you’ll learn how to hone your skills and gain your qualified teacher status (QTS) which means you can teach in any primary or secondary school in England.
+    </p>
+    <%= link_to("Find your course", mailing_list_steps_path, class: "button") %>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithTwoImagesComponent.new(
+    heading: "Teaching physics",
+    colour: "pink",
+    image_1_path: "media/images/content/hero-images/0017.jpg",
+    image_1_alt: "A teacher sitting with a student helping them with a maths problem",
+    image_2_path: "media/images/content/hero-images/0004.jpg",
+    image_2_alt: "A maths teacher standing at the front of a full classroom delivering a lesson",
+  ) do %>
+
+    <p>
+      Teaching physics is all about finding simple and creative ways to explain big concepts. It’s a diverse subject that contains everything from electricity, to astronomy, to motions and mechanics.
+    </p>
+
+    <p>
+    Physics teachers are in high demand, making it a great time to start your journey into the classroom.
+    </p>
+  <% end %>
+
+  <section>
+    <figure>
+      <blockquote class="pink-quotes">
+        <p class="bold">
+          My engineering degree provided a natural transition to teaching physics and I value the way science – especially physics – teaches a clear thought process and a way to make rational sense of the world.
+        </p>
+      </blockquote>
+
+      <figcaption>Roger, physics teacher</figcaption>
+    </figure>
+  </section>
+
+  <section class="columns">
+    <div>
+      <h2>What you'll learn</h2>
+
+      <p>
+        On this ITT course, you’ll:
+      </p>
+    </div>
+
+    <div>
+      <ul class="badges">
+        <li class="badge">learn more about the curriculum you’ll be teaching</li>
+        <li class="badge">develop your own physics subject knowledge</li>
+        <li class="badge">have at least 120 hours of classroom experience</li>
+      </ul>
+    </div>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithOneImageComponent.new(
+    heading: "Getting support",
+    colour: "yellow",
+    image_path: "media/images/content/hero-images/0009.jpg",
+    image_alt: "A teacher standing at the front of her classroom teaching a class",
+  ) %>
+
+  <section>
+    <h2>Funding for teaching physics</h2>
+
+    <p>
+     Scholarships of £26,000 and bursaries of £24,000 are available for trainee physics teachers. This is money that you do not have to pay back.
+     </p>
+     
+     <p>
+     <a href="https://getintoteaching.education.gov.uk/funding-your-training">Find out about your eligibility for bursaries and scholarships.</a>
+    </p>
+  </section>
+
+  <section>
+    <h2>Get an adviser</h2>
+
+    <p>You can talk to an experienced teaching professional who can help support you with your application. They can help you with:</p>
+
+    <ul>
+      <li>writing your personal statement</li>
+      <li>preparing for interviews</li>
+      <li>understanding the course</li>
+    </ul>
+
+    <%= link_to("Get an adviser", mailing_list_steps_path, class: "button") %>
+  </section>
+</article>
