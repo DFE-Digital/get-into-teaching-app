@@ -533,7 +533,7 @@ DEPENDENCIES
   geometry!
   get_into_teaching_api_client_faraday!
   google-api-client (>= 0.53.0)
-  govuk_design_system_formbuilder (>= 2.7.6)
+  govuk_design_system_formbuilder (>= 2.8.0)
   kaminari (~> 1.2, >= 1.2.2)
   knapsack_pro
   kramdown (>= 2.3.1)
