@@ -13,10 +13,10 @@
   <% end %>
   <%= google_optimize_script %>
   <%= javascript_pack_tag 'sentry', 'data-turbolinks-track': 'reload', data: { "sentry-dsn": sentry_dsn, "sentry-environment": Rails.env } %>
-  <%= javascript_pack_tag 'gtm', 'data-turbolinks-track': 'reload', data: { "gtm-id": ENV["GTM_ID"] }, async: true if gtm_enabled? %>
-  <%= javascript_pack_tag 'js_enabled', 'data-turbolinks-track': 'reload', async: false %>
-  <%= javascript_pack_tag 'lazy_images', 'data-turbolinks-track': 'reload', async: true %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', async: true %>
+  <%= javascript_pack_tag 'gtm', 'data-turbolinks-track': 'reload', data: { "gtm-id": ENV["GTM_ID"] } if gtm_enabled? %>
+  <%= javascript_pack_tag 'js_enabled', 'data-turbolinks-track': 'reload', defer: true %>
+  <%= javascript_pack_tag 'lazy_images', 'data-turbolinks-track': 'reload', defer: true %>
+  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   <%= yield :head %>
   <%= breadcrumbs_structured_data(breadcrumb_trail) %>
   <%= logo_structured_data %>
