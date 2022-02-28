@@ -144,7 +144,7 @@ Once you've received 2 or more references, you can select the 2 you want to incl
 If you’re struggling to choose your referees, [get free one-on-one support from a
 teacher training adviser](/tta-service).
 
-## Write your teacher training personal statement
+## Writing your teacher training personal statement
 
 Your teacher training personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it.
 
