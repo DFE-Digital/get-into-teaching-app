@@ -59,7 +59,7 @@ Our free events are the perfect opportunity to find out more about teacher train
 
 ### 2. Write your personal statement
 
-The personal statement is your chance to make your application stand out by discussing your experience, knowledge and skills, and demonstrating how they’re transferable to the classroom. [Read our advice on how to make yourself stand out](/tips-on-applying-for-teacher-training).
+The personal statement is your chance to make your application stand out by discussing your experience, knowledge and skills, and demonstrating how they’re transferable to the classroom. [Read our advice on writing your teacher training personal statement](/tips-on-applying-for-teacher-training).
 
 ### 3. Arrange your references
 
