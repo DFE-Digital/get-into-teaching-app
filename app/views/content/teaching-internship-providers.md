@@ -162,7 +162,7 @@ providers:
   North West:
     providers:
     - header: Altrincham Grammar School for Girls
-      link: https://www.bfet.co.uk/scitt/our-programmes/paid-undergraduate-internship-scheme/
+      link: https://bfet.co.uk/scitt/our-programmes/paid-undergraduate-internship-scheme/
       name: Hilary Langmead-Jones
       email: HLangmead-Jones@bright-futures.co.uk
       subjects: maths, physics, computing
