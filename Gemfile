@@ -24,7 +24,7 @@ gem "foreman"
 gem "secure_headers"
 
 # Canonical meta tag
-gem "canonical-rails", ">= 0.2.13"
+gem "canonical-rails", ">= 0.2.14"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.3.1"
