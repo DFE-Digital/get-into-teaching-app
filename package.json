@@ -4,7 +4,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@rails/webpacker": "5.4.3",
     "@sentry/browser": "^6.17.4",
-    "@sentry/tracing": "^6.17.4",
+    "@sentry/tracing": "^6.18.1",
     "@stimulus/polyfills": "^2.0.0",
     "accessible-autocomplete": "^2.0.3",
     "dayjs": "^1.10.7",
