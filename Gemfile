@@ -34,7 +34,7 @@ gem "addressable", "~> 2.8.0"
 
 gem "rack-attack"
 
-gem "faraday", "~> 1.9.3"
+gem "faraday", "~> 1.10.0"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"

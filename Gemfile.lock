@@ -170,7 +170,7 @@ GEM
     factory_bot_rails (6.2.0)
       factory_bot (~> 6.2.0)
       railties (>= 5.0.0)
-    faraday (1.9.3)
+    faraday (1.10.0)
       faraday-em_http (~> 1.0)
       faraday-em_synchrony (~> 1.0)
       faraday-excon (~> 1.1)
@@ -524,7 +524,7 @@ DEPENDENCIES
   dotenv-rails (>= 2.7.6)
   erb_lint (>= 0.1.1)
   factory_bot_rails (>= 6.2.0)
-  faraday (~> 1.9.3)
+  faraday (~> 1.10.0)
   faraday-encoding
   faraday-http-cache
   faraday_middleware
