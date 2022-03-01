@@ -59,7 +59,7 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 2.48.0"
+gem "view_component", "~> 2.49.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
