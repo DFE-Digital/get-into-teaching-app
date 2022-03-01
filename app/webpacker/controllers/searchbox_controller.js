@@ -90,8 +90,10 @@ export default class extends Controller {
     // auto-complete input and also co-locate the label next to the
     // input. One or both of these may not be necessary, but we won't
     // know until the next Silktide report.
-    this.input.ariaLabel = this.labelTarget.textContent;
-    this.input.parentNode.insertBefore(this.labelTarget, this.input);
+    if (this.hasLabelTarget) {
+      this.input.ariaLabel = this.labelTarget.textContent;
+      this.input.parentNode.insertBefore(this.labelTarget, this.input);
+    }
   }
 
   searchParams(query) {
