@@ -7,7 +7,7 @@
     "@sentry/tracing": "^6.17.4",
     "@stimulus/polyfills": "^2.0.0",
     "accessible-autocomplete": "^2.0.3",
-    "dayjs": "^1.10.7",
+    "dayjs": "^1.10.8",
     "flatpickr": "^4.6.9",
     "govuk-frontend": "^3.14.0",
     "is-touch-device": "^1.0.1",
