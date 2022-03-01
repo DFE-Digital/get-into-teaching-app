@@ -24,7 +24,7 @@ gem "foreman"
 gem "secure_headers"
 
 # Canonical meta tag
-gem "canonical-rails", ">= 0.2.13"
+gem "canonical-rails", ">= 0.2.14"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.3.1"
@@ -34,7 +34,7 @@ gem "addressable", "~> 2.8.0"
 
 gem "rack-attack"
 
-gem "faraday", "~> 1.9.3"
+gem "faraday", "~> 1.10.0"
 gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
@@ -47,8 +47,8 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 5.0.2"
-gem "sentry-ruby", "~> 5.0.2"
+gem "sentry-rails", ">= 5.1.1"
+gem "sentry-ruby", "~> 5.1.1"
 
 gem "skylight", "~> 5.2.0"
 
@@ -59,7 +59,7 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 2.48.0"
+gem "view_component", "~> 2.49.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
