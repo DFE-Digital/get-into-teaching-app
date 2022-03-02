@@ -88,7 +88,7 @@
 
     <% elsif @event.provider_website_url %>
       <h2>How to attend</h2>
-      <p>To attend this event, please <%= link_to("visit this website", @event.provider_website_url, { target: "blank" }) %><i class="icon icon-external"></i>.<p>
+      <p>To attend this event, please <%= link_to("visit this website", @event.provider_website_url, { target: "blank" }) %>.</p>
     <% elsif @event.provider_contact_email %>
       <h2>How to attend</h2>
       <p>To attend this event, please <%= mail_to(@event.provider_contact_email, "email us") %>.<p>
