@@ -243,7 +243,7 @@ GEM
     html_tokenizer (0.0.7)
     htmlentities (4.3.4)
     httpclient (2.8.3)
-    i18n (1.9.1)
+    i18n (1.10.0)
       concurrent-ruby (~> 1.0)
     jwt (2.2.3)
     kaminari (1.2.2)
@@ -479,7 +479,7 @@ GEM
     uber (0.1.0)
     unicode-display_width (2.1.0)
     victor (0.3.3)
-    view_component (2.49.0)
+    view_component (2.49.1)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
     web-console (4.2.0)
@@ -571,7 +571,7 @@ DEPENDENCIES
   text
   tzinfo-data
   victor
-  view_component (~> 2.49.0)
+  view_component (~> 2.49.1)
   web-console (>= 4.2.0)
   webmock (>= 3.14.0)
   webpacker (>= 5.4.3)
