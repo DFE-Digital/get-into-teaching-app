@@ -20,9 +20,16 @@ describe "External link icon images", type: :request do
   context "when linking to an external website" do
     let(:link) { markdown_links[0] }
 
-    it { expect(link[:href]).to eq("https://external.website/link") }
-    it { is_expected.to include('class="external-link-icon') }
-    it { is_expected.to include('alt=""') }
+    it { expect(link[:href]).to eql("https://external.website/link") }
+
+    it "has visually hidden text informing the user the link will open in a new window" do
+      expect(link.at_css("span")).to be_present
+
+      link.at_css("span").tap do |span|
+        expect(span.classes).to include("visually-hidden")
+        expect(span.text).to eql("(opens in new window)")
+      end
+    end
   end
 
   context "when linking to an internal path" do
