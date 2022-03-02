@@ -1,13 +1,13 @@
 {
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/fontawesome-free": "^6.0.0",
     "@fortawesome/free-solid-svg-icons": "^5.15.4",
     "@rails/webpacker": "5.4.3",
-    "@sentry/browser": "^6.17.4",
-    "@sentry/tracing": "^6.17.4",
+    "@sentry/browser": "^6.18.1",
+    "@sentry/tracing": "^6.18.1",
     "@stimulus/polyfills": "^2.0.0",
-    "accessible-autocomplete": "^2.0.3",
-    "dayjs": "^1.10.7",
+    "accessible-autocomplete": "^2.0.4",
+    "dayjs": "^1.10.8",
     "flatpickr": "^4.6.9",
     "govuk-frontend": "^3.14.0",
     "is-touch-device": "^1.0.1",
@@ -26,10 +26,10 @@
     "webpack-cli": "3.3.12"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "^7.16.5",
+    "@babel/eslint-parser": "^7.17.0",
     "@stimulus/test": "^2.0.0",
     "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "^8.4.0",
     "eslint-config-standard": "^16.0.3",
     "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-node": "^11.1.0",
