@@ -78,20 +78,7 @@ Returning to teaching can be easier than you expect.
 
 More than ever, our children and young people need your skills and experience back in the classroom.  
 
-If you’re thinking about returning to teaching, or if you’re qualified to teach but have never taught in a state school in England, we can help.  
-
-<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
-  <iframe 
-    title="A video about returning to teaching"
-    loading="lazy"
-    src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" 
-    frameborder="0" 
-    allow="autoplay; encrypted-media" 
-    allowfullscreen
-  ></iframe>
-</div>
-
-If you’re thinking about returning to the classroom, you might want to [get a return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/). They can give you free one-to-one support, helping you get back into teaching. 
+If you’re thinking about returning to teaching, or if you’re qualified to teach but have never taught in a state school in England, we can help.
 
 ## Why now
 
