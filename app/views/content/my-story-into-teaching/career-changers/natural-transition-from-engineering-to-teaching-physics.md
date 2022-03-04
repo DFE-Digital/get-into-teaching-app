@@ -4,6 +4,15 @@ title: Natural transition from engineering to teaching physics
 image: media/images/content/stories/stories-roger.jpg
 backlink: "./"
 backlink_text: Career changers' stories
+calls_to_action:
+    physics-initial-teacher-training:
+      name: simple
+      arguments:
+        icon: "icon-arrow"
+        text: |-
+          Find out about our new routes into teaching physics for engineering graduates.
+        link_text: "Physics initial teacher training"
+        link_target: "/physics-for-engineers"
 story:
   teacher: Roger Brown
   position: Career changer
@@ -30,3 +39,5 @@ $q-roger$
 When I spot the exact barrier stopping a child from learning, I always make sure to think of an analogy to help them through it. With key stage 3 pupils this often involves drama – either getting the children to act out a concept, or sometimes telling them a relevant story. With key stage 4 the breakthroughs are sometimes when you link learning to popular culture.
 
 When you train to teach physics, you can get an income. During my teacher training my family and I could afford for me to train for a year.
+
+$physics-initial-teacher-training$
