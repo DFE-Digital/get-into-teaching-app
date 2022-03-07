@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -94,7 +94,7 @@ jobs:
 
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -181,7 +181,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -218,7 +218,7 @@ jobs:
     needs: [ build_test ]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -250,7 +250,7 @@ jobs:
         ci_node_index: [0, 1, 2, 3, 4, 5]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -313,7 +313,7 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -373,7 +373,7 @@ jobs:
        name: Review
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -427,7 +427,7 @@ jobs:
       release_sha: ${{github.sha }}
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -489,7 +489,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: Vunerability Test
         uses: ./.github/workflows/actions/owasp
@@ -511,7 +511,7 @@ jobs:
        name: Test
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -555,7 +555,7 @@ jobs:
     needs: [ build_test, qa ]
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -597,7 +597,7 @@ jobs:
        name: Production
     steps:
       - name: Check out the repo
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
