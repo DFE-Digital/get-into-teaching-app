@@ -50,4 +50,8 @@ Rails.application.configure do
   config.middleware.insert_before ActionDispatch::Static, Rack::HostRedirect, {
     "beta-getintoteaching.education.gov.uk" => "getintoteaching.education.gov.uk",
   }
+
+  config.x.integration_host = "get-into-teaching-app-test.london.cloudapps.digital"
+  config.x.integration_credentials = { username: ENV["HTTP_USERNAME"], password: ENV["HTTP_PASSWORD"] }
+  config.x.mailsac_api_key = ENV["MAILSAC_API_KEY"]
 end

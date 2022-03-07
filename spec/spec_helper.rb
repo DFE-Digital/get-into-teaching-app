@@ -129,4 +129,5 @@ RSpec.configure do |config|
   config.raise_errors_for_deprecations!
 
   config.filter_run_excluding :onschedule
+  config.filter_run_excluding :integration
 end
