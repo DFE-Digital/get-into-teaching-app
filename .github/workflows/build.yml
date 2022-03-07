@@ -552,7 +552,7 @@ jobs:
   integration:
     name: Run Integration Tests on QA
     runs-on: ubuntu-latest
-    needs: [ qa ]
+    needs: [ build_test, qa ]
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2.4.0
