@@ -10,7 +10,7 @@ describe Footer::TalkToUsComponent, type: "component" do
   end
 
   specify "the content is present" do
-    expect(page).to have_content(/An experienced teaching professional/)
+    expect(page).to have_content(/Teacher training advisers provide free/)
     expect(page).to have_content(/Call us/)
     expect(page).to have_content(/Chat online/)
   end
