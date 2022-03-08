@@ -25,7 +25,6 @@
     <p>
       Through this programme, you’ll learn how to hone your skills and gain your qualified teacher status (QTS) which means you can teach in any primary or secondary school in England.
     </p>
-    <%= link_to("Find your course", mailing_list_steps_path, class: "button") %>
   </section>
 
   <%= render SubjectSpecific::TextBlockWithTwoImagesComponent.new(
@@ -106,6 +105,8 @@
       <li>understanding the course</li>
     </ul>
 
-    <%= link_to("Get an adviser", mailing_list_steps_path, class: "button") %>
+    <p class="call-to-action__action">
+  <a href="/tta-service">Get an <span>adviser</span></a>
+    </p>
   </section>
 </article>
