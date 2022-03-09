@@ -14,7 +14,7 @@ class EventsController < ApplicationController
     @front_matter = {
       "description" => "Get your questions answered at an event.",
       "title" => "Teacher training events",
-      "image" => "media/images/content/hero-images/0002.jpg",
+      "image" => "media/images/content/hero-images/0025.jpg",
     }
 
     render layout: "events"

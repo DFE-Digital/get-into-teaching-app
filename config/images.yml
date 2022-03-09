@@ -143,6 +143,12 @@
   variants:
     - "media/images/content/hero-images/0024--mobile.jpg"
     - "media/images/content/hero-images/0024--tablet.jpg"
+    
+"media/images/content/hero-images/0025.jpg":
+  alt: "Helper talking to an attendee at an in person event."
+  variants:
+    - "media/images/content/hero-images/0025--mobile.jpg"
+    - "media/images/content/hero-images/0025--tablet.jpg"
 
 # blog
 "media/images/content/blog/abigail-beeley.jpg":
