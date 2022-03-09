@@ -12,7 +12,7 @@ calls_to_action:
         text: |-
           If you’re an engineering graduate interested in teaching physics, find out about our new initial teacher training routes.
         link_text: "Physics initial teacher training"
-        link_target: "/physics-for-engineers"
+        link_target: "/subjects/engineers-teach-physics"
 story:
   teacher: Julia Capon
   position: Career changer
