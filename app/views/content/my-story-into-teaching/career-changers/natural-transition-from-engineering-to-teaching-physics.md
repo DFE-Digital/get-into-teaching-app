@@ -12,7 +12,7 @@ calls_to_action:
         text: |-
           Find out about our new routes into teaching physics for engineering graduates.
         link_text: "Physics initial teacher training"
-        link_target: "/physics-for-engineers"
+        link_target: "subjects/engineers-teach-physics"
 story:
   teacher: Roger Brown
   position: Career changer
