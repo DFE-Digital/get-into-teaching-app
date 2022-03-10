@@ -59,14 +59,16 @@ RSpec.describe FundingWidgetComponent, type: :component do
   end
 
   describe "custom content" do
-    let(:funding_widget) { FundingWidget.new(subject: "mathematics") }
+    context "when subject is mathematics" do
+      let(:funding_widget) { FundingWidget.new(subject: "mathematics") }
 
-    it "contains subject-specific funding content" do
-      expect(page).to have_text("Scholarships of £26,000 and bursaries of £24,000 are available for trainee maths teachers.")
-    end
+      it "contains subject-specific funding content" do
+        expect(page).to have_text("Scholarships of £26,000 and bursaries of £24,000 are available for trainee maths teachers.")
+      end
 
-    it "contains subject-specific next steps content" do
-      expect(page).to have_text("If you have a passion for maths")
+      it "contains subject-specific next steps content" do
+        expect(page).to have_text("If you have a passion for maths")
+      end
     end
   end
 end

@@ -27,6 +27,8 @@ linters:
         Enabled: false
       Style/TrailingCommaInArguments:
         Enabled: false
+      Style/WordArray:
+        Enabled: false
       Lint/UselessAssignment: # This one gives false-positives
         Enabled: false
       Style/TrailingCommaInArrayLiteral:

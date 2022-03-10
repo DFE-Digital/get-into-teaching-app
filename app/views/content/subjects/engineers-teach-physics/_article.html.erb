@@ -1,0 +1,120 @@
+
+<article>
+  <section class="statement">
+    <div>
+      <span class="pink xlarge bold">Physics initial teacher training courses for</span>
+    </div>
+
+    <div>
+      <span class="pink medium bold">
+        <ul class="slashed-list">
+          <li>engineers</li>
+          <li>material scientists</li>
+        </ul>
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <h2>The classroom needs you</h2>
+
+    <p>
+      Continue your engineering career by getting into the classroom and use your skills and passion to inspire the next generation.
+    </p>
+
+    <p>
+      We need more physics teachers. Without them children are missing out on the opportunity to develop their understanding of the world around them. Engineers bring a unique and innovative perspective into the physics classroom, helping to explain big things to young minds.
+    </p>
+
+    <p>
+      We want to train a diverse range of physics teachers who can pass on their knowledge in exciting and interesting ways to inspire the engineers of the future.
+    </p>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithTwoImagesComponent.new(
+    heading: "Engineering the future",
+    colour: "pink",
+    image_1_path: "media/images/content/hero-images/0017.jpg",
+    image_1_alt: "A teacher sitting with a student helping them with a maths problem",
+    image_2_path: "media/images/content/hero-images/0004.jpg",
+    image_2_alt: "A maths teacher standing at the front of a full classroom delivering a lesson",
+  ) do %>
+
+    <p>
+      Engineers and physicists help find solutions to some of our biggest problems. From climate change to secure energy sources, we need their problem-solving skills and creative thinking to help us survive some of the biggest challenges humanity has ever faced.
+    </p>
+
+    <p>
+      The more great physics teachers we have in the classroom today, the more children will grow up inspired to become the physicists, engineers and physics teachers of tomorrow.
+    </p>
+  <% end %>
+
+  <section>
+    <h2>Physics teacher training programme</h2>
+
+    <p>This new teacher training programme helps engineers become physics teachers. Applications will open at the end of March 2022. To get more information about the course and application process, you can talk to a teacher training adviser. They can help you to:</p>
+
+    <ul>
+      <li>understand more about the course</li>
+      <li>make an application</li>
+      <li>prepare for your interview</li>
+    </ul>
+
+    <p class="call-to-action__action">
+      <a href="https://adviser-getintoteaching.education.gov.uk/">Get an <span>adviser</span></a>
+    </p>
+  </section>
+
+  <section>
+    <figure>
+      <blockquote class="pink-quotes">
+        <p class="bold">
+          My engineering degree provided a natural transition to teaching physics and I value the way science – especially physics – teaches a clear thought process and a way to make rational sense of the world.
+        </p>
+      </blockquote>
+
+      <figcaption>Roger, physics teacher</figcaption>
+    </figure>
+  </section>
+
+  <section class="columns">
+    <div>
+      <h2>What you'll learn</h2>
+
+      <p>
+        On this ITT course, you’ll:
+      </p>
+    </div>
+
+    <div>
+      <ul class="badges">
+        <li class="badge">learn more about the curriculum you’ll be teaching</li>
+        <li class="badge">develop your own physics subject knowledge</li>
+        <li class="badge">gain valuable classroom experience</li>
+      </ul>
+    </div>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithOneImageComponent.new(
+    heading: "Support with funding",
+    colour: "yellow",
+    image_path: "media/images/content/hero-images/0009.jpg",
+    image_alt: "A teacher standing at the front of her classroom teaching a class",
+  ) %>
+
+  <section>
+    <h2>Funding for teaching physics</h2>
+
+    <p>
+     Scholarships of £26,000 and bursaries of £24,000 are available for trainee physics teachers. This is money that you do not have to pay back.
+     </p>
+
+     <p>
+     <a href="/funding-your-training">Find out about your eligibility for bursaries and scholarships.</a>
+    </p>
+     <p>
+     <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find out about other physics teacher training courses.</a>
+    </p>
+
+  </section>
+</article>
