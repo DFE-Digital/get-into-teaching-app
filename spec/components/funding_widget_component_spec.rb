@@ -70,17 +70,5 @@ RSpec.describe FundingWidgetComponent, type: :component do
         expect(page).to have_text("If you have a passion for maths")
       end
     end
-
-    context "when subject is physics" do
-      let(:funding_widget) { FundingWidget.new(subject: "physics") }
-
-      it "contains subject-specific funding content" do
-        expect(page).to have_text("Scholarships of £26,000 and bursaries of £24,000 are available for trainee physics teachers.")
-      end
-
-      it "contains subject-specific next steps content" do
-        expect(page).to have_text("Discover how to become a physics teacher")
-      end
-    end
   end
 end
