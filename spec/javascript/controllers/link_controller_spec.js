@@ -80,13 +80,6 @@ describe('LinkController', () => {
         );
       });
 
-      it('adds a description of where the link will open for screen reader users', () => {
-        const hiddenText = document.querySelector(
-          'a#content-external-link > span'
-        );
-        expect(hiddenText.textContent).toEqual('(Link opens in new window)');
-      });
-
       it("doesn't add target='_blank' to links to assets", () => {
         const assetLink = document.getElementById('asset-link');
         expect(assetLink.hasAttribute('target')).toBe(false);

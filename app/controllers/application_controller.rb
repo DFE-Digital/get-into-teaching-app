@@ -84,11 +84,8 @@ private
       next anchor && Sentry.capture_message("#{request.url} contains invalid anchor link") if anchor[:href].nil?
 
       external_link = anchor[:href].include?("//")
-      externally_hosted_internal_asset = ENV["APP_ASSETS_URL"].present? && anchor[:href].start_with?(ENV["APP_ASSETS_URL"])
 
-      if external_link && !externally_hosted_internal_asset
-        anchor.add_child(helpers.image_pack_tag("media/images/icon-external.svg", class: "external-link-icon", alt: ""))
-      end
+      anchor.add_child(helpers.tag.span("(opens in new window)", class: "visually-hidden")) if external_link
     end
 
     doc.to_html(encoding: "UTF-8", indent: 2)
