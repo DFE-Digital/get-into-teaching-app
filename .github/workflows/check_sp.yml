@@ -42,7 +42,7 @@ jobs:
 
       - name: Check out the repo
         if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
-        uses: actions/checkout@v2.4.0
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
