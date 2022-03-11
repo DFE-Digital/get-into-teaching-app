@@ -4,6 +4,15 @@ title: From construction site to classroom
 image: media/images/content/stories/stories-julia.jpg
 backlink: "./"
 backlink_text: Career changers' stories
+calls_to_action:
+    physics-initial-teacher-training:
+      name: simple
+      arguments:
+        icon: "icon-arrow"
+        text: |-
+          If you’re an engineering graduate interested in teaching physics, find out about our new initial teacher training routes.
+        link_text: "Physics initial teacher training"
+        link_target: "/subjects/engineers-teach-physics"
 story:
   teacher: Julia Capon
   position: Career changer
@@ -30,3 +39,5 @@ $q-peter$
 The financial support definitely helped because it meant that I didn’t have to make any significant cutbacks. The bursary covered most of my costs.
 
 Working in construction, scale drawings are used all the time. I have encouraged my students to consider how maths can be used in practical terms, so they’re not just applying theories from a textbook, they’re learning how maths is applicable to everyday situations.
+
+$physics-initial-teacher-training$
