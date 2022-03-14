@@ -20,7 +20,9 @@ RSpec.describe CallsToAction::SimpleComponent, type: :component do
 
     specify "the icon is present" do
       image_element = page.find("img")
+
       expect(image_element[:src]).to match(Regexp.new(icon))
+      expect(image_element[:alt]).to eql("")
     end
 
     specify "the title is present" do
