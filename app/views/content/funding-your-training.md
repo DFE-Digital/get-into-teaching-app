@@ -117,20 +117,13 @@ You may be eligible for a teaching bursary or scholarship when training to teach
 
 These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.
 
-You’ll need a bachelor's degree, class 2:2 (honours) or higher, a PhD or a master's degree to be eligible for a bursary, as well as meeting the bursary scheme's individual terms and conditions.
+You do not need to apply for a bursary. If you’re eligible, you’ll automatically receive it.
 
-[Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023).
+Scholarships are offered by independent institutions. They set their own eligibility criteria and you’ll need to apply through the relevant scholarship body.
 
-You can apply for a scholarship to help pay for your teacher training course. The scholarships are offered by independent institutions. Each institution has their own eligibility criteria:
+### Postgraduate bursaries and scholarships
 
-* the [Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
-* [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
-* the [Institute of Mathematics and its Applications](http://teachingmathsscholars.org/about) (maths)
-* the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
-
-### Check which subjects have bursaries and scholarships
-
-Teaching bursaries and scholarships are only available for the subjects listed
+Postgraduate teaching bursaries and scholarships are only available for the subjects listed
 below. You cannot receive both a teaching bursary and a scholarship.
 
 | Subject                                          | Bursary  | Scholarship      |
@@ -144,15 +137,32 @@ below. You cannot receive both a teaching bursary and a scholarship.
 | **Maths**                                        | £24,000  | £26,000          |
 | **Physics**                                      | £24,000  | £26,000          |
 
-### Non-graduate bursaries
+To be eligible for a bursary, you'll need at least one of the following:
 
-#### If you're a final year undergraduate student
+* a bachelor’s degree class 2:2 (honours) or higher
+* a master's degree
+* a PhD
 
-You may be eligible for a [training bursary of £9,000](https://www.gov.uk/government/publications/initial-teacher-training-itt-bursary-funding-manual/initial-teacher-training-bursaries-funding-manual-2021-to-2022-academic-year#undergraduate-bursary) if you're on a secondary maths or physics course leading to '[qualified teacher status](/what-is-qts)' (QTS).
+You’ll also need to meet the bursary scheme’s individual terms and conditions.
 
-You may also be eligible if you're studying an opt-in QTS course in secondary undergraduate computing, languages, mathematics or physics.
+[Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023).
 
-#### If you're a former military personnel
+To find out if you’re eligible for a scholarship and to apply, you can visit the relevant scholarship body:
+
+* the [Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
+* [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
+* the [Institute of Mathematics and its Applications](http://teachingmathsscholars.org/about) (maths)
+* the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
+
+### Undergraduate bursaries
+
+You may be eligible for a [bursary of £9,000](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023#undergraduate-bursary) if you do a secondary maths or physics course that leads to '[qualified teacher status](/what-is-qts)' (QTS).
+
+You may also be eligible if you do an opt-in QTS course in secondary computing, languages, mathematics or physics. This is where you start a standard undergraduate degree but then opt-in to initial teacher training to get QTS.
+
+The amount you receive depends on the year that you start your QTS course. You do not get a bursary in every year of an undergraduate course. Depending on the type of course you do, you may get the bursary in your final year or final two years.
+
+#### If you are former military personnel
 
 You may be eligible for a [Troops to Teachers](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023#troops-to-teachers-undergraduate-bursary) tax-free bursary of £40,000 if you're:
 
