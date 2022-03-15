@@ -259,8 +259,8 @@ provider_groups:
       email: felicity.ackroyd@staracademies.org
     - header: University of Chester
       link: https://www.chester.ac.uk/
-      name: Jenn Simmonds
-      email: j.simmonds@chester.ac.uk
+      name: Jane Bulkeley
+      email: qtsonlyroute@chester.ac.uk
     - header: University of Cumbria
       link: https://www.cumbria.ac.uk/study/academic-departments/institute-of-education/qts-direct-assessment-only-route/
       name: Ian Todd
