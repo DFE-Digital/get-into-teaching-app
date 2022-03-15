@@ -254,13 +254,13 @@ provider_groups:
       telephone: 0161 202 0161
       email: teachertraining@mca.manchester.sch.uk
     - header: Star Teachers SCITT
-      name: Felicity Ackroyd
-      telephone: 0330 313 9876
-      email: felicity.ackroyd@staracademies.org
+      name: Mehroonnisha Mulla
+      telephone: 0330 313 9870
+      email: mehroonnisha.mulla@staracademies.org
     - header: University of Chester
       link: https://www.chester.ac.uk/
-      name: Jenn Simmonds
-      email: j.simmonds@chester.ac.uk
+      name: Jane Bulkeley
+      email: qtsonlyroute@chester.ac.uk
     - header: University of Cumbria
       link: https://www.cumbria.ac.uk/study/academic-departments/institute-of-education/qts-direct-assessment-only-route/
       name: Ian Todd
@@ -376,11 +376,6 @@ provider_groups:
     - header: Somerset SCITT Consortium
       link: https://www.sciltraining.co.uk
       email: CLeoni@somerset.gov.uk
-    - header: The Learning Institute South West SCITT
-      link: https://www.learninginstitute.co.uk
-      name: Ania Glowczynska
-      telephone: 01726 891 745
-      email: info@learninginstitute.co.uk
     - header: Wessex Schools Training Partnership
       name: Claire Porter
       telephone: 01202 662038
