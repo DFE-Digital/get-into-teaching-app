@@ -254,9 +254,9 @@ provider_groups:
       telephone: 0161 202 0161
       email: teachertraining@mca.manchester.sch.uk
     - header: Star Teachers SCITT
-      name: Felicity Ackroyd
-      telephone: 0330 313 9876
-      email: felicity.ackroyd@staracademies.org
+      name: Mehroonnisha Mulla
+      telephone: 0330 313 9870
+      email: mehroonnisha.mulla@staracademies.org
     - header: University of Chester
       link: https://www.chester.ac.uk/
       name: Jane Bulkeley
