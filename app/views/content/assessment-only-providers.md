@@ -376,11 +376,6 @@ provider_groups:
     - header: Somerset SCITT Consortium
       link: https://www.sciltraining.co.uk
       email: CLeoni@somerset.gov.uk
-    - header: The Learning Institute South West SCITT
-      link: https://www.learninginstitute.co.uk
-      name: Ania Glowczynska
-      telephone: 01726 891 745
-      email: info@learninginstitute.co.uk
     - header: Wessex Schools Training Partnership
       name: Claire Porter
       telephone: 01202 662038
