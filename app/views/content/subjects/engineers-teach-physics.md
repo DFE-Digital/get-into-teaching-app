@@ -1,7 +1,7 @@
 ---
 title: Get into teaching physics
 description: |-
-    Find out more about a new intital teacher training programme for engineers and material scientists who want
+    Find out more about a new intitial teacher training programme for engineers and material scientists who want
     to teach physics.
 layout: "layouts/minimal"
 main_class: "subject-specific"
