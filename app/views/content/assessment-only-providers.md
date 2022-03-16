@@ -473,7 +473,7 @@ provider_groups:
       name: Jo Leedham
       telephone: 01724 297950
       email: jo.leedham@northlincs.gov.uk
-      header: Star Teachers SCITT
+    - header: Star Teachers SCITT
       link: https://www.starinstitute.org.uk/
       name: Mehroonnisha Mulla
       telephone: 0330 313 9870
