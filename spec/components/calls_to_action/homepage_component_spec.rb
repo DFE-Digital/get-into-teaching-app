@@ -18,9 +18,10 @@ RSpec.describe CallsToAction::HomepageComponent, type: :component do
       expect(page).to have_css(".call-to-action")
     end
 
-    specify "the icon is present" do
+    specify "the icon is present and is decorative" do
       image_element = page.find(".call-to-action__icon")
       expect(image_element[:src]).to match(Regexp.new(icon))
+      expect(image_element[:alt]).to eql("")
     end
 
     specify "the title is present" do

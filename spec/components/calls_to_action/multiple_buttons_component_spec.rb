@@ -12,6 +12,13 @@ RSpec.describe CallsToAction::MultipleButtonsComponent, type: :component do
 
   before { render_inline(component) }
 
+  specify "renders the icon and marks it as decorative" do
+    image_element = page.find(".call-to-action__icon")
+
+    expect(image_element[:src]).to match(Regexp.new(icon))
+    expect(image_element[:alt]).to eql("")
+  end
+
   specify "renders the call to action" do
     expect(page).to have_css(".call-to-action.call-to-action--multiple-buttons")
   end

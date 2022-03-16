@@ -4,7 +4,7 @@ module CallsToAction
       image_pack_tag("media/images/icon-school-black.svg",
                      width: 50,
                      height: 50,
-                     alt: "Mortar board icon",
+                     alt: "",
                      class: "call-to-action__icon")
     end
   end
