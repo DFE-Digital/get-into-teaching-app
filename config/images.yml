@@ -143,7 +143,7 @@
   variants:
     - "media/images/content/hero-images/0024--mobile.jpg"
     - "media/images/content/hero-images/0024--tablet.jpg"
-    
+
 "media/images/content/hero-images/0025.jpg":
   alt: "A teacher training provider talking to an attendee at a teacher training event."
   variants:
@@ -305,3 +305,13 @@
   alt: "Jessica Walmsley, Head of Science."
   variants:
     - "media/images/content/blog/thumbnails/jessica-walmsley.jpg"
+
+# homepage
+"media/images/content/homepage/here-to-help.jpg":
+  alt: "Back of an adviser's T-shirt saying 'here to help' at a teacher training event."
+
+"media/images/content/homepage/science-teacher.jpg":
+  alt: "A chemistry teacher standing in a science classroom in front of a periodic table."
+
+"media/images/content/homepage/teacher-training-adviser.jpg":
+  alt: "Teacher in a staff room talking to a colleague."
