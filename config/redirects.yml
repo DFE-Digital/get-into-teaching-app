@@ -35,6 +35,9 @@ redirects:
   "/life-as-a-teacher/my-story-into-teaching/returners": "/my-story-into-teaching/returners"
   "/life-as-a-teacher/my-story-into-teaching/teacher-training-stories": "/my-story-into-teaching/teacher-training-stories"
 
+  # Events pages
+  "/event-categories/online-q-as/archive": "/event-categories/online-q-as"
+
   # Stories
   "/life-as-a-teacher/my-story-into-teaching/career-changers/becoming-a-mum-sparked-my-interest-in-teaching": "/my-story-into-teaching/career-changers/becoming-a-mum-sparked-my-interest-in-teaching"
   "/life-as-a-teacher/my-story-into-teaching/career-changers/financiers-future-in-maths": "/my-story-into-teaching/career-changers/financiers-future-in-maths"
