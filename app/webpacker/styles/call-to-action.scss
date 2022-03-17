@@ -125,6 +125,10 @@
     grid-template-columns: 1.2fr .8fr;
     overflow: hidden;
 
+    &:first-child .call-to-action__image {
+      background-position: 70%;
+    }
+
     .call-to-action__icon__container {
       @include reset;
 
