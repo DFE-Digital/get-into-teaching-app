@@ -112,7 +112,6 @@ Rails.application.routes.draw do
 
   # Needs to have higher priority to redirect the category
   get "event-categories/online-events", to: redirect("/event-categories/online-q-as")
-  get "event-categories/online-events/archive", to: redirect("/event-categories/online-q-as/archive")
 
   resources :event_categories, only: %i[show], path: "event-categories" do
     member do

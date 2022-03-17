@@ -9,8 +9,6 @@ class EventCategoriesController < ApplicationController
   MAXIMUM_EVENTS_IN_CATEGORY = 1_000
 
   def show
-    @show_archive_link = has_archive?(@type)
-
     @category_name = helpers.pluralised_category_name(@type.id)
     @page_title = @category_name
     @front_matter = {
@@ -20,28 +18,6 @@ class EventCategoriesController < ApplicationController
     }
 
     load_events(:future)
-  end
-
-  def show_archive
-    raise_not_found unless has_archive?(@type)
-
-    @category_name = helpers.past_category_name(@type.id)
-
-    @page_title = @category_name
-    @front_matter = {
-      "description" => "See past #{@category_name} events.",
-      "title" => @category_name,
-      "image" => "media/images/content/hero-images/0015.jpg",
-    }
-
-    load_events(:past)
-
-    future_events_category_name = helpers.pluralised_category_name(@type.id)
-    breadcrumb \
-      future_events_category_name,
-      event_category_path(future_events_category_name.parameterize)
-
-    render :show
   end
 
 protected
@@ -74,10 +50,6 @@ private
   def set_form_action
     @form_action = URI.parse(request.path)
     @form_action.fragment = "searchforevents"
-  end
-
-  def has_archive?(type)
-    EventType.has_archive?(type.id)
   end
 
   # filtering is like searching but limited to a single event type. A custom

@@ -18,31 +18,6 @@ describe "View events by category", type: :request do
       receive(:search_teaching_events_grouped_by_type) { events_by_type }
   end
 
-  context "when viewing a category archive" do
-    subject { response }
-
-    let(:category) { "online-q-as" }
-
-    before do
-      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_grouped_by_type) { events_by_type }
-      get archive_event_category_path(category)
-    end
-
-    it { is_expected.to have_http_status :success }
-    it { expect(response.body).to include "Past online Q&amp;As" }
-
-    it "displays all events in the category, ordered by date descending" do
-      expect(response.body.scan(/Event \d/)).to eq(["Event 5", "Event 4", "Event 3", "Event 2", "Event 1"])
-    end
-
-    context "when the category does not support archives" do
-      let(:category) { "train-to-teach-events" }
-
-      it { is_expected.to have_http_status :not_found }
-    end
-  end
-
   context "when viewing a category" do
     subject { response }
 
@@ -71,20 +46,12 @@ describe "View events by category", type: :request do
     end
   end
 
-  context "when viewing old online-events url" do
+  context "when viewing online-events" do
+    before { get event_category_path "online-events" }
+
     subject { response }
 
-    context "when current events" do
-      before { get event_category_path "online-events" }
-
-      it { is_expected.to redirect_to event_category_path "online-q-as" }
-    end
-
-    context "when archive events" do
-      before { get archive_event_category_path "online-events" }
-
-      it { is_expected.to redirect_to archive_event_category_path "online-q-as" }
-    end
+    it { is_expected.to redirect_to event_category_path "online-q-as" }
   end
 
   context "when viewing the schools and university events category" do
