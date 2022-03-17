@@ -62,12 +62,6 @@ describe EventStatus do
       it { is_expected.to be_viewable }
     end
 
-    context "when closed, past, online q&a" do
-      let(:event) { build(:event_api, :closed, :online_event, :past) }
-
-      it { is_expected.to be_viewable }
-    end
-
     context "when closed, past, not online q&a" do
       let(:event) { build(:event_api, :closed, :train_to_teach_event, :past) }
 
@@ -88,12 +82,6 @@ describe EventStatus do
 
     context "when open, future-dated, not online q&a" do
       let(:event) { build(:event_api, :train_to_teach_event) }
-
-      it { is_expected.to be_viewable }
-    end
-
-    context "when open, past, online q&a" do
-      let(:event) { build(:event_api, :past, :online_event) }
 
       it { is_expected.to be_viewable }
     end

@@ -46,9 +46,7 @@ class EventStatus
   end
 
   def viewable?
-    online_q_a = EventType.new(event).online_qa_event?
-
-    !pending? && (future_dated? || online_q_a)
+    !pending? && future_dated?
   end
 
   def accepts_online_registration?

@@ -27,15 +27,3 @@
     <%= link_to("Search for another event type", events_path) %>.
   <% end %>
 <% end %>
-
-<% if @show_archive_link %>
-  <section class="content-cta">
-    <h3><%= past_category_name(@type.id) %></h3>
-    <p>
-      You can see <%= past_category_name(@type.id).downcase %>, including
-      all questions and answers,
-      <%= link_to "on this page",
-                  archive_event_category_path(pluralised_category_name(@type.id).parameterize) %>
-    </p>
-  </section>
-<% end %>

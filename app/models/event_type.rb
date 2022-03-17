@@ -7,11 +7,6 @@ class EventType
       "School or University event" => 222_750_009,
     }.freeze
 
-  WITH_ARCHIVE =
-    {
-      "Online event" => 222_750_008,
-    }.freeze
-
   attr_accessor :type_id
 
   delegate(
@@ -54,10 +49,6 @@ class EventType
 
     def lookup_by_ids(*ids)
       ALL.invert.fetch_values(*ids)
-    end
-
-    def has_archive?(id)
-      WITH_ARCHIVE.values.include?(id)
     end
 
     def all_ids

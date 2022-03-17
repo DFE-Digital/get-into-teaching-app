@@ -234,16 +234,7 @@ describe EventsController, type: :request do
           it { expect(response.body).to include("Page not found") }
         end
 
-        EventType::WITH_ARCHIVE.each do |type, id|
-          context "when the event is a past #{type} type" do
-            let(:event) { build(:event_api, type_id: id, start_at: Time.zone.now.utc - 1.day) }
-
-            it { expect(response).to have_http_status :success }
-            it { expect(response.body).to include(event.name) }
-          end
-        end
-
-        EventType::ALL.except(*EventType::WITH_ARCHIVE.keys).each do |type, id|
+        EventType::ALL.each do |type, id|
           context "when the event is a past #{type} type" do
             let(:event) { build(:event_api, type_id: id, start_at: Time.zone.now.utc - 1.day) }
 
