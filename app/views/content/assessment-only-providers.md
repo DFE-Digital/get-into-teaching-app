@@ -55,7 +55,7 @@ provider_groups:
       link: http://www.nett.org.uk/
       telephone: '01255431949'
       email: teach@nett.org.uk
-    - header: The Pilgrim Partnership 
+    - header: The Pilgrim Partnership
       name: Bev Collier
       telephone: 01234 907896
       email: bcollier@pilgrimpartnership.org
@@ -108,7 +108,7 @@ provider_groups:
       link: https://www.lincolnshirescitt.co.uk/aor
       name: Angela Murphy
       telephone: 01522 889297
-      email: scittenquiries@prioryacademies.co.uk      
+      email: scittenquiries@prioryacademies.co.uk
     - header: Nottingham Trent University
       link: https://www.ntu.ac.uk/
       name: Admissions team
@@ -213,7 +213,7 @@ provider_groups:
       link: https://educate-group.co.uk/itt/
       name: Claire King
       telephone: 01476 512793
-      email: aor@educate-group.co.uk     
+      email: aor@educate-group.co.uk
     - header: Stockton-on-Tees Teacher Training Partnership
       link: https://www.stocktonscitt.uk
       name: Kirsten Webber
@@ -519,11 +519,7 @@ keywords:
 
 If you have a degree and enough classroom experience, you may be able to get qualified teacher status (QTS) through a 12-week assessment only (AO) programme.
 
-The accredited teacher training providers listed on this page offer the AO programme.
-
-Contact them directly to ask them about entry criteria and to apply.
-
-### Teachers from outside the UK
+The accredited teacher training providers listed on this page offer the AO programme. Contact them directly to ask them about entry criteria and to apply.
 
 If you have experience of teaching outside the UK, some training providers will let you apply for an assessment only QTS without visiting or training in England.
 
