@@ -57,10 +57,10 @@ Wherever you are in your journey into teaching, an adviser can give you as much 
 
 Other trainee teachers say they are particularly helpful with: 
 
-* Arranging school experience
-* Seeking out financial support
-* Writing a personal statement
-* Preparing for interviews
+* arranging school experience
+* seeking out financial support
+* writing a personal statement
+* preparing for interviews
 
 Our advisers can help you at any time, even if you're a year or more away from applying.
 
@@ -108,13 +108,15 @@ Our advisers can help make your next application stronger. They’ll help you:
 
 ## Are you ready for an adviser? 
 
-To sign up, you’ll need one of these:
+To sign up, you’ll need (one of the following):
 
-* Bachelor’s degree with honours, grade 2:2 or higher
-* Predicted grade 2:2 or higher for your bachelor’s degree with honours, if you’re still a student
-* Overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
+* a bachelor’s degree with honours, grade 2:2 or higher
+* to be studying for a bachelor’s degree with honours, with a predicted grade of 2:2 or higher
+* an overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
 
-If you're applying from overseas, [contact UK ENIC to check if your qualifications meet this standard](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) before signing up. 
+If you're applying from overseas, [contact UK ENIC to check if your qualifications meet this standard](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) before signing up.
+
+If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach chemistry, computing, maths, modern foreign languages, or physics to get an adviser.
 
 $get-a-tta$
 
