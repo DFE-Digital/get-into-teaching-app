@@ -58,25 +58,43 @@ keywords:
   - Comparability
 ---
 
-Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. 
+This page explains how to apply for teacher training in England. Our guidance applies to citizens from all countries outside the UK.
 
-You’ll complete your training with [qualified teacher status](/what-is-qts) (QTS, or [PGCE](/what-is-a-pgce) + QTS), professional qualifications valued globally.
+Already a qualified teacher? Please visit [Come to England to teach if you're a teacher from outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
 
-You can apply to train to teach in England from any country in the world. This page explains how, step by step.
+When you train to teach in England, you’ll complete your training with [qualified teacher status](/what-is-qts) (QTS), a professional qualification valued globally. 
+
+QTS will allow you to teach in all schools in England. Some courses combine QTS with a postgraduate certificate in education ([PGCE](/what-is-a-pgce)) or a postgraduate diploma in education ([PGDE](/what-is-a-pgce)) – these are optional.
 
 You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
 If you don't want to come to England to train, but would like to gain a professional teaching qualification which is equivalent to English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/international-qualified-teacher-status).
 
-## Key facts
+ [My story into teaching](my-story-into-teaching): learn more about the rewards of training to teach in England.
 
-* Apply now for courses starting September 2022
-* Train for 1 year full-time, or longer part-time
-* International candidates can expect to pay between about £9,250 and £16,000 plus
-living costs to train (with fees and any financial support dependent on your training
+## Get help taking your first step
+Register to get an adviser for personalised advice about every stage of your teacher training application. Advisers are available by email and phone –  or you can use the online chat service on this page.
+
+<a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get an adviser</a>
+
+## Need to know
+
+* International candidates can expect to pay between £9,250 and £16,000, plus
+living costs, to train (with fees and any financial support dependent on your training
 provider and immigration status)
-* Earn at least £25,000, and £32,000 in London, when you qualify
-* Update, extend or switch your visa to live and work in the UK long-term
+* You'll earn at least £25,000 a year, and £32,000 in London, when you qualify as a teacher
+* You can update, extend or switch your visa to live and work in the UK long-term
+
+## Application timeline
+
+* The application deadline for courses starting in autumn 2022 is 21 September 2022 – but it's best to apply as early as possible
+* Applications for courses starting in autumn 2023 open on 12 October 2022
+* You'll train for 1 academic year full-time, or longer part-time
+* You can apply for paid teaching jobs as soon as you successfully complete your training in summer 2023
+
+## Apply for teacher training, step by step
+
+Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. We can help you make a successful application.
 
 ## 1. Check your qualifications
 
@@ -87,19 +105,19 @@ To teach children aged 11 to 18 in secondary school, you’ll need:
 
 To teach children aged 3 to 11 in primary school, you will also need a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 
-A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. [Get help understanding English qualifications and their international equivalents](#get-help-and-advice).
+A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. [We can help you prove your English, maths and science qualifications are equivalent to a grade 4 GCSE.](#get-help-and-advice).
 
 ### If you do not have a university degree
 
-If you do not have a degree, you can [apply to study a 3 to 4 year undergraduate course in England](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) which combines a teaching degree with a professional teaching qualification ([qualified teacher status, or QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts)). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
+If you do not have a degree, you can [apply to study a 3 to 4 year undergraduate course in England](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) which combines a teaching degree with [qualified teacher status](/what-is-qts) (QTS). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
 Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for lots of helpful information about studying at an English university.
 
-## 2. Get help and advice
+## 2. Get support and advice
 
-### Help with international qualifications
+### We can help with international qualifications
 
-If your qualifications come from a non-UK institution, your teacher training provider may want to see a [‘statement of comparability’](https://enic.org.uk/Qualifications/SOC/Default.aspx) showing their equivalence to UK qualifications.
+If your qualifications come from a non-UK institution, your teacher training provider may want to see a [‘statement of comparability’](https://enic.org.uk/Qualifications/SOC/Default.aspx). A statement of comparability proves that your school and university qualifications are equivalent to UK GCSEs and a UK undergraduate degree.
 
 Call Get into Teaching on 0800 389 2500 for:
 
@@ -107,17 +125,19 @@ Call Get into Teaching on 0800 389 2500 for:
 * a free statement of comparability detailing overseas degree equivalency from UK ENIC once you’ve submitted your application, if your provider asks for this
 
 ### Get an adviser
-You can also register with our Get an adviser service for personalised advice about teaching in England over email and phone, or use the online chat service on this page.
+You can also register with our Get an adviser service for personalised advice about your teacher training application. Advisers are available by email and phone –  or you can use the online chat service on this page.
 
 <a href="/tta-service" class="button">Get an adviser</a>
 
-## 3. Find out about fees and financial support
+## 3. Find out about fees 
 
-Many international candidates will not be eligible for financial support.
+You can expect to pay between about £11,000 and £16,000, plus living costs, to train; fees vary between training providers. 
 
-You can expect to pay between about £11,000 and £16,000 plus living costs to train; fees vary between training providers. Any financial support, including a potential reduction to the home fee rate (which is set at a maximum of £9,250) is dependent on your immigration status.
+Alternatively, you can apply for a salaried teacher training course, when you’ll earn money while you train in a school. However, these courses are competitive and you will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
 
-You can apply for a salaried teacher training course, when you’ll earn money while you train in a school. However, these courses are competitive and you will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
+### Financial support
+
+Most international candidates will not be eligible for financial support.
 
 <div class="inset">
   <h3>Already living in the UK?</h3>
@@ -130,8 +150,9 @@ You can apply for a salaried teacher training course, when you’ll earn money w
   </ul>
 </div>
 
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#rate" class="button">Check your eligibility for financial support</a>
+Any financial support, including a potential reduction to the home fee rate (which is set at a maximum of £9,250) is dependent on your immigration status.
 
+<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#rate" class="button">Check your eligibility for financial support</a>
 
 ## 4. Search and apply for teacher training courses
 
