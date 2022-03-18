@@ -5,6 +5,14 @@ description: |-
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
+right_column:
+  ctas:
+    - title: Already a teacher?
+      text: |
+        Learn more about coming to England to teach if you're already qualified.
+      link_text: "Come to England to teach"
+      link_target: "/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk"
+      icon: "icon-person"
 keywords:
   - International
   - Overseas
