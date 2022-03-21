@@ -12,7 +12,6 @@ module MailingList
       validates :email, presence: true, email_format: true
       validates :first_name, presence: true, length: { maximum: 256 }
       validates :last_name, presence: true, length: { maximum: 256 }
-      validates :channel_id, inclusion: { in: :channel_ids, allow_nil: true }
 
       before_validation if: :email do
         self.email = email.to_s.strip
@@ -34,7 +33,17 @@ module MailingList
         super.except("sub_channel_id")
       end
 
+      def save
+        self.channel_id = nil if channel_invalid?
+
+        super
+      end
+
     private
+
+      def channel_invalid?
+        channel_id.present? && !channel_id.in?(channel_ids)
+      end
 
       def query_channels
         @query_channels ||= GetIntoTeachingApiClient::PickListItemsApi.new.get_candidate_mailing_list_subscription_channels

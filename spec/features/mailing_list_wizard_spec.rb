@@ -99,6 +99,48 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
   end
 
+  scenario "Full journey as an on-campus candidate (invalid channel_id)" do
+    sub_channel_id = "abc123"
+
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+
+    visit mailing_list_steps_path({ id: :name, channel: "invalid", sub_channel: sub_channel_id })
+
+    expect(page).to have_text "Get personalised guidance to your inbox"
+    fill_in_name_step
+    click_on "Next step"
+
+    expect(page).to have_text "Do you have a degree?"
+    choose "Not yet, I'm a first year student"
+    click_on "Next step"
+
+    expect(page).to have_text "How close are you to applying"
+    choose "I'm not sure and finding out more"
+    click_on "Next step"
+
+    expect(page).to have_text "Which subject do you want to teach"
+    select "Maths"
+    click_on "Next step"
+
+    expect(page).to have_text "Would you like to hear about teacher training events in your area?"
+    choose "Yes"
+    fill_in "Your postcode", with: "TE57 1NG"
+    click_on "Next step"
+
+    expect(page).to have_text "Accept privacy policy"
+    click_on "Complete sign up"
+
+    expect(page).to have_text "Accept privacy policy"
+    expect(page).to have_text "There is a problem"
+    expect(page).to have_text "Accept the privacy policy to continue"
+    check "Yes"
+    click_on "Complete sign up"
+
+    expect(page).to have_text "You've signed up"
+    expect(page).to have_text("You'll receive a welcome email shortly")
+  end
+
   scenario "Full journey as an existing candidate" do
     first_name = "Joey"
 
