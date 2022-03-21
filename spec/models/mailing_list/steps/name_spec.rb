@@ -51,4 +51,14 @@ describe MailingList::Steps::Name do
     it { is_expected.to allow_value(nil, "").for :channel_id }
     it { is_expected.not_to allow_value(12_345).for :channel_id }
   end
+
+  describe "#export" do
+    subject { instance.export }
+
+    %i[channel_id email first_name last_name].each do |key|
+      it { is_expected.to have_key(key.to_s) }
+    end
+
+    it { is_expected.not_to have_key("sub_channel_id") }
+  end
 end

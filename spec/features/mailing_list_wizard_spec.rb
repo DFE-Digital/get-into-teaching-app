@@ -51,13 +51,18 @@ RSpec.feature "Mailing list wizard", type: :feature do
   end
 
   scenario "Full journey as an on-campus candidate" do
+    sub_channel_id = "abc123"
+
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
     channel_id = channels.first.id
-    visit mailing_list_steps_path({ id: :name, channel: channel_id })
+    visit mailing_list_steps_path({ id: :name, channel: channel_id, sub_channel: sub_channel_id })
 
     expect(page).to have_text "Get personalised guidance to your inbox"
+    # Error to ensure channel/sub-channel persists over page reload.
+    click_on "Next step"
+    expect(page).to have_text("Enter your full email address")
     fill_in_name_step
     click_on "Next step"
 
@@ -89,6 +94,9 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "You've signed up"
     expect(page).to have_text("You'll receive a welcome email shortly")
+
+    # We pass this to the BAM tracking pixel in GTM.
+    expect(page).to have_selector("[data-sub-channel-id='#{sub_channel_id}']")
   end
 
   scenario "Full journey as an existing candidate" do

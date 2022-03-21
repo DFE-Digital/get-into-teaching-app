@@ -7,6 +7,7 @@ module MailingList
       attribute :last_name
       attribute :email
       attribute :channel_id, :integer
+      attribute :sub_channel_id
 
       validates :email, presence: true, email_format: true
       validates :first_name, presence: true, length: { maximum: 256 }
@@ -27,6 +28,10 @@ module MailingList
 
       def channel_ids
         query_channels.map { |channel| channel.id.to_i }
+      end
+
+      def export
+        super.except("sub_channel_id")
       end
 
     private
