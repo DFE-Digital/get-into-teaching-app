@@ -81,7 +81,7 @@ providers:
       email: vboreham@lyonshall.org.uk
       subjects: maths, physics, computing
     - header: Northgate High School, Ipswich
-      link: https://www.northgate.suffolk.sch.uk/staff/current-vacancies/teaching-internship-programme-opportunity-summer-2022/
+      link: https://www.northgate.suffolk.sch.uk/
       name: Miss Mary Hallett
       email: mch@northgate.suffolk.sch.uk
       subjects: maths, physics, computing
@@ -128,7 +128,7 @@ providers:
       email: alice.neil@paddington-academy.org
       subjects: maths, physics
     - header: Riverside School
-      link: http://www.riversidecampus.com/secondary/?page_id=10636
+      link: http://www.riversidecampus.com/
       name: Serena Madhvani
       email: TeachingInternships@riverside.bardaglea.org.uk
       subjects: maths, physics, computing
@@ -219,9 +219,14 @@ providers:
   South East:
     providers:
     - header: Bitterne Park School
-      link: https://www.bitterneparkschool.org.uk/
+      link: https://www.bitterneparkschool.org.uk/train-to-teach/undergraduate-internships-2022
       name: Victoria Holland
       email: alliance.office@bitterneparkschool.org.uk
+      subjects: maths, physics, computing
+    - header: Furze Platt Senior School
+      link: https://www.furzeplatt.com/page/?title=Physics%2C+Maths+and+Computing+Internships+++++++++++++++++++++++++++++++++++++APPLICATIONS+NOW+OPEN+FOR+2022&pid=536
+      name: Debbie Harding
+      email: debbie.harding@furzeplatt.net
       subjects: maths, physics, computing
     - header: Invicta Grammar School
       link: https://www.viat.org.uk/1051/teaching-internship-programme-2022
