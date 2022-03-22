@@ -1,5 +1,5 @@
 <% if title? %>
-  <%= tag.h2(title, class: "always-indent", id: title.parameterize.concat("-table")) %>
+  <%= content_tag(heading_tag, title, class: "always-indent", id: title.parameterize.concat("-table")) %>
 <% end %>
 
 <div class="<%= wrapper_class %>">
