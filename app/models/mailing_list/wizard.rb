@@ -8,6 +8,7 @@ module MailingList
       preferred_teaching_subject_id
       consideration_journey_stage_id
       degree_status_id
+      sub_channel_id
     ].freeze
 
     self.steps = [

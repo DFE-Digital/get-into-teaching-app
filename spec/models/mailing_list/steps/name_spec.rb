@@ -44,11 +44,27 @@ describe MailingList::Steps::Name do
     it { is_expected.not_to allow_value("me@you").for :email }
   end
 
-  describe "validations for channel_id" do
-    let(:options) { channels.map(&:id) }
+  describe "#export" do
+    subject { instance.export }
 
-    it { is_expected.to allow_values(options).for :channel_id }
-    it { is_expected.to allow_value(nil, "").for :channel_id }
-    it { is_expected.not_to allow_value(12_345).for :channel_id }
+    %i[channel_id email first_name last_name].each do |key|
+      it { is_expected.to have_key(key.to_s) }
+    end
+
+    it { is_expected.not_to have_key("sub_channel_id") }
+  end
+
+  describe "#save" do
+    it "clears the channel_id on save when invalid" do
+      subject.channel_id = "invalid"
+      subject.save
+      expect(subject.channel_id).to be_nil
+    end
+
+    it "retains the channel_id on save when valid" do
+      subject.channel_id = channels.first.id
+      subject.save
+      expect(subject.channel_id).to eq(channels.first.id)
+    end
   end
 end
