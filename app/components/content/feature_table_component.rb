@@ -1,12 +1,13 @@
 module Content
   class FeatureTableComponent < ViewComponent::Base
-    attr_reader :data, :title
+    attr_reader :data, :title, :heading_tag
 
-    def initialize(data, title = nil)
+    def initialize(data, title = nil, heading_tag: "h3")
       super
 
       @data = data
       @title = title
+      @heading_tag = heading_tag
 
       fail(ArgumentError, "data must be present") unless data?
     end
