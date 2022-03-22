@@ -36,7 +36,7 @@ calls_to_action:
         Funding available: "Yes"
         Length of training: "Typically 1 academic year"
         Qualification: "Early years teacher status"
-      - "Graduate early years teacher training"     
+      - "Graduate early years teacher training"
   EY-graduate-employment:
     name: feature_table
     arguments:
@@ -57,13 +57,11 @@ calls_to_action:
       - "Graduate 'assessment only' training"
 ---
 
-## Become an early years teacher
-
 As an early years teacher you'll work with young children up to the age of 5. Your input will have a lasting and positive effect on their development and wellbeing.
 
 The early years are critical in children's development. You’ll use your knowledge and skills to help young children enjoy high standards of teaching and open their minds to new ideas every day.
 
-### How to become an early years teacher
+## How to become an early years teacher
 
 You’ll need to do 'early years initial teacher training' (EYITT) to achieve 'early years teacher status' (EYTS).
 
