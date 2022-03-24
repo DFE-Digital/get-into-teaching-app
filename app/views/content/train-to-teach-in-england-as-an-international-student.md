@@ -189,8 +189,6 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
   </p>
 </div>
 
-
-
 ### Your suitability for teaching
 
 As part of the application process, your training provider will confirm you’re suitable for teaching. They'll check:
