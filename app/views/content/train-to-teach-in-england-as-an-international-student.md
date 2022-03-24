@@ -70,7 +70,7 @@ You’ll complete your training with [qualified teacher status](https://www.gov.
 
 QTS will allow you to teach in all schools in England. Some courses combine QTS with a postgraduate certificate in education ([PGCE](/what-is-a-pgce)) or a postgraduate diploma in education ([PGDE](/what-is-a-pgce)) – these are optional.
 
-Visit [My story into teaching](my-story-into-teaching) to learn more about the rewards of training to teach in England.
+Visit [My story into teaching](/my-story-into-teaching) to learn more about the rewards of training to teach in England.
 
 ## Other ways to train
 
