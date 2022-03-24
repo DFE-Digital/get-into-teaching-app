@@ -171,7 +171,7 @@ If you need a visa to train to teach in England, you will need a confirmed offer
 
 ### Ways to train
 
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](#get-help-and-advice) for guidance on the different types of courses available, or see [Ways to train to teach in England](/ways-to-train).
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](#get-support-and-advice) for guidance on the different types of courses available, or see [Ways to train to teach in England](/ways-to-train).
 
 You can apply for a teacher training place without visiting the UK. However, due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
 
