@@ -58,7 +58,7 @@ keywords:
   - Comparability
 ---
 
-This page explains how international candidates can train to teach in England, and applies to citizens from all countries outside the UK.
+This page explains how international candidates can train to teach in England. It applies to citizens from all countries outside the UK.
 
 Already a qualified teacher? Please visit [Come to England to teach if you're a teacher from outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
 
@@ -91,13 +91,13 @@ provider and immigration status)
 ## Application timeline
 
 * 21 September 2022: deadline to apply for courses starting this year (autumn 2022) – it's best to apply as soon as you can
-* 12 October 2022: date applications open for courses starting next year (autumn 2023) 
+* 12 October 2022: applications open for courses starting next year (autumn 2023) 
 * Training lasts one 1 academic year full-time, or longer part-time
-* You can apply for paid teaching jobs as soon as you successfully complete your training (in summer 2023 for courses starting this year)
+* You can apply for paid teaching jobs as soon as you successfully complete your training in summer 2023
 
 ## Apply for teacher training, step by step
 
-We can help you make a successful application. For support on your journey, sign up to Get an adviser, or use the online chat service on this page.
+We can help you make a successful application. Sign up to get personalised advice from a teacher traing adviser, or use the online chat service on this page.
 
 <a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get an adviser</a>
 
@@ -110,7 +110,7 @@ To teach children aged 11 to 18 in secondary school, you’ll need:
 
 To teach children aged 3 to 11 in primary school, you will also need to meet a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 
-A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. We can help you prove your English, maths and science qualifications are the same standard as a grade 4 GCSE.
+A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. [We can help you prove your English, maths and science qualifications are the same standard as a grade 4 GCSE](#get-support-and-advice).
 
 If you do not have qualifications that are equivalent to GCSEs, you may be able to sit a test set by training providers to show your knowledge of English, maths and science. [You can contact us for advice about this](#get-support-and-advice).
 
@@ -124,17 +124,17 @@ Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.
 
 ### Get help with international qualifications
 
-If your qualifications come from a non-UK institution, your teacher training provider may want to see a [‘statement of comparability’](https://enic.org.uk/Qualifications/SOC/Default.aspx). A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
+If your qualifications come from a non-UK institution, your teacher training provider may want to see a ‘statement of comparability’ from [UK ENIC](https://enic.org.uk/Qualifications/SOC/Default.aspx). A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
 
 Call Get into Teaching on 0800 389 2500 for:
 
 * guidance on the UK equivalents of your qualifications
-* a free statement of comparability detailing overseas degree equivalency from UK ENIC once you’ve submitted your application, if your provider asks for this
+* a free statement of comparability, once you’ve submitted your application, if your provider asks for this
 * advice about what to do if you do not have English, maths and science qualifications of grade 4 GCSE standard
 
 ### Get personalised advice from a teacher training adviser
 
-Register with our Get an adviser service for personalised advice about your teacher training application. Advisers are available by email and phone –  or you can use the online chat service on this page.
+Advisers are available by email and phone –  or you can use the online chat service on this page.
 
 <a href="/tta-service" class="button">Get an adviser</a>
 
@@ -142,11 +142,11 @@ Register with our Get an adviser service for personalised advice about your teac
 
 You can expect to pay between about £11,000 and £16,000, plus living costs, to train; fees vary between training providers. 
 
-Alternatively, you can apply for a salaried teacher training course, when you’ll earn money while you train in a school. However, these courses are competitive and you will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
+Alternatively, you can apply for a salaried teacher training course, and earn money while you train in a school. However, these courses are competitive and you will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
 
 ### Financial support
 
-Any financial support, including a potential reduction to the home fee rate (which is set at a maximum of £9,250) is dependent on your immigration status. Most international candidates will not be eligible for financial support.
+Any financial support, for example a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250) is dependent on your immigration status. Most international candidates will not be eligible for financial support.
 
 <div class="inset">
   <h3>Already living in the UK?</h3>
@@ -167,7 +167,7 @@ Any financial support, including a potential reduction to the home fee rate (whi
 
 You can search by location, teaching subject and age group. You can also search for courses which pay a salary, and courses where student or skilled worker visa sponsorship is available.
 
-If you need a visa to train to teach in England, you will need a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
+If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa. 
 
 ### Ways to train
 
@@ -209,7 +209,7 @@ As part of the application process, your training provider will check you’re s
 </div>
 
 
-If you don’t already have an immigration status allowing you to train to teach in the UK, you’ll need to apply for a [student visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa). You can do this once you have a confirmed offer of a fee-paying training place from a training provider who can sponsor visas. 
+If you don’t already have an immigration status allowing you to train to teach in the UK, you’ll need to apply for a [student visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa). You can do this once you have a confirmed offer of a training place from a training provider who can sponsor student visas. 
 
 If you have a place on a salaried training course, you’ll need a [skilled worker visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa).
 
@@ -219,7 +219,7 @@ Alternatively, you may be eligible for a different type of visa which allows you
 
 ## 6. Plan your move to the UK
 
-The [UK Council for International Student Affairs delivers independent advice](https://www.ukcisa.org.uk/Information--Advice) about all aspects of the international student experience, including immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
+Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/Information--Advice) for advice about immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
 
 Your teacher training provider may also be able to help you plan your move to the UK  – contact them directly to ask.
 
