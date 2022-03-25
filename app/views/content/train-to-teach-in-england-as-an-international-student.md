@@ -89,7 +89,7 @@ provider and immigration status)
 
 ## Apply for teacher training, step by step
 
-We can help you make a successful application. Sign up to get personalised advice from a teacher traing adviser, or use the online chat service on this page.
+We can help you make a successful application. Sign up to get personalised advice from a teacher training adviser, or use the online chat service on this page.
 
 <a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get an adviser</a>
 
