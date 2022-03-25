@@ -17,34 +17,11 @@ $calculator$
 
 If you’re thinking of returning to the classroom, now could be a great time. After a period of disruption for so many pupils, you could help those most affected to get back on track. Bring your valuable experience back to the classroom with help from the Department for Education.
 
-## Not sure where to start? Watch our helpful guide
-
-<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
-  <iframe 
-    title="A video about considering a return to teaching"
-    loading="lazy"
-    src="https://www.youtube-nocookie.com/embed/_oQ4DTXkGHk" 
-    frameborder="0" 
-    allow="autoplay; encrypted-media" 
-    allowfullscreen
-  ></iframe>
-</div>
-
-> Having a designated person to talk to and to check in with is a huge help.
->
-> _John Farrell, returning maths teacher_
-
 ## Read up on how things have changed since you were last in the classroom
 
 The Department for Education are working with schools to take action in a number of areas to address issues that teachers may face. From [workload reduction](https://www.gov.uk/guidance/school-workload-reduction-toolkit), to [pupil behaviour](https://www.gov.uk/guidance/behaviour-hubs), [wellbeing](https://www.gov.uk/guidance/education-staff-wellbeing-charter) and [flexible working opportunities](https://www.gov.uk/government/collections/flexible-working-resources-for-teachers-and-schools), you may find that the classroom looks very different from when you last taught.
 
 It’s also a good idea to read up on the latest [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards) and review changes to the [curriculum](https://www.gov.uk/topic/schools-colleges-childrens-services/curriculum-qualifications).
-
-> Laura [Return to Teaching Adviser] identified the problems that I would have with my references being old and suggested how I could overcome that in the short term and the medium term. Laura also reviewed my applications and spoke to me before the interview. I found this extremely helpful. As I have been out of the profession for some time, there are very few people I could talk to in detail about my interview lesson.
->
-> Laura is very knowledgeable and she put me at ease, giving me good, practical advice and her highlighting my strengths gave me confidence. Laura struck the perfect balance between being professional and friendly. She was always quick to respond and everything she said added value. Particularly around the interview stage, I felt like I had a wise friend that I could look to for advice. I would certainly recommend her to others.
->
-> _Lara Griffiths, returning maths teacher_
 
 ## Get free one-to-one support
 
