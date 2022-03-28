@@ -1,17 +1,59 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body grey-bg", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
     <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
-    <%= render HeaderComponent.new do |c| %>
-      <%= c.hero(@front_matter) %>
-    <% end %>
+    <%= render HeaderComponent.new %>
 
     <main class="home" id="main-content">
+      <section class="container home-hero">
+        <header>
+          <h1>Train to be a teacher</h1>
+
+          <p>
+            Aliquam accumsan tortor at rhoncus interdum. Suspendisse potenti. Quisque laoreet,
+            tortor sed eleifend convallis, purus tellus molestie urna, nec gravida ligula
+            arcu id tortor. Donec finibus, risus in hendrerit tincidunt, nibh erat gravida
+            tellus, eget sagittis nisl lectus non nulla. Quisque eleifend congue efficitur.
+          </p>
+        </header>
+      </section>
+
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
       <% end %>
+
+      <section class="container nav-cards">
+        <a href="#" class="nav-card">
+          <h2>If you have a degree</h2>
+
+          <p>
+            In gravitate brevis soleat esse, ut eius magnitudinem celeritas,
+            diuturnitatem allevatio consoletur.
+          </p>
+        </a>
+
+        <a href="#" class="nav-card">
+          <h2>If you want to change career</h2>
+
+          <p>
+            Ad ea cum accedit, ut neque divinum numen horreat nec praeteritas
+            voluptates effluere patiatur earumque assidua recordatione laetetur,
+            quid est
+          </p>
+        </a>
+
+        <a href="#" class="nav-card">
+          <h2>If you already have experience</h2>
+
+          <p>
+            Recordatione laetetur, quid est, cur nostri a nostris de amicitia
+            dicenda sunt.
+          </p>
+        </a>
+
+      </section>
     </main>
 
     <%= render FooterComponent.new %>

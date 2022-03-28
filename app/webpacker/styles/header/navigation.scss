@@ -94,7 +94,7 @@ body > header nav {
 
       > li {
         border-left: 6px solid $grey;
-        border-bottom: 1px solid $white;
+        border-bottom: 1px solid $grey;
         max-width: 80%;
 
         .menu__text {
@@ -146,7 +146,7 @@ body > header nav {
       > li {
         position: relative;
         flex-direction: row;
-        border-bottom: 6px solid $white;
+        border-bottom: 6px solid $grey;
         padding: 1em 1em 1.5em 1em;
 
         &.active {
@@ -168,7 +168,7 @@ body > header nav {
           line-height: 1.2;
           display: inline-block;
           padding: 1em .2em 0;
-          border-bottom: 2px solid $white;
+          border-bottom: 2px solid $grey;
         }
       }
     }
