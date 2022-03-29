@@ -217,6 +217,6 @@ Your provider will give you feedback to help you address any issues with your ap
 You may need to get an additional qualification, improve your interview
 technique or improve the quality of your application.
 
-You can then reapply, up to three courses at a time. You can do this as many times as you want to get a place. Many people succeed second or third time round.
+You can then apply again, to up to 3 courses at a time. You can do this as many times as you want to get a place. Many people succeed second or third time round.
 
 $get-a-tta$
