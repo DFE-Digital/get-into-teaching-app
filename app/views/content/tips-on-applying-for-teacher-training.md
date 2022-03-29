@@ -87,6 +87,8 @@ your application.
 
 You can [find and apply to most postgraduate teacher training courses on GOV.UK](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
+You can choose up to 3 teacher training courses for each application.
+
 If you do not find what you were looking for, there are [other ways to train](/ways-to-train).
 
 Before you start, it’s particularly important to think about your referees and
@@ -215,7 +217,6 @@ Your provider will give you feedback to help you address any issues with your ap
 You may need to get an additional qualification, improve your interview
 technique or improve the quality of your application.
 
-You can apply as many times as you want to get a place. Many people succeed
-second or third time round.
+You can then reapply, up to three courses at a time. You can do this as many times as you want to get a place. Many people succeed second or third time round.
 
 $get-a-tta$
