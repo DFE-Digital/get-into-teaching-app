@@ -6,7 +6,7 @@ describe "Next Gen Images", type: :request do
   before do
     allow(File).to receive(:exist?).and_call_original
     allow(File).to receive(:exist?).with(/.*\.svg/).and_return(true)
-    get blog_path
+    get blog_index_path
   end
 
   it do
