@@ -6,7 +6,7 @@
 
     <%= render HeaderComponent.new %>
 
-    <main class="home" id="main-content category">
+    <main class="home category" id="main-content">
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
       <% end %>
