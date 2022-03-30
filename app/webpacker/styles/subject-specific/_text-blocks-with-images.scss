@@ -53,7 +53,7 @@
 
   @include mq($from: tablet) {
     grid-template-columns: repeat(2, 1fr) repeat(2, .8fr) 1fr;
-    grid-template-rows: repeat(2, .5fr) .2fr repeat(2, minmax(.5fr, max-content));
+    grid-template-rows: .2fr 15em 1fr;
   }
 
   .statement {

@@ -11,14 +11,17 @@ header {
   min-height: 15em;
 
   .container {
-    max-width: 65ch;
+    max-width: 80ch;
     margin-top: 0;
-    flex-direction: column;
+
     align-items: center;
     padding-block: 1em;
 
+    display: grid;
+    grid-template-columns: 1fr;
+
     @include mq($from: mobile) {
-      flex-direction: row;
+      grid-template-columns: 1fr 10em 1fr;
     }
   }
 
@@ -56,28 +59,35 @@ header {
   }
 
   h1 {
-    flex: 1 0 60%;
     margin: 1em auto;
+    z-index: 5;
+
+    @include mq($from: mobile) {
+      grid-area: 1 / 1 / 2 / 3;
+    }
 
     @include mq($from: tablet) {
       margin: 1em inherit;
     }
 
     span {
-      @include font-size(xlarge);
+      @include font-size(xxlarge);
 
       padding: .05rem .7rem;
     }
 
     span:last-of-type {
-      @include font-size(xxxlarge);
+      @include font-size(xxxlarge, $adjust: 2rem);
     }
   }
 
   picture {
-    flex: 0 1 40%;
+    @include mq($from: mobile) {
+      grid-area: 1 / 2 / 2 / 4;
+    }
 
     img {
+      transform: rotate(2deg);
       max-width: 90%;
 
       @include mq($from: tablet) {
