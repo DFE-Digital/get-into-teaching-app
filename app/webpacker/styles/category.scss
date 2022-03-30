@@ -32,4 +32,43 @@
         text-decoration: none;
         color: black;
     }
+
+    &__questions {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+
+        background: $white;
+
+        @include mq($from: tablet) {
+            flex-direction: row;
+            gap: 2em;
+        }
+    }
+
+    &__question {
+        @include mq($from: tablet) {
+            flex-basis: 50%;
+        }
+
+        padding: 1em;
+
+        h2 {
+            font-weight: normal;
+            @include font-size(medium);
+        }
+
+        * {
+            margin: 0;
+        }
+
+        * + * {
+            margin-top: 1em;
+            margin-bottom: 0;
+
+            @include mq($from: tablet) {
+                margin-top: 2em;
+            }
+        }
+    }
 }

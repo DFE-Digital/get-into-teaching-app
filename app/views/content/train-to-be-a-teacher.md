@@ -8,5 +8,6 @@ layout: "layouts/category"
 content:
     - content/train-to-be-a-teacher/hero
     - content/train-to-be-a-teacher/nav-cards
+    - content/train-to-be-a-teacher/questions
 ---
 
