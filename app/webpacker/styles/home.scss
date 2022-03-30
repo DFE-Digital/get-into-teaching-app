@@ -24,39 +24,6 @@ main.home {
       }
     }
   }
-
-  // prototype stuff, untidy!
-  .home-hero {
-    margin: 0;
-    background: $yellow;
-
-    p {
-      max-width: 70ch;
-    }
-  }
-
-  .nav-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    @include mq($from: tablet) {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    
-    gap: 2em;
-    list-style: none;
-    margin-inline: 3em;
-
-    .nav-card {
-      display: block;
-      background: white;
-      padding: 1em;
-      box-shadow: 11px 10px 5px -5px rgba(0,0,0,0.30);
-
-      text-decoration: none;
-      color: black;
-    }
-  }
 }
 
 .grey-bg {

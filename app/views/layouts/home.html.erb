@@ -1,25 +1,19 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body grey-bg", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
     <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
-    <%= render HeaderComponent.new %>
+    <%= render HeaderComponent.new do |c| %>
+      <%= c.hero(@front_matter) %>
+      <% c.above_hero do %>
+        <%= render(partial: "/content/home/urgent-call") %>
+      <% end %>
+    <% end %>
 
     <main class="home" id="main-content">
       <section class="container home-hero">
-        <header>
-          <h1>Train to be a teacher</h1>
-
-          <p>
-            Aliquam accumsan tortor at rhoncus interdum. Suspendisse potenti. Quisque laoreet,
-            tortor sed eleifend convallis, purus tellus molestie urna, nec gravida ligula
-            arcu id tortor. Donec finibus, risus in hendrerit tincidunt, nibh erat gravida
-            tellus, eget sagittis nisl lectus non nulla. Quisque eleifend congue efficitur.
-          </p>
-        </header>
-      </section>
-
+  
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
       <% end %>

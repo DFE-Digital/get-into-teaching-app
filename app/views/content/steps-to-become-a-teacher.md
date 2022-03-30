@@ -6,7 +6,7 @@
   date: "2021-06-24"
   image: "media/images/content/hero-images/0017.jpg"
   backlink: "../"
-  navigation: 10
+  # navigation: 10
   steps:
     Decide who to teach:
       partial: content/steps-to-become-a-teacher/step_1_decide_who_to_teach

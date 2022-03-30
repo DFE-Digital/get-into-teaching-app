@@ -1,0 +1,36 @@
+
+.category {
+    &__hero {
+        margin: 0;
+        background: $yellow;
+
+        p {
+            max-width: 70ch;
+        }
+    }
+
+    &__nav-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-inline: 1em;
+
+        @include mq($from: tablet) {
+            grid-template-columns: repeat(3, 1fr);
+            margin-inline: 2em;
+        }
+
+        gap: 2em;
+        list-style: none;
+
+    }
+
+    &__nav-card {
+        display: block;
+        background: white;
+        padding: 1em;
+        box-shadow: 11px 10px 5px -5px rgba(0,0,0,0.30);
+
+        text-decoration: none;
+        color: black;
+    }
+}

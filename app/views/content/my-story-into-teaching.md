@@ -10,7 +10,7 @@ subtitle: Get information and support to help you become a teacher.
 subtitle_button: "Register your interest"
 subtitle_link: "/mailinglist/signup/name"
 hide_page_helpful_question: true
-navigation: 35
+# navigation: 35
 fullwidth: true
 featured_page:
   image: media/images/content/stories/a-day-in-the-life-of-a-teacher.jpg

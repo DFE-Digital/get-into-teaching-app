@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body grey-bg", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
+
+    <%= render HeaderComponent.new %>
+
+    <main class="home" id="main-content category">
+      <% @front_matter["content"]&.each do |partial| %>
+        <%= render(partial) %>
+      <% end %>
+    </main>
+
+    <%= render FooterComponent.new %>
+  <% end %>
+</html>
