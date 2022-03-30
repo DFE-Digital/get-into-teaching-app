@@ -69,6 +69,6 @@ Why teach?
 ##Making a difference
 Find out how teachers are having a positive impact on their student’s lives, from getting kids coding the future to inspiring the entrepreneurs of tomorrow.
 
-[Read teachers’ stories](https://getintoteaching.education.gov.uk/my-story-into-teaching/making-a-difference)
+[Read teachers’ stories](/my-story-into-teaching/making-a-difference)
 
 
