@@ -5,54 +5,23 @@
 
 .link-block {
   &__header {
-    background-color: $pink;
-    color: #ffffff;
-    font-weight: bold;
-    @include font-size("small");
+    color: $purple;
+    @include font-size("medium");
     padding: $indent-amount $indent-amount $indent-amount 50px;
     margin: 0;
     position: relative;
-
-    &:before {
-      content: "";
-      display: block;
-      background-image: url('../images/icon-page.svg');
-      width: 21px;
-      height: 27px;
-      position: absolute;
-      top: 16px;
-      left: 16px;
-    }
-
-    .link-block--related & {
-      background-color: $pink;
-
-      &:before {
-        content: "";
-        display: block;
-        background-image: url('../images/icon-related.svg');
-        width: 26px;
-        height: 33px;
-        position: absolute;
-        top: 16px;
-        left: 13px;
-      }
-    }
   }
 
   &__list {
     list-style: none;
     padding: 10px 0;
     margin: 0 0 30px;
-    background-color: $grey;
 
     a {
       display: block;
       position: relative;
       color: $black;
-      font-weight: bold;
       line-height: 1.25;
-      text-decoration: none;
       margin-bottom: 10px;
       padding: 5px $indent-amount 5px 50px;
 
