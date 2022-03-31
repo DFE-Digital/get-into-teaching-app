@@ -26,7 +26,7 @@ During your experience, you’ll get to do things like:
 
 ###Find school experience
 
-You can use our [Get school experience service](https://schoolexperience.education.gov.uk/) to search for and request experience in England.
+You can usearch fro and request [school experience](https://schoolexperience.education.gov.uk/) in England.
 
 If you can’t find what you’re looking for, you can call a school directly. You can [find schools near](https://get-information-schools.service.gov.uk/) you and ask who to talk to about getting school experience.
 
