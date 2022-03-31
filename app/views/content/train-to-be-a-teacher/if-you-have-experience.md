@@ -2,7 +2,7 @@
 title: If you have classroom experience
 related_content:
     Career progression: "/my-story-into-teaching/career-progression"
-    Salaries and benefitse : "/salaries-and-benefits"
+    Salaries and benefits : "/salaries-and-benefits"
     Online Q&A sessions : "/event-categories/online-q-as"
 ---
 
