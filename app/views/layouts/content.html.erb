@@ -79,7 +79,7 @@
 
             <% if @front_matter["related_content"].present? %>
               <div class="link-block link-block--related">
-                <h2 class="link-block__header">Related Content:</h2>
+                <h2 class="link-block__header">Related content:</h2>
                 <ul class="link-block__list">
                   <% @front_matter["related_content"].each do |item, anchor| %>
                     <li><%= link_to(item, anchor) %></li>
