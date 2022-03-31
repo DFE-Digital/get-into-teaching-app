@@ -1,5 +1,5 @@
 ---
-title: Other training you can get
+title: Other training and experience you can get
 ---
 
 ##Get School Experience
