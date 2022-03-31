@@ -12,7 +12,7 @@ If you have a degree, or you’re currently studying for one, there are differen
 We also have information for people outside of the UK who want to get [international qualified teacher status](/international-qualified-teacher-status) (iQTS) or [come to teach in England](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
 
 ##Study as a postgraduate student
-You can study for [a PGCE or PGDE](/what-is-a-pgce) (an academic qualification) at a university. This will give you QTS. Most of the time you will be in schools on placement but there is some academic learning. Courses typically take one year but you may be able to study part-time.
+You can study for [a PGCE or PGDE](/what-is-a-pgce) (an academic qualification) at a university. This is one way to get QTS. Most of the time you will be in schools on placement but there is some academic learning. Courses typically take one year but you may be able to study part-time.
 
 Fees for full-time courses are usually around £9,250 but you can:
 
