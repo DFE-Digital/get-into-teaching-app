@@ -1,5 +1,9 @@
 ---
 title: Other training and experience you can get
+related_content:
+    What is QTS?: "/what-is-qts"
+    Salaries and benefits : "/salaries-and-benefits"
+    Online Q&A sessions : "/event-categories/online-q-as"
 ---
 
 ##Get School Experience
@@ -45,7 +49,7 @@ You could apply for a [paid teaching internship](https://getintoteaching.educati
 - computing
 - modern languages
 
-##Attend teacher training events
+##Attend a teacher training event
 
 [Teacher training events](https://getintoteaching.education.gov.uk/events) can also give you an insight into teaching. You can choose from our Train to Teach events, online Q&A sessions and events run by training providers. The events are in person across England or online.
 
