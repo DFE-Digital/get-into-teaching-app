@@ -23,15 +23,15 @@ Fees are higher for international students.
 
 You should check the fees for a particular course you are interested in with the course provider.
 
-##Train in school
-There are two different programmes that focus on training you while you teach in a school:
+##Train in school (fee paying)
+There are different programmes that focus on training you while you teach in a school:
 
 - School-centred initial teacher training (SCITT)
 - School Direct (fee-funded)
 
-SCITT programmes are delivered by a network of schools, providing school-based training.
+SCITT programmes are delivered by a network of schools, providing school-based training. You won’t be paid a salary while you are training and will pay fees.
 
-School Direct (fee-funded) programmes are delivered by groups of schools in collaboration with a SCITT or university. The content and structure of a School Direct course is broadly similar to a SCITT course. Some SCITT and School Direct (fee-funded) programmes give you a PGCE or PGDE in addition to QTS. Courses typically take one year but you may be able to study part-time.
+School Direct (fee-funded) programmes are delivered by groups of schools in collaboration with a SCITT or university. The content and structure of a School Direct course is broadly similar to a SCITT course and they don't pay you a salary. Some SCITT and School Direct (fee-funded) programmes give you a PGCE or PGDE in addition to QTS. Courses typically take one year but you may be able to study part-time.
 
 Fees are usually around £9,250 but you can:
 
