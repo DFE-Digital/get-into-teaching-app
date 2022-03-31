@@ -1,5 +1,9 @@
 ---
 title: If you have classroom experience
+related_content:
+    Career progression: "/my-story-into-teaching/career-progression"
+    Salaries and benefitse : "/salaries-and-benefits"
+    Online Q&A sessions : "/event-categories/online-q-as"
 ---
 
 If you have been working in a classroom and you already have a degree, you may be able to get [qualified teacher status](/what-is-qts) (QTS) through a 12-week ‘assessment only’ programme.
@@ -14,11 +18,3 @@ Entry criteria may vary by teacher training provider. You should ask them about 
 Find out more about [assessment only teacher training providers](/assessment-only-providers).
 
 We have information for people who already have QTS and would like to [return to teaching](/returning-to-teaching).
-
-##Also on this page
-
-- [career progression](/my-story-into-teaching/career-progression)
-
-- [salaries and benefits](/salaries-and-benefits)
-
-- [online Q&A sessions](/event-categories/online-q-as)
