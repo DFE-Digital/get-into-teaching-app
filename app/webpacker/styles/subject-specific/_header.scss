@@ -87,7 +87,6 @@ header {
     }
 
     img {
-      transform: rotate(2deg);
       max-width: 90%;
 
       @include mq($from: tablet) {
