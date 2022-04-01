@@ -60,7 +60,7 @@ International qualified teacher status (iQTS) is a new teaching qualification ba
 
 4. Learn from world-class English teacher training providers, with in-school support from a trained mentor
 
-5. Meet the same rigorous [Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards#:~:text=The%20iQTS%20Teachers'%20Standards%20define,for%20application%20in%20international%20contexts.) that are set for QTS, and open doors at international schools and other employers around the world
+5. Meet the same rigorous [Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards) that are set for QTS, and open doors at international schools and other employers around the world
 
 6. Complete iQTS, and you’ll be eligible to apply for QTS with no further fees or training, and qualified to teach in all schools in England
 
