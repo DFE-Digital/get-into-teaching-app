@@ -165,6 +165,8 @@ If you need a visa to train to teach in England, you must have a confirmed offer
 
 You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](#get-help-and-advice) for guidance on the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
 
+You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
+
 You can apply for a teacher training place without visiting the UK. However, due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
 
 <div class="inset">
@@ -175,11 +177,16 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
   </p>
 </div>
 
+
+
 ### Your suitability for teaching
 
-As part of the application process, your training provider will check you’re suitable for teaching in terms of your health, whether you’re safe to work with children and the standards you meet in English, maths and, if you want to teach primary school age children, science.
+As part of the application process, your training provider will confirm you’re suitable for teaching. They'll check: 
+* your health
+* whether you’re safe to work with children
+* the standards you meet in English, maths and, if you want to teach primary school age children, science
 
-[Learn more about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train)
+
 
 <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses" class="button">Find postgraduate teacher training</a>
 
