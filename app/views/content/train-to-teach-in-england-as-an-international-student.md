@@ -171,6 +171,8 @@ You can train in a school or in a university setting, and study full-time (over 
 
 You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
 
+You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
+
 You can apply for a teacher training place without visiting the UK. However, due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
 
 <div class="inset">
