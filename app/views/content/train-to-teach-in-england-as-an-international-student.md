@@ -109,7 +109,7 @@ Call Get into Teaching on 0800 389 2500 for:
 ### Get an adviser
 You can also register with our Get an adviser service for personalised advice about teaching in England over email and phone, or use the online chat service on this page.
 
-<a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get an adviser</a>
+<a href="/tta-service" class="button">Get an adviser</a>
 
 ## 3. Find out about fees and financial support
 
