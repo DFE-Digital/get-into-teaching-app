@@ -2,6 +2,12 @@ name: Destroy Review Instance
 on:
   pull_request:
     types: [closed]
+  workflow_dispatch:
+    inputs:
+      prNumber:
+        description: Pull request number for the review environment to destroy
+        required: true
+        type: number
 
 jobs:
   destroy:
@@ -25,8 +31,13 @@ jobs:
       - name: Setup Environment Variables
         id: variables
         run: |
-              echo ::set-output name=pr_name::${{env.REVIEW_APPLICATION}}-${{github.event.number}}
-              echo "TF_VAR_paas_app_route_name=${pr_name}"       >> $GITHUB_ENV
+          if [ -n "${{ github.event.inputs.prNumber }}" ]; then
+            echo ::set-output name=pr_name::${{ env.REVIEW_APPLICATION }}-${{ github.event.inputs.prNumber }}
+            echo "TF_VAR_paas_adviser_route_name=${pr_name}"       >> $GITHUB_ENV
+          else
+            echo ::set-output name=pr_name::${{ env.REVIEW_APPLICATION }}-${{github.event.number}}
+            echo "TF_VAR_paas_adviser_route_name=${pr_name}"       >> $GITHUB_ENV
+          fi
 
       - uses: hashicorp/setup-terraform@v1.3.2
         with:
