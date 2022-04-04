@@ -5,6 +5,8 @@ description: |-
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
 backlink: "../../"
+navigation: 55
+navigation_title: International
 right_column:
   ctas:
     - title: Online Q&As

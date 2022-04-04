@@ -9,6 +9,7 @@
   subtitle_link: "/mailinglist/signup/name"
   backlink: "../"
   navigation: 25
+  navigation_title: Funding and support
   right_column:
     ctas:
       - title: New events added.

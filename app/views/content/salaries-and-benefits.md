@@ -7,6 +7,7 @@ date: "2021-06-24"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
 navigation: 40
+navigation_title: Why teach?
 right_column:
   ctas:
     - title: How to become a teacher
