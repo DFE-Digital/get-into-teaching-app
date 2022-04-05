@@ -46,8 +46,8 @@ jobs:
       - name: Terraform Destroy
         run: |
             cd terraform/paas && pwd
-            terraform init -backend-config=review.bk.vars -backend-config="key=${{steps.variables.outputs.pr_name}}.tfstate"
-            terraform destroy -var-file=review.env.tfvars -auto-approve
+            terraform init -backend-config=review.bk.vars -backend-config="key=${{steps.variables.outputs.pr_name}}.tfstate" -lock=false
+            terraform destroy -var-file=review.env.tfvars -auto-approve -lock=false
         env:
           ARM_ACCESS_KEY:               ${{ secrets.ARM_ACCESS_KEY  }}
           TF_VAR_AZURE_CREDENTIALS:     ${{ secrets.AZURE_CREDENTIALS }}
