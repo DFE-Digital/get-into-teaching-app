@@ -47,7 +47,7 @@ International qualified teacher status (iQTS) is a new teaching qualification ba
 1. Apply now for courses starting September 2022
 2. Train over the course of an academic year
 3. Learn via remote technology and at a school in your region 
-4. Fees for iQTS vary – check with [participating iQTS training providers](#step-3)
+4. Fees for iQTS vary – check with participating iQTS training providers
 5. Gain a professional teaching qualification recognised as equivalent to QTS
 
 ## Six reasons to apply for iQTS
