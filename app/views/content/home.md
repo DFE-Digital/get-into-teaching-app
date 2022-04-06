@@ -15,5 +15,6 @@
   content:
     - content/home/purple-box
     - content/home/calls-to-action
+    - content/home/urgent-call
     - content/home/directory
 ---
