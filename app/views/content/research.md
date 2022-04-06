@@ -5,14 +5,14 @@ description: |-
 date: "2021-05-17"
 image: false
 calls_to_action:
-  bringit-report:
+  life-lessons:
     name: attachment
     arguments:
-      text: Read the Bring it report summary
-      file_path: media/documents/bringit-report.pdf
+      text: Read the Life Lessons report summary
+      file_path: media/documents/life-lessons-learnt-campaign-teaching.pdf
       file_type: PDF
-      file_size: 258KB
-      published_at: 18 November 2021
+      file_size: 270KB
+      published_at: 7 April 2022
   be-the-career-change:
     name: attachment
     arguments:
@@ -21,6 +21,14 @@ calls_to_action:
       file_type: PDF
       file_size: 244KB
       published_at: 13 January 2022
+  bringit-report:
+    name: attachment
+    arguments:
+      text: Read the Bring it report summary
+      file_path: media/documents/bringit-report.pdf
+      file_type: PDF
+      file_size: 258KB
+      published_at: 18 November 2021
   breakthrough-moments:
     name: attachment
     arguments:
@@ -113,6 +121,12 @@ calls_to_action:
 keywords:
   - Research
 ---
+
+## Life Lessons: exploring the broader life lessons from people’s school days
+
+Kindred Agency commissioned research company Censuswide to carry out a survey on behalf of the Get Into Teaching campaign exploring the views of the adult population in England. The purpose was to gain insights into people’s life lessons from their school days and the impact teachers had on their lives.
+
+$life-lessons$
 
 ## Be The Career Change: exploring how people are feeling about their careers
 
