@@ -75,15 +75,15 @@ providers:
       name: Peter Smith
       email: psmith@farlingaye.suffolk.sch.uk
       subjects: maths, physics, computing
-    - header: Lyons Hall School
-      link: http://www.prolearnnet.com/paid-internship-summer-2022/
-      name: Verity Boreham
-      email: vboreham@lyonshall.org.uk
-      subjects: maths, physics, computing
     - header: Northgate High School, Ipswich
       link: https://www.northgate.suffolk.sch.uk/
       name: Miss Mary Hallett
       email: mch@northgate.suffolk.sch.uk
+      subjects: maths, physics, computing
+    - header: Professional Learning Network
+      link: http://www.prolearnnet.com/paid-internship-summer-2022/
+      name: Verity Boreham
+      email: vboreham@lyonshall.org.uk
       subjects: maths, physics, computing
     - header: Redborne Upper School and Community College
       link: https://www.redbornecommunitycollege.com/page/?title=Paid+Internship+Programme&pid=179
