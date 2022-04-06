@@ -25,10 +25,6 @@
       margin-bottom: 10px;
       padding: 5px $indent-amount 5px 50px;
 
-      &:hover {
-        text-decoration: underline;
-      }
-
       .link-block--jump & {
         &:before {
           content: "";
