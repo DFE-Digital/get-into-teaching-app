@@ -10,7 +10,8 @@ describe RobotsController, type: :request do
       <<~ROBOTS,
         User-agent: *
         Allow: /
-
+        Disallow: /packs$
+        Disallow: /packs/*
         Sitemap: https://getintoteaching.education.gov.uk/sitemap.xml
       ROBOTS
     )

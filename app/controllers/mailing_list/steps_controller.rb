@@ -5,6 +5,7 @@ module MailingList
     include DFEWizard::Controller
     self.wizard_class = MailingList::Wizard
 
+    before_action :noindex, unless: -> { request.path.include?("/name") }
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
 

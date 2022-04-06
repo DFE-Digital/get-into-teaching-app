@@ -5,6 +5,7 @@ description: |-
 date: "2021-11-01"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
+noindex: true
 ---
 ### Thank you for letting us know. 
 

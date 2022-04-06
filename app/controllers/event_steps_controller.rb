@@ -22,10 +22,6 @@ protected
 
 private
 
-  def noindex
-    @noindex = true
-  end
-
   def redirect_closed_events
     event_is_closed = EventStatus.new(@event).closed?
     candidate_is_walk_in = wizard_store[:is_walk_in]

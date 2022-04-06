@@ -28,6 +28,7 @@ describe Callbacks::StepsController, type: :request do
     before { get step_path }
 
     it { is_expected.to have_http_status :success }
+    it { is_expected.not_to be_indexed }
 
     context "with an invalid step" do
       let(:step_path) { callbacks_step_path :invalid }
@@ -54,12 +55,14 @@ describe Callbacks::StepsController, type: :request do
       let(:details_params) { { "first_name" => "test" } }
 
       it { is_expected.to have_http_status :unprocessable_entity }
+      it { is_expected.not_to be_indexed }
     end
 
     context "with no data" do
       let(:details_params) { {} }
 
       it { is_expected.to have_http_status :unprocessable_entity }
+      it { is_expected.not_to be_indexed }
     end
 
     context "with last step" do
@@ -106,5 +109,6 @@ describe Callbacks::StepsController, type: :request do
     end
 
     it { is_expected.to have_http_status :success }
+    it { is_expected.not_to be_indexed }
   end
 end

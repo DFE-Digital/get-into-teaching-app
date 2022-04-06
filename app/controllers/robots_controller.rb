@@ -9,7 +9,8 @@ class RobotsController < ApplicationController
     render plain: <<~ROBOTS
       User-agent: *
       Allow: /
-
+      Disallow: /packs$
+      Disallow: /packs/*
       Sitemap: https://getintoteaching.education.gov.uk/sitemap.xml
     ROBOTS
   end

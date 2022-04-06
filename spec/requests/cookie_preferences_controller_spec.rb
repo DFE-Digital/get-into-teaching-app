@@ -6,7 +6,10 @@ describe CookiePreferencesController, type: :request do
 
     before { get cookie_preference_path, params: {}, headers: { "HTTP_REFERER" => referer } }
 
-    it { expect(response).to have_http_status :success }
+    subject { response }
+
+    it { is_expected.to have_http_status :success }
+    it { is_expected.not_to be_indexed }
     it { expect(response.body).to match "Cookie settings" }
     it { expect(response.body).to include("Go to home page") }
     it { expect(response.body).not_to include("Live chat") }
