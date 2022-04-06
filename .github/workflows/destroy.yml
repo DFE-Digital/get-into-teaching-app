@@ -28,7 +28,7 @@ jobs:
               echo ::set-output name=pr_name::${{env.REVIEW_APPLICATION}}-${{github.event.number}}
               echo "TF_VAR_paas_app_route_name=${pr_name}"       >> $GITHUB_ENV
 
-      - uses: hashicorp/setup-terraform@v1.3.2
+      - uses: hashicorp/setup-terraform@v1.4.0
         with:
           terraform_version: 0.14.9
 
