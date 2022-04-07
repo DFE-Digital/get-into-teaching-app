@@ -1,6 +1,6 @@
 ARG BUILD_TYPE
 
-FROM ruby:2.7.5-alpine3.14 as base
+FROM ruby:3.1.1-alpine3.14 as base
 
 ENV RAILS_ENV=production \
     NODE_ENV=production \
