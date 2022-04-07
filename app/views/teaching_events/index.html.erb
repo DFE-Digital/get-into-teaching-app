@@ -1,5 +1,5 @@
-<%= content_for(:head) do %>
-  <%= tag.link(rel: "canonical", href: events_url) %>
+<%= content_for(:canonical) do %>
+  <%= safe_html_format(canonical_tag.sub(teaching_events_path, events_path)) %>
 <% end %>
 
 <section class="teaching-events">

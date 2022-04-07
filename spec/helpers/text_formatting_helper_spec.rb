@@ -37,6 +37,7 @@ describe TextFormattingHelper, type: :helper do
           <h3>heading1</h3>
           <h4>heading1</h4>
           <h5>heading1</h5>
+          <link href="/test" rel="canonical">
         HTML
       end
 
