@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.4.6"
+gem "rails", "~> 6.1.5"
 
 # Use Puma as the app server
 gem "puma", "~> 5.6", ">= 5.6.2"
@@ -47,10 +47,10 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 5.1.1"
-gem "sentry-ruby", "~> 5.1.1"
+gem "sentry-rails", ">= 5.2.1"
+gem "sentry-ruby", "~> 5.2.1"
 
-gem "skylight", "~> 5.2.0"
+gem "skylight", "~> 5.3.2"
 
 gem "text"
 
