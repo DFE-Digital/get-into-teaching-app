@@ -151,6 +151,7 @@ GEM
     deep_merge (1.2.1)
     delegate (0.2.0)
     diff-lcs (1.4.4)
+    digest (3.1.0)
     docile (1.4.0)
     dotenv (2.7.6)
     dotenv-rails (2.7.6)
@@ -296,6 +297,12 @@ GEM
     msgpack (1.4.4)
     multi_json (1.15.0)
     multipart-post (2.1.1)
+    net-protocol (0.1.3)
+      timeout
+    net-smtp (0.3.1)
+      digest
+      net-protocol
+      timeout
     nio4r (2.5.8)
     nokogiri (1.13.3)
       mini_portile2 (~> 2.8.0)
@@ -472,6 +479,7 @@ GEM
     stoplight (2.2.1)
     text (1.3.1)
     thor (1.2.1)
+    timeout (0.2.0)
     tomlrb (2.0.1)
     trailblazer-option (0.1.1)
     tzinfo (2.0.4)
@@ -542,6 +550,7 @@ DEPENDENCIES
   logger (>= 1.5.0)
   matrix (>= 0.4.2)
   mdl
+  net-smtp
   observer (>= 0.1.0)
   prometheus-client
   pry-byebug
@@ -577,7 +586,7 @@ DEPENDENCIES
   webpacker (>= 5.4.3)
 
 RUBY VERSION
-   ruby 2.7.5p203
+   ruby 3.1.1p18
 
 BUNDLED WITH
    2.3.4
