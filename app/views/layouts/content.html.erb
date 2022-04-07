@@ -26,7 +26,9 @@
 
           </header>
         <% end %>
+      </section>
 
+      <section class="container">
         <%= tag.article(class: article_classes(@front_matter), data: { controller: 'abbreviation' }) do %>
           <% if @front_matter["alert"].present? %>
             <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
