@@ -11,8 +11,4 @@ describe ImageHelper, type: "helper" do
   describe "#image_alt" do
     it { expect(image_alt(path)).to eq(alt) }
   end
-
-  describe "#image_args" do
-    it { expect(image_args(path)).to eq([path, args]) }
-  end
 end

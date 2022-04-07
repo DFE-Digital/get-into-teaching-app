@@ -9,7 +9,7 @@ module Content
       return unless @params
 
       klass = "Content::#{@type.camelize}Component".constantize
-      klass.new(@params.deep_symbolize_keys)
+      klass.new(**@params.deep_symbolize_keys)
     end
   end
 end

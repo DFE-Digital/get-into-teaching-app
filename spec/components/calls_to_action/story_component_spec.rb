@@ -9,7 +9,7 @@ RSpec.describe CallsToAction::StoryComponent, type: :component do
 
   let(:args) { { name: name, heading: heading, image: image_path, link: link, text: text } }
 
-  let(:component) { described_class.new(args) }
+  let(:component) { described_class.new(**args) }
 
   before { render_inline(component) }
 

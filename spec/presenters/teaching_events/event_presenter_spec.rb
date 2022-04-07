@@ -111,15 +111,15 @@ describe TeachingEvents::EventPresenter do
       context "when event is a Train to Teach event" do
         let(:event) { build(:event_api, :train_to_teach_event) }
 
-        specify { expect(subject.first).to end_with(".jpg") }
-        specify { expect(subject.second).to have_key(:alt) }
+        specify { expect(subject[:path]).to end_with(".jpg") }
+        specify { expect(subject).to have_key(:alt) }
       end
 
       context "when event is a Question Time event" do
         let(:event) { build(:event_api, :question_time_event) }
 
-        specify { expect(subject.first).to end_with(".jpg") }
-        specify { expect(subject.second).to have_key(:alt) }
+        specify { expect(subject[:path]).to end_with(".jpg") }
+        specify { expect(subject).to have_key(:alt) }
       end
 
       context "when event is a School or University event" do

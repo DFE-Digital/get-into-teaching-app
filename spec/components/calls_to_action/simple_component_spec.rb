@@ -10,7 +10,7 @@ RSpec.describe CallsToAction::SimpleComponent, type: :component do
   describe "rendering the component" do
     let(:kwargs) { { icon: icon, title: title, text: text, link_text: link_text, link_target: link_target } }
 
-    let(:component) { described_class.new(kwargs) }
+    let(:component) { described_class.new(**kwargs) }
 
     before { render_inline(component) }
 
@@ -58,7 +58,7 @@ RSpec.describe CallsToAction::SimpleComponent, type: :component do
         context "hiding on #{size}" do
           let(:display_arg_key) { "hide_on_#{size}".to_sym }
           let(:display_args) { { display_arg_key => true } }
-          let(:component) { described_class.new(kwargs.merge(display_args)) }
+          let(:component) { described_class.new(**kwargs.merge(display_args)) }
 
           specify "adds a .hide-on-#{size} class to the call to action" do
             expect(page).to have_css(".call-to-action.hide-on-#{size}")
