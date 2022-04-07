@@ -37,7 +37,7 @@ end
 class LinkChecker
   class Results < Hash; end
 
-  IGNORE_PREFIX = %r{^/welcome}.freeze
+  IGNORE_PREFIX = %r{^/welcome}
   Result = Struct.new(:status, :pages)
 
   attr_reader :page, :document

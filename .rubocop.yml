@@ -102,3 +102,6 @@ RSpec/MultipleMemoizedHelpers:
 Rails/SaveBang:
   Exclude:
     - spec/**/*.rb
+
+Style/HashSyntax:
+  EnforcedShorthandSyntax: never
