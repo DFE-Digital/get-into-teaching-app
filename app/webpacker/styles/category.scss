@@ -14,7 +14,7 @@
         margin-inline: 1em;
 
         @include mq($from: tablet) {
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             margin-inline: 2em;
         }
 
@@ -26,11 +26,24 @@
     &__nav-card {
         display: block;
         background: white;
-        padding: 1em;
-        box-shadow: 11px 10px 5px -5px rgba(0,0,0,0.30);
-
+        padding: 2em;
+        box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.15);
         text-decoration: none;
         color: black;
+        
+        h2 {
+	        @include font-size(medium);
+        }
+        
+        &:hover {
+	        box-shadow: 0px 12px 9px 0px rgba(0,0,0,0.15);
+	        color: black;
+	        h2 {
+		        text-decoration: underline;
+		        
+	        }
+	        
+        }
     }
 
     &__questions {
