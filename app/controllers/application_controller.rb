@@ -28,6 +28,10 @@ protected
     []
   end
 
+  def noindex
+    @noindex = true
+  end
+
 private
 
   def declare_frontmatter

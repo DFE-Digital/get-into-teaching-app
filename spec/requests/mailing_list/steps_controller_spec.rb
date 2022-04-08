@@ -21,6 +21,7 @@ describe MailingList::StepsController, type: :request do
     before { get mailing_list_steps_path(query: "param") }
 
     it { is_expected.to redirect_to(mailing_list_step_path({ id: :name, query: "param" })) }
+    it { is_expected.to be_indexed }
   end
 
   describe "#show" do
@@ -29,11 +30,18 @@ describe MailingList::StepsController, type: :request do
     before { get step_path }
 
     it { is_expected.to have_http_status :success }
+    it { is_expected.to be_indexed }
 
     context "with an invalid step" do
       let(:step_path) { mailing_list_step_path :invalid }
 
       it { is_expected.to have_http_status :not_found }
+    end
+
+    context "when not the first step in the wizard" do
+      let(:model) { MailingList::Steps::DegreeStatus }
+
+      it { is_expected.not_to be_indexed }
     end
   end
 
@@ -103,12 +111,14 @@ describe MailingList::StepsController, type: :request do
       let(:details_params) { { "first_name" => "test" } }
 
       it { is_expected.to have_http_status :unprocessable_entity }
+      it { is_expected.to be_indexed }
     end
 
     context "with no data" do
       let(:details_params) { {} }
 
       it { is_expected.to have_http_status :unprocessable_entity }
+      it { is_expected.to be_indexed }
     end
 
     context "with last step" do
@@ -137,6 +147,7 @@ describe MailingList::StepsController, type: :request do
         let(:details_params) { attributes_for :"mailing_list_#{model.key}" }
 
         it { is_expected.to redirect_to mailing_list_step_path steps.first.key }
+        it { is_expected.to be_indexed }
       end
     end
   end
@@ -148,5 +159,6 @@ describe MailingList::StepsController, type: :request do
     end
 
     it { is_expected.to have_http_status :success }
+    it { is_expected.not_to be_indexed }
   end
 end

@@ -37,7 +37,7 @@ describe EventStepsController, type: :request do
     before { get step_path }
 
     it { is_expected.to have_http_status :success }
-    it { expect(response.body).to include(%(<meta name="robots" content="noindex">)) }
+    it { is_expected.not_to be_indexed }
 
     context "when the event is closed" do
       let(:event) { build :event_api, :closed, readable_id: readable_event_id }

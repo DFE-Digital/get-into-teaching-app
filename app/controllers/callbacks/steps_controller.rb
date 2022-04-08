@@ -5,6 +5,7 @@ module Callbacks
     include DFEWizard::Controller
     self.wizard_class = Callbacks::Wizard
 
+    before_action :noindex
     before_action :set_step_page_title, only: %i[show update]
     before_action :set_completed_page_title, only: [:completed]
     around_action :set_time_zone, only: %i[show update]
