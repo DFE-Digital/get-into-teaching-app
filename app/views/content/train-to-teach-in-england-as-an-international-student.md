@@ -68,30 +68,27 @@ Visit [My story into teaching](/my-story-into-teaching) to learn more about the 
 
 You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
-If you don't want to come to England to train, but would like to gain a professional teaching qualification which is equivalent to English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/international-qualified-teacher-status).
+Don’t want to come to England to train? You can apply to study an international professional teaching qualification which is recognised by the UK government as meeting the same standards as English qualified teacher status (QTS). Learn more about [international qualified teacher status (iQTS)](/international-qualified-teacher-status).
 
-Learn more about other [routes to qualified teacher status (QTS) for teachers and those with teaching experience outside the UK](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk). 
+For teachers who qualified outside the UK, as well as those with teaching experience, [other routes to qualified teacher status (QTS)](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) are also open. 
 
 ## Need to know
 
-* International candidates can expect to pay between £9,250 and £16,000, plus
-living costs, to train (with fees and any financial support dependent on your training
-provider and immigration status)
+* International candidates can expect to pay between £12,000 and £22,000, plus
+living costs, to train (depending on your immigration status, you may get a reduction in fees and some financial support)
 * You'll earn at least £25,000 a year, and £32,000 in London, when you qualify as a teacher
 * You can update, extend or switch your visa to live and work in the UK long-term
 
 ## Application timeline
 
-* 21 September 2022: deadline to apply for courses starting this year (autumn 2022) – it's best to apply as soon as you can
-* 12 October 2022: applications open for courses starting next year (autumn 2023) 
+* 21 September 2022: deadline to apply for courses starting in autumn 2022 – it's best to apply as soon as you can
+* 12 October 2022: applications open for courses starting in autumn 2023 
 * Training lasts one 1 academic year full-time, or longer part-time
-* You can apply for paid teaching jobs as soon as you successfully complete your training in summer 2023
+* You can apply for paid teaching jobs as soon as you successfully complete your training
 
 ## Apply for teacher training, step by step
 
-We can help you make a successful application. Sign up to get personalised advice from a teacher training adviser, or use the online chat service on this page.
-
-<a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get an adviser</a>
+We can help you make a successful application. [Get support and advice](#2-get-support-and-advice) explains how.
 
 ## 1. Check your qualifications
 
@@ -102,7 +99,7 @@ To teach children aged 11 to 18 in secondary school, you’ll need:
 
 To teach children aged 3 to 11 in primary school, you will also need to meet a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 
-A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. [We can help you prove your English, maths and science qualifications are the same standard as a grade 4 GCSE](#get-support-and-advice).
+A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. [We can help you](#get-support-and-advice) show your English, maths and science qualifications are the same standard as a grade 4 GCSE].
 
 If you do not have qualifications that are equivalent to GCSEs, you may be able to sit a test set by training providers to show your knowledge of English, maths and science. [You can contact us for advice about this](#get-support-and-advice).
 
@@ -114,11 +111,16 @@ Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.
 
 ## 2. Get support and advice
 
+To get advice, you can:
+* call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8.30am and 5.30pm, Greenwich Mean Time
+* use the live chat service at the bottom of this page
+* sign up to [Get an adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
+
 ### Get help with international qualifications
 
 If your qualifications come from a non-UK institution, your teacher training provider may want to see a ‘statement of comparability’ from [UK ENIC](https://enic.org.uk/Qualifications/SOC/Default.aspx). A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
 
-Call Get into Teaching on 0800 389 2500 for:
+Call us free on 0800 389 2500 for:
 
 * guidance on the UK equivalents of your qualifications
 * a free statement of comparability, once you’ve submitted your application, if your provider asks for this
