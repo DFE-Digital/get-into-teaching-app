@@ -58,7 +58,7 @@ Already a qualified teacher? Please visit [Come to England to teach if you're a 
 
 Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way. 
 
-You’ll complete your training with [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS), a professional qualification valued globally. 
+When you have successfully completed your training, you will be awarded [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS), a professional qualification valued globally. 
 
 QTS will allow you to teach in all schools in England. Some courses combine QTS with a postgraduate certificate in education ([PGCE](/what-is-a-pgce)) or a postgraduate diploma in education ([PGDE](/what-is-a-pgce)) – these are optional.
 
@@ -132,9 +132,11 @@ Advisers are available by email and phone –  or you can use the online chat se
 
 ## 3. Find out about fees and financial support
 
-You can expect to pay between about £11,000 and £16,000, plus living costs, to train; fees vary between training providers. 
+Fees vary between training providers, but range from about £12,000 to about £22,000 in total. You’ll also have to pay your living costs.  
 
-Alternatively, you can apply for a salaried teacher training course, and earn money while you train in a school. However, these courses are competitive and you will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
+You can work while you train by choosing a [part-time course](#search-and-apply-for-teacher-training-courses). 
+
+Alternatively, you can apply for a salaried teacher training course, and earn money while you train in a school. However, these courses are limited in number and very competitive. You will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
 
 ### Financial support
 
@@ -183,9 +185,9 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
 
 As part of the application process, your training provider will confirm you’re suitable for teaching. They'll check: 
 
-* your health
+* your health and physical capacity to train to teach
 
-* whether you’re safe to work with children
+* whether you’re safe to work with children (you'll need to undergo safeguarding and criminal record checks)
 
 * the standards you meet in English, maths and, if you want to teach primary school age children, science
 
