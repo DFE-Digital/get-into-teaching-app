@@ -20,7 +20,6 @@ help:
 	echo ""
 
 APPLICATION_SECRETS=CONTENT-KEYS
-CONTENT_SECRETS=CONTENT-KEYS
 PAGESPEED_SECRETS=PAGE-SPEED-KEYS
 INFRA_SECRETS=INFRA-KEYS
 DOCKER_IMAGE=get-into-teaching-app
@@ -70,12 +69,6 @@ edit-app-secrets: install-fetch-config set-azure-account
 
 print-app-secrets: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${APPLICATION_SECRETS}  -f yaml
-
-edit-content-secrets: install-fetch-config set-azure-account
-	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${CONTENT_SECRETS} -e -d azure-key-vault-secret:${KEY_VAULT}/${CONTENT_SECRETS} -f yaml -c
-
-print-content-secrets: install-fetch-config set-azure-account
-	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${CONTENT_SECRETS}  -f yaml
 
 edit-ps-secrets: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${PAGESPEED_SECRETS} -e -d azure-key-vault-secret:${KEY_VAULT}/${PAGESPEED_SECRETS} -f yaml -c
