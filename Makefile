@@ -51,7 +51,6 @@ production:
 	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-production)
 
 set-azure-account: ${environment}
-	echo "Logging on to ${AZ_SUBSCRIPTION}"
 	az account set -s ${AZ_SUBSCRIPTION}
 
 clean:
