@@ -68,7 +68,7 @@ Visit [My story into teaching](/my-story-into-teaching) to learn more about the 
 
 You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
-Don’t want to come to England to train? You can apply to study an international professional teaching qualification which is recognised by the UK government as meeting the same standards as English qualified teacher status (QTS). Learn more about [international qualified teacher status (iQTS)](/international-qualified-teacher-status).
+Don't want to come to England to study? You can apply to train for an international teaching qualification which is recognised by the UK government as meeting the same standards as English qualified teacher status, and which leads to QTS. Learn more about [international qualified teacher status (iQTS)](/international-qualified-teacher-status).
 
 For teachers who qualified outside the UK, as well as those with teaching experience, [other routes to qualified teacher status (QTS)](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) are also open.
 
