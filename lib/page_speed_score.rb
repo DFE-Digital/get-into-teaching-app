@@ -51,7 +51,7 @@ private
 
   def service
     @service ||= Google::Apis::PagespeedonlineV5::PagespeedInsightsService.new.tap do |s|
-      s.key = Rails.application.credentials.page_speed_insights_key
+      s.key = ENV["PAGE_SPEED_INSIGHTS_KEY"]
     end
   end
 end
