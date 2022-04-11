@@ -4,8 +4,9 @@ related_content:
     Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
     Improve your subject knowledge : "/improve-your-subject-knowledge"
     Tips on applying for teacher training : "/tips-on-applying-for-teacher-training"
+extra_content:
+    - content/train-to-be-a-teacher/if-you-have-a-degree/events-near-you
 ---
-
 
 If you have a degree, or you’re currently studying for one, there are different routes you can take to getting [qualified teacher status](/what-is-qts) (QTS). You need QTS to work in the majority of schools in England including state maintained primary, secondary and special schools.
 

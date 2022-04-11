@@ -31,21 +31,21 @@
         text-decoration: none;
         color: black;
         position: relative;
-        
+
         h2 {
 	        @include font-size(medium);
         }
-        
+
         &:hover {
 	        box-shadow: 0px 12px 9px 0px rgba(0,0,0,0.15);
 	        color: black;
 	        h2 {
 		        text-decoration: underline;
-		     
+
 	        }
-	        
+
         }
-                
+
         .icon {
 	        background: #2781be;
 	        color: white;
@@ -65,9 +65,9 @@
 			    font-weight: bold;
 			    font-size: 20px;
 		    }
-	        
+
         }
-        
+
     }
 
     &__questions {
@@ -105,6 +105,89 @@
 
             @include mq($from: tablet) {
                 margin-top: 2em;
+            }
+        }
+    }
+}
+
+.events-near-you {
+    display: flex;
+    max-width: 60em;
+    margin: auto;
+    flex-direction: column;
+    gap: 2em;
+
+    @include mq($from: tablet) {
+        flex-direction: row;
+    }
+
+    &__next-event,
+    &__find-an-event {
+        flex: 0 0 50%;
+    }
+
+    &__next-event {
+        background-image: url("../images/content/homepage/here-to-help.jpg");
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        gap: .5em;
+        padding-block: 1em;
+
+        > div { padding: .5em 1em; }
+
+        h2 {
+            margin: 0;
+            @include font-size(large);
+
+            .caption {
+                @include font-size(medium);
+            }
+        }
+
+        h2 > *,
+        .date-and-time {
+            display: inline-block;
+            background-color: $yellow;
+            padding: .4em;
+        }
+
+        .date-and-time {
+        }
+    }
+
+    &__find-an-event {
+        display: flex;
+        flex-direction: column;
+
+        @include mq($from: tablet) {
+            gap: 1em;
+        }
+
+        > * { padding: .5rem 1rem; }
+
+        h2 {
+            margin: 0;
+
+            .caption {
+                color: $purple;
+                @include font-size(medium);
+            }
+
+            @include font-size(large);
+        }
+
+        form {
+            max-width: 40%;
+
+            input {
+                margin-left: 0;
+                min-width: 10em;
+            }
+
+            div {
+                display: flex;
             }
         }
     }

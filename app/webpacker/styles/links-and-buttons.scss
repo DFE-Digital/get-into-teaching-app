@@ -51,8 +51,8 @@ a {
   }
 
   &--white {
-    @include button($bg: $white, $fg: $black);
-    @include chevron($color: $black);
+    @include button($bg: $white, $fg: $blue);
+    @include chevron($color: $blue);
   }
 
   &--secondary {
@@ -69,6 +69,10 @@ a {
   }
 
   &--inline {
+    display: inline;
+  }
+
+  &--inline-block {
     display: inline;
   }
 }
