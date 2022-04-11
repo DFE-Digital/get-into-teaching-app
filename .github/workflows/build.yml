@@ -187,7 +187,7 @@ jobs:
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
 
       - name: Load Docker Image
         run: docker load --input app_test/image.tar
@@ -224,7 +224,7 @@ jobs:
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
 
       - name: Load Docker Image
         run: docker load --input app_test/image.tar
@@ -269,7 +269,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
 
       - name: Load Docker Image
         run: docker load --input app_test/image.tar
@@ -335,7 +335,7 @@ jobs:
         uses: warchant/setup-sonar-scanner@v3
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
 
       - name: Load Docker Image
         run: docker load --input app_test/image.tar
@@ -574,7 +574,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
 
       - name: Load Docker Image
         run: docker load --input app_test/image.tar
