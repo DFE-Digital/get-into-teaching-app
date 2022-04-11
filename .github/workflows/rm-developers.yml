@@ -43,8 +43,8 @@ jobs:
       - name: Run powershell script
         shell: pwsh
         run: |
-          ./remote-checkout/scripts/check-users-in-space-developer-role.ps1 \
-            -Space "{{ steps.keyvault-yaml-secret.outputs.PAAS-SPACE }}" \
-            -SlackWebhook "${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}" \
-            -Unset \
+          ./remote-checkout/scripts/check-users-in-space-developer-role.ps1 `
+            -Space "{{ steps.keyvault-yaml-secret.outputs.PAAS-SPACE }}" `
+            -SlackWebhook "${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}" `
+            -Unset `
             -Whitelist "${{ steps.keyvault-yaml-secret.outputs.PAAS-USER-WHITELIST }}"
