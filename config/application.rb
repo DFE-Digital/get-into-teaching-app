@@ -35,7 +35,7 @@ module GetIntoTeachingWebsite
     config.view_component.preview_paths << Rails.root.join("spec/components/previews")
     config.view_component.default_preview_layout = "component_preview"
 
-    config.skylight.environments.append("preprod", "dev", "test", "staging", "userresearch", "rolling")
+    config.skylight.environments.append("preprod", "dev", "test", "staging", "rolling")
 
     # Static page cache
     config.action_controller.page_cache_directory = Rails.root.join("public/cached_pages")
