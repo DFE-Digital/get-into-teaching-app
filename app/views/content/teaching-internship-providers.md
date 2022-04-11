@@ -38,11 +38,6 @@ providers:
       name: Emma Sikora
       email: e.sikora@outwood.com   
       subjects: maths, physics, computing
-    - header: Rushey Mead Academy
-      link: https://www.leicestershiresecondaryscitt.org/
-      name: Craig Benham
-      email: CBenham@rushey-tmet.uk
-      subjects: maths, physics, computing
     - header: The Becket School
       link: https://www.ololcatholicmat.co.uk/training/train-to-teach/paid-summer-internships/
       name: Vanessa Scott
@@ -207,7 +202,7 @@ providers:
       email: e.sikora@outwood.com   
       subjects: maths, physics, computing
     - header: Tauheedal Islamic Boys' High School
-      link: https://www.tibhs.com/
+      link: https://www.starinstitute.org.uk/internships
       name: Rizwana Mayat
       email: rizwana.mayat@tibhs.staracademies.org
       subjects: maths, physics, computing
