@@ -16,7 +16,7 @@ gem "webpacker", ">= 5.4.3"
 # gem 'mini_magick', '~> 4.8'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.10.3", require: false
+gem "bootsnap", ">= 1.11.1", require: false
 
 # Temporarily adding as part of Ruby 3.1 upgrade, we should be able
 # to remove them once we're on Rails 7.0.1+
@@ -55,7 +55,7 @@ gem "prometheus-client"
 gem "sentry-rails", ">= 5.2.1"
 gem "sentry-ruby", "~> 5.2.1"
 
-gem "skylight", "~> 5.2.0"
+gem "skylight", "~> 5.3.2"
 
 gem "text"
 
@@ -64,7 +64,7 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 2.49.1"
+gem "view_component", "~> 2.52.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -100,7 +100,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 4.3.0"
 
   # Static security scanner
-  gem "brakeman", "~> 5.2.1", require: false
+  gem "brakeman", "~> 5.2.2", require: false
 
   # Debugging
   gem "pry-byebug"
