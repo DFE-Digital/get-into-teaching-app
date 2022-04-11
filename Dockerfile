@@ -1,6 +1,6 @@
 ARG BUILD_TYPE
 
-FROM ruby:2.7.5-alpine3.14 as base
+FROM ruby:3.1.1-alpine3.14 as base
 
 ENV RAILS_ENV=production \
     NODE_ENV=production \
@@ -13,7 +13,7 @@ ENV RAILS_ENV=production \
 RUN mkdir /app
 WORKDIR /app
 
-RUN apk add --no-cache tzdata shared-mime-info nodejs yarn \
+RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn \
     chromium chromium-chromedriver && rm -rf /var/lib/apt/lists/*
 
 # Copy node_modules/gem as cache

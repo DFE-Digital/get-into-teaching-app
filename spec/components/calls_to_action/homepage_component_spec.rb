@@ -10,7 +10,7 @@ RSpec.describe CallsToAction::HomepageComponent, type: :component do
   describe "rendering the component" do
     let(:kwargs) { { icon: icon, title: title, link_text: link_text, link_target: link_target, image: image } }
 
-    let(:component) { described_class.new(kwargs) }
+    let(:component) { described_class.new(**kwargs) }
 
     before { render_inline(component) }
 

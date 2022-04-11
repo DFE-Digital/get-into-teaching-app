@@ -18,6 +18,11 @@ gem "webpacker", ">= 5.4.3"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.10.3", require: false
 
+# Temporarily adding as part of Ruby 3.1 upgrade, we should be able
+# to remove them once we're on Rails 7.0.1+
+gem "net-imap", require: false
+gem "net-pop", require: false
+
 # Manage multiple processes i.e. web server and webpack
 gem "foreman"
 
@@ -64,6 +69,7 @@ gem "view_component", "~> 2.49.1"
 gem "google-api-client", ">= 0.53.0", require: false
 
 gem "actionpack-page_caching", ">= 1.2.4"
+gem "net-smtp", require: false
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
@@ -91,7 +97,7 @@ group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
 
   # GOV.UK interpretation of rubocop for linting Ruby
-  gem "rubocop-govuk", "~> 4.2.0"
+  gem "rubocop-govuk", "~> 4.3.0"
 
   # Static security scanner
   gem "brakeman", "~> 5.2.1", require: false

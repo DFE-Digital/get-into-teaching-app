@@ -77,10 +77,10 @@ module TeachingEvents
     def image
       case event_type
       when "Train to Teach event", "Question Time"
-        [
-          "media/images/content/event-signup/birmingham-event-1.jpg",
-          { alt: "A bustling Train to Teach event taking place in a church, busy with stalls and visitors" },
-        ]
+        {
+          path: "media/images/content/event-signup/birmingham-event-1.jpg",
+          alt: "A bustling Train to Teach event taking place in a church, busy with stalls and visitors",
+        }
       when "Online event"
         nil
       when "School or University event"

@@ -8,7 +8,7 @@ class Search
 
   # Any non-word character, excluding
   # joining characters ', - and &
-  WORD_BOUNDARY = /[^\w'-\\&]+/.freeze
+  WORD_BOUNDARY = /[^\w'-\\&]+/
   MAX_LEVENSHTEIN_DISTANCE = 1
   LEVENSHTEIN_MIN_WORD_LENGTH = 6
   KEYWORD_WEIGHTING = 2

@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe CallsToAction::AttachmentComponent, type: :component do
   subject do
-    render_inline described_class.new(args)
+    render_inline described_class.new(**args)
     page
   end
 

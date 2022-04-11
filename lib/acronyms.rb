@@ -10,7 +10,7 @@ class Acronyms
   #  > "A Postgraduate Certificate in Education (PGCE) will help you get QTS."
   #
   # QTS _should_ match but PGCE _shouldn't_.
-  ABBR_REGEXP = %r{(?!\()\b([A-Z]{2,})\b(?![\w\s]*\))}.freeze
+  ABBR_REGEXP = %r{(?!\()\b([A-Z]{2,})\b(?![\w\s]*\))}
 
   def initialize(content, acronyms)
     @document = parse_html(content)
