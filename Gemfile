@@ -133,7 +133,7 @@ group :test do
   gem "webmock", ">= 3.14.0"
 end
 
-group :rolling, :preprod, :userresearch, :production, :pagespeed do
+group :rolling, :preprod, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"
