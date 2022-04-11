@@ -54,11 +54,9 @@ Rails.application.configure do
 
   config.x.git_api_endpoint = \
     "https://get-into-teaching-api-dev.london.cloudapps.digital/api"
-  config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence || \
-    Rails.application.credentials.google_maps_key.presence
+  config.x.google_maps_key = ENV["GOOGLE_MAPS_KEY"].presence
 
-  config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence || \
-    Rails.application.credentials.basic_auth_credentials.presence
+  config.x.http_auth = ENV["BASIC_AUTH_CREDENTIALS"].presence
 
   config.x.api_client_cache_store = ActiveSupport::Cache::MemoryStore.new
 
