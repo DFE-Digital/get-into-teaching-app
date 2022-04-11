@@ -18,6 +18,11 @@ gem "webpacker", ">= 5.4.3"
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", ">= 1.10.3", require: false
 
+# Temporarily adding as part of Ruby 3.1 upgrade, we should be able
+# to remove them once we're on Rails 7.0.1+
+gem "net-imap", require: false
+gem "net-pop", require: false
+
 # Manage multiple processes i.e. web server and webpack
 gem "foreman"
 
