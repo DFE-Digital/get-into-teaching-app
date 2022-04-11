@@ -33,6 +33,7 @@ yarn-debug.log*
 
 .env
 .env*.local
+.env.development
 *.log
 /config/credentials/*.key
 /coverage

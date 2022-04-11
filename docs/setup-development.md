@@ -2,6 +2,7 @@
 
 1. Run `bundle install` to install the gem dependencies
 2. Run `yarn` to install node dependencies
+3. Run `az login` and then `make local set-local-env` to populate development secrets
 4. Run `bundle exec rails server` to launch the app on http://localhost:3000
 5. Run `./bin/webpack-dev-server` in a separate shell for faster compilation of assets
 
