@@ -110,10 +110,13 @@
     }
 }
 
-.events-near-you {
-    display: flex;
+.extra-content {
     max-width: 60em;
     margin: auto;
+}
+
+.events-near-you {
+    display: flex;
     flex-direction: column;
     gap: 2em;
 
@@ -189,6 +192,32 @@
             div {
                 display: flex;
             }
+        }
+    }
+}
+
+.find-your-course {
+    display: flex;
+    margin-block: 4em;
+    gap: 2em;
+
+    .left > .icon {
+        background: $yellow;
+        padding: .7em;
+        margin-inline: 1em;
+    }
+
+    .right {
+        .caption {
+            @include font-size(medium);
+            font-weight: bold;
+            color: $purple;
+            display: inline-block;
+        }
+
+        h2 {
+            @include font-size(large);
+            margin: 0;
         }
     }
 }

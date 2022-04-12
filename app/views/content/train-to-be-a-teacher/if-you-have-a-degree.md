@@ -5,6 +5,7 @@ related_content:
     Improve your subject knowledge : "/improve-your-subject-knowledge"
     Tips on applying for teacher training : "/tips-on-applying-for-teacher-training"
 extra_content:
+    - content/train-to-be-a-teacher/if-you-have-a-degree/find-your-course
     - content/train-to-be-a-teacher/if-you-have-a-degree/events-near-you
 ---
 
