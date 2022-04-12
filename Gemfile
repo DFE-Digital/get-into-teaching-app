@@ -73,7 +73,7 @@ gem "net-smtp", require: false
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
-gem "logger", ">= 1.5.0"
+gem "logger", ">= 1.5.1"
 gem "matrix", ">= 0.4.2"
 gem "observer", ">= 0.1.0"
 gem "rexml", ">= 3.2.5"
