@@ -32,7 +32,7 @@ gem "secure_headers"
 gem "canonical-rails", ">= 0.2.14"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
-gem "kramdown", ">= 2.3.1"
+gem "kramdown", ">= 2.3.2"
 gem "rinku"
 
 gem "addressable", "~> 2.8.0"
@@ -73,7 +73,7 @@ gem "net-smtp", require: false
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
-gem "logger", ">= 1.5.0"
+gem "logger", ">= 1.5.1"
 gem "matrix", ">= 0.4.2"
 gem "observer", ">= 0.1.0"
 gem "rexml", ">= 3.2.5"
@@ -108,7 +108,7 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack_pro"
-  gem "rspec-rails", "~> 5.1.0"
+  gem "rspec-rails", "~> 5.1.1"
 
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.36", ">= 3.36.0"

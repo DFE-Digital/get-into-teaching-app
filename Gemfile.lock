@@ -261,7 +261,7 @@ GEM
     kaminari-core (1.2.2)
     knapsack_pro (3.2.1)
       rake
-    kramdown (2.3.1)
+    kramdown (2.3.2)
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
@@ -270,7 +270,7 @@ GEM
       rb-inotify (~> 0.9, >= 0.9.10)
     loaf (0.10.0)
       railties (>= 3.2)
-    logger (1.5.0)
+    logger (1.5.1)
     loofah (2.16.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
@@ -312,10 +312,10 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.3)
+    nokogiri (1.13.4)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    nokogiri (1.13.3-x86_64-linux)
+    nokogiri (1.13.4-x86_64-linux)
       racc (~> 1.4)
     observer (0.1.1)
     os (1.1.1)
@@ -403,7 +403,7 @@ GEM
     rspec-mocks (3.10.2)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.10.0)
-    rspec-rails (5.1.0)
+    rspec-rails (5.1.1)
       actionpack (>= 5.2)
       activesupport (>= 5.2)
       railties (>= 5.2)
@@ -553,10 +553,10 @@ DEPENDENCIES
   govuk_design_system_formbuilder (>= 2.7.6)
   kaminari (~> 1.2, >= 1.2.2)
   knapsack_pro
-  kramdown (>= 2.3.1)
+  kramdown (>= 2.3.2)
   listen (~> 3.7.1)
   loaf (>= 0.10.0)
-  logger (>= 1.5.0)
+  logger (>= 1.5.1)
   matrix (>= 0.4.2)
   mdl
   net-imap
@@ -575,7 +575,7 @@ DEPENDENCIES
   redis-session-store (>= 0.11.4)
   rexml (>= 3.2.5)
   rinku
-  rspec-rails (~> 5.1.0)
+  rspec-rails (~> 5.1.1)
   rspec-retry
   rspec-sonarqube-formatter!
   rubocop-govuk (~> 4.3.0)
