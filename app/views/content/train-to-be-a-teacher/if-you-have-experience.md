@@ -1,7 +1,7 @@
 ---
-title: If you have classroom experience
+title: If you have significant classroom experience
 related_content:
-    Career progression: "/my-story-into-teaching/career-progression"
+    Career progression stories: "/my-story-into-teaching/career-progression"
     Salaries and benefits : "/salaries-and-benefits"
     Online Q&A sessions : "/event-categories/online-q-as"
 ---
@@ -17,4 +17,4 @@ Entry criteria may vary by teacher training provider. You should ask them about 
 
 Find out more about [assessment only teacher training providers](/assessment-only-providers).
 
-We have information for people who already have QTS and would like to [return to teaching](/returning-to-teaching).
+If you already have QTS, find out how you can [return to teaching](/returning-to-teaching).
