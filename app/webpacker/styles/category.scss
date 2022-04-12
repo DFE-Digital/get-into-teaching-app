@@ -1,3 +1,8 @@
+main.category {
+	max-width: 100%!important;
+}
+
+
 .category {
     &__hero {
         margin: 0;
@@ -69,12 +74,17 @@
         }
 
     }
+    
+    .category__questions__container {
+	    background-color: white;
+	    margin-top: 3em;
+	    padding: 1em 0 5em 0;
+    }
 
     &__questions {
         display: flex;
         flex-direction: column;
         gap: 3em;
-
         background: $white;
 
         @include mq($from: tablet) {
@@ -85,10 +95,10 @@
 
     &__question {
         @include mq($from: tablet) {
-            flex-basis: 50%;
+            flex:1;
         }
 
-        padding: 1em;
+        padding: 0 2em;
 
         h2 {
             font-weight: normal;
