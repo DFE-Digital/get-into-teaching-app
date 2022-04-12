@@ -5,8 +5,6 @@ image: "media/images/content/hero-images/0025.jpg"
 subtitle: We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply.
 ---
 
-We’re here to answer your questions and provide free advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply.
-
 ##Come to an event
 
 Our events are a great way to meet people and talk about any concerns or questions you have about becoming a teacher.
