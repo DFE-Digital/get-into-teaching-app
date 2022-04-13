@@ -18,7 +18,6 @@ Train to Teach events are run by the Department of Education (DFE) and are free 
 - find out what a career in teaching is really like
 - watch presentations which provide detailed guidance on how to get into teaching, the application process and funding your training
 
-
 ###Online question and answer sessions
 
 There are online, text-based sessions where you can ask a panel of specialists the questions that matter to you. These sessions, run by DFE, cover a range of different topics so you can post specific questions and receive advice tailored to your particular circumstances.
@@ -27,7 +26,7 @@ There are online, text-based sessions where you can ask a panel of specialists t
 
 You could also attend one of the School and University events, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
 
-Search for an event (THIS IS A BUTTON)
+<a href="/events" class="button">Search for an event</a>
 
 ##Get a teacher training adviser
 
@@ -43,13 +42,13 @@ They can help you to:
 - make a successful application
 - prepare for your interview
 
-Get your dedicated adviser (THIS IS A BUTTON)
+<a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get your dedicated adviser</a>
 
 ##Get personalised guidance in your inbox
 
 We can help you get into the classroom with guidance tailored to you, including how to:
 
-- learn mor eabout waht teaching is really like
+- learn more about what teaching is really like
 - find funding to train
 - get one-to-one support
 - read advice from trainees or newly qualified teachers
@@ -57,7 +56,7 @@ We can help you get into the classroom with guidance tailored to you, including 
 
 Just answer a few questions about your current situation and what you would like to teach and we will keep you up to date with the guidance and insights relevant to you.
 
-Sign up for personalised emails (THIS IS A BUTTON - /mailinglist/signup/name)
+<a href="/mailinglist/signup/name" class="button">Sign up for personalised emails</a>
 
 ##Have a chat
 
@@ -65,4 +64,4 @@ If you would like to talk to someone now to find out more information you can ch
 
 Our chat and telephone services are available Monday to Friday between 8:30am and 5:30pm.
 
-Chat online (THIS IS A BUTTON)
+<a href="#" class="button">Chat online</a>
