@@ -51,7 +51,7 @@ We can help you get into the classroom with guidance tailored to you, including 
 - learn more about what teaching is really like
 - find funding to train
 - get one-to-one support
-- read advice from trainees or newly qualified teachers
+- read advice from trainees or early career teachers
 - write a successful application
 
 Just answer a few questions about your current situation and what you would like to teach and we will keep you up to date with the guidance and insights relevant to you.
