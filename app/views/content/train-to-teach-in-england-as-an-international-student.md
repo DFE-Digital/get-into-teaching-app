@@ -99,7 +99,7 @@ To teach children aged 11 to 18 in secondary school, you’ll need:
 
 To teach children aged 3 to 11 in primary school, you will also need to meet a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 
-A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. [We can help you](#get-support-and-advice) show your English, maths and science qualifications are the same standard as a grade 4 GCSE].
+A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. [We can help you](#get-support-and-advice) show your English, maths and science qualifications are the same standard as a grade 4 GCSE.
 
 If you do not have qualifications that are equivalent to GCSEs, you may be able to sit a test set by training providers to show your knowledge of English, maths and science. [You can contact us for advice about this](#get-support-and-advice).
 
