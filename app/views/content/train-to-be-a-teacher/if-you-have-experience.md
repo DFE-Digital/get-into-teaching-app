@@ -5,7 +5,6 @@ related_content:
     Salaries and benefits : "/salaries-and-benefits"
     Online Q&A sessions : "/event-categories/online-q-as"
 extra_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/get-adviser-promo
 ---
 
