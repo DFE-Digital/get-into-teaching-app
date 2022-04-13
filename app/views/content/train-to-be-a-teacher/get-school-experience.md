@@ -1,9 +1,9 @@
 ---
 title: Get school experience
 related_content:
-    What is QTS?: "/what-is-qts"
-    Salaries and benefits : "/salaries-and-benefits"
-    Online Q&A sessions : "/event-categories/online-q-as"
+    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    School experience helped me decide to switch : "/my-story-into-teaching/career-changers/school-experience-helped-me-decide-to-switch"
+    Train to teach events : "/event-categories/train-to-teach-events"
 content:
     - content/train-to-be-a-teacher/get-school-experience/cta
 ---
