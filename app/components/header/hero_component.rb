@@ -36,7 +36,7 @@ module Header
     def show_subtitle?
       @subtitle.present?
     end
-    
+
     def show_paragraph?
       @paragraph.present?
     end

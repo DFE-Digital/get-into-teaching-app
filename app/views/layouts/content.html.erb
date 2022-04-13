@@ -93,12 +93,11 @@
         <% end %>
       </section>
 
-
       <% if @front_matter.key?("extra_content") %>
         <% @front_matter["extra_content"]&.each do |partial| %>
           <%= render(partial) %>
         <% end %>
-      <% end%>
+      <% end %>
     </main>
 
     <%= render FooterComponent.new %>
