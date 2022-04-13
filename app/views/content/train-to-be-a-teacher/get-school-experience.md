@@ -14,7 +14,6 @@ calls_to_action:
         link_text: "Get school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
 extra_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/mailing-list-promo
 ---
 
