@@ -146,16 +146,20 @@ main.category {
         display: flex;
         flex-direction: column;
         gap: .5em;
-        padding-block: 1em;
+        padding-block: 2em;
 
-        > div { padding: .5em 1em; }
+        > div { 
+	        padding: 0 1em .3em 1em;
+	        max-width: 60%; 
+	       }
 
         h2 {
             margin: 0;
-            @include font-size(large);
+            @include font-size(medium);
 
             .caption {
-                @include font-size(medium);
+                @include font-size(small);
+                font-weight: normal;
             }
         }
 
@@ -163,10 +167,15 @@ main.category {
         .date-and-time {
             display: inline-block;
             background-color: $yellow;
-            padding: .4em;
+            padding: .4em .8em;
+            
         }
 
         .date-and-time {
+        }
+        
+        p {
+	        margin: 0;
         }
     }
 
