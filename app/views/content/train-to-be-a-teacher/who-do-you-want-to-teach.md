@@ -6,11 +6,11 @@ If you want to teach a particular student group you might need to do specific tr
 
 You could teach:
 
-primary (ages 5 to 11)
-secondary (ages 11 to 18)
-disabled students and students with special needs
-early years (children up to the age of 5)
-further education (for example, teaching at further education colleges or sixth form colleges)
+- primary (ages 5 to 11)
+- secondary (ages 11 to 18)
+- disabled students and students with special needs
+- early years (children up to the age of 5)
+- further education (for example, teaching at further education colleges or sixth form colleges)
 
 If you want to teach in [primary or secondary schools](/train-to-be-a-teacher/if-you-have-a-degree) there are a number of ways to get [qualified teachers status](https://getintoteaching.education.gov.uk/what-is-qts) (QTS) which you will need to teach in the majority of schools in
 England.
