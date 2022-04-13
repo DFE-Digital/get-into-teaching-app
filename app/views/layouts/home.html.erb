@@ -6,9 +6,6 @@
 
     <%= render HeaderComponent.new do |c| %>
       <%= c.hero(@front_matter) %>
-      <% c.above_hero do %>
-        <%= render(partial: "/content/home/urgent-call") %>
-      <% end %>
     <% end %>
 
     <main class="home" id="main-content">
