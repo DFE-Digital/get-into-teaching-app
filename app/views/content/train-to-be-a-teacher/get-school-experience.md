@@ -53,7 +53,7 @@ $get-school-experience$
 
 ###Teaching internships
 
-You could apply for a [paid teaching internship](https://getintoteaching.education.gov.uk/teaching-internship-providers) if you’re currently doing an undergraduate degree and are interested in teaching:
+You could apply for a [paid teaching internship](/teaching-internship-providers) if you’re currently doing an undergraduate degree and are interested in teaching:
 
 - maths
 - physics

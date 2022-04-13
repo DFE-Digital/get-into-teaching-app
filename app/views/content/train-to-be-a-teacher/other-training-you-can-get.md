@@ -45,7 +45,7 @@ This is a CTA. Use our Get school experience service to search for and request e
 
 ##Teaching internships
 
-You could apply for a [paid teaching internship](https://getintoteaching.education.gov.uk/teaching-internship-providers) if you’re currently doing an undergraduate degree and are interested in teaching:
+You could apply for a [paid teaching internship](/teaching-internship-providers) if you’re currently doing an undergraduate degree and are interested in teaching:
 
 - maths
 - physics
@@ -54,7 +54,7 @@ You could apply for a [paid teaching internship](https://getintoteaching.educati
 
 ##Attend a teacher training event
 
-[Teacher training events](https://getintoteaching.education.gov.uk/events) can also give you an insight into teaching. You can choose from our Train to Teach events, online Q&A sessions and events run by training providers. The events are in person across England or online.
+[Teacher training events](/events) can also give you an insight into teaching. You can choose from our Train to Teach events, online Q&A sessions and events run by training providers. The events are in person across England or online.
 
 ##Watch pre-recorded lessons
 
