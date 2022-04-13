@@ -4,8 +4,15 @@ related_content:
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
     School experience helped me decide to switch : "/my-story-into-teaching/career-changers/school-experience-helped-me-decide-to-switch"
     Train to teach events : "/event-categories/train-to-teach-events"
-content:
-    - content/train-to-be-a-teacher/get-school-experience/cta
+calls_to_action:
+    get-school-experience:
+      name: simple
+      arguments:
+        icon: "icon-arrow"
+        text: |-
+          Use our service to search for and organise a placement in England.
+        link_text: "Get school experience"
+        link_target: "https://schoolexperience.education.gov.uk/"
 ---
 
 You can visit schools to get experience in the classroom before you start your initial teacher training (ITT).
@@ -38,7 +45,7 @@ They may ask you to have a DBS check before attending.
 
 Use our Get school experience service to search for and request experience in England.
 
-<a href="https://schoolexperience.education.gov.uk/" class="button">Search for school experience</a>
+$get-school-experience$
 
 ##Other ways to get experience of the classroom
 
