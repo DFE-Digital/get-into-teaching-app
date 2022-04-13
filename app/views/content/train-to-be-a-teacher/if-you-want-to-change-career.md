@@ -6,7 +6,6 @@ related_content:
     Engineers teach physics : "/subjects/engineers-teach-physics"
     Get into teaching maths : "/subjects/maths"
 extra_content:
-    - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/learn-adviser-promo
 ---
 
