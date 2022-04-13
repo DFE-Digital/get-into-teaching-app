@@ -39,6 +39,7 @@ RSpec.describe SearchesController, type: :request do
 
         it { is_expected.to have_http_status :success }
         it { is_expected.to have_attributes media_type: "text/html" }
+        it { is_expected.not_to be_indexed }
       end
 
       context "without search term" do
@@ -46,6 +47,7 @@ RSpec.describe SearchesController, type: :request do
 
         it { is_expected.to have_http_status :success }
         it { is_expected.to have_attributes media_type: "text/html" }
+        it { is_expected.not_to be_indexed }
       end
 
       context "with a search key but no value" do
@@ -53,6 +55,7 @@ RSpec.describe SearchesController, type: :request do
 
         it { is_expected.to have_http_status :success }
         it { is_expected.to have_attributes media_type: "text/html" }
+        it { is_expected.not_to be_indexed }
       end
     end
   end

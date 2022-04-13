@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.4.6"
+gem "rails", "~> 6.1.5"
 
 # Use Puma as the app server
 gem "puma", "~> 5.6", ">= 5.6.2"
@@ -16,7 +16,12 @@ gem "webpacker", ">= 5.4.3"
 # gem 'mini_magick', '~> 4.8'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.10.3", require: false
+gem "bootsnap", ">= 1.11.1", require: false
+
+# Temporarily adding as part of Ruby 3.1 upgrade, we should be able
+# to remove them once we're on Rails 7.0.1+
+gem "net-imap", require: false
+gem "net-pop", require: false
 
 # Manage multiple processes i.e. web server and webpack
 gem "foreman"
@@ -27,7 +32,7 @@ gem "secure_headers"
 gem "canonical-rails", ">= 0.2.14"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
-gem "kramdown", ">= 2.3.1"
+gem "kramdown", ">= 2.3.2"
 gem "rinku"
 
 gem "addressable", "~> 2.8.0"
@@ -47,10 +52,10 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 5.1.1"
-gem "sentry-ruby", "~> 5.1.1"
+gem "sentry-rails", ">= 5.2.1"
+gem "sentry-ruby", "~> 5.2.1"
 
-gem "skylight", "~> 5.2.0"
+gem "skylight", "~> 5.3.2"
 
 gem "text"
 
@@ -59,15 +64,16 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 2.49.1"
+gem "view_component", "~> 2.52.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
 gem "actionpack-page_caching", ">= 1.2.4"
+gem "net-smtp", require: false
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
-gem "logger", ">= 1.5.0"
+gem "logger", ">= 1.5.1"
 gem "matrix", ">= 0.4.2"
 gem "observer", ">= 0.1.0"
 gem "rexml", ">= 3.2.5"
@@ -91,10 +97,10 @@ group :development, :test do
   gem "byebug", platforms: %i[mri mingw x64_mingw]
 
   # GOV.UK interpretation of rubocop for linting Ruby
-  gem "rubocop-govuk", "~> 4.2.0"
+  gem "rubocop-govuk", "~> 4.3.0"
 
   # Static security scanner
-  gem "brakeman", "~> 5.2.1", require: false
+  gem "brakeman", "~> 5.2.2", require: false
 
   # Debugging
   gem "pry-byebug"
@@ -102,7 +108,7 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack_pro"
-  gem "rspec-rails", "~> 5.1.0"
+  gem "rspec-rails", "~> 5.1.1"
 
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.36", ">= 3.36.0"
@@ -133,7 +139,7 @@ group :test do
   gem "webmock", ">= 3.14.0"
 end
 
-group :rolling, :preprod, :userresearch, :production, :pagespeed do
+group :rolling, :preprod, :production, :pagespeed do
   # loading the Gem monkey patches rails logger
   # only load in prod-like environments when we actually need it
   gem "amazing_print"

@@ -16,4 +16,5 @@
 <%= f.govuk_text_field :first_name, width: 'two-thirds', autocomplete: "given-name" %>
 <%= f.govuk_text_field :last_name, width: 'two-thirds', autocomplete: "family-name" %>
 <%= f.govuk_email_field :email, width: 'two-thirds', autocomplete: "email" %>
-<%= f.hidden_field :channel_id, value: params[:channel] %>
+<%= f.hidden_field :channel_id, value: params[:channel] || f.object.channel_id %>
+<%= f.hidden_field :sub_channel_id, value: params[:sub_channel] || f.object.sub_channel_id %>

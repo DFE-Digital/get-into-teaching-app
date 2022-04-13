@@ -8,6 +8,10 @@ main.home {
   section {
     margin-top: $space-between-sections;
     max-width: $homepage-max-width;
+
+    &.narrow-top-margin {
+      margin-top: $indent-amount;
+    }
   }
 
   .homepage-feature {
@@ -178,34 +182,13 @@ main.home {
 }
 
 .urgent-call-for-qualified-teachers-cta {
-  margin-block: .2em;
-  $bg: $black;
-  $fg: $white;
+  background-color: $grey;
+  font-weight: bold;
+  margin: 1em 15px;
+  padding: 1.5em;
 
-  background: $bg;
-
-  &__content {
-    color: $fg;
-    padding: 1em;
-    margin-block: .4em;
-
-    @include mq($from: tablet) {
-      text-align: center;
-    }
-  }
-
-  &__text {
-    font-weight: bold;
-
-    a {
-      color: $fg;
-      text-decoration: underline;
-      text-underline-offset: .3em;
-      text-decoration-thickness: .1em;
-
-      &:focus {
-        color: $black;
-      }
-    }
+  span, a {
+    font-weight: normal;
+    color: $black;
   }
 }

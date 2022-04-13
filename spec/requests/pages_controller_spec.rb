@@ -22,9 +22,9 @@ describe PagesController, type: :request do
     context "when the page is noindexed" do
       before { get "/test/a" }
 
-      subject { response.body }
+      subject { response }
 
-      it { is_expected.to include(%(<meta name="robots" content="noindex">)) }
+      it { is_expected.not_to be_indexed }
     end
 
     context "with invalid page" do

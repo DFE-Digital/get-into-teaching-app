@@ -1,9 +1,26 @@
 .feature-table {
+
+  &:not(:first-of-type) {
+    margin-top: 2em;
+  }
+
+  h2,
+  h3,
+  h4,
+  h5 {
+    padding: .8em $indent-amount .4em;
+    @include font-size(large);
+    margin-block: .1em .4em;
+  }
+
   dl {
     @include font-size("small");
-    background-color: $grey;
+
+    @include mq($from: tablet) {
+      background-color: $grey;
+    }
     width: 100%;
-    padding: $indent-amount;
+    padding: .4em $indent-amount;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -27,11 +44,6 @@
       flex-basis: 62%;
       margin: 0;
     }
-  }
-
-  &--with-title dl {
-    margin-top: -1.3em;
-    padding-top: 40px;
   }
 
   @include mq($until: tablet) {

@@ -14,7 +14,7 @@ You do not need any teaching experience or to be working in a school to apply fo
 
 A GCSE (General Certificate of Secondary Education) is an academic qualification awarded for exams in England, usually taken at age 16. 
 
-If you’re not sure of the status of your degree in England, or whether your science qualification is equivalent to an English GCSE grade 4, visit [UK ENIC](https://www.ecctis.com/Default.aspx), the UK National Information Centre for global qualifications and skills.
+If you’re not sure of the status of your degree in England, or whether your science qualification is equivalent to an English GCSE grade 4, visit [UK ENIC](https://enic.org.uk/Qualifications/SOC/Default.aspx), the UK National Information Centre for global qualifications and skills.
 
 To show you meet the required standard in the English language, you’ll need one of the following:
 

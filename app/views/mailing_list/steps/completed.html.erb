@@ -1,5 +1,7 @@
 <% @hide_page_helpful_question = true %>
 
+<div data-sub-channel-id="<%= session.dig("mailinglist", "sub_channel_id") %>"></div>
+
 <% if show_welcome_guide? %>
   <%= render(Registration::MailingListSignupConfirmationComponent.new(mailing_list_session)) %>
 <% else %>

@@ -33,15 +33,22 @@ files for each environment
 
 ### Private Configuration - ie secrets
 
-These can be recorded in the relevant environments encrypted credentials file
+All secrets are stored in Azure keyvaults. You can use the Makefile to view/edit secrets:
 
-```bash
-bundle exec rails credentials:edit --environment <environment-name>
+```
+az login
+make test edit-app-secrets
+make test print-app-secrets
 ```
 
-You will either need to have `RAILS_MASTER_KEY` set within your environment or
-have have the appropriate `/config/credentials/<env-name>.key` file with the
-environments master key in.
+To setup the local environment with secrets you need to run:
+
+```
+az login
+make local setup-local-env
+```
+
+This will populate `.env.development` with local development secrets. It also combines any non-secret environment variables from `.env.development.yml`.
 
 ### HTTP Basic authentication
 

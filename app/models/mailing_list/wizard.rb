@@ -8,6 +8,7 @@ module MailingList
       preferred_teaching_subject_id
       consideration_journey_stage_id
       degree_status_id
+      sub_channel_id
     ].freeze
 
     self.steps = [
@@ -34,7 +35,7 @@ module MailingList
         # we're taking the last name too so if people restart the wizard
         # both are filled rather than just their first name, which looks
         # a bit odd
-        @store.prune!({ leave: ATTRIBUTES_TO_LEAVE })
+        @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
       end
     end
 

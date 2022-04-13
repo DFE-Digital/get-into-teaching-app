@@ -85,17 +85,17 @@ The teachers’ pension scheme is one of the most generous in the country. It is
 
 You also get other insurance benefits too. You can find out more on [the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
 
-## Establishing yourself as a teacher
+## Support for early career teachers
 
-As well as pay, holidays and a pension, all teachers are given extra support during their first 2 years in teaching. This is part of the ['early career framework'](https://www.gov.uk/government/collections/early-career-framework-reforms). 
+All teachers are given extra support during their first 2 years in teaching. This helps early career teachers (ECTs) develop their knowledge, teaching skills and working habits.
 
-The support includes:
+This support includes:
 
-* paid time away from classroom teaching to focus on learning
-* access to a range of high-quality training
+* paid time away from classroom teaching to focus on your development
+* a high quality training programme based on the [early career framework](https://www.gov.uk/government/publications/early-career-framework)
 * a mentor who will give you guidance and support
 
-This extra support used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs).
+The term early career teacher (ECT) replaces newly qualified teacher (NQT).
 
 ## Career progression
 

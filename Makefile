@@ -20,7 +20,6 @@ help:
 	echo ""
 
 APPLICATION_SECRETS=CONTENT-KEYS
-CONTENT_SECRETS=CONTENT-KEYS
 PAGESPEED_SECRETS=PAGE-SPEED-KEYS
 INFRA_SECRETS=INFRA-KEYS
 DOCKER_IMAGE=get-into-teaching-app
@@ -28,6 +27,11 @@ DOCKER_IMAGE=get-into-teaching-app
 .PHONY: development
 development:
 	$(eval export KEY_VAULT=s146d01-kv)
+	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-development)
+
+.PHONY: local
+local:
+	$(eval export KEY_VAULT=s146d01-local2-kv)
 	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-development)
 
 .PHONY: review
@@ -46,7 +50,6 @@ production:
 	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-production)
 
 set-azure-account: ${environment}
-	echo "Logging on to ${AZ_SUBSCRIPTION}"
 	az account set -s ${AZ_SUBSCRIPTION}
 
 clean:
@@ -54,7 +57,7 @@ clean:
 	    rm -f fetch_config.rb \
 	    || true
 
-install-fetch-config: 
+install-fetch-config:
 	[ ! -f fetch_config.rb ]  \
 	    && echo "Installing fetch_config.rb" \
 	    && curl -s https://raw.githubusercontent.com/DFE-Digital/bat-platform-building-blocks/master/scripts/fetch_config/fetch_config.rb -o fetch_config.rb \
@@ -64,14 +67,8 @@ install-fetch-config:
 edit-app-secrets: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${APPLICATION_SECRETS} -e -d azure-key-vault-secret:${KEY_VAULT}/${APPLICATION_SECRETS} -f yaml -c
 
-print-app-secrets: install-fetch-config set-azure-account 
+print-app-secrets: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${APPLICATION_SECRETS}  -f yaml
-
-edit-content-secrets: install-fetch-config set-azure-account
-	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${CONTENT_SECRETS} -e -d azure-key-vault-secret:${KEY_VAULT}/${CONTENT_SECRETS} -f yaml -c
-
-print-content-secrets: install-fetch-config set-azure-account 
-	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${CONTENT_SECRETS}  -f yaml
 
 edit-ps-secrets: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${PAGESPEED_SECRETS} -e -d azure-key-vault-secret:${KEY_VAULT}/${PAGESPEED_SECRETS} -f yaml -c
@@ -85,6 +82,8 @@ edit-infra-secrets: install-fetch-config set-azure-account
 print-infra-secrets: install-fetch-config set-azure-account
 	./fetch_config.rb -s azure-key-vault-secret:${KEY_VAULT}/${INFRA_SECRETS}  -f yaml
 
+setup-local-env: install-fetch-config set-azure-account
+	./fetch_config.rb -s yaml-file:.env.development.yml -s azure-key-vault-secret:s146d01-local2-kv/${APPLICATION_SECRETS} -f shell-env-var > .env.development
 
 docker:
 	docker build . -t ${DOCKER_IMAGE}

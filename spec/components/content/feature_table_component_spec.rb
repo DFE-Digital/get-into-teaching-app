@@ -16,7 +16,7 @@ describe Content::FeatureTableComponent, type: "component" do
   end
 
   it { is_expected.to have_css(".feature-table") }
-  it { is_expected.to have_css("h2##{title.parameterize}-table", text: title) }
+  it { is_expected.to have_css("h3##{title.parameterize}-table", text: title) }
   it { is_expected.to have_css("dl") }
 
   describe "within the definition list" do
@@ -40,12 +40,21 @@ describe Content::FeatureTableComponent, type: "component" do
   context "when title is nil" do
     let(:title) { nil }
 
-    it { is_expected.not_to have_css("h2") }
+    it { is_expected.not_to have_css("h3") }
   end
 
   context "when title is empty" do
     let(:title) { " " }
 
-    it { is_expected.not_to have_css("h2") }
+    it { is_expected.not_to have_css("h3") }
+  end
+
+  context "when heading tag is overridden" do
+    subject! do
+      render_inline(described_class.new(data, title, heading_tag: "h2"))
+      page
+    end
+
+    it { is_expected.to have_css("h2", text: title) }
   end
 end

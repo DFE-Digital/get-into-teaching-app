@@ -55,7 +55,7 @@ provider_groups:
       link: http://www.nett.org.uk/
       telephone: '01255431949'
       email: teach@nett.org.uk
-    - header: The Pilgrim Partnership 
+    - header: The Pilgrim Partnership
       name: Bev Collier
       telephone: 01234 907896
       email: bcollier@pilgrimpartnership.org
@@ -108,7 +108,7 @@ provider_groups:
       link: https://www.lincolnshirescitt.co.uk/aor
       name: Angela Murphy
       telephone: 01522 889297
-      email: scittenquiries@prioryacademies.co.uk      
+      email: scittenquiries@prioryacademies.co.uk
     - header: Nottingham Trent University
       link: https://www.ntu.ac.uk/
       name: Admissions team
@@ -173,6 +173,11 @@ provider_groups:
       name: Elizabeth Jackson
       telephone: '0208 2404326'
       email: ao@stmarys.ac.uk
+      header: Star Teachers SCITT
+      link: https://www.starinstitute.org.uk/
+      name: Mehroonnisha Mulla
+      telephone: 0330 313 9870
+      email: mehroonnisha.mulla@staracademies.org
     - header: 'Teaching London: LDBS SCITT'
       # link: https://teachinglondon.org
       name: Saskia Rossi
@@ -213,7 +218,7 @@ provider_groups:
       link: https://educate-group.co.uk/itt/
       name: Claire King
       telephone: 01476 512793
-      email: aor@educate-group.co.uk     
+      email: aor@educate-group.co.uk
     - header: Stockton-on-Tees Teacher Training Partnership
       link: https://www.stocktonscitt.uk
       name: Kirsten Webber
@@ -254,6 +259,7 @@ provider_groups:
       telephone: 0161 202 0161
       email: teachertraining@mca.manchester.sch.uk
     - header: Star Teachers SCITT
+      link: https://www.starinstitute.org.uk/
       name: Mehroonnisha Mulla
       telephone: 0330 313 9870
       email: mehroonnisha.mulla@staracademies.org
@@ -392,8 +398,7 @@ provider_groups:
       email: tforward@haybridge.worcs.sch.uk
     - header: Keele and North Staffordshire Teacher Education
       link: https://knste-shaw.org.uk/assessment-route
-      name: Tricia Locker
-      telephone: '01782 432538'
+      telephone: '01782 432537'
       email: ao@knste-shaw.org.uk
     - header: St. Joseph's College Stoke Secondary Partnership
       link: http://www.stjosephstrentvale.com/teaching-school/partnership/
@@ -403,6 +408,11 @@ provider_groups:
       name: Jayne Bartrop
       telephone: '01782 295977'
       email: J.Bartrop@staffs.ac.uk
+    - header: Star Teachers SCITT
+      link: https://www.starinstitute.org.uk/
+      name: Mehroonnisha Mulla
+      telephone: 0330 313 9870
+      email: mehroonnisha.mulla@staracademies.org
     - header: The Coventry SCITT
       link: https://www.coventryscitt.org.uk
       email: info@coventryscitt.org.uk
@@ -462,6 +472,11 @@ provider_groups:
       name: Jo Leedham
       telephone: 01724 297950
       email: jo.leedham@northlincs.gov.uk
+    - header: Star Teachers SCITT
+      link: https://www.starinstitute.org.uk/
+      name: Mehroonnisha Mulla
+      telephone: 0330 313 9870
+      email: mehroonnisha.mulla@staracademies.org
     - header: The Sheffield SCITT
       link: https://www.sheffieldscitt.org.uk/
       email: admin@sheffieldscitt.org.uk
@@ -519,11 +534,7 @@ keywords:
 
 If you have a degree and enough classroom experience, you may be able to get qualified teacher status (QTS) through a 12-week assessment only (AO) programme.
 
-The accredited teacher training providers listed on this page offer the AO programme.
-
-Contact them directly to ask them about entry criteria and to apply.
-
-### Teachers from outside the UK
+The accredited teacher training providers listed on this page offer the AO programme. Contact them directly to ask them about entry criteria and to apply.
 
 If you have experience of teaching outside the UK, some training providers will let you apply for an assessment only QTS without visiting or training in England.
 

@@ -6,7 +6,7 @@ class PagesController < ApplicationController
     InvalidTemplateName,
   ].freeze
 
-  PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}.freeze
+  PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}
   DYNAMIC_PAGE_PATHS = ["/test/a", "/test/b"].freeze
 
   before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && (params[:subject] || params[:degree_status]) }

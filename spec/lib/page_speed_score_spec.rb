@@ -16,8 +16,8 @@ describe PageSpeedScore do
     let(:prometheus) { Prometheus::Client.registry }
 
     before do
-      allow(Rails.application.credentials).to \
-        receive(:page_speed_insights_key).and_return("12345")
+      allow(ENV).to receive(:[]).and_call_original
+      allow(ENV).to receive(:[]).with("PAGE_SPEED_INSIGHTS_KEY").and_return("12345")
     end
 
     it "retrieves the scores for each page/strategy combination and sends them to prometheus" do

@@ -1,5 +1,5 @@
 class TelephoneValidator < ActiveModel::EachValidator
-  TELEPHONE_FORMAT = %r{\A[^a-zA-Z]+\z}.freeze
+  TELEPHONE_FORMAT = %r{\A[^a-zA-Z]+\z}
   MINIMUM_LENGTH = 5
   MAXIMUM_LENGTH = 20
 

@@ -29,7 +29,7 @@ SecureHeaders::Configuration.default do |config|
   google_supported   = %w[*.google.com *.google.co.uk]
   google_adservice   = %w[adservice.google.com adservice.google.co.uk]
   google_doubleclick = %w[*.doubleclick.net *.googleads.g.doubleclick.net *.ad.doubleclick.net *.fls.doubleclick.net stats.g.doubleclick.net]
-  google_apis        = %w[*.googleapis.com https://fonts.googleapis.com]
+  google_apis        = %w[*.googleapis.com googleapis.com https://fonts.googleapis.com]
 
   optimize  = %w[optimize.google.com www.googleoptimize.com]
   zendesk   = %w[static.zdassets.com https://*.zopim.com wss://*.zopim.com dfesupport-tpuk.zendesk.com ekr.zdassets.com]

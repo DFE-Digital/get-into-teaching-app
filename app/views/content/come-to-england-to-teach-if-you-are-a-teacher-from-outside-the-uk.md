@@ -65,7 +65,7 @@ You could also consider teaching in [Wales](https://educators.wales), [Scotland]
 
 Not qualified as a teacher yet? Find out [how to train to teach in England as an international applicant](/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, but would like to gain a professional teaching qualification which is equivalent to English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/international-qualified-teacher-status).
 
-### What you need to start teaching
+## What you need to start teaching
 
 To teach in England you need:
 
@@ -75,7 +75,7 @@ To teach in England you need:
 
 It is also helpful to have a teaching qualification from your own or another non-UK country, or to get '[qualified teacher status](#consider-getting-qualified-teacher-status)'.
 
-### Get the right visa or status
+## Get the right visa or status
 
 You'll need to [get the right visa or status to work in the UK](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).
 
@@ -85,7 +85,7 @@ Alternatively, you may have a pre-existing right to work in the UK, such as sett
 
 [If you're an Irish citizen you do not need a visa](https://www.gov.uk/government/publications/common-travel-area-guidance).
 
-### Consider getting qualified teacher status
+## Consider getting qualified teacher status
 
 [You need 'qualified teacher status' (QTS) to teach in many schools in England](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
 
@@ -95,13 +95,13 @@ If you’re a qualified teacher from outside the UK you can [work as a teacher i
 
 [Apply for QTS if you trained outside the UK](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk).
 
-### Search for a job
+## Search for a job
 
 <p class="call-to-action__action">
   <a href="https://teaching-vacancies.service.gov.uk/?utm_source=int_teacher_recruitment&utm_medium=referral&utm_campaign=AY21-22">Search for a teaching <span>job</span></a>
 </p>
 
-### Talk to an adviser
+## Talk to an adviser
 
 You can get one-to-one support if you have [qualified teacher status (QTS)](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) and want to teach secondary chemistry, computing, maths, modern foreign languages or physics. Get help with:
 
@@ -113,17 +113,17 @@ You can get one-to-one support if you have [qualified teacher status (QTS)](http
   <a href="/tta-service">Get an <span>adviser</span></a>
 </p>
 
-### Find out what salary you can earn
+## Find out what salary you can earn
 
 Schools have some flexibility on [salary](/salaries-and-benefits). It varies by region and your level of skill, experience and qualifications.
 
 There are [specific salary requirements for a skilled worker visa](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).
 
-### Learn about life as a teacher in England
+## Learn about life as a teacher in England
 
 [Read other teachers’ stories](/my-story-into-teaching) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
-### Contact
+## Contact
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.
 
-However, for help with the information on this page, you can email us at international.teacherrecruitment@education.gov.uk.  
+However, for help with the information on this page, you can email us at international.teacherrecruitment@education.gov.uk.

@@ -10,5 +10,3 @@ preprod:
   env: <%= ENV['SKYLIGHT_ENV'] %>
 rolling:
   env: <%= ENV['SKYLIGHT_ENV'] %>
-userresearch:
-  env: <%= ENV['SKYLIGHT_ENV'] %>

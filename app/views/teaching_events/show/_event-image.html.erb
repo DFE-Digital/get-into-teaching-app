@@ -3,6 +3,6 @@
 <%# keep an empty image div here when there's no image args to keep grid positions %>
 <div class="image">
   <% if image_args %>
-    <%= image_pack_tag(*image_args) %>
+    <%= image_pack_tag(image_args[:path], alt: image_args[:alt]) %>
   <% end %>
 </div>

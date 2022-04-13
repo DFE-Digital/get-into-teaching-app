@@ -1,7 +1,7 @@
 class AssetChecker
   attr_reader :root_url
 
-  ASSET_PATTERN = /(\/packs\/(js|css)\/.+\.(js|css))/.freeze
+  ASSET_PATTERN = /(\/packs\/(js|css)\/.+\.(js|css))/
 
   def initialize(root_url)
     @root_url = root_url

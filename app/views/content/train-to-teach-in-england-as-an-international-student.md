@@ -112,8 +112,11 @@ Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.
 ## 2. Get support and advice
 
 To get advice, you can:
+
 * call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8.30am and 5.30pm, Greenwich Mean Time
+
 * use the live chat service at the bottom of this page
+
 * sign up to [Get an adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
 
 ### Get help with international qualifications

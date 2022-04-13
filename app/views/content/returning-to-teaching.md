@@ -43,14 +43,6 @@ calls_to_action:
       link_target: "/tta-service"
       icon: "icon-person"
 
-  urgent-call-for-qualified-teachers:
-    name: simple
-    arguments:
-      text: "There's an urgent call for qualified teachers to get back into the classroom. If you're eager to return to teaching, register to help."
-      link_text: "Find supply teaching agencies"
-      link_target: "/urgent-call-for-qualified-teachers"
-      icon: "icon-school-black"
-
 right_column:
   ctas:
   - title: Return from overseas
@@ -71,8 +63,6 @@ quote:
     name: "Helen"
     job_title: "Returning teacher"
 ---
-
-$urgent-call-for-qualified-teachers$
 
 Returning to teaching can be easier than you expect.
 
@@ -169,3 +159,4 @@ If you’re returning to teaching, you might want to re-familiarise yourself wit
   professional body for teachers
 * join a [teaching union](https://www.tes.com/jobs/careers-advice/pay-and-conditions/which-teachers-union)
 * ensure your [pension](https://www.teacherspensions.co.uk/members/working-life/deferring-your-pension/return-to-pensionable-service.aspx), one of your key benefits, is up to date
+* return to the classroom by [registering with a supply teaching agency](/urgent-call-for-qualified-teachers)

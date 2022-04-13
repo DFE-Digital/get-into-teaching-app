@@ -8,7 +8,7 @@ module TemplateHandlers
 
     DEFAULTS = {}.freeze
     GLOBAL_FRONT_MATTER = Rails.root.join("config/frontmatter.yml").freeze
-    COMPONENT_PLACEHOLDER_REGEX = /\$([A-z0-9-]+)\$/.freeze
+    COMPONENT_PLACEHOLDER_REGEX = /\$([A-z0-9-]+)\$/
 
     class << self
       def call(template, source = nil)

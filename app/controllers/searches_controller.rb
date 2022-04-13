@@ -1,5 +1,5 @@
 class SearchesController < ApplicationController
-  before_action :set_page_title
+  before_action :set_page_title, :noindex
 
   def show
     @search = Search.new(search_params)
