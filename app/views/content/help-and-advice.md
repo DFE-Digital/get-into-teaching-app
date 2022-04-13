@@ -5,13 +5,13 @@ image: "media/images/content/hero-images/0025.jpg"
 subtitle: We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply.
 ---
 
-##Come to an event
+##Attend an event
 
-Our events are a great way to meet people and talk about any concerns or questions you have about becoming a teacher.
+Our events are a great way to meet teachers and other experts to talk about any concerns or questions you have about becoming a teacher.
 
-###Train to Teach
+###Train to Teach events
 
-Train to Teach events are free to attend and you'll be able to:
+Train to Teach events are run by the Department of Education (DFE) and are free to attend. You'll be able to:
 
 - put your questions to expert advisers, teachers and training providers
 - chat with current teachers
@@ -21,17 +21,17 @@ Train to Teach events are free to attend and you'll be able to:
 
 ###Online question and answer sessions
 
-There are online question and answer sessions where you can ask a panel of specialists the questions that matter to you. These sessions cover a range of different topics so you can ask specific questions and receive advice tailored to your particular circumstances.
+There are online, text-based sessions where you can ask a panel of specialists the questions that matter to you. These sessions, run by DFE, cover a range of different topics so you can post specific questions and receive advice tailored to your particular circumstances.
 
 ###School and university events
 
-You could also attend one of the School and University events, either online or in person, and hear directly from teacher training providers about the courses they offer.
+You could also attend one of the School and University events, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
 
-Search for an event near you (THIS IS A BUTTON)
+Search for an event (THIS IS A BUTTON)
 
 ##Get a teacher training adviser
 
-Teacher training advisers provide free, one-to-one support wherever you are in your journey into teaching. You can phone, text or email them. They are experienced teachers and able to answer any questions you have. You will have your own dedicated adviser to support you at every step as you make important decisions about your future.
+Teacher training advisers provide free, one-to-one support by phone, text or email wherever you are in your journey into teaching. They are experienced teachers and able to answer any questions you have. You will have your own dedicated adviser to support you at every step as you make important decisions about your future.
 
 They can help you to:
 
@@ -43,21 +43,21 @@ They can help you to:
 - make a successful application
 - prepare for your interview
 
-Get your adviser (THIS IS A BUTTON)
+Get your dedicated adviser (THIS IS A BUTTON)
 
-##Join our mailing list
+##Get personalised guidance in your inbox
 
 We can help you get into the classroom with guidance tailored to you, including how to:
 
-- get experience in a classroom
+- learn mor eabout waht teaching is really like
 - find funding to train
 - get one-to-one support
 - read advice from trainees or newly qualified teachers
 - write a successful application
 
-Just answer a few questions about your current situation and what you are interested in and we will keep you up to date with the latest information and advice relevant to you.
+Just answer a few questions about your current situation and what you would like to teach and we will keep you up to date with the guidance and insights relevant to you.
 
-Sign up (THIS IS A BUTTON)
+Sign up for personalised emails (THIS IS A BUTTON - /mailinglist/signup/name)
 
 ##Have a chat
 
