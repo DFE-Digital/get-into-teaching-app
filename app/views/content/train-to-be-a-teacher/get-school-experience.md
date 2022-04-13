@@ -4,6 +4,8 @@ related_content:
     What is QTS?: "/what-is-qts"
     Salaries and benefits : "/salaries-and-benefits"
     Online Q&A sessions : "/event-categories/online-q-as"
+content:
+    - content/train-to-be-a-teacher/get-school-experience/cta
 ---
 
 You can visit schools to get experience in the classroom before you start your initial teacher training (ITT).
@@ -34,9 +36,9 @@ If you can’t find what you’re looking for, you can call a school directly. Y
 
 They may ask you to have a DBS check before attending.
 
-This is a CTA. Use our Get school experience service to search for and request experience in England.
+Use our Get school experience service to search for and request experience in England.
 
-[Get school experience button](https://schoolexperience.education.gov.uk/)
+<a href="https://schoolexperience.education.gov.uk/" class="button">Search for school experience</a>
 
 ##Other ways to get experience of the classroom
 
