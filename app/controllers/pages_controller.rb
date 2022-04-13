@@ -45,6 +45,10 @@ class PagesController < ApplicationController
     render_page(params[:page])
   end
 
+  def authenticate?
+    false
+  end
+
   # Avoid caching by rendering these pages manually:
 
   def funding_your_training
