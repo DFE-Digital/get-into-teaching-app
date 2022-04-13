@@ -4,9 +4,12 @@ related_content:
     Career progression stories: "/my-story-into-teaching/career-progression"
     Salaries and benefits : "/salaries-and-benefits"
     Online Q&A sessions : "/event-categories/online-q-as"
+extra_content:
+    - content/train-to-be-a-teacher/promos/find-your-course
+    - content/train-to-be-a-teacher/promos/get-adviser-promo
 ---
 
-If you have been working in a classroom for a significant amount of time, as a teaching assistant or in a similiar role, you may be able to get [qualified teacher status](/what-is-qts) (QTS) through a 12-week ‘assessment only’ programme. You  must also have a degree.
+If you have been working in a classroom for a significant amount of time, as a teaching assistant or in a similar role, you may be able to get [qualified teacher status](/what-is-qts) (QTS) through a 12-week ‘assessment only’ programme. You  must also have a degree.
 
 You’ll need to show that you already meet the standards for QTS. For example, you may meet the standards if:
 
