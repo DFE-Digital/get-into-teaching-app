@@ -130,6 +130,10 @@ main.category {
     flex-direction: column;
     gap: 2em;
     margin-top: 2em;
+    //margin-bottom: 2em;
+    border-top: 1px solid #C9C9C9;
+    padding:4em 0;
+    
 
     @include mq($from: tablet) {
         flex-direction: row;
@@ -225,10 +229,9 @@ main.category {
     margin-block: 4em;
     gap: 2em;
     margin-top: 4em;
-    padding: 4em 0;
-    border: 1px solid #C9C9C9;
-    border-left:none;
-    border-right: none;
+    //margin-bottom: 2em;
+    padding-top: 2em;
+    border-top: 1px solid #C9C9C9;
 
     .left > .icon {
         background: $yellow;
