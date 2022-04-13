@@ -57,9 +57,3 @@ If you have the right experience, School direct (salaried) give you QTS with man
 Teach First is a 2-year programme leading to a PGDE and QTS. At the end of your first year, you will have QTS. The PGDE is awarded at the end of the second year.
 
 [Find out more about Teach First](https://www.teachfirst.org.uk/)
-
-##Find your course
-
-This is a CTA. You can search for postgraduate courses that lead to QTS (not including Teach First).
-
-Search for a course - link to: https://www.gov.uk/find-postgraduate-teacher-training-courses
