@@ -4,6 +4,8 @@ related_content:
     What is QTS?: "/what-is-qts"
     Salaries and benefits : "/salaries-and-benefits"
     Online Q&A sessions : "/event-categories/online-q-as"
+content:
+    - content/train-to-be-a-teacher/if-you-dont-have-a-degree/cta
 ---
 
 You can get QTS as part of an undergraduate degree.
