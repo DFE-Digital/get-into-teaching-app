@@ -11,7 +11,7 @@ Our events are a great way to meet teachers and other experts to talk about any 
 
 ###Train to Teach events
 
-Train to Teach events are run by the Department of Education (DFE) and are free to attend. You'll be able to:
+Train to Teach events are run by the Department for Education (DfE) and are free to attend. You'll be able to:
 
 - put your questions to expert advisers, teachers and training providers
 - chat with current teachers
@@ -20,7 +20,7 @@ Train to Teach events are run by the Department of Education (DFE) and are free 
 
 ###Online question and answer sessions
 
-There are online, text-based sessions where you can ask a panel of specialists the questions that matter to you. These sessions, run by DFE, cover a range of different topics so you can post specific questions and receive advice tailored to your particular circumstances.
+There are online, text-based sessions where you can ask a panel of specialists the questions that matter to you. These sessions, run by DfE, cover a range of different topics so you can post specific questions and receive advice tailored to your particular circumstances.
 
 ###School and university events
 
@@ -60,7 +60,7 @@ Just answer a few questions about your current situation and what you would like
 
 ##Have a chat
 
-If you would like to talk to someone now to find out more information about all aspects of teacher training, from working out what qualifactions you need to how to apply for funding, you can chat online or call us on 0800 389 2500 and we will be able to help you.
+If you would like to talk to someone now to find out more information about all aspects of teacher training, from working out what qualifications you need to how to apply for funding, you can chat online or call us on 0800 389 2500 and we will be able to help you.
 
 Our chat and telephone services are available Monday to Friday between 8:30am and 5:30pm.
 
