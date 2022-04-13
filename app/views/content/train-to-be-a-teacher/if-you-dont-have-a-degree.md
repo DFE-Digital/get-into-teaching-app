@@ -1,9 +1,9 @@
 ---
 title: If you don't have a degree
 related_content:
-    What is QTS?: "/what-is-qts"
-    Salaries and benefits : "/salaries-and-benefits"
-    Online Q&A sessions : "/event-categories/online-q-as"
+    5 reasons to attend a Train to Teach event : "/blog/5-reasons-to-attend-a-train-to-teach-event"
+    Funding your training : "/funding-your-training"
+    Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
 ---
 
 You can get QTS as part of an undergraduate degree.
