@@ -2,7 +2,7 @@
 title: Help and advice
 navigation: 50
 image: "media/images/content/hero-images/0025.jpg"
-subtitle: We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply.
+paragraph: We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply.
 ---
 
 ##Attend an event

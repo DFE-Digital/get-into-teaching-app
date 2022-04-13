@@ -1,6 +1,6 @@
 module Header
   class HeroComponent < ViewComponent::Base
-    attr_accessor :title, :subtitle, :image, :show_mailing_list
+    attr_accessor :title, :subtitle, :paragraph, :image, :show_mailing_list
 
     def initialize(front_matter)
       return if front_matter.blank?
@@ -10,6 +10,7 @@ module Header
       front_matter.with_indifferent_access.tap do |fm|
         @title           = fm["heading"] || fm["title"]
         @subtitle        = fm["subtitle"]
+        @paragraph       = fm["paragraph"]
         @subtitle_link   = fm["subtitle_link"]
         @subtitle_button = fm["subtitle_button"]
         @image           = fm["image"]
@@ -34,6 +35,10 @@ module Header
 
     def show_subtitle?
       @subtitle.present?
+    end
+    
+    def show_paragraph?
+      @paragraph.present?
     end
 
     def show_subtitle_button?

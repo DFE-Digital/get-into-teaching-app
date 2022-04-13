@@ -40,6 +40,25 @@ $mobile-cutoff: 800px;
       width: initial;
     }
   }
+  
+  &__paragraph {
+    display: block;
+    width: 90%;
+    margin: 0 2em 4em 1em;
+
+    @include mq($from: tablet) {
+      display: inline-block;
+      max-width: 45%;
+    }
+
+    // undo
+    @supports (display: grid) {
+      display: block;
+      max-width: initial;
+      margin: initial;
+      width: initial;
+    }
+  }
 
   > picture {
     float: right;
@@ -79,11 +98,13 @@ $mobile-cutoff: 800px;
     }
 
     &__subtitle,
-    &__content {
+    &__content,
+    &__paragraph {
       grid-area: 4 / 1 / 5 / 5;
     }
 
-    &__subtitle {
+    &__subtitle,
+    &__paragraph {
       align-items: center;
       margin: 0 auto 2em 1.5em;
 
@@ -117,6 +138,10 @@ $mobile-cutoff: 800px;
       }
 
       &__subtitle {
+        grid-area: 5 / 1 / 7 / 4;
+      }
+      
+      &__paragraph {
         grid-area: 5 / 1 / 7 / 4;
       }
 
