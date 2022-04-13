@@ -46,9 +46,9 @@
     <div class="events container">
       <section class="types-of-event">
         <div class="events-featured">
-          <div class="events-featured__list">
+          <ul class="events-featured__list">
             <%= render partial: "event", collection: @events %>
-          </div>
+          </ul>
         </div>
         <%= paginate @events %>
       </section>
