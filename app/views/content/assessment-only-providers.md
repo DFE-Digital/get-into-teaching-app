@@ -23,7 +23,7 @@ provider_groups:
       telephone: '01582 599921'
       email: kbateman@challneyboys.luton.sch.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/itt/
+      link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
@@ -100,7 +100,7 @@ provider_groups:
       telephone: '07919 568841'
       email: jwoolley@cfbt.com
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/itt/
+      link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
@@ -215,7 +215,7 @@ provider_groups:
     - header: Durham University
       email: ed.ite@durham.ac.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/itt/
+      link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
@@ -240,7 +240,7 @@ provider_groups:
       link: http://www.ctt.ac.uk
       email: scittlead@ctt.ac.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/itt/
+      link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
@@ -456,7 +456,7 @@ provider_groups:
       telephone: 01274 088 368
       email: j.white@bradfordcollege.ac.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/itt/
+      link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
