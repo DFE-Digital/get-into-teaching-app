@@ -14,9 +14,9 @@
 <% if @events.any? %>
 <section id="event-category-list" class="types-of-event">
   <div class="events-featured">
-    <div class="events-featured__list">
+    <ul class="events-featured__list">
       <%= render partial: "events/event", collection: @events %>
-    </div>
+    </ul>
   </div>
 </section>
 
