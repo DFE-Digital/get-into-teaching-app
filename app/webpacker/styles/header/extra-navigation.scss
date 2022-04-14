@@ -1,11 +1,5 @@
 @import "accessible-autocomplete";
 
-html:not(.js-enabled) {
-  .extra-navigation__search {
-    display: none;
-  }
-}
-
 .autocomplete__option {
   padding-left: 1em;
 
@@ -46,29 +40,24 @@ html:not(.js-enabled) {
   .extra-navigation__search {
     padding: 0;
     position: relative;
-    min-width: 240px;
 
-    input {
-      @include reset;
-      padding: 0 1em;
-
-      background-color: white;
-      border: 0;
-      height: 2.5em;
-      width: 110%;
-      font-size: .9rem;
-    }
-
-    &.ready div[data-searchbox-target='searchbar'] {
-      display: inline-block;
-    }
-
-    &:not(.ready) > * {
+    > div {
       display: none;
-    }
 
-    .fa-search {
-      margin-left: 1.2em;
+      &.visible {
+        display: inline-block;
+      }
+
+      input {
+        @include reset;
+        padding: 0 1em;
+
+        background-color: white;
+        border: 0;
+        height: 2.5em;
+        width: 400px;
+        font-size: .9rem;
+      }
     }
   }
 
@@ -121,12 +110,18 @@ html:not(.js-enabled) {
       input {
         margin: 0;
         background-color: white;
-        width: 110%;
+        width: 500px;
       }
 
       li.extra-navigation__link {
         margin: .4em 0;
         padding: .6em .2em;
+      }
+    }
+
+    @include mq($until: tablet) {
+      input {
+        width: 250px;
       }
     }
 

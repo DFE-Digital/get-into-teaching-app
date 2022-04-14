@@ -4,42 +4,36 @@ import SearchboxController from 'searchbox_controller.js';
 describe('SearchboxController', () => {
   const searchboxTemplate = `
     <div id="search" data-controller="searchbox" data-searchbox-search-input-id-value="searchbox__input" class="searchbox">
-      <a href="#" data-action="searchbox#toggle">
-        Toggle
-      </a>
-
       <label for="searchbox__input" data-searchbox-target="label">Search</label>
-      <div data-searchbox-target="searchbar">
-      </div>
+      <div data-searchbox-target="searchbar"></div>
+      <a data-action="searchbox#setup">Search</a>
     </div>
   `;
 
-  const application = Application.start();
-  application.register('searchbox', SearchboxController);
+  const clickSearch = () => document.querySelector('a').click();
 
-  beforeEach(() => (document.body.innerHTML = searchboxTemplate));
+  beforeAll(() => {
+    const application = Application.start();
+    application.register('searchbox', SearchboxController);
+  });
+
+  beforeEach(() => {
+    document.body.innerHTML = searchboxTemplate;
+  });
 
   describe('initialising autocomplete', () => {
-    it('should create autocomplete-wrapper div', () => {
-      const autocompletes = document.querySelectorAll('.autocomplete__wrapper');
-
-      expect(autocompletes.length).toBe(1);
+    beforeEach(() => {
+      clickSearch();
     });
 
-    it('adds the ready class to the controller element', () => {
-      const element = document.getElementById('search');
-      expect(element.classList).toContain('ready');
-    })
+    it('should create autocomplete-wrapper div', () => {
+      const autocompletes = document.querySelectorAll('.autocomplete__wrapper');
+      expect(autocompletes.length).toBe(1);
+    });
 
     it('adds an aria-label attribute to the input', () => {
       const input = document.querySelector('input');
       expect(input.ariaLabel).toEqual('Search');
-    });
-
-    it('co-locates the label with the autocomplete input', () => {
-      const label = document.querySelector('label');
-      const input = document.querySelector('input');
-      expect(label.nextSibling).toEqual(input);
     });
   });
 
@@ -54,8 +48,7 @@ describe('SearchboxController', () => {
         setRequestHeader: jest.fn(),
       });
       window.XMLHttpRequest = jest.fn().mockImplementation(xhrMock);
-      document.querySelector('.searchbox a[data-action]').click();
-      document.dispatchEvent(new CustomEvent('navigation:menu'));
+      clickSearch();
     });
 
     it('executes the search after 500ms', (done) => {
@@ -135,45 +128,6 @@ describe('SearchboxController', () => {
         expect(noResultsItem.innerHTML).toEqual('Searching...');
         done();
       }, 250);
-    });
-  });
-
-  describe('toggling search open and close', () => {
-    it('should open the searchbar', () => {
-      const searchBar = () => {
-        return document.querySelectorAll('.searchbox--opened');
-      };
-
-      expect(searchBar().length).toBe(0);
-
-      document.querySelector('.searchbox a[data-action]').click();
-      expect(searchBar().length).toBe(1);
-
-      document.querySelector('.searchbox a[data-action]').click();
-      expect(searchBar().length).toBe(0);
-    });
-  });
-
-  describe('mobile menu opening', () => {
-    describe('when searchbox already open', () => {
-      beforeEach(() => {
-        document.querySelector('.searchbox a[data-action]').click();
-        document.dispatchEvent(new CustomEvent('navigation:menu'));
-      });
-
-      it('hides the search box', () => {
-        expect(document.querySelectorAll('.searchbox--opened').length).toBe(0);
-      });
-    });
-
-    describe('when searchbox is hidden', () => {
-      beforeEach(() => {
-        document.dispatchEvent(new CustomEvent('navigation:menu'));
-      });
-
-      it('leaves the search box hidden', () => {
-        expect(document.querySelectorAll('.searchbox--opened').length).toBe(0);
-      });
     });
   });
 });

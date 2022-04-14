@@ -9,61 +9,26 @@ export default class extends Controller {
 
   searchQuery = null;
 
-  connect() {
+  setup(event) {
+    event.preventDefault();
+    event.target.remove();
+
     this.setupAccessibleAutocomplete();
     this.fixLabelAccessibility();
-
-    this.element.classList.add('ready');
-
-    this.mobileMenuHandler = this.hide.bind(this);
-    document.addEventListener('navigation:menu', this.mobileMenuHandler);
   }
 
   disconnect() {
     if (this.autocompleteWrapper) this.autocompleteWrapper.remove();
 
     this.clearAnalyticsSubmitter();
-
-    if (document && this.mobileMenuHandler)
-      document.removeEventListener('navigation:menu', this.mobileMenuHandler);
-  }
-
-  toggle(ev) {
-    ev.preventDefault();
-
-    this.visible ? this.hide() : this.show();
-  }
-
-  get visible() {
-    return this.element.classList.contains(this.constructor.openedClass);
   }
 
   get searchInputId() {
     return 'searchbox__input';
   }
 
-  show() {
-    if (this.visible) return;
-
-    this.element.classList.add(this.constructor.openedClass);
-
-    if (this.inputField) this.inputField.focus();
-
-    this.notify();
-  }
-
-  hide() {
-    if (!this.visible) return;
-
-    this.element.classList.remove(this.constructor.openedClass);
-  }
-
   get autocompleteWrapper() {
     return this.searchbarTarget.querySelector('.autocomplete__wrapper');
-  }
-
-  get inputField() {
-    return this.searchbarTarget.querySelector('input');
   }
 
   setupAccessibleAutocomplete() {
@@ -82,17 +47,17 @@ export default class extends Controller {
         suggestion: this.formatResults.bind(this),
       },
     });
+
+    this.searchbarTarget.classList.add('visible');
+    this.input.focus();
   }
 
   fixLabelAccessibility() {
     // We see a warning on Silktide that the input has no label.
     // To fix this we're going to try adding an aria-label to the
-    // auto-complete input and also co-locate the label next to the
-    // input. One or both of these may not be necessary, but we won't
-    // know until the next Silktide report.
+    // auto-complete input.
     if (this.hasLabelTarget) {
       this.input.ariaLabel = this.labelTarget.textContent;
-      this.input.parentNode.insertBefore(this.labelTarget, this.input);
     }
   }
 
@@ -186,12 +151,6 @@ export default class extends Controller {
 
     window.clearTimeout(this.analyticsSubmitter);
     this.analyticsSubmitter = null;
-  }
-
-  notify() {
-    const showingSearchEvent = new CustomEvent('navigation:search');
-
-    document.dispatchEvent(showingSearchEvent);
   }
 
   get input() {
