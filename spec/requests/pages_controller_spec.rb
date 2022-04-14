@@ -20,7 +20,7 @@ describe PagesController, type: :request do
     end
 
     context "when the page is noindexed" do
-      before { get "/test/a" }
+      before { get "/thank-you" }
 
       subject { response }
 
