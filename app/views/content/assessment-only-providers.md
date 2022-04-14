@@ -72,7 +72,7 @@ provider_groups:
     - header: The Cambridge Partnership
       link: https://campartnership.org/
       name: Claire Mott
-      telephone: '01487 833707'
+      telephone: '01223 491630'
       email: cmott@campartnership.org
     - header: The Shire Foundation
       name: Julie Darmody
