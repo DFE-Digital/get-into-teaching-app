@@ -5,8 +5,12 @@ class SitemapController < ApplicationController
     "/home" => "/",
   }.freeze
 
+  # http://en.wikipedia.org/wiki/URL_normalization
+  # Ensure any index route (collection) has a trailing slash (representing the semantics of a directory).
+  # This will keep it consistent with how canonical-rails behaves and ensure search engines are happy.
   OTHER_PATHS = %w[
-    /events
+    /events/
+    /blog/
     /event-categories/train-to-teach-events
     /event-categories/online-q-as
     /event-categories/school-and-university-events
