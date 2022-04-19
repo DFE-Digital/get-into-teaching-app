@@ -18,12 +18,6 @@
         icon: "icon-calendar"
         hide_on_mobile: Yes
         hide_on_tablet: Yes
-  jump_links:
-    Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"
-    Bursaries and scholarships: "#bursaries-and-scholarships"
-    If you're a parent or carer: "#if-youre-a-parent-or-carer"
-    If you're disabled: "#if-youre-disabled"
-    If you come from outside England: "#if-you-come-from-outside-england"
   before-content:
     - content/funding-your-training/funding-widget
   calls_to_action:
