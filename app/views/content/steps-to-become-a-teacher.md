@@ -2,7 +2,7 @@
   title: "Steps to become a teacher"
   layout: "layouts/steps"
   description: |-
-    Find out how to become a teacher with our step-by-step guide. Decide who to teach, check your qualifications, and find out how to train to be a teacher.
+    Explore how to become a teacher with our step-by-step guide. Decide who to teach, check your qualifications, and find teaching courses to train to be a teacher.
   date: "2021-06-24"
   image: "media/images/content/hero-images/0017.jpg"
   backlink: "../"
