@@ -46,7 +46,7 @@ gem "faraday_middleware"
 
 gem "dotenv-rails", ">= 2.7.6"
 
-gem "govuk_design_system_formbuilder", ">= 2.7.6"
+gem "govuk_design_system_formbuilder", ">= 2.8.0"
 
 gem "loaf", ">= 0.10.0"
 
