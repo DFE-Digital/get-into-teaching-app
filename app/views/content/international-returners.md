@@ -6,12 +6,6 @@ description: |-
   Return to England to teach with the help of a teacher training adviser.
   Courses and events are available to help make your transition easier.
 date: "2020-04-07"
-jump_links-dt:
-  Help finding your next role: "#using-dfes-teaching-vacancies-service-to-find-your-next-role"
-  Return to teaching success stories: "#return-to-teaching-success-stories"
-  Extra support for teachers of shortage subjects: "#extra-support-for-teachers-of-shortage-subjects"
-  Information on support, CPD and salaries: "#continuous-professional-development-cpd-and-teaching-salaries"
-  A step-by-step guide on coming home to teach: "#return-to-teach-in-england-step-by-step"
 accordion:
   numbered: true
   content_after_accordion:
