@@ -30,7 +30,7 @@ You could also attend one of the School and University events, either online or 
 
 ##Get a teacher training adviser
 
-Teacher training advisers provide free, one-to-one support by phone, text or email wherever you are in your journey into teaching. They are experienced teachers and able to answer any questions you have. You will have your own dedicated adviser to support you at every step as you make important decisions about your future.
+Teacher training advisers provide free, one-to-one support by phone, text or email wherever you are in your journey into teaching. They are experienced, former teachers and able to answer any questions you have. You will have your own dedicated adviser to support you at every step as you make important decisions about your future.
 
 They can help you to:
 
