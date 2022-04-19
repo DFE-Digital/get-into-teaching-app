@@ -1,10 +1,17 @@
 name: Build and Deploy
+
 on:
   workflow_dispatch:
   pull_request:
     types: [assigned, opened, synchronize, reopened]
   push:
     branches: [ master ]
+
+permissions:
+  contents: write
+  deployments: write
+  issues: write
+  pull-requests: write
 
 jobs:
   build_release:
