@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
+
+    <%= render HeaderComponent.new do |c| %>
+      <%= c.hero(@front_matter) %>
+    <% end %>
+
+    <main class="category" id="main-content">
+      <section class="container">
+        <%= tag.nav(aria: { label: "#{@page.title} navigation" }, class: "category__nav-cards") do %>
+          <% Pages::Navigation.find(@page.path).children.each do |c| %>
+            <%= link_to(c.path, class: "category__nav-card") do %>
+              <div class="category__nav-card--content">
+                <%= tag.h2(c.title) %>
+
+                <%= tag.p(c.description) %>
+              </div>
+
+              <div class="category__nav-card--icon"></div>
+            <% end %>
+          <% end %>
+        <% end %>
+      </div>
+    </main>
+
+    <% @front_matter["content"]&.each do |partial| %>
+      <%= render(partial) %>
+    <% end %>
+
+    <%= render FooterComponent.new %>
+  <% end %>
+</html>

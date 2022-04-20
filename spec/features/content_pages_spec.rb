@@ -157,12 +157,30 @@ RSpec.feature "content pages check", type: :feature, content: true do
 
     scenario "navigable pages appear in desktop navbar" do
       # skip home as we've just navigated to '/'
-      navigation_pages.reject { |k, _v| k == "/home" }.each do |url, frontmatter|
+      navigation_pages
+        .reject { |k, _v| k == "/home" }
+        .select { |_k, v| v[:navigation].is_a?(Integer) } # omit subpages that are in the format 10.5
+        .each do |url, frontmatter|
         expected_title = frontmatter[:navigation_title] || frontmatter[:heading] || frontmatter[:title]
 
         page.within "nav ol.primary" do
           is_expected.to have_link expected_title, href: url
         end
+      end
+    end
+  end
+
+  describe "category pages" do
+    subject { page }
+
+    let(:path) { "/train-to-be-a-teacher" }
+
+    before { visit(path) }
+
+    scenario "the child pages are represented by navigation cards" do
+      Pages::Navigation.find(path).children.each do |child|
+        expect(page).to have_link(child.title, href: child.path, class: "category__nav-card")
+        expect(page).to have_content(child.description)
       end
     end
   end
