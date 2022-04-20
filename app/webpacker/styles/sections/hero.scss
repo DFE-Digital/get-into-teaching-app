@@ -79,8 +79,10 @@ $mobile-cutoff: 800px;
     }
 
     &__subtitle,
-    &__content {
+    &__content,
+    &__paragraph {
       grid-area: 4 / 1 / 5 / 5;
+      padding: 2em;
     }
 
     &__subtitle {
@@ -122,6 +124,10 @@ $mobile-cutoff: 800px;
 
       &__content {
         grid-area: 5 / 1 / 7 / 4;
+      }
+
+      &__paragraph {
+        grid-area: 5 / 1 / 6 / 4;
       }
 
       > picture {
