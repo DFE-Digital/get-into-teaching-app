@@ -3,7 +3,7 @@ title: Initial teacher training (ITT)
 related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
-    Train to be a teacher : "/train-to-be-a-teacher"
+    Train to be a teacher : "/ways-to-train"
 extra_content:
     - content/train-to-be-a-teacher/promos/learn-adviser-promo
 ---
@@ -21,7 +21,9 @@ The theoretical part of your training might be delivered by a university or in a
 
 You’ll also have a mentor to support you in your placements and learning. They can provide feedback and guidance.
 
-There are full-time and part-time teacher training courses available. [Find postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/).
+There are full-time and part-time teacher training courses available.
+
+[Find postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/).
 
 ##What you’ll learn in initial teacher training
 
