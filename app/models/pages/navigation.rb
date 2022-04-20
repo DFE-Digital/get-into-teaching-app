@@ -3,7 +3,7 @@ module Pages
     attr_reader :nodes
 
     class << self
-      delegate :all_pages, :root_pages, to: :instance
+      delegate :all_pages, :root_pages, :find, to: :instance
 
     private
 
@@ -24,6 +24,10 @@ module Pages
 
     def root_pages
       nodes.select(&:root?).sort_by(&:rank)
+    end
+
+    def find(path)
+      all_pages.find { |p| p.path == path }
     end
 
     class Node
