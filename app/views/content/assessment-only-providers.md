@@ -33,7 +33,7 @@ provider_groups:
       telephone: '01268 570215'
       email: Fran@etpscitt.co.uk
     - header: Essex Teacher Training
-      # link: https://www.essexteachertraining.co.uk/assessment-only/
+      link: https://www.essexteachertraining.co.uk/assessment-only/
       name: Kay Satchell
       email: kay.satchell@essexteachertraining.co.uk
     - header: Mid Essex Initial Teacher Training
@@ -179,7 +179,7 @@ provider_groups:
       telephone: 0330 313 9870
       email: mehroonnisha.mulla@staracademies.org
     - header: 'Teaching London: LDBS SCITT'
-      # link: https://teachinglondon.org
+      link: https://teachinglondon.org
       name: Saskia Rossi
       telephone: 0207 932 1126
       email: admin@teachinglondon.org
@@ -282,11 +282,6 @@ provider_groups:
     - header: Boleyn Trust
       link: https://www.londondistricteast.org/scitt
       email: elascitt@tollgate.boleyntrust.org
-    - header: Bourton Meadow Initial Teacher Training Centre
-      # link: https://www.bourtonmeadowittc.co.uk
-      name: Helen Byrom
-      telephone: '01280 823374'
-      email: hbyrom@bucksgfl.org.uk
     - header: Canterbury Christ Church University
       name: Keith Saunders
       telephone: 01227 925555
