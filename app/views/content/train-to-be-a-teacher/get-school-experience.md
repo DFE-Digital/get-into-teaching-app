@@ -13,7 +13,7 @@ calls_to_action:
           Use our service to search for and organise a placement in England.
         link_text: "Get school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
-extra_content:
+promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo
 navigation: 12.25
 navigation_description: Spending some time in a school can help you find out more about teaching and even help you decide what kind of teacher you want to be.

@@ -4,7 +4,7 @@ related_content:
     Career progression stories: "/my-story-into-teaching/career-progression"
     Salaries and benefits : "/salaries-and-benefits"
     Online Q&A sessions : "/event-categories/online-q-as"
-extra_content:
+promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
 navigation: 12.20
 navigation_description: If you've already spent a lot of time working in the classroom, you may be able to show you meet the standards for QTS through an assessment.

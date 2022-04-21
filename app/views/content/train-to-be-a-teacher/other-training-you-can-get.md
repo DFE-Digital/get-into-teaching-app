@@ -4,7 +4,7 @@ related_content:
     What is QTS?: "/what-is-qts"
     Salaries and benefits : "/salaries-and-benefits"
     Online Q&A sessions : "/event-categories/online-q-as"
-extra_content:
+promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/mailing-list-promo
 ---

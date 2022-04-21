@@ -5,7 +5,7 @@ related_content:
     Swapping senior management for students : "/my-story-into-teaching/career-changers/swapping-senior-management-for-students"
     Engineers teach physics : "/subjects/engineers-teach-physics"
     Get into teaching maths : "/subjects/maths"
-extra_content:
+promo_content:
     - content/train-to-be-a-teacher/promos/learn-adviser-promo
 navigation: 12.15
 navigation_description: Use the experience you’ve gathered so far to inspire students and train to bring your skills and expertise to the classroom.

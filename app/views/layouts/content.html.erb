@@ -92,6 +92,12 @@
           <% end %>
         <% end %>
       </section>
+
+      <% if @front_matter.key?("promo_content") %>
+        <% @front_matter["promo_content"]&.each do |partial| %>
+          <%= render(partial) %>
+        <% end %>
+      <% end %>
     </main>
 
     <%= render FooterComponent.new %>

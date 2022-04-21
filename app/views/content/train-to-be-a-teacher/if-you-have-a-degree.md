@@ -4,7 +4,7 @@ related_content:
     Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
     Improve your subject knowledge : "/improve-your-subject-knowledge"
     Tips on applying for teacher training : "/tips-on-applying-for-teacher-training"
-extra_content:
+promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/events-near-you
 navigation: 12.05

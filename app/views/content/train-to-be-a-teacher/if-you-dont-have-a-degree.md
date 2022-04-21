@@ -4,7 +4,7 @@ related_content:
     5 reasons to attend a Train to Teach event : "/blog/5-reasons-to-attend-a-train-to-teach-event"
     Funding your training : "/funding-your-training"
     Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
-extra_content:
+promo_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
     - content/train-to-be-a-teacher/promos/events-near-you
 navigation: 12.10
