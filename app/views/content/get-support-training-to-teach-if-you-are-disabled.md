@@ -34,7 +34,7 @@ If you’re disabled, have a mental health condition or educational needs, you c
 
 ## Adjustments can help you train
 
-Teacher training providers can make adjustments so that you can attend an interview or do the [training](/ways-to-train). For example, they could:
+Teacher training providers can make adjustments so that you can attend an interview or do the training. For example, they could:
 
 * organise equipment like a hearing loop or an adapted keyboard
 * put you in touch with support staff if you have a mental health condition
