@@ -111,7 +111,7 @@ Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.
 
 ## 2. Get support and advice
 
-To get advice, you can:
+To get advice about training to teach, you can:
 
 * call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8.30am and 5.30pm, Greenwich Mean Time
 
@@ -200,6 +200,11 @@ As part of the application process, your training provider will confirm you’re
 
 ## 5. Apply for your visa
 
+If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa). 
+You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk). 
+
+Get into Teaching advisers will not be able to answer questions about visas and immigration.
+
 <div class="inset">
   <h3>Already living in the UK?</h3>
 
@@ -211,7 +216,6 @@ As part of the application process, your training provider will confirm you’re
 
   <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">If you are currently studying in the UK on a student visa, you may be able to apply for a graduate visa</a></p>  
 </div>
-
 
 If you don’t already have an immigration status allowing you to train to teach in the UK, you’ll need to apply for a [student visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa). You can do this once you have a confirmed offer of a training place from a training provider who can sponsor student visas. 
 
@@ -266,3 +270,4 @@ Visit the following websites for more about English education:
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. 
 
 However, for help with the information on this page, you can email us at international.teacherrecruitment@education.gov.uk.
+
