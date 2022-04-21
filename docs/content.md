@@ -11,7 +11,6 @@ This documentation aims to be a reference for content editors that want to make 
 	* [SEO](#seo)
 	* [Prevent Indexing](#prevent-indexing)
 	* [Adding a Document or Image](#adding-a-document-or-image)
-	* [Jump Links](#jump-links)
 	* [Calls to Action](#calls-to-action)
 		* [Main Content](#main-content)
 		* [Sidebar](#sidebar)
@@ -112,18 +111,6 @@ The key (`"media/images/content/hero-images/0001.jpg"`) is the **primary** varia
 
 * `alt:` - the alt text for the image, wrapped in quotes
 * `variants` - a list of **other versions of the same image**. The alternate versions can be thumbnails or crops and are considered alternates if the same `alt` text can be applied to them as the primary variant
-
-### Jump Links
-
-You can include jump links in the frontmatter of a page if it has a lot of content in order to make it easier for the user to navigate:
-
-```yaml
----
-jump_links:
-  Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"
-  Bursaries and scholarships: "#bursaries-and-scholarships"
-  If you come from outside England: "#if-you-come-from-outside-england"
----
 
 ### Tuition fee and maintenance loans
 
