@@ -8,6 +8,8 @@ extra_content:
     - content/train-to-be-a-teacher/promos/learn-adviser-promo
 ---
 
+Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
+
 All initial teacher training courses include classroom experience and theoretical learning. Your training is likely to include a combination of:
 
 * unobserved and observed teaching 
@@ -54,7 +56,7 @@ If you apply to train with a specific school, your placements may not take place
 
 ##Your teacher training timetable
 
-Full-time teacher training usually takes 9 months. Part-time teacher training can take 18 to 24 months.
+Full-time teacher training usually takes 9 months, in line with the academic year. Part-time teacher training can take 18 to 24 months.
 
 Some courses begin with time spent in a university or school where you start your theoretical learning. Your course pattern will be different depending on your training provider.
 
