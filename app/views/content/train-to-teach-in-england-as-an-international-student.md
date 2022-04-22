@@ -134,8 +134,6 @@ Call us free on 0800 389 2500 for:
 
 Fees vary between training providers, but range from about £12,000 to about £22,000 in total. You’ll also have to pay your living costs.  
 
-You can work while you train by choosing a [part-time course](#search-and-apply-for-teacher-training-courses). 
-
 Alternatively, you can apply for a salaried teacher training course, and earn money while you train in a school. However, these courses are limited in number and very competitive. You will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
 
 ### Financial support
@@ -203,7 +201,7 @@ As part of the application process, your training provider will confirm you’re
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa). 
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk). 
 
-Get into Teaching advisers will not be able to answer questions about visas and immigration.
+Get into Teaching advisers will not be able to answer specific questions about visas and immigration related to your personal circumstances.
 
 <div class="inset">
   <h3>Already living in the UK?</h3>
