@@ -3,6 +3,10 @@ title: Help and advice
 navigation: 50
 image: "media/images/content/hero-images/0025.jpg"
 paragraph: We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply.
+calls_to_action:
+  chat:
+    name: chat
+    arguments: {}
 ---
 
 ## Attend an event
@@ -64,4 +68,4 @@ If you would like to talk to someone now to find out more information about all 
 
 Our chat and telephone services are available Monday to Friday between 8:30am and 5:30pm.
 
-<a href="#" class="button">Chat online</a>
+$chat$
