@@ -3,25 +3,24 @@ title: Initial teacher training (ITT)
 related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
-    Train to be a teacher : "/ways-to-train"
+    Train to be a teacher : "/train-to-be-a-teacher"
 extra_content:
     - content/train-to-be-a-teacher/promos/learn-adviser-promo
 ---
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
 
-All initial teacher training courses include classroom experience and theoretical learning. Your training is likely to include a combination of:
+You'll spend most of your time in school placements with some time dedicated to theoretical learning. Your training is likely to include a combination of:
 
 * unobserved and observed teaching 
 * taught sessions
-* seminars
-* workshops
+* seminars and workshops
 * tasks and assignments
 * engagement with academic or professional research
 
 The theoretical part of your training might be delivered by a university or in a school. Some training courses will be all school-based, but this does not mean that you’ll spend all your time teaching.
 
-You’ll also have a mentor to support you in your placements and learning. They can provide feedback and guidance.
+You’ll also have a mentor to support you in your school placements and learning. They can provide feedback and guidance.
 
 There are full-time and part-time teacher training courses available.
 
@@ -35,13 +34,14 @@ Initial teacher training helps you meet the [Teachers’ Standards](https://www.
 
 All initial teacher training will help you:
 
-* create a positive classroom environment
-* build knowledge and understanding of how pupils learn
+* set high expectations which inspire, motivate and challenge pupils
+* promote good progress and outcomes by pupils
 * develop good subject and curriculum knowledge
 * plan and teach well structured lessons
-* adapt your teaching, including how to support learners with additional needs
+* adapt teaching to respond to the strengths and needs of all pupils
 * make accurate and productive use of assessment
-* manage behaviour effectively in the classroom
+* manage behaviour effectively to ensure a good and safe learning
+environment
 * make a positive contribution to your school community
 
 ##Your classroom placements
