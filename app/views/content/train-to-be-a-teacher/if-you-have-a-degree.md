@@ -47,7 +47,7 @@ Fees are usually around £9,250 but you can:
 You should check the fees for a particular course you are interested in with the course provider.
 
 ## Earn a salary while you train
-These courses are usually only suitable for specific candidates, for example, some are for people who already have relevant teaching experience or are already working as unqualified teachers. You will be able to find out more about eligibility from the trianing provider. You may be able to study part-time.
+These courses are usually only suitable for specific candidates, for example, some are for people who already have relevant teaching experience or are already working as unqualified teachers. You will be able to find out more about eligibility from the training provider. You may be able to study part-time.
 
 ### School Direct (salaried)
 
