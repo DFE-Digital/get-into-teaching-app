@@ -4,8 +4,8 @@ related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     Train to be a teacher : "/train-to-be-a-teacher"
-extra_content:
-    - content/train-to-be-a-teacher/promos/learn-adviser-promo
+promo_content:
+    - content/train-to-be-a-teacher/promos/events-near-you
 ---
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
