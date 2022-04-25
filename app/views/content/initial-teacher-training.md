@@ -48,7 +48,7 @@ environment
 
 Typically, you will get 120 days of classroom experience in a minimum of two schools. Through your placements, you’ll have the opportunity to teach, plan, observe and research.
 
-You’ll get classroom experience whether you do school-led or university-led training. School-led training programmes like School direct usually include more time in school than university-led training.
+You’ll get classroom experience whether you do school-led or university-led training. School-led training programmes like School Direct usually include more time in school than university-led training.
 
 Some courses may offer placements in specific kinds of schools, like special schools. You can talk to your course provider about the opportunities available.
 
