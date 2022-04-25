@@ -29,7 +29,7 @@ It can help you:
 
 ## What to expect
 
-Your experience will either be in a school or joining classes and meeting teachers online. Placements usually last one or 2 days, but some can last up to 3 weeks
+Your experience will either be in a school or joining classes and meeting teachers online. Placements usually last one or 2 days, but some can last up to 3 weeks.
 
 During your experience, you’ll get to do things like:
 
