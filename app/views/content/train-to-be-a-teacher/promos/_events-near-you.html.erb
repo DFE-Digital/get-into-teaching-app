@@ -36,13 +36,11 @@
       Events are one of the best ways to speak to people and ask the questions you need to get into teaching.
     </p>
 
-    <form>
-      <label for="postcode">Enter postcode</label>
-
-      <div>
-        <input name="postcode" maxlength="4">
-        <button class="button">Search</button>
-      </div>
-    </form>
+    <%= form_for Events::Search.new, method: :get, url: search_events_path do |f| %>
+      <%= f.hidden_field :distance, value: 10 %>
+      <%= f.label :postcode, "Enter postcode" %>
+      <%= f.text_field :postcode, autocomplete: "postal-code" %>
+      <%= tag.button("Search", class: "button", id: "event-search") %>
+    <% end %>
   </div>
 </div>
