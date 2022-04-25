@@ -13,7 +13,7 @@ navigation_description: You need a degree to get QTS. If you're not already stud
 
 You can get QTS as part of an undergraduate degree.
 
-Courses typically cost £9,250 per year and can take up to 4 years but you can get funding(opens in new window).
+Courses typically cost £9,250 per year and can take up to 4 years but you can get [funding](/funding-your-training).
 
 Qualifications vary depending on the course. For example, you could get QTS with a:
 
