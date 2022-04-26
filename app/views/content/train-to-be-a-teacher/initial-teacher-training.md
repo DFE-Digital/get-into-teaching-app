@@ -9,6 +9,9 @@ related_content:
     Train to be a teacher : "/train-to-be-a-teacher"
 promo_content:
     - content/train-to-be-a-teacher/promos/events-near-you
+navigation: 12.30
+navigation_description:
+  Find out what initial teacher training (ITT) is like. Learn about your classroom placements, the theoretical learning, and how you’ll be assessed.
 ---
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
