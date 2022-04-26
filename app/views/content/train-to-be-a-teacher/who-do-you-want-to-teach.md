@@ -1,7 +1,8 @@
 ---
 title: Who do you want to teach
+heading: Who do you want to teach
 description: |-
-  Find out more about which student groups you might want to teach.
+  Explore who’d you’d like to teach and the qualifications you need to work with early years, further education, and pupils with special educational needs.
 ---
 
 If you want to teach a particular student group you might need to do specific training. Find out what you can do to get the right qualifications.
