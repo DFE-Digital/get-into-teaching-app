@@ -1,5 +1,8 @@
 ---
-title: If you already have classroom experience
+title: "If you already have classroom experience"
+heading: "If you already have classroom experience"
+description: |-
+  Find out how you can gain qualified teacher status (QTS) if you’ve already spent a lot of time in the classroom as a teaching assistant or in a similar role.
 related_content:
     Career progression stories: "/my-story-into-teaching/career-progression"
     Salaries and benefits : "/salaries-and-benefits"
