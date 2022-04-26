@@ -23,5 +23,3 @@ Qualifications vary depending on the course. For example, you could get QTS with
 - Bachelor of Arts (BA)
 - Bachelor of Education (BEd)
 - Bachelor of Science (BSc)
-
-[Find an undergraduate course](https://digital.ucas.com/search).
