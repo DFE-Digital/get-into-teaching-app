@@ -1,5 +1,8 @@
 ---
-title: If you don't have a degree
+title: "Ways to train if you don't have a degree"
+heading: "If you don't have a degree"
+description: |-
+  Explore how you can train to be a teacher and gain qualified teacher status (QTS) if you don’t have a degree.
 related_content:
     5 reasons to attend a Train to Teach event : "/blog/5-reasons-to-attend-a-train-to-teach-event"
     Funding your training : "/funding-your-training"
