@@ -1,5 +1,8 @@
 ---
-title: Initial teacher training (ITT)
+title: "Initial teacher training (ITT)"
+heading: "Initial teacher training (ITT)"
+description: |-
+  Find out what initial teacher training (ITT) is like. Learn about your classroom placements, the theoretical learning, and how you’ll be assessed.
 related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
