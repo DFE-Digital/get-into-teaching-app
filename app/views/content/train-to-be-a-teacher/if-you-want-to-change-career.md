@@ -1,5 +1,8 @@
 ---
 title: If you want to change career
+heading: If you want to change career
+description: |-
+  Find out what extra support you can get if you want to change career and get into teaching. Bring your experience to life in the classroom.
 related_content:
     From construction site to classroom : "/my-story-into-teaching/career-changers/from-construction-site-to-classroom"
     Swapping senior management for students : "/my-story-into-teaching/career-changers/swapping-senior-management-for-students"
