@@ -26,7 +26,7 @@ There are full-time and part-time teacher training courses available.
 
 [Find postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/).
 
-##What you’ll learn in initial teacher training
+## What you’ll learn in initial teacher training
 
 What you’ll learn will depend on your course and the qualifications it offers. Some teacher training courses award [qualified teacher status (QTS)](/what-is-qts), while some award QTS with [PGCE or PGDE](/what-is-a-pgce).
 
@@ -44,7 +44,7 @@ All initial teacher training will help you:
 environment
 * make a positive contribution to your school community
 
-##Your classroom placements
+## Your classroom placements
 
 Typically, you will get 120 days of classroom experience in a minimum of two schools. Through your placements, you’ll have the opportunity to teach, plan, observe and research.
 
@@ -54,7 +54,7 @@ Some courses may offer placements in specific kinds of schools, like special sch
 
 If you apply to train with a specific school, your placements may not take place within that school. They may take place at a school within their partnership or trust. Speak to your course provider for more details.
 
-##Your teacher training timetable
+## Your teacher training timetable
 
 Full-time teacher training usually takes 9 months, in line with the academic year. Part-time teacher training can take 18 to 24 months.
 
@@ -64,7 +64,7 @@ School placements vary in length and structure, but the minimum length is usuall
 
 Read about [Cindy’s first week as a trainee teacher doing a PGDE with QTS](/blog/my-first-week-as-a-trainee-teacher).
 
-##How you’ll be assessed 
+## How you’ll be assessed 
 
 There are two types of assessments you’ll have as part of your training - formative and summative. Formative assessments are less formal and happen throughout your course. Summative assessments are formal assessments, usually at the end of your course.
 
