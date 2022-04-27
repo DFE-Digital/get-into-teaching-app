@@ -9,12 +9,20 @@ export default class extends Controller {
 
   searchQuery = null;
 
-  setup(event) {
-    event.preventDefault();
-    event.target.remove();
-
+  connect() {
     this.setupAccessibleAutocomplete();
     this.fixLabelAccessibility();
+  }
+
+  toggle(event) {
+    event.preventDefault();
+
+    if (this.element.classList.contains('open')) {
+      this.element.classList.remove('open');
+    } else {
+      this.element.classList.add('open');
+      this.input.focus();
+    }
   }
 
   disconnect() {
@@ -33,7 +41,7 @@ export default class extends Controller {
 
   setupAccessibleAutocomplete() {
     accessibleAutocomplete({
-      placeholder: 'Site search',
+      placeholder: 'Search',
       element: this.searchbarTarget,
       id: this.searchInputIdValue,
       displayMenu: 'overlay',
@@ -47,9 +55,6 @@ export default class extends Controller {
         suggestion: this.formatResults.bind(this),
       },
     });
-
-    this.searchbarTarget.classList.add('visible');
-    this.input.focus();
   }
 
   fixLabelAccessibility() {
