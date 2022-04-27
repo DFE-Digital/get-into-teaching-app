@@ -6,7 +6,7 @@ description: |-
 related_content:
     Diary of a trainee teacher : "/blog/a-diary-of-a-trainee-teacher"
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
-    Train to be a teacher : "/train-to-be-a-teacher"
+    What to expect on your teacher training : "/blog/what-to-expect-on-your-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/events-near-you
 navigation: 12.30
