@@ -241,3 +241,52 @@
     }
   }
 }
+
+.why-teach {
+  background-color: $grey;
+
+  &__container {
+    margin: 2em auto;
+    max-width: 60em;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2em;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+    }
+
+    h2 {
+      .caption {
+        color: $purple;
+        @include font-size(medium);
+      }
+
+      @include font-size(large);
+    }
+  }
+
+  &__content {
+    flex: 1 0 50%;
+    margin-inline: 1em;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li + li {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  &__image {
+    flex: 0 1 50%;
+
+    img {
+      object-fit: cover;
+      max-height: 15em;
+      width: 100%;
+    }
+  }
+}

@@ -13,6 +13,7 @@ navigation_path: "/train-to-be-a-teacher"
 layout: "layouts/category"
 content:
     - content/train-to-be-a-teacher/questions
+    - content/train-to-be-a-teacher/why-teach
 image: "media/images/content/hero-images/0008.jpg"
 ---
 
