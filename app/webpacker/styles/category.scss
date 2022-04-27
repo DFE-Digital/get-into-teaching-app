@@ -104,43 +104,15 @@
   }
 }
 
-.promo-content {
+.promo {
   max-width: 60em;
   border-top: 1px solid $grey-mid;
   padding-top: 3em;
   margin: 3em auto;
 
-  &.find-your-course {
-    display: flex;
-    gap: .5em;
-
-    @include mq($from: tablet) {
-      gap: 2em;
-    }
-
-    .left > .icon {
-      background: $yellow;
-      margin-inline: 1em;
-      padding: .4em;
-    }
-
-    .right {
-      .caption {
-        @include font-size(medium);
-        font-weight: bold;
-        color: $purple;
-        display: inline-block;
-      }
-
-      h2 {
-        @include font-size(large);
-        margin: 0;
-      }
-    }
-  }
 }
 
-.events-near-you {
+.promo {
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -149,12 +121,12 @@
     flex-direction: row;
   }
 
-  &__next-event,
-  &__find-an-event {
+  &__left,
+  &__right {
     flex: 0 0 50%;
   }
 
-  &__next-event {
+  &__left {
     flex: 1;
     background-image: url("../images/content/homepage/here-to-help.jpg");
     background-position: center;
@@ -180,13 +152,10 @@
     }
 
     h2 > *,
-    .date-and-time {
+    .promo__content {
       display: inline-block;
       background-color: $yellow;
       padding: .4rem .8rem;
-    }
-
-    .date-and-time {
     }
 
     p {
@@ -194,7 +163,7 @@
     }
   }
 
-  &__find-an-event {
+  &__right {
     flex: 0;
     flex-basis: 33%;
     display: flex;
@@ -213,7 +182,7 @@
     label,
     input {
       display: inline-block;
-      margin-bottom: .2em;
+      margin-bottom: .4em;
     }
 
     h2 {
@@ -225,6 +194,10 @@
       }
 
       @include font-size(large);
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
     }
 
     form {
@@ -287,6 +260,41 @@
       object-fit: cover;
       max-height: 15em;
       width: 100%;
+    }
+  }
+}
+
+.find-your-course {
+  max-width: 60em;
+  border-top: 1px solid $grey-mid;
+  padding-top: 3em;
+  display: flex;
+  gap: .5em;
+
+  @include mq($from: tablet) {
+    gap: 2em;
+  }
+
+  .left > .icon {
+    display: inline-block;
+    background: $yellow;
+    margin-inline: 1em;
+    padding: .4em;
+  }
+
+  .right {
+    margin-inline: 1em;
+
+    .caption {
+      @include font-size(medium);
+      font-weight: bold;
+      color: $purple;
+      display: inline-block;
+    }
+
+    h2 {
+      @include font-size(large);
+      margin: 0;
     }
   }
 }

@@ -1,0 +1,19 @@
+<div class="promo__left">
+  <div>
+    <h2>
+      <%= tag.div(caption, class: "caption") %>
+      <br>
+      <%= tag.div(heading) %>
+    </h2>
+  </div>
+
+  <div>
+    <div class="promo__content">
+      <%= content %>
+    </div>
+  </div>
+
+  <div>
+    <%= link_to(link_text, link_target, class: %w[button button--white button--inline-block]) %>
+  </div>
+</div>

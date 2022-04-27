@@ -1,48 +1,22 @@
-<div class="promo-content events-near-you">
-  <div class="events-near-you__next-event">
-    <div>
-      <h2>
-        <div class="caption">
-          Need some support?
-        </div>
+<%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
+  <% promo.left_section(
+      caption: "Need some support?",
+      heading: "Teacher training advisers",
+      link_target: "/teacher-training-advisers",
+      link_text: "Learn about advisers") do %>
+    <p>Advice for you, whether you’re just thinking about teaching or you’re ready to apply.</p>
+  <% end %>
 
-        <br>
+  <% promo.right_section(
+        caption: "Events near you",
+        heading: "Events are a great place to ask questions") do %>
+      <p>Events are one of the best ways to speak to people and ask the questions you need to get into teaching.</p>
 
-        <div>Teacher training advisers</div>
-      </h2>
-    </div>
-
-    <div>
-      <div class="date-and-time">
-        <p>Advice for you, whether you’re just thinking about teaching or you’re ready to apply.</p>
-      </div>
-    </div>
-
-    <div>
-      <a href="#" class="button button--white button--inline-block">Learn about advisers</a>
-    </div>
-  </div>
-
-  <div class="events-near-you__find-an-event">
-    <h2>
-      <div class="caption">
-        Events near you
-      </div>
-
-      Events are a great place to ask questions
-    </h2>
-
-    <p>
-      Events are one of the best ways to speak to people and ask the questions you need to get into teaching.
-    </p>
-
-    <form>
-      <label for="postcode">Enter postcode</label>
-
-      <div>
-        <input name="postcode" maxlength="4">
-        <button class="button">Search</button>
-      </div>
-    </form>
-  </div>
-</div>
+      <%= form_for Events::Search.new, method: :get, url: search_events_path do |f| %>
+        <%= f.hidden_field :distance, value: 10 %>
+        <%= f.label :postcode, "Enter postcode" %>
+        <%= f.text_field :postcode, autocomplete: "postal-code" %>
+        <%= tag.button("Search", class: "button", id: "event-search") %>
+      <% end %>
+  <% end %>
+<% end %>
