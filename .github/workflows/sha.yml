@@ -37,7 +37,7 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
-          key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK, SLACK-RELEASE-NOTE-WEBHOOK
+          key: SLACK-WEBHOOK, SLACK-RELEASE-NOTE-WEBHOOK
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
@@ -51,4 +51,3 @@ jobs:
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
           GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
-
