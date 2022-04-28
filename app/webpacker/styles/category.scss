@@ -9,6 +9,11 @@
       max-width: 70ch;
     }
   }
+  
+  &__cards {
+	  padding-bottom: 2em;
+	  
+  }
 
   &__nav-cards {
     display: grid;
@@ -69,7 +74,7 @@
     flex-direction: column;
     gap: 3em;
     background: $white;
-    padding-bottom: 2em;
+    padding-bottom: 4em;
 
     @include mq($from: tablet) {
       flex-direction: row;
@@ -216,7 +221,7 @@
   background-color: $grey;
 
   &__container {
-    margin: 2em auto;
+    margin: 4em auto;
     max-width: 60em;
     display: flex;
     flex-direction: column-reverse;
