@@ -1,8 +1,10 @@
 <div class="promo__left">
   <div>
     <h2>
-      <%= tag.div(caption, class: "caption") %>
-      <br>
+      <% if caption %>
+        <%= tag.div(caption, class: "caption") %>
+        <br>
+      <% end %>
       <%= tag.div(heading) %>
     </h2>
   </div>
@@ -13,7 +15,9 @@
     </div>
   </div>
 
-  <div>
-    <%= link_to(link_text, link_target, class: %w[button button--white button--inline-block]) %>
-  </div>
+  <% if link_text && link_target %>
+    <div>
+      <%= link_to(link_text, link_target, class: %w[button button--white button--inline-block]) %>
+    </div>
+  <% end %>
 </div>
