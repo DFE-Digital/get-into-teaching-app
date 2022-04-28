@@ -5,7 +5,7 @@ description: |-
   Get help and advice on getting into teaching by talking to a dedicated adviser, going to a teacher training event, or registering for relevant email updates.
 navigation: 50
 image: "media/images/content/hero-images/0025.jpg"
-paragraph: We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply.
+title-paragraph: We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply.
 calls_to_action:
   chat:
     name: chat
