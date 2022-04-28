@@ -127,7 +127,6 @@
   }
 
   &__left {
-    flex: 1;
     background-image: url("../images/content/homepage/here-to-help.jpg");
     background-position: center;
     background-size: cover;
@@ -164,7 +163,6 @@
   }
 
   &__right {
-    flex: 0;
     flex-basis: 33%;
     display: flex;
     flex-direction: column;
