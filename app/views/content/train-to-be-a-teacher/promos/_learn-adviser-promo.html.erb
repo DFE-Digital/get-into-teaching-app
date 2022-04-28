@@ -1,13 +1,13 @@
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
   <% promo.left_section(
       caption: "Need some support?",
-      heading: "Teacher training advisers",
-      link_target: "/teacher-training-advisers",
-      link_text: "Learn about advisers") do %>
+      heading: "Teacher training advisers") do %>
     <p>Advice for you, whether you’re just thinking about teaching or you’re ready to apply.</p>
   <% end %>
 
   <% promo.right_section(heading: "Get free one-to-one support") do %>
       <p>Advisers can answer your questions, help with your application, and support you on your teaching journey.</p>
+
+      <%= link_to("Learn about advisers", "/teacher-training-advisers", class: "button") %>
   <% end %>
 <% end %>
