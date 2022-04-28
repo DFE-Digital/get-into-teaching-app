@@ -187,7 +187,7 @@ provider_groups:
       link: https://www.haveringteachertraining.co.uk/
       name: Liz Connell
       telephone: '01708 255006'
-      email: http@hallmeadschool.com
+      email: admin@haveringteachertraining.co.uk
     - header: The Pimlico-London SCITT
       link: https://www.futuretraining.org/page/?title=Assessment+Only+Route&pid=20
       email: info@futuretraining.org
@@ -376,7 +376,9 @@ provider_groups:
       email: office@mscitt.org.uk
     - header: Somerset SCITT Consortium
       link: https://www.sciltraining.co.uk
-      email: CLeoni@somerset.gov.uk
+      name: Julie Walker
+      telephone: 0300 123 1967
+      email: JLWalker@somerset.gov.uk
     - header: Wessex Schools Training Partnership
       name: Claire Porter
       telephone: 01202 662038
