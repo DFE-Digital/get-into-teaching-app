@@ -1,1 +1,3 @@
-Your iQTS provider will assess you throughout your training to check you meet iQTS [Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards). Passing your training provider's assessment gives you international qualified teacher status. If you wish, you can then apply to England's Department for Education for qualified teacher status (QTS). You can apply for QTS even if you don’t want to teach in England. 
+Your iQTS provider and school will assess you  to check you meet iQTS [Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards). 
+
+Your training provider will award you international qualified teacher status (iQTS) when you successfully pass this assessment process. You will then be automatically awarded qualified teacher status (QTS) by England’s Department for Education.
