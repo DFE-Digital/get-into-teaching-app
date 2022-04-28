@@ -1,22 +1,13 @@
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
   <% promo.left_section(
-      caption: "Mailing list",
-      heading: "Advice and support in your inbox",
-      link_target: "/mailinglist/signup/name",
-      link_text: "Sign up for emails") do %>
-    <p>Join our mailing list and we’ll make sure you have the right information at the right time.</p>
+      heading: "Advice and support in your inbox") do &>
   <% end %>
 
   <% promo.right_section(
-        caption: "Events near you",
-        heading: "Events are a great place to ask questions") do %>
-      <p>Events are one of the best ways to speak to people and ask the questions you need to get into teaching.</p>
+    caption: "Get tailored guidance"
+  ) do %>
+      <p>Find out about nearby events, what teaching is really like, and how to get one-to-one support.</p>
 
-      <%= form_for Events::Search.new, method: :get, url: search_events_path do |f| %>
-        <%= f.hidden_field :distance, value: 10 %>
-        <%= f.label :postcode, "Enter postcode" %>
-        <%= f.text_field :postcode, autocomplete: "postal-code" %>
-        <%= tag.button("Search", class: "button", id: "event-search") %>
-      <% end %>
+      <%= link_to("Sign up for emails", "/mailinglist/signup/name", class: "button") %>
   <% end %>
 <% end %>
