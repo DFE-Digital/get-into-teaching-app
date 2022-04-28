@@ -1,6 +1,9 @@
 <div class="promo__right">
   <h2>
-    <%= tag.div(caption, class: "caption") %>
+    <% if caption %>
+      <%= tag.div(caption, class: "caption") %>
+    <% end %>
+
     <%= tag.div(heading) %>
   </h2>
 
