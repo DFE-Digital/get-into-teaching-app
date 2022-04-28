@@ -12,4 +12,13 @@ This guidance relates to teaching in England. Different rules apply to teaching 
 
 ## Contact
 
-For help applying for iQTS or more information, contact us on iqts.pilot@education.gov.uk
+To get advice about iQTS, you can:
+
+• call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8.30am and 5.30pm, Greenwich Mean Time (GMT)
+
+• use the live chat service at the bottom of this page
+
+• sign up to [Get an adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
+
+• email us on iqts.pilot@education.gov.uk
+
