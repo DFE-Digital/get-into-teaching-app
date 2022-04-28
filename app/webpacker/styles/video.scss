@@ -58,7 +58,7 @@
       overflow: hidden;
       border: none;
 
-      .icon-video-close {
+      .icon-close {
         transform: rotate(-3deg);
       }
 
@@ -110,7 +110,7 @@
     right: -16px;
   }
 
-  .video-overlay__video-container__dismiss .icon-video-close {
+  .video-overlay__video-container__dismiss .icon-close {
     margin: 0;
   }
 }

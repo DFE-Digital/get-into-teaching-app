@@ -7,16 +7,12 @@
   align-items: center;
 
   @include mq($from: tablet) {
-	  	overflow: visible;
-	  	padding-bottom: 0;
-	  	position: relative;
+    overflow: visible;
+    padding-bottom: 0;
+    position: relative;
   }
 
   @include mq($from: tablet) {
-    top: -8px;
-  }
-
-  @include mq($from: desktop) {
     top: -23px;
   }
 }

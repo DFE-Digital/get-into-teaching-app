@@ -1,5 +1,4 @@
 <nav class="hidden-mobile" data-navigation-target="nav" aria-label="Primary navigation">
-  <%= render Header::ExtraNavigationComponent.new(classes: %w[hide-on-desktop], search_input_id: "searchbox__input--mobile") %>
   <ol class="primary" data-navigation-target="primary">
     <% all_resources.each do |resource| %>
       <% if resource.menu? %>
