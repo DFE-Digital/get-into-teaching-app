@@ -2,21 +2,15 @@
   <% promo.left_section(
       caption: "Get an adviser",
       heading: "Teacher training advisers",
-      link_target: "/teacher-training-advisers",
-      link_text: "Find out more about advisers") do %>
-    <p>Your own personal adviser can help you on the phone, text or by email and it’s free.</p>
+    <p>Your own personal adviser can help you on the phone, text or by email.</p>
   <% end %>
 
   <% promo.right_section(
-        caption: "Events near you",
-        heading: "Events are a great place to ask questions") do %>
-      <p>Events are one of the best ways to speak to people and ask the questions you need to get into teaching.</p>
+        heading: "Get free one-to-one support") do %>
+      <p>Advisers can answer your questions, help with your application, and support you on your teaching journey.</p>
 
-      <%= form_for Events::Search.new, method: :get, url: search_events_path do |f| %>
-        <%= f.hidden_field :distance, value: 10 %>
-        <%= f.label :postcode, "Enter postcode" %>
-        <%= f.text_field :postcode, autocomplete: "postal-code" %>
-        <%= tag.button("Search", class: "button", id: "event-search") %>
+      link_target: "/teacher-training-advisers",
+      link_text: "Find out more about advisers") do %>
       <% end %>
   <% end %>
 <% end %>
