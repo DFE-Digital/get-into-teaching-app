@@ -51,6 +51,14 @@ They can help you to:
 
 <a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get your dedicated adviser</a>
 
+## Have a chat
+
+If you would like to talk to someone now to find out more information about all aspects of teacher training, from working out what qualifications you need to how to apply for funding, you can chat online or call us on 0800 389 2500 and we will be able to help you.
+
+Our chat and telephone services are available Monday to Friday between 8:30am and 5:30pm.
+
+$chat$
+
 ## Get personalised guidance in your inbox
 
 We can help you get into the classroom with guidance tailored to you, including how to:
@@ -64,11 +72,3 @@ We can help you get into the classroom with guidance tailored to you, including 
 Just answer a few questions about your current situation and what you would like to teach and we will keep you up to date with the guidance and insights relevant to you.
 
 <a href="/mailinglist/signup/name" class="button">Sign up for personalised emails</a>
-
-## Have a chat
-
-If you would like to talk to someone now to find out more information about all aspects of teacher training, from working out what qualifications you need to how to apply for funding, you can chat online or call us on 0800 389 2500 and we will be able to help you.
-
-Our chat and telephone services are available Monday to Friday between 8:30am and 5:30pm.
-
-$chat$
