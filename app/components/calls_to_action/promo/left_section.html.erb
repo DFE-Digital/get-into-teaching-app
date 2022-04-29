@@ -9,11 +9,13 @@
     </h2>
   </div>
 
-  <div>
-    <div class="promo__content">
-      <%= content %>
+  <% if content.present? %>
+    <div>
+      <div class="promo__content">
+        <%= content %>
+      </div>
     </div>
-  </div>
+  <% end %>
 
   <% if link_text && link_target %>
     <div>
