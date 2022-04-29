@@ -9,10 +9,10 @@
       max-width: 70ch;
     }
   }
-  
+
   &__cards {
 	  padding-bottom: 2em;
-	  
+
   }
 
   &__nav-cards {
@@ -163,6 +163,10 @@
 
     p {
       margin: 0;
+    }
+
+    .button {
+      display: inline-block;
     }
   }
 
