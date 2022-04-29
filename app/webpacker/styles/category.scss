@@ -276,17 +276,17 @@
   border-top: 1px solid $grey-mid;
   padding-top: 3em;
   display: flex;
-  gap: .5em;
+  gap: .3em;
 
   @include mq($from: tablet) {
-    gap: 2em;
+    gap: .5em;
   }
 
   .left > .icon {
     display: inline-block;
     background: $yellow;
     margin-inline: 1em;
-    padding: .4em;
+    padding: .8em .8em .6em;
   }
 
   .right {
