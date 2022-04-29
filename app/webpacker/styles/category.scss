@@ -185,10 +185,18 @@
     p {
       margin-top: 0;
     }
+    
+    label {
+	    font-weight: bold;
+	    display: block
+    }
+    
+    input {
+	    
+    }
 
     label,
     input {
-      display: inline-block;
       margin-bottom: .4em;
     }
 
@@ -206,11 +214,12 @@
     }
 
     form {
-      max-width: 40%;
+      width: 100%;
 
       input {
         margin-left: 0;
-        min-width: 10em;
+        max-width: 150px;
+        margin-right: .5em;
       }
 
       div {
