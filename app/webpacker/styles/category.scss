@@ -171,6 +171,7 @@
   }
 
   &__right {
+    align-items: flex-start;
     flex-basis: 33%;
     display: flex;
     flex-direction: column;
@@ -179,7 +180,7 @@
       gap: 1em;
     }
 
-    > * { padding: .5rem 1rem; }
+    > * { margin: .5rem 1rem; }
 
     p {
       margin-top: 0;
@@ -192,8 +193,6 @@
     }
 
     h2 {
-      margin: 0;
-
       .caption {
         color: $purple;
         @include font-size(medium);
