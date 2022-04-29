@@ -5,7 +5,6 @@
 
 .link-block {
   &__header {
-    color: $purple;
     @include font-size("medium");
     padding: $indent-amount;
     margin: 0;
@@ -24,6 +23,7 @@
       line-height: 1.25;
       margin-bottom: 10px;
       padding: 5px $indent-amount;
+      color: $blue;
     }
   }
 }
