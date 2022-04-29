@@ -10,7 +10,7 @@ related_content:
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/events-near-you
-navigation: 12.05
+navigation: 20.05
 navigation_description: Find out how to get QTS if you have a degree or you’re studying for one now. There are different options you can choose.
 ---
 

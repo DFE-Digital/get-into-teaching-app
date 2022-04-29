@@ -9,7 +9,7 @@ related_content:
     Online Q&A sessions : "/event-categories/online-q-as"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
-navigation: 12.20
+navigation: 20.20
 navigation_description: If you've already spent a lot of time working in the classroom, you may be able to show you meet the standards for QTS through an assessment.
 ---
 

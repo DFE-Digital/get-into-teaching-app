@@ -8,7 +8,6 @@ subtitle_button: "Register for updates"
 subtitle_link: "/mailinglist/signup/name"
 date: "2021-06-07"
 backlink: "../"
-navigation: 20
 article_classes: ['ways-to-train']
 calls_to_action:
     find-postgraduate-training:

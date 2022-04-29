@@ -10,7 +10,7 @@ related_content:
     Get into teaching maths : "/subjects/maths"
 promo_content:
     - content/train-to-be-a-teacher/promos/learn-adviser-promo
-navigation: 12.15
+navigation: 20.15
 navigation_description: Use the experience you’ve gathered so far to inspire students and train to bring your skills and expertise to the classroom.
 ---
 
