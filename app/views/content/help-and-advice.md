@@ -31,7 +31,7 @@ There are online, text-based sessions where you can ask a panel of specialists t
 
 ### School and university events
 
-You could also attend one of the School and University events, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
+You could also attend a school and university event, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
 
 <a href="/events" class="button">Search for an event</a>
 
