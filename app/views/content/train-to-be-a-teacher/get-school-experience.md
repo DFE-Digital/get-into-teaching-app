@@ -6,7 +6,7 @@ description: |-
 related_content:
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
     School experience helped me decide to switch : "/my-story-into-teaching/career-changers/school-experience-helped-me-decide-to-switch"
-    Train to teach events : "/event-categories/train-to-teach-events"
+    Train to Teach events : "/event-categories/train-to-teach-events"
 calls_to_action:
     get-school-experience:
       name: simple
