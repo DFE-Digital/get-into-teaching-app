@@ -53,7 +53,9 @@ They can help you to:
 
 ## Have a chat
 
-If you would like to talk to someone now to find out more information about all aspects of teacher training, from working out what qualifications you need to how to apply for funding, you can chat online or call us on 0800 389 2500 and we will be able to help you.
+If you would like to talk to someone now to find out more information about all aspects of teacher training, from working out what qualifications you need to how to apply for funding, you can chat online or call us and we will be able to help you.
+
+Call us on **0800 389 2500**.
 
 Our chat and telephone services are available Monday to Friday between 8:30am and 5:30pm.
 
