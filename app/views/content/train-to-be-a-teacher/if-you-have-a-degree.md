@@ -56,7 +56,7 @@ These courses are usually only suitable for specific candidates, for example, so
 
 If you have the right experience, School Direct (salaried) give you QTS with many courses also offering a PGCE or PGDE. It takes a year to complete.
 
-[Find out more about training like School Direct](https://www.gov.uk/find-postgraduate-teacher-training-courses) (salaried)
+[Find out more about training like School Direct (salaried)](https://www.gov.uk/find-postgraduate-teacher-training-courses)
 
 ### Teach First
 Teach First is a 2-year programme leading to a PGDE and QTS. At the end of your first year, you will have QTS. The PGDE is awarded at the end of the second year.
