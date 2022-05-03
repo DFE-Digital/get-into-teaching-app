@@ -30,8 +30,6 @@ jobs:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
           key: SLACK-WEBHOOK
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Read Lychee output into var
         id: lychee-output
@@ -46,16 +44,16 @@ jobs:
         id: convert
         if: ${{ steps.lychee.outputs.exit_code != 0 }}
         uses: LoveToKnow/slackify-markdown-action@v1.0.0
-        with: 
-          text: |  
-                ${{ env.LYCHEE_OUTPUT }} 
+        with:
+          text: |
+                ${{ env.LYCHEE_OUTPUT }}
 
       - name: Slack Notification
         if: ${{ steps.lychee.outputs.exit_code != 0 }}
         uses: rtCamp/action-slack-notify@master
         env:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: | 
+           SLACK_MESSAGE: |
                          ${{ steps.convert.outputs.text }}
            SLACK_TITLE: 'External link check results:'
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
