@@ -46,7 +46,7 @@ During your experience, you’ll get to do things like:
 
 You can search for and request [school experience](https://schoolexperience.education.gov.uk/) in England.
 
-If you can’t find what you’re looking for, you can call a school directly. You can [find schools near](https://get-information-schools.service.gov.uk/) you and ask who to talk to about getting school experience.
+If you can’t find what you’re looking for, you can call a school directly. You can [find schools near you](https://get-information-schools.service.gov.uk/) and ask who to talk to about getting school experience.
 
 They may ask you to have a DBS check before attending.
 
