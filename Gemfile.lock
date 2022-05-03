@@ -247,6 +247,7 @@ GEM
       activesupport (>= 6.0)
       deep_merge (~> 1.2.1)
     hashdiff (1.0.1)
+    hashids (1.0.6)
     html_tokenizer (0.0.7)
     htmlentities (4.3.4)
     httpclient (2.8.3)
@@ -550,6 +551,7 @@ DEPENDENCIES
   get_into_teaching_api_client_faraday!
   google-api-client (>= 0.53.0)
   govuk_design_system_formbuilder (>= 2.8.0)
+  hashids
   kaminari (~> 1.2, >= 1.2.2)
   knapsack_pro
   kramdown (>= 2.4.0)

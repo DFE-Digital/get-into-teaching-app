@@ -44,6 +44,8 @@ gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
 
+gem "hashids"
+
 gem "dotenv-rails", ">= 2.7.6"
 
 gem "govuk_design_system_formbuilder", ">= 2.8.0"
