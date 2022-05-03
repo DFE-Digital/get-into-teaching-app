@@ -32,7 +32,7 @@ gem "secure_headers"
 gem "canonical-rails", ">= 0.2.14"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
-gem "kramdown", ">= 2.3.2"
+gem "kramdown", ">= 2.4.0"
 gem "rinku"
 
 gem "addressable", "~> 2.8.0"
@@ -52,8 +52,8 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 5.2.1"
-gem "sentry-ruby", "~> 5.2.1"
+gem "sentry-rails", ">= 5.3.0"
+gem "sentry-ruby", "~> 5.3.0"
 
 gem "skylight", "~> 5.3.2"
 
@@ -64,7 +64,7 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 2.52.0"
+gem "view_component", "~> 2.53.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -108,7 +108,7 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack_pro"
-  gem "rspec-rails", "~> 5.1.1"
+  gem "rspec-rails", "~> 5.1.2"
 
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.36", ">= 3.36.0"
