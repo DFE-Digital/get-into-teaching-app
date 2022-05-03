@@ -1,6 +1,6 @@
 module Header
   class HeroComponent < ViewComponent::Base
-    attr_accessor :title, :subtitle, :image, :show_mailing_list
+    attr_accessor :title, :subtitle, :image, :show_mailing_list, :paragraph
 
     def initialize(front_matter)
       return if front_matter.blank?
@@ -13,6 +13,7 @@ module Header
         @subtitle_link   = fm["subtitle_link"]
         @subtitle_button = fm["subtitle_button"]
         @image           = fm["image"]
+        @paragraph       = fm["title_paragraph"]
       end
     end
 

@@ -28,31 +28,4 @@ describe Header::NavigationComponent, type: "component" do
   specify "extra resources are last" do
     expect(component.all_resources.map(&:title)).to end_with(extra_resources.values)
   end
-
-  describe "rendering menus" do
-    subject! { render_inline(component) }
-
-    let(:children) do
-      [
-        OpenStruct.new(path: "/five/part-one", title: "Five: part one"),
-        OpenStruct.new(path: "/five/part-two", title: "Five: part two"),
-      ]
-    end
-
-    let(:resources) do
-      [OpenStruct.new(path: "/five", title: "Five", menu?: true, children: children)]
-    end
-
-    let(:component) { described_class.new(resources: resources) }
-
-    specify "the secondary navigatoin has right number of links" do
-      expect(page).to have_css("ol.primary > li > ol.secondary > li", count: children.size)
-    end
-
-    specify "the links have the right titles and hrefs" do
-      children.each do |child|
-        expect(page).to have_link(child.title, href: child.path)
-      end
-    end
-  end
 end

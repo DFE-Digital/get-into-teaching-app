@@ -9,8 +9,6 @@
   content:
     - content/samples/intro
   alert: This is an alert
-  jump_links:
-     Jump link 1: "#jump-link-one"
   related_content:
      Related content 1: "#related-content-one"
   right_column:

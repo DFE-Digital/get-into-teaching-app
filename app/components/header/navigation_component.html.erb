@@ -1,11 +1,7 @@
 <nav class="hidden-mobile" data-navigation-target="nav" aria-label="Primary navigation">
   <ol class="primary" data-navigation-target="primary">
     <% all_resources.each do |resource| %>
-      <% if resource.menu? %>
-        <%= menu(resource.title, resource.path, resource.children) %>
-      <% else %>
-        <%= nav_link(resource.title, resource.path) %>
-      <% end %>
+      <%= nav_link(resource.title, resource.path) %>
     <% end %>
   </ol>
 </nav>

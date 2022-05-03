@@ -87,5 +87,20 @@ describe Header::HeroComponent, type: "component" do
         expect(page).to have_css(".hero__content", text: sample)
       end
     end
+
+    describe "rendering a title paragraph" do
+      subject! do
+        render_inline(component) { sample }
+      end
+
+      let(:sample) { "Some paragraph text" }
+      let(:component) do
+        described_class.new(front_matter.merge(title_paragraph: sample))
+      end
+
+      specify "the paragraph should be rendered by the component" do
+        expect(page).to have_css(".hero__paragraph", text: sample)
+      end
+    end
   end
 end

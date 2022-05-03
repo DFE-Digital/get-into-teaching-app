@@ -94,7 +94,7 @@
 
 ## Tuition fee and maintenance loans
 
-Funding is available to help you [train to teach](/ways-to-train). You can apply for a:
+Funding is available to help you [train to teach](/train-to-be-a-teacher). You can apply for a:
 
 * tuition fee loan of up to £9,250 to cover your teacher training, so you do not need to pay course fees upfront
 * maintenance loan of up to £12,382 to help with living costs

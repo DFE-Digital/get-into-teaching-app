@@ -42,4 +42,4 @@ It is possible to get QTS through an [assessment only programme](/assessment-onl
 * you’ve already been employed as an unqualified teacher for a significant amount of time (for example, 2 years) and you’ve worked in more than one school
 * [you’re a qualified teacher who trained overseas](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk)
 
-<a href="/ways-to-train" class="button">Discover the different ways to train</a>
+<a href="/train-to-be-a-teacher" class="button">Discover the different ways to train</a>

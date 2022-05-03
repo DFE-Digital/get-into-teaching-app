@@ -1,0 +1,315 @@
+.category {
+  background-color: $grey;
+
+  &__hero {
+    margin: 0;
+    background: $yellow;
+
+    p {
+      max-width: 70ch;
+    }
+  }
+
+  &__cards {
+	  padding-bottom: 2em;
+
+  }
+
+  &__nav-cards {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-inline: 1em;
+    margin-block: 2em;
+
+    @include mq($from: tablet) {
+      grid-template-columns: repeat(2, 1fr);
+      margin-inline: 2em;
+    }
+
+    gap: 2em;
+    list-style: none;
+  }
+
+  &__nav-card {
+    background: white;
+    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.15);
+    color: black;
+    text-decoration: none;
+    padding: 2em;
+    display: flex;
+    gap: 1.5em;
+
+    &:hover {
+      box-shadow: 0px 12px 9px 0px rgba(0,0,0,0.15);
+      color: black;
+
+      h2 { text-decoration: underline; }
+    }
+
+    &--content {
+      flex: 1 0 80%;
+
+      h2 {
+        @include font-size(medium);
+        margin: 0;
+      }
+    }
+
+    &--icon {
+      flex: 1;
+      text-align: right;
+
+      &:after {
+        display: inline-block;
+        content: "\276F";
+        background: $blue;
+        color: white;
+        padding: 0 .5em
+      }
+    }
+  }
+
+  &__questions {
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    background: $white;
+    padding-bottom: 4em;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+      gap: 2em;
+    }
+  }
+
+  &__question {
+    @include mq($from: tablet) {
+      flex:1;
+    }
+
+    padding: 0 2em;
+
+    h2 {
+      @include font-size(medium);
+    }
+
+    * {
+      margin: 0;
+    }
+
+    * + * {
+      margin-top: 1em;
+      margin-bottom: 0;
+
+      @include mq($from: tablet) {
+        margin-top: 2em;
+      }
+    }
+  }
+}
+
+.promo {
+  max-width: 60em;
+  border-top: 1px solid $grey-mid;
+  padding-top: 3em;
+  margin: 3em auto;
+
+}
+
+.promo {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
+
+  &__left,
+  &__right {
+    flex: 0 0 50%;
+  }
+
+  &__left {
+    background-image: url("../images/content/homepage/here-to-help.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding-block: 2em;
+
+    > div {
+      padding: 0 1em .3em 1em;
+      max-width: 60%;
+    }
+
+    h2 {
+      margin: 0;
+      @include font-size(medium);
+
+      .caption {
+        @include font-size(small);
+        font-weight: normal;
+      }
+    }
+
+    h2 > *,
+    .promo__content {
+      display: inline-block;
+      background-color: $yellow;
+      padding: .4rem .8rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .button {
+      display: inline-block;
+    }
+  }
+
+  &__right {
+    align-items: flex-start;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+
+    @include mq($from: tablet) {
+      gap: 1em;
+    }
+
+    > * { margin: .5rem 1rem; }
+
+    p {
+      margin-top: 0;
+    }
+    
+    label {
+	    font-weight: bold;
+	    display: block
+    }
+    
+    input {
+	    
+    }
+
+    label,
+    input {
+      margin-bottom: .4em;
+    }
+
+    h2 {
+      .caption {
+        color: $purple;
+        @include font-size(medium);
+      }
+
+      @include font-size(large);
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    form {
+      width: 100%;
+
+      input {
+        margin-left: 0;
+        max-width: 150px;
+        margin-right: .5em;
+      }
+
+      div {
+        display: flex;
+      }
+    }
+  }
+}
+
+.why-teach {
+  background-color: $grey;
+
+  &__container {
+    margin: 4em auto;
+    max-width: 60em;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2em;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+    }
+
+    h2 {
+      .caption {
+        color: $purple;
+        @include font-size(medium);
+      }
+
+      @include font-size(large);
+    }
+  }
+
+  &__content {
+    flex: 1 0 50%;
+    margin-inline: 1em;
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li + li {
+        margin-top: 1em;
+      }
+    }
+  }
+
+  &__image {
+    flex: 0 1 50%;
+
+    img {
+      object-fit: cover;
+      max-height: 15em;
+      width: 100%;
+    }
+  }
+}
+
+.find-your-course {
+  margin: auto;
+  max-width: 60em;
+  border-top: 1px solid $grey-mid;
+  padding-top: 3em;
+  display: flex;
+  gap: .3em;
+
+  @include mq($from: tablet) {
+    gap: .5em;
+  }
+
+  .left > .icon {
+    display: inline-block;
+    background: $yellow;
+    margin-inline: 1em;
+    padding: .8em .8em .6em;
+  }
+
+  .right {
+    margin-inline: 1em;
+
+    .caption {
+      @include font-size(medium);
+      font-weight: bold;
+      color: $purple;
+      display: inline-block;
+    }
+
+    h2 {
+      @include font-size(large);
+      margin: 0;
+    }
+  }
+}

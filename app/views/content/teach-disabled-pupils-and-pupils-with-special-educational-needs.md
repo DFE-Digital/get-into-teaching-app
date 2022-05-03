@@ -31,7 +31,7 @@ You can [find a course which specialises in special educational needs and disabi
 
 However, it’s not essential to do a course specialising in SEND.
 
-As you [train](/ways-to-train) and teach you'll get the skills you need to work with disabled pupils and pupils with special educational needs.
+As you train and teach you'll get the skills you need to work with disabled pupils and pupils with special educational needs.
 
 This will enable you to work in a range of settings throughout your career.
 
