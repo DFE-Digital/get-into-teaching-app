@@ -15,7 +15,7 @@ You could teach:
 - early years (children up to the age of 5)
 - further education (for example, teaching at further education colleges or sixth form colleges)
 
-If you want to teach in [primary or secondary schools](/train-to-be-a-teacher/if-you-have-a-degree) there are a number of ways to get [qualified teachers status](/what-is-qts) (QTS) which you will need to teach in the majority of schools in
+If you want to [teach in primary or secondary schools](/train-to-be-a-teacher/if-you-have-a-degree) there are a number of ways to get [qualified teachers status](/what-is-qts) (QTS) which you will need to teach in the majority of schools in
 England.
 
 You will need a degree to teach all student groups except those in further education, depending on the type of further education you are teaching.
