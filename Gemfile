@@ -32,7 +32,7 @@ gem "secure_headers"
 gem "canonical-rails", ">= 0.2.14"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
-gem "kramdown", ">= 2.3.2"
+gem "kramdown", ">= 2.4.0"
 gem "rinku"
 
 gem "addressable", "~> 2.8.0"

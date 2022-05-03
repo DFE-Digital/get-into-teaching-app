@@ -267,7 +267,7 @@ GEM
     kaminari-core (1.2.2)
     knapsack_pro (3.2.1)
       rake
-    kramdown (2.3.2)
+    kramdown (2.4.0)
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
@@ -552,7 +552,7 @@ DEPENDENCIES
   govuk_design_system_formbuilder (>= 2.8.0)
   kaminari (~> 1.2, >= 1.2.2)
   knapsack_pro
-  kramdown (>= 2.3.2)
+  kramdown (>= 2.4.0)
   listen (~> 3.7.1)
   loaf (>= 0.10.0)
   logger (>= 1.5.1)
