@@ -3,6 +3,8 @@ module Events
     include ActiveModel::Model
     include ActiveModel::Attributes
     include ActiveModel::Validations::Callbacks
+    include EncryptedAttributes
+    encrypt_attributes :postcode
 
     RESULTS_PER_TYPE = 9
     FUTURE_MONTHS = 24

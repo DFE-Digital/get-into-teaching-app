@@ -8,6 +8,11 @@ class EventCategoriesController < ApplicationController
 
   MAXIMUM_EVENTS_IN_CATEGORY = 1_000
 
+  def create
+    encrypted_params = Events::Search.new(event_filter_params).encrypted_attributes
+    redirect_to(event_category_path(params[:id], { events_search: encrypted_params }))
+  end
+
   def show
     @category_name = helpers.pluralised_category_name(@type.id)
     @page_title = @category_name
@@ -29,7 +34,7 @@ protected
 private
 
   def load_events(period)
-    @event_search = Events::Search.new(event_filter_params.merge(type: @type.id, period: period))
+    @event_search = Events::Search.new_decrypt(event_filter_params.merge(type: @type.id, period: period))
     events_by_type = @event_search.query_events(MAXIMUM_EVENTS_IN_CATEGORY)
     group_presenter = Events::GroupPresenter.new(
       events_by_type,

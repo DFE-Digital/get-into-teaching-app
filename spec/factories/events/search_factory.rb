@@ -9,5 +9,9 @@ FactoryBot.define do
       distance { 20 }
       postcode { nil }
     end
+
+    trait :with_encrypted_postcode do
+      postcode { Encryptor.encrypt("TE57 1NG") }
+    end
   end
 end

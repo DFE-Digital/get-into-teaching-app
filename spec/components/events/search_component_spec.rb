@@ -11,7 +11,7 @@ describe Events::SearchComponent, type: "component" do
   before { freeze_time }
 
   specify "builds a search form" do
-    expect(page).to have_css("form[action='#{path}'][method='get']")
+    expect(page).to have_css("form[action='#{path}'][method='post']")
   end
 
   describe "heading" do
