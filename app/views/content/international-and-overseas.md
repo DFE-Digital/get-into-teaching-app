@@ -4,7 +4,7 @@ heading: "International and overseas"
 description: |-
   Find out how you can become a teacher if you're a non-UK citizen.
 title_paragraph: |-
-    Find out how to become a teacher if you're a non-UK citizen.
+    If you’re interested in coming to teach in England as an international citizen, or if you want to return to teach in England, we can help you understand your next steps.
 navigation: 20
 navigation_title: International and overseas
 navigation_path: "/international-and-overseas"
