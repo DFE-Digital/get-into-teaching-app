@@ -50,6 +50,14 @@ dt,
   line-height: 1.5;
 }
 
+li {
+  margin-bottom: 0.3em;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
 a {
   @include font;
   color: $black;
