@@ -2,7 +2,7 @@
 title: "Apply for teacher training as an international candidate"
 description: |-
   Find out about teacher training courses in the UK for international students, and get help and advice on getting your QTS and PGCE with this guidance.
-  related_content:
+related_content:
     Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
     Improve your subject knowledge : "/improve-your-subject-knowledge"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
@@ -10,7 +10,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/events-near-you
 navigation: 20.05
-navigation_description: Find out how to train to get qualified teacher status (QTS) in England.
+navigation_description: Find out how to train to get qualified teacher status (QTS) in England. You need QTS to teach in most primary and secondary schools in England.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
