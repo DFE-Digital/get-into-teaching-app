@@ -6,10 +6,9 @@ description: |-
   Return to England to teach with the help of a teacher training adviser.
   Courses and events are available to help make your transition easier.
 related_content:
-    From construction site to classroom : "/my-story-into-teaching/career-changers/from-construction-site-to-classroom"
-    Swapping senior management for students : "/my-story-into-teaching/career-changers/swapping-senior-management-for-students"
-    Engineers teach physics : "/subjects/engineers-teach-physics"
-    Get into teaching maths : "/subjects/maths"
+    Returning to teaching with international experience : "/my-story-into-teaching/international-career-changers/returning-to-teaching-with-international-experience"
+    Returning from teaching abroad : "/my-story-into-teaching/international-career-changers/returning-to-teaching-with-support-from-an-adviser"
+    Salaries and benefits of teaching in England : "/salaries-and-benefits"
 promo_content:
     - content/train-to-be-a-teacher/promos/learn-adviser-promo
 navigation: 20.15
@@ -54,14 +53,6 @@ keywords:
   - teachers standards
   - standards
   - chartered college of teaching
-right_column:
-  ctas:
-    - title: Take the next step
-      text: |
-        Get support to take the next step at an event.
-      link_text: "Attend an event"
-      link_target: "/events"
-      icon: "icon-calendar"
 ---
 
 Are you a UK-trained teacher and UK citizen currently teaching abroad? Our
