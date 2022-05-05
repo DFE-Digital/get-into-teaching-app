@@ -5,7 +5,7 @@ backlink: "../../"
 description: |-
   Return to England to teach with the help of a teacher training adviser.
   Courses and events are available to help make your transition easier.
-  related_content:
+related_content:
     From construction site to classroom : "/my-story-into-teaching/career-changers/from-construction-site-to-classroom"
     Swapping senior management for students : "/my-story-into-teaching/career-changers/swapping-senior-management-for-students"
     Engineers teach physics : "/subjects/engineers-teach-physics"
@@ -13,7 +13,7 @@ description: |-
 promo_content:
     - content/train-to-be-a-teacher/promos/learn-adviser-promo
 navigation: 20.15
-navigation_description: Find out why you should bring your teaching experience back to England.
+navigation_description: Bring your international skills and experience back to an English classroom and return to teach in England.
 date: "2020-04-07"
 accordion:
   numbered: true
