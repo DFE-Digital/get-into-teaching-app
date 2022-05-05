@@ -2,14 +2,14 @@
 title: "Come to England to teach if you're a teacher from outside the UK"
 description: |-
   Come to England to teach if you're a qualified teacher from outside the UK
-  related_content:
+related_content:
     Career progression stories: "/my-story-into-teaching/career-progression"
     Salaries and benefits : "/salaries-and-benefits"
     Online Q&A sessions : "/event-categories/online-q-as"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
 navigation: 20.20
-navigation_description: Discover why you should bring your teaching experience into an English classroom.
+navigation_description: Find out how you can bring your skills and perspective to an English classroom, working as part of a world class education system.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
 backlink: "../../"
