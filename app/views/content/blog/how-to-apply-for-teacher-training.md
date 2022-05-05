@@ -32,39 +32,66 @@ $header_image$
 
 From effective preparation, to submitting your application, we’ve broken down the whole process into manageable steps, so you can see exactly what’s involved.
 
-## Preparing to apply
-
-### 1. Check your qualifications
+## 1. Check your qualifications
 
 Although different training providers may have specific recruitment criteria, there are some basic eligibility requirements you’ll need to meet to become a qualified teacher in England. In summary, you’ll need or be working towards:
 
 * a degree
-* GCSE grade C / 4 in English and maths — and a science subject for primary trainees
+* GCSE grade C / 4 in English and maths — and a science subject if you want to teach primary
 
-You can find out more about [overseas qualifications](/train-to-teach-in-england-as-an-international-student).
+You may be able to show you meet the standard in another way if you do not have GCSEs.
 
-### 2. Get one-to-one support from our teaching experts
+If you’re applying for teacher training as an international candidate, [find out more about overseas qualifications.](/train-to-teach-in-england-as-an-international-student).
 
-Our teacher training advisers are all experienced teachers ready to support your journey into teaching. [Register with us](/tta-service) to be allocated your very own adviser.
+You can get advice about your qualifications by [chatting to a teacher training adviser.](https://getintoteaching.education.gov.uk/teacher-training-advisers)
 
-### 3. Attend a virtual teacher training event
+## 2. Get some school experience
 
-Our free events are the perfect opportunity to find out more about teacher training and receive advice from experts and training providers in your local area. [Find an event](/events).
+If you haven’t had any experience of working with children, think about any transferable skills you have gained which could be used in a classroom, such as communication, organisation and time management. You might have organised seminars or delivered training sessions, or you might have qualifications that could be used in an educational setting.
 
-## Applying for teacher training
+Whilst school experience isn’t compulsory, it’s a good idea to visit a school, if only to confirm that you are making the right career choice. Use our [Get School Experience service](https://schoolexperience.education.gov.uk/) to find details of upcoming opportunities in your area.
 
-### 1. Find teacher training courses
+## 3.	Get a teacher training adviser
 
-[Find postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/) available in England. You’ll be able to search by location, training provider and subject. When you apply, you have three choices for teacher training providers. It’s a good idea to select three choices; the more flexible you are, the more likely it is that you’ll secure a place.
+Teacher training advisers provide free, one-to-one support wherever you are in your journey into teaching. Whether it's just an idea, or you're looking to get back into the classroom, you could get help with things like finding school experience, choosing the right course for you, funding, and writing a successful application. [Get an adviser.](https://adviser-getintoteaching.education.gov.uk/)
 
-### 2. Write your personal statement
+## 4.	Attend a teacher training event
 
-The personal statement is your chance to make your application stand out by discussing your experience, knowledge and skills, and demonstrating how they’re transferable to the classroom. [Read our advice on writing your teacher training personal statement](/tips-on-applying-for-teacher-training).
+Our free events are the perfect opportunity to find out more about teacher training. Chat to teachers, training providers and expert advisers, and get answers to all of your questions. [Find an event.](https://getintoteaching.education.gov.uk/events)
 
-### 3. Arrange your references
+## 5.	Explore your funding options
 
-Your referees can tell training providers about your qualities and abilities, so it’s important they know you well. Find out more about the requirements for references in our [tips on applying for teacher training](/tips-on-applying-for-teacher-training).
+There are plenty of funding options available to support you during your teacher training year. You can access Tuition Fee and Maintenance Loans regardless of whether or not you have an existing student loan and you will only begin to repay these once you’re earning more than £27,295.
 
-### 4. Apply for teacher training
+Extra financial support is available if you’re a parent, have an adult dependant or a disability. This support does not need to be paid back.
 
-You're now ready to submit your application and [apply for teacher training](https://www.gov.uk/apply-for-teacher-training).
+And for some subjects, you may qualify for a tax-free bursary or scholarship.
+
+The key to managing financially during your training year is careful planning and preparation. Our [expert advisers](https://adviser-getintoteaching.education.gov.uk/) can help you make a plan and find the best funding options for your circumstances. [Explore your funding options.](https://getintoteaching.education.gov.uk/funding-your-training)
+
+## 6.	Find the right training course for you
+
+Use [Find postgraduate teacher training](https://www.find-postgraduate-teacher-training.service.gov.uk/) to search available courses in England. You’ll be able to search by location, training provider and subject. When you apply, you have three choices for teacher training providers. It’s a good idea to select three choices; the more flexible you are, the more likely it is that you’ll secure a place.
+
+When choosing a course provider for your teacher training, it’s important to consider what will suit your individual circumstances. [Get advice on choosing a provider.](https://getintoteaching.education.gov.uk/blog/choosing-the-right-teacher-training-course-provider)
+
+## 7.	Write your personal statement
+
+Your teacher training personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment, and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it.
+
+It’s your opportunity to show your enthusiasm for teaching a particular subject. It’s also the place to say why you feel passionate about teaching either primary or secondary. [Read our advice on writing your teacher training personal statement.](https://getintoteaching.education.gov.uk/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement)
+
+## 8.	Arrange your references
+
+Your referees can tell training providers about your qualities and abilities, so it’s important they know you well. [Find out more about the requirements for references.](https://getintoteaching.education.gov.uk/tips-on-applying-for-teacher-training#choose-your-referees)
+
+## 9.	Complete your application
+
+You’re now ready to submit your application and [apply for teacher training.](https://www.gov.uk/apply-for-teacher-training)
+
+Your application will appear in your chosen providers’ inbox as soon as you click submit, but don’t expect an instant response. Wait for them to consider your application and set up an interview. This can take some time to organise.
+
+Be patient and do attend all of your interviews, if you have been offered them, before making any final decisions. [Get some top tips for interview success.](https://getintoteaching.education.gov.uk/blog/11-top-tips-for-interview-success)
+
+
+> If you're interested in enriching the lives of young people, find out more about how you can [become a teacher.](https://getintoteaching.education.gov.uk/steps-to-become-a-teacher)
