@@ -7,7 +7,7 @@ related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
 promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo
+    - content/train-to-be-a-teacher/promos/get-adviser-promo
 navigation: 20.10
 navigation_description: Train from anywhere in the world to get international qualified teacher status (iQTS), backed by England’s Department for Education.
 date: "2021-08-06"
