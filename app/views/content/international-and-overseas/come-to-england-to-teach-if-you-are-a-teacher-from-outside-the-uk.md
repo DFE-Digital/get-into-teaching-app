@@ -4,8 +4,8 @@ description: |-
   Come to England to teach if you're a qualified teacher from outside the UK
 related_content:
     Career progression stories: "/my-story-into-teaching/career-progression"
-    Salaries and benefits : "/salaries-and-benefits"
-    Online Q&A sessions : "/event-categories/online-q-as"
+    Salaries and benefits of teaching in England : "/salaries-and-benefits"
+    A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
 navigation: 20.20
@@ -13,15 +13,6 @@ navigation_description: Find out how you can bring your skills and perspective t
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
 backlink: "../../"
-right_column:
-  ctas:
-    - title: Online Q&As
-      text: |
-        Come to an online event where you can ask advice from our panel of
-        teaching experts about coming to teach in England.
-      link_text: "Sign up"
-      link_target: "/event-categories/online-q-as"
-      icon: "icon-calendar"
 keywords:
   - International
   - Overseas
