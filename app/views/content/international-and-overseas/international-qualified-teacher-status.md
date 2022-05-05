@@ -2,7 +2,7 @@
 title: International qualified teacher status (iQTS)
 description: |-
  International qualified teacher status (iQTS) is a new teaching qualification backed by England’s Department for Education (DfE). iQTS is equivalent to English qualified teacher status (QTS). You can train where you live and work.
- related_content:
+related_content:
     5 reasons to attend a Train to Teach event : "/blog/5-reasons-to-attend-a-train-to-teach-event"
     Funding your training : "/funding-your-training"
     Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
@@ -10,7 +10,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
     - content/train-to-be-a-teacher/promos/events-near-you
 navigation: 20.10
-navigation_description: Find out how you can get international qualified teacher status (iQTS).
+navigation_description: Train from anywhere in the world and gain international qualified teacher status (iQTS), a teaching qualification backed by England’s Department for Education (DfE).
 date: "2021-08-06"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../"
