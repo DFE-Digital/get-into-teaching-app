@@ -8,7 +8,7 @@ Learn more about [other routes to qualified teacher status (QTS) and teaching in
 
 If you already live in the UK, you should consider [applying for teacher training leading to QTS in England](/steps-to-become-a-teacher). 
 
-This guidance relates to teaching in England. Different rules apply to teaching in [Wales](https://www.ewc.wales/site/index.php/en/registration/practitioners-trained-outside-wales.html), [Scotland](https://teachinscotland.scot/become-a-teacher/qualified-outside-scotland/) and [Northern Ireland](https://gtcni.org.uk/registration/getting-registered).
+This guidance relates to teaching in England. Different rules apply to teaching in [Wales,](https://www.ewc.wales/site/index.php/en/registration/practitioners-trained-outside-wales.html) [Scotland](https://teachinscotland.scot/become-a-teacher/qualified-outside-scotland/) and [Northern Ireland](https://gtcni.org.uk/registration/getting-registered).
 
 ## Contact
 
