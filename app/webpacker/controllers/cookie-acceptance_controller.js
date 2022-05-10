@@ -23,8 +23,8 @@ export default class extends Controller {
     const cookiePrefs = new CookiePreferences();
     cookiePrefs.allowAll();
 
-    this.overlayTarget.classList.remove('visible');
     this.stopInterceptingTabKeydown();
+    this.overlayTarget.classList.remove('visible');
     this.resetFocus();
   }
 
@@ -37,22 +37,31 @@ export default class extends Controller {
     // focus then blur on the first link to prevent
     // the next element being tabbed to after accepting
     // being in the footer (which is where the cookie acceptance
-    // HTML is placed)
-    document.querySelector('a').focus();
-    document.querySelector('a').blur();
+    // HTML is placed). A small delay is required or Chromevox
+    // misses the re-focus and heads to the footer.
+    setTimeout(() => {
+      document.querySelector('a').focus();
+      document.querySelector('a').blur();
+    }, 150);
   }
 
   startInterceptingTabKeydown() {
     // by default these have a -1 tab index which
     // prevents the keydown event triggering on tab
-    this.agreeTarget.tabIndex = 1;
-    this.infoTarget.tabIndex = 2;
+    this.infoTarget.tabIndex = 1;
+    this.agreeTarget.tabIndex = 2;
     this.disagreeTarget.tabIndex = 3;
 
     this.keydownHandler = this.handleKeydown.bind(this);
     this.agreeTarget.addEventListener('keydown', this.keydownHandler);
     this.infoTarget.addEventListener('keydown', this.keydownHandler);
     this.disagreeTarget.addEventListener('keydown', this.keydownHandler);
+
+    // focus on info target to begin with; a small delay is required
+    // or Chromevox misses the focus call.
+    setTimeout(() => {
+      this.infoTarget.focus();
+    }, 150);
   }
 
   stopInterceptingTabKeydown() {
@@ -82,26 +91,26 @@ export default class extends Controller {
   focusOnNext(e) {
     switch (e.target) {
       case this.agreeTarget:
-        this.infoTarget.focus();
-        break;
-      case this.infoTarget:
         this.disagreeTarget.focus();
         break;
-      default:
+      case this.infoTarget:
         this.agreeTarget.focus();
+        break;
+      default:
+        this.infoTarget.focus();
     }
   }
 
   focusOnPrevious(e) {
     switch (e.target) {
       case this.agreeTarget:
-        this.disagreeTarget.focus();
-        break;
-      case this.disagreeTarget:
         this.infoTarget.focus();
         break;
-      default:
+      case this.disagreeTarget:
         this.agreeTarget.focus();
+        break;
+      default:
+        this.disagreeTarget.focus();
     }
   }
 
