@@ -23,7 +23,7 @@ Brooke Harvey is a Lead Practitioner of English at Bohunt School and part of Boh
  
 When I did my Master’s at Edinburgh, I fell in love with the culture and knew I’d regret it if I didn’t come back. 
  
-I met a Headteacher and BET Trust Leader at a careers fair – he’d come to Canada on a recruitment trip. It was important to me that I work for people whose leadership and values I respected. So it was great to be able to shake hands with the very people I’d be working for and make sure those values aligned.
+I met a Headteacher and Bohunt Education Trust Leader at a careers fair – he’d come to Canada on a recruitment trip. It was important to me that I work for people whose leadership and values I respected. So it was great to be able to shake hands with the very people I’d be working for and make sure those values aligned.
  
 It’s no small feat to move across the world, so I wanted to do it with as much consideration as possible.    
  
@@ -48,8 +48,10 @@ Being a foreigner and an outsider is an instant talking point. It’s like havin
 It’s then about creating an environment that people want to come to, even if it’s to just sit and talk about literature. The fact that we’re comfortable together means we can have strong and insightful conversations.
  
 I especially love any opportunity to go beyond the subject, to consider big ideas about the world with them.
-What have been the career benefits of teaching in England?
-It’s been amazing for me career-wise because it has given me the opportunity to explore and help shape another curriculum. I’m constantly comparing the different approaches in Canada and England. That perspective is unparalleled and another sort of perk of being an outsider. 
+
+## What have been the career benefits of teaching in England?
+
+It’s been amazing for me career wise because it has given me the opportunity to explore and help shape another curriculum. I’m constantly comparing the different approaches in Canada and England. That perspective is unparalleled and another sort of perk of being an outsider. 
  
 ## What advice would you give to other overseas teachers?
  
@@ -57,7 +59,7 @@ It’s been amazing for me career-wise because it has given me the opportunity t
  
 - You can love your school and love your class, but leadership shapes everything. Make sure you respect and trust the people who employ you.
  
-- If you’re arriving during school holidays, ask for the materials you’ll need to prep for the start of term. But also ask how to use the materials—the methods and teaching styles expected of you. 
+- If you’re arriving during school holidays, ask for the materials you’ll need to prep for the start of term. But also ask how to use the materials — the methods and teaching styles expected of you. 
  
 For more information about Bohunt Education Trust, you can [visit the Bohunt Education Trust website](https://www.bohunttrust.co.uk/). 
  
