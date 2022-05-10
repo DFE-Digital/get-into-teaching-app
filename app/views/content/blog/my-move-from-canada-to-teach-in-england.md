@@ -32,7 +32,9 @@ It’s no small feat to move across the world, so I wanted to do it with as much
 Life here took a lot of figuring out and I did that on my own initially. It was down to small details like setting up a bank account, getting around, the currency, and even which grocery store to go to.
  
 I began to grow roots here the more embedded I became in the wider school and Trust beyond my department. When I think about what truly made me feel a part of this place, it was the support network I developed with colleagues who inspire and challenge me.
-What has been the hardest thing about settling into teaching in England?
+
+## What has been the hardest thing about settling into teaching in England?
+
 When I first started, I wasn’t used to how here in England, the performance of the teacher is tied to the performance of the students. That felt quite jarring as it’s not so strongly tied in Canada.
  
 So much of what was difficult about settling in here was building up my self-confidence and trusting my abilities. It was a steep learning curve!
