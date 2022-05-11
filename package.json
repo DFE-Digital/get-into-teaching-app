@@ -36,6 +36,7 @@
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^5.2.0",
     "jest": "^28.1.0",
+    "jest-environment-jsdom": "^28.1.0",
     "prettier": "^2.6.1",
     "stylelint": "^14.8.1",
     "stylelint-config-gds": "^0.2.0",
