@@ -25,7 +25,7 @@ Please check participating iQTS training provider websites for more details abou
 
 ### What you can expect from your iQTS training provider
 
-Like other universities and colleges, individual iQTS training providers will vary in their approach to teaching iQTS. However, all have been checked to ensure their training programmes comply with [iQTS criteria](https://www.gov.uk/government/publications/international-qualified-teacher-status-criteria-for-providers) and enable trainees to meet [iQTS Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards). 
+Individual iQTS training providers will vary in their approach to delivering iQTS. However, all have been checked to ensure their training programmes comply with [iQTS criteria](https://www.gov.uk/government/publications/international-qualified-teacher-status-criteria-for-providers) and enable trainees to meet the [iQTS Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards). 
 
 In addition, all iQTS training providers offer:
 
