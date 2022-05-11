@@ -1,4 +1,4 @@
-Fees start at about £9,000 in total but will vary between training providers – check with participating iQTS training providers (listed in step 3) for more details.
+Fees start at about £9,000 in total but will vary between training providers – check with participating providers for more details (for a list, see '3. Apply to your chosen iQTS teacher training provider').
 
 If you are already employed in a school, you can discuss with your training provider whether you can continue working in that school while you complete your iQTS qualification.  
 
