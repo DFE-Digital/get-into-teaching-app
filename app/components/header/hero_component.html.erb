@@ -1,6 +1,6 @@
 <%= tag.div(class: classes) do %>
   <%= picture %>
-  <div class="hero__title">
+  <div class="hero__title <%= @title_bg_color %>">
     <h1><%= tag.span(title) %></h1>
   </div>
   <% if show_subtitle? %>

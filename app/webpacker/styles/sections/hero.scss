@@ -151,6 +151,10 @@ $mobile-cutoff: 800px;
   &__title {
     z-index: 20;
 
+    &.white h1 {
+      background-color: $white;
+    }
+
     h1 {
       background-color: $yellow-dark;
       padding: .8em .75em .8em 1.75em;
