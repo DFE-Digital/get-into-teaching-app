@@ -2,6 +2,8 @@
   position: relative;
   margin: 0;
   box-sizing: border-box;
+  list-style: none;
+  padding: 0;
 
   &:before {
     content: "";
@@ -14,6 +16,10 @@
     @include mq($until: tablet) {
       left: 27px;
     }
+  }
+
+  ul {
+    list-style: disc;
   }
 
   * {
