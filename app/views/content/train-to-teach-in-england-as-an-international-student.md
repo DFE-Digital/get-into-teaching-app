@@ -88,7 +88,7 @@ living costs, to train (depending on your immigration status, you may get a redu
 
 ## Apply for teacher training, step by step
 
-We can help you make a successful application. [Get support and advice](#2-get-support-and-advice) explains how.
+We can help you make a successful application. [Get support and advice](#get-support-and-advice) explains how.
 
 ## 1. Check your qualifications
 
@@ -161,13 +161,14 @@ You can search by location, teaching subject and age group. You can also search 
 
 If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa. 
 
+Due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
+
 ### Ways to train
 
 You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](#get-support-and-advice) for guidance on the different types of courses available, or see [Ways to train to teach in England](/ways-to-train).
 
 You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
 
-You can apply for a teacher training place without visiting the UK. However, due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
 
 <div class="inset">
   <h3>Already living in the UK?</h3>
