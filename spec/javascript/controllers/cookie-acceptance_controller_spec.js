@@ -64,39 +64,39 @@ describe('CookieAcceptanceController', () => {
     });
 
     it('updates the tab indexes', () => {
-      expect(acceptButton.tabIndex).toEqual(1)
-      expect(infoButton.tabIndex).toEqual(2)
+      expect(infoButton.tabIndex).toEqual(1)
+      expect(acceptButton.tabIndex).toEqual(2)
       expect(disagreeButton.tabIndex).toEqual(3)
     })
 
     describe('tabbing behaviour', () => {
       describe('when the accept button has focus', () => {
-        it('tabs to the info link and from the disagree button', () => {
+        it('tabs to the disagree button and from the info button', () => {
           acceptButton.dispatchEvent(new KeyboardEvent('keydown', { keyCode: 9 }));
-          expect(infoButton).toEqual(document.activeElement);
+          expect(disagreeButton).toEqual(document.activeElement);
 
           acceptButton.dispatchEvent(new KeyboardEvent('keydown', { keyCode: 9, shiftKey: true }));
-          expect(disagreeButton).toEqual(document.activeElement);
+          expect(infoButton).toEqual(document.activeElement);
         })
       });
 
       describe('when the info link has focus', () => {
-        it('tabs to the disagree button and from the agree button', () => {
+        it('tabs to the agree button and from the disagree button', () => {
           infoButton.dispatchEvent(new KeyboardEvent('keydown', { keyCode: 9 }));
-          expect(disagreeButton).toEqual(document.activeElement);
+          expect(acceptButton).toEqual(document.activeElement);
 
           infoButton.dispatchEvent(new KeyboardEvent('keydown', { keyCode: 9, shiftKey: true }));
-          expect(acceptButton).toEqual(document.activeElement);
+          expect(disagreeButton).toEqual(document.activeElement);
         })
       });
 
       describe('when the disagree link has focus', () => {
-        it('tabs to the accept button and from the info button', () => {
+        it('tabs to the info button and from the agree button', () => {
           disagreeButton.dispatchEvent(new KeyboardEvent('keydown', { keyCode: 9 }));
-          expect(acceptButton).toEqual(document.activeElement);
+          expect(infoButton).toEqual(document.activeElement);
 
           disagreeButton.dispatchEvent(new KeyboardEvent('keydown', { keyCode: 9, shiftKey: true }));
-          expect(infoButton).toEqual(document.activeElement);
+          expect(acceptButton).toEqual(document.activeElement);
         })
       });
     });
