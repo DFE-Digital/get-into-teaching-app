@@ -49,7 +49,7 @@ You can get advice about your qualifications by [chatting to a teacher training 
 
 If you haven’t had any experience of working with children, think about any transferable skills you have gained which could be used in a classroom, such as communication, organisation and time management. You might have organised seminars or delivered training sessions, or you might have qualifications that could be used in an educational setting.
 
-Whilst school experience isn’t compulsory, it’s a good idea to visit a school, if only to confirm that you are making the right career choice. Use our [Get School Experience service](https://schoolexperience.education.gov.uk/) to find details of upcoming opportunities in your area.
+Whilst school experience isn’t compulsory, it’s a good idea to visit a school, if only to confirm that you are making the right career choice. You can [search for and request school experience](https://schoolexperience.education.gov.uk/) to find details of upcoming opportunities in your area.
 
 ## 3.	Get a teacher training adviser
 
