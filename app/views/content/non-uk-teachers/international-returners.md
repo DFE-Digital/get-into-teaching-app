@@ -62,8 +62,8 @@ perspective.
 If you're thinking about coming home to teach, we want to help.
 
 If you are a non-UK citizen interested in teaching or training to teach in
-England, please read our [guidance for international teachers](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) or
-[guidance for international trainees](/train-to-teach-in-england-as-an-international-student). 
+England, please read our [guidance for international teachers](/non-uk-teachers/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) or
+[guidance for international trainees](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). 
 
 ## Return to teaching success stories
 
