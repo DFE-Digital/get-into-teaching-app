@@ -65,7 +65,7 @@ Our free events are the perfect opportunity to find out more about teacher train
 
 ## 5.	Explore your funding options
 
-There are plenty of funding options available to support you during your teacher training year. You can access Tuition Fee and Maintenance Loans regardless of whether or not you have an existing student loan and you will only begin to repay these once you’re earning more than £27,295.
+There are plenty of funding options available to support you during your teacher training year. You can access tuition fee and maintenance loans regardless of whether or not you have an existing student loan and you will only begin to repay these once you’re earning more than £27,295.
 
 Extra financial support is available if you’re a parent, have an adult dependant or a disability. This support does not need to be paid back.
 
