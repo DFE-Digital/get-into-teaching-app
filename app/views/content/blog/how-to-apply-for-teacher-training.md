@@ -85,7 +85,9 @@ It’s your opportunity to show your enthusiasm for teaching a particular subjec
 
 ## 8.	Arrange your references
 
-Your referees can tell training providers about your qualities and abilities, so it’s important they know you well. [Find out more about the requirements for references.](/tips-on-applying-for-teacher-training#choose-your-referees)
+Your referees can tell training providers about your qualities and abilities, so it’s important they know you well.
+
+[Find out more about the requirements for references.](/tips-on-applying-for-teacher-training#choose-your-referees)
 
 ## 9.	Complete your application
 
