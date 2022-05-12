@@ -59,7 +59,9 @@ Teacher training advisers provide free, one-to-one support wherever you are in y
 
 ## 4.	Attend a teacher training event
 
-Our free events are the perfect opportunity to find out more about teacher training. Chat to teachers, training providers and expert advisers, and get answers to all of your questions. [Find an event.](/events)
+Our free events are the perfect opportunity to find out more about teacher training. Chat to teachers, training providers and expert advisers, and get answers to all of your questions. 
+
+[Find an event.](/events)
 
 ## 5.	Explore your funding options
 
