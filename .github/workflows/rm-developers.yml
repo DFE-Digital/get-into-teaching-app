@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
           Production
-          
+
     steps:
       - uses: Azure/login@v1
         with:
@@ -22,8 +22,6 @@ jobs:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
           key: PAAS-USERNAME, PAAS-PASSWORD, SLACK-WEBHOOK,  PAAS-USER-WHITELIST, PAAS-SPACE
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - uses: DFE-Digital/github-actions/setup-cf-cli@master
         with:

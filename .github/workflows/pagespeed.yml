@@ -19,8 +19,6 @@ jobs:
         keyvault: ${{ secrets.KEY_VAULT}}
         secret: INFRA-KEYS
         key: HTTP-USERNAME, HTTP-PASSWORD
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
     - name: Run Page Speed Tas
       uses: fjogeleit/http-request-action@master

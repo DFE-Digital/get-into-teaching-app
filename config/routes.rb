@@ -83,6 +83,7 @@ Rails.application.routes.draw do
   resources "events", path: "/events", only: %i[index show search] do
     collection do
       get "search"
+      post "search", to: "events#perform_search"
     end
     resources "steps",
               path: "/apply",
@@ -115,7 +116,7 @@ Rails.application.routes.draw do
 
   resources :event_categories, only: %i[show], path: "event-categories" do
     member do
-      get "archive", to: "event_categories#show_archive"
+      post "", to: "event_categories#create"
     end
   end
   # The event category pages used to exist here - once we're sure no traffic is

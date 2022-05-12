@@ -19,7 +19,7 @@ describe "teaching events", type: :request do
 
     context "when searching" do
       subject do
-        params = { postcode: "KY11 9YU", distance: 20, online: false }
+        params = { postcode: Encryptor.encrypt("KY11 9YU"), distance: 20, online: false }
         get teaching_events_path(params: { teaching_events_search: params })
         response
       end

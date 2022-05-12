@@ -31,6 +31,6 @@ You do not need a degree to start teaching in further education.
 
 To find out more, visit the [teach in further education website](https://www.teach-in-further-education.campaign.gov.uk/).
 
-You can also speak to an adviser on [0800 389 2502](tel:0800 389 2502). Lines are open Monday to Saturday between 8:30am and 5:30pm.
+You can also speak to an adviser on [0800 389 2502](tel:0800 389 2502). Lines are open Monday to Friday between 8:30am and 5:30pm.
 
 Or you can email teach.fe@education.gov.uk.

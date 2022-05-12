@@ -44,6 +44,8 @@ gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
 
+gem "hashids"
+
 gem "dotenv-rails", ">= 2.7.6"
 
 gem "govuk_design_system_formbuilder", ">= 2.8.0"
@@ -64,7 +66,7 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 2.53.0"
+gem "view_component", "~> 2.54.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -100,7 +102,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 4.3.0"
 
   # Static security scanner
-  gem "brakeman", "~> 5.2.2", require: false
+  gem "brakeman", "~> 5.2.3", require: false
 
   # Debugging
   gem "pry-byebug"
@@ -111,7 +113,7 @@ group :development, :test do
   gem "rspec-rails", "~> 5.1.2"
 
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.36", ">= 3.36.0"
+  gem "capybara", "~> 3.37"
   gem "factory_bot_rails", ">= 6.2.0"
   # See: https://github.com/otherguy/rspec-sonarqube-formatter/pull/63
   gem "rspec-sonarqube-formatter", github: "otherguy/rspec-sonarqube-formatter", ref: "13fe436", require: false

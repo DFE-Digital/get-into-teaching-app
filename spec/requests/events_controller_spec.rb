@@ -63,6 +63,7 @@ describe EventsController, type: :request do
       let(:search_params) do
         attributes_for(
           :events_search,
+          :with_encrypted_postcode,
           type: event_type,
           month: search_month,
           distance: "",
