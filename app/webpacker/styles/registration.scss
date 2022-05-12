@@ -3,6 +3,11 @@
     margin-top: 2em;
   }
 
+  h1.completed {
+    @include font-size("medium");
+    @extend h2, .green;
+  }
+
   .registration__event,
   .registration__mailing-list,
   .registration__callback {
