@@ -73,7 +73,7 @@ The key to managing financially during your training year is careful planning an
 
 ## 6.	Find the right training course for you
 
-Use [Find postgraduate teacher training](https://www.find-postgraduate-teacher-training.service.gov.uk/) to search available courses in England. You’ll be able to search by location, training provider and subject. When you apply, you have three choices for teacher training providers. It’s a good idea to select three choices; the more flexible you are, the more likely it is that you’ll secure a place.
+[Find postgraduate teacher training](https://www.find-postgraduate-teacher-training.service.gov.uk/) courses in England. You’ll be able to search by location, training provider and subject. When you apply, you have three choices for teacher training providers. It’s a good idea to select three choices; the more flexible you are, the more likely it is that you’ll secure a place.
 
 When choosing a course provider for your teacher training, it’s important to consider what will suit your individual circumstances. [Get advice on choosing a provider.](/blog/choosing-the-right-teacher-training-course-provider)
 
