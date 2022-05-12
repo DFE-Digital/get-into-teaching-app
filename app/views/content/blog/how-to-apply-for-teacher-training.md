@@ -53,7 +53,9 @@ Whilst school experience isn’t compulsory, it’s a good idea to visit a schoo
 
 ## 3.	Get a teacher training adviser
 
-Teacher training advisers provide free, one-to-one support wherever you are in your journey into teaching. Whether it's just an idea, or you're looking to get back into the classroom, you could get help with things like finding school experience, choosing the right course for you, funding, and writing a successful application. [Get an adviser.](https://adviser-getintoteaching.education.gov.uk/)
+Teacher training advisers provide free, one-to-one support wherever you are in your journey into teaching. Whether it's just an idea, or you're looking to get back into the classroom, you could get help with things like finding school experience, choosing the right course for you, funding, and writing a successful application.
+
+[Get a teacher training adviser.](https://adviser-getintoteaching.education.gov.uk/)
 
 ## 4.	Attend a teacher training event
 
