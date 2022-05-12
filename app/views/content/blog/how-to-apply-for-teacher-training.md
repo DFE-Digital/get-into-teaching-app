@@ -97,5 +97,7 @@ You’re now ready to submit your application and [apply for teacher training.](
 
 Your application will appear in your chosen providers’ inbox as soon as you click submit, but don’t expect an instant response. Wait for them to consider your application and set up an interview. This can take some time to organise.
 
-Be patient and do attend all of your interviews, if you have been offered them, before making any final decisions. [Get some top tips for interview success.](/blog/11-top-tips-for-interview-success)
+Be patient and do attend all of your interviews, if you have been offered them, before making any final decisions.
+
+[Get some top tips for interview success.](/blog/11-top-tips-for-interview-success)
 
