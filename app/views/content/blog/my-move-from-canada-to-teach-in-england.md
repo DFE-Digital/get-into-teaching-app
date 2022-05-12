@@ -13,7 +13,7 @@ keywords:
   - classroom
 tags:
   - life as a teacher
-  - international and overseas
+  - international
 ---
  
 $brooke-harvey$
