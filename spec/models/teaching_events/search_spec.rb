@@ -10,6 +10,12 @@ describe TeachingEvents::Search do
     it { is_expected.to respond_to(:distance) }
   end
 
+  describe ".encrypted_attributes" do
+    subject { described_class.encrypted_attributes }
+
+    it { is_expected.to eq(%w[postcode]) }
+  end
+
   describe "validation" do
     describe "postcode" do
       describe "before_validation" do
