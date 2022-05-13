@@ -2,7 +2,7 @@
 title: "Scholarships and bursaries"
 heading: "Scholarships and bursaries"
 description: |-
-    If you are disabled there is financial and practical support available to help you train.
+   There is extra funding available for some subject areas, find out if you are eligible.
 related_content:
     Who do you want to teach?  : "/blog/choosing-the-right-teacher-training-course-provider"
     Overcoming challenges to become a teacher: hearing impairment : "/train-to-be-a-teacher/get-school-experience"
@@ -11,7 +11,7 @@ promo_content:
     -
     -
 navigation: 20.10
-navigation_description: If you are disabled there is financial and practical support available to help you train.
+navigation_description: There is extra funding available for some subject areas, find out if you are eligible.
 ---
 
 
