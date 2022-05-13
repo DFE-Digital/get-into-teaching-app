@@ -140,7 +140,7 @@ $q-helen-returner$
 
 The [Early Career Framework resources](https://support-for-early-career-teachers.education.gov.uk/) help early career teachers (ECTs) with their learning and development. They're accredited by the Department for Education (DfE).
 
-Returning teachers can use these resources to support them in their journey back to the classroom. Find material to help refresh your knowledge on behaviour management, using assessments, and adapting lessons to meet pupils’ needs.
+Returning teachers can also use these online resources to support them in their journey back into the classroom. Find material to refresh your knowledge on behaviour management, pedagogy, curriculum, assessment and professional behaviours.
 
 ## If you've been out of teaching for a while
 
