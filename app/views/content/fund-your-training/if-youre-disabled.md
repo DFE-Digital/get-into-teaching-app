@@ -1,6 +1,6 @@
 ---
 title: "If you're disabled"
-heading: "If you're disbale"
+heading: "If you're disabled"
 description: |-
     If you are disabled there is financial and practical support available to help you train.
 related_content:
