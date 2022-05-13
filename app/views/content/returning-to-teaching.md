@@ -136,9 +136,9 @@ $q-helen-returner$
 
 [Read Helen's top tips for returning teachers](/my-story-into-teaching/returners/top-tips-for-returning-teachers).
 
-## Use the Early Career Framework (ECF)
+## Use the early career framework (ECF)
 
-The [Early Career Framework resources](https://support-for-early-career-teachers.education.gov.uk/) help early career teachers (ECTs) with their learning and development. They're accredited by the Department for Education (DfE).
+The [early career framework resources](https://support-for-early-career-teachers.education.gov.uk/) help early career teachers (ECTs) with their learning and development. They're accredited by the Department for Education (DfE).
 
 Returning teachers can also use these online resources to support them in their journey back into the classroom. Find material to refresh your knowledge on behaviour management, pedagogy, curriculum, assessment and professional behaviours.
 
