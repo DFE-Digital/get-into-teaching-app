@@ -12,7 +12,7 @@ layout: "layouts/category"
 content:
     - content/non-uk-teachers/questions
     - content/non-uk-teachers/why-teach
-image: "media/images/content/hero-images/0008.jpg"
+image: "media/images/content/hero-images/0023.jpg"
 ---
 
 
