@@ -170,7 +170,7 @@ Due to rules about immigration, not all providers can accept international appli
 
 ### Ways to train
 
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](#get-help-and-advice) for guidance on the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](/teacher-training-advisers) for guidance on the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
 
 You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
 
