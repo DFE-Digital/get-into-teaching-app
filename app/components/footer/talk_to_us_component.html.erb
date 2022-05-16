@@ -8,12 +8,12 @@
             <div class="options">
               <% unless helpers.privacy_page?(request.path) %>
               <div class="live-chat">
-                <p>Live chat</p>
+                <h3>Live chat</h3>
                 <%= render ChatComponent.new %>
               </div>
               <% end %>
               <div>
-                <p>Call us</p>
+                <h3>Call us</h3>
                 <p class="telephone">0800 389 2500</p>
               </div>
             </div>
