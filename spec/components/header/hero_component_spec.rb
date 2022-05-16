@@ -18,6 +18,20 @@ describe Header::HeroComponent, type: "component" do
   let(:component) { described_class.new(front_matter) }
 
   describe "rendering a hero section" do
+    describe "background" do
+      specify "renders with a grey background" do
+        expect(page).to have_css(".hero.grey")
+      end
+
+      context "when the hero background is overriden" do
+        let(:extra_front_matter) { { "hero_bg_color" => "white" } }
+
+        specify "renders the hero with the color class" do
+          expect(page).to have_css(".hero.white")
+        end
+      end
+    end
+
     describe "title and subtitle" do
       specify "renders the title in a h1 element with a yellow background" do
         expect(page).to have_css(".hero__title.yellow > h1", text: front_matter["title"])
