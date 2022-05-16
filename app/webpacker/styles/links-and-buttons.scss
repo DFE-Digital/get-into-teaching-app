@@ -96,7 +96,7 @@ a {
   }
 }
 
-// passes accessibility contrast check on grey background
+// passes accessibility contrast check on grey/yellow background
 @mixin dark-link {
   color: $blue-very-dark;
 }
