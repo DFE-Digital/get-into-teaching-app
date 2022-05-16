@@ -63,7 +63,7 @@ You can also find specialised teacher training programmes if you're [changing ca
 
 Not looking to teach in primary or secondary settings? Consider teaching [early years](/early-years-teaching-training) or [further education](/become-a-further-education-teacher).
 
-If you're from outside the UK, find out how you can [come to England to teach](/teach-in-england-if-you-trained-overseas).
+If you're from outside the UK, find out how you can [come to England to teach](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ## If you have a degree
 
