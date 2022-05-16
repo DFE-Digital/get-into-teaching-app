@@ -1,7 +1,7 @@
 ---
-title: "Come to England to teach if you're a teacher from outside the UK"
+title: "Teach in England if you trained overseas"
 description: |-
-  Come to England to teach if you're a qualified teacher from outside the UK
+  Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
 related_content:
     Career progression stories: "/my-story-into-teaching/career-progression"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
@@ -9,7 +9,8 @@ related_content:
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
 navigation: 20.20
-navigation_description: Find out how you can bring your skills and perspective to an English classroom, working as part of a world class education system.
+navigation_title: Teach in England if you trained overseas
+navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from outside the UK.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
 backlink: "../../"

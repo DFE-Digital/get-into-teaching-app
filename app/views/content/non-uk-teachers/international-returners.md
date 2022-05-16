@@ -1,10 +1,9 @@
 ---
-title: Return to teaching from overseas
+title: Return to England after teaching overseas
 image: "media/images/content/hero-images/0014.jpg"
 backlink: "../../"
 description: |-
-  Return to England to teach with the help of a teacher training adviser.
-  Courses and events are available to help make your transition easier.
+  Return to England after teaching overseas and bring your skills and experience back to an English classroom. Get support to make your transition easier.
 related_content:
     Returning to teaching with international experience : "/my-story-into-teaching/international-career-changers/returning-to-teaching-with-international-experience"
     Returning from teaching abroad : "/my-story-into-teaching/international-career-changers/returning-to-teaching-with-support-from-an-adviser"
@@ -12,6 +11,7 @@ related_content:
 promo_content:
     - content/train-to-be-a-teacher/promos/learn-adviser-promo
 navigation: 20.15
+navigation_title: Return to England after teaching overseas
 navigation_description: Bring your international skills and experience back to an English classroom and return to teach in England.
 date: "2020-04-07"
 accordion:
