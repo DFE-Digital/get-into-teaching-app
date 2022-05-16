@@ -6,8 +6,4 @@
 #   - /events
 #   - /
 
-paths:
-  - /test/a
-  - /test/b
-  - /events
-  - /teaching-events
+paths: []
