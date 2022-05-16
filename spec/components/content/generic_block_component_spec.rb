@@ -15,7 +15,7 @@ describe Content::GenericBlockComponent, type: "component" do
   let(:icon_size) { "30x50" }
 
   it { is_expected.to have_css("div.#{custom_class}") }
-  it { is_expected.to have_css("h3", text: title) }
+  it { is_expected.to have_css("h2", text: title) }
   it { is_expected.to have_content(content) }
   it { is_expected.to have_css(%(img[width="30"])) }
   it { is_expected.to have_css(%(img[height="50"])) }
