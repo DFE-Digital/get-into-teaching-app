@@ -148,6 +148,14 @@ $mobile-cutoff: 800px;
   background-color: $grey;
   overflow: hidden;
 
+  &.white {
+    background-color: $white;
+  }
+
+  &.yellow {
+    background-color: $yellow-dark;
+  }
+
   &__title {
     z-index: 20;
 

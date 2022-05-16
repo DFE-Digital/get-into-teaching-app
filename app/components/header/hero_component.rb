@@ -1,6 +1,6 @@
 module Header
   class HeroComponent < ViewComponent::Base
-    attr_accessor :title, :subtitle, :image, :show_mailing_list, :paragraph, :title_bg_color
+    attr_accessor :title, :subtitle, :image, :show_mailing_list, :paragraph, :title_bg_color, :hero_bg_color
 
     def initialize(front_matter)
       return if front_matter.blank?
@@ -15,11 +15,12 @@ module Header
         @image           = fm["image"]
         @paragraph       = fm["title_paragraph"]
         @title_bg_color  = fm["title_bg_color"] || "yellow"
+        @hero_bg_color = fm["hero_bg_color"] || "grey"
       end
     end
 
     def classes
-      %w[hero]
+      %w[hero] + [hero_bg_color]
     end
 
     def render?
