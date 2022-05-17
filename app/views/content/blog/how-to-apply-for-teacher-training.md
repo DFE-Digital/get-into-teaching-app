@@ -1,7 +1,7 @@
 ---
 title: How to apply for teacher training
 subtitle: A step-by-step-guide
-date: "2022-05-13"
+date: "2022-05-17"
 images:
   header_image:
     path: "media/images/content/blog/applying-for-teacher.jpg"
@@ -41,7 +41,7 @@ Although different training providers may have specific recruitment criteria, th
 
 You may be able to show you meet the standard in another way if you do not have GCSEs.
 
-If you’re applying for teacher training as an international candidate, [find out more about overseas qualifications.](/train-to-teach-in-england-as-an-international-student).
+If you’re applying for teacher training as an international candidate, [find out more about overseas qualifications](/train-to-teach-in-england-as-an-international-student).
 
 You can get advice about your qualifications by [chatting to a teacher training adviser.](/teacher-training-advisers)
 
