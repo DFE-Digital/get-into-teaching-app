@@ -71,7 +71,9 @@ Extra financial support is available if you’re a parent, have an adult dependa
 
 And for some subjects, you may qualify for a tax-free bursary or scholarship.
 
-The key to managing financially during your training year is careful planning and preparation. Our [expert advisers](https://adviser-getintoteaching.education.gov.uk/) can help you make a plan and find the best funding options for your circumstances. [Explore your funding options.](/funding-your-training)
+The key to managing financially during your training year is careful planning and preparation. Our [expert advisers](https://adviser-getintoteaching.education.gov.uk/) can help you make a plan and find the best funding options for your circumstances.
+
+[Explore your funding options.](/funding-your-training)
 
 ## 6.	Find the right training course for you
 
@@ -85,7 +87,9 @@ When choosing a course provider for your teacher training, it’s important to c
 
 Your teacher training personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment, and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it.
 
-It’s your opportunity to show your enthusiasm for teaching a particular subject. It’s also the place to say why you feel passionate about teaching either primary or secondary. [Read our advice on writing your teacher training personal statement.](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement)
+It’s your opportunity to show your enthusiasm for teaching a particular subject. It’s also the place to say why you feel passionate about teaching either primary or secondary.
+
+[Read our advice on writing your teacher training personal statement.](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement)
 
 ## 8.	Arrange your references
 
