@@ -7,7 +7,8 @@ title_paragraph: |-
     If you’ve just graduated, you're studying for a degree or you want to change
     your career, we can help you understand what training you need to do to get
     qualified teacher status (QTS).
-hero_bg_color: white
+title_bg_color: white
+hero_bg_color: yellow
 navigation: 20
 navigation_title: Train to be a teacher
 navigation_path: "/train-to-be-a-teacher"
