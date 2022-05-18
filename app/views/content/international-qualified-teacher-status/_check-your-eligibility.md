@@ -18,7 +18,7 @@ If you’re not sure of the status of your degree in England, or whether your ma
 
 To show you meet the required standard in the English language, you’ll need one of the following:
 
-* an [IELTS](https://www.ielts.org/) score of 6.5 or higher
+* an [International English Language Testing System (IELTS)](https://www.ielts.org/) score of 6.5 or higher
 
 * the equivalent score in another English language testing system
 
