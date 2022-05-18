@@ -4,7 +4,7 @@ Learn more about [iQTS policy](https://www.gov.uk/government/publications/intern
 
 Learn more about [other routes to qualified teacher status (QTS) and teaching in England](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk#apply-to-the-teaching-regulation-agency-tra).
 
-[Come to England to teach if you're a teacher from outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) gives information and advice to international teachers who’d like to teach in England.
+[Find help and guidance for international teachers who'd like to teach in England.](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk)
 
 If you already live in the UK, you should consider [applying for teacher training leading to QTS in England](/steps-to-become-a-teacher). 
 
@@ -14,11 +14,11 @@ This guidance relates to teaching in England. Different rules apply to teaching 
 
 To get advice about iQTS, you can:
 
-• call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8.30am and 5.30pm, Greenwich Mean Time (GMT)
+• call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8:30am and 5:30pm (UK local time)
 
 • use the live chat service at the bottom of this page
 
-• sign up to [Get an adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
+• sign up to [get an adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
 
 • email us on iqts.pilot@education.gov.uk
 

@@ -50,9 +50,9 @@ If you're living in England, you should [apply for teacher training in England](
 
 iQTS is for you if you live outside the UK and you:
  
-* have no previous teaching qualifications or experience, and would like to gain a professional teaching qualification leading to automatic [QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts)
+* have no previous teaching qualifications or experience, and would like to gain a professional teaching qualification leading to automatic [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts)
 
-* have some experience teaching, and would benefit from training and mentoring for a professional teaching qualification leading to automatic [QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts)
+* have some experience teaching, and would benefit from training and mentoring for a professional teaching qualification leading to automatic [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts)
 
 * are already a teacher, and wish to develop professionally and enhance your global employability with an internationally recognised teaching qualification
 

@@ -4,7 +4,7 @@ iQTS leads to the automatic award of [qualified teacher status (QTS)](https://ww
 
 ### Apply for your teaching job and visa
 
-You can apply for teaching jobs in England using the [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service.
+You can [apply for teaching jobs in England](https://teaching-vacancies.service.gov.uk/) using a free, UK government-backed service.
 
 You'll also need a visa or immigration status allowing you to work in England. You can use this UK government tool to [check if you need a visa](https://www.gov.uk/check-uk-visa). 
 
