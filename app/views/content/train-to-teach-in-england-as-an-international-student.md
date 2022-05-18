@@ -50,9 +50,9 @@ keywords:
   - Comparability
 ---
 
-This page explains how international candidates can train to teach in England. It applies to citizens from all countries outside the UK.
+Non-UK citizens can train to teach in England. This step by step guide explains how citizens from all countries outside the UK can apply for teacher training.
 
-Already a qualified teacher? Please visit [Come to England to teach if you're a teacher from outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
+If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK.](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
 
 ## Why train to teach in England?
 
@@ -60,35 +60,40 @@ Teacher training in England is practical, hands-on and supportive. As an interna
 
 When you have successfully completed your training, you will be awarded [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS), a professional qualification valued globally.
 
-QTS will allow you to teach in all schools in England. Some courses combine QTS with a postgraduate certificate in education ([PGCE](/what-is-a-pgce)) or a postgraduate diploma in education ([PGDE](/what-is-a-pgce)) – these are optional.
+QTS will allow you to teach in all schools in England. Some courses combine QTS with a [postgraduate certificate in education (PGCE)](/what-is-a-pgce) or a [postgraduate diploma in education (PGDE)](/what-is-a-pgce) – these are optional.
 
-Visit [My story into teaching](/my-story-into-teaching) to learn more about the rewards of training to teach in England.
+[Read teachers' stories about the rewards of training to teach in England](/my-story-into-teaching).
 
 ## Other ways to train
 
 You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
-Don’t want to come to England to study? You can apply to train for international qualified teacher status (iQTS), which meets the same high standards as English qualified teacher status [(QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and leads to the automatic award of QTS. [Learn more about iQTS.](/international-qualified-teacher-status).
+Don’t want to come to England to study? You can apply to train for international qualified teacher status (iQTS), which meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and leads to the automatic award of QTS. [Learn more about iQTS.](/international-qualified-teacher-status)
 
 For teachers who qualified outside the UK, as well as those with teaching experience, [other routes to qualified teacher status (QTS)](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) are also open.
 
 ## Need to know
 
-* International candidates can expect to pay between £12,000 and £22,000, plus
+When you plan your training, bear in mind that:
+
+* international candidates can expect to pay between £12,000 and £22,000, plus
 living costs, to train (depending on your immigration status, you may get a reduction in fees and some financial support)
-* You'll earn at least £25,000 a year, and £32,000 in London, when you qualify as a teacher
-* You can update, extend or switch your visa to live and work in the UK long-term
+* training lasts one 1 academic year full-time, or longer part-time
+* you can apply for paid teaching jobs as soon as you successfully complete your training
+* you'll earn at least £25,000 a year, and £32,000 in London, when you qualify as a teacher
+* you can update, extend or switch your visa to live and work in the UK long-term
 
 ## Application timeline
 
+Dates for your diary include:
+
 * 21 September 2022: deadline to apply for courses starting in autumn 2022 – it's best to apply as soon as you can
 * 12 October 2022: applications open for courses starting in autumn 2023
-* Training lasts one 1 academic year full-time, or longer part-time
-* You can apply for paid teaching jobs as soon as you successfully complete your training
+
 
 ## Apply for teacher training, step by step
 
-We can help you make a successful application. [Get support and advice](#get-support-and-advice) explains how.
+[We can help you make a successful application.](#get-support-and-advice) 
 
 ## 1. Check your qualifications
 
@@ -99,7 +104,7 @@ To teach children aged 11 to 18 in secondary school, you’ll need:
 
 To teach children aged 3 to 11 in primary school, you will also need to meet a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 
-A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. [We can help you](#get-support-and-advice) show your English, maths and science qualifications are the same standard as a grade 4 GCSE.
+A GCSE is an academic qualification awarded for exams in England, usually taken at age 16. [We can help you show your English, maths and science qualifications are the same standard as a grade 4 GCSE](#get-support-and-advice).
 
 If you do not have qualifications that are equivalent to GCSEs, you may be able to sit a test set by training providers to show your knowledge of English, maths and science. [You can contact us for advice about this](#get-support-and-advice).
 
@@ -113,9 +118,9 @@ Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.
 
 To get advice about training to teach, you can:
 
-* call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8.30am and 5.30pm, Greenwich Mean Time
+* call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8:30am and 5:30pm (UK local time)
 * use the live chat service at the bottom of this page
-* sign up to [Get an adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
+* sign up to [get an adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
 
 ### Get help with international qualifications
 
@@ -157,7 +162,7 @@ Any financial support, for example a reduction in your fees to the rate paid by 
 
 ## 4. Search and apply for teacher training courses
 
-[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists courses in England leading to [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS).
+You can [find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in England leading to [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS).
 
 You can search by location, teaching subject and age group. You can also search for courses which pay a salary, and courses where student or skilled worker visa sponsorship is available.
 
@@ -167,9 +172,7 @@ Due to rules about immigration, not all providers can accept international appli
 
 ### Ways to train
 
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). Contact your [Get into teaching adviser](/teacher-training-advisers) for guidance on the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
-
-You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). [Talk to an adviser](/teacher-training-advisers) about the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
 
 You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
 
@@ -206,7 +209,7 @@ As part of the application process, your training provider will confirm you’re
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa). 
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk). 
 
-Get into Teaching advisers will not be able to answer specific questions about visas and immigration related to your personal circumstances.
+Teaching advisers will not be able to answer specific questions about visas and immigration related to your personal circumstances.
 
 <div class="inset">
   <h3>Already living in the UK?</h3>
@@ -215,9 +218,9 @@ Get into Teaching advisers will not be able to answer specific questions about v
   <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
   you will not need a visa to train to teach in the UK.</p>
 
-  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">Some people can still apply for settled or pre-settled status – check your eligibility</a></p>
+  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">Some people can still apply for settled or pre-settled status – check your eligibility.</a></p>
 
-  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">If you are currently studying in the UK on a student visa, you may be able to apply for a graduate visa</a></p>
+  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">If you are currently studying in the UK on a student visa, you may be able to apply for a graduate visa.</a></p>
 </div>
 
 If you don’t already have an immigration status allowing you to train to teach in the UK, you’ll need to apply for a [student visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa). You can do this once you have a confirmed offer of a training place from a training provider who can sponsor student visas. 
@@ -237,7 +240,7 @@ Your teacher training provider may also be able to help you plan your move to th
 
 ## 7. Complete your teacher training and gain qualified teacher status (QTS)
 
-If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
 
 You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
 
@@ -258,11 +261,11 @@ When you have qualified teacher status, you will be able to apply for paid teach
 
 [Read interviews with real teachers](/my-story-into-teaching)
 
-Visit the following websites for more about English education:
+Learn more about English education on the following webpages and websites:
 
-* [Types of English school](https://www.gov.uk/types-of-school)
-* [Curriculum and qualifications](https://www.gov.uk/national-curriculum)
-* [Behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
+* [types of English school](https://www.gov.uk/types-of-school)
+* [curriculum and qualifications](https://www.gov.uk/national-curriculum)
+* [behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
 * [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
 * [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/about) – a charity gathering international evidence on teaching 5 to 16-year-olds
 * [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
