@@ -1,9 +1,9 @@
 <% @hide_page_helpful_question = true %>
 
 <section class="text-content">
-  <h2 class="green">Sign up complete</h2>
+  <h1 class="completed">Sign up complete</h2>
 
-  <%= tag.h3("You are signed up for #{@event.name}.") %>
+  <%= tag.h2("You are signed up for #{@event.name}.") %>
 
   <p><%= format_event_date @event, stacked: false %></p>
 
@@ -13,7 +13,7 @@
     <p>You're ready to receive email updates to help you get into teaching.</p>
   <%- end -%>
 
-  <h3>What happens next?</h3>
+  <h2>What happens next?</h3>
   <p>
     You will receive a confirmation email with details of the event. If there
     is an issue with the event we will contact you via phone.

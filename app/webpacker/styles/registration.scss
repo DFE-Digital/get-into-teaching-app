@@ -3,6 +3,24 @@
     margin-top: 2em;
   }
 
+  h1.completed {
+    @include font-size("medium");
+    @extend h2, .green;
+  }
+
+  .text-content h2 {
+    color: $black;
+    background-color: transparent;
+    display: block;
+    padding: 0;
+    @include font-size("medium");
+  }
+
+  #event_survey h2 {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .registration__event,
   .registration__mailing-list,
   .registration__callback {
