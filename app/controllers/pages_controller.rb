@@ -7,7 +7,11 @@ class PagesController < ApplicationController
   ].freeze
 
   PAGE_TEMPLATE_FILTER = %r{\A[a-zA-Z0-9][a-zA-Z0-9_\-/]*(\.[a-zA-Z]+)?\z}
-  DYNAMIC_PAGE_PATHS = ["/test/a", "/test/b"].freeze
+  DYNAMIC_PAGE_PATHS = [
+    "/train-to-be-a-teacher/if-you-have-a-degree", # Contains a form
+    "/train-to-be-a-teacher/if-you-dont-have-a-degree", # Contains a form
+    "/train-to-be-a-teacher/initial-teacher-training", # Contains a form
+  ].freeze
 
   before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && (params[:subject] || params[:degree_status]) }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
@@ -21,6 +25,7 @@ class PagesController < ApplicationController
     "layouts/stories/list",
     "layouts/stories/story",
     "layouts/welcome",
+    "layouts/category",
     "layouts/campaigns/landing_page_with_hero_nav",
   ].freeze
 

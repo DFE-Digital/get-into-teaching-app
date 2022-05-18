@@ -1,0 +1,11 @@
+<div class="promo__right">
+  <h2>
+    <% if caption %>
+      <%= tag.div(caption, class: "caption") %>
+    <% end %>
+
+    <%= tag.div(heading) %>
+  </h2>
+
+  <%= content %>
+</div>

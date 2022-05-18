@@ -28,7 +28,7 @@ body > header {
   @include mq($from: tablet) {
     grid-template-columns: max-content 2fr;
 
-    .extra-navigation.hide-on-mobile.hide-on-tablet {
+    .extra-navigation {
       grid-column: 1/3;
     }
   }

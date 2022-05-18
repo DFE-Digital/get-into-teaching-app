@@ -3,6 +3,7 @@ module Content
     CALLS_TO_ACTION = {
       "attachment" => CallsToAction::AttachmentComponent,
       "simple" => CallsToAction::SimpleComponent,
+      "chat" => ChatComponent,
       "chat_online" => CallsToAction::ChatOnlineComponent,
       "story" => CallsToAction::StoryComponent,
       "next_steps" => CallsToAction::NextStepsComponent,

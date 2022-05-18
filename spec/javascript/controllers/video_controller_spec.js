@@ -31,7 +31,7 @@ describe('AccordionController', () => {
                     </iframe>
                 </div>
                 <button id="close-button" class="video-overlay__video-container__dismiss" data-video-target="close" data-action="click->video#close">
-                    <div class="icon-video-close"><span class="visually-hidden">Close video</span></div>
+                    <div class="icon-close"><span class="visually-hidden">Close video</span></div>
                 </button>
                 <a class="visually-hidden" href="#">
                     Close

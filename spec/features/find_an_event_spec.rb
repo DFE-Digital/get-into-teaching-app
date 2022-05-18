@@ -36,12 +36,13 @@ RSpec.feature "Finding an event", type: :feature do
 
     click_on "Update results"
 
-    expect(page.current_url).to include("/events/search")
+    current_url = CGI.unescape(page.current_url)
+    expect(current_url).to include("/events/search")
 
-    expect(page.current_url).to include("events_search[type]=")
-    expect(page.current_url).to include("events_search[distance]=")
-    expect(page.current_url).to include("events_search[postcode]=")
-    expect(page.current_url).to include("events_search[month]=")
+    expect(current_url).to include("events_search[type]=")
+    expect(current_url).to include("events_search[distance]=")
+    expect(current_url).to include("events_search[postcode]=")
+    expect(current_url).to include("events_search[month]=")
   end
 
   scenario "Finding an event by the list of featured events" do

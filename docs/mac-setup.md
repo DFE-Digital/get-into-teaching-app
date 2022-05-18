@@ -12,10 +12,10 @@ Run `echo 409B6B1796C275462A1703113804BB82D39DC0E3:6: | gpg2 --import-ownertrust
 Run `\curl -sSL https://get.rvm.io | bash -s stable`
 6. enable rvm (replace <your-user-name>)
 Run `source /Users/<your-user-name>/.rvm/scripts/rvm`
-7. install ruby 2.7.4
-Run `rvm install ruby 2.7.4`
-8. switch your system to use ruby 2.7.4`
-Run `rvm use 2.7.4`
+7. install ruby 3.1.2
+Run `rvm install ruby 3.1.2`
+8. switch your system to use ruby 3.1.2`
+Run `rvm use 3.1.2`
 9. install yarn
 Run `brew install yarn`
 10. install the bundler gem

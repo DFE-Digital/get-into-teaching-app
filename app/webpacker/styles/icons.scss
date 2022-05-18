@@ -89,12 +89,26 @@
   background-image: url("../images/white-quote.svg");
   width: 24px;
   height: 24px;
-  fill: $white;
+  color: $white;
 }
 
-.icon-video-close {
+.icon-close {
   @include icon;
   background-image: url("../images/icon-close.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-search {
+  @include icon;
+  background-image: url("../images/icon-search.svg");
+  width: 30px;
+  height: 30px;
+}
+
+.icon-mail {
+  @include icon;
+  background-image: url("../images/icon-mail.svg");
   width: 30px;
   height: 30px;
 }

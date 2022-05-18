@@ -16,6 +16,11 @@ class TeachingEventsController < ApplicationController
     "Question Time",
   ).freeze
 
+  def create
+    encrypted_params = TeachingEvents::Search.new(search_params).encrypted_attributes
+    redirect_to teaching_events_path({ teaching_events_search: encrypted_params })
+  end
+
   def index
     @page_title = "Find an event near you"
 
@@ -73,7 +78,7 @@ private
   end
 
   def setup_results
-    @event_search = TeachingEvents::Search.new(search_params)
+    @event_search = TeachingEvents::Search.new_decrypt(search_params)
   end
 
   def set_front_matter

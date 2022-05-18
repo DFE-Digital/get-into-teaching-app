@@ -27,35 +27,6 @@
           </header>
         <% end %>
 
-        <% if @front_matter["fullwidth"].blank? %>
-        <aside>
-          <% if @front_matter["jump_links"].present? %>
-            <div class="link-block link-block--jump">
-              <h2 class="link-block__header">On this page:</h2>
-              <ul class="link-block__list">
-                <% @front_matter["jump_links"].each do |item, anchor| %>
-                  <li><%= link_to(item, anchor) %></li>
-                <% end %>
-              </ul>
-            </div>
-          <% end %>
-
-          <%= render partial: "layouts/shared/narrow_call_to_action" %>
-
-          <% if @front_matter["related_content"].present? %>
-            <div class="link-block link-block--related">
-              <h2 class="link-block__header">Related Content:</h2>
-              <ul class="link-block__list">
-                <% @front_matter["related_content"].each do |item, anchor| %>
-                  <li><%= link_to(item, anchor) %></li>
-                <% end %>
-              </ul>
-            </div>
-          <% end %>
-
-        </aside>
-        <% end %>
-
         <%= tag.article(class: article_classes(@front_matter), data: { controller: 'abbreviation' }) do %>
           <% if @front_matter["alert"].present? %>
             <%= tag.div(tag.p(@front_matter["alert"]), class: "content-alert content-alert--fullwidth") %>
@@ -91,7 +62,33 @@
             <% end %>
           <% end %>
         <% end %>
+
+        <% if @front_matter["fullwidth"].blank? %>
+          <% if @front_matter["related_content"].present? %>
+            <aside class="link-block link-block--related">
+              <h2 class="link-block__header">Related content</h2>
+              <ul class="link-block__list">
+                <% @front_matter["related_content"].each do |item, anchor| %>
+                  <li><%= link_to(item, anchor) %></li>
+                <% end %>
+              </ul>
+            </aside>
+          <% end %>
+
+          <% if @front_matter["right_column"].present? %>
+            <aside>
+              <%= render partial: "layouts/shared/narrow_call_to_action" %>
+            </aside>
+          <% end %>
+        <% end %>
+
       </section>
+
+      <% if @front_matter.key?("promo_content") %>
+        <% @front_matter["promo_content"]&.each do |partial| %>
+          <%= render(partial) %>
+        <% end %>
+      <% end %>
     </main>
 
     <%= render FooterComponent.new %>

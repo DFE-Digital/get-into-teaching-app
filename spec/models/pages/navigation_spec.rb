@@ -67,6 +67,17 @@ RSpec.describe Pages::Navigation do
     end
   end
 
+  describe "#find" do
+    subject { described_class.new(nav) }
+
+    let(:path) { "/page-four" }
+
+    specify "returns the expected page" do
+      expect(subject.find(path).title).to eql(nav[path][:title])
+      expect(subject.find(path).rank).to eql(nav[path][:navigation])
+    end
+  end
+
   describe Pages::Navigation::Node do
     subject { described_class.new(outer_navigation, path, front_matter) }
 

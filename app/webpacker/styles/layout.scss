@@ -76,8 +76,8 @@ section.container {
   margin: 1em 0;
 
   @include mq($from: tablet) {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
+    flex-direction: row;
+    justify-content: flex-start;
     margin: 1.5em auto 0;
     max-width: $content-max-width;
   }

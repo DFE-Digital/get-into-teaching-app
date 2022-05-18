@@ -78,7 +78,7 @@ describe "View events by category", type: :request do
       type_id = EventType.school_or_university_event_id
       expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type).with(filter.merge(type_ids: [type_id], quantity_per_type: expected_limit))
-      get event_category_path("school-and-university-events", events_search: { distance: radius, postcode: postcode })
+      get event_category_path("school-and-university-events", events_search: { distance: radius, postcode: Encryptor.encrypt(postcode) })
     end
   end
 

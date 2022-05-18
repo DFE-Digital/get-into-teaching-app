@@ -25,8 +25,6 @@ jobs:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
           key: SLACK-WEBHOOK, SNYK-TOKEN
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Run Snyk to check Docker image for vulnerabilities
         uses: snyk/actions/docker@master
@@ -39,7 +37,7 @@ jobs:
       - name: Run Brakeman static security scanner
         run: |-
           docker run -t --rm -e RAILS_ENV=test ${{ env.DOCKER_REPOSITORY }}:master brakeman --no-pager
-      
+
       - name: Slack Notification
         if: failure()
         uses: rtCamp/action-slack-notify@master
@@ -48,4 +46,3 @@ jobs:
           SLACK_TITLE: Failure with Nightly Anchore Security Scan
           SLACK_MESSAGE: Failure Nightly Anchore Security Scan for ${{env.APPLICATION}}
           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
-          
