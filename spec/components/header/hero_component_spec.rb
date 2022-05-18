@@ -18,6 +18,16 @@ describe Header::HeroComponent, type: "component" do
   let(:component) { described_class.new(front_matter) }
 
   describe "rendering a hero section" do
+    describe "content blending" do
+      context "when the hero is set to blend with the content" do
+        let(:extra_front_matter) { { "hero_blend_content" => true } }
+
+        specify "renders the hero with the content blended in" do
+          expect(page).to have_css(".hero.blend-content")
+        end
+      end
+    end
+
     describe "background" do
       specify "renders with a grey background" do
         expect(page).to have_css(".hero.grey")
