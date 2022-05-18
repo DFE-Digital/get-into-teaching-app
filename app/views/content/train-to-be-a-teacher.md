@@ -15,6 +15,9 @@ content:
     - content/train-to-be-a-teacher/questions
     - content/train-to-be-a-teacher/why-teach
 image: "media/images/content/hero-images/0008.jpg"
+hero_blend_content: true
+hero_bg_color: yellow
+title_bg_color: white
 ---
 
 
