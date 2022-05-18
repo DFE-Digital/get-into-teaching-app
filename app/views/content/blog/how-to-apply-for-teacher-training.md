@@ -43,7 +43,7 @@ You may be able to show you meet the standard in another way if you do not have 
 
 If you’re applying for teacher training as an international candidate, [find out more about overseas qualifications](/train-to-teach-in-england-as-an-international-student).
 
-You can get advice about your qualifications by [chatting to a teacher training adviser.](/teacher-training-advisers)
+You can get advice about your qualifications by [chatting to a teacher training adviser](/teacher-training-advisers).
 
 ## 2. Get some school experience
 
@@ -55,13 +55,13 @@ Whilst school experience isn’t compulsory, it’s a good idea to visit a schoo
 
 Teacher training advisers provide free, one-to-one support wherever you are in your journey into teaching. Whether it's just an idea, or you're looking to get back into the classroom, you could get help with things like finding school experience, choosing the right course for you, funding, and writing a successful application.
 
-[Get a teacher training adviser.](https://adviser-getintoteaching.education.gov.uk/)
+[Get a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/).
 
 ## 4.	Attend a teacher training event
 
 Our free events are the perfect opportunity to find out more about teacher training. Chat to teachers, training providers and expert advisers, and get answers to all of your questions. 
 
-[Find an event.](/events)
+[Find an event](/events).
 
 ## 5.	Explore your funding options
 
@@ -73,7 +73,7 @@ And for some subjects, you may qualify for a tax-free bursary or scholarship.
 
 The key to managing financially during your training year is careful planning and preparation. Our [expert advisers](https://adviser-getintoteaching.education.gov.uk/) can help you make a plan and find the best funding options for your circumstances.
 
-[Explore your funding options.](/funding-your-training)
+[Explore your funding options](/funding-your-training).
 
 ## 6.	Find the right training course for you
 
@@ -81,7 +81,7 @@ The key to managing financially during your training year is careful planning an
 
 When choosing a course provider for your teacher training, it’s important to consider what will suit your individual circumstances.
 
-[Get advice on choosing a provider.](/blog/choosing-the-right-teacher-training-course-provider)
+[Get advice on choosing a provider](/blog/choosing-the-right-teacher-training-course-provider).
 
 ## 7.	Write your personal statement
 
@@ -89,21 +89,21 @@ Your teacher training personal statement explains why you want to be a teacher. 
 
 It’s your opportunity to show your enthusiasm for teaching a particular subject. It’s also the place to say why you feel passionate about teaching either primary or secondary.
 
-[Read our advice on writing your teacher training personal statement.](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement)
+[Read our advice on writing your teacher training personal statement](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement).
 
 ## 8.	Arrange your references
 
 Your referees can tell training providers about your qualities and abilities, so it’s important they know you well.
 
-[Find out more about the requirements for references.](/tips-on-applying-for-teacher-training#choose-your-referees)
+[Find out more about the requirements for references](/tips-on-applying-for-teacher-training#choose-your-referees).
 
 ## 9.	Complete your application
 
-You’re now ready to submit your application and [apply for teacher training.](https://www.gov.uk/apply-for-teacher-training)
+You’re now ready to submit your application and [apply for teacher training](https://www.gov.uk/apply-for-teacher-training).
 
 Your application will appear in your chosen providers’ inbox as soon as you click submit, but don’t expect an instant response. Wait for them to consider your application and set up an interview. This can take some time to organise.
 
 Be patient and do attend all of your interviews, if you have been offered them, before making any final decisions.
 
-[Get some top tips for interview success.](/blog/11-top-tips-for-interview-success)
+[Get some top tips for interview success](/blog/11-top-tips-for-interview-success).
 
