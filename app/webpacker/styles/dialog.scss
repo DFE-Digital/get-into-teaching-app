@@ -8,7 +8,7 @@
 }
 
 .dialog {
-  display: flex;
+  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -17,10 +17,9 @@
   z-index: 1000;
   justify-content: center;
   align-items: center;
-  transform: translateY(110vh);
 
   &.visible {
-    animation: slide-up 0s forwards;
+    display: flex;
   }
 
   &__background {
