@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe "ensuring frontmatter from content pages is rendered", type: :request do
-  context "with an accordion layout" do
+  context "with an full layout" do
     subject { response.body }
 
     before { get "/content-page" }
@@ -14,7 +14,6 @@ describe "ensuring frontmatter from content pages is rendered", type: :request d
       "Step 2",
       "Introduction",
       "This is an alert",
-      "Jump link 1",
       "Related content 1",
       "Right column CTA",
     ].each do |expected|

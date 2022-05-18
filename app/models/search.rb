@@ -72,6 +72,6 @@ private
   end
 
   def searchable_pages
-    NON_CONTENT_PAGES.merge(Pages::Frontmatter.list)
+    NON_CONTENT_PAGES.merge(Pages::Frontmatter.list).reject { |_, fm| fm[:noindex] }
   end
 end

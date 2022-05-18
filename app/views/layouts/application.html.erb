@@ -9,9 +9,6 @@
 
     <main id="main-content">
       <section class="container">
-        <% unless @fullwidth %>
-          <aside></aside>
-        <% end %>
         <article class="markdown <%= " fullwidth" if @fullwidth %>">
           <%= yield %>
         </article>

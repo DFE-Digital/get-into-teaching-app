@@ -18,12 +18,6 @@
         icon: "icon-calendar"
         hide_on_mobile: Yes
         hide_on_tablet: Yes
-  jump_links:
-    Tuition fee and maintenance loans: "#tuition-fee-and-maintenance-loans"
-    Bursaries and scholarships: "#bursaries-and-scholarships"
-    If you're a parent or carer: "#if-youre-a-parent-or-carer"
-    If you're disabled: "#if-youre-disabled"
-    If you come from outside England: "#if-you-come-from-outside-england"
   before-content:
     - content/funding-your-training/funding-widget
   calls_to_action:
@@ -100,10 +94,10 @@
 
 ## Tuition fee and maintenance loans
 
-Funding is available to help you [train to teach](/ways-to-train). You can apply for a:
+Funding is available to help you [train to teach](/train-to-be-a-teacher). You can apply for a:
 
 * tuition fee loan of up to £9,250 to cover your teacher training, so you do not need to pay course fees upfront
-* maintenance loan of up to £12,382 to help with living costs
+* maintenance loan of up to £12,667 to help with living costs
 
 You can still apply for a tuition fee and a maintenance loan if you already have a student loan, and regardless of whether you get a teaching bursary or scholarship.
 

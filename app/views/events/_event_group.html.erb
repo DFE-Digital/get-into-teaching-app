@@ -16,9 +16,9 @@
     </div>
 
     <% if events.any? %>
-      <div class="events-featured__list">
+      <ul class="events-featured__list">
         <%= render partial: "event", collection: events %>
-      </div>
+      </ul>
     <% else %>
       <% if type_id == ttt_event_type_id %>
         <%= render(Events::NoResultsComponent.new) do %>

@@ -30,8 +30,6 @@ runs:
           keyvault: ${{ inputs.KEY_VAULT}}
           secret: INFRA-KEYS
           key: SLACK-WEBHOOK, HTTP-PASSWORD, HTTP-USERNAME
-        env:
-          GITHUB_TOKEN: ${{inputs.GITHUB_TOKEN}}
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -40,11 +38,11 @@ runs:
         id:   app_name
         shell: bash
         run: |
-             if [[ "${{ inputs.environment }}" == "Production" ]] ; then 
+             if [[ "${{ inputs.environment }}" == "Production" ]] ; then
                  rval="${{env.PAAS_APPLICATION_NAME}}-prod.${{env.DOMAIN}}"
-             elif [[ "${{ inputs.environment }}" == "Test" ]] ; then 
+             elif [[ "${{ inputs.environment }}" == "Test" ]] ; then
                  rval="${{env.PAAS_APPLICATION_NAME}}-test.${{env.DOMAIN}}"
-             elif [[ "${{ inputs.environment }}" == "Development" ]] ; then 
+             elif [[ "${{ inputs.environment }}" == "Development" ]] ; then
                  rval="${{env.PAAS_APPLICATION_NAME}}-dev.${{env.DOMAIN}}"
              fi
              echo ::set-output name=SCAN::$rval

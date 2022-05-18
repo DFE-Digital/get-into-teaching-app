@@ -3,6 +3,8 @@ module TeachingEvents
     include ActiveModel::Model
     include ActiveModel::Attributes
     include ActiveModel::Validations::Callbacks
+    include EncryptedAttributes
+    encrypt_attributes :postcode
 
     FUTURE_MONTHS = 6
 
@@ -14,8 +16,8 @@ module TeachingEvents
       "50 miles" => 50,
     }.freeze
 
-    attr_accessor :online, :type
-
+    attribute :online
+    attribute :type
     attribute :postcode, :string
     attribute :distance, :integer
 

@@ -1,10 +1,18 @@
 name: Build and Deploy
+
 on:
   workflow_dispatch:
   pull_request:
     types: [assigned, opened, synchronize, reopened]
   push:
     branches: [ master ]
+
+permissions:
+  contents: write
+  deployments: write
+  issues: write
+  packages: write
+  pull-requests: write
 
 jobs:
   build_release:
@@ -29,9 +37,7 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
-          key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          key: SLACK-WEBHOOK
 
       - name: Set up Docker Buildx
         id: buildx
@@ -56,14 +62,14 @@ jobs:
              fi
 
       - name: Login to Docker Hub
-        uses: docker/login-action@v1.14.1
+        uses: docker/login-action@v2.0.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ steps.keyvault-yaml-secret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push to Docker Hub
-        uses: docker/build-push-action@v2.10.0
+        uses: docker/build-push-action@v3.0.0
         with:
           context: .
           cache-from: type=gha
@@ -108,9 +114,7 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
-          key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          key: SLACK-WEBHOOK
 
       - name: Lint Dockerfile
         uses: brpaz/hadolint-action@master
@@ -139,14 +143,14 @@ jobs:
              fi
 
       - name: Login to Docker Hub
-        uses: docker/login-action@v1.14.1
+        uses: docker/login-action@v2.0.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
-          password: ${{ steps.keyvault-yaml-secret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and output locally
-        uses: docker/build-push-action@v2.10.0
+        uses: docker/build-push-action@v3.0.0
         with:
           outputs: type=docker,dest=/tmp/image.tar
           context: .
@@ -160,7 +164,7 @@ jobs:
             BUILD_TYPE=test
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: app_test
           path: /tmp/image.tar
@@ -187,7 +191,7 @@ jobs:
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
 
       - name: Load Docker Image
         run: docker load --input app_test/image.tar
@@ -199,7 +203,7 @@ jobs:
 
       - name: Keep Rubocop output
         if: always()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: rubocop_results
           path: ${{ github.workspace }}/out/rubocop-result.json
@@ -224,7 +228,7 @@ jobs:
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
 
       - name: Load Docker Image
         run: docker load --input app_test/image.tar
@@ -265,11 +269,9 @@ jobs:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
           key: SLACK-WEBHOOK, KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
 
       - name: Load Docker Image
         run: docker load --input app_test/image.tar
@@ -293,14 +295,14 @@ jobs:
 
       - name:  Keep Code Coverage Report
         if: always()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: code_coverage
           path: ${{ github.workspace }}/coverage
 
       - name:  Keep Unit Tests Results
         if: always()
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v3
         with:
           name: unit_tests
           path: ${{ github.workspace }}/out/*
@@ -328,14 +330,12 @@ jobs:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
           key: SONAR-TOKEN
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Setup sonarqube
         uses: warchant/setup-sonar-scanner@v3
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
 
       - name: Load Docker Image
         run: docker load --input app_test/image.tar
@@ -387,9 +387,7 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
-          key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          key: SLACK-WEBHOOK
 
       - name: Deploy to Review
         uses: ./.github/workflows/actions/deploy
@@ -401,7 +399,6 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Post sticky pull request comment
         uses: marocchino/sticky-pull-request-comment@v2
@@ -413,7 +410,6 @@ jobs:
         if: contains(github.event.pull_request.user.login, 'dependabot') == false
         uses: actions-ecosystem/action-add-labels@v1.1.3
         with:
-          github_token: ${{ steps.keyvault-yaml-secret.outputs.ACTIONS-API-ACCESS-TOKEN }}
           labels: Review
 
   development:
@@ -441,9 +437,7 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
-          key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          key: SLACK-WEBHOOK
 
       - name: Deploy to Development
         uses: ./.github/workflows/actions/deploy
@@ -454,7 +448,6 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate Tag from PR Number
         id: tag_version
@@ -525,9 +518,7 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
-          key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          key: SLACK-WEBHOOK
 
       - name: Deploy to Test
         uses: ./.github/workflows/actions/deploy
@@ -538,7 +529,6 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Slack Notification
         if: failure()
@@ -570,11 +560,9 @@ jobs:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
           key: HTTP-USERNAME, HTTP-PASSWORD, MAILSAC-API-KEY
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Download Artifacts
-        uses: actions/download-artifact@v2
+        uses: actions/download-artifact@v3
 
       - name: Load Docker Image
         run: docker load --input app_test/image.tar
@@ -611,16 +599,14 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
-          key: ACTIONS-API-ACCESS-TOKEN, SLACK-WEBHOOK, SLACK-RELEASE-NOTE-WEBHOOK
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          key: SLACK-WEBHOOK, SLACK-RELEASE-NOTE-WEBHOOK
 
       - name: Get Release Id from Tag
         id: tag_id
         uses: DFE-Digital/github-actions/DraftReleaseByTag@master
         with:
           TAG: ${{needs.development.outputs.release_tag}}
-          TOKEN: ${{ steps.keyvault-yaml-secret.outputs.ACTIONS-API-ACCESS-TOKEN }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publish Release
         if: steps.tag_id.outputs.release_id
@@ -639,7 +625,6 @@ jobs:
           AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
           KEY_VAULT:         ${{ secrets.KEY_VAULT }}
           ARM_ACCESS_KEY:    ${{ secrets.ARM_ACCESS_KEY }}
-          GITHUB_TOKEN:      ${{ secrets.GITHUB_TOKEN }}
 
       - name: Slack Release Notification
         if: steps.tag_id.outputs.release_id
@@ -659,4 +644,3 @@ jobs:
           SLACK_TITLE: Production Release ${{github.event.title}}
           SLACK_MESSAGE: Failure deploying Production release
           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
-

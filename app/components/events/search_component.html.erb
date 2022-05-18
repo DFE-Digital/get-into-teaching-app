@@ -4,7 +4,7 @@
       <h2 id="searchforevents" class="colored-stripe__title purple"><%= heading %></h2>
       <div class="colored-stripe__content">
         <div class="search">
-          <%= form_for search, method: :get, url: path do |f| %>
+          <%= form_for search, method: :post, url: path do |f| %>
             <div class="search__controls" data-controller="conditional-field" data-conditional-field-mode="hide" data-conditional-field-expected="">
               <% if include_type %>
                 <%= tag.div(class: input_field_classes(:type)) do %>

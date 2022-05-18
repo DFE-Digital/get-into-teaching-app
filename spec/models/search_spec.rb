@@ -138,6 +138,12 @@ RSpec.describe Search do
       end
     end
 
+    describe "noindexed pages" do
+      let(:search) { "noindex" }
+
+      it { is_expected.to have_attributes length: 0 }
+    end
+
     describe "non-content pages" do
       describe "events" do
         Search::NON_CONTENT_PAGES.dig("/events", :keywords).each do |kw|

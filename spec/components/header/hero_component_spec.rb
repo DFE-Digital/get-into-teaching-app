@@ -19,8 +19,8 @@ describe Header::HeroComponent, type: "component" do
 
   describe "rendering a hero section" do
     describe "title and subtitle" do
-      specify "renders the title in a h1 element" do
-        expect(page).to have_css(".hero__title > h1", text: front_matter["title"])
+      specify "renders the title in a h1 element with a yellow background" do
+        expect(page).to have_css(".hero__title.yellow > h1", text: front_matter["title"])
       end
 
       context "when the heading overrides the title" do
@@ -28,6 +28,14 @@ describe Header::HeroComponent, type: "component" do
 
         specify "renders the heading in a h1 element" do
           expect(page).to have_css(".hero__title > h1", text: front_matter["heading"])
+        end
+      end
+
+      context "when the title background is overriden" do
+        let(:extra_front_matter) { { "title_bg_color" => "white" } }
+
+        specify "renders the heading with the color class" do
+          expect(page).to have_css(".hero__title.white > h1", text: front_matter["heading"])
         end
       end
 
@@ -85,6 +93,21 @@ describe Header::HeroComponent, type: "component" do
 
       specify "the block content should be rendered by the component" do
         expect(page).to have_css(".hero__content", text: sample)
+      end
+    end
+
+    describe "rendering a title paragraph" do
+      subject! do
+        render_inline(component) { sample }
+      end
+
+      let(:sample) { "Some paragraph text" }
+      let(:component) do
+        described_class.new(front_matter.merge(title_paragraph: sample))
+      end
+
+      specify "the paragraph should be rendered by the component" do
+        expect(page).to have_css(".hero__paragraph", text: sample)
       end
     end
   end

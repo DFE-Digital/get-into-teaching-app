@@ -23,7 +23,7 @@ provider_groups:
       telephone: '01582 599921'
       email: kbateman@challneyboys.luton.sch.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/itt/
+      link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
@@ -33,7 +33,7 @@ provider_groups:
       telephone: '01268 570215'
       email: Fran@etpscitt.co.uk
     - header: Essex Teacher Training
-      # link: https://www.essexteachertraining.co.uk/assessment-only/
+      link: https://www.essexteachertraining.co.uk/assessment-only/
       name: Kay Satchell
       email: kay.satchell@essexteachertraining.co.uk
     - header: Mid Essex Initial Teacher Training
@@ -72,7 +72,7 @@ provider_groups:
     - header: The Cambridge Partnership
       link: https://campartnership.org/
       name: Claire Mott
-      telephone: '01487 833707'
+      telephone: '01223 491630'
       email: cmott@campartnership.org
     - header: The Shire Foundation
       name: Julie Darmody
@@ -100,7 +100,7 @@ provider_groups:
       telephone: '07919 568841'
       email: jwoolley@cfbt.com
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/itt/
+      link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
@@ -179,7 +179,7 @@ provider_groups:
       telephone: 0330 313 9870
       email: mehroonnisha.mulla@staracademies.org
     - header: 'Teaching London: LDBS SCITT'
-      # link: https://teachinglondon.org
+      link: https://teachinglondon.org
       name: Saskia Rossi
       telephone: 0207 932 1126
       email: admin@teachinglondon.org
@@ -187,7 +187,7 @@ provider_groups:
       link: https://www.haveringteachertraining.co.uk/
       name: Liz Connell
       telephone: '01708 255006'
-      email: http@hallmeadschool.com
+      email: admin@haveringteachertraining.co.uk
     - header: The Pimlico-London SCITT
       link: https://www.futuretraining.org/page/?title=Assessment+Only+Route&pid=20
       email: info@futuretraining.org
@@ -215,7 +215,7 @@ provider_groups:
     - header: Durham University
       email: ed.ite@durham.ac.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/itt/
+      link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
@@ -240,7 +240,7 @@ provider_groups:
       link: http://www.ctt.ac.uk
       email: scittlead@ctt.ac.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/itt/
+      link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk
@@ -282,11 +282,6 @@ provider_groups:
     - header: Boleyn Trust
       link: https://www.londondistricteast.org/scitt
       email: elascitt@tollgate.boleyntrust.org
-    - header: Bourton Meadow Initial Teacher Training Centre
-      # link: https://www.bourtonmeadowittc.co.uk
-      name: Helen Byrom
-      telephone: '01280 823374'
-      email: hbyrom@bucksgfl.org.uk
     - header: Canterbury Christ Church University
       name: Keith Saunders
       telephone: 01227 925555
@@ -381,7 +376,9 @@ provider_groups:
       email: office@mscitt.org.uk
     - header: Somerset SCITT Consortium
       link: https://www.sciltraining.co.uk
-      email: CLeoni@somerset.gov.uk
+      name: Julie Walker
+      telephone: 0300 123 1967
+      email: JLWalker@somerset.gov.uk
     - header: Wessex Schools Training Partnership
       name: Claire Porter
       telephone: 01202 662038
@@ -456,7 +453,7 @@ provider_groups:
       telephone: 01274 088 368
       email: j.white@bradfordcollege.ac.uk
     - header: Educate Group Initial Teacher Training
-      link: https://educate-group.co.uk/itt/
+      link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
       telephone: 01476 512793
       email: aor@educate-group.co.uk

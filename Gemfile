@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby File.read(".ruby-version").chomp
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem "rails", "~> 6.1.5"
+gem "rails", "~> 7.0.2.3"
 
 # Use Puma as the app server
 gem "puma", "~> 5.6", ">= 5.6.2"
@@ -32,7 +32,7 @@ gem "secure_headers"
 gem "canonical-rails", ">= 0.2.14"
 
 gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
-gem "kramdown", ">= 2.3.2"
+gem "kramdown", ">= 2.4.0"
 gem "rinku"
 
 gem "addressable", "~> 2.8.0"
@@ -44,16 +44,18 @@ gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
 
+gem "hashids"
+
 gem "dotenv-rails", ">= 2.7.6"
 
-gem "govuk_design_system_formbuilder", ">= 2.7.6"
+gem "govuk_design_system_formbuilder", ">= 2.8.0"
 
 gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 5.2.1"
-gem "sentry-ruby", "~> 5.2.1"
+gem "sentry-rails", ">= 5.3.0"
+gem "sentry-ruby", "~> 5.3.0"
 
 gem "skylight", "~> 5.3.2"
 
@@ -64,7 +66,7 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 2.52.0"
+gem "view_component", "~> 2.54.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
@@ -100,7 +102,7 @@ group :development, :test do
   gem "rubocop-govuk", "~> 4.3.0"
 
   # Static security scanner
-  gem "brakeman", "~> 5.2.2", require: false
+  gem "brakeman", "~> 5.2.3", require: false
 
   # Debugging
   gem "pry-byebug"
@@ -108,10 +110,10 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack_pro"
-  gem "rspec-rails", "~> 5.1.1"
+  gem "rspec-rails", "~> 5.1.2"
 
   # Adds support for Capybara system testing and selenium driver
-  gem "capybara", "~> 3.36", ">= 3.36.0"
+  gem "capybara", "~> 3.37"
   gem "factory_bot_rails", ">= 6.2.0"
   # See: https://github.com/otherguy/rspec-sonarqube-formatter/pull/63
   gem "rspec-sonarqube-formatter", github: "otherguy/rspec-sonarqube-formatter", ref: "13fe436", require: false

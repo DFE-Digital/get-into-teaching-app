@@ -20,6 +20,11 @@ class EventsController < ApplicationController
     render layout: "events"
   end
 
+  def perform_search
+    encrypted_params = Events::Search.new(event_search_params).encrypted_attributes
+    redirect_to search_events_path({ events_search: encrypted_params })
+  end
+
   def search
     @page_title = "Teacher training events"
     @front_matter = { "description" => "Get your questions answered at an event." }
@@ -89,7 +94,7 @@ private
   end
 
   def load_event_search
-    @event_search = Events::Search.new(event_search_params)
+    @event_search = Events::Search.new_decrypt(event_search_params)
   end
 
   def event_search_params

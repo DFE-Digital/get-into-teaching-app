@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe "searches/show.html.erb", type: :view do
+describe "searches/show", type: :view do
   subject { rendered }
 
   before do

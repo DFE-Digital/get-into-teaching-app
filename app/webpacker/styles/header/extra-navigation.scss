@@ -1,8 +1,56 @@
 @import "accessible-autocomplete";
 
-html:not(.js-enabled) {
-  .extra-navigation__search {
-    display: none;
+.extra-navigation {
+  &__list {
+    font-size: .9rem;
+    background-color: $grey;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__link a {
+    display: inline-block;
+    padding: 0.6em $indent-amount;
+    color: $black;
+    text-decoration: none;
+
+    .icon {
+      margin-left: 0.5em;
+      width: 20px;
+      height: 20px;
+
+      &.icon-close {
+        display: none;
+      }
+    }
+  }
+
+  &__search a {
+    background-color: $pink;
+    padding: 0.6em $indent-amount / 2;
+
+    .icon {
+      margin: 0;
+    }
+  }
+
+  &.open {
+    .searchbar {
+      display: flex;
+    }
+
+    .extra-navigation__link a {
+      .icon.icon-search {
+        display: none;
+      }
+
+      .icon.icon-close {
+        display: inline-block;
+      }
+    }
   }
 }
 
@@ -11,133 +59,36 @@ html:not(.js-enabled) {
 
   &:hover,
   &:focus {
-    p,
-    h3 {
+    p, h3 {
       color: $white;
     }
   }
 }
 
-.extra-navigation {
-  background-color: $grey;
-  border-bottom: 1px solid $green;
-  padding: .25em 0;
-  margin-bottom: 1em;
+.searchbar {
+  display: none;
+  background-color: $pink;
+  padding: 0.6em;
+  justify-content: flex-end;
 
-  .fas {
-    width: 22px;
+  @include mq($from: tablet) {
+    margin-bottom: 21px;
   }
 
-  @include mq($from: desktop) {
-    margin: 0;
-    padding: 0;
-    padding-right: 2em;
-    border-bottom: none;
-    // Avoids content layout shift when autocomplete
-    // search input is injected into the navigation bar.
-    height: 48px;
-  }
-
-  .fas {
-    padding-left: .5em;
-    color: $grey-dark;
-  }
-
-  .extra-navigation__search {
-    padding: 0;
-    position: relative;
-    min-width: 240px;
+  .autocomplete__wrapper {
+    width: 100%;
 
     input {
-      @include reset;
-      padding: 0 1em;
-
-      background-color: white;
-      border: 0;
-      height: 2.5em;
-      width: 110%;
-      font-size: .9rem;
-    }
-
-    &.ready div[data-searchbox-target='searchbar'] {
-      display: inline-block;
-    }
-
-    &:not(.ready) > * {
-      display: none;
-    }
-
-    .fa-search {
-      margin-left: 1.2em;
-    }
-  }
-
-  .extra-navigation__search__icon {
-    margin-left: 0;
-    z-index: 0;
-
-    span {
-      padding: 0;
-    }
-  }
-
-  &.hide-on-mobile.hide-on-tablet {
-    ul.extra-navigation__list {
-      margin: .4em auto;
-    }
-  }
-
-  ul.extra-navigation__list {
-    font-size: .9rem;
-
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 0;
-    height: 36px;
-
-    li.extra-navigation__link {
-      margin-left: 2em;
-
-      &.extra-navigation__search__icon {
-        margin-left: 0;
-      }
-    }
-
-    // mobile and tablet
-    @include mq($until: desktop) {
-      align-items: flex-start;
-      justify-content: flex-start;
+      width: 100%;
+      background-color: $white;
       margin: 0;
-      flex-wrap: wrap;
-      flex-direction: column;
-      text-align: left;
-      background-color: $grey;
-      padding: 1.5em 0 1.5em 4em;
-      height: auto;
+    }
+
+    @include mq($from: tablet) {
+      width: auto;
 
       input {
-        margin: 0;
-        background-color: white;
-        width: 110%;
-      }
-
-      li.extra-navigation__link {
-        margin: .4em 0;
-        padding: .6em .2em;
-      }
-    }
-
-    li {
-      a {
-        color: $black;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
+        width: 500px;
       }
     }
   }

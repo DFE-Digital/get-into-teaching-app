@@ -1,0 +1,25 @@
+<div class="promo__left">
+  <div>
+    <h2>
+      <% if caption %>
+        <%= tag.div(caption, class: "caption") %>
+        <br>
+      <% end %>
+      <%= tag.div(heading) %>
+    </h2>
+  </div>
+
+  <% if content.present? %>
+    <div>
+      <div class="promo__content">
+        <%= content %>
+      </div>
+    </div>
+  <% end %>
+
+  <% if link_text && link_target %>
+    <div>
+      <%= link_to(link_text, link_target, class: %w[button button--white button--inline-block]) %>
+    </div>
+  <% end %>
+</div>

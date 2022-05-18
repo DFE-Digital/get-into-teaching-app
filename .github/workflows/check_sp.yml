@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "35 6 * * *"
-    
+
 jobs:
   set-matrix:
     runs-on: ubuntu-latest
@@ -18,7 +18,7 @@ jobs:
           t="{'environment' :'Test'         , 'principle': 's146t01-keyvault-readonlyaccess'}"
           p="{'environment' :'Production'   , 'principle': 's146p01-keyvault-readonlyaccess'}"
           tests="{ 'data':[ ${d} ,  ${t} ,  ${p} ]}"
-          echo "::set-output name=tests::${tests}"  
+          echo "::set-output name=tests::${tests}"
 
   check_expires:
     name:      ${{matrix.data.environment}}/${{ matrix.data.principle }}
@@ -60,17 +60,15 @@ jobs:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
           key: SLACK-WEBHOOK
-        env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Slack Notification
         if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
         uses: rtCamp/action-slack-notify@master
         env:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_TITLE: ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application }} ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Name }}  
+           SLACK_TITLE: ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application }} ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Name }}
            SLACK_MESSAGE: |
-                         The Service Principle ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application }} 
+                         The Service Principle ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application }}
                          key ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Name }} is due to
                          expires in ${{fromJson(steps.pwsh_check_expire.outputs.json_data).data.ExpiresDays}} days
                          Please follow the process in https://dfe-technical-guidance.london.cloudapps.digital/how-to/security/managing-secrets/#access-key-expiration to renew.

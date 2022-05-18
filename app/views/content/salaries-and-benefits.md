@@ -13,7 +13,7 @@ right_column:
       text: |
        Find out how to train to become a qualified primary or secondary teacher in England.
       link_text: "Ways to train"
-      link_target: "/ways-to-train"
+      link_target: "/train-to-be-a-teacher"
       icon: "icon-person"
       hide_on_mobile: Yes
       hide_on_tablet: Yes

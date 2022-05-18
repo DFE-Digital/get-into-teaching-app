@@ -89,7 +89,7 @@ You can [find and apply to most postgraduate teacher training courses on GOV.UK]
 
 You can choose up to 3 teacher training courses for each application.
 
-If you do not find what you were looking for, there are [other ways to train](/ways-to-train).
+If you do not find what you were looking for, there are [other ways to train](/train-to-be-a-teacher).
 
 Before you start, it’s particularly important to think about your referees and
 [teacher training personal statement](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement).

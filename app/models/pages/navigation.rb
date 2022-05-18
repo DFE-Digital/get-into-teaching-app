@@ -3,7 +3,7 @@ module Pages
     attr_reader :nodes
 
     class << self
-      delegate :all_pages, :root_pages, to: :instance
+      delegate :all_pages, :root_pages, :find, to: :instance
 
     private
 
@@ -26,17 +26,22 @@ module Pages
       nodes.select(&:root?).sort_by(&:rank)
     end
 
+    def find(path)
+      all_pages.find { |p| p.path == path }
+    end
+
     class Node
-      attr_reader :navigation, :path, :title, :rank
+      attr_reader :navigation, :path, :title, :rank, :description
 
       def initialize(navigation, path, front_matter)
         @navigation = navigation
         @path = front_matter[:navigation_path] || path
 
         front_matter.tap do |fm|
-          @title = extract_title(fm) || (Rails.logger.warn("page #{path} has no title") && nil)
-          @rank  = fm.fetch(:navigation, nil)
-          @menu  = fm.fetch(:menu, false)
+          @title       = extract_title(fm) || (Rails.logger.warn("page #{path} has no title") && nil)
+          @rank        = fm.fetch(:navigation, nil)
+          @menu        = fm.fetch(:menu, false)
+          @description = fm.fetch(:navigation_description, nil)
         end
       end
 

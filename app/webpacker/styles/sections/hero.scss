@@ -79,8 +79,10 @@ $mobile-cutoff: 800px;
     }
 
     &__subtitle,
-    &__content {
+    &__content,
+    &__paragraph {
       grid-area: 4 / 1 / 5 / 5;
+      padding: 2em;
     }
 
     &__subtitle {
@@ -124,6 +126,10 @@ $mobile-cutoff: 800px;
         grid-area: 5 / 1 / 7 / 4;
       }
 
+      &__paragraph {
+        grid-area: 5 / 1 / 6 / 4;
+      }
+
       > picture {
         grid-area: -6 / -6 / -1 / -1;
       }
@@ -144,6 +150,10 @@ $mobile-cutoff: 800px;
 
   &__title {
     z-index: 20;
+
+    &.white h1 {
+      background-color: $white;
+    }
 
     h1 {
       background-color: $yellow-dark;
