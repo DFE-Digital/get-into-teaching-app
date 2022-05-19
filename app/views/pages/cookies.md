@@ -36,6 +36,8 @@ Some examples of these cookies include:
 | `GiTBetaFeedbackPrompt`      | Record response to our request for feedback        | End of browser session    |
 | `__zlcmid`                   | Store unique ID for chat widget authentication     | 365 days                  |
 
+Table caption: Details of functional cookies
+
 ### 2. Non-functional cookies
 
 These cookies allow us to provide a more enhanced service and help us to
@@ -64,6 +66,8 @@ gather this data.
 | `UA-179982899-1` | Registers a unique ID to generate statistics about how you use the website       | 1 minute |
 | `_gid`           | Helps count how many people visit this site by tracking if you’ve visited before | 24 hours |
 
+Table caption: Details of Google Analytics cookies
+
 #### Hotjar cookies
 
 | Name                           | Purpose                                                                                          | Expires after          |
@@ -77,6 +81,8 @@ gather this data.
 | `_hjIncludedInPageviewSample`  | Lets Hotjar know whether you are included in data sampling.                                      | 30 minutes             |
 | `_hjIncludedInSessionSample`   | Set to let Hotjar know whether you are included in data sampling.                                | 30 minutes             |
 | `_hjAbsoluteSessionInProgress` | Used to detect your first pageview session.                                                      | 30 Minutes             |
+
+Table caption: Details of HotJar cookies
 
 ### Marketing
 
@@ -123,6 +129,8 @@ through us.
 | `personalization_id` | Twitter uses this cookie to deliver advertisements, to make them more relevant and meaningful to consumers, and to track the efficiency of advertising campaigns.     | 2 years                |
 | `bam-session`        | BAM use this cookie to attribute mailing list sign ups back to the agent at a teaching event that presented a QR code to the candidate.                               | 30 days                |
 | `dax_listenerid`     | DAX use this cookie for campaign effectiveness measurement for digital audio activity.                                                                                | 3 months               |
+
+Table caption: Details of marketing cookies
 
 ### How to control your cookies
 

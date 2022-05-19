@@ -67,6 +67,8 @@ Annual teacher pay scales for qualified teachers are:
 | London                                   | £26,948 | £42,624 |
 | Rest of England and Wales                | £25,714 | £36,961 |
 
+Table caption: Annual teacher pay scales for qualified teachers by area
+
 On average, established teachers earn more than this.
 
 ## Holidays
@@ -116,6 +118,8 @@ Annual salary ranges for senior teachers are:
 | London                        | £39,864 | £50,935  |
 | Rest of England and Wales     | £38,690 | £41,604  |
 
+Table caption: Annual salary ranges for senior teachers by area
+
 ### Leading practitioner salaries
 
 If you’re an established and exceptional teacher, and regularly show the highest standards of classroom teaching, you can be put onto a higher pay scale.
@@ -129,6 +133,7 @@ The teacher pay scales for leading practitioners are:
 | London                        | £43,750 | £72,480  |
 | Rest of England and Wales     | £42,402 | £64,461  |
 
+Table caption: Teacher pay scales for leading practitioners by area
 
 ### Headteacher salaries
 
@@ -142,6 +147,8 @@ Annual salary ranges for headteachers are:
 | -------                       | -----   | -----     |
 | London                        | £48,901 | £125,098  |
 | Rest of England and Wales     | £47,735 | £117,197  |
+
+Table caption: Annual salary ranges for headteachers by area
 
 ### Other payments
 
@@ -158,6 +165,8 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 | TLR 1         | £8,291 | £14,030 |
 | TLR 2         | £2,873 | £7,017  |
 
+Table caption: Teaching and learning responsibility (TLR) payment ranges by level
+
 ### Unqualified teacher salaries
 
 Many schools in England require teachers to have 'qualified teacher status' (QTS). If you do not have this, you can work
@@ -169,3 +178,5 @@ Annual unqualified teacher salary ranges are:
 | -------                       | -----   | -----     |
 | London                        | £19,613 | £33,410   |
 | Rest of England and Wales     | £18,419 | £28,735   |
+
+Table caption: Annual unqualified teacher salary ranges by area

@@ -63,6 +63,8 @@ It doesn't matter if you already have a student loan — you can still apply for
 | £35,000                  | £58               |
 | £40,000                  | £95               |
 
+Table caption: Monthly tuition fee and maintenance loan repayments by annual income tax threshold
+
 > I know the bursaries are a big selling point for some secondary subjects but a lot of people have coped without one. I spent years on my journey to becoming a teacher, going back to college when my children were very small then doing my degree full time and finally my teacher training. I didn’t get a bursary and if I had, it would have been a bonus but a lack of it certainly wouldn’t have stopped me going into teaching. Granted it will be more tricky without the safety net of the bursary but make some calls and do some checks before you give up entirely. Don’t ever let money stand in the way of your dreams. It’s a tough year financially but it’s worth it.
 >
 > Jacqui Lynne, Teacher

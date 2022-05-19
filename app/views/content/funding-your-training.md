@@ -131,6 +131,8 @@ below. You cannot receive both a teaching bursary and a scholarship.
 | **Maths**                                        | £24,000  | £26,000          |
 | **Physics**                                      | £24,000  | £26,000          |
 
+Table caption: Postgraduate teaching bursaries and scolarships by subject
+
 To be eligible for a bursary, you'll need at least one of the following:
 
 * a bachelor’s degree class 2:2 (honours) or higher
