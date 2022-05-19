@@ -1,4 +1,5 @@
 require "acronyms"
+require "table_captions"
 
 module TemplateHandlers
   class Markdown
@@ -52,8 +53,12 @@ module TemplateHandlers
       Acronyms.new(content, front_matter["acronyms"]).render
     end
 
+    def add_table_captions(content)
+      TableCaptions.new(content).render
+    end
+
     def render
-      add_acronyms autolink_html render_markdown
+      add_table_captions add_acronyms autolink_html render_markdown
     end
 
     # rubocop:disable Style/PerlBackrefs

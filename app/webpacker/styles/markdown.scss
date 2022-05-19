@@ -116,6 +116,11 @@
     width: 90%;
     border-color: $grey;
 
+    caption {
+      text-align: left;
+      margin-top: $indent-amount;
+    }
+
     thead > tr {
       > th {
         text-align: left;

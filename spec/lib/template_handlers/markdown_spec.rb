@@ -117,6 +117,49 @@ describe TemplateHandlers::Markdown, type: :view do
     end
   end
 
+  context "with table captions" do
+    let(:markdown) do
+      <<~MARKDOWN
+        ---
+        title: My page
+        ---
+
+        | Heading 1   | Heading 2   |
+        | ----------- | ----------- |
+        | Cell 1      | Cell 2      |
+
+        Table caption: My caption
+      MARKDOWN
+    end
+
+    before do
+      stub_template "frontmatter.md" => markdown
+      render template: "frontmatter"
+    end
+
+    it "adds the caption to the table" do
+      is_expected.to match_html(
+        <<~HTML,
+          <table>
+            <caption>My caption</caption>
+            <thead>
+              <tr>
+                <th>Heading 1</th>
+                <th>Heading 2</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cell 1</td>
+                <td>Cell 2</td>
+              </tr>
+            </tbody>
+          </table>
+        HTML
+      )
+    end
+  end
+
   context "with acronyms" do
     let :markdown do
       <<~MARKDOWN
