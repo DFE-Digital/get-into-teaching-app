@@ -50,7 +50,7 @@ keywords:
   - Comparability
 ---
 
-Non-UK citizens can train to teach in England. This step by step guide explains how citizens from all countries outside the UK can apply for teacher training.
+England's Department for Education welcomes non-UK citizens who wish to train to teach in England. This step by step guide explains how citizens from all countries outside the UK can apply for teacher training.
 
 If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK.](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
 
@@ -132,11 +132,6 @@ Call us free on 0800 389 2500 for:
 * a free statement of comparability, once you’ve submitted your application, if your provider asks for this
 * advice about what to do if you do not have English, maths and science qualifications of grade 4 GCSE standard
 
-### Get personalised advice from a teacher training adviser
-
-Advisers are available by email and phone –  or you can use the online chat service on this page.
-
-
 ## 3. Find out about fees and financial support
 
 Fees vary between training providers, but range from about £12,000 to about £22,000 in total. You’ll also have to pay your living costs.  
@@ -172,7 +167,7 @@ Due to rules about immigration, not all providers can accept international appli
 
 ### Ways to train
 
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). [Talk to an adviser](/teacher-training-advisers) about the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). [Talk to an adviser](https://adviser-getintoteaching.education.gov.uk/) about the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
 
 You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
 
@@ -209,7 +204,7 @@ As part of the application process, your training provider will confirm you’re
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa). 
 You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk). 
 
-Teaching advisers will not be able to answer specific questions about visas and immigration related to your personal circumstances.
+[Teaching advisers](https://adviser-getintoteaching.education.gov.uk/) will not be able to answer specific questions about visas and immigration related to your personal circumstances.
 
 <div class="inset">
   <h3>Already living in the UK?</h3>
