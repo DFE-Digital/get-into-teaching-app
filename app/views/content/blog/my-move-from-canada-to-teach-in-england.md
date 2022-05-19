@@ -62,7 +62,7 @@ My advice would be that:
  
 - you should be in direct contact with the school you’re applying to and form a dialogue with someone there
  
-- you can love your school and love your class, but leadership shapes everything - make sure you respect and trust the people who employ you
+- you can love your school and love your class, but leadership shapes everything — make sure you respect and trust the people who employ you
  
 - you should ask for the materials you’ll need to prep for the start of term and how to use them — the methods and teaching styles expected of you
  
