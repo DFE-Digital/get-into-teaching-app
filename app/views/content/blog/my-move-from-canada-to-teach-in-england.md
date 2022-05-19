@@ -26,7 +26,7 @@ When I did my Master’s at Edinburgh, I fell in love with the culture and knew 
  
 I met a Bohunt Education Trust headteacher at a careers fair – he’d come to Canada on a recruitment trip. It was important to me that I work for people whose leadership and values I respected. So it was great to be able to shake hands with the very people I’d be working for and make sure those values aligned.
  
-It’s no small feat to move across the world - and no small sacrifice - so I wanted to do it with as much consideration as possible.    
+It’s no small feat to move across the world — and no small sacrifice — so I wanted to do it with as much consideration as possible.    
  
 ## How did you manage your move to the UK?
  
