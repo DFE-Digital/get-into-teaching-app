@@ -138,7 +138,7 @@ $q-helen-returner$
 
 ## Use the early career framework (ECF) resources
 
-The early career framework resources help early career teachers (ECTs) with their learning and development. They're accredited by the Department for Education (DfE).
+The [early career framework resources](https://support-for-early-career-teachers.education.gov.uk/) help early career teachers (ECTs) with their learning and development. They're accredited by the Department for Education (DfE).
 
 If you're returning to teaching, you can use these online resources to support you in your journey back into the classroom. Find material to refresh your knowledge on behaviour management, pedagogy, curriculum, assessment and professional behaviours.
 
