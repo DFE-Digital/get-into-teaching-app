@@ -70,7 +70,7 @@ More than ever, our children and young people need your skills and experience ba
 
 If you’re thinking about returning to teaching, or if you’re qualified to teach but have never taught in a state school in England, we can help.
 
-## Why now
+## Why now?
 
 Thousands of former teachers return to teaching each year.
 
@@ -136,23 +136,29 @@ $q-helen-returner$
 
 [Read Helen's top tips for returning teachers](/my-story-into-teaching/returners/top-tips-for-returning-teachers).
 
+## Use the early career framework (ECF) resources
+
+The [early career framework resources](https://support-for-early-career-teachers.education.gov.uk/) help early career teachers (ECTs) with their learning and development. They're accredited by the Department for Education (DfE).
+
+If you're returning to teaching, you can use these online resources to support you in your journey back into the classroom. Find material to refresh your knowledge on behaviour management, pedagogy, curriculum, assessment and professional behaviours.
+
 ## If you've been out of teaching for a while
 
 If you’re returning to teaching, you might want to re-familiarise yourself with life in a classroom. Here are lots of ways that you can do it.
 
-#### Reading teachers' stories and tips
+### Reading teachers' stories and tips
 
 * browse [inspirational stories](/blog/tag/returning-to-teaching) from Stephen, Farooq and Maria who returned to the classroom successfully after a break
 * read up on [teaching interview tips](https://www.teachertoolkit.co.uk/2019/04/04/job-interviews) and get [pointers on remote interviews](/blog/how-to-ace-a-video-interview)
 
-#### Catching up on changes
+### Catching up on changes
 
 * review the latest [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards)
 * catch up on changes to the [national curriculum and qualifications](https://www.gov.uk/topic/schools-colleges-childrens-services/curriculum-qualifications)
 * read through [current behaviour management guidelines](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
 * learn about how DfE have improved the [National Professional Qualifications (NPQs)](https://www.gov.uk/government/publications/national-professional-qualifications-npqs-reforms/national-professional-qualifications-npqs-reforms) and if you may be eligible for a fully funded scholarship 
 
-#### Other things to consider
+### Other things to consider
 
 * attend an [online return to teaching event](/event-categories/online-q-as)
 * join the [Chartered College of Teaching](https://chartered.college/), the
