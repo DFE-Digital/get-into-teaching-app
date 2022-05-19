@@ -60,7 +60,7 @@ iQTS is for you if you live outside the UK and you:
 
 ## Six reasons to apply for iQTS
 
-1. Complete iQTS, and you'll automatically be awarded [QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts) with no further fees or training
+1. Complete iQTS, and you'll automatically be awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) with no further fees or training
 
 2. You'll gain the skills, experience and knowledge to become an excellent teacher, with an internationally transferable qualification backed by the UK government 
 
