@@ -1,5 +1,5 @@
 ---
-title: The Head of Science inspiring students in Blackpool
+title: Salaried teacher training and classroom learning
 date: "2022-12-16"
 author: Nathan Sproule
 images:
