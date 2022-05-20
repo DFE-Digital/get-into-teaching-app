@@ -1,6 +1,6 @@
 ---
 title: From NQT to head of biology in 2 years
-date: "2020-11-18"
+date: "2019-11-18"
 author: Sarah Fisher
 images:
   jessica-walmsley:

@@ -1,6 +1,6 @@
 ---
 title: Salaried teacher training and classroom learning
-date: "2020-12-16"
+date: "2019-12-16"
 author: Nathan Sproule
 images:
   q-nathan:

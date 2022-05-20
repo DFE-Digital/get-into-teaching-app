@@ -1,6 +1,6 @@
 ---
 title: Leaping to head of department
-date: "2020-09-23"
+date: "2019-09-23"
 author: Jon Simmons
 images:
   stories-jon:

@@ -1,6 +1,6 @@
 ---
 title: Grasp every opportunity - you will progress
-date: "2020-10-21"
+date: "2019-10-21"
 author:  Paul Evason
 images:
   q-paul:
