@@ -48,5 +48,3 @@ I love being able to work with teachers of all backgrounds, experienced to newly
 ### My advice
 
 I would recommend hard work, maintaining your love for the job, and a want to bring about positive change to young peoples' lives. Undeniably, teaching is hard work – but the knowledge that you have helped to motivate young people and helped shape their future brings more satisfaction than any other job I can think of.
-
-$ect$

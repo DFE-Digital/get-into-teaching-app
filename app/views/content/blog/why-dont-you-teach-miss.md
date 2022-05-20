@@ -1,6 +1,6 @@
 ---
 title: Why don't you teach, Miss?
-date: "2022-12-02"
+date: "2020-12-02"
 author: Emma Maskell
 images:
   q-emma:
