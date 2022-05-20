@@ -4,7 +4,7 @@ heading: "Salaries and benefits"
 description: |-
   Teacher starting salaries are between £25,714 and £32,157, depending where you teach. Find out about teacher pay scales, pensions and benefits here.
 date: "2021-06-24"
-image: "media/images/content/hero-images/0007.jpg"
+image: "media/images/content/hero-images/0008.jpg"
 backlink: "../../"
 navigation: 40
 right_column:
