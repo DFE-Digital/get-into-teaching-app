@@ -1,6 +1,6 @@
 ---
 title: Turning a tough lesson into a success
-date: "2020-08-26"
+date: "2019-08-26"
 author: Danny Holliday
 images:
   danny:
