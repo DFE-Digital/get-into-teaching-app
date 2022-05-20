@@ -1,6 +1,6 @@
 ---
 title: School experience helped me decide to switch
-date: "2022-02-10"
+date: "2020-02-10"
 author: Zainab Kasmani
 images:
   q-zainab:
