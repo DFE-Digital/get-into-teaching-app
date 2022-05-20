@@ -50,7 +50,7 @@ keywords:
   - Comparability
 ---
 
-England's Department for Education welcomes non-UK citizens who wish to train to teach in England. This step by step guide explains how citizens from all countries outside the UK can apply for teacher training.
+Citizens of every country in the world can apply to train to teach in England.  
 
 If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK.](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
 
@@ -93,7 +93,7 @@ Dates for your diary include:
 
 ## Apply for teacher training, step by step
 
-[We can help you make a successful application.](#get-support-and-advice) 
+We can help you make a successful application for teacher training in England. [Learn more about how we can support you.](#get-support-and-advice) 
 
 ## 1. Check your qualifications
 
