@@ -62,3 +62,9 @@ If you have the right experience, School Direct (salaried) give you QTS with man
 Teach First is a 2-year programme leading to a PGDE and QTS. At the end of your first year, you will have QTS. The PGDE is awarded at the end of the second year.
 
 [Find out more about Teach First](https://www.teachfirst.org.uk/)
+
+### Postgraduate teaching apprenticeship
+
+Apprenticeships offer a year of school-based training which gives you QTS. Some also offer a PGCE or equivalent qualification. 
+
+[Find salaried teacher training including apprenticeships](https://www.find-postgraduate-teacher-training.service.gov.uk/)  by applying the 'only show courses that come with a salary' filter.
