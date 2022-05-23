@@ -41,7 +41,7 @@ Although different training providers may have specific recruitment criteria, th
 * a degree
 * GCSE grade C / 4 in English and maths — and a science subject for primary trainees
 
-You can find out more about [overseas qualifications](/train-to-teach-in-england-as-an-international-student).
+You can find out more about [overseas qualifications](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
 ### 2. Get one-to-one support from our teaching experts
 
