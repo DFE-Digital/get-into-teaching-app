@@ -87,7 +87,7 @@ You also get other insurance benefits too. You can find out more on [the teacher
 
 ## Support for early career teachers
 
-All teachers are given extra support during their first 2 years in teaching. This helps early career teachers (ECTs) develop their knowledge, teaching skills and working habits.
+All teachers are given extra support during their first 2 years in teaching called [ECF-based training](/support-for-early-career-teachers). This helps early career teachers (ECTs) develop their knowledge, teaching skills and working habits.
 
 This support includes:
 

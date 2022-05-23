@@ -61,7 +61,7 @@ And finally, I do love the holidays! I try to switch off outside of term time an
 My advice for anyone thinking of getting into teaching is to remember that you will make a difference, even though it might be challenging at times! When pupils are in your classroom, you have the opportunity to grow their minds and improve their understanding of the world. You are responsible for helping pupils achieve the best possible outcomes and for inspiring them to build their resilience and determination.
 
 [^1]:
-    For the first 2 years in the classroom, during their induction, teachers are called 'early career teachers' (ECTs).
+    For the first 2 years in the classroom, during their induction, teachers are called ['early career teachers' (ECTs)](/support-for-early-career-teachers).
     It's a time when you get lots of extra support to help establish yourself as a teacher.
 
     Induction used to last 1 year, and teachers would be called 'newly qualified teachers' (NQTs).
