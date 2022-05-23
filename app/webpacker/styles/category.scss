@@ -135,6 +135,16 @@
     gap: .5em;
     padding-block: 2em;
 
+    &.tta-background {
+      background-image: url("../images/content/homepage/teacher-training-adviser.jpg");
+      background-position-y: 20%;
+    }
+
+    &.ml-background {
+      background-image: url("../images/content/hero-images/0015.jpg");
+      background-position-y: 20%;
+    }
+
     > div {
       padding: 0 1em .3em 1em;
       max-width: 60%;
