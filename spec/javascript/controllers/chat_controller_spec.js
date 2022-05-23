@@ -7,6 +7,7 @@ describe('ChatController', () => {
   afterEach(() => jest.useRealTimers());
 
   let chatShowSpy;
+  let chatOnHideSpy;
 
   const setBody = () => {
     document.body.innerHTML = `
@@ -41,7 +42,8 @@ describe('ChatController', () => {
   describe('when the chat is online', () => {
     beforeEach(() => {
       chatShowSpy = jest.fn();
-      jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ $zopim: { livechat: { window: { show: chatShowSpy } } } }));
+      chatOnHideSpy = jest.fn();
+      jest.spyOn(global, 'window', 'get').mockImplementation(() => ({ $zopim: { livechat: { window: { show: chatShowSpy, onHide: chatOnHideSpy } } } }));
 
       setBody();
       setCurrentTime('2021-01-01 10:00');

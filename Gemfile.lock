@@ -319,10 +319,10 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
-    nokogiri (1.13.4)
+    nokogiri (1.13.6)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    nokogiri (1.13.4-x86_64-linux)
+    nokogiri (1.13.6-x86_64-linux)
       racc (~> 1.4)
     observer (0.1.1)
     os (1.1.1)
@@ -496,7 +496,7 @@ GEM
     uber (0.1.0)
     unicode-display_width (2.1.0)
     victor (0.3.3)
-    view_component (2.54.0)
+    view_component (2.54.1)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
     web-console (4.2.0)
@@ -592,7 +592,7 @@ DEPENDENCIES
   text
   tzinfo-data
   victor
-  view_component (~> 2.54.0)
+  view_component (~> 2.54.1)
   web-console (>= 4.2.0)
   webmock (>= 3.14.0)
   webpacker (>= 5.4.3)

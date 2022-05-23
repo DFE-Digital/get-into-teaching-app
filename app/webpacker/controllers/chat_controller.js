@@ -32,6 +32,7 @@ export default class extends Controller {
   }
 
   start(e) {
+    this.previousTarget = e.target;
     e.preventDefault();
     this.loadChat();
   }
@@ -87,6 +88,14 @@ export default class extends Controller {
 
   showWebWidget() {
     window.$zopim.livechat.window.show();
+    window.$zopim.livechat.window.onHide(() => {
+      // Return focus back to where it was before opening
+      // the chat widget.
+      if (this.previousTarget) {
+        this.previousTarget.focus();
+        this.previousTarget.blur();
+      }
+    });
   }
 
   get zendeskScriptLoaded() {

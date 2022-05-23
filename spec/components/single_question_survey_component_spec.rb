@@ -10,7 +10,7 @@ RSpec.describe SingleQuestionSurveyComponent, type: :component do
 
     describe "quesiton" do
       it "renders the question in a heading" do
-        expect(page).to have_css("h3", text: "What is your favourite colour?")
+        expect(page).to have_css("h2", text: "What is your favourite colour?")
       end
     end
 

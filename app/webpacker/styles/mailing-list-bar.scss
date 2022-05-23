@@ -49,13 +49,6 @@
   &__close {
     margin-left: 1em;
     padding: .5em;
-    color: $white;
     font-weight: bold;
-    text-underline-offset: .2em;
-
-    &:hover {
-      color: $white;
-      text-decoration: none;
-    }
   }
 }
