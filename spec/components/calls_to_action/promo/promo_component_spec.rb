@@ -47,6 +47,14 @@ RSpec.describe CallsToAction::Promo::PromoComponent, type: :component do
 
       it { is_expected.not_to have_css(".promo__left a") }
     end
+
+    context "when classes are provided" do
+      let(:left_args) { { heading: "heading", classes: %w[one two three] } }
+
+      it {
+        is_expected.to have_css(".promo__left.one.two.three")
+      }
+    end
   end
 
   describe "right side" do
