@@ -18,7 +18,7 @@ body {
   }
 }
 
-main,
+.main-body,
 .hero {
   @extend %content-width-limiter-shared;
 }
@@ -53,7 +53,7 @@ main,
 
 $content-max-width: 1200px;
 
-main {
+.main-body {
   margin-bottom: 3em;
 
   flex-grow: 1;

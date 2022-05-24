@@ -163,7 +163,7 @@ $mobile-cutoff: 800px;
       padding-bottom: 6em;
     }
 
-    &+ main > section {
+    &+.main-body {
       margin-top: -4em;
     }
   }

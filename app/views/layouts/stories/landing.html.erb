@@ -4,12 +4,12 @@
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
       <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
-      <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
-        <%= c.hero(@front_matter) %>
-      <% end %>
+      <%= render HeaderComponent.new(breadcrumbs: true) %>
 
       <main class="story-landing" id="main-content">
-        <section class="container">
+        <%= render Header::HeroComponent.new(@front_matter) %>
+
+        <section class="container main-body">
           <% if @front_matter.key?("featured_page") %>
             <section class="stories-feature">
               <div class="stories-feature__image" style="background-image:url('<%= asset_pack_path(@front_matter.dig("featured_page", "image")) %>')"></div>
