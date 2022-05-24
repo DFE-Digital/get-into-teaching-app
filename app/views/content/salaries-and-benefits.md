@@ -95,7 +95,7 @@ This support includes:
 * a high quality training programme based on the [early career framework](https://www.gov.uk/government/publications/early-career-framework)
 * a mentor who will give you guidance and support
 
-The term early career teacher (ECT) replaces newly qualified teacher (NQT).
+The term early career teacher (ECT) replaced newly qualified teacher (NQT).
 
 ## Career progression
 
