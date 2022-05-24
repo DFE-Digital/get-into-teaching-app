@@ -15,7 +15,6 @@ tags:
   - teacher training
   - applications
   - becoming a teacher
-closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $olivia$
@@ -47,3 +46,5 @@ One of the best moments of my training year was of course receiving the offer fo
 If I could give any advice it would be this: from the moment you enter the classroom, just throw yourself into it. Take on any challenge you are offered and say yes to everything, because the more experience you gain and the more you throw yourself into it, the more you get out of it. I have met teachers and students that I will remember forever.
 
 You will learn a lot about yourself during your teacher training year and it is the most rewarding journey to be on.
+
+If you're interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). Or find out about the [support given to early career teachers based on the early career framework](/support-for-early-career-teachers).

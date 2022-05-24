@@ -87,7 +87,7 @@ You also get other insurance benefits too. You can find out more on [the teacher
 
 ## Support for early career teachers
 
-All teachers are given extra support during their first 2 years in teaching. This helps early career teachers (ECTs) develop their knowledge, teaching skills and working habits.
+All teachers are given extra support during their first 2 years in teaching called [ECF-based training](/support-for-early-career-teachers). This helps early career teachers (ECTs) develop their knowledge, teaching skills and working habits.
 
 This support includes:
 
@@ -95,7 +95,7 @@ This support includes:
 * a high quality training programme based on the [early career framework](https://www.gov.uk/government/publications/early-career-framework)
 * a mentor who will give you guidance and support
 
-The term early career teacher (ECT) replaces newly qualified teacher (NQT).
+The term early career teacher (ECT) replaced newly qualified teacher (NQT).
 
 ## Career progression
 
