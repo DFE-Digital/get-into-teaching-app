@@ -4,7 +4,7 @@
   <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content" }, id: "body" do %>
     <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
-    <%= render HeaderComponent.new(breadcrumbs: false) do |c| %>
+    <%= render HeaderComponent.new(breadcrumbs: true) do |c| %>
       <%= c.hero(@front_matter) %>
     <% end %>
 

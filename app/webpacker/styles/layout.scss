@@ -82,13 +82,6 @@ section.container {
     max-width: $content-max-width;
   }
 
-  &--narrow {
-    margin-top: 0;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: flex-start;
-  }
-
   // most pages won't have a h1 here but on those where
   // we forego the hero we want it to span both the article
   // and the aside.

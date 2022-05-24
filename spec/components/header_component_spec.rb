@@ -31,7 +31,7 @@ describe HeaderComponent, type: "component" do
     subject! { render_inline(described_class.new(breadcrumbs: true)) }
 
     specify "renders the breadcrumbs" do
-      expect(page).to have_css(".breadcrumb")
+      expect(page).to have_css(".breadcrumbs")
     end
   end
 

@@ -4,11 +4,10 @@
     <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
       <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
-      <%= render HeaderComponent.new %>
+      <%= render HeaderComponent.new(breadcrumbs: true) %>
 
       <main id="main-content">
         <%= render Stories::StoryComponent.new(@front_matter, @page.data) do %>
-          <%= render Header::BreadcrumbComponent.new %>
           <%= yield %>
         <% end %>
       </main>

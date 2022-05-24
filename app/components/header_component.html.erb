@@ -27,9 +27,10 @@
   <%= render Header::NavigationComponent.new(extra_resources: { "/events" => "Teacher training events", "/blog" => "Blog" }) %>
 </header>
 
-<%= above_hero %>
-<%= hero %>
-
 <% if breadcrumbs %>
   <%= render Header::BreadcrumbComponent.new %>
 <% end %>
+
+<%= above_hero %>
+<%= hero %>
+
