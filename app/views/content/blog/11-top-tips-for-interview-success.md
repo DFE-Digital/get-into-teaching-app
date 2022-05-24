@@ -34,7 +34,7 @@ Often email is your first line of professional dialogue with providers. Be mindf
 
 Know what you are applying for. Routes and training programmes differ, and you may have applied to several providers. Training provider websites will give you key information. You can refer to this information at interview. 
 
-Make a note of any key staff names and who to ask for on your arrival. This will give a positive first impression. Take some time to find out about The Teachers' Standards, Safeguarding in Schools and The National Curriculum. 
+Make a note of any key staff names and who to ask for on your arrival. This will give a positive first impression. Take some time to find out about the teachers' standards, safeguarding in schools and the national curriculum. 
 
 ## 4. Remote or face-to-face
 
