@@ -14,21 +14,31 @@ promo_content:
 
 You’ll be known as an early career teacher (ECT) for your first 2 years in teaching. The term early career teacher (ECT) has replaced newly qualified teacher (NQT).
 
-As part of these 2 years, you’ll have an induction period underpinned by the [early career framework (ECF)](https://www.gov.uk/guidance/how-the-early-career-framework-ecf-supports-induction) which explains the training and support ECTs are entitled to.
+As part of these 2 years, you’ll have an induction period that includes training and support based on the [early career framework (ECF)](https://www.gov.uk/guidance/how-the-early-career-framework-ecf-supports-induction).
 
 You’ll receive mentoring and training to help you develop your teaching practice. This will allow you to build the skills and knowledge you need to feel confident and empowered in your classroom.
 
 This won’t impact your pay or progression opportunities. You’ll still be able to progress on the pay scale during your induction period.
 
-## Early career framework-based training
+## ECF-based training
 
 You’ll receive training based on the early career framework (ECF) as part of your induction period. This is called ECF-based training.
 
 ECF-based training provides a bridge between your initial teacher training (ITT) and your teaching career. Your ITT helps you qualify as a teacher, and the ECF-based training helps you further develop your teaching practice and working habits.
 
-As part of this training, you’ll have a dedicated mentor, online or face to face training, and paid time away from classroom teaching to focus on your development.
+### Your training programme
 
-### Your mentor
+Your school will choose how to deliver your training based on the early career framework (ECF). This may include using Department for Education (DfE) accredited or funded resources. They may:
+
+* use a DfE-funded training provider
+* use DfE-accredited materials
+* design and deliver their own training
+
+This could be through face to face learning or using online materials.
+
+You’ll also observe experienced teachers to help you develop your own good practice.
+
+## Your mentor
 
 You’ll be given a mentor during your induction period.
 
@@ -39,23 +49,11 @@ Your mentor will:
 * provide or arrange mentoring and coaching around specific subject areas
 * take prompt, appropriate action if you’re having difficulties
 
-### Paid time away from classroom teaching
+## Paid time away from classroom teaching
 
 In your first year of teaching, you’ll have a 10% timetable reduction. In your second year of teaching, you’ll have a 5% timetable reduction. This means a reduced teaching schedule to give you time away from the classroom to focus on your learning and development. 
 
 This is in addition to the time allocated for planning, preparation and assessment (PPA) that all teachers get.
-
-### Your training programme
-
-Your school will choose how to deliver your ECF-based training. This may include using Department for Education (DfE) training or materials. They may:
-
-* use a DfE-funded training provider
-* use DfE-accredited materials
-* design and deliver their own training
-
-This could be through face to face learning or using online materials.
-
-You’ll also observe experienced teachers to help you develop your own good practice.
 
 ## Meeting the teachers’ standards
 
