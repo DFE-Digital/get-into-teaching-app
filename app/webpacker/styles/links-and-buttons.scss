@@ -8,6 +8,10 @@
   @include font-size("small");
   border: none;
 
+  @media (forced-colors: active) {
+    border: 2px solid transparent;
+  }
+
   &:hover {
     background: darken($bg, 5%);
     color: $fg;
