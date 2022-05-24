@@ -112,7 +112,7 @@ To sign up, you’ll need (one of the following):
 * to be studying for a bachelor’s degree with honours, with a predicted grade of 2:2 or higher
 * an overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
 
-If you're applying from overseas, [contact UK ENIC to check if your qualifications meet this standard](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) before signing up.
+If you're applying from overseas, you can check your qualifications by calling us on <a href="tel:08003892500">0800 389 2500</a>.
 
 If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach chemistry, computing, maths, modern foreign languages, or physics to get an adviser.
 
