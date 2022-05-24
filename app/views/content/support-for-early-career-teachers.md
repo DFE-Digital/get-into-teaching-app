@@ -12,7 +12,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
 ---
 
-You’ll be known as an early career teacher (ECT) for your first 2 years in teaching. The term early career teacher (ECT) replaces newly qualified teacher (NQT).
+You’ll be known as an early career teacher (ECT) for your first 2 years in teaching. The term early career teacher (ECT) has replaced newly qualified teacher (NQT).
 
 As part of these 2 years, you’ll have an induction period underpinned by the [early career framework (ECF)](https://www.gov.uk/guidance/how-the-early-career-framework-ecf-supports-induction) which explains the training and support ECTs are entitled to.
 
