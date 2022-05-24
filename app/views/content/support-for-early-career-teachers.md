@@ -14,9 +14,7 @@ promo_content:
 
 You’ll be known as an early career teacher (ECT) for your first 2 years in teaching. The term early career teacher (ECT) has replaced newly qualified teacher (NQT).
 
-As part of these 2 years, you’ll have an induction period that includes training and support based on the [early career framework (ECF)](https://www.gov.uk/guidance/how-the-early-career-framework-ecf-supports-induction).
-
-You’ll receive mentoring and training to help you develop your teaching practice. This will allow you to build the skills and knowledge you need to feel confident and empowered in your classroom.
+During your 2 year induction, you’ll receive a package of training and support based on the [early career framework (ECF)](https://www.gov.uk/guidance/how-the-early-career-framework-ecf-supports-induction). This is designed to help you build the skills and knowledge you need to feel confident and empowered in your classroom.
 
 This won’t impact your pay or progression opportunities. You’ll still be able to progress on the pay scale during your induction period.
 
@@ -28,10 +26,10 @@ ECF-based training provides a bridge between your initial teacher training (ITT)
 
 ### Your training programme
 
-Your school will choose how to deliver your training based on the early career framework (ECF). This may include using Department for Education (DfE) accredited or funded resources. They may:
+Your school will choose how to deliver your training based on the early career framework (ECF). They may:
 
-* use a DfE-funded training provider
-* use DfE-accredited materials
+* use a Department for Education (DfE) funded training provider
+* use DfE accredited materials
 * design and deliver their own training
 
 This could be through face to face learning or using online materials.
