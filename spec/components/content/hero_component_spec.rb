@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Header::HeroComponent, type: "component" do
+describe Content::HeroComponent, type: "component" do
   subject! { render_inline(component) }
 
   let(:extra_front_matter) { {} }

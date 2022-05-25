@@ -1,4 +1,4 @@
-main.home {
+.main-body.home {
   // the homepage is a few px wider than the regular max width so we can
   // make things overhang if neccessary
   $homepage-max-width: $content-max-width + (2 * $px-either-side-of-content);

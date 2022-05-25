@@ -7,7 +7,7 @@
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
     <main id="main-content">
-      <section class="container">
+      <section class="container main-body">
         <article class="markdown disclaimer fullwidth">
           <% if !@front_matter["image"] %>
             <%= tag.h1(@front_matter["title"]) %>

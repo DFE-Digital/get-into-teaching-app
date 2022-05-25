@@ -4,14 +4,16 @@
   <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
     <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
-    <%= render HeaderComponent.new do |c| %>
-      <%= c.hero(@front_matter) %>
-    <% end %>
+    <%= render HeaderComponent.new %>
 
-    <main class="home" id="main-content">
-      <% @front_matter["content"]&.each do |partial| %>
-        <%= render(partial) %>
-      <% end %>
+    <main id="main-content">
+      <%= render Content::HeroComponent.new(@front_matter) %>
+
+      <section class="main-body home">
+        <% @front_matter["content"]&.each do |partial| %>
+          <%= render(partial) %>
+        <% end %>
+      </section>
     </main>
 
     <%= render FooterComponent.new %>

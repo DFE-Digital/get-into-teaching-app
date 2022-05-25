@@ -4,8 +4,10 @@
   <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
     <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
-    <%= render HeaderComponent.new do |c| %>
-      <% c.hero(@front_matter) do %>
+    <%= render HeaderComponent.new %>
+
+    <main id="main-content">
+      <%= render Content::HeroComponent.new(@front_matter) do %>
         <% if @front_matter["hero_nav"].any? %>
           <ol class="hero__nav">
             <% @front_matter["hero_nav"].each do |section, href| %>
@@ -14,10 +16,8 @@
           </ol>
         <% end %>
       <% end %>
-    <% end %>
 
-    <main id="main-content">
-      <section class="container">
+      <section class="container main-body">
         <article class="markdown hero-nav">
           <%= yield %>
         </article>

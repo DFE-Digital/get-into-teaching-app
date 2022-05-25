@@ -4,12 +4,14 @@
   <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content" }, id: "body" do %>
     <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
 
-    <%= render HeaderComponent.new(breadcrumbs: false) do |c| %>
-      <%= c.hero(@front_matter) %>
-    <% end %>
+    <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main id="main-content main-content--no-bottom-margin">
-      <%= yield %>
+    <main id="main-content">
+      <%= render Content::HeroComponent.new(@front_matter) %>
+
+      <section class="main-body">
+        <%= yield %>
+      </section>
     </main>
 
     <%= render FooterComponent.new %>

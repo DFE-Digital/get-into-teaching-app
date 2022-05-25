@@ -13,9 +13,8 @@ describe Header::BreadcrumbComponent, type: "component" do
     page
   end
 
-  it { is_expected.to have_css(".container.container--narrow") }
-  it { is_expected.to have_css("nav.breadcrumb") }
-  it { is_expected.not_to have_css("nav.breadcrumb--hero") }
+  it { is_expected.to have_css(".container.breadcrumbs") }
+  it { is_expected.to have_css("nav.govuk-breadcrumbs") }
   it { is_expected.not_to have_text("Current Page") }
 
   it "links to all previous pages" do
