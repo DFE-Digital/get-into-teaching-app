@@ -7,6 +7,7 @@ related_content:
     Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
     Improve your subject knowledge : "/improve-your-subject-knowledge"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/events-near-you
