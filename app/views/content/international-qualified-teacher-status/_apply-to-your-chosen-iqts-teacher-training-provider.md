@@ -1,6 +1,6 @@
-English teacher training providers deliver iQTS in partnership with placement schools around the world. 
+English teacher training providers deliver iQTS in partnership with placement schools around the world.
 
-iQTS is currently offered by the following training providers, all of whom have been approved by the UK government. To apply for iQTS, visit iQTS provider websites, where you’ll be able to complete your application. 
+iQTS is currently offered by the following training providers, all of whom have been approved by the UK government. To apply for iQTS, visit iQTS provider websites, where you’ll be able to complete your application.
 
 You can apply now for courses starting in September 2022.
 
@@ -13,9 +13,9 @@ You can apply now for courses starting in September 2022.
 
 You will be able to study iQTS if your chosen training provider works with, or will accept, a placement school in your region.
 
-### Responsibility for finding a placement school 
+### Responsibility for finding a placement school
 
-Some iQTS training providers will have an existing relationship with a school in your region, and will be able to match you to that school. 
+Some iQTS training providers will have an existing relationship with a school in your region, and will be able to match you to that school.
 
 Others will ask you to find your own local placement school as a condition of entry to their course.
 
@@ -25,7 +25,7 @@ Please check participating iQTS training provider websites for more details abou
 
 ### What you can expect from your iQTS training provider
 
-Individual iQTS training providers will vary in their approach to delivering iQTS. However, all have been checked to ensure their training programmes comply with [iQTS criteria](https://www.gov.uk/government/publications/international-qualified-teacher-status-criteria-for-providers) and enable trainees to meet the [iQTS Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards). 
+Individual iQTS training providers will vary in their approach to delivering iQTS. However, all have been checked to ensure their training programmes comply with [iQTS criteria](https://www.gov.uk/government/publications/international-qualified-teacher-status-criteria-for-providers) and enable trainees to meet the [iQTS Teachers’ Standards](https://www.gov.uk/government/publications/international-qualified-teacher-status-teachers-standards).
 
 In addition, all iQTS training providers offer:
 
@@ -33,11 +33,11 @@ In addition, all iQTS training providers offer:
 
 * teaching and assessment from highly experienced English teacher training staff at your chosen provider
 
-* face-to-face mentoring at your placement school 
+* face-to-face mentoring at your placement school
 
 * regular feedback and rigorous quality control
 
 To learn more, visit participating iQTS training provider websites.
 
-Over time, iQTS will become more widely available, with more training providers and more placement schools in regions around the world. 
+Over time, iQTS will become more widely available, with more training providers and more placement schools in regions around the world.
 
