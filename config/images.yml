@@ -291,11 +291,6 @@
   variants:
     - "media/images/content/blog/thumbnails/fellowship.jpg"
 
-"media/images/content/blog/jill.jpg":
-  alt: "Jill, a returning teacher who used the return to teaching adviser service."
-  variants:
-    - "media/images/content/blog/thumbnails/jill.jpg"
-
 "media/images/content/blog/ian-wallace.jpg":
   alt: "Science teacher and career changer, Ian Wallace"
   variants:
