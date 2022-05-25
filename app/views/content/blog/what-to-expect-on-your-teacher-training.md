@@ -17,7 +17,6 @@ keywords:
 tags:
   - becoming a teacher
   - teacher training advisers
-closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $seminar_room$
@@ -47,3 +46,5 @@ Many of our students train to teach later in life, either because they’ve had 
 ## About the author
 
 Jan Ashbridge is a Principal Lecturer with responsibility for primary PGCE at the University of Cumbria. She has particular expertise in early literacy and systematic synthetic phonics.
+
+If you're interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). Or discover what else to expect in your [initial teacher training](/train-to-be-a-teacher/initial-teacher-training).
