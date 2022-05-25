@@ -3,7 +3,7 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-top: 2 * $indent-amount;
+  margin: 2 * $indent-amount auto 4em;
 
   a {
     text-decoration: none;
