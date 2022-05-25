@@ -21,6 +21,10 @@
   display: block;
   overflow-x: clip;
 
+  @media (forced-colors: active) {
+    forced-color-adjust: none;
+  }
+
   a {
     text-decoration: none;
     display: block;
