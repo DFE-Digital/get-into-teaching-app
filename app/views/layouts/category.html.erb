@@ -7,7 +7,7 @@
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
     <main class="category" id="main-content">
-      <%= render Header::HeroComponent.new(@front_matter) %>
+      <%= render Content::HeroComponent.new(@front_matter) %>
 
       <section class="container category__cards main-body">
         <%= tag.nav(aria: { label: "#{@page.title} navigation" }, class: "category__nav-cards") do %>

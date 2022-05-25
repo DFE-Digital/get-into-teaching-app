@@ -7,7 +7,7 @@
       <%= render HeaderComponent.new(breadcrumbs: true) %>
 
       <main class="story-landing" id="main-content">
-        <%= render Header::HeroComponent.new(@front_matter) %>
+        <%= render Content::HeroComponent.new(@front_matter) %>
 
         <section class="container main-body">
           <% if @front_matter.key?("featured_page") %>

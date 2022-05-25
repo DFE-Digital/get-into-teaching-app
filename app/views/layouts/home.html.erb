@@ -7,7 +7,7 @@
     <%= render HeaderComponent.new %>
 
     <main id="main-content">
-      <%= render Header::HeroComponent.new(@front_matter) %>
+      <%= render Content::HeroComponent.new(@front_matter) %>
 
       <section class="main-body home">
         <% @front_matter["content"]&.each do |partial| %>
