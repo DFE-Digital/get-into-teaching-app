@@ -52,7 +52,7 @@ keywords:
 
 Citizens of every country in the world can apply to train to teach in England.
 
-If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
+If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK.](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk)
 
 ## Why train to teach in England?
 
