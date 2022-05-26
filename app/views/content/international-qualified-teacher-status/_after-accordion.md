@@ -4,7 +4,7 @@ Learn more about [iQTS policy](https://www.gov.uk/government/publications/intern
 
 Learn more about [other routes to qualified teacher status (QTS) and teaching in England](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk#apply-to-the-teaching-regulation-agency-tra).
 
-[Find more help and guidanceif you'd like to teach in England.](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk)
+[Find more help and guidance if you'd like to teach in England.](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk)
 
 If you already live in the UK, you should consider [applying for teacher training leading to QTS in England](/steps-to-become-a-teacher).
 
