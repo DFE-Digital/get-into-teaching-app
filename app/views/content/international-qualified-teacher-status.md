@@ -42,7 +42,7 @@ International qualified teacher status (iQTS) is a new teaching qualification ba
 
 ## Who iQTS is for
 
-iQTS is an international teaching qualification designed for UK and non-UK citizens living outside the UK. iQTS means you can gain [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) while working overseas.
+iQTS is an international teaching qualification designed for UK and non-UK citizens living outside the UK. iQTS means you can gain [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) while working overseas.
 
 If you're living in England, you should [apply for teacher training in England](/steps-to-become-a-teacher).
 
