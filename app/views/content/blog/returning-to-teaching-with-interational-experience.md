@@ -4,7 +4,6 @@ date: "2019-10-07"
 author: Katie Lockett
 images:
   q-katie:
-    path: "media/images/content/stories/stories-katie.png"
     thumbnail_path: "media/images/content/blog/thumbnails/stories-katie.jpg"
 description: |-
   Head of Faculty Katie Lockett shares her story of returning to teach in England from China.

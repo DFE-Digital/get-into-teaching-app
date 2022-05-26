@@ -4,7 +4,6 @@ date: "2019-11-04"
 author: Hasina Nizamee
 images:
   q-hasina:
-    path: "media/images/content/stories/stories-generic.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/stories-generic.jpg"
 description: |-
     Hasina Nizamee's route into teaching

@@ -306,6 +306,51 @@
   variants:
     - "media/images/content/blog/thumbnails/brooke-harvey.jpg"
 
+"media/images/content/blog/thumbnails/stories-will.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-zainab.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-peter.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-gavin.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-nathan.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-emma.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-paul.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-sarah-f.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-generic.jpg"
+  alt: Decorative image
+
+"media/images/content/blog/thumbnails/stories-katie.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-jon.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-dannyy.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-claire.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-sandra.jpg"
+  alt: A photo of the blog author
+
+"media/images/content/blog/thumbnails/stories-roger.jpg"
+  alt: A photo of the blog author
+
 # homepage
 "media/images/content/homepage/here-to-help.jpg":
   alt: "Back of an adviser's T-shirt saying 'here to help' at a teacher training event."

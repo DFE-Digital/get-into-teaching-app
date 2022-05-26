@@ -4,7 +4,6 @@ date: "2019-12-02"
 author: Emma Maskell
 images:
   q-emma:
-    path: "media/images/content/stories/stories-emma.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/stories-emma.jpg"
 description: |-
   Emma Maskell shares her route into teaching

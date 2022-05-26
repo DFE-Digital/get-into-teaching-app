@@ -4,7 +4,6 @@ date: "2019-12-16"
 author: Nathan Sproule
 images:
   q-nathan:
-    path: "media/images/content/stories/stories-nathan.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/stories-nathan.jpg"
 description: |-
   The option of salaried teacher training meant that Nathan Sproule could earn while he trained to be a teacher.

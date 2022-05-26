@@ -4,7 +4,6 @@ date: "2020-01-13"
 author: Gavin McIntyre
 images:
   q-gavin:
-    path: "media/images/content/blog/stories-gavin.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/stories-gavin.jpg"
 description: |-
   Assistant headteacher Gavin McIntyre shares his journey to become a teacher.
