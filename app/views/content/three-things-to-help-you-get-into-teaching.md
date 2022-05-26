@@ -31,7 +31,7 @@
 
 <div id="receive-personalised-email-updates-and-tips" class="numbered-heading">
   <span class="pink-number">1</span>
-  <h2>Receive personalised email updates and tips</h2>
+  <h2 class="heading-l">Receive personalised email updates and tips</h2>
 </div>
 
 Get personalised information straight to your inbox with everything you need to know about getting into teaching, including:
@@ -46,7 +46,7 @@ Get personalised information straight to your inbox with everything you need to 
 
 <div id="speak-to-current-teachers-at-a-teaching-event" class="numbered-heading">
   <span class="pink-number">2</span>
-  <h2>Speak to current teachers at a teacher training event</h2>
+  <h2 class="heading-l">Speak to current teachers at a teacher training event</h2>
 </div>
 
 Chat with teachers, experts and training providers about every aspect of teaching and teacher training at an event. There are a variety of events available that cover everything from funding your training, what a career in teaching is really like, to submitting a successful application.
@@ -55,7 +55,7 @@ Chat with teachers, experts and training providers about every aspect of teachin
 
 <div id="get-free-one-to-one-advice-from-a-teacher-training-adviser" class="numbered-heading">
   <span class="pink-number">3</span>
-  <h2>Get free one-to-one advice from a teacher training adviser</h2>
+  <h2 class="heading-l">Get free one-to-one advice from a teacher training adviser</h2>
 </div>
 
 All our teacher training advisers are experienced teachers who can provide you with support through the whole process of preparing and applying for teacher training.

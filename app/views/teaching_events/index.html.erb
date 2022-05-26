@@ -4,7 +4,7 @@
 
 <section class="teaching-events">
   <header>
-    <h1>Get Into Teaching events</h1>
+    <h1 class="heading-l heading--box-yellow">Get Into Teaching events</h1>
 
     <p>
       All events listed here are designed to help you get into teacher training. They are all free to attend.
@@ -36,7 +36,7 @@
     <% if @featured_events.blank? && @events.blank? %>
       <div class="teaching-events__none" role="alert">
         <div class="teaching-events__none--message">
-          <h3>
+          <h3 class="heading--margin-top-0">
             No events found.
           </h3>
 
@@ -47,7 +47,7 @@
       <div class="teaching-events__listing">
         <% if @featured_events.any? %>
           <div class="teaching-events__events teaching-events__events--featured">
-            <h2>Upcoming Train to Teach events</h2>
+            <h2 class="heading-m">Upcoming Train to Teach events</h2>
 
             <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>
 

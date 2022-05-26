@@ -3,41 +3,6 @@
   font-style: normal;
 }
 
-h1 {
-  @include font;
-  @include font-size("large");
-
-  // Multi-line padded highlight effect without horizontal
-  // gabs between lines.
-  &.yellow {
-    margin: 0 1rem;
-
-    span {
-      box-decoration-break: clone;
-      padding: 0.15em 0;
-      background: $yellow-dark;
-      box-shadow: 1rem 0 0 $yellow-dark, -1rem 0 0 $yellow-dark;
-    }
-  }
-}
-
-h2 {
-  @include font;
-  @include font-size("small");
-  line-height: 1.25;
-}
-
-h3 {
-  @include font;
-  @include font-size("small");
-  font-weight: bold;
-}
-
-h4 {
-  @include font;
-  @include font-size("small");
-}
-
 p,
 ul,
 ol,

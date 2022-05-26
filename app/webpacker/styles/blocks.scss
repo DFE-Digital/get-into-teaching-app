@@ -46,11 +46,6 @@ $space-between-sections: 3.7em;
     border: 3px solid $purple;
     padding: 1em;
 
-    h3 {
-      @include font-size('small');
-      margin: .2em auto .1em;
-    }
-
     ul {
       list-style: none;
       padding: 0;

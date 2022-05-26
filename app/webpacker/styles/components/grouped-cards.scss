@@ -11,7 +11,6 @@
     @include dark-link
   }
 
-  h3,
   &__description {
     margin: .2em auto 1em;
   }
@@ -30,8 +29,7 @@
 
       &__heading {
         h4 {
-          @include font-size(small);
-          display: inline;
+          @extend .heading--margin-0;
         }
       }
 

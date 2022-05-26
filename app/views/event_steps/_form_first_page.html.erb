@@ -3,7 +3,7 @@
     <%= back_link step_path(wizard.previous_key) if wizard.previous_key %>
   </p>
 
-  <%= tag.h1("Sign up for this event") %>
+  <%= tag.h1("Sign up for this event", class: "heading-l") %>
 
   <%= govuk_form_for current_step, url: step_path do |f| %>
     <%= f.govuk_error_summary %>

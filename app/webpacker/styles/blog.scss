@@ -10,13 +10,6 @@
   }
 
   header {
-    margin-bottom: 2em;
-
-    h2 {
-      padding: 0;
-      margin-bottom: 0;
-    }
-
     .published-date {
       margin-top: $indent-amount;
     }
@@ -24,15 +17,6 @@
 }
 
 .blog {
-  header
-  {
-    h1 {
-      @include font-size(large);
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-  }
-
   hr, header p {
     margin-top: 2 * $indent-amount;
   }
@@ -126,12 +110,6 @@
       @include mq($from: desktop) {
         height: 550px;
       }
-    }
-  }
-
-  footer {
-    h2, h3 {
-      padding-left: 0;
     }
   }
 

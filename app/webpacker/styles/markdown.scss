@@ -8,44 +8,16 @@
     @include indent-left-and-right;
   }
 
-  > h1 {
-    margin-top: 0;
-  }
-
-  h1 {
-    @include font-size('xxlarge');
-  }
-
   // allow level two headings (blue boxes) and CTAs to 'overhang' on the left
-  h2 {
+  > h2 {
     @include overhang;
-    @include content-heading;
-  }
-
-  h2:not(:first-child),
-  .call-to-action {
-    margin-top: 1.5em;
-  }
-
-  h3 {
-    @include font-size(medium);
-    margin-bottom: .2em;
-  }
-
-  h4 {
-    @include font-size(small);
-    margin-bottom: .2em;
+    @extend .heading-l, .heading--box-blue;
   }
 
   p,
   table {
     > .button {
       margin-bottom: 1.5em;
-    }
-
-    + h3,
-    + h4 {
-      margin-top: 1.5em;
     }
   }
 
@@ -146,26 +118,15 @@
   }
 
   &.longform {
+    padding-bottom: 3em;
+
     // undo the blue background
-    h2 {
-      background-color: unset;
-      color: $black;
-      margin: 1rem auto .5rem;
-      font-size: 1.4rem;
+    > h2 {
+      @extend .heading-m, .heading--box-transparent, .heading--margin-bottom-0;
     }
 
     h3 {
-      font-size: 1.2rem;
-    }
-
-    p + h2,
-    p + h3 {
-      margin-top: .5em;
-    }
-
-    h2 + p,
-    h3 + p {
-      margin-top: .2em;
+      @extend .heading-s;
     }
   }
 

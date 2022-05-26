@@ -22,11 +22,10 @@ input {
 }
 
 form {
-  .govuk-label,
-  h3.govuk-fieldset__heading {
-    @include font-size("small");
-    color: $black;
-    font-weight: bold;
+  h1.govuk-fieldset__heading,
+  h1.govuk-label-wrapper .govuk-label,
+  h1 {
+    @extend .heading-l;
   }
 
   h1,
@@ -37,6 +36,11 @@ form {
     > label.govuk-label {
       font-size: inherit;
     }
+  }
+
+  legend h3.govuk-fieldset__heading, .govuk-label {
+    font-weight: bold;
+    @include font-size("small")
   }
 
   .govuk-form-group {

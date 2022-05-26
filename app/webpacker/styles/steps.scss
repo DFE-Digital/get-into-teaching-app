@@ -14,7 +14,7 @@
     left: 37px;
     border-left: 6px dotted $black;
     @include mq($until: tablet) {
-      left: 27px;
+      left: 45px;
     }
   }
 
@@ -52,24 +52,6 @@
     &__header {
       display: flex;
       align-items: center;
-
-      h2 {
-        margin: 0;
-        padding: 0;
-        @include font-size(large);
-        line-height: 1.25em;
-        width: calc(100% - 100px);
-        background: transparent;
-        color: $black;
-
-        @include mq($until: tablet) {
-          @include font-size(medium);
-        }
-
-        &:after {
-          display: none;
-        }
-      }
     }
 
     &__content {

@@ -165,11 +165,4 @@
       margin-bottom: -20px;
     }
   }
-
-  h2 {
-    margin: 0;
-    @include mq($until: tablet) {
-      margin-bottom: $indent-amount;
-    }
-  }
 }

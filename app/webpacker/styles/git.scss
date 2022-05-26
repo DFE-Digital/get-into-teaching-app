@@ -2,7 +2,6 @@
 @import 'margins';
 
 @import './components/mixins/cards-grid';
-@import './components/mixins/headings';
 @import './components/mixins/quote';
 
 @import 'icons';
@@ -11,10 +10,10 @@
 @import 'font-sizes';
 @import 'utility';
 @import 'text';
+@import 'headings';
 @import 'layout';
 @import 'links-and-buttons';
 @import 'markdown';
-@import 'feature';
 @import 'featured';
 @import 'feedback-bar';
 @import 'forms';

@@ -1,5 +1,5 @@
 <%= govuk_form_for(@event_search, method: :post, url: "/teaching-events") do |f| %>
-  <h2>Filters</h2>
+  <h2 class="heading-m">Filters</h2>
 
   <div class="teaching-events__filter--group">
     <%= f.govuk_text_field(:postcode, autocomplete: "postal-code", label: { text: "Postcode" }, form_group: { classes: 'reduce-bottom-margin' }) %>

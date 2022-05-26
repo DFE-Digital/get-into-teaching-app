@@ -50,8 +50,7 @@
       flex: 1 0 80%;
 
       h2 {
-        @include font-size(medium);
-        margin: 0;
+        @extend .heading-m, .heading--margin-0;
       }
     }
 
@@ -90,7 +89,7 @@
     padding: 0 2em;
 
     h2 {
-      @include font-size(medium);
+      @extend .heading-m;
     }
 
     * {
@@ -150,16 +149,6 @@
       max-width: 60%;
     }
 
-    h2 {
-      margin: 0;
-      @include font-size(medium);
-
-      .caption {
-        @include font-size(small);
-        font-weight: normal;
-      }
-    }
-
     h2 > *,
     .promo__content {
       display: inline-block;
@@ -201,15 +190,6 @@
       margin-bottom: .4em;
     }
 
-    h2 {
-      .caption {
-        color: $purple;
-        @include font-size(medium);
-      }
-
-      @include font-size(large);
-    }
-
     p:last-of-type {
       margin-bottom: 0;
     }
@@ -239,15 +219,6 @@
 
     @include mq($from: tablet) {
       flex-direction: row;
-    }
-
-    h2 {
-      .caption {
-        color: $purple;
-        @include font-size(medium);
-      }
-
-      @include font-size(large);
     }
   }
 
@@ -297,17 +268,5 @@
 
   .right {
     margin-inline: 1em;
-
-    .caption {
-      @include font-size(medium);
-      font-weight: bold;
-      color: $purple;
-      display: inline-block;
-    }
-
-    h2 {
-      @include font-size(large);
-      margin: 0;
-    }
   }
 }

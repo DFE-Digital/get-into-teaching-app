@@ -8,6 +8,7 @@ $mobile-cutoff: 800px;
   &__title {
     display: block;
     max-width: 90%;
+    padding-top: 3em;
 
     @include mq($from: tablet) {
       display: inline-block;
@@ -170,29 +171,6 @@ $mobile-cutoff: 800px;
 
   &__title {
     z-index: 20;
-
-    &.white h1 {
-      background-color: $white;
-    }
-
-    h1 {
-      background-color: $yellow-dark;
-      padding: .8em .75em .8em 1.75em;
-      margin-left: -1em;
-
-      @include mq($from: tablet) {
-        margin-top: 2em;
-        padding: .8em 2em;
-      }
-
-      > span {
-        @include font-size("large");
-
-        @include mq($from: tablet) {
-          @include font-size("xxlarge");
-        }
-      }
-    }
   }
 
   &__subtitle {

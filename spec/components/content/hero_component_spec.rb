@@ -44,7 +44,7 @@ describe Content::HeroComponent, type: "component" do
 
     describe "title and subtitle" do
       specify "renders the title in a h1 element with a yellow background" do
-        expect(page).to have_css(".hero__title.yellow > h1", text: front_matter["title"])
+        expect(page).to have_css(".hero__title > h1.heading--box-yellow", text: front_matter["title"])
       end
 
       context "when the heading overrides the title" do
@@ -59,7 +59,7 @@ describe Content::HeroComponent, type: "component" do
         let(:extra_front_matter) { { "title_bg_color" => "white" } }
 
         specify "renders the heading with the color class" do
-          expect(page).to have_css(".hero__title.white > h1", text: front_matter["heading"])
+          expect(page).to have_css(".hero__title > h1.heading--box-white", text: front_matter["heading"])
         end
       end
 

@@ -32,7 +32,7 @@ RSpec.describe CallsToAction::Promo::PromoComponent, type: :component do
 
   describe "left side" do
     it { is_expected.to have_css(".promo__left h2", text: "left-heading") }
-    it { is_expected.to have_css(".promo__left h2 > .caption", text: "left-caption") }
+    it { is_expected.to have_css(".promo__left h2 > .caption-m", text: "left-caption") }
     it { is_expected.to have_css(".promo__left .promo__content", text: "left-content") }
     it { is_expected.to have_link("left-link-text", href: "/left-link-target") }
 
@@ -59,7 +59,7 @@ RSpec.describe CallsToAction::Promo::PromoComponent, type: :component do
 
   describe "right side" do
     it { is_expected.to have_css(".promo__right h2", text: "right-heading") }
-    it { is_expected.to have_css(".promo__right h2 > .caption", text: "right-caption") }
+    it { is_expected.to have_css(".promo__right h2 > .caption-l", text: "right-caption") }
     it { is_expected.to have_css(".promo__right", text: "right-content") }
 
     context "when the caption is omitted" do

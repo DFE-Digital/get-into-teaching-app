@@ -17,7 +17,7 @@
   }
 
   h4 {
-    margin: 0;
+    @extend .heading--margin-0;
   }
 
   p {

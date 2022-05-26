@@ -2,7 +2,7 @@ module StoriesHelper
   def story_heading(teacher, position)
     delimiter = ",#{tag.br}\n".html_safe
 
-    tag.h2 { safe_join([teacher, position].compact, delimiter) }
+    tag.h2(class: "heading-l") { safe_join([teacher, position].compact, delimiter) }
   end
 
   def story_image_alt(name)

@@ -7,7 +7,7 @@ describe "Find an event near you", type: :request do
 
   let(:no_events_regex) { /Sorry your search has not found any events/ }
   let(:no_ttt_events_regex) { /There are no Train to Teach events in your chosen month/ }
-  let(:category_headings_regex) { /<h3>(Train to Teach events|Online Q&amp;As|School and University events)<\/h3>/ }
+  let(:category_headings_regex) { /<h3.*>(Train to Teach events|Online Q&amp;As|School and University events)<\/h3>/ }
   let(:types) { Events::Search.available_event_type_ids }
   let(:events) do
     5.times.collect do |index|
@@ -39,7 +39,7 @@ describe "Find an event near you", type: :request do
     end
 
     it "presents the events in date order, per category" do
-      headings = response.body.scan(/<h4>Event (.*)<\/h4>/).flatten.take(events.count)
+      headings = response.body.scan(/<h4.*>Event (.*)<\/h4>/).flatten.take(events.count)
       expect(headings).to eq(%w[4 1 5 2 3])
     end
 
