@@ -1,6 +1,9 @@
 <%= tag.div(class: %w[call-to-action call-to-action--homepage]) do %>
     <%= tag.div(icon, class: "call-to-action__icon__container") %>
-    <%= tag.span(title, class: "call-to-action__heading") %>
+    <%= tag.div(class: "call-to-action__content") do %>
+      <%= tag.span(title, class: "call-to-action__heading") %>
+      <%= tag.p(text) if text.present? %>
+    <% end %>
     <div class="call-to-action__action">
       <%= link %>
     </div>
