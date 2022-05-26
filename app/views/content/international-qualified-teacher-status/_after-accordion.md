@@ -18,6 +18,6 @@ To get advice about iQTS, you can:
 
 - use the live chat service at the bottom of this page
 
-- sign up to [get a teacher training adviser](https://adviser-getintoteachingeducation.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
+- sign up to [get a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
 
 - email us on iqts.pilot@education.gov.uk
