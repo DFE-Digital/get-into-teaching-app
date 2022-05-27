@@ -1,15 +1,17 @@
 <div class="homepage-feature blocks">
   <%= render CallsToAction::HomepageComponent.new(
     icon: "icon-calendar",
-    title: "Have your questions answered at a teacher training event.",
-    link_text: "Find events",
+    title: "Attend a teacher training event",
+    text: "Talk to course providers, teachers and expert advisers to get your questions answered in person or online at an event.",
+    link_text: "Find an event",
     link_target: "/events",
     image: "media/images/content/homepage/here-to-help.jpg")
   %>
 
   <%= render CallsToAction::HomepageComponent.new(
     icon: "icon-person",
-    title: "Get started with a teacher training adviser.",
+    title: "Get one-to-one support",
+    text: "Whether you’re just considering teaching or you’re ready to apply, talk to an experienced teacher for support and advice.",
     link_text: "Get an adviser",
     link_target: "/tta-service",
     image: "media/images/content/homepage/teacher-training-adviser.jpg")

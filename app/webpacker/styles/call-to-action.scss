@@ -145,14 +145,12 @@
     }
 
     .call-to-action__heading {
-      @include reset;
-      align-self: center;
-      padding: 0 1em;
-      @include font-size(medium);
-      line-height: 1.3em;
-      text-decoration-thickness: .12em;
+      margin-top: 0;
+    }
 
+    .call-to-action__content {
       grid-area: 3 / 1 / 4 / 2;
+      padding: 0 1.5em;
     }
 
     .call-to-action__action {
@@ -189,10 +187,13 @@
         }
       }
 
-      .call-to-action__heading {
+      .call-to-action__content {
         grid-area: 2 / 1 / 3 / 3;
-        margin: 1em auto .5em 0;
-        @include font-size('small');
+        margin: 1em auto 0 0;
+
+        .call-to-action__heading {
+          @include font-size('small');
+        }
       }
 
       .call-to-action__action {

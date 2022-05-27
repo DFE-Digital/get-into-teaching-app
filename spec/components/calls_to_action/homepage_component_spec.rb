@@ -6,9 +6,10 @@ RSpec.describe CallsToAction::HomepageComponent, type: :component do
   let(:title) { "Joey" }
   let(:link_text) { "Click here" }
   let(:link_target) { "/some-dir/some-page" }
+  let(:text) { nil }
 
   describe "rendering the component" do
-    let(:kwargs) { { icon: icon, title: title, link_text: link_text, link_target: link_target, image: image } }
+    let(:kwargs) { { icon: icon, title: title, link_text: link_text, link_target: link_target, image: image, text: text } }
 
     let(:component) { described_class.new(**kwargs) }
 
@@ -34,6 +35,14 @@ RSpec.describe CallsToAction::HomepageComponent, type: :component do
 
     specify "the image is present" do
       expect(page.find(".call-to-action__image")["style"]).to include("packs-test/v1/media/images/dfelogo")
+    end
+
+    context "when text is present" do
+      let(:text) { "some text" }
+
+      it "renders the text" do
+        expect(page).to have_css(".call-to-action__content p", text: text)
+      end
     end
   end
 end

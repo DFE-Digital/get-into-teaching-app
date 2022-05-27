@@ -1,11 +1,12 @@
 module CallsToAction
   class HomepageComponent < ViewComponent::Base
-    attr_accessor :icon, :image, :title, :link
+    attr_accessor :icon, :image, :title, :text, :link
 
-    def initialize(icon:, link_text:, link_target:, image:, title: nil)
+    def initialize(icon:, link_text:, link_target:, image:, title: nil, text: nil)
       super
 
       @title         = title
+      @text          = text
       @image         = image
       @icon_filename = icon
 
