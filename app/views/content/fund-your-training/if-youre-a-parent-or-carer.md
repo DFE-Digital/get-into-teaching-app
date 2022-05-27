@@ -14,7 +14,7 @@ navigation: 20.10
 navigation_description: If you have children or other caring responsibilities you may be able to get extra financial support.
 ---
 
-If you have children or other caring responsibilities you may be able to get extra financial support through the following grants and schemes:
+If you have children or other caring responsibilities, you may be able to get extra financial support through the following grants and schemes:
 
 - [Childcare Grant](https://www.gov.uk/childcare-grant)
 - [Parents’ Learning Allowance](https://www.gov.uk/parents-learning-allowance)
