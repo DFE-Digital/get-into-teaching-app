@@ -25,7 +25,6 @@ tags:
   - personal statements
   - qualifications
   - applications
-closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $header_image$
@@ -107,3 +106,4 @@ Be patient and do attend all of your interviews, if you have been offered them, 
 
 [Get some top tips for interview success](/blog/11-top-tips-for-interview-success).
 
+If you're interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). Or find out what to expect in your [initial teacher training](/train-to-be-a-teacher/initial-teacher-training).

@@ -24,7 +24,6 @@ tags:
   - train to teach events
   - applications
   - references
-closing_paragraph: enriching-the-lives-of-young-people
 ---
 
 $notepad$
@@ -80,3 +79,5 @@ Our Train to Teach events will provide you with a wealth of information and help
 ## 9.  Join our support networks on social media
 
 Our Facebook groups for [aspiring teachers](https://www.facebook.com/groups/1357146377672255/) and people thinking of a [career change to teaching](https://www.facebook.com/groups/CareerChangetoTeaching/) offer a really friendly, supportive place to connect with other people applying for teacher training and ask any questions you might have. Our Teacher Training Advisers are also on hand to give expert advice.
+
+If you’re interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). Or find out what to expect in your [initial teacher training](/train-to-be-a-teacher/initial-teacher-training).

@@ -8,6 +8,7 @@ related_content:
     Swapping senior management for students : "/my-story-into-teaching/career-changers/swapping-senior-management-for-students"
     Engineers teach physics : "/subjects/engineers-teach-physics"
     Get into teaching maths : "/subjects/maths"
+    Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/learn-adviser-promo
 navigation: 20.15
