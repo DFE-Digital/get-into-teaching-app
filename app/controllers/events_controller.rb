@@ -10,6 +10,8 @@ class EventsController < ApplicationController
   MAXIMUM_EVENTS_PER_CATEGORY = 1_000
 
   def index
+    breadcrumb "Teacher training events", request.path
+
     @page_title = "Teacher training events"
     @front_matter = {
       "description" => "Get your questions answered at an event.",
@@ -46,6 +48,7 @@ class EventsController < ApplicationController
 
     category_name = t("event_types.#{@event.type_id}.name.plural")
     breadcrumb category_name, event_category_path(category_name.parameterize)
+    breadcrumb @event.name, request.path
   end
 
   def not_available

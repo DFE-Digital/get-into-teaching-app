@@ -27,8 +27,9 @@ RSpec.feature "Breadcrumbs", type: :feature do
 
     it { is_expected.to have_css(".breadcrumbs") }
 
-    it "links to all ancestor pages" do
+    it "links to all ancestor pages and plain text of current page" do
       page.within ".breadcrumbs" do
+        is_expected.to have_text "Nested Page Test"
         is_expected.to have_link "Subfolder", href: "/test/subfolder"
         is_expected.to have_link "Test", href: "/test"
         is_expected.to have_link "Home", href: "/"
@@ -47,9 +48,10 @@ RSpec.feature "Breadcrumbs", type: :feature do
       end
     end
 
-    it "doesn't include the current page" do
+    it "includes the current page in plain text" do
       page.within ".breadcrumbs" do
-        is_expected.not_to have_link "Ways to train"
+        is_expected.not_to have_link "Train to be a teacher"
+        is_expected.to have_text "Train to be a teacher"
       end
     end
   end
