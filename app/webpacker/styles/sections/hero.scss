@@ -96,7 +96,6 @@ $mobile-cutoff: 800px;
 
       &__button {
         @include button;
-        @include chevron;
         margin-top: 1.5em;
         display: inline-block;
       }
@@ -239,7 +238,6 @@ $mobile-cutoff: 800px;
 
     &__button {
       @include button($bg: $white, $fg: $black);
-      @include chevron($color: $black);
       padding: .4em 1em;
 
       @include mq($until: tablet) {

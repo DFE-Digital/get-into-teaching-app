@@ -2,19 +2,9 @@
   position: absolute;
   left: -9999em;
 
-  &:focus,
-  &:visited {
-    color: #0b0c0c;
-  }
-
   &:focus {
     left: 0;
     z-index: 1;
-    outline: 3px solid transparent;
-    color: $black;
-    background-color: $yellow;
-    box-shadow: 0 -2px $yellow, 0 4px $black;
-    text-decoration: none;
   }
 }
 
