@@ -28,7 +28,7 @@ RSpec.describe Cards::LatestEventComponent, type: :component do
         is_expected.to have_link \
           "View event",
           href: url_helpers.event_path(event.readable_id),
-          class: "git-link"
+          class: "link--chevron"
       end
     end
 

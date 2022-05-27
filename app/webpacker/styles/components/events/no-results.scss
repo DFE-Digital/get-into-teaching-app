@@ -15,6 +15,6 @@
   }
 
   a:not(.button) {
-    @extend .git-link, .white, .underline;
+    @extend .link--white;
   }
 }

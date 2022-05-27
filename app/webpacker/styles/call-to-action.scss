@@ -4,8 +4,8 @@
   margin-bottom: 2em;
   display: flex;
 
-  a:not(.button) {
-    @include dark-link;
+  a {
+    @extend .link--dark;
   }
 
   @include mq($until: tablet) {

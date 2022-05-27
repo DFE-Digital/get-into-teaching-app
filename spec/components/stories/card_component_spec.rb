@@ -34,7 +34,7 @@ describe Stories::CardComponent, type: "component" do
   end
 
   specify "includes the name in a link" do
-    is_expected.to have_link(%(Read #{story['name']}'s story), href: story["link"], class: "git-link")
+    is_expected.to have_link(%(Read #{story['name']}'s story), href: story["link"], class: "link--chevron")
   end
 
   specify "no play icon is visible" do

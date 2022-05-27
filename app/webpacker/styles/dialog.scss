@@ -58,7 +58,7 @@
 
   &__text {
     a {
-      @include dark-link;
+      @extend .link--dark;
     }
   }
 

@@ -32,7 +32,7 @@ describe Cards::StoryComponent, type: "component" do
   it { is_expected.to have_content story["snippet"] }
 
   specify "includes the name in a link" do
-    is_expected.to have_link(%(Read #{story['name']}'s story), href: story["link"], class: "git-link")
+    is_expected.to have_link(%(Read #{story['name']}'s story), href: story["link"], class: "link--chevron")
   end
 
   context "with supplied header" do

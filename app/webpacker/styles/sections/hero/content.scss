@@ -23,10 +23,9 @@
         }
 
         a {
+          @extend .link--black, .link--no-underline;
           display: flex;
           flex-grow: 1;
-          color: $black;
-          text-decoration: none;
 
           &:hover {
             text-decoration: underline;
@@ -34,6 +33,10 @@
 
           span {
             flex-grow: 1;
+          }
+
+          &:focus:after {
+            background-image: url('../images/icon-down-white.svg');
           }
 
           &:after {

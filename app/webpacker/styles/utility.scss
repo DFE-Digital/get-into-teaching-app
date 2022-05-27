@@ -16,7 +16,7 @@
   }
 }
 
-@mixin chevron-icon($color, $dimensions, $rotate: '45deg') {
+@mixin chevron-icon($color, $dimensions, $rotate: 45deg) {
   content: "";
   display: inline-block;
   position: relative;
@@ -34,7 +34,7 @@ $chevron-direction-map: (
   down: 135deg
 );
 
-@mixin chevron($color: $white, $after: true, $direction: right, $dimensions: .6em, $focus-color: $black) {
+@mixin chevron($color: $white, $after: true, $direction: right, $dimensions: .6em, $focus-color: $white) {
   $chevron-margin: .1em;
 
   $degrees: map-get($chevron-direction-map, $direction);

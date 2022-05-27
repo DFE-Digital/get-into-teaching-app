@@ -30,7 +30,7 @@ RSpec.describe Cards::FeaturedStoryComponent, type: :component do
     is_expected.to have_link \
       "Read Teacher's story",
       href: "/stories/featured",
-      class: "git-link"
+      class: "link--chevron"
   end
 
   context "with different title" do

@@ -33,11 +33,24 @@
       &:before {
         content: "";
         display: block;
-        background: $yellow;
         width: 100%;
         height: 100%;
         position: absolute;
         top: 0;
+      }
+    }
+
+    picture:last-child {
+      display: none;
+    }
+
+    &:focus {
+      picture:last-child {
+        display: block;
+      }
+
+      picture:first-child {
+        display: none;
       }
     }
   }
