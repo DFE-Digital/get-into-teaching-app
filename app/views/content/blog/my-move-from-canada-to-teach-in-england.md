@@ -66,7 +66,7 @@ My advice would be that:
  
 - you can love your school and love your class, but leadership shapes everything — make sure you respect and trust the people who employ you
  
-- you'll need to put a network in place for when you're no loner running on pure adrenaline — there's a bit of a lull and you start to want help and support
+- you'll need to put a network in place for when you're no longer running on pure adrenaline — there's a bit of a lull and you start to want help and support
  
 For more information about Bohunt Education Trust, you can [visit the Bohunt Education Trust website](https://www.bohunttrust.co.uk/). 
  
