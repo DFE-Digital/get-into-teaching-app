@@ -84,8 +84,6 @@ living costs, to train (depending on your immigration status, you may get a redu
 - you can update, extend or switch your visa to live and work in the UK long-term
 
 
-* 12 October 2022: applications open for courses starting in
-
 
 ## Apply for teacher training
 
@@ -108,7 +106,7 @@ If you do not have qualifications that are equivalent to GCSEs, you may be able 
 
 #### If you do not have a university degree
 
-If you don't have a degree, apply to study a 3 to 4 year [undergraduate course in England](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) which combines a teaching degree with [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
+If you don't have a degree, apply to study a 3 to 4 year [undergraduate course in England](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) which combines a teaching degree with [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) have lots of helpful information about studying at an English university.
 
@@ -116,9 +114,9 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 To get advice about training to teach, you can:
 
-* call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8:30am and 5:30pm (UK local time)
-* use the live chat service at the bottom of this page
-* sign up to [get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
+- call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8:30am and 5:30pm (UK local time)
+- use the live chat service at the bottom of this page
+- sign up to [get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
 
 #### Get help with international qualifications
 
@@ -155,7 +153,7 @@ Any financial support, for example a reduction in your fees to the rate paid by 
 
 ### 4. Search and apply for teacher training courses
 
-You can [find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in England leading to [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS).
+You can [find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
 
 You can search by location, teaching subject and age group. You can also search for courses which pay a salary, and courses where student or skilled worker visa sponsorship is available.
 
@@ -231,10 +229,7 @@ You may need to apply for a different visa to work in England as a qualified tea
 
 When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England.
 
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job">You can learn more about your first teaching job in England</a>
-
 <a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job">Learn more about your first teaching job in England</a>
-
 
 ## Further information
 
