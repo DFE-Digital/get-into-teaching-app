@@ -1,6 +1,6 @@
-### What you can expect from the Department for Education
+## What you can expect from the Department for Education
 
-#### Continuous professional development (CPD) and competitive teaching salaries
+### Continuous professional development (CPD) and competitive teaching salaries
 
 DfE can support your CPD through [national professional qualifications (NPQs)](https://www.gov.uk/government/publications/national-professional-qualifications-npqs-list-of-providers)
 for middle and senior leadership, headship and executive leadership.
@@ -8,7 +8,7 @@ for middle and senior leadership, headship and executive leadership.
 
 [Salaries and benefits](/salaries-and-benefits) explains teaching salaries for newly qualified and more experienced teachers.
 
-#### Supporting our critical workers in education
+### Supporting our critical workers in education
 
 The COVID-19 pandemic has highlighted the vital role of teachers, who continue
 to show extraordinary dedication and commitment. We at DfE are profoundly
@@ -27,7 +27,7 @@ We’re taking action to address some of the common issues that teachers face in
 Teacher mental health is an important focus for DfE. Read our [Teaching blog](https://teaching.blog.gov.uk/) to
 learn more.
 
-### Contact
+## Contact
 
 Sign up for an [online Q&A for returners](/events).
 

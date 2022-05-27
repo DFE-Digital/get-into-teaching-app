@@ -10,6 +10,6 @@ If you already live in the UK, you should consider [applying for teacher trainin
 
 This guidance relates to teaching in England. Different rules apply to teaching in [Wales](https://www.ewc.wales/site/index.php/en/registration/practitioners-trained-outside-wales.html), [Scotland](https://teachinscotland.scot/become-a-teacher/qualified-outside-scotland/) and [Northern Ireland](https://gtcni.org.uk/registration/getting-registered).
 
-## Contact
+## Contact
 
 For help applying for iQTS or more information, contact us on iqts.pilot@education.gov.uk
