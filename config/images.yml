@@ -301,6 +301,11 @@
   variants:
     - "media/images/content/blog/thumbnails/jessica-walmsley.jpg"
 
+"media/images/content/blog/brooke-harvey.jpg":
+  alt: "Brooke Harvey, a Canadian national who moved to England to teach, standing in front of a bookcase."
+  variants:
+    - "media/images/content/blog/thumbnails/brooke-harvey.jpg"
+
 # homepage
 "media/images/content/homepage/here-to-help.jpg":
   alt: "Back of an adviser's T-shirt saying 'here to help' at a teacher training event."
