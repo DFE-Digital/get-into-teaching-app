@@ -21,7 +21,7 @@ If you’re thinking of returning to the classroom, now could be a great time. A
 
 The Department for Education are working with schools to take action in a number of areas to address issues that teachers may face. From [workload reduction](https://www.gov.uk/guidance/school-workload-reduction-toolkit), to [pupil behaviour](https://www.gov.uk/guidance/behaviour-hubs), [wellbeing](https://www.gov.uk/guidance/education-staff-wellbeing-charter) and [flexible working opportunities](https://www.gov.uk/government/collections/flexible-working-resources-for-teachers-and-schools), you may find that the classroom looks very different from when you last taught.
 
-It’s also a good idea to read up on the latest [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards) and review changes to the [curriculum](https://www.gov.uk/topic/schools-colleges-childrens-services/curriculum-qualifications).
+It’s also a good idea to read up on the latest [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards) and review changes to the [curriculum](https://www.gov.uk/topic/schools-colleges-childrens-services/curriculum-qualifications).
 
 ## Get free one-to-one support
 

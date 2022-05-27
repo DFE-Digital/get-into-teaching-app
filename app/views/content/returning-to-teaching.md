@@ -153,7 +153,7 @@ If you’re returning to teaching, you might want to re-familiarise yourself wit
 
 ### Catching up on changes
 
-* review the latest [Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards)
+* review the latest [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards)
 * catch up on changes to the [national curriculum and qualifications](https://www.gov.uk/topic/schools-colleges-childrens-services/curriculum-qualifications)
 * read through [current behaviour management guidelines](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
 * learn about how DfE have improved the [National Professional Qualifications (NPQs)](https://www.gov.uk/government/publications/national-professional-qualifications-npqs-reforms/national-professional-qualifications-npqs-reforms) and if you may be eligible for a fully funded scholarship 
