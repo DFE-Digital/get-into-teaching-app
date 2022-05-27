@@ -58,7 +58,7 @@ If you're already a qualified teacher, find out how you can [teach in England if
 
 Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way.
 
-When you have successfully completed your training, you will be awarded [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) (QTS), a professional qualification valued globally.
+When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
 
 QTS will allow you to teach in all schools in England. Some courses combine QTS with a [postgraduate certificate in education (PGCE)](/what-is-a-pgce) or a [postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional, you can get QTS without a PGCE or PGDE.
 
