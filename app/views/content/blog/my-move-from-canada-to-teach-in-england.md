@@ -24,7 +24,7 @@ Brooke Harvey is a lead practitioner of English at a secondary school in Hampshi
  
 When I did my Master’s at Edinburgh, I fell in love with the culture and knew I’d regret it if I didn’t come back. 
  
-I met a Bohunt Education Trust headteacher at a careers fair – he’d come to Canada on a recruitment trip. It was important to me that I work for people whose leadership and values I respected. So it was great to be able to shake hands with the very people I’d be working for and make sure those values aligned.
+I met my current Bohunt Education Trust headteacher and associate headteacher at a careers fair – they’d come to Canada on a recruitment trip. It was important to me that I work for people whose leadership and values I respected. So it was great to be able to shake hands with the very people I’d be working for and make sure those values aligned.
  
 It’s no small feat to move across the world — and no small sacrifice — so I wanted to do it with as much consideration as possible.    
  
@@ -52,7 +52,9 @@ During Covid, the pastoral element of my role has been huge. It can be really dr
 
 ## What have been the career benefits of teaching in England?
 
-England teaches an entirely different curriculum compared to Canada, and learning on the job takes everything out of you — it is physically exhausting. But it’s been amazing for me career wise because it has given me the opportunity to explore and help shape another curriculum. I’m constantly comparing the different approaches in Canada and England. That perspective is unparalleled and another sort of perk of being an outsider. 
+England teaches an entirely different curriculum compared to Canada, and learning on the job takes everything out of you — it is physically exhausting. But it’s been amazing for me career wise because it has given me the opportunity to explore and help shape another curriculum.
+
+I’m constantly comparing the different approaches in Canada and England. That perspective is unparalleled and another sort of perk of being an outsider. 
  
 ## What advice would you give to other overseas teachers?
 
@@ -64,7 +66,7 @@ My advice would be that:
  
 - you can love your school and love your class, but leadership shapes everything — make sure you respect and trust the people who employ you
  
-- you should ask for the materials you’ll need to prep for the start of term and how to use them — the methods and teaching styles expected of you
+- you'll need to put a network in place for when you're no loner running on pure adrenaline — there's a bit of a lull and you start to want help and support
  
 For more information about Bohunt Education Trust, you can [visit the Bohunt Education Trust website](https://www.bohunttrust.co.uk/). 
  
