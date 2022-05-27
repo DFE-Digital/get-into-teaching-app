@@ -9,7 +9,6 @@
   subtitle_button: "Register for updates"
   subtitle_link: "/mailinglist/signup/name"
   image: "media/images/content/hero-images/0012.jpg"
-  navigation: 5
   navigation_title: "Home"
   navigation_path: "/"
   content:

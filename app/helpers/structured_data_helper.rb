@@ -24,7 +24,7 @@ module StructuredDataHelper
 
     data = {
       headline: frontmatter[:title],
-      image: frontmatter[:images].values.map { |h| asset_pack_url(h["path"]) },
+      image: frontmatter[:images]&.values&.map { |h| asset_pack_url(h["path"]) },
       datePublished: frontmatter[:date],
       keywords: frontmatter[:keywords],
       author: [
@@ -33,7 +33,7 @@ module StructuredDataHelper
           name: author_name || "Get Into Teaching",
         },
       ],
-    }
+    }.compact
 
     structured_data("BlogPosting", data)
   end

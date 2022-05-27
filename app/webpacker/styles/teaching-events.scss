@@ -430,8 +430,8 @@ $icon-size: 3rem;
       grid-template-rows: minmax(2rem, auto) 5rem minmax(2rem, auto) 2rem;
       grid-template-columns: minmax(5rem, auto) minmax(auto, 40rem) 14rem minmax(auto, 20rem) minmax(5rem, auto);
 
-      .breadcrumbs-and-heading {
-        grid-area: 1 / 2 / 3 / 4;
+      .heading {
+        grid-area: 2 / 2 / 3 / 4;
       }
 
       .event-details {
@@ -471,7 +471,7 @@ $icon-size: 3rem;
       }
     }
 
-    .breadcrumbs-and-heading {
+    .heading {
       z-index: 5;
 
       display: flex;
@@ -479,14 +479,8 @@ $icon-size: 3rem;
       flex-direction: column;
       justify-content: space-between;
 
-      .breadcrumbs {
-        margin-top: .5em;
-
-        > .breadcrumb > ol {
-          margin-top: 0;
-          margin-left: 0;
-          padding-left: 0;
-        }
+      @include mq($until: tablet) {
+        margin-top: $indent-amount;
       }
 
       h1 {

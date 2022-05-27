@@ -1,9 +1,11 @@
-<section class="breadcrumbs container container--narrow">
-  <nav class="breadcrumb" aria-label="breadcrumb">
-    <ol>
+<section class="container breadcrumbs">
+  <nav class="govuk-breadcrumbs govuk-breadcrumbs--collapse-on-mobile" aria-label="breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
       <% helpers.breadcrumb_trail do |crumb| %>
         <% next if crumb.current? %>
-        <li><%= link_to crumb.name, crumb.url %></li>
+        <li class="govuk-breadcrumbs__list-item">
+          <%= link_to(crumb.name, crumb.url, class: "govuk-breadcrumbs__link") %>
+        </li>
       <% end %>
     </ol>
   </nav>

@@ -18,7 +18,7 @@ body {
   }
 }
 
-main,
+.main-body,
 .hero {
   @extend %content-width-limiter-shared;
 }
@@ -54,6 +54,10 @@ main,
 $content-max-width: 1200px;
 
 main {
+  margin-bottom: 4em;
+}
+
+.main-body {
   margin-bottom: 3em;
 
   flex-grow: 1;
@@ -80,13 +84,6 @@ section.container {
     justify-content: flex-start;
     margin: 1.5em auto 0;
     max-width: $content-max-width;
-  }
-
-  &--narrow {
-    margin-top: 0;
-    margin-bottom: 0;
-    flex-direction: row;
-    justify-content: flex-start;
   }
 
   // most pages won't have a h1 here but on those where
