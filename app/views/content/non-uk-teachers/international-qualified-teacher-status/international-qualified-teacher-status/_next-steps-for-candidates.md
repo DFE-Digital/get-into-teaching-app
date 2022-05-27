@@ -12,7 +12,7 @@ You will usually need to find a job before you apply for a visa. [Learn more abo
 
 ### Complete your induction
 
-As a newly qualified teacher, you’ll find some schools in England will require you to complete a 2-year induction period. During this time you’ll work and earn a salary as a teacher, and be assessed as part of the Department for Education’s [Early Career Framework](https://www.gov.uk/government/publications/early-career-framework). You’ll be expected to show you meet [English Teachers’ Standards](https://www.gov.uk/government/publications/teachers-standards) and you’ll also benefit from training and mentoring. You’ll need to pass this induction to continue working in English schools.
+As a newly qualified teacher, you’ll find some schools in England will require you to complete a 2-year induction period. During this time you’ll work and earn a salary as a teacher, and be assessed as part of the Department for Education’s [early career framework](https://www.gov.uk/government/publications/early-career-framework). You’ll be expected to show you meet [English teachers’ standards](https://www.gov.uk/government/publications/teachers-standards) and you’ll also benefit from training and mentoring. You’ll need to pass this induction to continue working in English schools.
 
 ### Induction for teachers working outside England
 
