@@ -403,8 +403,6 @@ en:
             address_postcode:
               blank: Enter your postcode
               invalid: Enter a valid postcode
-            send_event_emails:
-              inclusion: Select if you would like to hear about teacher training events
         mailing_list/steps/privacy_policy:
           attributes:
             accept_privacy_policy:
@@ -522,10 +520,7 @@ en:
       mailing_list_steps_subject:
         preferred_teaching_subject_id: Which subject do you want to teach?
       mailing_list_steps_postcode:
-        address_postcode: Your postcode
-        send_event_emails_options:
-          "true": "Yes"
-          "false": "No"
+        address_postcode: Your postcode (optional)
 
       search:
         search: Search for ...
