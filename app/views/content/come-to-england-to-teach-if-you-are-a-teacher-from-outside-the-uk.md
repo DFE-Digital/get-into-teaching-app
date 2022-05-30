@@ -106,7 +106,7 @@ If you’re a qualified teacher from outside the UK you can [work as a teacher i
 You can get one-to-one support if you have [qualified teacher status (QTS)](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) and want to teach secondary chemistry, computing, maths, modern foreign languages or physics. Get help with:
 
 * the application process, such as writing a personal statement and preparing for an interview
-* accessing courses to [improve your subject knowledge](/improve-your-subject-knowledge)
+* accessing courses to [improve your subject knowledge](/train-to-be-a-teacher/subject-knowledge-enhancement)
 * finding [teaching vacancies](https://teaching-vacancies.service.gov.uk/)
 
 <p class="call-to-action__action">

@@ -185,7 +185,7 @@ You could talk about:
 * any relevant skills, interests or achievements
 * your understanding of the national curriculum
 
-[If you're concerned about your subject knowledge](/improve-your-subject-knowledge), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
+[If you're concerned about your subject knowledge](/train-to-be-a-teacher/subject-knowledge-enhancement), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
 
 You can [get support preparing a personal statement from an adviser](/tta-service).
 
