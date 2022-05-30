@@ -23,17 +23,6 @@ $icon-size: 3rem;
   header {
     margin: 1rem;
 
-    h1 {
-      @include reset;
-      background: $yellow;
-      display: inline-block;
-      padding: .4rem;
-
-      @include mq($from: tablet) {
-        padding: 1rem;
-      }
-    }
-
     @include mq($from: tablet) {
       p {
         padding: 0 1rem;
@@ -109,10 +98,6 @@ $icon-size: 3rem;
       flex-basis: 25%;
     }
 
-    h2 {
-      @include font-size(medium);
-    }
-
     &--group {
       p {
         @include reset;
@@ -139,11 +124,6 @@ $icon-size: 3rem;
     &--message {
       padding: 1rem 1rem 2rem;
       background: $grey;
-
-      h3 {
-        margin: 1em 0;
-        @include font-size(large);
-      }
     }
   }
 
@@ -171,7 +151,6 @@ $icon-size: 3rem;
       margin-bottom: 1rem;
 
       h2 {
-        @include font-size(medium);
         margin-block: 1rem 2rem;
         padding-inline: 1rem;
       }
@@ -482,18 +461,6 @@ $icon-size: 3rem;
       @include mq($until: tablet) {
         margin-top: $indent-amount;
       }
-
-      h1 {
-        background: white;
-        display: inline-block;
-        margin: 0;
-        padding: .2em $overhang;
-        margin-left: -$overhang;
-
-        @include mq($from: tablet) {
-          max-width: 20em;
-        }
-      }
     }
 
     .event-details {
@@ -572,10 +539,6 @@ $icon-size: 3rem;
       // standardise so smaller h2 in right col lines up
       margin-top: 2rem;
     }
-
-    article > h2 {
-      @include font-size(large);
-    }
   }
 
   &__message {
@@ -614,12 +577,6 @@ $icon-size: 3rem;
   &__scribble,
   &__how-to-attend {
     margin-top: 2em;
-  }
-
-  &__provider-information {
-    h2 {
-      @include font-size(medium);
-    }
   }
 
   &__video {
@@ -727,17 +684,6 @@ $icon-size: 3rem;
       }
     }
 
-
-    h1 {
-      @include font-size(xxlarge);
-      margin: 0;
-      z-index: 100;
-
-      span {
-        background: $pink;
-      }
-    }
-
     picture {
       img {
         max-height: 12em;
@@ -788,15 +734,6 @@ $icon-size: 3rem;
 
   .subheading {
     grid-area: 1 / 2 / 2 / 3;
-
-    h3 {
-      @include font-size(medium);
-      @include reset;
-      background-color: $pink;
-      color: $black;
-      display: inline-block;
-      padding: .2em .5em;
-    }
   }
 
   figure {

@@ -2,7 +2,6 @@
 @import 'margins';
 
 @import './components/mixins/cards-grid';
-@import './components/mixins/headings';
 @import './components/mixins/quote';
 
 @import 'icons';
@@ -11,10 +10,10 @@
 @import 'font-sizes';
 @import 'utility';
 @import 'text';
+@import 'headings';
 @import 'layout';
 @import 'links-and-buttons';
 @import 'markdown';
-@import 'feature';
 @import 'featured';
 @import 'feedback-bar';
 @import 'forms';
@@ -56,7 +55,6 @@
 @import './components/quote';
 @import './components/search';
 @import './components/colored-stripe';
-@import './components/type-description';
 @import './components/events/no-results';
 @import './components/events/signup-info';
 @import './components/turbolinks-progress-bar';

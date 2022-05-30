@@ -5,14 +5,14 @@
 <% if show_welcome_guide? %>
   <%= render(Registration::MailingListSignupConfirmationComponent.new(mailing_list_session)) %>
 <% else %>
-  <section class="text-content">
-    <h1 class="completed">You've signed up</h1>
+  <section>
+    <h1 class="heading-l heading--box-green">You've signed up</h1>
 
     <p>
       You'll receive a welcome email shortly. If your circumstances change, you can let us know at any time.
     </p>
 
-    <h2>Want to talk to someone?</h2>
+    <h2 class="heading-m">Want to talk to someone?</h2>
 
     <p>Our agents are experts who can answer questions about qualifications, routes into teaching or your application.</p>
 

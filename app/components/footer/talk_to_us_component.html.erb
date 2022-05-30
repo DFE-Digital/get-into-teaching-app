@@ -2,25 +2,25 @@
   <div class="talk-to-us">
     <section class="container">
       <div>
-        <h2 class="purple" id="talk-to-us">Talk to us</h2>
+        <h2 class="heading-m heading--box-purple heading--overlap" id="talk-to-us">Talk to us</h2>
         <div class="content">
           <div class="contact">
             <div class="options">
               <% unless helpers.privacy_page?(request.path) %>
               <div class="live-chat">
-                <h3>Live chat</h3>
+                <h3 class="heading-s heading--normal heading--margin-0">Live chat</h3>
                 <%= render ChatComponent.new %>
               </div>
               <% end %>
               <div>
-                <h3>Call us</h3>
+                <h3 class="heading-s heading--normal heading--margin-0">Call us</h3>
                 <p class="telephone">0800 389 2500</p>
               </div>
             </div>
             <p>Monday to Friday between <strong>8:30am and 5:30pm</strong></p>
           </div>
           <div>
-            <h3>Get a teacher training adviser</h3>
+            <h3 class="heading-s">Get a teacher training adviser</h3>
             <p>
               Teacher training advisers provide free, one-to-one support wherever you are in your journey into teaching. Whether it's just an idea, or you're looking to get back into the classroom, you could get personalised help and support.
             </p>

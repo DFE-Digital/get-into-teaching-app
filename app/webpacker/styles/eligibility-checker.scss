@@ -9,13 +9,6 @@
     margin-left: -2em;
     padding-left: 2em;
     margin-block: 1em;
-
-    h1 {
-      @include font-size("large");
-      @include reset;
-      margin-block: 1em 2em;
-      padding: .3em;
-    }
   }
 
   p.eligibility-checker-disclaimer {

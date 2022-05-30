@@ -3,10 +3,8 @@ article.urgent-call-for-qualified-teachers {
     max-width: 65ch;
   }
 
-  .region-heading {
-    @include content-heading;
-
-    margin-top: 2em;
+  h3.region-heading {
+    @extend .heading-l, .heading--box-blue;
   }
 
   details {

@@ -69,8 +69,11 @@
   }
 }
 
-.content-after-accordion {
-  background-color: $grey;
-  margin: 2em 0;
-  padding: 1em;
+.content_after_accordion,
+.content_before_accordion {
+  margin: 0;
+
+  h2 {
+    @extend .heading-l, .heading--box-blue;
+  }
 }

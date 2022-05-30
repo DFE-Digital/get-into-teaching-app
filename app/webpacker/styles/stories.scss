@@ -13,17 +13,6 @@
     }
   }
 
-  &__header {
-    h2 {
-      @include font-size("large");
-      background-color: inherit;
-      color: $black;
-      padding: .2em 0;
-
-      &:after { content: unset; }
-    }
-  }
-
   &__stories + &__stories {
     margin-top: 2em;
   }
@@ -64,10 +53,6 @@
       padding-left: 1em;
     }
 
-    h2 {
-      @include font-size("medium");
-    }
-
     .stories-feature__subheading {
       @include font-size("small");
       font-weight: bold;
@@ -80,10 +65,6 @@
 }
 
 .story {
-  h1 {
-    @include font-size("xlarge");
-  }
-
   .story__header {
     display: flex;
     align-items: center;
@@ -99,19 +80,7 @@
     }
 
     &__label {
-      h2 {
-        @include font-size("large");
-        border-bottom: none;
-        padding: 0 $indent-amount;
-        margin: 0;
-        color: $black;
-        background: transparent;
-
-        @include mq($until: mobile) {
-          padding: 0;
-          margin-top: $indent-amount;
-        }
-      }
+      padding: 0 $indent-amount;
     }
   }
 

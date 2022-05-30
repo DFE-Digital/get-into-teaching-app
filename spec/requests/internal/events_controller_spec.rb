@@ -62,7 +62,7 @@ describe Internal::EventsController, type: :request do
         it "shows pending #{event_params || default_event_type} events" do
           assert_response :success
           expect(response.body).not_to include("No pending events")
-          expect(response.body).to include("<h4>Pending #{event_type || default_event_type} event</h4>")
+          expect(response.body).to match(%r{<h4.*>Pending #{event_type || default_event_type} event</h4>})
           expect(response.body).not_to include("<h4>Open event</h4>")
         end
       end
@@ -159,7 +159,7 @@ describe Internal::EventsController, type: :request do
         it "shows pending events" do
           assert_response :success
           expect(response.body).to include("This is a pending event")
-          expect(response.body).to include("<h1>Pending provider event</h1>")
+          expect(response.body).to match(%r{<h1.*>Pending provider event</h1>})
         end
       end
 

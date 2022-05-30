@@ -1,10 +1,4 @@
 .event-info {
-  h1 {
-    @include font-size("xlarge");
-    line-height: 1.25;
-    margin: 0;
-  }
-
   &__date {
     margin-top: 0;
     @include font-size("medium");

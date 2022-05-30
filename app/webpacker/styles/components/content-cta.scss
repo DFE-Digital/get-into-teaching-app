@@ -6,10 +6,7 @@
   width: auto;
 
   h3 {
-    margin: 0 0 .5em;
-    @include font-size("medium");
-    background: transparent;
-    color: $black;
+    @extend .heading--margin-top-0;
   }
 
   a {

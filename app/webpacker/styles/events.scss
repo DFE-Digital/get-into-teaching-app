@@ -1,10 +1,4 @@
 .events {
-  h2 {
-    @include content-heading;
-    @include font-size(xlarge);
-    margin-top: 1.5em;
-  }
-
   .types-of-event__header__icon {
     margin-bottom: 5px;
   }
@@ -63,12 +57,6 @@
 
     &__heading {
       margin-bottom: $indent-amount;
-
-      > header h3 {
-        @include font-size(large);
-        margin: 0px;
-        line-height: 1.25;
-      }
     }
 
     &__text {

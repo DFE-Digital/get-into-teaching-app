@@ -15,27 +15,8 @@
       color: $white;
       padding: .6em .8em;
       font-weight: bold;
-      margin-right: .3em;
+      margin-right: 1em;
       @include font-size(large);
-    }
-
-    h2 {
-      margin: 0;
-      background: none;
-      color: $black;
-      @include font-size(large);
-
-      &:after {
-        content: "";
-      }
-
-      @include mq($until: tablet) {
-        @include font-size(small);
-      }
-
-      @include mq($until: desktop) {
-        @include font-size(medium);
-      }
     }
   }
 }

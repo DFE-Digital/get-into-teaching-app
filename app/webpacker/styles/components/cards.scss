@@ -66,12 +66,12 @@
       h2,
       h3,
       h4 {
-        margin: 0;
+        @extend .heading--margin-0;
       }
     }
 
     h3 {
-      margin-bottom: 0;
+      @extend .heading--margin-bottom-0;
     }
 
     &__snippet {
@@ -98,11 +98,6 @@
 }
 
 .cards-with-headers {
-  h2 {
-    padding: 0 $indent-amount $indent-amount;
-    @include font-size("large");
-  }
-
   .card {
     margin-left: 1em;
     overflow: initial;

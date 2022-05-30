@@ -4,15 +4,6 @@
     margin-top: 2em;
   }
 
-  h2,
-  h3,
-  h4,
-  h5 {
-    padding: .8em $indent-amount .4em;
-    @include font-size(large);
-    margin-block: .1em .4em;
-  }
-
   dl {
     @include font-size("small");
 

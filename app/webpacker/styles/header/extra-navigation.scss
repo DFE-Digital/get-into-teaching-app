@@ -57,6 +57,10 @@
 .autocomplete__option {
   padding-left: 1em;
 
+  h3 {
+    @extend .heading-s, .heading--margin-0;
+  }
+
   &:hover,
   &:focus {
     p, h3 {

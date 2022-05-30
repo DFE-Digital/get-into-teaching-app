@@ -4,7 +4,7 @@
   margin-bottom: 2em;
   display: flex;
 
-  a {
+  a:not(.button) {
     @include dark-link;
   }
 
@@ -298,11 +298,6 @@
       bottom: -1.25em;
       right: -1.25em;
       background-color: $purple;
-    }
-
-    h3 {
-      margin: 0px 0px 7px 0px;
-      padding: 0px;
     }
   }
 }

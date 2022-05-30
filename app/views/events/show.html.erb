@@ -3,7 +3,7 @@
 <% end %>
 
 <div class="event-info">
-  <h1><%= @event.name %></h1>
+  <h1 class="heading-l heading--margin-bottom-0"><%= @event.name %></h1>
 
   <p class="event-info__date"><%= format_event_date(@event, stacked: false) %></p>
 
@@ -21,13 +21,13 @@
     <% end %>
   </p>
 
-  <h2>Event information</h2>
+  <h2 class="heading-m heading--box-blue">Event information</h2>
   <div class="event-info__information">
     <p><%= formatted_event_description(@event.description) %></p>
   </div>
 
   <% if @event.building && !@event.is_online %>
-  <h2>Venue information</h2>
+  <h2 class="heading-m heading--box-blue">Venue information</h2>
   <p><%= @event.building.venue %>, <%= event_address(@event) %>.</p>
   <p><%= link_to("Open in Google Maps", "https://maps.google.com/?q=#{event_address(@event)}", target: "blank") %></p>
   <% if display_event_provider_info?(@event) && @event.provider_website_url %>
@@ -40,7 +40,7 @@
   <% end %>
 
   <% if display_event_provider_info?(@event) && event_has_provider_info?(@event) %>
-    <h2>Provider information</h2>
+    <h2 class="heading-m heading--box-blue">Provider information</h2>
     <% if @event.provider_website_url %>
       <p><strong>Event website</strong><br><%= link_to(@event.provider_website_url, @event.provider_website_url, { target: "blank" }) %><em class="icon"></em></p>
     <% end %>
@@ -56,7 +56,7 @@
   <% end %>
 
   <% if @event.video_url %>
-  <h2>Video</h2>
+  <h2 class="heading-m heading--box-blue">Video</h2>
   <div class="responsive-video">
     <iframe title="An event preview" class="responsive-video__iframe" class="lazyload" data-src="<%= embed_event_video_url(@event.video_url) %>"></iframe>
   </div>
@@ -66,7 +66,7 @@
   <% unless EventStatus.new(@event).closed? %>
 
     <% if can_sign_up_online?(@event) %>
-      <h2>How to attend</h2>
+      <h2 class="heading-m heading--box-blue">How to attend</h2>
       <% if @event.is_online %>
         <p>
           To attend this event, you must register for a place. Once registered, you will receive log-in information and joining instructions via email.
@@ -83,18 +83,18 @@
         <% end %>
       </p>
     <% elsif is_event_type?(@event, "School or University event") %>
-      <h2>How to attend</h2>
+      <h2 class="heading-m heading--box-blue">How to attend</h2>
       <p>To register for this event, follow the instructions in the event information section.</p>
 
     <% elsif @event.provider_website_url %>
-      <h2>How to attend</h2>
+      <h2 class="heading-m heading--box-blue">How to attend</h2>
       <p>To attend this event, please <%= link_to("visit this website", @event.provider_website_url, { target: "blank" }) %>.</p>
     <% elsif @event.provider_contact_email %>
-      <h2>How to attend</h2>
+      <h2 class="heading-m heading--box-blue">How to attend</h2>
       <p>To attend this event, please <%= mail_to(@event.provider_contact_email, "email us") %>.<p>
     <% end %>
     <% if @event.scribble_id %>
-      <h2>Attend online</h2>
+      <h2 class="heading-m heading--box-blue">Attend online</h2>
     <% end %>
 
   <% end %>

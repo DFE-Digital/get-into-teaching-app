@@ -93,32 +93,11 @@ section.container {
     flex: 0 1 100%;
     max-width: $content-max-width;
     @include indent-left-and-right;
-
-    h1 {
-      @include font-size(xxlarge);
-      margin-bottom: 3rem;
-      max-width: 30ch;
-
-      .subheading {
-        @include font-size(medium);
-
-        margin-top: .2em;
-      }
-    }
-
-    span.caption {
-      @include font-size(medium);
-      margin-top: 3em;
-      color: $grey-dark;
-    }
-
-    span.caption + h1 {
-      margin-top: 0;
-    }
   }
 
   > article {
     flex: 0 1 65%;
+    margin-bottom: 3em;
 
     &.fullwidth {
       flex: 1 0 100%;

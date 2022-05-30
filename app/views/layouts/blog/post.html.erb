@@ -14,7 +14,7 @@
       <section class="container blog main-body">
         <article class="markdown longform blog-article">
           <header>
-            <%= tag.h1(@front_matter["title"]) %>
+            <%= tag.h1(@front_matter["title"], class: "heading-l heading--margin-bottom-0") %>
             <% if @front_matter.key?("subtitle") %>
               <%= tag.div(@front_matter["subtitle"], role: 'doc-subtitle') %>
             <% end %>
@@ -31,7 +31,7 @@
           <hr>
 
           <footer>
-            <h2>Related to this article</h2>
+            <h2 class="heading-m">Related to this article</h2>
             <div class="blog-tags-list container ">
               <h3>Tags</h3>
               <%= render partial: "blog/tag_list", locals: { tags: @front_matter["tags"] } %>
