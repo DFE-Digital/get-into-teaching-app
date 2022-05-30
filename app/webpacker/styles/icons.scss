@@ -112,3 +112,10 @@
   width: 30px;
   height: 30px;
 }
+
+.icon-warning {
+  @include icon;
+  background-image: url("../images/icon-warning.svg");
+  width: 30px;
+  height: 30px;
+}

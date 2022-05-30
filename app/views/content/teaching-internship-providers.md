@@ -430,3 +430,20 @@ keywords:
   - T.I. programme
   - TI programme
 ---
+
+<section>
+  <div class="content-alert content-alert--fullwidth">
+    <div>
+      <span class="icon icon-warning" aria-hidden="true"></span>
+    </div>
+    <div>
+      <h2 class="heading-m">Applications now closed</h2>
+      
+      <p>Teaching internship applications are now closed. Teaching internships for 2023 will be released later in the autumn term.</p>
+
+      <p>If you’re interested in spending some time in a classroom, you can still get unpaid school experience.</p>
+
+      <p><a class="button button--white" href="https://schoolexperience.education.gov.uk/">Get school <span>experience</span></a></p>
+    </div>
+  </div>
+</section>
