@@ -10,6 +10,7 @@ description: |-
 keywords:
   - life as a teacher
   - train to be a teacher
+  - classroom
 tags:
   - changing career
 ---
