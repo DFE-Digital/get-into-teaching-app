@@ -6,7 +6,7 @@
 
       <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-      <main id="main-content" class="main-body">
+      <main id="main-content" class="main-body" role="main">
         <%= render Stories::StoryComponent.new(@front_matter, @page.data) do %>
           <%= yield %>
         <% end %>

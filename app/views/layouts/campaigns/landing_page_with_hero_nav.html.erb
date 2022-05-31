@@ -6,7 +6,7 @@
 
     <%= render HeaderComponent.new %>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
       <%= render Content::HeroComponent.new(@front_matter) do %>
         <% if @front_matter["hero_nav"].any? %>
           <ol class="hero__nav">
