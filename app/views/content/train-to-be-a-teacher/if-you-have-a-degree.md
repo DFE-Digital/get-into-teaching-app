@@ -17,7 +17,7 @@ navigation_description: Find out how to get QTS if you have a degree or you’re
 
 If you have a degree, or you’re currently studying for one, there are different routes you can take to getting [qualified teacher status](/what-is-qts) (QTS). You need QTS to work in the majority of schools in England including state maintained primary, secondary and special schools.
 
-We also have information for [international students who want to apply for teacher training](/train-to-teach-in-england-as-an-international-student).
+We also have information for [international students who want to apply for teacher training](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
 ## Study for a PGCE or PGDE
 You can study for [a PGCE or PGDE](/what-is-a-pgce) (an academic qualification) with QTS at a university. Most of the time you will be in schools on placement but there is some academic learning. Courses typically take one year but you may be able to study part-time.
