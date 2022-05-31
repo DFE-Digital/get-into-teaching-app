@@ -4,12 +4,9 @@ heading: "Scholarships and bursaries"
 description: |-
    There is extra funding available for some subject areas, find out if you are eligible.
 related_content:
-    Who do you want to teach?  : "/blog/choosing-the-right-teacher-training-course-provider"
-    Becoming a teacher with a hearing impairment : "/train-to-be-a-teacher/get-school-experience"
-    Becoming am autistic teacher  : "blog/a-diary-of-a-trainee-teacher"
-promo_content:
-    -
-    -
+    What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
+    Improve your subject knowledge: "/improve-your-subject-knowledge"
+    Salaries and benefits: "/salaries-and-benefits"
 navigation: 20.10
 navigation_description: There is extra funding available for some subject areas, find out if you are eligible.
 ---

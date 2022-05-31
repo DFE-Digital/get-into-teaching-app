@@ -4,12 +4,9 @@ heading: "Tuition fees and maintenance loans"
 description: |-
     Find out how much money you could get to help pay your fees and living expenses while you train.
 related_content:
-    Who do you want to teach?  : "/blog/choosing-the-right-teacher-training-course-provider"
-    Becoming a teacher with a hearing impairment : "/train-to-be-a-teacher/get-school-experience"
-    Becoming am autistic teacher  : "blog/a-diary-of-a-trainee-teacher"
-promo_content:
-    -
-    -
+    "Who do you want to teach?": "/blog/choosing-the-right-teacher-training-course-provider"
+    Improve your subject knowledge: "/improve-your-subject-knowledge"
+    Salaries and benefits: "/salaries-and-benefits"
 student-finance-calculator:
     name: simple
     arguments:

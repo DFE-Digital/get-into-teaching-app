@@ -7,9 +7,6 @@ related_content:
     Your initial teacher training year : "/train-to-be-a-teacher/initial-teacher-training"
     Get school experience : "/train-to-be-a-teacher/get-school-experience"
     5 reasons to attend a Train to Teach event : "/blog/5-reasons-to-attend-a-train-to-teach-event"
-promo_content:
-    -
-    -
 navigation: 20.10
 navigation_description: Find out about the different arrangements for getting financial support if you live outside England.
 ---
