@@ -11,7 +11,6 @@ navigation: 20.10
 navigation_description: There is extra funding available for some subject areas, find out if you are eligible.
 ---
 
-
 You may be eligible for a teaching bursary or scholarship when training to teach. These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.
 
 Scholarships are offered by independent institutions. They set their own eligibility criteria and you’ll need to apply through the relevant scholarship body.
