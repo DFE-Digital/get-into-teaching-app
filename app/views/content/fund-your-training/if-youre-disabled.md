@@ -4,12 +4,9 @@ heading: "If you're disabled"
 description: |-
     If you are disabled there is financial and practical support available to help you train.
 related_content:
-    Who do you want to teach? : "/blog/choosing-the-right-teacher-training-course-provider"
-    Becoming a teacher with a hearing impairment : "/train-to-be-a-teacher/get-school-experience"
-    Becoming am autistic teacher  : "blog/a-diary-of-a-trainee-teacher"
-promo_content:
-    -
-    -
+    "Who do you want to teach?": "/blog/choosing-the-right-teacher-training-course-provider"
+    Becoming a teacher with a hearing impairment: "/train-to-be-a-teacher/get-school-experience"
+    Becoming an autistic teacher: "blog/a-diary-of-a-trainee-teacher"
 navigation: 20.10
 navigation_description: If you are disabled there is financial and practical support available to help you train.
 ---
