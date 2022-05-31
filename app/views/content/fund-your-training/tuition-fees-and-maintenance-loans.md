@@ -5,8 +5,8 @@ description: |-
     Find out how much money you could get to help pay your fees and living expenses while you train.
 related_content:
     Who do you want to teach?  : "/blog/choosing-the-right-teacher-training-course-provider"
-    Overcoming challenges to become a teacher: hearing impairment : "/train-to-be-a-teacher/get-school-experience"
-   Overcoming challenges to become a teacher: autism : "/blog/a-diary-of-a-trainee-teacher"
+    Becoming a teacher with a hearing impairment : "/train-to-be-a-teacher/get-school-experience"
+    Becoming am autistic teacher  : "blog/a-diary-of-a-trainee-teacher"
 promo_content:
     -
     -
