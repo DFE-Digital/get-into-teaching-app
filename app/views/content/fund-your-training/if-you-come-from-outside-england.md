@@ -11,7 +11,7 @@ promo_content:
     -
     -
 navigation: 20.10
-navigation_description: There are different arrangements for getting financial support if you live outside England.
+navigation_description: Find out about the different arrangements for getting financial support if you live outside England.
 ---
 
 ## In the UK
