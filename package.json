@@ -14,7 +14,7 @@
     "js-cookie": "^3.0.1",
     "lazysizes": "^5.3.2",
     "perfume.js": "^7.0.0",
-    "rails-ujs": "^5.2.7",
+    "rails-ujs": "^5.2.8",
     "sass-mq": "^5.0.1",
     "serialize-javascript": "^6.0.0",
     "set-value": "^4.0.1",
