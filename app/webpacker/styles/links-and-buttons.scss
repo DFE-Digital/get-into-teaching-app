@@ -21,7 +21,7 @@
     color: $white;
     background-color: $black;
     z-index: 100;
-    outline: 1px solid $pink;
+    outline: 2px solid $pink;
     box-shadow: none;
     outline-offset: 0.2em;
   }
@@ -41,7 +41,7 @@
   &:focus {
     color: $white;
     background-color: $black;
-    outline: 1px solid $pink;
+    outline: 2px solid $pink;
     outline-offset: 0.2em;
     box-shadow: none;
 
