@@ -16,7 +16,7 @@ gem "webpacker", ">= 5.4.3"
 # gem 'mini_magick', '~> 4.8'
 
 # Reduces boot times through caching; required in config/boot.rb
-gem "bootsnap", ">= 1.11.1", require: false
+gem "bootsnap", ">= 1.12.0", require: false
 
 # Temporarily adding as part of Ruby 3.1 upgrade, we should be able
 # to remove them once we're on Rails 7.0.1+
