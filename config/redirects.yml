@@ -455,3 +455,12 @@ redirects:
   "/user/login": "/"
   "/user/password": "/"
   "/your-written-application": "/steps-to-become-a-teacher"
+
+  # New nav pages
+  "/ways-to-train": "/train-to-be-a-teacher"
+  "/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/improve-your-subject-knowledge": "/train-to-be-a-teacher/subject-knowledge-enhancement"
+  "/train-to-teach-in-england-as-an-international-student": "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
+  "/international-qualified-teacher-status": "/non-uk-teachers/international-qualified-teacher-status"
+  "/international-returners": "/non-uk-teachers/return-to-england-after-teaching-overseas"
+  "/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk": "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
