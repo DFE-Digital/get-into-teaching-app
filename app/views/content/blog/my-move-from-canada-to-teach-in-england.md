@@ -68,4 +68,4 @@ My advice would be that:
  
 - you'll need to put a network in place for when you're no longer running on pure adrenaline — there's a bit of a lull and you start to want help and support
  
-If you're interested in joing Brooke to teach in a world class education system, discover how you can [come to England to teach](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
+If you're interested in joing Brooke to teach in a world class education system, discover how you can [come to England to teach](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
