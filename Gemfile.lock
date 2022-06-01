@@ -459,10 +459,10 @@ GEM
     sentry-rails (5.3.0)
       railties (>= 5.0)
       sentry-ruby-core (~> 5.3.0)
-    sentry-ruby (5.3.0)
+    sentry-ruby (5.3.1)
       concurrent-ruby (~> 1.0, >= 1.0.2)
-      sentry-ruby-core (= 5.3.0)
-    sentry-ruby-core (5.3.0)
+      sentry-ruby-core (= 5.3.1)
+    sentry-ruby-core (5.3.1)
       concurrent-ruby
     shoulda-matchers (5.1.0)
       activesupport (>= 5.2.0)
@@ -583,7 +583,7 @@ DEPENDENCIES
   secure_headers
   selenium-webdriver (~> 3.142)
   sentry-rails (>= 5.3.0)
-  sentry-ruby (~> 5.3.0)
+  sentry-ruby (~> 5.3.1)
   shoulda-matchers
   simplecov
   skylight (~> 5.3.2)

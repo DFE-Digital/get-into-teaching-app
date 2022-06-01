@@ -55,7 +55,7 @@ gem "loaf", ">= 0.10.0"
 gem "prometheus-client"
 
 gem "sentry-rails", ">= 5.3.0"
-gem "sentry-ruby", "~> 5.3.0"
+gem "sentry-ruby", "~> 5.3.1"
 
 gem "skylight", "~> 5.3.2"
 
