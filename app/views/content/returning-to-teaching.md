@@ -49,7 +49,7 @@ right_column:
     text: |
       Are you a UK-trained teacher and UK citizen currently working abroad?
     link_text: "Return to England to teach"
-    link_target: "/international-returners"
+    link_target: "/non-uk-teachers/return-to-england-after-teaching-overseas"
     icon: "icon-person"
   - title: Take the next step
     text: |
