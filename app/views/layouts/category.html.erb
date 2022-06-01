@@ -6,7 +6,7 @@
 
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main class="category" id="main-content">
+    <main class="category" id="main-content" role="main">
       <%= render Content::HeroComponent.new(@front_matter) %>
 
       <section class="container category__cards main-body">

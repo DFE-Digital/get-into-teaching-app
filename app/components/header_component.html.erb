@@ -15,7 +15,7 @@
 </div>
 <% end %>
 
-<header class="limit-content-width" data-controller="navigation">
+<header class="limit-content-width" data-controller="navigation" role="banner">
   <%= render Header::ExtraNavigationComponent.new(search_input_id: "searchbox__input--desktop") %>
   <%= render Header::LogoComponent.new %>
   <div class="menu-button" id="mobile-navigation-menu-button">

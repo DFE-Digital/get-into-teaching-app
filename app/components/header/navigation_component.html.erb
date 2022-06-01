@@ -1,4 +1,4 @@
-<nav class="hidden-mobile" data-navigation-target="nav" aria-label="Primary navigation">
+<nav class="hidden-mobile" data-navigation-target="nav" aria-label="Primary navigation" role="navigation">
   <ol class="primary" data-navigation-target="primary">
     <% all_resources.each do |resource| %>
       <%= nav_link(resource.title, resource.path) %>
