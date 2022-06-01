@@ -8,7 +8,7 @@ describe Registration::MailingListSignupConfirmationComponent, type: :component 
   let(:component) { described_class.new(mailing_list_session) }
 
   specify "renders a button-style link to the welcome guide" do
-    expect(Capybara.string(rendered_component)).to have_link("Continue your journey", href: "/welcome")
+    expect(Capybara.string(@rendered_content)).to have_link("Continue your journey", href: "/welcome")
   end
 
   describe "#heading_text" do
