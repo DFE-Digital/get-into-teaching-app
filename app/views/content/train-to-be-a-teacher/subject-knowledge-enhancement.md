@@ -1,7 +1,7 @@
 ---
 title: Improve your subject knowledge
 related_content:
-    Get school experience : "/get-school-experience"
+    Get school experience : "/train-to-be-a-teacher/get-school-experience"
     Application tips : "/blog/application-tips-from-a-teacher-training-provider"
     Engineers teach physics : "/subjects/engineers-teach-physics"
     Get into teaching maths : "/subjects/maths"

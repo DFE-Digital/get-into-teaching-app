@@ -5,8 +5,8 @@ RSpec.describe SitemapController, type: :request do
 
   let(:content_pages) do
     {
-      "/ways-to-train" => {
-        name: "Ways to train",
+      "/train-to-be-a-teacher" => {
+        name: "Train to be a teacher",
         priority: 0.8,
         date: "2020-11-11",
       },

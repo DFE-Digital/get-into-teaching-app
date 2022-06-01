@@ -15,7 +15,7 @@ describe CookiePreferencesController, type: :request do
     it { expect(response.body).not_to include("Live chat") }
 
     context "when there is an internal referrer" do
-      let(:referer) { "http://www.example.com/ways-to-train" }
+      let(:referer) { "http://www.example.com/train-to-be-a-teacher" }
 
       it { expect(response.body).to include("Back to page") }
     end
