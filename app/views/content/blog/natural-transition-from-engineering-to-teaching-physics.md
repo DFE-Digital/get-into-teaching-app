@@ -4,7 +4,8 @@ date: "2019-07-29"
 author: Roger Brown
 images:
   roger:
-    thumbnail_path: "media/images/content/blog/thumbnails/stories-roger.jpg"
+    path: "media/images/content/blog/stories-roger.jpg"
+    thumbnail_path: "media/images/content/blog/stories-roger.jpg"
 description: |-
   Physics teacher Roger Brown on how a degree in engineering and varied career set him up perfectly for teaching.
 keywords:

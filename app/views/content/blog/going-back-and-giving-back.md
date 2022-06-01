@@ -4,7 +4,8 @@ date: "2019-07-01"
 author: Sandra Macfarlane
 images:
   stories-sandra:
-    thumbnail_path: "media/images/content/blog/thumbnails/stories-sandra.jpg"
+    path: "media/images/content/blog/stories-sandra.jpg"
+    thumbnail_path: "media/images/content/blog/stories-sandra.jpg"
 description: |-
   Sandra Macfarlane sees herself as a teacher that helps students and gives them a love for what they have to do, whether they want to do it or not.
 keywords:

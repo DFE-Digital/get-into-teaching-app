@@ -3,8 +3,9 @@ title: From NQT to head of biology in 2 years
 date: "2019-11-18"
 author: Sarah Fisher
 images:
-  jessica-walmsley:
-    thumbnail_path: "media/images/content/blog/thumbnails/stories-sarah-f.jpg"
+  q-sarah:
+    path: "media/images/content/blog/stories-sarah-f.jpg"
+    thumbnail_path: "media/images/content/blog/stories-sarah-f.jpg"
 description: |-
   Sarah Fisher shares her story of how she became a department head in a subject she loves.
 keywords:

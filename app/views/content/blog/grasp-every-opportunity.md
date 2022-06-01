@@ -4,7 +4,8 @@ date: "2019-10-21"
 author:  Paul Evason
 images:
   q-paul:
-    thumbnail_path: "media/images/content/blog/thumbnails/stories-paul.jpg"
+    path: "media/images/content/blog/stories-paul.jpg"
+    thumbnail_path: "media/images/content/blog/stories-paul.jpg"
 description: |-
   Assistant headteacher Paul Evason shares how he progressed from being a new qualifed teacher to taking on a management role.
 keywords:

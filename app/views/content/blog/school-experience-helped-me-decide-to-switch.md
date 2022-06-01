@@ -4,7 +4,8 @@ date: "2020-02-10"
 author: Zainab Kasmani
 images:
   q-zainab:
-    thumbnail_path: "media/images/content/blog/thumbnails/stories-zainab.jpg"
+    path: "media/images/content/blog/stories-zainab.jpg"
+    thumbnail_path: "media/images/content/blog/stories-zainab.jpg"
 description: |-
   Going part-time at work and volunteering in a school helped Zainab Kasmani find out if teaching was the right career.
 keywords:

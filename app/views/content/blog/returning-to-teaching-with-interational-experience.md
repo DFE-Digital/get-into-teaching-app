@@ -4,9 +4,10 @@ date: "2019-10-07"
 author: Katie Lockett
 images:
   q-katie:
-    thumbnail_path: "media/images/content/blog/thumbnails/stories-katie.jpg"
+    path: "media/images/content/blog/stories-katie.jpg"
+    thumbnail_path: "media/images/content/blog/stories-katie.jpg"
 description: |-
-  Head of Faculty Katie Lockett shares her story of returning to teach in England from China.
+  Head of faculty Katie Lockett shares her story of returning to teach in England from China.
 keywords:
   - life as a teacher
   - day in the life

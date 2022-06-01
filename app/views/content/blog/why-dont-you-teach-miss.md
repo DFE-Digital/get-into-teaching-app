@@ -4,7 +4,8 @@ date: "2019-12-02"
 author: Emma Maskell
 images:
   q-emma:
-    thumbnail_path: "media/images/content/blog/thumbnails/stories-emma.jpg"
+    path: "media/images/content/blog/stories-emma.jpg"
+    thumbnail_path: "media/images/content/blog/stories-emma.jpg"
 description: |-
   Emma Maskell shares her route into teaching
 keywords:

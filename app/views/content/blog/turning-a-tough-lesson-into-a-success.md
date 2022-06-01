@@ -4,7 +4,8 @@ date: "2019-08-26"
 author: Danny Holliday
 images:
   danny:
-    thumbnail_path: "media/images/content/blog/thumbnails/stories-dannyy.jpg"
+    path: "media/images/content/blog/stories-danny.jpg"
+    thumbnail_path: "media/images/content/blog/stories-danny.jpg"
 description: |-
   Teaching is a massive responsibility; you're tasked with working with hundreds of students each day, and they're placed into your care – that's quite a demanding responsibility. But it's part of what you do as a teacher.
 keywords:
