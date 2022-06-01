@@ -68,6 +68,7 @@ RSpec/InstanceVariable:
   Exclude:
     - spec/features/content_pages_spec.rb
     - spec/requests/redirects_spec.rb
+    - spec/components/**/*.rb
 
 RSpec/NamedSubject:
   Exclude:

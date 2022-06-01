@@ -29,7 +29,7 @@ describe Footer::CookieAcceptanceComponent, type: "component" do
     end
 
     specify "nothing is rendered" do
-      expect(rendered_component).to be_empty
+      expect(@rendered_content).to be_empty
     end
   end
 end

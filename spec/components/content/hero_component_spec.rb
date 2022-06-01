@@ -93,14 +93,14 @@ describe Content::HeroComponent, type: "component" do
         let(:component) { described_class.new(front_matter.merge("image" => nil)) }
 
         specify "nothing is rendered" do
-          expect(rendered_component).to be_empty
+          expect(@rendered_content).to be_empty
         end
       end
 
       context "when an image is present in the front matter" do
         specify "the hero renders it" do
           expect(page).to have_css("img[data-lazy-disable=true]")
-          expect(rendered_component).to match(/images\/.*[0-9a-f]+\.jpg/)
+          expect(@rendered_content).to match(/images\/.*[0-9a-f]+\.jpg/)
         end
       end
     end
