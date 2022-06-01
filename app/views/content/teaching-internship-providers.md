@@ -443,7 +443,7 @@ keywords:
 
       <p>If you’re interested in spending some time in a classroom, you can still get unpaid school experience.</p>
 
-      <p><a class="button button--white" href="https://schoolexperience.education.gov.uk/">Get school <span>experience</span></a></p>
+      <p><a class="button button--white" href="/train-to-be-a-teacher/get-school-experience">Get school <span>experience</span></a></p>
     </div>
   </div>
 </section>
