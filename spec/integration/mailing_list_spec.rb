@@ -67,9 +67,8 @@ RSpec.feature "Mailing list sign up", :integration, type: :feature, js: true do
     select "Chemistry"
     click_on "Next step"
 
-    expect(page).to have_text("Would you like to hear about teacher training events in your area?")
-    click_label "Yes"
-    fill_in "Your postcode", with: "TE57 1NG"
+    expect(page).to have_text "If you give us your postcode"
+    fill_in "Your postcode (optional)", with: "TE57 1NG"
     click_on "Next step"
 
     expect(page).to have_text("Accept privacy policy")
