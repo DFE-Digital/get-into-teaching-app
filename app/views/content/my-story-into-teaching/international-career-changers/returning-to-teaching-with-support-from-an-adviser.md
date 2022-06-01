@@ -12,7 +12,7 @@ explore:
   - card_type: featured story
   - card_type: chat online
 more_information:
-  link: /train-to-teach-in-england-as-an-international-student
+  link: /non-uk-teachers/train-to-teach-in-england-as-an-international-student
   text: International candidates information
 build_layout_from_frontmatter: true
 description: |-
