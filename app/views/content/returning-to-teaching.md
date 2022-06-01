@@ -134,7 +134,7 @@ to find the best opportunity for you. Vacancies with flexible working opportunit
 
 $q-helen-returner$
 
-[Read Helen's top tips for returning teachers](/my-story-into-teaching/returners/top-tips-for-returning-teachers).
+[Read Helen's top tips for returning teachers](/blog/top-tips-for-returning-teachers).
 
 ## Use the early career framework (ECF) resources
 

@@ -5,7 +5,6 @@ description: |-
   Get school experience to explore what life is like in the classroom before you start your initial teacher training (ITT). Discover if teaching is for you.
 related_content:
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
-    School experience helped me decide to switch : "/my-story-into-teaching/career-changers/school-experience-helped-me-decide-to-switch"
     Train to Teach events : "/event-categories/train-to-teach-events"
 calls_to_action:
     get-school-experience:
