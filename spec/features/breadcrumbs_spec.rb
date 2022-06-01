@@ -37,7 +37,7 @@ RSpec.feature "Breadcrumbs", type: :feature do
   end
 
   context "when query params are present" do
-    let(:path) { page_path("ways-to-train", amazing: "yes") }
+    let(:path) { page_path("train-to-be-a-teacher", amazing: "yes") }
 
     it { is_expected.to have_css(".breadcrumbs") }
 

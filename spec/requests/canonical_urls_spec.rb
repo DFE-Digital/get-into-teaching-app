@@ -18,7 +18,7 @@ RSpec.describe "Canonical URLs", type: :request do
   context "when requesting a path with query parameters" do
     before { get "/ways-to-train", params: { some: "param" } }
 
-    it { is_expected.to include(canonical_tag("/ways-to-train")) }
+    it { is_expected.to include(canonical_tag("/train-to-be-a-teacher")) }
   end
 
   def canonical_tag(path = nil)
