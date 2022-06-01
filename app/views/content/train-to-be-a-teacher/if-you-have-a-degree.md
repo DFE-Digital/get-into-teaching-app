@@ -5,7 +5,7 @@ description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
     Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
-    Improve your subject knowledge : "/improve-your-subject-knowledge"
+    Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
     Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:

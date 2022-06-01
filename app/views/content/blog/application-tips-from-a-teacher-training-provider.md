@@ -42,7 +42,7 @@ The personal statement is your shop window. You will be asked to focus on why yo
 
 Remember to tailor your statement to either the phase or the subject you are wanting to teach. Trying to adapt it to cover both primary and secondary, or two different subjects, is not advised.
 
-Your personal statement is also an opportunity to acknowledge any gaps in your subject knowledge that you think you might need to plug. Not every provider will automatically consider a [Subject Knowledge Enhancement (SKE)](/improve-your-subject-knowledge) course when reading an application, particularly if it’s for an application for something that is outside of your degree discipline. Take this opportunity to suggest that you would be happy to undertake a SKE course to enhance your existing knowledge ahead of starting your teacher training course. This shows a commitment to your own professional development.
+Your personal statement is also an opportunity to acknowledge any gaps in your subject knowledge that you think you might need to plug. Not every provider will automatically consider a [Subject Knowledge Enhancement (SKE)](/train-to-be-a-teacher/subject-knowledge-enhancement) course when reading an application, particularly if it’s for an application for something that is outside of your degree discipline. Take this opportunity to suggest that you would be happy to undertake a SKE course to enhance your existing knowledge ahead of starting your teacher training course. This shows a commitment to your own professional development.
 
 You may wish to demonstrate your awareness of the hard work and commitment required to undertake teaching as a career but also demonstrate how excited you are to start your journey.
 
