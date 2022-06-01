@@ -27,3 +27,5 @@ In my previous career I was creating, processing and presenting information to d
 I really enjoy revisiting all the books I once studied as a student, and find it invigorating to be able to look at them with a fresh perspective. When teaching 'The Canterbury Tales', there's one character who carries a dog around in her bag – so I make the connection with those Hollywood actresses that carry small dogs around in their handbags. I find I can have a lot of fun in lessons, and really show what it is I'm enthusiastic about within a particular text. It's fantastic!
 
 You have to think on your feet a lot. Being able to adapt really helps when you're faced with 30 students who all have very different personalities and learning needs and when you're making the sort of impact I've experienced, there's nothing better.
+
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).

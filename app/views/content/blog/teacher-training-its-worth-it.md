@@ -25,3 +25,5 @@ I chose a teacher training course led by a school with the Arthur Terry National
 I had to demonstrate my potential as a teacher. I had to teach some year 7 students, and that was the best part of the interview! I would advise others to prepare well in advance and to plan your lesson in as much detail as you can – but most importantly, 'be yourself.'
 
 Teacher training has been by far one of the most fulfilling experiences of my life. It has made me realise my potential, testing the limits of my patience, confidence, organisational skills and empathy, as well as academic ability.
+
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).

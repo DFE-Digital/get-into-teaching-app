@@ -20,7 +20,7 @@ $stories-sandra$
 
 For me, the teachers who stick in my mind are the ones that gave me their time and effort, and really prepared me for my future. I chose to train as a teacher so that I could do the same and give something back.
 
-### Proudest moment
+## Proudest moment
 
 One of my proudest moments was helping a GCSE student to achieve an A* in her RE exam, despite having a target grade of D.
 
@@ -31,3 +31,5 @@ Giving pupils a push to get that grade makes the biggest difference to them and 
 This particular pupil went on to study A levels at the school, with her top GCSE grade providing a major confidence boost.
 
 Once she got her A*, it gave her everything she needed to see that she could achieve anything. When she got her results, she spoke to me and said, 'It was your teaching style and it was you who made that possible. You've given me the time and energy to help me get what I needed to get.' That was just a phenomenal experience.
+
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).

@@ -39,3 +39,5 @@ Teaching and learning does not stop with the bell at the end of the school day. 
 Learning and reflecting on your own practice becomes paramount to your development as a teacher. Seeking out new strategies and advice from colleagues is an ongoing process that ensures your own learning evolves.
 
 Students are amazing to work with, they're funny and inquisitive – they challenge you to spark their interest in your subject. Being part of a learning community is a wholly worthwhile experience that cannot be measured in monetary terms or student achievement alone.
+
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).

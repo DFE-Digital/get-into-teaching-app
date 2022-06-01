@@ -26,7 +26,7 @@ I missed being at the cutting edge of educational research, like I felt I had be
 
 I started looking for jobs in January. I looked in the normal places like ETeach and TES.
 
-### Interviews from a distance
+## Interviews from a distance
 
 Before I applied, I always emailed the head teacher of the school to ask if they would consider international applicants and if they would interview me on Skype.
 
@@ -36,11 +36,11 @@ I was offered a job in February, 2 months after I started looking. I was used to
 
 My international school was very supportive. They contacted the head teachers in England to describe my teaching. They also provided permission for me to share performance management reviews and videos of me teaching.
 
-### Moving home
+## Moving home
 
 Moving from China to England was very easy. Like most international schools, mine had a comprehensive repatriation package and arranged my flights and shipment. They even arranged for my cat to be repatriated for me!
 
-### Back in an English school
+## Back in an English school
 
 Starting back at an English state school was hard, like starting any new job - so much to learn! But it didn't feel different just because I was back in England. By October half term, my new school felt like home.
 
@@ -60,3 +60,5 @@ It's so much easier here to engage with research, learn new things and try them 
 * Engage with social media, blogs and education books to stay up-to-date while away
 * Visit schools and attend conferences on your visits back to the UK
 * Don't worry about behaviour management - honestly, teenagers are teenagers everywhere!
+
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).

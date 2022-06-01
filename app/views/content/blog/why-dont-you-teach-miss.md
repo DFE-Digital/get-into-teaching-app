@@ -27,3 +27,5 @@ We all have mentors assigned to us. They are there to support you with anything 
 You don't know how kids are going to be when you go into a classroom, or how they're going to react to you. The difference in my teaching and confidence now from when I first started has improved immensely.
 
 When you see kids that actually understand something after you've taught them, it does make it all worthwhile. It's really rewarding – I know it's a cliché, but it is. If you've got the passion and you're committed to it, then definitely go ahead.
+
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).

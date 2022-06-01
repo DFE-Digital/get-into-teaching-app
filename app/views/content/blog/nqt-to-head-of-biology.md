@@ -16,19 +16,19 @@ tags:
   - career progression
 ---
 
-Since this blog post was first published newly qualified teacher (NQT) status has been replaced with [qualified teacher status (QTS)](/what-is-qts).
+Since this blog post was first published newly qualified teacher (NQT) status has been replaced with early career teacher (ECT).
 
 $q-sarah$
 
 Two years after qualifying as a teacher, I progressed to head of biology, climbing the career ladder. I always had an inkling that teaching was the right direction.
 
-### I knew teaching was for me
+## I knew teaching was for me
 
 From an early age, I knew a teaching career was for me. I could not imagine working a typical nine-to-five desk job. Every day in teaching brings a new challenge and new situations, which is what makes the job so exciting.
 
 When your pupils have those 'light bulb' moments, hearing the sudden 'So that's how it works!' and seeing them take your subject into A level and beyond makes the job so worthwhile.
 
-### So grateful
+## So grateful
 
 I am extremely proud of my teaching achievements and career progression so far. The encouragement and support from my head of faculty really helped; they saw the potential in me and I'm so grateful for that opportunity.
 
@@ -38,6 +38,8 @@ I also act as a teaching and learning mentor, which allows me to work with staff
 
 I love being able to work with teachers of all backgrounds, experienced to newly qualified, sharing good practice and developing whole-school strategies. I am currently facilitating an NQT leadership programme for teachers across the borough, which I am thoroughly enjoying.
 
-### My advice
+## My advice
 
 I would recommend hard work, maintaining your love for the job, and a want to bring about positive change to young peoples' lives. Undeniably, teaching is hard work – but the knowledge that you have helped to motivate young people and helped shape their future brings more satisfaction than any other job I can think of.
+
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).

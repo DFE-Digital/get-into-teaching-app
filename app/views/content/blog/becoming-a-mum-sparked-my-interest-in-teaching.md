@@ -31,3 +31,5 @@ I wouldn't say I look like your stereotypical physics teacher and I probably don
 Working with young people and helping them to understand the world around them is massively rewarding. I love that I can be creative, manage my own classroom and make science fun – which is, after all, the first step in getting students to learn.
 
 I now have job security, opportunities for progression, new skills and a postgraduate qualification. Not to mention the new car that isn't falling apart, a well-deserved holiday booked, paid-off credit cards and a little put away for a rainy day.
+
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).

@@ -33,3 +33,5 @@ Once we got out to the field, they weren't prepared to take part at all. I had t
 There's so many different things you can do with rugby – you take out that physical side of the game and it's still competitive, it still requires the same skills.
 
 That lesson had been quite a challenge for me to turn around, and – seeing them turn up to play rugby in their own time – I really felt like I'd achieved something.
+
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).
