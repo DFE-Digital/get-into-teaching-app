@@ -406,7 +406,7 @@ $icon-size: 3rem;
     grid-template-rows: repeat(3, auto) 1em;
 
     @include mq($from: tablet) {
-      grid-template-rows: minmax(2rem, auto) 5rem minmax(2rem, auto) 2rem;
+      grid-template-rows: minmax(2rem, auto) minmax(5rem, auto) minmax(2rem, auto) 2rem;
       grid-template-columns: minmax(5rem, auto) minmax(auto, 40rem) 14rem minmax(auto, 20rem) minmax(5rem, auto);
 
       .heading {
