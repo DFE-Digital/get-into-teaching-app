@@ -24,6 +24,7 @@
     chat:
       name: chat_online
       arguments:
+        heading_tag: h3
         text: |-
           <p>If you're unsure about whether you qualify for a bursary or
           scholarship you can chat to us, or call us on <a href="tel:08003892500">0800 389 2500</a>.</p>
