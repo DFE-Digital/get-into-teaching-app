@@ -41,9 +41,10 @@ class TeachingEventsController < ApplicationController
   end
 
   def show
-    breadcrumb "Get into Teaching events", "/teaching-events"
-
     @event = TeachingEvents::EventPresenter.new(retrieve_event)
+
+    breadcrumb "Get into Teaching events", "/teaching-events"
+    breadcrumb @event.name, request.path
 
     @page_title = @event.name
 
