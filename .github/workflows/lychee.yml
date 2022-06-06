@@ -15,10 +15,12 @@ jobs:
       - name: Link Checker
         id: lychee
         uses: lycheeverse/lychee-action@v1.5.0
+        continue-on-error: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
         with:
           args: --exclude-mail --max-retries 20 app/views/content
+          fail: true
 
       - uses: Azure/login@v1
         with:
@@ -33,7 +35,7 @@ jobs:
 
       - name: Read Lychee output into var
         id: lychee-output
-        if: ${{ steps.lychee.outputs.exit_code != 0 }}
+        if: ${{steps.lychee.outcome}} == "failure"
         run: |
           DATA=$(cat  ./lychee/out.md)
           echo "LYCHEE_OUTPUT<<EOF" >> $GITHUB_ENV
@@ -42,14 +44,14 @@ jobs:
 
       - name: Slack Markdown Converter
         id: convert
-        if: ${{ steps.lychee.outputs.exit_code != 0 }}
+        if: ${{steps.lychee.outcome}} == "failure"
         uses: LoveToKnow/slackify-markdown-action@v1.0.0
         with:
           text: |
                 ${{ env.LYCHEE_OUTPUT }}
 
       - name: Slack Notification
-        if: ${{ steps.lychee.outputs.exit_code != 0 }}
+        if: ${{steps.lychee.outcome}} == "failure"
         uses: rtCamp/action-slack-notify@master
         env:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
