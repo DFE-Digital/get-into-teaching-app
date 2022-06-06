@@ -228,6 +228,10 @@
   &__content {
     flex: 0 1 50%;
     margin-inline: 1em;
+    
+    a {
+	    color: $black;
+    }
 
     ul {
       list-style: none;
