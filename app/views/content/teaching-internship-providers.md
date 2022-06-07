@@ -439,7 +439,7 @@ keywords:
     <div>
       <h2 class="heading-m">Applications now closed</h2>
       
-      <p>Teaching internship applications are now closed. Teaching internships for 2023 will be released later in the autumn term.</p>
+      <p>Teaching internship applications are now closed. Applications will reopen in early 2023.</p>
 
       <p>If you’re interested in spending some time in a classroom, you can still get unpaid school experience.</p>
 
