@@ -2,7 +2,7 @@ module CallsToAction
   class SimpleComponent < ViewComponent::Base
     attr_accessor :icon, :title, :text, :link
 
-    def initialize(icon:, link_text:, link_target:, title: nil, text: nil, hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
+    def initialize(icon:, link_text: nil, link_target: nil, title: nil, text: nil, hide_on_mobile: false, hide_on_tablet: false, hide_on_desktop: false)
       super
 
       @icon_filename = icon
@@ -20,7 +20,7 @@ module CallsToAction
 
     def before_render
       @icon = icon_element(@icon_filename)
-      @link = link_to(@link_text, @link_target, class: "button")
+      @link = link_to(@link_text, @link_target, class: "button") if @link_text && @link_target
     end
 
   private

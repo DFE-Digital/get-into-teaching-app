@@ -53,6 +53,24 @@ RSpec.describe CallsToAction::SimpleComponent, type: :component do
       end
     end
 
+    context "when no link is present" do
+      let(:kwargs) { { icon: icon, title: title } }
+
+      specify "no paragraph tag should be rendered" do
+        expect(page).not_to have_css("a")
+      end
+    end
+
+    context "when a block is passed in instead of text" do
+      let(:custom_content) { "Custom content" }
+
+      before { render_inline(described_class.new(**kwargs)) { custom_content } }
+
+      specify "the custom content is rendered in the CTA" do
+        expect(page).to have_css(".call-to-action__text", text: custom_content)
+      end
+    end
+
     describe "utility classes" do
       %w[mobile tablet desktop].each do |size|
         context "hiding on #{size}" do
