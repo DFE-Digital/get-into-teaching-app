@@ -24,3 +24,5 @@ You’ll need a degree and [qualified teacher status](/what-is-qts) (QTS) to wor
 [Teacher training courses for graduates](https://www.find-postgraduate-teacher-training.service.gov.uk/) may also work for you. If you have knowledge and experience in a particular subject area there are specific training courses you can choose.
 
 If you're concerned about your subject knowledge, you may also be able to do a <a href="/train-to-be-a-teacher/subject-knowledge-enhancement">'subject knowledge enhancement' (SKE) course</a>. This can help if you have an unrelated degree but relevant professional experience, or you haven't used your subject knowledge for a while.
+
+Find information if you're a [non-UK citizen interested in teaching in England](/non-uk-teachers).

@@ -1,19 +1,19 @@
 ---
-title: "Come to England to teach if you're a teacher from outside the UK"
+title: "Teach in England if you trained overseas"
 description: |-
-  Come to England to teach if you're a qualified teacher from outside the UK
+  Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
+related_content:
+    Career progression stories: "/my-story-into-teaching/career-progression"
+    Salaries and benefits of teaching in England : "/salaries-and-benefits"
+    A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
+promo_content:
+    - content/train-to-be-a-teacher/promos/get-adviser-promo
+navigation: 20.20
+navigation_title: Teach in England if you trained overseas
+navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from outside the UK.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
 backlink: "../../"
-right_column:
-  ctas:
-    - title: Online Q&As
-      text: |
-        Come to an online event where you can ask advice from our panel of
-        teaching experts about coming to teach in England.
-      link_text: "Sign up"
-      link_target: "/event-categories/online-q-as"
-      icon: "icon-calendar"
 keywords:
   - International
   - Overseas
@@ -63,7 +63,7 @@ You’ll earn a [competitive salary](/salaries-and-benefits), get supported in y
 
 You could also consider teaching in [Wales](https://educators.wales), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
-Not qualified as a teacher yet? Find out [how to train to teach in England as an international applicant](/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, but would like to gain a professional teaching qualification which is equivalent to English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/international-qualified-teacher-status).
+Not qualified as a teacher yet? Find out [how to train to teach in England as an international applicant](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, but would like to gain a professional teaching qualification which is equivalent to English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status).
 
 ## What you need to start teaching
 
@@ -106,7 +106,7 @@ If you’re a qualified teacher from outside the UK you can [work as a teacher i
 You can get one-to-one support if you have [qualified teacher status (QTS)](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) and want to teach secondary chemistry, computing, maths, modern foreign languages or physics. Get help with:
 
 * the application process, such as writing a personal statement and preparing for an interview
-* accessing courses to [improve your subject knowledge](/improve-your-subject-knowledge)
+* accessing courses to [improve your subject knowledge](/train-to-be-a-teacher/subject-knowledge-enhancement)
 * finding [teaching vacancies](https://teaching-vacancies.service.gov.uk/)
 
 <p class="call-to-action__action">

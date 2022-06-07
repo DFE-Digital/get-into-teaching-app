@@ -1,10 +1,18 @@
 ---
-title: Return to teaching from overseas
+title: Return to England after teaching overseas
 image: "media/images/content/hero-images/0014.jpg"
 backlink: "../../"
 description: |-
-  Return to England to teach with the help of a teacher training adviser.
-  Courses and events are available to help make your transition easier.
+  Return to England after teaching overseas and bring your skills and experience back to an English classroom. Get support to make your transition easier.
+related_content:
+    Returning to teaching with international experience : "/my-story-into-teaching/international-career-changers/returning-to-teaching-with-international-experience"
+    Returning from teaching abroad : "/my-story-into-teaching/international-career-changers/returning-to-teaching-with-support-from-an-adviser"
+    Salaries and benefits of teaching in England : "/salaries-and-benefits"
+promo_content:
+    - content/train-to-be-a-teacher/promos/learn-adviser-promo
+navigation: 20.15
+navigation_title: Return to England after teaching overseas
+navigation_description: Bring your international skills and experience back to an English classroom and return to teach in England.
 date: "2020-04-07"
 accordion:
   numbered: true
@@ -45,14 +53,6 @@ keywords:
   - teachers standards
   - standards
   - chartered college of teaching
-right_column:
-  ctas:
-    - title: Take the next step
-      text: |
-        Get support to take the next step at an event.
-      link_text: "Attend an event"
-      link_target: "/events"
-      icon: "icon-calendar"
 ---
 
 Are you a UK-trained teacher and UK citizen currently teaching abroad? Our
@@ -62,8 +62,8 @@ perspective.
 If you're thinking about coming home to teach, we want to help.
 
 If you are a non-UK citizen interested in teaching or training to teach in
-England, please read our [guidance for international teachers](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk) or
-[guidance for international trainees](/train-to-teach-in-england-as-an-international-student). 
+England, please read our [guidance for international teachers](/non-uk-teachers/teach-in-england-if-you-trained-overseas) or
+[guidance for international trainees](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). 
 
 ## Return to teaching success stories
 

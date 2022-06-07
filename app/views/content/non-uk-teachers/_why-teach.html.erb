@@ -1,0 +1,25 @@
+<section class="why-teach" aria-label="Why teach?">
+  <div class="why-teach__container">
+    <div class="why-teach__content">
+      <h2 class="heading-l">
+        <div class="caption-l caption--bold caption--purple">Why teach in England?</div>
+        Join a world class education system
+      </h2>
+
+      <p>
+        The English education system offers international teachers the opportunity to make a real difference in children’s lives. Discover why you should teach in England.
+      </p>
+
+      <ul>
+        <li><%= link_to("Read Brooke's story about coming to England to teach", "/blog/my-move-from-canada-to-teach-in-england") %></li>
+        <li><%= link_to("Find out about the salaries and benefits for teachers in England", "/salaries-and-benefits") %></li>
+      </ul>
+    </div>
+
+    <div class="why-teach__image">
+      <% "media/images/content/hero-images/0011.jpg".tap do |path| %>
+        <%= image_pack_tag(path, alt: image_alt(path)) %>
+      <% end %>
+    </div>
+  </div>
+</section>

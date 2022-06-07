@@ -1,12 +1,17 @@
 ---
 title: Improve your subject knowledge
 related_content:
-    Get school experience : "/get-school-experience"
+    Get school experience : "/train-to-be-a-teacher/get-school-experience"
     Application tips : "/blog/application-tips-from-a-teacher-training-provider"
     Engineers teach physics : "/subjects/engineers-teach-physics"
     Get into teaching maths : "/subjects/maths"
 description: |-
   Find out more about subject knowledge enhancement (SKE) courses which will help you brush up the subject you want to teach.
+keywords:
+  - Subject knowledge
+  - Subject knowledge enhancement
+  - SKE
+  - enhance
 ---
 
 If you’re concerned about how well you know the subject you want to teach, do not worry - you may be able to do a ‘subject knowledge enhancement’ (SKE) course.
@@ -27,4 +32,4 @@ They’re typically offered for subjects where there’s a particular demand for
 
 Courses are available across England and are often online. You can do them before or alongside your teacher training. You may also be able to study part-time.
 
-[Find out if there's a subject knowledge enhancement course for your subject](https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory)
+[Find out if there's a subject knowledge enhancement course for your subject](https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory).

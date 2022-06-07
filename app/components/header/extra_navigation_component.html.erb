@@ -1,4 +1,4 @@
-<%= tag.div(class: classes, data: { controller: "searchbox", "searchbox-search-input-id-value" => search_input_id }) do %>
+<%= tag.div(class: classes, data: { controller: "searchbox", "searchbox-search-input-id-value" => search_input_id }, role: "navigation") do %>
   <ul class="extra-navigation__list">
     <li class="extra-navigation__link">
       <%= link_to("/mailinglist/signup/name" ) do %>
@@ -13,5 +13,5 @@
       <% end %>
     <% end %>
   </ul>
-  <div class="searchbar" data-searchbox-target="searchbar"></div>
+  <div class="searchbar" data-searchbox-target="searchbar" role="search"></div>
 <% end %>

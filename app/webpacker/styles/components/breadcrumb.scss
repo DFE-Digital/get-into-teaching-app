@@ -6,6 +6,10 @@
     margin: 0;
     padding: 0 $indent-amount;
 
+    .govuk-breadcrumbs__current {
+      font-size: medium;
+    }
+
     .govuk-breadcrumbs__list .govuk-breadcrumbs__list-item {
       &:not(:first-child) {
         margin-left: 20px;
@@ -18,10 +22,7 @@
           border: none;
           transform: none;
           font-size: 0.5em;
-
-          @include mq($until: tablet) {
-            top: 9px;
-          }
+          top: 2px;
         }
       }
 

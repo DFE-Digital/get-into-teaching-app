@@ -23,3 +23,5 @@ Qualifications vary depending on the course. For example, you could get QTS with
 - Bachelor of Arts (BA)
 - Bachelor of Education (BEd)
 - Bachelor of Science (BSc)
+
+If you're a non-UK citizen who wants to study in England, you can visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for information about studying at an English university.

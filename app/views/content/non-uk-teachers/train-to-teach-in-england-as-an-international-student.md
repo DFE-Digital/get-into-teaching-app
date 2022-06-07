@@ -1,10 +1,20 @@
 ---
-title: "Apply for teacher training as an international candidate"
+title: "Train to teach in England as an international student"
 description: |-
-  Find out about teacher training courses in the UK for international students, and get help and advice on getting your QTS and PGCE with this guidance.
+  Find out how to train to teach in England as an international student. Get help and guidance on your qualifications, funding and visa.
+related_content:
+    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
+    Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
+    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
+promo_content:
+    - content/train-to-be-a-teacher/promos/get-adviser-promo
+navigation: 20.05
+navigation_title: Train to teach in England as an international student
+navigation_description: Find out how to train to teach in England as an international student and get English qualified teacher status (QTS).
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
+right_column:
 keywords:
   - International
   - Overseas
@@ -52,7 +62,7 @@ keywords:
 
 Citizens of every country in the world can apply to train to teach in England.
 
-If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk).
+If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ## Why train to teach in England?
 
@@ -62,7 +72,7 @@ When you have successfully completed your training, you will be awarded [qualifi
 
 QTS will allow you to teach in all schools in England. Some courses combine QTS with a [postgraduate certificate in education (PGCE)](/what-is-a-pgce) or a [postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional, you can get QTS without a PGCE or PGDE.
 
-[Read teachers' stories about the rewards of training to teach in England](/my-story-into-teaching)
+[Read teachers' stories about the rewards of training to teach in England](/my-story-into-teaching).
 
 ## Other ways to train
 
@@ -102,7 +112,7 @@ A GCSE is an academic qualification awarded for exams in England, usually taken 
 
 If you do not have qualifications that are equivalent to GCSEs, you may be able to sit a test set by training providers to show your knowledge of English, maths and science.
 
-[Contact us for advice about this](#get-support-and-advice)
+[Contact us for advice about your qualifications](#get-support-and-advice).
 
 #### If you do not have a university degree
 
@@ -149,7 +159,7 @@ Any financial support, for example a reduction in your fees to the rate paid by 
   </ul>
 </div>
 
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#rate">Check your eligibility for financial support</a>
+<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#rate">Check your eligibility for financial support</a>.
 
 ### 4. Search and apply for teacher training courses
 
@@ -210,7 +220,7 @@ If you have a place on a salaried training course, you’ll need a [skilled work
 
 Alternatively, you may be eligible for a different type of visa which allows you to study without being sponsored by your training provider or employer.
 
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">Find out more about applying for the right visa for your teacher training course</a>
+<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">Find out more about applying for the right visa for your teacher training course</a>.
 
 ### 6. Plan your move to the UK
 
@@ -229,15 +239,15 @@ You may need to apply for a different visa to work in England as a qualified tea
 
 When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England.
 
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job">Learn more about your first teaching job in England</a>
+<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job">Learn more about your first teaching job in England</a>.
 
 ## Further information
 
 ### Learn more about life as a teacher and the English education system
 
-[Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/)
+[Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
 
-[Read interviews with real teachers](/my-story-into-teaching)
+[Read interviews with real teachers](/my-story-into-teaching).
 
 Learn more about English education:
 
