@@ -28,46 +28,28 @@ $icon-size: 3rem;
         padding: 0 1rem;
       }
     }
+  }
+
+  &__descriptions {
+    &--summary {
+      color: $blue;
+      cursor: pointer;
+    }
 
     dl {
-      margin: 2em 0 1em;
+      padding: 0 1rem;
 
       div {
-        display: flex;
-        flex-direction: column;
-
-        @include mq($from: tablet) {
-          flex-direction: row;
-          gap: 1rem;
-          padding-inline: 1rem;
-        }
-      }
-
-      div + div {
-        margin-top: 2em;
+        margin-bottom: .5em;
       }
 
       dt {
         font-weight: bold;
-
-        flex: 0 1 25%;
+        margin-block: .2em;
       }
 
       dd {
         margin-left: 0;
-
-        flex: 1 0 75%;
-      }
-
-      dd + dt {
-        margin-top: 1em;
-      }
-
-      @include mq($from: tablet) {
-        dt,
-        dd {
-          display: inline-block;
-        }
       }
     }
   }
