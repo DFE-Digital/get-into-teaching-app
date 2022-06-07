@@ -1,0 +1,27 @@
+.embedded-govuk {
+  background: white;
+  padding: 1.5em;
+  border-radius: 5px;
+
+  * {
+    font-family: 'Arial', sans-serif !important;
+  }
+
+  // add a margin on tablet and above to space the
+  // embedded content more nicely within the bigger
+  // CTA
+  @include mq($from: tablet) {
+    margin: 0 1em 1em 0;
+  }
+
+  a.govuk-button { color: white };
+
+  &--crown {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    margin-bottom: 1em;
+
+    span { margin-bottom: 0 };
+  }
+}
