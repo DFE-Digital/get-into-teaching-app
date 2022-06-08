@@ -30,6 +30,6 @@ I had some initial reservations about starting a new career, particularly the fi
 
 With yearly performance reviews, you have the opportunity to highlight your skills and the positive impact you've had on your school. In this review, I double jumped up the pay range and with extra responsibilities you can achieve additional increases to your salary.
 
-It's a privilege to play a big part in a young person's life. A good teacher is crucial to a young person's development. Let's face it; we all have at least one story of our favourite teacher going above and beyond to help us when we were at school.
+It's a privilege to play a big part in a young person's life. A good teacher is crucial to a young person's development. Let's face it: we all have at least one story of our favourite teacher going above and beyond to help us when we were at school.
 
 We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).
