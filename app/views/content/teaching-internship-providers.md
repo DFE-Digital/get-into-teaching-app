@@ -4,6 +4,8 @@ description: |-
   Find teaching internships to gain new skills and see what classroom life is like for £300 per week. Explore languages, computing, maths and physics internships.
 date: "2021-04-14"
 image: false
+promo_content:
+    - content/train-to-be-a-teacher/promos/events-near-you
 article_classes: ['longform']
 backlink: /
 fullwidth: true
@@ -439,9 +441,9 @@ keywords:
     <div>
       <h2 class="heading-m">Applications now closed</h2>
       
-      <p>Teaching internship applications are now closed. Applications will reopen in early 2023.</p>
+      <p>Applications for the Teaching Internships Programme in 2022 are now closed. Applications will reopen in early 2023.</p>
 
-      <p>If you’re interested in spending some time in a classroom, you can still get unpaid school experience.</p>
+      <p>If you’re interested in spending some time in a classroom, you can still get school experience.</p>
 
       <p><a class="button button--white" href="/train-to-be-a-teacher/get-school-experience">Get school <span>experience</span></a></p>
     </div>
