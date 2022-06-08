@@ -24,7 +24,7 @@ From the outset I was working within the school, learning and training in the cl
 
 This really helped me to improve; we developed targets for future lessons and discussed which areas were going well and which required improvement.
 
-At first I had plenty of opportunity to see teachers delivering their own classes, and this really aided my development as a teacher before taking on teaching duties.I did extensive research to make sure that I was training somewhere where I would be a 'good fit' and that had a great reputation for training.
+At first I had plenty of opportunity to see teachers delivering their own classes, and this really aided my development as a teacher before taking on teaching duties. I did extensive research to make sure that I was training somewhere where I would be a 'good fit' and that had a great reputation for training.
 
 I also spent some time teaching in another school; again this was to help and improve my teaching style and learn from different outstanding practitioners.
 
