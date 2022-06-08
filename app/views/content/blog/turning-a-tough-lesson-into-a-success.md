@@ -18,7 +18,7 @@ tags:
 
 $danny$
 
-I started in quite a hard school in a deprived area. I taught there for three years and it was tough, but extremely rewarding.
+I started in quite a hard school in a deprived area. I taught there for 3 years and it was tough, but extremely rewarding.
 
 Behaviour management skills need to be absolutely spot-on if the students are to learn in your lessons, because there are a lot of barriers that can prevent the students from accessing that learning.
 
