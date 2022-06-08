@@ -15,9 +15,15 @@ promo_content:
 navigation: 20.05
 navigation_title: If you have a degree
 navigation_description: Find out how to get QTS if you have a degree or you’re studying for one now. There are different options you can choose.
+keywords:
+  - becoming a teacher
+  - teacher training
+  - school direct
+  - pgce
+  - pgde
 ---
 
-You need [qualified teacher status (QTS)](/what-is-qts) to teach in most primary, secondary and special schools in England. Once you have a degree you can get QTS through [teacher training](/initial-teacher-training). 
+You need [qualified teacher status (QTS)](/what-is-qts) to teach in most primary, secondary and special schools in England. Once you have a degree you can get QTS through [teacher training](/train-to-be-a-teacher/initial-teacher-training). 
 
 Postgraduate teacher training courses usually take 9 months full time, in line with the academic year, or 18 to 24 months part time. 
 
@@ -27,9 +33,9 @@ If you’re not from the UK, find out about [training to teach in England](/non-
 
 ## Choose your teacher training provider 
 
-Some teacher training courses are led by universities, schools or groups of schools. These are sometimes called ‘School Direct’ or ‘school centred initial teacher training’ (SCITT).
+Some teacher training courses are led by universities, schools or groups of schools. These are sometimes called School Direct, university-led or school centred initial teacher training (SCITT). You can also do teacher training through a postgraduate apprenticeship.
 
-The differences between teacher training courses will depend on the course provider, rather than depending on whether your course is school-led, university-led, or SCITT-led.
+The differences between teacher training courses will depend on the course provider, rather than depending on whether your course is school-led, university-led, an apprenticeship or a SCITT.
 
 One of the best ways to decide between providers is to contact them. 
 
@@ -67,8 +73,10 @@ If you need help understanding degree grades, [chat to us online](/#talk-to-us).
 
 ### Find out if you're eligible for a salary  
 
-Salaried courses are sometimes available for specific candidates. For example, people who are already working as unqualified teachers. These are in high demand and very competitive. Places fill up quickly. 
+Salaried courses are sometimes available for specific candidates. These include School Direct (salaried) courses and postgraduate teaching apprenticeships.
 
-You should check your eligibility with the teacher training provider before you apply.
+These are in high demand and very competitive. Places fill up quickly. 
+
+You should check your eligibility with the teacher training provider before you apply. People who are already working as unqualified teachers are usually eligible. 
 
 You could also consider [Teach First](https://www.teachfirst.org.uk/) to earn a salary while you train.
