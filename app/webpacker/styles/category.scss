@@ -120,6 +120,10 @@
     flex-direction: row;
   }
 
+  &:last-of-type {
+    margin-bottom: 6em;
+  }
+
   &__left,
   &__right {
     flex: 0 1 50%;
