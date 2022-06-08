@@ -32,7 +32,7 @@ Before I applied, I always emailed the headteacher of the school to ask if they 
 
 They were always grateful to me for being proactive and considerate of the fact that interviewing by Skype was a new concept to them. I applied for about 10 jobs and was offered 4 Skype interviews.
 
-I was offered a job in February, 2 months after I started looking. I was used to Skype interviews from applying to international schools, so I probably found it less daunting than the head teachers did!
+I was offered a job in February, 2 months after I started looking. I was used to Skype interviews from applying to international schools, so I probably found it less daunting than the headteachers did!
 
 My international school was very supportive. They contacted the headteachers in England to describe my teaching. They also provided permission for me to share performance management reviews and videos of me teaching.
 
