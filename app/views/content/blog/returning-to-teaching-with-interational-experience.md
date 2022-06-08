@@ -58,7 +58,7 @@ It's so much easier here to engage with research, learn new things and try them 
 
 My advice would be to:
 
-* always contact head teachers in advance of applying for jobs in the UK
+* always contact headteachers in advance of applying for jobs in the UK
 * engage with social media, blogs and education books to stay up-to-date while away
 * visit schools and attend conferences on your visits back to the UK
 * not worry about behaviour management - honestly, teenagers are teenagers everywhere!
