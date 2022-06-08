@@ -22,7 +22,7 @@ For me, the teachers who stick in my mind are the ones that gave me their time a
 
 ## Proudest moment
 
-One of my proudest moments was helping a GCSE student to achieve an A* in her RE exam, despite having a target grade of D.
+One of my proudest moments was helping a student to achieve an A* General Certificate of Secondary Education (GCSE) in her religious education exam, despite having a target grade of a D.
 
 I always say to the pupils, 'Ignore that target, put yourself at the target you want to achieve. It's just a computer somewhere that has calculated that, it doesn't mean that you're going to get a D. I think you're going to get something far greater.'
 
