@@ -26,7 +26,7 @@ Teacher training proved to be a steep learning curve for me. Making mistakes all
 
 Now I am fully qualified, I find working with young students and seeing them realise their own potential is powerful. They test you with their desire to learn and their ability to challenge your own thinking by posing questions that you haven't even thought of.
 
-### Positive learning environment: an on-going challenge
+### Positive learning environment: an ongoing challenge
 
 The classroom changes by the hour and working with different age ranges and abilities means you have to keep a fresh outlook on your subject in order to create an engaging and positive learning environment. In the course of a normal day, most teachers would deliver lessons to over 100 students with different interests and learning needs.
 
