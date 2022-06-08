@@ -2,7 +2,7 @@
   <%= icon %>
 
   <div class="call-to-action__content">
-    <%= tag.span(title, class: "call-to-action__heading") %>
+    <%= tag.send(heading_tag, title, class: "call-to-action__heading") %>
 
     <%= tag.p(helpers.safe_html_format(text), class: "call-to-action__text") %>
 

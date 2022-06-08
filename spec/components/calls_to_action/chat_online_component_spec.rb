@@ -29,7 +29,16 @@ RSpec.describe CallsToAction::ChatOnlineComponent, type: :component do
     let(:component) { described_class.new(title: title_text) }
 
     specify "some useful text is included" do
-      expect(page).to have_css(".call-to-action .call-to-action__heading", text: title_text)
+      expect(page).to have_css(".call-to-action h2.call-to-action__heading", text: title_text)
+    end
+
+    context "when a custom heading_tag is specified" do
+      let(:heading_tag) { "h4" }
+      let(:component) { described_class.new(title: title_text, heading_tag: heading_tag) }
+
+      specify "some useful text is included" do
+        expect(page).to have_css(".call-to-action #{heading_tag}.call-to-action__heading", text: title_text)
+      end
     end
   end
 
