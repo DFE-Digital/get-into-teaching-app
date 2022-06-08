@@ -22,7 +22,7 @@ I started in quite a hard school in a deprived area. I taught there for three ye
 
 Behaviour management skills need to be absolutely spot-on if the students are to learn in your lessons, because there are a lot of barriers that can prevent the students from accessing that learning.
 
-I've worked with students who are, almost, PE refusers. Most you manage to get on-side and work with, but some have a preconceived view that it's not for them.
+I've worked with students who are, almost, PE refusers. Most you manage to get onside and work with, but some have a preconceived view that it's not for them.
 
 They arrived to the lesson – a rugby lesson – and they detested the idea. It took a lot of work, a great deal of effort to turn their minds around and see what the sport could offer them.
 
