@@ -326,8 +326,8 @@ $icon-size: 3rem;
             }
 
             &.in-person {
-              background: url(../images/icon-building.svg) no-repeat left center;
-              background-size: 2em; // using 2em because it's an old icon and is bigger than the others
+              background: url(../images/content/icons/icon-building.svg) no-repeat left center;
+              background-size: $icon-size;
             }
           }
         }
