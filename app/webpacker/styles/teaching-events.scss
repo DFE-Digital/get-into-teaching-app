@@ -34,6 +34,15 @@ $icon-size: 3rem;
     &--summary {
       color: $blue;
       cursor: pointer;
+      text-decoration: underline;
+      
+      &:hover {
+	      text-decoration: none;
+      }
+      
+      &::marker {
+	      padding-right: 2em;
+      }
     }
 
     dl {
