@@ -69,7 +69,7 @@ No matter what course you choose, you can apply for a student loan.
 
 Your degree grade can affect your eligibility for courses. Teacher training providers often ask for a 2:2, but some ask for a third or pass.
 
-If you need help understanding degree grades, [chat to us online](/#talk-to-us). 
+If you need help understanding degree grades, [chat to us online](/train-to-be-a-teacher/if-you-have-a-degree#talk-to-us). 
 
 ### Find out if you're eligible for a salary  
 
