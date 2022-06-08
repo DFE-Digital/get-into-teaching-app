@@ -18,7 +18,7 @@ tags:
 
 $claire-johnson$
 
-After college, I went traveling and then spent my 20s trying out different careers.
+After college, I went travelling and then spent my 20s trying out different careers.
 
 I worked in HR for 5 years while also doing a part-time degree in physical science through The Open University - achieving a first. I also became a mum too.
 
