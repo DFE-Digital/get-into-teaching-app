@@ -28,7 +28,7 @@ I started looking for jobs in January. I looked in the normal places like ETeach
 
 ## Interviews from a distance
 
-Before I applied, I always emailed the head teacher of the school to ask if they would consider international applicants and if they would interview me on Skype.
+Before I applied, I always emailed the headteacher of the school to ask if they would consider international applicants and if they would interview me on Skype.
 
 They were always grateful to me for being proactive and considerate of the fact that interviewing by Skype was a new concept to them. I applied for about 10 jobs and was offered 4 Skype interviews.
 
