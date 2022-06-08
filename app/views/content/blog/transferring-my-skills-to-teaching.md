@@ -13,7 +13,7 @@ keywords:
   - train to be a teacher
   - classroom
 tags:
-  - changing career
+  - changing career to teaching
 ---
 
 $will-fordham$
