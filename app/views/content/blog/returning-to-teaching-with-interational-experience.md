@@ -56,9 +56,11 @@ It's so much easier here to engage with research, learn new things and try them 
 
 ### Advice for teachers planning to return to England
 
-* I'd always contact head teachers in advance of applying for jobs in the UK
-* Engage with social media, blogs and education books to stay up-to-date while away
-* Visit schools and attend conferences on your visits back to the UK
-* Don't worry about behaviour management - honestly, teenagers are teenagers everywhere!
+My advice would be to:
+
+* always contact head teachers in advance of applying for jobs in the UK
+* engage with social media, blogs and education books to stay up-to-date while away
+* visit schools and attend conferences on your visits back to the UK
+* not worry about behaviour management - honestly, teenagers are teenagers everywhere!
 
 We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).
