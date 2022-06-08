@@ -1,10 +1,11 @@
 ---
-title: "Ways to train if you have a degree"
-heading: "If you have a degree"
+title: "Train to be a teacher if you have a degree"
+heading: "Train to be a teacher if you have a degree"
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
-    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
+    Get support training to teach if you're disabled : "/get-support-training-to-teach-if-you-are-disabled"
+    Get school experience : "/train-to-be-a-teacher/get-school-experience"
     Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
     Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
@@ -12,60 +13,62 @@ promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/events-near-you
 navigation: 20.05
+navigation_title: If you have a degree
 navigation_description: Find out how to get QTS if you have a degree or you’re studying for one now. There are different options you can choose.
 ---
 
-If you have a degree, or you’re currently studying for one, there are different routes you can take to getting [qualified teacher status](/what-is-qts) (QTS). You need QTS to work in the majority of schools in England including state maintained primary, secondary and special schools.
+You need [qualified teacher status (QTS)](/what-is-qts) to teach in most primary, secondary and special schools in England. Once you have a degree you can get QTS through [teacher training](/initial-teacher-training). 
 
-We also have information for [international students who want to apply for teacher training](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
+Postgraduate teacher training courses usually take 9 months full time, in line with the academic year, or 18 to 24 months part time. 
 
-## Study for a PGCE or PGDE
-You can study for [a PGCE or PGDE](/what-is-a-pgce) (an academic qualification) with QTS at a university. Most of the time you will be in schools on placement but there is some academic learning. Courses typically take one year but you may be able to study part-time.
+You’ll spend most of your time in school placements. There’ll also be some theoretical learning.
 
-Fees for full-time courses are usually around £9,250 but you can:
+If you’re not from the UK, find out about [training to teach in England](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
-- get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
-- [apply for a student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
+## Choose your teacher training provider 
 
-Fees are higher for international students.
+Some teacher training courses are led by universities, schools or groups of schools. These are sometimes called ‘School Direct’ or ‘school centred initial teacher training’ (SCITT).
 
-You should check the fees for a particular course you are interested in with the course provider.
+The differences between teacher training courses will depend on the course provider, rather than depending on whether your course is school-led, university-led, or SCITT-led.
 
-## Training with a school or groups of schools (fee paying)
-There are different programmes that focus on training you while you teach in a school:
+One of the best ways to decide between providers is to contact them. 
 
-- School-centred initial teacher training (SCITT)
-- School Direct (fee-funded)
+Ask them what a typical day looks like, how you’ll be supported, and if they have any open days or [teacher training events](/events) you can attend.
 
-SCITT programmes are delivered by a network of schools, providing school-based training. You won’t be paid a salary while you are training and will pay fees.
+### Find out where you’ll spend your time
 
-School Direct (fee-funded) programmes are delivered by groups of schools in collaboration with a SCITT or university. The content and structure of a School Direct course is broadly similar to a SCITT course and they don't pay you a salary.
+Think about where you'd like to do your training. You should talk to teacher training providers about where your school and placements and theoretical learning will be.
 
-Some SCITT and School Direct (fee-funded) programmes give you a PGCE or PGDE in addition to QTS. Courses typically take one year but you may be able to study part-time.
+The address of your teacher training provider may not be where you spend most of your time. For example, your teacher training provider might be a university, but you’ll spend most of your time in placement schools.
 
-Fees are usually around £9,250 but you can:
+## Decide if you want a PGCE or PGDE
 
-- get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
-- [apply for a student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
+All primary and secondary postgraduate teacher training courses lead to QTS. Some also offer a [postgraduate certificate in education (PGCE) or a postgraduate diploma in education (PGDE)](/what-is-a-pgce).
 
-You should check the fees for a particular course you are interested in with the course provider.
+You do not need a PGCE or PGDE to become a teacher. 
 
-## Earn a salary while you train
-These courses are usually only suitable for specific candidates, for example, some are for people who already have relevant teaching experience or are already working as unqualified teachers. You will be able to find out more about eligibility from the training provider. You may be able to study part-time.
+It can be helpful to have a PGCE or PGDE if you plan on doing a master’s degree because it gives you credits towards one. 
 
-### School Direct (salaried)
+## Fund your training
 
-If you have the right experience, School Direct (salaried) give you QTS with many courses also offering a PGCE or PGDE. It takes a year to complete.
+Courses usually cost £9,250 or more for [international candidates](/non-uk-teachers). 
 
-[Find postgraduate training to be a teacher, including School Direct (salaried) courses](https://www.gov.uk/find-postgraduate-teacher-training-courses)
+If you train to teach certain secondary subjects, you may be eligible for a [scholarship or bursary](/funding-your-training#bursaries-and-scholarships).
 
-### Teach First
-Teach First is a 2-year programme leading to a PGDE and QTS. At the end of your first year, you will have QTS. The PGDE is awarded at the end of the second year.
+No matter what course you choose, you can apply for a student loan.
 
-[Find out more about Teach First](https://www.teachfirst.org.uk/)
+[Learn about funding](/funding-your-training).
 
-### Postgraduate teaching apprenticeship
+## Check your eligibility 
 
-Apprenticeships offer a year of school-based training which gives you QTS. Some also offer a PGCE or equivalent qualification. 
+Your degree grade can affect your eligibility for courses. Teacher training providers often ask for a 2:2, but some ask for a third or pass.
 
-[Find salaried teacher training including apprenticeships](https://www.find-postgraduate-teacher-training.service.gov.uk/)  by applying the 'only show courses that come with a salary' filter.
+If you need help understanding degree grades, [chat to us online](/#talk-to-us). 
+
+### Find out if you're eligible for a salary  
+
+Salaried courses are sometimes available for specific candidates. For example, people who are already working as unqualified teachers. These are in high demand and very competitive. Places fill up quickly. 
+
+You should check your eligibility with the teacher training provider before you apply.
+
+You could also consider [Teach First](https://www.teachfirst.org.uk/) to earn a salary while you train.
