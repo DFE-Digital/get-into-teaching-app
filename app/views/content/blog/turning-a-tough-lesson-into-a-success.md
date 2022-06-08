@@ -7,7 +7,7 @@ images:
     path: "media/images/content/blog/stories-danny.jpg"
     thumbnail_path: "media/images/content/blog/stories-danny.jpg"
 description: |-
-  Teaching is a massive responsibility; you're tasked with working with hundreds of students each day, and they're placed into your care – that's quite a demanding responsibility. But it's part of what you do as a teacher.
+  PE teacher Danny Holliday shares his experience of dealing with behaviour management out on the rugby field with his year 10 class.
 keywords:
   - life as a teacher
   - day in the life
