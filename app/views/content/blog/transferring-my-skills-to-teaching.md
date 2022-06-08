@@ -7,7 +7,7 @@ images:
     path: "media/images/content/blog/stories-will.jpg"
     thumbnail_path: "media/images/content/blog/stories-will.jpg"
 description: |-
-  Teaching trainee Will Fordham was working for a charity as a communications manager, when he realised that teaching was what he loved.
+  Teaching trainee Will Fordham was working as a communications manager, when he realised that teaching was what he loved.
 keywords:
   - life as a teacher
   - train to be a teacher
