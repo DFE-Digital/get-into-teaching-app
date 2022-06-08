@@ -16,7 +16,7 @@ tags:
   - career progression
 ---
 
-Since this blog post was first published newly qualified teacher (NQT) status has been replaced with early career teacher (ECT).
+Since this blog post was first published, the term newly qualified teacher (NQT) has been replaced with early career teacher (ECT). This describes a teacher in their first two years of teaching.
 
 $q-sarah$
 
@@ -28,7 +28,7 @@ From an early age, I knew a teaching career was for me. I could not imagine work
 
 When your pupils have those 'light bulb' moments, hearing the sudden 'So that's how it works!' and seeing them take your subject into A level and beyond makes the job so worthwhile.
 
-## So grateful
+## My career development
 
 I am extremely proud of my teaching achievements and career progression so far. The encouragement and support from my head of faculty really helped; they saw the potential in me and I'm so grateful for that opportunity.
 
