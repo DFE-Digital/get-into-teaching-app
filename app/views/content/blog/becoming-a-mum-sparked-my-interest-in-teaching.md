@@ -13,7 +13,7 @@ keywords:
   - day in the life
   - classroom
 tags:
-  - changing career
+  - changing career to teaching
 ---
 
 $claire-johnson$
