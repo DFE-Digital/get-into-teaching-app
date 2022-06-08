@@ -11,7 +11,7 @@ description: |-
 keywords:
 
 tags:
-  - changing career
+  - changing career to teaching
 ---
 
 $q-zainab$
