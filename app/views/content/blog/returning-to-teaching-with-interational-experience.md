@@ -18,7 +18,7 @@ tags:
 
 $q-katie$
 
-After four years of teaching modern foreign languages in London, I decided to try something different. I moved to China to teach in an international school, but after a while, I wanted to move back to England to be closer to my partner.
+After 4 years of teaching modern foreign languages in London, I decided to try something different. I moved to China to teach in an international school, but after a while, I wanted to move back to England to be closer to my partner.
 
 We're fortunate to have so many research-based educators here who share their ideas at exciting events like ResearchEd.
 
