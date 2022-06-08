@@ -5,7 +5,7 @@ description: |-
 date: "2021-04-14"
 image: false
 promo_content:
-    - content/train-to-be-a-teacher/promos/events-near-you
+    - content/train-to-be-a-teacher/promos/get-adviser-promo
 article_classes: ['longform']
 backlink: /
 fullwidth: true
