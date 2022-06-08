@@ -7,7 +7,7 @@ images:
     path: "media/images/content/blog/stories-claire.jpg"
     thumbnail_path: "media/images/content/blog/stories-claire.jpg"
 description: |-
-  Being a mum, physics Teacher Claire Johnson realised that education in this country was more important to her than ever.
+  Being a mum, physics teacher Claire Johnson realised that education in this country was more important to her than ever.
 keywords:
   - life as a teacher
   - day in the life
