@@ -20,7 +20,7 @@ $will-fordham$
 
 I decided to train as an English teacher after working in various communication roles as a civil servant. Before enrolling on a salaried teacher training course, I completed a Certificate in Teaching English to Speakers of Other Languages (CELTA) qualification at Cambridge University, so I could teach English as a second language. I spent 2 years teaching English in Italy before returning to another communications job.
 
-When I decided to move back to London from East Anglia, 'I wanted to be able to start working and have the money to support my move. That was my main objective, to be paid to train. I think financing myself through the training year could have been difficult, having lived abroad and come back to a job in the UK.
+When I decided to move back to London from East Anglia, I wanted to be able to start working and have the money to support my move. That was my main objective, to be paid to train. I think financing myself through the training year could have been difficult, having lived abroad and come back to a job in the UK.
 
 In my previous career I was creating, processing and presenting information to different audiences, which is essentially what I'm doing now as a teacher.
 
