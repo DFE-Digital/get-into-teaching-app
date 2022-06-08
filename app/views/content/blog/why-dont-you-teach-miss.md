@@ -7,7 +7,7 @@ images:
     path: "media/images/content/blog/stories-emma.jpg"
     thumbnail_path: "media/images/content/blog/stories-emma.jpg"
 description: |-
-  Emma Maskell shares her route into teaching
+  Emma Maskell explains how her experience helping out as a teaching assistant inspired her to change careers and train to be a teacher.
 keywords:
   - life as a teacher
   - day in the life
