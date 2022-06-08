@@ -13,7 +13,7 @@ keywords:
   - day in the life
   - classroom
 tags:
-  - why teach?
+  - life as a teacher
 ---
 
 $q-gavin$
