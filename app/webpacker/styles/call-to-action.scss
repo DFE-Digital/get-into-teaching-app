@@ -4,7 +4,7 @@
   margin-bottom: 2em;
   display: flex;
 
-  a {
+  a:not(.button) {
     @extend .link--dark;
   }
 
