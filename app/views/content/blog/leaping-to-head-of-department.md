@@ -22,7 +22,7 @@ After 6 years of working in the world of recruitment consultancy, I felt it was 
 
 I had 2 degrees: Master's merit in management and a degree in geography, so I was thinking of teaching either business or geography.
 
-However, after some hard thinking, my real passion lay in teaching geography. In addition, it was clear to me that geography is becoming a subject that will rise in importance and be in far more demand over the next decade.
+However, after some hard thinking, I realised my real passion lay in teaching geography. In addition, it was clear to me that geography is becoming a subject that will rise in importance and be in far more demand over the next decade.
 
 I was working away a lot and spending less and less time with my family. This was another reason I decided to investigate a career in teaching.
 
