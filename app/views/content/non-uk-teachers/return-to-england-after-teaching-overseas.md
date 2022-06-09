@@ -17,22 +17,22 @@ date: "2020-04-07"
 accordion:
   numbered: true
   content_after_accordion:
-    partial: content/international-returners/after-accordion
+    partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/after-accordion
   steps:
     Check your qualifications:
-      partial: content/international-returners/check-your-qualifications
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/check-your-qualifications
     Find your next role:
-      partial: content/international-returners/find-your-next-role
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/find-your-next-role
     Get help if you teach a shortage subject:
-      partial: content/international-returners/support-for-teachers-of-shortage-subjects
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/support-for-teachers-of-shortage-subjects
     Get ready to apply:
-      partial: content/international-returners/get-ready-to-apply
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/get-ready-to-apply
     Read up on changes to English education:
-      partial: content/international-returners/read-up-on-changes-to-english-education
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/read-up-on-changes-to-english-education
     Get started on your personal and professional admin:
-      partial: content/international-returners/get-started-on-your-personal-and-professional-admin
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/get-started-on-your-personal-and-professional-admin
     Research visas and immigration:
-      partial: content/international-returners/research-visas-and-immigration
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/research-visas-and-immigration
 keywords:
   - International
   - International returner
