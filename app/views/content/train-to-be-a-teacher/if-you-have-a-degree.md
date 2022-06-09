@@ -27,23 +27,31 @@ You need [qualified teacher status (QTS)](/what-is-qts) to teach in most primary
 
 Postgraduate teacher training courses usually take 9 months full time, in line with the academic year, or 18 to 24 months part time. 
 
-You’ll spend most of your time in school placements. There’ll also be some theoretical learning.
-
 If you’re not from the UK, find out about [training to teach in England](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
+
+## Types of teacher training
+
+Your teacher training course might be led by a university, school, college or group of schools. There are different teacher training types, including:
+
+* school centred initial teacher training (SCITT)
+* postgraduate apprenticeship
+* university-led
+* School Direct (fee-paying)
+* School Direct (salaried)
+
+The difference between teacher training courses will depend on your teacher training provider, rather than what type of teacher training you do.
+
+All teacher training courses follow the same [core content framework (CCF)](https://www.gov.uk/government/publications/initial-teacher-training-itt-core-content-framework). You’ll spend most of your time in school placements with some theoretical learning, regardless of which type of training you choose.
 
 ## Choose your teacher training provider 
 
-Some teacher training courses are led by universities, schools or groups of schools. These are sometimes called School Direct, university-led or school centred initial teacher training (SCITT). You can also do teacher training through a postgraduate apprenticeship.
-
-The differences between teacher training courses will depend on the course provider, rather than depending on whether your course is school-led, university-led, an apprenticeship or a SCITT.
-
-One of the best ways to decide between providers is to contact them. 
+One of the best ways to decide between providers is to contact them.
 
 Ask them what a typical day looks like, how you’ll be supported, and if they have any open days or [teacher training events](/events) you can attend.
 
 ### Find out where you’ll spend your time
 
-Think about where you'd like to do your training. You should talk to teacher training providers about where your school and placements and theoretical learning will be.
+Think about where you'd like to do your training. You should talk to teacher training providers about where your school placements and theoretical learning will be.
 
 The address of your teacher training provider may not be where you spend most of your time. For example, your teacher training provider might be a university, but you’ll spend most of your time in placement schools.
 
@@ -73,10 +81,10 @@ If you need help understanding degree grades, [chat to us online](/train-to-be-a
 
 ### Find out if you're eligible for a salary  
 
-Salaried courses are sometimes available for specific candidates. These include School Direct (salaried) courses and postgraduate teaching apprenticeships.
+Salaried courses are sometimes available for specific candidates, such as if you're working as an unqualified teacher. These include School Direct (salaried) courses and postgraduate teaching apprenticeships.
 
 These are in high demand and very competitive. Places fill up quickly. 
 
-You should check your eligibility with the teacher training provider before you apply. People who are already working as unqualified teachers are usually eligible. 
+You should check your eligibility with the teacher training provider before you apply. 
 
 You could also consider [Teach First](https://www.teachfirst.org.uk/) to earn a salary while you train.
