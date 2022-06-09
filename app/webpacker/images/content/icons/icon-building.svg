@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="64" height="64" viewBox="0 0 64 64">
+  <defs>
+    <clipPath id="clip-icon-building">
+      <rect width="64" height="64"/>
+    </clipPath>
+  </defs>
+  <g id="icon-building" clip-path="url(#clip-icon-building)">
+    <g id="Group_941" data-name="Group 941" transform="translate(12.28 15.234)">
+      <path id="Path_1306" data-name="Path 1306" d="M355.024,401.366V388.6l-12.552-4.912L329.92,388.6v12.77h-7.64v16.263h40.384V401.366Zm-25.1,12.989h-4.366V404.64h4.366Zm21.829,0h-5.457v-8.3h-7.64v8.3h-5.457V390.888l9.277-3.6,9.278,3.6v23.467Zm7.64,0h-4.366V404.64h4.366Z" transform="translate(-322.28 -383.684)"/>
+    </g>
+  </g>
+</svg>
