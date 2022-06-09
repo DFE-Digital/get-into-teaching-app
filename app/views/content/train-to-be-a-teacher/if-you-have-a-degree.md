@@ -8,7 +8,6 @@ related_content:
     Get school experience : "/train-to-be-a-teacher/get-school-experience"
     Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
-    Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/events-near-you
