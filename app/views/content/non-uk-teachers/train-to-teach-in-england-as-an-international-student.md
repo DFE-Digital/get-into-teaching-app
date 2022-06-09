@@ -124,7 +124,7 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 To get advice about training to teach, you can:
 
-- call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8:30am and 5:30pm (UK local time)
+- call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) – calls will be charged at your standard rate
 - use the live chat service at the bottom of this page
 - sign up to [get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
 
@@ -132,7 +132,7 @@ To get advice about training to teach, you can:
 
 If your qualifications come from a non-UK institution, your teacher training provider may want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from UK ENIC. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
 
-Call us free on 0800 389 2500 for:
+Call us on +44 800 389 2500 for:
 
 - guidance on the UK equivalents of your qualifications
 - a free statement of comparability, once you’ve submitted your application, if your provider asks for this

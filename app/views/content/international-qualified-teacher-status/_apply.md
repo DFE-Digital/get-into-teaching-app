@@ -1,1 +1,0 @@
-To apply for iQTS, visit participating iQTS training provider websites, where you’ll be able to complete your application. For a list of providers, see '3. Apply to your chosen iQTS teacher training provider'. 
