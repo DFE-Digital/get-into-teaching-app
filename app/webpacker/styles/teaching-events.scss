@@ -35,11 +35,11 @@ $icon-size: 3rem;
       color: $blue;
       cursor: pointer;
       text-decoration: underline;
-      
+
       &:hover {
 	      text-decoration: none;
       }
-      
+
       &::marker {
 	      padding-right: 2em;
       }
@@ -571,7 +571,8 @@ $icon-size: 3rem;
   }
 
   &__scribble {
-    margin: 0 1em;
+    margin: 4em 1em;
+    flex-grow: 1;
   }
 
   &__video {
