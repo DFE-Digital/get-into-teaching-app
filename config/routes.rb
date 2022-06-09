@@ -14,7 +14,12 @@ Rails.application.routes.draw do
   get "/sitemap.xml", to: "sitemap#show", via: :all
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
-    redirect_rules.each { |from, to| get from, to: redirect(path: to) }
+    redirect_rules.each do |from, to|
+      get from => lambda { |env|
+        Rails.logger.info(redirect: { from: from, to: to })
+        redirect(path: to).call(env)
+      }
+    end
   end
 
   if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production? || Rails.env.pagespeed?

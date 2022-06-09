@@ -11,8 +11,11 @@ describe "Redirects", content: true, type: :request do
       subject { get(build_url(from, query_string)) }
 
       specify "redirects successfully" do
+        allow(Rails.logger).to receive(:info)
+
         expect(subject).to be 301
         expect(response).to redirect_to(build_url(to, query_string))
+        expect(Rails.logger).to have_received(:info).with(redirect: { from: from, to: to })
 
         target = Nokogiri.parse(response.body).at_css("a")["href"].gsub(root_url, "/")
 
