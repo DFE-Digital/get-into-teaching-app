@@ -55,7 +55,7 @@ I'm enjoying the freedom to teach the way I want to. I felt a huge amount of pre
 
 It's so much easier here to engage with research, learn new things and try them out in the classroom - without being judged. I feel professionally free in England.
 
-### Advice for teachers planning to return to England
+## Advice for teachers planning to return to England
 
 My advice would be to:
 
