@@ -2,6 +2,7 @@
   @include mq($from: tablet) {
     > div {
       display: flex;
+      gap: $indent-amount;
 
       header {
         flex-grow: 1;
