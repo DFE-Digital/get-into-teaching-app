@@ -14,7 +14,7 @@ This guidance relates to teaching in England. Different rules  apply to [teachin
 
 To get advice about iQTS, you can:
 
-- call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8:30am and 5:30pm (UK local time)
+- call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) – calls will be charged at your standard rate
 
 - use the live chat service at the bottom of this page
 
