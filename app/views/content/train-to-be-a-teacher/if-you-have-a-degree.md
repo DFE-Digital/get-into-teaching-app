@@ -34,8 +34,8 @@ If you’re not from the UK, find out about [training to teach in England](/non-
 Your teacher training course might be led by a university, school, college or group of schools. There are different teacher training types, including:
 
 * school centred initial teacher training (SCITT)
-* postgraduate apprenticeship
 * university-led
+* postgraduate apprenticeship
 * School Direct (fee-paying)
 * School Direct (salaried)
 
