@@ -41,6 +41,10 @@ class TeachingEventsController < ApplicationController
   end
 
   def show
+    Rack::MiniProfiler.step('retrieving an event') do
+      retrieve_event
+    end
+
     @event = TeachingEvents::EventPresenter.new(retrieve_event)
 
     breadcrumb "Get into Teaching events", "/teaching-events"

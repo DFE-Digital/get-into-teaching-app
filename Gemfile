@@ -46,6 +46,9 @@ gem "faraday_middleware"
 
 gem "hashids"
 
+# Profiling
+gem "rack-mini-profiler"
+
 gem "dotenv-rails", ">= 2.7.6"
 
 gem "govuk_design_system_formbuilder", ">= 2.8.0"

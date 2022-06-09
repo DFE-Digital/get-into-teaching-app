@@ -12,6 +12,8 @@ class ApplicationController < ActionController::Base
   rescue_from GetIntoTeachingApiClient::ApiError, with: :handle_api_error
   rescue_from ::Pages::Page::PageNotFoundError, with: :render_not_found
 
+  before_action { Rack::MiniProfiler.authorize_request }
+
   before_action :http_basic_authenticate, if: :authenticate?
   before_action :set_api_client_request_id
   before_action :record_utm_codes
