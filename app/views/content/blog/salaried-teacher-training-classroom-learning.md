@@ -4,8 +4,8 @@ date: "2019-12-16"
 author: Nathan Sproule
 images:
   q-nathan:
-    path: "media/images/content/blog/stories-nathan.jpg"
-    thumbnail_path: "media/images/content/blog/stories-nathan.jpg"
+    path: "media/images/content/blog/thumbnails/stories-nathan.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-nathan.jpg"
 description: |-
   The option of salaried teacher training meant that Nathan Sproule could earn while he trained to be a teacher.
 keywords:
@@ -17,8 +17,6 @@ tags:
 ---
 
 Since this blog post was first published, the term newly qualified teacher (NQT) has been replaced with early career teacher (ECT). This describes a teacher in their first two years of teaching.
-
-$q-nathan$
 
 Salaried teacher training offered the best option for me, earning an income while I trained towards qualified teacher status (QTS). My course also included a postgraduate certificate in education (PGCE), and Masters-level credits.
 

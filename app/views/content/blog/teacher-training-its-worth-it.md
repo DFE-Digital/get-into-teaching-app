@@ -4,8 +4,8 @@ date: "2019-11-04"
 author: Hasina Nizamee
 images:
   q-hasina:
-    path: "media/images/content/blog/stories-generic.jpg"
-    thumbnail_path: "media/images/content/blog/stories-generic.jpg"
+    path: "media/images/content/blog/thumbnails/stories-generic.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-generic.jpg"
 description: |-
     Hasina Nizamee explains how teacher training has been one of the most fulfilling experiences of her life, helping her realise her potential.
 keywords:
@@ -15,8 +15,6 @@ keywords:
 tags:
   - teacher training
 ---
-
-$q-hasina$
 
 With a 2:1 degree in biology and health and safety management, I initially pursued a career as a health and safety adviser. But I realised this wasn’t allowing me to use my knowledge of biology, and I wanted to work with young people and really make a difference – so teaching was the ideal profession for me.
 

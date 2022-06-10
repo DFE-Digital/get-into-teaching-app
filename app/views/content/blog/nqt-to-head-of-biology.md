@@ -4,8 +4,8 @@ date: "2019-11-18"
 author: Sarah Fisher
 images:
   q-sarah:
-    path: "media/images/content/blog/stories-sarah-f.jpg"
-    thumbnail_path: "media/images/content/blog/stories-sarah-f.jpg"
+    path: "media/images/content/blog/thumbnails/stories-sarah-f.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-sarah-f.jpg"
 description: |-
   Sarah Fisher shares her story of how she became a department head in a subject she loves.
 keywords:
@@ -17,8 +17,6 @@ tags:
 ---
 
 Since this blog post was first published, the term newly qualified teacher (NQT) has been replaced with early career teacher (ECT). This describes a teacher in their first two years of teaching.
-
-$q-sarah$
 
 Two years after qualifying as a teacher, I progressed to head of biology, climbing the career ladder. I always had an inkling that teaching was the right direction.
 

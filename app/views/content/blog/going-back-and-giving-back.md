@@ -4,8 +4,8 @@ date: "2019-07-01"
 author: Sandra Macfarlane
 images:
   stories-sandra:
-    path: "media/images/content/blog/stories-sandra.jpg"
-    thumbnail_path: "media/images/content/blog/stories-sandra.jpg"
+    path: "media/images/content/blog/thumbnails/stories-sandra.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-sandra.jpg"
 description: |-
   Sandra Macfarlane sees herself as a teacher that helps students and gives them a love for what they have to do, whether they want to do it or not.
 keywords:
@@ -15,8 +15,6 @@ keywords:
 tags:
   - life as a teacher
 ---
-
-$stories-sandra$
 
 For me, the teachers who stick in my mind are the ones that gave me their time and effort, and really prepared me for my future. I chose to train as a teacher so that I could do the same and give something back.
 

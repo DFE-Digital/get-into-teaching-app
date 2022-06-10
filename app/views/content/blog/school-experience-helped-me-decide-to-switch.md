@@ -4,8 +4,8 @@ date: "2020-02-10"
 author: Zainab Kasmani
 images:
   q-zainab:
-    path: "media/images/content/blog/stories-zainab.jpg"
-    thumbnail_path: "media/images/content/blog/stories-zainab.jpg"
+    path: "media/images/content/blog/thumbnails/stories-zainab.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-zainab.jpg"
 description: |-
   Going part-time at work and volunteering in a school helped Zainab Kasmani find out if teaching was the right career.
 keywords:
@@ -13,8 +13,6 @@ keywords:
 tags:
   - changing career to teaching
 ---
-
-$q-zainab$
 
 I graduated with a degree in English language and communication. I wasn't sure what I wanted to do, but I knew I wanted to travel. I completed a starter course and went to teach English abroad.
 

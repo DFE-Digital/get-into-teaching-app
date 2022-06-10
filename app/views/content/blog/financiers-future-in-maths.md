@@ -4,8 +4,8 @@ date: "2020-01-27"
 author: Peter Bassett
 images:
   q-peter:
-    path: "media/images/content/blog/stories-peter.jpg"
-    thumbnail_path: "media/images/content/blog/stories-peter.jpg"
+    path: "media/images/content/blog/thumbnails/stories-peter.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-peter.jpg"
 description: |-
   Peter Bassett shares how he switched his role in finance for the classroom.
 keywords:
@@ -15,8 +15,6 @@ keywords:
 tags:
   - changing career to teaching
 ---
-
-$q-peter$
 
 I spent 27 years working in finance in London. Having raised my own family and enjoyed a successful career in the city, I wanted to pursue one of my long-term ambitions, and chose to make the switch to teaching.
 

@@ -12,8 +12,6 @@ tags:
   - teacher training advisers
 ---
 
-$jill$
-
 After almost a decade of teaching science, I Ieft the job in 2001 when my husband and I started a family. During my time out of the classroom, I did quite a lot of work for an exam board and lots of private tuition. This kept me occupied for many years.
 
 I didn't think that it would be difficult to return to the classroom because of the demand for teachers, but in practice this proved quite a challenge. I was from the age of chalk and paper and I had no recent school experience or experience using data to evaluate performance, nor did I have any referees still in the profession.

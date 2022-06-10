@@ -4,8 +4,8 @@ date: "2020-01-13"
 author: Gavin McIntyre
 images:
   q-gavin:
-    path: "media/images/content/blog/stories-gavin.jpg"
-    thumbnail_path: "media/images/content/blog/stories-gavin.jpg"
+    path: "media/images/content/blog/thumbnails/stories-gavin.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-gavin.jpg"
 description: |-
   Assistant headteacher Gavin McIntyre shares his journey to become a teacher.
 keywords:
@@ -15,8 +15,6 @@ keywords:
 tags:
   - life as a teacher
 ---
-
-$q-gavin$
 
 I am an assistant headteacher and ICT learning co-ordinator and have an MSc in computing and information systems. I had always been open to the idea of teaching as a potential career path – so I took the plunge when I moved from Northern Ireland to England.
 

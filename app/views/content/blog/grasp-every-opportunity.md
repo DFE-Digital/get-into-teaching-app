@@ -4,8 +4,8 @@ date: "2019-10-21"
 author:  Paul Evason
 images:
   q-paul:
-    path: "media/images/content/blog/stories-paul.jpg"
-    thumbnail_path: "media/images/content/blog/stories-paul.jpg"
+    path: "media/images/content/blog/thumbnails/stories-paul.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-paul.jpg"
 description: |-
   Assistant headteacher Paul Evason shares how he progressed from being a new qualifed teacher to taking on a management role.
 keywords:
@@ -17,8 +17,6 @@ tags:
 ---
 
 Since this blog post was first published, the term newly qualified teacher (NQT) has been replaced with early career teacher (ECT). This describes a teacher in their first two years of teaching.
-
-$q-paul$
 
 I always wanted to work in an environment that was never going to be the same every day – teaching definitely provides this. Working with students from different backgrounds and preparing them to take their next steps towards success was always a huge draw to the profession.
 
