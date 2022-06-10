@@ -406,6 +406,7 @@ redirects:
   "/non-uk-teachers/teach-in-england-if-you-trained-outside-the-uk": "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
 
   # Wildcards
-  "/life-as-a-teacher/*": "/blog"
+  "/life-as-a-teacher(*page)": "/blog"
   "/why-teach(*reason)": "/blog"
   "/content/stories(*story)": "/blog"
+  "/my-story-into-teaching(*story)": "/blog"
