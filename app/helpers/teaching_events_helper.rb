@@ -18,6 +18,17 @@ module TeachingEventsHelper
     event.type_id == EventType.lookup_by_name(type_name)
   end
 
+  def add_online_events(params)
+    params_with_online = params
+      .fetch(:teaching_events_search, {})
+      .permit!
+      .to_h
+      .merge({ online: [true, false] })
+      .deep_symbolize_keys
+
+    { teaching_events_search: params_with_online }
+  end
+
   # override:
   # * Online event               => Online forum
   # * School or University event => Training provider

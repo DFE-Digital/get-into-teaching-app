@@ -183,12 +183,39 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
     context "when no events are found" do
       let(:event_count) { 0 }
+      let(:params) { nil }
 
-      scenario "a useful message is shown" do
-        visit teaching_events_path
+      before { visit teaching_events_path(params) }
 
-        expect(page).to have_css(".teaching-events__none", text: "No events found")
-        expect(page).to have_link("Sign up to be notified about events in your area", href: "/mailinglist/signup")
+      scenario "a useful message and options are shown" do
+        within(".teaching-events__none") do
+          expect(page).to have_css("h3", text: "0 events found")
+          expect(page).to have_css("p", text: "Why not try:")
+          expect(page).to have_link(text: "clearing your filters", href: teaching_events_path)
+        end
+      end
+
+      context "when the candidate has filtered by distance" do
+        let(:params) { { teaching_events_search: { distance: 5 } } }
+
+        scenario "an alternate option is shown" do
+          within(".teaching-events__none") do
+            expect(page).to have_css("li", text: "expanding your search area")
+          end
+        end
+      end
+
+      context "when the candidate has filtered by in-person only" do
+        let(:params) { { teaching_events_search: { distance: 5, online: [false] } } }
+
+        scenario "an alternate option is shown" do
+          within(".teaching-events__none") do
+            add_online_events_path = teaching_events_path(
+              params.deep_merge({ teaching_events_search: { online: [true, false] } }),
+            )
+            expect(page).to have_link(text: "online events", href: add_online_events_path)
+          end
+        end
       end
     end
   end

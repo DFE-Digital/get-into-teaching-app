@@ -61,6 +61,36 @@ describe TeachingEvents::Search do
     end
   end
 
+  describe "online/in-person toggling" do
+    let(:online) { nil }
+
+    subject { described_class.new(online: online) }
+
+    it { is_expected.not_to be_online_only }
+    it { is_expected.not_to be_in_person_only }
+
+    context "when online only" do
+      let(:online) { ["true", ""] }
+
+      it { is_expected.to be_online_only }
+      it { is_expected.not_to be_in_person_only }
+    end
+
+    context "when in-person only" do
+      let(:online) { ["false", ""] }
+
+      it { is_expected.not_to be_online_only }
+      it { is_expected.to be_in_person_only }
+    end
+
+    context "when online and in-person" do
+      let(:online) { ["true", "false", ""] }
+
+      it { is_expected.not_to be_online_only }
+      it { is_expected.not_to be_in_person_only }
+    end
+  end
+
   describe "#results" do
     ttt           = EventType.train_to_teach_event_id
     qt            = EventType.question_time_event_id

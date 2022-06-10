@@ -7,6 +7,29 @@ describe TeachingEventsHelper, type: "helper" do
     end
   end
 
+  describe "#add_online_events" do
+    let(:online) { [false] }
+    let(:params) do
+      ActionController::Parameters.new({
+        teaching_events_search: {
+          distance: 20,
+          online: online,
+        },
+        other: "param",
+      })
+    end
+
+    subject { add_online_events(params) }
+
+    it { is_expected.to eq({ teaching_events_search: { distance: 20, online: [true, false] } }) }
+
+    context "when online is nil" do
+      let(:online) { nil }
+
+      it { is_expected.to eq({ teaching_events_search: { distance: 20, online: [true, false] } }) }
+    end
+  end
+
   describe "#event_format" do
     [
       {

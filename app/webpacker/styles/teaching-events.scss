@@ -112,9 +112,15 @@ $icon-size: 3rem;
   }
 
   &__none {
-    &--message {
-      padding: 1rem 1rem 2rem;
-      background: $grey;
+    margin: 1rem;
+
+    @include mq($from: tablet) {
+      border-left: 1px solid $slightly-darker-grey;
+      padding-left: 3rem;
+    }
+
+    ul {
+      list-style-type: square;
     }
   }
 
