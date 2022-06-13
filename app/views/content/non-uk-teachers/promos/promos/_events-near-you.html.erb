@@ -12,7 +12,7 @@
         heading: "Events are a great place to ask questions") do %>
       <p>Events are one of the best ways to speak to people and ask the questions you need to get into teaching.</p>
 
-      <%= form_for Events::Search.new, method: :get, url: search_events_path do |f| %>
+      <%= form_for TeachingEvents::Search.new, method: :get, url: events_path do |f| %>
         <%= f.hidden_field :distance, value: 10 %>
         <%= f.label :postcode, "Enter postcode" %>
         <%= f.text_field :postcode, autocomplete: "postal-code" %>
