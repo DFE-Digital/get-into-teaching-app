@@ -55,7 +55,15 @@ class TeachingEventsController < ApplicationController
     breadcrumb "Get into Teaching events", "/teaching-events"
   end
 
+  def not_available
+    render "not_available"
+  end
+
 private
+
+  def not_available_path
+    events_not_available_path
+  end
 
   def retrieve_event
     GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]).tap do |event|
