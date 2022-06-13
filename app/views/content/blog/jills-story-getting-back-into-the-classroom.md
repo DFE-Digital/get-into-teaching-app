@@ -4,6 +4,10 @@ date: "2021-01-01"
 author: Jill
 description: |-
   Read about how Jill got back into teaching maths using the return to teaching adviser service to gain school experience and up to date references.
+images:
+  jill:
+    path: "media/images/content/blog/thumbnails/stories-jill.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-jill.jpg"
 keywords:
   - returning to teaching
   - teacher training advisers
