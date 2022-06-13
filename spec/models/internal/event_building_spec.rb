@@ -33,6 +33,7 @@ describe Internal::EventBuilding do
 
     describe "#address_city" do
       it { is_expected.to validate_length_of(:address_city).is_at_most(100) }
+      it { is_expected.to validate_presence_of(:address_city) }
     end
 
     describe "#address_postcode" do

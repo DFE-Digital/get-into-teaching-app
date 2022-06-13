@@ -469,6 +469,8 @@ en:
           attributes:
             venue:
               blank: Enter a venue name
+            address_city:
+              blank: Enter a city
             address_postcode:
               blank: Enter a postcode
 

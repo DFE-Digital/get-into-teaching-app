@@ -369,6 +369,7 @@ describe Internal::EventsController, type: :request do
           context "when \"add a building\" is selected" do
             let(:expected_venue) { "New venue" }
             let(:expected_postcode) { "M1 7AX" }
+            let(:expected_city) { "Manchester" }
             let(:params) do
               attributes_for :internal_event,
                              :provider_event,
@@ -376,6 +377,7 @@ describe Internal::EventsController, type: :request do
                                "building":
                                  { "id": building_id,
                                    "venue": expected_venue,
+                                   "address_city": expected_city,
                                    "address_postcode": expected_postcode } }
             end
 
@@ -387,7 +389,7 @@ describe Internal::EventsController, type: :request do
                   address_line1: nil,
                   address_line2: nil,
                   address_line3: nil,
-                  address_city: nil,
+                  address_city: expected_city,
                   address_postcode: expected_postcode,
                   image_url: nil,
                 })
