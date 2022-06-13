@@ -10,8 +10,6 @@ RSpec.feature "Breadcrumbs", type: :feature do
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event) { event }
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_grouped_by_type).and_return([])
 
     visit path
   end
@@ -96,11 +94,5 @@ RSpec.feature "Breadcrumbs", type: :feature do
     let(:path) { event_steps_path("123") }
 
     it { is_expected.not_to have_css(".breadcrumbs") }
-  end
-
-  context "when visiting an event category" do
-    let(:path) { event_category_path("online-events") }
-
-    it { is_expected.to have_css(".breadcrumbs") }
   end
 end
