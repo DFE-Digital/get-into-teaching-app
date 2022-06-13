@@ -85,11 +85,11 @@ Rails.application.routes.draw do
     end
   end
 
-  resources "events", path: "/events", only: %i[index show search] do
+  resources "teaching_events", as: "events", path: "/events", controller: "teaching_events" do
     collection do
-      get "search"
-      post "search", to: "events#perform_search"
+      get :about_ttt_events, path: "about-ttt-events", as: "about_ttt"
     end
+
     resources "steps",
               path: "/apply",
               controller: "event_steps",
@@ -98,12 +98,6 @@ Rails.application.routes.draw do
         get :completed
         get :resend_verification
       end
-    end
-  end
-
-  resources "teaching_events", path: "/teaching-events", controller: "teaching_events" do
-    collection do
-      get :about_ttt_events, path: "about-ttt-events", as: "about_ttt"
     end
   end
 
