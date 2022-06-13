@@ -18,8 +18,6 @@ tags:
 
 For me, the teachers who stick in my mind are the ones that gave me their time and effort, and really prepared me for my future. I chose to train as a teacher so that I could do the same and give something back.
 
-## Proudest moment
-
 One of my proudest moments was helping a student to achieve an A* General Certificate of Secondary Education (GCSE) in her religious education exam, despite having a target grade of a D.
 
 I always say to the pupils, 'Ignore that target, put yourself at the target you want to achieve. It's just a computer somewhere that has calculated that, it doesn't mean that you're going to get a D. I think you're going to get something far greater.'
