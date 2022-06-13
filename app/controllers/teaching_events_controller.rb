@@ -4,7 +4,6 @@ class TeachingEventsController < ApplicationController
   include CircuitBreaker
 
   before_action :setup_filter, only: :index
-  before_action :set_front_matter
 
   rescue_from EventNotViewableError, with: :render_gone
 
@@ -88,10 +87,6 @@ private
 
   def setup_results
     @event_search = TeachingEvents::Search.new_decrypt(search_params)
-  end
-
-  def set_front_matter
-    @front_matter = { "noindex" => true }
   end
 
   def render_gone
