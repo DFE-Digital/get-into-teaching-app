@@ -117,7 +117,7 @@ describe TeachingEvents::EventComponent, type: "component" do
       it { expect(subject).to have_css("li.event.event--train-to-teach") }
 
       specify "contains the event name as a link" do
-        expect(subject).to have_link(event.name, href: "/teaching-events/#{event.readable_id}")
+        expect(subject).to have_link(event.name, href: "/events/#{event.readable_id}")
       end
 
       specify "contains the date and time" do
@@ -154,7 +154,7 @@ describe TeachingEvents::EventComponent, type: "component" do
       it { expect(subject).to have_css("li.event.event--regular") }
 
       specify "contains the event name as a link" do
-        expect(subject).to have_link(event.name, href: "/teaching-events/#{event.readable_id}")
+        expect(subject).to have_link(event.name, href: "/events/#{event.readable_id}")
       end
 
       specify "contains the date and time" do

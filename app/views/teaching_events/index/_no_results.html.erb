@@ -9,9 +9,9 @@
       <li>expanding your search area</li>
     <% end %>
     <% if @event_search.in_person_only? %>
-      <li>changing event type - <%= link_to("online events", teaching_events_path(add_online_events(params))) %> may be available</li>
+      <li>changing event type - <%= link_to("online events", events_path(add_online_events(params))) %> may be available</li>
     <% end %>
 
-    <li><%= link_to("clearing your filters", teaching_events_path) %> to start again</li>
+    <li><%= link_to("clearing your filters", events_path) %> to start again</li>
   </ul>
 </div>

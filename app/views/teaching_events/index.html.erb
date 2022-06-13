@@ -1,7 +1,3 @@
-<%= content_for(:canonical) do %>
-  <%= safe_html_format(canonical_tag.sub(teaching_events_path, events_path)) %>
-<% end %>
-
 <section class="teaching-events">
   <header>
     <h1 class="heading-l heading--box-yellow">Get Into Teaching events</h1>
@@ -56,7 +52,7 @@
               </div>
 
               <div class="teaching-events__about-ttt-banner--link">
-                <%= link_to("What happens at a Train to Teach event?", about_ttt_teaching_events_path, class: "button button--white") %>
+                <%= link_to("What happens at a Train to Teach event?", about_ttt_events_path, class: "button button--white") %>
               </div>
             </div>
           </div>

@@ -18,7 +18,7 @@ class TeachingEventsController < ApplicationController
 
   def create
     encrypted_params = TeachingEvents::Search.new(search_params).encrypted_attributes
-    redirect_to teaching_events_path({ teaching_events_search: encrypted_params })
+    redirect_to events_path({ teaching_events_search: encrypted_params })
   end
 
   def index
@@ -43,7 +43,7 @@ class TeachingEventsController < ApplicationController
   def show
     @event = TeachingEvents::EventPresenter.new(retrieve_event)
 
-    breadcrumb "Get into Teaching events", "/teaching-events"
+    breadcrumb "Get into Teaching events", events_path
     breadcrumb @event.name, request.path
 
     @page_title = @event.name
@@ -52,7 +52,7 @@ class TeachingEventsController < ApplicationController
   end
 
   def about_ttt_events
-    breadcrumb "Get into Teaching events", "/teaching-events"
+    breadcrumb "Get into Teaching events", events_path
   end
 
   def not_available
