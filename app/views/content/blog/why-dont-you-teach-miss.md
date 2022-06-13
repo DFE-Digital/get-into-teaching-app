@@ -4,8 +4,8 @@ date: "2019-12-02"
 author: Emma Maskell
 images:
   q-emma:
-    path: "media/images/content/blog/stories-emma.jpg"
-    thumbnail_path: "media/images/content/blog/stories-emma.jpg"
+    path: "media/images/content/blog/thumbnails/stories-emma.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-emma.jpg"
 description: |-
   Emma Maskell explains how her experience helping out as a teaching assistant inspired her to change careers and train to be a teacher.
 keywords:
@@ -15,8 +15,6 @@ keywords:
 tags:
   - life as a teacher
 ---
-
-$q-emma$
 
 I am a trainee at Carshalton Boys College and have a degree in biomedical sciences. I have spent time as a fitness instructor, private tutor and school science technician. So with some gentle encouragement from colleagues, I finally decided to become a qualified teacher. I did this through the School Direct (salaried) course.
 

@@ -4,8 +4,8 @@ date: "2019-07-29"
 author: Roger Brown
 images:
   roger:
-    path: "media/images/content/blog/stories-roger.jpg"
-    thumbnail_path: "media/images/content/blog/stories-roger.jpg"
+    path: "media/images/content/blog/thumbnails/stories-roger.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-roger.jpg"
 description: |-
   Physics teacher Roger Brown on how a degree in engineering and varied career set him up perfectly for teaching.
 keywords:
@@ -15,8 +15,6 @@ keywords:
 tags:
   - changing career to teaching
 ---
-
-$roger$
 
 After gaining a 2:1 degree in engineering, I initially enjoyed a varied career, as an account manager, freelance cartoonist, and even an Olympic athlete before deciding to teach physics.
 

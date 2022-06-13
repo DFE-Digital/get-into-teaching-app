@@ -22,6 +22,10 @@
     margin-top: 2 * $indent-amount;
   }
 
+  header + p {
+    margin-top: 3em;
+  }
+
   ol {
     padding-left: 0;
   }

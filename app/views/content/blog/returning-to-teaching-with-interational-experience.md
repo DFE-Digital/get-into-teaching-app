@@ -4,8 +4,8 @@ date: "2019-10-07"
 author: Katie Lockett
 images:
   q-katie:
-    path: "media/images/content/blog/stories-katie.jpg"
-    thumbnail_path: "media/images/content/blog/stories-katie.jpg"
+    path: "media/images/content/blog/thumbnails/stories-katie.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-katie.jpg"
 description: |-
   Head of faculty Katie Lockett shares her story of returning to teach in England from China.
 keywords:
@@ -16,8 +16,6 @@ tags:
   - non-UK teachers
   - returning to teaching
 ---
-
-$q-katie$
 
 After 4 years of teaching modern foreign languages in London, I decided to try something different. I moved to China to teach in an international school, but after a while, I wanted to move back to England to be closer to my partner.
 

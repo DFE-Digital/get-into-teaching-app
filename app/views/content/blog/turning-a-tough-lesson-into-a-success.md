@@ -4,8 +4,8 @@ date: "2019-08-26"
 author: Danny Holliday
 images:
   danny:
-    path: "media/images/content/blog/stories-danny.jpg"
-    thumbnail_path: "media/images/content/blog/stories-danny.jpg"
+    path: "media/images/content/blog/thumbnails/stories-danny.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-danny.jpg"
 description: |-
   PE teacher Danny Holliday shares his experience of dealing with behaviour management out on the rugby field with his year 10 class.
 keywords:
@@ -15,8 +15,6 @@ keywords:
 tags:
   - life as a teacher
 ---
-
-$danny$
 
 I started in quite a hard school in a deprived area. I taught there for 3 years and it was tough, but extremely rewarding.
 

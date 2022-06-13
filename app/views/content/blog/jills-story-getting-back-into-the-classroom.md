@@ -4,6 +4,10 @@ date: "2021-01-01"
 author: Jill
 description: |-
   Read about how Jill got back into teaching maths using the return to teaching adviser service to gain school experience and up to date references.
+images:
+  jill:
+    path: "media/images/content/blog/thumbnails/stories-jill.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-jill.jpg"
 keywords:
   - returning to teaching
   - teacher training advisers
@@ -11,8 +15,6 @@ tags:
   - returning to teaching
   - teacher training advisers
 ---
-
-$jill$
 
 After almost a decade of teaching science, I Ieft the job in 2001 when my husband and I started a family. During my time out of the classroom, I did quite a lot of work for an exam board and lots of private tuition. This kept me occupied for many years.
 

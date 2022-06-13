@@ -4,8 +4,8 @@ date: "2020-02-01"
 author: Will Fordham
 images:
   will-fordham:
-    path: "media/images/content/blog/stories-will.jpg"
-    thumbnail_path: "media/images/content/blog/stories-will.jpg"
+    path: "media/images/content/blog/thumbnails/stories-will.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-will.jpg"
 description: |-
   Teaching trainee Will Fordham was working as a communications manager, when he realised that teaching was what he loved.
 keywords:
@@ -15,8 +15,6 @@ keywords:
 tags:
   - changing career to teaching
 ---
-
-$will-fordham$
 
 I decided to train as an English teacher after working in various communication roles as a civil servant. Before enrolling on a salaried teacher training course, I completed a Certificate in Teaching English to Speakers of Other Languages (CELTA) qualification at Cambridge University, so I could teach English as a second language. I spent 2 years teaching English in Italy before returning to another communications job.
 
