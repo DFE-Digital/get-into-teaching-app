@@ -13,16 +13,6 @@ RSpec.describe Content::CallToActionComponentInjector, type: :component do
     },
     "chat online component" => "chat_online",
     "next steps component" => "next_steps",
-    "story component" => {
-      "name" => "story",
-      "arguments" => {
-        "name" => "story component",
-        "link" => "/story/component",
-        "text" => "this is a story component",
-        "heading" => "story component heading",
-        "image" => "chat-online-card.jpg",
-      },
-    },
   }.each do |name, meta|
     describe "rendering a #{name}" do
       subject { described_class.new(meta).component }
