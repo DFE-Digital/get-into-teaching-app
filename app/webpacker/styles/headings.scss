@@ -10,14 +10,16 @@
 @mixin highlight-text($backgroundColor, $color) {
   // Multi-line padded highlight effect without horizontal
   // gabs between lines.
-  margin: 0 1rem;
   color: $color;
+  line-height: 1.4;
 
   span {
+    background-color: $backgroundColor;
+    display: inline;
+    padding: 0.45rem 1rem;
+
     box-decoration-break: clone;
-    padding: 0.1em 0;
-    background: $backgroundColor;
-    box-shadow: 1rem 0 0 $backgroundColor, -1rem 0 0 $backgroundColor;
+    -webkit-box-decoration-break: clone;
   }
 }
 
