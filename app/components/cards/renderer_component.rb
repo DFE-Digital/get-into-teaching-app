@@ -3,7 +3,7 @@ module Cards
     CARD_COMPONENTS_PATH =
       Rails.root.join("app/components/cards/*_component.rb").freeze
     EXCLUDE_COMPONENTS = %w[renderer].freeze
-    DEFAULT_TYPE = Cards::StoryComponent
+    DEFAULT_TYPE = Cards::ChatOnlineComponent
 
     attr_reader :card, :page_data
 

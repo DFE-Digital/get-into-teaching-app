@@ -7,9 +7,6 @@ describe "Google Tag Manager", type: :request do
   let(:layout_paths) do
     [
       "/cookies",
-      "/my-story-into-teaching",
-      "/my-story-into-teaching/career-changers/financiers-future-in-maths",
-      "/my-story-into-teaching/internaltional-career-changers",
       "/steps-to-become-a-teacher",
       "/three-things-to-help-you-get-into-teaching",
       "/ways_to_train",

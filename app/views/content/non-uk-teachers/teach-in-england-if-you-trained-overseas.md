@@ -3,7 +3,7 @@ title: "Teach in England if you trained overseas"
 description: |-
   Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
 related_content:
-    Career progression stories: "/my-story-into-teaching/career-progression"
+    Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
@@ -121,7 +121,7 @@ There are [specific salary requirements for a skilled worker visa](https://www.g
 
 ## Learn about life as a teacher in England
 
-[Read other teachers’ stories](/my-story-into-teaching) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
+[Read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
 ## Contact
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.

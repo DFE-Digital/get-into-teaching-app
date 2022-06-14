@@ -118,7 +118,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
 
             uri = URI.parse(href)
 
-            expect(paths).to include(uri.path)
+            expect(paths).to(include(uri.path), "invalid path #{href} on page #{sp.path}")
 
             if (fragment = uri.fragment)
               expect(@stored_pages_by_path[uri.path].body).to(have_css("##{fragment}"), "invalid link on #{sp.path} - #{href}, (missing fragment #{fragment})")

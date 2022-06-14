@@ -7,33 +7,13 @@ RSpec.describe Cards::RendererComponent, type: :component do
   let(:instance) { described_class.new card: card, page_data: page_data }
 
   context "with no card type" do
-    let :edna do
-      {
-        title: "Edna's career",
-        image: "media/images/dfelogo.png",
-      }
-    end
-
-    let :card do
-      {
-        "name" => "Edna Krabappel",
-        "snippet" => "Your education is important. Roman numerals, et cetera",
-        "link" => "/stories/edna-k",
-        "image" => "media/images/dfelogo.png",
-      }
-    end
-
-    before do
-      allow(Pages::Frontmatter).to \
-        receive(:find).with(card["link"]).and_return edna
-    end
+    let(:card) { {} }
 
     it { is_expected.to have_css ".card" }
     it { is_expected.to have_css ".card.card--no-border" }
-    it { is_expected.to have_css "img" }
 
-    it "will default to a story card" do
-      is_expected.to have_css ".card header", text: edna[:title]
+    it "will default to the chat online card" do
+      is_expected.to have_content("Get the answers you need")
     end
   end
 

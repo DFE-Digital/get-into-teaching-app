@@ -72,7 +72,7 @@ When you have successfully completed your training, you will be awarded [qualifi
 
 QTS will allow you to teach in all schools in England. Some courses combine QTS with a [postgraduate certificate in education (PGCE)](/what-is-a-pgce) or a [postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional, you can get QTS without a PGCE or PGDE.
 
-[Read teachers' stories about the rewards of training to teach in England](/my-story-into-teaching).
+[Read teachers' stories about the rewards of training to teach in England](/blog).
 
 ## Other ways to train
 
@@ -247,7 +247,7 @@ When you have qualified teacher status, you will be able to apply for paid teach
 
 [Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
 
-[Read interviews with real teachers](/my-story-into-teaching).
+[Read interviews with real teachers](/blog).
 
 Learn more about English education:
 
