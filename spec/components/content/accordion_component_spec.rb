@@ -87,39 +87,6 @@ describe Content::AccordionComponent, type: "component" do
         end
       end
     end
-
-    describe "story" do
-      subject do
-        render_inline(described_class.new) do |accordion|
-          accordion.step(title: title, call_to_action: call_to_action)
-        end
-      end
-
-      describe "when a call to action is specified" do
-        let(:name) { "Story name" }
-        let(:heading) { "Story heading" }
-        let(:call_to_action) do
-          {
-            "name" => "story",
-            "arguments" => {
-              "name" => name,
-              "heading" => heading,
-              "image" => "media/images/dfelogo.png",
-              "link" => "/some-link",
-              "text" => "The quick brown fox",
-            },
-          }
-        end
-
-        before { subject }
-
-        specify "the story component is rendered" do
-          expect(page).to have_css(".call-to-action--story")
-          expect(page).to have_content(heading)
-          expect(page).to have_content(name)
-        end
-      end
-    end
   end
 
   describe "Numbered steps" do
