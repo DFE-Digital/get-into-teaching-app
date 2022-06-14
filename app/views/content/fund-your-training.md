@@ -13,5 +13,8 @@ content:
     - content/fund-your-training/questions
     - content/fund-your-training/why-teach
 image: "media/images/content/hero-images/0013.jpg"
+hero_bg_color: yellow
+title_bg_color: white
+hero_blend_content: true
 ---
 
