@@ -37,7 +37,7 @@ Your teacher training course might be led by a university, school, college or gr
 * School Direct (fee-paying)
 * School Direct (salaried)
 
-The difference between teacher training courses will depend on your individual teacher training provider, rather than if your course is referred to as a SCITT, or School Direct.
+The difference between teacher training courses will depend on your individual teacher training provider, rather than if your course is a SCITT, apprenticeship, or School Direct programme.
 
 All teacher training courses follow the same [core content framework (CCF)](https://www.gov.uk/government/publications/initial-teacher-training-itt-core-content-framework). You’ll spend most of your time in school placements with some theoretical learning, regardless of which course you choose.
 
