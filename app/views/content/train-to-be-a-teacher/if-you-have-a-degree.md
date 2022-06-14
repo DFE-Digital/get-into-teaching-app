@@ -29,19 +29,18 @@ Postgraduate teacher training courses usually take 9 months full time, in line w
 
 If you’re not from the UK, find out about [training to teach in England](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
-## Types of teacher training
+## Teacher training courses
 
-Your teacher training course might be led by a university, school, college or group of schools. There are different teacher training types, including:
+Your teacher training course might be led by a university, school, college or group of schools. Your course might be referred to as:
 
 * school centred initial teacher training (SCITT)
-* postgraduate apprenticeship
-* university-led
+* an apprenticeship
 * School Direct (fee-paying)
 * School Direct (salaried)
 
-The difference between teacher training courses will depend on your teacher training provider, rather than what type of teacher training you do.
+The difference between teacher training courses will depend on your individual teacher training provider, rather than if your course is referred to as a SCITT, or School Direct.
 
-All teacher training courses follow the same [core content framework (CCF)](https://www.gov.uk/government/publications/initial-teacher-training-itt-core-content-framework). You’ll spend most of your time in school placements with some theoretical learning, regardless of which type of training you choose.
+All teacher training courses follow the same [core content framework (CCF)](https://www.gov.uk/government/publications/initial-teacher-training-itt-core-content-framework). You’ll spend most of your time in school placements with some theoretical learning, regardless of which course you choose.
 
 ## Choose your teacher training provider 
 
@@ -77,9 +76,9 @@ No matter what course you choose, you can apply for a student loan.
 
 Your degree grade can affect your eligibility for courses. Teacher training providers often ask for a 2:2, but some ask for a third or pass.
 
-If you need help understanding degree grades, [chat to us online](/train-to-be-a-teacher/if-you-have-a-degree#talk-to-us). 
+If you need help understanding degree grades, [call us or chat to us online](/train-to-be-a-teacher/if-you-have-a-degree#talk-to-us). 
 
-### Find out if you're eligible for a salary  
+### Find out if you're eligible for a salary while you train 
 
 Salaried courses are sometimes available for specific candidates, such as if you're working as an unqualified teacher. These include School Direct (salaried) courses and postgraduate teaching apprenticeships.
 
