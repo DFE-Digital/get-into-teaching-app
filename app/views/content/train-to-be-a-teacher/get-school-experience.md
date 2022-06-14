@@ -22,7 +22,7 @@ navigation: 20.25
 navigation_description: Spending some time in a school can help you find out more about teaching and even help you decide what kind of teacher you want to be.
 ---
 
-You can visit schools to get experience in the classroom before you start your initial teacher training (ITT).
+You can visit schools to get unpaid experience in the classroom before you start your initial teacher training (ITT).
 
 It can help you:
 
