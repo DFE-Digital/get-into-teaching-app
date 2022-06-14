@@ -110,21 +110,6 @@ Rails.application.routes.draw do
     end
   end
 
-  # Needs to have higher priority to redirect the category
-  get "event-categories/online-events", to: redirect("/event-categories/online-q-as")
-
-  resources :event_categories, only: %i[show], path: "event-categories" do
-    member do
-      post "", to: "event_categories#create"
-    end
-  end
-  # The event category pages used to exist here - once we're sure no traffic is
-  # coming to these paths we can safely remove these redirects.
-  get "events/category/:id/", to: redirect("/event-categories/%{id}")
-  get "events/category/:id/archive", to: redirect("/event-categories/%{id}/archive")
-  get "event_categories/:id", to: redirect("/event-categories/%{id}")
-  get "event_categories/:id/archive", to: redirect("/event-categories/%{id}/archive")
-
   namespace :mailing_list, path: "/mailinglist" do
     resources :steps,
               path: "/signup",
