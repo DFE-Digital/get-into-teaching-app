@@ -412,3 +412,4 @@ redirects:
   "/why-teach(*reason)": "/blog"
   "/content/stories(*story)": "/blog"
   "/my-story-into-teaching(*story)": "/blog"
+  "/event-categories/(*category)": "/events"
