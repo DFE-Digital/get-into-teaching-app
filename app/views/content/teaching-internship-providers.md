@@ -440,7 +440,7 @@ keywords:
     <div>
       <h2 class="heading-m">Applications now closed</h2>
       
-      <p>Applications for the Teaching Internships Programme in 2022 are now closed. Applications will reopen in early 2023.</p>
+      <p>Applications for the Teaching Internships Programme in 2022 are now closed. Applications will reopen by early 2023.</p>
 
       <p>If you’re interested in spending some time in a classroom, you can still get school experience.</p>
 
