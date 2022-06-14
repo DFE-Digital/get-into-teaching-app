@@ -1,6 +1,7 @@
 ---
 title: "If you already have classroom experience"
 heading: "If you already have classroom experience"
+subcategory: This is a test
 description: |-
   Find out how you can gain qualified teacher status (QTS) if you’ve already spent a lot of time in the classroom as a teaching assistant or in a similar role.
 related_content:

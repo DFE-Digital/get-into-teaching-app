@@ -1,6 +1,7 @@
 ---
 title: "Get school experience"
 heading: "Get school experience"
+subcategory: This is a test
 description: |-
   Get school experience to explore what life is like in the classroom before you start your initial teacher training (ITT). Discover if teaching is for you.
 related_content:
