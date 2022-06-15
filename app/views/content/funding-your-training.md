@@ -14,7 +14,7 @@
       - title: New events added.
         text: Turn your questions into confidence. Decide how to fund your training at our next event.
         link_text: "Events near you"
-        link_target: "/event-categories/train-to-teach-events"
+        link_target: "/events/about-ttt-events"
         icon: "icon-calendar"
         hide_on_mobile: Yes
         hide_on_tablet: Yes
