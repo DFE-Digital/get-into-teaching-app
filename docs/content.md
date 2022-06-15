@@ -296,3 +296,7 @@ To add a new generic variant, copy and paste an existing one, give it an appropr
 ```yaml
 closing_paragraph: my-new-closing-paragraph
 ```
+
+### Tags
+
+We have a whitelist of available blog tags in `/config/tags.yml` - if you try to add a tag not contained within this list you will receive an error message on the blog post page and our test suite will fail (preventing you from deploying your blog post). If you need a tag not already in the whitelist, add it to the `tags.yml` before referencing it in your blog post.
