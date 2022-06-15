@@ -11,7 +11,7 @@
 
       <section class="container category__cards main-body">
         <%= tag.nav(aria: { label: "#{@page.title} navigation" }, class: "category__nav-cards") do %>
-          <%= render(Categories::Card.with_collection(ungrouped_categories(@page.path))) %>
+          <%= render(Categories::CardComponent.with_collection(ungrouped_categories(@page.path))) %>
         <% end %>
       </section>
 
@@ -19,7 +19,7 @@
         <section class="container category__cards main-body">
           <%= tag.h2(title, class: "heading--box-blue") %>
           <%= tag.nav(aria: { label: "#{title} category" }, class: "category__nav-cards") do %>
-            <%= render(Categories::Card.with_collection(pages, heading_tag: "h3")) %>
+            <%= render(Categories::CardComponent.with_collection(pages, heading_tag: "h3")) %>
           <% end %>
         </section>
       <% end %>

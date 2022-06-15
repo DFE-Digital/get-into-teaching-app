@@ -1,4 +1,4 @@
-class Categories::Card < ViewComponent::Base
+class Categories::CardComponent < ViewComponent::Base
   attr_reader :title, :description, :path, :heading_tag
 
   def initialize(card:, heading_tag: "h2")
