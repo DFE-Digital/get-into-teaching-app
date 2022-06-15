@@ -87,7 +87,7 @@ Rails.application.routes.draw do
 
   resources "teaching_events", as: "events", path: "/events", controller: "teaching_events" do
     collection do
-      get :about_ttt_events, path: "about-ttt-events", as: "about_ttt"
+      get :about_ttt_events, path: "about-train-to-teach-events", as: "about_ttt"
     end
 
     resources "steps",

@@ -28,7 +28,7 @@ redirects:
   "/iqts": "/non-uk-teachers/international-qualified-teacher-status"
 
   # Events pages
-  "/event-categories/train-to-teach-events": "/events/about-ttt-events"
+  "/event-categories/train-to-teach-events": "/events/about-train-to-teach-events"
   "/event-categories/online-q-as/archive": "/events"
   "/event-categories/online-q-as": "/events"
   "/event-categories/school-and-university-events": "/events"
