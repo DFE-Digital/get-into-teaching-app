@@ -1,10 +1,12 @@
 module Pages
   class Blog
+    class InvalidTagError < RuntimeError; end
+
     class << self
       delegate :posts, :popular_tags, :similar_posts, to: :instance
 
       def find(path)
-        ::Pages::Page.find(path)
+        ::Pages::Post.find(path)
       end
 
     private

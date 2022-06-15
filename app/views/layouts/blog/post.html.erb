@@ -12,6 +12,8 @@
 
     <main id="main-content" role="main">
       <section class="container blog main-body">
+        <%= render(partial: "sections/content_errors") %>
+
         <article class="markdown longform blog-article">
           <header>
             <%= tag.h1(@front_matter["title"], class: "heading-l heading--margin-bottom-0") %>
@@ -33,7 +35,7 @@
           <footer>
             <h2 class="heading-m">Related to this article</h2>
             <div class="blog-tags-list container ">
-              <h3>Tags</h3>
+              <h3 id="tags">Tags</h3>
               <%= render partial: "blog/tag_list", locals: { tags: @front_matter["tags"] } %>
             </div>
 

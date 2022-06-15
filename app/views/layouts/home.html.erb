@@ -10,6 +10,8 @@
       <%= render Content::HeroComponent.new(@front_matter) %>
 
       <section class="main-body home">
+        <%= render(partial: "sections/content_errors") %>
+
         <% @front_matter["content"]&.each do |partial| %>
           <%= render(partial) %>
         <% end %>
