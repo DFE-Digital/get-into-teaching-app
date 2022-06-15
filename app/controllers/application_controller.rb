@@ -32,6 +32,11 @@ protected
     @noindex = true
   end
 
+  def add_content_error(error)
+    @content_errors ||= []
+    @content_errors << error
+  end
+
 private
 
   def declare_frontmatter

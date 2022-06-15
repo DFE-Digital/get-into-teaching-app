@@ -50,4 +50,21 @@ describe "reading the blog", type: :feature do
     # ensure we're pulling in and including the generic closing paragraph named in the front matter
     expect(page).to have_css("article > p:last-of-type", text: "enriching the lives of young people")
   end
+
+  context "when a blog post has invalid tags" do
+    scenario "viewing - do not display content errors" do
+      allow(Rails.application.config.x).to receive(:display_content_errors).and_return(false)
+
+      expect { visit blog_path("post_invalid_tag") }.to raise_error(Pages::ContentError)
+    end
+
+    scenario "viewing - display content errors" do
+      allow(Rails.application.config.x).to receive(:display_content_errors).and_return(true)
+
+      visit blog_path("post_invalid_tag")
+
+      expect(page).to have_http_status(:success)
+      expect(page).to have_text("These tags are not defined in tags.yml: invalid tag")
+    end
+  end
 end

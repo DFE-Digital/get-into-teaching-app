@@ -18,6 +18,8 @@
       <% end %>
 
       <section class="container main-body">
+        <%= render(partial: "sections/content_errors") %>
+
         <article class="markdown hero-nav">
           <%= yield %>
         </article>
