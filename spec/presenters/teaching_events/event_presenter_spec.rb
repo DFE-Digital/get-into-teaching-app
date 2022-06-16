@@ -24,6 +24,7 @@ describe TeachingEvents::EventPresenter do
       readable_id
       scribble_id
       start_at
+      summary
       type_id
       status_id
       video_url

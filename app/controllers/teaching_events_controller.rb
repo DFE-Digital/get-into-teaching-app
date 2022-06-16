@@ -4,7 +4,6 @@ class TeachingEventsController < ApplicationController
   include CircuitBreaker
 
   before_action :setup_filter, only: :index
-  before_action :set_front_matter
 
   rescue_from EventNotViewableError, with: :render_gone
 
@@ -18,7 +17,7 @@ class TeachingEventsController < ApplicationController
 
   def create
     encrypted_params = TeachingEvents::Search.new(search_params).encrypted_attributes
-    redirect_to teaching_events_path({ teaching_events_search: encrypted_params })
+    redirect_to events_path({ teaching_events_search: encrypted_params })
   end
 
   def index
@@ -43,7 +42,7 @@ class TeachingEventsController < ApplicationController
   def show
     @event = TeachingEvents::EventPresenter.new(retrieve_event)
 
-    breadcrumb "Get into Teaching events", "/teaching-events"
+    breadcrumb "Get into Teaching events", events_path
     breadcrumb @event.name, request.path
 
     @page_title = @event.name
@@ -52,10 +51,18 @@ class TeachingEventsController < ApplicationController
   end
 
   def about_ttt_events
-    breadcrumb "Get into Teaching events", "/teaching-events"
+    breadcrumb "Get into Teaching events", events_path
+  end
+
+  def not_available
+    render "not_available"
   end
 
 private
+
+  def not_available_path
+    events_not_available_path
+  end
 
   def retrieve_event
     GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]).tap do |event|
@@ -80,10 +87,6 @@ private
 
   def setup_results
     @event_search = TeachingEvents::Search.new_decrypt(search_params)
-  end
-
-  def set_front_matter
-    @front_matter = { "noindex" => true }
   end
 
   def render_gone

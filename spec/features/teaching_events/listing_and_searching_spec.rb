@@ -12,9 +12,9 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "The first two train to teach events are 'featured'" do
-      visit teaching_events_path
+      visit events_path
 
-      expect(page).to have_current_path("/teaching-events")
+      expect(page).to have_current_path("/events")
 
       expected_featured = 2
       expected_regular = event_count - expected_featured
@@ -29,7 +29,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       let(:events) { build_list(:event_api, event_count - ttt_event_count, :online_event).append(build(:event_api)) }
 
       scenario "Non-train-to-teach events are never featured" do
-        visit teaching_events_path
+        visit events_path
 
         expected_featured = ttt_event_count
         expected_regular = event_count - expected_featured
@@ -43,7 +43,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       let(:events) { build_list(:event_api, event_count, :online_event) }
 
       scenario "Non-train-to-teach events are never featured" do
-        visit teaching_events_path
+        visit events_path
 
         expect(page).to have_css(".teaching-events__events--regular > ol > li", count: event_count)
       end
@@ -53,13 +53,13 @@ RSpec.feature "Searching for teaching events", type: :feature do
       let(:event_count) { 20 }
 
       scenario "pagination links should be visible" do
-        visit teaching_events_path
+        visit events_path
 
         expect(page).to have_css(".pagination")
 
         click_on "2"
 
-        expect(page).to have_current_path("/teaching-events?page=2")
+        expect(page).to have_current_path("/events?page=2")
       end
     end
   end
@@ -69,7 +69,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       allow_any_instance_of(TeachingEvents::Search).to receive(:results).and_return(events)
     end
 
-    subject! { visit teaching_events_path }
+    subject! { visit events_path }
 
     let(:events) do
       [
@@ -90,7 +90,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(page).to have_css(".event .event__info__type", text: "Training provider")
 
       events.each do |event|
-        expect(page).to have_link(event.name, href: teaching_event_path(event.readable_id))
+        expect(page).to have_link(event.name, href: event_path(event.readable_id))
       end
     end
 
@@ -109,7 +109,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "searching by postcode and distance" do
-      visit teaching_events_path
+      visit events_path
 
       fill_in "Postcode", with: "M1 2WD"
       select "5 miles", from: "Search area"
@@ -119,7 +119,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "searching for online events" do
-      visit teaching_events_path
+      visit events_path
 
       check "Online"
       click_on "Update results"
@@ -128,7 +128,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "searching for in person events" do
-      visit teaching_events_path
+      visit events_path
 
       check "In person"
       click_on "Update results"
@@ -137,7 +137,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "searching for train to teach events" do
-      visit teaching_events_path
+      visit events_path
 
       expected_type_ids = EventType.lookup_by_names("Train to Teach event", "Question Time")
 
@@ -148,7 +148,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "searching for online forum events" do
-      visit teaching_events_path
+      visit events_path
 
       expected_type_ids = [EventType.online_event_id]
 
@@ -159,7 +159,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "searching for school or university events" do
-      visit teaching_events_path
+      visit events_path
 
       expected_type_ids = [EventType.school_or_university_event_id]
 
@@ -170,7 +170,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "searching for online and train to teach events" do
-      visit teaching_events_path
+      visit events_path
 
       expected_type_ids = EventType.lookup_by_names("Train to Teach event", "Question Time", "School or University event")
 
@@ -185,13 +185,13 @@ RSpec.feature "Searching for teaching events", type: :feature do
       let(:event_count) { 0 }
       let(:params) { nil }
 
-      before { visit teaching_events_path(params) }
+      before { visit events_path(params) }
 
       scenario "a useful message and options are shown" do
         within(".teaching-events__none") do
           expect(page).to have_css("h3", text: "0 events found")
           expect(page).to have_css("p", text: "Why not try:")
-          expect(page).to have_link(text: "clearing your filters", href: teaching_events_path)
+          expect(page).to have_link(text: "clearing your filters", href: events_path)
         end
       end
 
@@ -210,7 +210,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
         scenario "an alternate option is shown" do
           within(".teaching-events__none") do
-            add_online_events_path = teaching_events_path(
+            add_online_events_path = events_path(
               params.deep_merge({ teaching_events_search: { online: [true, false] } }),
             )
             expect(page).to have_link(text: "online events", href: add_online_events_path)
