@@ -18,8 +18,6 @@
         icon: "icon-calendar"
         hide_on_mobile: Yes
         hide_on_tablet: Yes
-  before-content:
-    - content/funding-your-training/funding-widget
   calls_to_action:
     chat:
       name: chat_online
