@@ -7,7 +7,6 @@ RSpec.feature "Events near you promo", type: :feature do
   let(:events) { build_list(:event_api, 1) }
   let(:events_by_type) { group_events_by_type(events) }
   let(:event) { events.first }
-  let(:event_category_slug) { "train-to-teach-events" }
   let(:postcode) { "M1" }
   let(:distance) { 10 }
 
