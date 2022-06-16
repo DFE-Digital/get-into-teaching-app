@@ -2,13 +2,17 @@
 title: "Scholarships and bursaries"
 heading: "Scholarships and bursaries"
 description: |-
-   There is extra funding available for some subject areas, find out if you are eligible.
+   Find out if you're eligible for extra funding depending on the subject you're training to teach.
 related_content:
     What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
     Improve your subject knowledge: "/improve-your-subject-knowledge"
     Salaries and benefits: "/salaries-and-benefits"
+promo_content:
+    - content/train-to-be-a-teacher/promos/get-adviser-promo
+before-content:
+    - content/fund-your-training/funding-widget
 navigation: 20.10
-navigation_description: There is extra funding available for some subject areas, find out if you are eligible.
+navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
 ---
 
 You may be eligible for a teaching bursary or scholarship when training to teach. These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.
@@ -40,7 +44,7 @@ Postgraduate teaching bursaries and scholarships are only available for the subj
 
 You’ll also need to meet the bursary scheme’s individual terms and conditions.
 
-[Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023)
+[Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023).
 
 To find out if you’re eligible for a scholarship and to apply, you can visit the relevant scholarship body:
 
@@ -51,15 +55,15 @@ To find out if you’re eligible for a scholarship and to apply, you can visit t
 
 ## Undergraduate bursaries
 
-You may be eligible for a [bursary of £9,000](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023#undergraduate-bursary) if you do a secondary maths or physics course that leads to [qualified teacher status](/what-is-qts) (QTS).
+You may be eligible for a [bursary of £9,000](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023#undergraduate-bursary) if you do a secondary maths or physics course that leads to [qualified teacher status (QTS)](/what-is-qts).
 
 You may also be eligible if you do an opt-in QTS course in secondary computing, languages, mathematics or physics. This is where you start a standard undergraduate degree but then opt-in to initial teacher training to get QTS.
 
 The amount you receive depends on the year that you start your QTS course. You do not get a bursary in every year of an undergraduate course. Depending on the type of course you do, you may get the bursary in your final year or final two years.
 
-### If you are former military personnel
+### Undergraduate bursary if you're former military personnel
 
-You may be eligible for a Troops to Teachers  tax-free bursary of £40,000 if you’re:
+You may be eligible for a Troops to Teachers tax-free bursary of £40,000 if you’re:
 
-training to teach secondary biology, physics, chemistry, computing, maths or languages
-doing an undergraduate degree leading to QTS in England
+* training to teach secondary biology, physics, chemistry, computing, maths or languages
+* doing an undergraduate degree leading to QTS in England

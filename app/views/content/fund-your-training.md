@@ -1,8 +1,8 @@
 ---
-title: "Fund your training"
-heading: "Fund your training"
+title: "Funding and support"
+heading: "Funding and support"
 description: |-
-    Find out about the financial support you can get to help pay for your training, including loans, scholarships and bursaries.
+    Find out about the financial and practical support you can get when you apply for teacher training, including loans, scholarships and bursaries.
 title_paragraph: |-
     You can get support while you are training, from a range of financial support to help pay your fees to practical assistance if you are disabled.
 navigation: 21

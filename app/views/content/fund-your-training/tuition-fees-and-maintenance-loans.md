@@ -7,6 +7,8 @@ related_content:
     "Who do you want to teach?": "/blog/choosing-the-right-teacher-training-course-provider"
     Improve your subject knowledge: "/improve-your-subject-knowledge"
     Salaries and benefits: "/salaries-and-benefits"
+promo_content:
+    - content/train-to-be-a-teacher/promos/get-adviser-promo
 student-finance-calculator:
     name: simple
     arguments:
