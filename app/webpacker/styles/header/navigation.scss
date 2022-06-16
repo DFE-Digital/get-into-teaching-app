@@ -95,8 +95,8 @@ body > header nav {
         }
 
         a {
-          &:hover {
-            border-bottom: 2px solid $black;
+          &:hover, &:focus {
+            border-bottom: 4px solid $black;
           }
         }
 
@@ -104,7 +104,7 @@ body > header nav {
           line-height: 1.2;
           display: inline-block;
           padding: 0em .2em 0;
-          border-bottom: 2px solid $white;
+          border-bottom: 4px solid $white;
         }
       }
     }

@@ -21,9 +21,8 @@
     color: $white;
     background-color: $black;
     z-index: 100;
-    outline: 2px solid $pink;
-    box-shadow: none;
-    outline-offset: 0.2em;
+    box-shadow: 0 4px $pink;
+    outline: 4px solid transparent;
   }
 }
 
@@ -41,9 +40,8 @@
   &:focus {
     color: $white;
     background-color: $black;
-    outline: 2px solid $pink;
-    outline-offset: 0.2em;
-    box-shadow: none;
+    box-shadow: 0 4px $pink;
+    outline: 4px solid transparent;
 
     &:after {
       border-color: $white;
