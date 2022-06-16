@@ -1,11 +1,11 @@
 require "rails_helper"
 
 RSpec.feature "Event sign up", :integration, type: :feature, js: true do
-  let(:event_selector) { ".events-featured__list__item" }
+  let(:event_selector) { ".event--train-to-teach a" }
 
   before do
     config_capybara
-    navigate_to_last_page_of_events
+    navigate_to_events
   end
 
   around do |example|
@@ -15,21 +15,21 @@ RSpec.feature "Event sign up", :integration, type: :feature, js: true do
   end
 
   scenario "Full journey as a new candidate" do
-    return unless an_event_exists?
+    next unless an_event_exists?
 
     navigate_to_last_event_sign_up
     sign_up(rand_first_name, rand_last_name, rand_email)
   end
 
   scenario "Full journey as a new candidate (including mailing list step)" do
-    return unless an_event_exists?
+    next unless an_event_exists?
 
     navigate_to_last_event_sign_up
     sign_up(rand_first_name, rand_last_name, rand_email, mailing_list: true)
   end
 
   scenario "Full journey as an existing candidate" do
-    return unless an_event_exists?
+    next unless an_event_exists?
 
     navigate_to_last_event_sign_up
     email = "eventsignupuser@mailsac.com"
@@ -81,15 +81,11 @@ RSpec.feature "Event sign up", :integration, type: :feature, js: true do
 
   def navigate_to_last_event_sign_up
     all(event_selector).last.click
-    first("a", text: "Sign up for this event").click
+    first("a", text: "Register for this event").click
   end
 
-  def navigate_to_last_page_of_events
-    visit event_category_path("train-to-teach-events")
+  def navigate_to_events
+    visit events_path
     click_link "Accept all cookies"
-
-    if page.has_css?(".pagination")
-      all(".pagination .page a").last.click
-    end
   end
 end
