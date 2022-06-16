@@ -17,8 +17,7 @@ describe "Google Tag Manager", type: :request do
       event_step_path(event.readable_id, :personal_details),
       event_step_path(event.readable_id, :further_details),
       events_path,
-      teaching_events_path,
-      teaching_event_path(event.readable_id),
+      event_path(event.readable_id),
       root_path,
     ]
   end

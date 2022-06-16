@@ -1,0 +1,12 @@
+<% if @content_errors && display_content_errors? %>
+  <div class="govuk-error-summary govuk-!-width-full govuk-!-margin-5" aria-labelledby="error-summary-title" role="alert" data-module="govuk-error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">
+      There is a problem with the content of this page
+    </h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <%= safe_join(@content_errors.map { |e| tag.a(tag.li(e.message), href: e.anchor) }) %>
+      </ul>
+    </div>
+  </div>
+<% end %>

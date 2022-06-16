@@ -509,7 +509,7 @@ $icon-size: 3rem;
 
   &__info {
     max-width: $content-max-width;
-    margin: auto;
+    margin: auto auto 4em;
 
     display: flex;
     gap: 1em;

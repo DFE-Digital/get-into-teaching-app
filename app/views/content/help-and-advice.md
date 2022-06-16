@@ -29,9 +29,9 @@ Train to Teach events are run by the Department for Education (DfE) and are free
 
 There are online, text-based sessions where you can ask a panel of specialists the questions that matter to you. These sessions, run by DfE, cover a range of different topics so you can post specific questions and receive advice tailored to your particular circumstances.
 
-### School and university events
+### Training provider events
 
-You could also attend a school and university event, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
+You could also attend a training provider event, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
 
 <a href="/events" class="button">Search for an event</a>
 
