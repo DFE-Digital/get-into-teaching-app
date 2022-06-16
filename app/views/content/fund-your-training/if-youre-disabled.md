@@ -43,6 +43,6 @@ Providers must not discriminate against you. They cannot:
 - ask disability or health questions if they’re not relevant to your ability to become a teacher
 - reject your application because you’re disabled
 
-Anyone who’s offered a place on a teacher training course is asked to complete a fitness questionnaire before starting training Training providers should only ask relevant questions to make sure you’re able to teach.
+Anyone who’s offered a place on a teacher training course is asked to complete a fitness questionnaire before starting training. Training providers should only ask relevant questions to make sure you’re able to teach.
 
 Find out more about [your rights under the Equality Act 2010](https://www.equalityhumanrights.com/en/equality-act/know-your-rights) and how it protects different characteristics.
