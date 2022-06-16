@@ -94,7 +94,7 @@ $q-sarah-geography-2$
 
 <p>To get one step closer to teaching you can:</p> 
   <ul>
-    <li>speak to a current teacher at one of our <a href="/event-categories/train-to-teach-events">Train to Teach events</a></li>
+    <li>speak to a current teacher at one of our <a href="/events">Train to Teach events</a></li>
     <li>find a <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">postgraduate teacher training course</a> to help you get <a href="/what-is-qts">qualified teacher status (QTS)</a></li>
     <li>find a <a href="https://teaching-vacancies.service.gov.uk/">teaching job</a></li>
     <li>learn about the <a href="/support-for-early-career-teachers">support given to early career teachers based on the early career framework</a></li>

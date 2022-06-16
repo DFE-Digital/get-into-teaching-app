@@ -9,7 +9,7 @@ related_content:
     Salaries and benefits: "/salaries-and-benefits"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
-navigation: 20.10
+navigation: 20.15
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
 before-content:
     - content/funding-and-support/scholarships-and-bursaries/funding-widget

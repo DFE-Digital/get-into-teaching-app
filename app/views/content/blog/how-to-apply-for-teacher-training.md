@@ -72,7 +72,7 @@ And for some subjects, you may qualify for a tax-free bursary or scholarship.
 
 The key to managing financially during your training year is careful planning and preparation. Our [expert advisers](https://adviser-getintoteaching.education.gov.uk/) can help you make a plan and find the best funding options for your circumstances.
 
-[Explore your funding options](/funding-your-training).
+[Explore your funding options](/funding-and-support).
 
 ## 6.	Find the right training course for you
 

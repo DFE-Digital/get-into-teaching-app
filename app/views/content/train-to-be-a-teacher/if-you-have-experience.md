@@ -6,7 +6,7 @@ description: |-
 related_content:
     Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits : "/salaries-and-benefits"
-    Online Q&A sessions : "/event-categories/online-q-as"
+    Teacher training events : "/events"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
 navigation: 20.20

@@ -9,7 +9,7 @@ related_content:
     Diary of a trainee teacher: "/blog/a-diary-of-a-trainee-teacher"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
-navigation: 20.10
+navigation: 20.25
 navigation_description: If you have children or other caring responsibilities you may be able to get extra financial support.
 ---
 

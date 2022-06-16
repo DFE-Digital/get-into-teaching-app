@@ -9,7 +9,7 @@ related_content:
     5 reasons to attend a Train to Teach event: "/blog/5-reasons-to-attend-a-train-to-teach-event"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
-navigation: 20.10
+navigation: 20.30
 navigation_description: Find out about the different arrangements for getting financial support if you live outside England.
 ---
 

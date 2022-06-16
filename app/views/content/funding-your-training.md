@@ -14,7 +14,7 @@
       - title: New events added.
         text: Turn your questions into confidence. Decide how to fund your training at our next event.
         link_text: "Events near you"
-        link_target: "/event-categories/train-to-teach-events"
+        link_target: "/events"
         icon: "icon-calendar"
         hide_on_mobile: Yes
         hide_on_tablet: Yes
@@ -180,7 +180,7 @@ You may be able to [get support if you’re a student and you’re disabled, hav
 
 [If you do paid training you may also be eligible for support](https://www.gov.uk/access-to-work).
 
-[Learn more about training to teach if you're disabled](/get-support-training-to-teach-if-you-are-disabled).
+[Learn more about training to teach if you're disabled](/funding-and-support/if-youre-disabled).
 
 ## If you come from outside England
 

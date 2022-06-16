@@ -9,10 +9,9 @@ related_content:
     Becoming an autistic teacher: "/blog/overcoming-challenges-to-become-a-teacher-autism"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
-navigation: 20.10
+navigation: 20.20
 navigation_description: If you are disabled there is financial and practical support available to help you train.
 ---
-
 
 The experience and perspective of a diverse workforce is valued in school culture.
 

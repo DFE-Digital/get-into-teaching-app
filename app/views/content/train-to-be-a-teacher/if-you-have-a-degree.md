@@ -4,7 +4,7 @@ heading: "If you have a degree"
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
-    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
+    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
     Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
@@ -24,8 +24,8 @@ You can study for [a PGCE or PGDE](/what-is-a-pgce) (an academic qualification) 
 
 Fees for full-time courses are usually around £9,250 but you can:
 
-- get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
-- [apply for a student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
+- get [funding that you do not have to pay back](/funding-and-support/scholarships-and-bursaries) for certain subjects
+- [apply for a student loan](/funding-and-support/tuition-fees-and-maintenance-loans)
 
 Fees are higher for international students.
 
@@ -45,8 +45,8 @@ Some SCITT and School Direct (fee-funded) programmes give you a PGCE or PGDE in 
 
 Fees are usually around £9,250 but you can:
 
-- get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
-- [apply for a student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
+- get [funding that you do not have to pay back](/funding-and-support/scholarships-and-bursaries) for certain subjects
+- [apply for a student loan](/funding-and-support/tuition-fees-and-maintenance-loans)
 
 You should check the fees for a particular course you are interested in with the course provider.
 
