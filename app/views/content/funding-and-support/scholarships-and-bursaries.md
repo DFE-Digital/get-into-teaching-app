@@ -5,7 +5,7 @@ description: |-
    Find out if you're eligible for extra funding depending on the subject you're training to teach.
 related_content:
     What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
-    Improve your subject knowledge: "/improve-your-subject-knowledge"
+    Improve your subject knowledge: "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Salaries and benefits: "/salaries-and-benefits"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo

@@ -5,7 +5,7 @@ description: |-
     Find out how much money you could get to help pay your fees and living expenses while you train.
 related_content:
     "Who do you want to teach?": "/blog/choosing-the-right-teacher-training-course-provider"
-    Improve your subject knowledge: "/improve-your-subject-knowledge"
+    Improve your subject knowledge: "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Salaries and benefits: "/salaries-and-benefits"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
