@@ -31,12 +31,6 @@
         margin-top: 5px;
         @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
       }
-
-      &:focus {
-        .step-header__chevron {
-          @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, up));
-        }
-      }
     }
 
     .call-to-action {
@@ -53,12 +47,6 @@
         .step-header__chevron {
           margin-top: 0;
           @include chevron-icon($color: $white, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
-        }
-
-        &:focus {
-          .step-header__chevron {
-            @include chevron-icon($color: $black, $dimensions: .7em, $rotate: map-get($chevron-direction-map, down));
-          }
         }
       }
 

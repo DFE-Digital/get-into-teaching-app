@@ -19,11 +19,8 @@
     a {
       display: block;
       position: relative;
-      color: $black;
       line-height: 1.25;
-      margin-bottom: 10px;
-      padding: 5px $indent-amount;
-      color: $blue;
+      margin: 0 $indent-amount $indent-amount $indent-amount;
     }
   }
 }
