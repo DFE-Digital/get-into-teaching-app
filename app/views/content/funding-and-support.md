@@ -6,12 +6,12 @@ description: |-
 title_paragraph: |-
     You can get support while you are training, from a range of financial support to help pay your fees to practical assistance if you are disabled.
 navigation: 21
-navigation_title: Fund your training
-navigation_path: "/fund-your-training"
+navigation_title: Funding and support
+navigation_path: "/funding-and-support"
 layout: "layouts/category"
 content:
-    - content/fund-your-training/questions
-    - content/fund-your-training/why-teach
+    - content/funding-and-support/questions
+    - content/funding-and-support/why-teach
 image: "media/images/content/hero-images/0013.jpg"
 hero_bg_color: yellow
 title_bg_color: white

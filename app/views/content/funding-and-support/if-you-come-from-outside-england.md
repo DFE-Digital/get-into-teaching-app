@@ -35,4 +35,4 @@ Or, you'll need to contact the education authority if you live in Jersey, Guerns
 
 If you’re not a UK citizen, you are unlikely to get help funding your training unless you have permission to [live permanently in the UK](https://www.gov.uk/browse/visas-immigration/settle-in-the-uk), for example under the EU Settlement Scheme. You will also need to meet some other eligibility requirements.
 
-[Find out about funding for non-UK citizens](/train-to-teach-in-england-as-an-international-student).
+[Find out about funding for non-UK citizens](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).

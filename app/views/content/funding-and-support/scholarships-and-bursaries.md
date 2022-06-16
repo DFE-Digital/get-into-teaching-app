@@ -9,10 +9,10 @@ related_content:
     Salaries and benefits: "/salaries-and-benefits"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
-before-content:
-    - content/fund-your-training/funding-widget
 navigation: 20.10
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
+before-content:
+    - content/funding-and-support/scholarships-and-bursaries/funding-widget
 ---
 
 You may be eligible for a teaching bursary or scholarship when training to teach. These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.
