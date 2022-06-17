@@ -9,10 +9,10 @@ class EventType
 
   QUERY_PARAM_NAMES =
     {
-      "train_to_teach_event" => 222_750_001,
-      "question_time" => 222_750_007,
-      "online_event" => 222_750_008,
-      "school_or_university_event" => 222_750_009,
+      "ttt" => 222_750_001,       # Train to Teach event
+      "tttqt" => 222_750_007,     # Question Time
+      "onlineqa" => 222_750_008,  # Online event
+      "provider" => 222_750_009,  # School or University event
     }.freeze
 
   attr_accessor :type_id

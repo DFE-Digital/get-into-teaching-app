@@ -92,10 +92,10 @@ describe TeachingEvents::Search do
   end
 
   describe "#results" do
-    ttt           = "train_to_teach_event"
-    qt            = "question_time"
-    online        = "online_event"
-    school_or_uni = "school_or_university_event"
+    ttt           = "ttt"
+    qt            = "tttqt"
+    online        = "onlineqa"
+    school_or_uni = "provider"
 
     let(:fake_api) do
       instance_double(

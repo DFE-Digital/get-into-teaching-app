@@ -74,21 +74,21 @@ describe EventType do
 
     describe ".lookup_by_query_param" do
       specify "returns the id given the corresponding query param" do
-        expect(described_class.lookup_by_query_param("question_time")).to eq(222_750_007)
+        expect(described_class.lookup_by_query_param("tttqt")).to eq(222_750_007)
       end
 
       specify "errors when an unrecognised name is passed in" do
-        expect { described_class.lookup_by_query_param("some_networking_event") }.to raise_error(KeyError)
+        expect { described_class.lookup_by_query_param("other") }.to raise_error(KeyError)
       end
     end
 
     describe ".lookup_by_query_params" do
       specify "returns the id given the corresponding query params" do
-        expect(described_class.lookup_by_query_params("question_time", "online_event")).to eq([222_750_007, 222_750_008])
+        expect(described_class.lookup_by_query_params("tttqt", "onlineqa")).to eq([222_750_007, 222_750_008])
       end
 
       specify "errors when an unrecognised name are passed in" do
-        expect { described_class.lookup_by_query_params("online_event", "some_networking_event") }.to raise_error(KeyError)
+        expect { described_class.lookup_by_query_params("onlineqa", "other") }.to raise_error(KeyError)
       end
     end
   end
