@@ -91,7 +91,9 @@ module TeachingEvents
     def type_condition
       return nil if type.blank?
 
-      type.reject(&:blank?).flat_map { |t| t.split(",") }.map(&:to_i).presence
+      event_type_params = type.reject(&:blank?).flat_map { |t| t.split(",") }
+
+      EventType.lookup_by_query_params(*event_type_params).presence
     end
   end
 end

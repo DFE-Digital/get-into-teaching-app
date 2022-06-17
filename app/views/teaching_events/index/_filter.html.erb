@@ -18,9 +18,9 @@
 
   <div class="teaching-events__filter--group">
     <%= f.govuk_check_boxes_fieldset(:type, legend: { text: "Event type", tag: nil }) do %>
-      <%= f.govuk_check_box :type, "222_750_001,222_750_007", label: { text: "DfE Train to Teach" } %>
-      <%= f.govuk_check_box :type, "222_750_008", label: { text: "DfE Online Q&A" } %>
-      <%= f.govuk_check_box :type, "222_750_009", label: { text: "Training provider" } %>
+      <%= f.govuk_check_box :type, "train_to_teach_event,question_time", label: { text: "DfE Train to Teach" } %>
+      <%= f.govuk_check_box :type, "online_event", label: { text: "DfE Online Q&A" } %>
+      <%= f.govuk_check_box :type, "school_or_university_event", label: { text: "Training provider" } %>
     <% end %>
   </div>
 
