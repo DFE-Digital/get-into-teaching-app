@@ -10,7 +10,7 @@ related_content:
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
     - content/train-to-be-a-teacher/promos/events-near-you
-navigation: 20.10
+navigation: 20.20
 navigation_description: You need a degree to get QTS. If you're not already studying for one, find out more about undergraduate degree courses.
 ---
 

@@ -1,7 +1,12 @@
 ---
-title: Tips on applying for teacher training
+title: How to apply
+subcategory: Your teacher training application
 description: |-
   Read about the teacher training application process. Find advice on writing your teacher training personal statement, choosing your references, and applying.
+related_content:
+    Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
+    7 things to inlcude in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
+    11 top tips for interview success : "/blog/11-top-tips-for-interview-success"
 date: "2021-06-24"
 keywords:
   - adviser
@@ -22,21 +27,10 @@ keywords:
   - when to apply
   - interviews
   - offers
-calls_to_action:
-  get-a-tta:
-    name: simple
-    arguments:
-      title: Get a teacher training adviser
-      text: "Teacher training advisers can help you with everything related to applying for teacher training."
-      link_text: "Get a teacher training adviser"
-      link_target: "/tta-service"
-      icon: "icon-person"
-right_column:
-  ctas:
-   - icon: icon-calendar
-     title: Need application support?
-     link_text: Get a teacher training adviser
-     link_target: "/tta-service"
+promo_content:
+    - content/train-to-be-a-teacher/promos/get-adviser-promo
+navigation: 20.25
+navigation_description: Discover tips on preparing your teacher training application, from choosing your references, to writing your personal statement.
 ---
 
 Give yourself the best chance of getting on the course you want.
