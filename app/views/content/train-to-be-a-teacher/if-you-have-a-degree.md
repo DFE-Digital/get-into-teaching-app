@@ -12,7 +12,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/events-near-you
 navigation: 20.05
-navigation_description: Find out how to get QTS if you have a degree or you’re studying for one now. There are different options you can choose.
+navigation_description: Find out how to get QTS if you have a degree or you’re studying for one. Discover how to choose your postgraduate teacher training course. 
 ---
 
 If you have a degree, or you’re currently studying for one, there are different routes you can take to getting [qualified teacher status](/what-is-qts) (QTS). You need QTS to work in the majority of schools in England including state maintained primary, secondary and special schools.
