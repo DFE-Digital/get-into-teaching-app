@@ -120,7 +120,7 @@ A return to teaching adviser can give free one-to-one support with:
   ></iframe>
 </div>
 
-Return to teaching advisers also run [events to support returners](/event).
+Return to teaching advisers also run [events to support returners](/events).
 
 $get-a-tta$
 
