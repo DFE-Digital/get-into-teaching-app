@@ -8,7 +8,6 @@
   subtitle_button: "Register for updates"
   subtitle_link: "/mailinglist/signup/name"
   backlink: "../"
-  navigation: 25
   right_column:
     ctas:
       - title: New events added.
