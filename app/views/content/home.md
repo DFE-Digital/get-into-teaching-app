@@ -2,7 +2,7 @@
   layout: "layouts/home"
   title: "Inspire the next generation"
   description: |-
-    Read official Department for Education information to help you become a teacher. Learn about funding, teacher training, and steps to become a teacher. 
+    Become a teacher today! 
   date: "2021-06-16"
   fullwidth: true
   subtitle: "Get information and support to help you become a teacher."
