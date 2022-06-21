@@ -9,14 +9,16 @@ describe "Redirects", content: true, type: :request do
   redirects = YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects")
   redirects.each do |from, to|
     describe "'#{from}' redirects to '#{to}'" do
-      subject { get(build_url(from, query_string)) }
+      let(:url) { build_url(from, query_string) }
+
+      subject { get(url) }
 
       specify "redirects successfully" do
         allow(Rails.logger).to receive(:info)
 
         expect(subject).to be 301
         expect(response).to redirect_to(build_url(to, query_string))
-        expect(Rails.logger).to have_received(:info).with(redirect: { from: from, to: to })
+        expect(Rails.logger).to have_received(:info).with(redirect: { request: url, from: from, to: to })
 
         target = Nokogiri.parse(response.body).at_css("a")["href"].gsub(root_url, "/")
 
