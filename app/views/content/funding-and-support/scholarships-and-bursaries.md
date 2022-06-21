@@ -8,11 +8,26 @@ related_content:
     Improve your subject knowledge: "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Salaries and benefits: "/salaries-and-benefits"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/funding-and-support/promos/get-adviser-funding-promo
 navigation: 20.15
 navigation_description: Find out if you're eligible for extra funding depending on the subject you're training to teach.
 before-content:
     - content/funding-and-support/scholarships-and-bursaries/funding-widget
+keywords:
+    - Bursaries
+    - Bursary
+    - Scholarship
+    - Scholarships
+    - Grant
+    - Grants
+    - Financial Support
+    - Undergraduate
+    - Troops to Teachers
+    - Army
+    - Air Force
+    - RAF
+    - Navy
+    - Military
 ---
 
 You may be eligible for a teaching bursary or scholarship when training to teach. These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.

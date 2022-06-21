@@ -1,0 +1,13 @@
+<%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
+  <% promo.left_section(
+      heading: "Get an adviser", classes: %w[tta-background]) do %>
+  <% end %>
+
+  <% promo.right_section(
+    heading: "Get free one-to-one support"
+  ) do %>
+      <p>An adviser can answer any of your questions around funding your training, from how student finance works, to available scholarships and bursaries.</p>
+
+      <%= link_to("Find out more about advisers", "/teacher-training-advisers", class: "button") %>
+  <% end %>
+<% end %>

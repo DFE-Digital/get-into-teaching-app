@@ -4,12 +4,13 @@ heading: "Tuition fees and maintenance loans"
 description: |-
     Find out how much money you could get to help pay your fees and living expenses while you train.
 related_content:
-    "Who do you want to teach?": "/blog/choosing-the-right-teacher-training-course-provider"
+    Who do you want to teach?: "/blog/choosing-the-right-teacher-training-course-provider"
     Improve your subject knowledge: "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Salaries and benefits: "/salaries-and-benefits"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
-student-finance-calculator:
+    - content/funding-and-support/promos/get-adviser-funding-promo
+calls_to_action:
+    student-finance-calculator:
     name: simple
     arguments:
         icon: "icon-arrow"
@@ -18,6 +19,12 @@ student-finance-calculator:
         link_target: "https://www.gov.uk/student-finance-calculator"
 navigation: 20.10
 navigation_description: Find out how much money you could get to help pay your fees and living expenses while you train.
+keywords:
+    - Tuition Fee
+    - Maintenance Loan
+    - Student Loan
+    - Student Finance
+    - Financial Support
 ---
 
 Funding is available to help you train to teach. You can apply for a:
@@ -30,3 +37,7 @@ You can still apply for a tuition fee and a maintenance loan if you already have
 You will only have to make loan repayments once you’re earning. Your repayments will not increase if you already have a student loan and take an additional loan for teacher training.
 
 $student-finance-calculator$
+
+You may also be eligible for a scholarship or bursary, depending on the subject you're training to teach. You do not have to pay a scholarship or bursary back. You'll receive this as well as your tuition fees and maintenance loans.
+
+Find out if you're eligible for a [scholarship or bursary](/funding-and-support/scholarships-and-bursaries).

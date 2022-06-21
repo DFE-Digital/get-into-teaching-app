@@ -4,13 +4,20 @@ heading: "If you're disabled"
 description: |-
     If you are disabled there is financial and practical support available to help you train.
 related_content:
-    "Who do you want to teach?": "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    Who do you want to teach?: "/train-to-be-a-teacher/who-do-you-want-to-teach"
     Becoming a teacher with a hearing impairment: "/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment"
     Becoming an autistic teacher: "/blog/overcoming-challenges-to-become-a-teacher-autism"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.20
-navigation_description: If you are disabled there is financial and practical support available to help you train.
+navigation_description: Find out what extra support and adjustments you could be entitled to when you're training to teach if you're disabled.
+keywords:
+    - Disability
+    - Disabilities
+    - DSA
+    - Financial Support
+    - Disabled students
+    - Disabled Students’ Allowances
 ---
 
 The experience and perspective of a diverse workforce is valued in school culture.

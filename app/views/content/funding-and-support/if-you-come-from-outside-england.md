@@ -8,28 +8,29 @@ related_content:
     Get school experience: "/train-to-be-a-teacher/get-school-experience"
     5 reasons to attend a Train to Teach event: "/blog/5-reasons-to-attend-a-train-to-teach-event"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.30
 navigation_description: Find out about the different arrangements for getting financial support if you live outside England.
+keywords:
+    - Student Finance
+    - Financial Support
+    - EU
+    - European Union
+    - Channel Islands
+    - Guernsey
+    - Jersey
+    - Isle of Man
 ---
 
 ## In the UK
 
 You’ll need to contact your country’s student finance body to find out about your eligibility for funding if you live in Wales, Scotland, or Northern Ireland.
 
-[Find out about student finance in Wales](https://www.studentfinancewales.co.uk/).
-
-[Find out about student finance in Scotland](https://www.saas.gov.uk/).
-
-[Find out about student finance in Northern Ireland](https://www.studentfinanceni.co.uk/).
+Find out about [student finance in Wales](https://www.studentfinancewales.co.uk/), [student finance in Scotland](https://www.saas.gov.uk/), or [student finance in Northern Ireland](https://www.studentfinanceni.co.uk/).
 
 Or, you'll need to contact the education authority if you live in Jersey, Guernsey, or the Isle of Man.
 
-[Find out about funding in Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx).
-
-[Find out about funding in Guernsey](https://www.gov.gg/article/152744/Policies).
-
-[Find out about funding in the Isle of Man](https://www.gov.im/student-grants).
+Find out about [funding in Jersey](https://www.gov.je/Working/Careers/16To19YearOlds/EnteringHigherEducation/FinancingHigherEducationCourses/FundingDegreeProfessionalQualifications/Pages/index.aspx), [funding in Guernsey](https://www.gov.gg/article/152744/Policies), or [funding in the Isle of Man](https://www.gov.im/student-grants).
 
 ## Outside the UK
 

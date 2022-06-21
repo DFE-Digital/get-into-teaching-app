@@ -8,9 +8,15 @@ related_content:
     Get school experience: "/train-to-be-a-teacher/get-school-experience"
     Diary of a trainee teacher: "/blog/a-diary-of-a-trainee-teacher"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.25
-navigation_description: If you have children or other caring responsibilities you may be able to get extra financial support.
+navigation_description: Find out about the extra grants and schemes you could be eligible for if you have children or other caring responsibilities.
+keywords:
+    - Bursaries
+    - Bursary
+    - Scholarship
+    - Scholarships
+    - Grant
 ---
 
 If you have children or other caring responsibilities, you may be able to get extra financial support through the following grants and schemes:
