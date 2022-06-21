@@ -1,6 +1,6 @@
 ---
-title: "Tuition fees and maintenance loans"
-heading: "Tuition fees and maintenance loans"
+title: "Tuition fee and maintenance loans"
+heading: "Tuition fee and maintenance loans"
 description: |-
     Find out how much money you could get to help pay your fees and living expenses while you train.
 related_content:
@@ -42,6 +42,6 @@ $student-finance-calculator$
 
 You may also be eligible for a scholarship or bursary, depending on the subject you're training to teach.
 
-You do not have to pay a scholarship or bursary back. You'll receive this as well as your tuition fees and maintenance loans.
+You do not have to pay a scholarship or bursary back. You'll receive this as well as your tuition fee and maintenance loans.
 
 Find out if you're eligible for a [scholarship or bursary](/funding-and-support/scholarships-and-bursaries).

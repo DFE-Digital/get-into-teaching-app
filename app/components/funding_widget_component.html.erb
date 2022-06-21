@@ -1,6 +1,6 @@
 <div class="call-to-action call-to-action--funding-widget">
   <div class="call-to-action__content">
-    <h2 class="call-to-action__heading">What funding could I get for teacher training?</h2>
+    <h2 class="call-to-action__heading">What extra funding could I get for teacher training?</h2>
 
     <div class="call-to-action__text">
       <div class="call-to-action__form">
@@ -30,20 +30,23 @@
             <h3><%= sub_head %></h3>
             <div>
               <p>
-                Tuition fee and maintenance loans are available.
+                A scholarship or bursary isn't available for your chosen subject, but you can still get a <a href="/funding-and-support/tuition-fee-and-maintenance-loans">tuition fee and maintenance loan</a>.
               </p>
 
               <p>
                 Adding loans for teacher training will not increase your monthly payments.
-                Currently, no scholarships or bursaries are offered for this subject.
+              </p>
+
+              <p>
+                You might also be eligible for extra funding support <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a> and <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>.
               </p>
             </div>
           </div>
           <div>
             <h3>Next steps</h3>
             <div>
-              Use the <a href="https://www.gov.uk/student-finance-calculator">student finance calculator</a> to find out how much you can get.<br>
-              Explore <a href="/train-to-be-a-teacher">ways to train</a>.
+              <p>Use the <a href="https://www.gov.uk/student-finance-calculator">student finance calculator</a> to find out what tuition fee and maintenance loan you can get.<br></p>
+              <p>Explore <a href="/train-to-be-a-teacher">how to train to be a teacher</a>.</p>
             </div>
           </div>
         <% else %>
@@ -52,20 +55,19 @@
             <div>
               <%= helpers.safe_format(funding_results) %>
 
-              <p>Tuition fee and maintenance loans are also available.</p>
+              <p><a href="/funding-and-support/tuition-fee-and-maintenance-loans">Tuition fee and maintenance loans</a> are also available.</p>
             </div>
           </div>
           <div>
             <h3>Next steps</h3>
             <div>
-              Find out more about <a href="/funding-and-support/scholarships-and-bursaries">bursaries and scholarships</a>, including terms and conditions.<br>
-              Explore <a href="/train-to-be-a-teacher">ways to train</a>.
+              Explore <a href="/train-to-be-a-teacher">how to train to become a teacher</a>.
             </div>
 
             <%= helpers.safe_html_format(next_steps) if next_steps.present? %>
           </div>
         <% end %>
-        <p>You may be able to get extra support <a href="/funding-and-support/if-youre-disabled">if you're disabled</a>, <a href="/funding-and-support/if-youre-a-parent-or-carer">if you're a parent or carer</a>. You may still be eligible for funding <a href="/funding-and-support/if-you-come-from-outside-england">if you're an international candidate</a>.</p>
+        <p>Talk to a <a href="/teacher-training-advisers">teacher training adviser</a> for advice on funding your training and applying to become a teacher.</p>
       <% end %>
     </div>
   </div>

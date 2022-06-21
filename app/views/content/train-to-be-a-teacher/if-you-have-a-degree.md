@@ -25,7 +25,7 @@ You can study for [a PGCE or PGDE](/what-is-a-pgce) (an academic qualification) 
 Fees for full-time courses are usually around £9,250 but you can:
 
 - get [funding that you do not have to pay back](/funding-and-support/scholarships-and-bursaries) for certain subjects
-- [apply for a student loan](/funding-and-support/tuition-fees-and-maintenance-loans)
+- [apply for a student loan](/funding-and-support/tuition-fee-and-maintenance-loans)
 
 Fees are higher for international students.
 
@@ -46,7 +46,7 @@ Some SCITT and School Direct (fee-funded) programmes give you a PGCE or PGDE in 
 Fees are usually around £9,250 but you can:
 
 - get [funding that you do not have to pay back](/funding-and-support/scholarships-and-bursaries) for certain subjects
-- [apply for a student loan](/funding-and-support/tuition-fees-and-maintenance-loans)
+- [apply for a student loan](/funding-and-support/tuition-fee-and-maintenance-loans)
 
 You should check the fees for a particular course you are interested in with the course provider.
 
