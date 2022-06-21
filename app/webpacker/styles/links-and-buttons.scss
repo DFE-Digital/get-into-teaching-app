@@ -120,6 +120,14 @@ a {
   @extend .link;
 }
 
+body a.govuk-back-link {
+  @extend .link, .link--black;
+
+  &:focus:before {
+    border-color: $white;
+  }
+}
+
 .external-link-icon {
   margin-left: .2em;
   width: .8em !important;
