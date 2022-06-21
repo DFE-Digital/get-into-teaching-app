@@ -2,7 +2,7 @@
   layout: "layouts/home"
   title: "Inspire the next generation"
   description: |-
-    Become a teacher today! 
+    Become a teacher now! 
   date: "2021-06-16"
   fullwidth: true
   subtitle: "Get information and support to help you become a teacher."
