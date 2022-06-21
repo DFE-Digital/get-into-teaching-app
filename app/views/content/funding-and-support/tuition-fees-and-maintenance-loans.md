@@ -11,8 +11,8 @@ promo_content:
     - content/funding-and-support/promos/get-adviser-funding-promo
 calls_to_action:
     student-finance-calculator:
-    name: simple
-    arguments:
+      name: simple
+      arguments:
         icon: "icon-arrow"
         text: "Use the student finance calculator on GOV.UK to find out how much funding you can get."
         link_text: "Student finance calculator"
@@ -38,6 +38,10 @@ You will only have to make loan repayments once you’re earning. Your repayment
 
 $student-finance-calculator$
 
-You may also be eligible for a scholarship or bursary, depending on the subject you're training to teach. You do not have to pay a scholarship or bursary back. You'll receive this as well as your tuition fees and maintenance loans.
+## Check your eligibility for a scholarship or bursary
+
+You may also be eligible for a scholarship or bursary, depending on the subject you're training to teach.
+
+You do not have to pay a scholarship or bursary back. You'll receive this as well as your tuition fees and maintenance loans.
 
 Find out if you're eligible for a [scholarship or bursary](/funding-and-support/scholarships-and-bursaries).

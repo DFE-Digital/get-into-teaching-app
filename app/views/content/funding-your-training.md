@@ -101,7 +101,6 @@ You can still apply for a tuition fee and a maintenance loan if you already have
 
 You will only have to make loan repayments once you're earning. Your repayments will not increase if you already have a student loan and take an additional loan for teacher training.
 
-$student-finance-calculator$
 
 ## Bursaries and scholarships
 
