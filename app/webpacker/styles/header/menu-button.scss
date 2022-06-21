@@ -8,19 +8,23 @@
   }
 
   .menu-button__button {
+    @include button($bg: $white, $fg: black);
+
     border: 2px solid $green;
-    background: $white;
     display: flex;
     margin-right: 2em;
     margin-left: 1em;
     padding: .8em 1.4em;
 
     &:hover {
-	    cursor: pointer;
-	    background: $green;
+      cursor: pointer;
     }
 
     &.open {
+      &:focus .menu-button__icon {
+        background-image: url("../images/icon-hamburger-close-white.svg");
+      }
+
       .menu-button__icon {
         background-image: url("../images/icon-hamburger-close.svg");
       }
@@ -30,23 +34,27 @@
       flex: 1;
       margin: 1em;
     }
-  }
 
-  .menu-button__text {
-    display: inline-block;
-    margin-left: .6em;
-    color: $black;
-    font-size: 0.9rem;
-  }
+    &:focus .menu-button__icon {
+      background-image: url("../images/icon-hamburger-white.svg");
+    }
 
-  .menu-button__icon {
-    width: 2em;
-    height: 1rem;
-    display: inline-block;
-    background-image: url("../images/icon-hamburger.svg");
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat;
-    content: "";
+    .menu-button__text {
+      display: inline-block;
+      margin-left: .6em;
+      font-weight: normal;
+      font-size: 0.9rem;
+    }
+
+    .menu-button__icon {
+      width: 2em;
+      height: 1rem;
+      display: inline-block;
+      background-image: url("../images/icon-hamburger.svg");
+      background-position: center;
+      background-size: 80%;
+      background-repeat: no-repeat;
+      content: "";
+    }
   }
 }

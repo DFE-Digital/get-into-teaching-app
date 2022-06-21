@@ -27,7 +27,7 @@
       }
 
       a {
-        text-underline-offset: 0.08em;
+        @extend .link, .link--black;
         font-size: medium;
       }
     }

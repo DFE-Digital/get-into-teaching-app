@@ -37,7 +37,7 @@ describe CardComponent, type: "component" do
   end
 
   specify "includes the linktext in the link" do
-    is_expected.to have_link(card["link_text"], href: card["link"], class: "git-link")
+    is_expected.to have_link(card["link_text"], href: card["link"], class: "link--chevron")
   end
 
   specify "no play icon is visible" do
@@ -110,7 +110,7 @@ describe CardComponent, type: "component" do
     let(:card) { base.except("link_text").merge("linktext" => "shortened linktext") }
 
     specify "still includes the link text" do
-      is_expected.to have_link("shortened linktext", href: card["link"], class: "git-link")
+      is_expected.to have_link("shortened linktext", href: card["link"], class: "link--chevron")
     end
   end
 

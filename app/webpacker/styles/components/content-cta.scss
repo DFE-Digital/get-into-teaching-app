@@ -10,7 +10,7 @@
   }
 
   a {
-    @include dark-link;
+    @extend .link--dark;
   }
 
   p:first-child {

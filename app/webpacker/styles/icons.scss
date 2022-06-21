@@ -119,3 +119,10 @@
   width: 30px;
   height: 30px;
 }
+
+.icon-mail-white {
+  @include icon;
+  background-image: url("../images/icon-mail-white.svg");
+  width: 30px;
+  height: 30px;
+}

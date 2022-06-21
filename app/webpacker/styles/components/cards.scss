@@ -45,6 +45,12 @@
         }
       }
 
+      &:focus {
+        .card__thumb--play-icon > span {
+          background-color: $black;
+        }
+      }
+
       &.object-fit-polyfill {
         padding-top: 260px;
       }

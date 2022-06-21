@@ -21,7 +21,7 @@ module Header
 
     def nav_link(link_text, link_path)
       tag.li class: class_name(link_path) do
-        link_to_unless_current(link_text, link_path) { tag.div(link_text) }
+        link_to_unless_current(link_text, link_path, class: "link--black link--no-underline") { tag.div(link_text) }
       end
     end
 
