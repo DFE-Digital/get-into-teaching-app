@@ -138,6 +138,7 @@ body a.govuk-back-link {
   @include button;
   @include chevron;
   display: inline-block;
+  cursor: pointer;
 
   &:disabled {
     opacity: 0.7;
