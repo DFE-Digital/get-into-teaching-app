@@ -5,7 +5,7 @@ iQTS is currently offered by the following training providers, all of whom have 
 You can apply now for courses starting in September 2022.
 
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
-* [Sheffield Hallam University](https://www.shu.ac.uk/Study-here/options/Teach)
+* [Sheffield Hallam University](https://www.shu.ac.uk/study-here/options/teach/different-routes-into-teaching)
 * [The University of Birmingham Dubai](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx)
 * [The University of Derby](https://www.derby.ac.uk/online/education-courses/international-qualified-teacher-status-iqts-online/)
 * [The University of Sunderland](https://www.sunderland.ac.uk/study/education/pgce-iqts/)
