@@ -11,9 +11,7 @@ class SitemapController < ApplicationController
   OTHER_PATHS = %w[
     /events/
     /blog/
-    /event-categories/train-to-teach-events
-    /event-categories/online-q-as
-    /event-categories/school-and-university-events
+    /events/about-train-to-teach-events
     /mailinglist/signup/name
   ].freeze
 
