@@ -3,7 +3,7 @@
 Schools in England where teachers can be employed without QTS include [academies](https://www.gov.uk/types-of-school/academies), [free schools](https://www.gov.uk/types-of-school/free-schools) and [private schools](https://www.gov.uk/types-of-school/private-schools).
 
 However, even where QTS is not a legal requirement, many schools use QTS to assess the quality of candidates for teaching jobs.
-
+[Find out about the different types of schools in England](https://www.gov.uk/types-of-school).
 If you completed your initial teacher training in England, you should already
 have QTS. You can check this in the [Database of Qualified Teachers](https://teacherservices.education.gov.uk/SelfService/Login).
 
