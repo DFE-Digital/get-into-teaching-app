@@ -19,7 +19,7 @@ calls_to_action:
         link_target: "https://schoolexperience.education.gov.uk/"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo
-navigation: 20.25
+navigation: 20.30
 navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to draw on in your application.
 ---
 
