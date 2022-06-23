@@ -1,8 +1,6 @@
-You will need [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) to teach in a maintained school in England.
+[Qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) is a legal requirement to teach in many English schools. However, even where QTS is not a legal requirement, many schools use QTS to assess the quality of candidates for teaching jobs.
 
-Even where QTS is not a legal requirement, for example in academies and free
-schools, many schools use it to assess the quality of candidates for teaching
-jobs.
+[Find out about the different types of schools in England](https://www.gov.uk/types-of-school).
 
 If you completed your initial teacher training in England, you should already
 have QTS. You can check this in the [Database of Qualified Teachers](https://teacherservices.education.gov.uk/SelfService/Login).
