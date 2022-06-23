@@ -1,6 +1,5 @@
 [Qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) is a legal requirement to teach in many English schools.
 
-Schools in England where teachers can be employed without QTS include [academies](https://www.gov.uk/types-of-school/academies), [free schools](https://www.gov.uk/types-of-school/free-schools) and [private schools](https://www.gov.uk/types-of-school/private-schools).
 
 However, even where QTS is not a legal requirement, many schools use QTS to assess the quality of candidates for teaching jobs.
 [Find out about the different types of schools in England](https://www.gov.uk/types-of-school).
