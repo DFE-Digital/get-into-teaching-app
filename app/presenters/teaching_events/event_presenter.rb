@@ -49,6 +49,10 @@ module TeachingEvents
       event_building.present?
     end
 
+    def online?
+      is_online
+    end
+
     def location
       if show_venue_information?
         [event_building.venue,
