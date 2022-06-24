@@ -5,7 +5,7 @@ description: |-
   Read about the teacher training application process. Find advice on writing your teacher training personal statement, choosing your references, and applying.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
-    7 things to inlcude in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
+    7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
     11 top tips for interview success : "/blog/11-top-tips-for-interview-success"
 date: "2021-06-24"
 keywords:
