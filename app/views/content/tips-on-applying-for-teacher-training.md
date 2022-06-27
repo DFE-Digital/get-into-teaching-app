@@ -1,12 +1,7 @@
 ---
-title: How to apply
-subcategory: Your teacher training application
+title: Tips on applying for teacher training
 description: |-
-  Read about the teacher training application process. Find advice on writing your teacher training personal statement, choosing your referees, and applying.
-related_content:
-    Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
-    7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
-    11 top tips for interview success : "/blog/11-top-tips-for-interview-success"
+  Read about the teacher training application process. Find advice on writing your teacher training personal statement, choosing your references, and applying.
 date: "2021-06-24"
 keywords:
   - adviser
@@ -27,10 +22,21 @@ keywords:
   - when to apply
   - interviews
   - offers
-promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
-navigation: 20.25
-navigation_description: Discover tips on preparing your teacher training application, from choosing your referees, to writing your personal statement.
+calls_to_action:
+  get-a-tta:
+    name: simple
+    arguments:
+      title: Get a teacher training adviser
+      text: "Teacher training advisers can help you with everything related to applying for teacher training."
+      link_text: "Get a teacher training adviser"
+      link_target: "/tta-service"
+      icon: "icon-person"
+right_column:
+  ctas:
+   - icon: icon-calendar
+     title: Need application support?
+     link_text: Get a teacher training adviser
+     link_target: "/tta-service"
 ---
 
 Give yourself the best chance of getting on the course you want.
@@ -86,7 +92,7 @@ You can choose up to 3 teacher training courses for each application.
 If you do not find what you were looking for, there are [other ways to train](/train-to-be-a-teacher).
 
 Before you start, it’s particularly important to think about your referees and
-[teacher training personal statement](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-teacher-training-personal-statement).
+[teacher training personal statement](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement).
 
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
