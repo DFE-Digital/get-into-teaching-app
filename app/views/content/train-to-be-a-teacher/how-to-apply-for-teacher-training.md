@@ -1,5 +1,5 @@
 ---
-title: How to apply
+title: How to apply for teacher training
 subcategory: Your teacher training application
 description: |-
   Read about the teacher training application process. Find advice on writing your teacher training personal statement, choosing your referees, and applying.
@@ -30,6 +30,7 @@ keywords:
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
 navigation: 20.25
+navigation_title: How to apply
 navigation_description: Discover tips on preparing your teacher training application, from choosing your referees, to writing your personal statement.
 ---
 
