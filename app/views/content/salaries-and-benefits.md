@@ -75,7 +75,7 @@ You'll get more days holiday than people in many other professions. In school, f
 
 For comparison, you'd work 227 days per year (on average) if you worked full time in an office.
 
-## Teachers' pension scheme
+## Teachers' retirement scheme
 
 The teachers’ pension scheme is one of the most generous in the country. It is a 'defined benefit' pension and is:
 
