@@ -26,7 +26,7 @@ If you’re disabled, have a mental health condition or educational needs, you c
 
 ## Disabled Students’ Allowance and other support
 
-Disabled Students’ Allowance (DSA) is support to cover the study-related costs you have because of a mental health problem, long term illness or any other disability
+Disabled Students’ Allowance (DSA) is support to cover the study-related costs you have because of a mental health problem, long term illness or any other disability.
 
 [Find out more about DSA](https://www.gov.uk/disabled-students-allowance-dsa).
 
