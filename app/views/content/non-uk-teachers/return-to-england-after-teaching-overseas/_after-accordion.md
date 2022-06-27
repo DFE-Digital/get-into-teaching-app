@@ -31,7 +31,7 @@ learn more.
 
 Sign up for an [online Q&A for returners](/events).
 
-Email us at international.teacherrecruitment@education.gov.uk.
+Email us at teach.inengland@education.gov.uk.
 
 Join us on [Facebook](https://www.facebook.com/getintoteaching),
 [Instagram](https://www.instagram.com/get_into_teaching/) and
