@@ -64,4 +64,4 @@ Once you have made the decision to return to teaching what’s the best way of f
 
 Remember though that teacher recruitment goes in cycles, with most teaching roles being advertised from January onwards. Setting up a job alert will mean you don’t miss out on your perfect role.
 
-[Find out more about returning to teaching](/returning-to-teaching). If you have QTS and want to return to teach chemistry, computing, maths, modern foreign languages or physics, [get a return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/).
+[Find out more about returning to teaching](/returning-to-teaching). If you have QTS and want to return to teach at a secondary school in England, [get a return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/).
