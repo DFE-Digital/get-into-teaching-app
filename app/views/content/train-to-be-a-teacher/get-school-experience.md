@@ -20,7 +20,7 @@ calls_to_action:
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo
 navigation: 20.30
-navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to draw on in your application.
+navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
 ---
 
 You can visit schools to get unpaid experience in the classroom before you start your initial teacher training (ITT).
