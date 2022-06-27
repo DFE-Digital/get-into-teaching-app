@@ -42,7 +42,7 @@ Teacher training providers can make adjustments so that you can attend an interv
 - put you in touch with support staff if you have a mental health condition
 - make sure classrooms are wheelchair accessible
 
-Sharing that you’re disabled when you [apply for teacher training](https://www.gov.uk/apply-for-teacher-training) can help providers make adjustments.
+Sharing that you’re disabled when you [apply for teacher training](https://www.gov.uk/apply-for-teacher-training) can help providers make adjustments. You should contact your provider to discuss any adjustments you may need.
 
 ## Your rights
 
