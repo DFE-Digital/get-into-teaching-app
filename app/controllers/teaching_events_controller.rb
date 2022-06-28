@@ -3,6 +3,8 @@ class TeachingEventsController < ApplicationController
 
   include CircuitBreaker
 
+  caches_page :about_ttt_events
+
   before_action :setup_filter, only: :index
 
   rescue_from EventNotViewableError, with: :render_gone
@@ -71,10 +73,6 @@ private
       raise ActionController::RoutingError, "Not Found" if status.pending?
       raise(EventNotViewableError) unless status.viewable?
     end
-  end
-
-  def static_page_actions
-    %i[about_ttt_events]
   end
 
   def search_params

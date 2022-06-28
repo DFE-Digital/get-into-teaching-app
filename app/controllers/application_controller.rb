@@ -15,15 +15,7 @@ class ApplicationController < ActionController::Base
   before_action :add_home_breadcrumb
   before_action :declare_frontmatter
 
-  after_action :cache
-
 protected
-
-  def static_page_actions
-    # Override to specify which actions are serving
-    # static page content and can therefore be cached.
-    []
-  end
 
   def noindex
     @noindex = true
@@ -40,12 +32,6 @@ private
     # Not all pages have frontmatter, but ensuring it
     # is declared everywhere simplifies its use throughout.
     @front_matter ||= {}
-  end
-
-  def cache
-    if perform_caching? && action_name.to_sym.in?(static_page_actions)
-      cache_page(nil, nil, Zlib::BEST_COMPRESSION)
-    end
   end
 
   def raise_not_found
