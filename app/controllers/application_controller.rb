@@ -1,6 +1,3 @@
-require "next_gen_images"
-require "lazy_load_images"
-require "responsive_images"
 require "basic_auth"
 
 class ApplicationController < ActionController::Base
@@ -18,7 +15,7 @@ class ApplicationController < ActionController::Base
   before_action :add_home_breadcrumb
   before_action :declare_frontmatter
 
-  after_action :post_processing
+  after_action :cache
 
 protected
 
@@ -45,10 +42,7 @@ private
     @front_matter ||= {}
   end
 
-  def post_processing
-    process_images
-    process_links
-
+  def cache
     if perform_caching? && action_name.to_sym.in?(static_page_actions)
       cache_page(nil, nil, Zlib::BEST_COMPRESSION)
     end
@@ -60,48 +54,6 @@ private
 
   def authenticate?
     BasicAuth.env_requires_auth?
-  end
-
-  def process_images
-    return unless response_is_html?
-
-    response.body = NextGenImages.new(response.body).html
-    response.body = ResponsiveImages.new(response.body).html
-    response.body = LazyLoadImages.new(response.body).html
-
-    # <source> has no content so should be self-closing; configuring Nokogiri
-    # to remove the closing tags results in breakages elsewhere in the document,
-    # so we have to remove them manually post image processing.
-    response.body = response.body.gsub("</source>", "")
-  end
-
-  def process_links
-    return unless response_is_html?
-
-    response.body = add_external_link_icons(response.body)
-  end
-
-  def add_external_link_icons(body)
-    doc = Nokogiri::HTML(body)
-    markdown_links = doc.css(".markdown a")
-    classes_to_suppress = %w[button]
-
-    markdown_links.each do |anchor|
-      classes = anchor.attr("class")&.split
-
-      next if classes && (classes & classes_to_suppress).any?
-      next anchor && Sentry.capture_message("#{request.url} contains invalid anchor link") if anchor[:href].nil?
-
-      external_link = anchor[:href].include?("//")
-
-      anchor.add_child(helpers.tag.span("(opens in new window)", class: "visually-hidden")) if external_link
-    end
-
-    doc.to_html(encoding: "UTF-8", indent: 2)
-  end
-
-  def response_is_html?
-    response.headers["Content-Type"]&.include?("text/html")
   end
 
   def set_api_client_request_id
