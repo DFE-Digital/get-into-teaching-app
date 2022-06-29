@@ -13,7 +13,7 @@ ENV RAILS_ENV=production \
 RUN mkdir /app
 WORKDIR /app
 
-RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn \
+RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn git \
     chromium chromium-chromedriver && rm -rf /var/lib/apt/lists/*
 
 # Copy node_modules/gem as cache
