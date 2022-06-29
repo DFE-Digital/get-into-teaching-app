@@ -1,4 +1,4 @@
-If want to teach at a secondary school in England and have [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts), you're eligible for a return to teaching adviser.
+If want to teach at a secondary school in England and have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), you're eligible for a return to teaching adviser.
 
 This includes:
 

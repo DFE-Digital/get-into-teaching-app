@@ -22,8 +22,8 @@ accordion:
       partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/check-your-qualifications
     Find your next role:
       partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/find-your-next-role
-    Get help if you teach a shortage subject:
-      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/support-for-teachers-of-shortage-subjects
+    Get help if you teach a secondary subject:
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/support-for-teachers-of-secondary-subjects
     Get ready to apply:
       partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/get-ready-to-apply
     Read up on changes to English education:
