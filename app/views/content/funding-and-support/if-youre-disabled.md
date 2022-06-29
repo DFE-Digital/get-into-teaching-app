@@ -26,7 +26,11 @@ If you’re disabled, have a mental health condition or educational needs, you c
 
 ## Disabled Students’ Allowance and other support
 
-Disabled Students’ Allowance (DSA) is support to cover the study-related costs you have because of a mental health problem, long term illness or any other disability.
+You can apply for Disabled Students’ Allowance (DSA) to cover the study-related costs you have because of a mental health problem, long term illness or any other disability.
+
+You’ll get confirmation of whether your application has been successful within 6 weeks.
+
+It can take up to 14 weeks to get your DSA support, so you should take this into consideration if you need the support in place for the start of your course.
 
 [Find out more about DSA](https://www.gov.uk/disabled-students-allowance-dsa).
 
