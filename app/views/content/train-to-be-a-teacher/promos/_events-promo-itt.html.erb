@@ -1,8 +1,8 @@
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
   <% promo.left_section(
-      caption: "24 May 2022",
-      heading: "Virtual Train to Teach event",
-      link_target: "/events/train-to-teach-national-virtual-event-240522",
+      caption: "4 July 2022",
+      heading: "Train to Teach Manchester",
+      link_target: "/events/train-to-teach-manchester-event-040722",
       link_text: "Sign up for this event") do %>
     <p>Hear from training providers, chat with teachers and get one-to-one advice from expert advisers.<p>
   <% end %>
@@ -10,9 +10,9 @@
   <% promo.right_section(
         caption: "Events near you",
         heading: "Events are a great place to ask questions") do %>
-      <p>Events are one of the best ways to speak to people and ask the questions you need to get into teaching.</p>
+      <p>Events are one of the best ways to learn more about your teacher training provider and course.</p>
 
-      <%= form_for TeachingEvents::Search.new, method: :get, url: events_path do |f| %>
+      <%= form_for TeachingEvents::Search.new, method: :post, url: events_path do |f| %>
         <%= f.hidden_field :distance, value: 10 %>
         <%= f.label :postcode, "Enter postcode" %>
         <%= f.text_field :postcode, autocomplete: "postal-code" %>

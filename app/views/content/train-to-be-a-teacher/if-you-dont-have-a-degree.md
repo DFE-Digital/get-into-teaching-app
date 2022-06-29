@@ -9,7 +9,7 @@ related_content:
     Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
-    - content/train-to-be-a-teacher/promos/events-near-you
+    - content/train-to-be-a-teacher/promos/events-promo-degree
 navigation: 20.10
 navigation_description: You need a degree to get QTS. If you're not already studying for one, find out more about undergraduate degree courses.
 ---
