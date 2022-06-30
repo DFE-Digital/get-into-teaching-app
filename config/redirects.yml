@@ -33,6 +33,7 @@ redirects:
   "/event-categories/online-q-as": "/events"
   "/event-categories/school-and-university-events": "/events"
   "/teaching-events": "/events"
+  "/events/search": "/events"
 
   # Slides
   "/slides": "/presentations"
