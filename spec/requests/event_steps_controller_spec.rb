@@ -185,5 +185,17 @@ describe EventStepsController, type: :request do
     end
 
     it { is_expected.to have_http_status :success }
+
+    context "when the event is in the past" do
+      let(:event) { build :event_api, :past, readable_id: readable_event_id }
+
+      it { is_expected.to redirect_to(event_path(id: event.readable_id)) }
+
+      context "when the candidate is a 'walk-in'" do
+        before { get event_step_path(readable_event_id, :personal_details, walk_in: true) }
+
+        it { is_expected.to have_http_status :success }
+      end
+    end
   end
 end
