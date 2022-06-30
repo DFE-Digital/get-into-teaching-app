@@ -1,6 +1,8 @@
 class BlogController < ApplicationController
   include PaginatablePosts
 
+  caches_page :show
+
   layout "layouts/blog/index"
 
   def index
@@ -26,11 +28,5 @@ class BlogController < ApplicationController
     breadcrumb @post.title, request.path
 
     render template: @post.template, layout: "layouts/blog/post"
-  end
-
-protected
-
-  def static_page_actions
-    %i[show]
   end
 end

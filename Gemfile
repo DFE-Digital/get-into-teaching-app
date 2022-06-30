@@ -70,8 +70,8 @@ gem "view_component", "~> 2.56.1"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
-gem "actionpack-page_caching", ">= 1.2.4"
 gem "net-smtp", require: false
+gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
