@@ -123,14 +123,14 @@ You will not have to pay a fee or undergo further training.
 
 [Check your eligibility to apply to the Teaching Regulation Agency for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start).
 
-### Other QTS routes
+### Other routes to QTS
 
 If you do not meet all of these requirements you may still be able to:
 
 * apply for QTS through the assessment only route
 * complete a teacher training course in England leading to QTS
 
-[Learn more about routes to QTS for teachers who trained outside the UK](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#qts-exemption-for-teachers-from-outside-the-uk).
+[Learn more about routes to QTS for teachers who trained or have teaching experience outside the UK](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#qts-exemption-for-teachers-from-outside-the-uk).
 
 ## Search for a job
 
