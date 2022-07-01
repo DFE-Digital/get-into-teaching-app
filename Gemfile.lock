@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/DFE-Digital/dfe_wizard.git
-  revision: 68278550c0a4771300d697e845ed213e58921009
+  revision: 08a2dda2de41b67ea28dfa3513f59245ea6dcc6a
   specs:
-    dfe_wizard (1.0.0)
+    dfe_wizard (1.0.1)
       activemodel (>= 6.0.3.4)
       activesupport (>= 6.0.3.4)
 
@@ -301,7 +301,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.15.0)
+    minitest (5.16.1)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
       tomlrb
