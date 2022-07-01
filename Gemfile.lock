@@ -301,7 +301,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.15.0)
+    minitest (5.16.1)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
       tomlrb
@@ -502,7 +502,7 @@ GEM
     uber (0.1.0)
     unicode-display_width (2.1.0)
     victor (0.3.3)
-    view_component (2.56.1)
+    view_component (2.57.1)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
     web-console (4.2.0)
@@ -598,7 +598,7 @@ DEPENDENCIES
   text
   tzinfo-data
   victor
-  view_component (~> 2.56.1)
+  view_component (~> 2.57.1)
   web-console (>= 4.2.0)
   webmock (>= 3.14.0)
   webpacker (>= 5.4.3)
