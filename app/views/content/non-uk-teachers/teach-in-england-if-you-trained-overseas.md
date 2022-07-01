@@ -126,4 +126,4 @@ There are [specific salary requirements for a skilled worker visa](https://www.g
 ## Contact
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.
 
-However, for help with the information on this page, you can email us at international.teacherrecruitment@education.gov.uk.
+However, for help with the information on this page, you can email us at teach.inengland@education.gov.uk.
