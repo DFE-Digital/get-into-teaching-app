@@ -46,13 +46,13 @@ Your personal statement is also an opportunity to acknowledge any gaps in your s
 
 You may wish to demonstrate your awareness of the hard work and commitment required to undertake teaching as a career but also demonstrate how excited you are to start your journey.
 
-I can’t emphasise enough how important it is to avoid spelling mistakes. Make sure to run it through a spell check before copying it into your application, as demonstrating good communication skills is vital. Read more about [writing your teacher training personal statement.](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement)
+I can’t emphasise enough how important it is to avoid spelling mistakes. Make sure to run it through a spell check before copying it into your application, as demonstrating good communication skills is vital. Read more about [writing your teacher training personal statement.](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-teacher-training-personal-statement)
 
 ## References
 
 And finally, we turn to references. Who you pick is really important. You will need two references. One could be a university or academic tutor and the second could be from a school or somewhere you have worked in a voluntary capacity, or it could be someone from your current employment.
 
-Whoever you choose, you should contact your references before you start writing your application so that they are aware that they will be contacted and that a swift response is important. If your references are not ready this can hold up your application. Read more about [choosing your referees.](/tips-on-applying-for-teacher-training#choose-your-referees)
+Whoever you choose, you should contact your references before you start writing your application so that they are aware that they will be contacted and that a swift response is important. If your references are not ready this can hold up your application. Read more about [choosing your referees.](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees)
 
 ## Responses
 

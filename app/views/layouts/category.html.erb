@@ -11,19 +11,18 @@
 
       <section class="container category__cards main-body">
         <%= tag.nav(aria: { label: "#{@page.title} navigation" }, class: "category__nav-cards") do %>
-          <% Pages::Navigation.find(@page.path).children.each do |c| %>
-            <%= link_to(c.path, class: "category__nav-card") do %>
-              <div class="category__nav-card--content">
-                <%= tag.h2(c.title) %>
-
-                <%= tag.p(c.description) %>
-              </div>
-
-              <div class="category__nav-card--icon"></div>
-            <% end %>
-          <% end %>
+          <%= render(Categories::CardComponent.with_collection(ungrouped_categories(@page.path))) %>
         <% end %>
       </section>
+
+      <% grouped_categories(@page.path).each do |title, pages| %>
+        <section class="container category__cards main-body">
+          <%= tag.h2(title, class: "heading--box-blue") %>
+          <%= tag.nav(aria: { label: "#{title} category" }, class: "category__nav-cards") do %>
+            <%= render(Categories::CardComponent.with_collection(pages, heading_tag: "h3")) %>
+          <% end %>
+        </section>
+      <% end %>
     </main>
 
     <% @front_matter["content"]&.each do |partial| %>

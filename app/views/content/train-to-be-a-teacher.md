@@ -2,7 +2,7 @@
 title: "Train to be a teacher"
 heading: "Train to be a teacher"
 description: |-
-  Find out how you can train to be a teacher and gain qualified teacher status (QTS). Explore university and school-led training, and how to get a PGCE with QTS.
+  Find out how you can train to be a teacher and gain qualified teacher status (QTS). Explore university and school-led training, and how to get QTS with a PGCE.
 title_paragraph: |-
     If you’ve just graduated, you're studying for a degree or you want to change
     your career, we can help you understand what training you need to do to get

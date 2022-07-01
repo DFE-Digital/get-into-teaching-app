@@ -22,7 +22,7 @@ redirects:
 
   # Campaign landing pages
   "/helping-you-become-a-teacher": "/three-things-to-help-you-get-into-teaching"
-  "/start-teacher-training-this-september": "/tips-on-applying-for-teacher-training"
+  "/start-teacher-training-this-september": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
 
   # International content
   "/iqts": "/non-uk-teachers/international-qualified-teacher-status"
@@ -232,7 +232,7 @@ redirects:
   "/funding-and-salary/overview/scholarships/physics-scholarships": "/funding-your-training"
   "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas": "/non-uk-teachers/return-to-england-after-teaching-overseas"
   "/getting-school-experience": "/steps-to-become-a-teacher"
-  "/submitting-your-application": "/tips-on-applying-for-teacher-training"
+  "/submitting-your-application": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
   "/competitive-salary-and-great-benefits": "/salaries-and-benefits"
   "/explore-my-options/further-education-teacher-training/bursaries": "/funding-your-training"
   "/explore-my-options/teach-languages": "/train-to-be-a-teacher"
@@ -254,13 +254,13 @@ redirects:
   "/explore-my-options/training/university-led-undergraduate-training": "/train-to-be-a-teacher"
   "/funding-and-salary(*section)": "/funding-your-training"
   "/regional-make-a-difference-in-(*area)": "/"
-  "/how-to-apply(*method)": "/tips-on-applying-for-teacher-training"
+  "/how-to-apply(*method)": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
   "/lp(*category)": "/"
   "/frequently-asked-questions": "/"
   "/premier-plus-adviser(*tip)": "/three-things-to-help-you-get-into-teaching"
   "/arranging-school-experience-independently": "/steps-to-become-a-teacher"
   "/explore-my-options/training/scitt": "/train-to-be-a-teacher"
-  "/preparing-for-your-interview": "/tips-on-applying-for-teacher-training"
+  "/preparing-for-your-interview": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
   "/explore-my-options/secondary/teach-computing": "/train-to-be-a-teacher"
   "/explore-my-options/return-to-teaching/getting-back-into-the-classroom": "/returning-to-teaching"
   "/explore-my-options/teach-physics": "/train-to-be-a-teacher"
@@ -271,7 +271,7 @@ redirects:
   "/explore-my-options/return-to-teaching/register": "/returning-to-teaching"
   "/explore-my-options/secondary/teach-physics": "/train-to-be-a-teacher"
   "/explore-my-options/teacher-training-routes/school-led-training/school-direct": "/train-to-be-a-teacher"
-  "/blog/common-interview-questions": "/tips-on-applying-for-teacher-training"
+  "/blog/common-interview-questions": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
   "/explore-my-options/teacher-training-routes/specialist-training-options/teacher-training-programmes-for-career-changers": "/train-to-be-a-teacher"
   "/explore-my-options/teacher-training-routes/school-led-training": "/train-to-be-a-teacher"
   "/explore-my-options/teacher-training-routes/university-led-training": "/train-to-be-a-teacher"

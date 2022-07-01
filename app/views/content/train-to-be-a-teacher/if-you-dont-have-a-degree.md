@@ -1,6 +1,6 @@
 ---
 title: "Ways to train if you don't have a degree"
-heading: "If you don't have a degree"
+heading: "Train to be a teacher if you don't have a degree"
 description: |-
   Explore how you can train to be a teacher and gain qualified teacher status (QTS) if you don’t have a degree.
 related_content:
@@ -10,7 +10,8 @@ related_content:
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
     - content/train-to-be-a-teacher/promos/events-near-you
-navigation: 20.10
+navigation: 20.20
+navigation_title: If you don't have a degree
 navigation_description: You need a degree to get QTS. If you're not already studying for one, find out more about undergraduate degree courses.
 ---
 

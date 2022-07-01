@@ -1,6 +1,6 @@
 ---
 title: "Ways to train if you have a degree"
-heading: "If you have a degree"
+heading: "Train to be a teacher if you have or are studying for a degree"
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
@@ -12,7 +12,8 @@ promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/events-near-you
 navigation: 20.05
-navigation_description: Find out how to get QTS if you have a degree or you’re studying for one now. There are different options you can choose.
+navigation_title: If you have a degree
+navigation_description: Find out how to get QTS through postgraduate teacher training if you have a degree or you’re studying for one. 
 ---
 
 If you have a degree, or you’re currently studying for one, there are different routes you can take to getting [qualified teacher status](/what-is-qts) (QTS). You need QTS to work in the majority of schools in England including state maintained primary, secondary and special schools.
