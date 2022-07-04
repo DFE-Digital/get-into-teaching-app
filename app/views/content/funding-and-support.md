@@ -4,7 +4,7 @@ heading: "Funding and support"
 description: |-
     Find out about the financial and practical support you can get when you apply for teacher training, including loans, scholarships and bursaries.
 title_paragraph: |-
-    You can get support while you are training, from a range of financial support to help pay your fees to practical assistance if you are disabled.
+    If you're applying for teacher training in England, we can help you understand what funding and practical support you could be eligible for.
 navigation: 21
 navigation_title: Funding and support
 navigation_path: "/funding-and-support"
