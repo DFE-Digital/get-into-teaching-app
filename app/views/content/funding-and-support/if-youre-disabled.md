@@ -11,7 +11,7 @@ promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.20
 navigation_title: If you're disabled
-navigation_description: Find out what support you can get if you're disabled when you're training to teach.
+navigation_description: Find out about the support you can get while training to teach if you're disabled.
 keywords:
     - Disability
     - Disabilities
