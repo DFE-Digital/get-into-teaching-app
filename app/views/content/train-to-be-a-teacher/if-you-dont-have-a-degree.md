@@ -5,7 +5,7 @@ description: |-
   Explore how you can train to be a teacher and gain qualified teacher status (QTS) if you don’t have a degree.
 related_content:
     5 reasons to attend a Train to Teach event : "/blog/5-reasons-to-attend-a-train-to-teach-event"
-    Funding your training : "/funding-your-training"
+    Funding your training : "/funding-and-support"
     Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-undergraduate-course
@@ -17,7 +17,7 @@ navigation_description: You need a degree to get QTS. If you're not already stud
 
 You can get QTS as part of an undergraduate degree.
 
-Courses typically cost £9,250 per year and can take up to 4 years but you can get [funding for your training](/funding-your-training).
+Courses typically cost £9,250 per year and can take up to 4 years but you can get [funding for your training](/funding-and-support).
 
 Qualifications vary depending on the course. For example, you could get QTS with a:
 

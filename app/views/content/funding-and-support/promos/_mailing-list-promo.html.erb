@@ -1,0 +1,13 @@
+<%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
+  <% promo.left_section(
+      heading: "Advice and support in your inbox", classes: %w[ml-background]) do %>
+  <% end %>
+
+  <% promo.right_section(
+    heading: "Get tailored guidance"
+  ) do %>
+      <p>Find out about online events, what teaching is really like in England, and how to get one-to-one support.</p>
+
+      <%= link_to("Sign up for emails", "/mailinglist/signup/name", class: "button") %>
+  <% end %>
+<% end %>

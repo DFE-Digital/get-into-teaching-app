@@ -55,7 +55,7 @@ class PagesController < ApplicationController
 
   # Avoid caching by rendering these pages manually:
 
-  def funding_your_training
+  def scholarships_and_bursaries
     @funding_widget =
       if params[:funding_widget].blank?
         FundingWidget.new
@@ -63,7 +63,7 @@ class PagesController < ApplicationController
         FundingWidget.new(funding_widget_params).tap(&:valid?)
       end
 
-    render_page("funding-your-training")
+    render_page("funding-and-support/scholarships-and-bursaries")
   end
 
   def welcome
