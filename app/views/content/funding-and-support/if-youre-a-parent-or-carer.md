@@ -1,6 +1,6 @@
 ---
-title: "If you're a parent or carer"
-heading: "If you're a parent or carer"
+title: "Support training to teach if you're a parent or carer"
+heading: "Support training to teach if you're a parent or carer"
 description: |-
   Find out about the extra grants and schemes you could be eligible for if you have children or other caring responsibilities.
 related_content:
@@ -10,6 +10,7 @@ related_content:
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.25
+navigation_title: If you're a parent or carer
 navigation_description: Find out about the extra grants and schemes you could be eligible for if you have children or other caring responsibilities.
 keywords:
     - Bursaries
