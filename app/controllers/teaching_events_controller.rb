@@ -70,7 +70,7 @@ private
     GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id]).tap do |event|
       status = EventStatus.new(event)
 
-      raise ActionController::RoutingError, "Not Found" if status.pending?
+      raise ActionController::RoutingError, "Not Found" if event.nil? || status.pending?
       raise(EventNotViewableError) unless status.viewable?
     end
   end
