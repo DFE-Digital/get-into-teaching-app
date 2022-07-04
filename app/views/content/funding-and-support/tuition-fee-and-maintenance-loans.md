@@ -42,6 +42,6 @@ $student-finance-calculator$
 
 You may also be eligible for a scholarship or bursary, depending on the subject you're training to teach.
 
-You do not have to pay a scholarship or bursary back. You'll receive this as well as your tuition fee and maintenance loans.
+You do not have to pay a scholarship or bursary back. You can receive this as well as any tuition fee and maintenance loans.
 
 Find out if you're eligible for a [scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
