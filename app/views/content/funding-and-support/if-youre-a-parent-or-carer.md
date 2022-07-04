@@ -11,7 +11,7 @@ promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.25
 navigation_title: If you're a parent or carer
-navigation_description: Find out about the extra grants and schemes you could be eligible for if you have children or other caring responsibilities.
+navigation_description: Find out what extra grants and schemes are available if you have children or other caring responsibilities.
 keywords:
     - Bursaries
     - Bursary
