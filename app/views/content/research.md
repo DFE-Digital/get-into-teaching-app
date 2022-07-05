@@ -5,6 +5,14 @@ description: |-
 date: "2021-05-17"
 image: false
 calls_to_action:
+  career-countdown:
+    name: attachment
+    arguments:
+      text: Read the Career countdown report summary
+      file_path: media/documents/career-countdown-campaign-teaching-report.pdf
+      file_type: PDF
+      file_size: 267KB
+      published_at: 6 July 2022
   life-lessons:
     name: attachment
     arguments:
@@ -121,6 +129,13 @@ calls_to_action:
 keywords:
   - Research
 ---
+
+## Career Countdown: exploring how students and recent graduates are feeling about taking their next steps
+
+Kindred Agency commissioned research company Censuswide to carry out a survey on behalf of the Get Into Teaching campaign exploring the views of final year university students and recent graduates (from the last three years) in 
+England. The purpose of the survey was to explore how today’s higher education cohort feel when it comes to making decisions about their future career and what factors are influencing them.
+
+$career-countdown$
 
 ## Life Lessons: exploring the broader life lessons from people’s school days
 
