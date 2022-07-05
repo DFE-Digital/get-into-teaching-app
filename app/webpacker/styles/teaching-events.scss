@@ -32,13 +32,9 @@ $icon-size: 3rem;
 
   &__descriptions {
     &--summary {
-      color: $blue;
+      @extend .link;
       cursor: pointer;
       text-decoration: underline;
-
-      &:hover {
-	      text-decoration: none;
-      }
 
       &::marker {
 	      padding-right: 2em;
