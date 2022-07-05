@@ -584,6 +584,10 @@ $icon-size: 3rem;
   &__video {
     margin-block: 2em;
   }
+
+  &__provider-information a {
+    word-wrap: break-word;
+  }
 }
 
 .teaching-events__about-ttt-banner {
