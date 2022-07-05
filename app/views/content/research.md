@@ -16,7 +16,7 @@ calls_to_action:
   life-lessons:
     name: attachment
     arguments:
-      text: Read the Life Lessons report summary
+      text: Read the Life lessons report summary
       file_path: media/documents/life-lessons-learnt-campaign-teaching.pdf
       file_type: PDF
       file_size: 270KB
