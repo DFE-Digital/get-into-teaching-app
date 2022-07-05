@@ -18,7 +18,7 @@ calls_to_action:
         link_text: "Student finance calculator"
         link_target: "https://www.gov.uk/student-finance-calculator"
 navigation: 20.10
-navigation_description: Find out how much money you could get to help pay your fees and living expenses while you train.
+navigation_description: Find out which loans you could get to help pay your fees and living expenses while you train.
 keywords:
     - Tuition Fee
     - Maintenance Loan
