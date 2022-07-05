@@ -30,12 +30,6 @@ keywords:
     - Military
 ---
 
-You may be eligible for a teaching bursary or scholarship when training to teach. These are tax-free amounts of money you receive to train in certain subjects. You do not need to pay them back.
-
-Scholarships are offered by independent institutions. They set their own eligibility criteria and you’ll need to apply through the relevant scholarship body.
-
-You do not need to apply for a bursary. If you’re eligible, you’ll automatically receive it.
-
 ## Postgraduate bursaries and scholarships
 
 Postgraduate teaching bursaries and scholarships are only available for the subjects listed below. You cannot receive both a teaching bursary and a scholarship.
