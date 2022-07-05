@@ -77,11 +77,11 @@ It is also helpful to have a teaching qualification from your own or another non
 
 ## Get the right visa or status
 
-You'll need to [get the right visa or status to work in the UK](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).
+If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa). You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
-Many teaching job offers allow you to apply for a ‘skilled worker visa’. You may also be eligible for another type of visa.
+You can apply for a skilled worker visa once you have been offered a teaching job at certain schools in England. [Check our guidance on visas and immigration](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration) to understand which schools can sponsor a skilled worker visa. 
 
-Alternatively, you may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).
+You may also be eligible for another type of visa, or you may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).
 
 [If you're an Irish citizen you do not need a visa](https://www.gov.uk/government/publications/common-travel-area-guidance).
 
@@ -126,4 +126,4 @@ There are [specific salary requirements for a skilled worker visa](https://www.g
 ## Contact
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.
 
-However, for help with the information on this page, you can email us at international.teacherrecruitment@education.gov.uk.
+However, for help with the information on this page, you can email us at teach.inengland@education.gov.uk.

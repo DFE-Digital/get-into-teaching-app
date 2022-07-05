@@ -55,6 +55,15 @@ describe "teaching events", type: :request do
       it { is_expected.to have_http_status(:not_found) }
     end
 
+    context "when the event is nil" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+          receive(:get_teaching_event).with(readable_id).and_return(nil)
+      end
+
+      it { is_expected.to have_http_status(:not_found) }
+    end
+
     context "when the event is not viewable" do
       let(:event) { build(:event_api, :train_to_teach_event, :past) }
 

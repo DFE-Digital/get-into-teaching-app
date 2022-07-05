@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/DFE-Digital/dfe_wizard.git
-  revision: 68278550c0a4771300d697e845ed213e58921009
+  revision: 08a2dda2de41b67ea28dfa3513f59245ea6dcc6a
   specs:
-    dfe_wizard (1.0.0)
+    dfe_wizard (1.0.1)
       activemodel (>= 6.0.3.4)
       activesupport (>= 6.0.3.4)
 
@@ -36,6 +36,14 @@ GIT
     rspec-sonarqube-formatter (1.0.0.pre.local)
       htmlentities (~> 4.3.3)
       rspec (~> 3.0)
+
+GIT
+  remote: https://github.com/pkorenev/rack-page_caching.git
+  revision: 9ca404f7f7e4773030e75799da7ab02e27cbe9a3
+  ref: 9ca404f
+  specs:
+    rack-page_caching (0.0.3)
+      rack
 
 GIT
   remote: https://github.com/waiting-for-dev/front_matter_parser.git
@@ -81,8 +89,6 @@ GEM
     actionpack-cloudfront (1.2.0)
       actionpack (>= 4.2)
       railties (>= 4.2)
-    actionpack-page_caching (1.2.4)
-      actionpack (>= 4.0.0)
     actiontext (7.0.2.3)
       actionpack (= 7.0.2.3)
       activerecord (= 7.0.2.3)
@@ -295,7 +301,7 @@ GEM
     method_source (1.0.0)
     mini_mime (1.1.2)
     mini_portile2 (2.8.0)
-    minitest (5.15.0)
+    minitest (5.16.1)
     mixlib-cli (2.1.8)
     mixlib-config (3.0.9)
       tomlrb
@@ -527,7 +533,6 @@ PLATFORMS
 
 DEPENDENCIES
   actionpack-cloudfront (>= 1.2.0)
-  actionpack-page_caching (>= 1.2.4)
   addressable (~> 2.8.0)
   amazing_print
   better_html (>= 1.0.16)
@@ -570,6 +575,7 @@ DEPENDENCIES
   puma (~> 5.6, >= 5.6.2)
   rack-attack
   rack-host-redirect
+  rack-page_caching!
   rails (~> 7.0.2.3)
   rails_semantic_logger (>= 4.10.0)
   redis

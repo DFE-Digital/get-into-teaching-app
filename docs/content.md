@@ -29,7 +29,7 @@ The majority of web pages on the site are within the [/app/views/content](https:
 | URL                                     | Content File                                                 |
 | ---------------------------------       | ---------------------------------------------------------    |
 | /                                       | /app/views/content/home.md                                   |
-| /funding-your-training                  | /app/views/content/funding-your-training.md                  |
+| /funding-and-support                    | /app/views/content/funding-and-support.md                  |
 | /blog/how-to-apply-for-teacher-training | /app/views/content/blog/how-to-apply-for-teacher-training.md |
 
 Some web pages are more structurally complex than others and are made up of multiple Markdown files that get pulled into a single page. The home page is a good example of this; in addition to the main content page in [/app/views/content/home.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/home.md) there are multiple other content files that reside under [/app/views/content/home/*.md](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content/home). If you can't find the content you wish to edit in the main file for that page, it's worth checking to see if it has a corresponding subdirectory with additional content files in.

@@ -77,7 +77,7 @@ When you apply you’ll need to give details about:
 * why you’re suited to teach a particular subject or age group
 
 You can also share whether you need any adjustments during the application
-process or on the course - for example, [if you’re disabled](/get-support-training-to-teach-if-you-are-disabled).
+process or on the course - for example, [if you’re disabled](/funding-and-support/if-youre-disabled).
 
 You’ll be encouraged to declare any potential safeguarding issues such as
 criminal convictions. Training providers can advise you whether it’ll affect

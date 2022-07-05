@@ -1,6 +1,6 @@
 ---
 title: If you want to change career
-heading: If you want to change career
+heading: Train to be a teacher if you want to change career
 description: |-
   Find out what extra support you can get if you want to change career and get into teaching. Bring your experience to life in the classroom.
 related_content:
@@ -12,6 +12,7 @@ related_content:
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-career-changers
 navigation: 20.15
+navigation_title: If you want to change career
 navigation_description: Use the experience you’ve gathered so far to inspire students and train to bring your skills and expertise to the classroom.
 ---
 

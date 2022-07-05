@@ -8,7 +8,6 @@
   subtitle_button: "Register for updates"
   subtitle_link: "/mailinglist/signup/name"
   backlink: "../"
-  navigation: 25
   right_column:
     ctas:
       - title: New events added.
@@ -18,8 +17,6 @@
         icon: "icon-calendar"
         hide_on_mobile: Yes
         hide_on_tablet: Yes
-  before-content:
-    - content/funding-your-training/funding-widget
   calls_to_action:
     chat:
       name: chat_online
@@ -104,7 +101,6 @@ You can still apply for a tuition fee and a maintenance loan if you already have
 
 You will only have to make loan repayments once you're earning. Your repayments will not increase if you already have a student loan and take an additional loan for teacher training.
 
-$student-finance-calculator$
 
 ## Bursaries and scholarships
 
@@ -180,7 +176,7 @@ You may be able to [get support if you’re a student and you’re disabled, hav
 
 [If you do paid training you may also be eligible for support](https://www.gov.uk/access-to-work).
 
-[Learn more about training to teach if you're disabled](/get-support-training-to-teach-if-you-are-disabled).
+[Learn more about training to teach if you're disabled](/funding-and-support/if-youre-disabled).
 
 ## If you come from outside England
 

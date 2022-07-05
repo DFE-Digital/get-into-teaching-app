@@ -6,6 +6,24 @@ RSpec.feature "Searching for teaching events", type: :feature do
   let(:event_count) { 5 }
   let(:events) { build_list(:event_api, event_count) }
 
+  describe "filter contents" do
+    before do
+      allow_any_instance_of(TeachingEvents::Search).to receive(:results).and_return(events)
+      visit events_path
+    end
+
+    specify "the events filter contains valid event query params" do
+      html = Nokogiri.parse(page.html)
+
+      params = html
+        .css(%(input[type='checkbox'][name='teaching_events_search[type][]']))
+        .map { |e| e.attr("value") }
+        .flat_map { |qp| qp.split(",") }
+
+      expect(params).to match_array(EventType::QUERY_PARAM_NAMES.keys)
+    end
+  end
+
   describe "event lists" do
     before do
       allow_any_instance_of(TeachingEvents::Search).to receive(:results).and_return(events)

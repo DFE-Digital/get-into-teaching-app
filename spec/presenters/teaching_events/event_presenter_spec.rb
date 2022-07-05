@@ -136,6 +136,20 @@ describe TeachingEvents::EventPresenter do
       end
     end
 
+    describe "#online?" do
+      context "when event is online" do
+        let(:event) { build(:event_api, :online) }
+
+        it { is_expected.to be_online }
+      end
+
+      context "when event is not online" do
+        let(:event) { build(:event_api) }
+
+        it { is_expected.not_to be_online }
+      end
+    end
+
     describe "#open?" do
       context "when event is open" do
         let(:event) { build(:event_api) }

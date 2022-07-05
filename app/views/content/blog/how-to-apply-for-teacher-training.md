@@ -72,7 +72,7 @@ And for some subjects, you may qualify for a tax-free bursary or scholarship.
 
 The key to managing financially during your training year is careful planning and preparation. Our [expert advisers](https://adviser-getintoteaching.education.gov.uk/) can help you make a plan and find the best funding options for your circumstances.
 
-[Explore your funding options](/funding-your-training).
+[Explore your funding options](/funding-and-support).
 
 ## 6.	Find the right training course for you
 
@@ -88,13 +88,13 @@ Your teacher training personal statement explains why you want to be a teacher. 
 
 It’s your opportunity to show your enthusiasm for teaching a particular subject. It’s also the place to say why you feel passionate about teaching either primary or secondary.
 
-[Read our advice on writing your teacher training personal statement](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement).
+[Read our advice on writing your teacher training personal statement](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-teacher-training-personal-statement).
 
 ## 8.	Arrange your references
 
 Your referees can tell training providers about your qualities and abilities, so it’s important they know you well.
 
-[Find out more about the requirements for references](/tips-on-applying-for-teacher-training#choose-your-referees).
+[Find out more about the requirements for references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees).
 
 ## 9.	Complete your application
 
