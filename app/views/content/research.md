@@ -132,8 +132,7 @@ keywords:
 
 ## Career Countdown: exploring how students and recent graduates are feeling about taking their next steps
 
-Kindred Agency commissioned research company Censuswide to carry out a survey on behalf of the Get Into Teaching campaign exploring the views of final year university students and recent graduates (from the last three years) in 
-England. The purpose of the survey was to explore how today’s higher education cohort feel when it comes to making decisions about their future career and what factors are influencing them.
+Kindred Agency commissioned research company Censuswide to carry out a survey on behalf of Get Into Teaching exploring the views of final year university students and recent graduates. The purpose was to gain insights into how this cohort feel when it comes to making decisions about their future career and what factors are influencing them.
 
 $career-countdown$
 
