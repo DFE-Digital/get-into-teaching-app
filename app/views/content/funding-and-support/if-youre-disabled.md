@@ -2,7 +2,7 @@
 title: "Funding and support if you're disabled"
 heading: "Support training to teach if you're disabled"
 description: |-
-    Find out what extra support and adjustments you could be entitled to when you're training to teach if you're disabled.
+    Find out about the support you can get while training to teach if you're disabled.
 related_content:
     Who do you want to teach?: "/train-to-be-a-teacher/who-do-you-want-to-teach"
     Becoming a teacher with a hearing impairment: "/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment"
