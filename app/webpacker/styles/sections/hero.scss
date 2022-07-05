@@ -172,6 +172,10 @@ $mobile-cutoff: 800px;
     z-index: 20;
   }
 
+  &__paragraph {
+    line-height: 1.5;
+  }
+
   &__subtitle {
     div {
       @include font-size("small");
