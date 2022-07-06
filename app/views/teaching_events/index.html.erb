@@ -60,6 +60,7 @@
 
         <% if @events.any? %>
           <div class="teaching-events__events teaching-events__events--regular">
+            <h2 class="heading-m">Events coming up soon</h2>
             <ol><%= render TeachingEvents::EventComponent.with_collection(@events) %></ol>
 
             <div class="teaching-events__pagination">
