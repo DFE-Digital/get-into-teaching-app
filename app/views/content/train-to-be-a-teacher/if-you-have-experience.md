@@ -8,7 +8,7 @@ related_content:
     Salaries and benefits : "/salaries-and-benefits"
     Teacher training events : "/events"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only
 navigation: 20.10
 navigation_title: If you've worked in a classroom
 navigation_description: If you've spent a lot of time working in a classroom, you may be able to show you meet the standards for QTS through an assessment.
