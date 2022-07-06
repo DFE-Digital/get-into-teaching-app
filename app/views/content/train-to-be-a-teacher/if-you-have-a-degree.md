@@ -12,7 +12,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/events-near-you
 navigation: 20.05
-navigation_title: If you have a degree
+navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get QTS through postgraduate teacher training if you have a degree or you’re studying for one. 
 ---
 
