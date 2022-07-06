@@ -46,7 +46,7 @@ class EventStatus
   end
 
   def viewable?
-    !pending? && future_dated?
+    !pending? && future_dated? && open?
   end
 
   def accepts_online_registration?
