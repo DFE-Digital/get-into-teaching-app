@@ -102,7 +102,7 @@ module WelcomeContentHelper
       shoutout: {
         name: "Ms Langley and Ms Meredith",
         relationship: "my Spanish teachers at school",
-        text: "I was totally in awe of my GCSE and A Level Spanish teachers. I loved hearing about their experiences and love of language. It definitely had an impact on my decision to study Spanish at university. We’ve stayed in touch and I still turn to them for advice or ideas when I need. Thank you!",
+        text: "I was totally in awe of my General Certificate of Secondary Education (GCSE) and A Level Spanish teachers. I loved hearing about their experiences and love of language. It definitely had an impact on my decision to study Spanish at university. We’ve stayed in touch and I still turn to them for advice or ideas when I need. Thank you!",
       },
     },
     quote: {
