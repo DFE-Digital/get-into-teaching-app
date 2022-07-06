@@ -107,17 +107,17 @@ You can apply for QTS directly to the TRA if you meet the following 3 requiremen
 
 1. You have a teaching qualification from:
 
-* Australia
-* Canada
-* [the EEA](https://www.gov.uk/eu-eea)
-* Gibraltar
-* New Zealand
-* Switzerland
-* the USA
+	* Australia
+	* Canada
+	* [the EEA](https://www.gov.uk/eu-eea)
+	* Gibraltar
+	* New Zealand
+	* Switzerland
+	* the USA
+  
+1. You can prove you’re recognised as a teacher in the country where you qualified.
 
-2. You can prove you’re recognised as a teacher in the country where you qualified.
-
-3. You’re not prohibited or restricted from teaching by a professional sanction against you.
+1. You’re not prohibited or restricted from teaching by a professional sanction against you.
 
 You will not have to pay a fee or undergo further training. 
 
