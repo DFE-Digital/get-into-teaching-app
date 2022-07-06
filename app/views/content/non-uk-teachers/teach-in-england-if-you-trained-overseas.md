@@ -73,7 +73,7 @@ To teach in England you need:
 * to pass criminal and professional safeguarding checks (these will be organised by your employer)
 * to [get the right visa or status](#get-the-right-visa-or-status)
 
-It is also helpful to have a teaching qualification from your own or another non-UK country, or to get '[qualified teacher status](#consider-getting-qualified-teacher-status)'.
+It is also helpful to have a teaching qualification from your own or another non-UK country, or to get '[qualified teacher status](#consider-getting-qualified-teacher-status-qts)'.
 
 ## Get the right visa or status
 
