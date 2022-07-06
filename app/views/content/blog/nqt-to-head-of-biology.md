@@ -14,9 +14,13 @@ keywords:
   - classroom
 tags:
   - career progression
+inset_text:
+  nqt-replaced-with-ect:
+    text: |-
+      Since this blog post was first published, the term newly qualified teacher (NQT) has been replaced with early career teacher (ECT). This describes a teacher in their first two years of teaching.
 ---
 
-Since this blog post was first published, the term newly qualified teacher (NQT) has been replaced with early career teacher (ECT). This describes a teacher in their first two years of teaching.
+$nqt-replaced-with-ect$
 
 Two years after qualifying as a teacher, I progressed to head of biology, climbing the career ladder. I always had an inkling that teaching was the right direction.
 
