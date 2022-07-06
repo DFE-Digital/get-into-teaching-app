@@ -97,7 +97,7 @@ It’s not a legal requirement in all types of schools (for example, [academy sc
 
 However, even in these schools, having QTS can help your application for a teaching job.
 
-### Understanding the different routes to QTS
+## The different routes to QTS
 
 If you decide QTS is right for you, the most appropriate route will depend on the country you’re recognised in, your qualifications and your teaching experience.
 
