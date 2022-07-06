@@ -101,7 +101,7 @@ However, even in these schools, having QTS can help your application for a teach
 
 If you decide QTS is right for you, the most appropriate route will depend on the country you’re recognised in, your qualifications and your teaching experience.
 
-### Applying directly to England’s Teaching Regulation Agency (TRA)
+### Apply directly to England’s Teaching Regulation Agency (TRA)
 
 You can apply for QTS directly to the TRA if you meet the following 3 requirements:
 
