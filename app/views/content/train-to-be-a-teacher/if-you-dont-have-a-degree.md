@@ -12,7 +12,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/events-near-you
 navigation: 20.20
 navigation_title: If you don't have a degree
-navigation_description: You need a degree to get QTS. If you're not already studying for one, find out more about undergraduate degree courses.
+navigation_description: You need a degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about undergraduate degree courses.
 ---
 
 You can get QTS as part of an undergraduate degree.

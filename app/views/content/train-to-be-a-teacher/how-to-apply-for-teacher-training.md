@@ -43,7 +43,7 @@ Discover tips on completing your application, including writing your teacher tra
 Search [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
 Course providers will help you gain your [qualified teacher status (QTS)](/what-is-qts) which is what you need to teach in most schools in England. Many also help you work 
-towards a [PGCE or PGDE](/what-is-a-pgce).
+towards a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce).
 
 ## Where to apply
 
@@ -66,7 +66,7 @@ ready rather than putting it off.
 
 When you apply you’ll need to give details about:
 
-* your qualifications, including your GCSEs and A levels (or equivalents) and degree
+* your qualifications, including your General Certificate of Secondary Education (GCSEs) and A levels (or equivalents) and degree
 * your work history or unpaid experience
 * why you want to teach
 * why you’re suited to teach a particular subject or age group

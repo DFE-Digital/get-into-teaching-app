@@ -93,7 +93,7 @@ Tax-free bursaries or scholarships of up to £26,000 are available for some subj
 
 Find out more about [funding your training](/funding-and-support).
 
-> It is doable! I’m doing my primary PGCE (no bursary). I’m a single parent of a 4yr old boy… I live off maintenance loan and work at weekends… don’t get me wrong its tough but I know it’s only a year and will be all worth it!
+> It is doable! I’m doing my primary postgraduate certificate in education (PGCE) with no bursary. I’m a single parent of a 4yr old boy… I live off maintenance loan and work at weekends… don’t get me wrong its tough but I know it’s only a year and will be all worth it!
 >
 > Sam Lauren, Trainee Teacher
 

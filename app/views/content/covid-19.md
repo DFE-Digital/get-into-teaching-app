@@ -36,7 +36,7 @@ Sign up to [get school experience](https://schoolexperience.education.gov.uk/).
 
 There is no requirement for a face-to-face interview. Your interview may take place online.
 
-You may be asked to send your degree or GCSE certificates digitally too.
+You may be asked to send your degree or General Certificate of Secondary Education (GCSE) certificates digitally too.
 
 Wait for your provider to contact you with more information.
 
@@ -62,6 +62,6 @@ Further information is available if you are affected by [changes to UK immigrati
 
 Read the government's [guidance for schools](https://www.gov.uk/government/publications/actions-for-schools-during-the-coronavirus-outbreak#school-workforce).
 
-Amendments made to the [ITT criteria](https://www.gov.uk/government/publications/initial-teacher-training-criteria) in 2019/20 and 2020/21 no longer apply for 2021/22.
+Amendments made to the [initial teacher training (ITT) criteria](https://www.gov.uk/government/publications/initial-teacher-training-criteria) in 2019/20 and 2020/21 no longer apply for 2021/22.
 
 If you have further urgent questions you can [email our coronavirus inbox](mailto:DfE.coronavirushelpline@education.gov.uk).

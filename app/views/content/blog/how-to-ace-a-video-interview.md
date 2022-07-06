@@ -23,7 +23,7 @@ $anna_shirley$
 
 While some teacher training providers may be returning to face-to-face interviews, others are continuing to ask that interviews take place by video call. 
 
-The [Sheffield SCITT](https://www.sheffieldscitt.org.uk/) has done virtual interviews this year, and we have put together a guide on how to smash a video interview!
+The [Sheffield school-centred initial teacher training (SCITT)](https://www.sheffieldscitt.org.uk/) has done virtual interviews this year, and we have put together a guide on how to smash a video interview!
 
 ## Logistics
 

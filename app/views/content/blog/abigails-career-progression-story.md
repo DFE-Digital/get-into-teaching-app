@@ -22,7 +22,7 @@ $abigail_beeley$
 
 ## Becoming a teacher
 
-I always enjoyed maths at school and had the opportunity to take my maths GCSE early. I went on to study Maths and Management at university, always with the idea that I would go into a leadership or management role, but with no certainty of what industry I would enter.
+I always enjoyed maths at school and had the opportunity to take my maths General Certificate of Secondary Education (GCSE) early. I went on to study Maths and Management at university, always with the idea that I would go into a leadership or management role, but with no certainty of what industry I would enter.
 
 A few years after I finished university, my old school sent out a letter to former students advertising the [School Direct](/train-to-be-a-teacher/if-you-have-a-degree) route into teaching. Around the same time, I went to meet one of my friends who was working at a [Train to Teach event](/events) and got chatting about a career in teaching. It seemed like a great opportunity!
 
@@ -44,7 +44,7 @@ In my third year I was promoted to second in department and took on more respons
 
 What I like most about being in a leadership role is having more responsibility for key decisions, improving pedagogy and empowering others. My influence and decisions are ultimately impacting on our pupils’ lives and the experience that they have at school.
 
-The main goal is to help pupils leave school with the best possible GCSE results. Yet teachers are also responsible for producing confident, caring, respectful and well-rounded individuals ready to take the next steps in their educational journeys.
+The main goal is to help pupils leave school with the best possible General Certificate of Secondary Education (GCSE) results. Yet teachers are also responsible for producing confident, caring, respectful and well-rounded individuals ready to take the next steps in their educational journeys.
 
 This year I’ve been doing the National Professional Qualification for Senior Leadership (NPQSL), which has involved running a project across the whole school. This has given me the opportunity to work more closely with the senior leadership team and has helped strengthen my relationships with colleagues in other departments in the school.
 

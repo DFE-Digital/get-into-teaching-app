@@ -32,7 +32,7 @@ Alongside online research, think about calling or emailing these providers, or t
 * Who will my mentor be, and how often will I be able to meet them?
 * What schools will I have access to for teaching practice? 
 * How many schools will I be doing my teaching practice in and how long will each placement last? 
-* Will I be awarded a PGCE/PGDE in addition to QTS (Qualified Teacher Status)?
+* Will I be awarded a postgraduate certificate in education (PGCE) in addition to qualified teacher status (QTS)?
 * What are the starting dates of the course and when does it finish?
 * How many places are on offer, and how many other trainee teachers will I be studying alongside?
 
