@@ -152,7 +152,7 @@ You can get one-to-one support if you have [qualified teacher status (QTS)](http
 
 ## Find out what salary you can earn
 
-Schools have some flexibility on [salary](/salaries-and-benefits). It varies by region and your level of skill, experience and qualifications.
+Schools have some flexibility on [teachers' salaries](/salaries-and-benefits). It varies by region and your level of skill, experience and qualifications.
 
 There are [specific salary requirements for a skilled worker visa](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).
 
