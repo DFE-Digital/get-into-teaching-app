@@ -19,7 +19,7 @@ keywords:
   - State-school
 ---
 
-A postgraduate certificate in education (PGCE) is an academic qualification you can get through teacher training.
+A postgraduate certificate in education (PGCE) and postgraduate diploma in education (PGDE) are academic qualifications you can get through teacher training.
 
 ## PGCE
 
@@ -41,6 +41,6 @@ A postgraduate diploma in education (PGDE) course is very similar to a PGCE, the
 
 ## Teaching qualifications you need
 
-If you want to be a primary school teacher or secondary school teacher in a state school in England, you will need to get ‘qualified teacher status’ (QTS). You don’t need a PGCE or PGDE to become a teacher, but many courses offer it alongside QTS.
+If you want to be a primary school teacher or secondary school teacher in a state school in England, you will need to get qualified teacher status (QTS). You don’t need a PGCE or PGDE to become a teacher, but many courses offer it alongside QTS.
 
 <a href="/what-is-qts" class="button">Find out more about qualified teacher status (QTS)</a>
