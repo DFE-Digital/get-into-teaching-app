@@ -142,7 +142,9 @@ $icon-size: 3rem;
       background: $grey;
       padding: 2rem 1rem 2rem;
       margin-bottom: 1rem;
+    }
 
+    &--featured, &--regular {
       h2 {
         margin-block: 1rem 2rem;
         padding-inline: 1rem;

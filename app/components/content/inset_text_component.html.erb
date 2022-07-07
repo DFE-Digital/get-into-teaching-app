@@ -1,0 +1,4 @@
+<%= tag.section(class: "inset-text") do %>
+  <%= tag.h2(title) if title.present? %>
+  <%= tag.p(helpers.safe_html_format(text)) %>
+<% end %>

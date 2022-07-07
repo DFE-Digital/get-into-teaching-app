@@ -16,6 +16,7 @@ This documentation aims to be a reference for content editors that want to make 
 		* [Sidebar](#sidebar)
   * [Accessibility](#accessibility)
     * [iframe](#iframe)
+  * [Inset text](#inset-text)
 3. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
@@ -232,6 +233,23 @@ When adding an iFrame elemet as part of Markdown content or a HTML page we shoul
   title="A video about returning to teaching"
   ...
 ></iframe>
+```
+
+### Inset text
+
+If you need to call-out something important in an article and differentiate it from the surrounding text, you can use the inset text component. Specify the component in the frontmatter and then include it anywhere in the page:
+
+```yaml
+---
+inset_text:
+  important-content:
+    title: Optional title
+    text: Text that can contain <a href="#">links</a>
+---
+
+# My page
+
+$important-content$
 ```
 
 ## Creating a Blog Post

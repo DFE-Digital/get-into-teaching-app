@@ -1,0 +1,17 @@
+<%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
+  <% promo.left_section(
+      caption: "10 August 2022",
+      heading: "Advice for international applicants",
+      link_target: "/events/220810-advice-for-international-applicants",
+      link_text: "Sign up for this event") do %>
+    <p>Ask a panel of experts questions related to being an international applicant.<p>
+  <% end %>
+
+  <% promo.right_section(
+        caption: "Online events",
+        heading: "Teacher training events") do %>
+      <p>Events are one of the best ways to talk to experts and get answers to all your questions.</p>
+
+      <%= link_to("Find more events", "/events", class: "button") %>
+  <% end %>
+<% end %>

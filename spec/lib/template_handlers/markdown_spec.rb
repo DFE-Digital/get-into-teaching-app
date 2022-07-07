@@ -181,10 +181,10 @@ describe TemplateHandlers::Markdown, type: :view do
     it { is_expected.to have_css "abbr[title=\"Pay as you earn\"]", text: "PAYE" }
   end
 
-  describe "injecting rich content" do
+  describe "injecting CTAs" do
     let(:front_matter_with_calls_to_action) do
       {
-        "title": "Page with rich content (calls to action)",
+        "title": "Page with calls to action",
         "calls_to_action" => {
           "big-warning" => {
             "name" => "simple",
@@ -287,6 +287,51 @@ describe TemplateHandlers::Markdown, type: :view do
         key = Image.new.alt("media/images/content/hero-images/#{photo}.jpg")
         expect(rendered).to have_css(%(img[alt="#{key}"]))
       end
+    end
+  end
+
+  describe "injecting content view components" do
+    let(:front_matter_with_images) do
+      {
+        "title": "Page with view components",
+        "quote" => {
+          "quote-1" => { "text" => "quote 1", "name" => "name", "job_title" => "job title", "inline" => "left" },
+        },
+        "inset_text" => {
+          "inset-text-1" => { "text" => "text 1" },
+          "inset-text-2" => { "text" => "text 2" },
+        },
+      }
+    end
+
+    let :markdown do
+      <<~MARKDOWN
+        # Some page
+
+        $quote-1$
+
+        Some text
+
+        $inset-text-1$
+
+        Some more text
+
+        $inset-text-2$
+      MARKDOWN
+    end
+
+    before do
+      allow(described_class).to receive(:global_front_matter).and_return(front_matter_with_images)
+      stub_template "page_with_rich_content.md" => markdown
+      render template: "page_with_rich_content"
+    end
+
+    subject { rendered }
+
+    it "contains the specified view components" do
+      is_expected.to have_css(".quote", text: "quote 1")
+      is_expected.to have_css(".inset-text", text: "text 1")
+      is_expected.to have_css(".inset-text", text: "text 2")
     end
   end
 end
