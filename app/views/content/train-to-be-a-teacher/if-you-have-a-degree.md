@@ -10,7 +10,7 @@ related_content:
     Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
-    - content/train-to-be-a-teacher/promos/events-near-you
+    - content/train-to-be-a-teacher/promos/events-promo-degree
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get QTS through postgraduate teacher training if you have a degree or you’re studying for one. 
@@ -63,7 +63,7 @@ If you have the right experience, School Direct (salaried) give you QTS with man
 ### Teach First
 Teach First is a 2-year programme leading to a PGDE and QTS. At the end of your first year, you will have QTS. The PGDE is awarded at the end of the second year.
 
-[Find out more about Teach First](https://www.teachfirst.org.uk/)
+To apply for Teach First, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
 
 ### Postgraduate teaching apprenticeship
 

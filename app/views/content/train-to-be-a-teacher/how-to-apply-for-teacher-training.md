@@ -28,7 +28,7 @@ keywords:
   - interviews
   - offers
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/train-to-be-a-teacher/promos/adviser-promo-apply
 navigation: 20.25
 navigation_title: How to apply
 navigation_description: Discover tips on preparing your teacher training application, from choosing your referees, to writing your personal statement.

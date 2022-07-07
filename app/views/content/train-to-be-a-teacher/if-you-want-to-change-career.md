@@ -10,7 +10,7 @@ related_content:
     Get into teaching maths : "/subjects/maths"
     Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
-    - content/train-to-be-a-teacher/promos/learn-adviser-promo
+    - content/train-to-be-a-teacher/promos/adviser-promo-career-changers
 navigation: 20.15
 navigation_title: If you want to change career
 navigation_description: Use the experience you’ve gathered so far to inspire students and train to bring your skills and expertise to the classroom.

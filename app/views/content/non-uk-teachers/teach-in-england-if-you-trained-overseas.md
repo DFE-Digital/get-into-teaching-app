@@ -7,7 +7,7 @@ related_content:
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/non-uk-teachers/promos/adviser-promo-teach-in-england
 navigation: 20.20
 navigation_title: Teach in England if you trained overseas
 navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from outside the UK.
