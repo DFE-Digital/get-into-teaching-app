@@ -118,7 +118,7 @@ Your salary as a teacher depends on whether you have English 'qualified teacher 
 
 ## Train to teach in England
 
-You have the right to apply to train to teach, and the right to apply for a [student loan, bursary, scholarship](/funding-your-training) or [advanced learner loan](https://www.gov.uk/advanced-learner-loan), if you are in the UK on:
+From 1 August 2022, you have the right to apply to train to teach and the right to apply for a [student loan, bursary, scholarship](/funding-your-training) or [advanced learner loan](https://www.gov.uk/advanced-learner-loan), if you are resident in the UK under:
 
 
 * [the Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
