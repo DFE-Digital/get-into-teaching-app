@@ -78,7 +78,7 @@ We understand it might not be possible to provide all this evidence – however,
 
 ### Help proving your professional qualification to training providers and employers
 
-[UK ENIC](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) can give you a ‘statement of comparability’ showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. [Get help with qualifications and applications for teacher training](#get-help).
+[UK ENIC](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) can give you a ‘statement of comparability’ showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. [Get help with qualifications and applications for teacher training](#get-help-with-international-qualifications).
 
 ## Teach in England 
 
