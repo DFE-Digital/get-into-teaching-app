@@ -87,7 +87,7 @@ To get a job as a teacher, you will need:
 * to pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
 * a high standard of written and spoken English – for example, [British Council B2 level](https://www.britishcouncil.es/en/english/levels/b2) 
 
-[Teach in England if you trained overseas](https://getintoteaching.education.gov.uk/non-uk-teachers/teach-in-england-if-you-trained-overseas) gives more information about teaching in England. 
+[Teach in England if you trained overseas](/non-uk-teachers/teach-in-england-if-you-trained-overseas) gives more information about teaching in England. 
 
 ### Apply for a teaching job
 
@@ -99,7 +99,7 @@ Most teaching vacancies are advertised in March, April or the first half of May,
 
 ### Salaries and benefits
 
-Your salary as a teacher depends on whether you have qualified teacher status (QTS), and your level of experience. As an ‘unqualified teacher’ (without QTS), your salary will generally start at £18,419 outside London. [Salaries and benefits](https://getintoteaching.education.gov.uk/salaries-and-benefits) gives more information.
+Your salary as a teacher depends on whether you have qualified teacher status (QTS), and your level of experience. As an ‘unqualified teacher’ (without QTS), your salary will generally start at £18,419 outside London. [Salaries and benefits](/salaries-and-benefits) gives more information.
 
 ### Apply for qualified teacher status (QTS)
 
@@ -108,7 +108,7 @@ English teacher training leads to [qualified teacher status (QTS)](https://www.g
 After that, QTS is a legal requirement to teach in many English schools, and considered desirable for teachers in the majority of schools in England.
 
 ### Assessment only QTS
-You can work in an English school and, alongside your job, apply for an assessment only QTS. This means you pay a fee to an [English teacher training provider](https://getintoteaching.education.gov.uk/assessment-only-providers) to assess if you meet the standards for English QTS. Check assessment only training providers for costs and more information about eligibility.
+You can work in an English school and, alongside your job, apply for an assessment only QTS. This means you pay a fee to an [English teacher training provider](/assessment-only-providers) to assess if you meet the standards for English QTS. Check assessment only training providers for costs and more information about eligibility.
 
 ### Apply for QTS in England (from spring 2023)
 
@@ -116,7 +116,7 @@ From spring 2023, qualified teachers from Ukraine will be able to apply to the T
 
 ## Train to teach in England
 
-You have the right to apply to train to teach, and the right to apply for a [student loan, bursary, scholarship](https://getintoteaching.education.gov.uk/funding-your-training) or [advanced learner loan](https://www.gov.uk/advanced-learner-loan), if you are in the UK on:
+You have the right to apply to train to teach, and the right to apply for a [student loan, bursary, scholarship](/funding-your-training) or [advanced learner loan](https://www.gov.uk/advanced-learner-loan), if you are in the UK on:
 
 
 * [the Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
@@ -157,9 +157,9 @@ For help with this and other aspects of training to teach, you can:
 
 ### Further information
 
-[Train to be a teacher](https://getintoteaching.education.gov.uk/train-to-be-a-teacher) gives more information about training in England. 
+[Train to be a teacher](/train-to-be-a-teacher) gives more information about training in England. 
 
-[Funding your training](https://getintoteaching.education.gov.uk/funding-your-training) explains what financial support is available if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
+[Funding your training](/funding-your-training) explains what financial support is available if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
 
 ## Find and apply for a teacher training course
 
