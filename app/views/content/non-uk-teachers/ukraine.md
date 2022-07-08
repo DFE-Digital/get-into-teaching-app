@@ -4,7 +4,7 @@ description: |-
   Advice for Ukrainian refugees who wish to teach or train to teach in England.
 related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
-    Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
+    Teach in England if you trained overseas : "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
     - content/train-to-be-a-teacher/promos/get-adviser-promo
