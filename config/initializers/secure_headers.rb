@@ -44,6 +44,7 @@ SecureHeaders::Configuration.default do |config|
   youtube     = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
   sentry      = %w[*.ingest.sentry.io]
   gtm_server  = %w[get-into-teaching.nw.r.appspot.com]
+  reddit      = %w[www.redditstatic.com alb.reddit.com]
 
   quoted_unsafe_inline = ["'unsafe-inline'"]
   quoted_unsafe_eval   = ["'unsafe-eval'"]
@@ -63,10 +64,10 @@ SecureHeaders::Configuration.default do |config|
     form_action: ["'self'"].concat(snapchat, facebook, govuk),
     frame_src: ["'self'"].concat(scribble, snapchat, facebook, youtube, hotjar, google_doubleclick, google_analytics, data, pinterest, optimize),
     frame_ancestors: ["'self'"],
-    img_src: ["'self'"].concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, gtm_server, %w[cx.atdmt.com linkbam.uk]),
+    img_src: ["'self'"].concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, gtm_server, reddit, %w[cx.atdmt.com linkbam.uk]),
     manifest_src: ["'self'"],
     media_src: ["'self'"].concat(zendesk),
-    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, youtube, zendesk, optimize),
+    script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit),
     style_src: ["'self'"].concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize),
     worker_src: ["'self'"].concat(blob),
   }
