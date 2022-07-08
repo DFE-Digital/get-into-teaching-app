@@ -3,14 +3,14 @@ title: "Welcoming Ukrainian teachers and trainee teachers to the UK"
 description: |-
   Advice for Ukrainian refugees who wish to teach or train to teach in England.
 related_content:
-    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
-    Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
+    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
+    Teach in England if you trained overseas : "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
 navigation: 20.30
-navigation_title: Ukraine
-navigation_description: Ukraine
+navigation_title: Welcoming Ukrainian teachers and trainee teachers to the UK
+navigation_description: Advice for Ukrainian citizens seeking teaching jobs and training places in England
 date: "2022-06-24"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
@@ -71,7 +71,7 @@ Teacher training providers will ask for:
 * evidence that applicants for teacher training have a bachelor’s degree from a university (non-UK or in the UK)
 * a criminal record check
 
-You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mvs.gov.ua/app/landing) for a criminal record check, which will be emailed to you. You can then contact the [Ukrainian Embassy in the UK](https://vytiah.mvs.gov.ua/app/landing) for a translation.
+You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mvs.gov.ua/app/landing) for a criminal record check, which will be emailed to you. You can then contact the [Ukrainian Embassy in the UK](https://vytiah.mvs.gov.ua/app/landing) for a translation of the criminal record check and a letter confirming its validity.
 
 We understand it might not be possible to provide all this evidence – however, it’s helpful to show schools and training providers you have made every effort to do so. They can then reach a decision about your suitability on an individual, case-by-case basis, looking at the evidence available. 
 
