@@ -44,7 +44,7 @@ The [Department for Education](https://www.gov.uk/government/organisations/depar
 
 [Move to the UK if you’re coming from Ukraine](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine) explains what you need to do before you travel to the UK and what to do after you arrive.
 
-## Check the status of your visa
+### Check the status of your visa
 
 If you are in the UK on the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme), you already have the right to work as a teacher or train to be a teacher in the UK. You are also eligible to apply for financial support if you choose to train to teach.
 
@@ -68,6 +68,7 @@ For safeguarding reasons, schools will assess your suitability to teach from a r
 * a criminal record check
 
 Teacher training providers will ask for:
+
 * evidence that applicants for teacher training have a bachelor’s degree from a university (non-UK or in the UK)
 * a criminal record check
 
@@ -98,8 +99,7 @@ For a short-term unpaid placement, try [Get school experience](https://schoolexp
 Most teaching vacancies are advertised in March, April or the first half of May, with jobs starting at the beginning of the school year in September. Set up a [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) job alert to be updated about opportunities throughout the year.
 
 
-
-### Apply for qualified teacher status (QTS)
+### Qualified teacher status (QTS)
 
 English teacher training leads to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). However, if you’re a qualified teacher from outside the UK, [you can work as a teacher in England for up to 4 years without QTS](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#qts-exemption-for-teachers-from-outside-the-uk). 
 
@@ -141,11 +141,12 @@ To teach children aged 3 to 11 in primary school, you will also need to meet a s
 A GCSE is an academic qualification awarded for exams in England, usually taken at age 16.
 
 You will also need to:
+
 * have the health and physical capacity to train to teach
 * undergo safeguarding and criminal record checks carried out by your training provider or employer
 * show your training provider you meet their standards for maths and English (you’ll usually have to show you’ve passed an English language test, for example, the [International English Language Testing System (IELTS)](https://www.ielts.org/), [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl), or [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/))
 
-### Get help
+### Get help applying for teacher training
 
 To get advice about training to teach, you can:
 
@@ -164,13 +165,7 @@ Call us on +44 800 389 2500 for:
 * advice about what to do if you do not have English, maths and science qualifications of grade 4 GCSE standard
 
 
-### Further information
-
-[Train to be a teacher](/train-to-be-a-teacher) gives more information about training in England. 
-
-[Funding your training](/funding-your-training) explains what financial support is available if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
-
-## Find and apply for a teacher training course
+### Find and apply for a teacher training course
 
 [Find postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses) lists courses leading to qualified teacher status by region, subject and age group, and guides you to application.
  
@@ -179,6 +174,12 @@ Call us on +44 800 389 2500 for:
 If you do not have a degree, you can [apply to study a 3 to 4 year undergraduate course](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) in England which combines a teaching degree with [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
+
+### Further information
+
+[Train to be a teacher](/train-to-be-a-teacher) gives more information about training in England. 
+
+[Funding your training](/funding-your-training) explains what financial support is available if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
 
 ## Tips for schools & training providers
 
@@ -195,7 +196,7 @@ Schools should assess the qualifications and experience of Ukrainian teachers in
 ### Safeguarding
 
 Schools must adopt robust recruitment procedures preventing overseas applicants who are unsuitable to work with children from securing a role in school.
-Schools must be guided by the safer recruitment policy outlined in [Keeping children safe in education](https://www.gov.uk/government/publications/keeping-children-safe-in-education--2). They should also carry out additional checks related to international recruitment and training, outlined in [Recruit teachers from overseas](https://www.gov.uk/guidance/recruit-teachers-from-overseas#safeguarding-checks-for-teachers-from-overseas).  
+Schools must be guided by the safer recruitment policy outlined in [Keeping children safe in education.](https://www.gov.uk/government/publications/keeping-children-safe-in-education--2) They should also carry out additional checks related to international recruitment and training, outlined in [Recruit teachers from overseas](https://www.gov.uk/guidance/recruit-teachers-from-overseas#safeguarding-checks-for-teachers-from-overseas).  
 
 Given documentation may be difficult for refugees to provide, we expect schools to draw on a varying range of sources on a case by case basis, depending on the individual in question. It is good practice to carry out a risk assessment recording the evidence you have gathered to reach your decision. 
 
