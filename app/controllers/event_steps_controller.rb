@@ -4,7 +4,7 @@ class EventStepsController < ApplicationController
   before_action :set_is_walk_in, only: %i[show update]
   before_action :load_event
 
-  include DFEWizard::Controller
+  include GITWizard::Controller
   self.wizard_class = Events::Wizard
 
   before_action :noindex
@@ -47,7 +47,7 @@ private
   end
 
   def wizard_store
-    ::DFEWizard::Store.new app_store, crm_store
+    ::GITWizard::Store.new app_store, crm_store
   end
 
   def app_store

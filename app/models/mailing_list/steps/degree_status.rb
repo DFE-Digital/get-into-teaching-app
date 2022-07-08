@@ -1,6 +1,6 @@
 module MailingList
   module Steps
-    class DegreeStatus < ::DFEWizard::Step
+    class DegreeStatus < ::GITWizard::Step
       attribute :degree_status_id, :integer
 
       validates :degree_status_id,

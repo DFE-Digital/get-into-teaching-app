@@ -1,6 +1,6 @@
 module Callbacks
   module Steps
-    class PrivacyPolicy < ::DFEWizard::Step
+    class PrivacyPolicy < ::GITWizard::Step
       attribute :accept_privacy_policy, :boolean
       attribute :accepted_policy_id
 

@@ -1,7 +1,7 @@
 require "attribute_filter"
 
 module MailingList
-  class Wizard < ::DFEWizard::Base
+  class Wizard < ::GITWizard::Base
     ATTRIBUTES_TO_LEAVE = %w[
       first_name
       last_name
@@ -13,7 +13,7 @@ module MailingList
 
     self.steps = [
       Steps::Name,
-      ::DFEWizard::Steps::Authenticate,
+      ::GITWizard::Steps::Authenticate,
       Steps::AlreadySubscribed,
       Steps::DegreeStatus,
       Steps::TeacherTraining,

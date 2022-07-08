@@ -1,11 +1,11 @@
 require "attribute_filter"
 
 module Callbacks
-  class Wizard < ::DFEWizard::Base
+  class Wizard < ::GITWizard::Base
     self.steps = [
       Steps::PersonalDetails,
       Steps::MatchbackFailed,
-      ::DFEWizard::Steps::Authenticate,
+      ::GITWizard::Steps::Authenticate,
       Steps::Callback,
       Steps::TalkingPoints,
       Steps::PrivacyPolicy,

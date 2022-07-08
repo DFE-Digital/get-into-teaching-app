@@ -1,11 +1,11 @@
 shared_context "with wizard store" do
   let(:backingstore) { { "name" => "Joe", "age" => 35 } }
   let(:crm_backingstore) { {} }
-  let(:wizardstore) { DFEWizard::Store.new backingstore, crm_backingstore }
+  let(:wizardstore) { GITWizard::Store.new backingstore, crm_backingstore }
 end
 
-class TestWizard < DFEWizard::Base
-  class Name < DFEWizard::Step
+class TestWizard < GITWizard::Base
+  class Name < GITWizard::Step
     attribute :name
     validates :name, presence: true
   end

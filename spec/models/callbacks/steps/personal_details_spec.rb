@@ -4,7 +4,7 @@ describe Callbacks::Steps::PersonalDetails do
   include_context "with wizard step"
   it_behaves_like "a with wizard step"
 
-  it { expect(described_class).to include(::DFEWizard::IssueVerificationCode) }
+  it { expect(described_class).to include(::GITWizard::IssueVerificationCode) }
 
   it { is_expected.to respond_to :first_name }
   it { is_expected.to respond_to :last_name }

@@ -1,6 +1,6 @@
 module MailingList
   module Steps
-    class TeacherTraining < ::DFEWizard::Step
+    class TeacherTraining < ::GITWizard::Step
       attribute :consideration_journey_stage_id, :integer
       validates :consideration_journey_stage_id,
                 presence: true,
