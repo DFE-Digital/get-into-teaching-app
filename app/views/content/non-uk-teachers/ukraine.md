@@ -3,7 +3,7 @@ title: "Welcoming Ukrainian teachers and trainee teachers to the UK"
 description: |-
   Advice for Ukrainian refugees who wish to teach or train to teach in England.
 related_content:
-    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
+    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
