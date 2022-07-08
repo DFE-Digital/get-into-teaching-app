@@ -1,0 +1,9 @@
+<%= link_to(path, class: "category__nav-card") do %>
+  <div class="category__nav-card--content">
+    <%= content_tag(heading_tag, title) %>
+
+    <%= tag.p(description) %>
+  </div>
+
+  <div class="category__nav-card--icon"></div>
+<% end %>

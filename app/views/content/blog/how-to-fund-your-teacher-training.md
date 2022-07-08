@@ -31,7 +31,7 @@ closing_paragraph: enriching-the-lives-of-young-people
 
 $header_image$
 
-All funding amounts below are only correct for teacher training courses starting in autumn 2021. Funding levels for courses starting in 2022 will be updated once they are confirmed.
+All funding amounts below were correct for teacher training courses starting in autumn 2021. [Read up to date funding information](/funding-and-support).
 
 There are plenty of funding options available to support you during your teacher training year. You can access Tuition Fee and Maintenance Loans regardless of whether or not you have an existing student loan and you will only begin to repay these once you're earning more than £27,295.
 
@@ -91,7 +91,7 @@ Once you've accepted your place on a non-salaried teacher training course, you c
 
 Tax-free bursaries or scholarships of up to £26,000 are available for some subjects. Your eligibility, and the amount you can expect to receive, will depend on the subject you choose to teach and your degree classification or highest relevant academic qualification.
 
-Find out more about [funding your training](/funding-your-training).
+Find out more about [funding your training](/funding-and-support).
 
 > It is doable! I’m doing my primary PGCE (no bursary). I’m a single parent of a 4yr old boy… I live off maintenance loan and work at weekends… don’t get me wrong its tough but I know it’s only a year and will be all worth it!
 >

@@ -9,7 +9,7 @@ related_content:
     What to expect on your teacher training : "/blog/what-to-expect-on-your-teacher-training"
     Training and support for early career teachers : "/support-for-early-career-teachers"
 promo_content:
-    - content/train-to-be-a-teacher/promos/events-near-you
+    - content/train-to-be-a-teacher/promos/events-promo-itt
 ---
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.

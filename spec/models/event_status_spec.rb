@@ -50,44 +50,32 @@ describe EventStatus do
   end
 
   describe "viewable?" do
-    context "when closed, future-dated, not online q&a" do
-      let(:event) { build(:event_api, :closed, :school_or_university_event) }
-
-      it { is_expected.to be_viewable }
-    end
-
-    context "when closed, future-dated, online q&a" do
-      let(:event) { build(:event_api, :closed, :online_event) }
-
-      it { is_expected.to be_viewable }
-    end
-
-    context "when closed, past, not online q&a" do
-      let(:event) { build(:event_api, :closed, :train_to_teach_event, :past) }
+    context "when closed, future-dated" do
+      let(:event) { build(:event_api, :closed) }
 
       it { is_expected.not_to be_viewable }
     end
 
-    context "when pending, future-dated, online q&a" do
-      let(:event) { build(:event_api, :pending, :online_event) }
+    context "when closed, past" do
+      let(:event) { build(:event_api, :closed, :past) }
 
       it { is_expected.not_to be_viewable }
     end
 
-    context "when open, future-dated, online q&a" do
-      let(:event) { build(:event_api, :online_event) }
+    context "when pending, future-dated" do
+      let(:event) { build(:event_api, :pending) }
+
+      it { is_expected.not_to be_viewable }
+    end
+
+    context "when open, future-dated" do
+      let(:event) { build(:event_api) }
 
       it { is_expected.to be_viewable }
     end
 
-    context "when open, future-dated, not online q&a" do
-      let(:event) { build(:event_api, :train_to_teach_event) }
-
-      it { is_expected.to be_viewable }
-    end
-
-    context "when open, past, not online q&a" do
-      let(:event) { build(:event_api, :past, :school_or_university_event) }
+    context "when open, past" do
+      let(:event) { build(:event_api, :past) }
 
       it { is_expected.not_to be_viewable }
     end

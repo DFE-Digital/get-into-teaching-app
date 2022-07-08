@@ -1,0 +1,15 @@
+.inset-text {
+  margin-top: $indent-amount;
+  margin-bottom: $indent-amount;
+  padding: $indent-amount;
+  background-color: $yellow-light;
+  border-left: 6px solid $black;
+
+  h2, p {
+    @include font-size("small");
+  }
+
+  a {
+    @extend .link--black;
+  }
+}
