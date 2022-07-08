@@ -9,7 +9,7 @@ related_content:
     Managing behaviour in the classroom : "/blog/managing-behaviour-in-the-classroom"
     Becoming a numeracy coordinator in my first year of teaching : "/blog/abigails-career-progression-story"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/train-to-be-a-teacher/promos/adviser-promo-ect
 ---
 
 You’ll be known as an early career teacher (ECT) for your first 2 years in teaching. The term early career teacher (ECT) has replaced newly qualified teacher (NQT).

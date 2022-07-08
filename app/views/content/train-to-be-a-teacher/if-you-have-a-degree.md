@@ -1,18 +1,19 @@
 ---
 title: "Ways to train if you have a degree"
-heading: "If you have a degree"
+heading: "Train to be a teacher if you have or are studying for a degree"
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
-    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
+    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
     Initial teacher training : "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
-    - content/train-to-be-a-teacher/promos/events-near-you
+    - content/train-to-be-a-teacher/promos/events-promo-degree
 navigation: 20.05
-navigation_description: Find out how to get QTS if you have a degree or you’re studying for one now. There are different options you can choose.
+navigation_title: If you have or are studying for a degree
+navigation_description: Find out how to get QTS through postgraduate teacher training if you have a degree or you’re studying for one. 
 ---
 
 If you have a degree, or you’re currently studying for one, there are different routes you can take to getting [qualified teacher status](/what-is-qts) (QTS). You need QTS to work in the majority of schools in England including state maintained primary, secondary and special schools.
@@ -24,8 +25,8 @@ You can study for [a PGCE or PGDE](/what-is-a-pgce) (an academic qualification) 
 
 Fees for full-time courses are usually around £9,250 but you can:
 
-- get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
-- [apply for a student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
+- get [funding that you do not have to pay back](/funding-and-support/scholarships-and-bursaries) for certain subjects
+- [apply for a student loan](/funding-and-support/tuition-fee-and-maintenance-loans)
 
 Fees are higher for international students.
 
@@ -45,8 +46,8 @@ Some SCITT and School Direct (fee-funded) programmes give you a PGCE or PGDE in 
 
 Fees are usually around £9,250 but you can:
 
-- get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
-- [apply for a student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
+- get [funding that you do not have to pay back](/funding-and-support/scholarships-and-bursaries) for certain subjects
+- [apply for a student loan](/funding-and-support/tuition-fee-and-maintenance-loans)
 
 You should check the fees for a particular course you are interested in with the course provider.
 
@@ -62,7 +63,7 @@ If you have the right experience, School Direct (salaried) give you QTS with man
 ### Teach First
 Teach First is a 2-year programme leading to a PGDE and QTS. At the end of your first year, you will have QTS. The PGDE is awarded at the end of the second year.
 
-[Find out more about Teach First](https://www.teachfirst.org.uk/)
+To apply for Teach First, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
 
 ### Postgraduate teaching apprenticeship
 

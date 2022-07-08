@@ -5,7 +5,7 @@ RSpec.feature "Breadcrumbs", type: :feature do
 
   subject { page }
 
-  let(:event) { GetIntoTeachingApiClient::TeachingEvent.new(status_id: 1) }
+  let(:event) { build(:event_api) }
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -91,7 +91,7 @@ RSpec.feature "Breadcrumbs", type: :feature do
   end
 
   context "when visiting the event sign up page" do
-    let(:path) { event_steps_path("123") }
+    let(:path) { event_steps_path(event.readable_id) }
 
     it { is_expected.not_to have_css(".breadcrumbs") }
   end

@@ -13,6 +13,9 @@ class PagesController < ApplicationController
     "/train-to-be-a-teacher/initial-teacher-training", # Contains a form
   ].freeze
 
+  caches_page :cookies
+  caches_page :show, unless: proc { |env| DYNAMIC_PAGE_PATHS.include?(env.request.path) }
+
   before_action :set_welcome_guide_info, if: -> { request.path.start_with?("/welcome") && (params[:subject] || params[:degree_status]) }
   rescue_from *MISSING_TEMPLATE_EXCEPTIONS, with: :rescue_missing_template
 
@@ -52,7 +55,7 @@ class PagesController < ApplicationController
 
   # Avoid caching by rendering these pages manually:
 
-  def funding_your_training
+  def scholarships_and_bursaries
     @funding_widget =
       if params[:funding_widget].blank?
         FundingWidget.new
@@ -60,7 +63,7 @@ class PagesController < ApplicationController
         FundingWidget.new(funding_widget_params).tap(&:valid?)
       end
 
-    render_page("funding-your-training")
+    render_page("funding-and-support/scholarships-and-bursaries")
   end
 
   def welcome
@@ -80,14 +83,6 @@ class PagesController < ApplicationController
     end
 
     redirect_to(url, turbolinks: false, status: :moved_permanently, allow_other_host: true)
-  end
-
-protected
-
-  def static_page_actions
-    %i[cookies].tap do |actions|
-      actions << :show unless DYNAMIC_PAGE_PATHS.include?(request.path)
-    end
   end
 
 private

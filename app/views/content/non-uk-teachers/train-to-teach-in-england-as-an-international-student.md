@@ -3,11 +3,11 @@ title: "Train to teach in England as an international student"
 description: |-
   Find out how to train to teach in England as an international student. Get help and guidance on your qualifications, funding and visa.
 related_content:
-    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
+    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.05
 navigation_title: Train to teach in England as an international student
 navigation_description: Find out how to train to teach in England as an international student and get English qualified teacher status (QTS).
@@ -262,4 +262,4 @@ Learn more about English education:
 
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.
 
-However, for help with the information on this page, you can email us at international.teacherrecruitment@education.gov.uk.
+However, for help with the information on this page, you can email us at teach.inengland@education.gov.uk.

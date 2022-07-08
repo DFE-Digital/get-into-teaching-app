@@ -31,7 +31,7 @@ module Pages
     end
 
     class Node
-      attr_reader :navigation, :path, :title, :rank, :description
+      attr_reader :navigation, :path, :title, :rank, :description, :subcategory
 
       def initialize(navigation, path, front_matter)
         @navigation = navigation
@@ -42,6 +42,7 @@ module Pages
           @rank        = fm.fetch(:navigation, nil)
           @menu        = fm.fetch(:menu, false)
           @description = fm.fetch(:navigation_description, nil)
+          @subcategory = fm.fetch(:subcategory, nil)
         end
       end
 

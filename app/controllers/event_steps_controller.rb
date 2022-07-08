@@ -8,7 +8,7 @@ class EventStepsController < ApplicationController
   self.wizard_class = Events::Wizard
 
   before_action :noindex
-  before_action :redirect_closed_events, only: %i[show update]
+  before_action :restrict_sign_ups, only: %i[show update completed]
   before_action :set_step_page_title, only: [:show]
   before_action :set_completed_page_title, only: [:completed]
 
@@ -22,11 +22,13 @@ protected
 
 private
 
-  def redirect_closed_events
-    event_is_closed = EventStatus.new(@event).closed?
+  def restrict_sign_ups
+    event_is_viewable = EventStatus.new(@event).viewable?
     candidate_is_walk_in = wizard_store[:is_walk_in]
 
-    if event_is_closed && !candidate_is_walk_in
+    unless event_is_viewable || candidate_is_walk_in
+      # Redirecting to the main event page will either render
+      # the event in a closed state or return a 410 (Gone).
       redirect_to event_path(id: @event.readable_id)
     end
   end

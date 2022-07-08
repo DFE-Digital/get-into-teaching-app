@@ -1,0 +1,26 @@
+<section class="why-teach" aria-label="Why teach?">
+  <div class="why-teach__container">
+    <div class="why-teach__content">
+      <h2 class="heading-l">
+        <div class="caption-l caption--bold caption--purple">Why teach?</div>
+        Find out what teaching is really like
+      </h2>
+
+      <p>
+        If you’re not sure if teaching is the right career for you,
+        you can find out more about what being a teacher is all about.
+      </p>
+
+      <ul>
+        <li><%= link_to("Experience life in the classroom", "/train-to-be-a-teacher/get-school-experience") %></li>
+        <li><%= link_to("Read teachers' stories", "/blog") %></li>
+      </ul>
+    </div>
+
+    <div class="why-teach__image">
+      <% "media/images/content/hero-images/0011.jpg".tap do |path| %>
+        <%= image_pack_tag(path, alt: image_alt(path)) %>
+      <% end %>
+    </div>
+  </div>
+</section>
