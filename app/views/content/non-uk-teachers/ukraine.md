@@ -125,7 +125,7 @@ You have the right to apply to train to teach, and the right to apply for a [stu
 * [the Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 * [the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
-If you are not in the UK under one of these schemes, see [Check the status of your visa](#check-the-status-of-your-visa) for more about switching to a different type of visa so you can train to teach. Not all visas will give you the right to apply for student finance. 
+If you are not in the UK under one of these schemes, see [Check the status of your visa](#check-the-status-of-your-visa) for more about switching to a different type of visa so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
 Teacher training in England takes 1 year of full-time study and leads to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). At the end of your training you can apply for paid teaching jobs.
 
