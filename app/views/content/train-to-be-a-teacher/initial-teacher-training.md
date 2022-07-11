@@ -32,7 +32,7 @@ There are full-time and part-time teacher training courses available.
 
 ## What you’ll learn in initial teacher training
 
-What you’ll learn will depend on your course and the qualifications it offers. Some teacher training courses award [qualified teacher status (QTS)](/what-is-qts), while some award QTS with [PGCE or PGDE](/what-is-a-pgce).
+What you’ll learn will depend on your course and the qualifications it offers. Some teacher training courses award [qualified teacher status (QTS)](/what-is-qts), while some award QTS with a [postgraduate certificate in education (PGCE)](/what-is-a-pgce).
 
 Initial teacher training helps you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). You must meet the teachers’ standards to be awarded QTS.
 
@@ -66,7 +66,7 @@ Some courses begin with time spent in a university or school where you start you
 
 School placements vary in length and structure, but the minimum length is usually around 6 weeks. You should check with your training provider what their course and placement patterns are.
 
-Read about [Cindy’s first week as a trainee teacher doing a PGDE with QTS](/blog/my-first-week-as-a-trainee-teacher).
+Read about [what teacher training is like doing a QTS with PGCE at the University of Cumbria](/blog/what-to-expect-on-your-teacher-training).
 
 ## How you’ll be assessed 
 
