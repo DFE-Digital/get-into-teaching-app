@@ -66,7 +66,7 @@ Some courses begin with time spent in a university or school where you start you
 
 School placements vary in length and structure, but the minimum length is usually around 6 weeks. You should check with your training provider what their course and placement patterns are.
 
-Read about [what teacher training is like doing a QTS with PGCE at the University of Cumbria](/blog/what-to-expect-on-your-teacher-training).
+Read about [what teacher training is like doing a QTS with PGCE with one training provider](/blog/what-to-expect-on-your-teacher-training).
 
 ## How you’ll be assessed 
 
