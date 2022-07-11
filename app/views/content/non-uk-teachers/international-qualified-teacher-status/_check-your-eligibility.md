@@ -2,7 +2,7 @@ To apply for iQTS you will need to have:
 
 * a bachelor’s degree from a UK or non-UK university (or other institution)
 
-* a maths qualification of the same standard as General Certificate of Secondary Education (GCSE) grade 4 
+* a maths qualification of the same standard as GCSE (General Certificate of Secondary Education) grade 4 
 
 * for teaching children aged 3 to 11, a science qualification of the same standard as GCSE grade 4 
 

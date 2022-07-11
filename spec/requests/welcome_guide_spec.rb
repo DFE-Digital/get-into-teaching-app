@@ -65,7 +65,7 @@ describe "Welcome guide landing page", type: :request do
       subject: "French",
       name: "Tom",
       shoutout_name: "Ms Langley and Ms Meredith",
-      shoutout_text: "I was totally in awe of my General Certificate of Secondary Education (GCSE) and A Level Spanish teachers",
+      shoutout_text: "I was totally in awe of my GCSE and A Level Spanish teachers",
       story_text: "Some of my friends were going into office jobs",
     ),
   }.each do |subject_key, metadata|

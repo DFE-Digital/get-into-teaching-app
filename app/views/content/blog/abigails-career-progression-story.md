@@ -28,7 +28,7 @@ $abigail_beeley$
 
 ## Becoming a teacher
 
-I always enjoyed maths at school and had the opportunity to take my maths General Certificate of Secondary Education (GCSE) early. I went on to study Maths and Management at university, always with the idea that I would go into a leadership or management role, but with no certainty of what industry I would enter.
+I always enjoyed maths at school and had the opportunity to take my maths GCSE early. I went on to study Maths and Management at university, always with the idea that I would go into a leadership or management role, but with no certainty of what industry I would enter.
 
 A few years after I finished university, my old school sent out a letter to former students advertising the [School Direct](/train-to-be-a-teacher/if-you-have-a-degree) route into teaching. Around the same time, I went to meet one of my friends who was working at a [Train to Teach event](/events) and got chatting about a career in teaching. It seemed like a great opportunity!
 

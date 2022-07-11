@@ -36,7 +36,7 @@ Sign up to [get school experience](https://schoolexperience.education.gov.uk/).
 
 There is no requirement for a face-to-face interview. Your interview may take place online.
 
-You may be asked to send your degree or General Certificate of Secondary Education (GCSE) certificates digitally too.
+You may be asked to send your degree or GCSE certificates digitally too.
 
 Wait for your provider to contact you with more information.
 

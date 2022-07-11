@@ -104,7 +104,7 @@ We can help you make an application for teacher training in England. There are a
 To teach children aged 11 to 18 in secondary school, you’ll need:
 
 - a bachelor’s degree (this can be from a university outside the UK)
-- to meet a standard in English and maths equivalent to a grade 4 General Certificate of Secondary Education (GCSE)
+- to meet a standard in English and maths equivalent to a grade 4 GCSE (General Certificate of Secondary Education)
 
 To teach children aged 3 to 11 in primary school, you will also need to meet a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 

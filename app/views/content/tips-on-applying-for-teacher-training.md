@@ -71,7 +71,7 @@ ready rather than putting it off.
 
 When you apply you’ll need to give details about:
 
-* your qualifications, including your General Certificate of Secondary Education (GCSEs) and A levels (or equivalents) and degree
+* your qualifications, including your GCSEs and A levels (or equivalents) and degree
 * your work history or unpaid experience
 * why you want to teach
 * why you’re suited to teach a particular subject or age group
