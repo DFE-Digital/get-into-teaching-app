@@ -50,7 +50,7 @@ In my third year I was promoted to second in department and took on more respons
 
 What I like most about being in a leadership role is having more responsibility for key decisions, improving pedagogy and empowering others. My influence and decisions are ultimately impacting on our pupils’ lives and the experience that they have at school.
 
-The main goal is to help pupils leave school with the best possible General Certificate of Secondary Education (GCSE) results. Yet teachers are also responsible for producing confident, caring, respectful and well-rounded individuals ready to take the next steps in their educational journeys.
+The main goal is to help pupils leave school with the best possible GCSE results. Yet teachers are also responsible for producing confident, caring, respectful and well-rounded individuals ready to take the next steps in their educational journeys.
 
 This year I’ve been doing the National Professional Qualification for Senior Leadership (NPQSL), which has involved running a project across the whole school. This has given me the opportunity to work more closely with the senior leadership team and has helped strengthen my relationships with colleagues in other departments in the school.
 
