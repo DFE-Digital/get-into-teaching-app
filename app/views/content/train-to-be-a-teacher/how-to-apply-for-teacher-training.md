@@ -43,7 +43,7 @@ Discover tips on completing your application, including writing your teacher tra
 Search [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
 Course providers will help you gain your [qualified teacher status (QTS)](/what-is-qts) which is what you need to teach in most schools in England. Many also help you work 
-towards a [PGCE or PGDE](/what-is-a-pgce).
+towards a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce).
 
 ## Where to apply
 
@@ -72,7 +72,7 @@ When you apply you’ll need to give details about:
 * why you’re suited to teach a particular subject or age group
 
 You can also share whether you need any adjustments during the application
-process or on the course - for example, [if you’re disabled](/get-support-training-to-teach-if-you-are-disabled).
+process or on the course - for example, [if you’re disabled](/funding-and-support/if-youre-disabled).
 
 You’ll be encouraged to declare any potential safeguarding issues such as
 criminal convictions. Training providers can advise you whether it’ll affect

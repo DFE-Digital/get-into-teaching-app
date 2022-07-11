@@ -43,7 +43,7 @@ Moving from China to England was very easy. Like most international schools, min
 
 Starting back at an English state school was hard, like starting any new job - so much to learn! But it didn't feel different just because I was back in England. By October half term, my new school felt like home.
 
-Though I was only away for 2 years, during that time a new General Certificate of Secondary Education (GCSE) curriculum and Ofsted framework[^1] were introduced.
+Though I was only away for 2 years, during that time a new GCSE curriculum and Ofsted framework[^1] were introduced.
 
 While in China, I'd kept up-to-date with the UK education scene via Twitter. I visited UK schools and went on UK-based courses whenever I was home in England for the holidays.
 

@@ -68,7 +68,7 @@ If you're not happy with how we respond to your complaint, contact the Equality 
 
 ## Technical information about this service's accessibility
 
-DfE is committed to making its service accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
+The Department for Education (DfE) is committed to making its service accessible, in accordance with the Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018.
 
 This service is fully compliant with the Web Content Accessibility Guidelines version 2.1 AA standard.
 

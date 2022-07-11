@@ -21,7 +21,7 @@ tags:
 
 $seminar_room$
 
-A university-based PGCE year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. It is also a busy one!
+A university-based postgraduate certificate in education (PGCE) year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. It is also a busy one!
 
 ## How is the course delivered?
 

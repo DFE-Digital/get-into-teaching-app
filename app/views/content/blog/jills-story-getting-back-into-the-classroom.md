@@ -22,7 +22,7 @@ I didn't think that it would be difficult to return to the classroom because of 
 
 The academy provided opportunities to observe lessons, and I was able to spend time in the behavioural inclusion unit. This is where I became interested in working outside mainstream education. Around this time, I registered with a supply agency and took a temporary post working with pupils with emotional and behavioural difficulties.
 
-I continued to access professional development from DfE in behaviour management, and took a free teacher subject specialism training in maths, which was a unit from a master's course. I also volunteered two days per week for two terms, working with pupils with similar special educational needs, which allowed me to gain further experience.
+I continued to access professional development from the Department for Education (DfE) in behaviour management, and took a free teacher subject specialism training in maths, which was a unit from a master's course. I also volunteered two days per week for two terms, working with pupils with similar special educational needs, which allowed me to gain further experience.
 
 I was given the opportunity to teach maths to year nine pupils and the school very kindly provided me with a reference in addition to the one from the supply agency.
 
