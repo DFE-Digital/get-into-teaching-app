@@ -535,4 +535,4 @@ The accredited teacher training providers listed on this page offer the AO progr
 
 If you have experience of teaching outside the UK, some training providers will let you apply for an assessment only QTS without visiting or training in England.
 
-[See the training providers who offer assessment only QTS to international teachers.](#group--international)
+[See the training providers who offer assessment only qualified teacher status (QTS) to international teachers.](#group--international)

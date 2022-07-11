@@ -12,10 +12,10 @@ promo_content:
     - content/train-to-be-a-teacher/promos/events-promo-degree
 navigation: 20.20
 navigation_title: If you don't have a degree
-navigation_description: You need a degree to get QTS. If you're not already studying for one, find out more about undergraduate degree courses.
+navigation_description: You need a degree to get qualified teacher status (QTS). If you're not already studying for one, find out more about undergraduate degree courses.
 ---
 
-You can get QTS as part of an undergraduate degree.
+You can get qualified teacher status (QTS) as part of an undergraduate degree.
 
 Courses typically cost £9,250 per year and can take up to 4 years but you can get [funding for your training](/funding-and-support).
 

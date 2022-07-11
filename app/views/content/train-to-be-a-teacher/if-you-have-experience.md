@@ -11,7 +11,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-assessment-only
 navigation: 20.10
 navigation_title: If you've worked in a classroom
-navigation_description: If you've spent a lot of time working in a classroom, you may be able to show you meet the standards for QTS through an assessment.
+navigation_description: If you've spent a lot of time working in a classroom, you may be able to show you meet the standards for qualified teacher status (QTS) through an assessment.
 ---
 
 If you have been working in a classroom for a significant amount of time, as a teaching assistant or in a similar role, you may be able to get [qualified teacher status](/what-is-qts) (QTS) through a 12-week ‘assessment only’ programme. You  must also have a degree.

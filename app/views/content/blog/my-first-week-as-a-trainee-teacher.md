@@ -62,7 +62,7 @@ Reflecting on this experience, I admit that this practice presentation was a goo
 
 My day starts differently to previous days. I spend the morning at home reading an article and watching a pre-recorded seminar on children and poverty. I then read some papers and watch two short documentaries on education and poverty. After completing these tasks, I meet my subject group on Google Meet and we spend the rest of the morning discussing what we have seen.
 
-In the afternoon I attend a seminar on GCSE and A-level assessment. In this session we work in a group to identify and discuss the different assessment specifications for languages.
+In the afternoon I attend a seminar on GCSE and A level assessment. In this session we work in a group to identify and discuss the different assessment specifications for languages.
 
 The group work is important because it aimed to familiarise us with the different subjects’ language specifications and syllabus, particularly interesting for me as I didn’t attend school in the UK, so learning about specifications and the curriculum is exciting to me.
 
