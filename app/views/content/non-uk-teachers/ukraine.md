@@ -9,8 +9,8 @@ related_content:
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
 navigation: 20.15
-navigation_title: Ukrainian teachers and trainee coming to the UK
-navigation_description: Find information and advice for Ukrainian citizens seeking teaching jobs and training places in England
+navigation_title: Ukrainian teachers and trainees coming to the UK
+navigation_description: Find information and advice for Ukrainian citizens seeking teaching jobs and training places in England.
 date: "2022-06-24"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
@@ -129,7 +129,7 @@ From 1 August 2022, you have the right to apply to train to teach and the right 
 
 If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#check-the-status-of-your-visa) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
-Teacher training in England takes 1 year of full-time study and leads to [QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts). At the end of your training you can apply for paid teaching jobs.
+Teacher training in England takes 1 year of full-time study and leads to QTS. At the end of your training you can apply for paid teaching jobs.
 
 ### What you’ll need
 
@@ -173,7 +173,7 @@ Call us on +44 800 389 2500 for:
  
 ### If you do not have a university degree
 
-If you do not have a degree, you can [apply to study a 3 to 4 year undergraduate course](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) in England which combines a teaching degree with [QTS](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
+If you do not have a degree, you can [apply to study a 3 to 4 year undergraduate course](https://www.ucas.com/postgraduate/teacher-training/applying-teacher-training/find-teacher-training-programmes) in England which combines a teaching degree with QTS. When you complete your studies, you’ll be able to apply for jobs as a teacher in England.
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) has lots of helpful information about studying at an English university.
 
@@ -183,7 +183,7 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 Find out what financial support is available to [fund your training](/funding-your-training) if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
 
-## Tips for schools & training providers
+## Tips for schools and training providers
 
 ### Visas and immigration
 
