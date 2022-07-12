@@ -32,7 +32,14 @@ promo_content:
 navigation: 20.25
 navigation_title: How to apply
 navigation_description: Discover tips on preparing your teacher training application, from choosing your referees, to writing your personal statement.
+inset_text:
+  nqt-replaced-with-ect:
+    text: |-
+      There's still time to apply and start teacher training this September.
+      [Start your teacher training application now](https://www.gov.uk//apply-for-teacher-training).
 ---
+
+$nqt-replaced-with-ect$
 
 Give yourself the best chance of getting on the course you want.
 
