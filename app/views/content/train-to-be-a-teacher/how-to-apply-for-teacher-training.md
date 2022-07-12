@@ -35,8 +35,7 @@ navigation_description: Discover tips on preparing your teacher training applica
 inset_text:
   nqt-replaced-with-ect:
     text: |-
-      There's still time to apply and start teacher training this September.
-      [Start your teacher training application now](https://www.gov.uk//apply-for-teacher-training).
+      There's still time to apply and start teacher training this September. <a href="https://www.gov.uk//apply-for-teacher-training/get-school-experience">Start your teacher training application now</a>.
 ---
 
 $nqt-replaced-with-ect$
