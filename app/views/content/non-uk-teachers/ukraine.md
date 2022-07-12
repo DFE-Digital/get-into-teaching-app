@@ -38,7 +38,7 @@ keywords:
   - Comparability
 ---
 
-Overseas teachers enrich the lives of students and add value to schools and the wider community. We wish to assist Ukrainian  refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
+Overseas teachers enrich the lives of students and add value to schools and the wider community. We wish to assist Ukrainian refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
 
 ## General information
 
