@@ -38,7 +38,7 @@ keywords:
   - Comparability
 ---
 
-The [Department for Education](https://www.gov.uk/government/organisations/department-for-education) believes overseas teachers enrich the lives of students and add value to schools and the wider community. We wish to assist Ukrainian  refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
+Overseas teachers enrich the lives of students and add value to schools and the wider community. We wish to assist Ukrainian  refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
 
 ## General information
 
@@ -108,7 +108,7 @@ English teacher training leads to [qualified teacher status (QTS)](https://www.g
 After that, QTS is a legal requirement to teach in many English schools, and considered desirable for teachers in the majority of schools in England.
 
 ### Assessment only QTS
-You can work in an English school and, alongside your job, apply for an assessment only QTS. This means you pay a fee to an [English teacher training provider](/assessment-only-providers) to assess if you meet the standards for English QTS. Check assessment only training providers for costs and more information about eligibility.
+You can work in an English school and, alongside your job, apply for assessment only QTS. This means you apply to an [English teacher training provider](/assessment-only-providers) who will assess if you meet the standards for English QTS. The Department of Education will make funding available for candidates who start assessment only courses at the start of the new school year in September 2022. Check assessment only training providers for more information about eligibility and funding.
 
 ### Apply for QTS in England (from spring 2023)
 
