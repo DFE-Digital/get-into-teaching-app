@@ -17,7 +17,8 @@ navigation_description: Find out how to get qualified teacher status (QTS) throu
 inset_text:
   nqt-replaced-with-ect:
     text: |-
-      There's still time to apply and start teacher training this September. <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.
+      <p>There's still time to apply and start teacher training this September.</p>
+      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
 
 $nqt-replaced-with-ect$
