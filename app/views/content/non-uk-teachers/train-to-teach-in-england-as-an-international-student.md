@@ -104,15 +104,25 @@ We can help you make an application for teacher training in England. There are a
 To teach children aged 11 to 18 in secondary school, you’ll need:
 
 - a bachelor’s degree (this can be from a university outside the UK)
-- to meet a standard in English and maths equivalent to a grade 4 GCSE (General Certificate of Secondary Education)
+- English and maths qualifications which are the same standard as a grade 4 GCSE (General Certificate of Secondary Education)
 
-To teach children aged 3 to 11 in primary school, you will also need to meet a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
+To teach children aged 3 to 11 in primary school, you will also need a physics, chemistry or biology qualification which is the same standard as a grade 4 GCSE.
 
 A GCSE is an academic qualification awarded for exams in England, usually taken at age 16.
 
-If you do not have qualifications that are equivalent to GCSEs, you may be able to sit a test set by training providers to show your knowledge of English, maths and science.
+If you do not have an English language qualification equivalent to grade 4 GCSE, your teacher training provider may ask you to:
+
+* sit a test in English language set by your teacher training provider
+* show you’ve passed an English language test, for example, the [International English Language Testing System (IELTS)](https://www.ielts.org/), [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl), or [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/))  
+
+If you do not have a maths and science qualifications equivalent to grade 4 GCSE, you may be asked to sit tests in maths and science.
 
 [Contact us for advice about your qualifications](#get-support-and-advice).
+
+You will also need to:
+
+* have the health and physical capacity to train to teach
+* undergo safeguarding and criminal record checks carried out by your training provider or employer
 
 #### If you do not have a university degree
 
@@ -167,15 +177,23 @@ You can [find postgraduate teacher training courses](https://www.gov.uk/find-pos
 
 You can search by location, teaching subject and age group. You can also search for courses which pay a salary, and courses where student or skilled worker visa sponsorship is available.
 
-If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
 
-Due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
 
 #### Ways to train
 
 You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). [Get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) about the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
 
 You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
+
+#### Choosing a subject to teach and making your application
+
+The subject you apply to teach must usually be the same, or closely related to, the subject you studied at university. 
+
+#### Apply for your training place, then apply for your visa
+
+If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
+
+Due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
 
 <div class="inset">
   <h4>Already living in the UK?</h4>
@@ -185,15 +203,7 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
   </p>
 </div>
 
-#### Your suitability for teaching
 
-As part of the application process, your training provider will confirm you’re suitable for teaching. They'll check:
-
-- your health and physical capacity to train to teach
-
-- whether you’re safe to work with children (you'll need to undergo safeguarding and criminal record checks)
-
-- the standards you meet in English, maths and, if you want to teach primary school age children, science
 
 <a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">You can find postgraduate teacher training</a> and when you have chosen your courses, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for teacher training</a>.
 
