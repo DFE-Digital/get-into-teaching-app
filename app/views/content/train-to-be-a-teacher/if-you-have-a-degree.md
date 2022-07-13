@@ -15,13 +15,13 @@ navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
 inset_text:
-  nqt-replaced-with-ect:
+  still-time-to-apply:
     text: |-
       <p>There's still time to apply and start teacher training this September.</p>
       <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
 
-$nqt-replaced-with-ect$
+$still-time-to-apply$
 
 If you have a degree, or you’re currently studying for one, there are different routes you can take to getting [qualified teacher status](/what-is-qts) (QTS). You need QTS to work in the majority of schools in England including state maintained primary, secondary and special schools.
 
