@@ -29,7 +29,7 @@ jobs:
          name: ${{ matrix.data.environment }}
     runs-on: ubuntu-latest
     steps:
-      - name: Check ${{ steps.serviceprinciple.outputs.name }}
+      - name: Check ${{ matrix.data.principle }}
         uses: DFE-Digital/github-actions/CheckServicePrincipal@master
         id: pwsh_check_expire
         with:
@@ -37,7 +37,8 @@ jobs:
             ServicePrincipal: ${{ matrix.data.principle }}
             ExpiresWithinDays: 30
 
-      - name: Processing ${{fromJson(steps.pwsh_check_expire.outputs.json_data).data.Name}}
+      - name: Processing ${{ matrix.data.principle }}
+        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
         run:  echo Expires in ${{fromJson(steps.pwsh_check_expire.outputs.json_data).data.ExpiresDays}} days
 
       - name: Check out the repo

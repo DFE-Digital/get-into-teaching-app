@@ -15,7 +15,7 @@ You could teach:
 - early years (children up to the age of 5)
 - further education (for example, teaching at further education colleges or sixth form colleges)
 
-If you want to [teach in primary or secondary schools](/train-to-be-a-teacher/if-you-have-a-degree) there are a number of ways to get [qualified teachers status](/what-is-qts) (QTS) which you will need to teach in the majority of schools in
+If you want to [teach in primary or secondary schools](/train-to-be-a-teacher/if-you-have-a-degree) there are a number of ways to get [qualified teacher status](/what-is-qts) (QTS) which you will need to teach in the majority of schools in
 England.
 
 You will need a degree to teach all student groups except those in further education, depending on the type of further education you are teaching.
@@ -67,8 +67,8 @@ This is a full-time bachelor’s degree in an early childhood-related subject le
 
 Fees for full-time courses are usually around £9,250 but you can:
 
-- get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
-- apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
+- get [funding that you do not have to pay back](/funding-and-support/scholarships-and-bursaries) for certain subjects
+- apply for a [student loan](/funding-and-support/tuition-fee-and-maintenance-loans)
 
 ### Graduate early years teacher training
 
@@ -76,8 +76,8 @@ This is a full-time post-graduate course leading to EYTS. You will usually study
 
 Fees for full-time courses are usually around £7,000 but you can:
 
-- get [funding that you do not have to pay back](/funding-your-training#bursaries-and-scholarships) for certain subjects
-- apply for a [student loan](/funding-your-training#tuition-fee-and-maintenance-loans)
+- get [funding that you do not have to pay back](/funding-and-support/scholarships-and-bursaries) for certain subjects
+- apply for a [student loan](/funding-and-support/tuition-fee-and-maintenance-loans)
 
 There are also bursaries available, including:
 

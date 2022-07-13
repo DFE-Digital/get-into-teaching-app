@@ -114,7 +114,7 @@ A return to teaching adviser can give you free one-to-one support with:
   ></iframe>
 </div>
 
-Return to teaching advisers also run [events to support returners](/event-categories/online-q-as).
+Return to teaching advisers also run [events to support returners](/events).
 
 $get-a-tta$
 
@@ -154,7 +154,7 @@ If you’re returning to teaching, you might want to re-familiarise yourself wit
 
 ### Other things to consider
 
-* attend an [online return to teaching event](/event-categories/online-q-as)
+* attend an [online return to teaching event](/events)
 * join the [Chartered College of Teaching](https://chartered.college/), the
   professional body for teachers
 * join a [teaching union](https://www.tes.com/jobs/careers-advice/pay-and-conditions/which-teachers-union)

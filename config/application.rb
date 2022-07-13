@@ -36,12 +36,6 @@ module GetIntoTeachingWebsite
     config.view_component.default_preview_layout = "component_preview"
 
     config.skylight.environments.append("preprod", "dev", "test", "staging", "rolling")
-
-    # Static page cache
-    config.action_controller.page_cache_directory = Rails.root.join("public/cached_pages")
-    config.middleware.insert_before \
-      ActionDispatch::Static, ActionDispatch::Static, File.join(config.root, "public", "cached_pages"),
-      headers: { "Cache-Control" => "max-age=#{5.minutes.to_i}, public, immutable" }
   end
 end
 

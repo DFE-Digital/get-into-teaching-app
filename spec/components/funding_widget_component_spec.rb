@@ -53,7 +53,7 @@ RSpec.describe FundingWidgetComponent, type: :component do
       end
 
       it "has additional info for extra support" do
-        expect(page).to have_css("p", text: "You may be able to get extra support")
+        expect(page).to have_css("p", text: "Talk to a")
       end
     end
   end

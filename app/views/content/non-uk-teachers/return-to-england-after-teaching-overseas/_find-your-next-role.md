@@ -1,4 +1,4 @@
-75% of schools in England now advertise their teaching  jobs on DfE’s free
+75% of schools in England now advertise their teaching  jobs on the Department for Education’s free
 [Teaching Vacancies service](https://teaching-vacancies.service.gov.uk/).
 You can set up a job alert to search by:
 

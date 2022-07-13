@@ -71,6 +71,26 @@ describe EventType do
         expect { described_class.lookup_by_ids(999_888_777) }.to raise_error(KeyError)
       end
     end
+
+    describe ".lookup_by_query_param" do
+      specify "returns the id given the corresponding query param" do
+        expect(described_class.lookup_by_query_param("tttqt")).to eq(222_750_007)
+      end
+
+      specify "errors when an unrecognised name is passed in" do
+        expect { described_class.lookup_by_query_param("other") }.to raise_error(KeyError)
+      end
+    end
+
+    describe ".lookup_by_query_params" do
+      specify "returns the id given the corresponding query params" do
+        expect(described_class.lookup_by_query_params("tttqt", "onlineqa")).to eq([222_750_007, 222_750_008])
+      end
+
+      specify "errors when an unrecognised name are passed in" do
+        expect { described_class.lookup_by_query_params("onlineqa", "other") }.to raise_error(KeyError)
+      end
+    end
   end
 
   subject { described_class.new(build(:event_api)) }

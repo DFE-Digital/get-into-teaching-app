@@ -1,6 +1,7 @@
 ---
 title: "Get school experience"
 heading: "Get school experience"
+subcategory: Your teacher training application
 description: |-
   Get school experience to explore what life is like in the classroom before you start your initial teacher training (ITT). Discover if teaching is for you.
 related_content:
@@ -18,8 +19,8 @@ calls_to_action:
         link_target: "https://schoolexperience.education.gov.uk/"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo
-navigation: 20.25
-navigation_description: Spending some time in a school can help you find out more about teaching and even help you decide what kind of teacher you want to be.
+navigation: 20.30
+navigation_description: Spending some time in a school can help you understand if teaching is right for you and give you experience to talk about in your application.
 ---
 
 You can visit schools to get unpaid experience in the classroom before you start your initial teacher training (ITT).

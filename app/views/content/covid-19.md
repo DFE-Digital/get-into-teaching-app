@@ -62,6 +62,6 @@ Further information is available if you are affected by [changes to UK immigrati
 
 Read the government's [guidance for schools](https://www.gov.uk/government/publications/actions-for-schools-during-the-coronavirus-outbreak#school-workforce).
 
-Amendments made to the [ITT criteria](https://www.gov.uk/government/publications/initial-teacher-training-criteria) in 2019/20 and 2020/21 no longer apply for 2021/22.
+Amendments made to the [initial teacher training (ITT) criteria](https://www.gov.uk/government/publications/initial-teacher-training-criteria) in 2019/20 and 2020/21 no longer apply for 2021/22.
 
 If you have further urgent questions you can [email our coronavirus inbox](mailto:DfE.coronavirushelpline@education.gov.uk).

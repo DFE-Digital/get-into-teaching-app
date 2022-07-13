@@ -16,7 +16,7 @@ tags:
   - life as a teacher
 ---
 
-I am an assistant headteacher and ICT learning co-ordinator and have an MSc in computing and information systems. I had always been open to the idea of teaching as a potential career path – so I took the plunge when I moved from Northern Ireland to England.
+I am an assistant headteacher and information and communication technologies (ICT) learning co-ordinator and have an MSc in computing and information systems. I had always been open to the idea of teaching as a potential career path – so I took the plunge when I moved from Northern Ireland to England.
 
 ## Steep learning curve
 

@@ -48,7 +48,7 @@ Discover tips on completing your application, including writing your teacher tra
 Search [postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses).
 
 Course providers will help you gain your [qualified teacher status (QTS)](/what-is-qts) which is what you need to teach in most schools in England. Many also help you work 
-towards a [PGCE or PGDE](/what-is-a-pgce).
+towards a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce).
 
 ## Where to apply
 
@@ -92,7 +92,7 @@ You can choose up to 3 teacher training courses for each application.
 If you do not find what you were looking for, there are [other ways to train](/train-to-be-a-teacher).
 
 Before you start, it’s particularly important to think about your referees and
-[teacher training personal statement](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement).
+[teacher training personal statement](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-teacher-training-personal-statement).
 
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.

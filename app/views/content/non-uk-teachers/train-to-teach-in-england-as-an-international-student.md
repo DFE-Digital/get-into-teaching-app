@@ -3,11 +3,11 @@ title: "Train to teach in England as an international student"
 description: |-
   Find out how to train to teach in England as an international student. Get help and guidance on your qualifications, funding and visa.
 related_content:
-    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
+    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.05
 navigation_title: Train to teach in England as an international student
 navigation_description: Find out how to train to teach in England as an international student and get English qualified teacher status (QTS).
@@ -104,7 +104,7 @@ We can help you make an application for teacher training in England. There are a
 To teach children aged 11 to 18 in secondary school, you’ll need:
 
 - a bachelor’s degree (this can be from a university outside the UK)
-- to meet a standard in English and maths equivalent to a grade 4 GCSE
+- to meet a standard in English and maths equivalent to a grade 4 GCSE (General Certificate of Secondary Education)
 
 To teach children aged 3 to 11 in primary school, you will also need to meet a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 
@@ -130,7 +130,7 @@ To get advice about training to teach, you can:
 
 #### Get help with international qualifications
 
-If your qualifications come from a non-UK institution, your teacher training provider may want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from UK ENIC. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
+If your qualifications come from a non-UK institution, your teacher training provider may want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from UK European Network of Information Centres (ENIC). A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
 
 Call us on +44 800 389 2500 for:
 
@@ -262,4 +262,4 @@ Learn more about English education:
 
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.
 
-However, for help with the information on this page, you can email us at international.teacherrecruitment@education.gov.uk.
+However, for help with the information on this page, you can email us at teach.inengland@education.gov.uk.

@@ -36,7 +36,7 @@ In Zaid, my Return to Teaching Adviser, I found a sympathetic and wise counsel. 
 
 ## How easy was it for you to find a part time teaching post with a view to going full time after one year?
 
-It was easier than I thought. Despite my lack of recent teaching experience, my maths degree, PGCE, and my 20 years’ experience of teaching gave me a major advantage. I applied to other schools before securing my current position. The third, and successful, application was in response to an advert seeking two days maternity cover for one year. The gap in teaching was hardly an issue - apparently, I sailed through the subject knowledge assessment, the trial lesson, and the interview. The feedback was that having an experienced teacher in the young department would be a definite asset.
+It was easier than I thought. Despite my lack of recent teaching experience, my maths degree, postgraduate certificate in education (PGCE), and my 20 years’ experience of teaching gave me a major advantage. I applied to other schools before securing my current position. The third, and successful, application was in response to an advert seeking two days maternity cover for one year. The gap in teaching was hardly an issue - apparently, I sailed through the subject knowledge assessment, the trial lesson, and the interview. The feedback was that having an experienced teacher in the young department would be a definite asset.
 
 ## What are the benefits of teaching part-time?
 
