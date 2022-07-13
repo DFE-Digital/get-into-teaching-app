@@ -38,7 +38,7 @@ keywords:
   - Comparability
 ---
 
-Overseas teachers enrich the lives of students and add value to schools and the wider community. We wish to assist Ukrainian refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
+Overseas teachers enrich the lives of students and add value to schools and the wider community. The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) wishes to assist Ukrainian refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
 
 ## General information
 
@@ -94,7 +94,7 @@ To get a job as a teacher, you will need:
 
 ### Apply for a teaching job
 
-To find a teaching job, you must apply to individual schools (not the Department for Education). Use the [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for jobs by region, subject specialism and age group. This service also lists [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system working in a teaching assistant or support role before you apply for teaching jobs. 
+To find a teaching job, you must apply to individual schools (not DfE). Use the [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for jobs by region, subject specialism and age group. This service also lists [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system working in a teaching assistant or support role before you apply for teaching jobs. 
 
 For a short-term unpaid placement, you can [request school experience in a primary or secondary school in England](https://schoolexperience.education.gov.uk/). 
 
@@ -108,11 +108,11 @@ English teacher training leads to [qualified teacher status (QTS)](https://www.g
 After that, QTS is a legal requirement to teach in many English schools, and considered desirable for teachers in the majority of schools in England.
 
 ### Assessment only QTS
-You can work in an English school and, alongside your job, apply for assessment only QTS. This means you apply to an [English teacher training provider](/assessment-only-providers) who will assess if you meet the standards for English QTS. The Department for Education will make funding available for candidates who start assessment only courses at the start of the new school year in September 2022. Check assessment only training providers for more information about eligibility and funding.
+You can work in an English school and, alongside your job, apply for assessment only QTS. This means you apply to an [English teacher training provider](/assessment-only-providers) who will assess if you meet the standards for English QTS. DfE will make funding available for candidates who start assessment only courses at the start of the new school year in September 2022. Check assessment only training providers for more information about eligibility and funding.
 
 ### Apply for QTS in England (from spring 2023)
 
-From spring 2023, qualified teachers from Ukraine will be able to apply to the Teaching Regulation Agency for QTS (if they meet the criteria) without paying a fee to a training provider. [Find out more about the way QTS is awarded to teachers from overseas](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
+From spring 2023, qualified teachers from Ukraine will be able to apply to the Teaching Regulation Agency for QTS (if they meet the criteria) without paying a fee to a training provider. [Find out more about the way QTS will be awarded to teachers from overseas](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
 
 ### Salaries and benefits
 
@@ -120,12 +120,17 @@ Your salary as a teacher depends on whether you have QTS, and your level of expe
 
 ## Train to teach in England
 
-From 1 August 2022, you have the right to apply to train to teach and the right to apply for a [student loan, bursary, scholarship](/funding-your-training) or [advanced learner loan](https://www.gov.uk/advanced-learner-loan), if you are resident in the UK under:
-
+If you are resident in the UK under:
 
 * [the Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
 * [the Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 * [the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
+
+From 1 August 2022, you will:
+
+* have the right to apply to train to teach
+* have the right to apply for a [student loan, bursary, scholarship](/funding-your-training) or [advanced learner loan](https://www.gov.uk/advanced-learner-loan)
+* pay the same training fees as UK applicants ((up to £9,250 for a full-time course)
 
 If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#check-the-status-of-your-visa) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
@@ -193,7 +198,7 @@ Most Ukrainian refugees will not need to be sponsored for a skilled worker or st
 
 Schools should assess the qualifications and experience of Ukrainian teachers in the same way as other overseas applicants, bearing in mind the exemption provided by the [4-year rule](https://www.gov.uk/guidance/recruit-teachers-from-overseas#employing-overseas-teachers-without-qts-the-4-year-rule).
 
-UK ENIC can provide a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) to applicants showing how their academic and professional qualifications compare to the English equivalents. However, they will need scans or photographs of their original documents.
+UK ENIC can provide a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) to applicants showing how their academic and professional qualifications compare to the English equivalents.
 
 ### Safeguarding
 
