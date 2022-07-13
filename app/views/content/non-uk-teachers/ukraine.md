@@ -130,7 +130,7 @@ From 1 August 2022, you will:
 
 * have the right to apply to train to teach
 * have the right to apply for a [student loan, bursary, scholarship](/funding-your-training) or [advanced learner loan](https://www.gov.uk/advanced-learner-loan)
-* pay the same training fees as UK applicants ((up to £9,250 for a full-time course)
+* pay the same training fees as UK applicants (up to £9,250 for a full-time course)
 
 If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#check-the-status-of-your-visa) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
