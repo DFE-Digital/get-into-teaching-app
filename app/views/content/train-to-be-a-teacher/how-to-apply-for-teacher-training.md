@@ -33,13 +33,13 @@ navigation: 20.25
 navigation_title: How to apply
 navigation_description: Discover tips on preparing your teacher training application, from choosing your referees, to writing your personal statement.
 inset_text:
-  nqt-replaced-with-ect:
+  still-time-to-apply:
     text: |-
       <p>There's still time to apply and start teacher training this September.</p>
       <p><a href="https://www.gov.uk//apply-for-teacher-training/get-school-experience">Start your teacher training application now</a>.</p>
 ---
 
-$nqt-replaced-with-ect$
+$still-time-to-apply$
 
 Give yourself the best chance of getting on the course you want.
 
