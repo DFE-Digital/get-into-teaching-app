@@ -364,6 +364,8 @@ redirects:
   "/international-returners": "/non-uk-teachers/return-to-england-after-teaching-overseas"
   "/come-to-england-to-teach-if-you-are-a-teacher-from-outside-the-uk": "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
   "/non-uk-teachers/teach-in-england-if-you-trained-outside-the-uk": "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
+  "/funding-your-training": "/funding-and-support"
+  "/tips-on-applying-for-teacher-training": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
