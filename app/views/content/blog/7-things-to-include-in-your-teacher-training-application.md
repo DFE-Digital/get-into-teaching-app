@@ -16,9 +16,16 @@ tags:
   - becoming a teacher
   - teacher training
   - personal statements
+inset_text:
+  still-time-to-apply:
+    text: |-
+      <p>There's still time to apply and start teacher training this September.</p>
+      <p><a href="https://www.gov.uk/apply-for-teacher-training">Start your teacher training application now</a>.</p>
 ---
 
 $bedfordshire$
+
+$still-time-to-apply$
 
 Not sure what to include in your teacher training application? Just think of the word TEACHER! Juliet Fern, Mieka Harris and Kate Hudson-Glynn from the University of Bedfordshire explain all.
 
