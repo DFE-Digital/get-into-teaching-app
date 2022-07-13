@@ -54,7 +54,7 @@ If you’re unsure about taking on a teaching role at this time, consider applyi
 
 Check to see if there are any upcoming [online events](/event-categories/online-q-as) for returning teachers. Look up podcasts and articles on education to help familiarise yourself with current issues.
 
-> I wouldn’t have got the job without Zaid [RTTA]! He has been both honest, factual and realistic.”
+> I wouldn’t have got the job without Zaid [RTTA]! He has been both honest, factual and realistic.
 >
 > _Karen Watson, returning maths teacher_
 
