@@ -9,7 +9,7 @@ related_content:
     Returning to teaching with international experience : "/blog/returning-to-teaching-with-international-experience"
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-returners
-navigation: 20.15
+navigation: 20.30
 navigation_title: Return to England after teaching overseas
 navigation_description: Bring your international skills and experience back to an English classroom and return to teach in England.
 date: "2020-04-07"
