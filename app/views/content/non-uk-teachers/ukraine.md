@@ -42,7 +42,7 @@ Overseas teachers enrich the lives of students and add value to schools and the 
 
 ## General information
 
-[Move to the UK if you’re coming from Ukraine](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine) explains what you need to do before you travel to the UK and what to do after you arrive.
+If you're coming to the UK from Ukraine, [check what you need to do before you travel and what to do after you arrive](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine).
 
 ### Check the status of your visa
 
