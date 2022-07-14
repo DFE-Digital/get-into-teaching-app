@@ -62,6 +62,8 @@ keywords:
 
 Citizens of every country in the world can apply to train to teach in England.
 
+## Already a qualified teacher?
+
 If you're already a qualified teacher, find out how you can [teach in England if you completed your teacher training outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
 
 ## Why train to teach in England?
@@ -97,32 +99,44 @@ living costs, to train (depending on your immigration status, you may get a redu
 
 ## Apply for teacher training
 
-We can help you make an application for teacher training in England. 
+We can help you make an application for teacher training in England. Sign up for a teacher training adviser to get help right away and throughout the application process.
 
-### 1. Check your qualifications
+### 1. Get support and advice
 
-To teach children aged 11 to 18 in secondary school, you’ll need:
+For help applying, you can:
 
-- a bachelor’s degree (this can be from a university outside the UK)
-- English and maths qualifications which are the same standard as a grade 4 GCSE (General Certificate of Secondary Education)
+* sign up to [get a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
+* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time)  – calls will be charged at your standard rate
+* use the live chat service at the bottom of this page
 
-To teach children aged 3 to 11 in primary school, you will also need a physics, chemistry or biology qualification which is the same standard as a grade 4 GCSE.
+
+### 2. Check your eligibility
+
+To train to teach in England, you will need the following qualifications:
+
+* a bachelor’s degree (this can be from a university outside the UK)
+* an English language qualification which is the same standard as a grade 4 GCSE (General Certificate of Secondary Education)
+* a maths qualification which is the same standard as a grade 4 GCSE
+* to teach children aged 3 to 11 in primary school, a physics, chemistry or biology (science) qualification which is the same standard as a grade 4 GCSE
 
 A GCSE is an academic qualification awarded for exams in England, usually taken at age 16.
-
-If you do not have an English language qualification equivalent to grade 4 GCSE, your teacher training provider may ask you to:
-
-* sit an English language test
-* show you’ve passed an English language test, for example, the [International English Language Testing System (IELTS)](https://www.ielts.org/), [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl), or [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/))  
-
-If you do not have a maths and science qualifications equivalent to grade 4 GCSE, you may be asked to sit tests in maths and science.
-
-[Contact us for advice about your qualifications](#get-support-and-advice).
 
 You will also need to:
 
 * have the health and physical capacity to train to teach
 * undergo safeguarding and criminal record checks carried out by your training provider or employer
+
+#### Help comparing English and international qualifications
+
+For help, call us on +44 800 389 2500. We can check your degree and other qualifications meet the standards set for English teacher training. 
+
+When you make your application for teacher training, some teacher training providers will want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free statement of comparability, once you’ve submitted your application, if your provider asks for this.
+
+#### English language, maths and science proficiency
+
+Your English language qualification could be evidence you’ve reached a certain standard in an English language test, for example, the [International English Language Testing System (IELTS)](https://www.ielts.org/), [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl), or [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/),  
+
+If you haven’t passed an English language test like this, or do not have qualifications in maths or science which are the same standard as grade 4 GCSE, some teacher training providers will let you sit tests in these subjects. It’s best to contact them to ask about their policy before you apply. 
 
 #### If you do not have a university degree
 
@@ -130,25 +144,6 @@ If you do not have a degree, you can apply to study a 3 to 4 year [undergraduate
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) have lots of helpful information about studying at an English university.
 
-### 2. Get support and advice
-
-To get help applying, you can:
-
-* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) * calls will be charged at your standard rate
-* use the live chat service at the bottom of this page
-* sign up to [get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
-* talk to an adviser right away and throughout the application process
- 
-
-#### Get help with international qualifications
-
-If your qualifications come from a non-UK institution, your teacher training provider may want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from UK European Network of Information Centres (ENIC). A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
-
-Call us on +44 800 389 2500 for:
-
-- guidance on the UK equivalents of your qualifications
-- a free statement of comparability, once you’ve submitted your application, if your provider asks for this
-- advice about what to do if you do not have English, maths and science qualifications of grade 4 GCSE standard
 
 ### 3. Find out about fees and financial support
 
@@ -183,7 +178,7 @@ You can search by location, teaching subject and age group. You can also search 
 
 The subject you apply to teach must usually be the same, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
 
-Your [teacher training adviser](#2.-get-support-and-advice) can help with: 
+Your [teacher training adviser](#get-support-and-advice) can help with: 
 
 * your choice of subject
 * writing a personal statement
@@ -192,13 +187,12 @@ Your [teacher training adviser](#2.-get-support-and-advice) can help with:
 
 #### Ways to train
 
-You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). [Get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) about the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
+You can train in a school or in a university setting, and study full-time (over a year) or part-time (over 2 or more years). [Get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) to learn about the different types of courses available, or explore [how to train to be a teacher in England](/train-to-be-a-teacher).
 
 You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
 
 
-
-#### Apply for your training place, then apply for your visa
+#### First apply for your training place, then apply for your visa
 
 If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
 
@@ -208,7 +202,7 @@ Due to rules about immigration, not all providers can accept international appli
   <h4>Already living in the UK?</h4>
 
   <p>
-If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any teacher training provider in England.
+If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.
   </p>
 </div>
 
@@ -252,13 +246,14 @@ Your teacher training provider may also be able to help you plan your move to th
 
 If you’re accepted on to a teacher training course in England, you’ll train for one year (or longer if you’re part-time) to gain [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
 
-You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
 
 ## Apply for your first teaching job
 
 When you have qualified teacher status, you will be able to apply for paid teaching jobs in all schools in England.
 
 To find a teaching job, you must apply to individual schools (not the Department for Education). Use the [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for jobs by region, subject specialism and age group.
+
+You may need to apply for a different visa to work in England as a qualified teacher. Our [guidance for non-UK nationals wishing to teach in England](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk) explains the skilled worker visa and covers other ways you can update, extend or switch your visa when you finish your training.
 
 <a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#job">Learn more about your first teaching job in England</a>.
 
