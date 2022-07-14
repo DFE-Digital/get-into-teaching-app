@@ -10,7 +10,14 @@ related_content:
     Training and support for early career teachers : "/support-for-early-career-teachers"
 promo_content:
     - content/train-to-be-a-teacher/promos/events-promo-itt
+inset_text:
+  still-time-to-apply:
+    text: |-
+      <p>There's still time to apply and start teacher training this September.</p>
+      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
+
+$still-time-to-apply$
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
 

@@ -16,9 +16,16 @@ tags:
   - becoming a teacher
   - teacher training
   - personal statements
+inset_text:
+  still-time-to-apply:
+    text: |-
+      <p>There's still time to apply and start teacher training this September.</p>
+      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
 
 $rocket$
+
+$still-time-to-apply$
 
 It’s important to make an excellent first impression if you want to secure that interview, and time spent on a well-thought-out application is never wasted.
 
