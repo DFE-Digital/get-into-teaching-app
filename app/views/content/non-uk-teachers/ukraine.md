@@ -74,7 +74,7 @@ Teacher training providers will ask for:
 * evidence that applicants for teacher training have a bachelor’s degree from a university (non-UK or in the UK)
 * a criminal record check
 
-You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mvs.gov.ua/app/landing) for a criminal record check, which will be emailed to you. You can then contact the [Ukrainian Embassy in the UK](https://vytiah.mvs.gov.ua/app/landing) for a translation of the criminal record check and a letter confirming its validity.
+You can apply to the [Ministry of Internal Affairs of Ukraine](https://vytiah.mvs.gov.ua/app/landing) for a criminal record check, which will be emailed to you. You can then contact the [Ukrainian Embassy in the UK](https://uk.mfa.gov.ua/en) for a translation of the criminal record check and a letter confirming its validity.
 
 We understand it might not be possible to provide all this evidence. However, it’s helpful to show schools and training providers you have made every effort to do so. They can then reach a decision about your suitability, looking at the evidence available. 
 
