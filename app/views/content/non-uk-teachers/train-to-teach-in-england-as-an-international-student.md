@@ -182,7 +182,7 @@ Your [teacher training adviser](#get-support-and-advice) can help with:
 
 * your choice of subject
 * writing a personal statement
-* ways to research the [English education system](#learn-more-about-life-as-a-teacher-and-the-English-education-system)
+* ways to research the [English education system](#learn-more-about-life-as-a-teacher-and-the-english-education-system)
 * preparing for your interview
 
 #### Ways to train
