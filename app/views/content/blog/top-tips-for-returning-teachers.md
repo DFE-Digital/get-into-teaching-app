@@ -25,7 +25,7 @@ It’s also a good idea to read up on the latest [teachers’ standards](https:/
 
 ## Get free one-to-one support
 
-If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and want to return to teach chemistry, computing, maths, modern foreign languages or physics, you're eligible for a [Return to Teaching Adviser](https://adviser-getintoteaching.education.gov.uk/) (RTTA). You can get personalised guidance and support from an experienced teaching professional.
+If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and want to return to teach at a secondary school in England, you're eligible for a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/) (RTTA). You can get personalised guidance and support from an experienced teaching professional.
 
 From helping you to brush up on your subject knowledge to preparing for interviews, our advisers will be with you every step of the way and help you get back in the classroom.
 
@@ -54,7 +54,7 @@ If you’re unsure about taking on a teaching role at this time, consider applyi
 
 Check to see if there are any upcoming [online events](/events) for returning teachers. Look up podcasts and articles on education to help familiarise yourself with current issues.
 
-> I wouldn’t have got the job without Zaid [RTTA]! He has been both honest, factual and realistic.”
+> I wouldn’t have got the job without Zaid [RTTA]! He has been both honest, factual and realistic.
 >
 > _Karen Watson, returning maths teacher_
 
@@ -64,4 +64,4 @@ Once you have made the decision to return to teaching what’s the best way of f
 
 Remember though that teacher recruitment goes in cycles, with most teaching roles being advertised from January onwards. Setting up a job alert will mean you don’t miss out on your perfect role.
 
-[Find out more about returning to teaching](/returning-to-teaching). If you have qualified teacher status (QTS) and want to return to teach chemistry, computing, maths, modern foreign languages or physics, [get a return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/).
+[Find out more about returning to teaching](/returning-to-teaching). If you have qualified teacher status (QTS) and want to return to teach at a secondary school in England, [get a return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/).
