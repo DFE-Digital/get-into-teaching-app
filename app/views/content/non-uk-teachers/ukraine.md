@@ -129,7 +129,7 @@ If you are resident in the UK under:
 From 1 August 2022, you will:
 
 * have the right to apply to train to teach
-* have the right to apply for a [student loan, bursary, scholarship](/funding-your-training) or [advanced learner loan](https://www.gov.uk/advanced-learner-loan)
+* have the right to apply for a [student loan, bursary, scholarship](/funding-and-support) or [advanced learner loan](https://www.gov.uk/advanced-learner-loan)
 * pay the same training fees as UK applicants (up to £9,250 for a full-time course)
 
 If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#check-the-status-of-your-visa) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
@@ -186,7 +186,7 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 [Find out more about training to be a teacher](/train-to-be-a-teacher) in England. 
 
-Find out what financial support is available to [fund your training](/funding-your-training) if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
+Find out what financial support is available to [fund your training](/funding-and-support) if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
 
 ## Tips for schools and training providers
 
