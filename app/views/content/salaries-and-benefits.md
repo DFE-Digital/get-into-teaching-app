@@ -54,6 +54,8 @@ keywords:
 
 For teaching the next generation of citizens you’re entitled to a competitive salary, generous holidays, and a substantial pension.
 
+Figures are for the 2021/22 academic year.
+
 ## Teaching salaries
 
 As a new teacher, your salary will be between £25,714 and £32,157, depending on where you teach.
