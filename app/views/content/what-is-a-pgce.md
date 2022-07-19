@@ -32,7 +32,7 @@ You need qualified teacher status (QTS) to teach in most primary, secondary and 
 
 [Find out more about qualified teacher status (QTS)](/what-is-qts).
 
-Many teacher training courses also offer you a postgraduate qualification such as a PGCE, but you do not need a PGCE to teach.
+Many teacher training courses also offer you a postgraduate qualification such as a PGCE alongside QTS, but you do not need a PGCE to teach.
 
 ## Teacher training courses
 
@@ -42,13 +42,13 @@ You can do a teacher training course that leads to:
 * just PGCE
 * QTS with PGCE
 
-Getting QTS without PGCE means that you’re qualified to teach in most schools in England. It may also mean that your course fees are lower, you could submit fewer assignments, and the course could be shorter.
+Getting QTS without PGCE means that you’re qualified to teach in most schools in England. It may also mean that your course fees are lower, you submit fewer assignments, and the course could be shorter.
 
 Getting PGCE without QTS means you will not be qualified to teach in most primary, secondary and special schools in England.
 
 ## Benefits of having a PGCE
 
-A PGCE is beneficial if you want to teach in other countries because it’s an internationally recognised academic qualification.
+A PGCE is beneficial if you want to teach in other countries because it’s an internationally recognised academic qualification. However, you should always check the local requirements in the country you’re looking to teach in.
 
 It can also award up to 60 credits at Master’s level which you could use towards a full Master’s qualification, which is usually 180 credits. You may want to do a Master’s in education, for example, for your professional development and to gain additional expertise.
 
