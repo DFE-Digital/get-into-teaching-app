@@ -5,7 +5,6 @@ author: David Payling
 images:
   david_payling:
     path: "media/images/content/blog/thumbnails/david-payling.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/david-payling.jpg"
 description: |-
   David Payling talks about his journey from the army and into teacher training.
 keywords:
