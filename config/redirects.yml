@@ -373,3 +373,6 @@ redirects:
   "/content/stories(*story)": "/blog"
   "/my-story-into-teaching(*story)": "/blog"
   "/event-categories/(*category)": "/events"
+  
+  # Old urgent call for qualified teachers page
+  "/urgent-call-for-qualified-teachers": "/returning-to-teaching"
