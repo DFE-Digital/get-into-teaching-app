@@ -2,9 +2,6 @@
 title: From the army to teacher training
 date: "2022-07-18"
 author: David Payling
-images:
-  david_payling:
-    path: "media/images/content/blog/thumbnails/david-payling.jpg"
 description: |-
   David Payling talks about his journey from the army and into teacher training.
 keywords:
