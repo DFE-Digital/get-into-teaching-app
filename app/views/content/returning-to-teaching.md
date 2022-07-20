@@ -159,4 +159,4 @@ If you’re returning to teaching, you might want to re-familiarise yourself wit
   professional body for teachers
 * join a [teaching union](https://www.tes.com/jobs/careers-advice/pay-and-conditions/which-teachers-union)
 * ensure your [pension](https://www.teacherspensions.co.uk/members/working-life/deferring-your-pension/return-to-pensionable-service.aspx), one of your key benefits, is up to date
-* return to the classroom by [registering with a supply teaching agency](/urgent-call-for-qualified-teachers)
+
