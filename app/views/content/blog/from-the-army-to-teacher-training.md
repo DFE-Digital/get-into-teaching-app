@@ -15,7 +15,6 @@ keywords:
   - career changer
 tags:
   - career change to teaching
-  - veterans
 ---
 
 I've served 23 years in the British Army. My most recent role has been the lead exercise rehabilitation instructor within the lower limbs team at the Defence Medical Rehabilitation Centre.
