@@ -34,4 +34,4 @@ I was invited to all 3 interviews and subsequently gained a place at Sheffield H
 
 I can’t speak highly enough of Elaine and the assistance given by the Get Into Teaching service. I'm looking forward to starting my primary PGCE with PE specialisation at Sheffield Hallam University.
 
-If you're interested in changing your career like David, [find out more about a career change into teaching](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/if-you-want-to-change-career).
+If you're interested in changing your career like David, [find out more about a career change into teaching](/train-to-be-a-teacher/if-you-want-to-change-career).
