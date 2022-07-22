@@ -80,7 +80,7 @@ QTS will allow you to teach in all schools in England. Some courses combine QTS 
 
 You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
-If you don’t want to come to England to study you can apply to train for international qualified teacher status (iQTS), which meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and leads to the automatic award of QTS.
+If you don’t want to come to England to study you can apply to train for international qualified teacher status (iQTS). This meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and, if successfully completed, leads to the automatic award of QTS.
 
 For teachers who qualified outside the UK, as well as those with teaching experience, [other routes to qualified teacher status (QTS)](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) are also open.
 
@@ -130,7 +130,9 @@ You will also need to:
 
 For help, call us on +44 800 389 2500. We can check your degree and other qualifications meet the standards set for English teacher training. 
 
-When you make your application for teacher training, some teacher training providers will want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free statement of comparability, once you’ve submitted your application, if your provider asks for this.
+When you make your application for teacher training, some teacher training providers will want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from the UK European Network of Information Centres (UK ENIC). 
+
+A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree. We can help you with a free statement of comparability, once you’ve submitted your application, if your provider asks for this.
 
 #### English language, maths and science proficiency
 
@@ -170,9 +172,23 @@ Any financial support, for example a reduction in your fees to the rate paid by 
 
 ### 4. Search and apply for teacher training courses
 
-You can [find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts).
+Use [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) to search for courses in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you have chosen your course, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for teacher training</a>.
 
-You can search by location, teaching subject and age group. You can also search for courses which pay a salary, and courses where student or skilled worker visa sponsorship is available.
+#### First apply for your training place, then apply for your visa
+
+If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
+
+On [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses), you can search for courses where student or skilled worker visa sponsorship is available. You can also search by location, teaching subject and age group, and for courses which pay a salary.
+
+Due to rules about immigration, not all providers can accept international applicants – we suggest you contact them before you apply to check.
+
+<div class="inset">
+  <h4>Already living in the UK?</h4>
+
+  <p>
+If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.
+  </p>
+</div>
 
 #### Choosing a subject to teach and preparing to apply
 
@@ -191,22 +207,6 @@ You can train in a school or in a university setting, and study full-time (over 
 
 You may also wish to read [detailed guidance about fee-paying and salaried courses and qualified teacher status](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#train).
 
-
-#### First apply for your training place, then apply for your visa
-
-If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
-
-Due to rules about immigration, not all providers can accept international applicants – contact them before you apply to check.
-
-<div class="inset">
-  <h4>Already living in the UK?</h4>
-
-  <p>
-If you have settled or pre-settled status under the <a href="https://www.gov.uk/settled-status-eu-citizens-families">EU Settlement Scheme</a>, or <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>, you can apply to any English teacher training provider.
-  </p>
-</div>
-
-<a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">You can find postgraduate teacher training</a> and when you have chosen your course, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for teacher training</a>.
 
 ### 5. Apply for your visa
 
