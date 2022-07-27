@@ -1,5 +1,3 @@
-require "acronyms"
-
 module TemplateHandlers
   class Markdown
     include ActionView::Helpers::OutputSafetyHelper
@@ -18,7 +16,7 @@ module TemplateHandlers
 
       def global_front_matter
         @global_front_matter ||= if GLOBAL_FRONT_MATTER.exist?
-                                   YAML.load_file GLOBAL_FRONT_MATTER
+                                   YAML.load_file(GLOBAL_FRONT_MATTER) || {}
                                  else
                                    {}
                                  end
@@ -49,12 +47,8 @@ module TemplateHandlers
       Rinku.auto_link content
     end
 
-    def add_acronyms(content)
-      Acronyms.new(content, front_matter["acronyms"]).render
-    end
-
     def render
-      add_acronyms autolink_html render_markdown
+      autolink_html render_markdown
     end
 
     # rubocop:disable Style/PerlBackrefs
