@@ -161,6 +161,8 @@ There are [specific salary requirements for a skilled worker visa](https://www.g
 [Read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
 ## Contact
-The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.
 
-However, for help with the information on this page, you can email us at teach.inengland@education.gov.uk.
+The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. For help with your application, see [Talk to an adviser](#talk-to-an-adviser).
+
+However, if you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
+
