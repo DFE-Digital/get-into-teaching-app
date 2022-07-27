@@ -16,7 +16,7 @@ describe MailingList::Wizard do
       "accepted_policy_id" => "789",
     } }
   end
-  let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
+  let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
 
   describe ".steps" do
     subject { described_class.steps }
@@ -24,7 +24,7 @@ describe MailingList::Wizard do
     it do
       is_expected.to eql [
         MailingList::Steps::Name,
-        ::DFEWizard::Steps::Authenticate,
+        ::GITWizard::Steps::Authenticate,
         MailingList::Steps::AlreadySubscribed,
         MailingList::Steps::DegreeStatus,
         MailingList::Steps::TeacherTraining,

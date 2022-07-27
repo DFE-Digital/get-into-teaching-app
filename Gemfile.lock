@@ -1,12 +1,4 @@
 GIT
-  remote: https://github.com/DFE-Digital/dfe_wizard.git
-  revision: 08a2dda2de41b67ea28dfa3513f59245ea6dcc6a
-  specs:
-    dfe_wizard (1.0.1)
-      activemodel (>= 6.0.3.4)
-      activesupport (>= 6.0.3.4)
-
-GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
   revision: cf858eb830316acbb9a7cb1f2991a7eb89f17f36
   specs:
@@ -20,6 +12,14 @@ GIT
       faraday_middleware
       faraday_middleware-circuit_breaker
       get_into_teaching_api_client
+
+GIT
+  remote: https://github.com/DFE-Digital/get-into-teaching-wizard.git
+  revision: 3d35745683526ee015f1a1de06cade6ab76119bb
+  specs:
+    git_wizard (2.0.0)
+      activemodel (>= 6.0.3.4)
+      activesupport (>= 6.0.3.4)
 
 GIT
   remote: https://github.com/bfoz/geometry.git
@@ -257,7 +257,7 @@ GEM
     html_tokenizer (0.0.7)
     htmlentities (4.3.4)
     httpclient (2.8.3)
-    i18n (1.10.0)
+    i18n (1.12.0)
       concurrent-ruby (~> 1.0)
     jwt (2.2.3)
     kaminari (1.2.2)
@@ -497,7 +497,7 @@ GEM
     timeout (0.2.0)
     tomlrb (2.0.1)
     trailblazer-option (0.1.1)
-    tzinfo (2.0.4)
+    tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
     unicode-display_width (2.2.0)
@@ -542,7 +542,6 @@ DEPENDENCIES
   canonical-rails (>= 0.2.14)
   capybara (~> 3.37)
   delegate (>= 0.2.0)
-  dfe_wizard!
   dotenv-rails (>= 2.7.6)
   erb_lint (>= 0.1.1)
   factory_bot_rails (>= 6.2.0)
@@ -554,6 +553,7 @@ DEPENDENCIES
   front_matter_parser!
   geometry!
   get_into_teaching_api_client_faraday!
+  git_wizard!
   google-api-client (>= 0.53.0)
   govuk_design_system_formbuilder (>= 2.8.0)
   hashids

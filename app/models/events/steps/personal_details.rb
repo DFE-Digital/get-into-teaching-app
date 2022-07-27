@@ -1,7 +1,7 @@
 module Events
   module Steps
-    class PersonalDetails < ::DFEWizard::Step
-      include ::DFEWizard::IssueVerificationCode
+    class PersonalDetails < ::GITWizard::Step
+      include ::GITWizard::IssueVerificationCode
 
       attribute :email
       attribute :first_name

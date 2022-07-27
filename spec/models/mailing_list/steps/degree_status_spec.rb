@@ -37,7 +37,7 @@ describe MailingList::Steps::DegreeStatus do
     it { is_expected.not_to be_magic_link_token_used }
 
     context "when magic link token was used" do
-      before { wizardstore["auth_method"] = DFEWizard::Base::Auth::MAGIC_LINK_TOKEN }
+      before { wizardstore["auth_method"] = GITWizard::Base::Auth::MAGIC_LINK_TOKEN }
 
       it { is_expected.to be_magic_link_token_used }
     end

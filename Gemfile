@@ -90,7 +90,7 @@ gem "actionpack-cloudfront", ">= 1.2.0"
 # HTML-aware ERB parsing
 gem "better_html", ">= 1.0.16"
 
-gem "dfe_wizard", github: "DFE-Digital/dfe_wizard"
+gem "git_wizard", github: "DFE-Digital/get-into-teaching-wizard"
 
 gem "rack-host-redirect"
 

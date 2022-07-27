@@ -1,7 +1,7 @@
 module MailingList
   module Steps
-    class Name < ::DFEWizard::Step
-      include ::DFEWizard::IssueVerificationCode
+    class Name < ::GITWizard::Step
+      include ::GITWizard::IssueVerificationCode
 
       attribute :first_name
       attribute :last_name

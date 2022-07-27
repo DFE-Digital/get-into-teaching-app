@@ -14,7 +14,7 @@ describe Events::Wizard do
       "is_walk_in" => true,
     } }
   end
-  let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
+  let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
 
   describe ".steps" do
     subject { described_class.steps }
@@ -22,7 +22,7 @@ describe Events::Wizard do
     it do
       is_expected.to eql [
         Events::Steps::PersonalDetails,
-        ::DFEWizard::Steps::Authenticate,
+        ::GITWizard::Steps::Authenticate,
         Events::Steps::ContactDetails,
         Events::Steps::FurtherDetails,
         Events::Steps::PersonalisedUpdates,
@@ -117,7 +117,7 @@ describe Events::Wizard do
       before { wizardstore[:is_walk_in] = false }
 
       it "raises an exception" do
-        expect { subject.exchange_unverified_request(request) }.to raise_error(DFEWizard::ContinueUnverifiedNotSupportedError)
+        expect { subject.exchange_unverified_request(request) }.to raise_error(GITWizard::ContinueUnverifiedNotSupportedError)
       end
     end
 

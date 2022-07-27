@@ -1,6 +1,6 @@
 module Events
   module Steps
-    class PersonalisedUpdates < ::DFEWizard::Step
+    class PersonalisedUpdates < ::GITWizard::Step
       attribute :degree_status_id, :integer
       attribute :consideration_journey_stage_id, :integer
       attribute :address_postcode

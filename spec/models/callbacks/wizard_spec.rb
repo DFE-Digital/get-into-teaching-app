@@ -14,7 +14,7 @@ describe Callbacks::Wizard do
       },
     }
   end
-  let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
+  let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
 
   describe ".steps" do
     subject { described_class.steps }
@@ -23,7 +23,7 @@ describe Callbacks::Wizard do
       is_expected.to eql [
         Callbacks::Steps::PersonalDetails,
         Callbacks::Steps::MatchbackFailed,
-        ::DFEWizard::Steps::Authenticate,
+        ::GITWizard::Steps::Authenticate,
         Callbacks::Steps::Callback,
         Callbacks::Steps::TalkingPoints,
         Callbacks::Steps::PrivacyPolicy,
