@@ -17,9 +17,6 @@ redirects:
   "/international-candidates": "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
   "/salaries-and-benefits-simplified": "/salaries-and-benefits"
 
-  # Old GSE Page
-  "/get-school-experience/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
-
   # Campaign landing pages
   "/helping-you-become-a-teacher": "/three-things-to-help-you-get-into-teaching"
   "/start-teacher-training-this-september": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
@@ -38,10 +35,19 @@ redirects:
   # Slides
   "/slides": "/presentations"
 
+  # School Experience
+  "/get-school-experience/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/getting-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/arranging-school-experience-independently": "/train-to-be-a-teacher/get-school-experience"
+  "/node/2313": "/train-to-be-a-teacher/get-school-experience"
+  "/school-experience/paid-internships": "/train-to-be-a-teacher/get-school-experience"
+  "/school-experience/arranging-school-experience-independently": "/train-to-be-a-teacher/get-school-experience"
+  "/school-experience/making-your-mind-up-with-school-experience": "/train-to-be-a-teacher/get-school-experience"
+  "/school-experience/what-happens-on-a-school-experience-day": "/train-to-be-a-teacher/get-school-experience"
+  "/school-experience": "/train-to-be-a-teacher/get-school-experience"
+
   # Legacy site path redirects
-  "/school-experience/paid-internships": "/steps-to-become-a-teacher"
-  "/school-experience/arranging-school-experience-independently": "/steps-to-become-a-teacher"
-  "/school-experience": "/steps-to-become-a-teacher"
   "/get-help-and-support/teacher-training-advisers": "/steps-to-become-a-teacher"
   "/post-teacher-training-application/preparing-for-the-professional-skills-tests": "/train-to-be-a-teacher"
   "/eligibility-for-teacher-training": "/steps-to-become-a-teacher"
@@ -146,7 +152,6 @@ redirects:
   "/funding-and-salary/overview/scholarships/computing-scholarships": "/funding-and-support"
   "/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training/funding-for-undergraduate-teacher-training/student-loans": "/train-to-be-a-teacher"
   "/funding-and-salary/overview/funding-by-subject/funding-for-training-to-teach-chemistry": "/funding-and-support"
-  "/school-experience/making-your-mind-up-with-school-experience": "/steps-to-become-a-teacher"
   "/funding-and-salary/overview/funding-by-subject/funding-for-training-to-teach-design-and-technology-dt": "/funding-and-support"
   "/the-way-you-apply-for-teacher-training-is-changing": "/train-to-be-a-teacher"
   "/we-have-changed-our-website": "/"
@@ -175,7 +180,6 @@ redirects:
   "/explore-my-options/teacher-training-routes": "/train-to-be-a-teacher"
   "/explore-my-options/teacher-training-routes/specialist-training-options": "/train-to-be-a-teacher"
   "/teacher-training-scholar-stories": "/blog"
-  "/school-experience/what-happens-on-a-school-experience-day": "/a-day-in-the-life-of-a-teacher"
   "/three-things-to-help-you-get-into-teachingFacebook": "/three-things-to-help-you-get-into-teaching"
   "/how-to-apply/prepare/eu-nationals": "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
   "/passing-the-skills-tests/": "/steps-to-become-a-teacher"
@@ -192,7 +196,6 @@ redirects:
   "/five-things-every-prospective-teacher-needs-to-know": "/three-things-to-help-you-get-into-teaching"
   "/funding-and-salary/overview/scholarships/physics-scholarships": "/funding-and-support"
   "/explore-my-options/return-to-teaching/return-to-teaching-in-england-from-overseas": "/non-uk-teachers/return-to-england-after-teaching-overseas"
-  "/getting-school-experience": "/steps-to-become-a-teacher"
   "/submitting-your-application": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
   "/competitive-salary-and-great-benefits": "/salaries-and-benefits"
   "/explore-my-options/further-education-teacher-training/bursaries": "/funding-and-support"
@@ -217,7 +220,6 @@ redirects:
   "/lp(*category)": "/"
   "/frequently-asked-questions": "/"
   "/premier-plus-adviser(*tip)": "/three-things-to-help-you-get-into-teaching"
-  "/arranging-school-experience-independently": "/steps-to-become-a-teacher"
   "/explore-my-options/training/scitt": "/train-to-be-a-teacher"
   "/preparing-for-your-interview": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
   "/explore-my-options/secondary/teach-computing": "/train-to-be-a-teacher"
@@ -310,7 +312,6 @@ redirects:
   "/node/2278": "/"
   "/node/2285": "/train-to-be-a-teacher"
   "/node/2286": "/steps-to-become-a-teacher"
-  "/node/2313": "/"
   "/node/2325": "/funding-and-support"
   "/node/2334": "/funding-and-support"
   "/node/2339": "/"
@@ -357,7 +358,6 @@ redirects:
 
   # New nav pages
   "/ways-to-train": "/train-to-be-a-teacher"
-  "/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
   "/improve-your-subject-knowledge": "/train-to-be-a-teacher/subject-knowledge-enhancement"
   "/train-to-teach-in-england-as-an-international-student": "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
   "/international-qualified-teacher-status": "/non-uk-teachers/international-qualified-teacher-status"
@@ -373,6 +373,6 @@ redirects:
   "/content/stories(*story)": "/blog"
   "/my-story-into-teaching(*story)": "/blog"
   "/event-categories/(*category)": "/events"
-  
+
   # Old urgent call for qualified teachers page
   "/urgent-call-for-qualified-teachers": "/returning-to-teaching"
