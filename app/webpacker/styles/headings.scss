@@ -52,6 +52,10 @@
   font-size: 0.6em;
 }
 
+.heading-xxxl {
+  @include font-size("xxxlarge");
+}
+
 .heading-xxl {
   @include font-size("xxlarge");
 
@@ -138,6 +142,10 @@
 
 .heading--highlight-purple {
   @include highlight-text($purple, $black);
+}
+
+.heading--highlight-blue {
+  @include highlight-text($blue, $black);
 }
 
 h1 {
