@@ -409,6 +409,54 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_title(mailing_list_page_title)
   end
 
+  scenario "Full journey as a new candidate using a campaign landing page" do
+    allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
+      receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
+
+    visit mailing_list_campaign_path("name", "overcoming-hurdles")
+
+    expect(page).to have_title(mailing_list_page_title)
+
+    expect(page).to have_text "Overcoming hurdles"
+    expect(page).to have_text "Get personalised guidance to your inbox"
+    click_on "Next step"
+    expect(page).to have_text "Overcoming hurdles."
+    expect(page).to have_text "Enter your full email address"
+    fill_in_name_step
+    click_on "Next step"
+
+    expect(page).not_to have_text "Overcoming hurdles"
+
+    expect(page).to have_text "Do you have a degree?"
+    choose "Not yet, I'm a first year student"
+    click_on "Next step"
+
+    expect(page).to have_text "How close are you to applying"
+    choose "I'm not sure and finding out more"
+    click_on "Next step"
+
+    expect(page).to have_text "Which subject do you want to teach"
+    select "Maths"
+    click_on "Next step"
+
+    expect(page).to have_text "If you give us your postcode"
+    fill_in "Your postcode (optional)", with: "TE57 1NG"
+    click_on "Next step"
+
+    expect(page).to have_text "Accept privacy policy"
+    click_on "Complete sign up"
+
+    expect(page).to have_text "Accept privacy policy"
+    expect(page).to have_text "There is a problem"
+    expect(page).to have_text "Accept the privacy policy to continue"
+    check "Yes"
+    click_on "Complete sign up"
+
+    expect(page).to have_title("You've signed up | Get Into Teaching")
+    expect(page).to have_text "You've signed up"
+    expect(page).to have_text("You'll receive a welcome email shortly")
+  end
+
   def fill_in_name_step(
     first_name: "Test",
     last_name: "User",

@@ -14,6 +14,7 @@ describe MailingList::StepsController, type: :request do
 
   let(:model) { MailingList::Steps::Name }
   let(:step_path) { mailing_list_step_path model.key }
+  let(:campaign) { "overcoming-hurdles" }
 
   describe "#index" do
     subject { response }
@@ -42,6 +43,19 @@ describe MailingList::StepsController, type: :request do
       let(:model) { MailingList::Steps::DegreeStatus }
 
       it { is_expected.not_to be_indexed }
+    end
+
+    context "when a campaign landing page" do
+      let(:step_path) { mailing_list_campaign_path model.key, campaign }
+
+      it { is_expected.not_to be_indexed }
+      it { is_expected.to have_http_status(:success) }
+
+      context "with an unknown campaign" do
+        let(:campaign) { "unknown" }
+
+        it { is_expected.to have_http_status(:not_found) }
+      end
     end
   end
 
@@ -148,6 +162,23 @@ describe MailingList::StepsController, type: :request do
 
         it { is_expected.to redirect_to mailing_list_step_path steps.first.key }
         it { is_expected.to be_indexed }
+      end
+    end
+
+    context "when a campaign landing page" do
+      let(:step_path) { mailing_list_campaign_path(model.key, campaign) }
+
+      context "with valid data" do
+        let(:details_params) { attributes_for(:mailing_list_name) }
+
+        it { is_expected.to redirect_to mailing_list_campaign_path("authenticate", campaign) }
+      end
+
+      context "with invalid data" do
+        let(:details_params) { { "first_name" => "test" } }
+
+        it { is_expected.to have_http_status :unprocessable_entity }
+        it { is_expected.not_to be_indexed }
       end
     end
   end

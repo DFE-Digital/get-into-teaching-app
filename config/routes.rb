@@ -117,6 +117,11 @@ Rails.application.routes.draw do
       collection do
         get :completed
         get :resend_verification
+        get "completed/campaigns/:campaign_id", action: :completed
+      end
+
+      member do
+        resources :campaigns, only: %i[show update], controller: "steps", param: :campaign_id
       end
     end
   end

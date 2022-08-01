@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en" class="govuk-template">
+  <% content_for :head do %>
+    <%= csrf_meta_tags %>
+  <% end %>
+
+  <%= render "sections/head" %>
+  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "video link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
+
+    <%= render HeaderComponent.new(breadcrumbs: false) %>
+
+    <main id="main-content" class="main-body" role="main">
+      <%= render Content::CampaignHeroComponent.new(@front_matter) %>
+
+      <section class="feature registration container">
+        <%= yield %>
+      </section>
+    </main>
+
+    <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
+    <%= javascript_pack_tag 'govuk/frontend', 'data-turbolinks-track': 'reload', async: true %>
+  <% end %>
+</html>
