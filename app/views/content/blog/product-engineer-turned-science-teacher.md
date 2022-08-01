@@ -26,7 +26,7 @@ I was very good at maths at school but loved physics, so a career in engineering
 
 I thoroughly enjoyed my first role in industry as a production engineer, but a promotion took me away from the practical engineering and I no longer enjoyed what I was doing.
 
-I tried many things until I realised that working with young people and helping them develop skills truly inspired me. So I applied for a PGCE at Leicester University.
+I tried many things until I realised that working with young people and helping them develop skills truly inspired me. So I applied for a PGCE at a University.
 
 As soon as I set foot in the classroom, I knew it was for me. There were nerves and I didn’t enjoy presenting in assemblies to start with. But, in the classroom with the students, I enjoyed the challenge.
 
@@ -38,7 +38,7 @@ As educators, we have a duty to help students achieve this. They'll understand t
 
 Highlighting that every industry is heavily dependent on engineering will inspire them to study hard in the relevant areas of the curriculum, allowing them to become future leaders in engineering and technology.
 
-## Would you encourage others to change careers to teaching career? 
+## Would you encourage others to change careers to teaching? 
 
 I would thoroughly recommend teaching to other engineers. The intellectual challenge is very high, not so much in understanding the content, but how to impart your knowledge to others who may not be as keen to learn as previous colleagues.
 
@@ -56,6 +56,6 @@ Having enough experience to answer the perennial question, “Why do we need to 
 
 I believe every experience prior to going into teaching adds to the skills that are essential for the role. Engineering skills are particularly suited as there will always be new problems to overcome and engineers are trained to find solutions to challenging problems.
 
-I have found the skills I learnt in engineering have stood me in good stead for a teaching career, I have never regretted my decision to go into this profession.
+I have found the skills I learnt in engineering have stood me in good stead for a teaching career. I have never regretted my decision to go into this profession.
 
 If you're interested in changing careers like Chris, find out how you can [teach physics as an engineer](/subjects/engineers-teach-physics).

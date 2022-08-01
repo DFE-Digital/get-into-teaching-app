@@ -7,7 +7,7 @@ images:
     thumbnail_path: "media/images/content/blog/thumbnails/david-payling.jpg"
 author: David Payling
 description: |-
-  David Payling talks about his journey from the army and into teacher training.
+  David Payling talks about his journey from the army and into teacher training using the help of a teacher training adviser.
 keywords:
   - teacher training advisers
   - becoming a teacher
@@ -19,6 +19,7 @@ keywords:
   - career changer
 tags:
   - career change to teaching
+  - veterans
 ---
 
 I've served 23 years in the British Army. My most recent role has been the lead exercise rehabilitation instructor within the lower limbs team at the Defence Medical Rehabilitation Centre.
@@ -29,7 +30,7 @@ Contact with Elaine was frequent, and she was able to fit calls in at short noti
 
 She offered advice on [getting classroom experience](/train-to-be-a-teacher/get-school-experience) and gave me recommendations for contacting schools and training providers. The area of support which I felt I benefitted most from was with writing the personal statement and preparation for the interviews with practice questions.
 
-I was invited to all 3 interviews and subsequently gained a place at Sheffield Hallam. I’m lucky as my wife is a teacher and she also offered advice relating to the interview process.
+I was invited to all 3 interviews and subsequently gained a place. I’m lucky as my wife is a teacher and she also offered advice relating to the interview process.
 
 I can’t speak highly enough of Elaine and the assistance given by the Get Into Teaching service. I'm looking forward to starting my primary PGCE with PE specialisation at Sheffield Hallam University.
 
