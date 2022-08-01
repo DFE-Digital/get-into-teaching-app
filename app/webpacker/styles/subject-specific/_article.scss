@@ -57,6 +57,10 @@ article {
         }
       }
     }
+
+    &:last-child {
+      margin-bottom: 4em;
+    }
   }
 
   > section + section {

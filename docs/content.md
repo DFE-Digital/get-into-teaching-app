@@ -16,6 +16,7 @@ This documentation aims to be a reference for content editors that want to make 
 		* [Sidebar](#sidebar)
   * [Accessibility](#accessibility)
     * [iframe](#iframe)
+  * [Inset text](#inset-text)
 3. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
@@ -24,13 +25,13 @@ This documentation aims to be a reference for content editors that want to make 
 
 When you want to edit content on the website the first step is to find out where that content resides in the [repository](https://github.com/DFE-Digital/get-into-teaching-app). 
 
-The majority of web pages on the site are within the [/app/views/content](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content) directory; this reflects the top-level pages of the website (including the home page). If, for example, you wanted to edit the [career changers' stories](https://getintoteaching.education.gov.uk/my-story-into-teaching/career-changers) content you would edit the file [/app/views/content/my-story-into-teaching/career-changers.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/my-story-into-teaching/career-changers.md). The structure here mimics the URL of the pages (the home page is a special case):
+The majority of web pages on the site are within the [/app/views/content](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content) directory; this reflects the top-level pages of the website (including the home page). If, for example, you wanted to edit [the 'how to apply for teacher training' blog post](https://getintoteaching.education.gov.uk/blog) content you would edit the file [/app/views/content/blog/how-to-apply-for-teacher-training.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/blog/how-to-apply-for-teacher-training.md). The structure here mimics the URL of the pages (the home page is a special case):
 
-| URL      							| Content File 												|
-| --------------------------------- | --------------------------------------------------------- |
-| /      							| /app/views/content/home.md       							|
-| /funding-your-training   			| /app/views/content/funding-your-training.md        		|
-| /my-story-into-teaching/returners | /app/views/content/my-story-into-teaching/returners.md	|
+| URL                                     | Content File                                                 |
+| ---------------------------------       | ---------------------------------------------------------    |
+| /                                       | /app/views/content/home.md                                   |
+| /funding-and-support                    | /app/views/content/funding-and-support.md                  |
+| /blog/how-to-apply-for-teacher-training | /app/views/content/blog/how-to-apply-for-teacher-training.md |
 
 Some web pages are more structurally complex than others and are made up of multiple Markdown files that get pulled into a single page. The home page is a good example of this; in addition to the main content page in [/app/views/content/home.md](https://github.com/DFE-Digital/get-into-teaching-app/blob/master/app/views/content/home.md) there are multiple other content files that reside under [/app/views/content/home/*.md](https://github.com/DFE-Digital/get-into-teaching-app/tree/master/app/views/content/home). If you can't find the content you wish to edit in the main file for that page, it's worth checking to see if it has a corresponding subdirectory with additional content files in.
 
@@ -234,6 +235,23 @@ When adding an iFrame elemet as part of Markdown content or a HTML page we shoul
 ></iframe>
 ```
 
+### Inset text
+
+If you need to call-out something important in an article and differentiate it from the surrounding text, you can use the inset text component. Specify the component in the frontmatter and then include it anywhere in the page:
+
+```yaml
+---
+inset_text:
+  important-content:
+    title: Optional title
+    text: Text that can contain <a href="#">links</a>
+---
+
+# My page
+
+$important-content$
+```
+
 ## Creating a Blog Post
 
 Blog posts should be written in Markdown format using the following template as a guide:
@@ -296,3 +314,7 @@ To add a new generic variant, copy and paste an existing one, give it an appropr
 ```yaml
 closing_paragraph: my-new-closing-paragraph
 ```
+
+### Tags
+
+We have a whitelist of available blog tags in `/config/tags.yml` - if you try to add a tag not contained within this list you will receive an error message on the blog post page and our test suite will fail (preventing you from deploying your blog post). If you need a tag not already in the whitelist, add it to the `tags.yml` before referencing it in your blog post.

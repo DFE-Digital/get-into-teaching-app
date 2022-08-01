@@ -1,0 +1,18 @@
+<%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
+  <% promo.left_section(
+      heading: "Teacher training events") do %>
+  <% end %>
+
+  <% promo.right_section(
+        caption: "Events near you",
+        heading: "Events are a great place to ask questions") do %>
+      <p>Events are one of the best ways to meet teacher training providers and find out more about different courses.</p>
+
+      <%= form_for TeachingEvents::Search.new, method: :post, url: events_path do |f| %>
+        <%= f.hidden_field :distance, value: 10 %>
+        <%= f.label :postcode, "Enter postcode" %>
+        <%= f.text_field :postcode, autocomplete: "postal-code" %>
+        <%= tag.button("Search", class: "button", id: "event-search") %>
+      <% end %>
+  <% end %>
+<% end %>

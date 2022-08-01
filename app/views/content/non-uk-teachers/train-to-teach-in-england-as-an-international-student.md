@@ -3,11 +3,11 @@ title: "Train to teach in England as an international student"
 description: |-
   Find out how to train to teach in England as an international student. Get help and guidance on your qualifications, funding and visa.
 related_content:
-    Get support training to teach if you're disabled: "/get-support-training-to-teach-if-you-are-disabled"
+    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.05
 navigation_title: Train to teach in England as an international student
 navigation_description: Find out how to train to teach in England as an international student and get English qualified teacher status (QTS).
@@ -72,7 +72,7 @@ When you have successfully completed your training, you will be awarded [qualifi
 
 QTS will allow you to teach in all schools in England. Some courses combine QTS with a [postgraduate certificate in education (PGCE)](/what-is-a-pgce) or a [postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional, you can get QTS without a PGCE or PGDE.
 
-[Read teachers' stories about the rewards of training to teach in England](/my-story-into-teaching).
+[Read teachers' stories about the rewards of training to teach in England](/blog).
 
 ## Other ways to train
 
@@ -104,7 +104,7 @@ We can help you make an application for teacher training in England. There are a
 To teach children aged 11 to 18 in secondary school, you’ll need:
 
 - a bachelor’s degree (this can be from a university outside the UK)
-- to meet a standard in English and maths equivalent to a grade 4 GCSE
+- to meet a standard in English and maths equivalent to a grade 4 GCSE (General Certificate of Secondary Education)
 
 To teach children aged 3 to 11 in primary school, you will also need to meet a standard in physics, chemistry or biology equivalent to a grade 4 GCSE.
 
@@ -124,15 +124,15 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 To get advice about training to teach, you can:
 
-- call 0800 389 2500 for free from anywhere in the world, Monday to Friday between 8:30am and 5:30pm (UK local time)
+- call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) – calls will be charged at your standard rate
 - use the live chat service at the bottom of this page
 - sign up to [get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
 
 #### Get help with international qualifications
 
-If your qualifications come from a non-UK institution, your teacher training provider may want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from UK ENIC. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
+If your qualifications come from a non-UK institution, your teacher training provider may want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from UK European Network of Information Centres (ENIC). A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
 
-Call us free on 0800 389 2500 for:
+Call us on +44 800 389 2500 for:
 
 - guidance on the UK equivalents of your qualifications
 - a free statement of comparability, once you’ve submitted your application, if your provider asks for this
@@ -247,7 +247,7 @@ When you have qualified teacher status, you will be able to apply for paid teach
 
 [Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
 
-[Read interviews with real teachers](/my-story-into-teaching).
+[Read interviews with real teachers](/blog).
 
 Learn more about English education:
 
@@ -255,11 +255,11 @@ Learn more about English education:
 - [curriculum and qualifications](https://www.gov.uk/national-curriculum)
 - [behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
 - [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
-- [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/about) – a charity gathering international evidence on teaching 5 to 16-year-olds
+- [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16-year-olds
 - [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
 
 ### Contact
 
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.
 
-However, for help with the information on this page, you can email us at international.teacherrecruitment@education.gov.uk.
+However, for help with the information on this page, you can email us at teach.inengland@education.gov.uk.

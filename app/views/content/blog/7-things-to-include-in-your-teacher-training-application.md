@@ -16,9 +16,16 @@ tags:
   - becoming a teacher
   - teacher training
   - personal statements
+inset_text:
+  still-time-to-apply:
+    text: |-
+      <p>There's still time to apply and start teacher training this September.</p>
+      <p><a href="https://www.gov.uk/apply-for-teacher-training">Start your teacher training application now</a>.</p>
 ---
 
 $bedfordshire$
+
+$still-time-to-apply$
 
 Not sure what to include in your teacher training application? Just think of the word TEACHER! Juliet Fern, Mieka Harris and Kate Hudson-Glynn from the University of Bedfordshire explain all.
 
@@ -58,4 +65,4 @@ What have you found challenging and how did you deal with it? Find an example of
 
 Have confidence in yourself and remember that training providers are on your side! We always enjoy reading about your experiences from school, family, jobs and volunteering. We look forward to meeting you at interview where you can show us how well-informed and interested you are in becoming a TEACHER.
 
-Whatever stage you’re at with your application, our expert advisers can help. [Sign up for a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/) who can give you free, one-to-one support. You can also read our advice on completing your application, including [writing your teacher training personal statement.](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement)
+Whatever stage you’re at with your application, our expert advisers can help. [Sign up for a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/) who can give you free, one-to-one support. You can also read our advice on completing your application, including [writing your teacher training personal statement.](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-teacher-training-personal-statement)

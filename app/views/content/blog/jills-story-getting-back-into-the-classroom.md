@@ -4,6 +4,10 @@ date: "2021-01-01"
 author: Jill
 description: |-
   Read about how Jill got back into teaching maths using the return to teaching adviser service to gain school experience and up to date references.
+images:
+  jill:
+    path: "media/images/content/blog/thumbnails/stories-jill.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/stories-jill.jpg"
 keywords:
   - returning to teaching
   - teacher training advisers
@@ -12,15 +16,13 @@ tags:
   - teacher training advisers
 ---
 
-$jill$
-
 After almost a decade of teaching science, I Ieft the job in 2001 when my husband and I started a family. During my time out of the classroom, I did quite a lot of work for an exam board and lots of private tuition. This kept me occupied for many years.
 
 I didn't think that it would be difficult to return to the classroom because of the demand for teachers, but in practice this proved quite a challenge. I was from the age of chalk and paper and I had no recent school experience or experience using data to evaluate performance, nor did I have any referees still in the profession.
 
 The academy provided opportunities to observe lessons, and I was able to spend time in the behavioural inclusion unit. This is where I became interested in working outside mainstream education. Around this time, I registered with a supply agency and took a temporary post working with pupils with emotional and behavioural difficulties.
 
-I continued to access professional development from DfE in behaviour management, and took a free teacher subject specialism training in maths, which was a unit from a master's course. I also volunteered two days per week for two terms, working with pupils with similar special educational needs, which allowed me to gain further experience.
+I continued to access professional development from the Department for Education (DfE) in behaviour management, and took a free teacher subject specialism training in maths, which was a unit from a master's course. I also volunteered two days per week for two terms, working with pupils with similar special educational needs, which allowed me to gain further experience.
 
 I was given the opportunity to teach maths to year nine pupils and the school very kindly provided me with a reference in addition to the one from the supply agency.
 

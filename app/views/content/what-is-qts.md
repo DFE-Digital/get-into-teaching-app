@@ -33,7 +33,7 @@ All postgraduate teacher training courses in England lead to QTS. You can see th
 Entry requirements for QTS courses include having an undergraduate degree and GCSEs at level 4/grade C or above in Maths and English. You’ll also need a level 4/grade C or above
 in Science if you want to be a primary school teacher.
 
-As well as offering QTS, many courses also offer a PGCE or PGDE. Find out about [PGCE and PGDE](/what-is-a-pgce).
+As well as offering QTS, many courses also offer a postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE). Find out about [PGCE and PGDE](/what-is-a-pgce).
 
 ## Assessment only route to QTS
 

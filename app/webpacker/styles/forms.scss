@@ -21,6 +21,10 @@ input {
   padding-right: .4em;
 }
 
+button, input[type=submit] {
+  cursor: pointer;
+}
+
 form {
   h1.govuk-fieldset__heading,
   h1.govuk-label-wrapper .govuk-label,

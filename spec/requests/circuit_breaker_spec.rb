@@ -21,11 +21,6 @@ describe "Circuit breaker", type: :request do
       expect(response).to redirect_to(events_not_available_path)
     end
 
-    it "the EventCategoriesController redirects to an error page" do
-      get event_category_path("category-id")
-      expect(response).to redirect_to(events_not_available_path)
-    end
-
     it "the EventStepsController redirects to an error page" do
       get event_step_path("event-id", "privacy_policy")
       expect(response).to redirect_to(events_not_available_path)

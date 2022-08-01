@@ -7,7 +7,6 @@ RSpec.feature "Events near you promo", type: :feature do
   let(:events) { build_list(:event_api, 1) }
   let(:events_by_type) { group_events_by_type(events) }
   let(:event) { events.first }
-  let(:event_category_slug) { "train-to-teach-events" }
   let(:postcode) { "M1" }
   let(:distance) { 10 }
 
@@ -24,7 +23,7 @@ RSpec.feature "Events near you promo", type: :feature do
     click_on "event-search"
 
     current_url = CGI.unescape(page.current_url)
-    expect(current_url).to include("/events/search")
+    expect(current_url).to include("/events")
     expect(current_url).to include("events_search[distance]=#{distance}")
     expect(current_url).to include("events_search[postcode]=#{Encryptor.encrypt(postcode)}")
   end

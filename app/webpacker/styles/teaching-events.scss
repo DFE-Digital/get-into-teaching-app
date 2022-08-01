@@ -28,46 +28,33 @@ $icon-size: 3rem;
         padding: 0 1rem;
       }
     }
+  }
+
+  &__descriptions {
+    &--summary {
+      @extend .link;
+      cursor: pointer;
+      text-decoration: underline;
+
+      &::marker {
+	      padding-right: 2em;
+      }
+    }
 
     dl {
-      margin: 2em 0 1em;
+      padding: 0 1rem;
 
       div {
-        display: flex;
-        flex-direction: column;
-
-        @include mq($from: tablet) {
-          flex-direction: row;
-          gap: 1rem;
-          padding-inline: 1rem;
-        }
-      }
-
-      div + div {
-        margin-top: 2em;
+        margin-bottom: .5em;
       }
 
       dt {
         font-weight: bold;
-
-        flex: 0 1 25%;
+        margin-block: .2em;
       }
 
       dd {
         margin-left: 0;
-
-        flex: 1 0 75%;
-      }
-
-      dd + dt {
-        margin-top: 1em;
-      }
-
-      @include mq($from: tablet) {
-        dt,
-        dd {
-          display: inline-block;
-        }
       }
     }
   }
@@ -121,9 +108,15 @@ $icon-size: 3rem;
   }
 
   &__none {
-    &--message {
-      padding: 1rem 1rem 2rem;
-      background: $grey;
+    margin: 1rem;
+
+    @include mq($from: tablet) {
+      border-left: 1px solid $slightly-darker-grey;
+      padding-left: 3rem;
+    }
+
+    ul {
+      list-style-type: square;
     }
   }
 
@@ -149,7 +142,9 @@ $icon-size: 3rem;
       background: $grey;
       padding: 2rem 1rem 2rem;
       margin-bottom: 1rem;
+    }
 
+    &--featured, &--regular {
       h2 {
         margin-block: 1rem 2rem;
         padding-inline: 1rem;
@@ -335,8 +330,8 @@ $icon-size: 3rem;
             }
 
             &.in-person {
-              background: url(../images/icon-building.svg) no-repeat left center;
-              background-size: 2em; // using 2em because it's an old icon and is bigger than the others
+              background: url(../images/content/icons/icon-building.svg) no-repeat left center;
+              background-size: $icon-size;
             }
           }
         }
@@ -512,7 +507,7 @@ $icon-size: 3rem;
 
   &__info {
     max-width: $content-max-width;
-    margin: auto;
+    margin: auto auto 4em;
 
     display: flex;
     gap: 1em;
@@ -579,8 +574,17 @@ $icon-size: 3rem;
     margin-top: 2em;
   }
 
+  &__scribble {
+    margin: 4em 1em;
+    flex-grow: 1;
+  }
+
   &__video {
     margin-block: 2em;
+  }
+
+  &__provider-information a {
+    word-wrap: break-word;
   }
 }
 
@@ -708,6 +712,7 @@ $icon-size: 3rem;
 
 .what-theyre-saying {
   margin-top: 4em;
+  padding-bottom: 2em;
   display: grid;
   background: $yellow;
 

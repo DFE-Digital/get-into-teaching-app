@@ -66,12 +66,12 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 2.56.1"
+gem "view_component", "~> 2.57.1"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
-gem "actionpack-page_caching", ">= 1.2.4"
 gem "net-smtp", require: false
+gem "rack-page_caching", github: "pkorenev/rack-page_caching", ref: "9ca404f"
 
 # Fix CVE errors
 gem "delegate", ">= 0.2.0"
@@ -90,7 +90,7 @@ gem "actionpack-cloudfront", ">= 1.2.0"
 # HTML-aware ERB parsing
 gem "better_html", ">= 1.0.16"
 
-gem "dfe_wizard", github: "DFE-Digital/dfe_wizard"
+gem "git_wizard", github: "DFE-Digital/get-into-teaching-wizard"
 
 gem "rack-host-redirect"
 

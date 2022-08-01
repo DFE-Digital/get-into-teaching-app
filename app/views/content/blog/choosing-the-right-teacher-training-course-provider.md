@@ -16,9 +16,16 @@ tags:
   - becoming a teacher
   - teacher training advisers
   - applications
+inset_text:
+  still-time-to-apply:
+    text: |-
+      <p>There's still time to apply and start teacher training this September.</p>
+      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
 
 $right_provider$
+
+$still-time-to-apply$
 
 When choosing a course provider for your teacher training, it’s important to consider what will suit your individual circumstances. The course you choose needs to offer you the right support and be a good fit for you. When looking for a course, you may wish to research and explore a potential provider’s values, how they structure their courses, and what kinds of support and fun-filled opportunities they offer.
 
@@ -32,7 +39,7 @@ Alongside online research, think about calling or emailing these providers, or t
 * Who will my mentor be, and how often will I be able to meet them?
 * What schools will I have access to for teaching practice? 
 * How many schools will I be doing my teaching practice in and how long will each placement last? 
-* Will I be awarded a PGCE/PGDE in addition to QTS (Qualified Teacher Status)?
+* Will I be awarded a postgraduate certificate in education (PGCE) in addition to qualified teacher status (QTS)?
 * What are the starting dates of the course and when does it finish?
 * How many places are on offer, and how many other trainee teachers will I be studying alongside?
 

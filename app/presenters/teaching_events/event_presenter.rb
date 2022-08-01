@@ -24,6 +24,7 @@ module TeachingEvents
       :readable_id,
       :scribble_id,
       :start_at,
+      :summary,
       :type_id,
       :status_id,
       :video_url,
@@ -46,6 +47,10 @@ module TeachingEvents
 
     def has_location?
       event_building.present?
+    end
+
+    def online?
+      is_online
     end
 
     def location

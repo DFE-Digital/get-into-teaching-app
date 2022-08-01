@@ -33,6 +33,20 @@ module TeachingEvents
       query.flat_map(&:teaching_events).sort_by(&:start_at)
     end
 
+    def in_person_only?
+      online.present? && online.none?
+    end
+
+    def online_only?
+      online.present? && online.all?
+    end
+
+    def online
+      # online is a pair of checkboxes for 'online' (true) and 'in_person' (false), so the
+      # param will be something like: ["", "true", "false"]
+      (super || []).reject(&:blank?).map { |r| ActiveModel::Type::Boolean.new.cast(r) }
+    end
+
   private
 
     def query(limit: 100)
@@ -58,15 +72,8 @@ module TeachingEvents
     end
 
     def online_condition
-      return nil if online.blank?
-
-      # online is a pair of checkboxes for 'online' (true) and 'in_person' (false), so the
-      # param will be something like: ["", "true", "false"]
-      selection = online.reject(&:blank?).map { |r| ActiveModel::Type::Boolean.new.cast(r) }
-
-      return nil if selection.empty?
-      return true if selection.all?
-      return false if selection.none?
+      return true if online_only?
+      return false if in_person_only?
 
       nil
     end
@@ -84,7 +91,9 @@ module TeachingEvents
     def type_condition
       return nil if type.blank?
 
-      type.reject(&:blank?).flat_map { |t| t.split(",") }.map(&:to_i).presence
+      event_type_params = type.reject(&:blank?).flat_map { |t| t.split(",") }
+
+      EventType.lookup_by_query_params(*event_type_params).presence
     end
   end
 end

@@ -99,4 +99,3 @@ You should check your eligibility with the teacher training provider before you 
 ### Teach First
 
 You could also consider Teach First to earn a salary while you train. To apply for Teach First, you should [visit the Teach First website](https://www.teachfirst.org.uk/).
-

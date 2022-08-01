@@ -18,20 +18,113 @@
   }
 
   &:focus {
-    outline: 3px solid transparent;
-    color: #1d1d1b;
-    background-color: $yellow;
-    box-shadow: 0 -2px $yellow, 0 4px #1d1d1b;
+    color: $white;
+    background-color: $black;
     z-index: 100;
+    box-shadow: 0 4px $pink;
+    outline: 4px solid transparent;
   }
 }
 
-a {
+.link {
+  @include font;
   color: $blue-dark;
+  line-height: 1.5;
+  text-underline-offset: .08em;
+  box-shadow: none;
 
-  &:hover {
-    color: darken($blue-dark, 15%);
+  &:hover, &:focus {
     text-decoration: none;
+  }
+
+  &:focus {
+    color: $white;
+    background-color: $black;
+    box-shadow: 0 4px $pink;
+    outline: 4px solid transparent;
+
+    &:after {
+      border-color: $white;
+    }
+  }
+}
+
+.link--chevron {
+  text-decoration: none;
+  padding-right: 0.3em;
+  font-weight: bold;
+
+  &:after {
+    @include chevron-icon($black, .6em);
+  }
+
+  &:hover, &:focus {
+    text-decoration: underline;
+  }
+}
+
+.link--grey {
+  color: $grey-mid;
+
+  &:after {
+    border-color: $grey-mid;
+  }
+
+  &:focus {
+    color: $white;
+  }
+}
+
+.link--black {
+  color: $black;
+
+  &:after {
+    border-color: $black;
+  }
+
+  &:focus {
+    color: $white;
+  }
+}
+
+.link--normal {
+  font-weight: normal;
+}
+
+.link--white {
+  color: $white;
+
+  &:after {
+    border-color: $white;
+  }
+}
+
+.link--red {
+  color: $red;
+}
+
+// passes accessibility contrast check on grey/yellow background
+.link--dark {
+  color: $black;
+
+  &:focus {
+    color: $white;
+  }
+}
+
+.link--no-underline {
+  text-decoration: none;
+}
+
+a {
+  @extend .link;
+}
+
+body a.govuk-back-link {
+  @extend .link, .link--black;
+
+  &:focus:before {
+    border-color: $white;
   }
 }
 
@@ -45,6 +138,7 @@ a {
   @include button;
   @include chevron;
   display: inline-block;
+  cursor: pointer;
 
   &:disabled {
     opacity: 0.7;
@@ -98,11 +192,6 @@ a {
   @include mq($from: tablet) {
     display: inline-block;
   }
-}
-
-// passes accessibility contrast check on grey/yellow background
-@mixin dark-link {
-  color: $blue-very-dark;
 }
 
 // Default Zendesk chat button (hidden as we use our own).

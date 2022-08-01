@@ -7,7 +7,7 @@ related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
 promo_content:
-    - content/train-to-be-a-teacher/promos/get-adviser-promo
+    - content/non-uk-teachers/promos/events-promo-iqts
 navigation: 20.10
 navigation_title: Get international qualified teacher status (iQTS)
 navigation_description: Train from anywhere in the world to get international qualified teacher status (iQTS), backed by England’s Department for Education.
@@ -22,18 +22,18 @@ keywords:
 accordion:
   numbered: true
   content_after_accordion:
-    partial: content/international-qualified-teacher-status/after-accordion
+    partial: content/non-uk-teachers/international-qualified-teacher-status/after-accordion
   steps:
     Check your eligibility:
-      partial: content/international-qualified-teacher-status/check-your-eligibility
+      partial: content/non-uk-teachers/international-qualified-teacher-status/check-your-eligibility
     Find out about fees:
-      partial: content/international-qualified-teacher-status/find-out-about-fees
+      partial: content/non-uk-teachers/international-qualified-teacher-status/find-out-about-fees
     Apply to your chosen iQTS teacher training provider:
-      partial: content/international-qualified-teacher-status/apply-to-your-chosen-iqts-teacher-training-provider
+      partial: content/non-uk-teachers/international-qualified-teacher-status/apply-to-your-chosen-iqts-teacher-training-provider
     Gain iQTS and automatic QTS:
-      partial: content/international-qualified-teacher-status/gain-iqts-and-automatic-qts
+      partial: content/non-uk-teachers/international-qualified-teacher-status/gain-iqts-and-automatic-qts
     Next steps for candidates wishing to teach in England:
-      partial: content/international-qualified-teacher-status/next-steps-for-candidates
+      partial: content/non-uk-teachers/international-qualified-teacher-status/next-steps-for-candidates
 ---
 
 ## Introducing iQTS

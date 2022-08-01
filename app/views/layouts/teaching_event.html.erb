@@ -9,7 +9,7 @@
     <main id="main-content" role="main">
       <%= render Content::HeroComponent.new(@front_matter) %>
 
-      <section class="main-body">
+      <section class="main-body main-body--no-bottom-margin">
         <%= yield %>
       </section>
     </main>

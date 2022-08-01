@@ -9,8 +9,15 @@ related_content:
     What to expect on your teacher training : "/blog/what-to-expect-on-your-teacher-training"
     Training and support for early career teachers : "/support-for-early-career-teachers"
 promo_content:
-    - content/train-to-be-a-teacher/promos/events-near-you
+    - content/train-to-be-a-teacher/promos/events-promo-itt
+inset_text:
+  still-time-to-apply:
+    text: |-
+      <p>There's still time to apply and start teacher training this September.</p>
+      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
+
+$still-time-to-apply$
 
 Your initial teacher training (ITT) will vary depending on your course provider and the qualifications you're working towards.
 
@@ -32,7 +39,7 @@ There are full-time and part-time teacher training courses available.
 
 ## What you’ll learn in initial teacher training
 
-What you’ll learn will depend on your course and the qualifications it offers. Some teacher training courses award [qualified teacher status (QTS)](/what-is-qts), while some award QTS with [PGCE or PGDE](/what-is-a-pgce).
+What you’ll learn will depend on your course and the qualifications it offers. Some teacher training courses award [qualified teacher status (QTS)](/what-is-qts), while some award QTS with a [postgraduate certificate in education (PGCE)](/what-is-a-pgce).
 
 Initial teacher training helps you meet the [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). You must meet the teachers’ standards to be awarded QTS.
 
@@ -66,7 +73,7 @@ Some courses begin with time spent in a university or school where you start you
 
 School placements vary in length and structure, but the minimum length is usually around 6 weeks. You should check with your training provider what their course and placement patterns are.
 
-Read about [Cindy’s first week as a trainee teacher doing a PGDE with QTS](/blog/my-first-week-as-a-trainee-teacher).
+Read about [what teacher training is like doing a QTS with PGCE with one training provider](/blog/what-to-expect-on-your-teacher-training).
 
 ## How you’ll be assessed 
 

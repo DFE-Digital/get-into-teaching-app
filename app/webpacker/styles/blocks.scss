@@ -55,16 +55,7 @@ $space-between-sections: 3.7em;
 
         > a {
           @include font-size('xsmall');
-          color: $black;
-          line-height: 1.8em;
-          text-underline-offset: .2em;
-          padding: .6em 0;
-
-          &:hover {
-            color: $purple;
-            text-decoration: underline;
-            text-decoration-thickness: .12em;
-          }
+          @extend .link--black;
         }
       }
     }

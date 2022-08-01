@@ -1,10 +1,14 @@
 require "attribute_filter"
 
 module Events
-  class Wizard < ::DFEWizard::Base
+  class Wizard < ::GITWizard::Base
+    ATTRIBUTES_TO_LEAVE = %w[
+      is_walk_in
+    ].freeze
+
     self.steps = [
       Steps::PersonalDetails,
-      ::DFEWizard::Steps::Authenticate,
+      ::GITWizard::Steps::Authenticate,
       Steps::ContactDetails,
       Steps::FurtherDetails,
       Steps::PersonalisedUpdates,
@@ -19,7 +23,8 @@ module Events
         break unless result
 
         add_attendee_to_event
-        @store.purge!
+
+        @store.prune!(leave: ATTRIBUTES_TO_LEAVE)
       end
     end
 

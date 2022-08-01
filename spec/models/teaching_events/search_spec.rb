@@ -61,11 +61,41 @@ describe TeachingEvents::Search do
     end
   end
 
+  describe "online/in-person toggling" do
+    let(:online) { nil }
+
+    subject { described_class.new(online: online) }
+
+    it { is_expected.not_to be_online_only }
+    it { is_expected.not_to be_in_person_only }
+
+    context "when online only" do
+      let(:online) { ["true", ""] }
+
+      it { is_expected.to be_online_only }
+      it { is_expected.not_to be_in_person_only }
+    end
+
+    context "when in-person only" do
+      let(:online) { ["false", ""] }
+
+      it { is_expected.not_to be_online_only }
+      it { is_expected.to be_in_person_only }
+    end
+
+    context "when online and in-person" do
+      let(:online) { ["true", "false", ""] }
+
+      it { is_expected.not_to be_online_only }
+      it { is_expected.not_to be_in_person_only }
+    end
+  end
+
   describe "#results" do
-    ttt           = EventType.train_to_teach_event_id
-    qt            = EventType.question_time_event_id
-    online        = EventType.online_event_id
-    school_or_uni = EventType.school_or_university_event_id
+    ttt           = "ttt"
+    qt            = "tttqt"
+    online        = "onlineqa"
+    school_or_uni = "provider"
 
     let(:fake_api) do
       instance_double(
@@ -139,19 +169,19 @@ describe TeachingEvents::Search do
       OpenStruct.new(
         description: "Train to Teach and Online",
         input: { type: [ttt, online].map(&:to_s) },
-        expected_conditions: { type_ids: [ttt, online] },
+        expected_conditions: { type_ids: EventType.lookup_by_query_params(ttt, online) },
       ),
 
       OpenStruct.new(
         description: "School or University or Question Time",
         input: { type: [qt, school_or_uni].map(&:to_s) },
-        expected_conditions: { type_ids: [qt, school_or_uni] },
+        expected_conditions: { type_ids: EventType.lookup_by_query_params(qt, school_or_uni) },
       ),
 
       OpenStruct.new(
         description: "All types",
         input: { type: [qt, school_or_uni, ttt, online].map(&:to_s) },
-        expected_conditions: { type_ids: [qt, school_or_uni, ttt, online] },
+        expected_conditions: { type_ids: EventType.lookup_by_query_params(qt, school_or_uni, ttt, online) },
       ),
     ].each do |query|
       context "#{query.description} (#{query.input})" do

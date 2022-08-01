@@ -24,9 +24,16 @@ tags:
   - train to teach events
   - applications
   - references
+inset_text:
+  still-time-to-apply:
+    text: |-
+      <p>There's still time to apply and start teacher training this September.</p>
+      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
 
 $notepad$
+
+$still-time-to-apply$
 
 Applications for teacher training courses starting in 2022 open on 12 October, but there is plenty you can be doing right now to get ready.
 
@@ -50,7 +57,7 @@ Get one step closer to the classroom with guidance tailored to you, including ho
 An experienced teaching professional can help you if you're (one of the following):
 
 * ready to get into teaching
-* returning to teach chemistry, computing, maths, modern foreign languages or physics and have qualified teacher status (QTS)
+* returning to teach at a secondary school in England and already have qualified teacher status (QTS)
 
 [Get an adviser](/tta-service).
 
@@ -74,7 +81,7 @@ Something that many teacher trainer providers will be looking for in an applicat
 
 ## 8. Get some advice at an event
 
-Our Train to Teach events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom. At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts. Some events are in person and others replicate the experience online. [Book your place](/event-categories/train-to-teach-events).
+Our Train to Teach events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom. At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts. Some events are in person and others replicate the experience online. [Book your place at a Train to Teach event](/events/about-train-to-teach-events).
 
 ## 9.  Join our support networks on social media
 

@@ -14,7 +14,12 @@ Rails.application.routes.draw do
   get "/sitemap.xml", to: "sitemap#show", via: :all
 
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
-    redirect_rules.each { |from, to| get from, to: redirect(path: to) }
+    redirect_rules.each do |from, to|
+      get from => lambda { |env|
+        Rails.logger.info(redirect: { request: env["ORIGINAL_FULLPATH"], from: from, to: to })
+        redirect(path: to).call(env)
+      }
+    end
   end
 
   if Rails.env.rolling? || Rails.env.preprod? || Rails.env.production? || Rails.env.pagespeed?
@@ -48,7 +53,7 @@ Rails.application.routes.draw do
     get "/open_events", to: "events#open_events"
   end
 
-  get "/funding-your-training", to: "pages#funding_your_training", as: :funding_your_training
+  get "/funding-and-support/scholarships-and-bursaries", to: "pages#scholarships_and_bursaries", as: "scholarships_and_bursaries"
   get "/privacy-policy", to: "pages#privacy_policy", as: :privacy_policy
   get "/cookies", to: "pages#cookies", as: :cookies
   get "/tta-service", to: "pages#tta_service", as: :tta_service
@@ -80,11 +85,11 @@ Rails.application.routes.draw do
     end
   end
 
-  resources "events", path: "/events", only: %i[index show search] do
+  resources "teaching_events", as: "events", path: "/events", controller: "teaching_events" do
     collection do
-      get "search"
-      post "search", to: "events#perform_search"
+      get :about_ttt_events, path: "about-train-to-teach-events", as: "about_ttt"
     end
+
     resources "steps",
               path: "/apply",
               controller: "event_steps",
@@ -96,12 +101,6 @@ Rails.application.routes.draw do
     end
   end
 
-  resources "teaching_events", path: "/teaching-events", controller: "teaching_events" do
-    collection do
-      get :about_ttt_events, path: "about-ttt-events", as: "about_ttt"
-    end
-  end
-
   namespace :callbacks do
     resources :steps, path: "/book", only: %i[index show update] do
       collection do
@@ -110,21 +109,6 @@ Rails.application.routes.draw do
       end
     end
   end
-
-  # Needs to have higher priority to redirect the category
-  get "event-categories/online-events", to: redirect("/event-categories/online-q-as")
-
-  resources :event_categories, only: %i[show], path: "event-categories" do
-    member do
-      post "", to: "event_categories#create"
-    end
-  end
-  # The event category pages used to exist here - once we're sure no traffic is
-  # coming to these paths we can safely remove these redirects.
-  get "events/category/:id/", to: redirect("/event-categories/%{id}")
-  get "events/category/:id/archive", to: redirect("/event-categories/%{id}/archive")
-  get "event_categories/:id", to: redirect("/event-categories/%{id}")
-  get "event_categories/:id/archive", to: redirect("/event-categories/%{id}/archive")
 
   namespace :mailing_list, path: "/mailinglist" do
     resources :steps,

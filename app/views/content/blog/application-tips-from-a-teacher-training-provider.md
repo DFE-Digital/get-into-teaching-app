@@ -16,9 +16,16 @@ tags:
   - becoming a teacher
   - teacher training
   - personal statements
+inset_text:
+  still-time-to-apply:
+    text: |-
+      <p>There's still time to apply and start teacher training this September.</p>
+      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
 
 $rocket$
+
+$still-time-to-apply$
 
 It’s important to make an excellent first impression if you want to secure that interview, and time spent on a well-thought-out application is never wasted.
 
@@ -34,7 +41,7 @@ It’s not an insurmountable obstacle if you haven’t had any experience of wor
 
 School experience is not compulsory, but it may be a good idea to try to visit a school if only to confirm that you are making the right choice before you submit your application. If you are having difficulty finding a school to visit, you might find that schools offering School Direct courses are more welcoming to an enquiry. Due to the pandemic, some schools are not currently accepting non-essential visitors, so use the [Department for Education’s Get School Experience service](https://schoolexperience.education.gov.uk/) to find details of upcoming opportunities in your area.
 
-Attending a [Train to Teach event](/event-categories/train-to-teach-events) is also a good idea, as you can talk to training providers and ask them directly if they would host a visit. Remember they are there to recruit trainee teachers so may be more amenable to inviting you into their school.
+Attending a [Train to Teach event](/events/about-train-to-teach-events) is also a good idea, as you can talk to training providers and ask them directly if they would host a visit. Remember they are there to recruit trainee teachers so may be more amenable to inviting you into their school.
 
 ## The personal statement
 
@@ -46,13 +53,13 @@ Your personal statement is also an opportunity to acknowledge any gaps in your s
 
 You may wish to demonstrate your awareness of the hard work and commitment required to undertake teaching as a career but also demonstrate how excited you are to start your journey.
 
-I can’t emphasise enough how important it is to avoid spelling mistakes. Make sure to run it through a spell check before copying it into your application, as demonstrating good communication skills is vital. Read more about [writing your teacher training personal statement.](/tips-on-applying-for-teacher-training#writing-your-teacher-training-personal-statement)
+I can’t emphasise enough how important it is to avoid spelling mistakes. Make sure to run it through a spell check before copying it into your application, as demonstrating good communication skills is vital. Read more about [writing your teacher training personal statement.](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-teacher-training-personal-statement)
 
 ## References
 
 And finally, we turn to references. Who you pick is really important. You will need two references. One could be a university or academic tutor and the second could be from a school or somewhere you have worked in a voluntary capacity, or it could be someone from your current employment.
 
-Whoever you choose, you should contact your references before you start writing your application so that they are aware that they will be contacted and that a swift response is important. If your references are not ready this can hold up your application. Read more about [choosing your referees.](/tips-on-applying-for-teacher-training#choose-your-referees)
+Whoever you choose, you should contact your references before you start writing your application so that they are aware that they will be contacted and that a swift response is important. If your references are not ready this can hold up your application. Read more about [choosing your referees.](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees)
 
 ## Responses
 

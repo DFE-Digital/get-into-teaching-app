@@ -49,12 +49,12 @@
 @import './components/content-cta';
 @import './components/content-alert';
 @import './components/feature-table';
+@import './components/inset-text';
 @import './components/link-block';
 @import './components/pagination';
 @import './components/quote';
 @import './components/search';
 @import './components/colored-stripe';
-@import './components/events/no-results';
 @import './components/events/signup-info';
 @import './components/turbolinks-progress-bar';
 @import './components/grouped-cards';
@@ -62,10 +62,7 @@
 @import './campaigns/numbered-headings';
 
 @import 'home';
-@import 'event';
-@import 'events';
 @import 'teaching-events';
-@import 'stories';
 
 @import 'registration';
 @import 'registration/with-side-images';

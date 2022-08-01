@@ -4,17 +4,7 @@
   padding: .5em;
 
   a {
-    color: $black;
-    text-decoration: none;
     display: inline-block;
-
-    &:hover {
-      text-decoration: none;
-    }
-
-    &:focus {
-      box-shadow: none;
-    }
   }
 }
 
@@ -105,16 +95,16 @@ body > header nav {
         }
 
         a {
-          &:hover {
-            border-bottom: 2px solid $black;
+          &:hover, &:focus {
+            border-bottom: 4px solid $black;
           }
         }
 
         a, div {
           line-height: 1.2;
           display: inline-block;
-          padding: 1em .2em 0;
-          border-bottom: 2px solid $white;
+          padding: 0em .2em 0;
+          border-bottom: 4px solid $white;
         }
       }
     }

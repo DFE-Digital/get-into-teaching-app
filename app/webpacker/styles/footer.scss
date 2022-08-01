@@ -27,14 +27,10 @@ footer.site-footer {
 
       a {
         @include font-size("xsmall");
+        @extend .link--grey;
 
-        color: $grey-mid;
         margin-bottom: .5em;
         padding: .5em 0;
-
-        &:focus {
-          color: $black;
-        }
       }
 
       // column-gap: 1.5em;
@@ -77,13 +73,13 @@ footer.site-footer {
         margin-left: 1em;
       }
 
-      a,
       a:hover {
         text-decoration: none;
+        color: $grey-mid;
       }
 
       a:focus {
-        color: $black;
+        color: $white;
       }
     }
   }

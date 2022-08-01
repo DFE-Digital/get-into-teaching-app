@@ -1,12 +1,13 @@
 module CallsToAction
   class ChatOnlineComponent < ViewComponent::Base
-    attr_accessor :title, :text, :button_text
+    attr_accessor :title, :text, :button_text, :heading_tag
 
-    def initialize(title: default_title, text: default_text)
+    def initialize(title: default_title, text: default_text, heading_tag: "h2")
       super
 
       @title       = title
       @text        = text
+      @heading_tag = heading_tag
     end
 
     def icon

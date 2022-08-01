@@ -13,6 +13,9 @@
   &__cards {
 	  padding-bottom: 2em;
 
+    &:last-of-type {
+      padding-bottom: 4em;
+    }
   }
 
   &__nav-cards {
@@ -41,7 +44,6 @@
 
     &:hover {
       box-shadow: 0px 12px 9px 0px rgba(0,0,0,0.15);
-      color: black;
 
       h2 { text-decoration: underline; }
     }
@@ -118,6 +120,10 @@
 
   @include mq($from: tablet) {
     flex-direction: row;
+  }
+
+  &:last-of-type {
+    margin-bottom: 6em;
   }
 
   &__left,
@@ -225,6 +231,10 @@
   &__content {
     flex: 0 1 50%;
     margin-inline: 1em;
+
+    a {
+      @extend .link--black;
+    }
 
     ul {
       list-style: none;

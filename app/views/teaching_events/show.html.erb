@@ -1,5 +1,5 @@
-<%= content_for(:canonical) do %>
-  <%= safe_html_format(canonical_tag.sub(teaching_event_path(@event.readable_id), event_path(@event.readable_id))) %>
+<% content_for(:head) do %>
+  <%= event_structured_data(@event) %>
 <% end %>
 
 <div class="teaching-event">
@@ -22,7 +22,6 @@
     <article>
       <%= render(partial: "teaching_events/show/event-summary") %>
       <%= render(partial: "teaching_events/show/attending-training-providers") %>
-      <%= render(partial: "teaching_events/show/scribble") if @event.scribble_id.present? %>
       <%= render(partial: "teaching_events/show/how-to-attend") %>
       <%= render(partial: "teaching_events/show/provider-info") if @event.show_provider_information? %>
     </article>
@@ -31,6 +30,12 @@
       <%= render(partial: "teaching_events/show/venue-information") if @event.show_venue_information? %>
     </aside>
   </div>
+
+  <% if @event.scribble_id.present? %>
+    <div class="container teaching-event__info">
+      <%= render(partial: "teaching_events/show/scribble") %>
+    </div>
+  <% end %>
 
   <%= render(partial: "teaching_events/show/what-theyre-saying") %>
 </div>

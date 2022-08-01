@@ -2,7 +2,7 @@ module MailingList
   class StepsController < ApplicationController
     include CircuitBreaker
 
-    include DFEWizard::Controller
+    include GITWizard::Controller
     self.wizard_class = MailingList::Wizard
 
     before_action :noindex, unless: -> { request.path.include?("/name") }
@@ -29,7 +29,7 @@ module MailingList
     helper_method :step_path
 
     def wizard_store
-      ::DFEWizard::Store.new app_store, crm_store
+      ::GITWizard::Store.new app_store, crm_store
     end
 
     def app_store

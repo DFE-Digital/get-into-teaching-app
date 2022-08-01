@@ -11,7 +11,7 @@ describe "teaching events", type: :request do
     end
 
     subject do
-      get teaching_events_path
+      get events_path
       response
     end
 
@@ -20,7 +20,7 @@ describe "teaching events", type: :request do
     context "when searching" do
       subject do
         params = { postcode: Encryptor.encrypt("KY11 9YU"), distance: 20, online: false }
-        get teaching_events_path(params: { teaching_events_search: params })
+        get events_path(params: { teaching_events_search: params })
         response
       end
 
@@ -38,7 +38,7 @@ describe "teaching events", type: :request do
     end
 
     subject(:perform_request) do
-      get teaching_event_path(readable_id)
+      get event_path(readable_id)
       response
     end
 
@@ -50,6 +50,15 @@ describe "teaching events", type: :request do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
           receive(:get_teaching_event).with(readable_id).and_raise(not_found_error)
+      end
+
+      it { is_expected.to have_http_status(:not_found) }
+    end
+
+    context "when the event is nil" do
+      before do
+        allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+          receive(:get_teaching_event).with(readable_id).and_return(nil)
       end
 
       it { is_expected.to have_http_status(:not_found) }
@@ -70,7 +79,7 @@ describe "teaching events", type: :request do
 
   describe "#about_ttt_events" do
     subject do
-      get about_ttt_teaching_events_path
+      get about_ttt_events_path
       response
     end
 

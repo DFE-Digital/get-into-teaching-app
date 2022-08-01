@@ -19,6 +19,6 @@ RSpec.describe Cards::FindEventsComponent, type: :component do
     is_expected.to have_link \
       "View events",
       href: url_helpers.events_path,
-      class: "git-link"
+      class: "link--chevron"
   end
 end

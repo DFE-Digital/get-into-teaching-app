@@ -95,15 +95,9 @@ If you’re looking for an alternative to taking on a teaching role, the [Nation
 
 ## Get a return to teaching adviser
 
-If you have [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach at a secondary school in England, you could be eligible for a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/). You should be interested in teaching (one of the following):
+If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach at a secondary school in England, you could be eligible for a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/).
 
-* chemistry
-* computing
-* maths
-* modern foreign languages
-* physics
-
-A return to teaching adviser can give free one-to-one support with:
+A return to teaching adviser can give you free one-to-one support with:
 
 * the applications process, such as writing personal statements and preparing for interviews
 * accessing courses to enhance your subject knowledge
@@ -120,7 +114,7 @@ A return to teaching adviser can give free one-to-one support with:
   ></iframe>
 </div>
 
-Return to teaching advisers also run [events to support returners](/event-categories/online-q-as).
+Return to teaching advisers also run [events to support returners](/events).
 
 $get-a-tta$
 
@@ -134,7 +128,7 @@ to find the best opportunity for you. Vacancies with flexible working opportunit
 
 $q-helen-returner$
 
-[Read Helen's top tips for returning teachers](/my-story-into-teaching/returners/top-tips-for-returning-teachers).
+[Read our top tips for returning teachers](/blog/top-tips-for-returning-teachers).
 
 ## Use the early career framework (ECF) resources
 
@@ -160,9 +154,9 @@ If you’re returning to teaching, you might want to re-familiarise yourself wit
 
 ### Other things to consider
 
-* attend an [online return to teaching event](/event-categories/online-q-as)
+* attend an [online return to teaching event](/events)
 * join the [Chartered College of Teaching](https://chartered.college/), the
   professional body for teachers
 * join a [teaching union](https://www.tes.com/jobs/careers-advice/pay-and-conditions/which-teachers-union)
 * ensure your [pension](https://www.teacherspensions.co.uk/members/working-life/deferring-your-pension/return-to-pensionable-service.aspx), one of your key benefits, is up to date
-* return to the classroom by [registering with a supply teaching agency](/urgent-call-for-qualified-teachers)
+

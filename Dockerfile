@@ -13,8 +13,11 @@ ENV RAILS_ENV=production \
 RUN mkdir /app
 WORKDIR /app
 
-RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn \
+RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn git \
     chromium chromium-chromedriver && rm -rf /var/lib/apt/lists/*
+
+# Remove below once base image ruby:3.1.2-alpine3.14 has been updated with latest libraries
+RUN apk add --no-cache libcrypto1.1=1.1.1q-r0 libssl1.1=1.1.1q-r0 ncurses-libs=6.2_p20210612-r1 git=2.32.3-r0
 
 # Copy node_modules/gem as cache
 # hadolint ignore=DL3022

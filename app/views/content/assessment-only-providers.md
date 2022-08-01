@@ -74,10 +74,6 @@ provider_groups:
       name: Claire Mott
       telephone: '01223 491630'
       email: cmott@campartnership.org
-    - header: The Shire Foundation
-      name: Julie Darmody
-      telephone: '01582 522121'
-      email: jdarmody@shirefoundation.co.uk
     - header: University of Bedfordshire
       link: https://www.beds.ac.uk/
       name: Bedford Admissions
@@ -361,7 +357,9 @@ provider_groups:
       email: admin@itt-westberks.org
     - header: Xavier Catholic Education Trust
       link: https://www.teachsoutheast.co.uk/
-      email: a.harper@sjb.surrey.sch.uk
+      name: Joanna Crome
+      email: j.crome@xaviercet.org.uk
+      telephone: '01932 578682'
   South West:
     providers:
     - header: Cornwall School Centred Initial Teacher Training (Cornwall SCITT)
@@ -509,7 +507,6 @@ provider_groups:
     - header: Educational Success Partners (ESP)
       link: https://www.espeducation.co.uk/ao-route
       name: Mark Bignell
-      telephone: 07425 555142
       email: mark@espeducation.co.uk
     - header: Buckingham International School of Education
       link: https://www.bise.org
@@ -535,4 +532,4 @@ The accredited teacher training providers listed on this page offer the AO progr
 
 If you have experience of teaching outside the UK, some training providers will let you apply for an assessment only QTS without visiting or training in England.
 
-[See the training providers who offer assessment only QTS to international teachers.](#group--international)
+[See the training providers who offer assessment only qualified teacher status (QTS) to international teachers.](#group--international)

@@ -2,6 +2,7 @@
   @include mq($from: tablet) {
     > div {
       display: flex;
+      gap: $indent-amount;
 
       header {
         flex-grow: 1;
@@ -19,6 +20,10 @@
 .blog {
   hr, header p {
     margin-top: 2 * $indent-amount;
+  }
+
+  header + p {
+    margin-top: 3em;
   }
 
   ol {
@@ -63,7 +68,7 @@
       a {
         display: block;
         padding: .4em .8em;
-        @include dark-link;
+        @extend .link--dark;
       }
     }
   }

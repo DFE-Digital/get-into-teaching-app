@@ -8,7 +8,7 @@
   margin: 1em auto;
 
   a {
-    @include dark-link
+    @extend .link--dark;
   }
 
   &__description {
@@ -19,7 +19,7 @@
     @include cards-grid;
 
     a {
-      color: $blue-dark;
+      @extend .link;
     }
 
     .group__card {

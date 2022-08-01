@@ -5,34 +5,33 @@ backlink: "../../"
 description: |-
   Return to England after teaching overseas and bring your skills and experience back to an English classroom. Get support to make your transition easier.
 related_content:
-    Returning to teaching with international experience : "/my-story-into-teaching/international-career-changers/returning-to-teaching-with-international-experience"
-    Returning from teaching abroad : "/my-story-into-teaching/international-career-changers/returning-to-teaching-with-support-from-an-adviser"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
+    Returning to teaching with international experience : "/blog/returning-to-teaching-with-international-experience"
 promo_content:
-    - content/train-to-be-a-teacher/promos/learn-adviser-promo
-navigation: 20.15
+    - content/non-uk-teachers/promos/adviser-promo-returners
+navigation: 20.30
 navigation_title: Return to England after teaching overseas
 navigation_description: Bring your international skills and experience back to an English classroom and return to teach in England.
 date: "2020-04-07"
 accordion:
   numbered: true
   content_after_accordion:
-    partial: content/international-returners/after-accordion
+    partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/after-accordion
   steps:
     Check your qualifications:
-      partial: content/international-returners/check-your-qualifications
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/check-your-qualifications
     Find your next role:
-      partial: content/international-returners/find-your-next-role
-    Get help if you teach a shortage subject:
-      partial: content/international-returners/support-for-teachers-of-shortage-subjects
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/find-your-next-role
+    Get help if you teach a secondary subject:
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/support-for-teachers-of-secondary-subjects
     Get ready to apply:
-      partial: content/international-returners/get-ready-to-apply
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/get-ready-to-apply
     Read up on changes to English education:
-      partial: content/international-returners/read-up-on-changes-to-english-education
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/read-up-on-changes-to-english-education
     Get started on your personal and professional admin:
-      partial: content/international-returners/get-started-on-your-personal-and-professional-admin
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/get-started-on-your-personal-and-professional-admin
     Research visas and immigration:
-      partial: content/international-returners/research-visas-and-immigration
+      partial: content/non-uk-teachers/return-to-england-after-teaching-overseas/research-visas-and-immigration
 keywords:
   - International
   - International returner
@@ -64,9 +63,5 @@ If you're thinking about coming home to teach, we want to help.
 If you are a non-UK citizen interested in teaching or training to teach in
 England, please read our [guidance for international teachers](/non-uk-teachers/teach-in-england-if-you-trained-overseas) or
 [guidance for international trainees](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). 
-
-## Return to teaching success stories
-
-Read [inspiring case studies from returning teachers](/my-story-into-teaching/international-career-changers).
 
 ## Return to teach in England: step by step

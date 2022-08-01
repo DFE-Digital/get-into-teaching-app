@@ -7,9 +7,6 @@ describe "Google Tag Manager", type: :request do
   let(:layout_paths) do
     [
       "/cookies",
-      "/my-story-into-teaching",
-      "/my-story-into-teaching/career-changers/financiers-future-in-maths",
-      "/my-story-into-teaching/internaltional-career-changers",
       "/steps-to-become-a-teacher",
       "/three-things-to-help-you-get-into-teaching",
       "/ways_to_train",
@@ -20,8 +17,7 @@ describe "Google Tag Manager", type: :request do
       event_step_path(event.readable_id, :personal_details),
       event_step_path(event.readable_id, :further_details),
       events_path,
-      teaching_events_path,
-      teaching_event_path(event.readable_id),
+      event_path(event.readable_id),
       root_path,
     ]
   end

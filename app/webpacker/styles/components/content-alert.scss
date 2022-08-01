@@ -1,7 +1,7 @@
 .content-alert {
   background-color: $purple;
   color: $white;
-  padding: 1em;
+  padding: 1.5em;
   line-height: 1.5em;
   display: flex;
   width: 78%;
@@ -14,18 +14,32 @@
 
   &--fullwidth {
     width: inherit;
+    margin-bottom: 2 * $indent-amount;
   }
 
-  h4 {
+  .icon {
+    margin-right: $indent-amount;
+  }
+
+  h4, h2 {
     @extend .heading--margin-0;
   }
 
   p {
-    margin: 0;
+    margin-bottom: 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
-  a {
-    @extend .git-link, .white, .underline;
+  a:not(.button) {
+    @extend .link--white;
+  }
+
+  a.button {
+    display: inline-block;
+    margin: 0;
   }
 
   &__icon {

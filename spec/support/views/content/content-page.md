@@ -19,8 +19,3 @@
         icon: "icon-calendar"
 ---
 
-[link to external website](https://external.website/link)
-[link to internal path](/internal)
-[link to interanl asset hosted on a different domain](https://external-asset.domain/image.png)
-<a>link that was sanitized out</a>
-<a class="button" href="https://external.website/link">external button</a>

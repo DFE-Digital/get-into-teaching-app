@@ -18,7 +18,7 @@ tags:
  
 $brooke-harvey$
  
-Brooke Harvey is a lead practitioner of English at a secondary school in Hampshire, part of Bohunt Education Trust (BET). A Canadian national, she has lived in England since 2019.
+Brooke Harvey is a lead practitioner of English at a secondary school in Hampshire, part of [Bohunt Education Trust (BET)](https://www.bohunttrust.co.uk/). A Canadian national, she has lived in England since 2019.
  
 ## What made you want to teach in the UK?
  

@@ -7,6 +7,14 @@ class EventType
       "School or University event" => 222_750_009,
     }.freeze
 
+  QUERY_PARAM_NAMES =
+    {
+      "ttt" => 222_750_001,       # Train to Teach event
+      "tttqt" => 222_750_007,     # Question Time
+      "onlineqa" => 222_750_008,  # Online event
+      "provider" => 222_750_009,  # School or University event
+    }.freeze
+
   attr_accessor :type_id
 
   delegate(
@@ -49,6 +57,14 @@ class EventType
 
     def lookup_by_ids(*ids)
       ALL.invert.fetch_values(*ids)
+    end
+
+    def lookup_by_query_param(name)
+      QUERY_PARAM_NAMES.fetch(name)
+    end
+
+    def lookup_by_query_params(*names)
+      QUERY_PARAM_NAMES.fetch_values(*names)
     end
 
     def all_ids

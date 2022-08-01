@@ -11,9 +11,10 @@ describe Events::Wizard do
       "first_name" => "Joe",
       "last_name" => "Joseph",
       "accepted_policy_id" => "789",
+      "is_walk_in" => true,
     } }
   end
-  let(:wizardstore) { DFEWizard::Store.new store[uuid], {} }
+  let(:wizardstore) { GITWizard::Store.new store[uuid], {} }
 
   describe ".steps" do
     subject { described_class.steps }
@@ -21,7 +22,7 @@ describe Events::Wizard do
     it do
       is_expected.to eql [
         Events::Steps::PersonalDetails,
-        ::DFEWizard::Steps::Authenticate,
+        ::GITWizard::Steps::Authenticate,
         Events::Steps::ContactDetails,
         Events::Steps::FurtherDetails,
         Events::Steps::PersonalisedUpdates,
@@ -38,7 +39,7 @@ describe Events::Wizard do
   describe "#complete!" do
     let(:request) do
       GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
-        { event_id: "abc123", email: "email@address.com", first_name: "Joe", last_name: "Joseph", accepted_policy_id: "789" },
+        { event_id: "abc123", email: "email@address.com", first_name: "Joe", last_name: "Joseph", accepted_policy_id: "789", is_walk_in: true },
       )
     end
 
@@ -47,11 +48,18 @@ describe Events::Wizard do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:add_teaching_event_attendee).with(request)
       allow(Rails.logger).to receive(:info)
+      allow(wizardstore).to receive(:prune!).and_call_original
       subject.complete!
     end
 
     it { is_expected.to have_received(:valid?) }
-    it { expect(store[uuid]).to eql({}) }
+
+    it "prunes the store, retaining certain attributes" do
+      expect(store[uuid]).to eql({
+        "is_walk_in" => wizardstore[:is_walk_in],
+      })
+      expect(wizardstore).to have_received(:prune!).with({ leave: described_class::ATTRIBUTES_TO_LEAVE }).once
+    end
 
     it "logs the request model (filtering sensitive attributes)" do
       filtered_json = {
@@ -67,6 +75,7 @@ describe Events::Wizard do
         "lastName" => "[FILTERED]",
         "addressPostcode" => nil,
         "addressTelephone" => "[FILTERED]",
+        "isWalkIn" => true,
       }.to_json
       expect(Rails.logger).to have_received(:info).with("Events::Wizard#add_attendee_to_event: #{filtered_json}")
     end
@@ -108,7 +117,7 @@ describe Events::Wizard do
       before { wizardstore[:is_walk_in] = false }
 
       it "raises an exception" do
-        expect { subject.exchange_unverified_request(request) }.to raise_error(DFEWizard::ContinueUnverifiedNotSupportedError)
+        expect { subject.exchange_unverified_request(request) }.to raise_error(GITWizard::ContinueUnverifiedNotSupportedError)
       end
     end
 

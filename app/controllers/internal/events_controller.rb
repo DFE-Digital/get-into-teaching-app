@@ -18,8 +18,11 @@ module Internal
     end
 
     def show
-      @event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
-      raise_not_found unless EventStatus.new(@event).pending?
+      raw_teaching_event = GetIntoTeachingApiClient::TeachingEventsApi.new.get_teaching_event(params[:id])
+
+      raise_not_found unless EventStatus.new(raw_teaching_event).pending?
+
+      @event = TeachingEvents::EventPresenter.new(raw_teaching_event)
 
       @page_title = @event.name
     end
