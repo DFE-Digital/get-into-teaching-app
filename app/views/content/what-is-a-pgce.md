@@ -48,7 +48,7 @@ You can do a teacher training course that leads to:
 
 Getting QTS only means that you’re qualified to teach in most schools in England. It may also mean that your course fees are lower, you submit fewer assignments, and the course could be shorter.
 
-Getting PGCE only means you will not be qualified to teach in most primary, secondary and special schools in England.
+Getting PGCE only means you will not be qualified to teach in most primary, secondary and special schools in England, although some schools will employ teachers without QTS.
 
 [Read about Nathan who chose to get QTS with PGCE](/blog/salaried-teacher-training-classroom-learning).
 
