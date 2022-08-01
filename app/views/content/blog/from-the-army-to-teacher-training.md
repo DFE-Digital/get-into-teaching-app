@@ -1,6 +1,6 @@
 ---
 title: From the army to teacher training
-date: "2022-07-18"
+date: "2022-08-01"
 images:
   david_payling:
     path: "media/images/content/blog/thumbnails/david-payling.jpg"
