@@ -3,7 +3,7 @@ title: Product engineer turned science teacher
 date: "2022-07-18"
 images:
   Chris_wallis:
-    path: "media/images/content/blog/thumbnails/Chris-wallis.jpg"
+    path: "media/images/content/blog/thumbnails/chris-wallis.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/Chris-wallis.jpg"
 author: Chris Wallis
 description: |-
