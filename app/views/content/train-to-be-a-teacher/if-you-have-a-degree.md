@@ -63,7 +63,7 @@ If you train to teach certain secondary subjects, you may be eligible for a [sch
 
 No matter what course you choose, you can apply for a student loan.
 
-[Learn about how you could fund your teacher training](https://getintoteaching.education.gov.uk/funding-and-support).
+[Learn about how you could fund your teacher training](/funding-and-support).
 
 ### Teacher training providers
 
@@ -76,7 +76,7 @@ The content of SCITT and School Direct programmes are broadly the same.
 
 Some providers have different course structures and have placements in different kinds of schools, such as special schools. Talk to your provider to find out what they can offer you.
 
-[Find out more about what to expect in your teaching training](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/initial-teacher-training).
+[Find out more about what to expect in your teaching training](/train-to-be-a-teacher/initial-teacher-training).
 
 ### Choose your provider
 
