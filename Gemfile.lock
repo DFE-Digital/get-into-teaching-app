@@ -501,7 +501,7 @@ GEM
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
     unicode-display_width (2.2.0)
-    victor (0.3.3)
+    victor (0.3.4)
     view_component (2.57.1)
       activesupport (>= 5.0.0, < 8.0)
       method_source (~> 1.0)
