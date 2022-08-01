@@ -42,13 +42,13 @@ Many teacher training courses also offer you a postgraduate qualification such a
 
 You can do a teacher training course that leads to:
 
-* just QTS
-* just PGCE
+* QTS only
+* PGCE only
 * QTS with PGCE
 
-Getting just QTS means that you’re qualified to teach in most schools in England. It may also mean that your course fees are lower, you submit fewer assignments, and the course could be shorter.
+Getting QTS only means that you’re qualified to teach in most schools in England. It may also mean that your course fees are lower, you submit fewer assignments, and the course could be shorter.
 
-Getting just a PGCE means you will not be qualified to teach in most primary, secondary and special schools in England.
+Getting PGCE only means you will not be qualified to teach in most primary, secondary and special schools in England.
 
 [Read about Nathan who chose to get QTS with PGCE](/blog/salaried-teacher-training-classroom-learning).
 
@@ -60,7 +60,7 @@ It can also be beneficial if you want to teach in other countries because it’s
 
 It can also award up to 60 credits at Master’s level which you could use towards a full Master’s qualification. This is usually 180 credits.
 
-You may want to do a Master’s in education, for example, for your professional development and to gain additional expertise.
+You may want to do a Master’s in education, for example, for your professional development and to gain additional expertise in your teaching career.
 
 ## Types of PGCE courses
 
