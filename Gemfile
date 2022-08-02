@@ -54,10 +54,10 @@ gem "loaf", ">= 0.10.0"
 
 gem "prometheus-client"
 
-gem "sentry-rails", ">= 5.3.1"
-gem "sentry-ruby", "~> 5.3.1"
+gem "sentry-rails", ">= 5.4.1"
+gem "sentry-ruby", "~> 5.4.1"
 
-gem "skylight", "~> 5.3.2"
+gem "skylight", "~> 5.3.3"
 
 gem "text"
 
@@ -66,7 +66,7 @@ gem "redis"
 gem "redis-session-store", ">= 0.11.4"
 
 gem "kaminari", "~> 1.2", ">= 1.2.2"
-gem "view_component", "~> 2.57.1"
+gem "view_component", "~> 2.63.0"
 
 gem "google-api-client", ">= 0.53.0", require: false
 
