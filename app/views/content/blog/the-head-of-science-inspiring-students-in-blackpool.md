@@ -42,4 +42,4 @@ My favourite part of the job is being in the classroom, without a doubt. There�
 
 Rosalind Franklin, who made huge contributions to the understanding of DNA structure yet received no recognition for her work until after she died. Her data was used as the basis of another study by other scientists who went on to receive a Nobel Prize. Also Katherine Johnson, a mathematician who worked on NASA’s space missions. She solved equations by hand for rocket launches and trajectories to get them to launch and land in the right places, and I can’t even begin to imagine how hard that would be!  
 
-Inspired to bring your passion to the classroom? [Sign up for a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/) and start your journey to becoming a teacher.
+Inspired to bring your passion to the classroom? [Sign up for an adviser](https://adviser-getintoteaching.education.gov.uk/) and start your journey to becoming a teacher.

@@ -38,4 +38,4 @@ The application process went smoothly thanks to the help of my mentor, Ellie, fr
 
 If someone came up to me and asked if they should teach, my answer would be yes and no! No, because teaching is not for everyone and it is a hugely demanding job so it is extremely important to understand the amount of patience, dedication and commitment you will need! However, teaching is a natural skill that anyone can learn as long as you are passionate about the subject and age group you’re teaching. Yes, because teaching allows students to absorb your knowledge and you can watch them flourish throughout the years, which makes the job so fascinating and unique!
 
-All of our teacher training advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Sign up for a teacher training adviser](/teacher-training-advisers).
+All of our advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Sign up for an adviser](/tta-service).

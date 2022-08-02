@@ -51,7 +51,7 @@ They're all former teachers with lots of experience, so they know the process in
 
 $q-tta-one$
 
-Wherever you are in your journey into teaching, an adviser can give you as much or as little help as you need. 
+An adviser can give you as much or as little help as you need. 
 
 Other trainee teachers say they are particularly helpful with: 
 
@@ -109,7 +109,7 @@ Our advisers can help make your next application stronger. They’ll help you:
 To sign up, you’ll need (one of the following):
 
 * a bachelor’s degree with honours, grade 2:2 or higher
-* to be studying for a bachelor’s degree with honours, with a predicted grade of 2:2 or higher
+* to be a final year student studying for a bachelor’s degree with honours, with a predicted grade of 2:2 or higher
 * an overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
 
 If you're applying from overseas, you can check your qualifications by calling us on <a href="tel:08003892500">0800 389 2500</a>.
@@ -117,5 +117,13 @@ If you're applying from overseas, you can check your qualifications by calling u
 If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach at a secondary school in England to get an adviser.
 
 $get-a-tta$
+
+## Not a final year student?
+
+You can still get an adviser if you're an undergraduate student not in your final year.
+
+Our explore teaching advisers can help you find out more about what teaching is really like.
+
+<a href="/explore-teaching-advisers">Find out more about explore teaching advisers</a>.
 
 ## Find out how a teacher training adviser helped:

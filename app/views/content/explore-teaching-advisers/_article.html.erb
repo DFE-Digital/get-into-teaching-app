@@ -1,0 +1,146 @@
+<article>
+  <section class="statement">
+    <div>
+      <span class="pink xlarge bold">Teaching is&hellip;</span>
+    </div>
+
+    <div>
+      <span class="pink medium bold">
+        <ul class="slashed-list">
+          <li>generation-shaping</li>
+          <li>innovative</li>
+          <li>life-changing</li>
+        </ul>
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="heading-s">Find your future career</h2>
+
+    <p>
+      Choosing a career can be a daunting prospect. How do we know what somethings like if we've never done it before?
+    </p>
+
+    <p>
+      Teaching is a career that changes lives through every generation. Find out if you have that spark.
+    </p>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithTwoImagesComponent.new(
+    heading: "Explore teaching advisers",
+    colour: "pink",
+    image_1_path: "media/images/content/hero-images/0017.jpg",
+    image_1_alt: "A teacher sitting with a student helping them with a maths problem",
+    image_2_path: "media/images/content/hero-images/0024.jpg",
+    image_2_alt: "A maths teacher standing at the front of a full classroom delivering a lesson",
+  ) do %>
+
+    <p>
+      All our advisers are experienced teachers who can help you gain an insight into the world of teaching.
+    </p>
+
+    <p>
+      You can talk to them as little or as much as you'd like. They're there to help you.
+    </p>
+  <% end %>
+
+  <section>
+    <figure>
+      <blockquote class="pink-quotes">
+        <p class="bold">
+          I promise the level of satisfaction is like nothing you’ll get in another job. I wake up every morning and want to get into school.
+        </p>
+      </blockquote>
+
+      <figcaption>Phil, teacher</figcaption>
+    </figure>
+  </section>
+
+  <section class="columns">
+    <div>
+      <h2 class="heading-s">What explore teaching advisers can do</h2>
+
+      <p>
+        Your adviser can help you:
+      </p>
+    </div>
+
+    <div>
+      <ul class="badges">
+        <li class="badge">understand what teaching is really like</li>
+        <li class="badge">connect with other students</li>
+        <li class="badge">build your confidence and transferable skills</li>
+        <li class="badge">get classroom experience</li>
+        <li class="badge">understand the process to become a teacher</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="heading-s">How to get an explore teaching adviser</h2>
+
+    <p>
+        To be eligible for an explore teaching adviser, you just need:
+    </p>
+
+    <ul>
+      <li>
+        to be studying for an undergraduate degree
+      </li>
+      <li>
+        an interest in teaching
+      </li>
+    </ul>
+
+    <p>
+      And that's it!
+    </p>
+    <p class="call-to-action__action">
+      <a href="https://adviser-getintoteaching.education.gov.uk/?channel=222750047">Get an <span>adviser</span></a>
+    </p>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithOneImageComponent.new(
+    heading: "Is teaching right for me?",
+    colour: "yellow",
+    image_path: "media/images/content/hero-images/0009.jpg",
+    image_alt: "A teacher standing at the front of her classroom teaching a class",
+  ) %>
+
+  <section>
+    <h2 class="heading-s">Use your subject passion</h2>
+
+    <p>
+    If you're passionate about a subject, you can bring that to life in front of a classroom of pupils. Help them be inspired by it just like you.
+    </p>
+    <p>
+      <a href="/blog/the-head-of-science-inspiring-students-in-blackpool">Find out how Jessica brings her passion for science to life in the classroom</a>.
+    </p>
+  </section>
+
+    <section>
+    <h2 class="heading-s">Join a community</h2>
+
+    <p>
+    Teaching is about more than just what happens in the classroom. You become part of a school community, alongside fellows teachers and support staff.
+    </p>
+        <p>
+      <a href="/blog/the-fellowship-of-teachers">Explore the friendship Mike and Phil have made outside of the classroom</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="heading-s">Keep learning</h2>
+
+    <p>
+      Learning doesn't end once you've passed your teacher training. You'll have the opportunity to further develop your skills through a range of training and qualifications.
+    </p>
+
+    <p>
+      <a href="/train-to-be-a-teacher/subject-knowledge-enhancement">
+        Find out about national professional qualifications.
+      </a>
+    </p>
+  </section>
+</article>

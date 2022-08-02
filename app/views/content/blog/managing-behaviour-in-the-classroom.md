@@ -43,4 +43,4 @@ Knowing a child’s name is a really powerful behaviour management tool, so lear
 
 Making sure pupils put their names on the top of their page provides a helpful prompt for you. You can also make a seating plan and keep that handy. Doing an ice-breaker activity with new classes where pupils say their names and something that is unique to them is a great technique too.
 
-Have a concern about the classroom? Join our [Aspiring Teacher Forum on Facebook](https://www.facebook.com/groups/1357146377672255) for advice from teacher training advisers and new and aspiring teachers. For free one-to-one support, [sign up for a teacher training adviser](/tta-service).
+Have a concern about the classroom? Join our [Aspiring Teacher Forum on Facebook](https://www.facebook.com/groups/1357146377672255) for advice from advisers and new and aspiring teachers. For free one-to-one support, [sign up for an adviser](/tta-service).

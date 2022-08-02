@@ -55,17 +55,23 @@ Chat with teachers, experts and training providers about every aspect of teachin
 
 <div id="get-free-one-to-one-advice-from-a-teacher-training-adviser" class="numbered-heading">
   <span class="pink-number">3</span>
-  <h2 class="heading-l">Get free one-to-one advice from a teacher training adviser</h2>
+  <h2 class="heading-l">Get free one-to-one advice from an adviser</h2>
 </div>
 
-All our teacher training advisers are experienced teachers who can provide you with support through the whole process of preparing and applying for teacher training.
+All our advisers are experienced teachers who can provide you with free support.
 
-Advisers can:
+Our explore teaching advisers help undergraduate students find out what teaching is really like. They can:
 
-* help you choose the right training
-* offer advice on financial support
-* give you practical advice and guidance at every stage of your application
-* offer support when you write your personal statement and prepare for interview
+* help you find classroom experience
+* build your confidence and transferable skills
+* give you the opportunity to connect with other students considering teaching.
+
+Our teacher training advisers can help you if you're a final year undergraduate student or already have a degree by:
+
+* helping you choose the right training
+* offering advice on financial support
+* giving you practical advice and guidance at every stage of your application
+* offering support when you write your personal statement and prepare for interview
 
 Whatever you need, your adviser will be just a phone call, text, or email away.
 

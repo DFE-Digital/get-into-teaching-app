@@ -35,19 +35,27 @@ You could also attend a training provider event, either online or in person, and
 
 <a href="/events" class="button">Search for an event</a>
 
-## Get a teacher training adviser
+## Get an adviser
 
-Teacher training advisers provide free, one-to-one support by phone, text or email wherever you are in your journey into teaching. They are experienced, former teachers and able to answer any questions you have. You will have your own dedicated adviser to support you at every step as you make important decisions about your future.
+Advisers provide free, one-to-one support by phone, text or email. They are experienced, former teachers and able to answer any questions you have.
 
-They can help you to:
+You will have your own dedicated adviser to support you.
 
-- get classroom experience
-- find out what teaching is really like
+### Teacher training advisers
+
+A teacher training adviser can help you if you're a final year undergraduate student or if you already have a degree. They can help you to:
+
 - understand more about teacher training courses
-- understand the funding and support available to you
-- find the right courses to apply for
+- find funding and support available to you
 - make a successful application
-- prepare for your interview
+
+### Explore teaching advisers
+
+An explore teaching adviser can help you if you're an undergraduate student not in your final year of study. They can help you to:
+
+- understand what teaching is really like
+- get classroom experience
+- connect with other students who are considering teaching as a career
 
 <a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get your dedicated adviser</a>
 

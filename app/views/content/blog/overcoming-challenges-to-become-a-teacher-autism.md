@@ -44,4 +44,4 @@ I am a little concerned about disclosing the fact that I am autistic, as I didn�
 
 My answer would be: only if it’s right for you! It’s certainly not for everyone, but if you feel pulled towards it (or if you feel like something inside you is pushing you towards it despite your best efforts!) then go for it. Don’t worry about whether or not you will be able to gain a place on a course, as there is a lot of help out there. Your own ambition should be your only limit.
 
-All of our teacher training advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Sign up for a teacher training adviser](/teacher-training-advisers).
+All of our advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Sign up for an adviser](/tta-service).
