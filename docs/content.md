@@ -20,6 +20,9 @@ This documentation aims to be a reference for content editors that want to make 
 3. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
+4. [Navigation](#navigation)
+	* [Main Navigation](#main-navigation)
+	* [Category Pages](#category-pages)
 
 ## Finding a Page/Content to Edit
 
@@ -318,3 +321,55 @@ closing_paragraph: my-new-closing-paragraph
 ### Tags
 
 We have a whitelist of available blog tags in `/config/tags.yml` - if you try to add a tag not contained within this list you will receive an error message on the blog post page and our test suite will fail (preventing you from deploying your blog post). If you need a tag not already in the whitelist, add it to the `tags.yml` before referencing it in your blog post.
+
+## Navigation
+
+There are two types of navigation components on the website; the main navigation (at the top of every page) and category pages (a page where the navigation component is in the content as a group of cards). They are both configured in a similar way.
+
+#### Main Navigation
+
+The main navigation appears at the top of every page and contains links to key pages of the website. For a page to appear in the main navigation it must be declared as a "root" page, which means it is in the `content` directory and not one of its subdirectories. For example `/content/my-important-page.md` can appear in the main navigation, however `/content/subdirectory/my-important-page.md` cannot.
+
+In order to have a page appear in the main navigation it must contain the following frontmatter:
+
+```yaml
+navigation: 20
+navigation_title: Train to be a teacher
+navigation_path: "/train-to-be-a-teacher"
+```
+
+The `navigation_title` is the text of the link that will appear in the main navigation and the `navigation_path` is where the link will take the user. The `navigation` attribute determines the order of the links within the main navigation; ascending order for left to right.
+
+As an example, if there is a navigation page with `navigation: 13` and you want your new page to appear immediately after it, then you could use `navigation: 14` (if another page is already using `14` you can use decimals for greater flexibility, so `13.1`).
+
+#### Category Pages
+
+A category page displays a number of cards that the user can click on in order to navigate to related content. The category page itself must specify a specific layout in the frontmatter:
+
+```yaml
+layout: "layouts/category"
+```
+
+You can then define the cards/pages within a subfolder matching the main category page. For example, your folder structure may look like:
+
+```
+/main-category-page.md
+/main-category-page/first-page.md
+/main-category-page/second-page.md
+```
+
+In order for the pages to appear as cards on the main category page they must have navigational attributes defined in the frontmatter:
+
+```yaml
+navigation: 1
+navigation_description: A brief description that will appear in the card for this page
+```
+
+The `navigation` attribute determines the order of the cards on the page (lower values appear first/higher up the page). The `navigation_description` will appear within the card for this page below a heading (which will match the `heading` or `title` from the page frontmatter).
+
+A category page can have multiple sections of related cards. To have cards grouped in a separate section and under a different heading you can use the `subcategory` attribute in the frontmatter of the related pages:
+
+```yaml
+subcategory: Grouped cards
+```
+
