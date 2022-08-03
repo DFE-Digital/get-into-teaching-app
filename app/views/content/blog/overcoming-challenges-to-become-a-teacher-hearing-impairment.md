@@ -32,10 +32,10 @@ Growing up as a profoundly deaf child, I had a positive upbringing in my mainstr
 
 ## How did you find the application process?
 
-The application process went smoothly thanks to the help of my mentor, Ellie, from [Get into Teaching](/tta-service). She was understanding and motivated me to finish applying! My top tips for making a successful application are — be yourself! Show your authentic self, and patience is key!
+The application process went smoothly thanks to the help of my [teacher training adviser](/teacher-training-advisers), Ellie. She was understanding and motivated me to finish applying! My top tips for making a successful application are — be yourself! Show your authentic self, and patience is key!
 
 ## If someone asked, ‘Should I become a Teacher?’, what might you advise?
 
 If someone came up to me and asked if they should teach, my answer would be yes and no! No, because teaching is not for everyone and it is a hugely demanding job so it is extremely important to understand the amount of patience, dedication and commitment you will need! However, teaching is a natural skill that anyone can learn as long as you are passionate about the subject and age group you’re teaching. Yes, because teaching allows students to absorb your knowledge and you can watch them flourish throughout the years, which makes the job so fascinating and unique!
 
-All of our advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Sign up for an adviser](/tta-service).
+All of our advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Sign up for a teacher training adviser](/teacher-training-advisers).

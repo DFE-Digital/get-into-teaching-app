@@ -60,8 +60,6 @@ Other trainee teachers say they are particularly helpful with:
 * writing a personal statement
 * preparing for interviews
 
-Our advisers can help you at any time, even if you're a year or more away from applying.
-
 ## Meet Emma, a teacher training adviser
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
@@ -122,7 +120,7 @@ $get-a-tta$
 
 You can still get an adviser if you're an undergraduate student not in your final year.
 
-Our explore teaching advisers can help you find out more about what teaching is really like.
+Our explore teaching advisers can help you find out what teaching is really like.
 
 <a href="/explore-teaching-advisers">Find out more about explore teaching advisers</a>.
 

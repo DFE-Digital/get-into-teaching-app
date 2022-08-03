@@ -37,7 +37,7 @@ You could also attend a training provider event, either online or in person, and
 
 ## Get an adviser
 
-Advisers provide free, one-to-one support by phone, text or email. They are experienced, former teachers and able to answer any questions you have.
+Advisers provide free, one-to-one support by phone, text or email. They're all experienced, former teachers and able to answer any questions you have.
 
 You will have your own dedicated adviser to support you.
 
@@ -55,7 +55,7 @@ An explore teaching adviser can help you if you're an undergraduate student not 
 
 - understand what teaching is really like
 - get classroom experience
-- connect with other students who are considering teaching as a career
+- connect with other students who are considering teaching
 
 <a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get your dedicated adviser</a>
 

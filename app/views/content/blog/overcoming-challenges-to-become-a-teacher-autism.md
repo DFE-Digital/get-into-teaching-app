@@ -34,7 +34,7 @@ I wanted to be a teacher when I was in secondary school, but I was put off it as
 
 ## How did you find the application process?
 
-I had the help of a [Get Into Teaching adviser](/tta-service), which was extremely beneficial when editing my personal statement and preparing for interviews. She sent me a list of pretty much every question I could have been asked, so I was able to prepare a wide range of answers and content for my interview. My top tips for the application process would be to get an adviser, and to think about what transferrable skills you have when writing your personal statement and answering interview questions. You don’t need experience in a classroom; I had plenty to talk about without that. Think about the skills you have gained from any jobs you have already had, or anything else in your life, and how those skills could be applied to teaching.
+I had the help of a [teacher training adviser](/teacher-training-advisers), which was extremely beneficial when editing my personal statement and preparing for interviews. She sent me a list of pretty much every question I could have been asked, so I was able to prepare a wide range of answers and content for my interview. My top tips for the application process would be to get an adviser, and to think about what transferrable skills you have when writing your personal statement and answering interview questions. You don’t need experience in a classroom; I had plenty to talk about without that. Think about the skills you have gained from any jobs you have already had, or anything else in your life, and how those skills could be applied to teaching.
 
 ## What are your concerns prior to beginning your teacher training course?
 
@@ -44,4 +44,4 @@ I am a little concerned about disclosing the fact that I am autistic, as I didn�
 
 My answer would be: only if it’s right for you! It’s certainly not for everyone, but if you feel pulled towards it (or if you feel like something inside you is pushing you towards it despite your best efforts!) then go for it. Don’t worry about whether or not you will be able to gain a place on a course, as there is a lot of help out there. Your own ambition should be your only limit.
 
-All of our advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Sign up for an adviser](/tta-service).
+All of our advisers are experienced teachers who will provide you with additional support when preparing and applying for teacher training. [Sign up for a teacher training adviser](/teacher-training-advisers).

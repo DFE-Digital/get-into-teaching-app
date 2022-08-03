@@ -9,7 +9,7 @@
   hero_nav:
     Receive personalised email updates and tips: "#receive-personalised-email-updates-and-tips"
     Speak to current teachers at a teacher training event: "#speak-to-current-teachers-at-a-teaching-event"
-    Get free one-to-one advice from a teacher training adviser: "#get-free-one-to-one-advice-from-a-teacher-training-adviser"
+    Get free one-to-one advice: "#get-free-one-to-one-advice"
     
   keywords:
     - teacher training adviser
@@ -53,27 +53,30 @@ Chat with teachers, experts and training providers about every aspect of teachin
 
 <a class="button" href="/events"><span>Find an event</span></a>
 
-<div id="get-free-one-to-one-advice-from-a-teacher-training-adviser" class="numbered-heading">
+<div id="get-free-one-to-one-advice" class="numbered-heading">
   <span class="pink-number">3</span>
-  <h2 class="heading-l">Get free one-to-one advice from an adviser</h2>
+  <h2 class="heading-l">Get free one-to-one advice</h2>
 </div>
 
-All our advisers are experienced teachers who can provide you with free support.
+All our advisers are experienced former teachers helping you on your journey into teaching.
 
-Our explore teaching advisers help undergraduate students find out what teaching is really like. They can:
+<h3 class="heading-3">Explore teaching advisers</h3>
+
+Explore teaching advisers help undergraduate students who are not in their final year of study find out what teaching is really like. They can:
 
 * help you find classroom experience
 * build your confidence and transferable skills
 * give you the opportunity to connect with other students considering teaching.
 
-Our teacher training advisers can help you if you're a final year undergraduate student or already have a degree by:
+<h3 class="heading-3">Teacher training advisers</h3>
 
-* helping you choose the right training
-* offering advice on financial support
-* giving you practical advice and guidance at every stage of your application
-* offering support when you write your personal statement and prepare for interview
+Teacher training advisers can help you if you're a final year undergraduate student or already have a degree. They can help you:
+
+* choose the right training
+* find any financial support
+* write your personal statement and prepare for interviews
 
 Whatever you need, your adviser will be just a phone call, text, or email away.
 
-<a class="button" href="/tta-service"><span>Get an adviser</span></a>
+<a class="button" href="https://adviser-getintoteaching.education.gov.uk/"><span>Get an adviser</span></a>
 
