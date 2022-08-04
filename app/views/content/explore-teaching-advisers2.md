@@ -3,7 +3,7 @@ title: Explore teaching advisers
 description: |-
   An explore teaching adviser can help you find out what teaching is really like through one-to-one support and advice.
 date: "2021-06-18"
-image: "media/images/content/hero-images/0003.jpg"
+image: "media/images/content/hero-images/0014.jpg"
 article_classes: ['longform']
 backlink: "../"
 keywords: 
@@ -46,13 +46,13 @@ They can help you:
 * connect with other students interested in teaching
 * understand the process to become a teacher
 
-## Helping you decide if teaching is right for you
+## Find out what teaching is really like
 
 $q-tta-two$
 
 No two days are the same in the classroom. It's an exciting career path that makes a real difference to people's lives.
 
-Your adviser can help you understand if teaching is the career for you.
+But it's not for everyone. Your adviser can help you understand if teaching is the career for you.
 
 They're all experienced former teachers who can answer all your questions about what teaching is really like.
 
