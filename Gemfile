@@ -44,6 +44,8 @@ gem "faraday-encoding"
 gem "faraday-http-cache"
 gem "faraday_middleware"
 
+gem "fastimage"
+
 gem "hashids"
 
 gem "dotenv-rails", ">= 2.7.6"

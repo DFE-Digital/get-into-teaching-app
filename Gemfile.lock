@@ -215,6 +215,7 @@ GEM
     faraday_middleware-circuit_breaker (0.4.1)
       faraday (>= 0.9, < 2.0)
       stoplight (~> 2.1)
+    fastimage (2.2.6)
     ffi (1.15.5)
     foreman (0.87.2)
     gems (1.2.0)
@@ -546,6 +547,7 @@ DEPENDENCIES
   faraday-encoding
   faraday-http-cache
   faraday_middleware
+  fastimage
   foreman
   front_matter_parser!
   geometry!
