@@ -88,6 +88,7 @@ header {
 
     img {
       max-width: 90%;
+      height: auto;
 
       @include mq($from: tablet) {
         max-width: 90%;
