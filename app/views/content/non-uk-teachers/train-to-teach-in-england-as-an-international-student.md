@@ -112,7 +112,7 @@ For help applying, you can:
 
 ### 2. Check your eligibility
 
-To train to teach in England, you will need the following qualifications:
+To train to teach in England, you will need:
 
 * a bachelor’s degree (this can be from a university outside the UK)
 * an English language qualification which is the same standard as a grade 4 GCSE (General Certificate of Secondary Education)
