@@ -8,15 +8,17 @@ describe ImageSizes do
   describe "#html" do
     subject(:render_html) { instance.html }
 
-    let(:src_url) { "http://example.com/a/test/image.jpg" }
+    let(:asset_host) { "http://example.com" }
+    let(:src_url) { "#{asset_host}/a/test/image.jpg" }
     let(:fast_image_url) { src_url }
     let(:body) { %(<img src="#{src_url}">) }
     let(:instance) { described_class.new(body) }
 
     before do
       described_class.class_variable_set(:@@cache, {})
+      allow(ENV).to receive(:[]).with("APP_ASSETS_URL").and_return(asset_host)
       allow(FastImage).to receive(:size)
-        .with(fast_image_url, raise_on_failure: false, timeout: 1).and_return([500, 800])
+        .with(fast_image_url, raise_on_failure: false, timeout: 0.25).and_return([500, 800])
     end
 
     it { is_expected.to include(%(width="500" height="800")) }
@@ -51,6 +53,15 @@ describe ImageSizes do
 
       it "loads the file from the public/ directory" do
         is_expected.to include(%(<img src="#{src_url}" width="500" height="800">))
+      end
+    end
+
+    context "when the img src is external" do
+      let(:src_url) { "http://external.com/a/test/image.png" }
+
+      it "does not size the image" do
+        is_expected.to include(body)
+        expect(FastImage).not_to have_received(:size)
       end
     end
 
