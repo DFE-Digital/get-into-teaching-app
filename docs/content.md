@@ -362,10 +362,11 @@ In order for the pages to appear as cards on the main category page they must ha
 
 ```yaml
 navigation: 1
+navigation_title: Title that appears on the card
 navigation_description: A brief description that will appear in the card for this page
 ```
 
-The `navigation` attribute determines the order of the cards on the page (lower values appear first/higher up the page). The `navigation_description` will appear within the card for this page below a heading (which will match the `heading` or `title` from the page frontmatter).
+The `navigation` attribute determines the order of the cards on the page (lower values appear first/higher up the page). The `navigation_description` will appear within the card for this page below a heading, which will match the `navigation_title` (if set), `heading` (if `navigation_title` is not set) or `title` (if neither `navigation_title` nor `heading` are set) from the page frontmatter.
 
 A category page can have multiple sections of related cards. To have cards grouped in a separate section and under a different heading you can use the `subcategory` attribute in the frontmatter of the related pages:
 
@@ -373,3 +374,11 @@ A category page can have multiple sections of related cards. To have cards group
 subcategory: Grouped cards
 ```
 
+A category can also contain 'content', which is rendered after the cards and can include complex HTML partials. You specify the partials in the frontmatter under the `content` key:
+
+```yaml
+content:
+  - content/main-category-page/partial
+```
+
+In this example the partial file would be declared in `content/main-category-page/_partial.html.erb` (note the underscore prefix and the file type). Its likely that a developer will create the partial, but using the frontmatter you can easily pull in and re-arrange existing content partials.
