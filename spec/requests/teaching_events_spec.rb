@@ -78,11 +78,24 @@ describe "teaching events", type: :request do
   end
 
   describe "#about_ttt_events" do
-    subject do
+    let(:events) { [GetIntoTeachingApiClient::TeachingEvent.new] }
+
+    before do
+      expected_type_ids = [EventType.train_to_teach_event_id, EventType.question_time_event_id]
+      allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
+        receive(:search_teaching_events).with(type_ids: expected_type_ids, quantity: 1).and_return(events)
       get about_ttt_events_path
-      response
     end
 
-    it { is_expected.to have_http_status(:success) }
+    subject { response.body }
+
+    it { expect(response).to have_http_status(:success) }
+    it { is_expected.not_to include("The summer programme of Train to Teach events has now ended.") }
+
+    context "when there are no train to teach events" do
+      let(:events) { [] }
+
+      it { is_expected.to include("The summer programme of Train to Teach events has now ended.") }
+    end
   end
 end

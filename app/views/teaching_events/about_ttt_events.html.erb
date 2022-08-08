@@ -11,6 +11,10 @@
       <span>Train to Teach event?</span>
     </h1>
 
+    <% if @no_ttt_events %>
+      <%= render Content::InsetTextComponent.new(text: "The summer programme of Train to Teach events has now ended. You can look again in September when the autumn programme starts, or search for #{link_to('more events', events_path)}." ) %>
+    <% end %>
+
     <%= image_pack_tag "media/images/content/event-signup/birmingham-event-3.jpg", alt: "A popular train to teach event in a hall with stalls and banners" %>
   </header>
 
