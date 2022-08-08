@@ -72,13 +72,13 @@ Teacher training in England is practical, hands-on and supportive. As an interna
 
 When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
 
-QTS will allow you to teach in all schools in England. Some courses combine QTS with a [postgraduate certificate in education (PGCE)](/what-is-a-pgce) or a [postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
+QTS will allow you to teach in all schools in England. Some courses combine QTS with a [postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE)](/what-is-a-pgce). These are optional: you do not need a PGCE or PGDE to teach in England.
 
 [Read teachers' stories about the rewards of training to teach in England](/blog).
 
 ## Other ways to train
 
-You can also apply to train to teach in [Wales](https://educators.wales/home), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
+You can also apply to [train to teach in Wales](https://educators.wales/home), [train to teach in Scotland](https://teachinscotland.scot/) or [train to teach in Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
 If you don’t want to come to England to study you can apply to train for international qualified teacher status (iQTS). This meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and, if successfully completed, leads to the automatic award of QTS.
 
@@ -172,13 +172,13 @@ Any financial support, for example a reduction in your fees to the rate paid by 
 
 ### 4. Search and apply for teacher training courses
 
-Use [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) to search for courses in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you have chosen your course, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for teacher training</a>.
+[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in England leading to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). When you have chosen your course, you can <a href="https://www.gov.uk/apply-for-teacher-training">apply for teacher training</a>.
 
 #### First apply for your training place, then apply for your visa
 
 If you need a visa to train to teach in England, you must have a confirmed offer of a training place on a course offering student or skilled worker visa sponsorship before you apply for your visa.
 
-On [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses), you can search for courses where student or skilled worker visa sponsorship is available. You can also search by location, teaching subject and age group, and for courses which pay a salary.
+You can [search for courses where student or skilled worker visa sponsorship is available](https://www.gov.uk/find-postgraduate-teacher-training-courses). You can also search by location, teaching subject and age group, and for courses which pay a salary.
 
 Due to rules about immigration, not all providers can accept international applicants – we suggest you contact them before you apply to check.
 
@@ -220,9 +220,9 @@ You can also [contact UK Visas and Immigration for help](https://www.gov.uk/cont
   <a href="https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk">indefinite leave to remain</a>
   you will not need a visa to train to teach in the UK.</p>
 
-  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">Some people can still apply for settled or pre-settled status – check your eligibility.</a></p>
+  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">Some people can still apply for settled or pre-settled status – check your eligibility</a>.</p>
 
-  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">If you are currently studying in the UK on a student visa, you may be able to apply for a graduate visa.</a></p>
+  <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">If you are currently studying in the UK on a student visa, you may be able to apply for a graduate visa</a>.</p>
 </div>
 
 If you don’t already have an immigration status allowing you to train to teach in the UK, you’ll need to [apply for a student visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa). You can do this once you have a confirmed offer of a training place from a training provider who can sponsor student visas.
@@ -267,11 +267,11 @@ Learn more about English education:
 - [curriculum and qualifications](https://www.gov.uk/national-curriculum)
 - [behaviour and discipline in schools](https://www.gov.uk/government/publications/behaviour-and-discipline-in-schools)
 - [Office for Standards in Education, Children’s Services and Skills (Ofsted)](https://www.gov.uk/government/organisations/ofsted)
-- [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16-year-olds
+- [The Education Endowment Foundation](https://educationendowmentfoundation.org.uk/guidance-for-teachers) – a charity gathering international evidence on teaching 5 to 16 year olds
 - [Times Educational Supplement (TES)](https://www.tes.com/) – information and resources for teachers
 
 ## Contact
 
-The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. For help with your application, see [Get support and advice](#get-support-and-advice).
+The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. You can [get support and advice with your application](#get-support-and-advice).
 
 However, if you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
