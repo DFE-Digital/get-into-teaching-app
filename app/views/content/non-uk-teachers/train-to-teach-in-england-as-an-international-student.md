@@ -194,7 +194,7 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
 
 The subject you apply to teach must usually be the same, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
 
-Your [teacher training adviser](#1-get-support-and-advice) can help with: 
+Your [teacher training adviser](#get-support-and-advice) can help with: 
 
 * your choice of subject
 * writing a personal statement
