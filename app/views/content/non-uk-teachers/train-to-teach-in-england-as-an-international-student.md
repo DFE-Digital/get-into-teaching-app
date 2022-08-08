@@ -112,7 +112,7 @@ For help applying, you can:
 
 ### 2. Check your eligibility
 
-To train to teach in England, you will need the following qualifications:
+To train to teach in England, you will need:
 
 * a bachelor’s degree (this can be from a university outside the UK)
 * an English language qualification which is the same standard as a grade 4 GCSE (General Certificate of Secondary Education)
@@ -194,7 +194,7 @@ If you have settled or pre-settled status under the <a href="https://www.gov.uk/
 
 The subject you apply to teach must usually be the same, or closely related to, the subject you studied at university. (For example, engineering graduates can apply to train to teach physics, but computer science graduates are unlikely to be accepted to train to teach geography.) 
 
-Your [teacher training adviser](#get-support-and-advice) can help with: 
+Your [teacher training adviser](#1-get-support-and-advice) can help with: 
 
 * your choice of subject
 * writing a personal statement
