@@ -10,24 +10,38 @@ class ImageSizes
   def html
     doc = Nokogiri::HTML(@page)
     doc.css("img").each do |img|
-      next if img["width"] && img["height"]
-      next unless sizable?(img["src"])
+      next if sized?(img)
+      next unless enabled? && sizable?(img["src"])
 
-      auto_size(img)
+      size_image(img)
     end
 
     doc.to_html(encoding: "UTF-8", indent: 2)
   end
 
-  def self.cache
-    @@cache
-  end
+  class << self
+    def cache
+      @@cache
+    end
 
-  def self.cache_image_size(src)
-    @@cache[src] ||= FastImage.size(src, raise_on_failure: false, timeout: 0.25)
+    def cache_image_size(src)
+      @@cache[src] ||= FastImage.size(src, raise_on_failure: false, timeout: timeout)
+    end
+
+    def timeout
+      ENV["FAST_IMAGE_TIMEOUT"]
+    end
   end
 
 private
+
+  def enabled?
+    ActiveModel::Type::Boolean.new.cast(ENV["SIZE_IMAGES"])
+  end
+
+  def sized?(img)
+    img["width"] && img["height"]
+  end
 
   # We only want to size images we control (to avoid
   # downloading something malicious onto the server).
@@ -41,7 +55,7 @@ private
     asset_host&.include?(uri.host)
   end
 
-  def auto_size(img)
+  def size_image(img)
     src = prefix_path(img["src"])
     size = self.class.cache_image_size(src)
 
