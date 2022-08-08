@@ -61,6 +61,26 @@ describe TeachingEvents::Search do
     end
   end
 
+  describe "#train_to_teach?" do
+    let(:type) { %w[onlineqa ttt] }
+
+    subject { described_class.new(type: type) }
+
+    it { is_expected.to be_train_to_teach }
+
+    context "when type does not contain train to teach" do
+      let(:type) { %w[onlineqa] }
+
+      it { is_expected.not_to be_train_to_teach }
+    end
+
+    context "when the type has not been set" do
+      let(:type) { nil }
+
+      it { is_expected.not_to be_train_to_teach }
+    end
+  end
+
   describe "online/in-person toggling" do
     let(:online) { nil }
 
