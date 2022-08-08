@@ -14,9 +14,10 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Calls to Action](#calls-to-action)
 		* [Main Content](#main-content)
 		* [Sidebar](#sidebar)
-  * [Accessibility](#accessibility)
-    * [iframe](#iframe)
-  * [Inset text](#inset-text)
+	* [Accessibility](#accessibility)
+		* [iframe](#iframe)
+	* [Inset text](#inset-text)
+	* [Hero](#hero)
 3. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
@@ -253,6 +254,22 @@ inset_text:
 # My page
 
 $important-content$
+```
+
+### Hero
+
+Most of the web pages on the site have a hero section that can be customised in frontmatter; the hero section is at the top of the page and usually consists of a large image, heading and some text - these are the available options, though not all are required:
+
+```yaml
+heading: Hero heading
+subtitle: Hero subtitle
+subtitle_link: /subtitle/link
+subtitle_button: Button text
+image: /path/to/image.jpg
+title_paragraph: Paragraph of text
+title_bg_color: yellow
+hero_bg_color: white
+hero_blend_content: true
 ```
 
 ## Creating a Blog Post
