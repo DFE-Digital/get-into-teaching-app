@@ -272,6 +272,6 @@ Learn more about English education:
 
 ## Contact
 
-The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. For help with your application, see [Get support and advice](#1-get-support-and-advice).
+The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools. For help with your application, see [Get support and advice](#get-support-and-advice).
 
 However, if you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
