@@ -1,11 +1,11 @@
-# These settings are for the sandbox and should mainly be overriden by TF_VARS 
+# These settings are for the sandbox and should mainly be overriden by TF_VARS
 # or set with environment variables TF_VAR_xxxx
 
 variable "api_url" {
   default = "https://api.london.cloud.service.gov.uk"
 }
 
-variable "AZURE_CREDENTIALS" {}
+variable "AZURE_CREDENTIALS" { default = "{}" }
 variable "azure_key_vault" {}
 variable "azure_resource_group" {}
 
@@ -78,4 +78,3 @@ variable "strategy" {
 variable "alerts" {
   type = map(any)
 }
-

@@ -16,10 +16,10 @@ locals {
 provider "azurerm" {
   skip_provider_registration = true
   features {}
-  subscription_id = local.azure_credentials.subscriptionId
-  client_id       = local.azure_credentials.clientId
-  client_secret   = local.azure_credentials.clientSecret
-  tenant_id       = local.azure_credentials.tenantId
+  subscription_id = try(local.azure_credentials.subscriptionId, null)
+  client_id       = try(local.azure_credentials.clientId, null)
+  client_secret   = try(local.azure_credentials.clientSecret, null)
+  tenant_id       = try(local.azure_credentials.tenantId, null)
 }
 
 terraform {
