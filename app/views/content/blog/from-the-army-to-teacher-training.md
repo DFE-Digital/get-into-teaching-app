@@ -26,7 +26,7 @@ I've served 23 years in the British Army. My most recent role has been the lead 
 
 I saw a Get Into Teaching advertisement on TV and decided to investigate. I signed up for a free [teacher training adviser](/teacher-training-advisers) and worked with my adviser Elaine for over 3 months.
 
-Contact with Elaine was frequent, and she was able to fit calls in at short notice when I had an interview - a lot sooner than expected. The initial discussion with Elaine was to see what qualifications I had, what area of education I would like to pursue and information about what local university and initial teacher training providers were looking for from candidates.
+Contact with Elaine was frequent, and she was able to fit calls in at short notice when I had an interview — a lot sooner than expected. The initial discussion with Elaine was to see what qualifications I had, what area of education I would like to pursue and information about what local university and initial teacher training providers were looking for from candidates.
 
 She offered advice on [getting classroom experience](/train-to-be-a-teacher/get-school-experience) and gave me recommendations for contacting schools and training providers. The area of support which I felt I benefitted most from was with writing the personal statement and preparation for the interviews with practice questions.
 
