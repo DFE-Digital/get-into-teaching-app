@@ -61,7 +61,7 @@ Fees are usually around £9,250, and can be higher for [international students](
 
 If you train to teach certain secondary subjects, you may be eligible for a [scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
-No matter what course you choose, you can apply for a student loan.
+No matter what course you choose, you can apply for a student loan, even if you've received one for undergraduate or postgraduate study before.
 
 [Learn about how you could fund your teacher training](/funding-and-support).
 
