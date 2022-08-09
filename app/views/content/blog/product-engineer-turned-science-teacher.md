@@ -26,7 +26,7 @@ I was very good at maths at school but loved physics, so a career in engineering
 
 I thoroughly enjoyed my first role in industry as a production engineer, but a promotion took me away from the practical engineering and I no longer enjoyed what I was doing.
 
-I tried many things until I realised that working with young people and helping them develop skills truly inspired me. So I applied for a PGCE at a University.
+I tried many things until I realised that working with young people and helping them develop skills truly inspired me. So I applied for a PGCE at a university.
 
 As soon as I set foot in the classroom, I knew it was for me. There were nerves and I didn’t enjoy presenting in assemblies to start with. But, in the classroom with the students, I enjoyed the challenge.
 
