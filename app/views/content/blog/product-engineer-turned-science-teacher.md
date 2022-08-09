@@ -52,7 +52,7 @@ I have a wealth of real-world examples to fall back on when teaching about maths
 
 Having enough experience to answer the perennial question, “Why do we need to learn this?” is invaluable.
 
-## It may be daunting for someone to switch to a teaching role - are skills easily transferable from engineer/technician to teacher? 
+## It may be daunting for someone to switch to a teaching role — are skills easily transferable from engineer/technician to teacher? 
 
 I believe every experience prior to going into teaching adds to the skills that are essential for the role. Engineering skills are particularly suited as there will always be new problems to overcome and engineers are trained to find solutions to challenging problems.
 
