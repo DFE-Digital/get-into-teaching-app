@@ -88,6 +88,14 @@ RSpec.configure do |config|
   config.before(:suite) do
     Webpacker.compile
   end
+
+  config.before do
+    # If we don't mock this out for some pages it can result
+    # in FastImage trying to make an external web request (even
+    # though its actually just to our test host). Returning nil
+    # is the same as FastImage failing to determine the size.
+    allow(FastImage).to receive(:size).and_return(nil)
+  end
 end
 
 Shoulda::Matchers.configure do |config|
