@@ -62,7 +62,7 @@ All our advisers are experienced former teachers helping you on your journey int
 
 <h3 class="heading-3">Explore teaching advisers</h3>
 
-Explore teaching advisers help undergraduate students who are not in their final year of study find out what teaching is really like. They can:
+<a href="/explore-teaching-advisers">Explore teaching advisers</a> help undergraduate students who are not in their final year of study find out what teaching is really like. They can:
 
 * help you find classroom experience
 * build your confidence and transferable skills
@@ -70,7 +70,7 @@ Explore teaching advisers help undergraduate students who are not in their final
 
 <h3 class="heading-3">Teacher training advisers</h3>
 
-Teacher training advisers can help you if you're a final year undergraduate student or already have a degree. They can help you:
+<a href="/teacher-training-advisers">Teacher training advisers</a> can help you if you're a final year undergraduate student or already have a degree. They can help you:
 
 * choose the right training
 * find any financial support

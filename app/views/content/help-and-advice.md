@@ -43,7 +43,7 @@ You will have your own dedicated adviser to support you.
 
 ### Teacher training advisers
 
-A teacher training adviser can help you if you're a final year undergraduate student or if you already have a degree. They can help you to:
+A <a href="/teacher-training-advisers">teacher training adviser</a> can help you if you're a final year undergraduate student or if you already have a degree. They can help you:
 
 - understand more about teacher training courses
 - find funding and support available to you
@@ -51,7 +51,7 @@ A teacher training adviser can help you if you're a final year undergraduate stu
 
 ### Explore teaching advisers
 
-An explore teaching adviser can help you if you're an undergraduate student not in your final year of study. They can help you to:
+An <a href="/explore-teaching-advisers">explore teaching adviser</a> can help you if you're an undergraduate student not in your final year of study. They can help you:
 
 - understand what teaching is really like
 - get classroom experience
