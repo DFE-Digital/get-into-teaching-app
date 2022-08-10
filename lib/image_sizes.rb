@@ -25,7 +25,7 @@ class ImageSizes
     end
 
     def cache_image_size(src)
-      @@cache[src] ||= FastImage.size(src, raise_on_failure: false, timeout: timeout)
+      @@cache[src] ||= FastImage.size(src, raise_on_failure: false, timeout: timeout.to_f)
     end
 
     def timeout
