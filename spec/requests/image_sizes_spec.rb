@@ -5,7 +5,7 @@ describe "Image Sizes", type: :request do
 
   before do
     allow(ENV).to receive(:[]).and_call_original
-    allow(ENV).to receive(:[]).with("SIZE_IMAGES").and_return(1)
+    allow(ENV).to receive(:[]).with("SIZE_IMAGES").and_return("1")
     allow(FastImage).to receive(:size).and_return([1175, 839])
     get "/content-page"
   end
