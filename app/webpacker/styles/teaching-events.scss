@@ -692,6 +692,8 @@ $icon-size: 3rem;
     picture {
       img {
         max-height: 12em;
+        width: auto;
+        height: auto;
       }
     }
   }
