@@ -40,13 +40,11 @@ review:
 	$(if $(PR_NUMBER), , $(error Missing environment variable "PR_NUMBER", Please specify a pr number for your review app))
 	$(eval export PR_NAME=review-get-into-teaching-app-${PR_NUMBER})
 	$(eval export DEPLOY_ENV=review)
-	$(eval export TF_VAR_paas_application_name=${PR_NAME})
 	$(eval export KEY_VAULT=s146d01-kv)
 	$(eval export AZ_SUBSCRIPTION=s146-getintoteachingwebsite-development)
 	$(eval BACKEND_KEY=-backend-config=key=${PR_NAME}.tfstate)
 	$(eval export TF_VAR_paas_app_application_name=${PR_NAME})
 	$(eval export TF_VAR_paas_app_route_name=${PR_NAME})
-	echo ${TF_VAR_paas_app_application_name}
 
 .PHONY: test
 test:
