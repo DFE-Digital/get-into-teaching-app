@@ -10,7 +10,7 @@ related_content:
     What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
-    - content/train-to-be-a-teacher/promos/events-promo-degree
+    - content/train-to-be-a-teacher/promos/adviser-promo-apply
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
