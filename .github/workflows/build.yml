@@ -368,7 +368,7 @@ jobs:
     needs: [ build_release ]
     if: github.ref != 'refs/heads/master'
     runs-on: ubuntu-latest
-    concurrency: Review_${{github.event.inputs.pr}}
+    concurrency: Review_${{github.event.number}}
     environment:
        name: Review
     steps:
