@@ -1,6 +1,9 @@
 module WelcomeContentHelper
   MATHS = {
-    video: "welcome-guide-generic.webm",
+    video: {
+      filename: "welcome-guide-generic",
+      formats: %w[mp4 webm],
+    },
     story: {
       name: "Dimitra",
       job_title_and_location: "maths teacher, London",
@@ -28,7 +31,10 @@ module WelcomeContentHelper
   }.freeze
 
   SCIENCES = {
-    video: "welcome-guide-science.webm",
+    video: {
+      filename: "welcome-guide-science",
+      formats: %w[mp4 webm],
+    },
     story: {
       name: "Holly",
       job_title_and_location: "science teacher, Essex",
@@ -57,7 +63,10 @@ module WelcomeContentHelper
   }.freeze
 
   ENGLISH = {
-    video: "welcome-guide-generic.webm",
+    video: {
+      filename: "welcome-guide-generic",
+      formats: %w[mp4 webm],
+    },
     story: {
       name: "Laura",
       job_title_and_location: "English teacher, Doncaster",
@@ -85,7 +94,10 @@ module WelcomeContentHelper
   }.freeze
 
   MFL = {
-    video: "welcome-guide-mfl.webm",
+    video: {
+      filename: "welcome-guide-mfl",
+      formats: %w[mp4 webm],
+    },
     story: {
       name: "Tom",
       job_title_and_location: "Spanish teacher, Coventry",
@@ -113,7 +125,10 @@ module WelcomeContentHelper
   }.freeze
 
   GENERIC = {
-    video: "welcome-guide-generic.webm",
+    video: {
+      filename: "welcome-guide-generic",
+      formats: %w[mp4 webm],
+    },
     story: {
       name: "Abigail",
       job_title_and_location: "head of maths, Wigan",
@@ -139,8 +154,9 @@ module WelcomeContentHelper
     find_mapping(id).fetch(:quote)
   end
 
-  def subject_specific_video_path(id = welcome_guide_subject_id, prefix: "/videos/")
-    prefix + find_mapping(id).fetch(:video)
+  def subject_specific_video_paths(id = welcome_guide_subject_id, prefix: "/videos/")
+    video = find_mapping(id)[:video]
+    video[:formats].map { |ext| "#{prefix}#{video[:filename]}.#{ext}" }
   end
 
   def subject_category(id = welcome_guide_subject_id, downcase: true)
