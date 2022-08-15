@@ -6,7 +6,7 @@
     </svg>
   </div>
 
-  <%= video_tag(subject_specific_video_paths, controls: true) %>
+  <%= video_tag(subject_specific_video_paths, controls: true, preload: :metadata) %>
 
   <div class="main-heading">
     <div class="caption caption-l">

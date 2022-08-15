@@ -156,7 +156,7 @@ module WelcomeContentHelper
 
   def subject_specific_video_paths(id = welcome_guide_subject_id, prefix: "/videos/")
     video = find_mapping(id)[:video]
-    video[:formats].map { |ext| "#{prefix}#{video[:filename]}.#{ext}" }
+    video[:formats].map { |ext| "#{prefix}#{video[:filename]}.#{ext}#t=0.1" }
   end
 
   def subject_category(id = welcome_guide_subject_id, downcase: true)

@@ -35,11 +35,16 @@ RSpec.describe WelcomeContentHelper, type: :helper do
   end
 
   describe "#subject_specific_video_paths" do
+    specify "preloads the first few frames of the video so a poster is displayed" do
+      subject_uuid = TeachingSubject.lookup_by_key(:physics)
+      expect(subject_specific_video_paths(subject_uuid)).to all(end_with("#t=0.1"))
+    end
+
     specify "returns the given paths for the matching subject" do
       physics_uuid = TeachingSubject.lookup_by_key(:physics)
       expect(subject_specific_video_paths(physics_uuid)).to contain_exactly(
-        "/videos/welcome-guide-science.mp4",
-        "/videos/welcome-guide-science.webm",
+        "/videos/welcome-guide-science.mp4#t=0.1",
+        "/videos/welcome-guide-science.webm#t=0.1",
       )
     end
 
@@ -47,8 +52,8 @@ RSpec.describe WelcomeContentHelper, type: :helper do
       specify "returns the given path for the matching subject" do
         french_uuid = TeachingSubject.lookup_by_key(:french)
         expect(subject_specific_video_paths(french_uuid, prefix: "/blockbusters/")).to contain_exactly(
-          "/blockbusters/welcome-guide-mfl.mp4",
-          "/blockbusters/welcome-guide-mfl.webm",
+          "/blockbusters/welcome-guide-mfl.mp4#t=0.1",
+          "/blockbusters/welcome-guide-mfl.webm#t=0.1",
         )
       end
     end
