@@ -6,4 +6,5 @@
 #   - /events
 #   - /
 
-paths: []
+paths:
+  - /mailinglist/signup/name/campaigns/overcoming-hurdles
