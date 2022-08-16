@@ -114,6 +114,8 @@ If you're applying from overseas, you can check your qualifications by calling u
 
 If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach at a secondary school in England to get an adviser.
 
+If you're a veteran, you can get an adviser with or without a degree.
+
 $get-a-tta$
 
 ## Not a final year student?
