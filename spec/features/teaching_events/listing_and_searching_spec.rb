@@ -243,7 +243,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
           within(".teaching-events__none") do
             attend_online_qa_path = events_path(teaching_events_search: { type: %w[onlineqa] })
             expect(page).to have_link(text: "attend an Online Q&A", href: attend_online_qa_path)
-            expect(page).to have_text("look again in September when the autumn programme starts")
+            expect(page).to have_text("look again in late September")
           end
         end
       end
