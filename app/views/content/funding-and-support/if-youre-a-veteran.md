@@ -8,7 +8,7 @@ related_content:
     Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
     David’s journey from the army to teacher training: "/blog/from-the-army-to-teacher-training"
 promo_content:
-    - content/funding-and-support/promos/get-adviser-support-promo
+    - content/funding-and-support/promos/get-adviser-veterans-promo
 navigation: 20.30
 navigation_title: If you're a veteran
 navigation_description: Find out about the support you can get while training to teach if you're a veteran.
@@ -49,7 +49,7 @@ The [MOD's Enhanced Learning Credits Scheme (ELC)](https://www.enhancedlearningc
 
 ## Military equivalent qualifications
 
-You’ll need different qualifications depending on [who you want to teach](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/who-do-you-want-to-teach).
+You’ll need different qualifications depending on [who you want to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
 
 If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your teacher training provider, or a [teacher training adviser](/teacher-training-advisers).
 
