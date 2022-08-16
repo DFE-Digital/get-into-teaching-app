@@ -296,6 +296,7 @@ redirects:
   "/non-uk-teachers/teach-in-england-if-you-trained-outside-the-uk": "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
   "/funding-your-training": "/funding-and-support"
   "/tips-on-applying-for-teacher-training": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
+  "/get-support-training-to-teach-if-you-are-disabled": "/funding-and-support/if-youre-disabled"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
