@@ -11,7 +11,7 @@
     <%= render HeaderComponent.new(breadcrumbs: false) %>
 
     <main id="main-content" class="main-body registration-with-campaign" role="main">
-      <%= render Content::CampaignHeroComponent.new(@front_matter) %>
+      <%= render Content::HeroComponent.new(@front_matter) %>
 
       <section class="feature registration container">
         <%= yield %>

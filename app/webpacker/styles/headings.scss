@@ -112,6 +112,10 @@
   @include box-heading($blue, $white);
 }
 
+.heading--box-black-on-blue {
+  @include box-heading($blue, $black);
+}
+
 .heading--box-purple {
   @include box-heading($purple, $white);
 }
