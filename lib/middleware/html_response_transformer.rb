@@ -2,6 +2,7 @@ require "next_gen_images"
 require "lazy_load_images"
 require "responsive_images"
 require "external_links"
+require "image_sizes"
 
 module Middleware
   class HtmlResponseTransformer
@@ -26,6 +27,7 @@ module Middleware
     end
 
     def transform(response_body)
+      response_body = ImageSizes.new(response_body).html
       response_body = NextGenImages.new(response_body).html
       response_body = ResponsiveImages.new(response_body).html
       response_body = LazyLoadImages.new(response_body).html

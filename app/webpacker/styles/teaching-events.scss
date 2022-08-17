@@ -477,6 +477,7 @@ $icon-size: 3rem;
       padding-bottom: 1rem;
       img {
         width: 100%;
+        height: auto;
       }
 
       @include mq($from: tablet) {
@@ -563,6 +564,7 @@ $icon-size: 3rem;
     margin-top: 2em;
     picture {
       img {
+        height: auto;
         max-width: 80%;
       }
     }
@@ -702,6 +704,8 @@ $icon-size: 3rem;
       img {
         max-height: 12em;
         max-width: 100%;
+        width: auto;
+        height: auto;
       }
     }
   }
