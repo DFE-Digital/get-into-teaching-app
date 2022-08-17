@@ -205,7 +205,7 @@ describe ApplicationHelper do
   describe "#google_optimize_config" do
     subject { google_optimize_config }
 
-    it { is_expected.to eq({ paths: ["/mailinglist/signup/name/campaigns/overcoming-hurdles"] }) }
+    it { is_expected.to eq({ paths: ["/mailinglist/signup/name"] }) }
   end
 
   describe "#sentry_dsn" do

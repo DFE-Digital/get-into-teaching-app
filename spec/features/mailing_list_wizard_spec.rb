@@ -417,15 +417,15 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_title(mailing_list_page_title)
 
-    expect(page).to have_text "Overcoming hurdles"
+    expect(page).to have_text "With a training bursary."
     expect(page).to have_text "Get personalised guidance to your inbox"
     click_on "Next step"
-    expect(page).to have_text "Overcoming hurdles."
+    expect(page).to have_text "With a training bursary."
     expect(page).to have_text "Enter your full email address"
     fill_in_name_step
     click_on "Next step"
 
-    expect(page).not_to have_text "Overcoming hurdles"
+    expect(page).not_to have_text "With a training bursary."
 
     expect(page).to have_text "Do you have a degree?"
     choose "Not yet, I'm a first year student"
