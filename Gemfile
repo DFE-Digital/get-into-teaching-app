@@ -46,6 +46,8 @@ gem "faraday_middleware"
 
 gem "fastimage"
 
+gem "dfe-analytics", github: "DFE-Digital/dfe-analytics", tag: "v1.3.2"
+
 gem "hashids"
 
 gem "dotenv-rails", ">= 2.7.6"
