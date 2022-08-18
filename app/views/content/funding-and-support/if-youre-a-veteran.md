@@ -33,6 +33,8 @@ You may be eligible for a tax-free undergraduate bursary of £40,000 if you’re
 * training to teach secondary biology, physics, chemistry, computing, maths or languages
 * doing an undergraduate degree leading to [qualified teacher status (QTS)](/what-is-qts) in England
 
+Doing an undergraduate degree leading to QTS means that you would be qualified to teach in England.
+
 You do not need to apply for a bursary. Your teacher training provider will determine whether you are eligible and will then pay you in monthly instalments across the final two years of your course.
 
 You may also be eligible for a scholarship or bursary if you’re training to teach certain subjects. All teacher training candidates are also eligible for tuition fee and maintenance loans.
@@ -41,11 +43,11 @@ You may also be eligible for a scholarship or bursary if you’re training to te
 
 ## Get support
 
-[Veterans UK](https://www.gov.uk/government/organisations/veterans-uk) provides free support and advice for veterans and their families.
-
 [The Career Transition Partnership](https://www.ctp.org.uk/) supports leavers of the armed forces as they transition from the military into civilian life.
 
 The [MOD's Enhanced Learning Credits Scheme (ELC)](https://www.enhancedlearningcredits.com/) promotes lifelong learning amongst members of the armed forces by providing financial support to pay for approved qualifications. You can contact them to find out about eligibility.
+
+If you're unsure about who to contact for support, [Veteran's Gateway](https://www.veteransgateway.org.uk/about/) can help put you in touch with the organisations you may need for advice and support.
 
 ## Military equivalent qualifications
 
