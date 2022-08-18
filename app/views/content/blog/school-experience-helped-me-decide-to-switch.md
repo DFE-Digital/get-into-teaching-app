@@ -24,4 +24,4 @@ In my previous role I learnt a lot about diversity issues. I had dealt with situ
 
 Teaching is a lot more vibrant than my previous career. Schools offer a very dynamic working environment. You encounter problems, as you would in any career but you have the support of colleagues to try new approaches and techniques until you find the right solution. This really helps you develop as a teacher.
 
-Talk to an [explore teaching adviser](/explore-teaching-advisers) who can help you find out if teaching is for you.
+Talk to a [teacher training adviser](/teacher-training-advisers) who can help you find out if teaching is for you.
