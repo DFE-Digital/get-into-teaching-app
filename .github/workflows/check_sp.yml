@@ -14,14 +14,14 @@ jobs:
       - name: Select Tests
         id: select-tests
         run: |
-          d="{'environment' :'Development'  , 'principle': 's146d01-keyvault-readonlyaccess'}"
-          t="{'environment' :'Test'         , 'principle': 's146t01-keyvault-readonlyaccess'}"
-          p="{'environment' :'Production'   , 'principle': 's146p01-keyvault-readonlyaccess'}"
+          d="{'environment' :'Development'  , 'principal': 's146d01-keyvault-readonlyaccess'}"
+          t="{'environment' :'Test'         , 'principal': 's146t01-keyvault-readonlyaccess'}"
+          p="{'environment' :'Production'   , 'principal': 's146p01-keyvault-readonlyaccess'}"
           tests="{ 'data':[ ${d} ,  ${t} ,  ${p} ]}"
           echo "::set-output name=tests::${tests}"
 
   check_expires:
-    name:      ${{matrix.data.environment}}/${{ matrix.data.principle }}
+    name:      ${{matrix.data.environment}}/${{ matrix.data.principal }}
     needs:     set-matrix
     strategy:
        matrix: ${{ fromJson(needs.set-matrix.outputs.tests) }}
@@ -29,33 +29,33 @@ jobs:
          name: ${{ matrix.data.environment }}
     runs-on: ubuntu-latest
     steps:
-      - name: Check ${{ matrix.data.principle }}
+      - name: Check ${{ matrix.data.principal }}
         uses: DFE-Digital/github-actions/CheckServicePrincipal@master
         id: pwsh_check_expire
         with:
             AzureCredentials: ${{ secrets.AZURE_CREDENTIALS }}
-            ServicePrincipal: ${{ matrix.data.principle }}
+            ServicePrincipal: ${{ matrix.data.principal }}
             ExpiresWithinDays: 30
 
-      - name: Processing ${{ matrix.data.principle }}
-        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
+      - name: Processing ${{ matrix.data.principal }}
+        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Alert
         run:  echo Expires in ${{fromJson(steps.pwsh_check_expire.outputs.json_data).data.ExpiresDays}} days
 
       - name: Check out the repo
-        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
+        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Alert
         uses: actions/checkout@v3
 
       - name: set-up-environment
-        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
+        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Alert
         uses: DFE-Digital/github-actions/set-up-environment@master
 
       - uses: Azure/login@v1
-        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
+        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Alert
         with:
             creds: ${{ secrets.AZURE_CREDENTIALS }}
 
       - uses: DfE-Digital/keyvault-yaml-secret@v1
-        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
+        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Alert
         id:  keyvault-yaml-secret
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
@@ -63,14 +63,13 @@ jobs:
           key: SLACK-WEBHOOK
 
       - name: Slack Notification
-        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application != 'Dummy'
+        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Alert
         uses: rtCamp/action-slack-notify@master
         env:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_TITLE: ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application }} ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Name }}
+           SLACK_TITLE: A Service Principal secret is expiring soon
            SLACK_MESSAGE: |
-                         The Service Principle ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application }}
-                         key ${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Name }} is due to
-                         expires in ${{fromJson(steps.pwsh_check_expire.outputs.json_data).data.ExpiresDays}} days
-                         Please follow the process in https://dfe-technical-guidance.london.cloudapps.digital/how-to/security/managing-secrets/#access-key-expiration to renew.
+                         The Service Principal *${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application }}*
+                         secret *${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Name }}* is due to expire in *${{fromJson(steps.pwsh_check_expire.outputs.json_data).data.ExpiresDays}}* days.
+                         Please follow the <https://dfe-technical-guidance.london.cloudapps.digital/infrastructure/hosting/azure-cip/#service-principal|Use the service principal in external systems> process to renew.
            SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}

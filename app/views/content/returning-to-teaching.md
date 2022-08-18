@@ -87,12 +87,6 @@ The education sector promotes inclusivity and diversity. There are many organisa
 
 [Search for jobs, including those with flexible working patterns, on Teaching Vacancies](https://teaching-vacancies.service.gov.uk/).
 
-## Join the National Tutoring Programme
-
-The National Tutoring Programme supports schools with helping children get back up to speed after the disruption of the coronavirus pandemic. It also provides different options to return to a school without taking on a full-time or part-time classroom role. 
-
-If you’re looking for an alternative to taking on a teaching role, the [National Tutoring Programme](https://nationaltutoring.org.uk/) could be it. Through it, you can tutor or mentor children and help provide support to disadvantaged pupils.
-
 ## Get a return to teaching adviser
 
 If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) and you want to return to teach at a secondary school in England, you could be eligible for a [return to teaching adviser](https://adviser-getintoteaching.education.gov.uk/).
@@ -117,6 +111,12 @@ A return to teaching adviser can give you free one-to-one support with:
 Return to teaching advisers also run [events to support returners](/events).
 
 $get-a-tta$
+
+## Join the National Tutoring Programme
+
+The National Tutoring Programme supports schools with helping children get back up to speed after the disruption of the coronavirus pandemic. It also provides different options to return to a school without taking on a full-time or part-time classroom role. 
+
+If you’re looking for an alternative to taking on a teaching role, the [National Tutoring Programme](https://nationaltutoring.org.uk/) could be it. Through it, you can tutor or mentor children and help provide support to disadvantaged pupils.
 
 ## Find a role
 

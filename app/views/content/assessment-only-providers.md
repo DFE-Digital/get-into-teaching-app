@@ -184,6 +184,10 @@ provider_groups:
       name: Liz Connell
       telephone: '01708 255006'
       email: admin@haveringteachertraining.co.uk
+    - header: The Kemnal Academies Trust (TKAT) SCITT
+      name: Jo Fogg
+      telephone: 020 3740 1808 (option 1)
+      email: scitt@tkat.org     
     - header: The Pimlico-London SCITT
       link: https://www.futuretraining.org/page/?title=Assessment+Only+Route&pid=20
       email: info@futuretraining.org

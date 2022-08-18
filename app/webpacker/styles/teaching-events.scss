@@ -477,6 +477,7 @@ $icon-size: 3rem;
       padding-bottom: 1rem;
       img {
         width: 100%;
+        height: auto;
       }
 
       @include mq($from: tablet) {
@@ -563,6 +564,7 @@ $icon-size: 3rem;
     margin-top: 2em;
     picture {
       img {
+        height: auto;
         max-width: 80%;
       }
     }
@@ -661,16 +663,21 @@ $icon-size: 3rem;
     display: grid;
     margin: 1em 2em;
 
-    grid-template-rows: min-content 1em min-content;
+    grid-template-rows: min-content 1em min-content min-content;
     grid-template-columns: auto;
 
     h1 {
       grid-area: 1 / 1 / 3 / 2;
+      z-index: 1;
+    }
+
+    .inset-text {
+      grid-area: 3 / 1 / 3 / 1;
     }
 
     picture {
       transform: rotate(3deg);
-      grid-area: 2 / 1 / 4 / 2;
+      grid-area: 1 / 1 / 3 / 2;
       text-align: right;
     }
 
@@ -679,11 +686,16 @@ $icon-size: 3rem;
       grid-template-columns: 2fr 3em 1fr;
 
       h1 {
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: 1 / 1 / 2 / 2;
+      }
+
+      .inset-text {
+        grid-area: 2 / 1 / 2 / 1;
+        margin-right: $indent-amount;
       }
 
       picture {
-        grid-area: 1 / 2 / 2 / 4;
+        grid-area: 1 / 2 / 3 / 4;
         text-align: left;
       }
     }
@@ -691,6 +703,9 @@ $icon-size: 3rem;
     picture {
       img {
         max-height: 12em;
+        max-width: 100%;
+        width: auto;
+        height: auto;
       }
     }
   }
