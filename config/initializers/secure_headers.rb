@@ -43,7 +43,7 @@ SecureHeaders::Configuration.default do |config|
   twitter     = %w[t.co *.twitter.com static.ads-twitter.com analytics.twitter.com]
   youtube     = %w[*.youtube.com *.youtube-nocookie.com i.ytimg.com www.youtube.com www.youtube-nocookie.com]
   sentry      = %w[*.ingest.sentry.io]
-  gtm_server  = %w[get-into-teaching-staging-gtm.nw.r.appspot.com]
+  gtm_server  = %w[get-into-teaching-staging-gtm.nw.r.appspot.com analytics.getintoteaching.education.gov.uk]
   reddit      = %w[www.redditstatic.com alb.reddit.com]
 
   quoted_unsafe_inline = ["'unsafe-inline'"]
