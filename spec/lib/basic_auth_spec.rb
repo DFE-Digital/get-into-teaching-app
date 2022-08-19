@@ -52,7 +52,7 @@ RSpec.describe BasicAuth do
   end
 
   describe ".authenticate" do
-    subject { instance.authenticate(username, password) }
+    subject(:user) { instance.authenticate(username, password) }
 
     let(:username) { "" }
     let(:password) { "" }
@@ -82,16 +82,19 @@ RSpec.describe BasicAuth do
         it do
           is_expected.to be_truthy
           is_expected.to be_an_instance_of(User)
-          expect(subject.username).to eq("username1")
-          expect(subject.publisher?).to be false
-          expect(subject.author?).to be false
+
+          expect(user.username).to eq("username1")
+          expect(user.id).to eq(user.username)
+
+          is_expected.not_to be_publisher
+          is_expected.not_to be_author
         end
 
         context "when user role is publisher" do
           let(:http_auth) { "username1|password1|publisher" }
 
           it "responds to `publisher?`" do
-            expect(subject.publisher?).to be true
+            is_expected.to be_publisher
           end
         end
 
@@ -99,7 +102,7 @@ RSpec.describe BasicAuth do
           let(:http_auth) { "username1|password1|author" }
 
           it "responds to `author?`" do
-            expect(subject.author?).to be true
+            is_expected.to be_author
           end
         end
       end
