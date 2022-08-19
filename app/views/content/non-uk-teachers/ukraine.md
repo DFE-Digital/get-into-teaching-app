@@ -102,7 +102,7 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 
 * teaching skills and experience you can demonstrate to an employer
 * to pass criminal and professional safeguarding checks, including an enhanced [Disclosure and Barring Service](https://www.gov.uk/government/organisations/disclosure-and-barring-service) check (these will be organised by your employer)
-* a high standard of written and spoken English – for example, [Common European Framework of Reference for Languages, English level B2](https://www.efset.org/cefr/b2/) 
+* a high standard of written and spoken English – for example, [Common European Framework of Reference for Languages, English level B1](https://www.efset.org/cefr/b1/) 
 
 ### Meeting the standard for written and spoken English
 
