@@ -57,7 +57,9 @@ I can’t emphasise enough how important it is to avoid spelling mistakes. Make 
 
 ## References
 
-And finally, we turn to references. Who you pick is really important. You will need 2 references. Who you should pick as your referees will depend on your circumatances.
+And finally, we turn to references. Who you pick is really important. You'll need 2 references.
+
+Who you should pick as your referees will depend on your circumatances.
 
 If you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher. If you’re applying for a salaried course, one of your references must be from an employer.
 

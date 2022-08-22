@@ -112,8 +112,6 @@ academic department.
 Your referees will be asked to write up to 500 words about your character and
 potential to teach.
 
-It’s worth contacting them before you apply so they understand why you’re applying and what they’ll be asked to do.
-
 Choose referees who could comment on things like your:
 
 * communication skills
@@ -124,18 +122,18 @@ Choose referees who could comment on things like your:
 
 Your referee will also be asked if they know of any reason why you should not work with children.
 
-You will need different referees depending on your circumstances. If you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher.
-
-If you’re applying for a salaried course, one of your references must be from
+You'll need different referees depending on your circumstances. If you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher. If you’re applying for a salaried course, one of your references must be from
 an employer.
 
 Training providers will accept a character reference, such as a mentor or someone you know from volunteering, as a second reference.
 
 Referees should not be family members, partners or friends.
 
-You'll provide the details for 2 referees when you apply. If you get an offer from a teacher training provider for a place on their course, you can review the details you've submitted. You can change these if necessary.
+You'll provide the details for 2 referees when you apply.
 
-Your provider will then contact your referees to get your references. If they're happy with them, your teacher training place will then be confirmed.
+If you get an offer from a teacher training provider for a place on their course, you can review the referee details you've submitted. You can change these if necessary.
+
+Your provider will then contact your referees. If they're happy with them, your teacher training place will then be confirmed.
 
 If you’re struggling to choose your referees, [get free one-on-one support from a
 teacher training adviser](/tta-service).

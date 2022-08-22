@@ -101,6 +101,8 @@ It’s your opportunity to show your enthusiasm for teaching a particular subjec
 
 Your referees can tell training providers about your qualities and abilities, so it’s important they know you well.
 
+You'll provide your referee details when you apply. If you're offered a place on a course, your teacher training provider will then contact your referees.
+
 [Find out more about the requirements for references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees).
 
 ## 9.	Complete your application
