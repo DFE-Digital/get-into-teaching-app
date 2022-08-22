@@ -122,8 +122,11 @@ Choose referees who could comment on things like your:
 
 Your referee will also be asked if they know of any reason why you should not work with children.
 
-You'll need different referees depending on your circumstances. If you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher. If you’re applying for a salaried course, one of your references must be from
-an employer.
+You'll need different referees depending on your circumstances. If you:
+
+* graduated in the last 5 years, you'll need an academic reference
+* already work in a school, you'll need a reference from your headteacher
+* are applying for a salaried course, you'll need a reference from an employer
 
 Training providers will accept a character reference, such as a mentor or someone you know from volunteering, as a second reference.
 
