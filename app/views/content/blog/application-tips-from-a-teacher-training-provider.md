@@ -57,9 +57,11 @@ I can’t emphasise enough how important it is to avoid spelling mistakes. Make 
 
 ## References
 
-And finally, we turn to references. Who you pick is really important. You will need two references. One could be a university or academic tutor and the second could be from a school or somewhere you have worked in a voluntary capacity, or it could be someone from your current employment.
+And finally, we turn to references. Who you pick is really important. You will need 2 references. Who you should pick as your referees will depend on your circumatances.
 
-Whoever you choose, you should contact your references before you start writing your application so that they are aware that they will be contacted and that a swift response is important. If your references are not ready this can hold up your application. Read more about [choosing your referees.](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees)
+If you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher. If you’re applying for a salaried course, one of your references must be from an employer.
+
+You'll provide the details for your referees when you apply, but they will not be contacted unless you are offered a place on a teacher training course. Read more about [choosing your referees.](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees)
 
 ## Responses
 

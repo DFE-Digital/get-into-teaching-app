@@ -73,7 +73,7 @@ If you’re an undergraduate student interested in teaching physics, maths, comp
 
 ## 6. Start lining up your references
 
-You’ll need a couple of referees to provide references for your application. Now is a good time to start approaching people who might be able to provide these for you. Getting references in place is one of the most common causes of delay in the application process, so any preparation you can do now could speed things up considerably when you make your application.
+You’ll need a couple of referees to provide references for your application. Now is a good time to start approaching people who might be able to provide these for you. When you apply, you'll need to submit your referees' details. If the training provider offers you a place, they'll contact your referees to find out more about you.
 
 ## 7. Engage with the world of schools and teaching
 

@@ -103,7 +103,7 @@ not convinced the admissions team that they’re right for it.
 
 ## Choose your referees
 
-You need 2 references to apply.
+You need 2 referees to apply.
 
 Unlike a standard work reference, your references for teacher training need to
 be named individuals rather than (for example) a human resources team or
@@ -124,26 +124,18 @@ Choose referees who could comment on things like your:
 
 Your referee will also be asked if they know of any reason why you should not work with children.
 
-Ideal referees could include:
-
-* your university tutor or supervisor
-* your current line manager at work
-* your previous employer
-* a teacher at a school where you work or volunteer
-* a supplier or client you’ve worked with (if you’re self-employed)
-
-Referees should not be family members, partners or friends.
-
-It’s important to have at least one academic or professional reference.
-
-Training providers will accept a character reference, such as a mentor or someone you know from volunteering, as a second reference.
+You will need different referees depending on your circumstances. If you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher.
 
 If you’re applying for a salaried course, one of your references must be from
 an employer.
 
-You can request as many references as you like to increase the chances of getting 2 quickly.
+Training providers will accept a character reference, such as a mentor or someone you know from volunteering, as a second reference.
 
-Once you've received 2 or more references, you can select the 2 you want to include in your application.
+Referees should not be family members, partners or friends.
+
+You'll provide the details for 2 referees when you apply. If you get an offer from a teacher training provider for a place on their course, you can review the details you've submitted. You can change these if necessary.
+
+Your provider will then contact your referees to get your references. If they're happy with them, your teacher training place will then be confirmed.
 
 If you’re struggling to choose your referees, [get free one-on-one support from a
 teacher training adviser](/tta-service).
