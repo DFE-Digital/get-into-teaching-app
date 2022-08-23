@@ -12,6 +12,10 @@ promo_content:
 navigation: 20.30
 navigation_title: If you're a veteran
 navigation_description: Find out about the support you can get while training to teach if you're a veteran.
+calls_to_action:
+  chat:
+    name: chat
+    arguments: {}
 keywords:
     - veterans
     - service leavers
@@ -35,24 +39,38 @@ You may be eligible for a tax-free undergraduate bursary of £40,000 if you’re
 
 Doing an undergraduate degree leading to QTS means that you would be qualified to teach in England.
 
-You do not need to apply for a bursary. Your teacher training provider will determine whether you are eligible and will then pay you in monthly instalments across the final two years of your course.
+You do not need to apply for a bursary. Your teacher training provider will determine whether you are eligible and will then pay you in monthly instalments across the final 2 years of your course.
 
-You may also be eligible for a scholarship or bursary if you’re training to teach certain subjects. All teacher training candidates are also eligible for tuition fee and maintenance loans.
+### Postgraduate scholarships and bursaries
 
-[Find out more about funding your training](/funding-and-support).
+You may also be eligible for a postgraduate scholarship or bursary if you’re training to teach certain subjects.
+
+[Find out more about scholarships and bursaries](/scholarships-and-bursaries).
+
+All teacher training candidates are also eligible for [tuition fee and maintenance loans](/tuition-fee-and-maintenance-loans).
+
+## Military equivalent qualifications
+
+You’ll need different qualifications depending on [who you want to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+
+If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your course provider, or a [teacher training adviser](/teacher-training-advisers).
+
+You may also be able to do a top up degree to boost your qualifications to meet the standard required. Talk to your teacher training adviser and course provider to find out about your options.
 
 ## Get support
+
+Talk to a teacher training adviser. All our advisers are experienced teachers who can answer your questions and support you with your application.
+
+As a veteran, you can get an adviser with or without a degree.
+
+If you do not have a degree and would like an adviser, call us on **0800 389 2500** or chat to us online.
+
+Our chat and telephone services are available Monday to Friday between 8:30am and 5:30pm
+
+$chat$
 
 [The Career Transition Partnership](https://www.ctp.org.uk/) supports leavers of the armed forces as they transition from the military into civilian life.
 
 The [MOD's Enhanced Learning Credits Scheme (ELC)](https://www.enhancedlearningcredits.com/) promotes lifelong learning amongst members of the armed forces by providing financial support to pay for approved qualifications. You can contact them to find out about eligibility.
 
 If you're unsure about who to contact for support, [Veteran's Gateway](https://www.veteransgateway.org.uk/about/) can help put you in touch with the organisations you may need for advice and support.
-
-## Military equivalent qualifications
-
-You’ll need different qualifications depending on [who you want to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
-
-If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your teacher training provider, or a [teacher training adviser](/teacher-training-advisers).
-
-You may also be able to do a top up degree to boost your qualifications to meet the standard required. Talk to your teacher training adviser and provider to find out about your options.
