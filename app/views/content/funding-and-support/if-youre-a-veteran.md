@@ -45,9 +45,9 @@ You do not need to apply for a bursary. Your teacher training provider will dete
 
 You may also be eligible for a postgraduate scholarship or bursary if you’re training to teach certain subjects.
 
-[Find out more about scholarships and bursaries](/scholarships-and-bursaries).
+[Find out more about scholarships and bursaries](/funding-and-support/scholarships-and-bursaries).
 
-All teacher training candidates are also eligible for [tuition fee and maintenance loans](/tuition-fee-and-maintenance-loans).
+All teacher training candidates are also eligible for [tuition fee and maintenance loans](/funding-and-support/tuition-fee-and-maintenance-loans).
 
 ## Military equivalent qualifications
 
