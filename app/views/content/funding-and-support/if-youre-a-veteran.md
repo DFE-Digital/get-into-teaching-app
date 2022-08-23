@@ -49,14 +49,6 @@ You may also be eligible for a postgraduate scholarship or bursary if you’re t
 
 All teacher training candidates are also eligible for [tuition fee and maintenance loans](/funding-and-support/tuition-fee-and-maintenance-loans).
 
-## Military equivalent qualifications
-
-You’ll need different qualifications depending on [who you want to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
-
-If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your course provider, or a [teacher training adviser](/teacher-training-advisers).
-
-You may also be able to do a top up degree to boost your qualifications to meet the standard required. Talk to your teacher training adviser and course provider to find out about your options.
-
 ## Get support
 
 Talk to a teacher training adviser. All our advisers are experienced teachers who can answer your questions and support you with your application.
@@ -74,3 +66,11 @@ $chat$
 The [MOD's Enhanced Learning Credits Scheme (ELC)](https://www.enhancedlearningcredits.com/) promotes lifelong learning amongst members of the armed forces by providing financial support to pay for approved qualifications. You can contact them to find out about eligibility.
 
 If you're unsure about who to contact for support, [Veteran's Gateway](https://www.veteransgateway.org.uk/about/) can help put you in touch with the organisations you may need for advice and support.
+
+## Military equivalent qualifications
+
+You’ll need different qualifications depending on [who you want to teach](/train-to-be-a-teacher/who-do-you-want-to-teach).
+
+If you’re unsure about whether your qualifications achieved through military service meet the standard required, talk to your course provider, or a [teacher training adviser](/teacher-training-advisers).
+
+You may also be able to do a top up degree to boost your qualifications to meet the standard required. Talk to your teacher training adviser and course provider to find out about your options.
