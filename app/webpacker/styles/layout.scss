@@ -119,4 +119,12 @@ section.container {
     flex: 0 1 100%;
     @include indent-left-and-right;
   }
+
+  &--no-bottom-margin {
+    margin-bottom: 0;
+
+    > article {
+      margin-bottom: 0;
+    }
+  }
 }
