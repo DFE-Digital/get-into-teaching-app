@@ -57,13 +57,13 @@ I can’t emphasise enough how important it is to avoid spelling mistakes. Make 
 
 ## References
 
-And finally, we turn to references. Who you pick is really important. You'll need 2 references.
+And finally, we turn to references. You'll need 2 referees.
 
 Who you should pick as your referees will depend on your circumatances.
 
 If you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher. If you’re applying for a salaried course, one of your references must be from an employer.
 
-You'll provide the details for your referees when you apply, but they will not be contacted unless you are offered a place on a teacher training course. Read more about [choosing your referees.](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees)
+You'll provide the details for your referees when you apply, but they will not be contacted unless you are offered a place on a teacher training course. Read more about [choosing your referees](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees).
 
 ## Responses
 
