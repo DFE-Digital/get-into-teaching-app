@@ -2,7 +2,7 @@
 title: "Funding and support if you're a veteran"
 heading: "Support training to teach if you're a veteran"
 description: |-
-    Find out about the support you can get while training to teach if you're a veteran.
+    Find out how to get support when training to teach if you're a veteran.
 related_content:
     Salaries and benefits of teaching: "/salaries-and-benefits"
     Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
@@ -11,7 +11,7 @@ promo_content:
     - content/funding-and-support/promos/get-adviser-veterans-promo
 navigation: 20.30
 navigation_title: If you're a veteran
-navigation_description: Find out about the support you can get while training to teach if you're a veteran.
+navigation_description: Find out how to get support when training to teach if you're a veteran.
 calls_to_action:
   chat:
     name: chat
@@ -51,7 +51,15 @@ All teacher training candidates are also eligible for [tuition fee and maintenan
 
 ## Get support
 
-Talk to a teacher training adviser. All our advisers are experienced teachers who can answer your questions and support you with your application.
+[The Career Transition Partnership](https://www.ctp.org.uk/) supports leavers of the armed forces as they transition from the military into civilian life.
+
+The [MOD's Enhanced Learning Credits Scheme (ELC)](https://www.enhancedlearningcredits.com/) promotes lifelong learning amongst members of the armed forces by providing financial support to pay for approved qualifications. You can contact them to find out about eligibility.
+
+If you're unsure about who to contact for support, [Veteran's Gateway](https://www.veteransgateway.org.uk/about/) can help put you in touch with the organisations you may need for advice and support.
+
+### Get an adviser
+
+You can get a teacher training adviser and talk to someone just like you who has left the armed forces and gone into teaching.
 
 As a veteran, you can get an adviser with or without a degree.
 
@@ -60,12 +68,6 @@ Call us on **0800 389 2500** or chat to us online to get an adviser.
 Our chat and telephone services are available Monday to Friday between 8:30am and 5:30pm
 
 $chat$
-
-[The Career Transition Partnership](https://www.ctp.org.uk/) supports leavers of the armed forces as they transition from the military into civilian life.
-
-The [MOD's Enhanced Learning Credits Scheme (ELC)](https://www.enhancedlearningcredits.com/) promotes lifelong learning amongst members of the armed forces by providing financial support to pay for approved qualifications. You can contact them to find out about eligibility.
-
-If you're unsure about who to contact for support, [Veteran's Gateway](https://www.veteransgateway.org.uk/about/) can help put you in touch with the organisations you may need for advice and support.
 
 ## Military equivalent qualifications
 
