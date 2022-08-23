@@ -63,7 +63,7 @@ Talk to a teacher training adviser. All our advisers are experienced teachers wh
 
 As a veteran, you can get an adviser with or without a degree.
 
-If you do not have a degree and would like an adviser, call us on **0800 389 2500** or chat to us online.
+Call us on **0800 389 2500** or chat to us online to get an adviser.
 
 Our chat and telephone services are available Monday to Friday between 8:30am and 5:30pm
 
