@@ -255,6 +255,12 @@ Find out what financial support is available to [fund your training](/funding-an
 
 ## Tips for schools and training providers
 
+### Help from DfE
+
+DfE has made some funding available for assessment-only QTS programmes for Ukrainians. Contact teach.inengland@education.gov.uk for more information. 
+
+From spring 2023, Ukrainians will be able to [apply to the Teaching Regulation Agency for QTS](#apply-for-qts-in-england-from-spring-2023).
+
 ### Visas and immigration
 
 Most Ukrainian refugees will not need to be sponsored for a skilled worker or student visa. [Find out more about visa schemes for Ukrainian refugees, allowing them to live, work and study in the UK](#check-the-status-of-your-visa).
@@ -267,12 +273,12 @@ UK ENIC can provide a [statement of comparability](https://www.enic.org.uk/Quali
 
 ### Alternative roles in school
 
-DfE encourages schools to employ Ukrainian teachers and prospective teachers as teaching assistants if a qualified teacher role isn't appropriate. This experience can then count towards an application for [assessment only QTS](#assessment-only-qts). 
+DfE encourages schools to employ Ukrainian teachers and prospective teachers as teaching assistants if a qualified teacher role isn't available. Ukrainians can then be supported to gain QTS via [assessment only QTS](#assessment-only-qts). 
 
 ### Safeguarding
 
 Schools must adopt robust recruitment procedures preventing overseas applicants who are unsuitable to work with children from securing a role in school.
-Schools must be guided by the [statutory guidance on safeguarding children and safer recruitment](https://www.gov.uk/government/publications/keeping-children-safe-in-education--2). They should also carry out [additional checks related to international recruitment and training](https://www.gov.uk/guidance/recruit-teachers-from-overseas#safeguarding-checks-for-teachers-from-overseas).  
+Schools must be guided by the [statutory guidance on safeguarding children and safer recruitment](https://www.gov.uk/government/publications/keeping-children-safe-in-education--2). They should also carry out [additional checks related to international recruitment and training](https://www.gov.uk/guidance/recruit-teachers-from-overseas#makean).  
 
 Given documentation may be difficult for refugees to provide, we expect schools to draw on a varying range of sources on a case by case basis, depending on the individual in question. It is good practice to carry out a risk assessment recording the evidence you have gathered to reach your decision. 
 
