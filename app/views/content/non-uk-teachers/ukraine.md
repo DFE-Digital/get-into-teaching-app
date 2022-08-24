@@ -133,7 +133,7 @@ For a short-term unpaid placement, you can [request school experience in a prima
 
 Most teaching vacancies are advertised in March, April or the first half of May, with jobs starting at the beginning of the school year in September. Set up a [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) job alert to be updated about opportunities throughout the year.
 
-### Other options
+### Other teaching job options
 
 Search online for 'supply teacher' to register with an agency for short-term roles in school. Supply teachers fill in when schools are temporarily short of staff.  
 
@@ -154,7 +154,7 @@ Your personal statement needs to cover your teaching approach, your experience a
 
 Some schools may ask for a curriculum vitae (CV) – [get tips on writing a CV](https://nationalcareers.service.gov.uk/careers-advice/cv-sections).
 
-If you're shortlisted, you’ll be invited for interview and asked to teach part of a class. If the school makes you a conditional offer, you’ll then have to pass [safeguarding and criminal records checks](#what-you’ll-need-to-pass-safeguarding-and-criminal-records-checks).
+If you're shortlisted, you’ll be invited for interview and asked to teach part of a class. If the school makes you a conditional offer, you’ll then have to pass [safeguarding and criminal records checks](#what-youll-need-to-pass-safeguarding-and-criminal-records-checks).
 
 
 ### Qualified teacher status
@@ -190,7 +190,8 @@ If you miss the deadline to apply this year, you could consider finding work as 
 
 ### Fees and financial support
 
-From 1 August 2022, Ukrainian refugees will also have access to the same financial support as UK applicants. This means you will:
+From 1 August 2022, Ukrainian refugees in the UK under [the Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa),
+[the Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or [the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme) will also have access to the same financial support as UK applicants. This means you will:
 
 * have the right to apply for a [student loan, bursary, scholarship](/funding-and-support) or an [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
 * pay the same training fees as UK applicants (up to £9,250 for a full-time course)
