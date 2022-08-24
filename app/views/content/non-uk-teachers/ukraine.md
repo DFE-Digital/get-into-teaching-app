@@ -265,6 +265,10 @@ Schools should assess the qualifications and experience of Ukrainian teachers in
 
 UK ENIC can provide a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) to applicants showing how their academic and professional qualifications compare to the English equivalents.
 
+### Alternative roles in school
+
+DfE encourages schools to employ Ukrainian teachers and prospective teachers as teaching assistants if a qualified teacher role isn't appropriate. This experience can then count towards an application for [assessment only QTS](#assessment-only-qts). 
+
 ### Safeguarding
 
 Schools must adopt robust recruitment procedures preventing overseas applicants who are unsuitable to work with children from securing a role in school.
