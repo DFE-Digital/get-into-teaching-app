@@ -45,7 +45,7 @@ inset_text:
 
 $still-time-to-apply$
 
-Overseas teachers enrich the lives of students and add value to schools and the wider community. The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) wishes to assist Ukrainian refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
+Overseas teachers enrich the lives of students and add value to schools and the wider community. The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) wants to help Ukrainian refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
 
 We can help if you’re interested in teaching children aged 5 to 18. If you'd like to teach other age groups, try [teaching in a university](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer) or [teaching in further education](https://nationalcareers.service.gov.uk/job-profiles/further-education-lecturer). 
 
@@ -55,7 +55,9 @@ If you're coming to the UK from Ukraine, [check what you need to do before you t
 
 ### Check the status of your visa
 
-If you are in the UK on the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme), you already have the right to work as a teacher or train to be a teacher in the UK. You are also eligible to [apply for financial support if you choose to train to teach](#fees-and-financial-support).
+You already have the right to work as a teacher or train to be a teacher in England if you are in the UK on the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
+
+You are also eligible to [apply for financial support if you choose to train to teach](#fees-and-financial-support).
 
 If you’re not sure of the status of your visa, check:
 
@@ -65,7 +67,7 @@ If you’re not sure of the status of your visa, check:
 
 If you are already in the UK under a [different type of visa](https://www.gov.uk/guidance/ukrainian-nationals-in-the-uk-visa-support) (for example, a visitor or seasonal worker visa) you can apply to the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme). 
 
-### What is the most appropriate visa for Ukrainians who wish to stay in the UK long-term?
+### Best visa for Ukrainians wanting to stay in the UK long-term
 
 If you are interested in working as a teacher and applying for [indefinite leave to remain in the UK](https://www.gov.uk/indefinite-leave-to-remain), you should consider a [skilled worker visa](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration).   
 
@@ -108,7 +110,7 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 
 Most local authorities (also called 'councils') offer English to Speakers of Other Languages (ESOL) courses as part of adult education.
 
-If you’re in the UK under a Ukrainian visa scheme and looking for work, you can study an ESOL course for free. If you're working, you'll get a 50% discount off your fees. Visit the council website for the area where you live and search ESOL, or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
+If you’re in the UK under a Ukrainian visa scheme and looking for work, you can study an ESOL course for free. If you're working, you'll get a 50% discount off your fees. [Visit the council website](https://www.gov.uk/find-local-council) for the area where you live and search ESOL, or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
 
  
 You can also learn English with a private provider. Well-respected English language courses include: 
@@ -131,7 +133,11 @@ For a short-term unpaid placement, you can [request school experience in a prima
 
 Most teaching vacancies are advertised in March, April or the first half of May, with jobs starting at the beginning of the school year in September. Set up a [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) job alert to be updated about opportunities throughout the year.
 
-You can also search [Tes Jobs](https://www.tes.com/jobs/), [Teach Now](https://teach-now.co.uk/), and [Education Jobs](https://www.education-jobs.co.uk/).
+### Other options
+
+Search online for 'supply teacher' to register with an agency for short-term roles in school. Supply teachers fill in when schools are temporarily short of staff.  
+
+Search your [local authority ('council') website](https://www.gov.uk/find-local-council) for teaching roles.
 
 ### Tips on applying 
 
@@ -142,9 +148,11 @@ As part of your application, schools will usually ask for your:
 * personal statement
 * references
 
-Your personal statement should cover your teaching approach, your experience and how you would contribute to the life of the school. [Read tips on writing a personal statement](https://www.tes.com/jobs/careers-advice/application-and-interview/how-write-perfect-teaching-personal-statement).
+Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school. 
 
-Some schools may ask for a curriculum vitae (CV) – [read tips on writing a CV](https://nationalcareers.service.gov.uk/careers-advice/cv-sections).
+[Tips on writing a personal statement](https://www.tes.com/jobs/careers-advice/application-and-interview/how-write-perfect-teaching-personal-statement).
+
+Some schools may ask for a curriculum vitae (CV) – [get tips on writing a CV](https://nationalcareers.service.gov.uk/careers-advice/cv-sections).
 
 If you're shortlisted, you’ll be invited for interview and asked to teach part of a class. If the school makes you a conditional offer, you’ll then have to pass [safeguarding and criminal records checks](#what-you’ll-need-to-pass-safeguarding-and-criminal-records-checks).
 
@@ -184,12 +192,12 @@ If you miss the deadline to apply this year, you could consider finding work as 
 
 From 1 August 2022, Ukrainian refugees will also have access to the same financial support as UK applicants. This means you will:
 
-* have the right to apply for [student loan, bursary, scholarship](/funding-and-support) or [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
+* have the right to apply for a [student loan, bursary, scholarship](/funding-and-support) or an [advanced learner loan](https://www.gov.uk/advanced-learner-loan) to help cover your fees and living expenses
 * pay the same training fees as UK applicants (up to £9,250 for a full-time course)
 
 If you are not in the UK under one of these schemes, [find out about switching to a different type of visa](#check-the-status-of-your-visa) so you can train to teach. Not all visas will give you the right to apply for a student loan. 
 
-Teacher training in England takes 1 year of full-time study and leads to QTS. At the end of your training you can apply for paid teaching jobs.
+Teacher training in England takes 1 year of full-time study and leads to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). At the end of your training you can apply for paid teaching jobs.
 
 ### What you’ll need
 
@@ -206,7 +214,7 @@ You will also need to:
 
 * have the health and physical capacity to train to teach
 * undergo safeguarding and criminal record checks carried out by your training provider or employer
-* show your training provider you meet their standards for maths and English (you’ll usually have to show you’ve passed an [English language test](#meeting-the-standard-for-written-and-spoken-english)
+* show your training provider you meet their standards for maths and English (you’ll usually have to show you’ve passed an [English language test](#meeting-the-standard-for-written-and-spoken-english))
 
 ### Get help applying for teacher training
 
