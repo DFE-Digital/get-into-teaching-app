@@ -32,7 +32,7 @@ Growing up as a profoundly deaf child, I had a positive upbringing in my mainstr
 
 ## How did you find the application process?
 
-The application process went smoothly thanks to the help of my [teacher training adviser](/teacher-training-advisers), Ellie. She was understanding and motivated me to finish applying! My top tips for making a successful application are — be yourself! Show your authentic self, and patience is key!
+The application process went smoothly thanks to the help of my [teacher training adviser](/tta-service), Ellie. She was understanding and motivated me to finish applying! My top tips for making a successful application are — be yourself! Show your authentic self, and patience is key!
 
 ## If someone asked, ‘Should I become a Teacher?’, what might you advise?
 

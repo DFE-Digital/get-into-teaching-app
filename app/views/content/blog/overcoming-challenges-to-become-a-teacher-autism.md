@@ -34,7 +34,7 @@ I wanted to be a teacher when I was in secondary school, but I was put off it as
 
 ## How did you find the application process?
 
-I had the help of a [teacher training adviser](/teacher-training-advisers), which was extremely beneficial when editing my personal statement and preparing for interviews. She sent me a list of pretty much every question I could have been asked, so I was able to prepare a wide range of answers and content for my interview. My top tips for the application process would be to get an adviser, and to think about what transferrable skills you have when writing your personal statement and answering interview questions. You don’t need experience in a classroom; I had plenty to talk about without that. Think about the skills you have gained from any jobs you have already had, or anything else in your life, and how those skills could be applied to teaching.
+I had the help of a [teacher training adviser](/tta-service), which was extremely beneficial when editing my personal statement and preparing for interviews. She sent me a list of pretty much every question I could have been asked, so I was able to prepare a wide range of answers and content for my interview. My top tips for the application process would be to get an adviser, and to think about what transferrable skills you have when writing your personal statement and answering interview questions. You don’t need experience in a classroom; I had plenty to talk about without that. Think about the skills you have gained from any jobs you have already had, or anything else in your life, and how those skills could be applied to teaching.
 
 ## What are your concerns prior to beginning your teacher training course?
 
