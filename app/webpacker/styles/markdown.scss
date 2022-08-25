@@ -131,6 +131,12 @@
     }
   }
 
+  &.campaign {
+    > h2 {
+      @extend .heading--box-yellow;
+    }
+  }
+
   &.disclaimer {
     p,
     ul,

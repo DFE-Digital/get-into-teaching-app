@@ -1,5 +1,11 @@
 ---
 # hero
+"media/images/content/hero-images/cake.jpg":
+  alt: "A cake with a fork next to it."
+  variants:
+    # - "media/images/content/hero-images/cake--mobile.jpg"
+    # - "media/images/content/hero-images/cake--tablet.jpg"
+
 "media/images/content/hero-images/0001.jpg":
   alt: "Maths teacher standing in front of a whiteboard with maths equations."
   variants:
@@ -369,3 +375,13 @@
 
 "media/images/content/homepage/teacher-training-adviser.jpg":
   alt: "Teacher in a staff room talking to a colleague."
+
+# food for thought
+"media/images/content/food-for-thought/1.png":
+  alt: "TODO"
+"media/images/content/food-for-thought/2.png":
+  alt: "TODO"
+"media/images/content/food-for-thought/3.png":
+  alt: "TODO"
+"media/images/content/food-for-thought/4.png":
+  alt: "TODO"
