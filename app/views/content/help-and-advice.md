@@ -33,6 +33,10 @@ An explore teaching adviser can support you if you're an undergraduate student a
 - get classroom experience
 - connect with other students who are considering teaching
 
+<p class="call-to-action__action">
+  <a href="/tta-service">Get an <span>adviser</span></a>
+</p>
+
 ## Attend an event
 
 Our events are a great way to meet teachers and other experts to talk about any concerns or questions you have about becoming a teacher.
@@ -44,8 +48,6 @@ There are online, text-based sessions where you can ask a panel of specialists t
 ### Training provider events
 
 You could also attend a training provider event, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
-
-<a href="/events" class="button">Search for an event</a>
 
 ### Train to Teach events
 
