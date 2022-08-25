@@ -116,7 +116,7 @@ If you’re a returning teacher who already has qualified teacher status (QTS), 
 
 $get-a-tta$
 
-## Not a final year student?
+## Not a final year student or graduate?
 
 You can still get an adviser if you're an undergraduate student not in your final year.
 

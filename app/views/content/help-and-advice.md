@@ -13,13 +13,13 @@ calls_to_action:
 ---
 ## Get an adviser
 
-Advisers provide free, one-to-one support by phone, text or email. They're all experienced, former teachers and able to answer any questions you have.
+Advisers provide free, one-to-one support by phone, text or email. They all have years of teaching experience and are able to answer any questions you have.
 
 You will have your own dedicated adviser to support you.
 
 ### Teacher training advisers
 
-A <a href="/teacher-training-advisers">teacher training adviser</a> can help you if you're a final year undergraduate student or if you already have a degree. They can help you:
+A teacher training adviser can support you if you're a final year undergraduate student or if you already have a degree. They can help you:
 
 - understand more about teacher training courses
 - find funding and support available to you
@@ -27,7 +27,7 @@ A <a href="/teacher-training-advisers">teacher training adviser</a> can help you
 
 ### Explore teaching advisers
 
-An <a href="/explore-teaching-advisers">explore teaching adviser</a> can help you if you're an undergraduate student not in your final year of study. They can help you:
+An explore teaching adviser can support you if you're an undergraduate student and not in your final year of study. They can help you:
 
 - understand what teaching is really like
 - get classroom experience
