@@ -2,7 +2,7 @@
 title: "Funding and support if you're a veteran"
 heading: "Support training to teach if you're a veteran"
 description: |-
-    Find out how to get support when training to teach if you're a veteran.
+    Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 related_content:
     Salaries and benefits of teaching: "/salaries-and-benefits"
     Teach in further education without a degree: "https://www.teach-in-further-education.campaign.gov.uk/"
@@ -11,7 +11,7 @@ promo_content:
     - content/funding-and-support/promos/get-adviser-veterans-promo
 navigation: 20.30
 navigation_title: If you're a veteran
-navigation_description: Find out how to get support when training to teach if you're a veteran.
+navigation_description: Find out how to get support training to teach if you're a veteran transitioning from or you've already left the armed forces.
 calls_to_action:
   chat:
     name: chat
@@ -31,7 +31,7 @@ There are full and part-time teacher training courses available.
 
 ## Undergraduate bursary for veterans
 
-You may be eligible for a tax-free undergraduate bursary of £40,000 if you’re:
+You may be eligible for a tax-free undergraduate bursary of £40,000 if you’re (all of the following):
 
 * a veteran
 * training to teach secondary biology, physics, chemistry, computing, maths or languages
@@ -39,7 +39,7 @@ You may be eligible for a tax-free undergraduate bursary of £40,000 if you’re
 
 Doing an undergraduate degree leading to QTS means that you would be qualified to teach in England.
 
-You do not need to apply for a bursary. Your teacher training provider will determine whether you are eligible and will then pay you in monthly instalments across the final 2 years of your course.
+You do not need to apply for a bursary to get one. Your teacher training provider will determine whether you are eligible and will then pay you in monthly instalments across the final 2 years of your course.
 
 ## Postgraduate scholarships and bursaries
 
