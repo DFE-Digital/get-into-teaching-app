@@ -41,7 +41,7 @@ Doing an undergraduate degree leading to QTS means that you would be qualified t
 
 You do not need to apply for a bursary. Your teacher training provider will determine whether you are eligible and will then pay you in monthly instalments across the final 2 years of your course.
 
-### Postgraduate scholarships and bursaries
+## Postgraduate scholarships and bursaries
 
 You may also be eligible for a postgraduate scholarship or bursary if you’re training to teach certain subjects.
 
@@ -59,7 +59,7 @@ If you're unsure about who to contact for support, [Veteran's Gateway](https://w
 
 ### Get an adviser
 
-You can get a teacher training adviser and talk to someone just like you who has left the armed forces and gone into teaching.
+You can get free dedicated support from a teacher training adviser and talk to someone just like you who has left the armed forces and gone into teaching.
 
 As a veteran, you can get an adviser with or without a degree.
 
