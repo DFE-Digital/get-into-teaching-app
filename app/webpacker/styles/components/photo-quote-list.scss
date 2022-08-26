@@ -1,7 +1,7 @@
 // grid layout
 ol.photo-quote-list .wrapper {
   display: grid;
-  grid-template-rows: min-content 3em min-content min-content min-content;
+  grid-template-rows: min-content 2em min-content min-content min-content;
   grid-template-columns: $indent-amount 20% auto $indent-amount;
 
   picture {
@@ -9,7 +9,7 @@ ol.photo-quote-list .wrapper {
   }
 
   h3 {
-    grid-area: 2 / 3 / span 2 / span 2;
+    grid-area: 2 / 2 / span 2 / span 2;
   }
 
   p {
@@ -21,7 +21,7 @@ ol.photo-quote-list .wrapper {
   }
 
   @include mq($from: tablet) {
-    grid-template-columns: $indent-amount auto 3 * $indent-amount $indent-amount auto $indent-amount;
+    grid-template-columns: $indent-amount auto 2 * $indent-amount $indent-amount auto $indent-amount;
     grid-template-rows: auto;
 
     picture {
@@ -117,8 +117,7 @@ ol.photo-quote-list {
 
       h3 {
         max-width: 100%;
-        text-align: right;
-        margin-top: 1.5rem;
+        margin-right: 2.5 * $indent-amount;
         @extend .heading-xl, .heading--margin-bottom-0;
       }
     }
@@ -138,6 +137,7 @@ ol.photo-quote-list {
 
         h3 {
           @include font-size("large");
+          margin-top: $indent-amount;
         }
       }
     }
