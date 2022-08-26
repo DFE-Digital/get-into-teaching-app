@@ -142,4 +142,10 @@ ol.photo-quote-list {
       }
     }
   }
+
+  @include mq($from: tablet, $until: wide) {
+    .item .wrapper picture img {
+      width: 220px;
+    }
+  }
 }
