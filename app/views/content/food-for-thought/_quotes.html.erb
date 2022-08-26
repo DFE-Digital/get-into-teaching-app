@@ -1,28 +1,41 @@
-<%= render Content::PhotoQuoteListComponent.new(
-  [
-    {
-      image: "media/images/content/food-for-thought/1.png",
-      heading: "Keep losing your notes?",
-      text: "Morbi faucibus, ipsum et tincidunt cursus, magna nisl scelerisque dolor, et egestas velit nulla vitae lorem. In facilisis cursus mauris, vel porta mauris varius vitae. Morbi dignissim risus eu mi tincidunt, sit amet pretium est tristique.",
-      accreditation: ["Name - Occupation", "University credential"],
-    },
-    {
-      image: "media/images/content/food-for-thought/2.png",
-      heading: "What's your name again?",
-      text: "Morbi faucibus, ipsum et tincidunt cursus, magna nisl scelerisque dolor, et egestas velit nulla vitae lorem. In facilisis cursus mauris, vel porta mauris varius vitae. Morbi dignissim risus eu mi tincidunt, sit amet pretium est tristique.",
-      accreditation: ["Name - Occupation", "University credential"],
-    },
-    {
-      image: "media/images/content/food-for-thought/3.png",
-      heading: "Consectetur adipiscing elit, sed do",
-      text: "Morbi faucibus, ipsum et tincidunt cursus, magna nisl scelerisque dolor, et egestas velit nulla vitae lorem. In facilisis cursus mauris, vel porta mauris varius vitae. Morbi dignissim risus eu mi tincidunt, sit amet pretium est tristique.",
-      accreditation: ["Name - Occupation", "University credential"],
-    },
-    {
-      image: "media/images/content/food-for-thought/4.png",
-      heading: "Duis aute irure dolor in reprehenderit",
-      text: "Morbi faucibus, ipsum et tincidunt cursus, magna nisl scelerisque dolor, et egestas velit nulla vitae lorem. In facilisis cursus mauris, vel porta mauris varius vitae. Morbi dignissim risus eu mi tincidunt, sit amet pretium est tristique.",
-      accreditation: ["Name - Occupation", "University credential"],
-    }
-  ]
-) %>
+<section class="container">
+  <article class="markdown campaign">
+    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+
+    <p>
+      Praesent lorem ligula, lacinia sit amet tincidunt et, tempus quis libero.
+      Quisque nisl sem, efficitur nec tempus ut, ultricies non velit.
+      Pellentesque iaculis ac enim vel blandit. Suspendisse potenti.
+      Vivamus rhoncus lobortis risus, vitae tristique lacus gravida tempus.
+    </p>
+
+    <%= render Content::PhotoQuoteListComponent.new(
+      [
+        {
+          image: "media/images/content/food-for-thought/1.png",
+          heading: "Keep losing your notes?",
+          text: "Morbi faucibus, ipsum et tincidunt cursus, magna nisl scelerisque dolor, et egestas velit nulla vitae lorem. In facilisis cursus mauris, vel porta mauris varius vitae. Morbi dignissim risus eu mi tincidunt, sit amet pretium est tristique.",
+          accreditation: ["Name - Occupation", "University credential"],
+        },
+        {
+          image: "media/images/content/food-for-thought/2.png",
+          heading: "What's your name again?",
+          text: "Morbi faucibus, ipsum et tincidunt cursus, magna nisl scelerisque dolor, et egestas velit nulla vitae lorem. In facilisis cursus mauris, vel porta mauris varius vitae. Morbi dignissim risus eu mi tincidunt, sit amet pretium est tristique.",
+          accreditation: ["Name - Occupation", "University credential"],
+        },
+        {
+          image: "media/images/content/food-for-thought/3.png",
+          heading: "Consectetur adipiscing elit, sed do",
+          text: "Morbi faucibus, ipsum et tincidunt cursus, magna nisl scelerisque dolor, et egestas velit nulla vitae lorem. In facilisis cursus mauris, vel porta mauris varius vitae. Morbi dignissim risus eu mi tincidunt, sit amet pretium est tristique.",
+          accreditation: ["Name - Occupation", "University credential"],
+        },
+        {
+          image: "media/images/content/food-for-thought/4.png",
+          heading: "Duis aute irure dolor in reprehenderit",
+          text: "Morbi faucibus, ipsum et tincidunt cursus, magna nisl scelerisque dolor, et egestas velit nulla vitae lorem. In facilisis cursus mauris, vel porta mauris varius vitae. Morbi dignissim risus eu mi tincidunt, sit amet pretium est tristique.",
+          accreditation: ["Name - Occupation", "University credential"],
+        }
+      ]
+    ) %>
+  </article>
+</section>

@@ -1,10 +1,10 @@
 ---
 # hero
-"media/images/content/hero-images/cake.jpg":
-  alt: "A cake with a fork next to it."
+"media/images/content/hero-images/cake.png":
+  alt: "A multicoloured cake with sprinkles."
   variants:
-    # - "media/images/content/hero-images/cake--mobile.jpg"
-    # - "media/images/content/hero-images/cake--tablet.jpg"
+    - "media/images/content/hero-images/cake--mobile.png"
+    - "media/images/content/hero-images/cake--tablet.png"
 
 "media/images/content/hero-images/0001.jpg":
   alt: "Maths teacher standing in front of a whiteboard with maths equations."
