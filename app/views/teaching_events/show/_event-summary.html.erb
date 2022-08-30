@@ -8,8 +8,11 @@
 
 <%= tag.div(formatted_event_description(@event.description)) %>
 
-<% if @event.video_url %>
+<% if @event.video_id %>
   <div class="teaching-event__video youtube-video-container">
-    <%= tag.iframe(src: embed_event_video_url(@event.video_url), frameborder: "0", allowfullscreen: true, title: "Train to Teach Events: Take your next step towards teaching") %>
+    <%= render Content::YoutubeVideoComponent.new(
+      id: @event.video_id,
+      title: "Train to Teach Events: Take your next step towards teaching"
+    ) %>
   </div>
 <% end %>
