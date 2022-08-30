@@ -15,12 +15,6 @@ calls_to_action:
       text: Train to Teach and Support slides
       file_path: media/documents/train-to-teach-and-support.pdf
       file_type: PDF
-  ready-to-apply:
-    name: attachment
-    arguments:
-      text: Ready to Apply slides
-      file_path: media/documents/ready-to-apply.pdf
-      file_type: PDF
 keywords:
   - Train to Teach
   - Event
@@ -43,14 +37,3 @@ This presentation covers:
 - Advice and support from teacher training advisers
 
 $train-to-teach-and-support$
-
-## Ready to Apply?
-
-This presentation covers:
-
-- School experience
-- Training providers
-- Your application, including personal statement, work and school experience statements and references
-- Interviews
-
-$ready-to-apply$

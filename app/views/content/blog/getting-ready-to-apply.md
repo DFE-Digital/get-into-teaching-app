@@ -73,9 +73,9 @@ If you’re an undergraduate student interested in teaching physics, maths, comp
 
 ## 6. Start lining up your references
 
-You’ll need a couple of referees to provide references for your application. Your references will confirm to providers that you're a good fit for teaching.
+You’ll need a couple of references for your application. Your references will confirm to providers that you're a good fit for teaching.
 
-When you apply, you'll need to submit your referees' details. If the training provider offers you a place, they'll contact your referees to find out more about you.
+When you apply, you'll need to submit your referees' details. If the training provider offers you a place and you accept, they'll contact your referees to find out more about you.
 
 ## 7. Engage with the world of schools and teaching
 

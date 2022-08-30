@@ -1,5 +1,5 @@
 ---
-title: How to apply for teacher training
+title: How to get into teaching
 subtitle: A step-by-step-guide
 date: "2022-05-17"
 images:
@@ -7,7 +7,7 @@ images:
     path: "media/images/content/blog/applying-for-teacher.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/applying-for-teacher.jpg"
 description: |-
-  From effective preparation, to submitting your application, we’ve broken down the whole process into manageable steps, so you can see exactly what’s involved.
+  From effective preparation, to submitting your application, we’ve broken down the whole process of getting into teaching into manageable steps.
 keywords:
   - teacher training
   - apply
@@ -101,7 +101,7 @@ It’s your opportunity to show your enthusiasm for teaching a particular subjec
 
 Your referees can tell training providers about your qualities and abilities, so it’s important they know you well.
 
-You'll provide your referee details when you apply. If you're offered a place on a course, your teacher training provider will then contact your referees.
+You'll provide your referee details when you apply. If you're offered a place on a course, your teacher training provider will then contact your referees once you accept their offer.
 
 [Find out more about the requirements for references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees).
 

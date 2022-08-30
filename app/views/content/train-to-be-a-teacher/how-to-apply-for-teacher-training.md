@@ -103,9 +103,9 @@ not convinced the admissions team that they’re right for it.
 
 ## Choose your referees
 
-You need 2 referees to apply.
+You need 2 referees to apply. You can provide more, but your teacher training provider will only contact 2.
 
-Unlike a standard work reference, your references for teacher training need to
+Unlike a standard work reference, your referees for teacher training need to
 be named individuals rather than (for example) a human resources team or
 academic department.
 
@@ -124,7 +124,7 @@ Your referee will also be asked if they know of any reason why you should not wo
 
 You'll need different referees depending on your circumstances. If you:
 
-* graduated in the last 5 years, you'll need an academic reference
+* are still studying or graduated in the last 5 years, you'll need an academic reference
 * already work in a school, you'll need a reference from your headteacher
 * are applying for a salaried course, you'll need a reference from an employer
 
@@ -132,11 +132,7 @@ Training providers will accept a character reference, such as a mentor or someon
 
 Referees should not be family members, partners or friends.
 
-You'll provide the details for 2 referees when you apply.
-
-If you get an offer from a teacher training provider for a place on their course, you can review the referee details you've submitted. You can change these if necessary.
-
-Your provider will then contact your referees. If they're happy with them, your teacher training place will then be confirmed.
+You'll provide your referee details when you apply, but they will not be contacted until you accept a place on a course. You can then amend your referee details if necessary.
 
 If you’re struggling to choose your referees, [get free one-on-one support from a
 teacher training adviser](/tta-service).
