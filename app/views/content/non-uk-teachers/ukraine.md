@@ -47,7 +47,7 @@ $still-time-to-apply$
 
 Overseas teachers enrich the lives of students and add value to schools and the wider community. The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) wants to help Ukrainian refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
 
-We can help if you’re interested in teaching children aged 5 to 18. If you'd like to teach other age groups, try [teaching in a university](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer) or [teaching in further education](https://nationalcareers.service.gov.uk/job-profiles/further-education-lecturer). 
+We can help if you’re interested in teaching children aged 5 to 18. If you'd like to teach other age groups, try [teaching in a university](https://nationalcareers.service.gov.uk/job-profiles/higher-education-lecturer) or [teaching in further education](https://www.teach-in-further-education.campaign.gov.uk/). 
 
 ## General information
 
@@ -110,7 +110,7 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 
 Most local authorities (also called 'councils') offer English to Speakers of Other Languages (ESOL) courses as part of adult education.
 
-If you’re in the UK under a Ukrainian visa scheme and looking for work, you can study an ESOL course for free. If you're working, you'll get a 50% discount off your fees. [Visit the council website](https://www.gov.uk/find-local-council) for the area where you live and search ESOL, or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
+If you’re in the UK under a Ukrainian visa scheme (Ukraine Sponsorship Scheme, Ukraine Family Scheme or Ukraine Extension Scheme) and aged 19 or over, you are eligible for funding to study an ESOL course (as well as other educational or training courses). Depending on your circumstances, your ESOL course will either be free or reduced in price. [Visit the council website](https://www.gov.uk/find-local-council) for the area where you live and search ESOL, or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
 
  
 You can also learn English with a private provider. Well-respected English language courses include: 
