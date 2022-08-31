@@ -55,7 +55,11 @@ If you're coming to the UK from Ukraine, [check what you need to do before you t
 
 ### Check the status of your visa
 
-You already have the right to work as a teacher or train to be a teacher in England if you are in the UK on the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
+You already have the right to work or train as a teacher in England if you are in the UK on (one of the following):
+
+* the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
+* the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
+* the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
 
 You are also eligible to [apply for financial support if you choose to train to teach](#fees-and-financial-support).
 
@@ -96,7 +100,7 @@ We understand it might not be possible to provide all this evidence. However, it
 
 ### Help proving your professional qualification to training providers and employers
 
-UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. If you are applying to train to teach, you can get your statement of comparability for free – see [Get help with qualifications and applications for teacher training](#get-help-with-international-qualifications).
+UK ENIC can give you a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your academic and professional qualifications compare to their English equivalent. However, you will need scans or photographs of your original documents. If you are applying to train to teach, you can [get your statement of comparability for free](#get-help-with-international-qualifications).
 
 ## Teach in England 
 
@@ -150,7 +154,7 @@ As part of your application, schools will usually ask for your:
 
 Your personal statement needs to cover your teaching approach, your experience and how you would contribute to the life of the school. 
 
-[Tips on writing a personal statement](https://www.tes.com/jobs/careers-advice/application-and-interview/how-write-perfect-teaching-personal-statement).
+[Get tips on writing a personal statement](https://www.tes.com/jobs/careers-advice/application-and-interview/how-write-perfect-teaching-personal-statement).
 
 Some schools may ask for a curriculum vitae (CV) – [get tips on writing a CV](https://nationalcareers.service.gov.uk/careers-advice/cv-sections).
 
@@ -238,9 +242,9 @@ Call us on +44 800 389 2500 for:
 
 ### How to find and apply for a teacher training course
 
-First, use [Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) to search for courses that lead to QTS by region, subject and age group.
+[Find postgraduate teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) that lead to QTS by region, subject and age group.
 
-Then, you’ll be guided to [Apply for teacher training](https://www.gov.uk/apply-for-teacher-training), which allows you to submit an application. 
+Then, you can [apply for teacher training](https://www.gov.uk/apply-for-teacher-training). 
  
 ### If you do not have a university degree
 
@@ -250,7 +254,7 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 ### Further information
 
-[Find out more about training to be a teacher](/train-to-be-a-teacher) in England. 
+[Find out more about training to be a teacher in England](/train-to-be-a-teacher). 
 
 Find out what financial support is available to [fund your training](/funding-and-support) if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
 
@@ -268,7 +272,7 @@ Most Ukrainian refugees will not need to be sponsored for a skilled worker or st
 
 ### Qualifications
 
-Schools should assess the qualifications and experience of Ukrainian teachers in the same way as other overseas applicants, bearing in mind the exemption provided by the [4-year rule](https://www.gov.uk/guidance/recruit-teachers-from-overseas#employing-overseas-teachers-without-qts-the-4-year-rule).
+Schools should assess the qualifications and experience of Ukrainian teachers in the same way as other overseas applicants, bearing in mind the exemption provided by the [4 year rule](https://www.gov.uk/guidance/recruit-teachers-from-overseas#employing-overseas-teachers-without-qts-the-4-year-rule).
 
 UK ENIC can provide a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) to applicants showing how their academic and professional qualifications compare to the English equivalents.
 
@@ -285,13 +289,13 @@ Given documentation may be difficult for refugees to provide, we expect schools 
 
 ## Useful links
 
-[Move to the UK if you’re coming from Ukraine](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine)
+[Move to the UK if you’re coming from Ukraine](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine).
 
-[Welcome guide for Ukrainians in the UK](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1086088/Ukraine_Welcome_Guide.pdf)
+[Welcome guide for Ukrainians in the UK](https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/1086088/Ukraine_Welcome_Guide.pdf).
 
-[Ukrainians in the UK](https://www.ukrainiansintheuk.info/index.htm) – an online encyclopaedia
+[Ukrainians in the UK](https://www.ukrainiansintheuk.info/index.htm) – an online encyclopaedia.
 
-[The Association of Ukrainians in Great Britain (AUGB)](https://www.augb.co.uk/) – including a list of [Ukrainian community schools in the UK](https://www.augb.co.uk/about-us-and-our-community/ukrainian-community-schools-in-great-britain)
+[The Association of Ukrainians in Great Britain (AUGB)](https://www.augb.co.uk/) – including a list of [Ukrainian community schools in the UK](https://www.augb.co.uk/about-us-and-our-community/ukrainian-community-schools-in-great-britain).
 
 
 ## Contact
