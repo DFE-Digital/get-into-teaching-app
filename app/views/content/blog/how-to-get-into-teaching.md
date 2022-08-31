@@ -97,11 +97,11 @@ It’s your opportunity to show your enthusiasm for teaching a particular subjec
 
 [Read our advice on writing your teacher training personal statement](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-teacher-training-personal-statement).
 
-## 8.	Arrange your references
+## 8.	Arrange your referees
 
 Your referees can tell training providers about your qualities and abilities, so it’s important they know you well.
 
-You'll provide your referee details when you apply. If you're offered a place on a course, your teacher training provider will then contact your referees once you accept their offer.
+You'll need to provide your referee details when you apply. Your teacher training provider will then contact your referees once you accept a place on their course.
 
 [Find out more about the requirements for references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees).
 

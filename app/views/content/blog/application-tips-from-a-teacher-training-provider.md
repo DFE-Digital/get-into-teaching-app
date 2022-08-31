@@ -59,7 +59,7 @@ I can’t emphasise enough how important it is to avoid spelling mistakes. Make 
 
 And finally, we turn to references. You'll need 2 referees.
 
-Who you should pick as your referees will depend on your circumatances.
+You'll need different kinds of referees depending on your circumstances.
 
 If you're still studying or you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher. If you’re applying for a salaried course, one of your references must be from an employer.
 

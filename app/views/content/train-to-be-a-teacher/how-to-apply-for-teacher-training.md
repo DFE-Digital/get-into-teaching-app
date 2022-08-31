@@ -122,7 +122,7 @@ Choose referees who could comment on things like your:
 
 Your referee will also be asked if they know of any reason why you should not work with children.
 
-You'll need different referees depending on your circumstances. If you:
+You'll need different kinds of referees depending on your circumstances. If you:
 
 * are still studying or graduated in the last 5 years, you'll need an academic reference
 * already work in a school, you'll need a reference from your headteacher
@@ -132,9 +132,11 @@ Training providers will accept a character reference, such as a mentor or someon
 
 Referees should not be family members, partners or friends.
 
-You'll provide your referee details when you apply, but they will not be contacted until you accept a place on a course. You can then amend your referee details if necessary.
+You'll need to provide your referee details when you apply, but they will not be contacted until you accept a place on a course.
 
-If you’re struggling to choose your referees, [get free one-on-one support from a
+You can change your referee details once you've accepted a place on a course. You might need to alter your referee's contact details if they have changed, or you may wish to change your referee altogether.
+
+If you’re struggling to choose your referees, [get free one-to-one support from a
 teacher training adviser](/tta-service).
 
 ## Writing your teacher training personal statement
