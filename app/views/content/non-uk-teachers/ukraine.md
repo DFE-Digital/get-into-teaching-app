@@ -59,7 +59,7 @@ You already have the right to work or train as a teacher in England if you are i
 
 * the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa)
 * the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
-* the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
+* the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
 You are also eligible to [apply for financial support if you choose to train to teach](#fees-and-financial-support).
 
@@ -114,10 +114,12 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 
 Most local authorities (also called 'councils') offer English to Speakers of Other Languages (ESOL) courses as part of adult education.
 
-If you’re in the UK under a Ukrainian visa scheme (Ukraine Sponsorship Scheme, Ukraine Family Scheme or Ukraine Extension Scheme) and aged 19 or over, you are eligible for funding to study an ESOL course (as well as other educational or training courses). Depending on your circumstances, your ESOL course will either be free or reduced in price. [Visit the council website](https://www.gov.uk/find-local-council) for the area where you live and search ESOL, or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
+If you’re in the UK under a Ukrainian visa scheme (Ukraine Sponsorship Scheme, Ukraine Family Scheme or Ukraine Extension Scheme) and aged 19 or over, you are eligible for funding to study an ESOL course (as well as other educational or training courses).
+
+Depending on your circumstances, your ESOL course will either be free or reduced in price. [Visit the council website](https://www.gov.uk/find-local-council) for the area where you live and search ESOL, or, search for courses using the [National Careers Service](https://nationalcareers.service.gov.uk/find-a-course/page?searchTerm=ESOL&distance=10%20miles&town=&orderByValue=Start%20date&startDate=Anytime&courseType=&courseHours=&courseStudyTime=&filterA=true&page=1&D=0&coordinates=&campaignCode=&qualificationLevels=). 
 
  
-You can also learn English with a private provider. Well-respected English language courses include: 
+You can also learn English with a private provider. Well respected English language courses include: 
 
 * [International English Language Testing System (IELTS)](https://www.ielts.org/)
 * [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)
@@ -129,7 +131,7 @@ You can also learn English with a private provider. Well-respected English langu
 
 ### Apply for a teaching job
 
-To find a teaching job, you must apply to individual schools (not DfE). Use the [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/) service to search for jobs by region, subject specialism and age group. 
+To find a teaching job, you must apply to individual schools (not DfE). [Search for teaching jobs](https://teaching-vacancies.service.gov.uk/) by region, subject specialism and age group. 
 
 This service also lists [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) and education support roles. It can be helpful to gain experience of the English education system working in a teaching assistant or support role before you apply for teaching jobs. 
 
