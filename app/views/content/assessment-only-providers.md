@@ -32,10 +32,6 @@ provider_groups:
       name: Fran Attwood
       telephone: '01268 570215'
       email: Fran@etpscitt.co.uk
-    - header: Essex Teacher Training
-      link: https://www.essexteachertraining.co.uk/assessment-only/
-      name: Kay Satchell
-      email: kay.satchell@essexteachertraining.co.uk
     - header: Mid Essex Initial Teacher Training
       link: https://midessexteachertraining.com/
       name: Keith Ferguson
@@ -185,6 +181,7 @@ provider_groups:
       telephone: '01708 255006'
       email: admin@haveringteachertraining.co.uk
     - header: The Kemnal Academies Trust (TKAT) SCITT
+      link: https://scitt.tkat.org/
       name: Jo Fogg
       telephone: 020 3740 1808 (option 1)
       email: scitt@tkat.org     
