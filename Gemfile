@@ -35,7 +35,7 @@ gem "front_matter_parser", github: "waiting-for-dev/front_matter_parser"
 gem "kramdown", ">= 2.4.0"
 gem "rinku"
 
-gem "addressable", "~> 2.8.0"
+gem "addressable", "~> 2.8.1"
 
 gem "rack-attack"
 
