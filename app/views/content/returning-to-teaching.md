@@ -62,6 +62,10 @@ quote:
     text: "Don’t necessarily expect to get the first job you apply for and don’t get disheartened if you’re not successful."
     name: "Helen"
     job_title: "Returning teacher"
+youtube_video:
+  return-to-teaching-advisers-video:
+    id: 2NrLm_XId4k
+    title: A video about what Return to Teaching Advisers do
 ---
 
 Returning to teaching can be easier than you expect.
@@ -98,14 +102,7 @@ A return to teaching adviser can give you free one-to-one support with:
 * finding teaching vacancies
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
-  <iframe 
-    title="A video about what Return to Teaching Advisers do"
-    loading="lazy"
-    src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" 
-    frameborder="0" 
-    allow="autoplay; encrypted-media" 
-    allowfullscreen
-  ></iframe>
+$return-to-teaching-advisers-video$
 </div>
 
 Return to teaching advisers also run [events to support returners](/events).
