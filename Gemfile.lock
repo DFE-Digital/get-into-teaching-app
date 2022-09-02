@@ -522,7 +522,7 @@ GEM
     uber (0.1.0)
     unicode-display_width (2.2.0)
     victor (0.3.4)
-    view_component (2.64.0)
+    view_component (2.71.0)
       activesupport (>= 5.0.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
@@ -621,7 +621,7 @@ DEPENDENCIES
   text
   tzinfo-data
   victor
-  view_component (~> 2.64.0)
+  view_component (~> 2.71.0)
   web-console (>= 4.2.0)
   webmock (>= 3.14.0)
   webpacker (>= 5.4.3)
