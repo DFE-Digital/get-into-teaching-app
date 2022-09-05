@@ -72,8 +72,11 @@ section.container {
   flex-grow: 0;
   flex-wrap: wrap;
   flex-direction: column;
-
   margin: 1em 0;
+
+  &.centered {
+    justify-content: center;
+  }
 
   @include mq($from: tablet) {
     flex-direction: row;
