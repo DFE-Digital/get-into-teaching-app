@@ -71,20 +71,16 @@ Demonstrating how any voluntary time you have spent in school has shaped your vi
 
 If you’re an undergraduate student interested in teaching physics, maths, computing or modern languages, you might also be able to apply for some paid teaching experience. Find out how you might be eligible for a [teaching internship](/teaching-internship-providers).
 
-## 6. Start lining up your references
-
-You’ll need a couple of referees to provide references for your application. Now is a good time to start approaching people who might be able to provide these for you. Getting references in place is one of the most common causes of delay in the application process, so any preparation you can do now could speed things up considerably when you make your application.
-
-## 7. Engage with the world of schools and teaching
-
-Something that many teacher trainer providers will be looking for in an application or interview is an understanding of current issues and thinking in teaching. It’s worth following other teachers and education media outlets like [Schools Week](https://twitter.com/SchoolsWeek) and [TES](https://twitter.com/Tes_Institute) on social media. Teachers are very active on Twitter and share lots of helpful insights, tips and resources. You will soon find your own favourites, but we’d suggest looking at [ITTchat](https://twitter.com/ITTchat) or [Teacher Toolkit](https://twitter.com/TeacherToolkit) to get started.
-
-## 8. Get some advice at an event
+## 6. Get some advice at an event
 
 Our Train to Teach events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom. At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts. Some events are in person and others replicate the experience online. [Book your place at a Train to Teach event](/events/about-train-to-teach-events).
 
-## 9.  Join our support networks on social media
+## 7.  Join our support networks
 
 Our Facebook groups for [aspiring teachers](https://www.facebook.com/groups/1357146377672255/) and people thinking of a [career change to teaching](https://www.facebook.com/groups/CareerChangetoTeaching/) offer a really friendly, supportive place to connect with other people applying for teacher training and ask any questions you might have. Our Teacher Training Advisers are also on hand to give expert advice.
+
+## 8. Follow us on social media
+
+Follow us on your preferred platform or platforms for the up-to-date guidance and tips along with inspiring stories from the world of teaching. [Facebook](https://www.facebook.com/getintoteaching). [Instagram] (https://www.instagram.com/get_into_teaching/). [Twitter] (https://twitter.com/getintoteaching). [LinkedIn] (https://www.linkedin.com/company/9258520/)
 
 If you’re interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). Or find out what to expect in your [initial teacher training](/train-to-be-a-teacher/initial-teacher-training).
