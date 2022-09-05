@@ -1,5 +1,6 @@
 ---
 title: "Food for thought"
+description: Explore our best tips for university from some recently qualified teachers. From making the most out of lectures, to setting a weekly budget.
 content:
     - content/food-for-thought/header
     - content/food-for-thought/quotes
