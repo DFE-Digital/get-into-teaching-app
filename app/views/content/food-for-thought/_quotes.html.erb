@@ -9,31 +9,31 @@
     <%= render Content::PhotoQuoteListComponent.new(
       [
         {
-          image: "media/images/content/food-for-thought/1.png",
+          image: "media/images/content/food-for-thought/Ella_Tyrrell.jpg",
           heading: "Find your people",
           text: "Stay true to who you are and don't change to try and fit in. There'll be plenty of people who will like you for who you are already. Explore the new possibilities there are at uni and find your people. It is your place to have freedom and make it what you want it to be.",
           accreditation: ["Ella Tyrrell"],
         },
         {
-          image: "media/images/content/food-for-thought/2.png",
+          image: "media/images/content/food-for-thought/Keri_Gell.jpg",
           heading: "Keep on top of your notes",
           text: "I like to be organised, so I always had my diary with a notebook in the back with me. I’d got into a bad habit of writing notes in random notebooks and not always knowing where those notes were. I’d end up never using them so I gave myself one book. I still do it now and have one big academic planner with my notes in the back.",
           accreditation: ["Keri Gell"],
         },
         {
-          image: "media/images/content/food-for-thought/3.png",
+          image: "media/images/content/food-for-thought/Jake_Athorn.jpg",
           heading: "Just sit and listen",
           text: "In lectures, I felt like I had to write everything down. A lecturer told me once, why don’t you just sit there and listen? Then when you go home, do the reading, and get down what you need. That made my life a thousand times easier and it’s something I make sure my students do now.",
           accreditation: ["Jake Athorn"],
         },
         {
-          image: "media/images/content/food-for-thought/3.png",
+          image: "media/images/content/food-for-thought/Joel_Quilter.jpg",
           heading: "Set a weekly budget",
           text: "I tried to have a weekly budget. I’d do my food shopping online, which made it easier to take advantage of deals and stay on top of how much exactly I’d been spending. I also had a notes page on my phone where I’d add it what I spent on nights out.",
           accreditation: ["Joel Quilter"],
         },
         {
-          image: "media/images/content/food-for-thought/4.png",
+          image: "media/images/content/food-for-thought/Johnoi_Josephs.jpg",
           heading: "Don’t reinvent the wheel",
           text: "Be creative in how you learn but don’t reinvent the wheel. Degrees are a different level of intensity, but the framework is the same as A-levels or BTECs. Whatever got you here will continue to work! Consistency and intentionality will trump any overnight success - and that’s the same in whatever stage in life.",
           accreditation: ["Johnoi Josephs"],
@@ -41,18 +41,4 @@
       ]
     ) %>
   </article>
-
-  <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
-  <% promo.left_section(
-      heading: "Explore teaching advisers", classes: %w[tta-background]) do %>
-  <% end %>
-
-  <% promo.right_section(
-    heading: "Find out what teaching is really like"
-  ) do %>
-      <p>Talk to an experienced former teacher who can help you find school experience, learn what it's like to be in the classroom and answer all your questions about getting into teaching.</p>
-
-      <%= link_to("Find out more about advisers", "/tta-service", class: "button") %>
-  <% end %>
-<% end %>
 </section>
