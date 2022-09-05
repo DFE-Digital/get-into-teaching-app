@@ -302,6 +302,7 @@ redirects:
   "/why-teach(*reason)": "/blog"
   "/content/stories(*story)": "/blog"
   "/my-story-into-teaching(*story)": "/blog"
+  "/blog/how-to-apply-for-teacher-training": "/blog/9-tips-to-help-you-apply-for-teacher-training"
 
   # Old urgent call for qualified teachers page
   "/urgent-call-for-qualified-teachers": "/returning-to-teaching"

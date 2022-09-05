@@ -109,13 +109,12 @@ Unlike a standard work reference, your references for teacher training need to
 be named individuals rather than (for example) a human resources team or
 academic department.
 
-Your references will be asked to confirm how they know you and if they know of any reason why you should not work with children.
+Your references will confirm how they know you and if they know any reason why you should not work with children.
 
 You'll need different kinds of references depending on your circumstances. If you:
 
 * are still studying or graduated in the last 5 years, you'll need an academic reference
 * already work in a school, you'll need a reference from your headteacher
-* are applying for a salaried course, you'll need a reference from an employer
 
 Training providers will accept a character reference, such as a mentor or someone you know from volunteering, as a second reference.
 

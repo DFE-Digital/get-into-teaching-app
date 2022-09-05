@@ -98,7 +98,7 @@ It’s your opportunity to show your enthusiasm for teaching a particular subjec
 
 ## 8.	Arrange your references
 
-Your references can tell training providers if you're a good fit for teaching, so it’s important they know you well.
+Your references will be asked to confirm how they know you and if they know any reason why you should not work with children.
 
 You'll need to provide your reference details when you apply. Your teacher training provider will then contact your references once you accept a place on their course.
 
