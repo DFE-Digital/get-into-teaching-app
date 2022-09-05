@@ -101,28 +101,17 @@ not convinced the admissions team that they’re right for it.
 
 [Talk to an adviser for help preparing your application](/tta-service).
 
-## Choose your referees
+## Choose your references
 
-You need 2 referees to apply. You can provide more, but your teacher training provider will only contact 2.
+You need to provide the details for 2 references to apply. You can provide more, but your teacher training provider will only contact 2.
 
-Unlike a standard work reference, your referees for teacher training need to
+Unlike a standard work reference, your references for teacher training need to
 be named individuals rather than (for example) a human resources team or
 academic department.
 
-Your referees will be asked to write up to 500 words about your character and
-potential to teach.
+Your references will be asked to confirm how they know you and if they know of any reason why you should not work with children.
 
-Choose referees who could comment on things like your:
-
-* communication skills
-* reliability and professionalism
-* ability to work with children
-* transferable skills
-* academic skills
-
-Your referee will also be asked if they know of any reason why you should not work with children.
-
-You'll need different kinds of referees depending on your circumstances. If you:
+You'll need different kinds of references depending on your circumstances. If you:
 
 * are still studying or graduated in the last 5 years, you'll need an academic reference
 * already work in a school, you'll need a reference from your headteacher
@@ -130,13 +119,13 @@ You'll need different kinds of referees depending on your circumstances. If you:
 
 Training providers will accept a character reference, such as a mentor or someone you know from volunteering, as a second reference.
 
-Referees should not be family members, partners or friends.
+References should not be family members, partners or friends.
 
-You'll need to provide your referee details when you apply, but they will not be contacted until you accept a place on a course.
+You'll need to provide your reference details when you apply, but they will not be contacted until you accept a place on a course.
 
-You can change your referee details once you've accepted a place on a course. You might need to alter your referee's contact details if they have changed, or you may wish to change your referee altogether.
+You can change your reference details once you've accepted a place on a course. You might need to alter your reference contact details if they have changed, or you may wish to change your reference altogether.
 
-If you’re struggling to choose your referees, [get free one-to-one support from a
+If you’re struggling to choose your references, [get free one-to-one support from a
 teacher training adviser](/tta-service).
 
 ## Writing your teacher training personal statement

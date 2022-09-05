@@ -1,6 +1,5 @@
 ---
-title: How to get into teaching
-subtitle: A step-by-step-guide
+title: 9 tips to help you apply for teacher training
 date: "2022-05-17"
 images:
   header_image:
@@ -97,13 +96,13 @@ It’s your opportunity to show your enthusiasm for teaching a particular subjec
 
 [Read our advice on writing your teacher training personal statement](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-teacher-training-personal-statement).
 
-## 8.	Arrange your referees
+## 8.	Arrange your references
 
-Your referees can tell training providers about your qualities and abilities, so it’s important they know you well.
+Your references can tell training providers if you're a good fit for teaching, so it’s important they know you well.
 
-You'll need to provide your referee details when you apply. Your teacher training provider will then contact your referees once you accept a place on their course.
+You'll need to provide your reference details when you apply. Your teacher training provider will then contact your references once you accept a place on their course.
 
-[Find out more about the requirements for references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees).
+[Find out more about the requirements for references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-references).
 
 ## 9.	Complete your application
 
