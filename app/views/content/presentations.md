@@ -24,8 +24,8 @@ keywords:
   - powerpoint
 ---
 
-Our Train to Teach events use these presentations to help guide you through 
-getting into teaching. There are two presentations.
+Our Train to Teach events use presentations to help guide you through 
+getting into teaching.
 
 ## Introduction to teacher training and support we offer
 
