@@ -39,7 +39,9 @@ Applications for teacher training courses starting in 2022 open on 12 October, b
 
 ## 1. Check your eligibility
 
-Before you apply for teacher training you’ll need to make sure you’re eligible. Although different training providers may have specific recruitment criteria, there are some basic eligibility requirements you’ll need to meet to become a teacher in England. [Check your eligibility](/steps-to-become-a-teacher).
+Before you apply for teacher training you’ll need to make sure you’re eligible. Although different training providers may have specific recruitment criteria, there are some basic eligibility requirements you’ll need to meet to become a teacher in England.
+
+[Check your eligibility](/steps-to-become-a-teacher).
 
 ## 2. Get personalised guidance to your inbox
 
@@ -48,7 +50,7 @@ Get one step closer to the classroom with guidance tailored to you, including ho
 * a taste of teaching
 * funding to train
 * one-to-one support
-* advice from trainees or newly qualified teachers
+* advice from trainees or recently qualified teachers
 
 [Sign up for personalised guidance in your inbox](/mailinglist/signup/name).
 
