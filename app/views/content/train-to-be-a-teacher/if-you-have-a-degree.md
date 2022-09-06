@@ -78,7 +78,7 @@ If you train to teach certain secondary subjects, you may be eligible for a [sch
 
 No matter what course you choose, you can apply for a student loan.
 
-[Learn about how you could fund your teacher training](https://getintoteaching.education.gov.uk/funding-and-support).
+[Learn about how you could fund your teacher training](/funding-and-support).
 
 ### Teacher training providers
 
