@@ -21,8 +21,6 @@ class BasicAuth
     end
 
     def env_requires_auth?
-      return false
-
       basic_auth = Rails.application.config.x.basic_auth
 
       return false if basic_auth.blank?
