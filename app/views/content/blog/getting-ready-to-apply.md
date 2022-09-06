@@ -69,7 +69,7 @@ An experienced teaching professional can help you if you're (one of the followin
 
 ## 5. Reflect on (or get some) school experience
 
-Demonstrating how any voluntary time you have spent in school has shaped your view of teaching is vital to a good application. If you haven’t managed to get some time in a school yet, some schools are offering the opportunity for candidates to undertake school experience both in school and virtually. You can search for schools and [apply for school experience](https://schoolexperience.education.gov.uk/).
+Demonstrating how any voluntary time you have spent in school has shaped your view of teaching is vital to a good application. If you haven’t managed to get some time in a school yet, some schools offer the opportunity for candidates to undertake school experience both in school and virtually. You can search for schools and [apply for school experience](https://schoolexperience.education.gov.uk/).
 
 If you’re an undergraduate student interested in teaching physics, maths, computing or modern languages, you might also be able to apply for some paid teaching experience. Find out how you might be eligible for a [teaching internship](/teaching-internship-providers).
 
