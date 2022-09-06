@@ -115,7 +115,7 @@ You'll need different kinds of references depending on your circumstances. If yo
 * are still studying or graduated in the last 5 years, you'll need an academic reference
 * already work in a school, you'll need a reference from your headteacher
 
-You can give a character reference, such as a mentor or someone you know from volunteering, as a second reference.
+You can give a character reference, such as from a mentor or someone you know through volunteering, as a second reference.
 
 You should not ask a family member, partner or friend for a reference.
 
