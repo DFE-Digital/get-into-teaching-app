@@ -1,6 +1,6 @@
 ---
 title: Getting ready to apply - 9 things you can do now
-date: "2021-09-03"
+date: "2022-09-06"
 author: Get Into Teaching
 images:
   notepad:
@@ -35,7 +35,7 @@ $notepad$
 
 $still-time-to-apply$
 
-Applications for teacher training courses starting in 2022 open on 12 October, but there is plenty you can be doing right now to get ready.
+Applications for teacher training courses starting in 2023 open on 11 October, but there is plenty you can be doing right now to get ready.
 
 ## 1. Check your eligibility
 
@@ -65,11 +65,13 @@ An experienced teaching professional can help you if you're (one of the followin
 
 ## 4. Research training courses
 
-[Find postgraduate teacher training.](https://www.find-postgraduate-teacher-training.service.gov.uk/). You can search by location, training provider and subject to find the course best suited to you.
+[Find postgraduate teacher training](https://www.find-postgraduate-teacher-training.service.gov.uk/). You can search by location, training provider and subject to find the course best suited to you.
 
 ## 5. Reflect on (or get some) school experience
 
-Demonstrating how any voluntary time you have spent in school has shaped your view of teaching is vital to a good application. If you haven’t managed to get some time in a school yet, some schools are offering the opportunity for candidates to undertake school experience both in school and virtually. You can search for schools and [apply for school experience](https://schoolexperience.education.gov.uk/).
+Demonstrating how any voluntary time you have spent in school has shaped your view of teaching is vital to a good application. If you haven’t managed to get some time in a school yet, some schools are offering the opportunity for candidates to undertake school experience both in school and virtually.
+
+[Search for schools and apply for school experience](https://schoolexperience.education.gov.uk/).
 
 If you’re an undergraduate student interested in teaching physics, maths, computing or modern languages, you might also be able to apply for some paid teaching experience. Find out how you might be eligible for a [teaching internship](/teaching-internship-providers).
 
@@ -91,14 +93,14 @@ Our Facebook groups for [aspiring teachers](https://www.facebook.com/groups/1357
 
 ## 9. Follow us on social media
 
-Follow us on your preferred platform or platforms for the up-to-date guidance and tips along with inspiring stories from the world of teaching.
+Follow us on your preferred platform or platforms for the up-to-date guidance and tips along with inspiring stories from the world of teaching. You can:
 
-[Find us on Facebook](https://www.facebook.com/getintoteaching).
+* [find us on Facebook](https://www.facebook.com/getintoteaching)
 
-[Follow us on Instagram](https://www.instagram.com/get_into_teaching/).
+* [follow us on Instagram](https://www.instagram.com/get_into_teaching/)
 
-[Read our tweets on Twitter](https://twitter.com/getintoteaching).
+* [read our tweets on Twitter](https://twitter.com/getintoteaching)
 
-[Connect with us on LinkedIn](https://www.linkedin.com/company/9258520/).
+* [connect with us on LinkedIn](https://www.linkedin.com/company/9258520/)
 
 If you’re interested in enriching the lives of young people, find out more about how you can [become a teacher](/steps-to-become-a-teacher). Or find out what to expect in your [initial teacher training](/train-to-be-a-teacher/initial-teacher-training).
