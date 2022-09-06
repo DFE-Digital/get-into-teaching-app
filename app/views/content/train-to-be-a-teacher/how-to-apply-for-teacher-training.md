@@ -2,7 +2,7 @@
 title: How to apply for teacher training
 subcategory: Your teacher training application
 description: |-
-  Read about the teacher training application process. Find advice on writing your teacher training personal statement, choosing your referees, and applying.
+  Read about the teacher training application process. Find advice on writing your teacher training personal statement and choosing your references.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
@@ -31,7 +31,7 @@ promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
 navigation: 20.25
 navigation_title: How to apply
-navigation_description: Discover tips on preparing your teacher training application, from choosing your referees, to writing your personal statement.
+navigation_description: Discover tips on preparing your teacher training application, from writing your personal statement to choosing your references.
 inset_text:
   still-time-to-apply:
     text: |-
@@ -43,7 +43,7 @@ $still-time-to-apply$
 
 Give yourself the best chance of getting on the course you want.
 
-Discover tips on completing your application, including writing your teacher training personal statement, finding referees and preparing for interviews. A [teacher training adviser](/tta-service) can help you with all of these.
+Discover tips on completing your application, including writing your teacher training personal statement, choosing your references and preparing for interviews. A [teacher training adviser](/tta-service) can help you with all of these.
 
 ## Browse courses
 
