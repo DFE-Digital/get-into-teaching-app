@@ -29,7 +29,7 @@ keywords:
 
 $still-time-to-apply$
 
-To teach in primary, secondary and special schools in England, you need a degree.
+You need a degree to teach in primary, secondary and special schools in England.
 
 You also need to gain qualified teacher status (QTS) to teach in most schools which you get through teacher training.
 
@@ -62,7 +62,7 @@ Getting QTS without PGCE may mean that:
 
 * your course is shorter
 * your course fees are lower
-* you submit fewer assignments.
+* you submit fewer assignments
 
 [Find out more about QTS](/what-is-qts).
 
