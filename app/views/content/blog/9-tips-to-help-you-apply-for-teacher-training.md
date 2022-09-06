@@ -98,9 +98,9 @@ It’s your opportunity to show your enthusiasm for teaching a particular subjec
 
 ## 8.	Arrange your references
 
-Your references will be asked to confirm how they know you and if they know any reason why you should not work with children.
+You'll need to provide the details of 2 people who can give you a reference when you apply. Your teacher training provider will then contact them once you accept a place on their course.
 
-You'll need to provide your reference details when you apply. Your teacher training provider will then contact your references once you accept a place on their course.
+They'll be asked to confirm how they know you and if they know any reason why you should not work with children.
 
 [Find out more about the requirements for references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-references).
 
