@@ -78,7 +78,7 @@ If you train to teach certain secondary subjects, you may be eligible for a [sch
 
 No matter what course you choose, you can apply for a student loan.
 
-[Learn about how you could fund your teacher training](https://getintoteaching.education.gov.uk/funding-and-support).
+[Learn about how you could fund your teacher training](/funding-and-support).
 
 ### Teacher training providers
 
@@ -103,7 +103,7 @@ Ask them what a typical day looks like, how you’ll be supported, and if they h
 
 You should talk to teacher training providers about where your school placements and theoretical learning will be. The address of your teacher training provider may not be where you spend most of your time. For example, your teacher training provider might be a university, but you’ll spend most of your time in placement schools.
 
-[Find out more about what your teacher training will be like](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/initial-teacher-training).
+[Find out more about what your teacher training will be like](/train-to-be-a-teacher/initial-teacher-training).
 
 ## Salaried teacher training
 
