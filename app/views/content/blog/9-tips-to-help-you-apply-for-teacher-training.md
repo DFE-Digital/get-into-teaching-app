@@ -1,13 +1,12 @@
 ---
-title: How to apply for teacher training
-subtitle: A step-by-step-guide
+title: 9 tips to help you apply for teacher training
 date: "2022-05-17"
 images:
   header_image:
     path: "media/images/content/blog/applying-for-teacher.jpg"
     thumbnail_path: "media/images/content/blog/thumbnails/applying-for-teacher.jpg"
 description: |-
-  From effective preparation, to submitting your application, we’ve broken down the whole process into manageable steps, so you can see exactly what’s involved.
+  From effective preparation to submitting your application, we’ve broken down the whole process of getting into teaching into manageable steps.
 keywords:
   - teacher training
   - apply
@@ -92,9 +91,11 @@ It’s your opportunity to show your enthusiasm for teaching a particular subjec
 
 ## 8.	Arrange your references
 
-Your referees can tell training providers about your qualities and abilities, so it’s important they know you well.
+You'll need to provide the details of 2 people who can give you a reference when you apply. Your teacher training provider will then contact them once you accept a place on their course.
 
-[Find out more about the requirements for references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees).
+They'll be asked to confirm how they know you and if they know any reason why you should not work with children.
+
+[Find out more about the requirements for references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-references).
 
 ## 9.	Complete your application
 

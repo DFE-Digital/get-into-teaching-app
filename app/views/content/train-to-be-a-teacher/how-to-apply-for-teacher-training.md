@@ -2,7 +2,7 @@
 title: How to apply for teacher training
 subcategory: Your teacher training application
 description: |-
-  Read about the teacher training application process. Find advice on writing your teacher training personal statement, choosing your referees, and applying.
+  Read about the teacher training application process. Find advice on writing your teacher training personal statement and choosing your references.
 related_content:
     Choosing the right teacher training course provider : "/blog/choosing-the-right-teacher-training-course-provider"
     7 things to include in your teacher training application : "/blog/7-things-to-include-in-your-teacher-training-application"
@@ -31,12 +31,12 @@ promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-apply
 navigation: 20.25
 navigation_title: How to apply
-navigation_description: Discover tips on preparing your teacher training application, from choosing your referees, to writing your personal statement.
+navigation_description: Discover tips on preparing your teacher training application, from writing your personal statement to choosing your references.
 ---
 
 Give yourself the best chance of getting on the course you want.
 
-Discover tips on completing your application, including writing your teacher training personal statement, finding referees and preparing for interviews. A [teacher training adviser](/tta-service) can help you with all of these.
+Discover tips on completing your application, including writing your teacher training personal statement, choosing your references and preparing for interviews. A [teacher training adviser](/tta-service) can help you with all of these.
 
 ## Browse courses
 
@@ -86,60 +86,12 @@ You can choose up to 3 teacher training courses for each application.
 
 If you do not find what you were looking for, there are [other ways to train](/train-to-be-a-teacher).
 
-Before you start, it’s particularly important to think about your referees and
-[teacher training personal statement](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-teacher-training-personal-statement).
+Before you start, it’s particularly important to think about your [teacher training personal statement](/train-to-be-a-teacher/how-to-apply-for-teacher-training#writing-your-teacher-training-personal-statement).
 
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
 
 [Talk to an adviser for help preparing your application](/tta-service).
-
-## Choose your referees
-
-You need 2 references to apply.
-
-Unlike a standard work reference, your references for teacher training need to
-be named individuals rather than (for example) a human resources team or
-academic department.
-
-Your referees will be asked to write up to 500 words about your character and
-potential to teach.
-
-It’s worth contacting them before you apply so they understand why you’re applying and what they’ll be asked to do.
-
-Choose referees who could comment on things like your:
-
-* communication skills
-* reliability and professionalism
-* ability to work with children
-* transferable skills
-* academic skills
-
-Your referee will also be asked if they know of any reason why you should not work with children.
-
-Ideal referees could include:
-
-* your university tutor or supervisor
-* your current line manager at work
-* your previous employer
-* a teacher at a school where you work or volunteer
-* a supplier or client you’ve worked with (if you’re self-employed)
-
-Referees should not be family members, partners or friends.
-
-It’s important to have at least one academic or professional reference.
-
-Training providers will accept a character reference, such as a mentor or someone you know from volunteering, as a second reference.
-
-If you’re applying for a salaried course, one of your references must be from
-an employer.
-
-You can request as many references as you like to increase the chances of getting 2 quickly.
-
-Once you've received 2 or more references, you can select the 2 you want to include in your application.
-
-If you’re struggling to choose your referees, [get free one-on-one support from a
-teacher training adviser](/tta-service).
 
 ## Writing your teacher training personal statement
 
@@ -183,6 +135,30 @@ You could talk about:
 [If you're concerned about your subject knowledge](/train-to-be-a-teacher/subject-knowledge-enhancement), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
 
 You can [get support preparing a personal statement from an adviser](/tta-service).
+
+## Choose your references
+
+You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course.
+
+Unlike a standard work reference, your references for teacher training need to
+be from named individuals rather than (for example) a human resources team or
+academic department.
+
+They'll confirm how they know you and if they know any reason why you should not work with children.
+
+You'll need different kinds of references depending on your circumstances. If you:
+
+* are still studying or graduated in the last 5 years, you'll need an academic reference
+* already work in a school, you'll need a reference from your headteacher
+
+You can give a character reference, such as from a mentor or someone you know through volunteering, as a second reference.
+
+You should not ask a family member, partner or friend for a reference.
+
+You can change your reference details when you accept a place on a course. You might need to alter their contact details if they've changed, or you may wish to change who you ask for a reference altogether.
+
+If you’re struggling to choose your references, [get free one-to-one support from a
+teacher training adviser](/tta-service).
 
 ## If you’re invited to interview
 
