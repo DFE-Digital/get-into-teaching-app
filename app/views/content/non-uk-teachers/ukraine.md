@@ -143,7 +143,7 @@ Most teaching vacancies are advertised in March, April or the first half of May,
 
 [Supply teachers](https://www.tes.com/jobs/careers-advice/supply-teaching/how-become-supply-teacher) fill in when schools are temporarily short of staff. Register with a supply teacher agency for short-term roles in school.  
 
-[Find out which local authority ('council')](https://www.gov.uk/find-local-council) you live in, and then search their website for teaching roles.
+[Find your local authority ('council')](https://www.gov.uk/find-local-council) and then search their website for teaching roles.
 
 ### Tips on applying 
 
