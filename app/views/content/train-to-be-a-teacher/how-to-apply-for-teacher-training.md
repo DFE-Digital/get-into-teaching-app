@@ -100,30 +100,6 @@ not convinced the admissions team that they’re right for it.
 
 [Talk to an adviser for help preparing your application](/tta-service).
 
-## Choose your references
-
-You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course.
-
-Unlike a standard work reference, your references for teacher training need to
-be from named individuals rather than (for example) a human resources team or
-academic department.
-
-They'll confirm how they know you and if they know any reason why you should not work with children.
-
-You'll need different kinds of references depending on your circumstances. If you:
-
-* are still studying or graduated in the last 5 years, you'll need an academic reference
-* already work in a school, you'll need a reference from your headteacher
-
-You can give a character reference, such as from a mentor or someone you know through volunteering, as a second reference.
-
-You should not ask a family member, partner or friend for a reference.
-
-You can change your reference details when you accept a place on a course. You might need to alter their contact details if they've changed, or you may wish to change who you ask for a reference altogether.
-
-If you’re struggling to choose your references, [get free one-to-one support from a
-teacher training adviser](/tta-service).
-
 ## Writing your teacher training personal statement
 
 Your teacher training personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it.
@@ -166,6 +142,30 @@ You could talk about:
 [If you're concerned about your subject knowledge](/train-to-be-a-teacher/subject-knowledge-enhancement), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
 
 You can [get support preparing a personal statement from an adviser](/tta-service).
+
+## Choose your references
+
+You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course.
+
+Unlike a standard work reference, your references for teacher training need to
+be from named individuals rather than (for example) a human resources team or
+academic department.
+
+They'll confirm how they know you and if they know any reason why you should not work with children.
+
+You'll need different kinds of references depending on your circumstances. If you:
+
+* are still studying or graduated in the last 5 years, you'll need an academic reference
+* already work in a school, you'll need a reference from your headteacher
+
+You can give a character reference, such as from a mentor or someone you know through volunteering, as a second reference.
+
+You should not ask a family member, partner or friend for a reference.
+
+You can change your reference details when you accept a place on a course. You might need to alter their contact details if they've changed, or you may wish to change who you ask for a reference altogether.
+
+If you’re struggling to choose your references, [get free one-to-one support from a
+teacher training adviser](/tta-service).
 
 ## If you’re invited to interview
 
