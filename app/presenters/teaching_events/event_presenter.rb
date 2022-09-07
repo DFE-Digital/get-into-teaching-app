@@ -27,10 +27,15 @@ module TeachingEvents
       :summary,
       :type_id,
       :status_id,
-      :video_url,
       :web_feed_id,
       to: :event,
     )
+
+    def video_id
+      return nil if event.video_url.blank?
+
+      event.video_url[/(v=|embed\/)(.{11})/, 2]
+    end
 
     def venue_address
       return if event_building.blank?

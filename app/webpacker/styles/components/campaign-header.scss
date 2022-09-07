@@ -1,0 +1,100 @@
+.campaign-header {
+  // the two ratios don't overlap exactly because we'd get a jagged
+  // edge - instead adjust the second slightly so it blurs smoothly
+
+  @mixin slanted-bottom($accent) {
+    $accent-ratio: 75%;
+    $white-ratio: $accent_ratio + 0.5%;
+    background: linear-gradient(182deg, $accent $accent-ratio, $white $white-ratio);
+  }
+
+  min-height: 15em;
+
+  .container {
+    max-width: 80ch;
+    margin-top: 0;
+
+    align-items: center;
+    padding-block: 1em;
+
+    display: grid;
+    grid-template-columns: 1fr;
+
+    @include mq($from: mobile) {
+      grid-template-columns: 1fr 10em 1fr;
+    }
+  }
+
+  &.yellow {
+    @include slanted-bottom($yellow);
+
+    background-color: $yellow;
+    color: $black;
+
+    h1 > span {
+      background: $purple;
+    }
+  }
+
+  &.blue {
+    @include slanted-bottom($blue);
+
+    background-color: $blue;
+    color: $black;
+
+    h1 > span {
+      background: $pink;
+    }
+  }
+
+  &.pink {
+    @include slanted-bottom($pink);
+
+    background-color: $pink;
+    color: $black;
+
+    h1 > span {
+      background: $yellow;
+    }
+  }
+
+  h1 {
+    margin: 1em auto;
+    z-index: 5;
+
+    @include mq($from: mobile) {
+      grid-area: 1 / 1 / 2 / 3;
+    }
+
+    @include mq($from: tablet) {
+      margin: 1em inherit;
+    }
+
+    span {
+      @include font-size(xxlarge);
+
+      padding: .05rem .7rem;
+    }
+
+    span:last-of-type {
+      @include font-size(xxxlarge, $adjust: 2rem);
+    }
+  }
+
+  picture {
+    @include mq($from: mobile) {
+      grid-area: 1 / 2 / 2 / 4;
+      display: flex;
+      justify-content: end;
+    }
+
+    img {
+      max-width: 90%;
+      height: auto;
+
+      @include mq($from: tablet) {
+        max-width: 90%;
+      }
+    }
+  }
+}

@@ -5,8 +5,7 @@ provider "cloudfoundry" {
 }
 
 provider "statuscake" {
-  username = local.infrastructure_secrets.SC-USERNAME
-  apikey   = local.infrastructure_secrets.SC-PASSWORD
+  api_token = local.infrastructure_secrets.SC-PASSWORD
 }
 
 locals {
@@ -16,23 +15,27 @@ locals {
 provider "azurerm" {
   skip_provider_registration = true
   features {}
-  subscription_id = local.azure_credentials.subscriptionId
-  client_id       = local.azure_credentials.clientId
-  client_secret   = local.azure_credentials.clientSecret
-  tenant_id       = local.azure_credentials.tenantId
+  subscription_id = try(local.azure_credentials.subscriptionId, null)
+  client_id       = try(local.azure_credentials.clientId, null)
+  client_secret   = try(local.azure_credentials.clientSecret, null)
+  tenant_id       = try(local.azure_credentials.tenantId, null)
 }
 
 terraform {
-  required_version = ">= 0.13.4"
+  required_version = "1.2.8"
 
   required_providers {
+    azurerm = {
+      source  = "hashicorp/azurerm"
+      version = "3.21.1"
+    }
     cloudfoundry = {
       source  = "cloudfoundry-community/cloudfoundry"
-      version = "0.15.3"
+      version = "0.15.5"
     }
     statuscake = {
       source  = "StatusCakeDev/statuscake"
-      version = "1.0.1"
+      version = "2.0.4"
     }
   }
 }

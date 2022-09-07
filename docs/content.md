@@ -14,12 +14,17 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Calls to Action](#calls-to-action)
 		* [Main Content](#main-content)
 		* [Sidebar](#sidebar)
-  * [Accessibility](#accessibility)
-    * [iframe](#iframe)
-  * [Inset text](#inset-text)
+	* [Accessibility](#accessibility)
+		* [iframe](#iframe)
+	* [Inset text](#inset-text)
+	* [YouTube Video](#youtube-video)
+	* [Hero](#hero)
 3. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
 	* [Footers](#footers)
+4. [Navigation](#navigation)
+	* [Main Navigation](#main-navigation)
+	* [Category Pages](#category-pages)
 
 ## Finding a Page/Content to Edit
 
@@ -252,6 +257,41 @@ inset_text:
 $important-content$
 ```
 
+### YouTube video
+
+To add a YouTube video to your content you need to know the video ID. You can find this out by visiting the video on [youtube.com](https://www.youtube.com/) and looking in the address bar of your browser (it is in the format `watch?v=<video_id>`).
+
+Once you have the video ID you can declare the video in the frontmatter of your page and reference it in the content:
+
+```yaml
+---
+youtube_video:
+  return-to-teaching-advisers-video:
+    id: 2NrLm_XId4k
+    title: A video about what Return to Teaching Advisers do
+---
+
+# My page
+
+$return-to-teaching-advisers-video$
+```
+
+### Hero
+
+Most of the web pages on the site have a hero section that can be customised in frontmatter; the hero section is at the top of the page and usually consists of a large image, heading and some text - these are the available options, though not all are required:
+
+```yaml
+heading: Hero heading
+subtitle: Hero subtitle
+subtitle_link: /subtitle/link
+subtitle_button: Button text
+image: /path/to/image.jpg
+title_paragraph: Paragraph of text
+title_bg_color: yellow
+hero_bg_color: white
+hero_blend_content: true
+```
+
 ## Creating a Blog Post
 
 Blog posts should be written in Markdown format using the following template as a guide:
@@ -289,7 +329,7 @@ $another_image$
 
 ### Images
 
-The first image (`an_image` in the above example) will be displayed at the top of the blog post and in the thumbnail image on the pages that list blog posts.
+The first image (`an_image` in the above example) will be displayed at the top of the blog post and in the thumbnail image on the pages that list blog posts. The main blog image should ideally be `1464px x 1100px` to fit the available space in the template at a reasonable resolution.
 
 Ideally you should also provide a `thumbnail_path` for the first image; this should be as close to `340px x 260px` as possible. If a `thumbnail_path` is not provided the `path` image will be used and scaled-down to display at a width of `170px` (maintaining the image aspect ratio - thumbnail images should be `340px` wide to look clear on retina devices).
 
@@ -318,3 +358,64 @@ closing_paragraph: my-new-closing-paragraph
 ### Tags
 
 We have a whitelist of available blog tags in `/config/tags.yml` - if you try to add a tag not contained within this list you will receive an error message on the blog post page and our test suite will fail (preventing you from deploying your blog post). If you need a tag not already in the whitelist, add it to the `tags.yml` before referencing it in your blog post.
+
+## Navigation
+
+There are two types of navigation components on the website; the main navigation (at the top of every page) and category pages (a page where the navigation component is in the content as a group of cards). They are both configured in a similar way.
+
+#### Main Navigation
+
+The main navigation appears at the top of every page and contains links to key pages of the website. For a page to appear in the main navigation it must be declared as a "root" page, which means it is in the `content` directory and not one of its subdirectories. For example `/content/my-important-page.md` can appear in the main navigation, however `/content/subdirectory/my-important-page.md` cannot.
+
+In order to have a page appear in the main navigation it must contain the following frontmatter:
+
+```yaml
+navigation: 20
+navigation_title: Train to be a teacher
+navigation_path: "/train-to-be-a-teacher"
+```
+
+The `navigation_title` is the text of the link that will appear in the main navigation and the `navigation_path` is where the link will take the user. The `navigation` attribute determines the order of the links within the main navigation; ascending order for left to right.
+
+As an example, if there is a navigation page with `navigation: 13` and you want your new page to appear immediately after it, then you could use `navigation: 14` (if another page is already using `14` you can use decimals for greater flexibility, so `13.1`).
+
+#### Category Pages
+
+A category page displays a number of cards that the user can click on in order to navigate to related content. The category page itself must specify a specific layout in the frontmatter:
+
+```yaml
+layout: "layouts/category"
+```
+
+You can then define the cards/pages within a subfolder matching the main category page. For example, your folder structure may look like:
+
+```
+/main-category-page.md
+/main-category-page/first-page.md
+/main-category-page/second-page.md
+```
+
+In order for the pages to appear as cards on the main category page they must have navigational attributes defined in the frontmatter:
+
+```yaml
+navigation: 1
+navigation_title: Title that appears on the card
+navigation_description: A brief description that will appear in the card for this page
+```
+
+The `navigation` attribute determines the order of the cards on the page (lower values appear first/higher up the page). The `navigation_description` will appear within the card for this page below a heading, which will match the `navigation_title` (if set), `heading` (if `navigation_title` is not set) or `title` (if neither `navigation_title` nor `heading` are set) from the page frontmatter.
+
+A category page can have multiple sections of related cards. To have cards grouped in a separate section and under a different heading you can use the `subcategory` attribute in the frontmatter of the related pages:
+
+```yaml
+subcategory: Grouped cards
+```
+
+A category can also contain 'content', which is rendered after the cards and can include complex HTML partials. You specify the partials in the frontmatter under the `content` key:
+
+```yaml
+content:
+  - content/main-category-page/partial
+```
+
+In this example the partial file would be declared in `content/main-category-page/_partial.html.erb` (note the underscore prefix and the file type). Its likely that a developer will create the partial, but using the frontmatter you can easily pull in and re-arrange existing content partials.

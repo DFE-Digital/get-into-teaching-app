@@ -1,11 +1,11 @@
-# These settings are for the sandbox and should mainly be overriden by TF_VARS 
+# These settings are for the sandbox and should mainly be overriden by TF_VARS
 # or set with environment variables TF_VAR_xxxx
 
 variable "api_url" {
   default = "https://api.london.cloud.service.gov.uk"
 }
 
-variable "AZURE_CREDENTIALS" {}
+variable "AZURE_CREDENTIALS" { default = "{}" }
 variable "azure_key_vault" {}
 variable "azure_resource_group" {}
 
@@ -21,13 +21,13 @@ variable "azure_vault_secret" {
   default = "CONTENT-KEYS"
 }
 
-variable "paas_monitoring_space" { }
+variable "paas_monitoring_space" {}
 
 variable "paas_space" {
   default = "sandbox"
 }
 
-variable "paas_monitoring_app" { }
+variable "paas_monitoring_app" {}
 
 variable "paas_org_name" {
   default = "dfe"
@@ -79,3 +79,7 @@ variable "alerts" {
   type = map(any)
 }
 
+variable "statuscake_enable_basic_auth" {
+  type    = bool
+  default = false
+}

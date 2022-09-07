@@ -41,6 +41,10 @@ module TeachingEvents
       online.present? && online.all?
     end
 
+    def train_to_teach?
+      EventType.lookup_by_name("Train to Teach event").in?(type_condition || [])
+    end
+
     def online
       # online is a pair of checkboxes for 'online' (true) and 'in_person' (false), so the
       # param will be something like: ["", "true", "false"]

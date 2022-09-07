@@ -117,70 +117,6 @@ describe TemplateHandlers::Markdown, type: :view do
     end
   end
 
-  context "with acronyms" do
-    let :markdown do
-      <<~MARKDOWN
-        ---
-        title: My page
-        acronyms:
-          VAT: Value added tax
-        ---
-
-        All prices include VAT unless marked as exVAT
-
-        Find out more about <span id="vat" title="VAT">VAT</span>
-      MARKDOWN
-    end
-
-    before do
-      stub_template "frontmatter.md" => markdown
-      render template: "frontmatter"
-    end
-
-    it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT", count: 1 }
-    it { is_expected.to match "exVAT" } # check it honours word boundaries
-  end
-
-  describe "global frontmatter" do
-    let :global_front_matter do
-      {
-        "title" => "Default page title",
-        "acronyms" => {
-          "CPD" => "Continuous professional development",
-          "VAT" => "Wrong definition",
-        },
-      }
-    end
-
-    let :markdown do
-      <<~MARKDOWN
-        ---
-        acronyms:
-          PAYE: Pay as you earn
-          VAT: Value added tax
-        ---
-        I've been studying VAT and PAYE as part of my CPD
-      MARKDOWN
-    end
-
-    before do
-      allow(described_class).to \
-        receive(:global_front_matter).and_return global_front_matter
-
-      stub_template "frontmatter.md" => markdown
-      render template: "frontmatter"
-    end
-
-    it { is_expected.to have_css "abbr[title=\"Value added tax\"]", text: "VAT" }
-
-    it do
-      is_expected.to \
-        have_css "abbr[title=\"Continuous professional development\"]", text: "CPD"
-    end
-
-    it { is_expected.to have_css "abbr[title=\"Pay as you earn\"]", text: "PAYE" }
-  end
-
   describe "injecting CTAs" do
     let(:front_matter_with_calls_to_action) do
       {
@@ -301,6 +237,9 @@ describe TemplateHandlers::Markdown, type: :view do
           "inset-text-1" => { "text" => "text 1" },
           "inset-text-2" => { "text" => "text 2" },
         },
+        "youtube_video" => {
+          "video-1" => { "id" => "abc123", "title" => "Video title" },
+        },
       }
     end
 
@@ -317,6 +256,10 @@ describe TemplateHandlers::Markdown, type: :view do
         Some more text
 
         $inset-text-2$
+
+        Some more text
+
+        $video-1$
       MARKDOWN
     end
 
@@ -332,6 +275,7 @@ describe TemplateHandlers::Markdown, type: :view do
       is_expected.to have_css(".quote", text: "quote 1")
       is_expected.to have_css(".inset-text", text: "text 1")
       is_expected.to have_css(".inset-text", text: "text 2")
+      is_expected.to have_css("iframe[title='Video title']")
     end
   end
 end

@@ -14,11 +14,6 @@ promo_content:
 navigation: 20.05
 navigation_title: If you have or are studying for a degree
 navigation_description: Find out how to get qualified teacher status (QTS) through postgraduate teacher training if you have a degree or you’re studying for one. 
-inset_text:
-  still-time-to-apply:
-    text: |-
-      <p>There's still time to apply and start teacher training this September.</p>
-      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 keywords:
   - becoming a teacher
   - teacher training
@@ -26,8 +21,6 @@ keywords:
   - pgce
   - qts
 ---
-
-$still-time-to-apply$
 
 You need a degree to teach in primary, secondary and special schools in England.
 
@@ -117,7 +110,7 @@ These are in high demand and very competitive. Places fill up quickly.
 
 You should check your eligibility with the teacher training provider before you apply.
 
-You can [find teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/) and filter by salaried.
+You can [find teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/) and filter by salaried courses.
 
 ### Teach First
 

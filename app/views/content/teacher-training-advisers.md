@@ -42,6 +42,13 @@ calls_to_action:
       link_text: "Get a teacher training adviser"
       link_target: "/tta-service"
       icon: "icon-person"
+youtube_video:
+  about-teacher-training-advisers-video:
+    id: ZaGL8c4FkLA
+    title: A video about what Teacher Training Advisers do
+  about-teacher-training-advisers-experience-video:
+    id: T9Bhcaa6LJ4
+    title: A video about what teaching experience our Teacher Training Advisers have
 ---
 Teacher training advisers give you free, one-to-one help and support. 
 
@@ -65,14 +72,7 @@ Our advisers can help you at any time, even if you're a year or more away from a
 ## Meet Emma, a teacher training adviser
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
-  <iframe 
-    title="A video about what Teacher Training Advisers do"
-    loading="lazy"
-    src="https://www.youtube-nocookie.com/embed/ZaGL8c4FkLA" 
-    frameborder="0" 
-    allow="autoplay; encrypted-media" 
-    allowfullscreen
-  ></iframe>
+$about-teacher-training-advisers-video$
 </div>
 
 ## Helping you decide if teaching is right for you
@@ -86,14 +86,7 @@ Your adviser can help you navigate your path into teaching, and make sure you ge
 ## Meet Simon, a teacher training adviser
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
-  <iframe 
-    title="A video about what teaching experience our Teacher Training Advisers have"
-    loading="lazy"
-    src="https://www.youtube-nocookie.com/embed/T9Bhcaa6LJ4" 
-    frameborder="0" 
-    allow="autoplay; encrypted-media" 
-    allowfullscreen
-  ></iframe>
+$about-teacher-training-advisers-experience-video$
 </div>
 
 ## Already applied and been unsuccessful?
