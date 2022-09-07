@@ -190,7 +190,7 @@ You have the right to apply to train to teach in England if you are resident in 
 
 ### Deadlines for applications
 
-The closing date for applications to train to teach in 2022/23 is 6 September 2022. Applications for 2023/24 open on 11 October 2022.
+Applications to train to teach in 2022/23 have now closed. Applications for 2023/24 open on 11 October 2022.
 
 If you miss the deadline to apply this year, you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain valuable experience for your teacher training course. 
 
