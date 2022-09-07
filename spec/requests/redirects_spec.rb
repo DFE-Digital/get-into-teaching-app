@@ -3,7 +3,8 @@ require "rails_helper"
 describe "Redirects", content: true, type: :request do
   before(:all) { @result = {} }
 
-  let(:query_string) { "abc=def&ghi=jkl" }
+  let(:query_string) { "#{expected_query_string}&page=5" }
+  let(:expected_query_string) { "abc=def&ghi=jkl" }
   let(:valid_results) { [200, 301, 302] }
 
   redirects = YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects")
@@ -17,7 +18,7 @@ describe "Redirects", content: true, type: :request do
         allow(Rails.logger).to receive(:info)
 
         expect(subject).to be 301
-        expect(response).to redirect_to(build_url(to, query_string))
+        expect(response).to redirect_to(build_url(to, expected_query_string))
         expect(Rails.logger).to have_received(:info).with(redirect: { request: url, from: from, to: to })
 
         target = Nokogiri.parse(response.body).at_css("a")["href"].gsub(root_url, "/")
@@ -48,7 +49,7 @@ describe "Redirects", content: true, type: :request do
           allow(Rails.logger).to receive(:info)
 
           expect(subject).to be 301
-          expect(response).to redirect_to(build_url(to, query_string))
+          expect(response).to redirect_to(build_url(to, expected_query_string))
 
           target = Nokogiri.parse(response.body).at_css("a")["href"].gsub(root_url, "/")
 

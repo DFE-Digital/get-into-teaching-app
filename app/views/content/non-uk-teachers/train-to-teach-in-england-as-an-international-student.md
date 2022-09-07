@@ -58,14 +58,7 @@ keywords:
   - Settlement Scheme
   - Statement
   - Comparability
-inset_text:
-  still-time-to-apply:
-    text: |-
-      <p>There's still time to apply and start teacher training this September.</p>
-      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
-
-$still-time-to-apply$
 
 Citizens of every country in the world can apply to train to teach in England.
 

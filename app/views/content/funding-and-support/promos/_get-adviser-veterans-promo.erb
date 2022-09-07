@@ -1,0 +1,11 @@
+<%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
+  <% promo.left_section(
+      heading: "Get an adviser", classes: %w[veteran-background]) do %>
+  <% end %>
+
+  <% promo.right_section(heading: "Get free one-to-one support") do %>
+      <p>You can get dedicated guidance and support with your journey into teacher training from one of our veteran teacher training advisers.</p>
+
+      <%= link_to("Find out more about advisers", "/teacher-training-advisers", class: "button") %>
+  <% end %>
+<% end %>

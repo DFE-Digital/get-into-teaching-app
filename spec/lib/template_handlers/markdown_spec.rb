@@ -237,6 +237,9 @@ describe TemplateHandlers::Markdown, type: :view do
           "inset-text-1" => { "text" => "text 1" },
           "inset-text-2" => { "text" => "text 2" },
         },
+        "youtube_video" => {
+          "video-1" => { "id" => "abc123", "title" => "Video title" },
+        },
       }
     end
 
@@ -253,6 +256,10 @@ describe TemplateHandlers::Markdown, type: :view do
         Some more text
 
         $inset-text-2$
+
+        Some more text
+
+        $video-1$
       MARKDOWN
     end
 
@@ -268,6 +275,7 @@ describe TemplateHandlers::Markdown, type: :view do
       is_expected.to have_css(".quote", text: "quote 1")
       is_expected.to have_css(".inset-text", text: "text 1")
       is_expected.to have_css(".inset-text", text: "text 2")
+      is_expected.to have_css("iframe[title='Video title']")
     end
   end
 end

@@ -30,6 +30,7 @@
   }
 
   .accordions,
+  .photo-quote-list,
   .stories-feature,
   .feature-table,
   .content-alert,
@@ -127,6 +128,12 @@
 
     h3 {
       @extend .heading-s;
+    }
+  }
+
+  &.campaign {
+    > h2 {
+      @extend .heading--box-yellow;
     }
   }
 

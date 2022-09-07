@@ -1,5 +1,11 @@
 ---
 # hero
+"media/images/content/hero-images/cake.png":
+  alt: "A multicoloured cake with sprinkles."
+  variants:
+    - "media/images/content/hero-images/cake--mobile.png"
+    - "media/images/content/hero-images/cake--tablet.png"
+
 "media/images/content/hero-images/0001.jpg":
   alt: "Maths teacher standing in front of a whiteboard with maths equations."
   variants:
@@ -369,3 +375,15 @@
 
 "media/images/content/homepage/teacher-training-adviser.jpg":
   alt: "Teacher in a staff room talking to a colleague."
+
+# food for thought
+"media/images/content/food-for-thought/Jake_Athorn.jpg":
+  alt: "Teacher Jake Athorn"
+"media/images/content/food-for-thought/Joel_Quilter.jpg":
+  alt: "Teacher Joel Quilter"
+"media/images/content/food-for-thought/Johnoi_Josephs.jpg":
+  alt: "Teacher Johnoi Josephs"
+"media/images/content/food-for-thought/Keri_Gell.jpg":
+  alt: "Teacher Keri Gell"
+"media/images/content/food-for-thought/Ella_Tyrrell.jpg":
+  alt: "Teacher Ella Tyrrell"

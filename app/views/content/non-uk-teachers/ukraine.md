@@ -36,14 +36,7 @@ keywords:
   - European
   - Statement
   - Comparability
-inset_text:
-  still-time-to-apply:
-    text: |-
-      <p>There's still time to apply and start teacher training this September.</p>
-      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
-
-$still-time-to-apply$
 
 Overseas teachers enrich the lives of students and add value to schools and the wider community. The [Department for Education (DfE)](https://www.gov.uk/government/organisations/department-for-education) wants to help Ukrainian refugees in any way we can, and we support and encourage schools and training providers to recruit Ukrainian teachers and teacher trainees. 
 
