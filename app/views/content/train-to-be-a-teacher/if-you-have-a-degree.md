@@ -4,10 +4,10 @@ heading: "Train to be a teacher if you have or are studying for a degree"
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:
+    What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Improve your subject knowledge : "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
-    What is teacher training like? : "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/train-to-be-a-teacher/promos/events-promo-degree
@@ -39,14 +39,26 @@ If you’re not from the UK, find out about [training to teach in England as a n
 
 ## What qualifications can I get through teacher training?
 
-You can do teacher training to get:
+To be a qualified teacher, you can do teacher training to get:
 
 * qualified teacher status (QTS)
 * qualified teacher status (QTS) with postgraduate certificate in education (PGCE)
 
+### QTS
+
 You need QTS to teach in most primary, secondary and special schools in England.
 
 Even in schools where you do not need QTS (for example, academies), most teachers still have it.
+
+Getting QTS without PGCE may mean that:
+
+* your course is shorter
+* your course fees are lower
+* you submit fewer assignments
+
+[Find out more about QTS](/what-is-qts).
+
+### PGCE
 
 You can also do a teacher training course to just get a postgraduate certificate in education (PGCE).
 
@@ -58,14 +70,6 @@ Getting a PGCE can help you:
 * earn up to 60 credits towards a master’s - you may want to do a master’s in education, for example, for your professional development
 * teach in other countries
 
-Getting QTS without PGCE may mean that:
-
-* your course is shorter
-* your course fees are lower
-* you submit fewer assignments
-
-[Find out more about QTS](/what-is-qts).
-
 [Find out more about PGCE](/what-is-a-pgce).
 
 ## Non-salaried teacher training
@@ -76,11 +80,11 @@ Fees are usually around £9,250, and can be higher for [international students](
 
 If you train to teach certain secondary subjects, you may be eligible for a [scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
-No matter what course you choose, you can apply for a student loan.
+You can apply for a student loan regardless of the course you choose, even if you've had one previously for other postgraduate training.
 
 [Learn about how you could fund your teacher training](/funding-and-support).
 
-### Teacher training providers
+### Teacher training courses
 
 Your teacher training course might be provided by a university, school, college or group of schools. Your course might be referred to as:
 
@@ -89,9 +93,9 @@ Your teacher training course might be provided by a university, school, college 
 
 The content of SCITT and School Direct programmes are broadly the same.
 
-Some providers have different course structures and have placements in different kinds of schools, such as special schools. Talk to your provider to find out what they can offer you.
+Some courses have different course structures and have placements in different kinds of schools, such as special schools. Talk to your course provider to find out what they can offer you.
 
-[Find teacher training providers](https://www.find-postgraduate-teacher-training.service.gov.uk/).
+[Find teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/).
 
 ### Choose your provider
 
@@ -113,7 +117,7 @@ These are in high demand and very competitive. Places fill up quickly.
 
 You should check your eligibility with the teacher training provider before you apply.
 
-[Find salaried teacher training](https://www.find-postgraduate-teacher-training.service.gov.uk/) by applying the ‘only show courses that come with a salary’ filter.
+You can [find teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/) and filter by salaried.
 
 ### Teach First
 
