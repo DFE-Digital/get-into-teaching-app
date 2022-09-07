@@ -53,6 +53,12 @@ class TeachingEventsController < ApplicationController
   end
 
   def about_ttt_events
+    @no_ttt_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
+      quantity: 1,
+      type_ids: [EventType.train_to_teach_event_id, EventType.question_time_event_id],
+      start_after: Time.zone.now,
+    ).blank?
+
     breadcrumb "Get into Teaching events", events_path
   end
 

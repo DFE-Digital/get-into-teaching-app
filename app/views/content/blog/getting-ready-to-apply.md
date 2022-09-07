@@ -24,16 +24,9 @@ tags:
   - train to teach events
   - applications
   - references
-inset_text:
-  still-time-to-apply:
-    text: |-
-      <p>There's still time to apply and start teacher training this September.</p>
-      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
 
 $notepad$
-
-$still-time-to-apply$
 
 Applications for teacher training courses starting in 2023 open on 11 October, but there is plenty you can be doing right now to get ready.
 

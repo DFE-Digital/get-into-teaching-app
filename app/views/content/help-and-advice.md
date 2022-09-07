@@ -12,29 +12,6 @@ calls_to_action:
     arguments: {}
 ---
 
-## Attend an event
-
-Our events are a great way to meet teachers and other experts to talk about any concerns or questions you have about becoming a teacher.
-
-### Train to Teach events
-
-Train to Teach events are run by the Department for Education (DfE) and are free to attend. You'll be able to:
-
-- put your questions to expert advisers, teachers and training providers
-- chat with current teachers
-- find out what a career in teaching is really like
-- watch presentations which provide detailed guidance on how to get into teaching, the application process and funding your training
-
-### Online question and answer sessions
-
-There are online, text-based sessions where you can ask a panel of specialists the questions that matter to you. These sessions, run by DfE, cover a range of different topics so you can post specific questions and receive advice tailored to your particular circumstances.
-
-### Training provider events
-
-You could also attend a training provider event, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
-
-<a href="/events" class="button">Search for an event</a>
-
 ## Get a teacher training adviser
 
 Teacher training advisers provide free, one-to-one support by phone, text or email wherever you are in your journey into teaching. They are experienced, former teachers and able to answer any questions you have. You will have your own dedicated adviser to support you at every step as you make important decisions about your future.
@@ -50,6 +27,29 @@ They can help you to:
 - prepare for your interview
 
 <a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get your dedicated adviser</a>
+
+## Attend an event
+
+Our events are a great way to meet teachers and other experts to talk about any concerns or questions you have about becoming a teacher.
+
+### Online question and answer sessions
+
+There are online, text-based sessions where you can ask a panel of specialists the questions that matter to you. These sessions, run by DfE, cover a range of different topics so you can post specific questions and receive advice tailored to your particular circumstances.
+
+### Training provider events
+
+You could also attend a training provider event, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
+
+### Train to Teach events
+
+Train to Teach events are run by the Department for Education (DfE) and are free to attend. You'll be able to:
+
+- put your questions to expert advisers, teachers and training providers
+- chat with current teachers
+- find out what a career in teaching is really like
+- watch presentations which provide detailed guidance on how to get into teaching, the application process and funding your training
+
+<a href="/events" class="button">Search for an event</a>
 
 ## Have a chat
 

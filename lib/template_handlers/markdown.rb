@@ -7,7 +7,7 @@ module TemplateHandlers
     DEFAULTS = {}.freeze
     GLOBAL_FRONT_MATTER = Rails.root.join("config/frontmatter.yml").freeze
     COMPONENT_PLACEHOLDER_REGEX = /\$([A-z0-9-]+)\$/
-    COMPONENT_TYPES = %w[quote inset_text].freeze
+    COMPONENT_TYPES = %w[quote inset_text youtube_video].freeze
 
     class << self
       def call(template, source = nil)

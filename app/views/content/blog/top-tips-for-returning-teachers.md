@@ -11,6 +11,10 @@ keywords:
   - returning to teaching
 tags:
   - returning to teaching
+youtube_video:
+  return-to-teaching-advisers-video:
+    id: 2NrLm_XId4k
+    title: A video about what Return to Teaching Advisers do
 ---
 
 $calculator$
@@ -30,14 +34,7 @@ If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualifi
 From helping you to brush up on your subject knowledge to preparing for interviews, our advisers will be with you every step of the way and help you get back in the classroom.
 
 <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
-  <iframe 
-    title="A video about what Return to Teaching Advisers do"
-    loading="lazy"
-    src="https://www.youtube-nocookie.com/embed/2NrLm_XId4k" 
-    frameborder="0" 
-    allow="autoplay; encrypted-media" 
-    allowfullscreen
-  ></iframe>
+$return-to-teaching-advisers-video$
 </div>
 
 > Kathryn [RTTA] has been central in my engagement in the programme. She made it incredibly easy to find all the information needed and is always on hand with first class advice.

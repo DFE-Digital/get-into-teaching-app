@@ -27,7 +27,6 @@ describe TeachingEvents::EventPresenter do
       summary
       type_id
       status_id
-      video_url
       web_feed_id
     ].each { |attribute| it { is_expected.to delegate_method(attribute).to(:event) } }
   end
@@ -60,6 +59,34 @@ describe TeachingEvents::EventPresenter do
         let(:event) { build(:event_api) }
 
         it { is_expected.to have_location }
+      end
+    end
+
+    describe "#video_id" do
+      let(:video_id) { "BelJ2AjtHoQ" }
+
+      context "when the video_url is nil" do
+        let(:event) { build(:event_api, video_url: nil) }
+
+        it { expect(subject.video_id).to be_nil }
+      end
+
+      context "when the video_url is not a valid YouTube URL" do
+        let(:event) { build(:event_api, video_url: "http://youtube.com/#{video_id}") }
+
+        it { expect(subject.video_id).to be_nil }
+      end
+
+      context "when the video_url is an embedded URL" do
+        let(:event) { build(:event_api, video_url: "https://www.youtube.com/embed/#{video_id}") }
+
+        it { expect(subject.video_id).to eq(video_id) }
+      end
+
+      context "when the video_url is a watch URL" do
+        let(:event) { build(:event_api, video_url: "https://www.youtube.com/watch?v=#{video_id}") }
+
+        it { expect(subject.video_id).to eq(video_id) }
       end
     end
 

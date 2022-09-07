@@ -1,5 +1,11 @@
 ---
 # hero
+"media/images/content/hero-images/cake.png":
+  alt: "A multicoloured cake with sprinkles."
+  variants:
+    - "media/images/content/hero-images/cake--mobile.png"
+    - "media/images/content/hero-images/cake--tablet.png"
+
 "media/images/content/hero-images/0001.jpg":
   alt: "Maths teacher standing in front of a whiteboard with maths equations."
   variants:
@@ -354,6 +360,12 @@
 "media/images/content/blog/thumbnails/stories-jill.jpg":
   alt: Returning science teacher, Jill
 
+"media/images/content/blog/thumbnails/chris-wallis.jpg":
+  alt: Product engineer turned science teacher, Chris Wallis
+
+"media/images/content/blog/thumbnails/david-payling.jpg":
+  alt: Veteran and trainee teacher, Daivd Payling
+
 # homepage
 "media/images/content/homepage/here-to-help.jpg":
   alt: "Back of an adviser's T-shirt saying 'here to help' at a teacher training event."
@@ -363,3 +375,15 @@
 
 "media/images/content/homepage/teacher-training-adviser.jpg":
   alt: "Teacher in a staff room talking to a colleague."
+
+# food for thought
+"media/images/content/food-for-thought/Jake_Athorn.jpg":
+  alt: "Teacher Jake Athorn"
+"media/images/content/food-for-thought/Joel_Quilter.jpg":
+  alt: "Teacher Joel Quilter"
+"media/images/content/food-for-thought/Johnoi_Josephs.jpg":
+  alt: "Teacher Johnoi Josephs"
+"media/images/content/food-for-thought/Keri_Gell.jpg":
+  alt: "Teacher Keri Gell"
+"media/images/content/food-for-thought/Ella_Tyrrell.jpg":
+  alt: "Teacher Ella Tyrrell"

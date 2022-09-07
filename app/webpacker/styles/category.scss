@@ -18,29 +18,32 @@
     }
   }
 
-  &__nav-cards {
+  &__nav-cards ul {
     display: grid;
     grid-template-columns: 1fr;
     margin-inline: 1em;
     margin-block: 2em;
+    padding: 0;
+    gap: 2em;
+    list-style: none;
 
     @include mq($from: tablet) {
       grid-template-columns: repeat(2, 1fr);
       margin-inline: 2em;
     }
-
-    gap: 2em;
-    list-style: none;
   }
 
   &__nav-card {
     background: white;
     box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.15);
-    color: black;
-    text-decoration: none;
-    padding: 2em;
     display: flex;
-    gap: 1.5em;
+
+    a {
+      padding: 2em;
+      text-decoration: none;
+      display: flex;
+      gap: 1.5em;
+    }
 
     &:hover {
       box-shadow: 0px 12px 9px 0px rgba(0,0,0,0.15);
@@ -142,6 +145,11 @@
 
     &.tta-background {
       background-image: url("../images/content/homepage/teacher-training-adviser.jpg");
+      background-position-y: 20%;
+    }
+
+    &.veteran-background {
+      background-image: url("../images/content/hero-images/0015.jpg");
       background-position-y: 20%;
     }
 
