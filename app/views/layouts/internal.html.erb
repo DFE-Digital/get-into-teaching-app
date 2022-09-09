@@ -15,6 +15,7 @@
   </div>
 
   <main id="main-content" class="<%= class_names("internal", action_name ) %>" role="main">
+    <%= render(partial: "sections/emergency_banner") %>
     <section class="container internal-container">
       <article class="fullwidth">
         <%= yield %>

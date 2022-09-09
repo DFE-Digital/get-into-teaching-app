@@ -7,6 +7,7 @@
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
     <main id="main-content" role="main">
+      <%= render(partial: "sections/emergency_banner") %>
       <section class="container main-body">
         <article class="markdown disclaimer fullwidth">
           <% if !@front_matter["image"] %>

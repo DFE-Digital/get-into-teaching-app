@@ -11,6 +11,7 @@
     <%= render HeaderComponent.new %>
 
     <main role="main" id="main-content" class="main-body registration-with-image-above" role="main">
+      <%= render(partial: "sections/emergency_banner") %>
       <%= image_pack_tag("content/event-signup/birmingham-event-1-wide.jpg", alt: "A busy train to teach event with banners and attendees chatting with advisers") %>
 
       <div class="event-info">

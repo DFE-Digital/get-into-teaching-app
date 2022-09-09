@@ -11,6 +11,7 @@
     <%= render HeaderComponent.new %>
 
     <main id="main-content" class="main-body" role="main">
+      <%= render(partial: "sections/emergency_banner") %>
       <section class="feature registration container">
         <%= yield %>
       </section>

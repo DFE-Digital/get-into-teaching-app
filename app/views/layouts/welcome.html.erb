@@ -8,6 +8,7 @@
     <%= render HeaderComponent.new %>
 
     <main class="welcome-guide main-body" id="main-content" role="main">
+      <%= render(partial: "sections/emergency_banner") %>
       <%= yield %>
 
       <% @front_matter["content"]&.each do |partial| %>

@@ -7,6 +7,7 @@
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
     <main id="main-content" role="main">
+      <%= render(partial: "sections/emergency_banner") %>
       <section class="container blog main-body">
         <%= render(partial: "blog/header", locals: { mobile: true }) %>
         <article class="text-content longform<%= " with-aside" if content_for?(:aside) %>">

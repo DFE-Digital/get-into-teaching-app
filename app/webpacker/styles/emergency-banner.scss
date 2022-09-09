@@ -1,0 +1,153 @@
+.emergency-banner {
+  font-family: "nta", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  background-color: #b1b4b6;
+  color: #fff;
+  margin-top: 2px;
+  padding: 15px 0;
+
+  display: flex;
+  justify-content: left;
+
+  @include mq($from: desktop) {
+    justify-content: center;
+  }
+
+  > div {
+    padding: 0 1em;
+  }
+}
+
+@media print {
+  .emergency-banner {
+      font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .emergency-banner {
+      font-size: 19px;
+      line-height: 1.3157894737;
+  }
+}
+
+@media print {
+  .emergency-banner {
+      font-size: 14pt;
+      line-height: 1.15;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .emergency-banner {
+      padding: 30px 0;
+  }
+}
+
+.emergency-banner__heading {
+  font-family: "nta", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.1111111111;
+  margin: 0;
+}
+
+@media print {
+  .emergency-banner__heading {
+      font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .emergency-banner__heading {
+      font-size: 24px;
+      line-height: 1.25;
+  }
+}
+
+@media print {
+  .emergency-banner__heading {
+      font-size: 18pt;
+      line-height: 1.15;
+  }
+}
+
+.emergency-banner__description {
+  font-family: "nta", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+@media print {
+  .emergency-banner__description {
+      font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .emergency-banner__description {
+      font-size: 19px;
+      line-height: 1.3157894737;
+  }
+}
+
+@media print {
+  .emergency-banner__description {
+      font-size: 14pt;
+      line-height: 1.15;
+  }
+}
+
+.emergency-banner__description:last-child {
+  margin-bottom: 0;
+}
+
+.emergency-banner__link {
+  font-family: "nta", arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+}
+
+@media print {
+  .emergency-banner__link {
+      font-family: sans-serif;
+  }
+}
+
+@media (min-width: 40.0625em) {
+  .emergency-banner__link {
+      font-size: 19px;
+      line-height: 1.3157894737;
+  }
+}
+
+@media print {
+  .emergency-banner__link {
+      font-size: 14pt;
+      line-height: 1.15;
+  }
+}
+
+.emergency-banner__link:link,
+.emergency-banner__link:visited {
+  color: #fff;
+}
+
+.emergency-banner--notable-death {
+  background-color: #0b0c0c;
+}
