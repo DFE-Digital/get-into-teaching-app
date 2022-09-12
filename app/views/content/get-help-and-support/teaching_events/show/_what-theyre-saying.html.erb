@@ -1,0 +1,18 @@
+<%# the quote can be overridden by locals or derrived from the event presenter %>
+<% featured_quote = defined?(quote) ? quote : @event.quote %>
+
+<% if featured_quote %>
+  <div class="what-theyre-saying">
+    <div class="triangle yellow">
+      <svg height="100%" width="100%" viewbox="0 0 100 100" preserveAspectRatio="none">
+        <polygon points="0,100 100,0 100,100" />
+      </svg>
+    </div>
+    <div class="subheading">
+      <h3 class="heading--box-pink heading--margin-0">What they're saying</h3>
+    </div>
+    <figure>
+      <blockquote><%= featured_quote %></blockquote>
+    </figure>
+  </div>
+<% end %>

@@ -1,0 +1,21 @@
+<% if f.object.magic_link_token_used? %>
+<div class="content-alert content-alert--fullwidth">
+    <div>
+      <p>Tell us more about you so that you only get emails relevant to your circumstances.</p>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<%= f.govuk_error_summary %>
+
+<%= f.govuk_collection_radio_buttons :degree_status_id,
+  f.object.degree_status_options,
+  :id,
+  ->(option) { I18n.t("helpers.answer.mailing_list_steps_degree_status.degree_status.#{option.value.parameterize(separator: '_')}", default: option.value) },
+  legend: { tag: 'h1', text: t("helpers.label.mailing_list_steps_degree_status.degree_status_id") } do
+%>
+  <p>
+    You'll find out how to become a teacher based on your current circumstances.
+  </p>
+<% end %>

@@ -1,0 +1,41 @@
+<% content_for(:head) do %>
+  <%= event_structured_data(@event) %>
+<% end %>
+
+<div class="teaching-event">
+  <header class="yellow">
+    <div class="heading">
+      <h1 class="heading-l heading--box-white"><%= @event.name %></h1>
+    </div>
+
+    <div class="event-details">
+      <%= render(partial: 'teaching_events/show/date-and-time') %>
+      <%= render(partial: 'teaching_events/show/location-and-setting') %>
+      <%= render(partial: 'teaching_events/show/register-button') if @event.allow_registration? %>
+    </div>
+
+    <%= render(partial: 'teaching_events/show/event-image') %>
+    <%= render(partial: 'teaching_events/show/triangle') %>
+  </header>
+
+  <div class="container teaching-event__info">
+    <article>
+      <%= render(partial: "teaching_events/show/event-summary") %>
+      <%= render(partial: "teaching_events/show/attending-training-providers") %>
+      <%= render(partial: "teaching_events/show/how-to-attend") %>
+      <%= render(partial: "teaching_events/show/provider-info") if @event.show_provider_information? %>
+    </article>
+
+    <aside role="complementary">
+      <%= render(partial: "teaching_events/show/venue-information") if @event.show_venue_information? %>
+    </aside>
+  </div>
+
+  <% if @event.scribble_id.present? %>
+    <div class="container teaching-event__info">
+      <%= render(partial: "teaching_events/show/scribble") %>
+    </div>
+  <% end %>
+
+  <%= render(partial: "teaching_events/show/what-theyre-saying") %>
+</div>

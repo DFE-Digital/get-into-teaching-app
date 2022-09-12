@@ -1,0 +1,13 @@
+<%= f.govuk_error_summary %>
+
+<%= f.govuk_collection_select :preferred_teaching_subject_id,
+      f.object.teaching_subjects,
+      :id,
+      :value,
+      options: { prompt: "Please select" },
+      label: { tag: 'h1', size: "xl", text: t('helpers.label.mailing_list_steps_subject.preferred_teaching_subject_id') } do
+%>
+<p>
+  Select a secondary school subject or select 'primary' even if you're not sure yet. You can change your preferences later.
+</p>
+<% end %>
