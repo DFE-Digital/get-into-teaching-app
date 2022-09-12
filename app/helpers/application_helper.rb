@@ -16,11 +16,11 @@ module ApplicationHelper
     title || frontmatter["title"] || params[:page].to_s.humanize
   end
 
-  def prefix_title(title)
+  def suffix_title(title)
     if title
-      "#{title} | Get Into Teaching"
+      "#{title} | Get Into Teaching GOV.UK"
     else
-      "Get Into Teaching"
+      "Get Into Teaching GOV.UK"
     end
   end
 

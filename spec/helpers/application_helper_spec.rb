@@ -11,6 +11,22 @@ describe ApplicationHelper do
     it { is_expected.to have_css "body hr" }
   end
 
+  describe "#suffix_title" do
+    subject { suffix_title(title) }
+
+    context "when no title is provided" do
+      let(:title) { nil }
+
+      it { is_expected.to eq("Get Into Teaching GOV.UK") }
+    end
+
+    context "when a title is provided" do
+      let(:title) { "My Title" }
+
+      it { is_expected.to eq("My Title | Get Into Teaching GOV.UK") }
+    end
+  end
+
   describe "#new_gtm_enabled?" do
     it "returns true when GTM_ID is present" do
       allow(ENV).to receive(:[]).with("GTM_ID").and_return("ABC-123")
