@@ -1,0 +1,26 @@
+<section class="why-teach" aria-label="Why teach?">
+  <div class="why-teach__container">
+    <div class="why-teach__content">
+      <h2 class="heading-l">
+        <div class="caption-l caption--bold caption--purple">Why teach?</div>
+        Inspire the next generation
+      </h2>
+
+      <p>
+        The impact of your work as a teacher will be felt beyond the classroom
+        walls and far into the future. Teachers make a difference every day.
+      </p>
+
+      <ul>
+        <li><%= link_to("Learn more about what a day teaching is like", "/a-day-in-the-life-of-a-teacher") %></li>
+        <li><%= link_to("Find out what pay and benefits teachers get", "/salaries-and-benefits") %></li>
+      </ul>
+    </div>
+
+    <div class="why-teach__image">
+      <% "media/images/content/hero-images/0011.jpg".tap do |path| %>
+        <%= image_pack_tag(path, alt: image_alt(path)) %>
+      <% end %>
+    </div>
+  </div>
+</section>
