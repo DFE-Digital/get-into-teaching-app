@@ -11,6 +11,7 @@ navigation_path: "/get-help-and-support"
 layout: "layouts/category"
 content:
     - content/get-help-and-support/questions
+    - content/get-help-and-support/promos/events-promo
     - content/get-help-and-support/why-teach
 image: "media/images/content/hero-images/0007.jpg"
 hero_bg_color: yellow
