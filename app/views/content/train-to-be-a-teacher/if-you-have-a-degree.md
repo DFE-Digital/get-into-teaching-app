@@ -22,7 +22,7 @@ keywords:
   - qts
 ---
 
-You need a degree to teach in primary, secondary and special schools in England.
+You need a bachelor's degree (honours) to teach in primary, secondary and special schools in England. This doesn't have to be a bachelor's degree in teaching.
 
 You also need to gain qualified teacher status (QTS) to teach in most schools which you get through teacher training.
 
