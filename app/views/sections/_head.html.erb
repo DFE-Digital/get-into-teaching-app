@@ -1,6 +1,6 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title><%= prefix_title page_title(@page_title, @front_matter) %></title>
+  <title><%= suffix_title(page_title(@page_title, @front_matter)) %></title>
   <%= csp_meta_tag %>
   <%= content_for?(:canonical) ? yield(:canonical) : canonical_tag %>
   <%= tag.meta(name: 'viewport', content: 'width=device-width, initial-scale=1, shrink-to-fit=no') %>
