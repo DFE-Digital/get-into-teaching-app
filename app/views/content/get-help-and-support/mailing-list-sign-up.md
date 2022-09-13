@@ -1,13 +1,13 @@
 ---
-title: "Mailing list sign up card title goes here"
-heading: "Mailing list sign up card heading goes here"
+title: "Get tailored guidance in your inbox"
+heading: "Get tailored guidance in your inbox"
 description: |-
-  Mailing list sign up card description goes here
+  Get hints and tips about teacher training and what it's like in the classroom straight to your inbox.
 promo_content:
     - content/funding-and-support/promos/mailing-list-promo
 navigation: 1
-navigation_title: Mailing list sign up card nav title
-navigation_description: Mailing list sign up card nav description
+navigation_title: Get tailored guidance in your inbox
+navigation_description: Get hints and tips about teacher training and what it's like in the classroom straight to your inbox.
 keywords:
     - Keywords
     - Go
