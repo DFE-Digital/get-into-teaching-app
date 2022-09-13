@@ -8,6 +8,8 @@ images:
     thumbnail_path: "media/images/content/blog/thumbnails/notepad.jpg"
 description: |-
   Applications for teacher training courses starting in 2023 open on 11 October, but there is plenty you can be doing right now to get ready.
+promo_content:
+    - content/train-to-be-a-teacher/promos/mailing-list-promo
 keywords:
   - teacher training
   - apply

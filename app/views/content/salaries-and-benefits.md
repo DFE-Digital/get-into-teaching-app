@@ -17,6 +17,8 @@ right_column:
       icon: "icon-person"
       hide_on_mobile: Yes
       hide_on_tablet: Yes
+promo_content:
+    - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
 keywords:
   - Salary
   - Salaries

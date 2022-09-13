@@ -8,6 +8,8 @@ images:
     thumbnail_path: "media/images/content/blog/thumbnails/stories-will.jpg"
 description: |-
   Teaching trainee Will Fordham was working as a communications manager, when he realised that teaching was what he loved.
+promo_content:
+    - content/train-to-be-a-teacher/promos/mailing-list-promo
 keywords:
   - life as a teacher
   - train to be a teacher

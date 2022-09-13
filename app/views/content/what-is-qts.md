@@ -6,6 +6,8 @@ description: |-
 date: "2021-11-01"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
+promo_content:
+    - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 keywords:
   - PGCE
   - Post-graduate
