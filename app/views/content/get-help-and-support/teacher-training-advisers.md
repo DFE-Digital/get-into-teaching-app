@@ -14,7 +14,7 @@ related_content:
 navigation: 20.05
 navigation_title: Teacher training advisers
 navigation_description: If you already have a degree or are a final year student, an adviser can help you understand how to get into teaching.
-subcategory: Subcategory here
+subcategory: Talk to an adviser
 article_classes: ['longform']
 backlink: "../"
 accordion:
