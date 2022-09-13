@@ -1,18 +1,15 @@
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
   <% promo.left_section(
-      heading: "Teacher training events") do %>
+      heading: "What is a Get Into Teaching event?") do %>
+      <p>Chat with teacher training providers, experienced teachers, and expert advisers about all things teaching.</p>
+
+      <%= link_to("Find out more about Get Into Teaching events", "/events/about-train-to-teach-events", class: "button") %>
   <% end %>
 
   <% promo.right_section(
-        caption: "Events near you",
-        heading: "Events are a great place to ask questions") do %>
-      <p>Events are one of the best ways to speak to people and ask the questions you need to get into teaching.</p>
+        heading: "Find in person events") do %>
+      <p>Talk face to face with providers to find out more about becoming a teacher.</p>
 
-      <%= form_for TeachingEvents::Search.new, method: :post, url: events_path do |f| %>
-        <%= f.hidden_field :distance, value: 10 %>
-        <%= f.label :postcode, "Enter postcode" %>
-        <%= f.text_field :postcode, autocomplete: "postal-code" %>
-        <%= tag.button("Search", class: "button", id: "event-search") %>
-      <% end %>
+      <%= link_to("Find an event near you", "/events", class: "button") %>
   <% end %>
 <% end %>
