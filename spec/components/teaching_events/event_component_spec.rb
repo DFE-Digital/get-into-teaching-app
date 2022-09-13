@@ -33,7 +33,7 @@ describe TeachingEvents::EventComponent, type: "component" do
         it { expect(subject.provider_event?).to be(true) }
       end
 
-      context "when the event is a train to teach event" do
+      context "when the event is a Get Into Teaching event" do
         let(:event) { build(:event_api) }
 
         it { expect(subject.provider_event?).to be(false) }
@@ -113,7 +113,7 @@ describe TeachingEvents::EventComponent, type: "component" do
       expect(subject).to have_css("li.event")
     end
 
-    context "when a train to teach event" do
+    context "when a Get Into Teaching event" do
       it { expect(subject).to have_css("li.event.event--train-to-teach") }
 
       specify "contains the event name as a link" do

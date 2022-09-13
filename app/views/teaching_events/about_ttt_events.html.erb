@@ -1,5 +1,5 @@
 <%
-  @page_title = "About train to teach events"
+  @page_title = "About Get Into Teaching events"
   @show_breadcrumbs = true
   @no_bottom_margin = true
 %>
@@ -9,19 +9,19 @@
     <h1 class="heading--highlight-pink">
       <span>What happens at a</span>
       <br>
-      <span>Train to Teach event?</span>
+      <span>Get Into Teaching event?</span>
     </h1>
 
     <% if @no_ttt_events %>
-      <%= render Content::InsetTextComponent.new(text: "The summer programme of Train to Teach events has now ended. Train to Teach events will start again in November and you'll be able to book your place from the end of September. You can also search for #{link_to('more events', events_path)}." ) %>
+      <%= render Content::InsetTextComponent.new(text: "The summer programme of Get Into Teaching events has now ended. Get Into Teaching events will start again in November and you'll be able to book your place from the end of September. You can also search for #{link_to('more events', events_path)}." ) %>
     <% end %>
 
-    <%= image_pack_tag "media/images/content/event-signup/birmingham-event-3.jpg", alt: "A popular train to teach event in a hall with stalls and banners" %>
+    <%= image_pack_tag "media/images/content/event-signup/birmingham-event-3.jpg", alt: "A popular Get Into Teaching event in a hall with stalls and banners" %>
   </header>
 
   <article>
     <p>
-      Train to Teach events are designed to give you an insight into what it’s
+      Get Into Teaching events are designed to give you an insight into what it’s
       like to be a teacher, as well as the practical information you need to get
       onto a teacher training course.
     </p>
@@ -39,7 +39,7 @@
     </p>
 
     <p>
-    <%= link_to("Register for a Train to Teach event", events_path("teaching_events_search[type][]" => "ttt,tttqt"), class: "button") %>
+    <%= link_to("Register for a Get Into Teaching event", events_path("teaching_events_search[type][]" => "ttt,tttqt"), class: "button") %>
     </p>
 
     <h2>What to expect on the day:</h2>
@@ -55,7 +55,7 @@
     <div class="youtube-video-container">
       <%= render Content::YoutubeVideoComponent.new(
         id: "eAWwqLLEINI",
-        title: "Train to Teach Events: Take your next step towards teaching"
+        title: "Get Into Teaching events: Take your next step towards teaching"
       ) %>
     </div>
   </article>

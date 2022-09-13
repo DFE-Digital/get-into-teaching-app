@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD;
-  chooses_event[/Chooses a Train to Teach event/] --> sign_up_for_this_event
+  chooses_event[/Chooses a Get Into Teaching event/] --> sign_up_for_this_event
   sign_up_for_this_event[Sign up for this event] -- Doesn't exist in CRM --> telephone_number[What is your telephone number?] --> accept_privacy_policy[Accept privacy policy]
 
   sign_up_for_this_event -- Exists in CRM --> already_registered[You've already registered with us]

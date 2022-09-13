@@ -79,7 +79,7 @@ describe TeachingEventsHelper, type: "helper" do
   end
 
   describe "#is_event_type?" do
-    let(:ttt) { "Train to Teach event" }
+    let(:ttt) { "Get Into Teaching event" }
     let(:qt) { "Question Time" }
 
     let(:ttt_event) do

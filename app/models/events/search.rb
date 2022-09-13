@@ -36,7 +36,7 @@ module Events
     class << self
       def available_event_types
         # We can't search for Question Time events explicitly. Instead, they
-        # are returned as Train to Teach events.
+        # are returned as Get Into Teaching events.
         @available_event_types ||= EventType::ALL
           .except("Question Time")
           .map do |key, value|
@@ -81,7 +81,7 @@ module Events
     def type_ids
       type_ids = [type]
 
-      # We combine Question Time events with Train to Teach events
+      # We combine Question Time events with Get Into Teaching events
       if type == EventType.train_to_teach_event_id
         type_ids << EventType.question_time_event_id
       end

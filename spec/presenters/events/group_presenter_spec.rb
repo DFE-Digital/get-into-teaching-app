@@ -47,11 +47,11 @@ describe Events::GroupPresenter do
         expect(type_ids).to include(online_event_type_id)
       end
 
-      context "when there are Question Time or Train to Teach events" do
+      context "when there are Question Time or Get Into Teaching events" do
         let(:train_to_teach_events) { [] }
         let(:question_time_events) { [] }
 
-        it "still contains a key for Train to Teach events" do
+        it "still contains a key for Get Into Teaching events" do
           expect(type_ids).to include(EventType.train_to_teach_event_id)
         end
 
@@ -152,7 +152,7 @@ describe Events::GroupPresenter do
       expect(subject.sorted_events_of_type(type)).to eq(online_events)
     end
 
-    context "when type is Train to Teach event" do
+    context "when type is Get Into Teaching event" do
       let(:type) { EventType.train_to_teach_event_id }
 
       it "returns the Train to Teach and Question Time events" do

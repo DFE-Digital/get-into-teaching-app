@@ -29,7 +29,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       allow_any_instance_of(TeachingEvents::Search).to receive(:results).and_return(events)
     end
 
-    scenario "The first two train to teach events are 'featured'" do
+    scenario "The first two Get Into Teaching events are 'featured'" do
       visit events_path
 
       expect(page).to have_current_path("/events")
@@ -154,10 +154,10 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(online: false)).once
     end
 
-    scenario "searching for train to teach events" do
+    scenario "searching for Get Into Teaching events" do
       visit events_path
 
-      expected_type_ids = EventType.lookup_by_names("Train to Teach event", "Question Time")
+      expected_type_ids = EventType.lookup_by_names("Get Into Teaching event", "Question Time")
 
       check "DfE Train to Teach"
       click_on "Update results"
@@ -187,10 +187,10 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
     end
 
-    scenario "searching for online and train to teach events" do
+    scenario "searching for online and Get Into Teaching events" do
       visit events_path
 
-      expected_type_ids = EventType.lookup_by_names("Train to Teach event", "Question Time", "School or University event")
+      expected_type_ids = EventType.lookup_by_names("Get Into Teaching event", "Question Time", "School or University event")
 
       check "DfE Train to Teach"
       check "Training provider"
@@ -236,7 +236,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
         end
       end
 
-      context "when the candidate has filtered by Train to Teach events" do
+      context "when the candidate has filtered by Get Into Teaching events" do
         let(:params) { { teaching_events_search: { type: %w[ttt] } } }
 
         scenario "specific Train to Teach options are shown" do

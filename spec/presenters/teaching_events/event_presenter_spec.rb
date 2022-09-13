@@ -108,7 +108,7 @@ describe TeachingEvents::EventPresenter do
     describe "#quote" do
       subject { described_class.new(event).quote }
 
-      context "when event is a Train to Teach event" do
+      context "when event is a Get Into Teaching event" do
         let(:event) { build(:event_api, :train_to_teach_event) }
 
         specify { expect(subject).to match(/I got answers to questions/) }
@@ -136,7 +136,7 @@ describe TeachingEvents::EventPresenter do
     describe "#image" do
       subject { described_class.new(event).image }
 
-      context "when event is a Train to Teach event" do
+      context "when event is a Get Into Teaching event" do
         let(:event) { build(:event_api, :train_to_teach_event) }
 
         specify { expect(subject[:path]).to end_with(".jpg") }
@@ -208,7 +208,7 @@ describe TeachingEvents::EventPresenter do
     describe "#show_provider_information?" do
       subject { described_class.new(event).show_provider_information? }
 
-      context "when event is a Train to Teach event" do
+      context "when event is a Get Into Teaching event" do
         let(:event) { build(:event_api, :train_to_teach_event) }
 
         specify { expect(subject).to be false }
@@ -264,7 +264,7 @@ describe TeachingEvents::EventPresenter do
     describe "#allow_registration?" do
       subject { described_class.new(event).allow_registration? }
 
-      context "when event is a future Train to Teach event" do
+      context "when event is a future Get Into Teaching event" do
         let(:event) { build(:event_api, :train_to_teach_event) }
 
         specify { expect(subject).to be true }
@@ -276,13 +276,13 @@ describe TeachingEvents::EventPresenter do
         specify { expect(subject).to be true }
       end
 
-      context "when event is a past Train to Teach event" do
+      context "when event is a past Get Into Teaching event" do
         let(:event) { build(:event_api, :past, :question_time_event) }
 
         specify { expect(subject).to be false }
       end
 
-      context "when event is a future non-Train to Teach event" do
+      context "when event is a future non-Get Into Teaching event" do
         let(:event) { build(:event_api, :school_or_university_event) }
 
         specify { expect(subject).to be false }

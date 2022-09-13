@@ -65,7 +65,7 @@ describe Events::EventBoxComponent, type: "component" do
     let(:event) { build :event_api, :train_to_teach_event }
 
     specify %(the event type name should be displayed) do
-      expect(page).to have_content("Train to Teach event")
+      expect(page).to have_content("Get Into Teaching event")
     end
 
     specify %(the box should have the right type of divider) do
@@ -97,7 +97,7 @@ describe Events::EventBoxComponent, type: "component" do
     let(:event) { build :event_api, :train_to_teach_event, :virtual }
 
     specify %(the event type name should be displayed) do
-      expect(page).to have_content("Train to Teach event")
+      expect(page).to have_content("Get Into Teaching event")
     end
 
     specify %(the event should also be described as a 'Event has moved online') do

@@ -105,11 +105,11 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#event_type_color" do
-    it "returns purple for train to teach events" do
+    it "returns purple for Get Into Teaching events" do
       expect(event_type_color(EventType.train_to_teach_event_id)).to eq("purple")
     end
 
-    it "returns blue for non-train to teach events" do
+    it "returns blue for non-Get Into Teaching events" do
       expect(event_type_color(EventType.online_event_id)).to eq("blue")
       expect(event_type_color(EventType.school_or_university_event_id)).to eq("blue")
     end
@@ -167,7 +167,7 @@ describe EventsHelper, type: "helper" do
 
   describe "#pluralised_category_name" do
     {
-      222_750_001 => "Train to Teach events",
+      222_750_001 => "Get Into Teaching events",
       222_750_008 => "Online Q&As",
       222_750_009 => "School and University events",
     }.each do |type_id, name|
@@ -183,7 +183,7 @@ describe EventsHelper, type: "helper" do
     end
 
     it "returns the category name with 'Past' prepended if the category name does not contain 'online'" do
-      expect(past_category_name(222_750_001)).to eql("Past Train to Teach events")
+      expect(past_category_name(222_750_001)).to eql("Past Get Into Teaching events")
     end
   end
 

@@ -42,7 +42,7 @@ module TeachingEvents
     end
 
     def train_to_teach?
-      EventType.lookup_by_name("Train to Teach event").in?(type_condition || [])
+      EventType.lookup_by_name("Get Into Teaching event").in?(type_condition || [])
     end
 
     def online

@@ -1,7 +1,7 @@
 class EventType
   ALL =
     {
-      "Train to Teach event" => 222_750_001,
+      "Get Into Teaching event" => 222_750_001,
       "Question Time" => 222_750_007,
       "Online event" => 222_750_008,
       "School or University event" => 222_750_009,
@@ -9,7 +9,7 @@ class EventType
 
   QUERY_PARAM_NAMES =
     {
-      "ttt" => 222_750_001,       # Train to Teach event
+      "ttt" => 222_750_001,       # Get Into Teaching event
       "tttqt" => 222_750_007,     # Question Time
       "onlineqa" => 222_750_008,  # Online event
       "provider" => 222_750_009,  # School or University event
@@ -32,7 +32,7 @@ class EventType
     end
 
     def train_to_teach_event_id
-      lookup_by_name("Train to Teach event")
+      lookup_by_name("Get Into Teaching event")
     end
 
     def online_event_id

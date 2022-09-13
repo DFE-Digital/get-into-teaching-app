@@ -13,7 +13,7 @@ class TeachingEventsController < ApplicationController
   EVENT_COUNT = 15 # 15 regular ones per page
 
   FEATURED_EVENT_TYPES = EventType.lookup_by_names(
-    "Train to Teach event",
+    "Get Into Teaching event",
     "Question Time",
   ).freeze
 

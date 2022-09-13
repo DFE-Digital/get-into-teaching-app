@@ -92,12 +92,12 @@ describe "teaching events", type: :request do
     subject { response.body }
 
     it { expect(response).to have_http_status(:success) }
-    it { is_expected.not_to include("The summer programme of Train to Teach events has now ended.") }
+    it { is_expected.not_to include("The summer programme of Get Into Teaching events has now ended.") }
 
-    context "when there are no train to teach events" do
+    context "when there are no Get Into Teaching events" do
       let(:events) { [] }
 
-      it { is_expected.to include("The summer programme of Train to Teach events has now ended.") }
+      it { is_expected.to include("The summer programme of Get Into Teaching events has now ended.") }
     end
   end
 end
