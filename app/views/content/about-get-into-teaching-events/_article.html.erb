@@ -4,35 +4,35 @@
       <span class="pink xlarge bold">What to expect at an event</span>
     </div>
   </section>
- 
+
   <section>
- 
+
     <p>
       Get Into Teaching events are designed to give you an insight into what it's like to be a teacher, as well as the practical information you need to get onto a teacher training course.
     </p>
- 
+
     <h2 class="heading-m">Our mission</h2>
     <p>
       Events are run by the Department for Education and are impartial. We do invite local training providers along to give you an idea of what they offer, but our goal is to answer your questions and give you the confidence to take your next step.
     </p>
- 
+
     <h2 class="heading-m">Attendance</h2>
     <p>
       To attend, you need to register. Spaces are limited, so the sooner you sign up, the better.
     </p>
   </section>
- 
+
   <%= render SubjectSpecific::TextBlockWithOneImageComponent.new(
     heading: "Upcoming events in your region",
     colour: "blue",
     image_path: "media/images/content/homepage/here-to-help.jpg",
     image_alt: "Child pointing something out to a teacher in the classroom.",
   ) %>
- 
+
 <section class="assessment-only-providers">
   <%= render GroupedCards::ListingComponent.new @front_matter["provider_groups"] %>
 </section>
- 
+
 <section>
     <figure>
       <blockquote class="pink-quotes">
@@ -43,12 +43,12 @@
  
     </figure>
   </section>
- 
+
   <section class="statement">
     <div>
       <span class="blue xlarge bold">See what you get out of an event</span>
     </div>
- 
+
   <div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
   <iframe
     title="A video about what Return to Teaching Advisers do"
