@@ -150,6 +150,9 @@
     - "media/images/content/hero-images/0025--mobile.jpg"
     - "media/images/content/hero-images/0025--tablet.jpg"
 
+"media/images/content/ttalianne.jpg":
+  alt: "Ttalianne, a teacher training adviser."
+
 # blog
 "media/images/content/blog/abigail-beeley.jpg":
   alt: "Maths teacher Abigail Beeley in front of a maths display board."

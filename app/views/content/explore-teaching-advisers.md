@@ -5,7 +5,7 @@ description: |-
 layout: "layouts/minimal"
 main_class: "subject-specific"
 colour: "yellow"
-image: "media/images/content/welcome-guide/tom-classroom.jpg"
+image: "media/images/content/ttalianne.jpg"
 keywords:
   - explore teaching advisers
   - adviser
