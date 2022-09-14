@@ -9,4 +9,6 @@ Rails.application.configure do
   config.view_component.show_previews = true
 
   config.x.display_content_errors = true
+
+  config.x.dfe_analytics = true
 end

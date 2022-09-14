@@ -1,10 +1,10 @@
 class User
-  attr_reader :username
+  attr_reader :username, :id
 
   ROLES = { publisher: "publisher", author: "author" }.freeze
 
   def initialize(username, role)
-    @username = username
+    @id = @username = username
     @role = role
   end
 

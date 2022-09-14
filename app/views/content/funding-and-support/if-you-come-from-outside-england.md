@@ -9,7 +9,7 @@ related_content:
     5 reasons to attend a Train to Teach event: "/blog/5-reasons-to-attend-a-train-to-teach-event"
 promo_content:
     - content/funding-and-support/promos/mailing-list-promo
-navigation: 20.30
+navigation: 20.35
 navigation_title: If you come from outside England
 navigation_description: Find out about the different arrangements for getting financial support if you live outside England.
 keywords:

@@ -72,8 +72,11 @@ section.container {
   flex-grow: 0;
   flex-wrap: wrap;
   flex-direction: column;
-
   margin: 1em 0;
+
+  &.centered {
+    justify-content: center;
+  }
 
   @include mq($from: tablet) {
     flex-direction: row;
@@ -118,5 +121,13 @@ section.container {
   > .supplementary {
     flex: 0 1 100%;
     @include indent-left-and-right;
+  }
+
+  &--no-bottom-margin {
+    margin-bottom: 0;
+
+    > article {
+      margin-bottom: 0;
+    }
   }
 }

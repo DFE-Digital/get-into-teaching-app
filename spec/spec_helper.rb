@@ -17,6 +17,7 @@ require "knapsack_pro"
 KnapsackPro::Adapters::RSpecAdapter.bind
 
 require "webmock/rspec"
+require "dfe/analytics/testing"
 
 require "simplecov"
 require "simplecov_json_formatter"
@@ -31,6 +32,8 @@ SimpleCov.start "rails" do
     SimpleCov::Formatter::JSONFormatter,
   ]
 end
+
+DfE::Analytics::Testing.fake!
 
 KnapsackPro::Hooks::Queue.before_queue do |_queue_id|
   # See https://knapsackpro.com/faq/question/how-to-use-simplecov-in-queue-mode

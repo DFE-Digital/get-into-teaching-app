@@ -18,16 +18,17 @@
   .group__cards {
     @include cards-grid;
 
-    a {
-      @extend .link;
-    }
-
     .group__card {
       box-sizing: border-box;
       padding: 1em;
       background: $white;
 
       &__heading {
+        a {
+          @extend .link;
+          display: inline-block;
+        }
+
         h4 {
           @extend .heading--margin-0;
         }

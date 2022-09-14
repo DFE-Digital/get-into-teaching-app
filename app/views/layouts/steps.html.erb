@@ -30,19 +30,17 @@
 
             <ol class="steps">
               <% steps_fm.each.with_index(1) do |(title, contents), i| %>
-                <%= tag.section(class: "step", id: "step-#{i}") do %>
-                  <li>
-                    <header class="step__header">
-                      <div class="step__number">
-                        <%= i %>
-                      </div>
-                      <%= tag.h2(title, class: "heading-m") %>
-                    </header>
-
-                    <div class="step__content">
-                      <%= render(partial: contents["partial"]) %>
+                <%= tag.li(class: "step", id: "step-#{i}") do %>
+                  <header class="step__header">
+                    <div class="step__number">
+                      <%= i %>
                     </div>
-                  </li>
+                    <%= tag.h2(title, class: "heading-m") %>
+                  </header>
+
+                  <div class="step__content">
+                    <%= render(partial: contents["partial"]) %>
+                  </div>
                 <% end %>
               <% end %>
             </ol>

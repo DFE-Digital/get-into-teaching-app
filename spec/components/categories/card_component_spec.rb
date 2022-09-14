@@ -14,9 +14,9 @@ describe Categories::CardComponent, type: "component" do
     page
   end
 
-  specify "renders a link" do
+  specify "renders a link within a list" do
     expect(subject).to have_link(item.title, href: item.path)
-    expect(subject).to have_css("a.category__nav-card")
+    expect(subject).to have_css("li.category__nav-card > a")
   end
 
   specify "the link contains a h2 title by default" do

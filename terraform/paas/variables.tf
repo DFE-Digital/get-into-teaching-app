@@ -21,13 +21,13 @@ variable "azure_vault_secret" {
   default = "CONTENT-KEYS"
 }
 
-variable "paas_monitoring_space" { }
+variable "paas_monitoring_space" {}
 
 variable "paas_space" {
   default = "sandbox"
 }
 
-variable "paas_monitoring_app" { }
+variable "paas_monitoring_app" {}
 
 variable "paas_org_name" {
   default = "dfe"
@@ -77,4 +77,9 @@ variable "strategy" {
 
 variable "alerts" {
   type = map(any)
+}
+
+variable "statuscake_enable_basic_auth" {
+  type    = bool
+  default = false
 }

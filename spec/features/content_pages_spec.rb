@@ -179,7 +179,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
 
     scenario "the child pages are represented by navigation cards" do
       Pages::Navigation.find(path).children.each do |child|
-        expect(page).to have_link(child.title, href: child.path, class: "category__nav-card")
+        expect(page).to have_link(child.title, href: child.path, class: "link--black")
         expect(page).to have_content(child.description)
       end
     end

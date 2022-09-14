@@ -140,6 +140,8 @@ Rails.application.configure do
 
   config.x.covid_banner = false
 
+  config.x.dfe_analytics = true
+
   # Ensure beta redirect happens before static page cache.
   config.middleware.insert_before ActionDispatch::Static, Rack::HostRedirect, {
     "beta-getintoteaching.education.gov.uk" => "getintoteaching.education.gov.uk",

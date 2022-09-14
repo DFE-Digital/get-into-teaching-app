@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe SubjectSpecific::HeaderComponent, type: "component" do
+RSpec.describe Campaign::HeaderComponent, type: "component" do
   subject! { Capybara.string(component) }
 
   let(:image_path) { "media/images/content/hero-images/0013.jpg" }

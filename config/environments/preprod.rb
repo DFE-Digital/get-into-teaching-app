@@ -16,4 +16,6 @@ Rails.application.configure do
     "https://get-into-teaching-api-test.london.cloudapps.digital/api"
 
   config.view_component.show_previews = true
+
+  config.x.dfe_analytics = true
 end

@@ -44,12 +44,24 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build docker image
+      - name: Build and push base image
         uses: docker/build-push-action@v3.1.1
         with:
+          context: .
+          tags: ${{ env.DOCKER_REPOSITORY }}:base-master
+          push: true
+          target: base
+          build-args: |
+            SHA=${{ steps.sha.outputs.short }}
+            BUILD_TYPE=release
+
+      - name: Build release image locally
+        uses: docker/build-push-action@v3.1.1
+        with:
+          context: .
           tags: ${{ env.DOCKER_REPOSITORY }}:master
-          load: true
           push: false
+          load: true
           build-args: |
             SHA=${{ steps.sha.outputs.short }}
             BUILD_TYPE=release

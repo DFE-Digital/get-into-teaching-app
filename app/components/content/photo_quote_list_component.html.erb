@@ -1,0 +1,12 @@
+<ol class="photo-quote-list">
+  <% quotes.each_with_index do |quote, index| %>
+    <%= tag.li(class: ["item", item_color(index)]) do %>
+      <div class="wrapper">
+        <%= image_pack_tag(quote[:image], alt: helpers.image_alt(quote[:image])) %>
+        <h3><span><%= quote[:heading] %></span></h3>
+        <p><%= quote[:text] %></p>
+        <strong><%= helpers.safe_html_format(Array.wrap(quote[:accreditation]).join(tag.br)) %></strong>
+      </div>
+    <% end %>
+  <% end %>
+</ol>

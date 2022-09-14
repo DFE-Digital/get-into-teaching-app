@@ -3,6 +3,7 @@ require "basic_auth"
 class ApplicationController < ActionController::Base
   class ForbiddenError < StandardError; end
 
+  include DfE::Analytics::Requests
   include UtmCodes
 
   rescue_from ActionController::RoutingError, with: :render_not_found

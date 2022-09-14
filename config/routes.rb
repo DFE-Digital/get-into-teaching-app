@@ -16,8 +16,9 @@ Rails.application.routes.draw do
   YAML.load_file(Rails.root.join("config/redirects.yml")).fetch("redirects").tap do |redirect_rules|
     redirect_rules.each do |from, to|
       get from => lambda { |env|
+        request = Rack::Request.new(env)
         Rails.logger.info(redirect: { request: env["ORIGINAL_FULLPATH"], from: from, to: to })
-        redirect(path: to).call(env)
+        redirect(path: to, params: request.params.except("page")).call(env)
       }
     end
   end

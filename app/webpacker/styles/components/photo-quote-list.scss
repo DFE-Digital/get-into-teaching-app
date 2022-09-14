@@ -1,0 +1,151 @@
+// grid layout
+ol.photo-quote-list .wrapper {
+  display: grid;
+  grid-template-rows: min-content 2em min-content min-content min-content;
+  grid-template-columns: $indent-amount 20% auto $indent-amount;
+
+  picture {
+    grid-area: 1 / 2 / span 2 / span 2;
+  }
+
+  h3 {
+    grid-area: 2 / 2 / span 2 / span 2;
+  }
+
+  p {
+    grid-area: 4 / 2 / span 1 / span 2;
+  }
+
+  strong {
+    grid-area: 5 / 2 / span 1 / span 2;
+  }
+
+  @include mq($from: tablet) {
+    grid-template-columns: $indent-amount auto 2 * $indent-amount $indent-amount auto $indent-amount;
+    grid-template-rows: auto;
+
+    picture {
+      grid-area: 1 / 2 / span 3 / span 2;
+    }
+
+    h3 {
+      grid-area: 1 / 3 / span 1 / span 4;
+    }
+
+    p {
+      grid-area: 2 / 5 / span 1 / span 1;
+    }
+
+    strong {
+      grid-area: 3 / 5 / span 1 / span 1;
+    }
+  }
+}
+
+// styles
+ol.photo-quote-list {
+  margin: 0;
+  list-style: none;
+  counter-reset: quotes;
+  padding: $indent-amount 0;
+
+  .item {
+    counter-increment: quotes;
+    position: relative;
+    margin: $indent-amount $indent-amount 2 * $indent-amount $indent-amount;
+    background-color: $grey;
+
+    &.blue {
+      &::before {
+        @extend .heading--box-black-on-blue;
+      }
+
+      h3 {
+        @extend .heading--highlight-blue;
+      }
+    }
+
+    &.pink {
+      &::before {
+        @extend .heading--box-pink;
+      }
+
+      h3 {
+        @extend .heading--highlight-pink;
+      }
+    }
+
+    &.green {
+      &::before {
+        @extend .heading--box-black-on-green;
+      }
+
+      h3 {
+        @extend .heading--highlight-green;
+      }
+    }
+
+    &.yellow {
+      &::before {
+        @extend .heading--box-yellow;
+      }
+
+      h3 {
+        @extend .heading--highlight-yellow;
+      }
+    }
+
+    &::before {
+      content: counter(quotes) '.';
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-weight: bold;
+      transform: translate(-$indent-amount, -$indent-amount);
+      @extend .heading-xl;
+    }
+
+    .wrapper {
+      padding: $indent-amount 0;
+
+      picture img {
+        width: 100%;
+        // max-height: 250px;
+        object-fit: cover;
+        object-position: top;
+      }
+
+      h3 {
+        max-width: 100%;
+        margin-right: 2.5 * $indent-amount;
+        @extend .heading-xl, .heading--margin-bottom-0;
+      }
+    }
+  }
+
+  @include mq($from: tablet) {
+    background-color: transparent;
+    padding: 0 $indent-amount;
+
+    .item {
+      margin: 2 * $indent-amount 0;
+
+      .wrapper {
+        picture img {
+          width: 320px;
+        }
+
+        h3 {
+          @include font-size("large");
+          margin-top: $indent-amount;
+        }
+      }
+    }
+  }
+
+  @include mq($from: tablet, $until: wide) {
+    .item .wrapper picture img {
+      width: 220px;
+    }
+  }
+}

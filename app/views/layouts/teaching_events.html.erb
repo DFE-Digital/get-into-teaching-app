@@ -9,7 +9,7 @@
     <main id="main-content" role="main">
       <%= render Content::HeroComponent.new(@front_matter) %>
 
-      <section class="container main-body">
+      <section class="container main-body <%= "container--no-bottom-margin" if @no_bottom_margin %>">
         <article class="fullwidth">
           <%= yield %>
         </article>

@@ -57,7 +57,6 @@ runs:
                  echo ::set-output name=key::${pr_name}
                  echo "TF_VAR_paas_app_application_name=${pr_name}" >> $GITHUB_ENV
                  echo "TF_VAR_paas_app_route_name=${pr_name}"       >> $GITHUB_ENV
-                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:review-${{steps.sha.outputs.short}}
              fi
 
              if [ "${{inputs.environment }}" == "Development" ]
@@ -65,7 +64,6 @@ runs:
                  echo ::set-output name=control::$(echo "dev" )
                  echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-dev" )
                  echo ::set-output name=key::"app.dev.terraform"
-                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
              fi
 
              if [ "${{inputs.environment }}" == "Test" ]
@@ -73,7 +71,6 @@ runs:
                  echo ::set-output name=control::$(echo "test" )
                  echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-test" )
                  echo ::set-output name=key::"app.test.terraform"
-                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
              fi
 
              if [ "${{inputs.environment }}" == "Speed" ]
@@ -82,7 +79,6 @@ runs:
                  echo ::set-output name=control::$(echo "pagespeed" )
                  echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-pagespeed" )
                  echo ::set-output name=key::"app.pagespeed.terraform"
-                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
              fi
 
              if [ "${{inputs.environment }}" == "UR" ]
@@ -91,7 +87,6 @@ runs:
                  echo ::set-output name=control::$(echo "ur" )
                  echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-UR" )
                  echo ::set-output name=key::"app.ur.terraform"
-                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
              fi
 
              if [ "${{inputs.environment }}" == "Production" ]
@@ -99,8 +94,9 @@ runs:
                  echo ::set-output name=control::$(echo "production" )
                  echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-prod" )
                  echo ::set-output name=key::"app.production.terraform"
-                 echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
              fi
+
+             echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
 
       - uses: DfE-Digital/keyvault-yaml-secret@v1
         id:  keyvault-yaml-secret
@@ -109,9 +105,9 @@ runs:
           secret: INFRA-KEYS
           key: HTTP-USERNAME, HTTP-PASSWORD, LOGIT-API
 
-      - uses: hashicorp/setup-terraform@v1.3.2
+      - uses: hashicorp/setup-terraform@v2.0.0
         with:
-          terraform_version: 0.14.9
+          terraform_version: 1.2.8
 
       - name: Terraform ( ${{inputs.environment}} )
         shell: bash

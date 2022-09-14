@@ -1,4 +1,4 @@
-header {
+.campaign-header {
   // the two ratios don't overlap exactly because we'd get a jagged
   // edge - instead adjust the second slightly so it blurs smoothly
 
@@ -84,6 +84,8 @@ header {
   picture {
     @include mq($from: mobile) {
       grid-area: 1 / 2 / 2 / 4;
+      display: flex;
+      justify-content: end;
     }
 
     img {

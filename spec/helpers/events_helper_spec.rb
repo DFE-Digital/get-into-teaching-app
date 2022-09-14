@@ -165,23 +165,6 @@ describe EventsHelper, type: "helper" do
     end
   end
 
-  describe "#embed_event_video_url" do
-    it "returns nil if the event video is nil" do
-      expect(embed_event_video_url(nil)).to be_nil
-    end
-
-    it "returns an embedded url when given an embedded url" do
-      standard_url = "https://www.youtube.com/watch?v=BelJ2AjtHoQ"
-      embed_url = "https://www.youtube.com/embed/BelJ2AjtHoQ"
-      expect(embed_event_video_url(standard_url)).to eq(embed_url)
-    end
-
-    it "returns an embedded url when given a standard url" do
-      embed_url = "https://www.youtube.com/embed/BelJ2AjtHoQ"
-      expect(embed_event_video_url(embed_url)).to eq(embed_url)
-    end
-  end
-
   describe "#pluralised_category_name" do
     {
       222_750_001 => "Train to Teach events",

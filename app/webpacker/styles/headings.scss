@@ -15,7 +15,7 @@
 
   span {
     box-decoration-break: clone;
-    padding: 0.15em 0;
+    padding: 0.18em 0;
     background: $backgroundColor;
     box-shadow: 1rem 0 0 $backgroundColor, -1rem 0 0 $backgroundColor;
   }
@@ -124,6 +124,18 @@
   @include box-heading($white, $black);
 }
 
+.heading--box-black-on-purple {
+  @include box-heading($purple, $black);
+}
+
+.heading--box-black-on-blue {
+  @include box-heading($blue, $black);
+}
+
+.heading--box-black-on-green {
+  @include box-heading($green, $black);
+}
+
 .heading--box-padding-l {
   padding: 0.5em 0.7em;
 }
@@ -138,6 +150,18 @@
 
 .heading--highlight-purple {
   @include highlight-text($purple, $black);
+}
+
+.heading--highlight-purple {
+  @include highlight-text($purple, $black);
+}
+
+.heading--highlight-blue {
+  @include highlight-text($blue, $black);
+}
+
+.heading--highlight-green {
+  @include highlight-text($green, $black);
 }
 
 h1 {

@@ -17,6 +17,7 @@ This documentation aims to be a reference for content editors that want to make 
 	* [Accessibility](#accessibility)
 		* [iframe](#iframe)
 	* [Inset text](#inset-text)
+	* [YouTube Video](#youtube-video)
 	* [Hero](#hero)
 3. [Creating a Blog Post](#creating-a-blog-post)
 	* [Images](#images)
@@ -254,6 +255,25 @@ inset_text:
 # My page
 
 $important-content$
+```
+
+### YouTube video
+
+To add a YouTube video to your content you need to know the video ID. You can find this out by visiting the video on [youtube.com](https://www.youtube.com/) and looking in the address bar of your browser (it is in the format `watch?v=<video_id>`).
+
+Once you have the video ID you can declare the video in the frontmatter of your page and reference it in the content:
+
+```yaml
+---
+youtube_video:
+  return-to-teaching-advisers-video:
+    id: 2NrLm_XId4k
+    title: A video about what Return to Teaching Advisers do
+---
+
+# My page
+
+$return-to-teaching-advisers-video$
 ```
 
 ### Hero

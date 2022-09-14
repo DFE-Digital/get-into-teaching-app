@@ -16,16 +16,9 @@ tags:
   - becoming a teacher
   - teacher training
   - personal statements
-inset_text:
-  still-time-to-apply:
-    text: |-
-      <p>There's still time to apply and start teacher training this September.</p>
-      <p><a href="https://www.gov.uk/find-postgraduate-teacher-training-courses">Find your postgraduate teacher training course now</a>.</p>
 ---
 
 $rocket$
-
-$still-time-to-apply$
 
 It’s important to make an excellent first impression if you want to secure that interview, and time spent on a well-thought-out application is never wasted.
 
@@ -57,9 +50,13 @@ I can’t emphasise enough how important it is to avoid spelling mistakes. Make 
 
 ## References
 
-And finally, we turn to references. Who you pick is really important. You will need two references. One could be a university or academic tutor and the second could be from a school or somewhere you have worked in a voluntary capacity, or it could be someone from your current employment.
+And finally, we turn to references. You'll need to provide the details of 2 people who can give you a reference when you apply.
 
-Whoever you choose, you should contact your references before you start writing your application so that they are aware that they will be contacted and that a swift response is important. If your references are not ready this can hold up your application. Read more about [choosing your referees.](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-referees)
+You'll need different kinds of references depending on your circumstances.
+
+If you're still studying or you graduated in the last 5 years, you'll need an academic reference. If you already work in a school, you'll need a reference from your headteacher.
+
+They will not be contacted unless you are offered and accept a place on a teacher training course. Read more about [choosing your references](/train-to-be-a-teacher/how-to-apply-for-teacher-training#choose-your-references).
 
 ## Responses
 

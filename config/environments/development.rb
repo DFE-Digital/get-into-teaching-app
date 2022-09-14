@@ -71,6 +71,8 @@ Rails.application.configure do
 
   config.x.covid_banner = false
 
+  config.x.dfe_analytics = true
+
   # Allow access from Codespaces
   config.hosts << /[a-z0-9\-]+\.githubpreview\.dev/
 end

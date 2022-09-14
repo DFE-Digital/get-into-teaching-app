@@ -29,10 +29,6 @@ module EventsHelper
     event.web_feed_id && EventStatus.new(event).open? && !EventType.new(event).provider_event?
   end
 
-  def embed_event_video_url(video_url)
-    video_url&.sub("watch?v=", "embed/")
-  end
-
   def formatted_event_description(description)
     if strip_tags(description) != description
       safe_html_format(description)

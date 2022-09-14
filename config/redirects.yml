@@ -24,9 +24,6 @@ redirects:
   # International content
   "/iqts": "/non-uk-teachers/international-qualified-teacher-status"
 
-  # Slides
-  "/slides": "/presentations"
-
   # Events
   "/event-categories/train-to-teach-events": "/events/about-train-to-teach-events"
   "/event-categories/online-q-as/archive": "/events"
@@ -43,6 +40,7 @@ redirects:
   "/events/search": "/events"
   "/explore-my-options/return-to-teaching/events": "/events"
   "/node/478": "/events"
+  "/presentations": "/events/about-train-to-teach-events"
 
   # School Experience
   "/get-school-experience/get-school-experience": "/train-to-be-a-teacher/get-school-experience"
@@ -303,6 +301,7 @@ redirects:
   "/why-teach(*reason)": "/blog"
   "/content/stories(*story)": "/blog"
   "/my-story-into-teaching(*story)": "/blog"
+  "/blog/how-to-apply-for-teacher-training": "/blog/9-tips-to-help-you-apply-for-teacher-training"
 
   # Old urgent call for qualified teachers page
   "/urgent-call-for-qualified-teachers": "/returning-to-teaching"
