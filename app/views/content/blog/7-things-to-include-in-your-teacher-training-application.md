@@ -9,7 +9,7 @@ images:
 description: |-
    Juliet Fern, Mieka Harris and Kate Hudson-Glynn from the University of Bedfordshire share seven key things to include in your teacher training application.
 promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo
+    - content/train-to-be-a-teacher/promos/adviser-promo-apply
 keywords:
   - applications
   - personal statements

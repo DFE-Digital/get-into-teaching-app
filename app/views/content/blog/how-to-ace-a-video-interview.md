@@ -9,7 +9,7 @@ images:
 description: |-
   From logistics to presentation, Sheffield SCITT communications manager Anna Shirley shares her top tips for video interviews.
 promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo
+    - content/train-to-be-a-teacher/promos/mailing-list-promo-video-interview-blog
 keywords:
   - applications
   - interviews

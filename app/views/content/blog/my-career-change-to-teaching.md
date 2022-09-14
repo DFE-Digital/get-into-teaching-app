@@ -9,7 +9,7 @@ images:
 description: |-
   Ian Wallace had always wanted to be a teacher but didn’t feel ready when he finished university. After several different jobs and careers he finally took the plunge and hasn’t looked back.
 promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo
+    - content/train-to-be-a-teacher/promos/mailing-list-promo-no-degree
 keywords:
   - teacher training
   - trainee teacher course
