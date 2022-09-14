@@ -8,8 +8,6 @@ images:
     thumbnail_path: "media/images/content/blog/thumbnails/seminar-room.jpg"
 description: |-
   A university-based PGCE year is an exciting, challenging and exhilarating one — a real roller coaster of an experience. Find out more about what you can expect on your teacher training course.
-promo_content:
-    - content/train-to-be-a-teacher/promos/mailing-list-promo-itt
 keywords:
   - teacher training advisers
   - becoming a teacher

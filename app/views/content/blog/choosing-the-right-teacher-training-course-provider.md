@@ -7,8 +7,6 @@ images:
     thumbnail_path: "media/images/content/blog/thumbnails/right_provider.jpg"
 description: |-
   When choosing a course provider for your teacher training, it’s important to consider what will suit your individual circumstances. Here are some tips on what you may wish to research.
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-degree
 keywords:
   - becoming a teacher
   - applications

@@ -7,8 +7,6 @@ images:
     thumbnail_path: "media/images/content/blog/thumbnails/applying-for-teacher.jpg"
 description: |-
   From effective preparation to submitting your application, we’ve broken down the whole process of getting into teaching into manageable steps.
-promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-apply
 keywords:
   - teacher training
   - apply
