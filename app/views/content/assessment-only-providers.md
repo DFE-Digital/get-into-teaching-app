@@ -308,9 +308,9 @@ provider_groups:
       telephone: 01252 717408
       email: scitt@sfet.org.uk
     - header: Thamesmead SCITT
-      name: Claire Lane
+      name: Stephanie Sandy
       telephone: '01932 219412'
-      email: c.lane@thamesmead.surrey.sch.uk
+      email: s.sandy@thamesmead.surrey.sch.uk
     - header: The Buckingham Partnership
       link: https://www.bpscitt.uk/
       name: Laura Whitty
