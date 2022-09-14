@@ -62,6 +62,37 @@ class TeachingEventsController < ApplicationController
     breadcrumb "Get into Teaching events", events_path
   end
 
+  def about_git_events
+    git_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
+      #type_ids: [EventType.train_to_teach_event_id, EventType.question_time_event_id], # TODO: make git events
+      start_after: Time.zone.now,
+    )
+
+    @cards = git_events.map do |event|
+      OpenStruct.new(
+        title: "South West", # TODO: event.region
+        description: "Mecure Bristol Grand Hotel, Bristol<br><br><strong>Tuesday 1st November</strong>",
+        path: event_path(event.readable_id)
+      )
+    end
+
+    @front_matter = {
+      "title" => "Get Into Teaching events",
+      "description": "Find out if teaching is for you with an explore teaching adviser who can help you find out what teaching is really like.",
+      "colour" => "yellow",
+      "image" => "media/images/content/hero-images/0025.jpg",
+      "keywords" => [
+        "explore teaching advisers",
+        "adviser",
+        'ETA'
+      ]
+    }
+
+    breadcrumb "Get into Teaching events", events_path
+
+    render layout: "minimal"
+  end
+
   def not_available
     render "not_available"
   end
