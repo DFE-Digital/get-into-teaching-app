@@ -93,7 +93,6 @@ RSpec.feature "Searching for teaching events", type: :feature do
       [
         # these two types are featurable
         build(:event_api, :train_to_teach_event),
-        build(:event_api, :question_time_event),
 
         # these aren't
         build(:event_api, :online_event),
@@ -102,7 +101,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "each event should be listed with the appropriate details" do
-      expect(page).to have_css(".event.event--train-to-teach", count: 2)
+      expect(page).to have_css(".event.event--train-to-teach", count: 1)
 
       expect(page).to have_css(".event .event__info__type", text: "DfE Online Q&A")
       expect(page).to have_css(".event .event__info__type", text: "Training provider")
@@ -157,7 +156,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     scenario "searching for train to teach events" do
       visit events_path
 
-      expected_type_ids = EventType.lookup_by_names("Train to Teach event", "Question Time")
+      expected_type_ids = EventType.lookup_by_names("Train to Teach event")
 
       check "DfE Train to Teach"
       click_on "Update results"
@@ -190,7 +189,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     scenario "searching for online and train to teach events" do
       visit events_path
 
-      expected_type_ids = EventType.lookup_by_names("Train to Teach event", "Question Time", "School or University event")
+      expected_type_ids = EventType.lookup_by_names("Train to Teach event", "School or University event")
 
       check "DfE Train to Teach"
       check "Training provider"

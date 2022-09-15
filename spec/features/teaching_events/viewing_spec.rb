@@ -57,12 +57,6 @@ RSpec.feature "Searching for teaching events", type: :feature do
     include_examples "train-to-teach teaching event"
   end
 
-  describe "viewing a question time event" do
-    let(:event) { build(:event_api, :question_time_event, :with_provider_info) }
-
-    include_examples "train-to-teach teaching event"
-  end
-
   describe "viewing a online event" do
     let(:event) { build(:event_api, :online_event, :with_provider_info) }
 

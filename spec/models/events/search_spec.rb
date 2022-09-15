@@ -32,7 +32,7 @@ describe Events::Search do
   describe ".available_event_type_ids" do
     subject { described_class.new.available_event_type_ids }
 
-    it { is_expected.to eq(EventType.all_ids - [EventType.question_time_event_id]) }
+    it { is_expected.to eq(EventType.all_ids) }
   end
 
   describe "#future?" do
@@ -180,18 +180,6 @@ describe Events::Search do
         it "the whitespace is stripped before querying the API" do
           expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
             receive(:search_teaching_events_grouped_by_type).with(**expected_attributes.merge(postcode: "TE57 1NG"))
-        end
-      end
-
-      context "when searching Train to Teach events" do
-        before do
-          subject.type = EventType.train_to_teach_event_id
-          expected_attributes[:type_ids] << EventType.question_time_event_id
-        end
-
-        it "queries Question Time and Train to Teach events" do
-          expect_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-            receive(:search_teaching_events_grouped_by_type).with(**expected_attributes)
         end
       end
 

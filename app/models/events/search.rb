@@ -35,10 +35,7 @@ module Events
 
     class << self
       def available_event_types
-        # We can't search for Question Time events explicitly. Instead, they
-        # are returned as Train to Teach events.
         @available_event_types ||= EventType::ALL
-          .except("Question Time")
           .map do |key, value|
             GetIntoTeachingApiClient::PickListItem.new(id: value, value: key)
           end
@@ -79,14 +76,7 @@ module Events
   private
 
     def type_ids
-      type_ids = [type]
-
-      # We combine Question Time events with Train to Teach events
-      if type == EventType.train_to_teach_event_id
-        type_ids << EventType.question_time_event_id
-      end
-
-      type_ids.compact.presence
+      [type].compact.presence
     end
 
     def month_range

@@ -113,7 +113,6 @@ describe TeachingEvents::Search do
 
   describe "#results" do
     ttt           = "ttt"
-    qt            = "tttqt"
     online        = "onlineqa"
     school_or_uni = "provider"
 
@@ -193,15 +192,15 @@ describe TeachingEvents::Search do
       ),
 
       OpenStruct.new(
-        description: "School or University or Question Time",
-        input: { type: [qt, school_or_uni].map(&:to_s) },
-        expected_conditions: { type_ids: EventType.lookup_by_query_params(qt, school_or_uni) },
+        description: "School or University or Train to Teach",
+        input: { type: [ttt, school_or_uni].map(&:to_s) },
+        expected_conditions: { type_ids: EventType.lookup_by_query_params(ttt, school_or_uni) },
       ),
 
       OpenStruct.new(
         description: "All types",
-        input: { type: [qt, school_or_uni, ttt, online].map(&:to_s) },
-        expected_conditions: { type_ids: EventType.lookup_by_query_params(qt, school_or_uni, ttt, online) },
+        input: { type: [school_or_uni, ttt, online].map(&:to_s) },
+        expected_conditions: { type_ids: EventType.lookup_by_query_params(school_or_uni, ttt, online) },
       ),
     ].each do |query|
       context "#{query.description} (#{query.input})" do

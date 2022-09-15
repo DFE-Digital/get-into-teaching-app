@@ -38,7 +38,7 @@ module EventsHelper
   end
 
   def display_event_provider_info?(event)
-    !event.type_id.in?([qt_event_type_id, ttt_event_type_id])
+    !event.type_id.in?([ttt_event_type_id])
   end
 
   def event_has_provider_info?(event)
@@ -113,9 +113,5 @@ module EventsHelper
 
   def ttt_event_type_id
     EventType.train_to_teach_event_id
-  end
-
-  def qt_event_type_id
-    EventType.question_time_event_id
   end
 end

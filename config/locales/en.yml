@@ -263,10 +263,6 @@ en:
         long: |-
           Chat online with newly qualified teachers, watch presentations on how to get into teaching, find out what your training
           will be like by hearing from schools and universities and get one-to-one advice from our teaching experts on how to apply.
-    222750007: # Question Time (displayed as Train to Teach)
-      name:
-        singular: "Train to Teach event"
-        plural: "Train to Teach events"
     222750008:
       name:
         singular: "Online Q&A"

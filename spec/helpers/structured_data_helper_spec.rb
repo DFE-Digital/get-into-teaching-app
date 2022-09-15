@@ -294,7 +294,7 @@ describe StructuredDataHelper, type: "helper" do
       expect(script_tag).to be_nil
     end
 
-    it "returns nil when not a TTT/QT event" do
+    it "returns nil when not a TTT event" do
       event = build(:event_api, :school_or_university_event)
       expect(event_structured_data(event)).to be_nil
 
@@ -302,9 +302,6 @@ describe StructuredDataHelper, type: "helper" do
       expect(event_structured_data(event)).to be_nil
 
       event = build(:event_api, :train_to_teach_event)
-      expect(event_structured_data(event)).not_to be_nil
-
-      event = build(:event_api, :question_time_event)
       expect(event_structured_data(event)).not_to be_nil
     end
 

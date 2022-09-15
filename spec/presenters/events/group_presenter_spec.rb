@@ -4,10 +4,9 @@ describe Events::GroupPresenter do
   subject { described_class.new(events_by_type, display_empty: display_empty_types) }
 
   let(:train_to_teach_events) { build_list(:event_api, 5, :train_to_teach_event) }
-  let(:question_time_events) { build_list(:event_api, 5, :question_time_event) }
   let(:online_events) { build_list(:event_api, 2, :online_event) }
   let(:school_and_university_events) { build_list(:event_api, 15, :school_or_university_event) }
-  let(:all_events) { [train_to_teach_events, online_events, school_and_university_events, question_time_events].flatten }
+  let(:all_events) { [train_to_teach_events, online_events, school_and_university_events].flatten }
   let(:events_by_type) { group_events_by_type(all_events) }
   let(:display_empty_types) { false }
 
@@ -15,9 +14,9 @@ describe Events::GroupPresenter do
     let(:type_ids) { subject.sorted_events_by_type.map(&:first) }
     let(:online_event_type_id) { EventType.online_event_id }
 
-    it "returns events_by_type as an array of [type_id, events] tuples (with TTT and QT events combined)" do
+    it "returns events_by_type as an array of [type_id, events] tuples" do
       expect(subject.sorted_events_by_type).to eq([
-        [EventType.train_to_teach_event_id, train_to_teach_events + question_time_events],
+        [EventType.train_to_teach_event_id, train_to_teach_events],
         [EventType.online_event_id, online_events],
         [EventType.school_or_university_event_id, school_and_university_events],
       ])
@@ -47,16 +46,11 @@ describe Events::GroupPresenter do
         expect(type_ids).to include(online_event_type_id)
       end
 
-      context "when there are Question Time or Train to Teach events" do
+      context "when there are no Train to Teach events" do
         let(:train_to_teach_events) { [] }
-        let(:question_time_events) { [] }
 
         it "still contains a key for Train to Teach events" do
           expect(type_ids).to include(EventType.train_to_teach_event_id)
-        end
-
-        it "does not contain a key for Question Time events" do
-          expect(type_ids).not_to include(EventType.question_time_event_id)
         end
       end
     end
@@ -155,8 +149,8 @@ describe Events::GroupPresenter do
     context "when type is Train to Teach event" do
       let(:type) { EventType.train_to_teach_event_id }
 
-      it "returns the Train to Teach and Question Time events" do
-        expect(subject.sorted_events_of_type(type)).to eq(train_to_teach_events + question_time_events)
+      it "returns the Train to Teach events" do
+        expect(subject.sorted_events_of_type(type)).to eq(train_to_teach_events)
       end
     end
   end
