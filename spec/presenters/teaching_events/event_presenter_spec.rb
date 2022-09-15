@@ -114,12 +114,6 @@ describe TeachingEvents::EventPresenter do
         specify { expect(subject).to match(/I got answers to questions/) }
       end
 
-      context "when event is a Question Time event" do
-        let(:event) { build(:event_api, :question_time_event) }
-
-        specify { expect(subject).to match(/I got answers to questions/) }
-      end
-
       context "when event is a School or University event" do
         let(:event) { build(:event_api, :school_or_university_event) }
 
@@ -138,13 +132,6 @@ describe TeachingEvents::EventPresenter do
 
       context "when event is a Train to Teach event" do
         let(:event) { build(:event_api, :train_to_teach_event) }
-
-        specify { expect(subject[:path]).to end_with(".jpg") }
-        specify { expect(subject).to have_key(:alt) }
-      end
-
-      context "when event is a Question Time event" do
-        let(:event) { build(:event_api, :question_time_event) }
 
         specify { expect(subject[:path]).to end_with(".jpg") }
         specify { expect(subject).to have_key(:alt) }
@@ -214,12 +201,6 @@ describe TeachingEvents::EventPresenter do
         specify { expect(subject).to be false }
       end
 
-      context "when event is a Question Time event" do
-        let(:event) { build(:event_api, :question_time_event) }
-
-        specify { expect(subject).to be false }
-      end
-
       context "when event is a School or University event" do
         let(:event) { build(:event_api, :school_or_university_event) }
 
@@ -270,14 +251,8 @@ describe TeachingEvents::EventPresenter do
         specify { expect(subject).to be true }
       end
 
-      context "when event is a future Question Time event" do
-        let(:event) { build(:event_api, :question_time_event) }
-
-        specify { expect(subject).to be true }
-      end
-
       context "when event is a past Train to Teach event" do
-        let(:event) { build(:event_api, :past, :question_time_event) }
+        let(:event) { build(:event_api, :past, :train_to_teach_event) }
 
         specify { expect(subject).to be false }
       end

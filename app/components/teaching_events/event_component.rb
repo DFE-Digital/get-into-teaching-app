@@ -18,7 +18,7 @@ module TeachingEvents
     delegate :provider_event?, to: :type
 
     def train_to_teach?
-      type.train_to_teach_or_question_time_event?
+      type.train_to_teach_event?
     end
 
     def online?

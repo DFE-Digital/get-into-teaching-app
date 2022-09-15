@@ -35,10 +35,6 @@ FactoryBot.define do
       type_id { EventType.train_to_teach_event_id }
     end
 
-    trait :question_time_event do
-      type_id { EventType.question_time_event_id }
-    end
-
     trait :virtual do
       is_online { true }
       is_virtual { true }

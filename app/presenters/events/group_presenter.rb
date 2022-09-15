@@ -5,8 +5,6 @@ module Events
     def initialize(events_by_type, display_empty: false, ascending: true, limit_per_type: nil)
       @display_empty_types = display_empty
 
-      events_by_type = merge_question_time_events(events_by_type)
-
       @events_by_type = events_by_type
         .index_by(&:type_id)
         .transform_values do |v|
@@ -52,26 +50,6 @@ module Events
 
   private
 
-    def merge_question_time_events(events_by_type)
-      types = [EventType.train_to_teach_event_id, EventType.question_time_event_id]
-
-      combined_events = events_by_type
-        .select { |e| types.include?(e.type_id) }
-        .map(&:teaching_events)
-        .flatten
-
-      return events_by_type if combined_events.blank?
-
-      combined_events_type = GetIntoTeachingApiClient::TeachingEventsByType.new(
-        type_id: EventType.train_to_teach_event_id,
-        teaching_events: combined_events,
-      )
-
-      events_by_type
-        .reject { |e| types.include?(e.type_id) }
-        .push(combined_events_type)
-    end
-
     def populate_events_by_type
       return @events_by_type unless @display_empty_types
 
@@ -79,12 +57,8 @@ module Events
       empty_state.merge(@events_by_type)
     end
 
-    def event_type_name(type_id)
-      event_type_ids.index(type_id)
-    end
-
     def event_type_ids
-      EventType.all_ids - [EventType.question_time_event_id]
+      EventType.all_ids
     end
   end
 end

@@ -14,7 +14,6 @@ class TeachingEventsController < ApplicationController
 
   FEATURED_EVENT_TYPES = EventType.lookup_by_names(
     "Train to Teach event",
-    "Question Time",
   ).freeze
 
   def create
@@ -55,7 +54,7 @@ class TeachingEventsController < ApplicationController
   def about_ttt_events
     @no_ttt_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
       quantity: 1,
-      type_ids: [EventType.train_to_teach_event_id, EventType.question_time_event_id],
+      type_ids: [EventType.train_to_teach_event_id],
       start_after: Time.zone.now,
     ).blank?
 

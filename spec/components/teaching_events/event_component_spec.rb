@@ -13,12 +13,6 @@ describe TeachingEvents::EventComponent, type: "component" do
         it { expect(subject.train_to_teach?).to be(true) }
       end
 
-      context "when the event is a question time event" do
-        let(:event) { build(:event_api, :question_time_event) }
-
-        it { expect(subject.train_to_teach?).to be(true) }
-      end
-
       context "when the event is not a TTT event" do
         let(:event) { build(:event_api, :school_or_university_event) }
 

@@ -138,14 +138,12 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#display_event_provider_info?" do
-    it "returns false if train to teach or question time" do
+    it "returns false if train to teach" do
       event.type_id = EventType.train_to_teach_event_id
-      expect(display_event_provider_info?(event)).to be(false)
-      event.type_id = EventType.question_time_event_id
       expect(display_event_provider_info?(event)).to be(false)
     end
 
-    it "returns true if not train to teach or question time" do
+    it "returns true if not train to teach" do
       event.type_id = EventType.online_event_id
       expect(display_event_provider_info?(event)).to be(true)
       event.type_id = EventType.school_or_university_event_id

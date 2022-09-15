@@ -74,7 +74,7 @@ module TeachingEvents
 
     def quote
       case event_type
-      when "Train to Teach event", "Question Time"
+      when "Train to Teach event"
         "So useful! I got answers to questions I didn't know I had yet and I'm so inspired and excited."
 
       when "Online event"
@@ -86,7 +86,7 @@ module TeachingEvents
 
     def image
       case event_type
-      when "Train to Teach event", "Question Time"
+      when "Train to Teach event"
         {
           path: "media/images/content/event-signup/birmingham-event-1.jpg",
           alt: "A bustling Train to Teach event taking place in a church, busy with stalls and visitors",
@@ -111,7 +111,7 @@ module TeachingEvents
     end
 
     def show_provider_information?
-      !type_id.in?([EventType.question_time_event_id, EventType.train_to_teach_event_id])
+      !type_id.in?([EventType.train_to_teach_event_id])
     end
 
     def show_venue_information?

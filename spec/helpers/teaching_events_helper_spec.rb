@@ -80,7 +80,7 @@ describe TeachingEventsHelper, type: "helper" do
 
   describe "#is_event_type?" do
     let(:ttt) { "Train to Teach event" }
-    let(:qt) { "Question Time" }
+    let(:provider) { "School or University event" }
 
     let(:ttt_event) do
       OpenStruct.new(type_id: EventType.lookup_by_name(ttt))
@@ -91,13 +91,13 @@ describe TeachingEventsHelper, type: "helper" do
     end
 
     specify "returns false when there's no match" do
-      expect(is_event_type?(ttt_event, qt)).to be false
+      expect(is_event_type?(ttt_event, provider)).to be false
     end
   end
 
   describe "#event_type_name" do
     specify "returns the event name given a valid id" do
-      expect(event_type_name(222_750_007)).to eql("Question Time")
+      expect(event_type_name(222_750_009)).to eql("Training provider")
     end
 
     specify "returns nil when given an invalid id" do
@@ -125,13 +125,11 @@ describe TeachingEventsHelper, type: "helper" do
 
   describe "#is_a_train_to_teach_event?" do
     let(:ttt_event) { OpenStruct.new(type_id: EventType.train_to_teach_event_id) }
-    let(:qt_event) { OpenStruct.new(type_id: EventType.question_time_event_id) }
     let(:online_event) { OpenStruct.new(type_id: EventType.online_event_id) }
     let(:school_or_university_event) { OpenStruct.new(type_id: EventType.school_or_university_event_id) }
 
-    specify "returns true when the event is either Train to Teach or Question Time" do
+    specify "returns true when the event is Train to Teach" do
       expect(is_a_train_to_teach_event?(ttt_event)).to be true
-      expect(is_a_train_to_teach_event?(qt_event)).to be true
     end
 
     specify "returns false when the event is online or school and university" do
