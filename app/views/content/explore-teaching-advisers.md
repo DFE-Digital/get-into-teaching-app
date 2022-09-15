@@ -1,7 +1,7 @@
 ---
 title: Explore teaching advisers
 description: |-
-    Find out if teaching is for you with an explore teaching adviser who can help you find out what teaching is really like.
+    Find out if teaching is for you with an explore teaching adviser who can help you discover what teaching is really like.
 layout: "layouts/minimal"
 main_class: "subject-specific"
 colour: "yellow"
