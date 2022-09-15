@@ -7,7 +7,6 @@ images:
     thumbnail_path: "media/images/content/blog/thumbnails/train-to-teach.jpg"
 description: |-
   Whether you’re ready to apply or it’s just an idea, here are five reasons why a Train to Teach event can help you on your journey to the classroom.
-    
 keywords:
   - train to teach events
   - becoming a teacher
