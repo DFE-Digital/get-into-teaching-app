@@ -89,8 +89,8 @@ describe Events::Search do
 
   describe "validations" do
     describe "event #type" do
-      it { is_expected.to allow_value(EventType.train_to_teach_event_id).for :type }
-      it { is_expected.to allow_value(EventType.train_to_teach_event_id.to_s).for :type }
+      it { is_expected.to allow_value(EventType.get_into_teaching_event_id).for :type }
+      it { is_expected.to allow_value(EventType.get_into_teaching_event_id.to_s).for :type }
       it { is_expected.to allow_value(nil).for :type }
       it { is_expected.to allow_value("").for :type }
       it { is_expected.not_to allow_value("2").for :type }

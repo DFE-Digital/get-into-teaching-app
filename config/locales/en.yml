@@ -39,7 +39,7 @@ en:
       truncate: "&hellip;"
   find_an_event:
     types:
-      222750001: |-
+      222750012: |-
         <p>Our Train to Teach events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom.</p>
         <p>At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts.
         Some events are in person and others replicate the experience online.</p>
@@ -254,10 +254,10 @@ en:
         funding: ""
 
   event_types:
-    222750001:
+    222750012:
       name:
-        singular: "Train to Teach event"
-        plural: "Train to Teach events"
+        singular: "Get Into Teaching event"
+        plural: "Get Into Teaching events"
       description:
         short: The main event - hear from teachers, training providers and our expert advisers. Get answers to your questions and learn more about ways to train and funding.
         long: |-

@@ -6,14 +6,14 @@ describe Internal::EventsController, type: :request do
           :with_provider_info,
           :pending,
           :school_or_university_event,
-          :without_train_to_teach_fields,
+          :without_get_into_teaching_fields,
           name: "Pending provider event")
   end
   let(:pending_online_event) do
     build(:event_api,
           :pending,
           :online_event,
-          :without_train_to_teach_fields,
+          :without_get_into_teaching_fields,
           name: "Pending online event",
           scribble_id: "/scribble/id/12345",
           building: nil)

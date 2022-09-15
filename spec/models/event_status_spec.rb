@@ -82,26 +82,26 @@ describe EventStatus do
   end
 
   describe "#accepts_online_registration?" do
-    context "when TTT, future-dated, open" do
-      let(:event) { build(:event_api, :train_to_teach_event) }
+    context "when GIT, future-dated, open" do
+      let(:event) { build(:event_api, :get_into_teaching_event) }
 
       it { is_expected.to be_accepts_online_registration }
     end
 
-    context "when not TTT, future-dated, open" do
+    context "when not GIT, future-dated, open" do
       let(:event) { build(:event_api, :online_event) }
 
       it { is_expected.not_to be_accepts_online_registration }
     end
 
-    context "when TTT, past, open" do
-      let(:event) { build(:event_api, :train_to_teach_event, :past) }
+    context "when GIT, past, open" do
+      let(:event) { build(:event_api, :get_into_teaching_event, :past) }
 
       it { is_expected.not_to be_accepts_online_registration }
     end
 
-    context "when TTT, future-dated, closed" do
-      let(:event) { build(:event_api, :train_to_teach_event, :closed) }
+    context "when GIT, future-dated, closed" do
+      let(:event) { build(:event_api, :get_into_teaching_event, :closed) }
 
       it { is_expected.not_to be_accepts_online_registration }
     end

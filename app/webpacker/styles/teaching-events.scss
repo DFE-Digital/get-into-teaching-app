@@ -1,7 +1,7 @@
 $slightly-darker-grey: darken($grey, 10%);
 $icon-size: 3rem;
 
-@mixin train-to-teach-event-box {
+@mixin get-into-teaching-event-box {
   border: 2px solid $pink;
   padding: 2rem 1rem 1rem;
 
@@ -11,7 +11,7 @@ $icon-size: 3rem;
     content: "Train to Teach event";
     right: 5%;
     top: -1em;
-    background: $pink url(../images/icon-ttt-white.svg) no-repeat left center;
+    background: $pink url(../images/icon-git-white.svg) no-repeat left center;
     background-size: 1.2em;
     background-position: .4em;
     font-weight: bold;
@@ -272,8 +272,8 @@ $icon-size: 3rem;
       gap: 2em;
     }
 
-    &--train-to-teach {
-      @include train-to-teach-event-box;
+    &--get-into-teaching {
+      @include get-into-teaching-event-box;
 
       flex-direction: column-reverse;
 
@@ -590,7 +590,7 @@ $icon-size: 3rem;
   }
 }
 
-.teaching-events__about-ttt-banner {
+.teaching-events__about-git-banner {
   $desktop-unskew-amount: 12deg;
   $desktop-skew-amount: -12deg;
 
@@ -658,7 +658,7 @@ $icon-size: 3rem;
   }
 }
 
-.about-ttt-events {
+.about-git-events {
   header {
     display: grid;
     margin: 1em 2em;

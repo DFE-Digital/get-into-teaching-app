@@ -294,14 +294,14 @@ describe StructuredDataHelper, type: "helper" do
       expect(script_tag).to be_nil
     end
 
-    it "returns nil when not a TTT event" do
+    it "returns nil when not a GIT event" do
       event = build(:event_api, :school_or_university_event)
       expect(event_structured_data(event)).to be_nil
 
       event = build(:event_api, :online_event)
       expect(event_structured_data(event)).to be_nil
 
-      event = build(:event_api, :train_to_teach_event)
+      event = build(:event_api, :get_into_teaching_event)
       expect(event_structured_data(event)).not_to be_nil
     end
 
@@ -339,9 +339,9 @@ describe StructuredDataHelper, type: "helper" do
 
       it "has the online images" do
         is_expected.to include({ image: [
-          "/packs-test/v1/media/images/structured_data/ttt_online_1x1-bf484c635cd3e795df567d2949dcf934.jpeg",
-          "/packs-test/v1/media/images/structured_data/ttt_online_4x3-b85e3f4f32bc44694c87fa0fac81bbe1.jpeg",
-          "/packs-test/v1/media/images/structured_data/ttt_online_16x9-a44602bd76aaec3798f3798d711310bd.jpeg",
+          "/packs-test/v1/media/images/structured_data/git_online_1x1-bf484c635cd3e795df567d2949dcf934.jpeg",
+          "/packs-test/v1/media/images/structured_data/git_online_4x3-b85e3f4f32bc44694c87fa0fac81bbe1.jpeg",
+          "/packs-test/v1/media/images/structured_data/git_online_16x9-a44602bd76aaec3798f3798d711310bd.jpeg",
         ] })
       end
     end
@@ -349,9 +349,9 @@ describe StructuredDataHelper, type: "helper" do
     context "when the event is in-person" do
       it "has the in-person images" do
         is_expected.to include({ image: [
-          "/packs-test/v1/media/images/structured_data/ttt_in_person_1x1-7536d67c191fbc627baefc64808659a9.jpeg",
-          "/packs-test/v1/media/images/structured_data/ttt_in_person_4x3-5c08900b1f812a977d05b21a4428eb7f.jpeg",
-          "/packs-test/v1/media/images/structured_data/ttt_in_person_16x9-76e0739a9059dad3e151f07cfe169a75.jpeg",
+          "/packs-test/v1/media/images/structured_data/git_in_person_1x1-7536d67c191fbc627baefc64808659a9.jpeg",
+          "/packs-test/v1/media/images/structured_data/git_in_person_4x3-5c08900b1f812a977d05b21a4428eb7f.jpeg",
+          "/packs-test/v1/media/images/structured_data/git_in_person_16x9-76e0739a9059dad3e151f07cfe169a75.jpeg",
         ] })
       end
     end

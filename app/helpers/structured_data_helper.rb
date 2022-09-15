@@ -111,7 +111,7 @@ module StructuredDataHelper
   end
 
   def event_structured_data(event)
-    return unless event.type_id.in?([ttt_event_type_id])
+    return unless event.type_id.in?([git_event_type_id])
 
     building_data = event_building_data(event)
     provider_data = event_provider_data(event)
@@ -138,15 +138,15 @@ module StructuredDataHelper
   def event_image_data(event)
     images = if event.is_online
                [
-                 asset_pack_url("media/images/structured_data/ttt_online_1x1.jpeg"),
-                 asset_pack_url("media/images/structured_data/ttt_online_4x3.jpeg"),
-                 asset_pack_url("media/images/structured_data/ttt_online_16x9.jpeg"),
+                 asset_pack_url("media/images/structured_data/git_online_1x1.jpeg"),
+                 asset_pack_url("media/images/structured_data/git_online_4x3.jpeg"),
+                 asset_pack_url("media/images/structured_data/git_online_16x9.jpeg"),
                ]
              else
                [
-                 asset_pack_url("media/images/structured_data/ttt_in_person_1x1.jpeg"),
-                 asset_pack_url("media/images/structured_data/ttt_in_person_4x3.jpeg"),
-                 asset_pack_url("media/images/structured_data/ttt_in_person_16x9.jpeg"),
+                 asset_pack_url("media/images/structured_data/git_in_person_1x1.jpeg"),
+                 asset_pack_url("media/images/structured_data/git_in_person_4x3.jpeg"),
+                 asset_pack_url("media/images/structured_data/git_in_person_16x9.jpeg"),
                ]
              end
 

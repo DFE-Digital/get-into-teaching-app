@@ -3,10 +3,10 @@ require "rails_helper"
 describe Events::GroupPresenter do
   subject { described_class.new(events_by_type, display_empty: display_empty_types) }
 
-  let(:train_to_teach_events) { build_list(:event_api, 5, :train_to_teach_event) }
+  let(:get_into_teaching_events) { build_list(:event_api, 5, :get_into_teaching_event) }
   let(:online_events) { build_list(:event_api, 2, :online_event) }
   let(:school_and_university_events) { build_list(:event_api, 15, :school_or_university_event) }
-  let(:all_events) { [train_to_teach_events, online_events, school_and_university_events].flatten }
+  let(:all_events) { [get_into_teaching_events, online_events, school_and_university_events].flatten }
   let(:events_by_type) { group_events_by_type(all_events) }
   let(:display_empty_types) { false }
 
@@ -16,7 +16,7 @@ describe Events::GroupPresenter do
 
     it "returns events_by_type as an array of [type_id, events] tuples" do
       expect(subject.sorted_events_by_type).to eq([
-        [EventType.train_to_teach_event_id, train_to_teach_events],
+        [EventType.get_into_teaching_event_id, get_into_teaching_events],
         [EventType.online_event_id, online_events],
         [EventType.school_or_university_event_id, school_and_university_events],
       ])
@@ -24,7 +24,7 @@ describe Events::GroupPresenter do
 
     it "sorts event types" do
       expect(type_ids).to eq([
-        EventType.train_to_teach_event_id,
+        EventType.get_into_teaching_event_id,
         EventType.online_event_id,
         EventType.school_or_university_event_id,
       ])
@@ -46,11 +46,11 @@ describe Events::GroupPresenter do
         expect(type_ids).to include(online_event_type_id)
       end
 
-      context "when there are no Train to Teach events" do
-        let(:train_to_teach_events) { [] }
+      context "when there are no Get Into Teaching events" do
+        let(:get_into_teaching_events) { [] }
 
-        it "still contains a key for Train to Teach events" do
-          expect(type_ids).to include(EventType.train_to_teach_event_id)
+        it "still contains a key for Get Into Teaching events" do
+          expect(type_ids).to include(EventType.get_into_teaching_event_id)
         end
       end
     end
@@ -90,14 +90,14 @@ describe Events::GroupPresenter do
   describe "#paginated_events_by_type" do
     it "paginates the events sorted by type" do
       pages_by_type = {
-        "train_to_teach_event_page" => nil,
+        "get_into_teaching_event_page" => nil,
         "online_event_page" => 1,
         "school_or_university_event_page" => 2,
       }
       paginated_events_by_type = subject.paginated_events_by_type(pages_by_type, 3)
 
       expect(paginated_events_by_type).to eq([
-        [EventType.train_to_teach_event_id, train_to_teach_events[0...3]],
+        [EventType.get_into_teaching_event_id, get_into_teaching_events[0...3]],
         [EventType.online_event_id, online_events[0...2]],
         [EventType.school_or_university_event_id, school_and_university_events[3...6]],
       ])
@@ -114,19 +114,19 @@ describe Events::GroupPresenter do
   end
 
   describe "#paginated_events_of_type" do
-    let(:type) { EventType.train_to_teach_event_id }
+    let(:type) { EventType.get_into_teaching_event_id }
     let(:page) { 2 }
     let(:per_page) { 2 }
 
     it "returns paginated events of the given type" do
-      expect(subject.paginated_events_of_type(type, page, per_page)).to eq(train_to_teach_events[2...4])
+      expect(subject.paginated_events_of_type(type, page, per_page)).to eq(get_into_teaching_events[2...4])
     end
   end
 
   describe "#page_param_names" do
     it "returns a hash of page param names" do
       expect(subject.page_param_names).to eq({
-        222_750_001 => "train_to_teach_event_page",
+        222_750_012 => "get_into_teaching_event_page",
         222_750_008 => "online_event_page",
         222_750_009 => "school_or_university_event_page",
       })
@@ -134,7 +134,7 @@ describe Events::GroupPresenter do
   end
 
   describe "#page_param_name" do
-    it { expect(subject.page_param_name(222_750_001)).to eq("train_to_teach_event_page") }
+    it { expect(subject.page_param_name(222_750_012)).to eq("get_into_teaching_event_page") }
     it { expect(subject.page_param_name(222_750_008)).to eq("online_event_page") }
     it { expect(subject.page_param_name(222_750_009)).to eq("school_or_university_event_page") }
   end
@@ -146,11 +146,11 @@ describe Events::GroupPresenter do
       expect(subject.sorted_events_of_type(type)).to eq(online_events)
     end
 
-    context "when type is Train to Teach event" do
-      let(:type) { EventType.train_to_teach_event_id }
+    context "when type is Get Into Teaching event" do
+      let(:type) { EventType.get_into_teaching_event_id }
 
-      it "returns the Train to Teach events" do
-        expect(subject.sorted_events_of_type(type)).to eq(train_to_teach_events)
+      it "returns the Get Into Teaching events" do
+        expect(subject.sorted_events_of_type(type)).to eq(get_into_teaching_events)
       end
     end
   end

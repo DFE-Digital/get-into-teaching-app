@@ -25,12 +25,12 @@ redirects:
   "/iqts": "/non-uk-teachers/international-qualified-teacher-status"
 
   # Events
-  "/event-categories/train-to-teach-events": "/events/about-train-to-teach-events"
+  "/event-categories/train-to-teach-events": "/events/about-get-into-teaching-events"
   "/event-categories/online-q-as/archive": "/events"
   "/event-categories/online-q-as": "/events"
   "/event-categories/school-and-university-events": "/events"
   "/event-categories/(*category)": "/events"
-  "/teaching-events/train-to-teach(*event)": "/events/about-train-to-teach-events"
+  "/teaching-events/train-to-teach(*event)": "/events/about-get-into-teaching-events"
   "/teaching-events/application-workshop-events(*event)": "/events"
   "/teaching-events/online-events(*event)": "/events"
   "/teaching-events/training-provider-events(*event)": "/events"
@@ -40,7 +40,7 @@ redirects:
   "/events/search": "/events"
   "/explore-my-options/return-to-teaching/events": "/events"
   "/node/478": "/events"
-  "/presentations": "/events/about-train-to-teach-events"
+  "/presentations": "/events/about-get-into-teaching-events"
 
   # School Experience
   "/get-school-experience/get-school-experience": "/train-to-be-a-teacher/get-school-experience"

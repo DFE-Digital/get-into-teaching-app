@@ -29,7 +29,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       allow_any_instance_of(TeachingEvents::Search).to receive(:results).and_return(events)
     end
 
-    scenario "The first two train to teach events are 'featured'" do
+    scenario "The first two get into teaching events are 'featured'" do
       visit events_path
 
       expect(page).to have_current_path("/events")
@@ -42,14 +42,14 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(page).to have_css(".teaching-events__events--regular > ol > li", count: expected_regular)
     end
 
-    context "when one event is train to teach" do
-      let(:ttt_event_count) { 1 }
-      let(:events) { build_list(:event_api, event_count - ttt_event_count, :online_event).append(build(:event_api)) }
+    context "when one event is get into teaching" do
+      let(:git_event_count) { 1 }
+      let(:events) { build_list(:event_api, event_count - git_event_count, :online_event).append(build(:event_api)) }
 
-      scenario "Non-train-to-teach events are never featured" do
+      scenario "Non-get-into-teaching events are never featured" do
         visit events_path
 
-        expected_featured = ttt_event_count
+        expected_featured = git_event_count
         expected_regular = event_count - expected_featured
 
         expect(page).to have_css(".teaching-events__events--featured > ol > li", count: expected_featured)
@@ -57,10 +57,10 @@ RSpec.feature "Searching for teaching events", type: :feature do
       end
     end
 
-    context "when no events are train to teach" do
+    context "when no events are get into teaching" do
       let(:events) { build_list(:event_api, event_count, :online_event) }
 
-      scenario "Non-train-to-teach events are never featured" do
+      scenario "Non-get-into-teaching events are never featured" do
         visit events_path
 
         expect(page).to have_css(".teaching-events__events--regular > ol > li", count: event_count)
@@ -92,7 +92,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     let(:events) do
       [
         # these two types are featurable
-        build(:event_api, :train_to_teach_event),
+        build(:event_api, :get_into_teaching_event),
 
         # these aren't
         build(:event_api, :online_event),
@@ -101,7 +101,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
 
     scenario "each event should be listed with the appropriate details" do
-      expect(page).to have_css(".event.event--train-to-teach", count: 1)
+      expect(page).to have_css(".event.event--get-into-teaching", count: 1)
 
       expect(page).to have_css(".event .event__info__type", text: "DfE Online Q&A")
       expect(page).to have_css(".event .event__info__type", text: "Training provider")
@@ -153,12 +153,12 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(online: false)).once
     end
 
-    scenario "searching for train to teach events" do
+    scenario "searching for get into teaching events" do
       visit events_path
 
-      expected_type_ids = EventType.lookup_by_names("Train to Teach event")
+      expected_type_ids = EventType.lookup_by_names("Get Into Teaching event")
 
-      check "DfE Train to Teach"
+      check "DfE Get Into Teaching"
       click_on "Update results"
 
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
@@ -186,12 +186,12 @@ RSpec.feature "Searching for teaching events", type: :feature do
       expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
     end
 
-    scenario "searching for online and train to teach events" do
+    scenario "searching for online and get into teaching events" do
       visit events_path
 
-      expected_type_ids = EventType.lookup_by_names("Train to Teach event", "School or University event")
+      expected_type_ids = EventType.lookup_by_names("Get Into Teaching event", "School or University event")
 
-      check "DfE Train to Teach"
+      check "DfE Get Into Teaching"
       check "Training provider"
       click_on "Update results"
 
@@ -235,10 +235,10 @@ RSpec.feature "Searching for teaching events", type: :feature do
         end
       end
 
-      context "when the candidate has filtered by Train to Teach events" do
-        let(:params) { { teaching_events_search: { type: %w[ttt] } } }
+      context "when the candidate has filtered by Get Into Teaching events" do
+        let(:params) { { teaching_events_search: { type: %w[git] } } }
 
-        scenario "specific Train to Teach options are shown" do
+        scenario "specific Get Into Teaching options are shown" do
           within(".teaching-events__none") do
             attend_online_qa_path = events_path(teaching_events_search: { type: %w[onlineqa] })
             expect(page).to have_link(text: "attend an Online Q&A", href: attend_online_qa_path)

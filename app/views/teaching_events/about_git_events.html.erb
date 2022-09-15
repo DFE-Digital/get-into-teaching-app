@@ -4,7 +4,7 @@
   @no_bottom_margin = true
 %>
 
-<div class="about-ttt-events">
+<div class="about-git-events">
   <header>
     <h1 class="heading--highlight-pink">
       <span>What happens at a</span>
@@ -12,7 +12,7 @@
       <span>Train to Teach event?</span>
     </h1>
 
-    <% if @no_ttt_events %>
+    <% if @no_git_events %>
       <%= render Content::InsetTextComponent.new(text: "The summer programme of Train to Teach events has now ended. Train to Teach events will start again in November and you'll be able to book your place from the end of September. You can also search for #{link_to('more events', events_path)}." ) %>
     <% end %>
 
@@ -39,7 +39,7 @@
     </p>
 
     <p>
-    <%= link_to("Register for a Train to Teach event", events_path("teaching_events_search[type][]" => "ttt"), class: "button") %>
+    <%= link_to("Register for a Train to Teach event", events_path("teaching_events_search[type][]" => "git"), class: "button") %>
     </p>
 
     <h2>What to expect on the day:</h2>

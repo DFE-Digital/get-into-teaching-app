@@ -3,7 +3,7 @@ class TeachingEventsController < ApplicationController
 
   include CircuitBreaker
 
-  caches_page :about_ttt_events
+  caches_page :about_git_events
 
   before_action :setup_filter, only: :index
 
@@ -13,7 +13,7 @@ class TeachingEventsController < ApplicationController
   EVENT_COUNT = 15 # 15 regular ones per page
 
   FEATURED_EVENT_TYPES = EventType.lookup_by_names(
-    "Train to Teach event",
+    "Get Into Teaching event",
   ).freeze
 
   def create
@@ -51,10 +51,10 @@ class TeachingEventsController < ApplicationController
     render layout: "teaching_event"
   end
 
-  def about_ttt_events
-    @no_ttt_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
+  def about_git_events
+    @no_git_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
       quantity: 1,
-      type_ids: [EventType.train_to_teach_event_id],
+      type_ids: [EventType.get_into_teaching_event_id],
       start_after: Time.zone.now,
     ).blank?
 

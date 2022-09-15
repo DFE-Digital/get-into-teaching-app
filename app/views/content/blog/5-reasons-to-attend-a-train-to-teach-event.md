@@ -2,9 +2,9 @@
 title: 5 reasons to attend a Train to Teach event
 date: "2021-08-26"
 images:
-  train_to_teach:
-    path: "media/images/content/blog/train-to-teach.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/train-to-teach.jpg"
+  get_into_teaching:
+    path: "media/images/content/blog/get-into-teaching.jpg"
+    thumbnail_path: "media/images/content/blog/thumbnails/get-into-teaching.jpg"
 description: |-
   Whether you’re ready to apply or it’s just an idea, here are five reasons why a Train to Teach event can help you on your journey to the classroom.
 keywords:
@@ -20,7 +20,7 @@ tags:
 closing_paragraph: enriching-the-lives-of-young-people
 ---
 
-$train_to_teach$
+$get_into_teaching$
 
 If you’re interested in training to teach but not sure on your next steps, then our popular Train to Teach events are for you. Whether you’re ready to apply or it’s just an idea, here are five reasons why a Train to Teach event can help you on your journey to the classroom.
 
@@ -54,4 +54,4 @@ You can have a one-to-one chat with a current teacher who can provide you with i
 
 They can also talk about why they love teaching and how rewarding it is, giving you a balanced view and insight into what the life of a teacher is really like.
 
-[Find a Train to Teach event near you](/events/about-train-to-teach-events).
+[Find a Train to Teach event near you](/events/about-get-into-teaching-events).
