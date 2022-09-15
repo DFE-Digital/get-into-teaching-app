@@ -57,7 +57,7 @@ class EventType
     end
 
     def lookup_by_query_params(*names)
-      QUERY_PARAM_NAMES.fetch_values(*names)
+      QUERY_PARAM_NAMES.values_at(*names).compact
     end
 
     def all_ids

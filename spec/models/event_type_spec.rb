@@ -81,8 +81,8 @@ describe EventType do
         expect(described_class.lookup_by_query_params("ttt", "onlineqa")).to eq([222_750_001, 222_750_008])
       end
 
-      specify "errors when an unrecognised name are passed in" do
-        expect { described_class.lookup_by_query_params("onlineqa", "other") }.to raise_error(KeyError)
+      specify "ignores unrecognised values" do
+        expect(described_class.lookup_by_query_params("onlineqa", "other")).to eq([222_750_008])
       end
     end
   end
