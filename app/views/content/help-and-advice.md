@@ -11,22 +11,31 @@ calls_to_action:
     name: chat
     arguments: {}
 ---
+## Get an adviser
 
-## Get a teacher training adviser
+Advisers provide free, one-to-one support by phone, text or email. They all have years of teaching experience and are able to answer any questions you have.
 
-Teacher training advisers provide free, one-to-one support by phone, text or email wherever you are in your journey into teaching. They are experienced, former teachers and able to answer any questions you have. You will have your own dedicated adviser to support you at every step as you make important decisions about your future.
+You will have your own dedicated adviser to support you.
 
-They can help you to:
+### Teacher training advisers
 
-- get classroom experience
-- find out what teaching is really like
+A teacher training adviser can support you if you're a final year undergraduate student or if you already have a degree. They can help you:
+
 - understand more about teacher training courses
-- understand the funding and support available to you
-- find the right courses to apply for
+- find funding and support available to you
 - make a successful application
-- prepare for your interview
 
-<a href="https://adviser-getintoteaching.education.gov.uk/" class="button">Get your dedicated adviser</a>
+### Explore teaching advisers
+
+An explore teaching adviser can support you if you're an undergraduate student and not in your final year of study. They can help you:
+
+- understand what teaching is really like
+- get classroom experience
+- connect with other students who are considering teaching
+
+<p class="call-to-action__action">
+  <a href="/tta-service">Get an <span>adviser</span></a>
+</p>
 
 ## Attend an event
 

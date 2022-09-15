@@ -1,0 +1,148 @@
+<article>
+  <section class="statement">
+    <div>
+      <span class="pink xlarge bold">Teaching is&hellip;</span>
+    </div>
+
+    <div>
+      <span class="pink medium bold">
+        <ul class="slashed-list">
+          <li>generation-shaping</li>
+          <li>innovative</li>
+          <li>life-changing</li>
+        </ul>
+      </span>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="heading-s">Find your future career</h2>
+
+    <p>
+      Finding out which career is right for you is not always easy. How do you know what something is like if you've never done it before?
+
+    <p>
+      Our explore teaching advisers can help you discover whether the classroom is where you belong. Your dedicated adviser will give you support and guidance, and can answer all your questions about what teaching is really like.
+    </p>
+
+    <p>
+      All our advisers have years of teaching experience and can help you gain an insight into the world of teaching. You can talk to your own adviser as little or as much as you'd like in the way that suits you best.
+    </p>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithTwoImagesComponent.new(
+    heading: "What kind of teacher could you be?",
+    colour: "pink",
+    image_1_path: "media/images/content/blog/abigail-beeley.jpg",
+    image_1_alt: "Maths teacher Abigail Beeley in front of a maths display board.",
+    image_2_path: "media/images/content/blog/giorgio-rubbo.jpg",
+    image_2_alt: "Biology teacher Giorgio Rubbo wearing a suit and tie.",
+  ) do %>
+
+    <p>
+      Every teacher brings something different to the classroom.
+    </p>
+
+    <p>
+    What could you bring?
+    </p>
+  <% end %>
+
+  <section>
+    <figure>
+      <blockquote class="pink-quotes">
+        <p class="bold">
+          I promise the level of satisfaction is like nothing you’ll get in another job. I wake up every morning and want to get into school.
+        </p>
+      </blockquote>
+
+      <figcaption>Phil, teacher</figcaption>
+    </figure>
+  </section>
+
+  <section class="columns">
+    <div>
+      <h2 class="heading-s">What explore teaching advisers can do</h2>
+
+      <p>
+        Your adviser can help you:
+      </p>
+    </div>
+
+    <div>
+      <ul class="badges">
+        <li class="badge">understand what teaching is really like</li>
+        <li class="badge">connect with other students</li>
+        <li class="badge">build your confidence and transferable skills</li>
+        <li class="badge">get classroom experience</li>
+        <li class="badge">find out the steps to become a teacher</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="heading-s">How to get an explore teaching adviser</h2>
+
+    <p>
+        To be eligible for an explore teaching adviser, you just need:
+    </p>
+
+    <ul>
+      <li>
+        to be studying for an undergraduate degree and not in your final year of study
+      </li>
+      <li>
+        an interest in teaching
+      </li>
+    </ul>
+
+    <p>
+    If you're in your final year of study or you already have a degree, you can still get a <a href="/teacher-training-advisers">teacher training adviser</span></a>.
+    </p>
+
+    <p class="call-to-action__action">
+      <a href="/tta-service">Get an <span>explore teaching adviser</span></a>
+    </p>
+  </section>
+
+  <%= render SubjectSpecific::TextBlockWithOneImageComponent.new(
+    heading: "Is teaching right for me?",
+    colour: "yellow",
+    image_path: "media/images/content/hero-images/0011.jpg",
+    image_alt: "Child pointing something out to a teacher in the classroom.",
+  ) %>
+
+  <section>
+    <h2 class="heading-s">Use your subject passion</h2>
+
+    <p>
+    Bring your subject to life for your pupils. Help them be as inspired by it as you are.
+    </p>
+    <p>
+      <a href="/blog/the-head-of-science-inspiring-students-in-blackpool">Find out how Jessica brings real life science stories into the classroom</a>.
+    </p>
+  </section>
+
+    <section>
+    <h2 class="heading-s">Join a community</h2>
+
+    <p>
+    Teaching is about more than just what happens in the classroom. You become part of a tight-knit team with your fellow teachers and support staff.
+    </p>
+        <p>
+      <a href="/blog/the-fellowship-of-teachers">Explore the friendship Mike and Phil have made outside of the classroom</a>.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="heading-s">Make a difference</h2>
+
+    <p>
+      Every lesson shapes a life. As a teacher, you can make a significant impact on a child's ability, confidence, and determination to succeed.
+    </p>
+
+    <p>
+      <a href="/blog/going-back-and-giving-back">Read about Sandra's experience going back and giving back</a>.
+    </p>
+  </section>
+</article>

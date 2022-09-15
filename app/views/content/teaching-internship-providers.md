@@ -5,7 +5,7 @@ description: |-
 date: "2021-04-14"
 image: false
 promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-internships
+    - content/train-to-be-a-teacher/promos/eta-promo-internships
 backlink: /
 fullwidth: true
 content:
