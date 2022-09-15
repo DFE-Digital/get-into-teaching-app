@@ -34,11 +34,11 @@ It’s not an insurmountable obstacle if you haven’t had any experience of wor
 
 School experience is not compulsory, but it may be a good idea to try to visit a school if only to confirm that you are making the right choice before you submit your application. If you are having difficulty finding a school to visit, you might find that schools offering School Direct courses are more welcoming to an enquiry. Due to the pandemic, some schools are not currently accepting non-essential visitors, so use the [Department for Education’s Get School Experience service](https://schoolexperience.education.gov.uk/) to find details of upcoming opportunities in your area.
 
-Attending a [Train to Teach event](/events/about-train-to-teach-events) is also a good idea, as you can talk to training providers and ask them directly if they would host a visit. Remember they are there to recruit trainee teachers so may be more amenable to inviting you into their school.
+Attending a [Get Into Teaching event](/events/about-train-to-teach-events) is also a good idea, as you can talk to training providers and ask them directly if they would host a visit. Remember they are there to recruit trainee teachers so may be more amenable to inviting you into their school.
 
 ## The personal statement
 
-The personal statement is your shop window. You will be asked to focus on why you have decided to train to teach and why you are suited to your chosen age group or subject. You can also talk about any relevant work experience you have had, what you learned or observed and how you might apply this to your own teaching practice.
+The personal statement is your shop window. You will be asked to focus on why you have decided to Get Into Teaching and why you are suited to your chosen age group or subject. You can also talk about any relevant work experience you have had, what you learned or observed and how you might apply this to your own teaching practice.
 
 Remember to tailor your statement to either the phase or the subject you are wanting to teach. Trying to adapt it to cover both primary and secondary, or two different subjects, is not advised.
 

@@ -49,9 +49,9 @@ There are online, text-based sessions where you can ask a panel of specialists t
 
 You could also attend a training provider event, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
 
-### Train to Teach events
+### Get Into Teaching events
 
-Train to Teach events are run by the Department for Education (DfE) and are free to attend. You'll be able to:
+Get Into Teaching events are run by the Department for Education (DfE) and are free to attend. You'll be able to:
 
 - put your questions to expert advisers, teachers and training providers
 - chat with current teachers

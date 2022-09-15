@@ -21,7 +21,7 @@ keywords:
 tags:
   - becoming a teacher
   - teacher training advisers
-  - train to teach events
+  - Get Into Teaching events
   - applications
   - references
 ---
@@ -78,7 +78,7 @@ If a training provider offers you a place and you accept, they'll use your refer
 
 ## 7. Get some advice at an event
 
-Our Train to Teach events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom. At some of our Train to Teach events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts. Some events are in person and others replicate the experience online. [Book your place at a Train to Teach event](/events/about-train-to-teach-events).
+Our Get Into Teaching events will provide you with a wealth of information and help you turn questions to confidence on your journey to the classroom. At some of our Get Into Teaching events you can meet a whole range of local training providers; at others you’ll have the chance to put your questions to a panel of experts. Some events are in person and others replicate the experience online. [Book your place at a Get Into Teaching event](/events/about-train-to-teach-events).
 
 ## 8.  Join our support networks
 

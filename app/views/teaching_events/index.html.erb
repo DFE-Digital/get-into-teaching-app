@@ -1,6 +1,6 @@
 <section class="teaching-events">
   <header>
-    <h1 class="heading-l heading--box-yellow">Get Into Teaching events</h1>
+    <h1 class="heading-l heading--box-yellow">Events</h1>
 
     <p>
       All events listed are designed to help you get into teacher training. They are free to attend.
@@ -11,7 +11,7 @@
 
       <dl>
         <div>
-          <dt>Train to Teach events</dt>
+          <dt>Get Into Teaching events</dt>
           <dd>Watch presentations, hear from teachers, speak to advisers and meet local training providers. Run by the Department for Education (DfE).</dd>
         </div>
 
@@ -39,20 +39,20 @@
       <div class="teaching-events__listing">
         <% if @featured_events.any? %>
           <div class="teaching-events__events teaching-events__events--featured">
-            <h2 class="heading-m">Upcoming Train to Teach events</h2>
+            <h2 class="heading-m">Upcoming Get Into Teaching events</h2>
 
             <ol><%= render TeachingEvents::EventComponent.with_collection(@featured_events) %></ol>
 
             <div class="teaching-events__about-ttt-banner">
               <div class="teaching-events__about-ttt-banner--message">
                 <p>
-                  Designed by the Department for Education, Train to Teach events
+                  Designed by the Department for Education, Get Into Teaching events
                   give you everything you need to get into teaching.
                 </p>
               </div>
 
               <div class="teaching-events__about-ttt-banner--link">
-                <%= link_to("What happens at a Train to Teach event?", about_ttt_events_path, class: "button button--white") %>
+                <%= link_to("What happens at a Get Into Teaching event?", about_ttt_events_path, class: "button button--white") %>
               </div>
             </div>
           </div>

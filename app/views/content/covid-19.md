@@ -40,9 +40,9 @@ You may be asked to send your degree or GCSE certificates digitally too.
 
 Wait for your provider to contact you with more information.
 
-### Are Train To Teach events going ahead?
+### Are Get Into Teaching events going ahead?
 
-[Train to Teach events](/events) are going ahead.
+[Get Into Teaching events](/events) are going ahead.
 
 ### What if I’m an overseas applicant?
 
