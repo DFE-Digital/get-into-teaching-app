@@ -25,6 +25,7 @@ redirects:
   "/iqts": "/non-uk-teachers/international-qualified-teacher-status"
 
   # Events
+  "/events/about-train-to-teach-events": "/events/about-get-into-teaching-events"
   "/event-categories/train-to-teach-events": "/events/about-get-into-teaching-events"
   "/event-categories/online-q-as/archive": "/events"
   "/event-categories/online-q-as": "/events"
@@ -305,3 +306,6 @@ redirects:
 
   # Old urgent call for qualified teachers page
   "/urgent-call-for-qualified-teachers": "/returning-to-teaching"
+
+  # Blog pages
+  "/blog/5-reasons-to-attend-a-train-to-teach-event": "/blog/5-reasons-to-attend-a-get-into-teaching-event"
