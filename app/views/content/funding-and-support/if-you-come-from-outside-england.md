@@ -6,7 +6,7 @@ description: |-
 related_content:
     Your initial teacher training year: "/train-to-be-a-teacher/initial-teacher-training"
     Get school experience: "/train-to-be-a-teacher/get-school-experience"
-    5 reasons to attend a Train to Teach event: "/blog/5-reasons-to-attend-a-train-to-teach-event"
+    5 reasons to attend a Get Into Teaching event: "/blog/5-reasons-to-attend-a-get-into-teaching-event"
 promo_content:
     - content/funding-and-support/promos/mailing-list-promo
 navigation: 20.35

@@ -175,16 +175,6 @@ describe EventsHelper, type: "helper" do
     end
   end
 
-  describe "#past_category_name" do
-    it "returns 'Past online Q&As' if the category name contains 'online'" do
-      expect(past_category_name(222_750_008)).to eql("Past online Q&As")
-    end
-
-    it "returns the category name with 'Past' prepended if the category name does not contain 'online'" do
-      expect(past_category_name(222_750_012)).to eql("Past Get Into Teaching events")
-    end
-  end
-
   describe "#display_no_git_events_message?" do
     let(:performed_search) { true }
     let(:events) { [] }

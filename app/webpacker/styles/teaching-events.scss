@@ -8,7 +8,7 @@ $icon-size: 3rem;
   &::after {
     @include font-size(small);
     position: absolute;
-    content: "Train to Teach event";
+    content: "Get Into Teaching event";
     right: 5%;
     top: -1em;
     background: $pink url(../images/icon-git-white.svg) no-repeat left center;

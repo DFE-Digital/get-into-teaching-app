@@ -18,7 +18,7 @@
     - Email
     - Updates
     - Events
-    - Train To Teach
+    - Get Into Teaching
     - Advisers
     - TTAs
     - Advisor

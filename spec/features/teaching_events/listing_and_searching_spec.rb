@@ -234,18 +234,6 @@ RSpec.feature "Searching for teaching events", type: :feature do
           end
         end
       end
-
-      context "when the candidate has filtered by Get Into Teaching events" do
-        let(:params) { { teaching_events_search: { type: %w[git] } } }
-
-        scenario "specific Get Into Teaching options are shown" do
-          within(".teaching-events__none") do
-            attend_online_qa_path = events_path(teaching_events_search: { type: %w[onlineqa] })
-            expect(page).to have_link(text: "attend an Online Q&A", href: attend_online_qa_path)
-            expect(page).to have_text("look again in late September")
-          end
-        end
-      end
     end
   end
 end

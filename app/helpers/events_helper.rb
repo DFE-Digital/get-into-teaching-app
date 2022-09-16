@@ -87,11 +87,6 @@ module EventsHelper
     t("event_types.#{type_id}.name.plural")
   end
 
-  def past_category_name(type_id)
-    t "event_types.#{type_id}.name.past",
-      default: "Past #{pluralised_category_name(type_id)}"
-  end
-
   def display_no_git_events_message?(performed_search, events, event_search_type)
     get_into_teaching_id = git_event_type_id
     searching_for_git = get_into_teaching_id.to_s == event_search_type
