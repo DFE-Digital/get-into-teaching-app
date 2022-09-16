@@ -140,7 +140,6 @@ provider_groups:
     - header: London School of Jewish Studies (LSJS)
       link: https://www.lsjs.ac.uk/
       name: Galia Segal
-      telephone: 020 8203 6427
       email: galia.segal@lsjs.ac.uk
     - header: Kingston University
       link: https://www.kingston.ac.uk/postgraduate-course/assessment-only-route-leading-to-qualified-teacher-status/
