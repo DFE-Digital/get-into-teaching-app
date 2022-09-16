@@ -83,6 +83,29 @@ module EventsHelper
     end
   end
 
+  def categorise_events(events)
+    events.map do |event|
+      address = if event.building.present?
+                  "#{event.building.venue}, #{event.building.address_city}"
+                else
+                  "Online event"
+                end
+
+      description = tag.p do
+        safe_join([
+          tag.p(address),
+          tag.strong(event.start_at.to_formatted_s(:event)),
+        ])
+      end
+
+      OpenStruct.new(
+        title: EventRegion.lookup_by_id(event.region_id),
+        description: description,
+        path: event_path(event.readable_id),
+      )
+    end
+  end
+
   def pluralised_category_name(type_id)
     t("event_types.#{type_id}.name.plural")
   end

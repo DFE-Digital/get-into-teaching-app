@@ -1,64 +1,101 @@
-<%
-  @page_title = "About train to teach events"
-  @show_breadcrumbs = true
-  @no_bottom_margin = true
-%>
+<%= render Campaign::HeaderComponent.new(
+  title: ["Get Into Teaching", "events"],
+  colour: "yellow",
+  image: "media/images/content/hero-images/0025.jpg"
+) %>
 
-<div class="about-git-events">
-  <header>
-    <h1 class="heading--highlight-pink">
-      <span>What happens at a</span>
-      <br>
-      <span>Train to Teach event?</span>
-    </h1>
-
-    <% if @no_git_events %>
-      <%= render Content::InsetTextComponent.new(text: "The summer programme of Train to Teach events has now ended. Train to Teach events will start again in November and you'll be able to book your place from the end of September. You can also search for #{link_to('more events', events_path)}." ) %>
-    <% end %>
-
-    <%= image_pack_tag "media/images/content/event-signup/birmingham-event-3.jpg", alt: "A popular train to teach event in a hall with stalls and banners" %>
-  </header>
-
+<div class="subject-specific">
   <article>
-    <p>
-      Train to Teach events are designed to give you an insight into what it’s
-      like to be a teacher, as well as the practical information you need to get
-      onto a teacher training course.
-    </p>
+    <section class="statement">
+      <span class="pink xlarge bold">What to expect</span>
+    </section>
 
-    <p>
-      Events are run by the Department for Education and are impartial. We do
-      invite local training providers along to give you an idea of what they
-      offer, but our goal is to answer your questions and give you the confidence
-      to take your next step.
-    </p>
+    <section>
+      <p>Whether you're ready to start your career in teaching or just curious, we can answer your questions at a Get Into Teaching event.</p>
 
-    <p>
-      To attend, you need to register. Spaces are limited, so the sooner you sign
-      up, the better.
-    </p>
+      <p>They're a series of relaxed and informative events giving you the opportunity to get expert advice and talk to teachers and local training providers.</p>
 
-    <p>
-    <%= link_to("Register for a Get Into Teaching event", events_path("teaching_events_search[type][]" => "git"), class: "button") %>
-    </p>
+      <h2 class="heading-m">At the event</h2>
 
-    <h2>What to expect on the day:</h2>
+      <p>Drop in any time during an event for presentations, one-to-one chats or to meet others like you who are thinking of stepping into the classroom.</p>
 
-    <p>Events last a few hours. In that time, you’ll have a chance to:</p>
+      <p>You can discover:</p>
 
-    <ul>
-      <li>put your questions to expert advisers, teachers and training providers</li>
-      <li>chat with current teachers and find out what a career in teaching is really like</li>
-      <li>listen to a step-by-step guide on how to get into teaching, the application process and funding your training</li>
-    </ul>
+      <ul>
+        <li>if teaching is right for you</li>
+        <li>how to apply for teacher training</li>
+        <li>what funding is available</li>
+      </ul>
 
-    <div class="youtube-video-container">
-      <%= render Content::YoutubeVideoComponent.new(
-        id: "eAWwqLLEINI",
-        title: "Train to Teach Events: Take your next step towards teaching"
+      <h2 class="heading-m">Reserve your place</h2>
+
+      <p>You'll need to register to attend a Get Into Teaching event. Places are limited, so the sooner you sign up, the better.</p>
+    </section>
+
+    <section class="grey-bg fullwidth">
+      <%= render SubjectSpecific::TextBlockWithOneImageComponent.new(
+        heading: "Events in your region",
+        colour: "blue",
+        image_path: "media/images/content/homepage/here-to-help.jpg",
+        image_alt: "Child pointing something out to a teacher in the classroom.",
       ) %>
-    </div>
-  </article>
+    </section>
 
-  <%= render(partial: "teaching_events/show/what-theyre-saying", locals: { quote: "It was exactly what I needed to give me guidance on the next steps to be taken." }) %>
+    <section class="fullwidth grey-bg no-padding no-margin">
+      <section class="container no-margin">
+        <section class="category__cards">
+          <%= tag.nav(class: "category__nav-cards") do %>
+            <ul>
+              <%= render(Categories::CardComponent.with_collection(categorise_events(@git_events))) %>
+            </ul>
+          <% end %>
+        </section>
+      </section>
+    </section>
+
+    <section class="fullwidth grey-bg no-margin">
+      <section class="container no-margin bottom-padding">
+        <div>
+          <h2 class="heading-s">Can't find what you're looking for?</h2>
+          <p><%= link_to("View all events", events_path, class: "link--bold") %></p>
+        </div>
+      </section>
+    </section>
+
+    <section class="what-theyre-saying fullwidth no-margin no-padding">
+      <div class="triangle grey-bg yellow-triangle">
+        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <polygon points="0,100 100,0 100,100"></polygon>
+        </svg>
+      </div>
+      <div class="subheading">
+        <h3 class="heading--box-pink heading--margin-0">What they're saying</h3>
+      </div>
+      <figure>
+        <blockquote>I had doubts on what to do and how to proceed, but have found answers to all of them thanks to this event.</blockquote>
+      </figure>
+    </section>
+
+    <section class="fullwidth">
+      <section class="container">
+        <span class="blue xlarge bold">See what you get out of an event</span>
+        <div class="videos">
+          <div>
+            <%= render Content::YoutubeVideoComponent.new(
+              id: "wLfWfIzIRRY",
+              title: "Train to Teach Events: Take your next step towards teaching"
+            ) %>
+            <p>Expert advice for career changers.</p>
+          </div>
+          <div>
+            <%= render Content::YoutubeVideoComponent.new(
+              id: "ToOhH06zMQA",
+              title: "Train to Teach Events: Take your next step towards teaching"
+            ) %>
+            <p>Get all your questions answered.</p>
+          </div>
+        </div>
+      </section>
+    </section>
+  </article>
 </div>

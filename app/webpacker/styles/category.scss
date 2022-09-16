@@ -12,6 +12,7 @@
 
   &__cards {
 	  padding-bottom: 2em;
+    width: 100%;
 
     &:last-of-type {
       padding-bottom: 4em;
@@ -43,6 +44,7 @@
       text-decoration: none;
       display: flex;
       gap: 1.5em;
+      width: 100%;
     }
 
     &:hover {

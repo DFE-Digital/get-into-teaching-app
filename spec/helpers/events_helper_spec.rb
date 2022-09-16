@@ -163,6 +163,21 @@ describe EventsHelper, type: "helper" do
     end
   end
 
+  describe "#categorise_events" do
+    let(:events) { build_list(:event_api, 2) }
+
+    subject(:categorised_events) { categorise_events(events) }
+
+    it { expect(categorised_events.count).to eq(events.count) }
+    it { is_expected.to all(have_attributes(title: be_a(String), description: be_a(String), path: be_a(String))) }
+
+    context "when the event does not have a building" do
+      let(:events) { build_list(:event_api, 2, :online) }
+
+      it { is_expected.to all(have_attributes(title: be_a(String), description: be_a(String), path: be_a(String))) }
+    end
+  end
+
   describe "#pluralised_category_name" do
     {
       222_750_012 => "Get Into Teaching events",

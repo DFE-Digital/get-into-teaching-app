@@ -1,6 +1,8 @@
 .text-block-with-one-image,
 .text-block-with-two-images {
   display: grid;
+  margin-left: auto;
+  margin-right: auto;
 
   .statement {
     z-index: 20;

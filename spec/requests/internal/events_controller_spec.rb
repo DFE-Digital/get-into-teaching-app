@@ -319,6 +319,7 @@ describe Internal::EventsController, type: :request do
                 is_virtual: nil,
                 video_url: nil,
                 message: nil,
+                region_id: nil,
                 web_feed_id: nil)
         end
 
@@ -428,6 +429,7 @@ describe Internal::EventsController, type: :request do
                 is_virtual: nil,
                 video_url: nil,
                 message: nil,
+                region_id: nil,
                 web_feed_id: nil)
         end
 

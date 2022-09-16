@@ -78,26 +78,19 @@ describe "teaching events", type: :request do
   end
 
   describe "#about_git_events" do
-    let(:events) { [GetIntoTeachingApiClient::TeachingEvent.new] }
+    let(:events) { build_list(:event_api, 2) }
     let(:now) { Time.zone.now }
 
     before do
       freeze_time
       expected_type_ids = [EventType.get_into_teaching_event_id]
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events).with(type_ids: expected_type_ids, quantity: 1, start_after: now).and_return(events)
+        receive(:search_teaching_events).with(type_ids: expected_type_ids, start_after: now).and_return(events)
       get about_git_events_path
     end
 
     subject { response.body }
 
     it { expect(response).to have_http_status(:success) }
-    it { is_expected.not_to include("The summer programme of Train to Teach events has now ended.") }
-
-    context "when there are no get into teaching events" do
-      let(:events) { [] }
-
-      it { is_expected.to include("The summer programme of Train to Teach events has now ended.") }
-    end
   end
 end

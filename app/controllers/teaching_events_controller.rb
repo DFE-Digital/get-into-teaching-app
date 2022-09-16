@@ -43,7 +43,7 @@ class TeachingEventsController < ApplicationController
   def show
     @event = TeachingEvents::EventPresenter.new(retrieve_event)
 
-    breadcrumb "Get into Teaching events", events_path
+    breadcrumb "Events", events_path
     breadcrumb @event.name, request.path
 
     @page_title = @event.name
@@ -52,13 +52,17 @@ class TeachingEventsController < ApplicationController
   end
 
   def about_git_events
-    @no_git_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
-      quantity: 1,
+    @git_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
       type_ids: [EventType.get_into_teaching_event_id],
       start_after: Time.zone.now,
-    ).blank?
+    )
 
-    breadcrumb "Get into Teaching events", events_path
+    @front_matter = {
+      title: "Get Into Teaching events",
+      description: "Find out all you need to know about starting a career in teaching at a Get Into Teaching event.",
+    }.with_indifferent_access
+
+    render layout: "minimal"
   end
 
   def not_available

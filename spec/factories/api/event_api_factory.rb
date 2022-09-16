@@ -15,6 +15,7 @@ FactoryBot.define do
     is_online { false }
     is_virtual { false }
     building { build :event_building_api }
+    region_id { EventRegion.all_ids.sample }
 
     trait :closed do
       status_id { EventStatus.closed_id }
