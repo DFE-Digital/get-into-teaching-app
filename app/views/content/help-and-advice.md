@@ -41,14 +41,6 @@ An explore teaching adviser can support you if you're an undergraduate student a
 
 Our events are a great way to meet teachers and other experts to talk about any concerns or questions you have about becoming a teacher.
 
-### Online question and answer sessions
-
-There are online, text-based sessions where you can ask a panel of specialists the questions that matter to you. These sessions, run by DfE, cover a range of different topics so you can post specific questions and receive advice tailored to your particular circumstances.
-
-### Training provider events
-
-You could also attend a training provider event, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
-
 ### Get Into Teaching events
 
 Get Into Teaching events are run by the Department for Education (DfE) and are free to attend. You'll be able to:
@@ -57,6 +49,14 @@ Get Into Teaching events are run by the Department for Education (DfE) and are f
 - chat with current teachers
 - find out what a career in teaching is really like
 - watch presentations which provide detailed guidance on how to get into teaching, the application process and funding your training
+
+### Online question and answer sessions
+
+There are online, text-based sessions where you can ask a panel of specialists the questions that matter to you. These sessions, run by DfE, cover a range of different topics so you can post specific questions and receive advice tailored to your particular circumstances.
+
+### Training provider events
+
+You could also attend a training provider event, either online or in person, and hear directly from teacher training providers about the courses they offer and how to apply.
 
 <a href="/events" class="button">Search for an event</a>
 
