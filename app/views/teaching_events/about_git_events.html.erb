@@ -45,7 +45,7 @@
       <section class="container no-margin">
         <section class="category__cards">
           <%= tag.nav(class: "category__nav-cards") do %>
-            <ul>
+            <ul class="single-column">
               <%= render(Categories::CardComponent.with_collection(categorise_events(@git_events))) %>
             </ul>
           <% end %>

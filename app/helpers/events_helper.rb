@@ -91,10 +91,10 @@ module EventsHelper
                   "Online event"
                 end
 
-      description = tag.p do
+      description = tag.div do
         safe_join([
-          tag.p(address),
-          tag.strong(event.start_at.to_formatted_s(:event)),
+          tag.div(address),
+          tag.p(tag.strong(event.start_at.to_formatted_s(:event))),
         ])
       end
 
