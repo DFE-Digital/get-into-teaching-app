@@ -15,6 +15,8 @@ describe Content::QuoteComponent, type: :component do
       image: image,
       hang: hang,
       inline: inline,
+      background: background,
+      links: links,
     )
   end
   let(:text) { "text goes here" }
@@ -24,9 +26,17 @@ describe Content::QuoteComponent, type: :component do
   let(:image) { "media/images/content/homepage/science-teacher.jpg" }
   let(:hang) { "left" }
   let(:inline) { nil }
+  let(:background) { "yellow" }
+  let(:links) do
+    {
+      "First link" => "/first",
+      "Second link" => "/second",
+    }
+  end
 
   describe "quote classes" do
     it { is_expected.to have_css(".quote.quote--hang-#{hang}") }
+    it { is_expected.to have_css(".quote--background-yellow") }
     it { is_expected.not_to have_css(".quote--inline-left") }
     it { is_expected.not_to have_css(".quote--inline-right") }
   end
@@ -49,6 +59,12 @@ describe Content::QuoteComponent, type: :component do
       it { is_expected.to have_link(cta[:title], href: cta[:link]) }
       it { is_expected.to have_css("a span", text: cta[:title].split.last) }
     end
+
+    describe "links" do
+      it { is_expected.to have_css("ul li", count: links.count) }
+      it { is_expected.to have_link(links.keys[0], href: links.values[0]) }
+      it { is_expected.to have_link(links.keys[1], href: links.values[1]) }
+    end
   end
 
   context "when name is not specified" do
@@ -63,10 +79,16 @@ describe Content::QuoteComponent, type: :component do
     it { is_expected.not_to have_css(".author cite.job-title") }
   end
 
+  context "when no links are specified" do
+    let(:links) { nil }
+
+    it { is_expected.not_to have_css("ul") }
+  end
+
   context "when cta is not specified" do
     let(:cta) { nil }
 
-    it { is_expected.not_to have_link }
+    it { is_expected.not_to have_link(class: "button") }
   end
 
   context "when image is not specified" do
@@ -79,6 +101,12 @@ describe Content::QuoteComponent, type: :component do
     let(:inline) { "right" }
 
     it { is_expected.to have_css(".quote--inline-right") }
+  end
+
+  context "when background white" do
+    let(:background) { "white" }
+
+    it { is_expected.to have_css(".quote--background-white") }
   end
 
   context "when inline left" do
@@ -125,6 +153,16 @@ describe Content::QuoteComponent, type: :component do
     it do
       expect { described_class.new(text: text, cta: { title: "", link: "" }) }.to \
         raise_error(ArgumentError, "cta must contain a title and link")
+    end
+
+    it do
+      expect { described_class.new(text: text, background: "red") }.to \
+        raise_error(ArgumentError, "background must be yellow or white")
+    end
+
+    it do
+      expect { described_class.new(text: text, links: "http://test.com") }.to \
+        raise_error(ArgumentError, "links must be a hash")
     end
   end
 end

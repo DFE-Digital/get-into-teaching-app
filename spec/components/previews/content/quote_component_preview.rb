@@ -1,12 +1,12 @@
 class Content::QuoteComponentPreview < ViewComponent::Preview
   def default
-    component = Content::QuoteComponent.new(text)
+    component = Content::QuoteComponent.new(**text)
     render(component)
   end
 
   def with_inline
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(inline),
     )
 
@@ -18,7 +18,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_author
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author),
     )
     render(component)
@@ -26,7 +26,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_name
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author.slice(:name)),
     )
     render(component)
@@ -34,7 +34,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_job_title
     component = Content::QuoteComponent.new(
-      text
+      **text
       .merge(author.slice(:job_title)),
     )
     render(component)
@@ -42,7 +42,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_cta
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(cta),
     )
     render(component)
@@ -50,16 +50,27 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_author_and_cta
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
         .merge(cta),
     )
     render(component)
   end
 
+  def with_author_image_and_cta_on_white_background
+    component = Content::QuoteComponent.new(
+      **text
+        .merge(author)
+        .merge(cta)
+        .merge(image)
+        .merge(white_background),
+    )
+    render(component)
+  end
+
   def with_author_image_and_cta
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
         .merge(cta)
         .merge(image),
@@ -67,9 +78,17 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
     render(component)
   end
 
+  def with_links
+    component = Content::QuoteComponent.new(
+      **text
+        .merge(links),
+    )
+    render(component)
+  end
+
   def with_author_image_and_cta_inline
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
         .merge(cta)
         .merge(image)
@@ -84,7 +103,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_author_hanging_right
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
         .merge(hang_right),
     )
@@ -93,7 +112,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_author_and_cta_hanging_right
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
         .merge(cta)
         .merge(hang_right),
@@ -103,7 +122,7 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
 
   def with_author_image_and_cta_hanging_right
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
         .merge(cta)
         .merge(image)
@@ -112,14 +131,15 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
     render(component)
   end
 
-  def with_author_image_and_cta_hanging_right_inline
+  def with_author_image_and_links_and_cta_hanging_right_inline
     component = Content::QuoteComponent.new(
-      text
+      **text
         .merge(author)
         .merge(cta)
         .merge(image)
         .merge(hang_right)
-        .merge(inline),
+        .merge(inline)
+        .merge(links),
     )
 
     render_with_template(
@@ -145,6 +165,12 @@ private
     }
   end
 
+  def white_background
+    {
+      background: "white",
+    }
+  end
+
   def cta
     {
       cta: {
@@ -154,9 +180,18 @@ private
     }
   end
 
+  def links
+    {
+      links: {
+        "First link" => "/first",
+        "Second link" => "/second",
+      },
+    }
+  end
+
   def image
     {
-      image: "media/images/homepage/science-teacher.jpg",
+      image: "media/images/content/blog/ian-wallace.jpg",
     }
   end
 

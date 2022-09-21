@@ -1,14 +1,43 @@
 .quote {
-  @include quote;
   margin: $indent-amount 0;
   width: 100%;
 
+  &--background-yellow {
+    @include quote($yellow);
+
+    p {
+      @include fancy-quotes-before($white);
+
+      span {
+        @include fancy-quotes-after($white);
+      }
+    }
+
+    img {
+      border: 0 solid $yellow;
+    }
+  }
+
+  &--background-white {
+    @include quote($white);
+
+    p {
+      @include fancy-quotes-before($pink);
+
+      span {
+        @include fancy-quotes-after($pink);
+      }
+    }
+
+    img {
+      border: 0 solid $white;
+    }
+  }
+
   p {
-    @include fancy-quotes-before;
     margin: 0;
 
     span {
-      @include fancy-quotes-after;
       white-space: nowrap;
     }
   }
@@ -47,7 +76,13 @@
 
     img {
       max-width: 50%;
+      height: auto;
     }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0 25px $indent-amount 42px;
   }
 }
 
@@ -117,7 +152,7 @@
       img {
         position: absolute;
         left: 0;
-        border: 1em solid $yellow;
+        border-width: 1em;
         border-top: 0;
         width: 175px;
       }

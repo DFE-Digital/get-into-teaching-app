@@ -21,5 +21,12 @@
         <% end %>
       <% end %>
     <% end %>
+    <% unless links.blank? %>
+      <ul>
+        <% links.each do |text, href| %>
+          <li><%= link_to(text, href) %></li>
+        <% end %>
+      </ul>
+    <% end %>
   <% end %>
 <% end %>
