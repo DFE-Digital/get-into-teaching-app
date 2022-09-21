@@ -88,8 +88,8 @@ module TeachingEvents
       case event_type
       when "Get Into Teaching event"
         {
-          path: "media/images/content/event-signup/birmingham-event-1.jpg",
-          alt: "A bustling Train to Teach event taking place in a church, busy with stalls and visitors",
+          path: "media/images/content/event-signup/event-regional.jpg",
+          alt: "A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers",
         }
       when "Online event"
         nil
