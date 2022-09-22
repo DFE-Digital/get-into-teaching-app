@@ -1,0 +1,47 @@
+.quote-section {
+  padding: 3 * $indent-amount 0 0 0;
+
+  &--reverse {
+    .quote-section__content {
+      @include mq($from: tablet) {
+        flex-direction: row-reverse;
+
+        picture {
+          margin: 0 8em 0 0;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+
+      > * {
+        flex: 1;
+      }
+
+      picture {
+        margin: 0 0 0 8em;
+      }
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  .quote {
+    width: auto;
+
+    @include mq($from: tablet) {
+      padding: $indent-amount 3 * $indent-amount;
+      max-width: 600px;
+      margin: 3 * $indent-amount auto 0 auto;
+    }
+  }
+}
