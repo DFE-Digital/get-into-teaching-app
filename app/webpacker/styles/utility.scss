@@ -124,6 +124,10 @@ hr {
   margin: $indent-amount 0;
 }
 
+.grey-background {
+  background-color: $grey;
+}
+
 // responsively resize youtube videos by surrounding
 // the iframe in a .youtube-video-container wrapper
 //
