@@ -1,6 +1,6 @@
 module TeachingEventsHelper
-  def is_a_train_to_teach_event?(event)
-    event.type_id.in?(EventType.lookup_by_names("Train to Teach event"))
+  def is_a_get_into_teaching_event?(event)
+    event.type_id.in?(EventType.lookup_by_names("Get Into Teaching event"))
   end
 
   def event_list_id(name)

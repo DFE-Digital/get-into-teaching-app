@@ -1,7 +1,7 @@
 require "rails_helper"
 
 RSpec.feature "Event sign up", :integration, type: :feature, js: true do
-  let(:event_selector) { ".event--train-to-teach a" }
+  let(:event_selector) { ".event--get-into-teaching a" }
 
   before do
     config_capybara

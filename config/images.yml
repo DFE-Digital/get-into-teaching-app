@@ -285,10 +285,10 @@
   variants:
     - "media/images/content/blog/thumbnails/stephen.jpg"
 
-"media/images/content/blog/train-to-teach.jpg":
-  alt: "A busy Train to Teach event with attendees having conversations with Teacher Training Advisers."
+"media/images/content/blog/get-into-teaching.jpg":
+  alt: "A busy Get Into Teaching event with attendees having conversations with Teacher Training Advisers."
   variants:
-    - "media/images/content/blog/thumbnails/train-to-teach.jpg"
+    - "media/images/content/blog/thumbnails/get-into-teaching.jpg"
 
 "media/images/content/blog/whiteboard.jpg":
   alt: ""

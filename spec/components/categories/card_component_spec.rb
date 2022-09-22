@@ -1,10 +1,11 @@
 require "rails_helper"
 
 describe Categories::CardComponent, type: "component" do
+  let(:description) { "Test category card description" }
   let(:item) do
     OpenStruct.new(
       title: "Test category card title",
-      description: "Test category card description",
+      description: description,
       path: "/a/b/c/",
     )
   end
@@ -25,6 +26,15 @@ describe Categories::CardComponent, type: "component" do
 
   specify "the link contains the provided description" do
     expect(subject).to have_css("a > .category__nav-card--content > p", text: item.description)
+  end
+
+  context "when the description contains HTML" do
+    let(:description) { "<b>Test</b><script>malicious</script>" }
+
+    specify "renders safe HTML" do
+      description = subject.find("a > .category__nav-card--content > p")
+      expect(description.native.inner_html).to eq("<b>Test</b>malicious")
+    end
   end
 
   specify "the link has an icon" do

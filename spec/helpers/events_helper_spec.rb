@@ -10,7 +10,7 @@ describe EventsHelper, type: "helper" do
 
   describe "#show_events_teaching_logo" do
     it "returns false if the index != 0" do
-      show_logo = show_events_teaching_logo(1, EventType.train_to_teach_event_id)
+      show_logo = show_events_teaching_logo(1, EventType.get_into_teaching_event_id)
       expect(show_logo).to be_falsy
     end
 
@@ -20,7 +20,7 @@ describe EventsHelper, type: "helper" do
     end
 
     it "returns true if the index is 0 and the type_id is not School or University event" do
-      show_logo = show_events_teaching_logo(0, EventType.train_to_teach_event_id)
+      show_logo = show_events_teaching_logo(0, EventType.get_into_teaching_event_id)
       expect(show_logo).to be_truthy
 
       show_logo = show_events_teaching_logo(0, EventType.online_event_id)
@@ -105,11 +105,11 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#event_type_color" do
-    it "returns purple for train to teach events" do
-      expect(event_type_color(EventType.train_to_teach_event_id)).to eq("purple")
+    it "returns purple for get into teaching events" do
+      expect(event_type_color(EventType.get_into_teaching_event_id)).to eq("purple")
     end
 
-    it "returns blue for non-train to teach events" do
+    it "returns blue for non-get into teaching events" do
       expect(event_type_color(EventType.online_event_id)).to eq("blue")
       expect(event_type_color(EventType.school_or_university_event_id)).to eq("blue")
     end
@@ -138,12 +138,12 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#display_event_provider_info?" do
-    it "returns false if train to teach" do
-      event.type_id = EventType.train_to_teach_event_id
+    it "returns false if get into teaching event" do
+      event.type_id = EventType.get_into_teaching_event_id
       expect(display_event_provider_info?(event)).to be(false)
     end
 
-    it "returns true if not train to teach" do
+    it "returns true if not get into teaching event" do
       event.type_id = EventType.online_event_id
       expect(display_event_provider_info?(event)).to be(true)
       event.type_id = EventType.school_or_university_event_id
@@ -163,9 +163,24 @@ describe EventsHelper, type: "helper" do
     end
   end
 
+  describe "#categorise_events" do
+    let(:events) { build_list(:event_api, 2) }
+
+    subject(:categorised_events) { categorise_events(events) }
+
+    it { expect(categorised_events.count).to eq(events.count) }
+    it { is_expected.to all(have_attributes(title: be_a(String), description: be_a(String), path: be_a(String))) }
+
+    context "when the event does not have a building" do
+      let(:events) { build_list(:event_api, 2, :online) }
+
+      it { is_expected.to all(have_attributes(title: be_a(String), description: be_a(String), path: be_a(String))) }
+    end
+  end
+
   describe "#pluralised_category_name" do
     {
-      222_750_001 => "Train to Teach events",
+      222_750_012 => "Get Into Teaching events",
       222_750_008 => "Online Q&As",
       222_750_009 => "School and University events",
     }.each do |type_id, name|
@@ -175,43 +190,33 @@ describe EventsHelper, type: "helper" do
     end
   end
 
-  describe "#past_category_name" do
-    it "returns 'Past online Q&As' if the category name contains 'online'" do
-      expect(past_category_name(222_750_008)).to eql("Past online Q&As")
-    end
-
-    it "returns the category name with 'Past' prepended if the category name does not contain 'online'" do
-      expect(past_category_name(222_750_001)).to eql("Past Train to Teach events")
-    end
-  end
-
-  describe "#display_no_ttt_events_message?" do
+  describe "#display_no_git_events_message?" do
     let(:performed_search) { true }
     let(:events) { [] }
-    let(:event_search_type) { "222750001" }
-    let(:dummy_events) { [[222_750_001, []]] }
+    let(:event_search_type) { "222750012" }
+    let(:dummy_events) { [[222_750_012, []]] }
 
-    it "returns true when searching for TTT events and there are none" do
-      expect(display_no_ttt_events_message?(performed_search, events, event_search_type)).to be true
+    it "returns true when searching for GIT events and there are none" do
+      expect(display_no_git_events_message?(performed_search, events, event_search_type)).to be true
     end
 
     it "returns false when search was not performed" do
-      expect(display_no_ttt_events_message?(false, events, event_search_type)).to be false
+      expect(display_no_git_events_message?(false, events, event_search_type)).to be false
     end
 
-    it "returns false when there are TTT events" do
-      expect(display_no_ttt_events_message?(true, dummy_events, event_search_type)).to be false
+    it "returns false when there are GIT events" do
+      expect(display_no_git_events_message?(true, dummy_events, event_search_type)).to be false
     end
 
-    it "returns false when the search is not for TTT events" do
-      expect(display_no_ttt_events_message?(true, dummy_events, "")).to be false
+    it "returns false when the search is not for GIT events" do
+      expect(display_no_git_events_message?(true, dummy_events, "")).to be false
     end
   end
 
   describe "#show_see_all_events_button?" do
-    let(:type_id) { EventType.train_to_teach_event_id }
+    let(:type_id) { EventType.get_into_teaching_event_id }
 
-    context "when checking for TTT event type id" do
+    context "when checking for GIT event type id" do
       it "returns false when events is empty" do
         events = []
 
@@ -219,7 +224,7 @@ describe EventsHelper, type: "helper" do
       end
 
       it "returns true when events is not empty" do
-        events = build_list(:event_api, 2, :train_to_teach_event)
+        events = build_list(:event_api, 2, :get_into_teaching_event)
 
         expect(show_see_all_events_button?(type_id, events)).to be true
       end
@@ -242,9 +247,9 @@ describe EventsHelper, type: "helper" do
     end
   end
 
-  describe "#ttt_event_type_id?" do
-    it "returns the TTT event id" do
-      expect(ttt_event_type_id).to eq EventType.train_to_teach_event_id
+  describe "#git_event_type_id?" do
+    it "returns the GIT event id" do
+      expect(git_event_type_id).to eq EventType.get_into_teaching_event_id
     end
   end
 end

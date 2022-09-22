@@ -17,9 +17,7 @@ module TeachingEvents
 
     delegate :provider_event?, to: :type
 
-    def train_to_teach?
-      type.train_to_teach_event?
-    end
+    delegate :get_into_teaching_event?, to: :type
 
     def online?
       @online
@@ -48,8 +46,8 @@ module TeachingEvents
     def classes
       class_names(
         "event",
-        "event--train-to-teach" => train_to_teach?,
-        "event--regular" => !train_to_teach?,
+        "event--get-into-teaching" => get_into_teaching_event?,
+        "event--regular" => !get_into_teaching_event?,
         "event--training-provider" => provider_event?,
       )
     end

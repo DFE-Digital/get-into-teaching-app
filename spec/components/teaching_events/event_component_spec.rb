@@ -6,17 +6,17 @@ describe TeachingEvents::EventComponent, type: "component" do
   describe "methods" do
     let(:subject) { described_class.new(event: event) }
 
-    describe "#train_to_teach?" do
-      context "when the event is a TTT event" do
+    describe "#get_into_teaching_event?" do
+      context "when the event is a GIT event" do
         let(:event) { build(:event_api) }
 
-        it { expect(subject.train_to_teach?).to be(true) }
+        it { expect(subject.get_into_teaching_event?).to be(true) }
       end
 
-      context "when the event is not a TTT event" do
+      context "when the event is not a GIT event" do
         let(:event) { build(:event_api, :school_or_university_event) }
 
-        it { expect(subject.train_to_teach?).to be(false) }
+        it { expect(subject.get_into_teaching_event?).to be(false) }
       end
     end
 
@@ -27,7 +27,7 @@ describe TeachingEvents::EventComponent, type: "component" do
         it { expect(subject.provider_event?).to be(true) }
       end
 
-      context "when the event is a train to teach event" do
+      context "when the event is a get into teaching event" do
         let(:event) { build(:event_api) }
 
         it { expect(subject.provider_event?).to be(false) }
@@ -76,13 +76,13 @@ describe TeachingEvents::EventComponent, type: "component" do
     end
 
     describe "#classes" do
-      context "when train to teach" do
+      context "when get into teaching" do
         let(:event) { build(:event_api) }
 
-        it { expect(subject.classes).to eql("event event--train-to-teach") }
+        it { expect(subject.classes).to eql("event event--get-into-teaching") }
       end
 
-      context "when not train to teach" do
+      context "when not get into teaching" do
         let(:event) { build(:event_api, :online_event) }
 
         it { expect(subject.classes).to eql("event event--regular") }
@@ -107,8 +107,8 @@ describe TeachingEvents::EventComponent, type: "component" do
       expect(subject).to have_css("li.event")
     end
 
-    context "when a train to teach event" do
-      it { expect(subject).to have_css("li.event.event--train-to-teach") }
+    context "when a get into teaching event" do
+      it { expect(subject).to have_css("li.event.event--get-into-teaching") }
 
       specify "contains the event name as a link" do
         expect(subject).to have_link(event.name, href: "/events/#{event.readable_id}")

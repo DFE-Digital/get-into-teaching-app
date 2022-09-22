@@ -61,23 +61,23 @@ describe TeachingEvents::Search do
     end
   end
 
-  describe "#train_to_teach?" do
-    let(:type) { %w[onlineqa ttt] }
+  describe "#get_into_teaching_event?" do
+    let(:type) { %w[onlineqa git] }
 
     subject { described_class.new(type: type) }
 
-    it { is_expected.to be_train_to_teach }
+    it { is_expected.to be_get_into_teaching_event }
 
-    context "when type does not contain train to teach" do
+    context "when type does not contain get into teaching" do
       let(:type) { %w[onlineqa] }
 
-      it { is_expected.not_to be_train_to_teach }
+      it { is_expected.not_to be_get_into_teaching_event }
     end
 
     context "when the type has not been set" do
       let(:type) { nil }
 
-      it { is_expected.not_to be_train_to_teach }
+      it { is_expected.not_to be_get_into_teaching_event }
     end
   end
 
@@ -112,7 +112,7 @@ describe TeachingEvents::Search do
   end
 
   describe "#results" do
-    ttt           = "ttt"
+    git           = "git"
     online        = "onlineqa"
     school_or_uni = "provider"
 
@@ -186,21 +186,21 @@ describe TeachingEvents::Search do
       ),
 
       OpenStruct.new(
-        description: "Train to Teach and Online",
-        input: { type: [ttt, online].map(&:to_s) },
-        expected_conditions: { type_ids: EventType.lookup_by_query_params(ttt, online) },
+        description: "Get Into Teaching and Online",
+        input: { type: [git, online].map(&:to_s) },
+        expected_conditions: { type_ids: EventType.lookup_by_query_params(git, online) },
       ),
 
       OpenStruct.new(
-        description: "School or University or Train to Teach",
-        input: { type: [ttt, school_or_uni].map(&:to_s) },
-        expected_conditions: { type_ids: EventType.lookup_by_query_params(ttt, school_or_uni) },
+        description: "School or University or Get Into Teaching",
+        input: { type: [git, school_or_uni].map(&:to_s) },
+        expected_conditions: { type_ids: EventType.lookup_by_query_params(git, school_or_uni) },
       ),
 
       OpenStruct.new(
         description: "All types",
-        input: { type: [school_or_uni, ttt, online].map(&:to_s) },
-        expected_conditions: { type_ids: EventType.lookup_by_query_params(school_or_uni, ttt, online) },
+        input: { type: [school_or_uni, git, online].map(&:to_s) },
+        expected_conditions: { type_ids: EventType.lookup_by_query_params(school_or_uni, git, online) },
       ),
     ].each do |query|
       context "#{query.description} (#{query.input})" do

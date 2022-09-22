@@ -79,19 +79,19 @@ describe TeachingEventsHelper, type: "helper" do
   end
 
   describe "#is_event_type?" do
-    let(:ttt) { "Train to Teach event" }
+    let(:git) { "Get Into Teaching event" }
     let(:provider) { "School or University event" }
 
-    let(:ttt_event) do
-      OpenStruct.new(type_id: EventType.lookup_by_name(ttt))
+    let(:git_event) do
+      OpenStruct.new(type_id: EventType.lookup_by_name(git))
     end
 
     specify "returns true when there's a match" do
-      expect(is_event_type?(ttt_event, ttt)).to be true
+      expect(is_event_type?(git_event, git)).to be true
     end
 
     specify "returns false when there's no match" do
-      expect(is_event_type?(ttt_event, provider)).to be false
+      expect(is_event_type?(git_event, provider)).to be false
     end
   end
 
@@ -123,18 +123,18 @@ describe TeachingEventsHelper, type: "helper" do
     end
   end
 
-  describe "#is_a_train_to_teach_event?" do
-    let(:ttt_event) { OpenStruct.new(type_id: EventType.train_to_teach_event_id) }
+  describe "#is_a_get_into_teaching_event?" do
+    let(:git_event) { OpenStruct.new(type_id: EventType.get_into_teaching_event_id) }
     let(:online_event) { OpenStruct.new(type_id: EventType.online_event_id) }
     let(:school_or_university_event) { OpenStruct.new(type_id: EventType.school_or_university_event_id) }
 
-    specify "returns true when the event is Train to Teach" do
-      expect(is_a_train_to_teach_event?(ttt_event)).to be true
+    specify "returns true when the event is Get Into Teaching" do
+      expect(is_a_get_into_teaching_event?(git_event)).to be true
     end
 
     specify "returns false when the event is online or school and university" do
-      expect(is_a_train_to_teach_event?(online_event)).to be false
-      expect(is_a_train_to_teach_event?(school_or_university_event)).to be false
+      expect(is_a_get_into_teaching_event?(online_event)).to be false
+      expect(is_a_get_into_teaching_event?(school_or_university_event)).to be false
     end
   end
 end

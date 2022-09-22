@@ -3,7 +3,7 @@ class TeachingEventsController < ApplicationController
 
   include CircuitBreaker
 
-  caches_page :about_ttt_events
+  caches_page :about_git_events
 
   before_action :setup_filter, only: :index
 
@@ -13,7 +13,7 @@ class TeachingEventsController < ApplicationController
   EVENT_COUNT = 15 # 15 regular ones per page
 
   FEATURED_EVENT_TYPES = EventType.lookup_by_names(
-    "Train to Teach event",
+    "Get Into Teaching event",
   ).freeze
 
   def create
@@ -43,7 +43,7 @@ class TeachingEventsController < ApplicationController
   def show
     @event = TeachingEvents::EventPresenter.new(retrieve_event)
 
-    breadcrumb "Get into Teaching events", events_path
+    breadcrumb "Events", events_path
     breadcrumb @event.name, request.path
 
     @page_title = @event.name
@@ -51,14 +51,18 @@ class TeachingEventsController < ApplicationController
     render layout: "teaching_event"
   end
 
-  def about_ttt_events
-    @no_ttt_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
-      quantity: 1,
-      type_ids: [EventType.train_to_teach_event_id],
+  def about_git_events
+    @git_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
+      type_ids: [EventType.get_into_teaching_event_id],
       start_after: Time.zone.now,
-    ).blank?
+    )
 
-    breadcrumb "Get into Teaching events", events_path
+    @front_matter = {
+      title: "Get Into Teaching events",
+      description: "Find out all you need to know about starting a career in teaching at a Get Into Teaching event.",
+    }.with_indifferent_access
+
+    render layout: "minimal"
   end
 
   def not_available

@@ -2,7 +2,7 @@ FactoryBot.define do
   factory :event_api, class: "GetIntoTeachingApiClient::TeachingEvent" do
     id { SecureRandom.uuid }
     sequence(:readable_id, &:to_s)
-    type_id { EventType.train_to_teach_event_id }
+    type_id { EventType.get_into_teaching_event_id }
     web_feed_id { "123" }
     status_id { EventStatus.open_id }
     sequence(:name) { |i| "Become a Teacher #{i}" }
@@ -15,6 +15,7 @@ FactoryBot.define do
     is_online { false }
     is_virtual { false }
     building { build :event_building_api }
+    region_id { EventRegion.all_ids.sample }
 
     trait :closed do
       status_id { EventStatus.closed_id }
@@ -31,8 +32,8 @@ FactoryBot.define do
       provider_contact_email { "jim@smith.com" }
     end
 
-    trait :train_to_teach_event do
-      type_id { EventType.train_to_teach_event_id }
+    trait :get_into_teaching_event do
+      type_id { EventType.get_into_teaching_event_id }
     end
 
     trait :virtual do
@@ -67,7 +68,7 @@ FactoryBot.define do
       status_id { EventStatus.pending_id }
     end
 
-    trait :without_train_to_teach_fields do
+    trait :without_get_into_teaching_fields do
       is_virtual { nil }
       video_url { nil }
       message { nil }

@@ -1,6 +1,4 @@
 article {
-  margin-inline: 1em;
-
   $colours: ("pink": $pink, "blue": $blue, "yellow": $yellow, "purple": $purple);
 
   @each $name, $val in $colours {
@@ -40,6 +38,10 @@ article {
   > section {
     padding-inline: 1rem;
 
+    &.fullwidth {
+      max-width: 100%;
+    }
+
     &.columns {
       display: flex;
       flex-direction: column;
@@ -75,6 +77,27 @@ article {
     font-weight: bold;
   }
 
+  .grey-bg {
+    padding-top: 75px;
+    background-color: $grey;
+  }
+
+  .no-margin {
+    margin: 0 auto;
+  }
+
+  .no-padding {
+    padding: 0;
+  }
+
+  .bottom-padding {
+    padding-bottom: 4em;
+  }
+
+  .category__cards {
+    padding-bottom: 0;
+  }
+
   .statement {
     div + div {
       margin-top: .5rem;
@@ -97,6 +120,30 @@ article {
           content: "/";
           margin-inline: .3em .5em;
         }
+      }
+    }
+  }
+
+  .videos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: $indent-amount;
+    margin-top: $indent-amount;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+
+      > * {
+        width: 50%;
+      }
+    }
+
+    > * {
+      iframe {
+        width: 100%;
+        height: 300px;
+        border: 3px solid $pink;
       }
     }
   }

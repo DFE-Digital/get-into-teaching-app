@@ -12,11 +12,13 @@
 
   &__cards {
 	  padding-bottom: 2em;
+    width: 100%;
 
     &:last-of-type {
       padding-bottom: 4em;
     }
   }
+
 
   &__nav-cards ul {
     display: grid;
@@ -24,12 +26,31 @@
     margin-inline: 1em;
     margin-block: 2em;
     padding: 0;
-    gap: 2em;
+    gap: 1.2em;
     list-style: none;
 
-    @include mq($from: tablet) {
-      grid-template-columns: repeat(2, 1fr);
-      margin-inline: 2em;
+    &:not(.single-column) {
+      @include mq($from: tablet) {
+        grid-template-columns: repeat(2, 1fr);
+        margin-inline: 2em;
+      }
+    }
+
+    &.single-column {
+      @include mq($from: tablet) {
+        .category__nav-card .category__nav-card--content {
+          display: flex;
+          gap: $indent-amount;
+
+          > *:first-child {
+            flex-basis: 30%;
+          }
+
+          p:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
     }
   }
 
@@ -43,6 +64,7 @@
       text-decoration: none;
       display: flex;
       gap: 1.5em;
+      width: 100%;
     }
 
     &:hover {

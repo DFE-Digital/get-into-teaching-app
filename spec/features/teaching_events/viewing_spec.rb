@@ -7,7 +7,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:get_teaching_event).and_return(event)
   end
 
-  shared_examples "train-to-teach teaching event" do
+  shared_examples "get-into-teaching teaching event" do
     scenario "the page has the right contents" do
       visit event_path(event.readable_id)
 
@@ -51,10 +51,10 @@ RSpec.feature "Searching for teaching events", type: :feature do
     end
   end
 
-  describe "viewing a train to teach event" do
+  describe "viewing a get into teaching event" do
     let(:event) { build(:event_api, :with_provider_info) }
 
-    include_examples "train-to-teach teaching event"
+    include_examples "get-into-teaching teaching event"
   end
 
   describe "viewing a online event" do
