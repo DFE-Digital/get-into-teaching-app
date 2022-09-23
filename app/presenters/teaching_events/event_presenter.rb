@@ -87,10 +87,7 @@ module TeachingEvents
     def image
       case event_type
       when "Get Into Teaching event"
-        {
-          path: "media/images/content/event-signup/event-regional.jpg",
-          alt: "A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers",
-        }
+        get_into_teaching_event_image_details
       when "Online event"
         nil
       when "School or University event"
@@ -119,6 +116,20 @@ module TeachingEvents
     end
 
   private
+
+    def get_into_teaching_event_image_details
+      if online?
+        {
+          path: "media/images/content/event-signup/event-regional-online.jpg",
+          alt: "An online Get Into Teaching event on a computer screen.",
+        }
+      else
+        {
+          path: "media/images/content/event-signup/event-regional.jpg",
+          alt: "A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers",
+        }
+      end
+    end
 
     def event_building
       @event.building
