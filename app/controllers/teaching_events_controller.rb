@@ -3,8 +3,6 @@ class TeachingEventsController < ApplicationController
 
   include CircuitBreaker
 
-  caches_page :about_git_events
-
   before_action :setup_filter, only: :index
 
   rescue_from EventNotViewableError, with: :render_gone
@@ -55,6 +53,7 @@ class TeachingEventsController < ApplicationController
     @git_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
       type_ids: [EventType.get_into_teaching_event_id],
       start_after: Time.zone.now,
+      quantity: 20,
     )
 
     @front_matter = {

@@ -85,7 +85,7 @@ describe "teaching events", type: :request do
       freeze_time
       expected_type_ids = [EventType.get_into_teaching_event_id]
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events).with(type_ids: expected_type_ids, start_after: now).and_return(events)
+        receive(:search_teaching_events).with(type_ids: expected_type_ids, start_after: now, quantity: 20).and_return(events)
       get about_git_events_path
     end
 
