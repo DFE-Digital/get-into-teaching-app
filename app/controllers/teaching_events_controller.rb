@@ -3,8 +3,6 @@ class TeachingEventsController < ApplicationController
 
   include CircuitBreaker
 
-  caches_page :about_git_events
-
   before_action :setup_filter, only: :index
 
   rescue_from EventNotViewableError, with: :render_gone
