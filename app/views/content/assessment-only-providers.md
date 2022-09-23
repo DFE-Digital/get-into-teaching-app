@@ -127,6 +127,9 @@ provider_groups:
       name: Derek Boyle
       telephone: 020 8300 6566
       email: Administrator@gradteach.co.uk
+    - header: Future Teacher Training
+      link: https://www.futureteachertraining.org/
+      email: enquiries@scitt.futureacademies.org      
     - header: Goldsmiths, University of London
       link: https://www.gold.ac.uk/
       name: Lynsey Salt
@@ -184,9 +187,6 @@ provider_groups:
       name: Jo Fogg
       telephone: 020 3740 1808 (option 1)
       email: scitt@tkat.org     
-    - header: The Pimlico-London SCITT
-      link: https://www.futuretraining.org/page/?title=Assessment+Only+Route&pid=20
-      email: info@futuretraining.org
     - header: University of East London
       link: https://www.uel.ac.uk/
       name: Bryce Wilby
