@@ -22,7 +22,10 @@ class TeachingEventsController < ApplicationController
   end
 
   def index
-    @page_title = "Find an event near you"
+    @front_matter = {
+      title: "Find an event near you",
+      description: "Find out more about getting into teaching at a free event where you can get all your questions answered by teachers, advisers and training providers.",
+    }.with_indifferent_access
 
     setup_results
 
@@ -46,7 +49,10 @@ class TeachingEventsController < ApplicationController
     breadcrumb "Events", events_path
     breadcrumb @event.name, request.path
 
-    @page_title = @event.name
+    @front_matter = {
+      title: @event.name,
+      description: @event.summary,
+    }.with_indifferent_access
 
     render layout: "teaching_event"
   end
