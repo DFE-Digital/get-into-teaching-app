@@ -3,7 +3,6 @@ require "rails_helper"
 describe StructuredDataHelper, type: "helper" do
   include ERB::Util
   include EventsHelper
-  include Webpacker::Helper
 
   let(:image_path) { "media/images/getintoteachinglogo.svg" }
 
