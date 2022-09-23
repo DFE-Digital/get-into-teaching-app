@@ -4,6 +4,7 @@ module SpecHelpers
       host = Rails.application.config.x.integration_host
       creds = Rails.application.config.x.integration_credentials
       Capybara.run_server = false
+      Capybara.default_max_wait_time = 5
       Capybara.app_host = "https://#{creds[:username]}:#{creds[:password]}@#{host}"
     end
 
