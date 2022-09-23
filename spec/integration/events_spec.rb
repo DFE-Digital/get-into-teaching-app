@@ -8,9 +8,12 @@ RSpec.feature "Event sign up", :integration, type: :feature, js: true do
     navigate_to_events
   end
 
-  around do |example|
+  around do |example| # rubocop:disable RSpec/AroundBlock
     WebMock.enable_net_connect!
-    example.run
+    # The integration tests fail occasionally; I think this is in part due
+    # to our mail provider being flakey (for TOTP confirmation emails). Allow
+    # integration tests to be retried to make them more resilient.
+    example.run_with_retry retry: 3
     WebMock.disable_net_connect!(allow_localhost: true)
   end
 
