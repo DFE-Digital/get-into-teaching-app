@@ -53,6 +53,7 @@ class TeachingEventsController < ApplicationController
     @git_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
       type_ids: [EventType.get_into_teaching_event_id],
       start_after: Time.zone.now,
+      quantity: 20,
     )
 
     @front_matter = {
