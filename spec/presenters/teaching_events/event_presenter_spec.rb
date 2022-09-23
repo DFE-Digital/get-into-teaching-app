@@ -133,8 +133,15 @@ describe TeachingEvents::EventPresenter do
       context "when event is a Get Into Teaching event" do
         let(:event) { build(:event_api, :get_into_teaching_event) }
 
-        specify { expect(subject[:path]).to end_with(".jpg") }
+        specify { expect(subject[:path]).to end_with("event-regional.jpg") }
         specify { expect(subject).to have_key(:alt) }
+
+        context "when the event is online" do
+          let(:event) { build(:event_api, :get_into_teaching_event, :online) }
+
+          specify { expect(subject[:path]).to end_with("event-regional-online.jpg") }
+          specify { expect(subject).to have_key(:alt) }
+        end
       end
 
       context "when event is a School or University event" do
