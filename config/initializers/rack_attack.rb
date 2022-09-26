@@ -62,7 +62,7 @@ module Rack
       end
 
       # Throttle event upsert by IP (5rpm)
-      throttle("event upsert", limit: 5, period: 1.minute) do |req|
+      throttle("event upsert", limit: 10, period: 20.seconds) do |req|
         event_upsert_paths = [
           %r{/internal/events},
           %r{/internal/approve},

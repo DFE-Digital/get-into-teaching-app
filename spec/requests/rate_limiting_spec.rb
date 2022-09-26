@@ -91,7 +91,7 @@ describe "Rate limiting", type: :request do
       end
     end
 
-    it_behaves_like "an IP-based rate limited endpoint", "POST /internal/events", 5, 1.minute do
+    it_behaves_like "an IP-based rate limited endpoint", "POST /internal/events", 10, 20.seconds do
       def perform_request
         post internal_events_path,
              headers: { "REMOTE_ADDR" => ip }.merge(generate_auth_headers(:author)),
@@ -99,7 +99,7 @@ describe "Rate limiting", type: :request do
       end
     end
 
-    it_behaves_like "an IP-based rate limited endpoint", "PUT /internal/approve", 5, 1.minute do
+    it_behaves_like "an IP-based rate limited endpoint", "PUT /internal/approve", 10, 20.seconds do
       let(:params) { { "id": event[:id] } }
 
       def perform_request
