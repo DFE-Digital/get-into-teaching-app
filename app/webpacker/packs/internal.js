@@ -10,11 +10,6 @@ initialiseFlatpickr();
 
 function initialiseGovUk() {
   initAll();
-
-  // Needed for GovUK JavaScript
-  document.body.className = document.body.className
-    ? document.body.className + ' js-enabled'
-    : 'js-enabled';
 }
 
 function initialiseSelectElement() {
