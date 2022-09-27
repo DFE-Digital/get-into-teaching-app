@@ -3,6 +3,7 @@ require "lazy_load_images"
 require "responsive_images"
 require "external_links"
 require "image_sizes"
+require "error_title"
 
 module Middleware
   class HtmlResponseTransformer
@@ -32,6 +33,7 @@ module Middleware
       response_body = ResponsiveImages.new(response_body).html
       response_body = LazyLoadImages.new(response_body).html
       response_body = ExternalLinks.new(response_body).html
+      response_body = ErrorTitle.new(response_body).html
 
       # <source> has no content so should be self-closing; configuring Nokogiri
       # to remove the closing tags results in breakages elsewhere in the document,

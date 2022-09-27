@@ -9,8 +9,8 @@ class EventStepsController < ApplicationController
 
   before_action :noindex
   before_action :restrict_sign_ups, only: %i[show update completed]
-  before_action :set_step_page_title, only: [:show]
-  before_action :set_completed_page_title, only: [:completed]
+  before_action :set_step_page_title, only: %i[show update]
+  before_action :set_completed_page_title, only: %i[completed]
 
   layout :resolve_layout
 
