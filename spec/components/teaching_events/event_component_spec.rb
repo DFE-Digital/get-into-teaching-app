@@ -121,6 +121,7 @@ describe TeachingEvents::EventComponent, type: "component" do
 
       context "when in person" do
         it { expect(subject).to have_css("div.event__info__setting.in-person", text: "In person") }
+        it { expect(subject).to have_css(".event-image img[src*='event-regional-listing']") }
       end
 
       context "when not in person" do
@@ -133,6 +134,7 @@ describe TeachingEvents::EventComponent, type: "component" do
         let(:event) { build(:event_api, is_online: true) }
 
         it { expect(subject).to have_css("div.event__info__setting.online", text: "Online") }
+        it { expect(subject).to have_css(".event-image img[src*='event-regional-online-listing']") }
       end
 
       context "when not online" do

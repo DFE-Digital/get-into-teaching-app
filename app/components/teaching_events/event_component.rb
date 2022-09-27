@@ -43,6 +43,11 @@ module TeachingEvents
       safe_join([@start_at.to_formatted_s(:time), @end_at.to_formatted_s(:time)], "&ndash;".html_safe)
     end
 
+    def image
+      image_path = "media/images/content/event-signup/event-regional#{'-online' if online?}-listing.jpg"
+      helpers.image_pack_tag(image_path, alt: helpers.image_alt(image_path))
+    end
+
     def classes
       class_names(
         "event",
