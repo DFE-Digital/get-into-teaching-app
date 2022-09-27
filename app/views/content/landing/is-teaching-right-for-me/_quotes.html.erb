@@ -4,15 +4,15 @@
       <%= render(Content::QuoteSectionComponent.new(title: "Making a difference", image: "media/images/content/blog/habiba-cabdi-teacher-applicant.jpg")) do |section| %>
         <p>As a teacher, your hard work and passion can help inspire and shape the next generation.</p>
 
-        <p>Whether that's passing on your subject knowledge or helping children develop confidence and values they'll carry through life.</p>
+        <p>You could be passing on your subject knowledge or helping children develop confidence and values they'll carry through life.</p>
 
         <% section.with_quote(
           text: "I tried many things until I realised that working with young people and helping them develop skills truly inspired me.",
           name: "Chris Wallis",
-          job_title: "Science Teacher",
+          job_title: "Science teacher",
           background: "white",
           links: {
-            "Ready Chris' story" => "/",
+            "Read how Chris brings his love of physics to the classroom" => "/blog/product-engineer-turned-science-teacher",
           }
         ) %>
       <% end %>
@@ -23,18 +23,18 @@
 <section class="container">
   <article class="markdown fullwidth">
     <%= render(Content::QuoteSectionComponent.new(title: "A job like no other", image: "media/images/content/blog/fellowship.jpg", reverse: true)) do |section| %>
-      <p>There's more to teaching than you might think.</p>
+      <p>Teaching is a job full of challenges, variety and discovery.</p>
 
-      <p>It's a career full of challenges, variety and discover, where you'll make lifelong friends and never stop learning.</p>
+      <p>Every day you'll be working with lots of young people with a range of needs. You'll need to be able to think on your feet, find creative solutions to problems and use all the skills you'll develop in [teacher training](/train-to-be-a-teacher/initial-teacher-training).</p>
 
       <% section.with_quote(
         text: "The classroom changes by the hour and working with different age ranges and abilities means you have to keep a fresh outlook.",
-        name: "Chris Wallis",
-        job_title: "Science Teacher",
+        name: "Gavin McIntyre",
+        job_title: "Assistant headteacher",
         background: "white",
         links: {
-          "Ready Gavin's story" => "/",
-          "Find out what a day in the life of a teacher could look like" => "/",
+          "See how no two days are the same for Gavin" => "/blog/no-two-days-are-the-same",
+          "Find out what your day as a teacher could look like" => "/a-day-in-the-life-of-a-teacher",
         }
       ) %>
     <% end %>
@@ -45,19 +45,19 @@
   <section class="container">
     <article class="markdown fullwidth">
       <%= render(Content::QuoteSectionComponent.new(title: "Career development", image: "media/images/content/blog/applying-for-teacher.jpg")) do |section| %>
-        <p>Teaching is a career with lots of options and opportunities.</p>
+        <p>There are various development and career paths open to teachers. Some stay focussed on their subject, while others include pastoral or leadership responsibilities. You'll have the chance to shape a role that suits your skills, situation and ambition.</p>
 
-        <p>There are clear leadership and development paths, giving you the chance to shape a role that suits your skills, situation and ambition.</p>
+        <p>National pay scales show how much teachers are paid. You can see what you'd be likely to earn in your first job and how it could increase over time.</p>
 
       <p><%= link_to("Teacher salaries and benefits", page_path(page: "salaries-and-benefits"), class: "button") %></p>
 
         <% section.with_quote(
           text: "As I became more experienced I realised that I wanted to continue to progress in leadership so that I could affect decisions at a higher level.",
           name: "Ben Breen",
-          job_title: "Science and Maths Teacher",
+          job_title: "Science and maths teacher",
           background: "white",
           links: {
-            "Ben Breen, Science and Maths Teacher" => "/",
+            "Read about Ben's path to head of department" => "/blog/from-teaching-internship-to-assistant-head-of-maths",
           }
         ) %>
       <% end %>
