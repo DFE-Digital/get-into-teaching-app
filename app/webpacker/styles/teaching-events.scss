@@ -538,17 +538,6 @@ $icon-size: 3rem;
     }
   }
 
-  &__message {
-    background: $purple;
-    color: $white;
-    padding: .2em 1em;
-    margin-bottom: 1em;
-
-    p {
-      @include reset;
-    }
-  }
-
   &__venue-information {
     .embedded-map {
       width: 80%;

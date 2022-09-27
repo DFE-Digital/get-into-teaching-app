@@ -1,9 +1,7 @@
 <h2>Event information</h2>
 
 <% if @event.message %>
-  <div class="teaching-event__message">
-    <%= tag.p(@event.message) %>
-  </div>
+  <%= render Content::InsetTextComponent.new(text: @event.message) %>
 <% end %>
 
 <%= tag.div(formatted_event_description(@event.description)) %>
