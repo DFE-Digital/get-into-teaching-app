@@ -14,4 +14,8 @@ keywords:
 content:
   - "content/subjects/maths/header"
   - "content/subjects/maths/article"
+inset_text:
+  new-bursary-amounts:
+    text: |-
+      The following amounts are for teacher training courses starting in 2022. Financial support for courses starting in 2023 will be announced by the end of the year.
 ---

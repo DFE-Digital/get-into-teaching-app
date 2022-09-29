@@ -28,11 +28,17 @@ keywords:
     - RAF
     - Navy
     - Military
+inset_text:
+  new-bursary-amounts:
+    text: |-
+      The following amounts are for teacher training courses starting in 2022. Financial support for courses starting in 2023 will be announced by the end of the year.
 ---
 
 ## Postgraduate bursaries and scholarships
 
 Postgraduate teaching bursaries and scholarships are only available for the subjects listed below. You cannot receive both a teaching bursary and a scholarship.
+
+$new-bursary-amounts$
 
 | Subject                                          | Bursary  | Scholarship      |
 | -------------                                    | -------: | ---------------: |
