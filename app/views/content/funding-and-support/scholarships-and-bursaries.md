@@ -36,9 +36,9 @@ inset_text:
 
 ## Postgraduate bursaries and scholarships
 
-Postgraduate teaching bursaries and scholarships are only available for the subjects listed below. You cannot receive both a teaching bursary and a scholarship.
-
 $new-bursary-amounts$
+
+Postgraduate teaching bursaries and scholarships are only available for the subjects listed below. You cannot receive both a teaching bursary and a scholarship.
 
 | Subject                                          | Bursary  | Scholarship      |
 | -------------                                    | -------: | ---------------: |
