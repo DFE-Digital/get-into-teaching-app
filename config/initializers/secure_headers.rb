@@ -51,6 +51,13 @@ SecureHeaders::Configuration.default do |config|
   data                 = ["data:"]
   blob                 = ["blob:"]
 
+  # We're not sure why yet but the asset host needs to be
+  # explicitly whitelisted in the media_src directive or the CSP
+  #  blocks videos from loading. We don't appear to have this issue
+  # with the img_src, oddly.
+  assets = []
+  assets << ENV["APP_ASSETS_URL"] if ENV["APP_ASSETS_URL"].present?
+
   config.csp = {
     block_all_mixed_content: true,
     upgrade_insecure_requests: !Rails.env.development?, # see https://www.w3.org/TR/upgrade-insecure-requests/
@@ -66,7 +73,7 @@ SecureHeaders::Configuration.default do |config|
     frame_ancestors: ["'self'"],
     img_src: ["'self'"].concat(govuk, pinterest, facebook, youtube, twitter, google_supported, google_adservice, google_apis, google_analytics, google_doubleclick, data, lid_pixels, optimize, gtm_server, reddit, %w[cx.atdmt.com linkbam.uk]),
     manifest_src: ["'self'"],
-    media_src: ["'self'"].concat(zendesk),
+    media_src: ["'self'"].concat(zendesk).concat(assets),
     script_src: ["'self'"].concat(quoted_unsafe_inline, quoted_unsafe_eval, google_analytics, google_supported, google_apis, lid_pixels, govuk, facebook, jquery, pinterest, hotjar, scribble, twitter, snapchat, youtube, zendesk, optimize, reddit),
     style_src: ["'self'"].concat(quoted_unsafe_inline, govuk, google_apis, google_supported, optimize),
     worker_src: ["'self'"].concat(blob),
