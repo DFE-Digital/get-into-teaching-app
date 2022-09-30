@@ -249,11 +249,6 @@ provider_groups:
       name: Gill Makin
       telephone: 0151 443 2663
       email: merseyboroughsitt@knowsley.gov.uk
-    - header: North Manchester ITT Partnership
-      link: https://www.teachnorthmanchester.com/assessment-only
-      name: Carrie Carvell
-      telephone: 0161 202 0161
-      email: teachertraining@mca.manchester.sch.uk
     - header: Star Teachers SCITT
       link: https://www.starinstitute.org.uk/
       name: Mehroonnisha Mulla
