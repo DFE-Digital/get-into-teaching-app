@@ -11,7 +11,11 @@
     <%= render HeaderComponent.new %>
 
     <main role="main" id="main-content" class="main-body registration-with-image-above" role="main">
-      <%= image_pack_tag("content/event-signup/birmingham-event-1-wide.jpg", alt: "A busy train to teach event with banners and attendees chatting with advisers") %>
+      <% if @event.is_online %>
+        <%= render Content::ImageComponent.new(path: "media/images/content/event-signup/event-regional-online.jpg") %>
+      <% else %>
+        <%= render Content::ImageComponent.new(path: "media/images/content/event-signup/event-regional.jpg") %>
+      <% end %>
 
       <div class="event-info">
         <%= render Events::DesktopSignupInfo.new(@event) %>
