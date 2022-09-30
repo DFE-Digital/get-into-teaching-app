@@ -161,9 +161,9 @@ Unless you are planning to teach languages or physics, any financial support is 
 
 If you apply to train to teach physics or languages in the academic year 2023 to 2024, you may be eligible for a bursary or scholarship from the UK government – even if you are not eligible for other types of financial support due to your immigration status. You cannot be awarded both a bursary and a scholarship.
 
-##### Bursaries for physics and languages teacher trainees
+#### Bursaries for physics and languages teacher trainees
 
-A bursary is a cash sum from the UK government to help with your living expenses while you train to teach. You will not have to pay this money back. You do not need to apply for a bursary –  it will be automatically awarded to you through your training provider if you are eligible.
+A bursary is a cash sum from the UK government to help with your living expenses while you train to teach. You will not have to pay this money back. You do not need to apply for a bursary –  it will automatically be awarded to you through your training provider if you are eligible.
 
 Physics bursary: £27,000
 
@@ -183,9 +183,9 @@ The languages bursary covers all languages offered by accredited teacher trainin
 
 [Find accredited English teacher training providers](https://www.gov.uk/find-postgraduate-teacher-training-courses) offering languages and physics teacher training courses.
 
-##### Scholarships for physics, French, German and Spanish teacher trainees
+#### Scholarships for physics, French, German and Spanish teacher trainees
 
-A scholarship is a cash sum given by the UK government and awarded through the relevant professional body. To get a scholarship, you’ll need to be a high-calibre student and pass a tough selection process. 
+A scholarship is a cash sum from the UK government. To get a scholarship, you’ll need to be a high-calibre student and pass a tough selection process, run by the professional body for your subject. 
 
 If you’re successful, your teacher training provider will pay the scholarship money directly into your bank account over a period of 10 months. You will not have to pay this money back.
 
