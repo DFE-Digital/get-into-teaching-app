@@ -16,6 +16,7 @@ describe ImageSizes do
 
     before do
       described_class.class_variable_set(:@@cache, {})
+      allow(ENV).to receive(:[]).and_call_original
       allow(ENV).to receive(:[]).with("APP_ASSETS_URL").and_return(asset_host)
       allow(ENV).to receive(:[]).with("FAST_IMAGE_TIMEOUT").and_return("0.25")
       allow(ENV).to receive(:[]).with("SIZE_IMAGES").and_return("1")
@@ -89,6 +90,21 @@ describe ImageSizes do
         is_expected.to include(body)
         expect(FastImage).not_to have_received(:size)
       end
+    end
+
+    describe "#warm_cache" do
+      before do
+        allow(FastImage).to receive(:size).and_call_original
+
+        described_class.warm_cache
+      end
+
+      subject(:cache) { described_class.cache }
+
+      it { is_expected.not_to be_empty }
+      it { expect(cache.keys).to all(start_with("/images/")) }
+      it { expect(cache.values).to include(be_a(Array)) }
+      it { expect(cache.values).to all(be_a(Array).or(eq(nil))) }
     end
   end
 end

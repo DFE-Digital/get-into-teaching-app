@@ -1,6 +1,8 @@
 # ImageSizes will automatically add width/height attributes to img
 # elements in an effort to combat Cumulative Layout Shift (CLS).
 class ImageSizes
+  IMAGES_GLOB = "app/webpacker/images/**/*.*".freeze
+
   @@cache = {}
 
   def initialize(page)
@@ -25,11 +27,19 @@ class ImageSizes
     end
 
     def cache_image_size(src)
-      @@cache[src] ||= FastImage.size(src, raise_on_failure: false, timeout: timeout)
+      # As src may be the compiled asset path or the local file
+      # path. We need to normalise it to a common hash key (the path
+      # after /images/ remains consistent for both use cases).
+      key = src[src.index("/images/")..]
+      @@cache[key] ||= FastImage.size(src, raise_on_failure: false, timeout: timeout)
     end
 
     def timeout
       ENV["FAST_IMAGE_TIMEOUT"].to_f
+    end
+
+    def warm_cache
+      Dir.glob(IMAGES_GLOB).each(&method(:cache_image_size))
     end
   end
 
