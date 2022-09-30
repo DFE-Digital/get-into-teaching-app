@@ -166,12 +166,15 @@ If you apply to train to teach physics or languages in the academic year 2023 to
 A bursary is a cash sum from the UK government to help with your living expenses while you train to teach. You will not have to pay this money back. You do not need to apply for a bursary –  it will be automatically awarded to you through your training provider if you are eligible.
 
 Physics bursary: £27,000
+
 Languages bursary: £25,000
 
 To be eligible for a bursary, you’ll need a place on a course with an accredited teacher training provider training to teach languages or physics, and one of the following:
 
 • a bachelor’s degree class 2:2 (honours) or higher
+
 • a master’s degree
+
 • a PhD
 
 You’ll also need to meet the bursary scheme’s individual terms and conditions – contact your chosen teacher training provider for more information.
@@ -187,22 +190,15 @@ A scholarship is a cash sum given by the UK government and awarded through the r
 If you’re successful, your teacher training provider will pay the scholarship money directly into your bank account over a period of 10 months. You will not have to pay this money back.
 
 Physics scholarship: £29,000
+
 French, German or Spanish scholarship: £27,000
-
-Scholarships also come with the following benefits:
-
-• membership of the professional body awarding the scholarship
-• access to subject specialist events, webinars and workshops
-• subject specialist mentors and coaches
-• classroom resources
-• continuing professional development and networking events during your teacher training
-• alumni events and community
-
 
 To apply for a scholarship, you’ll need a place on a course with an accredited teacher training provider training to teach French, German, Spanish or physics, and one of the following:
 
 • a bachelor’s degree class 2:1 (honours) or higher
+
 • a master’s degree
+
 • a PhD
 
 In exceptional circumstances, you may be offered a scholarship with a bachelor’s degree class 2:2, if you have significant relevant experience.
