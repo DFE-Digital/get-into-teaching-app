@@ -159,7 +159,7 @@ describe Internal::EventsController, type: :request do
         it "shows pending events" do
           assert_response :success
           expect(response.body).to include("This is a pending event")
-          expect(response.body).to match(%r{<h1.*>Pending provider event</h1>})
+          expect(response.body).to match(%r{<h1.*><span>Pending provider event</span></h1>})
         end
       end
 

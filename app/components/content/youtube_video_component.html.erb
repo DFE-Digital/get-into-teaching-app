@@ -1,8 +1,4 @@
-<%= tag.iframe(
-  title: title,
-  loading: "lazy",
-  src: src,
-  frameborder: 0,
-  allow: "autoplay; encrypted-media",
-  allowfullscreen: true
-) %>
+<div class="youtube-video" data-controller="youtube-video">
+  <%= preview %>
+  <%= video %>
+</div>

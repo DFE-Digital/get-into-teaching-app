@@ -144,6 +144,10 @@
   @include highlight-text($yellow-dark, $black);
 }
 
+.heading--highlight-white {
+  @include highlight-text($white, $black);
+}
+
 .heading--highlight-pink {
   @include highlight-text($pink, $black);
 }

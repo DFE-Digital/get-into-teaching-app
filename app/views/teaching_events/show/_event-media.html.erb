@@ -1,0 +1,14 @@
+<% image_args = @event.image %>
+
+<%# keep an empty image div here when there's no image args to keep grid positions %>
+<div class="media">
+  <% if @event.video_id %>
+    <%= render Content::YoutubeVideoComponent.new(
+      id: @event.video_id,
+      title: "Get Into Teaching Events: Take your next step towards teaching",
+      preview_image: image_args&.dig(:path),
+    ) %>
+  <% elsif image_args %>
+    <%= image_pack_tag(image_args[:path], alt: image_args[:alt]) %>
+  <% end %>
+</div>

@@ -412,7 +412,7 @@ $icon-size: 3rem;
         grid-area: 3 / 2 / 4 / 3;
       }
 
-      .image {
+      .media {
         grid-area: 2 / 3 / 4 / 5;
       }
 
@@ -473,19 +473,22 @@ $icon-size: 3rem;
       }
     }
 
-    .image {
+    .media {
       padding-bottom: 1rem;
-      img {
+      > * img {
         width: 100%;
         height: auto;
       }
 
       @include mq($from: tablet) {
-        img {
+        > * {
           margin: 1em;
-          max-height: 14em;
-          object-position: center;
-          object-fit: cover;
+
+          img {
+            max-height: 14em;
+            object-position: center;
+            object-fit: cover;
+          }
         }
         padding-bottom: 0;
       }
@@ -569,10 +572,6 @@ $icon-size: 3rem;
   &__scribble {
     margin: 4em 1em;
     flex-grow: 1;
-  }
-
-  &__video {
-    margin-block: 2em;
   }
 
   &__provider-information a {
@@ -706,11 +705,6 @@ $icon-size: 3rem;
     .button {
       margin-block: 2em;
     }
-  }
-
-  .youtube-video-container {
-    max-width: 40em;
-    margin-block: 2em;
   }
 }
 
