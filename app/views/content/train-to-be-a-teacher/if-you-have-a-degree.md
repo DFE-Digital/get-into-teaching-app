@@ -22,7 +22,7 @@ keywords:
   - qts
 ---
 
-You need a bachelor's degree (honours) to teach in primary, secondary and special schools in England. This doesn't have to be a bachelor's degree in teaching.
+You need a bachelor's degree (honours) to teach in primary, secondary and special schools in England. This does not have to be a bachelor's degree in teaching.
 
 You also need to gain qualified teacher status (QTS) to teach in most schools which you get through teacher training.
 
@@ -45,11 +45,12 @@ Even in schools where you do not need QTS (for example, academies), most teacher
 
 Getting QTS without PGCE may mean that:
 
-* your course is shorter
 * your course fees are lower
 * you submit fewer assignments
 
 [Find out more about QTS](/what-is-qts).
+
+Talk to your teacher training provider to find out more about the courses available.
 
 ### PGCE
 
@@ -86,7 +87,7 @@ Your teacher training course might be provided by a university, school, college 
 
 The content of SCITT and School Direct programmes are broadly the same.
 
-Some courses have different course structures and have placements in different kinds of schools, such as special schools. Talk to your course provider to find out what they can offer you.
+Some courses have different course structures and have placements in different kinds of schools, such as special schools. Talk to your teacher training provider to find out what they can offer you.
 
 [Find teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/).
 
