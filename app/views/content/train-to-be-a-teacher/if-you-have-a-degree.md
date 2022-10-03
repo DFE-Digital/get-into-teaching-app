@@ -39,7 +39,7 @@ To be a qualified teacher, you can do teacher training to get:
 
 ### QTS
 
-You need QTS to teach in most primary, secondary and special schools in England.
+You need QTS to teach in maintained primary, secondary and special schools in England (these are schools which are funded by local authorities).
 
 Even in schools where you do not need QTS (for example, academies), most teachers still have it.
 
@@ -56,7 +56,7 @@ Talk to your teacher training provider to find out more about the courses availa
 
 You can also do a teacher training course to just get a postgraduate certificate in education (PGCE).
 
-If you just get a PGCE without QTS, you will not be able to teach in most primary, secondary and special schools.
+If you just get a PGCE without QTS, you may not be fully qualified to teach in your chosen school.
 
 Getting a PGCE can help you:
 
