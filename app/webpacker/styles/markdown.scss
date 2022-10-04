@@ -36,8 +36,7 @@
   .content-alert,
   .event-type-descriptions,
   .types-of-event,
-  .content-cta,
-  .featured-content {
+  .content-cta {
     @include overhang;
   }
 
@@ -45,8 +44,7 @@
     margin-left: 0;
   }
 
-  .call-to-action__action,
-  .featured-content__item {
+  .call-to-action__action {
     // this is added by Kramdown when using the ToC (table of contents) plugin
     #markdown-toc {
       margin-bottom: 3em;
