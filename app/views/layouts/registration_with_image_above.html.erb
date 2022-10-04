@@ -18,8 +18,8 @@
       <% end %>
 
       <div class="event-info">
-        <%= render Events::DesktopSignupInfo.new(@event) %>
-        <%= render Events::MobileSignupInfo.new(@event) %>
+        <%= render Events::DesktopSignupInfoComponent.new(@event) %>
+        <%= render Events::MobileSignupInfoComponent.new(@event) %>
       </div>
 
       <section class="feature registration">

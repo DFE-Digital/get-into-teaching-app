@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Events::MobileSignupInfo, type: "component" do
+describe Events::MobileSignupInfoComponent, type: "component" do
   let(:event) { build(:event_api) }
   let(:subject) { described_class.new(event) }
 

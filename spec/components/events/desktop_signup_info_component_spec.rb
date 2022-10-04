@@ -1,6 +1,6 @@
 require "rails_helper"
 
-describe Events::DesktopSignupInfo, type: "component" do
+describe Events::DesktopSignupInfoComponent, type: "component" do
   let(:event) { build(:event_api) }
   let(:subject) { described_class.new(event) }
 
