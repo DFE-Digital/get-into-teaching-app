@@ -5,9 +5,6 @@ module Content
       "simple" => CallsToAction::SimpleComponent,
       "chat" => ChatComponent,
       "chat_online" => CallsToAction::ChatOnlineComponent,
-      "next_steps" => CallsToAction::NextStepsComponent,
-      "multiple_buttons" => CallsToAction::MultipleButtonsComponent,
-      "ect" => CallsToAction::EctComponent,
       "feature_table" => Content::FeatureTableComponent,
     }.freeze
 
