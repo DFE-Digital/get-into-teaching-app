@@ -39,7 +39,7 @@ describe EventStepsController, type: :request do
     it { is_expected.to have_http_status :success }
     it { is_expected.not_to be_indexed }
 
-    context "when the event is closed" do
+    context "when the event is closed (not accepting registrations)" do
       let(:event) { build :event_api, :closed, readable_id: readable_event_id }
 
       it { is_expected.to redirect_to(event_path(id: event.readable_id)) }
