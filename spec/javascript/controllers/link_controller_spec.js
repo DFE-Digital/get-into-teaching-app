@@ -7,7 +7,7 @@ describe('LinkController', () => {
       document.body.innerHTML = `
       <div data-controller="link" data-link-target="content">
         <a href="path/to#position">Jump Link</a>
-        <div id="level-1" class="video-overlay" data-video-target="player" data-action="click->video#close">
+        <div id="level-1">
           <a href="#level-3" />
           <div id="level-2">
             <a href="#level-1" />

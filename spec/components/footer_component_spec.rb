@@ -25,10 +25,6 @@ describe FooterComponent, type: "component" do
     expect(page).to have_css(mailing_list_selector)
   end
 
-  specify "renders the video player overlay" do
-    expect(page).to have_css(".video-overlay")
-  end
-
   specify "renders the cookie acceptance popup" do
     expect(page).to have_css(".cookie-acceptance")
   end
