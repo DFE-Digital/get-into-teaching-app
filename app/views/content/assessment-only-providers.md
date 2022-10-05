@@ -34,9 +34,9 @@ provider_groups:
       email: Fran@etpscitt.co.uk
     - header: Mid Essex Initial Teacher Training
       link: https://midessexteachertraining.com/
-      name: Keith Ferguson
+      name: Steve Fox
       telephone: 01376 556398
-      email: ao@midessexteachertraining.com
+      email: admin@midessexteachertraining.com
     - header: Newlands Spring Primary School Academy Trust (Essex Primary SCITT)
       link: https://www.essexprimaryscitt.co.uk/
       name: Fiona Willett
