@@ -1,13 +1,17 @@
 require "rails_helper"
 
 describe ApplicationHelper do
-  describe "#analytics_body_tag" do
-    subject { analytics_body_tag(data: { timefmt: "24", controller: "something" }, class: "homepage") { tag.hr } }
+  describe "#body_tag" do
+    before { allow(ENV).to receive(:[]).with("APP_ASSETS_URL").and_return("asset-url") }
 
-    it { is_expected.not_to have_css "body[data-controller=gtm]" }
-    it { is_expected.to have_css "body[data-controller='something gtm-consent']" }
+    subject { body_tag(data: { timefmt: "24", controller: "something" }, class: "homepage") { tag.hr } }
+
+    it { is_expected.to have_css "body[data-controller='something link table']" }
     it { is_expected.to have_css "body[data-timefmt=24]" }
-    it { is_expected.to have_css "body.homepage" }
+    it { is_expected.to have_css "body[data-link-target=content]" }
+    it { is_expected.to have_css "body[data-link-asset-url-value=asset-url]" }
+    it { is_expected.to have_css "body.homepage.govuk-template__body.govuk-body" }
+    it { is_expected.to have_css "body#body" }
     it { is_expected.to have_css "body hr" }
   end
 

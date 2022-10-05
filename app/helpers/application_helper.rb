@@ -1,8 +1,17 @@
 module ApplicationHelper
-  def analytics_body_tag(attributes = {}, &block)
+  def body_tag(attributes = {}, &block)
     attributes[:data] ||= {}
+
     attributes[:data][:controller] ||= ""
-    attributes[:data][:controller] << " gtm-consent"
+    (attributes[:data][:controller] << " link table").strip!
+
+    attributes[:data]["link-target"] = "content"
+    attributes[:data]["link-asset-url-value"] = ENV["APP_ASSETS_URL"]
+
+    attributes[:class] ||= ""
+    (attributes[:class] <<= " govuk-template__body govuk-body").strip!
+
+    attributes[:id] = "body"
 
     tag.body(**attributes, &block)
   end

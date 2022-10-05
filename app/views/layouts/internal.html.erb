@@ -7,7 +7,7 @@
 <% end %>
 
 <%= render "sections/head" %>
-<%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "internal-events", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
+<%= body_tag data: { controller: "internal-events" } do %>
   <div id="skiplink-container">
     <div>
       <a href="#main-content" class="skiplink">Skip to main content</a>
