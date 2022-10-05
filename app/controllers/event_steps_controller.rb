@@ -23,10 +23,10 @@ protected
 private
 
   def restrict_sign_ups
-    event_is_viewable = EventStatus.new(@event).viewable?
+    event_is_open_for_registration = EventStatus.new(@event).accepts_online_registration?
     candidate_is_walk_in = wizard_store[:is_walk_in]
 
-    unless event_is_viewable || candidate_is_walk_in
+    unless event_is_open_for_registration || candidate_is_walk_in
       # Redirecting to the main event page will either render
       # the event in a closed state or return a 410 (Gone).
       redirect_to event_path(id: @event.readable_id)

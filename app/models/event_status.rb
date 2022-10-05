@@ -46,13 +46,13 @@ class EventStatus
   end
 
   def viewable?
-    !pending? && future_dated? && open?
+    future_dated? && (open? || closed?)
   end
 
   def accepts_online_registration?
     type_ids = [EventType.get_into_teaching_event_id]
 
-    event.type_id.in?(type_ids) && future_dated? && open?
+    event.type_id.in?(type_ids) && future_dated? && open? && event.web_feed_id.present?
   end
 
 private

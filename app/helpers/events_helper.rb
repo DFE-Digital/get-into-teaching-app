@@ -26,7 +26,7 @@ module EventsHelper
   end
 
   def can_sign_up_online?(event)
-    event.web_feed_id && EventStatus.new(event).open? && !EventType.new(event).provider_event?
+    EventStatus.new(event).accepts_online_registration?
   end
 
   def formatted_event_description(description)

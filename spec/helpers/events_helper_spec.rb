@@ -79,28 +79,36 @@ describe EventsHelper, type: "helper" do
   end
 
   describe "#can_sign_up_online?" do
-    it "returns true for events with a web_feed_id that are not closed" do
-      event = GetIntoTeachingApiClient::TeachingEvent.new(
-        web_feed_id: "abc-123",
-        status_id: EventStatus.open_id,
-      )
-      expect(can_sign_up_online?(event)).to be_truthy
+    subject { can_sign_up_online?(event) }
+
+    context "when GIT (with web feed id), future-dated, open" do
+      let(:event) { build(:event_api, :get_into_teaching_event) }
+
+      it { is_expected.to be_truthy }
     end
 
-    it "returns false for events without a web_feed_id" do
-      event = GetIntoTeachingApiClient::TeachingEvent.new(
-        web_feed_id: nil,
-        status_id: EventStatus.open_id,
-      )
-      expect(can_sign_up_online?(event)).to be_falsy
+    context "when not GIT, future-dated, open" do
+      let(:event) { build(:event_api, :online_event) }
+
+      it { is_expected.to be_falsy }
     end
 
-    it "returns false for closed events" do
-      event = GetIntoTeachingApiClient::TeachingEvent.new(
-        web_feed_id: "abc-123",
-        status_id: EventStatus.closed_id,
-      )
-      expect(can_sign_up_online?(event)).to be_falsy
+    context "when GIT (with web feed id), past, open" do
+      let(:event) { build(:event_api, :get_into_teaching_event, :past) }
+
+      it { is_expected.to be_falsy }
+    end
+
+    context "when GIT (with web feed id), future-dated, closed" do
+      let(:event) { build(:event_api, :get_into_teaching_event, :closed) }
+
+      it { is_expected.to be_falsy }
+    end
+
+    context "when GIT (without web feed id), future-dated, open" do
+      let(:event) { build(:event_api, :get_into_teaching_event, web_feed_id: nil) }
+
+      it { is_expected.to be_falsy }
     end
   end
 
