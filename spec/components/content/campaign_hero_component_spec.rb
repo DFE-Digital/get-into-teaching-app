@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe Campaign::HeaderComponent, type: "component" do
+RSpec.describe Content::CampaignHeroComponent, type: "component" do
   subject! { Capybara.string(component) }
 
   let(:image_path) { "media/images/content/hero-images/0013.jpg" }
@@ -8,6 +8,7 @@ RSpec.describe Campaign::HeaderComponent, type: "component" do
   let(:colour) { nil }
   let(:component) { render_inline(described_class.new(title: title, colour: colour, image: image_path)) }
 
+  it { is_expected.to have_css(".campaign-hero") }
   it { is_expected.to have_css("header") }
   it { is_expected.to have_css("h1", text: "My page") }
   it { is_expected.to have_css(%(img)) }
