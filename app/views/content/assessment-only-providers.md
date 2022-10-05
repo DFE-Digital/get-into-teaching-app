@@ -78,7 +78,6 @@ provider_groups:
     - header: University of Hertfordshire
       link: https://www.herts.ac.uk/apply/schools-of-study/education/initial-teacher-training/assessment-only-route
       name: AO Administration Team
-      telephone: 01707 286300
       email: AOenquiries@herts.ac.uk
   East Midlands:
     providers:
@@ -359,9 +358,9 @@ provider_groups:
     providers:
     - header: Cornwall School Centred Initial Teacher Training (Cornwall SCITT)
       link: https://www.cornwallscitt.org/
-      name: Julie Bennett
-      telephone: '01872 267092'
-      email: juliebennett@truro-penwith.ac.uk
+      name: Lex Blake
+      telephone: '01872 305728'
+      email: scitt@truro-penwith.ac.uk
     - header: Mid Somerset Consortium for Teacher Training
       link: https://www.mscitt.org.uk/Routes/Assessment-only/
       name: Sarah Lewis
