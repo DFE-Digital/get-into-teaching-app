@@ -5,8 +5,6 @@
   <% end %>
   <%= render "sections/head" %>
   <%= body_tag do %>
-    <%= render(partial: "sections/gtm_fallback") %>
-
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
     <%= main_tag do %>

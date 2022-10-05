@@ -2,68 +2,66 @@
 <html lang="en" class="govuk-template">
     <%= render "sections/head" %>
     <%= body_tag do %>
-    <%= render(partial: "sections/gtm_fallback") %>
+      <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <%= render HeaderComponent.new(breadcrumbs: true) %>
+      <%= main_tag do %>
+        <%= render Content::HeroComponent.new(@front_matter) %>
 
-    <%= main_tag do %>
-      <%= render Content::HeroComponent.new(@front_matter) %>
+        <section class="main-section container">
+          <%= render(partial: "sections/content_errors") %>
 
-      <section class="main-section container">
-        <%= render(partial: "sections/content_errors") %>
-
-        <% if !@front_matter["image"] %>
-          <header>
-            <% if @front_matter["title_caption"].present? %>
-              <%= tag.span(@front_matter["title_caption"], class: "caption") %>
-            <% end %>
-
-            <%= tag.h1(@front_matter["title"]) %>
-          </header>
-        <% end %>
-
-        <%= tag.article(class: article_classes(@front_matter)) do %>
-
-          <%= yield %>
-
-          <% @front_matter.key?("steps") && @front_matter["steps"].tap do |steps_fm| %>
-
-            <ol class="steps">
-              <% steps_fm.each.with_index(1) do |(title, contents), i| %>
-                <%= tag.li(class: "step", id: "step-#{i}") do %>
-                  <header class="step__header">
-                    <div class="step__number">
-                      <%= i %>
-                    </div>
-                    <%= tag.h2(title, class: "heading-m") %>
-                  </header>
-
-                  <div class="step__content">
-                    <%= render(partial: contents["partial"]) %>
-                  </div>
-                <% end %>
+          <% if !@front_matter["image"] %>
+            <header>
+              <% if @front_matter["title_caption"].present? %>
+                <%= tag.span(@front_matter["title_caption"], class: "caption") %>
               <% end %>
-            </ol>
 
+              <%= tag.h1(@front_matter["title"]) %>
+            </header>
+          <% end %>
+
+          <%= tag.article(class: article_classes(@front_matter)) do %>
+
+            <%= yield %>
+
+            <% @front_matter.key?("steps") && @front_matter["steps"].tap do |steps_fm| %>
+
+              <ol class="steps">
+                <% steps_fm.each.with_index(1) do |(title, contents), i| %>
+                  <%= tag.li(class: "step", id: "step-#{i}") do %>
+                    <header class="step__header">
+                      <div class="step__number">
+                        <%= i %>
+                      </div>
+                      <%= tag.h2(title, class: "heading-m") %>
+                    </header>
+
+                    <div class="step__content">
+                      <%= render(partial: contents["partial"]) %>
+                    </div>
+                  <% end %>
+                <% end %>
+              </ol>
+
+            <% end %>
+          <% end %>
+        </section>
+
+        <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
+          <% promo.left_section(
+              heading: "Advice and support", classes: %w[ml-background]) do %>
+          <% end %>
+
+          <% promo.right_section(
+            heading: "Find out more about getting into teaching"
+          ) do %>
+              <p>Explore how you can get into teaching primary or secondary and find top tips on making a successful application.</p>
+
+              <%= link_to("Get tailored guidance in your inbox", "/mailinglist/signup/name", class: "button") %>
           <% end %>
         <% end %>
-      </section>
-
-      <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
-        <% promo.left_section(
-            heading: "Advice and support", classes: %w[ml-background]) do %>
-        <% end %>
-
-        <% promo.right_section(
-          heading: "Find out more about getting into teaching"
-        ) do %>
-            <p>Explore how you can get into teaching primary or secondary and find top tips on making a successful application.</p>
-
-            <%= link_to("Get tailored guidance in your inbox", "/mailinglist/signup/name", class: "button") %>
-        <% end %>
       <% end %>
-    <% end %>
 
-    <%= render FooterComponent.new %>
+      <%= render FooterComponent.new %>
     <% end %>
 </html>
