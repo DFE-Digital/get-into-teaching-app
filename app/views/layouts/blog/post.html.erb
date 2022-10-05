@@ -10,7 +10,7 @@
 
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main id="main-content" role="main">
+    <%= main_tag do %>
       <section class="container blog main-body">
         <%= render(partial: "sections/content_errors") %>
 
@@ -54,7 +54,7 @@
           <%= render(partial) %>
         <% end %>
       <% end %>
-    </main>
+    <% end %>
 
     <%= render FooterComponent.new %>
   <% end %>

@@ -10,11 +10,11 @@
 
     <%= render HeaderComponent.new %>
 
-    <main id="main-content" class="main-body" role="main">
+    <%= main_tag(class: "main-body") do %>
       <section class="feature registration container">
         <%= yield %>
       </section>
-    </main>
+    <% end %>
 
     <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
     <%= javascript_pack_tag 'govuk/frontend', 'data-turbolinks-track': 'reload', async: true %>

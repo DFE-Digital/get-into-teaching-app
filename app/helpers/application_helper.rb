@@ -16,6 +16,13 @@ module ApplicationHelper
     tag.body(**attributes, &block)
   end
 
+  def main_tag(attributes = {}, &block)
+    attributes[:id] = "main-content"
+    attributes[:role] = "main"
+
+    tag.main(**attributes, &block)
+  end
+
   def gtm_enabled?
     ENV["GTM_ID"].present?
   end

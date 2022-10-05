@@ -14,13 +14,13 @@
     </div>
   </div>
 
-  <main id="main-content" class="<%= class_names("internal", action_name ) %>" role="main">
+  <%= main_tag(class: class_names("internal", action_name )) do %>
     <section class="container internal-container">
       <article class="fullwidth">
         <%= yield %>
         <%= yield(:feature) %>
       </article>
     </section>
-  </main>
+  <% end %>
 <% end %>
 </html>

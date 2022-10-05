@@ -7,13 +7,13 @@
 
     <%= render HeaderComponent.new %>
 
-    <main class="welcome-guide main-body" id="main-content" role="main">
+    <%= main_tag(class: "main-body welcome-guide") do %>
       <%= yield %>
 
       <% @front_matter["content"]&.each do |partial| %>
         <%= render(partial) %>
       <% end %>
-    </main>
+    <% end %>
 
     <%= render FooterComponent.new(talk_to_us: true, mailing_list: false, feedback: false) %>
   <% end %>

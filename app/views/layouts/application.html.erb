@@ -6,7 +6,7 @@
 
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main id="main-content" role="main">
+    <%= main_tag do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
       <section class="container main-body">
@@ -19,7 +19,7 @@
           <%= yield :feature %>
         </section>
       </section>
-    </main>
+    <% end %>
 
     <%= render FooterComponent.new %>
   <% end %>

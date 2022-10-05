@@ -10,16 +10,18 @@
 
     <%= render HeaderComponent.new %>
 
-    <main id="main-content" class="main-body registration-with-side-images" role="main">
-      <section class="signup-container">
-        <%= image_pack_tag 'content/mailing-list-signup/left.jpg', class: 'left-img hide-on-mobile hide-on-tablet', alt: "" %>
-        <div class="signup-form">
-          <%= image_pack_tag 'content/mailing-list-signup/mobile.jpg', class: 'hide-on-desktop', alt: "" %>
-          <%= yield %>
-        </div>
-        <%= image_pack_tag 'content/mailing-list-signup/right.jpg', class: 'right-img hide-on-mobile hide-on-tablet', alt: "" %>
-      </section>
-    </main>
+    <%= main_tag do %>
+      <div class="main-body registration-with-side-images">
+        <section class="signup-container">
+          <%= image_pack_tag 'content/mailing-list-signup/left.jpg', class: 'left-img hide-on-mobile hide-on-tablet', alt: "" %>
+          <div class="signup-form">
+            <%= image_pack_tag 'content/mailing-list-signup/mobile.jpg', class: 'hide-on-desktop', alt: "" %>
+            <%= yield %>
+          </div>
+          <%= image_pack_tag 'content/mailing-list-signup/right.jpg', class: 'right-img hide-on-mobile hide-on-tablet', alt: "" %>
+        </section>
+      </div>
+    <% end %>
 
     <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
     <%= javascript_pack_tag 'govuk/frontend', 'data-turbolinks-track': 'reload', async: true %>

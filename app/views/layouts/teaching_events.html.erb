@@ -6,7 +6,7 @@
 
     <%= render HeaderComponent.new %>
 
-    <main id="main-content" role="main">
+    <%= main_tag do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
       <section class="container main-body <%= "container--no-bottom-margin" if @no_bottom_margin %>">
@@ -14,7 +14,7 @@
           <%= yield %>
         </article>
       </section>
-    </main>
+    <% end %>
 
     <%= render FooterComponent.new %>
   <% end %>

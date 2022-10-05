@@ -6,7 +6,7 @@
 
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main class="category" id="main-content" role="main">
+    <%= main_tag(class: "category") do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
       <section class="container category__cards main-body">
@@ -27,7 +27,7 @@
           <% end %>
         </section>
       <% end %>
-    </main>
+    <% end %>
 
     <% @front_matter["content"]&.each do |partial| %>
       <%= render(partial) %>
