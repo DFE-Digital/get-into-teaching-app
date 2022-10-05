@@ -2,7 +2,7 @@
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
   <%= body_tag do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
+    <%= render(partial: "sections/gtm_fallback") %>
     <%= render(partial: "sections/content_errors") %>
 
     <%= render HeaderComponent.new %>
