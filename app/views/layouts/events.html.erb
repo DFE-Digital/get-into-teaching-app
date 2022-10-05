@@ -12,7 +12,7 @@
     <%= main_tag do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
-      <section class="main-body">
+      <section class="main-section">
         <section class="container events">
           <article class="markdown<%= " fullwidth" if @before_search_fullwidth %> ">
             <%= yield :before_search %>

@@ -10,7 +10,7 @@
 
     <%= render HeaderComponent.new %>
 
-    <%= main_tag(class: "main-body registration-with-image-above") do %>
+    <%= main_tag(class: "main-section registration-with-image-above") do %>
       <% if @event.is_online %>
         <%= render Content::ImageComponent.new(path: "media/images/content/event-signup/event-regional-online.jpg") %>
       <% else %>

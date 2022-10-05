@@ -9,7 +9,7 @@
     <%= main_tag do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
-      <section class="main-body container">
+      <section class="main-section container">
         <%= render(partial: "sections/content_errors") %>
 
         <% if !@front_matter["image"] %>

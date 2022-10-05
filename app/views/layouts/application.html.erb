@@ -9,7 +9,7 @@
     <%= main_tag do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
-      <section class="container main-body">
+      <section class="container main-section">
         <%= render(partial: "sections/content_errors") %>
 
         <article class="markdown <%= " fullwidth" if @fullwidth %>">

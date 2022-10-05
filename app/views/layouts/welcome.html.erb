@@ -7,7 +7,7 @@
 
     <%= render HeaderComponent.new %>
 
-    <%= main_tag(class: "main-body welcome-guide") do %>
+    <%= main_tag(class: "main-section welcome-guide") do %>
       <%= yield %>
 
       <% @front_matter["content"]&.each do |partial| %>

@@ -9,7 +9,7 @@
     <%= main_tag(class: "category") do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
-      <section class="container category__cards main-body">
+      <section class="container category__cards main-section">
         <%= tag.nav(aria: { label: "#{@page.title} navigation" }, class: "category__nav-cards") do %>
           <ul>
             <%= render(Categories::CardComponent.with_collection(ungrouped_categories(@page.path))) %>
@@ -18,7 +18,7 @@
       </section>
 
       <% grouped_categories(@page.path).each do |title, pages| %>
-        <section class="container category__cards main-body">
+        <section class="container category__cards main-section">
           <%= tag.h2(title, class: "heading--box-blue") %>
           <%= tag.nav(aria: { label: "#{title} category" }, class: "category__nav-cards") do %>
             <ul>
