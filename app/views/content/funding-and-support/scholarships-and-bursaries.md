@@ -36,14 +36,15 @@ Postgraduate teaching bursaries and scholarships are only available for the subj
 
 | Subject                                          | Bursary  | Scholarship      |
 | -------------                                    | -------: | ---------------: |
-| **Biology**                                      | £10,000  |                  |
-| **Chemistry**                                    | £24,000  | £26,000          |
-| **Computing**                                    | £24,000  | £26,000          |
-| **Design and technology**                        | £15,000  |                  |
-| **Geography**                                    | £15,000  |                  |
-| **Languages**<br/> (including ancient languages) | £15,000  |                  |
-| **Maths**                                        | £24,000  | £26,000          |
-| **Physics**                                      | £24,000  | £26,000          |
+| **Biology**                                      | £20,000  |                  |
+| **Chemistry**                                    | £27,000  | £29,000          |
+| **Computing**                                    | £27,000  | £29,000          |
+| **Design and technology**                        | £20,000  |                  |
+| **English**                                      | £15,000  |                  |
+| **Geography**                                    | £25,000  |                  |
+| **Languages**<br/> (including ancient languages) | £25,000  | £27,000          |
+| **Maths**                                        | £27,000  | £29,000          |
+| **Physics**                                      | £27,000  | £29,000          |
 
  To be eligible for a bursary, you’ll need at least one of the following:
 
@@ -55,12 +56,15 @@ You’ll also need to meet the bursary scheme’s individual terms and condition
 
 [Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023).
 
+You must be training to teach French, German or Spanish to be eligible for a languages scholarship.
+
 To find out if you’re eligible for a scholarship and to apply, you can visit the relevant scholarship body:
 
 - [the Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
 - [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
 - [the Institute of Mathematics and its Applications](http://teachingmathsscholars.org/about) (maths)
 - [the Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
+- [British Council](https://www.britishcouncil.org/) (languages -- French, German and Spanish only)
 
 ## Undergraduate bursaries
 
