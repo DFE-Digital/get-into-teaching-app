@@ -42,8 +42,8 @@ Postgraduate teaching bursaries and scholarships are only available for the subj
 | **Design and technology**                              | £20,000  |                  |
 | **English**                                            | £15,000  |                  |
 | **Geography**                                          | £25,000  |                  |
-| **All languages**<br/> (including ancient languages)   | £25,000  |                  |
 | **Languages**<br/> (French, German and Spanish only)   | £25,000  | £27,000          |
+| **Languages**<br/> (other languages, including ancient languages)       | £25,000  |                  |
 | **Maths**                                              | £27,000  | £29,000          |
 | **Physics**                                            | £27,000  | £29,000          |
 
@@ -61,9 +61,9 @@ To find out if you’re eligible for a scholarship and to apply, you can visit t
 
 - [the Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
 - [BCS The Chartered Institute for IT](https://www.bcs.org/get-qualified/certification-and-scholarships-for-teachers/bcs-computer-teacher-scholarships/) (computing)
+- [British Council](https://www.britishcouncil.org/) (languages -- French, German and Spanish only)
 - [the Institute of Mathematics and its Applications](http://teachingmathsscholars.org/about) (maths)
 - [the Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
-- [British Council](https://www.britishcouncil.org/) (languages -- French, German and Spanish only)
 
 ## Undergraduate bursaries
 
