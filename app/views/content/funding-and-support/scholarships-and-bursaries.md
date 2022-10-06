@@ -43,7 +43,7 @@ Postgraduate teaching bursaries and scholarships are only available for the subj
 | **English**                                            | £15,000  |                  |
 | **Geography**                                          | £25,000  |                  |
 | **Languages**<br/> (French, German and Spanish only)   | £25,000  | £27,000          |
-| **Languages**<br/> (other languages, including ancient languages)       | £25,000  |                  |
+| **Languages**<br/> (all other languages, including ancient languages)       | £25,000  |                  |
 | **Maths**                                              | £27,000  | £29,000          |
 | **Physics**                                            | £27,000  | £29,000          |
 

@@ -155,7 +155,15 @@ Alternatively, you can apply for a salaried teacher training course, and earn mo
 
 #### Financial support
 
-Any financial support, for example a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250) is dependent on your immigration status. Most international candidates will not be eligible for financial support.
+Unless you're planning to teach languages or physics, any financial support is dependent on your immigration status. Most non-UK candidates will not be eligible for financial support.
+
+#### If you train to teach physics or languages
+
+If you apply to train to teach physics or languages in the academic year 2023/24, you may be eligible for a bursary or scholarship from the UK government.
+
+You do not need to be eligible for other types of financial support to receive a bursary or scholarship to train to teach physics or languages.
+
+[Find out how much you could be eligible for](/funding-and-support/scholarships-and-bursaries).
 
 <div class="inset">
   <h4>Already living in the UK?</h4>

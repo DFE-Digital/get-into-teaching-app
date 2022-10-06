@@ -104,7 +104,7 @@ en:
         group: "Secondary"
         sub_head: "Classics - Secondary"
         funding: |-
-          Bursaries of £15,000 may be available for trainee classics teachers when more than 50% of the course content covers an ancient language.
+          Bursaries of £25,000 may be available for trainee classics teachers when more than 50% of the course content covers an ancient language.
 
           Your course provider will confirm if this applies.
       communication_and_media_studies:
@@ -166,11 +166,14 @@ en:
         name: "Languages (including ancient languages)"
         group: "Secondary"
         sub_head: "Languages (including ancient languages)"
-        funding: "Scholarships of £27,000 are available for trainee French, German, and Spanish language teachers. Bursaries of £25,000 are available for all trainee language teachers."
+        funding: |-
+          Scholarships of £27,000 are available for trainee French, German, and Spanish language teachers.
+
+          Bursaries of £25,000 are available for all trainee language teachers, including ancient languages.
       mathematics:
-        name: "Mathematics"
+        name: "Maths"
         group: "Secondary"
-        sub_head: "Mathematics - Secondary"
+        sub_head: "Maths - Secondary"
         funding: "Scholarships of £29,000 and bursaries of £27,000 are available for trainee maths teachers."
         next_steps: |-
           If you have a passion for maths, find out more about <a href="/subjects/maths">becoming a maths teacher</a>.
