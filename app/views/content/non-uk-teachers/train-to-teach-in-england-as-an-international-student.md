@@ -183,7 +183,7 @@ The languages bursary covers all languages offered by accredited teacher trainin
 
 [Find accredited English teacher training providers](https://www.gov.uk/find-postgraduate-teacher-training-courses) offering languages and physics teacher training courses.
 
-#### Scholarships for physics, French, German and Spanish teacher trainees
+#### Scholarships for physics, French, German and Spanish teacher trainees
 
 A scholarship is a cash sum from the UK government. To get a scholarship, you’ll need to be a high-calibre student and pass a tough selection process, run by the professional body for your subject. 
 
