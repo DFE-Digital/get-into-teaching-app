@@ -34,17 +34,18 @@ keywords:
 
 Postgraduate teaching bursaries and scholarships are only available for the subjects listed below. You cannot receive both a teaching bursary and a scholarship.
 
-| Subject                                          | Bursary  | Scholarship      |
-| -------------                                    | -------: | ---------------: |
-| **Biology**                                      | £20,000  |                  |
-| **Chemistry**                                    | £27,000  | £29,000          |
-| **Computing**                                    | £27,000  | £29,000          |
-| **Design and technology**                        | £20,000  |                  |
-| **English**                                      | £15,000  |                  |
-| **Geography**                                    | £25,000  |                  |
-| **Languages**<br/> (including ancient languages) | £25,000  | £27,000          |
-| **Maths**                                        | £27,000  | £29,000          |
-| **Physics**                                      | £27,000  | £29,000          |
+| Subject                                                | Bursary  | Scholarship      |
+| -------------                                          | -------: | ---------------: |
+| **Biology**                                            | £20,000  |                  |
+| **Chemistry**                                          | £27,000  | £29,000          |
+| **Computing**                                          | £27,000  | £29,000          |
+| **Design and technology**                              | £20,000  |                  |
+| **English**                                            | £15,000  |                  |
+| **Geography**                                          | £25,000  |                  |
+| **All languages**<br/> (including ancient languages)   | £25,000  |                  |
+| **Languages**<br/> (French, German and Spanish only)   | £25,000  | £27,000          |
+| **Maths**                                              | £27,000  | £29,000          |
+| **Physics**                                            | £27,000  | £29,000          |
 
  To be eligible for a bursary, you’ll need at least one of the following:
 
@@ -55,8 +56,6 @@ Postgraduate teaching bursaries and scholarships are only available for the subj
 You’ll also need to meet the bursary scheme’s individual terms and conditions.
 
 [Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023).
-
-You must be training to teach French, German or Spanish to be eligible for a languages scholarship.
 
 To find out if you’re eligible for a scholarship and to apply, you can visit the relevant scholarship body:
 
