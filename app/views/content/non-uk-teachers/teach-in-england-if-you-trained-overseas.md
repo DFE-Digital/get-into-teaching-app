@@ -1,5 +1,5 @@
 ---
-title: "Teach in England if you trained overseas"
+title: "Teach in England if you qualified outside the UK"
 description: |-
   Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
 related_content:
@@ -9,7 +9,7 @@ related_content:
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-teach-in-england
 navigation: 20.20
-navigation_title: Teach in England if you trained overseas
+navigation_title: Teach in England if you qualified outside the UK
 navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from outside the UK.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
@@ -63,7 +63,7 @@ You’ll earn a [competitive salary](/salaries-and-benefits), get supported in y
 
 You could also consider teaching in [Wales](https://educators.wales), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
-Not qualified as a teacher yet? Find out [how to train to teach in England as an international applicant](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, but would like to gain a professional teaching qualification which is equivalent to English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status).
+Not qualified as a teacher yet? Find out [how to train to teach in England as a non-UK applicant](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, but would like to gain a professional teaching qualification which leads to English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status).
 
 ## What you need to start teaching
 

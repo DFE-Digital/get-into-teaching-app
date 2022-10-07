@@ -1,7 +1,7 @@
 ---
-title: "Train to teach in England as an international student"
+title: "Train to teach in England as a non-UK applicant"
 description: |-
-  Find out how to train to teach in England as an international student. Get help and guidance on your qualifications, funding and visa.
+  Find out how to train to teach in England as a non-UK applicant. Get help and guidance on your qualifications, funding and visa.
 related_content:
     Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
     Initial teacher training in England : "/train-to-be-a-teacher/initial-teacher-training"
@@ -9,8 +9,8 @@ related_content:
 promo_content:
     - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.05
-navigation_title: Train to teach in England as an international student
-navigation_description: Find out how to train to teach in England as an international student and get English qualified teacher status (QTS).
+navigation_title: Train to teach in England as a non-UK applicant
+navigation_description: Find out how to train to teach in England and get English qualified teacher status (QTS)as a non-UK citizen living in the UK or overseas.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
@@ -60,7 +60,7 @@ keywords:
   - Comparability
 ---
 
-Citizens of every country in the world can apply to train to teach in England.
+Citizens of every country in the world can apply to train to teach in England. Whether you're already resident in the UK or applying from overseas, we can help you make a successful application. 
 
 ## Already a qualified teacher?
 
