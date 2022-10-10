@@ -30,14 +30,14 @@ When you apply for teacher training, the school or university will help you esta
 
 SKE courses are currently offered in 9 secondary subjects:  
 
-- mathematics (including primary mathematics) 
-- English 
-- physics 
-- chemistry 
 - biology 
+- chemistry 
 - computing 
+- design and technology 
+- English
 - languages 
-- design and technology  
+- mathematics (including primary mathematics) 
+- physics 
 - religious education
 
 SKE course lengths can range from 8 to 28 weeks and are usually online courses, but some are classroom based and some, a mixture of both. You can choose the provider you wish to complete your SKE course with.
