@@ -36,9 +36,11 @@ SKE courses are currently offered in 9 secondary subjects:
 - design and technology 
 - English
 - languages 
-- mathematics (including primary mathematics) 
+- mathematics
 - physics 
 - religious education
+
+You can also do a SKE course in primary mathematics.
 
 SKE course lengths can range from 8 to 28 weeks and are usually online courses, but some are classroom based and some are a mixture of both. You can choose the provider you want to complete your SKE course with.
 
