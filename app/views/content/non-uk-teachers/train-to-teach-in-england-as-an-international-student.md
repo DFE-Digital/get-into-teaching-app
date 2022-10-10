@@ -14,6 +14,10 @@ navigation_description: Find out how to train to teach in England as an internat
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
+inset_text:
+  new-international-funding:
+    text: |-
+      Train to teach physics or languages as a non-UK citizen and you could be <a href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student#financial-support">eligible for a bursary or scholarship worth up to £29,000</a>.
 right_column:
 keywords:
   - International
@@ -59,6 +63,8 @@ keywords:
   - Statement
   - Comparability
 ---
+
+$new-international-funding$
 
 Citizens of every country in the world can apply to train to teach in England.
 
@@ -157,13 +163,56 @@ Alternatively, you can apply for a salaried teacher training course, and earn mo
 
 Unless you're planning to teach languages or physics, any financial support is dependent on your immigration status. Most non-UK candidates will not be eligible for financial support.
 
-#### If you train to teach physics or languages
+If you apply to train to teach physics or languages in the academic year 2023/24, you may be eligible for a bursary or scholarship from the UK government – even if you are not eligible for other types of financial support due to your immigration status.
 
-If you apply to train to teach physics or languages in the academic year 2023/24, you may be eligible for a bursary or scholarship from the UK government.
+You cannot be awarded both a bursary and a scholarship.
 
-You do not need to be eligible for other types of financial support to receive a bursary or scholarship to train to teach physics or languages.
+#### Bursaries if you train to teach physics or languages
 
-[Find out how much you could be eligible for](/funding-and-support/scholarships-and-bursaries).
+A bursary is a cash sum from the UK government to help with your living expenses while you train to teach. You will not have to pay this money back. You do not need to apply for a bursary –  it will automatically be awarded to you through your training provider if you are eligible.
+
+Physics bursary: £27,000
+
+Languages bursary: £25,000
+
+To be eligible for a bursary, you’ll need a place on a course with an accredited teacher training provider training to teach languages or physics, and one of the following:
+
+• a bachelor’s degree class 2:2 (honours) or higher
+
+• a master’s degree
+
+• a PhD
+
+You’ll also need to meet the bursary scheme’s individual terms and conditions – contact your chosen teacher training provider for more information.
+
+The languages bursary covers all languages offered by accredited teacher training providers. If a course combines 2 subjects (for example, physics plus mathematics, or modern foreign languages plus English), at least 50% of the course must be made up of the bursary subject.
+
+[Find accredited English teacher training providers](https://www.gov.uk/find-postgraduate-teacher-training-courses) offering languages and physics teacher training courses.
+
+#### Scholarships if you train to teach physics, French, German or Spanish
+
+A scholarship is a cash sum from the UK government. To get a scholarship, you’ll need to be a high-calibre student and pass a tough selection process, run by the professional body for your subject. 
+
+If you’re successful, your teacher training provider will pay the scholarship money directly into your bank account over a period of 10 months. You will not have to pay this money back.
+
+Physics scholarship: £29,000
+
+French, German or Spanish scholarship: £27,000
+
+To apply for a scholarship, you’ll need a place on a course with an accredited teacher training provider training to teach French, German, Spanish or physics, and one of the following:
+
+• a bachelor’s degree class 2:1 (honours) or higher
+
+• a master’s degree
+
+• a PhD
+
+In exceptional circumstances, you may be offered a scholarship with a bachelor’s degree class 2:2, if you have significant relevant experience.
+
+To find out if you’re eligible for a scholarship and to apply, visit:
+
+* the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (for a physics scholarship)
+* the [British Council](https://www.britishcouncil.org) (for a French, German or Spanish scholarship) – email languagesteachertrainingscholarships@britishcouncil.org to register your interest
 
 <div class="inset">
   <h4>Already living in the UK?</h4>
