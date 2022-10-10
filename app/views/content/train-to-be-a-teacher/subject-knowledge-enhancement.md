@@ -42,7 +42,7 @@ SKE courses are currently offered in 9 secondary subjects:
 
 SKE course lengths can range from 8 to 28 weeks and are usually online courses, but some are classroom based and some are a mixture of both. You can choose the provider you want to complete your SKE course with.
 
-Courses are available across England. Most candidates complete a SKE course before starting their teacher training year, but it’s sometimes possible to complete it alongside your ITT course. You may also be able to study part-time.
+Courses are available across England. Most candidates complete a SKE course before starting their teacher training year, but it’s sometimes possible to complete it alongside your initial teacher training (ITT) course. You may also be able to study part-time.
 
 You may also be eligible to receive the SKE participant bursary, contact your ITT and SKE provider for more information. For academic year 2022/23, the participant bursary funding is £175 per week.  
 
