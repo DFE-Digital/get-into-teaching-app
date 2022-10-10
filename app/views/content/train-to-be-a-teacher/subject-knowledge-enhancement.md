@@ -42,7 +42,7 @@ SKE courses are currently offered in 9 secondary subjects:
 
 You can also do a SKE course in primary mathematics.
 
-SKE course lengths can range from 8 to 28 weeks and are usually online courses, but some are classroom based and some are a mixture of both. You can choose the provider you want to complete your SKE course with.
+SKE course lengths can range from 8 to 28 weeks. They're usually online, but some can be classroom based and some can be a mixture of both. You can choose the provider you want to complete your SKE course with.
 
 Courses are available across England. Most candidates complete a SKE course before starting their teacher training year, but it’s sometimes possible to complete it alongside your initial teacher training (ITT) course. You may also be able to study part-time.
 
