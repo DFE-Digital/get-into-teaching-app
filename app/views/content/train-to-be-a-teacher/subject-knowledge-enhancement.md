@@ -46,4 +46,4 @@ Courses are available across England. Most candidates complete a SKE course befo
 
 You may also be eligible to receive the SKE participant bursary, contact your ITT and SKE provider for more information. For academic year 2022/23, the participant bursary funding is £175 per week.  
 
-[Find out if there's a SKE course for your subject](https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory).
+[Find out if there's a subject knowledge enhancement (SKE) course for your subject](https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory).
