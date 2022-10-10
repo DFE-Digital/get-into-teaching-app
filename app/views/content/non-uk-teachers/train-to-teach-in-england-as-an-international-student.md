@@ -165,7 +165,7 @@ Unless you're planning to teach languages or physics, any financial support is d
 
 If you apply to train to teach physics or languages in the academic year 2023/24, you may be eligible for a bursary or scholarship from the UK government – even if you are not eligible for other types of financial support due to your immigration status.
 
-You cannot be awarded both a bursary and a scholarship.
+You will not be awarded both a bursary and a scholarship.
 
 #### Bursaries if you train to teach physics or languages
 
@@ -175,7 +175,9 @@ Physics bursary: £27,000
 
 Languages bursary: £25,000
 
-To be eligible for a bursary, you’ll need a place on a course with an accredited teacher training provider training to teach languages or physics, and one of the following:
+To be eligible, you’ll need a place on a course with an accredited teacher training provider training to teach languages or physics.
+
+You'll also need at least one of the following:
 
 • a bachelor’s degree class 2:2 (honours) or higher
 
@@ -183,7 +185,7 @@ To be eligible for a bursary, you’ll need a place on a course with an accredit
 
 • a PhD
 
-You’ll also need to meet the bursary scheme’s individual terms and conditions – contact your chosen teacher training provider for more information.
+Each bursary scheme will have their own individual terms and conditions – contact your chosen teacher training provider for more information.
 
 The languages bursary covers all languages offered by accredited teacher training providers. If a course combines 2 subjects (for example, physics plus mathematics, or modern foreign languages plus English), at least 50% of the course must be made up of the bursary subject.
 
@@ -199,7 +201,9 @@ Physics scholarship: £29,000
 
 French, German or Spanish scholarship: £27,000
 
-To apply for a scholarship, you’ll need a place on a course with an accredited teacher training provider training to teach French, German, Spanish or physics, and one of the following:
+To apply for a scholarship, you’ll need a place on a course with an accredited teacher training provider training to teach French, German, Spanish or physics.
+
+You'll also need at least one of the following:
 
 • a bachelor’s degree class 2:1 (honours) or higher
 
@@ -209,7 +213,7 @@ To apply for a scholarship, you’ll need a place on a course with an accredited
 
 In exceptional circumstances, you may be offered a scholarship with a bachelor’s degree class 2:2, if you have significant relevant experience.
 
-To find out if you’re eligible for a scholarship and to apply, visit:
+You can check if you’re eligible for a scholarship and apply by visiting:
 
 * the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (for a physics scholarship)
 * the [British Council](https://www.britishcouncil.org) (for a French, German or Spanish scholarship) – email languagesteachertrainingscholarships@britishcouncil.org to register your interest
