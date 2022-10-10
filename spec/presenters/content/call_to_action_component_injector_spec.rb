@@ -12,7 +12,23 @@ RSpec.describe Content::CallToActionComponentInjector, type: :component do
       },
     },
     "chat online component" => "chat_online",
-    "next steps component" => "next_steps",
+    "attachment component" => {
+      "name" => "attachment",
+      "arguments" => {
+        "text" => "Text",
+        "file_path" => "media/documents/dac_git_report.pdf",
+        "file_type" => "PDF",
+        "published_at" => "01 September 2020",
+      },
+    },
+    "chat component" => "chat",
+    "feature table component" => {
+      "name" => "feature_table",
+      "arguments" => [
+        { "Row 1" => "Value 1" },
+        { "title" => "Title" },
+      ],
+    },
   }.each do |name, meta|
     describe "rendering a #{name}" do
       subject { described_class.new(meta).component }

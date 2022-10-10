@@ -69,10 +69,6 @@ Rails.application.routes.draw do
   get "/welcome/email/subject/:subject/degree-status/:degree_status", to: "pages#welcome"
 
   resource :search, only: %i[show]
-  # resource :eligibility_checker,
-  #          only: %i[show],
-  #          controller: "eligibility_checker",
-  #          path: "eligibility-checker"
 
   resource "cookie_preference", only: %i[show]
   get "/cookie-policy", to: redirect("/cookies")
