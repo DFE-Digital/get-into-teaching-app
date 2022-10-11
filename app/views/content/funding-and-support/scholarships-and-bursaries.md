@@ -62,7 +62,9 @@ To be eligible for a bursary, you’ll need at least one of the following:
 * a master’s degree
 * a PhD
 
-If your course combines 2 subjects (for example, English and History, or Drama and English), at least 50% of the course must be made up of the bursary subject in order for a candidate to be eligible.
+If your course combines 2 subjects (for example, English and history), your course content must be made up of at least 50% of the bursary subject to be eligible.
+
+If your course combines 2 subjects where bursaries are awarded (for example, biology and chemistry), you'll receive the highest bursary amount available.
 
 You’ll also need to meet the bursary scheme’s individual terms and conditions.
 
