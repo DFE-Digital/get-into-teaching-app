@@ -54,7 +54,7 @@ keywords:
   - Teacher training courses
 ---
 
-For teaching the next generation of citizens you’re entitled to a competitive salary, generous holidays, and a substantial pension.
+For helping to shape the next generation you’re entitled to a competitive salary, generous holidays, and a substantial pension.
 
 Figures are for teachers in the 2022/23 academic year.
 
