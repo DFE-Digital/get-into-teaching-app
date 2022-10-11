@@ -78,7 +78,7 @@ To be eligible for a scholarship, you’ll need at least one of the following:
 * a master’s degree
 * a PhD
 
-In exceptional circumstances, they may be awarded to a graduate with a 2:2 and significant relevant experience.
+In exceptional circumstances, if you achieved a 2:2 in your degree you may still be awarded a scholarship if you have significant relevant experience.
 
 Scholarships are offered by independent institutions. They set their own eligibility criteria and you’ll need to apply through the relevant scholarship body:
 
