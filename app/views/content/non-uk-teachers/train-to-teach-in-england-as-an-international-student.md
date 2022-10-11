@@ -14,6 +14,10 @@ navigation_description: Find out how to train to teach in England as an internat
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
+inset_text:
+  new-international-funding:
+    text: |-
+      Train to teach physics or languages as a non-UK citizen and you could be <a href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student#find-out-about-fees-and-financial-support">eligible for a bursary or scholarship worth up to £29,000</a>.
 right_column:
 keywords:
   - International
@@ -59,6 +63,8 @@ keywords:
   - Statement
   - Comparability
 ---
+
+$new-international-funding$
 
 Citizens of every country in the world can apply to train to teach in England.
 
@@ -149,13 +155,68 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 ### 3. Find out about fees and financial support
 
-Fees vary between training providers, but range from about £12,000 to about £22,000 in total. You’ll also have to pay your living costs.
+Fees vary between training providers, but range from about £12,000 to £22,000 in total. You’ll also have to pay your living costs.
 
-Alternatively, you can apply for a salaried teacher training course, and earn money while you train in a school. However, these courses are limited in number and very competitive. You will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
+Alternatively, you can apply for a salaried teacher training course and earn money while you train in a school. However, these courses are limited in number and very competitive. You will usually need to have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience.
 
-#### Financial support
+Financial support is usually dependent on your immigration status (unless you're planning to teach physics or languages). Most non-UK candidates will not be eligible for financial support.
 
-Any financial support, for example a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250) is dependent on your immigration status. Most international candidates will not be eligible for financial support.
+#### If you train to teach physics or languages
+
+If you apply to train to teach physics or languages in the academic year 2023/24, you may be eligible for a bursary or scholarship from the UK government – even if you are not eligible for other types of financial support due to your immigration status.
+
+Bursaries and scholarships are cash sums from the UK government that you do not have to pay back. You will not be awarded both a bursary and a scholarship.
+
+#### Bursaries for physics and languages
+
+You do not need to apply for a bursary –  it will automatically be awarded to you through your training provider if you are eligible.
+
+You may be eligible for a:
+
+* physics bursary of £27,000
+* languages bursary of £25,000
+
+To be eligible, you’ll need a place on a course training to teach languages or physics with an accredited teacher training provider.
+
+You'll also need at least one of the following:
+
+* a bachelor’s degree class 2:2 (honours) or higher
+* a master’s degree
+* a PhD
+
+Each bursary scheme will have their own individual terms and conditions – contact your chosen teacher training provider for more information.
+
+The languages bursary covers all languages offered by accredited teacher training providers. If a course combines 2 subjects (for example, physics plus mathematics, or modern foreign languages plus English), at least 50% of the course must be made up of the bursary subject.
+
+[Find accredited English teacher training providers](https://www.gov.uk/find-postgraduate-teacher-training-courses) offering languages and physics teacher training courses.
+
+#### Scholarships for physics, French, German and Spanish
+
+To get a scholarship, you’ll need to be a high-calibre student and pass a tough selection process, run by the professional body for your subject. 
+
+If you’re successful, your teacher training provider will pay the scholarship money directly into your bank account over a period of 10 months.
+
+You may be eligible for a:
+
+* physics scholarship of £29,000
+* French, German or Spanish scholarship of £27,000
+
+To apply for a scholarship, you’ll need a place on a course training to teach French, German, Spanish or physics with an accredited teacher training provider.
+
+You'll also need at least one of the following:
+
+* a bachelor’s degree class 2:1 (honours) or higher
+* a master’s degree
+* a PhD
+
+In exceptional circumstances, you may be offered a scholarship with a bachelor’s degree class 2:2, if you have significant relevant experience.
+
+You can check if you’re eligible for a scholarship and apply by visiting:
+
+* the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (for a physics scholarship)
+* the [British Council](https://www.britishcouncil.org) (for a French, German or Spanish scholarship)
+
+You can also email languagesteachertrainingscholarships@britishcouncil.org to register your interest for a scholarship to teach French, German or Spanish.
 
 <div class="inset">
   <h4>Already living in the UK?</h4>
