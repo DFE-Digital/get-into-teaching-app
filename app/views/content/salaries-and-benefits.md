@@ -7,18 +7,12 @@ date: "2021-06-24"
 image: "media/images/content/hero-images/0008.jpg"
 backlink: "../../"
 navigation: 40
-right_column:
-  ctas:
-    - title: How to become a teacher
-      text: |
-       Find out how to train to become a qualified primary or secondary teacher in England.
-      link_text: "Ways to train"
-      link_target: "/train-to-be-a-teacher"
-      icon: "icon-person"
-      hide_on_mobile: Yes
-      hide_on_tablet: Yes
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+related_content:
+    Steps to become a teacher : "/steps-to-become-a-teacher"
+    Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
+    Why I became a teacher : "/blog/the-head-of-science-inspiring-students-in-blackpool"
 keywords:
   - Salary
   - Salaries
