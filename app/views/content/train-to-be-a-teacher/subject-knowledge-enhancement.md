@@ -26,7 +26,7 @@ SKE courses can help when you have:
 - studied for a languages degree, but need to develop a second language to an acceptable level for teaching in schools 
 - not used your subject knowledge for a while
 
-When you apply for teacher training, the teacher training provider will help you establish whether you need to improve your subject knowledge. They may decide to make completing a SKE course a condition of your offer to train with them.
+When you apply for teacher training, your teacher training provider will help you establish whether you need to improve your subject knowledge. They may decide to make completing a SKE course a condition of your offer to train with them.
 
 SKE courses are currently offered in 9 secondary subjects:  
 
