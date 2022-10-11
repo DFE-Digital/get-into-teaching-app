@@ -48,7 +48,7 @@ keywords:
   - Teacher training courses
 ---
 
-For helping to shape the next generation you’re entitled to a competitive salary, generous holidays, and a substantial pension.
+For helping to shape the next generation, you’re entitled to a competitive salary, generous holidays, and a substantial pension.
 
 Figures are for teachers in the 2022/23 academic year.
 
@@ -69,7 +69,7 @@ Annual teacher pay scales for qualified teachers are:
 
 Most established teachers will earn more than this by progressing onto the upper pay range for teachers, or by becoming a leading practitioner.
 
-If you’re not sure whether your school is in inner, outer or the fringe of London, talk to your school.
+If you’re not sure whether you'll be teaching in inner, outer or the fringe of London, talk to your school.
 
 ## Holidays
 
@@ -107,7 +107,7 @@ For example, you can move into a more senior role, or take on additional respons
 
 ### Upper pay range for teachers
 
-If you take on extra responsibilities, like being a head of department, you can be put onto a higher teacher pay scale.
+If you take on extra responsibilities, like being a head of department, you can be put onto the upper pay range for teachers.
 
 Teachers in this pay scale are important members of a school’s leadership team, and they often work closely with headteachers.
 
