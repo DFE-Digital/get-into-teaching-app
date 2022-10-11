@@ -39,7 +39,9 @@ You may be eligible for a tax-free undergraduate bursary of £40,000 if you are 
 
 Doing an undergraduate degree leading to QTS means that you would be qualified to teach in England.
 
-You do not need to apply for a bursary to get one. Your teacher training provider will determine whether you are eligible and will then pay you in monthly instalments across the final 2 years of your course.
+You do not need to apply for a bursary to get one. Your teacher training provider will determine whether you are eligible.
+
+You’ll receive £20,000 in each of the last 2 years of your course in equal monthly instalments.
 
 ## Postgraduate scholarships and bursaries
 
