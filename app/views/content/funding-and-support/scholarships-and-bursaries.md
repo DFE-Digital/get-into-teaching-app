@@ -35,9 +35,9 @@ keywords:
 
 Postgraduate teaching bursaries and scholarships are only available for the subjects listed below. You cannot receive both a teaching bursary and a scholarship.
 
-You cannot receive a scholarship or bursary if your teacher training course is salaried.
-
 You must be eligible for student finance to receive a bursary or scholarship (unless you’re training to teach physics or languages).
+
+You cannot receive a scholarship or bursary if your teacher training course is salaried.
 
 | Subject                                                | Bursary  | Scholarship      |
 | -------------                                          | -------: | ---------------: |
@@ -62,7 +62,7 @@ To be eligible for a bursary, you’ll need at least one of the following:
 * a master’s degree
 * a PhD
 
-If your course combines 2 subjects (for example, English and history), your course content must be made up of at least 50% of the bursary subject to be eligible.
+If your course combines 2 subjects (for example, English and history), at least 50% of your course content must be made up of the bursary subject to be eligible.
 
 If your course combines 2 subjects where bursaries are awarded (for example, biology and chemistry), you'll receive the highest bursary amount available.
 
@@ -98,7 +98,9 @@ The amount you receive depends on the year that you start your QTS course. You d
 
 ### Undergraduate bursary if you're former military personnel
 
-You may be eligible for a £40,000 tax-free [undergraduate bursary for veterans](/funding-and-support/if-youre-a-veteran) if you’re:
+You may be eligible for a £40,000 tax-free undergraduate bursary for veterans if you’re:
 
 * training to teach secondary biology, physics, chemistry, computing, maths or languages
 * doing an undergraduate degree leading to QTS in England
+
+[Find out more about how to get support training to teach if you're a veteran](/funding-and-support/if-youre-a-veteran).
