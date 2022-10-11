@@ -180,11 +180,9 @@ To be eligible, you’ll need a place on a course training to teach languages or
 
 You'll also need at least one of the following:
 
-• a bachelor’s degree class 2:2 (honours) or higher
-
-• a master’s degree
-
-• a PhD
+* a bachelor’s degree class 2:2 (honours) or higher
+* a master’s degree
+* a PhD
 
 Each bursary scheme will have their own individual terms and conditions – contact your chosen teacher training provider for more information.
 
@@ -208,9 +206,7 @@ To apply for a scholarship, you’ll need a place on a course training to teach 
 You'll also need at least one of the following:
 
 * a bachelor’s degree class 2:1 (honours) or higher
-
 * a master’s degree
-
 * a PhD
 
 In exceptional circumstances, you may be offered a scholarship with a bachelor’s degree class 2:2, if you have significant relevant experience.
