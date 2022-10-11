@@ -15,16 +15,20 @@
 </div>
 <% end %>
 
-<header class="limit-content-width" data-controller="navigation" role="banner">
+<header data-controller="navigation" role="banner">
   <%= render Header::ExtraNavigationComponent.new(search_input_id: "searchbox__input--desktop") %>
-  <%= render Header::LogoComponent.new %>
-  <div class="menu-button" id="mobile-navigation-menu-button">
-    <%= tag.button(class: "menu-button__button", data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
-      <span class="menu-button__icon"></span>
-      <span class="menu-button__text">Menu</span>
-    <% end %>
+  <div class="govuk-width-container govuk-width-container--to-edge">
+    <div class="header-container">
+      <%= render Header::LogoComponent.new %>
+      <div class="menu-button govuk-width-container" id="mobile-navigation-menu-button">
+        <%= tag.button(class: "menu-button__button", data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
+          <span class="menu-button__icon"></span>
+          <span class="menu-button__text">Menu</span>
+        <% end %>
+      </div>
+      <%= render Header::NavigationComponent.new(extra_resources: { "/events" => "Events", "/blog" => "Blog" }) %>
+    </div>
   </div>
-  <%= render Header::NavigationComponent.new(extra_resources: { "/events" => "Events", "/blog" => "Blog" }) %>
 </header>
 
 <% if breadcrumbs %>

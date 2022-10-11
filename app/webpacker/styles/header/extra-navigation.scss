@@ -1,9 +1,10 @@
 @import "accessible-autocomplete";
 
 .extra-navigation {
+  background-color: $grey;
+
   &__list {
     font-size: .9rem;
-    background-color: $grey;
     margin: 0 auto;
     list-style: none;
     padding: 0;
@@ -92,16 +93,12 @@
 
 .searchbar {
   display: none;
-  background-color: $pink;
-  padding: 0.6em;
   justify-content: flex-end;
-
-  @include mq($from: tablet) {
-    margin-bottom: 21px;
-  }
 
   .autocomplete__wrapper {
     width: 100%;
+    background-color: $pink;
+    padding: 10px;
 
     input {
       width: 100%;

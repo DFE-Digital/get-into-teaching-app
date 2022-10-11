@@ -1,11 +1,11 @@
 .feedback-bar {
-  margin-bottom: $indent-amount;
+  margin: $indent-amount 0;
 
-  .container {
-    padding: 0 $indent-amount;
+  .govuk-width-container > div {
+    display: flex;
     flex-direction: row;
     align-items: center;
-    column-gap: $indent-amount;
+    gap: $indent-amount;
     justify-content: flex-start;
   }
 }

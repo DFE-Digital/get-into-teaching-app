@@ -21,7 +21,7 @@ module Content
     end
 
     def classes
-      ["hero", hero_bg_color].tap do |c|
+      ["hero-wrapper", hero_bg_color].tap do |c|
         c << "blend-content" if hero_blend_content
       end
     end

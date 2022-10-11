@@ -1,36 +1,39 @@
-<div>
-  <div class="talk-to-us">
-    <section class="container">
-      <div>
-        <h2 class="heading-m heading--box-purple heading--overlap" id="talk-to-us">Talk to us</h2>
-        <div class="content">
-          <div class="contact">
-            <div class="options">
-              <% unless helpers.privacy_page?(request.path) %>
-              <div class="live-chat">
-                <h3 class="heading-s heading--normal heading--margin-0">Live chat</h3>
+<div class="talk-to-us">
+  <section class="govuk-width-container govuk-width-container--to-edge">
+    <h2 class="heading-m heading--box-purple heading--overlap" id="talk-to-us">Talk to us</h2>
+
+    <div class="govuk-width-container">
+      <div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-half">
+          <div class="govuk-grid-row">
+            <% unless helpers.privacy_page?(request.path) %>
+              <div class="govuk-grid-column-one-half live-chat">
+                <h3 class="heading-s heading--normal">Live chat</h3>
                 <%= render ChatComponent.new %>
               </div>
-              <% end %>
-              <div>
-                <h3 class="heading-s heading--normal heading--margin-0">Call us</h3>
-                <p class="telephone">0800 389 2500</p>
-              </div>
+            <% end %>
+            <div class="govuk-grid-column-one-half">
+              <h3 class="heading-s heading--normal">Call us</h3>
+              <p class="telephone">0800 389 2500</p>
             </div>
-            <p>Monday to Friday between <strong>8:30am and 5:30pm</strong></p>
           </div>
-          <div>
-            <h3 class="heading-s">Get free one-to-one support</h3>
-            <p>
-              Our advisers provide support wherever you are in your journey into teaching. Whether it's just an idea, you're ready to apply or you're looking to get back into the classroom, you could get personalised help and advice.
-            </p>
-
-            <a href="/tta-service" class="button">
-              Get an adviser
-            </a>
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-full">
+              <p>Monday to Friday between <strong>8:30am and 5:30pm</strong></p>
+            </div>
           </div>
         </div>
+        <div class="govuk-grid-column-one-half">
+          <h3 class="heading-s">Get free one-to-one support</h3>
+          <p>
+            Our advisers provide support wherever you are in your journey into teaching. Whether it's just an idea, you're ready to apply or you're looking to get back into the classroom, you could get personalised help and advice.
+          </p>
+
+          <a href="/tta-service" class="button">
+            Get an adviser
+          </a>
+        </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </div>

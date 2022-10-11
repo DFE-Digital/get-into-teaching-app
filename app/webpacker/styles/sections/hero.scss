@@ -144,9 +144,9 @@ $mobile-cutoff: 800px;
 }
 
 // styles
-.hero {
-  background-color: $grey;
+.hero-wrapper {
   overflow: hidden;
+  background-color: $grey;
 
   &.white {
     background-color: $white;
@@ -167,7 +167,9 @@ $mobile-cutoff: 800px;
       margin-top: -4em;
     }
   }
+}
 
+.hero {
   &__title {
     z-index: 20;
   }

@@ -1,0 +1,7 @@
+@include mq($until: page) {
+  .govuk-width-container.govuk-width-container--to-edge {
+    margin-left: 0;
+    margin-right: 0;
+    max-width: 100%;
+  }
+}

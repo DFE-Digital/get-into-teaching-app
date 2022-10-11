@@ -1,11 +1,22 @@
+$mq-static-breakpoint: desktop;
 $mq-responsive: true;
+
+$page-max-width: 2000px;
+$govuk-page-width: 1200px;
+$govuk-gutter: 30px;
+
+$govuk-breakpoints: (
+  mobile:  320px,
+  tablet:  641px,
+  desktop: 769px
+);
+
 $mq-breakpoints: (
-  mobile: 500px,
-  tablet: 768px,
-  desktop: 1000px,
+  mobile:  320px,
+  tablet:  641px,
+  desktop: 769px,
+  page: $govuk-page-width + ($govuk-gutter * 2),
   wide: 1500px,
 );
-$mq-static-breakpoint: desktop;
-$page-max-width: 2000px;
 
 @import 'sass-mq';

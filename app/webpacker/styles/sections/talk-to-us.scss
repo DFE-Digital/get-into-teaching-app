@@ -1,82 +1,15 @@
 .talk-to-us {
   background-color: $grey;
+  padding-bottom: 2 * $indent-amount;
 
-  > .container {
-    margin-top: 0;
+  .telephone  {
+    font-weight: bold;
+    font-size: 1.3em;
   }
 
-  .content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
-    > div {
-      flex: 1 0;
-      margin: $indent-amount;
-
-      &.contact {
-        padding: $indent-amount;
-        background-color: $white;
-
-        .options {
-          display: flex;
-          flex-direction: column;
-
-          > div {
-            flex: 1 0;
-
-            &.live-chat {
-              word-break: break-all;
-              border-bottom: 1px solid $purple;
-              padding-bottom: $indent-amount;
-              margin-bottom: $indent-amount;
-              flex-basis: 40%;
-
-              span > span {
-                font-weight: bold;
-              }
-            }
-
-            p {
-              margin-top: $indent-amount;
-            }
-
-            .telephone {
-              font-weight: bold;
-              text-decoration: none;
-              color: $black;
-              font-size: 1.3em;
-            }
-          }
-        }
-      }
-    }
-  }
-}
-
-@include mq($from: tablet) {
-  .talk-to-us {
-    .content {
-      flex-direction: row;
-
-      > div {
-        margin: 0 $indent-amount $indent-amount $indent-amount;
-
-        &.contact .options {
-          flex-direction: row;
-
-          > div {
-            flex: initial;
-
-            &.live-chat {
-              border: 0;
-              border-right: 1px solid $purple;
-              padding: 0 $indent-amount 0 0;
-              margin: 0 $indent-amount 0 0;
-            }
-          }
-        }
-      }
+  @include mq($from: tablet) {
+    .live-chat {
+      border-right: 1px solid $purple;
     }
   }
 }

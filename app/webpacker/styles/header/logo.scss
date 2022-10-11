@@ -1,7 +1,6 @@
 .logo-wrapper {
   z-index: 0;
   overflow: hidden;
-  top: 8px;
   padding-bottom: 20px;
   display: flex;
   align-items: center;
@@ -11,10 +10,6 @@
     padding-bottom: 0;
     position: relative;
   }
-
-  @include mq($from: tablet) {
-    top: -23px;
-  }
 }
 
 .logo {
@@ -23,6 +18,10 @@
 
   @media (forced-colors: active) {
     forced-color-adjust: none;
+  }
+
+  @include mq($from: tablet) {
+    margin: -25px 0 25px 0;
   }
 
   a {
