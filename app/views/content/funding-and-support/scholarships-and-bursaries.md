@@ -55,7 +55,7 @@ Postgraduate teaching bursaries and scholarships are only available for the subj
 
 You’ll also need to meet the bursary scheme’s individual terms and conditions.
 
-[Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023).
+[Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2023-to-2024).
 
 To find out if you’re eligible for a scholarship and to apply, you can visit the relevant scholarship body:
 
@@ -67,7 +67,7 @@ To find out if you’re eligible for a scholarship and to apply, you can visit t
 
 ## Undergraduate bursaries
 
-You may be eligible for a [bursary of £9,000](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2022-to-2023#undergraduate-bursary) if you do a secondary maths or physics course that leads to [qualified teacher status (QTS)](/what-is-qts).
+You may be eligible for a [bursary of £9,000](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2023-to-2024#undergraduate-bursary) if you do a secondary maths or physics course that leads to [qualified teacher status (QTS)](/what-is-qts).
 
 You may also be eligible if you do an opt-in QTS course in secondary computing, languages, mathematics or physics. This is where you start a standard undergraduate degree but then opt-in to initial teacher training to get QTS.
 
