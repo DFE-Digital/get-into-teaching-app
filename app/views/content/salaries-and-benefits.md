@@ -56,9 +56,9 @@ Figures are for teachers in the 2022/23 academic year.
 
 All recently qualified teachers will have a starting salary of at least £28,000. This will be higher for teachers working in and around London.
 
-Your school will have their own pay scales for qualified teachers. Pay increases will always be linked to performance, not length of service.
+Your school will have their own pay scales for qualified teachers. Pay increases will always be linked to performance, not length of service, and will be reviewed every year.
 
-Annual teacher pay scales for qualified teachers are:
+The teacher pay scales for qualified teachers are:
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
@@ -70,34 +70,6 @@ Annual teacher pay scales for qualified teachers are:
 Most established teachers will earn more than this by progressing onto the upper pay range for teachers, or by becoming a leading practitioner.
 
 If you’re not sure whether you'll be teaching in inner, outer or the fringe of London, talk to your school.
-
-## Holidays
-
-You'll get more days holiday than people in many other professions. In school, full-time teachers work 195 days per year. 
-
-For comparison, you'd work 227 days per year (on average) if you worked full time in an office.
-
-## Teachers' pension scheme
-
-The teachers’ pension scheme is one of the most generous in the country. It is a 'defined benefit' pension and is:
-
-* based on your teaching salary rather than the amount of money you pay in
-* registered with HM Revenue and Customs - so your contributions are tax-free
-* flexible and allows you to take some of it as a tax-free lump sum
-
-You also get other insurance benefits too. You can find out more on [the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
-
-## Support for early career teachers
-
-All teachers are given extra support during their first 2 years in teaching called [ECF-based training](/support-for-early-career-teachers). This helps early career teachers (ECTs) develop their knowledge, teaching skills and working habits.
-
-This support includes:
-
-* paid time away from classroom teaching to focus on your development
-* a high quality training programme based on the [early career framework](https://www.gov.uk/government/publications/early-career-framework)
-* a mentor who will give you guidance and support
-
-The term early career teacher (ECT) replaced newly qualified teacher (NQT).
 
 ## Career progression
 
@@ -142,7 +114,7 @@ A headteacher is the most senior person in a school. They are ultimately respons
 
 Their role is wide ranging, but includes leading and motivating teachers, and ensuring all pupils get a good education.
 
-Annual salary ranges for headteachers are:
+The salary ranges for headteachers are:
 
 | Area                                     | Minimum | Maximum  |
 | -------                                  | -----   | -----    |
@@ -171,7 +143,7 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 Many schools in England require teachers to have 'qualified teacher status' (QTS). If you do not have this, you can work
 in some schools as an unqualified teacher.
 
-Annual unqualified teacher salary ranges are:
+The unqualified teacher salary ranges are:
 
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
@@ -179,3 +151,31 @@ Annual unqualified teacher salary ranges are:
 | Inner London                             | £24,254 | £35,081 |
 | Outer London                             | £22,924 | £33,759 |
 | London fringe                            | £20,594 | 31,421  |
+
+## Holidays
+
+You'll get more days holiday than people in many other professions. In school, full-time teachers work 195 days per year. 
+
+For comparison, you'd work 227 days per year (on average) if you worked full time in an office.
+
+## Teachers' pension scheme
+
+The teachers’ pension scheme is one of the most generous in the country. It is a 'defined benefit' pension and is:
+
+* based on your teaching salary rather than the amount of money you pay in
+* registered with HM Revenue and Customs - so your contributions are tax-free
+* flexible and allows you to take some of it as a tax-free lump sum
+
+You also get other insurance benefits too. You can find out more on [the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
+
+## Support for early career teachers
+
+All teachers are given extra support during their first 2 years in teaching called [ECF-based training](/support-for-early-career-teachers). This helps early career teachers (ECTs) develop their knowledge, teaching skills and working habits.
+
+This support includes:
+
+* paid time away from classroom teaching to focus on your development
+* a high quality training programme based on the [early career framework](https://www.gov.uk/government/publications/early-career-framework)
+* a mentor who will give you guidance and support
+
+The term early career teacher (ECT) replaced newly qualified teacher (NQT).
