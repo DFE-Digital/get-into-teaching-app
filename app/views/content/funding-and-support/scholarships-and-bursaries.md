@@ -64,8 +64,6 @@ To be eligible for a bursary, you’ll need at least one of the following:
 
 If your course combines 2 subjects (for example, English and history), at least 50% of your course content must be made up of the bursary subject to be eligible.
 
-If your course combines 2 subjects where bursaries are awarded (for example, biology and chemistry), you'll receive the highest bursary amount available.
-
 You’ll also need to meet the bursary scheme’s individual terms and conditions.
 
 [Find out more about your eligibility for teaching bursaries](https://www.gov.uk/government/publications/funding-initial-teacher-training-itt/funding-initial-teacher-training-itt-academic-year-2023-to-2024).
