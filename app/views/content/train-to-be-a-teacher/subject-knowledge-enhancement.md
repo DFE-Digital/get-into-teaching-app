@@ -8,7 +8,7 @@ related_content:
 description: |-
   Find out more about subject knowledge enhancement (SKE) courses which will help you brush up the subject you want to teach.
 promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-ske
+    - content/train-to-be-a-teacher/promos/events-promo-ske
 keywords:
   - Subject knowledge
   - Subject knowledge enhancement
