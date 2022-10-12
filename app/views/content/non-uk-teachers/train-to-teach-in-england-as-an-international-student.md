@@ -10,7 +10,7 @@ promo_content:
     - content/non-uk-teachers/promos/adviser-promo-training-in-england
 navigation: 20.05
 navigation_title: Train to teach in England as a non-UK applicant
-navigation_description: Find out how to train to teach in England and get English qualified teacher status (QTS)as a non-UK citizen living in the UK or overseas.
+navigation_description: Find out how to train to teach in England and get English qualified teacher status (QTS)as a non-UK citizen or international student living in the UK or overseas.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
@@ -68,7 +68,7 @@ If you're already a qualified teacher, find out how you can [teach in England if
 
 ## Why train to teach in England?
 
-Teacher training in England is practical, hands-on and supportive. As an international applicant, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way.
+Teacher training in England is practical, hands-on and supportive. As an international student or non-UK citizen, you’ll have the opportunity to train at a world class institution where creativity and innovation is valued, gaining lots of classroom experience along the way.
 
 When you have successfully completed your training, you will be awarded [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), a professional qualification valued globally.
 
