@@ -56,7 +56,7 @@ Figures are for teachers in the 2022/23 academic year.
 
 ## Teaching salaries
 
-All qualified teachers will have a starting salary of at least £28,000. This will be higher for teachers working in and around London.
+All qualified teachers will have a starting salary of at least £28,000. This will be higher for teachers working in London.
 
 ### Qualified teacher salary
 
@@ -67,9 +67,9 @@ The teacher pay scales for qualified teachers are:
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
 | England and Wales (excluding London)     | £28,000 | £38,810 |
-| Inner London                             | £34,502 | £44,756 |
-| Outer London                             | £32,407 | £43,193 |
 | London fringe                            | £29,344 | £40,083 |
+| Outer London                             | £32,407 | £43,193 |
+| Inner London                             | £34,502 | £44,756 |
 
 Most established teachers will earn more than this maximum by progressing onto the upper pay range for teachers, or by becoming a leading practitioner.
 
@@ -86,9 +86,9 @@ The upper pay ranges for teachers are:
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
 | England and Wales (excluding London)     | £40,625 | £43,685 |
-| Inner London                             | £49,320 | £53,482 |
-| Outer London                             | £44,687 | £48,055 |
 | London fringe                            | £41,858 | £44,919 |
+| Outer London                             | £44,687 | £48,055 |
+| Inner London                             | £49,320 | £53,482 |
 
 ### Leading practitioner salaries
 
@@ -101,10 +101,9 @@ The teacher pay scales for leading practitioners are:
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
 | England and Wales (excluding London)     | £44,523 | £67,685 |
-| Inner London                             | £52,936 | £76,104 |
-| Outer London                             | £48,055 | £71,220 |
 | London fringe                            | £45,749 | £68,913 |
-
+| Outer London                             | £48,055 | £71,220 |
+| Inner London                             | £52,936 | £76,104 |
 
 ### Headteacher salaries
 
@@ -117,9 +116,9 @@ The salary ranges for headteachers are:
 | Area                                     | Minimum | Maximum  |
 | -------                                  | -----   | -----    |
 | England and Wales (excluding London)     | £50,122 | £123,057 |
-| Inner London                             | £58,501 | £131,353 |
-| Outer London                             | £53,637 | £126,539 |
 | London fringe                            | £51,347 | £124,274 |
+| Outer London                             | £53,637 | £126,539 |
+| Inner London                             | £58,501 | £131,353 |
 
 ### Other payments
 
@@ -146,9 +145,9 @@ The unqualified teacher salary ranges are:
 | Area                                     | Minimum | Maximum |
 | -------                                  | -----   | -----   |
 | England and Wales (excluding London)     | £19,340 | £30,172 |
-| Inner London                             | £24,254 | £35,081 |
-| Outer London                             | £22,924 | £33,759 |
 | London fringe                            | £20,594 | 31,421  |
+| Outer London                             | £22,924 | £33,759 |
+| Inner London                             | £24,254 | £35,081 |
 
 ## Holidays
 
