@@ -77,9 +77,9 @@ If you’re not sure whether you'll be teaching in inner, outer or the fringe of
 
 ### Upper pay range for teachers
 
-If you take on extra responsibilities, like being a head of department, you can be put onto the upper pay range for teachers.
+If you can demonstrate excellence against all of the teacher standards, you can be put onto the upper pay range for teachers.
 
-Teachers in this pay scale are important members of a school’s leadership team, and they often work closely with headteachers.
+This is for teachers who make a sustained and substantial contribution to their school.
 
 The upper pay ranges for teachers are:
 
