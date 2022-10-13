@@ -51,8 +51,6 @@ body {
 
 // new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
 
-$content-max-width: 1200px;
-
 .main-section {
   margin-bottom: 3em;
 
@@ -76,6 +74,13 @@ section.container {
 
   &.centered {
     justify-content: center;
+  }
+
+  .inset {
+    padding: 0 $indent-amount;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 100%;
   }
 
   @include mq($from: tablet) {

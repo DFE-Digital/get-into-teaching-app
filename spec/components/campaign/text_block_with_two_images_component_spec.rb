@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe SubjectSpecific::TextBlockWithTwoImagesComponent, type: "component" do
+RSpec.describe Campaign::TextBlockWithTwoImagesComponent, type: "component" do
   subject! { Capybara.string(component) }
 
   let(:heading) { "A heading" }

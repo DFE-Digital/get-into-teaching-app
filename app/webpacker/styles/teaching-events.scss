@@ -21,11 +21,11 @@ $icon-size: 3rem;
 
 .teaching-events {
   header {
-    margin: 1rem;
+    margin: $indent-amount;
 
     @include mq($from: tablet) {
       p {
-        padding: 0 1rem;
+        padding: 0 $indent-amount;
       }
     }
   }
@@ -75,12 +75,12 @@ $icon-size: 3rem;
   &__filter,
   &__listing {
     @include mq($from: desktop) {
-      margin: 1rem;
+      margin: $indent-amount;
     }
   }
 
   &__filter {
-    padding: 1rem;
+    padding: $indent-amount;
     @include mq($from: desktop) {
       flex-basis: 25%;
     }
@@ -110,14 +110,14 @@ $icon-size: 3rem;
   &__events {
     @include reset;
 
-    padding: 1rem;
+    padding: $indent-amount;
 
     ol {
       list-style: none;
       padding: 0;
 
       @include mq($from: desktop) {
-        padding: 1rem;
+        padding: $indent-amount;
       }
 
       li.event + li.event {
@@ -127,7 +127,7 @@ $icon-size: 3rem;
 
     &--featured {
       background: $grey;
-      padding: 2rem 1rem 2rem;
+      padding: 2rem $indent-amount 2rem;
       margin-bottom: 1rem;
     }
 
@@ -422,7 +422,7 @@ $icon-size: 3rem;
     display: grid;
 
     > *:not(.triangle) {
-      padding-inline: 1rem;
+      padding-inline: $indent-amount;
     }
 
     @include mq($from: tablet) {
@@ -509,7 +509,7 @@ $icon-size: 3rem;
 
     article,
     aside {
-      margin: 0 1em;
+      margin: 0 $indent-amount;
     }
 
     @include mq($from: tablet) {
@@ -692,7 +692,7 @@ $icon-size: 3rem;
   }
 
   article {
-    max-width: 65ch;
+    max-width: $column-720;
     margin: 2em;
 
     .button {
@@ -703,78 +703,5 @@ $icon-size: 3rem;
   .youtube-video-container {
     max-width: 40em;
     margin-block: 2em;
-  }
-}
-
-.what-theyre-saying {
-  margin-top: 4em;
-  padding-bottom: 2em;
-  display: grid;
-  background: $yellow;
-
-  grid-template-columns: auto minmax(2em, 30em) auto;
-  grid-template-rows: 1em auto;
-
-  @include mq($from: tablet) {
-    grid-template-rows: 2em auto;
-  }
-
-  .triangle {
-    grid-area: 1 / 1 / 2 / 4;
-    background-color: white;
-    margin-bottom: -5px;
-
-    &.yellow-triangle {
-      svg {
-        fill: $yellow;
-        stroke: $yellow;
-        stroke-width: 1;
-      }
-    }
-  }
-
-  .subheading {
-    grid-area: 1 / 2 / 2 / 3;
-  }
-
-  figure {
-    grid-area: 2 / 2 / 3 / 3;
-    margin-bottom: 1.5em;
-    margin-block: 2em;
-    margin-inline: 40px;
-
-    blockquote {
-      @include font-size(medium);
-
-      font-weight: bold;
-      margin: 2em 0 1em;
-      padding: 0;
-      position: relative;
-
-      &:before,
-      &:after {
-        @include font-size(xlarge);
-        color: $pink-dark;
-      }
-
-      &:before {
-        content: open-quote;
-        position: absolute;
-        left: -.6em;
-        top: -.3em;
-      }
-
-      &:after {
-        position: absolute;
-        content: close-quote;
-        margin-left: .02em;
-        margin-top: -.1em;
-      }
-    }
-
-    figcaption {
-      margin-top: .6em;
-      @include font-size(xsmall);
-    }
   }
 }

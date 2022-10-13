@@ -32,7 +32,7 @@
 
     @include mq($until: tablet) {
       flex: 1;
-      margin: 1em;
+      margin: $indent-amount;
     }
 
     &:focus .menu-button__icon {

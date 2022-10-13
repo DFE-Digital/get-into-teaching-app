@@ -4,7 +4,7 @@
   image: "media/images/content/hero-images/0025.jpg"
 ) %>
 
-<div class="subject-specific">
+<div class="campaign">
   <article>
     <section class="statement">
       <span class="pink xlarge bold">What to expect</span>
@@ -35,70 +35,67 @@
       <p>You'll need to register to attend a Get Into Teaching event. Places are limited, so the sooner you sign up, the better.</p>
     </section>
 
-    <section class="grey-bg fullwidth">
-      <%= render SubjectSpecific::TextBlockWithOneImageComponent.new(
-        heading: "Events in your region",
-        colour: "blue",
-        image_path: "media/images/content/homepage/here-to-help.jpg",
-        image_alt: "A woman at a Get Into Teaching event wearing a blue T-shirt with Here to Help written on it.",
-      ) %>
-    </section>
-
-    <section class="fullwidth grey-bg no-padding no-margin">
-      <section class="container no-margin">
-        <section class="category__cards">
-          <%= tag.nav(class: "category__nav-cards") do %>
-            <ul class="single-column">
-              <%= render(Categories::CardComponent.with_collection(categorise_events(@git_events))) %>
-            </ul>
-          <% end %>
+    <section class="overlapping">
+      <section class="grey">
+        <section class="container">
+          <div class="inset">
+            <%= render Campaign::TextBlockWithOneImageComponent.new(
+              heading: "Events in your region",
+              colour: "blue",
+              image_path: "media/images/content/homepage/here-to-help.jpg",
+              image_alt: "A woman at a Get Into Teaching event wearing a blue T-shirt with Here to Help written on it.",
+            ) %>
+            <section class="category__cards">
+              <%= tag.nav(class: "category__nav-cards") do %>
+                <ul class="one-column horizontal">
+                  <%= render(Categories::CardComponent.with_collection(categorise_events(@git_events))) %>
+                </ul>
+              <% end %>
+              <div>
+                <h2 class="heading-s">Can't find what you're looking for?</h2>
+                <p>You can also take a look at our <%= link_to("online Q&A events", events_path({ teaching_events_search: { type: ["onlineqa"] }})) %> or <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }})) %> in your area.</p>
+              </div>
+            </section>
+          </div>
         </section>
       </section>
-    </section>
 
-    <section class="fullwidth grey-bg no-margin no-padding-top">
-      <section class="container no-margin bottom-padding">
-        <div>
-          <h2 class="heading-s">Can't find what you're looking for?</h2>
-          <p>You can also take a look at our <%= link_to("online Q&A events", events_path({ teaching_events_search: { type: ["onlineqa"] }})) %> or <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }})) %> in your area.</p>
+      <section class="what-theyre-saying">
+        <div class="triangle on-grey yellow-triangle">
+          <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+            <polygon points="0,100 100,0 100,100"></polygon>
+          </svg>
         </div>
+        <div class="subheading">
+          <h3 class="heading--box-pink heading-xl heading--margin-0">What they're saying</h3>
+        </div>
+        <figure>
+          <blockquote>Really helpful and friendly. Provided very tangible advice on next steps.</blockquote>
+        </figure>
       </section>
     </section>
 
-    <section class="what-theyre-saying fullwidth no-margin no-padding">
-      <div class="triangle grey-bg no-padding yellow-triangle">
-        <svg height="100%" width="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
-          <polygon points="0,100 100,0 100,100"></polygon>
-        </svg>
+    <section class="videos container">
+      <div class="statement">
+        <h2 class="blue xlarge">Why you should attend</h2>
       </div>
-      <div class="subheading">
-        <h3 class="heading--box-pink heading-xl heading--margin-0">What they're saying</h3>
+      <div class="inset">
+        <div class="video">
+          <%= render Content::YoutubeVideoComponent.new(
+            id: "wLfWfIzIRRY",
+            title: "Train to Teach Events: Take your next step towards teaching"
+          ) %>
+          <p>For everyone thinking of teaching.</p>
+        </div>
+        <div class="video">
+          <%= render Content::YoutubeVideoComponent.new(
+            id: "ToOhH06zMQA",
+            title: "Train to Teach Events: Take your next step towards teaching"
+          ) %>
+          <p>Get all your questions answered.</p>
+        </div>
       </div>
-      <figure>
-        <blockquote>Really helpful and friendly. Provided very tangible advice on next steps.</blockquote>
-      </figure>
     </section>
 
-    <section class="fullwidth">
-      <section class="container">
-        <span class="blue xlarge bold">Why you should attend</span>
-        <div class="videos">
-          <div>
-            <%= render Content::YoutubeVideoComponent.new(
-              id: "wLfWfIzIRRY",
-              title: "Train to Teach Events: Take your next step towards teaching"
-            ) %>
-            <p>For everyone thinking of teaching.</p>
-          </div>
-          <div>
-            <%= render Content::YoutubeVideoComponent.new(
-              id: "ToOhH06zMQA",
-              title: "Train to Teach Events: Take your next step towards teaching"
-            ) %>
-            <p>Get all your questions answered.</p>
-          </div>
-        </div>
-      </section>
-    </section>
   </article>
 </div>

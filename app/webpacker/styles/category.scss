@@ -23,22 +23,20 @@
   &__nav-cards ul {
     display: grid;
     grid-template-columns: 1fr;
-    margin-inline: 1em;
     margin-block: 2em;
     padding: 0;
     gap: 1.2em;
     list-style: none;
 
-    &:not(.single-column) {
-      @include mq($from: tablet) {
+    @include mq($from: tablet) {
+      &:not(.one-column) {
         grid-template-columns: repeat(2, 1fr);
-        margin-inline: 2em;
       }
     }
 
-    &.single-column {
+    &.horizontal {
       @include mq($from: tablet) {
-        .category__nav-card .category__nav-card--content {
+        .category__nav-card--content {
           display: flex;
           gap: $indent-amount;
 
@@ -135,7 +133,7 @@
 }
 
 .promo {
-  max-width: 60em;
+  max-width: $content-max-width;
   border-top: 1px solid $grey-mid;
   padding-top: 3em;
   margin: 3em auto;
@@ -248,7 +246,7 @@
 
   &__container {
     margin: 4em auto;
-    max-width: 60em;
+    max-width: $content-max-width;
     display: flex;
     flex-direction: column-reverse;
     gap: 2em;
@@ -289,7 +287,7 @@
 
 .find-your-course {
   margin: auto;
-  max-width: 60em;
+  max-width: $content-max-width;
   border-top: 1px solid $grey-mid;
   padding-top: 3em;
   display: flex;

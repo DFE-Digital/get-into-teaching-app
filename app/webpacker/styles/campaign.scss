@@ -1,0 +1,7 @@
+.campaign {
+  @import "campaign/article";
+  @import "campaign/quote";
+  @import "campaign/videos";
+  @import "campaign/overlapping";
+  @import "campaign/text-blocks-with-images";
+}

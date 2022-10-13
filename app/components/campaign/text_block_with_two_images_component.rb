@@ -1,4 +1,4 @@
-module SubjectSpecific
+module Campaign
   class TextBlockWithTwoImagesComponent < ViewComponent::Base
     attr_reader :heading, :colour
 

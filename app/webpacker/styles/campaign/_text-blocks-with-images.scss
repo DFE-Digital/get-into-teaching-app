@@ -13,6 +13,8 @@
   }
 
   picture {
+    margin: 0 $indent-amount;
+
     img {
       max-width: 100%;
       height: auto;
@@ -21,7 +23,7 @@
 }
 
 .text-block-with-one-image {
-  max-width: 50em;
+  max-width: $content-max-width;
 
   @include mq($from: tablet) {
     grid-template-columns: 1fr 5em 20em 1fr;
@@ -52,7 +54,7 @@
 }
 
 .text-block-with-two-images {
-  max-width: 60em;
+  max-width: $content-max-width;
 
   @include mq($from: tablet) {
     grid-template-columns: repeat(2, 1fr) repeat(2, .8fr) 1fr;
