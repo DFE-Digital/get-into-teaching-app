@@ -64,7 +64,7 @@ class TeachingEventsController < ApplicationController
 
     @front_matter = {
       title: "Get Into Teaching events",
-      description: "Find out all you need to know about starting a career in teaching at a Get Into Teaching event.",
+      description: "Find out what happens at a Get Into Teaching event and book your place, whether you’re ready to start your career in teaching or just curious.",
     }.with_indifferent_access
 
     render layout: "minimal"
