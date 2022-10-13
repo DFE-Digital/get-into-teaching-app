@@ -128,6 +128,7 @@ These payments are called ‘teaching and learning responsibility’ (TLR) payme
 
 * progressing the education of people beyond your assigned pupils
 * leading, developing and enhancing the teaching practice of others
+* being the head of year or department
 * TLR payments come in 2 main pay ranges (TLR 1 and TLR 2) depending on your responsibilities
 
 | Level         | Minimum | Maximum|
