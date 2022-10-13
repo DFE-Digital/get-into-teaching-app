@@ -75,12 +75,6 @@ Most established teachers will earn more than this maximum by progressing onto t
 
 If you’re not sure whether you'll be teaching in inner, outer or the fringe of London, talk to your school.
 
-## Career progression
-
-There are different ways to progress and increase your teaching salary.
-
-For example, you can move into a more senior role, or take on additional responsibilities that help your school.
-
 ### Upper pay range for teachers
 
 If you take on extra responsibilities, like being a head of department, you can be put onto the upper pay range for teachers.
