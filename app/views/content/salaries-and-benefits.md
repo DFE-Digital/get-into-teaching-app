@@ -56,7 +56,7 @@ Figures are for teachers in the 2022/23 academic year.
 
 ## Teaching salaries
 
-All recently qualified teachers will have a starting salary of at least £28,000. This will be higher for teachers working in and around London.
+All qualified teachers will have a starting salary of at least £28,000. This will be higher for teachers working in and around London.
 
 ### Qualified teacher salary
 
