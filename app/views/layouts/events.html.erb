@@ -4,15 +4,13 @@
     <%= csrf_meta_tags %>
   <% end %>
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
-
+  <%= body_tag do %>
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main id="main-content" role="main">
+    <%= main_tag do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
-      <section class="main-body">
+      <section class="main-section">
         <section class="container events">
           <article class="markdown<%= " fullwidth" if @before_search_fullwidth %> ">
             <%= yield :before_search %>
@@ -29,7 +27,7 @@
           </article>
         </section>
       </section>
-    </main>
+    <% end %>
 
     <%= render FooterComponent.new %>
   <% end %>

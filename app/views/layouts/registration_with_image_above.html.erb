@@ -5,12 +5,10 @@
   <% end %>
 
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
-
+  <%= body_tag do %>
     <%= render HeaderComponent.new %>
 
-    <main role="main" id="main-content" class="main-body registration-with-image-above" role="main">
+    <%= main_tag(class: "main-section registration-with-image-above") do %>
       <% if @event.is_online %>
         <%= render Content::ImageComponent.new(path: "media/images/content/event-signup/event-regional-online.jpg") %>
       <% else %>
@@ -25,7 +23,7 @@
       <section class="feature registration">
         <%= yield %>
       </section>
-    </main>
+    <% end %>
 
     <%= render FooterComponent.new(talk_to_us: false, feedback: false, mailing_list: false) %>
     <%= javascript_pack_tag 'govuk/frontend', 'data-turbolinks-track': 'reload', async: true %>

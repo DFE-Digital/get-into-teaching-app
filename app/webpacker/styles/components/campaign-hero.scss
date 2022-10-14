@@ -1,4 +1,4 @@
-.campaign-header {
+.campaign-hero {
   // the two ratios don't overlap exactly because we'd get a jagged
   // edge - instead adjust the second slightly so it blurs smoothly
 
@@ -77,7 +77,11 @@
     }
 
     span:last-of-type {
-      @include font-size(xxxlarge, $adjust: 2rem);
+      @include font-size(xxxlarge, $adjust: 0.75rem);
+
+      @include mq($from: mobile) {
+        @include font-size(xxxlarge, $adjust: 2rem);
+      }
     }
   }
 
