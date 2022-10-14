@@ -14,5 +14,6 @@
   content:
     - content/home/purple-box
     - content/home/calls-to-action
+    - content/home/salaries-banner
     - content/home/directory
 ---
