@@ -1,10 +1,13 @@
 <%= tag.div(class: classes, data: { controller: "searchbox", "searchbox-search-input-id-value" => search_input_id }, role: "navigation") do %>
   <ul class="extra-navigation__list">
-    <li class="extra-navigation__link extra-navigation__mail">
-      <%= link_to("/mailinglist/signup/name", class: "link--black") do %>
-      Register your interest
-      <span class="icon icon-mail" aria-hidden="true"></span>
-      <span class="icon icon-mail-white" aria-hidden="true"></span>
+    <li class="extra-navigation__link">
+      <%= link_to(events_path({ teaching_events_search: { type: ["git"] }}), class: "link--black") do %>
+      <i
+        class="badge"
+        data-controller="badge"
+        data-badge-path-value="<%= git_statistics_events_path %>"
+        data-badge-json-key-value="open_events_count"></i>
+      Get Into Teaching events
       <% end %>
     </li>
     <%= tag.li(class: %w[extra-navigation__link extra-navigation__search]) do %>
