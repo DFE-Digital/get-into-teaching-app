@@ -550,7 +550,9 @@ jobs:
   integration:
     name: Run Integration Tests on QA
     runs-on: ubuntu-latest
-    needs: [ qa ]
+    needs: [ build_base, qa ]
+    env:
+      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
