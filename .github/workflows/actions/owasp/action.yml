@@ -48,7 +48,7 @@ runs:
              echo ::set-output name=SCAN::$rval
 
       - name: ZAP Scan
-        uses: zaproxy/action-full-scan@v0
+        uses: zaproxy/action-full-scan@v0.4.0
         with:
           token: ${{ inputs.GITHUB_TOKEN }}
           docker_name: 'owasp/zap2docker-stable'
