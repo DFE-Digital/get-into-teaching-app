@@ -1,0 +1,24 @@
+html:not(.js-enabled) {
+  .badge {
+    display: none;
+  }
+}
+
+.badge {
+  display: inline-block;
+  line-height: 0px;
+  border-radius: 50%;
+  color: $white;
+  background-color: $purple;
+  font-weight: bold;
+  font-size: 0.8em;
+  margin-right: $indent-amount / 4;
+
+  span {
+    display: inline-block;
+    padding-top: 50%;
+    padding-bottom: 50%;
+    margin-left: 7px;
+    margin-right: 7px;
+  }
+}
