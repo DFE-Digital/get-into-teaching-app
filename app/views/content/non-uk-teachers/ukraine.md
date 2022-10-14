@@ -171,7 +171,9 @@ From spring 2023, qualified teachers from Ukraine will be able to apply to the T
 
 ### Salaries and benefits
 
-Your salary as a teacher depends on whether you have QTS, and your level of experience. The salary for a teacher without QTS will generally start at £18,419 outside London. [Find out more about salaries and benefits](/salaries-and-benefits) for teachers in England.
+Your salary as a teacher depends on whether you have QTS, and your level of experience.
+
+[Find out more about salaries and benefits](/salaries-and-benefits) for teachers in England.
 
 ## Train to teach in England
 
