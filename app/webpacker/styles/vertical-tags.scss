@@ -1,4 +1,4 @@
-.badges {
+.vertical-tags {
   $divider-colour: #0b0c0c;
 
   display: flex;
@@ -14,7 +14,7 @@
   padding-left: .8em;
   padding-block: 1em;
 
-  .badge {
+  .tag {
     padding: .4em 1em .4em 2em !important;
     display: inline-block;
     margin-left: -2em;
