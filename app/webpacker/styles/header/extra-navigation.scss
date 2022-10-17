@@ -27,6 +27,20 @@
     }
   }
 
+  &__mail a {
+    &:not(:focus) {
+      .icon-mail-white {
+        display: none;
+      }
+    }
+
+    &:focus {
+      .icon-mail {
+        display: none;
+      }
+    }
+  }
+
   &__search a {
     background-color: $pink;
     padding: 0.6em $indent-amount / 2;
