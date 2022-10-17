@@ -1,7 +1,7 @@
-<div class="teaching-events__none" role="alert">
-  <h3 class="heading--margin-top-0">
+<div class="teaching-events__events teaching-events__events--none" role="alert">
+  <h2 class="heading-m">
     0 events found
-  </h3>
+  </h2>
 
   <p><strong>Why not try:</strong></p>
   <ul>
@@ -15,3 +15,10 @@
     <li><%= link_to("clearing your filters", events_path) %> to start again</li>
   </ul>
 </div>
+
+<% if @national_git_events&.any? %>
+<div class="teaching-events__events teaching-events__events--regular">
+  <h2 class="heading-m">Other events you may be interested in</h2>
+  <ol><%= render TeachingEvents::EventComponent.with_collection(@national_git_events) %></ol>
+</div>
+<% end %>
