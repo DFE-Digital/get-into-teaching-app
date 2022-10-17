@@ -296,7 +296,7 @@ Alternatively, you may be eligible for a different type of visa which allows you
 
 ### 6. Plan your move to the UK
 
-Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/Information--Advice) for advice about immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
+Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for advice about immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
 
 Your teacher training provider may also be able to help you plan your move to the UK  – contact them directly to ask.
 
