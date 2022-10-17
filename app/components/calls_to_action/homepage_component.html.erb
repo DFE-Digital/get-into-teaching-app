@@ -1,6 +1,7 @@
 <%= tag.div(class: %w[call-to-action call-to-action--homepage]) do %>
     <%= tag.div(icon, class: "call-to-action__icon__container") %>
     <%= tag.div(class: "call-to-action__content") do %>
+      <%= tag.div(caption, class: "caption-m caption--purple caption--bold") if caption %>
       <%= tag.h2(title, class: "call-to-action__heading") %>
       <%= tag.p(text) if text.present? %>
     <% end %>

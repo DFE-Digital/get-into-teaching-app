@@ -13,6 +13,7 @@ html:not(.js-enabled) {
   font-weight: bold;
   font-size: 0.8em;
   margin-right: $indent-amount / 4;
+  text-align: center;
 
   span {
     display: inline-block;
@@ -20,5 +21,18 @@ html:not(.js-enabled) {
     padding-bottom: 50%;
     margin-left: 7px;
     margin-right: 7px;
+  }
+
+  &--bordered {
+    border: 1px solid $white;
+  }
+
+  &--fixed-80 {
+    line-height: normal;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
