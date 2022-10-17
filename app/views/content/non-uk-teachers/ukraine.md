@@ -228,7 +228,7 @@ To get advice about training to teach, you can:
 
 ### Get help with international qualifications
 
-If your qualifications come from a non-UK institution, your teacher training provider may want to see a [statement of comparability](https://enic.org.uk/Qualifications/SOC/Default.aspx) from UK ENIC. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
+If your qualifications come from a non-UK institution, your teacher training provider may want to see a [statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) from UK ENIC. A statement of comparability proves that your school and university qualifications are the same standard as UK GCSEs and a UK undergraduate degree.
 
 Call us on +44 (0) 800 389 2500 for:
 
