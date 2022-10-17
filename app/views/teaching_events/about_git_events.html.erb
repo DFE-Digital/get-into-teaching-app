@@ -60,7 +60,7 @@
       <section class="container no-margin bottom-padding">
         <div>
           <h2 class="heading-s">Can't find what you're looking for?</h2>
-          <p><%= link_to("View all events", events_path, class: "link--bold") %></p>
+          <p>You can also find <%= link_to("events in your area hosted by teacher training providers", events_path, class: "link--bold") %>. Or, take a look at our <%= link_to("online events", events_path(add_online_events(params))) %>.</p>
         </div>
       </section>
     </section>
