@@ -1,7 +1,7 @@
 ---
 # hero
 "media/images/content/hero-images/event-image.jpg":
-  alt: "A teahing event in progress"
+  alt: "A Get Into Teaching event in progress with people talking to teachers and advisers"
   variants:
     - "media/images/content/hero-images/event-image--mobile.jpg"
     - "media/images/content/hero-images/event-image--tablet.jpg"
