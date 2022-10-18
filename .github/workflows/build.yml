@@ -343,7 +343,7 @@ jobs:
           key: SONAR-TOKEN
 
       - name: Setup sonarqube
-        uses: warchant/setup-sonar-scanner@v3
+        uses: warchant/setup-sonar-scanner@v4
 
       - name: Download Artifacts
         uses: actions/download-artifact@v3
