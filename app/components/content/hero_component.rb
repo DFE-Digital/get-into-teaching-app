@@ -1,6 +1,6 @@
 module Content
   class HeroComponent < ViewComponent::Base
-    attr_accessor :title, :subtitle, :image, :show_mailing_list, :paragraph, :title_bg_color, :hero_bg_color, :hero_blend_content
+    attr_accessor :title, :subtitle, :image, :show_mailing_list, :paragraph, :title_bg_color, :hero_bg_color, :hero_blend_content, :hero_content_width
 
     def initialize(front_matter)
       return if front_matter.blank?
@@ -17,12 +17,14 @@ module Content
         @title_bg_color     = fm["title_bg_color"] || "yellow"
         @hero_bg_color      = fm["hero_bg_color"] || "grey"
         @hero_blend_content = fm["hero_blend_content"] || false
+        @hero_content_width = fm["hero_content_width"] || "even"
       end
     end
 
     def classes
       ["hero", hero_bg_color].tap do |c|
         c << "blend-content" if hero_blend_content
+        c << "content-#{hero_content_width}"
       end
     end
 

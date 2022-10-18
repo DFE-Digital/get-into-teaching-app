@@ -11,6 +11,7 @@
   image: "media/images/content/hero-images/git_event_in_person.jpg"
   navigation_title: "Home"
   navigation_path: "/"
+  hero_content_width: wide
   content:
     - content/home/purple-box
     - content/home/calls-to-action
