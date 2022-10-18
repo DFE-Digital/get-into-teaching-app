@@ -14,6 +14,7 @@
   &__link a {
     display: inline-block;
     padding: 0.6em $indent-amount;
+    line-height: 28px;
 
     .icon {
       margin-left: 0.5em;
@@ -26,23 +27,10 @@
     }
   }
 
-  &__mail a {
-    &:not(:focus) {
-      .icon-mail-white {
-        display: none;
-      }
-    }
-
-    &:focus {
-      .icon-mail {
-        display: none;
-      }
-    }
-  }
-
   &__search a {
     background-color: $pink;
     padding: 0.6em $indent-amount / 2;
+    line-height: 28px;
 
     &:hover {
       background-color: $pink-dark;

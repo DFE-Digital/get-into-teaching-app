@@ -56,11 +56,7 @@ class TeachingEventsController < ApplicationController
   end
 
   def about_git_events
-    @git_events = GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(
-      type_ids: [EventType.get_into_teaching_event_id],
-      start_after: Time.zone.now,
-      quantity: 20,
-    )
+    @git_events = git_events
 
     @front_matter = {
       title: "Get Into Teaching events",
@@ -74,7 +70,23 @@ class TeachingEventsController < ApplicationController
     render "not_available"
   end
 
+  def git_statistics
+    open_git_events = git_events.select { |e| e.status_id == EventStatus.open_id }
+
+    statistics = {
+      open_events_count: open_git_events.count,
+    }
+
+    respond_to do |format|
+      format.json { render json: statistics }
+    end
+  end
+
 private
+
+  def git_events
+    TeachingEvents::Search.new(type: %w[git]).results
+  end
 
   def not_available_path
     events_not_available_path
