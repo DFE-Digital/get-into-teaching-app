@@ -8,7 +8,7 @@
   subtitle: "Whether you're ready to start your career in teaching or just curious, we can answer your questions at a Get Into Teaching event."
   subtitle_button: "Get Into Teaching events"
   subtitle_link: "/events/about-get-into-teaching-events"
-  image: "media/images/content/hero-images/girl-with-raised-hand.jpg"
+  image: "media/images/content/hero-images/event-image.jpg"
   navigation_title: "Home"
   navigation_path: "/"
   hero_content_width: wide
