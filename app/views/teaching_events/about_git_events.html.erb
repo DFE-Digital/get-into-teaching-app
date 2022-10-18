@@ -16,7 +16,7 @@
       <p>These relaxed and informative events give you the opportunity to get expert advice and talk to teachers and local training providers.</p>
     </section>
     <section>
-      <h2 class="heading-m">At the event</h2>
+      <h2 class="heading-m">At our Get Into Teaching events</h2>
 
       <p>Drop in any time during an event for presentations, one-to-one chats or to meet others like you who are thinking of stepping into the classroom.</p>
 
@@ -60,7 +60,7 @@
       <section class="container no-margin bottom-padding">
         <div>
           <h2 class="heading-s">Can't find what you're looking for?</h2>
-          <p><%= link_to("View all events", events_path, class: "link--bold") %></p>
+          <p>You can also take a look at our <%= link_to("online Q&A events", events_path({ teaching_events_search: { type: ["onlineqa"] }})) %> or <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }})) %> in your area.</p>
         </div>
       </section>
     </section>
