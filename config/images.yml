@@ -1,10 +1,10 @@
 ---
 # hero
-"media/images/content/hero-images/girl-with-raised-hand.jpg":
-  alt: "Classroom of pupils with their hands up."
+"media/images/content/hero-images/event-image.jpg":
+  alt: "A teahing event in progress"
   variants:
-    - "media/images/content/hero-images/girl-with-raised-hand--mobile.jpg"
-    - "media/images/content/hero-images/girl-with-raised-hand--tablet.jpg"
+    - "media/images/content/hero-images/event-image--mobile.jpg"
+    - "media/images/content/hero-images/event-image--tablet.jpg"
 
 "media/images/content/hero-images/cake.png":
   alt: "A multicoloured cake with sprinkles."
