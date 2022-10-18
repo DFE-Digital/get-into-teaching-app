@@ -15,104 +15,8 @@ permissions:
   pull-requests: write
 
 jobs:
-  build_release:
-    name: Build (Release)
-    runs-on: ubuntu-latest
-    outputs:
-      DOCKER_IMAGE: ${{ steps.docker.outputs.DOCKER_IMAGE }}
-
-    steps:
-      - name: Check out the repo
-        uses: actions/checkout@v3
-
-      - name: set-up-environment
-        uses: DFE-Digital/github-actions/set-up-environment@master
-
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - uses: DfE-Digital/keyvault-yaml-secret@v1
-        id:  keyvault-yaml-secret
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          secret: INFRA-KEYS
-          key: SLACK-WEBHOOK
-
-      - name: Set up Docker Buildx
-        id: buildx
-        uses: docker/setup-buildx-action@master
-
-      - name: Get Short SHA
-        id: sha
-        run: |
-             echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
-
-      - name: Set DOCKER_IMAGE environment variable
-        id:   docker
-        run: |
-             if [ "${{github.ref}}" == "refs/heads/master" ]
-             then
-                GIT_BRANCH=master
-             else
-                GIT_REF=${{ github.head_ref }}
-                GIT_BRANCH=${GIT_REF##*/}
-             fi
-
-             echo "BRANCH_TAG=$GIT_BRANCH" >> $GITHUB_ENV
-             echo ::set-output name=DOCKER_IMAGE::${{ env.DOCKER_REPOSITORY }}:sha-${{steps.sha.outputs.short }}
-
-      - name: Login to Docker Hub
-        uses: docker/login-action@v2.0.0
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Build and push base
-        uses: docker/build-push-action@v3.1.1
-        with:
-          context: .
-          cache-from: |
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:base-master
-          tags: ${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-          push: true
-          target: base
-          build-args: |
-            BUILDKIT_INLINE_CACHE=1
-            SHA=${{ steps.sha.outputs.short }}
-            BUILD_TYPE=release
-
-      - name: Build and push release image
-        uses: docker/build-push-action@v3.1.1
-        with:
-          context: .
-          cache-from: |
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:master
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-master
-          tags: |
-            ${{ steps.docker.outputs.DOCKER_IMAGE }}
-            ${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
-          push: true
-          build-args: |
-            BUILDKIT_INLINE_CACHE=1
-            SHA=${{ steps.sha.outputs.short }}
-            BUILD_TYPE=release
-
-      - name: Slack Notification
-        if: failure() && github.ref == 'refs/heads/master'
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_MESSAGE: 'There has been a failure building the application'
-           SLACK_TITLE: 'Failure Building Application'
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
-
-  build_test:
-    name: Build (Test)
+  build_base:
+    name: Build base image
     runs-on: ubuntu-latest
     outputs:
       DOCKER_IMAGE_TEST: ${{ steps.docker.outputs.DOCKER_IMAGE_TEST }}
@@ -124,22 +28,6 @@ jobs:
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
 
-      - uses: Azure/login@v1
-        with:
-            creds: ${{ secrets.AZURE_CREDENTIALS }}
-
-      - uses: DfE-Digital/keyvault-yaml-secret@v1
-        id:  keyvault-yaml-secret
-        with:
-          keyvault: ${{ secrets.KEY_VAULT}}
-          secret: INFRA-KEYS
-          key: SLACK-WEBHOOK
-
-      - name: Lint Dockerfile
-        uses: brpaz/hadolint-action@master
-        with:
-             dockerfile: "Dockerfile"
-
       - name: Set up Docker Buildx
         id: buildx
         uses: docker/setup-buildx-action@master
@@ -149,7 +37,7 @@ jobs:
         run: |
              echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
 
-      - name: Set DOCKER_IMAGE_TEST environment variable
+      - name: Set docker images variables
         id:   docker
         run: |
              if [ "${{github.ref}}" == "refs/heads/master" ]
@@ -161,32 +49,146 @@ jobs:
              fi
 
              echo "BRANCH_TAG=$GIT_BRANCH" >> $GITHUB_ENV
-             echo ::set-output name=DOCKER_IMAGE_TEST::${{ env.DOCKER_REPOSITORY }}:test-sha-${{ steps.sha.outputs.short }}
+             echo "DOCKER_IMAGE_TEST=${{ env.DOCKER_REPOSITORY }}:base-sha-${{steps.sha.outputs.short }}" >> $GITHUB_OUTPUT
 
-      - name: Login to Docker Hub
+      - name: Login to Docker registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ github.repository_owner }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build and push base image
+        uses: docker/build-push-action@v3
+        with:
+          target: base
+          context: .
+          cache-from: |
+            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
+            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:base-master
+          tags: |
+            ${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
+            ${{ env.DOCKER_REPOSITORY }}:base-sha-${{ steps.sha.outputs.short }}
+          push: true
+          build-args: |
+            BUILDKIT_INLINE_CACHE=1
+
+      - uses: Azure/login@v1
+        if: failure() && github.ref == 'refs/heads/master'
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        if: failure() && github.ref == 'refs/heads/master'
+        id:  keyvault-yaml-secret
+        with:
+          keyvault: ${{ secrets.KEY_VAULT}}
+          secret: INFRA-KEYS
+          key: SLACK-WEBHOOK
+
+      - name: Slack Notification
+        if: failure() && github.ref == 'refs/heads/master'
+        uses: rtCamp/action-slack-notify@master
+        env:
+           SLACK_COLOR: ${{env.SLACK_ERROR}}
+           SLACK_MESSAGE: 'There has been a failure building the application'
+           SLACK_TITLE: 'Failure Building Application'
+           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
+
+  build_release:
+    name: Build release image
+    needs: [build_base]
+    runs-on: ubuntu-latest
+    outputs:
+      DOCKER_IMAGE: ${{ steps.docker.outputs.DOCKER_IMAGE }}
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v3
+
+      - name: set-up-environment
+        uses: DFE-Digital/github-actions/set-up-environment@master
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@master
+
+      - name: Get Short SHA
+        id: sha
+        run: |
+             echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
+
+      - name: Set docker images variables
+        id:   docker
+        run: |
+             if [ "${{github.ref}}" == "refs/heads/master" ]
+             then
+                GIT_BRANCH=master
+             else
+                GIT_REF=${{ github.head_ref }}
+                GIT_BRANCH=${GIT_REF##*/}
+             fi
+
+             echo "BRANCH_TAG=$GIT_BRANCH" >> $GITHUB_ENV
+             echo "DOCKER_IMAGE=${{ env.DOCKER_REPOSITORY }}:sha-${{steps.sha.outputs.short }}" >> $GITHUB_OUTPUT
+
+      - name: Login to Docker registry
         uses: docker/login-action@v2.0.0
         with:
           registry: ghcr.io
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Build and push test image
+      - name: Build and push release image
         uses: docker/build-push-action@v3.1.1
         with:
-          push: true
+          target: release
           context: .
           cache-from: |
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:test-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:test-master
             type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-master
+            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:base-master
+            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
+            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:release-build-master
+            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
+            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:master
           tags: |
-            ${{ steps.docker.outputs.DOCKER_IMAGE_TEST }}
-            ${{ env.DOCKER_REPOSITORY }}:test-${{ env.BRANCH_TAG }}
+            ${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
+            ${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
+          push: true
           build-args: |
             BUILDKIT_INLINE_CACHE=1
             SHA=${{ steps.sha.outputs.short }}
-            BUILD_TYPE=test
+
+      - name: Push release-build image
+        uses: docker/build-push-action@v3.1.1
+        with:
+          target: release-build
+          context: .
+          cache-from: |
+            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
+            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:release-build-master
+            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
+            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:base-master
+          tags: |
+            ${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
+            ${{ env.DOCKER_REPOSITORY }}:release-build-sha-${{ steps.sha.outputs.short }}
+          push: true
+          build-args: |
+            BUILDKIT_INLINE_CACHE=1
+            SHA=${{ steps.sha.outputs.short }}
+
+      - uses: Azure/login@v1
+        if: failure() && github.ref == 'refs/heads/master'
+        with:
+            creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - uses: DfE-Digital/keyvault-yaml-secret@v1
+        if: failure() && github.ref == 'refs/heads/master'
+        id:  keyvault-yaml-secret
+        with:
+          keyvault: ${{ secrets.KEY_VAULT}}
+          secret: INFRA-KEYS
+          key: SLACK-WEBHOOK
 
       - name: Slack Notification
         if: failure() && github.ref == 'refs/heads/master'
@@ -200,8 +202,10 @@ jobs:
   ruby_linting:
     name: Ruby Linting
     runs-on: ubuntu-latest
-    needs: [ build_test ]
+    needs: [ build_base ]
     if: github.ref != 'refs/heads/master'
+    env:
+      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
@@ -211,7 +215,7 @@ jobs:
 
       - name: Lint Ruby
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} \
+          docker run -t --rm -v ${PWD}/out:/app/out -e RAILS_ENV=test ${{env.DOCKER_IMAGE_TEST}} \
             rubocop --format json --out=/app/out/rubocop-result.json
 
       - name: Keep Rubocop output
@@ -223,16 +227,18 @@ jobs:
 
       - name: Lint ERB Templates
         run: |-
-          docker run -t --rm ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "bundle exec erblint --lint-all"
+          docker run -t --rm ${{env.DOCKER_IMAGE_TEST}} bundle exec erblint --lint-all
 
       - name: Lint Markdown
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
+          docker run -t --rm -v ${PWD}/out:/app/out ${{env.DOCKER_IMAGE_TEST}} sh -c "bundle exec mdl app/views/**/*.md | tee /app/out/mdl-result.txt"
 
   javascript_tests:
     name: Javascript Tests
     runs-on: ubuntu-latest
-    needs: [ build_test ]
+    needs: [ build_base ]
+    env:
+      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
@@ -243,17 +249,19 @@ jobs:
       - name: ESLint - JavaScript linting
         run: |-
           docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "yarn && yarn js-lint"
+            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn js-lint"
 
       - name: Run Javascript Tests
         run: |-
           docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true \
-            ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "yarn && yarn spec"
+            ${{env.DOCKER_IMAGE_TEST}} sh -c "yarn && yarn spec"
 
   feature_tests:
     name: Unit Tests
     runs-on: ubuntu-latest
-    needs: [ build_test ]
+    needs: [ build_base ]
+    env:
+      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     strategy:
       fail-fast: false
       matrix:
@@ -281,8 +289,8 @@ jobs:
         run: |-
           docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage/coverage-${{ matrix.ci_node_index }}:/app/coverage -e TEST_REPORT_FILE -e TEST_REPORT_FINAL_FILE -e KNAPSACK_PRO_FIXED_QUEUE_SPLIT \
             -e KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC -e KNAPSACK_PRO_COMMIT_HASH -e KNAPSACK_PRO_BRANCH -e KNAPSACK_PRO_CI_NODE_TOTAL -e KNAPSACK_PRO_CI_NODE_INDEX -e \
-            KNAPSACK_PRO_LOG_LEVEL -e RAILS_ENV=test ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} \
-            "bundle exec rake 'knapsack_pro:queue:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress]' spec"
+            KNAPSACK_PRO_LOG_LEVEL -e RAILS_ENV=test ${{env.DOCKER_IMAGE_TEST}} \
+            bundle exec rake 'knapsack_pro:queue:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress]' spec
         env:
           KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC: ${{ steps.keyvault-yaml-secret.outputs.KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC }}
           KNAPSACK_PRO_CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
@@ -312,8 +320,10 @@ jobs:
   sonarscanner:
     name: Sonar Scanner
     runs-on: ubuntu-latest
-    needs: [ build_test, feature_tests ]
+    needs: [ build_base, feature_tests ]
     if: github.ref != 'refs/heads/master'
+    env:
+      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
@@ -341,7 +351,7 @@ jobs:
       - name: Combine Coverage Reports
         run: |-
           docker run -t --rm -v ${{github.workspace}}/code_coverage:/app/coverage -e RAILS_ENV=test -e COVERAGE_DIR \
-            ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "bundle exec rake coverage:collate"
+            ${{env.DOCKER_IMAGE_TEST}} bundle exec rake coverage:collate
         env:
           COVERAGE_DIR: /app/coverage
 
@@ -406,13 +416,13 @@ jobs:
 
       - name: Add Review Label
         if: contains(github.event.pull_request.user.login, 'dependabot') == false
-        uses: actions-ecosystem/action-add-labels@v1.1.3
+        uses: actions-ecosystem/action-add-labels@v1
         with:
           labels: Review
 
   development:
     name: Development Deployment
-    needs: [  feature_tests, javascript_tests  ]
+    needs: [  feature_tests, javascript_tests, build_release  ]
     if: github.ref == 'refs/heads/master'
     concurrency: Development
     runs-on: ubuntu-latest
@@ -456,7 +466,7 @@ jobs:
       - name: Create a GitHub Release
         id: release
         if: steps.tag_version.outputs.pr_found == 1
-        uses: actions/create-release@v1.1.4
+        uses: actions/create-release@v1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
@@ -494,7 +504,7 @@ jobs:
 
   qa:
     name: Quality Assurance Deployment
-    needs: [  feature_tests, javascript_tests  ]
+    needs: [  feature_tests, javascript_tests, build_release ]
     if: github.ref == 'refs/heads/master'
     concurrency: QA
     runs-on: ubuntu-latest
@@ -540,7 +550,9 @@ jobs:
   integration:
     name: Run Integration Tests on QA
     runs-on: ubuntu-latest
-    needs: [ build_test, qa ]
+    needs: [ build_base, qa ]
+    env:
+      DOCKER_IMAGE_TEST: ${{needs.build_base.outputs.DOCKER_IMAGE_TEST}}
     steps:
       - name: Check out the repo
         uses: actions/checkout@v3
@@ -562,7 +574,7 @@ jobs:
       - name: Run Integration Tests
         run: |-
           docker run -t --rm -e RAILS_ENV=test -e NODE_ENV=test -e CI=true -e HTTP_USERNAME -e HTTP_PASSWORD -e MAILSAC_API_KEY \
-            ${{needs.build_test.outputs.DOCKER_IMAGE_TEST}} "bundle exec rspec --tag integration"
+            ${{env.DOCKER_IMAGE_TEST}} bundle exec rspec --tag integration
         env:
           HTTP_USERNAME: ${{ steps.keyvault-yaml-secret.outputs.HTTP-USERNAME }}
           HTTP_PASSWORD: ${{ steps.keyvault-yaml-secret.outputs.HTTP-PASSWORD }}

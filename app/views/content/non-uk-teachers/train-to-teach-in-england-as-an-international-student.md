@@ -98,7 +98,7 @@ When you plan your training, bear in mind that:
 living costs, to train (depending on your immigration status, you may get a reduction in fees and some financial support)
 - training lasts one academic year full-time, or longer part-time
 - you can apply for paid teaching jobs as soon as you successfully complete your training
-- you'll earn at least £25,000 a year, and £32,000 in London, when you qualify as a teacher
+- you'll earn at least £28,000 a year (or higher in London) when you qualify as a teacher
 - you can update, extend or switch your visa to live and work in the UK long-term
 
 
@@ -296,7 +296,7 @@ Alternatively, you may be eligible for a different type of visa which allows you
 
 ### 6. Plan your move to the UK
 
-Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/Information--Advice) for advice about immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
+Visit the [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) for advice about immigration, finding a place to live and opening a bank account. Their [Student Advice Line](https://www.ukcisa.org.uk/About-UKCISA/Contact-us) also offers support over the phone.
 
 Your teacher training provider may also be able to help you plan your move to the UK  – contact them directly to ask.
 

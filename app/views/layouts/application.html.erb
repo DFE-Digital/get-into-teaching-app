@@ -1,15 +1,13 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "link table", "link-target": "content", "link-assets-url-value": ENV["APP_ASSETS_URL"] }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
-
+  <%= body_tag do %>
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main id="main-content" role="main">
+    <%= main_tag do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
-      <section class="container main-body">
+      <section class="container main-section">
         <%= render(partial: "sections/content_errors") %>
 
         <article class="markdown <%= " fullwidth" if @fullwidth %>">
@@ -19,7 +17,7 @@
           <%= yield :feature %>
         </section>
       </section>
-    </main>
+    <% end %>
 
     <%= render FooterComponent.new %>
   <% end %>

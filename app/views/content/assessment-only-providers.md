@@ -97,7 +97,7 @@ provider_groups:
       email: aor@educate-group.co.uk
     - header: Lincolnshire SCITT
       link: https://www.lincolnshirescitt.co.uk/aor
-      name: Angela Murphy
+      name: Nicki Shore
       telephone: 01522 889297
       email: scittenquiries@prioryacademies.co.uk
     - header: Nottingham Trent University
