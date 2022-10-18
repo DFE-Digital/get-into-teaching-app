@@ -1,5 +1,5 @@
-module Campaign
-  class HeaderComponent < ViewComponent::Base
+module Content
+  class CampaignHeroComponent < ViewComponent::Base
     attr_accessor :title, :colour
 
     def initialize(title:, colour:, image:)
@@ -15,7 +15,7 @@ module Campaign
     end
 
     def classes
-      %w[campaign-header].tap do |c|
+      %w[campaign-hero].tap do |c|
         c << colour
       end
     end

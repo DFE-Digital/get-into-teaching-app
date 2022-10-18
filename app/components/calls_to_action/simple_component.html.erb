@@ -6,14 +6,17 @@
       <%= tag.span(title, class: "call-to-action__heading") %>
     <% end %>
 
-    <% if text.present? %>
+    <% if text.present? || content.present? %>
       <p class="call-to-action__text">
         <%= helpers.safe_html_format(text) %>
+        <%= content %>
       </p>
     <% end %>
 
-    <div class="call-to-action__action">
-      <%= link %>
-    </div>
+    <% if link.present? %>
+      <div class="call-to-action__action">
+        <%= link %>
+      </div>
+    <% end %>
   </div>
 <% end %>

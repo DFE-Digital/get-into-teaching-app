@@ -1,18 +1,16 @@
 <!doctype html>
 <html lang="en" class="govuk-template">
   <%= render "sections/head" %>
-  <%= analytics_body_tag class: "govuk-template__body govuk-body", data: { controller: "link table", "link-target": "content" }, id: "body" do %>
-    <%= render(partial: "sections/gtm_fallback") if gtm_enabled? %>
-
+  <%= body_tag do %>
     <%= render HeaderComponent.new(breadcrumbs: true) %>
 
-    <main id="main-content" role="main">
+    <%= main_tag do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
-      <section class="main-body main-body--no-bottom-margin">
+      <section class="main-section main-section--no-bottom-margin">
         <%= yield %>
       </section>
-    </main>
+    <% end %>
 
     <%= render FooterComponent.new %>
   <% end %>
