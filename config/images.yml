@@ -1,10 +1,10 @@
 ---
 # hero
-"media/images/content/hero-images/git_event_in_person.jpg":
-  alt: "An online Get Into Teaching event on a computer screen."
+"media/images/content/hero-images/girl-with-raised-hand.jpg":
+  alt: "Classroom of pupils with their hands up."
   variants:
-    - "media/images/content/hero-images/git_event_in_person--mobile.jpg"
-    - "media/images/content/hero-images/git_event_in_person--tablet.jpg"
+    - "media/images/content/hero-images/girl-with-raised-hand--mobile.jpg"
+    - "media/images/content/hero-images/girl-with-raised-hand--tablet.jpg"
 
 "media/images/content/hero-images/cake.png":
   alt: "A multicoloured cake with sprinkles."
