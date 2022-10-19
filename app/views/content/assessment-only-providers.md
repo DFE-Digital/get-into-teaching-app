@@ -112,7 +112,7 @@ provider_groups:
       email: gutprecruitment@sponne.org.uk
     - header: University of Derby
       link: https://www.derby.ac.uk/
-      name: Aneesa Akhtar
+      name: Charlotte Bray
       email: AO@derby.ac.uk
   Greater London:
     providers:
@@ -277,7 +277,7 @@ provider_groups:
       telephone: 01227 925555
       email: pgadmissions@canterbury.ac.uk
     - header: e-Qualitas
-      link: https://www.e-qualitas.co.uk/for-schools/training-routes/assessment-only/
+      link: https://www.e-qualitas.co.uk/schools/assessment-only/
       name: Helen Gregory
       email: helen.gregory@e-Qualitas.co.uk
     - header: George Abbot SCITT
