@@ -1,6 +1,6 @@
 English teacher training providers deliver iQTS in partnership with placement schools around the world. All iQTS training providers have been approved by the UK government. 
 
-Although applications for the 2022/23 academic year have now closed, you can register your interest for 2023/24 by contacting the following training providers: 
+Although applications for the 2022/23 academic year have now closed, you can register your interest for the 2023/24 academic year by contacting the following training providers: 
 
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
 * [Sheffield Hallam University](https://www.shu.ac.uk/study-here/options/teach/different-routes-into-teaching)
