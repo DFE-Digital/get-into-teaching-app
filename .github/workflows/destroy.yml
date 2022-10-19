@@ -25,8 +25,8 @@ jobs:
       - name: Setup Environment Variables
         id: variables
         run: |
-              echo ::set-output name=pr_name::${{env.REVIEW_APPLICATION}}-${{github.event.number}}
-              echo "TF_VAR_paas_app_route_name=${pr_name}"       >> $GITHUB_ENV
+              echo "pr_name=${{env.REVIEW_APPLICATION}}-${{github.event.number}}" >> $GITHUB_OUTPUT
+              echo "TF_VAR_paas_app_route_name=${pr_name}" >> $GITHUB_ENV
 
       - uses: hashicorp/setup-terraform@v2
         with:

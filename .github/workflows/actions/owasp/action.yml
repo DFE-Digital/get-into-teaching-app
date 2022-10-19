@@ -18,7 +18,7 @@ runs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - uses: Azure/login@v1
         with:
@@ -45,7 +45,7 @@ runs:
              elif [[ "${{ inputs.environment }}" == "Development" ]] ; then
                  rval="${{env.PAAS_APPLICATION_NAME}}-dev.${{env.DOMAIN}}"
              fi
-             echo ::set-output name=SCAN::$rval
+             echo "SCAN=${rval}" >> $GITHUB_OUTPUT
 
       - name: ZAP Scan
         uses: zaproxy/action-full-scan@v0.4.0
