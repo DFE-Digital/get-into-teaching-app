@@ -69,8 +69,6 @@ Rails.application.configure do
   config.x.structured_data.event = true
   config.x.structured_data.how_to = true
 
-  config.x.covid_banner = false
-
   config.x.dfe_analytics = true
 
   # Allow access from Codespaces

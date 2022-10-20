@@ -148,7 +148,6 @@ redirects:
   "/explore-my-options/teacher-training-routes/university-led-training/university-led-undergraduate-training/funding-for-undergraduate-teacher-training": "/funding-and-support"
   "/teachers-salary-and-teaching-benefits/teachers-pay-scale-salary": "/salaries-and-benefits"
   "/teachers-salary-and-teaching-benefits/teachers-student-loan-reimbursement": "/salaries-and-benefits"
-  "/impact-of-covid-19-on-teacher-training": "/covid-19"
   "/lp/email-tta": "/"
   "/get-help-and-support": "/"
   "/lp/crm-prepare": "/"
@@ -252,7 +251,6 @@ redirects:
   # More old (probably useless) links highlighted by Wavemaker
   "/get-help-and-support/premier-plus": "/"
   "/get-prepared-to-make-a-great-application": "/"
-  "/impact-of-covid-19-on-applicants": "/"
   "/invented-url-for-404-page": "/"
   "/legal-information": "/"
   "/node/2278": "/"
@@ -310,3 +308,8 @@ redirects:
 
   # Blog pages
   "/blog/5-reasons-to-attend-a-train-to-teach-event": "/blog/5-reasons-to-attend-a-get-into-teaching-event"
+
+  # Covid page
+  "/covid-19": "/"
+  "/impact-of-covid-19-on-teacher-training": "/"
+  "/impact-of-covid-19-on-applicants": "/"
