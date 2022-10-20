@@ -3,6 +3,7 @@ require "rails_helper"
 describe StructuredDataHelper, type: "helper" do
   include ERB::Util
   include EventsHelper
+  include ApplicationHelper
 
   let(:image_path) { "media/images/getintoteachinglogo.svg" }
 
@@ -169,10 +170,10 @@ describe StructuredDataHelper, type: "helper" do
     end
   end
 
-  describe ".search_structured_data" do
+  describe ".home_structured_data" do
     subject(:data) { JSON.parse(script_tag.content, symbolize_names: true) }
 
-    let(:html) { search_structured_data }
+    let(:html) { home_structured_data }
     let(:script_tag) { Nokogiri::HTML.parse(html).at_css("script") }
 
     before { enable_structured_data(:web_site) }
@@ -182,10 +183,16 @@ describe StructuredDataHelper, type: "helper" do
       expect(script_tag).to be_nil
     end
 
-    it "includes search information" do
+    it "includes site information" do
       expect(data).to include({
         "@type": "WebSite",
         url: root_url,
+        name: "Get Into Teaching GOV.UK",
+      })
+    end
+
+    it "includes search information" do
+      expect(data).to include({
         potentialAction: {
           "@type": "SearchAction",
           "target": {
