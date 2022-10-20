@@ -24,7 +24,7 @@ describe TextFormattingHelper, type: :helper do
       let(:html) do
         <<~HTML
           <div>test</div>
-          <p>
+          <p id="paragraph">
             <strong>hello</strong>
             <a href="http://test.com">world</a>
           </p>
