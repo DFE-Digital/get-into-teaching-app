@@ -310,3 +310,6 @@ redirects:
 
   # Blog pages
   "/blog/5-reasons-to-attend-a-train-to-teach-event": "/blog/5-reasons-to-attend-a-get-into-teaching-event"
+
+  # Covid page
+  "/covid-19": "/"
