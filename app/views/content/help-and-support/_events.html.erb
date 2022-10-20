@@ -1,0 +1,21 @@
+<%= render(CallsToAction::Promo::PromoComponent.new(border: :bottom)) do |promo| %>
+  <% promo.left_section(
+      heading: "Online events",
+      link_text: "Find online events",
+      link_target: events_path({ teaching_events_search: { type: ["onlineqa"] }})) do %>
+    <p>Attend an online event to find out how to get into teaching.</p>
+  <% end %>
+  <% promo.right_section(
+        caption: "Events near you",
+        heading: "Events are a great place to ask questions") do %>
+      <p>In-person events are a great way to speak to current teachers, local teacher training providers and expert advisers.</p>
+
+      <%= form_for TeachingEvents::Search.new, method: :post, url: events_path do |f| %>
+        <%= f.hidden_field :distance, value: 10 %>
+        <%= f.hidden_field :online, multiple: true, value: false %>
+        <%= f.label :postcode, "Enter postcode" %>
+        <%= f.text_field :postcode, autocomplete: "postal-code" %>
+        <%= tag.button("Search", class: "button", id: "event-search") %>
+      <% end %>
+  <% end %>
+<% end %>

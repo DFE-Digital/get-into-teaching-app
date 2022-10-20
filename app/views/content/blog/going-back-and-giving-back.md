@@ -28,4 +28,4 @@ This particular pupil went on to study A levels at the school, with her top GCSE
 
 Once she got her A*, it gave her everything she needed to see that she could achieve anything. When she got her results, she spoke to me and said, 'It was your teaching style and it was you who made that possible. You've given me the time and energy to help me get what I needed to get.' That was just a phenomenal experience.
 
-We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-support).

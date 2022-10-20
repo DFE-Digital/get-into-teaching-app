@@ -36,4 +36,4 @@ My long-term plan is to go into headship, but I do not want to rush this. I want
 
 I feel fortunate to be on the leadership salary, but I don't do the job for the money – for me it's about supporting students as a teacher and leader and making sure they achieve their full potential.
 
-We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).
+We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-support).

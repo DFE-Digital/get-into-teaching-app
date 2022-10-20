@@ -14,6 +14,10 @@
 	  padding-bottom: 2em;
     width: 100%;
 
+    > h2 {
+      margin-top: 2em;
+    }
+
     &:last-of-type {
       padding-bottom: 4em;
     }
@@ -134,8 +138,6 @@
 
 .promo {
   max-width: $content-max-width;
-  border-top: 1px solid $grey-mid;
-  padding-top: 3em;
   margin: 3em auto;
   display: flex;
   flex-direction: column;
@@ -147,6 +149,16 @@
 
   &:last-of-type {
     margin-bottom: 6em;
+  }
+
+  &--border-top {
+    padding-top: 4em;
+    border-top: 1px solid $grey-mid;
+  }
+
+  &--border-bottom {
+    padding-bottom: 4em;
+    border-bottom: 1px solid $grey-mid;
   }
 
   &__left,
