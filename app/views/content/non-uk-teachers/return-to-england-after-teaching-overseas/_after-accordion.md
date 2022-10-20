@@ -29,10 +29,10 @@ learn more.
 
 ### Contact
 
-Sign up for an [online Q&A for returners](/events).
+To find out more about returning to England to teach, you can:
 
-Email us at teach.inengland@education.gov.uk.
-
-Join us on [Facebook](https://www.facebook.com/getintoteaching),
-[Instagram](https://www.instagram.com/get_into_teaching/) and
-[Twitter](https://twitter.com/getintoteaching).
+* sign up for an [online Q&A for returners](/events)
+* email us at teach.inengland@education.gov.uk
+* [find us on Facebook](https://www.facebook.com/getintoteaching)
+* [discover us on Instagram](https://www.instagram.com/get_into_teaching/)
+* [follow us on Twitter](https://twitter.com/getintoteaching)
