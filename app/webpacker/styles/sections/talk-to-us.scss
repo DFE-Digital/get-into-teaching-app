@@ -80,3 +80,62 @@
     }
   }
 }
+
+.talk-to-us-content {
+  $wide-spacing: 2 * $indent-amount;
+
+  position: relative;
+  background-color: $grey;
+  padding-bottom: $wide-spacing;
+  margin: $wide-spacing $indent-amount $wide-spacing 0;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    background-color: $purple;
+    right: -$indent-amount;
+    bottom: -$indent-amount;
+  }
+
+  &:before {
+    width: $indent-amount;
+    height: 175px;
+  }
+
+  &:after {
+    height: $indent-amount;
+    width: 175px;
+  }
+
+  h2 {
+    margin-left: $indent-amount;
+  }
+
+  > p {
+    padding: 0 $indent-amount;
+  }
+
+  .contact-options {
+    display: flex;
+    gap: $indent-amount;
+    flex-direction: column;
+    padding: $indent-amount;
+
+    > div {
+      display: flex;
+      gap: $indent-amount;
+    }
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+      gap: $wide-spacing;
+    }
+
+    .telephone {
+      font-weight: bold;
+      text-decoration: none;
+      color: $black;
+      font-size: 1.3em;
+    }
+  }
+}
