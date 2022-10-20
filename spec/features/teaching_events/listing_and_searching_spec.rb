@@ -123,6 +123,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
 
     before do
       allow(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:new).and_return(fake_api)
+      allow(fake_api).to receive(:search_teaching_events_grouped_by_type) { events_by_type }
     end
 
     scenario "searching by postcode and distance" do
@@ -201,14 +202,33 @@ RSpec.feature "Searching for teaching events", type: :feature do
     context "when no events are found" do
       let(:event_count) { 0 }
       let(:params) { nil }
+      let(:national_git_events) { {} }
 
-      before { visit events_path(params) }
+      before do
+        get_into_teaching_type_ids = EventType.lookup_by_names("Get Into Teaching event")
+        allow(fake_api).to receive(:search_teaching_events_grouped_by_type)
+          .with(hash_including(type_ids: get_into_teaching_type_ids)) { national_git_events }
+
+        visit events_path(params)
+      end
 
       scenario "a useful message and options are shown" do
-        within(".teaching-events__none") do
-          expect(page).to have_css("h3", text: "0 events found")
+        within(".teaching-events__events--none") do
+          expect(page).to have_css("h2", text: "0 events found")
           expect(page).to have_css("p", text: "Why not try:")
           expect(page).to have_link(text: "clearing your filters", href: events_path)
+        end
+
+        expect(page).not_to have_css("teaching-events__events--regular")
+      end
+
+      context "when there are upcoming national Get Into Teaching events" do
+        let(:national_git_events) { group_events_by_type(build_list(:event_api, 1, :online)) }
+
+        scenario "they are displayed as events of interest" do
+          within(".teaching-events__events--regular") do
+            expect(page).to have_css("h2", text: "Other events you may be interested in")
+          end
         end
       end
 
@@ -216,7 +236,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
         let(:params) { { teaching_events_search: { distance: 5 } } }
 
         scenario "an alternate option is shown" do
-          within(".teaching-events__none") do
+          within(".teaching-events__events--none") do
             expect(page).to have_css("li", text: "expanding your search area")
           end
         end
@@ -226,7 +246,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
         let(:params) { { teaching_events_search: { distance: 5, online: [false] } } }
 
         scenario "an alternate option is shown" do
-          within(".teaching-events__none") do
+          within(".teaching-events__events--none") do
             add_online_events_path = events_path(
               params.deep_merge({ teaching_events_search: { online: [true, false] } }),
             )

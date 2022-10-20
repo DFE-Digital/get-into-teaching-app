@@ -107,19 +107,6 @@ $icon-size: 3rem;
     }
   }
 
-  &__none {
-    margin: 1rem;
-
-    @include mq($from: tablet) {
-      border-left: 1px solid $slightly-darker-grey;
-      padding-left: 3rem;
-    }
-
-    ul {
-      list-style-type: square;
-    }
-  }
-
   &__events {
     @include reset;
 
@@ -144,10 +131,15 @@ $icon-size: 3rem;
       margin-bottom: 1rem;
     }
 
-    &--featured, &--regular {
+    &--featured, &--regular, &--none {
       h2 {
         margin-block: 1rem 2rem;
-        padding-inline: 1rem;
+      }
+    }
+
+    &--none {
+      ul {
+        list-style-type: square;
       }
     }
   }

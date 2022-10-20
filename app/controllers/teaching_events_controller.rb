@@ -85,7 +85,7 @@ class TeachingEventsController < ApplicationController
 private
 
   def git_events
-    TeachingEvents::Search.new(type: %w[git]).results
+    @git_events ||= TeachingEvents::Search.new(type: %w[git]).results
   end
 
   def not_available_path
@@ -111,6 +111,7 @@ private
 
   def setup_results
     @event_search = TeachingEvents::Search.new_decrypt(search_params)
+    @national_git_events = git_events.select(&:is_online) if @event_search.results.empty?
   end
 
   def render_gone

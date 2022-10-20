@@ -30,7 +30,7 @@ module TeachingEvents
     before_validation { self.postcode = postcode.to_s.strip.upcase.presence }
 
     def results
-      query.flat_map(&:teaching_events).sort_by(&:start_at)
+      @results ||= query.flat_map(&:teaching_events).sort_by(&:start_at)
     end
 
     def in_person_only?
