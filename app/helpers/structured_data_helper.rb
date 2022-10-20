@@ -70,8 +70,9 @@ module StructuredDataHelper
     structured_data("HowTo", data)
   end
 
-  def search_structured_data
+  def home_structured_data
     data = {
+      name: suffix_title(nil),
       url: root_url,
       potentialAction: {
         "@type": "SearchAction",
