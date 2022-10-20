@@ -20,10 +20,6 @@ describe HeaderComponent, type: "component" do
     expect(page).to have_css("#skiplink-container")
   end
 
-  specify "renders a covid banner" do
-    expect(page).to have_css(".covid .covid__header", text: /Find out how coronavirus is affecting/)
-  end
-
   specify "renders the navigation" do
     expect(page).to have_css("nav > ol.primary")
   end
