@@ -6,7 +6,7 @@ module TeachingEvents
     include EncryptedAttributes
     encrypt_attributes :postcode
 
-    FUTURE_MONTHS = 6
+    FUTURE_MONTHS = 24
 
     DISTANCES = {
       "Nationwide" => nil,
@@ -52,7 +52,7 @@ module TeachingEvents
 
   private
 
-    def query(limit: 100)
+    def query(limit: 1_000)
       conditions = {
         type_ids: type_condition,
         postcode: postcode_condition,
