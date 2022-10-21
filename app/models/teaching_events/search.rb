@@ -22,7 +22,6 @@ module TeachingEvents
     attribute :distance, :integer
 
     validates :postcode, postcode: { allow_blank: true, accept_partial_postcode: true }
-    validates :postcode, presence: true, if: -> { distance.present? }
 
     validates :distance, inclusion: { in: DISTANCES.values }, allow_nil: true
 
