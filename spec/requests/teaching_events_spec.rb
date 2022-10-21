@@ -88,7 +88,7 @@ describe "teaching events", type: :request do
       expected_type_ids = [EventType.get_into_teaching_event_id]
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
         receive(:search_teaching_events_grouped_by_type)
-          .with(a_hash_including(type_ids: expected_type_ids, start_after: now, quantity_per_type: 100))
+          .with(a_hash_including(type_ids: expected_type_ids, start_after: now, quantity_per_type: 1_000))
           .and_return(events_by_type)
     end
 

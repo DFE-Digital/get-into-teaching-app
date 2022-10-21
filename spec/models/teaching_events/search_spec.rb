@@ -223,7 +223,7 @@ describe TeachingEvents::Search do
 
   describe "#start_before" do
     specify "is 6 months in the future" do
-      expect(described_class.new.send(:start_before)).to be_within(1.second).of(6.months.from_now)
+      expect(described_class.new.send(:start_before)).to be_within(1.second).of(24.months.from_now)
     end
   end
 end
