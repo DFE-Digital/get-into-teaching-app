@@ -10,6 +10,7 @@ describe Content::YoutubeVideoComponent, type: :component do
     page
   end
 
+  it { is_expected.to have_css(".youtube-video iframe") }
   it { is_expected.to have_css("iframe[src='https://www.youtube-nocookie.com/embed/#{id}']") }
   it { is_expected.to have_css("iframe[title=#{title}]") }
   it { is_expected.to have_css("iframe[loading=lazy]") }
