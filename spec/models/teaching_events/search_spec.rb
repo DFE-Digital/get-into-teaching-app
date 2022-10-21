@@ -35,7 +35,7 @@ describe TeachingEvents::Search do
           it { is_expected.to allow_value(val).for(:postcode) }
         end
 
-        [nil, "", "M", "Manchester", "M1-2WD"].each do |val|
+        %w[M Manchester M1-2WD].each do |val|
           it { is_expected.not_to allow_value(val).for(:postcode) }
         end
       end
