@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import SearchboxController from 'searchbox_controller.js';
 
 describe('SearchboxController', () => {

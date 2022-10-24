@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import BadgeController from 'badge_controller.js';
 
 describe('BadgeController', () => {

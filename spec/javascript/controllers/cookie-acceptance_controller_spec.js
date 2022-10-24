@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie';
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import CookieAcceptanceController from 'cookie-acceptance_controller.js';
 
 describe('CookieAcceptanceController', () => {

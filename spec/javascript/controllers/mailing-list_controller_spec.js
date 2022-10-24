@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import MailingListController from 'mailing-list_controller.js';
 import StubLocalStorage from '../stubs/local_storage';
 

@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import AspectRatioController from 'aspect_ratio_controller';
 
 describe('AspectRatioController', () => {
