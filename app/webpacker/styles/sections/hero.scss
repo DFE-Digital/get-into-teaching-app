@@ -76,7 +76,7 @@ $mobile-cutoff: 800px;
 
     &__title {
       grid-area: 2 / 1 / 4 / 4;
-      align-self: end;
+      align-self: flex-end;
     }
 
     &__subtitle,

@@ -89,7 +89,7 @@
     @include mq($from: mobile) {
       grid-area: 1 / 2 / 2 / 4;
       display: flex;
-      justify-content: end;
+      justify-content: flex-end;
     }
 
     img {
