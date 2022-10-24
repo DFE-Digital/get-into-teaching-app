@@ -143,7 +143,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
 
     .welcome-container {
-      max-width: 30em;
+      max-width: $column-570;
       margin: 0 auto;
     }
 
@@ -305,7 +305,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         .text { grid-area: 2 / 3 / 4 / 6; }
 
         picture:nth-of-type(1) { grid-area: 3 / 1 / 5 / 4; }
-        picture:nth-of-type(2) { grid-area: 3 / 4 / 5 / 6; }
+        picture:nth-of-type(2) { grid-area: 3 / 4 / 5 / 7; }
 
         .selected-quote { grid-area: 5 / 2 / 6 / 5; }
       }
@@ -340,13 +340,14 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
         > img {
           width: 80%;
+          max-width: 600px;
         }
 
         &:nth-of-type(1) {
           img {
             @include mq($from: desktop) {
               margin-top: 5em;
-              margin-left: 1em;
+              margin-left: 5em;
             }
 
             transform: rotate(-3deg);
@@ -751,7 +752,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       .text {
         margin: 1rem;
-        max-width: 65ch;
+        max-width: $column-720;
 
         h2 {
           @include font-size(xxlarge);
@@ -817,7 +818,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
 
         p {
-          max-width: 40ch;
+          max-width: $column-720;
           padding: .5em 1em;
           margin-top: .4em;
         }
@@ -1025,7 +1026,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
     }
 
-    max-width: 60ch;
+    max-width: $column-640;
     margin: 1em auto 0;
     padding: 1em;
 
@@ -1060,7 +1061,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
   .three-things-youll-never-hear-me-say {
     @include three-things-youll-never-hear-me-say-layout;
 
-    max-width: 60ch;
+    max-width: $column-720;
     margin: 1em auto 0;
     padding: 1em;
 
@@ -1145,7 +1146,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
     .text {
       margin: 0 auto;
-      max-width: 60ch;
+      max-width: $column-720;
 
       h2 {
         margin: 0;
@@ -1170,7 +1171,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
   .advice {
     @include selected-quote($color: $yellow, $size: medium);
-    max-width: 60ch;
+    max-width: $column-720;
     padding: 1em;
     margin: 1em auto 0;
 
@@ -1180,7 +1181,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     }
 
     figure {
-      max-width: 65ch;
+      max-width: $column-720;
       margin: auto;
     }
   }

@@ -50,12 +50,12 @@ body > header nav {
     ol.primary {
       flex-direction: column;
       margin:0;
+      padding: 0 $indent-amount;
       background: $grey;
 
       > li {
         border-left: 6px solid $grey;
         border-bottom: 1px solid $white;
-        max-width: 80%;
 
         &.active {
           border-left: 6px solid $purple;

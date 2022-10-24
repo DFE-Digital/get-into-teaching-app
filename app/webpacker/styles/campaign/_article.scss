@@ -30,18 +30,21 @@ article {
     }
   }
 
-  > * {
-    max-width: 65ch;
+  > *:not(.container, .overlapping, .text-block-with-two-images, .text-block-with-one-image) {
+    max-width: $column-720;
     margin: auto;
   }
 
-  > section {
-    padding-inline: 1rem;
+  > *:not(.container, .overlapping) {
+    padding-left: $indent-amount;
+    padding-right: $indent-amount;
 
-    &.fullwidth {
-      max-width: 100%;
+    &:not(:first-child) {
+      margin-top: 4em;
     }
+  }
 
+  > section {
     &.columns {
       display: flex;
       flex-direction: column;
@@ -65,10 +68,6 @@ article {
     }
   }
 
-  > section + section {
-    margin-top: 4em;
-  }
-
   @include mq($from: tablet) {
     margin: auto;
   }
@@ -77,29 +76,18 @@ article {
     font-weight: bold;
   }
 
-  .grey-bg {
-    padding-top: 75px;
+  .grey {
     background-color: $grey;
-  }
-
-  .no-margin {
-    margin: 0 auto;
-  }
-
-  .no-padding {
-    padding: 0;
-  }
-
-  .no-padding-top {
-    padding-top: 0;
-  }
-
-  .bottom-padding {
-    padding-bottom: 4em;
+    padding: 2 * $indent-amount 0;
   }
 
   .category__cards {
     padding-bottom: 0;
+  }
+
+  .grey,
+  .what-theyre-saying {
+    max-width: 100%;
   }
 
   .statement {
@@ -124,30 +112,6 @@ article {
           content: "/";
           margin-inline: .3em .5em;
         }
-      }
-    }
-  }
-
-  .videos {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: $indent-amount;
-    margin-top: $indent-amount;
-
-    @include mq($from: tablet) {
-      flex-direction: row;
-
-      > * {
-        width: 50%;
-      }
-    }
-
-    > * {
-      iframe {
-        width: 100%;
-        height: 300px;
-        border: 3px solid $pink;
       }
     }
   }

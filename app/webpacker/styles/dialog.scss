@@ -33,7 +33,7 @@
 
   &__content {
     width: 100%;
-    max-width: 40em;
+    max-width: $column-720;
     background-color: $grey;
     box-sizing: border-box;
     position: relative;
