@@ -20,7 +20,7 @@ keywords:
   - adviser
   - TTA
 tags:
-  - teacher training advisers
+  - advisers
   - personal statements
   - qualifications
   - applications

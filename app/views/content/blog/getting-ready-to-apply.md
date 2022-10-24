@@ -20,7 +20,7 @@ keywords:
   - references
 tags:
   - becoming a teacher
-  - teacher training advisers
+  - advisers
   - get into teaching events
   - applications
   - references
