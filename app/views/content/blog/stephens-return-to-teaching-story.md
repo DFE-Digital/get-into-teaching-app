@@ -13,7 +13,7 @@ keywords:
   - teacher training advisers
 tags:
   - returning to teaching
-  - teacher training advisers
+  - advisers
 ---
 
 $stephen$

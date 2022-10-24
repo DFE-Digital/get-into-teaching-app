@@ -13,7 +13,7 @@ keywords:
   - teacher training advisers
 tags:
   - returning to teaching
-  - teacher training advisers
+  - advisers
 ---
 
 After almost a decade of teaching science, I Ieft the job in 2001 when my husband and I started a family. During my time out of the classroom, I did quite a lot of work for an exam board and lots of private tuition. This kept me occupied for many years.

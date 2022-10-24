@@ -17,7 +17,7 @@ keywords:
   - teacher training
 tags:
   - becoming a teacher
-  - teacher training advisers
+  - advisers
 closing_paragraph: enriching-the-lives-of-young-people
 ---
 
