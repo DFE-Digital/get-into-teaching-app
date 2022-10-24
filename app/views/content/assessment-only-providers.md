@@ -47,10 +47,6 @@ provider_groups:
       name: Jacqui Waring
       telephone: 01603 773708
       email: jacqui.waring@ccn.ac.uk
-    - header: North Essex Teacher Training (NETT)
-      link: http://www.nett.org.uk/
-      telephone: '01255431949'
-      email: teach@nett.org.uk
     - header: The Pilgrim Partnership
       name: Bev Collier
       telephone: 01234 907896
@@ -119,7 +115,7 @@ provider_groups:
     - header: 2Schools Consortium
       link: https://www.2schools.org/assessment-only-route/
       name: Isabella Mora
-      telephone: '0208 807 6906'
+      telephone: '020 8807 6906'
       email: training@oakthorpe.enfield.sch.uk
     - header: Bromley Schools’ Collegiate
       link: https://www.bscteach.co.uk/
@@ -137,7 +133,7 @@ provider_groups:
     - header: Henry Maynard Training E17
       link: http://www.henrymaynardtraining.co.uk
       name: Clare Hunton
-      telephone: '0208 5203142'
+      telephone: '020 8520 3142'
       email: training@henrymaynard.waltham.sch.uk
     - header: London School of Jewish Studies (LSJS)
       link: https://www.lsjs.ac.uk/
@@ -151,12 +147,12 @@ provider_groups:
     - header: London Metropolitan University
       link: https://www.londonmet.ac.uk/courses/postgraduate/assessment-only-ao-route-to-qualified-teacher-status---qts---qts/
       name: Maria Dominguez
-      telephone: 0207 133 2983
-      email: m.dominguez@londonmet.ac.uk
+      telephone: 020 7133 2983
+      email: assessmentQTS@londonmet.ac.uk
     - header: London South Bank University
       link: https://www.lsbu.ac.uk
       name: Andrew Read
-      telephone: 0207 815 5444
+      telephone: 020 7815 5444
       email: qtsao@lsbu.ac.uk
     - header: Middlesex University
       telephone: 020 8411 5555
@@ -164,7 +160,7 @@ provider_groups:
     - header: St Mary’s University
       link: https://www.stmarys.ac.uk/education-theology-and-leadership/assessment-only-qts.htm
       name: Elizabeth Jackson
-      telephone: '0208 2404326'
+      telephone: '020 8240 4326'
       email: ao@stmarys.ac.uk
       header: Star Teachers SCITT
       link: https://www.starinstitute.org.uk/
@@ -174,7 +170,7 @@ provider_groups:
     - header: 'Teaching London: LDBS SCITT'
       link: https://teachinglondon.org
       name: Saskia Rossi
-      telephone: 0207 932 1126
+      telephone: 020 7932 1126
       email: admin@teachinglondon.org
     - header: The Havering Teacher Training Partnership
       link: https://www.haveringteachertraining.co.uk/
