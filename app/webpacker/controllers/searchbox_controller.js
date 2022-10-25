@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 import accessibleAutocomplete from 'accessible-autocomplete';
 import Redacter from '../javascript/redacter';
 

@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import ScribbleController from 'scribble_controller';
 
 describe('ScribbleController', () => {

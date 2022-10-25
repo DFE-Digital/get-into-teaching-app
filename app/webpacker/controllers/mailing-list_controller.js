@@ -1,4 +1,4 @@
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 
 const countKey = 'mailingListPageCount';
 const mailingListDismissedKey = 'mailingListDismissed';

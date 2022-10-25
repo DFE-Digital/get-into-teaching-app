@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import ChatController from 'chat_controller.js';
 
 describe('ChatController', () => {
