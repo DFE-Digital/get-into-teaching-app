@@ -75,21 +75,3 @@ shared_context "with stubbed book callback api" do
     stub_request(:post, "#{git_api_endpoint}/api/get_into_teaching/callbacks").to_return(status: 200, body: "", headers: {})
   end
 end
-
-shared_context "with stubbed upcoming events by category api" do |results_per_type|
-  let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
-  let(:events_by_type) { group_events_by_type(events) }
-  let(:expected_request_attributes) do
-    {
-      quantity_per_type: results_per_type,
-      start_after: Time.zone.now.utc.beginning_of_day,
-    }
-  end
-  before { travel_to(Time.zone.local(2020, 11, 1, 10)) }
-
-  before do
-    allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_grouped_by_type)
-      .with(a_hash_including(expected_request_attributes)) { events_by_type }
-  end
-end

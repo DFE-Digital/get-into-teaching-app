@@ -75,7 +75,6 @@ RSpec.configure do |config|
   config.include FactoryBot::Syntax::Methods
   config.include ViewComponent::TestHelpers, type: :component
   config.include ActiveSupport::Testing::TimeHelpers
-  config.include SpecHelpers::Events
   config.include SpecHelpers::BasicAuth
   config.include SpecHelpers::Integration, type: :feature
   config.include Webpacker::Helper, type: :helper

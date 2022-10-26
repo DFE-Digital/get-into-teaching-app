@@ -19,8 +19,8 @@ describe Internal::EventsController, type: :request do
           building: nil)
   end
   let(:events) { [pending_provider_event, build(:event_api, name: "Open event"), pending_online_event] }
-  let(:provider_events_by_type) { group_events_by_type([pending_provider_event]) }
-  let(:online_events_by_type) { group_events_by_type([pending_online_event]) }
+  let(:provider_events) { [pending_provider_event] }
+  let(:online_events) { [pending_online_event] }
   let(:publisher_username) { "publisher_username" }
   let(:publisher_password) { "publisher_password" }
   let(:author_username) { "author_username" }
@@ -39,7 +39,7 @@ describe Internal::EventsController, type: :request do
       context "when there are no pending #{event_type || default_event_type} events" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type).and_return([])
+            .to receive(:search_teaching_events).and_return([])
 
           get internal_events_path, headers: generate_auth_headers(:author), params: { event_type: event_type }
         end
@@ -76,28 +76,28 @@ describe Internal::EventsController, type: :request do
       include_examples "pending events", "provider" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type)
+            .to receive(:search_teaching_events)
                   .with({
                     type_ids: [EventType.school_or_university_event_id],
                     status_ids: [EventStatus.pending_id],
                     start_after: Time.zone.now.utc.beginning_of_day,
-                    quantity_per_type: 1_000,
+                    quantity: 1_000,
                   })
-                  .and_return provider_events_by_type
+                  .and_return provider_events
         end
       end
 
       include_examples "pending events", "online" do
         before do
           allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-            .to receive(:search_teaching_events_grouped_by_type)
+            .to receive(:search_teaching_events)
                   .with({
                     type_ids: [EventType.online_event_id],
                     status_ids: [EventStatus.pending_id],
                     start_after: Time.zone.now.utc.beginning_of_day,
-                    quantity_per_type: 1_000,
+                    quantity: 1_000,
                   })
-                  .and_return online_events_by_type
+                  .and_return online_events
         end
       end
 
@@ -107,7 +107,7 @@ describe Internal::EventsController, type: :request do
         include_examples "pending events", nil, default_event_type do
           before do
             allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-              .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+              .to receive(:search_teaching_events) { provider_events }
           end
         end
 
@@ -118,7 +118,7 @@ describe Internal::EventsController, type: :request do
     context "when publisher user type" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+          .to receive(:search_teaching_events) { provider_events }
       end
 
       it "shows a 'withdraw event' box" do
@@ -132,7 +132,7 @@ describe Internal::EventsController, type: :request do
     context "when author user type" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+          .to receive(:search_teaching_events) { provider_events }
       end
 
       it "shows a 'withdraw event' box" do
@@ -631,12 +631,12 @@ describe Internal::EventsController, type: :request do
   end
 
   describe "#open_events" do
-    let(:events_by_type) { group_events_by_type(pen) }
+    let(:events) { pen }
 
     context "when there a no events" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:search_teaching_events_grouped_by_type).and_return([])
+          .to receive(:search_teaching_events).and_return([])
       end
 
       it "shows 'no open events'" do
@@ -655,18 +655,17 @@ describe Internal::EventsController, type: :request do
           build(:event_api, :school_or_university_event, name: "Open provider event", start_at: start_at),
         ]
       end
-      let(:events_by_type) { group_events_by_type(events) }
 
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-          .to receive(:search_teaching_events_grouped_by_type)
+          .to receive(:search_teaching_events)
                 .with({
                   type_ids: [EventType.school_or_university_event_id, EventType.online_event_id],
                   status_ids: [EventStatus.open_id],
                   start_after: Time.zone.now.utc.beginning_of_day,
-                  quantity_per_type: 1_000,
+                  quantity: 1_000,
                 })
-                .and_return events_by_type
+                .and_return events
       end
 
       it "shows a table of events" do
