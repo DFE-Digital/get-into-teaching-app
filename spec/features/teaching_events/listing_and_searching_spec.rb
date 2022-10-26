@@ -118,12 +118,11 @@ RSpec.feature "Searching for teaching events", type: :feature do
   end
 
   describe "searching for events" do
-    let(:events_by_type) { group_events_by_type(events) }
-    let(:fake_api) { instance_double(GetIntoTeachingApiClient::TeachingEventsApi, search_teaching_events_grouped_by_type: []) }
+    let(:fake_api) { instance_double(GetIntoTeachingApiClient::TeachingEventsApi, search_teaching_events: []) }
 
     before do
       allow(GetIntoTeachingApiClient::TeachingEventsApi).to receive(:new).and_return(fake_api)
-      allow(fake_api).to receive(:search_teaching_events_grouped_by_type) { events_by_type }
+      allow(fake_api).to receive(:search_teaching_events) { events }
     end
 
     scenario "searching by postcode and distance" do
@@ -133,7 +132,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       select "5 miles", from: "Search area"
       click_on "Update results"
 
-      expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(postcode: "M1 2WD", radius: 5, online: nil)).once
+      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(postcode: "M1 2WD", radius: 5, online: nil)).once
     end
 
     scenario "searching for online events" do
@@ -142,7 +141,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       check "Online"
       click_on "Update results"
 
-      expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(online: true)).once
+      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(online: true)).once
     end
 
     scenario "searching for in person events" do
@@ -151,7 +150,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       check "In person"
       click_on "Update results"
 
-      expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(online: false)).once
+      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(online: false)).once
     end
 
     scenario "searching for get into teaching events" do
@@ -162,7 +161,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       check "DfE Get Into Teaching"
       click_on "Update results"
 
-      expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
+      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(type_ids: expected_type_ids)).once
     end
 
     scenario "searching for online forum events" do
@@ -173,7 +172,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       check "DfE Online Q&A"
       click_on "Update results"
 
-      expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
+      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(type_ids: expected_type_ids)).once
     end
 
     scenario "searching for school or university events" do
@@ -184,7 +183,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       check "Training provider"
       click_on "Update results"
 
-      expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
+      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(type_ids: expected_type_ids)).once
     end
 
     scenario "searching for online and get into teaching events" do
@@ -196,17 +195,17 @@ RSpec.feature "Searching for teaching events", type: :feature do
       check "Training provider"
       click_on "Update results"
 
-      expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(type_ids: expected_type_ids)).once
+      expect(fake_api).to have_received(:search_teaching_events).with(hash_including(type_ids: expected_type_ids)).once
     end
 
     context "when no events are found" do
       let(:event_count) { 0 }
       let(:params) { nil }
-      let(:national_git_events) { {} }
+      let(:national_git_events) { [] }
 
       before do
         get_into_teaching_type_ids = EventType.lookup_by_names("Get Into Teaching event")
-        allow(fake_api).to receive(:search_teaching_events_grouped_by_type)
+        allow(fake_api).to receive(:search_teaching_events)
           .with(hash_including(type_ids: get_into_teaching_type_ids)) { national_git_events }
 
         visit events_path(params)
@@ -223,7 +222,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
       end
 
       context "when there are upcoming national Get Into Teaching events" do
-        let(:national_git_events) { group_events_by_type(build_list(:event_api, 1, :online)) }
+        let(:national_git_events) { build_list(:event_api, 1, :online) }
 
         scenario "they are displayed as events of interest" do
           within(".teaching-events__events--regular") do

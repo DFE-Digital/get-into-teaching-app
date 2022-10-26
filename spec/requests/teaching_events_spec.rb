@@ -3,11 +3,10 @@ require "rails_helper"
 describe "teaching events", type: :request do
   describe "#index" do
     let(:events) { [build(:event_api, name: "First"), build(:event_api, name: "Second")] }
-    let(:events_by_type) { group_events_by_type(events) }
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_grouped_by_type) { events_by_type }
+        receive(:search_teaching_events) { events }
     end
 
     subject do
@@ -81,15 +80,15 @@ describe "teaching events", type: :request do
     let(:now) { Time.zone.now }
     let(:closed_events) { build_list(:event_api, 2, :closed) }
     let(:open_events) { build_list(:event_api, 2) }
-    let(:events_by_type) { group_events_by_type(closed_events + open_events) }
+    let(:events) { closed_events + open_events }
 
     before do
       freeze_time
       expected_type_ids = [EventType.get_into_teaching_event_id]
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-        receive(:search_teaching_events_grouped_by_type)
-          .with(a_hash_including(type_ids: expected_type_ids, start_after: now, quantity_per_type: 1_000))
-          .and_return(events_by_type)
+        receive(:search_teaching_events)
+          .with(a_hash_including(type_ids: expected_type_ids, start_after: now, quantity: 1_000))
+          .and_return(events)
     end
 
     describe "#about_git_events" do

@@ -119,7 +119,7 @@ describe TeachingEvents::Search do
     let(:fake_api) do
       instance_double(
         GetIntoTeachingApiClient::TeachingEventsApi,
-        search_teaching_events_grouped_by_type: [],
+        search_teaching_events: [],
       )
     end
 
@@ -209,7 +209,7 @@ describe TeachingEvents::Search do
         subject! { described_class.new(**query.input).results }
 
         specify "passes the expected values to the search API (#{query.expected_conditions})" do
-          expect(fake_api).to have_received(:search_teaching_events_grouped_by_type).with(hash_including(query.expected_conditions))
+          expect(fake_api).to have_received(:search_teaching_events).with(hash_including(query.expected_conditions))
         end
       end
     end
