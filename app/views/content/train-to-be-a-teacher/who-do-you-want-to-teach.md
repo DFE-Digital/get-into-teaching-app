@@ -22,6 +22,8 @@ England.
 
 You will need a degree to teach all student groups except those in further education, depending on the type of further education you are teaching.
 
+Find out about the [support you can get while training to teach if you're disabled](/funding-and-support/if-youre-disabled). 
+
 ## Teach disabled pupils and pupils with special educational needs
 
 Most disabled pupils and pupils with special educational needs learn in mainstream schools.
