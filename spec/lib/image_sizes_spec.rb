@@ -6,13 +6,13 @@ describe ImageSizes do
   include Webpacker::Helper
 
   describe "#html" do
-    subject(:render_html) { instance.html }
+    subject(:render_html) { instance.process.to_html }
 
     let(:asset_host) { "http://example.com" }
     let(:src_url) { "#{asset_host}/a/test/image.jpg" }
     let(:fast_image_url) { src_url }
     let(:body) { %(<img src="#{src_url}">) }
-    let(:instance) { described_class.new(body) }
+    let(:instance) { described_class.new(Nokogiri::HTML(body)) }
 
     before do
       described_class.class_variable_set(:@@cache, {})

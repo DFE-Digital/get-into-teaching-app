@@ -7,6 +7,15 @@ require "error_title"
 
 module Middleware
   class HtmlResponseTransformer
+    TRANSFORMERS = [
+      ImageSizes,
+      NextGenImages,
+      ResponsiveImages,
+      LazyLoadImages,
+      ExternalLinks,
+      ErrorTitle,
+    ].freeze
+
     def initialize(app)
       @app = app
     end
@@ -28,17 +37,16 @@ module Middleware
     end
 
     def transform(response_body)
-      response_body = ImageSizes.new(response_body).html
-      response_body = NextGenImages.new(response_body).html
-      response_body = ResponsiveImages.new(response_body).html
-      response_body = LazyLoadImages.new(response_body).html
-      response_body = ExternalLinks.new(response_body).html
-      response_body = ErrorTitle.new(response_body).html
+      doc = Nokogiri::HTML(response_body)
+
+      TRANSFORMERS.each { |klass| doc = klass.new(doc).process }
+
+      html = doc.to_html(encoding: "UTF-8", indent: 2)
 
       # <source> has no content so should be self-closing; configuring Nokogiri
       # to remove the closing tags results in breakages elsewhere in the document,
       # so we have to remove them manually post image processing.
-      response_body.gsub("</source>", "")
+      html.gsub("</source>", "")
     end
   end
 end
