@@ -26,7 +26,7 @@ describe "Google Tag Manager", type: :request do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event).with(event.readable_id) { event }
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_grouped_by_type).and_return([])
+      receive(:search_teaching_events).and_return([])
   end
 
   it "has the GTM and fallback scripts" do
