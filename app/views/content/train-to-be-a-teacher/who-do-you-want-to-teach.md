@@ -3,6 +3,8 @@ title: Who do you want to teach
 heading: Who do you want to teach
 description: |-
   Explore who’d you’d like to teach and the qualifications you need to work with early years, further education, and pupils with special educational needs.
+related_content:
+    Get support training to teach if you're disabled: "/funding-and-support/if-youre-disabled"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-who-do-you-want-to-teach
 ---
@@ -21,8 +23,6 @@ If you want to [teach in primary or secondary schools](/train-to-be-a-teacher/if
 England.
 
 You will need a degree to teach all student groups except those in further education, depending on the type of further education you are teaching.
-
-Find out about the [support you can get while training to teach if you're disabled](/funding-and-support/if-youre-disabled). 
 
 ## Teach disabled pupils and pupils with special educational needs
 
