@@ -3,7 +3,7 @@ require "error_title"
 
 describe ErrorTitle do
   describe "#html" do
-    subject { instance.html }
+    subject { instance.process.to_html }
 
     let(:document) do
       <<~HTML
@@ -22,7 +22,7 @@ describe ErrorTitle do
         <div class="govuk-error-summary"></div>
       HTML
     end
-    let(:instance) { described_class.new(document) }
+    let(:instance) { described_class.new(Nokogiri::HTML(document)) }
 
     it { is_expected.to include("<title>Error: #{document_title}</title>") }
 

@@ -1,16 +1,17 @@
 # ImageSizes will automatically add width/height attributes to img
 # elements in an effort to combat Cumulative Layout Shift (CLS).
 class ImageSizes
+  attr_reader :doc
+
   IMAGES_GLOB = "app/webpacker/images/**/*.*".freeze
 
   @@cache = {}
 
-  def initialize(page)
-    @page = page
+  def initialize(doc)
+    @doc = doc
   end
 
-  def html
-    doc = Nokogiri::HTML(@page)
+  def process
     doc.css("img").each do |img|
       next if sized?(img)
       next unless enabled? && sizable?(img["src"])
@@ -18,7 +19,7 @@ class ImageSizes
       size_image(img)
     end
 
-    doc.to_html(encoding: "UTF-8", indent: 2)
+    doc
   end
 
   class << self

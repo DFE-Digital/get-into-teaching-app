@@ -3,11 +3,11 @@ require "next_gen_images"
 
 describe NextGenImages do
   describe "#html" do
-    subject { instance.html }
+    subject { instance.process.to_html }
 
     let(:original_ext) { File.extname(original_src_path) }
     let(:body) { %(<img src="#{original_src_url}">) }
-    let(:instance) { described_class.new(body) }
+    let(:instance) { described_class.new(Nokogiri::HTML(body)) }
     let(:asset_host) { "" }
     let(:original_src_url) { "#{asset_host}#{original_src_path}" }
 

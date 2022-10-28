@@ -1,10 +1,11 @@
 class ExternalLinks
-  def initialize(page)
-    @page = page
+  attr_reader :doc
+
+  def initialize(doc)
+    @doc = doc
   end
 
-  def html
-    doc = Nokogiri::HTML(@page)
+  def process
     links = doc.css("a:not(.button)")
 
     links.each do |anchor|
@@ -13,7 +14,7 @@ class ExternalLinks
       anchor.add_child(%{<span class="visually-hidden">(opens in new window)</span>})
     end
 
-    doc.to_html(encoding: "UTF-8", indent: 2)
+    doc
   end
 
 private

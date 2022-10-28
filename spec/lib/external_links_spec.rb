@@ -3,10 +3,10 @@ require "external_links"
 
 describe ExternalLinks do
   describe "#html" do
-    subject { instance.html }
+    subject { instance.process.to_html }
 
     let(:link) { %(<a href="https://external.link">external link</a>) }
-    let(:instance) { described_class.new(link) }
+    let(:instance) { described_class.new(Nokogiri::HTML(link)) }
 
     it "adds visually hidden text" do
       is_expected.to include(

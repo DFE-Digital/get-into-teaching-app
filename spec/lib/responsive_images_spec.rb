@@ -3,7 +3,7 @@ require "responsive_images"
 
 describe ResponsiveImages do
   describe "#html" do
-    subject { instance.html }
+    subject { instance.process.to_html }
 
     let(:fingerprint) { "-fingerprint1" }
     let(:asset_host) { "" }
@@ -14,7 +14,7 @@ describe ResponsiveImages do
         <img src=\"#{src}\">
       </picture>"
     end
-    let(:instance) { described_class.new(body) }
+    let(:instance) { described_class.new(Nokogiri::HTML(body)) }
 
     before { allow(Dir).to receive(:glob).and_call_original }
 
