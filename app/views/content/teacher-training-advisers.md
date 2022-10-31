@@ -69,9 +69,7 @@ Other trainee teachers say they are particularly helpful with:
 
 ## Meet Emma, a teacher training adviser
 
-<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
 $about-teacher-training-advisers-video$
-</div>
 
 ## Helping you decide if teaching is right for you
 
@@ -83,9 +81,7 @@ Your adviser can help you navigate your path into teaching, and make sure you ge
 
 ## Meet Simon, a teacher training adviser
 
-<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
 $about-teacher-training-advisers-experience-video$
-</div>
 
 ## Already applied and been unsuccessful?
 

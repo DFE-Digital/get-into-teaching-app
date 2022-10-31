@@ -18,7 +18,6 @@ inset_text:
   new-international-funding:
     text: |-
       Train to teach physics or languages as a non-UK citizen and you could be <a href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student#find-out-about-fees-and-financial-support">eligible for a bursary or scholarship worth up to £29,000</a>.
-right_column:
 keywords:
   - International
   - Overseas

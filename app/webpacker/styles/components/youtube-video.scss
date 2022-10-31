@@ -1,7 +1,9 @@
 .youtube-video {
+  margin-bottom: $indent-amount;
+
   iframe {
     width: 100%;
-    border: 3px solid $pink;
+    outline: 3px solid $pink;
     aspect-ratio: 16 / 9;
   }
 
