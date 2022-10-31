@@ -91,9 +91,7 @@ A return to teaching adviser can give you free one-to-one support with:
 
 Return to teaching advisers also run [events to support returners](/events).
 
-<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
 $return-to-teaching-advisers-video$
-</div>
 
 $get-a-tta$
 
