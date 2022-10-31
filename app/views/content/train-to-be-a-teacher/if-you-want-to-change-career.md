@@ -22,7 +22,7 @@ You’ll need a degree and [qualified teacher status](/what-is-qts) (QTS) to wor
 
 [Now Teach](https://nowteach.org.uk/) is a service that specifically helps people get into teaching who are changing career.
 
-If you already have an undergraduate degree, you can [search for postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/). There are specific training courses you can choose from that match your particular subject knowledge and experience.
+If you already have an undergraduate degree, you can [search for postgraduate teacher training courses](https://www.find-postgraduate-teacher-training.service.gov.uk/) to get QTS.
 
 If you're concerned about your subject knowledge, you may also be able to do a <a href="/train-to-be-a-teacher/subject-knowledge-enhancement">'subject knowledge enhancement' (SKE) course</a>. This can help if you have an unrelated degree but relevant professional experience, or you haven't used your subject knowledge for a while.
 
