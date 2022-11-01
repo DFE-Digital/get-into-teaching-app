@@ -53,7 +53,7 @@
               <% end %>
               <div>
                 <h2 class="heading-s">Can't find what you're looking for?</h2>
-                <p>You can also take a look at our <%= link_to("online Q&A events", events_path({ teaching_events_search: { type: ["onlineqa"] }})) %> or <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }})) %> in your area.</p>
+                <p>You can also take a look at our <%= link_to("online Q&A events", events_path({ teaching_events_search: { type: ["onlineqa"] }}), class: "link--black") %> or <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }}), class: "link--black") %> in your area.</p>
               </div>
             </section>
           </div>
