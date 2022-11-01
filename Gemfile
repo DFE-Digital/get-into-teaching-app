@@ -61,7 +61,7 @@ gem "prometheus-client"
 gem "sentry-rails", ">= 5.4.1"
 gem "sentry-ruby", "~> 5.4.1"
 
-gem "skylight", "~> 5.3.3"
+gem "skylight", "~> 5.3.4"
 
 gem "text"
 
