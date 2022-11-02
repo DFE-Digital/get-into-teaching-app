@@ -213,9 +213,7 @@ In exceptional circumstances, you may be offered a scholarship with a bachelorâ€
 You can check if youâ€™re eligible for a scholarship and apply by visiting:
 
 * the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (for a physics scholarship)
-* the [British Council](https://www.britishcouncil.org) (for a French, German or Spanish scholarship)
-
-You can also email languagesteachertrainingscholarships@britishcouncil.org to register your interest for a scholarship to teach French, German or Spanish.
+* the [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (for a French, German or Spanish scholarship)
 
 <div class="inset">
   <h4>Already living in the UK?</h4>
