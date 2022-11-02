@@ -317,8 +317,8 @@ provider_groups:
       email: brownc@denbigh.net
     - header: The University of Buckingham
       link: https://www.buckingham.ac.uk/
-      name: Nikki Mugford
-      telephone: '01280 820219'
+      name: Bethany Kelly
+      telephone: '01280 820222'
       email: education@buckingham.ac.uk
     - header: Two Mile Ash ITT Partnership
       link: https://www.mkitt.co.uk/
