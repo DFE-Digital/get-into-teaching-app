@@ -164,9 +164,9 @@ After that, QTS is a legal requirement to teach in many English schools, and con
 ### Assessment only QTS
 You can work in an English school and, alongside your job, apply for assessment only QTS. This means you apply to an [English teacher training provider](/assessment-only-providers) who will assess if you meet the standards for English QTS. DfE will make funding available for candidates who start assessment only courses at the start of the new school year in September 2022. Check assessment only training providers for more information about eligibility and funding.
 
-### Apply for QTS in England (from spring 2023)
+### Apply for QTS in England
 
-From spring 2023, qualified teachers from Ukraine will be able to apply to the Teaching Regulation Agency for QTS (if they meet the criteria) without paying a fee to a training provider. [Learn more about the way QTS will be awarded to teachers from overseas](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
+From 1 February 2023, qualified teachers from Ukraine who meet the criteria will be able to [apply to the Teaching Regulation Agency for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without paying a fee to a training provider. [Learn more about the way QTS will be awarded to teachers from overseas](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
 
 ### Salaries and benefits
 

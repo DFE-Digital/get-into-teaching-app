@@ -121,7 +121,18 @@ You can apply for QTS directly to the TRA if you meet the following 3 requiremen
 
 You will not have to pay a fee or undergo further training. 
 
-[Check your eligibility to apply to the Teaching Regulation Agency for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start).
+From 1 February 2023, if you have a qualification from the following countries you will also be eligible to apply to the TRA for QTS:
+
+* Ghana
+* Hong Kong
+* India
+* Jamaica
+* Nigeria
+* South Africa
+* Ukraine
+* Zimbabwe
+
+[Learn more about the qualifications and experience you'll need](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) to get QTS, and [check your eligibility to apply to the TRA for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start).
 
 ### Other routes to QTS
 
