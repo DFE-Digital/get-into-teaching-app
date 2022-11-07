@@ -10,7 +10,7 @@ describe Footer::FeedbackComponent, type: "component" do
   end
 
   specify "the content is present" do
-    href = "https://docs.google.com/forms/d/e/1FAIpQLSdBXbU5nwP6_3TH7HY5rB4ehkSDNzfKqB5X2G7wG4K6LY97-g/viewform"
-    expect(page).to have_link("Tell us what you think about this service", href: href)
+    href = "https://docs.google.com/forms/d/188D1TqsGr-OdcMHC76HMoYnHqcES4LVfl1CT1C_59QU/viewform"
+    expect(page).to have_link("Tell us what you think about our website", href: href)
   end
 end
