@@ -66,4 +66,4 @@ My advice would be to:
     Ofsted is the [Office for Standards in Education, Children’s Services and Skills](https://www.gov.uk/government/organisations/ofsted/about) that inspects services providing learning and education.
     The [Ofsted education inspection framework](https://www.gov.uk/government/publications/education-inspection-framework) sets out how they inspect schools in England.
 
-We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-support).
+We’re here to answer your questions and provide advice about teaching, whether you’re just thinking about it or you’re ready to apply. [Find out how you can get help and support with getting into teaching](/help-and-support).
