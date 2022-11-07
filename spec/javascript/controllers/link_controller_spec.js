@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import LinkController from 'link_controller.js';
 
 describe('LinkController', () => {

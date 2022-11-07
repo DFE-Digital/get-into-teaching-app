@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import CookiePreferencesController from 'cookie_preferences_controller.js';
 import Cookies from 'js-cookie';
 import CookiePreferences from 'cookie_preferences';

@@ -61,7 +61,7 @@ gem "prometheus-client"
 gem "sentry-rails", ">= 5.4.1"
 gem "sentry-ruby", "~> 5.4.1"
 
-gem "skylight", "~> 5.3.3"
+gem "skylight", "~> 5.3.4"
 
 gem "text"
 
@@ -114,7 +114,7 @@ group :development, :test do
 
   # Testing framework
   gem "knapsack_pro"
-  gem "rspec-rails", "~> 5.1.2"
+  gem "rspec-rails", "~> 6.0.1"
 
   # Adds support for Capybara system testing and selenium driver
   gem "capybara", "~> 3.37"

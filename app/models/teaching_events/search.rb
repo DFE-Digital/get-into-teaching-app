@@ -29,7 +29,7 @@ module TeachingEvents
     before_validation { self.postcode = postcode.to_s.strip.upcase.presence }
 
     def results
-      @results ||= query.flat_map(&:teaching_events).sort_by(&:start_at)
+      @results ||= query
     end
 
     def in_person_only?
@@ -57,13 +57,13 @@ module TeachingEvents
         type_ids: type_condition,
         postcode: postcode_condition,
         online: online_condition,
-        quantity_per_type: limit,
+        quantity: limit,
         radius: distance_condition,
         start_after: start_after,
         start_before: start_before,
       }
 
-      GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events_grouped_by_type(**conditions)
+      GetIntoTeachingApiClient::TeachingEventsApi.new.search_teaching_events(**conditions)
     end
 
     def start_after

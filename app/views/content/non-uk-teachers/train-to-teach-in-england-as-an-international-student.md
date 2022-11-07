@@ -18,7 +18,6 @@ inset_text:
   new-international-funding:
     text: |-
       Train to teach physics or languages as a non-UK citizen and you could be <a href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student#find-out-about-fees-and-financial-support">eligible for a bursary or scholarship worth up to £29,000</a>.
-right_column:
 keywords:
   - International
   - Overseas
@@ -214,7 +213,7 @@ In exceptional circumstances, you may be offered a scholarship with a bachelor�
 You can check if you’re eligible for a scholarship and apply by visiting:
 
 * the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (for a physics scholarship)
-* the [British Council](https://www.britishcouncil.org) (for a French, German or Spanish scholarship)
+* the [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (for a French, German or Spanish scholarship)
 
 You can also email languagesteachertrainingscholarships@britishcouncil.org to register your interest for a scholarship to teach French, German or Spanish.
 

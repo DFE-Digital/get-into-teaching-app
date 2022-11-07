@@ -1,14 +1,14 @@
 class LazyLoadImages
+  attr_reader :doc
+
   # Used as a placeholder to prevent invalid HTML.
   TINY_GIF = "data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==".freeze
 
-  def initialize(page)
-    @page = page
+  def initialize(doc)
+    @doc = doc
   end
 
-  def html
-    doc = Nokogiri::HTML(@page)
-
+  def process
     doc.css("picture").each do |picture|
       next if picture.css("img[data-lazy-disable]").any?
 
@@ -30,7 +30,7 @@ class LazyLoadImages
       img["class"] = img["class"] << " lazyload"
     end
 
-    doc.to_html(encoding: "UTF-8", indent: 2)
+    doc
   end
 
 private

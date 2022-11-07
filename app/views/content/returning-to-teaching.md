@@ -43,20 +43,6 @@ calls_to_action:
       link_target: "/tta-service"
       icon: "icon-person"
 
-right_column:
-  ctas:
-  - title: Return from overseas
-    text: |
-      Are you a UK-trained teacher and UK citizen currently working abroad?
-    link_text: "Return to England to teach"
-    link_target: "/non-uk-teachers/return-to-england-after-teaching-overseas"
-    icon: "icon-person"
-  - title: Take the next step
-    text: |
-      Get support to take the next step at an event.
-    link_text: "Attend an event"
-    link_target: "/events"
-    icon: "icon-calendar"
 quote:
   q-helen-returner:
     text: "Don’t necessarily expect to get the first job you apply for and don’t get disheartened if you’re not successful."
@@ -73,6 +59,8 @@ Returning to teaching can be easier than you expect.
 More than ever, our children and young people need your skills and experience back in the classroom.  
 
 If you’re thinking about returning to teaching, or if you’re qualified to teach but have never taught in a state school in England, we can help.
+
+If you trained to teach in the UK and are a UK citizen currently working abroad, find out about [returning to England to teach](/non-uk-teachers/return-to-england-after-teaching-overseas).
 
 ## Why now?
 
@@ -101,11 +89,9 @@ A return to teaching adviser can give you free one-to-one support with:
 * accessing courses to enhance your subject knowledge
 * finding teaching vacancies
 
-<div data-controller="aspect-ratio" data-aspect-ratio-width-value="560" data-aspect-ratio-height-value="290">
-$return-to-teaching-advisers-video$
-</div>
-
 Return to teaching advisers also run [events to support returners](/events).
+
+$return-to-teaching-advisers-video$
 
 $get-a-tta$
 
@@ -123,9 +109,10 @@ You can set up job alerts so that you do not miss out on any opportunities.
 Take a look at the different [types of schools and staff roles](https://www.gov.uk/types-of-school)
 to find the best opportunity for you. Vacancies with flexible working opportunities are listed on the service.
 
+[Read our top tips for returning teachers](/blog/top-tips-for-returning-teachers).
+
 $q-helen-returner$
 
-[Read our top tips for returning teachers](/blog/top-tips-for-returning-teachers).
 
 ## Use the early career framework (ECF) resources
 

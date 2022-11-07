@@ -2,7 +2,7 @@ require "rails_helper"
 require "action_text/system_test_helper"
 
 RSpec.feature "Internal section", type: :feature do
-  let(:types) { Events::Search.available_event_type_ids }
+  let(:types) { EventType::ALL.values }
   let(:pending_provider_event) do
     build(:event_api,
           :with_provider_info,
@@ -19,8 +19,8 @@ RSpec.feature "Internal section", type: :feature do
           status_id: EventStatus.pending_id,
           type_id: EventType.online_event_id)
   end
-  let(:provider_events_by_type) { group_events_by_type([pending_provider_event]) }
-  let(:online_events_by_type) { group_events_by_type([pending_online_event]) }
+  let(:provider_events) { [pending_provider_event] }
+  let(:online_events) { [pending_online_event] }
   let(:publisher_username) { "publisher_username" }
   let(:publisher_password) { "publisher_password" }
 
@@ -45,7 +45,7 @@ RSpec.feature "Internal section", type: :feature do
       receive(:get_teaching_event) { pending_provider_event }
 
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-      receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+      receive(:search_teaching_events) { provider_events }
   end
 
   shared_examples "pending events" do |event_type|
@@ -79,7 +79,7 @@ RSpec.feature "Internal section", type: :feature do
     include_examples "pending events", "provider" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-          receive(:search_teaching_events_grouped_by_type) { provider_events_by_type }
+          receive(:search_teaching_events) { provider_events }
       end
     end
 
@@ -146,7 +146,7 @@ RSpec.feature "Internal section", type: :feature do
     include_examples "pending events", "online" do
       before do
         allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
-          receive(:search_teaching_events_grouped_by_type) { online_events_by_type }
+          receive(:search_teaching_events) { online_events }
       end
     end
 
@@ -168,11 +168,10 @@ RSpec.feature "Internal section", type: :feature do
     let(:live_online_event) { build(:event_api, :online_event, name: "Open online event") }
     let(:live_provider_event) { build(:event_api, :school_or_university_event, name: "Open provider event", start_at: start_at) }
     let(:events) { [live_online_event, live_provider_event] }
-    let(:events_by_type) { group_events_by_type(events) }
 
     before do
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-        .to receive(:search_teaching_events_grouped_by_type) { events_by_type }
+        .to receive(:search_teaching_events) { events }
 
       allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
         .to receive(:get_teaching_event) { live_provider_event }

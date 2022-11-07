@@ -18,7 +18,7 @@ jobs:
           t="{'environment' :'Test'         , 'principal': 's146t01-keyvault-readonlyaccess'}"
           p="{'environment' :'Production'   , 'principal': 's146p01-keyvault-readonlyaccess'}"
           tests="{ 'data':[ ${d} ,  ${t} ,  ${p} ]}"
-          echo "::set-output name=tests::${tests}"
+          echo "tests=${tests}" >> $GITHUB_OUTPUT
 
   check_expires:
     name:      ${{matrix.data.environment}}/${{ matrix.data.principal }}

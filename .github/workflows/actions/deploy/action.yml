@@ -21,7 +21,7 @@ runs:
     using: composite
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: set-up-environment
         uses: DFE-Digital/github-actions/set-up-environment@master
@@ -41,62 +41,62 @@ runs:
       - name: Get Short SHA
         id: sha
         shell: bash
-        run: echo ::set-output name=short::$(echo "${{ inputs.sha }}" | cut -c -7)
+        run: echo "short=$(echo "${{ inputs.sha }}" | cut -c -7)" >> $GITHUB_OUTPUT
 
       - name: Setup Environment Variables
         id: variables
         shell: bash
         run: |
-             echo ::set-output name=RUN_TEST::"true"
+             echo RUN_TEST="true" >> $GITHUB_OUTPUT
              if [ "${{inputs.environment }}" == "Review" ]
              then
-                 echo ::set-output name=control::$(echo "review" )
+                 echo "control=review" >> $GITHUB_OUTPUT
                  pr_name="${{env.REVIEW_APPLICATION}}-${{inputs.pr}}"
-                 echo ::set-output name=pr_name::${pr_name}
-                 echo ::set-output name=healthcheck::${pr_name}
-                 echo ::set-output name=key::${pr_name}
+                 echo "pr_name=${pr_name}" >> $GITHUB_OUTPUT
+                 echo "healthcheck=${pr_name}" >> $GITHUB_OUTPUT
+                 echo "key=${pr_name}" >> $GITHUB_OUTPUT
                  echo "TF_VAR_paas_app_application_name=${pr_name}" >> $GITHUB_ENV
-                 echo "TF_VAR_paas_app_route_name=${pr_name}"       >> $GITHUB_ENV
+                 echo "TF_VAR_paas_app_route_name=${pr_name}" >> $GITHUB_ENV
              fi
 
              if [ "${{inputs.environment }}" == "Development" ]
              then
-                 echo ::set-output name=control::$(echo "dev" )
-                 echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-dev" )
-                 echo ::set-output name=key::"app.dev.terraform"
+                 echo "control=dev" >> $GITHUB_OUTPUT
+                 echo "healthcheck=${{env.PAAS_APPLICATION_NAME}}-dev" >> $GITHUB_OUTPUT
+                 echo "key=app.dev.terraform" >> $GITHUB_OUTPUT
              fi
 
              if [ "${{inputs.environment }}" == "Test" ]
              then
-                 echo ::set-output name=control::$(echo "test" )
-                 echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-test" )
-                 echo ::set-output name=key::"app.test.terraform"
+                 echo "control=test" >> $GITHUB_OUTPUT
+                 echo "healthcheck=${{env.PAAS_APPLICATION_NAME}}-test" >> $GITHUB_OUTPUT
+                 echo "key=app.test.terraform" >> $GITHUB_OUTPUT
              fi
 
              if [ "${{inputs.environment }}" == "Speed" ]
              then
-                 echo ::set-output name=RUN_TEST::"false"
-                 echo ::set-output name=control::$(echo "pagespeed" )
-                 echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-pagespeed" )
-                 echo ::set-output name=key::"app.pagespeed.terraform"
+                 echo RUN_TEST="false" >> $GITHUB_OUTPUT
+                 echo "control=pagespeed" >> $GITHUB_OUTPUT
+                 echo "healthcheck=${{env.PAAS_APPLICATION_NAME}}-pagespeed" >> $GITHUB_OUTPUT
+                 echo "key=app.pagespeed.terraform" >> $GITHUB_OUTPUT
              fi
 
              if [ "${{inputs.environment }}" == "UR" ]
              then
-                 echo ::set-output name=RUN_TEST::"true"
-                 echo ::set-output name=control::$(echo "ur" )
-                 echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-UR" )
-                 echo ::set-output name=key::"app.ur.terraform"
+                 echo RUN_TEST="true" >> $GITHUB_OUTPUT
+                 echo "control=ur" >> $GITHUB_OUTPUT
+                 echo "healthcheck=${{env.PAAS_APPLICATION_NAME}}-UR" >> $GITHUB_OUTPUT
+                 echo "key=app.ur.terraform" >> $GITHUB_OUTPUT
              fi
 
              if [ "${{inputs.environment }}" == "Production" ]
              then
-                 echo ::set-output name=control::$(echo "production" )
-                 echo ::set-output name=healthcheck::$(echo "${{env.PAAS_APPLICATION_NAME}}-prod" )
-                 echo ::set-output name=key::"app.production.terraform"
+                 echo "control=production" >> $GITHUB_OUTPUT
+                 echo "healthcheck=${{env.PAAS_APPLICATION_NAME}}-prod" >> $GITHUB_OUTPUT
+                 echo "key=app.production.terraform" >> $GITHUB_OUTPUT
              fi
 
-             echo ::set-output name=docker_image::${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}
+             echo "docker_image=${{env.DOCKER_REPOSITORY}}:sha-${{ steps.sha.outputs.short}}" >> $GITHUB_OUTPUT
 
       - uses: DfE-Digital/keyvault-yaml-secret@v1
         id:  keyvault-yaml-secret

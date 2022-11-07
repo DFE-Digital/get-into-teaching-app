@@ -1,5 +1,5 @@
 import InternalEventsController from 'internal_events_controller.js';
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 
 describe('InternalEventsController', () => {
   document.body.innerHTML = `

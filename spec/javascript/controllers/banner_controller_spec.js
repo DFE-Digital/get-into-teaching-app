@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie';
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import BannerController from 'banner_controller';
 
 describe('BannerController', () => {

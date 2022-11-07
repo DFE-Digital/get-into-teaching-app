@@ -35,7 +35,7 @@ jobs:
       - name: Get Short SHA
         id: sha
         run: |
-             echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
+             echo "short=$(echo $GITHUB_SHA | cut -c -7)" >> $GITHUB_OUTPUT
 
       - name: Set docker images variables
         id:   docker
@@ -116,7 +116,7 @@ jobs:
       - name: Get Short SHA
         id: sha
         run: |
-             echo ::set-output name=short::$(echo $GITHUB_SHA | cut -c -7)
+             echo "short=$(echo $GITHUB_SHA | cut -c -7)" >> $GITHUB_OUTPUT
 
       - name: Set docker images variables
         id:   docker

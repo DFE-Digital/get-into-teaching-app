@@ -1,4 +1,4 @@
-import { Application } from 'stimulus';
+import { Application } from '@hotwired/stimulus';
 import AccordionController from 'accordion_controller.js';
 
 describe('AccordionController', () => {

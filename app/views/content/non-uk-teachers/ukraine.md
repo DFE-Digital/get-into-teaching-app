@@ -14,7 +14,6 @@ navigation_description: Find information and advice for Ukrainian citizens seeki
 date: "2022-06-24"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
-right_column:
 keywords:
   - International
   - Overseas

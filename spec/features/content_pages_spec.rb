@@ -20,7 +20,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
     # we don't care about the contents of the events pages here, just
     # that they exist.
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi)
-      .to(receive(:search_teaching_events_grouped_by_type))
+      .to(receive(:search_teaching_events))
       .and_return([])
   end
 

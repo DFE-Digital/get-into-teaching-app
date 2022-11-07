@@ -1,5 +1,5 @@
 import dayjs from 'dayjs';
-import { Controller } from 'stimulus';
+import { Controller } from '@hotwired/stimulus';
 
 export default class extends Controller {
   static targets = ['online', 'offline', 'unavailable', 'chat'];
