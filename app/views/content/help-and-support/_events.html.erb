@@ -1,9 +1,6 @@
-<%= render(CallsToAction::Promo::PromoComponent.new(border: :bottom)) do |promo| %>
+<%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
   <% promo.left_section(
-      heading: "Online events",
-      link_text: "Find online events",
-      link_target: events_path({ teaching_events_search: { online: [true] }})) do %>
-    <p>Attend an online event to find out how to get into teaching.</p>
+      heading: "Events", classes: %w[events-background]) do %>
   <% end %>
   <% promo.right_section(
         caption: "Events near you",
@@ -17,5 +14,6 @@
         <%= f.text_field :postcode, autocomplete: "postal-code" %>
         <%= tag.button("Search", class: "button", id: "event-search") %>
       <% end %>
+            <p>Or take a look at our <%= link_to("online events", teaching_events_search: { online: [true] }) %>.</p>
   <% end %>
 <% end %>
