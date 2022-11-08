@@ -40,85 +40,20 @@ class Content::QuoteComponentPreview < ViewComponent::Preview
     render(component)
   end
 
-  def with_cta
-    component = Content::QuoteComponent.new(
-      text
-        .merge(cta),
-    )
-    render(component)
-  end
-
-  def with_author_and_cta
+  def with_author_and_image
     component = Content::QuoteComponent.new(
       text
         .merge(author)
-        .merge(cta),
-    )
-    render(component)
-  end
-
-  def with_author_image_and_cta
-    component = Content::QuoteComponent.new(
-      text
-        .merge(author)
-        .merge(cta)
         .merge(image),
     )
     render(component)
   end
 
-  def with_author_image_and_cta_inline
+  def with_author_and_image_and_inline
     component = Content::QuoteComponent.new(
       text
         .merge(author)
-        .merge(cta)
         .merge(image)
-        .merge(inline),
-    )
-
-    render_with_template(
-      template: "content/quote_component_preview/inline",
-      locals: { component: component },
-    )
-  end
-
-  def with_author_hanging_right
-    component = Content::QuoteComponent.new(
-      text
-        .merge(author)
-        .merge(hang_right),
-    )
-    render(component)
-  end
-
-  def with_author_and_cta_hanging_right
-    component = Content::QuoteComponent.new(
-      text
-        .merge(author)
-        .merge(cta)
-        .merge(hang_right),
-    )
-    render(component)
-  end
-
-  def with_author_image_and_cta_hanging_right
-    component = Content::QuoteComponent.new(
-      text
-        .merge(author)
-        .merge(cta)
-        .merge(image)
-        .merge(hang_right),
-    )
-    render(component)
-  end
-
-  def with_author_image_and_cta_hanging_right_inline
-    component = Content::QuoteComponent.new(
-      text
-        .merge(author)
-        .merge(cta)
-        .merge(image)
-        .merge(hang_right)
         .merge(inline),
     )
 
@@ -145,24 +80,9 @@ private
     }
   end
 
-  def cta
-    {
-      cta: {
-        title: "Call to Action",
-        link: "/",
-      },
-    }
-  end
-
   def image
     {
       image: "media/images/homepage/science-teacher.jpg",
-    }
-  end
-
-  def hang_right
-    {
-      hang: "right",
     }
   end
 
