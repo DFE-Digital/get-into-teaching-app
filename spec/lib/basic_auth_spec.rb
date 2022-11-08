@@ -84,7 +84,6 @@ RSpec.describe BasicAuth do
           is_expected.to be_an_instance_of(User)
 
           expect(user.username).to eq("username1")
-          expect(user.id).to eq(user.username)
 
           is_expected.not_to be_publisher
           is_expected.not_to be_author

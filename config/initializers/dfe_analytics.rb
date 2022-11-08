@@ -48,4 +48,6 @@ DfE::Analytics.configure do |config|
   # to all events we send to BigQuery.
   #
   # config.environment = ENV.fetch('RAILS_ENV', 'development')
+
+  config.user_identifier = proc { |user| user&.username }
 end
