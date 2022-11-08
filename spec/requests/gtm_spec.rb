@@ -8,7 +8,6 @@ describe "Google Tag Manager", type: :request do
     [
       "/cookies",
       "/steps-to-become-a-teacher",
-      "/three-things-to-help-you-get-into-teaching",
       "/ways_to_train",
       "/welcome",
       blog_path("choosing-the-right-teacher-training-course-provider"),
