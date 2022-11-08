@@ -1,6 +1,5 @@
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
-  <% promo.left_section(
-      heading: "Events", classes: %w[events-background]) do %>
+  <% promo.left_section(classes: %w[events-background]) do %>
   <% end %>
   <% promo.right_section(
         caption: "Events near you",
@@ -14,6 +13,7 @@
         <%= f.text_field :postcode, autocomplete: "postal-code" %>
         <%= tag.button("Search", class: "button", id: "event-search") %>
       <% end %>
-            <p>Or take a look at our <%= link_to("online events", events_path(add_online_events(params))) %>.</p>
+
+      <p>Or take a look at our <%= link_to("online events", events_path(add_online_events(params))) %>.</p>
   <% end %>
 <% end %>

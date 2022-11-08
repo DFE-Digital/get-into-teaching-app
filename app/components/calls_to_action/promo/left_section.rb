@@ -1,7 +1,7 @@
 class CallsToAction::Promo::LeftSection < ViewComponent::Base
   attr_reader :caption, :heading, :link_text, :link_target, :classes
 
-  def initialize(heading:, caption: nil, link_text: nil, link_target: nil, classes: [])
+  def initialize(heading: nil, caption: nil, link_text: nil, link_target: nil, classes: [])
     @caption = caption
     @heading = heading
     @link_text = link_text
