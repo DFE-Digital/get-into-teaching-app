@@ -162,11 +162,6 @@ provider_groups:
       name: Elizabeth Jackson
       telephone: '020 8240 4326'
       email: ao@stmarys.ac.uk
-      header: Star Teachers SCITT
-      link: https://www.starinstitute.org.uk/
-      name: Mehroonnisha Mulla
-      telephone: 0330 313 9870
-      email: mehroonnisha.mulla@staracademies.org
     - header: 'Teaching London: LDBS SCITT'
       link: https://teachinglondon.org
       name: Saskia Rossi
@@ -244,11 +239,6 @@ provider_groups:
       name: Gill Makin
       telephone: 0151 443 2663
       email: merseyboroughsitt@knowsley.gov.uk
-    - header: Star Teachers SCITT
-      link: https://www.starinstitute.org.uk/
-      name: Mehroonnisha Mulla
-      telephone: 0330 313 9870
-      email: mehroonnisha.mulla@staracademies.org
     - header: University of Chester
       link: https://www.chester.ac.uk/
       name: Jane Bulkeley
@@ -393,11 +383,6 @@ provider_groups:
       name: Jayne Bartrop
       telephone: '01782 295977'
       email: J.Bartrop@staffs.ac.uk
-    - header: Star Teachers SCITT
-      link: https://www.starinstitute.org.uk/
-      name: Mehroonnisha Mulla
-      telephone: 0330 313 9870
-      email: mehroonnisha.mulla@staracademies.org
     - header: The Coventry SCITT
       link: https://www.coventryscitt.org.uk
       email: info@coventryscitt.org.uk
@@ -457,11 +442,6 @@ provider_groups:
       name: Jo Leedham
       telephone: 01724 297950
       email: jo.leedham@northlincs.gov.uk
-    - header: Star Teachers SCITT
-      link: https://www.starinstitute.org.uk/
-      name: Mehroonnisha Mulla
-      telephone: 0330 313 9870
-      email: mehroonnisha.mulla@staracademies.org
     - header: The Sheffield SCITT
       link: https://www.sheffieldscitt.org.uk/
       email: admin@sheffieldscitt.org.uk
