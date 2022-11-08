@@ -247,7 +247,7 @@ RSpec.feature "Searching for teaching events", type: :feature do
         scenario "an alternate option is shown" do
           within(".teaching-events__events--none") do
             add_online_events_path = events_path(
-              params.deep_merge({ teaching_events_search: { online: [true, false] } }),
+              params.deep_merge({ teaching_events_search: { online: [false, true] } }),
             )
             expect(page).to have_link(text: "online events", href: add_online_events_path)
           end
