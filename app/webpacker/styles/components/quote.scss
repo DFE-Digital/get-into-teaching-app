@@ -61,6 +61,10 @@
       font-weight: bold;
       margin-top: .5rem;
     }
+
+    a {
+      @extend .link--black;
+    }
   }
 }
 
