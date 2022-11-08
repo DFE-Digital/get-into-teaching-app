@@ -4,7 +4,7 @@
   <% promo.right_section(
         caption: "Events near you",
         heading: "Events are a great place to ask questions") do %>
-      <p>In-person events are a great way to speak to teachers, local teacher training providers and expert advisers.</p>
+      <p>Speak to teachers, local teacher training providers and expert advisers at an in-person event.</p>
 
       <%= form_for TeachingEvents::Search.new, method: :post, url: events_path do |f| %>
         <%= f.hidden_field :distance, value: 10 %>
