@@ -8,7 +8,7 @@ related_content:
     Get school experience: "/train-to-be-a-teacher/get-school-experience"
     Diary of a trainee teacher: "/blog/a-diary-of-a-trainee-teacher"
 promo_content:
-    - content/funding-and-support/promos/events-promo-parent
+    - content/funding-and-support/promos/get-adviser-support-promo
 navigation: 20.25
 navigation_title: If you're a parent or carer
 navigation_description: Find out what extra grants and schemes are available if you have children or other caring responsibilities.
