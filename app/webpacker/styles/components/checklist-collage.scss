@@ -1,0 +1,102 @@
+.checklist-collage {
+  .images {
+    display: grid;
+    grid-template-columns: (4 * $indent-amount) auto (2 * $indent-amount);
+    grid-template-rows: auto (2 * $indent-amount) auto;
+
+    img { max-width: 100%;}
+
+    picture:nth-of-type(1) {
+      grid-area: 1 / 1 / span 2 / span 2;
+    }
+
+    picture:nth-of-type(2) {
+      grid-area: 2 / 2 / span 2 / span 2;
+    }
+
+    @include mq($until: tablet) {
+      picture:last-of-type {
+        display: none;
+      }
+    }
+
+    @include mq($from: tablet) {
+      grid-template-columns: (2 * $indent-amount) auto (4 * $indent-amount) (6 * $indent-amount) (2 * $indent-amount);
+      grid-template-rows: auto (2 * $indent-amount) $indent-amount auto;
+
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      picture:nth-of-type(1) {
+        grid-area: 1 / 2 / span 2 / span 3;
+      }
+
+      picture:nth-of-type(2) {
+        grid-area: 4 / 3 / span 1 / span 3;
+      }
+
+      picture:nth-of-type(3) {
+        grid-area: 2 / 1 / span 3 / span 3;
+      }
+    }
+  }
+}
+
+.checklist-collage {
+  display: flex;
+  flex-direction: column;
+  gap: 2 * $indent-amount;
+  margin-top: 2 * $indent-amount;
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+  }
+
+  > div {
+    flex-grow: 1;
+    flex-basis: 0;
+    min-width: 0;
+  }
+
+  ul {
+    position: relative;
+    list-style: none;
+    padding-left: 2rem;
+    margin-bottom: 2 * $indent-amount;
+
+    &:before {
+      content: '';
+      position: absolute;
+      border-left: 2px dashed $black;
+      left: 11px;
+      top: 5px;
+      bottom: 5px;
+    }
+
+    li {
+      position: relative;
+      margin: $indent-amount 0;
+
+      &:not(:first-child) {
+        margin-top: 4em;
+      }
+
+      &:before {
+        @extend .fas;
+
+        content: '\f00c';
+        position: absolute;
+        color: $white;
+        left: -2rem;
+        top: 0;
+        width: 22px;
+        height: 20px;
+        background-color: $yellow;
+        text-align: center;
+        border-top: 3px solid $yellow;
+      }
+    }
+  }
+}
