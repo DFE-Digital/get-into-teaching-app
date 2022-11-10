@@ -1,0 +1,30 @@
+<article>
+  <section class="container">
+      <h2 class="heading--box-blue">Facts and figures</h2>
+
+      <div class="inset">
+        <%= render Content::FactListComponent.new(
+          [
+            {
+              icon: "icon-money",
+              value: "£28k",
+              title: "Starting salary",
+              link: link_to("Salaries and benefits", page_path("salaries-and-benefits")),
+            },
+            {
+              icon: "icon-money",
+              value: "300",
+              title: "Current vacancies",
+              link: link_to("Call to action", root_path),
+            },
+            {
+              icon: "icon-money",
+              value: "£10k+",
+              title: "Bursaries available",
+              link: link_to("Scholarships and bursaries", page_path("funding-and-support/scholarships-and-bursaries")),
+            },
+          ],
+        ) %>
+      </div>
+  </section>
+</article>

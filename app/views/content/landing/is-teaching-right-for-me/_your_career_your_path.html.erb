@@ -1,0 +1,33 @@
+<div class="campaign">
+  <article>
+    <section class="grey">
+      <section class="container">
+        <div>
+          <h2 class="heading--box-blue">Your Career Your Path</h2>
+          <div class="inset">
+            <p>
+              Teaching gives you the chance to shape a role that suits your skills, situation and ambition.
+            </p>
+
+            <%= render Content::ChecklistCollageComponent.new(
+              checklist: [
+                "A range of career paths",
+                "Subject specialist, leadership and pastoral opportunities",
+                "Flexible and secure"
+              ],
+              image_paths: [
+                "media/images/content/is-teaching-right-for-me/Physics_MissHayre_4.jpg",
+                "media/images/content/is-teaching-right-for-me/History_Class_1.jpg",
+                "media/images/content/is-teaching-right-for-me/Maths_MrAhmed_1.jpg",
+              ],
+              cta: {
+                text: "Explore career development options",
+                link: root_path,
+              }
+            ) %>
+          </div>
+        </div>
+      </section>
+    </section>
+  </article>
+</div>

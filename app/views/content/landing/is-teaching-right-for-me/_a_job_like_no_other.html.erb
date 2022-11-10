@@ -1,0 +1,32 @@
+<section class="container">
+  <div>
+    <h2 class="heading--box-blue">A job like no other</h2>
+    <p class="inset">
+      Looking for challenge and variety? As a teacher you'll work with lots of young people with a range of needs,
+      thinking on your feet and finding creative solutions to problems.
+    </p>
+  </div>
+</section>
+
+<section class="container centered">
+  <article class="campaign">
+    <%= render Content::PhotoQuoteListComponent.new(
+      [
+        {
+          image: "media/images/content/is-teaching-right-for-me/fellowship.jpg",
+          heading: "Always different",
+          text: "The classroom changes by the hour and working with different age ranges and abilities means you have to keep a fresh outlook.",
+          accreditation: link_to("Read Gavin's story", root_path),
+        },
+        {
+          image: "media/images/content/is-teaching-right-for-me/stories-zainab.jpg",
+          heading: "School experience",
+          text: "I wasn't sure what I wanted to do, but I knew I wanted to travel. I completed a starter course and went to teach English abroad.",
+          accreditation: link_to("Read Zainab's story", root_path),
+        }
+      ],
+      colors: %w[purple],
+      numbered: false
+    ) %>
+  </article>
+</section>

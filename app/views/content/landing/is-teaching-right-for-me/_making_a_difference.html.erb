@@ -1,0 +1,31 @@
+<section class="container">
+  <div>
+    <h2 class="heading--box-blue">Making a difference</h2>
+    <p class="inset">
+      As a teacher, your hard work and passion can help inspire and shapre future generations.
+    </p>
+  </div>
+</section>
+
+<section class="container centered">
+  <article class="campaign">
+    <%= render Content::PhotoQuoteListComponent.new(
+      [
+        {
+          image: "media/images/content/is-teaching-right-for-me/fellowship.jpg",
+          heading: "Always different",
+          text: "I tried many things until I realised that working with young people and helping them develop skills truly inspired me.",
+          accreditation: link_to("Read Chris' story", root_path),
+        },
+        {
+          image: "media/images/content/is-teaching-right-for-me/stories-zainab.jpg",
+          heading: "Support and creativity",
+          text: "You encounter problems, as you would in any career, but you have the support of colleagues to try new approaches and techniques until you find the right solution.",
+          accreditation: link_to("Read Zainab's story", root_path),
+        }
+      ],
+      colors: %w[purple],
+      numbered: false
+    ) %>
+  </article>
+</section>

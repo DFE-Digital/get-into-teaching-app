@@ -1,0 +1,17 @@
+<div class="campaign">
+  <article>
+    <section class="grey">
+      <section class="container">
+        <%= render(CallsToAction::Promo::PromoComponent.new(border: :none, reverse: true)) do |promo| %>
+          <% promo.left_section(heading: nil, classes: %w[history-background]) %>
+
+          <% promo.right_section(heading: "Get school experience") do %>
+              <p>Use our service to search for and organise a placement in England.</p>
+
+              <%= link_to("More about School Experience", "/train-to-be-a-teacher/get-school-experience", class: "link--black") %>
+          <% end %>
+        <% end %>
+      </section>
+    </section>
+  </article>
+</div>
