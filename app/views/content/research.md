@@ -5,6 +5,14 @@ description: |-
 date: "2021-05-17"
 image: false
 calls_to_action:
+  proud-parents:
+    name: attachment
+    arguments:
+      text: Read the Proud parents report summary
+      file_path: media/documents/proud-parents-teaching-report.pdf
+      file_type: PDF
+      file_size: 260KB
+      published_at: 10 November 2022
   career-countdown:
     name: attachment
     arguments:
@@ -129,6 +137,12 @@ calls_to_action:
 keywords:
   - Research
 ---
+
+## Proud Parents: exploring the sense of pride parents derive from their child’s career
+
+Kindred Agency commissioned research company OnePoll to carry out a survey on behalf of Get Into Teaching exploring the views of parents of children aged 18 and over. The purpose was to gain insights into the sense of pride they feel as a result of their child’s career achievements and how they would feel if they were in a role considered to be giving something back to society.
+
+$proud-parents$
 
 ## Career Countdown: exploring how students and recent graduates are feeling about taking their next steps
 
