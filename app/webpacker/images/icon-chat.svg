@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="34px" viewBox="0 0 40 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icon-chat</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-chat" transform="translate(-12.000000, -15.000000)" fill="#000000" fill-rule="nonzero">
+            <g transform="translate(12.899000, 15.191000)" id="icon.chat">
+                <g transform="translate(-0.000000, -0.000000)">
+                    <path d="M0,0 L0,26.2 L5.457,26.2 L5.457,33.622 L16.481,26.2 L38.201,26.2 L38.201,0 L0,0 Z M34.927,22.921 L15.39,22.921 L8.732,27.396 L8.732,22.921 L3.275,22.921 L3.275,3.274 L34.928,3.274 L34.927,22.921 Z" id="Path_1310"></path>
+                    <path d="M3.275,3.274 L34.927,3.274 L34.927,22.92 L15.39,22.92 L8.732,27.395 L8.732,22.92 L3.275,22.92 L3.275,3.274 Z M0,0 L0,26.2 L5.457,26.2 L5.457,33.622 L16.481,26.2 L38.111,26.2 L38.111,0 L0,0 Z" id="Path_1311"></path>
+                    <rect id="Rectangle_878" x="12.006" y="10.914" width="3.274" height="3.274"></rect>
+                    <rect id="Rectangle_879" x="17.463" y="10.914" width="3.274" height="3.274"></rect>
+                    <rect id="Rectangle_880" x="22.921" y="10.914" width="3.274" height="3.274"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

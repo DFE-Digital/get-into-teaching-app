@@ -115,14 +115,14 @@
 
 .icon-chat {
   @include icon;
-  background-image: url("../images/icon-question.svg");
+  background-image: url("../images/icon-chat.svg");
   width: 30px;
   height: 30px;
 }
 
 .icon-call {
   @include icon;
-  background-image: url("../images/icon-question.svg");
+  background-image: url("../images/icon-phone.svg");
   width: 30px;
   height: 30px;
 }
