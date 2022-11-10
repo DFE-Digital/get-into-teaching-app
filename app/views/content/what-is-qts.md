@@ -1,6 +1,6 @@
 ---
-title: "What qualified teacher status means"
-heading: "Qualified teacher status"
+title: "Qualified teacher status (QTS)"
+heading: "Qualified teacher status (QTS)"
 description: |-
   Qualified teacher status (QTS) is what you need to teach in most state schools in England. Find out how to get QTS and the different routes available.
 date: "2021-11-01"

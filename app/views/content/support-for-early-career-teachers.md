@@ -1,6 +1,6 @@
 ---
-title: "Support for early career teachers (ECTs)"
-heading: "Support for early career teachers (ECTs)"
+title: "Early career teachers (ECTs)"
+heading: "Early career teachers (ECTs)"
 description: |-
   Find out about the support early career teachers get when they start teaching, including mentor support and training based on the early career framework (ECF).
 related_content:
