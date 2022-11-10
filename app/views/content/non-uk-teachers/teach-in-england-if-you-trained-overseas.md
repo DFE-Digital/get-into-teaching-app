@@ -132,7 +132,7 @@ From 1 February 2023, if you have a qualification from the following countries y
 * Ukraine
 * Zimbabwe
 
-[Learn more about the qualifications and experience you'll need](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) to get QTS, and [check your eligibility to apply to the TRA for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start).
+[Learn more about the qualifications and experience you'll need to get QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers), and [check your eligibility to apply to the TRA for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start).
 
 ### Other routes to QTS
 
