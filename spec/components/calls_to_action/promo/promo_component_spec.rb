@@ -1,7 +1,9 @@
 require "rails_helper"
 
 RSpec.describe CallsToAction::Promo::PromoComponent, type: :component do
-  let(:component) { described_class.new }
+  let(:border) { :top }
+  let(:reverse) { false }
+  let(:component) { described_class.new(border: border, reverse: reverse) }
 
   let(:left_args) do
     {
@@ -28,7 +30,14 @@ RSpec.describe CallsToAction::Promo::PromoComponent, type: :component do
 
   subject { page }
 
-  it { is_expected.to have_css(".promo") }
+  it { is_expected.to have_css(".promo.promo--border-top") }
+  it { is_expected.not_to have_css(".promo.promo--reverse") }
+
+  context "when reversed" do
+    let(:reverse) { true }
+
+    it { is_expected.to have_css(".promo.promo--reverse") }
+  end
 
   describe "left side" do
     it { is_expected.to have_css(".promo__left h2", text: "left-heading") }

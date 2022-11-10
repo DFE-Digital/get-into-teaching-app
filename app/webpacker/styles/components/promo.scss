@@ -1,0 +1,123 @@
+.promo {
+  max-width: $content-max-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+
+  &--border-top {
+    border-top: 1px solid $grey-mid;
+    padding-top: 3em;
+    margin-top: 3em;
+  }
+
+  @include mq($from: tablet) {
+    flex-direction: row;
+
+    &--reverse {
+      flex-direction: row-reverse;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 2em;
+  }
+
+  &__left,
+  &__right {
+    flex: 0 1 50%;
+  }
+
+  &__left {
+    background-image: url("../images/content/homepage/here-to-help.jpg");
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    padding-block: 2em;
+    min-height: 8em;
+
+    &.tta-background {
+      background-image: url("../images/content/homepage/teacher-training-adviser.jpg");
+      background-position-y: 20%;
+    }
+
+    &.veteran-background {
+      background-image: url("../images/content/hero-images/0015.jpg");
+      background-position-y: 20%;
+    }
+
+    &.ml-background {
+      background-image: url("../images/content/hero-images/0015.jpg");
+      background-position-y: 20%;
+    }
+
+    &.history-background {
+      background-image: url("../images/content/is-teaching-right-for-me/History_Class_1_promo.jpg");
+      background-position-y: 10%;
+    }
+
+    > div {
+      padding: 0 1em .3em 1em;
+      max-width: 60%;
+    }
+
+    h2 > *,
+    .promo__content {
+      display: inline-block;
+      background-color: $yellow;
+      padding: .4rem .8rem;
+    }
+
+    p {
+      margin: 0;
+    }
+
+    .button {
+      display: inline-block;
+    }
+  }
+
+  &__right {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+
+    @include mq($from: tablet) {
+      gap: 1em;
+    }
+
+    > * { margin: .5rem 1rem; }
+
+    p {
+      margin-top: 0;
+    }
+
+    label {
+	    font-weight: bold;
+	    display: block
+    }
+
+    label,
+    input {
+      margin-bottom: .4em;
+    }
+
+    p:last-of-type {
+      margin-bottom: 0;
+    }
+
+    form {
+      input {
+        margin: 0 0 .5rem;
+        max-width: 10rem;
+      }
+
+      div {
+        display: flex;
+      }
+    }
+  }
+}
