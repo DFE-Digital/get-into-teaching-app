@@ -1,5 +1,5 @@
 ---
-title: Get into teaching physics
+title: Engineers teach physics
 description: |-
     Find out more about a new initial teacher training programme for engineers and material scientists who want
     to teach physics.

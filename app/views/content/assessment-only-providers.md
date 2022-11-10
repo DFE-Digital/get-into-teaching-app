@@ -1,5 +1,5 @@
 ---
-title: Get qualified teacher status through an 'assessment only' programme
+title: QTS assessment only providers
 description: |-
   Find accredited providers who offer the assessment only teacher training route to qualified teacher status (QTS) for experienced teachers with a degree.
 date: "2021-06-08"
