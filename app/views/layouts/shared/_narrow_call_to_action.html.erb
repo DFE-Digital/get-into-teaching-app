@@ -1,5 +1,0 @@
-<% if @front_matter.dig("right_column", "ctas").present? %>
-  <% @front_matter.dig("right_column", "ctas").each do |cta| %>
-    <%= render CallsToAction::NarrowComponent.new(**cta.symbolize_keys) %>
-  <% end %>
-<% end %>

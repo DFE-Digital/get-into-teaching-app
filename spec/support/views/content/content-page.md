@@ -11,12 +11,6 @@
   alert: This is an alert
   related_content:
      Related content 1: "#related-content-one"
-  right_column:
-    ctas:
-      - title: Right column CTA
-        link_text: "Right column button"
-        link_target: "#right-column-cta"
-        icon: "icon-calendar"
 ---
 
 An image without explicit width/height attributes:

@@ -176,37 +176,6 @@ The above example would render out as follows:
 
 <img src="images/content_cta_examples.png" alt="Example Content CTAs" style="width: 500px;">
 
-#### Sidebar
-
-It is also possible to place multiple CTAs in the right column of the page:
-
-```yaml
----
-right_column:
-  ctas:
-    - title: Title
-      text: Text
-      link_text: Link text
-      link_target: /path
-      icon: icon-calendar
-      hide_on_mobile: Yes
-      hide_on_tablet: Yes
-    - title: Other Title
-      text: Other Text
-      link_text: Other Link text
-      link_target: /other/path
-      icon: icon-calendar
-      hide_on_mobile: Yes
-      hide_on_tablet: Yes
----
-
-This is the main content.
-```
-
-The above example would render out as follows:
-
-<img src="images/sidebar_cta_examples.png" alt="Example Sidebar CTAs" style="width: 500px;">
-
 ### Accessibility
 
 #### iframe

@@ -123,7 +123,7 @@ describe TemplateHandlers::Markdown, type: :view do
               "icon" => "icon-arrow",
             },
             "small-warning" => {
-              "name" => "attachment"
+              "name" => "attachment",
             },
           },
         },

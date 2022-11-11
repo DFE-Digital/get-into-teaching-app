@@ -15,7 +15,6 @@ describe "ensuring frontmatter from content pages is rendered", type: :request d
       "Introduction",
       "This is an alert",
       "Related content 1",
-      "Right column CTA",
     ].each do |expected|
       it { is_expected.to include(expected) }
     end
