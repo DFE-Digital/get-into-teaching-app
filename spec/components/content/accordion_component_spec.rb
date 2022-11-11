@@ -55,7 +55,7 @@ describe Content::AccordionComponent, type: "component" do
   end
 
   describe "Calls to action" do
-    describe "chat_online" do
+    describe "chat" do
       subject do
         render_inline(described_class.new) do |accordion|
           accordion.step(title: title, call_to_action: call_to_action) do
@@ -65,7 +65,7 @@ describe Content::AccordionComponent, type: "component" do
       end
 
       describe "when a call to action is specified" do
-        let(:call_to_action) { "chat_online" }
+        let(:call_to_action) { "chat" }
 
         before { subject }
 
@@ -75,7 +75,7 @@ describe Content::AccordionComponent, type: "component" do
         end
 
         specify "the call to action should be rendered" do
-          expect(page).to have_css(".call-to-action--chat-online")
+          expect(page).to have_css(".chat")
         end
       end
 

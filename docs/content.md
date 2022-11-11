@@ -118,25 +118,6 @@ The key (`"media/images/content/hero-images/0001.jpg"`) is the **primary** varia
 * `alt:` - the alt text for the image, wrapped in quotes
 * `variants` - a list of **other versions of the same image**. The alternate versions can be thumbnails or crops and are considered alternates if the same `alt` text can be applied to them as the primary variant
 
-### Tuition fee and maintenance loans
-
-Lots of text.
-
-### Bursaries and scholorships
-
-Lots of text.
-
-# If you come from outside England
-
-Lots of text.
-```
-
-The above example would render out as follows:
-
-```
-<img src="images/jump_link_examples.png" alt="Example Jump Links" style="width: 500px;">
-```
-
 ### Calls to Action
 
 On some pages we want to include one or more calls to action; instead of copy/pasting the HTML for these sections we can specify and configure them in the frontmatter and then reference them in our content.
@@ -149,9 +130,8 @@ You can configure and reference calls to action as part of your main content:
 ---
 calls_to_action:
   chat:
-    name: chat_online
-    arguments:
-    text: "Chat to one of our advisers"
+    name: chat
+    arguments: {}
   attachment:
     name: attachment
     arguments:
