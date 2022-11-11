@@ -219,9 +219,9 @@ provider_groups:
     providers:
     - header: Ashton on Mersey SCITT
       link: http://aomscitt.co.uk/assessment-only/
-      name: Samantha Buckley
-      telephone: 0161 973 1179 (ext 2229)
-      email: SamanthaBuckley@thedeantrust.co.uk
+      name: Karen Craven
+      telephone: 0161 973 1179 (ext 2289)
+      email: karencraven@thedeantrust.co.uk
     - header: Cumbria Teacher Training
       link: http://www.ctt.ac.uk
       email: scittlead@ctt.ac.uk
