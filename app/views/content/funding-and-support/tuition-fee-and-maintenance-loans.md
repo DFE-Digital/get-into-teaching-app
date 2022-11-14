@@ -35,7 +35,7 @@ Funding is available to help you train to teach. You can apply for a:
 
 You can still apply for a tuition fee and a maintenance loan if you already have a student loan, and regardless of whether you get a teaching bursary or scholarship.
 
-You will only have to make loan repayments once you’re earning. Your repayments will not increase if you already have a student loan and take an additional loan for teacher training.
+You will only have to make loan repayments once you’re earning.
 
 $student-finance-calculator$
 
