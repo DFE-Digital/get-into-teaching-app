@@ -13,16 +13,16 @@
     <%= render Content::PhotoQuoteListComponent.new(
       [
         {
-          image: "media/images/content/is-teaching-right-for-me/fellowship.jpg",
-          heading: "Always different",
-          text: "The classroom changes by the hour and working with different age ranges and abilities means you have to keep a fresh outlook.",
-          accreditation: link_to("Read Gavin's story", root_path),
+          image: "media/images/content/blog/thumbnails/stories-zainab.jpg",
+          heading: "A dynamic work environment",
+          text: "You encounter problems, as you would in any career, but you have the support of colleagues to try new approaches and techniques until you find the right solution.",
+          accreditation: link_to("Read Gavin's story", page_path("blog/school-experience-helped-me-decide-to-switch")),
         },
         {
-          image: "media/images/content/is-teaching-right-for-me/stories-zainab.jpg",
-          heading: "School experience",
+          image: "media/images/content/blog/thumbnails/stories-gavin.jpg",
+          heading: "Always different",
           text: "I wasn't sure what I wanted to do, but I knew I wanted to travel. I completed a starter course and went to teach English abroad.",
-          accreditation: link_to("Read Zainab's story", root_path),
+          accreditation: link_to("Read Zainab's story", page_path("blog/no-two-days-are-the-same")),
         }
       ],
       colors: %w[purple],
