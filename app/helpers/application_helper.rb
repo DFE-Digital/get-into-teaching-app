@@ -112,4 +112,9 @@ module ApplicationHelper
 
     Sentry.configuration.dsn&.to_s
   end
+
+  def minimal_footer_kwargs(front_matter)
+    defaults = { talk_to_us: true, mailing_list: false, feedback: false }
+    defaults.merge(front_matter.symbolize_keys.slice(:talk_to_us, :mailing_list, :feedback))
+  end
 end

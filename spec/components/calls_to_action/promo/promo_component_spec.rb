@@ -64,6 +64,12 @@ RSpec.describe CallsToAction::Promo::PromoComponent, type: :component do
         is_expected.to have_css(".promo__left.one.two.three")
       }
     end
+
+    context "when there is no caption or heading" do
+      let(:left_args) { { heading: nil, caption: nil } }
+
+      it { is_expected.not_to have_css(".promo__left h2") }
+    end
   end
 
   describe "right side" do

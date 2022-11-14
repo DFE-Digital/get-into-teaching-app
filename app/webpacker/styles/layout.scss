@@ -88,6 +88,10 @@ section.container {
     justify-content: flex-start;
     margin: 1.5em auto 0;
     max-width: $content-max-width;
+
+    &--845 {
+      max-width: $column-845;
+    }
   }
 
   // most pages won't have a h1 here but on those where

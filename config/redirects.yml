@@ -17,6 +17,7 @@ redirects:
   "/international-candidates": "/non-uk-teachers/train-to-teach-in-england-as-an-international-student"
   "/salaries-and-benefits-simplified": "/salaries-and-benefits"
   "/home": "/"
+  "/help-and-advice": "/help-and-support"
 
   # Campaign landing pages
   "/helping-you-become-a-teacher": "/three-things-to-help-you-get-into-teaching"
@@ -302,6 +303,7 @@ redirects:
   "/content/stories(*story)": "/blog"
   "/my-story-into-teaching(*story)": "/blog"
   "/blog/how-to-apply-for-teacher-training": "/blog/9-tips-to-help-you-apply-for-teacher-training"
+  "/three-things-to-help-you-get-into-teaching": "/help-and-support"
 
   # Old urgent call for qualified teachers page
   "/urgent-call-for-qualified-teachers": "/returning-to-teaching"

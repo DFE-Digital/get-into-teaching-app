@@ -6,7 +6,7 @@ description: |-
 title_paragraph: |-
     If you're applying for teacher training in England, we can help you understand what funding and practical support you could be eligible for.
 navigation: 21
-navigation_title: Funding and support
+navigation_title: Fund your training
 navigation_path: "/funding-and-support"
 layout: "layouts/category"
 content:

@@ -23,8 +23,11 @@ module TeachingEventsHelper
       .fetch(:teaching_events_search, {})
       .permit!
       .to_h
-      .merge({ online: [true, false] })
       .deep_symbolize_keys
+      .tap do |h|
+        h[:online] ||= []
+        h[:online] << true
+      end
 
     { teaching_events_search: params_with_online }
   end

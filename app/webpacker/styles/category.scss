@@ -14,6 +14,10 @@
 	  padding-bottom: 2em;
     width: 100%;
 
+    > h2 {
+      margin-top: 2em;
+    }
+
     &:last-of-type {
       padding-bottom: 4em;
     }
