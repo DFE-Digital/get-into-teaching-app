@@ -28,7 +28,13 @@ RSpec.describe CallsToAction::Promo::PromoComponent, type: :component do
 
   subject { page }
 
-  it { is_expected.to have_css(".promo") }
+  it { is_expected.to have_css(".promo.promo--border-top") }
+
+  context "when the border is set to bottom" do
+    let(:component) { described_class.new(border: :bottom) }
+
+    it { is_expected.to have_css(".promo.promo--border-bottom") }
+  end
 
   describe "left side" do
     it { is_expected.to have_css(".promo__left h2", text: "left-heading") }
@@ -54,6 +60,12 @@ RSpec.describe CallsToAction::Promo::PromoComponent, type: :component do
       it {
         is_expected.to have_css(".promo__left.one.two.three")
       }
+    end
+
+    context "when there is no caption or heading" do
+      let(:left_args) { { heading: nil, caption: nil } }
+
+      it { is_expected.not_to have_css(".promo__left h2") }
     end
   end
 

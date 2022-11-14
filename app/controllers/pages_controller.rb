@@ -11,6 +11,7 @@ class PagesController < ApplicationController
     "/train-to-be-a-teacher/if-you-have-a-degree", # Contains a form
     "/train-to-be-a-teacher/if-you-dont-have-a-degree", # Contains a form
     "/train-to-be-a-teacher/initial-teacher-training", # Contains a form
+    "/help-and-support", #  Contains a form
   ].freeze
 
   caches_page :cookies
@@ -29,7 +30,6 @@ class PagesController < ApplicationController
     "layouts/stories/story",
     "layouts/welcome",
     "layouts/category",
-    "layouts/campaigns/landing_page_with_hero_nav",
   ].freeze
 
   def privacy_policy

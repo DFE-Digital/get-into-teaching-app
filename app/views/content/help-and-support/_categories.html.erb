@@ -1,0 +1,25 @@
+<section class="category">
+  <section class="container category__cards main-section">
+    <h2 class="heading--box-blue">Talk to an adviser</h2>
+    <div class="inset">
+      <p>Get dedicated one-to-one support from an adviser with years of teaching experience.</p>
+    </div>
+
+    <nav class="category__nav-cards">
+      <ul class="inset">
+        <%= render Categories::CardComponent.new(heading_tag: "h3", card:
+          OpenStruct.new(
+            title: "Explore teaching advisers",
+            description: "If you're a student and not in your final year of study, an adviser can help you find out more about teaching as a career.",
+            path: "/explore-teaching-advisers"
+          )) %>
+        <%= render Categories::CardComponent.new(heading_tag: "h3", card:
+          OpenStruct.new(
+            title: "Teacher training advisers",
+            description: "If you already have a degree or are a final year student, an adviser can help you understand how to get into teaching.",
+            path: "/teacher-training-advisers"
+          )) %>
+      </ul>
+    </nav>
+  </section>
+</section>

@@ -13,6 +13,6 @@
       <%= yield %>
     <% end %>
 
-    <%= render FooterComponent.new(talk_to_us: true, mailing_list: false, feedback: false) %>
+    <%= render FooterComponent.new(**minimal_footer_kwargs(@front_matter)) %>
   <% end %>
 </html>

@@ -21,12 +21,12 @@ describe TeachingEventsHelper, type: "helper" do
 
     subject { add_online_events(params) }
 
-    it { is_expected.to eq({ teaching_events_search: { distance: 20, online: [true, false] } }) }
+    it { is_expected.to eq({ teaching_events_search: { distance: 20, online: [false, true] } }) }
 
     context "when online is nil" do
       let(:online) { nil }
 
-      it { is_expected.to eq({ teaching_events_search: { distance: 20, online: [true, false] } }) }
+      it { is_expected.to eq({ teaching_events_search: { distance: 20, online: [true] } }) }
     end
   end
 

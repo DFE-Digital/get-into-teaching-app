@@ -26,4 +26,4 @@ I really enjoy revisiting all the books I once studied as a student, and find it
 
 You have to think on your feet a lot. Being able to adapt really helps when you're faced with 30 students who all have very different personalities and learning needs and when you're making the sort of impact I've experienced, there's nothing better.
 
-We’re here to answer your questions and provide advice about teacher training, whether you’re just thinking about teaching or you’re ready to apply. [Find out more about how we can help](/help-and-advice).
+We’re here to answer your questions and provide advice about teaching, whether you’re just thinking about it or you’re ready to apply. [Find out how you can get help and support with getting into teaching](/help-and-support).

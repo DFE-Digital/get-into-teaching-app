@@ -14,6 +14,10 @@
 	  padding-bottom: 2em;
     width: 100%;
 
+    > h2 {
+      margin-top: 2em;
+    }
+
     &:last-of-type {
       padding-bottom: 4em;
     }
@@ -134,19 +138,32 @@
 
 .promo {
   max-width: $content-max-width;
-  border-top: 1px solid $grey-mid;
-  padding-top: 3em;
   margin: 3em auto;
   display: flex;
   flex-direction: column;
-  gap: 1em;
+  gap: $indent-amount / 2;
+  margin: 0 $indent-amount;
 
   @include mq($from: tablet) {
     flex-direction: row;
+    margin: 0 auto;
+    gap: 2 * $indent-amount;
+  }
+
+  &--border-top {
+    padding-top: 4em;
+    border-top: 1px solid $grey-mid;
+    margin-top: 3em;
+  }
+
+  &--border-bottom {
+    padding-bottom: 4em;
+    border-bottom: 1px solid $grey-mid;
+    margin-bottom: 3em;
   }
 
   &:last-of-type {
-    margin-bottom: 6em;
+    margin-bottom: 3em;
   }
 
   &__left,
@@ -162,6 +179,7 @@
     flex-direction: column;
     gap: .5em;
     padding-block: 2em;
+    min-height: 8em;
 
     &.tta-background {
       background-image: url("../images/content/homepage/teacher-training-adviser.jpg");
@@ -205,10 +223,13 @@
     flex-direction: column;
 
     @include mq($from: tablet) {
-      gap: 1em;
+      gap: $indent-amount / 2;
+      padding-right: $indent-amount;
     }
 
-    > * { margin: .5rem 1rem; }
+    > * {
+      margin: 1rem 0;
+    }
 
     p {
       margin-top: 0;
@@ -229,6 +250,10 @@
     }
 
     form {
+      width: 100%;
+      margin: 0;
+      box-sizing: border-box;
+
       input {
         margin: 0 0 .5rem;
         max-width: 10rem;
