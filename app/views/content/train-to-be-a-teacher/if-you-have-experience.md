@@ -1,6 +1,6 @@
 ---
-title: "If you've worked in a classroom"
-heading: "Train to be a teacher if you've worked in a classroom"
+title: "Train to teach if you've worked in a classroom"
+heading: "Train to teach if you've worked in a classroom"
 description: |-
   Find out how you can gain qualified teacher status (QTS) if you’ve already spent a lot of time in the classroom as a teaching assistant or in a similar role.
 related_content:

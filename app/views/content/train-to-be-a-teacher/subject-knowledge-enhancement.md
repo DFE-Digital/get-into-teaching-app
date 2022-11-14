@@ -1,5 +1,5 @@
 ---
-title: Improve your subject knowledge
+title: Subject knowledge enhancement (SKE)
 related_content:
     Get school experience : "/train-to-be-a-teacher/get-school-experience"
     Application tips : "/blog/application-tips-from-a-teacher-training-provider"
