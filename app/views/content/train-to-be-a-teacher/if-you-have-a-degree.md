@@ -1,6 +1,6 @@
 ---
-title: "Ways to train if you have a degree"
-heading: "Train to be a teacher if you have or are studying for a degree"
+title: "Train to teach if you have a degree or are studying for one"
+heading: "Train to teach if you have a degree or are studying for one"
 description: |-
   Discover how you can train to be a teacher and gain qualified teacher status (QTS) if you have a degree. Including school-led and university-led training.
 related_content:

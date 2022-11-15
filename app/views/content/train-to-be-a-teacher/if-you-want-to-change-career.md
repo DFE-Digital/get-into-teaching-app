@@ -1,6 +1,6 @@
 ---
-title: If you want to change career
-heading: Train to be a teacher if you want to change career
+title: Train to teach if you're changing career
+heading: Train to teach if you're changing career
 description: |-
   Find out what extra support you can get if you want to change career and get into teaching. Bring your experience to life in the classroom.
 related_content:
