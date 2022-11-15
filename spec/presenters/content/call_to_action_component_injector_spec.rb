@@ -11,7 +11,6 @@ RSpec.describe Content::CallToActionComponentInjector, type: :component do
         "icon" => "icon-person",
       },
     },
-    "chat online component" => "chat_online",
     "attachment component" => {
       "name" => "attachment",
       "arguments" => {

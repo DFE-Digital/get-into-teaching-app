@@ -118,25 +118,6 @@ The key (`"media/images/content/hero-images/0001.jpg"`) is the **primary** varia
 * `alt:` - the alt text for the image, wrapped in quotes
 * `variants` - a list of **other versions of the same image**. The alternate versions can be thumbnails or crops and are considered alternates if the same `alt` text can be applied to them as the primary variant
 
-### Tuition fee and maintenance loans
-
-Lots of text.
-
-### Bursaries and scholorships
-
-Lots of text.
-
-# If you come from outside England
-
-Lots of text.
-```
-
-The above example would render out as follows:
-
-```
-<img src="images/jump_link_examples.png" alt="Example Jump Links" style="width: 500px;">
-```
-
 ### Calls to Action
 
 On some pages we want to include one or more calls to action; instead of copy/pasting the HTML for these sections we can specify and configure them in the frontmatter and then reference them in our content.
@@ -149,9 +130,8 @@ You can configure and reference calls to action as part of your main content:
 ---
 calls_to_action:
   chat:
-    name: chat_online
-    arguments:
-    text: "Chat to one of our advisers"
+    name: chat
+    arguments: {}
   attachment:
     name: attachment
     arguments:
@@ -195,37 +175,6 @@ $table$
 The above example would render out as follows:
 
 <img src="images/content_cta_examples.png" alt="Example Content CTAs" style="width: 500px;">
-
-#### Sidebar
-
-It is also possible to place multiple CTAs in the right column of the page:
-
-```yaml
----
-right_column:
-  ctas:
-    - title: Title
-      text: Text
-      link_text: Link text
-      link_target: /path
-      icon: icon-calendar
-      hide_on_mobile: Yes
-      hide_on_tablet: Yes
-    - title: Other Title
-      text: Other Text
-      link_text: Other Link text
-      link_target: /other/path
-      icon: icon-calendar
-      hide_on_mobile: Yes
-      hide_on_tablet: Yes
----
-
-This is the main content.
-```
-
-The above example would render out as follows:
-
-<img src="images/sidebar_cta_examples.png" alt="Example Sidebar CTAs" style="width: 500px;">
 
 ### Accessibility
 
