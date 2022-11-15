@@ -14,4 +14,7 @@ image: "media/images/content/hero-images/Chemistry_MissObi.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
 noindex: true
+navigation: 5
+navigation_title: Is teaching right for me?
+navigation_path: "landing/is-teaching-right-for-me"
 ---
