@@ -30,12 +30,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check ${{ matrix.data.principal }}
-        uses: DFE-Digital/github-actions/CheckServicePrincipal@master
+        uses: DFE-Digital/github-actions/CheckServicePrincipal@refactor-check-service-principal
         id: pwsh_check_expire
         with:
             AzureCredentials: ${{ secrets.AZURE_CREDENTIALS }}
             ServicePrincipal: ${{ matrix.data.principal }}
-            ExpiresWithinDays: 30
+            ExpiresWithinDays: 326
 
       - name: Processing ${{ matrix.data.principal }}
         if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Alert
@@ -62,16 +62,16 @@ jobs:
           secret: INFRA-KEYS
           key: SLACK-WEBHOOK
 
-      - name: Slack Notification
-        if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Alert
-        uses: rtCamp/action-slack-notify@master
-        env:
-           SLACK_COLOR: ${{env.SLACK_ERROR}}
-           SLACK_TITLE: A Service Principal secret is expiring soon
-           SLACK_MESSAGE: |
-                         The Service Principal *${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application }}*
-                         secret *${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Name }}* is due to expire in *${{fromJson(steps.pwsh_check_expire.outputs.json_data).data.ExpiresDays}}* days.
-                         Please follow the <https://dfe-technical-guidance.london.cloudapps.digital/infrastructure/hosting/azure-cip/#service-principal|Use the service principal in external systems> process to renew.
-                         This secret is shared across the <https://github.com/DFE-Digital/get-into-teaching-app|get-into-teaching-app>, <https://github.com/DFE-Digital/get-into-teaching-api|get-into-teaching-api> and <https://github.com/DFE-Digital/get-teacher-training-adviser-service|get-teacher-training-advisor-service> repositories.
-                         Please update the relevant Key Vault secret with the new value.
-           SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
+      # - name: Slack Notification
+      #   if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Alert
+      #   uses: rtCamp/action-slack-notify@master
+      #   env:
+      #      SLACK_COLOR: ${{env.SLACK_ERROR}}
+      #      SLACK_TITLE: A Service Principal secret is expiring soon
+      #      SLACK_MESSAGE: |
+      #                    The Service Principal *${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Application }}*
+      #                    secret *${{ fromJson(steps.pwsh_check_expire.outputs.json_data).data.Name }}* is due to expire in *${{fromJson(steps.pwsh_check_expire.outputs.json_data).data.ExpiresDays}}* days.
+      #                    Please follow the <https://dfe-technical-guidance.london.cloudapps.digital/infrastructure/hosting/azure-cip/#service-principal|Use the service principal in external systems> process to renew.
+      #                    This secret is shared across the <https://github.com/DFE-Digital/get-into-teaching-app|get-into-teaching-app>, <https://github.com/DFE-Digital/get-into-teaching-api|get-into-teaching-api> and <https://github.com/DFE-Digital/get-teacher-training-adviser-service|get-teacher-training-advisor-service> repositories.
+      #                    Please update the relevant Key Vault secret with the new value.
+      #      SLACK_WEBHOOK: ${{ steps.keyvault-yaml-secret.outputs.SLACK-WEBHOOK }}
