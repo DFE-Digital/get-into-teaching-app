@@ -1,8 +1,6 @@
 
 <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
-  <% promo.left_section(
-      heading: "Get Into Teaching events") do %>
-  <% end %>
+  <% promo.left_section(classes: %w[events-background]) %>
   <% promo.right_section(
         caption: "Online and in-person events",
         heading: "Find out more about teaching") do %>
