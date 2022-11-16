@@ -1,11 +1,15 @@
-<section class="container centered">
-  <article class="markdown campaign">
-    <h2>Make uni life a doddle with our bite-sized hacks</h2>
+<div class="row inset">
+  <section class="col col-845">
+    <h2 class="heading-l heading--box-yellow">Make uni life a doddle with our bite-sized hacks</h2>
 
     <p>
-      What’s the best way to get to know people at uni? How do you remember what you learn in lectures? Why should you always be true to yourself? There’s only one way to find out. Dig into our top university hacks from our recently qualified teachers.
+      What’s the best way to get to know people at uni? How do you remember what you learn in lectures?
+      Why should you always be true to yourself? There’s only one way to find out.
+      Dig into our top university hacks from our recently qualified teachers.
     </p>
+  </section>
 
+  <section class="col col-845">
     <%= render Content::PhotoQuoteListComponent.new(
       [
         {
@@ -40,5 +44,5 @@
         }
       ]
     ) %>
-  </article>
-</section>
+  </section>
+</div>
