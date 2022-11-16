@@ -4,7 +4,10 @@
     grid-template-columns: (4 * $indent-amount) auto (2 * $indent-amount);
     grid-template-rows: auto (2 * $indent-amount) auto;
 
-    img { max-width: 100%;}
+    img {
+      max-width: 100%;
+      height: auto;
+    }
 
     picture:nth-of-type(1) {
       grid-area: 1 / 1 / span 2 / span 2;
