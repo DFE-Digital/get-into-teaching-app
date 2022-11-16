@@ -9,6 +9,7 @@ related_content:
     My career change to teaching : "/blog/my-career-change-to-teaching"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
+    - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 ---
 
 Find out what qualifications you need to teach in primary, secondary and special schools in England.
@@ -32,7 +33,7 @@ Talk to your teacher training provider or [find a course](https://www.find-postg
 
 You need qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
 
-Find out more about qualified teacher status (QTS).
+[Find out more about qualified teacher status (QTS)](/what-is-qts).
 
 ## What can you teach?
 
@@ -48,7 +49,7 @@ Talk to your training provider to find out what you can train to teach.
 
 You could also receive a scholarship or bursary of up to £29,000 to train to teach certain subjects. [Find out more about your eligibility for a scholarship or bursary](/funding-and-support/scholarships-and-bursaries).
 
-## Improve your subject knowledge with a subject knowledge enhancement (SKE) course
+## Do a subject knowledge enhancement (SKE) course
 
 You can do a subject knowledge enhancement course before or during your teacher training to improve your subject knowledge. Your teacher training provider might make this a requirement of accepting you on their course if:
 
@@ -63,4 +64,4 @@ If you have qualifications from outside the UK, you’ll need to show that they�
 
 You can [get a statement of comparability from the UK European Network of Information Centres (UK ENIC)](https://enic.org.uk/Qualifications/SOC/Default.aspx) to show the standard of your qualifications.
 
-[Talk to us to get help and support with understanding your qualifications](/help-and-support).
+Talk to us to [get help and support with understanding your qualifications](/help-and-support).
