@@ -47,13 +47,13 @@ ol.photo-quote-list {
   margin: 0;
   list-style: none;
   counter-reset: quotes;
-  padding: $indent-amount 0;
+  padding: 0;
 
   .item {
     max-width: 100%;
     counter-increment: quotes;
     position: relative;
-    margin: $indent-amount $indent-amount 2 * $indent-amount $indent-amount;
+    margin-bottom: 2 * $indent-amount;
     background-color: $grey;
 
     &.blue {

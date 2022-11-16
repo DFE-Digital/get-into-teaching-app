@@ -45,7 +45,7 @@ module ApplicationHelper
   # https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use
   def fa_icon(icon_name, *additional_classes, style: "fas")
     classes = [style, "fa-#{icon_name}"] + additional_classes
-    tag.span("", class: classes)
+    tag.span("", class: classes, "aria-hidden": true)
   end
 
   def fas_icon(*args)
