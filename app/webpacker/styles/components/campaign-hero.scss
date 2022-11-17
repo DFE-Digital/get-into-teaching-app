@@ -71,23 +71,25 @@
     }
 
     span {
-      @include font-size(xxlarge);
+      @include font-size(xlarge);
 
+      line-height: 2em;
       padding: .05rem .7rem;
     }
 
     span:last-of-type {
       @include font-size(xxxlarge, $adjust: 0.75rem);
+      line-height: 1.17em;
 
       @include mq($from: mobile) {
-        @include font-size(xxxlarge, $adjust: 2rem);
+        @include font-size(xxxlarge);
       }
     }
   }
 
   picture {
     @include mq($from: mobile) {
-      grid-area: 1 / 2 / 2 / 4;
+      grid-area: 1 / 1 / 2 / 4;
       display: flex;
       justify-content: flex-end;
     }
@@ -97,7 +99,7 @@
       height: auto;
 
       @include mq($from: tablet) {
-        max-width: 90%;
+        max-width: 80%;
       }
     }
   }

@@ -57,8 +57,8 @@
   max-width: $content-max-width;
 
   @include mq($from: tablet) {
-    grid-template-columns: repeat(2, 1fr) repeat(2, .8fr) 1fr;
-    grid-template-rows: .2fr 15em 1fr;
+    grid-template-columns: repeat(2, 1fr) 0.4fr 0.8fr 1fr;
+    grid-template-rows: .2fr 8em 1fr;
   }
 
   .statement {
@@ -72,6 +72,7 @@
 
     @include mq($from: tablet) {
       grid-area: 2 / 1 / 5 / 4;
+      text-align: right;
     }
   }
 

@@ -1,5 +1,11 @@
 ---
 # hero
+"media/images/content/hero-images/class-of-now.jpg":
+  alt: "A group photo of teachers"
+  variants:
+    - "media/images/content/hero-images/class-of-now--mobile.jpg"
+    - "media/images/content/hero-images/class-of-now--tablet.jpg"
+
 "media/images/content/hero-images/Chemistry_MissObi.jpg":
   alt: "A teacher standing in front of a whiteboard"
   variants:

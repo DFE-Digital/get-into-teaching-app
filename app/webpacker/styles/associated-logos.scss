@@ -1,0 +1,14 @@
+.associated-logos {
+  > div {
+    @extend .col-horizontal;
+
+    align-items: center;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 180px;
+      max-height: 65px;
+    }
+  }
+}

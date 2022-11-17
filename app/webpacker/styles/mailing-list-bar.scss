@@ -9,9 +9,12 @@
   display: none;
 
   &__inner {
+    justify-content: center;
     align-items: center;
     display: flex;
     margin: 0 auto;
+    gap: $indent-amount;
+    max-width: $content-max-width;
 
     @include mq($until: tablet) {
       flex-direction: column;
@@ -20,14 +23,10 @@
   }
 
   &__left {
-    padding: 1em;
+    padding-right: 1em;
     @include font-size(small);
     font-weight: bold;
     color: $white;
-
-    @include mq($until: tablet) {
-      padding: .2em 0 1em;
-    }
   }
 
   &__right {

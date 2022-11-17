@@ -179,6 +179,10 @@ section.container {
     max-width: $column-640;
   }
 
+  .col-center {
+    text-align: center;
+  }
+
   .col-horizontal {
     display: flex;
     gap: $indent-amount;
