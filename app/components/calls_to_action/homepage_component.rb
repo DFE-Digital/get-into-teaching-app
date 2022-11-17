@@ -1,13 +1,15 @@
 module CallsToAction
   class HomepageComponent < ViewComponent::Base
-    attr_accessor :icon, :image, :title, :text, :link
+    attr_accessor :icon, :image, :title, :text, :link, :caption, :badge_text
 
-    def initialize(icon:, link_text:, link_target:, image:, title: nil, text: nil)
+    def initialize(icon:, link_text:, link_target:, image:, title: nil, caption: nil, text: nil, badge_text: nil)
       super
 
-      @title         = title
-      @text          = text
-      @image         = image
+      @title = title
+      @badge_text = badge_text
+      @caption = caption
+      @text = text
+      @image = image
       @icon_filename = icon
 
       @link_target = link_target
@@ -22,7 +24,9 @@ module CallsToAction
   private
 
     def image_element(image)
-      tag.div(style: %[background-image: url('#{asset_pack_path(image)}')], class: "call-to-action__image")
+      tag.div(style: %[background-image: url('#{asset_pack_path(image)}')], class: "call-to-action__image") do
+        tag.div(tag.span(helpers.safe_html_format(badge_text)), class: "badge badge--bordered badge--fixed-80") if badge_text.present?
+      end
     end
 
     def icon_element(icon)
