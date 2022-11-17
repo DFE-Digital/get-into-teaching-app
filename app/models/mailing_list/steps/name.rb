@@ -39,6 +39,10 @@ module MailingList
         super
       end
 
+      def title
+        nil
+      end
+
     private
 
       def channel_invalid?

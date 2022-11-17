@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
 
-  let(:mailing_list_page_title) { "Get personalised guidance to your inbox, name step | Get Into Teaching" }
+  let(:mailing_list_page_title) { "Get personalised guidance to your inbox | Get Into Teaching GOV.UK" }
 
   scenario "Full journey as a new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
