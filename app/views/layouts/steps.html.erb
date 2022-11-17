@@ -48,10 +48,7 @@
         </section>
 
         <%= render(CallsToAction::Promo::PromoComponent.new) do |promo| %>
-          <% promo.left_section(
-              heading: "Advice and support", classes: %w[ml-background]) do %>
-          <% end %>
-
+          <% promo.left_section( classes: %w[ml-background]) %>
           <% promo.right_section(
             heading: "Find out more about getting into teaching"
           ) do %>
