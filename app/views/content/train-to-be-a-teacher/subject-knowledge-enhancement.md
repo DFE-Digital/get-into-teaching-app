@@ -48,6 +48,6 @@ Courses are available across England. Most candidates complete a SKE course befo
 
 You may also be eligible for a bursary of £175 per week if you train to teach in the 2022/23 academic year. This will go towards any extra costs you may have during the SKE course. Contact your ITT and SKE providers for more information.
 
-You need to complete your SKE course before starting your teacher training in order to receive both a SKE and teacher training bursary.
+You need to complete your SKE course before starting your teacher training in order to receive both a SKE bursary and a teacher training bursary.
 
 [Find out if there's a subject knowledge enhancement (SKE) course for your subject](https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory).
