@@ -51,10 +51,10 @@ You could also receive a scholarship or bursary of up to £29,000 to train to te
 
 ## Do a subject knowledge enhancement (SKE) course
 
-You can do a subject knowledge enhancement course before or during your teacher training to improve your subject knowledge. Your teacher training provider might make this a requirement of accepting you on their course if:
+You can do a subject knowledge enhancement course before or sometimes during your teacher training to improve your subject knowledge. Your teacher training provider might make this a requirement of accepting you on their course if:
 
-* you’ve not used your subject knowledge in a while
 * you do not have a degree in the subject you’re training to teach
+* you completed your degree more than 5 years ago
 
 [Find out more about subject knowledge enhancement courses](/train-to-be-a-teacher/subject-knowledge-enhancement).
 
