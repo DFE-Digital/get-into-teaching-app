@@ -1,5 +1,6 @@
 ---
-title: "Teach disabled pupils and pupils with special educational needs"
+title: "Teach pupils with special educational needs and disabilities"
+heading: "Teach pupils with special educational needs and disabilities (SEND)"
 description: |-
   As a qualified teacher you’ll have the opportunity to work with pupils with complex needs, no matter what setting you work in.
 date: "2021-05-07"
