@@ -24,7 +24,7 @@ SKE courses can help when you have:
 - an A level but not a degree in the subject
 - an unrelated degree but relevant professional experience
 - studied for a languages degree, but need to develop a second language to an acceptable level for teaching in schools 
-- not used your subject knowledge for a while
+- finished your degree more than 5 years ago
 
 When you apply for teacher training, your teacher training provider will help you establish whether you need to improve your subject knowledge. They may decide to make completing a SKE course a condition of your offer to train with them.
 
@@ -46,6 +46,8 @@ SKE course lengths can range from 8 to 28 weeks. They're usually online, but som
 
 Courses are available across England. Most candidates complete a SKE course before starting their teacher training year, but it’s sometimes possible to complete it alongside your initial teacher training (ITT) course. You may be able to complete the SKE course on a part-time basis.
 
-You may also be eligible for a bursary of £175 per week if you train to teach in the 2022/23 academic year. This will go towards any extra costs you may have during the SKE course. Contact your ITT and SKE providers for more information.  
+You may also be eligible for a bursary of £175 per week if you train to teach in the 2022/23 academic year. This will go towards any extra costs you may have during the SKE course. Contact your ITT and SKE providers for more information.
+
+You need to complete your SKE course before starting your teacher training in order to receive both a SKE and teacher training bursary.
 
 [Find out if there's a subject knowledge enhancement (SKE) course for your subject](https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory).
