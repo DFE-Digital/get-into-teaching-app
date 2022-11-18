@@ -260,7 +260,7 @@ Find out what financial support is available to [fund your training](/funding-an
 
 DfE has made some funding available for assessment-only QTS programmes for Ukrainians. Contact teach.inengland@education.gov.uk for more information. 
 
-From spring 2023, Ukrainians will be able to [apply to the Teaching Regulation Agency for QTS](#apply-for-qts-in-england-from-spring-2023).
+From spring 2023, Ukrainians will be able to [apply to the Teaching Regulation Agency for QTS](#apply-for-qts-in-england).
 
 ### Visas and immigration
 
