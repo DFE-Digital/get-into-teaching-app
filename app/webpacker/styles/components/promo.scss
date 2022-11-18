@@ -37,9 +37,6 @@
     background-image: url("../images/content/homepage/here-to-help.jpg");
     background-position: center;
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
     padding-block: 2em;
     min-height: 8em;
 
@@ -62,26 +59,6 @@
       background-image: url("../images/content/hero-images/0021.jpg");
       background-position-y: 50%;
     }
-
-    > div {
-      padding: 0 1em .3em 1em;
-      max-width: 60%;
-    }
-
-    h2 > *,
-    .promo__content {
-      display: inline-block;
-      background-color: $yellow;
-      padding: .4rem .8rem;
-    }
-
-    p {
-      margin: 0;
-    }
-
-    .button {
-      display: inline-block;
-    }
   }
 
   &__right {
@@ -94,11 +71,7 @@
       padding-right: $indent-amount;
     }
 
-    > * {
-      margin: 1rem 0;
-    }
-
-    p {
+    p, h2 {
       margin-top: 0;
     }
 
@@ -110,10 +83,6 @@
     label,
     input {
       margin-bottom: .4em;
-    }
-
-    p:last-of-type {
-      margin-bottom: 0;
     }
 
     form {

@@ -10,16 +10,6 @@
         <section class="main-section container">
           <%= render(partial: "sections/content_errors") %>
 
-          <% if !@front_matter["image"] %>
-            <header>
-              <% if @front_matter["title_caption"].present? %>
-                <%= tag.span(@front_matter["title_caption"], class: "caption") %>
-              <% end %>
-
-              <%= tag.h1(@front_matter["title"]) %>
-            </header>
-          <% end %>
-
           <%= tag.article(class: article_classes(@front_matter)) do %>
 
             <%= yield %>
