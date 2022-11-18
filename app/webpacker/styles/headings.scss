@@ -96,6 +96,10 @@
   transform: translateY(-50%);
 }
 
+.heading--with-caption {
+  margin-top: 0;
+}
+
 .heading--box-transparent {
   @include box-heading(transparent, $black);
 }
