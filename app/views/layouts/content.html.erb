@@ -18,10 +18,6 @@
 
               <%= tag.h1 do %>
                 <%= @front_matter["heading"] || @front_matter["title"] %>
-
-                <% if @front_matter["subheading"].present? || @front_matter["subtitle"].present? %>
-                  <%= tag.div(@front_matter["subheading"] || @front_matter["subtitle"], class: "subheading") %>
-                <% end %>
               <% end %>
 
             </header>
