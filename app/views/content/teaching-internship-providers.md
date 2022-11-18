@@ -42,7 +42,7 @@ keywords:
       
       <p>You will be able to apply for a teaching internship from January 2023. More information on how to apply will be available on this page, once applications open.</p>
 
-      <p>Sign up for our emails and we will send you helpful advice and insights about getting into teaching. If you are eligible for the Internships Programme, we will also let you know when applications open.</p>
+      <p>Sign up for our emails and we will send you helpful advice and insights about getting into teaching. If you are eligible for a teaching internship, we will also let you know when applications open.</p>
 
       <p><a class="button button--white" href="/mailinglist/signup">Sign up for email guidance</a></p>
     </div>
