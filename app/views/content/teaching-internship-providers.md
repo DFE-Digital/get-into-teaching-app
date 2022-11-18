@@ -40,7 +40,7 @@ keywords:
     <div>
       <h2 class="heading-m">Apply from January 2023</h2>
       
-      <p>Applications for the Teaching Internships Programme will open in January 2023. More information on how to apply will be available on this page, once applications open.</p>
+      <p>You will be able to apply for a teaching internship from January 2023. More information on how to apply will be available on this page, once applications open.</p>
 
       <p>Sign up for our emails and we will send you helpful advice and insights about getting into teaching. If you are eligible for the Internships Programme, we will also let you know when applications open.</p>
 
