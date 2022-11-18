@@ -182,11 +182,11 @@ You have the right to apply to train to teach in England if you are resident in 
 * [the Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 * [the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
-### Deadlines for applications
+### Deadline for applications
 
-Applications to train to teach on courses starting in autumn 2023 will remain open until [September 2023](https://www.gov.uk/government/publications/recruiting-postgraduate-trainee-teachers-recruitment-cycle-dates/recruiting-postgraduate-trainee-teachers-recruitment-cycle-dates).
+Applications to train to teach on courses starting in autumn 2023 will remain open until [September 2023](https://www.apply-for-teacher-training.service.gov.uk/provider/service-guidance/dates-and-deadlines).
 
-If you intend to apply, you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain valuable experience for your teacher training course. 
+If you intend to [apply](https://www.gov.uk/apply-for-teacher-training), you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain valuable experience until your teacher training course starts. 
 
 ### Fees and financial support
 
