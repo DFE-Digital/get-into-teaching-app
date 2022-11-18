@@ -8,6 +8,8 @@ for middle and senior leadership, headship and executive leadership.
 
 [Salaries and benefits](/salaries-and-benefits) explains teaching salaries for newly qualified and more experienced teachers.
 
+#### Workload, behaviour and flexible hours
+
 We’re taking action to address some of the common issues that teachers face in the classroom and have collaborated with schools to:
 
 * [develop a workload reduction kit](https://www.gov.uk/guidance/school-workload-reduction-toolkit)
