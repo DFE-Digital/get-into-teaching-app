@@ -6,6 +6,7 @@ This documentation aims to be a reference for content editors that want to make 
 
 1. [Finding a Page/Content to Edit](#finding-a-pagecontent-to-edit)
 2. [Content Editing Tips/Info](#content-editing-tips-info)
+	* [Headings](#headings)
 	* [Frontmatter](#frontmatter)
 	* [Links](#links)
 	* [SEO](#seo)
@@ -49,6 +50,20 @@ If you are looking to edit content associated with a form element in particular 
 The majority of pages on the website are formatted in Markdown, which is a lightweight markup language designed for creating and formatting text. 
 
 There is a [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) that serves as a good reference on how to standard formatting, such as making something **bold** or *italic*. In conjunction with page frontmatter (see below) we can do some extra GiT-specific things in our Markdown, which this section aims to explain.
+
+### Headings
+
+Where possible we should use the `HeadingComponent` to render a heading; especially if it contains a caption. For example:
+
+```
+render HeadingComponent.new(
+  heading: "My heading",
+  tag: :h2,
+  heading_size: :l,
+  caption: "My caption",
+  caption_size: :m
+)
+```
 
 ### Frontmatter
 
