@@ -1,6 +1,6 @@
 ---
 title: "Is teaching right for me"
-description: Lorem ipsum
+description: Explore if teaching is right for you. Discover the qualifications you need to train to teach and read stories from real life teachers.
 content:
     - content/is-teaching-right-for-me/header
     - content/is-teaching-right-for-me/making_a_difference
