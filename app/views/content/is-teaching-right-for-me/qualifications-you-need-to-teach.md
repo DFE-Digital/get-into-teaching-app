@@ -18,6 +18,12 @@ You can also find out [how to teach in further education](/become-a-further-educ
 
 ## What qualifications do you need to be a teacher?
 
+You need qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
+
+[Find out more about qualified teacher status (QTS)](/what-is-qts).
+
+## What qualifications do you need to train?
+
 To train to teach in primary and secondary schools in England, you’ll need:
 
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
@@ -28,12 +34,6 @@ Different training providers may also have specific criteria. For example, some 
 Some training providers may consider candidates with pending GCSEs. If you do not have the GCSEs required, they may also ask you to sit an equivalency test or to offer other evidence to show your ability.
 
 Talk to your teacher training provider or [find a course](https://www.find-postgraduate-teacher-training.service.gov.uk/) to check what your provider will accept.
-
-### Qualified teacher status (QTS)
-
-You need qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England (schools funded by local authorities). You can get this through teacher training.
-
-[Find out more about qualified teacher status (QTS)](/what-is-qts).
 
 ## What can you teach?
 
