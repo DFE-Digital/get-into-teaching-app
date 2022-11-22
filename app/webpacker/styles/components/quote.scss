@@ -1,14 +1,35 @@
 .quote {
-  @include quote;
   margin: $indent-amount 0;
   width: 100%;
 
+  &--background-yellow {
+    @include quote($yellow);
+
+    p {
+      @include fancy-quotes-before($white);
+
+      span {
+        @include fancy-quotes-after($white);
+      }
+    }
+  }
+
+  &--background-grey {
+    @include quote($grey);
+
+    p {
+      @include fancy-quotes-before($pink);
+
+      span {
+        @include fancy-quotes-after($pink);
+      }
+    }
+  }
+
   p {
-    @include fancy-quotes-before;
     margin: 0;
 
     span {
-      @include fancy-quotes-after;
       white-space: nowrap;
     }
   }
@@ -41,12 +62,8 @@
       margin-top: .5rem;
     }
 
-    .button {
-      margin-top: $indent-amount;
-    }
-
-    img {
-      max-width: 50%;
+    a {
+      @extend .link--black;
     }
   }
 }
@@ -69,58 +86,9 @@
   }
 
   .quote:not(.quote--inline-left, .quote--inline-right) {
-    &.quote--hang-right {
-      .footer {
-        flex-direction: row-reverse;
-
-        &--with-image {
-          .author {
-            margin-right: 185px;
-          }
-        }
-
-        .author {
-          margin-left: 0;
-          text-align: right;
-        }
-
-        img {
-          left: auto;
-          right: 0;
-        }
-
-        .button {
-          right: auto;
-          left: 1em;
-        }
-      }
-    }
-
     .footer {
       flex-direction: row;
       justify-content: space-between;
-
-      &--with-image {
-        .author {
-          margin-left: 170px;
-        }
-      }
-
-      .button {
-        margin-top: 0;
-        position: absolute;
-        right: $indent-amount;
-        bottom: 0;
-        transform: translate(0, 50%);
-      }
-
-      img {
-        position: absolute;
-        left: 0;
-        border: 1em solid $yellow;
-        border-top: 0;
-        width: 175px;
-      }
     }
   }
 }

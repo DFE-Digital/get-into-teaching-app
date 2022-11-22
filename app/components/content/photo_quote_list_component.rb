@@ -2,16 +2,24 @@ module Content
   class PhotoQuoteListComponent < ViewComponent::Base
     COLORS = %w[pink green blue yellow].freeze
 
-    attr_reader :quotes
+    attr_reader :quotes, :colors, :numbered
 
-    def initialize(quotes)
+    def initialize(quotes, colors: COLORS, numbered: true)
       super
 
       @quotes = quotes
+      @colors = colors
+      @numbered = numbered
     end
 
     def item_color(index)
-      COLORS[index % COLORS.count]
+      colors[index % colors.count]
+    end
+
+    def classes
+      %w[photo-quote-list].tap do |c|
+        c << "photo-quote-list--numbered" if numbered
+      end
     end
 
   private

@@ -1,0 +1,17 @@
+<div class="campaign">
+  <article>
+    <section class="grey">
+      <section class="container">
+        <%= render(CallsToAction::Promo::PromoComponent.new(border: :none, reverse: true)) do |promo| %>
+          <% promo.left_section(heading: nil, classes: %w[gse-background]) %>
+
+          <% promo.right_section(heading: "Get school experience") do %>
+              <p>School experience can help you explore what life is really like in the classroom and which subject and age range you'd like to teach.</p>
+
+            <p>  <%= link_to("Find out more about school experience", "/train-to-be-a-teacher/get-school-experience", class: "link--black") %>.</p>
+          <% end %>
+        <% end %>
+      </section>
+    </section>
+  </article>
+</div>

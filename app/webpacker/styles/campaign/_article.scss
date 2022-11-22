@@ -91,6 +91,12 @@ article {
   }
 
   .statement {
+    &.narrow {
+      width: $column-570;
+      max-width: 100%;
+      box-sizing: border-box;
+    }
+
     div + div {
       margin-top: .5rem;
     }

@@ -1,0 +1,30 @@
+<article>
+  <section class="container">
+      <h2 class="heading--box-blue">Numbers to know</h2>
+
+      <div class="inset">
+        <%= render Content::FactListComponent.new(
+          [
+            {
+              icon: "icon-ticket",
+              value: "£15k+",
+              title: "funding available for training",
+              link: link_to("Scholarships and bursaries", page_path("funding-and-support/scholarships-and-bursaries")),
+            },
+            {
+              icon: "icon-money",
+              value: "£28k",
+              title: "minimum starting salary",
+              link: link_to("Salaries and benefits", page_path("salaries-and-benefits")),
+            },
+            {
+              icon: "icon-people",
+              value: "2 years",
+              title: "support for early career teachers",
+              link: link_to("Early career teachers", page_path("support-for-early-career-teachers")),
+            },
+          ],
+        ) %>
+      </div>
+  </section>
+</article>

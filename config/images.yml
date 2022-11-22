@@ -1,5 +1,11 @@
 ---
 # hero
+"media/images/content/hero-images/Chemistry_MissObi.jpg":
+  alt: "A teacher standing in front of a whiteboard"
+  variants:
+    - "media/images/content/hero-images/Chemistry_MissObi--mobile.jpg"
+    - "media/images/content/hero-images/Chemistry_MissObi--tablet.jpg"
+
 "media/images/content/hero-images/event-image.jpg":
   alt: "A Get Into Teaching event in progress with people talking to teachers and advisers"
   variants:
@@ -396,6 +402,20 @@
   alt: "Teacher Keri Gell"
 "media/images/content/food-for-thought/Ella_Tyrrell.jpg":
   alt: "Teacher Ella Tyrrell"
+
+# is teaching right for me
+"media/images/content/is-teaching-right-for-me/fellowship.jpg":
+  alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
+"media/images/content/is-teaching-right-for-me/stories-zainab.jpg":
+  alt: "Zainab Kasmani, English teacher"
+"media/images/content/is-teaching-right-for-me/History_Class_1.jpg":
+  alt: "Pupils raising their hands in a History class"
+"media/images/content/is-teaching-right-for-me/Maths_MrAhmed_1.jpg":
+  alt: "Mr Ahmed, Maths teacher"
+"media/images/content/is-teaching-right-for-me/Physics_MissHayre_4.jpg":
+  alt: "Miss Hayre, Physics teacher"
+"media/images/content/is-teaching-right-for-me/History_Class_1_promo.jpg":
+  alt: "Pupils raising their hands in a History class"
 
 # event
 "media/images/content/event-signup/event-regional-online-listing.jpg":
