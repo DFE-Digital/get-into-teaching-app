@@ -12,15 +12,18 @@ describe Content::QuoteComponent, type: :component do
       name: name,
       job_title: job_title,
       inline: inline,
+      background: background,
     )
   end
   let(:text) { "text goes here" }
   let(:name) { "name" }
   let(:job_title) { "job-title" }
   let(:inline) { nil }
+  let(:background) { "yellow" }
 
   describe "quote classes" do
     it { is_expected.to have_css(".quote") }
+    it { is_expected.to have_css(".quote--background-yellow") }
   end
 
   describe "quote text" do
@@ -61,6 +64,12 @@ describe Content::QuoteComponent, type: :component do
     it { is_expected.to have_css(".quote--inline-left") }
   end
 
+  context "when background grey" do
+    let(:background) { "grey" }
+
+    it { is_expected.to have_css(".quote--background-grey") }
+  end
+
   context "when no footer elements are present" do
     let(:name) { nil }
     let(:job_title) { nil }
@@ -82,6 +91,11 @@ describe Content::QuoteComponent, type: :component do
     it do
       expect { described_class.new(text: text, inline: "bottom") }.to \
         raise_error(ArgumentError, "inline must be right or left")
+    end
+
+    it do
+      expect { described_class.new(text: text, background: "green") }.to \
+        raise_error(ArgumentError, "background must be yellow or grey")
     end
   end
 end
