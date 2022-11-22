@@ -63,9 +63,9 @@ provider_groups:
       email: office@bedsscitt.org.uk
     - header: The Cambridge Partnership
       link: https://campartnership.org/
-      name: Claire Mott
-      telephone: '01223 491630'
-      email: cmott@campartnership.org
+      name: Jackie Atkin
+      telephone: '01234 907896'
+      email: jatkin@pilgrimpartnership.org
     - header: University of Bedfordshire
       link: https://www.beds.ac.uk/
       name: Bedford Admissions
