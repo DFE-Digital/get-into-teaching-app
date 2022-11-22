@@ -27,7 +27,7 @@ describe "Circuit breaker", type: :request do
     end
 
     it "the MailingList::StepsController redirects to an error page" do
-      get mailing_list_step_path("privacy_policy")
+      get mailing_list_step_path("name")
       expect(response).to redirect_to(mailinglist_not_available_path)
     end
 

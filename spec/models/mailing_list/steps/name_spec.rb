@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe MailingList::Steps::Name do
   include_context "with wizard step"
+  include_context "with stubbed latest privacy policy api"
 
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
@@ -21,6 +22,7 @@ describe MailingList::Steps::Name do
   it { is_expected.to respond_to :first_name }
   it { is_expected.to respond_to :last_name }
   it { is_expected.to respond_to :email }
+  it { is_expected.to respond_to :accepted_policy_id }
 
   describe "validations" do
     subject { instance.tap(&:valid?).errors.messages }
@@ -45,13 +47,28 @@ describe MailingList::Steps::Name do
   end
 
   describe "#export" do
-    subject { instance.export }
-
-    %i[channel_id email first_name last_name].each do |key|
-      it { is_expected.to have_key(key.to_s) }
+    let(:backingstore) do
+      {
+        "channel_id" => "123",
+        "first_name" => "first",
+        "last_name" => "last",
+        "email" => "email",
+        "accepted_policy_id" => "000",
+      }
     end
 
+    subject { instance.export }
+
+    it { is_expected.to include(backingstore) }
     it { is_expected.not_to have_key("sub_channel_id") }
+
+    context "when a policy id has not been set" do
+      let(:backingstore) { {} }
+
+      it "defaults to the latest policy id" do
+        is_expected.to include("accepted_policy_id" => policy["id"])
+      end
+    end
   end
 
   describe "#save" do

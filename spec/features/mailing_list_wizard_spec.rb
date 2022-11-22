@@ -2,6 +2,7 @@ require "rails_helper"
 
 RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
+  include_context "with stubbed latest privacy policy api"
 
   let(:mailing_list_page_title) { "Get tailored guidance in your inbox | Get Into Teaching GOV.UK" }
 
@@ -33,15 +34,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    click_on "Complete sign up"
-
-    expect(page).to have_text "Accept privacy policy"
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_title("You've signed up | Get Into Teaching")
@@ -79,10 +71,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
@@ -119,10 +107,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "Test, you're signed up"
@@ -158,10 +142,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
@@ -210,10 +190,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
       "Which subject do you want to teach?",
       selected: TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
     )
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "#{first_name}, you're signed up"
@@ -332,10 +308,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: ""
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
