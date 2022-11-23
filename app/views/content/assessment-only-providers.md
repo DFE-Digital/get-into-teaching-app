@@ -29,9 +29,9 @@ provider_groups:
       email: aor@educate-group.co.uk
     - header: Essex and Thames SCITT
       link: https://etpscitt.co.uk/
-      name: Fran Attwood
-      telephone: '01268 570215'
-      email: Fran@etpscitt.co.uk
+      name: Anna Spencer
+      telephone: '01268 988580'
+      email: anna@ete.org.uk
     - header: Mid Essex Initial Teacher Training
       link: https://midessexteachertraining.com/
       name: Steve Fox
