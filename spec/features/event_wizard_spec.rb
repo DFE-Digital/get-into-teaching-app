@@ -42,9 +42,6 @@ RSpec.feature "Event wizard", type: :feature do
     within_fieldset "Would you like to receive email updates" do
       choose "No"
     end
-    within_fieldset "Are you over 16 and do you agree" do
-      check "Yes"
-    end
 
     expect_sign_up_with_attributes(base_attributes.merge({ is_walk_in: true }))
 
@@ -78,9 +75,6 @@ RSpec.feature "Event wizard", type: :feature do
     within_fieldset "Would you like to receive email updates" do
       choose "No"
     end
-    within_fieldset "Are you over 16 and do you agree" do
-      check "Yes"
-    end
 
     expect_sign_up_with_attributes(base_attributes.merge({ is_walk_in: true, is_verified: false }))
 
@@ -106,17 +100,14 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "What is your telephone number? (optional)", with: "01234567890"
     click_on "Next step"
 
-    within_fieldset "Would you like to receive email updates" do
-      choose "Yes"
-    end
     click_on "Complete sign up"
 
     expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    within_fieldset "Are you over 16 and do you agree" do
-      check "Yes"
-    end
+    expect(page).to have_text "Choose yes or no"
 
+    within_fieldset "Would you like to receive email updates" do
+      choose "Yes"
+    end
     click_on "Complete sign up"
 
     fill_in_personalised_updates
@@ -148,13 +139,6 @@ RSpec.feature "Event wizard", type: :feature do
 
     within_fieldset "Would you like to receive email updates" do
       choose "No"
-    end
-    click_on "Complete sign up"
-
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    within_fieldset "Are you over 16 and do you agree" do
-      check "Yes"
     end
 
     expect_sign_up_with_attributes(base_attributes)
@@ -189,17 +173,6 @@ RSpec.feature "Event wizard", type: :feature do
     fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
     click_on "Next step"
 
-    expect(page).to have_text "Are you over 16 and do you agree"
-    expect(page).to have_text "Would you like to receive email updates"
-    click_on "Complete sign up"
-
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    expect(page).to have_text "Choose yes or no"
-
-    within_fieldset "Are you over 16 and do you agree" do
-      check "Yes"
-    end
     within_fieldset "Would you like to receive email updates" do
       choose "Yes"
     end
@@ -280,19 +253,6 @@ RSpec.feature "Event wizard", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text("What is your telephone number? (optional)")
-    click_on "Next step"
-
-    expect(page).to have_text("Are you over 16 and do you agree")
-    expect(page).not_to have_text("Would you like to receive email updates")
-    click_on "Complete sign up"
-
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    expect(page).not_to have_text "Choose yes or no"
-
-    within_fieldset "Are you over 16 and do you agree" do
-      check "Yes"
-    end
 
     expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: nil }))
 
@@ -308,7 +268,7 @@ RSpec.feature "Event wizard", type: :feature do
 
     response = GetIntoTeachingApiClient::TeachingEventAddAttendee.new(
       event_id: event.id,
-      address_telephone: nil,
+      address_telephone: "0123456789",
       already_subscribed_to_teacher_training_adviser: true,
     )
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
@@ -322,26 +282,10 @@ RSpec.feature "Event wizard", type: :feature do
 
     expect(page).to have_text "To verify your details, we've sent a code to your email address."
     fill_in "To verify your details, we've sent a code to your email address.", with: "123456"
+
+    expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: response.address_telephone }))
+
     click_on "Next step"
-
-    expect(page).to have_text("What is your telephone number? (optional)")
-    click_on "Next step"
-
-    expect(page).to have_text("Are you over 16 and do you agree")
-    expect(page).not_to have_text("Would you like to receive email updates")
-    click_on "Complete sign up"
-
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    expect(page).not_to have_text "Choose yes or no"
-
-    within_fieldset "Are you over 16 and do you agree" do
-      check "Yes"
-    end
-
-    expect_sign_up_with_attributes(base_attributes.merge({ address_telephone: nil }))
-
-    click_on "Complete sign up"
 
     expect(page).to have_text "What happens next"
     expect(page).not_to have_text "signed up for email updates"

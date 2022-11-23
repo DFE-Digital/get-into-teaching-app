@@ -10,6 +10,8 @@ describe Events::Steps::PersonalDetails do
   it { is_expected.to respond_to :last_name }
   it { is_expected.to respond_to :email }
   it { is_expected.to respond_to :is_walk_in }
+  it { is_expected.to respond_to :accepted_policy_id }
+  it { is_expected.to respond_to :event_id }
 
   describe "validations" do
     subject { instance.errors.messages }
@@ -19,6 +21,16 @@ describe Events::Steps::PersonalDetails do
     it { is_expected.to include(:first_name) }
     it { is_expected.to include(:last_name) }
     it { is_expected.to include(:email) }
+    it { is_expected.to include(:event_id) }
+    it { is_expected.to include(:accepted_policy_id) }
+  end
+
+  describe "event_id" do
+    it { is_expected.to validate_presence_of(:event_id) }
+  end
+
+  describe "accepted_policy_id" do
+    it { is_expected.to validate_presence_of(:accepted_policy_id) }
   end
 
   describe "#first_name" do
