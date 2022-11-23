@@ -1,5 +1,5 @@
-<article>
-  <section class="statement">
+<div class="row inset">
+  <section class="col col-720 statement">
     <div>
       <span class="pink xlarge bold">Maths is&hellip;</span>
     </div>
@@ -15,7 +15,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="col col-720">
     <h2 class="heading-s">The language of everything</h2>
 
     <p>
@@ -36,42 +36,40 @@
     </p>
   </section>
 
-  <%= render Campaign::TextBlockWithTwoImagesComponent.new(
-    heading: "Maths is for everyone",
-    colour: "pink",
-    image_1_path: "media/images/content/hero-images/0017.jpg",
-    image_1_alt: "A teacher sitting with a student helping them with a maths problem",
-    image_2_path: "media/images/content/hero-images/0024.jpg",
-    image_2_alt: "A maths teacher standing at the front of a full classroom delivering a lesson",
-  ) do %>
+  <section class="col col-content-max">
+    <%= render TextBlockWithTwoImagesComponent.new(
+      heading: "Maths is for everyone",
+      colour: "pink",
+      image_1_path: "media/images/content/hero-images/0017.jpg",
+      image_1_alt: "A teacher sitting with a student helping them with a maths problem",
+      image_2_path: "media/images/content/hero-images/0024.jpg",
+      image_2_alt: "A maths teacher standing at the front of a full classroom delivering a lesson",
+    ) do %>
+      <p>
+        If maths is your passion, you know that it is not just learning formulas or
+        equations. It is a way of thinking, and problem solving, that’s important
+        in every walk of life.
+      </p>
 
-    <p>
-      If maths is your passion, you know that it is not just learning formulas or
-      equations. It is a way of thinking, and problem solving, that’s important
-      in every walk of life.
-    </p>
-
-    <p>
-      An exciting career spent passing your passion on to the next generation
-      could be the career for you.
-    </p>
-  <% end %>
-
-  <section>
-    <figure>
-      <blockquote class="pink-quotes">
-        <p class="bold">
-          You can literally change young people’s lives by being a maths teacher.
-          Be the person who helps them see the beauty and importance of maths.
-          It is the best job ever!
-        </p>
-      </blockquote>
-
-      <figcaption>Kevin, maths teacher in Sheffield</figcaption>
-    </figure>
+      <p>
+        An exciting career spent passing your passion on to the next generation
+        could be the career for you.
+      </p>
+    <% end %>
   </section>
 
-  <section class="columns">
+  <section class="col col-640">
+    <%= render Content::QuoteComponent.new(
+      text: "You can literally change young people’s lives by being a maths teacher.
+          Be the person who helps them see the beauty and importance of maths.
+          It is the best job ever!",
+      name: "Kevin, maths teacher in Sheffield",
+      background: "white",
+      large: true
+    ) %>
+  </section>
+
+  <section class="col col-720 col-horizontal">
     <div>
       <h2 class="heading-s">What you'll be teaching</h2>
 
@@ -94,7 +92,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="col col-720">
     <h2 class="heading-s">Some examples of what you teach 11 to 14 year olds:</h2>
 
     <ul>
@@ -127,14 +125,16 @@
     </p>
   </section>
 
-  <%= render Campaign::TextBlockWithOneImageComponent.new(
-    heading: "Getting into teacher training",
-    colour: "yellow",
-    image_path: "media/images/content/hero-images/0009.jpg",
-    image_alt: "A teacher standing at the front of her classroom teaching a class",
-  ) %>
+  <section class="col col-content-max">
+    <%= render TextBlockWithOneImageComponent.new(
+      heading: "Getting into teacher training",
+      colour: "yellow",
+      image_path: "media/images/content/hero-images/0009.jpg",
+      image_alt: "A teacher standing at the front of her classroom teaching a class",
+    ) %>
+  </section>
 
-  <section>
+  <section class="col col-720">
     <h2 class="heading-s">Funding for teaching maths</h2>
 
     <p>
@@ -146,7 +146,7 @@
     </p>
   </section>
 
-    <section>
+  <section class="col col-720">
     <h2 class="heading-s">Maths internships</h2>
 
     <p>
@@ -156,7 +156,7 @@
     </p>
   </section>
 
-  <section>
+  <section class="col col-720">
     <h2 class="heading-s">Improving your maths subject knowledge</h2>
 
     <p>
@@ -172,7 +172,7 @@
     </p>
   </section>
 
-  <section>
+  <section class="col col-720">
     <h2 class="heading-s">Pass on your passion</h2>
 
     <p>Sign up to our mailing list for regular updates on:</p>
@@ -185,4 +185,4 @@
 
     <%= link_to("Register for updates", mailing_list_steps_path, class: "button") %>
   </section>
-</article>
+</div>

@@ -14,7 +14,7 @@
     }
   }
 
-  &--background-grey {
+  &--background-grey, &--background-white {
     @include quote($grey);
 
     p {
@@ -23,6 +23,16 @@
       span {
         @include fancy-quotes-after($pink);
       }
+    }
+  }
+
+  &--background-white {
+    @include quote($white);
+  }
+
+  &--large {
+    p {
+      @include font-size(medium);
     }
   }
 

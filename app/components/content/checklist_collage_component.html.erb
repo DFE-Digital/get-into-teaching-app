@@ -2,7 +2,7 @@
   <div>
     <ul>
       <% checklist.each do |item| %>
-        <%= tag.li(tag.strong(item)) %>
+        <%= tag.li(safe_join([helpers.fa_icon("check"), tag.strong(item)])) %>
       <% end %>
     </ul>
     <%= link_to(cta[:text], cta[:link], class: "button") %>

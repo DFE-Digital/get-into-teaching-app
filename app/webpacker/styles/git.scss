@@ -29,8 +29,7 @@
 @import 'vertical-tags';
 @import 'welcome-guide';
 @import 'category';
-
-@import 'campaign';
+@import 'statement';
 
 @import './sections/hero';
 @import './sections/hero/content';
@@ -48,6 +47,7 @@
 @import './components/content-cta';
 @import './components/content-alert';
 @import './components/feature-table';
+@import './components/text-block-with-image';
 @import './components/inset-text';
 @import './components/link-block';
 @import './components/pagination';

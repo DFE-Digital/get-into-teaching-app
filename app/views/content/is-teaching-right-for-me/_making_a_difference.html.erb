@@ -1,14 +1,13 @@
-<section class="container">
-  <div>
+<div class="row inset">
+  <section class="col col-full-content">
     <h2 class="heading--box-blue">Making a difference</h2>
-    <p class="inset">
+
+    <p class="col-640">
       As a teacher, your passion and creativity will inspire and shape future generations.
     </p>
-  </div>
-</section>
+  </section>
 
-<section class="container centered">
-  <article class="campaign">
+  <section class="col col-845">
     <%= render Content::PhotoQuoteListComponent.new(
       [
         {
@@ -27,5 +26,5 @@
       colors: %w[purple],
       numbered: false
     ) %>
-  </article>
-</section>
+  </section>
+</div>

@@ -1,18 +1,22 @@
-<%= render(CallsToAction::Promo::PromoComponent.new(border: :bottom)) do |promo| %>
-  <% promo.left_section(classes: %w[events-background]) %>
-  <% promo.right_section(
-        caption: "Events near you",
-        heading: "Events are a great place to ask questions") do %>
-      <p>Speak to teachers, local teacher training providers and expert advisers at an in-person event.</p>
+<div class="row">
+  <section class="col col-full-content">
+    <%= render(CallsToAction::Promo::PromoComponent.new(border: :bottom)) do |promo| %>
+      <% promo.left_section(classes: %w[events-background]) %>
+      <% promo.right_section(
+            caption: "Events near you",
+            heading: "Events are a great place to ask questions") do %>
+          <p>Speak to teachers, local teacher training providers and expert advisers at an in-person event.</p>
 
-      <%= form_for TeachingEvents::Search.new, method: :post, url: events_path do |f| %>
-        <%= f.hidden_field :distance, value: 10 %>
-        <%= f.hidden_field :online, multiple: true, value: false %>
-        <%= f.label :postcode, "Enter postcode" %>
-        <%= f.text_field :postcode, autocomplete: "postal-code" %>
-        <%= tag.button("Search", class: "button", id: "event-search") %>
+          <%= form_for TeachingEvents::Search.new, method: :post, url: events_path do |f| %>
+            <%= f.hidden_field :distance, value: 10 %>
+            <%= f.hidden_field :online, multiple: true, value: false %>
+            <%= f.label :postcode, "Enter postcode" %>
+            <%= f.text_field :postcode, autocomplete: "postal-code" %>
+            <%= tag.button("Search", class: "button", id: "event-search") %>
+          <% end %>
+
+          <p>Or <%= link_to("find an online event", events_path(add_online_events(params))) %>.</p>
       <% end %>
-
-      <p>Or <%= link_to("find an online event", events_path(add_online_events(params))) %>.</p>
-  <% end %>
-<% end %>
+    <% end %>
+  </section>
+</div>

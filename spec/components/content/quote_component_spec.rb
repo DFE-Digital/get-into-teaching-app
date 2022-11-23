@@ -13,6 +13,7 @@ describe Content::QuoteComponent, type: :component do
       job_title: job_title,
       inline: inline,
       background: background,
+      large: large,
     )
   end
   let(:text) { "text goes here" }
@@ -20,6 +21,7 @@ describe Content::QuoteComponent, type: :component do
   let(:job_title) { "job-title" }
   let(:inline) { nil }
   let(:background) { "yellow" }
+  let(:large) { false }
 
   describe "quote classes" do
     it { is_expected.to have_css(".quote") }
@@ -68,6 +70,12 @@ describe Content::QuoteComponent, type: :component do
     let(:background) { "grey" }
 
     it { is_expected.to have_css(".quote--background-grey") }
+  end
+
+  context "when large" do
+    let(:large) { true }
+
+    it { is_expected.to have_css(".quote--large") }
   end
 
   context "when no footer elements are present" do

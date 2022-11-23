@@ -88,6 +88,10 @@ describe ApplicationHelper do
       expect(subject).to have_css("span.fas.fa-#{icon_name}")
     end
 
+    it "hides the icon from screen readers" do
+      expect(subject).to have_css("span[aria-hidden=true]")
+    end
+
     context "with FA styles" do
       subject { helper.fa_icon(icon_name, style: style) }
 

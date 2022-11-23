@@ -22,7 +22,7 @@ $quote-color: $white;
     @include quote-icon($quote-color);
 
     content: open-quote;
-    left: 15px;
+    left: 13px;
     top: 10px;
   }
 }
@@ -32,7 +32,7 @@ $quote-color: $white;
     @include quote-icon($quote-color);
 
     content: close-quote;
-    right: -25px;
+    right: -28px;
     top: -15px;
   }
 }
