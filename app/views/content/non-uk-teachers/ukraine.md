@@ -166,7 +166,7 @@ You can work in an English school and, alongside your job, apply for assessment 
 
 ### Apply for QTS in England
 
-From 1 February 2023, qualified teachers from Ukraine who meet the criteria will be able to [apply to the Teaching Regulation Agency for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without paying a fee to a training provider. [Learn more about the way QTS will be awarded to teachers from overseas](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
+From 1 February 2023, qualified teachers from Ukraine who [meet the criteria for QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) will be able to [apply to the Teaching Regulation Agency for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without paying a fee to a training provider. 
 
 ### Salaries and benefits
 
