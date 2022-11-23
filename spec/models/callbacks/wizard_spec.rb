@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe Callbacks::Wizard do
-  subject { described_class.new wizardstore, "privacy_policy" }
+  subject { described_class.new wizardstore, "talking_points" }
 
   let(:uuid) { SecureRandom.uuid }
   let(:store) do
@@ -26,7 +26,6 @@ describe Callbacks::Wizard do
         ::GITWizard::Steps::Authenticate,
         Callbacks::Steps::Callback,
         Callbacks::Steps::TalkingPoints,
-        Callbacks::Steps::PrivacyPolicy,
       ]
     end
   end

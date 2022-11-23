@@ -32,7 +32,7 @@ describe "Circuit breaker", type: :request do
     end
 
     it "the Callbacks::StepsController redirects to an error page" do
-      get callbacks_step_path("privacy_policy")
+      get callbacks_step_path("personal_details")
       expect(response).to redirect_to(callbacks_not_available_path)
     end
   end
