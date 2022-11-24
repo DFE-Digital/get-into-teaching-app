@@ -21,7 +21,7 @@ jobs:
         key: HTTP-USERNAME, HTTP-PASSWORD
 
     - name: Run Page Speed Tas
-      uses: fjogeleit/http-request-action@master
+      uses: fjogeleit/http-request-action@fd5cf60c69049efb1397207cc8b442709a869685
       with:
         url: 'https://get-into-teaching-app-pagespeed.london.cloudapps.digital/pagespeed/run'
         method: 'POST'
