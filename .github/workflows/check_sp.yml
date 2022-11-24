@@ -64,7 +64,7 @@ jobs:
 
       - name: Slack Notification
         if:   fromJson(steps.pwsh_check_expire.outputs.json_data).data.Alert
-        uses: rtCamp/action-slack-notify@2
+        uses: rtCamp/action-slack-notify@v2
         env:
            SLACK_COLOR: ${{env.SLACK_ERROR}}
            SLACK_TITLE: A Service Principal secret is expiring soon
