@@ -86,7 +86,7 @@ If you have [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualifi
 A return to teaching adviser can give you free one-to-one support with:
 
 * the applications process, such as writing personal statements and preparing for interviews
-* accessing courses to enhance your subject knowledge
+* accessing courses to enhance your subject knowledge or teaching practice, such as national professional qualifications (NPQs)
 * finding teaching vacancies
 
 Return to teaching advisers also run [events to support returners](/events).
@@ -99,7 +99,7 @@ $get-a-tta$
 
 The National Tutoring Programme supports schools with helping children get back up to speed after the disruption of the coronavirus pandemic. It also provides different options to return to a school without taking on a full-time or part-time classroom role. 
 
-If you’re looking for an alternative to taking on a teaching role, the [National Tutoring Programme](https://nationaltutoring.org.uk/) could be it. Through it, you can tutor or mentor children and help provide support to disadvantaged pupils.
+If you’re looking for an alternative to taking on a teaching role, the [National Tutoring Programme](https://www.gov.uk/government/publications/national-tutoring-programme-guidance-for-schools-2022-to-2023) could be it. Through it, you can tutor or mentor children and help provide support to disadvantaged pupils.
 
 ## Find a role
 
