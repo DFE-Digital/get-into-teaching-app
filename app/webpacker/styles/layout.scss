@@ -145,7 +145,6 @@ section.container {
 .inset {
   padding: 0 $indent-amount;
   box-sizing: border-box;
-  margin: 0 auto;
   width: 100%;
 }
 
@@ -156,7 +155,19 @@ section.container {
   }
 
   .col {
-    margin: 0 auto 3em auto;
+    margin: 0 auto 3 * $indent-amount auto;
+  }
+
+  .col-space-s {
+    margin-bottom: 1 * $indent-amount;
+  }
+
+  .col-space-m {
+    margin-bottom: 2 * $indent-amount;
+  }
+
+  .col-space-0 {
+    margin-bottom: 0;
   }
 
   .col-full-page {
