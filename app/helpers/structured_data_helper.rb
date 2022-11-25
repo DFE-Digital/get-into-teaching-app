@@ -72,7 +72,7 @@ module StructuredDataHelper
 
   def home_structured_data
     data = {
-      name: suffix_title(nil),
+      name: "Get Into Teaching",
       url: root_url,
       potentialAction: {
         "@type": "SearchAction",
