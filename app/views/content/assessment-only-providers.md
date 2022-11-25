@@ -431,8 +431,9 @@ provider_groups:
       telephone: 01476 512793
       email: aor@educate-group.co.uk
     - header: GORSE SCITT
-      name: Stephen McKenzie
-      telephone: '01134871777'
+      link: https://gorsescitt.org.uk/
+      name: Emma Worrincy
+      telephone: '0113 487 1777'
       email: info@gorsescitt.org.uk
     - header: Leeds Trinity University
       name: Admissions
