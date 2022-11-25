@@ -8,13 +8,7 @@ for middle and senior leadership, headship and executive leadership.
 
 [Salaries and benefits](/salaries-and-benefits) explains teaching salaries for newly qualified and more experienced teachers.
 
-#### Supporting our critical workers in education
-
-The COVID-19 pandemic has highlighted the vital role of teachers, who continue
-to show extraordinary dedication and commitment. We at DfE are profoundly
-grateful for the hard work of everyone in the profession.
-
-[Read our COVID-19 guidance for school and teachers](https://www.gov.uk/government/collections/guidance-for-schools-coronavirus-covid-19).
+#### Workload, behaviour and flexible hours
 
 We’re taking action to address some of the common issues that teachers face in the classroom and have collaborated with schools to:
 
