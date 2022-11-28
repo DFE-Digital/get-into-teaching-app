@@ -60,32 +60,26 @@
           </div>
         </section>
       <% else %>
-        <section class="col col-space-m">
-          <div class="col-640">
-            <p><strong>Our autumn Get Into Teaching events are now closed. Details of our spring events will be published on this page in early January 2023.</strong></p>
-          </div>
+        <section class="col col-720 col-space-m">
+          <p><strong>Our autumn Get Into Teaching events are now closed. Details of our spring events will be published on this page in early January 2023.</strong></p>
         </section>
 
-        <section class="col">
-          <div class="col-640">
-            <p>In the meantime, take a look at our <%= link_to("online events", events_path({ teaching_events_search: { online: [true] }}), class: "link--black") %> or <%= link_to("events near you", events_path, class: "link--black") %>.</p>
-          </div>
+        <section class="col col-720">
+          <p>In the meantime, take a look at our <%= link_to("online events", events_path({ teaching_events_search: { online: [true] }}), class: "link--black") %> or <%= link_to("events near you", events_path, class: "link--black") %>.</p>
         </section>
 
-        <section class="col">
-          <div class="col-640">
-            <h2 class="heading-m">Get event updates and advice in your inbox</h2>
+        <section class="col col-720">
+          <h2 class="heading-m">Get event updates and advice in your inbox</h2>
 
-            <p>Get a better idea if teaching is right for you with regular information on:</p>
+          <p>Get a better idea if teaching is right for you with regular information on:</p>
 
-            <ul>
-              <li>what it's like to be a teacher</li>
-              <li>different ways to train</li>
-              <li>events near you</li>
-            </ul>
+          <ul>
+            <li>what it's like to be a teacher</li>
+            <li>different ways to train</li>
+            <li>events near you</li>
+          </ul>
 
-            <p><%= link_to("Get event updates and advice in your inbox", mailing_list_steps_path, class: "link--black") %>.</p>
-          </div>
+          <p><%= link_to("Get event updates and advice in your inbox", mailing_list_steps_path, class: "link--black") %>.</p>
         </section>
       <% end %>
     </section>
