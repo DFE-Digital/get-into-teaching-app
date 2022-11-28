@@ -4,6 +4,7 @@ heading: "Support training to teach if you're a parent or carer"
 description: |-
   Find out what extra grants and schemes are available if you have children or other caring responsibilities.
 related_content:
+    Is teaching right for me? : "/is-teaching-right-for-me"
     Choosing the right teacher training course provider: "/blog/choosing-the-right-teacher-training-course-provider"
     Get school experience: "/train-to-be-a-teacher/get-school-experience"
     Diary of a trainee teacher: "/blog/a-diary-of-a-trainee-teacher"

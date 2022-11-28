@@ -4,6 +4,7 @@ heading: "Support training to teach if you're disabled"
 description: |-
     Find out about the support you can get while training to teach if you're disabled.
 related_content:
+    Is teaching right for me? : "/is-teaching-right-for-me"
     Who do you want to teach?: "/train-to-be-a-teacher/who-do-you-want-to-teach"
     Becoming a teacher with a hearing impairment: "/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment"
     Becoming a teacher with autism: "/blog/overcoming-challenges-to-become-a-teacher-autism"

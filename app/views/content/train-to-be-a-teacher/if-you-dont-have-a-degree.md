@@ -4,6 +4,7 @@ heading: "Train to teach if you do not have a degree"
 description: |-
   Explore how you can train to be a teacher and gain qualified teacher status (QTS) if you don’t have a degree.
 related_content:
+    Is teaching right for me? : "/is-teaching-right-for-me"
     5 reasons to attend a Get Into Teaching event : "/blog/5-reasons-to-attend-a-get-into-teaching-event"
     Funding your training : "/funding-and-support"
     Teach in further education without a degree : "https://www.teach-in-further-education.campaign.gov.uk"
