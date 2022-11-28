@@ -7,6 +7,7 @@ related_content:
     What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
     Improve your subject knowledge: "/train-to-be-a-teacher/subject-knowledge-enhancement"
     Salaries and benefits: "/salaries-and-benefits"
+    What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course
     - content/funding-and-support/promos/get-adviser-funding-promo
