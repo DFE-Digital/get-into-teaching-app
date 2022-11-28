@@ -1,6 +1,6 @@
 <div class="row">
   <section class="col col-full-content">
-    <%= render(CallsToAction::Promo::PromoComponent.new(border: :bottom)) do |promo| %>
+    <%= render(CallsToAction::Promo::PromoComponent.new(border: :top)) do |promo| %>
       <% promo.left_section(classes: %w[events-background]) %>
       <% promo.right_section(
             caption: "Events near you",
