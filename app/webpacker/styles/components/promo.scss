@@ -67,7 +67,6 @@
     flex-direction: column;
 
     @include mq($from: tablet) {
-      gap: $indent-amount / 2;
       padding-right: $indent-amount;
     }
 
