@@ -26,4 +26,4 @@ You don't know how kids are going to be when you go into a classroom, or how the
 
 When you see kids that actually understand something after you've taught them, it does make it all worthwhile. It's really rewarding – I know it's a cliché, but it is. If you've got the passion and you're committed to it, then definitely go ahead.
 
-We’re here to answer your questions and provide advice about teaching, whether you’re just thinking about it or you’re ready to apply. [Find out how you can get help and support with getting into teaching](/help-and-support).
+If you're thinking about a life in the classroom, explore [if teaching is right for you](/is-teaching-right-for-me).
