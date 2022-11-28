@@ -47,17 +47,41 @@
         image_alt: "A woman at a Get Into Teaching event wearing a blue T-shirt with Here to Help written on it.",
       ) %>
 
-      <section class="category__cards">
-        <%= tag.nav(class: "category__nav-cards") do %>
-          <ul class="one-column horizontal">
-            <%= render(Categories::CardComponent.with_collection(categorise_events(@git_events))) %>
+      <% if @git_events.any? %>
+        <section class="category__cards">
+          <%= tag.nav(class: "category__nav-cards") do %>
+            <ul class="one-column horizontal">
+              <%= render(Categories::CardComponent.with_collection(categorise_events(@git_events))) %>
+            </ul>
+          <% end %>
+          <div>
+            <h2 class="heading-s">Can't find what you're looking for?</h2>
+            <p>You can also take a look at our <%= link_to("online Q&A events", events_path({ teaching_events_search: { type: ["onlineqa"] }}), class: "link--black") %> or <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }}), class: "link--black") %> in your area.</p>
+          </div>
+        </section>
+      <% else %>
+        <section class="col col-720 col-space-m">
+          <p><strong>Our autumn Get Into Teaching events are now closed. Details of our spring events will be published on this page in early January 2023.</strong></p>
+        </section>
+
+        <section class="col col-720">
+          <p>In the meantime, take a look at our <%= link_to("online events", events_path({ teaching_events_search: { online: [true] }}), class: "link--black") %> or <%= link_to("events near you", events_path, class: "link--black") %>.</p>
+        </section>
+
+        <section class="col col-720">
+          <h2 class="heading-m">Get event updates and advice in your inbox</h2>
+
+          <p>Get a better idea if teaching is right for you with regular information on:</p>
+
+          <ul>
+            <li>what it's like to be a teacher</li>
+            <li>different ways to train</li>
+            <li>events near you</li>
           </ul>
-        <% end %>
-        <div>
-          <h2 class="heading-s">Can't find what you're looking for?</h2>
-          <p>You can also take a look at our <%= link_to("online Q&A events", events_path({ teaching_events_search: { type: ["onlineqa"] }}), class: "link--black") %> or <%= link_to("teacher training provider events", events_path({ teaching_events_search: { type: ["provider"] }}), class: "link--black") %> in your area.</p>
-        </div>
-      </section>
+
+          <p><%= link_to("Get event updates and advice in your inbox", mailing_list_steps_path, class: "link--black") %>.</p>
+        </section>
+      <% end %>
     </section>
   </div>
 
