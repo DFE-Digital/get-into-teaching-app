@@ -6,7 +6,6 @@ description: |-
 related_content:
     Becoming a teacher with a hearing impairment: "/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment"
     Becoming a teacher with autism: "/blog/overcoming-challenges-to-become-a-teacher-autism"
-    Is teaching right for me? : "/is-teaching-right-for-me"
     Who do you want to teach?: "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
     - content/funding-and-support/promos/get-adviser-support-promo
