@@ -12,7 +12,7 @@ talk_to_us: false
 content:
   - content/help-and-support/header
   - content/help-and-support/talk-to-us
-  - content/help-and-support/events
-  - content/help-and-support/mailing_list
   - content/help-and-support/categories
+  - content/help-and-support/mailing_list
+  - content/help-and-support/events
 ---
