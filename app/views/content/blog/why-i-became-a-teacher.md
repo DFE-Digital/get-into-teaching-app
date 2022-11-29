@@ -22,8 +22,6 @@ tags:
 
 $giorgio_rubbo$
 
-In addition to supporting aspiring teachers to achieve a place on a teacher training course, Teacher Training Advisers run a number of [groups hosted on Facebook](https://www.facebook.com/groups/1357146377672255), to allow those who are thinking about training, those what are doing their training and others who are now qualified teachers to support one-another.
-
 Following the successful completion of his training year, Giorgio Rubbo invited aspiring teachers to ask him questions about a day in the life of a beginner teacher. Here are some of his answers.
 
 ## What inspired you to teach?
