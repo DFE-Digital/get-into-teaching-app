@@ -6,6 +6,10 @@ description: |-
 date: "2021-11-01"
 image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
+related_content:
+    What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
+    Train to be a teacher if you have a degree or are studying for one : "/train-to-be-a-teacher/if-you-have-a-degree"
+    What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 keywords:
