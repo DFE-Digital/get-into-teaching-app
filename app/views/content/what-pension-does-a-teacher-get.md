@@ -1,0 +1,61 @@
+---
+title: “What pension does a teacher get”
+heading: “What pension does a teacher get”
+description: |-
+  The teachers' pension is one of the most generous in the country. Learn more about the benefits of the pension scheme once you become a teacher.
+date: "2022-11-29”
+image: false
+promo_content:
+    - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
+related_content:
+    Salaries and benefits : "/salaries-and-benefits"
+    Steps to become a teacher : "/steps-to-become-a-teacher"
+    Train to be a teacher if you have or are studying for a degree : "/train-to-be-a-teacher/if-you-have-a-degree"
+    Scholarships and bursaries for training to teach : "/funding-and-support/scholarships-and-bursaries"
+keywords:
+  - Teachers pension
+  - Pension
+  - Benefits
+  - Earnings
+  - Teaching
+  - Teacher training
+  - How to become a teacher
+  - Teacher training courses
+
+---
+One of the great benefits of a teaching career is a secure pension that will help you save for your future. 
+
+The teachers’ pension scheme is one of the most generous in the country. These are some of the key benefits of the scheme.
+
+## Easy to get started
+
+As a teacher, you’ll be automatically enrolled at the start of your career, and remain in the scheme when moving teaching jobs, unless you opt out. 
+
+Under the scheme, an amount from your pay is automatically paid into your pension each month. At the same time, the employer also contributes.
+
+## Based on your salary
+
+It’s a ‘defined benefit’ pension, which means that it’s based on your salary rather than the amount you contribute.
+
+If your salary increases, the amount you and your employer pays will increase too. You can also choose to pay extra contributions at any time if you want to.
+
+## Tax-free saving
+
+All of your contributions are tax free, as the scheme is registered with HM Revenue and Customs.
+
+It’s also one of only 8 schemes backed by the government. This means that it’s not reliant on pension money being invested elsewhere.
+
+## Flexible and supportive
+
+It’s quick and easy to manage your pension online. The scheme is flexible so you can convert part of your pension early as a tax-free lump sum. 
+
+## Protection for your family
+
+If you became ill during your career, you could apply for early ill-health retirement.
+
+If you were to die while actively paying into your pension, a nominated beneficiary would receive a death grant. After 2 years of paying into your pension, a nominated beneficiary would also receive a pension after you die.
+
+## More detailed information
+
+To find out more about the teachers’ pension scheme, visit [the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
+
