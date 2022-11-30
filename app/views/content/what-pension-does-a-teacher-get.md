@@ -31,7 +31,7 @@ The teachers’ pension scheme is one of the most generous in the country. These
 
 As a teacher, you’ll be automatically enrolled at the start of your career, and remain in the scheme when moving teaching jobs, unless you opt out. 
 
-Under the scheme, an amount from your pay is automatically paid into your pension each month. At the same time, the employer also contributes.
+Under the scheme, you'll automatically pay from your salary into your pension each month. At the same time, the employer also contributes.
 
 Once you join the scheme, it's quick and easy to manage your pension online.
 
