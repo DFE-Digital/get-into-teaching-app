@@ -1,6 +1,6 @@
 ---
-title: "What pension does a teacher get"
-heading: "What pension does a teacher get"
+title: "What pension does a teacher get?"
+heading: "What pension does a teacher get?"
 description: |-
   The teachers' pension is one of the most generous in the country. Learn more about the benefits of the pension scheme once you become a teacher.
 date: "2022-11-29"
@@ -33,11 +33,13 @@ As a teacher, you’ll be automatically enrolled at the start of your career, an
 
 Under the scheme, an amount from your pay is automatically paid into your pension each month. At the same time, the employer also contributes.
 
+Once you join the scheme, it's quick and easy to manage your pension online.
+
 ## Based on your salary
 
 It’s a ‘defined benefit’ pension, which means that it’s based on your salary rather than the amount you contribute.
 
-If your salary increases, the amount you and your employer pays will increase too. You can also choose to pay extra contributions at any time if you want to.
+If your salary increases, the amount you and your employer pays will increase too. You can also choose to pay extra contributions if you want to.
 
 ## Tax-free saving
 
@@ -45,15 +47,14 @@ All of your contributions are tax free, as the scheme is registered with HM Reve
 
 It’s also one of only 8 schemes backed by the government. This means that it’s not reliant on pension money being invested elsewhere.
 
+The scheme is also flexible so you can convert part of your pension early as a tax-free lump sum. 
+
 ## Protection for your family
 
 If you became ill during your career, you could apply for early ill-health retirement.
 
-If you were to die while actively paying into your pension, a nominated beneficiary would receive a death grant. After 2 years of paying into your pension, a nominated beneficiary would also receive a pension after you die.
-
-It’s quick and easy to manage your pension online. The scheme is flexible so you can convert part of your pension early as a tax-free lump sum. 
+If you were to die while actively paying into your pension, a nominated beneficiary would receive a death grant. After 2 years of paying into your pension, a nominated beneficiary would also receive a pension after you die. 
 
 ## More detailed information
 
 To find out more about the teachers’ pension scheme, visit [the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
-
