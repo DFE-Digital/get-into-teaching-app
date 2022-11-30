@@ -1,6 +1,6 @@
 ---
-title:"What pension does a teacher get"
-heading:"What pension does a teacher get"
+title: "What pension does a teacher get"
+heading: "What pension does a teacher get"
 description: |-
   The teachers' pension is one of the most generous in the country. Learn more about the benefits of the pension scheme once you become a teacher.
 date: "2022-11-29"
@@ -45,15 +45,13 @@ All of your contributions are tax free, as the scheme is registered with HM Reve
 
 It’s also one of only 8 schemes backed by the government. This means that it’s not reliant on pension money being invested elsewhere.
 
-## Flexible and supportive
-
-It’s quick and easy to manage your pension online. The scheme is flexible so you can convert part of your pension early as a tax-free lump sum. 
-
 ## Protection for your family
 
 If you became ill during your career, you could apply for early ill-health retirement.
 
 If you were to die while actively paying into your pension, a nominated beneficiary would receive a death grant. After 2 years of paying into your pension, a nominated beneficiary would also receive a pension after you die.
+
+It’s quick and easy to manage your pension online. The scheme is flexible so you can convert part of your pension early as a tax-free lump sum. 
 
 ## More detailed information
 
