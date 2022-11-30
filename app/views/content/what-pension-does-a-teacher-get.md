@@ -1,9 +1,9 @@
 ---
-title: “What pension does a teacher get”
-heading: “What pension does a teacher get”
+title: "What pension does a teacher get"
+heading: "What pension does a teacher get"
 description: |-
   The teachers' pension is one of the most generous in the country. Learn more about the benefits of the pension scheme once you become a teacher.
-date: "2022-11-29”
+date: "2022-11-29"
 image: false
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-salaries
