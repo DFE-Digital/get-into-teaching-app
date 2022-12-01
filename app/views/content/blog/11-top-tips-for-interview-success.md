@@ -21,7 +21,7 @@ tags:
 
 Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). She interviews applicants and assesses their potential to become successful classroom professionals.
 
-She believes the key to receiving an offer for a training place lies in effective interview preparation.
+She believes the key to receiving an offer for a training place lies in effective interview preparation. Here are her tips.
 
 ## 1. Pre-interview 
 
