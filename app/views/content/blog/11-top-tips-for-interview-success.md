@@ -17,8 +17,11 @@ keywords:
 tags:
   - becoming a teacher
   - applications
-closing_paragraph: enriching-the-lives-of-young-people
 ---
+
+Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). She interviews applicants and assesses their potential to become successful classroom professionals.
+
+She believes the key to receiving and offer for a training place lies in effective interview preparation.
 
 ## 1. Pre-interview 
 
@@ -72,6 +75,4 @@ Remember that you are ‘on show’ for the entire interview. Many providers int
 
 Good luck everyone!
 
-## About the author
-
-Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). She interviews applicants and assesses their potential to become successful classroom professionals. She believes the key to receiving and offer for a training place lies in effective interview preparation.
+[Talk to an adviser](/teacher-training-advisers) with years of teaching experience to get one-to-one support with your teacher training application, including help preparing for interviews.
