@@ -128,6 +128,7 @@ From 1 February 2023, if you have a qualification from the following countries y
 * India
 * Jamaica
 * Nigeria
+* Singapore
 * South Africa
 * Ukraine
 * Zimbabwe
