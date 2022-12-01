@@ -1,6 +1,6 @@
 ---
-title: "The benefits of the Teachers' Pension Scheme"
-heading: "The benefits of the Teachers' Pension Scheme"
+title: "About the teachers' pension scheme"
+heading: "About the teachers' pension scheme"
 description: |-
   The teachers' pension is one of the most generous in the country. Learn more about the benefits of the pension scheme once you become a teacher.
 date: "2022-11-29"
