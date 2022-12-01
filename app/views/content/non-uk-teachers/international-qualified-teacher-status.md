@@ -50,7 +50,11 @@ Contact the training providers on this page directly to register your interest. 
 
 iQTS is an international teaching qualification designed for UK and non-UK citizens living outside the UK. iQTS means you can gain [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) while working overseas.
 
-If you're living in England, you should [apply for teacher training in England](/steps-to-become-a-teacher).
+If you're living in England and want a teaching qualification leading to QTS, you must [apply for teacher training in England](/steps-to-become-a-teacher).
+
+If you're already qualified as a teacher, you should [check your eligibility to apply to the Teaching Regulation Agency for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start). 
+
+Teachers who qualified or have gained experience outside the UK should also consider [assessment only QTS](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#AO). 
 
 iQTS is for you if you live outside the UK and you:
 
@@ -58,9 +62,7 @@ iQTS is for you if you live outside the UK and you:
 
 * have some teaching experience, and would benefit from training and mentoring for a professional teaching qualification leading to automatic [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts)
 
-* are already a teacher, and wish to develop professionally and enhance your global employability with an internationally recognised teaching qualification
-
-* are already a teacher, and would benefit from a professional teaching qualification allowing you to teach in all schools in England
+* are already a teacher, but not eligible to apply for QTS through the Teaching Regulation Agency or assessment only 
 
 ## Six reasons to apply for iQTS
 
