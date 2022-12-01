@@ -28,7 +28,7 @@ Most disabled pupils and pupils with special educational needs learn in mainstre
 
 No matter what settings you train and work in – whether it's mainstream schools, special schools, or both – you’ll work with pupils with complex needs.
 
-You can [find a course which specialises in special educational needs and disability (SEND)](https://www.find-postgraduate-teacher-training.service.gov.uk/start/subject?l=2) if you have a particular interest in this area.
+You can [look for a teacher training course](https://www.find-postgraduate-teacher-training.service.gov.uk/start/subject?l=2) and filter by 'courses with an SEND specialism' if you have a particular interest in the area.
 
 However, it’s not essential to do a course specialising in SEND.
 
