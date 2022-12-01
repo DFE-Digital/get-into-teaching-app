@@ -1,6 +1,6 @@
 ---
-title: "What pension does a teacher get?"
-heading: "What pension does a teacher get?"
+title: "The benefits of the Teachers' Pension Scheme"
+heading: "The benefits of the Teachers' Pension Scheme"
 description: |-
   The teachers' pension is one of the most generous in the country. Learn more about the benefits of the pension scheme once you become a teacher.
 date: "2022-11-29"
@@ -17,11 +17,6 @@ keywords:
   - Pension
   - Benefits
   - Earnings
-  - Teaching
-  - Teacher training
-  - How to become a teacher
-  - Teacher training courses
-
 ---
 One of the great benefits of a teaching career is a secure pension that will help you save for your future. 
 
@@ -43,7 +38,7 @@ If your salary increases, the amount you and your employer pay will increase too
 
 ## Tax-free saving
 
-All of your contributions are tax free, as the scheme is registered with HM Revenue and Customs.
+All of your contributions are tax-free, as the scheme is registered with HM Revenue and Customs.
 
 It’s also one of only 8 schemes backed by the government. This means that it’s not reliant on pension money being invested elsewhere.
 
@@ -57,4 +52,4 @@ If you were to die while actively paying into your pension, a nominated benefici
 
 ## More detailed information
 
-To find out more about the teachers’ pension scheme, visit [the teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
+To find out more about the teachers’ pension scheme, visit the [teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
