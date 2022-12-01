@@ -20,8 +20,6 @@ tags:
 closing_paragraph: enriching-the-lives-of-young-people
 ---
 
-$interview$
-
 ## 1. Pre-interview 
 
 Confirm your attendance to any interview invitation and pay attention to what is being asked of you on the day. Interview formats can vary. If in doubt, make a phone call to the provider to ask for clarification.
