@@ -10,7 +10,7 @@ content:
     - content/is-teaching-right-for-me/a_job_like_no_other
     - content/is-teaching-right-for-me/get_school_experience
     - content/is-teaching-right-for-me/how_to_become_a_teacher
-image: "media/images/content/hero-images/Chemistry_MissObi.jpg"
+image: "media/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
 navigation: 5
