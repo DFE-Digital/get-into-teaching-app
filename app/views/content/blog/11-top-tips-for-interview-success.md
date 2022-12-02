@@ -17,10 +17,11 @@ keywords:
 tags:
   - becoming a teacher
   - applications
-closing_paragraph: enriching-the-lives-of-young-people
 ---
 
-$interview$
+Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). She interviews applicants and assesses their potential to become successful classroom professionals.
+
+She believes the key to receiving an offer for a training place lies in effective interview preparation. Here are her tips.
 
 ## 1. Pre-interview 
 
@@ -38,13 +39,13 @@ Make a note of any key staff names and who to ask for on your arrival. This will
 
 ## 4. Remote or face-to-face
 
-In times of COVID 19, interviews may take place via an online platform. Check that your camera and sound are working beforehand. Join the 'call' on time and consider your screen background beforehand. 
+Interviews may take place via an online platform. Check that your camera and sound are working beforehand. Join the 'call' on time and consider your screen background beforehand. 
 
 If you are travelling to an interview venue, allow yourself plenty of time on the day. Scope the area beforehand as you might not be able to park right outside. Some sites are large and will require you to walk some distance. If need be, do a practice run to reduce stress levels on the day.
 
 ## 5. Be organised
 
-Have everything ready for the interview the night before. Bring any required documents and supporting materials together in a plastic wallet. Having additional copies readily available for providers sets the tone that you are well-organised. Remember key equipment; a pen, face mask, any teaching resources and a small bottle of water.
+Have everything ready for the interview the night before. Bring any required documents and supporting materials together in a plastic wallet. Having additional copies readily available for providers sets the tone that you are well-organised. Remember key equipment; a pen, any teaching resources and a small bottle of water.
 
 ## 6. Dress to impress
 
@@ -74,6 +75,4 @@ Remember that you are ‘on show’ for the entire interview. Many providers int
 
 Good luck everyone!
 
-## About the author
-
-Caroline Downing is the Primary Programme Leader at the [Bedfordshire Schools' Training Partnership](https://bedsscitt.org.uk). She interviews applicants and assesses their potential to become successful classroom professionals. She believes the key to receiving and offer for a training place lies in effective interview preparation.
+[Talk to an adviser](/teacher-training-advisers) with years of teaching experience to get one-to-one support with your teacher training application, including help preparing for interviews.
