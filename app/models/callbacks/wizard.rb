@@ -8,7 +8,6 @@ module Callbacks
       ::GITWizard::Steps::Authenticate,
       Steps::Callback,
       Steps::TalkingPoints,
-      Steps::PrivacyPolicy,
     ].freeze
 
     def matchback_attributes

@@ -8,6 +8,7 @@ module MailingList
       attribute :email
       attribute :channel_id, :integer
       attribute :sub_channel_id
+      attribute :accepted_policy_id
 
       validates :email, presence: true, email_format: true
       validates :first_name, presence: true, length: { maximum: 256 }
@@ -30,7 +31,9 @@ module MailingList
       end
 
       def export
-        super.except("sub_channel_id")
+        super.except("sub_channel_id").tap do |data|
+          data["accepted_policy_id"] ||= latest_privacy_policy.id
+        end
       end
 
       def save
@@ -41,6 +44,10 @@ module MailingList
 
       def title
         nil
+      end
+
+      def latest_privacy_policy
+        @latest_privacy_policy ||= GetIntoTeachingApiClient::PrivacyPoliciesApi.new.get_latest_privacy_policy
       end
 
     private

@@ -45,7 +45,7 @@ end
 
 shared_context "with stubbed latest privacy policy api" do
   let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
-  let(:policy) { [{ "id" => "abc123" }] }
+  let(:policy) { { "id" => "abc123" } }
 
   before do
     stub_request(:get, "#{git_api_endpoint}/api/privacy_policies/latest").to_return(status: 200, body: policy.to_json, headers: {})

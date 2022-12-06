@@ -56,10 +56,6 @@ RSpec.feature "Book a callback", type: :feature do
 
     expect(page).to have_text "Tell us what you’d like to talk to us about"
     select "Routes into teaching", from: "Choose an option"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Book your callback"
 
     expect(page).to have_title(callback_page_title)
@@ -118,15 +114,9 @@ RSpec.feature "Book a callback", type: :feature do
     click_on "Next step"
 
     expect(page).to have_text "Tell us what you’d like to talk to us about"
-    click_on "Next step"
+    click_on "Book your callback"
     expect(page).to have_text "Choose an option"
     select "Routes into teaching", from: "Choose an option"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    click_on "Book your callback"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    check "Yes"
     click_on "Book your callback"
 
     expect(page).to have_title(callback_page_title)
