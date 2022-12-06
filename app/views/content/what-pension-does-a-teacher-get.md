@@ -52,4 +52,4 @@ If you were to die while actively paying into your pension, a nominated benefici
 
 ## More detailed information
 
-To find out more about the teachers’ pension scheme, visit the [teachers' pension scheme website](https://www.teacherspensions.co.uk/members/new-starter.aspx).
+To find out more about the teachers’ pension scheme, visit the [teachers' pension scheme website (opens in a new window)](https://www.teacherspensions.co.uk/members/new-starter.aspx).
