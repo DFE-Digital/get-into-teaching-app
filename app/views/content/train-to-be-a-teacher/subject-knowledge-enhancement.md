@@ -44,10 +44,10 @@ You can also do a SKE course in primary mathematics.
 
 SKE course lengths can range from 8 to 28 weeks. They're usually online, but some can be classroom based and some can be a mixture of both. You can choose the provider you want to complete your SKE course with.
 
-Courses are available across England. Most candidates complete a SKE course before starting their teacher training year, but it’s sometimes possible to complete it alongside your initial teacher training (ITT) course. You may be able to complete the SKE course on a part-time basis.
+Courses are available across England. You may be able to complete the SKE course on a part-time basis.
 
 You may also be eligible for a bursary of £175 per week if you train to teach in the 2022/23 academic year. This will go towards any extra costs you may have during the SKE course. Contact your ITT and SKE providers for more information.
 
-You need to complete your SKE course before starting your teacher training in order to receive both a SKE bursary and a teacher training bursary.
+You should aim to complete your SKE course before starting your teacher training. If you run out of time, your provider may allow you to continue your SKE course whilst starting your teacher training, but you will not be paid the SKE course bursary for these weeks.
 
 [Find out if there's a subject knowledge enhancement (SKE) course for your subject](https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory).
