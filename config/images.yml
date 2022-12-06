@@ -1,10 +1,10 @@
 ---
 # hero
-"media/images/content/hero-images/Chemistry_MissObi.jpg":
-  alt: "A teacher standing in front of a whiteboard"
+"media/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg":
+  alt: "A teacher standing in a classroom"
   variants:
-    - "media/images/content/hero-images/Chemistry_MissObi--mobile.jpg"
-    - "media/images/content/hero-images/Chemistry_MissObi--tablet.jpg"
+    - "media/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445--mobile.jpg"
+    - "media/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445--tablet.jpg"
 
 "media/images/content/hero-images/event-image.jpg":
   alt: "A Get Into Teaching event in progress with people talking to teachers and advisers"
@@ -408,14 +408,12 @@
   alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
 "media/images/content/is-teaching-right-for-me/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
-"media/images/content/is-teaching-right-for-me/History_Class_1.jpg":
-  alt: "Pupils raising their hands in a History class"
-"media/images/content/is-teaching-right-for-me/Maths_MrAhmed_1.jpg":
-  alt: "Mr Ahmed, Maths teacher"
 "media/images/content/is-teaching-right-for-me/Physics_MissHayre_4.jpg":
   alt: "Miss Hayre, Physics teacher"
-"media/images/content/is-teaching-right-for-me/History_Class_1_promo.jpg":
-  alt: "Pupils raising their hands in a History class"
+"media/images/content/is-teaching-right-for-me/collage1.jpg":
+  alt: "Teacher smiling in front of a maths display board."
+"media/images/content/is-teaching-right-for-me/collage2.jpg":
+  alt: "Teacher helping a pupil with their work in a classroom."
 
 # event
 "media/images/content/event-signup/event-regional-online-listing.jpg":
