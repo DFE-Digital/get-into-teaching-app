@@ -75,4 +75,4 @@ Remember that you are ‘on show’ for the entire interview. Many providers int
 
 Good luck everyone!
 
-[Talk to an adviser](/teacher-training-advisers) with years of teaching experience to get one-to-one support with your teacher training application, including help preparing for interviews.
+Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. [Talk to an adviser](/teacher-training-advisers) by email, text or phone, as often or as little as you need.

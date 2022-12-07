@@ -68,4 +68,4 @@ Please be patient and do attend all of your interviews, if you have been offered
 
 Michelle Borders works for the Community Academies Trust Institute of Education (CAT IoE). Michelle has recruited trainee teachers for eight years for schools across the Midlands and chairs the regional hub for School Direct lead schools who are located in Coventry, Warwickshire and Solihull. She regularly shares advice on the [Aspiring Teacher Forum on Facebook](https://www.facebook.com/groups/1357146377672255). The CAT IoE is also a national Subject Knowledge Enhancement (SKE) provider.
 
-If you have questions about the different routes into teaching and specific queries about your own application, you should sign up for a [Teacher Training Adviser.](https://adviser-getintoteaching.education.gov.uk/) These advisers are teaching experts who are able to provide you with personalised assistance.
+Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. [Talk to an adviser](/teacher-training-advisers) by email, text or phone, as often or as little as you need.
