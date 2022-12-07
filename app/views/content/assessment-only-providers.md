@@ -357,6 +357,11 @@ provider_groups:
       name: Julie Walker
       telephone: 0300 123 1967
       email: JLWalker@somerset.gov.uk
+    - header: South West Teacher Training
+      link: https://www.swtt.net/
+      name: Carrie McMillan
+      telephone: 01392 686165
+      email: swtt@westexe.devon.sch.uk
     - header: Wessex Schools Training Partnership
       name: Claire Porter
       telephone: 01202 662038
