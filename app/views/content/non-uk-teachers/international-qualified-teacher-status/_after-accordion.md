@@ -14,7 +14,7 @@ This guidance relates to teaching in England. Different rules  apply to [teachin
 
 To get advice about iQTS, you can:
 
-- call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) – calls will be charged at your standard rate
+- call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except <a href="https://www.gov.uk/bank-holidays"> bank holidays in England</a> – calls will be charged at your standard rate
 
 - use the live chat service at the bottom of this page
 
