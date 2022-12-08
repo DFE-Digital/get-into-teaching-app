@@ -111,7 +111,7 @@ We can help you make an application for teacher training in England. Sign up for
 For help applying, you can:
 
 * sign up to [get a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
-* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time)  – calls will be charged at your standard rate
+* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
 * use the live chat service at the bottom of this page
 
 
