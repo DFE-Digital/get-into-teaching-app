@@ -6,18 +6,6 @@ date: "2021-06-18"
 image: "media/images/content/hero-images/0003.jpg"
 article_classes: ['longform']
 backlink: "../"
-accordion:
-  numbered: false
-  steps:
-
-    Charlotte, biology trainee:
-      partial: content/teacher-training-advisers/charlotte
-    Matt, maths trainee:
-      partial: content/teacher-training-advisers/matt
-    Sue, geography trainee:
-      partial: content/teacher-training-advisers/sue
-    Stuart, computing trainee:
-      partial: content/teacher-training-advisers/stuart  
 keywords: 
     - adviser
     - advisor
@@ -29,10 +17,17 @@ keywords:
     - preparation
 quote:
     q-tta-one:
-      text: "It's tailor-made to individual needs. I received an abundance of help."
+      text: "They would answer any question I had, small or big, in a relaxed environment."
       inline: right
     q-tta-two:
-      text: "[My adviser] was extremely helpful as well as thoughtful and understanding."
+      text: "Trying to find information from various websites was slightly overwhelming. But being able to have one person to speak to or ask questions was invaluable."
+      inline: right
+    q-tta-three:
+      text: "Lisa really boosted my confidence with interview prep: she gave me great advice and tips."
+      inline: right
+    q-tta-four:
+      text: "My adviser helped not only to remind me of the basics, but also to point out some of the things which are different from when I left 12 years ago."
+      inline: right
 calls_to_action:
   get-a-tta:
     name: simple
@@ -50,53 +45,71 @@ youtube_video:
     id: T9Bhcaa6LJ4
     title: A video about what teaching experience our Teacher Training Advisers have
 ---
-Teacher training advisers give you free, one-to-one help and support. 
+Teacher training advisers give you free, one-to-one support, wherever you are on your journey into teaching.
 
-They're all former teachers with lots of experience, so they know the process inside out.
+They have years of teaching experience and can answer all your questions about life in the classroom, as well as how you can get there.
 
-## What an adviser can do for you
+## How does it work?
+
+You’ll be matched with your own dedicated adviser. You’ll have the same adviser throughout your journey into teaching.
+How you talk to them is up to you – you can chat through:
+
+* email
+* phone
+* text
+
+You can talk to them as little or as often as you need. This could be every week for a year, or just a few times before making an application.
+
+## How your adviser can help you
+
+### If teaching is just an idea
 
 $q-tta-one$
 
-An adviser can give you as much or as little help as you need. 
+Your adviser can talk to you about what teaching is really like, helping you understand if it’s right for you.
 
-Other trainee teachers say they are particularly helpful with: 
+They can help you:
 
-* arranging school experience
-* seeking out financial support
-* writing a personal statement
-* preparing for interviews
+* talk through your questions and any doubts ​
+* find school experience
+* explore the steps to becoming a teacher
 
-## Meet Emma, a teacher training adviser
+### If you're ready to apply
 
-$about-teacher-training-advisers-video$
+Your adviser can talk you through the application process step-by-step.
 
-## Helping you decide if teaching is right for you
+They can help you:
 
-$q-tta-two$
+* write your personal statement
+* understand your different training options
+* prepare for interviews
 
-Teaching is an exciting career, but if you have caring responsibilities, people dependent on your earnings, or you are living with a disability you might need some help to take your next step. 
+### If you've applied and been unsuccessful
 
-Your adviser can help you navigate your path into teaching, and make sure you get any additional help that is available. Your adviser will be just a call, message or email away.
+$q-tta-three$
 
-## Meet Simon, a teacher training adviser
+Your adviser can help you improve your application if you were not successful the first time around.
 
-$about-teacher-training-advisers-experience-video$
-
-## Already applied and been unsuccessful?
-
-Our advisers can help make your next application stronger. They’ll help you:
+They can help you:
 
 * act on any feedback
-* understand the qualifications you need to become a teacher
-* improve your personal statement
+* make your application stronger
 
-## Are you ready for an adviser? 
+### If you're thinking about returning to teaching
+
+Your adviser can help you understand how to get back into teaching if you already have qualified teacher status (QTS).
+
+They can help you:
+
+* brush up your subject knowledge
+* find a role
+
+## Can I get an adviser?
 
 To sign up, you’ll need (one of the following):
 
 * a bachelor’s degree with honours, grade 2:2 or higher
-* to be a final year student studying for a bachelor’s degree with honours, with a predicted grade of 2:2 or higher
+* to be a final year student studying for a bachelor’s degree with honours
 * an overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
 
 If you're applying from overseas, you can check your qualifications by <a href="tel:08003892500">calling us on 0800 389 2500</a>.
@@ -112,5 +125,3 @@ You can still get an adviser if you're an undergraduate student not in your fina
 Our explore teaching advisers can help you find out what teaching is really like.
 
 <a href="/explore-teaching-advisers">Find out more about explore teaching advisers</a>.
-
-## Find out how a teacher training adviser helped:
