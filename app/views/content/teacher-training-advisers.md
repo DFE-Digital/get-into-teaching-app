@@ -43,6 +43,8 @@ youtube_video:
   about-teacher-training-advisers-experience-video:
     id: T9Bhcaa6LJ4
     title: A video about what teaching experience our Teacher Training Advisers have
+content:
+    - content/teacher-training-advisers/blog_links
 ---
 Teacher training advisers give you free, one-to-one support, wherever you are on your journey into teaching.
 
