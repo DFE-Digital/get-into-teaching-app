@@ -153,9 +153,6 @@ You should not ask a family member, partner or friend for a reference.
 
 You can change your reference details when you accept a place on a course. You might need to alter their contact details if they've changed, or you may wish to change who you ask for a reference altogether.
 
-If you’re struggling to choose your references, [get free one-to-one support from a
-teacher training adviser](/tta-service).
-
 ## If you’re invited to interview
 
 Interviews usually last a day and may include time spent teaching pupils.
