@@ -53,7 +53,7 @@ Whilst school experience isn’t compulsory, it’s a good idea to visit a schoo
 
 All our teacher training advisers are experienced teachers who can provide you with additional support when preparing and applying for teacher training. You could get help with things like finding school experience, choosing the right course for you, funding, and writing a successful application.
 
-Connect by email, text or phone, as little or as much as you need.
+Chat by email, text or phone, as little or as often as you need.
 
 [Get a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/).
 
