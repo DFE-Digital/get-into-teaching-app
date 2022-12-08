@@ -31,9 +31,9 @@ calls_to_action:
   get-a-tta:
     name: simple
     arguments:
-      title: Get a teacher training adviser
-      text: "Teacher training advisers can help you with everything related to applying for teacher training."
-      link_text: "Get a teacher training adviser"
+      title: Get an adviser
+      text: "Answer a few questions about your situation and we'll match you with an adviser."
+      link_text: "Get an adviser"
       link_target: "/tta-service"
       icon: "icon-person"
 youtube_video:
