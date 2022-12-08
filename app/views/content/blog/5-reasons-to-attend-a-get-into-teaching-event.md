@@ -46,7 +46,9 @@ You can also speak to teacher training providers for advice on how to find the r
 
 At each of our events there are a range of experts to speak to including [teacher training advisers](/teacher-training-advisers) and [explore teaching advisers](/explore-teaching-advisers). Our advisers are former teachers with lots of experience, who know the application process and what teaching is like inside out. 
 
-Sign up for your own adviser at one of our events and have a one-to-one conversation about everything from reassurance about how to stand at the front of a classroom to how to fund your training. The support won’t stop at the end of the event – they can give you as much or as little help as you need.
+Sign up for your own adviser at one of our events and have a one-to-one conversation about everything from reassurance about how to stand at the front of a classroom to how to fund your training.
+
+The support won’t stop at the end of the event – they can give you as much or as little help as you need. You can talk to your adviser through email, text, or phone.
 
 ## 5. Chat with current teachers
 
