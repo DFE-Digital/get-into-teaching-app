@@ -18,9 +18,8 @@ keywords:
 quote:
     q-tta-one:
       text: "They would answer any question I had, small or big, in a relaxed environment."
-      inline: right
     q-tta-two:
-      text: "Trying to find information from various websites was slightly overwhelming. But being able to have one person to speak to or ask questions was invaluable."
+      text: "They were a great sounding board for concerns and queries."
       inline: right
     q-tta-three:
       text: "Lisa really boosted my confidence with interview prep: she gave me great advice and tips."
@@ -49,6 +48,8 @@ Teacher training advisers give you free, one-to-one support, wherever you are on
 
 They have years of teaching experience and can answer all your questions about life in the classroom, as well as how you can get there.
 
+$q-tta-one$
+
 ## How does it work?
 
 You’ll be matched with your own dedicated adviser. You’ll have the same adviser throughout your journey into teaching.
@@ -64,7 +65,7 @@ You can talk to them as little or as often as you need. This could be every week
 
 ### If teaching is just an idea
 
-$q-tta-one$
+$q-tta-two$
 
 Your adviser can talk to you about what teaching is really like, helping you understand if it’s right for you.
 
