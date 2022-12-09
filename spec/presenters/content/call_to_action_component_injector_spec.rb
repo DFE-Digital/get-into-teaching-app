@@ -15,7 +15,7 @@ RSpec.describe Content::CallToActionComponentInjector, type: :component do
       "name" => "attachment",
       "arguments" => {
         "text" => "Text",
-        "file_path" => "media/documents/dac_git_report.pdf",
+        "file_path" => "media/documents/bringit-report.pdf",
         "file_type" => "PDF",
         "published_at" => "01 September 2020",
       },
