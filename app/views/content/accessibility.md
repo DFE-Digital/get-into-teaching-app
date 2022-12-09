@@ -47,8 +47,6 @@ We’ll consider your request and get back to you within 5 days.
 
 ## Reporting accessibility problems with this website
 
-We're always looking to improve the accessibility of this service.
-
 We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, contact our helpdesk by emailing getintoteaching.helpdesk@education.gov.uk.
 
 ## Enforcement procedure
