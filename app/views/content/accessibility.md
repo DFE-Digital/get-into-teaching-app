@@ -41,13 +41,13 @@ We know some parts of this website are not fully accessible. These are listed be
 
 If you need information on this website in a different format like accessible PDF, large print, easy read, audio recording or braille:
 
-* email getintoteaching.helpdesk@education.gov.uk
+* email [getintoteaching.helpdesk@education.gov.uk](mailto:getintoteaching.helpdesk@education.gov.uk)
 
 We’ll consider your request and get back to you within 5 days.
 
 ## Reporting accessibility problems with this website
 
-We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, contact our helpdesk by emailing getintoteaching.helpdesk@education.gov.uk.
+We’re always looking to improve the accessibility of this website. If you find any problems not listed on this page or think we’re not meeting accessibility requirements, contact our helpdesk by emailing [getintoteaching.helpdesk@education.gov.uk](mailto:getintoteaching.helpdesk@education.gov.uk).
 
 ## Enforcement procedure
 
