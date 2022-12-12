@@ -19,10 +19,10 @@ quote:
     q-tta-one:
       text: "They would answer any question I had, small or big, in a relaxed environment."
     q-tta-two:
-      text: "They were a great sounding board for concerns and queries."
+      text: "They were a great sounding board for my concerns and queries."
       inline: right
     q-tta-three:
-      text: "Lisa really boosted my confidence with interview prep: she gave me great advice and tips."
+      text: "Lisa really boosted my confidence with interview prep – she gave me great advice and tips."
       inline: right
     q-tta-four:
       text: "My adviser helped not only to remind me of the basics, but also to point out some of the things which are different from when I left 12 years ago."
@@ -33,7 +33,7 @@ calls_to_action:
     arguments:
       title: Get an adviser
       text: "Answer a few questions about your situation and we'll match you with an adviser."
-      link_text: "Get an adviser"
+      link_text: "Get a teacher training adviser"
       link_target: "/tta-service"
       icon: "icon-person"
 youtube_video:
@@ -69,13 +69,13 @@ You can talk to them as little or as often as you need. This could be every week
 
 $q-tta-two$
 
-Your adviser can talk to you about what teaching is really like, helping you understand if it’s right for you.
+Your adviser can talk to you about what teaching is really like and help you understand if it’s right for you.
 
-They can help you:
+They can:
 
 * talk through your questions and any doubts ​
-* find school experience
-* explore the steps to becoming a teacher
+* help you find school experience
+* explain the steps to becoming a teacher
 
 ### If you're ready to apply
 
@@ -119,12 +119,12 @@ If you're applying from overseas, you can check your qualifications by <a href="
 
 If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach at a secondary school in England to get an adviser.
 
-$get-a-tta$
-
-## Not a final year student or graduate?
+### Not a final year student or graduate?
 
 You can still get an adviser if you're an undergraduate student not in your final year.
 
 Our explore teaching advisers can help you find out what teaching is really like.
 
 <a href="/explore-teaching-advisers">Find out more about explore teaching advisers</a>.
+
+$get-a-tta$
