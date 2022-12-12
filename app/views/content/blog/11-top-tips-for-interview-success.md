@@ -75,4 +75,4 @@ Remember that you are ‘on show’ for the entire interview. Many providers int
 
 Good luck everyone!
 
-Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. [Talk to an adviser](/teacher-training-advisers) by email, text or phone, as often or as little as you need.
+Get free, one-to-one support preparing for interviews from a [teacher training adviser](/teacher-training-advisers), an experienced teaching professional. Chat by email, text or phone, as often or as little as you need.
