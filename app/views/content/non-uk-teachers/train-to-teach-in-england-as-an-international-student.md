@@ -14,10 +14,6 @@ navigation_description: Find out how to train to teach in England as an internat
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
-inset_text:
-  new-international-funding:
-    text: |-
-      Train to teach physics or languages as a non-UK citizen and you could be <a href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student#find-out-about-fees-and-financial-support">eligible for a bursary or scholarship worth up to £29,000</a>.
 keywords:
   - International
   - Overseas
@@ -62,8 +58,6 @@ keywords:
   - Statement
   - Comparability
 ---
-
-$new-international-funding$
 
 Citizens of every country in the world can apply to train to teach in England.
 
