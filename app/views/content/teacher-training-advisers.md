@@ -111,7 +111,7 @@ To sign up, you’ll need (one of the following):
 
 If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach at a secondary school in England to get an adviser.
 
-If you completed your degree overseas, you can check your qualifications by calling us on <a href="tel:08003892500">0800 389 2500</a>.
+If you completed your degree overseas, you can check your qualifications by <a href="tel:08003892500">calling us on 0800 389 2500</a>.
 
 $get-a-tta$
 
