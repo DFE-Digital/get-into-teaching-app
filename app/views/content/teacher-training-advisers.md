@@ -99,7 +99,7 @@ To sign up, you’ll need (one of the following):
 * to be a final year student studying for a bachelor’s degree with honours, with a predicted grade of 2:2 or higher
 * an overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
 
-If you're applying from overseas, you can check your qualifications by calling us on <a href="tel:08003892500">0800 389 2500</a>.
+If you're applying from overseas, you can check your qualifications by <a href="tel:08003892500">calling us on 0800 389 2500</a>.
 
 If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach at a secondary school in England to get an adviser.
 
