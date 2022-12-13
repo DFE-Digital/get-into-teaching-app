@@ -2,11 +2,11 @@ require "rails_helper"
 
 RSpec.feature "Event wizard", type: :feature do
   include_context "with stubbed types api"
+  include_context "with stubbed latest privacy policy api"
 
   let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
   let(:event_readable_id) { "123" }
   let(:event_name) { "Event Name" }
-  let(:latest_privacy_policy) { GetIntoTeachingApiClient::PrivacyPolicy.new({ id: 123 }) }
   let(:event) { build(:event_api, readable_id: event_readable_id, name: event_name) }
   let(:individual_event_page_title) { "Sign up for #{event.name}, personal details step | Get Into Teaching" }
   let(:sign_up_complete_page_title) { "Sign up complete | Get Into Teaching" }
@@ -14,8 +14,6 @@ RSpec.feature "Event wizard", type: :feature do
   before do
     allow_any_instance_of(GetIntoTeachingApiClient::TeachingEventsApi).to \
       receive(:get_teaching_event).with(event_readable_id).and_return(event)
-    allow_any_instance_of(GetIntoTeachingApiClient::PrivacyPoliciesApi).to \
-      receive(:get_latest_privacy_policy).and_return(latest_privacy_policy)
     allow_any_instance_of(GetIntoTeachingApiClient::PickListItemsApi).to \
       receive(:get_teaching_event_types).and_return([])
   end
