@@ -221,7 +221,7 @@ You will also need to:
 
 To get advice about training to teach, you can:
 
-* call +44 (0) 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) – calls are free within the UK but will otherwise be charged at your standard rate
+* call +44 (0) 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England – calls are free within the UK but will otherwise be charged at your standard rate
 * use the live chat service at the bottom of this page
 * [sign up to get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
 
