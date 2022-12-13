@@ -20,13 +20,10 @@ quote:
       text: "They would answer any question I had, small or big, in a relaxed environment."
     q-tta-two:
       text: "They were a great sounding board for my concerns and queries."
-      inline: right
     q-tta-three:
-      text: "Lisa really boosted my confidence with interview prep – she gave me great advice and tips."
-      inline: right
+      text: "Lisa really boosted my confidence – she gave me great advice and tips."
     q-tta-four:
       text: "My adviser helped not only to remind me of the basics, but also to point out some of the things which are different from when I left 12 years ago."
-      inline: right
 calls_to_action:
   get-a-tta:
     name: simple
@@ -36,17 +33,8 @@ calls_to_action:
       link_text: "Get a teacher training adviser"
       link_target: "/tta-service"
       icon: "icon-person"
-youtube_video:
-  about-teacher-training-advisers-video:
-    id: ZaGL8c4FkLA
-    title: A video about what Teacher Training Advisers do
-  about-teacher-training-advisers-experience-video:
-    id: T9Bhcaa6LJ4
-    title: A video about what teaching experience our Teacher Training Advisers have
-content:
-    - content/teacher-training-advisers/blog_links
 ---
-Teacher training advisers give you free, one-to-one support, wherever you are on your journey into teaching.
+Teacher training advisers give you free, one-to-one support, whether you're just thinking about teaching or you're ready to apply.
 
 They have years of teaching experience and can answer all your questions about life in the classroom, as well as how you can get there.
 
@@ -61,13 +49,11 @@ How you talk to them is up to you – you can chat through:
 * phone
 * text
 
-You can talk to them as little or as often as you need. This could be every week for a year, or just a few times before making an application.
+You can talk to them as little or as often as you need. This could be every week for more than a year, or just a few times for some one-to-one support.
 
 ## How your adviser can help you
 
 ### If teaching is just an idea
-
-$q-tta-two$
 
 Your adviser can talk to you about what teaching is really like and help you understand if it’s right for you.
 
@@ -76,6 +62,8 @@ They can:
 * talk through your questions and any doubts ​
 * help you find school experience
 * explain the steps to becoming a teacher
+
+$q-tta-two$
 
 ### If you're ready to apply
 
@@ -89,14 +77,14 @@ They can help you:
 
 ### If you've applied and been unsuccessful
 
-$q-tta-three$
-
 Your adviser can help you improve your application if you were not successful the first time around.
 
 They can help you:
 
 * act on any feedback
 * make your application stronger
+
+$q-tta-three$
 
 ### If you're thinking about returning to teaching
 
@@ -115,16 +103,16 @@ To sign up, you’ll need (one of the following):
 * to be a final year student studying for a bachelor’s degree with honours
 * an overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
 
-If you're applying from overseas, you can check your qualifications by <a href="tel:08003892500">calling us on 0800 389 2500</a>.
-
 If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach at a secondary school in England to get an adviser.
 
-### Not a final year student or graduate?
+If you're applying from overseas, you can check your qualifications by calling us on <a href="tel:08003892500">0800 389 2500</a>.
+
+$get-a-tta$
+
+## Not a final year student or graduate?
 
 You can still get an adviser if you're an undergraduate student not in your final year.
 
 Our explore teaching advisers can help you find out what teaching is really like.
 
 <a href="/explore-teaching-advisers">Find out more about explore teaching advisers</a>.
-
-$get-a-tta$
