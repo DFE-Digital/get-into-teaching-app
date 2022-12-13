@@ -42,7 +42,7 @@ All of your contributions are tax-free, as the scheme is registered with HM Reve
 
 It’s also one of only 8 schemes backed by the government. This means that it’s not reliant on pension money being invested elsewhere.
 
-The scheme is also flexible so you can convert part of your pension early as a tax-free lump sum. 
+The scheme is flexible so you can convert part of your pension early as a tax-free lump sum. 
 
 ## Protection for your family
 
