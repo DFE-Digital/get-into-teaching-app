@@ -91,7 +91,7 @@ Your adviser can help you understand how to get back into teaching if you alread
 
 They can help you:
 
-* brush up your subject knowledge
+* brush up on your subject knowledge
 * find a role
 
 ## Can I get an adviser?
