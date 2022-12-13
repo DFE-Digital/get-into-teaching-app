@@ -49,7 +49,7 @@ Get one step closer to the classroom with guidance tailored to you, including ho
 
 ## 3. Get a Teacher Training Adviser
 
-An experienced teaching professional can help you if you're (one of the following):
+An adviser with years of teaching experience can help you if you're (one of the following):
 
 * ready to get into teaching
 * returning to teach at a secondary school in England and already have qualified teacher status (QTS)
