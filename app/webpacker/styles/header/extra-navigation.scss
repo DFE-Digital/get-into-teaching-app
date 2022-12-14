@@ -13,11 +13,11 @@
 
   &__link a {
     display: inline-block;
-    padding: 0.6em $indent-amount;
+    padding: .6em $indent-amount;
     line-height: 28px;
 
     .icon {
-      margin-left: 0.5em;
+      margin-left: .5em;
       width: 20px;
       height: 20px;
 
@@ -43,7 +43,7 @@
 
   &__search a {
     background-color: $pink;
-    padding: 0.6em $indent-amount / 2;
+    padding: .6em $indent-amount / 2;
     line-height: 28px;
 
     &:hover {
@@ -86,7 +86,8 @@
 
   &:hover,
   &:focus {
-    p, h3 {
+    p,
+    h3 {
       color: $white;
     }
   }
@@ -95,7 +96,7 @@
 .searchbar {
   display: none;
   background-color: $pink;
-  padding: 0.6em;
+  padding: .6em;
   justify-content: flex-end;
 
   @include mq($from: tablet) {

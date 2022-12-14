@@ -129,7 +129,7 @@
       background-position: 70%;
     }
 
-    .badge{
+    .badge {
       transform: translate(-50%, -50%);
     }
 
@@ -197,7 +197,7 @@
         margin: 1em auto 0 0;
 
         .call-to-action__heading {
-          @include font-size('small');
+          @include font-size("small");
         }
       }
 
@@ -255,30 +255,34 @@
   }
 
   &--funding-widget {
-    margin-top: 0px !important;
+    margin-top: 0;
     margin-left: 0;
     position: relative;
     background: transparent;
     @include mq($until: tablet) {
       max-width: calc(100% - 1.25em);
     }
+
     .call-to-action__heading {
       color: white;
       background: $purple;
       display: inline-block;
-      padding: 0.5em 1.25em;
+      padding: .5em 1.25em;
       margin-left: -22px;
       margin-bottom: 1.5em;
       max-width: none;
     }
+
     .call-to-action__content {
       background-color: $grey;
       overflow: hidden;
       position: relative;
     }
+
     .call-to-action__text {
       margin-bottom: 1.4em;
     }
+
     .call-to-action__form {
       .field,
       .actions {
@@ -294,9 +298,10 @@
 
       label {
         display: block;
-        margin-bottom: 0.5em;
+        margin-bottom: .5em;
       }
     }
+
     &:before {
       content: "";
       display: block;

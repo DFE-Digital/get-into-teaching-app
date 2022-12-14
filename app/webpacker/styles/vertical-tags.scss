@@ -4,7 +4,6 @@
   margin: 0;
   display: flex;
   gap: .4em;
-  flex-direction: column;
   align-items: flex-start;
   border-left: 1px solid $divider-colour;
   overflow-x: hidden;
@@ -16,7 +15,7 @@
   padding-block: 1em;
 
   .tag {
-    padding: .4em 1em .4em 2em !important;
+    padding: .4em 1em .4em 2em;
     display: inline-block;
     margin-left: -2em;
 

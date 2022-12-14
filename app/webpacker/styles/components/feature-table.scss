@@ -1,5 +1,4 @@
 .feature-table {
-
   &:not(:first-of-type) {
     margin-top: 2em;
   }
@@ -27,7 +26,7 @@
       flex-basis: 38%;
 
       &:after {
-        content: ':';
+        content: ":";
       }
     }
 
