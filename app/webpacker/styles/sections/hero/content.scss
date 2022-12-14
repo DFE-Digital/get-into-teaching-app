@@ -36,7 +36,7 @@
           }
 
           &:focus:after {
-            background-image: url('../images/icon-down-white.svg');
+            background-image: url("../images/icon-down-white.svg");
           }
 
           &:after {
@@ -45,7 +45,7 @@
             height: 2em;
             min-width: 4em;
             content: "   ";
-            background-image: url('../images/icon-down.svg');
+            background-image: url("../images/icon-down.svg");
             background-repeat: no-repeat;
             background-position: center;
           }

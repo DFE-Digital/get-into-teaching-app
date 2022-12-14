@@ -5,7 +5,8 @@
   background-color: $yellow-light;
   border-left: 6px solid $black;
 
-  h2, p {
+  h2,
+  p {
     @include font-size("small");
   }
 

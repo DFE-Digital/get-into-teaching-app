@@ -8,10 +8,10 @@ body.blur > *:not(.cookie-acceptance, .optimize-overlay) {
 }
 
 body.anti-flicker {
-  opacity: 0 !important;
+  opacity: 0 !important; /* stylelint-disable-line declaration-no-important */
 }
 
 .optimize-overlay {
   @extend .dialog__background;
-  position: fixed !important;
+  position: fixed !important; /* stylelint-disable-line declaration-no-important */
 }

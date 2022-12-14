@@ -15,7 +15,7 @@
 
   span {
     box-decoration-break: clone;
-    padding: 0.18em 0;
+    padding: .18em 0;
     background: $backgroundColor;
     box-shadow: 1rem 0 0 $backgroundColor, -1rem 0 0 $backgroundColor;
   }
@@ -137,7 +137,7 @@
 }
 
 .heading--box-padding-l {
-  padding: 0.5em 0.7em;
+  padding: .5em .7em;
 }
 
 .heading--highlight-yellow {
@@ -146,10 +146,6 @@
 
 .heading--highlight-pink {
   @include highlight-text($pink, $black);
-}
-
-.heading--highlight-purple {
-  @include highlight-text($purple, $black);
 }
 
 .heading--highlight-purple {
@@ -177,14 +173,9 @@ h2 {
 }
 
 h3 {
-  @extend .heading-l;
-}
-
-h3 {
   @extend .heading-m;
 }
 
 h4 {
   @extend .heading-s;
 }
-

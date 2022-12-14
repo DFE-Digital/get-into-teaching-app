@@ -46,7 +46,7 @@ body {
 .hidden {
   // We use important! to ensure any component-level
   // display values (such as flex) are still hidden.
-  display: none !important;
+  display: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
 // new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
@@ -105,7 +105,7 @@ section.container {
     }
 
     .col {
-      margin: 0 auto 3em auto;
+      margin: 0 auto 3em;
 
       &.col-720 {
         max-width: 720px;

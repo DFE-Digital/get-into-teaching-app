@@ -14,7 +14,8 @@
     }
   }
 
-  &--background-grey, &--background-white {
+  &--background-grey,
+  &--background-white {
     @include quote($grey);
 
     p {
