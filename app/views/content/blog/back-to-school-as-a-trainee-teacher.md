@@ -39,4 +39,4 @@ Embarking on a teaching career, Jacob has begun to consider the values they want
 
 > It saddens me that science is seen by many young people as an elite subject area, and very much an arena for the ‘boffins’. This is a perception that I’d love to break down. I would also like to see many more females in my peer group of science teachers. 
 
-Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. Talk to a [teacher training adviser](/teacher-training-advisers) by email, text or phone, as often or as little as you need.
+Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. Talk to a [teacher training adviser](/teacher-training-advisers) by phone, text or email, as often or as little as you need.

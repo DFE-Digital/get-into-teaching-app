@@ -54,7 +54,7 @@ An adviser with years of teaching experience can help you if you're (one of the 
 * ready to get into teaching
 * returning to teach at a secondary school in England and already have qualified teacher status (QTS)
 
-Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. Talk to an adviser by email, text or phone, as often or as little as you need.
+Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. Talk to an adviser by phone, text or email, as often or as little as you need.
 
 [Get an adviser](/tta-service).
 

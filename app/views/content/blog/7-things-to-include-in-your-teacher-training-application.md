@@ -58,4 +58,4 @@ What have you found challenging and how did you deal with it? Find an example of
 
 Have confidence in yourself and remember that training providers are on your side! We always enjoy reading about your experiences from school, family, jobs and volunteering. We look forward to meeting you at interview where you can show us how well-informed and interested you are in becoming a TEACHER.
 
-Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. [Talk to an adviser](/teacher-training-advisers) by email, text or phone, as often or as little as you need.
+Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. [Talk to an adviser](/teacher-training-advisers) by phone, text or email, as often or as little as you need.
