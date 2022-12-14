@@ -37,11 +37,6 @@ provider_groups:
       name: Steve Fox
       telephone: 01376 556398
       email: admin@midessexteachertraining.com
-    - header: Newlands Spring Primary School Academy Trust (Essex Primary SCITT)
-      link: https://www.essexprimaryscitt.co.uk/
-      name: Fiona Willett
-      telephone: '0738885808'
-      email: fiona@essexprimaryscitt.co.uk
     - header: Norfolk Teacher Training Centre
       link: https://www.norfolkttc.org.uk/
       name: Jacqui Waring
