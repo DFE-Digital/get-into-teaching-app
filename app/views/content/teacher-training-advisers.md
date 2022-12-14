@@ -17,12 +17,16 @@ keywords:
 quote:
     q-tta-one:
       text: "They would answer any question I had, small or big, in a relaxed environment."
+      background: "grey"
     q-tta-two:
       text: "They were a great sounding board for my concerns and queries."
+      background: "grey"
     q-tta-three:
       text: "Lisa really boosted my confidence – she gave me great advice and tips."
+      background: "grey"
     q-tta-four:
       text: "My adviser helped not only to remind me of the basics, but also to point out some of the things which are different from when I left 12 years ago."
+      background: "grey"
 calls_to_action:
   get-a-tta:
     name: simple
@@ -42,13 +46,14 @@ $q-tta-one$
 ## How does it work?
 
 You’ll be matched with your own dedicated adviser. You’ll have the same adviser throughout your journey into teaching.
-How you talk to them is up to you – you can chat through:
+
+How often you talk to them is up to you – this could be every week for more than a year, or just a few times for some one-to-one support.
+
+You can chat through:
 
 * email
 * phone
 * text
-
-You can talk to them as little or as often as you need. This could be every week for more than a year, or just a few times for some one-to-one support.
 
 ## How your adviser can help you
 
@@ -66,13 +71,13 @@ $q-tta-two$
 
 ### If you're ready to apply
 
-Your adviser can talk you through the application process step-by-step.
+Your adviser can talk you through the application process step by step.
 
-They can help you:
+They can support you with:
 
-* write your personal statement
-* understand your different training options
-* prepare for interviews
+* writing your personal statement
+* understanding your different training options
+* preparing for interviews
 
 ### If you've applied and been unsuccessful
 
@@ -104,7 +109,7 @@ To sign up, you’ll need (one of the following):
 
 If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach at a secondary school in England to get an adviser.
 
-If you're applying from overseas, you can check your qualifications by calling us on <a href="tel:08003892500">0800 389 2500</a>.
+If you completed your degree overseas, you can check your qualifications by calling us on <a href="tel:08003892500">0800 389 2500</a>.
 
 $get-a-tta$
 
