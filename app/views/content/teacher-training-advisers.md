@@ -50,9 +50,11 @@ You’ll be matched with your own dedicated adviser. You’ll have the same advi
 How often you talk to them is up to you – this could be every week for more than a year, or just a few times for some one-to-one support.
 
 You can chat by phone, or by:
+You can chat by phone, or by:
 
 * email
 * text
+* WhatsApp
 * WhatsApp
 
 ## How can your adviser help you?
@@ -117,9 +119,9 @@ $get-a-tta$
 
 If you're a veteran, you do not need to have or be studying for a degree to get support from an adviser.
 
-Call us on <a href="tel:08003892500">0800 389 2500</a> to get an adviser.
+<a href="tel:08003892500">Call us on 0800 389 2500</a> to get an adviser.
 
-Our telephone service is available Monday to Friday between 8:30am and 5:30pm, except on [bank holidays](https://www.gov.uk/bank-holidays).
+Our telephone service is available Monday to Friday between 8:30am and 5:30pm.
 
 ## Not a final year student or graduate?
 
