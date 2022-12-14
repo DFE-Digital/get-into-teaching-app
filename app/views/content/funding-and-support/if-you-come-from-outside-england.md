@@ -11,7 +11,7 @@ promo_content:
     - content/funding-and-support/promos/mailing-list-promo
 navigation: 20.35
 navigation_title: If you come from outside England
-navigation_description: Find out about the different arrangements for getting financial support if you live outside England.
+navigation_description: Find out about financial support if you come from Scotland, Wales, Northern Ireland, the Channel Islands or outside the UK.
 keywords:
     - Student Finance
     - Financial Support
