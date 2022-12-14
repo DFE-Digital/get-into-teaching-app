@@ -89,7 +89,7 @@ A return to teaching adviser can give you free one-to-one support with:
 * accessing courses to enhance your subject knowledge or teaching practice, such as national professional qualifications (NPQs)
 * finding teaching vacancies
 
-Chat to your adviser through email, text or phone, as little or as often as you need.
+Chat to your adviser by email, text or phone, as little or as often as you need.
 
 Return to teaching advisers also run [events to support returners](/events).
 
