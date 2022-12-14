@@ -7,7 +7,7 @@ related_content:
     Teach in England if you trained overseas : "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-apply
+    - content/non-uk-teachers/promos/adviser-promo-ukraine
 navigation: 20.15
 navigation_title: Ukrainian teachers and trainees coming to the UK
 navigation_description: Find information and advice for Ukrainian citizens seeking teaching jobs and training places in England.
