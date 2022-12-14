@@ -49,11 +49,11 @@ You’ll be matched with your own dedicated adviser. You’ll have the same advi
 
 How often you talk to them is up to you – this could be every week for more than a year, or just a few times for some one-to-one support.
 
-You can chat through:
+You can chat by phone, or by:
 
 * email
-* phone
 * text
+* WhatsApp
 
 ## How your adviser can help you
 
@@ -112,6 +112,14 @@ If you’re a returning teacher who already has qualified teacher status (QTS), 
 If you completed your degree overseas, you can check your qualifications by calling us on <a href="tel:08003892500">0800 389 2500</a>.
 
 $get-a-tta$
+
+### If you're a veteran
+
+If you're a veteran, you do not need to have or be studying for a degree to get support from an adviser.
+
+Call us on 0800 389 2500 to get an adviser.
+
+Our telephone service is available Monday to Friday between 8:30am and 5:30pm.
 
 ## Not a final year student or graduate?
 
