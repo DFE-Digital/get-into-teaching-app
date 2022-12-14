@@ -217,9 +217,6 @@ provider_groups:
       name: Karen Craven
       telephone: 0161 973 1179 (ext 2289)
       email: karencraven@thedeantrust.co.uk
-    - header: Cumbria Teacher Training
-      link: http://www.ctt.ac.uk
-      email: scittlead@ctt.ac.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
