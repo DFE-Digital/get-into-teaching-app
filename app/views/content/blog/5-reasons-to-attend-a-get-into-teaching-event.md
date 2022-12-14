@@ -48,7 +48,7 @@ At each of our events there are a range of experts to speak to including [teache
 
 Sign up for your own adviser at one of our events and have a one-to-one conversation about everything from reassurance about how to stand at the front of a classroom to how to fund your training.
 
-The support won’t stop at the end of the event – you can get as much or as little help from your adviser as you need. You can talk to your adviser through email, text, or phone.
+The support won’t stop at the end of the event – you can get as much or as little help from your adviser as you need. You can talk to your adviser through phone, text, or email.
 
 ## 5. Chat with current teachers
 

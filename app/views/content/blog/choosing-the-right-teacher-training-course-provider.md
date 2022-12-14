@@ -41,4 +41,4 @@ Alongside online research, think about calling or emailing these providers, or t
 >
 >_Jane Wilkinson, former teacher and teacher training adviser._
 
-Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. [Talk to an adviser](/teacher-training-advisers) by email, text or phone, as often or as little as you need.
+Maximise your chances of submitting a successful application with the support of a dedicated and experienced teaching professional. [Talk to an adviser](/teacher-training-advisers) by phone, text or email, as often or as little as you need.

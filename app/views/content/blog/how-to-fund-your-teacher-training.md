@@ -99,7 +99,7 @@ Find out more about [funding your training](/funding-and-support).
 
 ### Further help and support
 
-Our expert advisers can help you to make a plan and find the best funding options for your circumstances. [Talk to an adviser](/teacher-training-advisers) by email, text or phone, as often or as little as you need.
+Our expert advisers can help you to make a plan and find the best funding options for your circumstances. [Talk to an adviser](/teacher-training-advisers) by phone, text or email, as often or as little as you need.
 
 [^1]:
     If you do not already have a student loan, or you took one out on or after 1 September 2012, you are only required to make repayments when you are earning over £27,295. Your repayments will not increase if you take out a loan for teacher training.
