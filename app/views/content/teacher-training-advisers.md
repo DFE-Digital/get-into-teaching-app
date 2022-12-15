@@ -121,7 +121,7 @@ If you're a veteran, you do not need to have or be studying for a degree to get 
 
 <a href="tel:08003892500">Call us on 0800 389 2500</a> to get an adviser.
 
-Our telephone service is available Monday to Friday between 8:30am and 5:30pm.
+Our telephone service is available Monday to Friday between 8:30am and 5:30pm, except on [bank holidays](https://www.gov.uk/bank-holidays).
 
 ## Not a final year student or graduate?
 
