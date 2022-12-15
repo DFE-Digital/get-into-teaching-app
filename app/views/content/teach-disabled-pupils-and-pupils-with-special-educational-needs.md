@@ -6,14 +6,8 @@ description: |-
 date: "2021-05-07"
 image: "media/images/content/hero-images/0023.jpg"
 article_classes: ['longform']
-calls_to_action:
-  get-an-adviser:
-    name: simple
-    arguments:
-      text: "A teacher training adviser can help support your application for teacher training, including funding, personal statements and finding the right course for you."
-      link_text: "Get an adviser"
-      link_target: "/tta-service"
-      icon: "icon-person"
+promo_content:
+    - content/train-to-be-a-teacher/promos/adviser-promo-send
 keywords:
   - SEND
   - disabled

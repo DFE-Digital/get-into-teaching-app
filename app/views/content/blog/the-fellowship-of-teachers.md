@@ -55,4 +55,5 @@ Phil: Underneath it, I’m a big softie though!
 
 Phil: I know a lot of people wrestle with the idea for a while, and think, do I take this step? There’s always something that could hold you back, but you've got to have the courage to make the jump. I promise the level of satisfaction is like nothing you’ll get in another job. I wake up every morning and want to get into school.
 
-Whatever stage you’re at on your journey into teaching, our expert advisers can help. [Sign up for an adviser](/tta-service) who can give you free, one-to-one support.
+[Talk to an adviser](/teacher-training-advisers) to get free, one-to-one support on your journey into the classroom. All our advisers have years of teaching experience — chat by phone, text or email to find out if teaching is for you.
+
