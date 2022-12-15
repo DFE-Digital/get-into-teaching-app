@@ -38,13 +38,7 @@
         position: absolute;
         top: 0;
       }
-    }
 
-    picture:last-child {
-      display: none;
-    }
-
-    &:focus {
       picture:last-child {
         display: block;
       }
@@ -52,6 +46,10 @@
       picture:first-child {
         display: none;
       }
+    }
+
+    picture:last-child {
+      display: none;
     }
   }
 

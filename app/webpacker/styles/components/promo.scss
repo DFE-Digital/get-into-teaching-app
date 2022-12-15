@@ -1,6 +1,5 @@
 .promo {
   max-width: $content-max-width;
-  margin: 3em auto;
   display: flex;
   flex-direction: column;
   gap: $indent-amount / 2;
@@ -70,13 +69,14 @@
       padding-right: $indent-amount;
     }
 
-    p, h2 {
+    p,
+    h2 {
       margin-top: 0;
     }
 
     label {
-	    font-weight: bold;
-	    display: block
+      font-weight: bold;
+      display: block;
     }
 
     label,
