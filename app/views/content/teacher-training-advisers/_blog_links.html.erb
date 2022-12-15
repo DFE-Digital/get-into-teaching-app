@@ -1,0 +1,27 @@
+  <section>
+    <%= render Content::PhotoQuoteListComponent.new(
+      [
+        {
+          image: "media/images/content/blog/thumbnails/giorgio-rubbo.jpg",
+          heading: "Giorgio, newly qualified teacher",
+          text: "[My adviser] was fantastically knowledgeable and helpful at all stages of the application.",
+          accreditation: link_to("Read about Giorgio's experience with an adviser", page_path("blog/why-i-became-a-teacher")) + ".",
+        },
+        {
+          image: "media/images/content/blog/thumbnails/habiba-cabdi-teacher-applicant.jpg",
+          heading: "Habiba, teacher with a hearing impairment",
+          text: "[My adviser] was understanding and motivated me to finish applying!",
+          accreditation: link_to("Read about the motivation Habiba got from her adviser", page_path("blog/overcoming-challenges-to-become-a-teacher-hearing-impairment")) + ".",
+        },
+        {
+          image: "media/images/content/blog/thumbnails/david-payling.jpg",
+          heading: "David, career changer",
+          text: "I can’t speak highly enough of Elaine and the assistance given by the Get Into Teaching service.",
+          accreditation: link_to("Read about the support David got from an adviser", page_path("blog/from-the-army-to-teacher-training")) + ".",
+        }
+      ],
+      colors: %w[purple],
+      numbered: false
+    ) %>
+  </section>
+</div>
