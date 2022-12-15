@@ -41,7 +41,7 @@ You may be able to show you meet the standard in another way if you do not have 
 
 If you’re applying for teacher training as an international candidate, [find out more about overseas qualifications](/non-uk-teachers/train-to-teach-in-england-as-an-international-student).
 
-You can get advice about your qualifications by [chatting to a teacher training adviser](/teacher-training-advisers).
+You can get advice about your qualifications by chatting to a [teacher training adviser](/teacher-training-advisers).
 
 ## 2. Get some school experience
 
@@ -55,7 +55,7 @@ All our teacher training advisers are experienced teachers who can provide you w
 
 Chat by phone, text or email, as little or as often as you need.
 
-[Get a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/).
+Get a [teacher training adviser](/teacher-training-advisers).
 
 ## 4.	Attend a teacher training event
 
