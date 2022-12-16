@@ -132,12 +132,9 @@ From 1 February 2023, if you have a qualification from the following countries y
 * Ukraine
 * Zimbabwe
 
+[Check your eligibility to apply to the TRA for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start).
+
 [Learn more about the qualifications and experience you'll need to get QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers). 
-
-<p class="call-to-action__action">
-  <a href="https://apply-for-qts-in-england.education.gov.uk/eligibility/start">Apply for QTS <span>in England</span></a>
-</p>
-
 
 ### Other routes to QTS
 
@@ -158,11 +155,17 @@ Most teaching vacancies are advertised in March, April or the first half of May,
 
 Set up a Teaching Vacancies job alert to be updated about opportunities throughout the year.
 
+## Talk to an adviser
+
+You can get one-to-one support if you have [qualified teacher status (QTS)](https://www.gov.uk/government/publications/qualified-teacher-status-routes-to-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk) and want to teach at a secondary school in England. Get help with:
+
+* the application process, such as writing a personal statement and preparing for an interview
+* accessing courses to [improve your subject knowledge](/train-to-be-a-teacher/subject-knowledge-enhancement)
+* finding [teaching vacancies](https://teaching-vacancies.service.gov.uk/)
 
 <p class="call-to-action__action">
-  <a href="https://teaching-vacancies.service.gov.uk/?utm_source=int_teacher_recruitment&utm_medium=referral&utm_campaign=AY21-22">Search Teaching <span>Vacancies</span></a>
+  <a href="/tta-service">Get an <span>adviser</span></a>
 </p>
-
 
 ## Find out what salary you can earn
 
@@ -176,6 +179,7 @@ There are [specific salary requirements for a skilled worker visa](https://www.g
 
 ## Contact
 
+The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.
 The Department for Education does not administer teacher training courses or appoint teachers, so we cannot help with individual applications to training providers or schools.
 
 However, if you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
