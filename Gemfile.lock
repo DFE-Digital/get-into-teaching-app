@@ -24,9 +24,9 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-wizard.git
-  revision: 3d35745683526ee015f1a1de06cade6ab76119bb
+  revision: 1cfc90fe09ba661c761d29a5a653a014e23ea386
   specs:
-    git_wizard (2.0.0)
+    git_wizard (2.1.0)
       activemodel (>= 6.0.3.4)
       activesupport (>= 6.0.3.4)
 
