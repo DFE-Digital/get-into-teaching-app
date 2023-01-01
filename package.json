@@ -18,7 +18,7 @@
     "sass-mq": "^5.0.1",
     "serialize-javascript": "^6.0.0",
     "set-value": "^4.0.1",
-    "sinon": "^14.0.1",
+    "sinon": "^15.0.1",
     "stimulus": "^3.1",
     "trix": "^2.0.2",
     "turbolinks": "^5.2.0",
