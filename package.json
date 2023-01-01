@@ -20,7 +20,7 @@
     "set-value": "^4.0.1",
     "sinon": "^14.0.1",
     "stimulus": "^3.1",
-    "trix": "^2.0.2",
+    "trix": "^2.0.4",
     "turbolinks": "^5.2.0",
     "webpack": "^4.46.0",
     "webpack-cli": "3.3.12"
