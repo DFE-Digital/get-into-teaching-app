@@ -51,6 +51,7 @@
   &__heading {
     @include font-size("large");
     color: $white;
+    background-color: $purple;
 
     line-height: 1.25em;
     max-width: 80%;
@@ -58,6 +59,7 @@
 
   &__text {
     color: $white;
+    background-color: $purple;
   }
 
   &__cta {
