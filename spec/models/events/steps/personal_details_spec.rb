@@ -4,72 +4,34 @@ describe Events::Steps::PersonalDetails do
   include_context "with wizard step"
   it_behaves_like "a with wizard step"
 
-  it { expect(described_class).to include(::GITWizard::IssueVerificationCode) }
+  it { expect(described_class).to be < ::GITWizard::Steps::Identity }
 
-  it { is_expected.to respond_to :first_name }
-  it { is_expected.to respond_to :last_name }
-  it { is_expected.to respond_to :email }
   it { is_expected.to respond_to :is_walk_in }
-  it { is_expected.to respond_to :accepted_policy_id }
   it { is_expected.to respond_to :event_id }
-
-  describe "validations" do
-    subject { instance.errors.messages }
-
-    before { instance.valid? }
-
-    it { is_expected.to include(:first_name) }
-    it { is_expected.to include(:last_name) }
-    it { is_expected.to include(:email) }
-    it { is_expected.to include(:event_id) }
-    it { is_expected.to include(:accepted_policy_id) }
-  end
 
   describe "event_id" do
     it { is_expected.to validate_presence_of(:event_id) }
   end
 
-  describe "accepted_policy_id" do
-    it { is_expected.to validate_presence_of(:accepted_policy_id) }
-  end
-
-  describe "#first_name" do
-    it { is_expected.to validate_length_of(:first_name).is_at_most(256) }
-  end
-
-  describe "#last_name" do
-    it { is_expected.to validate_length_of(:last_name).is_at_most(256) }
-  end
-
-  describe "#email address" do
-    it { is_expected.to allow_value("me@you.com").for :email }
-    it { is_expected.to allow_value(" me@you.com ").for :email }
-    it { is_expected.not_to allow_value("me@you").for :email }
-  end
-
-  describe "#is_walk_in" do
-    it { expect(instance).not_to be_is_walk_in }
-  end
-
   describe "#is_walk_in?" do
-    subject { instance.is_walk_in? }
+    before { instance.is_walk_in = is_walk_in }
 
     context "when is_walk_in is nil" do
-      before { instance.is_walk_in = nil }
+      let(:is_walk_in) { nil }
 
-      it { is_expected.to be(false) }
+      it { is_expected.not_to be_is_walk_in }
     end
 
     context "when is_walk_in is false" do
-      before { instance.is_walk_in = false }
+      let(:is_walk_in) { false }
 
-      it { is_expected.to be(false) }
+      it { is_expected.not_to be_is_walk_in }
     end
 
     context "when is_walk_in is true" do
-      before { instance.is_walk_in = true }
+      let(:is_walk_in) { true }
 
-      it { is_expected.to be(true) }
+      it { is_expected.to be_is_walk_in }
     end
   end
 end
