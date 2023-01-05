@@ -50,11 +50,9 @@ You’ll be matched with your own dedicated adviser. You’ll have the same advi
 How often you talk to them is up to you – this could be every week for more than a year, or just a few times for some one-to-one support.
 
 You can chat by phone, or by:
-You can chat by phone, or by:
 
 * email
 * text
-* WhatsApp
 * WhatsApp
 
 ## How can your adviser help you?

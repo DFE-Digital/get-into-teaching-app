@@ -1,6 +1,7 @@
 .skiplink {
   position: absolute;
   left: -9999em;
+  color: $white;
 
   &:focus {
     left: 0;

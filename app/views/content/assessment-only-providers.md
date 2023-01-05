@@ -369,7 +369,7 @@ provider_groups:
       link: https://www.teachwithhaybridge.co.uk
       email: tforward@haybridge.worcs.sch.uk
     - header: Keele and North Staffordshire Teacher Education
-      link: https://knste-shaw.org.uk/assessment-route
+      link: https://knste-shaw.org.uk/assessment-only-route
       telephone: '01782 432537'
       email: ao@knste-shaw.org.uk
     - header: St. Joseph's College Stoke Secondary Partnership
