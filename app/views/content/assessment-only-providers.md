@@ -33,7 +33,7 @@ provider_groups:
       telephone: '01268 988580'
       email: anna@ete.org.uk
     - header: Mid Essex Initial Teacher Training
-      link: https://midessexteachertraining.com/
+      link: https://midessexteachertraining.com/courses/assessment-only
       name: Steve Fox
       telephone: 01376 556398
       email: admin@midessexteachertraining.com
