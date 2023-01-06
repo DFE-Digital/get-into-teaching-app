@@ -67,4 +67,21 @@ RSpec.describe CallbackHelper, type: :helper do
       }
     end
   end
+
+  describe "#callback_available?" do
+    subject { helper }
+
+    before do
+      allow_any_instance_of(GetIntoTeachingApiClient::CallbackBookingQuotasApi).to \
+        receive(:get_callback_booking_quotas) { quotas }
+    end
+
+    it { is_expected.to be_callback_available }
+
+    context "when there are no quotas" do
+      let(:quotas) { [] }
+
+      it { is_expected.not_to be_callback_available }
+    end
+  end
 end

@@ -17,11 +17,18 @@
     <p>Our agents are experts who can answer questions about qualifications, routes into teaching or your application.</p>
 
     <div class="mailing-list__actions">
-      <%= link_to("Book a callback", callbacks_steps_path, class: "button") %>
-      <div>
-        <small>or call us now:</small>
-        <p class="telephone">0800 389 2500</p>
-      </div>
+      <% if callback_available? %>
+        <%= link_to("Book a callback", callbacks_steps_path, class: "button") %>
+        <div>
+          <small>or call us now:</small>
+          <p class="telephone">0800 389 2500</p>
+        </div>
+      <% else %>
+        <div>
+          <small>Call us now:</small>
+          <p class="telephone">0800 389 2500</p>
+        </div>
+      <% end %>
     </div>
 
     <p>Monday to Friday between 8:30am and 5:30pm, except on <a href="https://www.gov.uk/bank-holidays">bank holidays</a>.</p>
