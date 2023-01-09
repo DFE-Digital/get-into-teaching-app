@@ -9,6 +9,9 @@ description: |-
   Find out more about subject knowledge enhancement (SKE) courses which will help you brush up the subject you want to teach.
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-ske
+inset_text:
+  international-content:
+    text: If you’re a non-UK citizen, you’ll only be eligible for a SKE bursary if you’re training to teach physics or modern foreign languages.
 keywords:
   - Subject knowledge
   - Subject knowledge enhancement
@@ -62,7 +65,7 @@ You should complete your SKE course before starting your teacher training. If yo
 
 ## Get a SKE bursary
 
-If you train to teach in the 2022/23 academic year, you could be eligible for a bursary of £175 per week to complete your SKE course. If you do a part-time SKE course and complete less than 25 hours a week, this will be paid pro rata. How and when your bursary is paid will vary by your training provider.
+If you train to teach in the 2022/23 academic year, you could be eligible for a bursary of £175 per week to complete your SKE course. If you do a part-time SKE course and complete less than 25 hours a week, this will be paid in proportion to your course hours. How and when your bursary is paid will vary by your training provider.
 
 You can use your SKE bursary for any extra costs you may have during your SKE course, for example, making up for any lost income.
 
@@ -74,9 +77,9 @@ You’ll need (one of the following):
 * a master’s degree
 * a PhD
 
-If you’re a non-UK citizen, you’ll only be eligible for a SKE bursary if you’re training to teach physics or modern foreign languages.
-
 You'll need to complete your SKE course before your teacher training starts to receive your SKE bursary.
+
+$international-content$
 
 [See what other candidates say about SKE](https://youtu.be/mWuHMtyFrFU).
 
