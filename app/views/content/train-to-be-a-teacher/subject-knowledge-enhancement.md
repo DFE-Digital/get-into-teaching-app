@@ -34,9 +34,9 @@ SKE courses can help when you have:
 * an unrelated degree but relevant professional experience
 * studied for a languages degree, but need to develop a second language to an acceptable level for teaching in schools
 
-## How to do a SKE course
+## How to do an SKE course
 
-When you apply for teacher training in England, talk to your training provider if you think you need to improve your subject knowledge. They’ll help you decide if you need to complete a SKE course, and may make it a condition of their offer to train with them.
+When you apply for teacher training in England, talk to your training provider if you think you need to improve your subject knowledge. They’ll help you decide if you need to complete an SKE course, and may make it a condition of their offer to train with them.
 
 You’ll choose your SKE course provider, but your teacher training provider can help you decide on the right one for you.
 
@@ -58,7 +58,7 @@ You can also do one in primary mathematics.
 
 $ske-course-video$
 
-## How do SKE courses work?
+## How does an SKE course work?
 
 They're usually online, but some can be classroom based and some can be a mixture of both. 
 
@@ -76,7 +76,7 @@ If you train to teach in the 2022/23 academic year, you could be eligible for a 
 
 You can use your SKE bursary for any extra costs you may have during your SKE course, for example, making up for any lost income.
 
-### Eligibility for a SKE bursary
+### Eligibility for an SKE bursary
 
 You’ll need (one of the following):
 
