@@ -16,7 +16,7 @@ keywords:
   - enhance
 ---
 
-If you’re concerned about how well you know the subject you want to teach, do not worry - you may be able to do a subject knowledge enhancement (SKE) course.
+You may be able to do a subject knowledge enhancement (SKE) course before you start your teacher training to top up your subject knowledge.
 
 SKE courses can help when you have:
 
@@ -50,19 +50,19 @@ You can also do one in primary mathematics.
 
 ## How do SKE courses work?
 
-SKE courses are usually online, but some can be classroom based and some can be a mixture of both. 
+They're usually online, but some can be classroom based and some can be a mixture of both. 
 
-Course lengths range from 8 to 28 weeks and are usually 25 hours per week. Your course length will be determined by your provider, based on your gap in knowledge. Different providers may offer different course lengths.
+Course lengths range from 8 to 28 weeks and are usually 25 hours per week. Your provider will decide which course length is appropriate, based on your gap in knowledge. Different providers may offer different course lengths.
 
 You can also do a part-time SKE course and complete it over a longer period, or sometimes shorter. Your SKE provider will be able to discuss your options with you.
 
-### When you should complete your course
+## When should you complete your course?
 
-You should complete your SKE course before starting your teacher training. If you run out of time, your provider may allow you to continue your SKE course whilst starting your teacher training, but you will not be paid the SKE course bursary for these weeks.
+You should complete your SKE course before starting your teacher training. If you run out of time, your provider may allow you to continue your SKE course at the same time as your teacher training.
 
 ## Get a SKE bursary
 
-If you train to teach in the 2022/23 academic year, you could be eligible for a bursary of £175 per week. If you do a part-time SKE course and complete less than 25 hours of your SKE course a week, this will be pro rata. How and when your bursary will be paid will vary by your training provider.
+If you train to teach in the 2022/23 academic year, you could be eligible for a bursary of £175 per week to complete your SKE course. If you do a part-time SKE course and complete less than 25 hours a week, this will be paid pro rata. How and when your bursary is paid will vary by your training provider.
 
 You can use your SKE bursary for any extra costs you may have during your SKE course, for example, making up for any lost income.
 
@@ -75,6 +75,8 @@ You’ll need (one of the following):
 * a PhD
 
 If you’re a non-UK citizen, you’ll only be eligible for a SKE bursary if you’re training to teach physics or modern foreign languages.
+
+You'll need to complete your SKE course before your teacher training starts to receive your SKE bursary.
 
 [See what other candidates say about SKE](https://youtu.be/mWuHMtyFrFU).
 
