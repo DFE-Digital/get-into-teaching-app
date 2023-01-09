@@ -8,10 +8,15 @@ related_content:
 description: |-
   Find out more about subject knowledge enhancement (SKE) courses which will help you brush up the subject you want to teach.
 promo_content:
+    - content/train-to-be-a-teacher/promos/find-your-ske-course
     - content/train-to-be-a-teacher/promos/adviser-promo-ske
 inset_text:
   international-content:
     text: If you’re a non-UK citizen, you’ll only be eligible for a SKE bursary if you’re training to teach physics or modern foreign languages.
+youtube_video:
+  ske-course-video:
+    id: mWuHMtyFrFU
+    title: Subject knowledge enhancement explained
 keywords:
   - Subject knowledge
   - Subject knowledge enhancement
@@ -51,6 +56,8 @@ SKE courses are currently available in 9 secondary subjects:
 
 You can also do one in primary mathematics.
 
+$ske-course-video$
+
 ## How do SKE courses work?
 
 They're usually online, but some can be classroom based and some can be a mixture of both. 
@@ -80,7 +87,3 @@ You’ll need (one of the following):
 You'll need to complete your SKE course before your teacher training starts to receive your SKE bursary.
 
 $international-content$
-
-[See what other candidates say about SKE](https://youtu.be/mWuHMtyFrFU).
-
-[Find out if there's a subject knowledge enhancement (SKE) course for your subject](https://www.gov.uk/government/publications/subject-knowledge-enhancement-course-directory/subject-knowledge-enhancement-ske-course-directory).
