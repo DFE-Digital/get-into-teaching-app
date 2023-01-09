@@ -12,6 +12,10 @@ module Callbacks
       before_validation if: :address_telephone do
         self.address_telephone = address_telephone.to_s.strip.presence
       end
+
+      def can_proceed?
+        self.class.callback_booking_quotas.any?
+      end
     end
   end
 end

@@ -76,3 +76,19 @@ shared_context "with stubbed book callback api" do
     stub_request(:post, "#{git_api_endpoint}/api/get_into_teaching/callbacks").to_return(status: 200, body: "", headers: {})
   end
 end
+
+shared_context "with stubbed callback quotas api" do
+  let(:git_api_endpoint) { ENV["GIT_API_ENDPOINT"] }
+  let(:quotas) do
+    [
+      GetIntoTeachingApiClient::CallbackBookingQuota.new(
+        start_at: 1.week.from_now,
+        end_at: 1.week.from_now + 30.minutes,
+      ),
+    ]
+  end
+
+  before do
+    stub_request(:get, "#{git_api_endpoint}/api/callback_booking_quotas").to_return(status: 200, body: quotas.to_json, headers: {})
+  end
+end
