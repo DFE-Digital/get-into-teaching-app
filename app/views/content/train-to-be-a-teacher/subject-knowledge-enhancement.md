@@ -62,7 +62,7 @@ $ske-course-video$
 
 They're usually online, but some can be classroom based and some can be a mixture of both. 
 
-Course lengths range from 8 to 28 weeks and are usually 25 hours per week. Your provider will decide which course length is appropriate, based on your gap in knowledge. Different providers may offer different course lengths.
+Course lengths usually range from 8 to 28 weeks and are 25 hours per week. Your provider will decide which course length is appropriate based on your gap in knowledge. Different providers may offer different course lengths.
 
 You can also do a part-time SKE course and complete it over a longer period, or sometimes shorter. Your SKE provider will be able to discuss your options with you.
 
