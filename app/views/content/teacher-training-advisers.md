@@ -27,6 +27,8 @@ quote:
     q-tta-four:
       text: "My adviser helped not only to remind me of the basics, but also to point out some of the things which are different from when I left 12 years ago."
       background: "grey"
+content:
+  - content/teacher-training-advisers/quotes
 calls_to_action:
   get-a-tta:
     name: simple
@@ -128,3 +130,4 @@ You can still get an adviser if you're an undergraduate student not in your fina
 Our explore teaching advisers can help you find out what teaching is really like.
 
 <a href="/explore-teaching-advisers">Find out more about explore teaching advisers</a>.
+
