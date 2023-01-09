@@ -115,7 +115,7 @@ export default class extends Controller {
   }
 
   isPrivacyPage() {
-    const path = window.location.href.replace(/^https?:\/\/[^/]+/, '');
+    const path = window.location.pathname;
     const cookiesPages = ['/cookie_preference', '/cookies', '/privacy-policy'];
 
     return cookiesPages.includes(path);
