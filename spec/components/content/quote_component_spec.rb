@@ -48,6 +48,13 @@ describe Content::QuoteComponent, type: :component do
     it { is_expected.not_to have_css(".author cite.name") }
   end
 
+  context "when name contains html" do
+    let(:name) { "<a href='/'>Link<a><script>malicious</script>" }
+
+    it { is_expected.to have_css("cite a", text: "Link") }
+    it { is_expected.not_to have_css("script") }
+  end
+
   context "when job_title is not specified" do
     let(:job_title) { nil }
 

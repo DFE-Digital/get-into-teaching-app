@@ -27,8 +27,17 @@ quote:
     q-tta-four:
       text: "My adviser helped not only to remind me of the basics, but also to point out some of the things which are different from when I left 12 years ago."
       background: "grey"
-content:
-  - content/teacher-training-advisers/quotes
+quote_list:
+  ql-1:
+    quotes: 
+      - heading: "Habiba, teacher with a hearing impairment"
+        text: "The application process went smoothly thanks to the help of my teacher training adviser, Ellie."
+        accreditation: <a href="/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment">Read how Habiba successfully applied to train to teach</a>.
+  ql-2:
+    quotes:
+      - heading: "Stephen, a returning teacher"
+        text: "He (teacher training adviser) took considerable time to understand my situation."
+        accreditation: <a href="/blog/stephens-return-to-teaching-story">Read how Stephen got back into the classroom with the help of an adviser</a>.
 calls_to_action:
   get-a-tta:
     name: simple
@@ -81,6 +90,8 @@ They can support you with:
 * understanding your different training options
 * preparing for interviews
 
+$ql-1$
+
 ### If you've applied and been unsuccessful
 
 Your adviser can help you improve your application if you were not successful the first time around.
@@ -100,6 +111,8 @@ They can help you:
 
 * brush up on your subject knowledge
 * find a role
+
+$ql-2$
 
 ## Can I get an adviser?
 

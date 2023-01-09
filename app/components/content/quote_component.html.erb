@@ -5,7 +5,7 @@
       <div class="author">
         <div>
           <% if name.present? %>
-            <cite class="name"><%= name %></cite>
+            <cite class="name"><%= helpers.safe_html_format(name) %></cite>
           <% end %>
           <% if job_title.present? %>
             <cite class="job-title"><%= job_title %></cite>

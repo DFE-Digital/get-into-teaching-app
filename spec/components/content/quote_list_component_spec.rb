@@ -21,7 +21,7 @@ describe Content::QuoteListComponent, type: :component do
     }
   end
   let(:quotes) { [quote1, quote2] }
-  let(:component) { described_class.new(quotes) }
+  let(:component) { described_class.new(quotes: quotes) }
 
   it { is_expected.to have_css("ol.quote-list") }
 

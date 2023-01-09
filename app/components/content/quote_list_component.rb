@@ -2,7 +2,7 @@ module Content
   class QuoteListComponent < ViewComponent::Base
     attr_reader :quotes
 
-    def initialize(quotes)
+    def initialize(quotes:)
       super
 
       @quotes = quotes
