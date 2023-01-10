@@ -9942,10 +9942,10 @@ trim-newlines@^3.0.0:
   resolved "https://registry.yarnpkg.com/trim-newlines/-/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
   integrity sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==
 
-trix@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/trix/-/trix-2.0.2.tgz#0efb24fd3e047f209d13883abc2f2989e1c7d547"
-  integrity sha512-AecwSri5xwptYiaYgk+nNQAlsAhv8R/u3+T06eB50LoZir4tsa6No4PRVQHj92X0WI/lXAO6JCu19AmFUhOQNw==
+trix@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/trix/-/trix-2.0.4.tgz#37ec8092e5d561462cee1d96cc402aa5c5f8c04e"
+  integrity sha512-WOMKqwCVti0i3RVaDrMnrEZWs6XMpFoCfUvFCZNd15KndAy6MsYQscizxEpFiCLUlo+rXMkueK0ldRDo5xpVJA==
 
 ts-pnp@^1.1.6:
   version "1.2.0"
