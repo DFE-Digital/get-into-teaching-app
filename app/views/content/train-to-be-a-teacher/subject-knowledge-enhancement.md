@@ -56,7 +56,9 @@ SKE courses are currently available in 9 secondary subjects:
 
 You can also do one in primary mathematics.
 
-Learn more about the benefits of a subject knowledge enhancement course and how it can help prepare you for the classroom in our video:
+### The benefits of an SKE course
+
+Learn more about how a subject knowledge enhancement course can help prepare you for the classroom in our video:
 
 $ske-course-video$
 
