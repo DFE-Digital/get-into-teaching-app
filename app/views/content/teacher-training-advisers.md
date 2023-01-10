@@ -18,15 +18,6 @@ quote:
     q-tta-one:
       text: "They would answer any question I had, small or big, in a relaxed environment."
       background: "grey"
-    q-tta-two:
-      text: "They were a great sounding board for my concerns and queries."
-      background: "grey"
-    q-tta-three:
-      text: "Lisa really boosted my confidence – she gave me great advice and tips."
-      background: "grey"
-    q-tta-four:
-      text: "My adviser helped not only to remind me of the basics, but also to point out some of the things which are different from when I left 12 years ago."
-      background: "grey"
 quote_list:
   ql-1:
     quotes: 
@@ -78,8 +69,6 @@ They can:
 * help you find school experience
 * explain the steps to becoming a teacher
 
-$q-tta-two$
-
 ### If you're ready to apply
 
 Your adviser can talk you through the application process step by step.
@@ -100,8 +89,6 @@ They can help you:
 
 * act on any feedback
 * make your application stronger
-
-$q-tta-three$
 
 ### If you're thinking about returning to teaching
 
