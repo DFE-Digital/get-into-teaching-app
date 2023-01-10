@@ -15,6 +15,7 @@ export default class extends Controller {
     if (cookiePrefs.cookieSet) return;
 
     this.showDialog();
+    this.retrainQueryStringOnDisagree();
   }
 
   accept(event) {
@@ -31,6 +32,20 @@ export default class extends Controller {
   showDialog() {
     this.overlayTarget.classList.add('visible');
     this.startInterceptingTabKeydown();
+  }
+
+  retrainQueryStringOnDisagree() {
+    // In case there are tracking parameters passed through the query string
+    // we want to retain then so when they go to /cookie_preferences and accept it
+    // will action them correctly (otherwise they are lost on the page change).
+    const existingParams = new URLSearchParams(window.location.search);
+    const url = new URL(this.disagreeTarget.href);
+
+    existingParams.forEach((value, key) => {
+      url.searchParams.set(key, value);
+    });
+
+    this.disagreeTarget.href = url.pathname + url.search;
   }
 
   resetFocus() {

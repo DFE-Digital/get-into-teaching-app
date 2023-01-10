@@ -29,7 +29,7 @@
           <span>Accept all cookies</span>
         </a>
 
-        <%= link_to(cookie_preference_path(request.query_parameters), tabindex: -1, id: "cookies-disagree", class: "button button--secondary", data: { "cookie-acceptance-target": "disagree" }) do %>
+        <%= link_to(cookie_preference_path, tabindex: -1, id: "cookies-disagree", class: "button button--secondary", data: { "cookie-acceptance-target": "disagree" }) do %>
           <span>Set cookie preferences</span>
         <% end %>
       </div>
