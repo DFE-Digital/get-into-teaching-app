@@ -96,3 +96,9 @@ $EY-undergraduate$
 This self-funded route is ideal for graduates with early-years experience. If you already meet the [early years teachers’ standards](https://www.gov.uk/government/publications/early-years-teachers-standards) you can gain EYTS without the need for further training.
 
 $EY-self-funded$
+
+## Find your early years teacher training course
+
+You should contact accredited early years training providers directly to apply for a place.
+
+<a href="https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations" class="button">See early years training providers</a>
