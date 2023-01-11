@@ -64,7 +64,7 @@ $ske-course-video$
 
 ## How SKE courses work
 
-They're usually online, but some can be classroom based and some can be a mixture of both. 
+They're usually online, but some courses can be classroom based and some can be a mixture of both. 
 
 Course lengths usually range from 8 to 28 weeks and are 25 hours per week. Your provider will decide which course length is appropriate based on your gap in knowledge. Different providers may offer different course lengths.
 
