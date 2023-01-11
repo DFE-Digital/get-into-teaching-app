@@ -26,8 +26,8 @@ quote_list:
         accreditation: <a href="/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment">Read how Habiba successfully applied to train to teach</a>.
   ql-2:
     quotes:
-      - heading: "Stephen, a returning teacher"
-        text: "He (teacher training adviser) took considerable time to understand my situation."
+      - heading: "Stephen, returning teacher"
+        text: "[My teacher training adviser] took considerable time to understand my situation."
         accreditation: <a href="/blog/stephens-return-to-teaching-story">Read how Stephen got back into the classroom with the help of an adviser</a>.
 calls_to_action:
   get-a-tta:
