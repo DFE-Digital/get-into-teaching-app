@@ -19,19 +19,20 @@ date: "2021-03-29"
 description: |-
   Discover how to get Early Years Teacher Status (EYTS) and help to educate and inspire future generations. Official guidance on early years teacher training.
 calls_to_action:
-   EY-graduate:
+  EY-graduate:
     name: feature_table
     arguments:
       - Cost: "£7000 course fees are covered by the Department for Education and are paid directly to the training provider. You don’t need to do anything to access this funding."
         Salary: "No"
         Length of training: "Typically 1 academic year"
         Qualification: "Early years teacher status"
-        Funding available: "Bursaries are available, including:
-        * £5,000 if you have a first class degree
-        * £4,000 if you have a 2:1 degree
-        * £2,000 if you have a 2:2 degree
-        You aren’t eligible for a bursary if you have a third class degree.
-        You don’t need to do anything to access this funding. You can learn more on the [early years funding guidance page](https://www.gov.uk/guidance/early-years-initial-teacher-training-2023-to-2024-funding-guidance)."
+        Funding available: |-
+          Bursaries are available, including:
+          * £5,000 if you have a first class degree
+          * £4,000 if you have a 2:1 degree
+          * £2,000 if you have a 2:2 degree
+          You aren’t eligible for a bursary if you have a third class degree.
+          You don’t need to do anything to access this funding. You can learn more on the [early years funding guidance page](https://www.gov.uk/guidance/early-years-initial-teacher-training-2023-to-2024-funding-guidance).
   EY-graduate-employment:
     name: feature_table
     arguments:
