@@ -21,7 +21,7 @@ class TeachingEventsController < ApplicationController
 
   def index
     @front_matter = {
-      title: "Find an event near you",
+      title: "Find an event near you or online",
       description: "Find out more about getting into teaching at a free event where you can get all your questions answered by teachers, advisers and training providers.",
     }.with_indifferent_access
 

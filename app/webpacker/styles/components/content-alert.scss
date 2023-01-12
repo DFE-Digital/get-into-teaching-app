@@ -21,7 +21,8 @@
     margin-right: $indent-amount;
   }
 
-  h4, h2 {
+  h4,
+  h2 {
     @extend .heading--margin-0;
   }
 

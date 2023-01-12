@@ -1,10 +1,12 @@
 <section class="why-teach" aria-label="Why teach?">
   <div class="why-teach__container">
     <div class="why-teach__content">
-      <h2 class="heading-l">
-        <div class="caption-l caption--bold caption--purple">Why teach?</div>
-        Inspire the next generation
-      </h2>
+      <%= render Content::HeadingComponent.new(
+        heading: "Inspire the next generation",
+        tag: :h2,
+        caption: "Why teach?",
+        caption_size: :l
+      ) %>
 
       <p>
         The impact of your work as a teacher will be felt beyond the classroom

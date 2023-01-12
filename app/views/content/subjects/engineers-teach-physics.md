@@ -4,7 +4,6 @@ description: |-
     Find out more about a new initial teacher training programme for engineers and material scientists who want
     to teach physics.
 layout: "layouts/minimal"
-main_class: "campaign"
 colour: "yellow"
 image: "media/images/content/hero-images/0013.jpg"
 keywords:

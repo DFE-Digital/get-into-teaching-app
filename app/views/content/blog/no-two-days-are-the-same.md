@@ -38,4 +38,4 @@ Learning and reflecting on your own practice becomes paramount to your developme
 
 Students are amazing to work with, they're funny and inquisitive – they challenge you to spark their interest in your subject. Being part of a learning community is a wholly worthwhile experience that cannot be measured in monetary terms or student achievement alone.
 
-We’re here to answer your questions and provide advice about teaching, whether you’re just thinking about it or you’re ready to apply. [Find out how you can get help and support with getting into teaching](/help-and-support).
+Find out how you can [get school experience](/train-to-be-a-teacher/get-school-experience) to discover if teaching is the right career for you.

@@ -1,0 +1,31 @@
+<div class="row">
+  <section class="col col-full-content">
+    <h2 class="heading--box-blue">A job like no other</h2>
+
+    <p class="col-640 inset">
+      Looking for challenge and variety? As a teacher you'll work with lots of young people with a range of abilities,
+      thinking on your feet to find creative solutions to problems.
+    </p>
+  </section>
+
+  <section class="col col-845 inset">
+    <%= render Content::PhotoQuoteListComponent.new(
+      [
+        {
+          image: "media/images/content/blog/thumbnails/stories-zainab.jpg",
+          heading: "Work in a dynamic environment",
+          text: "You encounter problems, as you would in any career, but you have the support of colleagues to try new approaches and techniques until you find the right solution.",
+          accreditation: link_to("Read how Zainab works alongside colleagues to support her pupils", page_path("blog/school-experience-helped-me-decide-to-switch")) + ".",
+        },
+        {
+          image: "media/images/content/blog/thumbnails/stories-gavin.jpg",
+          heading: "Challenge your own thinking",
+          text: "The classroom changes by the hour and working with different age ranges and abilities means you have to keep a fresh outlook.",
+          accreditation: link_to("Read how Gavin adapts his teaching to create a positive learning environment", page_path("blog/no-two-days-are-the-same")) + ".",
+        }
+      ],
+      colors: %w[purple],
+      numbered: false
+    ) %>
+  </section>
+</div>

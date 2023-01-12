@@ -14,10 +14,6 @@ navigation_description: Find out how to train to teach in England as an internat
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
-inset_text:
-  new-international-funding:
-    text: |-
-      Train to teach physics or languages as a non-UK citizen and you could be <a href="/non-uk-teachers/train-to-teach-in-england-as-an-international-student#find-out-about-fees-and-financial-support">eligible for a bursary or scholarship worth up to £29,000</a>.
 keywords:
   - International
   - Overseas
@@ -62,8 +58,6 @@ keywords:
   - Statement
   - Comparability
 ---
-
-$new-international-funding$
 
 Citizens of every country in the world can apply to train to teach in England.
 
@@ -111,7 +105,7 @@ We can help you make an application for teacher training in England. Sign up for
 For help applying, you can:
 
 * sign up to [get a teacher training adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a dedicated adviser can call you back in your time zone
-* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time)  – calls will be charged at your standard rate
+* call +44 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England - calls will be charged at your standard rate
 * use the live chat service at the bottom of this page
 
 

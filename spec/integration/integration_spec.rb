@@ -44,10 +44,6 @@ RSpec.feature "Integration tests", :integration, type: :feature, js: true do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text("Accept privacy policy")
-    click_label "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text("you're signed up")

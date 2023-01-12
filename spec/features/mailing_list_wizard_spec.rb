@@ -2,8 +2,10 @@ require "rails_helper"
 
 RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
+  include_context "with stubbed latest privacy policy api"
+  include_context "with stubbed callback quotas api"
 
-  let(:mailing_list_page_title) { "Get personalised guidance to your inbox, name step | Get Into Teaching" }
+  let(:mailing_list_page_title) { "Get tailored guidance in your inbox | Get Into Teaching GOV.UK" }
 
   scenario "Full journey as a new candidate" do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
@@ -33,20 +35,12 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    click_on "Complete sign up"
-
-    expect(page).to have_text "Accept privacy policy"
-    expect(page).to have_text "There is a problem"
-    expect(page).to have_text "Accept the privacy policy to continue"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_title("You've signed up | Get Into Teaching")
     expect(page).to have_text "You've signed up"
     expect(page).to have_text("You'll receive a welcome email shortly")
+    expect(page).to have_link("Book a callback")
   end
 
   scenario "Full journey as an on-campus candidate" do
@@ -79,10 +73,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
@@ -119,10 +109,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "Test, you're signed up"
@@ -158,10 +144,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: "TE57 1NG"
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
@@ -210,10 +192,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
       "Which subject do you want to teach?",
       selected: TeachingSubject.lookup_by_uuid(response.preferred_teaching_subject_id),
     )
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "#{first_name}, you're signed up"
@@ -332,10 +310,6 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_text "If you give us your postcode"
     fill_in "Your postcode (optional)", with: ""
-    click_on "Next step"
-
-    expect(page).to have_text "Accept privacy policy"
-    check "Yes"
     click_on "Complete sign up"
 
     expect(page).to have_text "You've signed up"
@@ -407,6 +381,17 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Enter your last name"
     expect(page).to have_text "Enter your full email address"
     expect(page).to have_title(mailing_list_page_title)
+  end
+
+  context "when there are no callback slots available" do
+    let(:quotas) { [] }
+
+    scenario "Viewing the completion page" do
+      visit mailing_list_step_path(:completed)
+
+      expect(page).to have_text("You've signed up")
+      expect(page).not_to have_link("Book a callback")
+    end
   end
 
   def fill_in_name_step(

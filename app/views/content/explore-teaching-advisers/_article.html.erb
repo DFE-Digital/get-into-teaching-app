@@ -1,5 +1,5 @@
-<article>
-  <section class="statement">
+<div class="row inset">
+  <section class="col col-720 statement">
     <div>
       <span class="pink xlarge bold">Teaching is&hellip;</span>
     </div>
@@ -15,7 +15,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="col col-720">
     <h2 class="heading-s">Find your future career</h2>
 
     <p>
@@ -26,41 +26,42 @@
     </p>
 
     <p>
-      All our advisers have years of teaching experience and can help you gain an insight into the world of teaching. You can talk to your own adviser as little or as much as you'd like in the way that suits you best.
+      All our advisers have years of teaching experience and can help you gain an insight into the world of teaching. You can talk to your own adviser as little or as often as you need by phone, text or email.
     </p>
   </section>
-
-  <%= render Campaign::TextBlockWithTwoImagesComponent.new(
-    heading: "What kind of teacher could you be?",
-    colour: "pink",
-    image_1_path: "media/images/content/blog/abigail-beeley.jpg",
-    image_1_alt: "Maths teacher Abigail Beeley in front of a maths display board.",
-    image_2_path: "media/images/content/blog/giorgio-rubbo.jpg",
-    image_2_alt: "Biology teacher Giorgio Rubbo wearing a suit and tie.",
-  ) do %>
-
-    <p>
-      Every teacher brings something different to the classroom.
-    </p>
-
-    <p>
-    What could you bring?
-    </p>
-  <% end %>
-
-  <section>
-    <figure>
-      <blockquote class="pink-quotes">
-        <p class="bold">
-          I promise the level of satisfaction is like nothing you’ll get in another job. I wake up every morning and want to get into school.
-        </p>
-      </blockquote>
-
-      <figcaption>Phil, teacher</figcaption>
-    </figure>
   </section>
 
-  <section class="columns">
+  <section class="col col-content-max">
+    <%= render TextBlockWithTwoImagesComponent.new(
+      heading: "What kind of teacher could you be?",
+      colour: "pink",
+      image_1_path: "media/images/content/blog/abigail-beeley.jpg",
+      image_1_alt: "Maths teacher Abigail Beeley in front of a maths display board.",
+      image_2_path: "media/images/content/blog/giorgio-rubbo.jpg",
+      image_2_alt: "Biology teacher Giorgio Rubbo wearing a suit and tie.",
+    ) do %>
+
+      <p>
+        Every teacher brings something different to the classroom.
+      </p>
+
+      <p>
+      What could you bring?
+      </p>
+    <% end %>
+  </section>
+
+  <section class="col col-640">
+    <%= render Content::QuoteComponent.new(
+      text: "I promise the level of satisfaction is like nothing you’ll get in another job.
+        I wake up every morning and want to get into school.",
+      name: "Phil, teacher",
+      background: "white",
+      large: true
+    ) %>
+  </section>
+
+  <section class="col col-720 col-horizontal">
     <div>
       <h2 class="heading-s">What explore teaching advisers can do</h2>
 
@@ -80,7 +81,7 @@
     </div>
   </section>
 
-  <section>
+  <section class="col col-720">
     <h2 class="heading-s">How to get an explore teaching adviser</h2>
 
     <p>
@@ -105,36 +106,40 @@
     </p>
   </section>
 
-  <%= render Campaign::TextBlockWithOneImageComponent.new(
-    heading: "Is teaching right for me?",
-    colour: "yellow",
-    image_path: "media/images/content/hero-images/0011.jpg",
-    image_alt: "Child pointing something out to a teacher in the classroom.",
-  ) %>
+  <section class="col col-content-max">
+    <%= render TextBlockWithOneImageComponent.new(
+      heading: "Is teaching right for me?",
+      colour: "yellow",
+      image_path: "media/images/content/hero-images/0011.jpg",
+      image_alt: "Child pointing something out to a teacher in the classroom.",
+    ) %>
+  </section>
 
-  <section>
+  <section class="col col-720">
     <h2 class="heading-s">Use your subject passion</h2>
 
     <p>
     Bring your subject to life for your pupils. Help them be as inspired by it as you are.
     </p>
+
     <p>
       <a href="/blog/the-head-of-science-inspiring-students-in-blackpool">Find out how Jessica brings real life science stories into the classroom</a>.
     </p>
   </section>
 
-    <section>
+  <section class="col col-720">
     <h2 class="heading-s">Join a community</h2>
 
     <p>
     Teaching is about more than just what happens in the classroom. You become part of a tight-knit team with your fellow teachers and support staff.
     </p>
-        <p>
+
+    <p>
       <a href="/blog/the-fellowship-of-teachers">Explore the friendship Mike and Phil have made outside of the classroom</a>.
     </p>
   </section>
 
-  <section>
+  <section class="col col-720">
     <h2 class="heading-s">Make a difference</h2>
 
     <p>
@@ -145,4 +150,4 @@
       <a href="/blog/going-back-and-giving-back">Read about Sandra's experience going back and giving back</a>.
     </p>
   </section>
-</article>
+</div>

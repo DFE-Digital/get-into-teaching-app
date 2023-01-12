@@ -15,7 +15,7 @@
 
   span {
     box-decoration-break: clone;
-    padding: 0.18em 0;
+    padding: .18em 0;
     background: $backgroundColor;
     box-shadow: 1rem 0 0 $backgroundColor, -1rem 0 0 $backgroundColor;
   }
@@ -46,10 +46,6 @@
 
 .caption--bold {
   font-weight: bold;
-}
-
-.subheading {
-  font-size: 0.6em;
 }
 
 .heading-xxl {
@@ -96,6 +92,10 @@
   transform: translateY(-50%);
 }
 
+.heading--with-caption {
+  margin-top: 0;
+}
+
 .heading--box-transparent {
   @include box-heading(transparent, $black);
 }
@@ -137,7 +137,7 @@
 }
 
 .heading--box-padding-l {
-  padding: 0.5em 0.7em;
+  padding: .5em .7em;
 }
 
 .heading--highlight-yellow {
@@ -152,8 +152,8 @@
   @include highlight-text($purple, $black);
 }
 
-.heading--highlight-purple {
-  @include highlight-text($purple, $black);
+.heading--highlight-white-on-purple {
+  @include highlight-text($purple, $white);
 }
 
 .heading--highlight-blue {
@@ -173,14 +173,9 @@ h2 {
 }
 
 h3 {
-  @extend .heading-l;
-}
-
-h3 {
   @extend .heading-m;
 }
 
 h4 {
   @extend .heading-s;
 }
-

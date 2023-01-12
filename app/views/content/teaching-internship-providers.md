@@ -38,13 +38,13 @@ keywords:
       <span class="icon icon-warning" aria-hidden="true"></span>
     </div>
     <div>
-      <h2 class="heading-m">Applications now closed</h2>
+      <h2 class="heading-m">Apply from January 2023</h2>
       
-      <p>Applications for the Teaching Internships Programme in 2022 are now closed. Applications will reopen by early 2023.</p>
+      <p>You'll be able to apply for a teaching internship from January 2023. More information on how to apply will be available on this page once applications open.</p>
 
-      <p>If you’re interested in spending some time in a classroom, you can still get school experience.</p>
+      <p>Sign up for our emails and we'll send you helpful advice and insights about getting into teaching. If you're eligible for a teaching internship, we'll also let you know when applications open.</p>
 
-      <p><a class="button button--white" href="/train-to-be-a-teacher/get-school-experience">Get school <span>experience</span></a></p>
+      <p><a class="button button--white" href="/mailinglist/signup">Sign up for email guidance</a></p>
     </div>
   </div>
 </section>

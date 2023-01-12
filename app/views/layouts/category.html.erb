@@ -7,7 +7,7 @@
     <%= main_tag(class: "category") do %>
       <%= render Content::HeroComponent.new(@front_matter) %>
 
-      <section class="container category__cards main-section">
+      <section class="container category__cards inset main-section">
         <%= tag.nav(aria: { label: "#{@page.title} navigation" }, class: "category__nav-cards") do %>
           <ul class="inset">
             <%= render(Categories::CardComponent.with_collection(ungrouped_categories(@page.path))) %>
@@ -18,7 +18,7 @@
       <% grouped_categories(@page.path).each do |title, pages| %>
         <section class="container category__cards main-section">
           <%= tag.h2(title, class: "heading--box-blue") %>
-          <%= tag.nav(aria: { label: "#{title} category" }, class: "category__nav-cards") do %>
+          <%= tag.nav(aria: { label: "#{title} category" }, class: "category__nav-cards inset") do %>
             <ul class="inset">
               <%= render(Categories::CardComponent.with_collection(pages, heading_tag: "h3")) %>
             </ul>

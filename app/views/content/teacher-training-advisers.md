@@ -3,21 +3,8 @@ title: Teacher training advisers
 description: |-
   What is a Teacher Training Adviser? They can help you with anything related to getting into teaching, such as writing your application, funding and interview preparation.
 date: "2021-06-18"
-image: "media/images/content/hero-images/0003.jpg"
-article_classes: ['longform']
+image: "media/images/content/homepage/teacher-training-adviser.jpg"
 backlink: "../"
-accordion:
-  numbered: false
-  steps:
-
-    Charlotte, biology trainee:
-      partial: content/teacher-training-advisers/charlotte
-    Matt, maths trainee:
-      partial: content/teacher-training-advisers/matt
-    Sue, geography trainee:
-      partial: content/teacher-training-advisers/sue
-    Stuart, computing trainee:
-      partial: content/teacher-training-advisers/stuart  
 keywords: 
     - adviser
     - advisor
@@ -29,81 +16,112 @@ keywords:
     - preparation
 quote:
     q-tta-one:
-      text: "It's tailor-made to individual needs. I received an abundance of help."
-      inline: right
-    q-tta-two:
-      text: "[My adviser] was extremely helpful as well as thoughtful and understanding."
+      text: "They would answer any question I had, small or big, in a relaxed environment."
+      background: "grey"
+quote_list:
+  ql-1:
+    quotes: 
+      - heading: "Habiba, teacher with a hearing impairment"
+        text: "The application process went smoothly thanks to the help of my teacher training adviser, Ellie."
+        accreditation: <a href="/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment">Read how Habiba successfully applied to train to teach</a>.
+  ql-2:
+    quotes:
+      - heading: "Stephen, returning teacher"
+        text: "[My teacher training adviser] took considerable time to understand my situation."
+        accreditation: <a href="/blog/stephens-return-to-teaching-story">Read how Stephen got back into the classroom with the help of an adviser</a>.
 calls_to_action:
   get-a-tta:
     name: simple
     arguments:
-      title: Get a teacher training adviser
-      text: "Teacher training advisers can help you with everything related to applying for teacher training."
+      title: Get an adviser
+      text: "Answer a few questions about your situation and we'll match you with an adviser."
       link_text: "Get a teacher training adviser"
       link_target: "/tta-service"
       icon: "icon-person"
-youtube_video:
-  about-teacher-training-advisers-video:
-    id: ZaGL8c4FkLA
-    title: A video about what Teacher Training Advisers do
-  about-teacher-training-advisers-experience-video:
-    id: T9Bhcaa6LJ4
-    title: A video about what teaching experience our Teacher Training Advisers have
 ---
-Teacher training advisers give you free, one-to-one help and support. 
+Teacher training advisers give you free, one-to-one support, whether you're just thinking about teaching or you're ready to apply.
 
-They're all former teachers with lots of experience, so they know the process inside out.
-
-## What an adviser can do for you
+They have years of teaching experience and can answer all your questions about life in the classroom, as well as how you can get there.
 
 $q-tta-one$
 
-An adviser can give you as much or as little help as you need. 
+## How does it work?
 
-Other trainee teachers say they are particularly helpful with: 
+You’ll be matched with your own dedicated adviser. You’ll have the same adviser throughout your journey into teaching.
 
-* arranging school experience
-* seeking out financial support
-* writing a personal statement
+How often you talk to them is up to you – this could be every week for more than a year, or just a few times for some one-to-one support.
+
+You can chat by phone, or by:
+
+* email
+* text
+* WhatsApp
+
+## How can your adviser help you?
+
+### If teaching is just an idea
+
+Your adviser can talk to you about what teaching is really like and help you understand if it’s right for you.
+
+They can:
+
+* talk through your questions and any doubts ​
+* help you find school experience
+* explain the steps to becoming a teacher
+
+### If you're ready to apply
+
+Your adviser can talk you through the application process step by step.
+
+They can support you with:
+
+* writing your personal statement
+* understanding your different training options
 * preparing for interviews
 
-## Meet Emma, a teacher training adviser
+$ql-1$
 
-$about-teacher-training-advisers-video$
+### If you've applied and been unsuccessful
 
-## Helping you decide if teaching is right for you
+Your adviser can help you improve your application if you were not successful the first time around.
 
-$q-tta-two$
-
-Teaching is an exciting career, but if you have caring responsibilities, people dependent on your earnings, or you are living with a disability you might need some help to take your next step. 
-
-Your adviser can help you navigate your path into teaching, and make sure you get any additional help that is available. Your adviser will be just a call, message or email away.
-
-## Meet Simon, a teacher training adviser
-
-$about-teacher-training-advisers-experience-video$
-
-## Already applied and been unsuccessful?
-
-Our advisers can help make your next application stronger. They’ll help you:
+They can help you:
 
 * act on any feedback
-* understand the qualifications you need to become a teacher
-* improve your personal statement
+* make your application stronger
 
-## Are you ready for an adviser? 
+### If you're thinking about returning to teaching
+
+Your adviser can help you understand how to get back into teaching if you already have qualified teacher status (QTS).
+
+They can help you:
+
+* brush up on your subject knowledge
+* find a role
+
+$ql-2$
+
+## Can I get an adviser?
 
 To sign up, you’ll need (one of the following):
 
 * a bachelor’s degree with honours, grade 2:2 or higher
-* to be a final year student studying for a bachelor’s degree with honours, with a predicted grade of 2:2 or higher
+* to be a final year student studying for a bachelor’s degree with honours
 * an overseas qualification equivalent to a bachelor’s degree with honours, grade 2:2 or higher
-
-If you're applying from overseas, you can check your qualifications by calling us on <a href="tel:08003892500">0800 389 2500</a>.
 
 If you’re a returning teacher who already has qualified teacher status (QTS), you'll need to be returning to teach at a secondary school in England to get an adviser.
 
+If you completed your degree overseas, you can check your qualifications by calling us on <a href="tel:08003892500">0800 389 2500</a>.
+
 $get-a-tta$
+
+### If you're a veteran
+
+If you're a veteran, you do not need to have or be studying for a degree to get support from an adviser.
+
+Call us on <a href="tel:08003892500">0800 389 2500</a> to get an adviser.
+
+Our telephone service is available Monday to Friday between 8:30am and 5:30pm, except on [bank holidays](https://www.gov.uk/bank-holidays).
 
 ## Not a final year student or graduate?
 
@@ -113,4 +131,3 @@ Our explore teaching advisers can help you find out what teaching is really like
 
 <a href="/explore-teaching-advisers">Find out more about explore teaching advisers</a>.
 
-## Find out how a teacher training adviser helped:

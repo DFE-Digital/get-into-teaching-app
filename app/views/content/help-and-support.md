@@ -1,5 +1,5 @@
 ---
-title: "Help and support on getting into teaching"
+title: "Help and support getting into teaching"
 heading: "Get help and support"
 image: "media/images/content/hero-images/0025.jpg"
 title_paragraph: We're here to answer your questions and provide advice about getting into teaching, whether you're just thinking about teaching or you're ready to apply.
@@ -12,7 +12,7 @@ talk_to_us: false
 content:
   - content/help-and-support/header
   - content/help-and-support/talk-to-us
-  - content/help-and-support/events
-  - content/help-and-support/mailing_list
   - content/help-and-support/categories
+  - content/help-and-support/mailing_list
+  - content/help-and-support/events
 ---

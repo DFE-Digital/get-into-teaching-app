@@ -1,5 +1,6 @@
 .talk-to-us {
   background-color: $grey;
+  margin-top: 3em;
 
   .content {
     width: 100%;
@@ -78,7 +79,7 @@
 }
 
 .talk-to-us-content {
-  $wide-spacing: 2 * $indent-amount;
+  $wide-spacing: 2.5 * $indent-amount;
 
   position: relative;
   background-color: $grey;
@@ -93,8 +94,9 @@
     }
   }
 
-  &:before, &:after {
-    content: '';
+  &:before,
+  &:after {
+    content: "";
     position: absolute;
     background-color: $purple;
     right: -$indent-amount / 2;
@@ -112,7 +114,8 @@
   }
 
   @include mq($from: tablet) {
-    &:before, &:after {
+    &:before,
+    &:after {
       right: -$indent-amount;
       bottom: -$indent-amount;
     }
@@ -126,7 +129,6 @@
       height: $indent-amount;
       width: 175px;
     }
-
   }
 
   h2 {

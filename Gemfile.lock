@@ -24,9 +24,9 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-wizard.git
-  revision: 3d35745683526ee015f1a1de06cade6ab76119bb
+  revision: 1cfc90fe09ba661c761d29a5a653a014e23ea386
   specs:
-    git_wizard (2.0.0)
+    git_wizard (2.1.0)
       activemodel (>= 6.0.3.4)
       activesupport (>= 6.0.3.4)
 
@@ -170,13 +170,12 @@ GEM
     declarative (0.0.20)
     delegate (0.2.0)
     diff-lcs (1.5.0)
-    digest (3.1.0)
     docile (1.4.0)
     dotenv (2.8.1)
     dotenv-rails (2.8.1)
       dotenv (= 2.8.1)
       railties (>= 3.2)
-    erb_lint (0.2.0)
+    erb_lint (0.3.1)
       activesupport
       better_html (>= 2.0.1)
       parser (>= 2.7.1.4)
@@ -306,7 +305,7 @@ GEM
     loaf (0.10.0)
       railties (>= 3.2)
     logger (1.5.1)
-    loofah (2.19.0)
+    loofah (2.19.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -332,10 +331,8 @@ GEM
     msgpack (1.5.4)
     multi_json (1.15.0)
     multipart-post (2.2.3)
-    net-imap (0.2.3)
-      digest
+    net-imap (0.3.1)
       net-protocol
-      strscan
     net-pop (0.1.2)
       net-protocol
     net-protocol (0.1.3)
@@ -343,15 +340,15 @@ GEM
     net-smtp (0.3.2)
       net-protocol
     nio4r (2.5.8)
-    nokogiri (1.13.9)
+    nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
-    nokogiri (1.13.9-x86_64-linux)
+    nokogiri (1.13.10-x86_64-linux)
       racc (~> 1.4)
     observer (0.1.1)
     os (1.1.1)
     parallel (1.22.1)
-    parser (3.1.2.1)
+    parser (3.1.3.0)
       ast (~> 2.4.1)
     prometheus-client (4.0.0)
     pry (0.13.1)
@@ -365,7 +362,7 @@ GEM
     public_suffix (5.0.0)
     puma (5.6.2)
       nio4r (~> 2.0)
-    racc (1.6.0)
+    racc (1.6.1)
     rack (2.2.4)
     rack-attack (6.6.1)
       rack (>= 1.0, < 3)
@@ -392,8 +389,8 @@ GEM
     rails-dom-testing (2.0.3)
       activesupport (>= 4.2.0)
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.4.3)
-      loofah (~> 2.3)
+    rails-html-sanitizer (1.4.4)
+      loofah (~> 2.19, >= 2.19.1)
     rails_semantic_logger (4.10.0)
       rack
       railties (>= 5.1)
@@ -414,7 +411,7 @@ GEM
     redis-session-store (0.11.4)
       actionpack (>= 3, < 8)
       redis (>= 3, < 5)
-    regexp_parser (2.5.0)
+    regexp_parser (2.6.1)
     representable (3.1.1)
       declarative (< 0.1.0)
       trailblazer-option (>= 0.1.1, < 0.2.0)
@@ -508,7 +505,6 @@ GEM
       listen (>= 2.7, < 4.0)
       spring (>= 4)
     stoplight (3.0.0)
-    strscan (3.0.1)
     text (1.3.1)
     thor (1.2.1)
     timeout (0.3.0)
@@ -517,9 +513,9 @@ GEM
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
     uber (0.1.0)
-    unicode-display_width (2.2.0)
+    unicode-display_width (2.3.0)
     victor (0.3.4)
-    view_component (2.71.0)
+    view_component (2.78.0)
       activesupport (>= 5.0.0, < 8.0)
       concurrent-ruby (~> 1.0)
       method_source (~> 1.0)
@@ -618,7 +614,7 @@ DEPENDENCIES
   text
   tzinfo-data
   victor
-  view_component (~> 2.71.0)
+  view_component (~> 2.78.0)
   web-console (>= 4.2.0)
   webmock (>= 3.14.0)
   webpacker (>= 5.4.3)

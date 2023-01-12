@@ -11,7 +11,7 @@ describe Content::PhotoQuoteListComponent, type: :component do
       image: "media/images/content/hero-images/0010.jpg",
       heading: "Heading 1",
       text: "Text 1",
-      accreditation: ["Accreditation 1A", "Accreditation 1B"],
+      accreditation: "Accreditation 1",
     }
   end
   let(:quote2) do
@@ -22,25 +22,31 @@ describe Content::PhotoQuoteListComponent, type: :component do
       accreditation: "Accreditation 2",
     }
   end
+  let(:numbered) { true }
+  let(:colors) { %w[pink green] }
   let(:quotes) { [quote1, quote2] }
-  let(:component) { described_class.new(quotes) }
+  let(:component) { described_class.new(quotes, colors: colors, numbered: numbered) }
 
-  it { is_expected.to have_css("ol.photo-quote-list") }
+  it { is_expected.to have_css("ol.photo-quote-list.photo-quote-list--numbered") }
   it { is_expected.to have_css("li.item.pink") }
   it { is_expected.to have_css("li.item.green") }
 
   it "renders quotes" do
-    within(render.all(".item")[0]) do
-      it { is_expected.to have_css(".wrapper") }
-      it { is_expected.to have_css("img", src: quote1[:image]) }
-      it { is_expected.to have_css("h3", text: quote1[:heading]) }
-      it { is_expected.to have_css("p", text: quote1[:text]) }
-      it { is_expected.to have_css("strong", text: quote1[:accreditation].join(tag.br)) }
+    quotes.each.with_index do |quote, idx|
+      within(render.all(".item")[idx]) do
+        it { is_expected.to have_css(".wrapper") }
+        it { is_expected.to have_css("img", src: quote[:image]) }
+        it { is_expected.to have_css("h3", text: quote[:heading]) }
+        it { is_expected.to have_css("blockquote", text: quote[:text]) }
+        it { is_expected.to have_css("strong", text: quote[:accreditation]) }
+      end
     end
   end
 
-  context "when the accreditation is a string" do
-    it { is_expected.to have_css("strong", text: quote2[:accreditation]) }
+  context "when numbered is false" do
+    let(:numbered) { false }
+
+    it { is_expected.not_to have_css("ol.photo-quote-list.photo-quote-list--numbered") }
   end
 
   describe "validation" do

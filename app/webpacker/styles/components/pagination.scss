@@ -9,15 +9,19 @@
     text-decoration: none;
   }
 
-  .prev, .first {
+  .prev,
+  .first {
     padding-right: 8px;
   }
 
-  .next, .last {
+  .next,
+  .last {
     padding-left: 8px;
   }
 
-  .page a, .current, .gap {
+  .page a,
+  .current,
+  .gap {
     padding: 0 8px;
   }
 

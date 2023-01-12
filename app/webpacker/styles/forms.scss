@@ -21,7 +21,8 @@ input {
   padding-right: .4em;
 }
 
-button, input[type=submit] {
+button,
+input[type="submit"] {
   cursor: pointer;
 }
 
@@ -42,9 +43,10 @@ form {
     }
   }
 
-  legend h3.govuk-fieldset__heading, .govuk-label {
+  legend h3.govuk-fieldset__heading,
+  .govuk-label {
     font-weight: bold;
-    @include font-size("small")
+    @include font-size("small");
   }
 
   .govuk-form-group {

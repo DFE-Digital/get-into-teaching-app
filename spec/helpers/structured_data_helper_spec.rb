@@ -187,7 +187,7 @@ describe StructuredDataHelper, type: "helper" do
       expect(data).to include({
         "@type": "WebSite",
         url: root_url,
-        name: "Get Into Teaching GOV.UK",
+        name: "Get Into Teaching",
       })
     end
 

@@ -49,8 +49,9 @@
 
   // general styles (grid fallback)
   &__heading {
-    @include font-size('large');
+    @include font-size("large");
     color: $white;
+    background-color: $purple;
 
     line-height: 1.25em;
     max-width: 80%;
@@ -58,10 +59,10 @@
 
   &__text {
     color: $white;
+    background-color: $purple;
   }
 
   &__cta {
-
     > a {
       @include chevron;
       white-space: inherit;

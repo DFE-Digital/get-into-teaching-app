@@ -54,19 +54,19 @@ $space-between-sections: 3.7em;
         margin: 1em 0;
 
         > a {
-          @include font-size('xsmall');
+          @include font-size("xsmall");
           @extend .link--black;
         }
       }
     }
 
     p {
-      @include font-size('xsmall');
+      @include font-size("xsmall");
     }
   }
 
   &__icon {
     // placeholders for now
-    @include font-size('xlarge');
+    @include font-size("xlarge");
   }
 }

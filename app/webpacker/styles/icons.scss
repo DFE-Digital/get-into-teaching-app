@@ -6,13 +6,6 @@
   vertical-align: middle;
 }
 
-.icon-close {
-  @include icon;
-  background-image: url("../images/icon-hamburger-close.svg");
-  width: 23px;
-  height: 23px;
-}
-
 .icon-hamburger {
   @include icon;
   background-image: url("../images/icon-hamburger.svg");

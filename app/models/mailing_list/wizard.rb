@@ -19,7 +19,6 @@ module MailingList
       Steps::TeacherTraining,
       Steps::Subject,
       Steps::Postcode,
-      Steps::PrivacyPolicy,
     ].freeze
 
     def matchback_attributes

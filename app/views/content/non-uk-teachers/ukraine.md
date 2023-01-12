@@ -7,7 +7,7 @@ related_content:
     Teach in England if you trained overseas : "/non-uk-teachers/teach-in-england-if-you-trained-overseas"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
 promo_content:
-    - content/train-to-be-a-teacher/promos/adviser-promo-apply
+    - content/non-uk-teachers/promos/adviser-promo-ukraine
 navigation: 20.15
 navigation_title: Ukrainian teachers and trainees coming to the UK
 navigation_description: Find information and advice for Ukrainian citizens seeking teaching jobs and training places in England.
@@ -164,9 +164,9 @@ After that, QTS is a legal requirement to teach in many English schools, and con
 ### Assessment only QTS
 You can work in an English school and, alongside your job, apply for assessment only QTS. This means you apply to an [English teacher training provider](/assessment-only-providers) who will assess if you meet the standards for English QTS. DfE will make funding available for candidates who start assessment only courses at the start of the new school year in September 2022. Check assessment only training providers for more information about eligibility and funding.
 
-### Apply for QTS in England (from spring 2023)
+### Apply for QTS in England
 
-From spring 2023, qualified teachers from Ukraine will be able to apply to the Teaching Regulation Agency for QTS (if they meet the criteria) without paying a fee to a training provider. [Learn more about the way QTS will be awarded to teachers from overseas](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers).
+From 1 February 2023, qualified teachers from Ukraine who [meet the criteria for QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) will be able to [apply to the Teaching Regulation Agency for QTS](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without paying a fee to a training provider. 
 
 ### Salaries and benefits
 
@@ -182,11 +182,11 @@ You have the right to apply to train to teach in England if you are resident in 
 * [the Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme)
 * [the Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme)
 
-### Deadlines for applications
+### Deadline for applications
 
-Applications to train to teach in 2022/23 have now closed. Applications for 2023/24 open on 11 October 2022.
+Applications for teacher training courses starting in autumn 2023 will be open until September 2023.
 
-If you missed the deadline to apply this year, you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain valuable experience for your teacher training course. 
+If you intend to [apply for teacher training](https://www.gov.uk/apply-for-teacher-training), you could consider finding work as a [teaching assistant](https://nationalcareers.service.gov.uk/job-profiles/teaching-assistant) to gain valuable experience until your teacher training course starts. 
 
 ### Fees and financial support
 
@@ -221,7 +221,7 @@ You will also need to:
 
 To get advice about training to teach, you can:
 
-* call +44 (0) 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) – calls are free within the UK but will otherwise be charged at your standard rate
+* call +44 (0) 800 389 2500, Monday to Friday between 8:30am and 5:30pm (UK local time) except on [bank holidays](https://www.gov.uk/bank-holidays) in England – calls are free within the UK but will otherwise be charged at your standard rate
 * use the live chat service at the bottom of this page
 * [sign up to get a dedicated adviser](https://adviser-getintoteaching.education.gov.uk/) – you’ll be asked for your phone number, email and location so a teacher training adviser can call you back in your time zone
 
@@ -260,7 +260,7 @@ Find out what financial support is available to [fund your training](/funding-an
 
 DfE has made some funding available for assessment-only QTS programmes for Ukrainians. Contact teach.inengland@education.gov.uk for more information. 
 
-From spring 2023, Ukrainians will be able to [apply to the Teaching Regulation Agency for QTS](#apply-for-qts-in-england-from-spring-2023).
+From spring 2023, Ukrainians will be able to [apply to the Teaching Regulation Agency for QTS](#apply-for-qts-in-england).
 
 ### Visas and immigration
 

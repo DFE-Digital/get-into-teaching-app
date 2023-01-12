@@ -1,7 +1,9 @@
 require "rails_helper"
 
 describe Callbacks::Wizard do
-  subject { described_class.new wizardstore, "privacy_policy" }
+  include_context "with stubbed latest privacy policy api"
+
+  subject { described_class.new wizardstore, "talking_points" }
 
   let(:uuid) { SecureRandom.uuid }
   let(:store) do
@@ -26,7 +28,6 @@ describe Callbacks::Wizard do
         ::GITWizard::Steps::Authenticate,
         Callbacks::Steps::Callback,
         Callbacks::Steps::TalkingPoints,
-        Callbacks::Steps::PrivacyPolicy,
       ]
     end
   end
@@ -40,7 +41,11 @@ describe Callbacks::Wizard do
   describe "#complete!" do
     let(:request) do
       GetIntoTeachingApiClient::GetIntoTeachingCallback.new(
-        email: "email@address.com", first_name: "John", last_name: "Doe", talking_points: "Something",
+        email: "email@address.com",
+        first_name: "John",
+        last_name: "Doe",
+        talking_points: "Something",
+        accepted_policy_id: "123",
       )
     end
 
@@ -59,6 +64,7 @@ describe Callbacks::Wizard do
     it "logs the request model (filtering sensitive attributes)" do
       filtered_json = {
         "candidateId" => nil,
+        "acceptedPolicyId" => "123",
         "email" => "[FILTERED]",
         "firstName" => "[FILTERED]",
         "lastName" => "[FILTERED]",

@@ -1,17 +1,4 @@
-<%= tag.h1("Accept privacy policy") %>
-
-<%
-  legend_text = t("helpers.legend.events_steps_further_details.privacy_policy.text",
-    link: link_to(t("helpers.legend.events_steps_further_details.privacy_policy.link"),
-    privacy_policy_path(id: f.object.latest_privacy_policy.id), { target: :blank }))
-%>
-
-<%= f.govuk_check_boxes_fieldset :privacy_policy, legend: { text: safe_html_format(legend_text) } do %>
-  <%= f.hidden_field :privacy_policy, value: false %>
-  <%= f.govuk_check_box :privacy_policy, true,
-        multiple: false, link_errors: true,
-        label: { text: "Yes" } %>
-<% end %>
+<%= tag.h1("Get tailored email guidance") %>
 
 <% if f.object.can_subscribe_to_mailing_list? %>
   <div data-controller="last-step" data-last-step-complete="Complete sign up<span></span>" data-last-step-continue="Next step<span></span>">
@@ -25,6 +12,3 @@
     </div>
   </div>
 <% end %>
-
-<%= f.hidden_field :event_id, value: @event.id %>
-<%= f.hidden_field :accepted_policy_id, value: f.object.latest_privacy_policy.id %>

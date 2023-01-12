@@ -36,7 +36,7 @@ navigation_description: Discover tips on preparing your teacher training applica
 
 Give yourself the best chance of getting on the course you want.
 
-Discover tips on completing your application, including writing your teacher training personal statement, choosing your references and preparing for interviews. A [teacher training adviser](/tta-service) can help you with all of these.
+Discover tips on completing your application, including writing your teacher training personal statement, choosing your references and preparing for interviews.
 
 ## Browse courses
 
@@ -91,8 +91,6 @@ Before you start, it’s particularly important to think about your [teacher tra
 Some people do not get on the course they want because their application has
 not convinced the admissions team that they’re right for it.
 
-[Talk to an adviser for help preparing your application](/tta-service).
-
 ## Writing your teacher training personal statement
 
 Your teacher training personal statement explains why you want to be a teacher. It’s your chance to show your motivation, commitment and teaching potential. It’s a crucial part of your application - so it’s worth taking your time on it.
@@ -134,8 +132,6 @@ You could talk about:
 
 [If you're concerned about your subject knowledge](/train-to-be-a-teacher/subject-knowledge-enhancement), do not worry - you may be able to do a 'subject knowledge enhancement' course as part of your training.
 
-You can [get support preparing a personal statement from an adviser](/tta-service).
-
 ## Choose your references
 
 You need to provide the details of 2 people who can give you a reference when you apply. They will not be contacted until you accept a place on a course.
@@ -157,14 +153,9 @@ You should not ask a family member, partner or friend for a reference.
 
 You can change your reference details when you accept a place on a course. You might need to alter their contact details if they've changed, or you may wish to change who you ask for a reference altogether.
 
-If you’re struggling to choose your references, [get free one-to-one support from a
-teacher training adviser](/tta-service).
-
 ## If you’re invited to interview
 
 Interviews usually last a day and may include time spent teaching pupils.
-
-You can [get support preparing for an interview from an adviser](/tta-service).
 
 Interviews vary from provider to provider – you’ll be given all the information
 you need when you’re invited to attend.
@@ -189,5 +180,3 @@ You may need to get an additional qualification, improve your interview
 technique or improve the quality of your application.
 
 You can then apply again, to up to 3 courses at a time. You can do this as many times as you want to get a place. Many people succeed second or third time round.
-
-$get-a-tta$

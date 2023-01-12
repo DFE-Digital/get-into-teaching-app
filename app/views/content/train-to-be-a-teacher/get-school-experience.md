@@ -5,6 +5,7 @@ subcategory: Your teacher training application
 description: |-
   Get school experience to explore what life is like in the classroom before you start your initial teacher training (ITT). Discover if teaching is for you.
 related_content:
+    Is teaching right for me? : "/is-teaching-right-for-me"
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
     What is a Get Into Teaching event? : "/events/about-get-into-teaching-events"
     School experience helped me change careers : "/blog/school-experience-helped-me-decide-to-switch"

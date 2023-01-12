@@ -1,0 +1,30 @@
+<div class="row">
+  <section class="col col-full-content">
+    <h2 class="heading--box-blue">Making a difference</h2>
+
+    <p class="col-640 inset">
+      As a teacher, your passion and creativity will inspire and shape future generations.
+    </p>
+  </section>
+
+  <section class="col col-845 inset">
+    <%= render Content::PhotoQuoteListComponent.new(
+      [
+        {
+          image: "media/images/content/blog/thumbnails/chris-wallis.jpg",
+          heading: "Give something back",
+          text: "I tried many things until I realised that working with young people and helping them develop skills truly inspired me.",
+          accreditation: link_to("Read how Chris changed careers to teaching", page_path("blog/product-engineer-turned-science-teacher")) + ".",
+        },
+        {
+          image: "media/images/content/blog/thumbnails/jessica-walmsley.jpg",
+          heading: "Share your subject passion",
+          text: "I love bringing real life science stories into the classroom so students can build knowledge of the world around them.",
+          accreditation: link_to("See how Jessica inspires students with her love of science", page_path("blog/the-head-of-science-inspiring-students-in-blackpool")) + ".",
+        }
+      ],
+      colors: %w[purple],
+      numbered: false
+    ) %>
+  </section>
+</div>

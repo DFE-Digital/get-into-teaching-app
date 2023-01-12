@@ -29,19 +29,14 @@ provider_groups:
       email: aor@educate-group.co.uk
     - header: Essex and Thames SCITT
       link: https://etpscitt.co.uk/
-      name: Fran Attwood
-      telephone: '01268 570215'
-      email: Fran@etpscitt.co.uk
+      name: Anna Spencer
+      telephone: '01268 988580'
+      email: anna@ete.org.uk
     - header: Mid Essex Initial Teacher Training
-      link: https://midessexteachertraining.com/
+      link: https://midessexteachertraining.com/courses/assessment-only
       name: Steve Fox
       telephone: 01376 556398
       email: admin@midessexteachertraining.com
-    - header: Newlands Spring Primary School Academy Trust (Essex Primary SCITT)
-      link: https://www.essexprimaryscitt.co.uk/
-      name: Fiona Willett
-      telephone: '0738885808'
-      email: fiona@essexprimaryscitt.co.uk
     - header: Norfolk Teacher Training Centre
       link: https://www.norfolkttc.org.uk/
       name: Jacqui Waring
@@ -63,9 +58,9 @@ provider_groups:
       email: office@bedsscitt.org.uk
     - header: The Cambridge Partnership
       link: https://campartnership.org/
-      name: Claire Mott
-      telephone: '01223 491630'
-      email: cmott@campartnership.org
+      name: Jackie Atkin
+      telephone: '01234 907896'
+      email: jatkin@pilgrimpartnership.org
     - header: University of Bedfordshire
       link: https://www.beds.ac.uk/
       name: Bedford Admissions
@@ -222,9 +217,6 @@ provider_groups:
       name: Karen Craven
       telephone: 0161 973 1179 (ext 2289)
       email: karencraven@thedeantrust.co.uk
-    - header: Cumbria Teacher Training
-      link: http://www.ctt.ac.uk
-      email: scittlead@ctt.ac.uk
     - header: Educate Group Initial Teacher Training
       link: https://educate-group.co.uk/initial-teacher-training/
       name: Claire King
@@ -357,6 +349,11 @@ provider_groups:
       name: Julie Walker
       telephone: 0300 123 1967
       email: JLWalker@somerset.gov.uk
+    - header: South West Teacher Training
+      link: https://www.swtt.net/
+      name: Carrie McMillan
+      telephone: 01392 686165
+      email: swtt@westexe.devon.sch.uk
     - header: Wessex Schools Training Partnership
       name: Claire Porter
       telephone: 01202 662038
@@ -372,7 +369,7 @@ provider_groups:
       link: https://www.teachwithhaybridge.co.uk
       email: tforward@haybridge.worcs.sch.uk
     - header: Keele and North Staffordshire Teacher Education
-      link: https://knste-shaw.org.uk/assessment-route
+      link: https://knste-shaw.org.uk/assessment-only-route
       telephone: '01782 432537'
       email: ao@knste-shaw.org.uk
     - header: St. Joseph's College Stoke Secondary Partnership
@@ -431,8 +428,9 @@ provider_groups:
       telephone: 01476 512793
       email: aor@educate-group.co.uk
     - header: GORSE SCITT
-      name: Stephen McKenzie
-      telephone: '01134871777'
+      link: https://gorsescitt.org.uk/
+      name: Emma Worrincy
+      telephone: '0113 487 1777'
       email: info@gorsescitt.org.uk
     - header: Leeds Trinity University
       name: Admissions

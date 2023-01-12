@@ -11,18 +11,9 @@
   }
 
   &__cards {
-	  padding-bottom: 2em;
+    padding-bottom: 2em;
     width: 100%;
-
-    > h2 {
-      margin-top: 2em;
-    }
-
-    &:last-of-type {
-      padding-bottom: 4em;
-    }
   }
-
 
   &__nav-cards ul {
     display: grid;
@@ -58,7 +49,7 @@
 
   &__nav-card {
     background: white;
-    box-shadow: 0px 6px 5px 0px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 5px 0 rgba(0, 0, 0, .15);
     display: flex;
 
     a {
@@ -70,15 +61,17 @@
     }
 
     &:hover {
-      box-shadow: 0px 12px 9px 0px rgba(0,0,0,0.15);
+      box-shadow: 0 12px 9px 0 rgba(0, 0, 0, .15);
 
-      h2, h3 { text-decoration: underline; }
+      h2,
+      h3 { text-decoration: underline; }
     }
 
     &--content {
       flex: 1 0 80%;
 
-      h2, h3 {
+      h2,
+      h3 {
         @extend .heading-m, .heading--margin-0;
       }
     }
@@ -92,7 +85,7 @@
         content: "\276F";
         background: $blue;
         color: white;
-        padding: 0 .5em
+        padding: 0 .5em;
       }
     }
   }
@@ -112,7 +105,7 @@
 
   &__question {
     @include mq($from: tablet) {
-      flex:1;
+      flex: 1;
     }
 
     padding: 0 2em;
@@ -131,136 +124,6 @@
 
       @include mq($from: tablet) {
         margin-top: 2em;
-      }
-    }
-  }
-}
-
-.promo {
-  max-width: $content-max-width;
-  margin: 3em auto;
-  display: flex;
-  flex-direction: column;
-  gap: $indent-amount / 2;
-  margin: 0 $indent-amount;
-
-  @include mq($from: tablet) {
-    flex-direction: row;
-    margin: 0 auto;
-    gap: 2 * $indent-amount;
-  }
-
-  &--border-top {
-    padding-top: 4em;
-    border-top: 1px solid $grey-mid;
-    margin-top: 3em;
-  }
-
-  &--border-bottom {
-    padding-bottom: 4em;
-    border-bottom: 1px solid $grey-mid;
-    margin-bottom: 3em;
-  }
-
-  &:last-of-type {
-    margin-bottom: 3em;
-  }
-
-  &__left,
-  &__right {
-    flex: 0 1 50%;
-  }
-
-  &__left {
-    background-image: url("../images/content/homepage/here-to-help.jpg");
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    gap: .5em;
-    padding-block: 2em;
-    min-height: 8em;
-
-    &.tta-background {
-      background-image: url("../images/content/homepage/teacher-training-adviser.jpg");
-      background-position-y: 20%;
-    }
-
-    &.veteran-background {
-      background-image: url("../images/content/hero-images/0015.jpg");
-      background-position-y: 20%;
-    }
-
-    &.ml-background {
-      background-image: url("../images/content/hero-images/0015.jpg");
-      background-position-y: 20%;
-    }
-
-    > div {
-      padding: 0 1em .3em 1em;
-      max-width: 60%;
-    }
-
-    h2 > *,
-    .promo__content {
-      display: inline-block;
-      background-color: $yellow;
-      padding: .4rem .8rem;
-    }
-
-    p {
-      margin: 0;
-    }
-
-    .button {
-      display: inline-block;
-    }
-  }
-
-  &__right {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-
-    @include mq($from: tablet) {
-      gap: $indent-amount / 2;
-      padding-right: $indent-amount;
-    }
-
-    > * {
-      margin: 1rem 0;
-    }
-
-    p {
-      margin-top: 0;
-    }
-
-    label {
-	    font-weight: bold;
-	    display: block
-    }
-
-    label,
-    input {
-      margin-bottom: .4em;
-    }
-
-    p:last-of-type {
-      margin-bottom: 0;
-    }
-
-    form {
-      width: 100%;
-      margin: 0;
-      box-sizing: border-box;
-
-      input {
-        margin: 0 0 .5rem;
-        max-width: 10rem;
-      }
-
-      div {
-        display: flex;
       }
     }
   }

@@ -275,8 +275,6 @@ en:
               invalid: Enter a valid phone number
         events/steps/further_details:
           attributes:
-            privacy_policy:
-              blank: Accept the privacy policy to continue
             subscribe_to_mailing_list:
               inclusion: Choose yes or no
         events/steps/personalised_updates:
@@ -306,11 +304,6 @@ en:
               invalid: Enter a valid phone number
             phone_call_scheduled_at:
               blank: "You need to choose a time to call"
-        callbacks/steps/privacy_policy:
-          attributes:
-            accept_privacy_policy:
-              blank: Accept the privacy policy to continue
-              accepted: Accept the privacy policy to continue
         callbacks/steps/talking_points:
           attributes:
             talking_points:
@@ -345,11 +338,6 @@ en:
             address_postcode:
               blank: Enter your postcode
               invalid: Enter a valid postcode
-        mailing_list/steps/privacy_policy:
-          attributes:
-            accept_privacy_policy:
-              blank: Accept the privacy policy to continue
-              accepted: Accept the privacy policy to continue
 
         # one-page mailing list
         mailing_list/signup:
@@ -372,9 +360,6 @@ en:
               inclusion: Choose a subject from the list
             address_postcode:
               invalid: Enter a valid postcode
-            accept_privacy_policy:
-              blank: Accept the terms and conditions to continue
-              accepted: Accept the terms and conditions to continue
             timed_one_time_password:
               wrong_code: Enter the code you received by email
 
@@ -484,19 +469,8 @@ en:
 
     legend:
       events_steps_further_details:
-        privacy_policy:
-          text: Are you over 16 and do you agree to our %{link}?
-          link: privacy policy
         subscribe_to_mailing_list: |-
           Would you like to receive email updates to help you get into teaching? If you say no, you will still receive confirmation emails about any events you sign up to attend.
-      mailing_list_steps_privacy_policy:
-        accept_privacy_policy:
-          text: Are you over 16 and do you agree to our %{link}?
-          link: privacy policy
-      callbacks_steps_privacy_policy:
-        accept_privacy_policy:
-          text: Are you over 16 and do you agree to our %{link}?
-          link: privacy policy
 
   internal:
     status:

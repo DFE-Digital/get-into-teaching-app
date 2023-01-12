@@ -2,20 +2,21 @@ $slightly-darker-grey: darken($grey, 10%);
 $icon-size: 3rem;
 
 @mixin get-into-teaching-event-box {
-  border: 2px solid $pink;
-  padding: 2rem 1rem 1rem;
+  border: 2px solid $purple;
+  padding: 3rem 1rem 1rem;
 
-  &::after {
+  &:after {
     @include font-size(small);
     position: absolute;
     content: "Get Into Teaching event";
     right: 5%;
     top: -1em;
-    background: $pink url(../images/icon-git-white.svg) no-repeat left center;
+    background: $purple url("../images/icon-git-white.svg") no-repeat left center;
     background-size: 1.2em;
     background-position: .4em;
+    color: $white;
     font-weight: bold;
-    padding: .4em .4em .4em 2em;
+    padding: .4em 1em .4em 2.5em;
   }
 }
 
@@ -37,7 +38,7 @@ $icon-size: 3rem;
       text-decoration: underline;
 
       &::marker {
-	      padding-right: 2em;
+        padding-right: 2em;
       }
     }
 
@@ -128,10 +129,11 @@ $icon-size: 3rem;
     &--featured {
       background: $grey;
       padding: 2rem $indent-amount 2rem;
-      margin-bottom: 1rem;
     }
 
-    &--featured, &--regular, &--none {
+    &--featured,
+    &--regular,
+    &--none {
       h2 {
         margin-block: 1rem 2rem;
       }
@@ -155,12 +157,15 @@ $icon-size: 3rem;
 
     &__info {
       @include font-size(xsmall);
+      padding: 2em 1em;
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
 
       &__name {
         @include font-size(small, $adjust: .2rem);
         font-weight: bold;
       }
-
     }
 
     &__meta {
@@ -195,7 +200,7 @@ $icon-size: 3rem;
       align-items: center;
       overflow: hidden;
 
-      @supports(overflow: clip) {
+      @supports (overflow: clip) {
         overflow: clip;
       }
 
@@ -206,7 +211,7 @@ $icon-size: 3rem;
 
         @include mq($from: mobile) {
           padding: .2em 1em .2em 4.3em;
-          background: url(../images/content/icons/icon-calendar.svg) no-repeat left center;
+          background: url("../images/content/icons/icon-calendar.svg") no-repeat left center;
           background-position: .7em;
           background-size: $icon-size;
         }
@@ -247,7 +252,7 @@ $icon-size: 3rem;
         gap: .5em 2em;
       }
 
-      &--right{
+      &--right {
         display: flex;
         flex-direction: column;
         justify-items: center;
@@ -255,13 +260,6 @@ $icon-size: 3rem;
         flex: 0 1 40%;
         text-align: right;
       }
-    }
-
-    &__info {
-      padding: 2em 1em;
-      display: flex;
-      flex-direction: column;
-      gap: 2em;
     }
 
     &--get-into-teaching {
@@ -295,7 +293,7 @@ $icon-size: 3rem;
           }
 
           &__date-and-time {
-            background: url(../images/content/icons/icon-calendar.svg) no-repeat left center;
+            background: url("../images/content/icons/icon-calendar.svg") no-repeat left center;
             background-size: $icon-size;
             flex-direction: column;
             align-items: baseline;
@@ -310,19 +308,18 @@ $icon-size: 3rem;
           }
 
           &__location {
-            background: url(../images/content/icons/icon-location.svg) no-repeat left center;
+            background: url("../images/content/icons/icon-location.svg") no-repeat left center;
             background-size: $icon-size;
           }
 
           &__setting {
-
             &.online {
-              background: url(../images/content/icons/icon-online.svg) no-repeat left center;
+              background: url("../images/content/icons/icon-online.svg") no-repeat left center;
               background-size: $icon-size;
             }
 
             &.in-person {
-              background: url(../images/content/icons/icon-building.svg) no-repeat left center;
+              background: url("../images/content/icons/icon-building.svg") no-repeat left center;
               background-size: $icon-size;
             }
           }
@@ -358,21 +355,20 @@ $icon-size: 3rem;
         }
 
         @include mq($from: mobile) {
-
           &__setting {
             &.online {
-              background: url(../images/content/icons/icon-online.svg) no-repeat left center;
+              background: url("../images/content/icons/icon-online.svg") no-repeat left center;
               background-size: $icon-size;
             }
 
             &.in-person {
-              background: url(../images/icon-building.svg) no-repeat left center;
+              background: url("../images/icon-building.svg") no-repeat left center;
               background-size: 2em; // using 2em because it's an old icon and is bigger than the others
             }
           }
 
           &__location {
-            background: url(../images/content/icons/icon-location.svg) no-repeat left center;
+            background: url("../images/content/icons/icon-location.svg") no-repeat left center;
             background-size: $icon-size;
           }
         }
@@ -467,6 +463,7 @@ $icon-size: 3rem;
 
     .image {
       padding-bottom: 1rem;
+
       img {
         width: 100%;
         height: auto;
@@ -544,6 +541,7 @@ $icon-size: 3rem;
 
   &__venue-image {
     margin-top: 2em;
+
     picture {
       img {
         height: auto;
@@ -594,8 +592,8 @@ $icon-size: 3rem;
   }
 
   &--message {
-    background: $pink;
-
+    background: $purple;
+    color: $white;
     flex-basis: 60%;
 
     p {
@@ -662,6 +660,12 @@ $icon-size: 3rem;
       grid-area: 2 / 1 / 2 / 1;
       text-align: right;
       margin: $indent-amount 0;
+
+      img {
+        max-height: 12em;
+        width: 300px;
+        height: auto;
+      }
     }
 
     @include mq($from: tablet) {
@@ -679,14 +683,6 @@ $icon-size: 3rem;
       picture {
         grid-area: 1 / 2 / 3 / 4;
         text-align: left;
-      }
-    }
-
-    picture {
-      img {
-        max-height: 12em;
-        width: 300px;
-        height: auto;
       }
     }
   }

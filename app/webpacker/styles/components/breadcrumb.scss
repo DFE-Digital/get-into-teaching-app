@@ -18,10 +18,10 @@
         &:before {
           @extend .fas;
 
-          content: '';
+          content: "";
           border: none;
           transform: none;
-          font-size: 0.5em;
+          font-size: .5em;
           top: 2px;
         }
       }

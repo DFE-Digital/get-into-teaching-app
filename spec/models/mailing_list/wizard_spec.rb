@@ -1,7 +1,7 @@
 require "rails_helper"
 
 describe MailingList::Wizard do
-  subject { described_class.new wizardstore, "privacy_policy" }
+  subject { described_class.new wizardstore, "postcode" }
 
   let(:uuid) { SecureRandom.uuid }
   let(:degree_status_id) { OptionSet.lookup_by_key(:degree_status, :final_year) }
@@ -30,7 +30,6 @@ describe MailingList::Wizard do
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,
         MailingList::Steps::Postcode,
-        MailingList::Steps::PrivacyPolicy,
       ]
     end
   end

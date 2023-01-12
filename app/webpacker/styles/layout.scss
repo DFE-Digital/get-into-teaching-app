@@ -46,7 +46,7 @@ body {
 .hidden {
   // We use important! to ensure any component-level
   // display values (such as flex) are still hidden.
-  display: none !important;
+  display: none !important; /* stylelint-disable-line declaration-no-important */
 }
 
 // new layouts, intended to remove the reliance on float and instead use semantic markup and flexbox:
@@ -76,13 +76,6 @@ section.container {
     justify-content: center;
   }
 
-  .inset {
-    padding: 0 $indent-amount;
-    box-sizing: border-box;
-    margin: 0 auto;
-    width: 100%;
-  }
-
   @include mq($from: tablet) {
     flex-direction: row;
     justify-content: flex-start;
@@ -109,6 +102,14 @@ section.container {
 
     &.fullwidth {
       flex: 1 0 100%;
+    }
+
+    .col {
+      margin: 0 auto 3em;
+
+      &.col-720 {
+        max-width: 720px;
+      }
     }
   }
 
@@ -137,6 +138,69 @@ section.container {
 
     > article {
       margin-bottom: 0;
+    }
+  }
+}
+
+.inset {
+  padding: 0 $indent-amount;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.row {
+  .grey {
+    background-color: $grey;
+    padding: 3em 0;
+  }
+
+  .col {
+    margin: 0 auto 3 * $indent-amount auto;
+  }
+
+  .col-space-s {
+    margin-bottom: 1 * $indent-amount;
+  }
+
+  .col-space-m {
+    margin-bottom: 2 * $indent-amount;
+  }
+
+  .col-space-0 {
+    margin-bottom: 0;
+  }
+
+  .col-full-page {
+    max-width: $page-max-width;
+  }
+
+  .col-full-content {
+    max-width: $content-max-width;
+  }
+
+  .col-845 {
+    max-width: $column-845;
+  }
+
+  .col-720 {
+    max-width: $column-720;
+  }
+
+  .col-640 {
+    max-width: $column-640;
+  }
+
+  .col-horizontal {
+    display: flex;
+    gap: $indent-amount;
+    flex-direction: column;
+
+    @include mq($from: tablet) {
+      flex-direction: row;
+    }
+
+    > * {
+      flex: 1 1 0;
     }
   }
 }

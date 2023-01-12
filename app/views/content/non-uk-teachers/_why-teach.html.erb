@@ -1,10 +1,12 @@
 <section class="why-teach" aria-label="Why teach?">
   <div class="why-teach__container">
     <div class="why-teach__content">
-      <h2 class="heading-l">
-        <div class="caption-l caption--bold caption--purple">Why teach in England?</div>
-        Join a world class education system
-      </h2>
+      <%= render Content::HeadingComponent.new(
+        heading: "Join a world class education system",
+        tag: :h2,
+        caption: "Why teach in England?",
+        caption_size: :l
+      ) %>
 
       <p>
         The English education system offers international teachers the opportunity to make a real difference in children’s lives. Discover why you should teach in England.
