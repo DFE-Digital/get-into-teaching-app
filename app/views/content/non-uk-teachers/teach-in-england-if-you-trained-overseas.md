@@ -62,7 +62,7 @@ You’ll earn a [competitive salary](/salaries-and-benefits), get supported in y
 
 You could also consider teaching in [Wales](https://educators.wales), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
-Not qualified as a teacher yet? Find out [how to train to teach in England as an international applicant](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, but would like to gain a professional teaching qualification which is equivalent to English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status).
+Not qualified as a teacher yet? Find out [how to train to teach in England as an international applicant](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, but would like to gain a professional teaching qualification which leads to the automatic award of English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status).
 
 ## What you need to start teaching
 
@@ -92,9 +92,7 @@ If you’re a qualified teacher from outside the UK, you can [work as a teacher 
 
 After that, you will need QTS to teach in many schools in England.
 
-It’s not a legal requirement in all types of schools (for example, [academy schools, free schools and private schools](https://www.gov.uk/types-of-school)).
-
-However, even in these schools, having QTS can help your application for a teaching job.
+Although it is not a legal requirement in all types of schools (for example, [academy schools, free schools and private schools](https://www.gov.uk/types-of-school)) you will find it much easier to get work as a teacher in England if you have QTS.
 
 ## The different routes to QTS
 
@@ -124,19 +122,19 @@ From 1 February 2023, if you have a qualification from the following countries y
 
 * Ghana
 * Hong Kong
-* India
 * Jamaica
-* Nigeria
 * Singapore
 * South Africa
 * Ukraine
-* Zimbabwe
+
 
 [Learn more about the qualifications and experience you'll need to get QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers). 
 
 <p class="call-to-action__action">
   <a href="https://apply-for-qts-in-england.education.gov.uk/eligibility/start">Apply for QTS <span>in England</span></a>
 </p>
+
+It’s important to note that, even if you decide to apply for QTS, you will have to apply for your teaching job separately. You can search and apply for jobs using [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/?gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HCw9dQ-qerRqmVac1uNempXRIiJOdaSkJDNUjpMmBU4QsnKbYzn8ogaAvapEALw_wcB&gclsrc=aw.ds).
 
 
 ### Other routes to QTS
