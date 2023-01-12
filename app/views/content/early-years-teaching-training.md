@@ -22,14 +22,14 @@ calls_to_action:
   EY-graduate:
     name: feature_table
     arguments:
-      - Cost: "£7000 course fees are covered by the Department for Education and are paid directly to the training provider. You don’t need to do anything to access this funding."
+      - Cost: "£7000 course fees are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
         Salary: "No"
         Length of training: "Typically 1 academic year"
         Qualification: "Early years teacher status"
   EY-graduate-employment:
     name: feature_table
     arguments:
-      - Cost: "£7000 course fees are covered by the Department for Education and are paid directly to the training provider. You don’t need to do anything to access this funding."
+      - Cost: "£7000 course fees are covered by the Department for Education and are paid directly to the training provider. You do not need to do anything to access this funding."
         Salary: "Provided by employer"
         Length of training: "Typically 1 academic year"
         Qualification: "Early years teacher status"
@@ -53,7 +53,7 @@ The early years are critical in children’s development. As an early years prac
 
 You’ll need to do ‘early years initial teacher training’ (EYITT) to achieve ‘early years teacher status’ (EYTS). This will allow you to work in a nursery or early years setting. 
 
-If you want to teach in a school then you will need to achieve qualified teacher status (QTS). [Find out more about training to teach primary and secondary pupils](/train-to-be-a-teacher).
+If you want to teach in a primary or secondary school then you will need to achieve qualified teacher status (QTS). [Find out more about training to teach primary and secondary pupils](/train-to-be-a-teacher).
 
 ## What you need to become an early years practitioner
 
@@ -78,9 +78,9 @@ Bursaries are available, including:
 * £4,000 if you have a 2:1 degree
 * £2,000 if you have a 2:2 degree
 
-You aren’t eligible for a bursary if you have a third class degree.
+You are not eligible for a bursary if you have a third class degree.
 
-You don’t need to do anything to access this funding. You can [learn more about early years initial teacher training funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2023-to-2024-funding-guidance).
+You do not need to do anything to access this funding. You can [learn more about early years initial teacher training funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2023-to-2024-funding-guidance).
 
 ### Postgraduate employment-based training
 This is a route for graduates working in an early years setting who want to achieve early years teacher status.    
@@ -89,10 +89,10 @@ $EY-graduate-employment$
 
 Up to £14,000 of funding is available. This would cover course fees of up to £7,000, plus £7,000 for your employer, to help cover their extra costs while you train. 
 
-You don’t need to do anything to access this funding. You can [learn more about early years inital teacher training funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2023-to-2024-funding-guidance).
+You do not need to do anything to access this funding. You can [learn more about early years inital teacher training funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2023-to-2024-funding-guidance).
 
 ### Undergraduate training
-This route is for people who want to study a full-time bachelor’s degree in an early childhood-related subject leading to EYTS.
+This route is for people who want to study a full-time bachelor’s degree in an early-childhood related subject leading to EYTS.
 
 $EY-undergraduate$
 
