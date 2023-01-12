@@ -94,9 +94,11 @@ After that, you will need QTS to teach in many schools in England.
 
 Although it is not a legal requirement in all types of schools (for example, [academy schools, free schools and private schools](https://www.gov.uk/types-of-school)) you will find it much easier to get work as a teacher in England if you have QTS.
 
+It’s important to note that, even if you decide to apply for QTS, you will have to apply for your teaching job separately. You can search and apply for jobs using [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/?gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HCw9dQ-qerRqmVac1uNempXRIiJOdaSkJDNUjpMmBU4QsnKbYzn8ogaAvapEALw_wcB&gclsrc=aw.ds).
+
 ## The different routes to QTS
 
-If you decide QTS is right for you, the most appropriate route will depend on the country you’re recognised in, your qualifications and your teaching experience.
+The most appropriate route to QTS will depend on the country you’re recognised in, your qualifications and your teaching experience.
 
 ### Apply directly to England’s Teaching Regulation Agency (TRA)
 
@@ -133,8 +135,6 @@ From 1 February 2023, if you have a qualification from the following countries y
 <p class="call-to-action__action">
   <a href="https://apply-for-qts-in-england.education.gov.uk/eligibility/start">Apply for QTS <span>in England</span></a>
 </p>
-
-It’s important to note that, even if you decide to apply for QTS, you will have to apply for your teaching job separately. You can search and apply for jobs using [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/?gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HCw9dQ-qerRqmVac1uNempXRIiJOdaSkJDNUjpMmBU4QsnKbYzn8ogaAvapEALw_wcB&gclsrc=aw.ds).
 
 
 ### Other routes to QTS
