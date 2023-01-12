@@ -464,7 +464,7 @@ provider_groups:
       name: Andrew Locke
       telephone: 020 3194 3200
       email: institute@tes.com
-  International:
+  Assessment only training providers for non-UK teachers:
     description: content/assessment-only-providers/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
     - header: University of Sunderland
