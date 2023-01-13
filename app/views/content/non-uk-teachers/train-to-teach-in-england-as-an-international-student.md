@@ -319,7 +319,7 @@ You may need to apply for a different visa to work in England as a qualified tea
 
 [Read interviews with real teachers](/blog).
 
-Learn more about English education:
+### Learn more about English education:
 
 - [types of English school](https://www.gov.uk/types-of-school)
 - [curriculum and qualifications](https://www.gov.uk/national-curriculum)
