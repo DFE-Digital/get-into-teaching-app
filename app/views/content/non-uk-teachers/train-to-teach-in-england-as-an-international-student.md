@@ -313,6 +313,7 @@ You may need to apply for a different visa to work in England as a qualified tea
 
 ### Meet other non-UK teachers and trainees
 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/owLXaeerFy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 [Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
