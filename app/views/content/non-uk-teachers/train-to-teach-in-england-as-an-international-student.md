@@ -315,7 +315,7 @@ Meet other non-UK teachers and trainees and find information about English schoo
 
 ### Why train to teach in England?
 
-Watch our video interviews with non-UK trainees who've successfully relocated to teach in England.
+Watch our video interviews with non-UK citizens who've successfully relocated to train and teach in England.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/owLXaeerFy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
