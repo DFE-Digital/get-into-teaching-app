@@ -1,4 +1,4 @@
-$indent-amount: 1.5rem;
+$indent-amount: $sp-4;
 
 @mixin indent-left-and-right($left: $indent-amount, $right: $indent-amount) {
   margin-left: $left;

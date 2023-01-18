@@ -6,16 +6,18 @@
   </div>
 </div>
 
-<header class="limit-content-width" data-controller="navigation" role="banner">
+<header data-controller="navigation" role="banner">
   <%= render Header::ExtraNavigationComponent.new(search_input_id: "searchbox__input--desktop") %>
-  <%= render Header::LogoComponent.new %>
-  <div class="menu-button" id="mobile-navigation-menu-button">
-    <%= tag.button(class: "menu-button__button", data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
-      <span class="menu-button__icon"></span>
-      <span class="menu-button__text">Menu</span>
-    <% end %>
+  <div class="main-nav limit-content-width">
+    <%= render Header::LogoComponent.new %>
+    <div class="menu-button" id="mobile-navigation-menu-button">
+      <%= tag.button(class: "menu-button__button", data: { action: "click->navigation#toggleNav", "navigation-target" => "menu" }) do %>
+        <span class="menu-button__icon"></span>
+        <span class="menu-button__text">Menu</span>
+      <% end %>
+    </div>
+    <%= render Header::NavigationComponent.new(extra_resources: { "/events" => "Events" }) %>
   </div>
-  <%= render Header::NavigationComponent.new(extra_resources: { "/events" => "Events" }) %>
 </header>
 
 <% if breadcrumbs %>

@@ -18,8 +18,7 @@ body {
   }
 }
 
-.main-section,
-.hero {
+.main-section {
   @extend %content-width-limiter-shared;
 }
 
@@ -70,7 +69,7 @@ section.container {
   flex-grow: 0;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 1em 0;
+  margin: 0 0 $sp-7 0;
 
   &.centered {
     justify-content: center;
@@ -79,7 +78,7 @@ section.container {
   @include mq($from: tablet) {
     flex-direction: row;
     justify-content: flex-start;
-    margin: 1.5em auto 0;
+    margin: 0 auto $sp-11;
     max-width: $content-max-width;
 
     &--845 {

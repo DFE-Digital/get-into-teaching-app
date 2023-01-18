@@ -4,38 +4,40 @@
 @import "header/extra-navigation";
 @import "header/menu-button";
 
-body > header {
-
-  // mobile (default) layout
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: auto;
-
+body > header{
   @include mq($from: tablet) {
     border-bottom: 1px solid $grey;
   }
 
-  // tablet
-  @include mq($from: tablet, $until: desktop) {
-    grid-template-columns: max-content 1fr;
+  > .main-nav {
 
-    nav {
-      grid-column: 1/3;
+    // mobile (default) layout
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+
+    // tablet
+    @include mq($from: tablet, $until: desktop) {
+      grid-template-columns: max-content 1fr;
+
+      nav {
+        grid-column: 1/3;
+      }
     }
-  }
 
-  @include mq($from: tablet) {
-    grid-template-columns: max-content 2fr;
+    @include mq($from: tablet) {
+      grid-template-columns: max-content 2fr;
 
-    .extra-navigation {
-      grid-column: 1/3;
+      .extra-navigation {
+        grid-column: 1/3;
+      }
     }
-  }
 
-  // desktop
-  @include mq($from: desktop, $until: wide) {
-    nav {
-      grid-column: 1/3;
+    // desktop
+    @include mq($from: desktop, $until: wide) {
+      nav {
+        grid-column: 1/3;
+      }
     }
   }
 }

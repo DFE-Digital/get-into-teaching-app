@@ -21,9 +21,14 @@ module Content
       end
     end
 
-    def classes
-      ["hero", hero_bg_color].tap do |c|
+    def wrapper_classes
+      ["hero-wrapper", hero_bg_color].tap do |c|
         c << "blend-content" if hero_blend_content
+      end
+    end
+
+    def classes
+      %w[hero].tap do |c|
         c << "content-#{hero_content_width}"
       end
     end

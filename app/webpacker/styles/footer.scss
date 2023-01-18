@@ -1,6 +1,10 @@
 footer.site-footer {
   background-color: $black;
-  padding: 2em;
+  padding: $sp-7 $sp-4;
+
+  @include mq($from: tablet) {
+    padding: $sp-11 $sp-4;
+  }
 
   .site-footer__wrapper {
     display: flex;
@@ -18,7 +22,7 @@ footer.site-footer {
     }
 
     &__links-container {
-      flex: 66% 0 0%;
+      flex: 1 0 0%;
 
       display: flex;
       flex-wrap: wrap;
@@ -29,8 +33,11 @@ footer.site-footer {
         @include font-size("xsmall");
         @extend .link--grey;
 
-        margin-bottom: .5em;
-        padding: .5em 0;
+        margin-bottom: $sp-1;
+
+        @include mq($from: tablet) {
+          padding: $sp-1 0;
+        }
       }
 
       // column-gap: 1.5em;
@@ -41,7 +48,6 @@ footer.site-footer {
 
       @include mq($until: tablet) {
         flex-direction: column;
-        padding-bottom: 2em;
 
         a + a {
           margin-left: 0;
@@ -52,7 +58,6 @@ footer.site-footer {
 
   .site-footer-top {
     display: flex;
-    padding-bottom: 2em;
 
     .icon {
       @include font-size(large);
@@ -65,7 +70,11 @@ footer.site-footer {
 
       a {
         max-height: 2em;
-        padding: .5em;
+        padding: $sp-1;
+
+        &:first-child {
+          padding-left: 0;
+        }
       }
 
       // gap: 1em;
@@ -86,11 +95,11 @@ footer.site-footer {
 
   .site-footer-bottom {
     border-top: 1px solid $grey-mid;
-    margin-top: 2em;
-    padding-top: 2em;
+    margin-top: $sp-4;
+    padding-top: $sp-4;
 
     &__logo-container {
-      flex: 33% 0 0;
+      flex: 43% 0 0;
       flex-direction: column;
 
       display: flex;
@@ -117,9 +126,11 @@ footer.site-footer {
       &__license {
         @include font-size("xsmall");
         color: $grey-mid;
+        margin-bottom: $sp-2;
 
         @include mq($from: tablet) {
           text-align: right;
+          margin-bottom: 0;
         }
       }
     }

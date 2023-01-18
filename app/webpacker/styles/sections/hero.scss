@@ -3,87 +3,32 @@
 // layout, mobile-first
 $mobile-cutoff: 800px;
 
-// fallback styles (IE)
-.hero {
-  &__title {
-    display: block;
-    max-width: 90%;
-    padding-top: 3em;
-
-    @include mq($from: tablet) {
-      display: inline-block;
-      width: 45%;
-    }
-
-    // undo
-    @supports (display: grid) {
-      display: block;
-      width: initial;
-      max-width: initial;
-    }
-  }
-
-  &__subtitle {
-    display: block;
-    width: 90%;
-    margin: 0 2em 4em 1em;
-
-    @include mq($from: tablet) {
-      display: inline-block;
-      max-width: 45%;
-    }
-
-    // undo
-    @supports (display: grid) {
-      display: block;
-      max-width: initial;
-      margin: initial;
-      width: initial;
-    }
-  }
-
-  > picture {
-    float: right;
-    max-width: 50%;
-    display: none;
-
-    @include mq($from: tablet) {
-      display: block;
-    }
-
-    // undo
-    @supports (display: grid) {
-      float: none;
-      max-width: initial;
-      display: block;
-    }
-  }
-}
-
 // grid-specific
 .hero {
+  @extend %content-width-limiter-shared;
+
   $title-overlap-img: 4em;
 
   @supports (display: grid) {
     display: grid;
 
     grid-template-columns: 3em repeat(2, 1fr) 2em;
-    grid-template-rows:
+    grid-template-rows: $sp-2
       8em $title-overlap-img repeat(
         2,
         minmax(1em, max-content)
       );
 
     &__title {
-      grid-area: 2 / 1 / 4 / 4;
+      grid-area: 3 / 1 / 5 / 4;
       align-self: flex-end;
     }
 
     &__subtitle,
     &__content,
     &__paragraph {
-      grid-area: 4 / 1 / 5 / 5;
-      padding: 0 2em 2em;
+      grid-area: 5 / 1 / 5 / 5;
+      padding: 0 $sp-4 $sp-6;
     }
 
     &__subtitle {
@@ -112,7 +57,7 @@ $mobile-cutoff: 800px;
           4,
           minmax(100px, 1fr)
         );
-      grid-template-rows: 2em repeat(5, fit-content(0)) 2em;
+      grid-template-rows: $sp-2 $sp-9 repeat(5, fit-content(0)) 2em;
 
       &__title {
         grid-area: 3 / 1 / 5 / 5;
@@ -131,7 +76,7 @@ $mobile-cutoff: 800px;
       }
 
       > picture {
-        grid-area: -6 / -6 / -1 / -1;
+        grid-area: -8 / -6 / -1 / -1;
       }
 
       &.content-wide {
@@ -158,7 +103,7 @@ $mobile-cutoff: 800px;
 }
 
 // styles
-.hero {
+.hero-wrapper {
   background-color: $grey;
   overflow: hidden;
 
@@ -171,17 +116,23 @@ $mobile-cutoff: 800px;
   }
 
   &.blend-content {
-    padding-bottom: 4em;
+    padding-bottom: $sp-4;
 
     @include mq($from: tablet) {
-      padding-bottom: 6em;
+      padding-bottom: $sp-11 + $sp-6;
+
+      & + .main-section {
+        margin-top: -$sp-7;
+      }
     }
 
     & + .main-section {
-      margin-top: -4em;
+      margin-top: -$sp-6;
     }
   }
+}
 
+.hero {
   &__title {
     z-index: 20;
   }

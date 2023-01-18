@@ -11,19 +11,32 @@
   }
 
   &__cards {
-    padding-bottom: 2em;
     width: 100%;
+
+    .heading--box-blue {
+      margin: 0 0 $sp-4 0;
+
+      @include mq($from: tablet) {
+        margin: 0 0 $sp-6 0;
+      }
+    }
   }
 
   &__nav-cards ul {
     display: grid;
     grid-template-columns: 1fr;
-    margin-block: 2em;
+    margin: 0;
     padding: 0;
-    gap: 1.2em;
+    gap: $sp-3;
     list-style: none;
 
+    p:last-child {
+      margin-bottom: 0;
+    }
+
     @include mq($from: tablet) {
+      gap: $sp-4;
+
       &:not(.one-column) {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -38,10 +51,6 @@
           > *:first-child {
             flex-basis: 30%;
           }
-
-          p:last-child {
-            margin-bottom: 0;
-          }
         }
       }
     }
@@ -51,13 +60,18 @@
     background: white;
     box-shadow: 0 6px 5px 0 rgba(0, 0, 0, .15);
     display: flex;
+    margin-bottom: 0;
 
     a {
-      padding: 2em;
+      padding: $sp-4;
       text-decoration: none;
       display: flex;
       gap: 1.5em;
       width: 100%;
+
+      @include mq($from: tablet) {
+        padding: $sp-6;
+      }
     }
 
     &:hover {
@@ -91,15 +105,14 @@
   }
 
   &__questions {
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
     background: $white;
-    padding-bottom: 4em;
+    padding-top: $sp-7;
+    gap: $sp-5;
 
     @include mq($from: tablet) {
       flex-direction: row;
-      gap: 2em;
+      gap: 0;
+      padding-top: $sp-11;
     }
   }
 
@@ -108,7 +121,7 @@
       flex: 1;
     }
 
-    padding: 0 2em;
+    padding: 0 $sp-4;
 
     h2 {
       @extend .heading-m;
@@ -119,12 +132,8 @@
     }
 
     * + * {
-      margin-top: 1em;
+      margin-top: $sp-2;
       margin-bottom: 0;
-
-      @include mq($from: tablet) {
-        margin-top: 2em;
-      }
     }
   }
 }
@@ -133,20 +142,26 @@
   background-color: $grey;
 
   &__container {
-    margin: 4em auto;
+    margin: $sp-7 auto;
     max-width: $content-max-width;
     display: flex;
     flex-direction: column-reverse;
-    gap: 2em;
+    gap: $sp-5;
+    box-sizing: border-box;
+    padding: 0 $sp-4;
 
     @include mq($from: tablet) {
+      margin: $sp-11 auto;
       flex-direction: row;
     }
   }
 
   &__content {
     flex: 0 1 50%;
-    margin-inline: 1em;
+
+    h2 {
+      margin-bottom: 0;
+    }
 
     a {
       @extend .link--black;
@@ -155,9 +170,14 @@
     ul {
       list-style: none;
       padding: 0;
+      margin: 0;
 
-      li + li {
-        margin-top: 1em;
+      li {
+        margin-bottom: 0;
+
+        &:not(:last-child) {
+          margin-bottom: $sp-1;
+        }
       }
     }
   }
@@ -190,9 +210,5 @@
     background: $yellow;
     margin-inline: 1em;
     padding: .8em .8em .6em;
-  }
-
-  .right {
-    margin-inline: 1em;
   }
 }

@@ -1,9 +1,10 @@
 @import "accessible-autocomplete";
 
 .extra-navigation {
+  background-color: $grey;
+
   &__list {
     font-size: .9rem;
-    background-color: $grey;
     margin: 0 auto;
     list-style: none;
     padding: 0;
@@ -13,8 +14,7 @@
 
   &__link a {
     display: inline-block;
-    padding: .6em $indent-amount;
-    line-height: 28px;
+    padding: $sp-2;
 
     .icon {
       margin-left: .5em;
@@ -43,8 +43,7 @@
 
   &__search a {
     background-color: $pink;
-    padding: .6em $indent-amount / 2;
-    line-height: 28px;
+    padding: $sp-2;
 
     &:hover {
       background-color: $pink-dark;
