@@ -73,11 +73,11 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 * to pass criminal and professional safeguarding checks (these will be organised by your employer)
 * a visa or immigration status allowing you to work in the UK
 
-## Before you start
+## Steps to become a teacher in England
 
 Useful information you’ll need as you plan your move to the UK.
 
-### Your professional qualifications 
+## Your professional qualifications 
 
 Schools you apply to will want to see evidence of your teaching and academic qualifications. [UK ENIC can give you a statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones. 
 
@@ -92,7 +92,6 @@ After that, you will need QTS to teach in many schools in England.
 QTS is not a legal requirement in some types of school (for example, [academy schools, free schools and private schools](https://www.gov.uk/types-of-school)). However, the majority of schools use QTS as a measure of teaching skills and experience, so you will find it much easier to get a teaching job in England if you have QTS.
 
 It’s important to note that, even if you decide to apply for QTS, you will have to apply for your teaching job and your visa separately. 
-
 
 ### How to apply for QTS
 
@@ -161,7 +160,6 @@ You can apply for a skilled worker visa once you have been offered a teaching jo
 You may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).
 
 [If you're an Irish citizen you do not need a visa](https://www.gov.uk/government/publications/common-travel-area-guidance).
-
 
 If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa) or [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
 
