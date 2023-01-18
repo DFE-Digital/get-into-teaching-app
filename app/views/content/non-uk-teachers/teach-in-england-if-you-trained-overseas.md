@@ -64,7 +64,7 @@ You could also consider teaching in [Wales](https://educators.wales), [Scotland]
 
 Not qualified as a teacher yet? Find out [how to train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status), which leads to the automatic award of English qualified teacher status. 
 
-## What you need to start teaching
+## What you'll need to teach in England
 
 If you are already a qualified teacher, you will not need to retrain to get a job as a teacher in England. However, you will need:
 
@@ -73,15 +73,11 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 * to pass criminal and professional safeguarding checks (these will be organised by your employer)
 * a visa or immigration status allowing you to work in the UK
 
-## Steps to become a teacher in England
-
-Useful information you’ll need as you plan your move to the UK.
-
-## Your professional qualifications 
+### Your professional qualifications 
 
 Schools you apply to will want to see evidence of your teaching and academic qualifications. [UK ENIC can give you a statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones. 
 
-### Qualified teacher status (QTS) and why you might want to apply for it
+## Apply for qualified teacher status (QTS)
 
 [Qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) is the professional status teachers in England gain at the end of their teacher training. 
 
@@ -134,7 +130,7 @@ If you’re not eligible to use the new service, you may be able to:
 * [apply for international qualified teacher status (iQTS)](https://getintoteaching.education.gov.uk/non-uk-teachers/international-qualified-teacher-status)
 
 
-## Search for a job
+## Find a teaching job
 
 Once you've obtained QTS, you will need to find a teaching job in England. To do this, you must apply to individual schools (not the Department for Education). 
 
