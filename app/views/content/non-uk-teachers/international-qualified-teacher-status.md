@@ -42,9 +42,7 @@ International qualified teacher status (iQTS) is a new teaching qualification ba
 
 ### Applying for the 2023/24 academic year
 
-iQTS applications for the 2022/23 academic year have now closed. You'll be able to apply for the 2023/24 academic year in early 2023.
-
-Contact the training providers on this page directly to register your interest. More training providers will be joining the programme for the 2023/24 academic year to offer iQTS in new locations around the world. Visit this page for updates.  
+iQTS applications for the 2023/24 academic year are now open. You can register your interest or apply by contacting your chosen [iQTS teacher training provider](/non-uk-teachers/international-qualified-teacher-status#apply-for-iqts-step-by-step).
 
 ## Who iQTS is for
 
