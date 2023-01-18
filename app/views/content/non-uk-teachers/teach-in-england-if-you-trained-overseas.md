@@ -62,17 +62,16 @@ You’ll earn a [competitive salary](/salaries-and-benefits), get supported in y
 
 You could also consider teaching in [Wales](https://educators.wales), [Scotland](https://teachinscotland.scot/) or [Northern Ireland](https://www.education-ni.gov.uk/articles/initial-teacher-education-courses-northern-ireland).
 
-Not qualified as a teacher yet? Find out [how to train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, but would like to gain a professional teaching qualification which leads to the automatic award of English qualified teacher status, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status).
+Not qualified as a teacher yet? Find out [how to train to teach in England as a non-UK citizen](/non-uk-teachers/train-to-teach-in-england-as-an-international-student). If you don't want to come to England to train, you should consider [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status), which leads to the automatic award of English qualified teacher status. 
 
 ## What you need to start teaching
 
-To teach in England you need:
+If you are already a qualified teacher, you will not need to retrain to get a job as a teacher in England. However, you will need:
 
-* teaching skills and experience
+* to apply for English 'qualified teacher status', or be able to demonstrate strong non-UK qualifications and experience 
+* a high standard of written and spoken English
 * to pass criminal and professional safeguarding checks (these will be organised by your employer)
-* to [get the right visa or status](#get-the-right-visa-or-status)
-
-It is also helpful to have a teaching qualification from your own or another non-UK country, or to get '[qualified teacher status](#consider-getting-qualified-teacher-status-qts)'.
+* a visa or immigration status allowing you to work in the UK
 
 ## Before you start
 
@@ -82,10 +81,7 @@ Useful information you’ll need as you plan your move to the UK.
 
 Schools you apply to will want to see evidence of your teaching and academic qualifications. [UK ENIC can give you a statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones. 
 
-
-
-
-## Qualified teacher status (QTS) and why you might want to apply for it
+### Qualified teacher status (QTS) and why you might want to apply for it
 
 [Qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) is the professional status teachers in England gain at the end of their teacher training. 
 
@@ -189,12 +185,11 @@ The following resources may be useful as you plan your move:
 
 If you’ve successfully used the [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) service, and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](https://www.gov.uk/government/publications/early-career-framework). 
 
-
 [Read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
 ### Meet non-UK citizens who have made the move to teach in England 
 
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/owLXaeerFy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ## Contact
 
@@ -203,5 +198,5 @@ The Department for Education (DfE) does not employ teachers directly. Do not sen
 Please do not email to ask when the country where you qualified as a teacher or your subject specialism will be added to the [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) service. We’ll publish that information on [A fairer approach to awarding QTS to overseas teachers](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#) as new countries and subjects are added.
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
-.
+
 
