@@ -57,7 +57,7 @@ If you want to teach in a primary or secondary school then you will need to achi
 
 ## What you need to become an early years practitioner
 
-There are 2 ways to train to become an early years practioner, either as a postgraduate if you already have a degree, or as part of an undergraduate degree. 
+There are 2 ways to train to become an early years practitioner, either as a postgraduate if you already have a degree, or as part of an undergraduate degree. 
 
 To do postgraduate training, you’ll need a bachelor’s degree or an equivalent, for example, a vocational, professional, or overseas qualification.
 
