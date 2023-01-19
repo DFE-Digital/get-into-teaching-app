@@ -1,11 +1,17 @@
 ---
 title: Teaching internships
+heading: "Experience teaching with an internship"
 description: |-
   Find teaching internships to gain new skills and see what classroom life is like for £300 per week. Explore languages, computing, maths and physics internships.
 date: "2021-04-14"
 image: false
 promo_content:
     - content/train-to-be-a-teacher/promos/eta-promo-internships
+quote_list:
+  ql-1:
+    quotes: 
+      - heading: "Chloe, former teaching intern"
+        text: "You’ll get the opportunity to experience a range of activities to help you get a feel for school life. Internships last 3 weeks, start in June and you’ll be paid £300 per week."
 backlink: /
 fullwidth: true
 content:
@@ -405,20 +411,3 @@ keywords:
   - T.I. programme
   - TI programme
 ---
-
-<section>
-  <div class="content-alert content-alert--fullwidth">
-    <div>
-      <span class="icon icon-warning" aria-hidden="true"></span>
-    </div>
-    <div>
-      <h2 class="heading-m">Apply from January 2023</h2>
-      
-      <p>You'll be able to apply for a teaching internship from January 2023. More information on how to apply will be available on this page once applications open.</p>
-
-      <p>Sign up for our emails and we'll send you helpful advice and insights about getting into teaching. If you're eligible for a teaching internship, we'll also let you know when applications open.</p>
-
-      <p><a class="button button--white" href="/mailinglist/signup">Sign up for email guidance</a></p>
-    </div>
-  </div>
-</section>
