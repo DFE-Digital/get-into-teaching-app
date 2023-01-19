@@ -522,7 +522,7 @@ Teachers outside the UK with a teaching qualification may be eligible to use a n
 
 #### Teach in England
 
-[Learn more about working in England if you’re a teacher from outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas#consider-getting-qualified-teacher-status-qts).
+[Learn more about working in England if you’re a teacher from outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas#apply-for-qualified-teacher-status-qts).
 
 
 

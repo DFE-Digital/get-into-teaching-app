@@ -123,8 +123,8 @@ You will not have to pay a fee or undergo further training. However, to be award
 
 If you’re not eligible to use the new service, you may be able to:
 
-* [complete initial teacher training in England](https://getintoteaching.education.gov.uk/non-uk-teachers/train-to-teach-in-england-as-an-international-student)
-* [apply for international qualified teacher status (iQTS)](https://getintoteaching.education.gov.uk/non-uk-teachers/international-qualified-teacher-status)
+* [complete initial teacher training in England](/non-uk-teachers/train-to-teach-in-england-as-an-international-student)
+* [apply for international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status)
 
 
 ## Find a teaching job
@@ -162,7 +162,7 @@ You can also learn more about [bringing your partner and children](https://www.g
 
 ## Learn about life as a teacher in England
 
-If you’ve successfully used the [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) service, and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](https://getintoteaching.education.gov.uk/support-for-early-career-teachers). 
+If you’ve successfully used the [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) service, and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/support-for-early-career-teachers). 
 
 [Read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 

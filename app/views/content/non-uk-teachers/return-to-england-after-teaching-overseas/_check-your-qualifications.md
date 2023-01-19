@@ -7,7 +7,7 @@ have QTS. You can check this in the [Database of Qualified Teachers](https://tea
 
 If you have been working as an unqualified teacher overseas, and you have a degree, you may be able to
 get QTS through the [assessment only (AO) route](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#AO) without any further training or the need to visit the UK.
-[View training providers who offer AO to overseas candidates](/assessment-only-providers#group--international).
+[View training providers who offer AO to overseas candidates](/assessment-only-providers).
 
 You could also consider studying for [international qualified teacher status (iQTS)](/non-uk-teachers/international-qualified-teacher-status). This new qualification is backed by the Department for Education and means you can train where you live and work, with no need to visit the UK.
 
