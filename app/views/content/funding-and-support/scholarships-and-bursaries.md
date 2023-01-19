@@ -83,13 +83,13 @@ In exceptional circumstances, if you achieved a 2:2 in your degree you may still
 
 #### Benefits
 
-Scholarships offer more than just financial benefits. They may also offer:
+Scholarships offer more than just financial benefits. You may also receive:
 
 * membership to the subject Professional Body
 * access to subject specialist events and webinars held by Professional Bodies
-* online and face to face workshops across the country
-* mentors & coaching
-* a community of Scholars (ex-scholars, teachers, subject leaders)
+* online and face-to-face workshops across the country
+* mentoring and coaching
+* a community of ex-scholars, teachers and subject leaders
 * access to classroom resources
 * CPD and networking events during your teacher training and beyond
 
