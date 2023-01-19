@@ -1,6 +1,6 @@
 English teacher training providers deliver iQTS in partnership with placement schools around the world. All iQTS training providers have been approved by the UK government. 
 
-You can register your interest for the 2023/24 academic year by contacting the following training providers:
+You can register your interest and apply for the 2023/24 academic year by contacting the following training providers:
 
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher) 
 * [Edge Hill University](https://www.edgehill.ac.uk/)
