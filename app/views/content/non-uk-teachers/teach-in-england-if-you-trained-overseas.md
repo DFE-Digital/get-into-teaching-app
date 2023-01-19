@@ -66,7 +66,7 @@ Not qualified as a teacher yet? Find out [how to train to teach in England as a 
 
 ## What you'll need to teach in England
 
-If you are already a qualified teacher, you will not need to retrain to get a job as a teacher in England. However, you will need:
+If you are already a qualified teacher, you do not need to retrain to teach in England. However, you will need:
 
 * to apply for English 'qualified teacher status', or be able to demonstrate strong non-UK qualifications and experience 
 * a high standard of written and spoken English
@@ -75,17 +75,15 @@ If you are already a qualified teacher, you will not need to retrain to get a jo
 
 ### Your professional qualifications 
 
-Schools you apply to will want to see evidence of your teaching and academic qualifications. [UK ENIC can give you a statement of comparability](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones. 
+Schools you apply to will want to see evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx)showing how your qualifications compare to English ones.  
 
 ## Apply for qualified teacher status (QTS)
 
-[Qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) is the professional status teachers in England gain at the end of their teacher training. 
+Qualified teacher status (QTS) is the professional status teachers in England gain at the end of their teacher training. Schools use QTS as a measure of teaching skills and experience, so you will find it much easier to get a teaching job in England if you have QTS.
 
-If you’re a qualified teacher from outside the UK, you can [work as a teacher in England for up to 4 years without QTS](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#qts-exemption-for-teachers-from-outside-the-uk).
+However, if you’re a qualified teacher from outside the UK, you can [work as a teacher in England for up to 4 years without QTS](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#qts-exemption-for-teachers-from-outside-the-uk).
 
-After that, you will need QTS to teach in many schools in England.
-
-QTS is not a legal requirement in some types of school (for example, [academy schools, free schools and private schools](https://www.gov.uk/types-of-school)). However, the majority of schools use QTS as a measure of teaching skills and experience, so you will find it much easier to get a teaching job in England if you have QTS.
+After that, you will need QTS to teach in many schools in England, although it is not a legal requirement in some types of school (for example, [academy schools, free schools and private schools](https://www.gov.uk/types-of-school)). 
 
 It’s important to note that, even if you decide to apply for QTS, you will have to apply for your teaching job and your visa separately. 
 
@@ -161,6 +159,20 @@ If you’re not sure about your immigration status, you can [check if you need a
 
 You can also learn more about [bringing your partner and children](https://www.gov.uk/skilled-worker-visa/your-partner-and-children).
 
+
+
+
+
+## Learn about life as a teacher in England
+
+If you’ve successfully used the [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) service, and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](https://getintoteaching.education.gov.uk/support-for-early-career-teachers). 
+
+[Read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
+
+### Meet non-UK citizens who have made the move to teach in England 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/owLXaeerFy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Plan your move to the UK
 
 The following resources may be useful as you plan your move:
@@ -173,23 +185,11 @@ The following resources may be useful as you plan your move:
 * [learn about tax](https://www.gov.uk/income-tax)
 * learn about [indefinite leave to remain](https://www.gov.uk/indefinite-leave-to-remain)
 
-
-
-## Learn about life as a teacher in England
-
-If you’ve successfully used the [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) service, and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](https://www.gov.uk/government/publications/early-career-framework). 
-
-[Read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
-
-### Meet non-UK citizens who have made the move to teach in England 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/owLXaeerFy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ## Contact
 
 The Department for Education (DfE) does not employ teachers directly. Do not send us your CV, as we will not be able to help you find a teaching job. 
 
-Please do not email to ask when the country where you qualified as a teacher or your subject specialism will be added to the [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) service. We’ll publish that information on [A fairer approach to awarding QTS to overseas teachers](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#) as new countries and subjects are added.
+Please do not email to ask when a country or subject will be added to the list for QTS in England. We’ll [publish updates as new countries and subjects are added](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#).
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 
