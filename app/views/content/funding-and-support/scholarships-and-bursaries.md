@@ -79,6 +79,18 @@ To be eligible for a scholarship, you’ll need at least one of the following:
 
 In exceptional circumstances, if you achieved a 2:2 in your degree you may still be awarded a scholarship if you have significant relevant experience.
 
+Scholarships offer more than just financial benefits. They may also offer:
+
+* membership to the subject Professional Body
+* access to subject specialist events and webinars held by Professional Bodies
+* online and face to face workshops across the country
+* subject specialist mentors & coaching
+* a community of Scholars (ex-scholars, teachers, subject leaders)
+* access to subject specific classroom resources
+* CPD and Networking events during ITT year and Alumni
+
+Support packages differ from each Professional Body but these are the key areas of support available to Scholars during their ITT year and beyond.
+
 Scholarships are offered by independent institutions. They set their own eligibility criteria and you’ll need to apply through the relevant scholarship body:
 
 * [the Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
