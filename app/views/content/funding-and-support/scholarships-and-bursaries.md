@@ -71,6 +71,8 @@ You’ll also need to meet the bursary scheme’s individual terms and condition
 
 ### Scholarships
 
+#### Eligibility
+
 To be eligible for a scholarship, you’ll need at least one of the following:
 
 * a bachelor’s degree class 2:1 (honours) or higher
@@ -79,17 +81,19 @@ To be eligible for a scholarship, you’ll need at least one of the following:
 
 In exceptional circumstances, if you achieved a 2:2 in your degree you may still be awarded a scholarship if you have significant relevant experience.
 
+#### Benefits
+
 Scholarships offer more than just financial benefits. They may also offer:
 
 * membership to the subject Professional Body
 * access to subject specialist events and webinars held by Professional Bodies
 * online and face to face workshops across the country
-* subject specialist mentors & coaching
+* mentors & coaching
 * a community of Scholars (ex-scholars, teachers, subject leaders)
-* access to subject specific classroom resources
-* CPD and Networking events during ITT year and Alumni
+* access to classroom resources
+* CPD and networking events during your teacher training and beyond
 
-Support packages differ from each Professional Body but these are the key areas of support available to Scholars during their ITT year and beyond.
+#### How to apply
 
 Scholarships are offered by independent institutions. They set their own eligibility criteria and you’ll need to apply through the relevant scholarship body:
 
@@ -98,6 +102,8 @@ Scholarships are offered by independent institutions. They set their own eligibi
 * [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
 * [the Institute of Mathematics and its Applications](https://teachingmathsscholars.org/home) (maths)
 * [the Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
+
+Each scholarship body will have its own deadline for applications. You can find these on their individual websites.
 
 ## Undergraduate bursaries
 
