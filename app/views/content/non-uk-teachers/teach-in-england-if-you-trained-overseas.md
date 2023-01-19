@@ -75,7 +75,7 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 
 ### Your professional qualifications 
 
-Schools you apply to will want to see evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx)showing how your qualifications compare to English ones.  
+Schools you apply to will want to see evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones.  
 
 ## Apply for qualified teacher status (QTS)
 
@@ -104,7 +104,7 @@ From 1 February 2023, if you have a teaching qualification from the following co
 * Ukraine
 * the USA
 
-In addition, if you have a subject specialism in languages, mathematics or physics and a teaching qualification from the following countries, you will be able to use the service to check if you meet the requirements for QTS: 
+In addition, if you have a subject specialism in languages, mathematics or science and a teaching qualification from the following countries, you will be able to use the service to check if you meet the requirements for QTS: 
 
 * Ghana
 * India
@@ -124,7 +124,6 @@ You will not have to pay a fee or undergo further training. However, to be award
 If you’re not eligible to use the new service, you may be able to:
 
 * [complete initial teacher training in England](https://getintoteaching.education.gov.uk/non-uk-teachers/train-to-teach-in-england-as-an-international-student)
-* [work without QTS and then undergo the assessment only route](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#apply-for-assessment-only-qts)
 * [apply for international qualified teacher status (iQTS)](https://getintoteaching.education.gov.uk/non-uk-teachers/international-qualified-teacher-status)
 
 
@@ -132,9 +131,7 @@ If you’re not eligible to use the new service, you may be able to:
 
 Once you've obtained QTS, you will need to find a teaching job in England. To do this, you must apply to individual schools (not the Department for Education). 
 
-You can search and apply for jobs by region, subject specialism and age group using [Teaching Vacancies](https://teaching-vacancies.service.gov.uk/?gclid=Cj0KCQiA_P6dBhD1ARIsAAGI7HCw9dQ-qerRqmVac1uNempXRIiJOdaSkJDNUjpMmBU4QsnKbYzn8ogaAvapEALw_wcB&gclsrc=aw.ds).
-
-Most teaching vacancies are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September. 
+You can search and apply for jobs by region, subject specialism and age group. Most teaching vacancies are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September. 
 
 Select a job to apply for, and contact the school to check they are open to sponsoring skilled worker visas. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
 
