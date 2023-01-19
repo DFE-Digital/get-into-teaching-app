@@ -27,3 +27,9 @@
      <li>one-to-one guidance from outstanding classroom teachers</li>
      <li>opportunities to network with qualified subject specialists</li>
   </ul>
+
+<h2>Select the region of the provider</h2>
+
+<section class="providers-list">
+  <%= render GroupedCards::ListingComponent.new @front_matter["provider_groups"] %>
+</section>
