@@ -278,10 +278,6 @@ provider_groups:
       name: Eukaria Finch
       telephone: 01252 717408
       email: scitt@sfet.org.uk
-    - header: Thamesmead SCITT
-      name: Stephanie Sandy
-      telephone: '01932 219412'
-      email: s.sandy@thamesmead.surrey.sch.uk
     - header: The Buckingham Partnership
       link: https://www.bpscitt.uk/
       name: Laura Whitty

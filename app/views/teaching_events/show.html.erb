@@ -24,16 +24,15 @@
       <%= render(partial: "teaching_events/show/attending-training-providers") %>
       <%= render(partial: "teaching_events/show/how-to-attend") %>
       <%= render(partial: "teaching_events/show/provider-info") if @event.show_provider_information? %>
-      <div class="hide-on-mobile">
-        <%= render(partial: "teaching_events/show/other-events") %>
-      </div>
     </article>
 
     <aside role="complementary">
       <%= render(partial: "teaching_events/show/venue-information") if @event.show_venue_information? %>
-      <div class="hide-on-desktop hide-on-tablet">
-        <%= render(partial: "teaching_events/show/other-events") %>
-      </div>
+      <% if @event.scribble_id.blank? %>
+        <div class="hide-on-desktop hide-on-tablet">
+          <%= render(partial: "teaching_events/show/other-events") %>
+        </div>
+      <% end %>
     </aside>
   </div>
 
@@ -42,6 +41,12 @@
       <%= render(partial: "teaching_events/show/scribble") %>
     </div>
   <% end %>
+
+  <div class="container teaching-event__info <%= "hide-on-mobile" if @event.scribble_id.blank? %>">
+    <article>
+      <%= render(partial: "teaching_events/show/other-events") %>
+    </article>
+  </div>
 
   <%= render(partial: "teaching_events/show/what-theyre-saying") %>
 </div>
