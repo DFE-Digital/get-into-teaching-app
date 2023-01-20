@@ -509,6 +509,10 @@ $icon-size: 3rem;
       margin: 0 $indent-amount;
     }
 
+    .inset-text.grey {
+      margin: 0;
+    }
+
     @include mq($from: tablet) {
       flex-direction: row;
 
@@ -557,7 +561,7 @@ $icon-size: 3rem;
   }
 
   &__scribble {
-    margin: 4em 1em;
+    margin: 0 1em;
     flex-grow: 1;
   }
 
