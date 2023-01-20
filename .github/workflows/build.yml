@@ -71,7 +71,6 @@ jobs:
           push: true
           build-args: |
             BUILDKIT_INLINE_CACHE=1
-          provenance: false
 
       - uses: Azure/login@v1
         if: failure() && github.ref == 'refs/heads/master'
@@ -153,7 +152,6 @@ jobs:
           build-args: |
             BUILDKIT_INLINE_CACHE=1
             SHA=${{ steps.sha.outputs.short }}
-          provenance: false
 
       - name: Push release-build image
         uses: docker/build-push-action@v3.1.1
@@ -167,7 +165,6 @@ jobs:
           build-args: |
             BUILDKIT_INLINE_CACHE=1
             SHA=${{ steps.sha.outputs.short }}
-          provenance: false
 
       - uses: Azure/login@v1
         if: failure() && github.ref == 'refs/heads/master'
