@@ -2,6 +2,7 @@
 title: Subject knowledge enhancement (SKE)
 related_content:
     Get school experience : "/train-to-be-a-teacher/get-school-experience"
+    Find teacher training courses : "https://www.gov.uk/find-postgraduate-teacher-training-courses"
     Application tips : "/blog/application-tips-from-a-teacher-training-provider"
     Engineers teach physics : "/subjects/engineers-teach-physics"
     Get into teaching maths : "/subjects/maths"
