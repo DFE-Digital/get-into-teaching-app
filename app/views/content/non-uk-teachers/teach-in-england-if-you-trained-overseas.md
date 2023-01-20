@@ -104,7 +104,7 @@ From 1 February 2023, if you have a teaching qualification from the following co
 * Ukraine
 * the USA
 
-In addition, if you have a subject specialism in languages, mathematics or science and a teaching qualification from the following countries, you will be able to use the service to check if you meet the requirements for QTS: 
+In addition, if you have a subject specialism in languages, mathematics or science and a teaching qualification to teach to teach 11 to 16 year olds from the following countries, you will be able to use the service to check if you meet the requirements for QTS: 
 
 * Ghana
 * India
@@ -172,9 +172,9 @@ If you’ve successfully used the [Apply for QTS in England](https://apply-for-q
 
 ## Plan your move to the UK
 
-The following resources may be useful as you plan your move:
+The following suggestions and resources may be useful as you plan your move:
 
-* [open a digital bank account](https://www.moneysupermarket.com/current-accounts/digital-banking/) (you can do this before you arrive in the UK, and you will not need a UK address to do so)
+* open a digital bank account – you can do this before you arrive in the UK, and you will not need a UK address to do so
 * [find somewhere to live](https://www.gov.uk/government/publications/how-to-rent)
 * [get a national insurance (NI) number](https://www.gov.uk/national-insurance/your-national-insurance-number)
 * [register with a doctor](https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/)
@@ -186,7 +186,7 @@ The following resources may be useful as you plan your move:
 
 The Department for Education (DfE) does not employ teachers directly. Do not send us your CV, as we will not be able to help you find a teaching job. 
 
-Please do not email to ask when a country or subject will be added to the list for QTS in England. We’ll [publish updates as new countries and subjects are added](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#).
+Please do not email to ask when a country or subject will be added to the list for QTS in England. We’ll [publish an update about eligibility for the service](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#) by May 2023.
 
 If you have general questions about the information on this page, you can email us at teach.inengland@education.gov.uk.
 

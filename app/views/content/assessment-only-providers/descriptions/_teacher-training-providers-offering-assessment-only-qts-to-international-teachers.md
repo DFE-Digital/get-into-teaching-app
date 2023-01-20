@@ -4,7 +4,7 @@ Teachers outside the UK who do not have a teaching qualification, but [meet the 
 
 You will not have to visit or train in England. However, you will need to be assessed at your place of work by an examiner from your teaching training provider. Your teacher training provider can explain what type of school you must be working in to undergo assessment only QTS.
 
-Fees range from about £1,500 to £4,000, but vary between providers and may be substantially more if you’re outside the UK. Check with individual providers for more details.
+Fees range from about £1,500 to £4,000, BANG but vary between providers and may be substantially more if you’re outside the UK. Check with individual providers for more details.
 
 
 Assessment only training providers cannot give you advice about:
@@ -21,4 +21,4 @@ Teachers outside the UK with a teaching qualification may be eligible to use a n
 
 #### Teach in England
 
-[Learn more about working in England if you’re a teacher from outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas#apply-for-qualified-teacher-status-qts).
+[Learn more about working in England if you’re a teacher from outside the UK](/non-uk-teachers/teach-in-england-if-you-trained-overseas).

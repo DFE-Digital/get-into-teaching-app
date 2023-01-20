@@ -254,13 +254,16 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 Find out what financial support is available to [fund your training](/funding-and-support) if you are in the UK under the [Ukraine Family Scheme visa](https://www.gov.uk/guidance/apply-for-a-ukraine-family-scheme-visa), the [Ukraine Sponsorship Scheme](https://www.gov.uk/guidance/apply-for-a-visa-under-the-ukraine-sponsorship-scheme) or the [Ukraine Extension Scheme](https://www.gov.uk/guidance/apply-to-stay-in-the-uk-under-the-ukraine-extension-scheme).
 
-## Tips for schools and training providers
+## Information for schools and training providers
 
 ### Help from DfE
 
-DfE has made some funding available for assessment-only QTS programmes for Ukrainians. Contact teach.inengland@education.gov.uk for more information. 
+From 1 February 2023, Ukrainians will be able to obtain QTS through DfE's new professional recognition service,[Apply for QTS in England](#apply-for-qts-in-england).
 
-From spring 2023, Ukrainians will be able to [apply to the Teaching Regulation Agency for QTS](#apply-for-qts-in-england).
+[Learn more about the new service](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2#). 
+
+DfE has also made some funding available for assessment-only QTS programmes for Ukrainians. Contact teach.inengland@education.gov.uk for more information. 
+
 
 ### Visas and immigration
 
@@ -279,6 +282,7 @@ DfE encourages schools to employ Ukrainian teachers and prospective teachers as 
 ### Safeguarding
 
 Schools must adopt robust recruitment procedures preventing overseas applicants who are unsuitable to work with children from securing a role in school.
+
 Schools must be guided by the [statutory guidance on safeguarding children and safer recruitment](https://www.gov.uk/government/publications/keeping-children-safe-in-education--2). They should also carry out [additional checks related to international recruitment and training](https://www.gov.uk/guidance/recruit-teachers-from-overseas#makean).  
 
 Given documentation may be difficult for refugees to provide, we expect schools to draw on a varying range of sources on a case by case basis, depending on the individual in question. It is good practice to carry out a risk assessment recording the evidence you have gathered to reach your decision. 
