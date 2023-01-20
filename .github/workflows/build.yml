@@ -63,9 +63,6 @@ jobs:
         with:
           target: base
           context: .
-          cache-from: |
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:base-master
           tags: |
             ${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
             ${{ env.DOCKER_REPOSITORY }}:base-sha-${{ steps.sha.outputs.short }}
@@ -144,13 +141,6 @@ jobs:
         with:
           target: release
           context: .
-          cache-from: |
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:base-master
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:release-build-master
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:master
           tags: |
             ${{ env.DOCKER_REPOSITORY }}:${{ env.BRANCH_TAG }}
             ${{ env.DOCKER_REPOSITORY }}:sha-${{ steps.sha.outputs.short }}
@@ -164,11 +154,6 @@ jobs:
         with:
           target: release-build
           context: .
-          cache-from: |
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:release-build-master
-            type=registry,ref=${{ env.DOCKER_REPOSITORY }}:base-${{ env.BRANCH_TAG }}
-            type=registry,ref=${{ env.DOCKER_REPOSITORY}}:base-master
           tags: |
             ${{ env.DOCKER_REPOSITORY }}:release-build-${{ env.BRANCH_TAG }}
             ${{ env.DOCKER_REPOSITORY }}:release-build-sha-${{ steps.sha.outputs.short }}
