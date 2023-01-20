@@ -31,6 +31,8 @@ jobs:
       - name: Set up Docker Buildx
         id: buildx
         uses: docker/setup-buildx-action@master
+        with:
+          version: v0.9.1
 
       - name: Get Short SHA
         id: sha
@@ -110,6 +112,8 @@ jobs:
       - name: Set up Docker Buildx
         id: buildx
         uses: docker/setup-buildx-action@master
+        with:
+          version: v0.9.1
 
       - name: Get Short SHA
         id: sha
