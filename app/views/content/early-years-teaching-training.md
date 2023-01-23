@@ -67,7 +67,7 @@ To start early years teacher training, you’ll need these GCSE qualifications (
 * English grade 4 (C)
 * science grade 4 (C)
 
-### International students
+### Non-UK candidates
 
 You can can apply for early years initial teacher training, if you meet all [the academic entry criteria and the relevant immigration permissions](https://www.gov.uk/guidance/early-years-initial-teacher-training-2022-to-2023-funding-guidance#international-students).
 
