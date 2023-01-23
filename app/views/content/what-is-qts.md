@@ -35,7 +35,7 @@ You need qualified teacher status (QTS) to teach in maintained primary, secondar
 
 Some schools can employ teachers without QTS (for example, [private schools](https://www.gov.uk/types-of-school/private-schools) and [academy schools](https://www.gov.uk/types-of-school/academies)) but many still use it to assess the quality of candidates.
 
-You do not need QTS to teach in [further education](https://getintoteaching.education.gov.uk/become-a-further-education-teacher) or work in [early years education](https://getintoteaching.education.gov.uk/early-years-teaching-training).
+You do not need QTS to teach in [further education](/become-a-further-education-teacher) or work in [early years education](/early-years-teaching-training).
 
 $international-content$
 
@@ -45,13 +45,13 @@ You can get QTS through undergraduate or postgraduate initial teacher training. 
 
 You can apply for either a primary or secondary course awarding QTS. 
 
-[Find out more about teacher training](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/initial-teacher-training).
+[Find out more about teacher training](/train-to-be-a-teacher/initial-teacher-training).
 
-You can also get a postgraduate qualification through teacher training such as a [postgraduate certificate in education (PGCE)](https://getintoteaching.education.gov.uk/what-is-a-pgce). 
+You can also get a postgraduate qualification through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-pgce). 
 
 Some courses just offer a PGCE without QTS, but this means you may not be fully qualified to teach in your chosen school.
 
-[Find out how to get QTS through teacher training](https://getintoteaching.education.gov.uk/train-to-be-a-teacher).
+[Find out how to get QTS through teacher training](/train-to-be-a-teacher).
 
 ## Get QTS through an assessment only programme
 
@@ -62,7 +62,7 @@ You can usually do this if you’ve worked as an unqualified teacher:
 * for a significant amount of time (for example, 2 years)
 * in more than one school
 
-[Find out how to get QTS through assessment only](https://getintoteaching.education.gov.uk/train-to-be-a-teacher/if-you-have-experience).
+[Find out how to get QTS through assessment only](/train-to-be-a-teacher/if-you-have-experience).
 
 ## Get QTS if you qualified as a teacher outside England
 
