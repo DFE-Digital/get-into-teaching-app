@@ -136,17 +136,17 @@ You can search and apply for jobs by region, subject specialism and age group. M
 Select a job to apply for, and contact the school to check they are open to sponsoring skilled worker visas. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
 
 
-Set up a Teaching Vacancies job alert to be updated about opportunities throughout the year.
+You can set up a job alert to be updated about opportunities throughout the year.
 
 
 <p class="call-to-action__action">
-  <a href="https://teaching-vacancies.service.gov.uk/?utm_source=int_teacher_recruitment&utm_medium=referral&utm_campaign=AY21-22">Search Teaching <span>Vacancies</span></a>
+  <a href="https://teaching-vacancies.service.gov.uk/?utm_source=int_teacher_recruitment&utm_medium=referral&utm_campaign=AY21-22">Search for teaching jobs in England</a>
 </p>
 
 
 ## Apply for your visa
 
-You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Our [guidance on visas and immigration](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration) explains how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for. 
+You can apply for a skilled worker visa once you have been offered a teaching job at a school which can sponsor them. Find out [how to apply for a skilled worker visa, what salary you will need to earn and other types of visa you may be eligible for](https://www.gov.uk/government/publications/teach-in-england-if-you-qualified-outside-the-uk/teach-in-england-if-you-qualified-outside-the-uk#visas-and-immigration). 
 
 You may have a pre-existing right to work in the UK, such as settled or pre-settled status under the [EU Settlement Scheme](https://www.gov.uk/settled-status-eu-citizens-families) or [indefinite leave to remain in the UK](https://www.gov.uk/guidance/indefinite-leave-to-remain-in-the-uk).
 
@@ -162,7 +162,7 @@ You can also learn more about [bringing your partner and children](https://www.g
 
 ## Learn about life as a teacher in England
 
-If you’ve successfully used the [Apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) service, and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/support-for-early-career-teachers). 
+If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) service, and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/support-for-early-career-teachers). 
 
 [Read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
