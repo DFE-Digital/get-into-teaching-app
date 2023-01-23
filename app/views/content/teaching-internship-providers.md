@@ -223,7 +223,7 @@ provider_groups:
       email: m.lairini@northerneducationtrust.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Ormiston Academies Trust
-      link: www.ormistonacademiestrust.co.uk
+      link: https://www.ormistonacademiestrust.co.uk/
       name: Jemma Sherwood
       email: jemma.sherwood@ormistonacademies.co.uk
       subjects: chemistry, computing, maths, physics, languages
