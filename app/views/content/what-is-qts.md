@@ -43,7 +43,7 @@ $international-content$
 
 You can get QTS through undergraduate or postgraduate initial teacher training. This mostly involves school placements with some theoretical learning.
 
-You can apply for either a primary or secondary course awarding QTS. 
+You can apply for either a primary or secondary teacher training course awarding QTS. 
 
 [Find out more about teacher training](/train-to-be-a-teacher/initial-teacher-training).
 
@@ -55,7 +55,7 @@ Some courses just offer a PGCE without QTS, but this means you may not be fully 
 
 ## Get QTS through an assessment only programme
 
-It’s possible to get QTS through an assessment only programme. This means you can show that you already meet the standards for QTS without having to do any more training.
+You could get QTS through an assessment only programme. This means you can show that you already meet the standards for QTS without having to do any more training.
 
 You can usually do this if you’ve worked as an unqualified teacher:
 
