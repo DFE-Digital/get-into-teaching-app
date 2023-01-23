@@ -85,14 +85,14 @@ In exceptional circumstances, if you achieved a 2:2 in your degree you may still
 
 Scholarships are provided by charitable organisations with a passion for their subject area.
 
-They offer more than just financial financial benefits, including:
+They offer more than just financial benefits, including:
 
-* access to subject specialist events and webinars
+* subject specialist events and webinars
 * online and face-to-face workshops across the country
 * mentoring and coaching
 * a community of ex-scholars, teachers and subject leaders
 * access to classroom resources
-* CPD and networking events during your teacher training and beyond
+* networking events during your teacher training and beyond
 
 #### How to apply
 
