@@ -60,12 +60,7 @@ $get-school-experience$
 
 ### Teaching internships
 
-You could apply for a [paid teaching internship](/teaching-internship-providers) if you’re currently doing an undergraduate degree and are interested in teaching:
-
-- maths
-- physics
-- computing
-- modern languages
+If you’re an undergraduate interested in teaching chemistry, computing, languages, maths or physics then you could do a [paid teaching internship](/teaching-internship-providers) to find out if teaching is right for you.
 
 ### Watch pre-recorded lessons
 
