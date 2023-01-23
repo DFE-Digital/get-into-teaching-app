@@ -82,7 +82,7 @@ provider_groups:
       email: psmith@farlingaye.suffolk.sch.uk
       subjects: maths, physics
     - header: Ormiston Academies Trust
-      link: www.ormistonacademiestrust.co.uk
+      link: https://www.ormistonacademiestrust.co.uk
       name: Jemma Sherwood
       email: jemma.sherwood@ormistonacademies.co.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -287,7 +287,7 @@ provider_groups:
   South West:
     providers:
     - header: Odyssey Teaching School Hub
-      link: www.patesgs.org
+      link: https://www.patesgs.org/
       name: Tim Connole
       email: tconnole@patesgs.org  01242 538272
       subjects: chemistry, computing, maths, physics, languages
@@ -314,7 +314,7 @@ provider_groups:
   West Midlands:
     providers:
     - header: Arthur Terry SCITT
-      link: " www.atnts.com"
+      link: https://arthurterryteachingschool.atlp.org.uk/
       name: Robert Bloomfield
       email: rbloomfield@arthurterry.bham.sch.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -334,7 +334,7 @@ provider_groups:
       email: claire.amed@creativeeducationtrust.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Ormiston Academies Trust
-      link: www.ormistonacademiestrust.co.uk
+      link: https://www.ormistonacademiestrust.co.uk
       name: Jemma Sherwood
       email: jemma.sherwood@ormistonacademies.co.uk
       subjects: chemistry, computing, maths, physics, languages
