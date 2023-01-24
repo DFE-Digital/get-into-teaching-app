@@ -69,7 +69,7 @@ To start early years teacher training, you’ll need these GCSE qualifications (
 
 ### Non-UK candidates
 
-You can can apply for early years initial teacher training, if you meet all [the academic entry criteria and the relevant immigration permissions](https://www.gov.uk/guidance/early-years-initial-teacher-training-2022-to-2023-funding-guidance#international-students).
+You can can apply for early years initial teacher training, if you meet all the [academic entry criteria and immigration permissions for non-UK candidates](https://www.gov.uk/guidance/early-years-initial-teacher-training-2022-to-2023-funding-guidance#international-students).
 
 ## Routes to early years teacher status
 
@@ -94,7 +94,7 @@ This route is for graduates working in an early years setting who want to achiev
 $EY-graduate-employment$
 
 ### Undergraduate training
-This route is for people who want to study a full-time bachelor’s degree in an early-childhood related subject leading to EYTS.
+This route is for people who want to study for a full-time bachelor’s degree in an early-childhood related subject leading to EYTS.
 
 $EY-undergraduate$
 
