@@ -106,7 +106,7 @@ provider_groups:
       name: Sarah Drury
       email: sarah.drury@tkat.org 
       subjects: chemistry, computing, maths, physics, languages
-    - header: The Hertforshire and Essex High School
+    - header: The Hertfordshire and Essex High School
       link: https://www.hertsandessex.herts.sch.uk/
       name: Claire Ruthven
       email: claire.ruthven@hertsandessex.herts.sch.uk
@@ -223,7 +223,7 @@ provider_groups:
       email: m.lairini@northerneducationtrust.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Ormiston Academies Trust
-      link: https://www.ormistonacademiestrust.co.uk/
+      link: https://www.ormistonacademiestrust.co.uk
       name: Jemma Sherwood
       email: jemma.sherwood@ormistonacademies.co.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -323,7 +323,7 @@ provider_groups:
       name: Michael Eszrenyi
       email: meszrenyi@barrbeaconschool.co.uk
       subjects: chemistry, computing, maths, physics, languages
-    - header: Biship Challoner Training School
+    - header: Bishop Challoner Training School
       link: https://www.bctsa.org/605/teaching-internship-programme
       name: Angela Hodgin
       email: trainingschool@bishopchalloner.bham.sch.uk
@@ -349,7 +349,7 @@ provider_groups:
       name: Andy Duffy
       email: ad@princehenrys.worcs.sch.uk
       subjects: chemistry, computing, maths, physics, languages
-    - header: St Jospeph's College
+    - header: St Joseph's College
       link: https://www.stjosephstrentvale.com/
       name: Sam Chater
       email: schater@stjosephsmail.com
@@ -366,7 +366,7 @@ provider_groups:
       subjects: chemistry, computing, maths, physics, languages
     - header: Windsor Academy Trust
       link: https://www.windsoracademytrust.org.uk/
-      name: Nathalie Gotling
+      name: Nathalie Gotting
       email: ngotting@kingswinford.windsoracademytrust.org.uk
       subjects: chemistry, computing, maths, physics, languages
   Yorkshire and the Humber:
