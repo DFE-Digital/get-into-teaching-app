@@ -53,7 +53,7 @@ The early years are critical in children’s development. As an early years teac
 
 You’ll need to do early years initial teacher training (EYITT) to achieve early years teacher status (EYTS). This will allow you to work in a nursery or early years setting. 
 
-If you want to teach in a primary, including in a reception class, or secondary school then you will need to achieve qualified teacher status (QTS). [Find out more about training to teach primary and secondary pupils](/train-to-be-a-teacher).
+If you want to teach in a primary school, including in a reception class, or secondary school then you will need to achieve qualified teacher status (QTS). [Find out more about training to teach primary and secondary pupils](/train-to-be-a-teacher).
 
 ## What you need to become an early years teacher
 
