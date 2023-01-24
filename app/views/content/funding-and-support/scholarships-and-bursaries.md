@@ -88,7 +88,7 @@ Scholarships are provided by charitable organisations with a passion for their s
 They offer more than just financial benefits, including:
 
 * subject specialist events and webinars
-* online and face-to-face workshops across the country
+* online and face-to-face workshops
 * mentoring and coaching
 * a community of ex-scholars, teachers and subject leaders
 * access to classroom resources
