@@ -20,7 +20,7 @@ description: |-
   Discover how to get Early Years Teacher Status (EYTS) and help to educate and inspire future generations. Official guidance on early years teacher training.
 inset_text:
   international-content:
-    text: If you're a non-UK candidate, you can can apply for early years initial teacher training, if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2022-to-2023-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
+    text: If you're a non-UK candidate, you can apply for early years initial teacher training, if you meet all the <a href="https://www.gov.uk/guidance/early-years-initial-teacher-training-2022-to-2023-funding-guidance#international-students">academic entry criteria and immigration permissions for non-UK candidates</a>.
     color: grey
 calls_to_action:
   EY-graduate:
