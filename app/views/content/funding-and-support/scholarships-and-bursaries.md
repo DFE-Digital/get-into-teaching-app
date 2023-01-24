@@ -1,6 +1,6 @@
 ---
-title: "Scholarships and bursaries"
-heading: "Scholarships and bursaries"
+title: "Bursaries and scholarships"
+heading: "Bursaries and scholarships"
 description: |-
    Find out if you're eligible for extra funding depending on the subject you're training to teach.
 related_content:
