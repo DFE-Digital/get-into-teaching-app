@@ -40,12 +40,6 @@ accordion:
 
 International qualified teacher status (iQTS) is a new teaching qualification backed by the UK government. iQTS meets the same high standards as [English qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts), and leads to the automatic award of QTS. You can train where you live and work, with no need to visit the UK.
 
-### Applying for the 2023/24 academic year
-
-iQTS applications for the 2022/23 academic year have now closed. You'll be able to apply for the 2023/24 academic year in early 2023.
-
-Contact the training providers on this page directly to register your interest. More training providers will be joining the programme for the 2023/24 academic year to offer iQTS in new locations around the world. Visit this page for updates.  
-
 ## Who iQTS is for
 
 iQTS is an international teaching qualification designed for UK and non-UK citizens living outside the UK. iQTS means you can gain [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) while working overseas.
@@ -83,3 +77,4 @@ iQTS is for you if you live outside the UK and you:
 
 ## Apply for iQTS, step by step
 
+iQTS applications for the 2023/24 academic year are now open.
