@@ -162,7 +162,7 @@ You can also learn more about [bringing your partner and children](https://www.g
 
 ## Learn about life as a teacher in England
 
-If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) service, and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/support-for-early-career-teachers). 
+If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/support-for-early-career-teachers). 
 
 [Read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards).
 
