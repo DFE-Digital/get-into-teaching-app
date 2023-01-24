@@ -1,6 +1,6 @@
 ---
-title: "Funding and support training to teach if you come from outside England"
-heading: "Funding and support training to teach if you come from outside England"
+title: "Get help to train if you're not from England"
+heading: "Get help to train if you're not from England"
 description: |-
   Find out about the different arrangements for getting financial support if you live outside England.
 related_content:
