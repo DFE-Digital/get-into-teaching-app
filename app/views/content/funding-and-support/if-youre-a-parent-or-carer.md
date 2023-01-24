@@ -1,6 +1,7 @@
 ---
 title: "Get support if you're a parent or carer"
 heading: "Get support training to teach if you're a parent or carer"
+subcategory: Get extra support
 description: |-
   Find out what extra grants and schemes are available if you have children or other caring responsibilities.
 related_content:
