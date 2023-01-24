@@ -1,17 +1,22 @@
 ---
 title: "Qualified teacher status (QTS)"
-heading: "Qualified teacher status (QTS)"
+heading: "What is qualified teacher status (QTS)?"
 description: |-
-  Qualified teacher status (QTS) is what you need to teach in most state schools in England. Find out how to get QTS and the different routes available.
+  Qualified teacher status (QTS) is what you need to teach in maintained primary, secondary and special schools in England. Find out how to get QTS.
 date: "2021-11-01"
-image: "media/images/content/hero-images/0007.jpg"
 backlink: "../../"
 related_content:
     What qualifications do you need to be a teacher? : "/is-teaching-right-for-me/qualifications-you-need-to-teach"
-    Train to be a teacher if you have a degree or are studying for one : "/train-to-be-a-teacher/if-you-have-a-degree"
-    What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
+    Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
+    How to apply for teacher training : "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
+    Find teacher training courses : "https://www.gov.uk/find-postgraduate-teacher-training-courses"
+    What will your teacher training be like?: "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
+inset_text:
+  international-content:
+    text: If you qualified as a teacher outside the UK, you can  teach in England for up to 4 years without QTS.
+    color: grey
 keywords:
   - PGCE
   - Post-graduate
@@ -26,26 +31,41 @@ keywords:
   - State-school
 ---
 
-Qualified teacher status (QTS) is what you need to teach in most primary and secondary schools in England.
+You need qualified teacher status (QTS) to teach in maintained primary, secondary and special schools in England. These are schools funded by local authorities.
 
-It is a confirmation that you have the right training and meet the standards required to be a teacher.
+Some schools can employ teachers without QTS (for example, [private schools](https://www.gov.uk/types-of-school/private-schools) and [academy schools](https://www.gov.uk/types-of-school/academies)) but many still use it to assess the quality of candidates.
 
-QTS is a teaching standard that is respected across the world. Having QTS means you can move around the country and teach in any state school.
+You do not need QTS to teach in [further education](/become-a-further-education-teacher) or work in [early years education](/early-years-teaching-training).
 
-## How to get QTS
+$international-content$
 
-All postgraduate teacher training courses in England lead to QTS. You can see the different types of courses available by [searching for postgraduate teacher training](https://www.gov.uk/find-postgraduate-teacher-training-courses).
+## Get QTS through teacher training
 
-Entry requirements for QTS courses include having an undergraduate degree and GCSEs at level 4/grade C or above in Maths and English. You’ll also need a level 4/grade C or above
-in Science if you want to be a primary school teacher.
+You can get QTS through undergraduate or postgraduate initial teacher training. This mostly involves school placements with some theoretical learning.
 
-As well as offering QTS, many courses also offer a postgraduate certificate in education (PGCE) or postgraduate diploma in education (PGDE). Find out about [PGCE and PGDE](/what-is-a-pgce).
+You can apply for either a primary or secondary teacher training course awarding QTS.
 
-## Assessment only route to QTS
+You can also get a postgraduate qualification through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-pgce). 
 
-It is possible to get QTS through an [assessment only programme](/assessment-only-providers) if you have the right teaching experience. You can usually do this if:
+Some courses just offer a PGCE without QTS, but this means you may not be fully qualified to teach in your chosen school.
 
-* you’ve already been employed as an unqualified teacher for a significant amount of time (for example, 2 years) and you’ve worked in more than one school
-* [you’re a qualified teacher who trained overseas](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk)
+[Find out how to get QTS through teacher training](/train-to-be-a-teacher).
 
-<a href="/train-to-be-a-teacher" class="button">Discover the different ways to train</a>
+## Get QTS through an assessment only programme
+
+You could get QTS through an assessment only programme. This means you can show that you already meet the standards for QTS without having to do any more training.
+
+You can usually do this if you’ve worked as an unqualified teacher:
+
+* for a significant amount of time (for example, 2 years)
+* in more than one school
+
+[Find out how to get QTS through assessment only](/train-to-be-a-teacher/if-you-have-experience).
+
+## Get QTS if you qualified as a teacher outside England
+
+If you trained to teach in Wales, your QTS will be automatically recognised in England and awarded by the [Education Workforce Council (EWC)](https://www.ewc.wales/site/index.php/en/).
+
+If you trained to teach in Scotland, Northern Ireland or in a country outside the UK, you may be able to apply for QTS in England without any further fees or training.
+
+You can [check your eligibility to apply for qualified teacher status (QTS) if you qualified as a teacher outside England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start).
