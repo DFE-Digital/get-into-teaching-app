@@ -10,7 +10,7 @@ related_content:
     Who do you want to teach? : "/train-to-be-a-teacher/who-do-you-want-to-teach"
     How to apply for teacher training : "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
     Find teacher training courses : "https://www.gov.uk/find-postgraduate-teacher-training-courses"
-    What to expect on your teacher training: "/blog/what-to-expect-on-your-teacher-training"
+    What will your teacher training be like?: "/train-to-be-a-teacher/initial-teacher-training"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-qts
 inset_text:
@@ -43,9 +43,7 @@ $international-content$
 
 You can get QTS through undergraduate or postgraduate initial teacher training. This mostly involves school placements with some theoretical learning.
 
-You can apply for either a primary or secondary teacher training course awarding QTS. 
-
-[Find out more about teacher training](/train-to-be-a-teacher/initial-teacher-training).
+You can apply for either a primary or secondary teacher training course awarding QTS.
 
 You can also get a postgraduate qualification through teacher training such as a [postgraduate certificate in education (PGCE)](/what-is-a-pgce). 
 
@@ -68,6 +66,6 @@ You can usually do this if you’ve worked as an unqualified teacher:
 
 If you trained to teach in Wales, your QTS will be automatically recognised in England and awarded by the [Education Workforce Council (EWC)](https://www.ewc.wales/site/index.php/en/).
 
-If you trained to teach in Scotland, Northern Ireland or outside the UK, you may be able to apply for QTS in England without any further fees or training.
+If you trained to teach in Scotland, Northern Ireland or in a country outside the UK, you may be able to apply for QTS in England without any further fees or training.
 
 You can [check your eligibility to apply for qualified teacher status (QTS) if you qualified as a teacher outside England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start).
