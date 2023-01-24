@@ -71,6 +71,8 @@ You’ll also need to meet the bursary scheme’s individual terms and condition
 
 ### Scholarships
 
+#### Eligibility
+
 To be eligible for a scholarship, you’ll need at least one of the following:
 
 * a bachelor’s degree class 2:1 (honours) or higher
@@ -79,6 +81,21 @@ To be eligible for a scholarship, you’ll need at least one of the following:
 
 In exceptional circumstances, if you achieved a 2:2 in your degree you may still be awarded a scholarship if you have significant relevant experience.
 
+#### Benefits
+
+Scholarships are provided by charitable organisations with a passion for their subject area.
+
+They offer more than just financial benefits, including:
+
+* subject specialist events and webinars
+* online and face-to-face workshops
+* mentoring and coaching
+* a community of ex-scholars, teachers and subject leaders
+* access to classroom resources
+* networking events during your teacher training and beyond
+
+#### How to apply
+
 Scholarships are offered by independent institutions. They set their own eligibility criteria and you’ll need to apply through the relevant scholarship body:
 
 * [the Royal Society of Chemistry](https://www.rsc.org/awards-funding/funding/teacher-training-scholarships/) (chemistry)
@@ -86,6 +103,8 @@ Scholarships are offered by independent institutions. They set their own eligibi
 * [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (languages -- French, German and Spanish only)
 * [the Institute of Mathematics and its Applications](https://teachingmathsscholars.org/home) (maths)
 * [the Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (physics)
+
+Each scholarship body will have its own deadline for applications. You can find these on their individual websites.
 
 ## Undergraduate bursaries
 
