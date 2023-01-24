@@ -1,6 +1,6 @@
 ---
-title: "Get help to train if you're not from England"
-heading: "Get help to train if you're not from England"
+title: "How to fund your training if you're not from England"
+heading: "How to fund your training if you're not from England"
 description: |-
   Find out about the different arrangements for getting financial support if you live outside England.
 related_content:
