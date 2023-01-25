@@ -13,7 +13,8 @@ $mobile-cutoff: 800px;
     display: grid;
 
     grid-template-columns: 3em repeat(2, 1fr) 2em;
-    grid-template-rows: $sp-2
+    grid-template-rows:
+      spacing(desktop, 2)
       8em $title-overlap-img repeat(
         2,
         minmax(1em, max-content)
@@ -28,7 +29,8 @@ $mobile-cutoff: 800px;
     &__content,
     &__paragraph {
       grid-area: 5 / 1 / 5 / 5;
-      padding: 0 $sp-4 $sp-6;
+      @include padding(4, $direction: horizontal);
+      @include padding(6, $direction: bottom);
     }
 
     &__subtitle {
@@ -57,7 +59,7 @@ $mobile-cutoff: 800px;
           4,
           minmax(100px, 1fr)
         );
-      grid-template-rows: $sp-2 $sp-9 repeat(5, fit-content(0)) 2em;
+      grid-template-rows: spacing(desktop, 2) (spacing(desktop, 5) + spacing(desktop, 4)) repeat(5, fit-content(0)) 2em;
 
       &__title {
         grid-area: 3 / 1 / 5 / 5;
@@ -116,18 +118,18 @@ $mobile-cutoff: 800px;
   }
 
   &.blend-content {
-    padding-bottom: $sp-4;
+    padding-bottom: spacing(desktop, 4);
 
     @include mq($from: tablet) {
-      padding-bottom: $sp-11 + $sp-6;
+      padding-bottom: spacing(tablet, 7) + spacing(desktop, 6);
 
       & + .main-section {
-        margin-top: -$sp-7;
+        margin-top: -(spacing(tablet, 7));
       }
     }
 
     & + .main-section {
-      margin-top: -$sp-6;
+      margin-top: -(spacing(desktop, 6));
     }
   }
 }

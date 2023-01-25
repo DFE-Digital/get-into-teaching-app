@@ -14,7 +14,7 @@
 
   &__link a {
     display: inline-block;
-    padding: $sp-2;
+    @include padding(2);
 
     .icon {
       margin-left: .5em;
@@ -43,7 +43,7 @@
 
   &__search a {
     background-color: $pink;
-    padding: $sp-2;
+    @include padding(2);
 
     &:hover {
       background-color: $pink-dark;

@@ -4,7 +4,7 @@
 @import "header/extra-navigation";
 @import "header/menu-button";
 
-body > header{
+body > header {
   @include mq($from: tablet) {
     border-bottom: 1px solid $grey;
   }

@@ -14,11 +14,8 @@
     width: 100%;
 
     .heading--box-blue {
-      margin: 0 0 $sp-4 0;
-
-      @include mq($from: tablet) {
-        margin: 0 0 $sp-6 0;
-      }
+      margin: 0;
+      @include margin(4, $direction: bottom);
     }
   }
 
@@ -27,16 +24,14 @@
     grid-template-columns: 1fr;
     margin: 0;
     padding: 0;
-    gap: $sp-3;
     list-style: none;
+    @include gap(3);
 
     p:last-child {
       margin-bottom: 0;
     }
 
     @include mq($from: tablet) {
-      gap: $sp-4;
-
       &:not(.one-column) {
         grid-template-columns: repeat(2, 1fr);
       }
@@ -63,15 +58,11 @@
     margin-bottom: 0;
 
     a {
-      padding: $sp-4;
+      @include padding(4);
       text-decoration: none;
       display: flex;
       gap: 1.5em;
       width: 100%;
-
-      @include mq($from: tablet) {
-        padding: $sp-6;
-      }
     }
 
     &:hover {
@@ -106,13 +97,12 @@
 
   &__questions {
     background: $white;
-    padding-top: $sp-7;
-    gap: $sp-5;
+    @include padding(7, $direction: top);
+    @include gap(5);
 
     @include mq($from: tablet) {
       flex-direction: row;
       gap: 0;
-      padding-top: $sp-11;
     }
   }
 
@@ -121,7 +111,7 @@
       flex: 1;
     }
 
-    padding: 0 $sp-4;
+    @include padding(4, $direction: horizontal);
 
     h2 {
       @extend .heading-m;
@@ -132,7 +122,7 @@
     }
 
     * + * {
-      margin-top: $sp-2;
+      @include margin(2, $direction: top);
       margin-bottom: 0;
     }
   }
@@ -142,16 +132,16 @@
   background-color: $grey;
 
   &__container {
-    margin: $sp-7 auto;
+    margin: auto;
+    @include margin(7, $direction: vertical);
     max-width: $content-max-width;
     display: flex;
     flex-direction: column-reverse;
-    gap: $sp-5;
+    @include gap(5);
     box-sizing: border-box;
-    padding: 0 $sp-4;
+    @include padding(4, $direction: horizontal);
 
     @include mq($from: tablet) {
-      margin: $sp-11 auto;
       flex-direction: row;
     }
   }
@@ -176,7 +166,7 @@
         margin-bottom: 0;
 
         &:not(:last-child) {
-          margin-bottom: $sp-1;
+          @include margin(1, $direction: bottom);
         }
       }
     }

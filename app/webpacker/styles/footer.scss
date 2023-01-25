@@ -1,10 +1,7 @@
 footer.site-footer {
   background-color: $black;
-  padding: $sp-7 $sp-4;
-
-  @include mq($from: tablet) {
-    padding: $sp-11 $sp-4;
-  }
+  @include padding(7, $direction: vertical);
+  @include padding(4, $direction: horizontal);
 
   .site-footer__wrapper {
     display: flex;
@@ -33,10 +30,10 @@ footer.site-footer {
         @include font-size("xsmall");
         @extend .link--grey;
 
-        margin-bottom: $sp-1;
+        @include margin(1, $direction: bottom);
 
         @include mq($from: tablet) {
-          padding: $sp-1 0;
+          @include padding(1, $direction: vertical);
         }
       }
 
@@ -70,7 +67,7 @@ footer.site-footer {
 
       a {
         max-height: 2em;
-        padding: $sp-1;
+        @include padding(1);
 
         &:first-child {
           padding-left: 0;
@@ -95,8 +92,8 @@ footer.site-footer {
 
   .site-footer-bottom {
     border-top: 1px solid $grey-mid;
-    margin-top: $sp-4;
-    padding-top: $sp-4;
+    @include margin(4, $direction: top);
+    @include padding(4, $direction: top);
 
     &__logo-container {
       flex: 43% 0 0;
@@ -126,7 +123,7 @@ footer.site-footer {
       &__license {
         @include font-size("xsmall");
         color: $grey-mid;
-        margin-bottom: $sp-2;
+        @include margin(2, $direction: bottom);
 
         @include mq($from: tablet) {
           text-align: right;

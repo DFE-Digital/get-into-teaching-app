@@ -1,4 +1,4 @@
-$indent-amount: $sp-4;
+$indent-amount: spacing(desktop, 4);
 
 @mixin indent-left-and-right($left: $indent-amount, $right: $indent-amount) {
   margin-left: $left;

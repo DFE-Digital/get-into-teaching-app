@@ -83,7 +83,7 @@ body > header nav {
         position: relative;
         flex-direction: row;
         border-bottom: 6px solid $white;
-        padding: $sp-4;
+        @include padding(4);
 
         &.active {
           border-bottom: 6px solid $purple;

@@ -93,7 +93,7 @@
 }
 
 .heading--with-caption {
-  margin-top: $sp-1;
+  @include margin(1, $direction: top);
 }
 
 .heading--box-transparent {
@@ -141,7 +141,7 @@
 }
 
 .heading--box-padding-l {
-  padding: $sp-4;
+  @include padding(4);
 }
 
 .heading--highlight-yellow {

@@ -1,10 +1,12 @@
 .container.breadcrumbs {
   width: 100%;
-  margin: $sp-2 auto;
+  margin: auto;
+  @include margin(2, $direction: vertical);
 
   .govuk-breadcrumbs {
     margin: 0;
-    padding: 0 $sp-4;
+    padding: 0;
+    @include padding(4, $direction: horizontal);
 
     .govuk-breadcrumbs__current {
       font-size: medium;

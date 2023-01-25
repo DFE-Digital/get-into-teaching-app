@@ -1,13 +1,85 @@
-$sp-base: 8px;
+$_sp-base: 8px;
 
-$sp-1: $sp-base * 1;
-$sp-2: $sp-base * 2;
-$sp-3: $sp-base * 3;
-$sp-4: $sp-base * 4;
-$sp-5: $sp-base * 5;
-$sp-6: $sp-base * 6;
-$sp-7: $sp-base * 7;
-$sp-8: $sp-base * 8;
-$sp-9: $sp-base * 9;
-$sp-10: $sp-base * 10;
-$sp-11: $sp-base * 11;
+$_spacings: (
+  mobile: (
+    1: $_sp-base * 1,
+    2: $_sp-base * 2,
+    3: $_sp-base * 3,
+    4: $_sp-base * 3,
+    5: $_sp-base * 4,
+    6: $_sp-base * 4,
+    7: $_sp-base * 7,
+  ),
+  tablet: (
+    1: $_sp-base * 1,
+    2: $_sp-base * 2,
+    3: $_sp-base * 3,
+    4: $_sp-base * 3,
+    5: $_sp-base * 4,
+    6: $_sp-base * 4,
+    7: $_sp-base * 7,
+  ),
+  desktop: (
+    1: $_sp-base * 1,
+    2: $_sp-base * 2,
+    3: $_sp-base * 3,
+    4: $_sp-base * 4,
+    5: $_sp-base * 5,
+    6: $_sp-base * 6,
+    7: $_sp-base * 11,
+  )
+);
+
+@function spacing($device-size, $n) {
+  @return map-get($_spacings, $device-size, $n);
+}
+
+@mixin make-space($type, $sp, $direction: all) {
+  @if $direction == all {
+    #{$type}: $sp;
+  } @else if $direction == vertical {
+    #{$type}-top: $sp;
+    #{$type}-bottom: $sp;
+  } @else if $direction == horizontal {
+    #{$type}-left: $sp;
+    #{$type}-right: $sp;
+  } @else {
+    #{$type}-#{$direction}: $sp;
+  }
+}
+
+@mixin padding($n, $direction: all) {
+  @include make-space(padding, spacing(mobile, $n), $direction);
+
+  @include mq($from: tablet, $until: desktop) {
+    @include make-space(padding, spacing(tablet, $n), $direction);
+  }
+
+  @include mq($from: desktop) {
+    @include make-space(padding, spacing(desktop, $n), $direction);
+  }
+}
+
+@mixin margin($n, $direction: all) {
+  @include make-space(margin, spacing(mobile, $n), $direction);
+
+  @include mq($from: tablet, $until: desktop) {
+    @include make-space(margin, spacing(tablet, $n), $direction);
+  }
+
+  @include mq($from: desktop) {
+    @include make-space(margin, spacing(desktop, $n), $direction);
+  }
+}
+
+@mixin gap($n, $direction: all) {
+  @include make-space(gap, spacing(mobile, $n), $direction);
+
+  @include mq($from: tablet, $until: desktop) {
+    @include make-space(gap, spacing(tablet, $n), $direction);
+  }
+
+  @include mq($from: desktop) {
+    @include make-space(gap, spacing(desktop, $n), $direction);
+  }
+}

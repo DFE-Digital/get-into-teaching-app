@@ -12,7 +12,7 @@
 
     border: 2px solid $green;
     display: flex;
-    margin-right: $sp-4;
+    @include margin(4, $direction: right);
     padding: .8em 1.4em;
 
     &:hover {
@@ -31,7 +31,9 @@
 
     @include mq($until: tablet) {
       flex: 1;
-      margin: $sp-1 $sp-4 $sp-2 $sp-4;
+      @include margin(1, $direction: top);
+      @include margin(2, $direction: bottom);
+      @include margin(4, $direction: horizontal);
     }
 
     &:focus .menu-button__icon {
