@@ -5,7 +5,7 @@ You can register your interest and apply for the 2023/24 academic year by contac
 * [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher) 
 * [Edge Hill University](https://www.edgehill.ac.uk/)
 * [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts)
-* [National Institute of Teaching and Education, a part of the Coventry University Group](http://www.coventry.ac.uk/nite)
+* [National Institute of Teaching and Education (NITE), part of the Coventry University Group](http://www.coventry.ac.uk/nite)
 * [Plymouth Marjon University](https://www.marjon.ac.uk/teaching/)
 * [Sheffield Hallam University](https://www.shu.ac.uk/study-here/options/teach/different-routes-into-teaching)
 * [Tes](https://www.tes.com/institute/courses)
