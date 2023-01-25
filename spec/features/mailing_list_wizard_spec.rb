@@ -3,6 +3,7 @@ require "rails_helper"
 RSpec.feature "Mailing list wizard", type: :feature do
   include_context "with wizard data"
   include_context "with stubbed latest privacy policy api"
+  include_context "with stubbed callback quotas api"
 
   let(:mailing_list_page_title) { "Get tailored guidance in your inbox | Get Into Teaching GOV.UK" }
 
@@ -39,6 +40,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_title("You've signed up | Get Into Teaching")
     expect(page).to have_text "You've signed up"
     expect(page).to have_text("You'll receive a welcome email shortly")
+    expect(page).to have_link("Book a callback")
   end
 
   scenario "Full journey as an on-campus candidate" do
@@ -379,6 +381,17 @@ RSpec.feature "Mailing list wizard", type: :feature do
     expect(page).to have_text "Enter your last name"
     expect(page).to have_text "Enter your full email address"
     expect(page).to have_title(mailing_list_page_title)
+  end
+
+  context "when there are no callback slots available" do
+    let(:quotas) { [] }
+
+    scenario "Viewing the completion page" do
+      visit mailing_list_step_path(:completed)
+
+      expect(page).to have_text("You've signed up")
+      expect(page).not_to have_link("Book a callback")
+    end
   end
 
   def fill_in_name_step(

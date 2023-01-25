@@ -18,15 +18,17 @@ quote:
     q-tta-one:
       text: "They would answer any question I had, small or big, in a relaxed environment."
       background: "grey"
-    q-tta-two:
-      text: "They were a great sounding board for my concerns and queries."
-      background: "grey"
-    q-tta-three:
-      text: "Lisa really boosted my confidence – she gave me great advice and tips."
-      background: "grey"
-    q-tta-four:
-      text: "My adviser helped not only to remind me of the basics, but also to point out some of the things which are different from when I left 12 years ago."
-      background: "grey"
+quote_list:
+  ql-1:
+    quotes: 
+      - heading: "Habiba, teacher with a hearing impairment"
+        text: "The application process went smoothly thanks to the help of my teacher training adviser, Ellie."
+        accreditation: <a href="/blog/overcoming-challenges-to-become-a-teacher-hearing-impairment">Read how Habiba successfully applied to train to teach</a>.
+  ql-2:
+    quotes:
+      - heading: "Stephen, returning teacher"
+        text: "[My teacher training adviser] took considerable time to understand my situation."
+        accreditation: <a href="/blog/stephens-return-to-teaching-story">Read how Stephen got back into the classroom with the help of an adviser</a>.
 calls_to_action:
   get-a-tta:
     name: simple
@@ -67,8 +69,6 @@ They can:
 * help you find school experience
 * explain the steps to becoming a teacher
 
-$q-tta-two$
-
 ### If you're ready to apply
 
 Your adviser can talk you through the application process step by step.
@@ -79,6 +79,8 @@ They can support you with:
 * understanding your different training options
 * preparing for interviews
 
+$ql-1$
+
 ### If you've applied and been unsuccessful
 
 Your adviser can help you improve your application if you were not successful the first time around.
@@ -88,8 +90,6 @@ They can help you:
 * act on any feedback
 * make your application stronger
 
-$q-tta-three$
-
 ### If you're thinking about returning to teaching
 
 Your adviser can help you understand how to get back into teaching if you already have qualified teacher status (QTS).
@@ -98,6 +98,8 @@ They can help you:
 
 * brush up on your subject knowledge
 * find a role
+
+$ql-2$
 
 ## Can I get an adviser?
 
@@ -128,3 +130,4 @@ You can still get an adviser if you're an undergraduate student not in your fina
 Our explore teaching advisers can help you find out what teaching is really like.
 
 <a href="/explore-teaching-advisers">Find out more about explore teaching advisers</a>.
+

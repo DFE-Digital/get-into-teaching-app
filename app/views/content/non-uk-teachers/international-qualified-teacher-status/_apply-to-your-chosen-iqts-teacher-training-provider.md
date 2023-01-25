@@ -1,13 +1,21 @@
 English teacher training providers deliver iQTS in partnership with placement schools around the world. All iQTS training providers have been approved by the UK government. 
 
-Although applications for the 2022/23 academic year have now closed, you can register your interest for the 2023/24 academic year by contacting the following training providers: 
+You can register your interest and apply for the 2023/24 academic year by contacting the following training providers:
 
-* [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher)
+* [Canterbury Christ Church University](https://www.canterbury.ac.uk/study-here/applying/apply-to-become-a-teacher) 
+* [Edge Hill University](https://www.edgehill.ac.uk/)
+* [Liverpool John Moores University](https://www.ljmu.ac.uk/about-us/faculties/faculty-of-arts-professional-and-social-studies/school-of-education/international-qualified-teacher-status-iqts)
+* [National Institute of Teaching and Education (NITE), part of the Coventry University Group](http://www.coventry.ac.uk/nite)
+* [Plymouth Marjon University](https://www.marjon.ac.uk/teaching/)
 * [Sheffield Hallam University](https://www.shu.ac.uk/study-here/options/teach/different-routes-into-teaching)
-* [The University of Birmingham Dubai](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx)
-* [The University of Derby](https://www.derby.ac.uk/online/education-courses/international-qualified-teacher-status-iqts-online/)
-* [The University of Sunderland](https://www.sunderland.ac.uk/study/education/pgce-iqts/)
-* [The University of Warwick](https://warwick.ac.uk/fac/soc/cte/professionaldevelopment/iqts/)
+* [Tes](https://www.tes.com/institute/courses)
+* [University of Birmingham (Dubai)](https://www.birmingham.ac.uk/dubai/study/courses/postgraduate/pgce-primary-education.aspx)
+* [University of Buckingham](https://www.buckingham.ac.uk/courses/postgraduate/international-qualified-teacher-status-iqts)
+* [University of Derby](https://www.derby.ac.uk/online/education-courses/international-qualified-teacher-status-iqts-online/)
+* [University of Portsmouth](https://www.port.ac.uk/)
+* [University of Sunderland](https://www.sunderland.ac.uk/study/education/pgce-iqts/)
+* [University of Warwick](https://warwick.ac.uk/fac/soc/cte/international/)
+* [University of the West of England](https://www.uwe.ac.uk/)
 
 You will be able to study iQTS if your chosen training provider works with, or will accept, a placement school in your region.
 

@@ -60,12 +60,15 @@ $get-school-experience$
 
 ### Teaching internships
 
-You could apply for a [paid teaching internship](/teaching-internship-providers) if you’re currently doing an undergraduate degree and are interested in teaching:
+A paid [teaching internship](/teaching-internship-providers) could help you to understand what it’s really like in the classroom if you’re currently doing an undergraduate degree and are interested in teaching:
 
+- chemistry
+- computing
+- languages
 - maths
 - physics
-- computing
-- modern languages
+
+You’ll get to experience a range of activities to help you get a feel for school life.
 
 ### Watch pre-recorded lessons
 
