@@ -156,17 +156,10 @@ You can search for teaching jobs by region, subject specialism and age group.
 
 Most teaching vacancies are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September. 
 
-Set up a Teaching Vacancies job alert to be updated about opportunities throughout the year.
-
-You can search for teaching jobs by region, subject specialism and age group.
-
-Most teaching vacancies are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September. 
-
-Set up a Teaching Vacancies job alert to be updated about opportunities throughout the year.
-
+Set up a job alert to be updated about opportunities throughout the year.
 
 <p class="call-to-action__action">
-  <a href="https://teaching-vacancies.service.gov.uk/?utm_source=int_teacher_recruitment&utm_medium=referral&utm_campaign=AY21-22">Search Teaching <span>Vacancies</span></a>
+  <a href="https://teaching-vacancies.service.gov.uk/?utm_source=int_teacher_recruitment&utm_medium=referral&utm_campaign=AY21-22">Search for teaching jobs in England</a>
 </p>
 
 
