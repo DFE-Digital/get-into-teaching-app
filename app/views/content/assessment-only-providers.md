@@ -460,7 +460,7 @@ provider_groups:
       name: Andrew Locke
       telephone: 020 3194 3200
       email: institute@tes.com
-  Assessment only training providers for non-UK teachers:
+  Non-UK:
     description: content/assessment-only-providers/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
     - header: University of Sunderland
@@ -496,4 +496,4 @@ The accredited teacher training providers listed on this page offer the AO progr
 
 Fees range from about £1,500 to £4,000, but vary between providers so it's best to check with them directly for more information.
 
-If you’re a non-UK citizen, see training providers who offer [assessment only qualified teacher status to international teachers](#group--international).
+If you’re a non-UK citizen, see training providers who offer [assessment only qualified teacher status to international teachers](#group--non-uk).
