@@ -1,6 +1,6 @@
 ---
-title: "Funding and support"
-heading: "Funding and support"
+title: "Fund your teacher training"
+heading: "Fund your teacher training"
 description: |-
     Find out about the financial and practical support you can get when you apply for teacher training, including loans, scholarships and bursaries.
 title_paragraph: |-
