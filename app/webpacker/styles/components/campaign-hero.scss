@@ -82,10 +82,10 @@
     }
 
     span:last-of-type {
-      @include font-size(xxxlarge, $adjust: .75rem);
+      @include font-size(xxxlarge, $adjust: .75em);
 
       @include mq($from: mobile) {
-        @include font-size(xxxlarge, $adjust: .5rem);
+        @include font-size(xxxlarge, $adjust: 2em);
       }
     }
   }

@@ -1,61 +1,78 @@
-html {
-  @include mq($until: mobile) { font-size: 106%; }
-  @include mq($from: mobile, $until: tablet) { font-size: 106%; }
-  @include mq($from: tablet) { font-size: 100%; }
-}
-
-$_relative-font-sizes: .9rem,     // 1
-  .95rem,    // 2
-  1rem,      // 3
-  1.1875rem, // 4
-  1.75rem,   // 5
-  2.25rem,   // 6
-  2.625rem,  // 7
-  3.375rem,  // 8
-  5.333rem;  // 9
-
 $_font-sizes: (
   mobile: (
-    "xsmall":   nth($_relative-font-sizes, 1),
-    "small":    nth($_relative-font-sizes, 2),
-    "medium":   nth($_relative-font-sizes, 3),
-    "large":    nth($_relative-font-sizes, 4),
-    "xlarge":   nth($_relative-font-sizes, 5),
-    "xxlarge":  nth($_relative-font-sizes, 6),
-    "xxxlarge": nth($_relative-font-sizes, 7),
+    "xsmall":   1em,
+    "small":    1em,
+    "medium":   1em,
+    "large":    1.3125em,
+    "xlarge":   1.75em,
+    "xxlarge":  2.375em,
+    "xxxlarge": 2.375em,
   ),
   tablet: (
-    "xsmall":   nth($_relative-font-sizes, 2),
-    "small":    nth($_relative-font-sizes, 3),
-    "medium":   nth($_relative-font-sizes, 4),
-    "large":    nth($_relative-font-sizes, 5),
-    "xlarge":   nth($_relative-font-sizes, 6),
-    "xxlarge":  nth($_relative-font-sizes, 7),
-    "xxxlarge": nth($_relative-font-sizes, 8),
+    "xsmall":   1em,
+    "small":    1em,
+    "medium":   1em,
+    "large":    1.3125em,
+    "xlarge":   1.75em,
+    "xxlarge":  2.375em,
+    "xxxlarge": 2.375em,
   ),
   desktop: (
-    "xsmall":   nth($_relative-font-sizes, 3),
-    "small":    nth($_relative-font-sizes, 4),
-    "medium":   nth($_relative-font-sizes, 5),
-    "large":    nth($_relative-font-sizes, 6),
-    "xlarge":   nth($_relative-font-sizes, 7),
-    "xxlarge":  nth($_relative-font-sizes, 8),
-    "xxxlarge": nth($_relative-font-sizes, 9),
+    "xsmall":   1em,
+    "small":    1em,
+    "medium":   1em,
+    "large":    1.4210em,
+    "xlarge":   2em,
+    "xxlarge":  2.8421em,
+    "xxxlarge": 2.8421em,
   )
 );
 
-@function size($font-sizes, $device-size, $size) {
-  @return map-get($font-sizes, $device-size, $size);
+$_line-heights: (
+  mobile: (
+    "xsmall":   1.5em,
+    "small":    1.5em,
+    "medium":   1.5em,
+    "large":    1.5em,
+    "xlarge":   1.1428em,
+    "xxlarge":  1.7142em,
+    "xxxlarge": 1.7142em,
+  ),
+  tablet: (
+    "xsmall":   1.5em,
+    "small":    1.5em,
+    "medium":   1.5em,
+    "large":    1.5em,
+    "xlarge":   1.1428em,
+    "xxlarge":  1.7142em,
+    "xxxlarge": 1.7142em,
+  ),
+  desktop: (
+    "xsmall":   1.5789em,
+    "small":    1.5789em,
+    "medium":   1.5789em,
+    "large":    1.1111em,
+    "xlarge":   1.5789em,
+    "xxlarge":  1.1111em,
+    "xxxlarge": 1.1111em,
+  )
+);
+
+@function size($sizes, $device-size, $size) {
+  @return map-get($sizes, $device-size, $size);
 }
 
 @mixin font-size($size, $adjust: 0) {
   font-size: size($_font-sizes, mobile, $size) + $adjust;
+  line-height: size($_line-heights, mobile, $size) + $adjust;
 
   @include mq($from: tablet, $until: desktop) {
     font-size: size($_font-sizes, tablet, $size) + $adjust;
+    line-height: size($_line-heights, tablet, $size) + $adjust;
   }
 
   @include mq($from: desktop) {
     font-size: size($_font-sizes, desktop, $size) + $adjust;
+    line-height: size($_line-heights, desktop, $size) + $adjust;
   }
 }
