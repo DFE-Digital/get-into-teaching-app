@@ -10,7 +10,7 @@ Assessment only training providers cannot give you advice about:
 * other routes to QTS, including [Apply for QTS in England](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers/a-fairer-approach-to-awarding-qts-to-overseas-teachers--2)
 * applying for a visa to work or study in the UK
 
-[See the training providers who offer assessment only qualified teacher status (QTS) to non-UK teachers.](#group--assessment-only-training-providers-for-non-uk-teachers)
+[See the training providers who offer assessment only qualified teacher status (QTS) to non-UK teachers.](#group--non-uk)
 
 #### Apply for QTS in England
 
