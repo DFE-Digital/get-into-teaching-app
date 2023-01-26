@@ -494,6 +494,6 @@ If you have a degree and enough classroom experience, you may be able to get qua
 
 The accredited teacher training providers listed on this page offer the AO programme. Contact them directly to ask them about entry criteria and to apply.
 
-Fees range from about £1,500 to £4,000, but vary between providers and may be substantially more if you’re outside the UK. Check with individual providers for more details.
+Fees range from about £1,500 to £4,000, but vary between providers so it's best to check with them directly for more information.
 
-
+If you’re a non-UK citizen, see training providers who offer [assessment only qualified teacher status to international teachers](#group--international).
