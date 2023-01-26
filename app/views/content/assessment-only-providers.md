@@ -460,7 +460,7 @@ provider_groups:
       name: Andrew Locke
       telephone: 020 3194 3200
       email: institute@tes.com
-  International:
+  Non-UK:
     description: content/assessment-only-providers/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
     - header: University of Sunderland
@@ -494,6 +494,6 @@ If you have a degree and enough classroom experience, you may be able to get qua
 
 The accredited teacher training providers listed on this page offer the AO programme. Contact them directly to ask them about entry criteria and to apply.
 
-If you have experience of teaching outside the UK, some training providers will let you apply for an assessment only QTS without visiting or training in England.
+Fees range from about £1,500 to £4,000, but vary between providers so it's best to check with them directly for more information.
 
-[See the training providers who offer assessment only qualified teacher status (QTS) to international teachers.](#group--international)
+If you’re a non-UK citizen, see training providers who offer [assessment only qualified teacher status to international teachers](#group--non-uk).
