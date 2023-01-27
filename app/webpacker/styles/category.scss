@@ -114,7 +114,7 @@
     @include padding(4, $direction: horizontal);
 
     h2 {
-      @extend .heading-xl;
+      @extend .heading-l;
     }
 
     * {
