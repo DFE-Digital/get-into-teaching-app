@@ -1,48 +1,54 @@
 $_font-sizes: (
   mobile: (
     "xxsmall":  14px,
-    "xsmall":   16px,
-    "small":    21px,
-    "medium":   28px,
-    "large":    42px,
+    "xsmall":   14px,
+    "small":    16px,
+    "medium":   21px,
+    "large":    28px,
+    "xlarge":   38px,
   ),
   tablet: (
     "xxsmall":  14px,
-    "xsmall":   16px,
-    "small":    21px,
-    "medium":   28px,
-    "large":    42px,
+    "xsmall":   14px,
+    "small":    16px,
+    "medium":   21px,
+    "large":    28px,
+    "xlarge":   38px,
   ),
   desktop: (
     "xxsmall":  16px,
-    "xsmall":   19px,
-    "small":    27px,
-    "medium":   38px,
-    "large":    42px,
+    "xsmall":   16px,
+    "small":    19px,
+    "medium":   31px,
+    "large":    50px,
+    "xlarge":   80px,
   )
 );
 
 $_line-heights: (
   mobile: (
-    "xxsmall":  24px,
-    "xsmall":   24px,
+    "xxsmall":  16px,
+    "xsmall":   16px,
     "small":    24px,
-    "medium":   48px,
-    "large":    52px,
+    "medium":   24px,
+    "large":    48px,
+    "xlarge":   48px,
   ),
   tablet: (
-    "xxsmall":  24px,
-    "xsmall":   24px,
+    "xxsmall":  16px,
+    "xsmall":   16px,
     "small":    24px,
-    "medium":   48px,
-    "large":    52px,
+    "medium":   24px,
+    "large":    48px,
+    "xlarge":   48px,
   ),
   desktop: (
     "xxsmall":  24px,
-    "xsmall":   32px,
+    "xsmall":   24px,
     "small":    32px,
-    "medium":   64px,
+    "medium":   40px,
     "large":    64px,
+    "xlarge":   96px,
   )
 );
 

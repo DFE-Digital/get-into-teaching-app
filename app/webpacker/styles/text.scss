@@ -11,7 +11,7 @@ dd,
 dt,
 .badge {
   @include font;
-  @include font-size(xsmall);
+  @include font-size(small);
 }
 
 li {
