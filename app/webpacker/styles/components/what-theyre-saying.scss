@@ -49,7 +49,7 @@
 
       &:before,
       &:after {
-        @include font-size(xlarge);
+        @include font-size(large);
         color: $pink-dark;
       }
 

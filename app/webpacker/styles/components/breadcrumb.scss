@@ -9,7 +9,7 @@
     @include padding(4, $direction: horizontal);
 
     .govuk-breadcrumbs__current {
-      font-size: medium;
+      @include font-size(xsmall);
     }
 
     .govuk-breadcrumbs__list .govuk-breadcrumbs__list-item {
@@ -30,7 +30,7 @@
 
       a {
         @extend .link, .link--black;
-        font-size: medium;
+        @include font-size(xsmall);
       }
     }
   }

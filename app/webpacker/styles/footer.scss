@@ -27,7 +27,7 @@ footer.site-footer {
       justify-content: flex-end;
 
       a {
-        @include font-size("xsmall");
+        @include font-size(xxsmall);
         @extend .link--grey;
 
         @include margin(1, $direction: bottom);
@@ -121,7 +121,7 @@ footer.site-footer {
 
     &__links-container {
       &__license {
-        @include font-size("xsmall");
+        @include font-size(xxsmall);
         color: $grey-mid;
         @include margin(2, $direction: bottom);
 

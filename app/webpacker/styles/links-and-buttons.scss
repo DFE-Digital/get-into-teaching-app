@@ -5,7 +5,7 @@
   text-decoration: none;
   color: $fg;
   padding: 14px $indent-amount;
-  @include font-size("small");
+  @include font-size(xsmall);
   border: none;
 
   @media (forced-colors: active) {

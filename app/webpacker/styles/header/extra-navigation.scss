@@ -4,7 +4,7 @@
   background-color: $grey;
 
   &__list {
-    font-size: .9rem;
+    @include font-size(xxsmall);
     margin: 0 auto;
     list-style: none;
     padding: 0;

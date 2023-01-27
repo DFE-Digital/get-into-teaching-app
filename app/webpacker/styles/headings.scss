@@ -49,26 +49,26 @@
 }
 
 .heading-xxl {
-  @include font-size("xxlarge");
+  @include font-size(large);
 
   margin-top: 0;
   max-width: 30ch;
 }
 
 .heading-xl {
-  @include font-size("xlarge");
+  @include font-size(medium);
 }
 
 .heading-l {
-  @include font-size("large");
+  @include font-size(small);
 }
 
 .heading-m {
-  @include font-size("medium");
+  @include font-size(xsmall);
 }
 
 .heading-s {
-  @include font-size("small");
+  @include font-size(xxsmall);
 }
 
 .heading--margin-bottom-0 {

@@ -77,7 +77,7 @@
 
       h2,
       h3 {
-        @extend .heading-m, .heading--margin-0;
+        @extend .heading-xl, .heading--margin-0;
       }
     }
 
@@ -91,6 +91,7 @@
         background: $blue;
         color: white;
         padding: 0 .5em;
+        @include margin(2, $direction: top);
       }
     }
   }
@@ -114,7 +115,7 @@
     @include padding(4, $direction: horizontal);
 
     h2 {
-      @extend .heading-m;
+      @extend .heading-xl;
     }
 
     * {

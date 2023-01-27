@@ -76,16 +76,16 @@
     }
 
     span {
-      @include font-size(xxlarge);
+      @include font-size(large);
 
       padding: .05rem .7rem;
     }
 
     span:last-of-type {
-      @include font-size(xxxlarge, $adjust: .75em);
+      @include font-size(large);
 
       @include mq($from: mobile) {
-        @include font-size(xxxlarge, $adjust: 2em);
+        @include font-size(large);
       }
     }
   }

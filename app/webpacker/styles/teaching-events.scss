@@ -163,7 +163,7 @@ $icon-size: 3rem;
       gap: 2em;
 
       &__name {
-        @include font-size(small, $adjust: .2em);
+        @include font-size(small);
         font-weight: bold;
       }
     }

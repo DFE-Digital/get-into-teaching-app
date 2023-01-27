@@ -1,60 +1,48 @@
 $_font-sizes: (
   mobile: (
-    "xsmall":   1em,
-    "small":    1em,
-    "medium":   1em,
-    "large":    1.3125em,
-    "xlarge":   1.75em,
-    "xxlarge":  2.375em,
-    "xxxlarge": 2.375em,
+    "xxsmall":  14px,
+    "xsmall":   16px,
+    "small":    21px,
+    "medium":   28px,
+    "large":    42px,
   ),
   tablet: (
-    "xsmall":   1em,
-    "small":    1em,
-    "medium":   1em,
-    "large":    1.3125em,
-    "xlarge":   1.75em,
-    "xxlarge":  2.375em,
-    "xxxlarge": 2.375em,
+    "xxsmall":  14px,
+    "xsmall":   16px,
+    "small":    21px,
+    "medium":   28px,
+    "large":    42px,
   ),
   desktop: (
-    "xsmall":   1em,
-    "small":    1em,
-    "medium":   1em,
-    "large":    1.4210em,
-    "xlarge":   2em,
-    "xxlarge":  2.8421em,
-    "xxxlarge": 2.8421em,
+    "xxsmall":  16px,
+    "xsmall":   19px,
+    "small":    27px,
+    "medium":   38px,
+    "large":    42px,
   )
 );
 
 $_line-heights: (
   mobile: (
-    "xsmall":   1.5em,
-    "small":    1.5em,
-    "medium":   1.5em,
-    "large":    1.5em,
-    "xlarge":   1.1428em,
-    "xxlarge":  1.7142em,
-    "xxxlarge": 1.7142em,
+    "xxsmall":  24px,
+    "xsmall":   24px,
+    "small":    24px,
+    "medium":   48px,
+    "large":    52px,
   ),
   tablet: (
-    "xsmall":   1.5em,
-    "small":    1.5em,
-    "medium":   1.5em,
-    "large":    1.5em,
-    "xlarge":   1.1428em,
-    "xxlarge":  1.7142em,
-    "xxxlarge": 1.7142em,
+    "xxsmall":  24px,
+    "xsmall":   24px,
+    "small":    24px,
+    "medium":   48px,
+    "large":    52px,
   ),
   desktop: (
-    "xsmall":   1.5789em,
-    "small":    1.5789em,
-    "medium":   1.5789em,
-    "large":    1.1111em,
-    "xlarge":   1.5789em,
-    "xxlarge":  1.1111em,
-    "xxxlarge": 1.1111em,
+    "xxsmall":  24px,
+    "xsmall":   32px,
+    "small":    32px,
+    "medium":   64px,
+    "large":    64px,
   )
 );
 
@@ -62,17 +50,17 @@ $_line-heights: (
   @return map-get($sizes, $device-size, $size);
 }
 
-@mixin font-size($size, $adjust: 0) {
-  font-size: size($_font-sizes, mobile, $size) + $adjust;
-  line-height: size($_line-heights, mobile, $size) + $adjust;
+@mixin font-size($size) {
+  font-size: size($_font-sizes, mobile, $size);
+  line-height: size($_line-heights, mobile, $size);
 
   @include mq($from: tablet, $until: desktop) {
-    font-size: size($_font-sizes, tablet, $size) + $adjust;
-    line-height: size($_line-heights, tablet, $size) + $adjust;
+    font-size: size($_font-sizes, tablet, $size);
+    line-height: size($_line-heights, tablet, $size);
   }
 
   @include mq($from: desktop) {
-    font-size: size($_font-sizes, desktop, $size) + $adjust;
-    line-height: size($_line-heights, desktop, $size) + $adjust;
+    font-size: size($_font-sizes, desktop, $size);
+    line-height: size($_line-heights, desktop, $size);
   }
 }

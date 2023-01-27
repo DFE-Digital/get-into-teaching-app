@@ -177,7 +177,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
 
       .main-heading {
-        @include font-size(xxxlarge);
+        @include font-size(large);
         z-index: map-get($z-indices, "high");
         margin: .4rem 0 0 .4em;
         font-weight: bold;
@@ -187,11 +187,11 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
 
         .caption-l {
-          @include font-size(xxxlarge);
+          @include font-size(large);
         }
 
         .caption-m {
-          @include font-size(xlarge);
+          @include font-size(large);
         }
 
         .purple {
@@ -205,7 +205,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           flex-direction: column;
           align-items: baseline;
 
-          @include font-size(xxxlarge);
+          @include font-size(large);
         }
 
         @include mq($from: desktop) {
@@ -277,7 +277,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           display: none;
         }
 
-        @include font-size(xxxlarge);
+        @include font-size(large);
 
         display: flex;
         justify-content: flex-start;
@@ -323,7 +323,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       h2 {
         @include multiline-heading;
-        @include font-size(xlarge);
+        @include font-size(large);
         line-height: 1.8;
 
         .caption {
@@ -426,7 +426,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         margin: 0 1em;
 
         h2 {
-          @include font-size(xxlarge);
+          @include font-size(large);
 
           margin-top: .4em;
 
@@ -487,7 +487,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
 
       h2 {
-        @include font-size(xxlarge);
+        @include font-size(large);
 
         > span {
           @include multiline-heading;
@@ -586,7 +586,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       .text {
         h2 {
-          @include font-size(xxlarge);
+          @include font-size(large);
 
           position: relative;
           z-index: map-get($z-indices, "high");
@@ -643,7 +643,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
           padding: 2em 4em;
           font-weight: bold;
           flex-basis: 40%;
-          @include font-size(small, $adjust: .2em);
+          @include font-size(small);
         }
 
         .questions-and-answers {
@@ -754,7 +754,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         max-width: $column-720;
 
         h2 {
-          @include font-size(xxlarge);
+          @include font-size(large);
 
           margin: 0 0 1rem;
           position: relative;
@@ -809,7 +809,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       .text {
         h2 {
-          @include font-size(xxlarge);
+          @include font-size(large);
           display: inline-block;
           padding: .5rem .2em;
           margin: 0;
@@ -897,7 +897,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
       }
 
       .good-luck > p {
-        @include font-size(xlarge);
+        @include font-size(large);
         text-align: center;
         font-weight: bold;
       }
@@ -958,7 +958,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
         }
 
         .caption-l {
-          @include font-size(xxxlarge);
+          @include font-size(large);
         }
 
         .caption-m {
@@ -1063,7 +1063,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
     padding: 1em;
 
     h2 {
-      @include font-size(xlarge);
+      @include font-size(large);
       z-index: map-get($z-indices, "top");
       line-height: 1.3;
     }
@@ -1146,7 +1146,7 @@ $z-indices: ("bottom": 5, "low": 10, "medium": 15, "high": 20, "top": 25);
 
       h2 {
         margin: 0;
-        @include font-size(xlarge);
+        @include font-size(large);
 
         .caption + .caption {
           margin-top: .2em;
