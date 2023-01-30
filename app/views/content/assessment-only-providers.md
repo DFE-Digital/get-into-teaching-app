@@ -459,7 +459,7 @@ provider_groups:
       link: https://www.tes.com/institute/assessment-only-route
       name: Andrew Locke
       telephone: 020 3194 3200
-      email: institute@tes.com
+      email: institute@tesglobal.com
   Non-UK:
     description: content/assessment-only-providers/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
@@ -481,7 +481,7 @@ provider_groups:
       link: https://www.tes.com/institute/courses/international-assessment-only-route
       name: Andrew Locke
       telephone: 020 3194 3200
-      email: institute@tes.com
+      email: institute@tesglobal.com
 keywords:
   - Assessment Only
   - Assessment
