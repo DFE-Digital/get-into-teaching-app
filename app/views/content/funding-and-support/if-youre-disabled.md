@@ -36,7 +36,7 @@ It can take up to 14 weeks to get your DSA support, so you should take this into
 
 [If you do paid training you may also be eligible for support](https://www.gov.uk/access-to-work).
 
-[AbilityNet](https://abilitynet.org.uk/about-abilitynet) or [Disability Rights UK](https://www.disabilityrightsuk.org/adjustments-disabled-students) may also be able to help you identify technology or other adjustments to help you study.
+[AbilityNet](https://abilitynet.org.uk/about-abilitynet) or [Disability Rights UK](https://www.disabilityrightsuk.org/) may also be able to help you identify technology or other adjustments to help you study.
 
 ## Adjustments to help you train
 
