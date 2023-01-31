@@ -45,7 +45,7 @@ jobs:
           password: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build and push base image
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           tags: ${{ env.DOCKER_REPOSITORY }}:base-master
@@ -55,7 +55,7 @@ jobs:
             SHA=${{ steps.sha.outputs.short }}
 
       - name: Build release image locally
-        uses: docker/build-push-action@v3
+        uses: docker/build-push-action@v4
         with:
           context: .
           tags: ${{ env.DOCKER_REPOSITORY }}:master
