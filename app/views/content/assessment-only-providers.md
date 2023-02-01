@@ -116,10 +116,7 @@ provider_groups:
       link: https://www.bscteach.co.uk/
       name: Derek Boyle
       telephone: 020 8300 6566
-      email: Administrator@gradteach.co.uk
-    - header: Future Teacher Training
-      link: https://www.futureteachertraining.org/
-      email: enquiries@scitt.futureacademies.org      
+      email: Administrator@gradteach.co.uk     
     - header: Goldsmiths, University of London
       link: https://www.gold.ac.uk/
       name: Lynsey Salt
@@ -280,9 +277,9 @@ provider_groups:
       email: scitt@sfet.org.uk
     - header: The Buckingham Partnership
       link: https://www.bpscitt.uk/
-      name: Laura Whitty
-      telephone: '01280 827 377'
-      email: lwhitty@royallatin.org
+      name: Katy Field
+      telephone: '01280 852039'
+      email: kfield@bpscitt.uk
     - header: The Grand Union Training Partnership
       link: https://www.gutp.co.uk/
       name: Kate Martin
