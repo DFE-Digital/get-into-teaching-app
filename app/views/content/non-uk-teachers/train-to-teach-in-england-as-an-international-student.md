@@ -311,11 +311,21 @@ You may need to apply for a different visa to work in England as a qualified tea
 
 ## Learn more about life as a teacher and the English education system
 
+Meet other non-UK teachers and trainees and find information about English schools and teaching methods. 
+
+### Why train to teach in England?
+
+Watch our video interviews with non-UK citizens who've successfully relocated to train and teach in England.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/owLXaeerFy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 [Join the Aspiring Teachers Forum on Facebook](https://www.facebook.com/groups/1357146377672255/).
 
 [Read interviews with real teachers](/blog).
 
-Learn more about English education:
+### Understand English education
+
+Learn more about:
 
 - [types of English school](https://www.gov.uk/types-of-school)
 - [curriculum and qualifications](https://www.gov.uk/national-curriculum)
