@@ -98,7 +98,7 @@ If you are eligible, you’ll receive a cash sum of £10,000 from DfE. You will 
 
 To be eligible, teacher trainees must meet all 3 of the following requirements.
 
-1. You must have taken up a place on a teacher training course in England for the academic year 2023 to 2024, accredited by the UK government, training to teach one of the following:
+You must have taken up a place on a teacher training course in England for the academic year 2023 to 2024, accredited by the UK government, training to teach one of the following:
 
 * any language or languages except English, including courses which are made up of at least 50% languages 
 
@@ -107,9 +107,7 @@ To be eligible, teacher trainees must meet all 3 of the following requirements.
   - engineers teach physics 
   - courses which are made up of at least 50% physics 
 
-
-2. You must come to the UK on one of the following visas:  
-
+You must come to the UK on one of the following visas:  
 
 * Skilled worker visa
 * Student visa 
@@ -123,7 +121,7 @@ To be eligible, teacher trainees must meet all 3 of the following requirements.
 * Ukraine Family Scheme visa
 * Ukraine Sponsorship Scheme
 
-3. You must move to the UK no more than 3 months before the start of your course.  
+You must move to the UK no more than 3 months before the start of your course.  
 
 You will not be eligible for the IRP if you are:
 

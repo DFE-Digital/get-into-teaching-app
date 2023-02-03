@@ -1,15 +1,15 @@
 ---
-title: "Teach in England if you trained overseas"
+title: "Teach in England if you trained outside the UK"
 description: |-
-  Teach in England if you're a qualified teacher from outside the UK. Explore the benefits of teaching in England and join a world class education system.
+  Teach in England if you're a qualified teacher from overseas. Explore the benefits of teaching in England and join a world class education system.
 related_content:
     Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 navigation: 20.20
-navigation_title: Teach in England if you trained overseas
-navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from outside the UK.
+navigation_title: Teach in England if you trained outside the UK
+navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from overseas.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
 backlink: "../../"
@@ -83,13 +83,13 @@ The international relocation payment (IRP) will be available to non-UK citizens 
 
 To be eligible, teachers must meet all 3 of the following requirements.
 
-1. You must have accepted a languages or physics teaching job in an English state school on a contract lasting at least one academic year. 
+You must have accepted a languages or physics teaching job in an English state school on a contract lasting at least one academic year. 
 
 Teachers of all languages offered in English state schools except English are eligible to apply for the IRP. The language or languages can be combined with another subject, but must make up at least 50% of teaching time.
 
 Physics can be combined with another subject, but must make up at least 50% of teaching time. Teachers of general science are also eligible to apply for the IRP if they are teaching the physics elements of general science. It can be combined with another subject, but general science must make up at least 50% of teaching time.
 
-2. You must come to the UK on one of the following visas: 
+You must come to the UK on one of the following visas: 
 
 * Skilled worker visa
 * Youth Mobility Scheme 
@@ -103,7 +103,7 @@ Physics can be combined with another subject, but must make up at least 50% of t
 * Ukraine Sponsorship Scheme
 
 
-3. You must move to the UK no more than 3 months before the start of your job. 
+You must move to the UK no more than 3 months before the start of your job. 
 
 You will not be eligible for the IRP if you are:
 
@@ -111,17 +111,13 @@ You will not be eligible for the IRP if you are:
 * undergoing [assessment only QTS](/assessment-only-providers)  
 
 
-#### How to apply for the IRP
+### How to apply for the IRP
 
 To express your interest in the IRP, [enter your details](https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-d4PlEh5jqVJkpRIsS7I5EhUNldTWFVTMFRFWVpFWUtOTURVTEhZUldaVC4u). We’ll be in touch when applications open. 
 
 You’ll need to be in the UK to meet the eligibility requirements and make your application – the guidance on this page explains how to find a teaching job and apply for your visa.
 
 If your application is successful, you’ll receive the money by the end of December 2023.
-
-### Your professional qualifications 
-
-Schools you apply to will want to see evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones.  
 
 ## Apply for qualified teacher status (QTS)
 
@@ -177,6 +173,10 @@ If you’re not eligible to use the new service, you may be able to:
 
 Once you've obtained QTS, you will need to find a teaching job in England. To do this, you must apply to individual schools (not the Department for Education). 
 
+### Your professional qualifications 
+
+If you haven't got QTS, schools you apply to will want to see alternative evidence of your teaching and academic qualifications. You can [get a statement of comparability from the UK information centre for international qualifications and skills](https://www.enic.org.uk/Qualifications/SOC/Default.aspx) showing how your qualifications compare to English ones.  
+
 You can search and apply for jobs by region, subject specialism and age group. Most teaching vacancies are advertised in March, April or the first half of May, with jobs usually starting at the beginning of the school year in September. 
 
 Select a job to apply for, and contact the school to check they are open to sponsoring skilled worker visas. Submit your application, and if you are offered the job, you’ll then be able to apply for your visa.
@@ -205,7 +205,7 @@ You can also learn more about [bringing your partner and children](https://www.g
 
 ## Learn about life as a teacher in England
 
-You may be asked about your knowledge of English education in interviews for teaching jobs. To prepare,[read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). 
+You may be asked about your knowledge of English education in interviews for teaching jobs. To prepare, you can [read other teachers’ stories](/blog) and research the [English curriculum](https://www.gov.uk/national-curriculum) and [teachers’ standards](https://www.gov.uk/government/publications/teachers-standards). 
 
 
 If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start), and have less than 2 years’ teaching experience, you can get valuable support and mentoring through the [early career framework](/support-for-early-career-teachers).
