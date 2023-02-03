@@ -8,8 +8,8 @@ related_content:
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
 navigation: 20.20
-navigation_title: Training fees and financial support for non-UK trainee teachers
-navigation_description: Learn more about bursaries, scholarships and the international relocation payment.
+navigation_title: 
+navigation_description: 
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
 backlink: "../../"
