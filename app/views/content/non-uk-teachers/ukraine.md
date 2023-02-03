@@ -126,9 +126,16 @@ You can also learn English with a private provider. Well respected English langu
 * [Test of English as a Foreign Language (TOEFL)](https://www.ets.org/toefl)
 * [C2 Proficiency, formerly known as Cambridge English: Proficiency (CPE)](https://www.cambridgeenglish.org/exams-and-tests/proficiency/)
 
+### Qualified teacher status
 
+[Qualified teacher status (QTS)]((https://www.gov.uk/guidance/qualified-teacher-status-qts)) is the professional status teachers in England gain at the end of their teacher training. Schools use QTS as a measure of teaching skills and experience, so you will find it much easier to get a teaching job in England if you have QTS.
 
-[Find out more about teaching in England if you trained overseas](/non-uk-teachers/teach-in-england-if-you-trained-overseas). 
+### Apply for QTS in England
+
+From 1 February 2023, qualified teachers from Ukraine who [meet the criteria for QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) will be able to [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without paying a fee or undergoing more training. 
+
+### Assessment only QTS
+If you find you don't meet the eligibility criteria to apply for QTS, you could consider assessment only QTS. This means you can work in an English school and, alongside your job, apply to an [English teacher training provider](/assessment-only-providers) who will assess if you meet the standards for English QTS. DfE has made funding available for candidates who apply for assessment only courses. Check assessment only training providers for more information about eligibility and funding.
 
 ### Apply for a teaching job
 
@@ -163,25 +170,13 @@ Some schools may ask for a curriculum vitae (CV) – [get tips on writing a CV](
 
 If you're shortlisted, you’ll be invited for interview and asked to teach part of a class. If the school makes you a conditional offer, you’ll then have to pass [safeguarding and criminal records checks](#what-youll-need-to-pass-safeguarding-and-criminal-records-checks).
 
-
-### Qualified teacher status
-
-English teacher training leads to [qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts). However, if you’re a qualified teacher from outside the UK, [you can work as a teacher in England for up to 4 years without QTS](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#qts-exemption-for-teachers-from-outside-the-uk). 
-
-After that, QTS is a legal requirement to teach in many English schools, and considered desirable for teachers in the majority of schools in England.
-
-### Apply for QTS in England
-
-From 1 February 2023, qualified teachers from Ukraine who [meet the criteria for QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) will be able to [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without paying a fee or undergoing more training. 
-
-### Assessment only QTS
-If you find you don't meet the eligibility criteria to apply for QTS, you could consider assessment only QTS. This means you can work in an English school and, alongside your job, apply to an [English teacher training provider](/assessment-only-providers) who will assess if you meet the standards for English QTS. DfE has made funding available for candidates who apply for assessment only courses. Check assessment only training providers for more information about eligibility and funding.
-
 ### Salaries and benefits
 
 Your salary as a teacher depends on whether you have QTS, and your level of experience.
 
 [Find out more about salaries and benefits](/salaries-and-benefits) for teachers in England.
+
+[Find out more about teaching in England if you trained overseas](/non-uk-teachers/teach-in-england-if-you-trained-overseas). 
 
 ## Train to teach in England
 
