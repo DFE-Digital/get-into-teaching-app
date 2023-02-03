@@ -59,31 +59,30 @@ keywords:
 If you’re applying for teacher training as a non-UK citizen, you may be able to get some financial help from the UK government. The information on this page is for:
 
 
-• non-UK citizens living in the UK
-• non-UK citizens living outside the UK
-• Irish citizens
-• refugees or asylum seekers
+* non-UK citizens living in the UK
+* non-UK citizens living outside the UK
+* Irish citizens
+* refugees or asylum seekers
 
 ## Teacher training fees
 
-As a non-UK candidate, you can expect to pay between £9,250  and £32,000 to train to teach in England – fees vary between training providers. You’ll also have to cover your living costs.
+As a non-UK candidate, you can expect to pay between £9,250 and about£32,000 to train to teach in England – fees vary between training providers. You’ll also have to cover your living costs.
 
 Depending on your immigration status, you may get a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. Please note – most non-UK candidates will not be eligible for this type of financial support. 
 
 If you have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience, you can apply for a salaried teacher training course. On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive. 
 
-[Find and apply for teacher training explains how to choose the right course for you.] 
+[Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses). 
 
 
-## Financial support for non-UK trainee language and physics teachers
+## Financial support for non-UK trainee teachers of languages and physics
 
-
-The UK’s Department for Education (DfE) wants to attract excellent trainee teachers from around the world in languages and physics. There are 3 types of financial support you can get if you’re interested in training to teach languages and physics:
+There are 3 types of financial support you can get if you’re interested in training to teach languages and physics:
 
 
 * an international relocation payment worth £10,000 for languages and physics
-* * bursaries worth up to £27,000 for languages and physics
-scholarships worth up to £29,000 for French, German, Spanish and physics
+* bursaries worth up to £27,000 for languages and physics
+* scholarships worth up to £29,000 for French, German, Spanish and physics
 
 
 If you are eligible, you can receive both an international relocation payment and a bursary or scholarship. You cannot receive both a bursary and a scholarship.
@@ -100,9 +99,12 @@ If you are eligible, you’ll receive a cash sum of £10,000 from DfE. You will 
 To be eligible, teacher trainees must meet all 3 of the following requirements.
 
 You must have taken up a place on a teacher training course in England for the academic year 2023 to 2024, accredited by the UK government, training to teach one of the following:
+
 * any language or languages except English, including courses which are made up of at least 50% languages 
+
 * physics, including:
-   - engineers teach physics 
+
+  - engineers teach physics 
   - courses which are made up of at least 50% physics 
 
 
@@ -121,21 +123,20 @@ You must come to the UK on one of the following visas:
 * Ukraine Family Scheme visa
 * Ukraine Sponsorship Scheme
 
+[Learn more about applying for a visa to train to teach in England](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa)
 
 You must move to the UK no more than 3 months before the start of your course.  
 
 You will not be eligible for the IRP if you are:
 
 * already living in the UK 
-* undergoing assessment only QTS 
-
+* undergoing [assessment only QTS](/assessment-only-providers) 
 
 #### How the IRP will be paid
 
-If you have a place on a teacher training course where you pay a fee, you do not need to apply for the IRP. Your training provider will email you to let you know your choice of course makes you eligible for the IRP. Your visa status and date of arrival will be checked by the Department for Education. If you meet all 3 eligibility requirements, you’ll get the IRP by the end of December 2023.
+If you have a place on a teacher training course where you pay a fee, you do not need to apply for the IRP. Your training provider will email you if your choice of course makes you eligible for the IRP. Your visa status and date of arrival will be checked by DfE. If you meet the eligibility requirements, you’ll get the IRP by the end of December 2023.
 
 If you have a place on a teacher training course where you are paid a salary to work while you train, [enter your details](https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-d4PlEh5jqVJkpRIsS7I5EhUNldTWFVTMFRFWVpFWUtOTURVTEhZUldaVC4u) to express your interest in the IRP. We’ll be in touch when IRP applications open for salaried trainees in autumn 2023. If your application is successful, you’ll receive the money by the end of December 2023.
-
 
 ### Bursaries and scholarships for physics and languages
 
@@ -166,7 +167,6 @@ Each bursary scheme will have their own individual terms and conditions – cont
 
 The languages bursary covers all languages offered by accredited teacher training providers. If a course combines 2 subjects (for example, physics plus mathematics, or modern foreign languages plus English), at least 50% of the course must be made up of the bursary subject.
 
-[Find accredited English teacher training providers](https://www.gov.uk/find-postgraduate-teacher-training-courses) offering languages and physics teacher training courses.
 
 #### Scholarships for physics, French, German and Spanish
 
@@ -190,8 +190,10 @@ You’ll also need at least one of the following:
 In exceptional circumstances, you may be offered a scholarship with a bachelor’s degree class 2:2, if you have significant relevant experience.
 You can check if you’re eligible for a scholarship and apply by visiting:
 
-• the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (for a physics scholarship)
-the [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (for a French, German or Spanish scholarship)
+* the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (for a physics scholarship) 
+* the [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (for a French, German or Spanish scholarship)
+
+[Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses)
 
 ## Eligibility for other types of financial support
 
@@ -205,8 +207,8 @@ Financial support is only available for courses where you pay a fee to study tea
 
 You will generally be eligible for a tuition fee loan and a student maintenance loan if you meet both of the following requirements:
 
-• you are an Irish citizen
-• you have been living in the UK, Guernsey, Jersey or the Isle of Man throughout the 3 years immediately before the start of your course
+* you are an Irish citizen
+* you have been living in the UK, Guernsey, Jersey or the Isle of Man throughout the 3 years immediately before the start of your course
 
 You will generally be eligible for a tuition fee loan if you meet both the following requirements:
 
@@ -214,7 +216,6 @@ You will generally be eligible for a tuition fee loan if you meet both the follo
 * you have been living in Ireland, or Ireland and the UK, Guernsey, Jersey or the Isle of Man, throughout the 3 years before the start of your course
 
 ### Support for trainee teachers  from the European Economic Area (EEA) or Switzerland
-
 
 If you meet both the following requirements:
 
@@ -260,6 +261,7 @@ You will also need:
 If you are an asylum seeker you will not be eligible for financial support, but if you are recognised as a refugee after your course has started, you may be able to claim financial support to complete your studies.
 
 Financial support can include:
+
 * help with living expenses (a maintenance loan)
 * help with course fees (a tuition fee loan)
 
@@ -276,7 +278,7 @@ Your tuition fees are paid in full, with the money going directly to your teache
 Money is paid directly into your bank account to help with your living costs. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2022 to 2023 financial year, this is £27,295 per year.
 
 ### Home fee rate
-If you meet the requirements for a tuition fee loan, or tuition fee loan and maintenance loan, you will be charged fees at the rate set for UK candidates (up to £9,250 for a full-time course).
+If you meet the requirements for a tuition fee loan, or tuition fee loan and maintenance loan, you will be charged fees at the rate set for UK candidates (set at a maximum of £9,250 for a full-time course).
 
 ### Bursaries or scholarships 
 Physics and languages bursaries and scholarships are open to all qualifying non-UK candidates, regardless of their immigration status.
