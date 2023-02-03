@@ -45,6 +45,15 @@ We can help if you’re interested in teaching children aged 5 to 18. If you'd l
 
 If you're coming to the UK from Ukraine, [check what you need to do before you travel and what to do after you arrive](https://www.gov.uk/guidance/move-to-the-uk-if-youre-from-ukraine).
 
+### Check if you are eligible for an international relocation payment worth £10,000
+
+The international relocation payment (IRP) is a cash sum of £10,000 which the UK government is making available to non-UK trainees and teachers of languages and physics. To be eligible, you must be coming to England to work or train in the 2023 to 2024 academic year. 
+
+[Check your eligibility for the IRP if you are a qualified teacher of languages or physics](/non-uk-teachers/teach-in-england-if-you-trained-overseas).
+
+[Check your eligibility for the IRP if you want to train to teach languages or physics](/non-uk-teachers/fees-and-funding-for-non-UK-trainees).
+
+
 ### Check the status of your visa
 
 You already have the right to work or train as a teacher in England if you are in the UK on (one of the following):
