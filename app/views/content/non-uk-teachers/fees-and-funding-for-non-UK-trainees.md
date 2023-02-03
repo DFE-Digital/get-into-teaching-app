@@ -66,7 +66,7 @@ If you’re applying for teacher training as a non-UK citizen, you may be able t
 
 ## Teacher training fees
 
-As a non-UK candidate, you can expect to pay between £9,250 and about£32,000 to train to teach in England – fees vary between training providers. You’ll also have to cover your living costs.
+As a non-UK candidate, you can expect to pay between £9,250 and about £32,000 to train to teach in England – fees vary between training providers. You’ll also have to cover your living costs.
 
 Depending on your immigration status, you may get a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. Please note – most non-UK candidates will not be eligible for this type of financial support. 
 
@@ -98,7 +98,7 @@ If you are eligible, you’ll receive a cash sum of £10,000 from DfE. You will 
 
 To be eligible, teacher trainees must meet all 3 of the following requirements.
 
-You must have taken up a place on a teacher training course in England for the academic year 2023 to 2024, accredited by the UK government, training to teach one of the following:
+1. You must have taken up a place on a teacher training course in England for the academic year 2023 to 2024, accredited by the UK government, training to teach one of the following:
 
 * any language or languages except English, including courses which are made up of at least 50% languages 
 
@@ -108,7 +108,7 @@ You must have taken up a place on a teacher training course in England for the a
   - courses which are made up of at least 50% physics 
 
 
-You must come to the UK on one of the following visas:  
+2. You must come to the UK on one of the following visas:  
 
 
 * Skilled worker visa
@@ -123,14 +123,14 @@ You must come to the UK on one of the following visas:
 * Ukraine Family Scheme visa
 * Ukraine Sponsorship Scheme
 
-[Learn more about applying for a visa to train to teach in England](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa)
-
-You must move to the UK no more than 3 months before the start of your course.  
+3. You must move to the UK no more than 3 months before the start of your course.  
 
 You will not be eligible for the IRP if you are:
 
 * already living in the UK 
 * undergoing [assessment only QTS](/assessment-only-providers) 
+
+[Learn more about applying for a visa to train to teach in England](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa).
 
 #### How the IRP will be paid
 
@@ -193,7 +193,7 @@ You can check if you’re eligible for a scholarship and apply by visiting:
 * the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (for a physics scholarship) 
 * the [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (for a French, German or Spanish scholarship)
 
-[Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses)
+[Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in languages and physics. 
 
 ## Eligibility for other types of financial support
 
@@ -272,10 +272,10 @@ If, as a refugee, you are eligible for help with course fees, you may also be el
 If you have the right immigration status, you could be eligible for the following types of financial help from the UK government.
 
 ### Tuition fee loan
-Your tuition fees are paid in full, with the money going directly to your teacher training provider. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2022 to 2023 financial year, this is £27,295 per year.
+Your tuition fees are paid in full, with the money going directly to your teacher training provider. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2023 to 2024 financial year, this is £24,996 per year.
 
 ### Maintenance loan
-Money is paid directly into your bank account to help with your living costs. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2022 to 2023 financial year, this is £27,295 per year.
+Money is paid directly into your bank account to help with your living costs. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2023 to 2024 financial year, this is £24,996 per year.
 
 ### Home fee rate
 If you meet the requirements for a tuition fee loan, or tuition fee loan and maintenance loan, you will be charged fees at the rate set for UK candidates (set at a maximum of £9,250 for a full-time course).
@@ -318,8 +318,6 @@ Talk to your training provider about:
 [Student Finance England](https://www.gov.uk/contact-student-finance-england) has a dedicated service for EU students and for EEA citizens working in the UK.
 
 Citizens from other countries can find more detailed information at [Student finance for undergraduates: eligibility](https://www.gov.uk/student-finance/who-qualifies).
-
-You can also contact Student Finance England by phone, on 0141 243 3570, or from outside the UK, +44 141 243 3570, Monday to Friday, 9am to 5.30pm (UK local time).
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
 
