@@ -152,7 +152,7 @@ Fees vary between training providers, but range from £9,250 to about £32,000. 
 
 However, if you are planning on training to teach languages and physics, you could be eligible for financial help worth up to £39,000.
 
-If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/fees-and-funding-for-non-UK-trainees).
+If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-UK-trainees).
 
 ### 4. Search and apply for teacher training courses
 
