@@ -9,7 +9,7 @@ related_content:
 promo_content:
 navigation: 20.20
 navigation_title: 
-navigation_description: 
+navigation_description: Learn more about bursaries, scholarships and the international relocation payment.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
 backlink: "../../"
