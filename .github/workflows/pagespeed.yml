@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Run Page Speed
-      uses: fjogeleit/http-request-action@fd5cf60c69049efb1397207cc8b442709a869685
+      uses: fjogeleit/http-request-action@4ae1dfba856bfb530598ebb818f204befbb24cda
       with:
         url: https://get-into-teaching-app-pagespeed.london.cloudapps.digital/pagespeed/run
         method: POST
