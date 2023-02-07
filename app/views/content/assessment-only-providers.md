@@ -481,7 +481,8 @@ provider_groups:
       email: institute@tesglobal.com
 inset_text:
   international-content:
-    text: If you’re a non-UK citizen, you should contact <a href="/assessment-only-providers#non-uk"> training providers who assess international teachers</a>. None of the other UK regional or national providers can help with non-UK enquiries. Please do not contact them if you are not in the UK.
+    text: |-
+      If you’re a non-UK citizen, you should contact <a href="#non-uk">training providers who assess international teachers</a>. None of the other UK regional or national providers can help with non-UK enquiries. Please do not contact them if you are not in the UK.
     color: grey
 keywords:
   - Assessment Only
