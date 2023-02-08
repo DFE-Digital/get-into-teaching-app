@@ -2,7 +2,7 @@ module Content
   class ChecklistCollageComponent < ViewComponent::Base
     attr_reader :checklist, :image_paths, :cta
 
-    def initialize(checklist:, image_paths:, cta:)
+    def initialize(checklist:, image_paths:, cta: nil)
       super
 
       @checklist = checklist

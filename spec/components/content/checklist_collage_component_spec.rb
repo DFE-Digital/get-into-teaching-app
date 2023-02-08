@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe Content::ChecklistCollageComponent, type: :component do
   subject(:render) do
-    render_inline(component)
+    render_inline(component) { content }
     page
   end
 
@@ -26,11 +26,13 @@ describe Content::ChecklistCollageComponent, type: :component do
       link: "/",
     }
   end
+  let(:content) { "<p>content</p>".html_safe }
 
   let(:component) { described_class.new(checklist: checklist, image_paths: image_paths, cta: cta) }
 
   it { is_expected.to have_css(".checklist-collage") }
   it { is_expected.to have_link(cta[:text], href: cta[:link]) }
+  it { is_expected.to have_css("p", text: "content") }
 
   it "renders the checlist items" do
     checklist.each do |item|
@@ -43,5 +45,11 @@ describe Content::ChecklistCollageComponent, type: :component do
       filename = path.split(".").first
       is_expected.to have_css("img[src*='#{filename}']")
     end
+  end
+
+  context "when cta is nil" do
+    let(:cta) { nil }
+
+    it { is_expected.not_to have_link }
   end
 end
