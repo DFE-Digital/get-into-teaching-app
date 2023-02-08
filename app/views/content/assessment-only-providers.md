@@ -479,6 +479,11 @@ provider_groups:
       name: Andrew Locke
       telephone: 020 3194 3200
       email: institute@tesglobal.com
+inset_text:
+  international-content:
+    text: |-
+      If you’re a non-UK citizen, you should contact <a href="#group--non-uk">training providers who assess international teachers</a>. None of the other UK regional or national providers can help with non-UK enquiries. Please do not contact them if you are not in the UK.
+    color: grey
 keywords:
   - Assessment Only
   - Assessment
@@ -493,4 +498,4 @@ The accredited teacher training providers listed on this page offer the AO progr
 
 Fees range from about £1,500 to £4,000, but vary between providers so it's best to check with them directly for more information.
 
-If you’re a non-UK citizen, see training providers who offer [assessment only qualified teacher status to international teachers](#group--non-uk).
+$international-content$
