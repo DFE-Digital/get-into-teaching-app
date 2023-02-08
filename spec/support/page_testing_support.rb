@@ -5,6 +5,7 @@ class PageLister
     /index
     /steps-to-become-a-teacher/v2-index
     /privacy-policy
+    /landing/how-much-do-teachers-get-paid
   ].freeze
 
   class << self
