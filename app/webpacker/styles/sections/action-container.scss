@@ -60,11 +60,11 @@
 
   h2 {
     margin-left: $indent-amount;
-    margin-right: 2 * $wide-spacing;
     position: relative;
+    margin-right: 10%;
   }
 
-  .heading-container{
+  .heading-container {
     position: relative;
 
     &:before {
