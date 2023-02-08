@@ -2,15 +2,22 @@
   $wide-spacing: 2.5 * $indent-amount;
 
   position: relative;
-  background-color: $grey;
   margin: $wide-spacing $indent-amount;
-  padding-bottom: $indent-amount;
 
   @include mq($from: tablet) {
     margin: $wide-spacing $indent-amount $wide-spacing 0;
 
     h3 {
       @include font-size(medium);
+    }
+  }
+
+  .content {
+    background-color: $grey;
+    padding-bottom: $indent-amount;
+
+    .inset > p:first-child {
+      margin-top: 0;
     }
   }
 
@@ -53,6 +60,22 @@
 
   h2 {
     margin-left: $indent-amount;
+    margin-right: 2 * $wide-spacing;
+    position: relative;
+  }
+
+  .heading-container{
+    position: relative;
+
+    &:before {
+      content: "";
+      position: absolute;
+      background: $grey;
+      height: 50%;
+      top: 50%;
+      left: 0;
+      right: 0;
+    }
   }
 
   > p {
