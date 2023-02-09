@@ -98,7 +98,7 @@ If you are eligible, you’ll receive a cash sum of £10,000 from DfE. You will 
 
 To be eligible, teacher trainees must meet all 3 of the following requirements.
 
-You must have taken up a place on a teacher training course in England for the academic year 2023 to 2024, accredited by the UK government, training to teach one of the following:
+You must have taken up a place on a teacher training course in England leading to [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts)  for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government and you must be training to teach one of the following:
 
 * any language or languages except English, including courses which are made up of at least 50% languages 
 
@@ -106,6 +106,8 @@ You must have taken up a place on a teacher training course in England for the a
 
   - engineers teach physics 
   - courses which are made up of at least 50% physics 
+
+Primary school courses (training to teach 4 to 16 year olds) with a subject specialism in languages or physics are not eligible.   
 
 You must come to the UK on one of the following visas:  
 
@@ -132,9 +134,9 @@ You will not be eligible for the IRP if you are:
 
 #### How the IRP will be paid
 
-If you have a place on a teacher training course where you pay a fee, you do not need to apply for the IRP. Your training provider will email you if your choice of course makes you eligible for the IRP. Your visa status and date of arrival will be checked by DfE. If you meet the eligibility requirements, you’ll get the IRP by the end of December 2023.
+If you have a place on a teacher training course where you pay a fee, you do not need to apply for the IRP. Your training provider will email you if your choice of course makes you eligible for the IRP. Your visa status and date of arrival will be checked by DfE. If you meet the eligibility requirements, you’ll get the IRP around the end of your first term.
 
-If you have a place on a teacher training course where you are paid a salary to work while you train, [enter your details](https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-d4PlEh5jqVJkpRIsS7I5EhUNldTWFVTMFRFWVpFWUtOTURVTEhZUldaVC4u) to express your interest in the IRP. We’ll be in touch when IRP applications open for salaried trainees in autumn 2023. If your application is successful, you’ll receive the money by the end of December 2023.
+If you have a place on a teacher training course where you are paid a salary to work while you train, [enter your details](https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-d4PlEh5jqVJkpRIsS7I5EhUNldTWFVTMFRFWVpFWUtOTURVTEhZUldaVC4u) to express your interest in the IRP. We’ll be in touch when IRP applications open for salaried trainees in autumn 2023. If your application is successful, you’ll get the IRP around the end of your first term.
 
 ### Bursaries and scholarships for physics and languages
 
