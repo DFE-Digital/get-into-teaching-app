@@ -7,9 +7,6 @@ related_content:
     Salaries and benefits of teaching in England : "/salaries-and-benefits"
     A day in the life of a teacher in England : "/a-day-in-the-life-of-a-teacher"
 promo_content:
-navigation: 
-navigation_title: 
-navigation_description: Learn more about bursaries, scholarships and the international relocation payment.
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
 backlink: "../../"
