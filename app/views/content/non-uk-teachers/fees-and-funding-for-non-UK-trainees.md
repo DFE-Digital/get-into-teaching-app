@@ -283,7 +283,7 @@ However, other bursaries and scholarships are only available to candidates who m
 If you are awarded a bursary or scholarship, the money is paid directly into your bank account and you can use it as you wish. You do not have to pay this money back.
 
 
-[Learn more about bursaries and scholarships in other subjects, and how to apply](/funding-and-support#bursaries-and-scholarships). 
+[Learn more about bursaries and scholarships in other subjects, and how to apply](/funding-and-support). 
 
 ### Extra financial support
 If you have a disability, children or an adult dependant to care for, and you are eligible for a tuition fee loan and maintenance loan, you may be able to apply for extra help. You do not have to pay this money back.
@@ -308,7 +308,7 @@ To start your application for student finance support, you need to have chosen y
 Talk to your training provider about:
 
 * home fee rate
-* a [bursary or scholarship](/funding-and-support#bursaries-and-scholarships)
+* a [bursary or scholarship](/funding-and-support)
 
 ## Get help with financial support
 
