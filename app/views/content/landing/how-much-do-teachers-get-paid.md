@@ -10,5 +10,6 @@ content:
 image: "media/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg"
 colour: "yellow"
 layout: "layouts/minimal"
+talk_to_us: false
 noindex: true
 ---
