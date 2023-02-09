@@ -133,7 +133,7 @@ You will not be eligible for the IRP if you are:
 
 If you have a place on a teacher training course where you pay a fee, you do not need to apply for the IRP. Your training provider will email you if your choice of course makes you eligible for the IRP. Your visa status and date of arrival will be checked by DfE. If you meet the eligibility requirements, you’ll get the IRP around the end of your first term.
 
-If you have a place on a teacher training course where you are paid a salary to work while you train, [enter your details](https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-d4PlEh5jqVJkpRIsS7I5EhUNldTWFVTMFRFWVpFWUtOTURVTEhZUldaVC4u) to express your interest in the IRP. We’ll be in touch when IRP applications open for salaried trainees in autumn 2023. If your application is successful, you’ll get the IRP around the end of your first term.
+If you have a place on a teacher training course where you are paid a salary to work while you train, email us at IRP.ExpressInterest@education.gov.uk to express your interest in the IRP. We’ll be in touch when IRP applications open for salaried trainees in autumn 2023. If your application is successful, you’ll get the IRP around the end of your first term.
 
 ### Bursaries and scholarships for physics and languages
 
@@ -283,7 +283,7 @@ However, other bursaries and scholarships are only available to candidates who m
 If you are awarded a bursary or scholarship, the money is paid directly into your bank account and you can use it as you wish. You do not have to pay this money back.
 
 
-[Learn more about bursaries and scholarships in other subjects, and how to apply](https://getintoteaching.education.gov.uk/funding-and-support#bursaries-and-scholarships). 
+[Learn more about bursaries and scholarships in other subjects, and how to apply](/funding-and-support#bursaries-and-scholarships). 
 
 ### Extra financial support
 If you have a disability, children or an adult dependant to care for, and you are eligible for a tuition fee loan and maintenance loan, you may be able to apply for extra help. You do not have to pay this money back.
@@ -308,7 +308,7 @@ To start your application for student finance support, you need to have chosen y
 Talk to your training provider about:
 
 * home fee rate
-* a [bursary or scholarship](https://getintoteaching.education.gov.uk/funding-and-support#bursaries-and-scholarships)
+* a [bursary or scholarship](/funding-and-support#bursaries-and-scholarships)
 
 ## Get help with financial support
 
