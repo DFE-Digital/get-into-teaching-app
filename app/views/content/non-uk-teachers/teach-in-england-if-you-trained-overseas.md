@@ -75,7 +75,7 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 
 ## Get an international relocation payment (IRP) worth £10,000
 
-If you are interested in moving to the UK to teach languages or physics in an English school, you could be eligible for a cash sum of £10,000 from the UK government to help with moving expenses, including visa costs and the [immigration health surcharge](https://www.gov.uk/healthcare-immigration-application). 
+If you are interested in moving to the UK to teach languages or physics in an English secondary school, you could be eligible for a cash sum of £10,000 from the UK government to help with moving expenses, including visa costs and the [immigration health surcharge](https://www.gov.uk/healthcare-immigration-application). 
 
 The international relocation payment (IRP) will be available to non-UK citizens starting work in English schools in the academic year September 2023 to July 2024. You will not have to pay this money back and it can be spent in any way you wish. You can only receive the IRP once.
 
@@ -83,9 +83,9 @@ The international relocation payment (IRP) will be available to non-UK citizens 
 
 To be eligible, teachers must meet all 3 of the following requirements.
 
-You must have accepted a languages or physics teaching job in an [English state school](https://www.gov.uk/types-of-school) on a contract lasting at least one academic year. 
+You must have accepted a languages or physics teaching job in an [English state secondary school](https://www.gov.uk/types-of-school) on a contract lasting at least one academic year. 
 
-Teachers of all languages offered in English state schools except English are eligible to apply for the IRP. The language or languages can be combined with another subject, but must make up at least 50% of teaching time.
+Teachers of all languages (except English) offered in English state secondary schools are eligible to apply for the IRP. The language or languages can be combined with another subject, but must make up at least 50% of teaching time.
 
 Physics can be combined with another subject, but must make up at least 50% of teaching time. Teachers of general science are also eligible to apply for the IRP if they are teaching the physics elements of general science. It can be combined with another subject, but general science must make up at least 50% of teaching time.
 
@@ -111,9 +111,9 @@ You will not be eligible for the IRP if you are already living in the UK.
 
 ### How to apply for the IRP
 
-To express your interest in the IRP, [enter your details](https://forms.office.com/Pages/ResponsePage.aspx?id=yXfS-grGoU2187O4s0qC-d4PlEh5jqVJkpRIsS7I5EhUNldTWFVTMFRFWVpFWUtOTURVTEhZUldaVC4u). We’ll be in touch when applications open. 
+You’ll need to have started your teaching job in a state secondary school to make your application – the guidance on this page explains how to find a teaching job and apply for your visa. 
 
-You’ll need to be in the UK and have started your teaching job in a state school to make your application – the guidance on this page explains how to find a teaching job and apply for your visa.
+Applications will be open from 1 September to 31 October 2023. To express your interest in applying, email us at IRP.ExpressInterest@education.gov.uk. For information about applications in 2024, check back to this page.
 
 If your application is successful, you’ll receive the money around the end of your first school term of employment.
 
