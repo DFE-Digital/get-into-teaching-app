@@ -218,7 +218,7 @@ If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-e
 
 The following suggestions and resources may be useful as you plan your move:
 
-* open a digital bank account – you can do this before you arrive in the UK, and you will not need a UK address to do so
+* open an account with a digital bank based in the UK – you can do this before you arrive in the UK, and you will not need a UK address to do so
 * [find somewhere to live](https://www.gov.uk/government/publications/how-to-rent)
 * [get a national insurance (NI) number](https://www.gov.uk/national-insurance/your-national-insurance-number)
 * [register with a doctor](https://www.nhs.uk/nhs-services/gps/how-to-register-with-a-gp-surgery/)
