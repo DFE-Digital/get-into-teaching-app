@@ -97,15 +97,13 @@ To be eligible, teacher trainees must meet all 3 of the following requirements.
 
 You must have taken up a place on a teacher training course in England leading to [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts)  for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government and you must be training to teach one of the following:
 
-* any language or languages except English, including courses which are made up of at least 50% languages 
+* any secondary language or languages except English, including courses which are made up of at least 50% languages 
 
-* physics, including:
+* secondary physics, including:
 
   - engineers teach physics 
   - courses which are made up of at least 50% physics 
-
-Primary school courses (training to teach 4 to 16 year olds) with a subject specialism in languages or physics are not eligible.   
-
+   
 You must come to the UK on one of the following visas:  
 
 * Skilled worker visa
