@@ -135,7 +135,7 @@ If you have a place on a teacher training course where you pay a fee, you do not
 
 If you have a place on a teacher training course where you are paid a salary to work while you train, email us at IRP.ExpressInterest@education.gov.uk to express your interest in the IRP. We’ll be in touch when IRP applications open for salaried trainees in autumn 2023. If your application is successful, you’ll get the IRP around the end of your first term.
 
-You will not need to pay an agent or any other third party to complete your application. If you have had a message asking you to apply or contact someone about the IRP, [this could be fraudulent](https://www.gov.uk/report-suspicious-emails-websites-phishing).
+You will not need to pay an agent or any other third party to complete your application. If you have had a message asking you to apply for or contact someone about the IRP, [this could be fraudulent](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
 ### Bursaries and scholarships for physics and languages
 
