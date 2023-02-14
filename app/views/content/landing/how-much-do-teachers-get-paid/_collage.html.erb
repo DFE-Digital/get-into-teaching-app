@@ -1,0 +1,29 @@
+<div class="row">
+  <div class="grey col">
+    <section class="col col-full-content">
+      <div class="inset">
+        <p class="col-720">
+          A rewarding salary, substantial pension, and generous
+          holidays are just some of the great benefits of a career in teaching.
+        </p>
+
+        <%= render Content::ChecklistCollageComponent.new(
+          checklist: [
+            "You will earn at least £28k (or more in London) if you're just starting as a teacher.",
+            "The average salary for a classroom teacher in England is £39,500 a year."
+          ],
+          image_paths: [
+            "media/images/content/how-much-do-teachers-get-paid/collage4.jpg",
+            "media/images/content/how-much-do-teachers-get-paid/collage1.jpg",
+            "media/images/content/how-much-do-teachers-get-paid/collage2.jpg",
+          ]
+        ) do %>
+          <p>
+            If you're considering a career in teaching, we're here to help every step of the way.
+            Our free service is available both online and in-person to help you on your journey into the classroom.
+          </p>
+        <% end %>
+      </div>
+    </section>
+  </div>
+</div>
