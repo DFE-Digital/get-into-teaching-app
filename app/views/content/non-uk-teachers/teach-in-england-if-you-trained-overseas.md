@@ -13,6 +13,10 @@ navigation_description: Find out how you can bring your skills and perspective t
 date: "2021-05-27"
 image: "media/images/content/hero-images/0002.jpg"
 backlink: "../../"
+inset_text:
+  new-international-funding:
+    text: |-
+      If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/teach-in-england-if-you-trained-overseas#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
 keywords:
   - International
   - Overseas
@@ -55,6 +59,8 @@ keywords:
   - European
   - Settlement Scheme
 ---
+
+$new-international-funding$
 
 Teach in England and you’ll benefit from working in a world-class education system.
 

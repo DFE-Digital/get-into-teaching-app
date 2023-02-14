@@ -14,6 +14,10 @@ navigation_description: Find out how to train to teach in England as an internat
 date: "2021-05-27"
 image: "media/images/content/hero-images/0003.jpg"
 backlink: "../../"
+inset_text:
+  new-international-funding:
+    text: |-
+      If you're a non-UK citizen interested in teaching languages or physics in England, you could be eligible for an <a href="/non-uk-teachers/fees-and-funding-for-non-UK-trainees#get-an-international-relocation-payment-irp-worth-10000">international relocation payment worth £10,000</a>.
 keywords:
   - International
   - Overseas
@@ -58,6 +62,8 @@ keywords:
   - Statement
   - Comparability
 ---
+
+$new-international-funding$
 
 Citizens of every country in the world can apply to train to teach in England.
 
