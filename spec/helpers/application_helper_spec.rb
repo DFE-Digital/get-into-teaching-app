@@ -238,7 +238,16 @@ describe ApplicationHelper do
   describe "#google_optimize_config" do
     subject { google_optimize_config }
 
-    it { is_expected.to eq({ paths: [] }) }
+    it "includes pages currently under test" do
+      is_expected.to eq({
+        paths: [
+          "/salaries-and-benefits-search",
+          "/salaries-and-benefits-social",
+          "/landing/how-much-do-teachers-get-paid",
+          "/landing/how-much-do-teachers-get-paid-social",
+        ],
+      })
+    end
   end
 
   describe "#sentry_dsn" do
