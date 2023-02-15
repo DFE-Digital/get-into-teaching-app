@@ -521,3 +521,5 @@ To be eligible, you need (all of the following):
 * GCSEs at grade 4 (C) or above in English and maths (and science if you want to teach primary)
 
 Specific entry criteria may vary by teacher training provider. You should ask them about eligibility before you apply.
+
+$international-content$
