@@ -296,6 +296,7 @@ redirects:
   "/funding-your-training": "/funding-and-support"
   "/tips-on-applying-for-teacher-training": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
   "/get-support-training-to-teach-if-you-are-disabled": "/funding-and-support/if-youre-disabled"
+  "/assessment-only-providers": "/train-to-be-a-teacher/if-you-have-experience"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
