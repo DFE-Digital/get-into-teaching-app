@@ -166,7 +166,7 @@ After that, QTS is a legal requirement to teach in many English schools, and con
 From 1 February 2023, qualified teachers from Ukraine who [meet the criteria for QTS](https://www.gov.uk/government/publications/awarding-qualified-teacher-status-to-overseas-teachers) will be able to [apply for QTS in England](https://apply-for-qts-in-england.education.gov.uk/eligibility/start) without paying a fee or undergoing more training. 
 
 ### Assessment only QTS
-If you find you don't meet the eligibility criteria to apply for QTS, you could consider assessment only QTS. This means you can work in an English school and, alongside your job, apply to an [English teacher training provider](/assessment-only-providers) who will assess if you meet the standards for English QTS. DfE has made funding available for candidates who apply for assessment only courses. Check assessment only training providers for more information about eligibility and funding.
+If you find you don't meet the eligibility criteria to apply for QTS, you could consider assessment only QTS. This means you can work in an English school and, alongside your job, apply to an [English teacher training provider](/train-to-be-a-teacher/assessment-only-route-to-qts) who will assess if you meet the standards for English QTS. DfE has made funding available for candidates who apply for assessment only courses. Check assessment only training providers for more information about eligibility and funding.
 
 ### Salaries and benefits
 
