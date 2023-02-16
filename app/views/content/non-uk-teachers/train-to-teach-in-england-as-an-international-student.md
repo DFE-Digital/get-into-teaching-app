@@ -156,7 +156,7 @@ The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/) h
 
 Fees vary between training providers, but range from £9,250 to about £32,000. You’ll also have to pay your living costs.
 
-However, if you are planning on training to teach languages and physics, you could be eligible for financial help worth up to £39,000.
+However, if you are planning on training to teach languages and physics, you could be eligible for financial help worth up to £39,000, including an international relocation payment worth £10,000.
 
 If you are not training to teach in these subjects, any support you get will depend on your immigration status. [Learn more about fees and funding for non-UK trainees](/non-uk-teachers/fees-and-funding-for-non-UK-trainees).
 
