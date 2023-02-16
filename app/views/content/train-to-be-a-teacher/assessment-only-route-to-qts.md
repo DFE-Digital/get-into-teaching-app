@@ -3,6 +3,9 @@ title: "Assessment only route to QTS"
 heading: "Assessment only route to QTS for unqualified teachers"
 description: |-
   Find out about the assessment only route to qualified teacher status (QTS) for unqualified teachers who have worked in a classroom.
+date: "2021-06-08"
+image: false
+backlink: /
 related_content:
     Career progression stories: "/blog/tag/career-progression"
     Salaries and benefits : "/salaries-and-benefits"
@@ -491,6 +494,12 @@ inset_text:
     text: |-
       If you’re a non-UK citizen, you should contact <a href="#group--non-uk">training providers who assess international teachers</a>. None of the other UK regional or national providers can help with non-UK enquiries. Please do not contact them if you are not in the UK.
     color: grey
+keywords:
+  - Assessment Only
+  - Assessment
+  - Provider
+  - SCITT
+  - experienced
 ---
 
 If you’ve worked as an unqualified teacher, you may be able to get [qualified teacher status (QTS)](/what-is-qts) through an assessment only programme.
