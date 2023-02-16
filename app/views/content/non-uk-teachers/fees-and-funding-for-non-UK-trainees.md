@@ -1,5 +1,5 @@
 ---
-title: "Training fees and financial support for non-UK trainee teachers"
+title: "Fees and financial support for non-UK trainee teachers"
 description: |-
   Learn more about bursaries, scholarships and the international relocation payment.
 related_content:
@@ -72,7 +72,7 @@ If you have achieved highly in your bachelor’s degree and have at least 3 year
 [Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses). 
 
 
-## Financial support for non-UK trainee teachers of languages and physics
+## Financial support for non-UK trainee languages and physics teachers
 
 There are 3 types of financial support you can get if you’re interested in training to teach languages and physics:
 
@@ -88,7 +88,7 @@ If you are eligible, you can receive both an international relocation payment an
 
 The IRP is designed to help pay the relocation expenses of languages or physics teacher trainees moving to the UK. 
 
-If you are eligible, you’ll receive a cash sum of £10,000 from DfE. You will not have to pay this money back and it can be spent in any way you wish. You can only receive the IRP once.
+If you are eligible, you’ll receive a cash sum of £10,000 from the Department for Education. You will not have to pay this money back and it can be spent in any way you wish. You can only receive the IRP once.
 
 
 #### Check your eligibility for the IRP
@@ -167,7 +167,7 @@ The languages bursary covers all languages offered by accredited teacher trainin
 
 #### Scholarships for physics, French, German and Spanish
 
-To get a scholarship, you’ll need to be a high-quality student and pass a tough selection process, run by the professional body for your subject.
+To get a scholarship, you’ll need to be a high-quality student and pass a tough selection process.
 
 If you’re successful, your teacher training provider will pay the scholarship money directly into your bank account over a period of 10 months.
 
@@ -212,12 +212,12 @@ You will generally be eligible for a tuition fee loan if you meet both the follo
 * you are an Irish citizen
 * you have been living in Ireland, or Ireland and the UK, Guernsey, Jersey or the Isle of Man, throughout the 3 years before the start of your course
 
-### Support for trainee teachers  from the European Economic Area (EEA) or Switzerland
+### Support for trainee teachers from the European Economic Area (EEA) or Switzerland
 
 If you meet both the following requirements:
 
 * you have settled status under the EU Settlement Scheme
-* you have been resident in the UK throughout the 3 years before the start of your course
+* you have been a resident in the UK throughout the 3 years before the start of your course
 
 you will generally be eligible for a:
 
@@ -283,7 +283,7 @@ However, other bursaries and scholarships are only available to candidates who m
 If you are awarded a bursary or scholarship, the money is paid directly into your bank account and you can use it as you wish. You do not have to pay this money back.
 
 
-[Learn more about bursaries and scholarships in other subjects, and how to apply](/funding-and-support). 
+[Learn more about bursaries and scholarships in other subjects, and how to apply](/funding-and-support/scholarships-and-bursaries). 
 
 ### Extra financial support
 If you have a disability, children or an adult dependant to care for, and you are eligible for a tuition fee loan and maintenance loan, you may be able to apply for extra help. You do not have to pay this money back.
@@ -308,13 +308,13 @@ To start your application for student finance support, you need to have chosen y
 Talk to your training provider about:
 
 * home fee rate
-* a [bursary or scholarship](/funding-and-support)
+* a [bursary or scholarship](/funding-and-support/scholarships-and-bursaries)
 
 ## Get help with financial support
 
 [Student Finance England](https://www.gov.uk/contact-student-finance-england) has a dedicated service for EU students and for EEA citizens working in the UK.
 
-Citizens from other countries can find more detailed information at [Student finance for undergraduates: eligibility](https://www.gov.uk/student-finance/who-qualifies).
+Citizens from other countries can also [find out more about eligibility for student finance](https://www.gov.uk/student-finance/who-qualifies).
 
 The [UK Council for International Student Affairs](https://www.ukcisa.org.uk/About-UKCISA) offers advice to international students about what financial support may be available.
 
