@@ -9,7 +9,7 @@ RSpec.describe CallsToAction::AttachmentComponent, type: :component do
   let(:basic_args) do
     {
       text: "Lorem ipsum ....",
-      file_path: "media/documents/ICT_skills_audit_returners.pdf",
+      file_path: "static/documents/ICT_skills_audit_returners.pdf",
     }
   end
 
@@ -21,7 +21,7 @@ RSpec.describe CallsToAction::AttachmentComponent, type: :component do
 
   context "with the basic arguments" do
     specify "includes a link to the attachment" do
-      is_expected.to have_css(%(a[href*="packs-test/v1/media/documents/ICT_skills_audit_returners"]))
+      is_expected.to have_css(%(a[href*="packs-test/v1/static/documents/ICT_skills_audit_returners"]))
     end
 
     specify "includes the text in the link" do

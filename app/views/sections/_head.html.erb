@@ -8,16 +8,19 @@
   <%= tag.link(rel: 'icon', type: 'image/x-icon', href: '/favicon.ico') %>
   <%= stylesheet_pack_tag 'application', 'data-turbolinks-track': 'reload', media: 'all' %>
   <noscript><%= stylesheet_pack_tag 'application_no_js', 'data-turbolinks-track': 'reload', media: 'all' %></noscript>
-  <% if Rails.env.test? && params.key?(:fake_browser_time) %>
-    <%= javascript_pack_tag 'fake_browser_time', 'data-turbolinks-track': 'reload', id: "fake-browser-time" %>
-  <% end %>
-  <%= google_optimize_script %>
-  <%= javascript_pack_tag 'sentry', 'data-turbolinks-track': 'reload', data: { "sentry-dsn": sentry_dsn, "sentry-environment": Rails.env } %>
-  <%= javascript_pack_tag 'gtm', 'data-turbolinks-track': 'reload', data: { "gtm-id": ENV["GTM_ID"] } if gtm_enabled? %>
-  <%= javascript_pack_tag 'js_enabled', 'data-turbolinks-track': 'reload', defer: true %>
-  <%= javascript_pack_tag 'lazy_images', 'data-turbolinks-track': 'reload', defer: true %>
-  <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  <% @js_packs += %w[sentry gtm google_optimize js_enabled lazy_images application] %>
   <%= yield :head %>
+  <% if Rails.env.test? && params.key?(:fake_browser_time) %>
+    <% @js_packs.unshift('fake_browser_time') %>
+  <% end %>
+  <%= javascript_pack_tag *@js_packs, 'data-turbolinks-track': 'reload', data:
+  {
+    "sentry-dsn": sentry_dsn,
+    "sentry-environment": Rails.env,
+    "gtm-id": ENV["GTM_ID"],
+    "google-optimize-id": ENV["GOOGLE_OPTIMIZE_ID"],
+    "google-optimize-paths": google_optimize_config[:paths],
+  } %>
   <%= breadcrumbs_structured_data(breadcrumb_trail) %>
   <%= logo_structured_data %>
   <%= home_structured_data if current_page?(root_path) %>

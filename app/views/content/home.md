@@ -8,7 +8,7 @@
   subtitle: "Whether you're just thinking about teaching or you're ready to apply, get tailored advice sent straight to your email."
   subtitle_button: "Get advice in your inbox"
   subtitle_link: "/mailinglist/signup/name"
-  image: "media/images/content/hero-images/0012.jpg"
+  image: "static/content/hero-images/0012.jpg"
   navigation_title: "Home"
   navigation_path: "/"
   hero_content_width: wide

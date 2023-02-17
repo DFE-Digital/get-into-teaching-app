@@ -9,8 +9,7 @@ gem "rails", "~> 7.0.2.3"
 # Use Puma as the app server
 gem "puma", "~> 5.6", ">= 5.6.2"
 
-# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem "webpacker", ">= 5.4.3"
+gem "shakapacker", "6.5.6"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

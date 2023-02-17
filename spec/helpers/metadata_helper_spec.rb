@@ -28,11 +28,11 @@ describe MetadataHelper, type: "helper" do
     end
 
     it "returns image/alt meta tags when given an image_path" do
-      tags = image_meta_tags(image_path: "media/images/content/hero-images/0012.jpg")
+      tags = image_meta_tags(image_path: "static/content/hero-images/0012.jpg")
 
       expect(tags).to include(
         <<~HTML.chomp,
-          <meta name="og:image" content="/packs-test/v1/media/images/content/hero-images/0012-cb6435a02b879e8df922882afba620a8.jpg">
+          <meta name="og:image" content="/packs-test/v1/static/content/hero-images/0012-cb6435a02b879e8df922.jpg">
         HTML
       )
 
@@ -48,7 +48,7 @@ describe MetadataHelper, type: "helper" do
 
       allow_any_instance_of(described_class).to receive(:asset_pack_url) { fake_host }
 
-      tags = image_meta_tags(image_path: "media/images/content/hero-images/0012.jpg")
+      tags = image_meta_tags(image_path: "static/content/hero-images/0012.jpg")
 
       expect(tags).to match(fake_host)
     end

@@ -4,7 +4,7 @@ heading: "Teach pupils with special educational needs and disabilities (SEND)"
 description: |-
   As a qualified teacher you’ll have the opportunity to work with pupils with complex needs, no matter what setting you work in.
 date: "2021-05-07"
-image: "media/images/content/hero-images/0023.jpg"
+image: "static/content/hero-images/0023.jpg"
 article_classes: ['longform']
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-send
