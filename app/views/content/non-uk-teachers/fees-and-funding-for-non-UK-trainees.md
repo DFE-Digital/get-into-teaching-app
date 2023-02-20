@@ -71,27 +71,6 @@ If you have achieved highly in your bachelor’s degree and have at least 3 year
 
 [Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses). 
 
-## Types of financial support available
-
-If you have the right immigration status, you could be eligible for the following types of financial help from the UK government.
-
-### Tuition fee loan
-Your tuition fees are paid in full, with the money going directly to your teacher training provider. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2023 to 2024 financial year, this is £24,996 per year.
-
-### Maintenance loan
-Money is paid directly into your bank account to help with your living costs. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2023 to 2024 financial year, this is £24,996 per year.
-
-### Home fee rate
-If you meet the requirements for a tuition fee loan, or tuition fee loan and maintenance loan, you will be charged fees at the rate set for UK candidates (set at a maximum of £9,250 for a full-time course).
-
-### Bursaries or scholarships 
-Physics and languages bursaries and scholarships are open to all qualifying non-UK candidates, regardless of their immigration status.
-However, other bursaries and scholarships are only available to candidates who meet the eligibility requirements for a tuition fee loan, or tuition fee and maintenance loan.
-
-If you are awarded a bursary or scholarship, the money is paid directly into your bank account and you can use it as you wish. You do not have to pay this money back.
-
-[Learn more about bursaries and scholarships in other subjects, and how to apply](/funding-and-support/scholarships-and-bursaries). 
-
 ## Financial support for non-UK trainee languages and physics teachers
 
 There are 3 types of financial support you can get if you’re interested in training to teach languages and physics:
@@ -208,7 +187,29 @@ You can check if you’re eligible for a scholarship and apply by visiting:
 * the [Institute of Physics](https://www.iop.org/about/support-grants/iop-teacher-training-scholarships#gref) (for a physics scholarship) 
 * the [British Council](https://www.britishcouncil.org/education/he-science/opportunities/ltts) (for a French, German or Spanish scholarship)
 
-[Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in languages and physics. 
+[Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in languages and physics.
+
+## Other types of financial support available
+
+If you have the right immigration status, you could be eligible for the following types of financial help from the UK government.
+
+### Tuition fee loan
+Your tuition fees are paid in full, with the money going directly to your teacher training provider. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2023 to 2024 financial year, this is £24,996 per year.
+
+### Maintenance loan
+Money is paid directly into your bank account to help with your living costs. This is a loan you have to pay back, but you’ll only start your repayments when your income is over a certain amount – for the 2023 to 2024 financial year, this is £24,996 per year.
+
+### Home fee rate
+If you meet the requirements for a tuition fee loan, or tuition fee loan and maintenance loan, you will be charged fees at the rate set for UK candidates (set at a maximum of £9,250 for a full-time course).
+
+### Bursaries or scholarships 
+Physics and languages bursaries and scholarships are open to all qualifying non-UK candidates, regardless of their immigration status.
+However, other bursaries and scholarships are only available to candidates who meet the eligibility requirements for a tuition fee loan, or tuition fee and maintenance loan.
+
+If you are awarded a bursary or scholarship, the money is paid directly into your bank account and you can use it as you wish. You do not have to pay this money back.
+
+[Learn more about bursaries and scholarships in other subjects, and how to apply](/funding-and-support/scholarships-and-bursaries). 
+
 ## Eligibility for other types of financial support
 
 Depending on your immigration status, you may be able to get other kinds of financial help from the UK government. 
