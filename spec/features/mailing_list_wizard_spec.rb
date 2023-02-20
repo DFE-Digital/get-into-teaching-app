@@ -232,7 +232,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     choose "Yes"
     click_on "Next step"
 
-    expect(page).to have_text "We're sorry, but to sign up for our emails, you need to be interested in training to teach"
+    expect(page).to have_text "We're sorry, but our emails are for people who are not already qualified to teach"
     expect(page).not_to have_button("Next step")
   end
 
