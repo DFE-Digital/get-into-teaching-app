@@ -297,6 +297,7 @@ redirects:
   "/tips-on-applying-for-teacher-training": "/train-to-be-a-teacher/how-to-apply-for-teacher-training"
   "/get-support-training-to-teach-if-you-are-disabled": "/funding-and-support/if-youre-disabled"
   "/assessment-only-providers": "/train-to-be-a-teacher/assessment-only-route-to-qts"
+  "/train-to-be-a-teacher/if-you-have-experience": "/train-to-be-a-teacher/assessment-only-route-to-qts"
 
   # Wildcards
   "/life-as-a-teacher(*page)": "/blog"
