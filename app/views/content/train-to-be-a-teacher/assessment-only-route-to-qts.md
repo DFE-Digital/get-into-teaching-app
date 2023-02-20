@@ -518,7 +518,7 @@ The assessment programme takes up to 12 weeks.
 
 Fees range from about £1,500 to £4,000, but varies between provider so it’s best to check with them for more information.
 
-Fees may be paid for by you or your school at the start of the programme. If you’re currently working in a school, talk to your employer about your funding options. 
+Fees may be paid by you or your school at the start of the programme. If you’re currently working in a school, talk to your employer about your funding options. 
 
 ## Eligibility for assessment only QTS
 
