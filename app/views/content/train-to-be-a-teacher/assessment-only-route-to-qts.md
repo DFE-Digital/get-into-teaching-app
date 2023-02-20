@@ -17,8 +17,8 @@ navigation_title: If you’ve worked as an unqualified teacher
 navigation_description: If you've worked as an unqualified teacher, you may be able to get qualified teacher status (QTS) through an assessment only route.
 fullwidth: true
 content:
-  - content/assessment-only-providers/listing
-  - content/assessment-only-providers/update-details
+  - content/train-to-be-a-teacher/assessment-only-route-to-qts/listing
+  - content/train-to-be-a-teacher/assessment-only-route-to-qts/update-details
 provider_groups:
   East of England:
     providers:
@@ -468,7 +468,7 @@ provider_groups:
       telephone: 020 3194 3200
       email: institute@tesglobal.com
   Non-UK:
-    description: content/assessment-only-providers/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
+    description: content/train-to-be-a-teacher/assessment-only-route-to-qts/descriptions/teacher-training-providers-offering-assessment-only-qts-to-international-teachers
     providers:
     - header: University of Sunderland
       link: https://www.sunderland.ac.uk/study/short-courses-cpd/assessment-only-route-qts/
