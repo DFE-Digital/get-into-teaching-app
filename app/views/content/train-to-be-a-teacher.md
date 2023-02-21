@@ -14,7 +14,7 @@ layout: "layouts/category"
 content:
     - content/train-to-be-a-teacher/questions
     - content/train-to-be-a-teacher/why-teach
-image: "media/images/content/hero-images/0007.jpg"
+image: "static/content/hero-images/0007.jpg"
 hero_bg_color: yellow
 title_bg_color: white
 hero_blend_content: true

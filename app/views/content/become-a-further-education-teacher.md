@@ -1,7 +1,7 @@
 ---
 title: Teach in further education
 article_classes: ['longform']
-image: "media/images/content/hero-images/0015.jpg"
+image: "static/content/hero-images/0015.jpg"
 description: |-
   Find out how to become a college teacher in the UK. This Department for Education page has links to advice and support on teacher training in further education.
 date: "2021-06-18"

@@ -9,7 +9,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Proud parents report summary
-      file_path: media/documents/proud-parents-teaching-report.pdf
+      file_path: static/documents/proud-parents-teaching-report.pdf
       file_type: PDF
       file_size: 260KB
       published_at: 10 November 2022
@@ -17,7 +17,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Career countdown report summary
-      file_path: media/documents/career-countdown-campaign-teaching-report.pdf
+      file_path: static/documents/career-countdown-campaign-teaching-report.pdf
       file_type: PDF
       file_size: 267KB
       published_at: 6 July 2022
@@ -25,7 +25,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Life lessons report summary
-      file_path: media/documents/life-lessons-learnt-campaign-teaching.pdf
+      file_path: static/documents/life-lessons-learnt-campaign-teaching.pdf
       file_type: PDF
       file_size: 270KB
       published_at: 7 April 2022
@@ -33,7 +33,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Be the career change report summary
-      file_path: media/documents/be-the-career-change.pdf
+      file_path: static/documents/be-the-career-change.pdf
       file_type: PDF
       file_size: 244KB
       published_at: 13 January 2022
@@ -41,7 +41,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Bring it report summary
-      file_path: media/documents/bringit-report.pdf
+      file_path: static/documents/bringit-report.pdf
       file_type: PDF
       file_size: 258KB
       published_at: 18 November 2021
@@ -49,7 +49,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Breakthrough moments report summary
-      file_path: media/documents/breakthrough-moments.pdf
+      file_path: static/documents/breakthrough-moments.pdf
       file_type: PDF
       file_size: 274KB
       published_at: 29 July 2021
@@ -57,7 +57,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the My favourite subject report summary
-      file_path: media/documents/my-favourite-subject.pdf
+      file_path: static/documents/my-favourite-subject.pdf
       file_type: PDF
       file_size: 266KB
       published_at: 20 May 2021
@@ -65,7 +65,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Decade dilemmas report summary
-      file_path: media/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf
+      file_path: static/documents/exploring-career-aspirations-in-the-wake-of-2020.pdf
       file_type: PDF
       file_size: 754KB
       published_at: 19 January 2021
@@ -73,7 +73,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the career aspirations and what it takes to teach survey
-      file_path: media/documents/it-takes-you-to-teach.pdf
+      file_path: static/documents/it-takes-you-to-teach.pdf
       file_type: PDF
       file_size: 764KB
       published_at: 23 September 2020
@@ -81,7 +81,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the appreciation for teachers survey
-      file_path: media/documents/thank-a-teacher.pdf
+      file_path: static/documents/thank-a-teacher.pdf
       file_type: PDF
       file_size: 754KB
       published_at: 20 May 2020
@@ -89,7 +89,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read the Millennial Career Crossroads report summary
-      file_path: media/documents/millenial-career-crossroads.pdf
+      file_path: static/documents/millenial-career-crossroads.pdf
       file_type: PDF
       file_size: 752KB
       published_at: 7 January 2020
@@ -97,7 +97,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the career change conundrum survey
-      file_path: media/documents/career-conundrum.pdf
+      file_path: static/documents/career-conundrum.pdf
       file_type: PDF
       file_size: 460KB
       published_at: 4 September 2019
@@ -105,7 +105,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the switching careers survey
-      file_path: media/documents/career-change-research.pdf
+      file_path: static/documents/career-change-research.pdf
       file_type: PDF
       file_size: 450KB
       published_at: 3 January 2019
@@ -113,7 +113,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the perceptions of influence survey
-      file_path: media/documents/perceptions-of-influence.pdf
+      file_path: static/documents/perceptions-of-influence.pdf
       file_type: PDF
       file_size: 450KB
       published_at: 14 November 2018
@@ -121,7 +121,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the careers survey
-      file_path: media/documents/career-survey-summary.pdf
+      file_path: static/documents/career-survey-summary.pdf
       file_type: PDF
       file_size: 424KB
       published_at: 29 November 2017
@@ -130,7 +130,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Read a summary of the soft messaging survey
-      file_path: media/documents/soft-messaging.pdf
+      file_path: static/documents/soft-messaging.pdf
       file_type: PDF
       file_size: 459KB 
       published_at: 10 November 2016

@@ -29,7 +29,7 @@ You will need a degree to teach all student groups except those in further educa
 Most disabled pupils and pupils with special educational needs learn in mainstream schools.
 No matter what settings you train and work in – whether it’s mainstream schools, special schools, or both – you’ll work with pupils with complex needs.
 
-You can [find a course which specialises in special educational needs and disability (SEND)](https://www.find-postgraduate-teacher-training.service.gov.uk/start/subject?l=2) if you have a particular interest in this area.
+You can [find a course which specialises in special educational needs and disability (SEND)](https://www.find-postgraduate-teacher-training.service.gov.uk/) if you have a particular interest in this area.
 
 However, it’s not essential to do a course specialising in SEND. As you train and teach you’ll get the skills you need to work with disabled pupils and pupils with special educational needs. This will enable you to work in a range of settings throughout your career.
 

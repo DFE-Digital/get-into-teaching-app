@@ -2,7 +2,7 @@ require "rails_helper"
 
 RSpec.describe CallsToAction::HomepageComponent, type: :component do
   let(:icon) { "icon-question" }
-  let(:image) { "media/images/dfelogo.png" }
+  let(:image) { "static/dfelogo.png" }
   let(:title) { "Joey" }
   let(:link_text) { "Click here" }
   let(:link_target) { "/some-dir/some-page" }
@@ -51,7 +51,7 @@ RSpec.describe CallsToAction::HomepageComponent, type: :component do
     end
 
     specify "the image is present" do
-      expect(page.find(".call-to-action__image")["style"]).to include("packs-test/v1/media/images/dfelogo")
+      expect(page.find(".call-to-action__image")["style"]).to include("packs-test/v1/static/dfelogo")
     end
 
     specify "the badge_text is present" do

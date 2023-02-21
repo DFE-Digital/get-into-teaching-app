@@ -1,3 +1,4 @@
+<a id="non-uk"></a>
 Teachers outside the UK who do not have a teaching qualification, but [meet the eligibility requirements for assessment only QTS](https://www.gov.uk/government/publications/apply-for-qualified-teacher-status-qts-if-you-teach-outside-the-uk/routes-to-qualified-teacher-status-qts-for-teachers-and-those-with-teaching-experience-outside-the-uk#apply-for-assessment-only-qts), can apply to be assessed by an English teacher training provider. 
 
 You will not have to visit or train in England. However, you will need to be assessed at your place of work by an examiner from your teaching training provider. Your teacher training provider can explain what type of school you must be working in to undergo assessment only QTS.

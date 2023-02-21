@@ -1,0 +1,29 @@
+<div class="action-container">
+  <div class="heading-container">
+    <h2 class="heading-m heading--box-purple">
+      Get the latest teaching information and support
+    </h2>
+  </div>
+
+  <div class="content">
+    <div class="inset">
+      <p>
+        Answer a couple of questions about yourself and we'll send you more information about teaching benefits, as well as helpful tips and advice to get you one step closer to a career in teaching.
+      </p>
+
+      <%= form_with builder: GOVUKDesignSystemFormBuilder::FormBuilder, url: mailing_list_step_path(:name), scope: :mailing_list_steps_name, method: :put do |f| %>
+        <%= f.govuk_text_field :first_name, width: 'two-thirds', autocomplete: "given-name" %>
+        <%= f.govuk_text_field :last_name, width: 'two-thirds', autocomplete: "family-name" %>
+        <%= f.govuk_email_field :email, width: 'two-thirds', autocomplete: "email" %>
+        <%= f.hidden_field :accepted_policy_id, value: privacy_policy.id %>
+
+        <p>Your details are protected under the terms of our <%= link_to("privacy notice", privacy_policy_path(id: privacy_policy.id), { class: "link--black", target: :blank }) %>.</p>
+
+        <p>Our privacy notice explains how we use your personal data. It's important you read this before signing up to receive emails.</p>
+
+        <% button_text = "Next step <span></span>" %>
+        <%= f.button button_text, class: "call-to-action-button button", data: { "prevent-double-click": true, "disable-with": button_text } %>
+      <% end %>
+    </div>
+  </div>
+</div>

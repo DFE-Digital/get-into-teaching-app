@@ -81,7 +81,7 @@ SecureHeaders::Configuration.default do |config|
 
   if Rails.env.development?
     # Webpack-dev-server
-    config.csp[:connect_src] += %w[ws: localhost:*]
+    config.csp[:connect_src] += %w[http://localhost:3035 ws://localhost:3035 wss://localhost:3035]
   end
 end
 # rubocop:enable Lint/PercentStringArray

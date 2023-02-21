@@ -4,8 +4,8 @@ date: "2021-12-16"
 author: Juliet Fern, Mieka Harris and Kate Hudson-Glynn
 images:
   bedfordshire:
-    path: "media/images/content/blog/bedfordshire.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/bedfordshire.jpg"
+    path: "static/content/blog/bedfordshire.jpg"
+    thumbnail_path: "static/content/blog/thumbnails/bedfordshire.jpg"
 description: |-
    Juliet Fern, Mieka Harris and Kate Hudson-Glynn from the University of Bedfordshire share seven key things to include in your teacher training application.
 keywords:

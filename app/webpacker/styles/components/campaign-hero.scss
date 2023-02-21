@@ -2,20 +2,21 @@
   // the two ratios don't overlap exactly because we'd get a jagged
   // edge - instead adjust the second slightly so it blurs smoothly
 
-  @mixin slanted-bottom($accent) {
+  @mixin slanted-bottom($accent, $bg) {
     $accent-ratio: 75%;
-    $white-ratio: $accent_ratio + .5%;
-    background: linear-gradient(182deg, $accent $accent-ratio, $white $white-ratio);
+    $bg-ratio: $accent_ratio + .5%;
+    background: linear-gradient(182deg, $accent $accent-ratio, $bg $bg-ratio);
   }
 
   min-height: 15em;
+  padding-block: 1em;
 
   .container {
     max-width: $column-845;
-    margin-top: 0;
+    margin: 0 auto;
 
     align-items: center;
-    padding-block: 1em;
+    padding: 0;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -26,7 +27,7 @@
   }
 
   &.yellow {
-    @include slanted-bottom($yellow);
+    @include slanted-bottom($yellow, $white);
 
     background-color: $yellow;
     color: $black;
@@ -34,10 +35,14 @@
     h1 > span {
       background: $purple;
     }
+
+    &.bg-grey {
+      @include slanted-bottom($yellow, $grey);
+    }
   }
 
   &.blue {
-    @include slanted-bottom($blue);
+    @include slanted-bottom($blue, $white);
 
     background-color: $blue;
     color: $black;
@@ -48,7 +53,7 @@
   }
 
   &.pink {
-    @include slanted-bottom($pink);
+    @include slanted-bottom($pink, $white);
 
     background-color: $pink;
     color: $black;
@@ -59,7 +64,7 @@
   }
 
   h1 {
-    margin: 1em auto;
+    margin: 1em auto 0 1em;
     z-index: 5;
 
     @include mq($from: mobile) {
@@ -80,7 +85,7 @@
       @include font-size(xxxlarge, $adjust: .75rem);
 
       @include mq($from: mobile) {
-        @include font-size(xxxlarge, $adjust: 2rem);
+        @include font-size(xxxlarge, $adjust: .5rem);
       }
     }
   }

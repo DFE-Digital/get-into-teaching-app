@@ -4,7 +4,7 @@
 2. Run `yarn` to install node dependencies
 3. Run `az login` and then `make local set-local-env` to populate development secrets
 4. Run `bundle exec rails server` to launch the app on http://localhost:3000
-5. Run `./bin/webpack-dev-server` in a separate shell for faster compilation of assets
+5. Run `./bin/webpacker-dev-server` in a separate shell for faster compilation of assets
 
 ## Copy the content your local machine.
 Content for this website is stored in a seperate repo and is added in by the CI/CD pipeline.

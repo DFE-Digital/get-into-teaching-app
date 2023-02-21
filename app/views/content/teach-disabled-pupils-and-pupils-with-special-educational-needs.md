@@ -4,7 +4,7 @@ heading: "Teach pupils with special educational needs and disabilities (SEND)"
 description: |-
   As a qualified teacher you’ll have the opportunity to work with pupils with complex needs, no matter what setting you work in.
 date: "2021-05-07"
-image: "media/images/content/hero-images/0023.jpg"
+image: "static/content/hero-images/0023.jpg"
 article_classes: ['longform']
 promo_content:
     - content/train-to-be-a-teacher/promos/adviser-promo-send
@@ -22,7 +22,7 @@ Most disabled pupils and pupils with special educational needs learn in mainstre
 
 No matter what settings you train and work in – whether it's mainstream schools, special schools, or both – you’ll work with pupils with complex needs.
 
-You can [find a teacher training course](https://www.find-postgraduate-teacher-training.service.gov.uk/start/subject?l=2) and filter by 'courses with a SEND specialism' if you have a particular interest in the area.
+You can [find a teacher training course](https://www.find-postgraduate-teacher-training.service.gov.uk/) and filter by 'courses with a SEND specialism' if you have a particular interest in the area.
 
 However, it’s not essential to do a course specialising in SEND.
 

@@ -4,8 +4,8 @@ author: Farooq Ahmad
 date: "2021-09-29"
 images:
   farooq:
-    path: "media/images/content/blog/farooq-ahmad.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/farooq-ahmad.jpg"
+    path: "static/content/blog/farooq-ahmad.jpg"
+    thumbnail_path: "static/content/blog/thumbnails/farooq-ahmad.jpg"
 description: |-
   When former ICT teacher Farooq Ahmad decided to return to the classroom, the National Tutoring Programme provided the perfect opportunity to update his knowledge and experience.
 keywords:
