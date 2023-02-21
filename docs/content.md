@@ -109,9 +109,9 @@ Sometimes we don't want our content pages to be indexed by Google and other sear
 If you need to include a link to a document or embed an image in your page content you'll need to first add the file to the repository. Any documents should be placed in `/app/webpacker/documents` and images in `/app/webpacker/images/content` (under a subdirectory if suitable). You can then reference the files in your Markdown content (note the paths used to reference here will differ to the location of the file - use `/media` instead of `/app/webpacker`):
 
 ```
-[Download a document](media/documents/my-document.pdf)
+[Download a document](static/documents/my-document.pdf)
 
-![An image](media/images/content/my-image.jpg)
+![An image](static/content/my-image.jpg)
 ```
 
 Images should be appropriately scaled and compressed prior to adding them to the website.
@@ -121,14 +121,14 @@ Images should be appropriately scaled and compressed prior to adding them to the
 The images used in the hero and on blog posts now pull their alt text from a central store. This allows us to set it once and include it wherever the image is used. The data is stored in `config/images.yml` and the format is as follows:
 
 ```yaml
-"media/images/content/hero-images/0001.jpg":
+"static/content/hero-images/0001.jpg":
   alt: "Maths teacher standing in front of a whiteboard with maths equations."
   variants:
-    - "media/images/content/hero-images/0001--mobile.jpg"
-    - "media/images/content/hero-images/0001--tablet.jpg"
+    - "static/content/hero-images/0001--mobile.jpg"
+    - "static/content/hero-images/0001--tablet.jpg"
 ```
 
-The key (`"media/images/content/hero-images/0001.jpg"`) is the **primary** variant of the image, the full resolution one. Beneath it the following items are nested:
+The key (`"static/content/hero-images/0001.jpg"`) is the **primary** variant of the image, the full resolution one. Beneath it the following items are nested:
 
 * `alt:` - the alt text for the image, wrapped in quotes
 * `variants` - a list of **other versions of the same image**. The alternate versions can be thumbnails or crops and are considered alternates if the same `alt` text can be applied to them as the primary variant
@@ -151,7 +151,7 @@ calls_to_action:
     name: attachment
     arguments:
       text: Open attachment
-      file_path: media/documents/a_report.pdf
+      file_path: static/documents/a_report.pdf
       file_type: PDF
       published_at: 01 September 2020
   table:
@@ -268,11 +268,11 @@ title: Article title
 date: "2021-08-26"
 images:
 an_image:
-  path: "media/images/content/blog/image.jpg"
-  thumbnail_path: "media/images/content/blog/thumbnails/image.jpg"
+  path: "static/content/blog/image.jpg"
+  thumbnail_path: "static/content/blog/thumbnails/image.jpg"
   alt: "A description of the image"
 another_image:
-  path: "media/images/content/blog/another_image.jpg"
+  path: "static/content/blog/another_image.jpg"
   alt: "A description of the image"
 description: |-
   A brief description of the blog article.

@@ -4,8 +4,8 @@ date: "2021-11-29"
 author: Michelle Borders
 images:
   rocket:
-    path: "media/images/content/blog/rocket.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/rocket.jpg"
+    path: "static/content/blog/rocket.jpg"
+    thumbnail_path: "static/content/blog/thumbnails/rocket.jpg"
 description: |-
   Michelle Borders from the Community Academies Trust Institute of Education has recruited trainee teachers for eight years. Here she shares her top tips on the application process.
 keywords:

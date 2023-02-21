@@ -110,7 +110,7 @@ RSpec.feature "content pages check", type: :feature, content: true do
           .reject(&:nil?)
           .reject { |href| href.start_with?(Regexp.union("http:", "https:", "tel:", "mailto:")) }
           .reject { |href| href.start_with?("/blog/tag") }
-          .reject { |href| href.match?("media/") }
+          .reject { |href| href.match?("static/") }
           .reject { |href| href.match?(Regexp.union("privacy-policy", "events", "javascript")) }
           .select { |href| href.start_with?(Regexp.union("/", /\w+/)) }
           .uniq

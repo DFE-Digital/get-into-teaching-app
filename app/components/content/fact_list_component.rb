@@ -9,7 +9,7 @@ module Content
     end
 
     def icon(icon_name)
-      image_pack_tag("media/images/#{icon_name}.svg", alt: "")
+      image_pack_tag("static/#{icon_name}.svg", alt: "")
     end
 
   private

@@ -5,7 +5,7 @@ content:
     - content/landing/food-for-thought/header
     - content/landing/food-for-thought/quotes
     - content/landing/food-for-thought/promo
-image: "media/images/content/hero-images/cake.png"
+image: "static/content/hero-images/cake.png"
 colour: "yellow"
 layout: "layouts/minimal"
 noindex: true

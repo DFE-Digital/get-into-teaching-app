@@ -8,7 +8,7 @@ related_content:
     What will your teacher training year be like? : "/train-to-be-a-teacher/initial-teacher-training"
     What to expect on a university-based PGCE course : "/blog/what-to-expect-on-your-teacher-training"
 date: "2021-11-01"
-image: "media/images/content/hero-images/0015.jpg"
+image: "static/content/hero-images/0015.jpg"
 backlink: "../../"
 promo_content:
     - content/train-to-be-a-teacher/promos/find-your-course-pgce
