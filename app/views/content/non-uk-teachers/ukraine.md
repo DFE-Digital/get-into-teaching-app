@@ -128,7 +128,7 @@ You can also learn English with a private provider. Well respected English langu
 
 ### Qualified teacher status
 
-[Qualified teacher status (QTS)]((https://www.gov.uk/guidance/qualified-teacher-status-qts)) is the professional status teachers in England gain at the end of their teacher training. Schools use QTS as a measure of teaching skills and experience, so you will find it much easier to get a teaching job in England if you have QTS.
+[Qualified teacher status (QTS)](https://www.gov.uk/guidance/qualified-teacher-status-qts) is the professional status teachers in England gain at the end of their teacher training. Schools use QTS as a measure of teaching skills and experience, so you will find it much easier to get a teaching job in England if you have QTS.
 
 ### Apply for QTS in England
 
@@ -137,7 +137,7 @@ Qualified teachers from Ukraine who [meet the criteria for QTS](https://www.gov.
 ### Assessment only QTS
 If you find you do not meet the eligibility criteria to apply for QTS, you could consider assessment only QTS. This means you can work in an English school and, alongside your job, apply to an English teacher training provider who will assess if you meet the standards for English QTS.
 
-DfE has made funding available for candidates who apply for assessment only courses. Check with [assessment only training providers]((/assessment-only-providers) for more information about eligibility and funding.
+DfE has made funding available for candidates who apply for assessment only courses. Check with [assessment only training providers](/assessment-only-providers) for more information about eligibility and funding.
 
 ### Apply for a teaching job
 
