@@ -119,7 +119,7 @@ Secondly, you must come to the UK on one of the following visas:
 
 Thirdly, you must move to the UK no more than 3 months before the start of your course.  
 
-You will not be eligible for the IRP if you are undergoing [assessment only QTS](/assessment-only-providers). 
+You will not be eligible for the IRP if you are undergoing [assessment only QTS](/assessment-only-route-to-QTS). 
 
 [Learn more about applying for a visa to train to teach in England](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa).
 
