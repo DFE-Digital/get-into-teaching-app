@@ -67,7 +67,7 @@ As a non-UK candidate, you can expect to pay between £9,250 and about £32,000 
 
 Depending on your immigration status, you may get a reduction in your fees to the rate paid by UK applicants (set at a maximum of £9,250). If you are eligible, this fee will be the same for all courses offered by accredited training providers. Please note – most non-UK candidates will not be eligible for this type of financial support. 
 
-If you have achieved highly in your bachelor’s degree and have at least 3 years’ relevant work experience, you can apply for a salaried teacher training course. On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive. 
+You can apply for a salaried teacher training course. On this type of course, you will not pay a fee, and you can earn money while you train in a school. However, these courses are limited in number and very competitive. 
 
 [Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses). 
 
@@ -83,9 +83,9 @@ If you are eligible, you can receive both an international relocation payment an
 
 ### Get an international relocation payment (IRP) worth £10,000
 
-The IRP is designed to help pay the relocation expenses of languages or physics teacher trainees moving to the UK. 
+The IRP is designed to repay some of the relocation expenses of languages or physics teacher trainees moving to England. 
 
-If you are eligible, you’ll receive a cash sum of £10,000 from the Department for Education. You will not have to pay this money back and it can be spent in any way you wish. You can only receive the IRP once.
+If you are eligible, you’ll receive a single payment of £10,000 from the Department for Education around the end of your first term training in England. You will not have to pay this money back and it can be spent in any way you wish. You can only receive the IRP once.
 
 
 #### Check your eligibility for the IRP
@@ -100,6 +100,8 @@ You must have taken up a place on a teacher training course in England leading t
 
   - engineers teach physics 
   - courses which are made up of at least 50% physics 
+
+[Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in languages and physics.
    
 You must come to the UK on one of the following visas:  
 
@@ -117,10 +119,7 @@ You must come to the UK on one of the following visas:
 
 You must move to the UK no more than 3 months before the start of your course.  
 
-You will not be eligible for the IRP if you are:
-
-* already living in the UK 
-* undergoing [assessment only QTS](/assessment-only-providers) 
+You will not be eligible for the IRP if you are undergoing [assessment only QTS](/assessment-only-providers). 
 
 [Learn more about applying for a visa to train to teach in England](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa).
 
