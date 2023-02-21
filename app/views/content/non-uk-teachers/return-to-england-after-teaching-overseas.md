@@ -1,6 +1,6 @@
 ---
 title: Return to England after teaching overseas
-image: "media/images/content/hero-images/0014.jpg"
+image: "static/content/hero-images/0014.jpg"
 backlink: "../../"
 description: |-
   Return to England after teaching overseas and bring your skills and experience back to an English classroom. Get support to make your transition easier.

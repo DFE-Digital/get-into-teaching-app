@@ -3,8 +3,8 @@ title: Top tips for returning teachers
 date: "2021-06-15"
 images:
   calculator:
-    path: "media/images/content/blog/calculator.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/calculator.jpg"
+    path: "static/content/blog/calculator.jpg"
+    thumbnail_path: "static/content/blog/thumbnails/calculator.jpg"
 description: |-
   Do you already hold Qualified Teacher Status? Bring your valuable experience back to the classroom with help from the Department for Education.
 keywords:

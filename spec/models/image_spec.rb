@@ -16,7 +16,7 @@ describe Image do
       subject { described_class.new.build_args(path) }
 
       context "with a valid image path" do
-        let(:path) { "media/images/content/hero-images/0003.jpg" }
+        let(:path) { "static/content/hero-images/0003.jpg" }
 
         specify "returns the correct image path and alt text" do
           expect(subject).to eql([path, { alt: "Male and female teacher talking in a staff room." }])
@@ -24,7 +24,7 @@ describe Image do
       end
 
       context "with a bad image path" do
-        let(:path) { "media/something-really-invalid/abc.pdf" }
+        let(:path) { "static/something-really-invalid/abc.pdf" }
 
         specify "raises an error" do
           expect { subject }.to raise_error(Image::UnregisteredImageError, /no image information found/)
@@ -36,7 +36,7 @@ describe Image do
       subject { described_class.new.alt(path) }
 
       context "with a valid image path" do
-        let(:path) { "media/images/content/hero-images/0003.jpg" }
+        let(:path) { "static/content/hero-images/0003.jpg" }
 
         specify "returns the correct image path and alt text" do
           expect(subject).to eql("Male and female teacher talking in a staff room.")
@@ -44,7 +44,7 @@ describe Image do
       end
 
       context "with a bad image path" do
-        let(:path) { "media/something-really-invalid/abc.pdf" }
+        let(:path) { "static/something-really-invalid/abc.pdf" }
 
         specify "raises an error" do
           expect { subject }.to raise_error(Image::UnregisteredImageError, /no image information found/)
