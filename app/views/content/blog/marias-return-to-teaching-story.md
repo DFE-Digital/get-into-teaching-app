@@ -4,8 +4,8 @@ author: Maria Bateson
 date: "2021-04-21"
 images:
   maria:
-    path: "media/images/content/blog/maria.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/maria.jpg"
+    path: "static/content/blog/maria.jpg"
+    thumbnail_path: "static/content/blog/thumbnails/maria.jpg"
 description: |-
   After more than 10 years outside of the profession, Maria re-entered the classroom in November 2020. She describes how and why she returned to teaching.
     

@@ -104,7 +104,7 @@ describe Events::Steps::PersonalisedUpdates do
 
     let(:teaching_subject_types) do
       subjects = TeachingSubject::ALL.merge(TeachingSubject::IGNORED)
-      subjects.map { |k, v| GetIntoTeachingApiClient::LookupItem.new({ id: v, value: k }) }
+      subjects.map { |k, v| GetIntoTeachingApiClient::TeachingSubject.new({ id: v, value: k }) }
     end
 
     before do

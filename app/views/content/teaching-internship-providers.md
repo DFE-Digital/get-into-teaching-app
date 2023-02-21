@@ -27,20 +27,25 @@ provider_groups:
     - header: Creative Education Trust
       link: https://www.creativeeducationtrust.org.uk/internship
       name: Claire Amed
-      email: claire.amed@creativeeducationtrust.org.uk
+      email: Claire.amed@creativeeducationtrust.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: George Spencer Academy
       link: http://www.george-spencer.com/
       name: Tammy Elward
       email: tammyelward@satrust.com
       subjects: chemistry, computing, maths, physics, languages
+    - header: Learners First Schools Partnership
+      link: https://www.learnersfirst.net/internships/
+      name: Claire Garbutt/Georgia Osborne
+      email: cgarbutt@learnersfirst.org / gosborne@learnersfirst.org
+      subjects: chemistry, computing, maths, physics, languages
     - header: Leicestershire Secondary SCITT
-      link: https://www.leicestershiresecondaryscitt.org/
+      link: https://www.leicestershiresecondaryscitt.org/events-information/teaching-internships/
       name: Laura Wharton
       email: lwharton@rushey-tmet.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Lionheart Teach
-      link: https://www.lionheartteach.org.uk/
+      link: https://www.lionheartteach.org.uk/opportunities/internships/
       name: Emma Lowe
       email: info@lionheartteach.org.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -49,10 +54,20 @@ provider_groups:
       name: Vanessa Scott
       email: v.scott@becketonline.co.uk
       subjects: chemistry, computing, maths, physics, languages
+    - header: Nottinghamshire Torch SCITT
+      link: https://www.teachnottinghamshire.co.uk/
+      name: Rebecca Morgan-Jones
+      email: contact@teachnottinghamshire.co.uk 
+      subjects: chemistry, computing, maths, physics, languages
     - header: Outwood Institute of Education
       link: https://oie.outwood.com/
       name: George W. Robson
-      email: g.robson@outwood.com
+      email: G.robson@outwood.com
+      subjects: chemistry, computing, maths, physics, languages
+    - header: Tuxford Academy
+      link: https://www.diverseassociation.org.uk/get-into-teaching/internships/
+      name: Administrator
+      email: interns@diverse-ac.org.uk
       subjects: chemistry, computing, maths, physics, languages
   East of England:
     providers:
@@ -67,20 +82,35 @@ provider_groups:
       email: scombe@bestacademies.org.uk
       subjects: chemistry, maths, physics, languages
     - header: Benfleet Team Supporting All
-      link: http://www.btsa.uk/
+      link: http://www.btsa.uk/internship-scheme/
       name: Maxine Howard
       email: mhoward@theappletonschool.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Creative Education Trust
       link: https://www.creativeeducationtrust.org.uk/internship
       name: Claire Amed
-      email: claire.amed@creativeeducationtrust.org.uk
+      email: Claire.amed@creativeeducationtrust.org.uk
+      subjects: chemistry, computing, maths, physics, languages
+    - header: Debden Park High School (TKAT Teacher Training)
+      link: https://scitt.tkat.org/
+      name: Jo Fogg
+      email: jo.fogg@tkat.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Farlingaye High School
       link: https://www.eastscitt.co.uk/
       name: Peter Smith
       email: psmith@farlingaye.suffolk.sch.uk
       subjects: maths, physics
+    - header: Harris Initial Teacher Education
+      link: https://www.harristraintoteach.com/187/news/post/108/paid-internship-programme-2023
+      name: Jose Oliveira/Shona Findlay
+      email: jose.oliveira@harrisfederation.org.uk / shona.findlay@harrisfederation.org.uk
+      subjects: chemistry, computing, maths, physics, languages
+    - header: Northgate High School, Ipswich
+      link: https://www.northgate.suffolk.sch.uk/staff/training-to-teach/
+      name: Miss Mary Hallett
+      email: mch@northgate.suffolk.sch.uk
+      subjects: chemistry, computing, maths, physics, languages
     - header: Ormiston Academies Trust
       link: https://www.ormistonacademiestrust.co.uk
       name: Jemma Sherwood
@@ -97,14 +127,9 @@ provider_groups:
       email: arodda@swchs.net
       subjects: chemistry, computing, maths, physics, languages
     - header: South Essex Training and Support Alliance
-      link: https://www.setsa.info/
+      link: https://www.setsa.info/1567/teaching-internship-programme-2023
       name: David Struthers
-      email: d.struthers@setsa.ingo
-      subjects: chemistry, computing, maths, physics, languages
-    - header: TKAT SCITT
-      link: https://scitt.tkat.org/
-      name: Sarah Drury
-      email: sarah.drury@tkat.org 
+      email: d.struthers@setsa.info
       subjects: chemistry, computing, maths, physics, languages
     - header: The Hertfordshire and Essex High School
       link: https://www.hertsandessex.herts.sch.uk/
@@ -113,10 +138,20 @@ provider_groups:
       subjects: chemistry, computing, maths, physics, languages
   London:
     providers:
-    - header: Excalibur
-      link: https://www.stjohns.excalibur.org.uk/
-      name: Emma Hawes
-      email: ehawes@stjohns.excalibur.org.uk
+    - header: Debden Park High School (TKAT Teacher Training)
+      link: https://scitt.tkat.org/
+      name: Jo Fogg
+      email: jo.fogg@tkat.org
+      subjects: chemistry, computing, maths, physics, languages
+    - header: GLF Teacher Training
+      link: https://www.glfscitt.org/259/teaching-internships
+      name: Katie Blackburn
+      email: k.blackburn@glfschools.org
+      subjects: chemistry, computing, maths, physics, languages
+    - header: Harris Initial Teacher Education
+      link: https://www.harristraintoteach.com/187/news/post/108/paid-internship-programme-2023
+      name: Jose Oliveira/Shona Findlay
+      email: jose.oliveira@harrisfederation.org.uk / shona.findlay@harrisfederation.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: LETTA (London East Teacher Training Alliance)
       link: https://letta.org.uk/train/
@@ -124,14 +159,14 @@ provider_groups:
       email: train@letta.org.uk
       subjects: maths, physics
     - header: New River Teaching Alliance
-      link: https://nrta.co.uk/
+      link: https://nrta.co.uk/train-to-teach/internships/
       name: Iraj Felfeli
       email: ifelfeli@alexandrapark.school
       subjects: chemistry, computing, maths, physics, languages
     - header: Paddington Academy
       link: https://www.paddington-academy.org/recruitment/summer-teaching-internship
       name: Riam Muayad
-      email: riam.muayad@paddington-academy.org
+      email: Riam.Muayad@paddington-academy.org
       subjects: chemistry, maths, physics, languages
     - header: Reach Academy Feltham
       link: https://www.reachacademyfeltham.com/
@@ -143,13 +178,8 @@ provider_groups:
       name: Patrick Lanigan
       email: laniganp@cvms.co.uk
       subjects: chemistry, computing, maths, physics, languages
-    - header: TKAT SCITT
-      link: https://scitt.tkat.org/
-      name: Sarah Drury
-      email: sarah.drury@tkat.org
-      subjects: chemistry, computing, maths, physics, languages
     - header: Waldegrave Training Alliance and Orleans Park Teaching Alliance
-      link: https://www.waldegrave.richmond.sch.uk/591/waldegrave-training-alliance;https://www.orleanspark.school/orleans-park-teaching-alliance/1323972.html
+      link: https://www.waldegrave.richmond.sch.uk/923/paid-teaching-internships-summer-2023
       name: Claire Lane
       email: c.lane@waldegravesch.org
       subjects: chemistry, computing, maths, physics, languages
@@ -171,19 +201,24 @@ provider_groups:
       email: smcgee@bhcet.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: North East SCITT
-      link: https://www.northeastscitt.co.uk/
+      link: https://www.northeastscitt.co.uk/intern
       name: Susan Ingram
-      email: susan.ingram@nelt.co.uk
+      email: Susan.ingram@nelt.co.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Northern Education Trust
-      link: https://www.northerneducationtrust.org/
+      link: https://www.northerneducationtrust.org/2023/01/19/teaching-internships-programme-summer-2023/?highlight=internships
       name: Meriem Lairini
       email: m.lairini@northerneducationtrust.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Outwood Institute of Education
       link: https://oie.outwood.com/
       name: George W. Robson
-      email: g.robson@outwood.com
+      email: G.robson@outwood.com
+      subjects: chemistry, computing, maths, physics, languages
+    - header: Stockton Teacher Training Partnership
+      link: https://stocktonscitt.uk/
+      name: Kirsten Webber
+      email: Kirsten.Webber@stockton.gov.uk
       subjects: chemistry, computing, maths, physics, languages
   North West:
     providers:
@@ -193,32 +228,32 @@ provider_groups:
       email: a.brady@ampscitt.co.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Bright Futures SCITT
-      link: https://www.bright-futures.co.uk/professional-development-institute/bright-futures-scitt/
+      link: https://www.bright-futures.co.uk/professional-development-institute/bright-futures-scitt/our-programmes/paid-undergraduate-internship-scheme/
       name: Hilary Langmead-Jones
       email: admin@scitt.bright-futures.co.uk
       subjects: chemistry, computing, maths, physics
     - header: Chorlton High School
-      link: https://www.chorltonhigh.manchester.sch.uk/teaching-school/school-experience-programme
+      link: https://chorltonhigh.manchester.sch.uk/working-for-us/Chorlton-High-Teaching-School-Team/school-experience-programme
       name: Fazia Chowdhury
-      email: f.chowdhury@chorltonhigh.manchester.sch.uk
+      email: F.Chowdhury@chorltonhigh.manchester.sch.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Co-op Academies Trust 
       link: https://www.coopacademies.co.uk/teaching-internship/
       name: Andy Gibson 
-      email: andy.gibson@coopacademies.co.uk 
+      email: andy.gibson@coopacademies.co.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Cumbria Education Trust
-      link: https://www.williamhoward.cumbria.sch.uk/
+      link: https://www.williamhoward.cumbria.sch.uk/teaching-internship-programme/
       name: Katy Birks
       email: kbirks@williamhoward.cumbria.sch.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Great Schools Trust
-      link: https://www.greatschoolstrust.org/train-with-us/train-to-teach-with-school-direct
+      link: https://www.greatschoolstrust.org/train-with-us/internships
       name: Diane Lloyd
       email: d.lloyd@greatschoolstrust.com
       subjects: chemistry, computing, maths, physics, languages
     - header: Northern Education Trust
-      link: https://www.northerneducationtrust.org/
+      link: https://www.northerneducationtrust.org/2023/01/19/teaching-internships-programme-summer-2023/?highlight=internships
       name: Meriem Lairini
       email: m.lairini@northerneducationtrust.org
       subjects: chemistry, computing, maths, physics, languages
@@ -227,18 +262,33 @@ provider_groups:
       name: Jemma Sherwood
       email: jemma.sherwood@ormistonacademies.co.uk
       subjects: chemistry, computing, maths, physics, languages
-    - header: St Mary's College
-      link: https://smchull.org/about-us
-      name: Laura Fillingham
-      email: schooldirect@smchull.org
-      subjects: chemistry, computing, maths, physics, languages
     - header: Teach Manchester
       link: https://teachmanchester.com/
       name: Graeme Balfour
       email: gbalfour@loreto.ac.uk
       subjects: chemistry, computing, maths, physics, languages
+    - header: Valley Learning Partnership
+      link: http://www.brighouse.calderdale.sch.uk/
+      name: Janet Brierley
+      email: j.brierley@brighouse.calderdale.sch.uk
+      subjects: chemistry, computing, maths, physics, languages
+    - header: Wigan and West Lancashire Catholic School Direct 
+      link: https://www.catholicsd.org.uk/
+      name: Sarah Holland
+      email: hollands267@saintpetershigh.wigan.sch.uk
+      subjects: chemistry, computing, maths, physics, languages
   South East:
     providers:
+    - header: Debden Park High School (TKAT Teacher Training)
+      link: https://scitt.tkat.org/
+      name: Jo Fogg
+      email: jo.fogg@tkat.org
+      subjects: chemistry, computing, maths, physics, languages
+    - header: GLF Teacher Training
+      link: https://www.glfscitt.org/259/teaching-internships
+      name: Katie Blackburn
+      email: k.blackburn@glfschools.org
+      subjects: chemistry, computing, maths, physics, languages
     - header: George Abbot School in partnership with George Abbot SCITT
       link: https://www.georgeabbot.surrey.sch.uk/
       name: Joanna Jones
@@ -253,11 +303,6 @@ provider_groups:
       link: https://www.ringwood.hants.sch.uk/
       name: Clare Adams
       email: cadams@ringwood.hants.sch.uk
-      subjects: chemistry, computing, maths, physics, languages
-    - header: TKAT SCITT
-      link: https://scitt.tkat.org/
-      name: Sarah Drury
-      email: sarah.drury@tkat.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Teach Maidenhead
       link: https://www.furzeplatt.com/page/?title=INTERNSHIPS+AVAILABLE+for+Physics%2C+Maths%2C+Chemistry%2C+Computing+and+Languages+%2D+APPLICATIONS+NOW+OPEN&pid=536
@@ -286,10 +331,20 @@ provider_groups:
       subjects: chemistry, computing, maths, physics, languages
   South West:
     providers:
+    - header: Excalibur
+      link: https://www.stjohns.excalibur.org.uk/about-us/recruitment/train-to-teach/teaching-internships/
+      name: Emma Hawes
+      email: ehawes@stjohns.excalibur.org.uk
+      subjects: chemistry, computing, maths, physics, languages
+    - header: GLF Teacher Training
+      link: https://www.glfscitt.org/259/teaching-internships
+      name: Katie Blackburn
+      email: k.blackburn@glfschools.org
+      subjects: chemistry, computing, maths, physics, languages
     - header: Odyssey Teaching School Hub
       link: https://www.patesgs.org/
       name: Tim Connole
-      email: tconnole@patesgs.org  01242 538272
+      email: tconnole@patesgs.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Ringwood School
       link: https://www.ringwood.hants.sch.uk/
@@ -299,7 +354,7 @@ provider_groups:
     - header: South West Institute for Teaching (SWIFT)
       link: https://teachertraining.sw-ift.org.uk/teaching-internships.html
       name: Abby Spearing
-      email: abby.spearing@sw-ift.org.uk
+      email: Abby.spearing@sw-ift.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Thinking Schools Academy Trust
       link: https://www.tsatrust.org.uk/
@@ -325,13 +380,13 @@ provider_groups:
       subjects: chemistry, computing, maths, physics, languages
     - header: Bishop Challoner Training School
       link: https://www.bctsa.org/605/teaching-internship-programme
-      name: Angela Hodgin
+      name: Angela Hodgkin
       email: trainingschool@bishopchalloner.bham.sch.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Creative Education Trust
       link: https://www.creativeeducationtrust.org.uk/internship
       name: Claire Amed
-      email: claire.amed@creativeeducationtrust.org.uk
+      email: Claire.amed@creativeeducationtrust.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Ormiston Academies Trust
       link: https://www.ormistonacademiestrust.co.uk
@@ -341,7 +396,7 @@ provider_groups:
     - header: Outwood Institute of Education
       link: https://oie.outwood.com/
       name: George W. Robson
-      email: g.robson@outwood.com
+      email: G.robson@outwood.com
       subjects: chemistry, computing, maths, physics, languages
     - header: Prince Henry’s and South Worcestershire SCITT / Prince Henry’s Teaching
         School Hub
@@ -358,11 +413,16 @@ provider_groups:
       link: https://www.st-peters.solihull.sch.uk/teaching-school/
       name: Anthony Jones
       email: jonesa@st-peters.solihull.sch.uk
-      subjects: computing, maths, physics
+      subjects: chemistry, computing, maths, physics
     - header: The Coventry SCITT
-      link: https://www.coventryscitt.org.uk/
+      link: https://www.coventryscitt.org.uk/internships/
       name: Katie Williams
       email: scittadmin@sidneystringeracademy.org.uk
+      subjects: chemistry, computing, maths, physics, languages
+    - header: The Polesworth School
+      link: https://www.thecatinstitute.org/page/?title=Internships&pid=110
+      name: Michelle Borders
+      email: mborders@catschools.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Windsor Academy Trust
       link: https://www.windsoracademytrust.org.uk/
@@ -373,11 +433,11 @@ provider_groups:
     providers:
     - header: Learners First Schools Partnership
       link: https://www.learnersfirst.net/
-      name: Georgia Osborne
-      email: gosborne@learnersfirst.org
+      name: Claire Garbutt/Georgia Osborne
+      email: cgarbutt@learnersfirst.org / gosborne@learnersfirst.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Northern Education Trust
-      link: https://www.northerneducationtrust.org/
+      link: https://www.northerneducationtrust.org/2023/01/19/teaching-internships-programme-summer-2023/?highlight=internships
       name: Meriem Lairini
       email: m.lairini@northerneducationtrust.org
       subjects: chemistry, computing, maths, physics, languages
@@ -389,27 +449,27 @@ provider_groups:
     - header: Outwood Institute of Education
       link: https://oie.outwood.com/
       name: George W. Robson
-      email: g.robson@outwood.com
+      email: G.robson@outwood.com
+      subjects: chemistry, computing, maths, physics, languages
+    - header: Scarborough Teaching Alliance - Coast and Vale Learning Trust
+      link: https://www.scarboroughteachingalliance.co.uk/events/
+      name: Ashleigh Southall
+      email: a.southall@coastandvale.academy
       subjects: chemistry, computing, maths, physics, languages
     - header: Sheffield SCITT
-      link: https://www.sheffieldscitt.org.uk/
+      link: https://www.sheffieldscitt.org.uk/internship
       name: Stacey Wooliscroft
       email: hallamtsa@notredame-high.co.uk
       subjects: chemistry, computing, maths, physics, languages
-    - header: Valley Learning Partnership
-      link: http://www.brighouse.calderdale.sch.uk/
-      name: Janet Brierley
-      email: j.brierley@brighouse.calderdale.sch.uk
-      subjects: chemistry, computing, maths, physics, languages
-    - header: Wigan and West Lancashire Catholic School Direct 
-      link: https://www.catholicsd.org.uk/
-      name: Sarah Holland
-      email: hollands267@saintpetershigh.wigan.sch.uk 
+    - header: St Mary's College
+      link: https://www.scrcat.org/vacancies
+      name: Laura Fillingham
+      email: schooldirect@smchull.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Wolds Learning Partnership Trust
-      link: https://www.woldgate.net/
+      link: https://www.woldgate.net/jobs.html
       name: Kirsten Russell
-      email: krussell@wlp.education
+      email: krussell@WLP.education
       subjects: chemistry, maths, physics, languages
     - header: Yorkshire Wolds Teacher Training
       link: https://ywtt.org.uk/ywtt-paid-internship-programme/

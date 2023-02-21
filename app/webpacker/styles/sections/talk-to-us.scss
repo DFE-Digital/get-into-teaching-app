@@ -81,69 +81,13 @@
 .talk-to-us-content {
   $wide-spacing: 2.5 * $indent-amount;
 
-  position: relative;
-  background-color: $grey;
-  margin: $wide-spacing $indent-amount;
-
-  @include mq($from: tablet) {
-    padding-bottom: $indent-amount;
-    margin: $wide-spacing $indent-amount $wide-spacing 0;
-
-    h3 {
-      @include font-size(medium);
-    }
-  }
-
-  &:before,
-  &:after {
-    content: "";
-    position: absolute;
-    background-color: $purple;
-    right: -$indent-amount / 2;
-    bottom: -$indent-amount / 2;
-  }
-
-  &:before {
-    width: $indent-amount / 2;
-    height: 100px;
-  }
-
-  &:after {
-    height: $indent-amount / 2;
-    width: 100px;
-  }
-
-  @include mq($from: tablet) {
-    &:before,
-    &:after {
-      right: -$indent-amount;
-      bottom: -$indent-amount;
-    }
-
-    &:before {
-      width: $indent-amount;
-      height: 175px;
-    }
-
-    &:after {
-      height: $indent-amount;
-      width: 175px;
-    }
-  }
-
-  h2 {
-    margin-left: $indent-amount;
-  }
-
-  > p {
-    padding: 0 $indent-amount;
-  }
+  @extend .action-container;
 
   .contact-options {
     display: flex;
     gap: $indent-amount;
     flex-direction: column;
-    padding: $indent-amount;
+    padding: $indent-amount $indent-amount 0 $indent-amount;
 
     > div {
       display: flex;

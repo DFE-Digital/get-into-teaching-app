@@ -6,4 +6,8 @@
 #   - /events
 #   - /
 
-paths: []
+paths:
+  - /salaries-and-benefits-search
+  - /salaries-and-benefits-social
+  - /landing/how-much-do-teachers-get-paid
+  - /landing/how-much-do-teachers-get-paid-social

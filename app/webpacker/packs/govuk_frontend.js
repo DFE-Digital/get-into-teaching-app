@@ -8,3 +8,4 @@ var $radios = [...document.querySelectorAll('[data-module="govuk-radios"]')];
 $radios.forEach(($radio) => {
   new Radios($radio).init();
 });
+

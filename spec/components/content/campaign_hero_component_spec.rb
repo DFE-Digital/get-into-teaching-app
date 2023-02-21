@@ -3,10 +3,18 @@ require "rails_helper"
 RSpec.describe Content::CampaignHeroComponent, type: "component" do
   subject! { Capybara.string(component) }
 
-  let(:image_path) { "media/images/content/hero-images/0013.jpg" }
+  let(:image_path) { "static/content/hero-images/0013.jpg" }
   let(:title) { "My page" }
   let(:colour) { nil }
-  let(:component) { render_inline(described_class.new(title: title, colour: colour, image: image_path)) }
+  let(:background_colour) { nil }
+  let(:component) do
+    render_inline(described_class.new(
+                    title: title,
+                    colour: colour,
+                    image: image_path,
+                    background_colour: background_colour,
+                  ))
+  end
 
   it { is_expected.to have_css(".campaign-hero") }
   it { is_expected.to have_css("header") }
@@ -26,5 +34,11 @@ RSpec.describe Content::CampaignHeroComponent, type: "component" do
     let(:colour) { "purple" }
 
     it { is_expected.to have_css("header.purple") }
+  end
+
+  context "when the background colour is overridden" do
+    let(:background_colour) { "grey" }
+
+    it { is_expected.to have_css("header.bg-grey") }
   end
 end

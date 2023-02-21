@@ -5,7 +5,8 @@
         <%= tag.li(safe_join([helpers.fa_icon("check"), tag.strong(item)])) %>
       <% end %>
     </ul>
-    <%= link_to(cta[:text], cta[:link], class: "button") %>
+    <%= link_to(cta[:text], cta[:link], class: "button") if cta.present? %>
+    <%= content %>
   </div>
   <div class="images">
     <%= images %>

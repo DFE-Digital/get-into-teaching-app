@@ -12,6 +12,8 @@ class PagesController < ApplicationController
     "/train-to-be-a-teacher/if-you-dont-have-a-degree", # Contains a form
     "/train-to-be-a-teacher/initial-teacher-training", # Contains a form
     "/help-and-support", #  Contains a form
+    "/landing/how-much-do-teachers-get-paid", # Contains a form
+    "/landing/how-much-do-teachers-get-paid-social", # Contains a form
   ].freeze
 
   caches_page :cookies

@@ -8,8 +8,8 @@ description: |-
   Training place.
 images:
   interview:
-    path: "media/images/content/blog/interview.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/interview.jpg"
+    path: "static/content/blog/interview.jpg"
+    thumbnail_path: "static/content/blog/thumbnails/interview.jpg"
 keywords:
   - becoming a teacher
   - applications

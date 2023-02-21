@@ -4,7 +4,7 @@ description: |-
     Find out about becoming a maths teacher, including what you’ll be teaching and what funding you could be eligible for to help you train.
 layout: "layouts/minimal"
 colour: "yellow"
-image: "media/images/content/hero-images/0004.jpg"
+image: "static/content/hero-images/0004.jpg"
 keywords:
   - maths
   - teaching maths

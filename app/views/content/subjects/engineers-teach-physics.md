@@ -5,7 +5,7 @@ description: |-
     to teach physics.
 layout: "layouts/minimal"
 colour: "yellow"
-image: "media/images/content/hero-images/0013.jpg"
+image: "static/content/hero-images/0013.jpg"
 keywords:
   - engineers
   - material scientists
