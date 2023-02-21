@@ -20,7 +20,7 @@ provider_groups:
   East Midlands:
     providers:
     - header: Bluecoat SCITT Alliance
-      link: https://www.bluecoatscittalliance.uk.com/
+      link: https://www.bluecoatscittalliance.uk.com/vacancies/paid-graduate-internship/
       name: Julie Hefferman
       email: itt@bluecoat.uk.com
       subjects: chemistry, computing, maths, physics, languages
@@ -60,9 +60,9 @@ provider_groups:
       email: contact@teachnottinghamshire.co.uk 
       subjects: chemistry, computing, maths, physics, languages
     - header: Outwood Institute of Education
-      link: https://oie.outwood.com/
+      link: https://oie.outwood.com/latest-news/2023/2/8/outwood-institute-of-education-opens-applications-for-teaching-internship-programme
       name: George W. Robson
-      email: G.robson@outwood.com
+      email: teachnorth@oie.outwood.com
       subjects: chemistry, computing, maths, physics, languages
     - header: Tuxford Academy
       link: https://www.diverseassociation.org.uk/get-into-teaching/internships/
@@ -92,12 +92,12 @@ provider_groups:
       email: Claire.amed@creativeeducationtrust.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Debden Park High School (TKAT Teacher Training)
-      link: https://scitt.tkat.org/
+      link: https://scitt.tkat.org/842/internships
       name: Jo Fogg
       email: jo.fogg@tkat.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Farlingaye High School
-      link: https://www.eastscitt.co.uk/
+      link: https://www.eastscitt.co.uk/Undergraduate-Internships/
       name: Peter Smith
       email: psmith@farlingaye.suffolk.sch.uk
       subjects: maths, physics
@@ -122,7 +122,7 @@ provider_groups:
       email: vicki.walsh@redborne.com
       subjects: chemistry, computing, maths, physics, languages
     - header: Saffron Walden County High School
-      link: https://www.swchs.net/
+      link: https://www.swchs.net/page/?title=Teaching+Internship+Programme+%2D+June+2023&pid=417
       name: Angela Rodda
       email: arodda@swchs.net
       subjects: chemistry, computing, maths, physics, languages
@@ -132,14 +132,14 @@ provider_groups:
       email: d.struthers@setsa.info
       subjects: chemistry, computing, maths, physics, languages
     - header: The Hertfordshire and Essex High School
-      link: https://www.hertsandessex.herts.sch.uk/
+      link: https://www.hertsandessex.herts.sch.uk/teaching-internships/60636.html
       name: Claire Ruthven
       email: claire.ruthven@hertsandessex.herts.sch.uk
       subjects: chemistry, computing, maths, physics, languages
   London:
     providers:
     - header: Debden Park High School (TKAT Teacher Training)
-      link: https://scitt.tkat.org/
+      link: https://scitt.tkat.org/842/internships
       name: Jo Fogg
       email: jo.fogg@tkat.org
       subjects: chemistry, computing, maths, physics, languages
@@ -169,9 +169,9 @@ provider_groups:
       email: Riam.Muayad@paddington-academy.org
       subjects: chemistry, maths, physics, languages
     - header: Reach Academy Feltham
-      link: https://www.reachacademyfeltham.com/
-      name: Ciaran Fitzgerald
-      email: recruitment@reachacademy.org.uk
+      link: https://www.reachtraining.org/teaching-internships
+      name: James Foreman
+      email: reachteachertraining@reachacademy.org.uk
       subjects: chemistry, maths, physics, languages
     - header: St John Southworth Catholic Academy Trust
       link: https://www.sjscat.co.uk/Maths-Physics-and-Computing-Undergraduate-Summer-I/
@@ -184,7 +184,7 @@ provider_groups:
       email: c.lane@waldegravesch.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Xavier Teach SouthEast
-      link: https://www.teachsoutheast.co.uk/
+      link: https://www.teachsoutheast.co.uk/page/?title=Undergraduate+teaching+internship&pid=17
       name: Katie Cornforth
       email: k.cornforth@xaviercet.org.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -211,12 +211,12 @@ provider_groups:
       email: m.lairini@northerneducationtrust.org
       subjects: chemistry, computing, maths, physics, languages
     - header: Outwood Institute of Education
-      link: https://oie.outwood.com/
+      link: https://oie.outwood.com/latest-news/2023/2/8/outwood-institute-of-education-opens-applications-for-teaching-internship-programme
       name: George W. Robson
-      email: G.robson@outwood.com
+      email: teachnorth@oie.outwood.com
       subjects: chemistry, computing, maths, physics, languages
     - header: Stockton Teacher Training Partnership
-      link: https://stocktonscitt.uk/
+      link: https://stocktonscitt.uk/paid-teaching-internship/
       name: Kirsten Webber
       email: Kirsten.Webber@stockton.gov.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -280,7 +280,7 @@ provider_groups:
   South East:
     providers:
     - header: Debden Park High School (TKAT Teacher Training)
-      link: https://scitt.tkat.org/
+      link: https://scitt.tkat.org/842/internships
       name: Jo Fogg
       email: jo.fogg@tkat.org
       subjects: chemistry, computing, maths, physics, languages
@@ -320,7 +320,7 @@ provider_groups:
       email: s.venables@tsatrust.org.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Xavier Teach SouthEast
-      link: https://www.teachsoutheast.co.uk/
+      link: https://www.teachsoutheast.co.uk/page/?title=Undergraduate+teaching+internship&pid=17
       name: Katie Cornforth
       email: k.cornforth@xaviercet.org.uk
       subjects: chemistry, computing, maths, physics, languages
@@ -394,9 +394,9 @@ provider_groups:
       email: jemma.sherwood@ormistonacademies.co.uk
       subjects: chemistry, computing, maths, physics, languages
     - header: Outwood Institute of Education
-      link: https://oie.outwood.com/
+      link: https://oie.outwood.com/latest-news/2023/2/8/outwood-institute-of-education-opens-applications-for-teaching-internship-programme
       name: George W. Robson
-      email: G.robson@outwood.com
+      email: teachnorth@oie.outwood.com
       subjects: chemistry, computing, maths, physics, languages
     - header: Prince Henry’s and South Worcestershire SCITT / Prince Henry’s Teaching
         School Hub
@@ -447,9 +447,9 @@ provider_groups:
       email: training@northernlightsscitt.com
       subjects: chemistry, computing, maths, physics, languages
     - header: Outwood Institute of Education
-      link: https://oie.outwood.com/
+      link: https://oie.outwood.com/latest-news/2023/2/8/outwood-institute-of-education-opens-applications-for-teaching-internship-programme
       name: George W. Robson
-      email: G.robson@outwood.com
+      email: teachnorth@oie.outwood.com
       subjects: chemistry, computing, maths, physics, languages
     - header: Scarborough Teaching Alliance - Coast and Vale Learning Trust
       link: https://www.scarboroughteachingalliance.co.uk/events/
