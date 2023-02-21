@@ -89,13 +89,13 @@ The international relocation payment (IRP) will be available to non-UK citizens 
 
 To be eligible, teachers must meet all 3 of the following requirements.
 
-You must have accepted a languages or physics teaching job in an [English state secondary school](https://www.gov.uk/types-of-school) on a contract lasting at least one academic year. 
+Firstly, you must have accepted a languages or physics teaching job in an [English state secondary school](https://www.gov.uk/types-of-school) on a contract lasting at least one academic year. 
 
 Teachers of all languages (except English) offered in English state secondary schools are eligible to apply for the IRP. The language or languages can be combined with another subject, but must make up at least 50% of teaching time.
 
 Physics can be combined with another subject, but must make up at least 50% of teaching time. Teachers of general science are also eligible to apply for the IRP if they are teaching the physics elements of general science. It can be combined with another subject, but general science must make up at least 50% of teaching time.
 
-You must come to the UK on one of the following visas: 
+Secondly, you must come to the UK on one of the following visas: 
 
 * Skilled worker visa
 * Youth Mobility Scheme 
@@ -109,7 +109,7 @@ You must come to the UK on one of the following visas:
 * Ukraine Sponsorship Scheme
 
 
-You must move to the UK no more than 3 months before the start of your job. 
+Thirdly, you must move to the UK no more than 3 months before the start of your job. 
 
 
 ### How to apply for the IRP

@@ -92,7 +92,7 @@ If you are eligible, you’ll receive a single payment of £10,000 from the Depa
 
 To be eligible, teacher trainees must meet all 3 of the following requirements.
 
-You must have taken up a place on a teacher training course in England leading to [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts)  for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government and you must be training to teach one of the following:
+Firstly, you must have taken up a place on a teacher training course in England leading to [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government and you must be training to teach one of the following:
 
 * any secondary language or languages except English, including courses which are made up of at least 50% languages 
 
@@ -103,7 +103,7 @@ You must have taken up a place on a teacher training course in England leading t
 
 [Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in languages and physics.
    
-You must come to the UK on one of the following visas:  
+Secondly, you must come to the UK on one of the following visas:  
 
 * Skilled worker visa
 * Student visa 
@@ -117,7 +117,7 @@ You must come to the UK on one of the following visas:
 * Ukraine Family Scheme visa
 * Ukraine Sponsorship Scheme
 
-You must move to the UK no more than 3 months before the start of your course.  
+Thirdly, you must move to the UK no more than 3 months before the start of your course.  
 
 You will not be eligible for the IRP if you are undergoing [assessment only QTS](/assessment-only-providers). 
 
