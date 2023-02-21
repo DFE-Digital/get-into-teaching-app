@@ -81,9 +81,9 @@ If you are already a qualified teacher, you do not need to retrain to teach in E
 
 ## Get an international relocation payment (IRP) worth £10,000
 
-If you are interested in moving to the UK to teach languages or physics in an English secondary school, you could be eligible for a cash sum of £10,000 from the UK government to help with moving expenses, including visa costs and the [immigration health surcharge](https://www.gov.uk/healthcare-immigration-application). 
+If you are interested in moving to England to teach languages or physics in an English secondary school, you could be eligible for a cash sum of £10,000 from the UK government to pay back some of your moving expenses, including visa costs and the [immigration health surcharge](https://www.gov.uk/healthcare-immigration-application). 
 
-The international relocation payment (IRP) will be available to non-UK citizens starting work in English schools in the academic year September 2023 to July 2024. You will not have to pay this money back and it can be spent in any way you wish. You can only receive the IRP once.
+The international relocation payment (IRP) will be available to non-UK citizens starting work in English secondary schools in the academic year September 2023 to July 2024. If you are eligible, it will be paid around the end of your first term working in England. You will not have to pay this money back and it can be spent in any way you wish. You can only receive the IRP once.
 
 ### Check your eligibility for the IRP
 
@@ -110,9 +110,6 @@ You must come to the UK on one of the following visas:
 
 
 You must move to the UK no more than 3 months before the start of your job. 
-
-You will not be eligible for the IRP if you are already living in the UK. 
- 
 
 
 ### How to apply for the IRP
