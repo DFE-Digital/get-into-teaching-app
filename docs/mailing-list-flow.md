@@ -2,7 +2,7 @@
 
 ```mermaid
 graph TD;
-  name_and_email[Sign up for our emails to get advice on teacher training] -- Doesn't exist in CRM --> degree[Do you have a degree?]
+  name_and_email[Get personalised guidance on teacher training in your inbox] -- Doesn't exist in CRM --> degree[Do you have a degree?]
   name_and_email -- Exists in CRM --> already_registered[You're already registered with us]
   
   already_registered -- Not on mailing list --> degree

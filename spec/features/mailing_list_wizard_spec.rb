@@ -15,7 +15,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     expect(page).to have_title(mailing_list_page_title)
 
-    expect(page).to have_text "Sign up for our emails to get advice on teacher training"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -56,7 +56,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     channel_id = channels.first.id
     visit mailing_list_steps_path({ id: :name, channel: channel_id, sub_channel: sub_channel_id })
 
-    expect(page).to have_text "Sign up for our emails to get advice on teacher training"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     # Error to ensure channel/sub-channel persists over page reload.
     click_on "Next step"
     expect(page).to have_text("Enter your full email address")
@@ -99,7 +99,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     channel_id = channels.first.id
     visit mailing_list_steps_path({ id: :name, channel: channel_id, sub_channel: sub_channel_id })
 
-    expect(page).to have_text("Sign up for our emails to get advice on teacher training")
+    expect(page).to have_text("Get personalised guidance on teacher training in your inbox")
     fill_in_name_step
     click_on "Next step"
 
@@ -138,7 +138,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path({ id: :name, channel: "invalid", sub_channel: sub_channel_id })
 
-    expect(page).to have_text "Sign up for our emails to get advice on teacher training"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -183,7 +183,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for our emails to get advice on teacher training"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step(first_name: first_name)
     click_on "Next step"
 
@@ -224,7 +224,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for our emails to get advice on teacher training"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -248,7 +248,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for our emails to get advice on teacher training"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -279,7 +279,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for our emails to get advice on teacher training"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -303,7 +303,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for our emails to get advice on teacher training"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -384,7 +384,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
 
     visit mailing_list_steps_path
 
-    expect(page).to have_text "Sign up for our emails to get advice on teacher training"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step
     click_on "Next step"
 
@@ -401,7 +401,7 @@ RSpec.feature "Mailing list wizard", type: :feature do
     allow_any_instance_of(GetIntoTeachingApiClient::CandidatesApi).to \
       receive(:create_candidate_access_token).and_raise(GetIntoTeachingApiClient::ApiError)
 
-    expect(page).to have_text "Sign up for our emails to get advice on teacher training"
+    expect(page).to have_text "Get personalised guidance on teacher training in your inbox"
     fill_in_name_step(email: "test2@user.com")
     click_on "Next step"
 
