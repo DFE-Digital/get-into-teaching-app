@@ -26,6 +26,8 @@ describe MailingList::Wizard do
         MailingList::Steps::Name,
         ::GITWizard::Steps::Authenticate,
         MailingList::Steps::AlreadySubscribed,
+        MailingList::Steps::ReturningTeacher,
+        MailingList::Steps::AlreadyQualified,
         MailingList::Steps::DegreeStatus,
         MailingList::Steps::TeacherTraining,
         MailingList::Steps::Subject,

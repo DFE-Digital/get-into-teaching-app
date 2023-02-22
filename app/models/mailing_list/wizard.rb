@@ -15,6 +15,8 @@ module MailingList
       Steps::Name,
       ::GITWizard::Steps::Authenticate,
       Steps::AlreadySubscribed,
+      Steps::ReturningTeacher,
+      Steps::AlreadyQualified,
       Steps::DegreeStatus,
       Steps::TeacherTraining,
       Steps::Subject,

@@ -318,6 +318,10 @@ en:
             email:
               blank: Enter your full email address
               invalid: Enter a valid email address
+        mailing_list/steps/returning_teacher:
+          attributes:
+            qualified_to_teach:
+              inclusion: Select yes if you are qualified to teach
         mailing_list/steps/degree_status:
           attributes:
             degree_status_id:
