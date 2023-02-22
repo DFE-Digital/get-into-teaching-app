@@ -30,6 +30,10 @@ RSpec.feature "Integration tests", :integration, type: :feature, js: true do
   def sign_up(first_name, last_name, email)
     submit_personal_details(first_name, last_name, email)
 
+    expect(page).to have_text "Are you already qualified to teach?"
+    choose "No"
+    click_on "Next step"
+
     expect(page).to have_text("Do you have a degree?")
     click_label "Yes, I already have a degree"
     click_on "Next step"
