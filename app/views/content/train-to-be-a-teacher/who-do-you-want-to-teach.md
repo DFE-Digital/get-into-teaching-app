@@ -53,7 +53,7 @@ If you’d prefer to specialise in a subject but still enjoy teaching a variety 
 
 To teach in the majority of primary and secondary schools, you will need to achieve qualified teacher status (QTS) and there are a number of routes to this. Check [what training you need to get QTS](/train-to-be-a-teacher).
 
-Once you have qualified teacher status (QTS) you're qualified to teach any of these age ranges. If you want to change age groups you'll need to be able to show you have relevant classroom experience, for example being able to cover the broader curriculum if you want to switch from secondary to primary.
+Once you have QTS, you're qualified to teach any of these age ranges. If you want to change age groups you'll need to be able to show you have relevant classroom experience, for example being able to cover the broader curriculum if you want to switch from secondary to primary.
 
 ### How to decide which age group to teach
 
