@@ -3,7 +3,7 @@ title: Teach in further education
 article_classes: ['longform']
 image: "static/content/hero-images/0015.jpg"
 description: |-
-  Find out how to become a college teacher in the UK. This Department for Education page has links to advice and support on teacher training in further education.
+  Find out how to become a further education teacher in the UK. This Department for Education page has links to advice and support on teacher training in further education.
 date: "2021-06-18"
 keywords:
   - Further
@@ -19,18 +19,16 @@ keywords:
   - apprencticeship
 ---
 
-Further education is any study that takes place after secondary school but outside of higher education (e.g. university).
+If you’re interested in teaching young people and adults over 16 who aren’t studying for a degree, then further education might be for you. It covers three key areas: 
 
-In further education, teaching doesn’t always happen in a classroom. It can take place in community centres, workplaces and private training centres. 
+* vocational courses including plumbing, manufacturing and health care
+* academic classroom based learning of subjects including English and maths, including A-levels in a sixth form college
+* basic skills courses on literacy, numeracy, English for speakers of other languages, and special needs
 
-You could teach a diverse set of learners, including young people and adults.
+Whichever route you choose, you could teach a diverse set of learners, including young people and adults. 
 
-You do not need a degree to start teaching in further education. 
+You don’t always need a prior teaching qualification or an academic degree to start teaching in further education. Many further education training providers offer funded teacher training on the job, so you can start straight away. However, if you’re mainly interested in teaching in a school, you will be best to explore how to train to teach primary and secondary pupils.
 
-## Training to teach in further education
+Further education training providers are independent, so set their own criteria regarding qualifications and courses. If you’ve got industry experience and a passion for sharing your skills you could be a great further education teacher.
 
 To find out more, visit the [teach in further education website](https://www.teach-in-further-education.campaign.gov.uk/).
-
-You can also [speak to an adviser on 0800 389 2502](tel:0800 389 2502). Lines are open Monday to Friday between 8:30am and 5:30pm, except on [bank holidays](https://www.gov.uk/bank-holidays).
-
-Or you can email teach.fe@education.gov.uk.
