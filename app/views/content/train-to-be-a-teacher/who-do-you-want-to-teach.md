@@ -18,7 +18,7 @@ calls_to_action:
 
 It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.
 
-## Primary or secondary school
+## Teach in a primary or secondary school
 
 The school system in England is split into age groups:
 
@@ -63,7 +63,7 @@ $get-school-experience$
 
 If you’re an undergraduate and interested in teaching chemistry, computing, languages, maths or physics then you could do a [paid teaching internship](/teaching-internship-providers) to find out if teaching is right for you.
 
-## Pupils with special educational needs
+### Pupils with special educational needs
 Most disabled pupils and pupils with special educational needs learn in mainstream schools. Wherever you train and work – whether it’s mainstream schools, special schools, or both – you’ll work with pupils with a range of needs.
 
 You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train and teach.
