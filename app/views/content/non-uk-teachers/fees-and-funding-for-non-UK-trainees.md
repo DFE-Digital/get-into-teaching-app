@@ -85,7 +85,7 @@ If you are eligible, you can receive both an international relocation payment an
 
 The IRP is designed to repay some of the relocation expenses of languages or physics teacher trainees moving to England. 
 
-If you are eligible, you’ll receive a single payment of £10,000 from the Department for Education around the end of your first term training in England. You will not have to pay this money back and it can be spent in any way you wish. You can only receive the IRP once.
+If you are eligible, you’ll receive a single payment of £10,000 from the Department for Education around the end of your first term training in England. You will not have to pay this money back. You can only receive the IRP once.
 
 
 #### Check your eligibility for the IRP
