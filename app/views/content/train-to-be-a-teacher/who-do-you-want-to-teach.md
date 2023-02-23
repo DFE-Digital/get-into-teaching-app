@@ -1,6 +1,6 @@
 ---
 title: Who do you want to teach
-heading: Who do you want to teach
+heading: Who do you want to teach?
 description: |-
   Explore who’d you’d like to teach and the qualifications you need to work with early years, further education, and pupils with special educational needs.
 promo_content:
@@ -11,8 +11,8 @@ calls_to_action:
       arguments:
         icon: "icon-arrow"
         text: |-
-          Use our service to search for and organise a placement in England.
-        link_text: "Get school experience"
+          Use our service to search for and organise a primary or secondary school placement in England.        
+          link_text: "Get school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
 ---
 
@@ -27,52 +27,50 @@ Children usually start primary school at 4 years old and this phase is called Re
 
 There are a further 2 phases, known as key stages: 
 
-* key stage 1 covers year 1 and 2, up to 7 years old
-* key stage 2 covers year 3 to 6 with children from 7 to 11 years old
+* key stage 1 covers year 1 and 2, with children up to 7 years old
+* key stage 2 covers year 3 to 6, with children from 7 to 11 years old
 
 The teaching content is broad, covering the whole range of national curriculum subjects including English, maths, science, as well as art and design, computing, geography, history, music and physical education (PE).
 
 If you like the energy and curiosity of young children, and would be comfortable covering a wide range of subjects, you might prefer teaching in primary schools. 
 
-If you’re doing initial teacher training (ITT), you could consider options for primary teaching with a subject specialism like maths or English. This will cover all of the subjects but with a focus on your subject specialisation.
+If you are interested in training to be a primary teacher, you could consider options for primary teaching with a subject specialism like maths or English. This will cover all of the subjects but with a focus on your subject specialisation.
 
 ### Secondary (ages 11 to 18)
 Children start secondary school when they’re 11. There are up to 3 stages in secondary school: 
 
-* key stage 3 (KS3) includes years 7 to 9 with children age 11 to 14  
-* key stage 4 (KS4) includes years 10 and 11 with pupils age 14 to 16
-* key stage 5 (KS5) includes years 12 and 13 from age 16 to 18 at secondary schools with sixth forms or colleges
+* key stage 3 (KS3) includes years 7 to 9, with children age 11 to 14  
+* key stage 4 (KS4) includes years 10 and 11, with pupils age 14 to 16
+* key stage 5 (KS5) includes years 12 and 13, from age 16 to 18 at secondary schools with sixth forms or colleges
 
-Pupils work towards national qualifications, usually GCSEs during KS4. Students take A-levels or other similar qualifications during KS5. 
+Pupils work towards national qualifications, usually GCSEs during KS4. Students take A levels or other similar qualifications during KS5. 
 
-Subjects at this level include English, maths and science, computing, physical education (PE) and modern foreign languages. Schools will offer a range of other subjects which could include drama, dance, and media studies. Schools are also required to offer RE, careers guidance and sex and relationship education (SRE).
-
-If you’d prefer to specialise in a subject but still enjoy teaching a variety of things, being a secondary school teacher might suit you.
+Subjects at this level include English, maths and science. Additional subjects may include drama, dance, and media studies. The specific subjects offered will depend on the school.
 
 ### What you need to teach in primary and secondary schools
 
-To teach in the majority of primary and secondary schools, you will need to achieve qualified teacher status (QTS) and there are a number of routes to this. Check [what training you need to get QTS](/train-to-be-a-teacher).
+To teach in the majority of primary and secondary schools, you will need to achieve qualified teacher status (QTS). There are a number of routes to this. Check [what training you need to get QTS](/train-to-be-a-teacher).
 
-Once you have QTS, you're qualified to teach any of these age ranges. If you want to change age groups you'll need to be able to show you have relevant classroom experience, for example being able to cover the broader curriculum if you want to switch from secondary to primary.
-
+Once you have QTS, you're qualified to teach in primary and secondary schools. However, if you want to change, you'll need to be able to show you have relevant classroom experience. For example, if you want to switch from secondary to primary, you will need to show that you can cover the broader curriculum.
 ### How to decide which age group to teach
 
 The best way to work out which age group you would like to teach is to get real life experience in a classroom. 
 
 $get-school-experience$
 
-If you’re an undergraduate and interested in teaching chemistry, computing, languages, maths or physics then you could do a [paid teaching internship](/teaching-internship-providers) to find out if teaching is right for you.
+If you’re an undergraduate and interested in teaching chemistry, computing, languages, maths or physics, then you could do a [paid teaching internship](/teaching-internship-providers) to find out if teaching is right for you.
 
-### Pupils with special educational needs
-Most disabled pupils and pupils with special educational needs learn in mainstream schools. Wherever you train and work – whether it’s mainstream schools, special schools, or both – you’ll work with pupils with a range of needs.
+### Teach pupils with special educational needs and disabilities (SEND)
 
-You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train and teach.
+Most disabled pupils and pupils with special educational needs learn in mainstream schools. Wherever you train and work – whether it’s in mainstream schools, special schools, or both – you’ll work with pupils with a range of needs.
+
+You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train to teach.
 
 Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/teach-disabled-pupils-and-pupils-with-special-educational-needs).
 
 ## Teaching other stages
-
 ### Nursery or pre-school
+
 If you want to help young children under 5 years old to develop, you might consider becoming an early years teacher.
 
 Early years teachers play an essential role in children’s development up to the age of 5 and provide high-quality early education.
@@ -80,8 +78,13 @@ Early years teachers play an essential role in children’s development up to th
 Learn more about [the routes to become an early years teacher](/early-years-teaching-training).
 
 ### Further education
+
 If you’ve got industry experience and a passion for teaching young people over 16 and adults, then further education could be for you. 
 
-There are three key areas, vocational courses covering areas like plumbing and health care, academic courses on subjects like English and maths, and basic skills courses covering literacy and numeracy. 
+There are three key areas: 
+
+* vocational courses covering areas like plumbing and health care
+* academic courses on subjects like English and maths
+* basic skills courses covering literacy and numeracy. 
 
 Learn more about [teaching in further education](/become-a-further-education-teacher).
