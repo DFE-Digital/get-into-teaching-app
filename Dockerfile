@@ -15,6 +15,10 @@ RUN mkdir /app
 WORKDIR /app
 
 RUN apk update
+
+# patches
+RUN apk add --no-cache openssl=1.1.1t-r0 
+
 RUN apk add --no-cache build-base tzdata shared-mime-info nodejs yarn git \
         chromium chromium-chromedriver && rm -rf /var/lib/apt/lists/*
 
