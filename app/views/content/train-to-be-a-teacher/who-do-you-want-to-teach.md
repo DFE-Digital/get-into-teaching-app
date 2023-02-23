@@ -12,7 +12,7 @@ calls_to_action:
         icon: "icon-arrow"
         text: |-
           Use our service to search for and organise a primary or secondary school placement in England.        
-          link_text: "Get school experience"
+        link_text: "Get school experience"
         link_target: "https://schoolexperience.education.gov.uk/"
 ---
 
@@ -52,6 +52,7 @@ Subjects at this level include English, maths and science. Additional subjects m
 To teach in the majority of primary and secondary schools, you will need to achieve qualified teacher status (QTS). There are a number of routes to this. Check [what training you need to get QTS](/train-to-be-a-teacher).
 
 Once you have QTS, you're qualified to teach in primary and secondary schools. However, if you want to change, you'll need to be able to show you have relevant classroom experience. For example, if you want to switch from secondary to primary, you will need to show that you can cover the broader curriculum.
+
 ### How to decide which age group to teach
 
 The best way to work out which age group you would like to teach is to get real life experience in a classroom. 
@@ -69,6 +70,7 @@ You can choose to apply for a teacher training course that specialises in SEND o
 Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/teach-disabled-pupils-and-pupils-with-special-educational-needs).
 
 ## Teaching other stages
+
 ### Nursery or pre-school
 
 If you want to help young children under 5 years old to develop, you might consider becoming an early years teacher.
