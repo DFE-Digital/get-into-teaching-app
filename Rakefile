@@ -7,3 +7,5 @@ Rails.application.load_tasks
 
 task lint_ruby: ['lint:ruby']
 task default: %i[spec lint_ruby]
+
+Knapsack.load_tasks if defined?(Knapsack)
