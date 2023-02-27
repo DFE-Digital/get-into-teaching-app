@@ -188,6 +188,8 @@ describe ApplicationHelper do
           "/salaries-and-benefits-social",
           "/landing/how-much-do-teachers-get-paid",
           "/landing/how-much-do-teachers-get-paid-social",
+          "/mailinglist/signup/name",
+          "/mailinglist/signup",
         ],
       })
     end
