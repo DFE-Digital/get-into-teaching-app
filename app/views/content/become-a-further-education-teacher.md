@@ -30,7 +30,7 @@ It covers three key areas:
 * academic classroom-based learning of subjects including English and maths, including A levels in a sixth form college
 * basic skills courses on literacy, numeracy, English for speakers of other languages, and special needs
 
-Whichever route you choose, you could teach a diverse set of learners, including young people and adults.
+Whichever route you choose, you could teach a diverse set of learners.
 
 ## What qualifications do you need to teach in further education?
 
