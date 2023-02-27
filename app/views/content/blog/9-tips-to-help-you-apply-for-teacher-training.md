@@ -59,7 +59,7 @@ Get a [teacher training adviser](/teacher-training-advisers).
 
 ## 4.	Attend a teacher training event
 
-Our free events are the perfect opportunity to find out more about teacher training. Chat to teachers, training providers and expert advisers, and get answers to all of your questions. 
+Our free events are the perfect opportunity to find out more about teacher training. Chat to teachers, training providers and expert advisers, and get answers to all of your questions.
 
 [Find an event](/events).
 
@@ -77,7 +77,7 @@ The key to managing financially during your training year is careful planning an
 
 ## 6.	Find the right training course for you
 
-[Find postgraduate teacher training](https://www.find-postgraduate-teacher-training.service.gov.uk/) courses in England. You’ll be able to search by location, training provider and subject. When you apply, you have 3 choices for teacher training providers. It’s a good idea to select 3 choices; the more flexible you are, the more likely it is that you’ll secure a place.
+[Find postgraduate teacher training](https://www.find-postgraduate-teacher-training.service.gov.uk/) courses in England. You’ll be able to search by location, training provider and subject. When you apply, you have 4 choices for teacher training providers. It’s a good idea to select 4 choices; the more flexible you are, the more likely it is that you’ll secure a place.
 
 When choosing a course provider for your teacher training, it’s important to consider what will suit your individual circumstances.
 
