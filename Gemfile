@@ -112,7 +112,7 @@ group :development, :test do
   gem "pry-rails"
 
   # Testing framework
-  gem "knapsack_pro"
+  gem "knapsack"
   gem "rspec-rails", "~> 6.0.1"
 
   # Adds support for Capybara system testing and selenium driver

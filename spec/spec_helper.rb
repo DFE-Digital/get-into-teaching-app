@@ -13,8 +13,8 @@
 # it.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
-require "knapsack_pro"
-KnapsackPro::Adapters::RSpecAdapter.bind
+require "knapsack"
+Knapsack::Adapters::RSpecAdapter.bind
 
 require "webmock/rspec"
 require "dfe/analytics/testing"
@@ -34,18 +34,6 @@ SimpleCov.start "rails" do
 end
 
 DfE::Analytics::Testing.fake!
-
-KnapsackPro::Hooks::Queue.before_queue do |_queue_id|
-  # See https://knapsackpro.com/faq/question/how-to-use-simplecov-in-queue-mode
-  SimpleCov.command_name("rspec_ci_node_#{KnapsackPro::Config::Env.ci_node_index}")
-end
-
-KnapsackPro::Hooks::Queue.after_subset_queue do |_queue_id, _subset_queue_id|
-  # See https://knapsackpro.com/faq/question/how-to-use-json-formatter-for-rspec
-  if File.exist?(ENV["TEST_REPORT_FILE"])
-    FileUtils.mv(ENV["TEST_REPORT_FILE"], ENV["TEST_REPORT_FINAL_FILE"])
-  end
-end
 
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
