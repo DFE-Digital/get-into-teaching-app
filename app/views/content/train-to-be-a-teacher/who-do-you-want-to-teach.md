@@ -27,8 +27,8 @@ Children usually start primary school at 4 years old and this phase is called Re
 
 There are a further 2 phases, known as key stages: 
 
-* key stage 1 covers year 1 and 2, with children up to 7 years old
-* key stage 2 covers year 3 to 6, with children from 7 to 11 years old
+* key stage 1 covers years 1 and 2, with children up to 7 years old
+* key stage 2 covers years 3 to 6, with children from 7 to 11 years old
 
 The teaching content is broad, covering the whole range of national curriculum subjects including English, maths, science, as well as art and design, computing, geography, history, music and physical education (PE).
 
@@ -39,19 +39,19 @@ If you are interested in training to be a primary teacher, you could consider op
 ### Secondary (ages 11 to 18)
 Children start secondary school when they’re 11. There are up to 3 stages in secondary school: 
 
-* key stage 3 (KS3) includes years 7 to 9, with children age 11 to 14  
-* key stage 4 (KS4) includes years 10 and 11, with pupils age 14 to 16
-* key stage 5 (KS5) includes years 12 and 13, from age 16 to 18 at secondary schools with sixth forms or colleges
+* key stage 3 (KS3) includes years 7 to 9, with children aged 11 to 14  
+* key stage 4 (KS4) includes years 10 and 11, with pupils aged 14 to 16
+* key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms or colleges
 
-Pupils work towards national qualifications, usually GCSEs during KS4. Students take A levels or other similar qualifications during KS5. 
+Pupils work towards national qualifications, which are usually GCSEs during KS4. Students take A levels or other similar qualifications during KS5. 
 
-Subjects at this level include English, maths and science. Additional subjects may include drama, dance, and media studies. The specific subjects offered will depend on the school.
+Subjects at this level include English, maths and science. Additional subjects may include history, geography, and art. The specific subjects offered will depend on the school.
 
 ### What you need to teach in primary and secondary schools
 
-To teach in the majority of primary and secondary schools, you will need to achieve qualified teacher status (QTS). There are a number of routes to this. Check [what training you need to get QTS](/train-to-be-a-teacher).
+To teach in the majority of primary and secondary schools, you will need to achieve qualified teacher status (QTS). There are a number of routes to this. [Find out what training you need to get QTS](/train-to-be-a-teacher).
 
-Once you have QTS, you're qualified to teach in primary and secondary schools. However, if you want to change, you'll need to be able to show you have relevant classroom experience. For example, if you want to switch from secondary to primary, you will need to show that you can cover the broader curriculum.
+Once you have QTS, you're qualified to teach in primary and secondary schools. However, if you want to change from primary to secondary or secondary to primary, you'll need to be able to show you have relevant classroom experience.
 
 ### How to decide which age group to teach
 
