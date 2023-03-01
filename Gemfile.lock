@@ -9,11 +9,11 @@ GIT
 
 GIT
   remote: https://github.com/DFE-Digital/get-into-teaching-api-ruby-client.git
-  revision: 7f776f597109304f275db26852051b19070e568d
+  revision: b4183f7116116c388eb1d5d77ce79c1a5e8c493b
   specs:
-    get_into_teaching_api_client (3.0.0)
+    get_into_teaching_api_client (3.1.0)
       faraday (~> 1.0, >= 1.0.1)
-    get_into_teaching_api_client_faraday (3.0.0)
+    get_into_teaching_api_client_faraday (3.1.0)
       activesupport
       faraday
       faraday-encoding
@@ -163,7 +163,7 @@ GEM
       concurrent-ruby
     childprocess (3.0.0)
     coderay (1.1.3)
-    concurrent-ruby (1.2.0)
+    concurrent-ruby (1.2.2)
     crack (0.4.5)
       rexml
     crass (1.0.6)
