@@ -4,8 +4,8 @@ date: "2022-01-10"
 author: Mike Halton and Phil Young
 images:
   fellowship:
-    path: "media/images/content/blog/fellowship.jpg"
-    thumbnail_path: "media/images/content/blog/thumbnails/fellowship.jpg"
+    path: "static/content/blog/fellowship.jpg"
+    thumbnail_path: "static/content/blog/thumbnails/fellowship.jpg"
 description: |-
    Fellow teachers Mike Halton and Phil Young describe the friendships and fun they have outside of the classroom.
 keywords:

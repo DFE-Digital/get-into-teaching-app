@@ -294,24 +294,16 @@ jobs:
         with:
           keyvault: ${{ secrets.KEY_VAULT}}
           secret: INFRA-KEYS
-          key: SLACK-WEBHOOK, KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC
+          key: SLACK-WEBHOOK
 
       - name: Run Specs
         run: |-
-          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage/coverage-${{ matrix.ci_node_index }}:/app/coverage -e TEST_REPORT_FILE -e TEST_REPORT_FINAL_FILE -e KNAPSACK_PRO_FIXED_QUEUE_SPLIT \
-            -e KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC -e KNAPSACK_PRO_COMMIT_HASH -e KNAPSACK_PRO_BRANCH -e KNAPSACK_PRO_CI_NODE_TOTAL -e KNAPSACK_PRO_CI_NODE_INDEX -e \
-            KNAPSACK_PRO_LOG_LEVEL -e RAILS_ENV=test ${{env.DOCKER_IMAGE_TEST}} \
-            bundle exec rake 'knapsack_pro:queue:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report.xml --format progress]' spec
+          docker run -t --rm -v ${PWD}/out:/app/out -v ${PWD}/coverage/coverage-${{ matrix.ci_node_index }}:/app/coverage \
+            -e CI_NODE_TOTAL -e CI_NODE_INDEX -e RAILS_ENV=test ${{ env.DOCKER_IMAGE_TEST }} \
+            bundle exec rake 'knapsack:rspec[--format RspecSonarqubeFormatter --out /app/out/test-report-${{ matrix.ci_node_index }}.xml --format progress]' spec
         env:
-          KNAPSACK_PRO_TEST_SUITE_TOKEN_RSPEC: ${{ steps.keyvault-yaml-secret.outputs.KNAPSACK-PRO-TEST-SUITE-TOKEN-RSPEC }}
-          KNAPSACK_PRO_CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
-          KNAPSACK_PRO_CI_NODE_INDEX: ${{ matrix.ci_node_index }}
-          KNAPSACK_PRO_COMMIT_HASH: ${{ github.sha }}
-          KNAPSACK_PRO_BRANCH: ${{ github.ref }}
-          KNAPSACK_PRO_LOG_LEVEL: info
-          KNAPSACK_PRO_FIXED_QUEUE_SPLIT: true
-          TEST_REPORT_FILE: /app/out/test-report.xml
-          TEST_REPORT_FINAL_FILE: /app/out/test-report-final.xml
+          CI_NODE_TOTAL: ${{ matrix.ci_node_total }}
+          CI_NODE_INDEX: ${{ matrix.ci_node_index }}
 
       - name:  Keep Code Coverage Report
         if: always()
@@ -378,7 +370,12 @@ jobs:
            -Dsonar.organization=dfe-digital
            -Dsonar.host.url=https://sonarcloud.io/
            -Dsonar.projectKey=DFE-Digital_get-into-teaching-app
-           -Dsonar.testExecutionReportPaths=${{github.workspace}}/unit_tests/test-report-final.xml
+           -Dsonar.testExecutionReportPaths=${{github.workspace}}/unit_tests/test-report-0.xml,\
+            ${{github.workspace}}/unit_tests/test-report-1.xml,\
+            ${{github.workspace}}/unit_tests/test-report-2.xml,\
+            ${{github.workspace}}/unit_tests/test-report-3.xml,\
+            ${{github.workspace}}/unit_tests/test-report-4.xml,\
+            ${{github.workspace}}/unit_tests/test-report-5.xml
            -Dsonar.ruby.coverage.reportPaths=${{github.workspace}}/code_coverage/coverage.json
            -Dsonar.ruby.rubocop.reportPaths=${{github.workspace}}/rubocop_results/rubocop-result.json
 

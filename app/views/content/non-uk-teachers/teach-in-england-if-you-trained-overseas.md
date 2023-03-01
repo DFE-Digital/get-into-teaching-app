@@ -11,7 +11,7 @@ navigation: 20.20
 navigation_title: Teach in England if you trained overseas
 navigation_description: Find out how you can bring your skills and perspective to an English classroom if you're a qualified teacher from outside the UK.
 date: "2021-05-27"
-image: "media/images/content/hero-images/0002.jpg"
+image: "static/content/hero-images/0002.jpg"
 backlink: "../../"
 keywords:
   - International

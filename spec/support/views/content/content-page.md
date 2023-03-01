@@ -15,5 +15,5 @@
 
 An image without explicit width/height attributes:
 
-<img src="/packs/v1/media/images/content/hero-images/0013-3570599669a8da7d375320f4003d2d61.jpg">
+<img src="/packs/v1/static/content/hero-images/0013-3570599669a8da7d375320f4003d2d61.jpg">
 

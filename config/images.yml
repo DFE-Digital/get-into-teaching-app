@@ -1,436 +1,436 @@
 ---
 # hero
-"media/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg":
+"static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445.jpg":
   alt: "A teacher standing in a classroom"
   variants:
-    - "media/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445--mobile.jpg"
-    - "media/images/content/hero-images/M_DFE_Southfeilds_Room_A360_10445--tablet.jpg"
+    - "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445--mobile.jpg"
+    - "static/content/hero-images/M_DFE_Southfeilds_Room_A360_10445--tablet.jpg"
 
-"media/images/content/hero-images/event-image.jpg":
+"static/content/hero-images/event-image.jpg":
   alt: "A Get Into Teaching event in progress with people talking to teachers and advisers"
   variants:
-    - "media/images/content/hero-images/event-image--mobile.jpg"
-    - "media/images/content/hero-images/event-image--tablet.jpg"
+    - "static/content/hero-images/event-image--mobile.jpg"
+    - "static/content/hero-images/event-image--tablet.jpg"
 
-"media/images/content/hero-images/cake.png":
+"static/content/hero-images/cake.png":
   alt: "A multicoloured cake with sprinkles."
   variants:
-    - "media/images/content/hero-images/cake--mobile.png"
-    - "media/images/content/hero-images/cake--tablet.png"
+    - "static/content/hero-images/cake--mobile.png"
+    - "static/content/hero-images/cake--tablet.png"
 
-"media/images/content/hero-images/0001.jpg":
+"static/content/hero-images/0001.jpg":
   alt: "Maths teacher standing in front of a whiteboard with maths equations."
   variants:
-    - "media/images/content/hero-images/0001--mobile.jpg"
-    - "media/images/content/hero-images/0001--tablet.jpg"
+    - "static/content/hero-images/0001--mobile.jpg"
+    - "static/content/hero-images/0001--tablet.jpg"
 
-"media/images/content/hero-images/0002.jpg":
+"static/content/hero-images/0002.jpg":
   alt: "Teacher in a staff room talking to two colleagues sat on a sofa."
   variants:
-    - "media/images/content/hero-images/0002--mobile.jpg"
-    - "media/images/content/hero-images/0002--tablet.jpg"
+    - "static/content/hero-images/0002--mobile.jpg"
+    - "static/content/hero-images/0002--tablet.jpg"
 
-"media/images/content/hero-images/0003.jpg":
+"static/content/hero-images/0003.jpg":
   alt: "Male and female teacher talking in a staff room."
   variants:
-    - "media/images/content/hero-images/0003--mobile.jpg"
-    - "media/images/content/hero-images/0003--tablet.jpg"
+    - "static/content/hero-images/0003--mobile.jpg"
+    - "static/content/hero-images/0003--tablet.jpg"
 
-"media/images/content/hero-images/0004.jpg":
+"static/content/hero-images/0004.jpg":
   alt: "Maths teacher explaining a problem to a classroom of students using calculators."
   variants:
-    - "media/images/content/hero-images/0004--mobile.jpg"
-    - "media/images/content/hero-images/0004--tablet.jpg"
+    - "static/content/hero-images/0004--mobile.jpg"
+    - "static/content/hero-images/0004--tablet.jpg"
 
-"media/images/content/hero-images/0005.jpg":
+"static/content/hero-images/0005.jpg":
   alt: "Teacher helping a pupil with their work in a classroom."
   variants:
-    - "media/images/content/hero-images/0005--mobile.jpg"
-    - "media/images/content/hero-images/0005--tablet.jpg"
+    - "static/content/hero-images/0005--mobile.jpg"
+    - "static/content/hero-images/0005--tablet.jpg"
 
-"media/images/content/hero-images/0006.jpg":
+"static/content/hero-images/0006.jpg":
   alt: "Classroom full of pupils."
   variants:
-    - "media/images/content/hero-images/0006--mobile.jpg"
-    - "media/images/content/hero-images/0006--tablet.jpg"
+    - "static/content/hero-images/0006--mobile.jpg"
+    - "static/content/hero-images/0006--tablet.jpg"
 
-"media/images/content/hero-images/0007.jpg":
+"static/content/hero-images/0007.jpg":
   alt: "Teacher talking to a pupil in a classroom."
   variants:
-    - "media/images/content/hero-images/0007--mobile.jpg"
-    - "media/images/content/hero-images/0007--tablet.jpg"
+    - "static/content/hero-images/0007--mobile.jpg"
+    - "static/content/hero-images/0007--tablet.jpg"
 
-"media/images/content/hero-images/0008.jpg":
+"static/content/hero-images/0008.jpg":
   alt: "Teacher helping a child with their reading."
   variants:
-    - "media/images/content/hero-images/0008--mobile.jpg"
-    - "media/images/content/hero-images/0008--tablet.jpg"
+    - "static/content/hero-images/0008--mobile.jpg"
+    - "static/content/hero-images/0008--tablet.jpg"
 
-"media/images/content/hero-images/0009.jpg":
+"static/content/hero-images/0009.jpg":
   alt: "Teacher smiling in front of a maths display board."
   variants:
-    - "media/images/content/hero-images/0009--mobile.jpg"
-    - "media/images/content/hero-images/0009--tablet.jpg"
+    - "static/content/hero-images/0009--mobile.jpg"
+    - "static/content/hero-images/0009--tablet.jpg"
 
-"media/images/content/hero-images/0010.jpg":
+"static/content/hero-images/0010.jpg":
   alt: "Child raising their hand in a classroom to answer a question."
   variants:
-    - "media/images/content/hero-images/0010--mobile.jpg"
-    - "media/images/content/hero-images/0010--tablet.jpg"
+    - "static/content/hero-images/0010--mobile.jpg"
+    - "static/content/hero-images/0010--tablet.jpg"
 
-"media/images/content/hero-images/0011.jpg":
+"static/content/hero-images/0011.jpg":
   alt: "Child pointing something out to a teacher in the classroom."
   variants:
-    - "media/images/content/hero-images/0011--mobile.jpg"
-    - "media/images/content/hero-images/0011--tablet.jpg"
+    - "static/content/hero-images/0011--mobile.jpg"
+    - "static/content/hero-images/0011--tablet.jpg"
 
-"media/images/content/hero-images/0012.jpg":
+"static/content/hero-images/0012.jpg":
   alt: "Pupils listening to a science lesson."
   variants:
-    - "media/images/content/hero-images/0012--mobile.jpg"
-    - "media/images/content/hero-images/0012--tablet.jpg"
+    - "static/content/hero-images/0012--mobile.jpg"
+    - "static/content/hero-images/0012--tablet.jpg"
 
-"media/images/content/hero-images/0013.jpg":
+"static/content/hero-images/0013.jpg":
   alt: "Physics teacher explaining the concept of time to pupils on a whiteboard."
   variants:
-    - "media/images/content/hero-images/0013--mobile.jpg"
-    - "media/images/content/hero-images/0013--tablet.jpg"
-    - "media/images/content/blog/thumbnails/0013.jpg"
+    - "static/content/hero-images/0013--mobile.jpg"
+    - "static/content/hero-images/0013--tablet.jpg"
+    - "static/content/blog/thumbnails/0013.jpg"
 
-"media/images/content/hero-images/0014.jpg":
+"static/content/hero-images/0014.jpg":
   alt: "Geography teacher laughing in a classroom in front of a map display."
   variants:
-    - "media/images/content/hero-images/0014--mobile.jpg"
-    - "media/images/content/hero-images/0014--tablet.jpg"
+    - "static/content/hero-images/0014--mobile.jpg"
+    - "static/content/hero-images/0014--tablet.jpg"
 
-"media/images/content/hero-images/0015.jpg":
+"static/content/hero-images/0015.jpg":
   alt: "Teacher working alongside another teacher, writing in a notebook."
   variants:
-    - "media/images/content/hero-images/0015--mobile.jpg"
-    - "media/images/content/hero-images/0015--tablet.jpg"
+    - "static/content/hero-images/0015--mobile.jpg"
+    - "static/content/hero-images/0015--tablet.jpg"
 
-"media/images/content/hero-images/0016.jpg":
+"static/content/hero-images/0016.jpg":
   alt: "Young boy listening in a classroom."
   variants:
-    - "media/images/content/hero-images/0016--mobile.jpg"
-    - "media/images/content/hero-images/0016--tablet.jpg"
+    - "static/content/hero-images/0016--mobile.jpg"
+    - "static/content/hero-images/0016--tablet.jpg"
 
-"media/images/content/hero-images/0017.jpg":
+"static/content/hero-images/0017.jpg":
   alt: "Maths teacher helping a pupil work out a problem."
   variants:
-    - "media/images/content/hero-images/0017--mobile.jpg"
-    - "media/images/content/hero-images/0017--tablet.jpg"
+    - "static/content/hero-images/0017--mobile.jpg"
+    - "static/content/hero-images/0017--tablet.jpg"
 
-"media/images/content/hero-images/0018.jpg":
+"static/content/hero-images/0018.jpg":
   alt: "Young boy with a pencil behind his ear listening to a teacher."
   variants:
-    - "media/images/content/hero-images/0018--mobile.jpg"
-    - "media/images/content/hero-images/0018--tablet.jpg"
-"media/images/content/hero-images/0019.jpg":
+    - "static/content/hero-images/0018--mobile.jpg"
+    - "static/content/hero-images/0018--tablet.jpg"
+"static/content/hero-images/0019.jpg":
 
   alt: "Student in a science lesson."
   variants:
-    - "media/images/content/hero-images/0019--mobile.jpg"
-    - "media/images/content/hero-images/0019--tablet.jpg"
-"media/images/content/hero-images/0020.jpg":
+    - "static/content/hero-images/0019--mobile.jpg"
+    - "static/content/hero-images/0019--tablet.jpg"
+"static/content/hero-images/0020.jpg":
   alt: "Child standing in a classroom in front of a brightly coloured wall display."
   variants:
-    - "media/images/content/hero-images/0020--mobile.jpg"
-    - "media/images/content/hero-images/0020--tablet.jpg"
+    - "static/content/hero-images/0020--mobile.jpg"
+    - "static/content/hero-images/0020--tablet.jpg"
 
-"media/images/content/hero-images/0021.jpg":
+"static/content/hero-images/0021.jpg":
   alt: "Maths teacher explaining how to work out the area of a trapezium on a whiteboard."
   variants:
-    - "media/images/content/hero-images/0021--mobile.jpg"
-    - "media/images/content/hero-images/0021--tablet.jpg"
+    - "static/content/hero-images/0021--mobile.jpg"
+    - "static/content/hero-images/0021--tablet.jpg"
 
-"media/images/content/hero-images/0022.jpg":
+"static/content/hero-images/0022.jpg":
   alt: "Pupils listening to a maths teacher at the front of a classroom."
   variants:
-    - "media/images/content/hero-images/0022--mobile.jpg"
-    - "media/images/content/hero-images/0022--tablet.jpg"
+    - "static/content/hero-images/0022--mobile.jpg"
+    - "static/content/hero-images/0022--tablet.jpg"
 
-"media/images/content/hero-images/0023.jpg":
+"static/content/hero-images/0023.jpg":
   alt: "Classroom of smiling primary school children."
   variants:
-    - "media/images/content/hero-images/0023--mobile.jpg"
-    - "media/images/content/hero-images/0023--tablet.jpg"
+    - "static/content/hero-images/0023--mobile.jpg"
+    - "static/content/hero-images/0023--tablet.jpg"
 
-"media/images/content/hero-images/0024.jpg":
+"static/content/hero-images/0024.jpg":
   alt: "Maths teacher and pupil discussing a problem in a classroom."
   variants:
-    - "media/images/content/hero-images/0024--mobile.jpg"
-    - "media/images/content/hero-images/0024--tablet.jpg"
+    - "static/content/hero-images/0024--mobile.jpg"
+    - "static/content/hero-images/0024--tablet.jpg"
 
-"media/images/content/hero-images/0025.jpg":
+"static/content/hero-images/0025.jpg":
   alt: "A teacher training provider talking to an attendee at a teacher training event."
   variants:
-    - "media/images/content/hero-images/0025--mobile.jpg"
-    - "media/images/content/hero-images/0025--tablet.jpg"
+    - "static/content/hero-images/0025--mobile.jpg"
+    - "static/content/hero-images/0025--tablet.jpg"
 
-"media/images/content/ttalianne.jpg":
+"static/content/ttalianne.jpg":
   alt: "Lianne, an explore teaching adviser"
 
 # blog
-"media/images/content/blog/abigail-beeley.jpg":
+"static/content/blog/abigail-beeley.jpg":
   alt: "Maths teacher Abigail Beeley in front of a maths display board."
   variants:
-    - "media/images/content/blog/thumbnails/abigail-beeley.jpg"
+    - "static/content/blog/thumbnails/abigail-beeley.jpg"
 
-"media/images/content/blog/anna-shirley.jpg":
+"static/content/blog/anna-shirley.jpg":
   alt: "Sheffield SCITT communciations manager Anna Shirley."
   variants:
-    - "media/images/content/blog/thumbnails/anna-shirley.jpg"
+    - "static/content/blog/thumbnails/anna-shirley.jpg"
 
-"media/images/content/blog/applying-for-teacher.jpg":
+"static/content/blog/applying-for-teacher.jpg":
   alt: ""
   variants:
-    - "media/images/content/blog/thumbnails/applying-for-teacher.jpg"
+    - "static/content/blog/thumbnails/applying-for-teacher.jpg"
 
-"media/images/content/blog/ben-breen.jpg":
+"static/content/blog/ben-breen.jpg":
   alt: "Maths and science teacher Ben Breen marking work at home."
   variants:
-    - "media/images/content/blog/thumbnails/ben-breen.jpg"
+    - "static/content/blog/thumbnails/ben-breen.jpg"
 
-"media/images/content/blog/bedfordshire.jpg":
+"static/content/blog/bedfordshire.jpg":
   alt: "Students learning English by playing educational board games in a classroom."
   variants:
-    - "media/images/content/blog/thumbnails/bedfordshire.jpg"
+    - "static/content/blog/thumbnails/bedfordshire.jpg"
 
-"media/images/content/blog/calculator.jpg":
+"static/content/blog/calculator.jpg":
   alt: "A calculator on top of maths homework and a pencil case."
   variants:
-    - "media/images/content/blog/thumbnails/calculator.jpg"
+    - "static/content/blog/thumbnails/calculator.jpg"
 
-"media/images/content/blog/cindy-ventura.jpg":
+"static/content/blog/cindy-ventura.jpg":
   alt: "Trainee teacher Cindy Ventura in her first week on a PGDE teacher training course."
   variants:
-    - "media/images/content/blog/thumbnails/cindy-ventura.jpg"
+    - "static/content/blog/thumbnails/cindy-ventura.jpg"
 
-"media/images/content/blog/farooq-ahmad.jpg":
+"static/content/blog/farooq-ahmad.jpg":
   alt: "Former ICT teacher Farooq Ahmad on the National Tutoring Programme."
   variants:
-    - "media/images/content/blog/thumbnails/farooq-ahmad.jpg"
+    - "static/content/blog/thumbnails/farooq-ahmad.jpg"
 
-"media/images/content/blog/giorgio-rubbo.jpg":
+"static/content/blog/giorgio-rubbo.jpg":
   alt: "Biology teacher Giorgio Rubbo wearing a suit and tie."
   variants:
-    - "media/images/content/blog/thumbnails/giorgio-rubbo.jpg"
+    - "static/content/blog/thumbnails/giorgio-rubbo.jpg"
 
-"media/images/content/blog/habiba-cabdi-teacher-applicant.jpg":
+"static/content/blog/habiba-cabdi-teacher-applicant.jpg":
   alt: "Teacher training course student Habiba Cabdi with a hearing impairment."
   variants:
-    - "media/images/content/blog/thumbnails/habiba-cabdi-teacher-applicant.jpg"
+    - "static/content/blog/thumbnails/habiba-cabdi-teacher-applicant.jpg"
 
-"media/images/content/blog/interview.jpg":
+"static/content/blog/interview.jpg":
   alt: "A teacher training candidate being interviewed by a provider sitting at opposite sides of a desk."
   variants:
-    - "media/images/content/blog/thumbnails/interview.jpg"
+    - "static/content/blog/thumbnails/interview.jpg"
 
-"media/images/content/blog/jacob.jpg":
+"static/content/blog/jacob.jpg":
   alt: "Teacher training course student and biology graduate Jacob."
   variants:
-    - "media/images/content/blog/thumbnails/jacob.jpg"
+    - "static/content/blog/thumbnails/jacob.jpg"
 
-"media/images/content/blog/maria.jpg":
+"static/content/blog/maria.jpg":
   alt: "Maria Bateson, a science teacher who returned to teaching after ten years."
   variants:
-    - "media/images/content/blog/thumbnails/maria.jpg"
+    - "static/content/blog/thumbnails/maria.jpg"
 
-"media/images/content/blog/mel-oconnor.jpg":
+"static/content/blog/mel-oconnor.jpg":
   alt: "Trainee teacher Mel O'Connor taking a PGDE teacher training course in maths."
   variants:
-    - "media/images/content/blog/thumbnails/mel-oconnor.jpg"
+    - "static/content/blog/thumbnails/mel-oconnor.jpg"
 
-"media/images/content/blog/mel-stta-screen.jpg":
+"static/content/blog/mel-stta-screen.jpg":
   alt: "Conference room with tables and a projector for a Sheffield Teacher Training Alliance PGDE course."
   variants:
-    - "media/images/content/blog/thumbnails/mel-stta-screen.jpg"
+    - "static/content/blog/thumbnails/mel-stta-screen.jpg"
 
-"media/images/content/blog/notepad.jpg":
+"static/content/blog/notepad.jpg":
   alt: ""
   variants:
-    - "media/images/content/blog/thumbnails/notepad.jpg"
+    - "static/content/blog/thumbnails/notepad.jpg"
 
-"media/images/content/blog/olivia.jpg":
+"static/content/blog/olivia.jpg":
   alt: "Teacher training course student Olivia with the Outwood Grange Academies Trust."
   variants:
-    - "media/images/content/blog/thumbnails/olivia.jpg"
+    - "static/content/blog/thumbnails/olivia.jpg"
 
-"media/images/content/blog/pupil-chatting-to-teacher-in-classroom.jpg":
+"static/content/blog/pupil-chatting-to-teacher-in-classroom.jpg":
   alt: "Languages teacher talking to a student in front of a whiteboard with Spanish phrases written on it."
   variants:
-    - "media/images/content/blog/thumbnails/pupil-chatting-to-teacher-in-classroom.jpg"
+    - "static/content/blog/thumbnails/pupil-chatting-to-teacher-in-classroom.jpg"
 
-"media/images/content/blog/right_provider.jpg":
+"static/content/blog/right_provider.jpg":
   alt: ""
   variants:
-    - "media/images/content/blog/thumbnails/right_provider.jpg"
+    - "static/content/blog/thumbnails/right_provider.jpg"
 
-"media/images/content/blog/rocket.jpg":
+"static/content/blog/rocket.jpg":
   alt: "A primary teacher showing a rocket to a girl at the front of a classroom as other students watch."
   variants:
-    - "media/images/content/blog/thumbnails/rocket.jpg"
+    - "static/content/blog/thumbnails/rocket.jpg"
 
-"media/images/content/blog/school-aisle.jpg":
+"static/content/blog/school-aisle.jpg":
   alt: "The corridor of a school filled with children."
   variants:
-    - "media/images/content/blog/thumbnails/school-aisle.jpg"
+    - "static/content/blog/thumbnails/school-aisle.jpg"
 
-"media/images/content/blog/schoolyard.jpg":
+"static/content/blog/schoolyard.jpg":
   alt: "A school playground with secondary school children playing outdoors."
   variants:
-    - "media/images/content/blog/thumbnails/schoolyard.jpg"
+    - "static/content/blog/thumbnails/schoolyard.jpg"
 
-"media/images/content/blog/seminar-room.jpg":
+"static/content/blog/seminar-room.jpg":
   alt: "PGCE lecturer at a whiteboard in a seminar room with teacher training students sitting at a table."
   variants:
-    - "media/images/content/blog/thumbnails/seminar-room.jpg"
+    - "static/content/blog/thumbnails/seminar-room.jpg"
 
-"media/images/content/blog/staff-room.jpg":
+"static/content/blog/staff-room.jpg":
   alt: "Teacher in a staff room talking to two colleagues sat on a sofa."
   variants:
-    - "media/images/content/blog/thumbnails/staff-room.jpg"
+    - "static/content/blog/thumbnails/staff-room.jpg"
 
-"media/images/content/blog/stephen.jpg":
+"static/content/blog/stephen.jpg":
   alt: "Returning maths teacher and Methodist Minister Stephen, in the school library."
   variants:
-    - "media/images/content/blog/thumbnails/stephen.jpg"
+    - "static/content/blog/thumbnails/stephen.jpg"
 
-"media/images/content/blog/get-into-teaching.jpg":
+"static/content/blog/get-into-teaching.jpg":
   alt: "A busy Get Into Teaching event with attendees having conversations with Teacher Training Advisers."
   variants:
-    - "media/images/content/blog/thumbnails/get-into-teaching.jpg"
+    - "static/content/blog/thumbnails/get-into-teaching.jpg"
 
-"media/images/content/blog/whiteboard.jpg":
+"static/content/blog/whiteboard.jpg":
   alt: ""
   variants:
-    - "media/images/content/blog/thumbnails/whiteboard.jpg"
+    - "static/content/blog/thumbnails/whiteboard.jpg"
 
-"media/images/content/blog/fellowship.jpg":
+"static/content/blog/fellowship.jpg":
   alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
   variants:
-    - "media/images/content/blog/thumbnails/fellowship.jpg"
+    - "static/content/blog/thumbnails/fellowship.jpg"
 
-"media/images/content/blog/ian-wallace.jpg":
+"static/content/blog/ian-wallace.jpg":
   alt: "Science teacher and career changer, Ian Wallace"
   variants:
-    - "media/images/content/blog/thumbnails/ian-wallace.jpg"
+    - "static/content/blog/thumbnails/ian-wallace.jpg"
 
-"media/images/content/blog/jessica-walmsley.jpg":
+"static/content/blog/jessica-walmsley.jpg":
   alt: "Jessica Walmsley, Head of Science."
   variants:
-    - "media/images/content/blog/thumbnails/jessica-walmsley.jpg"
+    - "static/content/blog/thumbnails/jessica-walmsley.jpg"
 
-"media/images/content/blog/brooke-harvey.jpg":
+"static/content/blog/brooke-harvey.jpg":
   alt: "Brooke Harvey, a Canadian national who moved to England to teach, standing in front of a bookcase."
   variants:
-    - "media/images/content/blog/thumbnails/brooke-harvey.jpg"
+    - "static/content/blog/thumbnails/brooke-harvey.jpg"
 
-"media/images/content/blog/thumbnails/stories-will.jpg":
+"static/content/blog/thumbnails/stories-will.jpg":
   alt: English teacher Will Fordham
 
-"media/images/content/blog/thumbnails/stories-zainab.jpg":
+"static/content/blog/thumbnails/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
 
-"media/images/content/blog/thumbnails/stories-peter.jpg":
+"static/content/blog/thumbnails/stories-peter.jpg":
   alt: Ex-financeer, Peter
 
-"media/images/content/blog/thumbnails/stories-gavin.jpg":
+"static/content/blog/thumbnails/stories-gavin.jpg":
   alt: Assistant headteacher, Gavin
 
-"media/images/content/blog/thumbnails/stories-nathan.jpg":
+"static/content/blog/thumbnails/stories-nathan.jpg":
   alt: Nathan Sproule, teacher
 
-"media/images/content/blog/thumbnails/stories-emma.jpg":
+"static/content/blog/thumbnails/stories-emma.jpg":
   alt: Trainee science teacher, Emma
 
-"media/images/content/blog/thumbnails/stories-paul.jpg":
+"static/content/blog/thumbnails/stories-paul.jpg":
   alt: Paul Evason, assistant headteacher
 
-"media/images/content/blog/thumbnails/stories-sarah-f.jpg":
+"static/content/blog/thumbnails/stories-sarah-f.jpg":
   alt: Sarah Fisher, head of biology
 
-"media/images/content/blog/thumbnails/stories-generic.jpg":
+"static/content/blog/thumbnails/stories-generic.jpg":
   alt: Students enjoying a lesson in a classroom
 
-"media/images/content/blog/thumbnails/stories-katie.jpg":
+"static/content/blog/thumbnails/stories-katie.jpg":
   alt: Head of faculty, Katie Lockett
 
-"media/images/content/blog/thumbnails/stories-jon.jpg":
+"static/content/blog/thumbnails/stories-jon.jpg":
   alt: Head of department, Jon Simmons
 
-"media/images/content/blog/thumbnails/stories-danny.jpg":
+"static/content/blog/thumbnails/stories-danny.jpg":
   alt: PE teacher, Danny Holliday
 
-"media/images/content/blog/thumbnails/stories-claire.jpg":
+"static/content/blog/thumbnails/stories-claire.jpg":
   alt: Claire Johnson, physics teacher
 
-"media/images/content/blog/thumbnails/stories-sandra.jpg":
+"static/content/blog/thumbnails/stories-sandra.jpg":
   alt: Inspirational teacher, Sandra.
 
-"media/images/content/blog/thumbnails/stories-roger.jpg":
+"static/content/blog/thumbnails/stories-roger.jpg":
   alt: Roger Brown, physics teacher
 
-"media/images/content/blog/thumbnails/stories-jill.jpg":
+"static/content/blog/thumbnails/stories-jill.jpg":
   alt: Returning science teacher, Jill
 
-"media/images/content/blog/thumbnails/chris-wallis.jpg":
+"static/content/blog/thumbnails/chris-wallis.jpg":
   alt: Product engineer turned science teacher, Chris Wallis
 
-"media/images/content/blog/thumbnails/david-payling.jpg":
+"static/content/blog/thumbnails/david-payling.jpg":
   alt: Veteran and trainee teacher, Daivd Payling
 
 # homepage
-"media/images/content/homepage/here-to-help.jpg":
+"static/content/homepage/here-to-help.jpg":
   alt: "Back of an adviser's T-shirt saying 'here to help' at a teacher training event."
 
-"media/images/content/homepage/science-teacher.jpg":
+"static/content/homepage/science-teacher.jpg":
   alt: "A chemistry teacher standing in a science classroom in front of a periodic table."
 
-"media/images/content/homepage/teacher-training-adviser.jpg":
+"static/content/homepage/teacher-training-adviser.jpg":
   alt: "Teacher training advisers at an event."
 
 # food for thought
-"media/images/content/food-for-thought/Jake_Athorn.jpg":
+"static/content/food-for-thought/Jake_Athorn.jpg":
   alt: "Teacher Jake Athorn"
-"media/images/content/food-for-thought/Joel_Quilter.jpg":
+"static/content/food-for-thought/Joel_Quilter.jpg":
   alt: "Teacher Joel Quilter"
-"media/images/content/food-for-thought/Johnoi_Josephs.jpg":
+"static/content/food-for-thought/Johnoi_Josephs.jpg":
   alt: "Teacher Johnoi Josephs"
-"media/images/content/food-for-thought/Keri_Gell.jpg":
+"static/content/food-for-thought/Keri_Gell.jpg":
   alt: "Teacher Keri Gell"
-"media/images/content/food-for-thought/Ella_Tyrrell.jpg":
+"static/content/food-for-thought/Ella_Tyrrell.jpg":
   alt: "Teacher Ella Tyrrell"
 
 # is teaching right for me
-"media/images/content/is-teaching-right-for-me/fellowship.jpg":
+"static/content/is-teaching-right-for-me/fellowship.jpg":
   alt: "Teachers Mike and Phil play on a children's climbing frame in a playground"
-"media/images/content/is-teaching-right-for-me/stories-zainab.jpg":
+"static/content/is-teaching-right-for-me/stories-zainab.jpg":
   alt: "Zainab Kasmani, English teacher"
-"media/images/content/is-teaching-right-for-me/Physics_MissHayre_4.jpg":
+"static/content/is-teaching-right-for-me/Physics_MissHayre_4.jpg":
   alt: "Miss Hayre, Physics teacher"
-"media/images/content/is-teaching-right-for-me/collage1.jpg":
+"static/content/is-teaching-right-for-me/collage1.jpg":
   alt: "Teacher smiling in front of a maths display board."
-"media/images/content/is-teaching-right-for-me/collage2.jpg":
+"static/content/is-teaching-right-for-me/collage2.jpg":
   alt: "Teacher helping a pupil with their work in a classroom."
 
 # how much do teachers get paid
-"media/images/content/how-much-do-teachers-get-paid/collage1.jpg":
+"static/content/how-much-do-teachers-get-paid/collage1.jpg":
   alt: "Teacher smiling in front of a maths display board."
-"media/images/content/how-much-do-teachers-get-paid/collage2.jpg":
+"static/content/how-much-do-teachers-get-paid/collage2.jpg":
   alt: "Maths teacher explaining a problem to a classroom of students using calculators."
-"media/images/content/how-much-do-teachers-get-paid/collage3.jpg":
+"static/content/how-much-do-teachers-get-paid/collage3.jpg":
   alt: "Teacher working alongside another teacher, writing in a notebook."
-"media/images/content/how-much-do-teachers-get-paid/collage4.jpg":
+"static/content/how-much-do-teachers-get-paid/collage4.jpg":
   alt: "Three teachers having a conversation in the staff room."
 
 # event
-"media/images/content/event-signup/event-regional-online-listing.jpg":
+"static/content/event-signup/event-regional-online-listing.jpg":
   alt: "An online Get Into Teaching event on a computer screen."
-"media/images/content/event-signup/event-regional-listing.jpg":
+"static/content/event-signup/event-regional-listing.jpg":
   alt: "A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers"
-"media/images/content/event-signup/event-regional-online.jpg":
+"static/content/event-signup/event-regional-online.jpg":
   alt: "An online Get Into Teaching event on a computer screen."
-"media/images/content/event-signup/event-regional.jpg":
+"static/content/event-signup/event-regional.jpg":
   alt: "A busy Get Into Teaching event with people having one-on-one conversations with expert advisers and teachers."

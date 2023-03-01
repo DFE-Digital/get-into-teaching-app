@@ -15,6 +15,7 @@ class ApplicationController < ActionController::Base
   before_action :record_utm_codes
   before_action :add_home_breadcrumb
   before_action :declare_frontmatter
+  before_action :declare_js_packs
 
 protected
 
@@ -33,6 +34,10 @@ private
     # Not all pages have frontmatter, but ensuring it
     # is declared everywhere simplifies its use throughout.
     @front_matter ||= {}
+  end
+
+  def declare_js_packs
+    @js_packs ||= []
   end
 
   def raise_not_found

@@ -26,7 +26,7 @@ module CallsToAction
   private
 
     def icon_element(icon)
-      image_pack_tag("media/images/#{icon}.svg",
+      image_pack_tag("static/#{icon}.svg",
                      width: 50,
                      height: 50,
                      alt: "",

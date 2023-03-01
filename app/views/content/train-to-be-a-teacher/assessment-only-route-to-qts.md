@@ -273,8 +273,13 @@ provider_groups:
     - header: GLF Schools’ Teacher Training
       link: http://www.glynsurreyscitt.co.uk/846/assessment-only-route
       name: Helen Shaw
-      telephone: '0208 716 4934'
+      telephone: '020 8716 4934'
       email: info@glftt.org
+    - header: i2i Teaching Partnership SCITT
+      link: https://www.i2ipartnership.co.uk/
+      name: Krissy Taylor
+      telephone: '01252 900550'
+      email: ktaylor@i2ipartnership.co.uk
     - header: Kent and Medway Training
       link: https://www.kmtraining.org.uk/
       email: polly.butterfield-tracey@kmtraining.org.uk

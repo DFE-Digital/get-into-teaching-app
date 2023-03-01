@@ -9,8 +9,7 @@ gem "rails", "~> 7.0.2.3"
 # Use Puma as the app server
 gem "puma", "~> 5.6", ">= 5.6.2"
 
-# Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
-gem "webpacker", ">= 5.4.3"
+gem "shakapacker", "6.5.6"
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -113,7 +112,7 @@ group :development, :test do
   gem "pry-rails"
 
   # Testing framework
-  gem "knapsack_pro"
+  gem "knapsack"
   gem "rspec-rails", "~> 6.0.1"
 
   # Adds support for Capybara system testing and selenium driver

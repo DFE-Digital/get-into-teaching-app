@@ -12,7 +12,7 @@ navigation: 20.05
 navigation_title: Train to teach in England as an international student
 navigation_description: Find out how to train to teach in England as an international student and get English qualified teacher status (QTS).
 date: "2021-05-27"
-image: "media/images/content/hero-images/0003.jpg"
+image: "static/content/hero-images/0003.jpg"
 backlink: "../../"
 keywords:
   - International
