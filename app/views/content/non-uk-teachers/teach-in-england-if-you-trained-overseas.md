@@ -122,6 +122,10 @@ If your application is successful, you’ll receive the money around the end of 
 
 You will not need to pay an agent or any other third party to complete your application. If you have had a message asking you to apply for or contact someone about the IRP, [this could be fraudulent](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
+#### Contact us
+
+For general enquiries about the IRP, please email us at teach.inengland@education.gov.uk.
+
 ## Apply for qualified teacher status (QTS)
 
 Qualified teacher status (QTS) is the professional status teachers in England gain at the end of their teacher training. Schools use QTS as a measure of teaching skills and experience, so you will find it much easier to get a teaching job in England if you have QTS.

@@ -131,6 +131,10 @@ If you have a place on a teacher training course where you are paid a salary to 
 
 You will not need to pay an agent or any other third party to complete your application. If you have had a message asking you to apply or contact someone about the IRP, treat it carefully as it could be a scam. [Find out what to do about suspicious messages](https://www.gov.uk/report-suspicious-emails-websites-phishing).
 
+#### Contact us
+
+For general enquiries about the IRP, please email us at teach.inengland@education.gov.uk.
+
 ### Bursaries and scholarships for physics and languages
 
 Bursaries and scholarships are cash sums from the UK government that you do not have to pay back. Bear in mind that:
