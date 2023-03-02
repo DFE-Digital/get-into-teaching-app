@@ -20,4 +20,15 @@ const options = {
   },
 }
 
+// add hashing of generated JS and CSS files to fix caching
+// issue in development see: https://github.com/shakacode/shakapacker/issues/88
+baseWebpackConfig.output.filename = 'js/[name]-[contenthash].js'
+baseWebpackConfig.output.chunkFilename = 'js/[name]-[contenthash].chunk.js'
+
+baseWebpackConfig.plugins.forEach(plugin => {
+  if (plugin.options && plugin.options.filename === 'css/[name].css') {
+    plugin.options.filename = 'css/[name]-[contenthash].css'
+  }
+})
+
 module.exports = merge({}, baseWebpackConfig, options)
