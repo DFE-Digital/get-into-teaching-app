@@ -221,7 +221,7 @@ If you’ve successfully [applied for QTS in England](https://apply-for-qts-in-e
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/owLXaeerFy8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-## Plan your move to the UK
+## Plan your move to England
 
 The following suggestions and resources may be useful as you plan your move:
 
