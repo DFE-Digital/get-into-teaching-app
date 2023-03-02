@@ -116,7 +116,7 @@ Thirdly, you must move to England no more than 3 months before the start of your
 
 You’ll need to have started your teaching job in a state secondary school to make your application – the guidance on this page explains how to find a teaching job and apply for your visa. 
 
-Applications will be open from 1 September to 31 October 2023. To express your interest in applying, email us at IRP.ExpressInterest@education.gov.uk. For information about applications in 2024, check back to this page.
+Applications will be open from 1 September to 31 October 2023. To express your interest in applying, email us at IRP.ExpressInterest@education.gov.uk. We’ll be in touch when applications open in autumn 2023. For information about applications in 2024, check back to this page.
 
 If your application is successful, you’ll receive the money around the end of your first school term of employment.
 
