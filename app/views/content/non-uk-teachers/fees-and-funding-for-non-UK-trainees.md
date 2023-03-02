@@ -94,16 +94,16 @@ To be eligible, teacher trainees must meet all 3 of the following requirements.
 
 Firstly, you must have taken up a place on a teacher training course in England leading to [qualified teacher status](https://www.gov.uk/guidance/qualified-teacher-status-qts) for the academic year 2023 to 2024. Your teacher training provider must be accredited by the UK government and you must be training to teach one of the following:
 
-* any secondary language or languages except English, including courses which are made up of at least 50% languages 
+* any secondary language or languages except English, including courses with content which is at least 50% languages 
 
 * secondary physics, including:
 
-  - engineers teach physics 
-  - courses which are made up of at least 50% physics 
+  - [Engineers teach physics](/subjects/engineers-teach-physics) 
+  - courses with content which is at least 50% physics 
 
 [Find teacher training courses](https://www.gov.uk/find-postgraduate-teacher-training-courses) in languages and physics.
    
-Secondly, you must come to the UK on one of the following visas:  
+Secondly, you must come to England on one of the following visas:  
 
 * Skilled worker visa
 * Student visa 
@@ -117,7 +117,7 @@ Secondly, you must come to the UK on one of the following visas:
 * Ukraine Family Scheme visa
 * Ukraine Sponsorship Scheme
 
-Thirdly, you must move to the UK no more than 3 months before the start of your course.  
+Thirdly, you must move to England no more than 3 months before the start of your course.  
 
 You will not be eligible for the IRP if you are undergoing [assessment only QTS](/assessment-only-providers). 
 
@@ -158,7 +158,7 @@ You’ll also need at least one of the following:
 
 Each bursary scheme will have their own individual terms and conditions – contact your chosen teacher training provider for more information.
 
-The languages bursary covers all languages offered by accredited teacher training providers. If a course combines 2 subjects (for example, physics plus mathematics, or modern foreign languages plus English), at least 50% of the course must be made up of the bursary subject.
+The languages bursary covers all languages offered by accredited teacher training providers. If a course combines 2 subjects (for example, physics plus mathematics, or modern foreign languages plus English), the bursary subject must form at least 50% of the course content.
 
 
 #### Scholarships for physics, French, German and Spanish

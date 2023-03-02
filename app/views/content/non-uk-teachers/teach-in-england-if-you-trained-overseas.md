@@ -95,7 +95,7 @@ Teachers of all languages (except English) offered in English state secondary sc
 
 Physics can be combined with another subject, but must make up at least 50% of teaching time. Teachers of general science are also eligible to apply for the IRP if they are teaching the physics elements of general science. It can be combined with another subject, but general science must make up at least 50% of teaching time.
 
-Secondly, you must come to the UK on one of the following visas: 
+Secondly, you must come to England on one of the following visas: 
 
 * Skilled worker visa
 * Youth Mobility Scheme 
@@ -109,7 +109,7 @@ Secondly, you must come to the UK on one of the following visas:
 * Ukraine Sponsorship Scheme
 
 
-Thirdly, you must move to the UK no more than 3 months before the start of your job. 
+Thirdly, you must move to England no more than 3 months before the start of your job. 
 
 
 ### How to apply for the IRP
