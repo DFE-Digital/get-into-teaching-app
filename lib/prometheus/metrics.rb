@@ -47,13 +47,6 @@ module Prometheus
     )
 
     prometheus.counter(
-      :app_cache_read_total,
-      docstring: "A counter of cache reads",
-      labels: %i[key hit] + preset_labels.keys,
-      preset_labels: preset_labels,
-    )
-
-    prometheus.counter(
       :app_csp_violations_total,
       docstring: "A counter of CSP violations",
       labels: %i[blocked_uri document_uri violated_directive] + preset_labels.keys,

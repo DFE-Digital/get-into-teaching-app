@@ -57,15 +57,6 @@ describe Prometheus::Metrics do
     it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
   end
 
-  describe "app_cache_read_total" do
-    subject { registry.get(:app_cache_read_total) }
-
-    it { is_expected.not_to be_nil }
-    it { is_expected.to have_attributes(docstring: "A counter of cache reads") }
-    it { expect { subject.get(labels: %i[key hit]) }.not_to raise_error }
-    it { is_expected.to have_attributes(preset_labels: expected_preset_labels) }
-  end
-
   describe "app_page_speed_score_performance" do
     subject { registry.get(:app_page_speed_score_performance) }
 
