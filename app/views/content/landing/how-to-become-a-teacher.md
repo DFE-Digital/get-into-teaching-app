@@ -1,6 +1,6 @@
 ---
 title: "How to become a teacher"
-description: A description goes here
+description: Our step by step guide for how to become a teacher. Find out more about checking your qualifications, how to fund your training, and applying to train to be a teacher.
 content:
     - content/landing/how-to-become-a-teacher/header
     - content/landing/how-to-become-a-teacher/steps
