@@ -85,7 +85,7 @@
       @include font-size(large);
 
       @include mq($from: mobile) {
-        @include font-size(large);
+        @include font-size(xxxlarge);
       }
     }
   }

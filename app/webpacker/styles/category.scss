@@ -64,6 +64,11 @@
       gap: 1.5em;
       width: 100%;
     }
+    
+    h2,
+    h3 {
+	   @include font-size("small");
+    }
 
     &:hover {
       box-shadow: 0 12px 9px 0 rgba(0, 0, 0, .15);
@@ -115,6 +120,7 @@
 
     h2 {
       @extend .heading-l;
+      @include font-size("small");
     }
 
     * {
