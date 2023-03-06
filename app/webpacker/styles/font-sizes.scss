@@ -1,42 +1,42 @@
 $_font-sizes: (
   mobile: (
     "xxsmall":  14px,
-    "xsmall":   16px, //base size
-    "small":    20px, 
+    "xsmall":   16px, // base size
+    "small":    20px,
     "medium":   22px,
     "large":    32px,
     "xlarge":   40px,
   ),
   tablet: (
     "xxsmall":  16px,
-    "xsmall":   19px, //base size
+    "xsmall":   19px, // base size
     "small":    28px,
     "medium":   36px,
-    "large":    54px, 
-    "xlarge":   85px,  
+    "large":    54px,
+    "xlarge":   85px,
   ),
   desktop: (
     "xxsmall":  16px,
-    "xsmall":   19px, //base size + h4. 
-    "small":    28px, //h3
-    "medium":   36px, //h2 
-    "large":    54px, //h1 regular
-    "xlarge":   85px, //h1 lrg eg welcome guide
+    "xsmall":   19px, // base size + h4.
+    "small":    28px, // h3
+    "medium":   36px, // h2
+    "large":    54px, // h1 regular
+    "xlarge":   85px, // h1 lrg eg welcome guide
   )
 );
 
 $_line-heights: (
   mobile: (
     "xxsmall":  24px,
-    "xsmall":   24px, //base size
-    "small":    32px, 
+    "xsmall":   24px, // base size
+    "small":    32px,
     "medium":   32px,
     "large":    40px,
     "xlarge":   48px,
   ),
   tablet: (
     "xxsmall":  24px,
-    "xsmall":   32px, //base size
+    "xsmall":   32px, // base size
     "small":    40px,
     "medium":   48px,
     "large":    64px,
@@ -44,7 +44,7 @@ $_line-heights: (
   ),
   desktop: (
     "xxsmall":  24px,
-    "xsmall":   32px, //base size
+    "xsmall":   32px, // base size
     "small":    40px,
     "medium":   48px,
     "large":    64px,
