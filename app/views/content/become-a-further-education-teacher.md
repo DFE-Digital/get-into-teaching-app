@@ -24,7 +24,7 @@ If you’re interested in teaching young people and adults over 16 who are not s
 
 ## What is further education?
 
-It covers three key areas: 
+It covers 3 key areas: 
 
 * vocational courses including plumbing, manufacturing and health care
 * academic classroom-based learning of subjects including English and maths, including A levels in a sixth form college
