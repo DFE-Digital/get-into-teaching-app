@@ -1,116 +1,92 @@
 ---
 title: Who do you want to teach
-heading: Who do you want to teach
+heading: Who do you want to teach?
 description: |-
   Explore who’d you’d like to teach and the qualifications you need to work with early years, further education, and pupils with special educational needs.
-related_content:
-    Get support training to teach if you're disabled : "/funding-and-support/if-youre-disabled"
 promo_content:
     - content/train-to-be-a-teacher/promos/mailing-list-promo-who-do-you-want-to-teach
+calls_to_action:
+    get-school-experience:
+      name: simple
+      arguments:
+        icon: "icon-arrow"
+        text: |-
+          Use our service to search for and organise a primary or secondary school placement in England.        
+        link_text: "Get school experience"
+        link_target: "https://schoolexperience.education.gov.uk/"
 ---
 
-If you want to teach a particular student group you might need to do specific training. Find out what you can do to get the right qualifications.
+It’s good to consider what kind of teacher you want to be based on your interests, skills and experience. You might need specific training or qualifications in some areas. This page explains more about the different options.
 
-You could teach:
+## Teach in a primary or secondary school
 
-- primary (ages 5 to 11)
-- secondary (ages 11 to 18)
-- disabled students and students with special needs
-- early years (children up to the age of 5)
-- further education (for example, teaching at further education colleges or sixth form colleges)
+The school system in England is split into age groups:
 
-If you want to [teach in primary or secondary schools](/train-to-be-a-teacher/if-you-have-a-degree) there are a number of ways to get [qualified teacher status](/what-is-qts) (QTS) which you will need to teach in the majority of schools in
-England.
+### Primary (ages 5 to 11)
+Children usually start primary school at 4 years old and this phase is called reception. This is the final stage of the early years foundation stage (EYFS).
 
-You will need a degree to teach all student groups except those in further education, depending on the type of further education you are teaching.
+There are a further 2 phases, known as key stages: 
 
-## Teach disabled pupils and pupils with special educational needs
+* key stage 1 (KS1) covers years 1 and 2, with children up to 7 years old
+* key stage 2 (KS2) covers years 3 to 6, with children from 7 to 11 years old
 
-Most disabled pupils and pupils with special educational needs learn in mainstream schools.
-No matter what settings you train and work in – whether it’s mainstream schools, special schools, or both – you’ll work with pupils with complex needs.
+The teaching content is broad, covering the whole range of national curriculum subjects including English, maths, science, as well as art and design, computing, geography, history, music and physical education (PE).
 
-You can [find a course which specialises in special educational needs and disability (SEND)](https://www.find-postgraduate-teacher-training.service.gov.uk/) if you have a particular interest in this area.
+If you like the energy and curiosity of young children, and would be comfortable covering a wide range of subjects, you might prefer teaching in primary schools. 
 
-However, it’s not essential to do a course specialising in SEND. As you train and teach you’ll get the skills you need to work with disabled pupils and pupils with special educational needs. This will enable you to work in a range of settings throughout your career.
+If you are interested in training to be a primary teacher, you could consider options for primary teaching with a subject specialism like maths or English. This will cover all of the subjects but with a focus on your subject specialisation.
 
-### Teach pupils with sensory impairments
+### Secondary (ages 11 to 18)
+Children start secondary school when they’re 11. There are up to 3 stages in secondary school: 
 
-You need [specific qualifications to teach a class of pupils with hearing impairments, vision impairments or multi-sensory impairments](https://www.gov.uk/guidance/mandatory-qualifications-specialist-teachers).
+* key stage 3 (KS3) includes years 7 to 9, with children aged 11 to 14  
+* key stage 4 (KS4) includes years 10 and 11, with pupils aged 14 to 16
+* key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms, or colleges
 
-### Become a special educational needs coordinator
+Pupils work towards national qualifications, which are usually GCSEs during KS4. Students take A levels or other similar qualifications during KS5. 
 
-A special educational needs coordinator (SENCO) assesses, plans and monitors the progress of disabled pupils and pupils with special educational needs.
+Subjects at this level include core subjects such as English, maths and science, as well as many others. The full range of subjects available to teach at secondary level will depend on the school.
 
-Once you’re a qualified teacher you’ll need to complete the National Award in Special Educational Needs Coordination (NASENCo) when you take up your SENCO post.
+### What you need to teach in primary and secondary schools
 
-## Early years teacher training
+To teach in the majority of primary and secondary schools, you will need to achieve qualified teacher status (QTS). There are a number of routes to this. [Find out what training you need to get QTS](/train-to-be-a-teacher).
 
-The early years are critical in children’s development. Your input will have a lasting and positive effect on their development and wellbeing. You’ll use your knowledge and skills to help young children enjoy high standards of teaching and open their minds to new ideas every day.
+Once you have QTS, you're qualified to teach in primary and secondary schools. However, if you want to change from primary to secondary or secondary to primary, you'll need to be able to show you have relevant classroom experience.
 
-You’ll need to do early years initial teacher training (EYITT) to achieve early years teacher status (EYTS).
+### How to decide which age group to teach
 
-EYTS is different from QTS, which is the equivalent for teaching children aged 3 to 18.
+The best way to work out which age group you would like to teach is to get real life experience in a classroom. 
 
-Your training will enable you to meet the [early years teachers’ standards](https://www.gov.uk/government/publications/early-years-teachers-standards).
+$get-school-experience$
 
-To start early years teacher training, you’ll need these qualifications (or to demonstrate an equivalent standard):
+If you’re an undergraduate and interested in teaching chemistry, computing, languages, maths or physics, then you could do a [paid teaching internship](/teaching-internship-providers) to find out if teaching is right for you.
 
-- maths grade 4 (C)
-- English grade 4 (C)
-- science grade 4 (C)
+### Teach pupils with special educational needs and disabilities (SEND)
 
-If you do postgraduate early years teacher training, you’ll need a 2:2 bachelor’s degree with honours or higher.
+Most disabled pupils and pupils with special educational needs learn in mainstream schools. Wherever you train and work – whether it’s in mainstream schools, special schools, or both – you’ll work with pupils with a range of needs.
 
-[Contact accredited early years training providers to apply for a place](https://www.gov.uk/government/publications/early-years-initial-teacher-training-itt-providers-and-school-direct-early-years-lead-organisations/early-years-initial-teacher-training-itt-providers-and-school-direct-lead-organisations).
+You can choose to apply for a teacher training course that specialises in SEND or you can gain the skills and experience as you train to teach.
 
-[Learn about funding](https://www.gov.uk/guidance/early-years-initial-teacher-training-2023-to-2024-funding-guidance).
+Learn more about the [routes to teach pupils with special educational needs and disabilities (SEND)](/teach-disabled-pupils-and-pupils-with-special-educational-needs).
 
-### Undergraduate early years teacher training
+## Teaching other stages
 
-This is a full-time bachelor’s degree in an early childhood-related subject leading to EYTS. You will usually study for 3 or 4 years.
+### Nursery or pre-school
 
-Fees for full-time courses are usually around £9,250 but you can:
+If you want to help young children under 5 years old to develop, you might consider becoming an early years teacher.
 
-- get [funding that you do not have to pay back](/funding-and-support/scholarships-and-bursaries) for certain subjects
-- apply for a [student loan](/funding-and-support/tuition-fee-and-maintenance-loans)
+Early years teachers play an essential role in children’s development up to the age of 5 and provide high-quality early education.
 
-### Graduate early years teacher training
+Learn more about [the routes to become an early years teacher](/early-years-teaching-training).
 
-This is a full-time post-graduate course leading to EYTS. You will usually study for 1 academic year.
+### Further education
 
-Fees for full-time courses are usually around £7,000 but you can:
+If you’ve got industry experience and a passion for teaching young people over 16 and adults, then further education could be for you. 
 
-- get [funding that you do not have to pay back](/funding-and-support/scholarships-and-bursaries) for certain subjects
-- apply for a [student loan](/funding-and-support/tuition-fee-and-maintenance-loans)
+There are three key areas: 
 
-There are also bursaries available, including:
+* vocational courses covering areas like plumbing and health care
+* academic courses on subjects like English and maths
+* basic skills courses covering literacy and numeracy. 
 
-£5,000 if you have a first class degree
-£4,000 if you have a 2:1 degree
-£2,000 if you have a 2:2 degree
-
-You don’t have to pay a bursary back.
-
-### Graduate employment-based early years teacher training
-
-This one-year part-time route is for graduates working in an early years setting who need further training to meet the [early years teachers’ standards](https://www.gov.uk/government/publications/early-years-teachers-standards). It usually takes 1 academic year.
-
-Funding of up to £14,000 is available. This would cover course fees of up to £7,000, plus £7,000 for your employer, to help cover their extra costs while you train.
-
-### Graduate 'assessment only' training
-
-This self-funded route is ideal for graduates with early years experience. If you already meet the [early years teachers’ standards](https://www.gov.uk/government/publications/early-years-teachers-standards), you can gain EYTS without the need for further training. It usually takes 3 months.
-
-## Further education
-
-Further education is any study that takes place after secondary school but outside of a university or other higher education institution.
-
-In further education, teaching doesn’t always happen in a classroom. It can take place in community centres, workplaces and private training centres. You could teach a diverse set of learners, including young people and adults.
-
-You do not need a degree to start teaching in further education.
-
-You can find out more on the [teach in further education website](https://www.teach-in-further-education.campaign.gov.uk/).
-
-You can speak to us on 0800 389 2502 from Monday to Saturday between 8:30am and 5:30pm.
-
-You can email [teach.fe@education.gov.uk](mailto:teach.fe@education.gov.uk).
+Learn more about [teaching in further education](/become-a-further-education-teacher).
