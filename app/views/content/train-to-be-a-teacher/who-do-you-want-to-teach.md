@@ -23,13 +23,12 @@ It’s good to consider what kind of teacher you want to be based on your intere
 The school system in England is split into age groups:
 
 ### Primary (ages 5 to 11)
-Children usually start primary school at 4 years old and this phase is called Reception. This is the final stage of the Early Years Foundation Stage (EYFS).
+Children usually start primary school at 4 years old and this phase is called reception. This is the final stage of the early years foundation stage (EYFS).
 
 There are a further 2 phases, known as key stages: 
 
-* key stage 1 covers years 1 and 2, with children up to 7 years old
-* key stage 2 covers years 3 to 6, with children from 7 to 11 years old
-
+* key stage 1 (KS1) covers years 1 and 2, with children up to 7 years old
+* key stage 2 (KS2) covers years 3 to 6, with children from 7 to 11 years old
 The teaching content is broad, covering the whole range of national curriculum subjects including English, maths, science, as well as art and design, computing, geography, history, music and physical education (PE).
 
 If you like the energy and curiosity of young children, and would be comfortable covering a wide range of subjects, you might prefer teaching in primary schools. 
@@ -41,11 +40,11 @@ Children start secondary school when they’re 11. There are up to 3 stages in s
 
 * key stage 3 (KS3) includes years 7 to 9, with children aged 11 to 14  
 * key stage 4 (KS4) includes years 10 and 11, with pupils aged 14 to 16
-* key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms or colleges
+* key stage 5 (KS5) includes years 12 and 13, with students aged 16 to 18 at secondary schools with sixth forms, or colleges
 
 Pupils work towards national qualifications, which are usually GCSEs during KS4. Students take A levels or other similar qualifications during KS5. 
 
-Subjects at this level include English, maths and science. Additional subjects may include history, geography, and art. The specific subjects offered will depend on the school.
+Subjects at this level include English, maths, science, as well as art and design, computing, geography, history, music and physical education (PE).
 
 ### What you need to teach in primary and secondary schools
 
