@@ -45,7 +45,7 @@ Children start secondary school when they’re 11. There are up to 3 stages in s
 
 Pupils work towards national qualifications, which are usually GCSEs during KS4. Students take A levels or other similar qualifications during KS5. 
 
-Subjects at this level include English, maths, science, as well as art and design, computing, geography, history, music and physical education (PE). After the age of 14, subjects in arts, design and technology, the humanities, and modern foreign languages are not compulsory but schools must provide at least one course in each of the four areas.  
+Subjects at this level include core subjects such as English, maths and science, as well as many others. The full range of subjects available to teach at secondary level will depend on the school.
 
 ### What you need to teach in primary and secondary schools
 
