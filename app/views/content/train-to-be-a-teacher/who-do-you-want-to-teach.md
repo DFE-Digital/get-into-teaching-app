@@ -29,6 +29,7 @@ There are a further 2 phases, known as key stages:
 
 * key stage 1 (KS1) covers years 1 and 2, with children up to 7 years old
 * key stage 2 (KS2) covers years 3 to 6, with children from 7 to 11 years old
+
 The teaching content is broad, covering the whole range of national curriculum subjects including English, maths, science, as well as art and design, computing, geography, history, music and physical education (PE).
 
 If you like the energy and curiosity of young children, and would be comfortable covering a wide range of subjects, you might prefer teaching in primary schools. 
@@ -44,7 +45,7 @@ Children start secondary school when they’re 11. There are up to 3 stages in s
 
 Pupils work towards national qualifications, which are usually GCSEs during KS4. Students take A levels or other similar qualifications during KS5. 
 
-Subjects at this level include English, maths, science, as well as art and design, computing, geography, history, music and physical education (PE).
+Subjects at this level include English, maths, science, as well as art and design, computing, geography, history, music and physical education (PE). After the age of 14, subjects in arts, design and technology, the humanities, and modern foreign languages are not compulsory but schools must provide at least one course in each of the four areas.  
 
 ### What you need to teach in primary and secondary schools
 
