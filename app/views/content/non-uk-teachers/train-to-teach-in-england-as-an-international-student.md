@@ -200,8 +200,7 @@ You may also wish to read [detailed guidance about fee-paying and salaried cours
 
 ### 5. Apply for your visa
 
-If you’re not sure about your immigration status, you can [check if you need a UK visa](https://www.gov.uk/check-uk-visa).
-You can also [contact UK Visas and Immigration for help](https://www.gov.uk/contact-ukvi-inside-outside-uk).
+You will need a visa or immigration status allowing you to study (or work, for salaried courses) in England. 
 
 <div class="inset">
   <h4>Already living in the UK?</h4>
@@ -215,13 +214,7 @@ You can also [contact UK Visas and Immigration for help](https://www.gov.uk/cont
   <p><a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">If you are currently studying in the UK on a student visa, you may be able to apply for a graduate visa</a>.</p>
 </div>
 
-If you don’t already have an immigration status allowing you to train to teach in the UK, you’ll need to [apply for a student visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa). You can do this once you have a confirmed offer of a training place from a training provider who can sponsor student visas.
-
-If you have a place on a salaried training course, you’ll need a [skilled worker visa](https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa).
-
-Alternatively, you may be eligible for a different type of visa which allows you to study without being sponsored by your training provider or employer.
-
-<a href="https://www.gov.uk/government/publications/train-to-teach-in-england-non-uk-applicants/train-to-teach-in-england-if-youre-a-non-uk-citizen#visa">Find out more about applying for the right visa for your teacher training course</a>.
+[Find out more about applying for the right visa for your teacher training course](/non-uk-teachers/visas-for-non-UK-trainees).
 
 ### 6. Plan your move to the UK
 
