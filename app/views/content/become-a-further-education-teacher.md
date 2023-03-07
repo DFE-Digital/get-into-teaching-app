@@ -34,7 +34,7 @@ Whichever route you choose, you could teach a diverse set of learners.
 
 ## What qualifications do you need to teach in further education?
 
-You don’t always need a prior teaching qualification or an academic degree to start teaching in further education. 
+You do not always need a prior teaching qualification or an academic degree to start teaching in further education. 
 
 Many further education training providers offer funded teacher training on the job, so you can start immediately. 
 
