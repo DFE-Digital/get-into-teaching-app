@@ -190,6 +190,7 @@ describe ApplicationHelper do
           "/landing/how-much-do-teachers-get-paid-social",
           "/mailinglist/signup/name",
           "/mailinglist/signup",
+          "/steps-to-become-a-teacher-search",
         ],
       })
     end
