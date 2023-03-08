@@ -542,6 +542,6 @@ If you've worked as a teaching assistant, it's unlikely you'll have the experien
 
 There may be exceptional cases where teaching assistants have worked for a significant amount of time (at least 2 years) independently teaching classes and may be eligible.
 
-Talk to your provider about whether your experiences makes you eligible for this route.
+Talk to your provider about whether your experience makes you eligible for this route.
 
 $international-content$
