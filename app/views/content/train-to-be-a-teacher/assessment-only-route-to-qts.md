@@ -536,4 +536,12 @@ To be eligible, you need (all of the following):
 
 Specific entry criteria may vary by teacher training provider. You should ask them about eligibility before you apply.
 
+### Are teaching assistants eligible?
+
+If you've worked as a teaching assistant, it's unlikely you'll have the experience required for assessment only.
+
+There may be exceptional cases where teaching assistants have worked for a significant amount of time (at least 2 years) independently teaching classes and may be eligible.
+
+Talk to your provider about whether your experiences makes you eligible for this route.
+
 $international-content$
